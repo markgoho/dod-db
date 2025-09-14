@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "genkit": {
+      "command": "bunx",
+      "args": ["genkit", "mcp", "--no-update-notification"]
+    }
+  }
+}

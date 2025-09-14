@@ -4,14 +4,21 @@
   "type": "module",
   "private": true,
   "devDependencies": {
+    "@eslint/js": "^9.35.0",
     "@types/bun": "latest",
-    "prettier": "^3.6.2"
+    "eslint": "^9.35.0",
+    "eslint-plugin-unicorn": "^61.0.2",
+    "genkit-cli": "^1.19.2",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.43.0"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
     "@langchain/google-genai": "^0.2.17",
+    "@langchain/langgraph": "^1.0.0-alpha.1",
     "assemblyai": "^4.16.1",
     "langchain": "^1.0.0-alpha.5",
     "zod": "^4.1.8"
