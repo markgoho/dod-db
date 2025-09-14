@@ -8,6 +8,7 @@ import {
 } from '../tools/functions/add-speaker-labels.js';
 import { transcribe } from '../tools/functions/transcribe-audio.js';
 import { writeToFile } from '../tools/functions/write-to-file.js';
+import './basic-rag.js';
 import { ai } from './genkit.js';
 
 export const processTranscript = ai.defineFlow(
@@ -52,7 +53,7 @@ export const processTranscript = ai.defineFlow(
   },
 );
 
-await processTranscript({
-  transcriptUrl:
-    'https://drive.google.com/uc?export=download&id=1vsS2VRHz5fdXz0JhGSsxysa5SCMXy6gi',
-});
+// await processTranscript({
+//   transcriptUrl:
+//     'https://drive.google.com/uc?export=download&id=1vsS2VRHz5fdXz0JhGSsxysa5SCMXy6gi',
+// });

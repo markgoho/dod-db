@@ -17,11 +17,13 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "@genkit-ai/dev-local-vectorstore": "^1.19.2",
     "@genkit-ai/google-genai": "^1.19.2",
     "@langchain/google-genai": "^0.2.17",
     "@langchain/langgraph": "^1.0.0-alpha.1",
     "assemblyai": "^4.16.1",
     "langchain": "^1.0.0-alpha.5",
-    "zod": "^4.1.8"
+    "llm-chunk": "^0.0.1",
+    "zod": "^3.22.4"
   }
 }
