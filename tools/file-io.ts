@@ -1,10 +1,11 @@
 import { tool } from 'langchain';
 import { z } from 'zod';
+import { writeToFile } from './functions/write-to-file';
 
 export const writeFile = tool(
   async (input) => {
     const { path, content } = input as { path: string; content: string };
-    await Bun.write(path, content);
+    await writeToFile(path, content);
     return `File written to ${path}.`;
   },
   {
@@ -17,7 +18,7 @@ export const writeFile = tool(
   },
 );
 
-export const readFile = tool(
+export const readFileTool = tool(
   async (input) => {
     const { path } = input as { path: string };
     const maxAttempts = 5;

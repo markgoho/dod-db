@@ -1,7 +1,7 @@
 import { ChatGoogleGenerativeAI } from '@langchain/google-genai';
 import { createAgent } from 'langchain';
 import { correctTranscript } from './tools/correction';
-import { readFile, writeFile } from './tools/file-io';
+import { readFileTool, writeFile } from './tools/file-io';
 import { transcribeAudio } from './tools/transcribe';
 
 const model = new ChatGoogleGenerativeAI({
@@ -9,7 +9,7 @@ const model = new ChatGoogleGenerativeAI({
   temperature: 0,
 });
 
-const tools = [writeFile, readFile, transcribeAudio, correctTranscript];
+const tools = [writeFile, readFileTool, transcribeAudio, correctTranscript];
 
 const agent = createAgent({
   llm: model,
