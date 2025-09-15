@@ -6,9 +6,9 @@ import {
   addSpeakerLabels,
   SpeakerLabelsSchema,
 } from '../tools/functions/add-speaker-labels.js';
+import { indexTranscript } from '../tools/functions/index-transcript.js';
 import { transcribe } from '../tools/functions/transcribe-audio.js';
 import { writeToFile } from '../tools/functions/write-to-file.js';
-import './basic-rag.js';
 import { ai } from './genkit.js';
 
 export const processTranscript = ai.defineFlow(
@@ -18,12 +18,19 @@ export const processTranscript = ai.defineFlow(
     outputSchema: z.void(),
   },
   async ({ transcriptUrl }) => {
+    console.log('Transcribing Audio');
     const transcription = await ai.run('transcribeAudio', async () => {
       const transcription = await transcribe(transcriptUrl);
       return transcription;
     });
 
+    await ai.run('writeFile', async () => {
+      await writeToFile('raw_transcript.txt', transcription);
+    });
+
+    console.log('Correcting Transcript');
     const { text: correctedTranscript } = await ai.generate({
+      model: googleAI.model('gemini-2.5-flash'),
       prompt: correctionPrompt(transcription),
     });
 
@@ -31,9 +38,14 @@ export const processTranscript = ai.defineFlow(
       throw new Error('Response was null or empty');
     }
 
+    await ai.run('writeFile', async () => {
+      await writeToFile('corrected_transcript.txt', correctedTranscript);
+    });
+
+    console.log('Identifying Speakers');
     const { output } = await ai.generate({
       prompt: speakerLabelPrompt(correctedTranscript),
-      model: googleAI.model('gemini-2.0-flash-lite'),
+      model: googleAI.model('gemini-1.5-flash'),
       output: {
         schema: SpeakerLabelsSchema,
       },
@@ -43,17 +55,25 @@ export const processTranscript = ai.defineFlow(
       throw new Error('Response was null or empty');
     }
 
+    console.log('Replacing labels with names');
     const transcriptWithNames = addSpeakerLabels(output, correctedTranscript);
 
     await ai.run('writeFile', async () => {
       await writeToFile('corrected_transcript.txt', transcriptWithNames);
     });
 
+    console.log('Indexing Transcript');
+    await ai.run('indexTranscript', async () => {
+      await indexTranscript(transcriptWithNames);
+    });
+
     return;
   },
 );
 
-// await processTranscript({
-//   transcriptUrl:
-//     'https://drive.google.com/uc?export=download&id=1vsS2VRHz5fdXz0JhGSsxysa5SCMXy6gi',
-// });
+const trimmedAudioId = '1vsS2VRHz5fdXz0JhGSsxysa5SCMXy6gi';
+const fullAudioId = '1XjkVt17K4Oa0muqJnDZm593FXMG9TRQd';
+
+await processTranscript({
+  transcriptUrl: `https://drive.google.com/uc?export=download&id=${fullAudioId}`,
+});
