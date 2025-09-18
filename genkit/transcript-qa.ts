@@ -1,6 +1,7 @@
 import { devLocalRetrieverRef } from '@genkit-ai/dev-local-vectorstore';
 import { googleAI } from '@genkit-ai/google-genai';
 import { z } from 'genkit';
+import { retrieveFromFirestore } from './firestore-rag/retrieve-from-firestore.js';
 import { ai } from './genkit.js';
 
 export const transcriptRetriever = devLocalRetrieverRef('transcriptQA');
@@ -16,11 +17,7 @@ export const transcriptQA = ai.defineFlow(
     }),
   },
   async ({ query }) => {
-    const docs = await ai.retrieve({
-      retriever: transcriptRetriever,
-      query,
-      options: { k: 3 },
-    });
+    const docs = await retrieveFromFirestore(query);
 
     if (docs.length === 0) {
       return {
@@ -36,13 +33,12 @@ export const transcriptQA = ai.defineFlow(
       Question: ${query}`,
       docs,
     });
-    console.log(text);
 
     return { answer: text };
   },
 );
 
-await transcriptQA({
-  query:
-    'it looks like the second segment is called "Is it Canon?" can you tell me at what time stamp that starts?',
+const { answer } = await transcriptQA({
+  query: `there are two segments in this episode: Chapter and Verse and Is It Canon? the first segment starts at the beginning of the episode, but what time does the second segment start (hint: it's in the middle of the episode)`,
 });
+console.log(answer);

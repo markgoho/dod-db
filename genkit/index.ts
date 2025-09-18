@@ -1,14 +1,14 @@
 import { googleAI } from '@genkit-ai/google-genai';
 import { z } from 'genkit';
-import { correctionPrompt } from '../prompts/correction-prompt.js';
 import { speakerLabelPrompt } from '../prompts/speaker-label-prompts.js';
 import {
   addSpeakerLabels,
   SpeakerLabelsSchema,
 } from '../tools/functions/add-speaker-labels.js';
-import { indexTranscript } from '../tools/functions/index-transcript.js';
-import { transcribe } from '../tools/functions/transcribe-audio.js';
+import { transcribeAudio } from '../tools/functions/transcribe-audio.js';
 import { writeToFile } from '../tools/functions/write-to-file.js';
+import { correctTranscript } from './correct-transcript.js';
+import { indexTranscriptInFirestore } from './firestore-rag/index-in-firestore.js';
 import { ai } from './genkit.js';
 
 export const processTranscript = ai.defineFlow(
@@ -20,27 +20,23 @@ export const processTranscript = ai.defineFlow(
   async ({ transcriptUrl }) => {
     console.log('Transcribing Audio');
     const transcription = await ai.run('transcribeAudio', async () => {
-      const transcription = await transcribe(transcriptUrl);
+      const transcription = await transcribeAudio(transcriptUrl);
       return transcription;
     });
 
-    await ai.run('writeFile', async () => {
-      await writeToFile('raw_transcript.txt', transcription);
-    });
+    // await ai.run('writeFile', async () => {
+    //   await writeToFile('raw_transcript.txt', transcription);
+    // });
 
     console.log('Correcting Transcript');
-    const { text: correctedTranscript } = await ai.generate({
-      model: googleAI.model('gemini-2.5-flash'),
-      prompt: correctionPrompt(transcription),
+    const correctedTranscript = await ai.run('correctTranscript', async () => {
+      const correctedTranscript = await correctTranscript(transcription);
+      return correctedTranscript;
     });
 
-    if (correctedTranscript === null) {
-      throw new Error('Response was null or empty');
-    }
-
-    await ai.run('writeFile', async () => {
-      await writeToFile('corrected_transcript.txt', correctedTranscript);
-    });
+    // await ai.run('writeFile', async () => {
+    //   await writeToFile('corrected_transcript.txt', correctedTranscript);
+    // });
 
     console.log('Identifying Speakers');
     const { output } = await ai.generate({
@@ -62,9 +58,10 @@ export const processTranscript = ai.defineFlow(
       await writeToFile('corrected_transcript.txt', transcriptWithNames);
     });
 
-    console.log('Indexing Transcript');
+    console.log('Indexing Transcript in Firestore');
     await ai.run('indexTranscript', async () => {
-      await indexTranscript(transcriptWithNames);
+      // await indexTranscript(transcriptWithNames);
+      await indexTranscriptInFirestore(transcriptWithNames);
     });
 
     return;

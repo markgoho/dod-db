@@ -4,11 +4,13 @@ const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY!,
 });
 
-export async function transcribe(url: string): Promise<string> {
+export async function transcribeAudio(url: string): Promise<string> {
   try {
     const params: TranscribeParams = {
       audio: url,
       speaker_labels: true,
+      // audio_start_from: 0,
+      // audio_end_at: 3 * 60 * 1000, // 8 minutes
     };
     const transcript = await client.transcripts.transcribe(params);
 

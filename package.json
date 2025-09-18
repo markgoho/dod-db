@@ -3,6 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "emulators:start": "firebase emulators:start --only auth,firestore"
+  },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
     "@types/bun": "latest",

@@ -1,11 +1,11 @@
 import { tool } from 'langchain';
 import { z } from 'zod';
-import { transcribe } from './functions/transcribe-audio';
+import { transcribeAudio } from './functions/transcribe-audio';
 
 export const transcribeAudio = tool(
   async (input) => {
     const { url } = input as { url: string };
-    await transcribe(url);
+    await transcribeAudio(url);
   },
   {
     name: 'transcribeAudio',
