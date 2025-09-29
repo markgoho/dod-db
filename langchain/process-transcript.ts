@@ -1,8 +1,8 @@
 import { ChatGoogleGenerativeAI } from '@langchain/google-genai';
 import { createAgent } from 'langchain';
-import { correctTranscript } from './tools/correction';
-import { readFileTool, writeFile } from './tools/file-io';
-import { transcribeAudio } from './tools/transcribe';
+import { correctTranscript } from './correction';
+import { readFileTool, writeFile } from './file-io';
+import { transcribeAudio } from './transcribe';
 
 const model = new ChatGoogleGenerativeAI({
   model: 'gemini-2.5-flash',

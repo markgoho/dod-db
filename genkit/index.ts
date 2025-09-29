@@ -4,9 +4,9 @@ import { speakerLabelPrompt } from '../prompts/speaker-label-prompts.js';
 import {
   addSpeakerLabels,
   SpeakerLabelsSchema,
-} from '../tools/functions/add-speaker-labels.js';
-import { transcribeAudio } from '../tools/functions/transcribe-audio.js';
-import { writeToFile } from '../tools/functions/write-to-file.js';
+} from '../tools/add-speaker-labels.js';
+import { transcribeAudio } from '../tools/transcribe-audio.js';
+import { writeToFile } from '../tools/write-to-file.js';
 import { correctTranscript } from './correct-transcript.js';
 import { indexTranscriptInFirestore } from './firestore-rag/index-in-firestore.js';
 import { ai } from './genkit.js';

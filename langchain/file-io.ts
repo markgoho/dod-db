@@ -1,6 +1,6 @@
 import { tool } from 'langchain';
 import { z } from 'zod';
-import { writeToFile } from './functions/write-to-file';
+import { writeToFile } from '../tools/functions/write-to-file';
 
 export const writeFile = tool(
   async (input) => {

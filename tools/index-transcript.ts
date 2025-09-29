@@ -1,7 +1,7 @@
 import { devLocalIndexerRef } from '@genkit-ai/dev-local-vectorstore';
 import { Document } from 'genkit';
 import { chunk } from 'llm-chunk';
-import { ai } from '../../genkit/genkit.js';
+import { ai } from '../genkit/genkit.js';
 
 type SplitOptions = {
   minLength?: number;
