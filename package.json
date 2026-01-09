@@ -7,25 +7,25 @@
     "emulators:start": "firebase emulators:start --only auth,firestore"
   },
   "devDependencies": {
-    "@eslint/js": "^9.36.0",
+    "@eslint/js": "^9.39.2",
     "@types/bun": "latest",
-    "eslint": "^9.36.0",
+    "eslint": "^9.39.2",
     "eslint-plugin-unicorn": "^61.0.2",
-    "firebase-tools": "^14.17.0",
-    "genkit-cli": "^1.20.0",
-    "globals": "^16.4.0",
-    "prettier": "^3.6.2",
-    "typescript-eslint": "^8.44.1"
+    "firebase-tools": "^14.27.0",
+    "genkit-cli": "^1.27.0",
+    "globals": "^16.5.0",
+    "prettier": "^3.7.4",
+    "typescript-eslint": "^8.52.0"
   },
   "peerDependencies": {
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@genkit-ai/dev-local-vectorstore": "^1.20.0",
-    "@genkit-ai/firebase": "^1.20.0",
-    "@genkit-ai/google-genai": "^1.20.0",
-    "assemblyai": "^4.16.1",
-    "firebase-admin": "^13.5.0",
+    "@genkit-ai/dev-local-vectorstore": "^1.27.0",
+    "@genkit-ai/firebase": "^1.27.0",
+    "@genkit-ai/google-genai": "^1.27.0",
+    "assemblyai": "^4.22.1",
+    "firebase-admin": "^13.6.0",
     "llm-chunk": "^0.0.1",
     "zod": "^3.25.76"
   }
