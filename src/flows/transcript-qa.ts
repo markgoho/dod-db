@@ -1,10 +1,7 @@
-import { devLocalRetrieverRef } from '@genkit-ai/dev-local-vectorstore';
-import { googleAI } from '@genkit-ai/google-genai';
 import { z } from 'genkit';
-import { retrieveFromFirestore } from './firestore-rag/retrieve-from-firestore.js';
-import { ai } from './genkit.js';
-
-export const transcriptRetriever = devLocalRetrieverRef('transcriptQA');
+import { qaModel } from '../config/models.js';
+import { ai } from '../genkit.js';
+import { retrieveFromFirestore } from '../storage/firestore.js';
 
 export const transcriptQA = ai.defineFlow(
   {
@@ -27,7 +24,7 @@ export const transcriptQA = ai.defineFlow(
     }
 
     const { text } = await ai.generate({
-      model: googleAI.model('gemini-2.5-flash'),
+      model: qaModel,
       prompt: `You are an AI assistant who answers questions based on the provided transcript context. Your answer should be based solely on the information in the context.
 
       Question: ${query}`,
@@ -37,8 +34,3 @@ export const transcriptQA = ai.defineFlow(
     return { answer: text };
   },
 );
-
-const { answer } = await transcriptQA({
-  query: `there are two segments in this episode: Chapter and Verse and Is It Canon? the first segment starts at the beginning of the episode, but what time does the second segment start (hint: it's in the middle of the episode)`,
-});
-console.log(answer);

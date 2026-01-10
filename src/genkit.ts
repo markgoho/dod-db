@@ -1,6 +1,7 @@
 import { devLocalVectorstore } from '@genkit-ai/dev-local-vectorstore';
 import { googleAI } from '@genkit-ai/google-genai';
 import { genkit } from 'genkit';
+import { embedder } from './config/models.js';
 
 export const ai = genkit({
   plugins: [
@@ -8,7 +9,7 @@ export const ai = genkit({
     devLocalVectorstore([
       {
         indexName: 'transcriptQA',
-        embedder: googleAI.embedder('text-embedding-004'),
+        embedder,
       },
     ]),
   ],

@@ -10,13 +10,14 @@ This is a DoD database project built with Bun, Firebase, and Genkit for AI-power
 
 ### Core Development
 - `bun install` - Install dependencies
-- `bun run index.ts` - Run the main entry point (AssemblyAI transcription script)
+- `bun run src/scripts/process-transcript.ts` - Run the main transcript processing pipeline
+- `bun run src/scripts/transcript-qa.ts` - Run Q&A over indexed transcripts
 
 ### Firebase Emulators
 - `npm run emulators:start` - Start Firebase Auth & Firestore emulators (ports: Auth 9099, Firestore 8080)
 
 ### Genkit Development
-- `genkit start -- bun run genkit/index.ts` - Start Genkit Developer UI with the main processing flow
+- `genkit start -- bun run src/scripts/process-transcript.ts` - Start Genkit Developer UI with the main processing flow
 - The Genkit UI allows you to inspect and run flows interactively
 
 ### Firebase Functions
@@ -27,45 +28,66 @@ This is a DoD database project built with Bun, Firebase, and Genkit for AI-power
 
 ## Architecture
 
-### Three-Tier Processing Pipeline
+### Processing Pipeline
 
-1. **Audio Transcription (AssemblyAI)**: Located in `tools/transcribe-audio.ts` and `index.ts`
+The transcript processing pipeline is orchestrated in `src/pipeline/index.ts`:
+
+1. **Audio Transcription** (`src/pipeline/transcribe.ts`)
    - Uses AssemblyAI API with speaker labeling enabled
    - Formats timestamps as `[HH:MM:SS] Speaker N: text`
-   - Main entry point is `index.ts` for standalone transcription
 
-2. **AI Processing Pipeline (Genkit)**: Orchestrated in `genkit/index.ts`
-   - **Transcript Correction**: Uses Gemini 2.5 Flash to clean up transcription errors (via `llm-chunk` for chunking large texts)
-   - **Speaker Identification**: Uses structured output to map "Speaker A, B, C" to real names
-   - **RAG Indexing**: Chunks and embeds corrected transcripts into Firestore with text-embedding-004
+2. **Transcript Correction** (`src/pipeline/correct.ts`)
+   - Uses Gemini 2.5 Flash to clean up transcription errors
+   - Chunked processing via `llm-chunk` for long transcripts
 
-3. **Firebase Backend**:
+3. **Speaker Identification** (`src/pipeline/identify-speakers.ts`)
+   - Uses structured output to map "Speaker A, B, C" to real names
+   - Returns both the labeled transcript and speaker mapping
+
+4. **Storage** (`src/storage/`)
    - **Firestore**: Vector embeddings stored with `FieldValue.vector()` for semantic search
-   - **Functions**: Serverless functions in `functions/` (currently minimal boilerplate, Node 22 engine)
-   - **Emulators**: Local development environment for Auth, Firestore, and Functions
+   - **File**: Local file output for transcript text
 
 ### Key Architectural Patterns
 
-- **Genkit Configuration**: Single Genkit instance exported from `genkit/genkit.ts` with Google AI plugin and dev local vectorstore
-- **Chunking Strategy**: Uses `llm-chunk` library with sentence-based splitting (overlap varies: 100-200 tokens for different use cases)
-- **Prompt Organization**: Prompts stored as separate functions in `prompts/` directory (correction, speaker labeling)
-- **Tool Utilities**: Reusable processing functions in `tools/` (transcription, speaker labels, file writing)
+- **Centralized Configuration**: All config in `src/config/` (chunking, firebase, models)
+- **Single Genkit Instance**: Exported from `src/genkit.ts` with Google AI plugin
+- **Chunking Strategy**: Uses `llm-chunk` library with sentence-based splitting
+  - Correction: 5000-10000 tokens, 200 overlap (maintain context)
+  - Embedding: 1000-2000 tokens, 100 overlap (precise retrieval)
+- **Prompt Organization**: Prompts in `src/prompts/` with barrel export
 
 ### Project Structure
 
 ```
-├── index.ts                  # Standalone AssemblyAI transcription script
-├── genkit/                   # Genkit AI flows and configuration
-│   ├── genkit.ts            # Genkit instance with plugins
-│   ├── index.ts             # Main processTranscript flow
-│   ├── correct-transcript.ts # Chunked transcript correction
-│   ├── transcript-qa.ts     # Q&A flow over transcripts
-│   └── firestore-rag/       # RAG indexing logic
-├── tools/                    # Reusable utilities
-│   ├── transcribe-audio.ts  # AssemblyAI transcription
-│   ├── add-speaker-labels.ts # Speaker name replacement
-│   └── write-to-file.ts     # File output helper
-├── prompts/                  # Prompt templates
+├── src/
+│   ├── config/               # Centralized configuration
+│   │   ├── chunking.ts      # Chunk size settings for different use cases
+│   │   ├── firebase.ts      # Single Firebase initialization
+│   │   ├── models.ts        # Model selections (correction, speaker ID, QA)
+│   │   └── index.ts         # Barrel export
+│   ├── pipeline/            # Processing pipeline steps
+│   │   ├── transcribe.ts    # AssemblyAI transcription
+│   │   ├── correct.ts       # LLM-based correction
+│   │   ├── identify-speakers.ts  # Speaker name mapping
+│   │   └── index.ts         # Main processTranscript flow
+│   ├── prompts/             # LLM prompts
+│   │   ├── correction.ts    # Bible scholarship correction prompt
+│   │   ├── speaker-labels.ts # Speaker identification prompt + schema
+│   │   └── index.ts         # Barrel export
+│   ├── storage/             # Data persistence
+│   │   ├── firestore.ts     # Firestore indexing & retrieval
+│   │   ├── file.ts          # Local file output
+│   │   └── index.ts         # Barrel export
+│   ├── flows/               # Additional Genkit flows
+│   │   └── transcript-qa.ts # Q&A over indexed transcripts
+│   ├── scripts/             # CLI entry points
+│   │   ├── process-transcript.ts # Run full pipeline
+│   │   └── transcript-qa.ts     # Run Q&A flow
+│   ├── genkit.ts            # Genkit instance configuration
+│   └── index.ts             # Main barrel export
+├── data/                     # Sample/output data files
+│   └── transcript.txt       # Sample processed transcript
 ├── functions/                # Firebase Cloud Functions
 └── firebase.json             # Firebase project configuration
 ```
@@ -88,10 +110,11 @@ Required environment variables:
 
 ## Important Implementation Notes
 
-- The main transcript processing flow (`processTranscript`) orchestrates: transcription → correction → speaker identification → Firestore indexing
+- The main transcript processing flow (`processTranscript` in `src/pipeline/index.ts`) orchestrates: transcription → correction → speaker identification → Firestore indexing
 - Firestore uses vector embeddings (`FieldValue.vector()`) for semantic search capabilities
 - Genkit flows use `ai.run()` for observability/tracing of different pipeline stages
 - The project uses Google Drive URLs for audio input (format: `https://drive.google.com/uc?export=download&id={fileId}`)
+- All configuration is centralized in `src/config/` - modify chunking settings, models, or Firebase config there
 - Refer to `GENKIT.md` for detailed Genkit API patterns and model recommendations
 
 ## Project Management

@@ -1,3 +1,13 @@
+import { z } from 'genkit';
+
+export const SpeakerLabelsSchema = z.object({
+  'Speaker A': z.string(),
+  'Speaker B': z.string(),
+  'Speaker C': z.string().optional(),
+});
+
+export type SpeakerLabels = z.infer<typeof SpeakerLabelsSchema>;
+
 export function speakerLabelPrompt(transcript: string): string {
   return `You are an expert in speaker label recognition. You will receive a portion of a transcript with timestamps, and speaker labels but the labels don't have the names, only Speaker A, Speaker B, etc.
 
@@ -25,4 +35,13 @@ export function speakerLabelPrompt(transcript: string): string {
   Transcript to analyze:
   ${transcript}
   `;
+}
+
+export function addSpeakerLabels(
+  speakerLabels: SpeakerLabels,
+  transcript: string,
+) {
+  return transcript
+    .replace(/Speaker A/g, speakerLabels['Speaker A'])
+    .replace(/Speaker B/g, speakerLabels['Speaker B']);
 }

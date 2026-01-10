@@ -1,23 +1,17 @@
-import { googleAI } from '@genkit-ai/google-genai';
 import { chunk } from 'llm-chunk';
-import { correctionPrompt } from '../prompts/correction-prompt';
-import { ai } from './genkit';
+import { correctionChunking } from '../config/chunking.js';
+import { correctionModel } from '../config/models.js';
+import { ai } from '../genkit.js';
+import { correctionPrompt } from '../prompts/correction.js';
 
-const chunkingConfig = {
-  minLength: 5000,
-  maxLength: 10000,
-  splitter: 'sentence' as const,
-  overlap: 200,
-  delimiters: '',
-};
-
-export async function correctTranscript(transcript: string) {
-  const chunks = chunk(transcript, chunkingConfig);
+export async function correctTranscript(transcript: string): Promise<string> {
+  const chunks = chunk(transcript, correctionChunking);
   let correctedTranscript = '';
+
   for (const textChunk of chunks) {
     console.log('Correcting chunk');
     const { text: correctedChunk } = await ai.generate({
-      model: googleAI.model('gemini-2.5-flash'),
+      model: correctionModel,
       prompt: correctionPrompt(textChunk),
     });
     if (correctedChunk) {
