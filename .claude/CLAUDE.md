@@ -156,3 +156,23 @@ gh issue view <number>
 # Close an issue
 gh issue close <number>
 ```
+
+### Sub-Issue Management
+
+This project uses **parent issues** to group features and **sub-issues** to track individual work items within each feature. Parent issues have generic titles (e.g., "Transcription", "Search") and sub-issues contain the specific implementation tasks.
+
+The `gh-sub-issue` extension (https://github.com/yahsan2/gh-sub-issue) is installed for CLI sub-issue management:
+
+```bash
+# List sub-issues of a parent
+gh sub-issue list <parent-issue-number> --repo markgoho/dod-db
+
+# Add existing issue as sub-issue
+gh sub-issue add <parent-issue-number> <child-issue-number> --repo markgoho/dod-db
+
+# Create new sub-issue directly under a parent
+gh sub-issue create <parent-issue-number> --title "Title" --body "Description" --repo markgoho/dod-db
+
+# Remove sub-issue link
+gh sub-issue remove <parent-issue-number> <child-issue-number> --repo markgoho/dod-db
+```
