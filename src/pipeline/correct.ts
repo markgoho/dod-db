@@ -1,7 +1,7 @@
 import { chunk } from 'llm-chunk';
 import { correctionChunking } from '../config/chunking.js';
 import { correctionModel } from '../config/models.js';
-import { ai } from '../genkit.js';
+import { ai } from '../ai.js';
 import { correctionPrompt } from '../prompts/correction.js';
 
 export async function correctTranscript(transcript: string): Promise<string> {
@@ -10,10 +10,12 @@ export async function correctTranscript(transcript: string): Promise<string> {
 
   for (const textChunk of chunks) {
     console.log('Correcting chunk');
-    const { text: correctedChunk } = await ai.generate({
+    const response = await ai.models.generateContent({
       model: correctionModel,
-      prompt: correctionPrompt(textChunk),
+      contents: correctionPrompt(textChunk),
     });
+
+    const correctedChunk = response.text;
     if (correctedChunk) {
       correctedTranscript += correctedChunk;
     }

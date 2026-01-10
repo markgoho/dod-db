@@ -1,4 +1,4 @@
-import { z } from 'genkit';
+import { z } from 'zod';
 
 export const SpeakerLabelsSchema = z.object({
   'Speaker A': z.string(),

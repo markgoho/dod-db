@@ -1,26 +1,31 @@
+import { z } from 'zod';
 import { speakerIdModel } from '../config/models.js';
-import { ai } from '../genkit.js';
+import { ai } from '../ai.js';
 import {
   addSpeakerLabels,
   SpeakerLabelsSchema,
   speakerLabelPrompt,
+  type SpeakerLabels,
 } from '../prompts/speaker-labels.js';
 
 export async function identifySpeakers(
   transcript: string,
 ): Promise<{ transcript: string; speakers: Record<string, string> }> {
-  const { output } = await ai.generate({
-    prompt: speakerLabelPrompt(transcript),
+  const response = await ai.models.generateContent({
     model: speakerIdModel,
-    output: {
-      schema: SpeakerLabelsSchema,
+    contents: speakerLabelPrompt(transcript),
+    config: {
+      responseMimeType: 'application/json',
+      responseSchema: z.toJSONSchema(SpeakerLabelsSchema),
     },
   });
 
-  if (output === null) {
+  const responseText = response.text;
+  if (!responseText) {
     throw new Error('Speaker identification response was null or empty');
   }
 
+  const output = SpeakerLabelsSchema.parse(JSON.parse(responseText)) as SpeakerLabels;
   const transcriptWithNames = addSpeakerLabels(output, transcript);
 
   return {

@@ -2,7 +2,7 @@
  * CLI script to ask questions about transcripts.
  *
  * Usage:
- *   genkit start -- bun run src/scripts/transcript-qa.ts
+ *   bun run src/scripts/transcript-qa.ts
  */
 
 import { transcriptQA } from '../flows/transcript-qa.js';

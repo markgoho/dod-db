@@ -1,11 +1,9 @@
-import { defineFirestoreRetriever } from '@genkit-ai/firebase';
 import { FieldValue } from 'firebase-admin/firestore';
 import { chunk } from 'llm-chunk';
-import { Document } from 'genkit';
 import { embeddingChunking } from '../config/chunking.js';
 import { getFirestoreDb } from '../config/firebase.js';
-import { embedder } from '../config/models.js';
-import { ai } from '../genkit.js';
+import { embedderModel } from '../config/models.js';
+import { ai } from '../ai.js';
 
 const firestore = getFirestoreDb();
 
@@ -16,12 +14,12 @@ export async function indexTranscript(transcript: string): Promise<void> {
   const chunks = chunk(transcript, embeddingChunking);
 
   for (const textChunk of chunks) {
-    const embedding = (
-      await ai.embed({
-        embedder,
-        content: textChunk,
-      })
-    )[0]?.embedding;
+    const response = await ai.models.embedContent({
+      model: embedderModel,
+      contents: textChunk,
+    });
+
+    const embedding = response.embeddings?.[0]?.values;
 
     if (embedding !== undefined) {
       await firestore.collection('documents').add({
@@ -33,29 +31,23 @@ export async function indexTranscript(transcript: string): Promise<void> {
 }
 
 /**
- * Firestore retriever for semantic search over transcripts.
+ * Document type for retrieved transcript chunks.
  */
-export const transcriptRetriever = defineFirestoreRetriever(ai, {
-  name: 'transcriptRetriever',
-  firestore,
-  collection: 'documents',
-  contentField: 'text',
-  vectorField: 'embedding',
-  embedder,
-  distanceMeasure: 'COSINE',
-});
+export interface Document {
+  text: string;
+  metadata?: Record<string, unknown>;
+}
 
 /**
  * Retrieve relevant transcript chunks for a query.
+ * TODO: Implement vector search when vector DB solution is finalized.
  */
 export async function retrieveFromFirestore(
-  query: string,
+  _query: string,
 ): Promise<Document[]> {
-  const docs = await ai.retrieve({
-    retriever: transcriptRetriever,
-    query,
-    options: { limit: 3 },
-  });
-
-  return docs;
+  // Vector DB solution is TBD - returning empty array for now
+  console.warn(
+    'retrieveFromFirestore: Vector search not yet implemented. Returning empty results.',
+  );
+  return [];
 }

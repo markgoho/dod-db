@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a DoD database project built with Bun, Firebase, and Genkit for AI-powered audio transcript processing and RAG (Retrieval Augmented Generation). The application transcribes audio files, corrects transcripts using AI, identifies speakers, and indexes the content in Firestore for semantic search.
+This is a DoD database project built with Bun, Firebase, and the Google AI SDK for AI-powered audio transcript processing. The application transcribes audio files, corrects transcripts using AI, identifies speakers, and indexes the content in Firestore with vector embeddings.
 
 ## Development Commands
 
@@ -15,10 +15,6 @@ This is a DoD database project built with Bun, Firebase, and Genkit for AI-power
 
 ### Firebase Emulators
 - `npm run emulators:start` - Start Firebase Auth & Firestore emulators (ports: Auth 9099, Firestore 8080)
-
-### Genkit Development
-- `genkit start -- bun run src/scripts/process-transcript.ts` - Start Genkit Developer UI with the main processing flow
-- The Genkit UI allows you to inspect and run flows interactively
 
 ### Firebase Functions
 - `cd functions && npm run build` - Build Firebase Functions TypeScript
@@ -41,7 +37,7 @@ The transcript processing pipeline is orchestrated in `src/pipeline/index.ts`:
    - Chunked processing via `llm-chunk` for long transcripts
 
 3. **Speaker Identification** (`src/pipeline/identify-speakers.ts`)
-   - Uses structured output to map "Speaker A, B, C" to real names
+   - Uses structured JSON output to map "Speaker A, B, C" to real names
    - Returns both the labeled transcript and speaker mapping
 
 4. **Storage** (`src/storage/`)
@@ -51,11 +47,12 @@ The transcript processing pipeline is orchestrated in `src/pipeline/index.ts`:
 ### Key Architectural Patterns
 
 - **Centralized Configuration**: All config in `src/config/` (chunking, firebase, models)
-- **Single Genkit Instance**: Exported from `src/genkit.ts` with Google AI plugin
+- **Google AI Client**: Exported from `src/ai.ts` using `@google/genai` SDK
 - **Chunking Strategy**: Uses `llm-chunk` library with sentence-based splitting
   - Correction: 5000-10000 tokens, 200 overlap (maintain context)
   - Embedding: 1000-2000 tokens, 100 overlap (precise retrieval)
 - **Prompt Organization**: Prompts in `src/prompts/` with barrel export
+- **Structured Output**: Uses Zod schemas with `zod-to-json-schema` for type-safe JSON responses
 
 ### Project Structure
 
@@ -70,7 +67,7 @@ The transcript processing pipeline is orchestrated in `src/pipeline/index.ts`:
 │   │   ├── transcribe.ts    # AssemblyAI transcription
 │   │   ├── correct.ts       # LLM-based correction
 │   │   ├── identify-speakers.ts  # Speaker name mapping
-│   │   └── index.ts         # Main processTranscript flow
+│   │   └── index.ts         # Main processTranscript function
 │   ├── prompts/             # LLM prompts
 │   │   ├── correction.ts    # Bible scholarship correction prompt
 │   │   ├── speaker-labels.ts # Speaker identification prompt + schema
@@ -79,12 +76,12 @@ The transcript processing pipeline is orchestrated in `src/pipeline/index.ts`:
 │   │   ├── firestore.ts     # Firestore indexing & retrieval
 │   │   ├── file.ts          # Local file output
 │   │   └── index.ts         # Barrel export
-│   ├── flows/               # Additional Genkit flows
+│   ├── flows/               # Additional AI functions
 │   │   └── transcript-qa.ts # Q&A over indexed transcripts
 │   ├── scripts/             # CLI entry points
 │   │   ├── process-transcript.ts # Run full pipeline
-│   │   └── transcript-qa.ts     # Run Q&A flow
-│   ├── genkit.ts            # Genkit instance configuration
+│   │   └── transcript-qa.ts     # Run Q&A function
+│   ├── ai.ts                # Google AI client configuration
 │   └── index.ts             # Main barrel export
 ├── data/                     # Sample/output data files
 │   └── transcript.txt       # Sample processed transcript
@@ -96,7 +93,7 @@ The transcript processing pipeline is orchestrated in `src/pipeline/index.ts`:
 
 Required environment variables:
 - `ASSEMBLYAI_API_KEY` - AssemblyAI API key for audio transcription
-- `GEMINI_API_KEY` - Google AI API key (for Genkit)
+- `GEMINI_API_KEY` - Google AI API key for Gemini models
 - `FIREBASE_PROJECT_ID` - Firebase project identifier (for Firestore indexing)
 
 ## Code Conventions
@@ -106,16 +103,16 @@ Required environment variables:
   - Exception: `unicorn/consistent-function-scoping` set to not check arrow functions (for reactive contexts)
 - **Runtime**: Bun is the primary runtime (uses `Bun.write` for file operations)
 - **Firebase Admin**: Initialized with project ID from environment for Firestore access
-- **Genkit Flows**: All flows must be defined in files that export the Genkit instance (single-file structure per GENKIT.md best practice)
+- **Google AI SDK**: Uses `@google/genai` for text generation and embeddings
 
 ## Important Implementation Notes
 
-- The main transcript processing flow (`processTranscript` in `src/pipeline/index.ts`) orchestrates: transcription → correction → speaker identification → Firestore indexing
+- The main transcript processing function (`processTranscript` in `src/pipeline/index.ts`) orchestrates: transcription → correction → speaker identification → Firestore indexing
 - Firestore uses vector embeddings (`FieldValue.vector()`) for semantic search capabilities
-- Genkit flows use `ai.run()` for observability/tracing of different pipeline stages
+- Vector retrieval is TBD - `retrieveFromFirestore` currently returns an empty array pending vector DB solution selection
 - The project uses Google Drive URLs for audio input (format: `https://drive.google.com/uc?export=download&id={fileId}`)
 - All configuration is centralized in `src/config/` - modify chunking settings, models, or Firebase config there
-- Refer to `GENKIT.md` for detailed Genkit API patterns and model recommendations
+- Structured output uses Zod schemas converted via `zod-to-json-schema` for the Google AI SDK
 
 ## Project Management
 
