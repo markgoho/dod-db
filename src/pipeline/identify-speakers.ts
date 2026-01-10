@@ -10,10 +10,11 @@ import {
 
 export async function identifySpeakers(
   transcript: string,
+  metadata?: { title?: string; description?: string },
 ): Promise<{ transcript: string; speakers: Record<string, string> }> {
   const response = await ai.models.generateContent({
     model: speakerIdModel,
-    contents: speakerLabelPrompt(transcript),
+    contents: speakerLabelPrompt(transcript, metadata),
     config: {
       responseMimeType: 'application/json',
       responseSchema: z.toJSONSchema(SpeakerLabelsSchema),

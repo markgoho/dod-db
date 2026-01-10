@@ -9,6 +9,7 @@
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@types/bun": "latest",
+    "@types/node": "^25.0.6",
     "eslint": "^9.39.2",
     "eslint-plugin-unicorn": "^62.0.0",
     "firebase-tools": "^15.2.1",
@@ -24,6 +25,7 @@
     "assemblyai": "^4.22.1",
     "firebase-admin": "^13.6.0",
     "llm-chunk": "^0.0.1",
+    "slugify": "^1.6.6",
     "zod": "^4.3.5"
   }
 }

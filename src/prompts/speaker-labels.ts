@@ -8,10 +8,26 @@ export const SpeakerLabelsSchema = z.object({
 
 export type SpeakerLabels = z.infer<typeof SpeakerLabelsSchema>;
 
-export function speakerLabelPrompt(transcript: string): string {
+export function speakerLabelPrompt(
+  transcript: string,
+  context?: { title?: string; description?: string },
+): string {
+  const contextSection = context
+    ? `
+  <video-context>
+    Title: ${context.title || 'N/A'}
+    Description: ${context.description || 'N/A'}
+  </video-context>
+
+  Use the video context above to help identify speakers if they are mentioned.
+
+  `
+    : '';
+
   return `You are an expert in speaker label recognition. You will receive a portion of a transcript with timestamps, and speaker labels but the labels don't have the names, only Speaker A, Speaker B, etc.
 
   Your job is to identify the speakers by name in the text of the transcript.
+${contextSection}
 
   <example-transcript>
     [00:00:01] Speaker A: What's the **Song of Songs** all about? Songs.

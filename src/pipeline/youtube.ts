@@ -1,0 +1,129 @@
+import { youtubeConfig } from '../config/youtube.js';
+import { formatDate, titleToSlug } from '../utils/slugify.js';
+import * as fs from 'node:fs/promises';
+import * as path from 'node:path';
+
+export interface VideoMetadata {
+  id: string;
+  title: string;
+  description: string;
+  publishedAt: string;
+  channelTitle: string;
+}
+
+/**
+ * Fetch video metadata using yt-dlp.
+ */
+export async function fetchVideoMetadata(
+  videoId: string,
+): Promise<VideoMetadata> {
+  const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+
+  const proc = Bun.spawn([
+    'yt-dlp',
+    videoUrl,
+    '--dump-json',
+    '--no-playlist',
+  ]);
+
+  const metadata = await new Response(proc.stdout).text();
+  const exitCode = await proc.exited;
+
+  if (exitCode !== 0) {
+    throw new Error(`yt-dlp failed with exit code ${exitCode}`);
+  }
+
+  const data = JSON.parse(metadata);
+
+  return {
+    id: videoId,
+    title: data.title || 'Untitled',
+    description: data.description || '',
+    publishedAt: data.upload_date
+      ? `${data.upload_date.slice(0, 4)}-${data.upload_date.slice(4, 6)}-${data.upload_date.slice(6, 8)}T00:00:00Z`
+      : new Date().toISOString(),
+    channelTitle: data.uploader || '',
+  };
+}
+
+/**
+ * Download audio from YouTube video using yt-dlp.
+ * Returns local file path to the downloaded audio.
+ */
+export async function downloadAudio(
+  videoId: string,
+  outputDirectory: string,
+): Promise<string> {
+  // Ensure output directory exists
+  await fs.mkdir(outputDirectory, { recursive: true });
+
+  const outputPath = path.join(outputDirectory, `${videoId}.mp3`);
+  const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+
+  // yt-dlp command to extract audio as MP3
+  const proc = Bun.spawn([
+    'yt-dlp',
+    videoUrl,
+    '-x', // Extract audio
+    '--audio-format',
+    'mp3',
+    '-o',
+    outputPath,
+  ]);
+
+  const exitCode = await proc.exited;
+
+  if (exitCode !== 0) {
+    throw new Error(`yt-dlp audio download failed with exit code ${exitCode}`);
+  }
+
+  return outputPath;
+}
+
+/**
+ * Extract video ID from various YouTube URL formats.
+ * Supports:
+ * - youtube.com/watch?v=ID
+ * - youtu.be/ID
+ * - youtube.com/embed/ID
+ * - youtube.com/v/ID
+ */
+export function extractVideoId(url: string): string {
+  // Try various YouTube URL patterns
+  const patterns = [
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/,
+    /youtube\.com\/embed\/([a-zA-Z0-9_-]{11})/,
+    /youtube\.com\/v\/([a-zA-Z0-9_-]{11})/,
+  ];
+
+  for (const pattern of patterns) {
+    const match = url.match(pattern);
+    if (match?.[1]) {
+      return match[1];
+    }
+  }
+
+  // If no pattern matches, check if the input is already a video ID
+  if (/^[a-zA-Z0-9_-]{11}$/.test(url)) {
+    return url;
+  }
+
+  throw new Error(
+    `Invalid YouTube URL or video ID: ${url}\n` +
+      'Expected format: https://www.youtube.com/watch?v=VIDEO_ID or https://youtu.be/VIDEO_ID',
+  );
+}
+
+/**
+ * Generate transcript filename from title and publish date.
+ * Format: YYYY-MM-DD-title-slug.txt
+ * Example: "2024-01-15-episode-1-the-beginning.txt"
+ */
+export function generateTranscriptFilename(
+  title: string,
+  publishedAt: string,
+): string {
+  const date = formatDate(publishedAt);
+  const slug = titleToSlug(title);
+  return `${date}-${slug}.txt`;
+}

@@ -1,0 +1,81 @@
+name: Process YouTube Episodes
+
+on:
+  # Run weekly on Mondays at 8am EST (1pm UTC)
+  schedule:
+    - cron: '0 13 * * 1'
+
+  # Manual trigger with video URLs
+  workflow_dispatch:
+    inputs:
+      video_urls:
+        description: 'YouTube video URLs (comma-separated)'
+        required: false
+        type: string
+      force:
+        description: 'Force reprocess already-processed videos'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write  # Need write access to commit processed-videos.json and transcripts
+
+jobs:
+  process_episodes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Install yt-dlp
+        run: |
+          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+          sudo chmod a+rx /usr/local/bin/yt-dlp
+
+      - name: Create data directories
+        run: |
+          mkdir -p data/audio
+          mkdir -p data/transcripts
+
+      - name: Check for new episodes (scheduled)
+        if: github.event_name == 'schedule'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
+        run: bun run src/scripts/check-new-episodes.ts
+
+      - name: Process manual video URLs
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.video_urls != ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ASSEMBLYAI_API_KEY: ${{ secrets.ASSEMBLYAI_API_KEY }}
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ github.event.inputs.force }}" == "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+
+          IFS=',' read -ra URLS <<< "${{ github.event.inputs.video_urls }}"
+          for url in "${URLS[@]}"; do
+            echo "Processing: $url"
+            bun run src/scripts/process-youtube.ts "$url" $FORCE_FLAG
+          done
+
+      - name: Commit processed videos and transcripts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/processed-videos.json
+          git add data/transcripts/*.txt || true
+          git diff --staged --quiet || git commit -m "Process YouTube episodes [skip ci]"
+          git push
