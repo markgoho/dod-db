@@ -3313,7 +3313,221 @@
       "firstSeen": "2026-01-11T22:20:51.302Z",
       "lastSeen": "2026-01-11T22:20:51.302Z",
       "status": "pending"
+    },
+    "DAF Yomi→Daf Yomi": {
+      "original": "DAF Yomi",
+      "corrected": "Daf Yomi",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "8OqwDYUzrIY"
+      ],
+      "examples": [
+        "\"been doing DAF Yomi since January\"",
+        "\"to the daf Yomi.\""
+      ],
+      "correctedExamples": [
+        "\"been doing Daf Yomi since January\"",
+        "\"to the Daf Yomi.\""
+      ],
+      "timestamps": [
+        "00:03:58.000",
+        "00:20:55.880"
+      ],
+      "episodeIds": [
+        "8OqwDYUzrIY",
+        "8OqwDYUzrIY"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T22:37:57.104Z",
+      "lastSeen": "2026-01-11T22:37:57.104Z",
+      "status": "pending"
+    },
+    "doff→Daf": {
+      "original": "doff",
+      "corrected": "Daf",
+      "category": "proper-noun",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "8OqwDYUzrIY"
+      ],
+      "examples": [
+        "\"Of doff reactions as\"",
+        "\"The doff, all of\"",
+        "\"was a doff, it was\""
+      ],
+      "correctedExamples": [
+        "\"Of Daf Reactions as\"",
+        "\"The Daf, all of\"",
+        "\"was a daf, it was\""
+      ],
+      "timestamps": [
+        "00:07:01.470",
+        "00:48:31.340",
+        "00:53:55.730"
+      ],
+      "episodeIds": [
+        "8OqwDYUzrIY",
+        "8OqwDYUzrIY",
+        "8OqwDYUzrIY"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-11T22:37:57.104Z",
+      "lastSeen": "2026-01-11T22:37:57.104Z",
+      "status": "pending"
+    },
+    "five books→Five Books": {
+      "original": "five books",
+      "corrected": "Five Books",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "8OqwDYUzrIY"
+      ],
+      "examples": [
+        "\"Torah, the five books of Moses.\"",
+        "\"as the five books of Moses.\""
+      ],
+      "correctedExamples": [
+        "\"Torah, the Five Books of Moses.\"",
+        "\"as the Five Books of Moses.\""
+      ],
+      "timestamps": [
+        "00:07:31.130",
+        "00:07:36.730"
+      ],
+      "episodeIds": [
+        "8OqwDYUzrIY",
+        "8OqwDYUzrIY"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T22:37:57.104Z",
+      "lastSeen": "2026-01-11T22:37:57.104Z",
+      "status": "pending"
+    },
+    "Yohanan→Yochanan": {
+      "original": "Yohanan",
+      "corrected": "Yochanan",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "8OqwDYUzrIY"
+      ],
+      "examples": [
+        "\"disrespect Rabbi Yohanan that way?\"",
+        "\"be Rabbi Yohanan.\""
+      ],
+      "correctedExamples": [
+        "\"disrespect Rabbi Yochanan that way?\"",
+        "\"be Rabbi Yochanan.\""
+      ],
+      "timestamps": [
+        "00:27:20.970",
+        "00:27:26.410"
+      ],
+      "episodeIds": [
+        "8OqwDYUzrIY",
+        "8OqwDYUzrIY"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T22:37:57.104Z",
+      "lastSeen": "2026-01-11T22:37:57.104Z",
+      "status": "pending"
+    },
+    "load→Lod": {
+      "original": "load",
+      "corrected": "Lod",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "8OqwDYUzrIY"
+      ],
+      "examples": [
+        "\"way to load?\"",
+        "\"way to load?\""
+      ],
+      "correctedExamples": [
+        "\"way to Lod?\"",
+        "\"way to Lod?\""
+      ],
+      "timestamps": [
+        "00:39:19.210",
+        "00:39:48.130"
+      ],
+      "episodeIds": [
+        "8OqwDYUzrIY",
+        "8OqwDYUzrIY"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T22:37:57.104Z",
+      "lastSeen": "2026-01-11T22:37:57.104Z",
+      "status": "pending"
+    },
+    "Arach→Aruch": {
+      "original": "Arach",
+      "corrected": "Aruch",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "8OqwDYUzrIY"
+      ],
+      "examples": [
+        "\"the Shulchan Arach.\"",
+        "\"the Shulchan Arach is a\""
+      ],
+      "correctedExamples": [
+        "\"the Shulchan Aruch.\"",
+        "\"the Shulchan Aruch is a\""
+      ],
+      "timestamps": [
+        "00:51:24.420",
+        "00:51:39.720"
+      ],
+      "episodeIds": [
+        "8OqwDYUzrIY",
+        "8OqwDYUzrIY"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T22:37:57.104Z",
+      "lastSeen": "2026-01-11T22:37:57.104Z",
+      "status": "pending"
+    },
+    "Derek→derech": {
+      "original": "Derek",
+      "corrected": "derech",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "8OqwDYUzrIY"
+      ],
+      "examples": [
+        "\"off the Derek.\"",
+        "\"off the Derek too.\""
+      ],
+      "correctedExamples": [
+        "\"off the derech.\"",
+        "\"off the derech too.\""
+      ],
+      "timestamps": [
+        "00:53:07.370",
+        "00:53:14.770"
+      ],
+      "episodeIds": [
+        "8OqwDYUzrIY",
+        "8OqwDYUzrIY"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T22:37:57.104Z",
+      "lastSeen": "2026-01-11T22:37:57.104Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-11T22:20:51.303Z"
+  "lastUpdated": "2026-01-11T22:37:57.104Z"
 }

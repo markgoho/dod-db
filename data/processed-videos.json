@@ -2269,6 +2269,7 @@
     "publishedAt": "2023-09-11T00:00:00Z",
     "processedAt": "2026-01-11T22:20:51.303Z",
     "transcriptPath": "data/transcripts/2023-09-11-episode-23-september-11-2023-abortion-and-the-bible.txt",
+    "episodeNumber": 1,
     "tags": [
       {
         "tag": "bible",
@@ -2340,6 +2341,71 @@
       },
       {
         "tag": "univocality",
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "8OqwDYUzrIY",
+    "title": "Episode 24 (September 18), \"Tiptoe Through the Talmud\" with Miriam Anzovin",
+    "publishedAt": "2023-09-18T00:00:00Z",
+    "processedAt": "2026-01-11T22:37:57.105Z",
+    "transcriptPath": "data/transcripts/2023-09-18-episode-24-september-18-tiptoe-through-the-talmud-with-miriam-anzovin.txt",
+    "tags": [
+      {
+        "tag": "talmud",
+        "mentions": 45
+      },
+      {
+        "tag": "lot",
+        "mentions": 37
+      },
+      {
+        "tag": "torah",
+        "mentions": 31
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 12
+      },
+      {
+        "tag": "israel",
+        "mentions": 8
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 7
+      },
+      {
+        "tag": "jesus",
+        "mentions": 6
+      },
+      {
+        "tag": "bible",
+        "mentions": 6
+      },
+      {
+        "tag": "babylon",
+        "mentions": 4
+      },
+      {
+        "tag": "moses",
+        "mentions": 2
+      },
+      {
+        "tag": "ezekiel",
+        "mentions": 1
+      },
+      {
+        "tag": "genesis",
+        "mentions": 1
+      },
+      {
+        "tag": "book of job",
+        "mentions": 1
+      },
+      {
+        "tag": "christianity",
         "mentions": 1
       }
     ],
