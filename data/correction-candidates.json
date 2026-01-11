@@ -474,7 +474,7 @@
       "original": "century ce",
       "corrected": "century CE",
       "category": "capitalization",
-      "totalOccurrences": 8,
+      "totalOccurrences": 10,
       "episodeCount": 3,
       "episodes": [
         "_zou11pMRag",
@@ -501,9 +501,9 @@
         "_zou11pMRag",
         "_zou11pMRag"
       ],
-      "confidence": 65,
+      "confidence": 70,
       "firstSeen": "2026-01-11T17:59:30.300Z",
-      "lastSeen": "2026-01-11T18:28:00.255Z",
+      "lastSeen": "2026-01-11T19:27:55.129Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:05:33.332Z",
       "reviewedBy": "UI Review"
@@ -1659,7 +1659,7 @@
       "original": "nephal",
       "corrected": "Niphal",
       "category": "proper-noun",
-      "totalOccurrences": 2,
+      "totalOccurrences": 4,
       "episodeCount": 1,
       "episodes": [
         "5bA0OigwXR4"
@@ -1680,9 +1680,9 @@
         "5bA0OigwXR4",
         "5bA0OigwXR4"
       ],
-      "confidence": 15,
+      "confidence": 25,
       "firstSeen": "2026-01-11T18:28:00.255Z",
-      "lastSeen": "2026-01-11T18:28:00.255Z",
+      "lastSeen": "2026-01-11T19:27:55.129Z",
       "status": "pending"
     },
     "McLaughlin→McLachlan": {
@@ -1908,5 +1908,5 @@
       "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-11T19:11:12.592Z"
+  "lastUpdated": "2026-01-11T19:27:55.129Z"
 }
