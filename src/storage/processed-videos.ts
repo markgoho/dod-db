@@ -7,6 +7,7 @@ export const ProcessedVideoSchema = z.object({
   publishedAt: z.string(),
   processedAt: z.string(),
   transcriptPath: z.string(),
+  episodeNumber: z.number().int().positive().optional(),
 });
 
 export type ProcessedVideo = z.infer<typeof ProcessedVideoSchema>;
@@ -54,7 +55,7 @@ export async function isVideoProcessed(videoId: string): Promise<boolean> {
 }
 
 /**
- * Add video to processed list.
+ * Add video to processed list with computed episode number.
  */
 export async function markVideoAsProcessed(
   video: ProcessedVideo,
@@ -69,5 +70,81 @@ export async function markVideoAsProcessed(
   }
 
   videos.push(video);
-  await saveProcessedVideos(videos);
+
+  // Recompute episode numbers for entire list
+  const withNumbers = computeEpisodeNumbers(videos);
+
+  await saveProcessedVideos(withNumbers);
+
+  // Log assigned episode number
+  const newVideo = withNumbers.find((v) => v.videoId === video.videoId);
+  if (newVideo?.episodeNumber) {
+    console.log(`✓ Assigned episode number: ${newVideo.episodeNumber}`);
+  }
+}
+
+/**
+ * Compute episode numbers for videos based on publishedAt date order.
+ * Only fills missing episodeNumber fields (respects manual overrides).
+ *
+ * Algorithm:
+ * - Sort by publishedAt ascending (earliest = Episode 1)
+ * - Use videoId as tiebreaker for identical dates (lexicographic order)
+ * - Skip videos with existing episodeNumber (manual overrides)
+ * - Assign sequential numbers starting from 1
+ */
+export function computeEpisodeNumbers(
+  videos: ProcessedVideo[],
+): ProcessedVideo[] {
+  // Sort by publishedAt (ascending), then videoId for determinism
+  const sorted = [...videos].sort((a, b) => {
+    const dateCompare = a.publishedAt.localeCompare(b.publishedAt);
+    if (dateCompare !== 0) return dateCompare;
+    return a.videoId.localeCompare(b.videoId); // Tiebreaker
+  });
+
+  // Assign sequential numbers only to entries without episodeNumber
+  let nextNumber = 1;
+  return sorted.map((video) => {
+    if (video.episodeNumber !== undefined) {
+      return video; // Respect manual override
+    }
+    return {
+      ...video,
+      episodeNumber: nextNumber++,
+    };
+  });
+}
+
+/**
+ * Get all processed videos with episode numbers computed.
+ */
+export async function getProcessedVideosWithNumbers(): Promise<
+  ProcessedVideo[]
+> {
+  const videos = await loadProcessedVideos();
+  return computeEpisodeNumbers(videos);
+}
+
+/**
+ * Get video by episode number.
+ * Returns undefined if not found.
+ */
+export async function getVideoByEpisodeNumber(
+  episodeNumber: number,
+): Promise<ProcessedVideo | undefined> {
+  const videos = await getProcessedVideosWithNumbers();
+  return videos.find((v) => v.episodeNumber === episodeNumber);
+}
+
+/**
+ * Get episode number for a video ID.
+ * Returns undefined if not found or not assigned.
+ */
+export async function getEpisodeNumber(
+  videoId: string,
+): Promise<number | undefined> {
+  const videos = await getProcessedVideosWithNumbers();
+  const video = videos.find((v) => v.videoId === videoId);
+  return video?.episodeNumber;
 }

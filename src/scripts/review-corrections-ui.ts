@@ -14,7 +14,6 @@ import {
   rejectCandidate,
   type CorrectionCandidate,
 } from '../pipeline/correction-tracker.js';
-import { globalCorrections } from '../config/corrections.js';
 import * as path from 'node:path';
 
 const PORT = 3000;

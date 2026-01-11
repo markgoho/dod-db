@@ -109,6 +109,23 @@ The transcript processing pipeline is orchestrated via `src/pipeline/youtube-pro
    - **Tracking**: Updates `data/processed-videos.json` to prevent reprocessing
    - **Firestore**: Vector embeddings stored with `FieldValue.vector()` for semantic search (TBD)
 
+### Episode Number Tracking
+
+Episode numbers are automatically assigned based on `publishedAt` date order:
+- **Sequential numbering**: Earliest episode = 1, next = 2, etc.
+- **All episodes included**: Even those without numbers in titles (like "Apostlepalooza!")
+- **Stored permanently**: In `data/processed-videos.json` as `episodeNumber` field
+- **Computed automatically**: When processing new videos via `markVideoAsProcessed()`
+- **Manual overrides**: Respected (set `episodeNumber` directly in JSON)
+- **Deterministic**: Same dates use videoId as tiebreaker for stable ordering
+
+**One-time migration**: Run `bun run src/scripts/migrate-episode-numbers.ts` to backfill existing episodes.
+
+**Utility functions** (in `src/storage/processed-videos.ts`):
+- `getProcessedVideosWithNumbers()` - Get all videos with episode numbers
+- `getVideoByEpisodeNumber(number)` - Find video by episode number
+- `getEpisodeNumber(videoId)` - Get episode number for a video ID
+
 ### Correction Learning Workflow
 
 The correction system includes a **learning feedback loop** that improves efficiency over time:
