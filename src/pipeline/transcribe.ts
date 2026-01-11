@@ -1,8 +1,4 @@
 import { AssemblyAI, type TranscribeParams } from 'assemblyai';
-import {
-  downloadYouTubeAudio,
-  isYouTubeUrl,
-} from '../utils/youtube.js';
 
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY!,
@@ -25,16 +21,16 @@ function formatTimestamp(milliseconds: number): string {
   return `[${hours}:${minutes}:${seconds}.${ms}]`;
 }
 
-export async function transcribeAudio(url: string): Promise<string> {
-  // If YouTube URL, download audio first
-  let audioUrl = url;
-  if (isYouTubeUrl(url)) {
-    const audioPath = await downloadYouTubeAudio(url);
-    // Upload the local file to AssemblyAI
-    console.log('  Uploading audio to AssemblyAI...');
-    const uploadedUrl = await client.files.upload(audioPath);
-    audioUrl = uploadedUrl;
-  }
+/**
+ * Transcribe audio file using AssemblyAI.
+ * @param audioFilePath - Path to local audio file (MP3, M4A, WAV, etc.)
+ * @returns Formatted transcript with sentence-level timestamps
+ */
+export async function transcribeAudio(audioFilePath: string): Promise<string> {
+  // Upload local audio file to AssemblyAI
+  console.log('  Uploading audio to AssemblyAI...');
+  const uploadedUrl = await client.files.upload(audioFilePath);
+  const audioUrl = uploadedUrl;
 
   const params: TranscribeParams = {
     audio: audioUrl,
