@@ -1,13 +1,31 @@
 import { z } from 'zod';
 import { youtubeConfig } from '../config/youtube.js';
 
+/**
+ * Tag on an episode with mention count.
+ * Distinct from TagDefinition in tag-vocabulary.ts.
+ */
+export interface EpisodeTag {
+	tag: string; // Canonical tag name: "Moses", "Septuagint"
+	mentions: number; // Count of mentions in this episode
+}
+
+/**
+ * Zod schema for EpisodeTag validation.
+ */
+export const EpisodeTagSchema = z.object({
+	tag: z.string(),
+	mentions: z.number().int().positive(),
+});
+
 export const ProcessedVideoSchema = z.object({
-  videoId: z.string(),
-  title: z.string(),
-  publishedAt: z.string(),
-  processedAt: z.string(),
-  transcriptPath: z.string(),
-  episodeNumber: z.number().int().positive().optional(),
+	videoId: z.string(),
+	title: z.string(),
+	publishedAt: z.string(),
+	processedAt: z.string(),
+	transcriptPath: z.string(),
+	episodeNumber: z.number().int().positive().optional(),
+	tags: z.array(EpisodeTagSchema).optional(), // Optional for backward compatibility
 });
 
 export type ProcessedVideo = z.infer<typeof ProcessedVideoSchema>;

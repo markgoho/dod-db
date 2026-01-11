@@ -10,6 +10,7 @@ import {
 import { transcribeAudio } from './transcribe.js';
 import { correctTranscript } from './correct.js';
 import { identifySpeakers } from './identify-speakers.js';
+import { extractTags } from './extract-tags.js';
 import { analyzeCorrections } from './learn-corrections.js';
 import { writeToFile } from '../storage/file.js';
 import {
@@ -135,16 +136,22 @@ export async function processYouTubeVideo(
   await writeToFile(transcriptPath, correctedTranscript);
   console.log(`Final transcript saved to: ${transcriptPath}`);
 
+  // Extract tags from corrected transcript
+  console.log('Extracting tags...');
+  const tags = await extractTags(correctedTranscript);
+  console.log(`✓ Extracted ${tags.length} tags`);
+
   // Analyze corrections for learning (compare raw vs corrected)
   await analyzeCorrections(transcriptWithNames, correctedTranscript, videoId);
 
-  // Mark as processed
+  // Mark as processed with tags
   await markVideoAsProcessed({
     videoId,
     title: metadata.title,
     publishedAt: metadata.publishedAt,
     processedAt: new Date().toISOString(),
     transcriptPath,
+    tags,
   });
 
   console.log('Done!');
