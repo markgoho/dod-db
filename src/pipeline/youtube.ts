@@ -58,18 +58,20 @@ export async function downloadAudio(
   // Ensure output directory exists
   await fs.mkdir(outputDirectory, { recursive: true });
 
-  const outputPath = path.join(outputDirectory, `${videoId}.m4a`);
+  // Let yt-dlp choose the extension based on format
+  const outputTemplate = path.join(outputDirectory, `${videoId}.%(ext)s`);
   const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
 
-  // Download format 140 (128kbps AAC) - YouTube's highest quality audio
-  // This is from YouTube's DASH stream which uses consistent bitrate encoding
+  // Use bestaudio to automatically select the highest quality audio format
+  // This handles variations in available formats across different videos
+  // (e.g., format 140 AAC, 251 Opus, or DRC variants)
   const proc = Bun.spawn([
     'yt-dlp',
     videoUrl,
     '-f',
-    '140', // YouTube format 140 = 128kbps AAC
+    'bestaudio',
     '-o',
-    outputPath,
+    outputTemplate,
   ]);
 
   const exitCode = await proc.exited;
@@ -78,7 +80,15 @@ export async function downloadAudio(
     throw new Error(`yt-dlp audio download failed with exit code ${exitCode}`);
   }
 
-  return outputPath;
+  // Find the actual downloaded file (could be .m4a, .webm, .opus, etc.)
+  const files = await fs.readdir(outputDirectory);
+  const downloadedFile = files.find(f => f.startsWith(videoId) && f !== `${videoId}.mp3`);
+
+  if (!downloadedFile) {
+    throw new Error(`Could not find downloaded audio file for ${videoId}`);
+  }
+
+  return path.join(outputDirectory, downloadedFile);
 }
 
 /**

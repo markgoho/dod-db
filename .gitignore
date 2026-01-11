@@ -36,6 +36,9 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 # Audio files
 *.mp3
 *.m4a
+*.webm
+*.opus
+*.wav
 
 # Raw transcripts (for learning comparisons only, don't commit)
 data/transcripts/*-raw.txt
