@@ -1,11 +1,7 @@
-import { exec } from 'node:child_process';
-import { promisify } from 'node:util';
 import { writeToFile } from '../storage/file.js';
 import { correctTranscript } from './correct.js';
 import { identifySpeakers } from './identify-speakers.js';
 import { transcribeAudio } from './transcribe.js';
-
-const execAsync = promisify(exec);
 
 /**
  * Commit a pipeline stage to git with descriptive message.
@@ -16,10 +12,20 @@ const execAsync = promisify(exec);
  */
 async function commitStage(stageName: string, filePath: string): Promise<void> {
   try {
-    await execAsync(`git add "${filePath}"`);
-    await execAsync(
-      `git commit -m "Transcript ${stageName} complete" --author="Pipeline <pipeline@dod-db>"`,
-    );
+    // Add file to git
+    const addProc = Bun.spawn(['git', 'add', filePath]);
+    await addProc.exited;
+
+    // Commit with descriptive message
+    const commitProc = Bun.spawn([
+      'git',
+      'commit',
+      '-m',
+      `Transcript ${stageName} complete`,
+      '--author=Pipeline <pipeline@dod-db>',
+    ]);
+    await commitProc.exited;
+
     console.log(`✓ Committed ${stageName}`);
   } catch {
     console.warn(`Could not commit ${stageName} (git may not be available)`);

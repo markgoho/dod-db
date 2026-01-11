@@ -1,7 +1,7 @@
 import { youtubeConfig } from '../config/youtube.js';
 import { formatDate, titleToSlug } from '../utils/slugify.js';
-import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
+import { mkdir, readdir } from 'node:fs/promises';
 
 export interface VideoMetadata {
   id: string;
@@ -51,7 +51,7 @@ export async function downloadAudio(
   outputDirectory: string,
 ): Promise<string> {
   // Ensure output directory exists
-  await fs.mkdir(outputDirectory, { recursive: true });
+  await mkdir(outputDirectory, { recursive: true });
 
   // Let yt-dlp choose the extension based on format
   const outputTemplate = path.join(outputDirectory, `${videoId}.%(ext)s`);
@@ -76,7 +76,7 @@ export async function downloadAudio(
   }
 
   // Find the actual downloaded file (could be .m4a, .webm, .opus, etc.)
-  const files = await fs.readdir(outputDirectory);
+  const files = await readdir(outputDirectory);
   const downloadedFile = files.find(
     (f) => f.startsWith(videoId) && f !== `${videoId}.mp3`,
   );

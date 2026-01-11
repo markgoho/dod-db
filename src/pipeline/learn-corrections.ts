@@ -7,7 +7,171 @@ interface CorrectionSuggestion {
   original: string;
   corrected: string;
   count: number;
+  category: 'capitalization' | 'spelling' | 'proper-noun' | 'biblical-term';
+  examples: string[]; // Store a few example contexts
 }
+
+// Common English words to filter out (not candidates for deterministic corrections)
+const COMMON_WORDS = new Set([
+  'the',
+  'of',
+  'in',
+  'to',
+  'and',
+  'a',
+  'is',
+  'it',
+  'that',
+  'be',
+  'for',
+  'on',
+  'with',
+  'as',
+  'by',
+  'at',
+  'or',
+  'an',
+  'this',
+  'from',
+  'they',
+  'we',
+  'you',
+  'he',
+  'she',
+  'was',
+  'were',
+  'been',
+  'are',
+  'have',
+  'has',
+  'had',
+  'do',
+  'does',
+  'did',
+  'will',
+  'would',
+  'could',
+  'should',
+  'may',
+  'might',
+  'can',
+  'but',
+  'not',
+  'what',
+  'which',
+  'who',
+  'when',
+  'where',
+  'why',
+  'how',
+  'all',
+  'each',
+  'every',
+  'some',
+  'any',
+  'more',
+  'most',
+  'other',
+  'such',
+  'only',
+  'own',
+  'same',
+  'so',
+  'than',
+  'too',
+  'very',
+  'just',
+  'about',
+  'into',
+  'through',
+  'during',
+  'before',
+  'after',
+  'above',
+  'below',
+  'between',
+  'under',
+  'again',
+  'once',
+  'here',
+  'there',
+  'then',
+  'now',
+  'also',
+  'being',
+  'going',
+  'people',
+  'know',
+  'think',
+  'say',
+  'get',
+  'make',
+  'go',
+  'see',
+  'come',
+  'take',
+  'give',
+  'find',
+  'tell',
+  'ask',
+  'work',
+  'seem',
+  'feel',
+  'try',
+  'leave',
+  'call',
+]);
+
+// Biblical and theological terms (if we see these, they're likely good candidates)
+const BIBLICAL_TERMS = new Set([
+  'torah',
+  'septuagint',
+  'apocrypha',
+  'deuteronomy',
+  'genesis',
+  'exodus',
+  'leviticus',
+  'numbers',
+  'revelation',
+  'apocalypse',
+  'messiah',
+  'yhwh',
+  'yahweh',
+  'elohim',
+  'adonai',
+  'gospel',
+  'epistle',
+  'testament',
+  'apostle',
+  'pharisee',
+  'sadducee',
+  'essene',
+  'zealot',
+  'synagogue',
+  'sanhedrin',
+  'pentateuch',
+  'psalms',
+  'proverbs',
+  'prophets',
+  'maccabees',
+  'josephus',
+  'philo',
+  'talmud',
+  'midrash',
+  'mishnah',
+  'aramaic',
+  'hebrew',
+  'koine',
+  'byzantine',
+  'alexandrian',
+  'codex',
+  'papyrus',
+  'manuscript',
+  'textual',
+  'canonical',
+  'apocryphal',
+  'deuterocanonical',
+]);
 
 /**
  * Compare raw and corrected transcripts to identify LLM corrections.
@@ -61,22 +225,70 @@ export function analyzeCorrections(
     // Simple word-by-word comparison
     const maxLength = Math.max(rawWords.length, correctedWords.length);
     for (let j = 0; j < maxLength; j++) {
-      const rawWord = rawWords[j]?.replace(/[.,!?;:()[\]]/g, '').toLowerCase();
-      const correctedWord = correctedWords[j]
-        ?.replace(/[.,!?;:()[\]]/g, '')
-        .toLowerCase();
+      const rawWordOriginal = rawWords[j]?.replace(/[.,!?;:()[\]"]/g, '');
+      const correctedWordOriginal = correctedWords[j]?.replace(
+        /[.,!?;:()[\]"]/g,
+        '',
+      );
 
-      if (rawWord && correctedWord && rawWord !== correctedWord) {
+      if (!rawWordOriginal || !correctedWordOriginal) continue;
+
+      const rawWord = rawWordOriginal.toLowerCase();
+      const correctedWord = correctedWordOriginal.toLowerCase();
+
+      if (rawWord !== correctedWord) {
+        // Skip if it's a common English word (likely context-dependent)
+        if (COMMON_WORDS.has(rawWord) || COMMON_WORDS.has(correctedWord)) {
+          continue;
+        }
+
+        // Skip very short words (often artifacts)
+        if (rawWord.length < 3 || correctedWord.length < 3) {
+          continue;
+        }
+
+        // Determine category
+        let category: CorrectionSuggestion['category'] = 'spelling';
+
+        // Check if it's only a capitalization difference
+        if (rawWord === correctedWord && rawWordOriginal !== correctedWordOriginal) {
+          category = 'capitalization';
+        }
+        // Check if it's a biblical term
+        else if (
+          BIBLICAL_TERMS.has(rawWord) ||
+          BIBLICAL_TERMS.has(correctedWord)
+        ) {
+          category = 'biblical-term';
+        }
+        // Check if it looks like a proper noun (capitalized in correction)
+        else if (
+          correctedWordOriginal[0] === correctedWordOriginal[0]?.toUpperCase() &&
+          rawWordOriginal[0] !== rawWordOriginal[0]?.toUpperCase()
+        ) {
+          category = 'proper-noun';
+        }
+
         // Found a correction
         const key = `${rawWord}→${correctedWord}`;
         if (corrections.has(key)) {
           const suggestion = corrections.get(key)!;
           suggestion.count++;
+          // Store up to 3 example contexts
+          if (suggestion.examples.length < 3) {
+            suggestion.examples.push(
+              `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+            );
+          }
         } else {
           corrections.set(key, {
             original: rawWord,
             corrected: correctedWord,
             count: 1,
+            category,
+            examples: [
+              `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+            ],
           });
         }
       }
@@ -89,37 +301,65 @@ export function analyzeCorrections(
     return;
   }
 
-  // Sort by frequency (most common first)
-  const sortedCorrections = Array.from(corrections.values()).sort(
-    (a, b) => b.count - a.count,
-  );
+  // Separate by category
+  const capitalizations = Array.from(corrections.values())
+    .filter((c) => c.category === 'capitalization')
+    .sort((a, b) => b.count - a.count);
 
-  console.log('\n📚 Learning Report: LLM Corrections Made');
-  console.log('==========================================\n');
+  const biblicalTerms = Array.from(corrections.values())
+    .filter((c) => c.category === 'biblical-term')
+    .sort((a, b) => b.count - a.count);
 
-  // High-priority suggestions (5+ occurrences)
-  const highPriority = sortedCorrections.filter((c) => c.count >= 5);
-  if (highPriority.length > 0) {
-    console.log('🔥 HIGH PRIORITY (5+ occurrences) - Add to corrections.ts:');
-    console.log('-----------------------------------------------------------');
-    for (const correction of highPriority) {
+  const properNouns = Array.from(corrections.values())
+    .filter((c) => c.category === 'proper-noun')
+    .sort((a, b) => b.count - a.count);
+
+  const spellingCorrections = Array.from(corrections.values())
+    .filter((c) => c.category === 'spelling')
+    .sort((a, b) => b.count - a.count);
+
+  console.log('\n📚 Learning Report: LLM Corrections Analysis');
+  console.log('==============================================\n');
+
+  // Biblical/Theological Terms (HIGHEST PRIORITY)
+  const highPriorityBiblical = biblicalTerms.filter((c) => c.count >= 2);
+  if (highPriorityBiblical.length > 0) {
+    console.log('🔥 BIBLICAL/THEOLOGICAL TERMS (2+ occurrences):');
+    console.log('------------------------------------------------');
+    console.log('These are EXCELLENT candidates for corrections.ts!\n');
+    for (const correction of highPriorityBiblical) {
       console.log(`  ${correction.original} → ${correction.corrected}`);
       console.log(`    Occurrences: ${correction.count}`);
       console.log(
         `    Suggested rule: [["${correction.original}"], "${correction.corrected}"],`,
       );
+      console.log(`    Example: ${correction.examples[0]}`);
       console.log('');
     }
   }
 
-  // Medium-priority suggestions (2-4 occurrences)
-  const mediumPriority = sortedCorrections.filter(
-    (c) => c.count >= 2 && c.count < 5,
-  );
-  if (mediumPriority.length > 0) {
-    console.log('📌 MEDIUM PRIORITY (2-4 occurrences):');
-    console.log('--------------------------------------');
-    for (const correction of mediumPriority) {
+  // Proper Nouns
+  const highPriorityNouns = properNouns.filter((c) => c.count >= 3);
+  if (highPriorityNouns.length > 0) {
+    console.log('📛 PROPER NOUNS (3+ occurrences):');
+    console.log('----------------------------------');
+    console.log('Review these - could be scholar names, places, etc.\n');
+    for (const correction of highPriorityNouns) {
+      console.log(
+        `  ${correction.original} → ${correction.corrected} (${correction.count}x)`,
+      );
+      console.log(`    Example: ${correction.examples[0]}`);
+      console.log('');
+    }
+  }
+
+  // Capitalization patterns
+  const frequentCapitalizations = capitalizations.filter((c) => c.count >= 3);
+  if (frequentCapitalizations.length > 0) {
+    console.log('🔤 CAPITALIZATION PATTERNS (3+ occurrences):');
+    console.log('--------------------------------------------');
+    console.log('These might be worth adding if they are specific terms.\n');
+    for (const correction of frequentCapitalizations) {
       console.log(
         `  ${correction.original} → ${correction.corrected} (${correction.count}x)`,
       );
@@ -127,21 +367,36 @@ export function analyzeCorrections(
     console.log('');
   }
 
-  // Low-priority (1 occurrence)
-  const lowPriority = sortedCorrections.filter((c) => c.count === 1);
-  if (lowPriority.length > 0) {
-    console.log(`ℹ️  Low priority (1 occurrence): ${lowPriority.length} items`);
-    console.log('   (Not shown - only add if highly specific terms)\n');
+  // Spelling corrections
+  const highPrioritySpelling = spellingCorrections.filter((c) => c.count >= 3);
+  if (highPrioritySpelling.length > 0) {
+    console.log('✏️  SPELLING CORRECTIONS (3+ occurrences):');
+    console.log('------------------------------------------');
+    for (const correction of highPrioritySpelling) {
+      console.log(
+        `  ${correction.original} → ${correction.corrected} (${correction.count}x)`,
+      );
+      console.log(`    Example: ${correction.examples[0]}`);
+      console.log('');
+    }
   }
 
   // Summary
-  console.log('Summary:');
-  console.log(`  Total corrections: ${corrections.size}`);
-  console.log(`  High priority: ${highPriority.length}`);
-  console.log(`  Medium priority: ${mediumPriority.length}`);
-  console.log(`  Low priority: ${lowPriority.length}`);
+  console.log('\n📊 Summary:');
+  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+  console.log(`  Total unique corrections: ${corrections.size}`);
+  console.log(`  Biblical/Theological terms: ${biblicalTerms.length}`);
+  console.log(`    └─ High priority (2+): ${highPriorityBiblical.length}`);
+  console.log(`  Proper nouns: ${properNouns.length}`);
+  console.log(`    └─ High priority (3+): ${highPriorityNouns.length}`);
+  console.log(`  Capitalization patterns: ${capitalizations.length}`);
   console.log(
-    '\n💡 Add high-priority rules to src/config/corrections.ts for faster processing!\n',
+    `    └─ High priority (3+): ${frequentCapitalizations.length}`,
+  );
+  console.log(`  Spelling corrections: ${spellingCorrections.length}`);
+  console.log(`    └─ High priority (3+): ${highPrioritySpelling.length}`);
+  console.log(
+    '\n💡 Focus on Biblical/Theological terms first - they have the highest ROI!\n',
   );
 }
 

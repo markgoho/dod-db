@@ -11,10 +11,8 @@
  *   bun run src/scripts/suggest-corrections.ts "data/transcripts/episode-1.txt" "Torah"
  */
 
-import { readFile } from 'node:fs/promises';
-
 async function suggestCorrections(originalPath: string, correctedTerm: string) {
-  const original = await readFile(originalPath, 'utf-8');
+  const original = await Bun.file(originalPath).text();
 
   // Find lines containing the corrected term in the original
   const lines = original.split('\n');
