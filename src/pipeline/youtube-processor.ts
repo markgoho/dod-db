@@ -10,6 +10,7 @@ import {
 import { transcribeAudio } from './transcribe.js';
 import { correctTranscript } from './correct.js';
 import { identifySpeakers } from './identify-speakers.js';
+import { analyzeCorrections } from './learn-corrections.js';
 import { writeToFile } from '../storage/file.js';
 import {
   isVideoProcessed,
@@ -118,6 +119,9 @@ export async function processYouTubeVideo(
   console.log('Writing final transcript...');
   await writeToFile(transcriptPath, correctedTranscript);
   console.log(`Final transcript saved to: ${transcriptPath}`);
+
+  // Analyze corrections for learning (compare raw vs corrected)
+  analyzeCorrections(transcriptWithNames, correctedTranscript);
 
   // Mark as processed
   await markVideoAsProcessed({
