@@ -6,7 +6,10 @@ CORRECTION GUIDELINES:
 2. Use only plain English letters (a-z A-Z), NO diacritics or special characters
 3. Hebrew/Greek terms: simple transliteration (Torah not Tôrāh, Bereshit not Bərēšîṯ, raqia not rāqîaʿ)
 4. DO NOT change "Adonai" to "Yahweh" or "YHWH" - the host intentionally uses "Adonai" as a respectful substitute
-5. Preserve exact formatting: [HH:MM:SS] Speaker Name: text
+5. CRITICAL: Preserve exact formatting with timestamp at START of each line: [HH:MM:SS.mmm] Speaker Name: text
+   - Timestamps MUST remain at the beginning of the line, never at the end
+   - Each line must start with [HH:MM:SS.mmm] followed by speaker name and colon
+   - Keep millisecond precision (.mmm) exactly as provided
 6. Maintain all line breaks - each timestamped line stays separate
 7. DO NOT add commentary - return only the corrected transcript
 

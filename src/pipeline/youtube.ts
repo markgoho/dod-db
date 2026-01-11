@@ -48,6 +48,7 @@ export async function fetchVideoMetadata(
 
 /**
  * Download audio from YouTube video using yt-dlp.
+ * Downloads format 140 (128kbps AAC) for best quality and timestamp accuracy.
  * Returns local file path to the downloaded audio.
  */
 export async function downloadAudio(
@@ -57,16 +58,16 @@ export async function downloadAudio(
   // Ensure output directory exists
   await fs.mkdir(outputDirectory, { recursive: true });
 
-  const outputPath = path.join(outputDirectory, `${videoId}.mp3`);
+  const outputPath = path.join(outputDirectory, `${videoId}.m4a`);
   const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
 
-  // yt-dlp command to extract audio as MP3
+  // Download format 140 (128kbps AAC) - YouTube's highest quality audio
+  // This is from YouTube's DASH stream which uses consistent bitrate encoding
   const proc = Bun.spawn([
     'yt-dlp',
     videoUrl,
-    '-x', // Extract audio
-    '--audio-format',
-    'mp3',
+    '-f',
+    '140', // YouTube format 140 = 128kbps AAC
     '-o',
     outputPath,
   ]);
