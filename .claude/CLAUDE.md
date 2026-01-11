@@ -175,7 +175,12 @@ Required environment variables:
 - **TypeScript**: Strict mode enabled with bundler module resolution (target: ESNext)
 - **Linting**: ESLint with TypeScript ESLint and Unicorn plugin
   - Exception: `unicorn/consistent-function-scoping` set to not check arrow functions (for reactive contexts)
-- **Runtime**: Bun is the primary runtime (uses `Bun.write` for file operations)
+- **Runtime**: Bun is the primary runtime
+  - **IMPORTANT**: Always prefer Bun APIs over Node.js APIs
+  - File operations: Use `Bun.file()`, `Bun.write()` instead of `fs.readFileSync()`, `fs.writeFileSync()`
+  - Process spawning: Use `Bun.spawn()` instead of `child_process`
+  - Path operations: `node:path` is acceptable (no Bun equivalent)
+  - See: https://bun.sh/docs/api/file-io
 - **Firebase Admin**: Initialized with project ID from environment for Firestore access
 - **Google AI SDK**: Uses `@google/genai` for text generation and embeddings
 
