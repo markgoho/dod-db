@@ -26,7 +26,9 @@ export async function identifySpeakers(
     throw new Error('Speaker identification response was null or empty');
   }
 
-  const output = SpeakerLabelsSchema.parse(JSON.parse(responseText)) as SpeakerLabels;
+  const output = SpeakerLabelsSchema.parse(
+    JSON.parse(responseText),
+  ) as SpeakerLabels;
   const transcriptWithNames = addSpeakerLabels(output, transcript);
 
   return {

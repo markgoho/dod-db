@@ -14,10 +14,7 @@ const execAsync = promisify(exec);
  * @param stageName - Name of the pipeline stage (e.g., 'transcription')
  * @param filePath - Path to the file to commit
  */
-async function commitStage(
-  stageName: string,
-  filePath: string,
-): Promise<void> {
+async function commitStage(stageName: string, filePath: string): Promise<void> {
   try {
     await execAsync(`git add "${filePath}"`);
     await execAsync(
@@ -48,8 +45,10 @@ export async function processTranscript({
   const correctedTranscript = await correctTranscript(transcription);
 
   console.log('Identifying Speakers');
-  const { transcript: transcriptWithNames } =
-    await identifySpeakers(correctedTranscript, metadata);
+  const { transcript: transcriptWithNames } = await identifySpeakers(
+    correctedTranscript,
+    metadata,
+  );
 
   console.log('Writing to file');
   await writeToFile('corrected_transcript.txt', transcriptWithNames);

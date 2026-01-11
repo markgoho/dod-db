@@ -19,12 +19,7 @@ export async function fetchVideoMetadata(
 ): Promise<VideoMetadata> {
   const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
 
-  const proc = Bun.spawn([
-    'yt-dlp',
-    videoUrl,
-    '--dump-json',
-    '--no-playlist',
-  ]);
+  const proc = Bun.spawn(['yt-dlp', videoUrl, '--dump-json', '--no-playlist']);
 
   const metadata = await new Response(proc.stdout).text();
   const exitCode = await proc.exited;
@@ -82,7 +77,9 @@ export async function downloadAudio(
 
   // Find the actual downloaded file (could be .m4a, .webm, .opus, etc.)
   const files = await fs.readdir(outputDirectory);
-  const downloadedFile = files.find(f => f.startsWith(videoId) && f !== `${videoId}.mp3`);
+  const downloadedFile = files.find(
+    (f) => f.startsWith(videoId) && f !== `${videoId}.mp3`,
+  );
 
   if (!downloadedFile) {
     throw new Error(`Could not find downloaded audio file for ${videoId}`);

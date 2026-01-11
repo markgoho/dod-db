@@ -18,7 +18,9 @@ export function analyzeCorrections(
   correctedTranscript: string,
 ): void {
   const rawLines = rawTranscript.split('\n').filter((l) => l.trim());
-  const correctedLines = correctedTranscript.split('\n').filter((l) => l.trim());
+  const correctedLines = correctedTranscript
+    .split('\n')
+    .filter((l) => l.trim());
 
   // Build maps indexed by timestamp for alignment
   const rawByTimestamp = new Map<string, string>();

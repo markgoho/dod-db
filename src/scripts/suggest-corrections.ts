@@ -30,7 +30,10 @@ async function suggestCorrections(originalPath: string, correctedTerm: string) {
     for (const word of words) {
       // Remove punctuation
       const cleanWord = word.replace(/[.,!?;:()[\]]/g, '');
-      if (cleanWord.startsWith(lowerTerm.slice(0, 3)) && cleanWord !== lowerTerm) {
+      if (
+        cleanWord.startsWith(lowerTerm.slice(0, 3)) &&
+        cleanWord !== lowerTerm
+      ) {
         matchingLines.push(`${cleanWord} → ${correctedTerm}`);
       }
     }
@@ -41,14 +44,16 @@ async function suggestCorrections(originalPath: string, correctedTerm: string) {
 
   if (unique.length > 0) {
     console.log(`\nSuggested correction rule for "${correctedTerm}":\n`);
-    const originals = unique.map(s => s.split(' → ')[0]);
+    const originals = unique.map((s) => s.split(' → ')[0]);
     console.log(`  [${JSON.stringify(originals)}, "${correctedTerm}"],\n`);
     console.log(`Found ${unique.length} variant(s):`);
     for (const match of unique) {
       console.log(`  ${match}`);
     }
   } else {
-    console.log(`\nNo obvious variants found for "${correctedTerm}" in original transcript.`);
+    console.log(
+      `\nNo obvious variants found for "${correctedTerm}" in original transcript.`,
+    );
     console.log(`The term may have been corrected deterministically already.`);
   }
 }
@@ -56,9 +61,13 @@ async function suggestCorrections(originalPath: string, correctedTerm: string) {
 const [, , originalPath, correctedTerm] = process.argv;
 
 if (!originalPath || !correctedTerm) {
-  console.log('Usage: bun run src/scripts/suggest-corrections.ts <original-transcript-path> <corrected-term>');
+  console.log(
+    'Usage: bun run src/scripts/suggest-corrections.ts <original-transcript-path> <corrected-term>',
+  );
   console.log('\nExample:');
-  console.log('  bun run src/scripts/suggest-corrections.ts data/transcripts/episode-1.txt "Torah"');
+  console.log(
+    '  bun run src/scripts/suggest-corrections.ts data/transcripts/episode-1.txt "Torah"',
+  );
   process.exit(1);
 }
 

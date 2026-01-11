@@ -33,7 +33,9 @@ async function fetchLatestVideos(maxResults: number = 10): Promise<string[]> {
   const exitCode = await proc.exited;
 
   if (exitCode !== 0) {
-    throw new Error(`yt-dlp failed to fetch channel videos: exit code ${exitCode}`);
+    throw new Error(
+      `yt-dlp failed to fetch channel videos: exit code ${exitCode}`,
+    );
   }
 
   // Parse newline-delimited JSON
