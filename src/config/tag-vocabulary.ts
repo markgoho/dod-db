@@ -19,14 +19,19 @@ export type TagCategory =
 
 /**
  * Seed vocabulary generated from analysis of existing transcripts.
- * Contains 70 high-value terms across all categories.
+ * Contains 100+ high-value terms across all categories.
  *
  * Terms are organized by category for maintainability.
  * Variations (including common misspellings and alternative names)
  * are mapped to their canonical form.
+ *
+ * Vocabulary is continuously expanded via the learning loop:
+ * 1. LLM discovers new terms in transcripts
+ * 2. Review discovered tags
+ * 3. Add valuable terms here for free deterministic matching in future episodes
  */
 export const tagVocabulary: TagDefinition[] = [
-	// BIBLICAL CHARACTERS (15 terms)
+	// BIBLICAL CHARACTERS (26 terms)
 	{ canonical: 'Abraham', variations: ['Abram', "Abraham's"], category: 'biblical-character' },
 	{ canonical: 'Isaac', variations: ["Isaac's"], category: 'biblical-character' },
 	{ canonical: 'Jesus', variations: ["Jesus'", 'Christ'], category: 'biblical-character' },
@@ -42,6 +47,17 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Hagar', variations: [], category: 'biblical-character' },
 	{ canonical: 'Ishmael', variations: ['Ishmaelites'], category: 'biblical-character' },
 	{ canonical: 'Ezekiel', variations: [], category: 'biblical-character' },
+	{ canonical: 'Peter', variations: ['Simon Peter'], category: 'biblical-character' },
+	{ canonical: 'James', variations: [], category: 'biblical-character' },
+	{ canonical: 'John', variations: [], category: 'biblical-character' },
+	{ canonical: 'Luke', variations: [], category: 'biblical-character' },
+	{ canonical: 'Matthew', variations: [], category: 'biblical-character' },
+	{ canonical: 'Noah', variations: ["Noah's"], category: 'biblical-character' },
+	{ canonical: 'Jeremiah', variations: [], category: 'biblical-character' },
+	{ canonical: 'Mary Magdalene', variations: ['Mary'], category: 'biblical-character' },
+	{ canonical: 'Balaam', variations: [], category: 'biblical-character' },
+	{ canonical: 'Daniel', variations: [], category: 'biblical-character' },
+	{ canonical: 'Enoch', variations: [], category: 'biblical-character' },
 
 	// BIBLICAL PLACES (12 terms)
 	{ canonical: 'Jerusalem', variations: ['New Jerusalem'], category: 'biblical-place' },
@@ -57,7 +73,7 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Mount Ebal', variations: ['Ebal'], category: 'biblical-place' },
 	{ canonical: 'Lachish', variations: ['Tel Lachish'], category: 'biblical-place' },
 
-	// BIBLICAL TEXTS (13 terms)
+	// BIBLICAL TEXTS (20 terms)
 	{ canonical: 'Torah', variations: ['Tora', 'Torrah'], category: 'biblical-text' },
 	{ canonical: 'Hebrew Bible', variations: ['Old Testament', 'Tanakh'], category: 'biblical-text' },
 	{ canonical: 'Septuagint', variations: ['LXX', 'Septuigent'], category: 'biblical-text' },
@@ -71,8 +87,15 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Judges', variations: [], category: 'biblical-text' },
 	{ canonical: 'Dead Sea Scrolls', variations: [], category: 'biblical-text' },
 	{ canonical: 'New Testament', variations: [], category: 'biblical-text' },
+	{ canonical: 'Leviticus', variations: [], category: 'biblical-text' },
+	{ canonical: 'Numbers', variations: [], category: 'biblical-text' },
+	{ canonical: 'Kings', variations: ['1 Kings', '2 Kings'], category: 'biblical-text' },
+	{ canonical: 'First Corinthians', variations: ['1 Corinthians'], category: 'biblical-text' },
+	{ canonical: 'Exodus', variations: [], category: 'biblical-text' },
+	{ canonical: 'King James Version', variations: ['KJV'], category: 'biblical-text' },
+	{ canonical: 'Masoretic Text', variations: [], category: 'biblical-text' },
 
-	// THEOLOGICAL CONCEPTS (15 terms)
+	// THEOLOGICAL CONCEPTS (27 terms)
 	{ canonical: 'YHWH', variations: ['Yahweh', 'Adonai', 'the Lord'], category: 'theological-concept' },
 	{ canonical: 'Asherah', variations: ['Athirat', 'Atiratu'], category: 'theological-concept' },
 	{ canonical: 'El', variations: ['El Shaddai'], category: 'theological-concept' },
@@ -88,6 +111,18 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'circumcision', variations: ['circumcised'], category: 'theological-concept' },
 	{ canonical: 'incarnation', variations: [], category: 'theological-concept' },
 	{ canonical: 'corporeal deity', variations: ['anthropomorphic God'], category: 'theological-concept' },
+	{ canonical: 'Israel', variations: ['Israelites'], category: 'theological-concept' },
+	{ canonical: 'Bible', variations: [], category: 'theological-concept' },
+	{ canonical: 'Easter', variations: [], category: 'theological-concept' },
+	{ canonical: 'Christianity', variations: ['Christian', 'Christians'], category: 'theological-concept' },
+	{ canonical: 'Hell', variations: ['Gehenna'], category: 'theological-concept' },
+	{ canonical: 'Sheol', variations: [], category: 'theological-concept' },
+	{ canonical: 'Satan', variations: ['the devil', 'devil'], category: 'theological-concept' },
+	{ canonical: 'angel', variations: ['angels'], category: 'theological-concept' },
+	{ canonical: 'monotheism', variations: ['monotheistic'], category: 'theological-concept' },
+	{ canonical: 'gods', variations: ['goddesses'], category: 'theological-concept' },
+	{ canonical: 'theology', variations: ['theological'], category: 'theological-concept' },
+	{ canonical: 'univocality', variations: ['univocal'], category: 'theological-concept' },
 
 	// SCHOLARLY TERMS (15 terms)
 	{ canonical: 'textual criticism', variations: [], category: 'scholarly-term' },

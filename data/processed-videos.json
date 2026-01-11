@@ -5,7 +5,117 @@
     "publishedAt": "2023-04-08T00:00:00Z",
     "processedAt": "2026-01-10T20:09:49.290Z",
     "transcriptPath": "data/transcripts/2023-04-08-episode-1-april-8-2023-in-the-beginning.txt",
-    "episodeNumber": 1
+    "episodeNumber": 1,
+    "tags": [
+      {
+        "tag": "yhwh",
+        "mentions": 67
+      },
+      {
+        "tag": "genesis",
+        "mentions": 51
+      },
+      {
+        "tag": "baal",
+        "mentions": 21
+      },
+      {
+        "tag": "el",
+        "mentions": 20
+      },
+      {
+        "tag": "lot",
+        "mentions": 16
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 14
+      },
+      {
+        "tag": "adam",
+        "mentions": 11
+      },
+      {
+        "tag": "eve",
+        "mentions": 7
+      },
+      {
+        "tag": "adonai",
+        "mentions": 7
+      },
+      {
+        "tag": "egypt",
+        "mentions": 6
+      },
+      {
+        "tag": "garden of eden",
+        "mentions": 5
+      },
+      {
+        "tag": "textual variants",
+        "mentions": 5
+      },
+      {
+        "tag": "ugarit",
+        "mentions": 4
+      },
+      {
+        "tag": "abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "babylon",
+        "mentions": 3
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "divine council",
+        "mentions": 3
+      },
+      {
+        "tag": "isaac",
+        "mentions": 2
+      },
+      {
+        "tag": "moses",
+        "mentions": 2
+      },
+      {
+        "tag": "paul",
+        "mentions": 2
+      },
+      {
+        "tag": "new testament",
+        "mentions": 2
+      },
+      {
+        "tag": "asherah",
+        "mentions": 2
+      },
+      {
+        "tag": "dead sea",
+        "mentions": 1
+      },
+      {
+        "tag": "deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "book of job",
+        "mentions": 1
+      },
+      {
+        "tag": "dead sea scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "source criticism",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "luJhJvFzpew",
@@ -13,7 +123,157 @@
     "publishedAt": "2023-04-17T00:00:00Z",
     "processedAt": "2026-01-11T00:49:41.248Z",
     "transcriptPath": "data/transcripts/2023-04-17-episode-2-april-17-2023-gods-wife-with-prof-francesca-stavrakopoulou.txt",
-    "episodeNumber": 2
+    "episodeNumber": 2,
+    "tags": [
+      {
+        "tag": "lot",
+        "mentions": 25
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 24
+      },
+      {
+        "tag": "child sacrifice",
+        "mentions": 16
+      },
+      {
+        "tag": "bible",
+        "mentions": 14
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 12
+      },
+      {
+        "tag": "el",
+        "mentions": 12
+      },
+      {
+        "tag": "molek",
+        "mentions": 12
+      },
+      {
+        "tag": "goddesses",
+        "mentions": 12
+      },
+      {
+        "tag": "ezekiel",
+        "mentions": 11
+      },
+      {
+        "tag": "adonai",
+        "mentions": 10
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 9
+      },
+      {
+        "tag": "adam",
+        "mentions": 7
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 7
+      },
+      {
+        "tag": "book of job",
+        "mentions": 7
+      },
+      {
+        "tag": "asherah",
+        "mentions": 7
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 7
+      },
+      {
+        "tag": "theology",
+        "mentions": 7
+      },
+      {
+        "tag": "jesus",
+        "mentions": 6
+      },
+      {
+        "tag": "circumcision",
+        "mentions": 5
+      },
+      {
+        "tag": "isaac",
+        "mentions": 4
+      },
+      {
+        "tag": "abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "jephthah",
+        "mentions": 3
+      },
+      {
+        "tag": "ugarit",
+        "mentions": 3
+      },
+      {
+        "tag": "genesis",
+        "mentions": 3
+      },
+      {
+        "tag": "carthage",
+        "mentions": 2
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 2
+      },
+      {
+        "tag": "baal",
+        "mentions": 2
+      },
+      {
+        "tag": "divine council",
+        "mentions": 2
+      },
+      {
+        "tag": "egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "elephantine",
+        "mentions": 1
+      },
+      {
+        "tag": "deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "judges",
+        "mentions": 1
+      },
+      {
+        "tag": "new testament",
+        "mentions": 1
+      },
+      {
+        "tag": "trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "corporeal deity",
+        "mentions": 1
+      },
+      {
+        "tag": "theophany",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "M-7Gql8NQBU",
@@ -21,7 +281,129 @@
     "publishedAt": "2023-04-24T00:00:00Z",
     "processedAt": "2026-01-11T03:51:02.060Z",
     "transcriptPath": "data/transcripts/2023-04-24-episode-3-april-23-2023-why-is-she-salt.txt",
-    "episodeNumber": 3
+    "episodeNumber": 3,
+    "tags": [
+      {
+        "tag": "lot",
+        "mentions": 120
+      },
+      {
+        "tag": "sodom",
+        "mentions": 40
+      },
+      {
+        "tag": "provenance",
+        "mentions": 28
+      },
+      {
+        "tag": "abraham",
+        "mentions": 20
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 17
+      },
+      {
+        "tag": "angels",
+        "mentions": 12
+      },
+      {
+        "tag": "genesis",
+        "mentions": 10
+      },
+      {
+        "tag": "dead sea",
+        "mentions": 9
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 6
+      },
+      {
+        "tag": "lachish",
+        "mentions": 5
+      },
+      {
+        "tag": "dead sea scrolls",
+        "mentions": 5
+      },
+      {
+        "tag": "etiology",
+        "mentions": 5
+      },
+      {
+        "tag": "forgery",
+        "mentions": 5
+      },
+      {
+        "tag": "ishmael",
+        "mentions": 3
+      },
+      {
+        "tag": "gomorrah",
+        "mentions": 3
+      },
+      {
+        "tag": "mount gerizim",
+        "mentions": 3
+      },
+      {
+        "tag": "mount ebal",
+        "mentions": 3
+      },
+      {
+        "tag": "deuteronomy",
+        "mentions": 3
+      },
+      {
+        "tag": "adam",
+        "mentions": 2
+      },
+      {
+        "tag": "david",
+        "mentions": 2
+      },
+      {
+        "tag": "hagar",
+        "mentions": 2
+      },
+      {
+        "tag": "judges",
+        "mentions": 2
+      },
+      {
+        "tag": "theophany",
+        "mentions": 2
+      },
+      {
+        "tag": "eve",
+        "mentions": 1
+      },
+      {
+        "tag": "ezekiel",
+        "mentions": 1
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 1
+      },
+      {
+        "tag": "trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "divine council",
+        "mentions": 1
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "epigraphy",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "WidY7lIBiyY",
@@ -29,7 +411,117 @@
     "publishedAt": "2023-05-01T00:00:00Z",
     "processedAt": "2026-01-11T14:44:23.145Z",
     "transcriptPath": "data/transcripts/2023-05-01-episode-4-may-1-2023-ehrmageddon-with-bart-ehrman.txt",
-    "episodeNumber": 4
+    "episodeNumber": 4,
+    "tags": [
+      {
+        "tag": "bart ehrman",
+        "mentions": 438
+      },
+      {
+        "tag": "book of revelation",
+        "mentions": 92
+      },
+      {
+        "tag": "jesus",
+        "mentions": 45
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 29
+      },
+      {
+        "tag": "revelation",
+        "mentions": 29
+      },
+      {
+        "tag": "lot",
+        "mentions": 24
+      },
+      {
+        "tag": "new testament",
+        "mentions": 20
+      },
+      {
+        "tag": "rapture",
+        "mentions": 12
+      },
+      {
+        "tag": "john of patmos",
+        "mentions": 11
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 9
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 9
+      },
+      {
+        "tag": "armageddon",
+        "mentions": 8
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 7
+      },
+      {
+        "tag": "cognitive dissonance",
+        "mentions": 7
+      },
+      {
+        "tag": "paul",
+        "mentions": 6
+      },
+      {
+        "tag": "textual criticism",
+        "mentions": 6
+      },
+      {
+        "tag": "preterist interpretation",
+        "mentions": 6
+      },
+      {
+        "tag": "futurist interpretation",
+        "mentions": 6
+      },
+      {
+        "tag": "second peter",
+        "mentions": 5
+      },
+      {
+        "tag": "daniel",
+        "mentions": 5
+      },
+      {
+        "tag": "matthew",
+        "mentions": 5
+      },
+      {
+        "tag": "abraham",
+        "mentions": 2
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "trinity",
+        "mentions": 2
+      },
+      {
+        "tag": "ezekiel",
+        "mentions": 1
+      },
+      {
+        "tag": "babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "G2s8VvaAgHQ",
@@ -37,7 +529,85 @@
     "publishedAt": "2023-05-08T00:00:00Z",
     "processedAt": "2026-01-11T15:30:27.580Z",
     "transcriptPath": "data/transcripts/2023-05-08-episode-5-may-8-2023-betrayed-by-dan-brown.txt",
-    "episodeNumber": 5
+    "episodeNumber": 5,
+    "tags": [
+      {
+        "tag": "jesus",
+        "mentions": 74
+      },
+      {
+        "tag": "easter",
+        "mentions": 28
+      },
+      {
+        "tag": "lot",
+        "mentions": 22
+      },
+      {
+        "tag": "christian",
+        "mentions": 12
+      },
+      {
+        "tag": "christianity",
+        "mentions": 11
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 10
+      },
+      {
+        "tag": "passover",
+        "mentions": 9
+      },
+      {
+        "tag": "council of nicaea",
+        "mentions": 8
+      },
+      {
+        "tag": "arius",
+        "mentions": 8
+      },
+      {
+        "tag": "ishtar",
+        "mentions": 7
+      },
+      {
+        "tag": "new testament",
+        "mentions": 4
+      },
+      {
+        "tag": "trinity",
+        "mentions": 4
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 4
+      },
+      {
+        "tag": "egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 2
+      },
+      {
+        "tag": "baal",
+        "mentions": 2
+      },
+      {
+        "tag": "paul",
+        "mentions": 1
+      },
+      {
+        "tag": "david",
+        "mentions": 1
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "_zou11pMRag",
@@ -45,7 +615,109 @@
     "publishedAt": "2023-05-15T00:00:00Z",
     "processedAt": "2026-01-11T16:24:14.489Z",
     "transcriptPath": "data/transcripts/2023-05-15-episode-6-may-15-2023-god-breathed.txt",
-    "episodeNumber": 6
+    "episodeNumber": 6,
+    "tags": [
+      {
+        "tag": "paul",
+        "mentions": 60
+      },
+      {
+        "tag": "univocality",
+        "mentions": 39
+      },
+      {
+        "tag": "text",
+        "mentions": 36
+      },
+      {
+        "tag": "lot",
+        "mentions": 25
+      },
+      {
+        "tag": "bible",
+        "mentions": 17
+      },
+      {
+        "tag": "works",
+        "mentions": 10
+      },
+      {
+        "tag": "faith",
+        "mentions": 10
+      },
+      {
+        "tag": "james",
+        "mentions": 9
+      },
+      {
+        "tag": "david",
+        "mentions": 7
+      },
+      {
+        "tag": "new testament",
+        "mentions": 7
+      },
+      {
+        "tag": "abraham",
+        "mentions": 6
+      },
+      {
+        "tag": "jesus",
+        "mentions": 6
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 6
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 6
+      },
+      {
+        "tag": "hebrew",
+        "mentions": 5
+      },
+      {
+        "tag": "genesis",
+        "mentions": 3
+      },
+      {
+        "tag": "book of job",
+        "mentions": 3
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 3
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 2
+      },
+      {
+        "tag": "dead sea",
+        "mentions": 1
+      },
+      {
+        "tag": "book of revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "dead sea scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "trinity",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "35Jz3A7tBgU",
@@ -53,7 +725,117 @@
     "publishedAt": "2023-05-22T00:00:00Z",
     "processedAt": "2026-01-11T16:33:14.777Z",
     "transcriptPath": "data/transcripts/2023-05-22-episode-7-may-22-2023-so-many-gods.txt",
-    "episodeNumber": 7
+    "episodeNumber": 7,
+    "tags": [
+      {
+        "tag": "yhwh",
+        "mentions": 62
+      },
+      {
+        "tag": "divine council",
+        "mentions": 43
+      },
+      {
+        "tag": "moab",
+        "mentions": 28
+      },
+      {
+        "tag": "israel",
+        "mentions": 24
+      },
+      {
+        "tag": "deuteronomy",
+        "mentions": 22
+      },
+      {
+        "tag": "lot",
+        "mentions": 21
+      },
+      {
+        "tag": "asherah",
+        "mentions": 20
+      },
+      {
+        "tag": "adonai",
+        "mentions": 20
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 19
+      },
+      {
+        "tag": "baal",
+        "mentions": 18
+      },
+      {
+        "tag": "el",
+        "mentions": 13
+      },
+      {
+        "tag": "kings",
+        "mentions": 11
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 9
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 7
+      },
+      {
+        "tag": "babylon",
+        "mentions": 4
+      },
+      {
+        "tag": "ugarit",
+        "mentions": 4
+      },
+      {
+        "tag": "dead sea",
+        "mentions": 4
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 3
+      },
+      {
+        "tag": "egypt",
+        "mentions": 3
+      },
+      {
+        "tag": "judges",
+        "mentions": 3
+      },
+      {
+        "tag": "moses",
+        "mentions": 2
+      },
+      {
+        "tag": "david",
+        "mentions": 2
+      },
+      {
+        "tag": "septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "new testament",
+        "mentions": 2
+      },
+      {
+        "tag": "jephthah",
+        "mentions": 1
+      },
+      {
+        "tag": "dead sea scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "YyN1w9PYjS4",
@@ -61,7 +843,77 @@
     "publishedAt": "2023-05-29T00:00:00Z",
     "processedAt": "2026-01-11T16:55:27.941Z",
     "transcriptPath": "data/transcripts/2023-05-29-episode-8-may-29-2023-contextual-healing-with-aaron-higashi.txt",
-    "episodeNumber": 8
+    "episodeNumber": 8,
+    "tags": [
+      {
+        "tag": "lot",
+        "mentions": 41
+      },
+      {
+        "tag": "jesus",
+        "mentions": 17
+      },
+      {
+        "tag": "bible",
+        "mentions": 15
+      },
+      {
+        "tag": "theology",
+        "mentions": 15
+      },
+      {
+        "tag": "dogma",
+        "mentions": 7
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 6
+      },
+      {
+        "tag": "hermeneutics",
+        "mentions": 5
+      },
+      {
+        "tag": "new testament",
+        "mentions": 4
+      },
+      {
+        "tag": "bart ehrman",
+        "mentions": 2
+      },
+      {
+        "tag": "book of revelation",
+        "mentions": 2
+      },
+      {
+        "tag": "paul",
+        "mentions": 1
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "book of job",
+        "mentions": 1
+      },
+      {
+        "tag": "judges",
+        "mentions": 1
+      },
+      {
+        "tag": "trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "incarnation",
+        "mentions": 1
+      },
+      {
+        "tag": "source criticism",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "Bs02oP4kQbM",
@@ -69,7 +921,77 @@
     "publishedAt": "2023-06-05T00:00:00Z",
     "processedAt": "2026-01-11T16:52:59.704Z",
     "transcriptPath": "data/transcripts/2023-06-05-episode-9-june-5-2023-the-mark-of-the-best.txt",
-    "episodeNumber": 9
+    "episodeNumber": 9,
+    "tags": [
+      {
+        "tag": "book of revelation",
+        "mentions": 22
+      },
+      {
+        "tag": "lot",
+        "mentions": 19
+      },
+      {
+        "tag": "nero",
+        "mentions": 9
+      },
+      {
+        "tag": "hebrew",
+        "mentions": 7
+      },
+      {
+        "tag": "jesus",
+        "mentions": 5
+      },
+      {
+        "tag": "gematria",
+        "mentions": 5
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 4
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 4
+      },
+      {
+        "tag": "new testament",
+        "mentions": 3
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 2
+      },
+      {
+        "tag": "genesis",
+        "mentions": 2
+      },
+      {
+        "tag": "book of job",
+        "mentions": 2
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "john of patmos",
+        "mentions": 1
+      },
+      {
+        "tag": "bart ehrman",
+        "mentions": 1
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 1
+      },
+      {
+        "tag": "deuteronomy",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "gW6w-AOiKNM",
@@ -77,7 +999,81 @@
     "publishedAt": "2023-06-12T00:00:00Z",
     "processedAt": "2026-01-11T17:32:54.212Z",
     "transcriptPath": "data/transcripts/2023-06-12-episode-10-june-12-2023-adam-and-steve-what-the-bible-says-about-homosexuality.txt",
-    "episodeNumber": 10
+    "episodeNumber": 10,
+    "tags": [
+      {
+        "tag": "paul",
+        "mentions": 50
+      },
+      {
+        "tag": "lot",
+        "mentions": 28
+      },
+      {
+        "tag": "leviticus",
+        "mentions": 17
+      },
+      {
+        "tag": "new testament",
+        "mentions": 9
+      },
+      {
+        "tag": "adam",
+        "mentions": 8
+      },
+      {
+        "tag": "sodom",
+        "mentions": 7
+      },
+      {
+        "tag": "jesus",
+        "mentions": 6
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 5
+      },
+      {
+        "tag": "genesis",
+        "mentions": 5
+      },
+      {
+        "tag": "torah",
+        "mentions": 5
+      },
+      {
+        "tag": "gomorrah",
+        "mentions": 3
+      },
+      {
+        "tag": "eve",
+        "mentions": 2
+      },
+      {
+        "tag": "david",
+        "mentions": 2
+      },
+      {
+        "tag": "judges",
+        "mentions": 2
+      },
+      {
+        "tag": "etiology",
+        "mentions": 2
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "septuagint",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "DD7Kkzh2kzg",
@@ -85,7 +1081,129 @@
     "publishedAt": "2023-06-19T00:00:00Z",
     "processedAt": "2026-01-11T17:35:27.970Z",
     "transcriptPath": "data/transcripts/2023-06-19-episode-11-june-19-2023-will-the-best-bible-please-stand-up.txt",
-    "episodeNumber": 11
+    "episodeNumber": 11,
+    "tags": [
+      {
+        "tag": "hebrew bible",
+        "mentions": 59
+      },
+      {
+        "tag": "new testament",
+        "mentions": 58
+      },
+      {
+        "tag": "septuagint",
+        "mentions": 57
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 55
+      },
+      {
+        "tag": "translation",
+        "mentions": 28
+      },
+      {
+        "tag": "lot",
+        "mentions": 27
+      },
+      {
+        "tag": "egypt",
+        "mentions": 15
+      },
+      {
+        "tag": "masoretic text",
+        "mentions": 13
+      },
+      {
+        "tag": "bible",
+        "mentions": 13
+      },
+      {
+        "tag": "text",
+        "mentions": 11
+      },
+      {
+        "tag": "jesus",
+        "mentions": 10
+      },
+      {
+        "tag": "dead sea",
+        "mentions": 10
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 10
+      },
+      {
+        "tag": "dead sea scrolls",
+        "mentions": 10
+      },
+      {
+        "tag": "canon",
+        "mentions": 8
+      },
+      {
+        "tag": "aramaic",
+        "mentions": 8
+      },
+      {
+        "tag": "gospel",
+        "mentions": 6
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 5
+      },
+      {
+        "tag": "jeremiah",
+        "mentions": 5
+      },
+      {
+        "tag": "moses",
+        "mentions": 3
+      },
+      {
+        "tag": "torah",
+        "mentions": 3
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "babylon",
+        "mentions": 2
+      },
+      {
+        "tag": "genesis",
+        "mentions": 2
+      },
+      {
+        "tag": "deuteronomy",
+        "mentions": 2
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 2
+      },
+      {
+        "tag": "bart ehrman",
+        "mentions": 1
+      },
+      {
+        "tag": "book of revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 1
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "zhX-8K8WtMs",
@@ -93,7 +1211,81 @@
     "publishedAt": "2023-06-26T00:00:00Z",
     "processedAt": "2026-01-11T17:41:47.554Z",
     "transcriptPath": "data/transcripts/2023-06-26-episode-12-june-26-2023-the-blessing-of-the-magdalene-w-elizabeth-schrader-polczer.txt",
-    "episodeNumber": 12
+    "episodeNumber": 12,
+    "tags": [
+      {
+        "tag": "jesus",
+        "mentions": 88
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 83
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 64
+      },
+      {
+        "tag": "lot",
+        "mentions": 31
+      },
+      {
+        "tag": "textual criticism",
+        "mentions": 20
+      },
+      {
+        "tag": "new testament",
+        "mentions": 11
+      },
+      {
+        "tag": "mary magdalene",
+        "mentions": 11
+      },
+      {
+        "tag": "john",
+        "mentions": 10
+      },
+      {
+        "tag": "luke",
+        "mentions": 8
+      },
+      {
+        "tag": "paul",
+        "mentions": 6
+      },
+      {
+        "tag": "peter",
+        "mentions": 6
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 3
+      },
+      {
+        "tag": "book of job",
+        "mentions": 2
+      },
+      {
+        "tag": "el",
+        "mentions": 2
+      },
+      {
+        "tag": "source criticism",
+        "mentions": 2
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 1
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "5bA0OigwXR4",
@@ -101,7 +1293,97 @@
     "publishedAt": "2023-07-03T00:00:00Z",
     "processedAt": "2026-01-11T18:28:00.255Z",
     "transcriptPath": "data/transcripts/2023-07-03-episode-13-july-3-2023-does-god-regret-this-podcast.txt",
-    "episodeNumber": 13
+    "episodeNumber": 13,
+    "tags": [
+      {
+        "tag": "lachish",
+        "mentions": 22
+      },
+      {
+        "tag": "genesis",
+        "mentions": 16
+      },
+      {
+        "tag": "lot",
+        "mentions": 15
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 14
+      },
+      {
+        "tag": "israel",
+        "mentions": 10
+      },
+      {
+        "tag": "jesus",
+        "mentions": 8
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 8
+      },
+      {
+        "tag": "palestine",
+        "mentions": 8
+      },
+      {
+        "tag": "david",
+        "mentions": 7
+      },
+      {
+        "tag": "dead sea",
+        "mentions": 7
+      },
+      {
+        "tag": "hezekiah",
+        "mentions": 7
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 5
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 3
+      },
+      {
+        "tag": "book of job",
+        "mentions": 3
+      },
+      {
+        "tag": "isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 1
+      },
+      {
+        "tag": "deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "judges",
+        "mentions": 1
+      },
+      {
+        "tag": "new testament",
+        "mentions": 1
+      },
+      {
+        "tag": "baal",
+        "mentions": 1
+      },
+      {
+        "tag": "epigraphy",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "xYDiFyXinfs",
@@ -109,7 +1391,77 @@
     "publishedAt": "2023-07-10T00:00:00Z",
     "processedAt": "2026-01-11T18:44:23.591Z",
     "transcriptPath": "data/transcripts/2023-07-10-episode-14-july-10-2023-lilith-unfair.txt",
-    "episodeNumber": 14
+    "episodeNumber": 14,
+    "tags": [
+      {
+        "tag": "adam",
+        "mentions": 23
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 12
+      },
+      {
+        "tag": "lot",
+        "mentions": 11
+      },
+      {
+        "tag": "asherah",
+        "mentions": 11
+      },
+      {
+        "tag": "eve",
+        "mentions": 9
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 8
+      },
+      {
+        "tag": "genesis",
+        "mentions": 7
+      },
+      {
+        "tag": "new testament",
+        "mentions": 6
+      },
+      {
+        "tag": "moses",
+        "mentions": 5
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 4
+      },
+      {
+        "tag": "torah",
+        "mentions": 3
+      },
+      {
+        "tag": "etiology",
+        "mentions": 3
+      },
+      {
+        "tag": "egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "dead sea",
+        "mentions": 1
+      },
+      {
+        "tag": "lachish",
+        "mentions": 1
+      },
+      {
+        "tag": "dead sea scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "7oB6UrrFn6c",
@@ -117,7 +1469,89 @@
     "publishedAt": "2023-07-17T00:00:00Z",
     "processedAt": "2026-01-11T18:59:46.703Z",
     "transcriptPath": "data/transcripts/2023-07-17-episode-15-july-17-2023-the-dans-go-to-hell.txt",
-    "episodeNumber": 15
+    "episodeNumber": 15,
+    "tags": [
+      {
+        "tag": "lot",
+        "mentions": 22
+      },
+      {
+        "tag": "jesus",
+        "mentions": 18
+      },
+      {
+        "tag": "first enoch",
+        "mentions": 9
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 7
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 7
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 6
+      },
+      {
+        "tag": "new testament",
+        "mentions": 6
+      },
+      {
+        "tag": "sheol",
+        "mentions": 5
+      },
+      {
+        "tag": "book of revelation",
+        "mentions": 4
+      },
+      {
+        "tag": "genesis",
+        "mentions": 4
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 4
+      },
+      {
+        "tag": "etiology",
+        "mentions": 3
+      },
+      {
+        "tag": "paul",
+        "mentions": 2
+      },
+      {
+        "tag": "book of job",
+        "mentions": 2
+      },
+      {
+        "tag": "child sacrifice",
+        "mentions": 2
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 2
+      },
+      {
+        "tag": "abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "david",
+        "mentions": 1
+      },
+      {
+        "tag": "egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "V7PSCjcLFco",
@@ -125,7 +1559,81 @@
     "publishedAt": "2023-07-24T00:00:00Z",
     "processedAt": "2026-01-11T20:16:08.976Z",
     "transcriptPath": "data/transcripts/2023-07-24-apostlepalooza.txt",
-    "episodeNumber": 16
+    "episodeNumber": 16,
+    "tags": [
+      {
+        "tag": "jesus",
+        "mentions": 55
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 49
+      },
+      {
+        "tag": "james",
+        "mentions": 24
+      },
+      {
+        "tag": "lot",
+        "mentions": 23
+      },
+      {
+        "tag": "peter",
+        "mentions": 23
+      },
+      {
+        "tag": "simon",
+        "mentions": 18
+      },
+      {
+        "tag": "paul",
+        "mentions": 14
+      },
+      {
+        "tag": "new testament",
+        "mentions": 9
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 7
+      },
+      {
+        "tag": "abraham",
+        "mentions": 2
+      },
+      {
+        "tag": "moses",
+        "mentions": 2
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 2
+      },
+      {
+        "tag": "book of revelation",
+        "mentions": 2
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 2
+      },
+      {
+        "tag": "bart ehrman",
+        "mentions": 1
+      },
+      {
+        "tag": "septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "book of job",
+        "mentions": 1
+      },
+      {
+        "tag": "el",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "naI65ELNhRw",
@@ -133,7 +1641,85 @@
     "publishedAt": "2023-07-31T00:00:00Z",
     "processedAt": "2026-01-11T20:29:33.103Z",
     "transcriptPath": "data/transcripts/2023-07-31-episode-17-july-31-2023-the-case-of-the-missing-verses.txt",
-    "episodeNumber": 17
+    "episodeNumber": 17,
+    "tags": [
+      {
+        "tag": "manuscript",
+        "mentions": 47
+      },
+      {
+        "tag": "king james version",
+        "mentions": 42
+      },
+      {
+        "tag": "lot",
+        "mentions": 35
+      },
+      {
+        "tag": "new testament",
+        "mentions": 25
+      },
+      {
+        "tag": "jesus",
+        "mentions": 14
+      },
+      {
+        "tag": "textus receptus",
+        "mentions": 10
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 9
+      },
+      {
+        "tag": "geneva bible",
+        "mentions": 9
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 6
+      },
+      {
+        "tag": "book of revelation",
+        "mentions": 5
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 5
+      },
+      {
+        "tag": "moses",
+        "mentions": 1
+      },
+      {
+        "tag": "paul",
+        "mentions": 1
+      },
+      {
+        "tag": "david",
+        "mentions": 1
+      },
+      {
+        "tag": "book of job",
+        "mentions": 1
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 1
+      },
+      {
+        "tag": "textual criticism",
+        "mentions": 1
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "4PCkaPZMjTc",
@@ -141,7 +1727,125 @@
     "publishedAt": "2023-08-07T00:00:00Z",
     "processedAt": "2026-01-11T20:46:03.182Z",
     "transcriptPath": "data/transcripts/2023-08-07-episode-18-august-7-2023-the-devil-made-us-do-it.txt",
-    "episodeNumber": 18
+    "episodeNumber": 18,
+    "tags": [
+      {
+        "tag": "balaam",
+        "mentions": 40
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 30
+      },
+      {
+        "tag": "angel",
+        "mentions": 25
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 16
+      },
+      {
+        "tag": "lot",
+        "mentions": 15
+      },
+      {
+        "tag": "israel",
+        "mentions": 13
+      },
+      {
+        "tag": "book of job",
+        "mentions": 8
+      },
+      {
+        "tag": "new testament",
+        "mentions": 7
+      },
+      {
+        "tag": "numbers",
+        "mentions": 7
+      },
+      {
+        "tag": "moses",
+        "mentions": 6
+      },
+      {
+        "tag": "david",
+        "mentions": 6
+      },
+      {
+        "tag": "babylon",
+        "mentions": 6
+      },
+      {
+        "tag": "baal",
+        "mentions": 6
+      },
+      {
+        "tag": "genesis",
+        "mentions": 5
+      },
+      {
+        "tag": "divine council",
+        "mentions": 5
+      },
+      {
+        "tag": "book of revelation",
+        "mentions": 4
+      },
+      {
+        "tag": "jesus",
+        "mentions": 3
+      },
+      {
+        "tag": "adam",
+        "mentions": 3
+      },
+      {
+        "tag": "eve",
+        "mentions": 3
+      },
+      {
+        "tag": "egypt",
+        "mentions": 3
+      },
+      {
+        "tag": "dead sea",
+        "mentions": 3
+      },
+      {
+        "tag": "septuagint",
+        "mentions": 3
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "ishmael",
+        "mentions": 2
+      },
+      {
+        "tag": "ugarit",
+        "mentions": 2
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 2
+      },
+      {
+        "tag": "judges",
+        "mentions": 1
+      },
+      {
+        "tag": "dead sea scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "el",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "fiptp1bU5qQ",
@@ -149,7 +1853,109 @@
     "publishedAt": "2023-08-14T00:00:00Z",
     "processedAt": "2026-01-11T21:05:21.565Z",
     "transcriptPath": "data/transcripts/2023-08-14-episode-19-august-14-2023-ill-make-you-a-star-with-david-a-burnett.txt",
-    "episodeNumber": 1
+    "episodeNumber": 1,
+    "tags": [
+      {
+        "tag": "david",
+        "mentions": 673
+      },
+      {
+        "tag": "paul",
+        "mentions": 45
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 30
+      },
+      {
+        "tag": "gods",
+        "mentions": 29
+      },
+      {
+        "tag": "jesus",
+        "mentions": 21
+      },
+      {
+        "tag": "lot",
+        "mentions": 19
+      },
+      {
+        "tag": "monotheism",
+        "mentions": 17
+      },
+      {
+        "tag": "deuteronomy",
+        "mentions": 14
+      },
+      {
+        "tag": "abraham",
+        "mentions": 11
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 9
+      },
+      {
+        "tag": "new testament",
+        "mentions": 9
+      },
+      {
+        "tag": "first corinthians",
+        "mentions": 7
+      },
+      {
+        "tag": "genesis",
+        "mentions": 6
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 5
+      },
+      {
+        "tag": "divine council",
+        "mentions": 5
+      },
+      {
+        "tag": "early christianity",
+        "mentions": 5
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 3
+      },
+      {
+        "tag": "judges",
+        "mentions": 3
+      },
+      {
+        "tag": "egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 2
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "dead sea",
+        "mentions": 1
+      },
+      {
+        "tag": "torah",
+        "mentions": 1
+      },
+      {
+        "tag": "dead sea scrolls",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "p8CjJR4yhfk",
@@ -157,7 +1963,125 @@
     "publishedAt": "2023-08-21T00:00:00Z",
     "processedAt": "2026-01-11T21:20:04.095Z",
     "transcriptPath": "data/transcripts/2023-08-21-episode-20-august-21-2023-i-knew-a-guy-who-was-so-old.txt",
-    "episodeNumber": 1
+    "episodeNumber": 1,
+    "tags": [
+      {
+        "tag": "genesis",
+        "mentions": 44
+      },
+      {
+        "tag": "lot",
+        "mentions": 18
+      },
+      {
+        "tag": "adam",
+        "mentions": 15
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 11
+      },
+      {
+        "tag": "noah",
+        "mentions": 11
+      },
+      {
+        "tag": "lamech",
+        "mentions": 11
+      },
+      {
+        "tag": "septuagint",
+        "mentions": 10
+      },
+      {
+        "tag": "enoch",
+        "mentions": 9
+      },
+      {
+        "tag": "masoretic text",
+        "mentions": 9
+      },
+      {
+        "tag": "jesus",
+        "mentions": 8
+      },
+      {
+        "tag": "samaritan pentateuch",
+        "mentions": 8
+      },
+      {
+        "tag": "text",
+        "mentions": 7
+      },
+      {
+        "tag": "flood",
+        "mentions": 7
+      },
+      {
+        "tag": "abraham",
+        "mentions": 6
+      },
+      {
+        "tag": "new testament",
+        "mentions": 6
+      },
+      {
+        "tag": "book of revelation",
+        "mentions": 5
+      },
+      {
+        "tag": "ishmael",
+        "mentions": 3
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 3
+      },
+      {
+        "tag": "egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "dead sea",
+        "mentions": 2
+      },
+      {
+        "tag": "book of job",
+        "mentions": 2
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "dead sea scrolls",
+        "mentions": 2
+      },
+      {
+        "tag": "moses",
+        "mentions": 1
+      },
+      {
+        "tag": "david",
+        "mentions": 1
+      },
+      {
+        "tag": "babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 1
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      }
+    ]
   },
   {
     "videoId": "SHLLzroKzI0",
@@ -165,6 +2089,260 @@
     "publishedAt": "2023-08-28T00:00:00Z",
     "processedAt": "2026-01-11T21:48:30.193Z",
     "transcriptPath": "data/transcripts/2023-08-28-episode-21-august-28-2023-did-the-exodus-really-happen.txt",
+    "episodeNumber": 1,
+    "tags": [
+      {
+        "tag": "egypt",
+        "mentions": 76
+      },
+      {
+        "tag": "exodus",
+        "mentions": 38
+      },
+      {
+        "tag": "lot",
+        "mentions": 17
+      },
+      {
+        "tag": "moses",
+        "mentions": 14
+      },
+      {
+        "tag": "ezekiel",
+        "mentions": 14
+      },
+      {
+        "tag": "child sacrifice",
+        "mentions": 12
+      },
+      {
+        "tag": "israel",
+        "mentions": 11
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 7
+      },
+      {
+        "tag": "molek",
+        "mentions": 7
+      },
+      {
+        "tag": "carthage",
+        "mentions": 5
+      },
+      {
+        "tag": "torah",
+        "mentions": 5
+      },
+      {
+        "tag": "babylon",
+        "mentions": 4
+      },
+      {
+        "tag": "baal",
+        "mentions": 4
+      },
+      {
+        "tag": "abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 3
+      },
+      {
+        "tag": "isaac",
+        "mentions": 2
+      },
+      {
+        "tag": "jesus",
+        "mentions": 2
+      },
+      {
+        "tag": "deuteronomy",
+        "mentions": 2
+      },
+      {
+        "tag": "jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "ugarit",
+        "mentions": 1
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "B1uE2cv8fP0",
+    "title": "Episode 22 (September 4, 2023), \"Connecting with Source\"",
+    "publishedAt": "2023-09-04T00:00:00Z",
+    "processedAt": "2026-01-11T22:05:11.849Z",
+    "transcriptPath": "data/transcripts/2023-09-04-episode-22-september-4-2023-connecting-with-source.txt",
+    "episodeNumber": 1,
+    "tags": [
+      {
+        "tag": "genesis",
+        "mentions": 45
+      },
+      {
+        "tag": "lot",
+        "mentions": 16
+      },
+      {
+        "tag": "leviticus",
+        "mentions": 11
+      },
+      {
+        "tag": "pentateuch",
+        "mentions": 11
+      },
+      {
+        "tag": "deuteronomy",
+        "mentions": 8
+      },
+      {
+        "tag": "yhwh",
+        "mentions": 6
+      },
+      {
+        "tag": "moses",
+        "mentions": 4
+      },
+      {
+        "tag": "el",
+        "mentions": 4
+      },
+      {
+        "tag": "david",
+        "mentions": 3
+      },
+      {
+        "tag": "egypt",
+        "mentions": 3
+      },
+      {
+        "tag": "isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "adam",
+        "mentions": 1
+      },
+      {
+        "tag": "eve",
+        "mentions": 1
+      },
+      {
+        "tag": "ishmael",
+        "mentions": 1
+      },
+      {
+        "tag": "ezekiel",
+        "mentions": 1
+      },
+      {
+        "tag": "babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 1
+      },
+      {
+        "tag": "book of job",
+        "mentions": 1
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "-I3W7CTX8Kw",
+    "title": "Episode 23 (September 11, 2023), \"Abortion and the Bible\"",
+    "publishedAt": "2023-09-11T00:00:00Z",
+    "processedAt": "2026-01-11T22:20:51.303Z",
+    "transcriptPath": "data/transcripts/2023-09-11-episode-23-september-11-2023-abortion-and-the-bible.txt",
+    "tags": [
+      {
+        "tag": "bible",
+        "mentions": 53
+      },
+      {
+        "tag": "jeremiah",
+        "mentions": 16
+      },
+      {
+        "tag": "christianity",
+        "mentions": 14
+      },
+      {
+        "tag": "exodus",
+        "mentions": 10
+      },
+      {
+        "tag": "lot",
+        "mentions": 8
+      },
+      {
+        "tag": "luke",
+        "mentions": 8
+      },
+      {
+        "tag": "gospel of john",
+        "mentions": 6
+      },
+      {
+        "tag": "new testament",
+        "mentions": 6
+      },
+      {
+        "tag": "hebrew bible",
+        "mentions": 5
+      },
+      {
+        "tag": "king james version",
+        "mentions": 4
+      },
+      {
+        "tag": "genesis",
+        "mentions": 3
+      },
+      {
+        "tag": "james",
+        "mentions": 2
+      },
+      {
+        "tag": "mary magdalene",
+        "mentions": 2
+      },
+      {
+        "tag": "numbers",
+        "mentions": 2
+      },
+      {
+        "tag": "isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "paul",
+        "mentions": 1
+      },
+      {
+        "tag": "david",
+        "mentions": 1
+      },
+      {
+        "tag": "univocality",
+        "mentions": 1
+      }
+    ],
     "episodeNumber": 1
   }
 ]

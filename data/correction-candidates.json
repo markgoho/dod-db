@@ -3001,7 +3001,319 @@
       "firstSeen": "2026-01-11T21:20:04.094Z",
       "lastSeen": "2026-01-11T21:20:04.094Z",
       "status": "pending"
+    },
+    "famous day→famous Day": {
+      "original": "famous day",
+      "corrected": "famous Day",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "B1uE2cv8fP0"
+      ],
+      "examples": [
+        "\"16, the famous day of Atonement\"",
+        "\"16, the famous day of Atonement\""
+      ],
+      "correctedExamples": [
+        "\"16, the famous Day of Atonement\"",
+        "\"16, the famous Day of Atonement\""
+      ],
+      "timestamps": [
+        "00:00:02.320",
+        "00:18:26.040"
+      ],
+      "episodeIds": [
+        "B1uE2cv8fP0",
+        "B1uE2cv8fP0"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T22:05:11.848Z",
+      "lastSeen": "2026-01-11T22:05:11.848Z",
+      "status": "pending"
+    },
+    "Beresheet→Bereshit": {
+      "original": "Beresheet",
+      "corrected": "Bereshit",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "B1uE2cv8fP0"
+      ],
+      "examples": [
+        "\"start with Beresheet.\"",
+        "\"but really, beresheet is a\""
+      ],
+      "correctedExamples": [
+        "\"start with Bereshit.\"",
+        "\"but really, Bereshit is a\""
+      ],
+      "timestamps": [
+        "00:07:02.100",
+        "00:49:29.320"
+      ],
+      "episodeIds": [
+        "B1uE2cv8fP0",
+        "B1uE2cv8fP0"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-11T22:05:11.848Z",
+      "lastSeen": "2026-01-11T22:05:11.848Z",
+      "status": "pending"
+    },
+    "Milgram→Milgrom": {
+      "original": "Milgram",
+      "corrected": "Milgrom",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "B1uE2cv8fP0"
+      ],
+      "examples": [
+        "\"Levine, Jacob Milgram.\"",
+        "\"that Jacob Milgram really advanced.\"",
+        "\"know, Jacob Milgram was largely\""
+      ],
+      "correctedExamples": [
+        "\"Levine, Jacob Milgrom.\"",
+        "\"that Jacob Milgrom really advanced.\"",
+        "\"know, Jacob Milgrom was largely\""
+      ],
+      "timestamps": [
+        "00:13:46.990",
+        "00:14:05.850",
+        "00:14:17.450"
+      ],
+      "episodeIds": [
+        "B1uE2cv8fP0",
+        "B1uE2cv8fP0",
+        "B1uE2cv8fP0"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-11T22:05:11.848Z",
+      "lastSeen": "2026-01-11T22:05:11.848Z",
+      "status": "pending"
+    },
+    "Yahweh→Adonai": {
+      "original": "Yahweh",
+      "corrected": "Adonai",
+      "category": "biblical-term",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "B1uE2cv8fP0"
+      ],
+      "examples": [
+        "\"zone, so Yahweh can remain.\"",
+        "\"it says Yahweh is the\""
+      ],
+      "correctedExamples": [
+        "\"zone, so Adonai can remain.\"",
+        "\"it says Adonai, it's the\""
+      ],
+      "timestamps": [
+        "00:16:27.240",
+        "00:23:47.090"
+      ],
+      "episodeIds": [
+        "B1uE2cv8fP0",
+        "B1uE2cv8fP0"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-11T22:05:11.848Z",
+      "lastSeen": "2026-01-11T22:05:11.848Z",
+      "status": "pending"
+    },
+    "priestly source→Priestly source": {
+      "original": "priestly source",
+      "corrected": "Priestly source",
+      "category": "capitalization",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "B1uE2cv8fP0"
+      ],
+      "examples": [
+        "\"E, the priestly source, P, and\"",
+        "\"the complete priestly source, I wanted\"",
+        "\"of the priestly source.\""
+      ],
+      "correctedExamples": [
+        "\"E, the Priestly source, P, and\"",
+        "\"The Complete Priestly Source, I wanted\"",
+        "\"of the Priestly source.\""
+      ],
+      "timestamps": [
+        "00:22:41.090",
+        "01:00:19.880",
+        "01:01:09.140"
+      ],
+      "episodeIds": [
+        "B1uE2cv8fP0",
+        "B1uE2cv8fP0",
+        "B1uE2cv8fP0"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-11T22:05:11.848Z",
+      "lastSeen": "2026-01-11T22:05:11.848Z",
+      "status": "pending"
+    },
+    "documentary hypothesis→Documentary Hypothesis": {
+      "original": "documentary hypothesis",
+      "corrected": "Documentary Hypothesis",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "B1uE2cv8fP0"
+      ],
+      "examples": [
+        "\"called the documentary hypothesis, because the\"",
+        "\"that the documentary hypothesis is built\""
+      ],
+      "correctedExamples": [
+        "\"called the Documentary Hypothesis, because the\"",
+        "\"that the Documentary Hypothesis is built\""
+      ],
+      "timestamps": [
+        "00:22:57.730",
+        "00:24:50.200"
+      ],
+      "episodeIds": [
+        "B1uE2cv8fP0",
+        "B1uE2cv8fP0"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T22:05:11.848Z",
+      "lastSeen": "2026-01-11T22:05:11.848Z",
+      "status": "pending"
+    },
+    "Walter→welter": {
+      "original": "Walter",
+      "corrected": "welter",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "B1uE2cv8fP0"
+      ],
+      "examples": [
+        "\"translated as Walter and waste,\"",
+        "\"I hear Walter and waste,\""
+      ],
+      "correctedExamples": [
+        "\"translated as welter and waste,\"",
+        "\"I hear \"welter and waste,\"\""
+      ],
+      "timestamps": [
+        "00:51:03.560",
+        "00:52:48.780"
+      ],
+      "episodeIds": [
+        "B1uE2cv8fP0",
+        "B1uE2cv8fP0"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T22:05:11.848Z",
+      "lastSeen": "2026-01-11T22:05:11.848Z",
+      "status": "pending"
+    },
+    "either→either-or": {
+      "original": "either",
+      "corrected": "either-or",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "-I3W7CTX8Kw"
+      ],
+      "examples": [
+        "\"with these either or propositions\"",
+        "\"with these either or propositions\""
+      ],
+      "correctedExamples": [
+        "\"with these either-or propositions and\"",
+        "\"with these either-or propositions and\""
+      ],
+      "timestamps": [
+        "00:00:10.520",
+        "00:02:13.860"
+      ],
+      "episodeIds": [
+        "-I3W7CTX8Kw",
+        "-I3W7CTX8Kw"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T22:20:51.302Z",
+      "lastSeen": "2026-01-11T22:20:51.302Z",
+      "status": "pending"
+    },
+    "opposition→position": {
+      "original": "opposition",
+      "corrected": "position",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "-I3W7CTX8Kw"
+      ],
+      "examples": [
+        "\"never takes opposition.\"",
+        "\"never takes opposition.\""
+      ],
+      "correctedExamples": [
+        "\"takes a position.\"",
+        "\"takes a position.\""
+      ],
+      "timestamps": [
+        "00:00:10.520",
+        "00:02:13.860"
+      ],
+      "episodeIds": [
+        "-I3W7CTX8Kw",
+        "-I3W7CTX8Kw"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-11T22:20:51.302Z",
+      "lastSeen": "2026-01-11T22:20:51.302Z",
+      "status": "pending"
+    },
+    "pharmacia→pharmakeia": {
+      "original": "pharmacia",
+      "corrected": "pharmakeia",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "-I3W7CTX8Kw"
+      ],
+      "examples": [
+        "\"the word pharmacia in Greek,\"",
+        "\"talk about pharmacia and condemn\"",
+        "\"and condemn Pharmacia considered abortifacients\""
+      ],
+      "correctedExamples": [
+        "\"the word pharmakeia in Greek,\"",
+        "\"talk about pharmakeia and condemn\"",
+        "\"and condemn pharmakeia considered abortifacients\""
+      ],
+      "timestamps": [
+        "00:24:08.660",
+        "00:24:29.920",
+        "00:24:29.920"
+      ],
+      "episodeIds": [
+        "-I3W7CTX8Kw",
+        "-I3W7CTX8Kw",
+        "-I3W7CTX8Kw"
+      ],
+      "confidence": 25,
+      "firstSeen": "2026-01-11T22:20:51.302Z",
+      "lastSeen": "2026-01-11T22:20:51.302Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-11T21:48:30.192Z"
+  "lastUpdated": "2026-01-11T22:20:51.303Z"
 }
