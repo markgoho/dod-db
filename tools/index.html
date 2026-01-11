@@ -180,33 +180,32 @@
           </div>
         </a>
 
-        <!-- Future tool slots -->
-        <div class="tool-card" style="opacity: 0.6; cursor: default; pointer-events: none;">
-          <span class="tool-icon">📊</span>
-          <div class="tool-name">Episode Analytics</div>
+        <a href="tag-vocabulary.html" class="tool-card">
+          <span class="tool-icon">🏷️</span>
+          <div class="tool-name">Tag Vocabulary Management</div>
           <div class="tool-description">
-            View statistics and insights across all processed episodes. Track
-            speaker patterns, topics, and correction trends.
+            Manage tag vocabulary and view episode analytics. Browse 100+ vocabulary terms,
+            analyze tag usage statistics, and run migrations to reprocess episodes.
           </div>
-          <span class="tool-status" style="background: #e5e7eb; color: #6b7280;">
-            Coming Soon
-          </span>
+          <span class="tool-status status-requires-server">Requires Server</span>
           <div>
-            <span class="category category-analysis">Analysis</span>
+            <span class="category category-analysis">Management</span>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="server-info">
-        <h3>🚀 Starting the Correction Review Server</h3>
+        <h3>🚀 Starting Tool Servers</h3>
         <p style="color: #6b7280; margin-bottom: 8px;">
-          The Correction Review tool requires a local server to modify files.
-          Start it with:
+          Some tools require a local server. Start them with:
         </p>
         <code>bun run src/scripts/review-corrections-ui.ts</code>
-        <p style="color: #6b7280; margin-top: 12px; font-size: 14px;">
-          Once running, visit
-          <strong>http://localhost:3000</strong> to review corrections
+        <p style="color: #6b7280; margin-top: 8px; font-size: 14px;">
+          → Correction Review: <strong>http://localhost:3000</strong>
+        </p>
+        <code style="margin-top: 16px;">bun run src/scripts/tag-vocabulary-ui.ts</code>
+        <p style="color: #6b7280; margin-top: 8px; font-size: 14px;">
+          → Tag Vocabulary Management: <strong>http://localhost:3001</strong>
         </p>
       </div>
 

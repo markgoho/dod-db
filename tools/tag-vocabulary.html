@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Vocabulary Management - Data Over Dogma</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      header {
+        background: white;
+        padding: 32px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        margin-bottom: 32px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 32px;
+        margin-bottom: 12px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .subtitle {
+        color: #6b7280;
+        font-size: 16px;
+        margin-bottom: 24px;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 24px;
+      }
+      .stat {
+        text-align: center;
+      }
+      .stat-value {
+        font-size: 36px;
+        font-weight: 700;
+        color: #667eea;
+        display: block;
+      }
+      .stat-label {
+        font-size: 14px;
+        color: #9ca3af;
+        margin-top: 4px;
+      }
+      .section {
+        background: white;
+        padding: 32px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        margin-bottom: 32px;
+      }
+      h2 {
+        font-size: 24px;
+        color: #1f2937;
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #e5e7eb;
+      }
+      .episodes-grid {
+        display: grid;
+        gap: 16px;
+      }
+      .episode-card {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 20px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+      }
+      .episode-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-color: #667eea;
+      }
+      .episode-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 12px;
+        gap: 16px;
+      }
+      .episode-number {
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 4px 12px;
+        border-radius: 20px;
+        flex-shrink: 0;
+      }
+      .episode-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1f2937;
+        flex: 1;
+      }
+      .episode-meta {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        color: #6b7280;
+        margin-bottom: 12px;
+      }
+      .episode-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .tag-badge {
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 12px;
+        background: #f3f4f6;
+        color: #4b5563;
+        font-weight: 500;
+      }
+      .tag-badge.biblical-character {
+        background: #dbeafe;
+        color: #1e40af;
+      }
+      .tag-badge.biblical-place {
+        background: #fef3c7;
+        color: #92400e;
+      }
+      .tag-badge.biblical-text {
+        background: #fce7f3;
+        color: #9f1239;
+      }
+      .tag-badge.theological-concept {
+        background: #f3e8ff;
+        color: #6b21a8;
+      }
+      .tag-badge.scholarly-term {
+        background: #d1fae5;
+        color: #065f46;
+      }
+      .episode-detail {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #e5e7eb;
+        display: none;
+      }
+      .episode-detail.show {
+        display: block;
+      }
+      .tag-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 12px;
+      }
+      .tag-detail {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 12px;
+        border-radius: 6px;
+        background: #f9fafb;
+        font-size: 14px;
+      }
+      .tag-name {
+        font-weight: 600;
+        color: #374151;
+      }
+      .tag-mentions {
+        color: #6b7280;
+      }
+      .loading {
+        text-align: center;
+        padding: 60px 20px;
+        font-size: 18px;
+        color: #6b7280;
+      }
+      .empty-state {
+        text-align: center;
+        padding: 60px 20px;
+      }
+      .empty-state-icon {
+        font-size: 64px;
+        margin-bottom: 16px;
+        opacity: 0.5;
+      }
+      .empty-state-text {
+        font-size: 18px;
+        color: #6b7280;
+      }
+      .category-tabs {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 24px;
+        overflow-x: auto;
+        padding-bottom: 8px;
+      }
+      .category-tab {
+        padding: 10px 20px;
+        border: 2px solid #e5e7eb;
+        border-radius: 8px;
+        background: white;
+        font-size: 14px;
+        font-weight: 600;
+        color: #6b7280;
+        cursor: pointer;
+        transition: all 0.2s;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      .category-tab:hover {
+        border-color: #667eea;
+        color: #667eea;
+      }
+      .category-tab.active {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-color: transparent;
+        color: white;
+      }
+      .vocab-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 16px;
+      }
+      .vocab-card {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 16px;
+        transition: all 0.3s;
+      }
+      .vocab-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .vocab-canonical {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1f2937;
+        margin-bottom: 8px;
+      }
+      .vocab-variations {
+        font-size: 13px;
+        color: #6b7280;
+        margin-bottom: 8px;
+      }
+      .vocab-category-badge {
+        display: inline-block;
+        font-size: 11px;
+        padding: 4px 8px;
+        border-radius: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .vocab-category-badge.biblical-character {
+        background: #dbeafe;
+        color: #1e40af;
+      }
+      .vocab-category-badge.biblical-place {
+        background: #fef3c7;
+        color: #92400e;
+      }
+      .vocab-category-badge.biblical-text {
+        background: #fce7f3;
+        color: #9f1239;
+      }
+      .vocab-category-badge.theological-concept {
+        background: #f3e8ff;
+        color: #6b21a8;
+      }
+      .vocab-category-badge.scholarly-term {
+        background: #d1fae5;
+        color: #065f46;
+      }
+      .analytics-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+      .analytics-card {
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 24px;
+        background: #f9fafb;
+      }
+      .analytics-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1f2937;
+        margin-bottom: 16px;
+      }
+      .chart-bar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 12px;
+      }
+      .chart-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #374151;
+        min-width: 120px;
+        text-align: right;
+      }
+      .chart-bar-container {
+        flex: 1;
+        background: #e5e7eb;
+        border-radius: 4px;
+        height: 24px;
+        position: relative;
+        overflow: hidden;
+      }
+      .chart-bar-fill {
+        height: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 4px;
+        transition: width 0.5s ease;
+      }
+      .chart-value {
+        font-size: 13px;
+        font-weight: 600;
+        color: #6b7280;
+        min-width: 40px;
+      }
+      .underused-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .underused-tag {
+        padding: 6px 12px;
+        background: #fef3c7;
+        color: #92400e;
+        border-radius: 12px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .migration-controls {
+        margin-bottom: 24px;
+      }
+      .instruction-box {
+        background: #f3f4f6;
+        border-left: 4px solid #667eea;
+        padding: 16px;
+        border-radius: 8px;
+        margin-bottom: 16px;
+      }
+      .instruction-box h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #1f2937;
+        margin-bottom: 8px;
+      }
+      .instruction-box ol {
+        margin-left: 20px;
+        color: #4b5563;
+        line-height: 1.6;
+      }
+      .instruction-box code {
+        background: #1f2937;
+        color: #e5e7eb;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: 'Monaco', 'Menlo', monospace;
+        font-size: 13px;
+      }
+      .btn {
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+      }
+      .btn-primary:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+      }
+      .migration-status {
+        margin-top: 16px;
+        padding: 16px;
+        border-radius: 8px;
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        display: none;
+      }
+      .migration-status.show {
+        display: block;
+      }
+      .status-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      .status-badge.running {
+        background: #dbeafe;
+        color: #1e40af;
+      }
+      .status-badge.completed {
+        background: #d1fae5;
+        color: #065f46;
+      }
+      .status-badge.failed {
+        background: #fee2e2;
+        color: #991b1b;
+      }
+      .migration-logs {
+        background: #1f2937;
+        color: #e5e7eb;
+        padding: 16px;
+        border-radius: 8px;
+        font-family: 'Monaco', 'Menlo', monospace;
+        font-size: 13px;
+        max-height: 400px;
+        overflow-y: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tag Vocabulary Management</h1>
+        <p class="subtitle">
+          Manage tag vocabulary and view episode data across the corpus
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value" id="total-episodes">-</span>
+            <div class="stat-label">Episodes</div>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="total-tags">-</span>
+            <div class="stat-label">Total Tags</div>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="avg-tags">-</span>
+            <div class="stat-label">Avg Tags/Episode</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="section">
+        <h2>Episodes</h2>
+        <div style="display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;">
+          <input
+            type="text"
+            id="episode-search"
+            placeholder="Search episodes by title..."
+            style="flex: 1; min-width: 200px; padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px;"
+            oninput="filterEpisodes()" />
+          <select
+            id="tag-filter"
+            style="padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px; min-width: 200px;"
+            onchange="filterEpisodes()">
+            <option value="">All tags</option>
+          </select>
+          <select
+            id="sort-select"
+            style="padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px;"
+            onchange="filterEpisodes()">
+            <option value="episode-desc">Episode # (newest)</option>
+            <option value="episode-asc">Episode # (oldest)</option>
+            <option value="date-desc">Date (newest)</option>
+            <option value="date-asc">Date (oldest)</option>
+            <option value="tags-desc">Tag count (high)</option>
+            <option value="tags-asc">Tag count (low)</option>
+          </select>
+        </div>
+        <div id="episodes-container">
+          <div class="loading">Loading episodes...</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Tag Vocabulary</h2>
+        <div class="category-tabs" id="category-tabs">
+          <div class="category-tab active" onclick="filterVocabulary('all')">
+            All
+          </div>
+          <div class="category-tab" onclick="filterVocabulary('biblical-character')">
+            Biblical Characters
+          </div>
+          <div class="category-tab" onclick="filterVocabulary('biblical-place')">
+            Biblical Places
+          </div>
+          <div class="category-tab" onclick="filterVocabulary('biblical-text')">
+            Biblical Texts
+          </div>
+          <div class="category-tab" onclick="filterVocabulary('theological-concept')">
+            Theological Concepts
+          </div>
+          <div class="category-tab" onclick="filterVocabulary('scholarly-term')">
+            Scholarly Terms
+          </div>
+        </div>
+        <div id="vocabulary-container">
+          <div class="loading">Loading vocabulary...</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Tag Analytics</h2>
+        <div id="analytics-container">
+          <div class="loading">Loading analytics...</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Vocabulary Management</h2>
+        <div class="migration-controls">
+          <div class="instruction-box">
+            <h3>How to Update Tag Vocabulary</h3>
+            <ol>
+              <li>Review analytics above to identify tags that need attention</li>
+              <li>Edit <code>src/config/tag-vocabulary.ts</code> in your IDE:
+                <ul>
+                  <li>Add new canonical terms and their variations</li>
+                  <li>Add variations to existing terms (e.g., common misspellings)</li>
+                  <li>Ensure each term has the correct category</li>
+                </ul>
+              </li>
+              <li>Click "Run Migration" below to reprocess all episodes with the updated vocabulary</li>
+              <li>Review the updated analytics and episodes to verify changes</li>
+            </ol>
+          </div>
+          <button
+            id="migrate-btn"
+            class="btn btn-primary"
+            onclick="startMigration()">
+            Run Migration
+          </button>
+          <div id="migration-status" class="migration-status">
+            <div id="migration-status-badge"></div>
+            <div id="migration-logs" class="migration-logs"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Category colors for tags
+      const TAG_CATEGORIES = {
+        'biblical-character': 'biblical-character',
+        'biblical-place': 'biblical-place',
+        'biblical-text': 'biblical-text',
+        'theological-concept': 'theological-concept',
+        'scholarly-term': 'scholarly-term',
+      };
+
+      // Track tag categories from vocabulary (will be populated when vocabulary is loaded)
+      let tagCategoryMap = {};
+
+      // Format date for display
+      function formatDate(dateString) {
+        const date = new Date(dateString);
+        return date.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+        });
+      }
+
+      // Get tag category class
+      function getTagCategoryClass(tagName) {
+        // For now, return default; will be enhanced in Phase 2 with vocabulary data
+        return '';
+      }
+
+      // Render episode card
+      function renderEpisodeCard(episode) {
+        const tagCount = episode.tags?.length || 0;
+        const tagsPreview = episode.tags?.slice(0, 5) || [];
+        const moreCount = tagCount > 5 ? tagCount - 5 : 0;
+
+        return `
+          <div class="episode-card" onclick="toggleEpisodeDetail('${episode.videoId}')">
+            <div class="episode-header">
+              <div class="episode-number">Episode ${episode.episodeNumber || '?'}</div>
+              <div class="episode-title">${episode.title}</div>
+            </div>
+            <div class="episode-meta">
+              <span>📅 ${formatDate(episode.publishedAt)}</span>
+              <span>🏷️ ${tagCount} tags</span>
+            </div>
+            <div class="episode-tags">
+              ${tagsPreview.map(tag => `
+                <span class="tag-badge ${getTagCategoryClass(tag.tag)}">
+                  ${tag.tag} (${tag.mentions})
+                </span>
+              `).join('')}
+              ${moreCount > 0 ? `<span class="tag-badge">+${moreCount} more</span>` : ''}
+            </div>
+            <div class="episode-detail" id="detail-${episode.videoId}">
+              <div class="tag-list">
+                ${(episode.tags || []).map(tag => `
+                  <div class="tag-detail">
+                    <span class="tag-name">${tag.tag}</span>
+                    <span class="tag-mentions">${tag.mentions} mentions</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      // Toggle episode detail expansion
+      function toggleEpisodeDetail(videoId) {
+        const detail = document.getElementById(`detail-${videoId}`);
+        if (detail) {
+          detail.classList.toggle('show');
+        }
+      }
+
+      // Store all episodes for filtering
+      let allEpisodes = [];
+
+      // Load and display episodes
+      async function loadEpisodes() {
+        try {
+          const response = await fetch('/api/episodes');
+          if (!response.ok) {
+            throw new Error('Failed to load episodes');
+          }
+
+          allEpisodes = await response.json();
+
+          // Update stats
+          const totalEpisodes = allEpisodes.length;
+          const totalTags = allEpisodes.reduce((sum, ep) => sum + (ep.tags?.length || 0), 0);
+          const avgTags = totalEpisodes > 0 ? (totalTags / totalEpisodes).toFixed(1) : 0;
+
+          document.getElementById('total-episodes').textContent = totalEpisodes;
+          document.getElementById('total-tags').textContent = totalTags;
+          document.getElementById('avg-tags').textContent = avgTags;
+
+          // Populate tag filter dropdown
+          populateTagFilter(allEpisodes);
+
+          // Render episodes with initial filter
+          filterEpisodes();
+        } catch (error) {
+          console.error('Error loading episodes:', error);
+          document.getElementById('episodes-container').innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">⚠️</div>
+              <div class="empty-state-text">Error loading episodes: ${error.message}</div>
+            </div>
+          `;
+        }
+      }
+
+      // Populate tag filter dropdown with all unique tags
+      function populateTagFilter(episodes) {
+        const allTags = new Set();
+        for (const episode of episodes) {
+          if (episode.tags) {
+            for (const tag of episode.tags) {
+              allTags.add(tag.tag);
+            }
+          }
+        }
+
+        const tagFilter = document.getElementById('tag-filter');
+        const sortedTags = Array.from(allTags).sort();
+
+        // Keep "All tags" option and add all unique tags
+        tagFilter.innerHTML = '<option value="">All tags</option>' +
+          sortedTags.map(tag => `<option value="${tag}">${tag}</option>`).join('');
+      }
+
+      // Filter and sort episodes based on user input
+      function filterEpisodes() {
+        const searchTerm = document.getElementById('episode-search').value.toLowerCase();
+        const selectedTag = document.getElementById('tag-filter').value;
+        const sortOption = document.getElementById('sort-select').value;
+
+        // Filter episodes
+        let filtered = allEpisodes.filter(episode => {
+          // Search filter
+          const matchesSearch = !searchTerm || episode.title.toLowerCase().includes(searchTerm);
+
+          // Tag filter
+          const matchesTag = !selectedTag ||
+            (episode.tags && episode.tags.some(t => t.tag === selectedTag));
+
+          return matchesSearch && matchesTag;
+        });
+
+        // Sort episodes
+        filtered.sort((a, b) => {
+          switch (sortOption) {
+            case 'episode-desc':
+              return (b.episodeNumber || 0) - (a.episodeNumber || 0);
+            case 'episode-asc':
+              return (a.episodeNumber || 0) - (b.episodeNumber || 0);
+            case 'date-desc':
+              return b.publishedAt.localeCompare(a.publishedAt);
+            case 'date-asc':
+              return a.publishedAt.localeCompare(b.publishedAt);
+            case 'tags-desc':
+              return (b.tags?.length || 0) - (a.tags?.length || 0);
+            case 'tags-asc':
+              return (a.tags?.length || 0) - (b.tags?.length || 0);
+            default:
+              return 0;
+          }
+        });
+
+        // Render filtered episodes
+        renderEpisodesGrid(filtered);
+      }
+
+      // Render episodes grid
+      function renderEpisodesGrid(episodes) {
+        const container = document.getElementById('episodes-container');
+
+        if (episodes.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">📭</div>
+              <div class="empty-state-text">No episodes match your filters</div>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = `
+          <div class="episodes-grid">
+            ${episodes.map(renderEpisodeCard).join('')}
+          </div>
+        `;
+      }
+
+      // Load and display vocabulary
+      let allVocabulary = [];
+      let currentCategory = 'all';
+
+      async function loadVocabulary() {
+        try {
+          const response = await fetch('/api/vocabulary');
+          if (!response.ok) {
+            throw new Error('Failed to load vocabulary');
+          }
+
+          allVocabulary = await response.json();
+          renderVocabulary(currentCategory);
+        } catch (error) {
+          console.error('Error loading vocabulary:', error);
+          document.getElementById('vocabulary-container').innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">⚠️</div>
+              <div class="empty-state-text">Error loading vocabulary: ${error.message}</div>
+            </div>
+          `;
+        }
+      }
+
+      // Render vocabulary filtered by category
+      function renderVocabulary(category) {
+        currentCategory = category;
+
+        // Update active tab
+        document.querySelectorAll('.category-tab').forEach(tab => {
+          tab.classList.remove('active');
+        });
+        event?.target?.classList.add('active');
+
+        // Filter vocabulary
+        const filtered = category === 'all'
+          ? allVocabulary
+          : allVocabulary.filter(term => term.category === category);
+
+        // Render cards
+        const container = document.getElementById('vocabulary-container');
+
+        if (filtered.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">📭</div>
+              <div class="empty-state-text">No vocabulary terms found for this category</div>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = `
+          <div class="vocab-grid">
+            ${filtered.map(term => `
+              <div class="vocab-card">
+                <div class="vocab-canonical">${term.canonical}</div>
+                <div class="vocab-variations">
+                  ${term.variations.length > 0
+                    ? `Variations: ${term.variations.join(', ')}`
+                    : 'No variations'}
+                </div>
+                <span class="vocab-category-badge ${term.category}">
+                  ${formatCategoryName(term.category)}
+                </span>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }
+
+      // Filter vocabulary by category (called from onclick)
+      function filterVocabulary(category) {
+        renderVocabulary(category);
+      }
+
+      // Format category name for display
+      function formatCategoryName(category) {
+        return category
+          .split('-')
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' ');
+      }
+
+      // Load and display analytics
+      async function loadAnalytics() {
+        try {
+          const response = await fetch('/api/tag-stats');
+          if (!response.ok) {
+            throw new Error('Failed to load analytics');
+          }
+
+          const stats = await response.json();
+          renderAnalytics(stats);
+        } catch (error) {
+          console.error('Error loading analytics:', error);
+          document.getElementById('analytics-container').innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">⚠️</div>
+              <div class="empty-state-text">Error loading analytics: ${error.message}</div>
+            </div>
+          `;
+        }
+      }
+
+      // Render analytics dashboard
+      function renderAnalytics(stats) {
+        const container = document.getElementById('analytics-container');
+
+        if (stats.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">📭</div>
+              <div class="empty-state-text">No tag statistics available</div>
+            </div>
+          `;
+          return;
+        }
+
+        // Top 15 most used tags
+        const topTags = stats.slice(0, 15);
+        const maxEpisodeCount = Math.max(...topTags.map(t => t.episodeCount));
+
+        // Find underused vocabulary terms (in vocabulary but < 3 episodes)
+        const underused = stats.filter(s => s.episodeCount < 3 && s.episodeCount > 0);
+
+        // Category distribution
+        const categoryCount = {};
+        for (const stat of stats) {
+          categoryCount[stat.category] = (categoryCount[stat.category] || 0) + 1;
+        }
+
+        container.innerHTML = `
+          <div class="analytics-grid">
+            <div class="analytics-card">
+              <div class="analytics-title">Top 15 Most Used Tags</div>
+              ${topTags.map(tag => {
+                const percentage = (tag.episodeCount / maxEpisodeCount) * 100;
+                return `
+                  <div class="chart-bar">
+                    <div class="chart-label">${tag.canonical}</div>
+                    <div class="chart-bar-container">
+                      <div class="chart-bar-fill" style="width: ${percentage}%"></div>
+                    </div>
+                    <div class="chart-value">${tag.episodeCount}</div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+
+            <div class="analytics-card">
+              <div class="analytics-title">Category Distribution</div>
+              ${Object.entries(categoryCount)
+                .sort((a, b) => b[1] - a[1])
+                .map(([category, count]) => {
+                  const percentage = (count / stats.length) * 100;
+                  return `
+                    <div class="chart-bar">
+                      <div class="chart-label">${formatCategoryName(category)}</div>
+                      <div class="chart-bar-container">
+                        <div class="chart-bar-fill" style="width: ${percentage}%"></div>
+                      </div>
+                      <div class="chart-value">${count}</div>
+                    </div>
+                  `;
+                }).join('')}
+            </div>
+          </div>
+
+          ${underused.length > 0 ? `
+            <div class="analytics-card">
+              <div class="analytics-title">Underused Vocabulary (< 3 episodes)</div>
+              <div class="underused-list">
+                ${underused.map(tag => `
+                  <span class="underused-tag">${tag.canonical} (${tag.episodeCount})</span>
+                `).join('')}
+              </div>
+            </div>
+          ` : ''}
+        `;
+      }
+
+      // Migration management
+      let currentMigrationJobId = null;
+      let migrationPollInterval = null;
+
+      async function startMigration() {
+        if (!confirm('This will reprocess all episodes with the current vocabulary. Continue?')) {
+          return;
+        }
+
+        const btn = document.getElementById('migrate-btn');
+        const statusContainer = document.getElementById('migration-status');
+        const statusBadge = document.getElementById('migration-status-badge');
+        const logsContainer = document.getElementById('migration-logs');
+
+        // Disable button
+        btn.disabled = true;
+        btn.textContent = 'Starting...';
+
+        try {
+          // Start migration
+          const response = await fetch('/api/migrate', { method: 'POST' });
+          if (!response.ok) {
+            throw new Error('Failed to start migration');
+          }
+
+          const data = await response.json();
+          currentMigrationJobId = data.jobId;
+
+          // Show status container
+          statusContainer.classList.add('show');
+          statusBadge.innerHTML = '<span class="status-badge running">Running...</span>';
+          logsContainer.textContent = 'Migration started...\n';
+
+          // Start polling for status
+          migrationPollInterval = setInterval(pollMigrationStatus, 1000);
+        } catch (error) {
+          alert(`Error starting migration: ${error.message}`);
+          btn.disabled = false;
+          btn.textContent = 'Run Migration';
+        }
+      }
+
+      async function pollMigrationStatus() {
+        if (!currentMigrationJobId) return;
+
+        try {
+          const response = await fetch(`/api/migrate-status/${currentMigrationJobId}`);
+          if (!response.ok) {
+            throw new Error('Failed to get migration status');
+          }
+
+          const job = await response.json();
+          const statusBadge = document.getElementById('migration-status-badge');
+          const logsContainer = document.getElementById('migration-logs');
+          const btn = document.getElementById('migrate-btn');
+
+          // Update logs
+          logsContainer.textContent = job.logs || 'Waiting for output...';
+          logsContainer.scrollTop = logsContainer.scrollHeight;
+
+          // Update status
+          if (job.status === 'completed') {
+            statusBadge.innerHTML = '<span class="status-badge completed">✓ Completed</span>';
+            clearInterval(migrationPollInterval);
+            btn.disabled = false;
+            btn.textContent = 'Run Migration';
+            currentMigrationJobId = null;
+
+            // Reload data
+            setTimeout(() => {
+              loadEpisodes();
+              loadAnalytics();
+            }, 1000);
+          } else if (job.status === 'failed') {
+            statusBadge.innerHTML = '<span class="status-badge failed">✗ Failed</span>';
+            clearInterval(migrationPollInterval);
+            btn.disabled = false;
+            btn.textContent = 'Run Migration';
+            currentMigrationJobId = null;
+          } else {
+            statusBadge.innerHTML = '<span class="status-badge running">Running...</span>';
+          }
+        } catch (error) {
+          console.error('Error polling migration status:', error);
+          clearInterval(migrationPollInterval);
+          const btn = document.getElementById('migrate-btn');
+          btn.disabled = false;
+          btn.textContent = 'Run Migration';
+        }
+      }
+
+      // Initialize on page load
+      loadEpisodes();
+      loadVocabulary();
+      loadAnalytics();
+    </script>
+  </body>
+</html>
