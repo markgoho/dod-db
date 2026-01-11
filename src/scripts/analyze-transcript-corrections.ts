@@ -12,21 +12,30 @@ import { analyzeCorrections } from '../pipeline/learn-corrections.js';
 const args = process.argv.slice(2);
 const rawPath = args[0];
 const correctedPath = args[1];
+const episodeId = args[2]; // Optional: video ID for tracking
 
 if (!rawPath || !correctedPath) {
   console.error('Error: Both raw and corrected transcript paths are required');
   console.error('');
   console.error('Usage:');
   console.error(
-    '  bun run src/scripts/analyze-transcript-corrections.ts <raw-path> <corrected-path>',
+    '  bun run src/scripts/analyze-transcript-corrections.ts <raw-path> <corrected-path> [episode-id]',
   );
   console.error('');
-  console.error('Example:');
+  console.error('Examples:');
   console.error(
     '  bun run src/scripts/analyze-transcript-corrections.ts \\',
   );
   console.error('    data/transcripts/episode-raw.txt \\');
   console.error('    data/transcripts/episode.txt');
+  console.error('');
+  console.error('  # With episode ID to update tracker:');
+  console.error(
+    '  bun run src/scripts/analyze-transcript-corrections.ts \\',
+  );
+  console.error('    data/transcripts/episode-raw.txt \\');
+  console.error('    data/transcripts/episode.txt \\');
+  console.error('    WidY7lIBiyY');
   process.exit(1);
 }
 
@@ -34,11 +43,14 @@ try {
   console.log('Loading transcripts...');
   console.log(`  Raw: ${rawPath}`);
   console.log(`  Corrected: ${correctedPath}`);
+  if (episodeId) {
+    console.log(`  Episode ID: ${episodeId}`);
+  }
 
   const rawTranscript = await Bun.file(rawPath).text();
   const correctedTranscript = await Bun.file(correctedPath).text();
 
-  analyzeCorrections(rawTranscript, correctedTranscript);
+  await analyzeCorrections(rawTranscript, correctedTranscript, episodeId);
 } catch (error) {
   console.error('');
   console.error('✗ Error analyzing transcripts:');

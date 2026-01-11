@@ -121,7 +121,7 @@ export async function processYouTubeVideo(
   console.log(`Final transcript saved to: ${transcriptPath}`);
 
   // Analyze corrections for learning (compare raw vs corrected)
-  analyzeCorrections(transcriptWithNames, correctedTranscript);
+  await analyzeCorrections(transcriptWithNames, correctedTranscript, videoId);
 
   // Mark as processed
   await markVideoAsProcessed({

@@ -33,4 +33,5 @@ export const globalCorrections: CorrectionRule[] = [
   // Common theological terms
   [['cannon'], 'canon'], // Will be reviewed in Pass 2 for context
   [['unprovidenced'], 'unprovenanced'], // Episode 3: Lot's wife story
+  [["tick tock"], "TikTok"], // proper-noun - confidence: 45%
 ];

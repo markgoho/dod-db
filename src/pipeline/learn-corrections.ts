@@ -9,6 +9,50 @@ interface CorrectionSuggestion {
   count: number;
   category: 'capitalization' | 'spelling' | 'proper-noun' | 'biblical-term';
   examples: string[]; // Store a few example contexts
+  timestamps: string[]; // Store timestamps for examples
+}
+
+/**
+ * Calculate Levenshtein distance between two strings.
+ * Used to determine if two words are similar (likely a typo/mishearing)
+ * vs completely different (likely sentence restructuring).
+ */
+function levenshteinDistance(str1: string, str2: string): number {
+  const m = str1.length;
+  const n = str2.length;
+  const dp: number[][] = Array.from({ length: m + 1 }, () =>
+    Array.from({ length: n + 1 }, () => 0),
+  );
+
+  for (let i = 0; i <= m; i++) {
+    const row = dp[i];
+    if (row) row[0] = i;
+  }
+  for (let j = 0; j <= n; j++) {
+    const firstRow = dp[0];
+    if (firstRow) firstRow[j] = j;
+  }
+
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const currentRow = dp[i];
+      const prevRow = dp[i - 1];
+      if (!currentRow || !prevRow) continue;
+
+      if (str1[i - 1] === str2[j - 1]) {
+        const val = prevRow[j - 1];
+        currentRow[j] = val ?? 0;
+      } else {
+        const deletion = prevRow[j] ?? 0;
+        const insertion = currentRow[j - 1] ?? 0;
+        const substitution = prevRow[j - 1] ?? 0;
+        currentRow[j] = Math.min(deletion + 1, insertion + 1, substitution + 1);
+      }
+    }
+  }
+
+  const lastRow = dp[m];
+  return lastRow?.[n] ?? 0;
 }
 
 // Common English words to filter out (not candidates for deterministic corrections)
@@ -177,10 +221,11 @@ const BIBLICAL_TERMS = new Set([
  * Compare raw and corrected transcripts to identify LLM corrections.
  * Suggests which corrections should be added to the deterministic list.
  */
-export function analyzeCorrections(
+export async function analyzeCorrections(
   rawTranscript: string,
   correctedTranscript: string,
-): void {
+  episodeId?: string,
+): Promise<void> {
   const rawLines = rawTranscript.split('\n').filter((l) => l.trim());
   const correctedLines = correctedTranscript
     .split('\n')
@@ -221,6 +266,58 @@ export function analyzeCorrections(
     // Find word-level differences
     const rawWords = rawText.split(/\s+/);
     const correctedWords = correctedText.split(/\s+/);
+
+    // Detect multi-word merges (e.g., "tick tock" → "tiktok")
+    for (let j = 0; j < correctedWords.length; j++) {
+      const correctedWordOriginal = correctedWords[j]?.replace(
+        /[.,!?;:()[\]"]/g,
+        '',
+      );
+      if (!correctedWordOriginal) continue;
+      const correctedWord = correctedWordOriginal.toLowerCase();
+
+      // Check if this corrected word matches a 2-word phrase in raw
+      if (j < rawWords.length - 1) {
+        const word1 = rawWords[j]?.replace(/[.,!?;:()[\]"]/g, '');
+        const word2 = rawWords[j + 1]?.replace(/[.,!?;:()[\]"]/g, '');
+        if (!word1 || !word2) continue;
+
+        const twoWordRaw = (word1 + word2).toLowerCase();
+
+        // If they match, this is a multi-word merge
+        if (
+          twoWordRaw === correctedWord &&
+          correctedWord.length >= 5 &&
+          !COMMON_WORDS.has(correctedWord)
+        ) {
+          const originalPhrase = word1 + ' ' + word2;
+
+          const key = `${originalPhrase.toLowerCase()}→${correctedWord}`;
+
+          if (corrections.has(key)) {
+            const suggestion = corrections.get(key)!;
+            suggestion.count++;
+            if (suggestion.examples.length < 3) {
+              suggestion.examples.push(
+                `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+              );
+              suggestion.timestamps.push(timestamp);
+            }
+          } else {
+            corrections.set(key, {
+              original: originalPhrase.toLowerCase(),
+              corrected: correctedWord,
+              count: 1,
+              category: 'proper-noun', // Multi-word compounds are often proper nouns
+              examples: [
+                `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+              ],
+              timestamps: [timestamp],
+            });
+          }
+        }
+      }
+    }
 
     // Simple word-by-word comparison
     const maxLength = Math.max(rawWords.length, correctedWords.length);
@@ -279,6 +376,7 @@ export function analyzeCorrections(
             suggestion.examples.push(
               `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
             );
+            suggestion.timestamps.push(timestamp);
           }
         } else {
           corrections.set(key, {
@@ -289,6 +387,7 @@ export function analyzeCorrections(
             examples: [
               `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
             ],
+            timestamps: [timestamp],
           });
         }
       }
@@ -398,6 +497,103 @@ export function analyzeCorrections(
   console.log(
     '\n💡 Focus on Biblical/Theological terms first - they have the highest ROI!\n',
   );
+
+  // Update tracker with corrections from this episode
+  if (episodeId) {
+    const {
+      loadTracker,
+      saveTracker,
+      updateTracker,
+      getHighConfidenceCandidates,
+    } = await import('./correction-tracker.js');
+
+    // Filter corrections to only track high-quality candidates
+    // We only want to track systematic transcription errors, not sentence reorganization
+    const highQualityCandidates = Array.from(corrections.values()).filter(
+      (c) => {
+        // Skip very different words (likely sentence restructuring, not transcription errors)
+        // Calculate Levenshtein distance as a ratio
+        const maxLen = Math.max(c.original.length, c.corrected.length);
+        const similarity = 1 - levenshteinDistance(c.original, c.corrected) / maxLen;
+
+        // Only track if words are similar (>40% similar) OR it's a biblical term OR proper noun
+        const isSimilar = similarity > 0.4;
+        const isImportantCategory = c.category === 'biblical-term' || c.category === 'proper-noun';
+
+        if (!isSimilar && !isImportantCategory) {
+          return false;
+        }
+
+        // Skip if it appears only once in this episode (not systematic enough)
+        if (c.count < 2) {
+          return false;
+        }
+
+        return true;
+      },
+    );
+
+    // Prepare corrections for tracker
+    const allCorrections = highQualityCandidates.map((c) => ({
+      original: c.original,
+      corrected: c.corrected,
+      category: c.category,
+      count: c.count,
+      examples: c.examples,
+      timestamps: c.timestamps,
+    }));
+
+    // Load, update, and save tracker
+    const tracker = await loadTracker();
+    updateTracker(tracker, episodeId, allCorrections);
+    await saveTracker(tracker);
+
+    // Show high-confidence candidates across all episodes
+    const highConfidence = getHighConfidenceCandidates(tracker, 50);
+
+    if (highConfidence.length > 0) {
+      console.log('\n⭐ HIGH-CONFIDENCE CANDIDATES (across all episodes):');
+      console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+      console.log(
+        '🎯 These corrections appear in multiple episodes and are strong',
+      );
+      console.log('   candidates for adding to src/config/corrections.ts\n');
+
+      for (const candidate of highConfidence.slice(0, 10)) {
+        // Top 10
+        const badge =
+          candidate.confidence >= 70
+            ? '🔥'
+            : candidate.confidence >= 60
+              ? '⚡'
+              : '✨';
+        console.log(
+          `${badge} ${candidate.original} → ${candidate.corrected} (${candidate.confidence}% confidence)`,
+        );
+        console.log(
+          `   Category: ${candidate.category} | Episodes: ${candidate.episodeCount} | Total: ${candidate.totalOccurrences}x`,
+        );
+        console.log(
+          `   Suggested rule: [["${candidate.original}"], "${candidate.corrected}"],`,
+        );
+        console.log(`   Example: ${candidate.examples[0]}`);
+        console.log('');
+      }
+
+      if (highConfidence.length > 10) {
+        console.log(`   ... and ${highConfidence.length - 10} more\n`);
+      }
+
+      console.log('💾 Tracker updated: data/correction-candidates.json');
+      console.log(
+        '📝 Run "bun run src/scripts/review-corrections.ts" to review and approve\n',
+      );
+    } else {
+      console.log(
+        '\n💾 Tracker updated: data/correction-candidates.json (no high-confidence candidates yet)\n',
+      );
+    }
+  }
 }
 
 /**
