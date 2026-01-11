@@ -1,0 +1,613 @@
+[00:00:01.840] Dan Beecher: There are, there are many beasts spoken of in Revelation and blah, blah, blah.
+[00:00:05.400] Dan Beecher: But what I was shocked by is how terrifying the angels were in, you know, just sort of to your point, like the good guys are horrifying in Revelation.
+[00:00:21.600] Dan McClellan: Hey, everybody, this is Dan McClellan.
+[00:00:23.320] Dan Beecher: And I'm Dan Beecher.
+[00:00:24.800] Dan McClellan: And welcome to the Data Over Dogma podcast where we try to combat the spread of misinformation about the study of the Bible and religion.
+[00:00:33.040] Dan McClellan: And we have a very special show for you today.
+[00:00:36.000] Dan McClellan: Our guest today is Bart Ehrman.
+[00:00:37.840] Dan McClellan: I will introduce Bart briefly and then we'll get into things.
+[00:00:42.480] Dan McClellan: Bart Ehrman earned his Ph.D. from Princeton Theological Seminary, I think in 1985.
+[00:00:49.040] Dan McClellan: Was that...
+[00:00:50.080] Bart Ehrman: That's right, the year 1985.
+[00:00:52.120] Dan Beecher: Now we're dating the guy.
+[00:00:53.080] Dan Beecher: We're just...
+[00:00:54.240] Dan Beecher: That's how we're launching.
+[00:00:55.240] Bart Ehrman: Huh?
+[00:00:55.560] Dan Beecher: Okay.
+[00:00:56.240] Dan McClellan: We're here with Bart Ehrman.
+[00:00:58.560] Bart Ehrman: I was only seven when I got it, though.
+[00:01:02.830] Dan McClellan: You're only a couple years older than me then.
+[00:01:05.390] Dan McClellan: And he studied textual criticism, the biblical canon, the Apocrypha, under the inimitable Bruce Metzger.
+[00:01:12.190] Dan McClellan: And now is the James A. Gray Distinguished Professor of Religious Studies at University of North Carolina, Chapel Hill, who will hopefully have better luck next year in the NCAA tournament.
+[00:01:24.190] Dan McClellan: And correct me if I'm wrong, UNC Chapel Hill, the first public university in the United States.
+[00:01:30.910] Bart Ehrman: The first to graduate a student.
+[00:01:32.910] Bart Ehrman: Yes, that's right.
+[00:01:33.670] Dan McClellan: The first to graduate a student.
+[00:01:34.810] Dan McClellan: All right.
+[00:01:35.210] Bart Ehrman: That's right.
+[00:01:35.730] Dan McClellan: So I imagine you're enjoying things very well there.
+[00:01:40.530] Dan McClellan: We appreciate your time very much and welcome to the show.
+[00:01:44.410] Dan McClellan: Now, for those who don't know Bart, he has published a number of books, including six that are on the New York Times bestseller list.
+[00:01:52.370] Dan McClellan: And I didn't look it up, but my personal favorite is How Jesus Became God.
+[00:01:56.690] Dan McClellan: Is that on the, is that among the six?
+[00:02:00.170] Bart Ehrman: That's one of the six.
+[00:02:01.090] Bart Ehrman: One of the chosen.
+[00:02:01.810] Dan McClellan: That's one of the six.
+[00:02:03.040] Dan McClellan: All right.
+[00:02:03.360] Dan McClellan: Congratulations.
+[00:02:04.160] Dan McClellan: And I believe the first was Misquoting Jesus, is that correct?
+[00:02:09.520] Bart Ehrman: Yeah.
+[00:02:09.920] Dan McClellan: Okay.
+[00:02:10.360] Dan McClellan: And that's the name of the podcast that you now have, that you are hosting with Megan Lewis, who is also known as Digital Hammurabi.
+[00:02:19.520] Dan McClellan: And you also have a blog, a subscription-based blog where all of the proceeds are donated to charity at ehrmanblog.org, and you also let us know you're going to be teaching a remote class this April 15th on the rapture and that that can be found at bartehrman.com, correct?
+[00:02:38.020] Bart Ehrman: That's correct.
+[00:02:39.020] Dan Beecher: Yeah.
+[00:02:39.380] Dan Beecher: Tell us a little bit about the, both the blog and the, the courses that you teach.
+[00:02:44.540] Bart Ehrman: Yeah, I'm happy to.
+[00:02:45.380] Bart Ehrman: The blog, you know, the blog I've been doing for almost 11 years now, I post five times a week, 1,200 or 1,400 words a day.
+[00:02:53.900] Bart Ehrman: I've done it for every week for 11 years.
+[00:02:57.260] Bart Ehrman: And it's on anything having to do with scholarship connected with the New Testament, historical Jesus, early Christianity, going, you know, anything related to it, Roman religion or Old Testament. People pay us a small subscription fee for it.
+[00:03:12.290] Bart Ehrman: And there are different levels.
+[00:03:14.410] Bart Ehrman: The more somebody pays, the more they get.
+[00:03:16.410] Bart Ehrman: But anybody pays the fee, gets...
+[00:03:18.690] Bart Ehrman: Gets my posts anyway, people can make comments.
+[00:03:21.490] Bart Ehrman: I answer every question I've ever gotten on this thing every day.
+[00:03:25.570] Bart Ehrman: And so it's a lot people can get for a small fee.
+[00:03:28.690] Bart Ehrman: And we give the fee to charities dealing with hunger and homelessness.
+[00:03:32.580] Bart Ehrman: This last year, we raised over $500,000 on this blog.
+[00:03:35.940] Dan Beecher: Wow, that's impressive.
+[00:03:37.860] Dan Beecher: That's amazing.
+[00:03:38.540] Bart Ehrman: Yeah.:03:38.900] Bart Ehrman: So I urge people to take a look because it all goes to a good cause and they get tons of information.
+[00:03:46.180] Bart Ehrman: The other thing I've got going is a business I run called Bart Ehrman Professional Services, where I do remote courses, lectures, and sometimes eight-lecture courses.
+[00:03:58.500] Bart Ehrman: And that's available at my website, bartehrman.com, and I am doing this one on April 15th.
+[00:04:04.040] Bart Ehrman: It connects with this book I just did on the book of Revelation.
+[00:04:07.800] Bart Ehrman: And the lecture is going to be "Where the Rapture Came From."
+[00:04:12.280] Dan Beecher: That's awesome.
+[00:04:15.320] Dan Beecher: Well, you know, since you brought it up, let's talk about this book.
+[00:04:19.800] Dan Beecher: This is the new book, Armageddon.
+[00:04:23.160] Dan Beecher: And I guess the subtitle is "What the Bible Really Says about the End."
+[00:04:29.910] Dan Beecher: And it opens with you talking about receiving a call from a reporter about the end of the world.
+[00:04:40.630] Dan Beecher: Talk about that a little bit.
+[00:04:41.830] Bart Ehrman: Yeah, it was a little surprising to me.
+[00:04:44.150] Bart Ehrman: Before I came to North Carolina to UNC Chapel Hill, I was teaching at Rutgers University in New Jersey.
+[00:04:51.110] Bart Ehrman: And so I got this position at Chapel Hill in 1988, and I moved here in August.
+[00:04:58.130] Bart Ehrman: And I knew it was going to be different in the South because I had been teaching New Jersey students, you know, and there were not many Bible thumpers up there.
+[00:05:06.850] Bart Ehrman: And I'm thinking, okay, here we go to the South.
+[00:05:09.650] Bart Ehrman: And I knew that North Carolina, UNC Chapel Hill, is not known as a bastion of conservative thought at all.
+[00:05:15.970] Bart Ehrman: But you know, it is in the Bible Belt.
+[00:05:18.210] Bart Ehrman: So I get here in August, a couple weeks after I finish unpacking my office.
+[00:05:21.690] Bart Ehrman: I'm in there doing some work and the phone rings.
+[00:05:24.830] Bart Ehrman: Local reporter.
+[00:05:25.950] Bart Ehrman: And the local reporter has heard that I'm a New Testament scholar who has moved to teach at Chapel Hill.
+[00:05:30.670] Bart Ehrman: And he's got an urgent question for me.
+[00:05:32.990] Bart Ehrman: He wants to know if it's true that Jesus is coming back next month.
+[00:05:40.030] Dan Beecher: That's amazing.
+[00:05:40.910] Bart Ehrman: Oh, boy.
+[00:05:41.550] Bart Ehrman: Here I am.
+[00:05:42.150] Bart Ehrman: Welcome to...
+[00:05:42.790] Dan Beecher: I want to know if that's true too.
+[00:05:45.390] Dan Beecher: That sounds like an important thing to know.
+[00:05:46.990] Bart Ehrman: It would be important to know.
+[00:05:48.270] Bart Ehrman: And it turns out there was a booklet in circulation that not too many people in New Jersey had heard about, but it was a big thing in the South.
+[00:05:54.590] Bart Ehrman: Two million copies of this book were in print.
+[00:05:57.530] Bart Ehrman: It was called "88 Reasons Why the Rapture Will Occur in 1988."
+[00:06:00.970] Bart Ehrman: This fellow, a guy named Edgar Whisenant, had written this booklet.
+[00:06:07.930] Bart Ehrman: He was a smart guy.
+[00:06:08.930] Bart Ehrman: He started out as a NASA rocket engineer, but he ended up writing books like this, where he had 88 reasons for thinking that Jesus was going to return to Earth sometime between September 21st and 23rd, the festival of Rosh Hashanah that year, and take his followers out of the world before the seven-year tribulation hit.
+[00:06:31.100] Bart Ehrman: And so this guy wanted to know if it was true.
+[00:06:34.620] Bart Ehrman: I said, "Yeah, no, it's not going to happen."
+[00:06:37.820] Dan Beecher: Turns out the Bible isn't rocket science.
+[00:06:40.460] Bart Ehrman: Well, exactly right.
+[00:06:42.060] Bart Ehrman: But the problem is it's not even in the Bible.
+[00:06:43.940] Bart Ehrman: This guy's just making stuff up, although he had biblical arguments for it and, you know, 88 arguments for this.
+[00:06:52.500] Bart Ehrman: And it had convinced a lot of people.
+[00:06:56.460] Bart Ehrman: And I had a student that semester, actually at Chapel Hill, I had a student whose parents had literally sold the farm.
+[00:07:03.660] Dan Beecher: Wow.
+[00:07:04.140] Bart Ehrman: Because they were convinced that just...
+[00:07:05.900] Dan Beecher: In anticipation of the Rapture.
+[00:07:08.940] Bart Ehrman: Yeah, yeah.
+[00:07:09.980] Bart Ehrman: So this often happens.
+[00:07:11.220] Bart Ehrman: When somebody sets a date, then the firm believers put their house in order, and if they've got family or something that is not going to be taken out of the world, they provide them with funds.them with funds.
+[00:07:24.470] Bart Ehrman: And so they give them, you know, sell the farm, give them the money, and then, then they'll take off to heaven.
+[00:07:29.870] Dan McClellan: Wow.
+[00:07:30.350] Bart Ehrman: So you mentioned my book starts with that.
+[00:07:32.149] Bart Ehrman: Because I'm trying to explain that how important this, this, this thing is, this idea that we know what's going to happen at the end has driven the interpretation of the Book of Revelation for about 200 years.
+[00:07:44.270] Bart Ehrman: And my book tries to explain one of the things it tries to, why that interpretation is wrong.
+[00:07:50.170] Bart Ehrman: You know, it's not just wrong that it's going to be September 21st to 23rd.
+[00:07:54.890] Bart Ehrman: That and whatever date you pick is just, it's, it's not wrong because you got a little detail wrong here or there.
+[00:08:00.450] Bart Ehrman: You picked the wrong verses.
+[00:08:01.610] Bart Ehrman: It's not wrong because of that.
+[00:08:03.370] Bart Ehrman: It's because it's the wrong way to interpret the Book of Revelation.
+[00:08:06.650] Bart Ehrman: And so that's why I try to show in my book.
+[00:08:08.170] Dan McClellan: And I, and I know that on my social media channels every time something happens, whether it is an earthquake in Turkey or the Euphrates River water level dropping significantly, or Russia and China forming an alliance to potentially create a 200 million man army, everyone sees these things as indications that the end is imminent and that everybody needs to get their house in order.
+[00:08:34.470] Dan McClellan: And I think it's interesting you mentioned that a student's family sold their farm.
+[00:08:38.550] Dan McClellan: Later on in the book you bring up the Great Disappointment which took place in the early 19th century and mentioned a bunch of people did very similar things, sold the farm, gave money to the poor or to family members who were not believers who they did, did not expect to be joining them in the heavens as soon as Jesus returned.
+[00:09:00.130] Dan McClellan: I think it's interesting that you make an interesting point about the Bible as a puzzle for some folks where the pieces get put together to create this idea.
+[00:09:12.690] Dan McClellan: You have the futurist interpretation and then some people think the only other option is a preterist interpretation, that you either think it's being fulfilled in the future or it was fulfilled in the past.
+[00:09:26.000] Dan McClellan: But I don't know if you've ever had this shared with you.
+[00:09:29.600] Dan McClellan: Frequently when people talk about the Bible as a puzzle, something that comes up is, well, you've got to look at the picture on the box.
+[00:09:35.280] Dan McClellan: Have you heard people say that to you?
+[00:09:36.840] Dan McClellan: And the correct way to interpret the Bible, but there is no box.
+[00:09:40.520] Dan McClellan: There is no picture on the box.
+[00:09:42.960] Dan McClellan: And I think one of the things that you don't say it explicitly, but throughout the book give this impression that a lot of times the picture that we think is on the box is really whatever is going to make the text most meaningful or most useful to us in whichever circumstances in which we find ourselves.
+[00:10:01.060] Dan McClellan: Could you talk a little bit about the difference between the picture on the box that people in the first or second century saw versus the picture on the box that people saw in the 19th and 20th centuries?
+[00:10:13.540] Bart Ehrman: Yeah, well, the first thing I'll say is that, I mean, you're right, that is how people treat the Book of Revelation and the Bible as a whole.
+[00:10:20.400] Bart Ehrman: Most people, of course, don't read the Bible at all.
+[00:10:22.720] Bart Ehrman: Most people.
+[00:10:23.840] Bart Ehrman: People who do read it pick and choose what parts they read.
+[00:10:29.520] Bart Ehrman: The strange way that people read the Bible to know what's going to happen in the future is that they don't read it like they'd read any other book.
+[00:10:37.360] Bart Ehrman: They'll take a verse from Zechariah and a verse from Ezekiel, then a verse from Matthew and a verse from Revelation, a book from Daniel, and they take these scattered verses and they put them all together and they end up.
+[00:10:49.820] Bart Ehrman: They end up, like, saying something coherent.
+[00:10:52.700] Bart Ehrman: But they.
+[00:10:53.380] Bart Ehrman: They.
+[00:10:53.860] Bart Ehrman: They've.
+[00:10:54.540] Bart Ehrman: They've.
+[00:10:55.580] Bart Ehrman: The Bible.
+[00:10:58.620] Bart Ehrman: The picture that they've assembled is the one that's in their head.
+[00:11:00.380] Bart Ehrman: It's not in the text.
+[00:11:00.380] Bart Ehrman: And it's a weird way to read a book because, you know, you wouldn't, you know, you wouldn't read, you know, Great Expectations that way or, you know, or a Harry Potter novel.l.
+[00:11:10.340] Bart Ehrman: You wouldn't, like, just take a line here and a line there and put it together and say, that's what the author meant.
+[00:11:16.220] Bart Ehrman: And, you know, even, even when I'm talking to a Christian, I, you know, if you think that God inspired the book of Revelation, or even if he inspired the entire Bible, it means he inspired a book.
+[00:11:26.760] Bart Ehrman: He didn't inspire a jigsaw puzzle.
+[00:11:29.400] Bart Ehrman: He could have.
+[00:11:30.760] Bart Ehrman: He could have set down the box, but he didn't do that.
+[00:11:33.160] Bart Ehrman: And so, and the problem, of course, is that then everybody, everybody who does this has a prediction about when it's going to come.
+[00:11:40.840] Bart Ehrman: And these days, most people avoid picking a date because it's just gotten too embarrassing, because every time somebody picks a date, you know they're wrong.
+[00:11:49.480] Bart Ehrman: And so they end up saying it's just going to be soon.
+[00:11:53.460] Bart Ehrman: But your question about the first and second, third centuries is really important because John was.
+[00:11:59.700] Bart Ehrman: Was writing.
+[00:12:00.500] Bart Ehrman: John of Patmos, the author of this book, was writing it in the first century, near the end of the first century, and he explicitly tells us that he's writing it to Christians of Asia Minor.
+[00:12:10.580] Bart Ehrman: There are seven churches in Asia Minor that he's addressing.
+[00:12:13.540] Bart Ehrman: And he names these churches.
+[00:12:15.220] Bart Ehrman: These are people who know him, and he's writing them a message.
+[00:12:19.940] Bart Ehrman: And that almost certainly means he thought that this book would be meaningful for them.
+[00:12:27.300] Bart Ehrman: He's not warning them about something that's going to happen.
+[00:12:29.580] Bart Ehrman: Two thousand years later, they're going to be dead.
+[00:12:32.820] Bart Ehrman: He's talking to them about something in their own day.
+[00:12:35.460] Bart Ehrman: And if you actually read Revelation by putting it in its historical context, it's completely clear this is not predicting what's going to happen in 2000 years.
+[00:12:44.100] Bart Ehrman: John's talking about stuff in his own time.
+[00:12:46.860] Bart Ehrman: And that can be.
+[00:12:47.380] Dan Beecher: Yeah, it has always felt, it has always felt a little weird that people keep talking about, like, you know, there are lots of people who believe that Armageddon will happen literally any day now.
+[00:12:58.140] Dan Beecher: But the problem with that is that it seems like some of the people who thought it was going to happen any day now were like Paul and Matthew and John the Revelator.
+[00:13:07.780] Dan Beecher: Like, any day now was, was then, not now.
+[00:13:11.860] Bart Ehrman: Right, yeah.
+[00:13:12.660] Bart Ehrman: So what, you know, people come up with ways of explaining it.
+[00:13:15.190] Bart Ehrman: Of course, I go all the way back to the Bible.
+[00:13:16.910] Bart Ehrman: The book of Second Peter explains why it hasn't happened yet.
+[00:13:20.030] Bart Ehrman: And Second Peter's explanation is that with the Lord, a day is as a thousand years and a thousand years as a day.
+[00:13:25.990] Bart Ehrman: And so you can't just measure soon by human standards.
+[00:13:29.830] Bart Ehrman: And when somebody tells me that, I say no, that might be right.
+[00:13:33.630] Bart Ehrman: So if you're saying Jesus is coming back in three days, then you can start looking for him in the year 5023.
+[00:13:42.990] Dan McClellan: And even the author of Second Peter there is riffing on, I believe it's in Psalm 90, verse 4, a thousand years as a day.
+[00:13:50.410] Dan McClellan: And then it says, or like a watch in the night or a three or four hour period.
+[00:13:54.890] Dan McClellan: So we got a handful of different ways, but that, that makes the Bible more dynamic.
+[00:13:58.530] Dan McClellan: You can find these different pieces to be able to put it together in whatever way you like.
+[00:14:05.770] Dan McClellan: Something that I appreciated you talking about was in the book the idea of power and domination.
+[00:14:13.290] Dan McClellan: And one of the things when I look at the authors of, for instance, Daniel, which is being written under pretty heavy persecution.
+[00:14:22.050] Dan McClellan: And this is another piece of apocalyptic literature that even in its own day, around the time when Revelation is being written, we have people rereading Daniel to try to make it relevant to their own day.
+[00:14:33.330] Dan McClellan: And when we have Revelation going, it's not the Seleucids who are oppressing them, it's the Romans at this point, these texts are being written under periods of heavy oppression and persecution, at least in their minds, if not in reality. Christianity, particularly in the United States in the 19th and 20th century, looking at these people who are under the boot of empire, saying, "Oh, well, this is about us."
+[00:15:09.110] Dan McClellan: This is for us to interpret.
+[00:15:11.190] Dan McClellan: Is there something that some folks are missing in not taking note of that power differential?
+[00:15:17.330] Bart Ehrman: Yeah, it's one of the points I try to make at the end of my book is that Revelation really is about turning the tide and making the people who are the enemy, the ones who are subjecting you, making them subject to you.
+[00:15:34.290] Bart Ehrman: And so it's a book about dominating the enemy and overthrowing the enemy, destroying the enemy, taking all the wealth from the enemy, taking all the power from the enemy.
+[00:15:44.280] Bart Ehrman: And that is a natural response for people who are being persecuted.
+[00:15:49.720] Bart Ehrman: I'll say that scholars are pretty well convinced these days that Revelation was probably written in the 90s when the Emperor Domitian was the ruler.
+[00:16:02.600] Bart Ehrman: And there's actually no evidence that he was sponsoring any kinds of persecutions.
+[00:16:06.600] Bart Ehrman: Revelation imagines that there are millions and millions of Christians being persecuted.
+[00:16:10.890] Bart Ehrman: For one thing, there aren't millions and millions of Christians, but there's not much evidence of there being widespread persecution at all.
+[00:16:17.250] Bart Ehrman: One of the interesting phenomena of Christianity broadly is that because of the way it began, Christians have always felt persecuted even when they're not.
+[00:16:30.370] Bart Ehrman: I have students at Chapel Hill, Christian students who insist that they're being persecuted and they're in North Carolina—Christianity rules the day in terms of the state legislature and it is massively run by Christian standards of things.
+[00:16:50.420] Bart Ehrman: And so I don't see much persecution going on.
+[00:16:53.060] Bart Ehrman: There are places in the world where Christians are being persecuted.
+[00:16:55.420] Bart Ehrman: So I don't want to deny that.
+[00:16:56.420] Bart Ehrman: I mean, there really are places they're seriously persecuted.
+[00:16:59.220] Bart Ehrman: But when you have a people who are more dominant and powerful complaining about being persecuted and thinking you've got to take over the power, there's something wrong with that.
+[00:17:10.180] Dan Beecher: It does feel as, you know, I'm an atheist and as someone who sort of observes American Christianity, man, it feels pretty backwards when the massive majority of our country is complaining about being persecuted, not having control, all of that sort of thing.
+[00:17:31.310] Dan Beecher: It can be a little nuts.
+[00:17:34.350] Dan McClellan: And I think that's probably one of the side effects of wanting to identify with the folks in the biblical text is we're on the other end of that power differential.
+[00:17:46.830] Dan McClellan: But we still need to identify with the people who are being persecuted.
+[00:17:50.670] Dan McClellan: And so there's a sense in which in order for that identification to hold, we need to find a way that we are being persecuted.
+[00:17:58.310] Dan McClellan: We need to find a way that we are the powerless, that there are forces of evil that are wielding more power than us, which unfortunately usually means we are looking for folks who are less powerful than us and finding ways to persecute or oppress them, which Christian nationalism is pretty notorious for.
+[00:18:18.630] Bart Ehrman: Well, it is.
+[00:18:19.870] Bart Ehrman: The huge irony is that that is precisely contrary to the teachings of Jesus himself.
+[00:18:27.510] Bart Ehrman: Jesus said to turn the other cheek.
+[00:18:29.430] Bart Ehrman: Jesus said to love your enemies.
+[00:18:32.310] Bart Ehrman: Jesus said, "Blessed are you when you're persecuted."
+[00:18:35.350] Bart Ehrman: He wasn't saying blessed are you when you're persecuted because, you know, next year you're going to be able to whack them over the head with a rod of iron.
+[00:18:42.790] Bart Ehrman: It's not that you're suffering now and you're blessed because you're going to wipe them out eventually.
+[00:18:49.110] Bart Ehrman: Jesus actually was in favor of non-violence in the face of persecution.
+[00:18:53.780] Bart Ehrman: And the author of the Revelation of John, John of Patmos, that author had just the opposite view.w.
+[00:18:59.940] Bart Ehrman: His view was that God, you know, Christ, yes, Christ suffered as the innocent victim.
+[00:19:05.300] Bart Ehrman: He was the Lamb who was slain.
+[00:19:06.659] Bart Ehrman: But he's.
+[00:19:07.180] Bart Ehrman: He's coming back and he's coming back for blood.
+[00:19:10.260] Bart Ehrman: And, and he does.
+[00:19:12.660] Bart Ehrman: And so John's got John.
+[00:19:14.660] Bart Ehrman: The book, the book of Revelation is filled with wrath and vengeance, with violence.
+[00:19:19.310] Bart Ehrman: And it's just.
+[00:19:20.190] Bart Ehrman: You don't find that in the teachings of Jesus.
+[00:19:23.150] Dan Beecher: Yeah, it's interesting that you say that.
+[00:19:25.430] Dan Beecher: I, because I do see a lot of association in modern America with, specifically with the rhetoric of Revelation.
+[00:19:37.150] Dan Beecher: The book itself.
+[00:19:38.070] Bart Ehrman: Yeah.
+[00:19:38.510] Dan Beecher: Now I, I got to admit, every time I look at Revelation, I am baffled.
+[00:19:45.240] Dan Beecher: I like, either there was some mushrooms growing on that Isle of Patmos that I didn't, I like.
+[00:19:52.240] Dan Beecher: I, it, it completely goes over my head every time.
+[00:19:55.720] Dan Beecher: Which is why I'm so grateful for your book because I, none of it makes any sense to me, but I look at sort of, you know, like things, things like in the, the 2016 election, I remember hearing Trump-supporting pastors, referring to Hillary Clinton as Jezebel.
+[00:20:12.450] Dan Beecher: And I remember, you know, people talking, using the word Babylon a lot and people, and you know, anytime a new technology comes up, people talk about the Mark of the Beast, whether it's, you know, barcodes or RFID or, you know, the COVID vaccine or whatever.
+[00:20:30.130] Dan Beecher: Do you think that there's something about the association with, specifically with Revelation that is informing American Christianity right now, sort of almost superseding other books of the Bible?
+[00:20:45.680] Bart Ehrman: Yeah, it's an irony because the Book of Revelation is not read much by people. Most people who read it either do the jigsaw puzzle thing because somebody's told them how to assemble the pieces, and so they just look for a piece here or there instead of actually sitting down and reading it.
+[00:21:01.200] Bart Ehrman: Those who do try to read it tend.
+[00:21:03.120] Bart Ehrman: Tend to be befuddled.
+[00:21:04.480] Bart Ehrman: Like, like you're saying you are, Dan.
+[00:21:06.320] Bart Ehrman: But let me say that my, my book is meant to show why it doesn't have to be that puzzling.
+[00:21:11.420] Bart Ehrman: That if you look at it as a historian does, if you have a historian explain it to you, it actually, it really does make sense.
+[00:21:18.220] Bart Ehrman: And it's not.
+[00:21:19.020] Bart Ehrman: It ends up not being that complicated once you see what the symbolism is really all about.
+[00:21:23.900] Bart Ehrman: But the real irony is that these people who don't read the book, many Christians in our country today take the ideology of the book and run with it, that it's all about dominating those who are weaker than you, and it's about asserting power, American power, Christian power.
+[00:21:42.300] Bart Ehrman: It's all about power.
+[00:21:43.820] Bart Ehrman: And that is true in the book of Revelation.
+[00:21:45.900] Bart Ehrman: It's all about power.
+[00:21:47.020] Bart Ehrman: And it's not true at all of Jesus.
+[00:21:49.980] Bart Ehrman: And so in my book, I ask, you know, whether Jesus would have recognized John of Patmos as one of his followers.
+[00:21:56.380] Bart Ehrman: I mean, John.
+[00:21:57.100] Bart Ehrman: John certainly thought he was an avid.
+[00:21:58.740] Bart Ehrman: He was an avid Christian.
+[00:22:00.220] Bart Ehrman: But I'm not sure Jesus would have recognized him because he's preaching just the opposite of what Jesus said.
+[00:22:05.510] Dan McClellan: Mm.
+[00:22:06.550] Dan McClellan: I wonder if you might talk for a moment about the canonicity of Revelation, because the, when we look at the early discussions, Revelation is frequently, if not outside the boundaries, it's at least kind of straddling the boundaries.
+[00:22:21.350] Dan McClellan: Do you—you know better than most—what were the concerns with Revelation?
+[00:22:26.070] Dan McClellan: Was it about this power struggle or were there other aspects of the Book of Revelation that contributed to a number of people saying, no, we're not interested in this?
+[00:22:35.850] Bart Ehrman: Yeah, it's, you know, I get asked this question a lot, like, why is Revelation in there anyway?
+[00:22:41.850] Bart Ehrman: Mainly by, mainly by either more liberal Christians or moderate Christians or, or non-Christians.
+[00:22:46.810] Bart Ehrman: Like, why did they let that one in?
+[00:22:48.410] Bart Ehrman: And for. Bart Ehrman: And for.
+[00:22:49.690] Bart Ehrman: The strange thing is that what strikes us as completely bizarre and weird and, like, unacceptable isn't what the problem was in the ancient world. For us, we read this thing, we read about all this blood and gore that God is inflicting.
+[00:23:06.910] Bart Ehrman: Christ is allowing, is having people tortured.
+[00:23:11.310] Bart Ehrman: Not just, like, killed, but tortured for months and all sorts of horrible catastrophes on earth that Christ is causing.
+[00:23:18.270] Bart Ehrman: And for us, we say, "Wow, I don't know. That just doesn't seem to fit."
+[00:23:20.830] Bart Ehrman: But in the ancient world, that wasn't the problem at all.
+[00:23:26.030] Bart Ehrman: So there are two problems in the ancient world.
+[00:23:28.510] Bart Ehrman: One was that a lot of scholars in the ancient world knew that this was not written by the same person who wrote the Gospel of John.
+[00:23:36.570] Bart Ehrman: His name is John.
+[00:23:38.090] Bart Ehrman: The irony is that the Book of Revelation claims to be written by somebody named John, but we don't call it John. We call it the Book of Revelation.
+[00:23:43.730] Bart Ehrman: We call it the Book of Revelation.
+[00:23:45.450] Bart Ehrman: The Gospel of John does not claim to be written by somebody named John, but we call it John.
+[00:23:53.130] Bart Ehrman: But already in the 200s, I guess it is about 280. No, 260.
+[00:24:01.100] Bart Ehrman: No, 260.
+[00:24:01.780] Bart Ehrman: In the year 260, there was a scholar named Dionysius from the city of Alexandria who wrote a treatise that we still have that demonstrates on linguistic grounds, on the basis of the language, that whoever wrote John did not write the Book of Revelation.
+[00:24:15.300] Bart Ehrman: They're different authors.
+[00:24:16.700] Bart Ehrman: And he's absolutely right about that.
+[00:24:18.460] Bart Ehrman: He uses arguments that today Greek scholars completely would agree with, do agree with. So they didn't think it was written by John, the disciple of Jesus.
+[00:24:30.170] Bart Ehrman: So that was a problem.
+[00:24:31.050] Bart Ehrman: But the bigger problem was that at the end of Revelation, after everybody who is not a strict follower of Jesus goes through horrendous suffering and is tortured and eventually killed and then thrown while still alive into a lake of burning sulfur.
+[00:24:50.090] Bart Ehrman: After all that happens, then the followers of Jesus are awarded this huge city of gold, the New Jerusalem, a 1,500-mile cube, completely gold, gates of pearl, foundations of jewels, etc.
+[00:25:05.540] Bart Ehrman: And it sounds like, you know, they just banquet the whole time and they're living a life of luxury now.
+[00:25:10.700] Bart Ehrman: The early Church Fathers did not like that.
+[00:25:13.660] Bart Ehrman: They didn't like the idea that eternal life was a big banquet because they thought that spiritual life was more important than physical pleasure.
+[00:25:22.400] Bart Ehrman: And they thought that this is advocating ultimate physical pleasure for all eternity.
+[00:25:26.960] Bart Ehrman: And so that's why they didn't like it and they wanted to exclude it.
+[00:25:31.360] Bart Ehrman: But it turns out, and the reason it gets in is another reason that nobody would expect.
+[00:25:37.360] Bart Ehrman: So in the 4th century, when they're really kind of cracking down to decide which books are scripture, in the 4th century, the big theological debate was: who is Christ in relationship to God?
+[00:25:51.450] Bart Ehrman: Everybody agreed that Christ was God, but in what sense is he God?
+[00:25:55.770] Bart Ehrman: Is he like a second-level divinity, that God created Christ at some point in the past, and so he's a second-level divinity who then himself created the world and came to die for the sins of the world, but he's subordinate to God the Father?
+[00:26:08.370] Bart Ehrman: I mean, nobody could be equal to God the Father.
+[00:26:10.170] Bart Ehrman: He's God the Father.
+[00:26:11.850] Bart Ehrman: Or are Christ and God completely equal?
+[00:26:15.430] Bart Ehrman: The same level?
+[00:26:16.310] Bart Ehrman: They're not identical.
+[00:26:17.510] Bart Ehrman: They are not identical.
+[00:26:18.630] Bart Ehrman: But are they equal in power and authority and knowledge and everything else?
+[00:26:22.390] Bart Ehrman: And that's the side that won.
+[00:26:24.390] Bart Ehrman: So that's the side that won the argument.
+[00:26:27.030] Bart Ehrman: And the Book of Revelation was useful because in one point, several points in Revelation, God identifies himself as the Alpha and the Omega, the beginning and the end.
+[00:26:37.910] Bart Ehrman: So he's everything, all-encompassing.
+[00:26:40.310] Bart Ehrman: And Christ identifies himself as the Alpha and the Omega, the beginning and the end.
+[00:26:46.620] Bart Ehrman: That was used to show that they're equal.rt Ehrman: And so the winning side on that argument about Christ as God valued Revelation because it helped them in their—
+[00:26:55.980] Bart Ehrman: Helped them make their point.
+[00:26:57.900] Dan McClellan: Okay, interesting.
+[00:26:58.820] Dan McClellan: So that is a valuable instrument in the Trinitarian debates.
+[00:27:05.100] Dan McClellan: So Arius is basically representing 2nd and 3rd century Christology, but becoming—
+[00:27:10.050] Dan McClellan: Becomes the scapegoat for all of this when it gets decided that, no, we need them to be absolutely equal.
+[00:27:16.930] Dan McClellan: Yeah, I wouldn't have thought about the rhetorical utility of Revelation for the Christological debates once we get—
+[00:27:24.690] Dan McClellan: Because by this point, we're beyond Nicaea.
+[00:27:27.610] Dan McClellan: I think Athanasius is one of the kind of tent poles of the inclusion of Revelation in the—
+[00:27:36.950] Dan McClellan: In the canon.
+[00:27:37.670] Dan McClellan: Right.
+[00:27:37.870] Dan McClellan: In what, 367?
+[00:27:39.990] Bart Ehrman: Yeah, so, yeah, so Athanasius, what—
+[00:27:42.190] Bart Ehrman: You know, and as a young man, he was at the Council of Nicaea.
+[00:27:44.670] Bart Ehrman: The problem is that when—
+[00:27:46.070] Bart Ehrman: When Arius was defeated at the Council of Nicaea, the defeat wasn't permanent.
+[00:27:50.390] Bart Ehrman: The debates went on throughout the fourth century.
+[00:27:52.510] Bart Ehrman: And, you know, in the middle of the fourth century, most people were Arian.
+[00:27:56.550] Bart Ehrman: So there continued to be these debates.
+[00:27:59.190] Bart Ehrman: And so—
+[00:28:00.470] Bart Ehrman: But yeah, Athanasius is the first one to list our 27 books, including Revelation, and just our 27 books. That didn't solve the problem.
+[00:28:09.830] Bart Ehrman: There were still people who objected to Revelation after that.
+[00:28:12.910] Bart Ehrman: Athanasius didn't decide the canon.
+[00:28:15.390] Bart Ehrman: He gave his judgment on it, but his judgment eventually prevailed.
+[00:28:19.710] Dan Beecher: So if I'm understanding, you're saying that because—
+[00:28:23.470] Dan Beecher: To some extent, because the argument that sort of prevailed in the discussion of the divinity of Jesus because it came out of Revelation, of course it had to then be included in the final canon.
+[00:28:39.930] Bart Ehrman: Well, what I would say is they didn't get it only from Revelation, but it's hard to find other books in the New Testament that are in our New Testament that say something that is fairly explicit about it.
+[00:28:52.250] Bart Ehrman: So Revelation wasn't the major argument in their—
+[00:28:56.070] Bart Ehrman: The major weapon in their arsenal, but it was something that was useful to that end, and so that's why they ended up approving of it.
+[00:29:04.390] Dan McClellan: Fascinating.
+[00:29:05.190] Dan Beecher: I wanted to go back to something that Dan made reference to before, but you have a whole chapter, I think, in your book about the history of apocalyptic predictions.
+[00:29:19.510] Dan Beecher: One of the—
+[00:29:20.030] Dan Beecher: I have a personal connection to apocalyptic predictions because Thank God I'm Atheist—
+[00:29:25.200] Dan Beecher: My other podcast—started when my friend Frank and I did a Rapture watch after Harold Camping made his prediction for the day of the Rapture.
+[00:29:38.920] Dan Beecher: And we did a live radio show about just sort of waiting for it to happen, checking in, making sure, seeing what happened, and that's kind of what launched our show.
+[00:29:50.340] Dan Beecher: So, you know, I have a deep love of people making, like, dated predictions about when it's going to happen because it's such a bold move, man.
+[00:30:02.420] Dan Beecher: It's like, damn, you're going hard on this thing.
+[00:30:06.740] Dan Beecher: And it's not new; it's not a new phenomenon.
+[00:30:09.940] Dan Beecher: So, take us through some of that history, some of the history of people making these projections.
+[00:30:16.940] Bart Ehrman: Yeah.
+[00:30:18.460] Bart Ehrman: For a long time there have been people who've done that.
+[00:30:22.420] Bart Ehrman: And for most of history—this comes as a surprise to most people, and especially evangelical Christians—I'd say this idea that it's predicting our future at all was not the main way of reading Revelation for the vast majority of its history.
+[00:30:39.340] Bart Ehrman: For 1800 years, it was very much a slim minority or marginal view.
+[00:30:43.870] Bart Ehrman: Almost everybody agreed it's not talking about our future.
+[00:30:47.070] Bart Ehrman: But those who did think it was talking about our future sometimes picked a date.
+[00:30:52.110] Bart Ehrman: One of the most famous—well, it's not famous.art Ehrman: People wouldn't know about it today.
+[00:30:56.070] Bart Ehrman: But in the 13th century, there were a group of Christians, Franciscan monks, who had insisted that it was going to happen in the year 1260.
+[00:31:07.070] Bart Ehrman: They had a really interesting argument they're basing their views on.
+[00:31:12.750] Bart Ehrman: There was a, there's a monk called Joachim of Fiore who had decided that the world was created by God and God is a Trinity.
+[00:31:20.670] Bart Ehrman: And so the world, the nature of God, is built into the world.
+[00:31:24.510] Bart Ehrman: And so the, the world consists of Father, Son and Spirit.
+[00:31:28.230] Bart Ehrman: And those are three periods of history.
+[00:31:30.350] Bart Ehrman: And the first period is the period of the Father, from Abraham, the father of the Jews, up to Jesus.
+[00:31:36.350] Bart Ehrman: That's the period of the Father.
+[00:31:37.630] Bart Ehrman: Then Jesus comes, and you have the period of the Son.
+[00:31:39.900] Bart Ehrman: And then at the Second Coming, you have the period of the Spirit.
+[00:31:43.340] Bart Ehrman: Well, the period of the Father you can date because in the Gospel of Matthew you have a genealogy of Jesus from Abraham down to Jesus, and it's 42 generations.
+[00:31:53.260] Bart Ehrman: And Joachim said, okay, a generation in the Bible, he said, was 30 years.
+[00:31:57.900] Bart Ehrman: So 42 times 30.
+[00:31:59.260] Bart Ehrman: Okay, that's 1,260 years.
+[00:32:01.980] Bart Ehrman: And so after Jesus' birth, this follower, Joachim of Fiore, said, well, that's going to be 1,260 years too.
+[00:32:09.650] Bart Ehrman: So it's going to be in the year 1260.
+[00:32:11.650] Bart Ehrman: And so, you know, they were.
+[00:32:12.930] Dan Beecher: You can't argue with math.
+[00:32:14.250] Bart Ehrman: You can't argue with math.
+[00:32:15.610] Bart Ehrman: And so it's been especially so since the 19th century when, when evangelicals generally think that it's predicting our end, because then you get a lot of very interesting predictions.
+[00:32:25.090] Bart Ehrman: And Harold Camping is.
+[00:32:26.890] Bart Ehrman: Is probably.
+[00:32:28.370] Bart Ehrman: He's one of the few recent ones who actually picks a date.
+[00:32:31.450] Bart Ehrman: But what a lot of people don't know is that Harold Camping predicted a lot of dates in 1994.
+[00:32:38.820] Bart Ehrman: He wrote a very large book that, that showed exactly when it was going to happen in 1994, I think, what the date was like in March or something, March 21st or something.
+[00:32:48.100] Bart Ehrman: And then.
+[00:32:48.580] Bart Ehrman: And then it didn't happen.
+[00:32:49.460] Bart Ehrman: So he chose it then for September and then he chose it for October.
+[00:32:52.820] Bart Ehrman: And finally he just gave up.
+[00:32:54.460] Bart Ehrman: And then years later, he started this thing with 2011.
+[00:32:57.540] Bart Ehrman: And, you know, and again he kept changing the dates until finally when, when it didn't happen, he finally just gave it up and he admitted that he had been wrong and that he had sinned against God and he died a disappointed man two years later.
+[00:33:13.150] Bart Ehrman: So he.
+[00:33:13.870] Bart Ehrman: But he's one of.
+[00:33:14.750] Bart Ehrman: Almost nobody gives it up, you know.
+[00:33:17.310] Dan Beecher: Right.
+[00:33:17.670] Bart Ehrman: They reset the date.
+[00:33:19.550] Dan Beecher: Well, and that's, that's a weird thing about, you know, you hear about a lot of these and, you know, the believers go all in with them.
+[00:33:28.680] Dan Beecher: You know what I mean?
+[00:33:29.880] Dan Beecher: Let's all go climb up the hill and, and watch it happen.
+[00:33:35.400] Dan Beecher: And then when it doesn't happen, they're not dissuaded.
+[00:33:40.040] Bart Ehrman: Oh, quite the opposite.
+[00:33:41.320] Dan Beecher: They.
+[00:33:41.680] Dan Beecher: They pivot to something else.
+[00:33:43.640] Dan Beecher: So talk about that a little bit.
+[00:33:44.840] Bart Ehrman: So this is a very interesting phenomenon that, that social psychologists have studied.
+[00:33:51.000] Bart Ehrman: There's a book that your listeners really, if they can get a hold of this book, they should get a hold of it.
+[00:33:56.080] Bart Ehrman: It's called When Prophecy Fails, and it started out by, I think, Dan, you mentioned the Great Disappointment in the 1840s, in 1844, they thought they knew the date and it was going to happen, and it didn't happen.
+[00:34:10.580] Bart Ehrman: And people had sold their farms and things; these social psychologists were interested in the fact that when it didn't happen in 1844, that the group that had said it was going to happen generated other groups.
+[00:34:24.300] Bart Ehrman: There were like 30 different religious movements that started from that, including the Jehovah's Witnesses and the Seventh-day Adventists, who still think the end's coming soon.soon.
+[00:34:33.990] Bart Ehrman: And these social psychologists were not Christians.
+[00:34:36.310] Bart Ehrman: They were just interested.
+[00:34:37.910] Bart Ehrman: Why don't they just give up?
+[00:34:39.750] Bart Ehrman: And so the head of this group was a guy named Leon Festinger, and they decided to figure out what happens when something like that happens.
+[00:34:47.150] Bart Ehrman: And they decided not to follow a religious group but to follow a UFO cult.
+[00:34:52.820] Bart Ehrman: A group that thought that the Martians were going to come by on December 21st or whatever the date was, 1950... something.
+[00:34:59.100] Bart Ehrman: Something.
+[00:35:00.180] Bart Ehrman: The, the, you know, the, the spaceships were coming to take us off the planet.
+[00:35:04.340] Bart Ehrman: They had a specific date when it was going to happen.
+[00:35:08.260] Bart Ehrman: And what Leon Festinger was interested in is suppose you've got a group that has this expectation that is really quite clear and definite and actionable, by which he meant, like, people give up their jobs because they know it's going to happen.
+[00:35:23.240] Bart Ehrman: And so they really take, they invest everything in it.
+[00:35:26.320] Bart Ehrman: What happens when they've got...
+[00:35:27.680] Bart Ehrman: You got a group that does that and then it doesn't happen.
+[00:35:31.360] Bart Ehrman: What happens to the group?
+[00:35:33.759] Bart Ehrman: And they had workers infiltrate this UFO cult to see what was going to happen when it didn't happen.
+[00:35:40.640] Bart Ehrman: And what happened was...
+[00:35:43.770] Bart Ehrman: Well, what happened was Leon Festinger invented the term cognitive dissonance.
+[00:35:48.810] Bart Ehrman: Cognitive dissonance is when you've got a cognition, you've got an idea in your head that is dissonant with reality, it's contrary to reality.
+[00:35:57.050] Bart Ehrman: And in this case, you can prove that the idea is wrong because it didn't happen.
+[00:36:01.850] Bart Ehrman: And what he showed happens is, in this group and other groups like it, when you're proved wrong, you double down on it and you, you reset the date, but you become more missionary and more fervent.
+[00:36:15.860] Bart Ehrman: And the psychological logic is if you get a lot more people to agree with you, then it resolves the dissonance you're experiencing from knowing you're wrong because it doesn't seem like you're wrong because so many people agree with you.
+[00:36:28.740] Bart Ehrman: And so it's a psychological phenomenon.
+[00:36:30.700] Bart Ehrman: And it happens with these, with these fundamentalist groups as well.
+[00:36:33.860] Bart Ehrman: They just...
+[00:36:34.820] Bart Ehrman: And so that, that's, that's what happens.
+[00:36:36.390] Bart Ehrman: You, you get more committed, more evangelistic about it once it doesn't happen.
+[00:36:41.230] Dan McClellan: Now, in my, my Ph.D. dissertation, I did a lot of work with the cognitive science of religion.
+[00:36:45.750] Dan McClellan: And this is something that I've, I've looked into quite a bit.
+[00:36:48.790] Dan McClellan: It's a fascinating phenomenon.
+[00:36:51.150] Dan McClellan: A lot of people think of religious belief as about kind of binary facts, true or false.
+[00:36:55.470] Dan McClellan: And that's, I would say, largely a product of the way the Reformation has become embedded within our intellectual history.
+[00:37:03.960] Dan McClellan: But religion tends to be about so much more than that.
+[00:37:06.880] Dan McClellan: About community, about belonging, about all kinds of different things.
+[00:37:10.920] Dan McClellan: And we have these kind of evolutionarily installed preferences for these things.
+[00:37:18.560] Dan McClellan: A lot of the itches that religion and other social identities can scratch.
+[00:37:23.880] Dan McClellan: And I talk a lot on my channel about how apologists approach contradictions because a lot of that is about not showing that a contradiction is not there, but just trying to gin up the tiniest little sliver of "it's not impossible."
+[00:37:39.990] Dan McClellan: If I can imagine scenarios that make it so these two things can be true at the same time, no matter how implausible, as long as they're not physically impossible, then I'm protected.
+[00:37:51.270] Dan McClellan: I'm okay.
+[00:37:51.870] Dan McClellan: I don't have to acknowledge that contradiction, which I argue is a way for our minds to kind of wrap that belief in inerrancy or univocality or whatever in this little security blanket so it does not have to confront the reality of, of a belief that is not in agreement with the data out there in the world.
+[00:38:12.150] Bart Ehrman: Yeah, a lot of us who were fundamentalists understand how that works quite well.
+[00:38:15.910] Bart Ehrman: And it's, it's a, it's a strange thing.
+[00:38:18.510] Bart Ehrman: When I tell, when I tell people that, I tell people that fundamentalist Christians are actually more, more children of the Enlightenment than almost anybody because they actually believe in objectivity and they think they can objectively demonstrate things.bjectively demonstrate things.
+[00:38:31.560] Bart Ehrman: And sometimes you just need that little thing to make it possible, and that's okay then.
+[00:38:37.480] Dan McClellan: Yeah.
+[00:38:38.120] Dan McClellan: And I think that a lot of that is based on the fact that, well, Protestant Christianity has had to respond to the rationalism of the Enlightenment and they've had to adopt the tools of the Enlightenment to show the Enlightenment that we can hang well and meet you on your own terms.
+[00:38:56.980] Dan McClellan: And then it just took it over because.
+[00:38:59.260] Bart Ehrman: In universities today, I mean, this idea of objectivity is people just kind of roll their eyes, you know, because.
+[00:39:05.700] Bart Ehrman: But, but fundamentalists are still there, man.
+[00:39:07.740] Bart Ehrman: They're, they're.
+[00:39:08.260] Bart Ehrman: With the Enlightenment, we're going to improve things.
+[00:39:10.820] Bart Ehrman: We got objective evidence.
+[00:39:13.700] Dan McClellan: Let's go back to when rational religion and revealed religion were polar opposites.
+[00:39:19.180] Dan McClellan: Which side are you going to come down on?
+[00:39:20.740] Dan McClellan: That's right, yeah.
+[00:39:23.220] Dan McClellan: I wanted to, I wanted to raise a question.
+[00:39:25.620] Dan McClellan: It's something you discuss briefly in the book.
+[00:39:28.820] Dan McClellan: Another thing that I find myself combating a lot on social media is antisemitism.
+[00:39:35.620] Dan McClellan: And one of the things that I have kind of dug my heels into is pushing back against this bad God of the Old Testament, good God of the New Testament ideology, which is rooted in antisemitism and can be very, very harmful to folks today.
+[00:39:54.720] Dan McClellan: I've got a lot of friends, I'm sure you know, folks in the academy as well, who are affected by this kind of stuff.
+[00:40:00.880] Dan McClellan: And you talk a bit in the book about there is a violent God in the Old Testament.
+[00:40:05.920] Dan McClellan: There's a loving God too.
+[00:40:07.240] Dan McClellan: There's also a violent God.
+[00:40:08.440] Dan McClellan: But to suggest that there's not also, perhaps an even more violent God in the New Testament is to misread the New Testament.
+[00:40:16.610] Dan McClellan: And I would argue that there is no God of the Bible, there's no God of the Old Testament, there's no God of the New Testament because there are numerous different profiles, numerous different representations of deities, some of them loving, some of them hateful, some of them violent.
+[00:40:31.370] Dan McClellan: Would you mind sharing your thoughts on how your discussion in the book resonates with what's going on in the world with that kind of antisemitic framework?
+[00:40:42.390] Bart Ehrman: Yeah, I think it's the common line.
+[00:40:47.350] Bart Ehrman: Right.
+[00:40:48.790] Bart Ehrman: The God of the Old Testament is the God of wrath and the God of the New Testament is the God of love.
+[00:40:54.150] Bart Ehrman: Whenever anybody tells me that, I just ask them, have you read Revelation lately?
+[00:40:59.350] Bart Ehrman: Love.
+[00:41:00.470] Bart Ehrman: The term love of God never occurs in the book of Revelation.
+[00:41:05.110] Bart Ehrman: God is never said to love anybody.
+[00:41:08.080] Bart Ehrman: In Revelation, the words that are used frequently are wrath and vengeance and revenge and blood and violence.
+[00:41:18.240] Bart Ehrman: And these are the terms that are used.
+[00:41:21.280] Bart Ehrman: Revelation says it's about the wrath of God and the wrath of his Lamb.
+[00:41:26.000] Bart Ehrman: That's Jesus.
+[00:41:27.520] Bart Ehrman: So it's a very wrathful book.
+[00:41:29.760] Bart Ehrman: And so I do think that it's really far too simplistic to talk about the Old Testament God and the New Testament God.
+[00:41:36.850] Bart Ehrman: And, and you're absolutely right.
+[00:41:38.770] Bart Ehrman: It's not as if every author of every book in the Old Testament has the same view of God.
+[00:41:45.330] Bart Ehrman: Quite the contrary.
+[00:41:46.850] Bart Ehrman: These are, you know, in English it's 39 books written by a number of different authors from a number of different sources.
+[00:41:53.170] Bart Ehrman: And there are various depictions of the ultimate divinity in the Hebrew Bible.
+[00:41:59.250] Bart Ehrman: And, and in the New Testament there's not a consistent view there either.
+[00:42:03.570] Bart Ehrman: But this is rooted—this idea that the New Testament is the God of love—is that the God of the Old Testament is this harsh God who wants to hurt you.
+[00:42:11.970] Bart Ehrman: That's the Jewish God.
+[00:42:13.570] Bart Ehrman: And the God of the New Testament is the God of love and mercy.
+[00:42:16.290] Bart Ehrman: He wants to save you.
+[00:42:17.969] Bart Ehrman: Then you say, well, okay, what about Revelation?290] Bart Ehrman: Well, people are doing it to themselves.
+[00:42:23.010] Bart Ehrman: They decided to reject God.
+[00:42:24.490] Bart Ehrman: And so it's not God's fault, it's their fault because they rejected Him.
+[00:42:28.590] Bart Ehrman: Well, okay, but, you know, if you reject God and suppose God wants to destroy everything that's opposed to him, okay, just suppose there is a God like that.
+[00:42:38.030] Bart Ehrman: Why doesn't he just zap them with a cosmic ray or something, you know, give everybody a sudden coronary?
+[00:42:43.390] Bart Ehrman: You know, in the Book of Revelation, there's one of the many, many catastrophes that hits the Earth is that heaven releases these locusts out of this bottomless pit.
+[00:42:57.250] Bart Ehrman: That.
+[00:42:57.890] Bart Ehrman: That they.
+[00:42:59.490] Bart Ehrman: They have the sting of scorpions and they're flying locusts, and they sting everybody who's not a strict follower of Jesus.
+[00:43:07.250] Bart Ehrman: And this sting torments people for five months in excruciating pain.
+[00:43:12.610] Bart Ehrman: And they're not allowed to die.
+[00:43:15.570] Bart Ehrman: They can only suffer for five months.
+[00:43:18.450] Bart Ehrman: They can't even kill themselves to put an end to the pain this is brought by Christ.
+[00:43:24.510] Bart Ehrman: And, you know, why do you need the torture?
+[00:43:27.790] Bart Ehrman: Why can't you just.
+[00:43:28.750] Bart Ehrman: Why can't you just kill everybody?
+[00:43:31.470] Dan Beecher: It's funny, when I first delved into Revelation, I.
+[00:43:35.470] Dan Beecher: You know, I'd heard terms like, you know, the beasts and all the stuff.
+[00:43:38.990] Dan Beecher: And, yes, there are.
+[00:43:40.030] Dan Beecher: There are many beasts spoken of in Revelation and blah, blah, blah.
+[00:43:43.270] Dan Beecher: But what I was shocked by is how terrifying the angels were in.
+[00:43:48.630] Dan Beecher: You know, just sort of to your point, like, the good guys are horrifying.
+[00:43:54.950] Bart Ehrman: Yeah.
+[00:43:55.390] Bart Ehrman: In Revelation, well, in chapter 14, Christ comes out of a.
+[00:43:59.270] Bart Ehrman: Comes out of heaven with a sickle in his hand and another angel comes out with a sickle.
+[00:44:03.750] Bart Ehrman: And they're told to harvest the earth.
+[00:44:06.470] Bart Ehrman: And so this angel harvests the earth.
+[00:44:09.150] Bart Ehrman: You think, okay, he's chopping down some grapevines because it talks about the vineyard being harvested, and.
+[00:44:14.950] Bart Ehrman: But then the grapes are thrown into the vat of the winepress of God's wrath.
+[00:44:22.460] Bart Ehrman: And it turns out it's blood.
+[00:44:24.380] Bart Ehrman: These are humans.
+[00:44:25.420] Bart Ehrman: And the blood flows for 200 miles as high as a bridle of a horse.
+[00:44:32.460] Bart Ehrman: That's the violence brought about by Christ and his angel.
+[00:44:35.820] Bart Ehrman: And so it's not the beast doing this.
+[00:44:37.580] Bart Ehrman: This is Christ doing it and his angels doing it.
+[00:44:39.900] Bart Ehrman: Oh, man, that's bloody 200 miles up to.
+[00:44:43.340] Bart Ehrman: I mean, whoa, that's a lot of blood.
+[00:44:46.880] Dan McClellan: Well, and that's throwing everybody in a, in a big stone pit and then stomping on them.
+[00:44:51.280] Bart Ehrman: Yeah.
+[00:44:52.240] Dan McClellan: If, if we're using the same idea from antiquity of the winepress.
+[00:44:56.880] Bart Ehrman: Yeah, yeah.
+[00:44:58.000] Bart Ehrman: People are the.
+[00:44:58.800] Bart Ehrman: People are the grapes.
+[00:45:01.200] Dan Beecher: So what's, what's the takeaway?
+[00:45:02.600] Dan Beecher: What, what should we be taking away both from Revelation as a book and sort of the, the, the.
+[00:45:09.720] Dan Beecher: The biblical idea of Armageddon.
+[00:45:11.960] Dan Beecher: And what should we be taking away from that?
+[00:45:14.640] Dan Beecher: And then how, how should we.
+[00:45:18.680] Dan Beecher: As a modern reader, you know, we're not, You're.
+[00:45:25.400] Dan Beecher: I hear the.
+[00:45:26.480] Dan Beecher: You know, this isn't a Ouija board.
+[00:45:28.440] Dan Beecher: It isn't a puzzle, a jigsaw puzzle.
+[00:45:32.600] Dan Beecher: What is it?
+[00:45:33.480] Dan Beecher: Where.
+[00:45:33.800] Dan Beecher: What is our takeaway from this?
+[00:45:34.960] Bart Ehrman: Okay, so most of my book is trying to explain what Revelation really is.
+[00:45:39.240] Bart Ehrman: And most of my books are, you know, I'm not trying to trash Revelation in my book.
+[00:45:43.550] Bart Ehrman: I'm trying to show what it really is.
+[00:45:45.590] Bart Ehrman: And the reason people get mystified by it is because they don't understand that this, this kind of book was a common form of writing in.
+[00:45:55.110] Bart Ehrman: Among Jews and Christians in the ancient world.
+[00:45:57.750] Bart Ehrman: Today, when somebody reads the Book of Revelation, they read it.0:46:00.630] Bart Ehrman: So bizarre, so weird.
+[00:46:01.910] Bart Ehrman: So you just can't understand all this metaphor and the symbolism.
+[00:46:05.150] Bart Ehrman: What in the world's going on here?
+[00:46:06.510] Bart Ehrman: It just blows your mind.
+[00:46:07.830] Bart Ehrman: And so evangelicals read it or fundamentalists read it and say, this is so weird.
+[00:46:12.210] Bart Ehrman: No human could have come up with this.
+[00:46:13.290] Bart Ehrman: This must be inspired by God.
+[00:46:15.250] Bart Ehrman: So that's what I.
+[00:46:16.690] Bart Ehrman: So.
+[00:46:17.090] Dan Beecher: But, but those people have never been to Burning Man.
+[00:46:19.810] Bart Ehrman: Yeah, well, that's right.
+[00:46:20.850] Bart Ehrman: They haven't.
+[00:46:21.490] Bart Ehrman: Yeah.
+[00:46:21.930] Bart Ehrman: The funny thing.
+[00:46:22.570] Bart Ehrman: Yeah, okay, so.
+[00:46:23.530] Bart Ehrman: So the, the thing is that books like this were written in the ancient world.
+[00:46:28.610] Bart Ehrman: And so what historians do is they, they put Revelation within its genre.
+[00:46:33.330] Bart Ehrman: And so if you, you know, somebody reads a science fiction novel, they pretty much know how it works.
+[00:46:38.780] Bart Ehrman: If you had given a science fiction novel to somebody living 500 years ago, they wouldn't be able to make heads or tails of it.
+[00:46:44.700] Bart Ehrman: But for modern readers, it's not a problem.
+[00:46:46.500] Bart Ehrman: You're just used to that kind of literature.
+[00:46:48.220] Bart Ehrman: And, you know, it's not like a short story and it's not like a biography and not like a limerick poem.
+[00:46:52.940] Bart Ehrman: Every one of these are genres of literature.
+[00:46:55.420] Bart Ehrman: And authors who write in a genre know what's expected within the genre, and the readers know what the author's doing within the genre.
+[00:47:03.020] Bart Ehrman: So the Book of Revelation is a part of a genre.
+[00:47:05.500] Bart Ehrman: It's.
+[00:47:06.050] Bart Ehrman: The genre is called apocalypse.
+[00:47:07.970] Bart Ehrman: We have a number of apocalypses, Jewish and Christian apocalypses.
+[00:47:11.250] Bart Ehrman: And so we can tell how they work.
+[00:47:13.170] Bart Ehrman: And if you see how they work, it's not that hard to interpret the Book of Revelation. They always work to explain that there's a lot of evil in the world.
+[00:47:23.450] Bart Ehrman: There are powers of evil in the world, but God is going to intervene and destroy the evil and reward the righteous.
+[00:47:30.530] Bart Ehrman: And so there will be a good outcome for this thing.
+[00:47:32.810] Bart Ehrman: And so these books are generally meant to be books of hope for people who are on the side of the author.
+[00:47:40.520] Bart Ehrman: And they are that.
+[00:47:41.560] Bart Ehrman: And so Revelation is not a jigsaw puzzle.
+[00:47:45.320] Bart Ehrman: But the other part of my book, as I try to argue, it's also not really a book of hope for the vast majority of the human race, because the vast majority of the human race will be brought back from the dead if they've died, or they'll come alive to the, to the judgment seat.
+[00:48:02.410] Bart Ehrman: And most of them will be thrown alive into a lake of burning sulfur where, by the way, they'll be destroyed.
+[00:48:09.530] Bart Ehrman: They're not going to be tortured forever.
+[00:48:11.530] Bart Ehrman: They're killed in this lake of fire.
+[00:48:13.770] Bart Ehrman: That's how they die.
+[00:48:16.250] Bart Ehrman: So the only people who escape are the very devoted followers of Christ who are called the slaves of God.
+[00:48:24.570] Bart Ehrman: God doesn't love them.
+[00:48:25.450] Bart Ehrman: They're his minions.
+[00:48:26.290] Bart Ehrman: They're his slaves.
+[00:48:27.690] Bart Ehrman: And the thing is, it's not even all Christians.
+[00:48:30.940] Bart Ehrman: Every pagan and every non-believing, non-Christian Jew gets thrown in the lake.
+[00:48:34.980] Bart Ehrman: And a lot of Christians do too.
+[00:48:38.940] Bart Ehrman: So what do we make of this?
+[00:48:40.580] Bart Ehrman: Well, I think if you give John, if you want to kind of cut him some slack, you say he's just trying to show that in the end God will triumph.
+[00:48:49.900] Bart Ehrman: And that can be a source of hope for people who are suffering.
+[00:48:53.340] Bart Ehrman: And so that part can be good.
+[00:48:56.170] Bart Ehrman: But the imagery he uses to get there is not good.
+[00:48:59.450] Bart Ehrman: And it's a book, I think, that runs contrary to the actual message of Jesus himself.
+[00:49:07.930] Bart Ehrman: And so I think people have to choose whether they're going to accept this ideology of violence or not, because Jesus is against it and John of Patmos is for it.
+[00:49:19.450] Dan Beecher: Well, I think that is a wonderful place to end our discussion.d our discussion.
+[00:49:24.180] Dan Beecher: Bart Ehrman, thank you so much for coming on the show today.
+[00:49:27.260] Dan Beecher: We really appreciate having you here.
+[00:49:28.820] Bart Ehrman: It's been my pleasure.
+[00:49:29.660] Bart Ehrman: Thanks.
+[00:49:29.980] Bart Ehrman: Thanks for having me.
+[00:49:32.100] Dan McClellan: Thank you for your time.
+[00:49:32.900] Dan McClellan: I appreciate it.
+[00:49:34.500] Dan McClellan: Thank you everybody, for listening.
+[00:49:36.140] Dan McClellan: Hope you've enjoyed this episode of the Data Over Dogma podcast.
+[00:49:40.580] Dan McClellan: As usual, if you'd like to get in touch with us, you can reach us at contact@dataoverdogmapod.com and we will see you all around.
