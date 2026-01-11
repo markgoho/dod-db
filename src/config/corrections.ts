@@ -33,5 +33,11 @@ export const globalCorrections: CorrectionRule[] = [
   // Common theological terms
   [['cannon'], 'canon'], // Will be reviewed in Pass 2 for context
   [['unprovidenced'], 'unprovenanced'], // Episode 3: Lot's wife story
-  [["tick tock"], "TikTok"], // proper-noun - confidence: 45%
+  [['tick tock'], 'TikTok'], // proper-noun - confidence: 45%
+  [['century ce'], 'century CE'], // capitalization - confidence: 45%
+  [['Masoretic text'], 'Masoretic Text'], // capitalization - confidence: 25%
+  [['pastoral epistles'], 'Pastoral Epistles'], // capitalization - confidence: 20%
+  [['Kaiser'], 'Caesar'], // spelling - confidence: 20%
+  [['Origin'], 'Origen'], // spelling - confidence: 20%
+  [['Migdol'], 'Migdal'], // spelling - confidence: 20%
 ];

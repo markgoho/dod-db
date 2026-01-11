@@ -8,7 +8,8 @@ interface CorrectionSuggestion {
   corrected: string;
   count: number;
   category: 'capitalization' | 'spelling' | 'proper-noun' | 'biblical-term';
-  examples: string[]; // Store a few example contexts
+  examples: string[]; // Store raw text example contexts
+  correctedExamples: string[]; // Store corrected text examples
   timestamps: string[]; // Store timestamps for examples
 }
 
@@ -267,50 +268,62 @@ export async function analyzeCorrections(
     const rawWords = rawText.split(/\s+/);
     const correctedWords = correctedText.split(/\s+/);
 
-    // Detect multi-word merges (e.g., "tick tock" → "tiktok")
-    for (let j = 0; j < correctedWords.length; j++) {
-      const correctedWordOriginal = correctedWords[j]?.replace(
-        /[.,!?;:()[\]"]/g,
-        '',
-      );
-      if (!correctedWordOriginal) continue;
-      const correctedWord = correctedWordOriginal.toLowerCase();
+    // Skip if sentence length changed at all (even 1 word causes misalignment)
+    // Word-by-word comparison only works when word count is identical
+    if (rawWords.length !== correctedWords.length) {
+      continue;
+    }
 
-      // Check if this corrected word matches a 2-word phrase in raw
-      if (j < rawWords.length - 1) {
-        const word1 = rawWords[j]?.replace(/[.,!?;:()[\]"]/g, '');
-        const word2 = rawWords[j + 1]?.replace(/[.,!?;:()[\]"]/g, '');
-        if (!word1 || !word2) continue;
+    // Detect multi-word patterns
+    for (let j = 0; j < correctedWords.length - 1; j++) {
+      const correctedWord1Orig = correctedWords[j]?.replace(/[.,!?;:()[\]"]/g, '');
+      const correctedWord2Orig = correctedWords[j + 1]?.replace(/[.,!?;:()[\]"]/g, '');
+      const rawWord1Orig = rawWords[j]?.replace(/[.,!?;:()[\]"]/g, '');
+      const rawWord2Orig = rawWords[j + 1]?.replace(/[.,!?;:()[\]"]/g, '');
 
-        const twoWordRaw = (word1 + word2).toLowerCase();
+      if (!correctedWord1Orig || !correctedWord2Orig || !rawWord1Orig || !rawWord2Orig) continue;
 
-        // If they match, this is a multi-word merge
-        if (
-          twoWordRaw === correctedWord &&
-          correctedWord.length >= 5 &&
-          !COMMON_WORDS.has(correctedWord)
-        ) {
-          const originalPhrase = word1 + ' ' + word2;
+      const correctedWord1 = correctedWord1Orig.toLowerCase();
+      const correctedWord2 = correctedWord2Orig.toLowerCase();
+      const rawWord1 = rawWord1Orig.toLowerCase();
+      const rawWord2 = rawWord2Orig.toLowerCase();
 
-          const key = `${originalPhrase.toLowerCase()}→${correctedWord}`;
+      // Check for 2-word capitalization patterns (e.g., "hebrew bible" → "Hebrew Bible")
+      if (rawWord1 === correctedWord1 && rawWord2 === correctedWord2) {
+        // Same words, check if only capitalization changed
+        if (rawWord1Orig !== correctedWord1Orig || rawWord2Orig !== correctedWord2Orig) {
+          // Capitalization change in a 2-word phrase
+          const originalPhrase = rawWord1Orig + ' ' + rawWord2Orig;
+          const correctedPhrase = correctedWord1Orig + ' ' + correctedWord2Orig;
+
+          // Skip if it's common words
+          if (COMMON_WORDS.has(rawWord1) || COMMON_WORDS.has(rawWord2)) continue;
+
+          const key = `${originalPhrase.toLowerCase()}→${correctedPhrase.toLowerCase()}`;
 
           if (corrections.has(key)) {
             const suggestion = corrections.get(key)!;
             suggestion.count++;
             if (suggestion.examples.length < 3) {
               suggestion.examples.push(
-                `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+                `"${rawWords.slice(Math.max(0, j - 2), j + 4).join(' ')}"`,
+              );
+              suggestion.correctedExamples.push(
+                `"${correctedWords.slice(Math.max(0, j - 2), j + 4).join(' ')}"`,
               );
               suggestion.timestamps.push(timestamp);
             }
           } else {
             corrections.set(key, {
-              original: originalPhrase.toLowerCase(),
-              corrected: correctedWord,
+              original: originalPhrase,
+              corrected: correctedPhrase,
               count: 1,
-              category: 'proper-noun', // Multi-word compounds are often proper nouns
+              category: 'capitalization',
               examples: [
-                `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+                `"${rawWords.slice(Math.max(0, j - 2), j + 4).join(' ')}"`,
+              ],
+              correctedExamples: [
+                `"${correctedWords.slice(Math.max(0, j - 2), j + 4).join(' ')}"`,
               ],
               timestamps: [timestamp],
             });
@@ -367,25 +380,32 @@ export async function analyzeCorrections(
         }
 
         // Found a correction
+        // Use lowercase for key comparison, but preserve original case in stored values
         const key = `${rawWord}→${correctedWord}`;
         if (corrections.has(key)) {
           const suggestion = corrections.get(key)!;
           suggestion.count++;
-          // Store up to 3 example contexts
+          // Store up to 3 example contexts (both raw and corrected)
           if (suggestion.examples.length < 3) {
             suggestion.examples.push(
               `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+            );
+            suggestion.correctedExamples.push(
+              `"${correctedWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
             );
             suggestion.timestamps.push(timestamp);
           }
         } else {
           corrections.set(key, {
-            original: rawWord,
-            corrected: correctedWord,
+            original: rawWordOriginal, // Preserve original case
+            corrected: correctedWordOriginal, // Preserve corrected case
             count: 1,
             category,
             examples: [
               `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+            ],
+            correctedExamples: [
+              `"${correctedWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
             ],
             timestamps: [timestamp],
           });
@@ -540,6 +560,7 @@ export async function analyzeCorrections(
       category: c.category,
       count: c.count,
       examples: c.examples,
+      correctedExamples: c.correctedExamples,
       timestamps: c.timestamps,
     }));
 

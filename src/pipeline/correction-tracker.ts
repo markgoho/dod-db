@@ -12,8 +12,10 @@ export interface CorrectionCandidate {
   totalOccurrences: number;
   episodeCount: number;
   episodes: string[]; // Episode IDs where this correction appeared
-  examples: string[]; // Example contexts (up to 3)
+  examples: string[]; // Raw text example contexts (up to 3)
+  correctedExamples?: string[]; // Corrected text examples (parallel to examples)
   timestamps?: string[]; // Timestamps for examples (e.g., ["00:28:53", "00:45:37"])
+  episodeIds?: string[]; // Episode ID for each timestamp (parallel array to timestamps)
   confidence: number; // 0-100 score
   firstSeen: string; // ISO date
   lastSeen: string; // ISO date
@@ -107,6 +109,7 @@ export function updateTracker(
     category: CorrectionCandidate['category'];
     count: number;
     examples: string[];
+    correctedExamples: string[];
     timestamps: string[];
   }>,
 ): CorrectionTracker {
@@ -125,9 +128,10 @@ export function updateTracker(
         candidate.episodes.push(episodeId);
       }
 
-      // Add new examples and timestamps (keep max 3)
+      // Add new examples, timestamps, and episode IDs (keep max 3)
       for (let i = 0; i < correction.examples.length; i++) {
         const example = correction.examples[i];
+        const correctedExample = correction.correctedExamples[i];
         const timestamp = correction.timestamps[i];
         if (
           candidate.examples.length < 3 &&
@@ -135,10 +139,24 @@ export function updateTracker(
           !candidate.examples.includes(example)
         ) {
           candidate.examples.push(example);
-          if (timestamp && candidate.timestamps) {
-            candidate.timestamps.push(timestamp);
-          } else if (timestamp) {
-            candidate.timestamps = [timestamp];
+          if (correctedExample) {
+            if (candidate.correctedExamples) {
+              candidate.correctedExamples.push(correctedExample);
+            } else {
+              candidate.correctedExamples = [correctedExample];
+            }
+          }
+          if (timestamp) {
+            if (candidate.timestamps) {
+              candidate.timestamps.push(timestamp);
+            } else {
+              candidate.timestamps = [timestamp];
+            }
+            if (candidate.episodeIds) {
+              candidate.episodeIds.push(episodeId);
+            } else {
+              candidate.episodeIds = [episodeId];
+            }
           }
         }
       }
@@ -155,7 +173,9 @@ export function updateTracker(
         episodeCount: 1,
         episodes: [episodeId],
         examples: correction.examples.slice(0, 3),
+        correctedExamples: correction.correctedExamples.slice(0, 3),
         timestamps: correction.timestamps.slice(0, 3),
+        episodeIds: correction.timestamps.slice(0, 3).map(() => episodeId), // Same episode for all
         confidence: 0, // Will be calculated below
         firstSeen: now,
         lastSeen: now,

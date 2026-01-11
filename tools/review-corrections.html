@@ -175,19 +175,38 @@
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
+      .example-pair {
+        margin-bottom: 16px;
+      }
+      .example-pair:last-child {
+        margin-bottom: 0;
+      }
       .example {
         padding: 12px 16px;
-        margin-bottom: 10px;
+        margin-bottom: 6px;
         background: white;
-        border-left: 3px solid #667eea;
         border-radius: 6px;
         font-family: "SF Mono", Monaco, Consolas, monospace;
         font-size: 14px;
-        color: #374151;
         line-height: 1.6;
       }
-      .example:last-child {
-        margin-bottom: 0;
+      .example.raw {
+        border-left: 3px solid #ef4444;
+        color: #7f1d1d;
+        background: #fef2f2;
+      }
+      .example.corrected {
+        border-left: 3px solid #10b981;
+        color: #065f46;
+        background: #f0fdf4;
+      }
+      .example-label {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 4px;
+        color: #6b7280;
       }
       .actions {
         display: grid;
@@ -345,12 +364,35 @@
         return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000;
       }
 
-      // Jump to timestamp in audio
-      function jumpToTimestamp(timestamp) {
-        if (!audioPlayer.src) {
-          alert('Please load an audio file first using the upload button at the top');
-          return;
+      // Jump to timestamp in audio (with auto-switching episode if needed)
+      let currentEpisodeId = null;
+
+      async function jumpToTimestamp(timestamp, episodeId) {
+        // Check if we need to switch audio files
+        if (currentEpisodeId !== episodeId) {
+          document.getElementById('audioStatus').textContent = 'Loading audio for episode ' + episodeId + '...';
+
+          try {
+            const response = await fetch('/audio/' + episodeId);
+            if (response.ok) {
+              const blob = await response.blob();
+              const url = URL.createObjectURL(blob);
+              audioPlayer.src = url;
+              audioPlayer.style.display = 'block';
+              currentEpisodeId = episodeId;
+              document.getElementById('audioStatus').textContent = '✅ Audio loaded for episode ' + episodeId;
+            } else {
+              alert('Audio file not found for episode ' + episodeId + '. Please upload manually.');
+              return;
+            }
+          } catch (error) {
+            console.error('Failed to load audio:', error);
+            alert('Failed to load audio. Please upload manually.');
+            return;
+          }
         }
+
+        // Jump to timestamp
         const seconds = parseTimestamp(timestamp);
         audioPlayer.currentTime = seconds;
         audioPlayer.play();
@@ -388,6 +430,7 @@
             const url = URL.createObjectURL(blob);
             audioPlayer.src = url;
             audioPlayer.style.display = 'block';
+            currentEpisodeId = firstEpisodeId; // Track which episode is loaded
             document.getElementById('audioStatus').textContent = '✅ Audio loaded for episode ' + firstEpisodeId;
           } else {
             document.getElementById('audioStatus').textContent = '⚠️ Audio not found. Use manual upload below.';
@@ -409,8 +452,8 @@
             ...candidate
           }));
 
-          // Only show pending candidates with reasonable confidence (40%+)
-          const MIN_CONFIDENCE = 40;
+          // Show pending candidates with 20%+ confidence
+          const MIN_CONFIDENCE = 20;
           const pending = allCandidates.filter(c =>
             c.status === 'pending' && c.confidence >= MIN_CONFIDENCE
           );
@@ -455,11 +498,21 @@
             }[candidate.category];
 
             const examplesHtml = candidate.examples.map((ex, idx) => {
+              const correctedEx = candidate.correctedExamples && candidate.correctedExamples[idx];
               const timestamp = candidate.timestamps && candidate.timestamps[idx];
+              const episodeId = candidate.episodeIds && candidate.episodeIds[idx];
               const timestampBadge = timestamp
-                ? '<span onclick="jumpToTimestamp(\'' + timestamp + '\')" style="display: inline-block; background: #667eea; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; margin-left: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.background=\'#5568d3\'" onmouseout="this.style.background=\'#667eea\'" title="Click to jump to this timestamp in audio">🎧 [' + timestamp + ']</span>'
+                ? '<span onclick="jumpToTimestamp(\'' + timestamp + '\', \'' + (episodeId || candidate.episodes[0]) + '\')" style="display: inline-block; background: #667eea; color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; margin-left: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.background=\'#5568d3\'" onmouseout="this.style.background=\'#667eea\'" title="Click to jump to ' + timestamp + ' (Episode: ' + (episodeId || candidate.episodes[0]) + ')">🎧 [' + timestamp + ']</span>'
                 : '';
-              return '<div class="example">' + ex + timestampBadge + '</div>';
+
+              return '<div class="example-pair">' +
+                '<div class="example-label">Original (Transcribed):</div>' +
+                '<div class="example raw">' + ex + timestampBadge + '</div>' +
+                (correctedEx
+                  ? '<div class="example-label" style="margin-top: 8px;">Corrected:</div>' +
+                    '<div class="example corrected">' + correctedEx + '</div>'
+                  : '') +
+                '</div>';
             }).join('');
 
             return '<div class="candidate" id="candidate-' + safeEncode(candidate.key) + '">' +
