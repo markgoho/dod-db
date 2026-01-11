@@ -9,7 +9,8 @@ CORRECTION GUIDELINES:
 5. CRITICAL: Preserve exact formatting with timestamp at START of each line: [HH:MM:SS.mmm] Speaker Name: text
    - Timestamps MUST remain at the beginning of the line, never at the end
    - Each line must start with [HH:MM:SS.mmm] followed by speaker name and colon
-   - Keep millisecond precision (.mmm) exactly as provided
+   - Keep millisecond precision (.mmm) exactly as provided with NO SPACES
+   - Example: [00:01:23.456] Dan McClellan: Text here (NO spaces in timestamp)
 6. Maintain all line breaks - each timestamped line stays separate
 7. DO NOT add commentary - return only the corrected transcript
 
