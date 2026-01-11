@@ -56,7 +56,11 @@ const server = Bun.serve({
 
     // Serve the main UI (correction review)
     if (url.pathname === '/' || url.pathname === '/index.html') {
-      const filePath = path.join(process.cwd(), 'tools', 'review-corrections.html');
+      const filePath = path.join(
+        process.cwd(),
+        'tools',
+        'review-corrections.html',
+      );
       const file = Bun.file(filePath);
       return new Response(file, {
         headers: { 'Content-Type': 'text/html' },
@@ -65,7 +69,11 @@ const server = Bun.serve({
 
     // Serve data files
     if (url.pathname === '/data/correction-candidates.json') {
-      const filePath = path.join(process.cwd(), 'data', 'correction-candidates.json');
+      const filePath = path.join(
+        process.cwd(),
+        'data',
+        'correction-candidates.json',
+      );
       const file = Bun.file(filePath);
       return new Response(file, {
         headers: { 'Content-Type': 'application/json' },
@@ -81,7 +89,7 @@ const server = Bun.serve({
       const { readdir } = await import('node:fs/promises');
       try {
         const files = await readdir(audioDir);
-        const audioFile = files.find(f => f.startsWith(videoId));
+        const audioFile = files.find((f) => f.startsWith(videoId));
 
         if (audioFile) {
           const filePath = path.join(audioDir, audioFile);
@@ -136,8 +144,7 @@ const server = Bun.serve({
       } catch (error) {
         return Response.json(
           {
-            error:
-              error instanceof Error ? error.message : 'Failed to approve',
+            error: error instanceof Error ? error.message : 'Failed to approve',
           },
           { status: 500 },
         );
@@ -167,4 +174,6 @@ console.log(`\n🎨 Correction Review UI`);
 console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
 console.log(`🌐 Open in browser: http://localhost:${PORT}`);
 console.log(`\n📝 Review and approve/reject correction candidates`);
-console.log(`✅ Approved corrections will be added to src/config/corrections.ts\n`);
+console.log(
+  `✅ Approved corrections will be added to src/config/corrections.ts\n`,
+);

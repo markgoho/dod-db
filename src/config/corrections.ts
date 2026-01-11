@@ -40,4 +40,6 @@ export const globalCorrections: CorrectionRule[] = [
   [['Kaiser'], 'Caesar'], // spelling - confidence: 20%
   [['Origin'], 'Origen'], // spelling - confidence: 20%
   [['Migdol'], 'Migdal'], // spelling - confidence: 20%
+  [["katumua"], "Katumuwa"], // proper-noun - confidence: 25%
+  [["common era"], "Common Era"], // capitalization - confidence: 20%
 ];
