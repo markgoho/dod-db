@@ -1062,10 +1062,11 @@
       "original": "Masoretic text",
       "corrected": "Masoretic Text",
       "category": "capitalization",
-      "totalOccurrences": 7,
-      "episodeCount": 1,
+      "totalOccurrences": 15,
+      "episodeCount": 2,
       "episodes": [
-        "DD7Kkzh2kzg"
+        "DD7Kkzh2kzg",
+        "p8CjJR4yhfk"
       ],
       "examples": [
         "\"of the Masoretic text.\"",
@@ -1087,9 +1088,9 @@
         "DD7Kkzh2kzg",
         "DD7Kkzh2kzg"
       ],
-      "confidence": 25,
+      "confidence": 50,
       "firstSeen": "2026-01-11T17:59:30.418Z",
-      "lastSeen": "2026-01-11T17:59:30.418Z",
+      "lastSeen": "2026-01-11T21:20:04.094Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:05:54.102Z",
       "reviewedBy": "UI Review"
@@ -1862,30 +1863,35 @@
       "original": "first Enoch",
       "corrected": "First Enoch",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
+      "totalOccurrences": 4,
+      "episodeCount": 2,
       "episodes": [
-        "7oB6UrrFn6c"
+        "7oB6UrrFn6c",
+        "p8CjJR4yhfk"
       ],
       "examples": [
         "\"book of first Enoch, for instance,\"",
-        "\"reflected in first Enoch.\""
+        "\"reflected in first Enoch.\"",
+        "\"talked about first Enoch, which was\""
       ],
       "correctedExamples": [
         "\"book of First Enoch, for instance,\"",
-        "\"reflected in First Enoch.\""
+        "\"reflected in First Enoch.\"",
+        "\"talked about First Enoch, which was\""
       ],
       "timestamps": [
         "00:20:29.750",
-        "00:28:29.020"
+        "00:28:29.020",
+        "00:48:02.390"
       ],
       "episodeIds": [
         "7oB6UrrFn6c",
-        "7oB6UrrFn6c"
+        "7oB6UrrFn6c",
+        "p8CjJR4yhfk"
       ],
-      "confidence": 10,
+      "confidence": 40,
       "firstSeen": "2026-01-11T19:08:48.714Z",
-      "lastSeen": "2026-01-11T19:08:48.714Z",
+      "lastSeen": "2026-01-11T21:20:04.094Z",
       "status": "pending"
     },
     "opposition→apposition": {
@@ -2815,7 +2821,187 @@
       "firstSeen": "2026-01-11T20:46:03.181Z",
       "lastSeen": "2026-01-11T20:46:03.181Z",
       "status": "pending"
+    },
+    "second Temple→Second Temple": {
+      "original": "second Temple",
+      "corrected": "Second Temple",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "fiptp1bU5qQ"
+      ],
+      "examples": [
+        "\"to cover second Temple Judaism and\"",
+        "\"in the second Temple period.\""
+      ],
+      "correctedExamples": [
+        "\"to cover Second Temple Judaism and\"",
+        "\"in the Second Temple period.\""
+      ],
+      "timestamps": [
+        "00:17:32.470",
+        "00:58:59.710"
+      ],
+      "episodeIds": [
+        "fiptp1bU5qQ",
+        "fiptp1bU5qQ"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T21:05:21.564Z",
+      "lastSeen": "2026-01-11T21:05:21.564Z",
+      "status": "pending"
+    },
+    "claironomia→kleronomia": {
+      "original": "claironomia",
+      "corrected": "kleronomia",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "fiptp1bU5qQ"
+      ],
+      "examples": [
+        "\"this big claironomia, the inheritance\"",
+        "\"And the claironomia, the inheritance.\""
+      ],
+      "correctedExamples": [
+        "\"this big kleronomia, the inheritance\"",
+        "\"And the kleronomia, the inheritance.\""
+      ],
+      "timestamps": [
+        "00:50:36.760",
+        "01:03:07.660"
+      ],
+      "episodeIds": [
+        "fiptp1bU5qQ",
+        "fiptp1bU5qQ"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-11T21:05:21.564Z",
+      "lastSeen": "2026-01-11T21:05:21.564Z",
+      "status": "pending"
+    },
+    "star God→star god": {
+      "original": "star God",
+      "corrected": "star god",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "fiptp1bU5qQ"
+      ],
+      "examples": [
+        "\"become a star God.\"",
+        "\"becoming a star God amongst their\""
+      ],
+      "correctedExamples": [
+        "\"become a star god.\"",
+        "\"becoming a star god amongst their\""
+      ],
+      "timestamps": [
+        "01:08:34.319",
+        "01:08:38.879"
+      ],
+      "episodeIds": [
+        "fiptp1bU5qQ",
+        "fiptp1bU5qQ"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T21:05:21.564Z",
+      "lastSeen": "2026-01-11T21:05:21.564Z",
+      "status": "pending"
+    },
+    "Dalit→Dalet": {
+      "original": "Dalit",
+      "corrected": "Dalet",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "p8CjJR4yhfk"
+      ],
+      "examples": [
+        "\"Yod Resh Dalit.\"",
+        "\"Yod Resh Dalit.\""
+      ],
+      "correctedExamples": [
+        "\"Yod Resh Dalet.\"",
+        "\"Yod Resh Dalet.\""
+      ],
+      "timestamps": [
+        "00:06:45.680",
+        "00:06:52.480"
+      ],
+      "episodeIds": [
+        "p8CjJR4yhfk",
+        "p8CjJR4yhfk"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T21:20:04.094Z",
+      "lastSeen": "2026-01-11T21:20:04.094Z",
+      "status": "pending"
+    },
+    "Septuagints→Septuagint's": {
+      "original": "Septuagints",
+      "corrected": "Septuagint's",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "p8CjJR4yhfk"
+      ],
+      "examples": [
+        "\"in the Septuagints version, these\"",
+        "\"with the Septuagints lineage is\""
+      ],
+      "correctedExamples": [
+        "\"in the Septuagint's version, these\"",
+        "\"with the Septuagint's lineage is\""
+      ],
+      "timestamps": [
+        "00:16:26.460",
+        "00:16:38.220"
+      ],
+      "episodeIds": [
+        "p8CjJR4yhfk",
+        "p8CjJR4yhfk"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-11T21:20:04.094Z",
+      "lastSeen": "2026-01-11T21:20:04.094Z",
+      "status": "pending"
+    },
+    "like first→like First": {
+      "original": "like first",
+      "corrected": "like First",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "p8CjJR4yhfk"
+      ],
+      "examples": [
+        "\"a text like first Enoch does\"",
+        "\"And things like first and Second\""
+      ],
+      "correctedExamples": [
+        "\"a text like First Enoch does\"",
+        "\"And things like First and Second\""
+      ],
+      "timestamps": [
+        "00:50:33.170",
+        "00:52:40.220"
+      ],
+      "episodeIds": [
+        "p8CjJR4yhfk",
+        "p8CjJR4yhfk"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T21:20:04.094Z",
+      "lastSeen": "2026-01-11T21:20:04.094Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-11T20:46:03.181Z"
+  "lastUpdated": "2026-01-11T21:20:04.094Z"
 }

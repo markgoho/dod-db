@@ -142,5 +142,21 @@
     "processedAt": "2026-01-11T20:46:03.182Z",
     "transcriptPath": "data/transcripts/2023-08-07-episode-18-august-7-2023-the-devil-made-us-do-it.txt",
     "episodeNumber": 18
+  },
+  {
+    "videoId": "fiptp1bU5qQ",
+    "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett",
+    "publishedAt": "2023-08-14T00:00:00Z",
+    "processedAt": "2026-01-11T21:05:21.565Z",
+    "transcriptPath": "data/transcripts/2023-08-14-episode-19-august-14-2023-ill-make-you-a-star-with-david-a-burnett.txt",
+    "episodeNumber": 1
+  },
+  {
+    "videoId": "p8CjJR4yhfk",
+    "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\"",
+    "publishedAt": "2023-08-21T00:00:00Z",
+    "processedAt": "2026-01-11T21:20:04.095Z",
+    "transcriptPath": "data/transcripts/2023-08-21-episode-20-august-21-2023-i-knew-a-guy-who-was-so-old.txt",
+    "episodeNumber": 1
   }
 ]
