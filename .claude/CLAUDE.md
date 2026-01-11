@@ -10,8 +10,44 @@ This is a DoD database project built with Bun, Firebase, and the Google AI SDK f
 
 ### Core Development
 - `bun install` - Install dependencies
-- `bun run src/scripts/process-transcript.ts` - Run the main transcript processing pipeline
+
+### Processing Pipeline
+
+**Primary command for processing YouTube episodes:**
+```bash
+bun run src/scripts/process-youtube.ts <youtube-url> [--force]
+```
+
+This is the canonical way to kick off the full pipeline. It:
+1. Extracts video ID and checks if already processed
+2. Fetches metadata from YouTube (title, date, description)
+3. Downloads audio to `data/audio/`
+4. Transcribes with AssemblyAI (with speaker labels)
+5. Identifies speakers using metadata and podcast context
+6. Saves raw transcript with speaker names (`-raw.txt`, not committed, for learning comparisons)
+7. Corrects transcript (deterministic + Gemini 3.0 Flash)
+8. Saves final transcript (`.txt`, committed to git)
+9. Updates `data/processed-videos.json` tracking
+
+**Output files per episode:**
+- `data/transcripts/YYYY-MM-DD-episode-title-raw.txt` - Raw with speaker names (not committed)
+- `data/transcripts/YYYY-MM-DD-episode-title.txt` - Final corrected (committed)
+
+**Examples:**
+```bash
+# Process a new episode
+bun run src/scripts/process-youtube.ts "https://www.youtube.com/watch?v=833s6y6kW2k"
+
+# Reprocess an already-processed episode
+bun run src/scripts/process-youtube.ts "https://www.youtube.com/watch?v=833s6y6kW2k" --force
+
+# Process with just video ID
+bun run src/scripts/process-youtube.ts 833s6y6kW2k
+```
+
+**Other pipeline scripts:**
 - `bun run src/scripts/transcript-qa.ts` - Run Q&A over indexed transcripts
+- `bun run src/scripts/check-new-episodes.ts` - Check for and process new episodes (used by GitHub Actions)
 
 ### Firebase Emulators
 - `npm run emulators:start` - Start Firebase Auth & Firestore emulators (ports: Auth 9099, Firestore 8080)
@@ -26,33 +62,71 @@ This is a DoD database project built with Bun, Firebase, and the Google AI SDK f
 
 ### Processing Pipeline
 
-The transcript processing pipeline is orchestrated in `src/pipeline/index.ts`:
+The transcript processing pipeline is orchestrated via `src/pipeline/youtube-processor.ts`:
 
 1. **Audio Transcription** (`src/pipeline/transcribe.ts`)
+   - Downloads YouTube audio via yt-dlp (if YouTube URL)
    - Uses AssemblyAI API with speaker labeling enabled
    - Formats timestamps as `[HH:MM:SS] Speaker N: text`
 
 2. **Transcript Correction** (`src/pipeline/correct.ts`)
-   - Uses Gemini 2.5 Flash to clean up transcription errors
-   - Chunked processing via `llm-chunk` for long transcripts
+   - **Step 1**: Applies deterministic find/replace from `src/config/corrections.ts` (instant, no cost)
+   - **Step 2**: Uses Gemini 3.0 Flash Preview for remaining errors
+   - Chunked processing via `llm-chunk` (5K-10K tokens, 200 overlap)
+   - Deduplicates overlap when concatenating chunks
+   - Uses plain Latin characters (no diacritics)
+   - **Learning Loop**: Compare raw vs corrected transcripts to identify frequent corrections, then add to deterministic list
 
 3. **Speaker Identification** (`src/pipeline/identify-speakers.ts`)
    - Uses structured JSON output to map "Speaker A, B, C" to real names
+   - Leverages video metadata (title, description) for context
    - Returns both the labeled transcript and speaker mapping
 
 4. **Storage** (`src/storage/`)
-   - **Firestore**: Vector embeddings stored with `FieldValue.vector()` for semantic search
-   - **File**: Local file output for transcript text
+   - **File**: Saves to `data/transcripts/` with date-slug naming
+   - **Tracking**: Updates `data/processed-videos.json` to prevent reprocessing
+   - **Firestore**: Vector embeddings stored with `FieldValue.vector()` for semantic search (TBD)
+
+### Correction Learning Workflow
+
+The correction system includes a **learning feedback loop** that improves efficiency over time:
+
+1. **Process episodes** - Run pipeline with `bun run src/scripts/process-youtube.ts <url>`
+   - Creates `-raw.txt` (after speaker ID, before correction) - not committed
+   - Creates `.txt` (final corrected) - committed to git
+
+2. **Compare transcripts** - Diff shows ONLY corrections (speaker names already matched):
+   ```bash
+   diff data/transcripts/episode-1-raw.txt data/transcripts/episode-1.txt
+   ```
+   Example output:
+   ```diff
+   - The Torrah was written
+   + The Torah was written
+   - The Septuigent translation
+   + The Septuagint translation
+   ```
+
+3. **Identify patterns** - Look for frequently occurring corrections
+4. **Add to deterministic list** - Update `src/config/corrections.ts`:
+   ```typescript
+   [["Torrah", "Tora"], "Torah"],
+   [["Septuigent"], "Septuagint"],
+   ```
+5. **Next episode is faster** - Previously-learned corrections now happen instantly (no LLM cost!)
+
+**Goal**: Achieve 80%+ deterministic corrections for maximum efficiency. See `CORRECTION-WORKFLOW.md` for detailed documentation.
 
 ### Key Architectural Patterns
 
-- **Centralized Configuration**: All config in `src/config/` (chunking, firebase, models)
+- **Centralized Configuration**: All config in `src/config/` (chunking, firebase, models, corrections)
 - **Google AI Client**: Exported from `src/ai.ts` using `@google/genai` SDK
 - **Chunking Strategy**: Uses `llm-chunk` library with sentence-based splitting
   - Correction: 5000-10000 tokens, 200 overlap (maintain context)
   - Embedding: 1000-2000 tokens, 100 overlap (precise retrieval)
 - **Prompt Organization**: Prompts in `src/prompts/` with barrel export
 - **Structured Output**: Uses Zod schemas with `zod-to-json-schema` for type-safe JSON responses
+- **Learning System**: Deterministic corrections + LLM with manual learning loop for continuous improvement
 
 ### Project Structure
 

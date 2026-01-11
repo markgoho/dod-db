@@ -87,30 +87,37 @@ export async function processYouTubeVideo(
   console.log('Transcribing audio...');
   const transcription = await transcribeAudio(audioPath);
 
-  // Correct transcript
-  console.log('Correcting transcript...');
-  const correctedTranscript = await correctTranscript(transcription);
-
-  // Identify speakers with metadata context
+  // Identify speakers first (so raw has speaker names)
   console.log('Identifying speakers...');
   const { transcript: transcriptWithNames } = await identifySpeakers(
-    correctedTranscript,
+    transcription,
     {
       title: metadata.title,
       description: metadata.description,
     },
   );
 
-  // Generate filename and write to file
+  // Generate filename
   const filename = generateTranscriptFilename(
     metadata.title,
     metadata.publishedAt,
   );
   const transcriptPath = path.join(youtubeConfig.transcriptDirectory, filename);
 
-  console.log('Writing transcript to file...');
-  await writeToFile(transcriptPath, transcriptWithNames);
-  console.log(`Transcript saved to: ${transcriptPath}`);
+  // Save raw transcript with speaker names (for learning comparisons, not committed)
+  const rawPath = transcriptPath.replace('.txt', '-raw.txt');
+  console.log('Saving raw transcript...');
+  await writeToFile(rawPath, transcriptWithNames);
+  console.log(`Raw transcript saved to: ${rawPath}`);
+
+  // Correct transcript
+  console.log('Correcting transcript...');
+  const correctedTranscript = await correctTranscript(transcriptWithNames);
+
+  // Write final transcript (this is the one we commit)
+  console.log('Writing final transcript...');
+  await writeToFile(transcriptPath, correctedTranscript);
+  console.log(`Final transcript saved to: ${transcriptPath}`);
 
   // Mark as processed
   await markVideoAsProcessed({

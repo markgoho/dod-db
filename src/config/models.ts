@@ -19,3 +19,9 @@ export const qaModel = 'gemini-2.5-flash';
  * Embedder model for vector indexing.
  */
 export const embedderModel = 'gemini-embedding-001';
+
+/**
+ * Model used for Pass 2 review of marked corrections.
+ * Using 3.0 Flash for enhanced validation capabilities.
+ */
+export const reviewModel = 'gemini-3-flash-preview';

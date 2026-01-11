@@ -27,6 +27,15 @@ export function speakerLabelPrompt(
   return `You are an expert in speaker label recognition. You will receive a portion of a transcript with timestamps, and speaker labels but the labels don't have the names, only Speaker A, Speaker B, etc.
 
   Your job is to identify the speakers by name in the text of the transcript.
+
+  <podcast-context>
+    This is the "Data Over Dogma" podcast about biblical scholarship.
+    Regular hosts: Dan McClellan (biblical scholar) and Dan Beecher
+
+    Note: If speakers aren't explicitly named in the transcript, use this context:
+    - If there are 2 speakers, they are likely Dan McClellan and Dan Beecher
+    - If there are 3+ speakers, the third is likely a guest (check video context)
+  </podcast-context>
 ${contextSection}
 
   <example-transcript>
@@ -57,7 +66,14 @@ export function addSpeakerLabels(
   speakerLabels: SpeakerLabels,
   transcript: string,
 ) {
-  return transcript
-    .replace(/Speaker A/g, speakerLabels['Speaker A'])
-    .replace(/Speaker B/g, speakerLabels['Speaker B']);
+  let result = transcript;
+
+  // Replace all identified speakers dynamically
+  for (const [speakerLabel, speakerName] of Object.entries(speakerLabels)) {
+    if (speakerName) {
+      result = result.replace(new RegExp(speakerLabel, 'g'), speakerName);
+    }
+  }
+
+  return result;
 }

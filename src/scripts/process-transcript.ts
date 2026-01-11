@@ -1,15 +1,30 @@
 /**
- * CLI script to process a transcript from a Google Drive audio file.
+ * CLI script to process a transcript from audio (YouTube, Google Drive, or direct URL).
  *
  * Usage:
- *   bun run src/scripts/process-transcript.ts
+ *   bun run src/scripts/process-transcript.ts <url> [title]
+ *
+ * Examples:
+ *   bun run src/scripts/process-transcript.ts "https://www.youtube.com/watch?v=VIDEO_ID" "Episode 2 (April 17, 2023)"
+ *   bun run src/scripts/process-transcript.ts "https://drive.google.com/uc?export=download&id=FILE_ID"
  */
 
 import { processTranscript } from '../pipeline/index.js';
 
-const trimmedAudioId = '1vsS2VRHz5fdXz0JhGSsxysa5SCMXy6gi';
-const fullAudioId = '1XjkVt17K4Oa0muqJnDZm593FXMG9TRQd';
+const [, , url, title] = process.argv;
+
+if (!url) {
+  console.error('Error: URL is required\n');
+  console.log('Usage: bun run src/scripts/process-transcript.ts <url> [title]\n');
+  console.log('Examples:');
+  console.log('  bun run src/scripts/process-transcript.ts "https://www.youtube.com/watch?v=VIDEO_ID" "Episode 2 (April 17, 2023)"');
+  console.log('  bun run src/scripts/process-transcript.ts "https://drive.google.com/uc?export=download&id=FILE_ID"');
+  process.exit(1);
+}
+
+const metadata = title ? { title } : undefined;
 
 await processTranscript({
-  transcriptUrl: `https://drive.google.com/uc?export=download&id=${trimmedAudioId}`,
+  transcriptUrl: url,
+  metadata,
 });

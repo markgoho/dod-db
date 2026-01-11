@@ -1,12 +1,26 @@
 import { AssemblyAI, type TranscribeParams } from 'assemblyai';
+import {
+  downloadYouTubeAudio,
+  isYouTubeUrl,
+} from '../utils/youtube.js';
 
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY!,
 });
 
 export async function transcribeAudio(url: string): Promise<string> {
+  // If YouTube URL, download audio first
+  let audioUrl = url;
+  if (isYouTubeUrl(url)) {
+    const audioPath = await downloadYouTubeAudio(url);
+    // Upload the local file to AssemblyAI
+    console.log('  Uploading audio to AssemblyAI...');
+    const uploadedUrl = await client.files.upload(audioPath);
+    audioUrl = uploadedUrl;
+  }
+
   const params: TranscribeParams = {
-    audio: url,
+    audio: audioUrl,
     speaker_labels: true,
   };
   const transcript = await client.transcripts.transcribe(params);

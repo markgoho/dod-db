@@ -7,3 +7,14 @@ export const youtubeConfig = {
   transcriptDirectory: 'data/transcripts',
   processedVideosFile: 'data/processed-videos.json',
 } as const;
+
+/**
+ * Podcast-specific information for Data over Dogma.
+ * Used to provide context for speaker identification.
+ */
+export const podcastInfo = {
+  name: 'Data Over Dogma',
+  hosts: ['Dan McClellan', 'Dan Beecher'],
+  description:
+    'A podcast about biblical scholarship hosted by Dr. Dan McClellan and Dan Beecher',
+} as const;

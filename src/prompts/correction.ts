@@ -1,9 +1,20 @@
 export function correctionPrompt(transcript: string) {
-  return `You are an expert in Bible scholarship. Please review the following podcast transcript and correct any domain-specific terms, names, places, or theological concepts that may have been transcribed incorrectly. When you make a correction, please wrap the corrected word or phrase in double asterisks (**).
+  return `You are an expert in Bible scholarship. Review this podcast transcript and correct any errors in domain-specific terms, names, places, or theological concepts.
 
-IMPORTANT: Preserve the exact formatting of the transcript, including all line breaks. Each timestamped utterance should remain on its own line.
+CORRECTION GUIDELINES:
+1. Fix anything that appears incorrect (misspellings, garbled words, wrong names)
+2. Use only plain English letters (a-z A-Z), NO diacritics or special characters
+3. Hebrew/Greek terms: simple transliteration (Torah not Tôrāh, Bereshit not Bərēšîṯ, raqia not rāqîaʿ)
+4. DO NOT change "Adonai" to "Yahweh" or "YHWH" - the host intentionally uses "Adonai" as a respectful substitute
+5. Preserve exact formatting: [HH:MM:SS] Speaker Name: text
+6. Maintain all line breaks - each timestamped line stays separate
+7. DO NOT add commentary - return only the corrected transcript
 
-Only return the fully corrected transcript. Do not add any commentary or explanation before or after the transcript.
+Common error types:
+- Scholar/host names (Dan McClellan, Frank Moore Cross)
+- Hebrew/Greek/Aramaic terms (use plain English letters)
+- Biblical books and concepts (Septuagint, Deuteronomy)
+- Theological terminology
 
 Transcript to correct:
 ---

@@ -36,6 +36,8 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 # Audio files
 *.mp3
 
+# Raw transcripts (for learning comparisons only, don't commit)
+data/transcripts/*-raw.txt
 
 .genkit
 public
