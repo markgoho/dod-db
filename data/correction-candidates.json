@@ -474,11 +474,12 @@
       "original": "century ce",
       "corrected": "century CE",
       "category": "capitalization",
-      "totalOccurrences": 6,
-      "episodeCount": 2,
+      "totalOccurrences": 8,
+      "episodeCount": 3,
       "episodes": [
         "_zou11pMRag",
-        "gW6w-AOiKNM"
+        "gW6w-AOiKNM",
+        "5bA0OigwXR4"
       ],
       "examples": [
         "\"the second century ce, and Paul\"",
@@ -500,9 +501,9 @@
         "_zou11pMRag",
         "_zou11pMRag"
       ],
-      "confidence": 45,
+      "confidence": 65,
       "firstSeen": "2026-01-11T17:59:30.300Z",
-      "lastSeen": "2026-01-11T17:59:30.395Z",
+      "lastSeen": "2026-01-11T18:28:00.255Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:05:33.332Z",
       "reviewedBy": "UI Review"
@@ -1593,7 +1594,319 @@
       "status": "approved",
       "reviewedAt": "2026-01-11T17:50:21.262Z",
       "reviewedBy": "UI Review"
+    },
+    "nehem→nacham": {
+      "original": "nehem",
+      "corrected": "nacham",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "5bA0OigwXR4"
+      ],
+      "examples": [
+        "\"regret is nehem, and it's\"",
+        "\"meaning of nehem.\""
+      ],
+      "correctedExamples": [
+        "\"regret is nacham, and it's\"",
+        "\"meaning of nacham.\""
+      ],
+      "timestamps": [
+        "00:00:14.880",
+        "00:37:22.170"
+      ],
+      "episodeIds": [
+        "5bA0OigwXR4",
+        "5bA0OigwXR4"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T18:28:00.255Z",
+      "lastSeen": "2026-01-11T18:28:00.255Z",
+      "status": "pending"
+    },
+    "naham→nacham": {
+      "original": "naham",
+      "corrected": "nacham",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "5bA0OigwXR4"
+      ],
+      "examples": [
+        "\"regret is naham, and it's\"",
+        "\"nephal of Naham.\""
+      ],
+      "correctedExamples": [
+        "\"regret is nacham, and it's\"",
+        "\"Niphal of nacham.\""
+      ],
+      "timestamps": [
+        "00:36:57.630",
+        "00:42:40.310"
+      ],
+      "episodeIds": [
+        "5bA0OigwXR4",
+        "5bA0OigwXR4"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T18:28:00.255Z",
+      "lastSeen": "2026-01-11T18:28:00.255Z",
+      "status": "pending"
+    },
+    "nephal→Niphal": {
+      "original": "nephal",
+      "corrected": "Niphal",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "5bA0OigwXR4"
+      ],
+      "examples": [
+        "\"The nephal of Naham.\"",
+        "\"Now, nephal is one\""
+      ],
+      "correctedExamples": [
+        "\"The Niphal of nacham.\"",
+        "\"Now, Niphal is one\""
+      ],
+      "timestamps": [
+        "00:42:40.310",
+        "00:42:42.270"
+      ],
+      "episodeIds": [
+        "5bA0OigwXR4",
+        "5bA0OigwXR4"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-11T18:28:00.255Z",
+      "lastSeen": "2026-01-11T18:28:00.255Z",
+      "status": "pending"
+    },
+    "McLaughlin→McLachlan": {
+      "original": "McLaughlin",
+      "corrected": "McLachlan",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "xYDiFyXinfs"
+      ],
+      "examples": [
+        "\"of Sarah McLaughlin, huge fan\"",
+        "\"listening Sarah McLaughlin, call us.\""
+      ],
+      "correctedExamples": [
+        "\"of Sarah McLachlan, huge fan\"",
+        "\"listening Sarah McLachlan, call us.\""
+      ],
+      "timestamps": [
+        "00:03:56.770",
+        "00:04:11.810"
+      ],
+      "episodeIds": [
+        "xYDiFyXinfs",
+        "xYDiFyXinfs"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-11T18:44:23.590Z",
+      "lastSeen": "2026-01-11T18:44:23.590Z",
+      "status": "pending"
+    },
+    "Steely→stele": {
+      "original": "Steely",
+      "corrected": "stele",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "xYDiFyXinfs"
+      ],
+      "examples": [
+        "\"a lot, Steely, in.\"",
+        "\"is translating Steely, but this\"",
+        "\"and this steely is very\""
+      ],
+      "correctedExamples": [
+        "\"a lot, stele, in.\"",
+        "\"is translating stele, but this\"",
+        "\"and this stele is very\""
+      ],
+      "timestamps": [
+        "00:27:42.120",
+        "00:28:09.870",
+        "00:34:43.720"
+      ],
+      "episodeIds": [
+        "xYDiFyXinfs",
+        "xYDiFyXinfs",
+        "xYDiFyXinfs"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-11T18:44:23.590Z",
+      "lastSeen": "2026-01-11T18:44:23.590Z",
+      "status": "pending"
+    },
+    "katumua→Katumuwa": {
+      "original": "katumua",
+      "corrected": "Katumuwa",
+      "category": "proper-noun",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "xYDiFyXinfs"
+      ],
+      "examples": [
+        "\"this, this katumua stele is\"",
+        "\"the, the Katumua one is\"",
+        "\"way that Katumua conceptualized his\""
+      ],
+      "correctedExamples": [
+        "\"this, this Katumuwa stele is\"",
+        "\"the, the Katumuwa one is\"",
+        "\"way that Katumuwa conceptualized his\""
+      ],
+      "timestamps": [
+        "00:34:15.840",
+        "00:35:01.389",
+        "00:37:47.670"
+      ],
+      "episodeIds": [
+        "xYDiFyXinfs",
+        "xYDiFyXinfs",
+        "xYDiFyXinfs"
+      ],
+      "confidence": 25,
+      "firstSeen": "2026-01-11T18:44:23.590Z",
+      "lastSeen": "2026-01-11T18:44:23.590Z",
+      "status": "approved",
+      "reviewedAt": "2026-01-11T19:02:37.538Z",
+      "reviewedBy": "UI Review"
+    },
+    "betel→baetyl": {
+      "original": "betel",
+      "corrected": "baetyl",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "xYDiFyXinfs"
+      ],
+      "examples": [
+        "\"we have betel.\"",
+        "\"And betel in ancient\""
+      ],
+      "correctedExamples": [
+        "\"we have baetyl.\"",
+        "\"And baetyl in ancient\""
+      ],
+      "timestamps": [
+        "00:38:43.380",
+        "00:38:48.260"
+      ],
+      "episodeIds": [
+        "xYDiFyXinfs",
+        "xYDiFyXinfs"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T18:44:23.590Z",
+      "lastSeen": "2026-01-11T18:44:23.590Z",
+      "status": "pending"
+    },
+    "common era→Common Era": {
+      "original": "common era",
+      "corrected": "Common Era",
+      "category": "capitalization",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "7oB6UrrFn6c"
+      ],
+      "examples": [
+        "\"in the common era rather than\"",
+        "\"before the common era.\""
+      ],
+      "correctedExamples": [
+        "\"in the Common Era rather than\"",
+        "\"before the Common Era.\""
+      ],
+      "timestamps": [
+        "00:27:25.109",
+        "00:27:25.109"
+      ],
+      "episodeIds": [
+        "7oB6UrrFn6c",
+        "7oB6UrrFn6c"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-11T18:59:46.702Z",
+      "lastSeen": "2026-01-11T19:08:48.714Z",
+      "status": "approved",
+      "reviewedAt": "2026-01-11T19:11:12.592Z",
+      "reviewedBy": "UI Review"
+    },
+    "first Enoch→First Enoch": {
+      "original": "first Enoch",
+      "corrected": "First Enoch",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "7oB6UrrFn6c"
+      ],
+      "examples": [
+        "\"book of first Enoch, for instance,\"",
+        "\"reflected in first Enoch.\""
+      ],
+      "correctedExamples": [
+        "\"book of First Enoch, for instance,\"",
+        "\"reflected in First Enoch.\""
+      ],
+      "timestamps": [
+        "00:20:29.750",
+        "00:28:29.020"
+      ],
+      "episodeIds": [
+        "7oB6UrrFn6c",
+        "7oB6UrrFn6c"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-11T19:08:48.714Z",
+      "lastSeen": "2026-01-11T19:08:48.714Z",
+      "status": "pending"
+    },
+    "opposition→apposition": {
+      "original": "opposition",
+      "corrected": "apposition",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "7oB6UrrFn6c"
+      ],
+      "examples": [
+        "\"this is opposition.\"",
+        "\"Hebrew, the opposition doesn't come\""
+      ],
+      "correctedExamples": [
+        "\"this is apposition.\"",
+        "\"Hebrew, the apposition doesn't come\""
+      ],
+      "timestamps": [
+        "00:51:51.960",
+        "00:52:47.970"
+      ],
+      "episodeIds": [
+        "7oB6UrrFn6c",
+        "7oB6UrrFn6c"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-11T19:08:48.714Z",
+      "lastSeen": "2026-01-11T19:08:48.714Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-11T18:07:04.076Z"
+  "lastUpdated": "2026-01-11T19:11:12.592Z"
 }
