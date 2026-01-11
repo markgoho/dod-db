@@ -15,7 +15,7 @@ This is a DoD database project built with Bun, Firebase, and the Google AI SDK f
 
 **Primary command for processing YouTube episodes:**
 ```bash
-bun run src/scripts/process-youtube.ts <youtube-url> [--force]
+bun run src/scripts/process-youtube.ts <youtube-url> [options]
 ```
 
 This is the canonical way to kick off the full pipeline. It:
@@ -28,6 +28,11 @@ This is the canonical way to kick off the full pipeline. It:
 7. Corrects transcript (deterministic + Gemini 3.0 Flash)
 8. Saves final transcript (`.txt`, committed to git)
 9. Updates `data/processed-videos.json` tracking
+
+**Options:**
+- `--force` - Reprocess video even if already in processed-videos.json
+- `--start-from=STAGE` - Resume from a specific stage to save API costs
+  - Supported stages: `correct` (skip transcription and speaker identification)
 
 **Output files per episode:**
 - `data/transcripts/YYYY-MM-DD-episode-title-raw.txt` - Raw with speaker names (not committed)
@@ -43,7 +48,24 @@ bun run src/scripts/process-youtube.ts "https://www.youtube.com/watch?v=833s6y6k
 
 # Process with just video ID
 bun run src/scripts/process-youtube.ts 833s6y6kW2k
+
+# Resume from correction stage (when IDE crashes or to re-run correction)
+bun run src/scripts/process-youtube.ts 833s6y6kW2k --start-from=correct
+
+# Reprocess only the correction stage
+bun run src/scripts/process-youtube.ts 833s6y6kW2k --force --start-from=correct
 ```
+
+**Staged Pipeline (Cost Savings):**
+The `--start-from=correct` flag allows resuming from the correction stage when the raw transcript already exists. This is useful when:
+- IDE crashes after transcription/speaker-ID complete
+- Re-running correction with updated deterministic rules
+- Testing correction improvements without re-transcribing
+
+Cost savings:
+- Skips AssemblyAI transcription (~$0.42/minute of audio)
+- Skips Gemini speaker identification (1 API call)
+- Only runs Gemini correction (15+ chunks, necessary stage)
 
 **Other pipeline scripts:**
 - `bun run src/scripts/transcript-qa.ts` - Run Q&A over indexed transcripts
