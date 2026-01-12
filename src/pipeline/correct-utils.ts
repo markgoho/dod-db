@@ -38,11 +38,78 @@ export function applyDeterministicCorrections(
 }
 
 /**
+ * Find the last timestamp in text and return its position.
+ * Used to find where chunk 1 content ends for matching in chunk 2.
+ */
+function findLastTimestamp(text: string): { timestamp: string; position: number } | null {
+  // Find all timestamps in the text
+  const timestampPattern = /\[([0-9]{1,2}:[0-9]{2}:[0-9]{2}(?:\.[0-9]{3})?)\]/g;
+  let lastMatch: RegExpExecArray | null = null;
+  let match: RegExpExecArray | null;
+
+  while ((match = timestampPattern.exec(text)) !== null) {
+    lastMatch = match;
+  }
+
+  if (lastMatch && lastMatch[1]) {
+    return {
+      timestamp: lastMatch[1],
+      position: lastMatch.index,
+    };
+  }
+  return null;
+}
+
+/**
+ * Find the position in chunk where a timestamp line starts.
+ * Returns the position of the newline before the timestamp (or 0 if at start).
+ */
+function findTimestampLineStart(chunk: string, timestamp: string): number | null {
+  // Look for the timestamp at the start of a line
+  const pattern = new RegExp(`(^|\\n)(\\[${timestamp.replace('.', '\\.')}\\])`, 'g');
+  const match = pattern.exec(chunk);
+
+  if (match) {
+    // Return position right after the newline (or 0 if at start)
+    return match[1] === '\n' ? match.index + 1 : match.index;
+  }
+  return null;
+}
+
+/**
+ * Check if text ends with a complete line (ends with newline or is empty).
+ */
+function endsWithCompleteLine(text: string): boolean {
+  return text.length === 0 || text.endsWith('\n');
+}
+
+/**
+ * Remove the last incomplete line from text and return both parts.
+ */
+function splitAtLastCompleteLine(text: string): { complete: string; incomplete: string } {
+  const lastNewline = text.lastIndexOf('\n');
+  if (lastNewline === -1) {
+    return { complete: '', incomplete: text };
+  }
+  return {
+    complete: text.slice(0, lastNewline + 1),
+    incomplete: text.slice(lastNewline + 1),
+  };
+}
+
+/**
  * Deduplicate overlapping text from corrected chunks.
- * Removes overlap characters from the beginning of each chunk (except the first).
+ * Uses timestamp-aware joining to prevent merged lines and data loss.
+ *
+ * Strategy:
+ * 1. If chunk ends mid-line, find that line's timestamp
+ * 2. Look for that timestamp in the next chunk's overlap region
+ * 3. Use the next chunk's complete version of that line
+ *
+ * This handles LLM corrections that change character counts in overlap regions.
  *
  * @param correctedChunks - Array of corrected chunk texts
- * @param overlapSize - Number of characters to remove from start of each chunk
+ * @param overlapSize - Approximate number of overlap characters (used as fallback hint)
  * @returns Deduplicated concatenated text
  */
 export function deduplicateChunks(
@@ -50,17 +117,97 @@ export function deduplicateChunks(
   overlapSize: number,
 ): string {
   if (correctedChunks.length === 0) return '';
+  if (correctedChunks.length === 1) return correctedChunks[0] ?? '';
 
-  // First chunk has no leading overlap
+  // Start with the first chunk
   let result = correctedChunks[0] ?? '';
 
-  // Remove overlap from subsequent chunks
+  // Process subsequent chunks
   for (let i = 1; i < correctedChunks.length; i++) {
     const chunk = correctedChunks[i];
-    if (chunk) {
-      const trimmed = chunk.slice(overlapSize);
-      result += trimmed;
+    if (!chunk) continue;
+
+    let trimStart: number | null = null; // null means not found yet
+    let resultTrimEnd = result.length; // How much of result to keep
+
+    // Check if result ends with incomplete line
+    if (!endsWithCompleteLine(result)) {
+      const { complete, incomplete } = splitAtLastCompleteLine(result);
+
+      // Find the timestamp of the incomplete line
+      const incompleteTs = findLastTimestamp(incomplete);
+
+      if (incompleteTs) {
+        // Look for this timestamp in the new chunk
+        const tsInChunk = findTimestampLineStart(chunk, incompleteTs.timestamp);
+
+        if (tsInChunk !== null) {
+          // Found it! Remove incomplete line from result, start chunk from this timestamp
+          resultTrimEnd = complete.length;
+          trimStart = tsInChunk;
+        }
+      }
+
+      // If we couldn't find the timestamp, try matching the last complete line's timestamp
+      if (trimStart === null && complete.length > 0) {
+        const lastCompleteTs = findLastTimestamp(complete);
+        if (lastCompleteTs) {
+          const tsInChunk = findTimestampLineStart(chunk, lastCompleteTs.timestamp);
+          if (tsInChunk !== null) {
+            resultTrimEnd = complete.length;
+            // Skip to AFTER this line in chunk (it's already in result)
+            const afterTs = chunk.slice(tsInChunk);
+            const nextLineStart = afterTs.indexOf('\n');
+            trimStart = nextLineStart !== -1 ? tsInChunk + nextLineStart + 1 : chunk.length;
+          }
+        }
+      }
+    } else {
+      // Result ends with complete line - find last timestamp and match in chunk
+      const lastTs = findLastTimestamp(result);
+
+      if (lastTs) {
+        const tsInChunk = findTimestampLineStart(chunk, lastTs.timestamp);
+
+        if (tsInChunk !== null) {
+          // Found the timestamp - start from the NEXT line (skip the duplicate)
+          const afterTs = chunk.slice(tsInChunk);
+          const nextLineStart = afterTs.indexOf('\n');
+          trimStart = nextLineStart !== -1 ? tsInChunk + nextLineStart + 1 : chunk.length;
+        }
+      }
     }
+
+    // Fallback: if we couldn't find matching timestamps, use approximate overlap
+    if (trimStart === null) {
+      // Look for the first timestamp line after approximately half the overlap
+      const searchStart = Math.max(0, Math.floor(overlapSize * 0.5));
+      const searchRegion = chunk.slice(searchStart, Math.min(chunk.length, overlapSize * 2));
+
+      // Find first newline followed by a timestamp
+      const tsPattern = /\n(\[[0-9]{1,2}:[0-9]{2}:[0-9]{2})/;
+      const match = tsPattern.exec(searchRegion);
+
+      if (match?.index !== undefined) {
+        trimStart = searchStart + match.index + 1;
+      } else {
+        // Last resort: find any newline after overlap point
+        const afterOverlap = chunk.slice(overlapSize);
+        const newlinePos = afterOverlap.indexOf('\n');
+        trimStart = newlinePos !== -1 ? overlapSize + newlinePos + 1 : overlapSize;
+      }
+    }
+
+    // Apply trims
+    result = result.slice(0, resultTrimEnd);
+    const trimmed = chunk.slice(trimStart ?? 0);
+
+    // Ensure proper line separation
+    if (result.length > 0 && !result.endsWith('\n') && trimmed.length > 0) {
+      result += '\n';
+    }
+
+    result += trimmed;
   }
 
   return result;

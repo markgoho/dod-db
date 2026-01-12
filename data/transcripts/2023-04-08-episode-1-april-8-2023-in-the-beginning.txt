@@ -563,7 +563,8 @@
 [00:40:43.020] Dan McClellan: Welcome to our segment, What Does That Mean?
 [00:40:46.340] Dan McClellan: And yeah, this is a segment where we're going to try and lay some groundwork for the future of this podcast by describing some of the academic consensuses, some of the background, some of the stuff that we're going to refer back to regularly as we talk about the Hebrew Bible and the academic study of the Hebrew Bible, the New Testament, and religion in general.
 [00:41:10.960] Dan McClellan: And so today I want to talk about the divine name Adonai.
-[00:41:14.320] Dan McClellan: Now, as a bit of an introduction to how I talk about this, I'm not going to pronounce the name as it has.:41:22.660] Dan McClellan: the pronunciation has been reconstructed by scholars in entirely academic settings.
+[00:41:14.320] Dan McClellan: Now, as a bit of an introduction to how I talk about this, I'm not going to pronounce the name as it has.
+[00:41:22.660] Dan McClellan: The pronunciation has been reconstructed by scholars in entirely academic settings.
     [00:41:28.060] Dan McClellan: I will not use that pronunciation that is spelled Y-A-H-W-E-H. But as an accommodation to those of our listeners or viewers who are sensitive to the pronunciation of that name, I have offered to, in my social media, not pronounce that.
     [00:41:44.500] Dan McClellan: So I'm going to say Adonai.
     [00:41:46.380] Dan McClellan: And when you hear Adonai, that's the Hebrew word for Lord, that is a substitution for the divine name.
@@ -603,7 +604,8 @@
     [00:45:25.240] Dan McClellan: God.
     [00:45:25.480] Dan McClellan: So that would be the theophoric element.
     [00:45:27.800] Dan McClellan: And so the kings that are referred to in the Black Obelisk of Shalmaneser III and the Tel Dan inscription have Yahwistic theophoric elements.
-    [00:45:35.800] Dan McClellan: And if the ruler of the nation consistently has this deity's name in their name, it's an indication that deity was probably pretty important within that nation..080] Dan McClellan: So Adonai was probably the patron deity of the nation of Israel by the time of these inscriptions around the middle to the end of the 9th century BCE.
+[00:45:35.800] Dan McClellan: And if the ruler of the nation consistently has this deity's name in their name, it's an indication that deity was probably pretty important within that nation.
+[00:45:48.080] Dan McClellan: So Adonai was probably the patron deity of the nation of Israel by the time of these inscriptions around the middle to the end of the 9th century BCE.
 [00:45:57.880] Dan McClellan: Now this is actually a few centuries after our earliest reference to a people known as Israel.
 [00:46:05.480] Dan McClellan: We have from around the year 1208 BCE, an inscription from Egypt that was commissioned by a king named Merneptah that refers to Israel.
 [00:46:17.720] Dan McClellan: And it carries a, what's called a determinative, which is kind of like a category sign that refers to this Israel as a people, not a nation, not a city-state, not a city, but a people, which indicates that they probably weren't an established nation by this time period, but there was some kind of band or coalition or federation of people known as Israel and People's Judea Front.
@@ -744,36 +746,37 @@
 [01:03:13.730] Dan McClellan: One of the, I think one of the most fascinating aspects of looking at how Adonai has come in and kind of appropriated Baal's divine profile is we have some poetry in the Hebrew Bible where it seems an awful lot like the authors just took poetry that was written in praise of Baal and just wrote Adonai's name in instead.
 [01:03:36.450] Dan McClellan: And there are two instances of these.
 [01:03:38.410] Dan McClellan: One is a little less explicit, and one I think is pretty darn explicit.
-[01:03:42.900] Dan McClellan: The less explicit one is Psalm 29, which praises Adonai.. 620] Dan McClellan: And it talks seven times about the voice of Adonai and talks about the voice of Adonai as thunder, as lightning, as violent weather.
-[01:03:57. 620] Dan McClellan: And it talks about three different place names.
-[01:04:01. 220] Dan McClellan: None of them are in Israel, though they're all north of Israel in what would have been Phoenicia at the time.
-[01:04:08. 510] Dan McClellan: And Phoenicia is a place where the patron deity was Baal.
-[01:04:13. 310] Dan McClellan: And so this was likely some poetry praising Baal as the storm deity that was appropriated.
-[01:04:20. 990] Dan McClellan: And somebody went in and erased Baal's name and
-[01:04:25. 310] Dan McClellan: wrote Adonai instead.
-[01:04:27. 550] Dan McClellan: And then another one where we actually have the smoking gun, so to speak, is Isaiah 27:1, where we have this prophecy that Adonai will defeat Leviathan, this kind of mythological dragon slash serpent.
-[01:04:44. 200] Dan McClellan: And it says that Adonai will defeat the wriggling serpent, will defeat the twisting serpent, the dragon that lives in the sea.
-[01:04:53. 880] Dan McClellan: And these are—
-[01:04:54. 640] Dan McClellan: this is interesting poetry, but among those Ugaritic texts that I referenced earlier, there's a discussion of Baal as the one who beat Lotan.
-[01:05:05. 110] Dan McClellan: And this is the Ugaritic counterpart to the name Leviathan.
-[01:05:09. 350] Dan McClellan: And the text says, Baal defeated the wriggling serpent, Baal defeated the twisting serpent, Baal defeated the dragon with seven heads.
-[01:05:19. 110] Dan McClellan: And this comes from 500 years before Isaiah.
-[01:05:23. 590] Dan Beecher: Wow.
-[01:05:23. 950] Dan McClellan: But the—
-[01:05:24. 950] Dan McClellan: it is written in another language, but the words are directly cognate.
-[01:05:29. 880] Dan McClellan: And so very clearly, whoever wrote Isaiah 27:1 was borrowing from, at some point, somehow this literature, this poetry had filtered down to something in Hebrew.
-[01:05:41. 880] Dan McClellan: And they borrowed from this literature that originally was praise of Baal.
-[01:05:47. 480] Dan McClellan: And so I think this is another piece of the puzzle that suggests that Adonai originates in a storm deity, this youthful warrior deity who is in charge of violent weather.
-[01:05:59. 920] Dan McClellan: And they get incorporated into this pantheon and get merged with this deity who is not a youthful violent warrior, but an aged, benevolent high deity.
-[01:06:11. 440] Dan McClellan: And then we have both of these images of God filtering down throughout the discussion
-[01:06:18. 640] Dan McClellan: of deity in the rest of the Bible.
-[01:06:20. 480] Dan McClellan: I think it's a fascinating story and I hope we discover more things about the origins of Adonai in the future.
-[01:06:28. 580] Dan Beecher: That is fascinating.
-[01:06:30. 020] Dan Beecher: I love all of that.
-[01:06:31. 460] Dan Beecher: Thank you so much.
-[01:06:32. 260] Dan Beecher: That'll be useful as we continue to explore the Bible and we'll do more of those going forward.
-[01:06:40. 020] Dan Beecher: Well, that's our show, friends.
-[01:06:42. 340] Dan Beecher: Thanks so much for tuning in.
-[01:06:43. 980] Dan Beecher: We sure do appreciate it.
-[01:06:45. 860] Dan Beecher: And we will talk to you again next week.
-[01:06:48. 980] Dan McClellan: Bye, everybody.
+[01:03:42.900] Dan McClellan: The less explicit one is Psalm 29, which praises Adonai.
+[01:03:47.620] Dan McClellan: And it talks seven times about the voice of Adonai and talks about the voice of Adonai as thunder, as lightning, as violent weather.
+[01:03:57.620] Dan McClellan: And it talks about three different place names.
+[01:04:01.220] Dan McClellan: None of them are in Israel, though they're all north of Israel in what would have been Phoenicia at the time.
+[01:04:08.510] Dan McClellan: And Phoenicia is a place where the patron deity was Baal.
+[01:04:13.310] Dan McClellan: And so this was likely some poetry praising Baal as the storm deity that was appropriated.
+[01:04:20.990] Dan McClellan: And somebody went in and erased Baal's name and
+[01:04:25.310] Dan McClellan: wrote Adonai instead.
+[01:04:27.550] Dan McClellan: And then another one where we actually have the smoking gun, so to speak, is Isaiah 27:1, where we have this prophecy that Adonai will defeat Leviathan, this kind of mythological dragon slash serpent.
+[01:04:44.200] Dan McClellan: And it says that Adonai will defeat the wriggling serpent, will defeat the twisting serpent, the dragon that lives in the sea.
+[01:04:53.880] Dan McClellan: And these are—
+[01:04:54.640] Dan McClellan: this is interesting poetry, but among those Ugaritic texts that I referenced earlier, there's a discussion of Baal as the one who beat Lotan.
+[01:05:05.110] Dan McClellan: And this is the Ugaritic counterpart to the name Leviathan.
+[01:05:09.350] Dan McClellan: And the text says, Baal defeated the wriggling serpent, Baal defeated the twisting serpent, Baal defeated the dragon with seven heads.
+[01:05:19.110] Dan McClellan: And this comes from 500 years before Isaiah.
+[01:05:23.590] Dan Beecher: Wow.
+[01:05:23.950] Dan McClellan: But the—
+[01:05:24.950] Dan McClellan: it is written in another language, but the words are directly cognate.
+[01:05:29.880] Dan McClellan: And so very clearly, whoever wrote Isaiah 27:1 was borrowing from, at some point, somehow this literature, this poetry had filtered down to something in Hebrew.
+[01:05:41.880] Dan McClellan: And they borrowed from this literature that originally was praise of Baal.
+[01:05:47.480] Dan McClellan: And so I think this is another piece of the puzzle that suggests that Adonai originates in a storm deity, this youthful warrior deity who is in charge of violent weather.
+[01:05:59.920] Dan McClellan: And they get incorporated into this pantheon and get merged with this deity who is not a youthful violent warrior, but an aged, benevolent high deity.
+[01:06:11.440] Dan McClellan: And then we have both of these images of God filtering down throughout the discussion
+[01:06:18.640] Dan McClellan: of deity in the rest of the Bible.
+[01:06:20.480] Dan McClellan: I think it's a fascinating story and I hope we discover more things about the origins of Adonai in the future.
+[01:06:28.580] Dan Beecher: That is fascinating.
+[01:06:30.020] Dan Beecher: I love all of that.
+[01:06:31.460] Dan Beecher: Thank you so much.
+[01:06:32.260] Dan Beecher: That'll be useful as we continue to explore the Bible and we'll do more of those going forward.
+[01:06:40.020] Dan Beecher: Well, that's our show, friends.
+[01:06:42.340] Dan Beecher: Thanks so much for tuning in.
+[01:06:43.980] Dan Beecher: We sure do appreciate it.
+[01:06:45.860] Dan Beecher: And we will talk to you again next week.
+[01:06:48.980] Dan McClellan: Bye, everybody.
