@@ -3527,7 +3527,165 @@
       "firstSeen": "2026-01-11T22:37:57.104Z",
       "lastSeen": "2026-01-11T22:37:57.104Z",
       "status": "pending"
+    },
+    "3611→3711": {
+      "original": "3611",
+      "corrected": "3711",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "Xtm9DX_0Rx0"
+      ],
+      "examples": [
+        "\"is Psalm 36:11, but it's\"",
+        "\"translations, it's 3611.\""
+      ],
+      "correctedExamples": [
+        "\"is Psalm 37:11, but it's\"",
+        "\"translations, it's 37:11.\""
+      ],
+      "timestamps": [
+        "00:22:25.310",
+        "00:23:11.420"
+      ],
+      "episodeIds": [
+        "Xtm9DX_0Rx0",
+        "Xtm9DX_0Rx0"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-11T23:51:55.955Z",
+      "lastSeen": "2026-01-11T23:51:55.955Z",
+      "status": "pending"
+    },
+    "prais→praus": {
+      "original": "prais",
+      "corrected": "praus",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "Xtm9DX_0Rx0"
+      ],
+      "examples": [
+        "\"this word prais, which means\"",
+        "\"the word prais.\"",
+        "\"to be prais.\""
+      ],
+      "correctedExamples": [
+        "\"this word praus, which means\"",
+        "\"the word praus,\"",
+        "\"to be praus.\""
+      ],
+      "timestamps": [
+        "00:23:30.040",
+        "01:00:46.420",
+        "01:02:18.420"
+      ],
+      "episodeIds": [
+        "Xtm9DX_0Rx0",
+        "Xtm9DX_0Rx0",
+        "Xtm9DX_0Rx0"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-11T23:51:55.955Z",
+      "lastSeen": "2026-01-11T23:51:55.955Z",
+      "status": "pending"
+    },
+    "Pastoral epistles→Pastoral Epistles": {
+      "original": "Pastoral epistles",
+      "corrected": "Pastoral Epistles",
+      "category": "capitalization",
+      "totalOccurrences": 5,
+      "episodeCount": 1,
+      "episodes": [
+        "sVplhtKv9Jc"
+      ],
+      "examples": [
+        "\"that the Pastoral epistles give people\"",
+        "\"what the Pastoral epistles are as\"",
+        "\"So the Pastoral epistles are first\""
+      ],
+      "correctedExamples": [
+        "\"that the Pastoral Epistles give people\"",
+        "\"what the Pastoral Epistles are as\"",
+        "\"So the Pastoral Epistles are First\""
+      ],
+      "timestamps": [
+        "00:24:33.910",
+        "00:24:50.710",
+        "00:25:11.270"
+      ],
+      "episodeIds": [
+        "sVplhtKv9Jc",
+        "sVplhtKv9Jc",
+        "sVplhtKv9Jc"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-12T00:07:44.268Z",
+      "lastSeen": "2026-01-12T00:07:44.268Z",
+      "status": "pending"
+    },
+    "your gentile→your Gentile": {
+      "original": "your gentile",
+      "corrected": "your Gentile",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "sVplhtKv9Jc"
+      ],
+      "examples": [
+        "\"of, look, your gentile situation.\"",
+        "\"law to your gentile problem is\""
+      ],
+      "correctedExamples": [
+        "\"of, look, your Gentile situation.\"",
+        "\"law to your Gentile problem is\""
+      ],
+      "timestamps": [
+        "00:30:57.310",
+        "00:31:15.300"
+      ],
+      "episodeIds": [
+        "sVplhtKv9Jc",
+        "sVplhtKv9Jc"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-12T00:07:44.268Z",
+      "lastSeen": "2026-01-12T00:07:44.268Z",
+      "status": "pending"
+    },
+    "Harold→herald": {
+      "original": "Harold",
+      "corrected": "herald",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "sVplhtKv9Jc"
+      ],
+      "examples": [
+        "\"went with Harold, I wasn't\"",
+        "\"sure, envoy, Harold, whatever, but\""
+      ],
+      "correctedExamples": [
+        "\"went with herald, I wasn't\"",
+        "\"sure, envoy, herald, whatever, but\""
+      ],
+      "timestamps": [
+        "00:32:07.830",
+        "00:32:07.830"
+      ],
+      "episodeIds": [
+        "sVplhtKv9Jc",
+        "sVplhtKv9Jc"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-12T00:07:44.268Z",
+      "lastSeen": "2026-01-12T00:07:44.268Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-11T22:37:57.104Z"
+  "lastUpdated": "2026-01-12T00:07:44.268Z"
 }
