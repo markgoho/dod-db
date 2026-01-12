@@ -1243,9 +1243,30 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:00:42.410]",
-        "confidence": "auto",
+        "endTimestamp": "[00:03:11.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
+      },
+      {
+        "type": "conspiracy-watch",
+        "startTimestamp": "[00:03:11.000]",
+        "endTimestamp": "[00:35:20.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:35:20.000]",
+        "endTimestamp": "[01:01:01.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:01:01.000]",
+        "endTimestamp": "[01:01:50.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
@@ -1354,9 +1375,16 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[01:12:42.010]",
-        "confidence": "auto",
+        "endTimestamp": "[00:02:39.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:02:39.000]",
+        "endTimestamp": "[01:12:54.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
@@ -1513,16 +1541,23 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[01:17:29.450]",
-        "confidence": "auto",
+        "endTimestamp": "[00:03:09.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
+        "type": "main-content",
+        "startTimestamp": "[00:03:09.000]",
+        "endTimestamp": "[01:16:53.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
         "type": "outro",
-        "startTimestamp": "[01:17:29.450]",
-        "endTimestamp": "[01:17:38.580]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "startTimestamp": "[01:16:53.000]",
+        "endTimestamp": "[01:17:50.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
@@ -1623,9 +1658,23 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:01:01.260]",
-        "confidence": "auto",
+        "endTimestamp": "[00:01:13.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:13.000]",
+        "endTimestamp": "[01:09:51.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:09:51.000]",
+        "endTimestamp": "[01:10:50.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
@@ -1738,29 +1787,29 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:00:34.620]",
-        "confidence": "auto",
+        "endTimestamp": "[00:05:16.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
-        "type": "all-right-lets-see-it",
-        "startTimestamp": "[00:00:21.920]",
+        "type": "archaeology-of-israel",
+        "startTimestamp": "[00:05:16.000]",
         "endTimestamp": "[00:37:04.590]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "all-right-lets-see-it",
         "startTimestamp": "[00:37:04.590]",
-        "endTimestamp": "[00:58:02.150]",
-        "confidence": "auto",
+        "endTimestamp": "[00:57:05.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "outro",
-        "startTimestamp": "[00:58:02.150]",
+        "startTimestamp": "[00:57:05.000]",
         "endTimestamp": "[00:58:03.590]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
@@ -1866,15 +1915,29 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:01:03.740]",
-        "confidence": "auto",
+        "endTimestamp": "[00:02:46.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
+        "type": "whos-that",
+        "startTimestamp": "[00:02:46.000]",
+        "endTimestamp": "[00:27:20.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:27:20.000]",
+        "endTimestamp": "[00:56:56.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
         "type": "outro",
-        "startTimestamp": "[00:57:46.340]",
+        "startTimestamp": "[00:56:56.000]",
         "endTimestamp": "[00:57:59.190]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]

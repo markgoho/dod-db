@@ -889,10 +889,12 @@
         }
 
         // Insert new segment at the correct position
+        // If inserting at end, use audio duration for end timestamp
         const newSegment = {
           type: "main-content",
           startTimestamp: newStartTimestamp,
-          endTimestamp: segments[insertIndex]?.startTimestamp || null,
+          endTimestamp: segments[insertIndex]?.startTimestamp ||
+            (audioElement?.duration ? formatSecondsToTimestamp(audioElement.duration) : null),
           confidence: "auto",
           detectionMethod: "manual",
         };

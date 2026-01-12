@@ -9,6 +9,9 @@ export type SegmentType =
   | 'urban-legends'
   | 'mcclellan-911'
   | 'is-it-canon'
+  | 'conspiracy-watch'
+  | 'archaeology-of-israel'
+  | 'whos-that'
   | 'advertisement'
   | 'main-content'
   | 'outro';
@@ -24,6 +27,9 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'urban-legends': 'Urban Legends',
   'mcclellan-911': 'McClellan 911',
   'is-it-canon': 'Is it Canon?',
+  'conspiracy-watch': 'Conspiracy Watch',
+  'archaeology-of-israel': 'Archaeology of Israel',
+  'whos-that': "Who's That?",
   advertisement: 'Advertisement',
   'main-content': 'Main Content',
   outro: 'Outro',
@@ -40,6 +46,9 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'urban-legends': '#8b5cf6', // violet
   'mcclellan-911': '#ec4899', // pink
   'is-it-canon': '#14b8a6', // teal
+  'conspiracy-watch': '#dc2626', // red-600 (darker red)
+  'archaeology-of-israel': '#a16207', // yellow-700 (bronze/earth tone)
+  'whos-that': '#0ea5e9', // sky-500 (sky blue)
   advertisement: '#f97316', // orange
   'main-content': '#64748b', // slate
   outro: '#6366f1', // indigo (same as intro)
@@ -81,6 +90,18 @@ export const SEGMENT_PATTERNS: Record<
   'is-it-canon': [
     /is it canon\?/i,
     /welcome to.*is it canon/i,
+  ],
+  'conspiracy-watch': [/conspiracy watch/i,
+    /welcome to.*conspiracy watch/i,
+    /But for now, let\'s get on Conspiracy Watch\./i,
+  ],
+  'archaeology-of-israel': [/archaeology of israel/i,
+    /welcome to.*archaeology of israel/i,
+    /Let\'s look at archaeology of Israel\./i,
+  ],
+  'whos-that': [
+    /who'?s that\?/i,
+    /welcome to.*who'?s that/i,
   ],
   advertisement: [/support the (data over dogma )?podcast/i,
     /become a patron/i,
