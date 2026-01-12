@@ -2828,9 +2828,37 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:00:32.740]",
-        "confidence": "auto",
+        "endTimestamp": "[00:01:18.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
+      },
+      {
+        "type": "by-the-numbers",
+        "startTimestamp": "[00:01:18.000]",
+        "endTimestamp": "[00:25:36.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "advertisement",
+        "startTimestamp": "[00:25:36.000]",
+        "endTimestamp": "[00:26:32.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:26:32.000]",
+        "endTimestamp": "[00:56:12.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:56:12.000]",
+        "endTimestamp": "[00:57:11.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
@@ -2943,15 +2971,36 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:00:39.980]",
-        "confidence": "auto",
+        "endTimestamp": "[00:02:06.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
+        "type": "thats-history",
+        "startTimestamp": "[00:02:06.000]",
+        "endTimestamp": "[00:32:34.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "advertisement",
+        "startTimestamp": "[00:32:34.000]",
+        "endTimestamp": "[00:33:30.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:33:30.000]",
+        "endTimestamp": "[01:02:34.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
         "type": "outro",
-        "startTimestamp": "[01:03:06.400]",
+        "startTimestamp": "[01:02:34.000]",
         "endTimestamp": "[01:03:17.540]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
@@ -3057,9 +3106,23 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:00:49.010]",
-        "confidence": "auto",
+        "endTimestamp": "[00:01:19.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:19.000]",
+        "endTimestamp": "[01:03:13.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:03:13.000]",
+        "endTimestamp": "[01:04:06.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
@@ -3132,15 +3195,22 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:00:48.300]",
-        "confidence": "auto",
+        "endTimestamp": "[00:01:18.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
+        "type": "main-content",
+        "startTimestamp": "[00:01:18.000]",
+        "endTimestamp": "[00:57:56.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
         "type": "outro",
-        "startTimestamp": "[00:58:40.200]",
+        "startTimestamp": "[00:57:56.000]",
         "endTimestamp": "[00:58:41.720]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
@@ -3198,15 +3268,22 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[01:01:49.690]",
-        "confidence": "auto",
+        "endTimestamp": "[00:01:19.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
+        "type": "main-content",
+        "startTimestamp": "[00:01:19.000]",
+        "endTimestamp": "[01:01:07.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
         "type": "outro",
-        "startTimestamp": "[01:01:49.690]",
+        "startTimestamp": "[01:01:07.000]",
         "endTimestamp": "[01:01:51.490]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
