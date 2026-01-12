@@ -12,6 +12,11 @@ export type SegmentType =
   | 'conspiracy-watch'
   | 'archaeology-of-israel'
   | 'whos-that'
+  | 'women-in-the-bible'
+  | 'thats-history'
+  | 'know-your-bible'
+  | 'could-it-be-satan'
+  | 'by-the-numbers'
   | 'advertisement'
   | 'main-content'
   | 'outro';
@@ -30,6 +35,11 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'conspiracy-watch': 'Conspiracy Watch',
   'archaeology-of-israel': 'Archaeology of Israel',
   'whos-that': "Who's That?",
+  'women-in-the-bible': 'Women in the Bible',
+  'thats-history': "That's History",
+  'know-your-bible': 'Know Your Bible',
+  'could-it-be-satan': 'Could it be Satan?',
+  'by-the-numbers': 'By the Numbers',
   advertisement: 'Advertisement',
   'main-content': 'Main Content',
   outro: 'Outro',
@@ -49,6 +59,11 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'conspiracy-watch': '#dc2626', // red-600 (darker red)
   'archaeology-of-israel': '#a16207', // yellow-700 (bronze/earth tone)
   'whos-that': '#0ea5e9', // sky-500 (sky blue)
+  'women-in-the-bible': '#db2777', // pink-600 (rose)
+  'thats-history': '#84cc16', // lime-500 (lime green)
+  'know-your-bible': '#10b981', // emerald-500
+  'could-it-be-satan': '#7c3aed', // violet-600 (deep purple)
+  'by-the-numbers': '#06b6d4', // cyan-500
   advertisement: '#f97316', // orange
   'main-content': '#64748b', // slate
   outro: '#6366f1', // indigo (same as intro)
@@ -102,6 +117,26 @@ export const SEGMENT_PATTERNS: Record<
   'whos-that': [
     /who'?s that\?/i,
     /welcome to.*who'?s that/i,
+  ],
+  'women-in-the-bible': [/women in the bible/i,
+    /welcome to.*women in the bible/i,
+    /We\'re introducing this new segment, Women in the Bible, beca/i,
+  ],
+  'thats-history': [
+    /that'?s history/i,
+    /welcome to.*that'?s history/i,
+  ],
+  'know-your-bible': [/know your bible/i,
+    /welcome to.*know your bible/i,
+    /So on this edition of Know Your Bible, we\'re going to jump o/i,
+  ],
+  'could-it-be-satan': [
+    /could it be satan\??/i,
+    /welcome to.*could it be satan/i,
+  ],
+  'by-the-numbers': [
+    /by the numbers/i,
+    /welcome to.*by the numbers/i,
   ],
   advertisement: [/support the (data over dogma )?podcast/i,
     /become a patron/i,
