@@ -2075,29 +2075,29 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:00:56.140]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
-      },
-      {
-        "type": "all-right-lets-see-it",
-        "startTimestamp": "[00:03:02.230]",
         "endTimestamp": "[00:03:28.670]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "all-right-lets-see-it",
         "startTimestamp": "[00:03:28.670]",
-        "endTimestamp": "[00:57:48.030]",
-        "confidence": "auto",
+        "endTimestamp": "[00:36:10.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:36:10.000]",
+        "endTimestamp": "[00:57:17.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
         "type": "outro",
-        "startTimestamp": "[00:57:48.030]",
+        "startTimestamp": "[00:57:17.000]",
         "endTimestamp": "[00:57:53.800]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
