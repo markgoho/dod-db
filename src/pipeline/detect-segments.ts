@@ -3,11 +3,54 @@
  * Detects recurring podcast segments by matching verbal markers in transcripts.
  */
 
+import { join } from 'node:path';
 import {
   SEGMENT_PATTERNS,
   INTRO_END_PATTERNS,
   type SegmentType,
 } from '../config/segment-patterns.js';
+
+/**
+ * Get audio duration in seconds using ffprobe.
+ * Returns null if the file doesn't exist or ffprobe fails.
+ */
+export async function getAudioDuration(videoId: string): Promise<number | null> {
+  const audioDir = join(process.cwd(), 'data', 'audio');
+
+  // Try common audio extensions
+  const extensions = ['.m4a', '.webm', '.mp3', '.wav'];
+
+  for (const ext of extensions) {
+    const audioPath = join(audioDir, `${videoId}${ext}`);
+    const file = Bun.file(audioPath);
+
+    if (await file.exists()) {
+      try {
+        const proc = Bun.spawn([
+          'ffprobe',
+          '-v',
+          'quiet',
+          '-show_entries',
+          'format=duration',
+          '-of',
+          'csv=p=0',
+          audioPath,
+        ]);
+
+        const output = await new Response(proc.stdout).text();
+        const duration = Number.parseFloat(output.trim());
+
+        if (!Number.isNaN(duration)) {
+          return duration;
+        }
+      } catch {
+        // ffprobe failed, try next extension
+      }
+    }
+  }
+
+  return null;
+}
 
 /**
  * A detected segment in an episode.
@@ -91,6 +134,19 @@ function timestampToSeconds(timestamp: string): number {
 }
 
 /**
+ * Convert seconds to timestamp string format.
+ */
+export function secondsToTimestamp(totalSeconds: number): string {
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  const ms = Math.floor((seconds % 1) * 1000);
+  const wholeSeconds = Math.floor(seconds);
+
+  return `[${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${wholeSeconds.toString().padStart(2, '0')}.${ms.toString().padStart(3, '0')}]`;
+}
+
+/**
  * Find all segment matches in a transcript.
  */
 function findSegmentMatches(lines: TranscriptLine[]): SegmentMatch[] {
@@ -139,9 +195,13 @@ function findIntroEnd(lines: TranscriptLine[]): string | null {
  * Detect segments in a transcript.
  *
  * @param transcript - Raw transcript text
+ * @param durationSeconds - Optional episode duration in seconds (for accurate end timestamp)
  * @returns Array of detected segments
  */
-export function detectSegments(transcript: string): Segment[] {
+export function detectSegments(
+  transcript: string,
+  durationSeconds?: number,
+): Segment[] {
   const lines = parseTranscript(transcript);
   if (lines.length === 0) {
     return [];
@@ -150,9 +210,11 @@ export function detectSegments(transcript: string): Segment[] {
   const segments: Segment[] = [];
   const matches = findSegmentMatches(lines);
 
-  // Get last timestamp (safe because we checked lines.length > 0)
+  // Get last timestamp - use actual duration if provided, otherwise fall back to last transcript line
   const lastLine = lines[lines.length - 1]!;
-  const lastTimestamp = lastLine.timestamp;
+  const episodeEndTimestamp = durationSeconds
+    ? secondsToTimestamp(durationSeconds)
+    : lastLine.timestamp;
 
   // Find intro end
   const introEnd = findIntroEnd(lines);
@@ -160,7 +222,7 @@ export function detectSegments(transcript: string): Segment[] {
   // Always add intro segment (from 00:00:00 to intro end or first segment match)
   const firstMatch = matches[0];
   const introEndTime =
-    introEnd ?? (firstMatch ? firstMatch.timestamp : lastTimestamp);
+    introEnd ?? (firstMatch ? firstMatch.timestamp : episodeEndTimestamp);
   segments.push({
     type: 'intro',
     startTimestamp: '[00:00:00.000]',
@@ -180,9 +242,8 @@ export function detectSegments(transcript: string): Segment[] {
     let endTimestamp: string | null = null;
     if (nextMatch) {
       endTimestamp = nextMatch.timestamp;
-    } else if (match.type === 'outro') {
-      endTimestamp = lastTimestamp;
     }
+    // Note: last segment's endTimestamp will be set below
 
     segments.push({
       type: match.type,
@@ -192,6 +253,14 @@ export function detectSegments(transcript: string): Segment[] {
       detectionMethod: 'pattern',
       matchedPattern: match.matchedPattern,
     });
+  }
+
+  // Ensure the last segment ends at the episode's end
+  if (segments.length > 0) {
+    const lastSegment = segments[segments.length - 1]!;
+    if (!lastSegment.endTimestamp) {
+      lastSegment.endTimestamp = episodeEndTimestamp;
+    }
   }
 
   return segments;
