@@ -849,6 +849,7 @@
         if (ts) {
           selectedEpisode.segments[index].startTimestamp = ts;
           selectedEpisode.segments[index].confidence = "auto";
+          updateTimeline();
         }
       }
 
@@ -857,6 +858,7 @@
         const ts = value ? parseTimestamp(value) : null;
         selectedEpisode.segments[index].endTimestamp = ts;
         selectedEpisode.segments[index].confidence = "auto";
+        updateTimeline();
       }
 
       function addSegment() {
@@ -866,23 +868,120 @@
         }
 
         const currentTime = audioElement?.currentTime || 0;
-        selectedEpisode.segments.push({
+        const newStartTimestamp = formatSecondsToTimestamp(currentTime);
+
+        // Find where to insert based on timestamp order
+        const segments = selectedEpisode.segments;
+        let insertIndex = segments.length; // Default: end of list
+
+        for (let i = 0; i < segments.length; i++) {
+          const segStart = timestampToSeconds(segments[i].startTimestamp);
+          if (currentTime < segStart) {
+            insertIndex = i;
+            break;
+          }
+        }
+
+        // Update previous segment's end timestamp to match new segment's start
+        if (insertIndex > 0) {
+          segments[insertIndex - 1].endTimestamp = newStartTimestamp;
+          segments[insertIndex - 1].confidence = "auto";
+        }
+
+        // Insert new segment at the correct position
+        const newSegment = {
           type: "main-content",
-          startTimestamp: formatSecondsToTimestamp(currentTime),
-          endTimestamp: null,
+          startTimestamp: newStartTimestamp,
+          endTimestamp: segments[insertIndex]?.startTimestamp || null,
           confidence: "auto",
           detectionMethod: "manual",
-        });
+        };
+
+        segments.splice(insertIndex, 0, newSegment);
+        selectedSegmentIndex = insertIndex;
 
         renderContent();
       }
 
-      function markAllVerified() {
+      async function markAllVerified() {
         if (!selectedEpisode?.segments) return;
+
+        // Find segments that might need patterns learned (manual or non-intro/outro/main-content)
+        const learnableSegments = selectedEpisode.segments.filter(seg =>
+          seg.detectionMethod === 'manual' ||
+          (seg.confidence === 'auto' && !['intro', 'outro', 'main-content'].includes(seg.type))
+        );
+
+        // Offer to learn patterns from segments
+        if (learnableSegments.length > 0 && transcriptLines.length > 0) {
+          const learn = confirm(
+            `Found ${learnableSegments.length} segment(s) that could teach new detection patterns.\n\n` +
+            `Would you like to review and add patterns for future detection?`
+          );
+
+          if (learn) {
+            for (const seg of learnableSegments) {
+              await learnPatternFromSegment(seg);
+            }
+          }
+        }
+
+        // Mark all as verified
         for (const seg of selectedEpisode.segments) {
           seg.confidence = "verified";
         }
         renderContent();
+      }
+
+      async function learnPatternFromSegment(seg) {
+        // Find the transcript line at or near this segment's start time
+        const segStart = timestampToSeconds(seg.startTimestamp);
+        let closestLine = null;
+        let closestDiff = Infinity;
+
+        for (const line of transcriptLines) {
+          const diff = Math.abs(line.seconds - segStart);
+          if (diff < closestDiff) {
+            closestDiff = diff;
+            closestLine = line;
+          }
+          if (line.seconds > segStart + 10) break;
+        }
+
+        if (!closestLine) return;
+
+        const text = closestLine.text;
+        const segmentLabel = metadata.labels[seg.type] || seg.type;
+
+        // Let user edit the pattern before saving
+        const pattern = prompt(
+          `Learn pattern for "${segmentLabel}"?\n\n` +
+          `Transcript at ${closestLine.timestamp}:\n"${text}"\n\n` +
+          `Edit to create a reusable pattern (or Cancel to skip):`,
+          text.slice(0, 60)
+        );
+
+        if (!pattern) return; // User cancelled
+
+        try {
+          const res = await fetch('/api/patterns/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              segmentType: seg.type,
+              pattern: pattern.trim(),
+            }),
+          });
+
+          const data = await res.json();
+          if (!res.ok) {
+            throw new Error(data.error || 'Failed to add pattern');
+          }
+
+          showToast(`Pattern learned for ${segmentLabel}!`, 'success');
+        } catch (error) {
+          showToast(error.message, 'error');
+        }
       }
 
       async function saveSegments() {

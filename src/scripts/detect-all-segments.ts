@@ -3,7 +3,8 @@
  *
  * Usage:
  *   bun run src/scripts/detect-all-segments.ts              # Process episodes without segments
- *   bun run src/scripts/detect-all-segments.ts --force      # Reprocess all episodes
+ *   bun run src/scripts/detect-all-segments.ts --force      # Reprocess unverified episodes
+ *   bun run src/scripts/detect-all-segments.ts --force-verified  # Reprocess ALL (including verified)
  *   bun run src/scripts/detect-all-segments.ts --verbose    # Show detailed per-episode logs
  *   bun run src/scripts/detect-all-segments.ts --dry-run    # Show what would be detected without saving
  */
@@ -30,11 +31,14 @@ async function main() {
 
   // Parse CLI arguments
   const force = process.argv.includes('--force');
+  const forceVerified = process.argv.includes('--force-verified');
   const verbose = process.argv.includes('--verbose');
   const dryRun = process.argv.includes('--dry-run');
 
-  if (force) {
-    console.log('⚠️  Force mode: Reprocessing ALL episodes\n');
+  if (forceVerified) {
+    console.log('⚠️  Force-verified mode: Reprocessing ALL episodes including verified\n');
+  } else if (force) {
+    console.log('⚠️  Force mode: Reprocessing unverified episodes (skipping verified)\n');
   }
   if (dryRun) {
     console.log('🔍 Dry run mode: No changes will be saved\n');
@@ -47,15 +51,44 @@ async function main() {
   const videos = await loadProcessedVideos();
   console.log(`Found ${videos.length} processed episodes\n`);
 
+  // Helper to check if an episode has any verified segments
+  const hasVerifiedSegments = (v: typeof videos[0]) =>
+    v.segments?.some((s) => s.confidence === 'verified') ?? false;
+
   // Filter videos to process
-  const toProcess = force
-    ? videos
-    : videos.filter((v) => !v.segments || v.segments.length === 0);
+  let toProcess: typeof videos;
+  let skippedVerified: typeof videos = [];
+
+  if (forceVerified) {
+    // Process everything, including verified
+    toProcess = videos;
+  } else if (force) {
+    // Process all except verified
+    skippedVerified = videos.filter(hasVerifiedSegments);
+    toProcess = videos.filter((v) => !hasVerifiedSegments(v));
+  } else {
+    // Only process episodes without segments
+    toProcess = videos.filter((v) => !v.segments || v.segments.length === 0);
+  }
 
   if (toProcess.length === 0) {
     console.log('✅ All episodes already have segments detected.');
-    console.log('   Use --force to reprocess all episodes.');
+    if (skippedVerified.length > 0) {
+      console.log(`   Skipped ${skippedVerified.length} episode(s) with verified segments.`);
+      console.log('   Use --force-verified to reprocess verified episodes.');
+    } else {
+      console.log('   Use --force to reprocess all episodes.');
+    }
     return;
+  }
+
+  // Show skipped verified episodes
+  if (skippedVerified.length > 0) {
+    console.log(`⏭️  Skipping ${skippedVerified.length} episode(s) with verified segments:`);
+    for (const v of skippedVerified) {
+      console.log(`   - Episode ${v.episodeNumber}: ${v.title}`);
+    }
+    console.log();
   }
 
   console.log(`Processing ${toProcess.length} episodes...\n`);

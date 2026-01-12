@@ -202,12 +202,13 @@ export async function updateVideoSegments(
   const videos = await loadProcessedVideos();
   const index = videos.findIndex((v) => v.videoId === videoId);
 
-  if (index === -1) {
+  const existingVideo = videos[index];
+  if (index === -1 || !existingVideo) {
     throw new Error(`Video not found: ${videoId}`);
   }
 
   videos[index] = {
-    ...videos[index],
+    ...existingVideo,
     segments,
   };
 

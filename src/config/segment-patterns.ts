@@ -54,16 +54,17 @@ export const SEGMENT_PATTERNS: Record<
   Exclude<SegmentType, 'intro' | 'main-content'>,
   RegExp[]
 > = {
-  'chapter-and-verse': [
-    /let'?s\s+(dive into|do a|start with)\s+chapter and verse/i,
+  'chapter-and-verse': [/let'?s\s+(dive into|do a|start with)\s+chapter and verse/i,
     /coming up.*chapter and verse/i,
     /before that.*chapter and verse/i,
     /let'?s\s+go\s+chapter and verse/i,
+    /In keeping with the theme today, we\'re going to do a Chapter/i,
+    /All right, well, let\'s dive into chapter and verse\./i,
   ],
-  'what-does-that-mean': [
-    /welcome to.*what does that mean/i,
+  'what-does-that-mean': [/welcome to.*what does that mean/i,
     /segment.*what does that mean/i,
     /call it what does that mean/i,
+    /For my segment, "What Does That Mean\?", we\'re going to be ta/i,
   ],
   'all-right-lets-see-it': [
     /all right,?\s+let'?s see it/i,
@@ -81,11 +82,11 @@ export const SEGMENT_PATTERNS: Record<
     /is it canon\?/i,
     /welcome to.*is it canon/i,
   ],
-  advertisement: [
-    /support the (data over dogma )?podcast/i,
+  advertisement: [/support the (data over dogma )?podcast/i,
     /become a patron/i,
     /how you can support/i,
     /patreon\.com/i,
+    /Hey, everybody, have you ever wondered how you can support t/i,
   ],
   outro: [
     /we'?ll talk to you (again\s+)?next week/i,

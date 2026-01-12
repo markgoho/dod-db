@@ -15,10 +15,59 @@ import {
 import {
   SEGMENT_LABELS,
   SEGMENT_COLORS,
+  SEGMENT_PATTERNS,
   type SegmentType,
 } from '../config/segment-patterns.js';
 import { youtubeConfig } from '../config/youtube.js';
 import * as path from 'node:path';
+
+// Add a new pattern to segment-patterns.ts
+async function addPatternToConfig(segmentType: string, pattern: string): Promise<void> {
+  const configPath = path.join(process.cwd(), 'src/config/segment-patterns.ts');
+  const file = Bun.file(configPath);
+  let content = await file.text();
+
+  // Escape special regex characters in the pattern
+  const escapedPattern = pattern
+    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    .replace(/'/g, "\\'");
+
+  // Find the array for this segment type and add the new pattern
+  // Look for: 'segment-type': [ or segment-type: [
+  const patterns = [
+    new RegExp(`('${segmentType}':\\s*\\[)([^\\]]*)`, 's'),
+    new RegExp(`(${segmentType}:\\s*\\[)([^\\]]*)`, 's'),
+  ];
+
+  let found = false;
+  for (const regex of patterns) {
+    const match = content.match(regex);
+    if (match && match[2]) {
+      // Add new pattern before the closing bracket
+      const existingPatterns = match[2].trim();
+      const newPattern = `/${escapedPattern}/i`;
+
+      // Check if pattern already exists
+      if (existingPatterns.includes(escapedPattern)) {
+        console.log(`Pattern already exists for ${segmentType}`);
+        return;
+      }
+
+      const separator = existingPatterns.endsWith(',') || existingPatterns === '' ? '\n    ' : ',\n    ';
+      const newContent = match[1] + existingPatterns + separator + newPattern + ',\n  ';
+      content = content.replace(regex, newContent);
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) {
+    throw new Error(`Could not find pattern array for segment type: ${segmentType}`);
+  }
+
+  await Bun.write(configPath, content);
+  console.log(`Added pattern for ${segmentType}: ${pattern}`);
+}
 
 const PORT = 3002;
 
@@ -201,6 +250,39 @@ const server = Bun.serve({
       }
 
       return Response.json(stats);
+    }
+
+    // API: Add a learned pattern
+    if (url.pathname === '/api/patterns/add' && req.method === 'POST') {
+      try {
+        const body = (await req.json()) as { segmentType: string; pattern: string };
+
+        if (!body.segmentType || !body.pattern) {
+          return Response.json(
+            { error: 'segmentType and pattern are required' },
+            { status: 400 },
+          );
+        }
+
+        // Validate segment type
+        if (!SEGMENT_LABELS[body.segmentType as SegmentType]) {
+          return Response.json(
+            { error: `Invalid segment type: ${body.segmentType}` },
+            { status: 400 },
+          );
+        }
+
+        await addPatternToConfig(body.segmentType, body.pattern);
+        return Response.json({ success: true, message: `Pattern added for ${body.segmentType}` });
+      } catch (error) {
+        return Response.json(
+          {
+            error:
+              error instanceof Error ? error.message : 'Failed to add pattern',
+          },
+          { status: 500 },
+        );
+      }
     }
 
     return new Response('Not Found', { status: 404 });

@@ -53,11 +53,13 @@ function parseTranscript(transcript: string): TranscriptLine[] {
   const linePattern = /^\s*\[(\d{2}:\d{2}:\d{2}(?:\.\d{3})?)\]\s*([^:]+):\s*(.*)$/;
 
   for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trim();
+    const rawLine = lines[i];
+    if (!rawLine) continue;
+    const line = rawLine.trim();
     if (!line) continue;
 
     const match = linePattern.exec(line);
-    if (match) {
+    if (match && match[1] && match[2] && match[3]) {
       // Normalize timestamp to always include milliseconds
       let timestamp = match[1];
       if (!timestamp.includes('.')) {
@@ -82,9 +84,9 @@ function timestampToSeconds(timestamp: string): number {
   // Remove brackets: "[00:01:23.456]" -> "00:01:23.456"
   const clean = timestamp.replace(/[[\]]/g, '');
   const parts = clean.split(':');
-  const hours = Number.parseInt(parts[0], 10);
-  const minutes = Number.parseInt(parts[1], 10);
-  const seconds = Number.parseFloat(parts[2]);
+  const hours = Number.parseInt(parts[0] ?? '0', 10);
+  const minutes = Number.parseInt(parts[1] ?? '0', 10);
+  const seconds = Number.parseFloat(parts[2] ?? '0');
   return hours * 3600 + minutes * 60 + seconds;
 }
 
@@ -148,19 +150,20 @@ export function detectSegments(transcript: string): Segment[] {
   const segments: Segment[] = [];
   const matches = findSegmentMatches(lines);
 
-  // Get first and last timestamps
-  const firstTimestamp = lines[0].timestamp;
-  const lastTimestamp = lines[lines.length - 1].timestamp;
+  // Get last timestamp (safe because we checked lines.length > 0)
+  const lastLine = lines[lines.length - 1]!;
+  const lastTimestamp = lastLine.timestamp;
 
   // Find intro end
   const introEnd = findIntroEnd(lines);
 
-  // Always add intro segment (from start to intro end or first segment match)
+  // Always add intro segment (from 00:00:00 to intro end or first segment match)
+  const firstMatch = matches[0];
   const introEndTime =
-    introEnd ?? (matches.length > 0 ? matches[0].timestamp : lastTimestamp);
+    introEnd ?? (firstMatch ? firstMatch.timestamp : lastTimestamp);
   segments.push({
     type: 'intro',
-    startTimestamp: firstTimestamp,
+    startTimestamp: '[00:00:00.000]',
     endTimestamp: introEndTime,
     confidence: 'auto',
     detectionMethod: 'pattern',
@@ -170,6 +173,7 @@ export function detectSegments(transcript: string): Segment[] {
   // Process segment matches
   for (let i = 0; i < matches.length; i++) {
     const match = matches[i];
+    if (!match) continue;
     const nextMatch = matches[i + 1];
 
     // Determine end timestamp

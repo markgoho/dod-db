@@ -143,23 +143,23 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:00.960]",
-        "endTimestamp": "[00:00:19.520]",
-        "confidence": "auto",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:14.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
-        "type": "what-does-that-mean",
+        "type": "chapter-and-verse",
         "startTimestamp": "[00:01:14.040]",
         "endTimestamp": "[00:40:43.020]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "what-does-that-mean",
         "startTimestamp": "[00:40:43.020]",
         "endTimestamp": null,
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
@@ -336,10 +336,17 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.000]",
-        "endTimestamp": "[00:52:04.000]",
-        "confidence": "auto",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:33.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:33.000]",
+        "endTimestamp": null,
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
@@ -479,16 +486,16 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:03:45.530]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:35:13.490]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "what-does-that-mean",
-        "startTimestamp": "[00:35:13.490]",
+        "startTimestamp": "[00:01:15.000]",
         "endTimestamp": null,
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
@@ -629,10 +636,17 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:01.840]",
-        "endTimestamp": "[00:00:24.800]",
-        "confidence": "auto",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:37.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:36.000]",
+        "endTimestamp": null,
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
@@ -712,30 +726,30 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:01.840]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:01:35.140]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "all-right-lets-see-it",
         "startTimestamp": "[00:01:34.000]",
-        "endTimestamp": "[00:27:04.030]",
-        "confidence": "auto",
+        "endTimestamp": "[00:27:10.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
-        "type": "all-right-lets-see-it",
-        "startTimestamp": "[00:27:04.030]",
+        "type": "advertisement",
+        "startTimestamp": "[00:27:10.000]",
         "endTimestamp": "[00:27:54.760]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "urban-legends",
         "startTimestamp": "[00:27:54.760]",
         "endTimestamp": null,
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
@@ -848,30 +862,37 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:01.920]",
-        "endTimestamp": "[00:00:29.760]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
-      },
-      {
-        "type": "what-does-that-mean",
-        "startTimestamp": "[00:00:59.470]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:02:57.100]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "what-does-that-mean",
         "startTimestamp": "[00:02:57.100]",
-        "endTimestamp": "[01:02:14.310]",
-        "confidence": "auto",
+        "endTimestamp": "[00:28:45.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
+      },
+      {
+        "type": "advertisement",
+        "startTimestamp": "[00:28:45.000]",
+        "endTimestamp": "[00:29:30.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:29:30.000]",
+        "endTimestamp": "[01:02:14.310]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       },
       {
         "type": "outro",
         "startTimestamp": "[01:02:14.310]",
         "endTimestamp": "[01:02:18.150]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
@@ -1020,23 +1041,30 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.080]",
-        "endTimestamp": "[00:00:27.040]",
-        "confidence": "auto",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:49.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "chapter-and-verse",
         "startTimestamp": "[00:01:49.280]",
-        "endTimestamp": "[01:04:36.330]",
-        "confidence": "auto",
+        "endTimestamp": "[00:34:49.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
+      },
+      {
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:34:49.000]",
+        "endTimestamp": "[01:04:36.330]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       },
       {
         "type": "outro",
         "startTimestamp": "[01:04:36.330]",
         "endTimestamp": "[01:04:43.420]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
@@ -1113,23 +1141,23 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.080]",
-        "endTimestamp": "[00:54:09.840]",
-        "confidence": "auto",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:21.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
-        "type": "all-right-lets-see-it",
-        "startTimestamp": "[00:54:09.840]",
+        "type": "main-content",
+        "startTimestamp": "[00:01:21.000]",
         "endTimestamp": "[01:03:46.340]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "confidence": "verified",
+        "detectionMethod": "manual"
       },
       {
         "type": "outro",
-        "startTimestamp": "[01:03:46.340]",
+        "startTimestamp": "[01:03:26.000]",
         "endTimestamp": "[01:03:47.700]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       }
     ]
@@ -1214,7 +1242,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.160]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:42.410]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -1325,7 +1353,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.160]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[01:12:42.010]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -1484,7 +1512,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.160]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[01:17:29.450]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -1594,7 +1622,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.400]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:01:01.260]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -1709,7 +1737,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.320]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:34.620]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -1837,7 +1865,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.400]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:01:03.740]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -1983,7 +2011,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.320]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:56.140]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -2107,7 +2135,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.480]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:36.380]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -2239,7 +2267,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.400]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:56:29.690]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -2410,7 +2438,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.320]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:01:07.000]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -2553,7 +2581,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.080]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:54.220]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -2687,7 +2715,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.000]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:32.740]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -2802,7 +2830,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.240]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:39.980]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -2916,7 +2944,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.320]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:49.010]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -2991,7 +3019,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:00.320]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:48.300]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -3057,7 +3085,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:02.160]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[01:01:49.690]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -3159,7 +3187,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:01.280]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:25.920]",
         "confidence": "auto",
         "detectionMethod": "pattern"
@@ -3267,7 +3295,7 @@
     "segments": [
       {
         "type": "intro",
-        "startTimestamp": "[00:00:01.040]",
+        "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:43.420]",
         "confidence": "auto",
         "detectionMethod": "pattern"
