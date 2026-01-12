@@ -1,0 +1,213 @@
+/**
+ * Web UI for segment verification and editing.
+ *
+ * Usage:
+ *   bun run src/scripts/segment-verification-ui.ts
+ *   Then open http://localhost:3002
+ */
+
+import {
+  loadProcessedVideos,
+  updateVideoSegments,
+  type ProcessedVideo,
+  type EpisodeSegment,
+} from '../storage/processed-videos.js';
+import {
+  SEGMENT_LABELS,
+  SEGMENT_COLORS,
+  type SegmentType,
+} from '../config/segment-patterns.js';
+import { youtubeConfig } from '../config/youtube.js';
+import * as path from 'node:path';
+
+const PORT = 3002;
+
+// Get audio file path for a video ID
+async function getAudioFilePath(videoId: string): Promise<string | null> {
+  const audioDir = youtubeConfig.audioDirectory;
+
+  // Try common extensions
+  const extensions = ['.webm', '.m4a', '.mp3', '.wav'];
+
+  for (const ext of extensions) {
+    const filePath = path.join(audioDir, `${videoId}${ext}`);
+    const file = Bun.file(filePath);
+    if (await file.exists()) {
+      return filePath;
+    }
+  }
+
+  return null;
+}
+
+// Serve the web UI
+const server = Bun.serve({
+  port: PORT,
+  async fetch(req) {
+    const url = new URL(req.url);
+
+    // Serve the main UI
+    if (url.pathname === '/' || url.pathname === '/index.html') {
+      const filePath = path.join(
+        process.cwd(),
+        'tools',
+        'segment-verification.html',
+      );
+      const file = Bun.file(filePath);
+      const exists = await file.exists();
+      if (!exists) {
+        return new Response(
+          'UI file not found. Please create tools/segment-verification.html',
+          { status: 404 },
+        );
+      }
+      return new Response(file, {
+        headers: { 'Content-Type': 'text/html' },
+      });
+    }
+
+    // API: Get all episodes with segments
+    if (url.pathname === '/api/episodes') {
+      const videos = await loadProcessedVideos();
+      // Sort by episode number
+      const sorted = [...videos].sort(
+        (a, b) => (a.episodeNumber || 0) - (b.episodeNumber || 0),
+      );
+      return Response.json(sorted);
+    }
+
+    // API: Get segment metadata (labels, colors)
+    if (url.pathname === '/api/segment-metadata') {
+      return Response.json({
+        labels: SEGMENT_LABELS,
+        colors: SEGMENT_COLORS,
+        types: Object.keys(SEGMENT_LABELS),
+      });
+    }
+
+    // API: Get transcript for an episode
+    if (url.pathname.startsWith('/api/transcript/')) {
+      const videoId = url.pathname.replace('/api/transcript/', '');
+      const videos = await loadProcessedVideos();
+      const video = videos.find((v) => v.videoId === videoId);
+
+      if (!video) {
+        return Response.json({ error: 'Video not found' }, { status: 404 });
+      }
+
+      const file = Bun.file(video.transcriptPath);
+      const exists = await file.exists();
+      if (!exists) {
+        return Response.json(
+          { error: 'Transcript file not found' },
+          { status: 404 },
+        );
+      }
+
+      const transcript = await file.text();
+      return Response.json({ transcript });
+    }
+
+    // API: Get audio file for an episode
+    if (url.pathname.startsWith('/api/audio/')) {
+      const videoId = url.pathname.replace('/api/audio/', '');
+      const audioPath = await getAudioFilePath(videoId);
+
+      if (!audioPath) {
+        return Response.json({ error: 'Audio not found' }, { status: 404 });
+      }
+
+      const file = Bun.file(audioPath);
+      const ext = path.extname(audioPath).toLowerCase();
+
+      // Determine content type
+      const contentTypes: Record<string, string> = {
+        '.webm': 'audio/webm',
+        '.m4a': 'audio/mp4',
+        '.mp3': 'audio/mpeg',
+        '.wav': 'audio/wav',
+      };
+
+      return new Response(file, {
+        headers: {
+          'Content-Type': contentTypes[ext] || 'audio/webm',
+          'Accept-Ranges': 'bytes',
+        },
+      });
+    }
+
+    // API: Update segments for an episode
+    if (url.pathname.startsWith('/api/segments/') && req.method === 'PUT') {
+      const videoId = url.pathname.replace('/api/segments/', '');
+
+      try {
+        const body = (await req.json()) as { segments: EpisodeSegment[] };
+
+        if (!Array.isArray(body.segments)) {
+          return Response.json(
+            { error: 'segments must be an array' },
+            { status: 400 },
+          );
+        }
+
+        await updateVideoSegments(videoId, body.segments);
+        return Response.json({ success: true });
+      } catch (error) {
+        return Response.json(
+          {
+            error:
+              error instanceof Error ? error.message : 'Failed to update segments',
+          },
+          { status: 500 },
+        );
+      }
+    }
+
+    // API: Get segment statistics
+    if (url.pathname === '/api/stats') {
+      const videos = await loadProcessedVideos();
+
+      const stats = {
+        totalEpisodes: videos.length,
+        episodesWithSegments: 0,
+        episodesVerified: 0,
+        segmentsByType: {} as Record<string, number>,
+        autoDetected: 0,
+        verified: 0,
+      };
+
+      for (const video of videos) {
+        if (video.segments && video.segments.length > 0) {
+          stats.episodesWithSegments++;
+
+          const allVerified = video.segments.every(
+            (s) => s.confidence === 'verified',
+          );
+          if (allVerified) {
+            stats.episodesVerified++;
+          }
+
+          for (const segment of video.segments) {
+            stats.segmentsByType[segment.type] =
+              (stats.segmentsByType[segment.type] || 0) + 1;
+
+            if (segment.confidence === 'auto') {
+              stats.autoDetected++;
+            } else {
+              stats.verified++;
+            }
+          }
+        }
+      }
+
+      return Response.json(stats);
+    }
+
+    return new Response('Not Found', { status: 404 });
+  },
+});
+
+console.log(`\n🎬 Segment Verification UI`);
+console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
+console.log(`🌐 Open in browser: http://localhost:${PORT}`);
+console.log(`\n📊 View segments, verify boundaries, and edit timestamps\n`);

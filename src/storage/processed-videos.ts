@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { youtubeConfig } from '../config/youtube.js';
+import type { SegmentType } from '../config/segment-patterns.js';
 
 /**
  * Tag on an episode with mention count.
@@ -18,6 +19,28 @@ export const EpisodeTagSchema = z.object({
 	mentions: z.number().int().positive(),
 });
 
+/**
+ * A detected segment in an episode.
+ */
+export interface EpisodeSegment {
+	type: SegmentType;
+	startTimestamp: string; // "[HH:MM:SS.mmm]" format
+	endTimestamp: string | null; // null if segment extends to end
+	confidence: 'auto' | 'verified';
+	detectionMethod: 'pattern' | 'llm' | 'manual';
+}
+
+/**
+ * Zod schema for EpisodeSegment validation.
+ */
+export const EpisodeSegmentSchema = z.object({
+	type: z.string(),
+	startTimestamp: z.string(),
+	endTimestamp: z.string().nullable(),
+	confidence: z.enum(['auto', 'verified']),
+	detectionMethod: z.enum(['pattern', 'llm', 'manual']),
+});
+
 export const ProcessedVideoSchema = z.object({
 	videoId: z.string(),
 	title: z.string(),
@@ -25,7 +48,8 @@ export const ProcessedVideoSchema = z.object({
 	processedAt: z.string(),
 	transcriptPath: z.string(),
 	episodeNumber: z.number().int().positive().optional(),
-	tags: z.array(EpisodeTagSchema).optional(), // Optional for backward compatibility
+	tags: z.array(EpisodeTagSchema).optional(),
+	segments: z.array(EpisodeSegmentSchema).optional(),
 });
 
 export type ProcessedVideo = z.infer<typeof ProcessedVideoSchema>;
@@ -165,4 +189,38 @@ export async function getEpisodeNumber(
   const videos = await getProcessedVideosWithNumbers();
   const video = videos.find((v) => v.videoId === videoId);
   return video?.episodeNumber;
+}
+
+/**
+ * Update segments for a video.
+ * Creates or replaces the segments array for the specified video.
+ */
+export async function updateVideoSegments(
+  videoId: string,
+  segments: EpisodeSegment[],
+): Promise<void> {
+  const videos = await loadProcessedVideos();
+  const index = videos.findIndex((v) => v.videoId === videoId);
+
+  if (index === -1) {
+    throw new Error(`Video not found: ${videoId}`);
+  }
+
+  videos[index] = {
+    ...videos[index],
+    segments,
+  };
+
+  await saveProcessedVideos(videos);
+}
+
+/**
+ * Get video by videoId.
+ * Returns undefined if not found.
+ */
+export async function getVideoById(
+  videoId: string,
+): Promise<ProcessedVideo | undefined> {
+  const videos = await loadProcessedVideos();
+  return videos.find((v) => v.videoId === videoId);
 }
