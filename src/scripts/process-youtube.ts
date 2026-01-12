@@ -20,8 +20,8 @@ const startFromIndex = args.findIndex((arg) =>
 );
 let startFrom: 'correct' | undefined = undefined;
 if (startFromIndex !== -1) {
-  const value = args[startFromIndex].includes('=')
-    ? args[startFromIndex].split('=')[1]
+  const value = args[startFromIndex]?.includes('=')
+    ? args[startFromIndex]?.split('=')[1]
     : args[startFromIndex + 1];
   if (value !== 'correct') {
     console.error('Error: --start-from only supports "correct" stage');

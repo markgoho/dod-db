@@ -613,7 +613,8 @@
 [00:49:14.540] Dan McClellan: And it so commonly results in "not impossible" stacked on "not impossible" stacked on "not impossible" stacked on "not impossible."
 [00:49:23.700] Dan McClellan: Is it probable?
 [00:49:24.580] Dan McClellan: Of course not.
-[00:49:25.000] Dan McClellan: Of course not..300] Dan McClellan: Is it plausible?
+[00:49:25.000] Dan McClellan: Of course not.
+[00:49:25.300] Dan McClellan: Is it plausible?
 [00:49:26.460] Dan McClellan: Of course not.
 [00:49:27.300] Dan McClellan: Is it impossible?
 [00:49:30.020] Dan McClellan: And as long as they can gin up the tiniest little sliver of "it's not physically impossible," even though we've got a dozen NIs—we've got a stack of 12 "it's not physically impossibles" sitting on top of each other—it's still not impossible, therefore, dangling like a Jenga...

@@ -8,8 +8,11 @@
 
 import { loadProcessedVideos } from '../storage/processed-videos.js';
 import { tagVocabulary } from '../config/tag-vocabulary.js';
+import { reprocessEpisodes } from '../pipeline/reprocess-episodes.js';
+import { addTagToEpisodes } from '../pipeline/add-tag-to-episodes.js';
+import { addTagToVocabulary, tagExists, type AddTagParams } from '../pipeline/add-tag-to-vocabulary.js';
 import type { ProcessedVideo, EpisodeTag } from '../storage/processed-videos.js';
-import type { TagDefinition } from '../config/tag-vocabulary.js';
+import type { TagDefinition, TagCategory } from '../config/tag-vocabulary.js';
 import * as path from 'node:path';
 
 const PORT = 3001;
@@ -110,8 +113,8 @@ async function computeTagStats(): Promise<TagStats[]> {
   return result;
 }
 
-// Run migration script
-async function runMigration(): Promise<string> {
+// Run migration with tag-specific tracking (single tag mode)
+async function runMigrationWithTagTracking(skipLlm = false, trackTag?: string): Promise<string> {
   const jobId = `migration-${Date.now()}`;
   const job: MigrationJob = {
     id: jobId,
@@ -121,55 +124,118 @@ async function runMigration(): Promise<string> {
   };
   migrationJobs.set(jobId, job);
 
-  // Spawn the migration script
-  const proc = Bun.spawn(['bun', 'run', 'src/scripts/migrate-tags.ts'], {
-    cwd: process.cwd(),
-    stdout: 'pipe',
-    stderr: 'pipe',
-  });
+  // Capture console output
+  const originalLog = console.log;
+  const originalError = console.error;
+  const originalWarn = console.warn;
 
-  // Capture stdout
-  const stdoutReader = proc.stdout.getReader();
-  const stderrReader = proc.stderr.getReader();
-  const decoder = new TextDecoder();
+  console.log = (...args) => {
+    job.logs.push(args.join(' ') + '\n');
+    originalLog(...args);
+  };
+  console.error = (...args) => {
+    job.logs.push('[ERROR] ' + args.join(' ') + '\n');
+    originalError(...args);
+  };
+  console.warn = (...args) => {
+    job.logs.push('[WARN] ' + args.join(' ') + '\n');
+    originalWarn(...args);
+  };
 
-  // Read stdout in background
+  // Run reprocessing in background
   (async () => {
     try {
-      while (true) {
-        const { done, value } = await stdoutReader.read();
-        if (done) break;
-        const text = decoder.decode(value);
-        job.logs.push(text);
+      // If tracking a specific tag, use single-tag mode (much faster!)
+      if (trackTag) {
+        const result = await addTagToEpisodes({
+          canonical: trackTag,
+          enableLlmVerification: true,
+          verbose: false,
+        });
+
+        // Show tag-specific results
+        job.logs.push(`\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
+        job.logs.push(`📊 "${trackTag}" Results:\n`);
+        job.logs.push(`   Found in ${result.episodesWithTag} episodes\n`);
+        job.logs.push(`   Total mentions: ${result.totalMentions}\n`);
+        if (result.episodesWithTag > 0) {
+          job.logs.push(`   Average: ${(result.totalMentions / result.episodesWithTag).toFixed(1)} mentions/episode\n`);
+        }
+        job.logs.push(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
+      } else {
+        // Full reprocessing of all tags
+        await reprocessEpisodes({ force: true, skipLlm, verbose: false });
       }
+
+      job.status = 'completed';
+      job.exitCode = 0;
     } catch (error) {
-      job.logs.push(`Error reading stdout: ${error}`);
+      job.logs.push(`\n[ERROR] Migration failed: ${error}\n`);
+      job.status = 'failed';
+      job.exitCode = 1;
+    } finally {
+      job.endTime = Date.now();
+      // Restore console
+      console.log = originalLog;
+      console.error = originalError;
+      console.warn = originalWarn;
+      // Invalidate stats cache
+      statsCache.data = null;
     }
   })();
 
-  // Read stderr in background
+  return jobId;
+}
+
+// Run migration (reprocess all episodes)
+async function runMigration(skipLlm = false): Promise<string> {
+  const jobId = `migration-${Date.now()}`;
+  const job: MigrationJob = {
+    id: jobId,
+    status: 'running',
+    logs: [],
+    startTime: Date.now(),
+  };
+  migrationJobs.set(jobId, job);
+
+  // Capture console output
+  const originalLog = console.log;
+  const originalError = console.error;
+  const originalWarn = console.warn;
+
+  console.log = (...args) => {
+    job.logs.push(args.join(' ') + '\n');
+    originalLog(...args);
+  };
+  console.error = (...args) => {
+    job.logs.push('[ERROR] ' + args.join(' ') + '\n');
+    originalError(...args);
+  };
+  console.warn = (...args) => {
+    job.logs.push('[WARN] ' + args.join(' ') + '\n');
+    originalWarn(...args);
+  };
+
+  // Run reprocessing in background
   (async () => {
     try {
-      while (true) {
-        const { done, value } = await stderrReader.read();
-        if (done) break;
-        const text = decoder.decode(value);
-        job.logs.push(`[stderr] ${text}`);
-      }
+      await reprocessEpisodes({ force: true, skipLlm, verbose: false });
+      job.status = 'completed';
+      job.exitCode = 0;
     } catch (error) {
-      job.logs.push(`Error reading stderr: ${error}`);
+      job.logs.push(`\n[ERROR] Migration failed: ${error}\n`);
+      job.status = 'failed';
+      job.exitCode = 1;
+    } finally {
+      job.endTime = Date.now();
+      // Restore console
+      console.log = originalLog;
+      console.error = originalError;
+      console.warn = originalWarn;
+      // Invalidate stats cache
+      statsCache.data = null;
     }
   })();
-
-  // Wait for process to complete in background
-  proc.exited.then((exitCode) => {
-    job.status = exitCode === 0 ? 'completed' : 'failed';
-    job.exitCode = exitCode;
-    job.endTime = Date.now();
-
-    // Invalidate stats cache
-    statsCache.data = null;
-  });
 
   return jobId;
 }
@@ -208,6 +274,98 @@ const server = Bun.serve({
     if (url.pathname === '/api/tag-stats') {
       const stats = await computeTagStats();
       return Response.json(stats);
+    }
+
+    // API: Add tag to vocabulary
+    if (url.pathname === '/api/vocabulary/add' && req.method === 'POST') {
+      try {
+        const body = (await req.json()) as {
+          canonical?: string;
+          variations?: string | string[];
+          category?: string;
+          llmVerify?: boolean;
+          description?: string;
+        };
+        const { canonical, variations, category, llmVerify, description } = body;
+
+        // Validate required fields
+        if (!canonical || typeof canonical !== 'string') {
+          return Response.json(
+            { error: 'canonical is required and must be a string' },
+            { status: 400 },
+          );
+        }
+
+        if (!category || typeof category !== 'string') {
+          return Response.json(
+            { error: 'category is required and must be a string' },
+            { status: 400 },
+          );
+        }
+
+        // Validate llmVerify + description dependency
+        if (llmVerify && (!description || typeof description !== 'string')) {
+          return Response.json(
+            { error: 'description is required when llmVerify is true' },
+            { status: 400 },
+          );
+        }
+
+        // Parse variations (comma-separated string or array)
+        let variationsArray: string[] = [];
+        if (variations) {
+          if (typeof variations === 'string') {
+            variationsArray = variations
+              .split(',')
+              .map(v => v.trim())
+              .filter(v => v.length > 0);
+          } else if (Array.isArray(variations)) {
+            variationsArray = variations;
+          }
+        }
+
+        // Check for duplicates
+        if (tagExists(canonical)) {
+          return Response.json(
+            { error: `Tag "${canonical}" already exists in vocabulary` },
+            { status: 409 },
+          );
+        }
+
+        // Add to vocabulary file
+        const tagParams: AddTagParams = llmVerify
+          ? {
+              canonical,
+              variations: variationsArray,
+              category: category as TagCategory,
+              llmVerify: true,
+              description: description!, // We validated this is present when llmVerify is true
+            }
+          : {
+              canonical,
+              variations: variationsArray,
+              category: category as TagCategory,
+            };
+
+        await addTagToVocabulary(tagParams);
+
+        // Start reprocessing all episodes (skip LLM to save costs)
+        const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
+
+        return Response.json({
+          success: true,
+          message: `Tag "${canonical}" added successfully`,
+          jobId,
+        });
+      } catch (error) {
+        console.error('Error adding tag:', error);
+        return Response.json(
+          {
+            error: error instanceof Error ? error.message : 'Failed to add tag',
+          },
+          { status: 500 },
+        );
+      }
     }
 
     // API: Start migration

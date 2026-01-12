@@ -1,36 +1,46 @@
 /**
- * Tag extraction pipeline using hybrid deterministic + LLM approach.
+ * Tag extraction orchestrator using hybrid deterministic + LLM approach.
  *
  * Tier 1: Deterministic matching of known vocabulary (instant, free)
  * Tier 2: LLM discovery of new high-value tags (5+ mentions)
  * Tier 3: Manual learning loop (promote discoveries to vocabulary)
  */
 
-import { z } from 'zod';
-import { ai } from '../ai.js';
-import { getAllSearchableTerms, tagVocabulary } from '../config/tag-vocabulary.js';
-import { speakerIdModel } from '../config/models.js';
-import { TagDiscoverySchema, tagExtractionPrompt } from '../prompts/tag-extraction.js';
+import { extractTagsDeterministic } from './extract-tags-deterministic.js';
+import { extractTagsLlm } from './extract-tags-llm.js';
 import type { EpisodeTag } from '../storage/processed-videos.js';
 
 /**
  * Extract tags from corrected transcript using hybrid approach.
  *
  * @param correctedTranscript - The corrected transcript text
+ * @param options - Optional configuration
+ * @param options.skipLlm - If true, skip LLM discovery (only use deterministic matching)
+ * @param options.enableLlmVerification - If true, use LLM to verify ambiguous tag matches
  * @returns Array of Episode Tag objects with canonical names and mention counts
  */
-export async function extractTags(correctedTranscript: string): Promise<EpisodeTag[]> {
+export async function extractTags(
+	correctedTranscript: string,
+	options: { skipLlm?: boolean; enableLlmVerification?: boolean } = {},
+): Promise<EpisodeTag[]> {
 	console.log('Extracting tags from transcript...');
 
 	// Tier 1: Deterministic matching (all known vocabulary)
 	console.log('  Phase 1: Deterministic vocabulary matching...');
-	const deterministicTags = extractDeterministicTags(correctedTranscript);
+	const deterministicTags = await extractTagsDeterministic(correctedTranscript, {
+		enableLlmVerification: options.enableLlmVerification,
+	});
 	console.log(`  ✓ Found ${deterministicTags.length} known tags`);
 
-	// Tier 2: LLM discovery (new terms with 5+ mentions)
-	console.log('  Phase 2: LLM discovery of new tags (5+ mentions)...');
-	const discoveredTags = await discoverNewTags(correctedTranscript, deterministicTags);
-	console.log(`  ✓ Discovered ${discoveredTags.length} new potential tags`);
+	// Tier 2: LLM discovery (new terms with 5+ mentions) - optional
+	let discoveredTags: EpisodeTag[] = [];
+	if (!options.skipLlm) {
+		console.log('  Phase 2: LLM discovery of new tags (5+ mentions)...');
+		discoveredTags = await extractTagsLlm(correctedTranscript, deterministicTags);
+		console.log(`  ✓ Discovered ${discoveredTags.length} new potential tags`);
+	} else {
+		console.log('  Phase 2: Skipped (skipLlm option enabled)');
+	}
 
 	// Merge results
 	const allTags = mergeTags(deterministicTags, discoveredTags);
@@ -44,77 +54,6 @@ export async function extractTags(correctedTranscript: string): Promise<EpisodeT
 }
 
 /**
- * Extract tags using deterministic pattern matching.
- * Matches all known vocabulary terms (canonical + variations) using regex.
- *
- * @param transcript - The transcript text to analyze
- * @returns Array of tags with mention counts
- */
-function extractDeterministicTags(transcript: string): EpisodeTag[] {
-	const termMap = getAllSearchableTerms(tagVocabulary);
-	const tagCounts = new Map<string, number>(); // canonical -> count
-	const lowerTranscript = transcript.toLowerCase();
-
-	for (const [searchTerm, canonical] of termMap.entries()) {
-		// Whole-word matching with regex (case-insensitive)
-		const pattern = new RegExp(`\\b${escapeRegex(searchTerm)}\\b`, 'gi');
-		const matches = lowerTranscript.match(pattern);
-
-		if (matches) {
-			const currentCount = tagCounts.get(canonical) || 0;
-			tagCounts.set(canonical, currentCount + matches.length);
-		}
-	}
-
-	// Convert to EpisodeTag array
-	return Array.from(tagCounts.entries()).map(([tag, mentions]) => ({
-		tag,
-		mentions,
-	}));
-}
-
-/**
- * Use LLM to discover new tags not in vocabulary.
- * Only extracts tags with 5+ mentions to minimize noise.
- *
- * @param transcript - The transcript text to analyze
- * @param existingTags - Tags already found by deterministic matching
- * @returns Array of newly discovered tags
- */
-async function discoverNewTags(
-	transcript: string,
-	existingTags: EpisodeTag[],
-): Promise<EpisodeTag[]> {
-	// Create exclusion list from existing tags
-	const knownTags = new Set(existingTags.map((t) => t.tag.toLowerCase()));
-
-	try {
-		const response = await ai.models.generateContent({
-			model: speakerIdModel, // gemini-2.0-flash (fast, cheap)
-			contents: tagExtractionPrompt(transcript, Array.from(knownTags)),
-			config: {
-				responseMimeType: 'application/json',
-				responseSchema: z.toJSONSchema(TagDiscoverySchema),
-			},
-		});
-
-		const responseText = response.text;
-		if (!responseText) {
-			console.warn('  ⚠ Tag discovery returned empty response');
-			return [];
-		}
-
-		const output = TagDiscoverySchema.parse(JSON.parse(responseText));
-
-		// Filter to only tags with 5+ mentions
-		return output.tags.filter((t) => t.mentions >= 5);
-	} catch (error) {
-		console.error('  ⚠ Tag discovery failed:', error);
-		return [];
-	}
-}
-
-/**
  * Merge deterministic and discovered tags, summing mention counts for duplicates.
  *
  * @param deterministic - Tags from vocabulary matching
@@ -124,30 +63,19 @@ async function discoverNewTags(
 function mergeTags(deterministic: EpisodeTag[], discovered: EpisodeTag[]): EpisodeTag[] {
 	const merged = new Map<string, number>();
 
-	// Add deterministic tags
+	// Add deterministic tags (preserve canonical case)
 	for (const tag of deterministic) {
-		merged.set(tag.tag.toLowerCase(), tag.mentions);
+		merged.set(tag.tag, tag.mentions);
 	}
 
 	// Add discovered tags (shouldn't overlap, but handle just in case)
 	for (const tag of discovered) {
-		const key = tag.tag.toLowerCase();
-		const existing = merged.get(key) || 0;
-		merged.set(key, existing + tag.mentions);
+		const existing = merged.get(tag.tag) || 0;
+		merged.set(tag.tag, existing + tag.mentions);
 	}
 
 	return Array.from(merged.entries()).map(([tag, mentions]) => ({
 		tag,
 		mentions,
 	}));
-}
-
-/**
- * Escape special regex characters in search term.
- *
- * @param str - String to escape
- * @returns Escaped string safe for use in RegExp
- */
-function escapeRegex(str: string): string {
-	return str.replaceAll(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }

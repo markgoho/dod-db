@@ -8,31 +8,115 @@
     "episodeNumber": 1,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 16
+        "tag": "YHWH",
+        "mentions": 67
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 36
+      },
+      {
+        "tag": "Israel",
+        "mentions": 28
+      },
+      {
+        "tag": "Baal",
+        "mentions": 21
+      },
+      {
+        "tag": "El",
+        "mentions": 18
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 14
       },
       {
         "tag": "gods",
         "mentions": 12
       },
       {
-        "tag": "satan",
-        "mentions": 4
+        "tag": "Adam",
+        "mentions": 11
       },
       {
-        "tag": "kings",
-        "mentions": 3
+        "tag": "Satan",
+        "mentions": 7
+      },
+      {
+        "tag": "Eve",
+        "mentions": 7
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 6
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 5
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 4
       },
       {
         "tag": "divine council",
         "mentions": 3
       },
       {
+        "tag": "Babylon",
+        "mentions": 3
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 2
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 2
+      },
+      {
         "tag": "angel",
         "mentions": 2
       },
       {
-        "tag": "book of job",
+        "tag": "Isaac",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "James",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "source criticism",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
         "mentions": 1
       },
       {
@@ -40,7 +124,19 @@
         "mentions": 1
       },
       {
-        "tag": "source criticism",
+        "tag": "Christianity",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 1
+      },
+      {
+        "tag": "Kings",
         "mentions": 1
       }
     ]
@@ -54,8 +150,8 @@
     "episodeNumber": 2,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 25
+        "tag": "YHWH",
+        "mentions": 24
       },
       {
         "tag": "gods",
@@ -66,11 +162,55 @@
         "mentions": 16
       },
       {
+        "tag": "Hebrew Bible",
+        "mentions": 12
+      },
+      {
+        "tag": "Molek",
+        "mentions": 12
+      },
+      {
+        "tag": "Ezekiel",
+        "mentions": 11
+      },
+      {
         "tag": "theology",
         "mentions": 10
       },
       {
+        "tag": "Israel",
+        "mentions": 9
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 9
+      },
+      {
+        "tag": "El",
+        "mentions": 8
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 7
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 7
+      },
+      {
         "tag": "archaeology",
+        "mentions": 6
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 6
+      },
+      {
+        "tag": "Adam",
+        "mentions": 6
+      },
+      {
+        "tag": "Jesus",
         "mentions": 6
       },
       {
@@ -78,11 +218,27 @@
         "mentions": 5
       },
       {
-        "tag": "molek",
+        "tag": "Isaac",
         "mentions": 4
       },
       {
-        "tag": "book of job",
+        "tag": "Jephthah",
+        "mentions": 3
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 3
+      },
+      {
+        "tag": "Judah",
+        "mentions": 3
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "Genesis",
         "mentions": 3
       },
       {
@@ -90,11 +246,59 @@
         "mentions": 2
       },
       {
-        "tag": "kings",
-        "mentions": 1
+        "tag": "Book of Job",
+        "mentions": 2
+      },
+      {
+        "tag": "Carthage",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 2
+      },
+      {
+        "tag": "Baal",
+        "mentions": 2
       },
       {
         "tag": "corporeal deity",
+        "mentions": 1
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "Elephantine",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "theophany",
+        "mentions": 1
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "Judges",
+        "mentions": 1
+      },
+      {
+        "tag": "Exodus",
         "mentions": 1
       },
       {
@@ -102,7 +306,7 @@
         "mentions": 1
       },
       {
-        "tag": "theophany",
+        "tag": "Egypt",
         "mentions": 1
       }
     ]
@@ -116,19 +320,39 @@
     "episodeNumber": 3,
     "tags": [
       {
+        "tag": "Lot",
+        "mentions": 42
+      },
+      {
         "tag": "provenance",
         "mentions": 28
       },
       {
-        "tag": "lot",
-        "mentions": 26
+        "tag": "Sodom",
+        "mentions": 19
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 18
+      },
+      {
+        "tag": "Israel",
+        "mentions": 16
       },
       {
         "tag": "angel",
         "mentions": 16
       },
       {
-        "tag": "etiology",
+        "tag": "YHWH",
+        "mentions": 14
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 10
+      },
+      {
+        "tag": "Dead Sea Scrolls",
         "mentions": 5
       },
       {
@@ -136,15 +360,67 @@
         "mentions": 5
       },
       {
+        "tag": "etiology",
+        "mentions": 5
+      },
+      {
         "tag": "archaeology",
         "mentions": 4
       },
       {
-        "tag": "theophany",
+        "tag": "Lachish",
+        "mentions": 4
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 4
+      },
+      {
+        "tag": "Ishmael",
+        "mentions": 3
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 3
+      },
+      {
+        "tag": "Mount Gerizim",
+        "mentions": 2
+      },
+      {
+        "tag": "Mount Ebal",
+        "mentions": 2
+      },
+      {
+        "tag": "Noah",
+        "mentions": 2
+      },
+      {
+        "tag": "Judges",
+        "mentions": 2
+      },
+      {
+        "tag": "Hagar",
+        "mentions": 2
+      },
+      {
+        "tag": "Adam",
+        "mentions": 2
+      },
+      {
+        "tag": "King David",
         "mentions": 2
       },
       {
         "tag": "divine council",
+        "mentions": 1
+      },
+      {
+        "tag": "theophany",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrew Bible",
         "mentions": 1
       },
       {
@@ -153,6 +429,18 @@
       },
       {
         "tag": "epigraphy",
+        "mentions": 1
+      },
+      {
+        "tag": "Ezekiel",
+        "mentions": 1
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "Eve",
         "mentions": 1
       }
     ]
@@ -166,23 +454,95 @@
     "episodeNumber": 4,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 24
+        "tag": "Bart Ehrman",
+        "mentions": 440
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 59
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 45
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 31
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 17
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 13
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 9
       },
       {
         "tag": "angel",
         "mentions": 6
       },
       {
+        "tag": "John of Patmos",
+        "mentions": 5
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 5
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 5
+      },
+      {
         "tag": "apocalypse",
         "mentions": 4
       },
       {
-        "tag": "biblical canon",
+        "tag": "Armageddon",
+        "mentions": 3
+      },
+      {
+        "tag": "Peter",
+        "mentions": 3
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 3
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 3
+      },
+      {
+        "tag": "Trinity",
         "mentions": 2
       },
       {
-        "tag": "rapture",
+        "tag": "Abraham",
+        "mentions": 2
+      },
+      {
+        "tag": "preterist interpretation",
+        "mentions": 1
+      },
+      {
+        "tag": "futurist interpretation",
+        "mentions": 1
+      },
+      {
+        "tag": "cognitive dissonance",
+        "mentions": 1
+      },
+      {
+        "tag": "textual criticism",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
         "mentions": 1
       },
       {
@@ -194,19 +554,27 @@
         "mentions": 1
       },
       {
-        "tag": "textual criticism",
+        "tag": "inerrancy",
         "mentions": 1
       },
       {
-        "tag": "cognitive dissonance",
+        "tag": "YHWH",
         "mentions": 1
       },
       {
-        "tag": "preterist interpretation",
+        "tag": "Ezekiel",
         "mentions": 1
       },
       {
-        "tag": "futurist interpretation",
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "James",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
         "mentions": 1
       }
     ]
@@ -220,27 +588,67 @@
     "episodeNumber": 5,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 22
+        "tag": "Christianity",
+        "mentions": 52
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 43
+      },
+      {
+        "tag": "Easter",
+        "mentions": 41
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 9
       },
       {
         "tag": "resurrection",
         "mentions": 6
       },
       {
-        "tag": "biblical canon",
+        "tag": "New Testament",
         "mentions": 4
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 4
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 2
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 2
+      },
+      {
+        "tag": "Baal",
+        "mentions": 2
       },
       {
         "tag": "apocalypse",
         "mentions": 1
       },
       {
-        "tag": "angel",
+        "tag": "monotheism",
         "mentions": 1
       },
       {
-        "tag": "monotheism",
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Israel",
+        "mentions": 1
+      },
+      {
+        "tag": "angel",
         "mentions": 1
       }
     ]
@@ -254,20 +662,100 @@
     "episodeNumber": 6,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 25
+        "tag": "Paul",
+        "mentions": 38
       },
       {
         "tag": "univocality",
         "mentions": 25
       },
       {
-        "tag": "book of job",
-        "mentions": 3
+        "tag": "James",
+        "mentions": 17
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 12
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 7
+      },
+      {
+        "tag": "Peter",
+        "mentions": 7
+      },
+      {
+        "tag": "King David",
+        "mentions": 7
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 6
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 6
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 6
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 5
       },
       {
         "tag": "manuscript",
         "mentions": 3
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 3
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 1
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Kings",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
       }
     ]
   },
@@ -280,6 +768,14 @@
     "episodeNumber": 7,
     "tags": [
       {
+        "tag": "YHWH",
+        "mentions": 62
+      },
+      {
+        "tag": "Israel",
+        "mentions": 55
+      },
+      {
         "tag": "divine council",
         "mentions": 36
       },
@@ -288,8 +784,32 @@
         "mentions": 30
       },
       {
-        "tag": "lot",
-        "mentions": 21
+        "tag": "Hebrew Bible",
+        "mentions": 19
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 16
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 14
+      },
+      {
+        "tag": "Judah",
+        "mentions": 13
+      },
+      {
+        "tag": "El",
+        "mentions": 13
+      },
+      {
+        "tag": "Baal",
+        "mentions": 12
+      },
+      {
+        "tag": "Kings",
+        "mentions": 11
       },
       {
         "tag": "manuscript",
@@ -300,11 +820,35 @@
         "mentions": 8
       },
       {
-        "tag": "kings",
+        "tag": "Isaiah",
+        "mentions": 7
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 4
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 4
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 4
+      },
+      {
+        "tag": "Jerusalem",
         "mentions": 3
       },
       {
-        "tag": "judges",
+        "tag": "Dead Sea",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 3
+      },
+      {
+        "tag": "New Testament",
         "mentions": 2
       },
       {
@@ -312,7 +856,47 @@
         "mentions": 2
       },
       {
+        "tag": "Septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 2
+      },
+      {
+        "tag": "King David",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
         "tag": "archaeology",
+        "mentions": 1
+      },
+      {
+        "tag": "Jephthah",
+        "mentions": 1
+      },
+      {
+        "tag": "Judges",
+        "mentions": 1
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
         "mentions": 1
       }
     ]
@@ -330,19 +914,35 @@
         "mentions": 73
       },
       {
-        "tag": "lot",
-        "mentions": 41
+        "tag": "Jesus",
+        "mentions": 12
       },
       {
-        "tag": "book of job",
-        "mentions": 1
+        "tag": "Christianity",
+        "mentions": 9
       },
       {
-        "tag": "judges",
-        "mentions": 1
+        "tag": "Hebrew Bible",
+        "mentions": 6
       },
       {
-        "tag": "numbers",
+        "tag": "New Testament",
+        "mentions": 4
+      },
+      {
+        "tag": "Bart Ehrman",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 2
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 2
+      },
+      {
+        "tag": "source criticism",
         "mentions": 1
       },
       {
@@ -350,11 +950,23 @@
         "mentions": 1
       },
       {
-        "tag": "hell",
+        "tag": "Jerusalem",
         "mentions": 1
       },
       {
-        "tag": "source criticism",
+        "tag": "Numbers",
+        "mentions": 1
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "James",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
         "mentions": 1
       }
     ]
@@ -368,15 +980,23 @@
     "episodeNumber": 9,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 19
+        "tag": "Christianity",
+        "mentions": 12
       },
       {
         "tag": "gods",
         "mentions": 11
       },
       {
+        "tag": "Book of Revelation",
+        "mentions": 9
+      },
+      {
         "tag": "monotheism",
+        "mentions": 5
+      },
+      {
+        "tag": "Jesus",
         "mentions": 5
       },
       {
@@ -388,23 +1008,43 @@
         "mentions": 4
       },
       {
-        "tag": "numbers",
+        "tag": "New Testament",
         "mentions": 3
       },
       {
-        "tag": "book of job",
+        "tag": "Genesis",
         "mentions": 2
       },
       {
-        "tag": "kings",
+        "tag": "Isaiah",
         "mentions": 2
       },
       {
-        "tag": "satan",
-        "mentions": 2
+        "tag": "John of Patmos",
+        "mentions": 1
       },
       {
-        "tag": "hell",
+        "tag": "Hebrew Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "Bart Ehrman",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "James",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of John",
         "mentions": 1
       }
     ]
@@ -418,19 +1058,95 @@
     "episodeNumber": 10,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 28
+        "tag": "Paul",
+        "mentions": 50
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 29
       },
       {
         "tag": "angel",
         "mentions": 13
       },
       {
+        "tag": "New Testament",
+        "mentions": 9
+      },
+      {
+        "tag": "Adam",
+        "mentions": 7
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 5
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 5
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 5
+      },
+      {
+        "tag": "Sodom",
+        "mentions": 4
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 4
+      },
+      {
+        "tag": "Israel",
+        "mentions": 4
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 3
+      },
+      {
         "tag": "etiology",
         "mentions": 2
       },
       {
+        "tag": "Judges",
+        "mentions": 2
+      },
+      {
+        "tag": "Eve",
+        "mentions": 2
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 2
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
         "tag": "univocality",
+        "mentions": 1
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "King David",
         "mentions": 1
       }
     ]
@@ -444,27 +1160,143 @@
     "episodeNumber": 11,
     "tags": [
       {
+        "tag": "Hebrew Bible",
+        "mentions": 59
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 58
+      },
+      {
         "tag": "manuscript",
         "mentions": 55
       },
       {
-        "tag": "lot",
-        "mentions": 27
+        "tag": "Septuagint",
+        "mentions": 29
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 24
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 15
       },
       {
         "tag": "biblical canon",
+        "mentions": 13
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 10
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 10
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 9
+      },
+      {
+        "tag": "James",
+        "mentions": 9
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 8
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 8
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 5
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 5
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 4
+      },
+      {
+        "tag": "Moses",
+        "mentions": 3
+      },
+      {
+        "tag": "Torah",
+        "mentions": 3
+      },
+      {
+        "tag": "Luke",
+        "mentions": 3
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 3
+      },
+      {
+        "tag": "Deuteronomy",
         "mentions": 2
       },
       {
-        "tag": "numbers",
-        "mentions": 1
+        "tag": "Jerusalem",
+        "mentions": 2
       },
       {
-        "tag": "kings",
-        "mentions": 1
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 2
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 2
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 2
+      },
+      {
+        "tag": "Easter",
+        "mentions": 2
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "Kings",
+        "mentions": 2
       },
       {
         "tag": "resurrection",
+        "mentions": 1
+      },
+      {
+        "tag": "Bart Ehrman",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 1
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
         "mentions": 1
       }
     ]
@@ -478,27 +1310,63 @@
     "episodeNumber": 12,
     "tags": [
       {
+        "tag": "Mary Magdalene",
+        "mentions": 168
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 83
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 74
+      },
+      {
         "tag": "manuscript",
         "mentions": 55
       },
       {
-        "tag": "lot",
-        "mentions": 31
+        "tag": "Luke",
+        "mentions": 51
+      },
+      {
+        "tag": "Peter",
+        "mentions": 47
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 12
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 11
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 11
       },
       {
         "tag": "textual criticism",
         "mentions": 7
       },
       {
-        "tag": "angel",
-        "mentions": 3
+        "tag": "James",
+        "mentions": 7
+      },
+      {
+        "tag": "Paul",
+        "mentions": 6
       },
       {
         "tag": "archaeology",
         "mentions": 3
       },
       {
-        "tag": "book of job",
+        "tag": "angel",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
         "mentions": 2
       },
       {
@@ -506,7 +1374,23 @@
         "mentions": 2
       },
       {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "El",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 1
+      },
+      {
         "tag": "resurrection",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
         "mentions": 1
       }
     ]
@@ -520,23 +1404,79 @@
     "episodeNumber": 13,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 15
+        "tag": "Jerusalem",
+        "mentions": 14
+      },
+      {
+        "tag": "Lachish",
+        "mentions": 12
+      },
+      {
+        "tag": "Israel",
+        "mentions": 12
       },
       {
         "tag": "theology",
         "mentions": 11
       },
       {
+        "tag": "YHWH",
+        "mentions": 8
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 8
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 7
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 7
+      },
+      {
+        "tag": "Judah",
+        "mentions": 6
+      },
+      {
         "tag": "archaeology",
         "mentions": 5
       },
       {
-        "tag": "book of job",
+        "tag": "King David",
+        "mentions": 4
+      },
+      {
+        "tag": "Gospel of John",
         "mentions": 3
       },
       {
-        "tag": "genesis",
+        "tag": "Christianity",
+        "mentions": 2
+      },
+      {
+        "tag": "Peter",
+        "mentions": 2
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "epigraphy",
+        "mentions": 1
+      },
+      {
+        "tag": "Babylon",
         "mentions": 1
       },
       {
@@ -544,7 +1484,19 @@
         "mentions": 1
       },
       {
-        "tag": "epigraphy",
+        "tag": "Judges",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "James",
+        "mentions": 1
+      },
+      {
+        "tag": "Baal",
         "mentions": 1
       }
     ]
@@ -558,11 +1510,39 @@
     "episodeNumber": 14,
     "tags": [
       {
-        "tag": "lot",
+        "tag": "Adam",
+        "mentions": 15
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 12
+      },
+      {
+        "tag": "Asherah",
         "mentions": 11
       },
       {
+        "tag": "Israel",
+        "mentions": 9
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 7
+      },
+      {
+        "tag": "Moses",
+        "mentions": 5
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 4
+      },
+      {
         "tag": "angel",
+        "mentions": 4
+      },
+      {
+        "tag": "Eve",
         "mentions": 4
       },
       {
@@ -570,7 +1550,51 @@
         "mentions": 3
       },
       {
+        "tag": "Isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "Torah",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 3
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
         "tag": "manuscript",
+        "mentions": 1
+      },
+      {
+        "tag": "Lachish",
+        "mentions": 1
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 1
+      },
+      {
+        "tag": "Mary Magdalene",
         "mentions": 1
       }
     ]
@@ -584,23 +1608,71 @@
     "episodeNumber": 15,
     "tags": [
       {
-        "tag": "hell",
-        "mentions": 25
+        "tag": "Matthew",
+        "mentions": 28
       },
       {
-        "tag": "lot",
-        "mentions": 22
+        "tag": "Jesus",
+        "mentions": 17
       },
       {
-        "tag": "angel",
-        "mentions": 5
+        "tag": "Israel",
+        "mentions": 11
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 11
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 7
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 6
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 6
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 6
       },
       {
         "tag": "univocality",
         "mentions": 5
       },
       {
+        "tag": "angel",
+        "mentions": 5
+      },
+      {
+        "tag": "Sheol",
+        "mentions": 5
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 4
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 4
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 3
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 3
+      },
+      {
         "tag": "etiology",
+        "mentions": 3
+      },
+      {
+        "tag": "Hell",
         "mentions": 3
       },
       {
@@ -612,15 +1684,47 @@
         "mentions": 2
       },
       {
-        "tag": "book of job",
-        "mentions": 1
+        "tag": "inerrancy",
+        "mentions": 2
       },
       {
-        "tag": "kings",
-        "mentions": 1
+        "tag": "Jeremiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
       },
       {
         "tag": "theology",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Job",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
         "mentions": 1
       }
     ]
@@ -634,15 +1738,87 @@
     "episodeNumber": 16,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 23
+        "tag": "Jesus",
+        "mentions": 45
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 32
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 25
+      },
+      {
+        "tag": "James",
+        "mentions": 22
+      },
+      {
+        "tag": "Peter",
+        "mentions": 20
+      },
+      {
+        "tag": "Paul",
+        "mentions": 14
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 9
       },
       {
         "tag": "manuscript",
         "mentions": 7
       },
       {
-        "tag": "book of job",
+        "tag": "Israel",
+        "mentions": 6
+      },
+      {
+        "tag": "Luke",
+        "mentions": 5
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 3
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Bart Ehrman",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "El",
         "mentions": 1
       }
     ]
@@ -660,11 +1836,43 @@
         "mentions": 47
       },
       {
-        "tag": "lot",
+        "tag": "King James Version",
         "mentions": 35
       },
       {
-        "tag": "hell",
+        "tag": "New Testament",
+        "mentions": 25
+      },
+      {
+        "tag": "James",
+        "mentions": 21
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 14
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 9
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 7
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 5
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 5
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 4
+      },
+      {
+        "tag": "Christianity",
         "mentions": 2
       },
       {
@@ -672,7 +1880,7 @@
         "mentions": 2
       },
       {
-        "tag": "book of job",
+        "tag": "textual criticism",
         "mentions": 1
       },
       {
@@ -684,11 +1892,35 @@
         "mentions": 1
       },
       {
-        "tag": "textual criticism",
+        "tag": "archaeology",
         "mentions": 1
       },
       {
-        "tag": "archaeology",
+        "tag": "Numbers",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Kings",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
         "mentions": 1
       }
     ]
@@ -702,27 +1934,107 @@
     "episodeNumber": 18,
     "tags": [
       {
+        "tag": "Satan",
+        "mentions": 55
+      },
+      {
+        "tag": "Balaam",
+        "mentions": 49
+      },
+      {
         "tag": "angel",
         "mentions": 45
       },
       {
-        "tag": "satan",
-        "mentions": 31
+        "tag": "YHWH",
+        "mentions": 30
       },
       {
-        "tag": "lot",
-        "mentions": 15
+        "tag": "Israel",
+        "mentions": 19
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 16
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 7
+      },
+      {
+        "tag": "Book of Job",
+        "mentions": 7
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 6
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 6
+      },
+      {
+        "tag": "Moses",
+        "mentions": 6
+      },
+      {
+        "tag": "Baal",
+        "mentions": 6
       },
       {
         "tag": "divine council",
         "mentions": 5
       },
       {
+        "tag": "Genesis",
+        "mentions": 5
+      },
+      {
+        "tag": "King David",
+        "mentions": 5
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 4
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 4
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 3
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 3
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 3
+      },
+      {
+        "tag": "Adam",
+        "mentions": 3
+      },
+      {
         "tag": "gods",
         "mentions": 3
       },
       {
-        "tag": "numbers",
+        "tag": "Eve",
+        "mentions": 3
+      },
+      {
+        "tag": "Ishmael",
         "mentions": 2
       },
       {
@@ -734,7 +2046,43 @@
         "mentions": 2
       },
       {
-        "tag": "book of job",
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Judges",
+        "mentions": 1
+      },
+      {
+        "tag": "James",
+        "mentions": 1
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Kings",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "El",
         "mentions": 1
       }
     ]
@@ -745,27 +2093,59 @@
     "publishedAt": "2023-08-14T00:00:00Z",
     "processedAt": "2026-01-11T21:05:21.565Z",
     "transcriptPath": "data/transcripts/2023-08-14-episode-19-august-14-2023-ill-make-you-a-star-with-david-a-burnett.txt",
-    "episodeNumber": 1,
+    "episodeNumber": 19,
     "tags": [
       {
         "tag": "gods",
         "mentions": 59
       },
       {
+        "tag": "Paul",
+        "mentions": 45
+      },
+      {
         "tag": "resurrection",
         "mentions": 24
       },
       {
-        "tag": "lot",
-        "mentions": 19
+        "tag": "Christianity",
+        "mentions": 22
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 21
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 14
       },
       {
         "tag": "monotheism",
         "mentions": 12
       },
       {
+        "tag": "Abraham",
+        "mentions": 10
+      },
+      {
+        "tag": "Israel",
+        "mentions": 10
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 9
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 8
+      },
+      {
         "tag": "apocalypse",
         "mentions": 7
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 6
       },
       {
         "tag": "angel",
@@ -776,19 +2156,67 @@
         "mentions": 5
       },
       {
+        "tag": "YHWH",
+        "mentions": 5
+      },
+      {
         "tag": "divine council",
         "mentions": 4
       },
       {
-        "tag": "judges",
+        "tag": "Hebrew Bible",
+        "mentions": 3
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 2
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Judges",
+        "mentions": 2
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea Scrolls",
         "mentions": 1
       },
       {
-        "tag": "kings",
+        "tag": "Gospel of John",
         "mentions": 1
       },
       {
-        "tag": "hell",
+        "tag": "Exodus",
+        "mentions": 1
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Torah",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
         "mentions": 1
       }
     ]
@@ -799,26 +2227,98 @@
     "publishedAt": "2023-08-21T00:00:00Z",
     "processedAt": "2026-01-11T21:20:04.095Z",
     "transcriptPath": "data/transcripts/2023-08-21-episode-20-august-21-2023-i-knew-a-guy-who-was-so-old.txt",
-    "episodeNumber": 1,
+    "episodeNumber": 20,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 18
+        "tag": "Christianity",
+        "mentions": 34
       },
       {
-        "tag": "kings",
+        "tag": "Genesis",
+        "mentions": 28
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 23
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 21
+      },
+      {
+        "tag": "Noah",
+        "mentions": 14
+      },
+      {
+        "tag": "Adam",
+        "mentions": 13
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 11
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 10
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 10
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 7
+      },
+      {
+        "tag": "New Testament",
         "mentions": 6
       },
       {
-        "tag": "numbers",
-        "mentions": 4
+        "tag": "Abraham",
+        "mentions": 5
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 3
+      },
+      {
+        "tag": "Ishmael",
+        "mentions": 3
       },
       {
         "tag": "manuscript",
         "mentions": 3
       },
       {
-        "tag": "book of job",
+        "tag": "Daniel",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 2
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "James",
+        "mentions": 2
+      },
+      {
+        "tag": "Egypt",
         "mentions": 2
       },
       {
@@ -826,7 +2326,15 @@
         "mentions": 1
       },
       {
-        "tag": "biblical canon",
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
         "mentions": 1
       }
     ]
@@ -837,22 +2345,102 @@
     "publishedAt": "2023-08-28T00:00:00Z",
     "processedAt": "2026-01-11T21:48:30.193Z",
     "transcriptPath": "data/transcripts/2023-08-28-episode-21-august-28-2023-did-the-exodus-really-happen.txt",
-    "episodeNumber": 1,
+    "episodeNumber": 21,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 17
+        "tag": "Egypt",
+        "mentions": 49
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 39
+      },
+      {
+        "tag": "Israel",
+        "mentions": 18
+      },
+      {
+        "tag": "Moses",
+        "mentions": 14
       },
       {
         "tag": "child sacrifice",
         "mentions": 10
       },
       {
+        "tag": "Hebrew Bible",
+        "mentions": 7
+      },
+      {
+        "tag": "Ezekiel",
+        "mentions": 7
+      },
+      {
+        "tag": "Molek",
+        "mentions": 7
+      },
+      {
         "tag": "gods",
         "mentions": 6
       },
       {
-        "tag": "numbers",
+        "tag": "Carthage",
+        "mentions": 5
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 4
+      },
+      {
+        "tag": "Baal",
+        "mentions": 4
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 3
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 2
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 2
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 2
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 2
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 2
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugarit",
         "mentions": 1
       }
     ]
@@ -863,14 +2451,94 @@
     "publishedAt": "2023-09-04T00:00:00Z",
     "processedAt": "2026-01-11T22:05:11.849Z",
     "transcriptPath": "data/transcripts/2023-09-04-episode-22-september-4-2023-connecting-with-source.txt",
-    "episodeNumber": 1,
+    "episodeNumber": 22,
     "tags": [
       {
-        "tag": "lot",
+        "tag": "Genesis",
+        "mentions": 35
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 24
+      },
+      {
+        "tag": "Exodus",
         "mentions": 16
       },
       {
+        "tag": "Israel",
+        "mentions": 8
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 6
+      },
+      {
+        "tag": "Moses",
+        "mentions": 4
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 3
+      },
+      {
+        "tag": "El",
+        "mentions": 2
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 2
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "James",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "Ishmael",
+        "mentions": 1
+      },
+      {
         "tag": "manuscript",
+        "mentions": 1
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Ezekiel",
+        "mentions": 1
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Noah",
+        "mentions": 1
+      },
+      {
+        "tag": "Eve",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Job",
         "mentions": 1
       }
     ]
@@ -881,14 +2549,62 @@
     "publishedAt": "2023-09-11T00:00:00Z",
     "processedAt": "2026-01-11T22:20:51.303Z",
     "transcriptPath": "data/transcripts/2023-09-11-episode-23-september-11-2023-abortion-and-the-bible.txt",
-    "episodeNumber": 1,
+    "episodeNumber": 23,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 8
+        "tag": "Christianity",
+        "mentions": 14
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 10
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 9
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 6
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 6
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 5
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 4
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 3
+      },
+      {
+        "tag": "Luke",
+        "mentions": 3
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 2
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 2
       },
       {
         "tag": "univocality",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
         "mentions": 1
       }
     ]
@@ -899,18 +2615,46 @@
     "publishedAt": "2023-09-18T00:00:00Z",
     "processedAt": "2026-01-11T22:37:57.105Z",
     "transcriptPath": "data/transcripts/2023-09-18-episode-24-september-18-tiptoe-through-the-talmud-with-miriam-anzovin.txt",
-    "episodeNumber": 1,
+    "episodeNumber": 24,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 37
+        "tag": "Torah",
+        "mentions": 17
       },
       {
-        "tag": "genesis",
+        "tag": "Israel",
+        "mentions": 8
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 7
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 6
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 6
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 4
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Christianity",
         "mentions": 1
       },
       {
-        "tag": "book of job",
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Ezekiel",
         "mentions": 1
       }
     ]
@@ -921,26 +2665,82 @@
     "publishedAt": "2023-09-25T00:00:00Z",
     "processedAt": "2026-01-11T23:51:55.956Z",
     "transcriptPath": "data/transcripts/2023-09-25-episode-25-september-24-2023-a-beatitude-adjustment-for-jordan-peterson.txt",
-    "episodeNumber": 1,
+    "episodeNumber": 25,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 12
+        "tag": "Matthew",
+        "mentions": 20
       },
       {
-        "tag": "book of job",
+        "tag": "Jesus",
+        "mentions": 17
+      },
+      {
+        "tag": "Luke",
+        "mentions": 17
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 9
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 8
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 6
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 4
+      },
+      {
+        "tag": "Israel",
+        "mentions": 4
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 3
+      },
+      {
+        "tag": "Septuagint",
         "mentions": 2
       },
       {
-        "tag": "kings",
-        "mentions": 2
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
       },
       {
-        "tag": "hell",
-        "mentions": 2
+        "tag": "Gospel of John",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
       },
       {
         "tag": "manuscript",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 1
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "James",
         "mentions": 1
       }
     ]
@@ -951,11 +2751,27 @@
     "publishedAt": "2023-10-01T00:00:00Z",
     "processedAt": "2026-01-12T00:07:44.269Z",
     "transcriptPath": "data/transcripts/2023-10-01-episode-26-october-1-2023-a-jewish-paul-with-matthew-thiessen.txt",
-    "episodeNumber": 1,
+    "episodeNumber": 26,
     "tags": [
       {
-        "tag": "lot",
-        "mentions": 15
+        "tag": "Paul",
+        "mentions": 131
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 26
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 17
+      },
+      {
+        "tag": "James",
+        "mentions": 17
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 16
       },
       {
         "tag": "resurrection",
@@ -966,11 +2782,43 @@
         "mentions": 7
       },
       {
+        "tag": "First Corinthians",
+        "mentions": 6
+      },
+      {
         "tag": "circumcision",
         "mentions": 6
       },
       {
+        "tag": "New Testament",
+        "mentions": 2
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 2
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 2
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 2
+      },
+      {
+        "tag": "Bart Ehrman",
+        "mentions": 1
+      },
+      {
         "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "King David",
         "mentions": 1
       }
     ]

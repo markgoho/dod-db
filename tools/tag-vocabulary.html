@@ -133,23 +133,31 @@
         color: #4b5563;
         font-weight: 500;
       }
-      .tag-badge.biblical-character {
+      .tag-badge.character {
         background: #dbeafe;
         color: #1e40af;
       }
-      .tag-badge.biblical-place {
+      .tag-badge.character {
+        background: #ffedd5;
+        color: #9a3412;
+      }
+      .tag-badge.scholar {
+        background: #e0e7ff;
+        color: #3730a3;
+      }
+      .tag-badge.place {
         background: #fef3c7;
         color: #92400e;
       }
-      .tag-badge.biblical-text {
+      .tag-badge.literature {
         background: #fce7f3;
         color: #9f1239;
       }
-      .tag-badge.theological-concept {
+      .tag-badge.theology {
         background: #f3e8ff;
         color: #6b21a8;
       }
-      .tag-badge.scholarly-term {
+      .tag-badge.scholarship {
         background: #d1fae5;
         color: #065f46;
       }
@@ -265,23 +273,31 @@
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
-      .vocab-category-badge.biblical-character {
+      .vocab-category-badge.character {
         background: #dbeafe;
         color: #1e40af;
       }
-      .vocab-category-badge.biblical-place {
+      .vocab-category-badge.character {
+        background: #ffedd5;
+        color: #9a3412;
+      }
+      .vocab-category-badge.scholar {
+        background: #e0e7ff;
+        color: #3730a3;
+      }
+      .vocab-category-badge.place {
         background: #fef3c7;
         color: #92400e;
       }
-      .vocab-category-badge.biblical-text {
+      .vocab-category-badge.literature {
         background: #fce7f3;
         color: #9f1239;
       }
-      .vocab-category-badge.theological-concept {
+      .vocab-category-badge.theology {
         background: #f3e8ff;
         color: #6b21a8;
       }
-      .vocab-category-badge.scholarly-term {
+      .vocab-category-badge.scholarship {
         background: #d1fae5;
         color: #065f46;
       }
@@ -443,6 +459,67 @@
         white-space: pre-wrap;
         word-wrap: break-word;
       }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 8px;
+      }
+      .form-input {
+        width: 100%;
+        padding: 10px 16px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        font-size: 14px;
+        font-family: inherit;
+        transition: border-color 0.2s;
+      }
+      .form-input:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+      }
+      .form-select {
+        width: 100%;
+        padding: 10px 16px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        font-size: 14px;
+        font-family: inherit;
+        background: white;
+        cursor: pointer;
+      }
+      .form-hint {
+        font-size: 13px;
+        color: #6b7280;
+        margin-top: 4px;
+      }
+      .success-message {
+        padding: 12px 16px;
+        background: #d1fae5;
+        color: #065f46;
+        border-radius: 8px;
+        margin-top: 16px;
+        display: none;
+      }
+      .success-message.show {
+        display: block;
+      }
+      .error-message {
+        padding: 12px 16px;
+        background: #fee2e2;
+        color: #991b1b;
+        border-radius: 8px;
+        margin-top: 16px;
+        display: none;
+      }
+      .error-message.show {
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -506,20 +583,23 @@
           <div class="category-tab active" onclick="filterVocabulary('all')">
             All
           </div>
-          <div class="category-tab" onclick="filterVocabulary('biblical-character')">
-            Biblical Characters
+          <div class="category-tab" onclick="filterVocabulary('character')">
+            Characters
           </div>
-          <div class="category-tab" onclick="filterVocabulary('biblical-place')">
-            Biblical Places
+          <div class="category-tab" onclick="filterVocabulary('scholar')">
+            Scholars
           </div>
-          <div class="category-tab" onclick="filterVocabulary('biblical-text')">
-            Biblical Texts
+          <div class="category-tab" onclick="filterVocabulary('place')">
+            Places
           </div>
-          <div class="category-tab" onclick="filterVocabulary('theological-concept')">
-            Theological Concepts
+          <div class="category-tab" onclick="filterVocabulary('literature')">
+            Literature
           </div>
-          <div class="category-tab" onclick="filterVocabulary('scholarly-term')">
-            Scholarly Terms
+          <div class="category-tab" onclick="filterVocabulary('theology')">
+            Theology
+          </div>
+          <div class="category-tab" onclick="filterVocabulary('scholarship')">
+            Scholarship
           </div>
         </div>
         <div id="vocabulary-container">
@@ -535,22 +615,101 @@
       </div>
 
       <div class="section">
+        <h2>Add New Tag</h2>
+        <form id="add-tag-form" onsubmit="addTag(event)">
+          <div class="form-group">
+            <label class="form-label" for="tag-canonical">
+              Canonical Name <span style="color: #ef4444;">*</span>
+            </label>
+            <input
+              type="text"
+              id="tag-canonical"
+              class="form-input"
+              placeholder="e.g., Hezekiah, Gospel of Mark, Monotheism"
+              required
+              oninput="validateForm()" />
+            <div class="form-hint">The primary form of the tag (case-sensitive)</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tag-variations">
+              Variations (comma-separated)
+            </label>
+            <input
+              type="text"
+              id="tag-variations"
+              class="form-input"
+              placeholder="e.g., Hezekiah's, King Hezekiah" />
+            <div class="form-hint">Alternative spellings, possessives, etc.</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tag-category">
+              Category <span style="color: #ef4444;">*</span>
+            </label>
+            <select id="tag-category" class="form-select" required oninput="validateForm()">
+              <option value="">Select a category...</option>
+              <option value="character">Character</option>
+              <option value="scholar">Scholar</option>
+              <option value="place">Place</option>
+              <option value="literature">Literature</option>
+              <option value="theology">Theology</option>
+              <option value="scholarship">Scholarship</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+              <input
+                type="checkbox"
+                id="tag-llm-verify"
+                style="width: 18px; height: 18px; cursor: pointer;"
+                onchange="toggleDescription()" />
+              <span class="form-label" style="margin: 0;">Use LLM context verification</span>
+            </label>
+            <div class="form-hint">For ambiguous names (like "David" or "John"), use AI to verify each match based on context</div>
+          </div>
+
+          <div class="form-group" id="description-group" style="display: none;">
+            <label class="form-label" for="tag-description">
+              Description <span style="color: #ef4444;">*</span>
+            </label>
+            <textarea
+              id="tag-description"
+              class="form-input"
+              rows="3"
+              placeholder="e.g., King David of Israel, second king, son of Jesse, defeated Goliath"
+              oninput="validateForm()"></textarea>
+            <div class="form-hint">Brief description to help AI identify correct matches (required when using LLM verification)</div>
+          </div>
+
+          <button
+            id="add-tag-btn"
+            type="submit"
+            class="btn btn-primary"
+            disabled>
+            Add Tag & Reprocess Episodes
+          </button>
+
+          <div id="add-tag-success" class="success-message"></div>
+          <div id="add-tag-error" class="error-message"></div>
+
+          <div id="add-tag-status" class="migration-status">
+            <div id="add-tag-status-badge"></div>
+            <div id="add-tag-logs" class="migration-logs"></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="section">
         <h2>Vocabulary Management</h2>
         <div class="migration-controls">
           <div class="instruction-box">
-            <h3>How to Update Tag Vocabulary</h3>
-            <ol>
-              <li>Review analytics above to identify tags that need attention</li>
-              <li>Edit <code>src/config/tag-vocabulary.ts</code> in your IDE:
-                <ul>
-                  <li>Add new canonical terms and their variations</li>
-                  <li>Add variations to existing terms (e.g., common misspellings)</li>
-                  <li>Ensure each term has the correct category</li>
-                </ul>
-              </li>
-              <li>Click "Run Migration" below to reprocess all episodes with the updated vocabulary</li>
-              <li>Review the updated analytics and episodes to verify changes</li>
-            </ol>
+            <h3>Manual Editing & Bulk Operations</h3>
+            <p style="color: #4b5563; margin-bottom: 12px;">
+              For bulk edits or adding variations to existing tags, you can still manually edit
+              <code>src/config/tag-vocabulary.ts</code> and click "Run Migration" below.
+            </p>
           </div>
           <button
             id="migrate-btn"
@@ -569,11 +728,13 @@
     <script>
       // Category colors for tags
       const TAG_CATEGORIES = {
-        'biblical-character': 'biblical-character',
-        'biblical-place': 'biblical-place',
-        'biblical-text': 'biblical-text',
-        'theological-concept': 'theological-concept',
-        'scholarly-term': 'scholarly-term',
+        'character': 'character',
+        'character': 'character',
+        'scholar': 'scholar',
+        'place': 'place',
+        'literature': 'literature',
+        'theology': 'theology',
+        'scholarship': 'scholarship',
       };
 
       // Track tag categories from vocabulary (will be populated when vocabulary is loaded)
@@ -880,8 +1041,9 @@
           return;
         }
 
-        // Top 15 most used tags
-        const topTags = stats.slice(0, 15);
+        // Top 15 most used tags (sort by episode count)
+        const sortedByEpisodeCount = [...stats].sort((a, b) => b.episodeCount - a.episodeCount);
+        const topTags = sortedByEpisodeCount.slice(0, 15);
         const maxEpisodeCount = Math.max(...topTags.map(t => t.episodeCount));
 
         // Find underused vocabulary terms (in vocabulary but < 3 episodes)
@@ -1031,6 +1193,171 @@
           const btn = document.getElementById('migrate-btn');
           btn.disabled = false;
           btn.textContent = 'Run Migration';
+        }
+      }
+
+      // Add tag form management
+      function toggleDescription() {
+        const llmVerify = document.getElementById('tag-llm-verify').checked;
+        const descriptionGroup = document.getElementById('description-group');
+        const descriptionField = document.getElementById('tag-description');
+
+        if (llmVerify) {
+          descriptionGroup.style.display = 'block';
+          descriptionField.required = true;
+        } else {
+          descriptionGroup.style.display = 'none';
+          descriptionField.required = false;
+          descriptionField.value = '';
+        }
+
+        validateForm();
+      }
+
+      function validateForm() {
+        const canonical = document.getElementById('tag-canonical').value.trim();
+        const category = document.getElementById('tag-category').value;
+        const llmVerify = document.getElementById('tag-llm-verify').checked;
+        const description = document.getElementById('tag-description').value.trim();
+        const btn = document.getElementById('add-tag-btn');
+
+        // Enable button only if required fields are filled
+        let isValid = canonical && category;
+
+        // If llmVerify is checked, description is required
+        if (llmVerify) {
+          isValid = isValid && description;
+        }
+
+        btn.disabled = !isValid;
+      }
+
+      let currentAddTagJobId = null;
+      let addTagPollInterval = null;
+
+      async function addTag(event) {
+        event.preventDefault();
+
+        const canonical = document.getElementById('tag-canonical').value.trim();
+        const variationsInput = document.getElementById('tag-variations').value.trim();
+        const category = document.getElementById('tag-category').value;
+        const llmVerify = document.getElementById('tag-llm-verify').checked;
+        const description = document.getElementById('tag-description').value.trim();
+
+        const btn = document.getElementById('add-tag-btn');
+        const successMsg = document.getElementById('add-tag-success');
+        const errorMsg = document.getElementById('add-tag-error');
+        const statusContainer = document.getElementById('add-tag-status');
+        const statusBadge = document.getElementById('add-tag-status-badge');
+        const logsContainer = document.getElementById('add-tag-logs');
+
+        // Hide previous messages
+        successMsg.classList.remove('show');
+        errorMsg.classList.remove('show');
+        statusContainer.classList.remove('show');
+
+        // Disable button
+        btn.disabled = true;
+        btn.textContent = 'Adding...';
+
+        try {
+          // Build request body
+          const requestBody = {
+            canonical,
+            variations: variationsInput,
+            category,
+            llmVerify,
+            description: llmVerify ? description : undefined,
+          };
+
+          // Submit to API
+          const response = await fetch('/api/vocabulary/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(requestBody),
+          });
+
+          const data = await response.json();
+
+          if (!response.ok) {
+            throw new Error(data.error || 'Failed to add tag');
+          }
+
+          // Show success
+          successMsg.textContent = data.message;
+          successMsg.classList.add('show');
+
+          // Start polling for reprocessing status
+          currentAddTagJobId = data.jobId;
+          statusContainer.classList.add('show');
+          statusBadge.innerHTML = '<span class="status-badge running">Reprocessing episodes...</span>';
+          logsContainer.textContent = 'Starting reprocessing...\n';
+
+          addTagPollInterval = setInterval(pollAddTagStatus, 1000);
+
+          // Clear form
+          document.getElementById('tag-canonical').value = '';
+          document.getElementById('tag-variations').value = '';
+          document.getElementById('tag-category').value = '';
+          document.getElementById('tag-llm-verify').checked = false;
+          document.getElementById('tag-description').value = '';
+          document.getElementById('description-group').style.display = 'none';
+          validateForm();
+        } catch (error) {
+          errorMsg.textContent = error.message;
+          errorMsg.classList.add('show');
+          btn.disabled = false;
+          btn.textContent = 'Add Tag & Reprocess Episodes';
+        }
+      }
+
+      async function pollAddTagStatus() {
+        if (!currentAddTagJobId) return;
+
+        try {
+          const response = await fetch(`/api/migrate-status/${currentAddTagJobId}`);
+          if (!response.ok) {
+            throw new Error('Failed to get reprocessing status');
+          }
+
+          const job = await response.json();
+          const statusBadge = document.getElementById('add-tag-status-badge');
+          const logsContainer = document.getElementById('add-tag-logs');
+          const btn = document.getElementById('add-tag-btn');
+
+          // Update logs
+          logsContainer.textContent = job.logs || 'Waiting for output...';
+          logsContainer.scrollTop = logsContainer.scrollHeight;
+
+          // Update status
+          if (job.status === 'completed') {
+            statusBadge.innerHTML = '<span class="status-badge completed">✓ Tag Added & Episodes Reprocessed</span>';
+            clearInterval(addTagPollInterval);
+            btn.disabled = false;
+            btn.textContent = 'Add Tag & Reprocess Episodes';
+            currentAddTagJobId = null;
+
+            // Reload all data
+            setTimeout(() => {
+              loadEpisodes();
+              loadVocabulary();
+              loadAnalytics();
+            }, 1000);
+          } else if (job.status === 'failed') {
+            statusBadge.innerHTML = '<span class="status-badge failed">✗ Reprocessing Failed</span>';
+            clearInterval(addTagPollInterval);
+            btn.disabled = false;
+            btn.textContent = 'Add Tag & Reprocess Episodes';
+            currentAddTagJobId = null;
+          } else {
+            statusBadge.innerHTML = '<span class="status-badge running">Reprocessing...</span>';
+          }
+        } catch (error) {
+          console.error('Error polling reprocessing status:', error);
+          clearInterval(addTagPollInterval);
+          const btn = document.getElementById('add-tag-btn');
+          btn.disabled = false;
+          btn.textContent = 'Add Tag & Reprocess Episodes';
         }
       }
 

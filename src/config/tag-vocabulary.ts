@@ -4,18 +4,33 @@
  * in episode transcripts without needing LLM assistance.
  */
 
-export interface TagDefinition {
-	canonical: string;
-	variations: string[];
-	category: TagCategory;
-}
-
 export type TagCategory =
-	| 'biblical-character'
-	| 'biblical-place'
-	| 'biblical-text'
-	| 'theological-concept'
-	| 'scholarly-term';
+	| 'character'
+	| 'scholar'
+	| 'place'
+	| 'literature'
+	| 'theology'
+	| 'scholarship';
+
+/**
+ * Tag definition with optional LLM verification.
+ * When llmVerify is true, description is required to provide context for verification.
+ */
+export type TagDefinition =
+	| {
+			canonical: string;
+			variations: string[];
+			category: TagCategory;
+			llmVerify: true;
+			description: string; // Required when llmVerify is true
+	  }
+	| {
+			canonical: string;
+			variations: string[];
+			category: TagCategory;
+			llmVerify?: false;
+			description?: string; // Optional otherwise
+	  };
 
 /**
  * Seed vocabulary generated from analysis of existing transcripts.
@@ -32,114 +47,115 @@ export type TagCategory =
  */
 export const tagVocabulary: TagDefinition[] = [
 	// BIBLICAL CHARACTERS (26 terms)
-	{ canonical: 'Abraham', variations: ['Abram', "Abraham's"], category: 'biblical-character' },
-	{ canonical: 'Isaac', variations: ["Isaac's"], category: 'biblical-character' },
-	{ canonical: 'Jesus', variations: ["Jesus'", 'Christ'], category: 'biblical-character' },
-	{ canonical: 'Moses', variations: ['Moshe', "Moses'", "Moses's"], category: 'biblical-character' },
-	{ canonical: 'Adam', variations: ["Adam's"], category: 'biblical-character' },
-	{ canonical: 'Eve', variations: [], category: 'biblical-character' },
-	{ canonical: 'Lot', variations: ["Lot's"], category: 'biblical-character' },
-	{ canonical: 'Paul', variations: ['Pauline'], category: 'biblical-character' },
-	{ canonical: 'David', variations: ["David's"], category: 'biblical-character' },
-	{ canonical: 'Jephthah', variations: [], category: 'biblical-character' },
-	{ canonical: 'John of Patmos', variations: ['John the Revelator'], category: 'biblical-character' },
-	{ canonical: 'Bart Ehrman', variations: [], category: 'biblical-character' },
-	{ canonical: 'Hagar', variations: [], category: 'biblical-character' },
-	{ canonical: 'Ishmael', variations: ['Ishmaelites'], category: 'biblical-character' },
-	{ canonical: 'Ezekiel', variations: [], category: 'biblical-character' },
-	{ canonical: 'Peter', variations: ['Simon Peter'], category: 'biblical-character' },
-	{ canonical: 'James', variations: [], category: 'biblical-character' },
-	{ canonical: 'John', variations: [], category: 'biblical-character' },
-	{ canonical: 'Luke', variations: [], category: 'biblical-character' },
-	{ canonical: 'Matthew', variations: [], category: 'biblical-character' },
-	{ canonical: 'Noah', variations: ["Noah's"], category: 'biblical-character' },
-	{ canonical: 'Jeremiah', variations: [], category: 'biblical-character' },
-	{ canonical: 'Mary Magdalene', variations: ['Mary'], category: 'biblical-character' },
-	{ canonical: 'Balaam', variations: [], category: 'biblical-character' },
-	{ canonical: 'Daniel', variations: [], category: 'biblical-character' },
-	{ canonical: 'Enoch', variations: [], category: 'biblical-character' },
+	{ canonical: 'Abraham', variations: ['Abram', "Abraham's"], category: 'character' },
+	{ canonical: 'Isaac', variations: ["Isaac's"], category: 'character' },
+	{ canonical: 'Jesus', variations: ["Jesus'", 'Christ'], category: 'character' },
+	{ canonical: 'Moses', variations: ['Moshe', "Moses'", "Moses's"], category: 'character' },
+	{ canonical: 'Adam', variations: ["Adam's"], category: 'character' },
+	{ canonical: 'Eve', variations: [], category: 'character' },
+	{ canonical: 'Lot', variations: ["Lot's"], category: 'character' },
+	{ canonical: 'Paul', variations: ['Pauline'], category: 'character' },
+	{ canonical: 'Jephthah', variations: [], category: 'character' },
+	{ canonical: 'John of Patmos', variations: ['John the Revelator'], category: 'character' },
+	{ canonical: 'Bart Ehrman', variations: ['Ehrman'], category: 'scholar' },
+	{ canonical: 'Hagar', variations: [], category: 'character' },
+	{ canonical: 'Ishmael', variations: ['Ishmaelites'], category: 'character' },
+	{ canonical: 'Ezekiel', variations: [], category: 'character' },
+	{ canonical: 'Peter', variations: ['Simon Peter'], category: 'character' },
+	{ canonical: 'James', variations: [], category: 'character' },
+	{ canonical: 'John', variations: [], category: 'character' },
+	{ canonical: 'Luke', variations: [], category: 'character' },
+	{ canonical: 'Matthew', variations: [], category: 'character', llmVerify: true, description: 'Matthew the Apostle and Evangelist' },
+	{ canonical: 'Noah', variations: ["Noah's"], category: 'character' },
+	{ canonical: 'Jeremiah', variations: [], category: 'character' },
+	{ canonical: 'Mary Magdalene', variations: ['Mary'], category: 'character' },
+	{ canonical: 'Balaam', variations: [], category: 'character' },
+	{ canonical: 'Daniel', variations: [], category: 'character', llmVerify: true, description: 'Daniel from the Book of Daniel' },
+	{ canonical: 'Enoch', variations: [], category: 'character' },
 
 	// BIBLICAL PLACES (12 terms)
-	{ canonical: 'Jerusalem', variations: ['New Jerusalem'], category: 'biblical-place' },
-	{ canonical: 'Sodom', variations: ['Sodom and Gomorrah'], category: 'biblical-place' },
-	{ canonical: 'Gomorrah', variations: [], category: 'biblical-place' },
-	{ canonical: 'Egypt', variations: ['Egyptian'], category: 'biblical-place' },
-	{ canonical: 'Babylon', variations: ['Babylonian'], category: 'biblical-place' },
-	{ canonical: 'Ugarit', variations: ['Ugaritic'], category: 'biblical-place' },
-	{ canonical: 'Elephantine', variations: [], category: 'biblical-place' },
-	{ canonical: 'Carthage', variations: [], category: 'biblical-place' },
-	{ canonical: 'Dead Sea', variations: [], category: 'biblical-place' },
-	{ canonical: 'Mount Gerizim', variations: ['Gerizim'], category: 'biblical-place' },
-	{ canonical: 'Mount Ebal', variations: ['Ebal'], category: 'biblical-place' },
-	{ canonical: 'Lachish', variations: ['Tel Lachish'], category: 'biblical-place' },
+	{ canonical: 'Jerusalem', variations: ['New Jerusalem'], category: 'place' },
+	{ canonical: 'Sodom', variations: ['Sodom and Gomorrah'], category: 'place' },
+	{ canonical: 'Gomorrah', variations: [], category: 'place' },
+	{ canonical: 'Egypt', variations: ['Egyptian'], category: 'place' },
+	{ canonical: 'Babylon', variations: ['Babylonian'], category: 'place' },
+	{ canonical: 'Ugarit', variations: ['Ugaritic'], category: 'place' },
+	{ canonical: 'Elephantine', variations: [], category: 'place' },
+	{ canonical: 'Carthage', variations: [], category: 'place' },
+	{ canonical: 'Dead Sea', variations: [], category: 'place' },
+	{ canonical: 'Mount Gerizim', variations: ['Gerizim'], category: 'place' },
+	{ canonical: 'Mount Ebal', variations: ['Ebal'], category: 'place' },
+	{ canonical: 'Lachish', variations: ['Tel Lachish'], category: 'place' },
 
 	// BIBLICAL TEXTS (20 terms)
-	{ canonical: 'Torah', variations: ['Tora', 'Torrah'], category: 'biblical-text' },
-	{ canonical: 'Hebrew Bible', variations: ['Old Testament', 'Tanakh'], category: 'biblical-text' },
-	{ canonical: 'Septuagint', variations: ['LXX', 'Septuigent'], category: 'biblical-text' },
-	{ canonical: 'Gospel of John', variations: ['John'], category: 'biblical-text' },
-	{ canonical: 'Book of Revelation', variations: ['Revelation', 'Apocalypse'], category: 'biblical-text' },
-	{ canonical: 'Genesis', variations: [], category: 'biblical-text' },
-	{ canonical: 'Deuteronomy', variations: [], category: 'biblical-text' },
-	{ canonical: 'Book of Job', variations: ['Job'], category: 'biblical-text' },
-	{ canonical: 'Isaiah', variations: [], category: 'biblical-text' },
-	{ canonical: 'Ezekiel', variations: [], category: 'biblical-text' },
-	{ canonical: 'Judges', variations: [], category: 'biblical-text' },
-	{ canonical: 'Dead Sea Scrolls', variations: [], category: 'biblical-text' },
-	{ canonical: 'New Testament', variations: [], category: 'biblical-text' },
-	{ canonical: 'Leviticus', variations: [], category: 'biblical-text' },
-	{ canonical: 'Numbers', variations: [], category: 'biblical-text' },
-	{ canonical: 'Kings', variations: ['1 Kings', '2 Kings'], category: 'biblical-text' },
-	{ canonical: 'First Corinthians', variations: ['1 Corinthians'], category: 'biblical-text' },
-	{ canonical: 'Exodus', variations: [], category: 'biblical-text' },
-	{ canonical: 'King James Version', variations: ['KJV'], category: 'biblical-text' },
-	{ canonical: 'Masoretic Text', variations: [], category: 'biblical-text' },
+	{ canonical: 'Torah', variations: ['Tora', 'Torrah'], category: 'literature' },
+	{ canonical: 'Hebrew Bible', variations: ['Old Testament', 'Tanakh'], category: 'literature' },
+	{ canonical: 'Septuagint', variations: ['LXX', 'Septuigent'], category: 'literature' },
+	{ canonical: 'Gospel of John', variations: ['John'], category: 'literature' },
+	{ canonical: 'Book of Revelation', variations: ['Revelation', 'Apocalypse'], category: 'literature' },
+	{ canonical: 'Genesis', variations: [], category: 'literature' },
+	{ canonical: 'Deuteronomy', variations: [], category: 'literature' },
+	{ canonical: 'Book of Job', variations: ['Job'], category: 'literature' },
+	{ canonical: 'Isaiah', variations: [], category: 'literature' },
+	{ canonical: 'Ezekiel', variations: [], category: 'literature' },
+	{ canonical: 'Judges', variations: [], category: 'literature' },
+	{ canonical: 'Dead Sea Scrolls', variations: [], category: 'literature' },
+	{ canonical: 'New Testament', variations: [], category: 'literature' },
+	{ canonical: 'Leviticus', variations: [], category: 'literature' },
+	{ canonical: 'Numbers', variations: [], category: 'literature' },
+	{ canonical: 'Kings', variations: ['1 Kings', '2 Kings'], category: 'literature' },
+	{ canonical: 'First Corinthians', variations: ['1 Corinthians'], category: 'literature' },
+	{ canonical: 'Exodus', variations: [], category: 'literature' },
+	{ canonical: 'King James Version', variations: ['KJV'], category: 'literature' },
+	{ canonical: 'Masoretic Text', variations: [], category: 'literature' },
 
 	// THEOLOGICAL CONCEPTS (27 terms)
-	{ canonical: 'YHWH', variations: ['Yahweh', 'Adonai', 'the Lord'], category: 'theological-concept' },
-	{ canonical: 'Asherah', variations: ['Athirat', 'Atiratu'], category: 'theological-concept' },
-	{ canonical: 'El', variations: ['El Shaddai'], category: 'theological-concept' },
-	{ canonical: 'Baal', variations: [], category: 'theological-concept' },
-	{ canonical: 'Trinity', variations: ['Trinitarian'], category: 'theological-concept' },
-	{ canonical: 'divine council', variations: ['heavenly household'], category: 'theological-concept' },
-	{ canonical: 'resurrection', variations: [], category: 'theological-concept' },
-	{ canonical: 'Rapture', variations: [], category: 'theological-concept' },
-	{ canonical: 'Armageddon', variations: [], category: 'theological-concept' },
-	{ canonical: 'apocalypse', variations: ['apocalyptic'], category: 'theological-concept' },
-	{ canonical: 'Molek', variations: ['Molech', 'Moloch', 'mulk'], category: 'theological-concept' },
-	{ canonical: 'child sacrifice', variations: ['firstborn sacrifice'], category: 'theological-concept' },
-	{ canonical: 'circumcision', variations: ['circumcised'], category: 'theological-concept' },
-	{ canonical: 'incarnation', variations: [], category: 'theological-concept' },
-	{ canonical: 'corporeal deity', variations: ['anthropomorphic God'], category: 'theological-concept' },
-	{ canonical: 'Israel', variations: ['Israelites'], category: 'theological-concept' },
-	{ canonical: 'Bible', variations: [], category: 'theological-concept' },
-	{ canonical: 'Easter', variations: [], category: 'theological-concept' },
-	{ canonical: 'Christianity', variations: ['Christian', 'Christians'], category: 'theological-concept' },
-	{ canonical: 'Hell', variations: ['Gehenna'], category: 'theological-concept' },
-	{ canonical: 'Sheol', variations: [], category: 'theological-concept' },
-	{ canonical: 'Satan', variations: ['the devil', 'devil'], category: 'theological-concept' },
-	{ canonical: 'angel', variations: ['angels'], category: 'theological-concept' },
-	{ canonical: 'monotheism', variations: ['monotheistic'], category: 'theological-concept' },
-	{ canonical: 'gods', variations: ['goddesses'], category: 'theological-concept' },
-	{ canonical: 'theology', variations: ['theological'], category: 'theological-concept' },
-	{ canonical: 'univocality', variations: ['univocal'], category: 'theological-concept' },
+	{ canonical: 'YHWH', variations: ['Yahweh', 'Adonai', 'the Lord'], category: 'theology' },
+	{ canonical: 'Asherah', variations: ['Athirat', 'Atiratu'], category: 'theology' },
+	{ canonical: 'El', variations: ['El Shaddai'], category: 'theology' },
+	{ canonical: 'Baal', variations: [], category: 'theology' },
+	{ canonical: 'Trinity', variations: ['Trinitarian'], category: 'theology' },
+	{ canonical: 'divine council', variations: ['heavenly household'], category: 'theology' },
+	{ canonical: 'resurrection', variations: [], category: 'theology' },
+	{ canonical: 'Rapture', variations: [], category: 'theology' },
+	{ canonical: 'Armageddon', variations: [], category: 'theology' },
+	{ canonical: 'apocalypse', variations: ['apocalyptic'], category: 'theology' },
+	{ canonical: 'Molek', variations: ['Molech', 'Moloch', 'mulk'], category: 'theology' },
+	{ canonical: 'child sacrifice', variations: ['firstborn sacrifice'], category: 'theology' },
+	{ canonical: 'circumcision', variations: ['circumcised'], category: 'theology' },
+	{ canonical: 'incarnation', variations: [], category: 'theology' },
+	{ canonical: 'corporeal deity', variations: ['anthropomorphic God'], category: 'theology' },
+	{ canonical: 'Easter', variations: [], category: 'theology' },
+	{ canonical: 'Christianity', variations: ['Christian', 'Christians'], category: 'theology' },
+	{ canonical: 'Hell', variations: ['Gehenna'], category: 'theology' },
+	{ canonical: 'Sheol', variations: [], category: 'theology' },
+	{ canonical: 'Satan', variations: ['the devil', 'devil'], category: 'theology' },
+	{ canonical: 'angel', variations: ['angels'], category: 'theology' },
+	{ canonical: 'monotheism', variations: ['monotheistic'], category: 'theology' },
+	{ canonical: 'gods', variations: ['goddesses'], category: 'theology' },
+	{ canonical: 'theology', variations: ['theological'], category: 'theology' },
+	{ canonical: 'univocality', variations: ['univocal'], category: 'scholarship' },
 
 	// SCHOLARLY TERMS (15 terms)
-	{ canonical: 'textual criticism', variations: [], category: 'scholarly-term' },
-	{ canonical: 'redaction criticism', variations: [], category: 'scholarly-term' },
-	{ canonical: 'source criticism', variations: [], category: 'scholarly-term' },
-	{ canonical: 'biblical canon', variations: ['canonicity'], category: 'scholarly-term' },
-	{ canonical: 'provenance', variations: ['provenience', 'unprovenanced'], category: 'scholarly-term' },
-	{ canonical: 'etiology', variations: ['etiological'], category: 'scholarly-term' },
-	{ canonical: 'theophany', variations: ['ish theophany'], category: 'scholarly-term' },
-	{ canonical: 'cognitive dissonance', variations: [], category: 'scholarly-term' },
-	{ canonical: 'archaeology', variations: ['archaeological'], category: 'scholarly-term' },
-	{ canonical: 'epigraphy', variations: ['epigraphers'], category: 'scholarly-term' },
-	{ canonical: 'forgery', variations: ['forged', 'fake artifacts'], category: 'scholarly-term' },
-	{ canonical: 'manuscript', variations: ['manuscripts'], category: 'scholarly-term' },
-	{ canonical: 'historical criticism', variations: ['historical-critical method'], category: 'scholarly-term' },
-	{ canonical: 'preterist interpretation', variations: ['preterism'], category: 'scholarly-term' },
-	{ canonical: 'futurist interpretation', variations: ['futurism'], category: 'scholarly-term' },
+	{ canonical: 'textual criticism', variations: [], category: 'scholarship' },
+	{ canonical: 'redaction criticism', variations: [], category: 'scholarship' },
+	{ canonical: 'source criticism', variations: [], category: 'scholarship' },
+	{ canonical: 'biblical canon', variations: ['canonicity', 'canon'], category: 'scholarship' },
+	{ canonical: 'provenance', variations: ['provenience', 'unprovenanced'], category: 'scholarship' },
+	{ canonical: 'etiology', variations: ['etiological'], category: 'scholarship' },
+	{ canonical: 'theophany', variations: ['ish theophany'], category: 'scholarship' },
+	{ canonical: 'cognitive dissonance', variations: [], category: 'scholarship' },
+	{ canonical: 'archaeology', variations: ['archaeological'], category: 'scholarship' },
+	{ canonical: 'epigraphy', variations: ['epigraphers'], category: 'scholarship' },
+	{ canonical: 'forgery', variations: ['forged', 'fake artifacts'], category: 'scholarship' },
+	{ canonical: 'manuscript', variations: ['manuscripts'], category: 'scholarship' },
+	{ canonical: 'historical criticism', variations: ['historical-critical method'], category: 'scholarship' },
+	{ canonical: 'preterist interpretation', variations: ['preterism'], category: 'scholarship' },
+	{ canonical: 'futurist interpretation', variations: ['futurism'], category: 'scholarship' },
+	{ canonical: 'Judah', variations: ['Judahites', 'Judahite'], category: 'place' },
+	{ canonical: 'Israel', variations: ['Israelites'], category: 'place' },
+	{ canonical: 'inerrancy', variations: ['inerrant'], category: 'scholarship' },
+	{ canonical: 'King David', variations: ['David'], category: 'character', llmVerify: true, description: 'King David of Israel' },
 ];
 
 /**
@@ -158,12 +174,12 @@ export function getAllSearchableTerms(vocab: TagDefinition[]): Map<string, strin
 	const termMap = new Map<string, string>();
 
 	for (const def of vocab) {
-		// Map canonical to itself (case-insensitive)
-		termMap.set(def.canonical.toLowerCase(), def.canonical);
+		// Map canonical to itself (preserves case for case-sensitive matching)
+		termMap.set(def.canonical, def.canonical);
 
-		// Map all variations to canonical (case-insensitive)
+		// Map all variations to canonical (preserves case for case-sensitive matching)
 		for (const variation of def.variations) {
-			termMap.set(variation.toLowerCase(), def.canonical);
+			termMap.set(variation, def.canonical);
 		}
 	}
 

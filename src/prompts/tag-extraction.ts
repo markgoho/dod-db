@@ -15,11 +15,12 @@ export const TagDiscoverySchema = z.object({
 			tag: z.string(),
 			mentions: z.number(),
 			category: z.enum([
-				'biblical-character',
-				'biblical-place',
-				'biblical-text',
-				'theological-concept',
-				'scholarly-term',
+				'character',
+				'scholar',
+				'place',
+				'literature',
+				'theology',
+				'scholarship',
 				'other',
 			]),
 		}),
@@ -53,18 +54,20 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
 <extraction-rules>
 1. ONLY extract tags that appear 5+ times in the transcript
 2. Focus on high-value content:
-   - Biblical characters (Moses, Abraham, Jesus, Peter, Isaiah)
-   - Biblical places (Jerusalem, Babylon, Egypt, Sinai)
-   - Biblical texts (Torah, Gospel of Mark, Dead Sea Scrolls, Septuagint)
-   - Theological concepts (univocality, atonement, incarnation, divine council)
-   - Scholarly terms (redaction criticism, textual variants, source criticism)
+   - Characters (Moses, Abraham, Jesus, Tiamat, Marduk) - biblical, ancient, mythological
+   - Places (Jerusalem, Babylon, Egypt, Ugarit, Elephantine) - any geographic location
+   - Literature (Torah, Gospel of Mark, Dead Sea Scrolls, Septuagint)
+   - Theology (univocality, atonement, incarnation, divine council)
+   - Scholarship (redaction criticism, textual variants, source criticism)
 3. Use canonical forms (not variations):
    - "Septuagint" not "LXX"
    - "Moses" not "Moses'" or "Moshe"
    - "Torah" not "Tora"
-4. Skip generic terms unless they're specific concepts:
-   - Skip: "Bible", "scripture", "God" (too generic)
+4. Skip overly generic terms:
+   - Skip: "Bible" (too generic, appears in every episode)
+   - Skip: "scripture", "God", "text", "book" (unless part of a specific name)
    - Include: "Hebrew Bible", "biblical canon", "divine council" (specific concepts)
+   - Include: Specific book names like "Gospel of John", "Book of Revelation"
 5. Skip host names (Dan McClellan, Dan Beecher)
 6. Count accurately across the full transcript (case-insensitive)
 </extraction-rules>
@@ -78,9 +81,9 @@ Torah 8 times, LXX 3 times, and textual criticism 6 times.
 <example-output>
 {
   "tags": [
-    {"tag": "Moses", "mentions": 12, "category": "biblical-character"},
-    {"tag": "Torah", "mentions": 8, "category": "biblical-text"},
-    {"tag": "textual criticism", "mentions": 6, "category": "scholarly-term"}
+    {"tag": "Moses", "mentions": 12, "category": "character"},
+    {"tag": "Torah", "mentions": 8, "category": "literature"},
+    {"tag": "textual criticism", "mentions": 6, "category": "scholarship"}
   ]
 }
 </example-output>
