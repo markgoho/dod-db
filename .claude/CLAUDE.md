@@ -70,6 +70,8 @@ Cost savings:
 **Other pipeline scripts:**
 - `bun run src/scripts/transcript-qa.ts` - Run Q&A over indexed transcripts
 - `bun run src/scripts/check-new-episodes.ts` - Check for and process new episodes (used by GitHub Actions)
+- `bun run src/scripts/reprocess-tags.ts` - Reprocess tags for all episodes after vocabulary changes
+- `bun run src/scripts/tag-vocabulary-ui.ts` - Start tag vocabulary management Web UI (port 3001)
 
 ### Firebase Emulators
 - `npm run emulators:start` - Start Firebase Auth & Firestore emulators (ports: Auth 9099, Firestore 8080)
@@ -104,9 +106,37 @@ The transcript processing pipeline is orchestrated via `src/pipeline/youtube-pro
    - Leverages video metadata (title, description) for context
    - Returns both the labeled transcript and speaker mapping
 
-4. **Storage** (`src/storage/`)
+4. **Tag Extraction** (`src/pipeline/extract-tags*.ts`)
+   - **Hybrid three-tier approach** for extracting topical tags from transcripts
+   - **Tier 1: Deterministic matching** (`extract-tags-deterministic.ts`)
+     - Case-sensitive regex matching against known vocabulary (instant, free)
+     - Overlap detection: longer patterns matched first to prevent double-counting
+     - Example: "biblical canon" + "canon" variation won't double-count "biblical canon" phrase
+     - Optional LLM verification for ambiguous tags (see below)
+   - **Tier 2: LLM discovery** (`extract-tags-llm.ts`)
+     - Gemini identifies new high-value tags NOT in vocabulary (5+ mentions threshold)
+     - Can be skipped with `--skip-llm` flag to save API costs
+   - **Tier 3: Learning loop** - Promote discovered tags to vocabulary for free future matching
+   - **Orchestrator** (`extract-tags.ts`) - Combines both tiers and merges results
+
+   **LLM Verification for Ambiguous Tags:**
+   - For common names (David, John, Mary), use `llmVerify: true` in vocabulary
+   - Requires `description` field to provide context (discriminated union enforced)
+   - Extracts 15 words before/after each match and verifies with Gemini
+   - Batched API calls (all matches per episode in one call)
+   - Example: "David" finds 672 regex matches, LLM verifies 24 are King David, rejects 648 modern references
+
+   **Tag Categories (6 total):**
+   - `character` - All figures (Moses, Jesus, Tiamat, Marduk) - biblical, ancient, mythological
+   - `scholar` - Modern academics (Bart Ehrman, David A. Burnett)
+   - `place` - All geographic locations (Jerusalem, Ugarit, Elephantine, Carthage)
+   - `literature` - Written works (Torah, Septuagint, Gospel of John, Dead Sea Scrolls)
+   - `theology` - Doctrines and concepts (resurrection, divine council, YHWH, Asherah)
+   - `scholarship` - Academic methods and terms (textual criticism, source criticism, redaction criticism)
+
+5. **Storage** (`src/storage/`)
    - **File**: Saves to `data/transcripts/` with date-slug naming
-   - **Tracking**: Updates `data/processed-videos.json` to prevent reprocessing
+   - **Tracking**: Updates `data/processed-videos.json` with tags array
    - **Firestore**: Vector embeddings stored with `FieldValue.vector()` for semantic search (TBD)
 
 ### Episode Number Tracking
@@ -156,6 +186,60 @@ The correction system includes a **learning feedback loop** that improves effici
 
 **Goal**: Achieve 80%+ deterministic corrections for maximum efficiency. See `CORRECTION-WORKFLOW.md` for detailed documentation.
 
+### Tag Vocabulary Management
+
+**Tag vocabulary** (`src/config/tag-vocabulary.ts`) contains 100+ predefined terms organized by category. Tags are extracted during pipeline processing and stored in `data/processed-videos.json`.
+
+**Vocabulary structure:**
+```typescript
+type TagDefinition =
+  | { canonical, variations, category, llmVerify: true, description }  // Ambiguous tags
+  | { canonical, variations, category }  // Standard tags
+```
+
+**Reprocessing tags after vocabulary updates:**
+```bash
+# Reprocess all episodes (deterministic only, no API costs)
+bun run src/scripts/reprocess-tags.ts --force --skip-llm
+
+# Reprocess with LLM discovery (finds new tags)
+bun run src/scripts/reprocess-tags.ts --force
+
+# Detailed per-episode logs
+bun run src/scripts/reprocess-tags.ts --force --skip-llm --verbose
+```
+
+**Web UI for tag management:**
+```bash
+# Start the Tag Vocabulary Management UI
+bun run src/scripts/tag-vocabulary-ui.ts
+# Open http://localhost:3001
+```
+
+The UI provides:
+- **Episode Viewer**: Browse all episodes with tags, search, filter by tag, sort by various criteria
+- **Vocabulary Browser**: View 100+ vocabulary terms organized by 6 categories
+- **Analytics Dashboard**: Top used tags, category distribution, underused vocabulary
+- **Add Tag Form**: Add new tags with optional LLM verification for ambiguous names
+  - Canonical name, variations (comma-separated), category (dropdown)
+  - "Use LLM verification" checkbox for ambiguous names (requires description)
+  - Automatically reprocesses all episodes and shows tag-specific results
+- **Migration Tools**: Reprocess all episodes after manual vocabulary edits
+
+**Adding tags with LLM verification:**
+- Use for common names where context matters (David, John, Mary, Paul)
+- Check "Use LLM context verification" and provide description
+- Example: canonical="David", description="King David of Israel, second king, defeated Goliath"
+- System analyzes context around each match to filter false positives
+- Much more accurate than regex-only matching
+
+**Key implementation details:**
+- **Case-sensitive matching**: "Lot" (character) vs "lot" in "a lot" (phrase)
+- **Overlap detection**: "biblical canon" + "canon" variation won't double-count
+- **Single-tag extraction**: When adding a tag, only that tag is processed (fast, efficient)
+- **Removed generic tags**: "Bible" removed from vocabulary (too generic, appears in all episodes)
+- **Vocabulary files**: `src/config/tag-vocabulary.ts` (100+ terms), `src/prompts/tag-extraction.ts` (LLM discovery rules)
+
 ### Key Architectural Patterns
 
 - **Centralized Configuration**: All config in `src/config/` (chunking, firebase, models, corrections)
@@ -175,29 +259,47 @@ The correction system includes a **learning feedback loop** that improves effici
 │   │   ├── chunking.ts      # Chunk size settings for different use cases
 │   │   ├── firebase.ts      # Single Firebase initialization
 │   │   ├── models.ts        # Model selections (correction, speaker ID, QA)
+│   │   ├── tag-vocabulary.ts # 100+ predefined tags with categories
 │   │   └── index.ts         # Barrel export
 │   ├── pipeline/            # Processing pipeline steps
 │   │   ├── transcribe.ts    # AssemblyAI transcription
 │   │   ├── correct.ts       # LLM-based correction
 │   │   ├── identify-speakers.ts  # Speaker name mapping
+│   │   ├── extract-tags-deterministic.ts # Regex tag matching (case-sensitive, overlap detection)
+│   │   ├── extract-tags-llm.ts # LLM discovery of new tags
+│   │   ├── extract-tags.ts  # Tag extraction orchestrator (hybrid approach)
+│   │   ├── verify-tag-matches.ts # LLM context verification for ambiguous tags
+│   │   ├── extract-single-tag.ts # Extract one specific tag (efficient for adding tags)
+│   │   ├── reprocess-episodes.ts # Core reprocessing logic (reusable)
+│   │   ├── add-tag-to-vocabulary.ts # Add tag to vocabulary file
+│   │   ├── add-tag-to-episodes.ts # Add single tag to all episodes
 │   │   └── index.ts         # Main processTranscript function
 │   ├── prompts/             # LLM prompts
 │   │   ├── correction.ts    # Bible scholarship correction prompt
 │   │   ├── speaker-labels.ts # Speaker identification prompt + schema
+│   │   ├── tag-extraction.ts # Tag discovery prompt + schema
 │   │   └── index.ts         # Barrel export
 │   ├── storage/             # Data persistence
 │   │   ├── firestore.ts     # Firestore indexing & retrieval
 │   │   ├── file.ts          # Local file output
+│   │   ├── processed-videos.ts # Episode tracking with tags
 │   │   └── index.ts         # Barrel export
 │   ├── flows/               # Additional AI functions
 │   │   └── transcript-qa.ts # Q&A over indexed transcripts
 │   ├── scripts/             # CLI entry points
-│   │   ├── process-transcript.ts # Run full pipeline
+│   │   ├── process-youtube.ts # Run full YouTube processing pipeline
+│   │   ├── reprocess-tags.ts # Reprocess tags for all episodes
+│   │   ├── tag-vocabulary-ui.ts # Web UI server for tag management (port 3001)
 │   │   └── transcript-qa.ts     # Run Q&A function
 │   ├── ai.ts                # Google AI client configuration
 │   └── index.ts             # Main barrel export
 ├── data/                     # Sample/output data files
-│   └── transcript.txt       # Sample processed transcript
+│   ├── transcripts/         # Processed episode transcripts
+│   └── processed-videos.json # Episode tracking with tags and metadata
+├── tools/                    # Internal web tools
+│   ├── index.html           # Tools dashboard
+│   ├── tag-vocabulary.html  # Tag vocabulary management UI
+│   └── review-corrections.html # Correction review tool
 ├── functions/                # Firebase Cloud Functions
 └── firebase.json             # Firebase project configuration
 ```
