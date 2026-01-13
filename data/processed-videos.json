@@ -3904,5 +3904,181 @@
         "detectionMethod": "manual"
       }
     ]
+  },
+  {
+    "videoId": "yveP4tc5OSo",
+    "title": "God's Big Fish Story",
+    "publishedAt": "2023-10-23T00:00:00Z",
+    "processedAt": "2026-01-13T04:16:40.667Z",
+    "transcriptPath": "data/transcripts/2023-10-23-gods-big-fish-story.txt",
+    "episodeNumber": 29,
+    "tags": [
+      {
+        "tag": "jonah",
+        "mentions": 40
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 25
+      },
+      {
+        "tag": "nineveh",
+        "mentions": 21
+      },
+      {
+        "tag": "assyria",
+        "mentions": 13
+      },
+      {
+        "tag": "assyrian",
+        "mentions": 10
+      },
+      {
+        "tag": "gods",
+        "mentions": 9
+      },
+      {
+        "tag": "Eve",
+        "mentions": 9
+      },
+      {
+        "tag": "cattle",
+        "mentions": 9
+      },
+      {
+        "tag": "Adam",
+        "mentions": 8
+      },
+      {
+        "tag": "sennecherib",
+        "mentions": 7
+      },
+      {
+        "tag": "prophet",
+        "mentions": 6
+      },
+      {
+        "tag": "tarshish",
+        "mentions": 5
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 4
+      },
+      {
+        "tag": "book of jonah",
+        "mentions": 4
+      },
+      {
+        "tag": "prophetic",
+        "mentions": 4
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 3
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 3
+      },
+      {
+        "tag": "univocality",
+        "mentions": 3
+      },
+      {
+        "tag": "Satan",
+        "mentions": 3
+      },
+      {
+        "tag": "Lachish",
+        "mentions": 3
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 3
+      },
+      {
+        "tag": "Balaam",
+        "mentions": 3
+      },
+      {
+        "tag": "Israel",
+        "mentions": 3
+      },
+      {
+        "tag": "hezekiah",
+        "mentions": 3
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 2
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 2
+      },
+      {
+        "tag": "Kings",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:14.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:02:14.000]",
+        "endTimestamp": "[00:32:35.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "nature-of-god",
+        "startTimestamp": "[00:32:35.000]",
+        "endTimestamp": "[00:53:33.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:53:33.000]",
+        "endTimestamp": "[00:54:29.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
   }
 ]

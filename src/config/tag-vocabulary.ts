@@ -169,7 +169,6 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Euphrates', variations: ['Euphrates River'], category: 'place', status: 'accepted' },
 	{ canonical: 'Euphrates River', variations: [], category: 'place', status: 'rejected' },
 	{ canonical: 'sons of God', variations: [], category: 'character', status: 'rejected' },
-	{ canonical: '1 Enoch', variations: [], category: 'literature', status: 'rejected' },
 	{ canonical: 'Nephilim', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'giants', variations: [], category: 'character', status: 'rejected' },
 	{ canonical: 'Book of Enoch', variations: ['1 Enoch', 'First Enoch'], category: 'literature', status: 'accepted' },
@@ -182,6 +181,14 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Gabriel', variations: ['Archangel Gabriel'], category: 'character', status: 'accepted', llmVerify: true, description: 'Archangel Gabriel' },
 	{ canonical: 'Michael', variations: ['Archangel Michael'], category: 'character', status: 'accepted', llmVerify: true, description: 'Archangel Michael' },
 	{ canonical: 'Jude', variations: ['Book of Jude'], category: 'literature', status: 'accepted' },
+	{ canonical: 'Jonah', variations: [], category: 'character', llmVerify: true, description: 'from the bible, swallowed by a large fish', status: 'accepted' },
+	{ canonical: 'Nineveh', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'Assyria', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'Book of Jonah', variations: [], category: 'literature', llmVerify: true, description: 'not the character from the book, but the book itself', status: 'accepted' },
+	{ canonical: 'Hezekiah', variations: [], category: 'character', status: 'accepted' },
+	{ canonical: 'prophet', variations: [], category: 'character', status: 'rejected' },
+	{ canonical: 'Tarshish', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'Sennecherib', variations: [], category: 'character', status: 'accepted' },
 ];
 
 /**

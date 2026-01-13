@@ -3937,7 +3937,103 @@
       "status": "rejected",
       "reviewedAt": "2026-01-13T03:38:01.584Z",
       "reviewedBy": "UI Review"
+    },
+    "Asher's→Ashur's": {
+      "original": "Asher's",
+      "corrected": "Ashur's",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "yveP4tc5OSo"
+      ],
+      "examples": [
+        "\"That's Asher's territory.\"",
+        "\"That's Asher's purview.\"",
+        "\"step on Asher's toes.\""
+      ],
+      "correctedExamples": [
+        "\"That's Ashur's territory.\"",
+        "\"That's Ashur's purview.\"",
+        "\"step on Ashur's toes.\""
+      ],
+      "timestamps": [
+        "00:12:57.740",
+        "00:12:59.420",
+        "00:13:01.180"
+      ],
+      "episodeIds": [
+        "yveP4tc5OSo",
+        "yveP4tc5OSo",
+        "yveP4tc5OSo"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-13T04:16:40.480Z",
+      "lastSeen": "2026-01-13T04:16:40.480Z",
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T04:18:33.482Z",
+      "reviewedBy": "UI Review"
+    },
+    "Jonas→Jonah's": {
+      "original": "Jonas",
+      "corrected": "Jonah's",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "yveP4tc5OSo"
+      ],
+      "examples": [
+        "\"you to Jonas Fish.\"",
+        "\"Yeah, Jonas Fish.\""
+      ],
+      "correctedExamples": [
+        "\"you to Jonah's fish.\"",
+        "\"Yeah, Jonah's fish.\""
+      ],
+      "timestamps": [
+        "00:18:12.210",
+        "00:18:16.910"
+      ],
+      "episodeIds": [
+        "yveP4tc5OSo",
+        "yveP4tc5OSo"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T04:16:40.480Z",
+      "lastSeen": "2026-01-13T04:16:40.480Z",
+      "status": "pending"
+    },
+    "paranormal→paronomastic": {
+      "original": "paranormal",
+      "corrected": "paronomastic",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "yveP4tc5OSo"
+      ],
+      "examples": [
+        "\"that same paranormal infinitive to\"",
+        "\"that particular paranormal infinitive that\""
+      ],
+      "correctedExamples": [
+        "\"that same paronomastic infinitive to\"",
+        "\"that particular paronomastic infinitive that\""
+      ],
+      "timestamps": [
+        "00:35:58.630",
+        "00:42:59.660"
+      ],
+      "episodeIds": [
+        "yveP4tc5OSo",
+        "yveP4tc5OSo"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-13T04:16:40.480Z",
+      "lastSeen": "2026-01-13T04:16:40.480Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-13T03:38:06.953Z"
+  "lastUpdated": "2026-01-13T04:18:33.483Z"
 }

@@ -16,6 +16,7 @@ export type SegmentType =
   | 'know-your-bible'
   | 'main-content'
   | 'mcclellan-911'
+  | 'nature-of-god'
   | 'outro'
   | 'thats-history'
   | 'urban-legends'
@@ -40,6 +41,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'know-your-bible': 'Know Your Bible',
   'main-content': 'Main Content',
   'mcclellan-911': 'McClellan 911',
+  'nature-of-god': 'Nature of God',
   'thats-history': "That's History",
   'urban-legends': 'Urban Legends',
   'what-does-that-mean': 'What Does That Mean?',
@@ -66,6 +68,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'know-your-bible': '#10b981', // emerald-500
   'main-content': '#64748b', // slate
   'mcclellan-911': '#ec4899', // pink
+  'nature-of-god': '#3b82f6', // blue-500 (divine/theological)
   'thats-history': '#84cc16', // lime-500 (lime green)
   'urban-legends': '#8b5cf6', // violet
   'what-does-that-mean': '#f59e0b', // amber
@@ -135,6 +138,11 @@ export const SEGMENT_PATTERNS: Record<
   'by-the-numbers': [/by the numbers/i, /welcome to.*by the numbers/i],
   'getting-angelic': [/getting angelic/i, /welcome to.*getting angelic/i],
   'getting-demonic': [/getting demonic/i, /welcome to.*getting demonic/i],
+  'nature-of-god': [
+    /nature of god/i,
+    /welcome to.*nature of god/i,
+    /segment.*nature of god/i,
+  ],
   advertisement: [
     /support the (data over dogma )?podcast/i,
     /become a patron/i,
