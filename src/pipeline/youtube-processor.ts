@@ -12,10 +12,14 @@ import { correctTranscript } from './correct.js';
 import { identifySpeakers } from './identify-speakers.js';
 import { extractTags } from './extract-tags.js';
 import { analyzeCorrections } from './learn-corrections.js';
+import { detectSegments, getAudioDuration } from './detect-segments.js';
 import { writeToFile } from '../storage/file.js';
 import {
   isVideoProcessed,
   markVideoAsProcessed,
+  getVideoById,
+  updateVideoSegments,
+  type EpisodeSegment,
 } from '../storage/processed-videos.js';
 
 export interface ProcessYouTubeVideoResult {
@@ -27,7 +31,7 @@ export interface ProcessYouTubeVideoResult {
 
 export interface ProcessYouTubeVideoOptions {
   force?: boolean;
-  startFrom?: 'correct'; // MVP: only 'correct' supported
+  startFrom?: 'correct' | 'segment-detection';
 }
 
 /**
@@ -51,8 +55,8 @@ export async function processYouTubeVideo(
   const videoId = extractVideoId(videoUrl);
   console.log(`Video ID: ${videoId}`);
 
-  // Check if already processed (unless force=true)
-  if (!options.force) {
+  // Check if already processed (unless force=true or startFrom is specified)
+  if (!options.force && !options.startFrom) {
     const alreadyProcessed = await isVideoProcessed(videoId);
     if (alreadyProcessed) {
       console.log(
@@ -73,6 +77,58 @@ export async function processYouTubeVideo(
     }
   } else if (options.force) {
     console.log('🔄 Force mode: reprocessing video...');
+  }
+
+  // Handle segment-detection stage (early return - only updates segments)
+  if (options.startFrom === 'segment-detection') {
+    console.log('Starting from segment detection stage...');
+
+    const existingVideo = await getVideoById(videoId);
+    if (!existingVideo) {
+      throw new Error(
+        `Cannot start from segment-detection stage: video ${videoId} not found in processed-videos.json\n` +
+          `Run without --start-from to process the full pipeline.`,
+      );
+    }
+
+    const transcriptFile = Bun.file(existingVideo.transcriptPath);
+    if (!(await transcriptFile.exists())) {
+      throw new Error(
+        `Cannot start from segment-detection stage: transcript not found at ${existingVideo.transcriptPath}`,
+      );
+    }
+
+    const correctedTranscript = await transcriptFile.text();
+    console.log(`Loaded existing transcript from: ${existingVideo.transcriptPath}`);
+
+    // Detect segments
+    console.log('Detecting segments...');
+    const audioDuration = await getAudioDuration(videoId);
+    const detectedSegments = detectSegments(correctedTranscript, audioDuration ?? undefined);
+    const segments: EpisodeSegment[] = detectedSegments.map((s) => ({
+      type: s.type,
+      startTimestamp: s.startTimestamp,
+      endTimestamp: s.endTimestamp,
+      confidence: s.confidence,
+      detectionMethod: s.detectionMethod,
+    }));
+    console.log(`✓ Detected ${segments.length} segments`);
+
+    // Update only segments
+    await updateVideoSegments(videoId, segments);
+    console.log('Done!');
+
+    return {
+      videoId,
+      transcriptPath: existingVideo.transcriptPath,
+      metadata: {
+        id: videoId,
+        title: existingVideo.title,
+        description: '',
+        publishedAt: existingVideo.publishedAt,
+        channelTitle: '',
+      },
+    };
   }
 
   // Fetch metadata
@@ -144,7 +200,20 @@ export async function processYouTubeVideo(
   // Analyze corrections for learning (compare raw vs corrected)
   await analyzeCorrections(transcriptWithNames, correctedTranscript, videoId);
 
-  // Mark as processed with tags
+  // Detect segments in the corrected transcript
+  console.log('Detecting segments...');
+  const audioDuration = await getAudioDuration(videoId);
+  const detectedSegments = detectSegments(correctedTranscript, audioDuration ?? undefined);
+  const segments: EpisodeSegment[] = detectedSegments.map((s) => ({
+    type: s.type,
+    startTimestamp: s.startTimestamp,
+    endTimestamp: s.endTimestamp,
+    confidence: s.confidence,
+    detectionMethod: s.detectionMethod,
+  }));
+  console.log(`✓ Detected ${segments.length} segments`);
+
+  // Mark as processed with tags and segments
   await markVideoAsProcessed({
     videoId,
     title: metadata.title,
@@ -152,6 +221,7 @@ export async function processYouTubeVideo(
     processedAt: new Date().toISOString(),
     transcriptPath,
     tags,
+    segments,
   });
 
   console.log('Done!');

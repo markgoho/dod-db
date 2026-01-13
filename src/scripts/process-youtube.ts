@@ -18,17 +18,17 @@ const force = args.includes('--force');
 const startFromIndex = args.findIndex((arg) =>
   arg.startsWith('--start-from'),
 );
-let startFrom: 'correct' | undefined = undefined;
+let startFrom: 'correct' | 'segment-detection' | undefined = undefined;
 if (startFromIndex !== -1) {
   const value = args[startFromIndex]?.includes('=')
     ? args[startFromIndex]?.split('=')[1]
     : args[startFromIndex + 1];
-  if (value !== 'correct') {
-    console.error('Error: --start-from only supports "correct" stage');
+  if (value !== 'correct' && value !== 'segment-detection') {
+    console.error('Error: --start-from only supports "correct" or "segment-detection" stages');
     console.error('');
     process.exit(1);
   }
-  startFrom = 'correct';
+  startFrom = value as 'correct' | 'segment-detection';
 }
 
 if (!videoUrl) {
@@ -44,7 +44,7 @@ if (!videoUrl) {
   console.error(
     '  --start-from=STAGE   Resume from a specific stage (saves API costs)',
   );
-  console.error('                       Supported stages: correct');
+  console.error('                       Supported stages: correct, segment-detection');
   console.error('');
   console.error('Examples:');
   console.error(

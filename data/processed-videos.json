@@ -3504,5 +3504,157 @@
         "detectionMethod": "manual"
       }
     ]
+  },
+  {
+    "videoId": "caKa7DTkSkQ",
+    "title": "Episode 27 (October 9), \"Where Angels Fear to Swim\"",
+    "publishedAt": "2023-10-08T00:00:00Z",
+    "processedAt": "2026-01-13T02:10:06.918Z",
+    "transcriptPath": "data/transcripts/2023-10-08-episode-27-october-9-where-angels-fear-to-swim.txt",
+    "episodeNumber": 27,
+    "tags": [
+      {
+        "tag": "angel",
+        "mentions": 47
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 19
+      },
+      {
+        "tag": "Euphrates River",
+        "mentions": 17
+      },
+      {
+        "tag": "angels",
+        "mentions": 17
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 13
+      },
+      {
+        "tag": "Nephilim",
+        "mentions": 9
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 8
+      },
+      {
+        "tag": "Israel",
+        "mentions": 7
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 6
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 5
+      },
+      {
+        "tag": "gods",
+        "mentions": 4
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 3
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 2
+      },
+      {
+        "tag": "etiology",
+        "mentions": 2
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 2
+      },
+      {
+        "tag": "Adam",
+        "mentions": 2
+      },
+      {
+        "tag": "Noah",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Job",
+        "mentions": 2
+      },
+      {
+        "tag": "Sodom",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "child sacrifice",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:48.900]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "all-right-lets-see-it",
+        "startTimestamp": "[00:02:04.780]",
+        "endTimestamp": "[00:21:26.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:21:26.000]",
+        "endTimestamp": "[00:53:55.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:53:55.000]",
+        "endTimestamp": "[00:54:42.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
   }
 ]

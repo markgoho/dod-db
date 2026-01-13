@@ -3685,7 +3685,101 @@
       "firstSeen": "2026-01-12T00:07:44.268Z",
       "lastSeen": "2026-01-12T00:07:44.268Z",
       "status": "pending"
+    },
+    "Euphrates river→Euphrates River": {
+      "original": "Euphrates river",
+      "corrected": "Euphrates River",
+      "category": "capitalization",
+      "totalOccurrences": 6,
+      "episodeCount": 1,
+      "episodes": [
+        "caKa7DTkSkQ"
+      ],
+      "examples": [
+        "\"at the Euphrates river.\"",
+        "\"about the Euphrates river.\"",
+        "\"at The Euphrates river, it's one\""
+      ],
+      "correctedExamples": [
+        "\"at the Euphrates River.\"",
+        "\"about the Euphrates River.\"",
+        "\"at the Euphrates River? It's one\""
+      ],
+      "timestamps": [
+        "00:00:07.440",
+        "00:02:20.010",
+        "00:02:55.740"
+      ],
+      "episodeIds": [
+        "caKa7DTkSkQ",
+        "caKa7DTkSkQ",
+        "caKa7DTkSkQ"
+      ],
+      "confidence": 25,
+      "firstSeen": "2026-01-13T02:10:06.917Z",
+      "lastSeen": "2026-01-13T02:10:06.917Z",
+      "status": "pending"
+    },
+    "anarchic→Enochic": {
+      "original": "anarchic",
+      "corrected": "Enochic",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "caKa7DTkSkQ"
+      ],
+      "examples": [
+        "\"in the anarchic literature as\"",
+        "\"literature, the anarchic literature sits\""
+      ],
+      "correctedExamples": [
+        "\"in the Enochic literature as\"",
+        "\"literature, the Enochic literature sits\""
+      ],
+      "timestamps": [
+        "00:35:56.750",
+        "00:44:35.880"
+      ],
+      "episodeIds": [
+        "caKa7DTkSkQ",
+        "caKa7DTkSkQ"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-13T02:10:06.917Z",
+      "lastSeen": "2026-01-13T02:10:06.917Z",
+      "status": "pending"
+    },
+    "him→them": {
+      "original": "him",
+      "corrected": "them",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "caKa7DTkSkQ"
+      ],
+      "examples": [
+        "\"They teach him.\"",
+        "\"They teach him how to\""
+      ],
+      "correctedExamples": [
+        "\"They teach them.\"",
+        "\"—they teach them how to\""
+      ],
+      "timestamps": [
+        "00:37:56.060",
+        "00:37:59.860"
+      ],
+      "episodeIds": [
+        "caKa7DTkSkQ",
+        "caKa7DTkSkQ"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-13T02:10:06.917Z",
+      "lastSeen": "2026-01-13T02:10:06.917Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-12T00:07:44.268Z"
+  "lastUpdated": "2026-01-13T02:10:06.918Z"
 }

@@ -133,7 +133,7 @@ export async function markVideoAsProcessed(
  * - Sort by publishedAt ascending (earliest = Episode 1)
  * - Use videoId as tiebreaker for identical dates (lexicographic order)
  * - Skip videos with existing episodeNumber (manual overrides)
- * - Assign sequential numbers starting from 1
+ * - Assign sequential numbers based on position in sorted list
  */
 export function computeEpisodeNumbers(
   videos: ProcessedVideo[],
@@ -145,15 +145,15 @@ export function computeEpisodeNumbers(
     return a.videoId.localeCompare(b.videoId); // Tiebreaker
   });
 
-  // Assign sequential numbers only to entries without episodeNumber
-  let nextNumber = 1;
-  return sorted.map((video) => {
+  // Assign episode numbers based on position (1-indexed)
+  // Only update entries without episodeNumber (respect manual overrides)
+  return sorted.map((video, index) => {
     if (video.episodeNumber !== undefined) {
       return video; // Respect manual override
     }
     return {
       ...video,
-      episodeNumber: nextNumber++,
+      episodeNumber: index + 1, // Position-based: first video = 1
     };
   });
 }
