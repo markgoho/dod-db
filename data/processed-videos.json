@@ -551,6 +551,10 @@
         "mentions": 1
       },
       {
+        "tag": "Samuel",
+        "mentions": 1
+      },
+      {
         "tag": "theophany",
         "mentions": 1
       },
@@ -585,6 +589,10 @@
     "episodeNumber": 4,
     "tags": [
       {
+        "tag": "Bart Ehrman",
+        "mentions": 440
+      },
+      {
         "tag": "Book of Revelation",
         "mentions": 60
       },
@@ -603,10 +611,6 @@
       {
         "tag": "New Testament",
         "mentions": 13
-      },
-      {
-        "tag": "Bart Ehrman",
-        "mentions": 10
       },
       {
         "tag": "Hebrew Bible",
@@ -915,6 +919,10 @@
         "mentions": 7
       },
       {
+        "tag": "Samuel",
+        "mentions": 7
+      },
+      {
         "tag": "Abraham",
         "mentions": 6
       },
@@ -956,6 +964,10 @@
       },
       {
         "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "King Saul",
         "mentions": 2
       },
       {
@@ -1825,6 +1837,10 @@
         "mentions": 2
       },
       {
+        "tag": "Samuel",
+        "mentions": 2
+      },
+      {
         "tag": "apocalypse",
         "mentions": 1
       },
@@ -2161,6 +2177,10 @@
       {
         "tag": "New Testament",
         "mentions": 1
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -2315,6 +2335,10 @@
         "mentions": 1
       },
       {
+        "tag": "Samuel",
+        "mentions": 1
+      },
+      {
         "tag": "Ten Commandments",
         "mentions": 1
       }
@@ -2419,6 +2443,10 @@
         "mentions": 4
       },
       {
+        "tag": "King Saul",
+        "mentions": 4
+      },
+      {
         "tag": "Book of Revelation",
         "mentions": 3
       },
@@ -2428,6 +2456,10 @@
       },
       {
         "tag": "etiology",
+        "mentions": 3
+      },
+      {
+        "tag": "Samuel",
         "mentions": 3
       },
       {
@@ -2940,6 +2972,10 @@
       },
       {
         "tag": "Hebrews",
+        "mentions": 4
+      },
+      {
+        "tag": "Samuel",
         "mentions": 4
       },
       {
@@ -3576,6 +3612,10 @@
       },
       {
         "tag": "Numbers",
+        "mentions": 3
+      },
+      {
+        "tag": "Samuel",
         "mentions": 3
       },
       {
@@ -4586,6 +4626,10 @@
         "mentions": 3
       },
       {
+        "tag": "King Saul",
+        "mentions": 3
+      },
+      {
         "tag": "Lot",
         "mentions": 3
       },
@@ -4687,6 +4731,10 @@
       },
       {
         "tag": "Samson",
+        "mentions": 1
+      },
+      {
+        "tag": "Samuel",
         "mentions": 1
       },
       {
@@ -5471,6 +5519,10 @@
         "mentions": 1
       },
       {
+        "tag": "King Saul",
+        "mentions": 1
+      },
+      {
         "tag": "Romans",
         "mentions": 1
       }
@@ -5930,11 +5982,19 @@
         "mentions": 2
       },
       {
+        "tag": "King Saul",
+        "mentions": 2
+      },
+      {
         "tag": "monotheism",
         "mentions": 2
       },
       {
         "tag": "Psalm",
+        "mentions": 2
+      },
+      {
+        "tag": "Samuel",
         "mentions": 2
       },
       {
@@ -6580,6 +6640,159 @@
         "type": "outro",
         "startTimestamp": "[00:56:00.000]",
         "endTimestamp": "[00:56:38.001]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "MBA74-qj0Pw",
+    "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\"",
+    "publishedAt": "2024-01-08T00:00:00Z",
+    "processedAt": "2026-01-13T21:42:31.947Z",
+    "transcriptPath": "data/transcripts/2024-01-08-episode-40-january-8-2024-the-joel-mchale-episode.txt",
+    "episodeNumber": 40,
+    "tags": [
+      {
+        "tag": "King Saul",
+        "mentions": 34
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 27
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 14
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 11
+      },
+      {
+        "tag": "Israel",
+        "mentions": 9
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 6
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 6
+      },
+      {
+        "tag": "gods",
+        "mentions": 5
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 3
+      },
+      {
+        "tag": "italy",
+        "mentions": 3
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 3
+      },
+      {
+        "tag": "seattle",
+        "mentions": 3
+      },
+      {
+        "tag": "Baal",
+        "mentions": 2
+      },
+      {
+        "tag": "Kings",
+        "mentions": 2
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 2
+      },
+      {
+        "tag": "angel",
+        "mentions": 1
+      },
+      {
+        "tag": "Bart Ehrman",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Sarah",
+        "mentions": 1
+      },
+      {
+        "tag": "Ten Commandments",
+        "mentions": 1
+      },
+      {
+        "tag": "Torah",
+        "mentions": 1
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:48.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:03:48.000]",
+        "endTimestamp": "[00:58:22.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:58:22.000]",
+        "endTimestamp": "[00:59:03.561]",
         "confidence": "verified",
         "detectionMethod": "manual"
       }

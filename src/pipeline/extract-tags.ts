@@ -36,13 +36,14 @@ export async function extractTags(
 	console.log(`  ✓ Found ${deterministicTags.length} known tags`);
 
 	// Tier 2: LLM discovery (new terms with 5+ mentions) - optional
-	let discoveredTags: EpisodeTag[] = [];
+	// NOTE: Discovered tags are NOT included in final results (only reported as suggestions)
+	// They must be reviewed and marked as 'accepted' before being used in future processing
 	if (options.skipLlm) {
 		console.log('  Phase 2: Skipped (skipLlm option enabled)');
 	} else {
 		const categoryInfo = options.categories ? ` [${options.categories.join(', ')} only]` : '';
 		console.log(`  Phase 2: LLM discovery of new tags (5+ mentions)${categoryInfo}...`);
-		discoveredTags = await extractTagsLlm(correctedTranscript, deterministicTags, options.categories);
+		const discoveredTags = await extractTagsLlm(correctedTranscript, deterministicTags, options.categories);
 		console.log(`  ✓ Discovered ${discoveredTags.length} new potential tags`);
 
 		// Report discovered tags as vocabulary suggestions
@@ -58,8 +59,8 @@ export async function extractTags(
 		}
 	}
 
-	// Merge results
-	const allTags = mergeTags(deterministicTags, discoveredTags);
+	// Only return deterministic tags (LLM-discovered tags are just suggestions)
+	const allTags = deterministicTags;
 
 	// Sort by mention count (descending), then alphabetically for stable ordering
 	sortTags(allTags);
@@ -67,31 +68,4 @@ export async function extractTags(
 	console.log(`✓ Tag extraction complete: ${allTags.length} total tags`);
 
 	return allTags;
-}
-
-/**
- * Merge deterministic and discovered tags, summing mention counts for duplicates.
- *
- * @param deterministic - Tags from vocabulary matching
- * @param discovered - Tags from LLM discovery
- * @returns Merged array of unique tags with combined counts
- */
-function mergeTags(deterministic: EpisodeTag[], discovered: EpisodeTag[]): EpisodeTag[] {
-	const merged = new Map<string, number>();
-
-	// Add deterministic tags (preserve canonical case)
-	for (const tag of deterministic) {
-		merged.set(tag.tag, tag.mentions);
-	}
-
-	// Add discovered tags (shouldn't overlap, but handle just in case)
-	for (const tag of discovered) {
-		const existing = merged.get(tag.tag) || 0;
-		merged.set(tag.tag, existing + tag.mentions);
-	}
-
-	return [...merged.entries()].map(([tag, mentions]) => ({
-		tag,
-		mentions,
-	}));
 }

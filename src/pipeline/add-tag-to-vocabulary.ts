@@ -4,6 +4,7 @@
 
 import { tagVocabulary } from '../config/tag-vocabulary.js';
 import type { TagCategory, TagDefinition, TagStatus } from '../config/tag-vocabulary.js';
+import { removeTagFromAllEpisodes } from '../utils/remove-tag-from-episodes.js';
 
 /**
  * Escape special characters for TypeScript string literals.
@@ -231,6 +232,15 @@ export async function updateTagInVocabulary(
 	}
 
 	console.log(`✓ Updated tag "${originalCanonical}"${newCanonical === originalCanonical ? '' : ` → "${newCanonical}"`}`);
+
+	// If status changed to 'rejected', remove from all episodes
+	if (updates.status === 'rejected' && existingTag.status !== 'rejected') {
+		console.log(`  Removing tag from all episodes...`);
+		const removedCount = await removeTagFromAllEpisodes(newCanonical);
+		if (removedCount === 0) {
+			console.log(`  (Tag was not found in any episodes)`);
+		}
+	}
 }
 
 /**

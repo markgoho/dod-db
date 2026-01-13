@@ -291,6 +291,11 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'lake of fire', variations: [], category: 'theology', status: 'rejected' },
 	{ canonical: 'Domitian', variations: [], category: 'person', status: 'accepted' },
 	{ canonical: 'Nero', variations: [], category: 'person', llmVerify: true, description: 'Roman emperor and the final emperor of the Julio-Claudian dynasty, reigning from AD 54 until his death in AD 68', status: 'accepted' },
+	{ canonical: 'King Saul', variations: ['Saul'], category: 'character', llmVerify: true, description: 'monarch of ancient Israel and Judah', status: 'accepted' },
+	{ canonical: 'Samuel', variations: [], category: 'character', llmVerify: true, description: 'prophet, priest, and judge who led Israel during its transition from judges to monarchy, anointing both Israel\'s first king, Saul, and his successor, David', status: 'accepted' },
+	{ canonical: 'elohim', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'Italy', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'Seattle', variations: [], category: 'place', status: 'accepted' },
 ];
 
 /**

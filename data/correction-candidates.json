@@ -4694,7 +4694,37 @@
       "firstSeen": "2026-01-13T21:17:09.137Z",
       "lastSeen": "2026-01-13T21:17:09.137Z",
       "status": "pending"
+    },
+    "route→rout": {
+      "original": "route",
+      "corrected": "rout",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "MBA74-qj0Pw"
+      ],
+      "examples": [
+        "\"the Philistines route them.\"",
+        "\"The Philistines route them and\""
+      ],
+      "correctedExamples": [
+        "\"the Philistines rout them.\"",
+        "\"The Philistines rout them and\""
+      ],
+      "timestamps": [
+        "00:52:22.550",
+        "00:53:21.950"
+      ],
+      "episodeIds": [
+        "MBA74-qj0Pw",
+        "MBA74-qj0Pw"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-13T21:42:31.784Z",
+      "lastSeen": "2026-01-13T21:42:31.784Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-13T21:17:09.138Z"
+  "lastUpdated": "2026-01-13T21:42:31.784Z"
 }

@@ -27,8 +27,8 @@ export async function extractTagsDeterministic(
 ): Promise<EpisodeTag[]> {
 	const { enableLlmVerification = false } = options;
 
-	// Filter out rejected tags - only match accepted/proposed tags
-	const activeVocabulary = tagVocabulary.filter(t => t.status !== 'rejected');
+	// Only match accepted tags (not proposed or rejected)
+	const activeVocabulary = tagVocabulary.filter(t => t.status === 'accepted');
 
 	// Build term map, but if LLM verification is disabled, skip variations for tags with llmVerify: true
 	// (canonical forms like "King David" are usually unambiguous, but variations like "David" are ambiguous)
