@@ -11,7 +11,8 @@ import type { TagDefinition } from '../config/tag-vocabulary.js';
 
 /**
  * Extract tags using deterministic pattern matching against known vocabulary.
- * Matches all vocabulary terms (canonical + variations) using case-sensitive regex with word boundaries.
+ * Matches all vocabulary terms (canonical + variations) using case-insensitive regex by default.
+ * Tags can opt-in to case-sensitive matching via the caseSensitive flag.
  * Handles overlapping patterns by matching longer patterns first and excluding overlapped regions.
  * Optionally uses LLM to verify ambiguous matches based on context.
  *
@@ -51,11 +52,16 @@ export async function extractTagsDeterministic(
 
 	// Build array of search patterns sorted by length (longest first)
 	const patterns = Array.from(termMap.entries())
-		.map(([searchTerm, canonical]) => ({
-			searchTerm,
-			canonical,
-			pattern: new RegExp(`\\b${escapeRegex(searchTerm)}\\b`, 'g'),
-		}))
+		.map(([searchTerm, canonical]) => {
+			const tagDef = activeVocabulary.find((t) => t.canonical === canonical);
+			const caseSensitive = tagDef?.caseSensitive ?? false;
+			const flags = caseSensitive ? 'g' : 'gi'; // Add 'i' flag unless case-sensitive
+			return {
+				searchTerm,
+				canonical,
+				pattern: new RegExp(`\\b${escapeRegex(searchTerm)}\\b`, flags),
+			};
+		})
 		.sort((a, b) => b.searchTerm.length - a.searchTerm.length);
 
 	// Track matched positions to avoid double-counting overlaps

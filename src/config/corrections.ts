@@ -54,4 +54,7 @@ export const globalCorrections: CorrectionRule[] = [
   [["shadim"], "shedim"], // spelling - confidence: 20%
   [["prais"], "praus"], // spelling - confidence: 20%
   [["Jacob Milgram"], "Jacob Milgrom"], // spelling - confidence: 20%
+  [["James version"], "James Version"], // capitalization - confidence: 40%
+  [["Antiochus IV epiphanies"], "Antiochus IV Epiphanes"], // proper-noun - confidence: 20%
+  [["second Timothy"], "Second Timothy"], // capitalization - confidence: 20%
 ];

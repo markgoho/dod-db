@@ -16,35 +16,64 @@ interface MatchContext {
 }
 
 const VerificationResultSchema = z.object({
-	matches: z.array(z.number()), // Array of indices that are valid matches
+	verifications: z.array(z.object({
+		index: z.number(),
+		isMatch: z.boolean(),
+		reasoning: z.string(),
+	})),
 });
 
 /**
- * Extract context around a match position.
+ * Extract context around a match position using complete timestamped lines.
  *
  * @param transcript - Full transcript text
  * @param start - Start position of match
  * @param end - End position of match
- * @param contextWords - Number of words to include before/after
+ * @param contextLines - Number of complete lines to include before/after (default: 2)
  * @returns Context before and after the match
  */
 function extractContext(
 	transcript: string,
 	start: number,
 	end: number,
-	contextWords = 15,
+	contextLines = 2,
 ): { before: string; after: string } {
-	// Get text before match
-	const before = transcript.slice(0, start);
-	const beforeWords = before.split(/\s+/).slice(-contextWords).join(' ');
+	// Split transcript into lines (preserving timestamps)
+	const lines = transcript.split('\n');
 
-	// Get text after match
-	const after = transcript.slice(end);
-	const afterWords = after.split(/\s+/).slice(0, contextWords).join(' ');
+	// Find which line contains the match
+	let charCount = 0;
+	let matchLineIndex = -1;
+
+	for (let i = 0; i < lines.length; i++) {
+		const lineLength = lines[i].length + 1; // +1 for the newline
+		if (charCount <= start && start < charCount + lineLength) {
+			matchLineIndex = i;
+			break;
+		}
+		charCount += lineLength;
+	}
+
+	if (matchLineIndex === -1) {
+		// Fallback to word-based context if line detection fails
+		const before = transcript.slice(0, start);
+		const beforeWords = before.split(/\s+/).slice(-15).join(' ');
+		const after = transcript.slice(end);
+		const afterWords = after.split(/\s+/).slice(0, 15).join(' ');
+		return { before: beforeWords, after: afterWords };
+	}
+
+	// Get contextLines before the match line
+	const startLine = Math.max(0, matchLineIndex - contextLines);
+	const beforeLines = lines.slice(startLine, matchLineIndex);
+
+	// Get contextLines after the match line
+	const endLine = Math.min(lines.length, matchLineIndex + contextLines + 1);
+	const afterLines = lines.slice(matchLineIndex + 1, endLine);
 
 	return {
-		before: beforeWords,
-		after: afterWords,
+		before: beforeLines.join('\n'),
+		after: afterLines.join('\n'),
 	};
 }
 
@@ -97,8 +126,71 @@ export async function verifyTagMatches(
 		}
 
 		const result = VerificationResultSchema.parse(JSON.parse(responseText));
-		return result.matches;
+
+		// Log detailed results for debugging
+		console.log(`\n  📋 LLM Verification Results for "${tag.canonical}":`);
+		let acceptedCount = 0;
+		let rejectedCount = 0;
+
+		for (const verification of result.verifications) {
+			const match = matches[verification.index];
+			const symbol = verification.isMatch ? '✓' : '✗';
+			const color = verification.isMatch ? '\x1b[32m' : '\x1b[31m'; // green : red
+			const reset = '\x1b[0m';
+
+			console.log(`${color}  ${symbol}${reset} [${verification.index}] "${match.text}"`);
+			console.log(`     Reasoning: ${verification.reasoning}`);
+
+			if (verification.isMatch) {
+				acceptedCount++;
+			} else {
+				rejectedCount++;
+			}
+		}
+
+		console.log(`  Summary: ${acceptedCount} accepted, ${rejectedCount} rejected\n`);
+
+		// Return only the indices of accepted matches
+		return result.verifications
+			.filter(v => v.isMatch)
+			.map(v => v.index);
 	} catch (error) {
+		// Check if it's a rate limit error (429)
+		const errorMessage = error instanceof Error ? error.message : String(error);
+		if (errorMessage.includes('429') || errorMessage.includes('RESOURCE_EXHAUSTED')) {
+			console.error(`  ⚠️  Rate limit hit for "${tag.canonical}" - waiting 60s before retry...`);
+			// Wait 60 seconds and retry once
+			await new Promise(resolve => setTimeout(resolve, 60000));
+			try {
+				console.log(`  🔄 Retrying verification for "${tag.canonical}"...`);
+				const retryResponse = await ai.models.generateContent({
+					model: speakerIdModel,
+					contents: prompt,
+					config: {
+						responseMimeType: 'application/json',
+						responseSchema: z.toJSONSchema(VerificationResultSchema),
+					},
+				});
+
+				const retryResponseText = retryResponse.text;
+				if (!retryResponseText) {
+					console.warn(`  ⚠ Retry returned empty response for "${tag.canonical}"`);
+					return [];
+				}
+
+				const retryResult = VerificationResultSchema.parse(JSON.parse(retryResponseText));
+				const verifiedIndices = retryResult.verifications
+					.filter(v => v.isMatch)
+					.map(v => v.index);
+
+				console.log(`  ✅ Retry successful: ${verifiedIndices.length}/${matches.length} verified`);
+				return verifiedIndices;
+			} catch (retryError) {
+				console.error(`  ❌ Retry failed for "${tag.canonical}":`, retryError);
+				return [];
+			}
+		}
+
 		console.error(`  ⚠ Verification failed for "${tag.canonical}":`, error);
 		// On error, accept no matches rather than all (conservative)
 		return [];
@@ -146,10 +238,17 @@ STRICT RULES:
 - When in doubt, exclude it
 
 OUTPUT:
-Return JSON with "matches" array containing ONLY the indices of definite matches.
+For EACH of the ${contexts.length} contexts above, return a verification object with:
+- "index": the context number [0-${contexts.length - 1}]
+- "isMatch": true if it's a definite match for ${tag.canonical}, false otherwise
+- "reasoning": brief explanation (1-2 sentences) of why you accepted or rejected it
 
-Examples:
-- Valid matches at 0, 2, 5: {"matches": [0, 2, 5]}
-- No valid matches: {"matches": []}
-- All valid: {"matches": [${contexts.map((_, i) => i).join(', ')}]}`;
+Example format:
+{
+  "verifications": [
+    {"index": 0, "isMatch": true, "reasoning": "Context mentions Persian Empire and dates to 550 BC, clearly referring to Cyrus the Great."},
+    {"index": 1, "isMatch": false, "reasoning": "Appears in modern discussion without historical context, likely a person's name today."},
+    {"index": 2, "isMatch": true, "reasoning": "Biblical reference to the king who freed the Israelites, matches the historical figure."}
+  ]
+}`;
 }

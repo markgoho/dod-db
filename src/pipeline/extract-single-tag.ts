@@ -49,9 +49,13 @@ export async function extractSingleTag(
 		);
 	};
 
+	// Determine case sensitivity
+	const caseSensitive = tagDef.caseSensitive ?? false;
+	const flags = caseSensitive ? 'g' : 'gi';
+
 	// Find all matches
 	for (const searchTerm of searchTerms) {
-		const pattern = new RegExp(`\\b${escapeRegex(searchTerm)}\\b`, 'g');
+		const pattern = new RegExp(`\\b${escapeRegex(searchTerm)}\\b`, flags);
 		let match;
 
 		while ((match = pattern.exec(transcript)) !== null) {

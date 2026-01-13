@@ -137,13 +137,9 @@
         background: #dbeafe;
         color: #1e40af;
       }
-      .tag-badge.character {
-        background: #ffedd5;
-        color: #9a3412;
-      }
-      .tag-badge.scholar {
-        background: #e0e7ff;
-        color: #3730a3;
+      .tag-badge.person {
+        background: #fae8ff;
+        color: #a21caf;
       }
       .tag-badge.place {
         background: #fef3c7;
@@ -266,6 +262,15 @@
         font-size: 11px;
         padding: 2px 8px;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: help;
+      }
+      .case-sensitive-badge {
+        font-size: 11px;
+        padding: 2px 8px;
+        background: #f59e0b;
         color: white;
         border-radius: 10px;
         font-weight: 600;
@@ -864,7 +869,7 @@
             <select id="tag-category" class="form-select" required oninput="validateForm()">
               <option value="">Select a category...</option>
               <option value="character">Character</option>
-              <option value="scholar">Scholar</option>
+              <option value="person">Person</option>
               <option value="place">Place</option>
               <option value="people">People</option>
               <option value="literature">Literature</option>
@@ -883,6 +888,17 @@
               <span class="form-label" style="margin: 0;">Use LLM context verification</span>
             </label>
             <div class="form-hint">For ambiguous names (like "David" or "John"), use AI to verify each match based on context</div>
+          </div>
+
+          <div class="form-group">
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+              <input
+                type="checkbox"
+                id="tag-case-sensitive"
+                style="width: 18px; height: 18px; cursor: pointer;" />
+              <span class="form-label" style="margin: 0;">Case-sensitive matching</span>
+            </label>
+            <div class="form-hint">Match only exact case (e.g., "Lot" won't match "lot"). Use for words that are also common English words.</div>
           </div>
 
           <div class="form-group" id="description-group" style="display: none;">
@@ -1197,6 +1213,7 @@
                 <div class="vocab-canonical">
                   ${term.canonical}
                   ${term.llmVerify ? '<span class="llm-verify-badge" title="Uses LLM verification for context">🤖 LLM</span>' : ''}
+                  ${term.caseSensitive ? '<span class="case-sensitive-badge" title="Case-sensitive matching">Aa</span>' : ''}
                 </div>
                 <div class="vocab-variations">
                   ${term.variations.length > 0
@@ -1480,6 +1497,7 @@
         const variationsInput = document.getElementById('tag-variations').value.trim();
         const category = document.getElementById('tag-category').value;
         const llmVerify = document.getElementById('tag-llm-verify').checked;
+        const caseSensitive = document.getElementById('tag-case-sensitive').checked;
         const description = document.getElementById('tag-description').value.trim();
 
         const btn = document.getElementById('add-tag-btn');
@@ -1505,6 +1523,7 @@
             variations: variationsInput,
             category,
             llmVerify,
+            caseSensitive,
             description: llmVerify ? description : undefined,
           };
 
@@ -1538,6 +1557,7 @@
           document.getElementById('tag-variations').value = '';
           document.getElementById('tag-category').value = '';
           document.getElementById('tag-llm-verify').checked = false;
+          document.getElementById('tag-case-sensitive').checked = false;
           document.getElementById('tag-description').value = '';
           document.getElementById('description-group').style.display = 'none';
           validateForm();
@@ -1794,7 +1814,7 @@
                 <label class="proposed-label">Category:</label>
                 <select class="proposed-select" id="proposed-category-${index}">
                   <option value="character" ${tag.category === 'character' ? 'selected' : ''}>Character</option>
-                  <option value="scholar" ${tag.category === 'scholar' ? 'selected' : ''}>Scholar</option>
+                  <option value="person" ${tag.category === 'person' ? 'selected' : ''}>Person</option>
                   <option value="place" ${tag.category === 'place' ? 'selected' : ''}>Place</option>
                   <option value="people" ${tag.category === 'people' ? 'selected' : ''}>People</option>
                   <option value="literature" ${tag.category === 'literature' ? 'selected' : ''}>Literature</option>
@@ -1812,6 +1832,15 @@
               </div>
               <div class="proposed-hint">
                 For ambiguous names (like "David" or "John"), use AI to verify each match based on context
+              </div>
+              <div class="proposed-checkbox-row">
+                <input type="checkbox" class="proposed-checkbox" id="proposed-caseSensitive-${index}" />
+                <label class="proposed-checkbox-label" for="proposed-caseSensitive-${index}">
+                  Case-sensitive matching
+                </label>
+              </div>
+              <div class="proposed-hint">
+                Match only exact case (e.g., "Lot" won't match "lot"). Use for words that are also common English words.
               </div>
               <div class="proposed-description-group ${isLlmVerify ? 'show' : ''}" id="proposed-description-group-${index}">
                 <div class="proposed-row">
@@ -1870,6 +1899,7 @@
         const variationsInput = document.getElementById(`proposed-variations-${index}`).value.trim();
         const category = document.getElementById(`proposed-category-${index}`).value;
         const llmVerify = document.getElementById(`proposed-llmVerify-${index}`).checked;
+        const caseSensitive = document.getElementById(`proposed-caseSensitive-${index}`).checked;
         const description = document.getElementById(`proposed-description-${index}`).value.trim();
 
         // Validate: if llmVerify is checked, description is required
@@ -1893,6 +1923,7 @@
             category,
             status: 'accepted',
             llmVerify,
+            caseSensitive,
             description: llmVerify ? description : undefined,
           };
 

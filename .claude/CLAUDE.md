@@ -134,12 +134,12 @@ The transcript processing pipeline is orchestrated via `src/pipeline/youtube-pro
    - Example: "David" finds 672 regex matches, LLM verifies 24 are King David, rejects 648 modern references
 
    **Tag Categories (7 total):**
-   - `character` - Individual people/beings (Moses, Jesus, Tiamat, Marduk, David, Paul) - biblical, ancient, mythological
-   - `scholar` - Modern academics (Bart Ehrman, David A. Burnett)
+   - `character` - Biblical, mythological, and literary characters who may or may not have historically existed (Moses, Jesus, Tiamat, Marduk, Baal, Asherah)
+   - `person` - Historical people who verifiably lived (Bart Ehrman, Andrew Whitehead, Athanasius of Alexandria)
    - `place` - All geographic locations (Jerusalem, Ugarit, Elephantine, Carthage, Canaan)
    - `people` - People groups/nations (Israelites, Canaanites, Amorites, Philistines, Moabites)
    - `literature` - Written works (Torah, Septuagint, Gospel of John, Dead Sea Scrolls)
-   - `theology` - Doctrines and concepts (resurrection, divine council, YHWH, Asherah)
+   - `theology` - Doctrines and concepts (resurrection, divine council, YHWH, monotheism)
    - `scholarship` - Academic methods and terms (textual criticism, source criticism, redaction criticism)
 
 5. **Storage** (`src/storage/`)

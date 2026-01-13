@@ -481,12 +481,13 @@
       "original": "century ce",
       "corrected": "century CE",
       "category": "capitalization",
-      "totalOccurrences": 10,
-      "episodeCount": 3,
+      "totalOccurrences": 12,
+      "episodeCount": 4,
       "episodes": [
         "_zou11pMRag",
         "gW6w-AOiKNM",
-        "5bA0OigwXR4"
+        "5bA0OigwXR4",
+        "_8in-xz4L8o"
       ],
       "examples": [
         "\"the second century ce, and Paul\"",
@@ -508,9 +509,9 @@
         "_zou11pMRag",
         "_zou11pMRag"
       ],
-      "confidence": 70,
+      "confidence": 85,
       "firstSeen": "2026-01-11T17:59:30.300Z",
-      "lastSeen": "2026-01-11T19:27:55.129Z",
+      "lastSeen": "2026-01-13T16:53:14.949Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:05:33.332Z",
       "reviewedBy": "UI Review"
@@ -2234,31 +2235,38 @@
       "original": "James version",
       "corrected": "James Version",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
+      "totalOccurrences": 4,
+      "episodeCount": 2,
       "episodes": [
-        "naI65ELNhRw"
+        "naI65ELNhRw",
+        "lHoBSsJoacQ"
       ],
       "examples": [
         "\"the King James version of the\"",
-        "\"1611 King James version, it's going\""
+        "\"1611 King James version, it's going\"",
+        "\"the King James version, it says\""
       ],
       "correctedExamples": [
         "\"the King James Version of the\"",
-        "\"1611 King James Version, it's going\""
+        "\"1611 King James Version, it's going\"",
+        "\"the King James Version, it says\""
       ],
       "timestamps": [
         "00:13:37.400",
-        "00:32:25.049"
+        "00:32:25.049",
+        "00:11:27.400"
       ],
       "episodeIds": [
         "naI65ELNhRw",
-        "naI65ELNhRw"
+        "naI65ELNhRw",
+        "lHoBSsJoacQ"
       ],
-      "confidence": 10,
+      "confidence": 40,
       "firstSeen": "2026-01-11T20:29:33.102Z",
-      "lastSeen": "2026-01-11T20:29:33.102Z",
-      "status": "pending"
+      "lastSeen": "2026-01-13T16:36:32.344Z",
+      "status": "approved",
+      "reviewedAt": "2026-01-13T17:49:19.696Z",
+      "reviewedBy": "UI Review"
     },
     "additions→editions": {
       "original": "additions",
@@ -3641,10 +3649,11 @@
       "original": "Pastoral epistles",
       "corrected": "Pastoral Epistles",
       "category": "capitalization",
-      "totalOccurrences": 5,
-      "episodeCount": 1,
+      "totalOccurrences": 24,
+      "episodeCount": 2,
       "episodes": [
-        "sVplhtKv9Jc"
+        "sVplhtKv9Jc",
+        "_8in-xz4L8o"
       ],
       "examples": [
         "\"that the Pastoral epistles give people\"",
@@ -3666,9 +3675,9 @@
         "sVplhtKv9Jc",
         "sVplhtKv9Jc"
       ],
-      "confidence": 20,
+      "confidence": 50,
       "firstSeen": "2026-01-12T00:07:44.268Z",
-      "lastSeen": "2026-01-12T00:07:44.268Z",
+      "lastSeen": "2026-01-13T16:53:14.949Z",
       "status": "approved",
       "reviewedAt": "2026-01-13T03:17:10.570Z",
       "reviewedBy": "UI Review"
@@ -4123,7 +4132,201 @@
       "firstSeen": "2026-01-13T04:52:19.952Z",
       "lastSeen": "2026-01-13T04:52:19.952Z",
       "status": "pending"
+    },
+    "glands→glans": {
+      "original": "glands",
+      "corrected": "glans",
+      "category": "spelling",
+      "totalOccurrences": 5,
+      "episodeCount": 1,
+      "episodes": [
+        "1qbh8bFGfvg"
+      ],
+      "examples": [
+        "\"know, the glands of the\"",
+        "\"exposing that glands suddenly evokes\"",
+        "\"of the glands is reserved\""
+      ],
+      "correctedExamples": [
+        "\"know, the glans of the\"",
+        "\"exposing that glans suddenly evokes\"",
+        "\"of the glans is reserved\""
+      ],
+      "timestamps": [
+        "00:30:23.730",
+        "00:30:23.730",
+        "00:32:21.380"
+      ],
+      "episodeIds": [
+        "1qbh8bFGfvg",
+        "1qbh8bFGfvg",
+        "1qbh8bFGfvg"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-13T16:16:54.478Z",
+      "lastSeen": "2026-01-13T16:16:54.478Z",
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T16:27:17.622Z",
+      "reviewedBy": "UI Review"
+    },
+    "antiochus IV→Antiochus IV": {
+      "original": "antiochus IV",
+      "corrected": "Antiochus IV",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "lHoBSsJoacQ"
+      ],
+      "examples": [
+        "\"just says, antiochus IV Episthenes is\"",
+        "\"just says Antiochus iv, Episthenes is\""
+      ],
+      "correctedExamples": [
+        "\"just says, Antiochus IV Epiphanes is\"",
+        "\"just says Antiochus IV Epiphanes is\""
+      ],
+      "timestamps": [
+        "00:00:01.040",
+        "00:46:25.500"
+      ],
+      "episodeIds": [
+        "lHoBSsJoacQ",
+        "lHoBSsJoacQ"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T16:36:32.344Z",
+      "lastSeen": "2026-01-13T16:36:32.344Z",
+      "status": "pending"
+    },
+    "Episthenes→Epiphanes": {
+      "original": "Episthenes",
+      "corrected": "Epiphanes",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "lHoBSsJoacQ"
+      ],
+      "examples": [
+        "\"antiochus IV Episthenes is a\"",
+        "\"Antiochus iv, Episthenes is a\""
+      ],
+      "correctedExamples": [
+        "\"Antiochus IV Epiphanes is a\"",
+        "\"Antiochus IV Epiphanes is a\""
+      ],
+      "timestamps": [
+        "00:00:01.040",
+        "00:46:25.500"
+      ],
+      "episodeIds": [
+        "lHoBSsJoacQ",
+        "lHoBSsJoacQ"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-13T16:36:32.344Z",
+      "lastSeen": "2026-01-13T16:36:32.344Z",
+      "status": "pending"
+    },
+    "epiphanies→Epiphanes": {
+      "original": "epiphanies",
+      "corrected": "Epiphanes",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "lHoBSsJoacQ"
+      ],
+      "examples": [
+        "\"Antiochus IV epiphanies.\"",
+        "\"Antiochus IV epiphanies is the\""
+      ],
+      "correctedExamples": [
+        "\"Antiochus IV Epiphanes.\"",
+        "\"Antiochus IV Epiphanes is the\""
+      ],
+      "timestamps": [
+        "00:22:51.540",
+        "00:45:20.580"
+      ],
+      "episodeIds": [
+        "lHoBSsJoacQ",
+        "lHoBSsJoacQ"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-13T16:36:32.344Z",
+      "lastSeen": "2026-01-13T16:36:32.344Z",
+      "status": "approved",
+      "reviewedAt": "2026-01-13T17:50:03.647Z",
+      "reviewedBy": "UI Review"
+    },
+    "many→Mene": {
+      "original": "many",
+      "corrected": "Mene",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "lHoBSsJoacQ"
+      ],
+      "examples": [
+        "\"God writing many, many tele.\"",
+        "\"writing many, many tele.\""
+      ],
+      "correctedExamples": [
+        "\"God writing Mene, Mene, Tekel,\"",
+        "\"writing Mene, Mene, Tekel,\""
+      ],
+      "timestamps": [
+        "00:30:21.730",
+        "00:30:21.730"
+      ],
+      "episodeIds": [
+        "lHoBSsJoacQ",
+        "lHoBSsJoacQ"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T16:36:32.344Z",
+      "lastSeen": "2026-01-13T16:36:32.344Z",
+      "status": "pending"
+    },
+    "second Timothy→Second Timothy": {
+      "original": "second Timothy",
+      "corrected": "Second Timothy",
+      "category": "capitalization",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "_8in-xz4L8o"
+      ],
+      "examples": [
+        "\"Like second Timothy has the\"",
+        "\"first and second Timothy and Titus\"",
+        "\"first and second Timothy, but accepted\""
+      ],
+      "correctedExamples": [
+        "\"Like Second Timothy has the\"",
+        "\"First and Second Timothy and Titus\"",
+        "\"First and Second Timothy, but accepted\""
+      ],
+      "timestamps": [
+        "00:40:36.920",
+        "00:42:33.120",
+        "00:47:30.770"
+      ],
+      "episodeIds": [
+        "_8in-xz4L8o",
+        "_8in-xz4L8o",
+        "_8in-xz4L8o"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-13T16:53:14.949Z",
+      "lastSeen": "2026-01-13T16:53:14.949Z",
+      "status": "approved",
+      "reviewedAt": "2026-01-13T17:50:16.109Z",
+      "reviewedBy": "UI Review"
     }
   },
-  "lastUpdated": "2026-01-13T04:52:19.952Z"
+  "lastUpdated": "2026-01-13T17:50:16.109Z"
 }

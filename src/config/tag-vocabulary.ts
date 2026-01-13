@@ -6,7 +6,7 @@
 
 export type TagCategory =
 	| 'character'
-	| 'scholar'
+	| 'person'
 	| 'place'
 	| 'people'
 	| 'literature'
@@ -22,8 +22,9 @@ export type TagCategory =
 export type TagStatus = 'accepted' | 'proposed' | 'rejected';
 
 /**
- * Tag definition with optional LLM verification.
+ * Tag definition with optional LLM verification and case sensitivity.
  * When llmVerify is true, description is required to provide context for verification.
+ * When caseSensitive is true, matching is case-sensitive (default: false for case-insensitive).
  */
 export type TagDefinition =
 	| {
@@ -33,6 +34,7 @@ export type TagDefinition =
 			llmVerify: true;
 			description: string; // Required when llmVerify is true
 			status: TagStatus;
+			caseSensitive?: boolean; // Default: false (case-insensitive)
 	  }
 	| {
 			canonical: string;
@@ -41,6 +43,7 @@ export type TagDefinition =
 			llmVerify?: false;
 			description?: string; // Optional otherwise
 			status: TagStatus;
+			caseSensitive?: boolean; // Default: false (case-insensitive)
 	  };
 
 /**
@@ -64,11 +67,11 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Moses', variations: ['Moshe', "Moses'", "Moses's"], category: 'character', status: 'accepted' },
 	{ canonical: 'Adam', variations: ["Adam's"], category: 'character', status: 'accepted' },
 	{ canonical: 'Eve', variations: [], category: 'character', status: 'accepted' },
-	{ canonical: 'Lot', variations: ["Lot's"], category: 'character', status: 'accepted' },
+	{ canonical: 'Lot', variations: ["Lot's"], category: 'character', status: 'accepted', caseSensitive: true },
 	{ canonical: 'Paul', variations: ['Pauline'], category: 'character', status: 'accepted' },
 	{ canonical: 'Jephthah', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'John of Patmos', variations: ['John the Revelator'], category: 'character', status: 'accepted' },
-	{ canonical: 'Bart Ehrman', variations: ['Ehrman'], category: 'scholar', status: 'accepted' },
+	{ canonical: 'Bart Ehrman', variations: ['Ehrman'], category: 'person', status: 'accepted' },
 	{ canonical: 'Hagar', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'Ishmael', variations: ['Ishmaelites'], category: 'character', status: 'accepted' },
 	{ canonical: 'Ezekiel', variations: [], category: 'character', status: 'accepted' },
@@ -82,6 +85,7 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Mary Magdalene', variations: ['Mary'], category: 'character', status: 'accepted' },
 	{ canonical: 'Balaam', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'Daniel', variations: [], category: 'character', llmVerify: true, description: 'Daniel from the Book of Daniel', status: 'accepted' },
+	{ canonical: 'Book of Daniel', variations: [], category: 'literature', llmVerify: true, description: 'References to the book of Daniel, chapters, verses, stories, languages contained within', status: 'accepted' },
 	{ canonical: 'Enoch', variations: [], category: 'character', status: 'accepted' },
 
 	// BIBLICAL PLACES (12 terms)
@@ -106,7 +110,7 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Book of Revelation', variations: ['Revelation', 'Apocalypse'], category: 'literature', status: 'accepted' },
 	{ canonical: 'Genesis', variations: [], category: 'literature', status: 'accepted' },
 	{ canonical: 'Deuteronomy', variations: [], category: 'literature', status: 'accepted' },
-	{ canonical: 'Book of Job', variations: ['Job'], category: 'literature', status: 'accepted' },
+	{ canonical: 'Book of Job', variations: ['Job'], category: 'literature', llmVerify: true, description: 'The book of Job in the old testament, not merely a reference to the character Job', status: 'accepted', caseSensitive: true },
 	{ canonical: 'Isaiah', variations: [], category: 'literature', status: 'accepted' },
 	{ canonical: 'Ezekiel', variations: [], category: 'literature', status: 'accepted' },
 	{ canonical: 'Judges', variations: [], category: 'literature', status: 'accepted' },
@@ -116,12 +120,12 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Numbers', variations: [], category: 'literature', status: 'accepted' },
 	{ canonical: 'Kings', variations: ['1 Kings', '2 Kings'], category: 'literature', status: 'accepted' },
 	{ canonical: 'First Corinthians', variations: ['1 Corinthians'], category: 'literature', status: 'accepted' },
-	{ canonical: 'Exodus', variations: [], category: 'literature', status: 'accepted' },
+	{ canonical: 'Book of Exodus', variations: ['Exodus'], category: 'literature', llmVerify: true, description: 'The book of Exodus in the old testament, not merely a reference to the event of exodus', status: 'accepted', caseSensitive: true },
 	{ canonical: 'King James Version', variations: ['KJV'], category: 'literature', status: 'accepted' },
 	{ canonical: 'Masoretic Text', variations: [], category: 'literature', status: 'accepted' },
 
 	// THEOLOGICAL CONCEPTS (27 terms)
-	{ canonical: 'YHWH', variations: ['Yahweh', 'Adonai', 'the Lord'], category: 'theology', status: 'accepted' },
+	{ canonical: 'YHWH', variations: ['Yahweh', 'Adonai', 'the Lord', 'ancient of days'], category: 'character', status: 'accepted' },
 	{ canonical: 'Asherah', variations: ['Athirat', 'Atiratu'], category: 'character', status: 'accepted' },
 	{ canonical: 'El', variations: ['El Shaddai'], category: 'character', status: 'accepted' },
 	{ canonical: 'Baal', variations: [], category: 'character', status: 'accepted' },
@@ -191,7 +195,7 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Tarshish', variations: [], category: 'place', status: 'accepted' },
 	{ canonical: 'Sennecherib', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'Christian Nationalism', variations: [], category: 'theology', status: 'accepted' },
-	{ canonical: 'Andrew Whitehead', variations: [], category: 'scholar', status: 'accepted' },
+	{ canonical: 'Andrew Whitehead', variations: [], category: 'person', status: 'accepted' },
 	{ canonical: 'bible', variations: [], category: 'literature', status: 'rejected' },
 	{ canonical: 'moral', variations: [], category: 'theology', status: 'rejected' },
 	{ canonical: 'Ten Commandments', variations: [], category: 'literature', status: 'accepted' },
@@ -202,7 +206,7 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Ritual Decalogue', variations: ["ritual decalogue"], category: 'literature', status: 'accepted' },
 	{ canonical: 'Ethical Decalogue', variations: ["ethical decalogue"], category: 'literature', status: 'accepted' },
 	{ canonical: 'covenant code', variations: [], category: 'literature', status: 'rejected' },
-	{ canonical: 'philo', variations: [], category: 'scholar', status: 'rejected' },
+	{ canonical: 'philo', variations: [], category: 'person', status: 'rejected' },
 	{ canonical: 'Talmud', variations: [], category: 'literature', status: 'accepted' },
 	{ canonical: 'Moabites', variations: [], category: 'people', status: 'accepted' },
 	{ canonical: 'Ammonites', variations: [], category: 'people', status: 'accepted' },
@@ -217,33 +221,65 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Lamech', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'Methuselah', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'Jared', variations: [], category: 'character', llmVerify: true, description: 'father of Enoch in the line of Adam', status: 'accepted' },
-	{ canonical: 'Athanasius of Alexandria', variations: ['Athanasius'], category: 'scholar', status: 'accepted' },
+	{ canonical: 'Athanasius of Alexandria', variations: ['Athanasius'], category: 'person', status: 'accepted' },
 	{ canonical: 'Hebrews', variations: ['Jews', 'jews', 'hebrews'], category: 'people', status: 'accepted' },
 	{ canonical: 'rabbis', variations: [], category: 'people', status: 'rejected' },
 	{ canonical: 'jews', variations: [], category: 'people', status: 'rejected' },
 	{ canonical: 'Romans', variations: [], category: 'people', status: 'accepted' },
+	{ canonical: 'Gospel of Mark', variations: ['Mark'], category: 'literature', llmVerify: true, description: 'the gospel of mark, second book of the christian new testament', status: 'accepted' },
+	{ canonical: 'Eschatology',  variations: ['eschatological', 'eschaton', 'end times', 'end time'], category: 'theology', status: 'accepted' },
+	{ canonical: 'historicism', variations: [], category: 'scholarship', status: 'rejected' },
+	{ canonical: 'prophecies', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'prophecy', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'temple', variations: [], category: 'place', status: 'rejected' },
+	{ canonical: '1 Thessalonians', variations: ['1 thessalonians', 'First Thessalonians'], category: 'literature', llmVerify: true, description: 'the letter written to the church at Thessalonica', status: 'accepted' },
+	{ canonical: 'Gaza', variations: ['gaza'], category: 'place', status: 'accepted' },
+	{ canonical: '2 Corinthians', variations: ['2nd Corinthians', 'second corinthians'], category: 'literature', status: 'accepted' },
+	{ canonical: 'scholars', variations: [], category: 'person', status: 'rejected' },
+	{ canonical: 'studies', variations: [], category: 'scholarship', status: 'rejected' },
+	{ canonical: 'disability studies', variations: [], category: 'scholarship', status: 'rejected' },
+	{ canonical: 'spirit', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'gospels', variations: [], category: 'literature', status: 'rejected' },
+	{ canonical: 'Belshazzar', variations: [], category: 'character', status: 'accepted' },
+	{ canonical: 'Nebuchadnezzar', variations: [], category: 'character', status: 'accepted' },
+	{ canonical: 'Antiochus IV Epiphanes', variations: ['Antiochus Epiphanes'], category: 'person', llmVerify: true, description: 'king of the Seleucid Empire', status: 'accepted' },
+	{ canonical: 'Cyrus the Great', variations: ['cyrus', 'Cyrus the Persian'], category: 'person', llmVerify: true, description: 'Cyrus the Great, who founded the Achaemenid Empire in 550 BC', status: 'accepted' },
+	{ canonical: 'Nabonidus', variations: [], category: 'person', status: 'accepted' },
+	{ canonical: 'Qumran', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'Medes', variations: [], category: 'people', llmVerify: true, description: 'people that lived in Median Kingdom that existed from the 7th century BCE until the mid-6th century BCE', status: 'accepted' },
+	{ canonical: 'Median Kingdom', variations: ['Media', 'Median'], category: 'place', llmVerify: true, description: 'a political entity centered in Ecbatana that existed from the 7th century BCE until the mid-6th century BCE', status: 'accepted' },
+	{ canonical: 'epistles', variations: [], category: 'literature', status: 'rejected' },
+	{ canonical: '1 Timothy', variations: ['first timothy'], category: 'literature', llmVerify: true, description: 'the first letter from paul to timothy', status: 'accepted' },
+	{ canonical: '2nd Timothy', variations: ['second timothy'], category: 'literature', status: 'accepted' },
+	{ canonical: 'Papias of Hierapolis', variations: ['papias'], category: 'person', llmVerify: true, description: 'Greek Apostolic Father, Bishop of Hierapolis (modern Pamukkale, Turkey), and author who lived c. 60 – c. 130 AD', status: 'accepted' },
+	{ canonical: 'Pastoral Epistles', variations: [], category: 'literature', status: 'accepted' },
+	{ canonical: 'Irenaeus', variations: [], category: 'person', llmVerify: true, description: 'a Greek bishop noted for his role in guiding and expanding Christian communities in the southern regions of present-day France', status: 'accepted' },
+	{ canonical: 'Galilee', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'Book of Acts', variations: ['Acts', 'Acts of the Apostles'], category: 'literature', llmVerify: true, description: 'the new testament book traditionally attributed to Luke', status: 'accepted' },
+	{ canonical: 'Saint Titus', variations: ['Titus'], category: 'character', llmVerify: true, description: 'early Christian missionary and church leader, a companion and disciple of Paul the Apostle', status: 'accepted' },
 ];
 
 /**
  * Build a lookup map from all searchable terms (canonical + variations) to their canonical forms.
  * This enables O(1) lookups during regex matching.
+ * Case sensitivity is handled during regex creation based on the caseSensitive flag.
  *
  * @param vocab - Array of tag definitions
- * @returns Map where keys are lowercase searchable terms and values are canonical forms
+ * @returns Map where keys are searchable terms and values are canonical forms
  *
  * @example
  * const termMap = getAllSearchableTerms(tagVocabulary);
- * termMap.get('lxx') // Returns 'Septuagint'
- * termMap.get('septuagint') // Returns 'Septuagint'
+ * termMap.get('LXX') // Returns 'Septuagint'
+ * termMap.get('Septuagint') // Returns 'Septuagint'
  */
 export function getAllSearchableTerms(vocab: TagDefinition[]): Map<string, string> {
 	const termMap = new Map<string, string>();
 
 	for (const def of vocab) {
-		// Map canonical to itself (preserves case for case-sensitive matching)
+		// Map canonical to itself
 		termMap.set(def.canonical, def.canonical);
 
-		// Map all variations to canonical (preserves case for case-sensitive matching)
+		// Map all variations to canonical
 		for (const variation of def.variations) {
 			termMap.set(variation, def.canonical);
 		}

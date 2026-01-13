@@ -16,7 +16,7 @@ export const TagDiscoverySchema = z.object({
 			mentions: z.number(),
 			category: z.enum([
 				'character',
-				'scholar',
+				'person',
 				'place',
 				'people',
 				'literature',
@@ -65,12 +65,12 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
 1. Extract tags that appear 3+ times in the transcript (be thorough!)
 2. Focus on high-value content and categorize properly:
 
-   CRITICAL DISTINCTION - character vs people:
-   - character: INDIVIDUAL named persons (Sarah, Moses, David, Paul, Cain, Seth, Joseph, Lilith, Athanasius)
+   CRITICAL DISTINCTION - character vs person vs people:
+   - character: Biblical/mythological characters who may not have historically existed (Moses, David, Paul, Lilith, Baal, Asherah)
+   - person: Historical people who verifiably lived (Bart Ehrman, Athanasius of Alexandria, Cyrus the Great, Antiochus IV Epiphanes)
    - people: COLLECTIVE ethnic/national GROUPS (Israelites, Canaanites, Amorites, Philistines, Moabites, Egyptians, Romans)
 
    Other categories:
-   - scholar: Modern academics (N.T. Wright, James Tabor)
    - place: Geographic locations (Jerusalem, Babylon, Tigris River, Canaan)
    - literature: Texts/books (1 Enoch, Book of Watchers, Gospel of Mark)
    - theology: Religious concepts (divine council, atonement, Christology)

@@ -23,6 +23,7 @@ export type AddTagParams =
 			llmVerify: true;
 			description: string;
 			status?: TagStatus;
+			caseSensitive?: boolean;
 	  }
 	| {
 			canonical: string;
@@ -31,6 +32,7 @@ export type AddTagParams =
 			llmVerify?: false;
 			description?: string;
 			status?: TagStatus;
+			caseSensitive?: boolean;
 	  };
 
 /**
@@ -75,15 +77,16 @@ export async function addTagToVocabulary(params: AddTagParams): Promise<void> {
 		? `[${variations.map(v => `'${escapeForTsString(v)}'`).join(', ')}]`
 		: '[]';
 
-	// Build entry based on options (llmVerify, status)
+	// Build entry based on options (llmVerify, caseSensitive, status)
 	const status = params.status || 'accepted';
 	const statusStr = status !== 'accepted' ? `, status: '${status}'` : '';
+	const caseSensitiveStr = params.caseSensitive ? ', caseSensitive: true' : '';
 
 	let newEntry: string;
 	if ('llmVerify' in params && params.llmVerify) {
-		newEntry = `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsStr}, category: '${category}', llmVerify: true, description: '${escapeForTsString(params.description)}'${statusStr} },\n`;
+		newEntry = `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsStr}, category: '${category}', llmVerify: true, description: '${escapeForTsString(params.description)}'${statusStr}${caseSensitiveStr} },\n`;
 	} else {
-		newEntry = `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsStr}, category: '${category}'${statusStr} },\n`;
+		newEntry = `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsStr}, category: '${category}'${statusStr}${caseSensitiveStr} },\n`;
 	}
 
 	// Insert the new entry before the closing bracket
@@ -104,6 +107,7 @@ export async function addTagToVocabulary(params: AddTagParams): Promise<void> {
 			llmVerify: true,
 			description: params.description,
 			status,
+			caseSensitive: params.caseSensitive,
 		} as TagDefinition);
 	} else {
 		tagVocabulary.push({
@@ -111,6 +115,7 @@ export async function addTagToVocabulary(params: AddTagParams): Promise<void> {
 			variations,
 			category,
 			status,
+			caseSensitive: params.caseSensitive,
 		} as TagDefinition);
 	}
 
@@ -135,6 +140,7 @@ export type UpdateTagParams = {
 	category?: TagCategory;
 	status?: TagStatus;
 	llmVerify?: boolean;
+	caseSensitive?: boolean;
 	description?: string;
 };
 
@@ -184,6 +190,7 @@ export async function updateTagInVocabulary(
 	const newCategory = updates.category || existingTag.category;
 	const newStatus = updates.status || existingTag.status;
 	const newLlmVerify = updates.llmVerify ?? ('llmVerify' in existingTag ? existingTag.llmVerify : false);
+	const newCaseSensitive = updates.caseSensitive ?? ('caseSensitive' in existingTag ? existingTag.caseSensitive : false);
 	const newDescription = updates.description ?? ('description' in existingTag ? existingTag.description : undefined);
 
 	// Format the new entry (with proper escaping)
@@ -191,12 +198,13 @@ export async function updateTagInVocabulary(
 		? `[${newVariations.map(v => `'${escapeForTsString(v)}'`).join(', ')}]`
 		: '[]';
 	const statusStr = newStatus !== 'accepted' ? `, status: '${newStatus}'` : '';
+	const caseSensitiveStr = newCaseSensitive ? ', caseSensitive: true' : '';
 
 	let newEntry: string;
 	if (newLlmVerify && newDescription) {
-		newEntry = `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsStr}, category: '${newCategory}', llmVerify: true, description: '${escapeForTsString(newDescription)}', status: '${newStatus}' },\n`;
+		newEntry = `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsStr}, category: '${newCategory}', llmVerify: true, description: '${escapeForTsString(newDescription)}', status: '${newStatus}'${caseSensitiveStr} },\n`;
 	} else {
-		newEntry = `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsStr}, category: '${newCategory}', status: '${newStatus}' },\n`;
+		newEntry = `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsStr}, category: '${newCategory}', status: '${newStatus}'${caseSensitiveStr} },\n`;
 	}
 
 	// Replace the old entry with the new one
@@ -218,12 +226,14 @@ export async function updateTagInVocabulary(
 					llmVerify: true,
 					description: newDescription,
 					status: newStatus,
+					caseSensitive: newCaseSensitive,
 				}
 			: {
 					canonical: newCanonical,
 					variations: newVariations,
 					category: newCategory,
 					status: newStatus,
+					caseSensitive: newCaseSensitive,
 				};
 		tagVocabulary[index] = updatedTag;
 	}

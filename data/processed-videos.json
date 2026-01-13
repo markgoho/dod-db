@@ -529,6 +529,10 @@
       {
         "tag": "Eve",
         "mentions": 1
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -677,10 +681,6 @@
         "mentions": 1
       },
       {
-        "tag": "YHWH",
-        "mentions": 1
-      },
-      {
         "tag": "Ezekiel",
         "mentions": 1
       },
@@ -702,6 +702,10 @@
       },
       {
         "tag": "Romans",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
         "mentions": 1
       }
     ],
@@ -891,6 +895,10 @@
         "mentions": 6
       },
       {
+        "tag": "Pastoral Epistles",
+        "mentions": 6
+      },
+      {
         "tag": "inerrancy",
         "mentions": 5
       },
@@ -920,6 +928,14 @@
       },
       {
         "tag": "Gospel of John",
+        "mentions": 2
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 2
+      },
+      {
+        "tag": "Saint Titus",
         "mentions": 2
       },
       {
@@ -956,6 +972,18 @@
       },
       {
         "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "2nd Timothy",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Acts",
+        "mentions": 1
+      },
+      {
+        "tag": "1 Timothy",
         "mentions": 1
       }
     ],
@@ -1134,6 +1162,10 @@
         "mentions": 2
       },
       {
+        "tag": "Galilee",
+        "mentions": 2
+      },
+      {
         "tag": "Dead Sea Scrolls",
         "mentions": 1
       },
@@ -1159,6 +1191,10 @@
       },
       {
         "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Daniel",
         "mentions": 1
       }
     ],
@@ -1327,6 +1363,10 @@
         "mentions": 3
       },
       {
+        "tag": "Gospel of Mark",
+        "mentions": 3
+      },
+      {
         "tag": "Genesis",
         "mentions": 2
       },
@@ -1467,6 +1507,10 @@
         "mentions": 4
       },
       {
+        "tag": "1 Timothy",
+        "mentions": 4
+      },
+      {
         "tag": "First Corinthians",
         "mentions": 3
       },
@@ -1520,6 +1564,10 @@
       },
       {
         "tag": "King David",
+        "mentions": 1
+      },
+      {
+        "tag": "1 Thessalonians",
         "mentions": 1
       }
     ],
@@ -1590,6 +1638,10 @@
       },
       {
         "tag": "James",
+        "mentions": 9
+      },
+      {
+        "tag": "Gospel of Mark",
         "mentions": 9
       },
       {
@@ -1703,6 +1755,10 @@
       {
         "tag": "Sarah",
         "mentions": 1
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -1766,12 +1822,20 @@
         "mentions": 13
       },
       {
+        "tag": "Gospel of Mark",
+        "mentions": 12
+      },
+      {
         "tag": "New Testament",
         "mentions": 11
       },
       {
         "tag": "Christianity",
         "mentions": 11
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 10
       },
       {
         "tag": "textual criticism",
@@ -1827,6 +1891,14 @@
       },
       {
         "tag": "Samaritans",
+        "mentions": 1
+      },
+      {
+        "tag": "Pastoral Epistles",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Acts",
         "mentions": 1
       }
     ],
@@ -1891,11 +1963,11 @@
         "mentions": 7
       },
       {
-        "tag": "YHWH",
+        "tag": "Jesus",
         "mentions": 7
       },
       {
-        "tag": "Jesus",
+        "tag": "YHWH",
         "mentions": 7
       },
       {
@@ -1968,6 +2040,10 @@
       },
       {
         "tag": "Baal",
+        "mentions": 1
+      },
+      {
+        "tag": "Galilee",
         "mentions": 1
       }
     ],
@@ -2171,7 +2247,15 @@
         "mentions": 10
       },
       {
+        "tag": "Book of Acts",
+        "mentions": 8
+      },
+      {
         "tag": "Jerusalem",
+        "mentions": 7
+      },
+      {
+        "tag": "Papias of Hierapolis",
         "mentions": 7
       },
       {
@@ -2187,15 +2271,15 @@
         "mentions": 5
       },
       {
-        "tag": "YHWH",
-        "mentions": 5
-      },
-      {
         "tag": "angel",
         "mentions": 5
       },
       {
         "tag": "Sheol",
+        "mentions": 5
+      },
+      {
+        "tag": "YHWH",
         "mentions": 5
       },
       {
@@ -2285,6 +2369,10 @@
       {
         "tag": "Hebrews",
         "mentions": 1
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -2359,7 +2447,15 @@
         "mentions": 7
       },
       {
+        "tag": "Book of Acts",
+        "mentions": 7
+      },
+      {
         "tag": "Israel",
+        "mentions": 6
+      },
+      {
+        "tag": "Gospel of Mark",
         "mentions": 6
       },
       {
@@ -2371,11 +2467,19 @@
         "mentions": 5
       },
       {
+        "tag": "Papias of Hierapolis",
+        "mentions": 5
+      },
+      {
         "tag": "Christianity",
         "mentions": 3
       },
       {
         "tag": "Mary Magdalene",
+        "mentions": 3
+      },
+      {
+        "tag": "Galilee",
         "mentions": 3
       },
       {
@@ -2391,11 +2495,11 @@
         "mentions": 2
       },
       {
-        "tag": "YHWH",
+        "tag": "Moses",
         "mentions": 2
       },
       {
-        "tag": "Moses",
+        "tag": "YHWH",
         "mentions": 2
       },
       {
@@ -2489,6 +2593,10 @@
       {
         "tag": "Jesus",
         "mentions": 14
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 11
       },
       {
         "tag": "Hebrew Bible",
@@ -2899,15 +3007,19 @@
         "mentions": 5
       },
       {
-        "tag": "YHWH",
-        "mentions": 5
-      },
-      {
         "tag": "Romans",
         "mentions": 5
       },
       {
+        "tag": "YHWH",
+        "mentions": 5
+      },
+      {
         "tag": "divine council",
+        "mentions": 4
+      },
+      {
+        "tag": "Eschatology",
         "mentions": 4
       },
       {
@@ -2976,6 +3088,10 @@
       },
       {
         "tag": "Gentiles",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of Mark",
         "mentions": 1
       }
     ],
@@ -3144,6 +3260,10 @@
         "mentions": 2
       },
       {
+        "tag": "Book of Daniel",
+        "mentions": 2
+      },
+      {
         "tag": "resurrection",
         "mentions": 1
       },
@@ -3152,15 +3272,19 @@
         "mentions": 1
       },
       {
-        "tag": "YHWH",
-        "mentions": 1
-      },
-      {
         "tag": "Moses",
         "mentions": 1
       },
       {
         "tag": "Jude",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 1
+      },
+      {
+        "tag": "Galilee",
         "mentions": 1
       }
     ],
@@ -3259,19 +3383,19 @@
         "mentions": 4
       },
       {
-        "tag": "Baal",
-        "mentions": 4
-      },
-      {
         "tag": "Hebrews",
         "mentions": 4
       },
       {
-        "tag": "YHWH",
-        "mentions": 3
+        "tag": "Baal",
+        "mentions": 4
       },
       {
         "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "YHWH",
         "mentions": 3
       },
       {
@@ -3419,6 +3543,10 @@
       },
       {
         "tag": "Egypt",
+        "mentions": 3
+      },
+      {
+        "tag": "Qumran",
         "mentions": 3
       },
       {
@@ -3749,6 +3877,10 @@
         "mentions": 6
       },
       {
+        "tag": "Eschatology",
+        "mentions": 5
+      },
+      {
         "tag": "Isaiah",
         "mentions": 4
       },
@@ -3761,7 +3893,15 @@
         "mentions": 3
       },
       {
+        "tag": "Gospel of Mark",
+        "mentions": 3
+      },
+      {
         "tag": "Septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "Galilee",
         "mentions": 2
       },
       {
@@ -3893,6 +4033,10 @@
         "mentions": 6
       },
       {
+        "tag": "Pastoral Epistles",
+        "mentions": 5
+      },
+      {
         "tag": "New Testament",
         "mentions": 2
       },
@@ -3922,6 +4066,14 @@
       },
       {
         "tag": "King David",
+        "mentions": 1
+      },
+      {
+        "tag": "2nd Timothy",
+        "mentions": 1
+      },
+      {
+        "tag": "Saint Titus",
         "mentions": 1
       }
     ],
@@ -3995,6 +4147,10 @@
       },
       {
         "tag": "gods",
+        "mentions": 4
+      },
+      {
+        "tag": "Eschatology",
         "mentions": 4
       },
       {
@@ -4254,6 +4410,10 @@
         "mentions": 2
       },
       {
+        "tag": "Galilee",
+        "mentions": 2
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 1
       },
@@ -4468,6 +4628,10 @@
       {
         "tag": "Hebrews",
         "mentions": 1
+      },
+      {
+        "tag": "Saint Titus",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -4562,11 +4726,15 @@
         "mentions": 1
       },
       {
+        "tag": "King David",
+        "mentions": 1
+      },
+      {
         "tag": "YHWH",
         "mentions": 1
       },
       {
-        "tag": "King David",
+        "tag": "Cyrus the Great",
         "mentions": 1
       }
     ],
@@ -4687,6 +4855,10 @@
         "mentions": 2
       },
       {
+        "tag": "Book of Acts",
+        "mentions": 2
+      },
+      {
         "tag": "Mount Gerizim",
         "mentions": 1
       },
@@ -4721,6 +4893,10 @@
       {
         "tag": "Amorites",
         "mentions": 1
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -4751,6 +4927,749 @@
         "endTimestamp": "[01:04:00.940]",
         "confidence": "verified",
         "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "i8nHBWR-8CM",
+    "title": "Episode 32 (November 13, 2023), \"The End is Near?\"",
+    "publishedAt": "2023-11-13T00:00:00Z",
+    "processedAt": "2026-01-13T15:58:17.183Z",
+    "transcriptPath": "data/transcripts/2023-11-13-episode-32-november-13-2023-the-end-is-near.txt",
+    "episodeNumber": 32,
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 33
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 24
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 14
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 13
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 13
+      },
+      {
+        "tag": "second coming",
+        "mentions": 9
+      },
+      {
+        "tag": "preterist interpretation",
+        "mentions": 6
+      },
+      {
+        "tag": "end times",
+        "mentions": 6
+      },
+      {
+        "tag": "historicism",
+        "mentions": 6
+      },
+      {
+        "tag": "prophecy",
+        "mentions": 5
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 5
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 4
+      },
+      {
+        "tag": "Paul",
+        "mentions": 4
+      },
+      {
+        "tag": "eschaton",
+        "mentions": 4
+      },
+      {
+        "tag": "prophecies",
+        "mentions": 4
+      },
+      {
+        "tag": "1 Thessalonians",
+        "mentions": 4
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 3
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 3
+      },
+      {
+        "tag": "futurist interpretation",
+        "mentions": 3
+      },
+      {
+        "tag": "Ezekiel",
+        "mentions": 3
+      },
+      {
+        "tag": "Israel",
+        "mentions": 3
+      },
+      {
+        "tag": "temple",
+        "mentions": 3
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 3
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 2
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 2
+      },
+      {
+        "tag": "Gaza",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 1
+      },
+      {
+        "tag": "theology",
+        "mentions": 1
+      },
+      {
+        "tag": "univocality",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Baal",
+        "mentions": 1
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Daniel",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:44.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "ex-eventu",
+        "startTimestamp": "[00:01:44.000]",
+        "endTimestamp": "[00:30:28.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:30:28.000]",
+        "endTimestamp": "[00:53:40.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:53:40.000]",
+        "endTimestamp": "[00:54:36.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "1qbh8bFGfvg",
+    "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon",
+    "publishedAt": "2023-11-20T00:00:00Z",
+    "processedAt": "2026-01-13T16:16:54.635Z",
+    "transcriptPath": "data/transcripts/2023-11-20-episode-33-november-20-2023-the-bible-and-disability-with-isaac-soon.txt",
+    "episodeNumber": 33,
+    "tags": [
+      {
+        "tag": "Isaac",
+        "mentions": 459
+      },
+      {
+        "tag": "Paul",
+        "mentions": 73
+      },
+      {
+        "tag": "disability",
+        "mentions": 47
+      },
+      {
+        "tag": "circumcision",
+        "mentions": 33
+      },
+      {
+        "tag": "weakness",
+        "mentions": 24
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 20
+      },
+      {
+        "tag": "studies",
+        "mentions": 20
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 19
+      },
+      {
+        "tag": "disability studies",
+        "mentions": 17
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 14
+      },
+      {
+        "tag": "corinthians",
+        "mentions": 11
+      },
+      {
+        "tag": "Satan",
+        "mentions": 10
+      },
+      {
+        "tag": "scholars",
+        "mentions": 10
+      },
+      {
+        "tag": "bodily",
+        "mentions": 10
+      },
+      {
+        "tag": "2 Corinthians",
+        "mentions": 9
+      },
+      {
+        "tag": "theology",
+        "mentions": 8
+      },
+      {
+        "tag": "angel",
+        "mentions": 7
+      },
+      {
+        "tag": "spirit",
+        "mentions": 7
+      },
+      {
+        "tag": "gospels",
+        "mentions": 5
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 4
+      },
+      {
+        "tag": "Israel",
+        "mentions": 4
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 4
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 3
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "gods",
+        "mentions": 2
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 1
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Romans",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Acts",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:10.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:10.000]",
+        "endTimestamp": "[00:58:57.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:58:57.000]",
+        "endTimestamp": "[00:59:53.860]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "lHoBSsJoacQ",
+    "title": "Episode 34 (November 27, 2023), \"The Lion's Den\"",
+    "publishedAt": "2023-11-27T00:00:00Z",
+    "processedAt": "2026-01-13T16:36:32.546Z",
+    "transcriptPath": "data/transcripts/2023-11-27-episode-34-november-27-2023-the-lions-den.txt",
+    "episodeNumber": 34,
+    "tags": [
+      {
+        "tag": "Daniel",
+        "mentions": 62
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 27
+      },
+      {
+        "tag": "aramaic",
+        "mentions": 14
+      },
+      {
+        "tag": "Nebuchadnezzar",
+        "mentions": 14
+      },
+      {
+        "tag": "persian",
+        "mentions": 12
+      },
+      {
+        "tag": "Belshazzar",
+        "mentions": 11
+      },
+      {
+        "tag": "Medes",
+        "mentions": 9
+      },
+      {
+        "tag": "scholars",
+        "mentions": 8
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 7
+      },
+      {
+        "tag": "Israel",
+        "mentions": 5
+      },
+      {
+        "tag": "Nabonidus",
+        "mentions": 5
+      },
+      {
+        "tag": "Median Kingdom",
+        "mentions": 5
+      },
+      {
+        "tag": "Book of Daniel",
+        "mentions": 5
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 4
+      },
+      {
+        "tag": "temple",
+        "mentions": 4
+      },
+      {
+        "tag": "hellenistic",
+        "mentions": 4
+      },
+      {
+        "tag": "Cyrus the Great",
+        "mentions": 4
+      },
+      {
+        "tag": "prophecies",
+        "mentions": 3
+      },
+      {
+        "tag": "end times",
+        "mentions": 3
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 3
+      },
+      {
+        "tag": "Michael",
+        "mentions": 3
+      },
+      {
+        "tag": "Romans",
+        "mentions": 3
+      },
+      {
+        "tag": "medians",
+        "mentions": 3
+      },
+      {
+        "tag": "ancient of days",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 2
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 2
+      },
+      {
+        "tag": "angel",
+        "mentions": 2
+      },
+      {
+        "tag": "gods",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 1
+      },
+      {
+        "tag": "studies",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Easter",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Syria",
+        "mentions": 1
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:11.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:02:11.000]",
+        "endTimestamp": "[00:58:02.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:58:02.000]",
+        "endTimestamp": "[00:58:49.501]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "_8in-xz4L8o",
+    "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\"",
+    "publishedAt": "2023-12-04T00:00:00Z",
+    "processedAt": "2026-01-13T16:53:15.281Z",
+    "transcriptPath": "data/transcripts/2023-12-04-episode-35-december-4-2023-who-actually-wrote-the-new-testament.txt",
+    "episodeNumber": 35,
+    "tags": [
+      {
+        "tag": "Paul",
+        "mentions": 86
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 41
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 35
+      },
+      {
+        "tag": "Pastoral Epistles",
+        "mentions": 28
+      },
+      {
+        "tag": "Papias of Hierapolis",
+        "mentions": 24
+      },
+      {
+        "tag": "Luke",
+        "mentions": 23
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 21
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 21
+      },
+      {
+        "tag": "Peter",
+        "mentions": 21
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 15
+      },
+      {
+        "tag": "epistles",
+        "mentions": 10
+      },
+      {
+        "tag": "James",
+        "mentions": 9
+      },
+      {
+        "tag": "first timothy",
+        "mentions": 8
+      },
+      {
+        "tag": "second timothy",
+        "mentions": 8
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 7
+      },
+      {
+        "tag": "2nd Timothy",
+        "mentions": 7
+      },
+      {
+        "tag": "Irenaeus",
+        "mentions": 7
+      },
+      {
+        "tag": "Book of Acts",
+        "mentions": 6
+      },
+      {
+        "tag": "Saint Titus",
+        "mentions": 6
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 5
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 4
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 3
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 3
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 3
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 3
+      },
+      {
+        "tag": "Romans",
+        "mentions": 3
+      },
+      {
+        "tag": "2 Corinthians",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "1 Timothy",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Bart Ehrman",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "prophecies",
+        "mentions": 1
+      },
+      {
+        "tag": "Ishmael",
+        "mentions": 1
+      },
+      {
+        "tag": "angel",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:07.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:02:07.000]",
+        "endTimestamp": "[00:54:48.530]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:54:48.530]",
+        "endTimestamp": "[00:55:23.221]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
       }
     ]
   }

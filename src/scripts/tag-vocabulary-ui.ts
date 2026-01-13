@@ -284,9 +284,10 @@ const server = Bun.serve({
           variations?: string | string[];
           category?: string;
           llmVerify?: boolean;
+          caseSensitive?: boolean;
           description?: string;
         };
-        const { canonical, variations, category, llmVerify, description } = body;
+        const { canonical, variations, category, llmVerify, caseSensitive, description } = body;
 
         // Validate required fields
         if (!canonical || typeof canonical !== 'string') {
@@ -340,11 +341,13 @@ const server = Bun.serve({
               category: category as TagCategory,
               llmVerify: true,
               description: description!, // We validated this is present when llmVerify is true
+              caseSensitive,
             }
           : {
               canonical,
               variations: variationsArray,
               category: category as TagCategory,
+              caseSensitive,
             };
 
         await addTagToVocabulary(tagParams);
@@ -500,6 +503,28 @@ const server = Bun.serve({
         console.error('Error deleting tag:', error);
         return Response.json(
           { error: error instanceof Error ? error.message : 'Failed to delete tag' },
+          { status: 500 },
+        );
+      }
+    }
+
+    // API: Reprocess a single tag across all episodes
+    if (url.pathname.startsWith('/api/vocabulary/reprocess-tag/') && req.method === 'POST') {
+      try {
+        const canonical = decodeURIComponent(url.pathname.replace('/api/vocabulary/reprocess-tag/', ''));
+
+        // Start reprocessing for this specific tag (with LLM verification enabled)
+        const jobId = await runMigrationWithTagTracking(false, canonical); // skipLlm = false, track this tag
+
+        return Response.json({
+          success: true,
+          message: `Started reprocessing for tag "${canonical}"`,
+          jobId,
+        });
+      } catch (error) {
+        console.error('Error reprocessing tag:', error);
+        return Response.json(
+          { error: error instanceof Error ? error.message : 'Failed to reprocess tag' },
           { status: 500 },
         );
       }

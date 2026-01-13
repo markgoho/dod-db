@@ -52,61 +52,88 @@ export async function addTagToEpisodes(
 	let totalMentions = 0;
 	let failed = 0;
 
-	for (const video of videos) {
+	for (let i = 0; i < videos.length; i++) {
+		const video = videos[i];
+
 		if (verbose) {
 			console.log(`\n📄 Processing ${video.videoId}: ${video.title}`);
 		} else {
 			process.stdout.write('.');
 		}
 
-		try {
-			// Read transcript
-			const transcriptFile = Bun.file(video.transcriptPath);
-			if (!(await transcriptFile.exists())) {
-				if (verbose) {
-					console.error(`  ⚠ Transcript not found: ${video.transcriptPath}`);
+		let retryCount = 0;
+		const maxRetries = 2;
+
+		while (retryCount <= maxRetries) {
+			try {
+				// Read transcript
+				const transcriptFile = Bun.file(video.transcriptPath);
+				if (!(await transcriptFile.exists())) {
+					if (verbose) {
+						console.error(`  ⚠ Transcript not found: ${video.transcriptPath}`);
+					}
+					failed++;
+					break;
 				}
-				failed++;
-				continue;
-			}
 
-			const transcript = await transcriptFile.text();
+				const transcript = await transcriptFile.text();
 
-			// Extract just this one tag
-			const tagResult = await extractSingleTag(
-				transcript,
-				canonical,
-				enableLlmVerification,
-			);
+				// Extract just this one tag
+				const tagResult = await extractSingleTag(
+					transcript,
+					canonical,
+					enableLlmVerification,
+				);
 
-			// Merge with existing tags
-			if (!video.tags) {
-				video.tags = [];
-			}
-
-			// Remove existing instance of this tag if present (case-insensitive)
-			video.tags = video.tags.filter((t) => t.tag.toLowerCase() !== canonical.toLowerCase());
-
-			// Add new result if matches found
-			if (tagResult) {
-				video.tags.push(tagResult);
-				video.tags.sort((a, b) => b.mentions - a.mentions); // Keep sorted
-				episodesWithTag++;
-				totalMentions += tagResult.mentions;
-
-				if (verbose) {
-					console.log(`  ✓ Found ${tagResult.mentions} mentions`);
+				// Merge with existing tags
+				if (!video.tags) {
+					video.tags = [];
 				}
-			} else if (verbose) {
-				console.log(`  - No matches found`);
-			}
 
-			processed++;
-		} catch (error) {
-			if (verbose) {
-				console.error(`  ⚠ Failed to process:`, error);
+				// Remove existing instance of this tag if present (case-insensitive)
+				video.tags = video.tags.filter((t) => t.tag.toLowerCase() !== canonical.toLowerCase());
+
+				// Add new result if matches found
+				if (tagResult) {
+					video.tags.push(tagResult);
+					video.tags.sort((a, b) => b.mentions - a.mentions); // Keep sorted
+					episodesWithTag++;
+					totalMentions += tagResult.mentions;
+
+					if (verbose) {
+						console.log(`  ✓ Found ${tagResult.mentions} mentions`);
+					}
+				} else if (verbose) {
+					console.log(`  - No matches found`);
+				}
+
+				processed++;
+				break; // Success, exit retry loop
+			} catch (error) {
+				const errorMessage = error instanceof Error ? error.message : String(error);
+
+				// Check for rate limit errors
+				if (errorMessage.includes('429') || errorMessage.includes('RESOURCE_EXHAUSTED')) {
+					retryCount++;
+					if (retryCount <= maxRetries) {
+						console.error(`\n  ⚠️  Rate limit hit on episode ${i + 1}/${videos.length}! Waiting 60s (retry ${retryCount}/${maxRetries})...`);
+						await new Promise(resolve => setTimeout(resolve, 60000));
+						console.log(`  🔄 Retrying episode ${i + 1}...\n`);
+						// Loop will retry
+					} else {
+						console.error(`  ❌ Max retries reached for episode ${i + 1}`);
+						failed++;
+						break;
+					}
+				} else {
+					// Non-rate-limit error
+					if (verbose) {
+						console.error(`  ⚠ Failed to process:`, error);
+					}
+					failed++;
+					break;
+				}
 			}
-			failed++;
 		}
 	}
 

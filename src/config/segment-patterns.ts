@@ -9,6 +9,7 @@ export type SegmentType =
   | 'chapter-and-verse'
   | 'conspiracy-watch'
   | 'could-it-be-satan'
+  | 'ex-eventu'
   | 'getting-angelic'
   | 'getting-demonic'
   | 'intro'
@@ -36,6 +37,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'chapter-and-verse': 'Chapter and Verse',
   'conspiracy-watch': 'Conspiracy Watch',
   'could-it-be-satan': 'Could it be Satan?',
+  'ex-eventu': 'Ex Eventu',
   'getting-angelic': 'Getting Angelic',
   'getting-demonic': 'Getting Demonic',
   'is-it-canon': 'Is it Canon?',
@@ -64,6 +66,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'chapter-and-verse': '#22c55e', // green
   'conspiracy-watch': '#dc2626', // red-600 (darker red)
   'could-it-be-satan': '#7c3aed', // violet-600 (deep purple)
+  'ex-eventu': '#6366f1', // indigo-500 (scholarly/prophecy)
   'getting-angelic': '#fbbf24', // amber-400 (golden/heavenly)
   'getting-demonic': '#b91c1c', // red-700 (dark red)
   'is-it-canon': '#14b8a6', // teal
@@ -148,6 +151,11 @@ export const SEGMENT_PATTERNS: Record<
     /nature of god/i,
     /welcome to.*nature of god/i,
     /segment.*nature of god/i,
+  ],
+  'ex-eventu': [
+    /ex eventu/i,
+    /welcome to.*ex eventu/i,
+    /segment.*ex eventu/i,
   ],
   advertisement: [
     /support the (data over dogma )?podcast/i,

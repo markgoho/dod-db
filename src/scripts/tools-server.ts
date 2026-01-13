@@ -16,6 +16,7 @@ import {
 } from '../pipeline/correction-tracker.js';
 import {
   loadProcessedVideos,
+  saveProcessedVideos,
   updateVideoSegments,
   type ProcessedVideo,
   type EpisodeSegment,
@@ -724,12 +725,34 @@ const server = Bun.serve({
 
         await updateTagInVocabulary(canonical, { status: 'rejected' });
 
+        // Remove tag from all episodes in processed-videos.json
+        console.log(`Removing "${canonical}" from all episodes...`);
+        const videos = await loadProcessedVideos();
+        let removedCount = 0;
+
+        for (const video of videos) {
+          if (video.tags) {
+            const initialLength = video.tags.length;
+            // Remove this tag (case-insensitive)
+            video.tags = video.tags.filter(
+              (t) => t.tag.toLowerCase() !== canonical.toLowerCase()
+            );
+            if (video.tags.length < initialLength) {
+              removedCount++;
+            }
+          }
+        }
+
+        // Save updated videos
+        await saveProcessedVideos(videos);
+        console.log(`✓ Removed "${canonical}" from ${removedCount} episodes`);
+
         // Invalidate stats cache
         statsCache.data = null;
 
         return Response.json({
           success: true,
-          message: `Tag "${canonical}" rejected`,
+          message: `Tag "${canonical}" rejected and removed from ${removedCount} episodes`,
         });
       } catch (error) {
         console.error('Error rejecting tag:', error);
@@ -762,8 +785,8 @@ const server = Bun.serve({
           );
         }
 
-        // Start reprocessing for this tag
-        const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
+        // Start reprocessing for this tag (with LLM verification enabled)
+        const jobId = await runMigrationWithTagTracking(false, canonical); // skipLlm = false, track this tag
 
         return Response.json({
           success: true,
