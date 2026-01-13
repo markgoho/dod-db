@@ -25,7 +25,28 @@ export async function extractTagsDeterministic(
 	options: { enableLlmVerification?: boolean } = {},
 ): Promise<EpisodeTag[]> {
 	const { enableLlmVerification = false } = options;
-	const termMap = getAllSearchableTerms(tagVocabulary);
+
+	// Filter out rejected tags - only match accepted/proposed tags
+	const activeVocabulary = tagVocabulary.filter(t => t.status !== 'rejected');
+
+	// Build term map, but if LLM verification is disabled, skip variations for tags with llmVerify: true
+	// (canonical forms like "King David" are usually unambiguous, but variations like "David" are ambiguous)
+	const termMap = new Map<string, string>();
+	for (const def of activeVocabulary) {
+		// Always include canonical form
+		termMap.set(def.canonical, def.canonical);
+
+		// Include variations only if:
+		// - LLM verification is enabled, OR
+		// - Tag doesn't require verification
+		const tagNeedsVerification = 'llmVerify' in def && def.llmVerify;
+		if (enableLlmVerification || !tagNeedsVerification) {
+			for (const variation of def.variations) {
+				termMap.set(variation, def.canonical);
+			}
+		}
+	}
+
 	const tagCounts = new Map<string, number>(); // canonical -> count
 
 	// Build array of search patterns sorted by length (longest first)
@@ -53,9 +74,9 @@ export async function extractTagsDeterministic(
 		);
 	};
 
-	// Get tag definition for a canonical name
+	// Get tag definition for a canonical name (from active vocabulary only)
 	const getTagDefinition = (canonical: string): TagDefinition | undefined => {
-		return tagVocabulary.find((t) => t.canonical === canonical);
+		return activeVocabulary.find((t) => t.canonical === canonical);
 	};
 
 	// Process patterns from longest to shortest

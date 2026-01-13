@@ -8,6 +8,7 @@ export type TagCategory =
 	| 'character'
 	| 'scholar'
 	| 'place'
+	| 'people'
 	| 'literature'
 	| 'theology'
 	| 'scholarship';
@@ -72,10 +73,10 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Ishmael', variations: ['Ishmaelites'], category: 'character', status: 'accepted' },
 	{ canonical: 'Ezekiel', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'Peter', variations: ['Simon Peter'], category: 'character', status: 'accepted' },
-	{ canonical: 'James', variations: [], category: 'character', status: 'accepted' },
-	{ canonical: 'John', variations: [], category: 'character', status: 'accepted' },
-	{ canonical: 'Luke', variations: [], category: 'character', status: 'accepted' },
-	{ canonical: 'Matthew', variations: [], category: 'character', llmVerify: true, description: 'Matthew the Apostle and Evangelist', status: 'accepted' },
+	{ canonical: 'James', variations: [], category: 'character', llmVerify: true, description: 'James the brother of Jesus, not simply a reference to the epistle of James or a chapter and verse in James', status: 'accepted' },
+	{ canonical: 'John', variations: [], category: 'character', llmVerify: true, description: 'John the Apostle and Evangelist, not simply a reference to the gospel of John or a chapter and verse in John', status: 'accepted' },
+	{ canonical: 'Luke', variations: [], category: 'character', llmVerify: true, description: 'Luke the Apostle and Evangelist, not simply a reference to the gospel of Luke or a chapter and verse in Luke', status: 'accepted' },
+	{ canonical: 'Matthew', variations: [], category: 'character', llmVerify: true, description: 'Matthew the Apostle and Evangelist, not simply a reference to the gospel of matthew or a chapter and verse in Matthew', status: 'accepted' },
 	{ canonical: 'Noah', variations: ["Noah's"], category: 'character', status: 'accepted' },
 	{ canonical: 'Jeremiah', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'Mary Magdalene', variations: ['Mary'], category: 'character', status: 'accepted' },
@@ -193,6 +194,34 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Andrew Whitehead', variations: [], category: 'scholar', status: 'accepted' },
 	{ canonical: 'bible', variations: [], category: 'literature', status: 'rejected' },
 	{ canonical: 'moral', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'Ten Commandments', variations: [], category: 'literature', status: 'accepted' },
+	{ canonical: 'exodus 20', variations: [], category: 'literature', status: 'rejected' },
+	{ canonical: 'exodus 34', variations: [], category: 'literature', status: 'rejected' },
+	{ canonical: 'commandments', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'deuteronomy 5', variations: [], category: 'literature', status: 'rejected' },
+	{ canonical: 'Ritual Decalogue', variations: ["ritual decalogue"], category: 'literature', status: 'accepted' },
+	{ canonical: 'Ethical Decalogue', variations: ["ethical decalogue"], category: 'literature', status: 'accepted' },
+	{ canonical: 'covenant code', variations: [], category: 'literature', status: 'rejected' },
+	{ canonical: 'philo', variations: [], category: 'scholar', status: 'rejected' },
+	{ canonical: 'Talmud', variations: [], category: 'literature', status: 'accepted' },
+	{ canonical: 'Moabites', variations: [], category: 'people', status: 'accepted' },
+	{ canonical: 'Ammonites', variations: [], category: 'people', status: 'accepted' },
+	{ canonical: 'Sarah', variations: [], category: 'people', llmVerify: true, description: 'Abraham\'s wife, mentioned in the Old Testament', status: 'accepted' },
+	{ canonical: 'Gentiles', variations: [], category: 'people', status: 'accepted' },
+	{ canonical: 'Lilith', variations: [], category: 'character', llmVerify: true, description: 'often considered the first wife of Adam', status: 'accepted' },
+	{ canonical: 'Joseph', variations: [], category: 'character', llmVerify: true, description: 'son of Jacob, sold into slavery in the Old Testament', status: 'accepted' },
+	{ canonical: 'Samaritans', variations: [], category: 'people', status: 'accepted' },
+	{ canonical: 'Amorites', variations: [], category: 'people', status: 'accepted' },
+	{ canonical: 'Cain', variations: [], category: 'character', llmVerify: true, description: 'son of Adam, brother of Abel', status: 'accepted' },
+	{ canonical: 'Seth', variations: [], category: 'character', llmVerify: true, description: 'third son of Adam, born after Cain killed Abel', status: 'accepted' },
+	{ canonical: 'Lamech', variations: [], category: 'character', status: 'accepted' },
+	{ canonical: 'Methuselah', variations: [], category: 'character', status: 'accepted' },
+	{ canonical: 'Jared', variations: [], category: 'character', llmVerify: true, description: 'father of Enoch in the line of Adam', status: 'accepted' },
+	{ canonical: 'Athanasius of Alexandria', variations: ['Athanasius'], category: 'scholar', status: 'accepted' },
+	{ canonical: 'Hebrews', variations: ['Jews', 'jews', 'hebrews'], category: 'people', status: 'accepted' },
+	{ canonical: 'rabbis', variations: [], category: 'people', status: 'rejected' },
+	{ canonical: 'jews', variations: [], category: 'people', status: 'rejected' },
+	{ canonical: 'Romans', variations: [], category: 'people', status: 'accepted' },
 ];
 
 /**

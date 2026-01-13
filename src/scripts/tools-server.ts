@@ -623,10 +623,27 @@ const server = Bun.serve({
         );
         const body = (await req.json()) as UpdateTagParams;
 
+        // Check if status is changing to 'accepted' (for auto-reprocessing)
+        const existingTag = findTag(originalCanonical);
+        const wasProposed = existingTag?.status === 'proposed';
+        const isBeingAccepted = body.status === 'accepted';
+
         await updateTagInVocabulary(originalCanonical, body);
 
         // Invalidate stats cache
         statsCache.data = null;
+
+        // If tag was proposed and is now being accepted, reprocess all episodes
+        if (wasProposed && isBeingAccepted) {
+          const canonical = body.canonical || originalCanonical;
+          const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
+
+          return Response.json({
+            success: true,
+            message: `Tag "${canonical}" updated and reprocessing started`,
+            jobId,
+          });
+        }
 
         return Response.json({
           success: true,
@@ -667,9 +684,13 @@ const server = Bun.serve({
         // Invalidate stats cache
         statsCache.data = null;
 
+        // Trigger reprocessing for this tag across all episodes (like manual add does)
+        const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
+
         return Response.json({
           success: true,
-          message: `Tag "${canonical}" approved`,
+          message: `Tag "${canonical}" approved and reprocessing started`,
+          jobId,
         });
       } catch (error) {
         console.error('Error approving tag:', error);
@@ -716,6 +737,45 @@ const server = Bun.serve({
           {
             error:
               error instanceof Error ? error.message : 'Failed to reject tag',
+          },
+          { status: 500 },
+        );
+      }
+    }
+
+    // Tag Vocabulary API: Reprocess a single tag
+    if (
+      url.pathname.startsWith('/api/tag-vocabulary/reprocess-tag/') &&
+      req.method === 'POST'
+    ) {
+      try {
+        const canonical = decodeURIComponent(
+          url.pathname.replace('/api/tag-vocabulary/reprocess-tag/', ''),
+        );
+
+        // Verify tag exists
+        const tag = findTag(canonical);
+        if (!tag) {
+          return Response.json(
+            { error: `Tag "${canonical}" not found` },
+            { status: 404 },
+          );
+        }
+
+        // Start reprocessing for this tag
+        const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
+
+        return Response.json({
+          success: true,
+          message: `Reprocessing started for tag "${canonical}"`,
+          jobId,
+        });
+      } catch (error) {
+        console.error('Error reprocessing tag:', error);
+        return Response.json(
+          {
+            error:
+              error instanceof Error ? error.message : 'Failed to reprocess tag',
           },
           { status: 500 },
         );

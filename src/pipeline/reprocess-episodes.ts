@@ -9,12 +9,15 @@ import {
 	type ProcessedVideo,
 } from '../storage/processed-videos.js';
 import { extractTags } from './extract-tags.js';
+import { tagVocabulary, type TagCategory } from '../config/tag-vocabulary.js';
 
 export interface ReprocessOptions {
 	/** If true, reprocess episodes that already have tags */
 	force?: boolean;
 	/** If true, skip LLM discovery (only use deterministic matching) */
 	skipLlm?: boolean;
+	/** If provided, LLM will only discover tags in these categories */
+	categories?: TagCategory[];
 	/** If true, use LLM to verify ambiguous tag matches (for tags with llmVerify: true) */
 	enableLlmVerification?: boolean;
 	/** If true, show detailed per-episode logs. Default: false (quiet mode) */
@@ -41,9 +44,13 @@ export async function reprocessEpisodes(
 	const {
 		force = false,
 		skipLlm = false,
+		categories,
 		enableLlmVerification = true,
 		verbose = false,
 	} = options;
+
+	// If skipLlm is true, also disable LLM verification (no API calls at all)
+	const finalEnableLlmVerification = skipLlm ? false : enableLlmVerification;
 
 	console.log('Loading processed videos...');
 	const videos = await loadProcessedVideos();
@@ -115,15 +122,39 @@ export async function reprocessEpisodes(
 
 			const tags = await extractTags(transcript, {
 				skipLlm,
-				enableLlmVerification,
+				categories,
+				enableLlmVerification: finalEnableLlmVerification,
 			});
 
 			if (!verbose) {
 				console.log = originalLog; // Restore
 			}
 
-			// Update video
-			video.tags = tags;
+			// Merge tags intelligently:
+			// - If skipLlm is true, preserve existing tags with llmVerify: true (don't throw them away)
+			// - Always replace tags that were re-extracted (to pick up vocabulary changes, remove rejected tags)
+			if (skipLlm && video.tags && video.tags.length > 0) {
+				// Get list of tags we just extracted
+				const extractedTagNames = new Set(tags.map(t => t.tag.toLowerCase()));
+
+				// Find existing tags that require verification and weren't re-extracted
+				const preservedTags = video.tags.filter(existingTag => {
+					const tagLower = existingTag.tag.toLowerCase();
+					// Skip if we just re-extracted this tag (use the new version)
+					if (extractedTagNames.has(tagLower)) return false;
+
+					// Check if this tag requires verification (llmVerify: true)
+					const vocab = tagVocabulary.find(v => v.canonical.toLowerCase() === tagLower);
+					return vocab && 'llmVerify' in vocab && vocab.llmVerify;
+				});
+
+				// Merge: new extracted tags + preserved verified tags
+				// Sort by mentions (descending) to maintain consistent ordering
+				video.tags = [...tags, ...preservedTags].sort((a, b) => b.mentions - a.mentions);
+			} else {
+				// Normal replacement (not using skipLlm, or no existing tags to preserve)
+				video.tags = tags;
+			}
 
 			if (verbose) {
 				console.log(`  ✓ Extracted ${tags.length} tags`);
@@ -137,11 +168,22 @@ export async function reprocessEpisodes(
 			}
 
 			processed++;
+
+			// Add delay to avoid API rate limits (only when using LLM)
+			if (!skipLlm && processed < videos.length) {
+				await new Promise(resolve => setTimeout(resolve, 2000)); // 2 second delay
+			}
 		} catch (error) {
 			if (verbose) {
 				console.error(`  ⚠ Failed to process:`, error);
 			}
 			failed++;
+
+			// Add longer delay after errors (might be rate limit)
+			if (!skipLlm) {
+				console.log('  ⏸️  Waiting 5 seconds before continuing...');
+				await new Promise(resolve => setTimeout(resolve, 5000));
+			}
 		}
 	}
 

@@ -258,11 +258,33 @@
         font-weight: 700;
         color: #1f2937;
         margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .llm-verify-badge {
+        font-size: 11px;
+        padding: 2px 8px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: help;
       }
       .vocab-variations {
         font-size: 13px;
         color: #6b7280;
         margin-bottom: 8px;
+      }
+      .vocab-description {
+        font-size: 13px;
+        color: #4b5563;
+        background: #f9fafb;
+        padding: 8px 12px;
+        border-radius: 6px;
+        margin-bottom: 8px;
+        font-style: italic;
+        border-left: 3px solid #667eea;
       }
       .vocab-category-badge {
         display: inline-block;
@@ -289,6 +311,10 @@
         background: #fef3c7;
         color: #92400e;
       }
+      .vocab-category-badge.people {
+        background: #ccfbf1;
+        color: #115e59;
+      }
       .vocab-category-badge.literature {
         background: #fce7f3;
         color: #9f1239;
@@ -300,6 +326,26 @@
       .vocab-category-badge.scholarship {
         background: #d1fae5;
         color: #065f46;
+      }
+      .vocab-reprocess-btn {
+        font-size: 11px;
+        padding: 4px 10px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        background: white;
+        color: #4b5563;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-weight: 600;
+      }
+      .vocab-reprocess-btn:hover {
+        background: #f3f4f6;
+        border-color: #9ca3af;
+        transform: translateY(-1px);
+      }
+      .vocab-reprocess-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
       }
       .analytics-grid {
         display: grid;
@@ -757,6 +803,9 @@
           <div class="category-tab" onclick="filterVocabulary('place')">
             Places
           </div>
+          <div class="category-tab" onclick="filterVocabulary('people')">
+            People
+          </div>
           <div class="category-tab" onclick="filterVocabulary('literature')">
             Literature
           </div>
@@ -817,6 +866,7 @@
               <option value="character">Character</option>
               <option value="scholar">Scholar</option>
               <option value="place">Place</option>
+              <option value="people">People</option>
               <option value="literature">Literature</option>
               <option value="theology">Theology</option>
               <option value="scholarship">Scholarship</option>
@@ -1098,7 +1148,8 @@
             throw new Error('Failed to load vocabulary');
           }
 
-          allVocabulary = await response.json();
+          // Filter out rejected tags
+          allVocabulary = (await response.json()).filter(tag => tag.status !== 'rejected');
           renderVocabulary(currentCategory);
         } catch (error) {
           console.error('Error loading vocabulary:', error);
@@ -1143,15 +1194,33 @@
           <div class="vocab-grid">
             ${filtered.map(term => `
               <div class="vocab-card">
-                <div class="vocab-canonical">${term.canonical}</div>
+                <div class="vocab-canonical">
+                  ${term.canonical}
+                  ${term.llmVerify ? '<span class="llm-verify-badge" title="Uses LLM verification for context">🤖 LLM</span>' : ''}
+                </div>
                 <div class="vocab-variations">
                   ${term.variations.length > 0
                     ? `Variations: ${term.variations.join(', ')}`
                     : 'No variations'}
                 </div>
-                <span class="vocab-category-badge ${term.category}">
-                  ${formatCategoryName(term.category)}
-                </span>
+                ${term.description ? `
+                  <div class="vocab-description">
+                    <strong>Context:</strong> ${term.description}
+                  </div>
+                ` : ''}
+                <div style="display: flex; align-items: center; gap: 8px; margin-top: 8px;">
+                  <span class="vocab-category-badge ${term.category}">
+                    ${formatCategoryName(term.category)}
+                  </span>
+                  ${term.status === 'accepted' || !term.status ? `
+                    <button
+                      class="vocab-reprocess-btn"
+                      onclick="reprocessSingleTag('${term.canonical.replace(/'/g, "\\'")}')"
+                      title="Reprocess all episodes for this tag${term.llmVerify ? ' (uses LLM verification)' : ''}">
+                      🔄 Reprocess
+                    </button>
+                  ` : ''}
+                </div>
               </div>
             `).join('')}
           </div>
@@ -1399,6 +1468,10 @@
 
       let currentAddTagJobId = null;
       let addTagPollInterval = null;
+      let currentApproveJobId = null;
+      let approveTagPollInterval = null;
+      let currentReprocessJobId = null;
+      let reprocessPollInterval = null;
 
       async function addTag(event) {
         event.preventDefault();
@@ -1526,6 +1599,125 @@
         }
       }
 
+      async function pollApproveTagStatus() {
+        if (!currentApproveJobId) return;
+
+        try {
+          const response = await fetch(`/api/tag-vocabulary/migrate-status/${currentApproveJobId}`);
+          if (!response.ok) {
+            throw new Error('Failed to get reprocessing status');
+          }
+
+          const job = await response.json();
+          const statusBadge = document.getElementById('migration-status-badge');
+          const logsContainer = document.getElementById('migration-logs');
+
+          // Update logs
+          logsContainer.textContent = job.logs || 'Waiting for output...';
+          logsContainer.scrollTop = logsContainer.scrollHeight;
+
+          // Update status
+          if (job.status === 'completed') {
+            statusBadge.innerHTML = '<span class="status-badge completed">✓ Tag Approved & Episodes Reprocessed</span>';
+            clearInterval(approveTagPollInterval);
+            currentApproveJobId = null;
+
+            // Reload all data
+            setTimeout(() => {
+              loadEpisodes();
+              loadVocabulary();
+              loadAnalytics();
+            }, 1000);
+          } else if (job.status === 'failed') {
+            statusBadge.innerHTML = '<span class="status-badge failed">✗ Reprocessing Failed</span>';
+            clearInterval(approveTagPollInterval);
+            currentApproveJobId = null;
+          } else {
+            statusBadge.innerHTML = '<span class="status-badge running">Reprocessing...</span>';
+          }
+        } catch (error) {
+          console.error('Error polling approve reprocessing status:', error);
+          clearInterval(approveTagPollInterval);
+        }
+      }
+
+      // Reprocess a single tag across all episodes
+      async function reprocessSingleTag(canonical) {
+        if (!confirm(`Reprocess all episodes for tag "${canonical}"?\n\nThis will update tag counts across all episodes.`)) {
+          return;
+        }
+
+        try {
+          const response = await fetch(`/api/tag-vocabulary/reprocess-tag/${encodeURIComponent(canonical)}`, {
+            method: 'POST',
+          });
+
+          if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.error || 'Failed to start reprocessing');
+          }
+
+          const data = await response.json();
+
+          // Show status and start polling
+          const statusContainer = document.getElementById('migration-status');
+          const statusBadge = document.getElementById('migration-status-badge');
+          const logsContainer = document.getElementById('migration-logs');
+
+          currentReprocessJobId = data.jobId;
+          statusContainer.classList.add('show');
+          statusBadge.innerHTML = '<span class="status-badge running">Reprocessing "' + canonical + '"...</span>';
+          logsContainer.textContent = 'Starting reprocessing...\n';
+
+          reprocessPollInterval = setInterval(pollReprocessStatus, 1000);
+
+        } catch (error) {
+          alert(`Error starting reprocessing: ${error.message}`);
+        }
+      }
+
+      async function pollReprocessStatus() {
+        if (!currentReprocessJobId) return;
+
+        try {
+          const response = await fetch(`/api/tag-vocabulary/migrate-status/${currentReprocessJobId}`);
+          if (!response.ok) {
+            throw new Error('Failed to get reprocessing status');
+          }
+
+          const job = await response.json();
+          const statusBadge = document.getElementById('migration-status-badge');
+          const logsContainer = document.getElementById('migration-logs');
+
+          // Update logs
+          logsContainer.textContent = job.logs || 'Waiting for output...';
+          logsContainer.scrollTop = logsContainer.scrollHeight;
+
+          // Update status
+          if (job.status === 'completed') {
+            statusBadge.innerHTML = '<span class="status-badge completed">✓ Tag Reprocessed</span>';
+            clearInterval(reprocessPollInterval);
+            currentReprocessJobId = null;
+
+            // Reload all data
+            setTimeout(() => {
+              loadEpisodes();
+              loadVocabulary();
+              loadAnalytics();
+            }, 1000);
+          } else if (job.status === 'failed') {
+            statusBadge.innerHTML = '<span class="status-badge failed">✗ Reprocessing Failed</span>';
+            clearInterval(reprocessPollInterval);
+            currentReprocessJobId = null;
+          } else {
+            statusBadge.innerHTML = '<span class="status-badge running">Reprocessing...</span>';
+          }
+        } catch (error) {
+          console.error('Error polling reprocessing status:', error);
+          clearInterval(reprocessPollInterval);
+        }
+      }
+
       // ============================================
       // PROPOSED TAGS REVIEW
       // ============================================
@@ -1604,6 +1796,7 @@
                   <option value="character" ${tag.category === 'character' ? 'selected' : ''}>Character</option>
                   <option value="scholar" ${tag.category === 'scholar' ? 'selected' : ''}>Scholar</option>
                   <option value="place" ${tag.category === 'place' ? 'selected' : ''}>Place</option>
+                  <option value="people" ${tag.category === 'people' ? 'selected' : ''}>People</option>
                   <option value="literature" ${tag.category === 'literature' ? 'selected' : ''}>Literature</option>
                   <option value="theology" ${tag.category === 'theology' ? 'selected' : ''}>Theology</option>
                   <option value="scholarship" ${tag.category === 'scholarship' ? 'selected' : ''}>Scholarship</option>
@@ -1715,6 +1908,8 @@
             throw new Error(error.error || 'Failed to approve tag');
           }
 
+          const data = await updateResponse.json();
+
           // Remove from proposed list and re-render
           proposedTags.splice(index, 1);
           renderProposedTags();
@@ -1722,6 +1917,20 @@
           // Reload vocabulary to show updated data
           loadVocabulary();
           loadAnalytics();
+
+          // If reprocessing was triggered, show status and poll for updates
+          if (data.jobId) {
+            const statusContainer = document.getElementById('migration-status');
+            const statusBadge = document.getElementById('migration-status-badge');
+            const logsContainer = document.getElementById('migration-logs');
+
+            currentApproveJobId = data.jobId;
+            statusContainer.classList.add('show');
+            statusBadge.innerHTML = '<span class="status-badge running">Reprocessing episodes for "' + newCanonical + '"...</span>';
+            logsContainer.textContent = 'Starting reprocessing...\n';
+
+            approveTagPollInterval = setInterval(pollApproveTagStatus, 1000);
+          }
 
         } catch (error) {
           alert(`Error approving tag: ${error.message}`);

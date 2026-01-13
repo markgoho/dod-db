@@ -18,6 +18,7 @@ export const TagDiscoverySchema = z.object({
 				'character',
 				'scholar',
 				'place',
+				'people',
 				'literature',
 				'theology',
 				'scholarship',
@@ -36,13 +37,22 @@ export type TagDiscovery = z.infer<typeof TagDiscoverySchema>;
  *
  * @param transcript - The corrected transcript to analyze
  * @param excludeTags - List of tags already identified (lowercase) to exclude
+ * @param allowedCategories - If provided, only extract tags in these categories
  * @returns Formatted prompt string for LLM
  */
-export function tagExtractionPrompt(transcript: string, excludeTags: string[]): string {
+export function tagExtractionPrompt(
+	transcript: string,
+	excludeTags: string[],
+	allowedCategories?: string[],
+): string {
 	const exclusionList =
 		excludeTags.length > 0
 			? `\n\n<exclude-tags>\nDO NOT include these tags (already identified):\n${excludeTags.map((t) => `- ${t}`).join('\n')}\n</exclude-tags>`
 			: '';
+
+	const categoryRestriction = allowedCategories
+		? `\n\n<category-restriction>\n⚠️  IMPORTANT: ONLY extract tags in these categories: ${allowedCategories.join(', ')}\nIgnore all other categories completely.\n</category-restriction>`
+		: '';
 
 	return `You are an expert in biblical scholarship and theological terminology. Extract significant tags from this podcast transcript.
 
@@ -54,9 +64,14 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
 <extraction-rules>
 1. Extract tags that appear 3+ times in the transcript (be thorough!)
 2. Focus on high-value content and categorize properly:
-   - character: People/beings (Moses, Nephilim, Watchers, Elohim, Tiamat, Marduk)
+
+   CRITICAL DISTINCTION - character vs people:
+   - character: INDIVIDUAL named persons (Sarah, Moses, David, Paul, Cain, Seth, Joseph, Lilith, Athanasius)
+   - people: COLLECTIVE ethnic/national GROUPS (Israelites, Canaanites, Amorites, Philistines, Moabites, Egyptians, Romans)
+
+   Other categories:
    - scholar: Modern academics (N.T. Wright, James Tabor)
-   - place: Geographic locations (Jerusalem, Babylon, Tigris River)
+   - place: Geographic locations (Jerusalem, Babylon, Tigris River, Canaan)
    - literature: Texts/books (1 Enoch, Book of Watchers, Gospel of Mark)
    - theology: Religious concepts (divine council, atonement, Christology)
    - scholarship: Academic methods (form criticism, textual variants)
@@ -70,7 +85,7 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
 5. Skip host names (Dan McClellan, Dan Beecher)
 6. Count accurately (case-insensitive). AIM FOR 5-15 NEW TAGS per transcript!
 </extraction-rules>
-${exclusionList}
+${exclusionList}${categoryRestriction}
 
 <example-input>
 Transcript discussing the Septuagint translation, mentioning Moses 12 times,
@@ -89,8 +104,23 @@ Torah 8 times, LXX 3 times, and textual criticism 6 times.
 
 Note: LXX was only mentioned 3 times (below threshold) so it's excluded.
 
+<category-distinction-example>
+✓ CORRECT categorization:
+- "Sarah" → character (individual person)
+- "Israelites" → people (ethnic group)
+- "David" → character (individual king)
+- "Philistines" → people (national group)
+- "Joseph" → character (individual patriarch)
+- "Moabites" → people (tribal group)
+
+✗ WRONG categorization:
+- "Sarah" → people (NO! She's an individual)
+- "Cain" → people (NO! He's an individual)
+- "Israelites" → character (NO! They're a group)
+</category-distinction-example>
+
 Transcript to analyze:
 ---
-${transcript.slice(0, 50000)}
+${transcript}
 ---`;
 }

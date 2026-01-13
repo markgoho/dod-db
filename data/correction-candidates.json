@@ -4063,7 +4063,67 @@
       "firstSeen": "2026-01-13T04:33:44.788Z",
       "lastSeen": "2026-01-13T04:33:44.788Z",
       "status": "pending"
+    },
+    "ritual decalogue→Ritual Decalogue": {
+      "original": "ritual decalogue",
+      "corrected": "Ritual Decalogue",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "q5Yw6xPCS6U"
+      ],
+      "examples": [
+        "\"that the ritual decalogue is earlier\"",
+        "\"34, the ritual decalogue, this is\""
+      ],
+      "correctedExamples": [
+        "\"that the Ritual Decalogue is earlier\"",
+        "\"34, the Ritual Decalogue, this is\""
+      ],
+      "timestamps": [
+        "00:08:58.480",
+        "00:11:01.780"
+      ],
+      "episodeIds": [
+        "q5Yw6xPCS6U",
+        "q5Yw6xPCS6U"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T04:52:19.952Z",
+      "lastSeen": "2026-01-13T04:52:19.952Z",
+      "status": "pending"
+    },
+    "man→mine": {
+      "original": "man",
+      "corrected": "mine",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "q5Yw6xPCS6U"
+      ],
+      "examples": [
+        "\"least in man.\"",
+        "\"And man.\""
+      ],
+      "correctedExamples": [
+        "\"least in mine.\"",
+        "\"And mine.\""
+      ],
+      "timestamps": [
+        "00:43:21.010",
+        "00:43:24.440"
+      ],
+      "episodeIds": [
+        "q5Yw6xPCS6U",
+        "q5Yw6xPCS6U"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-13T04:52:19.952Z",
+      "lastSeen": "2026-01-13T04:52:19.952Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-13T04:33:44.788Z"
+  "lastUpdated": "2026-01-13T04:52:19.952Z"
 }

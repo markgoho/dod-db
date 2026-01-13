@@ -84,8 +84,8 @@ export async function addTagToEpisodes(
 				video.tags = [];
 			}
 
-			// Remove existing instance of this tag if present
-			video.tags = video.tags.filter((t) => t.tag !== canonical);
+			// Remove existing instance of this tag if present (case-insensitive)
+			video.tags = video.tags.filter((t) => t.tag.toLowerCase() !== canonical.toLowerCase());
 
 			// Add new result if matches found
 			if (tagResult) {

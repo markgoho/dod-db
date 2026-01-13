@@ -5,6 +5,16 @@
 import { tagVocabulary } from '../config/tag-vocabulary.js';
 import type { TagCategory, TagDefinition, TagStatus } from '../config/tag-vocabulary.js';
 
+/**
+ * Escape special characters for TypeScript string literals.
+ * Handles apostrophes, quotes, and backslashes.
+ */
+function escapeForTsString(str: string): string {
+	return str
+		.replace(/\\/g, '\\\\')  // Escape backslashes first
+		.replace(/'/g, "\\'");    // Escape single quotes
+}
+
 export type AddTagParams =
 	| {
 			canonical: string;
@@ -60,9 +70,9 @@ export async function addTagToVocabulary(params: AddTagParams): Promise<void> {
 		throw new Error('Could not find closing bracket in tag-vocabulary.ts');
 	}
 
-	// Format the new tag entry
+	// Format the new tag entry (with proper escaping)
 	const variationsStr = variations.length > 0
-		? `[${variations.map(v => `'${v}'`).join(', ')}]`
+		? `[${variations.map(v => `'${escapeForTsString(v)}'`).join(', ')}]`
 		: '[]';
 
 	// Build entry based on options (llmVerify, status)
@@ -71,9 +81,9 @@ export async function addTagToVocabulary(params: AddTagParams): Promise<void> {
 
 	let newEntry: string;
 	if ('llmVerify' in params && params.llmVerify) {
-		newEntry = `\t{ canonical: '${canonical}', variations: ${variationsStr}, category: '${category}', llmVerify: true, description: '${params.description}'${statusStr} },\n`;
+		newEntry = `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsStr}, category: '${category}', llmVerify: true, description: '${escapeForTsString(params.description)}'${statusStr} },\n`;
 	} else {
-		newEntry = `\t{ canonical: '${canonical}', variations: ${variationsStr}, category: '${category}'${statusStr} },\n`;
+		newEntry = `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsStr}, category: '${category}'${statusStr} },\n`;
 	}
 
 	// Insert the new entry before the closing bracket
@@ -176,17 +186,17 @@ export async function updateTagInVocabulary(
 	const newLlmVerify = updates.llmVerify ?? ('llmVerify' in existingTag ? existingTag.llmVerify : false);
 	const newDescription = updates.description ?? ('description' in existingTag ? existingTag.description : undefined);
 
-	// Format the new entry
+	// Format the new entry (with proper escaping)
 	const variationsStr = newVariations.length > 0
-		? `[${newVariations.map(v => `'${v}'`).join(', ')}]`
+		? `[${newVariations.map(v => `'${escapeForTsString(v)}'`).join(', ')}]`
 		: '[]';
 	const statusStr = newStatus !== 'accepted' ? `, status: '${newStatus}'` : '';
 
 	let newEntry: string;
 	if (newLlmVerify && newDescription) {
-		newEntry = `\t{ canonical: '${newCanonical}', variations: ${variationsStr}, category: '${newCategory}', llmVerify: true, description: '${newDescription}', status: '${newStatus}' },\n`;
+		newEntry = `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsStr}, category: '${newCategory}', llmVerify: true, description: '${escapeForTsString(newDescription)}', status: '${newStatus}' },\n`;
 	} else {
-		newEntry = `\t{ canonical: '${newCanonical}', variations: ${variationsStr}, category: '${newCategory}', status: '${newStatus}' },\n`;
+		newEntry = `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsStr}, category: '${newCategory}', status: '${newStatus}' },\n`;
 	}
 
 	// Replace the old entry with the new one

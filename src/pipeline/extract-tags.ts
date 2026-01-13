@@ -9,6 +9,7 @@
 import { extractTagsDeterministic } from './extract-tags-deterministic.js';
 import { extractTagsLlm } from './extract-tags-llm.js';
 import type { EpisodeTag } from '../storage/processed-videos.js';
+import type { TagCategory } from '../config/tag-vocabulary.js';
 
 /**
  * Extract tags from corrected transcript using hybrid approach.
@@ -16,12 +17,13 @@ import type { EpisodeTag } from '../storage/processed-videos.js';
  * @param correctedTranscript - The corrected transcript text
  * @param options - Optional configuration
  * @param options.skipLlm - If true, skip LLM discovery (only use deterministic matching)
+ * @param options.categories - If provided, LLM will only discover tags in these categories
  * @param options.enableLlmVerification - If true, use LLM to verify ambiguous tag matches
  * @returns Array of Episode Tag objects with canonical names and mention counts
  */
 export async function extractTags(
 	correctedTranscript: string,
-	options: { skipLlm?: boolean; enableLlmVerification?: boolean } = {},
+	options: { skipLlm?: boolean; categories?: TagCategory[]; enableLlmVerification?: boolean } = {},
 ): Promise<EpisodeTag[]> {
 	console.log('Extracting tags from transcript...');
 
@@ -35,8 +37,9 @@ export async function extractTags(
 	// Tier 2: LLM discovery (new terms with 5+ mentions) - optional
 	let discoveredTags: EpisodeTag[] = [];
 	if (!options.skipLlm) {
-		console.log('  Phase 2: LLM discovery of new tags (5+ mentions)...');
-		discoveredTags = await extractTagsLlm(correctedTranscript, deterministicTags);
+		const categoryInfo = options.categories ? ` [${options.categories.join(', ')} only]` : '';
+		console.log(`  Phase 2: LLM discovery of new tags (5+ mentions)${categoryInfo}...`);
+		discoveredTags = await extractTagsLlm(correctedTranscript, deterministicTags, options.categories);
 		console.log(`  ✓ Discovered ${discoveredTags.length} new potential tags`);
 
 		// Report discovered tags as vocabulary suggestions

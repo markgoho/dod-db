@@ -133,10 +133,11 @@ The transcript processing pipeline is orchestrated via `src/pipeline/youtube-pro
    - Batched API calls (all matches per episode in one call)
    - Example: "David" finds 672 regex matches, LLM verifies 24 are King David, rejects 648 modern references
 
-   **Tag Categories (6 total):**
-   - `character` - All figures (Moses, Jesus, Tiamat, Marduk) - biblical, ancient, mythological
+   **Tag Categories (7 total):**
+   - `character` - Individual people/beings (Moses, Jesus, Tiamat, Marduk, David, Paul) - biblical, ancient, mythological
    - `scholar` - Modern academics (Bart Ehrman, David A. Burnett)
-   - `place` - All geographic locations (Jerusalem, Ugarit, Elephantine, Carthage)
+   - `place` - All geographic locations (Jerusalem, Ugarit, Elephantine, Carthage, Canaan)
+   - `people` - People groups/nations (Israelites, Canaanites, Amorites, Philistines, Moabites)
    - `literature` - Written works (Torah, Septuagint, Gospel of John, Dead Sea Scrolls)
    - `theology` - Doctrines and concepts (resurrection, divine council, YHWH, Asherah)
    - `scholarship` - Academic methods and terms (textual criticism, source criticism, redaction criticism)
@@ -225,7 +226,7 @@ bun run src/scripts/tag-vocabulary-ui.ts
 
 The UI provides:
 - **Episode Viewer**: Browse all episodes with tags, search, filter by tag, sort by various criteria
-- **Vocabulary Browser**: View 100+ vocabulary terms organized by 6 categories
+- **Vocabulary Browser**: View 100+ vocabulary terms organized by 7 categories
 - **Analytics Dashboard**: Top used tags, category distribution, underused vocabulary
 - **Add Tag Form**: Add new tags with optional LLM verification for ambiguous names
   - Canonical name, variations (comma-separated), category (dropdown)

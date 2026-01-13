@@ -13,6 +13,7 @@ export type SegmentType =
   | 'getting-demonic'
   | 'intro'
   | 'is-it-canon'
+  | 'its-the-law'
   | 'know-your-bible'
   | 'main-content'
   | 'mcclellan-911'
@@ -38,6 +39,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'getting-angelic': 'Getting Angelic',
   'getting-demonic': 'Getting Demonic',
   'is-it-canon': 'Is it Canon?',
+  'its-the-law': "It's the Law",
   'know-your-bible': 'Know Your Bible',
   'main-content': 'Main Content',
   'mcclellan-911': 'McClellan 911',
@@ -65,6 +67,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'getting-angelic': '#fbbf24', // amber-400 (golden/heavenly)
   'getting-demonic': '#b91c1c', // red-700 (dark red)
   'is-it-canon': '#14b8a6', // teal
+  'its-the-law': '#059669', // emerald-600 (legal/authoritative green)
   'know-your-bible': '#10b981', // emerald-500
   'main-content': '#64748b', // slate
   'mcclellan-911': '#ec4899', // pink
@@ -109,6 +112,9 @@ export const SEGMENT_PATTERNS: Record<
   ],
   'mcclellan-911': [/mcclellan 911/i, /what is your emergency/i],
   'is-it-canon': [/is it canon\?/i, /welcome to.*is it canon/i],
+  'its-the-law': [/it'?s the law/i, /welcome to.*it'?s the law/i,
+    /We might as well just launch into our first segment\./i,
+  ],
   'conspiracy-watch': [
     /conspiracy watch/i,
     /welcome to.*conspiracy watch/i,
