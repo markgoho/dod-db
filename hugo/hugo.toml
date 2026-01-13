@@ -1,0 +1,26 @@
+baseURL = 'https://dod-db.web.app/'
+languageCode = 'en-us'
+title = 'DoD DB'
+enableRobotsTXT = true
+enableGitInfo = true
+
+[params]
+  description = "DoD DB"
+
+[frontmatter]
+  lastmod = [':git', 'lastmod', ':fileModTime', 'date', 'publishDate']
+
+[build]
+  [build.buildStats]
+    enable = false
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.129.0"
+
+[taxonomies]
+  tag = "tags"
+
+
+
