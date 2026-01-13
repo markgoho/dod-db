@@ -71,7 +71,14 @@ Cost savings:
 - `bun run src/scripts/transcript-qa.ts` - Run Q&A over indexed transcripts
 - `bun run src/scripts/check-new-episodes.ts` - Check for and process new episodes (used by GitHub Actions)
 - `bun run src/scripts/reprocess-tags.ts` - Reprocess tags for all episodes after vocabulary changes
-- `bun run src/scripts/tag-vocabulary-ui.ts` - Start tag vocabulary management Web UI (port 3001)
+
+### Internal Tools
+- `bun run src/scripts/tools-server.ts` (or `npm run tools`) - Start unified tools server at http://localhost:3000
+  - **Landing Page**: Dashboard with links to all tools
+  - **Timestamp Validator**: Load transcripts and audio files to validate timestamp accuracy
+  - **Correction Review**: Review and approve correction candidates across episodes
+  - **Tag Vocabulary Management**: Manage tag vocabulary, view episode analytics, run migrations
+  - **Segment Verification**: View segments, verify boundaries, edit timestamps
 
 ### Firebase Emulators
 - `npm run emulators:start` - Start Firebase Auth & Firestore emulators (ports: Auth 9099, Firestore 8080)
@@ -289,7 +296,7 @@ The UI provides:
 │   ├── scripts/             # CLI entry points
 │   │   ├── process-youtube.ts # Run full YouTube processing pipeline
 │   │   ├── reprocess-tags.ts # Reprocess tags for all episodes
-│   │   ├── tag-vocabulary-ui.ts # Web UI server for tag management (port 3001)
+│   │   ├── tools-server.ts # Unified web tools server (port 3000)
 │   │   └── transcript-qa.ts     # Run Q&A function
 │   ├── ai.ts                # Google AI client configuration
 │   └── index.ts             # Main barrel export
@@ -297,9 +304,11 @@ The UI provides:
 │   ├── transcripts/         # Processed episode transcripts
 │   └── processed-videos.json # Episode tracking with tags and metadata
 ├── tools/                    # Internal web tools
-│   ├── index.html           # Tools dashboard
+│   ├── index.html           # Tools dashboard (landing page)
+│   ├── validate-timestamps.html # Timestamp validation tool
+│   ├── review-corrections.html # Correction review tool
 │   ├── tag-vocabulary.html  # Tag vocabulary management UI
-│   └── review-corrections.html # Correction review tool
+│   └── segment-verification.html # Segment verification tool
 ├── functions/                # Firebase Cloud Functions
 └── firebase.json             # Firebase project configuration
 ```

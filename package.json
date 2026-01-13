@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "emulators:start": "firebase emulators:start --only auth,firestore"
+    "emulators:start": "firebase emulators:start --only auth,firestore",
+    "tools": "bun run src/scripts/tools-server.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",

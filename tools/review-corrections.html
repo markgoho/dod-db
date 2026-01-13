@@ -373,7 +373,7 @@
           document.getElementById('audioStatus').textContent = 'Loading audio for episode ' + episodeId + '...';
 
           try {
-            const response = await fetch('/audio/' + episodeId);
+            const response = await fetch('/api/audio/' + episodeId);
             if (response.ok) {
               const blob = await response.blob();
               const url = URL.createObjectURL(blob);
@@ -424,7 +424,7 @@
         document.getElementById('audioStatus').textContent = 'Loading audio for episode ' + firstEpisodeId + '...';
 
         try {
-          const response = await fetch('/audio/' + firstEpisodeId);
+          const response = await fetch('/api/audio/' + firstEpisodeId);
           if (response.ok) {
             const blob = await response.blob();
             const url = URL.createObjectURL(blob);
@@ -589,7 +589,7 @@
         if (!confirm('Add [[\"' + original + '\"], \"' + corrected + '\"],\nto corrections.ts?')) return;
 
         try {
-          const response = await fetch('/api/approve/' + encodeURIComponent(key) +
+          const response = await fetch('/api/review-corrections/approve/' + encodeURIComponent(key) +
             '?original=' + encodeURIComponent(original) +
             '&corrected=' + encodeURIComponent(corrected), {
             method: 'POST'
@@ -608,7 +608,7 @@
 
       async function reject(key) {
         try {
-          const response = await fetch('/api/reject/' + encodeURIComponent(key), {
+          const response = await fetch('/api/review-corrections/reject/' + encodeURIComponent(key), {
             method: 'POST'
           });
 

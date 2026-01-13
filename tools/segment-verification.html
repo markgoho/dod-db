@@ -455,17 +455,17 @@
       }
 
       async function loadMetadata() {
-        const res = await fetch("/api/segment-metadata");
+        const res = await fetch("/api/segment-verification/segment-metadata");
         metadata = await res.json();
       }
 
       async function loadEpisodes() {
-        const res = await fetch("/api/episodes");
+        const res = await fetch("/api/segment-verification/episodes");
         episodes = await res.json();
       }
 
       async function loadStats() {
-        const res = await fetch("/api/stats");
+        const res = await fetch("/api/segment-verification/stats");
         const stats = await res.json();
         document.getElementById("total-episodes").textContent =
           stats.totalEpisodes;
@@ -642,7 +642,7 @@
       }
 
       async function loadTranscript() {
-        const res = await fetch(`/api/transcript/${selectedEpisode.videoId}`);
+        const res = await fetch(`/api/segment-verification/transcript/${selectedEpisode.videoId}`);
         const data = await res.json();
 
         if (data.error) {
@@ -966,7 +966,7 @@
         if (!pattern) return; // User cancelled
 
         try {
-          const res = await fetch('/api/patterns/add', {
+          const res = await fetch('/api/segment-verification/patterns/add', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -990,7 +990,7 @@
         if (!selectedEpisode) return;
 
         try {
-          const res = await fetch(`/api/segments/${selectedEpisode.videoId}`, {
+          const res = await fetch(`/api/segment-verification/segments/${selectedEpisode.videoId}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ segments: selectedEpisode.segments }),

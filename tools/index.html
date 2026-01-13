@@ -154,7 +154,7 @@
       </header>
 
       <div class="tools-grid">
-        <a href="validate-timestamps.html" class="tool-card">
+        <a href="/validate-timestamps" class="tool-card">
           <span class="tool-icon">🎙️</span>
           <div class="tool-name">Timestamp Validator</div>
           <div class="tool-description">
@@ -167,45 +167,54 @@
           </div>
         </a>
 
-        <a href="review-corrections.html" class="tool-card">
+        <a href="/review-corrections" class="tool-card">
           <span class="tool-icon">📚</span>
           <div class="tool-name">Correction Review</div>
           <div class="tool-description">
             Review and approve correction candidates identified across multiple
             episodes. Approved corrections are added to deterministic list.
           </div>
-          <span class="tool-status status-requires-server">Requires Server</span>
+          <span class="tool-status status-active">Ready</span>
           <div>
             <span class="category category-review">Review</span>
           </div>
         </a>
 
-        <a href="tag-vocabulary.html" class="tool-card">
+        <a href="/tag-vocabulary" class="tool-card">
           <span class="tool-icon">🏷️</span>
           <div class="tool-name">Tag Vocabulary Management</div>
           <div class="tool-description">
             Manage tag vocabulary and view episode analytics. Browse 100+ vocabulary terms,
             analyze tag usage statistics, and run migrations to reprocess episodes.
           </div>
-          <span class="tool-status status-requires-server">Requires Server</span>
+          <span class="tool-status status-active">Ready</span>
           <div>
             <span class="category category-analysis">Management</span>
+          </div>
+        </a>
+
+        <a href="/segment-verification" class="tool-card">
+          <span class="tool-icon">🎬</span>
+          <div class="tool-name">Segment Verification</div>
+          <div class="tool-description">
+            View segments, verify boundaries, and edit timestamps for episode segments.
+            Listen to audio and learn patterns for automatic detection.
+          </div>
+          <span class="tool-status status-active">Ready</span>
+          <div>
+            <span class="category category-validation">Verification</span>
           </div>
         </a>
       </div>
 
       <div class="server-info">
-        <h3>🚀 Starting Tool Servers</h3>
+        <h3>🚀 Starting the Tools Server</h3>
         <p style="color: #6b7280; margin-bottom: 8px;">
-          Some tools require a local server. Start them with:
+          Start the unified tools server with:
         </p>
-        <code>bun run src/scripts/review-corrections-ui.ts</code>
+        <code>bun run src/scripts/tools-server.ts</code>
         <p style="color: #6b7280; margin-top: 8px; font-size: 14px;">
-          → Correction Review: <strong>http://localhost:3000</strong>
-        </p>
-        <code style="margin-top: 16px;">bun run src/scripts/tag-vocabulary-ui.ts</code>
-        <p style="color: #6b7280; margin-top: 8px; font-size: 14px;">
-          → Tag Vocabulary Management: <strong>http://localhost:3001</strong>
+          → All tools available at: <strong>http://localhost:3000</strong>
         </p>
       </div>
 

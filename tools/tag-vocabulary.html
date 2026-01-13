@@ -930,7 +930,7 @@
       // Load and display episodes
       async function loadEpisodes() {
         try {
-          const response = await fetch('/api/episodes');
+          const response = await fetch('/api/tag-vocabulary/episodes');
           if (!response.ok) {
             throw new Error('Failed to load episodes');
           }
@@ -1050,7 +1050,7 @@
 
       async function loadVocabulary() {
         try {
-          const response = await fetch('/api/vocabulary');
+          const response = await fetch('/api/tag-vocabulary/vocabulary');
           if (!response.ok) {
             throw new Error('Failed to load vocabulary');
           }
@@ -1131,7 +1131,7 @@
       // Load and display analytics
       async function loadAnalytics() {
         try {
-          const response = await fetch('/api/tag-stats');
+          const response = await fetch('/api/tag-vocabulary/tag-stats');
           if (!response.ok) {
             throw new Error('Failed to load analytics');
           }
@@ -1247,7 +1247,7 @@
 
         try {
           // Start migration
-          const response = await fetch('/api/migrate', { method: 'POST' });
+          const response = await fetch('/api/tag-vocabulary/migrate', { method: 'POST' });
           if (!response.ok) {
             throw new Error('Failed to start migration');
           }
@@ -1273,7 +1273,7 @@
         if (!currentMigrationJobId) return;
 
         try {
-          const response = await fetch(`/api/migrate-status/${currentMigrationJobId}`);
+          const response = await fetch(`/api/tag-vocabulary/migrate-status/${currentMigrationJobId}`);
           if (!response.ok) {
             throw new Error('Failed to get migration status');
           }
@@ -1437,7 +1437,7 @@
         if (!currentAddTagJobId) return;
 
         try {
-          const response = await fetch(`/api/migrate-status/${currentAddTagJobId}`);
+          const response = await fetch(`/api/tag-vocabulary/migrate-status/${currentAddTagJobId}`);
           if (!response.ok) {
             throw new Error('Failed to get reprocessing status');
           }
@@ -1492,7 +1492,7 @@
       // Load proposed tags from vocabulary
       async function loadProposedTags() {
         try {
-          const response = await fetch('/api/vocabulary');
+          const response = await fetch('/api/tag-vocabulary/vocabulary');
           if (!response.ok) {
             throw new Error('Failed to load vocabulary');
           }
@@ -1607,7 +1607,7 @@
 
         try {
           // First update the tag with any changes
-          const updateResponse = await fetch(`/api/vocabulary/update/${encodeURIComponent(originalCanonical)}`, {
+          const updateResponse = await fetch(`/api/tag-vocabulary/vocabulary/update/${encodeURIComponent(originalCanonical)}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -1649,7 +1649,7 @@
         card.classList.add('saving');
 
         try {
-          const response = await fetch(`/api/vocabulary/reject/${encodeURIComponent(originalCanonical)}`, {
+          const response = await fetch(`/api/tag-vocabulary/vocabulary/reject/${encodeURIComponent(originalCanonical)}`, {
             method: 'POST',
           });
 
