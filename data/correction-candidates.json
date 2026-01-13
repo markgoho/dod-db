@@ -481,13 +481,15 @@
       "original": "century ce",
       "corrected": "century CE",
       "category": "capitalization",
-      "totalOccurrences": 12,
-      "episodeCount": 4,
+      "totalOccurrences": 16,
+      "episodeCount": 6,
       "episodes": [
         "_zou11pMRag",
         "gW6w-AOiKNM",
         "5bA0OigwXR4",
-        "_8in-xz4L8o"
+        "_8in-xz4L8o",
+        "K0kobJi-sLI",
+        "OsQMmt2QnPU"
       ],
       "examples": [
         "\"the second century ce, and Paul\"",
@@ -511,7 +513,7 @@
       ],
       "confidence": 85,
       "firstSeen": "2026-01-11T17:59:30.300Z",
-      "lastSeen": "2026-01-13T16:53:14.949Z",
+      "lastSeen": "2026-01-13T22:24:48.362Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:05:33.332Z",
       "reviewedBy": "UI Review"
@@ -2139,31 +2141,38 @@
       "original": "won't",
       "corrected": "wont",
       "category": "spelling",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
+      "totalOccurrences": 4,
+      "episodeCount": 2,
       "episodes": [
-        "naI65ELNhRw"
+        "naI65ELNhRw",
+        "nu6jx8m14tI"
       ],
       "examples": [
         "\"is our won't.\"",
-        "\"is our won't.\""
+        "\"is our won't.\"",
+        "\"is my won't.\""
       ],
       "correctedExamples": [
         "\"is our wont.\"",
-        "\"is our wont.\""
+        "\"is our wont.\"",
+        "\"is my wont.\""
       ],
       "timestamps": [
         "00:01:12.150",
-        "00:01:13.350"
+        "00:01:13.350",
+        "00:29:56.110"
       ],
       "episodeIds": [
         "naI65ELNhRw",
-        "naI65ELNhRw"
+        "naI65ELNhRw",
+        "nu6jx8m14tI"
       ],
-      "confidence": 5,
+      "confidence": 35,
       "firstSeen": "2026-01-11T20:29:33.102Z",
-      "lastSeen": "2026-01-11T20:29:33.102Z",
-      "status": "pending"
+      "lastSeen": "2026-01-13T22:18:59.168Z",
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T22:22:26.131Z",
+      "reviewedBy": "UI Review"
     },
     "Coverdell→Coverdale": {
       "original": "Coverdell",
@@ -4449,7 +4458,9 @@
       "confidence": 25,
       "firstSeen": "2026-01-13T20:41:05.980Z",
       "lastSeen": "2026-01-13T20:41:05.980Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T22:22:31.365Z",
+      "reviewedBy": "UI Review"
     },
     "Zechariah→Zecharia": {
       "original": "Zechariah",
@@ -4633,7 +4644,9 @@
       "confidence": 25,
       "firstSeen": "2026-01-13T21:17:09.137Z",
       "lastSeen": "2026-01-13T21:17:09.137Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T22:22:36.414Z",
+      "reviewedBy": "UI Review"
     },
     "anchor Bible→Anchor Bible": {
       "original": "anchor Bible",
@@ -4724,7 +4737,253 @@
       "firstSeen": "2026-01-13T21:42:31.784Z",
       "lastSeen": "2026-01-13T21:42:31.784Z",
       "status": "pending"
+    },
+    "We'll→We'll—": {
+      "original": "We'll",
+      "corrected": "We'll—",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "nu6jx8m14tI"
+      ],
+      "examples": [
+        "\"We'll.\"",
+        "\"We'll.\""
+      ],
+      "correctedExamples": [
+        "\"We'll—\"",
+        "\"We'll—\""
+      ],
+      "timestamps": [
+        "00:06:53.690",
+        "00:06:53.930"
+      ],
+      "episodeIds": [
+        "nu6jx8m14tI",
+        "nu6jx8m14tI"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T22:18:59.168Z",
+      "lastSeen": "2026-01-13T22:18:59.168Z",
+      "status": "pending"
+    },
+    "first Timothy→First Timothy": {
+      "original": "first Timothy",
+      "corrected": "First Timothy",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "nu6jx8m14tI"
+      ],
+      "examples": [
+        "\"start with first Timothy, chapter two.\"",
+        "\"got in first Timothy two.\""
+      ],
+      "correctedExamples": [
+        "\"start with First Timothy, chapter two.\"",
+        "\"got in First Timothy 2.\""
+      ],
+      "timestamps": [
+        "00:33:43.840",
+        "00:45:50.120"
+      ],
+      "episodeIds": [
+        "nu6jx8m14tI",
+        "nu6jx8m14tI"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T22:18:59.168Z",
+      "lastSeen": "2026-01-13T22:18:59.168Z",
+      "status": "pending"
+    },
+    "parody→parity": {
+      "original": "parody",
+      "corrected": "parity",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "nu6jx8m14tI"
+      ],
+      "examples": [
+        "\"not a parody.\"",
+        "\"be some parody.\""
+      ],
+      "correctedExamples": [
+        "\"not a parity.\"",
+        "\"be some parity.\""
+      ],
+      "timestamps": [
+        "00:40:46.380",
+        "00:40:49.180"
+      ],
+      "episodeIds": [
+        "nu6jx8m14tI",
+        "nu6jx8m14tI"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T22:18:59.168Z",
+      "lastSeen": "2026-01-13T22:18:59.168Z",
+      "status": "pending"
+    },
+    "epsilon→upsilon": {
+      "original": "epsilon",
+      "corrected": "upsilon",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "K0kobJi-sLI"
+      ],
+      "examples": [
+        "\"sigma, omicron, epsilon, sigma.\"",
+        "\"and an epsilon.\""
+      ],
+      "correctedExamples": [
+        "\"sigma, omicron, upsilon, sigma.\"",
+        "\"and an upsilon.\""
+      ],
+      "timestamps": [
+        "00:15:14.030",
+        "00:15:45.269"
+      ],
+      "episodeIds": [
+        "K0kobJi-sLI",
+        "K0kobJi-sLI"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T22:22:07.855Z",
+      "lastSeen": "2026-01-13T22:22:07.855Z",
+      "status": "pending"
+    },
+    "Monogones→Monogenes": {
+      "original": "Monogones",
+      "corrected": "Monogenes",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "K0kobJi-sLI"
+      ],
+      "examples": [
+        "\"Now, Monogones Theos would\"",
+        "\"John uses monogones several times\"",
+        "\"goes, well, Monogones Theos is,\""
+      ],
+      "correctedExamples": [
+        "\"Now, Monogenes Theos would\"",
+        "\"John uses monogenes several times\"",
+        "\"goes, well, Monogenes Theos is,\""
+      ],
+      "timestamps": [
+        "00:16:01.030",
+        "00:16:08.390",
+        "00:16:49.780"
+      ],
+      "episodeIds": [
+        "K0kobJi-sLI",
+        "K0kobJi-sLI",
+        "K0kobJi-sLI"
+      ],
+      "confidence": 25,
+      "firstSeen": "2026-01-13T22:22:07.855Z",
+      "lastSeen": "2026-01-13T22:22:07.855Z",
+      "status": "approved",
+      "reviewedAt": "2026-01-13T22:23:02.690Z",
+      "reviewedBy": "UI Review"
+    },
+    "Huos→huios": {
+      "original": "Huos",
+      "corrected": "huios",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "K0kobJi-sLI"
+      ],
+      "examples": [
+        "\"then the Huos reading is\"",
+        "\"think the Huos reading obviously\""
+      ],
+      "correctedExamples": [
+        "\"then the huios reading is\"",
+        "\"think the huios reading obviously\""
+      ],
+      "timestamps": [
+        "00:19:39.180",
+        "00:19:45.340"
+      ],
+      "episodeIds": [
+        "K0kobJi-sLI",
+        "K0kobJi-sLI"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-13T22:22:07.855Z",
+      "lastSeen": "2026-01-13T22:22:07.855Z",
+      "status": "pending"
+    },
+    "He's→He's—": {
+      "original": "He's",
+      "corrected": "He's—",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "K0kobJi-sLI"
+      ],
+      "examples": [
+        "\"He's.\"",
+        "\"He's.\""
+      ],
+      "correctedExamples": [
+        "\"He's—\"",
+        "\"He's—\""
+      ],
+      "timestamps": [
+        "00:34:08.610",
+        "00:34:09.050"
+      ],
+      "episodeIds": [
+        "K0kobJi-sLI",
+        "K0kobJi-sLI"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-13T22:22:07.855Z",
+      "lastSeen": "2026-01-13T22:22:07.855Z",
+      "status": "pending"
+    },
+    "second temple→Second Temple": {
+      "original": "second temple",
+      "corrected": "Second Temple",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "OsQMmt2QnPU"
+      ],
+      "examples": [
+        "\"have the second temple.\"",
+        "\"so the second temple, also referred\""
+      ],
+      "correctedExamples": [
+        "\"have the Second Temple.\"",
+        "\"so the Second Temple, also referred\""
+      ],
+      "timestamps": [
+        "00:13:58.230",
+        "00:14:30.940"
+      ],
+      "episodeIds": [
+        "OsQMmt2QnPU",
+        "OsQMmt2QnPU"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T22:24:48.362Z",
+      "lastSeen": "2026-01-13T22:24:48.362Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-13T21:42:31.784Z"
+  "lastUpdated": "2026-01-13T22:24:48.362Z"
 }

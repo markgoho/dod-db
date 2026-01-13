@@ -17,6 +17,7 @@ export const TAG_CATEGORIES = [
 	'theology',
 	'scholarship',
 	'religion',
+	'event',
 ] as const;
 
 /**
@@ -123,7 +124,6 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Genesis', variations: [], category: 'literature', status: 'accepted' },
 	{ canonical: 'Deuteronomy', variations: [], category: 'literature', status: 'accepted' },
 	{ canonical: 'Book of Job', variations: ['Job'], category: 'literature', llmVerify: true, description: 'The book of Job in the old testament, not merely a reference to the character Job', status: 'accepted', caseSensitive: true },
-	{ canonical: 'Isaiah', variations: [], category: 'literature', status: 'accepted' },
 	{ canonical: 'Ezekiel', variations: [], category: 'literature', status: 'accepted' },
 	{ canonical: 'Judges', variations: [], category: 'literature', status: 'accepted' },
 	{ canonical: 'Dead Sea Scrolls', variations: [], category: 'literature', status: 'accepted' },
@@ -158,10 +158,10 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Sheol', variations: [], category: 'place', status: 'accepted' },
 	{ canonical: 'Satan', variations: ['the devil', 'devil'], category: 'theology', status: 'accepted' },
 	{ canonical: 'angel', variations: ['angels'], category: 'theology', status: 'accepted' },
-	{ canonical: 'monotheism', variations: ['monotheistic'], category: 'theology', status: 'accepted' },
+	{ canonical: 'Monotheism', variations: ['monotheistic'], category: 'theology', status: 'accepted' },
 	{ canonical: 'gods', variations: ['goddesses'], category: 'theology', status: 'accepted' },
 	{ canonical: 'theology', variations: ['theological'], category: 'theology', status: 'accepted' },
-	{ canonical: 'univocality', variations: ['univocal'], category: 'scholarship', status: 'accepted' },
+	{ canonical: 'Univocality', variations: ['univocal', 'non-univocal', 'non-univocality'], category: 'scholarship', status: 'accepted' },
 
 	// SCHOLARLY TERMS (15 terms)
 	{ canonical: 'textual criticism', variations: [], category: 'scholarship', status: 'accepted' },
@@ -296,6 +296,27 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'elohim', variations: [], category: 'theology', status: 'rejected' },
 	{ canonical: 'Italy', variations: [], category: 'place', status: 'accepted' },
 	{ canonical: 'Seattle', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'Ham', variations: [], category: 'character', llmVerify: true, description: 'son of Noah in the Old Testament', status: 'accepted' },
+	{ canonical: 'Canaan', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'Japheth', variations: [], category: 'character', status: 'accepted' },
+	{ canonical: 'Shem', variations: [], category: 'character', status: 'accepted' },
+	{ canonical: 'Canaanites', variations: [], category: 'people', status: 'accepted' },
+	{ canonical: 'Book of Proverbs', variations: ['proverbs'], category: 'literature', llmVerify: true, description: 'specifically referencing the book of the old testament thought to be written by Solomon', status: 'accepted' },
+	{ canonical: '1 Peter', variations: ['first peter', '1st peter'], category: 'literature', llmVerify: true, description: 'reference to the new testament book 1st Peter', status: 'accepted' },
+	{ canonical: 'Africans', variations: [], category: 'people', status: 'accepted' },
+	{ canonical: 'salt lake city', variations: [], category: 'place', status: 'rejected' },
+	{ canonical: 'Africa', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'divine', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'theos', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'son of god', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'Council of Nicaea', variations: [], category: 'event', status: 'accepted' },
+	{ canonical: 'Holy Spirit', variations: ['Holy Ghost'], category: 'character', status: 'accepted' },
+	{ canonical: 'logos', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'ntsv', variations: [], category: 'literature', status: 'rejected' },
+	{ canonical: 'Book of Isaiah', variations: ['isaiah', 'first isaiah', 'deutero-isaiah', 'third isaiah'], category: 'literature', llmVerify: true, description: 'the book of Isaiah, references to chapters and verses, or general discussion about the written text', status: 'accepted' },
+  { canonical: 'Isaiah', variations: [], category: 'character', llmVerify: true, description: 'the prophet Isaiah from the book of Isaiah, not references to the text of the book', status: 'accepted' },
+	{ canonical: 'Bernhard Duhm', variations: [], category: 'person', status: 'accepted' },
+	{ canonical: 'Josephus', variations: [], category: 'person', status: 'accepted' },
 ];
 
 /**

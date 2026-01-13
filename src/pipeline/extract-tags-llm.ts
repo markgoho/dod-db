@@ -114,7 +114,7 @@ export async function extractTagsLlm(
 				console.log(`  • ${tag.tag} (${tag.mentions} mentions) - needs category`);
 			}
 			console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-			console.log('Categories: character, scholar, place, literature, theology, scholarship');
+			console.log('Categories: character, person, place, people, literature, theology, scholarship, religion, event');
 			console.log('Or suggest a NEW category if none fit!\n');
 		}
 

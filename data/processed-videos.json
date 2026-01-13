@@ -68,6 +68,10 @@
         "mentions": 3
       },
       {
+        "tag": "Book of Isaiah",
+        "mentions": 3
+      },
+      {
         "tag": "Cherubim",
         "mentions": 3
       },
@@ -225,7 +229,7 @@
         "mentions": 11
       },
       {
-        "tag": "Isaiah",
+        "tag": "Book of Isaiah",
         "mentions": 9
       },
       {
@@ -310,6 +314,10 @@
       },
       {
         "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Isaiah",
         "mentions": 2
       },
       {
@@ -661,6 +669,10 @@
         "mentions": 2
       },
       {
+        "tag": "Council of Nicaea",
+        "mentions": 2
+      },
+      {
         "tag": "Hebrews",
         "mentions": 2
       },
@@ -737,7 +749,7 @@
         "mentions": 1
       },
       {
-        "tag": "univocality",
+        "tag": "Univocality",
         "mentions": 1
       },
       {
@@ -789,6 +801,10 @@
       {
         "tag": "biblical canon",
         "mentions": 9
+      },
+      {
+        "tag": "Council of Nicaea",
+        "mentions": 4
       },
       {
         "tag": "New Testament",
@@ -895,7 +911,7 @@
         "mentions": 38
       },
       {
-        "tag": "univocality",
+        "tag": "Univocality",
         "mentions": 27
       },
       {
@@ -945,6 +961,10 @@
       {
         "tag": "Romans",
         "mentions": 4
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 3
       },
       {
         "tag": "Genesis",
@@ -1146,10 +1166,6 @@
         "mentions": 8
       },
       {
-        "tag": "Isaiah",
-        "mentions": 7
-      },
-      {
         "tag": "Masoretic Text",
         "mentions": 5
       },
@@ -1166,12 +1182,20 @@
         "mentions": 4
       },
       {
+        "tag": "Isaiah",
+        "mentions": 4
+      },
+      {
         "tag": "King James Version",
         "mentions": 4
       },
       {
         "tag": "Ugarit",
         "mentions": 4
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 3
       },
       {
         "tag": "Dead Sea",
@@ -1342,6 +1366,10 @@
         "mentions": 2
       },
       {
+        "tag": "Africa",
+        "mentions": 1
+      },
+      {
         "tag": "Hell",
         "mentions": 1
       },
@@ -1449,6 +1477,10 @@
       {
         "tag": "Psalm",
         "mentions": 3
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 2
       },
       {
         "tag": "Christian Nationalism",
@@ -1655,6 +1687,10 @@
         "mentions": 1
       },
       {
+        "tag": "Josephus",
+        "mentions": 1
+      },
+      {
         "tag": "King David",
         "mentions": 1
       },
@@ -1667,7 +1703,7 @@
         "mentions": 1
       },
       {
-        "tag": "univocality",
+        "tag": "Univocality",
         "mentions": 1
       }
     ],
@@ -1799,6 +1835,10 @@
       {
         "tag": "Torah",
         "mentions": 3
+      },
+      {
+        "tag": "Africa",
+        "mentions": 2
       },
       {
         "tag": "Babylon",
@@ -1967,6 +2007,10 @@
       },
       {
         "tag": "Joseph",
+        "mentions": 7
+      },
+      {
+        "tag": "Josephus",
         "mentions": 7
       },
       {
@@ -2155,6 +2199,10 @@
         "mentions": 1
       },
       {
+        "tag": "Ham",
+        "mentions": 1
+      },
+      {
         "tag": "Hebrew Bible",
         "mentions": 1
       },
@@ -2265,6 +2313,10 @@
       {
         "tag": "Sarah",
         "mentions": 4
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 3
       },
       {
         "tag": "etiology",
@@ -2431,7 +2483,7 @@
         "mentions": 5
       },
       {
-        "tag": "univocality",
+        "tag": "Univocality",
         "mentions": 5
       },
       {
@@ -2464,6 +2516,10 @@
       },
       {
         "tag": "archaeology",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Isaiah",
         "mentions": 2
       },
       {
@@ -2520,6 +2576,10 @@
       },
       {
         "tag": "Gospel of Mark",
+        "mentions": 1
+      },
+      {
+        "tag": "Josephus",
         "mentions": 1
       },
       {
@@ -2811,6 +2871,14 @@
         "mentions": 1
       },
       {
+        "tag": "Book of Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Council of Nicaea",
+        "mentions": 1
+      },
+      {
         "tag": "Hebrews",
         "mentions": 1
       },
@@ -2980,6 +3048,10 @@
       },
       {
         "tag": "Adam",
+        "mentions": 3
+      },
+      {
+        "tag": "Book of Isaiah",
         "mentions": 3
       },
       {
@@ -3231,6 +3303,10 @@
         "mentions": 3
       },
       {
+        "tag": "Book of Isaiah",
+        "mentions": 2
+      },
+      {
         "tag": "Egypt",
         "mentions": 2
       },
@@ -3429,6 +3505,10 @@
       },
       {
         "tag": "Book of Daniel",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Isaiah",
         "mentions": 2
       },
       {
@@ -3651,6 +3731,10 @@
         "mentions": 2
       },
       {
+        "tag": "Africa",
+        "mentions": 1
+      },
+      {
         "tag": "Ammonites",
         "mentions": 1
       },
@@ -3774,11 +3858,11 @@
         "mentions": 3
       },
       {
-        "tag": "El",
+        "tag": "Book of Isaiah",
         "mentions": 2
       },
       {
-        "tag": "Isaiah",
+        "tag": "El",
         "mentions": 2
       },
       {
@@ -3935,6 +4019,10 @@
         "mentions": 2
       },
       {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
         "tag": "Isaac",
         "mentions": 1
       },
@@ -3943,7 +4031,7 @@
         "mentions": 1
       },
       {
-        "tag": "univocality",
+        "tag": "Univocality",
         "mentions": 1
       }
     ],
@@ -4105,7 +4193,7 @@
         "mentions": 5
       },
       {
-        "tag": "Isaiah",
+        "tag": "Book of Isaiah",
         "mentions": 4
       },
       {
@@ -4118,6 +4206,10 @@
       },
       {
         "tag": "Gospel of Mark",
+        "mentions": 3
+      },
+      {
+        "tag": "Isaiah",
         "mentions": 3
       },
       {
@@ -4446,6 +4538,10 @@
         "mentions": 1
       },
       {
+        "tag": "Canaan",
+        "mentions": 1
+      },
+      {
         "tag": "child sacrifice",
         "mentions": 1
       },
@@ -4647,6 +4743,10 @@
       },
       {
         "tag": "Babylon",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Isaiah",
         "mentions": 2
       },
       {
@@ -4862,7 +4962,7 @@
         "mentions": 3
       },
       {
-        "tag": "univocality",
+        "tag": "Univocality",
         "mentions": 3
       },
       {
@@ -5002,6 +5102,10 @@
         "mentions": 1
       },
       {
+        "tag": "Book of Isaiah",
+        "mentions": 1
+      },
+      {
         "tag": "Cyrus the Great",
         "mentions": 1
       },
@@ -5131,11 +5235,11 @@
         "mentions": 3
       },
       {
-        "tag": "Cherubim",
+        "tag": "Book of Isaiah",
         "mentions": 3
       },
       {
-        "tag": "Isaiah",
+        "tag": "Cherubim",
         "mentions": 3
       },
       {
@@ -5151,6 +5255,10 @@
         "mentions": 2
       },
       {
+        "tag": "Josephus",
+        "mentions": 2
+      },
+      {
         "tag": "Septuagint",
         "mentions": 2
       },
@@ -5160,6 +5268,10 @@
       },
       {
         "tag": "Book of Acts",
+        "mentions": 1
+      },
+      {
+        "tag": "Canaanites",
         "mentions": 1
       },
       {
@@ -5203,7 +5315,11 @@
         "mentions": 1
       },
       {
-        "tag": "univocality",
+        "tag": "Shem",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
         "mentions": 1
       }
     ],
@@ -5311,6 +5427,10 @@
         "mentions": 3
       },
       {
+        "tag": "Book of Isaiah",
+        "mentions": 2
+      },
+      {
         "tag": "Book of Revelation",
         "mentions": 2
       },
@@ -5383,7 +5503,7 @@
         "mentions": 1
       },
       {
-        "tag": "univocality",
+        "tag": "Univocality",
         "mentions": 1
       }
     ],
@@ -5508,6 +5628,10 @@
       },
       {
         "tag": "First Corinthians",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
         "mentions": 1
       },
       {
@@ -5673,6 +5797,10 @@
       },
       {
         "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Isaiah",
         "mentions": 1
       },
       {
@@ -5962,6 +6090,10 @@
         "mentions": 5
       },
       {
+        "tag": "Book of Proverbs",
+        "mentions": 4
+      },
+      {
         "tag": "Assyria",
         "mentions": 3
       },
@@ -6192,6 +6324,10 @@
       },
       {
         "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Isaiah",
         "mentions": 1
       },
       {
@@ -6505,6 +6641,10 @@
         "mentions": 4
       },
       {
+        "tag": "Book of Isaiah",
+        "mentions": 4
+      },
+      {
         "tag": "Daniel",
         "mentions": 4
       },
@@ -6578,6 +6718,10 @@
       },
       {
         "tag": "Book of Acts",
+        "mentions": 1
+      },
+      {
+        "tag": "Council of Nicaea",
         "mentions": 1
       },
       {
@@ -6770,7 +6914,7 @@
         "mentions": 1
       },
       {
-        "tag": "univocality",
+        "tag": "Univocality",
         "mentions": 1
       }
     ],
@@ -6795,6 +6939,512 @@
         "endTimestamp": "[00:59:03.561]",
         "confidence": "verified",
         "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "nu6jx8m14tI",
+    "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\"",
+    "publishedAt": "2024-01-15T00:00:00Z",
+    "processedAt": "2026-01-13T22:18:59.323Z",
+    "transcriptPath": "data/transcripts/2024-01-15-episode-41-january-15-2024-modest-is-hottest.txt",
+    "episodeNumber": 41,
+    "tags": [
+      {
+        "tag": "Ham",
+        "mentions": 33
+      },
+      {
+        "tag": "Noah",
+        "mentions": 29
+      },
+      {
+        "tag": "Canaan",
+        "mentions": 26
+      },
+      {
+        "tag": "Shem",
+        "mentions": 14
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 11
+      },
+      {
+        "tag": "Japheth",
+        "mentions": 11
+      },
+      {
+        "tag": "Paul",
+        "mentions": 6
+      },
+      {
+        "tag": "Africans",
+        "mentions": 5
+      },
+      {
+        "tag": "Canaanites",
+        "mentions": 5
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 5
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 5
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 4
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 4
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 3
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 3
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 3
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 3
+      },
+      {
+        "tag": "Africa",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Proverbs",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 2
+      },
+      {
+        "tag": "Hell",
+        "mentions": 2
+      },
+      {
+        "tag": "Peter",
+        "mentions": 2
+      },
+      {
+        "tag": "1 Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "angel",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "etiology",
+        "mentions": 1
+      },
+      {
+        "tag": "Eve",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 1
+      },
+      {
+        "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "Romans",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:33:40.480]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "all-right-lets-see-it",
+        "startTimestamp": "[00:33:40.480]",
+        "endTimestamp": "[01:03:18.710]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "advertisement",
+        "startTimestamp": "[01:03:18.710]",
+        "endTimestamp": "[01:03:32.480]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:03:32.480]",
+        "endTimestamp": "[01:03:40.840]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      }
+    ]
+  },
+  {
+    "videoId": "K0kobJi-sLI",
+    "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\"",
+    "publishedAt": "2024-01-22T00:00:00Z",
+    "processedAt": "2026-01-13T22:22:07.993Z",
+    "transcriptPath": "data/transcripts/2024-01-22-episode-42-january-22-2024-is-jesus-god.txt",
+    "episodeNumber": 42,
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 116
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 41
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 28
+      },
+      {
+        "tag": "angel",
+        "mentions": 12
+      },
+      {
+        "tag": "Israel",
+        "mentions": 11
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 10
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 9
+      },
+      {
+        "tag": "gods",
+        "mentions": 8
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 7
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 6
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 6
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 5
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 4
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 4
+      },
+      {
+        "tag": "Moses",
+        "mentions": 4
+      },
+      {
+        "tag": "Council of Nicaea",
+        "mentions": 3
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 2
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "theology",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 1
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "monotheism",
+        "mentions": 1
+      },
+      {
+        "tag": "provenance",
+        "mentions": 1
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 1
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 1
+      },
+      {
+        "tag": "textual criticism",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:39.020]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "all-right-lets-see-it",
+        "startTimestamp": "[00:02:00.420]",
+        "endTimestamp": "[01:00:50.350]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "advertisement",
+        "startTimestamp": "[01:00:50.350]",
+        "endTimestamp": "[01:01:06.601]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      }
+    ]
+  },
+  {
+    "videoId": "OsQMmt2QnPU",
+    "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\"",
+    "publishedAt": "2024-01-29T00:00:00Z",
+    "processedAt": "2026-01-13T22:24:48.495Z",
+    "transcriptPath": "data/transcripts/2024-01-29-episode-43-january-29-2024-jesus-murks-a-tree.txt",
+    "episodeNumber": 43,
+    "tags": [
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 60
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 38
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 11
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 10
+      },
+      {
+        "tag": "Luke",
+        "mentions": 10
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 9
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 9
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 8
+      },
+      {
+        "tag": "Hezekiah",
+        "mentions": 7
+      },
+      {
+        "tag": "Israel",
+        "mentions": 6
+      },
+      {
+        "tag": "Cyrus the Great",
+        "mentions": 4
+      },
+      {
+        "tag": "Judah",
+        "mentions": 4
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 3
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 3
+      },
+      {
+        "tag": "Josephus",
+        "mentions": 2
+      },
+      {
+        "tag": "Kings",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "Bernhard Duhm",
+        "mentions": 1
+      },
+      {
+        "tag": "Bethlehem",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 1
+      },
+      {
+        "tag": "El",
+        "mentions": 1
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 1
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Herod the Great",
+        "mentions": 1
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 1
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "theophany",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:29.850]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:01:29.850]",
+        "endTimestamp": "[00:58:03.480]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "advertisement",
+        "startTimestamp": "[00:58:03.480]",
+        "endTimestamp": "[00:58:25.141]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
       }
     ]
   }

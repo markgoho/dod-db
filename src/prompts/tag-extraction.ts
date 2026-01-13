@@ -23,6 +23,7 @@ export const TagDiscoverySchema = z.object({
 				'theology',
 				'scholarship',
 				'religion',
+				'event',
 				'other',
 			]),
 		}),
@@ -77,6 +78,7 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
    - theology: Religious concepts (divine council, atonement, Christology)
    - scholarship: Academic methods (form criticism, textual variants)
    - religion: Religious traditions and denominations (Judaism, Christianity, Islam, Zoroastrianism)
+   - event: Historical events, councils, wars (Council of Nicaea, Babylonian Exile, exodus event)
    - Use "other" ONLY if truly none of the above fit - prefer assigning a category
 3. Use canonical forms (not variations):
    - "Septuagint" not "LXX"

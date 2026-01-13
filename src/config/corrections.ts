@@ -57,4 +57,5 @@ export const globalCorrections: CorrectionRule[] = [
   [["James version"], "James Version"], // capitalization - confidence: 40%
   [["Antiochus IV epiphanies"], "Antiochus IV Epiphanes"], // proper-noun - confidence: 20%
   [["second Timothy"], "Second Timothy"], // capitalization - confidence: 20%
+  [["Monogones Theos"], "Monogenes Theos"], // spelling - confidence: 25%
 ];

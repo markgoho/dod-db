@@ -194,7 +194,9 @@ export async function processYouTubeVideo(
 
   // Extract tags from corrected transcript
   console.log('Extracting tags...');
-  const tags = await extractTags(correctedTranscript);
+  const tags = await extractTags(correctedTranscript, {
+    enableLlmVerification: true, // Enable LLM verification for ambiguous tags (e.g., "David", "John")
+  });
   console.log(`✓ Extracted ${tags.length} tags`);
 
   // Analyze corrections for learning (compare raw vs corrected)
