@@ -1,0 +1,66 @@
+{
+  "id": "2026-01-13T21-02-11-382Z-63gwr3",
+  "timestamp": "2026-01-13T21:02:11.412Z",
+  "experimentType": "parallel",
+  "gitCommit": "a12d896",
+  "environment": {
+    "bunVersion": "1.3.5",
+    "platform": "darwin"
+  },
+  "results": [
+    {
+      "transcript": "data/transcripts/2023-05-08-episode-5-may-8-2023-betrayed-by-dan-brown-raw.txt",
+      "transcriptName": "Episode 5 - Betrayed by Dan Brown",
+      "concurrency": 4,
+      "chunks": 13,
+      "timing": {
+        "wallClockMs": 210307.058833,
+        "totalProcessingMs": 716748.171372,
+        "perChunkMs": [
+          40827.121208000004,
+          63380.128583,
+          58859.986584000006,
+          45944.816542,
+          38397.172291,
+          37871.788208000005,
+          114163.224667,
+          54969.960708,
+          26596.79504099999,
+          78401.398166,
+          59192.821915999986,
+          50058.43304199999,
+          48084.524416
+        ]
+      },
+      "cost": {
+        "inputTokens": 29774,
+        "outputTokens": 21627,
+        "inputCost": 0.014887,
+        "outputCost": 0.06488100000000001,
+        "totalCost": 0.07976799999999999,
+        "model": "gemini-3-flash-preview"
+      },
+      "accuracy": {
+        "levenshteinDistance": 986,
+        "levenshteinSimilarity": 0.9838746606482844,
+        "lineMatchPercentage": 21.96339434276206,
+        "timestampPreservationRate": 0.9916247906197655,
+        "dataLossDetected": false,
+        "characterDelta": 349
+      },
+      "speedupFactor": 3.4081032531635245,
+      "retries": 0,
+      "errors": 0,
+      "model": "gemini-3-flash-preview"
+    }
+  ],
+  "summary": {
+    "totalTranscripts": 1,
+    "avgAccuracy": 0.9838746606482844,
+    "avgCostPerTranscript": 0.07976799999999999,
+    "avgTimePerTranscript": 210307.058833,
+    "recommendations": [
+      "Cost >$0.01/transcript - consider cheaper model"
+    ]
+  }
+}
