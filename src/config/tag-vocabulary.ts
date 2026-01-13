@@ -16,8 +16,9 @@ export type TagCategory =
  * Tag status for the learning workflow.
  * - 'accepted': Verified tag, part of the core vocabulary
  * - 'proposed': Discovered by LLM, pending review
+ * - 'rejected': Reviewed and rejected (kept for exclusion from future discovery)
  */
-export type TagStatus = 'accepted' | 'proposed';
+export type TagStatus = 'accepted' | 'proposed' | 'rejected';
 
 /**
  * Tag definition with optional LLM verification.
@@ -165,6 +166,14 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Israel', variations: ['Israelites'], category: 'place', status: 'accepted' },
 	{ canonical: 'inerrancy', variations: ['inerrant'], category: 'scholarship', status: 'accepted' },
 	{ canonical: 'King David', variations: ['David'], category: 'character', llmVerify: true, description: 'King David of Israel', status: 'accepted' },
+	{ canonical: 'Euphrates', variations: ['Euphrates River'], category: 'place', status: 'accepted' },
+	{ canonical: 'Euphrates River', variations: [], category: 'place', status: 'rejected' },
+	{ canonical: 'sons of God', variations: [], category: 'character', status: 'rejected' },
+	{ canonical: '1 Enoch', variations: [], category: 'literature', status: 'rejected' },
+	{ canonical: 'Nephilim', variations: [], category: 'character', status: 'accepted' },
+	{ canonical: 'giants', variations: [], category: 'character', status: 'rejected' },
+	{ canonical: 'Book of Enoch', variations: ['1 Enoch'], category: 'literature', status: 'accepted' },
+	{ canonical: 'Islam', variations: [], category: 'theology', status: 'accepted' },
 ];
 
 /**

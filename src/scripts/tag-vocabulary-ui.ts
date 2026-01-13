@@ -10,7 +10,7 @@ import { loadProcessedVideos } from '../storage/processed-videos.js';
 import { tagVocabulary } from '../config/tag-vocabulary.js';
 import { reprocessEpisodes } from '../pipeline/reprocess-episodes.js';
 import { addTagToEpisodes } from '../pipeline/add-tag-to-episodes.js';
-import { addTagToVocabulary, tagExists, type AddTagParams } from '../pipeline/add-tag-to-vocabulary.js';
+import { addTagToVocabulary, tagExists, updateTagInVocabulary, deleteTagFromVocabulary, findTag, type AddTagParams, type UpdateTagParams } from '../pipeline/add-tag-to-vocabulary.js';
 import type { ProcessedVideo, EpisodeTag } from '../storage/processed-videos.js';
 import type { TagDefinition, TagCategory } from '../config/tag-vocabulary.js';
 import * as path from 'node:path';
@@ -400,6 +400,109 @@ const server = Bun.serve({
         endTime: job.endTime,
         exitCode: job.exitCode,
       });
+    }
+
+    // API: Update a tag in vocabulary
+    if (url.pathname.startsWith('/api/vocabulary/update/') && req.method === 'PUT') {
+      try {
+        const originalCanonical = decodeURIComponent(url.pathname.replace('/api/vocabulary/update/', ''));
+        const body = (await req.json()) as UpdateTagParams;
+
+        await updateTagInVocabulary(originalCanonical, body);
+
+        // Invalidate stats cache
+        statsCache.data = null;
+
+        return Response.json({
+          success: true,
+          message: `Tag "${originalCanonical}" updated successfully`,
+        });
+      } catch (error) {
+        console.error('Error updating tag:', error);
+        return Response.json(
+          { error: error instanceof Error ? error.message : 'Failed to update tag' },
+          { status: 500 },
+        );
+      }
+    }
+
+    // API: Approve a proposed tag (change status to accepted)
+    if (url.pathname.startsWith('/api/vocabulary/approve/') && req.method === 'POST') {
+      try {
+        const canonical = decodeURIComponent(url.pathname.replace('/api/vocabulary/approve/', ''));
+        const tag = findTag(canonical);
+
+        if (!tag) {
+          return Response.json({ error: `Tag "${canonical}" not found` }, { status: 404 });
+        }
+
+        await updateTagInVocabulary(canonical, { status: 'accepted' });
+
+        // Invalidate stats cache
+        statsCache.data = null;
+
+        return Response.json({
+          success: true,
+          message: `Tag "${canonical}" approved`,
+        });
+      } catch (error) {
+        console.error('Error approving tag:', error);
+        return Response.json(
+          { error: error instanceof Error ? error.message : 'Failed to approve tag' },
+          { status: 500 },
+        );
+      }
+    }
+
+    // API: Reject a proposed tag (change status to rejected)
+    if (url.pathname.startsWith('/api/vocabulary/reject/') && req.method === 'POST') {
+      try {
+        const canonical = decodeURIComponent(url.pathname.replace('/api/vocabulary/reject/', ''));
+        const tag = findTag(canonical);
+
+        if (!tag) {
+          return Response.json({ error: `Tag "${canonical}" not found` }, { status: 404 });
+        }
+
+        await updateTagInVocabulary(canonical, { status: 'rejected' });
+
+        // Invalidate stats cache
+        statsCache.data = null;
+
+        return Response.json({
+          success: true,
+          message: `Tag "${canonical}" rejected`,
+        });
+      } catch (error) {
+        console.error('Error rejecting tag:', error);
+        return Response.json(
+          { error: error instanceof Error ? error.message : 'Failed to reject tag' },
+          { status: 500 },
+        );
+      }
+    }
+
+    // API: Delete a tag from vocabulary
+    if (url.pathname.startsWith('/api/vocabulary/delete/') && req.method === 'DELETE') {
+      try {
+        const canonical = decodeURIComponent(url.pathname.replace('/api/vocabulary/delete/', ''));
+
+        await deleteTagFromVocabulary(canonical);
+
+        // Invalidate stats cache
+        statsCache.data = null;
+
+        return Response.json({
+          success: true,
+          message: `Tag "${canonical}" deleted`,
+        });
+      } catch (error) {
+        console.error('Error deleting tag:', error);
+        return Response.json(
+          { error: error instanceof Error ? error.message : 'Failed to delete tag' },
+          { status: 500 },
+        );
+      }
     }
 
     return new Response('Not Found', { status: 404 });

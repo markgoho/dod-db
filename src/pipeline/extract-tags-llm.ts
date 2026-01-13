@@ -7,6 +7,9 @@ import { z } from 'zod';
 import { ai } from '../ai.js';
 import { speakerIdModel } from '../config/models.js';
 import { TagDiscoverySchema, tagExtractionPrompt } from '../prompts/tag-extraction.js';
+import { tagVocabulary, getAllSearchableTerms } from '../config/tag-vocabulary.js';
+import type { TagCategory } from '../config/tag-vocabulary.js';
+import { addTagToVocabulary, tagExists } from './add-tag-to-vocabulary.js';
 import type { EpisodeTag } from '../storage/processed-videos.js';
 
 /**
@@ -21,13 +24,22 @@ export async function extractTagsLlm(
 	transcript: string,
 	existingTags: EpisodeTag[],
 ): Promise<EpisodeTag[]> {
-	// Create exclusion list from existing tags
-	const knownTags = new Set(existingTags.map((t) => t.tag.toLowerCase()));
+	// Build comprehensive exclusion set from vocabulary (canonical + all variations)
+	const vocabularyTerms = getAllSearchableTerms(tagVocabulary);
+	const allKnownTerms = new Set<string>();
+	for (const term of Array.from(vocabularyTerms.keys())) {
+		allKnownTerms.add(term.toLowerCase());
+	}
+
+	// Also add existing tags (in case deterministic found something)
+	for (const t of existingTags) {
+		allKnownTerms.add(t.tag.toLowerCase());
+	}
 
 	try {
 		const response = await ai.models.generateContent({
 			model: speakerIdModel, // gemini-2.0-flash (fast, cheap)
-			contents: tagExtractionPrompt(transcript, Array.from(knownTags)),
+			contents: tagExtractionPrompt(transcript, Array.from(allKnownTerms)),
 			config: {
 				responseMimeType: 'application/json',
 				responseSchema: z.toJSONSchema(TagDiscoverySchema),
@@ -42,8 +54,61 @@ export async function extractTagsLlm(
 
 		const output = TagDiscoverySchema.parse(JSON.parse(responseText));
 
-		// Filter to only tags with 5+ mentions
-		return output.tags.filter((t) => t.mentions >= 5);
+		// Filter to only tags with 3+ mentions AND not in vocabulary
+		// (double-check in case LLM still returns a vocabulary term)
+		const validTags = output.tags.filter((t) => {
+			if (t.mentions < 3) return false;
+			if (allKnownTerms.has(t.tag.toLowerCase())) {
+				console.log(`    Filtering out "${t.tag}" (already in vocabulary)`);
+				return false;
+			}
+			return true;
+		});
+
+		// Auto-add discovered tags to vocabulary with 'proposed' status
+		const uncategorizedTags: Array<{ tag: string; mentions: number }> = [];
+
+		for (const tag of validTags) {
+			// Skip 'other' category - needs manual categorization
+			if (tag.category === 'other') {
+				uncategorizedTags.push({ tag: tag.tag, mentions: tag.mentions });
+				continue;
+			}
+
+			// Check if already added (e.g., from a previous run)
+			if (tagExists(tag.tag)) {
+				console.log(`    "${tag.tag}" already exists in vocabulary`);
+				continue;
+			}
+
+			try {
+				await addTagToVocabulary({
+					canonical: tag.tag,
+					variations: [],
+					category: tag.category as TagCategory,
+					status: 'proposed',
+				});
+			} catch (error) {
+				console.error(`    Failed to add "${tag.tag}" to vocabulary:`, error);
+			}
+		}
+
+		// Report uncategorized tags that need manual review
+		if (uncategorizedTags.length > 0) {
+			console.log('\n⚠️  TAGS NEEDING CATEGORIZATION:');
+			console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+			for (const tag of uncategorizedTags.sort((a, b) => b.mentions - a.mentions)) {
+				console.log(`  • ${tag.tag} (${tag.mentions} mentions) - needs category`);
+			}
+			console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+			console.log('Categories: character, scholar, place, literature, theology, scholarship');
+			console.log('Or suggest a NEW category if none fit!\n');
+		}
+
+		return validTags.map((t) => ({
+			tag: t.tag,
+			mentions: t.mentions,
+		}));
 	} catch (error) {
 		console.error('  ⚠ Tag discovery failed:', error);
 		return [];

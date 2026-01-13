@@ -38,6 +38,18 @@ export async function extractTags(
 		console.log('  Phase 2: LLM discovery of new tags (5+ mentions)...');
 		discoveredTags = await extractTagsLlm(correctedTranscript, deterministicTags);
 		console.log(`  ✓ Discovered ${discoveredTags.length} new potential tags`);
+
+		// Report discovered tags as vocabulary suggestions
+		if (discoveredTags.length > 0) {
+			console.log('\n📋 NEW TAG SUGGESTIONS (not in vocabulary):');
+			console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+			for (const tag of discoveredTags.sort((a, b) => b.mentions - a.mentions)) {
+				console.log(`  • ${tag.tag} (${tag.mentions} mentions)`);
+			}
+			console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+			console.log('💡 Consider adding these to src/config/tag-vocabulary.ts');
+			console.log('   or use the Web UI: bun run src/scripts/tag-vocabulary-ui.ts\n');
+		}
 	} else {
 		console.log('  Phase 2: Skipped (skipLlm option enabled)');
 	}

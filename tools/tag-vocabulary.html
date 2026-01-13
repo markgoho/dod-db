@@ -520,6 +520,115 @@
       .error-message.show {
         display: block;
       }
+      /* Proposed tags review styles */
+      .proposed-grid {
+        display: grid;
+        gap: 16px;
+      }
+      .proposed-card {
+        border: 2px solid #fbbf24;
+        border-radius: 12px;
+        padding: 20px;
+        background: #fffbeb;
+      }
+      .proposed-card.saving {
+        opacity: 0.6;
+        pointer-events: none;
+      }
+      .proposed-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 16px;
+        gap: 16px;
+      }
+      .proposed-status {
+        font-size: 12px;
+        font-weight: 700;
+        color: #92400e;
+        background: #fef3c7;
+        padding: 4px 12px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .proposed-form {
+        display: grid;
+        gap: 12px;
+      }
+      .proposed-row {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 12px;
+        align-items: center;
+      }
+      .proposed-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #374151;
+      }
+      .proposed-input {
+        padding: 8px 12px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: inherit;
+      }
+      .proposed-input:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+      }
+      .proposed-select {
+        padding: 8px 12px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: inherit;
+        background: white;
+      }
+      .proposed-actions {
+        display: flex;
+        gap: 12px;
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #fcd34d;
+      }
+      .btn-approve {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        color: white;
+        flex: 1;
+      }
+      .btn-approve:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+      }
+      .btn-reject {
+        background: #ef4444;
+        color: white;
+        flex: 1;
+      }
+      .btn-reject:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+      }
+      .btn-save {
+        background: #3b82f6;
+        color: white;
+      }
+      .btn-save:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+      }
+      .proposed-empty {
+        text-align: center;
+        padding: 40px;
+        color: #6b7280;
+      }
+      .proposed-empty-icon {
+        font-size: 48px;
+        margin-bottom: 12px;
+      }
     </style>
   </head>
   <body>
@@ -544,6 +653,19 @@
           </div>
         </div>
       </header>
+
+      <div class="section" id="proposed-section" style="display: none;">
+        <h2 style="color: #d97706;">
+          <span style="margin-right: 8px;">⚠️</span>
+          Proposed Tags for Review
+        </h2>
+        <p style="color: #6b7280; margin-bottom: 20px;">
+          These tags were discovered by the LLM and need your review. Edit the details and approve or reject each tag.
+        </p>
+        <div id="proposed-container">
+          <div class="loading">Loading proposed tags...</div>
+        </div>
+      </div>
 
       <div class="section">
         <h2>Episodes</h2>
@@ -1361,7 +1483,196 @@
         }
       }
 
+      // ============================================
+      // PROPOSED TAGS REVIEW
+      // ============================================
+
+      let proposedTags = [];
+
+      // Load proposed tags from vocabulary
+      async function loadProposedTags() {
+        try {
+          const response = await fetch('/api/vocabulary');
+          if (!response.ok) {
+            throw new Error('Failed to load vocabulary');
+          }
+
+          const vocabulary = await response.json();
+          proposedTags = vocabulary.filter(tag => tag.status === 'proposed');
+
+          renderProposedTags();
+        } catch (error) {
+          console.error('Error loading proposed tags:', error);
+          document.getElementById('proposed-container').innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">⚠️</div>
+              <div class="empty-state-text">Error loading proposed tags: ${error.message}</div>
+            </div>
+          `;
+        }
+      }
+
+      // Render proposed tags for review
+      function renderProposedTags() {
+        const section = document.getElementById('proposed-section');
+        const container = document.getElementById('proposed-container');
+
+        if (proposedTags.length === 0) {
+          section.style.display = 'none';
+          return;
+        }
+
+        section.style.display = 'block';
+
+        container.innerHTML = `
+          <div class="proposed-grid">
+            ${proposedTags.map((tag, index) => renderProposedCard(tag, index)).join('')}
+          </div>
+        `;
+      }
+
+      // Render a single proposed tag card
+      function renderProposedCard(tag, index) {
+        const variationsStr = tag.variations ? tag.variations.join(', ') : '';
+        const escapedCanonical = escapeHtml(tag.canonical);
+
+        return `
+          <div class="proposed-card" id="proposed-card-${index}" data-original="${escapedCanonical}">
+            <div class="proposed-header">
+              <span class="proposed-status">Proposed</span>
+            </div>
+            <div class="proposed-form">
+              <div class="proposed-row">
+                <label class="proposed-label">Canonical:</label>
+                <input type="text" class="proposed-input" id="proposed-canonical-${index}"
+                       value="${escapedCanonical}" />
+              </div>
+              <div class="proposed-row">
+                <label class="proposed-label">Variations:</label>
+                <input type="text" class="proposed-input" id="proposed-variations-${index}"
+                       value="${escapeHtml(variationsStr)}"
+                       placeholder="Comma-separated variations" />
+              </div>
+              <div class="proposed-row">
+                <label class="proposed-label">Category:</label>
+                <select class="proposed-select" id="proposed-category-${index}">
+                  <option value="character" ${tag.category === 'character' ? 'selected' : ''}>Character</option>
+                  <option value="scholar" ${tag.category === 'scholar' ? 'selected' : ''}>Scholar</option>
+                  <option value="place" ${tag.category === 'place' ? 'selected' : ''}>Place</option>
+                  <option value="literature" ${tag.category === 'literature' ? 'selected' : ''}>Literature</option>
+                  <option value="theology" ${tag.category === 'theology' ? 'selected' : ''}>Theology</option>
+                  <option value="scholarship" ${tag.category === 'scholarship' ? 'selected' : ''}>Scholarship</option>
+                </select>
+              </div>
+            </div>
+            <div class="proposed-actions">
+              <button class="btn btn-approve" onclick="approveTag(${index})">
+                ✓ Approve
+              </button>
+              <button class="btn btn-reject" onclick="rejectTag(${index})">
+                ✗ Reject
+              </button>
+            </div>
+          </div>
+        `;
+      }
+
+      // Escape HTML to prevent XSS
+      function escapeHtml(str) {
+        if (!str) return '';
+        return str
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#039;');
+      }
+
+      // Approve a proposed tag
+      async function approveTag(index) {
+        const card = document.getElementById(`proposed-card-${index}`);
+        const originalCanonical = card.dataset.original;
+
+        // Get updated values from form
+        const newCanonical = document.getElementById(`proposed-canonical-${index}`).value.trim();
+        const variationsInput = document.getElementById(`proposed-variations-${index}`).value.trim();
+        const category = document.getElementById(`proposed-category-${index}`).value;
+
+        // Parse variations
+        const variations = variationsInput
+          ? variationsInput.split(',').map(v => v.trim()).filter(v => v.length > 0)
+          : [];
+
+        card.classList.add('saving');
+
+        try {
+          // First update the tag with any changes
+          const updateResponse = await fetch(`/api/vocabulary/update/${encodeURIComponent(originalCanonical)}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              canonical: newCanonical,
+              variations,
+              category,
+              status: 'accepted',
+            }),
+          });
+
+          if (!updateResponse.ok) {
+            const error = await updateResponse.json();
+            throw new Error(error.error || 'Failed to approve tag');
+          }
+
+          // Remove from proposed list and re-render
+          proposedTags.splice(index, 1);
+          renderProposedTags();
+
+          // Reload vocabulary to show updated data
+          loadVocabulary();
+          loadAnalytics();
+
+        } catch (error) {
+          alert(`Error approving tag: ${error.message}`);
+          card.classList.remove('saving');
+        }
+      }
+
+      // Reject a proposed tag
+      async function rejectTag(index) {
+        const card = document.getElementById(`proposed-card-${index}`);
+        const originalCanonical = card.dataset.original;
+
+        if (!confirm(`Reject tag "${originalCanonical}"? It will be marked as rejected and excluded from future discovery.`)) {
+          return;
+        }
+
+        card.classList.add('saving');
+
+        try {
+          const response = await fetch(`/api/vocabulary/reject/${encodeURIComponent(originalCanonical)}`, {
+            method: 'POST',
+          });
+
+          if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.error || 'Failed to reject tag');
+          }
+
+          // Remove from proposed list and re-render
+          proposedTags.splice(index, 1);
+          renderProposedTags();
+
+          // Reload vocabulary
+          loadVocabulary();
+
+        } catch (error) {
+          alert(`Error rejecting tag: ${error.message}`);
+          card.classList.remove('saving');
+        }
+      }
+
       // Initialize on page load
+      loadProposedTags();
       loadEpisodes();
       loadVocabulary();
       loadAnalytics();

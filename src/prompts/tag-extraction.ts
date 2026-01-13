@@ -1,6 +1,6 @@
 /**
  * LLM prompt and schema for tag discovery.
- * Used to identify NEW high-value tags (5+ mentions) that aren't in the vocabulary yet.
+ * Used to identify NEW high-value tags (3+ mentions) that aren't in the vocabulary yet.
  */
 
 import { z } from 'zod';
@@ -52,24 +52,23 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
 </podcast-context>
 
 <extraction-rules>
-1. ONLY extract tags that appear 5+ times in the transcript
-2. Focus on high-value content:
-   - Characters (Moses, Abraham, Jesus, Tiamat, Marduk) - biblical, ancient, mythological
-   - Places (Jerusalem, Babylon, Egypt, Ugarit, Elephantine) - any geographic location
-   - Literature (Torah, Gospel of Mark, Dead Sea Scrolls, Septuagint)
-   - Theology (univocality, atonement, incarnation, divine council)
-   - Scholarship (redaction criticism, textual variants, source criticism)
+1. Extract tags that appear 3+ times in the transcript (be thorough!)
+2. Focus on high-value content and categorize properly:
+   - character: People/beings (Moses, Nephilim, Watchers, Elohim, Tiamat, Marduk)
+   - scholar: Modern academics (N.T. Wright, James Tabor)
+   - place: Geographic locations (Jerusalem, Babylon, Tigris River)
+   - literature: Texts/books (1 Enoch, Book of Watchers, Gospel of Mark)
+   - theology: Religious concepts (divine council, atonement, Christology)
+   - scholarship: Academic methods (form criticism, textual variants)
+   - Use "other" ONLY if truly none of the above fit - prefer assigning a category
 3. Use canonical forms (not variations):
    - "Septuagint" not "LXX"
-   - "Moses" not "Moses'" or "Moshe"
-   - "Torah" not "Tora"
+   - "First Enoch" or "1 Enoch" not "Enoch" (the book vs the character)
 4. Skip overly generic terms:
-   - Skip: "Bible" (too generic, appears in every episode)
-   - Skip: "scripture", "God", "text", "book" (unless part of a specific name)
-   - Include: "Hebrew Bible", "biblical canon", "divine council" (specific concepts)
-   - Include: Specific book names like "Gospel of John", "Book of Revelation"
+   - Skip: "Bible", "scripture", "God", "text", "book" (unless part of specific name)
+   - Include: "Hebrew Bible", "Elohim" (specific theological term), "biblical canon"
 5. Skip host names (Dan McClellan, Dan Beecher)
-6. Count accurately across the full transcript (case-insensitive)
+6. Count accurately (case-insensitive). AIM FOR 5-15 NEW TAGS per transcript!
 </extraction-rules>
 ${exclusionList}
 
