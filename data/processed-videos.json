@@ -301,6 +301,10 @@
         "mentions": 2
       },
       {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
         "tag": "corporeal deity",
         "mentions": 1
       },
@@ -342,10 +346,6 @@
       },
       {
         "tag": "angel",
-        "mentions": 1
-      },
-      {
-        "tag": "rabbis",
         "mentions": 1
       },
       {
@@ -488,6 +488,10 @@
       },
       {
         "tag": "King David",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
         "mentions": 2
       },
       {
@@ -795,10 +799,6 @@
         "mentions": 1
       },
       {
-        "tag": "rabbis",
-        "mentions": 1
-      },
-      {
         "tag": "angel",
         "mentions": 1
       },
@@ -985,6 +985,14 @@
       {
         "tag": "1 Timothy",
         "mentions": 1
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -1114,6 +1122,10 @@
         "mentions": 4
       },
       {
+        "tag": "Hebrews",
+        "mentions": 4
+      },
+      {
         "tag": "Jerusalem",
         "mentions": 3
       },
@@ -1195,6 +1207,10 @@
       },
       {
         "tag": "Book of Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "King Josiah",
         "mentions": 1
       }
     ],
@@ -2155,11 +2171,11 @@
         "mentions": 2
       },
       {
-        "tag": "rabbis",
+        "tag": "Egypt",
         "mentions": 2
       },
       {
-        "tag": "Egypt",
+        "tag": "Philistines",
         "mentions": 2
       },
       {
@@ -2188,6 +2204,10 @@
       },
       {
         "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
         "mentions": 1
       }
     ],
@@ -2335,6 +2355,10 @@
         "mentions": 2
       },
       {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
         "tag": "theology",
         "mentions": 1
       },
@@ -2364,10 +2388,6 @@
       },
       {
         "tag": "King James Version",
-        "mentions": 1
-      },
-      {
-        "tag": "Hebrews",
         "mentions": 1
       },
       {
@@ -2500,6 +2520,10 @@
       },
       {
         "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
         "mentions": 2
       },
       {
@@ -2788,6 +2812,10 @@
       },
       {
         "tag": "Exodus",
+        "mentions": 4
+      },
+      {
+        "tag": "Hebrews",
         "mentions": 4
       },
       {
@@ -3256,11 +3284,11 @@
         "mentions": 2
       },
       {
-        "tag": "Hebrews",
+        "tag": "Book of Daniel",
         "mentions": 2
       },
       {
-        "tag": "Book of Daniel",
+        "tag": "Hebrews",
         "mentions": 2
       },
       {
@@ -3355,6 +3383,10 @@
         "mentions": 10
       },
       {
+        "tag": "Hebrews",
+        "mentions": 8
+      },
+      {
         "tag": "Ten Commandments",
         "mentions": 7
       },
@@ -3380,10 +3412,6 @@
       },
       {
         "tag": "Babylon",
-        "mentions": 4
-      },
-      {
-        "tag": "Hebrews",
         "mentions": 4
       },
       {
@@ -3452,10 +3480,6 @@
       },
       {
         "tag": "Ugarit",
-        "mentions": 1
-      },
-      {
-        "tag": "rabbis",
         "mentions": 1
       },
       {
@@ -3530,11 +3554,19 @@
         "mentions": 8
       },
       {
+        "tag": "Hebrews",
+        "mentions": 7
+      },
+      {
         "tag": "YHWH",
         "mentions": 6
       },
       {
         "tag": "Moses",
+        "mentions": 4
+      },
+      {
+        "tag": "Julius Wellhausen",
         "mentions": 4
       },
       {
@@ -3559,10 +3591,6 @@
       },
       {
         "tag": "Isaiah",
-        "mentions": 2
-      },
-      {
-        "tag": "rabbis",
         "mentions": 2
       },
       {
@@ -3715,10 +3743,6 @@
         "mentions": 1
       },
       {
-        "tag": "rabbis",
-        "mentions": 1
-      },
-      {
         "tag": "Isaac",
         "mentions": 1
       },
@@ -3773,10 +3797,6 @@
       },
       {
         "tag": "Hebrew Bible",
-        "mentions": 7
-      },
-      {
-        "tag": "rabbis",
         "mentions": 7
       },
       {
@@ -4406,11 +4426,11 @@
         "mentions": 2
       },
       {
-        "tag": "Hebrews",
+        "tag": "Galilee",
         "mentions": 2
       },
       {
-        "tag": "Galilee",
+        "tag": "Hebrews",
         "mentions": 2
       },
       {
@@ -4626,11 +4646,11 @@
         "mentions": 1
       },
       {
-        "tag": "Hebrews",
+        "tag": "Saint Titus",
         "mentions": 1
       },
       {
-        "tag": "Saint Titus",
+        "tag": "Hebrews",
         "mentions": 1
       }
     ],
@@ -4703,6 +4723,10 @@
       },
       {
         "tag": "Israel",
+        "mentions": 3
+      },
+      {
+        "tag": "Hebrews",
         "mentions": 3
       },
       {
@@ -4815,6 +4839,10 @@
         "mentions": 6
       },
       {
+        "tag": "King Josiah",
+        "mentions": 6
+      },
+      {
         "tag": "Ritual Decalogue",
         "mentions": 5
       },
@@ -4896,6 +4924,10 @@
       },
       {
         "tag": "Qumran",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
         "mentions": 1
       }
     ],
@@ -5083,10 +5115,6 @@
         "mentions": 1
       },
       {
-        "tag": "Hebrews",
-        "mentions": 1
-      },
-      {
         "tag": "Baal",
         "mentions": 1
       },
@@ -5096,6 +5124,10 @@
       },
       {
         "tag": "Book of Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
         "mentions": 1
       }
     ],
@@ -5228,7 +5260,7 @@
       },
       {
         "tag": "Hebrews",
-        "mentions": 3
+        "mentions": 4
       },
       {
         "tag": "Hebrew Bible",
@@ -5468,11 +5500,11 @@
         "mentions": 1
       },
       {
-        "tag": "Hebrews",
+        "tag": "Qumran",
         "mentions": 1
       },
       {
-        "tag": "Qumran",
+        "tag": "Hebrews",
         "mentions": 1
       }
     ],
@@ -5605,11 +5637,11 @@
         "mentions": 3
       },
       {
-        "tag": "Hebrews",
+        "tag": "Romans",
         "mentions": 3
       },
       {
-        "tag": "Romans",
+        "tag": "Hebrews",
         "mentions": 3
       },
       {
@@ -5670,6 +5702,215 @@
         "endTimestamp": "[00:55:23.221]",
         "confidence": "verified",
         "detectionMethod": "pattern"
+      }
+    ]
+  },
+  {
+    "videoId": "5ebvYxjXH2Y",
+    "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright",
+    "publishedAt": "2023-12-11T00:00:00Z",
+    "processedAt": "2026-01-13T20:16:52.887Z",
+    "transcriptPath": "data/transcripts/2023-12-11-episode-36-december-11-2023-the-why-question-with-jacob-wright.txt",
+    "episodeNumber": 36,
+    "tags": [
+      {
+        "tag": "Israel",
+        "mentions": 33
+      },
+      {
+        "tag": "Judah",
+        "mentions": 24
+      },
+      {
+        "tag": "kingdom",
+        "mentions": 20
+      },
+      {
+        "tag": "nation",
+        "mentions": 11
+      },
+      {
+        "tag": "people",
+        "mentions": 11
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 10
+      },
+      {
+        "tag": "Wellhausen",
+        "mentions": 10
+      },
+      {
+        "tag": "Julius Wellhausen",
+        "mentions": 8
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 8
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 7
+      },
+      {
+        "tag": "davidic",
+        "mentions": 7
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 6
+      },
+      {
+        "tag": "scribes",
+        "mentions": 6
+      },
+      {
+        "tag": "theology",
+        "mentions": 5
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 5
+      },
+      {
+        "tag": "Kings",
+        "mentions": 5
+      },
+      {
+        "tag": "exile",
+        "mentions": 5
+      },
+      {
+        "tag": "scribe",
+        "mentions": 4
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 3
+      },
+      {
+        "tag": "Assyria",
+        "mentions": 3
+      },
+      {
+        "tag": "nationhood",
+        "mentions": 3
+      },
+      {
+        "tag": "kingdoms",
+        "mentions": 3
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 2
+      },
+      {
+        "tag": "monotheism",
+        "mentions": 2
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 2
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 2
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "Ammonites",
+        "mentions": 1
+      },
+      {
+        "tag": "Jephthah",
+        "mentions": 1
+      },
+      {
+        "tag": "Hezekiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Nineveh",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Samson",
+        "mentions": 1
+      },
+      {
+        "tag": "Gideon",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Torah",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "King Josiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:01.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:01.000]",
+        "endTimestamp": "[01:03:09.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:03:09.000]",
+        "endTimestamp": "[01:03:44.260]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   }

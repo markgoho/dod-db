@@ -79,7 +79,7 @@ export async function addTagToVocabulary(parameters: AddTagParams): Promise<void
 
 	// Build entry based on options (llmVerify, caseSensitive, status)
 	const status = parameters.status || 'accepted';
-	const statusString = status === 'accepted' ? '' : `, status: '${status}'`;
+	const statusString = `, status: '${status}'`;
 	const caseSensitiveString = parameters.caseSensitive ? ', caseSensitive: true' : '';
 
 	const newEntry = 'llmVerify' in parameters && parameters.llmVerify
@@ -192,7 +192,7 @@ export async function updateTagInVocabulary(
 	const variationsString = newVariations.length > 0
 		? `[${newVariations.map(v => `'${escapeForTsString(v)}'`).join(', ')}]`
 		: '[]';
-	const statusString = newStatus === 'accepted' ? '' : `, status: '${newStatus}'`;
+	const statusString = `, status: '${newStatus}'`;
 	const caseSensitiveString = newCaseSensitive ? ', caseSensitive: true' : '';
 
 	const newEntry = newLlmVerify && newDescription

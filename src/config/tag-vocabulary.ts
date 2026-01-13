@@ -168,7 +168,7 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'preterist interpretation', variations: ['preterism'], category: 'scholarship', status: 'accepted' },
 	{ canonical: 'futurist interpretation', variations: ['futurism'], category: 'scholarship', status: 'accepted' },
 	{ canonical: 'Judah', variations: ['Judahites', 'Judahite'], category: 'place', status: 'accepted' },
-	{ canonical: 'Israel', variations: ['Israelites'], category: 'place', status: 'accepted' },
+	{ canonical: 'Israel', variations: [], category: 'place', status: 'accepted' },
 	{ canonical: 'inerrancy', variations: ['inerrant'], category: 'scholarship', status: 'accepted' },
 	{ canonical: 'King David', variations: ['David'], category: 'character', llmVerify: true, description: 'King David of Israel', status: 'accepted' },
 	{ canonical: 'Euphrates', variations: ['Euphrates River'], category: 'place', status: 'accepted' },
@@ -222,9 +222,8 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Methuselah', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'Jared', variations: [], category: 'character', llmVerify: true, description: 'father of Enoch in the line of Adam', status: 'accepted' },
 	{ canonical: 'Athanasius of Alexandria', variations: ['Athanasius'], category: 'person', status: 'accepted' },
-	{ canonical: 'Hebrews', variations: ['Jews', 'jews', 'hebrews'], category: 'people', status: 'accepted' },
+	{ canonical: 'Hebrews', variations: ['jews', 'hebrews', 'israelites'], category: 'people', status: 'accepted' },
 	{ canonical: 'rabbis', variations: [], category: 'people', status: 'rejected' },
-	{ canonical: 'jews', variations: [], category: 'people', status: 'rejected' },
 	{ canonical: 'Romans', variations: [], category: 'people', status: 'accepted' },
 	{ canonical: 'Gospel of Mark', variations: ['Mark'], category: 'literature', llmVerify: true, description: 'the gospel of mark, second book of the christian new testament', status: 'accepted' },
 	{ canonical: 'Eschatology',  variations: ['eschatological', 'eschaton', 'end times', 'end time'], category: 'theology', status: 'accepted' },
@@ -257,6 +256,10 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Galilee', variations: [], category: 'place', status: 'accepted' },
 	{ canonical: 'Book of Acts', variations: ['Acts', 'Acts of the Apostles'], category: 'literature', llmVerify: true, description: 'the new testament book traditionally attributed to Luke', status: 'accepted' },
 	{ canonical: 'Saint Titus', variations: ['Titus'], category: 'character', llmVerify: true, description: 'early Christian missionary and church leader, a companion and disciple of Paul the Apostle', status: 'accepted' },
+	{ canonical: 'Julius Wellhausen', variations: ['Wellhausen'], category: 'person', llmVerify: true, description: 'German biblical scholar and orientalist', status: 'accepted' },
+	{ canonical: 'Philistines', variations: [], category: 'people', status: 'accepted' },
+	{ canonical: 'King Josiah', variations: ['Josiah'], category: 'character', llmVerify: true, description: 'the 16th king of Judah (c. 640–609 BCE). Described as one of Judah’s most important kings', status: 'accepted' },
+  { canonical: 'scribes', variations: [], status: 'rejected', category: 'people'}
 ];
 
 /**

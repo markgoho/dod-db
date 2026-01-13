@@ -4326,7 +4326,97 @@
       "status": "approved",
       "reviewedAt": "2026-01-13T17:50:16.109Z",
       "reviewedBy": "UI Review"
+    },
+    "David's→Davids": {
+      "original": "David's",
+      "corrected": "Davids",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "5ebvYxjXH2Y"
+      ],
+      "examples": [
+        "\"We are David's, not Goliaths,\"",
+        "\"we are David's, not Goliath's.\""
+      ],
+      "correctedExamples": [
+        "\"We are Davids, not Goliaths,\"",
+        "\"we are Davids, not Goliaths.\""
+      ],
+      "timestamps": [
+        "00:31:30.340",
+        "00:55:35.320"
+      ],
+      "episodeIds": [
+        "5ebvYxjXH2Y",
+        "5ebvYxjXH2Y"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T20:16:52.726Z",
+      "lastSeen": "2026-01-13T20:16:52.726Z",
+      "status": "pending"
+    },
+    "Stella→Stele": {
+      "original": "Stella",
+      "corrected": "Stele",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "5ebvYxjXH2Y"
+      ],
+      "examples": [
+        "\"this Mesha Stella that was\"",
+        "\"the Mesha Stella is that\""
+      ],
+      "correctedExamples": [
+        "\"this Mesha Stele that was\"",
+        "\"the Mesha Stele is that\""
+      ],
+      "timestamps": [
+        "00:41:09.860",
+        "00:42:05.940"
+      ],
+      "episodeIds": [
+        "5ebvYxjXH2Y",
+        "5ebvYxjXH2Y"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T20:16:52.726Z",
+      "lastSeen": "2026-01-13T20:16:52.726Z",
+      "status": "pending"
+    },
+    "Kanazi→Eskenazi": {
+      "original": "Kanazi",
+      "corrected": "Eskenazi",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "5ebvYxjXH2Y"
+      ],
+      "examples": [
+        "\"President, Tomaris Kanazi, Dr. Tomas\"",
+        "\"Dr. Tomas Kanazi, came over\""
+      ],
+      "correctedExamples": [
+        "\"president, Tamara Eskenazi, Dr. Tamara\"",
+        "\"Dr. Tamara Eskenazi, came over\""
+      ],
+      "timestamps": [
+        "01:01:41.520",
+        "01:01:41.520"
+      ],
+      "episodeIds": [
+        "5ebvYxjXH2Y",
+        "5ebvYxjXH2Y"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T20:16:52.726Z",
+      "lastSeen": "2026-01-13T20:16:52.726Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-13T17:50:16.109Z"
+  "lastUpdated": "2026-01-13T20:16:52.726Z"
 }
