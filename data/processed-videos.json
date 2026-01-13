@@ -6565,37 +6565,23 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:00:29.590]",
-        "confidence": "auto",
+        "endTimestamp": "[00:01:20.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
-        "type": "ex-eventu",
-        "startTimestamp": "[00:09:11.360]",
-        "endTimestamp": "[00:55:59.430]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:01:20.000]",
+        "endTimestamp": "[00:56:00.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       },
       {
-        "type": "advertisement",
-        "startTimestamp": "[00:55:59.430]",
-        "endTimestamp": "[00:56:15.120]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
-      },
-      {
-        "type": "advertisement",
-        "startTimestamp": "[00:56:15.120]",
-        "endTimestamp": "[00:56:18.800]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
-      },
-      {
-        "type": "advertisement",
-        "startTimestamp": "[00:56:18.800]",
+        "type": "outro",
+        "startTimestamp": "[00:56:00.000]",
         "endTimestamp": "[00:56:38.001]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   }
