@@ -4033,7 +4033,37 @@
       "firstSeen": "2026-01-13T04:16:40.480Z",
       "lastSeen": "2026-01-13T04:16:40.480Z",
       "status": "pending"
+    },
+    "your Your→your your": {
+      "original": "your Your",
+      "corrected": "your your",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "10fIBhgQYF8"
+      ],
+      "examples": [
+        "\"but, yes, your, Your, your specialty\"",
+        "\"yes, your, Your, your specialty is\""
+      ],
+      "correctedExamples": [
+        "\"but, yes, your, your, your specialty\"",
+        "\"yes, your, your, your specialty is\""
+      ],
+      "timestamps": [
+        "00:02:05.510",
+        "00:02:05.510"
+      ],
+      "episodeIds": [
+        "10fIBhgQYF8",
+        "10fIBhgQYF8"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T04:33:44.788Z",
+      "lastSeen": "2026-01-13T04:33:44.788Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-13T04:18:33.483Z"
+  "lastUpdated": "2026-01-13T04:33:44.788Z"
 }

@@ -4080,5 +4080,126 @@
         "detectionMethod": "manual"
       }
     ]
+  },
+  {
+    "videoId": "10fIBhgQYF8",
+    "title": "Christian Nationalism Ain't Christian: With Andrew Whitehead",
+    "publishedAt": "2023-10-30T00:00:00Z",
+    "processedAt": "2026-01-13T04:33:44.930Z",
+    "transcriptPath": "data/transcripts/2023-10-30-christian-nationalism-aint-christian-with-andrew-whitehead.txt",
+    "episodeNumber": 30,
+    "tags": [
+      {
+        "tag": "Christianity",
+        "mentions": 115
+      },
+      {
+        "tag": "christian nationalism",
+        "mentions": 32
+      },
+      {
+        "tag": "andrew whitehead",
+        "mentions": 10
+      },
+      {
+        "tag": "power",
+        "mentions": 10
+      },
+      {
+        "tag": "Paul",
+        "mentions": 8
+      },
+      {
+        "tag": "bible",
+        "mentions": 8
+      },
+      {
+        "tag": "republican",
+        "mentions": 8
+      },
+      {
+        "tag": "american",
+        "mentions": 7
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 6
+      },
+      {
+        "tag": "democracy",
+        "mentions": 6
+      },
+      {
+        "tag": "trump",
+        "mentions": 6
+      },
+      {
+        "tag": "moral",
+        "mentions": 5
+      },
+      {
+        "tag": "gods",
+        "mentions": 4
+      },
+      {
+        "tag": "Israel",
+        "mentions": 3
+      },
+      {
+        "tag": "ideologies",
+        "mentions": 3
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 2
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 1
+      },
+      {
+        "tag": "King David",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:12.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:12.000]",
+        "endTimestamp": "[01:01:38.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:01:38.000]",
+        "endTimestamp": "[01:02:11.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
   }
 ]

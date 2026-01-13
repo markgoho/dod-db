@@ -189,6 +189,10 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'prophet', variations: [], category: 'character', status: 'rejected' },
 	{ canonical: 'Tarshish', variations: [], category: 'place', status: 'accepted' },
 	{ canonical: 'Sennecherib', variations: [], category: 'character', status: 'accepted' },
+	{ canonical: 'Christian Nationalism', variations: [], category: 'theology', status: 'accepted' },
+	{ canonical: 'Andrew Whitehead', variations: [], category: 'scholar', status: 'accepted' },
+	{ canonical: 'bible', variations: [], category: 'literature', status: 'rejected' },
+	{ canonical: 'moral', variations: [], category: 'theology', status: 'rejected' },
 ];
 
 /**
