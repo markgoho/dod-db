@@ -22,6 +22,7 @@ export const TagDiscoverySchema = z.object({
 				'literature',
 				'theology',
 				'scholarship',
+				'religion',
 				'other',
 			]),
 		}),
@@ -75,6 +76,7 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
    - literature: Texts/books (1 Enoch, Book of Watchers, Gospel of Mark)
    - theology: Religious concepts (divine council, atonement, Christology)
    - scholarship: Academic methods (form criticism, textual variants)
+   - religion: Religious traditions and denominations (Judaism, Christianity, Islam, Zoroastrianism)
    - Use "other" ONLY if truly none of the above fit - prefer assigning a category
 3. Use canonical forms (not variations):
    - "Septuagint" not "LXX"

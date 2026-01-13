@@ -8,6 +8,7 @@ import {
 	saveProcessedVideos,
 } from '../storage/processed-videos.js';
 import { extractSingleTag } from './extract-single-tag.js';
+import { sortTags } from '../utils/tag-utils.js';
 
 export interface AddTagToEpisodesOptions {
 	/** The canonical tag name to add */
@@ -96,7 +97,7 @@ export async function addTagToEpisodes(
 				// Add new result if matches found
 				if (tagResult) {
 					video.tags.push(tagResult);
-					video.tags.sort((a, b) => b.mentions - a.mentions); // Keep sorted
+					sortTags(video.tags);
 					episodesWithTag++;
 					totalMentions += tagResult.mentions;
 

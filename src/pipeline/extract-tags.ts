@@ -10,6 +10,7 @@ import { extractTagsDeterministic } from './extract-tags-deterministic.js';
 import { extractTagsLlm } from './extract-tags-llm.js';
 import type { EpisodeTag } from '../storage/processed-videos.js';
 import type { TagCategory } from '../config/tag-vocabulary.js';
+import { sortTags } from '../utils/tag-utils.js';
 
 /**
  * Extract tags from corrected transcript using hybrid approach.
@@ -60,8 +61,8 @@ export async function extractTags(
 	// Merge results
 	const allTags = mergeTags(deterministicTags, discoveredTags);
 
-	// Sort by mention count (descending)
-	allTags.sort((a, b) => b.mentions - a.mentions);
+	// Sort by mention count (descending), then alphabetically for stable ordering
+	sortTags(allTags);
 
 	console.log(`✓ Tag extraction complete: ${allTags.length} total tags`);
 

@@ -121,7 +121,8 @@ The transcript processing pipeline is orchestrated via `src/pipeline/youtube-pro
    - **Step 1**: Applies deterministic find/replace from `src/config/corrections.ts` (instant, no cost)
    - **Step 2**: Uses Gemini 3.0 Flash Preview for remaining errors
    - Chunked processing via `llm-chunk` (5K-10K tokens, 200 overlap)
-   - Deduplicates overlap when concatenating chunks
+   - **Parallel Network I/O**: All chunks processed concurrently via `Promise.all()` (7x speedup)
+   - Deduplicates overlap when concatenating chunks (timestamp-aware)
    - Uses plain Latin characters (no diacritics)
    - **Learning Loop**: Compare raw vs corrected transcripts to identify frequent corrections, then add to deterministic list
 
@@ -287,6 +288,81 @@ The UI provides:
 - **Structured Output**: Uses Zod schemas with `zod-to-json-schema` for type-safe JSON responses
 - **Learning System**: Deterministic corrections + LLM with manual learning loop for continuous improvement
 
+### Parallel Network I/O
+
+The transcript correction pipeline uses **parallel network I/O** to achieve ~7x speedup over sequential processing.
+
+**Why parallelization works:**
+- LLM API calls are **I/O-bound** (waiting for network responses), not CPU-bound
+- `Promise.all()` overlaps waiting time without additional CPU cost
+- No semaphore or concurrency limiting needed - Gemini handles rate limiting
+
+**Implementation pattern:**
+```typescript
+// Process all chunks concurrently
+const results = await Promise.all(
+  chunks.map((chunk, index) => processChunk(chunk, index, chunks.length)),
+);
+// Sort by index to maintain order for deduplication
+results.sort((a, b) => a.index - b.index);
+```
+
+**Performance results** (Episode 5, 13 chunks):
+| Method | Wall Clock | Speedup |
+|--------|-----------|---------|
+| Sequential | 815s (~13.6 min) | 1x |
+| Parallel (4) | 210s (~3.5 min) | 3.4x |
+| Parallel (full) | 88s (~1.5 min) | 7.4x |
+
+**Key considerations:**
+- Results must be sorted by index after parallel completion (chunks complete out of order)
+- Deduplication depends on correct chunk ordering
+- Cost remains constant (~$0.08/episode) regardless of parallelization
+- See issue #39 for ongoing cost tracking
+
+### Experiments Framework
+
+The `experiments/` directory contains tools for benchmarking and optimizing the pipeline:
+
+```
+experiments/
+├── config/
+│   └── experiment-config.ts     # Pricing, thresholds, sample list
+├── lib/
+│   ├── accuracy.ts              # Levenshtein, line-match, timestamp checks
+│   ├── cost-calculator.ts       # Token counting from API responses
+│   ├── parallel-corrector.ts    # Concurrency-limited parallel processing
+│   └── results-reporter.ts      # JSON output formatting
+├── runners/
+│   ├── baseline.ts              # Measure current sequential approach
+│   ├── parallel-experiment.ts   # Test concurrency levels
+│   ├── model-comparison.ts      # Compare models
+│   └── verify-results.ts        # Validate experiment results
+└── results/                     # Output directory (gitignored)
+```
+
+**Running experiments:**
+```bash
+# Baseline (sequential processing)
+bun run experiments/runners/baseline.ts --all
+
+# Parallel experiments (test different concurrency levels)
+bun run experiments/runners/parallel-experiment.ts --concurrency=4
+bun run experiments/runners/parallel-experiment.ts --concurrency=full
+
+# Model comparison
+bun run experiments/runners/model-comparison.ts --all
+```
+
+**Official Gemini pricing** (per 1M tokens):
+| Model | Input | Output |
+|-------|-------|--------|
+| gemini-2.0-flash | $0.10 | $0.40 |
+| gemini-2.5-flash | $0.30 | $2.50 |
+| gemini-3-flash-preview | $0.50 | $3.00 |
+
+**Token counting:** Use `response.usageMetadata.promptTokenCount` and `candidatesTokenCount` for accurate counts.
+
 ### Project Structure
 
 ```
@@ -338,6 +414,11 @@ The UI provides:
 │   ├── review-corrections.html # Correction review tool
 │   ├── tag-vocabulary.html  # Tag vocabulary management UI
 │   └── segment-verification.html # Segment verification tool
+├── experiments/              # Pipeline optimization experiments
+│   ├── config/              # Experiment configuration (pricing, samples)
+│   ├── lib/                 # Shared utilities (accuracy, cost, parallel)
+│   ├── runners/             # Experiment scripts (baseline, parallel, model)
+│   └── results/             # Experiment output (gitignored)
 ├── functions/                # Firebase Cloud Functions
 └── firebase.json             # Firebase project configuration
 ```

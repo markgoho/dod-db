@@ -332,6 +332,10 @@
         background: #d1fae5;
         color: #065f46;
       }
+      .vocab-category-badge.religion {
+        background: #fef9c3;
+        color: #854d0e;
+      }
       .vocab-reprocess-btn {
         font-size: 11px;
         padding: 4px 10px;
@@ -796,30 +800,8 @@
       <div class="section">
         <h2>Tag Vocabulary</h2>
         <div class="category-tabs" id="category-tabs">
-          <div class="category-tab active" onclick="filterVocabulary('all')">
-            All
-          </div>
-          <div class="category-tab" onclick="filterVocabulary('character')">
-            Characters
-          </div>
-          <div class="category-tab" onclick="filterVocabulary('scholar')">
-            Scholars
-          </div>
-          <div class="category-tab" onclick="filterVocabulary('place')">
-            Places
-          </div>
-          <div class="category-tab" onclick="filterVocabulary('people')">
-            People
-          </div>
-          <div class="category-tab" onclick="filterVocabulary('literature')">
-            Literature
-          </div>
-          <div class="category-tab" onclick="filterVocabulary('theology')">
-            Theology
-          </div>
-          <div class="category-tab" onclick="filterVocabulary('scholarship')">
-            Scholarship
-          </div>
+          <!-- Category tabs will be dynamically generated -->
+          <div class="loading">Loading categories...</div>
         </div>
         <div id="vocabulary-container">
           <div class="loading">Loading vocabulary...</div>
@@ -867,14 +849,8 @@
               Category <span style="color: #ef4444;">*</span>
             </label>
             <select id="tag-category" class="form-select" required oninput="validateForm()">
-              <option value="">Select a category...</option>
-              <option value="character">Character</option>
-              <option value="person">Person</option>
-              <option value="place">Place</option>
-              <option value="people">People</option>
-              <option value="literature">Literature</option>
-              <option value="theology">Theology</option>
-              <option value="scholarship">Scholarship</option>
+              <!-- Options will be dynamically generated -->
+              <option value="">Loading categories...</option>
             </select>
           </div>
 
@@ -970,6 +946,9 @@
 
       // Track tag categories from vocabulary (will be populated when vocabulary is loaded)
       let tagCategoryMap = {};
+
+      // Available tag categories (loaded from API)
+      let availableCategories = [];
 
       // Format date for display
       function formatDate(dateString) {
@@ -1157,6 +1136,83 @@
       let allVocabulary = [];
       let currentCategory = 'all';
 
+      // Load available categories from API
+      async function loadCategories() {
+        try {
+          const response = await fetch('/api/tag-vocabulary/categories');
+          if (!response.ok) {
+            throw new Error('Failed to load categories');
+          }
+          availableCategories = await response.json();
+
+          // Render category tabs
+          renderCategoryTabs();
+
+          // Populate category select dropdowns
+          populateCategorySelects();
+        } catch (error) {
+          console.error('Error loading categories:', error);
+          // Fallback to hardcoded categories if API fails
+          availableCategories = ['character', 'person', 'place', 'people', 'literature', 'theology', 'scholarship', 'religion'];
+          renderCategoryTabs();
+          populateCategorySelects();
+        }
+      }
+
+      // Render category tabs dynamically
+      function renderCategoryTabs() {
+        const tabsContainer = document.getElementById('category-tabs');
+        const categoryLabels = {
+          'character': 'Characters',
+          'person': 'Scholars',
+          'place': 'Places',
+          'people': 'People',
+          'literature': 'Literature',
+          'theology': 'Theology',
+          'scholarship': 'Scholarship',
+          'religion': 'Religion',
+        };
+
+        tabsContainer.innerHTML = `
+          <div class="category-tab active" onclick="filterVocabulary('all')">All</div>
+          ${availableCategories.map(cat => `
+            <div class="category-tab" onclick="filterVocabulary('${cat}')">
+              ${categoryLabels[cat] || cat.charAt(0).toUpperCase() + cat.slice(1)}
+            </div>
+          `).join('')}
+        `;
+      }
+
+      // Populate category select dropdowns
+      function populateCategorySelects() {
+        const selects = [
+          document.getElementById('tag-category'),
+          // Proposed tag selects are created dynamically, so we'll handle them separately
+        ];
+
+        const categoryLabels = {
+          'character': 'Character',
+          'person': 'Person',
+          'place': 'Place',
+          'people': 'People',
+          'literature': 'Literature',
+          'theology': 'Theology',
+          'scholarship': 'Scholarship',
+          'religion': 'Religion',
+        };
+
+        selects.forEach(select => {
+          if (select) {
+            select.innerHTML = `
+              <option value="">Select a category...</option>
+              ${availableCategories.map(cat => `
+                <option value="${cat}">${categoryLabels[cat] || cat.charAt(0).toUpperCase() + cat.slice(1)}</option>
+              `).join('')}
+            `;
+          }
+        });
+      }
+
       async function loadVocabulary() {
         try {
           const response = await fetch('/api/tag-vocabulary/vocabulary');
@@ -1255,6 +1311,26 @@
           .split('-')
           .map(word => word.charAt(0).toUpperCase() + word.slice(1))
           .join(' ');
+      }
+
+      // Generate category options for select dropdown with selected value
+      function getCategoryOptions(selectedCategory) {
+        const categoryLabels = {
+          'character': 'Character',
+          'person': 'Person',
+          'place': 'Place',
+          'people': 'People',
+          'literature': 'Literature',
+          'theology': 'Theology',
+          'scholarship': 'Scholarship',
+          'religion': 'Religion',
+        };
+
+        return availableCategories.map(cat =>
+          `<option value="${cat}" ${cat === selectedCategory ? 'selected' : ''}>
+            ${categoryLabels[cat] || cat.charAt(0).toUpperCase() + cat.slice(1)}
+          </option>`
+        ).join('');
       }
 
       // Load and display analytics
@@ -1813,13 +1889,7 @@
               <div class="proposed-row">
                 <label class="proposed-label">Category:</label>
                 <select class="proposed-select" id="proposed-category-${index}">
-                  <option value="character" ${tag.category === 'character' ? 'selected' : ''}>Character</option>
-                  <option value="person" ${tag.category === 'person' ? 'selected' : ''}>Person</option>
-                  <option value="place" ${tag.category === 'place' ? 'selected' : ''}>Place</option>
-                  <option value="people" ${tag.category === 'people' ? 'selected' : ''}>People</option>
-                  <option value="literature" ${tag.category === 'literature' ? 'selected' : ''}>Literature</option>
-                  <option value="theology" ${tag.category === 'theology' ? 'selected' : ''}>Theology</option>
-                  <option value="scholarship" ${tag.category === 'scholarship' ? 'selected' : ''}>Scholarship</option>
+                  ${getCategoryOptions(tag.category)}
                 </select>
               </div>
               <div class="proposed-checkbox-row">
@@ -2004,10 +2074,13 @@
       }
 
       // Initialize on page load
-      loadProposedTags();
-      loadEpisodes();
-      loadVocabulary();
-      loadAnalytics();
+      (async () => {
+        await loadCategories(); // Load categories first
+        loadProposedTags();
+        loadEpisodes();
+        loadVocabulary();
+        loadAnalytics();
+      })();
     </script>
   </body>
 </html>

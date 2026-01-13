@@ -4416,7 +4416,285 @@
       "firstSeen": "2026-01-13T20:16:52.726Z",
       "lastSeen": "2026-01-13T20:16:52.726Z",
       "status": "pending"
+    },
+    "procession→precession": {
+      "original": "procession",
+      "corrected": "precession",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "UHN2ZPsFyoY"
+      ],
+      "examples": [
+        "\"of the procession of the\"",
+        "\"that the procession of the\"",
+        "\"explain what procession is?\""
+      ],
+      "correctedExamples": [
+        "\"of the precession of the\"",
+        "\"that the precession of the\"",
+        "\"explain what precession is?\""
+      ],
+      "timestamps": [
+        "00:35:22.290",
+        "00:37:53.800",
+        "00:38:19.760"
+      ],
+      "episodeIds": [
+        "UHN2ZPsFyoY",
+        "UHN2ZPsFyoY",
+        "UHN2ZPsFyoY"
+      ],
+      "confidence": 25,
+      "firstSeen": "2026-01-13T20:41:05.980Z",
+      "lastSeen": "2026-01-13T20:41:05.980Z",
+      "status": "pending"
+    },
+    "Zechariah→Zecharia": {
+      "original": "Zechariah",
+      "corrected": "Zecharia",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "UHN2ZPsFyoY"
+      ],
+      "examples": [
+        "\"Zechariah Sitchin in\"",
+        "\"But Zechariah Sitchin was\""
+      ],
+      "correctedExamples": [
+        "\"Zecharia Sitchin in\"",
+        "\"But Zecharia Sitchin was\""
+      ],
+      "timestamps": [
+        "00:45:40.170",
+        "00:46:03.080"
+      ],
+      "episodeIds": [
+        "UHN2ZPsFyoY",
+        "UHN2ZPsFyoY"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-13T20:41:05.980Z",
+      "lastSeen": "2026-01-13T20:41:05.980Z",
+      "status": "pending"
+    },
+    "comment→comet": {
+      "original": "comment",
+      "corrected": "comet",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "UHN2ZPsFyoY"
+      ],
+      "examples": [
+        "\"be a comment?\"",
+        "\"at a comment and said,\""
+      ],
+      "correctedExamples": [
+        "\"be a comet?\"",
+        "\"at a comet and said,\""
+      ],
+      "timestamps": [
+        "00:52:09.720",
+        "00:52:15.800"
+      ],
+      "episodeIds": [
+        "UHN2ZPsFyoY",
+        "UHN2ZPsFyoY"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T20:41:05.980Z",
+      "lastSeen": "2026-01-13T20:41:05.980Z",
+      "status": "pending"
+    },
+    "Unseal→uncial": {
+      "original": "Unseal",
+      "corrected": "uncial",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "VTRccZ81UZs"
+      ],
+      "examples": [
+        "\"the great Unseal manuscripts.\"",
+        "\"And unseal is a\""
+      ],
+      "correctedExamples": [
+        "\"the great uncial manuscripts.\"",
+        "\"And uncial is a\""
+      ],
+      "timestamps": [
+        "00:04:27.200",
+        "00:04:37.800"
+      ],
+      "episodeIds": [
+        "VTRccZ81UZs",
+        "VTRccZ81UZs"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T21:17:09.137Z",
+      "lastSeen": "2026-01-13T21:17:09.137Z",
+      "status": "pending"
+    },
+    "Padmos→Patmos": {
+      "original": "Padmos",
+      "corrected": "Patmos",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "VTRccZ81UZs"
+      ],
+      "examples": [
+        "\"It wasn't Padmos.\"",
+        "\"John of Padmos?\""
+      ],
+      "correctedExamples": [
+        "\"It wasn't Patmos?\"",
+        "\"John of Patmos?\""
+      ],
+      "timestamps": [
+        "00:13:34.840",
+        "00:13:35.920"
+      ],
+      "episodeIds": [
+        "VTRccZ81UZs",
+        "VTRccZ81UZs"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T21:17:09.137Z",
+      "lastSeen": "2026-01-13T21:17:09.137Z",
+      "status": "pending"
+    },
+    "Greek Alphabet→Greek alphabet": {
+      "original": "Greek Alphabet",
+      "corrected": "Greek alphabet",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "VTRccZ81UZs"
+      ],
+      "examples": [
+        "\"know their Greek Alphabet, alpha is\"",
+        "\"in the Greek Alphabet and Omega\""
+      ],
+      "correctedExamples": [
+        "\"know their Greek alphabet, Alpha is\"",
+        "\"in the Greek alphabet and Omega\""
+      ],
+      "timestamps": [
+        "00:19:15.520",
+        "00:19:15.520"
+      ],
+      "episodeIds": [
+        "VTRccZ81UZs",
+        "VTRccZ81UZs"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T21:17:09.137Z",
+      "lastSeen": "2026-01-13T21:17:09.137Z",
+      "status": "pending"
+    },
+    "sacrifice→sacrificed": {
+      "original": "sacrifice",
+      "corrected": "sacrificed",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "VTRccZ81UZs"
+      ],
+      "examples": [
+        "\"eat food, sacrifice to idols\"",
+        "\"eating food, sacrifice to idols\"",
+        "\"to food, sacrifice to idols.\""
+      ],
+      "correctedExamples": [
+        "\"eat food sacrificed to idols\"",
+        "\"eating food sacrificed to idols\"",
+        "\"to food sacrificed to idols.\""
+      ],
+      "timestamps": [
+        "00:22:23.940",
+        "00:22:51.000",
+        "00:23:29.590"
+      ],
+      "episodeIds": [
+        "VTRccZ81UZs",
+        "VTRccZ81UZs",
+        "VTRccZ81UZs"
+      ],
+      "confidence": 25,
+      "firstSeen": "2026-01-13T21:17:09.137Z",
+      "lastSeen": "2026-01-13T21:17:09.137Z",
+      "status": "pending"
+    },
+    "anchor Bible→Anchor Bible": {
+      "original": "anchor Bible",
+      "corrected": "Anchor Bible",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "VTRccZ81UZs"
+      ],
+      "examples": [
+        "\"is the anchor Bible commentary on\"",
+        "\"in the anchor Bible commentary if\""
+      ],
+      "correctedExamples": [
+        "\"is the Anchor Bible Commentary on\"",
+        "\"in the Anchor Bible Commentary if\""
+      ],
+      "timestamps": [
+        "00:43:48.650",
+        "00:44:55.860"
+      ],
+      "episodeIds": [
+        "VTRccZ81UZs",
+        "VTRccZ81UZs"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T21:17:09.137Z",
+      "lastSeen": "2026-01-13T21:17:09.137Z",
+      "status": "pending"
+    },
+    "Bible commentary→Bible Commentary": {
+      "original": "Bible commentary",
+      "corrected": "Bible Commentary",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "VTRccZ81UZs"
+      ],
+      "examples": [
+        "\"the anchor Bible commentary on Revelation\"",
+        "\"the anchor Bible commentary if you\""
+      ],
+      "correctedExamples": [
+        "\"the Anchor Bible Commentary on Revelation\"",
+        "\"the Anchor Bible Commentary if you\""
+      ],
+      "timestamps": [
+        "00:43:48.650",
+        "00:44:55.860"
+      ],
+      "episodeIds": [
+        "VTRccZ81UZs",
+        "VTRccZ81UZs"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T21:17:09.137Z",
+      "lastSeen": "2026-01-13T21:17:09.137Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-13T20:16:52.726Z"
+  "lastUpdated": "2026-01-13T21:17:09.138Z"
 }

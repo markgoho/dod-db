@@ -4,14 +4,26 @@
  * in episode transcripts without needing LLM assistance.
  */
 
-export type TagCategory =
-	| 'character'
-	| 'person'
-	| 'place'
-	| 'people'
-	| 'literature'
-	| 'theology'
-	| 'scholarship';
+/**
+ * All available tag categories.
+ * This is the single source of truth for tag categories used throughout the system.
+ */
+export const TAG_CATEGORIES = [
+	'character',
+	'person',
+	'place',
+	'people',
+	'literature',
+	'theology',
+	'scholarship',
+	'religion',
+] as const;
+
+/**
+ * Tag category type inferred from TAG_CATEGORIES array.
+ * This ensures the type stays in sync with the array automatically.
+ */
+export type TagCategory = typeof TAG_CATEGORIES[number];
 
 /**
  * Tag status for the learning workflow.
@@ -258,8 +270,27 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Saint Titus', variations: ['Titus'], category: 'character', llmVerify: true, description: 'early Christian missionary and church leader, a companion and disciple of Paul the Apostle', status: 'accepted' },
 	{ canonical: 'Julius Wellhausen', variations: ['Wellhausen'], category: 'person', llmVerify: true, description: 'German biblical scholar and orientalist', status: 'accepted' },
 	{ canonical: 'Philistines', variations: [], category: 'people', status: 'accepted' },
-	{ canonical: 'King Josiah', variations: ['Josiah'], category: 'character', llmVerify: true, description: 'the 16th king of Judah (c. 640–609 BCE). Described as one of Judah’s most important kings', status: 'accepted' },
-  { canonical: 'scribes', variations: [], status: 'rejected', category: 'people'}
+	{ canonical: 'King Josiah', variations: ['Josiah'], category: 'character', llmVerify: true, description: 'the 16th king of Judah (c. 640-609 BCE). Described as one of Judah’s most important kings', status: 'accepted' },
+  { canonical: 'scribes', variations: [], status: 'rejected', category: 'people'},
+	{ canonical: 'Bethlehem', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'Wise Men', variations: [], category: 'character', status: 'rejected' },
+	{ canonical: 'Herod the Great', variations: ['Herod'], category: 'person', llmVerify: true, description: 'Herod Ior Herod the Great (c.72- c. 4 BCE) was a Roman Jewish client king of the Herodian kingdom of Judea', status: 'accepted' },
+	{ canonical: 'Gospel of Matthew', variations: ['Matthew'], category: 'literature', llmVerify: true, description: 'a direct reference to the book of matthew, chapter and verse, or generically to the first book of the new testament and NOT referring to the person Matthew in the new testament', status: 'accepted' },
+	{ canonical: 'Dr. Aaron Adair', variations: ['Aaron Adair'], category: 'person', status: 'accepted' },
+	{ canonical: 'Judaism', variations: [], category: 'religion', status: 'accepted' },
+	{ canonical: 'Virgin Birth', variations: [], category: 'theology', llmVerify: true, description: 'referring specifically to the Virgin Birth of Mary, the mother of Jesus', status: 'accepted' },
+	{ canonical: 'gospel', variations: [], category: 'literature', status: 'rejected' },
+	{ canonical: 'east', variations: [], category: 'place', status: 'rejected' },
+	{ canonical: 'Gospel of James', variations: ['protevangelium of james'], category: 'literature', llmVerify: true, description: 'a second-century infancy gospel telling of the miraculous conception of Mary, the mother of Jesus, her upbringing and marriage to Joseph, the journey of the couple to Bethlehem, the birth of Jesus, and events immediately following.', status: 'accepted' },
+	{ canonical: 'Judeans', variations: ['Judean'], category: 'people', status: 'accepted' },
+	{ canonical: 'Persia', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'dragon', variations: [], category: 'character', status: 'rejected' },
+	{ canonical: 'Codex Sinaiticus', variations: [], category: 'literature', status: 'accepted' },
+	{ canonical: 'Theosis', variations: [], category: 'theology', status: 'accepted' },
+	{ canonical: 'Anatolia', variations: [], category: 'place', llmVerify: true, description: 'also known as Asia Minor, is the large peninsula forming the Asian part of modern-day Turkey', status: 'accepted' },
+	{ canonical: 'lake of fire', variations: [], category: 'theology', status: 'rejected' },
+	{ canonical: 'Domitian', variations: [], category: 'person', status: 'accepted' },
+	{ canonical: 'Nero', variations: [], category: 'person', llmVerify: true, description: 'Roman emperor and the final emperor of the Julio-Claudian dynasty, reigning from AD 54 until his death in AD 68', status: 'accepted' },
 ];
 
 /**

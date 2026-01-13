@@ -6,10 +6,11 @@
 import {
 	loadProcessedVideos,
 	saveProcessedVideos,
-	
+
 } from '../storage/processed-videos.js';
 import { extractTags } from './extract-tags.js';
 import { tagVocabulary, type TagCategory } from '../config/tag-vocabulary.js';
+import { sortTags } from '../utils/tag-utils.js';
 
 export interface ReprocessOptions {
 	/** If true, reprocess episodes that already have tags */
@@ -149,8 +150,7 @@ export async function reprocessEpisodes(
 				});
 
 				// Merge: new extracted tags + preserved verified tags
-				// Sort by mentions (descending) to maintain consistent ordering
-				video.tags = [...tags, ...preservedTags].sort((a, b) => b.mentions - a.mentions);
+				video.tags = sortTags([...tags, ...preservedTags]);
 			} else {
 				// Normal replacement (not using skipLlm, or no existing tags to preserve)
 				video.tags = tags;

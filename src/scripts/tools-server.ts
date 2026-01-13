@@ -20,7 +20,7 @@ import {
   updateVideoSegments,
   type EpisodeSegment,
 } from '../storage/processed-videos.js';
-import { tagVocabulary } from '../config/tag-vocabulary.js';
+import { tagVocabulary, TAG_CATEGORIES } from '../config/tag-vocabulary.js';
 import { reprocessEpisodes } from '../pipeline/reprocess-episodes.js';
 import { addTagToEpisodes } from '../pipeline/add-tag-to-episodes.js';
 import {
@@ -462,6 +462,11 @@ const _server = Bun.serve({
     // Tag Vocabulary API: Get tag vocabulary
     if (url.pathname === '/api/tag-vocabulary/vocabulary') {
       return Response.json(tagVocabulary);
+    }
+
+    // Tag Vocabulary API: Get available categories
+    if (url.pathname === '/api/tag-vocabulary/categories') {
+      return Response.json(TAG_CATEGORIES);
     }
 
     // Tag Vocabulary API: Get tag statistics
