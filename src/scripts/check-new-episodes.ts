@@ -81,11 +81,11 @@ async function main() {
         `https://www.youtube.com/watch?v=${videoId}`,
       );
 
-      if (!result.skipped) {
+      if (result.skipped) {
+        skippedCount++;
+      } else {
         console.log(`✓ Processed: ${result.metadata.title}`);
         processedCount++;
-      } else {
-        skippedCount++;
       }
     } catch (error) {
       console.error(`✗ Error processing ${videoId}:`, error);

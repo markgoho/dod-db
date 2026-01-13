@@ -9,7 +9,7 @@ async function migrate() {
   const tracker = await loadTracker();
 
   let updated = 0;
-  for (const [key, candidate] of Object.entries(tracker.candidates)) {
+  for (const [_key, candidate] of Object.entries(tracker.candidates)) {
     if (!('status' in candidate)) {
       // @ts-expect-error - Adding new field
       candidate.status = 'pending';

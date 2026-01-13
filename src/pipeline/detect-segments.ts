@@ -20,8 +20,8 @@ export async function getAudioDuration(videoId: string): Promise<number | null> 
   // Try common audio extensions
   const extensions = ['.m4a', '.webm', '.mp3', '.wav'];
 
-  for (const ext of extensions) {
-    const audioPath = join(audioDir, `${videoId}${ext}`);
+  for (const extension of extensions) {
+    const audioPath = join(audioDir, `${videoId}${extension}`);
     const file = Bun.file(audioPath);
 
     if (await file.exists()) {
@@ -95,8 +95,7 @@ function parseTranscript(transcript: string): TranscriptLine[] {
   // Milliseconds are optional
   const linePattern = /^\s*\[(\d{2}:\d{2}:\d{2}(?:\.\d{3})?)\]\s*([^:]+):\s*(.*)$/;
 
-  for (let i = 0; i < lines.length; i++) {
-    const rawLine = lines[i];
+  for (const [index, rawLine] of lines.entries()) {
     if (!rawLine) continue;
     const line = rawLine.trim();
     if (!line) continue;
@@ -112,7 +111,7 @@ function parseTranscript(transcript: string): TranscriptLine[] {
         timestamp: `[${timestamp}]`,
         speaker: match[2].trim(),
         text: match[3].trim(),
-        lineNumber: i + 1,
+        lineNumber: index + 1,
       });
     }
   }
@@ -125,7 +124,7 @@ function parseTranscript(transcript: string): TranscriptLine[] {
  */
 function timestampToSeconds(timestamp: string): number {
   // Remove brackets: "[00:01:23.456]" -> "00:01:23.456"
-  const clean = timestamp.replace(/[[\]]/g, '');
+  const clean = timestamp.replaceAll(/[[\]]/g, '');
   const parts = clean.split(':');
   const hours = Number.parseInt(parts[0] ?? '0', 10);
   const minutes = Number.parseInt(parts[1] ?? '0', 10);
@@ -211,7 +210,7 @@ export function detectSegments(
   const matches = findSegmentMatches(lines);
 
   // Get last timestamp - use actual duration if provided, otherwise fall back to last transcript line
-  const lastLine = lines[lines.length - 1]!;
+  const lastLine = lines.at(-1)!;
   const episodeEndTimestamp = durationSeconds
     ? secondsToTimestamp(durationSeconds)
     : lastLine.timestamp;
@@ -233,10 +232,10 @@ export function detectSegments(
   });
 
   // Process segment matches
-  for (let i = 0; i < matches.length; i++) {
-    const match = matches[i];
+  for (let index = 0; index < matches.length; index++) {
+    const match = matches[index];
     if (!match) continue;
-    const nextMatch = matches[i + 1];
+    const nextMatch = matches[index + 1];
 
     // Determine end timestamp
     let endTimestamp: string | null = null;
@@ -257,7 +256,7 @@ export function detectSegments(
 
   // Ensure the last segment ends at the episode's end
   if (segments.length > 0) {
-    const lastSegment = segments[segments.length - 1]!;
+    const lastSegment = segments.at(-1)!;
     if (!lastSegment.endTimestamp) {
       lastSegment.endTimestamp = episodeEndTimestamp;
     }
@@ -301,5 +300,5 @@ export function getSegmentStats(segments: Segment[]): {
  */
 export function formatTimestamp(timestamp: string): string {
   // "[00:01:23.456]" -> "00:01:23"
-  return timestamp.replace(/\.\d{3}/, '').replace(/[[\]]/g, '');
+  return timestamp.replace(/\.\d{3}/, '').replaceAll(/[[\]]/g, '');
 }

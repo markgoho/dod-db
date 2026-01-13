@@ -23,10 +23,10 @@ async function main() {
 	const verbose = process.argv.includes('--verbose');
 
 	// Parse --categories flag
-	const categoriesArg = process.argv.find((arg) => arg.startsWith('--categories='));
+	const categoriesArgument = process.argv.find((argument) => argument.startsWith('--categories='));
 	let categories: TagCategory[] | undefined;
-	if (categoriesArg) {
-		const categoryList = categoriesArg.split('=')[1];
+	if (categoriesArgument) {
+		const categoryList = categoriesArgument.split('=')[1] ?? '';
 		categories = categoryList.split(',').map((c) => c.trim()) as TagCategory[];
 	}
 

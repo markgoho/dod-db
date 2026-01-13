@@ -10,19 +10,19 @@
 
 import { processYouTubeVideo } from '../pipeline/youtube-processor.js';
 
-const args = process.argv.slice(2);
-const videoUrl = args[0];
-const force = args.includes('--force');
+const arguments_ = process.argv.slice(2);
+const videoUrl = arguments_[0];
+const force = arguments_.includes('--force');
 
 // Parse --start-from flag
-const startFromIndex = args.findIndex((arg) =>
-  arg.startsWith('--start-from'),
+const startFromIndex = arguments_.findIndex((argument) =>
+  argument.startsWith('--start-from'),
 );
-let startFrom: 'correct' | 'segment-detection' | undefined = undefined;
+let startFrom: 'correct' | 'segment-detection' | undefined;
 if (startFromIndex !== -1) {
-  const value = args[startFromIndex]?.includes('=')
-    ? args[startFromIndex]?.split('=')[1]
-    : args[startFromIndex + 1];
+  const value = arguments_[startFromIndex]?.includes('=')
+    ? arguments_[startFromIndex]?.split('=')[1]
+    : arguments_[startFromIndex + 1];
   if (value !== 'correct' && value !== 'segment-detection') {
     console.error('Error: --start-from only supports "correct" or "segment-detection" stages');
     console.error('');

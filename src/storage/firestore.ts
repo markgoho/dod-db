@@ -1,11 +1,11 @@
 import { FieldValue } from 'firebase-admin/firestore';
 import { chunk } from 'llm-chunk';
 import { embeddingChunking } from '../config/chunking.js';
-import { getFirestoreDb } from '../config/firebase.js';
+import { getFirestoreDb as getFirestoreDatabase } from '../config/firebase.js';
 import { embedderModel } from '../config/models.js';
 import { ai } from '../ai.js';
 
-const firestore = getFirestoreDb();
+const firestore = getFirestoreDatabase();
 
 /**
  * Index a transcript in Firestore with vector embeddings.

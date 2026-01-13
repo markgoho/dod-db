@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags - Episode - Data Over Dogma Tools</title>
+    <link rel="stylesheet" href="/shared/styles.css" />
+    <style>
+      /* Page-specific styles */
+      .two-column {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      @media (min-width: 1024px) {
+        .two-column {
+          grid-template-columns: 2fr 1fr;
+        }
+      }
+
+      .category-tabs {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 24px;
+        overflow-x: auto;
+        padding-bottom: 8px;
+      }
+
+      .category-tab {
+        padding: 10px 20px;
+        border: 2px solid var(--color-gray-200);
+        border-radius: var(--radius-md);
+        background: white;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-gray-500);
+        cursor: pointer;
+        transition: all 0.2s;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .category-tab:hover {
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+      }
+
+      .category-tab.active {
+        background: var(--color-gradient);
+        border-color: transparent;
+        color: white;
+      }
+
+      .tags-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
+      }
+
+      .tag-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 16px;
+        background: var(--color-gray-50);
+        border-radius: var(--radius-md);
+        border: 1px solid var(--color-gray-200);
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+
+      .tag-card:hover {
+        background: white;
+        border-color: var(--color-primary);
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .tag-card.character { background: #fff7ed; border-color: #fed7aa; }
+      .tag-card.person { background: #fdf4ff; border-color: #f5d0fe; }
+      .tag-card.place { background: #fffbeb; border-color: #fde68a; }
+      .tag-card.people { background: #f0fdfa; border-color: #99f6e4; }
+      .tag-card.literature { background: #fdf2f8; border-color: #fbcfe8; }
+      .tag-card.theology { background: #faf5ff; border-color: #e9d5ff; }
+      .tag-card.scholarship { background: #ecfdf5; border-color: #a7f3d0; }
+
+      .tag-info {
+        flex: 1;
+      }
+
+      .tag-name {
+        font-weight: 600;
+        color: var(--color-gray-800);
+        margin-bottom: 2px;
+      }
+
+      .tag-category-label {
+        font-size: 11px;
+        color: var(--color-gray-500);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .tag-mentions {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--color-primary);
+        background: white;
+        padding: 6px 12px;
+        border-radius: var(--radius-full);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .sidebar-section {
+        background: white;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-lg);
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+
+      .sidebar-section h3 {
+        font-size: 18px;
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--color-gray-200);
+      }
+
+      .form-group {
+        margin-bottom: 16px;
+      }
+
+      .form-label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-gray-700);
+        margin-bottom: 6px;
+      }
+
+      .form-input, .form-select {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid var(--color-gray-200);
+        border-radius: var(--radius-md);
+        font-size: 14px;
+        font-family: inherit;
+      }
+
+      .form-input:focus, .form-select:focus {
+        outline: none;
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+      }
+
+      .form-hint {
+        font-size: 12px;
+        color: var(--color-gray-500);
+        margin-top: 4px;
+      }
+
+      .checkbox-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+
+      .checkbox-group input {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+      }
+
+      .checkbox-group label {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-gray-700);
+        cursor: pointer;
+      }
+
+      .tag-detail-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      }
+
+      .tag-detail-modal.show {
+        display: flex;
+      }
+
+      .tag-detail-content {
+        background: white;
+        border-radius: var(--radius-lg);
+        padding: 32px;
+        max-width: 500px;
+        width: 90%;
+        max-height: 80vh;
+        overflow-y: auto;
+      }
+
+      .tag-detail-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 24px;
+      }
+
+      .tag-detail-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--color-gray-800);
+      }
+
+      .close-modal {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--color-gray-500);
+        padding: 0;
+        line-height: 1;
+      }
+
+      .close-modal:hover {
+        color: var(--color-gray-800);
+      }
+
+      .detail-row {
+        margin-bottom: 16px;
+      }
+
+      .detail-label {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--color-gray-500);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 4px;
+      }
+
+      .detail-value {
+        font-size: 16px;
+        color: var(--color-gray-800);
+      }
+
+      .variations-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .variation-badge {
+        font-size: 13px;
+        padding: 4px 10px;
+        background: var(--color-gray-100);
+        border-radius: var(--radius-full);
+        color: var(--color-gray-700);
+      }
+
+      .migration-status {
+        margin-top: 16px;
+        padding: 12px;
+        border-radius: var(--radius-md);
+        background: var(--color-gray-50);
+        display: none;
+      }
+
+      .migration-status.show {
+        display: block;
+      }
+
+      .migration-logs {
+        font-family: var(--font-mono);
+        font-size: 12px;
+        max-height: 200px;
+        overflow-y: auto;
+        white-space: pre-wrap;
+        margin-top: 8px;
+        padding: 8px;
+        background: var(--color-gray-800);
+        color: var(--color-gray-200);
+        border-radius: var(--radius-sm);
+      }
+
+      .summary-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+
+      .summary-stat {
+        text-align: center;
+        padding: 16px;
+        background: var(--color-gray-50);
+        border-radius: var(--radius-md);
+      }
+
+      .summary-stat-value {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+
+      .summary-stat-label {
+        font-size: 12px;
+        color: var(--color-gray-500);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-wide">
+      <div class="section" style="background: transparent; box-shadow: none; padding: 0;">
+        <nav class="breadcrumbs" id="breadcrumbs">
+          <a href="/">Episodes</a>
+          <span class="separator">&gt;</span>
+          <a href="#" id="breadcrumb-episode">Episode</a>
+          <span class="separator">&gt;</span>
+          <span class="current">Tags</span>
+        </nav>
+
+        <h1 id="page-title">Episode Tags</h1>
+        <p class="subtitle">Manage tags for this episode</p>
+      </div>
+
+      <div class="two-column">
+        <div>
+          <div class="section">
+            <div class="summary-stats">
+              <div class="summary-stat">
+                <div class="summary-stat-value" id="total-tags">-</div>
+                <div class="summary-stat-label">Tags</div>
+              </div>
+              <div class="summary-stat">
+                <div class="summary-stat-value" id="total-mentions">-</div>
+                <div class="summary-stat-label">Mentions</div>
+              </div>
+              <div class="summary-stat">
+                <div class="summary-stat-value" id="categories-count">-</div>
+                <div class="summary-stat-label">Categories</div>
+              </div>
+            </div>
+
+            <div class="category-tabs" id="category-tabs">
+              <div class="category-tab active" data-category="all">All</div>
+              <div class="category-tab" data-category="character">Characters</div>
+              <div class="category-tab" data-category="person">Persons</div>
+              <div class="category-tab" data-category="place">Places</div>
+              <div class="category-tab" data-category="people">People</div>
+              <div class="category-tab" data-category="literature">Literature</div>
+              <div class="category-tab" data-category="theology">Theology</div>
+              <div class="category-tab" data-category="scholarship">Scholarship</div>
+            </div>
+
+            <div class="tags-grid" id="tags-container">
+              <div class="loading">Loading tags...</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar-section">
+            <h3>Add New Tag</h3>
+            <form id="add-tag-form">
+              <div class="form-group">
+                <label class="form-label" for="tag-canonical">Canonical Name *</label>
+                <input type="text" id="tag-canonical" class="form-input" placeholder="e.g., Hezekiah" required />
+                <div class="form-hint">Primary form of the tag</div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="tag-variations">Variations</label>
+                <input type="text" id="tag-variations" class="form-input" placeholder="e.g., Hezekiah's, King Hezekiah" />
+                <div class="form-hint">Comma-separated alternatives</div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="tag-category">Category *</label>
+                <select id="tag-category" class="form-select" required>
+                  <option value="">Select...</option>
+                  <option value="character">Character</option>
+                  <option value="person">Person</option>
+                  <option value="place">Place</option>
+                  <option value="people">People</option>
+                  <option value="literature">Literature</option>
+                  <option value="theology">Theology</option>
+                  <option value="scholarship">Scholarship</option>
+                </select>
+              </div>
+
+              <div class="checkbox-group">
+                <input type="checkbox" id="tag-llm-verify" onchange="toggleDescription()" />
+                <label for="tag-llm-verify">Use LLM verification</label>
+              </div>
+              <div class="form-hint" style="margin-bottom: 12px; margin-top: -8px;">For ambiguous names like "David" or "John"</div>
+
+              <div class="form-group" id="description-group" style="display: none;">
+                <label class="form-label" for="tag-description">Description *</label>
+                <textarea id="tag-description" class="form-input" rows="2" placeholder="Brief description for AI context"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Add Tag</button>
+
+              <div class="migration-status" id="add-tag-status">
+                <div id="add-tag-status-badge"></div>
+                <div class="migration-logs" id="add-tag-logs"></div>
+              </div>
+            </form>
+          </div>
+
+          <div class="sidebar-section">
+            <h3>Reprocess Tags</h3>
+            <p style="font-size: 14px; color: var(--color-gray-600); margin-bottom: 16px;">
+              Re-run tag extraction for this episode using current vocabulary.
+            </p>
+            <button class="btn btn-secondary" style="width: 100%;" onclick="reprocessEpisode()">
+              Reprocess This Episode
+            </button>
+            <div class="migration-status" id="reprocess-status">
+              <div id="reprocess-status-badge"></div>
+              <div class="migration-logs" id="reprocess-logs"></div>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <h3>Quick Links</h3>
+            <p style="font-size: 14px; color: var(--color-gray-600); margin-bottom: 12px;">
+              For bulk operations and vocabulary management:
+            </p>
+            <a href="/tag-vocabulary" class="btn btn-secondary" style="width: 100%; text-align: center;">
+              Open Tag Vocabulary Manager
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tag Detail Modal -->
+    <div class="tag-detail-modal" id="tag-modal">
+      <div class="tag-detail-content">
+        <div class="tag-detail-header">
+          <div class="tag-detail-title" id="modal-title">Tag Name</div>
+          <button class="close-modal" onclick="closeModal()">x</button>
+        </div>
+        <div id="modal-content"></div>
+        <div style="margin-top: 24px; display: flex; gap: 12px;">
+          <button class="btn btn-secondary" style="flex: 1;" onclick="reprocessTag()">Reprocess Tag</button>
+          <button class="btn btn-secondary" style="flex: 1;" onclick="closeModal()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module">
+      import { DoDTools } from '/shared/utilities.js';
+
+      const videoId = DoDTools.getVideoIdFromUrl();
+      let episode = null;
+      let vocabulary = [];
+      let currentCategory = 'all';
+      let selectedTag = null;
+      let addTagJobId = null;
+      let reprocessJobId = null;
+
+      async function init() {
+        if (!videoId) {
+          document.getElementById('tags-container').innerHTML =
+            '<div class="empty-state"><div class="empty-state-text">Invalid episode URL</div></div>';
+          return;
+        }
+
+        try {
+          const [episodeData, vocabData] = await Promise.all([
+            DoDTools.getEpisode(videoId),
+            fetch('/api/tag-vocabulary/vocabulary').then(r => r.json())
+          ]);
+
+          episode = episodeData;
+          vocabulary = vocabData;
+
+          if (!episode) {
+            document.getElementById('tags-container').innerHTML =
+              '<div class="empty-state"><div class="empty-state-text">Episode not found</div></div>';
+            return;
+          }
+
+          // Update breadcrumb
+          const breadcrumbEpisode = document.getElementById('breadcrumb-episode');
+          breadcrumbEpisode.href = `/episode/${videoId}`;
+          breadcrumbEpisode.textContent = `Episode ${episode.episodeNumber || '?'}`;
+
+          document.getElementById('page-title').textContent =
+            `Episode ${episode.episodeNumber || '?'}: Tags`;
+          document.title = `Tags - Episode ${episode.episodeNumber || '?'} - DoD Tools`;
+
+          updateStats();
+          renderTags();
+          setupEventListeners();
+        } catch (error) {
+          console.error('Failed to load tags:', error);
+          document.getElementById('tags-container').innerHTML =
+            '<div class="empty-state"><div class="empty-state-text">Failed to load tags</div></div>';
+        }
+      }
+
+      function updateStats() {
+        const tags = episode.tags || [];
+        const totalMentions = tags.reduce((sum, t) => sum + t.mentions, 0);
+        const categories = new Set(tags.map(t => getTagCategory(t.tag)));
+
+        document.getElementById('total-tags').textContent = tags.length;
+        document.getElementById('total-mentions').textContent = totalMentions;
+        document.getElementById('categories-count').textContent = categories.size;
+      }
+
+      function getTagCategory(tagName) {
+        const vocabEntry = vocabulary.find(v =>
+          v.canonical.toLowerCase() === tagName.toLowerCase()
+        );
+        return vocabEntry?.category || 'other';
+      }
+
+      function getTagVocabEntry(tagName) {
+        return vocabulary.find(v =>
+          v.canonical.toLowerCase() === tagName.toLowerCase()
+        );
+      }
+
+      function setupEventListeners() {
+        // Category tabs
+        document.querySelectorAll('.category-tab').forEach(tab => {
+          tab.addEventListener('click', () => {
+            document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            currentCategory = tab.dataset.category;
+            renderTags();
+          });
+        });
+
+        // Add tag form
+        document.getElementById('add-tag-form').addEventListener('submit', addTag);
+      }
+
+      function renderTags() {
+        const container = document.getElementById('tags-container');
+        let tags = episode.tags || [];
+
+        if (currentCategory !== 'all') {
+          tags = tags.filter(t => getTagCategory(t.tag) === currentCategory);
+        }
+
+        if (tags.length === 0) {
+          container.innerHTML = '<div class="empty-state" style="grid-column: 1 / -1;"><div class="empty-state-text">No tags in this category</div></div>';
+          return;
+        }
+
+        // Sort by mentions
+        tags = [...tags].sort((a, b) => b.mentions - a.mentions);
+
+        container.innerHTML = tags.map(tag => {
+          const category = getTagCategory(tag.tag);
+          return `
+            <div class="tag-card ${category}" onclick="showTagDetail('${DoDTools.escapeHtml(tag.tag)}')">
+              <div class="tag-info">
+                <div class="tag-name">${DoDTools.escapeHtml(tag.tag)}</div>
+                <div class="tag-category-label">${category}</div>
+              </div>
+              <div class="tag-mentions">${tag.mentions}</div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      window.showTagDetail = function(tagName) {
+        const tag = episode.tags?.find(t => t.tag === tagName);
+        const vocabEntry = getTagVocabEntry(tagName);
+        selectedTag = tagName;
+
+        document.getElementById('modal-title').textContent = tagName;
+
+        let html = `
+          <div class="detail-row">
+            <div class="detail-label">Mentions in Episode</div>
+            <div class="detail-value">${tag?.mentions || 0}</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Category</div>
+            <div class="detail-value">${vocabEntry?.category || 'Unknown'}</div>
+          </div>
+        `;
+
+        if (vocabEntry?.variations?.length > 0) {
+          html += `
+            <div class="detail-row">
+              <div class="detail-label">Variations</div>
+              <div class="variations-list">
+                ${vocabEntry.variations.map(v => `<span class="variation-badge">${DoDTools.escapeHtml(v)}</span>`).join('')}
+              </div>
+            </div>
+          `;
+        }
+
+        if (vocabEntry?.description) {
+          html += `
+            <div class="detail-row">
+              <div class="detail-label">Description</div>
+              <div class="detail-value">${DoDTools.escapeHtml(vocabEntry.description)}</div>
+            </div>
+          `;
+        }
+
+        if (vocabEntry?.llmVerify) {
+          html += `
+            <div class="detail-row">
+              <div class="detail-value" style="color: var(--color-primary); font-size: 14px;">
+                LLM verification enabled for this tag
+              </div>
+            </div>
+          `;
+        }
+
+        document.getElementById('modal-content').innerHTML = html;
+        document.getElementById('tag-modal').classList.add('show');
+      };
+
+      window.closeModal = function() {
+        document.getElementById('tag-modal').classList.remove('show');
+        selectedTag = null;
+      };
+
+      window.toggleDescription = function() {
+        const checkbox = document.getElementById('tag-llm-verify');
+        const descGroup = document.getElementById('description-group');
+        descGroup.style.display = checkbox.checked ? 'block' : 'none';
+      };
+
+      async function addTag(e) {
+        e.preventDefault();
+
+        const canonical = document.getElementById('tag-canonical').value.trim();
+        const variations = document.getElementById('tag-variations').value.trim();
+        const category = document.getElementById('tag-category').value;
+        const llmVerify = document.getElementById('tag-llm-verify').checked;
+        const description = document.getElementById('tag-description').value.trim();
+
+        if (!canonical || !category) {
+          DoDTools.showToast('Please fill required fields', 'error');
+          return;
+        }
+
+        if (llmVerify && !description) {
+          DoDTools.showToast('Description required for LLM verification', 'error');
+          return;
+        }
+
+        try {
+          const response = await fetch('/api/tag-vocabulary/vocabulary/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ canonical, variations, category, llmVerify, description })
+          });
+
+          const data = await response.json();
+
+          if (response.ok) {
+            DoDTools.showToast(`Tag "${canonical}" added`, 'success');
+            addTagJobId = data.jobId;
+
+            // Show status and poll for updates
+            const statusEl = document.getElementById('add-tag-status');
+            statusEl.classList.add('show');
+            pollJobStatus(addTagJobId, 'add-tag');
+
+            // Clear form
+            document.getElementById('add-tag-form').reset();
+            document.getElementById('description-group').style.display = 'none';
+          } else {
+            DoDTools.showToast(data.error || 'Failed to add tag', 'error');
+          }
+        } catch (error) {
+          console.error('Add tag error:', error);
+          DoDTools.showToast('Failed to add tag', 'error');
+        }
+      }
+
+      window.reprocessTag = async function() {
+        if (!selectedTag) return;
+
+        try {
+          const response = await fetch(`/api/tag-vocabulary/reprocess-tag/${encodeURIComponent(selectedTag)}`, {
+            method: 'POST'
+          });
+
+          const data = await response.json();
+
+          if (response.ok) {
+            DoDTools.showToast(`Reprocessing "${selectedTag}"`, 'success');
+            closeModal();
+            // Poll and refresh
+            await pollJobUntilDone(data.jobId);
+            await refreshEpisode();
+          } else {
+            DoDTools.showToast(data.error || 'Failed to reprocess', 'error');
+          }
+        } catch (error) {
+          console.error('Reprocess error:', error);
+          DoDTools.showToast('Failed to reprocess tag', 'error');
+        }
+      };
+
+      window.reprocessEpisode = async function() {
+        try {
+          const response = await fetch('/api/tag-vocabulary/migrate', {
+            method: 'POST'
+          });
+
+          const data = await response.json();
+
+          if (response.ok) {
+            DoDTools.showToast('Reprocessing started', 'success');
+            reprocessJobId = data.jobId;
+
+            const statusEl = document.getElementById('reprocess-status');
+            statusEl.classList.add('show');
+            pollJobStatus(reprocessJobId, 'reprocess');
+          } else {
+            DoDTools.showToast(data.error || 'Failed to start reprocessing', 'error');
+          }
+        } catch (error) {
+          console.error('Reprocess error:', error);
+          DoDTools.showToast('Failed to start reprocessing', 'error');
+        }
+      };
+
+      async function pollJobStatus(jobId, prefix) {
+        const badgeEl = document.getElementById(`${prefix}-status-badge`);
+        const logsEl = document.getElementById(`${prefix}-logs`);
+
+        const poll = async () => {
+          try {
+            const response = await fetch(`/api/tag-vocabulary/migrate-status/${jobId}`);
+            const data = await response.json();
+
+            badgeEl.innerHTML = `<span class="status-badge ${data.status}">${data.status}</span>`;
+            logsEl.textContent = data.logs || '';
+            logsEl.scrollTop = logsEl.scrollHeight;
+
+            if (data.status === 'running') {
+              setTimeout(poll, 1000);
+            } else {
+              // Refresh episode data
+              await refreshEpisode();
+            }
+          } catch (error) {
+            console.error('Poll error:', error);
+          }
+        };
+
+        poll();
+      }
+
+      async function pollJobUntilDone(jobId) {
+        return new Promise((resolve) => {
+          const poll = async () => {
+            try {
+              const response = await fetch(`/api/tag-vocabulary/migrate-status/${jobId}`);
+              const data = await response.json();
+
+              if (data.status === 'running') {
+                setTimeout(poll, 1000);
+              } else {
+                resolve();
+              }
+            } catch {
+              resolve();
+            }
+          };
+          poll();
+        });
+      }
+
+      async function refreshEpisode() {
+        try {
+          episode = await DoDTools.getEpisode(videoId);
+          updateStats();
+          renderTags();
+        } catch (error) {
+          console.error('Refresh error:', error);
+        }
+      }
+
+      // Close modal on escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+      });
+
+      // Close modal on backdrop click
+      document.getElementById('tag-modal').addEventListener('click', (e) => {
+        if (e.target.id === 'tag-modal') closeModal();
+      });
+
+      init();
+    </script>
+  </body>
+</html>

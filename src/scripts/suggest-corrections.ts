@@ -27,7 +27,7 @@ async function suggestCorrections(originalPath: string, correctedTerm: string) {
     const words = lowerLine.split(/\s+/);
     for (const word of words) {
       // Remove punctuation
-      const cleanWord = word.replace(/[.,!?;:()[\]]/g, '');
+      const cleanWord = word.replaceAll(/[.,!?;:()[\]]/g, '');
       if (
         cleanWord.startsWith(lowerTerm.slice(0, 3)) &&
         cleanWord !== lowerTerm

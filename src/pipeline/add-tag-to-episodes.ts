@@ -6,7 +6,6 @@
 import {
 	loadProcessedVideos,
 	saveProcessedVideos,
-	type EpisodeTag,
 } from '../storage/processed-videos.js';
 import { extractSingleTag } from './extract-single-tag.js';
 
@@ -52,8 +51,9 @@ export async function addTagToEpisodes(
 	let totalMentions = 0;
 	let failed = 0;
 
-	for (let i = 0; i < videos.length; i++) {
-		const video = videos[i];
+	for (let index = 0; index < videos.length; index++) {
+		const video = videos[index];
+		if (!video) continue;
 
 		if (verbose) {
 			console.log(`\n📄 Processing ${video.videoId}: ${video.title}`);
@@ -116,12 +116,12 @@ export async function addTagToEpisodes(
 				if (errorMessage.includes('429') || errorMessage.includes('RESOURCE_EXHAUSTED')) {
 					retryCount++;
 					if (retryCount <= maxRetries) {
-						console.error(`\n  ⚠️  Rate limit hit on episode ${i + 1}/${videos.length}! Waiting 60s (retry ${retryCount}/${maxRetries})...`);
-						await new Promise(resolve => setTimeout(resolve, 60000));
-						console.log(`  🔄 Retrying episode ${i + 1}...\n`);
+						console.error(`\n  ⚠️  Rate limit hit on episode ${index + 1}/${videos.length}! Waiting 60s (retry ${retryCount}/${maxRetries})...`);
+						await new Promise(resolve => setTimeout(resolve, 60_000));
+						console.log(`  🔄 Retrying episode ${index + 1}...\n`);
 						// Loop will retry
 					} else {
-						console.error(`  ❌ Max retries reached for episode ${i + 1}`);
+						console.error(`  ❌ Max retries reached for episode ${index + 1}`);
 						failed++;
 						break;
 					}

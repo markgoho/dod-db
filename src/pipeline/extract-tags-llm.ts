@@ -29,7 +29,7 @@ export async function extractTagsLlm(
 	// Build comprehensive exclusion set from vocabulary (canonical + all variations)
 	const vocabularyTerms = getAllSearchableTerms(tagVocabulary);
 	const allKnownTerms = new Set<string>();
-	for (const term of Array.from(vocabularyTerms.keys())) {
+	for (const term of vocabularyTerms.keys()) {
 		allKnownTerms.add(term.toLowerCase());
 	}
 
@@ -45,7 +45,7 @@ export async function extractTagsLlm(
 
 		const response = await ai.models.generateContent({
 			model: speakerIdModel, // gemini-2.0-flash (fast, cheap)
-			contents: tagExtractionPrompt(transcript, Array.from(allKnownTerms), allowedCategories),
+			contents: tagExtractionPrompt(transcript, [...allKnownTerms], allowedCategories),
 			config: {
 				responseMimeType: 'application/json',
 				responseSchema: z.toJSONSchema(TagDiscoverySchema),

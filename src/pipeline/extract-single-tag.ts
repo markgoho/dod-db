@@ -35,8 +35,8 @@ export async function extractSingleTag(
 	searchTerms.sort((a, b) => b.length - a.length);
 
 	// Escape special regex characters
-	const escapeRegex = (str: string): string => {
-		return str.replaceAll(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	const escapeRegex = (string_: string): string => {
+		return string_.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
 	};
 
 	// Track matched positions to avoid double-counting
@@ -55,7 +55,7 @@ export async function extractSingleTag(
 
 	// Find all matches
 	for (const searchTerm of searchTerms) {
-		const pattern = new RegExp(`\\b${escapeRegex(searchTerm)}\\b`, flags);
+		const pattern = new RegExp(String.raw`\b${escapeRegex(searchTerm)}\b`, flags);
 		let match;
 
 		while ((match = pattern.exec(transcript)) !== null) {

@@ -53,9 +53,22 @@ function calculateConfidence(candidate: CorrectionCandidate): number {
   else if (candidate.totalOccurrences >= 3) score += 10;
 
   // Category weight
-  if (candidate.category === 'biblical-term') score += 15; // Highest priority
-  else if (candidate.category === 'proper-noun') score += 10;
-  else if (candidate.category === 'spelling') score += 5;
+  switch (candidate.category) {
+  case 'biblical-term': {
+  score += 15;
+  break;
+  }
+  case 'proper-noun': {
+  score += 10;
+  break;
+  }
+  case 'spelling': { {
+  score += 5;
+  // No default
+  }
+  break;
+  }
+  }
   // capitalization gets 0 (lowest priority)
 
   // Word specificity (longer words are more specific)
@@ -79,7 +92,7 @@ export async function loadTracker(): Promise<CorrectionTracker> {
       const data = await file.json();
       return data as CorrectionTracker;
     }
-  } catch (error) {
+  } catch {
     console.warn('Could not load correction tracker, starting fresh');
   }
 
@@ -129,10 +142,10 @@ export function updateTracker(
       }
 
       // Add new examples, timestamps, and episode IDs (keep max 3)
-      for (let i = 0; i < correction.examples.length; i++) {
-        const example = correction.examples[i];
-        const correctedExample = correction.correctedExamples[i];
-        const timestamp = correction.timestamps[i];
+      for (let index = 0; index < correction.examples.length; index++) {
+        const example = correction.examples[index];
+        const correctedExample = correction.correctedExamples[index];
+        const timestamp = correction.timestamps[index];
         if (
           candidate.examples.length < 3 &&
           example &&

@@ -9,10 +9,10 @@ import type { TagCategory, TagDefinition, TagStatus } from '../config/tag-vocabu
  * Escape special characters for TypeScript string literals.
  * Handles apostrophes, quotes, and backslashes.
  */
-function escapeForTsString(str: string): string {
-	return str
-		.replace(/\\/g, '\\\\')  // Escape backslashes first
-		.replace(/'/g, "\\'");    // Escape single quotes
+function escapeForTsString(string_: string): string {
+	return string_
+		.replaceAll('\\', '\\\\')  // Escape backslashes first
+		.replaceAll('\'', String.raw`\'`);    // Escape single quotes
 }
 
 export type AddTagParams =
@@ -53,8 +53,8 @@ export function tagExists(canonical: string): boolean {
  * @param params - Tag parameters
  * @throws Error if tag already exists or file operation fails
  */
-export async function addTagToVocabulary(params: AddTagParams): Promise<void> {
-	const { canonical, variations, category } = params;
+export async function addTagToVocabulary(parameters: AddTagParams): Promise<void> {
+	const { canonical, variations, category } = parameters;
 
 	// Check for duplicates
 	if (tagExists(canonical)) {
@@ -73,21 +73,18 @@ export async function addTagToVocabulary(params: AddTagParams): Promise<void> {
 	}
 
 	// Format the new tag entry (with proper escaping)
-	const variationsStr = variations.length > 0
+	const variationsString = variations.length > 0
 		? `[${variations.map(v => `'${escapeForTsString(v)}'`).join(', ')}]`
 		: '[]';
 
 	// Build entry based on options (llmVerify, caseSensitive, status)
-	const status = params.status || 'accepted';
-	const statusStr = status !== 'accepted' ? `, status: '${status}'` : '';
-	const caseSensitiveStr = params.caseSensitive ? ', caseSensitive: true' : '';
+	const status = parameters.status || 'accepted';
+	const statusString = status === 'accepted' ? '' : `, status: '${status}'`;
+	const caseSensitiveString = parameters.caseSensitive ? ', caseSensitive: true' : '';
 
-	let newEntry: string;
-	if ('llmVerify' in params && params.llmVerify) {
-		newEntry = `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsStr}, category: '${category}', llmVerify: true, description: '${escapeForTsString(params.description)}'${statusStr}${caseSensitiveStr} },\n`;
-	} else {
-		newEntry = `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsStr}, category: '${category}'${statusStr}${caseSensitiveStr} },\n`;
-	}
+	const newEntry = 'llmVerify' in parameters && parameters.llmVerify
+		? `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}', llmVerify: true, description: '${escapeForTsString(parameters.description)}'${statusString}${caseSensitiveString} },\n`
+		: `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}'${statusString}${caseSensitiveString} },\n`;
 
 	// Insert the new entry before the closing bracket
 	const beforeClosing = content.slice(0, closingBracketIndex);
@@ -99,15 +96,15 @@ export async function addTagToVocabulary(params: AddTagParams): Promise<void> {
 	await Bun.write(filePath, newContent);
 
 	// Also update the in-memory vocabulary array so reprocessing can use it immediately
-	if ('llmVerify' in params && params.llmVerify) {
+	if ('llmVerify' in parameters && parameters.llmVerify) {
 		tagVocabulary.push({
 			canonical,
 			variations,
 			category,
 			llmVerify: true,
-			description: params.description,
+			description: parameters.description,
 			status,
-			caseSensitive: params.caseSensitive,
+			caseSensitive: parameters.caseSensitive,
 		} as TagDefinition);
 	} else {
 		tagVocabulary.push({
@@ -115,7 +112,7 @@ export async function addTagToVocabulary(params: AddTagParams): Promise<void> {
 			variations,
 			category,
 			status,
-			caseSensitive: params.caseSensitive,
+			caseSensitive: parameters.caseSensitive,
 		} as TagDefinition);
 	}
 
@@ -161,11 +158,9 @@ export async function updateTagInVocabulary(
 	}
 
 	// If changing canonical name, check for conflicts
-	if (updates.canonical && updates.canonical.toLowerCase() !== originalCanonical.toLowerCase()) {
-		if (tagExists(updates.canonical)) {
+	if (updates.canonical && updates.canonical.toLowerCase() !== originalCanonical.toLowerCase() && tagExists(updates.canonical)) {
 			throw new Error(`Tag "${updates.canonical}" already exists in vocabulary`);
 		}
-	}
 
 	// Read the existing file
 	const filePath = 'src/config/tag-vocabulary.ts';
@@ -173,9 +168,9 @@ export async function updateTagInVocabulary(
 	const content = await file.text();
 
 	// Build regex to find the existing tag entry
-	const escapedCanonical = originalCanonical.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	const escapedCanonical = originalCanonical.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
 	const tagRegex = new RegExp(
-		`\\t\\{\\s*canonical:\\s*'${escapedCanonical}'[^}]+\\},?\\n`,
+		String.raw`\t\{\s*canonical:\s*'${escapedCanonical}'[^}]+\},?\n`,
 		'i',
 	);
 
@@ -194,18 +189,15 @@ export async function updateTagInVocabulary(
 	const newDescription = updates.description ?? ('description' in existingTag ? existingTag.description : undefined);
 
 	// Format the new entry (with proper escaping)
-	const variationsStr = newVariations.length > 0
+	const variationsString = newVariations.length > 0
 		? `[${newVariations.map(v => `'${escapeForTsString(v)}'`).join(', ')}]`
 		: '[]';
-	const statusStr = newStatus !== 'accepted' ? `, status: '${newStatus}'` : '';
-	const caseSensitiveStr = newCaseSensitive ? ', caseSensitive: true' : '';
+	const statusString = newStatus === 'accepted' ? '' : `, status: '${newStatus}'`;
+	const caseSensitiveString = newCaseSensitive ? ', caseSensitive: true' : '';
 
-	let newEntry: string;
-	if (newLlmVerify && newDescription) {
-		newEntry = `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsStr}, category: '${newCategory}', llmVerify: true, description: '${escapeForTsString(newDescription)}', status: '${newStatus}'${caseSensitiveStr} },\n`;
-	} else {
-		newEntry = `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsStr}, category: '${newCategory}', status: '${newStatus}'${caseSensitiveStr} },\n`;
-	}
+	const newEntry = newLlmVerify && newDescription
+		? `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}', llmVerify: true, description: '${escapeForTsString(newDescription)}'${statusString}${caseSensitiveString} },\n`
+		: `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}'${statusString}${caseSensitiveString} },\n`;
 
 	// Replace the old entry with the new one
 	const newContent = content.replace(tagRegex, newEntry);
@@ -238,7 +230,7 @@ export async function updateTagInVocabulary(
 		tagVocabulary[index] = updatedTag;
 	}
 
-	console.log(`✓ Updated tag "${originalCanonical}"${newCanonical !== originalCanonical ? ` → "${newCanonical}"` : ''}`);
+	console.log(`✓ Updated tag "${originalCanonical}"${newCanonical === originalCanonical ? '' : ` → "${newCanonical}"`}`);
 }
 
 /**
@@ -259,9 +251,9 @@ export async function deleteTagFromVocabulary(canonical: string): Promise<void> 
 	const content = await file.text();
 
 	// Build regex to find the existing tag entry
-	const escapedCanonical = canonical.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	const escapedCanonical = canonical.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
 	const tagRegex = new RegExp(
-		`\\t\\{\\s*canonical:\\s*'${escapedCanonical}'[^}]+\\},?\\n`,
+		String.raw`\t\{\s*canonical:\s*'${escapedCanonical}'[^}]+\},?\n`,
 		'i',
 	);
 

@@ -48,10 +48,10 @@ async function addToCorrectionFile(
 }
 
 // Serve the web UI
-const server = Bun.serve({
+const _server = Bun.serve({
   port: PORT,
-  async fetch(req) {
-    const url = new URL(req.url);
+  async fetch(request) {
+    const url = new URL(request.url);
 
     // Serve the main UI (correction review)
     if (url.pathname === '/' || url.pathname === '/index.html') {
@@ -121,9 +121,9 @@ const server = Bun.serve({
 
       try {
         // Get edited values from query params (if provided)
-        const searchParams = new URL(req.url).searchParams;
-        const editedOriginal = searchParams.get('original');
-        const editedCorrected = searchParams.get('corrected');
+        const searchParameters = new URL(request.url).searchParams;
+        const editedOriginal = searchParameters.get('original');
+        const editedCorrected = searchParameters.get('corrected');
 
         // Use edited values if provided, otherwise use candidate's values
         const finalCandidate = {

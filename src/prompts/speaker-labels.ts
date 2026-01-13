@@ -71,7 +71,7 @@ export function addSpeakerLabels(
   // Replace all identified speakers dynamically
   for (const [speakerLabel, speakerName] of Object.entries(speakerLabels)) {
     if (speakerName) {
-      result = result.replace(new RegExp(speakerLabel, 'g'), speakerName);
+      result = result.replaceAll(new RegExp(speakerLabel, 'g'), speakerName);
     }
   }
 

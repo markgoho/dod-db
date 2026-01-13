@@ -6,7 +6,7 @@
 import {
 	loadProcessedVideos,
 	saveProcessedVideos,
-	type ProcessedVideo,
+	
 } from '../storage/processed-videos.js';
 import { extractTags } from './extract-tags.js';
 import { tagVocabulary, type TagCategory } from '../config/tag-vocabulary.js';

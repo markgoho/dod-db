@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transcript - Episode - Data Over Dogma Tools</title>
+    <link rel="stylesheet" href="/shared/styles.css" />
+    <style>
+      /* Page-specific styles */
+      .transcript-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      @media (min-width: 1024px) {
+        .transcript-layout {
+          grid-template-columns: 1fr 350px;
+        }
+      }
+
+      .transcript-panel {
+        background: white;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-lg);
+        overflow: hidden;
+      }
+
+      .transcript-header {
+        padding: 20px 24px;
+        border-bottom: 1px solid var(--color-gray-200);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .transcript-header h2 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 20px;
+      }
+
+      .search-box {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .search-box input {
+        padding: 8px 12px;
+        border: 1px solid var(--color-gray-200);
+        border-radius: var(--radius-md);
+        font-size: 14px;
+        width: 200px;
+      }
+
+      .search-box input:focus {
+        outline: none;
+        border-color: var(--color-primary);
+      }
+
+      .search-count {
+        font-size: 13px;
+        color: var(--color-gray-500);
+      }
+
+      .transcript-content {
+        max-height: 70vh;
+        overflow-y: auto;
+      }
+
+      .transcript-line {
+        padding: 12px 24px;
+        border-bottom: 1px solid var(--color-gray-100);
+        cursor: pointer;
+        transition: background-color 0.2s;
+        display: flex;
+        gap: 12px;
+      }
+
+      .transcript-line:hover {
+        background: var(--color-gray-50);
+      }
+
+      .transcript-line.active {
+        background: rgba(102, 126, 234, 0.1);
+        border-left: 4px solid var(--color-primary);
+        padding-left: 20px;
+      }
+
+      .transcript-line.highlighted {
+        background: #fef3c7;
+      }
+
+      .line-timestamp {
+        font-family: var(--font-mono);
+        font-size: 12px;
+        color: var(--color-gray-500);
+        flex-shrink: 0;
+        width: 70px;
+      }
+
+      .line-content {
+        flex: 1;
+      }
+
+      .line-speaker {
+        font-weight: 600;
+        color: var(--color-primary);
+        margin-right: 8px;
+      }
+
+      .line-text {
+        color: var(--color-gray-700);
+      }
+
+      .line-text mark {
+        background: #fde68a;
+        padding: 0 2px;
+        border-radius: 2px;
+      }
+
+      .sidebar-panel {
+        position: sticky;
+        top: 20px;
+      }
+
+      .audio-card {
+        background: white;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-lg);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .audio-card h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+
+      .audio-card audio {
+        width: 100%;
+        margin-bottom: 12px;
+      }
+
+      .audio-time-display {
+        font-family: var(--font-mono);
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--color-primary);
+        text-align: center;
+        margin-bottom: 12px;
+      }
+
+      .audio-controls {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .audio-btn {
+        padding: 8px 16px;
+        border: 1px solid var(--color-gray-200);
+        border-radius: var(--radius-md);
+        background: white;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .audio-btn:hover {
+        background: var(--color-gray-50);
+        border-color: var(--color-primary);
+      }
+
+      .stats-card {
+        background: white;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-lg);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .stats-card h3 {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .stat-item {
+        text-align: center;
+        padding: 12px;
+        background: var(--color-gray-50);
+        border-radius: var(--radius-md);
+      }
+
+      .stat-item-value {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+
+      .stat-item-label {
+        font-size: 11px;
+        color: var(--color-gray-500);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .speakers-card {
+        background: white;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-lg);
+        padding: 20px;
+      }
+
+      .speakers-card h3 {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+
+      .speaker-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid var(--color-gray-100);
+      }
+
+      .speaker-item:last-child {
+        border-bottom: none;
+      }
+
+      .speaker-name {
+        font-weight: 600;
+        color: var(--color-gray-700);
+      }
+
+      .speaker-count {
+        color: var(--color-gray-500);
+        font-size: 14px;
+      }
+
+      .keyboard-hint {
+        font-size: 12px;
+        color: var(--color-gray-500);
+        margin-top: 12px;
+        text-align: center;
+      }
+
+      .keyboard-hint kbd {
+        background: var(--color-gray-100);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: var(--font-mono);
+        font-size: 11px;
+      }
+
+      .no-audio-notice {
+        color: var(--color-gray-500);
+        font-style: italic;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-wide">
+      <div class="section" style="background: transparent; box-shadow: none; padding: 0;">
+        <nav class="breadcrumbs" id="breadcrumbs">
+          <a href="/">Episodes</a>
+          <span class="separator">&gt;</span>
+          <a href="#" id="breadcrumb-episode">Episode</a>
+          <span class="separator">&gt;</span>
+          <span class="current">Transcript</span>
+        </nav>
+      </div>
+
+      <div class="transcript-layout">
+        <div class="transcript-panel">
+          <div class="transcript-header">
+            <h2 id="transcript-title">Transcript</h2>
+            <div class="search-box">
+              <input type="text" id="search-input" placeholder="Search transcript..." />
+              <span class="search-count" id="search-count"></span>
+            </div>
+          </div>
+          <div class="transcript-content" id="transcript-content">
+            <div class="loading">Loading transcript...</div>
+          </div>
+        </div>
+
+        <div class="sidebar-panel">
+          <div class="audio-card" id="audio-card">
+            <h3>Audio Player</h3>
+            <div id="audio-container">
+              <div class="no-audio-notice">Loading...</div>
+            </div>
+            <div class="audio-time-display" id="time-display">00:00:00</div>
+            <div class="audio-controls">
+              <button class="audio-btn" onclick="seekRelative(-10)">-10s</button>
+              <button class="audio-btn" onclick="seekRelative(-5)">-5s</button>
+              <button class="audio-btn" onclick="seekRelative(5)">+5s</button>
+              <button class="audio-btn" onclick="seekRelative(10)">+10s</button>
+            </div>
+            <div class="keyboard-hint">
+              <kbd>Space</kbd> play/pause &nbsp;
+              <kbd>Arrow</kbd> seek 5s
+            </div>
+          </div>
+
+          <div class="stats-card">
+            <h3>Statistics</h3>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-item-value" id="stat-lines">-</div>
+                <div class="stat-item-label">Lines</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-item-value" id="stat-duration">-</div>
+                <div class="stat-item-label">Duration</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-item-value" id="stat-speakers">-</div>
+                <div class="stat-item-label">Speakers</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-item-value" id="stat-words">-</div>
+                <div class="stat-item-label">Words</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="speakers-card">
+            <h3>Speakers</h3>
+            <div id="speakers-list">
+              <!-- Speakers will be listed here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module">
+      import { DoDTools } from '/shared/utilities.js';
+
+      const videoId = DoDTools.getVideoIdFromUrl();
+      let episode = null;
+      let lines = [];
+      let audio = null;
+      let currentLineIndex = -1;
+      let searchTerm = '';
+
+      async function init() {
+        if (!videoId) {
+          document.getElementById('transcript-content').innerHTML =
+            '<div class="empty-state"><div class="empty-state-text">Invalid episode URL</div></div>';
+          return;
+        }
+
+        try {
+          // Load episode and transcript in parallel
+          const [episodeData, transcriptText] = await Promise.all([
+            DoDTools.getEpisode(videoId),
+            DoDTools.getTranscript(videoId)
+          ]);
+
+          episode = episodeData;
+
+          if (!episode) {
+            document.getElementById('transcript-content').innerHTML =
+              '<div class="empty-state"><div class="empty-state-text">Episode not found</div></div>';
+            return;
+          }
+
+          if (!transcriptText) {
+            document.getElementById('transcript-content').innerHTML =
+              '<div class="empty-state"><div class="empty-state-text">Transcript not found</div></div>';
+            return;
+          }
+
+          // Update breadcrumb
+          const breadcrumbEpisode = document.getElementById('breadcrumb-episode');
+          breadcrumbEpisode.href = `/episode/${videoId}`;
+          breadcrumbEpisode.textContent = `Episode ${episode.episodeNumber || '?'}`;
+
+          document.getElementById('transcript-title').textContent =
+            `Episode ${episode.episodeNumber || '?'}: Transcript`;
+          document.title = `Transcript - Episode ${episode.episodeNumber || '?'} - DoD Tools`;
+
+          // Parse transcript
+          lines = DoDTools.parseTranscript(transcriptText);
+          updateStats();
+          renderTranscript();
+
+          // Initialize audio if available
+          if (episode.hasAudio) {
+            initAudio();
+          } else {
+            document.getElementById('audio-container').innerHTML =
+              '<div class="no-audio-notice">Audio not available for this episode</div>';
+          }
+
+          // Setup search
+          setupSearch();
+
+          // Setup keyboard shortcuts
+          setupKeyboardShortcuts();
+
+        } catch (error) {
+          console.error('Failed to load transcript:', error);
+          document.getElementById('transcript-content').innerHTML =
+            '<div class="empty-state"><div class="empty-state-text">Failed to load transcript</div></div>';
+        }
+      }
+
+      function updateStats() {
+        const speakers = new Map();
+        let totalWords = 0;
+
+        lines.forEach(line => {
+          speakers.set(line.speaker, (speakers.get(line.speaker) || 0) + 1);
+          totalWords += line.text.split(/\s+/).length;
+        });
+
+        // Calculate duration
+        const lastLine = lines[lines.length - 1];
+        const duration = lastLine ? lastLine.seconds : 0;
+        const durationStr = DoDTools.secondsToTimestamp(duration).replace(/^00:/, '');
+
+        document.getElementById('stat-lines').textContent = lines.length;
+        document.getElementById('stat-duration').textContent = durationStr;
+        document.getElementById('stat-speakers').textContent = speakers.size;
+        document.getElementById('stat-words').textContent = totalWords.toLocaleString();
+
+        // Render speakers list
+        const speakersList = document.getElementById('speakers-list');
+        const sortedSpeakers = [...speakers.entries()].sort((a, b) => b[1] - a[1]);
+
+        speakersList.innerHTML = sortedSpeakers.map(([name, count]) => `
+          <div class="speaker-item">
+            <span class="speaker-name">${DoDTools.escapeHtml(name)}</span>
+            <span class="speaker-count">${count} lines</span>
+          </div>
+        `).join('');
+      }
+
+      function renderTranscript() {
+        const container = document.getElementById('transcript-content');
+
+        container.innerHTML = lines.map((line, index) => {
+          let text = DoDTools.escapeHtml(line.text);
+
+          // Highlight search term
+          if (searchTerm) {
+            const regex = new RegExp(`(${escapeRegExp(searchTerm)})`, 'gi');
+            text = text.replace(regex, '<mark>$1</mark>');
+          }
+
+          const timestamp = DoDTools.formatTimestamp(line.timestamp);
+          const isHighlighted = searchTerm && line.text.toLowerCase().includes(searchTerm.toLowerCase());
+
+          return `
+            <div class="transcript-line ${isHighlighted ? 'highlighted' : ''}"
+                 data-index="${index}"
+                 data-seconds="${line.seconds}"
+                 onclick="seekToLine(${index})">
+              <span class="line-timestamp">${timestamp}</span>
+              <div class="line-content">
+                <span class="line-speaker">${DoDTools.escapeHtml(line.speaker)}:</span>
+                <span class="line-text">${text}</span>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      function escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      }
+
+      function initAudio() {
+        const container = document.getElementById('audio-container');
+        container.innerHTML = '';
+
+        audio = document.createElement('audio');
+        audio.controls = true;
+        audio.src = `/api/audio/${videoId}`;
+        audio.style.width = '100%';
+
+        audio.addEventListener('timeupdate', () => {
+          const time = audio.currentTime;
+          document.getElementById('time-display').textContent = DoDTools.secondsToTimestamp(time);
+
+          // Update active line
+          updateActiveLine(time);
+        });
+
+        container.appendChild(audio);
+      }
+
+      function updateActiveLine(currentTime) {
+        // Find the current line based on time
+        let newIndex = -1;
+        for (let i = 0; i < lines.length; i++) {
+          if (lines[i].seconds <= currentTime) {
+            newIndex = i;
+          } else {
+            break;
+          }
+        }
+
+        if (newIndex !== currentLineIndex) {
+          // Remove previous active
+          const prevActive = document.querySelector('.transcript-line.active');
+          if (prevActive) {
+            prevActive.classList.remove('active');
+          }
+
+          // Add new active
+          if (newIndex >= 0) {
+            const newActive = document.querySelector(`[data-index="${newIndex}"]`);
+            if (newActive) {
+              newActive.classList.add('active');
+              // Scroll into view if needed
+              newActive.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }
+
+          currentLineIndex = newIndex;
+        }
+      }
+
+      window.seekToLine = function(index) {
+        if (audio && lines[index]) {
+          audio.currentTime = lines[index].seconds;
+          audio.play().catch(() => {});
+        }
+      };
+
+      window.seekRelative = function(seconds) {
+        if (audio) {
+          audio.currentTime = Math.max(0, audio.currentTime + seconds);
+        }
+      };
+
+      function setupSearch() {
+        const searchInput = document.getElementById('search-input');
+        const searchCount = document.getElementById('search-count');
+
+        searchInput.addEventListener('input', DoDTools.debounce(() => {
+          searchTerm = searchInput.value.trim();
+
+          if (searchTerm) {
+            const matches = lines.filter(line =>
+              line.text.toLowerCase().includes(searchTerm.toLowerCase())
+            ).length;
+            searchCount.textContent = `${matches} matches`;
+          } else {
+            searchCount.textContent = '';
+          }
+
+          renderTranscript();
+        }, 200));
+      }
+
+      function setupKeyboardShortcuts() {
+        document.addEventListener('keydown', (e) => {
+          // Don't trigger if typing in search box
+          if (e.target.tagName === 'INPUT') return;
+
+          if (!audio) return;
+
+          switch (e.code) {
+            case 'Space':
+              e.preventDefault();
+              if (audio.paused) {
+                audio.play().catch(() => {});
+              } else {
+                audio.pause();
+              }
+              break;
+            case 'ArrowLeft':
+              e.preventDefault();
+              audio.currentTime = Math.max(0, audio.currentTime - 5);
+              break;
+            case 'ArrowRight':
+              e.preventDefault();
+              audio.currentTime = audio.currentTime + 5;
+              break;
+          }
+        });
+      }
+
+      init();
+    </script>
+  </body>
+</html>

@@ -12,7 +12,7 @@ export type ChunkingConfig = {
  */
 export const correctionChunking: ChunkingConfig = {
   minLength: 5000,
-  maxLength: 10000,
+  maxLength: 10_000,
   splitter: 'sentence',
   overlap: 200,
   delimiters: '',

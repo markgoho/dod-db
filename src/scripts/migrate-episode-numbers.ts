@@ -29,13 +29,13 @@ async function migrate() {
   const withNumbers = computeEpisodeNumbers(videos);
 
   console.log('\nEpisode number assignments:');
-  withNumbers.forEach((video) => {
+  for (const video of withNumbers) {
     const status = videos.find((v) => v.videoId === video.videoId)
       ?.episodeNumber
       ? '(existing)'
       : '(NEW)';
     console.log(`  Episode ${video.episodeNumber}: ${video.title} ${status}`);
-  });
+  }
 
   console.log('\nSaving updated processed-videos.json...');
   await saveProcessedVideos(withNumbers);

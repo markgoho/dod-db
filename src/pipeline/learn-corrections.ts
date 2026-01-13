@@ -18,36 +18,36 @@ interface CorrectionSuggestion {
  * Used to determine if two words are similar (likely a typo/mishearing)
  * vs completely different (likely sentence restructuring).
  */
-function levenshteinDistance(str1: string, str2: string): number {
-  const m = str1.length;
-  const n = str2.length;
+function levenshteinDistance(string1: string, string2: string): number {
+  const m = string1.length;
+  const n = string2.length;
   const dp: number[][] = Array.from({ length: m + 1 }, () =>
     Array.from({ length: n + 1 }, () => 0),
   );
 
-  for (let i = 0; i <= m; i++) {
-    const row = dp[i];
-    if (row) row[0] = i;
+  for (let index = 0; index <= m; index++) {
+    const row = dp[index];
+    if (row) row[0] = index;
   }
-  for (let j = 0; j <= n; j++) {
+  for (let index = 0; index <= n; index++) {
     const firstRow = dp[0];
-    if (firstRow) firstRow[j] = j;
+    if (firstRow) firstRow[index] = index;
   }
 
-  for (let i = 1; i <= m; i++) {
-    for (let j = 1; j <= n; j++) {
-      const currentRow = dp[i];
-      const prevRow = dp[i - 1];
-      if (!currentRow || !prevRow) continue;
+  for (let index = 1; index <= m; index++) {
+    for (let index_ = 1; index_ <= n; index_++) {
+      const currentRow = dp[index];
+      const previousRow = dp[index - 1];
+      if (!currentRow || !previousRow) continue;
 
-      if (str1[i - 1] === str2[j - 1]) {
-        const val = prevRow[j - 1];
-        currentRow[j] = val ?? 0;
+      if (string1[index - 1] === string2[index_ - 1]) {
+        const value = previousRow[index_ - 1];
+        currentRow[index_] = value ?? 0;
       } else {
-        const deletion = prevRow[j] ?? 0;
-        const insertion = currentRow[j - 1] ?? 0;
-        const substitution = prevRow[j - 1] ?? 0;
-        currentRow[j] = Math.min(deletion + 1, insertion + 1, substitution + 1);
+        const deletion = previousRow[index_] ?? 0;
+        const insertion = currentRow[index_ - 1] ?? 0;
+        const substitution = previousRow[index_ - 1] ?? 0;
+        currentRow[index_] = Math.min(deletion + 1, insertion + 1, substitution + 1);
       }
     }
   }
@@ -275,11 +275,11 @@ export async function analyzeCorrections(
     }
 
     // Detect multi-word patterns
-    for (let j = 0; j < correctedWords.length - 1; j++) {
-      const correctedWord1Orig = correctedWords[j]?.replace(/[.,!?;:()[\]"]/g, '');
-      const correctedWord2Orig = correctedWords[j + 1]?.replace(/[.,!?;:()[\]"]/g, '');
-      const rawWord1Orig = rawWords[j]?.replace(/[.,!?;:()[\]"]/g, '');
-      const rawWord2Orig = rawWords[j + 1]?.replace(/[.,!?;:()[\]"]/g, '');
+    for (let index = 0; index < correctedWords.length - 1; index++) {
+      const correctedWord1Orig = correctedWords[index]?.replaceAll(/[.,!?;:()[\]"]/g, '');
+      const correctedWord2Orig = correctedWords[index + 1]?.replaceAll(/[.,!?;:()[\]"]/g, '');
+      const rawWord1Orig = rawWords[index]?.replaceAll(/[.,!?;:()[\]"]/g, '');
+      const rawWord2Orig = rawWords[index + 1]?.replaceAll(/[.,!?;:()[\]"]/g, '');
 
       if (!correctedWord1Orig || !correctedWord2Orig || !rawWord1Orig || !rawWord2Orig) continue;
 
@@ -289,9 +289,8 @@ export async function analyzeCorrections(
       const rawWord2 = rawWord2Orig.toLowerCase();
 
       // Check for 2-word capitalization patterns (e.g., "hebrew bible" → "Hebrew Bible")
-      if (rawWord1 === correctedWord1 && rawWord2 === correctedWord2) {
-        // Same words, check if only capitalization changed
-        if (rawWord1Orig !== correctedWord1Orig || rawWord2Orig !== correctedWord2Orig) {
+      if (rawWord1 === correctedWord1 && rawWord2 === correctedWord2 && // Same words, check if only capitalization changed
+        (rawWord1Orig !== correctedWord1Orig || rawWord2Orig !== correctedWord2Orig)) {
           // Capitalization change in a 2-word phrase
           const originalPhrase = rawWord1Orig + ' ' + rawWord2Orig;
           const correctedPhrase = correctedWord1Orig + ' ' + correctedWord2Orig;
@@ -306,10 +305,10 @@ export async function analyzeCorrections(
             suggestion.count++;
             if (suggestion.examples.length < 3) {
               suggestion.examples.push(
-                `"${rawWords.slice(Math.max(0, j - 2), j + 4).join(' ')}"`,
+                `"${rawWords.slice(Math.max(0, index - 2), index + 4).join(' ')}"`,
               );
               suggestion.correctedExamples.push(
-                `"${correctedWords.slice(Math.max(0, j - 2), j + 4).join(' ')}"`,
+                `"${correctedWords.slice(Math.max(0, index - 2), index + 4).join(' ')}"`,
               );
               suggestion.timestamps.push(timestamp);
             }
@@ -320,23 +319,22 @@ export async function analyzeCorrections(
               count: 1,
               category: 'capitalization',
               examples: [
-                `"${rawWords.slice(Math.max(0, j - 2), j + 4).join(' ')}"`,
+                `"${rawWords.slice(Math.max(0, index - 2), index + 4).join(' ')}"`,
               ],
               correctedExamples: [
-                `"${correctedWords.slice(Math.max(0, j - 2), j + 4).join(' ')}"`,
+                `"${correctedWords.slice(Math.max(0, index - 2), index + 4).join(' ')}"`,
               ],
               timestamps: [timestamp],
             });
           }
         }
-      }
     }
 
     // Simple word-by-word comparison
     const maxLength = Math.max(rawWords.length, correctedWords.length);
-    for (let j = 0; j < maxLength; j++) {
-      const rawWordOriginal = rawWords[j]?.replace(/[.,!?;:()[\]"]/g, '');
-      const correctedWordOriginal = correctedWords[j]?.replace(
+    for (let index = 0; index < maxLength; index++) {
+      const rawWordOriginal = rawWords[index]?.replaceAll(/[.,!?;:()[\]"]/g, '');
+      const correctedWordOriginal = correctedWords[index]?.replaceAll(
         /[.,!?;:()[\]"]/g,
         '',
       );
@@ -388,10 +386,10 @@ export async function analyzeCorrections(
           // Store up to 3 example contexts (both raw and corrected)
           if (suggestion.examples.length < 3) {
             suggestion.examples.push(
-              `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+              `"${rawWords.slice(Math.max(0, index - 2), index + 3).join(' ')}"`,
             );
             suggestion.correctedExamples.push(
-              `"${correctedWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+              `"${correctedWords.slice(Math.max(0, index - 2), index + 3).join(' ')}"`,
             );
             suggestion.timestamps.push(timestamp);
           }
@@ -402,10 +400,10 @@ export async function analyzeCorrections(
             count: 1,
             category,
             examples: [
-              `"${rawWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+              `"${rawWords.slice(Math.max(0, index - 2), index + 3).join(' ')}"`,
             ],
             correctedExamples: [
-              `"${correctedWords.slice(Math.max(0, j - 2), j + 3).join(' ')}"`,
+              `"${correctedWords.slice(Math.max(0, index - 2), index + 3).join(' ')}"`,
             ],
             timestamps: [timestamp],
           });
@@ -421,19 +419,19 @@ export async function analyzeCorrections(
   }
 
   // Separate by category
-  const capitalizations = Array.from(corrections.values())
+  const capitalizations = [...corrections.values()]
     .filter((c) => c.category === 'capitalization')
     .sort((a, b) => b.count - a.count);
 
-  const biblicalTerms = Array.from(corrections.values())
+  const biblicalTerms = [...corrections.values()]
     .filter((c) => c.category === 'biblical-term')
     .sort((a, b) => b.count - a.count);
 
-  const properNouns = Array.from(corrections.values())
+  const properNouns = [...corrections.values()]
     .filter((c) => c.category === 'proper-noun')
     .sort((a, b) => b.count - a.count);
 
-  const spellingCorrections = Array.from(corrections.values())
+  const spellingCorrections = [...corrections.values()]
     .filter((c) => c.category === 'spelling')
     .sort((a, b) => b.count - a.count);
 
@@ -529,12 +527,12 @@ export async function analyzeCorrections(
 
     // Filter corrections to only track high-quality candidates
     // We only want to track systematic transcription errors, not sentence reorganization
-    const highQualityCandidates = Array.from(corrections.values()).filter(
+    const highQualityCandidates = [...corrections.values()].filter(
       (c) => {
         // Skip very different words (likely sentence restructuring, not transcription errors)
         // Calculate Levenshtein distance as a ratio
-        const maxLen = Math.max(c.original.length, c.corrected.length);
-        const similarity = 1 - levenshteinDistance(c.original, c.corrected) / maxLen;
+        const maxLength = Math.max(c.original.length, c.corrected.length);
+        const similarity = 1 - levenshteinDistance(c.original, c.corrected) / maxLength;
 
         // Only track if words are similar (>40% similar) OR it's a biblical term OR proper noun
         const isSimilar = similarity > 0.4;
@@ -585,9 +583,9 @@ export async function analyzeCorrections(
         const badge =
           candidate.confidence >= 70
             ? '🔥'
-            : candidate.confidence >= 60
+            : (candidate.confidence >= 60
               ? '⚡'
-              : '✨';
+              : '✨');
         console.log(
           `${badge} ${candidate.original} → ${candidate.corrected} (${candidate.confidence}% confidence)`,
         );
@@ -623,7 +621,7 @@ export async function analyzeCorrections(
 function extractTimestamp(line: string): string | null {
   // Match: [HH:MM:SS.mmm] or [HH:MM:SS] with optional spaces
   const match = line.match(/^\[(\d{2}:\d{2}:\d{2}(?:\.\d{3})?)\]/);
-  return match?.[1]?.replace(/\s+/g, '') ?? null; // Remove any spaces
+  return match?.[1]?.replaceAll(/\s+/g, '') ?? null; // Remove any spaces
 }
 
 /**

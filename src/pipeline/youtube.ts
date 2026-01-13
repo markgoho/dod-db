@@ -1,4 +1,3 @@
-import { youtubeConfig } from '../config/youtube.js';
 import { formatDate, titleToSlug } from '../utils/slugify.js';
 import * as path from 'node:path';
 import { mkdir, readdir } from 'node:fs/promises';

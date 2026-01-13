@@ -9,10 +9,10 @@
 
 import { analyzeCorrections } from '../pipeline/learn-corrections.js';
 
-const args = process.argv.slice(2);
-const rawPath = args[0];
-const correctedPath = args[1];
-const episodeId = args[2]; // Optional: video ID for tracking
+const arguments_ = process.argv.slice(2);
+const rawPath = arguments_[0];
+const correctedPath = arguments_[1];
+const episodeId = arguments_[2]; // Optional: video ID for tracking
 
 if (!rawPath || !correctedPath) {
   console.error('Error: Both raw and corrected transcript paths are required');

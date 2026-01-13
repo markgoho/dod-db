@@ -45,10 +45,11 @@ function extractContext(
 	let charCount = 0;
 	let matchLineIndex = -1;
 
-	for (let i = 0; i < lines.length; i++) {
-		const lineLength = lines[i].length + 1; // +1 for the newline
+	for (const [index, line] of lines.entries()) {
+		if (!line) continue;
+		const lineLength = line.length + 1; // +1 for the newline
 		if (charCount <= start && start < charCount + lineLength) {
-			matchLineIndex = i;
+			matchLineIndex = index;
 			break;
 		}
 		charCount += lineLength;
@@ -134,9 +135,10 @@ export async function verifyTagMatches(
 
 		for (const verification of result.verifications) {
 			const match = matches[verification.index];
+			if (!match) continue;
 			const symbol = verification.isMatch ? '✓' : '✗';
-			const color = verification.isMatch ? '\x1b[32m' : '\x1b[31m'; // green : red
-			const reset = '\x1b[0m';
+			const color = verification.isMatch ? '\u001B[32m' : '\u001B[31m'; // green : red
+			const reset = '\u001B[0m';
 
 			console.log(`${color}  ${symbol}${reset} [${verification.index}] "${match.text}"`);
 			console.log(`     Reasoning: ${verification.reasoning}`);
@@ -160,7 +162,7 @@ export async function verifyTagMatches(
 		if (errorMessage.includes('429') || errorMessage.includes('RESOURCE_EXHAUSTED')) {
 			console.error(`  ⚠️  Rate limit hit for "${tag.canonical}" - waiting 60s before retry...`);
 			// Wait 60 seconds and retry once
-			await new Promise(resolve => setTimeout(resolve, 60000));
+			await new Promise(resolve => setTimeout(resolve, 60_000));
 			try {
 				console.log(`  🔄 Retrying verification for "${tag.canonical}"...`);
 				const retryResponse = await ai.models.generateContent({
@@ -225,8 +227,8 @@ Below are ${contexts.length} potential matches. For each, determine if it refers
 CONTEXTS:
 ${contexts
 	.map(
-		(ctx) =>
-			`[${ctx.index}] "${ctx.contextBefore} **${ctx.matchedText}** ${ctx.contextAfter}"`,
+		(context) =>
+			`[${context.index}] "${context.contextBefore} **${context.matchedText}** ${context.contextAfter}"`,
 	)
 	.join('\n')}
 

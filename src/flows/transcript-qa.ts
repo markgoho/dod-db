@@ -19,7 +19,7 @@ export async function transcriptQA({
     };
   }
 
-  const context = docs.map((doc) => doc.text).join('\n\n');
+  const context = docs.map((document_) => document_.text).join('\n\n');
 
   const response = await ai.models.generateContent({
     model: qaModel,

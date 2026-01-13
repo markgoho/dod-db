@@ -18,7 +18,6 @@ import {
   loadProcessedVideos,
   saveProcessedVideos,
   updateVideoSegments,
-  type ProcessedVideo,
   type EpisodeSegment,
 } from '../storage/processed-videos.js';
 import { tagVocabulary } from '../config/tag-vocabulary.js';
@@ -30,8 +29,8 @@ import {
   updateTagInVocabulary,
   deleteTagFromVocabulary,
   findTag,
-  type AddTagParams,
-  type UpdateTagParams,
+  type AddTagParams as AddTagParameters,
+  type UpdateTagParams as UpdateTagParameters,
 } from '../pipeline/add-tag-to-vocabulary.js';
 import {
   SEGMENT_LABELS,
@@ -191,17 +190,17 @@ async function runMigrationWithTagTracking(
   const originalError = console.error;
   const originalWarn = console.warn;
 
-  console.log = (...args) => {
-    job.logs.push(args.join(' ') + '\n');
-    originalLog(...args);
+  console.log = (...arguments_) => {
+    job.logs.push(arguments_.join(' ') + '\n');
+    originalLog(...arguments_);
   };
-  console.error = (...args) => {
-    job.logs.push('[ERROR] ' + args.join(' ') + '\n');
-    originalError(...args);
+  console.error = (...arguments_) => {
+    job.logs.push('[ERROR] ' + arguments_.join(' ') + '\n');
+    originalError(...arguments_);
   };
-  console.warn = (...args) => {
-    job.logs.push('[WARN] ' + args.join(' ') + '\n');
-    originalWarn(...args);
+  console.warn = (...arguments_) => {
+    job.logs.push('[WARN] ' + arguments_.join(' ') + '\n');
+    originalWarn(...arguments_);
   };
 
   // Run reprocessing in background
@@ -217,11 +216,8 @@ async function runMigrationWithTagTracking(
 
         // Show tag-specific results
         job.logs.push(
-          `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`,
-        );
-        job.logs.push(`📊 "${trackTag}" Results:\n`);
-        job.logs.push(`   Found in ${result.episodesWithTag} episodes\n`);
-        job.logs.push(`   Total mentions: ${result.totalMentions}\n`);
+          `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`, `📊 "${trackTag}" Results:\n`
+        , `   Found in ${result.episodesWithTag} episodes\n`, `   Total mentions: ${result.totalMentions}\n`);
         if (result.episodesWithTag > 0) {
           job.logs.push(
             `   Average: ${(result.totalMentions / result.episodesWithTag).toFixed(1)} mentions/episode\n`,
@@ -269,13 +265,13 @@ async function addPatternToConfig(
 
   // Escape special regex characters in the pattern
   const escapedPattern = pattern
-    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-    .replace(/'/g, "\\'");
+    .replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`)
+    .replaceAll('\'', String.raw`\'`);
 
   // Find the array for this segment type and add the new pattern
   const patterns = [
-    new RegExp(`('${segmentType}':\\s*\\[)([^\\]]*)`, 's'),
-    new RegExp(`(${segmentType}:\\s*\\[)([^\\]]*)`, 's'),
+    new RegExp(String.raw`('${segmentType}':\s*\[)([^\]]*)`, 's'),
+    new RegExp(String.raw`(${segmentType}:\s*\[)([^\]]*)`, 's'),
   ];
 
   let found = false;
@@ -321,8 +317,8 @@ async function getAudioFilePath(videoId: string): Promise<string | null> {
   // Try common extensions
   const extensions = ['.webm', '.m4a', '.mp3', '.wav'];
 
-  for (const ext of extensions) {
-    const filePath = path.join(audioDir, `${videoId}${ext}`);
+  for (const extension of extensions) {
+    const filePath = path.join(audioDir, `${videoId}${extension}`);
     const file = Bun.file(filePath);
     if (await file.exists()) {
       return filePath;
@@ -333,10 +329,10 @@ async function getAudioFilePath(videoId: string): Promise<string | null> {
 }
 
 // Serve the unified tools server
-const server = Bun.serve({
+const _server = Bun.serve({
   port: PORT,
-  async fetch(req) {
-    const url = new URL(req.url);
+  async fetch(request) {
+    const url = new URL(request.url);
 
     // ========================================
     // Landing Page
@@ -400,9 +396,9 @@ const server = Bun.serve({
 
       try {
         // Get edited values from query params (if provided)
-        const searchParams = new URL(req.url).searchParams;
-        const editedOriginal = searchParams.get('original');
-        const editedCorrected = searchParams.get('corrected');
+        const searchParameters = new URL(request.url).searchParams;
+        const editedOriginal = searchParameters.get('original');
+        const editedCorrected = searchParameters.get('corrected');
 
         // Use edited values if provided, otherwise use candidate's values
         const finalCandidate = {
@@ -477,10 +473,10 @@ const server = Bun.serve({
     // Tag Vocabulary API: Add tag to vocabulary
     if (
       url.pathname === '/api/tag-vocabulary/vocabulary/add' &&
-      req.method === 'POST'
+      request.method === 'POST'
     ) {
       try {
-        const body = (await req.json()) as {
+        const body = (await request.json()) as {
           canonical?: string;
           variations?: string | string[];
           category?: string;
@@ -535,7 +531,7 @@ const server = Bun.serve({
         }
 
         // Add to vocabulary file
-        const tagParams: AddTagParams = llmVerify
+        const tagParameters: AddTagParameters = llmVerify
           ? {
               canonical,
               variations: variationsArray,
@@ -549,7 +545,7 @@ const server = Bun.serve({
               category: category as TagCategory,
             };
 
-        await addTagToVocabulary(tagParams);
+        await addTagToVocabulary(tagParameters);
 
         // Start reprocessing all episodes (skip LLM to save costs)
         const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
@@ -573,7 +569,7 @@ const server = Bun.serve({
     // Tag Vocabulary API: Start migration
     if (
       url.pathname === '/api/tag-vocabulary/migrate' &&
-      req.method === 'POST'
+      request.method === 'POST'
     ) {
       try {
         const jobId = await runMigrationWithTagTracking();
@@ -616,13 +612,13 @@ const server = Bun.serve({
     // Tag Vocabulary API: Update a tag in vocabulary
     if (
       url.pathname.startsWith('/api/tag-vocabulary/vocabulary/update/') &&
-      req.method === 'PUT'
+      request.method === 'PUT'
     ) {
       try {
         const originalCanonical = decodeURIComponent(
           url.pathname.replace('/api/tag-vocabulary/vocabulary/update/', ''),
         );
-        const body = (await req.json()) as UpdateTagParams;
+        const body = (await request.json()) as UpdateTagParameters;
 
         // Check if status is changing to 'accepted' (for auto-reprocessing)
         const existingTag = findTag(originalCanonical);
@@ -665,7 +661,7 @@ const server = Bun.serve({
     // Tag Vocabulary API: Approve a proposed tag
     if (
       url.pathname.startsWith('/api/tag-vocabulary/vocabulary/approve/') &&
-      req.method === 'POST'
+      request.method === 'POST'
     ) {
       try {
         const canonical = decodeURIComponent(
@@ -708,7 +704,7 @@ const server = Bun.serve({
     // Tag Vocabulary API: Reject a proposed tag
     if (
       url.pathname.startsWith('/api/tag-vocabulary/vocabulary/reject/') &&
-      req.method === 'POST'
+      request.method === 'POST'
     ) {
       try {
         const canonical = decodeURIComponent(
@@ -769,7 +765,7 @@ const server = Bun.serve({
     // Tag Vocabulary API: Reprocess a single tag
     if (
       url.pathname.startsWith('/api/tag-vocabulary/reprocess-tag/') &&
-      req.method === 'POST'
+      request.method === 'POST'
     ) {
       try {
         const canonical = decodeURIComponent(
@@ -808,7 +804,7 @@ const server = Bun.serve({
     // Tag Vocabulary API: Delete a tag from vocabulary
     if (
       url.pathname.startsWith('/api/tag-vocabulary/vocabulary/delete/') &&
-      req.method === 'DELETE'
+      request.method === 'DELETE'
     ) {
       try {
         const canonical = decodeURIComponent(
@@ -906,7 +902,7 @@ const server = Bun.serve({
     // Segment Verification API: Update segments for an episode
     if (
       url.pathname.startsWith('/api/segment-verification/segments/') &&
-      req.method === 'PUT'
+      request.method === 'PUT'
     ) {
       const videoId = url.pathname.replace(
         '/api/segment-verification/segments/',
@@ -914,7 +910,7 @@ const server = Bun.serve({
       );
 
       try {
-        const body = (await req.json()) as { segments: EpisodeSegment[] };
+        const body = (await request.json()) as { segments: EpisodeSegment[] };
 
         if (!Array.isArray(body.segments)) {
           return Response.json(
@@ -981,10 +977,10 @@ const server = Bun.serve({
     // Segment Verification API: Add a learned pattern
     if (
       url.pathname === '/api/segment-verification/patterns/add' &&
-      req.method === 'POST'
+      request.method === 'POST'
     ) {
       try {
-        const body = (await req.json()) as {
+        const body = (await request.json()) as {
           segmentType: string;
           pattern: string;
         };
@@ -1034,7 +1030,7 @@ const server = Bun.serve({
       }
 
       const file = Bun.file(audioPath);
-      const ext = path.extname(audioPath).toLowerCase();
+      const extension = path.extname(audioPath).toLowerCase();
 
       // Determine content type
       const contentTypes: Record<string, string> = {
@@ -1046,7 +1042,7 @@ const server = Bun.serve({
 
       return new Response(file, {
         headers: {
-          'Content-Type': contentTypes[ext] || 'audio/webm',
+          'Content-Type': contentTypes[extension] || 'audio/webm',
           'Accept-Ranges': 'bytes',
         },
       });
@@ -1065,6 +1061,114 @@ const server = Bun.serve({
       });
     }
 
+    // Serve shared CSS
+    if (url.pathname === '/shared/styles.css') {
+      const filePath = path.join(process.cwd(), 'tools', 'shared', 'styles.css');
+      const file = Bun.file(filePath);
+      const exists = await file.exists();
+      if (!exists) {
+        return new Response('Shared styles not found', { status: 404 });
+      }
+      return new Response(file, {
+        headers: { 'Content-Type': 'text/css' },
+      });
+    }
+
+    // Serve shared TypeScript as compiled JavaScript
+    if (url.pathname === '/shared/utilities.js') {
+      const tsPath = path.join(process.cwd(), 'tools', 'shared', 'utilities.ts');
+      const file = Bun.file(tsPath);
+      const exists = await file.exists();
+      if (!exists) {
+        return new Response('Shared utilities not found', { status: 404 });
+      }
+
+      try {
+        // Use Bun's built-in transpiler
+        const result = await Bun.build({
+          entrypoints: [tsPath],
+          target: 'browser',
+          format: 'esm',
+        });
+
+        if (!result.success || !result.outputs[0]) {
+          console.error('TypeScript compilation failed:', result.logs);
+          return new Response('Compilation failed', { status: 500 });
+        }
+
+        const output = await result.outputs[0].text();
+        return new Response(output, {
+          headers: { 'Content-Type': 'application/javascript' },
+        });
+      } catch (error) {
+        console.error('Error compiling TypeScript:', error);
+        return new Response('Compilation error', { status: 500 });
+      }
+    }
+
+    // ========================================
+    // Per-Episode Viewer
+    // ========================================
+
+    // Episode API: Get single episode data
+    if (/^\/api\/episode\/[^/]+$/.test(url.pathname) && request.method === 'GET') {
+      const videoId = url.pathname.replace('/api/episode/', '');
+      const videos = await loadProcessedVideos();
+      const video = videos.find((v) => v.videoId === videoId);
+
+      if (!video) {
+        return Response.json({ error: 'Episode not found' }, { status: 404 });
+      }
+
+      // Check audio availability
+      const audioPath = await getAudioFilePath(videoId);
+
+      return Response.json({
+        ...video,
+        hasAudio: !!audioPath,
+      });
+    }
+
+    // Episode API: Get corrections scoped to an episode
+    if (/^\/api\/episode\/[^/]+\/corrections$/.test(url.pathname) && request.method === 'GET') {
+      const videoId = url.pathname.split('/')[3] ?? '';
+      const tracker = await loadTracker();
+
+      // Filter candidates that include this episode
+      const episodeCandidates = Object.entries(tracker.candidates)
+        .filter(([, c]) => c.episodeIds?.includes(videoId) || c.episodes?.some((e: string) => e.includes(videoId)))
+        .map(([key, candidate]) => ({ key, ...candidate }));
+
+      return Response.json(episodeCandidates);
+    }
+
+    // Episode Hub Page
+    if (/^\/episode\/[^/]+$/.test(url.pathname) && !url.pathname.includes('/api/')) {
+      const filePath = path.join(process.cwd(), 'tools', 'episode', 'index.html');
+      const file = Bun.file(filePath);
+      const exists = await file.exists();
+      if (!exists) {
+        return new Response('Episode viewer not found. Please create tools/episode/index.html', { status: 404 });
+      }
+      return new Response(file, {
+        headers: { 'Content-Type': 'text/html' },
+      });
+    }
+
+    // Episode Subpages (transcript, segments, tags, corrections)
+    if (/^\/episode\/[^/]+\/(transcript|segments|tags|corrections)$/.test(url.pathname)) {
+      const subpage = url.pathname.split('/').pop();
+      const filePath = path.join(process.cwd(), 'tools', 'episode', `${subpage}.html`);
+      const file = Bun.file(filePath);
+      const exists = await file.exists();
+      if (!exists) {
+        return new Response(`Episode ${subpage} page not found. Please create tools/episode/${subpage}.html`, { status: 404 });
+      }
+      return new Response(file, {
+        headers: { 'Content-Type': 'text/html' },
+      });
+    }
+
     return new Response('Not Found', { status: 404 });
   },
 });
@@ -1075,7 +1179,8 @@ console.log(
 );
 console.log(`🌐 Open in browser: http://localhost:${PORT}`);
 console.log(`\n📋 Available tools:`);
-console.log(`   • Landing Page:           http://localhost:${PORT}/`);
+console.log(`   • Episode List:           http://localhost:${PORT}/`);
+console.log(`   • Episode Viewer:         http://localhost:${PORT}/episode/{videoId}`);
 console.log(
   `   • Timestamp Validator:    http://localhost:${PORT}/validate-timestamps`,
 );

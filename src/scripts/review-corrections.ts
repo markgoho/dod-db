@@ -98,13 +98,13 @@ function displayCandidates(candidates: CorrectionCandidate[]) {
 }
 
 // Parse command line args
-const args = process.argv.slice(2);
+const arguments_ = process.argv.slice(2);
 let minConfidence = 50;
 
-for (let i = 0; i < args.length; i++) {
-  const nextArg = args[i + 1];
-  if (args[i] === '--min-confidence' && nextArg) {
-    minConfidence = Number.parseInt(nextArg, 10);
+for (let index = 0; index < arguments_.length; index++) {
+  const nextArgument = arguments_[index + 1];
+  if (arguments_[index] === '--min-confidence' && nextArgument) {
+    minConfidence = Number.parseInt(nextArgument, 10);
     if (Number.isNaN(minConfidence) || minConfidence < 0 || minConfidence > 100) {
       console.error('Error: --min-confidence must be between 0 and 100');
       process.exit(1);

@@ -36,7 +36,9 @@ export async function extractTags(
 
 	// Tier 2: LLM discovery (new terms with 5+ mentions) - optional
 	let discoveredTags: EpisodeTag[] = [];
-	if (!options.skipLlm) {
+	if (options.skipLlm) {
+		console.log('  Phase 2: Skipped (skipLlm option enabled)');
+	} else {
 		const categoryInfo = options.categories ? ` [${options.categories.join(', ')} only]` : '';
 		console.log(`  Phase 2: LLM discovery of new tags (5+ mentions)${categoryInfo}...`);
 		discoveredTags = await extractTagsLlm(correctedTranscript, deterministicTags, options.categories);
@@ -53,8 +55,6 @@ export async function extractTags(
 			console.log('💡 Consider adding these to src/config/tag-vocabulary.ts');
 			console.log('   or use the Web UI: bun run src/scripts/tag-vocabulary-ui.ts\n');
 		}
-	} else {
-		console.log('  Phase 2: Skipped (skipLlm option enabled)');
 	}
 
 	// Merge results
@@ -89,7 +89,7 @@ function mergeTags(deterministic: EpisodeTag[], discovered: EpisodeTag[]): Episo
 		merged.set(tag.tag, existing + tag.mentions);
 	}
 
-	return Array.from(merged.entries()).map(([tag, mentions]) => ({
+	return [...merged.entries()].map(([tag, mentions]) => ({
 		tag,
 		mentions,
 	}));

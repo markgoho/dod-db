@@ -98,14 +98,14 @@ export const SEGMENT_PATTERNS: Record<
     /coming up.*chapter and verse/i,
     /before that.*chapter and verse/i,
     /let'?s\s+go\s+chapter and verse/i,
-    /In keeping with the theme today, we\'re going to do a Chapter/i,
-    /All right, well, let\'s dive into chapter and verse\./i,
+    /In keeping with the theme today, we're going to do a Chapter/i,
+    /All right, well, let's dive into chapter and verse\./i,
   ],
   'what-does-that-mean': [
     /welcome to.*what does that mean/i,
     /segment.*what does that mean/i,
     /call it what does that mean/i,
-    /For my segment, "What Does That Mean\?", we\'re going to be ta/i,
+    /For my segment, "What Does That Mean\?", we're going to be ta/i,
   ],
   'all-right-lets-see-it': [/all right,?\s+let'?s see it/i],
   'urban-legends': [
@@ -121,24 +121,24 @@ export const SEGMENT_PATTERNS: Record<
   'conspiracy-watch': [
     /conspiracy watch/i,
     /welcome to.*conspiracy watch/i,
-    /But for now, let\'s get on Conspiracy Watch\./i,
+    /But for now, let's get on Conspiracy Watch\./i,
   ],
   'archaeology-of-israel': [
     /archaeology of israel/i,
     /welcome to.*archaeology of israel/i,
-    /Let\'s look at archaeology of Israel\./i,
+    /Let's look at archaeology of Israel\./i,
   ],
   'whos-that': [/who'?s that\?/i, /welcome to.*who'?s that/i],
   'women-in-the-bible': [
     /women in the bible/i,
     /welcome to.*women in the bible/i,
-    /We\'re introducing this new segment, Women in the Bible, beca/i,
+    /We're introducing this new segment, Women in the Bible, beca/i,
   ],
   'thats-history': [/that'?s history/i, /welcome to.*that'?s history/i],
   'know-your-bible': [
     /know your bible/i,
     /welcome to.*know your bible/i,
-    /So on this edition of Know Your Bible, we\'re going to jump o/i,
+    /So on this edition of Know Your Bible, we're going to jump o/i,
   ],
   'could-it-be-satan': [
     /could it be satan\??/i,

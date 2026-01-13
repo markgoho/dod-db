@@ -10,7 +10,7 @@ import { transcribeAudio } from './transcribe.js';
  * @param stageName - Name of the pipeline stage (e.g., 'transcription')
  * @param filePath - Path to the file to commit
  */
-async function commitStage(stageName: string, filePath: string): Promise<void> {
+async function _commitStage(stageName: string, filePath: string): Promise<void> {
   try {
     // Add file to git
     const addProc = Bun.spawn(['git', 'add', filePath]);

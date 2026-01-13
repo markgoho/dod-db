@@ -4,7 +4,7 @@
  * Supports optional LLM verification for ambiguous matches.
  */
 
-import { getAllSearchableTerms, tagVocabulary } from '../config/tag-vocabulary.js';
+import { tagVocabulary } from '../config/tag-vocabulary.js';
 import { verifyTagMatches } from './verify-tag-matches.js';
 import type { EpisodeTag } from '../storage/processed-videos.js';
 import type { TagDefinition } from '../config/tag-vocabulary.js';
@@ -51,7 +51,7 @@ export async function extractTagsDeterministic(
 	const tagCounts = new Map<string, number>(); // canonical -> count
 
 	// Build array of search patterns sorted by length (longest first)
-	const patterns = Array.from(termMap.entries())
+	const patterns = [...termMap.entries()]
 		.map(([searchTerm, canonical]) => {
 			const tagDef = activeVocabulary.find((t) => t.canonical === canonical);
 			const caseSensitive = tagDef?.caseSensitive ?? false;
@@ -59,7 +59,7 @@ export async function extractTagsDeterministic(
 			return {
 				searchTerm,
 				canonical,
-				pattern: new RegExp(`\\b${escapeRegex(searchTerm)}\\b`, flags),
+				pattern: new RegExp(String.raw`\b${escapeRegex(searchTerm)}\b`, flags),
 			};
 		})
 		.sort((a, b) => b.searchTerm.length - a.searchTerm.length);
@@ -86,7 +86,7 @@ export async function extractTagsDeterministic(
 	};
 
 	// Process patterns from longest to shortest
-	for (const { searchTerm, canonical, pattern } of patterns) {
+	for (const { canonical, pattern } of patterns) {
 		let match;
 		// Reset regex lastIndex for each pattern
 		pattern.lastIndex = 0;
@@ -160,7 +160,7 @@ export async function extractTagsDeterministic(
 	}
 
 	// Convert to EpisodeTag array
-	return Array.from(tagCounts.entries()).map(([tag, mentions]) => ({
+	return [...tagCounts.entries()].map(([tag, mentions]) => ({
 		tag,
 		mentions,
 	}));
@@ -172,6 +172,6 @@ export async function extractTagsDeterministic(
  * @param str - String to escape
  * @returns Escaped string safe for use in RegExp
  */
-function escapeRegex(str: string): string {
-	return str.replaceAll(/[.*+?^${}()|[\]\\]/g, '\\$&');
+function escapeRegex(string_: string): string {
+	return string_.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
 }

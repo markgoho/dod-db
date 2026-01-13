@@ -9,13 +9,11 @@
 import {
   loadProcessedVideos,
   updateVideoSegments,
-  type ProcessedVideo,
   type EpisodeSegment,
 } from '../storage/processed-videos.js';
 import {
   SEGMENT_LABELS,
   SEGMENT_COLORS,
-  SEGMENT_PATTERNS,
   type SegmentType,
 } from '../config/segment-patterns.js';
 import { youtubeConfig } from '../config/youtube.js';
@@ -29,14 +27,14 @@ async function addPatternToConfig(segmentType: string, pattern: string): Promise
 
   // Escape special regex characters in the pattern
   const escapedPattern = pattern
-    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-    .replace(/'/g, "\\'");
+    .replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`)
+    .replaceAll('\'', String.raw`\'`);
 
   // Find the array for this segment type and add the new pattern
   // Look for: 'segment-type': [ or segment-type: [
   const patterns = [
-    new RegExp(`('${segmentType}':\\s*\\[)([^\\]]*)`, 's'),
-    new RegExp(`(${segmentType}:\\s*\\[)([^\\]]*)`, 's'),
+    new RegExp(String.raw`('${segmentType}':\s*\[)([^\]]*)`, 's'),
+    new RegExp(String.raw`(${segmentType}:\s*\[)([^\]]*)`, 's'),
   ];
 
   let found = false;
@@ -78,8 +76,8 @@ async function getAudioFilePath(videoId: string): Promise<string | null> {
   // Try common extensions
   const extensions = ['.webm', '.m4a', '.mp3', '.wav'];
 
-  for (const ext of extensions) {
-    const filePath = path.join(audioDir, `${videoId}${ext}`);
+  for (const extension of extensions) {
+    const filePath = path.join(audioDir, `${videoId}${extension}`);
     const file = Bun.file(filePath);
     if (await file.exists()) {
       return filePath;
@@ -90,10 +88,10 @@ async function getAudioFilePath(videoId: string): Promise<string | null> {
 }
 
 // Serve the web UI
-const server = Bun.serve({
+const _server = Bun.serve({
   port: PORT,
-  async fetch(req) {
-    const url = new URL(req.url);
+  async fetch(request) {
+    const url = new URL(request.url);
 
     // Serve the main UI
     if (url.pathname === '/' || url.pathname === '/index.html') {
@@ -167,7 +165,7 @@ const server = Bun.serve({
       }
 
       const file = Bun.file(audioPath);
-      const ext = path.extname(audioPath).toLowerCase();
+      const extension = path.extname(audioPath).toLowerCase();
 
       // Determine content type
       const contentTypes: Record<string, string> = {
@@ -179,18 +177,18 @@ const server = Bun.serve({
 
       return new Response(file, {
         headers: {
-          'Content-Type': contentTypes[ext] || 'audio/webm',
+          'Content-Type': contentTypes[extension] || 'audio/webm',
           'Accept-Ranges': 'bytes',
         },
       });
     }
 
     // API: Update segments for an episode
-    if (url.pathname.startsWith('/api/segments/') && req.method === 'PUT') {
+    if (url.pathname.startsWith('/api/segments/') && request.method === 'PUT') {
       const videoId = url.pathname.replace('/api/segments/', '');
 
       try {
-        const body = (await req.json()) as { segments: EpisodeSegment[] };
+        const body = (await request.json()) as { segments: EpisodeSegment[] };
 
         if (!Array.isArray(body.segments)) {
           return Response.json(
@@ -253,9 +251,9 @@ const server = Bun.serve({
     }
 
     // API: Add a learned pattern
-    if (url.pathname === '/api/patterns/add' && req.method === 'POST') {
+    if (url.pathname === '/api/patterns/add' && request.method === 'POST') {
       try {
-        const body = (await req.json()) as { segmentType: string; pattern: string };
+        const body = (await request.json()) as { segmentType: string; pattern: string };
 
         if (!body.segmentType || !body.pattern) {
           return Response.json(

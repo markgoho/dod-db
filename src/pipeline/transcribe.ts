@@ -8,13 +8,13 @@ const client = new AssemblyAI({
  * Format milliseconds into [HH:MM:SS.mmm] timestamp format
  */
 function formatTimestamp(milliseconds: number): string {
-  const hours = Math.floor(milliseconds / 3600000)
+  const hours = Math.floor(milliseconds / 3_600_000)
     .toString()
     .padStart(2, '0');
-  const minutes = Math.floor((milliseconds % 3600000) / 60000)
+  const minutes = Math.floor((milliseconds % 3_600_000) / 60_000)
     .toString()
     .padStart(2, '0');
-  const seconds = Math.floor((milliseconds % 60000) / 1000)
+  const seconds = Math.floor((milliseconds % 60_000) / 1000)
     .toString()
     .padStart(2, '0');
   const ms = (milliseconds % 1000).toString().padStart(3, '0');
@@ -32,11 +32,11 @@ export async function transcribeAudio(audioFilePath: string): Promise<string> {
   const uploadedUrl = await client.files.upload(audioFilePath);
   const audioUrl = uploadedUrl;
 
-  const params: TranscribeParams = {
+  const parameters: TranscribeParams = {
     audio: audioUrl,
     speaker_labels: true,
   };
-  const transcript = await client.transcripts.transcribe(params);
+  const transcript = await client.transcripts.transcribe(parameters);
 
   if (transcript.status === 'error') {
     throw new Error(`Error transcribing audio: ${transcript.error}`);
@@ -64,7 +64,7 @@ export async function transcribeAudio(audioFilePath: string): Promise<string> {
 
       return transcriptLines.join('\n');
     }
-  } catch (error) {
+  } catch {
     console.warn(
       '  Warning: Could not retrieve sentence-level timestamps, falling back to utterances',
     );

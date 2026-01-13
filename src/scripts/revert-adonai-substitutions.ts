@@ -5,7 +5,7 @@
  */
 
 import { readdirSync, existsSync } from 'node:fs';
-import { join, basename } from 'node:path';
+import { join } from 'node:path';
 
 const TRANSCRIPTS_DIR = join(import.meta.dir, '../../data/transcripts');
 
@@ -48,7 +48,7 @@ async function main() {
     const rawByTimestamp = new Map<string, string>();
     for (const line of rawLines) {
       const match = line.match(/^\[(\d{2}:\d{2}:\d{2}\.\d{3})\]/);
-      if (match) {
+      if (match?.[1]) {
         rawByTimestamp.set(match[1], line);
       }
     }
@@ -56,11 +56,12 @@ async function main() {
     const reversions: Reversion[] = [];
     const newFinalLines: string[] = [];
 
-    for (let i = 0; i < finalLines.length; i++) {
-      let line = finalLines[i];
+    // eslint-disable-next-line prefer-const -- index can't be const when line needs let in destructuring
+    for (let [index, line] of finalLines.entries()) {
+      if (line === undefined) continue;
       const match = line.match(/^\[(\d{2}:\d{2}:\d{2}\.\d{3})\]/);
 
-      if (match && line.toLowerCase().includes('adonai')) {
+      if (match?.[1] && line.toLowerCase().includes('adonai')) {
         const timestamp = match[1];
         const rawLine = rawByTimestamp.get(timestamp);
 
@@ -73,13 +74,13 @@ async function main() {
             // Find and replace Adonai with the original casing from raw
             // Extract "the Lord" variant from raw (preserve original casing)
             const lordMatch = rawLine.match(/the lord/i);
-            if (lordMatch) {
+            if (lordMatch?.[0]) {
               const originalPhrase = lordMatch[0];
-              const newLine = line.replace(/adonai/gi, originalPhrase);
+              const newLine = line.replaceAll(/adonai/gi, originalPhrase);
 
               reversions.push({
                 file: finalFile,
-                line: i + 1,
+                line: index + 1,
                 raw: rawLine.trim(),
                 corrected: line.trim(),
               });
@@ -112,8 +113,8 @@ async function main() {
     console.log(`\n📄 ${file} (${reversions.length} reversions)`);
     for (const r of reversions) {
       console.log(`   Line ${r.line}:`);
-      console.log(`   - Raw:       ${r.raw.substring(0, 100)}${r.raw.length > 100 ? '...' : ''}`);
-      console.log(`   + Corrected: ${r.corrected.substring(0, 100)}${r.corrected.length > 100 ? '...' : ''}`);
+      console.log(`   - Raw:       ${r.raw.slice(0, 100)}${r.raw.length > 100 ? '...' : ''}`);
+      console.log(`   + Corrected: ${r.corrected.slice(0, 100)}${r.corrected.length > 100 ? '...' : ''}`);
     }
   }
 

@@ -5,7 +5,10 @@
   "private": true,
   "scripts": {
     "emulators:start": "firebase emulators:start --only auth,firestore",
-    "tools": "bun run src/scripts/tools-server.ts"
+    "tools": "bun run src/scripts/tools-server.ts",
+    "typecheck": "tsc --noEmit --project tsconfig.json",
+    "lint": "eslint .",
+    "check": "bun run typecheck && bun run lint"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
@@ -15,6 +18,7 @@
     "eslint-plugin-unicorn": "^62.0.0",
     "firebase-tools": "^15.2.1",
     "globals": "^17.0.0",
+    "jiti": "^2.6.1",
     "prettier": "^3.7.4",
     "typescript-eslint": "^8.52.0"
   },

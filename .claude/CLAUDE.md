@@ -8,17 +8,25 @@ This is a DoD database project built with Bun, Firebase, and the Google AI SDK f
 
 ## Development Commands
 
+use `bunx` to run local dependency scripts
+
 ### Core Development
+
 - `bun install` - Install dependencies
+- `bun run typecheck` - Run TypeScript type checking
+- `bun run lint` - Run ESLint
+- `bun run check` - Run both typecheck and lint (use this to confirm code is error-free)
 
 ### Processing Pipeline
 
 **Primary command for processing YouTube episodes:**
+
 ```bash
 bun run src/scripts/process-youtube.ts <youtube-url> [options]
 ```
 
 This is the canonical way to kick off the full pipeline. It:
+
 1. Extracts video ID and checks if already processed
 2. Fetches metadata from YouTube (title, date, description)
 3. Downloads audio to `data/audio/`
@@ -30,15 +38,18 @@ This is the canonical way to kick off the full pipeline. It:
 9. Updates `data/processed-videos.json` tracking
 
 **Options:**
+
 - `--force` - Reprocess video even if already in processed-videos.json
 - `--start-from=STAGE` - Resume from a specific stage to save API costs
   - Supported stages: `correct` (skip transcription and speaker identification)
 
 **Output files per episode:**
+
 - `data/transcripts/YYYY-MM-DD-episode-title-raw.txt` - Raw with speaker names (not committed)
 - `data/transcripts/YYYY-MM-DD-episode-title.txt` - Final corrected (committed)
 
 **Examples:**
+
 ```bash
 # Process a new episode
 bun run src/scripts/process-youtube.ts "https://www.youtube.com/watch?v=833s6y6kW2k"
@@ -58,21 +69,25 @@ bun run src/scripts/process-youtube.ts 833s6y6kW2k --force --start-from=correct
 
 **Staged Pipeline (Cost Savings):**
 The `--start-from=correct` flag allows resuming from the correction stage when the raw transcript already exists. This is useful when:
+
 - IDE crashes after transcription/speaker-ID complete
 - Re-running correction with updated deterministic rules
 - Testing correction improvements without re-transcribing
 
 Cost savings:
+
 - Skips AssemblyAI transcription (~$0.42/minute of audio)
 - Skips Gemini speaker identification (1 API call)
 - Only runs Gemini correction (15+ chunks, necessary stage)
 
 **Other pipeline scripts:**
+
 - `bun run src/scripts/transcript-qa.ts` - Run Q&A over indexed transcripts
 - `bun run src/scripts/check-new-episodes.ts` - Check for and process new episodes (used by GitHub Actions)
 - `bun run src/scripts/reprocess-tags.ts` - Reprocess tags for all episodes after vocabulary changes
 
 ### Internal Tools
+
 - `bun run src/scripts/tools-server.ts` (or `npm run tools`) - Start unified tools server at http://localhost:3000
   - **Landing Page**: Dashboard with links to all tools
   - **Timestamp Validator**: Load transcripts and audio files to validate timestamp accuracy
@@ -81,9 +96,11 @@ Cost savings:
   - **Segment Verification**: View segments, verify boundaries, edit timestamps
 
 ### Firebase Emulators
+
 - `npm run emulators:start` - Start Firebase Auth & Firestore emulators (ports: Auth 9099, Firestore 8080)
 
 ### Firebase Functions
+
 - `cd functions && npm run build` - Build Firebase Functions TypeScript
 - `cd functions && npm run build:watch` - Watch mode for Functions
 - `cd functions && npm run serve` - Build and start Functions emulator
@@ -150,6 +167,7 @@ The transcript processing pipeline is orchestrated via `src/pipeline/youtube-pro
 ### Episode Number Tracking
 
 Episode numbers are automatically assigned based on `publishedAt` date order:
+
 - **Sequential numbering**: Earliest episode = 1, next = 2, etc.
 - **All episodes included**: Even those without numbers in titles (like "Apostlepalooza!")
 - **Stored permanently**: In `data/processed-videos.json` as `episodeNumber` field
@@ -160,6 +178,7 @@ Episode numbers are automatically assigned based on `publishedAt` date order:
 **One-time migration**: Run `bun run src/scripts/migrate-episode-numbers.ts` to backfill existing episodes.
 
 **Utility functions** (in `src/storage/processed-videos.ts`):
+
 - `getProcessedVideosWithNumbers()` - Get all videos with episode numbers
 - `getVideoByEpisodeNumber(number)` - Find video by episode number
 - `getEpisodeNumber(videoId)` - Get episode number for a video ID
@@ -173,10 +192,13 @@ The correction system includes a **learning feedback loop** that improves effici
    - Creates `.txt` (final corrected) - committed to git
 
 2. **Compare transcripts** - Diff shows ONLY corrections (speaker names already matched):
+
    ```bash
    diff data/transcripts/episode-1-raw.txt data/transcripts/episode-1.txt
    ```
+
    Example output:
+
    ```diff
    - The Torrah was written
    + The Torah was written
@@ -199,13 +221,15 @@ The correction system includes a **learning feedback loop** that improves effici
 **Tag vocabulary** (`src/config/tag-vocabulary.ts`) contains 100+ predefined terms organized by category. Tags are extracted during pipeline processing and stored in `data/processed-videos.json`.
 
 **Vocabulary structure:**
+
 ```typescript
 type TagDefinition =
-  | { canonical, variations, category, llmVerify: true, description }  // Ambiguous tags
-  | { canonical, variations, category }  // Standard tags
+  | { canonical; variations; category; llmVerify: true; description } // Ambiguous tags
+  | { canonical; variations; category }; // Standard tags
 ```
 
 **Reprocessing tags after vocabulary updates:**
+
 ```bash
 # Reprocess all episodes (deterministic only, no API costs)
 bun run src/scripts/reprocess-tags.ts --force --skip-llm
@@ -218,6 +242,7 @@ bun run src/scripts/reprocess-tags.ts --force --skip-llm --verbose
 ```
 
 **Web UI for tag management:**
+
 ```bash
 # Start the Tag Vocabulary Management UI
 bun run src/scripts/tag-vocabulary-ui.ts
@@ -225,6 +250,7 @@ bun run src/scripts/tag-vocabulary-ui.ts
 ```
 
 The UI provides:
+
 - **Episode Viewer**: Browse all episodes with tags, search, filter by tag, sort by various criteria
 - **Vocabulary Browser**: View 100+ vocabulary terms organized by 7 categories
 - **Analytics Dashboard**: Top used tags, category distribution, underused vocabulary
@@ -235,6 +261,7 @@ The UI provides:
 - **Migration Tools**: Reprocess all episodes after manual vocabulary edits
 
 **Adding tags with LLM verification:**
+
 - Use for common names where context matters (David, John, Mary, Paul)
 - Check "Use LLM context verification" and provide description
 - Example: canonical="David", description="King David of Israel, second king, defeated Goliath"
@@ -242,6 +269,7 @@ The UI provides:
 - Much more accurate than regex-only matching
 
 **Key implementation details:**
+
 - **Case-sensitive matching**: "Lot" (character) vs "lot" in "a lot" (phrase)
 - **Overlap detection**: "biblical canon" + "canon" variation won't double-count
 - **Single-tag extraction**: When adding a tag, only that tag is processed (fast, efficient)
@@ -317,6 +345,7 @@ The UI provides:
 ## Environment Variables
 
 Required environment variables:
+
 - `ASSEMBLYAI_API_KEY` - AssemblyAI API key for audio transcription
 - `GEMINI_API_KEY` - Google AI API key for Gemini models
 - `FIREBASE_PROJECT_ID` - Firebase project identifier (for Firestore indexing)
@@ -353,29 +382,35 @@ This project uses GitHub Projects for planning and tracking. See `dod-db.md` for
 ### GitHub CLI Project Commands
 
 The `gh project` commands require the `project` scope. If needed, run:
+
 ```bash
 gh auth refresh -s project
 ```
 
 #### List Items in Project
+
 ```bash
 gh project item-list 3 --owner markgoho
 gh project item-list 3 --owner markgoho --format json  # JSON output
 ```
 
 #### Add Issue to Project
+
 ```bash
 gh project item-add 3 --owner markgoho --url https://github.com/markgoho/dod-db/issues/<number>
 ```
 
 #### List Project Fields (needed for editing)
+
 ```bash
 gh project field-list 3 --owner markgoho
 gh project field-list 3 --owner markgoho --format json  # Get field IDs
 ```
 
 #### Edit Item Field Values
+
 Editing requires IDs (item ID, field ID, project ID). Get these from JSON output of list commands.
+
 ```bash
 # Update a text field
 gh project item-edit --id <item-id> --field-id <field-id> --project-id <project-id> --text "value"
@@ -388,11 +423,13 @@ gh project item-edit --id <item-id> --field-id <field-id> --project-id <project-
 ```
 
 #### View Project in Browser
+
 ```bash
 gh project view 3 --owner markgoho --web
 ```
 
 ### Issue Management
+
 ```bash
 # List all issues
 gh issue list

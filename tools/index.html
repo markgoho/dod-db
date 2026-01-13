@@ -3,224 +3,309 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tools - Data Over Dogma</title>
+    <title>Episodes - Data Over Dogma Tools</title>
+    <link rel="stylesheet" href="/shared/styles.css" />
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-        padding: 40px 20px;
-      }
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      header {
-        text-align: center;
-        color: white;
-        margin-bottom: 48px;
-      }
-      h1 {
-        font-size: 48px;
-        margin-bottom: 16px;
-        font-weight: 800;
-        text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-      }
-      .subtitle {
-        font-size: 20px;
-        opacity: 0.95;
-        font-weight: 300;
-      }
-      .tools-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      /* Page-specific styles */
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         gap: 24px;
-        margin-top: 48px;
+        flex-wrap: wrap;
       }
-      .tool-card {
-        background: white;
-        border-radius: 16px;
-        padding: 32px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
+
+      .header-main {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .header-main h1 {
+        font-size: 36px;
+        margin-bottom: 8px;
+      }
+
+      .quick-tools {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .quick-tool {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 14px;
+        background: var(--color-gray-100);
+        border-radius: var(--radius-full);
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--color-gray-700);
         text-decoration: none;
-        display: block;
+        transition: all 0.2s;
       }
-      .tool-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+      .quick-tool:hover {
+        background: var(--color-gradient);
+        color: white;
+        text-decoration: none;
+        transform: translateY(-1px);
       }
-      .tool-icon {
-        font-size: 48px;
-        margin-bottom: 16px;
-        display: block;
-      }
-      .tool-name {
-        font-size: 24px;
-        font-weight: 700;
-        color: #1f2937;
-        margin-bottom: 12px;
-      }
-      .tool-description {
-        font-size: 15px;
-        color: #6b7280;
-        line-height: 1.6;
-        margin-bottom: 16px;
-      }
-      .tool-status {
-        display: inline-block;
-        padding: 6px 12px;
-        border-radius: 20px;
-        font-size: 12px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-      }
-      .status-active {
-        background: #d1fae5;
-        color: #065f46;
-      }
-      .status-requires-server {
-        background: #fef3c7;
-        color: #92400e;
-      }
-      .category {
-        display: inline-block;
-        padding: 4px 10px;
-        border-radius: 6px;
-        font-size: 11px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        margin-top: 12px;
-        margin-right: 8px;
-      }
-      .category-validation {
-        background: #dbeafe;
-        color: #1e40af;
-      }
-      .category-review {
-        background: #fce7f3;
-        color: #9f1239;
-      }
-      .category-analysis {
-        background: #fef3c7;
-        color: #92400e;
-      }
-      .server-info {
-        background: white;
-        border-radius: 16px;
-        padding: 24px;
+
+      .controls {
+        display: flex;
+        gap: 16px;
         margin-bottom: 24px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        flex-wrap: wrap;
       }
-      .server-info h3 {
-        font-size: 18px;
-        color: #1f2937;
-        margin-bottom: 12px;
-      }
-      .server-info code {
-        display: block;
-        background: #1f2937;
-        color: #10b981;
+
+      .search-input {
+        flex: 1;
+        min-width: 250px;
         padding: 12px 16px;
-        border-radius: 8px;
-        font-family: "SF Mono", Monaco, Consolas, monospace;
+        border: 1px solid var(--color-gray-200);
+        border-radius: var(--radius-md);
         font-size: 14px;
+        font-family: inherit;
+      }
+
+      .search-input:focus {
+        outline: none;
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+      }
+
+      .sort-select {
+        padding: 12px 16px;
+        border: 1px solid var(--color-gray-200);
+        border-radius: var(--radius-md);
+        font-size: 14px;
+        font-family: inherit;
+        background: white;
+        cursor: pointer;
+        min-width: 180px;
+      }
+
+      .episodes-count {
+        font-size: 14px;
+        color: var(--color-gray-500);
+        margin-bottom: 16px;
+      }
+
+      .episode-card {
+        text-decoration: none;
+      }
+
+      .episode-card:hover .episode-title {
+        color: var(--color-primary);
+      }
+
+      .segment-indicators {
+        display: flex;
+        gap: 4px;
         margin-top: 8px;
       }
-      footer {
-        text-align: center;
-        color: white;
-        margin-top: 48px;
+
+      .segment-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
         opacity: 0.8;
-        font-size: 14px;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>🛠️ DoD Tools</h1>
-        <p class="subtitle">
-          Internal tools for transcript processing and quality assurance
-        </p>
+        <div class="header-content">
+          <div class="header-main">
+            <h1>DoD Episodes</h1>
+            <p class="subtitle">Browse and manage all Data Over Dogma episodes</p>
+          </div>
+          <div class="quick-tools">
+            <a href="/validate-timestamps" class="quick-tool">
+              <span>Timestamp Validator</span>
+            </a>
+            <a href="/review-corrections" class="quick-tool">
+              <span>Corrections</span>
+            </a>
+            <a href="/tag-vocabulary" class="quick-tool">
+              <span>Tag Vocabulary</span>
+            </a>
+            <a href="/segment-verification" class="quick-tool">
+              <span>Segments</span>
+            </a>
+          </div>
+        </div>
+        <div class="stats" id="stats">
+          <div class="stat">
+            <span class="stat-value" id="total-episodes">-</span>
+            <div class="stat-label">Episodes</div>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="total-tags">-</span>
+            <div class="stat-label">Total Tags</div>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="total-segments">-</span>
+            <div class="stat-label">Segments</div>
+          </div>
+        </div>
       </header>
 
-      <div class="tools-grid">
-        <a href="/validate-timestamps" class="tool-card">
-          <span class="tool-icon">🎙️</span>
-          <div class="tool-name">Timestamp Validator</div>
-          <div class="tool-description">
-            Load transcripts and audio files to validate timestamp accuracy.
-            Click any line to jump to that moment in the audio.
-          </div>
-          <span class="tool-status status-active">Ready</span>
-          <div>
-            <span class="category category-validation">Validation</span>
-          </div>
-        </a>
+      <div class="section">
+        <div class="controls">
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Search episodes by title..."
+          />
+          <select id="sort-select" class="sort-select">
+            <option value="episode-desc">Episode # (newest)</option>
+            <option value="episode-asc">Episode # (oldest)</option>
+            <option value="date-desc">Date (newest)</option>
+            <option value="date-asc">Date (oldest)</option>
+            <option value="tags-desc">Tag count (high)</option>
+            <option value="tags-asc">Tag count (low)</option>
+          </select>
+        </div>
 
-        <a href="/review-corrections" class="tool-card">
-          <span class="tool-icon">📚</span>
-          <div class="tool-name">Correction Review</div>
-          <div class="tool-description">
-            Review and approve correction candidates identified across multiple
-            episodes. Approved corrections are added to deterministic list.
-          </div>
-          <span class="tool-status status-active">Ready</span>
-          <div>
-            <span class="category category-review">Review</span>
-          </div>
-        </a>
+        <div class="episodes-count" id="episodes-count"></div>
 
-        <a href="/tag-vocabulary" class="tool-card">
-          <span class="tool-icon">🏷️</span>
-          <div class="tool-name">Tag Vocabulary Management</div>
-          <div class="tool-description">
-            Manage tag vocabulary and view episode analytics. Browse 100+ vocabulary terms,
-            analyze tag usage statistics, and run migrations to reprocess episodes.
-          </div>
-          <span class="tool-status status-active">Ready</span>
-          <div>
-            <span class="category category-analysis">Management</span>
-          </div>
-        </a>
-
-        <a href="/segment-verification" class="tool-card">
-          <span class="tool-icon">🎬</span>
-          <div class="tool-name">Segment Verification</div>
-          <div class="tool-description">
-            View segments, verify boundaries, and edit timestamps for episode segments.
-            Listen to audio and learn patterns for automatic detection.
-          </div>
-          <span class="tool-status status-active">Ready</span>
-          <div>
-            <span class="category category-validation">Verification</span>
-          </div>
-        </a>
+        <div class="episodes-grid" id="episodes-container">
+          <div class="loading">Loading episodes...</div>
+        </div>
       </div>
 
-      <div class="server-info">
-        <h3>🚀 Starting the Tools Server</h3>
-        <p style="color: #6b7280; margin-bottom: 8px;">
-          Start the unified tools server with:
-        </p>
-        <code>bun run src/scripts/tools-server.ts</code>
-        <p style="color: #6b7280; margin-top: 8px; font-size: 14px;">
-          → All tools available at: <strong>http://localhost:3000</strong>
-        </p>
-      </div>
-
-      <footer>
-        <p>Data Over Dogma DB • Internal Tools Dashboard</p>
+      <footer style="text-align: center; color: white; margin-top: 48px; opacity: 0.8; font-size: 14px;">
+        <p>Data Over Dogma DB Tools</p>
       </footer>
     </div>
+
+    <script type="module" src="/shared/utilities.js"></script>
+    <script type="module">
+      import { DoDTools } from '/shared/utilities.js';
+
+      let allEpisodes = [];
+
+      async function init() {
+        try {
+          allEpisodes = await DoDTools.getAllEpisodes();
+          updateStats();
+          renderEpisodes();
+        } catch (error) {
+          console.error('Failed to load episodes:', error);
+          document.getElementById('episodes-container').innerHTML =
+            '<div class="empty-state"><div class="empty-state-icon">Error</div><div class="empty-state-text">Failed to load episodes</div></div>';
+        }
+      }
+
+      function updateStats() {
+        const totalTags = allEpisodes.reduce((sum, ep) => sum + (ep.tags?.length || 0), 0);
+        const totalSegments = allEpisodes.reduce((sum, ep) => sum + (ep.segments?.length || 0), 0);
+
+        document.getElementById('total-episodes').textContent = allEpisodes.length;
+        document.getElementById('total-tags').textContent = totalTags;
+        document.getElementById('total-segments').textContent = totalSegments;
+      }
+
+      function getFilteredAndSortedEpisodes() {
+        const searchTerm = document.getElementById('search-input').value.toLowerCase();
+        const sortValue = document.getElementById('sort-select').value;
+
+        let filtered = allEpisodes;
+
+        // Filter by search term
+        if (searchTerm) {
+          filtered = filtered.filter(ep =>
+            ep.title.toLowerCase().includes(searchTerm) ||
+            ep.tags?.some(t => t.tag.toLowerCase().includes(searchTerm))
+          );
+        }
+
+        // Sort
+        const sorted = [...filtered];
+        switch (sortValue) {
+          case 'episode-desc':
+            sorted.sort((a, b) => (b.episodeNumber || 0) - (a.episodeNumber || 0));
+            break;
+          case 'episode-asc':
+            sorted.sort((a, b) => (a.episodeNumber || 0) - (b.episodeNumber || 0));
+            break;
+          case 'date-desc':
+            sorted.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+            break;
+          case 'date-asc':
+            sorted.sort((a, b) => new Date(a.publishedAt).getTime() - new Date(b.publishedAt).getTime());
+            break;
+          case 'tags-desc':
+            sorted.sort((a, b) => (b.tags?.length || 0) - (a.tags?.length || 0));
+            break;
+          case 'tags-asc':
+            sorted.sort((a, b) => (a.tags?.length || 0) - (b.tags?.length || 0));
+            break;
+        }
+
+        return sorted;
+      }
+
+      function renderEpisodes() {
+        const episodes = getFilteredAndSortedEpisodes();
+        const container = document.getElementById('episodes-container');
+        const countEl = document.getElementById('episodes-count');
+
+        countEl.textContent = `Showing ${episodes.length} of ${allEpisodes.length} episodes`;
+
+        if (episodes.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">No Episodes</div>
+              <div class="empty-state-text">No episodes match your search</div>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = episodes.map(episode => {
+          const tagCount = episode.tags?.length || 0;
+          const segmentCount = episode.segments?.length || 0;
+          const tagsPreview = episode.tags?.slice(0, 4) || [];
+          const moreCount = tagCount > 4 ? tagCount - 4 : 0;
+
+          // Create segment type indicators
+          const segmentTypes = [...new Set(episode.segments?.map(s => s.type) || [])];
+
+          return `
+            <a href="/episode/${episode.videoId}" class="episode-card">
+              <div class="episode-header">
+                <div class="episode-number">Episode ${episode.episodeNumber || '?'}</div>
+                <div class="episode-title">${DoDTools.escapeHtml(episode.title)}</div>
+              </div>
+              <div class="episode-meta">
+                <span>${DoDTools.formatDate(episode.publishedAt)}</span>
+                <span>${tagCount} tags</span>
+                <span>${segmentCount} segments</span>
+              </div>
+              ${tagsPreview.length > 0 ? `
+                <div class="episode-tags">
+                  ${tagsPreview.map(tag => `
+                    <span class="tag-badge">${DoDTools.escapeHtml(tag.tag)} (${tag.mentions})</span>
+                  `).join('')}
+                  ${moreCount > 0 ? `<span class="tag-badge">+${moreCount} more</span>` : ''}
+                </div>
+              ` : ''}
+            </a>
+          `;
+        }).join('');
+      }
+
+      // Event listeners
+      document.getElementById('search-input').addEventListener('input', DoDTools.debounce(renderEpisodes, 200));
+      document.getElementById('sort-select').addEventListener('change', renderEpisodes);
+
+      // Initialize
+      init();
+    </script>
   </body>
 </html>

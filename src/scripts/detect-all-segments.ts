@@ -16,7 +16,6 @@ import {
 } from '../storage/processed-videos.js';
 import {
   detectSegments,
-  getSegmentStats,
   formatTimestamp,
   getAudioDuration,
 } from '../pipeline/detect-segments.js';
