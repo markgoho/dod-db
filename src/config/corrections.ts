@@ -42,4 +42,16 @@ export const globalCorrections: CorrectionRule[] = [
   [['Migdol'], 'Migdal'], // spelling - confidence: 20%
   [["katumua"], "Katumuwa"], // proper-noun - confidence: 25%
   [["common era"], "Common Era"], // capitalization - confidence: 20%
+  [["Tyndall"], "Tyndale"], // spelling - confidence: 40%
+  [["first Enoch"], "First Enoch"], // capitalization - confidence: 40%
+  [["nephal"], "Niphal"], // proper-noun - confidence: 25%
+  [["Euphrates river"], "Euphrates River"], // capitalization - confidence: 25%
+  [["balaam"], "Balaam"], // capitalization - confidence: 20%
+  [["Malach"], "Malak"], // spelling - confidence: 45%
+  [["Halel"], "Helel"], // spelling - confidence: 20%
+  [["priestly source"], "Priestly source"], // capitalization - confidence: 20%
+  [["Pastoral epistles"], "Pastoral Epistles"], // capitalization - confidence: 20%
+  [["shadim"], "shedim"], // spelling - confidence: 20%
+  [["prais"], "praus"], // spelling - confidence: 20%
+  [["Jacob Milgram"], "Jacob Milgrom"], // spelling - confidence: 20%
 ];

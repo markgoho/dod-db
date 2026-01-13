@@ -587,6 +587,49 @@
         font-family: inherit;
         background: white;
       }
+      .proposed-textarea {
+        padding: 8px 12px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: inherit;
+        resize: vertical;
+      }
+      .proposed-textarea:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+      }
+      .proposed-checkbox-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .proposed-checkbox {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+      }
+      .proposed-checkbox-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #374151;
+        cursor: pointer;
+      }
+      .proposed-hint {
+        font-size: 12px;
+        color: #6b7280;
+        margin-top: 4px;
+        margin-left: 26px;
+      }
+      .proposed-description-group {
+        display: none;
+        margin-top: 12px;
+      }
+      .proposed-description-group.show {
+        display: block;
+      }
       .proposed-actions {
         display: flex;
         gap: 12px;
@@ -1535,6 +1578,8 @@
       function renderProposedCard(tag, index) {
         const variationsStr = tag.variations ? tag.variations.join(', ') : '';
         const escapedCanonical = escapeHtml(tag.canonical);
+        const isLlmVerify = tag.llmVerify === true;
+        const description = tag.description || '';
 
         return `
           <div class="proposed-card" id="proposed-card-${index}" data-original="${escapedCanonical}">
@@ -1564,6 +1609,28 @@
                   <option value="scholarship" ${tag.category === 'scholarship' ? 'selected' : ''}>Scholarship</option>
                 </select>
               </div>
+              <div class="proposed-checkbox-row">
+                <input type="checkbox" class="proposed-checkbox" id="proposed-llmVerify-${index}"
+                       ${isLlmVerify ? 'checked' : ''}
+                       onchange="toggleProposedDescription(${index})" />
+                <label class="proposed-checkbox-label" for="proposed-llmVerify-${index}">
+                  Use LLM context verification
+                </label>
+              </div>
+              <div class="proposed-hint">
+                For ambiguous names (like "David" or "John"), use AI to verify each match based on context
+              </div>
+              <div class="proposed-description-group ${isLlmVerify ? 'show' : ''}" id="proposed-description-group-${index}">
+                <div class="proposed-row">
+                  <label class="proposed-label">Description:</label>
+                  <textarea class="proposed-textarea" id="proposed-description-${index}" rows="3"
+                            placeholder="e.g., King David of Israel, second king, son of Jesse, defeated Goliath"
+                  >${escapeHtml(description)}</textarea>
+                </div>
+                <div class="proposed-hint">
+                  Brief description to help AI identify correct matches (required when using LLM verification)
+                </div>
+              </div>
             </div>
             <div class="proposed-actions">
               <button class="btn btn-approve" onclick="approveTag(${index})">
@@ -1588,6 +1655,18 @@
           .replace(/'/g, '&#039;');
       }
 
+      // Toggle description field visibility for proposed tags
+      function toggleProposedDescription(index) {
+        const llmVerify = document.getElementById(`proposed-llmVerify-${index}`).checked;
+        const descriptionGroup = document.getElementById(`proposed-description-group-${index}`);
+
+        if (llmVerify) {
+          descriptionGroup.classList.add('show');
+        } else {
+          descriptionGroup.classList.remove('show');
+        }
+      }
+
       // Approve a proposed tag
       async function approveTag(index) {
         const card = document.getElementById(`proposed-card-${index}`);
@@ -1597,6 +1676,14 @@
         const newCanonical = document.getElementById(`proposed-canonical-${index}`).value.trim();
         const variationsInput = document.getElementById(`proposed-variations-${index}`).value.trim();
         const category = document.getElementById(`proposed-category-${index}`).value;
+        const llmVerify = document.getElementById(`proposed-llmVerify-${index}`).checked;
+        const description = document.getElementById(`proposed-description-${index}`).value.trim();
+
+        // Validate: if llmVerify is checked, description is required
+        if (llmVerify && !description) {
+          alert('Description is required when using LLM verification');
+          return;
+        }
 
         // Parse variations
         const variations = variationsInput
@@ -1606,16 +1693,21 @@
         card.classList.add('saving');
 
         try {
+          // Build update body based on llmVerify
+          const updateBody = {
+            canonical: newCanonical,
+            variations,
+            category,
+            status: 'accepted',
+            llmVerify,
+            description: llmVerify ? description : undefined,
+          };
+
           // First update the tag with any changes
           const updateResponse = await fetch(`/api/tag-vocabulary/vocabulary/update/${encodeURIComponent(originalCanonical)}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              canonical: newCanonical,
-              variations,
-              category,
-              status: 'accepted',
-            }),
+            body: JSON.stringify(updateBody),
           });
 
           if (!updateResponse.ok) {

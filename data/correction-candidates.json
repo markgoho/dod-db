@@ -33,7 +33,9 @@
       "confidence": 50,
       "firstSeen": "2026-01-11T17:59:30.189Z",
       "lastSeen": "2026-01-11T20:46:03.181Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:12:50.709Z",
+      "reviewedBy": "UI Review"
     },
     "Ball→Baal": {
       "original": "Ball",
@@ -642,7 +644,9 @@
       "confidence": 25,
       "firstSeen": "2026-01-11T17:59:30.325Z",
       "lastSeen": "2026-01-11T17:59:30.325Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:13:55.578Z",
+      "reviewedBy": "UI Review"
     },
     "Masha→Mesha": {
       "original": "Masha",
@@ -736,7 +740,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T17:59:30.325Z",
       "lastSeen": "2026-01-11T17:59:30.325Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:14:38.913Z",
+      "reviewedBy": "UI Review"
     },
     "says kuma→says Kuma": {
       "original": "says kuma",
@@ -860,7 +866,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T17:59:30.350Z",
       "lastSeen": "2026-01-11T17:59:30.350Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:14:46.754Z",
+      "reviewedBy": "UI Review"
     },
     "Jesus→Jesus's": {
       "original": "Jesus",
@@ -1056,7 +1064,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T17:59:30.395Z",
       "lastSeen": "2026-01-11T17:59:30.395Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:14:50.470Z",
+      "reviewedBy": "UI Review"
     },
     "Masoretic text→Masoretic Text": {
       "original": "Masoretic text",
@@ -1194,7 +1204,9 @@
       "confidence": 40,
       "firstSeen": "2026-01-11T17:59:30.418Z",
       "lastSeen": "2026-01-11T20:29:33.102Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:11:33.055Z",
+      "reviewedBy": "UI Review"
     },
     "Bishop's→Bishops'": {
       "original": "Bishop's",
@@ -1228,7 +1240,9 @@
       "confidence": 25,
       "firstSeen": "2026-01-11T17:59:30.418Z",
       "lastSeen": "2026-01-11T17:59:30.418Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:13:57.814Z",
+      "reviewedBy": "UI Review"
     },
     "Blaney→Blayney": {
       "original": "Blaney",
@@ -1695,7 +1709,9 @@
       "confidence": 25,
       "firstSeen": "2026-01-11T18:28:00.255Z",
       "lastSeen": "2026-01-11T19:27:55.129Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:14:11.325Z",
+      "reviewedBy": "UI Review"
     },
     "McLaughlin→McLachlan": {
       "original": "McLaughlin",
@@ -1759,7 +1775,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T18:44:23.590Z",
       "lastSeen": "2026-01-11T18:44:23.590Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:14:54.103Z",
+      "reviewedBy": "UI Review"
     },
     "katumua→Katumuwa": {
       "original": "katumua",
@@ -1892,7 +1910,9 @@
       "confidence": 40,
       "firstSeen": "2026-01-11T19:08:48.714Z",
       "lastSeen": "2026-01-11T21:20:04.094Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:11:40.636Z",
+      "reviewedBy": "UI Review"
     },
     "opposition→apposition": {
       "original": "opposition",
@@ -2016,7 +2036,9 @@
       "confidence": 30,
       "firstSeen": "2026-01-11T20:16:08.975Z",
       "lastSeen": "2026-01-11T20:16:08.975Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:13:51.042Z",
+      "reviewedBy": "UI Review"
     },
     "Kefas→Cephas": {
       "original": "Kefas",
@@ -2204,7 +2226,9 @@
       "confidence": 35,
       "firstSeen": "2026-01-11T20:29:33.102Z",
       "lastSeen": "2026-01-11T20:29:33.102Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:12:58.710Z",
+      "reviewedBy": "UI Review"
     },
     "James version→James Version": {
       "original": "James version",
@@ -2268,7 +2292,9 @@
       "confidence": 25,
       "firstSeen": "2026-01-11T20:29:33.102Z",
       "lastSeen": "2026-01-11T20:29:33.102Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:14:18.753Z",
+      "reviewedBy": "UI Review"
     },
     "second great→Second Great": {
       "original": "second great",
@@ -2422,7 +2448,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T20:46:03.181Z",
       "lastSeen": "2026-01-11T20:46:03.181Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:15:17.746Z",
+      "reviewedBy": "UI Review"
     },
     "balaam hey→Balaam hey": {
       "original": "balaam hey",
@@ -2608,10 +2636,11 @@
       "original": "Malach",
       "corrected": "Malak",
       "category": "spelling",
-      "totalOccurrences": 4,
-      "episodeCount": 1,
+      "totalOccurrences": 6,
+      "episodeCount": 2,
       "episodes": [
-        "4PCkaPZMjTc"
+        "4PCkaPZMjTc",
+        "AUgdX7aH_hI"
       ],
       "examples": [
         "\"we have Malach Adonai or\"",
@@ -2633,10 +2662,12 @@
         "4PCkaPZMjTc",
         "4PCkaPZMjTc"
       ],
-      "confidence": 20,
+      "confidence": 45,
       "firstSeen": "2026-01-11T20:46:03.181Z",
-      "lastSeen": "2026-01-11T20:46:03.181Z",
-      "status": "pending"
+      "lastSeen": "2026-01-13T03:14:41.804Z",
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:15:34.884Z",
+      "reviewedBy": "UI Review"
     },
     "word Satan→word satan": {
       "original": "word Satan",
@@ -2760,7 +2791,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T20:46:03.181Z",
       "lastSeen": "2026-01-11T20:46:03.181Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:15:47.217Z",
+      "reviewedBy": "UI Review"
     },
     "Ben Shahar→ben Shahar": {
       "original": "Ben Shahar",
@@ -3094,7 +3127,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T22:05:11.848Z",
       "lastSeen": "2026-01-11T22:05:11.848Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:36:18.657Z",
+      "reviewedBy": "UI Review"
     },
     "Yahweh→Adonai": {
       "original": "Yahweh",
@@ -3124,7 +3159,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T22:05:11.848Z",
       "lastSeen": "2026-01-11T22:05:11.848Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:37:43.635Z",
+      "reviewedBy": "UI Review"
     },
     "priestly source→Priestly source": {
       "original": "priestly source",
@@ -3158,7 +3195,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T22:05:11.848Z",
       "lastSeen": "2026-01-11T22:05:11.848Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:16:56.968Z",
+      "reviewedBy": "UI Review"
     },
     "documentary hypothesis→Documentary Hypothesis": {
       "original": "documentary hypothesis",
@@ -3312,7 +3351,9 @@
       "confidence": 25,
       "firstSeen": "2026-01-11T22:20:51.302Z",
       "lastSeen": "2026-01-11T22:20:51.302Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:14:30.748Z",
+      "reviewedBy": "UI Review"
     },
     "DAF Yomi→Daf Yomi": {
       "original": "DAF Yomi",
@@ -3376,7 +3417,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T22:37:57.104Z",
       "lastSeen": "2026-01-11T22:37:57.104Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:38:06.953Z",
+      "reviewedBy": "UI Review"
     },
     "five books→Five Books": {
       "original": "five books",
@@ -3590,7 +3633,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-11T23:51:55.955Z",
       "lastSeen": "2026-01-11T23:51:55.955Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:18:25.148Z",
+      "reviewedBy": "UI Review"
     },
     "Pastoral epistles→Pastoral Epistles": {
       "original": "Pastoral epistles",
@@ -3624,7 +3669,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-12T00:07:44.268Z",
       "lastSeen": "2026-01-12T00:07:44.268Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:17:10.570Z",
+      "reviewedBy": "UI Review"
     },
     "your gentile→your Gentile": {
       "original": "your gentile",
@@ -3718,37 +3765,46 @@
       "confidence": 25,
       "firstSeen": "2026-01-13T02:10:06.917Z",
       "lastSeen": "2026-01-13T02:10:06.917Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:14:35.481Z",
+      "reviewedBy": "UI Review"
     },
     "anarchic→Enochic": {
       "original": "anarchic",
       "corrected": "Enochic",
       "category": "proper-noun",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
+      "totalOccurrences": 4,
+      "episodeCount": 2,
       "episodes": [
-        "caKa7DTkSkQ"
+        "caKa7DTkSkQ",
+        "AUgdX7aH_hI"
       ],
       "examples": [
         "\"in the anarchic literature as\"",
-        "\"literature, the anarchic literature sits\""
+        "\"literature, the anarchic literature sits\"",
+        "\"through the anarchic and other\""
       ],
       "correctedExamples": [
         "\"in the Enochic literature as\"",
-        "\"literature, the Enochic literature sits\""
+        "\"literature, the Enochic literature sits\"",
+        "\"through the Enochic and other\""
       ],
       "timestamps": [
         "00:35:56.750",
-        "00:44:35.880"
+        "00:44:35.880",
+        "00:24:51.040"
       ],
       "episodeIds": [
         "caKa7DTkSkQ",
-        "caKa7DTkSkQ"
+        "caKa7DTkSkQ",
+        "AUgdX7aH_hI"
       ],
-      "confidence": 15,
+      "confidence": 45,
       "firstSeen": "2026-01-13T02:10:06.917Z",
-      "lastSeen": "2026-01-13T02:10:06.917Z",
-      "status": "pending"
+      "lastSeen": "2026-01-13T03:14:41.804Z",
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:35:45.057Z",
+      "reviewedBy": "UI Review"
     },
     "him→them": {
       "original": "him",
@@ -3779,7 +3835,109 @@
       "firstSeen": "2026-01-13T02:10:06.917Z",
       "lastSeen": "2026-01-13T02:10:06.917Z",
       "status": "pending"
+    },
+    "malach→malakh": {
+      "original": "malach",
+      "corrected": "malakh",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "AUgdX7aH_hI"
+      ],
+      "examples": [
+        "\"there is malach, which again\"",
+        "\"of the Malach Adonai, the\""
+      ],
+      "correctedExamples": [
+        "\"there is malakh, which again\"",
+        "\"of the Malakh Adonai, the\""
+      ],
+      "timestamps": [
+        "00:03:31.450",
+        "00:24:10.470"
+      ],
+      "episodeIds": [
+        "AUgdX7aH_hI",
+        "AUgdX7aH_hI"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-13T03:14:41.804Z",
+      "lastSeen": "2026-01-13T03:14:41.804Z",
+      "status": "pending"
+    },
+    "shadim→shedim": {
+      "original": "shadim",
+      "corrected": "shedim",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "AUgdX7aH_hI"
+      ],
+      "examples": [
+        "\"this word shadim, and it\"",
+        "\"sacrifice to Shadim, lo Eloah,\"",
+        "\"to these shadim as deities\""
+      ],
+      "correctedExamples": [
+        "\"this word shedim, and it\"",
+        "\"sacrifice to shedim, lo eloah,\"",
+        "\"to these shedim as deities\""
+      ],
+      "timestamps": [
+        "00:34:35.849",
+        "00:34:57.950",
+        "00:35:13.990"
+      ],
+      "episodeIds": [
+        "AUgdX7aH_hI",
+        "AUgdX7aH_hI",
+        "AUgdX7aH_hI"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-13T03:14:41.804Z",
+      "lastSeen": "2026-01-13T03:14:41.804Z",
+      "status": "approved",
+      "reviewedAt": "2026-01-13T03:18:18.972Z",
+      "reviewedBy": "UI Review"
+    },
+    "ball→Baal": {
+      "original": "ball",
+      "corrected": "Baal",
+      "category": "proper-noun",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "AUgdX7aH_hI"
+      ],
+      "examples": [
+        "\"bring in ball, and they'll\"",
+        "\"or Zavu Ball, which is\"",
+        "\"directed at Ball was taken\""
+      ],
+      "correctedExamples": [
+        "\"bring in Baal, and they'll\"",
+        "\"or Zebul Baal, which is\"",
+        "\"directed at Baal was taken\""
+      ],
+      "timestamps": [
+        "00:36:19.870",
+        "00:37:36.630",
+        "00:38:17.980"
+      ],
+      "episodeIds": [
+        "AUgdX7aH_hI",
+        "AUgdX7aH_hI",
+        "AUgdX7aH_hI"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-13T03:14:41.804Z",
+      "lastSeen": "2026-01-13T03:14:41.804Z",
+      "status": "rejected",
+      "reviewedAt": "2026-01-13T03:38:01.584Z",
+      "reviewedBy": "UI Review"
     }
   },
-  "lastUpdated": "2026-01-13T02:10:06.918Z"
+  "lastUpdated": "2026-01-13T03:38:06.953Z"
 }

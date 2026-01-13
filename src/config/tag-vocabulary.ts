@@ -172,8 +172,16 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: '1 Enoch', variations: [], category: 'literature', status: 'rejected' },
 	{ canonical: 'Nephilim', variations: [], category: 'character', status: 'accepted' },
 	{ canonical: 'giants', variations: [], category: 'character', status: 'rejected' },
-	{ canonical: 'Book of Enoch', variations: ['1 Enoch'], category: 'literature', status: 'accepted' },
+	{ canonical: 'Book of Enoch', variations: ['1 Enoch', 'First Enoch'], category: 'literature', status: 'accepted' },
 	{ canonical: 'Islam', variations: [], category: 'theology', status: 'accepted' },
+	{ canonical: 'Cherubim', variations: [], category: 'character', status: 'accepted' },
+	{ canonical: 'Syria', variations: [], category: 'place', status: 'accepted' },
+	{ canonical: 'Samson', variations: [], category: 'character', status: 'accepted', llmVerify: true, description: 'Samson from the Book of Judges' },
+	{ canonical: 'Gideon', variations: [], category: 'character', status: 'accepted', llmVerify: true, description: 'Gideon from the Book of Judges' },
+	{ canonical: 'Psalm', variations: ['Psalms', 'Book of Psalms'], category: 'literature', status: 'accepted' },
+	{ canonical: 'Gabriel', variations: ['Archangel Gabriel'], category: 'character', status: 'accepted', llmVerify: true, description: 'Archangel Gabriel' },
+	{ canonical: 'Michael', variations: ['Archangel Michael'], category: 'character', status: 'accepted', llmVerify: true, description: 'Archangel Michael' },
+	{ canonical: 'Jude', variations: ['Book of Jude'], category: 'literature', status: 'accepted' },
 ];
 
 /**

@@ -3656,5 +3656,253 @@
         "detectionMethod": "manual"
       }
     ]
+  },
+  {
+    "videoId": "AUgdX7aH_hI",
+    "title": "Episode 28 (October 16, 2023), \"Angels and Demons\"",
+    "publishedAt": "2023-10-16T00:00:00Z",
+    "processedAt": "2026-01-13T03:14:42.015Z",
+    "transcriptPath": "data/transcripts/2023-10-16-episode-28-october-16-2023-angels-and-demons.txt",
+    "episodeNumber": 28,
+    "tags": [
+      {
+        "tag": "angel",
+        "mentions": 88
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 26
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 17
+      },
+      {
+        "tag": "gods",
+        "mentions": 17
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 16
+      },
+      {
+        "tag": "Israel",
+        "mentions": 12
+      },
+      {
+        "tag": "Baal",
+        "mentions": 12
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 10
+      },
+      {
+        "tag": "Satan",
+        "mentions": 8
+      },
+      {
+        "tag": "Ezekiel",
+        "mentions": 8
+      },
+      {
+        "tag": "greco-roman",
+        "mentions": 7
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 6
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 5
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 4
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 4
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 4
+      },
+      {
+        "tag": "cherubim",
+        "mentions": 4
+      },
+      {
+        "tag": "Greek",
+        "mentions": 4
+      },
+      {
+        "tag": "malakh",
+        "mentions": 4
+      },
+      {
+        "tag": "malak adonai",
+        "mentions": 4
+      },
+      {
+        "tag": "psalm",
+        "mentions": 4
+      },
+      {
+        "tag": "michael",
+        "mentions": 4
+      },
+      {
+        "tag": "divine council",
+        "mentions": 3
+      },
+      {
+        "tag": "Moses",
+        "mentions": 3
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 3
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 3
+      },
+      {
+        "tag": "Lot",
+        "mentions": 3
+      },
+      {
+        "tag": "Syria",
+        "mentions": 3
+      },
+      {
+        "tag": "samson",
+        "mentions": 3
+      },
+      {
+        "tag": "malak elohim",
+        "mentions": 3
+      },
+      {
+        "tag": "gideon",
+        "mentions": 3
+      },
+      {
+        "tag": "gabriel",
+        "mentions": 3
+      },
+      {
+        "tag": "jude",
+        "mentions": 3
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 2
+      },
+      {
+        "tag": "sons of God",
+        "mentions": 2
+      },
+      {
+        "tag": "theology",
+        "mentions": 2
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 2
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Exodus",
+        "mentions": 2
+      },
+      {
+        "tag": "Hagar",
+        "mentions": 2
+      },
+      {
+        "tag": "Sodom",
+        "mentions": 2
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Euphrates",
+        "mentions": 1
+      },
+      {
+        "tag": "Judges",
+        "mentions": 1
+      },
+      {
+        "tag": "Molek",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:17.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "getting-angelic",
+        "startTimestamp": "[00:01:17.000]",
+        "endTimestamp": "[00:31:40.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "getting-demonic",
+        "startTimestamp": "[00:31:40.000]",
+        "endTimestamp": "[00:55:35.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:55:35.000]",
+        "endTimestamp": "[00:56:08.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
   }
 ]
