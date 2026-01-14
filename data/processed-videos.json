@@ -8773,23 +8773,23 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:00:36.060]",
-        "confidence": "auto",
+        "endTimestamp": "[00:03:51.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
-        "type": "advertisement",
-        "startTimestamp": "[00:59:01.290]",
-        "endTimestamp": "[00:59:38.070]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:03:51.000]",
+        "endTimestamp": "[00:58:47.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       },
       {
         "type": "outro",
-        "startTimestamp": "[00:59:38.070]",
+        "startTimestamp": "[00:58:47.000]",
         "endTimestamp": "[00:59:46.760]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
