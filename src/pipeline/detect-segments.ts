@@ -79,7 +79,7 @@ export interface Segment {
 /**
  * A line from the transcript with parsed timestamp.
  */
-interface TranscriptLine {
+export interface TranscriptLine {
   timestamp: string; // Original format: "[HH:MM:SS.mmm]"
   speaker: string;
   text: string;
@@ -99,7 +99,7 @@ interface SegmentMatch {
 /**
  * Parse a transcript into structured lines.
  */
-function parseTranscript(transcript: string): TranscriptLine[] {
+export function parseTranscript(transcript: string): TranscriptLine[] {
   const lines = transcript.split('\n');
   const parsed: TranscriptLine[] = [];
 
@@ -134,7 +134,7 @@ function parseTranscript(transcript: string): TranscriptLine[] {
 /**
  * Convert timestamp string to seconds for comparison.
  */
-function timestampToSeconds(timestamp: string): number {
+export function timestampToSeconds(timestamp: string): number {
   // Remove brackets: "[00:01:23.456]" -> "00:01:23.456"
   const clean = timestamp.replaceAll(/[[\]]/g, '');
   const parts = clean.split(':');
@@ -280,26 +280,41 @@ export async function detectSegmentsFromAudio({
     .filter((match) => match.confidence >= 80)
     .sort((a, b) => a.timestamp - b.timestamp);
 
-  // Convert to Segment format
-  const segments: Segment[] = highConfidenceMatches.map((match, index, array) => {
-      const nextMatch = array[index + 1];
-      const startTimestamp = secondsToTimestamp(match.timestamp);
-      let endTimestamp: string | null = null;
-      if (nextMatch) {
-        endTimestamp = secondsToTimestamp(nextMatch.timestamp);
-      } else if (durationSeconds) {
-        endTimestamp = secondsToTimestamp(durationSeconds);
-      }
+  const segments: Segment[] = [];
 
-      return {
-        type: 'segment' as SegmentType,
-        startTimestamp,
-        endTimestamp,
-        confidence: 'auto' as const,
-        detectionMethod: 'audio' as const,
-        matchedPattern: `audio-jingle-${match.confidence.toFixed(1)}%`,
-      };
+  // Add intro segment from start to first jingle
+  const firstMatch = highConfidenceMatches[0];
+  if (firstMatch) {
+    segments.push({
+      type: 'intro',
+      startTimestamp: '[00:00:00.000]',
+      endTimestamp: secondsToTimestamp(firstMatch.timestamp),
+      confidence: 'auto',
+      detectionMethod: 'audio',
+      matchedPattern: 'start-of-episode',
     });
+  }
+
+  // Convert jingle matches to Segment format
+  for (const [index, match] of highConfidenceMatches.entries()) {
+    const nextMatch = highConfidenceMatches[index + 1];
+    const startTimestamp = secondsToTimestamp(match.timestamp);
+    let endTimestamp: string | null = null;
+    if (nextMatch) {
+      endTimestamp = secondsToTimestamp(nextMatch.timestamp);
+    } else if (durationSeconds) {
+      endTimestamp = secondsToTimestamp(durationSeconds);
+    }
+
+    segments.push({
+      type: 'segment' as SegmentType,
+      startTimestamp,
+      endTimestamp,
+      confidence: 'auto' as const,
+      detectionMethod: 'audio' as const,
+      matchedPattern: `audio-jingle-${match.confidence.toFixed(1)}%`,
+    });
+  }
 
   return segments;
 }

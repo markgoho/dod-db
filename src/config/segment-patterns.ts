@@ -5,6 +5,7 @@ export type SegmentType =
   | 'advertisement'
   | 'all-right-lets-see-it'
   | 'archaeology-of-israel'
+  | 'bible-vs-bible'
   | 'by-the-numbers'
   | 'chapter-and-verse'
   | 'conspiracy-watch'
@@ -21,6 +22,7 @@ export type SegmentType =
   | 'nature-of-god'
   | 'outro'
   | 'segment'
+  | 'taking-issue'
   | 'thats-history'
   | 'urban-legends'
   | 'what-does-that-mean'
@@ -35,6 +37,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   intro: 'Intro',
   'all-right-lets-see-it': "All Right, Let's See It",
   'archaeology-of-israel': 'Archaeology of Israel',
+  'bible-vs-bible': 'Bible vs Bible',
   'by-the-numbers': 'By the Numbers',
   'chapter-and-verse': 'Chapter and Verse',
   'conspiracy-watch': 'Conspiracy Watch',
@@ -49,6 +52,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'mcclellan-911': 'McClellan 911',
   'nature-of-god': 'Nature of God',
   segment: 'Segment (Unknown)',
+  'taking-issue': 'Taking Issue',
   'thats-history': "That's History",
   'urban-legends': 'Urban Legends',
   'what-does-that-mean': 'What Does That Mean?',
@@ -66,6 +70,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   intro: '#6366f1', // indigo
   'all-right-lets-see-it': '#ef4444', // red
   'archaeology-of-israel': '#a16207', // yellow-700 (bronze/earth tone)
+  'bible-vs-bible': '#0891b2', // cyan-600 (scholarly comparison)
   'by-the-numbers': '#06b6d4', // cyan-500
   'chapter-and-verse': '#22c55e', // green
   'conspiracy-watch': '#dc2626', // red-600 (darker red)
@@ -80,6 +85,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'mcclellan-911': '#ec4899', // pink
   'nature-of-god': '#3b82f6', // blue-500 (divine/theological)
   segment: '#9ca3af', // gray-400 (neutral/unknown)
+  'taking-issue': '#ea580c', // orange-600 (debate/critique)
   'thats-history': '#84cc16', // lime-500 (lime green)
   'urban-legends': '#8b5cf6', // violet
   'what-does-that-mean': '#f59e0b', // amber
@@ -100,6 +106,11 @@ export const SEGMENT_PATTERNS: Record<
   Exclude<SegmentType, 'intro' | 'main-content' | 'segment'>,
   RegExp[]
 > = {
+  'bible-vs-bible': [
+    /bible vs\.? bible/i,
+    /welcome to.*bible vs\.? bible/i,
+    /let'?s do.*bible vs\.? bible/i,
+  ],
   'chapter-and-verse': [/let'?s\s+(dive into|do a|start with)\s+chapter and verse/i,
     /coming up.*chapter and verse/i,
     /before that.*chapter and verse/i,
@@ -145,6 +156,11 @@ export const SEGMENT_PATTERNS: Record<
     /your patriarchy and you/i,
     /welcome to.*your patriarchy and you/i,
     /segment.*your patriarchy and you/i,
+  ],
+  'taking-issue': [
+    /taking issue/i,
+    /welcome to.*taking issue/i,
+    /let'?s.*taking issue/i,
   ],
   'thats-history': [/that'?s history/i, /welcome to.*that'?s history/i],
   'know-your-bible': [
@@ -193,3 +209,37 @@ export const INTRO_END_PATTERNS: RegExp[] = [
   /welcome to the data over dogma podcast/i,
   /combat the spread of misinformation/i,
 ];
+
+/**
+ * Human-readable descriptions of each segment type.
+ * Used by LLM to understand what each segment is about.
+ */
+export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
+  intro: 'Opening of the episode with theme music and brief introduction',
+  'all-right-lets-see-it': 'Examining and discussing visual content like charts, maps, or images',
+  'archaeology-of-israel': 'Archaeological findings and discoveries related to ancient Israel',
+  'bible-vs-bible': 'Comparing and contrasting different Bible passages, translations, or interpretations',
+  'by-the-numbers': 'Statistical analysis and numerical data about biblical or religious topics',
+  'chapter-and-verse': 'Reading and discussing specific Bible passages in depth',
+  'conspiracy-watch': 'Examining and debunking conspiracy theories related to religion',
+  'could-it-be-satan': 'Exploring Satan, demons, and evil in biblical and religious contexts',
+  'ex-eventu': 'Discussing prophecy written after the fact (prophecy after the event)',
+  'getting-angelic': 'Exploring angels, heavenly beings, and divine messengers in scripture',
+  'getting-demonic': 'Exploring demons, evil spirits, and malevolent beings in scripture',
+  'is-it-canon': 'Discussing what texts are included in biblical canons and why',
+  'its-the-law': 'Examining biblical laws, commandments, and legal codes',
+  'know-your-bible': 'Educational segment about biblical books, structure, and content',
+  'main-content': 'Primary discussion topic of the episode',
+  'mcclellan-911': 'Listener questions answered by Dan McClellan',
+  'nature-of-god': 'Theological discussion about the nature and attributes of God',
+  segment: 'Unidentified segment type (placeholder)',
+  'taking-issue': 'Critical analysis and debate of controversial biblical or theological topics',
+  'thats-history': 'Historical context and background for biblical events',
+  'urban-legends': 'Examining popular myths and misconceptions about the Bible',
+  'what-does-that-mean': 'Explaining biblical/scholarly terminology and concepts',
+  'whos-that': 'Profiles of biblical characters, historical figures, or scholars',
+  'women-in-the-bible': 'Discussing women and their roles in biblical narratives',
+  'your-patriarchy-and-you': 'Examining patriarchy and gender dynamics in biblical texts',
+  advertisement: 'Sponsor messages or promotional content',
+  outro: 'Closing remarks, credits, and sign-off',
+};

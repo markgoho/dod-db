@@ -5616,7 +5616,131 @@
       "firstSeen": "2026-01-14T02:16:52.177Z",
       "lastSeen": "2026-01-14T02:16:52.177Z",
       "status": "pending"
+    },
+    "Nefesh→Nephesh": {
+      "original": "Nefesh",
+      "corrected": "Nephesh",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "kLBgLbbZ9qw"
+      ],
+      "examples": [
+        "\"Nefesh and ruach,\"",
+        "\"ruach and nefesh fundamentally refer\""
+      ],
+      "correctedExamples": [
+        "\"Nephesh and ruach,\"",
+        "\"ruach and nephesh fundamentally refer\""
+      ],
+      "timestamps": [
+        "00:09:59.870",
+        "00:12:52.920"
+      ],
+      "episodeIds": [
+        "kLBgLbbZ9qw",
+        "kLBgLbbZ9qw"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T15:06:13.846Z",
+      "lastSeen": "2026-01-14T15:06:13.846Z",
+      "status": "pending"
+    },
+    "our Our→our our": {
+      "original": "our Our",
+      "corrected": "our our",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "kLBgLbbZ9qw"
+      ],
+      "examples": [
+        "\"something that our, Our, our brains\"",
+        "\"that our, Our, our brains kind\""
+      ],
+      "correctedExamples": [
+        "\"something that our, our, our brains\"",
+        "\"that our, our, our brains kind\""
+      ],
+      "timestamps": [
+        "00:11:26.460",
+        "00:11:26.460"
+      ],
+      "episodeIds": [
+        "kLBgLbbZ9qw",
+        "kLBgLbbZ9qw"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-14T15:06:13.846Z",
+      "lastSeen": "2026-01-14T15:06:13.846Z",
+      "status": "pending"
+    },
+    "Dagash→darash": {
+      "original": "Dagash",
+      "corrected": "darash",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "cY_sI0kis0g"
+      ],
+      "examples": [
+        "\"misunderstood as Dagash by the\"",
+        "\"Dagash means to\""
+      ],
+      "correctedExamples": [
+        "\"misunderstood as darash by the\"",
+        "\"Darash means to\""
+      ],
+      "timestamps": [
+        "00:24:30.960",
+        "00:24:39.760"
+      ],
+      "episodeIds": [
+        "cY_sI0kis0g",
+        "cY_sI0kis0g"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T15:18:26.244Z",
+      "lastSeen": "2026-01-14T15:18:26.244Z",
+      "status": "pending"
+    },
+    "pornia→porneia": {
+      "original": "pornia",
+      "corrected": "porneia",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "cY_sI0kis0g"
+      ],
+      "examples": [
+        "\"probably is pornia.\"",
+        "\"Yes, pornia.\"",
+        "\"Pornia is where\""
+      ],
+      "correctedExamples": [
+        "\"probably is porneia.\"",
+        "\"Yes, porneia.\"",
+        "\"Porneia is where\""
+      ],
+      "timestamps": [
+        "00:31:49.160",
+        "00:31:50.840",
+        "00:31:53.100"
+      ],
+      "episodeIds": [
+        "cY_sI0kis0g",
+        "cY_sI0kis0g",
+        "cY_sI0kis0g"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-14T15:18:26.244Z",
+      "lastSeen": "2026-01-14T15:18:26.244Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-14T02:16:52.177Z"
+  "lastUpdated": "2026-01-14T15:18:26.244Z"
 }

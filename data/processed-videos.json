@@ -96,6 +96,10 @@
         "mentions": 2
       },
       {
+        "tag": "Elijah",
+        "mentions": 2
+      },
+      {
         "tag": "Isaac",
         "mentions": 2
       },
@@ -118,6 +122,10 @@
       {
         "tag": "Psalm",
         "mentions": 2
+      },
+      {
+        "tag": "2 Kings",
+        "mentions": 1
       },
       {
         "tag": "Christianity",
@@ -552,6 +560,10 @@
         "mentions": 1
       },
       {
+        "tag": "Goliath",
+        "mentions": 1
+      },
+      {
         "tag": "Hebrew Bible",
         "mentions": 1
       },
@@ -953,6 +965,10 @@
         "mentions": 12
       },
       {
+        "tag": "Goliath",
+        "mentions": 10
+      },
+      {
         "tag": "King David",
         "mentions": 7
       },
@@ -989,6 +1005,14 @@
         "mentions": 6
       },
       {
+        "tag": "2 Samuel",
+        "mentions": 4
+      },
+      {
+        "tag": "Elhanan son of Jair",
+        "mentions": 4
+      },
+      {
         "tag": "Romans",
         "mentions": 4
       },
@@ -1009,6 +1033,14 @@
         "mentions": 3
       },
       {
+        "tag": "1 Samuel",
+        "mentions": 2
+      },
+      {
+        "tag": "Council of Jerusalem",
+        "mentions": 2
+      },
+      {
         "tag": "Gospel of John",
         "mentions": 2
       },
@@ -1025,12 +1057,20 @@
         "mentions": 2
       },
       {
+        "tag": "Philistines",
+        "mentions": 2
+      },
+      {
         "tag": "Qumran",
         "mentions": 2
       },
       {
         "tag": "Saint Titus",
         "mentions": 2
+      },
+      {
+        "tag": "1 Chronicles",
+        "mentions": 1
       },
       {
         "tag": "1 Timothy",
@@ -1078,10 +1118,6 @@
       },
       {
         "tag": "Matthew",
-        "mentions": 1
-      },
-      {
-        "tag": "Philistines",
         "mentions": 1
       },
       {
@@ -1204,6 +1240,18 @@
         "mentions": 8
       },
       {
+        "tag": "2 Kings",
+        "mentions": 7
+      },
+      {
+        "tag": "Samaria",
+        "mentions": 6
+      },
+      {
+        "tag": "Edom",
+        "mentions": 5
+      },
+      {
         "tag": "Masoretic Text",
         "mentions": 5
       },
@@ -1241,6 +1289,10 @@
       },
       {
         "tag": "Egypt",
+        "mentions": 3
+      },
+      {
+        "tag": "Elijah",
         "mentions": 3
       },
       {
@@ -1300,6 +1352,10 @@
         "mentions": 1
       },
       {
+        "tag": "Bethel",
+        "mentions": 1
+      },
+      {
         "tag": "biblical canon",
         "mentions": 1
       },
@@ -1329,6 +1385,10 @@
       },
       {
         "tag": "Michael",
+        "mentions": 1
+      },
+      {
+        "tag": "Philistines",
         "mentions": 1
       }
     ],
@@ -1928,6 +1988,10 @@
         "mentions": 2
       },
       {
+        "tag": "Elijah",
+        "mentions": 2
+      },
+      {
         "tag": "Genesis",
         "mentions": 2
       },
@@ -2246,6 +2310,10 @@
         "mentions": 4
       },
       {
+        "tag": "Goliath",
+        "mentions": 3
+      },
+      {
         "tag": "Gospel of John",
         "mentions": 3
       },
@@ -2262,6 +2330,10 @@
         "mentions": 2
       },
       {
+        "tag": "1 Samuel",
+        "mentions": 1
+      },
+      {
         "tag": "Assyria",
         "mentions": 1
       },
@@ -2275,6 +2347,10 @@
       },
       {
         "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Elhanan son of Jair",
         "mentions": 1
       },
       {
@@ -2454,11 +2530,23 @@
         "mentions": 2
       },
       {
+        "tag": "1 Samuel",
+        "mentions": 1
+      },
+      {
         "tag": "Anatolia",
         "mentions": 1
       },
       {
+        "tag": "Bethel",
+        "mentions": 1
+      },
+      {
         "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Edom",
         "mentions": 1
       },
       {
@@ -3154,6 +3242,10 @@
         "mentions": 6
       },
       {
+        "tag": "2 Samuel",
+        "mentions": 5
+      },
+      {
         "tag": "divine council",
         "mentions": 5
       },
@@ -3180,6 +3272,10 @@
       {
         "tag": "Samuel",
         "mentions": 4
+      },
+      {
+        "tag": "1 Chronicles",
+        "mentions": 3
       },
       {
         "tag": "Adam",
@@ -4200,6 +4296,10 @@
         "mentions": 2
       },
       {
+        "tag": "Barnabas",
+        "mentions": 1
+      },
+      {
         "tag": "Holy Spirit",
         "mentions": 1
       },
@@ -4721,6 +4821,10 @@
         "mentions": 2
       },
       {
+        "tag": "Goliath",
+        "mentions": 2
+      },
+      {
         "tag": "Kings",
         "mentions": 2
       },
@@ -5181,6 +5285,10 @@
         "mentions": 3
       },
       {
+        "tag": "2 Kings",
+        "mentions": 2
+      },
+      {
         "tag": "inerrancy",
         "mentions": 2
       },
@@ -5464,6 +5572,10 @@
       },
       {
         "tag": "Cherubim",
+        "mentions": 3
+      },
+      {
+        "tag": "Council of Jerusalem",
         "mentions": 3
       },
       {
@@ -6234,6 +6346,10 @@
         "mentions": 2
       },
       {
+        "tag": "Ephesians",
+        "mentions": 2
+      },
+      {
         "tag": "Jerusalem",
         "mentions": 2
       },
@@ -6383,6 +6499,10 @@
         "mentions": 2
       },
       {
+        "tag": "Samaria",
+        "mentions": 2
+      },
+      {
         "tag": "Samuel",
         "mentions": 2
       },
@@ -6408,6 +6528,10 @@
       },
       {
         "tag": "Gideon",
+        "mentions": 1
+      },
+      {
+        "tag": "Goliath",
         "mentions": 1
       },
       {
@@ -7001,6 +7125,10 @@
         "mentions": 1
       },
       {
+        "tag": "Council of Jerusalem",
+        "mentions": 1
+      },
+      {
         "tag": "Council of Nicaea",
         "mentions": 1
       },
@@ -7018,6 +7146,10 @@
       },
       {
         "tag": "Numbers",
+        "mentions": 1
+      },
+      {
+        "tag": "Pergamum",
         "mentions": 1
       },
       {
@@ -7114,6 +7246,10 @@
         "mentions": 5
       },
       {
+        "tag": "1 Samuel",
+        "mentions": 4
+      },
+      {
         "tag": "Christianity",
         "mentions": 3
       },
@@ -7128,6 +7264,10 @@
       {
         "tag": "seattle",
         "mentions": 3
+      },
+      {
+        "tag": "2 Kings",
+        "mentions": 2
       },
       {
         "tag": "Baal",
@@ -7680,6 +7820,10 @@
         "mentions": 2
       },
       {
+        "tag": "2 Kings",
+        "mentions": 1
+      },
+      {
         "tag": "Bernhard Duhm",
         "mentions": 1
       },
@@ -7822,6 +7966,10 @@
       {
         "tag": "Leviticus",
         "mentions": 3
+      },
+      {
+        "tag": "Ephesians",
+        "mentions": 2
       },
       {
         "tag": "Gentiles",
@@ -8281,6 +8429,10 @@
       },
       {
         "tag": "Kings",
+        "mentions": 4
+      },
+      {
+        "tag": "Samaria",
         "mentions": 4
       },
       {
@@ -8959,6 +9111,10 @@
         "mentions": 1
       },
       {
+        "tag": "Elijah",
+        "mentions": 1
+      },
+      {
         "tag": "Ezekiel",
         "mentions": 1
       },
@@ -9078,15 +9234,31 @@
     "episodeNumber": 52,
     "tags": [
       {
+        "tag": "Goliath",
+        "mentions": 26
+      },
+      {
         "tag": "Genesis",
         "mentions": 21
+      },
+      {
+        "tag": "2 Samuel",
+        "mentions": 16
       },
       {
         "tag": "King David",
         "mentions": 14
       },
       {
+        "tag": "1 Chronicles",
+        "mentions": 12
+      },
+      {
         "tag": "Adam",
+        "mentions": 11
+      },
+      {
+        "tag": "Elhanan son of Jair",
         "mentions": 11
       },
       {
@@ -9094,8 +9266,20 @@
         "mentions": 10
       },
       {
+        "tag": "Philistines",
+        "mentions": 8
+      },
+      {
+        "tag": "1 Samuel",
+        "mentions": 7
+      },
+      {
         "tag": "Hebrew Bible",
         "mentions": 5
+      },
+      {
+        "tag": "Ephesians",
+        "mentions": 4
       },
       {
         "tag": "Eve",
@@ -9111,10 +9295,6 @@
       },
       {
         "tag": "Christianity",
-        "mentions": 3
-      },
-      {
-        "tag": "Philistines",
         "mentions": 3
       },
       {
@@ -9179,28 +9359,408 @@
         "type": "main-content",
         "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:01:45.200]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "manual"
       },
       {
         "type": "bible-vs-bible",
         "startTimestamp": "[00:01:45.200]",
         "endTimestamp": "[00:19:08.451]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
         "type": "taking-issue",
         "startTimestamp": "[00:19:08.451]",
         "endTimestamp": "[01:06:21.000]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
         "type": "outro",
         "startTimestamp": "[01:06:21.000]",
         "endTimestamp": "[01:07:17.000]",
-        "confidence": "auto",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "kLBgLbbZ9qw",
+    "title": "Episode 53 (April 8, 2024), \"The Holy Ghost (and Bears!)\"",
+    "publishedAt": "2024-04-08T00:00:00Z",
+    "processedAt": "2026-01-14T15:06:00.030Z",
+    "transcriptPath": "data/transcripts/2024-04-08-episode-53-april-8-2024-the-holy-ghost-and-bears.txt",
+    "episodeNumber": 53,
+    "tags": [
+      {
+        "tag": "Holy Spirit",
+        "mentions": 18
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 11
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 8
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 8
+      },
+      {
+        "tag": "King Saul",
+        "mentions": 5
+      },
+      {
+        "tag": "Kings",
+        "mentions": 5
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 5
+      },
+      {
+        "tag": "2 Kings",
+        "mentions": 4
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 4
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 3
+      },
+      {
+        "tag": "Elijah",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 3
+      },
+      {
+        "tag": "Satan",
+        "mentions": 3
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 2
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 2
+      },
+      {
+        "tag": "1 Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Baal",
+        "mentions": 1
+      },
+      {
+        "tag": "Bethel",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Proverbs",
+        "mentions": 1
+      },
+      {
+        "tag": "Ham",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Ken Ham",
+        "mentions": 1
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 1
+      },
+      {
+        "tag": "Samaria",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:20.634]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:01:20.634]",
+        "endTimestamp": "[00:35:17.210]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:35:17.210]",
+        "endTimestamp": "[00:49:58.000]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:49:58.000]",
+        "endTimestamp": "[00:50:44.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
+    ]
+  },
+  {
+    "videoId": "cY_sI0kis0g",
+    "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\"",
+    "publishedAt": "2024-04-15T00:00:00Z",
+    "processedAt": "2026-01-14T15:17:36.504Z",
+    "transcriptPath": "data/transcripts/2024-04-15-episode-54-april-15-2024-black-hole-sun.txt",
+    "episodeNumber": 54,
+    "tags": [
+      {
+        "tag": "Paul",
+        "mentions": 34
+      },
+      {
+        "tag": "Book of Acts",
+        "mentions": 32
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 16
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 15
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 15
+      },
+      {
+        "tag": "Jonah",
+        "mentions": 14
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 13
+      },
+      {
+        "tag": "James",
+        "mentions": 13
+      },
+      {
+        "tag": "Edom",
+        "mentions": 11
+      },
+      {
+        "tag": "Barnabas",
+        "mentions": 10
+      },
+      {
+        "tag": "circumcision",
+        "mentions": 10
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 10
+      },
+      {
+        "tag": "Peter",
+        "mentions": 9
+      },
+      {
+        "tag": "Luke",
+        "mentions": 8
+      },
+      {
+        "tag": "Book of Amos",
+        "mentions": 7
+      },
+      {
+        "tag": "Council of Jerusalem",
+        "mentions": 6
+      },
+      {
+        "tag": "Nineveh",
+        "mentions": 6
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 5
+      },
+      {
+        "tag": "Moses",
+        "mentions": 5
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 5
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 4
+      },
+      {
+        "tag": "Hell",
+        "mentions": 4
+      },
+      {
+        "tag": "Israel",
+        "mentions": 4
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 4
+      },
+      {
+        "tag": "Silas",
+        "mentions": 4
+      },
+      {
+        "tag": "Adam",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Jonah",
+        "mentions": 2
+      },
+      {
+        "tag": "Cornelius",
+        "mentions": 2
+      },
+      {
+        "tag": "gods",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 2
+      },
+      {
+        "tag": "King David",
+        "mentions": 2
+      },
+      {
+        "tag": "Syria",
+        "mentions": 2
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Herod the Great",
+        "mentions": 1
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Nero",
+        "mentions": 1
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "Pergamum",
+        "mentions": 1
+      },
+      {
+        "tag": "Samaria",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Sodom",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:04:00.085]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:04:00.085]",
+        "endTimestamp": "[00:44:09.158]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "conspiracy-watch",
+        "startTimestamp": "[00:44:09.158]",
+        "endTimestamp": "[01:07:20.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:07:20.000]",
+        "endTimestamp": "[01:08:05.000]",
+        "confidence": "verified",
         "detectionMethod": "manual"
       }
     ],
