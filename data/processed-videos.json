@@ -9176,18 +9176,32 @@
     ],
     "segments": [
       {
-        "type": "segment",
+        "type": "main-content",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:45.200]",
+        "confidence": "auto",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "bible-vs-bible",
         "startTimestamp": "[00:01:45.200]",
         "endTimestamp": "[00:19:08.451]",
         "confidence": "auto",
         "detectionMethod": "audio"
       },
       {
-        "type": "segment",
+        "type": "taking-issue",
         "startTimestamp": "[00:19:08.451]",
-        "endTimestamp": "[01:07:17.061]",
+        "endTimestamp": "[01:06:21.000]",
         "confidence": "auto",
         "detectionMethod": "audio"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:06:21.000]",
+        "endTimestamp": "[01:07:17.000]",
+        "confidence": "auto",
+        "detectionMethod": "manual"
       }
     ],
     "speakers": [
