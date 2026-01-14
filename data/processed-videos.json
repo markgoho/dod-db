@@ -755,6 +755,10 @@
       {
         "tag": "YHWH",
         "mentions": 1
+      },
+      {
+        "tag": "Zechariah",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -793,6 +797,10 @@
       {
         "tag": "Easter",
         "mentions": 41
+      },
+      {
+        "tag": "Passover",
+        "mentions": 14
       },
       {
         "tag": "resurrection",
@@ -988,6 +996,10 @@
       },
       {
         "tag": "King Saul",
+        "mentions": 2
+      },
+      {
+        "tag": "Origen",
         "mentions": 2
       },
       {
@@ -1231,6 +1243,10 @@
       },
       {
         "tag": "King David",
+        "mentions": 2
+      },
+      {
+        "tag": "Leningrad Codex",
         "mentions": 2
       },
       {
@@ -1675,6 +1691,10 @@
         "mentions": 1
       },
       {
+        "tag": "Aesop",
+        "mentions": 1
+      },
+      {
         "tag": "Book of Enoch",
         "mentions": 1
       },
@@ -1801,6 +1821,10 @@
         "mentions": 4
       },
       {
+        "tag": "Leningrad Codex",
+        "mentions": 4
+      },
+      {
         "tag": "Matthew",
         "mentions": 4
       },
@@ -1826,6 +1850,10 @@
       },
       {
         "tag": "Moses",
+        "mentions": 3
+      },
+      {
+        "tag": "Origen",
         "mentions": 3
       },
       {
@@ -1978,6 +2006,10 @@
         "mentions": 47
       },
       {
+        "tag": "Bethany",
+        "mentions": 24
+      },
+      {
         "tag": "Matthew",
         "mentions": 13
       },
@@ -2059,6 +2091,10 @@
       },
       {
         "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Judas Iscariot",
         "mentions": 1
       },
       {
@@ -2215,6 +2251,10 @@
         "mentions": 1
       },
       {
+        "tag": "Joshua",
+        "mentions": 1
+      },
+      {
         "tag": "Judges",
         "mentions": 1
       },
@@ -2347,6 +2387,10 @@
         "mentions": 2
       },
       {
+        "tag": "Joshua",
+        "mentions": 2
+      },
+      {
         "tag": "Judah",
         "mentions": 2
       },
@@ -2447,8 +2491,16 @@
         "mentions": 26
       },
       {
+        "tag": "Judas Iscariot",
+        "mentions": 20
+      },
+      {
         "tag": "Jesus",
         "mentions": 17
+      },
+      {
+        "tag": "Zechariah",
+        "mentions": 11
       },
       {
         "tag": "Book of Enoch",
@@ -2671,6 +2723,10 @@
         "mentions": 14
       },
       {
+        "tag": "Joshua",
+        "mentions": 10
+      },
+      {
         "tag": "New Testament",
         "mentions": 9
       },
@@ -2728,6 +2784,10 @@
       },
       {
         "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Judas Iscariot",
         "mentions": 2
       },
       {
@@ -3099,6 +3159,10 @@
         "mentions": 2
       },
       {
+        "tag": "Joshua",
+        "mentions": 2
+      },
+      {
         "tag": "Judah",
         "mentions": 2
       },
@@ -3164,6 +3228,10 @@
       },
       {
         "tag": "Psalm",
+        "mentions": 1
+      },
+      {
+        "tag": "Zechariah",
         "mentions": 1
       }
     ],
@@ -3556,11 +3624,19 @@
         "mentions": 1
       },
       {
+        "tag": "Clement of Rome",
+        "mentions": 1
+      },
+      {
         "tag": "Codex Sinaiticus",
         "mentions": 1
       },
       {
         "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "First Clement",
         "mentions": 1
       },
       {
@@ -3748,6 +3824,10 @@
       },
       {
         "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
         "mentions": 1
       },
       {
@@ -4007,6 +4087,10 @@
         "mentions": 3
       },
       {
+        "tag": "John the Baptist",
+        "mentions": 2
+      },
+      {
         "tag": "Mary Magdalene",
         "mentions": 2
       },
@@ -4125,6 +4209,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Passover",
         "mentions": 1
       },
       {
@@ -4823,6 +4911,10 @@
       },
       {
         "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "John the Baptist",
         "mentions": 1
       },
       {
@@ -5627,6 +5719,10 @@
         "mentions": 1
       },
       {
+        "tag": "Candida Moss",
+        "mentions": 1
+      },
+      {
         "tag": "Egypt",
         "mentions": 1
       },
@@ -5997,6 +6093,10 @@
         "mentions": 2
       },
       {
+        "tag": "Judas Iscariot",
+        "mentions": 2
+      },
+      {
         "tag": "angel",
         "mentions": 1
       },
@@ -6107,6 +6207,10 @@
       },
       {
         "tag": "Hebrew Bible",
+        "mentions": 3
+      },
+      {
+        "tag": "Joshua",
         "mentions": 3
       },
       {
@@ -6364,6 +6468,10 @@
       },
       {
         "tag": "Joseph",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
         "mentions": 1
       },
       {
@@ -7019,6 +7127,10 @@
         "mentions": 3
       },
       {
+        "tag": "Joshua",
+        "mentions": 3
+      },
+      {
         "tag": "King James Version",
         "mentions": 3
       },
@@ -7363,6 +7475,10 @@
         "mentions": 4
       },
       {
+        "tag": "Bethany",
+        "mentions": 3
+      },
+      {
         "tag": "Gospel of Mark",
         "mentions": 3
       },
@@ -7428,6 +7544,10 @@
       },
       {
         "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "Passover",
         "mentions": 1
       },
       {
@@ -7509,6 +7629,10 @@
       {
         "tag": "New Testament",
         "mentions": 4
+      },
+      {
+        "tag": "Jennifer Bird",
+        "mentions": 3
       },
       {
         "tag": "Leviticus",
@@ -7688,8 +7812,20 @@
         "mentions": 4
       },
       {
+        "tag": "Leningrad Codex",
+        "mentions": 4
+      },
+      {
+        "tag": "Masada",
+        "mentions": 4
+      },
+      {
         "tag": "Psalm",
         "mentions": 4
+      },
+      {
+        "tag": "Essenes",
+        "mentions": 3
       },
       {
         "tag": "Moses",
@@ -7780,6 +7916,10 @@
         "mentions": 1
       },
       {
+        "tag": "Candida Moss",
+        "mentions": 1
+      },
+      {
         "tag": "Egypt",
         "mentions": 1
       },
@@ -7824,6 +7964,10 @@
         "mentions": 1
       },
       {
+        "tag": "Pliny the Younger",
+        "mentions": 1
+      },
+      {
         "tag": "textual criticism",
         "mentions": 1
       },
@@ -7865,6 +8009,10 @@
     "episodeNumber": 46,
     "tags": [
       {
+        "tag": "Joshua",
+        "mentions": 20
+      },
+      {
         "tag": "YHWH",
         "mentions": 20
       },
@@ -7898,6 +8046,10 @@
       },
       {
         "tag": "Gospel of Matthew",
+        "mentions": 6
+      },
+      {
+        "tag": "Zechariah",
         "mentions": 6
       },
       {
@@ -7977,11 +8129,19 @@
         "mentions": 2
       },
       {
+        "tag": "Judas Iscariot",
+        "mentions": 2
+      },
+      {
         "tag": "New Testament",
         "mentions": 2
       },
       {
         "tag": "Numbers",
+        "mentions": 2
+      },
+      {
+        "tag": "Origen",
         "mentions": 2
       },
       {
@@ -8159,6 +8319,10 @@
         "mentions": 8
       },
       {
+        "tag": "John the Baptist",
+        "mentions": 7
+      },
+      {
         "tag": "Galilee",
         "mentions": 6
       },
@@ -8180,6 +8344,10 @@
       },
       {
         "tag": "Hebrew Bible",
+        "mentions": 3
+      },
+      {
+        "tag": "Helen Bond",
         "mentions": 3
       },
       {
@@ -8247,6 +8415,10 @@
         "mentions": 1
       },
       {
+        "tag": "Candida Moss",
+        "mentions": 1
+      },
+      {
         "tag": "Easter",
         "mentions": 1
       },
@@ -8268,6 +8440,10 @@
       },
       {
         "tag": "King David",
+        "mentions": 1
+      },
+      {
+        "tag": "Pliny the Younger",
         "mentions": 1
       },
       {
@@ -8344,6 +8520,10 @@
         "mentions": 8
       },
       {
+        "tag": "Tertius",
+        "mentions": 7
+      },
+      {
         "tag": "manuscript",
         "mentions": 5
       },
@@ -8356,6 +8536,14 @@
         "mentions": 3
       },
       {
+        "tag": "Candida Moss",
+        "mentions": 2
+      },
+      {
+        "tag": "Clement of Rome",
+        "mentions": 2
+      },
+      {
         "tag": "Egypt",
         "mentions": 2
       },
@@ -8364,11 +8552,23 @@
         "mentions": 2
       },
       {
+        "tag": "Pliny the Younger",
+        "mentions": 2
+      },
+      {
+        "tag": "Aesop",
+        "mentions": 1
+      },
+      {
         "tag": "Africa",
         "mentions": 1
       },
       {
         "tag": "archaeology",
+        "mentions": 1
+      },
+      {
+        "tag": "First Clement",
         "mentions": 1
       },
       {
@@ -8437,6 +8637,10 @@
         "mentions": 16
       },
       {
+        "tag": "Pontius Pilate",
+        "mentions": 15
+      },
+      {
         "tag": "Mary Magdalene",
         "mentions": 14
       },
@@ -8445,11 +8649,23 @@
         "mentions": 12
       },
       {
+        "tag": "Bethany",
+        "mentions": 10
+      },
+      {
         "tag": "Romans",
         "mentions": 9
       },
       {
+        "tag": "Judas Iscariot",
+        "mentions": 8
+      },
+      {
         "tag": "New Testament",
+        "mentions": 8
+      },
+      {
+        "tag": "Passover",
         "mentions": 8
       },
       {
@@ -8457,8 +8673,16 @@
         "mentions": 5
       },
       {
+        "tag": "Sanhedrin",
+        "mentions": 5
+      },
+      {
         "tag": "Easter",
         "mentions": 4
+      },
+      {
+        "tag": "Holy Week",
+        "mentions": 3
       },
       {
         "tag": "Bart Ehrman",
@@ -8526,6 +8750,10 @@
       },
       {
         "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Helen Bond",
         "mentions": 1
       },
       {
