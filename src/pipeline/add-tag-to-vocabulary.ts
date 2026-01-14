@@ -80,15 +80,16 @@ export async function addTagToVocabulary(parameters: AddTagParams): Promise<void
 		? `[${variations.map(v => `'${escapeForTsString(v)}'`).join(', ')}]`
 		: '[]';
 
-	// Build entry based on options (llmVerify, caseSensitive, status, addedInEpisode)
+	// Build entry based on options (llmVerify, caseSensitive, status, addedInEpisode, description)
 	const status = parameters.status || 'accepted';
 	const statusString = `, status: '${status}'`;
 	const caseSensitiveString = parameters.caseSensitive ? ', caseSensitive: true' : '';
 	const addedInEpisodeString = parameters.addedInEpisode ? `, addedInEpisode: ${parameters.addedInEpisode}` : '';
+	const descriptionString = parameters.description ? `, description: '${escapeForTsString(parameters.description)}'` : '';
 
 	const newEntry = 'llmVerify' in parameters && parameters.llmVerify
 		? `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}', llmVerify: true, description: '${escapeForTsString(parameters.description)}'${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`
-		: `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}'${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`;
+		: `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}'${descriptionString}${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`;
 
 	// Insert the new entry before the closing bracket
 	const beforeClosing = content.slice(0, closingBracketIndex);
@@ -112,14 +113,21 @@ export async function addTagToVocabulary(parameters: AddTagParams): Promise<void
 			addedInEpisode: parameters.addedInEpisode,
 		} as TagDefinition);
 	} else {
-		tagVocabulary.push({
+		// Build tag with description if provided
+		const baseTag = {
 			canonical,
 			variations,
 			category,
 			status,
 			caseSensitive: parameters.caseSensitive,
 			addedInEpisode: parameters.addedInEpisode,
-		} as TagDefinition);
+		};
+
+		tagVocabulary.push(
+			parameters.description
+				? { ...baseTag, description: parameters.description }
+				: baseTag,
+		);
 	}
 
 	const statusLabel = status === 'proposed' ? ' (proposed)' : '';
