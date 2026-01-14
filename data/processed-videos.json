@@ -190,6 +190,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -396,6 +400,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Francesca Stavrakopoulou",
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -586,6 +595,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -776,6 +789,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan",
+      "Bart Ehrman"
     ]
   },
   {
@@ -904,6 +922,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -1107,6 +1129,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -1335,6 +1361,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -1440,6 +1470,11 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Aaron Higashi",
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -1588,6 +1623,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -1742,6 +1781,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -1971,6 +2014,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -2136,6 +2183,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Elizabeth Schrader Polczer",
+      "Dan McClellan"
     ]
   },
   {
@@ -2304,6 +2355,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -2472,6 +2527,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -2688,6 +2747,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -2864,6 +2927,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -3024,6 +3091,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -3264,6 +3335,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -3465,6 +3540,11 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher",
+      "David A. Burnett"
     ]
   },
   {
@@ -3696,6 +3776,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -3891,6 +3975,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -4036,6 +4124,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan",
+      "Liane Feldman"
     ]
   },
   {
@@ -4145,6 +4238,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -4242,6 +4339,11 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Miriam Anzovin",
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -4390,6 +4492,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -4527,6 +4633,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Matthew Thiessen",
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -4711,6 +4822,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -4975,6 +5090,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -5151,6 +5270,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -5252,6 +5375,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Andrew Whitehead",
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -5448,6 +5576,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -5632,6 +5764,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -5773,6 +5909,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Isaac Soon",
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -5974,6 +6115,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -6139,6 +6284,10 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -6328,6 +6477,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Jacob Wright",
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -6533,6 +6687,11 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Aaron Adair",
+      "Dan McClellan"
     ]
   },
   {
@@ -6690,6 +6849,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan",
+      "Eric Vanden Eykel"
     ]
   },
   {
@@ -6903,6 +7067,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -7056,6 +7224,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher",
+      "Joel McHale"
     ]
   },
   {
@@ -7240,6 +7413,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   },
   {
@@ -7416,6 +7593,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -7588,6 +7769,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -7709,6 +7894,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Jennifer Bird",
+      "Dan Beecher"
     ]
   },
   {
@@ -7998,6 +8188,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Kipp Davis",
+      "Dan Beecher"
     ]
   },
   {
@@ -8234,6 +8429,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -8276,6 +8475,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher",
+      "Lindsay Graham"
     ]
   },
   {
@@ -8477,6 +8681,11 @@
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
+    ],
+    "speakers": [
+      "Helen Bond",
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -8606,6 +8815,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Candida Moss",
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -8791,6 +9005,10 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -8844,6 +9062,11 @@
         "confidence": "verified",
         "detectionMethod": "manual"
       }
+    ],
+    "speakers": [
+      "Neil Van Leeuwen",
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   },
   {
@@ -8966,6 +9189,10 @@
         "confidence": "auto",
         "detectionMethod": "audio"
       }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   }
 ]
