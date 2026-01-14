@@ -18,17 +18,17 @@ const force = arguments_.includes('--force');
 const startFromIndex = arguments_.findIndex((argument) =>
   argument.startsWith('--start-from'),
 );
-let startFrom: 'correct' | 'segment-detection' | undefined;
+let startFrom: 'correct' | 'segment-detection' | 'extract-tags' | undefined;
 if (startFromIndex !== -1) {
   const value = arguments_[startFromIndex]?.includes('=')
     ? arguments_[startFromIndex]?.split('=')[1]
     : arguments_[startFromIndex + 1];
-  if (value !== 'correct' && value !== 'segment-detection') {
-    console.error('Error: --start-from only supports "correct" or "segment-detection" stages');
+  if (value !== 'correct' && value !== 'segment-detection' && value !== 'extract-tags') {
+    console.error('Error: --start-from only supports "correct", "segment-detection", or "extract-tags" stages');
     console.error('');
     process.exit(1);
   }
-  startFrom = value as 'correct' | 'segment-detection';
+  startFrom = value as 'correct' | 'segment-detection' | 'extract-tags';
 }
 
 if (!videoUrl) {

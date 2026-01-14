@@ -346,6 +346,13 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Garden of Gethsemane', variations: ['Gethsemane'], category: 'place', status: 'accepted' },
 	{ canonical: 'Sanhedrin', variations: ['the Sanhedrin'], category: 'people', status: 'accepted' },
 	{ canonical: 'cognitive science', variations: ['cognitive science of religion'], category: 'scholarship', status: 'rejected' },
+	{ canonical: 'Goliath', variations: ['Goliath\'s'], category: 'character', description: 'Philistine giant famously defeated in single combat, though sources disagree on the victor (David or Elhanan).', status: 'proposed', addedInEpisode: 52 },
+	{ canonical: '1 Samuel', variations: ['First Samuel'], category: 'literature', description: 'Book of Samuel in the Hebrew Bible, narrates the reigns of Samuel, Saul, and David', status: 'proposed', addedInEpisode: 52 },
+	{ canonical: '2 Samuel', variations: ['Second Samuel'], category: 'literature', description: 'Book of Samuel in the Hebrew Bible, continues the narrative of David\'s reign', status: 'proposed', addedInEpisode: 52 },
+	{ canonical: 'Philistine', variations: ['Philistines'], category: 'people', description: 'An ancient people who inhabited parts of Canaan, often in conflict with the Israelites', status: 'proposed', addedInEpisode: 52 },
+	{ canonical: 'elhanan', variations: [], category: 'character', description: 'Israelite warrior credited with killing Goliath in 2 Samuel 21:19', status: 'proposed', caseSensitive: true, addedInEpisode: 52 },
+	{ canonical: 'chronicles', variations: ['First Chronicles', '1 Chronicles'], category: 'literature', description: 'Books of Chronicles present a retelling of the history of ancient Israel.', status: 'proposed', addedInEpisode: 52 },
+	{ canonical: 'Ephesians', variations: ['Book of Ephesians'], category: 'literature', description: 'Epistle in the New Testament, traditionally attributed to Paul but authorship debated', status: 'proposed', addedInEpisode: 52 },
 ];
 
 /**

@@ -35,7 +35,7 @@ export interface ProcessYouTubeVideoResult {
 
 export interface ProcessYouTubeVideoOptions {
   force?: boolean;
-  startFrom?: 'correct' | 'segment-detection';
+  startFrom?: 'correct' | 'segment-detection' | 'extract-tags';
 }
 
 /**
@@ -123,6 +123,53 @@ export async function processYouTubeVideo(
 
     // Update only segments
     await updateVideoSegments(videoId, segments);
+    console.log('Done!');
+
+    return {
+      videoId,
+      transcriptPath: existingVideo.transcriptPath,
+      metadata: {
+        id: videoId,
+        title: existingVideo.title,
+        description: '',
+        publishedAt: existingVideo.publishedAt,
+        channelTitle: '',
+      },
+    };
+  }
+
+  // Handle extract-tags stage (early return - only updates tags)
+  if (options.startFrom === 'extract-tags') {
+    console.log('Starting from tag extraction stage...');
+
+    const existingVideo = await getVideoById(videoId);
+    if (!existingVideo) {
+      throw new Error(
+        `Cannot start from extract-tags stage: video ${videoId} not found in processed-videos.json\n` +
+          `Run without --start-from to process the full pipeline.`,
+      );
+    }
+
+    const transcriptFile = Bun.file(existingVideo.transcriptPath);
+    if (!(await transcriptFile.exists())) {
+      throw new Error(
+        `Cannot start from extract-tags stage: transcript not found at ${existingVideo.transcriptPath}`,
+      );
+    }
+
+    const correctedTranscript = await transcriptFile.text();
+    console.log(`Loaded existing transcript from: ${existingVideo.transcriptPath}`);
+
+    // Extract tags
+    console.log('Extracting tags...');
+    const tags = await extractTags(correctedTranscript, {
+      enableLlmVerification: true,
+      episodeNumber: existingVideo.episodeNumber,
+    });
+    console.log(`✓ Extracted ${tags.length} tags`);
+
+    // Update video with extracted tags
+    await updateVideoTags(videoId, tags);
     console.log('Done!');
 
     return {
