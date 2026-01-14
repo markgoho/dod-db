@@ -96,19 +96,19 @@ export const SEGMENT_PATTERNS: Record<
   Exclude<SegmentType, 'intro' | 'main-content'>,
   RegExp[]
 > = {
-  'chapter-and-verse': [
-    /let'?s\s+(dive into|do a|start with)\s+chapter and verse/i,
+  'chapter-and-verse': [/let'?s\s+(dive into|do a|start with)\s+chapter and verse/i,
     /coming up.*chapter and verse/i,
     /before that.*chapter and verse/i,
     /let'?s\s+go\s+chapter and verse/i,
     /In keeping with the theme today, we're going to do a Chapter/i,
     /All right, well, let's dive into chapter and verse\./i,
+    /Well, let's start with chapter and verse\./i,
   ],
-  'what-does-that-mean': [
-    /welcome to.*what does that mean/i,
+  'what-does-that-mean': [/welcome to.*what does that mean/i,
     /segment.*what does that mean/i,
     /call it what does that mean/i,
     /For my segment, "What Does That Mean\?", we're going to be ta/i,
+    /What does that mean\?/i,
   ],
   'all-right-lets-see-it': [/all right,?\s+let'?s see it/i],
   'urban-legends': [
@@ -172,11 +172,11 @@ export const SEGMENT_PATTERNS: Record<
     /patreon\.com/i,
     /Hey, everybody, have you ever wondered how you can support t/i,
   ],
-  outro: [
-    /we'?ll talk to you (again\s+)?next week/i,
+  outro: [/we'?ll talk to you (again\s+)?next week/i,
     /thanks for listening.*next week/i,
     /see you next week/i,
     /have a good one/i,
+    /Well, thank you so much for joining us\./i,
   ],
 };
 

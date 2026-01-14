@@ -25,6 +25,7 @@ export type AddTagParams =
 			description: string;
 			status?: TagStatus;
 			caseSensitive?: boolean;
+			addedInEpisode?: number;
 	  }
 	| {
 			canonical: string;
@@ -34,6 +35,7 @@ export type AddTagParams =
 			description?: string;
 			status?: TagStatus;
 			caseSensitive?: boolean;
+			addedInEpisode?: number;
 	  };
 
 /**
@@ -78,14 +80,15 @@ export async function addTagToVocabulary(parameters: AddTagParams): Promise<void
 		? `[${variations.map(v => `'${escapeForTsString(v)}'`).join(', ')}]`
 		: '[]';
 
-	// Build entry based on options (llmVerify, caseSensitive, status)
+	// Build entry based on options (llmVerify, caseSensitive, status, addedInEpisode)
 	const status = parameters.status || 'accepted';
 	const statusString = `, status: '${status}'`;
 	const caseSensitiveString = parameters.caseSensitive ? ', caseSensitive: true' : '';
+	const addedInEpisodeString = parameters.addedInEpisode ? `, addedInEpisode: ${parameters.addedInEpisode}` : '';
 
 	const newEntry = 'llmVerify' in parameters && parameters.llmVerify
-		? `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}', llmVerify: true, description: '${escapeForTsString(parameters.description)}'${statusString}${caseSensitiveString} },\n`
-		: `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}'${statusString}${caseSensitiveString} },\n`;
+		? `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}', llmVerify: true, description: '${escapeForTsString(parameters.description)}'${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`
+		: `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}'${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`;
 
 	// Insert the new entry before the closing bracket
 	const beforeClosing = content.slice(0, closingBracketIndex);
@@ -106,6 +109,7 @@ export async function addTagToVocabulary(parameters: AddTagParams): Promise<void
 			description: parameters.description,
 			status,
 			caseSensitive: parameters.caseSensitive,
+			addedInEpisode: parameters.addedInEpisode,
 		} as TagDefinition);
 	} else {
 		tagVocabulary.push({
@@ -114,6 +118,7 @@ export async function addTagToVocabulary(parameters: AddTagParams): Promise<void
 			category,
 			status,
 			caseSensitive: parameters.caseSensitive,
+			addedInEpisode: parameters.addedInEpisode,
 		} as TagDefinition);
 	}
 

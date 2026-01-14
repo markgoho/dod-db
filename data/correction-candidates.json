@@ -619,10 +619,11 @@
       "original": "Meisha",
       "corrected": "Mesha",
       "category": "spelling",
-      "totalOccurrences": 6,
-      "episodeCount": 1,
+      "totalOccurrences": 9,
+      "episodeCount": 2,
       "episodes": [
-        "35Jz3A7tBgU"
+        "35Jz3A7tBgU",
+        "QFyFMwQpSko"
       ],
       "examples": [
         "\"Meisha of Moab.\"",
@@ -644,9 +645,9 @@
         "35Jz3A7tBgU",
         "35Jz3A7tBgU"
       ],
-      "confidence": 25,
+      "confidence": 45,
       "firstSeen": "2026-01-11T17:59:30.325Z",
-      "lastSeen": "2026-01-11T17:59:30.325Z",
+      "lastSeen": "2026-01-14T02:00:10.571Z",
       "status": "rejected",
       "reviewedAt": "2026-01-13T03:13:55.578Z",
       "reviewedBy": "UI Review"
@@ -1075,11 +1076,12 @@
       "original": "Masoretic text",
       "corrected": "Masoretic Text",
       "category": "capitalization",
-      "totalOccurrences": 15,
-      "episodeCount": 2,
+      "totalOccurrences": 20,
+      "episodeCount": 3,
       "episodes": [
         "DD7Kkzh2kzg",
-        "p8CjJR4yhfk"
+        "p8CjJR4yhfk",
+        "iO6mdYWPOyo"
       ],
       "examples": [
         "\"of the Masoretic text.\"",
@@ -1101,9 +1103,9 @@
         "DD7Kkzh2kzg",
         "DD7Kkzh2kzg"
       ],
-      "confidence": 50,
+      "confidence": 70,
       "firstSeen": "2026-01-11T17:59:30.418Z",
-      "lastSeen": "2026-01-11T21:20:04.094Z",
+      "lastSeen": "2026-01-14T01:56:41.407Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:05:54.102Z",
       "reviewedBy": "UI Review"
@@ -1921,30 +1923,35 @@
       "original": "opposition",
       "corrected": "apposition",
       "category": "spelling",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
+      "totalOccurrences": 4,
+      "episodeCount": 2,
       "episodes": [
-        "7oB6UrrFn6c"
+        "7oB6UrrFn6c",
+        "QFyFMwQpSko"
       ],
       "examples": [
         "\"this is opposition.\"",
-        "\"Hebrew, the opposition doesn't come\""
+        "\"Hebrew, the opposition doesn't come\"",
+        "\"actually just opposition.\""
       ],
       "correctedExamples": [
         "\"this is apposition.\"",
-        "\"Hebrew, the apposition doesn't come\""
+        "\"Hebrew, the apposition doesn't come\"",
+        "\"actually just apposition.\""
       ],
       "timestamps": [
         "00:51:51.960",
-        "00:52:47.970"
+        "00:52:47.970",
+        "00:51:29.340"
       ],
       "episodeIds": [
         "7oB6UrrFn6c",
-        "7oB6UrrFn6c"
+        "7oB6UrrFn6c",
+        "QFyFMwQpSko"
       ],
-      "confidence": 15,
+      "confidence": 45,
       "firstSeen": "2026-01-11T19:08:48.714Z",
-      "lastSeen": "2026-01-11T19:08:48.714Z",
+      "lastSeen": "2026-01-14T02:00:10.571Z",
       "status": "pending"
     },
     "Cephas→Kephas": {
@@ -2347,30 +2354,35 @@
       "original": "addition",
       "corrected": "edition",
       "category": "spelling",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
+      "totalOccurrences": 4,
+      "episodeCount": 2,
       "episodes": [
-        "naI65ELNhRw"
+        "naI65ELNhRw",
+        "iO6mdYWPOyo"
       ],
       "examples": [
         "\"of the addition that they\"",
-        "\"or the addition of their\""
+        "\"or the addition of their\"",
+        "\"is the addition.\""
       ],
       "correctedExamples": [
         "\"of the edition that they\"",
-        "\"or the edition of their\""
+        "\"or the edition of their\"",
+        "\"is the edition.\""
       ],
       "timestamps": [
         "00:32:38.260",
-        "00:32:38.260"
+        "00:32:38.260",
+        "01:04:02.590"
       ],
       "episodeIds": [
         "naI65ELNhRw",
-        "naI65ELNhRw"
+        "naI65ELNhRw",
+        "iO6mdYWPOyo"
       ],
-      "confidence": 10,
+      "confidence": 40,
       "firstSeen": "2026-01-11T20:29:33.102Z",
-      "lastSeen": "2026-01-11T20:29:33.102Z",
+      "lastSeen": "2026-01-14T01:56:41.407Z",
       "status": "pending"
     },
     "Sea scroll→Sea Scroll": {
@@ -3658,11 +3670,12 @@
       "original": "Pastoral epistles",
       "corrected": "Pastoral Epistles",
       "category": "capitalization",
-      "totalOccurrences": 24,
-      "episodeCount": 2,
+      "totalOccurrences": 26,
+      "episodeCount": 3,
       "episodes": [
         "sVplhtKv9Jc",
-        "_8in-xz4L8o"
+        "_8in-xz4L8o",
+        "5CCrRI2RX2s"
       ],
       "examples": [
         "\"that the Pastoral epistles give people\"",
@@ -3684,9 +3697,9 @@
         "sVplhtKv9Jc",
         "sVplhtKv9Jc"
       ],
-      "confidence": 50,
+      "confidence": 70,
       "firstSeen": "2026-01-12T00:07:44.268Z",
-      "lastSeen": "2026-01-13T16:53:14.949Z",
+      "lastSeen": "2026-01-14T02:06:38.666Z",
       "status": "approved",
       "reviewedAt": "2026-01-13T03:17:10.570Z",
       "reviewedBy": "UI Review"
@@ -4983,7 +4996,627 @@
       "firstSeen": "2026-01-13T22:24:48.362Z",
       "lastSeen": "2026-01-13T22:24:48.362Z",
       "status": "pending"
+    },
+    "dirty gentiles→dirty Gentiles": {
+      "original": "dirty gentiles",
+      "corrected": "dirty Gentiles",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "BQOMbZtGs6E"
+      ],
+      "examples": [
+        "\"the dirty, dirty gentiles.\"",
+        "\"the dirty, dirty gentiles.\""
+      ],
+      "correctedExamples": [
+        "\"the dirty, dirty Gentiles.\"",
+        "\"the dirty, dirty Gentiles.\""
+      ],
+      "timestamps": [
+        "00:00:03.160",
+        "00:35:57.400"
+      ],
+      "episodeIds": [
+        "BQOMbZtGs6E",
+        "BQOMbZtGs6E"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T01:52:41.977Z",
+      "lastSeen": "2026-01-14T01:52:41.977Z",
+      "status": "pending"
+    },
+    "Bali→Baali": {
+      "original": "Bali",
+      "corrected": "Baali",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "BQOMbZtGs6E"
+      ],
+      "examples": [
+        "\"call me Bali, but you\"",
+        "\"you know, Bali, my master\""
+      ],
+      "correctedExamples": [
+        "\"call me Baali, but you\"",
+        "\"you know, Baali, my master\""
+      ],
+      "timestamps": [
+        "00:05:12.590",
+        "00:05:21.790"
+      ],
+      "episodeIds": [
+        "BQOMbZtGs6E",
+        "BQOMbZtGs6E"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-14T01:52:41.977Z",
+      "lastSeen": "2026-01-14T01:52:41.977Z",
+      "status": "pending"
+    },
+    "Mary→marry": {
+      "original": "Mary",
+      "corrected": "marry",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "BQOMbZtGs6E"
+      ],
+      "examples": [
+        "\"translated to Mary.\"",
+        "\"translated as Mary is to\""
+      ],
+      "correctedExamples": [
+        "\"translated to marry.\"",
+        "\"translated as marry is to\""
+      ],
+      "timestamps": [
+        "00:05:44.960",
+        "00:05:59.160"
+      ],
+      "episodeIds": [
+        "BQOMbZtGs6E",
+        "BQOMbZtGs6E"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-14T01:52:41.977Z",
+      "lastSeen": "2026-01-14T01:52:41.977Z",
+      "status": "pending"
+    },
+    "one Woman→one woman": {
+      "original": "one Woman",
+      "corrected": "one woman",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "BQOMbZtGs6E"
+      ],
+      "examples": [
+        "\"One man, one Woman.\"",
+        "\"one man, One woman, that's one.\""
+      ],
+      "correctedExamples": [
+        "\"One man, one woman.\"",
+        "\"one man, one woman, that's one—\""
+      ],
+      "timestamps": [
+        "00:23:06.260",
+        "00:23:11.900"
+      ],
+      "episodeIds": [
+        "BQOMbZtGs6E",
+        "BQOMbZtGs6E"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T01:52:41.977Z",
+      "lastSeen": "2026-01-14T01:52:41.977Z",
+      "status": "pending"
+    },
+    "Kip→Kipp": {
+      "original": "Kip",
+      "corrected": "Kipp",
+      "category": "spelling",
+      "totalOccurrences": 8,
+      "episodeCount": 1,
+      "episodes": [
+        "iO6mdYWPOyo"
+      ],
+      "examples": [
+        "\"this is Kip Davis.\"",
+        "\"being here, Kip.\"",
+        "\"Kip Davis, thank\""
+      ],
+      "correctedExamples": [
+        "\"this is Kipp Davis.\"",
+        "\"being here, Kipp.\"",
+        "\"Kipp Davis, thank\""
+      ],
+      "timestamps": [
+        "00:01:19.630",
+        "00:01:28.450",
+        "00:04:11.140"
+      ],
+      "episodeIds": [
+        "iO6mdYWPOyo",
+        "iO6mdYWPOyo",
+        "iO6mdYWPOyo"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-14T01:56:41.407Z",
+      "lastSeen": "2026-01-14T01:56:41.407Z",
+      "status": "pending"
+    },
+    "Kumran→Qumran": {
+      "original": "Kumran",
+      "corrected": "Qumran",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "iO6mdYWPOyo"
+      ],
+      "examples": [
+        "\"photos of Kumran, what you\"",
+        "\"And Kumran is right\"",
+        "\"the Biblical Kumran Scrolls.\""
+      ],
+      "correctedExamples": [
+        "\"photos of Qumran, what you\"",
+        "\"And Qumran is right\"",
+        "\"The Biblical Qumran Scrolls:\""
+      ],
+      "timestamps": [
+        "00:22:29.010",
+        "00:22:39.010",
+        "00:36:58.820"
+      ],
+      "episodeIds": [
+        "iO6mdYWPOyo",
+        "iO6mdYWPOyo",
+        "iO6mdYWPOyo"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-14T01:56:41.407Z",
+      "lastSeen": "2026-01-14T01:56:41.407Z",
+      "status": "pending"
+    },
+    "Nachosh→Nachash": {
+      "original": "Nachosh",
+      "corrected": "Nachash",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "iO6mdYWPOyo"
+      ],
+      "examples": [
+        "\"said to Nachosh, make a\"",
+        "\"But Nachosh the Ammonite\""
+      ],
+      "correctedExamples": [
+        "\"said to Nachash, make a\"",
+        "\"But Nachash the Ammonite\""
+      ],
+      "timestamps": [
+        "00:37:55.950",
+        "00:38:00.030"
+      ],
+      "episodeIds": [
+        "iO6mdYWPOyo",
+        "iO6mdYWPOyo"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T01:56:41.407Z",
+      "lastSeen": "2026-01-14T01:56:41.407Z",
+      "status": "pending"
+    },
+    "Nakash→Nachash": {
+      "original": "Nakash",
+      "corrected": "Nachash",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "iO6mdYWPOyo"
+      ],
+      "examples": [
+        "\"says now Nakash, king of\"",
+        "\"right eye Nakash, the king\""
+      ],
+      "correctedExamples": [
+        "\"says now Nachash, king of\"",
+        "\"right eye Nachash, the king\""
+      ],
+      "timestamps": [
+        "00:38:39.430",
+        "00:38:52.520"
+      ],
+      "episodeIds": [
+        "iO6mdYWPOyo",
+        "iO6mdYWPOyo"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T01:56:41.407Z",
+      "lastSeen": "2026-01-14T01:56:41.407Z",
+      "status": "pending"
+    },
+    "Scoyen→Schoyen": {
+      "original": "Scoyen",
+      "corrected": "Schoyen",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "iO6mdYWPOyo"
+      ],
+      "examples": [
+        "\"to Mr. Scoyen.\"",
+        "\"his credit, Scoyen basically gave\""
+      ],
+      "correctedExamples": [
+        "\"to Mr. Schoyen.\"",
+        "\"his credit, Schoyen basically gave\""
+      ],
+      "timestamps": [
+        "01:06:35.290",
+        "01:06:40.360"
+      ],
+      "episodeIds": [
+        "iO6mdYWPOyo",
+        "iO6mdYWPOyo"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T01:56:41.407Z",
+      "lastSeen": "2026-01-14T01:56:41.407Z",
+      "status": "pending"
+    },
+    "cult→colt": {
+      "original": "cult",
+      "corrected": "colt",
+      "category": "spelling",
+      "totalOccurrences": 7,
+      "episodeCount": 1,
+      "episodes": [
+        "QFyFMwQpSko"
+      ],
+      "examples": [
+        "\"on a cult, the fo\"",
+        "\"on a cult, the foal\"",
+        "\"right, a cult, the foal\""
+      ],
+      "correctedExamples": [
+        "\"on a colt, the foal\"",
+        "\"on a colt, the foal\"",
+        "\"wit, a colt, the foal\""
+      ],
+      "timestamps": [
+        "00:50:45.090",
+        "00:51:25.500",
+        "00:51:33.260"
+      ],
+      "episodeIds": [
+        "QFyFMwQpSko",
+        "QFyFMwQpSko",
+        "QFyFMwQpSko"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-14T02:00:10.571Z",
+      "lastSeen": "2026-01-14T02:00:10.571Z",
+      "status": "pending"
+    },
+    "Lindsey→Lindsay": {
+      "original": "Lindsey",
+      "corrected": "Lindsay",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "2p2chxLz3eo"
+      ],
+      "examples": [
+        "\"gentleman named Lindsey Graham.\"",
+        "\"airship, I'm Lindsey Graham and\""
+      ],
+      "correctedExamples": [
+        "\"gentleman named Lindsay Graham.\"",
+        "\"Airship, I'm Lindsay Graham and\""
+      ],
+      "timestamps": [
+        "00:00:20.880",
+        "00:04:02.950"
+      ],
+      "episodeIds": [
+        "2p2chxLz3eo",
+        "2p2chxLz3eo"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T02:02:56.131Z",
+      "lastSeen": "2026-01-14T02:02:56.131Z",
+      "status": "pending"
+    },
+    "Louis→Louis's": {
+      "original": "Louis",
+      "corrected": "Louis's",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "2p2chxLz3eo"
+      ],
+      "examples": [
+        "\"tragedies changed Louis fortunes.\"",
+        "\"to strengthen Louis position in\""
+      ],
+      "correctedExamples": [
+        "\"tragedies changed Louis's fortunes.\"",
+        "\"to strengthen Louis's position in\""
+      ],
+      "timestamps": [
+        "00:21:29.190",
+        "00:29:02.580"
+      ],
+      "episodeIds": [
+        "2p2chxLz3eo",
+        "2p2chxLz3eo"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T02:02:56.131Z",
+      "lastSeen": "2026-01-14T02:02:56.131Z",
+      "status": "pending"
+    },
+    "commoner's→commoners'": {
+      "original": "commoner's",
+      "corrected": "commoners'",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "2p2chxLz3eo"
+      ],
+      "examples": [
+        "\"to the commoner's demands and\"",
+        "\"crush the commoner's rebellion against\""
+      ],
+      "correctedExamples": [
+        "\"to the commoners' demands and\"",
+        "\"crush the commoners' rebellion against\""
+      ],
+      "timestamps": [
+        "00:23:42.360",
+        "00:24:01.490"
+      ],
+      "episodeIds": [
+        "2p2chxLz3eo",
+        "2p2chxLz3eo"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-14T02:02:56.131Z",
+      "lastSeen": "2026-01-14T02:02:56.131Z",
+      "status": "pending"
+    },
+    "Louis xvi→Louis XVI": {
+      "original": "Louis xvi",
+      "corrected": "Louis XVI",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "2p2chxLz3eo"
+      ],
+      "examples": [
+        "\"of France, Louis xvi.\"",
+        "\"guards, and Louis xvi, the deposed\""
+      ],
+      "correctedExamples": [
+        "\"of France, Louis XVI.\"",
+        "\"guards, and Louis XVI, the deposed\""
+      ],
+      "timestamps": [
+        "00:26:19.010",
+        "00:30:46.190"
+      ],
+      "episodeIds": [
+        "2p2chxLz3eo",
+        "2p2chxLz3eo"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T02:02:56.131Z",
+      "lastSeen": "2026-01-14T02:02:56.131Z",
+      "status": "pending"
+    },
+    "text→texts": {
+      "original": "text",
+      "corrected": "texts",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "GXyJILdNxUE"
+      ],
+      "examples": [
+        "\"was reading text aloud, to\"",
+        "\"New Testament text is that\"",
+        "\"people performed text.\""
+      ],
+      "correctedExamples": [
+        "\"was reading texts aloud, to\"",
+        "\"New Testament texts is that\"",
+        "\"people performed texts.\""
+      ],
+      "timestamps": [
+        "00:06:21.460",
+        "00:26:27.030",
+        "00:27:15.840"
+      ],
+      "episodeIds": [
+        "GXyJILdNxUE",
+        "GXyJILdNxUE",
+        "GXyJILdNxUE"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-14T02:10:12.490Z",
+      "lastSeen": "2026-01-14T02:10:12.490Z",
+      "status": "pending"
+    },
+    "rant→ran": {
+      "original": "rant",
+      "corrected": "ran",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "GXyJILdNxUE"
+      ],
+      "examples": [
+        "\"know, they rant.\"",
+        "\"They rant and then\""
+      ],
+      "correctedExamples": [
+        "\"know, they ran.\"",
+        "\"They ran and then\""
+      ],
+      "timestamps": [
+        "00:28:46.400",
+        "00:28:47.560"
+      ],
+      "episodeIds": [
+        "GXyJILdNxUE",
+        "GXyJILdNxUE"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-14T02:10:12.490Z",
+      "lastSeen": "2026-01-14T02:10:12.490Z",
+      "status": "pending"
+    },
+    "pilot→Pilate": {
+      "original": "pilot",
+      "corrected": "Pilate",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "vHKXU5rmwyo"
+      ],
+      "examples": [
+        "\"the actual pilot murdered Jewish\"",
+        "\"the actual pilot murdered Jewish\""
+      ],
+      "correctedExamples": [
+        "\"the actual Pilate murdered Jewish\"",
+        "\"the actual Pilate murdered Jewish\""
+      ],
+      "timestamps": [
+        "00:00:09.120",
+        "00:23:18.960"
+      ],
+      "episodeIds": [
+        "vHKXU5rmwyo",
+        "vHKXU5rmwyo"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-14T02:13:41.252Z",
+      "lastSeen": "2026-01-14T02:13:41.252Z",
+      "status": "pending"
+    },
+    "supremacists→supremacist": {
+      "original": "supremacists",
+      "corrected": "supremacist",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "vHKXU5rmwyo"
+      ],
+      "examples": [
+        "\"strangely white supremacists.\"",
+        "\"up white supremacists.\""
+      ],
+      "correctedExamples": [
+        "\"strangely white supremacist.\"",
+        "\"up white supremacist.\""
+      ],
+      "timestamps": [
+        "00:35:32.560",
+        "00:36:04.690"
+      ],
+      "episodeIds": [
+        "vHKXU5rmwyo",
+        "vHKXU5rmwyo"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-14T02:13:41.252Z",
+      "lastSeen": "2026-01-14T02:13:41.252Z",
+      "status": "pending"
+    },
+    "Martin→Maarten": {
+      "original": "Martin",
+      "corrected": "Maarten",
+      "category": "spelling",
+      "totalOccurrences": 5,
+      "episodeCount": 1,
+      "episodes": [
+        "qNROe-Slo8Y"
+      ],
+      "examples": [
+        "\"So Martin Boudre is,\"",
+        "\"one by Martin Boudre and\"",
+        "\"to know Martin personally and\""
+      ],
+      "correctedExamples": [
+        "\"So Maarten Boudry is,\"",
+        "\"one by Maarten Boudry and\"",
+        "\"to know Maarten personally and\""
+      ],
+      "timestamps": [
+        "00:23:01.740",
+        "00:25:57.530",
+        "00:26:07.210"
+      ],
+      "episodeIds": [
+        "qNROe-Slo8Y",
+        "qNROe-Slo8Y",
+        "qNROe-Slo8Y"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-14T02:16:52.177Z",
+      "lastSeen": "2026-01-14T02:16:52.177Z",
+      "status": "pending"
+    },
+    "Boudre→Boudry": {
+      "original": "Boudre",
+      "corrected": "Boudry",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "qNROe-Slo8Y"
+      ],
+      "examples": [
+        "\"So Martin Boudre is, is\"",
+        "\"by Martin Boudre and Jerry\""
+      ],
+      "correctedExamples": [
+        "\"So Maarten Boudry is, is\"",
+        "\"by Maarten Boudry and Jerry\""
+      ],
+      "timestamps": [
+        "00:23:01.740",
+        "00:25:57.530"
+      ],
+      "episodeIds": [
+        "qNROe-Slo8Y",
+        "qNROe-Slo8Y"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-14T02:16:52.177Z",
+      "lastSeen": "2026-01-14T02:16:52.177Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-13T22:24:48.362Z"
+  "lastUpdated": "2026-01-14T02:16:52.177Z"
 }

@@ -19,6 +19,7 @@ import {
   markVideoAsProcessed,
   getVideoById,
   updateVideoSegments,
+  updateVideoTags,
   type EpisodeSegment,
 } from '../storage/processed-videos.js';
 
@@ -192,16 +193,6 @@ export async function processYouTubeVideo(
   await writeToFile(transcriptPath, correctedTranscript);
   console.log(`Final transcript saved to: ${transcriptPath}`);
 
-  // Extract tags from corrected transcript
-  console.log('Extracting tags...');
-  const tags = await extractTags(correctedTranscript, {
-    enableLlmVerification: true, // Enable LLM verification for ambiguous tags (e.g., "David", "John")
-  });
-  console.log(`✓ Extracted ${tags.length} tags`);
-
-  // Analyze corrections for learning (compare raw vs corrected)
-  await analyzeCorrections(transcriptWithNames, correctedTranscript, videoId);
-
   // Detect segments in the corrected transcript
   console.log('Detecting segments...');
   const audioDuration = await getAudioDuration(videoId);
@@ -215,16 +206,31 @@ export async function processYouTubeVideo(
   }));
   console.log(`✓ Detected ${segments.length} segments`);
 
-  // Mark as processed with tags and segments
-  await markVideoAsProcessed({
+  // Mark as processed FIRST to get episode number assigned
+  console.log('Marking video as processed...');
+  const episodeNumber = await markVideoAsProcessed({
     videoId,
     title: metadata.title,
     publishedAt: metadata.publishedAt,
     processedAt: new Date().toISOString(),
     transcriptPath,
-    tags,
+    tags: [], // Empty initially
     segments,
   });
+
+  // Extract tags from corrected transcript (now with episode number for newly discovered tags)
+  console.log('Extracting tags...');
+  const tags = await extractTags(correctedTranscript, {
+    enableLlmVerification: true, // Enable LLM verification for ambiguous tags (e.g., "David", "John")
+    episodeNumber, // Tag newly discovered tags with episode number
+  });
+  console.log(`✓ Extracted ${tags.length} tags`);
+
+  // Update video with extracted tags
+  await updateVideoTags(videoId, tags);
+
+  // Analyze corrections for learning (compare raw vs corrected)
+  await analyzeCorrections(transcriptWithNames, correctedTranscript, videoId);
 
   console.log('Done!');
 

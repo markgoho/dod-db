@@ -19,12 +19,14 @@ import type { EpisodeTag } from '../storage/processed-videos.js';
  * @param transcript - The transcript text to analyze
  * @param existingTags - Tags already found by deterministic matching (to exclude from LLM search)
  * @param allowedCategories - If provided, only discover tags in these categories
+ * @param episodeNumber - If provided, newly added tags will be marked with this episode number
  * @returns Array of newly discovered tags
  */
 export async function extractTagsLlm(
 	transcript: string,
 	existingTags: EpisodeTag[],
 	allowedCategories?: TagCategory[],
+	episodeNumber?: number,
 ): Promise<EpisodeTag[]> {
 	// Build comprehensive exclusion set from vocabulary (canonical + all variations)
 	const vocabularyTerms = getAllSearchableTerms(tagVocabulary);
@@ -102,6 +104,7 @@ export async function extractTagsLlm(
 					status: 'proposed',
 					description: tag.description,
 					caseSensitive: tag.caseSensitive,
+					addedInEpisode: episodeNumber,
 				});
 			} catch (error) {
 				console.error(`    Failed to add "${tag.tag}" to vocabulary:`, error);

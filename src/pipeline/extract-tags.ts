@@ -20,11 +20,12 @@ import { sortTags } from '../utils/tag-utils.js';
  * @param options.skipLlm - If true, skip LLM discovery (only use deterministic matching)
  * @param options.categories - If provided, LLM will only discover tags in these categories
  * @param options.enableLlmVerification - If true, use LLM to verify ambiguous tag matches
+ * @param options.episodeNumber - If provided, newly discovered tags will be tagged with this episode number
  * @returns Array of Episode Tag objects with canonical names and mention counts
  */
 export async function extractTags(
 	correctedTranscript: string,
-	options: { skipLlm?: boolean; categories?: TagCategory[]; enableLlmVerification?: boolean } = {},
+	options: { skipLlm?: boolean; categories?: TagCategory[]; enableLlmVerification?: boolean; episodeNumber?: number } = {},
 ): Promise<EpisodeTag[]> {
 	console.log('Extracting tags from transcript...');
 
@@ -43,7 +44,7 @@ export async function extractTags(
 	} else {
 		const categoryInfo = options.categories ? ` [${options.categories.join(', ')} only]` : '';
 		console.log(`  Phase 2: LLM discovery of new tags (5+ mentions)${categoryInfo}...`);
-		const discoveredTags = await extractTagsLlm(correctedTranscript, deterministicTags, options.categories);
+		const discoveredTags = await extractTagsLlm(correctedTranscript, deterministicTags, options.categories, options.episodeNumber);
 		console.log(`  ✓ Discovered ${discoveredTags.length} new potential tags`);
 
 		// Report discovered tags as vocabulary suggestions

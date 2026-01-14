@@ -101,14 +101,14 @@ export async function isVideoProcessed(videoId: string): Promise<boolean> {
  */
 export async function markVideoAsProcessed(
   video: ProcessedVideo,
-): Promise<void> {
+): Promise<number | undefined> {
   const videos = await loadProcessedVideos();
 
   // Check if already exists
   const exists = videos.some((v) => v.videoId === video.videoId);
   if (exists) {
     console.warn(`Video ${video.videoId} already marked as processed`);
-    return;
+    return undefined;
   }
 
   videos.push(video);
@@ -118,11 +118,13 @@ export async function markVideoAsProcessed(
 
   await saveProcessedVideos(withNumbers);
 
-  // Log assigned episode number
+  // Log assigned episode number and return it
   const newVideo = withNumbers.find((v) => v.videoId === video.videoId);
   if (newVideo?.episodeNumber) {
     console.log(`✓ Assigned episode number: ${newVideo.episodeNumber}`);
+    return newVideo.episodeNumber;
   }
+  return undefined;
 }
 
 /**
@@ -166,6 +168,36 @@ export async function getProcessedVideosWithNumbers(): Promise<
 > {
   const videos = await loadProcessedVideos();
   return computeEpisodeNumbers(videos);
+}
+
+/**
+ * Update tags for an existing processed video.
+ *
+ * @param videoId - The video ID to update
+ * @param tags - The new tags to set
+ */
+export async function updateVideoTags(
+  videoId: string,
+  tags: EpisodeTag[],
+): Promise<void> {
+  const videos = await loadProcessedVideos();
+
+  const videoIndex = videos.findIndex((v) => v.videoId === videoId);
+  if (videoIndex === -1) {
+    throw new Error(`Video ${videoId} not found in processed videos`);
+  }
+
+  const existingVideo = videos[videoIndex];
+  if (!existingVideo) {
+    throw new Error(`Video at index ${videoIndex} is undefined`);
+  }
+
+  videos[videoIndex] = {
+    ...existingVideo,
+    tags,
+  };
+
+  await saveProcessedVideos(videos);
 }
 
 /**

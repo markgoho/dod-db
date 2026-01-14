@@ -48,6 +48,7 @@ export type TagDefinition =
 			description: string; // Required when llmVerify is true
 			status: TagStatus;
 			caseSensitive?: boolean; // Default: false (case-insensitive)
+			addedInEpisode?: number; // Episode number where this tag was first discovered
 	  }
 	| {
 			canonical: string;
@@ -57,6 +58,7 @@ export type TagDefinition =
 			description?: string; // Optional otherwise
 			status: TagStatus;
 			caseSensitive?: boolean; // Default: false (case-insensitive)
+			addedInEpisode?: number; // Episode number where this tag was first discovered
 	  };
 
 /**
@@ -318,6 +320,32 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Bernhard Duhm', variations: [], category: 'person', status: 'accepted' },
 	{ canonical: 'Josephus', variations: [], category: 'person', status: 'accepted' },
 	{ canonical: 'Ken Ham', variations: [], category: 'person', status: 'accepted' },
+	{ canonical: 'Jennifer Bird', variations: ['Dr. Jennifer Bird', 'Bird'], category: 'person', status: 'proposed', description: 'Biblical scholar specializing in gender and sexuality in the Bible' },
+	{ canonical: 'Essenes', variations: [], category: 'people', status: 'proposed', description: 'Ancient Jewish sect that lived communally, associated with the Dead Sea Scrolls' },
+	{ canonical: 'Masada', variations: [], category: 'place', status: 'proposed', description: 'Ancient fortification in southern Israel, site of Jewish resistance against Rome' },
+	{ canonical: 'Leningrad Codex', variations: [], category: 'literature', status: 'proposed', description: 'Oldest complete manuscript of the Hebrew Bible, dated to 1008 CE' },
+	{ canonical: 'Joshua', variations: ["Joshua's"], category: 'character', status: 'proposed', description: 'Moses\' successor who led the Israelites into Canaan according to the Hebrew Bible' },
+	{ canonical: 'Zechariah', variations: [], category: 'literature', status: 'proposed', description: 'Minor prophet book of the Hebrew Bible, written after the Babylonian exile' },
+	{ canonical: 'Origen', variations: [], category: 'person', status: 'proposed', description: 'Early Christian scholar and theologian (c. 185-253 CE), prolific biblical commentator' },
+	{ canonical: 'Helen Bond', variations: ['Dr. Helen Bond',], category: 'person', status: 'proposed', description: 'New Testament scholar specializing in historical Jesus and early Christianity' },
+	{ canonical: 'historical Jesus', variations: ['quest for the historical Jesus'], category: 'theology', status: 'proposed', description: 'Academic reconstruction of Jesus of Nazareth using historical-critical methods' },
+	{ canonical: 'John the Baptist', variations: ['the Baptist'], category: 'character', status: 'proposed', description: 'Jewish preacher who baptized Jesus, executed by Herod Antipas' },
+	{ canonical: 'Gospel of Thomas', variations: ['Thomas'], category: 'literature', status: 'proposed', description: 'Non-canonical sayings gospel discovered at Nag Hammadi in 1945' },
+	{ canonical: 'Candida Moss', variations: ['Dr. Candida Moss', 'Moss'], category: 'person', status: 'proposed', description: 'New Testament scholar specializing in early Christian martyrdom and persecution narratives' },
+	{ canonical: 'Tertius', variations: [], category: 'person', status: 'proposed', description: 'Scribe who wrote down Paul\'s letter to the Romans (Romans 16:22)' },
+	{ canonical: 'Aesop', variations: [], category: 'person', status: 'proposed', description: 'Ancient Greek fabulist (c. 620-564 BCE), known for moral fables' },
+	{ canonical: 'Pliny the Younger', variations: ['Pliny'], category: 'person', status: 'proposed', description: 'Roman author and administrator (61-113 CE) who wrote about early Christians' },
+	{ canonical: 'Clement of Rome', variations: ['Clement'], category: 'person', status: 'proposed', description: 'Early Christian bishop of Rome (late 1st century CE), traditionally the fourth pope' },
+	{ canonical: 'First Clement', variations: ['1 Clement'], category: 'literature', status: 'proposed', description: 'Letter from the church of Rome to Corinth, attributed to Clement (c. 96 CE)' },
+	{ canonical: 'Pontius Pilate', variations: ['Pilate'], category: 'person', status: 'proposed', description: 'Roman prefect of Judea (26-36 CE) who presided over the trial of Jesus' },
+	{ canonical: 'Holy Week', variations: [], category: 'event', status: 'proposed', description: 'Christian observance of Jesus\' final week, from Palm Sunday to Easter' },
+	{ canonical: 'Passover', variations: ['Pesach'], category: 'event', status: 'proposed', description: 'Jewish festival commemorating the Israelites\' exodus from Egypt' },
+	{ canonical: 'Bethany', variations: [], category: 'place', status: 'proposed', description: 'Village near Jerusalem, home of Mary, Martha, and Lazarus in the Gospels' },
+	{ canonical: 'Synoptic Gospels', variations: ['Synoptics'], category: 'literature', status: 'proposed', description: 'Matthew, Mark, and Luke, which share similar content and structure' },
+	{ canonical: 'Judas', variations: ['Judas Iscariot'], category: 'character', status: 'proposed', description: 'One of Jesus\' twelve apostles who betrayed him according to the Gospels' },
+	{ canonical: 'Garden of Gethsemane', variations: ['Gethsemane'], category: 'place', status: 'proposed', description: 'Garden at the foot of the Mount of Olives where Jesus prayed before his arrest' },
+	{ canonical: 'Sanhedrin', variations: ['the Sanhedrin'], category: 'people', status: 'proposed', description: 'Jewish judicial council and supreme court in ancient Jerusalem' },
+	{ canonical: 'cognitive science', variations: ['cognitive science of religion'], category: 'scholarship', status: 'proposed', description: 'Interdisciplinary study of the mind and mental processes, applied to religious belief' },
 ];
 
 /**

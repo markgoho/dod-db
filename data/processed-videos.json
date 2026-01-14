@@ -7103,30 +7103,30 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:33:40.480]",
-        "confidence": "auto",
+        "endTimestamp": "[00:02:14.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
-        "type": "all-right-lets-see-it",
-        "startTimestamp": "[00:33:40.480]",
-        "endTimestamp": "[01:03:18.710]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:02:14.000]",
+        "endTimestamp": "[00:29:42.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       },
       {
-        "type": "advertisement",
-        "startTimestamp": "[01:03:18.710]",
-        "endTimestamp": "[01:03:32.480]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "type": "your-patriarchy-and-you",
+        "startTimestamp": "[00:29:42.000]",
+        "endTimestamp": "[01:02:57.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       },
       {
         "type": "outro",
-        "startTimestamp": "[01:03:32.480]",
+        "startTimestamp": "[01:02:57.000]",
         "endTimestamp": "[01:03:40.840]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
@@ -7280,22 +7280,29 @@
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:00:39.020]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "all-right-lets-see-it",
         "startTimestamp": "[00:02:00.420]",
-        "endTimestamp": "[01:00:50.350]",
-        "confidence": "auto",
+        "endTimestamp": "[00:39:31.000]",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
-        "type": "advertisement",
-        "startTimestamp": "[01:00:50.350]",
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:39:31.000]",
+        "endTimestamp": "[01:00:24.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:00:24.000]",
         "endTimestamp": "[01:01:06.601]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   },
@@ -7437,22 +7444,1177 @@
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:01:29.850]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "chapter-and-verse",
         "startTimestamp": "[00:01:29.850]",
-        "endTimestamp": "[00:58:03.480]",
+        "endTimestamp": "[00:31:32.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:31:32.000]",
+        "endTimestamp": "[00:57:48.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:57:48.000]",
+        "endTimestamp": "[00:58:25.141]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "BQOMbZtGs6E",
+    "title": "Episode 44 (February 5, 2024), \"Biblical Marriage\" with Jennifer Bird",
+    "publishedAt": "2024-02-05T00:00:00Z",
+    "processedAt": "2026-01-14T01:52:42.117Z",
+    "transcriptPath": "data/transcripts/2024-02-05-episode-44-february-5-2024-biblical-marriage-with-jennifer-bird.txt",
+    "episodeNumber": 44,
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 21
+      },
+      {
+        "tag": "Paul",
+        "mentions": 21
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 18
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 16
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 9
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 6
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 6
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 4
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 3
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 2
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 2
+      },
+      {
+        "tag": "1 Thessalonians",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Baal",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "etiology",
+        "mentions": 1
+      },
+      {
+        "tag": "Israel",
+        "mentions": 1
+      },
+      {
+        "tag": "Ten Commandments",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:59.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:59.000]",
+        "endTimestamp": "[01:03:16.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:03:16.000]",
+        "endTimestamp": "[01:03:49.860]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "iO6mdYWPOyo",
+    "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis",
+    "publishedAt": "2024-02-12T00:00:00Z",
+    "processedAt": "2026-01-14T01:56:41.549Z",
+    "transcriptPath": "data/transcripts/2024-02-12-episode-45-february-12-2024-the-dead-sea-scrolls-with-kipp-davis.txt",
+    "episodeNumber": 45,
+    "tags": [
+      {
+        "tag": "manuscript",
+        "mentions": 54
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 40
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 26
+      },
+      {
+        "tag": "Book of Daniel",
+        "mentions": 15
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 15
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 11
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 10
+      },
+      {
+        "tag": "Israel",
+        "mentions": 9
+      },
+      {
+        "tag": "Ammonites",
+        "mentions": 6
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 6
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 6
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 6
+      },
+      {
+        "tag": "Nebuchadnezzar",
+        "mentions": 6
+      },
+      {
+        "tag": "angel",
+        "mentions": 5
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 5
+      },
+      {
+        "tag": "gods",
+        "mentions": 5
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 5
+      },
+      {
+        "tag": "Nabonidus",
+        "mentions": 5
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 5
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 4
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 4
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 4
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 4
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 4
+      },
+      {
+        "tag": "Moses",
+        "mentions": 3
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 3
+      },
+      {
+        "tag": "theology",
+        "mentions": 3
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 3
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 3
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Exodus",
+        "mentions": 2
+      },
+      {
+        "tag": "El",
+        "mentions": 2
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 2
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Josephus",
+        "mentions": 2
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "Mount Gerizim",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "Ten Commandments",
+        "mentions": 2
+      },
+      {
+        "tag": "Torah",
+        "mentions": 2
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 1
+      },
+      {
+        "tag": "Herod the Great",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 1
+      },
+      {
+        "tag": "Judeans",
+        "mentions": 1
+      },
+      {
+        "tag": "King Saul",
+        "mentions": 1
+      },
+      {
+        "tag": "Kings",
+        "mentions": 1
+      },
+      {
+        "tag": "Mount Ebal",
+        "mentions": 1
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "textual criticism",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:16.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:16.000]",
+        "endTimestamp": "[01:10:48.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:10:48.000]",
+        "endTimestamp": "[01:11:31.440]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "QFyFMwQpSko",
+    "title": "Episode 46 (February 19, 2024), \"GENOCIDE!\"",
+    "publishedAt": "2024-02-19T00:00:00Z",
+    "processedAt": "2026-01-14T02:00:10.704Z",
+    "transcriptPath": "data/transcripts/2024-02-19-episode-46-february-19-2024-genocide.txt",
+    "episodeNumber": 46,
+    "tags": [
+      {
+        "tag": "YHWH",
+        "mentions": 20
+      },
+      {
+        "tag": "Israel",
+        "mentions": 16
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 16
+      },
+      {
+        "tag": "Canaanites",
+        "mentions": 13
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 7
+      },
+      {
+        "tag": "Moses",
+        "mentions": 7
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 6
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 6
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 6
+      },
+      {
+        "tag": "Judah",
+        "mentions": 5
+      },
+      {
+        "tag": "Judges",
+        "mentions": 5
+      },
+      {
+        "tag": "Lot",
+        "mentions": 5
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 4
+      },
+      {
+        "tag": "Canaan",
+        "mentions": 4
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 4
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 4
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 4
+      },
+      {
+        "tag": "Kings",
+        "mentions": 4
+      },
+      {
+        "tag": "Amorites",
+        "mentions": 3
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 3
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 3
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 3
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 3
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 3
+      },
+      {
+        "tag": "Sodom",
+        "mentions": 3
+      },
+      {
+        "tag": "Gaza",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 2
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 2
+      },
+      {
+        "tag": "angel",
+        "mentions": 1
+      },
+      {
+        "tag": "Balaam",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Acts",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "circumcision",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "gods",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 1
+      },
+      {
+        "tag": "King David",
+        "mentions": 1
+      },
+      {
+        "tag": "King Josiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 1
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:17.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:03:17.000]",
+        "endTimestamp": "[00:49:59.950]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:49:59.950]",
+        "endTimestamp": "[01:03:17.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:03:17.000]",
+        "endTimestamp": "[01:04:01.701]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "2p2chxLz3eo",
+    "title": "Episode 47, Introducing History Daily",
+    "publishedAt": "2024-02-26T00:00:00Z",
+    "processedAt": "2026-01-14T02:02:56.270Z",
+    "transcriptPath": "data/transcripts/2024-02-26-episode-47-introducing-history-daily.txt",
+    "episodeNumber": 47,
+    "tags": [
+      {
+        "tag": "Egypt",
+        "mentions": 8
+      },
+      {
+        "tag": "Italy",
+        "mentions": 5
+      },
+      {
+        "tag": "Kings",
+        "mentions": 2
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:19.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:19.000]",
+        "endTimestamp": "[00:34:05.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "5CCrRI2RX2s",
+    "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond",
+    "publishedAt": "2024-03-04T00:00:00Z",
+    "processedAt": "2026-01-14T02:06:38.801Z",
+    "transcriptPath": "data/transcripts/2024-03-04-episode-48-march-4-2024-jesus-in-history-with-helen-bond.txt",
+    "episodeNumber": 48,
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 73
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 24
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 22
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 18
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 16
+      },
+      {
+        "tag": "Paul",
+        "mentions": 16
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 9
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 8
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 6
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 5
+      },
+      {
+        "tag": "Josephus",
+        "mentions": 4
+      },
+      {
+        "tag": "Papias of Hierapolis",
+        "mentions": 4
+      },
+      {
+        "tag": "Book of Acts",
+        "mentions": 3
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 3
+      },
+      {
+        "tag": "Israel",
+        "mentions": 3
+      },
+      {
+        "tag": "Luke",
+        "mentions": 3
+      },
+      {
+        "tag": "Pastoral Epistles",
+        "mentions": 3
+      },
+      {
+        "tag": "Peter",
+        "mentions": 3
+      },
+      {
+        "tag": "Romans",
+        "mentions": 3
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 2
+      },
+      {
+        "tag": "Athanasius of Alexandria",
+        "mentions": 2
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 2
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 2
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 2
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 2
+      },
+      {
+        "tag": "Saint Titus",
+        "mentions": 2
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Easter",
+        "mentions": 1
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 1
+      },
+      {
+        "tag": "Gabriel",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "King David",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "theology",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:22.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:22.000]",
+        "endTimestamp": "[00:57:14.200]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:57:14.200]",
+        "endTimestamp": "[00:57:47.981]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      }
+    ]
+  },
+  {
+    "videoId": "GXyJILdNxUE",
+    "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss",
+    "publishedAt": "2024-03-11T00:00:00Z",
+    "processedAt": "2026-01-14T02:10:12.648Z",
+    "transcriptPath": "data/transcripts/2024-03-11-episode-49-march-11-2024-christian-slavery-with-candida-moss.txt",
+    "episodeNumber": 49,
+    "tags": [
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 43
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 42
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 34
+      },
+      {
+        "tag": "Paul",
+        "mentions": 14
+      },
+      {
+        "tag": "Papias of Hierapolis",
+        "mentions": 12
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 10
+      },
+      {
+        "tag": "Romans",
+        "mentions": 9
+      },
+      {
+        "tag": "Peter",
+        "mentions": 8
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 5
+      },
+      {
+        "tag": "Luke",
+        "mentions": 4
+      },
+      {
+        "tag": "theology",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Africa",
+        "mentions": 1
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 1
+      },
+      {
+        "tag": "Israel",
+        "mentions": 1
+      },
+      {
+        "tag": "Kings",
+        "mentions": 1
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:38.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:38.000]",
+        "endTimestamp": "[00:55:13.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:55:13.000]",
+        "endTimestamp": "[00:55:48.280]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ]
+  },
+  {
+    "videoId": "vHKXU5rmwyo",
+    "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\"",
+    "publishedAt": "2024-03-18T00:00:00Z",
+    "processedAt": "2026-01-14T02:13:41.390Z",
+    "transcriptPath": "data/transcripts/2024-03-18-episode-50-march-18-2024-easter-and-the-undead.txt",
+    "episodeNumber": 50,
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 60
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 34
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 21
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 17
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 16
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 14
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 12
+      },
+      {
+        "tag": "Romans",
+        "mentions": 9
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 8
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 5
+      },
+      {
+        "tag": "Easter",
+        "mentions": 4
+      },
+      {
+        "tag": "Bart Ehrman",
+        "mentions": 2
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 2
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "Hell",
+        "mentions": 2
+      },
+      {
+        "tag": "Jonah",
+        "mentions": 2
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
+      },
+      {
+        "tag": "Satan",
+        "mentions": 2
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 1
+      },
+      {
+        "tag": "Athanasius of Alexandria",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Acts",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Ezekiel",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Herod the Great",
+        "mentions": 1
+      },
+      {
+        "tag": "Israel",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:36.060]",
         "confidence": "auto",
         "detectionMethod": "pattern"
       },
       {
         "type": "advertisement",
-        "startTimestamp": "[00:58:03.480]",
-        "endTimestamp": "[00:58:25.141]",
+        "startTimestamp": "[00:59:01.290]",
+        "endTimestamp": "[00:59:38.070]",
         "confidence": "auto",
         "detectionMethod": "pattern"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:59:38.070]",
+        "endTimestamp": "[00:59:46.760]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      }
+    ]
+  },
+  {
+    "videoId": "qNROe-Slo8Y",
+    "title": "Episode 51 (March 25, 2024), \"Is Religion Make-Believe?\" with Neil Van Leeuwen",
+    "publishedAt": "2024-03-25T00:00:00Z",
+    "processedAt": "2026-01-14T02:16:52.329Z",
+    "transcriptPath": "data/transcripts/2024-03-25-episode-51-march-25-2024-is-religion-make-believe-with-neil-van-leeuwen.txt",
+    "episodeNumber": 51,
+    "tags": [
+      {
+        "tag": "Christianity",
+        "mentions": 6
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "theology",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:57.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:57.000]",
+        "endTimestamp": "[00:59:50.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:59:50.000]",
+        "endTimestamp": "[01:00:31.681]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ]
   }
