@@ -1,6 +1,10 @@
 import { z } from 'zod';
 import { youtubeConfig } from '../config/youtube.js';
 import type { SegmentType } from '../config/segment-patterns.js';
+import {
+  DETECTION_METHODS,
+  type DetectionMethod,
+} from '../pipeline/detect-segments.js';
 
 /**
  * Tag on an episode with mention count.
@@ -27,7 +31,7 @@ export interface EpisodeSegment {
 	startTimestamp: string; // "[HH:MM:SS.mmm]" format
 	endTimestamp: string | null; // null if segment extends to end
 	confidence: 'auto' | 'verified';
-	detectionMethod: 'pattern' | 'llm' | 'manual';
+	detectionMethod: DetectionMethod;
 }
 
 /**
@@ -38,7 +42,7 @@ export const EpisodeSegmentSchema = z.object({
 	startTimestamp: z.string(),
 	endTimestamp: z.string().nullable(),
 	confidence: z.enum(['auto', 'verified']),
-	detectionMethod: z.enum(['pattern', 'llm', 'manual']),
+	detectionMethod: z.enum(DETECTION_METHODS),
 });
 
 export const ProcessedVideoSchema = z.object({

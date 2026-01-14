@@ -1,6 +1,7 @@
 /**
- * Segment detection using deterministic pattern matching.
- * Detects recurring podcast segments by matching verbal markers in transcripts.
+ * Segment detection using audio jingle matching and pattern matching.
+ * Primary method: Audio jingle detection (reliable, consistent)
+ * Fallback: Verbal markers in transcripts (for when audio unavailable)
  */
 
 import { join } from 'node:path';
@@ -9,6 +10,17 @@ import {
   INTRO_END_PATTERNS,
   type SegmentType,
 } from '../config/segment-patterns.js';
+
+/**
+ * Available detection methods.
+ * Single source of truth for segment detection methods.
+ */
+export const DETECTION_METHODS = ['pattern', 'llm', 'manual', 'audio'] as const;
+
+/**
+ * How a segment was detected.
+ */
+export type DetectionMethod = (typeof DETECTION_METHODS)[number];
 
 /**
  * Get audio duration in seconds using ffprobe.
@@ -60,7 +72,7 @@ export interface Segment {
   startTimestamp: string; // "[HH:MM:SS.mmm]" format
   endTimestamp: string | null; // null if segment extends to end of episode
   confidence: 'auto' | 'verified';
-  detectionMethod: 'pattern' | 'llm' | 'manual';
+  detectionMethod: DetectionMethod;
   matchedPattern?: string; // The pattern that triggered detection (for debugging)
 }
 
@@ -191,7 +203,109 @@ function findIntroEnd(lines: TranscriptLine[]): string | null {
 }
 
 /**
- * Detect segments in a transcript.
+ * Detect segments using audio jingle matching.
+ *
+ * @param videoId - YouTube video ID
+ * @param durationSeconds - Episode duration in seconds
+ * @returns Array of detected segments with type='segment'
+ */
+export async function detectSegmentsFromAudio({
+  videoId,
+  durationSeconds,
+}: {
+  videoId: string;
+  durationSeconds?: number;
+}): Promise<Segment[]> {
+  const audioDir = join(process.cwd(), 'data', 'audio');
+  const jinglePath = join(process.cwd(), 'data', 'jingles', 'jingle-pure.wav');
+
+  // Find audio file
+  const extensions = ['.m4a', '.webm', '.mp3', '.wav'];
+  let audioPath = '';
+
+  for (const extension of extensions) {
+    const path = join(audioDir, `${videoId}${extension}`);
+    const file = Bun.file(path);
+    if (await file.exists()) {
+      audioPath = path;
+      break;
+    }
+  }
+
+  if (!audioPath) {
+    console.log('Audio file not found, skipping audio detection');
+    return [];
+  }
+
+  // Check if jingle exists
+  const jingleFile = Bun.file(jinglePath);
+  if (!(await jingleFile.exists())) {
+    console.log('Jingle file not found, skipping audio detection');
+    return [];
+  }
+
+  // Run Python script to find jingles
+  const proc = Bun.spawn(
+    [
+      'uv',
+      'run',
+      join(process.cwd(), 'scripts', 'find_jingles_uv.py'),
+      jinglePath,
+      audioPath,
+    ],
+    {
+      stdout: 'pipe',
+      stderr: 'ignore', // Suppress progress output
+    },
+  );
+
+  const stdout = await new Response(proc.stdout).text();
+  const exitCode = await proc.exited;
+
+  if (exitCode !== 0) {
+    console.log('Audio detection failed, skipping');
+    return [];
+  }
+
+  // Parse results
+  interface JingleMatch {
+    timestamp: number;
+    confidence: number;
+  }
+
+  const matches = JSON.parse(stdout) as JingleMatch[];
+
+  // Filter for >80% confidence and sort by timestamp
+  const highConfidenceMatches = matches
+    .filter((match) => match.confidence >= 80)
+    .sort((a, b) => a.timestamp - b.timestamp);
+
+  // Convert to Segment format
+  const segments: Segment[] = highConfidenceMatches.map((match, index, array) => {
+      const nextMatch = array[index + 1];
+      const startTimestamp = secondsToTimestamp(match.timestamp);
+      let endTimestamp: string | null = null;
+      if (nextMatch) {
+        endTimestamp = secondsToTimestamp(nextMatch.timestamp);
+      } else if (durationSeconds) {
+        endTimestamp = secondsToTimestamp(durationSeconds);
+      }
+
+      return {
+        type: 'segment' as SegmentType,
+        startTimestamp,
+        endTimestamp,
+        confidence: 'auto' as const,
+        detectionMethod: 'audio' as const,
+        matchedPattern: `audio-jingle-${match.confidence.toFixed(1)}%`,
+      };
+    });
+
+  return segments;
+}
+
+/**
+ * Detect segments in a transcript using pattern matching (legacy/fallback).
  *
  * @param transcript - Raw transcript text
  * @param durationSeconds - Optional episode duration in seconds (for accurate end timestamp)

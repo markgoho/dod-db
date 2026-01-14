@@ -15,7 +15,7 @@ import {
   type EpisodeSegment,
 } from '../storage/processed-videos.js';
 import {
-  detectSegments,
+  detectSegmentsFromAudio,
   formatTimestamp,
   getAudioDuration,
 } from '../pipeline/detect-segments.js';
@@ -121,16 +121,17 @@ async function main() {
         continue;
       }
 
-      const transcript = await transcriptFile.text();
-
       // Get audio duration for accurate end timestamp
       const durationSeconds = await getAudioDuration(video.videoId);
       if (verbose && durationSeconds) {
         console.log(`   Audio duration: ${(durationSeconds / 60).toFixed(1)} minutes`);
       }
 
-      // Detect segments
-      const segments = detectSegments(transcript, durationSeconds ?? undefined);
+      // Detect segments using audio jingle matching
+      const segments = await detectSegmentsFromAudio({
+        videoId: video.videoId,
+        durationSeconds: durationSeconds ?? undefined,
+      });
       result.segmentsFound = segments.length;
       result.segmentTypes = segments.map((s) => s.type);
 

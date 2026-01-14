@@ -8845,5 +8845,30 @@
         "detectionMethod": "manual"
       }
     ]
+  },
+  {
+    "videoId": "_mO8E0em3KA",
+    "title": "Episode 52 (April 1, 2024), \"What is a Woman... Biblically?\"",
+    "publishedAt": "2024-04-01T00:00:00Z",
+    "processedAt": "2026-01-14T04:42:43.697Z",
+    "transcriptPath": "data/transcripts/2024-04-01-episode-52-april-1-2024-what-is-a-woman-biblically.txt",
+    "episodeNumber": 52,
+    "tags": [],
+    "segments": [
+      {
+        "type": "segment",
+        "startTimestamp": "[00:01:45.200]",
+        "endTimestamp": "[00:19:08.451]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:19:08.451]",
+        "endTimestamp": "[01:07:17.061]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      }
+    ]
   }
 ]

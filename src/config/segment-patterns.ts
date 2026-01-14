@@ -20,6 +20,7 @@ export type SegmentType =
   | 'mcclellan-911'
   | 'nature-of-god'
   | 'outro'
+  | 'segment'
   | 'thats-history'
   | 'urban-legends'
   | 'what-does-that-mean'
@@ -47,6 +48,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'main-content': 'Main Content',
   'mcclellan-911': 'McClellan 911',
   'nature-of-god': 'Nature of God',
+  segment: 'Segment (Unknown)',
   'thats-history': "That's History",
   'urban-legends': 'Urban Legends',
   'what-does-that-mean': 'What Does That Mean?',
@@ -77,6 +79,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'main-content': '#64748b', // slate
   'mcclellan-911': '#ec4899', // pink
   'nature-of-god': '#3b82f6', // blue-500 (divine/theological)
+  segment: '#9ca3af', // gray-400 (neutral/unknown)
   'thats-history': '#84cc16', // lime-500 (lime green)
   'urban-legends': '#8b5cf6', // violet
   'what-does-that-mean': '#f59e0b', // amber
@@ -91,9 +94,10 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
  * Regex patterns for detecting segment boundaries.
  * Each pattern should match the verbal marker that indicates segment start.
  * Patterns are case-insensitive.
+ * NOTE: Regex patterns are legacy/fallback. Audio jingle detection is now primary method.
  */
 export const SEGMENT_PATTERNS: Record<
-  Exclude<SegmentType, 'intro' | 'main-content'>,
+  Exclude<SegmentType, 'intro' | 'main-content' | 'segment'>,
   RegExp[]
 > = {
   'chapter-and-verse': [/let'?s\s+(dive into|do a|start with)\s+chapter and verse/i,

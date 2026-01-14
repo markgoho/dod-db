@@ -39,6 +39,7 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 *.webm
 *.opus
 *.wav
+!data/jingles/jingle-pure.wav
 
 # Raw transcripts (for learning comparisons only, don't commit)
 data/transcripts/*-raw.txt

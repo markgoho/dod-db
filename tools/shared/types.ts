@@ -1,5 +1,9 @@
 /**
  * Shared types for DoD Tools
+ *
+ * NOTE: Keep EpisodeSegment.detectionMethod in sync with:
+ * - src/pipeline/detect-segments.ts (DetectionMethod type)
+ * - src/storage/processed-videos.ts (EpisodeSegment interface)
  */
 
 // Episode types
@@ -24,7 +28,7 @@ export interface EpisodeSegment {
   startTimestamp: string;
   endTimestamp: string | null;
   confidence: 'auto' | 'verified';
-  detectionMethod?: 'pattern' | 'llm' | 'manual';
+  detectionMethod?: 'pattern' | 'llm' | 'manual' | 'audio';
 }
 
 // Segment metadata (types, colors, labels)

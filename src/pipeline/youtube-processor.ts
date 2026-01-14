@@ -12,7 +12,10 @@ import { correctTranscript } from './correct.js';
 import { identifySpeakers } from './identify-speakers.js';
 import { extractTags } from './extract-tags.js';
 import { analyzeCorrections } from './learn-corrections.js';
-import { detectSegments, getAudioDuration } from './detect-segments.js';
+import {
+  detectSegmentsFromAudio,
+  getAudioDuration,
+} from './detect-segments.js';
 import { writeToFile } from '../storage/file.js';
 import {
   isVideoProcessed,
@@ -99,13 +102,16 @@ export async function processYouTubeVideo(
       );
     }
 
-    const correctedTranscript = await transcriptFile.text();
+    const _correctedTranscript = await transcriptFile.text();
     console.log(`Loaded existing transcript from: ${existingVideo.transcriptPath}`);
 
-    // Detect segments
-    console.log('Detecting segments...');
+    // Detect segments using audio jingle
+    console.log('Detecting segments with audio jingle...');
     const audioDuration = await getAudioDuration(videoId);
-    const detectedSegments = detectSegments(correctedTranscript, audioDuration ?? undefined);
+    const detectedSegments = await detectSegmentsFromAudio({
+      videoId,
+      durationSeconds: audioDuration ?? undefined,
+    });
     const segments: EpisodeSegment[] = detectedSegments.map((s) => ({
       type: s.type,
       startTimestamp: s.startTimestamp,
@@ -193,10 +199,13 @@ export async function processYouTubeVideo(
   await writeToFile(transcriptPath, correctedTranscript);
   console.log(`Final transcript saved to: ${transcriptPath}`);
 
-  // Detect segments in the corrected transcript
-  console.log('Detecting segments...');
+  // Detect segments using audio jingle
+  console.log('Detecting segments with audio jingle...');
   const audioDuration = await getAudioDuration(videoId);
-  const detectedSegments = detectSegments(correctedTranscript, audioDuration ?? undefined);
+  const detectedSegments = await detectSegmentsFromAudio({
+    videoId,
+    durationSeconds: audioDuration ?? undefined,
+  });
   const segments: EpisodeSegment[] = detectedSegments.map((s) => ({
     type: s.type,
     startTimestamp: s.startTimestamp,
