@@ -24,7 +24,8 @@ export type SegmentType =
   | 'urban-legends'
   | 'what-does-that-mean'
   | 'whos-that'
-  | 'women-in-the-bible';
+  | 'women-in-the-bible'
+  | 'your-patriarchy-and-you';
 
 /**
  * Human-readable labels for segment types.
@@ -51,6 +52,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'what-does-that-mean': 'What Does That Mean?',
   'whos-that': "Who's That?",
   'women-in-the-bible': 'Women in the Bible',
+  'your-patriarchy-and-you': 'Your Patriarchy and You',
   advertisement: 'Advertisement',
   outro: 'Outro',
 };
@@ -80,6 +82,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'what-does-that-mean': '#f59e0b', // amber
   'whos-that': '#0ea5e9', // sky-500 (sky blue)
   'women-in-the-bible': '#db2777', // pink-600 (rose)
+  'your-patriarchy-and-you': '#a855f7', // purple-500
   advertisement: '#f97316', // orange
   outro: '#6366f1', // indigo (same as intro)
 };
@@ -133,6 +136,11 @@ export const SEGMENT_PATTERNS: Record<
     /women in the bible/i,
     /welcome to.*women in the bible/i,
     /We're introducing this new segment, Women in the Bible, beca/i,
+  ],
+  'your-patriarchy-and-you': [
+    /your patriarchy and you/i,
+    /welcome to.*your patriarchy and you/i,
+    /segment.*your patriarchy and you/i,
   ],
   'thats-history': [/that'?s history/i, /welcome to.*that'?s history/i],
   'know-your-bible': [
