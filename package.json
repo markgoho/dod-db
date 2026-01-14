@@ -14,20 +14,19 @@
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@types/bun": "latest",
-    "@types/node": "^25.0.6",
     "eslint": "^9.39.2",
     "eslint-plugin-unicorn": "^62.0.0",
     "firebase-tools": "^15.2.1",
     "globals": "^17.0.0",
     "jiti": "^2.6.1",
     "prettier": "^3.7.4",
-    "typescript-eslint": "^8.52.0"
+    "typescript-eslint": "^8.53.0"
   },
   "peerDependencies": {
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@google/genai": "^1.0.0",
+    "@google/genai": "^1.35.0",
     "assemblyai": "^4.22.1",
     "firebase-admin": "^13.6.0",
     "llm-chunk": "^0.0.1",
