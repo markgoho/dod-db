@@ -26,6 +26,9 @@ export const TagDiscoverySchema = z.object({
 				'event',
 				'other',
 			]),
+			description: z.string(), // Brief context for disambiguation (1-2 sentences)
+			variations: z.array(z.string()).optional(), // Alternative names, spellings, or abbreviations
+			caseSensitive: z.boolean().optional(), // True for short words that match common English (Lot, Job, Mark)
 		}),
 	),
 });
@@ -84,10 +87,45 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
    - "Septuagint" not "LXX"
    - "First Enoch" or "1 Enoch" not "Enoch" (the book vs the character)
 4. Skip overly generic terms:
-   - Skip: "Bible", "scripture", "God", "text", "book" (unless part of specific name)
+   - Skip: "Bible", "scripture", "God", "text", "book", "king", "queen", "senate", "first century", "texts", "documents"
    - Include: "Hebrew Bible", "Elohim" (specific theological term), "biblical canon"
+   - Exception: Specific kings like "King Josiah", "Nebuchadnezzar" ARE valid tags
 5. Skip host names (Dan McClellan, Dan Beecher)
 6. Count accurately (case-insensitive). AIM FOR 5-15 NEW TAGS per transcript!
+7. Use PROPER CAPITALIZATION:
+   - Proper nouns: "John the Baptist" not "john the baptist"
+   - Titles: "Gospel of Thomas" not "gospel of thomas"
+   - Names: "Helen Bond" not "helen bond"
+   - Places: "Jerusalem" not "jerusalem"
+8. For biblical books, use the BOOK NAME ONLY (no chapter/verse numbers):
+   - Use "Genesis" not "Genesis 1", "Genesis 6", "Genesis 18", etc.
+   - Use "Isaiah" not "Isaiah 40"
+   - Exception: Scholarly terms like "Deutero-Isaiah" or "Third Isaiah" ARE valid
+9. Stay focused on ANCIENT WORLD and BIBLICAL SCHOLARSHIP:
+   - INCLUDE: Ancient Near East places (Babylon, Ugarit), biblical characters, ancient empires, scholars who study the Bible
+   - EXCLUDE: Modern cities mentioned in passing (New Orleans, Paris, Seattle)
+   - EXCLUDE: Historical figures unrelated to biblical history (Louis XVI, Marie Antoinette)
+   - EXCLUDE: Generic historical terms (French Revolution, World War)
+10. Verify spellings for ancient names:
+    - "Origen" not "Origin" (early church father)
+    - "Tertius" not "Tertus" (mentioned in Romans 16:22)
+    - "Pontius Pilate" not "Pilot" or "Pilat"
+11. ALWAYS provide a description: Brief context for disambiguation (1-2 sentences explaining who/what this is)
+12. Optionally provide variations - include any of these that apply:
+    - Shortened names: "Ehrman" for "Bart Ehrman", "Wellhausen" for "Julius Wellhausen"
+    - Alternative spellings: "Molech", "Moloch" for "Molek"
+    - Adjective/derived forms: "Egyptian" from "Egypt", "Pauline" from "Paul"
+    - Abbreviations: "LXX" for "Septuagint"
+    - Alternative titles: "John the Revelator" for "John of Patmos"
+    - Shortened book names: "Mark" for "Gospel of Mark", "Acts" for "Book of Acts"
+    - Different numbering: "1 Corinthians" and "1st Corinthians" for "First Corinthians"
+    - Possessive forms: "Moses'", "Abraham's"
+    - Plural/singular: "angels" for "angel"
+13. Set caseSensitive: true for SHORT WORDS that match common English words:
+    - "Lot" (biblical character) vs "lot" (as in "a lot of")
+    - "Job" (biblical book/character) vs "job" (employment)
+    - "Mark" (gospel) vs "mark" (a sign)
+    - NOT needed for longer/unique names like "Moses", "Abraham", "Septuagint"
 </extraction-rules>
 ${exclusionList}${categoryRestriction}
 
@@ -99,14 +137,41 @@ Torah 8 times, LXX 3 times, and textual criticism 6 times.
 <example-output>
 {
   "tags": [
-    {"tag": "Moses", "mentions": 12, "category": "character"},
-    {"tag": "Torah", "mentions": 8, "category": "literature"},
-    {"tag": "textual criticism", "mentions": 6, "category": "scholarship"}
+    {
+      "tag": "Moses",
+      "mentions": 12,
+      "category": "character",
+      "description": "Hebrew prophet who led the Israelites out of Egypt, central figure in the Torah and Pentateuch",
+      "variations": ["Moshe", "Moses'", "Moses's"]
+    },
+    {
+      "tag": "Torah",
+      "mentions": 8,
+      "category": "literature",
+      "description": "The first five books of the Hebrew Bible, traditionally attributed to Moses"
+    },
+    {
+      "tag": "Bart Ehrman",
+      "mentions": 5,
+      "category": "person",
+      "description": "New Testament scholar and professor at UNC Chapel Hill, known for work on textual criticism and early Christianity",
+      "variations": ["Ehrman"]
+    },
+    {
+      "tag": "Lot",
+      "mentions": 4,
+      "category": "character",
+      "description": "Abraham's nephew who escaped the destruction of Sodom, appears in Genesis",
+      "variations": ["Lot's"],
+      "caseSensitive": true
+    }
   ]
 }
 </example-output>
 
 Note: LXX was only mentioned 3 times (below threshold) so it's excluded.
+Note: "variations" is optional - only include when there are common alternative names/spellings.
+Note: Torah has no variations in this example because common variations like "Tora" weren't used in the transcript.
 
 <category-distinction-example>
 ✓ CORRECT categorization:

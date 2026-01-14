@@ -97,9 +97,11 @@ export async function extractTagsLlm(
 			try {
 				await addTagToVocabulary({
 					canonical: tag.tag,
-					variations: [],
+					variations: tag.variations ?? [],
 					category: tag.category as TagCategory,
 					status: 'proposed',
+					description: tag.description,
+					caseSensitive: tag.caseSensitive,
 				});
 			} catch (error) {
 				console.error(`    Failed to add "${tag.tag}" to vocabulary:`, error);
