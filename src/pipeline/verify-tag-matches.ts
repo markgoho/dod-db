@@ -29,14 +29,14 @@ const VerificationResultSchema = z.object({
  * @param transcript - Full transcript text
  * @param start - Start position of match
  * @param end - End position of match
- * @param contextLines - Number of complete lines to include before/after (default: 2)
+ * @param contextLines - Number of complete lines to include before/after (default: 5)
  * @returns Context before and after the match
  */
 function extractContext(
 	transcript: string,
 	start: number,
 	end: number,
-	contextLines = 2,
+	contextLines = 5,
 ): { before: string; after: string } {
 	// Split transcript into lines (preserving timestamps)
 	const lines = transcript.split('\n');

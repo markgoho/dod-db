@@ -337,15 +337,15 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Pliny the Younger', variations: ['Pliny'], category: 'person', llmVerify: true, description: 'Roman author and administrator (61-113 CE) who wrote about early Christians', status: 'accepted' },
 	{ canonical: 'Clement of Rome', variations: ['Clement'], category: 'person', llmVerify: true, description: 'Early Christian bishop of Rome (late 1st century CE), traditionally the fourth pope', status: 'accepted' },
 	{ canonical: 'First Clement', variations: ['1 Clement'], category: 'literature', llmVerify: true, description: 'Letter from the church of Rome to Corinth, attributed to Clement (c. 96 CE)', status: 'accepted' },
-	{ canonical: 'Pontius Pilate', variations: ['Pilate'], category: 'person', status: 'proposed', description: 'Roman prefect of Judea (26-36 CE) who presided over the trial of Jesus' },
+	{ canonical: 'Pontius Pilate', variations: ['Pilate'], category: 'person', llmVerify: true, description: 'Roman prefect of Judea (26-36 CE) who presided over the trial of Jesus', status: 'accepted' },
 	{ canonical: 'Holy Week', variations: [], category: 'event', status: 'accepted' },
 	{ canonical: 'Passover', variations: ['Pesach'], category: 'event', llmVerify: true, description: 'Jewish festival commemorating the Israelites\' exodus from Egypt', status: 'accepted' },
-	{ canonical: 'Bethany', variations: [], category: 'place', status: 'proposed', description: 'Village near Jerusalem, home of Mary, Martha, and Lazarus in the Gospels' },
-	{ canonical: 'Synoptic Gospels', variations: ['Synoptics'], category: 'literature', status: 'proposed', description: 'Matthew, Mark, and Luke, which share similar content and structure' },
-	{ canonical: 'Judas', variations: ['Judas Iscariot'], category: 'character', status: 'proposed', description: 'One of Jesus\' twelve apostles who betrayed him according to the Gospels' },
-	{ canonical: 'Garden of Gethsemane', variations: ['Gethsemane'], category: 'place', status: 'proposed', description: 'Garden at the foot of the Mount of Olives where Jesus prayed before his arrest' },
-	{ canonical: 'Sanhedrin', variations: ['the Sanhedrin'], category: 'people', status: 'proposed', description: 'Jewish judicial council and supreme court in ancient Jerusalem' },
-	{ canonical: 'cognitive science', variations: ['cognitive science of religion'], category: 'scholarship', status: 'proposed', description: 'Interdisciplinary study of the mind and mental processes, applied to religious belief' },
+	{ canonical: 'Bethany', variations: [], category: 'place', llmVerify: true, description: 'Village near Jerusalem, home of Mary, Martha, and Lazarus in the Gospels', status: 'accepted' },
+	{ canonical: 'Synoptic Gospels', variations: ['Synoptics'], category: 'literature', status: 'rejected' },
+	{ canonical: 'Judas Iscariot', variations: ['Judas'], category: 'character', llmVerify: true, description: 'One of Jesus\' twelve apostles who betrayed him according to the Gospels', status: 'accepted' },
+	{ canonical: 'Garden of Gethsemane', variations: ['Gethsemane'], category: 'place', status: 'accepted' },
+	{ canonical: 'Sanhedrin', variations: ['the Sanhedrin'], category: 'people', status: 'accepted' },
+	{ canonical: 'cognitive science', variations: ['cognitive science of religion'], category: 'scholarship', status: 'rejected' },
 ];
 
 /**

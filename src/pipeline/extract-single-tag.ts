@@ -39,6 +39,21 @@ export async function extractSingleTag(
 		return string_.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
 	};
 
+	// Find all speaker label regions to exclude from matching
+	// Pattern: [HH:MM:SS.mmm] Speaker Name:
+	const speakerLabelRanges: Array<{ start: number; end: number }> = [];
+	const speakerLabelPattern = /\[\d{2}:\d{2}:\d{2}(?:\.\d{3})?\]\s+([^:]+):/g;
+	let speakerMatch;
+	while ((speakerMatch = speakerLabelPattern.exec(transcript)) !== null) {
+		// Only exclude the speaker name portion (not the timestamp or colon)
+		const fullMatch = speakerMatch[0]; // e.g., "[00:00:09.120] Aaron Adair:"
+		const speakerName = speakerMatch[1]; // e.g., "Aaron Adair"
+		if (!speakerName) continue; // Skip if no capture group match
+		const speakerNameStart = speakerMatch.index + fullMatch.indexOf(speakerName);
+		const speakerNameEnd = speakerNameStart + speakerName.length;
+		speakerLabelRanges.push({ start: speakerNameStart, end: speakerNameEnd });
+	}
+
 	// Track matched positions to avoid double-counting
 	const matchedRanges: Array<{ start: number; end: number }> = [];
 	const matches: Array<{ start: number; end: number; text: string }> = [];
@@ -46,6 +61,13 @@ export async function extractSingleTag(
 	const isOverlapping = (start: number, end: number): boolean => {
 		return matchedRanges.some(
 			(range) => !(end <= range.start || start >= range.end),
+		);
+	};
+
+	// Check if a range falls within a speaker label
+	const isInSpeakerLabel = (start: number, end: number): boolean => {
+		return speakerLabelRanges.some(
+			(range) => start >= range.start && end <= range.end,
 		);
 	};
 
@@ -62,7 +84,13 @@ export async function extractSingleTag(
 			const start = match.index;
 			const end = start + match[0].length;
 
+			// Skip if this match overlaps with an already-matched region
 			if (isOverlapping(start, end)) {
+				continue;
+			}
+
+			// Skip if this match falls within a speaker label
+			if (isInSpeakerLabel(start, end)) {
 				continue;
 			}
 

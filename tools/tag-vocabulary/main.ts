@@ -8,7 +8,6 @@ import {
   CATEGORY_LABELS,
   formatDate,
   escapeHtml,
-  toggleDescriptionField,
   updateFormButtonState,
   addTagWithPolling,
   reprocessTag as reprocessTagShared,
@@ -618,7 +617,14 @@ async function startMigration(): Promise<void> {
 
 // Add tag form management
 function toggleDescription(): void {
-  toggleDescriptionField();
+  // Description field is now always visible, just update required marker
+  const llmVerify = (document.querySelector('#tag-llm-verify') as HTMLInputElement).checked;
+  const requiredMarker = document.querySelector('#description-required');
+
+  if (requiredMarker) {
+    requiredMarker.textContent = llmVerify ? '*' : '';
+  }
+
   validateForm();
 }
 
@@ -629,6 +635,25 @@ function validateForm(): void {
     formData,
   });
 }
+
+// Scroll to top functionality
+function scrollToTop(): void {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
+
+// Show/hide go-to-top button based on scroll position
+function handleScroll(): void {
+  const goToTopButton = document.querySelector('#go-to-top');
+  if (!goToTopButton) return;
+
+  goToTopButton.classList.toggle('show', window.scrollY > 300);
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', handleScroll);
 
 
 async function addTag(event: Event): Promise<void> {
@@ -796,9 +821,9 @@ function renderProposedCard(tag: TagDefinition, index: number): string {
         <div class="proposed-hint">
           Match only exact case (e.g., "Lot" won't match "lot"). Use for words that are also common English words.
         </div>
-        <div class="proposed-description-group ${isLlmVerify ? 'show' : ''}" id="proposed-description-group-${index}">
+        <div class="proposed-description-group" id="proposed-description-group-${index}">
           <div class="proposed-row">
-            <label class="proposed-label">Description:</label>
+            <label class="proposed-label">Description<span class="proposed-required" id="proposed-required-${index}">${isLlmVerify ? ' *' : ''}</span>:</label>
             <textarea class="proposed-textarea" id="proposed-description-${index}" rows="3"
                       placeholder="e.g., King David of Israel, second king, son of Jesse, defeated Goliath"
             >${escapeHtml(description)}</textarea>
@@ -820,18 +845,18 @@ function renderProposedCard(tag: TagDefinition, index: number): string {
   `;
 }
 
-// Toggle description field visibility for proposed tags
+// Toggle description field required marker for proposed tags
 function toggleProposedDescription(index: number): void {
   const llmVerify = (
     document.querySelector(`#proposed-llmVerify-${index}`) as HTMLInputElement
   ).checked;
-  const descriptionGroup = document.querySelector(
-    `#proposed-description-group-${index}`,
+  const requiredMarker = document.querySelector(
+    `#proposed-required-${index}`,
   );
 
-  if (!descriptionGroup) return;
+  if (!requiredMarker) return;
 
-  descriptionGroup.classList.toggle('show', llmVerify);
+  requiredMarker.textContent = llmVerify ? ' *' : '';
 }
 
 // Approve a proposed tag
@@ -1014,6 +1039,7 @@ declare global {
     toggleProposedDescription: typeof toggleProposedDescription;
     approveTag: typeof approveTag;
     rejectTag: typeof rejectTag;
+    scrollToTop: typeof scrollToTop;
   }
 }
 
@@ -1028,3 +1054,4 @@ declare global {
 (globalThis as unknown as Window).toggleProposedDescription = toggleProposedDescription;
 (globalThis as unknown as Window).approveTag = approveTag;
 (globalThis as unknown as Window).rejectTag = rejectTag;
+(globalThis as unknown as Window).scrollToTop = scrollToTop;

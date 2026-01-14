@@ -571,7 +571,13 @@ h2 {
 /* Proposed tags review styles */
 .proposed-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+}
+@media (max-width: 1024px) {
+  .proposed-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .proposed-card {
   border: 2px solid #fbbf24;
@@ -672,11 +678,10 @@ h2 {
   margin-left: 26px;
 }
 .proposed-description-group {
-  display: none;
   margin-top: 12px;
 }
-.proposed-description-group.show {
-  display: block;
+.proposed-required {
+  color: #ef4444;
 }
 .proposed-actions {
   display: flex;
@@ -719,4 +724,34 @@ h2 {
 .proposed-empty-icon {
   font-size: 48px;
   margin-bottom: 12px;
+}
+/* Go to top button */
+.go-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.go-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+.go-to-top:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
 }
