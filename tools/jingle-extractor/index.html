@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jingle Extractor</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>🎵 Jingle Extractor</h1>
+
+    <div class="instructions">
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Load audio file from <code>data/audio/</code></li>
+        <li>Click on waveform to mark <strong>jingle start</strong></li>
+        <li>Click again to mark <strong>jingle end</strong></li>
+        <li>Listen to verify the selection</li>
+        <li>Copy the ffmpeg command to extract the jingle</li>
+      </ol>
+    </div>
+
+    <div class="controls">
+      <div class="control-group">
+        <label>Audio File:</label>
+        <input type="file" id="audioFile" accept="audio/*" />
+      </div>
+
+      <div class="control-group">
+        <label>Zoom to region (optional):</label>
+        <input
+          type="text"
+          id="timeRange"
+          placeholder="e.g., 49:55-50:10 or 2995-3010 (seconds)"
+        />
+        <button onclick="zoomToRange()">Zoom</button>
+        <button onclick="resetZoom()">Reset</button>
+      </div>
+    </div>
+
+    <canvas id="waveform" width="1200" height="300"></canvas>
+
+    <div id="timeline"></div>
+
+    <div class="info">
+      <h3>Selection:</h3>
+      <div id="selection">Click on waveform to mark jingle boundaries</div>
+    </div>
+
+    <div class="controls">
+      <button onclick="playSelection()" id="playBtn" disabled>
+        Play Selection
+      </button>
+      <button onclick="playFull()">Play Full Audio</button>
+      <button onclick="clearSelection()">Clear Selection</button>
+    </div>
+
+    <div class="info" id="ffmpegCommand" style="display: none">
+      <h3>Extract Command:</h3>
+      <pre
+        id="commandText"
+        style="
+          background: #1a1a1a;
+          padding: 10px;
+          border-radius: 4px;
+          overflow-x: auto;
+        "
+      ></pre>
+    </div>
+
+    <audio id="audioPlayer" style="display: none"></audio>
+
+    <script src="./main.ts" type="module"></script>
+  </body>
+</html>

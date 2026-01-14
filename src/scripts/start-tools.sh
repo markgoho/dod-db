@@ -29,6 +29,7 @@ echo ""
 
 cd tools && bun \
   index.html \
+  jingle-extractor/index.html \
   tag-vocabulary/index.html \
   segment-verification/index.html \
   review-corrections/index.html \
