@@ -277,6 +277,45 @@ The UI provides:
 - **Removed generic tags**: "Bible" removed from vocabulary (too generic, appears in all episodes)
 - **Vocabulary files**: `src/config/tag-vocabulary.ts` (100+ terms), `src/prompts/tag-extraction.ts` (LLM discovery rules)
 
+### Segment Detection
+
+**Audio jingle detection** is the primary method for detecting segment boundaries. The podcast plays a consistent 2.7-second musical jingle before every segment, making audio detection more reliable than pattern matching.
+
+**How it works:**
+
+1. **Jingle matching** - Uses librosa (Python) via uv for cross-correlation
+2. **Confidence filtering** - Only keeps matches ≥80% confidence
+3. **Intro/outro filtering** - Skips first/last 60 seconds (jingle loops in background)
+4. **Placeholder type** - Detected segments saved as type='segment' for manual identification
+
+**Key files:**
+
+- `src/pipeline/detect-segments.ts` - `detectSegmentsFromAudio()` function
+- `scripts/find_jingles_uv.py` - Python librosa detector (managed by uv)
+- `data/jingles/jingle-pure.wav` - Reference jingle (2.717s pure musical jingle)
+- `tools/jingle-extractor/` - Web tool for precise jingle boundary identification
+- `experiments/find-jingles.ts` - Standalone testing tool
+
+**Performance:**
+- ~15 seconds per episode
+- 80-100% confidence at real segment boundaries
+- Saves ~5 minutes of manual work per episode
+
+**Tools:**
+
+```bash
+# Jingle Extractor (extract jingles with sub-second precision)
+bun run tools  # Open http://localhost:3000/jingle-extractor
+
+# Standalone testing
+bun run experiments/find-jingles.ts <video-id>
+
+# Batch reprocess all episodes
+bun run src/scripts/detect-all-segments.ts --force-verified
+```
+
+**Segment detection runs automatically** during episode processing in `src/pipeline/youtube-processor.ts`.
+
 ### Key Architectural Patterns
 
 - **Centralized Configuration**: All config in `src/config/` (chunking, firebase, models, corrections)

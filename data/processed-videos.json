@@ -8853,7 +8853,104 @@
     "processedAt": "2026-01-14T04:42:43.697Z",
     "transcriptPath": "data/transcripts/2024-04-01-episode-52-april-1-2024-what-is-a-woman-biblically.txt",
     "episodeNumber": 52,
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Genesis",
+        "mentions": 21
+      },
+      {
+        "tag": "King David",
+        "mentions": 14
+      },
+      {
+        "tag": "Adam",
+        "mentions": 11
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 10
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 5
+      },
+      {
+        "tag": "Eve",
+        "mentions": 4
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 4
+      },
+      {
+        "tag": "1 Timothy",
+        "mentions": 3
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 3
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 3
+      },
+      {
+        "tag": "Romans",
+        "mentions": 3
+      },
+      {
+        "tag": "1 Peter",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Proverbs",
+        "mentions": 2
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "Bethlehem",
+        "mentions": 1
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      }
+    ],
     "segments": [
       {
         "type": "segment",
