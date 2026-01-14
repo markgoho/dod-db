@@ -1,4 +1,8 @@
-import slugify from 'slugify';
+import slugifyLib from 'slugify';
+
+// Handle CommonJS default export with Node16 resolution
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const slugify = (slugifyLib as any).default || slugifyLib;
 
 /**
  * Convert title to URL-safe slug.

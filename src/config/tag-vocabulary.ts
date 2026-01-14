@@ -317,6 +317,7 @@ export const tagVocabulary: TagDefinition[] = [
   { canonical: 'Isaiah', variations: [], category: 'character', llmVerify: true, description: 'the prophet Isaiah from the book of Isaiah, not references to the text of the book', status: 'accepted' },
 	{ canonical: 'Bernhard Duhm', variations: [], category: 'person', status: 'accepted' },
 	{ canonical: 'Josephus', variations: [], category: 'person', status: 'accepted' },
+	{ canonical: 'Ken Ham', variations: [], category: 'person', status: 'accepted' },
 ];
 
 /**

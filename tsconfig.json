@@ -3,14 +3,13 @@
     // Environment setup & latest features
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "target": "ESNext",
-    "module": "Preserve",
+    "module": "Node16",
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "allowJs": true,
 
-    // Bundler mode
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    // Modern ESM with enforced extensions
+    "moduleResolution": "node16",
     "verbatimModuleSyntax": true,
     "noEmit": true,
 
@@ -25,5 +24,6 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false
-  }
+  },
+  "exclude": ["functions", "node_modules"]
 }

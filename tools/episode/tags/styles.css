@@ -1,0 +1,311 @@
+/* Page-specific styles */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .two-column {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.category-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.category-tab {
+  padding: 10px 20px;
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  background: white;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gray-500);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.category-tab:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.category-tab.active {
+  background: var(--color-gradient);
+  border-color: transparent;
+  color: white;
+}
+
+.tags-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.tag-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-gray-200);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.tag-card:hover {
+  background: white;
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.tag-card.character { background: #fff7ed; border-color: #fed7aa; }
+.tag-card.person { background: #fdf4ff; border-color: #f5d0fe; }
+.tag-card.place { background: #fffbeb; border-color: #fde68a; }
+.tag-card.people { background: #f0fdfa; border-color: #99f6e4; }
+.tag-card.literature { background: #fdf2f8; border-color: #fbcfe8; }
+.tag-card.theology { background: #faf5ff; border-color: #e9d5ff; }
+.tag-card.scholarship { background: #ecfdf5; border-color: #a7f3d0; }
+
+.tag-info {
+  flex: 1;
+}
+
+.tag-name {
+  font-weight: 600;
+  color: var(--color-gray-800);
+  margin-bottom: 2px;
+}
+
+.tag-category-label {
+  font-size: 11px;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tag-mentions {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-primary);
+  background: white;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebar-section {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.sidebar-section h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-gray-200);
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gray-700);
+  margin-bottom: 6px;
+}
+
+.form-input, .form-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-input:focus, .form-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-hint {
+  font-size: 12px;
+  color: var(--color-gray-500);
+  margin-top: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.checkbox-group input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gray-700);
+  cursor: pointer;
+}
+
+.tag-detail-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.tag-detail-modal.show {
+  display: flex;
+}
+
+.tag-detail-content {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.tag-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 24px;
+}
+
+.tag-detail-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-gray-800);
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--color-gray-500);
+  padding: 0;
+  line-height: 1;
+}
+
+.close-modal:hover {
+  color: var(--color-gray-800);
+}
+
+.detail-row {
+  margin-bottom: 16px;
+}
+
+.detail-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  font-size: 16px;
+  color: var(--color-gray-800);
+}
+
+.variations-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.variation-badge {
+  font-size: 13px;
+  padding: 4px 10px;
+  background: var(--color-gray-100);
+  border-radius: var(--radius-full);
+  color: var(--color-gray-700);
+}
+
+.migration-status {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  background: var(--color-gray-50);
+  display: none;
+}
+
+.migration-status.show {
+  display: block;
+}
+
+.migration-logs {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  margin-top: 8px;
+  padding: 8px;
+  background: var(--color-gray-800);
+  color: var(--color-gray-200);
+  border-radius: var(--radius-sm);
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.summary-stat {
+  text-align: center;
+  padding: 16px;
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+}
+
+.summary-stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.summary-stat-label {
+  font-size: 12px;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

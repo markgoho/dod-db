@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timestamp Validation Tool - Data Over Dogma</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>🎙️ Timestamp Validation Tool</h1>
+    <p>
+      Load a transcript and audio file to validate timestamp accuracy. Click any
+      transcript line to jump to that timestamp in the audio.
+    </p>
+
+    <div class="container">
+      <!-- Left Panel: Audio & Transcript Input -->
+      <div class="panel">
+        <h2>Load Files</h2>
+
+        <div class="form-group">
+          <label>Audio File</label>
+          <input type="file" id="audioFile" accept="audio/*" />
+          <p class="help-text">Supported: MP3, WAV, M4A, OGG</p>
+        </div>
+
+        <audio id="audioPlayer" controls></audio>
+
+        <div class="form-group">
+          <label>Transcript File</label>
+          <input type="file" id="transcriptFile" accept=".txt" />
+          <p class="help-text">Or paste transcript text below:</p>
+          <textarea
+            id="transcriptInput"
+            placeholder="Paste transcript here...&#10;&#10;Expected format:&#10;[00:00:00] Speaker Name: Text content here.&#10;[00:00:05] Speaker Name: More text content."
+          ></textarea>
+          <button onclick="parseTranscript()" style="margin-top: 10px">
+            Load Transcript
+          </button>
+        </div>
+
+        <div id="stats" style="display: none" class="stats">
+          <h3>📊 Transcript Statistics</h3>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-label">Total Lines</div>
+              <div class="stat-value" id="statLines">0</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Duration</div>
+              <div class="stat-value" id="statDuration">0m</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Avg Gap</div>
+              <div class="stat-value" id="statAvgGap">0s</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-label">Speakers</div>
+              <div class="stat-value" id="statSpeakers">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel: Parsed Transcript -->
+      <div class="panel">
+        <h2>Transcript Lines</h2>
+        <p class="help-text">
+          Click any line to jump to that timestamp in the audio player
+        </p>
+
+        <div id="transcriptLines" class="transcript-lines">
+          <div class="empty-state">
+            <div class="empty-state-icon">📄</div>
+            <p>Load a transcript to see lines here...</p>
+          </div>
+        </div>
+
+        <div class="note">
+          <h4>✅ Validation Tips</h4>
+          <ul>
+            <li>Click a line to jump to that timestamp in audio</li>
+            <li>Listen for 2-3 seconds before/after to verify alignment</li>
+            <li>Note any discrepancies (audio ahead/behind transcript)</li>
+            <li>Test beginning, middle, and end of each episode</li>
+            <li>
+              <strong>Keyboard shortcuts:</strong> Space = play/pause, ← → =
+              seek ±5s
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.ts" type="module"></script>
+  </body>
+</html>

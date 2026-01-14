@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Correction Review - Data Over Dogma</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>📚 Correction Review</h1>
+        <p class="subtitle">
+          Review and approve correction candidates from transcripts
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value" id="pending-count">-</span>
+            <span class="stat-label">Pending</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="reviewed-count">-</span>
+            <span class="stat-label">Reviewed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="total-count">-</span>
+            <span class="stat-label">Total</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 24px; padding: 16px; background: rgba(255,255,255,0.9); border-radius: 8px;">
+          <label style="display: block; font-weight: 600; margin-bottom: 8px; color: #1f2937;">
+            🎙️ Audio Player
+          </label>
+          <div id="audioStatus" style="font-size: 13px; color: #6b7280; margin-bottom: 8px;">
+            Loading audio for current candidate...
+          </div>
+          <audio id="audioPlayer" controls style="width: 100%; display: none;"></audio>
+          <details style="margin-top: 8px;">
+            <summary style="cursor: pointer; font-size: 13px; color: #6b7280;">Manual upload (if auto-load fails)</summary>
+            <input type="file" id="audioFile" accept="audio/*"
+                   style="width: 100%; padding: 8px; border: 2px solid #e5e7eb; border-radius: 6px; background: white; margin-top: 8px;" />
+          </details>
+        </div>
+      </header>
+
+      <div id="candidates" class="candidates">
+        <div class="loading">Loading candidates...</div>
+      </div>
+    </div>
+
+    <script src="./main.ts" type="module"></script>
+  </body>
+</html>

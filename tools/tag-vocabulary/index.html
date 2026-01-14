@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Vocabulary Management - Data Over Dogma</title>
+    <link rel="stylesheet" href="/tag-vocabulary/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tag Vocabulary Management</h1>
+        <p class="subtitle">
+          Manage tag vocabulary and view episode data across the corpus
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value" id="total-episodes">-</span>
+            <div class="stat-label">Episodes</div>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="total-tags">-</span>
+            <div class="stat-label">Total Tags</div>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="avg-tags">-</span>
+            <div class="stat-label">Avg Tags/Episode</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="section" id="proposed-section" style="display: none;">
+        <h2 style="color: #d97706;">
+          <span style="margin-right: 8px;">⚠️</span>
+          Proposed Tags for Review
+        </h2>
+        <p style="color: #6b7280; margin-bottom: 20px;">
+          These tags were discovered by the LLM and need your review. Edit the details and approve or reject each tag.
+        </p>
+        <div id="proposed-container">
+          <div class="loading">Loading proposed tags...</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Episodes</h2>
+        <div style="display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;">
+          <input
+            type="text"
+            id="episode-search"
+            placeholder="Search episodes by title..."
+            style="flex: 1; min-width: 200px; padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px;"
+            oninput="filterEpisodes()" />
+          <select
+            id="tag-filter"
+            style="padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px; min-width: 200px;"
+            onchange="filterEpisodes()">
+            <option value="">All tags</option>
+          </select>
+          <select
+            id="sort-select"
+            style="padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px;"
+            onchange="filterEpisodes()">
+            <option value="episode-desc">Episode # (newest)</option>
+            <option value="episode-asc">Episode # (oldest)</option>
+            <option value="date-desc">Date (newest)</option>
+            <option value="date-asc">Date (oldest)</option>
+            <option value="tags-desc">Tag count (high)</option>
+            <option value="tags-asc">Tag count (low)</option>
+          </select>
+        </div>
+        <div id="episodes-container">
+          <div class="loading">Loading episodes...</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Tag Vocabulary</h2>
+        <div class="category-tabs" id="category-tabs">
+          <!-- Category tabs will be dynamically generated -->
+          <div class="loading">Loading categories...</div>
+        </div>
+        <div id="vocabulary-container">
+          <div class="loading">Loading vocabulary...</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Tag Analytics</h2>
+        <div id="analytics-container">
+          <div class="loading">Loading analytics...</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Add New Tag</h2>
+        <form id="add-tag-form" onsubmit="addTag(event)">
+          <div class="form-group">
+            <label class="form-label" for="tag-canonical">
+              Canonical Name <span style="color: #ef4444;">*</span>
+            </label>
+            <input
+              type="text"
+              id="tag-canonical"
+              class="form-input"
+              placeholder="e.g., Hezekiah, Gospel of Mark, Monotheism"
+              required
+              oninput="validateForm()" />
+            <div class="form-hint">The primary form of the tag (case-sensitive)</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tag-variations">
+              Variations (comma-separated)
+            </label>
+            <input
+              type="text"
+              id="tag-variations"
+              class="form-input"
+              placeholder="e.g., Hezekiah's, King Hezekiah" />
+            <div class="form-hint">Alternative spellings, possessives, etc.</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tag-category">
+              Category <span style="color: #ef4444;">*</span>
+            </label>
+            <select id="tag-category" class="form-select" required oninput="validateForm()">
+              <!-- Options will be dynamically generated -->
+              <option value="">Loading categories...</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+              <input
+                type="checkbox"
+                id="tag-llm-verify"
+                style="width: 18px; height: 18px; cursor: pointer;"
+                onchange="toggleDescription()" />
+              <span class="form-label" style="margin: 0;">Use LLM context verification</span>
+            </label>
+            <div class="form-hint">For ambiguous names (like "David" or "John"), use AI to verify each match based on context</div>
+          </div>
+
+          <div class="form-group">
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+              <input
+                type="checkbox"
+                id="tag-case-sensitive"
+                style="width: 18px; height: 18px; cursor: pointer;" />
+              <span class="form-label" style="margin: 0;">Case-sensitive matching</span>
+            </label>
+            <div class="form-hint">Match only exact case (e.g., "Lot" won't match "lot"). Use for words that are also common English words.</div>
+          </div>
+
+          <div class="form-group" id="description-group" style="display: none;">
+            <label class="form-label" for="tag-description">
+              Description <span style="color: #ef4444;">*</span>
+            </label>
+            <textarea
+              id="tag-description"
+              class="form-input"
+              rows="3"
+              placeholder="e.g., King David of Israel, second king, son of Jesse, defeated Goliath"
+              oninput="validateForm()"></textarea>
+            <div class="form-hint">Brief description to help AI identify correct matches (required when using LLM verification)</div>
+          </div>
+
+          <button
+            id="add-tag-btn"
+            type="submit"
+            class="btn btn-primary"
+            disabled>
+            Add Tag & Reprocess Episodes
+          </button>
+
+          <div id="add-tag-success" class="success-message"></div>
+          <div id="add-tag-error" class="error-message"></div>
+
+          <div id="add-tag-status" class="migration-status">
+            <div id="add-tag-status-badge"></div>
+            <div id="add-tag-logs" class="migration-logs"></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="section">
+        <h2>Vocabulary Management</h2>
+        <div class="migration-controls">
+          <div class="instruction-box">
+            <h3>Manual Editing & Bulk Operations</h3>
+            <p style="color: #4b5563; margin-bottom: 12px;">
+              For bulk edits or adding variations to existing tags, you can still manually edit
+              <code>src/config/tag-vocabulary.ts</code> and click "Run Migration" below.
+            </p>
+          </div>
+          <button
+            id="migrate-btn"
+            class="btn btn-primary"
+            onclick="startMigration()">
+            Run Migration
+          </button>
+          <div id="migration-status" class="migration-status">
+            <div id="migration-status-badge"></div>
+            <div id="migration-logs" class="migration-logs"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/tag-vocabulary/main.ts" type="module"></script>
+  </body>
+</html>

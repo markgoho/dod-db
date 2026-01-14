@@ -1,9 +1,12 @@
 /**
- * Unified web server for all DoD tools.
+ * API server for DoD tools.
+ * Handles all /api/* endpoints only.
+ *
+ * Static HTML/TS/CSS files are served separately via:
+ *   cd tools && bun index.html tag-vocabulary.html ...
  *
  * Usage:
  *   bun run src/scripts/tools-server.ts
- *   Then open http://localhost:3000
  */
 
 import {
@@ -41,7 +44,7 @@ import { youtubeConfig } from '../config/youtube.js';
 import type { TagDefinition, TagCategory } from '../config/tag-vocabulary.js';
 import * as path from 'node:path';
 
-const PORT = 3000;
+const PORT = 3001; // API server on separate port
 
 // Cache for tag statistics (5 minute TTL)
 interface TagStats {
@@ -328,58 +331,42 @@ async function getAudioFilePath(videoId: string): Promise<string | null> {
   return null;
 }
 
-// Serve the unified tools server
+// API-only server
 const _server = Bun.serve({
   port: PORT,
   async fetch(request) {
     const url = new URL(request.url);
 
-    // ========================================
-    // Landing Page
-    // ========================================
-    if (url.pathname === '/' || url.pathname === '/index.html') {
-      const filePath = path.join(process.cwd(), 'tools', 'index.html');
-      const file = Bun.file(filePath);
-      return new Response(file, {
-        headers: { 'Content-Type': 'text/html' },
-      });
+    // CORS headers for cross-origin requests from static file server
+    const corsHeaders = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    };
+
+    // Handle preflight OPTIONS requests
+    if (request.method === 'OPTIONS') {
+      return new Response(null, { headers: corsHeaders });
     }
 
-    // ========================================
-    // Validate Timestamps Tool (static HTML)
-    // ========================================
-    if (url.pathname === '/validate-timestamps') {
-      const filePath = path.join(
-        process.cwd(),
-        'tools',
-        'validate-timestamps.html',
-      );
-      const file = Bun.file(filePath);
-      return new Response(file, {
-        headers: { 'Content-Type': 'text/html' },
-      });
-    }
+    // Helper to return JSON with CORS
+    const jsonResponse = (data: unknown, status = 200) => {
+      return Response.json(data, { status, headers: corsHeaders });
+    };
 
-    // ========================================
-    // Review Corrections Tool
-    // ========================================
-    if (url.pathname === '/review-corrections') {
-      const filePath = path.join(
-        process.cwd(),
-        'tools',
-        'review-corrections.html',
+    // Only handle /api/* routes
+    if (!url.pathname.startsWith('/api/')) {
+      return jsonResponse(
+        { error: 'Not Found - This is an API-only server. Serve HTML files with: cd tools && bun index.html' },
+        404
       );
-      const file = Bun.file(filePath);
-      return new Response(file, {
-        headers: { 'Content-Type': 'text/html' },
-      });
     }
 
     // Review Corrections API: Get pending candidates
     if (url.pathname === '/api/review-corrections/candidates') {
       const tracker = await loadTracker();
       const pending = getPendingCandidates(tracker);
-      return Response.json(pending);
+      return jsonResponse(pending);
     }
 
     // Review Corrections API: Approve a candidate
@@ -391,7 +378,7 @@ const _server = Bun.serve({
 
       const candidate = tracker.candidates[key];
       if (!candidate) {
-        return Response.json({ error: 'Candidate not found' }, { status: 404 });
+        return jsonResponse({ error: 'Candidate not found' }, 404);
       }
 
       try {
@@ -414,13 +401,13 @@ const _server = Bun.serve({
         approveCandidate(tracker, key, 'UI Review');
         await saveTracker(tracker);
 
-        return Response.json({ success: true });
+        return jsonResponse({ success: true });
       } catch (error) {
-        return Response.json(
+        return jsonResponse(
           {
             error: error instanceof Error ? error.message : 'Failed to approve',
           },
-          { status: 500 },
+          500,
         );
       }
     }
@@ -433,46 +420,39 @@ const _server = Bun.serve({
       const tracker = await loadTracker();
 
       if (!tracker.candidates[key]) {
-        return Response.json({ error: 'Candidate not found' }, { status: 404 });
+        return jsonResponse({ error: 'Candidate not found' }, 404);
       }
 
       rejectCandidate(tracker, key, 'UI Review');
       await saveTracker(tracker);
 
-      return Response.json({ success: true });
+      return jsonResponse({ success: true });
     }
 
     // ========================================
-    // Tag Vocabulary Tool
+    // Tag Vocabulary API
     // ========================================
-    if (url.pathname === '/tag-vocabulary') {
-      const filePath = path.join(process.cwd(), 'tools', 'tag-vocabulary.html');
-      const file = Bun.file(filePath);
-      return new Response(file, {
-        headers: { 'Content-Type': 'text/html' },
-      });
-    }
 
     // Tag Vocabulary API: Get all processed episodes with tags
     if (url.pathname === '/api/tag-vocabulary/episodes') {
       const videos = await loadProcessedVideos();
-      return Response.json(videos);
+      return jsonResponse(videos);
     }
 
     // Tag Vocabulary API: Get tag vocabulary
     if (url.pathname === '/api/tag-vocabulary/vocabulary') {
-      return Response.json(tagVocabulary);
+      return jsonResponse(tagVocabulary);
     }
 
     // Tag Vocabulary API: Get available categories
     if (url.pathname === '/api/tag-vocabulary/categories') {
-      return Response.json(TAG_CATEGORIES);
+      return jsonResponse(TAG_CATEGORIES);
     }
 
     // Tag Vocabulary API: Get tag statistics
     if (url.pathname === '/api/tag-vocabulary/tag-stats') {
       const stats = await computeTagStats();
-      return Response.json(stats);
+      return jsonResponse(stats);
     }
 
     // Tag Vocabulary API: Add tag to vocabulary
@@ -493,24 +473,24 @@ const _server = Bun.serve({
 
         // Validate required fields
         if (!canonical || typeof canonical !== 'string') {
-          return Response.json(
+          return jsonResponse(
             { error: 'canonical is required and must be a string' },
-            { status: 400 },
+            400,
           );
         }
 
         if (!category || typeof category !== 'string') {
-          return Response.json(
+          return jsonResponse(
             { error: 'category is required and must be a string' },
-            { status: 400 },
+            400,
           );
         }
 
         // Validate llmVerify + description dependency
         if (llmVerify && (!description || typeof description !== 'string')) {
-          return Response.json(
+          return jsonResponse(
             { error: 'description is required when llmVerify is true' },
-            { status: 400 },
+            400,
           );
         }
 
@@ -529,9 +509,9 @@ const _server = Bun.serve({
 
         // Check for duplicates
         if (tagExists(canonical)) {
-          return Response.json(
+          return jsonResponse(
             { error: `Tag "${canonical}" already exists in vocabulary` },
-            { status: 409 },
+            409,
           );
         }
 
@@ -555,18 +535,18 @@ const _server = Bun.serve({
         // Start reprocessing all episodes (skip LLM to save costs)
         const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
 
-        return Response.json({
+        return jsonResponse({
           success: true,
           message: `Tag "${canonical}" added successfully`,
           jobId,
         });
       } catch (error) {
         console.error('Error adding tag:', error);
-        return Response.json(
+        return jsonResponse(
           {
             error: error instanceof Error ? error.message : 'Failed to add tag',
           },
-          { status: 500 },
+          500,
         );
       }
     }
@@ -578,16 +558,16 @@ const _server = Bun.serve({
     ) {
       try {
         const jobId = await runMigrationWithTagTracking();
-        return Response.json({ jobId, status: 'started' });
+        return jsonResponse({ jobId, status: 'started' });
       } catch (error) {
-        return Response.json(
+        return jsonResponse(
           {
             error:
               error instanceof Error
                 ? error.message
                 : 'Failed to start migration',
           },
-          { status: 500 },
+          500,
         );
       }
     }
@@ -601,10 +581,10 @@ const _server = Bun.serve({
       const job = migrationJobs.get(jobId);
 
       if (!job) {
-        return Response.json({ error: 'Job not found' }, { status: 404 });
+        return jsonResponse({ error: 'Job not found' }, 404);
       }
 
-      return Response.json({
+      return jsonResponse({
         id: job.id,
         status: job.status,
         logs: job.logs.join(''),
@@ -640,25 +620,25 @@ const _server = Bun.serve({
           const canonical = body.canonical || originalCanonical;
           const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
 
-          return Response.json({
+          return jsonResponse({
             success: true,
             message: `Tag "${canonical}" updated and reprocessing started`,
             jobId,
           });
         }
 
-        return Response.json({
+        return jsonResponse({
           success: true,
           message: `Tag "${originalCanonical}" updated successfully`,
         });
       } catch (error) {
         console.error('Error updating tag:', error);
-        return Response.json(
+        return jsonResponse(
           {
             error:
               error instanceof Error ? error.message : 'Failed to update tag',
           },
-          { status: 500 },
+          500,
         );
       }
     }
@@ -675,9 +655,9 @@ const _server = Bun.serve({
         const tag = findTag(canonical);
 
         if (!tag) {
-          return Response.json(
+          return jsonResponse(
             { error: `Tag "${canonical}" not found` },
-            { status: 404 },
+            404,
           );
         }
 
@@ -689,19 +669,19 @@ const _server = Bun.serve({
         // Trigger reprocessing for this tag across all episodes (like manual add does)
         const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
 
-        return Response.json({
+        return jsonResponse({
           success: true,
           message: `Tag "${canonical}" approved and reprocessing started`,
           jobId,
         });
       } catch (error) {
         console.error('Error approving tag:', error);
-        return Response.json(
+        return jsonResponse(
           {
             error:
               error instanceof Error ? error.message : 'Failed to approve tag',
           },
-          { status: 500 },
+          500,
         );
       }
     }
@@ -718,9 +698,9 @@ const _server = Bun.serve({
         const tag = findTag(canonical);
 
         if (!tag) {
-          return Response.json(
+          return jsonResponse(
             { error: `Tag "${canonical}" not found` },
-            { status: 404 },
+            404,
           );
         }
 
@@ -751,18 +731,18 @@ const _server = Bun.serve({
         // Invalidate stats cache
         statsCache.data = null;
 
-        return Response.json({
+        return jsonResponse({
           success: true,
           message: `Tag "${canonical}" rejected and removed from ${removedCount} episodes`,
         });
       } catch (error) {
         console.error('Error rejecting tag:', error);
-        return Response.json(
+        return jsonResponse(
           {
             error:
               error instanceof Error ? error.message : 'Failed to reject tag',
           },
-          { status: 500 },
+          500,
         );
       }
     }
@@ -780,28 +760,28 @@ const _server = Bun.serve({
         // Verify tag exists
         const tag = findTag(canonical);
         if (!tag) {
-          return Response.json(
+          return jsonResponse(
             { error: `Tag "${canonical}" not found` },
-            { status: 404 },
+            404,
           );
         }
 
         // Start reprocessing for this tag (with LLM verification enabled)
         const jobId = await runMigrationWithTagTracking(false, canonical); // skipLlm = false, track this tag
 
-        return Response.json({
+        return jsonResponse({
           success: true,
           message: `Reprocessing started for tag "${canonical}"`,
           jobId,
         });
       } catch (error) {
         console.error('Error reprocessing tag:', error);
-        return Response.json(
+        return jsonResponse(
           {
             error:
               error instanceof Error ? error.message : 'Failed to reprocess tag',
           },
-          { status: 500 },
+          500,
         );
       }
     }
@@ -821,43 +801,25 @@ const _server = Bun.serve({
         // Invalidate stats cache
         statsCache.data = null;
 
-        return Response.json({
+        return jsonResponse({
           success: true,
           message: `Tag "${canonical}" deleted`,
         });
       } catch (error) {
         console.error('Error deleting tag:', error);
-        return Response.json(
+        return jsonResponse(
           {
             error:
               error instanceof Error ? error.message : 'Failed to delete tag',
           },
-          { status: 500 },
+          500,
         );
       }
     }
 
     // ========================================
-    // Segment Verification Tool
+    // Segment Verification API
     // ========================================
-    if (url.pathname === '/segment-verification') {
-      const filePath = path.join(
-        process.cwd(),
-        'tools',
-        'segment-verification.html',
-      );
-      const file = Bun.file(filePath);
-      const exists = await file.exists();
-      if (!exists) {
-        return new Response(
-          'UI file not found. Please create tools/segment-verification.html',
-          { status: 404 },
-        );
-      }
-      return new Response(file, {
-        headers: { 'Content-Type': 'text/html' },
-      });
-    }
 
     // Segment Verification API: Get all episodes with segments
     if (url.pathname === '/api/segment-verification/episodes') {
@@ -866,12 +828,12 @@ const _server = Bun.serve({
       const sorted = [...videos].sort(
         (a, b) => (a.episodeNumber || 0) - (b.episodeNumber || 0),
       );
-      return Response.json(sorted);
+      return jsonResponse(sorted);
     }
 
     // Segment Verification API: Get segment metadata
     if (url.pathname === '/api/segment-verification/segment-metadata') {
-      return Response.json({
+      return jsonResponse({
         labels: SEGMENT_LABELS,
         colors: SEGMENT_COLORS,
         types: Object.keys(SEGMENT_LABELS),
@@ -888,20 +850,20 @@ const _server = Bun.serve({
       const video = videos.find((v) => v.videoId === videoId);
 
       if (!video) {
-        return Response.json({ error: 'Video not found' }, { status: 404 });
+        return jsonResponse({ error: 'Video not found' }, 404);
       }
 
       const file = Bun.file(video.transcriptPath);
       const exists = await file.exists();
       if (!exists) {
-        return Response.json(
+        return jsonResponse(
           { error: 'Transcript file not found' },
-          { status: 404 },
+          404,
         );
       }
 
       const transcript = await file.text();
-      return Response.json({ transcript });
+      return jsonResponse({ transcript });
     }
 
     // Segment Verification API: Update segments for an episode
@@ -918,23 +880,23 @@ const _server = Bun.serve({
         const body = (await request.json()) as { segments: EpisodeSegment[] };
 
         if (!Array.isArray(body.segments)) {
-          return Response.json(
+          return jsonResponse(
             { error: 'segments must be an array' },
-            { status: 400 },
+            400,
           );
         }
 
         await updateVideoSegments(videoId, body.segments);
-        return Response.json({ success: true });
+        return jsonResponse({ success: true });
       } catch (error) {
-        return Response.json(
+        return jsonResponse(
           {
             error:
               error instanceof Error
                 ? error.message
                 : 'Failed to update segments',
           },
-          { status: 500 },
+          500,
         );
       }
     }
@@ -976,7 +938,7 @@ const _server = Bun.serve({
         }
       }
 
-      return Response.json(stats);
+      return jsonResponse(stats);
     }
 
     // Segment Verification API: Add a learned pattern
@@ -991,32 +953,32 @@ const _server = Bun.serve({
         };
 
         if (!body.segmentType || !body.pattern) {
-          return Response.json(
+          return jsonResponse(
             { error: 'segmentType and pattern are required' },
-            { status: 400 },
+            400,
           );
         }
 
         // Validate segment type
         if (!SEGMENT_LABELS[body.segmentType as SegmentType]) {
-          return Response.json(
+          return jsonResponse(
             { error: `Invalid segment type: ${body.segmentType}` },
-            { status: 400 },
+            400,
           );
         }
 
         await addPatternToConfig(body.segmentType, body.pattern);
-        return Response.json({
+        return jsonResponse({
           success: true,
           message: `Pattern added for ${body.segmentType}`,
         });
       } catch (error) {
-        return Response.json(
+        return jsonResponse(
           {
             error:
               error instanceof Error ? error.message : 'Failed to add pattern',
           },
-          { status: 500 },
+          500,
         );
       }
     }
@@ -1031,7 +993,7 @@ const _server = Bun.serve({
       const audioPath = await getAudioFilePath(videoId);
 
       if (!audioPath) {
-        return Response.json({ error: 'Audio not found' }, { status: 404 });
+        return jsonResponse({ error: 'Audio not found' }, 404);
       }
 
       const file = Bun.file(audioPath);
@@ -1053,66 +1015,8 @@ const _server = Bun.serve({
       });
     }
 
-    // Serve data files (used by multiple tools)
-    if (url.pathname === '/data/correction-candidates.json') {
-      const filePath = path.join(
-        process.cwd(),
-        'data',
-        'correction-candidates.json',
-      );
-      const file = Bun.file(filePath);
-      return new Response(file, {
-        headers: { 'Content-Type': 'application/json' },
-      });
-    }
-
-    // Serve shared CSS
-    if (url.pathname === '/shared/styles.css') {
-      const filePath = path.join(process.cwd(), 'tools', 'shared', 'styles.css');
-      const file = Bun.file(filePath);
-      const exists = await file.exists();
-      if (!exists) {
-        return new Response('Shared styles not found', { status: 404 });
-      }
-      return new Response(file, {
-        headers: { 'Content-Type': 'text/css' },
-      });
-    }
-
-    // Serve shared TypeScript as compiled JavaScript
-    if (url.pathname === '/shared/utilities.js') {
-      const tsPath = path.join(process.cwd(), 'tools', 'shared', 'utilities.ts');
-      const file = Bun.file(tsPath);
-      const exists = await file.exists();
-      if (!exists) {
-        return new Response('Shared utilities not found', { status: 404 });
-      }
-
-      try {
-        // Use Bun's built-in transpiler
-        const result = await Bun.build({
-          entrypoints: [tsPath],
-          target: 'browser',
-          format: 'esm',
-        });
-
-        if (!result.success || !result.outputs[0]) {
-          console.error('TypeScript compilation failed:', result.logs);
-          return new Response('Compilation failed', { status: 500 });
-        }
-
-        const output = await result.outputs[0].text();
-        return new Response(output, {
-          headers: { 'Content-Type': 'application/javascript' },
-        });
-      } catch (error) {
-        console.error('Error compiling TypeScript:', error);
-        return new Response('Compilation error', { status: 500 });
-      }
-    }
-
     // ========================================
-    // Per-Episode Viewer
+    // Per-Episode API
     // ========================================
 
     // Episode API: Get single episode data
@@ -1122,13 +1026,13 @@ const _server = Bun.serve({
       const video = videos.find((v) => v.videoId === videoId);
 
       if (!video) {
-        return Response.json({ error: 'Episode not found' }, { status: 404 });
+        return jsonResponse({ error: 'Episode not found' }, 404);
       }
 
       // Check audio availability
       const audioPath = await getAudioFilePath(videoId);
 
-      return Response.json({
+      return jsonResponse({
         ...video,
         hasAudio: !!audioPath,
       });
@@ -1144,58 +1048,24 @@ const _server = Bun.serve({
         .filter(([, c]) => c.episodeIds?.includes(videoId) || c.episodes?.some((e: string) => e.includes(videoId)))
         .map(([key, candidate]) => ({ key, ...candidate }));
 
-      return Response.json(episodeCandidates);
+      return jsonResponse(episodeCandidates);
     }
 
-    // Episode Hub Page
-    if (/^\/episode\/[^/]+$/.test(url.pathname) && !url.pathname.includes('/api/')) {
-      const filePath = path.join(process.cwd(), 'tools', 'episode', 'index.html');
-      const file = Bun.file(filePath);
-      const exists = await file.exists();
-      if (!exists) {
-        return new Response('Episode viewer not found. Please create tools/episode/index.html', { status: 404 });
-      }
-      return new Response(file, {
-        headers: { 'Content-Type': 'text/html' },
-      });
-    }
-
-    // Episode Subpages (transcript, segments, tags, corrections)
-    if (/^\/episode\/[^/]+\/(transcript|segments|tags|corrections)$/.test(url.pathname)) {
-      const subpage = url.pathname.split('/').pop();
-      const filePath = path.join(process.cwd(), 'tools', 'episode', `${subpage}.html`);
-      const file = Bun.file(filePath);
-      const exists = await file.exists();
-      if (!exists) {
-        return new Response(`Episode ${subpage} page not found. Please create tools/episode/${subpage}.html`, { status: 404 });
-      }
-      return new Response(file, {
-        headers: { 'Content-Type': 'text/html' },
-      });
-    }
-
-    return new Response('Not Found', { status: 404 });
+    return jsonResponse({ error: 'API endpoint not found' }, 404);
   },
 });
 
-console.log(`\n🛠️  DoD Tools Server`);
+console.log(`\n🔌 DoD API Server`);
 console.log(
   `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`,
 );
-console.log(`🌐 Open in browser: http://localhost:${PORT}`);
-console.log(`\n📋 Available tools:`);
-console.log(`   • Episode List:           http://localhost:${PORT}/`);
-console.log(`   • Episode Viewer:         http://localhost:${PORT}/episode/{videoId}`);
-console.log(
-  `   • Timestamp Validator:    http://localhost:${PORT}/validate-timestamps`,
-);
-console.log(
-  `   • Correction Review:      http://localhost:${PORT}/review-corrections`,
-);
-console.log(
-  `   • Tag Vocabulary:         http://localhost:${PORT}/tag-vocabulary`,
-);
-console.log(
-  `   • Segment Verification:   http://localhost:${PORT}/segment-verification`,
-);
+console.log(`🌐 API Server running: http://localhost:${PORT}`);
+console.log(`\n📋 API Endpoints available:`);
+console.log(`   • /api/review-corrections/*`);
+console.log(`   • /api/tag-vocabulary/*`);
+console.log(`   • /api/segment-verification/*`);
+console.log(`   • /api/episode/*`);
+console.log(`\n📄 To serve HTML/TS/CSS files, run in separate terminal:`);
+console.log(`   cd tools && bun index.html tag-vocabulary.html segment-verification.html`);
+console.log(`\n   This will start a static file server on http://localhost:3000`);
 console.log(`\n`);

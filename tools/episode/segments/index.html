@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segments - Episode - Data Over Dogma Tools</title>
+    <link rel="stylesheet" href="/shared/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container-wide">
+      <div class="section" style="background: transparent; box-shadow: none; padding: 0;">
+        <nav class="breadcrumbs" id="breadcrumbs">
+          <a href="/">Episodes</a>
+          <span class="separator">&gt;</span>
+          <a href="#" id="breadcrumb-episode">Episode</a>
+          <span class="separator">&gt;</span>
+          <span class="current">Segments</span>
+        </nav>
+      </div>
+
+      <div class="segments-layout">
+        <div class="main-panel">
+          <div class="panel-header">
+            <h2 id="panel-title">Segment Verification</h2>
+          </div>
+
+          <div class="timeline-section">
+            <div class="timeline-label">Segment Timeline</div>
+            <div class="timeline" id="timeline">
+              <!-- Timeline segments rendered here -->
+            </div>
+          </div>
+
+          <div class="audio-section" id="audio-section">
+            <audio id="audio" controls>
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-time-row">
+              <span id="current-time">00:00:00</span>
+              <span id="total-time">--:--:--</span>
+            </div>
+          </div>
+
+          <div class="segments-list" id="segments-list">
+            <div class="loading">Loading segments...</div>
+          </div>
+
+          <div class="actions-bar">
+            <button class="btn btn-secondary" onclick="addSegment()">+ Add Segment</button>
+            <button class="btn btn-secondary" onclick="markAllVerified()">Mark All Verified</button>
+            <button class="btn btn-primary" onclick="saveSegments()">Save Changes</button>
+          </div>
+        </div>
+
+        <div class="sidebar-panel">
+          <div class="transcript-panel">
+            <div class="transcript-header">Transcript</div>
+            <div class="transcript-content" id="transcript-content">
+              <div class="loading" style="padding: 20px;">Loading transcript...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.ts" type="module"></script>
+  </body>
+</html>
