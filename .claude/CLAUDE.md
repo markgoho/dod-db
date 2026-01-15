@@ -119,6 +119,23 @@ bun run src/scripts/generate-hugo-episodes.ts --episode 42
 - Episode pages at `/episodes/{number}/`
 - Tag taxonomy pages at `/tags/` and `/tags/{tag-name}/`
 
+### Episode Page Features
+
+Each episode page includes:
+
+- **YouTube Video Embed**: Lazy-loaded facade pattern (thumbnail first, iframe on click)
+- **Clickable Timestamps**: Click any `[HH:MM:SS]` timestamp to seek video to that time
+- **Sticky Video Player**: Video remains visible while scrolling through transcript on desktop
+- **Full Transcript**: Complete corrected transcript with speaker labels
+- **Episode Metadata**: Title, date, episode number, speaker names
+- **Tags**: Topical tags for filtering and discovery
+
+**Technical details:**
+- ~50 lines TypeScript for video facade and timestamp seeking (`hugo/assets/ts/video-player.ts`)
+- Timestamps transformed to clickable links during episode generation
+- Graceful fallback: Without JS, timestamps link to YouTube at correct time
+- Responsive: Two-column layout on desktop (sticky video + transcript), stacked on mobile
+
 ### Internal Tools
 
 - `bun run src/scripts/tools-server.ts` (or `npm run tools`) - Start unified tools server at http://localhost:3000

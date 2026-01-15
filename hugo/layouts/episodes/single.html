@@ -13,11 +13,41 @@
       {{ end }}
     </header>
 
-    <section class="episode-transcript">
-      <h2>Transcript</h2>
-      <div class="transcript-content">
-        {{ .Content }}
-      </div>
-    </section>
+    <div class="episode-layout">
+      {{/* Video Player */}}
+      {{ with .Params.videoId }}
+      <aside class="video-player" data-video-id="{{ . }}">
+        <a href="https://www.youtube.com/watch?v={{ . }}"
+           class="video-facade"
+           target="_blank"
+           rel="noopener">
+          <img
+            src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
+            alt="Watch {{ $.Title }} on YouTube"
+            loading="lazy"
+            onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'"
+          />
+          <span class="video-facade__play" aria-hidden="true"></span>
+        </a>
+      </aside>
+      {{ end }}
+
+      {{/* Transcript */}}
+      <section class="episode-transcript">
+        <h2>Transcript</h2>
+        <div class="transcript-content">
+          {{ .Content }}
+        </div>
+      </section>
+    </div>
   </article>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  {{ $opts := dict "targetPath" "video-player.js" }}
+  {{ $built := resources.Get "ts/video-player.ts" | js.Build $opts }}
+  {{ if hugo.IsProduction }}
+    {{ $built = $built | resources.Minify | resources.Fingerprint }}
+  {{ end }}
+  <script src="{{ $built.RelPermalink }}"></script>
 {{ end }}

@@ -35,6 +35,26 @@ function extractCleanTitle(fullTitle: string): string {
 }
 
 /**
+ * Transform transcript timestamps into clickable links.
+ * Converts [HH:MM:SS.mmm] to <a> tags with YouTube seek URLs.
+ */
+function transformTimestamps(content: string, videoId: string): string {
+	const pattern = /\[(\d{2}):(\d{2}):(\d{2})(?:\.\d{3})?\]/g;
+
+	return content.replaceAll(pattern, (_match, hours: string, minutes: string, seconds: string) => {
+		const totalSeconds =
+			Number.parseInt(hours, 10) * 3600 +
+			Number.parseInt(minutes, 10) * 60 +
+			Number.parseInt(seconds, 10);
+
+		const display = `${hours}:${minutes}:${seconds}`;
+		const url = `https://youtu.be/${videoId}?t=${totalSeconds}`;
+
+		return `<a class="timestamp" data-seconds="${totalSeconds}" href="${url}">[${display}]</a>`;
+	});
+}
+
+/**
  * Generate YAML frontmatter for an episode.
  */
 function generateFrontmatter(video: ProcessedVideo): string {
@@ -91,11 +111,14 @@ async function generateEpisodeContent(video: ProcessedVideo): Promise<boolean> {
 	// Read transcript content
 	const transcriptContent = await transcriptFile.text();
 
+	// Transform timestamps to clickable links
+	const transcriptWithLinks = transformTimestamps(transcriptContent, video.videoId);
+
 	// Generate frontmatter
 	const frontmatter = generateFrontmatter(video);
 
 	// Combine frontmatter and transcript
-	const content = `${frontmatter}\n\n${transcriptContent}`;
+	const content = `${frontmatter}\n\n${transcriptWithLinks}`;
 
 	// Write to Hugo content directory
 	const outputDir = path.join(HUGO_CONTENT_DIR, String(video.episodeNumber));
