@@ -1,7 +1,6 @@
 baseURL = 'https://dod-db.web.app/'
 languageCode = 'en-us'
-title = 'Data Over Dogma'
-enableRobotsTXT = true
+title = 'Data Over Dogma Podcast'
 enableGitInfo = true
 
 [params]
