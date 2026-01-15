@@ -1,0 +1,629 @@
+[00:00:01.120] David Carr: The Bible, when you get inside it more, turns out to be this complex, sometimes conflictual dialogue between different perspectives that are very opposed to each other.
+[00:00:13.360] David Carr: Many people, when they read the Bible, just presuppose, oh, I'm supposed to just agree with everything in it and just, you know, organize my whole life around it.
+[00:00:22.800] David Carr: But the Bible itself models a process of argument and wrestling and that sort of thing.
+[00:00:28.800] David Carr: That's how this text got put together.
+[00:00:34.940] Dan McClellan: Hey, Everybody, I'm Dan McClellan.
+[00:00:36.460] Dan Beecher: And I'm Dan Beecher.
+[00:00:37.740] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation about the same.
+[00:00:48.460] Dan McClellan: How are things today, Dan?
+[00:00:49.820] Dan Beecher: Oh, man, things are good.
+[00:00:51.300] Dan Beecher: We're gonna.
+[00:00:52.620] Dan Beecher: We're gonna dig into some stuff.
+[00:00:54.220] Dan Beecher: Some.
+[00:00:54.860] Dan Beecher: Some.
+[00:00:55.660] Dan Beecher: The Genesis, if you will.
+[00:00:57.180] Dan Beecher: Of Genesis.
+[00:00:58.300] Dan McClellan: The precursors to the Genesis.
+[00:01:00.140] Dan Beecher: Yes, indeed.
+[00:01:01.420] Dan Beecher: Which is.
+[00:01:01.940] Dan Beecher: Which sounds like.
+[00:01:04.360] Dan Beecher: Why don't you introduce our guest who's going to tell us all about it.
+[00:01:07.720] Dan McClellan: Sure thing.
+[00:01:08.680] Dan McClellan: Today we're going to be talking with Professor David M. Carr, who is professor of Hebrew Bible at Union Theological Seminary in New York.
+[00:01:18.040] Dan McClellan: Excuse me.
+[00:01:18.560] Dan McClellan: And also teaches classes at Jewish Theological Seminary, also in New York.
+[00:01:23.720] Dan McClellan: Welcome to the show, David.
+[00:01:24.920] Dan McClellan: Thank you so much for being here with us.
+[00:01:27.560] David Carr: Well, it's so great to be here.
+[00:01:29.040] David Carr: Thank you for having me.
+[00:01:30.740] Dan McClellan: Well, we're glad we could have you.
+[00:01:33.780] Dan McClellan: I have been working with your stuff for a while now.
+[00:01:37.140] Dan McClellan: I wrote a dissertation at Exeter University that was mainly focused on Hebrew Bible and really enjoyed some of the stuff that you've written, particularly The Formation of the Hebrew Bible.
+[00:01:52.580] Dan McClellan: Writing on the Tablet of the Heart, Reading the Fractures of Genesis was, I think, the first work of yours that I came across, which I think you published almost 30 years ago ago.
+[00:02:03.360] Dan McClellan: And then today we're. we're going to be democratizing to some degree your work in both a commentary on Genesis 1-11 and your book, The Formation of Genesis 1-11: Biblical and Other Precursors.
+[00:02:19.440] Dan McClellan: Does that sound right?
+[00:02:20.440] Dan McClellan: Did we get the. the brief correct there?
+[00:02:23.360] David Carr: That was fantastic.
+[00:02:25.040] Dan McClellan: Okay.
+[00:02:28.090] Dan McClellan: I wonder if you might just to begin introduce yourself a bit, let our audience know who you are.
+[00:02:36.970] David Carr: Yeah, well, I, as you did a great job of introducing where I am right now at Union Theological Seminary in New York.
+[00:02:46.010] David Carr: I taught for 12 years at a little seminary in Ohio before that.
+[00:02:50.250] David Carr: So I've been at this Hebrew Bible thing for a good while and I'm amazed that I still find it fascinating.
+[00:02:58.940] David Carr: I can be an eternal student.
+[00:03:00.420] David Carr: I just attach Bible to some other topic and it's legit, which is a lot of fun, I have to say.
+[00:03:09.420] David Carr: I feel like over my career I've done a lot better job speaking to doctoral students and fellow colleagues with my work.
+[00:03:18.140] David Carr: And I've tried at various points to write to a broader audience and to some extent have reached folks, but feels like some, some somewhat like somebody with a rifle who's aiming at a target and always hits above it.
+[00:03:32.020] David Carr: That's true of me.
+[00:03:33.540] David Carr: So I'm so happy to have this chance to, to talk with you all and have you bring me into contact with your amazing audience.
+[00:03:41.940] Dan Beecher: Yeah, well, we're, we're excited to have you.
+[00:03:43.980] Dan Beecher: We're excited to, to get to it.
+[00:03:46.340] Dan Beecher: I, I will admit that I have not apparent.
+[00:03:50.420] Dan Beecher: Look, your, your books are apparent.
+[00:03:55.870] Dan Beecher: Dan has said how amazing they are.
+[00:03:57.950] Dan Beecher: I have not been able to access it.
+[00:03:59.710] Dan Beecher: I didn't get, I didn't get a copy of your book before the, the thing.
+[00:04:02.750] Dan Beecher: So I am, I'm a babe in the woods.
+[00:04:05.110] Dan Beecher: I apologize.
+[00:04:05.830] Dan Beecher: I wish I had been able to.
+[00:04:07.229] Dan Beecher: To dive in beforehand, but something tells me I wouldn't get it.
+[00:04:12.670] Dan Beecher: Something tells me that, like there, I, I don't have the necessary background, so I'm going to be here filling in for our listeners asking dumb questions and we'll.
+[00:04:21.929] Dan Beecher: I think we'll be able to, to make it through together.
+[00:04:25.449] David Carr: Sounds great.
+[00:04:26.409] Dan McClellan: As Bill Murray says in my wife's favorite movie, What About Bob?
+[00:04:31.369] Dan McClellan: Baby steps.
+[00:04:32.729] Dan Beecher: So that's a good way to start.
+[00:04:35.649] Dan Beecher: That's a good way to go about this.
+[00:04:37.609] Dan McClellan: We, we're going to start with defining what we're talking about.
+[00:04:41.529] Dan McClellan: Genesis 1 through 11, also known as the primeval history.
+[00:04:44.649] Dan McClellan: Why do we have our own title for these 11 chapters?
+[00:04:48.530] Dan McClellan: Where is this coming from and what sets it off from the rest of the book of Genesis?
+[00:04:54.010] David Carr: Well, these chapters are the part of Genesis that really talk about general human origins.
+[00:05:01.130] David Carr: The people of Israel don't yet appear anywhere in these chapters.
+[00:05:05.450] David Carr: Abraham will be called by God at the beginning of chapter 12, right after these chapters.
+[00:05:11.050] David Carr: And, and that starts the story of the promise to him and his and.
+[00:05:14.180] David Carr: His descendants, and the gradual formation of the people of Israel out of his grandkids.
+[00:05:22.260] David Carr: So that story is going to start in Genesis 12.
+[00:05:24.900] David Carr: But Genesis 1-11 are, are these stories of ancient primeval origins, of creation, of flood, of, you know, various emergent aspects of human civilization, of the great cities of Mesopotamia.
+[00:05:41.650] David Carr: Basically, the.
+[00:05:42.770] David Carr: The writers of Genesis are telling about their setting before they're going to get to the big story of, you know, how they came to be as a people.
+[00:05:52.130] Dan Beecher: Yeah, I think, I think a lot of our, of our.
+[00:05:55.490] Dan Beecher: Even listeners who haven't read the book cover to cover would know a lot of the sort of stories of the first 11 chapters of Genesis because they are so.
+[00:06:05.810] Dan Beecher: They're, they're iconic.
+[00:06:08.540] Dan Beecher: You know, we're talking Adam and Eve, we're talking Noah and the flood, we're talking the Tower of Babel.
+[00:06:14.140] Dan Beecher: We're talking Babel or Babel or whatever you call it.
+[00:06:18.140] Dan Beecher: These are, these are pretty, you know, every, every children's Bible storybook has all of these stories in it.
+[00:06:27.140] Dan Beecher: And then there are entire, you know, books of the Bible that aren't touched in the children's books.
+[00:06:33.500] Dan Beecher: So there's something there, there's something special about these in that way.
+[00:06:40.200] David Carr: Yeah, so true.
+[00:06:41.040] David Carr: And, and for the various people who tried to read the Bible from beginning to end, usually they make it through the first 11 chapters.
+[00:06:48.360] David Carr: They're going to cut out sometime, maybe later on, but they'll make it through this primeval history.
+[00:06:53.640] Dan McClellan: Yeah, the narrative slows to a crawl as soon as we get past those.
+[00:07:00.200] Dan Beecher: Although I gotta say, chapters five and ten, you know, when you start to get into who begat whom.
+[00:07:07.200] Dan Beecher: Yeah, that.
+[00:07:08.200] Dan Beecher: That can be pretty thick.
+[00:07:09.320] Dan Beecher: That can be.
+[00:07:09.880] David Carr: Fair enough, fair enough.
+[00:07:12.360] Dan McClellan: Now you, you mentioned this is where the writers are kind of establishing their setting.
+[00:07:16.680] Dan McClellan: And I think a lot of people assume one of two things.
+[00:07:20.280] Dan McClellan: Either that these chapters come down from hoary antiquity, somewhere in the obscure past, are incredibly ancient texts, or they adopt the tradition that Moses received the whole Pentateuch by revelation.
+[00:07:36.780] Dan McClellan: And so this, that's kind of the, the temporal setting is, is the time of, of Moses.
+[00:07:42.740] Dan McClellan: But for scholars, that's not likely when, when these texts came together, if you had to.
+[00:07:49.980] Dan McClellan: We'll talk a little bit more about the details as we get deeper into the interview.
+[00:07:53.540] Dan McClellan: But if you had to kind of lay our scene a little bit, where are we talking in time for these stories coming together?
+[00:08:04.530] David Carr: So, yeah, this is a great place to start.
+[00:08:07.810] David Carr: I think we can think about.
+[00:08:15.010] David Carr: Authors who are literate scribes.
+[00:08:18.610] David Carr: They're the scholars of their community in a tiny community in what we now call Israel, Palestine, in the sort of eastern edge of the Mediterranean.
+[00:08:30.660] David Carr: And they are writing about, give or take, 25, 2600 years ago.
+[00:08:39.860] David Carr: And they're working within what, in their setting is just a really pretty tiny kingdom.
+[00:08:46.740] David Carr: It's only a little bit bigger than the greater New York area where I live.
+[00:08:53.060] David Carr: And they have all around them major civilizations of Egypt and Mesopotamia, also large Syrian cities and stuff.
+[00:09:03.000] David Carr: Those are the sort of big kingdoms that they have to contend with.
+[00:09:07.640] David Carr: And, and they're small scale farmers or village dwellers.
+[00:09:13.800] David Carr: There's some, a little bit larger towns, and that's probably where these scholars worked.
+[00:09:17.960] David Carr: But they're living in this kind of context and they're having to contend with everyday life, which can be really hard in, in those contexts, and, and sometimes massive catastrophes.
+[00:09:32.180] David Carr: In many ways, I think the story of the formation of the Bible is, is the story of various texts being written in the furnace of communal trauma.
+[00:09:44.260] David Carr: And it's not just one, it's a bunch of them, one after the other, as this little, these little tiny kingdoms are buffeted by major empires who have an interest in their area.
+[00:09:54.530] David Carr: And so that's, yeah, that's a very different way, I realize, of setting the Bible, setting it in the context of a group of people confronting the difficulties of everyday life and of collective trauma.
+[00:10:07.250] David Carr: But for me, getting insights into the way the Bible was forged in that kind of context really adds a whole different level of meaning to me.
+[00:10:18.850] David Carr: It helps me understand why the Bible became the text that we're still talking about today.
+[00:10:25.740] David Carr: Like on this podcast, when a lot of the texts of these major empires of Egypt and Mesopotamia were lost in the sands, when the, when the kingdoms were destroyed.
+[00:10:38.380] David Carr: There's some, some kind of resilience in these texts that was forged in trauma.
+[00:10:44.180] David Carr: And I think people nowadays and across the centuries can hear that deeper music in them.
+[00:10:51.530] Dan McClellan: And I think it's, it's reflecting some of the universal experiences of, of humanity.
+[00:10:57.610] Dan McClellan: You mentioned the trauma, the fact that they have persevered, and a part of that is the fact that the, the groups of people who have curated those texts have managed to persevere in the face of so much persecution, so much trauma 2500, 2600 years ago.
+[00:11:16.370] Dan McClellan: We're talking just before and after the Babylonian exile, which seems to be one of the largest traumatic scars that is left on the surface of the Hebrew Bible.
+[00:11:29.420] Dan McClellan: Would you say that these texts begin their formation prior to the exile and kind of take the shape that we know them now after returning from the exile?
+[00:11:39.260] Dan McClellan: Is it a little hard to tell, or is it something where we can say, oh, this is definitely before, this is definitely after?
+[00:11:48.980] David Carr: It's so rare in biblical scholarship that you can say anything is definite.
+[00:11:52.380] David Carr: I have to say, I will say this for what it's worth, as an orientation point.
+[00:11:58.660] David Carr: One of the things that scholars started to recognize already over 300 years ago is that these chapters in Genesis and actually much of the rest of the Torah are formed really out of two probably originally separate written strands.
+[00:12:17.870] David Carr: And scholars often refer.
+[00:12:19.670] David Carr: I know you know this already, but just to mention it for anybody in the audience who doesn't, one of those strands is referred to by scholars as the priestly strand.
+[00:12:31.390] David Carr: Not that there are any priests in the primeval history really, but.
+[00:12:34.590] David Carr: But that's, that's what they call it, the priestly strand or P for short.
+[00:12:39.940] David Carr: And then the others.
+[00:12:42.260] David Carr: And it starts with the seven day creation account in Genesis 1.
+[00:12:47.220] David Carr: And then it includes those genealogies that bog people down often in Genesis 5 and 10 that you were mentioning, Dan.
+[00:12:56.900] David Carr: And then it also includes other crucial parts of the flood narrative and that sort of thing.
+[00:13:01.700] David Carr: That's one strand that originally existed separately.
+[00:13:05.580] David Carr: And then there's what scholars used to refer to, and many still do, as the J strand, Yahwistic strand.
+[00:13:13.240] David Carr: I tend to prefer a more neutral term for complicated reasons of non-P, non-Priestly strand, which starts with the Garden of Eden story in Genesis 2 to 3 and the Cain and Abel story, I mean amazing stories, narrative stories that have a very different feel to them than the seven-day creation account or whatever.
+[00:13:34.060] David Carr: And then it continues with its own flood strand and onto a story of Noah and his sons and the Tower of Babel story.
+[00:13:43.900] David Carr: Anyway, this J strand or non-P strand, you'll hear me use the term non-P more here, has its own separate character to it.
+[00:13:55.820] David Carr: And most scholars over the last few hundred years have thought it was an originally separate strand.
+[00:14:01.500] David Carr: And, and, and back to your question, Dan.
+[00:14:04.940] David Carr: I am still of the opinion and I might... I... I'm probably in the majority in North America, but in the minority vis-a-vis some of my European colleagues.
+[00:14:13.340] David Carr: I think the non-P strand is a pre-P strand and probably pre-exilic.
+[00:14:19.260] David Carr: So it was formed in the time... there's still a lot of trauma going on, but that big one hasn't happened yet.
+[00:14:25.340] David Carr: And the...
+[00:14:26.460] David Carr: Whereas the Priestly strand almost certainly was formed in the wake of the Babylonian exile and destruction of Jerusalem and that kind of thing.
+[00:14:37.660] David Carr: And you can see that subtly reflected in different aspects of that material.
+[00:14:43.580] Dan McClellan: Yeah, we had Liane Feldman on a bit ago to talk about her book The Consuming Fire.
+[00:14:50.300] Dan McClellan: So we have a little bit of an orientation to P. I believe she's in... she's a little closer to Joel Baden and the Neo-Documentary Hypothesis than I am and perhaps than you are.
+[00:15:03.200] Dan McClellan: But you mentioned the seven-day creation account that we find in Genesis 1:1 through Genesis 2:3 or 4a.
+[00:15:15.760] Dan McClellan: And then we have the other one running from the second half of Genesis 2:4 down through the, the rest of the Adam and Eve story. I'd love to hear...
+[00:15:25.370] Dan McClellan: I, I bring up the fact that these are two different and originally independent creation accounts quite frequently on social media.
+[00:15:33.610] Dan McClellan: And, and the picture that I have tried to paint is of an earlier account where there are concerns with the way God is represented.
+[00:15:44.210] Dan McClellan: There are concerns with the way the, the creative act is represented, where we have the Priestly group coming in and trying to massage it into something that's a little more comfortable.
+[00:15:56.380] Dan McClellan: Could you talk about your thoughts on the relationship of these two creation accounts?
+[00:16:02.220] David Carr: Sure, yeah.
+[00:16:03.819] David Carr: It's a fascinating example, I think, of writing and counter-writing where the two texts are originally set up in opposition to each other before they're then brought into the same strand.
+[00:16:14.770] David Carr: But the Garden of Eden story, you know, I, this is a story that every... I've been reading it for decades as a full-time professional scholar, and I still see new things in it every time.
+[00:16:26.450] David Carr: But it's this incredible story about how God sort of initially creates these childlike humans in the garden.
+[00:16:33.650] David Carr: Tells them, you know, you can have all these yummy trees, anything you want, except for this one tree in the middle of the garden.
+[00:16:41.420] David Carr: And anybody who has kids knows if you want to guarantee that somebody's going to eat something, you just do that.
+[00:16:47.780] David Carr: Just tell them that they, they can do anything.
+[00:16:50.140] David Carr: And so they, and it says if you don't do it, if you, if you eat from this tree, you will definitely die.
+[00:16:55.660] David Carr: You will surely die.
+[00:16:57.660] David Carr: And, and there's this whole dialogue.
+[00:17:00.660] David Carr: I won't go deeply into the story, but the woman eventually realizes, hey, wait a minute, you know, thanks to the snake, I realized this tree will give me some good wisdom.
+[00:17:09.749] David Carr: I'll become like God, knowing good and evil.
+[00:17:11.829] David Carr: And she and her man eat from it.
+[00:17:15.429] David Carr: And the snake is right, their eyes are open, they get wisdom.
+[00:17:18.789] David Carr: But God then says, oh, this is not good.
+[00:17:23.829] David Carr: They have godlike knowledge.
+[00:17:27.189] David Carr: What if they also eat of the tree of eternal life and gain immortality?
+[00:17:32.189] David Carr: I've got to send them out of the garden and does so.
+[00:17:35.000] David Carr: And as a result of that, the, the humans will definitely die, just as God had predicted.
+[00:17:43.320] David Carr: It wasn't that God was going to put them to death, it's just that they will gain mortality because God can't tolerate having them in the garden if they've eaten of the Tree of Knowledge.
+[00:17:52.200] David Carr: What's interesting, back to your question, Dan, about this story is it's positing a God who's worried about humans becoming too godlike.
+[00:18:03.500] David Carr: And you know, God is kind of remarkably human in this story, is walking in the garden, you know, jealous, kind of duplicitous with regard to the humans.
+[00:18:13.180] David Carr: There's a lot going on there.
+[00:18:14.420] David Carr: I like that.
+[00:18:15.180] David Carr: I like this picture of God myself.
+[00:18:17.220] David Carr: But.
+[00:18:18.620] David Carr: But apparently the authors of the Priestly story weren't so happy with it.
+[00:18:23.020] David Carr: And so what's remarkable about the way they tell their story in Genesis 1 is they tell this story about an absolutely majestic, royal like God, who says, decrees, and instantly things just magically kind of come into place.
+[00:18:41.770] David Carr: And as a crown of this entire creation, this God is not scared of having humans be godlike, but actually makes humans as God images in order to rule all living creatures in this cosmos.
+[00:19:00.200] David Carr: So it's like diametrically opposed to the message of the Garden of Eden story.
+[00:19:06.200] David Carr: And there are all sorts of other subtle indicators that the person who wrote Genesis 1 had the Garden of Eden story in mind and was trying to replace it.
+[00:19:16.760] David Carr: And then the radical move was made later to turn what was supposed to be the replacement into the prologue of the Garden of Eden story, and they were put one after the other in the same strand.
+[00:19:31.880] Dan McClellan: And that decision.
+[00:19:33.560] Dan McClellan: Do you think this is more an archival move, like let's record them on the same scroll?
+[00:19:40.120] Dan McClellan: Or do you think this was a literary move, we're going to appropriate for our own purposes the, the Priestly account as kind of an introduction to the other one?
+[00:19:52.440] Dan McClellan: Or do you think we don't really have a way of knowing what was in their minds?
+[00:19:57.640] David Carr: That latter statement is probably the most accurate.
+[00:20:00.160] David Carr: We don't have a way of knowing what's in their minds.
+[00:20:02.680] David Carr: But that's a typical, scholarly, cautious thing. I will say one of the exciting new developments in Pentateuchal study, and believe it or not, even after 300 years, we're coming up with some really exciting new stuff, I think is becoming more aware of ways in which these two strands I was talking about earlier, the Priestly strand and the earlier non Priestly strand, or maybe not always earlier.
+[00:20:27.630] David Carr: In some ways they existed separately, but I mentioned before that the, the community in which these were written is pretty tiny, and literacy within the ancient world of the Levant was not widespread.
+[00:20:45.150] David Carr: So if you have a tiny kingdom with only a tiny minority of people able to read, and you have two complete accounts, you know, of the origins of the world, people are going to know about both of them, and they're going to start to add to each one in relation to the other.
+[00:21:01.270] David Carr: And so we're starting to see evidence in these two strands that they were modified by scribes who are still transmitting them separately before they finally come to the point where they kind of go, well, why are we just keep, why are we working these two documents separately?
+[00:21:19.270] David Carr: Let's just make them one document and have it all together.
+[00:21:23.790] David Carr: And I think that's probably the most plausible explanation for why they did it.
+[00:21:30.750] David Carr: It's sort of archival, but they're also reading these for meaning.
+[00:21:34.520] David Carr: And, and so, for example, when they put these two creation stories together, there was no really real alternative but to put the larger, more spacious vision of the creation of the whole cosmos in Genesis 1 at the beginning.
+[00:21:51.160] Dan McClellan: Yeah.
+[00:21:51.640] David Carr: And then put what was actually the earlier creation story about the Garden of Eden as a follow up.
+[00:21:58.760] Dan McClellan: Yeah.
+[00:22:00.020] Dan McClellan: And you, you mentioned that it presents a deity who's a little bit jealous of their, their divinity. They've created humanity to, to till the ground to do all these things.
+[00:22:10.180] Dan McClellan: They've created humanity to, to till the ground to do all these things.
+[00:22:14.900] Dan McClellan: Sounds quite similar to some Mesopotamian stories that we have where.
+[00:22:19.460] Dan McClellan: Well, one, we've got for instance, Gilgamesh who's seeking out eternal life.
+[00:22:23.500] Dan McClellan: He had to watch his buddy die and decompose and he's, he doesn't like that idea and so he's seeking out eternal life and there's a, there's a serpent snatches it from him right at.
+[00:22:33.320] Dan McClellan: The, right at the end.
+[00:22:35.360] Dan McClellan: But we've also got in Enuma Elish and other traditions from the Sumerian, the Akkadian literature, humanity being created to do the work the gods don't want to do.
+[00:22:48.080] Dan McClellan: And, and they're also keeping them at arm's length.
+[00:22:51.040] Dan McClellan: Do we, do you see the influence of any, or maybe many of these traditions on the way the, these authors are writing?
+[00:23:01.160] Dan McClellan: Are they, are they writing in response to, are inspired by, are they rejecting these other traditions that are, that are probably far more widespread in the, the empires around them?
+[00:23:12.220] David Carr: Yes, I definitely think they are.
+[00:23:13.900] David Carr: And you did a really nice job of summarizing a lot of these key elements.
+[00:23:18.140] David Carr: The story of the Garden of Eden is never exactly verbally parallels anything in the Gilgamesh epic, but it's constantly in interaction with some of its ideas.
+[00:23:31.500] David Carr: You mentioned the theme of immortality, which obviously is a big ultimate result, but also the snake and the fruit and you know, the lost human chance at immortality.
+[00:23:44.240] David Carr: Gilgamesh just barely, you know, almost has that immortality and loses it there just all sorts of subtle ways in which that's reflected.
+[00:23:52.640] David Carr: And then the Enuma Elish epic seems to have been the background for the Genesis 1 seven-day creation account, where the Enuma Elish epic is all about trying to show how the Babylonian state god Marduk is the end all, be all, the supreme god over all the other gods.
+[00:24:16.060] David Carr: And he, he can just, he can create by a word and destroy by a word.
+[00:24:21.220] David Carr: And he creates the cosmos out of dividing up the sea goddess into two.
+[00:24:26.400] David Carr: And, and, and there are all sorts of interesting ways in which Genesis 1 says kind of Marduk doesn't even begin to figure into the picture.
+[00:24:37.040] David Carr: In fact, there are no gods that figure into the picture.
+[00:24:40.240] David Carr: There's just God, capital G. And that's it.
+[00:24:44.160] David Carr: And so it sort of does.
+[00:24:45.440] David Carr: It tells an Enuma Elish-like story, but now with Marduk completely obliterated and the God of Israel as the center point of the story.
+[00:24:56.480] David Carr: So I think both of these stories are constantly interacting with these, the literatures of these bigger empires that surrounded the scribes.
+[00:25:05.960] David Carr: And as I say in one of, one of my books, Writing on the Tablet of the Heart, you know, this is scribes, ancient scholars of the time that those that literate minority, they learned to, to write on older literature.
+[00:25:26.490] David Carr: And at least at some point we can't reconstruct exactly how or why it appears that that older literature that they were, they were reading and actually probably memorizing were these stories of Gilgamesh or, or Atrahasis is another one that comes up.
+[00:25:46.020] David Carr: We might talk about that a little later.
+[00:25:48.780] David Carr: That were really important parts of the curriculum of the ancient Near East.
+[00:25:54.140] David Carr: And so if you were going to be a scholar, a literate person, you knew them at least at certain periods in history.
+[00:26:00.860] Dan McClellan: Yeah, that was the, that was the canon, the literary canon at the time, before the canon, as, as we know it now.
+[00:26:08.590] David Carr: Exactly.
+[00:26:10.590] Dan McClellan: So I think the Garden of Eden story is fascinating.
+[00:26:15.830] Dan McClellan: I also think it's fascinating to consider how it's trying to be.
+[00:26:19.870] Dan McClellan: Well, the priestly authors to some degree seem to be trying to supplant it where God says it's not good that we have this situation and let's try this, let's try this, this isn't working.
+[00:26:32.110] Dan McClellan: And then the priestly authors say no, God says it and then immediately recognizes, yes, this is good.
+[00:26:40.170] Dan McClellan: So it seems to be saying no, not that way, it's our way.
+[00:26:46.730] Dan McClellan: Now, a question I get frequently that I've talked about on social media a lot is the relationship of Genesis 2 and 3 to Genesis 4.
+[00:26:56.250] Dan McClellan: Because once we transition, we've got Adam and Eve in the garden and then we transition to children of Adam and Eve.
+[00:27:05.530] Dan McClellan: And it seems like the, the narrative in Genesis 4 is presupposing a fully populated Earth where Cain is.
+[00:27:17.530] Dan McClellan: Is like, hey, people are going to notice this and I'm gonna get in trouble and I'm gonna.
+[00:27:22.850] Dan McClellan: So I'm gonna go over here to this city that has a name already.
+[00:27:25.330] Dan McClellan: I'm gonna find a wife.
+[00:27:28.250] Dan McClellan: I've.
+[00:27:29.130] Dan McClellan: My perspective, My understanding is that Genesis 4 was probably written or initially circulated independently of Genesis 2 and 3.
+[00:27:38.110] Dan McClellan: I don't know if people have strong feelings about which came before the other, but what can you tell us about what you think about the relationship of.
+[00:27:46.590] Dan McClellan: Of these two parts of ostensibly the same story?
+[00:27:50.910] David Carr: Yes, I'm totally with you, Dan, in terms of thinking that the story of Cain and Abel was the earlier one.
+[00:28:00.120] David Carr: And it doesn't presuppose a primeval world where they're the very first people because, you know, at the very least, Cain can go off and get a wife.
+[00:28:09.240] David Carr: And it's not clear where that came from.
+[00:28:12.680] David Carr: So there are all kinds of interesting parallels between the Cain Abel story and the Garden of Eden story.
+[00:28:19.320] David Carr: I think I have almost two pages of the parallels listed that people have noticed over time.
+[00:28:25.590] Dan Beecher: What kinds of parallels are those?
+[00:28:27.910] David Carr: Well, they kind of go through a very similar sequence.
+[00:28:31.830] David Carr: I should get the book out.
+[00:28:33.150] David Carr: But you start out with a problem situation.
+[00:28:39.190] David Carr: In the case of the Garden of Eden story, it's this forbidden tree.
+[00:28:42.550] David Carr: In the case of the Cain Abel story, it's Cain getting really pissed off because God didn't pay attention to him and his offering and only focused on his brother's offering.
+[00:28:52.810] David Carr: And that's never explained in the story.
+[00:28:54.490] David Carr: It's just Cain's really mad.
+[00:28:57.130] Dan Beecher: Right.
+[00:28:57.490] David Carr: And God basically confronts him and says, you know, you've got a choice here.
+[00:29:02.850] David Carr: I'm.
+[00:29:03.170] David Carr: This is paraphrasing wildly, but.
+[00:29:06.730] David Carr: And.
+[00:29:07.290] David Carr: And you need to, like, master sin.
+[00:29:09.610] David Carr: And then the very next thing he does is take his brother out to the field and kill him.
+[00:29:14.890] David Carr: The corresponding thing in the Garden of Eden story is they eat of the fruit.
+[00:29:19.030] David Carr: And then both stories go into a dialogue with God.
+[00:29:21.990] David Carr: An interrogation that goes back and forth.
+[00:29:26.230] David Carr: Yeah.
+[00:29:26.630] David Carr: And then there's an aftermath you have.
+[00:29:29.150] Dan McClellan: The same reference to.
+[00:29:31.670] Dan McClellan: Because part of Genesis 3 is your desire will be for your husband, which could be a sexual desire, could be a desire to dominate.
+[00:29:44.990] Dan McClellan: But.
+[00:29:45.630] Dan McClellan: But he will rule over you.
+[00:29:47.030] Dan McClellan: Is.
+[00:29:47.310] Dan McClellan: Is also parallel, isn't it, between Genesis 3 and Genesis 4 with sin lying at the door?
+[00:29:52.590] David Carr: Yeah.
+[00:29:52.950] David Carr: Sin is lying at the door.
+[00:29:54.230] David Carr: Its desire is.
+[00:29:55.230] David Carr: Is for you.
+[00:29:56.670] David Carr: You must rule over it.
+[00:29:58.510] David Carr: Which is.
+[00:29:59.150] David Carr: This is an actual verbal parallel.
+[00:30:01.270] David Carr: There's no way to imagine that these two texts were not written in relation to each other.
+[00:30:06.670] David Carr: And then the question becomes so sort of which came first or, or how are they related?
+[00:30:13.470] David Carr: Many scholars maybe because the Garden of Eden story is so famous and so central and that sort of thing presuppose the Garden of Eden story was first and those things that seem to cite it in the next chapter in Genesis 4 were a later imitation of the Garden of Eden story.
+[00:30:30.830] David Carr: I'm more tempted to think the reverse for various reasons.
+[00:30:34.270] David Carr: That first you had the Cain Abel story that is really a kind of an implicit story that's providing some background to a neighboring people of the authors, the Kenites, and that then the person who wrote the larger non-Priestly primeval history, this pre-exilic primeval history, sort of took that Cain Abel story as a model for what they did in the Garden of Eden story and they sort of extended it backward.
+[00:31:03.680] David Carr: That's my, that's what I think makes more sense.
+[00:31:06.240] Dan Beecher: Yeah, I, I've.
+[00:31:07.760] Dan Beecher: One of the things that I found really interesting, I was saying this to Dan earlier, before you, before we had you with us on the call, is that I liked that the subtitle of your book, The Formation of Genesis 1-11, is Biblical and Other Precursors.
+[00:31:24.240] Dan Beecher: And I said to Dan, wait, the Bible is the precursor to the Bible?
+[00:31:28.040] Dan Beecher: And he was like, yeah, it was.
+[00:31:29.840] Dan Beecher: And that's kind of what we're talking about is like the Bible continually precursing itself.
+[00:31:35.400] David Carr: Yes, exactly.
+[00:31:36.800] David Carr: That the Bible, when you get inside it more, turns out to be this complex, sometimes conflictual dialogue between different perspectives that are very opposed to each other, which for me kind of becomes an interesting model.
+[00:31:53.880] David Carr: Many people when they read the Bible just presuppose, oh, I'm supposed to just agree with everything in it and just, you know, organize my whole life around it.
+[00:32:03.340] David Carr: But the Bible itself models a process of argument and wrestling and that sort of thing.
+[00:32:09.300] David Carr: That's what, that's how this text got put together.
+[00:32:12.300] Dan Beecher: Do you think that the people who
+[00:32:14.700] Dan Beecher: Originally read these texts, the people, you know, the people for whom these texts were written at, you know, the contemporaneous to the time of the writing.
+[00:32:24.130] Dan Beecher: Do you think that they understood them in that way as being explorations of ideas as opposed to literal truths?
+[00:32:33.410] David Carr: Well, I think they had a different idea of literal truth than we do.
+[00:32:36.770] David Carr: The way they would write history would not be the way most of us would try to write a good quality history now.
+[00:32:42.450] David Carr: They were more comfortable say, say, reconstructing what they thought Abraham must have said because of what they believe.
+[00:32:51.300] David Carr: And they, they would think, okay, then that's what he said is what I believe would be what he would say.
+[00:32:56.460] David Carr: And, and that's what you do.
+[00:32:57.940] David Carr: We wouldn't do that now.
+[00:33:00.100] David Carr: But so, but I think, for example, back to the example we were talking about before of the priestly creation story being written to contradict the Garden of Eden story and replace it.
+[00:33:13.540] David Carr: I think the people who wrote that priestly creation story believed that what they were writing was correct and that the Garden of Eden story was incorrect.
+[00:33:23.880] David Carr: I do think that's one reason why they wrote it the way they did and didn't just sort of add some things around the edges of the Garden of Eden story and leave it at that.
+[00:33:33.240] David Carr: They really felt like they believed in it.
+[00:33:36.440] David Carr: And in a sense, I think, yes, they both believed that what they were writing had happened, but they were as equally committed to what it meant about God, what it meant about the Sabbath, because that's the crowning aspect of the seven day creation account and that sort of thing.
+[00:33:56.760] David Carr: So they, they believed in it.
+[00:33:58.080] David Carr: But then, you know, the texts travel over time and, and it turns out that both of these texts persist as important that the priest—the, the priestly account doesn't succeed in replacing the non-priestly material.
+[00:34:13.930] David Carr: And so, you know, 100, 150 years later, communities say we're not going to let either one of these go.
+[00:34:21.930] David Carr: And so they just put them together.
+[00:34:24.490] Dan Beecher: Yeah, yeah.
+[00:34:25.930] Dan Beecher: It's funny, I, when I was reading.
+[00:34:27.730] David Carr: Through.
+[00:34:30.090] Dan Beecher: This part of Genesis and I read, you know, I read the account of the Flood and then I got to the Tower of Babel and I went, oh yeah, because if everyone's descended from the same family, we have a language problem.
+[00:34:44.109] Dan Beecher: How do we explain why there are so many languages?
+[00:34:45.949] Dan Beecher: And suddenly there's a reason why we need to explain why there's all of these languages.
+[00:34:50.509] Dan Beecher: And, and so it made sudden sense to me.
+[00:34:53.989] Dan Beecher: Like there's a certain sense that can be found in just going like, oh wait, somebody, some smart-ass just was like, okay, well if we all descended from Noah, why, why are those guys speaking a different language and those guys a different language or something like that.
+[00:35:07.669] Dan Beecher: different language or something like that. It just seems like a lot of these, you know, there are simple, there are questions that get answered by the next thing or whatever.
+[00:35:17.880] David Carr: Yeah, that's exactly it.
+[00:35:19.240] David Carr: And really back to what, where we started this conversation about what is a primeval history.
+[00:35:25.480] David Carr: A primeval history is a story about how these aspects of the audience's reality came to be.
+[00:35:33.560] David Carr: It's just, it's all of that.
+[00:35:35.930] David Carr: And this actually kind of relates to something I think many people haven't realized enough reading these chapters, which is they sometimes will talk about a creation story, fair enough, in a way.
+[00:35:48.370] David Carr: And then they'll distinguish a creation story like the Garden of Eden or the Genesis 1 seven-day account, which we've been talking about so far from the stories that come after, as if there's somehow different stories.
+[00:36:00.460] David Carr: But for the ancients, the social reality that they lived in was as much a part of their world as the natural, what we call our like natural scientific reality.
+[00:36:11.580] David Carr: They didn't separate a sort of natural world from a social world.
+[00:36:15.020] David Carr: So the whole primeval history, all the way up to the Tower of Babel story that you were just talking about, Dan, is in a sense a creation story.
+[00:36:24.700] David Carr: It's all an origin story about the world they live in, including multiple languages, including, you know, farming and childbirth and Sabbath and, and wine and sex and all this sort of thing is.
+[00:36:44.570] David Carr: It's all bound up together and that's all part of this origin story, which is Genesis 1 to 11.
+[00:36:51.650] Dan McClellan: I want to move on to what I think is one of the, the most fun three passages of, of Scripture in, in the Hebrew Bible, namely the, the Bnei Elohim story in, in Genesis 6.
+[00:37:05.020] Dan McClellan: But before I, I move on to that, I wanted to ask you real quick, do you think there's anything to the theory that there was a liturgical function for these creation accounts, that they were part of New Year's festivals, that they were part of some kind of liturgy in, in a temple or anything like that?
+[00:37:22.700] David Carr: So I think that there's a good case to be made for a liturgical function for some of the non biblical precursor texts from Mesopotamia.
+[00:37:33.020] David Carr: For example, the Enuma Elish has certain connections into the Akitu New Year's festival in Babylon.
+[00:37:40.460] David Carr: And that's part of why the authors of this text, who were dealing with the trauma of Babylonian destruction of their city and temple and exile, wanted to write their counter to this important text in Babylonia.
+[00:37:55.370] David Carr: But I don't think that's the primary context for these texts in Genesis 1-11, as you probably know, Dan, I really do think for most of the texts in the Bible, whatever some of their genres are, that imitate some other things, they were mainly meant for, for use in ancient education in schools to be memorized so that you could sort of educate the next generation in that literate minority.
+[00:38:24.010] David Carr: And so that's what I think these texts are doing.
+[00:38:27.130] Dan McClellan: Okay, which now brings us.
+[00:38:30.490] Dan McClellan: We're going to talk a little bit.
+[00:38:32.970] Dan McClellan: I think we can summarize some of the toledot, the genealogical material a little bit later.
+[00:38:38.490] Dan McClellan: But when we get to Genesis 6, we, we have the, the sons of God who notice that they, they really like the, the cut of the jib of the, the daughters of humanity and come down and take wives and have children with them.
+[00:38:55.520] Dan McClellan: And the text says there were Nephilim on the earth in that day and after.
+[00:38:59.760] Dan McClellan: And this seems to me to be a story that seems inserted at the beginning of, of the story of the Flood to give a more plausible rationale for the destruction of, of all the earth.
+[00:39:13.090] Dan McClellan: Because once we actually get to God making the decision to destroy the earth, all it says is he looked around, there was violence everywhere, and so he, he decides to destroy the earth.
+[00:39:25.850] Dan McClellan: What can you tell us about precursors to, to Genesis 6, the role of this story in the, the beginning of the Flood narrative?
+[00:39:36.380] David Carr: Yeah, well, this is one of my favorite texts too, actually.
+[00:39:40.780] David Carr: It's such an interesting.
+[00:39:41.940] David Carr: I mean, it's just these little corners of the Bible where you kind of go, oh man, I can't believe this is here.
+[00:39:47.180] David Carr: Why didn't anybody tell me about this?
+[00:39:49.980] David Carr: You know, I guess now that it's juxtaposed with the Flood where, Which as you say, starts with God seeing that the evil of humanity is just thorough going and that sort of thing and being sorry God made them.
+[00:40:02.660] David Carr: Since this story comes right before that, it's been tempting for many interpreters to say, okay, well, there must be something wrong with these divine-human marriages.
+[00:40:12.020] David Carr: This, the puzzle is that humans do absolutely nothing wrong in the story, right?
+[00:40:17.940] Dan McClellan: Yeah.
+[00:40:18.580] David Carr: The only people, only beings that do anything are the sons of God who take the humans for wives and then have giant children of them.
+[00:40:29.860] Dan McClellan: And so, and the agency of these human women wouldn't matter anyway.
+[00:40:33.700] Dan McClellan: There.
+[00:40:34.180] Dan McClellan: This is not a.
+[00:40:36.260] Dan McClellan: Their will when it comes to marriage is pretty relevant in the text.
+[00:40:40.580] Dan McClellan: They are taken.
+[00:40:41.460] David Carr: Not in this text, they are taken there.
+[00:40:43.660] David Carr: There's evidence that women had agency within marriage in ancient Israel, but that's certainly not highlighted here.
+[00:40:50.180] David Carr: It's just the sons of God doing it.
+[00:40:52.420] David Carr: And, and God.
+[00:40:54.670] David Carr: This is another place where I, I think we can overread it.
+[00:40:57.870] David Carr: God is not, does not ever say they did something wrong.
+[00:41:02.990] David Carr: God just says, my spirit can't abide in these humans, and I will set a lifetime limit of 120 years.
+[00:41:12.830] David Carr: And then it goes on to say, and then giants were in the land at the time.
+[00:41:16.950] David Carr: And, and this is the time of the warriors of old who were the men of the name.
+[00:41:22.470] David Carr: And I mean, one thing I think we just have to remember Dan here is that 120-year lifespan within the world of the ancient Levant was huge.
+[00:41:36.709] David Carr: Like they could barely conceptualize anyone living that long.
+[00:41:40.630] David Carr: That was like the absolute outside limit.
+[00:41:43.190] David Carr: Interestingly, we find the exact same lifetime limit mentioned in Mesopotamian wisdom texts that are preserved in Syria that are talking about the sort of absolute limit of human life.
+[00:41:57.350] David Carr: So this is something people are talking about.
+[00:41:58.990] David Carr: It's another place where Genesis is based on some precursors of some kind.
+[00:42:02.630] David Carr: Maybe not that particular text, but that kind of idea is in circulation.
+[00:42:07.030] David Carr: But where I'm going with this is, you know, in the ancient world we see myths around us in, in Hittite literature, in ancient Greek literature, that when the gods mate with humans, the resulting offspring have the characteristics of both.
+[00:42:25.710] David Carr: And that can mean usually that they're big, because gods are big.
+[00:42:30.110] David Carr: I mean, I've got to remember that gods are really huge in the ancient world.
+[00:42:35.310] David Carr: They're also beautiful.
+[00:42:36.390] David Carr: Gods are beautiful.
+[00:42:37.950] David Carr: They're, if there's a male, they're strong, they're incredibly strong, superhumanly strong.
+[00:42:44.830] David Carr: And, and the other thing that humans can get from being the mixed divine-human parentage is they can become immortal.
+[00:42:53.390] David Carr: And so what seems to be an issue in this story is very similar to the Garden of Eden story where God will not abide humans having divine immortality.
+[00:43:03.950] David Carr: And this, this act by the sons of God threatens that.
+[00:43:08.700] David Carr: And so God doesn't say, oh bad you, you know, you did this, or whatever.
+[00:43:13.860] David Carr: God just says, okay, well we're going to have to just put a circuit breaker on the lifespan of the offspring.
+[00:43:20.540] David Carr: And so they're going to be big and they're going to be strong.
+[00:43:22.780] David Carr: And that's part of why we hear about giants and about warriors of old.
+[00:43:26.700] David Carr: That's they're the divine-human offspring, but they're not going to be immortal.
+[00:43:32.780] David Carr: And, but they'll have a.
+[00:43:34.460] David Carr: But they're also, this is a subtle detail is they're going to be men of the name, which is, I don't know how it's translated in many common translations, but the idea here is one of the, the ancients were well aware we all die.
+[00:43:49.640] David Carr: And the question becomes, well, okay, so what comes after.
+[00:43:52.640] David Carr: There was no concept of afterlife in this culture.
+[00:43:56.360] David Carr: So you, to some extent, it would be your kids.
+[00:43:59.160] David Carr: You, you'd have kids and that would be your immortality.
+[00:44:02.040] David Carr: And the Garden of Eden actually talks a lot about that at the end.
+[00:44:06.250] David Carr: That, so that's one form of living on, even though you will certainly die.
+[00:44:10.930] David Carr: But the, another main way that you had immortality in the ancient world was fame.
+[00:44:16.370] David Carr: And so this text says, I'm setting 120 year limit.
+[00:44:21.890] David Carr: It's great big limit actually, for divine-human offspring.
+[00:44:26.530] David Carr: But they're gonna, they're gonna be famous.
+[00:44:28.330] David Carr: They're gonna be the giants that, you know from other legends.
+[00:44:31.840] David Carr: We hear about them in the book of Joshua and so on.
+[00:44:34.920] David Carr: They were in the land of Canaan when the Israelites come, or the warriors of old.
+[00:44:40.400] David Carr: Who are the men of the name, like the giant famous warriors of David.
+[00:44:44.200] David Carr: These are people who are part of the broader setting of the audience.
+[00:44:46.960] David Carr: And they can.
+[00:44:47.520] David Carr: Oh yeah, yeah, we know about those.
+[00:44:50.160] David Carr: Those guys, you know, and they're.
+[00:44:52.080] David Carr: They're a testimony to sort of the truth of the story.
+[00:44:55.200] David Carr: So anyway, where I'm going with this is it's a take on this story that really doesn't involve any wrongdoing, really.
+[00:45:01.230] David Carr: It's just kind of humans kind of struggling against this border of immortality.
+[00:45:08.110] David Carr: But, but, but then you have this real disjunction that happens where all of a sudden after this, where humans do nothing wrong, if anything, the women are raped, so God sees that the evil of humans is just complete and total and they kind of go, what?
+[00:45:26.360] David Carr: Where did this occur?
+[00:45:27.560] David Carr: And I don't find it in this Genesis 6 story.
+[00:45:31.480] David Carr: Maybe you'd find it in the Cain and Abel story, though.
+[00:45:34.200] David Carr: It's just one guy and then his son.
+[00:45:37.120] David Carr: Lamech.
+[00:45:38.760] David Carr: The place where many people have tried to find that evilness that's incorrigible evilness is in the Garden of Eden story.
+[00:45:45.720] David Carr: And I think that's a lot of why people see original sin and that sort of thing in the Garden of Eden story, where it's just a story of two kids growing up in many ways.
+[00:45:55.940] David Carr: So where I'm going with this is really to say I really think what we're looking at right there between this really interesting ancient story about the origins of giants and famous warriors and the flood narrative, which is talking about the evil of humanity, is this is kind of a seam between an earlier layer of that origin story, which had no flood, and a later layer that was written at a very different time with very different precursors that has a different vision of what humanity's about and what God's about too.
+[00:46:33.490] David Carr: You have a very different sort of flavor to the flood story that starts right then.
+[00:46:39.130] Dan McClellan: And this is something that you bring up in your book.
+[00:46:41.730] Dan McClellan: But when we get into Noah's life, it seems like Noah's claim to fame is viticulture and we have these references to the people who are around and it's like, oh, they're the ones who dwell in tents and they're the ones who make these.
+[00:46:55.050] Dan McClellan: These instruments and tools and everything.
+[00:46:57.530] Dan McClellan: It's like, well, it doesn't matter what they did if they're about to all be destroyed in the flood.
+[00:47:03.930] David Carr: It.
+[00:47:04.210] Dan McClellan: The way the story is told, it doesn't seem to be anticipating the destruction of all humanity.
+[00:47:09.570] Dan McClellan: And then all of a sudden we get the flood.
+[00:47:12.490] Dan McClellan: So in your book, you talk about how it.
+[00:47:14.610] Dan McClellan: It seems that the flood is a later insertion into this narrative.
+[00:47:20.640] Dan McClellan: Can you expand a little bit on the flood narrative, how it's coming in and interrupting things?
+[00:47:26.640] David Carr: Sure, I can.
+[00:47:27.520] David Carr: I mean, you touched on the first major indicator, which is just that chapter four of Genesis, when it's talking about the descendants of Cain, they build cities, they found music and pastoring herds and building tents, and there's this whole building of culture and this sort of thing.
+[00:47:46.040] David Carr: And then you have this story we were just talking about in Genesis 6, which, where there are a bunch of giants and warriors, which the audience is supposed to know about and think this story would explain.
+[00:47:56.600] David Carr: And.
+[00:47:57.400] David Carr: And then suddenly a flood comes and wipes every.
+[00:48:00.600] Everybody out.
+[00:48:02.280] David Carr: And so it's unclear kind of how the other story, how these stories work, if that's actually the case.
+[00:48:08.770] David Carr: Now there is an ancient Mesopotamian story of the flood, Atrahasis, and in an adoption of that story into the Gilgamesh epic that we were talking about earlier, that solved this problem by actually having all the artisans and stuff come on the ark with the flood hero.
+[00:48:26.450] David Carr: So it's like, it's a big party, everybody's on the boat together.
+[00:48:30.290] David Carr: And so you can explain it that way, but the, the way the Genesis flood story goes, there's only Noah, his sons and their wives on the ark.
+[00:48:39.820] David Carr: That's it.
+[00:48:40.940] David Carr: So there's a real kind of narrative problem there.
+[00:48:44.780] David Carr: Some ancient Jewish rabbinic interpreters solved this problem partly by imagining that one of the major giants that was born of the union of the gods and women held onto the outside of the ark during the flood.
+[00:49:01.300] David Carr: And that's how he made it long enough.
+[00:49:04.340] Dan Beecher: I thought you were going to say that his nose stayed just above water level.
+[00:49:08.100] David Carr: That's so tall that I like that.
+[00:49:10.940] David Carr: Maybe there's a.
+[00:49:11.940] David Carr: That's a rabbinic tradition I haven't uncovered yet.
+[00:49:14.660] Dan Beecher: I think it's the.
+[00:49:15.380] Dan Beecher: There's the snorkel theory of.
+[00:49:18.660] David Carr: But anyway, people, early readers, saw that there was this issue and they had.
+[00:49:22.900] David Carr: They had to try to explain it.
+[00:49:24.820] David Carr: I think the.
+[00:49:25.500] David Carr: Another thing that kind of is striking.
+[00:49:27.970] David Carr: I think you mentioned, Dan, that Noah's main claim to fame seems to be that he founded viticulture, the making of wine, which in ancient Israel was like, this is a big deal.
+[00:49:38.290] David Carr: People in the ancient world drank fermented beverages.
+[00:49:41.490] David Carr: It was one way to have safe drinking water because the alcohol would automatically take care of bacteria.
+[00:49:48.250] David Carr: And of course, they'd also get a little buzzed from it, or more than a little buzzed in Noah's case.
+[00:49:53.100] David Carr: So anyway, so Noah's name is explained in terms of his founding of viticulture, but we don't get to hear about him doing that until after the flood story, where he's kind of reintroduced to us as he's a man of the arable ground.
+[00:50:10.220] David Carr: Ish ha-Adamah.
+[00:50:12.380] David Carr: And then we hear about, okay, and what did he do with the ground?
+[00:50:15.100] David Carr: He planted vines and then he got drunk on the, on the fruit from it.
+[00:50:19.190] David Carr: I mean, what did he know?
+[00:50:20.710] David Carr: He's the first human to do it.
+[00:50:22.510] David Carr: So he's just like drinks a whole lot of it and he's.
+[00:50:24.670] David Carr: He's flat out drunk and gets naked.
+[00:50:26.590] David Carr: And there's a whole story that comes from that.
+[00:50:28.870] David Carr: So that's one Noah.
+[00:50:31.510] David Carr: But then there's this flood hero, Noah, that's like this.
+[00:50:34.950] David Carr: It has a very different character to him.
+[00:50:38.550] David Carr: And I.
+[00:50:39.430] David Carr: So I think I speak of sort of the two Noahs.
+[00:50:42.470] David Carr: The Noah, the original Noah who founds viticulture and has this drama with his sons, and the flood hero, Noah, which is what some later authors make of that figure as they make him into the flood hero, using the Mesopotamian stories as their model.
+[00:51:00.720] Dan McClellan: And now when, when we get to the flood, we have you, you talked about two different strands, the priestly and.
+[00:51:07.040] Dan McClellan: And the, the non-P or J strand.
+[00:51:10.410] Dan McClellan: And we see two beginnings, two middles and two ends to the flood story kind of woven together, don't we?
+[00:51:18.250] David Carr: We do.
+[00:51:18.810] David Carr: I mean, this is, this is actually relatively rare throughout the Torah to find two stories parallel to each other that are so tightly interwoven, like episode by episode.
+[00:51:30.930] David Carr: In most cases, it's more like the two creation stories we were just talking about, where you have a complete priestly text and then a complete non-priestly text, and they're not mixed together.
+[00:51:43.270] David Carr: But, you know, you can't really pull that off with a flood story.
+[00:51:46.390] David Carr: If you told one flood story and then God at the end said, I'm never sending another flood, and then you told the other flood story, it would begin to look like the divine abuse cycle.
+[00:51:59.070] David Carr: I think they get away with it.
+[00:52:01.070] Dan McClellan: Once, but we already.
+[00:52:02.430] Dan McClellan: We already took care of that with the creation.
+[00:52:04.710] David Carr: Yeah, so they.
+[00:52:05.310] David Carr: So it.
+[00:52:05.870] David Carr: But it's remarkable that they took.
+[00:52:07.350] David Carr: They, they preserved so much of these stories.
+[00:52:10.470] David Carr: Now, many scholars have pointed out in the last decade or two, there are, there are some gaps at points where it seems like, for example, that the J or non-P story doesn't have an account of Noah receiving instructions to build the ark and then building it.
+[00:52:26.550] David Carr: That's only in the priestly strand.
+[00:52:28.710] David Carr: But again, I just think for the authors who were combining these, they weren't idiots.
+[00:52:34.320] David Carr: They wanted to produce a reliable, readable narrative.
+[00:52:37.720] David Carr: So you can't have them building two arks according to two different designs and that sort of thing.
+[00:52:42.800] David Carr: So there were, there were places where they had to edit some.
+[00:52:46.480] David Carr: But still, even with all that, when you take apart all the doublets that occur across these chapters, you end up with remarkably continuous, not completely continuous, but remarkably continuous stories that episode by episode, it adds up to about 10 different parallels.
+[00:53:06.180] David Carr: They.
+[00:53:06.540] David Carr: They all add up to the Flood story and they even have completely different chronologies that don't match up with each other.
+[00:53:14.100] Dan McClellan: Yeah, I think that's.
+[00:53:16.020] Dan McClellan: That's one of the exciting places where we can kind of see the seams of these things being worked together.
+[00:53:20.420] Dan McClellan: The.
+[00:53:21.060] Dan McClellan: The sale of Joseph into Egypt is another one that I've thought is.
+[00:53:24.580] Dan McClellan: Is fascinating because you can pull them apart and, and get two full narratives.
+[00:53:33.000] Dan McClellan: I've talked before about Noah and his sons, and you talk a bit in the book about how it seems that Ham is a late addition here.
+[00:53:40.760] Dan McClellan: There are some textual things going on here, but one of the popular theories is that of what exactly went wrong.
+[00:53:48.840] Dan McClellan: And we don't have to get too deep into this, but do you favor a sexual sin having been committed, or is this really as simple as seeing the father naked and basically spreading his shame rather than protecting his.
+[00:54:06.310] Dan McClellan: His honor?
+[00:54:07.870] Dan McClellan: What do you think the nature of.
+[00:54:09.270] Dan McClellan: Of the.
+[00:54:09.830] Dan McClellan: The indiscretion there is?
+[00:54:11.950] David Carr: I think in terms of the original text, it's pretty clear that it's the later.
+[00:54:17.390] David Carr: I mean, the latter option.
+[00:54:18.470] David Carr: You mentioned, Dan, that there was a strong belief in the ancient world that I think in our contemporary world we're remarkably out of touch with.
+[00:54:27.450] David Carr: But it's the idea that children owed their parents loyalty and honor.
+[00:54:36.170] David Carr: It's the sort of obey your parents kind of thing.
+[00:54:38.610] David Carr: But it was very deeply ingrained, a basic idea that that's.
+[00:54:42.570] David Carr: You really owed the older generation respect.
+[00:54:48.250] David Carr: And.
+[00:54:49.290] David Carr: And there's even a text in Ugarit, which is a city north of ancient Judah and Israel that talks about the duty of the child to take care of their father when he's drunk.
+[00:55:03.980] David Carr: That when you're, when you're, if you're, if your parent gets vulnerable, you know, because they've had a few too many, your job as the child is to preserve their honor and take care of them.
+[00:55:16.860] David Carr: And it is that which, actually, the original son in the.
+[00:55:22.930] David Carr: That story of Noah and his son is probably Canaan.
+[00:55:25.810] David Carr: That's what Canaan fails to do is he.
+[00:55:29.570] David Carr: He both sees his father's nakedness and then perhaps most importantly, he goes out and tells his brothers about it.
+[00:55:39.410] David Carr: So he.
+[00:55:40.130] David Carr: He just radically compromises that idea of filial duty.
+[00:55:45.410] David Carr: And so, you know, a hungover Noah wakes up, realizes what his youngest son has done to him, and curses Canaan to eternal slavery while blessing Shem, which in Hebrew means name.
+[00:56:04.620] David Carr: So we're back to the name theme we were talking about earlier.
+[00:56:08.220] David Carr: Blesses Shem and his brother Yaphet.
+[00:56:13.030] David Carr: So I, for me, that's what I think the original story was about.
+[00:56:16.070] David Carr: But, but there, there's some texts later in Leviticus that talk about the sort of sexual promiscuity of Canaanites and that kind of thing that have verbal resonances with the story we're talking about.
+[00:56:31.030] David Carr: And I think over time in, in tradition, early Jewish tradition and, and later those, the kind of sexual connotations of that got kind of merged into this story.
+[00:56:43.110] David Carr: And of course, the nakedness, too, played a role in that.
+[00:56:46.390] David Carr: But the story says nothing whatsoever of anything that the son has done to Noah other than see his nakedness and talk with his brothers about it.
+[00:56:57.590] Dan McClellan: And we're going to get the name theme coming up again at the end of the primeval history when we have folks who are building this tower.
+[00:57:07.180] Dan McClellan: Yeah, the Tower of Babel in order to.
+[00:57:09.580] Dan McClellan: It says it's going to touch the heavens, but the main thing is they're going to make a name for themselves.
+[00:57:15.020] Dan McClellan: And again, we have God looking down, stroking his beard, saying, not too happy about this.
+[00:57:21.420] Dan McClellan: Let's go down and frustrate this.
+[00:57:24.620] Dan McClellan: Now, in your book, you talk about the.
+[00:57:28.940] Dan McClellan: The Tower of Etemenanki, which was constructed much earlier in near Babylon, was not totally destroyed, but fell into disrepair and took decades, like 80 some years for a project to finally kind of repair things.
+[00:57:49.530] Dan McClellan: And so it seems to me like maybe this is kind of these folks thumbing their nose at the Assyrians for leaving this unfinished tower, not managing to get it finished for a while.
+[00:58:04.790] Dan McClellan: Can you talk a little bit about the precursor for the story of the Tower of Babel, is this a reflection of the Tower of Etemenanki?
+[00:58:14.470] David Carr: I do think it is, yes.
+[00:58:16.190] David Carr: I think that seems clear.
+[00:58:18.470] David Carr: And then the question becomes sort of, how is it interacting with that tower and at what point?
+[00:58:23.990] David Carr: We all know this tower is the Tower of Babylon, I think, but it was, and it was located in Babylon.
+[00:58:30.710] David Carr: But there were significant periods of time when Babylon was actually ruled by an empire located a bit north of Babylon in what we now know as northern Iraq, but was ancient Assyria.
+[00:58:43.730] David Carr: And the Assyrian empires were incredibly powerful.
+[00:58:46.970] David Carr: They actually totally destroyed the Babylonian sort of their southern neighbor a couple of times.
+[00:58:54.850] David Carr: In the wake of one of those destructions, the Assyrians got involved in what was really the first big renovation project.
+[00:59:04.900] David Carr: To go back to what you were talking about, Dan, where they actually, for the first time cover the tower with ceramic outside things that are.
+[00:59:14.180] David Carr: That are like they're fired brick and stuff.
+[00:59:19.700] David Carr: And it's striking to me that the aspects of the story, it's very detailed actually in its description of the construction correspond a lot more in some ways to this Assyrian restoration of the Babylonian tower than they do to, like, the state of the tower during the Babylonian exile.
+[00:59:41.110] David Carr: It seems to be a reflection. And also one other thing is, you know, later on when the Babylonians destroy Jerusalem, burn its temple, kill most of its people, deport most of the rest of them into largely salinated abandoned parts of Babylon to finish their lives far from their homeland.
+[01:00:02.360] David Carr: You know, in the wake of that, most of the people who went through that really had a pretty low view of the Babylonians, you know, and we have various oracles in the books of Jeremiah and Isaiah and elsewhere that really proclaim absolute destruction of the Babylonians.
+[01:00:17.240] David Carr: Or Psalm 137 says, Happy are those who bash the.
+[01:00:21.420] David Carr: The babies of Babylon's heads against a rock.
+[01:00:24.580] David Carr: That's.
+[01:00:24.900] David Carr: This is the attitude toward Babylon that comes in the wake of the exile.
+[01:00:28.860] David Carr: Whatever is going on in the Tower of Babel story, it's not.
+[01:00:32.540] David Carr: It's not that, it's.
+[01:00:33.740] David Carr: They're not.
+[01:00:34.700] David Carr: They.
+[01:00:35.980] David Carr: Humans come into conflict with God in a way without even knowing it, really.
+[01:00:39.860] David Carr: God just gets worried about their collective power, but it's not like they're bad or evil.
+[01:00:46.300] David Carr: And so I think back to your question about, like, what.
+[01:00:49.620] David Carr: How is it related to this tower?
+[01:00:51.220] David Carr: I think it's one of the most famous architectural wonders of the ancient world.
+[01:00:56.620] David Carr: And the authors of this text seem to know some pretty detailed stuff about it.
+[01:01:01.500] David Carr: And so they use it as a jumping off point for telling a story about the spread of humanity in the wake of the flood because you got to spread over the whole earth now.
+[01:01:11.820] David Carr: And how you got the linguistic diversity, different languages that we were talking earlier about.
+[01:01:17.180] David Carr: So that's their jumping off point, their knowledge of this amazing tower and that.
+[01:01:22.950] Dan McClellan: And that gives us the 70 nations of the earth.
+[01:01:25.270] Dan McClellan: And now the table is set to introduce our hero, Abraham.
+[01:01:32.310] Dan McClellan: It sounds like the, our main narrative arcs in the Primeval History are kind of presenting humanity is just trying to do their best, where the deity is kind of like a foil, is the antagonist in the story, that is making sure that they don't breach those boundaries between humanity and divinity.
+[01:01:56.320] Dan McClellan: And at the same time, though, we're also working a lot of etiologies, a lot of origin stories for the world as we know it.
+[01:02:03.240] Dan McClellan: Whether that is this unfinished tower that those losers over there were trying to build or why man, I really hate snakes or all the different aspects of human civilization as they understood it are, well, not all the different, but several of the different aspects are represented etiologically in these stories.
+[01:02:26.750] Dan McClellan: If you had to kind of sum up what the authors of, of the Primeval History are getting at, what would you say is kind of the point?
+[01:02:35.550] Dan McClellan: What would you say there?
+[01:02:36.550] Dan McClellan: They want their, their listenership to come away with.
+[01:02:42.190] Dan Beecher: If, if the Bible were a podcast, what would they.
+[01:02:46.970] David Carr: That's, you know, you really threw me a tough one there off the bat.
+[01:02:51.370] Dan Beecher: So give us our, give us the elevator pitch.
+[01:02:54.290] Dan Beecher: Give us the 25 words or less.
+[01:02:56.410] David Carr: Yeah, well, I would just say I was talking earlier about how the, these biblical texts were forged amidst trauma.
+[01:03:03.930] David Carr: And I actually think that was true.
+[01:03:06.970] David Carr: That was true definitely for the Priestly material.
+[01:03:09.610] David Carr: Almost all my colleagues, including my wonderful colleague Liane Feldman, would agree with me in defining the Priestly narrative and placing it more or less in that period, I think.
+[01:03:20.440] David Carr: And, but even the non-priestly strand that I was talking about when you had the flood, the flood is really talking about catastrophe and about God dealing with human evil and then somehow finding a way to cope with it, like saying, okay, I sent one flood, but I'm just, I realize they're evil, but I'm not going to do that ever again.
+[01:03:41.730] David Carr: And one of the things I, I don't know if we talked about this at the beginning of the podcast, but one of the books I did write for a broader audience had to do with trauma studies and the forging of the Bible amidst trauma.
+[01:03:54.410] David Carr: And so that's some of where I've been coming from in this talk.
+[01:03:57.090] Dan McClellan: But Holy Resilience.
+[01:03:58.930] David Carr: Exactly.
+[01:03:59.970] David Carr: And the, I do think that, you know, a lot of the big message that people are supposed to get out of both of these strands is that God can take whatever humanity can throw at God.
+[01:04:15.630] David Carr: That it was a struggle, not easy, there's some back and forth, but God has dealt with a lot and the world we now have is a result of God kind of having to come to terms with a humanity that doesn't fully live up to the ideal God originally envisioned.
+[01:04:35.130] David Carr: That's more than 25 words.
+[01:04:36.490] David Carr: But that's my, it's great.
+[01:04:38.370] Dan Beecher: One of the things that I want to talk to you about is to flip that on its head and talk about, talk about it from the opposite perspective of God sort of being a disappointment to humanity.
+[01:04:51.890] Dan Beecher: But we're going to, if we get to that, it will be in the patrons only segment because we have run out of time.
+[01:04:58.690] Dan Beecher: So if, friends, you would like to hear more conversation with David.
+[01:05:03.570] Dan Beecher: David, you're going to join us for our, our after party, which is, which is for our patrons only.
+[01:05:10.300] Dan Beecher: I believe you've agreed to this.
+[01:05:12.180] David Carr: I have.
+[01:05:13.140] Dan Beecher: If we haven't tortured you enough, we will, we will get to more torture there.
+[01:05:18.500] Dan Beecher: So if you'd like to hear that conversation, listeners, you can become a patron over on patreon.com/dataoverdogma and you know, you, you can join at whatever level you'd like to join at and, and, and hopefully if, and if you want to hear that conversation, you'll join at the $10 a month or over level or.
+[01:05:38.170] Dan Beecher: But all our other patrons also get an early and ad-free version of every show.
+[01:05:42.810] Dan Beecher: So that's a great incentive just to be a patron just at those levels.
+[01:05:47.489] Dan Beecher: If you have anything you'd like to reach out to us about, please feel free to do so.
+[01:05:52.170] Dan Beecher: Contact at dataoverdogmapod.com and David, thank you so much for joining us.
+[01:05:58.770] David Carr: We really appreciate, it was such a pleasure to talk with you both.
+[01:06:02.360] Dan McClellan: Thank you, David, and bye, everybody.

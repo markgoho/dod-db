@@ -51,16 +51,6 @@ export interface EpisodeWithAudio extends Episode {
   hasAudio: boolean;
 }
 
-// Tag category type
-export type TagCategory =
-  | 'character'
-  | 'person'
-  | 'place'
-  | 'people'
-  | 'literature'
-  | 'theology'
-  | 'scholarship';
-
 // Backward compatibility alias
 export type ParsedLine = TranscriptLine;
 

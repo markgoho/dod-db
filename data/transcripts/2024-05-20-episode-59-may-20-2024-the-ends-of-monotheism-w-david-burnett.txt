@@ -1,0 +1,736 @@
+[00:00:01.120] Dan McClellan: There's some ambiguity.
+[00:00:02.240] Dan McClellan: There is Paul saying, oh, yeah, these things that people call gods, but we know there's only one God.
+[00:00:09.200] Dan McClellan: Is Paul saying that or is Paul saying, yeah, there are these gods all over the place, but as far as we're concerned, only one God matters to us.
+[00:00:17.840] David Burnett: That is what he's saying.
+[00:00:23.040] Dan McClellan: Hey, everybody, I'm Dan McClellan.
+[00:00:24.840] Dan Beecher: And I'm Dan Beecher.
+[00:00:26.290] Dan McClellan: And you are listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation.
+[00:00:35.970] Dan McClellan: About the same.
+[00:00:36.770] Dan McClellan: How are things, Dan?
+[00:00:38.450] Dan Beecher: Things are going great.
+[00:00:40.050] Dan Beecher: I'm having a good time.
+[00:00:41.170] Dan Beecher: I did not get to travel this last weekend, however, and apparently you guys did.
+[00:00:47.810] Dan Beecher: And I'm saying you guys, because there's not just you here with us.
+[00:00:51.810] Dan Beecher: Why don't you tell the people who we got here?
+[00:00:55.860] Dan McClellan: So we got the people's champ.
+[00:00:57.540] Dan McClellan: My old friend David Burnett is joining us again.
+[00:01:01.620] Dan McClellan: Welcome to the show, David.
+[00:01:03.460] Dan McClellan: I think it's our first time repeat guest.
+[00:01:06.620] Dan McClellan: Is that.
+[00:01:07.020] David Burnett: Yeah.
+[00:01:07.620] Dan Beecher: A returning champion.
+[00:01:08.900] Dan McClellan: A returning.
+[00:01:09.780] Dan McClellan: Yes.
+[00:01:10.900] Dan McClellan: So welcome to the show.
+[00:01:11.940] Dan McClellan: Good to have you back.
+[00:01:12.820] Dan McClellan: Thank you for your time.
+[00:01:14.580] David Burnett: Thank you.
+[00:01:15.460] David Burnett: Thank you.
+[00:01:16.020] David Burnett: Good to be back.
+[00:01:17.060] Dan McClellan: Yeah.
+[00:01:17.700] Dan McClellan: And the reason.
+[00:01:19.580] David Burnett: Oh, I was just saying I'm glad to be the first returner.
+[00:01:22.620] Dan McClellan: Yeah.
+[00:01:23.260] Dan McClellan: And we're glad to have you back and hopefully there will be more returners in the future.
+[00:01:27.580] Dan McClellan: We are having you here because you and I just spent the first three days of the week hanging out together in lovely Providence, Rhode Island, at Brown University.
+[00:01:40.540] Dan McClellan: We were participating in a conference that we presented at, as well as organized.
+[00:01:48.190] David Burnett: Correct.
+[00:01:48.670] Dan McClellan: Yeah.
+[00:01:49.030] Dan McClellan: And the weather was surprisingly, according to everybody who lived there, the weather was uncharacteristically nice.
+[00:01:55.830] Dan McClellan: Which was.
+[00:01:56.910] David Burnett: Yeah, it was really nice.
+[00:01:58.750] David Burnett: Providence is beautiful.
+[00:02:00.070] Dan Beecher: Yeah, that was, that was divine providence is what that was.
+[00:02:05.870] Dan Beecher: That you guys, that you guys, you guys were given the green light from above.
+[00:02:09.550] Dan McClellan: Yeah.
+[00:02:10.270] Dan Beecher: To get to do this conference.
+[00:02:11.950] Dan McClellan: Well, I think the, that has to be where the.
+[00:02:14.430] Dan McClellan: They got their name from, right?
+[00:02:16.670] Dan McClellan: That Enlightenment era notion of.
+[00:02:19.210] Dan McClellan: Of Providence.
+[00:02:20.170] Dan Beecher: Yeah, something like that.
+[00:02:22.090] Dan McClellan: Now we've, I think we've mentioned the, the conference before.
+[00:02:26.210] Dan McClellan: In fact, I think, David, the last time you're here, we talked about this.
+[00:02:28.770] Dan McClellan: The conference is called the Meanings and Ends of Monotheism.
+[00:02:33.530] Dan McClellan: And we had said we were going to livestream it.
+[00:02:36.610] Dan McClellan: It turned out that that wasn't going to work for, for everybody.
+[00:02:40.010] Dan McClellan: But we did record it and it will be released publicly later.
+[00:02:44.810] Dan McClellan: But we, we wanted to have you on the show so we could just jam a little bit about the conference.
+[00:02:49.670] Dan Beecher: We're going to scoop the recording.
+[00:02:51.670] Dan Beecher: We're going to, we're going to, we're going to get out in front of it and, and tell the people some of the cool stuff that you guys were able to talk about and, and that, that your guests were able to talk about.
+[00:03:03.030] Dan Beecher: So I think that that's, I'm excited to hear about it.
+[00:03:06.510] Dan Beecher: I was, I was going to watch it streaming and then it turns out that that's, that wasn't an option for me.
+[00:03:12.550] David Burnett: Well, yeah, I mean in discussions, in planning the conference, you know, this has been a long time of planning ahead of time to work out the details.
+[00:03:22.660] David Burnett: It has been a long time of planning ahead of time to work out the details. And for a conference like this, it very much was a scholarly workshop, you know, style conference.
+[00:03:31.300] David Burnett: So what we wanted from the conference and the sort of aims and goals of the conference, I think we accomplished better doing it this way, which is, you know, this is something that scholars need to workshop these ideas and work together on and, and get good feedback on and discussion going and work out those ideas.
+[00:03:52.400] David Burnett: And then we take our papers back and there's going to be like a six month process before we get papers back in for them to like make any edits they need to and all of that.
+[00:04:04.960] David Burnett: And then we're going to share them with the actual conference members so that we can actually get feedback on each other's work.
+[00:04:12.650] David Burnett: And then this is going to become a published volume.
+[00:04:16.410] David Burnett: And so the having it a small, intimate scholarly conversation to work out those ideas and really test those ideas in a, in a highly saturated peer review environment, you know, is really important because if we say we believe in peer review and we say we believe in scholarship, then it needs to be done properly.
+[00:04:41.800] David Burnett: And that takes a long time.
+[00:04:43.840] David Burnett: And so if it's done right, it takes a long time.
+[00:04:47.200] David Burnett: And so that's the nature of the beast, you know, because, you know, like you, Dan, I believe in accessibility.
+[00:04:56.159] David Burnett: I want to work towards that in the future as well and help bring scholarship to the masses.
+[00:05:01.200] David Burnett: But for it to be done with peer review and worked out and established has to become scholarship, you know.
+[00:05:08.560] Dan McClellan: Yeah.
+[00:05:08.960] David Burnett: And so there is a critical mass of scholars who agrees with us on this.
+[00:05:16.800] David Burnett: Challenging the category of monotheism in the study of antiquity.
+[00:05:20.480] David Burnett: And that's very much what this conference is about.
+[00:05:22.960] David Burnett: I mean the, the reason why we went with the name, the Meanings and Ends of Monotheism, the S in ends is in parentheses.
+[00:05:32.790] David Burnett: So it's a double entendre of sorts.
+[00:05:36.390] David Burnett: It's the, the name comes from a famous Wilfred Cantwell Smith book called the Meaning and End of Religion.
+[00:05:44.870] David Burnett: And in that book it was popular in the 60s.
+[00:05:48.230] David Burnett: This is going to be rehashed for some who've heard us discuss this.
+[00:05:52.150] Dan Beecher: It was months ago.
+[00:05:53.230] Dan Beecher: Nobody, nobody even paid attention back then.
+[00:05:55.670] David Burnett: But this is, this is important.
+[00:05:57.270] David Burnett: So the, the reason why we went with this name in particular, the Meanings and Ends of Monotheism, it's a play off that title, the Meaning and End of Religion by Smith.
+[00:06:07.390] David Burnett: And what that book did in the 60s, what it was a part of, was a kind of a paradigm shift in religious studies to say this category of religion, the way it, it operates in modern discourse, scholarly discourse, is very much anachronistic to the study of the past.
+[00:06:25.470] David Burnett: In other words, we're bringing assumptions, critical assumptions of modern, like scholars, and taking them back to antiquity and foisting them on ancient people that wouldn't share those same assumptions and those same categories when it comes to religion.
+[00:06:42.430] David Burnett: And so the book was kind of saying that we shouldn't use the term religion at all in critical study when we look at these ancient communal traditions that are passed down and personal faiths of the peoples themselves.
+[00:06:58.030] David Burnett: And that's how Smith sort of broke down the categories.
+[00:07:00.910] David Burnett: But so what we were doing with the concept of monotheism, quote unquote, is saying that
+[00:07:08.550] David Burnett: that category hasn't faced the type of critical scrutiny that religion has in any way that is helpful in the study of antiquity.
+[00:07:21.520] David Burnett: And so we wanted to help spearhead that movement.
+[00:07:26.000] David Burnett: There has already been scholarship that's been critical of monotheism for some time that is not new.
+[00:07:32.000] David Burnett: But what we wanted to do was get together some of those scholars in one place, in one conference and say, okay, let's, let's take the gloves off, so to speak.
+[00:07:44.790] David Burnett: You know, let's be straightforward with this and not dancing around the issue, but just get it right out there in the open and say this category should not be used for the study of antiquity anymore.
+[00:07:58.070] Dan Beecher: Let's talk a little bit quickly about that category, about the idea of monotheism as it has been talked about up until now and what, what it meant and then, and then a little bit about why you think that it, that that is an outdated way of thinking about and, you know, the, the, the beliefs and, and, and, and sort of practices of antiquity.
+[00:08:33.280] Dan Beecher: This is fun.
+[00:08:33.960] Dan Beecher: It's like.
+[00:08:34.480] Dan Beecher: Dan, it's like I'm interviewing you too.
+[00:08:36.400] Dan Beecher: Yeah, I'm I'm, I'm interviewing you.
+[00:08:37.600] Dan McClellan: I'm a guest on my own.
+[00:08:38.590] Dan McClellan: I, on my own damn show.
+[00:08:42.580] Dan McClellan: So we first get the, the word monotheism in around 1660.
+[00:08:48.500] Dan McClellan: Guy named Henry More, who's a, he's called a Cambridge Platonist or Platonist if you're nasty.
+[00:08:57.060] Dan McClellan: He's one of these guys who's, who's using platonic philosophical frameworks to advance certain Protestant interests, particularly over and against the people who are perceived of as the enemy at the time, which included materialists like Thomas Hobbes and, and people that they accused of being atheists and Muslims and things like that.
+[00:09:20.720] Dan Beecher: How dare they.
+[00:09:21.400] Dan Beecher: What a horrible accusation.
+[00:09:23.120] Dan Beecher: Call someone an atheist.
+[00:09:24.720] Dan McClellan: But, well, and, and they were like, oh, the, the, the materialists who, who worship the world as the one and only God are, you know, are basically worshiping no God.
+[00:09:36.040] Dan McClellan: They're all atheists.
+[00:09:37.760] Dan McClellan: So it's pretty complex when, when you drill down to the bottom of it.
+[00:09:41.800] Dan McClellan: But they're using this concept of monotheism as, as a value judgment and an identity marker.
+[00:09:47.760] Dan McClellan: And what I, what I point out is that they're not using it to mean worship of one God.
+[00:09:53.760] Dan McClellan: Like, they kind of dance around it like this is what it means, but it's like, well, what about Islam?
+[00:09:58.480] Dan McClellan: And then it's like, that's a, that's a false pretense to monotheism.
+[00:10:02.800] Dan McClellan: They're not true monotheists because they don't believe in the same God as us.
+[00:10:06.960] Dan McClellan: And then, okay, like I said, the materialists, because they believe in an impersonal single deity, they're also not believing in a real God.
+[00:10:15.959] Dan McClellan: And so they're atheists.
+[00:10:17.160] Dan McClellan: And so basically a monotheist, we're monotheists.
+[00:10:21.760] Dan McClellan: And anybody who, you know, claims to believe in one God, if their God is too different from our God, then they're, they don't believe in the right one God.
+[00:10:30.830] Dan McClellan: And so they're not monotheists.
+[00:10:32.230] Dan McClellan: So I, what I do in my paper is I, I explain three different ways historically that the, the concept of monotheism has been used.
+[00:10:39.590] Dan McClellan: So when it was coined and I call this Enlightenment monotheism, it was basically this idea that there's this one personal, all powerful, supremely sovereign, omnipotent, omniscient, omnipresent God who created everything that exists apart from them out of nothing.
+[00:10:56.810] Dan McClellan: And so one of the necessary features of, of enlightenment monotheism is creation ex nihilo.
+[00:11:02.970] Dan Beecher: Right?
+[00:11:03.290] Dan McClellan: Which is, and, and like we kind of think of this as, at least in the way I've seen it discussed.
+[00:11:08.850] Dan McClellan: We kind of think of it as, as just this kind of doctrine that's there.
+[00:11:13.370] Dan McClellan: Oh yeah.
+[00:11:13.810] Dan McClellan: Creation had to happen out of nothing.
+[00:11:16.490] Dan McClellan: But this is huge.
+[00:11:18.330] Dan McClellan: Anciently, when they're first debating this in the second century CE in the Enlightenment, if it's not creation ex nihilo, it's crap as, as the great poet once said.
+[00:11:32.670] Dan McClellan: But then you get in the, in the 19th century, you get all these like, in the 18th, 19th century, that's like, that's when dictionaries were suddenly all the rage.
+[00:11:41.150] Dan McClellan: And Webster in 1828, I think this is the first time anyone ever defined monotheism as the belief in the existence of one sole deity.
+[00:11:51.110] Dan McClellan: Prior to that, literally, dictionaries defined monotheism as the doctrine of the Unitarians.
+[00:11:58.080] Dan Beecher: Oh, yeah.
+[00:11:59.680] Dan McClellan: So like, you look in a dictionary, monotheism, the doctrine of the Unitarians, next word.
+[00:12:06.560] Dan McClellan: And then Webster says, belief in one single sole deity.
+[00:12:09.440] Dan McClellan: And I suggest this is an etymological fallacy because it's never, up until that point, no one had ever said monotheism is this.
+[00:12:18.480] Dan McClellan: And here you can apply it to all these different religions and you can distinguish monotheism from not monotheism.
+[00:12:24.050] Dan McClellan: It was an identity marker and a value judgment.
+[00:12:26.770] Dan Beecher: And then so weird because it does, like, the word itself just sounds so easy to like, to, to break down it like mono one, theism, God easy done.
+[00:12:38.450] Dan Beecher: Yeah, out the door.
+[00:12:39.330] Dan Beecher: And so to hear that it wasn't that is a little bit shocking, to be honest with you.
+[00:12:43.690] Dan McClellan: And you know, the, the etymological fallacy is very, very common.
+[00:12:46.770] Dan McClellan: People use it all the time in the 18th, 19th, 20th, 21st century.
+[00:12:52.070] Dan McClellan: And then what I describe a third kind of monotheism, which is what I call, and you'll recognize this word, renegotiated monotheism.
+[00:13:01.110] Dan McClellan: And this is where once we started noticing, hey, you know what?
+[00:13:07.070] Dan McClellan: In the Bible, they kind of talk about all kinds of different gods, then we had to be like, well, what does this mean about monotheism?
+[00:13:12.950] Dan McClellan: And instead of saying, okay, that's not monotheism, we decided, oh, well, monotheism just means something else.
+[00:13:19.870] Dan McClellan: Then it means whatever we find in the Bible.
+[00:13:23.950] Dan McClellan: And so you have these scholars who look in the Bible and whether they're looking in the Hebrew Bible or the New Testament or whatever, they'll say monotheism is this so that we can continue to identify this as monotheism.
+[00:13:39.950] Dan McClellan: So they're changing, they're revising the definition so that we can continue to call what is in the Bible monotheism.
+[00:13:47.570] Dan Beecher: It seems to have become important in the, in the history of, especially of Christianity, to identify the Bible with the concept of a single God, with the concept, with the belief in only one God at any given time.
+[00:14:06.690] Dan McClellan: Yeah.
+[00:14:07.090] Dan McClellan: And, and in the, in the paper, I argue that a big part of this, and what I think is probably the central part of this, is that as an identity marker and a value judgment, you want ideological continuity with these people who wrote the Bible that you believe to be.
+[00:14:24.240] Dan McClellan: You believe you're a part of a continuation of the same community, you're the same group, and so you want them to believe the same things that you're believing now.
+[00:14:32.640] Dan McClellan: And so monotheism is the beating heart of Christianity for a lot of folks, particularly when they're comparing it to other things that they don't think are monotheistic.
+[00:14:42.990] Dan McClellan: And so obviously, the authors of the New Testament had to be monotheistic.
+[00:14:46.870] Dan McClellan: And I argue that scholarship today is trying to maintain that continuity, that connection, and they're willing to just revise the concept wherever they need to go with it in order to maintain that connection.
+[00:15:01.670] Dan McClellan: And I argue that that is harmful to the academic endeavor and that we need to acknowledge that there's not monotheism in the Bible.
+[00:15:13.640] Dan McClellan: And if we want to argue for the utility of that framework, that analytical framework, if we want to say there's value in imposing this interpretive lens on the Bible, they should make a case for why it's valuable.
+[00:15:25.040] Dan McClellan: We should no longer just give the benefit of the doubt.
+[00:15:28.320] Dan McClellan: We should no longer just default to accepting the monotheism of the Bible.
+[00:15:32.770] David Burnett: Exactly.
+[00:15:33.970] Dan McClellan: And so that, that, that's the gist of my paper.
+[00:15:36.610] Dan McClellan: And I conclude by saying, and so if anybody wants to use this framework, they first need to demonstrate that there is value to it and that it's not just an attempt on their part to structure values and powers and, and, and boundaries and things like that and.
+[00:15:52.010] Dan Beecher: To support a sort of dogmatic stance.
+[00:15:54.570] Dan Beecher: Right.
+[00:15:55.010] Dan Beecher: Isn't that what we're talking about is like some, you know, now that word, that monotheism word is being used to support a dogma rather than to actually, you know, just look at what is present and, and, and take it as, you know, on its own terms.
+[00:16:13.430] Dan McClellan: Yeah.
+[00:16:13.830] Dan McClellan: And as you well know, the official position of the Data Over Dogma podcast is that data goes over the dogma rather than the other way around.
+[00:16:22.070] Dan McClellan: We don't let the dogma wag the data.
+[00:16:26.150] Dan Beecher: Yeah, I like that.
+[00:16:28.270] Dan Beecher: That's.
+[00:16:28.550] Dan Beecher: That's a shirt right there.
+[00:16:29.670] Dan Beecher: Somehow we got to turn that into a shirt.
+[00:16:31.430] Dan Beecher: Don't let the dogma wag the data.
+[00:16:33.310] Dan Beecher: Something.
+[00:16:35.790] Dan Beecher: So, David, what was it?
+[00:16:37.310] Dan Beecher: Talk about what?
+[00:16:37.990] Dan Beecher: Your paper.
+[00:16:38.670] Dan Beecher: Did you give a paper also?
+[00:16:40.270] Dan Beecher: What was.
+[00:16:40.790] David Burnett: Yeah, I gave a paper too.
+[00:16:42.350] Dan Beecher: What was your paper about specifically?
+[00:16:44.990] David Burnett: Yeah, my paper was sort of a revised version of a paper I gave a couple of years ago.
+[00:16:51.390] David Burnett: Me and Dan were in a section at SBL on.
+[00:16:57.190] David Burnett: In the Deuteronomy.
+[00:16:58.150] David Burnett: Deuterocanonical and Cognate Literature section.
+[00:17:00.470] David Burnett: They.
+[00:17:00.790] Dan Beecher: SBL.
+[00:17:01.310] Dan Beecher: I'm gonna, I'm just gonna jump in and mention that SBL is the Society of Biblical Literature.
+[00:17:05.990] David Burnett: Ah, yes, you're talking about Society of Biblical Literature.
+[00:17:08.870] David Burnett: Yep.
+[00:17:10.870] David Burnett: Years ago at the Society of Biblical Literature, me and Dan gave similar papers to the ones we gave now.
+[00:17:17.190] David Burnett: But the, the, the paper I did then is the paper I developed for this conference, which was called Virtuous Gods or Deserving of Death:
+[00:17:27.639] David Burnett: Conflicting Early Jewish Postures towards the Gods within Ancient Mediterranean Paganism.
+[00:17:34.439] David Burnett: And so what I was trying to argue there, just briefly, is that when you look at a somewhat representative spectrum of early Jewish literature, so when I say early Judaism, I mean the Judaism of the Second Temple period, so, which is anywhere spanning back as far as 6th century BCE to like 1st century CE, the end of 1st century CE, after the destruction of the temple.
+[00:18:01.290] David Burnett: So generally speaking, when we look at early Jewish literature, we can find a spectrum of different postures towards the gods that are active in the ancient Mediterranean world.
+[00:18:14.570] David Burnett: And they largely vary.
+[00:18:17.330] David Burnett: But when you look at these varying postures towards the gods, none of them, not even on either pole.
+[00:18:24.930] David Burnett: So on one pole you'll have someone like Philo of Alexandria saying things like talking about the gods from Deuteronomy, sort of the Deuteronomic vision of the cosmos, where you have the gods apportioned over the nations that we have happening at the Tower of Babel scene.
+[00:18:43.480] David Burnett: So in commentary on that text in Philo, in the context of like Platonic philosophical discourse about the scala naturae, the scaled nature, the hierarchy of the cosmos, he comments on this text saying, yeah, those gods of the nations, those celestial bodies that Deuteronomy says are gods.
+[00:19:06.360] David Burnett: Yeah, they're gods.
+[00:19:08.450] David Burnett: They're rulers that are appointed by the Father of all, though they are not the sole cause of everything themselves.
+[00:19:16.290] David Burnett: And in this sort of critique of some Greek beliefs about the causation of all events to the celestial bodies, Philo critiques this and says, no, they're gods.
+[00:19:30.850] David Burnett: Yep, but they are copying the rule.
+[00:19:33.530] David Burnett: They're doing mimesis.
+[00:19:34.610] David Burnett: They're.
+[00:19:35.390] David Burnett: They're imitating the rule of the Father of all.
+[00:19:39.070] David Burnett: And this is standard fare in Platonic cosmology of the day of, you know, an ordered cosmos, everyone playing their part, keeping this perfect harmony thing.
+[00:19:48.910] David Burnett: Well, Philo's on board and is like, yeah.
+[00:19:51.309] David Burnett: And matter of fact, he goes as far as to say that these gods, even though, because they're rulers, like delegates under the Father of all, that makes them liable to correction because they're not the Father of all.
+[00:20:04.340] David Burnett: They're not the, like, head guy.
+[00:20:06.140] Dan McClellan: Right?
+[00:20:06.500] David Burnett: But.
+[00:20:06.860] David Burnett: So he says they're liable to correction, but he says because of their virtue, they're never destined to undergo it.
+[00:20:13.340] David Burnett: Okay, so this, this idea that Philo is not an apocalypticist, right.
+[00:20:18.620] David Burnett: I think I talked about this last time, is there's no sense in which he sees some final end of days where the gods need to be judged and killed.
+[00:20:29.220] David Burnett: There's none of that.
+[00:20:30.590] David Burnett: Okay?
+[00:20:30.950] David Burnett: The gods aren't the issue for Philo.
+    [00:20:35.070] David Burnett: He's sort of lampooning the Greeks who say that they're autocratic gods.
+    [00:20:39.710] David Burnett: He literally calls them that.
+    [00:20:41.470] David Burnett: He says for the Greeks who say they're autocratic powers, they're wrong.
+    [00:20:46.830] David Burnett: You know, they rule under the Father of all.
+    [00:20:49.710] David Burnett: So at no time in Philo anywhere does he negate the.
+    [00:20:56.560] David Burnett: The gods' existence, their agency, their.
+    [00:21:00.760] David Burnett: Their rule that's delegated to them under the God of all, their regular place in ordering the cosmic government of sorts.
+    [00:21:11.160] David Burnett: All of that's very real.
+    [00:21:13.480] David Burnett: But they're virtuous for him.
+    [00:21:15.240] David Burnett: Right?
+    [00:21:15.640] David Burnett: But then if you fast forward on the other side and you go to Paul, like, this is totally opposite end of the spectrum here.
+    [00:21:24.220] David Burnett: Paul will use the exact same terms for the gods of the nations from the Septuagint, from the Greek translations of the Jewish Bible, and commenting on same texts in a very different context, very different rhetorical goals, very different things taking place.
+    [00:21:42.220] David Burnett: These are epistles to specific communities.
+    [00:21:45.180] David Burnett: And he's an apocalypticist, so the context couldn't be more different.
+    [00:21:50.020] Dan Beecher: Right?
+    [00:21:50.260] David Burnett: But what's interesting is when that those texts come up, they all affirm that those gods are in fact real and are in fact agents in the world.
+    [00:22:01.060] David Burnett: But for Paul, as this radical apocalyptic Pharisee that thinks he's waiting for the final denouement, the resurrection from the dead, this great event, included in that event is the judgment of what he calls principalities, powers, rulers.
+    [00:22:18.060] David Burnett: These are the same terms used in these other Greek Jewish literature for those gods that are delegated over the.
+    [00:22:25.740] David Burnett: Over the world.
+    [00:22:26.860] Dan Beecher: So that's not so.
+    [00:22:27.940] Dan Beecher: So, so, so the final judgment isn't just for us humans.
+    [00:22:30.900] Dan Beecher: It's also for all of these other ancillary gods.
+    [00:22:34.060] David Burnett: Oh yeah.
+    [00:22:34.580] Dan Beecher: Interesting.
+    [00:22:35.340] David Burnett: So much so.
+    [00:22:36.780] David Burnett: It's so in your face that the.
+    [00:22:41.450] David Burnett: Paul actually uses the language of parousia to speak about the coming back of Jesus where there's this final judgment of the cosmos and he even includes the.
+    [00:22:52.970] David Burnett: The holy ones, he calls them his fellow believers in Jesus who have received the pneuma from heaven, this heavenly spirit of the gods, so to speak.
+    [00:23:03.770] David Burnett: But it's the spirit of the high God, the most high God that the Messiah himself shares.
+    [00:23:08.660] David Burnett: So that links them in some weird, mystic, cosmic way to them.
+    [00:23:12.580] David Burnett: And he says that you all are going to participate in this.
+    [00:23:16.580] David Burnett: Don't you know you're going to judge the cosmos?
+    [00:23:19.940] David Burnett: Don't you know you're going to judge the angels?
+    [00:23:22.899] David Burnett: You know, surprise.
+    [00:23:26.580] David Burnett: So that's part of their role.
+    [00:23:28.500] David Burnett: They're in the big judgment divine court scene at the end, you know, and they're issued their judgment that they're going out the door, you know.
+    [00:23:38.060] David Burnett: So that is a totally different picture than Philo.
+    [00:23:42.420] David Burnett: I mean, Paul would look like the crazy apocalypticist with the sign on the corner, right, the end is nigh, you know, where Philo is sort of like the urbane sophisticate philosopher, you know, so you couldn't get more opposite in terms of the views of the gods.
+    [00:23:58.940] David Burnett: But here's the point.
+    [00:24:01.020] David Burnett: Even if you consider the.
+    [00:24:03.200] David Burnett: These radically different poles of postures towards these deities in their own lived context, in their own lived religious context, you're not going to find anything remotely close to anything we could call monotheistic in the way that that term is generically employed today.
+    [00:24:25.600] David Burnett: And what I did say on top of that is when you consider all of the nuances that get added to this term in contemporary scholarship on early Judaism and Christian origins in particular, it dies the death of a thousand qualifications.
+    [00:24:45.640] David Burnett: Because like Dan said once, once that definition has shifted.
+    [00:24:51.640] David Burnett: Some might say, oh well, yeah, but in scholarship it hasn't shifted, you know, by ancient Jewish monotheism or, or like an evolution of early Jewish monotheism into these christological monotheism, whatever the heck that means.
+[00:25:06.030] David Burnett: You know, that these terms get employed all the time, but you have to qualify them all day long.
+[00:25:11.950] David Burnett: And in every text you reference, there's always other divine powers everywhere.
+[00:25:17.950] Dan Beecher: Is there even a problem with just saying Christological monotheism in the sense that, like, if Christ is a God or is part of a godhead, that's plural right now, suddenly we have a plural God in Christ and his God the Father?
+[00:25:36.040] Dan McClellan: Well, and it manifests the problem, which is that monotheism isn't the rule that we're holding up.
+[00:25:44.040] Dan McClellan: Monotheism is just an identity marker and a value judgment and we will just massage it into whatever context we need that value judgment and that identity marker, whether it means inclusive monotheism, exclusive monotheism, ethical monotheism, Christological monotheism, 1st century Jewish monotheism, whatever we need it to be.
+[00:26:05.490] Dan McClellan: If we need monotheism to be there, it's going to be there one way or another.
+[00:26:10.530] David Burnett: Right.
+[00:26:11.170] David Burnett: And this is what happens here.
+[00:26:13.810] David Burnett: Like Dan put it beautifully just then, it's like what tends to happen.
+[00:26:17.680] David Burnett: These huge anachronisms take place in just a couple of sentences.
+[00:26:22.080] David Burnett: I mean people, people can bring entire categories that take hundreds of years to mete out, to develop and they'll just say, oh yeah, here it is, look at this text.
+[00:26:32.800] David Burnett: This.
+[00:26:33.040] David Burnett: Doesn't this kind of sound like something that one day will become this?
+[00:26:37.280] David Burnett: So it must be this, you know, and it's.
+[00:26:39.600] David Burnett: And it's like, whoa, whoa, hold up.
+[00:26:41.440] David Burnett: I mean you take 1st Corinthians 15 is a great example of this.
+[00:26:45.310] David Burnett: If you know a lot of the talk about Christological monotheism and things like.
+[00:26:50.230] Dan Beecher: This.
+[00:26:52.350] David Burnett: Around the New Testament, all the EHCC folk use this language.
+[00:26:56.190] David Burnett: This is the Early High Christology Club.
+[00:26:58.750] Dan Beecher: Oh, okay.
+[00:27:00.190] David Burnett: There's like a little club of scholars.
+[00:27:03.790] Dan McClellan: The idea that Jesus didn't slowly develop into being God, but immediately.
+[00:27:09.550] Dan McClellan: Yeah, right off the bat, he's understood as God.
+[00:27:12.520] David Burnett: That's right.
+[00:27:12.880] David Burnett: First generation, right off the bat, everyone thinks that mutation. That's right.
+[00:27:18.440] Dan McClellan: Heroes on the half shell, mutant Christology.
+[00:27:23.560] David Burnett: But notice the nuances here.
+[00:27:25.320] David Burnett: Notice the nuances.
+[00:27:26.600] David Burnett: It's not a mutation of monotheism.
+[00:27:29.160] David Burnett: Well, there's already this ancient Jewish monotheism where you have, okay, sure, there's these other gods, kind of, but they're created, see, they.
+[00:27:37.650] David Burnett: There's only one creator.
+[00:27:39.170] David Burnett: Even though some of these Jewish texts in the Second Temple period didn't get the memo about creatio ex nihilo, they didn't get it because they're like, oh yeah, the powers and the rulers, they're involved in ordering the world too and bringing it about and setting it in order.
+[00:27:56.010] David Burnett: And it's like I remember reading these texts in my early master's degree.
+[00:28:00.770] David Burnett: Like, wait, what?
+[00:28:03.340] David Burnett: Why are these powers involved in creation?
+[00:28:05.620] David Burnett: Well, I thought God was the only one doing all this stuff, you know?
+[00:28:08.300] David Burnett: Yeah, so.
+[00:28:09.340] Dan McClellan: And even, even Jesus is like that. It's a lot of people misunderstand. It's creation through Jesus or something like that.
+[00:28:17.100] David Burnett: Jesus did the creating, which technically would be a Tuesday in the ancient Mediterranean.
+[00:28:22.420] David Burnett: Really?
+[00:28:22.660] Dan McClellan: Yeah.
+[00:28:23.020] David Burnett: I mean, because you have powers that Yahweh himself uses in these early Jewish texts to do all kinds of stuff in creation.
+[00:28:31.360] David Burnett: I mean, wisdom as an entity that creates for God is there in Proverbs 8.
+[00:28:38.160] David Burnett: And the Early High Christology folks know that that category is already well developed in the Second Temple period.
+[00:28:48.000] David Burnett: But anyways, the point is that we don't.
+[00:28:52.920] David Burnett: We want to like, sort of wipe all the anachronism off the table and say, let's just engage this literature and be critical about the use, the employment of this category.
+[00:29:08.670] David Burnett: And a great paper that piggybacked right off of what Dan was talking about was towards the beginning by an amazing scholar, Debra Scoggins Ballentine, wonderful scholar, also of Brown, who teaches at Rutgers.
+[00:29:25.000] David Burnett: She did a paper called Translating Monotheism.
+[00:29:28.520] David Burnett: How a Lens of Monotheism Impacts Translation.
+[00:29:32.280] David Burnett: And it.
+[00:29:33.000] David Burnett: Oh, man, it just knocked out of the park exactly what Dan was saying about the first category conference.
+[00:29:40.600] David Burnett: Yeah.
+[00:29:40.920] David Burnett: Is the first paper of the conference.
+[00:29:42.320] David Burnett: Talk about a way to start, you know, but she, she knocked it out of the park with this concept of saying, look, when you have this developed category of monotheism already where you assume that's what this religion is, that's what it is in the Bible.
+[00:29:58.080] David Burnett: It's exactly what Dan was saying.
+[00:29:59.840] David Burnett: Like, this is already monotheistic.
+[00:30:01.840] David Burnett: When you go back to try to translate these texts, there's so much psychological influence over translation choices in very weird texts that don't fit any of those categories.
+[00:30:16.840] Dan Beecher: Yeah.
+[00:30:17.080] David Burnett: You know, and so you're trying, you see, and she shows like, multiple translations, English translations and ancient translations, how this happens, how at different times when you have theological development and this lens of monotheism developed, it's influencing all kinds of translation choices.
+[00:30:36.920] David Burnett: And you can see it.
+[00:30:37.880] David Burnett: I mean, it's, it's.
+[00:30:38.720] David Burnett: It's really obvious to historians and translators when, when you're made aware of it.
+[00:30:45.730] David Burnett: Problem is there are.
+[00:30:47.410] David Burnett: There are so many interpreters that probably weren't even aware that those, that those lenses are already fully developed.
+[00:30:55.330] Dan Beecher: Right.
+[00:30:55.690] David Burnett: And so you couldn't imagine seeing it any other way.
+[00:30:59.490] David Burnett: You know, if you're just.
+[00:31:01.010] David Burnett: It's.
+[00:31:01.370] David Burnett: Does a fish know it's in water?
+[00:31:02.730] David Burnett: Right.
+[00:31:03.010] David Burnett: You know.
+[00:31:03.330] Dan McClellan: Yeah.
+[00:31:03.650] Dan Beecher: Right.
+[00:31:03.930] David Burnett: So this is why a conference like this is so important is like we have to try to take these lenses off and be critical with the data and look at it and say, wait a minute, does any of this fit?
+[00:31:16.740] Dan Beecher: You know, can you guys provide an example?
+[00:31:20.100] Dan Beecher: Maybe that, that.
+[00:31:21.700] Dan Beecher: Sorry, the, the professor that you just named.
+[00:31:23.900] Dan Beecher: I'm, I didn't catch her.
+[00:31:25.460] Dan McClellan: Debra Scoggins Ballentine.
+[00:31:27.540] David Burnett: Yeah.
+[00:31:27.940] Dan Beecher: Can you provide maybe she provided an example of, you know, of a scripture that has been traditionally translated one way but would be better translated in another way if we sort of cast off the, the monotheism lens.
+[00:31:44.030] Dan Beecher: Is there, can you think of a, of a specific example of that?
+[00:31:47.790] Dan McClellan: Well, the one that, that she talks about in her paper was when Jacob and, and Laban are parting ways and this is Genesis.
+[00:31:59.070] Dan McClellan: Oh, shoot.
+[00:32:00.350] David Burnett: 31:53.
+[00:32:01.098] David Burnett: 31.
+[00:32:01.778] Dan McClellan: 53.
+[00:32:02.390] Dan McClellan: Okay.
+[00:32:02.790] Dan McClellan: 31:53.
+[00:32:03.790] Dan McClellan: And I, I'm pulling it up right in front of you.
+[00:32:06.230] Dan McClellan: But, but basically they're both going to, you know, swear their oaths.
+[00:32:11.000] Dan McClellan: And so the NRSV says it this way.
+[00:32:13.000] Dan McClellan: May the God of Abraham and the God of Nahor judge between us.
+[00:32:17.480] Dan McClellan: So Jacob swore by the fear of his father Isaac, and Jacob offered a sacrifice on the height, called his kinfolk to eat the bread, blah, blah, blah.
+[00:32:25.800] Dan McClellan: And, and so the, the question here is, and there is a, there is a part, it looks like the, the NRSV.
+[00:32:35.110] Dan McClellan: Yeah, the NRSV takes out the, the reading that she's talking about.
+[00:32:39.270] Dan McClellan: There is, there's another statement, Elohei avotehem, which means either God of their fathers or gods of their fathers.
+[00:32:51.710] Dan McClellan: And so the question is, does God of Nahor and God of Abraham mean this is the one God who is both the God of Abraham and the God of Nahor?
+[00:33:01.750] Dan McClellan: Or does this mean that there's one God that's the God of Nahor and another God that is the God of Abraham?
+[00:33:07.800] Dan McClellan: And, and the statement "the Elohim of their fathers" is ambiguous.
+[00:33:12.360] Dan McClellan: It could be interpreted either way because Elohim can be plural or singular.
+[00:33:17.400] Dan McClellan: And so depending on, on the lens you're bringing to this passage, you may one try to preserve the ambiguity, which when I worked in scripture translation for the LDS Church, we actually at one point wanted to make shirts that said "maintain the ambiguity."
+[00:33:34.490] Dan McClellan: The, the idea being that you don't want to make the decision for the reader.
+[00:33:38.330] Dan McClellan: You want to pass on the prerogative to make the interpretive decision to the reader.
+[00:33:44.010] Dan McClellan: And so you can maintain the ambiguity or you can decide for them, in which case you say, oh, this is referring to different gods or this is referring to one God.
+[00:33:52.890] Dan McClellan: So, and so she talks about how the Septuagint makes a decision about that, about how the Vulgate makes a decision about that, and then how modern translation, the King James Version, the RSV, the NRSV, the NIV, how translations, the translators make different decisions based on the lenses that they're bringing to the text.
+[00:34:11.820] Dan McClellan: And when, you know, talking about Paul and the gods, you know, if you go to 1 Corinthians 8, there's this famous passage where he says, and here's the NRSVUE: "Indeed, even though there may be so-called gods in heaven or on earth, as in fact there are many gods and many lords, yet for us there is one God, the Father, for whom are all things and for whom we exist."
+[00:34:33.320] Dan McClellan: And there's some ambiguity.
+[00:34:34.960] Dan McClellan: Is Paul saying, oh, yeah, these things that people call gods, but we know there's only one God?
+[00:34:41.880] Dan McClellan: Is Paul saying that, or is Paul saying, yeah, there are these gods all over the place, but as far as we're concerned, only one God matters to us?
+[00:34:50.760] Dan Beecher: Right?
+[00:34:51.160] Dan McClellan: Like, with that lens.
+[00:34:53.480] Dan McClellan: Yeah, yeah.
+[00:34:54.200] Dan McClellan: And I, I agree.
+[00:34:55.120] Dan McClellan: That's.
+[00:34:55.520] Dan McClellan: That's precisely what he's saying.
+[00:34:57.720] Dan McClellan: And, and the, what I, the metaphor that I use in, in my paper is the Broncos.
+[00:35:04.200] Dan McClellan: Like, as far as I'm concerned, there's only one.
+[00:35:07.320] Dan McClellan: You know, that was a lot easier to say back in the late 90s.
+[00:35:10.040] Dan McClellan: But, you know, like the Raiders, they're not even a real football team.
+[00:35:14.080] Dan McClellan: Like, it's, it's just the kind of rhetoric that we use to juice each other up and to make ourselves feel better than, than the other.
+[00:35:23.880] David Burnett: Yeah, I've had to do the same thing.
+[00:35:26.040] David Burnett: I mean, I remember giving my first paper like in 2014, 2013 or 2014, and it was at this Paul and Judaism conference at HBU, or formerly Houston Baptist University.
+[00:35:40.440] David Burnett: Now it's Houston Christian, I think.
+[00:35:42.360] David Burnett: But this, I'd given this paper there and I talked about the gods of Deuteronomy in relation to the interpretation of Romans 4.
+[00:35:52.460] David Burnett: And interestingly, this sort of pastor-scholar, older pastor-scholar, you know, had a Ph.D., I think he taught at some point, but he had pastored most of his adult life.
+[00:36:05.220] David Burnett: You know, he's like the older statesman, evangelical pastor in the pews, looking out for these young heretics.
+[00:36:13.720] David Burnett: You know, I'm gonna show these kids what's what for.
+[00:36:16.720] David Burnett: You know, he immediately tried to go in on me in the Q and A time and say, well, clearly by Isaiah it says that there is only one God.
+[00:36:27.400] David Burnett: There is no God beside me.
+[00:36:29.400] David Burnett: You know, what are you talking about?
+[00:36:31.400] David Burnett: That they were not monotheists.
+[00:36:33.720] David Burnett: I said, wait a minute.
+[00:36:35.800] David Burnett: I was like, that's just incomparability language.
+[00:36:38.980] David Burnett: At the time I drove a Ford Focus.
+[00:36:40.460] David Burnett: It was like, it's like me saying, "My Ford Focus is the only Ford Focus."
+[00:36:45.300] David Burnett: You know, "There ain't no other Ford Focus out there."
+[00:36:47.860] David Burnett: It's just mine.
+[00:36:48.900] David Burnett: You know, I'm not making an ontological claim about the, the oneness of my Ford Focus, you know, and I'm.
+[00:36:58.740] David Burnett: And I had already made points that.
+[00:37:00.260] David Burnett: Look, Akkadian hymns do this to their deities too.
+[00:37:03.700] David Burnett: You know, it's like, oh yeah, there is but one God who, who amongst the gods is like you.
+[00:37:07.920] David Burnett: It's like, wait, what?
+[00:37:09.840] David Burnett: So this is just common rhetoric.
+[00:37:11.560] Dan McClellan: You know, I've shared that on, on social media.
+[00:37:14.120] Dan McClellan: The, the Great Cairo Hymn to Aten from Egypt.
+[00:37:17.600] Dan McClellan: Like you read that and like that's, that's even more emphatic than the stuff you find in Deutero-Isaiah.
+[00:37:25.960] Dan McClellan: Second.
+[00:37:28.160] David Burnett: That's.
+[00:37:28.800] David Burnett: That's awesome.
+[00:37:29.640] David Burnett: Example.
+[00:37:30.080] David Burnett: Yeah.
+[00:37:31.040] Dan McClellan: The.
+[00:37:31.760] Dan McClellan: So the, the first session was Hebrew Bible and there were three of us.
+[00:37:35.280] Dan McClellan: Deborah Scoggins Ballentine.
+[00:37:36.720] Dan McClellan: I presented another wonderful scholar named Jennifer Singletary from Penn State University.
+[00:37:41.980] Dan McClellan: And her.
+[00:37:42.620] Dan McClellan: Her paper was called "The End of Hypostatization; or, How I Learned to Stop Worrying about Israelite Polytheism."
+[00:37:52.540] Dan McClellan: And her paper was really cool.
+[00:37:54.020] Dan McClellan: I didn't know what to expect with.
+[00:37:55.540] Dan McClellan: With her paper, but hypostatization is this.
+[00:37:59.580] Dan Beecher: Idea that I feel like you're stuttering when you say that word, but that's.
+[00:38:03.740] Dan Beecher: I'm sure you're not.
+[00:38:08.300] Dan McClellan: And that was something that she kept saying.
+[00:38:09.860] Dan McClellan: She.
+[00:38:10.360] Dan McClellan: Like, I had to practice pronouncing all the words over and over again.
+[00:38:13.880] Dan McClellan: But this idea of a hypostasis is.
+[00:38:18.680] Dan McClellan: I don't know if it originates in Christological scholarship or it probably comes from.
+[00:38:23.840] David Burnett: That's.
+[00:38:24.360] David Burnett: That's where it becomes a dominant category.
+[00:38:27.240] Dan McClellan: Yeah, yeah.
+[00:38:27.840] David Burnett: In the early Christological debates about a hypostasis of God, that's still part of the one God, but it develops into this language of personhood in the conciliar debates.
+[00:38:41.210] Dan McClellan: Yeah.
+[00:38:41.450] David Burnett: On Christology.
+[00:38:42.410] David Burnett: But what happens is hypostasis then because, you know, the Bible is.
+[00:38:48.410] David Burnett: Now we have Christendom.
+[00:38:50.010] David Burnett: We, we.
+[00:38:50.970] David Burnett: Everyone's orthodox Christian.
+[00:38:52.690] David Burnett: That's.
+[00:38:53.050] David Burnett: You have the orthodox readings of the Bible.
+[00:38:55.530] David Burnett: So you got.
+[00:38:56.490] David Burnett: If you have any weird, you know, god-looking stuff back here.
+[00:39:00.090] David Burnett: Oh, that's a hypostasis.
+[00:39:01.370] David Burnett: That's just.
+[00:39:01.810] Dan McClellan: Yeah.
+[00:39:02.410] David Burnett: That's not a separate God.
+[00:39:03.690] David Burnett: Right.
+[00:39:04.010] David Burnett: You know, I still don't understand what one God.
+[00:39:06.740] Dan McClellan: So this is a, this is a fancy Greek word that means substance.
+[00:39:10.180] Dan McClellan: But the idea of a hypostasis or hypostases is.
+[00:39:16.100] Dan McClellan: This is like an avatar.
+[00:39:18.740] Dan McClellan: It's an entity that is distinct from the main entity, but it only points back to the main entity.
+[00:39:27.220] Dan Beecher: Okay.
+[00:39:27.820] Dan McClellan: And so, and so like a divine image is thought of as.
+[00:39:31.540] Dan McClellan: As a hypostasis.
+[00:39:33.390] Dan McClellan: And so when, when you have these texts that are talking about all these other gods, if you identify them all as hypostases of the main God, then that protects monotheism because it means they're not autonomous, independent entities.
+[00:39:50.190] Dan McClellan: They're just.
+[00:39:51.630] Dan McClellan: They're just the avatars of the main God.
+[00:39:54.990] Dan McClellan: And her paper went.
+[00:39:56.390] Dan Beecher: Feels problematic considering that they fight each other, but.
+[00:39:59.960] Dan McClellan: Okay, well, yeah, it's.
+[00:40:01.800] Dan McClellan: It's highly problematic.
+[00:40:03.640] Dan McClellan: Go ahead, David.
+[00:40:04.840] David Burnett: Yeah, I just.
+[00:40:05.800] David Burnett: I'll interject something here.
+[00:40:07.400] David Burnett: The ones that are normally.
+[00:40:09.320] David Burnett: This is, and this is helpful for Hebrew Bible stuff, because when, when Christian scholars want to talk about hypostases of God, they will go back like the councils did and talk about the wisdom of, of God is.
+[00:40:27.950] David Burnett: It appears as if wisdom is this other.
+[00:40:30.790] David Burnett: This second figure that has some sort of agency.
+[00:40:34.270] David Burnett: You know, it's...
+[00:40:35.310] David Burnett: It's described as if wisdom gets to create, wisdom is...
+[00:40:40.390] David Burnett: Gets to play a role.
+[00:40:43.670] David Burnett: But...
+[00:40:43.990] David Burnett: But it's still the wisdom of God.
+[00:40:46.390] David Burnett: So it's sort of personified.
+[00:40:47.990] David Burnett: So is it an agent in and of itself or is it just part of God?
+[00:40:52.310] David Burnett: And so it's, that's what we mean by...
+[00:40:54.230] David Burnett: Well, it's a hypostasis.
+[00:40:55.590] David Burnett: It's like, it's, it's...
+[00:40:57.430] David Burnett: It's part of God, but it just appears as a separate agent.
+[00:41:00.550] David Burnett: And so the name of God is another very important one in the Hebrew Bible that was very important all through early Judaism, this onomatology, this idea that the name has presence, you know, it's...
+[00:41:15.550] David Burnett: It signifies presence.
+[00:41:16.990] David Burnett: So the...
+[00:41:17.710] David Burnett: You build a temple.
+[00:41:18.790] David Burnett: Yahweh says, you know, you build a temple for my name.
+[00:41:23.040] David Burnett: The tabernacle is where my name will dwell there.
+[00:41:25.840] Dan McClellan: Yeah.
+[00:41:26.200] David Burnett: And it's a real presence of the deity is there.
+[00:41:29.760] Dan McClellan: Right.
+[00:41:30.080] David Burnett: You know, the Shekinah can be called the name.
+[00:41:32.960] David Burnett: You know, the, the glory of God and the Kavod is...
+[00:41:36.920] David Burnett: Is often another one too.
+[00:41:38.600] David Burnett: The glory of God.
+[00:41:39.600] David Burnett: Yeah.
+[00:41:40.000] David Burnett: So these are all like hypostases.
+[00:41:41.600] David Burnett: These are like...
+[00:41:42.560] David Burnett: It appears like they're a second figure, but they're part of the one God.
+[00:41:46.720] David Burnett: And so this is...
+[00:41:47.680] David Burnett: That discourse dominates a lot of scholarship because they, they impose it on much more ancient, ancient Israelite stuff because they need it to be there.
+[00:41:59.640] Dan McClellan: And it functions as an explanation that cuts off any further interrogation because it's like there's some kind of relationship there.
+[00:42:08.120] Dan McClellan: Boom.
+[00:42:08.520] Dan McClellan: Hypostasis.
+[00:42:09.720] Dan McClellan: And, and that means we're done talking about the relationship because we've already presupposed that whatever that relationship is, it is, it is subsumed within our understanding, which is again, based on Christological stuff.
+[00:42:26.130] Dan McClellan: And so it, it's basically just a way of shellacking everything over with Christology so that we don't complicate things any further.
+[00:42:34.970] Dan McClellan: Which was really one of the main things I was trying to do in my book was show, hey, we can actually explain why people are thinking of these things this way.
+[00:42:45.540] Dan McClellan: But it complicates Christology to, to do that.
+[00:42:48.980] Dan McClellan: But she brought up some wonderful examples from Kuntillet Ajrud, some of the inscriptions there where it refers to El, it refers to Adonai, it refers to Baal and, and she complicates the assumption that these all must be hypostases of Adonai and then talks about some, some really cool inscriptions from Elephantine.
+[00:43:09.780] Dan McClellan: This.
+[00:43:10.910] David Burnett: Yeah, fascinating.
+[00:43:11.950] Dan McClellan: Yeah, there, there was a Jewish garrison that was stationed there at the end of the 5th and the beginning of the 4th centuries BCE and they had a temple there and like it was destroyed by the locals and the governor there was like, yeah, you can rebuild your temple, but no animal sacrifices only, only fruits and vegetables and stuff like that.
+[00:43:30.110] Dan McClellan: And, and they have references to a variety of different deities there and so who are sometimes just dismissed as hypostases.
+[00:43:40.860] Dan McClellan: So also a phenomenal paper.
+[00:43:43.660] David Burnett: Yeah, her paper is great.
+[00:43:45.020] Dan McClellan: Yeah.
+[00:43:45.740] Dan McClellan: And then, David, your section, Second Temple Judaism and Christian Origins was the longer...
+[00:43:52.060] Dan McClellan: We had four in there, didn't we?
+[00:43:55.900] David Burnett: Yeah, that was the, that was four.
+[00:43:57.340] David Burnett: It was separated by a break.
+[00:43:59.180] Dan McClellan: Yeah.
+[00:43:59.820] Dan McClellan: And so Emma Wasserman went right before you and you could probably explain, talk about her paper better than I can because it is a little more closely related to what she's doing.
+[00:44:11.630] David Burnett: a little more closely related to what she's doing. Yeah, well, her paper was called Pantheon Polemics and Intellectual Pressures: Reconsidering Paul's Pneuma.
+[00:44:20.830] David Burnett: She left off the pneuma part for this paper and sort of restructured it a bit.
+[00:44:26.670] David Burnett: But she was, she was mainly talking about, from a host of texts and comparison, comparing it to sort of the common intellectual context in philosophy in the, in the Greco-Roman world to say that Paul believed in a pantheon very similar to the way the Greeks did.
+[00:44:45.830] David Burnett: So it's this structured power.
+[00:44:47.670] David Burnett: Think of like a pyramid or a hierarchy, a scaled scala naturae, as they call it, that I was talking about earlier, like a scaled hierarchy and that this is, this is ubiquitous.
+[00:44:59.030] Dan Beecher: You're talking about multi-level marketing.
+[00:45:01.110] David Burnett: Yeah, yeah, yeah, yeah.
+[00:45:03.590] David Burnett: You got the, the CEO at the top.
+[00:45:05.950] David Burnett: But you got, you got to have.
+[00:45:07.150] Dan Beecher: Your, your, your, your sort of deity downlines, otherwise.
+[00:45:10.790] David Burnett: Yeah, what.
+[00:45:11.190] David Burnett: Emma, Emma's an incredible scholar because she has this encyclopedic knowledge of ancient philosophy.
+[00:45:18.630] David Burnett: I tell you what, I am so jealous of those Stanley Stowers students because her and Robin Faith Walsh and others, Stephen Young, these guys know Greek philosophy backwards and forwards.
+[00:45:33.010] David Burnett: They are great and I'm so glad to have them because I have a ton to learn from her still.
+[00:45:40.330] David Burnett: But she, she masterfully showed that, like, look, these pantheons, Paul's pantheon is actually no different in like, structure, in the way that it's imagined in tiers.
+[00:45:53.770] David Burnett: And, and there's all kinds of, like, discourse and rhetoric around that and navigating that, but everyone is sort of on that page, you know, and so it's not, it's more of, I think she talked about anxieties about affinity, like the likeness.
+[00:46:15.950] David Burnett: If, ooh, it's you.
+[00:46:17.470] David Burnett: You get anxious that it sounds too much like, you know, your compadres over here.
+[00:46:22.390] David Burnett: So you got to tweak things a little bit to sound unique.
+[00:46:25.550] David Burnett: And so this, the, these things that sound may sound radically unique in Paul aren't really.
+[00:46:31.470] David Burnett: And so she's doing a high-level critical readings, doing like, talking about literary producers and shared repertoires of literary producers of the period.
+[00:46:41.630] David Burnett: And Paul, the way she's critically discussing Paul is that it's just a varied model of a pantheon.
+[00:46:49.560] David Burnett: You know, this, that's what, that's what's happening here.
+[00:46:52.280] David Burnett: It's just one varied model of, of scholars looking back critically.
+[00:46:57.720] David Burnett: Oh, these are all pantheons.
+[00:46:59.640] David Burnett: That's all this is.
+[00:47:00.840] David Burnett: And so the way she talks about these literary producers in that context has much more to do about anxieties towards affinities with others.
+[00:47:10.600] David Burnett: You know, to have some unique voice, to have some.
+[00:47:13.780] David Burnett: You're a, you're a religious expert, in the words of Heidi Wendt.
+[00:47:19.620] David Burnett: So this is, this is.
+[00:47:21.300] David Burnett: He's a religious expert in the ancient Mediterranean.
+[00:47:23.620] David Burnett: He's carving out his own place, his own voice.
+[00:47:26.260] David Burnett: And so he might tweak things this way, you know, well, they need to be dealt with this way or that this lower tier needs to.
+[00:47:33.980] David Burnett: There's a battle going on over here.
+[00:47:35.620] David Burnett: But the whole time for critical scholarship is, let's just admit these are all pantheons.
+[00:47:41.190] Dan Beecher: Yeah.
+[00:47:41.750] David Burnett: And this, there is no radically other view of the cosmos going on.
+[00:47:48.110] David Burnett: You know, and that's, that's not a thing.
+[00:47:49.910] Dan McClellan: And that's a big point to make here.
+[00:47:51.670] Dan McClellan: Is that a common theme in all of this is when we look at the relationship of the, the Jewish Christian, Hebrew Bible literature to the literature and the societies around it.
+[00:48:03.030] Dan McClellan: It's not a revolutionary departure.
+[00:48:06.520] Dan McClellan: And for, and particularly with monotheism, what scholarship wants is this to be a revolutionary break.
+[00:48:13.160] Dan McClellan: This, this, you know, just sudden instantaneous mutation that nobody could have seen coming or revolutionary monotheism or all these things.
+[00:48:21.080] Dan McClellan: Because what that means is this is divine in origin.
+[00:48:25.000] Dan Beecher: This is special.
+[00:48:25.880] Dan Beecher: This is.
+[00:48:26.320] Dan McClellan: Yeah, this is, this is not just an incremental elaboration on everything that came before, which is, in reality, when you look at the data, that's what you see.
+[00:48:36.610] Dan McClellan: They're not departing wildly from what's going on around them.
+[00:48:40.450] Dan McClellan: They're just saying short, small, little, little deviations from what's going on around them.
+[00:48:46.210] Dan McClellan: And so I think that's one of the important things that this conference is going to show, is that there is not this radical revolutionary departure, but it is, it is carrying on very similar traditions, just incrementally elaborating on them.
+[00:48:59.000] Dan Beecher: I think it's one of the things that's, that I think is.
+[00:49:04.520] Dan Beecher: Would be surprising to most people.
+[00:49:06.440] Dan Beecher: I think a lot of people would be more comfortable admitting an idea of polytheism in a, in, in sort of in Hebrew Bible times, in, in, in Old Testament times, and less comfortable with that being a part of New Testament, you know, Pauline beliefs.
+[00:49:28.340] Dan Beecher: And I think that's the part that I think is, is this the, the big revelation from, from what I'm understanding from, from you guys is that like there's no, you know, we've, we've said it before, but there's no part of this, of the Bible that doesn't have polytheistic belief.
+[00:49:48.500] Dan McClellan: I, and, and I think one of the things we talked about, I would agree with that.
+[00:49:51.660] Dan McClellan: One of the things we, we frequently brought up at the conference was the threshold of monotheism.
+[00:49:56.740] Dan McClellan: Where do we identify when we finally have monotheism?
+[00:50:00.460] Dan McClellan: And if you go back 150 years in scholarship, it's like, oh, Abraham was the first monotheist, and then a couple generations later, Moses was the first monotheist.
+[00:50:09.340] Dan McClellan: Then a couple generations later, Deutero Isaiah is the first monotheist.
+[00:50:13.380] Dan McClellan: And so our generation is, is coming on what I hope is the tail end of the, the era of Deutero Isaiah.
+[00:50:21.530] Dan McClellan: They're, they're constantly trying to hold that threshold against the data and say, no, no, no, we have it by this time.
+[00:50:30.010] Dan McClellan: And we're, we're in addition to just blasting past Deutero Isaiah, we're blasting past the New Testament also, we're not waiting for, for that era.
+[00:50:39.210] Dan McClellan: We're saying, no, it's not in Deutero Isaiah, it's not in the Greco Roman period literature, it's not even in the New Testament.
+[00:50:46.440] Dan McClellan: And I think that's going to be another important contribution of this volume is we're going to point out the.
+[00:50:52.840] Dan McClellan: Well, one, the question of where the threshold is is the wrong question to begin with.
+[00:50:57.800] Dan McClellan: But two, it's definitely not anywhere in the Bible.
+[00:51:00.920] Dan McClellan: And I think Paula Fredriksen, who has the paper after yours, did a wonderful job of talking about our frustrations with the use of the framework of monotheism and its abuse in light of the fact that, that it's just not identifiable anywhere in the Bible, including in the New Testament and even within early Christianity.
+[00:51:23.420] David Burnett: 100.
+[00:51:24.700] Dan Beecher: I think it's funny that when you, when you mentioned like, you know, the, the pushing forward of this threshold, like, you know, I am no Bible scholar.
+[00:51:34.060] Dan Beecher: I am no, I'm no expert in, in the Bible, but even I look at Moses and I'm like, you guys remember in the story of Moses that like, the bad guys had gods that had powers too, right?
+[00:51:45.580] Dan Beecher: Like, that's just right there in the story.
+[00:51:48.180] David Burnett: I don't know.
+[00:51:48.780] Dan Beecher: Like, how could you possibly.
+[00:51:50.300] Dan Beecher: Like that's just, that's about as obvious a thing as, as I can imagine.
+[00:51:54.700] Dan Beecher: And so the fact that it, what it speaks to, to my mind is how important it was to these scholars to maintain this dot, this dogma of monotheism.
+[00:52:08.860] Dan McClellan: Yeah, we all saw Steve Martin and Martin Short throw the, their staffs down and they became snakes.
+[00:52:14.300] Dan McClellan: And, and in fact, somebody brought up that this generation is a generation that was raised thinking about the story of the Exodus based on the Prince of Egypt.
+[00:52:24.100] Dan McClellan: That's Prince of Egypt.
+[00:52:25.060] Dan McClellan: That's the lens so many come to it through.
+[00:52:28.060] Dan McClellan: And in fact, I've, I've heard people argue, well, you know, Moses's brother gave him his ring and it's like, that's the Prince of Egypt.
+[00:52:36.910] Dan Beecher: That's from a cartoon.
+[00:52:38.030] Dan Beecher: That's not from the Bible.
+[00:52:39.790] Dan McClellan: Yeah.
+[00:52:40.510] Dan McClellan: And you know, Whitney Houston is impeccable in the soundtrack, but that's not the text of the Bible.
+[00:52:51.790] David Burnett: And then so, yeah, with Paula's paper, just real quick, I mean, she's, I mean, for Paula, what else can you say that she has not already said many, many times about monotheism?
+[00:53:04.170] David Burnett: And she basically was saying that, you know, her article, Philo, Herod, Paul and the Many Gods of Ancient Jewish Monotheism is a masterpiece that's Harvard Theological Review from.
+[00:53:15.490] David Burnett: Yeah, yeah, just excellent, excellent piece.
+[00:53:20.410] David Burnett: But she.
+[00:53:21.450] David Burnett: Lots of the points that she's made before, but she goes out, she's been going after for a very long time the types of that use language like Jewish biblical monotheism, you know, the ancient talking about New Testament authors and, and saying, oh, they're using Jewish biblical monotheism, you know, and they'll talk about, well, faithful Jews, you know, who read their Bible, you know, will use this will be monotheists.
+[00:53:53.600] David Burnett: And it's just like every time you hear this, it's like the Christian exceptionalism is, is, is whoa.
+[00:54:02.170] David Burnett: It's wow.
+[00:54:02.930] David Burnett: It's like, oh my goodness.
+[00:54:04.650] David Burnett: And you think in a post-Holocaust world where there's been droves of writing in what does it mean to do hermeneutics of text that even have anti-Jewish stuff tinging in them.
+[00:54:20.170] David Burnett: How do we read them and how do we be honest with them and critical of them and interrogate them in a post-Holocaust world?
+[00:54:27.260] David Burnett: And it's.
+[00:54:27.660] David Burnett: There's so much of this monotheism talk runs into this problem.
+[00:54:33.860] David Burnett: And this runs into Robyn's paper too.
+[00:54:36.420] David Burnett: Yeah, so.
+[00:54:37.060] Dan McClellan: And Steven's to some degree as well, I think.
+[00:54:39.059] David Burnett: Yeah.
+[00:54:39.620] David Burnett: So Robyn Faith Walsh's paper, just incredible as well.
+[00:54:44.780] David Burnett: I mean, just really great paper.
+[00:54:47.140] David Burnett: She did a paper on Jesus in Berlin on monotheism and origins at the fin de siecle.
+[00:54:52.350] David Burnett: My French is terrible.
+[00:54:53.230] David Burnett: What, how do you say it, Dan?
+[00:54:54.550] Dan McClellan: I said fin de siecle and yeah, something like that.
+[00:55:00.390] David Burnett: My French is terrible, so minus two.
+[00:55:02.190] David Burnett: But you know, Robyn's is impeccable.
+[00:55:03.910] David Burnett: So.
+[00:55:05.750] David Burnett: But you know, her paper was brilliant because she was showing, she was actually doing.
+[00:55:12.310] David Burnett: She had a very unique paper in our conference and, and I almost wish we had.
+[00:55:16.320] David Burnett: And in the future we will.
+[00:55:18.080] David Burnett: But she, she brought an example of.
+[00:55:21.400] David Burnett: Okay, let's see on the ground, how is this term functioning in the 18th and 19th centuries?
+[00:55:26.920] David Burnett: Like specifically in Germany, in Berlin.
+[00:55:29.680] David Burnett: Look at these German scholars, the way they're employing the term.
+[00:55:33.840] David Burnett: And she shows the history and the development of this in really brilliant ways that shows the supersessionistic agendas in the rise of monotheism as it grows.
+[00:55:47.700] Dan McClellan: In that period rhetorically as an anthropological category, that's kind of the heyday of the apologist.
+[00:55:53.740] Dan McClellan: And monotheism becomes a main category for kind of ordering the development of humanity and this evolutionary teleological.
+[00:56:03.180] Dan Beecher: Yeah, I mean, I've heard that sort of in my sort of encounters with biblical scholarship or, or anthropological scholarship talking, I've heard people say that monotheism was a big turn in in, in anthro, in.
+[00:56:20.160] Dan Beecher: In sort of the development of human belief systems, etc.
+[00:56:24.280] David Burnett: Yeah, it's, it's.
+[00:56:25.280] David Burnett: It's radical exceptionalism and essentialism.
+[00:56:29.040] David Burnett: You know, it's like, well, now we've reached this, you know, pinnacle of monotheism and we're at the heights of.
+[00:56:36.390] David Burnett: And all these little pagans that still worship all their little gods are somewhere under us.
+[00:56:40.550] David Burnett: They're othered, you know.
+[00:56:41.830] Dan Beecher: Right.
+[00:56:42.710] David Burnett: So we've evolved to the supreme race, so to speak, you know, who understand this.
+[00:56:48.070] David Burnett: And her.
+[00:56:49.030] Dan McClellan: There's that value judgment again.
+[00:56:50.950] Dan Beecher: Right.
+[00:56:51.430] David Burnett: Of course, the value.
+[00:56:52.630] David Burnett: It's.
+[00:56:53.110] David Burnett: But it's tied.
+[00:56:54.150] David Burnett: You can't separate, she proves pretty substantial substantively that you can't separate that rhetoric in German scholarship from that supersessionistic essentialist project.
+[00:57:09.710] David Burnett: You know, it's all wrapped up with it and it's used rhetorically to function that way as well.
+[00:57:15.470] Dan Beecher: Yeah, I mean, I, I've heard it used to be.
+[00:57:18.430] Dan Beecher: You know, I remember when I was in school, I took a class and it was a philosophy class.
+[00:57:24.470] Dan Beecher: And, you know, this is 20 years ago or something, but not that long ago.
+[00:57:30.680] Dan Beecher: But, you know, my professor at the time was sort of looking down on all of these silly polytheists and, and.
+[00:57:37.840] Dan Beecher: And it becomes, you know, a vehicle for racism and for sort of putting down of.
+[00:57:47.120] Dan Beecher: Of other cultures that.
+[00:57:49.200] Dan Beecher: Which is really probably not great.
+[00:57:52.950] David Burnett: Yeah, she.
+[00:57:53.910] David Burnett: One of the points she makes is, is she was talking about the fits and starts and the zeal from like the 18th and 19th century to discover these natural laws that govern the world.
+[00:58:05.430] David Burnett: And so monotheism is like the culmination of that, that they've found out, you know, and she even talked about Jesus as culmination.
+[00:58:12.470] David Burnett: You know, it's like we've arrived, you know, versus those others that haven't, and we solved religion.
+[00:58:18.670] Dan Beecher: Congratulations, everybody.
+[00:58:20.510] Dan McClellan: So, I mean, literally, what it was.
+[00:58:22.670] David Burnett: Literally, I mean, so she makes the point, the very clear point at that point.
+[00:58:27.150] David Burnett: So what taxonomic value does monotheism have at all when you know that, that that's the way that it's functioning, that's the way it's been appropriated and employed, you know, So I, I thought that was great.
+[00:58:39.790] David Burnett: I thought her paper was needed at our conference.
+[00:58:43.760] Dan McClellan: Yeah.
+[00:58:43.960] David Burnett: And.
+[00:58:44.160] Dan McClellan: And that leads into the.
+[00:58:45.360] Dan McClellan: The last section had two papers in it that we don't have time to get deep into.
+[00:58:49.280] Dan McClellan: But Stephen Young, who was participating over Zoom because he was ill, his was entitled Monotheism as a Competitive Strategy, Athenagoras, the Pseudo-Clementine Literature and Manufacturing Christian Exceptionalism.
+[00:59:01.600] Dan McClellan: And he didn't get into Pseudo-Clementine literature in the presentation, but he talked about Athenagoras and some other early Christians who were basically using the claim of monotheism to try to manufact, manufacture this idea that we're, we're different, we're revolutionary, we're radical and we're better.
+[00:59:19.150] Dan McClellan: So that identity marker and that value judgment where they're using monotheism already to do what Robin points out is being done in the 19th century in an effort to try to distinguish themselves and primarily because they're on the losing end of imperialism and.
+[00:59:37.230] Dan McClellan: But they need to find a way to, to pump themselves up.
+[00:59:42.730] Dan Beecher: What, what era was Athenagoras?
+[00:59:45.690] Dan Beecher: Is it what.
+[00:59:46.090] David Burnett: I don't know.
+[00:59:46.450] Dan McClellan: This is late 2nd century CE, beginning of the 3rd century CE.
+[00:59:50.930] Dan McClellan: So this is right after the New Testament has been written.
+[00:59:53.410] Dan McClellan: It's still kind of crystallizing.
+[00:59:55.890] Dan McClellan: And these are the earliest, what they call apologists who are basically starting in the middle of the second century CE.
+[01:00:02.130] Dan McClellan: You get a bunch of, of Christians who are philosophers, who are thinkers, who are trying to make Christianity palatable for the Greco-Roman intelligentsia.
+[01:00:14.160] Dan McClellan: They're going to kind of meld and merge the philosophical frameworks of the day with Christianity to try to argue, hey, Christianity is compatible with all this.
+[01:00:25.080] Dan McClellan: In fact, Christianity is the best manifestation of everything that you're already saying, well.
+[01:00:31.200] David Burnett: Yeah, in explicit exceptionalism in Athenagoras.
+[01:00:34.690] David Burnett: I mean, going to the extreme, I mean, calling things like pagans, they're all, they just, they're all, you know, porneia.
+[01:00:42.770] David Burnett: going to the extreme, I mean, calling things like pagans, they're all, they just, they're all, you know, porneia. That's all they're doing in their worship of their gods.
+[01:00:45.330] David Burnett: And it's like we have the right readings of Homer, we have the right readings of this.
+[01:00:49.730] David Burnett: Everyone else is sort of, you know, they're seen as like the filthy other, you know.
+[01:00:54.290] Dan Beecher: Yeah, I mean, exceptionalism and othering is not new in any religious practice.
+[01:01:00.490] Dan Beecher: That, that, that is sort of a feature of most religions that I've encountered.
+[01:01:06.570] Dan Beecher: I would say like.
+[01:01:07.930] David Burnett: But I think one of his important points is that when you start talking about other cults to other deities that way, but our cult to our deity this way, it's, you know, this is all wrapped up in their monotheism.
+[01:01:25.210] David Burnett: So he's showing the rhetorical function of it.
+[01:01:28.090] David Burnett: It's like in your face and brutally obvious.
+[01:01:30.330] David Burnett: Then it might not be so much to someone who doesn't know the history of it in, in Christian, in early church fathers and afterwards, but if you know that history, you, you'd be more prone to catch it in the, in the more developing periods, you know, later.
+[01:01:47.610] Dan McClellan: Yeah.
+[01:01:48.050] David Burnett: And so the exceptionalism involved and what you can sneak in with that exceptionalism gets really dangerous, you know.
+[01:01:56.460] Dan Beecher: Well, there's so much more to talk about but alas, we need to cut this off.
+[01:02:01.180] Dan Beecher: So everything else is going to go to our patrons and that's going to include.
+[01:02:06.620] Dan Beecher: There's one more paper that we needed to talk about.
+[01:02:08.940] Dan Beecher: Is that right?
+[01:02:09.580] Dan McClellan: So we've got Josiah Bisbee's paper.
+[01:02:12.020] Dan McClellan: Josiah is another one of the organizers of this conference and a longtime friend of, of David's and he had a phenomenal paper entitled The Divine Council, Divine Multiplicity, Simplicity, and Gradations of Divinity in Late Antique Midrash.
+[01:02:25.190] Dan McClellan: Oh yeah, we've been waiting for the rabbinic literature.
+[01:02:28.230] Dan McClellan: His is all about that.
+[01:02:30.070] David Burnett: Epic.
+[01:02:30.950] Dan Beecher: Nice, nice.
+[01:02:31.790] Dan Beecher: And I also want to talk about like sort of situating all of this that we've been talking, talking about within sort of modern scholarship and, and, and sort of get a.
+[01:02:43.590] Dan Beecher: If you guys have, you're not allowed to answer this now, but if you have a shakedown of like where modern scholarship is with all of this, I'd love to talk about it.
+[01:02:51.950] Dan Beecher: But that's for our patrons only, I'm afraid.
+[01:02:54.390] Dan Beecher: If you become a ten dollar a month patron, all of the after parties are available on Patreon.
+[01:03:01.990] Dan Beecher: You can go to patreon.com/dataoverdogma.
+[01:03:06.710] Dan Beecher: You can also join at the five dollar month level and, and receive an early and ad free version of every show.
+[01:03:12.950] Dan Beecher: So, so we encourage you to do that if, if that's appealing to you.
+[01:03:18.480] Dan Beecher: If you want to reach out to us, contact@dataoverdogmapod.com is the address.
+[01:03:24.080] Dan Beecher: David, thank you so much for joining us.
+[01:03:26.360] Dan Beecher: We really appreciate it.
+[01:03:27.520] David Burnett: It's my pleasure guys and we will.
+[01:03:29.680] Dan Beecher: Talk to you all again next week.
+[01:03:31.600] Dan McClellan: Bye everybody.

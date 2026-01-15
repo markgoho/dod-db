@@ -52,7 +52,15 @@
         "mentions": 6
       },
       {
+        "tag": "Garden of Eden",
+        "mentions": 5
+      },
+      {
         "tag": "Kings",
+        "mentions": 4
+      },
+      {
+        "tag": "Mesopotamian",
         "mentions": 4
       },
       {
@@ -137,6 +145,10 @@
       },
       {
         "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Flood",
         "mentions": 1
       },
       {
@@ -556,6 +568,10 @@
         "mentions": 1
       },
       {
+        "tag": "Flood",
+        "mentions": 1
+      },
+      {
         "tag": "gods",
         "mentions": 1
       },
@@ -585,6 +601,10 @@
       },
       {
         "tag": "theophany",
+        "mentions": 1
+      },
+      {
+        "tag": "Tower of Babel",
         "mentions": 1
       },
       {
@@ -889,7 +909,15 @@
         "mentions": 1
       },
       {
+        "tag": "Hypostasis",
+        "mentions": 1
+      },
+      {
         "tag": "Israel",
+        "mentions": 1
+      },
+      {
+        "tag": "Mesopotamian",
         "mentions": 1
       },
       {
@@ -1117,6 +1145,10 @@
         "mentions": 1
       },
       {
+        "tag": "Martin Luther",
+        "mentions": 1
+      },
+      {
         "tag": "Matthew",
         "mentions": 1
       },
@@ -1126,6 +1158,10 @@
       },
       {
         "tag": "Trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "William Tyndale",
         "mentions": 1
       }
     ],
@@ -1237,6 +1273,10 @@
       },
       {
         "tag": "Hezekiah",
+        "mentions": 8
+      },
+      {
+        "tag": "Joram",
         "mentions": 8
       },
       {
@@ -1500,6 +1540,10 @@
         "mentions": 1
       },
       {
+        "tag": "Second Temple period",
+        "mentions": 1
+      },
+      {
         "tag": "source criticism",
         "mentions": 1
       },
@@ -1630,6 +1674,10 @@
         "mentions": 1
       },
       {
+        "tag": "Garden of Eden",
+        "mentions": 1
+      },
+      {
         "tag": "Gospel of John",
         "mentions": 1
       },
@@ -1718,6 +1766,10 @@
         "mentions": 7
       },
       {
+        "tag": "Philo of Alexandria",
+        "mentions": 7
+      },
+      {
         "tag": "Judaism",
         "mentions": 6
       },
@@ -1762,7 +1814,15 @@
         "mentions": 3
       },
       {
+        "tag": "Garden of Eden",
+        "mentions": 3
+      },
+      {
         "tag": "Jude",
+        "mentions": 3
+      },
+      {
+        "tag": "Mesopotamian",
         "mentions": 3
       },
       {
@@ -1884,6 +1944,14 @@
         "mentions": 13
       },
       {
+        "tag": "Latin Vulgate",
+        "mentions": 13
+      },
+      {
+        "tag": "William Tyndale",
+        "mentions": 13
+      },
+      {
         "tag": "Masoretic Text",
         "mentions": 12
       },
@@ -1906,6 +1974,14 @@
       {
         "tag": "Gospel of John",
         "mentions": 8
+      },
+      {
+        "tag": "Desiderius Erasmus",
+        "mentions": 6
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 6
       },
       {
         "tag": "Jeremiah",
@@ -2014,6 +2090,14 @@
       {
         "tag": "Samuel",
         "mentions": 2
+      },
+      {
+        "tag": "Textus Receptus",
+        "mentions": 2
+      },
+      {
+        "tag": "2 Chronicles",
+        "mentions": 1
       },
       {
         "tag": "apocalypse",
@@ -2223,6 +2307,10 @@
       {
         "tag": "Samaritans",
         "mentions": 1
+      },
+      {
+        "tag": "Textus Receptus",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -2343,6 +2431,10 @@
       },
       {
         "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "David Burnett",
         "mentions": 1
       },
       {
@@ -2470,6 +2562,10 @@
         "mentions": 7
       },
       {
+        "tag": "Mesopotamian",
+        "mentions": 5
+      },
+      {
         "tag": "Moses",
         "mentions": 5
       },
@@ -2495,6 +2591,10 @@
       },
       {
         "tag": "etiology",
+        "mentions": 3
+      },
+      {
+        "tag": "Garden of Eden",
         "mentions": 3
       },
       {
@@ -2778,6 +2878,10 @@
         "mentions": 1
       },
       {
+        "tag": "Flood",
+        "mentions": 1
+      },
+      {
         "tag": "Gospel of Mark",
         "mentions": 1
       },
@@ -3046,8 +3150,16 @@
         "mentions": 21
       },
       {
+        "tag": "William Tyndale",
+        "mentions": 18
+      },
+      {
         "tag": "Jesus",
         "mentions": 14
+      },
+      {
+        "tag": "Desiderius Erasmus",
+        "mentions": 13
       },
       {
         "tag": "Hebrew Bible",
@@ -3056,6 +3168,10 @@
       {
         "tag": "Matthew",
         "mentions": 9
+      },
+      {
+        "tag": "Textus Receptus",
+        "mentions": 7
       },
       {
         "tag": "Gospel of John",
@@ -3068,6 +3184,10 @@
       {
         "tag": "Book of Revelation",
         "mentions": 4
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 3
       },
       {
         "tag": "angel",
@@ -3083,6 +3203,10 @@
       },
       {
         "tag": "Hell",
+        "mentions": 2
+      },
+      {
+        "tag": "Latin Vulgate",
         "mentions": 2
       },
       {
@@ -3238,6 +3362,10 @@
         "mentions": 6
       },
       {
+        "tag": "Garden of Eden",
+        "mentions": 6
+      },
+      {
         "tag": "Moses",
         "mentions": 6
       },
@@ -3331,6 +3459,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Latin Vulgate",
         "mentions": 2
       },
       {
@@ -3506,6 +3638,10 @@
         "mentions": 6
       },
       {
+        "tag": "David Burnett",
+        "mentions": 6
+      },
+      {
         "tag": "Eschatology",
         "mentions": 6
       },
@@ -3519,6 +3655,10 @@
       },
       {
         "tag": "divine council",
+        "mentions": 5
+      },
+      {
+        "tag": "Philo of Alexandria",
         "mentions": 5
       },
       {
@@ -3543,6 +3683,10 @@
       },
       {
         "tag": "Judges",
+        "mentions": 3
+      },
+      {
+        "tag": "Second Temple period",
         "mentions": 3
       },
       {
@@ -3612,6 +3756,10 @@
       {
         "tag": "Torah",
         "mentions": 1
+      },
+      {
+        "tag": "Tower of Babel",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -3653,6 +3801,10 @@
     "tags": [
       {
         "tag": "Christianity",
+        "mentions": 34
+      },
+      {
+        "tag": "Flood",
         "mentions": 34
       },
       {
@@ -3702,6 +3854,10 @@
       {
         "tag": "Septuagint",
         "mentions": 10
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 8
       },
       {
         "tag": "Book of Enoch",
@@ -3796,6 +3952,10 @@
         "mentions": 2
       },
       {
+        "tag": "Latin Vulgate",
+        "mentions": 2
+      },
+      {
         "tag": "Babylon",
         "mentions": 1
       },
@@ -3809,6 +3969,10 @@
       },
       {
         "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "David Carr",
         "mentions": 1
       },
       {
@@ -4003,6 +4167,10 @@
         "mentions": 1
       },
       {
+        "tag": "Flood",
+        "mentions": 1
+      },
+      {
         "tag": "Jerusalem",
         "mentions": 1
       },
@@ -4118,6 +4286,10 @@
         "mentions": 3
       },
       {
+        "tag": "Flood",
+        "mentions": 3
+      },
+      {
         "tag": "Qumran",
         "mentions": 3
       },
@@ -4186,7 +4358,15 @@
         "mentions": 1
       },
       {
+        "tag": "Latin Vulgate",
+        "mentions": 1
+      },
+      {
         "tag": "manuscript",
+        "mentions": 1
+      },
+      {
+        "tag": "Mesopotamian",
         "mentions": 1
       },
       {
@@ -4309,6 +4489,10 @@
       },
       {
         "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Southern Baptist Convention",
         "mentions": 1
       },
       {
@@ -4555,6 +4739,10 @@
         "mentions": 1
       },
       {
+        "tag": "Latin Vulgate",
+        "mentions": 1
+      },
+      {
         "tag": "manuscript",
         "mentions": 1
       },
@@ -4675,6 +4863,10 @@
         "mentions": 2
       },
       {
+        "tag": "Philo of Alexandria",
+        "mentions": 2
+      },
+      {
         "tag": "Rapture",
         "mentions": 2
       },
@@ -4696,6 +4888,10 @@
       },
       {
         "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "David Burnett",
         "mentions": 1
       },
       {
@@ -4785,6 +4981,10 @@
         "mentions": 6
       },
       {
+        "tag": "Flood",
+        "mentions": 6
+      },
+      {
         "tag": "Judaism",
         "mentions": 5
       },
@@ -4826,6 +5026,10 @@
       },
       {
         "tag": "Kings",
+        "mentions": 2
+      },
+      {
+        "tag": "Mesopotamian",
         "mentions": 2
       },
       {
@@ -5045,6 +5249,10 @@
         "mentions": 3
       },
       {
+        "tag": "Mesopotamian",
+        "mentions": 3
+      },
+      {
         "tag": "Moses",
         "mentions": 3
       },
@@ -5118,6 +5326,10 @@
       },
       {
         "tag": "Euphrates",
+        "mentions": 1
+      },
+      {
+        "tag": "Garden of Eden",
         "mentions": 1
       },
       {
@@ -5250,6 +5462,10 @@
       },
       {
         "tag": "Book of Jonah",
+        "mentions": 3
+      },
+      {
+        "tag": "Garden of Eden",
         "mentions": 3
       },
       {
@@ -5425,6 +5641,10 @@
         "mentions": 3
       },
       {
+        "tag": "2 Chronicles",
+        "mentions": 2
+      },
+      {
         "tag": "apocalypse",
         "mentions": 1
       },
@@ -5547,6 +5767,10 @@
         "mentions": 6
       },
       {
+        "tag": "Philo of Alexandria",
+        "mentions": 6
+      },
+      {
         "tag": "Ritual Decalogue",
         "mentions": 5
       },
@@ -5648,6 +5872,10 @@
       },
       {
         "tag": "Samaritans",
+        "mentions": 1
+      },
+      {
+        "tag": "Second Temple period",
         "mentions": 1
       },
       {
@@ -6149,6 +6377,10 @@
         "mentions": 2
       },
       {
+        "tag": "Second Temple period",
+        "mentions": 2
+      },
+      {
         "tag": "Adam",
         "mentions": 1
       },
@@ -6190,6 +6422,10 @@
       },
       {
         "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Mesopotamian",
         "mentions": 1
       },
       {
@@ -6483,6 +6719,10 @@
         "mentions": 2
       },
       {
+        "tag": "Garden of Eden",
+        "mentions": 2
+      },
+      {
         "tag": "Jeremiah",
         "mentions": 2
       },
@@ -6527,6 +6767,10 @@
         "mentions": 1
       },
       {
+        "tag": "David Carr",
+        "mentions": 1
+      },
+      {
         "tag": "Gideon",
         "mentions": 1
       },
@@ -6552,6 +6796,10 @@
       },
       {
         "tag": "King Josiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Mesopotamian",
         "mentions": 1
       },
       {
@@ -6654,6 +6902,10 @@
       },
       {
         "tag": "Easter",
+        "mentions": 2
+      },
+      {
+        "tag": "Garden of Eden",
         "mentions": 2
       },
       {
@@ -6891,6 +7143,10 @@
         "mentions": 3
       },
       {
+        "tag": "Flood",
+        "mentions": 3
+      },
+      {
         "tag": "James",
         "mentions": 3
       },
@@ -6940,6 +7196,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Second Temple period",
         "mentions": 1
       },
       {
@@ -7086,6 +7346,10 @@
       },
       {
         "tag": "Ezekiel",
+        "mentions": 2
+      },
+      {
+        "tag": "Garden of Eden",
         "mentions": 2
       },
       {
@@ -7294,6 +7558,14 @@
         "mentions": 1
       },
       {
+        "tag": "Capernaum",
+        "mentions": 1
+      },
+      {
+        "tag": "Desiderius Erasmus",
+        "mentions": 1
+      },
+      {
         "tag": "Galilee",
         "mentions": 1
       },
@@ -7327,6 +7599,10 @@
       },
       {
         "tag": "Ten Commandments",
+        "mentions": 1
+      },
+      {
+        "tag": "Textus Receptus",
         "mentions": 1
       },
       {
@@ -7465,6 +7741,10 @@
       },
       {
         "tag": "Book of Revelation",
+        "mentions": 2
+      },
+      {
+        "tag": "Flood",
         "mentions": 2
       },
       {
@@ -7652,6 +7932,10 @@
         "mentions": 2
       },
       {
+        "tag": "Philo of Alexandria",
+        "mentions": 2
+      },
+      {
         "tag": "Septuagint",
         "mentions": 2
       },
@@ -7801,6 +8085,10 @@
       },
       {
         "tag": "Gospel of Mark",
+        "mentions": 3
+      },
+      {
+        "tag": "Second Temple period",
         "mentions": 3
       },
       {
@@ -8306,6 +8594,10 @@
         "mentions": 1
       },
       {
+        "tag": "Second Temple period",
+        "mentions": 1
+      },
+      {
         "tag": "textual criticism",
         "mentions": 1
       },
@@ -8448,6 +8740,10 @@
         "mentions": 3
       },
       {
+        "tag": "Flood",
+        "mentions": 3
+      },
+      {
         "tag": "Gospel of Mark",
         "mentions": 3
       },
@@ -8477,6 +8773,10 @@
       },
       {
         "tag": "Judas Iscariot",
+        "mentions": 2
+      },
+      {
+        "tag": "Megiddo",
         "mentions": 2
       },
       {
@@ -8941,7 +9241,15 @@
         "mentions": 1
       },
       {
+        "tag": "Martin Luther",
+        "mentions": 1
+      },
+      {
         "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Second Temple period",
         "mentions": 1
       }
     ],
@@ -9189,6 +9497,10 @@
       },
       {
         "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Garden of Eden",
         "mentions": 1
       },
       {
@@ -9502,6 +9814,10 @@
         "mentions": 1
       },
       {
+        "tag": "Philo of Alexandria",
+        "mentions": 1
+      },
+      {
         "tag": "Psalm",
         "mentions": 1
       },
@@ -9767,6 +10083,1221 @@
     "speakers": [
       "Dan McClellan",
       "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "9pKuCIMUV4s",
+    "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\"",
+    "publishedAt": "2024-04-22T00:00:00Z",
+    "processedAt": "2026-01-15T04:18:56.958Z",
+    "transcriptPath": "data/transcripts/2024-04-22-episode-55-april-22-2024-can-jesus-forgive-sin.txt",
+    "episodeNumber": 55,
+    "tags": [
+      {
+        "tag": "Jehu",
+        "mentions": 31
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 31
+      },
+      {
+        "tag": "Ahaziah",
+        "mentions": 26
+      },
+      {
+        "tag": "Joram",
+        "mentions": 12
+      },
+      {
+        "tag": "Megiddo",
+        "mentions": 12
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 11
+      },
+      {
+        "tag": "Israel",
+        "mentions": 8
+      },
+      {
+        "tag": "Judah",
+        "mentions": 8
+      },
+      {
+        "tag": "angel",
+        "mentions": 7
+      },
+      {
+        "tag": "Capernaum",
+        "mentions": 7
+      },
+      {
+        "tag": "Samaria",
+        "mentions": 7
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 7
+      },
+      {
+        "tag": "2 Chronicles",
+        "mentions": 6
+      },
+      {
+        "tag": "2 Kings",
+        "mentions": 6
+      },
+      {
+        "tag": "Kings",
+        "mentions": 6
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 5
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 5
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 5
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 5
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 4
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 4
+      },
+      {
+        "tag": "King David",
+        "mentions": 4
+      },
+      {
+        "tag": "Pontius Pilate",
+        "mentions": 4
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 3
+      },
+      {
+        "tag": "Moses",
+        "mentions": 3
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 3
+      },
+      {
+        "tag": "Book of Exodus",
+        "mentions": 2
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 2
+      },
+      {
+        "tag": "Peter",
+        "mentions": 2
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 1
+      },
+      {
+        "tag": "Bart Ehrman",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Gideon",
+        "mentions": 1
+      },
+      {
+        "tag": "Hagar",
+        "mentions": 1
+      },
+      {
+        "tag": "Judas Iscariot",
+        "mentions": 1
+      },
+      {
+        "tag": "King Saul",
+        "mentions": 1
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 1
+      },
+      {
+        "tag": "theology",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:19.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:01:19.000]",
+        "endTimestamp": "[00:23:51.483]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:23:51.483]",
+        "endTimestamp": "[00:53:13.000]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:53:13.000]",
+        "endTimestamp": "[00:53:58.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
+    ]
+  },
+  {
+    "videoId": "ZWm7gjCL3uA",
+    "title": "Episode 56 (April 29, 2024), \"The Genesis of Genesis\" with David Carr",
+    "publishedAt": "2024-04-29T00:00:00Z",
+    "processedAt": "2026-01-15T04:22:05.964Z",
+    "transcriptPath": "data/transcripts/2024-04-29-episode-56-april-29-2024-the-genesis-of-genesis-with-david-carr.txt",
+    "episodeNumber": 56,
+    "tags": [
+      {
+        "tag": "Genesis",
+        "mentions": 47
+      },
+      {
+        "tag": "Garden of Eden",
+        "mentions": 23
+      },
+      {
+        "tag": "Flood",
+        "mentions": 21
+      },
+      {
+        "tag": "Noah",
+        "mentions": 19
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 16
+      },
+      {
+        "tag": "Cain",
+        "mentions": 12
+      },
+      {
+        "tag": "Tower of Babel",
+        "mentions": 9
+      },
+      {
+        "tag": "gods",
+        "mentions": 8
+      },
+      {
+        "tag": "Mesopotamian",
+        "mentions": 8
+      },
+      {
+        "tag": "Israel",
+        "mentions": 7
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 6
+      },
+      {
+        "tag": "Adam",
+        "mentions": 4
+      },
+      {
+        "tag": "Canaan",
+        "mentions": 4
+      },
+      {
+        "tag": "Eve",
+        "mentions": 4
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 3
+      },
+      {
+        "tag": "forgery",
+        "mentions": 3
+      },
+      {
+        "tag": "theology",
+        "mentions": 3
+      },
+      {
+        "tag": "David Carr",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Shem",
+        "mentions": 2
+      },
+      {
+        "tag": "Torah",
+        "mentions": 2
+      },
+      {
+        "tag": "Assyria",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Canaanites",
+        "mentions": 1
+      },
+      {
+        "tag": "Ham",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Lamech",
+        "mentions": 1
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 1
+      },
+      {
+        "tag": "Nephilim",
+        "mentions": 1
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 1
+      },
+      {
+        "tag": "Syria",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:08.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:08.000]",
+        "endTimestamp": "[01:04:52.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:04:52.000]",
+        "endTimestamp": "[01:06:09.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "David Carr",
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "pXbbaMXd62k",
+    "title": "Episode 57 (May 6, 2024), \"Does the Bible say the Earth is Flat?\"",
+    "publishedAt": "2024-05-06T00:00:00Z",
+    "processedAt": "2026-01-15T04:25:07.878Z",
+    "transcriptPath": "data/transcripts/2024-05-06-episode-57-may-6-2024-does-the-bible-say-the-earth-is-flat.txt",
+    "episodeNumber": 57,
+    "tags": [
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 14
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 11
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 6
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 5
+      },
+      {
+        "tag": "Book of Job",
+        "mentions": 4
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 4
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 3
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "David Carr",
+        "mentions": 3
+      },
+      {
+        "tag": "gods",
+        "mentions": 3
+      },
+      {
+        "tag": "King David",
+        "mentions": 3
+      },
+      {
+        "tag": "Zechariah",
+        "mentions": 3
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "Athenagoras",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Proverbs",
+        "mentions": 1
+      },
+      {
+        "tag": "divine council",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "El",
+        "mentions": 1
+      },
+      {
+        "tag": "Eve",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:43.175]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "conspiracy-watch",
+        "startTimestamp": "[00:02:43.175]",
+        "endTimestamp": "[00:33:10.792]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "opportunities-for-growth",
+        "startTimestamp": "[00:33:10.792]",
+        "endTimestamp": "[00:50:34.000]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:50:34.000]",
+        "endTimestamp": "[00:51:17.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "KDkyHw3nE0w",
+    "title": "Episode 58 (May 13, 2024), \"Translation Frustration\"",
+    "publishedAt": "2024-05-13T00:00:00Z",
+    "processedAt": "2026-01-15T04:28:50.788Z",
+    "transcriptPath": "data/transcripts/2024-05-13-episode-58-may-13-2024-translation-frustration.txt",
+    "episodeNumber": 58,
+    "tags": [
+      {
+        "tag": "King James Version",
+        "mentions": 30
+      },
+      {
+        "tag": "gods",
+        "mentions": 18
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 18
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 15
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 15
+      },
+      {
+        "tag": "Israel",
+        "mentions": 11
+      },
+      {
+        "tag": "Judges",
+        "mentions": 11
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 10
+      },
+      {
+        "tag": "theology",
+        "mentions": 10
+      },
+      {
+        "tag": "angel",
+        "mentions": 8
+      },
+      {
+        "tag": "Book of Exodus",
+        "mentions": 8
+      },
+      {
+        "tag": "William Tyndale",
+        "mentions": 8
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 6
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 6
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 5
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 5
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 4
+      },
+      {
+        "tag": "Desiderius Erasmus",
+        "mentions": 4
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 4
+      },
+      {
+        "tag": "Sir Thomas More",
+        "mentions": 4
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 4
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 3
+      },
+      {
+        "tag": "Monotheism",
+        "mentions": 3
+      },
+      {
+        "tag": "Textus Receptus",
+        "mentions": 3
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 2
+      },
+      {
+        "tag": "Adam",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 2
+      },
+      {
+        "tag": "Garden of Eden",
+        "mentions": 2
+      },
+      {
+        "tag": "Latin Vulgate",
+        "mentions": 2
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 2
+      },
+      {
+        "tag": "Michael",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "divine council",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Elijah",
+        "mentions": 1
+      },
+      {
+        "tag": "Irenaeus",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 1
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 1
+      },
+      {
+        "tag": "Persia",
+        "mentions": 1
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:06:34.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:06:34.000]",
+        "endTimestamp": "[00:19:15.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:19:15.000]",
+        "endTimestamp": "[00:32:19.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:32:19.000]",
+        "endTimestamp": "[00:42:25.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:42:25.000]",
+        "endTimestamp": "[00:49:18.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:49:18.000]",
+        "endTimestamp": "[00:53:47.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:53:47.000]",
+        "endTimestamp": "[00:59:11.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:59:11.000]",
+        "endTimestamp": "[01:08:46.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:08:46.000]",
+        "endTimestamp": "[01:10:08.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "BdJ_8a4ospk",
+    "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett",
+    "publishedAt": "2024-05-20T00:00:00Z",
+    "processedAt": "2026-01-15T04:32:12.346Z",
+    "transcriptPath": "data/transcripts/2024-05-20-episode-59-may-20-2024-the-ends-of-monotheism-w-david-burnett.txt",
+    "episodeNumber": 59,
+    "tags": [
+      {
+        "tag": "Monotheism",
+        "mentions": 78
+      },
+      {
+        "tag": "gods",
+        "mentions": 39
+      },
+      {
+        "tag": "Paul",
+        "mentions": 21
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 18
+      },
+      {
+        "tag": "Hypostasis",
+        "mentions": 14
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 10
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 10
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 9
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 7
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 6
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 6
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 5
+      },
+      {
+        "tag": "Athenagoras",
+        "mentions": 4
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 4
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 4
+      },
+      {
+        "tag": "Moses",
+        "mentions": 4
+      },
+      {
+        "tag": "Second Temple period",
+        "mentions": 4
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 4
+      },
+      {
+        "tag": "Debra Scoggins Ballentine",
+        "mentions": 3
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "theology",
+        "mentions": 2
+      },
+      {
+        "tag": "angel",
+        "mentions": 1
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "Baal",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Exodus",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Proverbs",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "David Burnett",
+        "mentions": 1
+      },
+      {
+        "tag": "divine council",
+        "mentions": 1
+      },
+      {
+        "tag": "El",
+        "mentions": 1
+      },
+      {
+        "tag": "Elephantine",
+        "mentions": 1
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 1
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Herod the Great",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Latin Vulgate",
+        "mentions": 1
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 1
+      },
+      {
+        "tag": "Romans",
+        "mentions": 1
+      },
+      {
+        "tag": "Tower of Babel",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:55.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:55.000]",
+        "endTimestamp": "[01:01:56.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:01:56.000]",
+        "endTimestamp": "[01:03:37.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "David Burnett",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "irflmh20e8Y",
+    "title": "Episode 60 (May 27, 2024), \"Silence, Woman!\"",
+    "publishedAt": "2024-05-28T00:00:00Z",
+    "processedAt": "2026-01-15T04:35:27.114Z",
+    "transcriptPath": "data/transcripts/2024-05-28-episode-60-may-27-2024-silence-woman.txt",
+    "episodeNumber": 60,
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 14
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 13
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 11
+      },
+      {
+        "tag": "Paul",
+        "mentions": 11
+      },
+      {
+        "tag": "Priscilla",
+        "mentions": 11
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 10
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 9
+      },
+      {
+        "tag": "Aquila",
+        "mentions": 7
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 7
+      },
+      {
+        "tag": "1 Timothy",
+        "mentions": 5
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 5
+      },
+      {
+        "tag": "Moses",
+        "mentions": 4
+      },
+      {
+        "tag": "Eve",
+        "mentions": 3
+      },
+      {
+        "tag": "Adam",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 2
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "2nd Timothy",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Pastoral Epistles",
+        "mentions": 1
+      },
+      {
+        "tag": "Saint Titus",
+        "mentions": 1
+      },
+      {
+        "tag": "Southern Baptist Convention",
+        "mentions": 1
+      },
+      {
+        "tag": "textual criticism",
+        "mentions": 1
+      },
+      {
+        "tag": "Textus Receptus",
+        "mentions": 1
+      },
+      {
+        "tag": "theology",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:16.547]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "textual-healing",
+        "startTimestamp": "[00:01:16.547]",
+        "endTimestamp": "[00:26:46.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "textual-healing",
+        "startTimestamp": "[00:26:46.000]",
+        "endTimestamp": "[00:53:33.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:53:33.000]",
+        "endTimestamp": "[00:54:30.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
     ]
   }
 ]

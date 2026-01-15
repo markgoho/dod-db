@@ -2,17 +2,20 @@
  * Shared constants for DoD Tools
  */
 
+import type { TagCategory } from './utilities.js';
+
 // API base URL (tools-server.ts runs on port 3001)
 export const API_BASE_URL = 'http://localhost:3001';
 
 // Category labels mapping (used across tools)
-export const CATEGORY_LABELS: Record<string, string> = {
+export const CATEGORY_LABELS: Record<TagCategory, string> = {
   character: 'Character',
-  person: 'People',
+  person: 'Person',
   place: 'Place',
-  people: 'People Groups',
+  people: 'People',
   literature: 'Literature',
   theology: 'Theology',
   scholarship: 'Scholarship',
   religion: 'Religion',
+  event: 'Event',
 };

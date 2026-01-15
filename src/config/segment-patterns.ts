@@ -20,9 +20,11 @@ export type SegmentType =
   | 'main-content'
   | 'mcclellan-911'
   | 'nature-of-god'
+  | 'opportunities-for-growth'
   | 'outro'
   | 'segment'
   | 'taking-issue'
+  | 'textual-healing'
   | 'thats-history'
   | 'urban-legends'
   | 'what-does-that-mean'
@@ -51,8 +53,10 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'main-content': 'Main Content',
   'mcclellan-911': 'McClellan 911',
   'nature-of-god': 'Nature of God',
+  'opportunities-for-growth': 'Opportunities for Growth',
   segment: 'Segment (Unknown)',
   'taking-issue': 'Taking Issue',
+  'textual-healing': 'Textual Healing',
   'thats-history': "That's History",
   'urban-legends': 'Urban Legends',
   'what-does-that-mean': 'What Does That Mean?',
@@ -84,8 +88,10 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'main-content': '#64748b', // slate
   'mcclellan-911': '#ec4899', // pink
   'nature-of-god': '#3b82f6', // blue-500 (divine/theological)
+  'opportunities-for-growth': '#2563eb', // blue-600 (learning/professional development)
   segment: '#9ca3af', // gray-400 (neutral/unknown)
   'taking-issue': '#ea580c', // orange-600 (debate/critique)
+  'textual-healing': '#0891b2', // cyan-600 (textual analysis/manuscripts)
   'thats-history': '#84cc16', // lime-500 (lime green)
   'urban-legends': '#8b5cf6', // violet
   'what-does-that-mean': '#f59e0b', // amber
@@ -162,6 +168,11 @@ export const SEGMENT_PATTERNS: Record<
     /welcome to.*taking issue/i,
     /let'?s.*taking issue/i,
   ],
+  'textual-healing': [
+    /textual healing/i,
+    /welcome to.*textual healing/i,
+    /segment.*textual healing/i,
+  ],
   'thats-history': [/that'?s history/i, /welcome to.*that'?s history/i],
   'know-your-bible': [
     /know your bible/i,
@@ -179,6 +190,11 @@ export const SEGMENT_PATTERNS: Record<
     /nature of god/i,
     /welcome to.*nature of god/i,
     /segment.*nature of god/i,
+  ],
+  'opportunities-for-growth': [
+    /opportunities for growth/i,
+    /welcome to.*opportunities for growth/i,
+    /segment.*opportunities for growth/i,
   ],
   'ex-eventu': [
     /ex eventu/i,
@@ -232,8 +248,10 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
   'main-content': 'Primary discussion topic of the episode',
   'mcclellan-911': 'Listener questions answered by Dan McClellan',
   'nature-of-god': 'Theological discussion about the nature and attributes of God',
+  'opportunities-for-growth': 'Revisiting previous positions, acknowledging mistakes, and discussing personal or scholarly growth',
   segment: 'Unidentified segment type (placeholder)',
   'taking-issue': 'Critical analysis and debate of controversial biblical or theological topics',
+  'textual-healing': 'Examining textual criticism, manuscript variants, and biblical text transmission',
   'thats-history': 'Historical context and background for biblical events',
   'urban-legends': 'Examining popular myths and misconceptions about the Bible',
   'what-does-that-mean': 'Explaining biblical/scholarly terminology and concepts',
