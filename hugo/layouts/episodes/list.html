@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}
+    <div class="section-description">{{ . }}</div>
+  {{ end }}
+
+  <div class="episodes-list">
+    {{ range sort .Pages ".Params.episodeNumber" "desc" }}
+      <article class="episode-card">
+        <a href="{{ .RelPermalink }}">
+          <h2>Episode {{ .Params.episodeNumber }}: {{ .Title }}</h2>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "January 2, 2006" }}
+          </time>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+{{ end }}

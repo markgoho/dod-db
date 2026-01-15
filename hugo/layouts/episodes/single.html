@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <article class="episode">
+    <header class="episode-header">
+      <h1>Episode {{ .Params.episodeNumber }}: {{ .Title }}</h1>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ .Date.Format "January 2, 2006" }}
+      </time>
+
+      {{ with .Params.speakers }}
+        <p class="episode-speakers">
+          {{ delimit . ", " }}
+        </p>
+      {{ end }}
+    </header>
+
+    <section class="episode-transcript">
+      <h2>Transcript</h2>
+      <div class="transcript-content">
+        {{ .Content }}
+      </div>
+    </section>
+  </article>
+{{ end }}

@@ -17,6 +17,7 @@ import {
   getAudioDuration,
 } from './detect-segments.js';
 import { identifySegmentTypes } from './identify-segment-types.js';
+import { generateHugoEpisode } from './generate-hugo-episode.js';
 import { writeToFile } from '../storage/file.js';
 import {
   isVideoProcessed,
@@ -362,6 +363,13 @@ export async function processYouTubeVideo(
 
   // Analyze corrections for learning (compare raw vs corrected)
   await analyzeCorrections(transcriptWithNames, correctedTranscript, videoId);
+
+  // Generate Hugo episode page
+  console.log('Generating Hugo episode page...');
+  const updatedVideo = await getVideoById(videoId);
+  if (updatedVideo) {
+    await generateHugoEpisode(updatedVideo);
+  }
 
   console.log('Done!');
 

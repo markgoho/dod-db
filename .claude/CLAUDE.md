@@ -36,6 +36,7 @@ This is the canonical way to kick off the full pipeline. It:
 7. Corrects transcript (deterministic + Gemini 3.0 Flash)
 8. Saves final transcript (`.txt`, committed to git)
 9. Updates `data/processed-videos.json` tracking
+10. Generates Hugo episode page at `hugo/content/episodes/{episodeNumber}/`
 
 **Options:**
 
@@ -85,6 +86,38 @@ Cost savings:
 - `bun run src/scripts/transcript-qa.ts` - Run Q&A over indexed transcripts
 - `bun run src/scripts/check-new-episodes.ts` - Check for and process new episodes (used by GitHub Actions)
 - `bun run src/scripts/reprocess-tags.ts` - Reprocess tags for all episodes after vocabulary changes
+- `bun run src/scripts/generate-hugo-episodes.ts` - Generate Hugo content pages from processed videos
+
+### Hugo Episode Page Generation
+
+Generates Hugo content pages from `data/processed-videos.json` and transcript files.
+
+**Usage:**
+
+```bash
+# Generate all episode pages
+bun run src/scripts/generate-hugo-episodes.ts --all
+
+# Generate only the newest episode (highest episode number)
+bun run src/scripts/generate-hugo-episodes.ts --newest
+
+# Generate a specific episode
+bun run src/scripts/generate-hugo-episodes.ts --episode 42
+```
+
+**Output:**
+
+- Creates `hugo/content/episodes/{episodeNumber}/index.md` for each episode
+- Frontmatter includes: title, date, episodeNumber, videoId, tags, speakers
+- Body contains full transcript content
+
+**Automatic generation:** The YouTube processing pipeline automatically generates the Hugo episode page after processing completes.
+
+**Hugo site:**
+
+- Run `cd hugo && hugo server` to preview
+- Episode pages at `/episodes/{number}/`
+- Tag taxonomy pages at `/tags/` and `/tags/{tag-name}/`
 
 ### Internal Tools
 
@@ -440,6 +473,7 @@ bun run experiments/runners/model-comparison.ts --all
 │   ├── scripts/             # CLI entry points
 │   │   ├── process-youtube.ts # Run full YouTube processing pipeline
 │   │   ├── reprocess-tags.ts # Reprocess tags for all episodes
+│   │   ├── generate-hugo-episodes.ts # Generate Hugo content from processed videos
 │   │   ├── tools-server.ts # Unified web tools server (port 3000)
 │   │   └── transcript-qa.ts     # Run Q&A function
 │   ├── ai.ts                # Google AI client configuration
@@ -458,6 +492,11 @@ bun run experiments/runners/model-comparison.ts --all
 │   ├── lib/                 # Shared utilities (accuracy, cost, parallel)
 │   ├── runners/             # Experiment scripts (baseline, parallel, model)
 │   └── results/             # Experiment output (gitignored)
+├── hugo/                     # Hugo static site for episode pages
+│   ├── hugo.toml            # Hugo configuration
+│   ├── content/episodes/    # Generated episode content (from generate-hugo-episodes.ts)
+│   ├── layouts/episodes/    # Episode page templates
+│   └── assets/scss/         # SCSS stylesheets
 ├── functions/                # Firebase Cloud Functions
 └── firebase.json             # Firebase project configuration
 ```

@@ -1,11 +1,11 @@
 baseURL = 'https://dod-db.web.app/'
 languageCode = 'en-us'
-title = 'DoD DB'
+title = 'Data Over Dogma'
 enableRobotsTXT = true
 enableGitInfo = true
 
 [params]
-  description = "DoD DB"
+  description = "Increasing public access to the academic study of the Bible and religion and combating the spread of misinformation"
 
 [frontmatter]
   lastmod = [':git', 'lastmod', ':fileModTime', 'date', 'publishDate']
@@ -19,8 +19,11 @@ enableGitInfo = true
     extended = true
     min = "0.129.0"
 
-# [taxonomies]
-#   tag = "tags"
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  episodes = "/episodes/:contentbasename/"
 
 
 

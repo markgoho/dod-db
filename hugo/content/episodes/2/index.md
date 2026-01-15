@@ -1,0 +1,610 @@
+---
+title: God's Wife
+date: 2023-04-17T00:00:00Z
+episodeNumber: 2
+videoId: luJhJvFzpew
+tags:
+  - YHWH
+  - gods
+  - child sacrifice
+  - Hebrew Bible
+  - Molek
+  - theology
+  - Ezekiel
+  - Book of Isaiah
+  - El
+  - archaeology
+  - Asherah
+  - Israel
+  - Jerusalem
+  - Adam
+  - Christianity
+  - Jesus
+  - circumcision
+  - Isaac
+  - Abraham
+  - Genesis
+  - Jephthah
+  - Judah
+  - Ugarit
+  - Baal
+  - Book of Job
+  - Carthage
+  - divine council
+  - Gospel of John
+  - Hebrews
+  - Isaiah
+  - angel
+  - Babylon
+  - corporeal deity
+  - Deuteronomy
+  - Egypt
+  - Elephantine
+  - Jeremiah
+  - Judges
+  - Kings
+  - Masoretic Text
+  - New Testament
+  - Psalm
+  - Syria
+  - theophany
+  - Trinity
+speakers:
+  - Francesca Stavrakopoulou
+  - Dan Beecher
+  - Dan McClellan
+draft: false
+---
+
+[00:00:02] Francesca Stavrakopoulou: I think that's kind of like one of the common misconceptions is that goddesses were all about fertility.
+[00:00:06] Francesca Stavrakopoulou: They weren't, they were about warfare as much as they were about nurturing.
+[00:00:14] Dan Beecher: Well, Dan, we are very fortunate today to have a renowned guest on the show.
+[00:00:22] Dan Beecher: Someone with whom you, Dan, are pretty familiar.
+[00:00:24] Dan Beecher: Why don't you introduce our guest and tell our friends listening and viewing who she is and what she's all about?
+[00:00:32] Dan McClellan: Of course.
+[00:00:33] Dan McClellan: So today I'm very happy to have my former dissertation supervisor, Francesca Stavrakopoulou, professor of Hebrew Bible and Ancient Religion at Exeter University, former head of the Department of Theology and Religion, which is still the name on my doctoral dissertation.
+[00:00:54] Dan McClellan: Welcome to the show, Francesca or Professor Stavrakopoulou.
+[00:00:58] Dan McClellan: How has your day been?
+[00:01:00] Dan McClellan: I hear it's a little hectic over there right now in the academic world.
+[00:01:04] Francesca Stavrakopoulou: Yeah.
+[00:01:05] Francesca Stavrakopoulou: Hi.
+[00:01:06] Francesca Stavrakopoulou: It's.
+[00:01:07] Francesca Stavrakopoulou: It's really nice to be talking to two friendly people.
+[00:01:09] Francesca Stavrakopoulou: It's been.
+[00:01:10] Francesca Stavrakopoulou: Things are kind of chaotic in the academic world and we've been having various strikes and whatnot, so.
+[00:01:16] Francesca Stavrakopoulou: Yeah, but it's very nice to talk to you today.
+[00:01:19] Dan Beecher: Yeah, wonderful to have you.
+[00:01:21] Dan McClellan: I know that one of your priorities is the welfare, the well-being of your students, and I think I've.
+[00:01:29] Dan McClellan: I've met one or two of your students in the past as well as some colleagues of yours there in Exeter.
+[00:01:34] Dan McClellan: I hope everybody is hopeful about the outcome of the discussions there, but it sounds like there's a lot of work left to do.
+[00:01:43] Francesca Stavrakopoulou: Yeah, I absolutely think so.
+[00:01:44] Francesca Stavrakopoulou: I think, you know, one of the things about academia, particularly in the UK, is that a lot of government funding has gone towards what we call STEM subjects, so science and technology and engineering, and it makes things harder for those of us in the humanities, particularly those of us who focus on ancient cultures to kind of justify our existence sometimes.
+[00:02:06] Francesca Stavrakopoulou: But, you know, as we know, things like the Bible remain hugely relevant culturally.
+[00:02:11] Francesca Stavrakopoulou: I mean, whether we believe it or not, the Bible is a cultural icon and remains this incredibly important collection of texts to which various people refer and they, you know, they also use these texts to beat other people over the head with.
+[00:02:29] Francesca Stavrakopoulou: So, yeah, it's.
+[00:02:31] Francesca Stavrakopoulou: It's kind of hard sometimes, you know, when you're trying to explain to your paymasters just quite how important this work can be.
+[00:02:40] Dan McClellan: Yeah, yeah.
+[00:02:40] Dan McClellan: We have similar concerns here with the corporatization of higher education.
+[00:02:44] Dan McClellan: And ironically, the Bible is frequently embedded in the very ideological foundations of those movements towards that corporatization, which seeks to try to invalidate some of the research that you and I and others are doing.
+[00:02:59] Dan Beecher: Yeah, that's an interesting point.
+[00:03:01] Dan Beecher: Francesca, you, you, you briefly mentioned that, you know, you said the Bible is important, whether, whether you're a believer or not, you're not a believer.
+[00:03:09] Dan Beecher: Is that right?
+[00:03:10] Francesca Stavrakopoulou: Yeah, yeah, I never have been and, you know, I, I never will be.
+[00:03:18] Dan Beecher: Does, does it, do you find pushback in the world of scholarship because of your atheism?
+[00:03:26] Francesca Stavrakopoulou: That's a really interesting question because, I mean, I would say that most scholars in my field are religious in some way or another.
+[00:03:36] Francesca Stavrakopoulou: You know, we have a lot of Jewish colleagues, a lot of Christian colleagues, and every kind of flavor therein, people that are studying these ancient texts and cultures and archaeological sites.
+[00:03:46] Francesca Stavrakopoulou: But more often than not, people tend to, not to.
+[00:03:50] Francesca Stavrakopoulou: Well, I'd say that there's no reason why somebody who has a religious commitment or investment in these texts can't produce good scholarship.
+[00:03:59] Francesca Stavrakopoulou: They absolutely can and they absolutely do.
+[00:04:02] Francesca Stavrakopoulou: On the other hand, sometimes I think some people have found me unsettling or are a bit uncomfortable with me because I am quite outspoken about my atheism, but primarily because I'm on a, I'm often on a public stage or, you know, I've found myself on this public platform and people always assume, oh, you study the Bible, you must be religious.ied the Bible, you must be religious.
+[00:04:25] Francesca Stavrakopoulou: And when they realize that I'm not, they just can't understand it.
+[00:04:27] Francesca Stavrakopoulou: So people think, oh, did you, Were you religious?
+[00:04:30] Francesca Stavrakopoulou: And you lost your faith through the academic study of the Bible, which is not the case at all.
+[00:04:34] Francesca Stavrakopoulou: I never have been religious.
+[00:04:36] Francesca Stavrakopoulou: I was just really interested in these texts or other people kind of feel that somehow the Bible doesn't belong to me.
+[00:04:43] Francesca Stavrakopoulou: How dare I kind of ask these questions of these texts or interrogate these, these particular traditions, you know, what right have I got?
+[00:04:51] Francesca Stavrakopoulou: But we all have a right to these texts.
+[00:04:53] Francesca Stavrakopoulou: You know, as I said, that the Bible is a cultural icon whether we like it or not.
+[00:04:57] Francesca Stavrakopoulou: And it shapes and continues to shape so many of our cultural preferences and assumptions and our sort of ticks and twitches about the world.
+[00:05:06] Francesca Stavrakopoulou: And so we absolutely, I think it's our responsibility to engage with these texts, particularly if you're coming from a personal perspective that may be non religious or secular.
+[00:05:18] Dan Beecher: Yeah, all you have to do is look at the fact that the two hosts of this podcast are both of European origin with Hebrew names.
+[00:05:27] Dan Beecher: Two Daniels, you know what I mean?
+[00:05:28] Dan Beecher: To know how impactful the Bible has been across society.
+[00:05:33] Dan Beecher: So it seems it's definitely worthy, I suppose, of study whether you're a believer or not.
+[00:05:40] Dan Beecher: But I do Imagine that the concept of theology, because that's a different study than what you do.
+[00:05:48] Dan Beecher: Right.
+[00:05:48] Dan Beecher: Your.
+[00:05:48] Dan Beecher: Your.
+[00:05:49] Dan Beecher: Your study is not theological in nature.
+[00:05:52] Francesca Stavrakopoulou: No.
+[00:05:52] Francesca Stavrakopoulou: I mean, it intersects with a lot of theological ideas.
+[00:05:56] Francesca Stavrakopoulou: So, you know, theology is basically talk about God, ultimately.
+[00:06:00] Francesca Stavrakopoulou: But within academia, if you're described as a theologian, that generally means that you are interested in sort of kind of theories about the nature of God and the ways in which that impacts your understanding of why and how the world is and our relationships with the divine.
+[00:06:23] Francesca Stavrakopoulou: It assumes the reality, if you like, of the divine.
+[00:06:26] Francesca Stavrakopoulou: So, you know, for a lot of us, you know, like, you know, scholars of religion, you know, if you call them a theologian, a lot of us would like to.
+[00:06:34] Francesca Stavrakopoulou: Bristle.
+[00:06:36] Dan Beecher: It's an insult.
+[00:06:38] Francesca Stavrakopoulou: Yeah.
+[00:06:39] Francesca Stavrakopoulou: To be frank.
+[00:06:40] Francesca Stavrakopoulou: Yeah, I find it kind of insulting.
+[00:06:44] Francesca Stavrakopoulou: But that's not to say that equally, theologians are doing incredibly important work as well, particularly when it comes to setting certain doctrinal positions, say, within Christianity within their kind of cultural, historical context.
+[00:06:56] Francesca Stavrakopoulou: That's really important.
+[00:06:58] Francesca Stavrakopoulou: Things like notions of the Trinity emerged within a very particular cultural dynamic and time.
+[00:07:06] Francesca Stavrakopoulou: And we can understand why those particular theories came about because of the cultural context in which they were being debated.
+[00:07:13] Francesca Stavrakopoulou: But, yeah, like, I am definitely not a theologian, but I do engage with theological ideas because those are the ideas that are so often retrojected back into these ancient texts or retrojected back onto archaeological artifacts.
+[00:07:28] Francesca Stavrakopoulou: And so I quite often find myself sort of trying to argue that we need to disentangle these later confessional interpretations of this material from their likely original historical context and.
+[00:07:41] Francesca Stavrakopoulou: And framings, if you like.
+[00:07:43] Dan McClellan: I know I am.
+[00:07:44] Dan McClellan: I'm frequently called a theologian as well.
+[00:07:47] Dan McClellan: And part of it is because that degree that I got says Theology and religion.
+[00:07:50] Francesca Stavrakopoulou: Yeah.
+[00:07:51] Dan McClellan: And I have to remind people that's just the name of the department.
+[00:07:54] Dan Beecher: Yeah, you're in the.
+[00:07:55] Dan Beecher: And religion part, not the theology part.
+[00:07:58] Francesca Stavrakopoulou: Exactly.
+[00:07:59] Francesca Stavrakopoulou: And.
+[00:07:59] Francesca Stavrakopoulou: But, you know, that's a really good example.now, that is a really good example.
+[00:08:00] Francesca Stavrakopoulou: It is a hangover from, particularly within European academia, the ways in which the only time you really got to study these.
+[00:08:08] Francesca Stavrakopoulou: These texts, these biblical texts was, you know, if you were doing theology, and you were doing theology because you were probably a priest.
+[00:08:15] Francesca Stavrakopoulou: And so, you know, it kind of reflects that much older heritage and legacy of.
+[00:08:21] Francesca Stavrakopoulou: Of what the kind of scholarly inquiry into the Bible was all about.
+[00:08:24] Francesca Stavrakopoulou: It was primarily performed by religious people, whether they were rabbis or priests or whatever.
+[00:08:30] Francesca Stavrakopoulou: And they were usually men, obviously.
+[00:08:32] Dan McClellan: Yeah, obviously.
+[00:08:33] Dan Beecher: Well, and that is an interesting point, too.
+[00:08:34] Dan Beecher: Sorry, Dan, I don't mean to cut you off, but I do want you, Francesca, to talk a little bit about what it is like being a woman in biblical scholarship.
+[00:08:46] Dan Beecher: Because it seems like that too is probably unusual or at the very least could be treated differently.
+[00:08:57] Francesca Stavrakopoulou: Yeah.
+[00:08:58] Dan Beecher: Have you found that that is the case?
+[00:09:01] Francesca Stavrakopoulou: Have you seen the internet?
+[00:09:06] Francesca Stavrakopoulou: Yeah, of course I have.
+[00:09:07] Francesca Stavrakopoulou: I mean, it is something that has.
+[00:09:10] Francesca Stavrakopoulou: Being othered in various ways has followed me around my career ever since I did my doctorate.
+[00:09:17] Francesca Stavrakopoulou: And I think it is not just because I am a woman.
+[00:09:20] Francesca Stavrakopoulou: You know, there are lots of women in academia now, but like in every other aspect of academia, women are still like people of color, like people of a certain sort of socioeconomic class.
+[00:09:31] Francesca Stavrakopoulou: There are all sorts of ways in which people are othered and marginalized within our disciplines and within academic structures themselves.
+[00:09:39] Francesca Stavrakopoulou: So for example, the gender pay gap is still, you know, live and kicking.
+[00:09:43] Francesca Stavrakopoulou: When you look at academic pay structures, women effectively stop being paid for doing the same job as men in early November in any given year.
+[00:09:51] Francesca Stavrakopoulou: I mean, that is the kind of way it works out.
+[00:09:54] Francesca Stavrakopoulou: So, yeah, being a woman is still different.
+[00:09:59] Francesca Stavrakopoulou: You are still treated differently, I think, in some ways.
+[00:10:02] Francesca Stavrakopoulou: But being a woman in biblical studies, yeah, absolutely.
+[00:10:06] Francesca Stavrakopoulou: That is hard and I think it is harder than being an atheist in biblical studies.
+[00:10:12] Francesca Stavrakopoulou: Personally, I found it to be harder because, I mean, I have spoken and written about this in the past, but I think women are judged far more in terms of what they look like and how they present themselves than men are.
+[00:10:27] Francesca Stavrakopoulou: And rather than people paying attention to a woman's scholarship and her teaching and her publications, people automatically, quite often, and they are normally men, not always, but normally men, they tend to judge these scholars in terms of how they look or how they dress.
+[00:10:47] Francesca Stavrakopoulou: And that pisses me off because it has been the case ever since.
+[00:10:52] Francesca Stavrakopoulou: Well, yeah, but it has been the case ever since.
+[00:10:55] Francesca Stavrakopoulou: I think there is a sense in which, you know, a colleague of mine commented on something the other day, you know, and she pointed out, yeah, and it was in relation to somebody being unpleasant about me publicly.
+[00:11:08] Francesca Stavrakopoulou: And she said, you know, you never hear it said about a male scholar, oh, he only got that job because, you know, he wears nice suits, or he only got that job because he is good looking.
+[00:11:17] Francesca Stavrakopoulou: You never hear that ever about male scholars, but you often hear it about women.
+[00:11:25] Francesca Stavrakopoulou: So yeah, it is not easy.
+[00:11:29] Dan Beecher: I think that is fair.
+[00:11:30] Dan Beecher: I think that is fair.
+[00:11:31] Dan Beecher: Speaking of your scholarship and judging you on your scholarship, however, I think we should dive into a few of the things that you have worked on, that you have written about.
+[00:11:40] Dan Beecher: Dan, you have studied up.
+[00:11:43] Dan Beecher: You know the stuff.
+[00:11:45] Francesca Stavrakopoulou: You know me.
+[00:11:46] Dan McClellan: Yeah, yeah, I know you.ow you.
+[00:11:48] Dan McClellan: And I wanted to use the discussion of gender and contemporary academia as a springboard into.
+[00:11:57] Dan McClellan: You've done a lot of research on sex and gender in the ancient world, as well as in ancient concepts of the divine.
+[00:12:05] Dan McClellan: And I'm particularly interested in a lot of that research.
+[00:12:09] Dan McClellan: Can you tell us what is unique and interesting about the divine profiles of the goddesses in ancient Southwest Asia and even in ancient Israel?
+[00:12:21] Francesca Stavrakopoulou: Wow.
+[00:12:23] Francesca Stavrakopoulou: If the question is what's unique about their divine profiles, that's a really difficult question because it's very hard to see what's unique about, say, ancient Israelite or Judahite constructs of goddesses or whatever.
+[00:12:37] Francesca Stavrakopoulou: Because, you know, these.
+[00:12:37] Francesca Stavrakopoulou: These, you know, goddesses were worshipped all over ancient Southwest Asia, and quite often they're performing particular sorts of roles in common with other goddesses in neighboring societies and cultures.
+[00:12:49] Francesca Stavrakopoulou: But one of the most.
+[00:12:50] Francesca Stavrakopoulou: Can I.
+[00:12:50] Dan Beecher: Can I just stop you right here?
+[00:12:51] Dan Beecher: I do want to point out, it's obvious, I think everyone knows that obviously no Israelites ever, ever worshipped any goddesses.
+[00:13:01] Dan Beecher: Like, obviously there's no female gods in, in, in sort of biblical history.
+[00:13:07] Dan Beecher: That couldn't be right.
+[00:13:09] Dan Beecher: Yeah, we know that much.
+[00:13:11] Francesca Stavrakopoulou: Right, yeah.
+[00:13:11] Francesca Stavrakopoulou: You mean no Israelites, apart from all the ones that the biblical writers are telling off for worshipping goddesses.
+[00:13:16] Francesca Stavrakopoulou: And.
+[00:13:17] Francesca Stavrakopoulou: And yeah, apart from the goddess who's named alongside YHWH in inscriptions.
+[00:13:22] Francesca Stavrakopoulou: But, yeah, yeah, I mean, yeah, goddesses were absolutely part and parcel of ancient YHWH religion.
+[00:13:30] Francesca Stavrakopoulou: And so, you know, we know we have inscriptions from the 8th century BCE, Hebrew inscriptions that refer to YHWH and Asherah together.
+[00:13:39] Francesca Stavrakopoulou: And most scholars are now agreed that this seems to index particular religious assumptions, that YHWH and Asherah were kind of like a divine pair, and Asherah played a role in mediating in particular divine blessings from YHWH onto certain individuals and back again.
+[00:14:01] Francesca Stavrakopoulou: So she was kind of like, you know, she wasn't like the first lady.
+[00:14:04] Francesca Stavrakopoulou: I don't, you know, I don't want to give that impression.
+[00:14:05] Francesca Stavrakopoulou: She wasn't like the first lady of the divine kind of White House.
+[00:14:09] Francesca Stavrakopoulou: She was an important goddess in her own right.
+[00:14:10] Francesca Stavrakopoulou: And we know that from other examples, other ancient texts, older texts that talk about the same goddess.
+[00:14:17] Francesca Stavrakopoulou: So.
+[00:14:17] Francesca Stavrakopoulou: Texts from Ugarit, so a Late Bronze Age city-state on the coast of the Mediterranean.
+[00:14:24] Francesca Stavrakopoulou: Coast of what is now Syria.
+[00:14:25] Francesca Stavrakopoulou: And there she's known as Atiratu or Athirat.
+[00:14:29] Francesca Stavrakopoulou: And she is the wife of the high god El.
+[00:14:33] Francesca Stavrakopoulou: And she has a really important role in a lot of these mythological texts.
+[00:14:35] Francesca Stavrakopoulou: I mean, she really is a power broker between El and different deities like Baal and Anat.
+[00:14:42] Francesca Stavrakopoulou: But she also seems to have played an important role for certain sort of high-status elite worshippers as well.
+[00:14:46] Francesca Stavrakopoulou: We get some great stories in these myths about high-status women sort of almost kind of mimicking this goddess in certain sorts of ways.
+[00:14:56] Francesca Stavrakopoulou: So, yeah, this was an important goddess and she seems to have been a really ancient goddess.
+[00:15:00] Francesca Stavrakopoulou: We find her under various names worshipped all over ancient Southwest Asia, particularly the Levant area.
+[00:15:07] Francesca Stavrakopoulou: So, yeah, goddesses were important.
+[00:15:09] Francesca Stavrakopoulou: But the main, I think the main kind of assumption that people often make about these goddesses, which I think is completely wrongheaded, is the idea that somehow these were fertility goddesses.
+[00:15:20] Francesca Stavrakopoulou: You know what, you know, they were all concerned about childbirth and sort of sexual kind of allure and attraction and fecundity and agricultural fertility.esca Stavrakopoulou: That wasn't the case.
+[00:15:31] Francesca Stavrakopoulou: And in most of these texts that we have, including biblical texts, fertility is very frequently cast as a masculine male attribute of the divine as opposed to a female one.
+[00:15:44] Francesca Stavrakopoulou: So quite often you get female deities who are responsible for kind of shaping new life in the womb or kind of overlooking, not always, but overlooking sort of breastfeeding and lactation and sort of childcare and nurturing.
+[00:15:57] Francesca Stavrakopoulou: And those sorts of roles are then expanded to adult worshippers, if you like.
+[00:16:01] Francesca Stavrakopoulou: But more often than not, it's the male or masculine deities that are particularly associated with conception, even opening and closing wombs, both animal and human.
+[00:16:13] Francesca Stavrakopoulou: And with being these fertile deities who are particularly responsible often for sexual allure as well.
+[00:16:20] Francesca Stavrakopoulou: So I think that's kind of like one of the common misconceptions is that goddesses were all about fertility.
+[00:16:25] Francesca Stavrakopoulou: They weren't; they were about warfare as much as they were about nurturing.
+[00:16:31] Dan McClellan: And the symbol of the bull is something that is associated with male deities that frequently has to do with ferocity, but just as frequently, if not more so, with fecundity, with this idea of being fertile.
+[00:16:44] Dan McClellan: So we have kind of intersecting but different roles that some of the male and female deities are playing.
+[00:16:50] Dan McClellan: And it seems to me that there are indications in the Hebrew Bible that the God of Israel has appropriated some of those roles.
+[00:17:01] Dan McClellan: Some of the imagery that is used in referencing the God of Israel seems like it would fit more comfortably within an ancient goddess role.
+[00:17:10] Dan McClellan: Is that accurate?
+[00:17:11] Francesca Stavrakopoulou: Yeah, absolutely.
+[00:17:12] Francesca Stavrakopoulou: Yeah, absolutely.
+[00:17:13] Francesca Stavrakopoulou: So in some of the prophetic texts, you know, we find texts like in Hosea and Isaiah where God is kind of describing himself.
+[00:17:21] Francesca Stavrakopoulou: Adonai is describing himself as a midwife.
+[00:17:25] Francesca Stavrakopoulou: You know, this is a God who kind of helps to birth, if you like, even the chaos monster in the Book of Job.
+[00:17:31] Francesca Stavrakopoulou: And he kind of wraps him in swaddling bands, which is a really fabulous text towards the end of the Book of Job.
+[00:17:35] Francesca Stavrakopoulou: But in some of the prophetic books, as I said, Hosea and Isaiah, Jeremiah, this is a God who acts as a midwife.
+[00:17:44] Francesca Stavrakopoulou: You know, he takes the newborn Israel from the womb and places the child on this kind of anonymous mother's breast and he oversees the breastfeeding; he acts as a midwife.
+[00:17:54] Francesca Stavrakopoulou: And so he takes on a lot of these roles that probably were originally particularly associated with divine, feminine divine beings.
+[00:18:04] Francesca Stavrakopoulou: And it's a part of that kind of gradual appropriation of these other deities' roles as what was originally a pantheon, an ancient Israelite and Judahite pantheon, is gradually reduced and reduced and reduced so that Adonai is prioritized over and above all these other divine beings within the broader heavenly household.
+[00:18:25] Francesca Stavrakopoulou: And to the point where he eventually kind of either takes on all of these portfolios, if you like, of care for himself and some of these other divine beings are either kind of excised from the heavenly household or they're kind of relegated and they become what's later known as angels or divine messengers.
+[00:18:42] Francesca Stavrakopoulou: So it's a really interesting shift, but it's not necessarily representative of reality.
+[00:18:50] Francesca Stavrakopoulou: I mean, we know that there seems to have been a shift within Jerusalem and perhaps in Babylon as well, among Adonai worshipping communities there in the 6th to the 5th century towards this kind of prioritization of Adonai.
+[00:19:05] Francesca Stavrakopoulou: But, you know, equally we know that in the 5th century BCE on the island of Elephantine in the Nile in Egypt, an Adonai temple was being refurbished and this Adonai was being worshipped alongside, you know, at least one other goddess.
+[00:19:20] Francesca Stavrakopoulou: So, you know, the Hebrew Bible and the information that we can kind of glean from it isn't necessarily representative of a broader trend within Adonai worship.u: It's quite particular.
+[00:19:32] Dan McClellan: Yeah.
+[00:19:33] Dan McClellan: And we have, I think the name of the deity there, there's a compound name, Anatyahu, who is the goddess there.
+[00:19:40] Dan McClellan: And now there's another compound name that some people associate with the divine feminine, and that's El Shaddai, based on the argument that Shaddai comes from the word for breasts.
+[00:19:50] Dan McClellan: And in Genesis 49, we've got this idea of El Shaddai associated with the blessings of the womb and the.
+[00:19:58] Dan McClellan: The blessings of.
+[00:19:59] Dan McClellan: Of breasts.
+[00:20:00] Dan McClellan: Where.
+[00:20:00] Dan McClellan: Where do you land on the.
+[00:20:03] Dan McClellan: The origins of the Shaddai title?
+[00:20:06] Francesca Stavrakopoulou: Yeah, I mean, it's always really hard trying to kind of grasp anything meaningful from possible etymologies, I think, and kind of trying to dissect the word that way.
+[00:20:16] Francesca Stavrakopoulou: Yeah.
+[00:20:16] Francesca Stavrakopoulou: So one theory is that the word comes from a root meaning breasts, equally, that maps onto roots that could mean mountains.
+[00:20:25] Francesca Stavrakopoulou: And so, you know, scholars have produced some interesting, interesting imaginative work on the shapes of mountains that look like breasts.
+[00:20:34] Francesca Stavrakopoulou: But I'm more persuaded.
+[00:20:36] Francesca Stavrakopoulou: Yeah, I know we have a mountain range.
+[00:20:38] Dan McClellan: There's the Tetons, it's a mountain range that is based on the same.
+[00:20:43] Dan McClellan: So it wouldn't be unheard of.
+[00:20:44] Francesca Stavrakopoulou: It's not unheard of.
+[00:20:45] Francesca Stavrakopoulou: And it makes a lot of sense because quite often, you know, the kind of the earthly realm is often personified as this kind of primeval feminine, you know, and kind of the idea that the earth is this kind of birthing female body, it makes sense.
+[00:21:00] Francesca Stavrakopoulou: But in the case of that title, El Shaddai, I'm more inclined to go with the other kind of interpretation of that name.
+[00:21:09] Francesca Stavrakopoulou: I think it probably means something like El of the wilderness or the steppe region.
+[00:21:14] Francesca Stavrakopoulou: There seems to be more.
+[00:21:15] Francesca Stavrakopoulou: More kind of evidence for that usage of the term.
+[00:21:18] Francesca Stavrakopoulou: But even so, you're absolutely right.
+[00:21:20] Francesca Stavrakopoulou: In Genesis 49, we have got this kind of series of divine blessings where you have an appeal to El Shaddai.
+[00:21:27] Francesca Stavrakopoulou: You have an appeal to either my ancestral God or, you know, my divine ancestor.
+[00:21:33] Francesca Stavrakopoulou: You have an appeal to the divine rock, which seems to have been a really important, very early title of probably a masculine deity.
+[00:21:42] Francesca Stavrakopoulou: And you also have an appeal to this kind of divine being, you know, for blessings on breasts and womb, which some people argue that word pair are.
+[00:21:51] Francesca Stavrakopoulou: You know, are titles or epithets for.
+[00:21:53] Francesca Stavrakopoulou: For a goddess.
+[00:21:54] Francesca Stavrakopoulou: And Mark Smith argues that this is a title of Asherah.
+[00:21:58] Francesca Stavrakopoulou: So, yeah, we have traces of them.
+[00:22:01] Francesca Stavrakopoulou: We have traces of these goddesses in our texts, which is exciting.
+[00:22:06] Dan McClellan: And I think you.
+[00:22:08] Dan McClellan: I know the.
+[00:22:09] Dan McClellan: One of the very first TikTok videos that I ever made that got over a million views was responding to somebody who was expressing frustration with a headline from an article that was an interview with you over a decade ago about God's wife being edited out of the Bible.
+[00:22:27] Dan McClellan: And so these are some of the potential vestigial references to the divine feminine.
+[00:22:33] Dan McClellan: And other scholars argue maybe Deuteronomy 33:2, where it says a fiery law in many translations now, but it could be very easily reconstructed to say that Adonai came forth with Asherah at his right hand.
+[00:22:48] Francesca Stavrakopoulou: Yeah, which is a.
+[00:22:49] Francesca Stavrakopoulou: Which is a translation that I, that I really like.
+[00:22:52] Francesca Stavrakopoulou: I think it's got an awful lot to be said for it.
+[00:22:54] Francesca Stavrakopoulou: I mean, it's interesting that people get.
+[00:22:56] Francesca Stavrakopoulou: Do get upset sometimes about the idea that God could have once had a wife.
+[00:23:02] Francesca Stavrakopoulou: And I think, you know, that says a lot more about our own cultural anxieties about the nature of the divine and divine sexuality, divine sort of gender, than it does anything else.es anything else.
+[00:23:26] Francesca Stavrakopoulou: I mean, there's a big debate going on at the moment in the mainstream press here because the Church of England has said that it's going to consider having a debate about whether it should change God's pronouns in prayers and various other things.
+[00:23:28] Francesca Stavrakopoulou: So God will become they rather than.
+[00:23:31] Francesca Stavrakopoulou: He will become parent rather than father.
+[00:23:33] Francesca Stavrakopoulou: And people are getting really worked up about this.
+[00:23:45] Francesca Stavrakopoulou: But I mean, you know, people, these, these ancient texts that we have in the Bible, you know, they are always being overturned, reinterpreted, overwritten in ancient context as well as in contemporary context.
+[00:23:49] Francesca Stavrakopoulou: And so, I mean, I don't have a problem with it particularly, but.
+[00:23:56] Francesca Stavrakopoulou: But yeah, I mean, very much, you know, this is a God who is very much gendered in masculine terms within the Hebrew Bible.
+[00:23:59] Francesca Stavrakopoulou: And I think we need to recognize that.
+[00:23:59] Francesca Stavrakopoulou: Yeah.
+[00:24:05] Dan McClellan: And I know that something that I'm fond of saying is that everybody is negotiating with the text in one way or another.
+[00:24:12] Dan McClellan: And this is just another example of ways that we try to make the text more meaningful or more useful to us.
+[00:24:13] Dan McClellan: Whether.
+[00:24:24] Dan McClellan: And we've got folks who are out there who are upset about the idea of God having a wife, but will vehemently insist that God is male, which means something.
+[00:24:26] Dan McClellan: And so, yeah, there.
+[00:24:31] Dan McClellan: But there are other ways that we can upset people in the audience as well.
+[00:24:34] Dan McClellan: You wrote your dissertation under.
+[00:24:48] Dan McClellan: Under the supervision of the inimitable John Barton at Oxford, and this had a lot to do with the question of human sacrifice, child sacrifice in the Hebrew Bible.
+[00:24:52] Dan McClellan: It seems like there's quite a bit of discussion going on these days around that question of child sacrifice.
+[00:25:08] Dan McClellan: There seems to be a shift in the scholarship, including the meaning of the word Molek and whether this is a reference to a deity who received child sacrifice, or if this is just a generic noun that refers to a specific type of sacrifice, can you tell us where.
+[00:25:11] Dan McClellan: Where you see the scholarship heading, where you.
+[00:25:14] Dan McClellan: Where you land on some of those discussions?
+[00:25:22] Francesca Stavrakopoulou: Yeah, it's really interesting because, I mean, I, you know, I don't want to kind of give away too much about my age because I feel about 100 today, but, yeah, I mean, when I wrote.
+[00:25:29] Francesca Stavrakopoulou: When I wrote my dissertation, I mean, it was back in the early 2000s, and child sacrifice had.
+[00:25:33] Francesca Stavrakopoulou: It was starting, you know, it had kind of become a more.
+[00:25:35] Francesca Stavrakopoulou: A more sort of provocative topic in.
+[00:25:38] Francesca Stavrakopoulou: In scholarship, you know, sort of in the mid-80s.
+[00:25:40] Francesca Stavrakopoulou: And then no one had really talked about it since then.
+[00:25:48] Francesca Stavrakopoulou: But in the mid-80s, these two important works were published, one by a scholar called John Day and the other by a scholar called George Heider.
+[00:25:55] Francesca Stavrakopoulou: And they are both arguing that the term Molek in the Hebrew Bible absolutely refers to, is the name of a deity.
+[00:26:06] Francesca Stavrakopoulou: And they both claimed, independently, and I think incorrectly, that this God Molek could be found in some of these texts from this place that I mentioned before, from Ugarit.
+[00:26:12] Francesca Stavrakopoulou: Their arguments, in my opinion, and as I argued in my thesis, don't stack up at all.
+[00:26:13] Francesca Stavrakopoulou: But there's a.
+[00:26:43] Francesca Stavrakopoulou: The reason why a lot of these scholars in particular were keen to defend the biblical portrayal of a character called Molek is, I think, because it distances Adonai from the suggestion, the implication in these texts that these children were being sacrificed to him and not to a foreign abominable deity, that somehow child sacrifice is a kind of a foreign import, a kind of a corruption of a much purer form of religion.
+[00:26:46] Francesca Stavrakopoulou: Now, whether or not child sacrifice happened is really difficult to assess. I mean, archaeologically, you know, we have no evidence for the sorts of ritualized burning of very young babies, children and young animals that we have from comparative sites across the Phoenician and Punic worlds.sites across the Phoenician and Punic worlds.
+[00:27:05] Francesca Stavrakopoulou: So that's quite difficult.
+[00:27:08] Francesca Stavrakopoulou: We don't have direct, you know, clear archaeological evidence.
+[00:27:11] Francesca Stavrakopoulou: Now, those sites in these Phoenician and Punic areas.
+[00:27:15] Francesca Stavrakopoulou: So basically, this is where the argument about, really, who is Molech?
+[00:27:21] Francesca Stavrakopoulou: Really, this is where it comes from.
+[00:27:22] Francesca Stavrakopoulou: Because some of these sites, where you have huge precincts that are clearly set apart from other sorts of mortuary sites and burial places, they seem to be very different.
+[00:27:32] Francesca Stavrakopoulou: They've got all sorts of things going on within.
+[00:27:33] Francesca Stavrakopoulou: Within these particular precincts.
+[00:27:35] Francesca Stavrakopoulou: But what they do have are the charred remains of babies and very young animals interred in little urns and then buried.
+[00:27:43] Francesca Stavrakopoulou: And quite often you have a stone memorial marker erected over the top of it.
+[00:27:47] Francesca Stavrakopoulou: And sometimes these things have inscriptions.
+[00:27:49] Francesca Stavrakopoulou: So Carthage is one of our best attested sites.
+[00:27:51] Francesca Stavrakopoulou: We've got hundreds and hundreds and hundreds of these burnt baby remains.
+[00:27:56] Francesca Stavrakopoulou: That's not a sentence I say every day.
+[00:28:01] Francesca Stavrakopoulou: But these inscriptions occasionally refer to.
+[00:28:05] Francesca Stavrakopoulou: Seem to suggest that this particular practice is a type of offering.
+[00:28:11] Francesca Stavrakopoulou: And the term mulk.
+[00:28:13] Francesca Stavrakopoulou: So from the root MLK, it seems to refer, seems to be a technical term for a particular type of offering, perhaps to.
+[00:28:21] Francesca Stavrakopoulou: And quite often these babies in Carthage were being kind of dedicated or offered up in honor of the.
+[00:28:27] Francesca Stavrakopoulou: Of the god Baal Hammon and his consort Tanit.
+[00:28:32] Francesca Stavrakopoulou: So in 1935, a brilliant scholar called Otto Eissfeldt published a thesis, a dissertation, in which he argued that.
+[00:28:41] Francesca Stavrakopoulou: That this term mulk in the Carthaginian inscriptions, meaning a type of sacrifice, is cognate with the term MLK that we find in Hebrew Bible texts, which within Greek.
+[00:28:54] Francesca Stavrakopoulou: Ancient Greek translations of the text have tended to be pronounced Moloch.
+[00:28:58] Francesca Stavrakopoulou: In the Masoretic text, it's often pronounced Molech.
+[00:29:02] Francesca Stavrakopoulou: But Eissfeldt argued that no, it's the same term.
+[00:29:06] Francesca Stavrakopoulou: And so this is really a type of sacrifice, not the name of a foreign monstrous god to whom the children are being sacrificed.
+[00:29:14] Francesca Stavrakopoulou: And if that's the case, well then which deity is associated with the burning of babies in these biblical texts?
+[00:29:21] Francesca Stavrakopoulou: It's Adonai.
+[00:29:22] Dan McClellan: Yeah.
+[00:29:23] Francesca Stavrakopoulou: So, yeah, people kind of get upset about that.
+[00:29:26] Dan McClellan: We see even Ezekiel seeming to acknowledge this in chapter 20, saying, speaking on behalf of God, saying, I gave you commandments that were not good, that decimated you, compelled you to cross your children over the fire, or something like that, which is.
+[00:29:44] Dan McClellan: Is one attempt to account for what's going on in likely Exodus 22, it's verse 29 in the English and verse 28 in the Hebrew where God says, and the firstborn of your children you will give to me and do the same for your oxen and your sheep.
+[00:30:02] Francesca Stavrakopoulou: Yeah.
+[00:30:02] Francesca Stavrakopoulou: And it's a really nice, interesting.
+[00:30:03] Francesca Stavrakopoulou: When you look at the language there, that kind of switch from singular to plural, where it's kind of like, you know, on the eighth day you shall give him to me.
+[00:30:11] Francesca Stavrakopoulou: It's this real sense that this is about the child, and the child is to be treated in exactly the same way as the oxen and the sheep, which is to be sacrificed.
+[00:30:19] Francesca Stavrakopoulou: But, you know, but then we have, you know, that's a regulation concerning the firstborn.
+[00:30:23] Francesca Stavrakopoulou: And the extent to which, you know, the relationship between this mulk practice and the firstborn sacrifice, the extent to which those are related is interesting.
+[00:30:32] Francesca Stavrakopoulou: I think probably the mulk sacrifice.
+[00:30:34] Francesca Stavrakopoulou: I argued in my, in my first book that this was a specialization of the firstborn, a royal specialization of the firstborn sacrifice.
+[00:30:43] Francesca Stavrakopoulou: But, you know, we have a lot of other biblical traditions in which it's no problem at all for Adonai to command, you know, the sacrifice of your children.2] Francesca Stavrakopoulou: I mean, Abraham and Isaac in Genesis 22 is a perfect example.
+[00:30:56] Francesca Stavrakopoulou: And there, you know, yeah, the sacrifice is halted.
+[00:30:59] Francesca Stavrakopoulou: But Abraham is not blessed for refusing to sacrifice Isaac.
+[00:31:04] Francesca Stavrakopoulou: He's blessed for his willingness to do so.
+[00:31:07] Francesca Stavrakopoulou: Equally, the story of Jephthah's daughter in Judges 11, where you have a Yahwistic warrior who basically offers up a vow and says, you know, Adonai, if you let me win this war, I will offer up to you the first thing that runs out of the house to greet me.
+[00:31:22] Francesca Stavrakopoulou: And lo and behold, it's his beloved daughter.
+[00:31:24] Francesca Stavrakopoulou: The same term that's used of Isaac, beloved.
+[00:31:27] Francesca Stavrakopoulou: And the same term that's used of Jesus, who also is, in some interpretations, sacrificed by his father.
+[00:31:34] Francesca Stavrakopoulou: And, and, you know, Jephthah's daughter comes running out the house and Jephthah offers her up, no comment at all from Adonai that this is a bad thing or that you've misunderstood or, you know, how could you do this?
+[00:31:45] Francesca Stavrakopoulou: It's just like, yeah, it happened.
+[00:31:48] Francesca Stavrakopoulou: So, you know, we've got these kinds of very positive kind of portrayals of the...
+[00:31:54] Francesca Stavrakopoulou: The efficacy of child sacrifice that this is something that brings blessing within a Yahwistic context.
+[00:32:01] Francesca Stavrakopoulou: So it's a really interesting topic because it, it unsettles as well our own cultural preferences, our own ideas of what a child is.
+[00:32:10] Francesca Stavrakopoulou: But obviously it also, this notion of child sacrifice also underlies very early Christian interpretations of the execution of Jesus.
+[00:32:20] Francesca Stavrakopoulou: He is the beloved son who is killed.
+[00:32:23] Francesca Stavrakopoulou: Jon Levenson wrote a fantastic book back in the 90s about the kind of these links between child sacrifice within ancient Jewish tradition and early Christian traditions.
+[00:32:35] Francesca Stavrakopoulou: So there's something very disturbing though, about the notion of a father, a divine father who will willingly sacrifice his child.
+[00:32:46] Dan McClellan: Yeah.
+[00:32:47] Francesca Stavrakopoulou: What does that say about parenthood?
+[00:32:50] Dan McClellan: It makes the, the Lamb of God metaphor within Christianity more interesting.
+[00:32:54] Dan McClellan: I think a lot of people...
+[00:32:56] Dan McClellan: Enjoy that metaphor and make a lot of use of it without thinking hard about what that says about, about, yeah, Jesus, how Jesus is functioning and things like that.
+[00:33:05] Francesca Stavrakopoulou: Yeah, and some of the psalms, you know, you know, the Lord is my shepherd.
+[00:33:08] Francesca Stavrakopoulou: That's a horrific image.
+[00:33:09] Francesca Stavrakopoulou: I mean, because this is about the cultivation and almost the commodification if you like, of...
+[00:33:15] Francesca Stavrakopoulou: Of a living being in order for it to be destroyed for, you know, its various products.
+[00:33:23] Dan McClellan: Yeah.
+[00:33:23] Dan McClellan: Personhood, parentage, these, these things, the frameworks were much different anciently than they are today, but we still feel compelled to...
+[00:33:30] Dan McClellan: To retroject our own thinking onto the ancient world and think they had to have felt the same way about these things anciently that...
+[00:33:37] Dan McClellan: Than that we do today.
+[00:33:38] Dan Beecher: Yeah, I'm fascinated by the fact that, I mean, I know, Francesca, in your work you've, you've often cited the Bible as an...
+[00:33:48] Dan Beecher: As an imperfect historical text, as a text that we can't rely on as being reliable for history, for historical...
+[00:34:02] Dan McClellan: Facts.
+[00:34:03] Dan Beecher: But I love that you're pointing out also that even though the Bible itself talks plenty about child sacrifice, we don't have the archaeological evidence for it, at least in that context.
+[00:34:16] Dan Beecher: I think that's fascinating.
+[00:34:17] Dan Beecher: I think it could be wrong about itself in a good way.
+[00:34:22] Dan Beecher: Question mark.
+[00:34:24] Dan Beecher: Maybe they didn't do the awful thing that the Bible says that they did do.
+[00:34:28] Dan Beecher: Question mark.
+[00:34:29] Francesca Stavrakopoulou: Yeah, I mean, but that's the thing about archaeology is that, I mean, you know, so on the child sacrifice thing, we, you know, there are things that...
+[00:34:36] Francesca Stavrakopoulou: There are archaeological excavations that have found similar sorts of urns with burnt remains and sort of stelae erected over them in what is now the modern day, you know, in what is today the state of Israel. what is today the state of Israel.
+[00:34:52] Francesca Stavrakopoulou: So that is interesting.
+[00:34:54] Francesca Stavrakopoulou: So, you know, date to the right kind of time.
+[00:34:56] Francesca Stavrakopoulou: So it does suggest that this kind of cremation or ritual burning of, of what wasn't.
+[00:35:04] Francesca Stavrakopoulou: It wasn't alien to, to the biblical writers.
+[00:35:08] Francesca Stavrakopoulou: If you imagine that they're kind of working in Jerusalem, say in the 5th century or whatever.
+[00:35:12] Francesca Stavrakopoulou: But archaeologically speaking, it's really hard because, you know, we can't go and dig up Jerusalem for the Molek Tophet.
+[00:35:17] Francesca Stavrakopoulou: You know, this is very much this insistence that this is happening in the Kidron Valley in Jerusalem.
+[00:35:23] Francesca Stavrakopoulou: And, you know, these valleys were, were natural.
+[00:35:25] Francesca Stavrakopoulou: You know, this is where this was an entryway into the underworld.
+[00:35:28] Francesca Stavrakopoulou: That's the way in which these valleys were understood outside of Jerusalem.
+[00:35:31] Francesca Stavrakopoulou: And so, you know, you do get, you know, we've got loads of burial grounds, very ancient burial grounds there now, but you can't go digging up Jerusalem.
+[00:35:39] Francesca Stavrakopoulou: I mean, equally, you know, you can't go digging up the Temple Mount to find the remains of the First Temple, you know, the Solomon's Temple.
+[00:35:47] Francesca Stavrakopoulou: I mean, you can't, because it's just, I mean, A, it's a modern thriving city, and B, it's also one of those cities that is hugely contested in terms of ownership, authority, access, you know, within lots of different communities.
+[00:36:04] Francesca Stavrakopoulou: So politically and socially and culturally, it would just be awful to try and excavate, obviously, but.
+[00:36:11] Francesca Stavrakopoulou: But that's the thing.
+[00:36:11] Francesca Stavrakopoulou: So archaeologically, we only have access to the places we're able to dig legally and ethically.
+[00:36:18] Francesca Stavrakopoulou: And I have to say that, you know, quite often a lot of digs in those territories that we understand as modern day Israel and in the Palestinian occupied territories, you know, sometimes those digs aren't ethical to a certain degree.
+[00:36:32] Francesca Stavrakopoulou: But, you know, we only have access to sites in physical ways and in sort of politically mandated ways.
+[00:36:39] Francesca Stavrakopoulou: So who knows what's there?
+[00:36:41] Francesca Stavrakopoulou: And, you know, you can only really dig when you know what you're looking for as well.
+[00:36:45] Francesca Stavrakopoulou: So things like, you know, archaeologists, particularly those of us who work on the Bible, you know, archaeologists always used to focus on urban centers like the big cities, you know, who are these people building these great cities?
+[00:36:55] Francesca Stavrakopoulou: And they completely overlooked the majority of the ancient Iron Age population who lived out in the countryside.
+[00:37:03] Francesca Stavrakopoulou: And so it wasn't.
+[00:37:04] Francesca Stavrakopoulou: It's only been the last kind of 30 years or so that people have actually been paying attention to the majority of these ancient populations and their material circumstances and lives by digging in places that.
+[00:37:16] Francesca Stavrakopoulou: That, you know, that weren't necessarily these major urban centers at all.
+[00:37:20] Francesca Stavrakopoulou: So, yeah, archaeologically speaking, it's hard.
+[00:37:23] Francesca Stavrakopoulou: It's not a perfect science.
+[00:37:24] Francesca Stavrakopoulou: Archaeology.
+[00:37:25] Dan McClellan: Yeah.
+[00:37:25] Dan McClellan: The accident of preservation has a lot to do with what we can find when we can go dig, because we're looking for something.
+[00:37:34] Dan McClellan: And I think it's been such a fascinating turn towards looking at more domestic contexts and trying to reconstruct the materiality of the everyday life anciently.
+[00:37:43] Dan McClellan: I think that tells us so much more about lived religion, if we can refer to religion anciently, than it does just looking at what men were in charge in the ancient world.
+[00:37:55] Francesca Stavrakopoulou: Yeah, no.
+[00:37:56] Dan McClellan: You recently published your first trade book for a popular audience, God: An Anatomy, and I have one of the UK versions, which I know you understand, has the much better cover.
+[00:38:12] Dan McClellan: And your book won the PEN Hessell-Tiltman Prize for best nonfiction book on a historical subject.
+[00:38:18] Dan McClellan: So congratulations for that.
+[00:38:20] Dan McClellan: And I know it was in the running for some other prizes as well.
+[00:38:25] Dan McClellan: Can you tell us what questions you were seeking to address when you wrote this book?
+[00:38:32] Dan McClellan: What drove you to write on God's body and corporeal reality and how that influenced the conceptualization of the divine and
+[00:38:41] Dan McClellan: and how people lived their
+[00:38:43] Dan McClellan: their ideologies anciently?
+[00:38:46] Francesca Stavrakopoulou: Yeah, I mean, I think the question, the question I had, I mean, the reason why I went to university in the first place, to study—I mean, I did what was known as a theology degree at Oxford.
+[00:38:58] Francesca Stavrakopoulou: And the question, you know, I was really interested in religion because, you know, when I was a kid I was given a picture book Bible and you know, and I was looking at, you know, like this illustration of Abraham just about to sacrifice Isaac.
+[00:39:10] Francesca Stavrakopoulou: And I remember thinking, this is a weird thing, you know, like I remember being very struck by how strange and frightening that was.
+[00:39:17] Francesca Stavrakopoulou: So even though I wasn't brought up religious at all, I was really interested in ancient religions.
+[00:39:22] Francesca Stavrakopoulou: And then, you know, I'm Greek, I'm half Greek.
+[00:39:25] Francesca Stavrakopoulou: And so my Greek heritage was important to me.
+[00:39:27] Francesca Stavrakopoulou: And so the myths of gods and goddesses from Greeks, from Greek culture was always really interesting.
+[00:39:32] Francesca Stavrakopoulou: And I couldn't understand why, you know, initially, you know, the God of the Bible and Jesus in particular was treated as different from the great heroes of ancient Greek myth, you know, who often had, you know, one parent, you know, they had a divine father and a human mother.
+[00:39:47] Francesca Stavrakopoulou: So why was this Jesus guy different?
+[00:39:49] Francesca Stavrakopoulou: But when I went to university and studied theology, I was reading—it was the first time I studied the Hebrew Bible, so what Christians call the Old Testament and obviously what Jewish people call Tanakh.
+[00:40:00] Francesca Stavrakopoulou: And I just couldn't get over like there was this, like this kind of vivid images of this human-shaped, very masculine deity kind of striding around, trampling people and shouting and sitting on a throne in his temple.
+[00:40:14] Francesca Stavrakopoulou: And I was really interested in this kind of bodily portrayal of the deity.
+[00:40:18] Francesca Stavrakopoulou: And yet when I would ask my lecturers and professors about it, they would always kind of dismiss it as kind of poetry or metaphor or as, you know, it's, it's, it's metaphor.
+[00:40:28] Francesca Stavrakopoulou: I mean, everything is metaphorical to a certain degree, particularly, forgive me, Dan.
+[00:40:32] Francesca Stavrakopoulou: But particularly when we're talking about an imaginary being, you know, everything is ultimately kind of metaphorical.
+[00:40:37] Francesca Stavrakopoulou: But that was where I kind of really got like interested in the, the body of God.
+[00:40:43] Francesca Stavrakopoulou: And I wanted to write this book because a, I wanted to show people that this isn't just metaphor, that actually in the ancient—in God's kind of original ancient, his natural cultural habitat, if you like.
+[00:40:55] Francesca Stavrakopoulou: He was very much understood to be a corporeal deity with a human-shaped body and with male and masculine features, just like every other god and goddess, you know, was in the ancient world.
+[00:41:07] Francesca Stavrakopoulou: It was really normal.
+[00:41:08] Francesca Stavrakopoulou: So I wanted kind of to put God back in his ancient cultural habitat in that sense.
+[00:41:15] Francesca Stavrakopoulou: But I also wanted people to understand that we navigate our
+[00:41:22] Francesca Stavrakopoulou: we imagine the otherworldly and we often imagine the otherworldly in terms of our own bodies.
+[00:41:28] Francesca Stavrakopoulou: You know, we, we navigate our way around this world because of our bodies.
+[00:41:31] Francesca Stavrakopoulou: I mean, I don't subscribe to this very Cartesian kind of dichotomy between—that we have, that our bodies are simply the vessels or shells in which our mind or our intellect or our soul or spirit is housed.
+[00:41:44] Francesca Stavrakopoulou: And that's certainly not the way that ancient people understood what it was to be a person.
+[00:41:49] Francesca Stavrakopoulou: And so our bodies, you know, we are our bodies.
+[00:41:52] Francesca Stavrakopoulou: And I think how these ancient societies understood, interpreted certain aspects of their bodies very much framed and shaped the ways in which they imagined their gods and their gods' bodies.
+[00:42:05] Francesca Stavrakopoulou: And so from things like, you know, certain sorts of—the heart being a cognitive organ, an intellectual organ, rather than, you know, we tend to think of it as an emotional organ if we kind of apply any kind of cultural meaning to it. of apply any kind of cultural meaning to it.
+[00:42:20] Francesca Stavrakopoulou: And the way that the belly was understood to be the seat of certain sorts of emotions.
+[00:42:23] Francesca Stavrakopoulou: The nose is the place of anger, the territoriality of the feet, all of these sorts of things have shaped the way in which God's portrayed in not just the Hebrew Bible, but in New Testament texts as well.
+[00:42:36] Francesca Stavrakopoulou: And I kind of want us to take the reader on a journey through the early history of God by kind of stripping the deity and kind of showing what this God's body was understood to be like.
+[00:42:49] Francesca Stavrakopoulou: And yeah, and it was fun to write.
+[00:42:53] Dan McClellan: It sounds like it.
+[00:42:54] Dan McClellan: I listened to the audio version that you narrated and I can tell when you're kind of giggling in the background a little bit.
+[00:43:00] Francesca Stavrakopoulou: But it was so hard not to do accents as well, not to do voices for God because I do that in my lectures.
+[00:43:09] Dan McClellan: And I, I think you, you do kind of strip the deity in, in a somewhat literal, non-metaphoric sense in, in some of the discussions.
+[00:43:16] Dan McClellan: But you've got a whole section on, on divine genitals which I think is going to strike some people as, as a little off-putting.
+[00:43:26] Dan McClellan: But it's such a fascinating discussion.
+[00:43:28] Dan McClellan: And I think one of the things that, that I've heard come up the most in, in people talking about, about this book is your discussion of Isaiah 6 and Isaiah's throne theophany that he sees in the temple.
+[00:43:40] Dan McClellan: You have a different reading of what traditionally we understand to be the hem of a robe or the skirts.
+[00:43:49] Dan McClellan: Could you tell us about this reading and what's in the background of this reading of God filling the temple?
+[00:43:56] Francesca Stavrakopoulou: It's really interesting that that particular part of my book has caused such debate.
+[00:44:03] Francesca Stavrakopoulou: I mean, particularly because I spent a lot more time in the book talking about a very similar image of the deity in Ezekiel 1, which I think is, is, is far more interesting and I say far more about that than I do about what's happening in Isaiah 6.
+[00:44:18] Francesca Stavrakopoulou: But in Isaiah 6 we have the prophet having this encounter.
+[00:44:23] Francesca Stavrakopoulou: You know, he sees Yahweh enthroned in the Jerusalem temple.
+[00:44:26] Francesca Stavrakopoulou: And Yahweh is surrounded by, you know, seraphim, which are these kind of monstrous, noisy, flying, burning, serpent-like creatures.
+[00:44:37] Francesca Stavrakopoulou: And we're told, you know, so the Hebrew goes something like, the Lord—he saw Yahweh high and lofty.
+[00:44:45] Francesca Stavrakopoulou: And it's normally translated as the hem of his robe filled the temple.
+[00:44:49] Francesca Stavrakopoulou: And the term that's used there for, you know, there's, there's no word for robe in the Hebrew.
+[00:44:53] Francesca Stavrakopoulou: It's literally his lower extremities.
+[00:44:55] Francesca Stavrakopoulou: That's what the word literally means.
+[00:44:56] Francesca Stavrakopoulou: And it's often used to talk about the edges of garments.
+[00:45:00] Francesca Stavrakopoulou: And you know, sure enough, iconographically we've got lots of images from across ancient Southwest Asia of gods and kings wearing very, you know, double-hemmed, long ankle-length robes, you know, so that's completely fine.
+[00:45:13] Francesca Stavrakopoulou: But in my book I sort of say there's an allusion going on here as well.
+[00:45:17] Francesca Stavrakopoulou: So I'm not, you know, and I use the word allusion very deliberately.
+[00:45:20] Francesca Stavrakopoulou: That's because quite often when this term is used, particularly when it's used in prophetic literature in the Hebrew Bible, it often alludes to the genitals—more usually of female characters.
+[00:45:34] Francesca Stavrakopoulou: And these are sometimes it seems to be like a goddess-like character, as we find in Ezekiel 16 and Ezekiel 23.
+[00:45:44] Francesca Stavrakopoulou: And it's used in a very, it's kind of used in a very derogatory way.
+[00:45:46] Francesca Stavrakopoulou: It's about when you have a reference to the shul of female characters because they're being stripped and genitally exposed.
+[00:45:53] Francesca Stavrakopoulou: So there's all of this kind of stuff that's clustering around this image.
+[00:45:57] Francesca Stavrakopoulou: So it's a very interesting image that the, the, his shul, his lower extremities fill the temple.
+[00:46:05] Francesca Stavrakopoulou: And I think within the context of ancient Judahite constructs of the masculinity of God, the idea of God having genitals that were so big they would fill the temple is not weird at all.is not weird at all.
+[00:46:30] Francesca Stavrakopoulou: Particularly, I think, because I'm, I think this is probably what Ezekiel 1 is riffing off because in Ezekiel 1 again, a prophet has this image of Adonai enthroned on a temple.
+[00:46:36] Francesca Stavrakopoulou: And this time, you know, and, and like in Isaiah 6, the, the, the prophet doesn't quite say everything he sees.
+[00:46:40] Francesca Stavrakopoulou: He doesn't say, oh, I looked at his face and it looked like this, and his arms are like this.
+[00:46:44] Francesca Stavrakopoulou: It's always very like the space of the appearance of the thing.
+[00:46:44] Dan Beecher: Yeah.
+[00:46:44] Francesca Stavrakopoulou: And what he said, what he says, you know, he very much says this was a human shaped being sitting on the throne.
+[00:46:50] Francesca Stavrakopoulou: And this deity's upper body is covered by this kind of flashes of fire and flames and bright light, as is the lower half of his body.
+[00:46:59] Francesca Stavrakopoulou: And the one body part that Ezekiel mentions is his motnaim.
+[00:47:03] Francesca Stavrakopoulou: And he kind of navigates his kind of description of this deity's body by means of the motnaim.
+[00:47:08] Francesca Stavrakopoulou: And it's almost if the motnaim are exposed, and this is a term that's normally and politely rendered loins, but, you know, more appropriately refers to the front part of the body that is at the bottom of your waist and at the top of your legs, it's the genital area.
+[00:47:25] Francesca Stavrakopoulou: And yet Ezekiel leaves this part exposed, which is really interesting.
+[00:47:31] Francesca Stavrakopoulou: So I think those two texts, I think, I suspect Ezekiel 1 is riffing, you know, if Isaiah 6 is older, which most scholars would probably argue, maybe, but I think there's some kind of intertextual relationship going on between those two.
+[00:47:46] Francesca Stavrakopoulou: And I think that one has informed the other.
+[00:47:49] Francesca Stavrakopoulou: And so what, perhaps Ezekiel 1 is alluding to what Isaiah 6 is alluding to.
+[00:47:56] Francesca Stavrakopoulou: I think Ezekiel 1 is rendering more explicit, but in this incredible way that kind of, by revealing that part of God's body, he's almost concealing more of the body.
+[00:48:06] Francesca Stavrakopoulou: It's a really clever, clever text.
+[00:48:08] Dan McClellan: I really like it as it masks at the same time.
+[00:48:12] Francesca Stavrakopoulou: Yeah, exactly.
+[00:48:14] Dan Beecher: So if I'm understanding correctly, what you're saying is that the TikTok generation did not invent the concept of big dick energy.
+[00:48:22] Dan Beecher: Is that what...
+[00:48:24] Francesca Stavrakopoulou: Yeah, and my goodness, I mean, yeah, I mean, and I'm certainly not the TikTok generation, but it was definitely around when I was.
+[00:48:31] Dan McClellan: Well, and even you mentioned the Ugaritic texts earlier.
+[00:48:34] Dan McClellan: We've got things about El's hand growing large as the sea when he sees some, some women, beautiful young goddesses.
+[00:48:44] Francesca Stavrakopoulou: Yeah.
+[00:48:44] Dan McClellan: Yes.
+[00:48:45] Dan McClellan: And then we, and this is not something that ancient, even Jewish writers were particularly uncomfortable with.
+[00:48:51] Dan McClellan: We have discussions in rabbinic literature about God's genitals, including saying Adam must have been circumcised because Adam was made in the image of God.
+[00:49:00] Francesca Stavrakopoulou: Yeah, yeah.
+[00:49:01] Francesca Stavrakopoulou: So their argument is very much that, yeah, if Adam's made in the image of God, they worried, you know, was Adam made circumcised or was he, you know, was he created with a foreskin?
+[00:49:09] Francesca Stavrakopoulou: And they worried about it and then they finally decided that absolutely, Adam was created circumcised.
+[00:49:15] Francesca Stavrakopoulou: He was made perfectly because he was made in the image of God and because God is circumcised and therefore, then, therefore Adam must have been circumcised too.
+[00:49:23] Francesca Stavrakopoulou: So, yeah, this idea that somehow God couldn't possibly have a penis is extraordinary.
+[00:49:30] Francesca Stavrakopoulou: It's a modern hang up.
+[00:49:31] Francesca Stavrakopoulou: It's not, well, it's a kind of a post-biblical hang up rather than an ancient one.
+[00:49:38] Dan McClellan: Yeah, well.
+[00:49:39] Dan McClellan: And our Victorian kind of sensitivities are governing how people feel comfortable talking about that publicly.
+[00:49:46] Dan McClellan: And unfortunately that comes out in a lot of the boundary maintenance that a lot of people think it's their prerogative to engage in regarding the Bible and who's allowed to talk about what in the Bible.[00:49:59] Dan McClellan: So.
+[00:49:59] Francesca Stavrakopoulou: Yeah.
+[00:50:00] Dan McClellan: All right, well, thank you for your time.
+[00:50:01] Dan McClellan: I know you've got to get going.
+[00:50:02] Dan McClellan: I appreciate you joining us and offering your thoughts on this and congratulations on the book.
+[00:50:10] Dan McClellan: Again, can you.
+[00:50:12] Dan McClellan: I'm sure we have more listeners in the US than in the UK, but they can find your book wherever quality books are sold, I'm sure.
+[00:50:22] Dan McClellan: Anything else you'd like to share?
+[00:50:24] Dan McClellan: Anything you didn't get to say that you wish I would have asked you?
+[00:50:28] Francesca Stavrakopoulou: No, I've really enjoyed having the conversation and it was nice to revisit child sacrifice.
+[00:50:34] Francesca Stavrakopoulou: I need to start.
+[00:50:35] Francesca Stavrakopoulou: I know that sounds weird.
+[00:50:36] Francesca Stavrakopoulou: I need to start.
+[00:50:37] Francesca Stavrakopoulou: I've been asked to write a piece on child sacrifice for something that's coming out.
+[00:50:44] Francesca Stavrakopoulou: I need to get it done later this year and so it's been nice to kind of get my brain thinking about it again.
+[00:50:49] Francesca Stavrakopoulou: It's been a long time.
+[00:50:49] Francesca Stavrakopoulou: I've missed child sacrifice.
+[00:50:51] Francesca Stavrakopoulou: What a weird thing to say.
+[00:50:52] Francesca Stavrakopoulou: But I have.
+[00:50:53] Dan Beecher: Who doesn't.
+[00:50:53] Dan Beecher: Who doesn't miss it every now and then?
+[00:50:55] Francesca Stavrakopoulou: Is there.
+[00:50:56] Dan Beecher: Is there anything that you want?
+[00:50:58] Dan Beecher: Where can people go to find more of your work?
+[00:51:00] Dan Beecher: To find.
+[00:51:01] Dan Beecher: To find you, if they're interested.
+[00:51:04] Francesca Stavrakopoulou: Gosh.
+[00:51:05] Francesca Stavrakopoulou: Well, I'm all over YouTube in various ways.
+[00:51:07] Francesca Stavrakopoulou: I think you can find my BBC documentaries on YouTube in.
+[00:51:11] Francesca Stavrakopoulou: In certain places.
+[00:51:12] Francesca Stavrakopoulou: I'm on Twitter, so if you want to see what I talk about on Twitter, I'm @ProfStavrakopou.
+[00:51:19] Francesca Stavrakopoulou: Yeah.
+[00:51:20] Francesca Stavrakopoulou: And you can find a lot of my academic publications on my university webpage.
+[00:51:23] Francesca Stavrakopoulou: So just Google me.
+[00:51:24] Francesca Stavrakopoulou: Just put my name in Google.
+[00:51:25] Francesca Stavrakopoulou: It will.
+[00:51:26] Francesca Stavrakopoulou: It's quite an unusual name.
+[00:51:27] Francesca Stavrakopoulou: It will come up.
+[00:51:28] Dan McClellan: Yeah.
+[00:51:29] Dan McClellan: And you've.
+[00:51:29] Dan McClellan: And you've got some stuff on Academia.edu as well, don't you?
+[00:51:33] Francesca Stavrakopoulou: Yeah, but I keep forgetting that I have that thing.
+[00:51:35] Francesca Stavrakopoulou: Yeah.
+[00:51:36] Francesca Stavrakopoulou: So it's quite.
+[00:51:37] Francesca Stavrakopoulou: Yeah.
+[00:51:37] Francesca Stavrakopoulou: There's nothing.
+[00:51:38] Francesca Stavrakopoulou: There's nothing new.
+[00:51:39] Francesca Stavrakopoulou: Yeah.
+[00:51:40] Dan McClellan: If people want to access some of the scholarship, that's one way to do it, conveniently.
+[00:51:46] Dan McClellan: So, thank you so much for your time.
+[00:51:48] Dan McClellan: I appreciate it.
+[00:51:49] Dan McClellan: Hope you have a wonderful evening.
+[00:51:51] Dan McClellan: I hope things.
+[00:51:52] Dan McClellan: Conditions improve for the university there in the UK, and I look forward to visiting with you again out there in Exeter at some point soon.
+[00:52:01] Francesca Stavrakopoulou: Definitely.
+[00:52:02] Francesca Stavrakopoulou: Thank you so much for having me.
+[00:52:04] Dan McClellan: Thank you.
