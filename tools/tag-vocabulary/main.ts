@@ -3,6 +3,7 @@
  * Client-side TypeScript for the tag vocabulary tool
  */
 
+import type { TagCategory } from '../../src/config/tag-vocabulary.js';
 import {
   API_BASE_URL,
   CATEGORY_LABELS,
@@ -17,7 +18,7 @@ import {
 } from '../shared/utilities.js';
 
 // Available tag categories (loaded from API)
-let availableCategories: string[] = [];
+let availableCategories: TagCategory[] = [];
 
 // Get tag category class
 function getTagCategoryClass(_tagName: string): string {

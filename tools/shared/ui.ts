@@ -2,9 +2,10 @@
  * UI component utilities for DoD Tools
  */
 
-import type { BreadcrumbItem, AudioPlayerOptions, Episode, TagCategory } from './types.js';
+import type { BreadcrumbItem, AudioPlayerOptions, Episode } from './types.js';
 import { escapeHtml, formatDate } from './formatting.js';
 import { secondsToTimestamp, timestampToSeconds } from './timestamp.js';
+import type { TagCategory } from '../../src/config/tag-vocabulary.js';
 
 // Render breadcrumb navigation
 export function renderBreadcrumbs(items: BreadcrumbItem[]): string {
@@ -20,7 +21,10 @@ export function renderBreadcrumbs(items: BreadcrumbItem[]): string {
 }
 
 // Show toast notification
-export function showToast(message: string, type: 'success' | 'error' | 'warning' | 'info' = 'info'): void {
+export function showToast(
+  message: string,
+  type: 'success' | 'error' | 'warning' | 'info' = 'info',
+): void {
   const toast = document.createElement('div');
   toast.className = `toast ${type}`;
   toast.textContent = message;
@@ -32,7 +36,7 @@ export function showToast(message: string, type: 'success' | 'error' | 'warning'
 export function createAudioPlayer(
   containerId: string,
   videoId: string,
-  options: AudioPlayerOptions = {}
+  options: AudioPlayerOptions = {},
 ): HTMLAudioElement | undefined {
   const container = document.querySelector(`#${containerId}`);
   if (!container) return undefined;
@@ -62,7 +66,10 @@ export function createAudioPlayer(
 }
 
 // Seek audio to timestamp
-export function seekToTimestamp(audio: HTMLAudioElement, timestamp: string): void {
+export function seekToTimestamp(
+  audio: HTMLAudioElement,
+  timestamp: string,
+): void {
   const seconds = timestampToSeconds(timestamp);
   audio.currentTime = seconds;
   audio.play().catch(() => {
@@ -73,7 +80,7 @@ export function seekToTimestamp(audio: HTMLAudioElement, timestamp: string): voi
 // Render episode card
 export function renderEpisodeCard(
   episode: Episode,
-  options: { linkTo?: string; maxTags?: number; showTags?: boolean } = {}
+  options: { linkTo?: string; maxTags?: number; showTags?: boolean } = {},
 ): string {
   const { linkTo, maxTags = 5, showTags = true } = options;
   const tagCount = episode.tags?.length || 0;

@@ -2,7 +2,7 @@
  * Shared constants for DoD Tools
  */
 
-import type { TagCategory } from './utilities.js';
+import type { TagCategory } from '../../src/config/tag-vocabulary.js';
 
 // API base URL (tools-server.ts runs on port 3001)
 export const API_BASE_URL = 'http://localhost:3001';

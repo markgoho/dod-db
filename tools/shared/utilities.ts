@@ -12,7 +12,6 @@ export type {
   EpisodeTag,
   EpisodeSegment,
   EpisodeWithAudio,
-  TagCategory,
   ParsedLine,
   TranscriptLine,
   BreadcrumbItem,
@@ -85,7 +84,11 @@ export { saveToStorage, loadFromStorage } from './storage.js';
 export { debounce } from './debounce.js';
 
 // Re-export vocabulary utilities
-export { getTagVocabEntry, getTagCategory, fetchVocabulary } from './vocabulary.js';
+export {
+  getTagVocabEntry,
+  getTagCategory,
+  fetchVocabulary,
+} from './vocabulary.js';
 
 // Re-export form utilities
 export {
@@ -148,7 +151,11 @@ import { renderTimeline, renderSegmentLegend } from './timeline.js';
 import { pollJobStatus, startJobPolling } from './job-polling.js';
 import { saveToStorage, loadFromStorage } from './storage.js';
 import { debounce } from './debounce.js';
-import { getTagVocabEntry, getTagCategory, fetchVocabulary } from './vocabulary.js';
+import {
+  getTagVocabEntry,
+  getTagCategory,
+  fetchVocabulary,
+} from './vocabulary.js';
 import {
   getTagFormData,
   clearTagForm,
