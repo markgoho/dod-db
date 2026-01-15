@@ -88,7 +88,9 @@ async function main(): Promise<void> {
   }
 
   // Save if not dry run
-  if (!dryRun) {
+  if (dryRun) {
+    console.log('🔍 Dry run complete. No changes were saved.');
+  } else {
     const episodeSegments: EpisodeSegment[] = segments.map((s) => ({
       type: s.type,
       startTimestamp: s.startTimestamp,
@@ -99,8 +101,6 @@ async function main(): Promise<void> {
 
     await updateVideoSegments(video.videoId, episodeSegments);
     console.log('✅ Segments saved to processed-videos.json');
-  } else {
-    console.log('🔍 Dry run complete. No changes were saved.');
   }
 }
 
