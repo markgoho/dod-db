@@ -1,0 +1,757 @@
+---
+title: The Devil Made Us Do It
+date: 2023-08-07T00:00:00Z
+episodeNumber: 18
+videoId: 4PCkaPZMjTc
+aliases:
+  - /episodes/18/
+tags:
+  - Satan
+  - Balaam
+  - angel
+  - YHWH
+  - Hebrew Bible
+  - Israel
+  - Numbers
+  - Book of Job
+  - New Testament
+  - Baal
+  - Babylon
+  - Garden of Eden
+  - Moses
+  - 2 Samuel
+  - divine council
+  - Genesis
+  - Judaism
+  - King David
+  - Christianity
+  - Hebrews
+  - Samuel
+  - 1 Chronicles
+  - Adam
+  - Book of Isaiah
+  - Book of Revelation
+  - Egypt
+  - Eve
+  - gods
+  - Isaiah
+  - Jesus
+  - Septuagint
+  - Amorites
+  - Dead Sea
+  - Ishmael
+  - Joshua
+  - Judah
+  - Latin Vulgate
+  - manuscript
+  - Nephilim
+  - theology
+  - Ugarit
+  - Ammonites
+  - Book of Enoch
+  - Dead Sea Scrolls
+  - El
+  - James
+  - Joseph
+  - Judges
+  - King James Version
+  - Kings
+  - Luke
+  - Moabites
+  - Psalm
+  - Zechariah
+speakers:
+  - Dan McClellan
+  - Dan Beecher
+draft: false
+---
+
+{{< line >}}[00:00:02.320] Dan McClellan: In some of these other texts, like the Samaritan Pentateuch and some Dead Sea Scroll manuscripts, it's the angel of Adonai that is saying, "Balaam, hey, wake up."{{< /line >}}
+{{< line >}}[00:00:14.240] Dan McClellan: In, like, Exodus 4:24.{{< /line >}}
+{{< line >}}[00:00:17.040] Dan McClellan: So this is where Adonai confronts Moses at the Motel 6 or whatever and says—{{< /line >}}
+{{< line >}}[00:00:26.120] Dan McClellan: Tries to kill him, and then his wife circumcises him and throws it at his feet and says, "Thou art a bloody husband unto me."{{< /line >}}
+{{< line >}}[00:00:35.260] Dan McClellan: In the Targumim and in the Septuagint, it's the angel that confronts Moses and tries to kill him.{{< /line >}}
+{{< line >}}[00:00:41.980] Dan McClellan: It's not Adonai himself.{{< /line >}}
+{{< line >}}[00:00:43.020] Dan McClellan: So this is something that was done quite commonly anciently.{{< /line >}}
+{{< line >}}[00:00:46.620] Dan McClellan: And so my argument here is that this is Adonai himself who is confronting Balaam.{{< /line >}}
+{{< line >}}[00:00:53.820] Dan Beecher: I don't think that that helps me understand the story more.{{< /line >}}
+{{< line >}}[00:00:56.620] Dan Beecher: No, no, it's more interesting.{{< /line >}}
+{{< line >}}[00:00:58.140] Dan McClellan: It just muddies the waters.{{< /line >}}
+{{< line >}}[00:01:04.040] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:01:05.600] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
+{{< line >}}[00:01:07.000] Dan McClellan: And evidently you are listening to the Data Over Dogma podcast, where we try to increase public access to the academic study of the Bible and religion and combat the spread of misinformation.{{< /line >}}
+{{< line >}}[00:01:18.680] Dan McClellan: About them.{{< /line >}}
+{{< line >}}[00:01:20.280] Dan McClellan: How are you doing today, Dan?{{< /line >}}
+{{< line >}}[00:01:21.880] Dan Beecher: Rocking and rolling, baby.{{< /line >}}
+{{< line >}}[00:01:24.200] Dan Beecher: Today's gonna be a fun one.{{< /line >}}
+{{< line >}}[00:01:26.040] Dan Beecher: I'm kind of excited about today.{{< /line >}}
+{{< line >}}[00:01:27.520] Dan Beecher: We're gonna—{{< /line >}}
+{{< line >}}[00:01:28.280] Dan Beecher: We're gonna be just diving headfirst into some stuff on today's show.{{< /line >}}
+{{< line >}}[00:01:32.110] Dan McClellan: Yeah, it's gonna get—{{< /line >}}
+{{< line >}}[00:01:33.110] Dan McClellan: It's gonna get interesting, that's for sure.{{< /line >}}
+{{< line >}}[00:01:35.310] Dan Beecher: Yeah, we're gonna start it off with a little chapter and verse, and we're gonna do a story that I thought just had sort of one interesting element, but it turns out that it has stuff that, like, I—{{< /line >}}
+{{< line >}}[00:01:47.790] Dan Beecher: You know, when you read it carefully, you're like, "Wait, what? What's that? What's happening right there?"{{< /line >}}
+{{< line >}}[00:01:50.310] Dan Beecher: So we're gonna dive into that, and then afterwards, we're gonna start a whole new segment.{{< /line >}}
+{{< line >}}[00:01:59.480] Dan McClellan: About...{{< /line >}}
+{{< line >}}[00:01:59.680] Dan McClellan: It's gonna get weird.{{< /line >}}
+{{< line >}}[00:02:00.840] Dan Beecher: Yeah, about the evil one.{{< /line >}}
+{{< line >}}[00:02:04.280] Dan Beecher: The great Satan himself.{{< /line >}}
+{{< line >}}[00:02:07.160] Dan McClellan: Could it be Satan?{{< /line >}}
+{{< line >}}[00:02:10.040] Dan Beecher: Satan.{{< /line >}}
+{{< line >}}[00:02:11.080] Dan Beecher: All right, but first, chapter and verse.{{< /line >}}
+{{< line >}}[00:02:17.480] Dan McClellan: What are we looking at today?{{< /line >}}
+{{< line >}}[00:02:18.920] Dan Beecher: Well, today we're in Numbers.{{< /line >}}
+{{< line >}}[00:02:22.280] Dan Beecher: Numbers 22.{{< /line >}}
+{{< line >}}[00:02:23.850] Dan Beecher: Be specific.{{< /line >}}
+{{< line >}}[00:02:24.810] Dan McClellan: All right.{{< /line >}}
+{{< line >}}[00:02:25.330] Dan McClellan: That is a number.{{< /line >}}
+{{< line >}}[00:02:26.330] Dan Beecher: That is.{{< /line >}}
+{{< line >}}[00:02:26.810] Dan Beecher: That's a number.{{< /line >}}
+{{< line >}}[00:02:27.850] Dan Beecher: That's—{{< /line >}}
+{{< line >}}[00:02:28.330] Dan Beecher: There's lots of numbers, almost an infinite number of numbers.{{< /line >}}
+{{< line >}}[00:02:33.690] Dan Beecher: And I want—{{< /line >}}
+{{< line >}}[00:02:35.290] Dan Beecher: I want to give us some—{{< /line >}}
+{{< line >}}[00:02:36.410] Dan Beecher: Some background.{{< /line >}}
+{{< line >}}[00:02:37.210] Dan Beecher: I'm gonna—{{< /line >}}
+{{< line >}}[00:02:37.810] Dan Beecher: I'm—{{< /line >}}
+{{< line >}}[00:02:38.050] Dan Beecher: I'm—{{< /line >}}
+{{< line >}}[00:02:38.290] Dan Beecher: I'm actually going to bury the lead here.{{< /line >}}
+{{< line >}}[00:02:39.769] Dan Beecher: Or not bury the lead.{{< /line >}}
+{{< line >}}[00:02:40.890] Dan Beecher: I'm actually going to just sort of spill the beans.{{< /line >}}
+{{< line >}}[00:02:42.530] Dan Beecher: We're talking about Balaam.{{< /line >}}
+{{< line >}}[00:02:43.850] Dan Beecher: We're talking about a talking donkey.{{< /line >}}
+{{< line >}}[00:02:46.330] Dan Beecher: And I'll—and to be honest with you right now, the talking donkey is the least interesting part of this story to me now.{{< /line >}}
+{{< line >}}[00:02:55.170] Dan Beecher: Yeah, so, so yes, a donkey will talk, but there's so much more to it.{{< /line >}}
+{{< line >}}[00:03:00.930] Dan Beecher: And I wanted to start by giving us some background about what's happening.{{< /line >}}
+{{< line >}}[00:03:04.010] Dan Beecher: This is—and Numbers is weird to me.{{< /line >}}
+{{< line >}}[00:03:07.170] Dan Beecher: We're back in the Exodus story.{{< /line >}}
+{{< line >}}[00:03:09.970] Dan Beecher: We're not in Exodus, but, but we're kind of—we're kind of rooted in that story.{{< /line >}}
+{{< line >}}[00:03:15.290] Dan Beecher: Am I right about that?{{< /line >}}
+{{< line >}}[00:03:16.130] Dan Beecher: We're sort of in the Moses leaving Israel or rather Egypt story, correct?{{< /line >}}
+{{< line >}}[00:03:21.800] Dan McClellan: Yes, we are.{{< /line >}}
+{{< line >}}[00:03:23.720] Dan McClellan: Where they are kind of wandering.{{< /line >}}
+{{< line >}}[00:03:26.520] Dan McClellan: They're camped in the plains of Moab, across the Jordan River from Jericho.{{< /line >}}
+{{< line >}}[00:03:32.760] Dan Beecher: And they are not just wandering because you go back one, two chapters, they are slaughtering people as they go through.{{< /line >}}
+{{< line >}}[00:03:42.760] Dan Beecher: They are, they are absolutely destroying.utely destroying.{{< /line >}}
+{{< line >}}[00:03:54.100] Dan Beecher: They are committing mass genocides as they sort of plunder through this, this part of the world.{{< /line >}}
+{{< line >}}[00:03:54.900] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:03:58.180] Dan Beecher: They've just defeated the Ammonites.{{< /line >}}
+{{< line >}}[00:03:59.460] Dan Beecher: Is that right?{{< /line >}}
+{{< line >}}[00:04:06.420] Dan Beecher: And, and, and, and just like they are, they are tearing through the land.{{< /line >}}
+{{< line >}}[00:04:07.140] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:04:10.900] Dan Beecher: They are a barbarian horde at this point.{{< /line >}}
+{{< line >}}[00:04:28.830] Dan Beecher: So now we cut from the Israelites to the Moabites who have heard of this horde of Israelites who are just shredding through the world and headed aimed directly at them.{{< /line >}}
+{{< line >}}[00:04:33.790] Dan Beecher: And they are justifiably, I think, very concerned.{{< /line >}}
+{{< line >}}[00:04:38.110] Dan Beecher: So they head to, so the Moabite king.{{< /line >}}
+{{< line >}}[00:04:41.790] Dan Beecher: Who is king.{{< /line >}}
+{{< line >}}[00:04:42.390] Dan Beecher: Oh, okay. Balak decides to send for, go ahead for, for Balaam, who is, who is, seems to be the, the go to guy for curses, for blessings, for communing with God.{{< /line >}}
+{{< line >}}[00:05:01.720] Dan McClellan: He's, he's a bit of an itinerant.{{< /line >}}
+{{< line >}}[00:05:04.040] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:05:04.600] Dan McClellan: Blesser slash cursor.{{< /line >}}
+{{< line >}}[00:05:06.440] Dan McClellan: This is, this is one of the things that prophets could be hired to do at the time would be to show up and, you know, we don't like these guys, throw some money at them and let him curse him.{{< /line >}}
+{{< line >}}[00:05:20.160] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:05:21.280] Dan Beecher: So the king sends two emissaries with money to Balaam and says, hey, need you to curse these guys.{{< /line >}}
+{{< line >}}[00:05:30.080] Dan Beecher: We are in trouble, we might all die.{{< /line >}}
+{{< line >}}[00:05:32.960] Dan Beecher: Because to be clear, the last battle that the Israelites had, they left no one alive.{{< /line >}}
+{{< line >}}[00:05:39.160] Dan McClellan: Yeah, I think that's actually the, the Amorites, isn't it?{{< /line >}}
+{{< line >}}[00:05:42.200] Dan McClellan: That, and, and Balak hears what has happened to the Amorites and that's what catalyzes this, this call for help.{{< /line >}}
+{{< line >}}[00:05:51.080] Dan Beecher: Yeah, he's, he's freaked out, understandably.{{< /line >}}
+{{< line >}}[00:05:54.600] Dan Beecher: So, so Balaam says, says to these emissaries, chill out for a night.{{< /line >}}
+{{< line >}}[00:06:03.760] Dan Beecher: I'm gonna talk to God.{{< /line >}}
+{{< line >}}[00:06:05.370] Dan Beecher: I'll see what he says and I'll come back to you.{{< /line >}}
+{{< line >}}[00:06:08.810] Dan Beecher: He talks to God, and God says, no, no, these Israelites are blessed, so you can't curse them, so send these dudes away.{{< /line >}}
+{{< line >}}[00:06:19.610] Dan Beecher: He sends the dudes away.{{< /line >}}
+{{< line >}}[00:06:22.010] Dan Beecher: The king, disappointed, sends even more important dudes, I guess with even more money or the promise of more money, and says, dude, just come and help us.{{< /line >}}
+{{< line >}}[00:06:36.620] Dan Beecher: I'll give you literally anything.{{< /line >}}
+{{< line >}}[00:06:39.020] Dan Beecher: I will, I will.{{< /line >}}
+{{< line >}}[00:06:40.060] Dan Beecher: I will make sure that you are that.{{< /line >}}
+{{< line >}}[00:06:41.860] Dan Beecher: That you are paid well.{{< /line >}}
+{{< line >}}[00:06:44.940] Dan Beecher: The.{{< /line >}}
+{{< line >}}[00:06:45.260] Dan Beecher: The.{{< /line >}}
+{{< line >}}[00:06:45.500] Dan Beecher: The actual line is, thus says Balak, son of Zippor, do not let anything hinder you from coming to me, for I will surely do you great honor.{{< /line >}}
+{{< line >}}[00:06:53.540] Dan Beecher: And whatever you say to me, I will do.{{< /line >}}
+{{< line >}}[00:06:56.300] Dan Beecher: Come curse this people for me.{{< /line >}}
+{{< line >}}[00:07:00.150] Dan Beecher: Balaam says, you know, I'm not going to do anything that the Lord tells me not to do, no matter how much money you give me.{{< /line >}}
+{{< line >}}[00:07:07.430] Dan Beecher: But hang out overnight again.{{< /line >}}
+{{< line >}}[00:07:10.390] Dan Beecher: I'll see what God says to me this time.{{< /line >}}
+{{< line >}}[00:07:14.470] Dan Beecher: And then verse 20 says that that night God came to Balaam and said to him, if the men have come to summon you, get up and go with them, but do only what I tell you to do.{{< /line >}}
+{{< line >}}[00:07:26.530] Dan Beecher: So he got up in the morning, saddled his donkey, and went with the officials of Moab.{{< /line >}}
+{{< line >}}[00:07:32.610] Dan Beecher: So far, everything seems clear and understandable.{{< /line >}}
+{{< line >}}[00:07:37.090] Dan Beecher: And then the next verse happens, and I don't know what's going on, right?{{< /line >}}
+{{< line >}}[00:07:43.570] Dan Beecher: So the next verse is, God's anger was kindled because he was going, okay, so before I even get to the second clause or the second half of that verse, help me understand why God said, go with them, and then was mad when he did.{{< /line >}}
+{{< line >}}[00:08:03.900] Dan McClellan: So there are actually a couple of incongruities between what we just read and what is coming up in this story.{{< /line >}}
+{{< line >}}[00:08:12.860] Dan McClellan: And overwhelmingly, scholars agree that this is likely a separate tradition that has been worked into this story in an effort to kind of editorialize Balaam a little bit.{{< /line >}}
+{{< line >}}[00:08:25.510] Dan McClellan: Because the punchline of this story is, Balaam is stupider than his own ass, his own donkey.{{< /line >}}
+{{< line >}}[00:08:34.350] Dan McClellan: But Balaam is not being mocked in the rest of the narrative.he narrative.{{< /line >}}
+{{< line >}}[00:08:48.450] Dan McClellan: The narrative around this story is talking about how Balaam is being faithful, is trying to do what he's instructed to do by the God of Israel.{{< /line >}}
+{{< line >}}[00:08:48.450] Dan McClellan: And so this is.{{< /line >}}
+{{< line >}}[00:08:49.930] Dan McClellan: This is a little independent tradition associated with Balaam that is basically there to just give the finger to Balaam, just kind of an aside from the rest of the story.{{< /line >}}
+{{< line >}}[00:09:04.170] Dan Beecher: Interesting.{{< /line >}}
+{{< line >}}[00:09:04.770] Dan McClellan: Now you see this a lot, where separate traditions get woven together, and the rhetorical value of having the tradition there is more important than any incongruities that may be caused by the wedding of these two traditions.{{< /line >}}
+{{< line >}}[00:09:23.750] Dan McClellan: I think the story of Joseph being sold into Egypt is one of the easiest ones to see where it's like, so then there were these Ishmaelites, and then the Midianites took them out, and then the brothers sold them to the Ishmaelites, then the Midianites took him to Egypt.{{< /line >}}
+{{< line >}}[00:09:36.590] Dan McClellan: And you know, there's no coherence to the story.{{< /line >}}
+{{< line >}}[00:09:41.310] Dan McClellan: And to try to create coherence, you have to imagine, you just have to fabricate a number of scenarios that are nowhere in evidence.{{< /line >}}
+{{< line >}}[00:09:51.040] Dan McClellan: However, if you just peel apart the two different layers and disentangle them, you get two perfectly coherent, perfectly full stories with their own beginnings, middles and ends.{{< /line >}}
+{{< line >}}[00:10:03.360] Dan McClellan: And so we see this happening from time to time, particularly in the Pentateuch, the first five books of Moses.{{< /line >}}
+{{< line >}}[00:10:08.320] Dan McClellan: And so this story is an example of this.{{< /line >}}
+{{< line >}}[00:10:11.120] Dan McClellan: And it makes you wonder, wait a minute, this, like two verses before God says, yeah, go ahead, go with him.{{< /line >}}
+{{< line >}}[00:10:16.970] Dan McClellan: And then it's like, wait a minute, why are you going with him?{{< /line >}}
+{{< line >}}[00:10:19.690] Dan McClellan: And so it is, it is a little confusing.{{< /line >}}
+{{< line >}}[00:10:22.770] Dan McClellan: It's just a product of these editorial stitches.{{< /line >}}
+{{< line >}}[00:10:25.730] Dan Beecher: Yeah, I see that, you know, in my reading, I see that come up a bunch and I've never been able to piece it together in that way.{{< /line >}}
+{{< line >}}[00:10:32.610] Dan Beecher: I've always been very confusing because it does seem like a bunch of times, especially in the Pentateuch, God says, go do the thing, and the person goes and does the thing.{{< /line >}}
+{{< line >}}[00:10:43.360] Dan Beecher: And then God's like, why did you do that?{{< /line >}}
+{{< line >}}[00:10:46.120] Dan Beecher: Yeah, it can be very confusing.{{< /line >}}
+{{< line >}}[00:10:48.960] Dan Beecher: I, before you and I talked about this, I had come up with an alternate guess or that I understand it makes sense what you just explained, but I kind of like, I don't understand why Balaam, who is a Moabite himself, would be in touch with Adonai, the God of Israel.{{< /line >}}
+{{< line >}}[00:11:18.340] Dan Beecher: So my theory, this is a hypothesis by a non-scholar that means nothing to anybody.{{< /line >}}
+{{< line >}}[00:11:23.580] Dan Beecher: So don't take this with you, but my theory was that it was Chemosh, the God of Moab, that had said, don't go, that had said, you can go with him, and that it was Adonai, the God of Israel, who said, yes, you can.{{< /line >}}
+{{< line >}}[00:11:40.690] Dan Beecher: Or rather who said, or who was mad and said, no, don't do it.{{< /line >}}
+{{< line >}}[00:11:44.330] Dan Beecher: Yeah, anyway, that's my personal theory.{{< /line >}}
+{{< line >}}[00:11:47.330] Dan Beecher: I'm not sticking with it.{{< /line >}}
+{{< line >}}[00:11:48.570] Dan Beecher: Because I don't.{{< /line >}}
+{{< line >}}[00:11:49.650] Dan Beecher: I'm not a scholar.{{< /line >}}
+{{< line >}}[00:11:50.890] Dan Beecher: I don't know.{{< /line >}}
+{{< line >}}[00:11:51.610] Dan Beecher: Anyway, someone take that and run with it.{{< /line >}}
+{{< line >}}[00:11:54.770] Dan Beecher: Anyway, God, regardless, God's anger was kindled because he was going.{{< /line >}}
+{{< line >}}[00:12:01.010] Dan Beecher: And the angel of the Lord took his stand in the road.{{< /line >}}
+{{< line >}}[00:12:05.570] Dan Beecher: And as his adversary.{{< /line >}}
+{{< line >}}[00:12:07.680] Dan Beecher: Now, I'm guessing you're going to jump on that last word, right?{{< /line >}}
+{{< line >}}[00:12:11.080] Dan McClellan: So in Hebrew it says le-satan, or as a satan.{{< /line >}}
+{{< line >}}[00:12:17.720] Dan McClellan: So this is the noun.{{< /line >}}
+{{< line >}}[00:12:19.280] Dan McClellan: This is one of only a handful of places in the entire Hebrew Bible where this noun satan appears.{{< /line >}}
+{{< line >}}[00:12:26.680] Dan McClellan: And one of the things that this indicates is that a satan is more of a role that someone fills rather than the personal name of a specific individual.{{< /line >}}
+{{< line >}}[00:12:40.100] Dan McClellan: And so throughout the Hebrew Bible, you have different entities that are filling that role.{{< /line >}}
+{{< line >}}[00:12:45.460] Dan McClellan: And here it is the very angel of the Lord who is acting as a satan, and it's le-satan lo.{{< /line >}}
+{{< line >}}[00:12:54.980] Dan McClellan: So his satan or his adversary, his opposer, something like that.{{< /line >}}
+{{< line >}}[00:13:01.740] Dan McClellan: But I would go even further and say that everything else in the story suggests that this is God themselves.[00:13:09.900] Dan McClellan: So this is Adonai, who is standing in the way.{{< /line >}}
+{{< line >}}[00:13:13.660] Dan McClellan: The only reason we would not think that is because we have that word angel there, which is in Hebrew malak, which literally just means messenger and is used a number of times to refer to perfectly human messengers throughout the Hebrew Bible.{{< /line >}}
+{{< line >}}[00:13:26.140] Dan McClellan: But when we have Malak Adonai or Malak Elohim or Malak ha Elohim, that is frequently understood to be some kind of supernatural entity and specifically a specific kind of leading angel.{{< /line >}}
+{{< line >}}[00:13:40.200] Dan McClellan: But I have argued in print in more than one place and will continue to argue in print that many of these places, particularly in the Pentateuch, but also in places like Judges and perhaps even Joshua, where we have the Malak Adonai, where the identities of God and their angels seem to be overlapping, seem to be confused.{{< /line >}}
+{{< line >}}[00:14:00.710] Dan McClellan: Those stories were originally about God themselves and theological discomfort with the direct physical interaction of God and humanity, or where God seems to be doing something uncomfortable like confronting Balaam here after saying, yeah, go with them, they would slip in this word malak, as a way to kind of prophylactically distance the deity from these events.{{< /line >}}
+{{< line >}}[00:14:30.940] Dan McClellan: And this actually occurs in later literature when we look at the Targumim, which are the Aramaic paraphrases of the Bible.{{< /line >}}
+{{< line >}}[00:14:39.420] Dan McClellan: When we look at the Septuagint and other later versions of the Hebrew Bible, we see a proliferation of the word for angel, where in the original Hebrew it referred to God themselves.{{< /line >}}
+{{< line >}}[00:14:54.700] Dan McClellan: So, for instance, in chapter 22, where we have God coming to Balaam, standing at the foot of his bed saying, "Balaam, Balaam, hey, you awake?"{{< /line >}}
+{{< line >}}[00:15:04.440] Dan McClellan: In some of these other texts, like the Samaritan Pentateuch and some Dead Sea Scroll manuscripts, it's the angel of God that is saying, "Balaam, hey, wake up."{{< /line >}}
+{{< line >}}[00:15:16.600] Dan McClellan: In, like, Exodus 4:24.{{< /line >}}
+{{< line >}}[00:15:19.400] Dan McClellan: So this is where God confronts Moses at the Motel 6 or whatever and says, tries to kill him, and then his wife circumcises him and throws it at his feet and says, "Thou art a bloody husband unto me."{{< /line >}}
+{{< line >}}[00:15:37.640] Dan McClellan: In the Targumim and in the Septuagint, it's the angel that confronts Moses and tries to kill them.{{< /line >}}
+{{< line >}}[00:15:44.360] Dan McClellan: It's not God himself.{{< /line >}}
+{{< line >}}[00:15:45.320] Dan McClellan: So this is something that was done quite commonly, anciently.{{< /line >}}
+{{< line >}}[00:15:49.000] Dan McClellan: And so my argument here is that this is God themselves who is confronting Balaam.{{< /line >}}
+{{< line >}}[00:15:56.350] Dan Beecher: I don't think that that helps me understand the story more.{{< /line >}}
+{{< line >}}[00:15:58.910] Dan McClellan: No, no.{{< /line >}}
+{{< line >}}[00:15:59.550] Dan Beecher: More interesting.{{< /line >}}
+{{< line >}}[00:16:00.430] Dan McClellan: It just muddies the waters.{{< /line >}}
+{{< line >}}[00:16:01.870] Dan McClellan: Yep.{{< /line >}}
+{{< line >}}[00:16:03.630] Dan McClellan: But the angel is speaking as God.{{< /line >}}
+{{< line >}}[00:16:07.550] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:16:08.430] Dan McClellan: In confronting Balaam.{{< /line >}}
+{{< line >}}[00:16:10.910] Dan Beecher: Yeah, very clearly.{{< /line >}}
+{{< line >}}[00:16:12.190] Dan Beecher: One way or the other, whether it's an angel or God themselves, it's very clear that this is.{{< /line >}}
+{{< line >}}[00:16:18.590] Dan Beecher: This is in God's name that this is happening.{{< /line >}}
+{{< line >}}[00:16:21.340] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:16:22.620] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:16:23.260] Dan Beecher: So the angel of the Lord takes his stand in the road as Balaam's adversary, as his Satan, if you will.{{< /line >}}
+{{< line >}}[00:16:32.860] Dan Beecher: And we'll get in. We're going to get into the Satan later, so that's going to be fun.{{< /line >}}
+{{< line >}}[00:16:38.300] Dan Beecher: And he's riding on his donkey and his two servants are with him.{{< /line >}}
+{{< line >}}[00:16:44.100] Dan Beecher: I'm not sure why we need to know about the servants, but the donkey is the only one who manages to see God.{{< /line >}}
+{{< line >}}[00:16:50.660] Dan Beecher: Or the angel, whichever.{{< /line >}}
+{{< line >}}[00:16:52.620] Dan McClellan: Quick interruption.{{< /line >}}
+{{< line >}}[00:16:53.620] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:16:54.260] Dan McClellan: The princes of Moab are not mentioned, even though in Numbers 22:21 it says he went with the princes of Moab.{{< /line >}}
+{{< line >}}[00:17:02.420] Dan McClellan: So another indication that we've got a separate tradition here.{{< /line >}}
+{{< line >}}[00:17:05.620] Dan Beecher: No, he's just on a slow donkey.{{< /line >}}
+{{< line >}}[00:17:07.940] Dan Beecher: They're way ahead.{{< /line >}}
+{{< line >}}[00:17:10.100] Dan Beecher: Donkeys are slow, man.{{< /line >}}
+{{< line >}}[00:17:11.340] Dan Beecher: Those guys are on horses or camels or something.{{< /line >}}
+{{< line >}}[00:17:13.340] Dan Beecher: You never know.{{< /line >}}
+{{< line >}}[00:17:14.560] Dan Beecher: Anyway, the donkey sees the angel.{{< /line >}}
+{{< line >}}[00:17:17.920] Dan Beecher: Nobody else seems to.{{< /line >}}
+{{< line >}}[00:17:19.360] Dan Beecher: And so the donkey turns.{{< /line >}}
+{{< line >}}[00:17:22.880] Dan Beecher: The donkey's like, there's a dude with a sword.{{< /line >}}
+{{< line >}}[00:17:25.840] Dan McClellan: Yeah..{{< /line >}}
+{{< line >}}[00:17:26.280] Dan Beecher: "And I don't like this idea."{{< /line >}}
+{{< line >}}[00:17:28.080] Dan Beecher: So I'm going to swerve and turn off the road and go into a field.{{< /line >}}
+{{< line >}}[00:17:36.880] Dan Beecher: And Balaam angrily strikes his donkey and says, "Get back on the road."{{< /line >}}
+{{< line >}}[00:17:44.390] Dan Beecher: And...{{< /line >}}
+{{< line >}}[00:17:44.750] Dan Beecher: And then the angel...{{< /line >}}
+{{< line >}}[00:17:45.990] Dan Beecher: I love this because it does paint the picture of this angel just sort of corralling the donkey, just like, "Oh, okay, you go.{{< /line >}}
+{{< line >}}[00:17:54.270] Dan Beecher: Nope, go over there."{{< /line >}}
+{{< line >}}[00:17:54.990] Dan McClellan: Oh, no.{{< /line >}}
+{{< line >}}[00:17:55.470] Dan Beecher: Contain.{{< /line >}}
+{{< line >}}[00:17:56.030] Dan McClellan: Contain.{{< /line >}}
+{{< line >}}[00:17:57.430] Dan Beecher: Eventually, the angel pins the donkey against a wall, so three times this happens, and three times Balaam strikes the donkey, at which point...{{< /line >}}
+{{< line >}}[00:18:11.860] Dan Beecher: The donkey is very upset, having been thrice struck.{{< /line >}}
+{{< line >}}[00:18:16.940] Dan Beecher: And for whatever reason, the Lord decides to give the gift of speech to the donkey.{{< /line >}}
+{{< line >}}[00:18:25.460] Dan Beecher: You'd think that the Lord would just reveal himself to Balaam, but instead he has the donkey speak, which...{{< /line >}}
+{{< line >}}[00:18:32.060] Dan McClellan: Which doesn't seem to throw Balaam off his game at all.{{< /line >}}
+{{< line >}}[00:18:35.360] Dan McClellan: He takes it in stride, very much so.{{< /line >}}
+{{< line >}}[00:18:39.040] Dan Beecher: The donkey says, "What have I done to you that you have struck me these three times?"{{< /line >}}
+{{< line >}}[00:18:43.440] Dan Beecher: And Balaam, as you say, just sort of turns to him and is like, "Dude, it's because you keep turning wrong."{{< /line >}}
+{{< line >}}[00:18:49.200] Dan Beecher: He says, "Because you have made a fool of me.{{< /line >}}
+{{< line >}}[00:18:51.359] Dan Beecher: I wish I had a sword in my hand.{{< /line >}}
+{{< line >}}[00:18:52.880] Dan Beecher: I would kill you right now."{{< /line >}}
+{{< line >}}[00:18:54.080] Dan Beecher: You're right.{{< /line >}}
+{{< line >}}[00:18:55.040] Dan Beecher: He doesn't go, "Holy crap, a talking donkey!"{{< /line >}}
+{{< line >}}[00:18:59.680] Dan Beecher: Apparently, that's not...{{< /line >}}
+{{< line >}}[00:19:00.320] Dan Beecher: That's not...{{< /line >}}
+{{< line >}}[00:19:00.960] Dan Beecher: That's not...{{< /line >}}
+{{< line >}}[00:19:01.600] Dan Beecher: Look, this guy, God visits this guy all the time.{{< /line >}}
+{{< line >}}[00:19:05.390] Dan Beecher: He knows donkeys can talk.{{< /line >}}
+{{< line >}}[00:19:07.070] Dan Beecher: He's totally been down with that.{{< /line >}}
+{{< line >}}[00:19:09.310] Dan Beecher: Anyway, the donkey says, "Am I not..."{{< /line >}}
+{{< line >}}[00:19:11.870] Dan Beecher: This is the sweetest part.{{< /line >}}
+{{< line >}}[00:19:13.190] Dan Beecher: The donkey says, "Am I not your donkey, which you have ridden all your life to this day?{{< /line >}}
+{{< line >}}[00:19:18.190] Dan Beecher: Have I been in the habit of treating you this way?"{{< /line >}}
+{{< line >}}[00:19:21.310] Dan Beecher: And he said, "No."{{< /line >}}
+{{< line >}}[00:19:23.070] Dan McClellan: "So no, donkey, no."{{< /line >}}
+{{< line >}}[00:19:27.310] Dan Beecher: Does Balaam speak with a Scottish accent?{{< /line >}}
+{{< line >}}[00:19:29.510] Dan Beecher: I think he might.{{< /line >}}
+{{< line >}}[00:19:31.050] Dan Beecher: I think he might.{{< /line >}}
+{{< line >}}[00:19:32.890] Dan Beecher: We need to get Mike Myers in here to do the Balaam voice.{{< /line >}}
+{{< line >}}[00:19:38.410] Dan Beecher: So there you go, then. After the conversation with the pack animal, the Lord does make himself visible to Balaam and opened Balaam's eyes.{{< /line >}}
+{{< line >}}[00:19:54.330] Dan McClellan: Yeah, we have here...{{< /line >}}
+{{< line >}}[00:19:55.770] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:19:57.620] Dan Beecher: And he saw the angel of the Lord standing in the road with his drawn sword in his hand, and he bowed down, falling on his face.{{< /line >}}
+{{< line >}}[00:20:06.580] Dan McClellan: And then the angel...{{< /line >}}
+{{< line >}}[00:20:07.700] Dan Beecher: And then the angel goes after him.{{< /line >}}
+{{< line >}}[00:20:10.500] Dan McClellan: "What...{{< /line >}}
+{{< line >}}[00:20:10.900] Dan McClellan: What are you doing?"{{< /line >}}
+{{< line >}}[00:20:11.860] Dan Beecher: "Why are you hitting your donkey?"{{< /line >}}
+{{< line >}}[00:20:13.500] Dan Beecher: Which, by the way, that's so unfair.{{< /line >}}
+{{< line >}}[00:20:15.940] Dan Beecher: I mean, I know that you claimed that this story is about him being dumber than his donkey, but, like, if you don't see the guy and your donkey is making all these crazy turns and you're just trying to stay on the road...{{< /line >}}
+{{< line >}}[00:20:32.970] Dan Beecher: I'm not faulting{{< /line >}}
+{{< line >}}[00:20:33.690] Dan Beecher: Balaam on that one, I'm giving it to him.{{< /line >}}
+{{< line >}}[00:20:37.050] Dan Beecher: You would hit your donkey to go back, I think.{{< /line >}}
+{{< line >}}[00:20:39.570] Dan Beecher: I don't know.{{< /line >}}
+{{< line >}}[00:20:40.330] Dan McClellan: Well, I think it strikes me as very similar to a lot of traditions we have from the broader world of ancient Southwest Asian literature, where the gods are playing tricks on people and they're coming down disguised as people and they're like, "Ooh, what do you think about this god?" and just in general being jerks to humans.{{< /line >}}
+{{< line >}}[00:21:04.390] Dan McClellan: And frequently they kind of corner them, they trap them, and then reveal, "Aha, I gotcha!"{{< /line >}}
+{{< line >}}[00:21:11.510] Dan McClellan: And so it's kind of entrapment here because...{{< /line >}}
+{{< line >}}[00:21:15.670] Dan McClellan: And particularly where it says then Adonai opened the eyes of Balaam.{{< /line >}}
+{{< line >}}[00:21:21.550] Dan McClellan: So, which suggests that God is somehow controlling Balaam's ability to perceive exactly the angel or God themselves.the angel or God themselves.{{< /line >}}
+{{< line >}}[00:21:34.350] Dan Beecher: Why weren't you looking for me?{{< /line >}}
+{{< line >}}[00:21:35.710] Dan McClellan: Yeah, it's like, because you are obscuring yourself from him or something like that.{{< /line >}}
+{{< line >}}[00:21:39.790] Dan McClellan: Your yourself from him or something like that.{{< /line >}}
+{{< line >}}[00:21:42.510] Dan McClellan: And says, the donkey saw me turned away these three times.{{< /line >}}
+{{< line >}}[00:21:46.400] Dan McClellan: If it had not turned away from me, I would have just killed you and let the donkey live.{{< /line >}}
+{{< line >}}[00:21:51.840] Dan McClellan: Which is, and yeah, the point here is to be like, look at this moron.{{< /line >}}
+{{< line >}}[00:21:56.480] Dan McClellan: He can't even, he's not even aware that God or the angel of God is standing in front of him.{{< /line >}}
+{{< line >}}[00:22:03.360] Dan McClellan: His donkey sees it.{{< /line >}}
+{{< line >}}[00:22:07.280] Dan McClellan: You can't understand things going on as well as your own donkey.{{< /line >}}
+{{< line >}}[00:22:11.860] Dan Beecher: It does seem unfair.{{< /line >}}
+{{< line >}}[00:22:14.100] Dan Beecher: This seems like a very unfair test.{{< /line >}}
+{{< line >}}[00:22:17.140] Dan Beecher: But Balaam takes the bait, says, says, I have sinned, for I did not know that you were standing in the road to oppose me now, therefore, if it is displeasing to you, I will return home.{{< /line >}}
+{{< line >}}[00:22:32.660] Dan Beecher: It seems like Balaam is just trying to do what's right the whole time.{{< /line >}}
+{{< line >}}[00:22:37.240] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:22:37.800] Dan Beecher: And, and the God.{{< /line >}}
+{{< line >}}[00:22:40.040] Dan Beecher: And God is, yeah, like you said, it does feel a little trickster-y.{{< /line >}}
+{{< line >}}[00:22:44.360] Dan Beecher: Feels a little, a little Loki-ish, maybe.{{< /line >}}
+{{< line >}}[00:22:49.960] Dan Beecher: So the angel of the Lord said to Balaam, go with the men, but speak only what I tell you to speak.{{< /line >}}
+{{< line >}}[00:22:56.200] Dan Beecher: And Balaam went on with the officials, do you want to, why don't, do you want to give us the rest of the story on this?{{< /line >}}
+{{< line >}}[00:23:07.330] Dan McClellan: Well, well, basically Balak hires Balaam to curse Israel, and then every time Balaam goes out and blesses Israel instead.{{< /line >}}
+{{< line >}}[00:23:17.010] Dan McClellan: And each time Balak is like, what did I just say?{{< /line >}}
+{{< line >}}[00:23:21.570] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:23:24.050] Dan McClellan: And is just getting increasingly upset with Balaam.{{< /line >}}
+{{< line >}}[00:23:27.410] Dan McClellan: And every time Balaam's like, look, man, I told you I can only do what God commands.{{< /line >}}
+{{< line >}}[00:23:32.650] Dan McClellan: And turns out God commands me to do the exact opposite of what you paid me to do.{{< /line >}}
+{{< line >}}[00:23:39.290] Dan Beecher: Well, what am I paying you for, man?{{< /line >}}
+{{< line >}}[00:23:42.570] Dan Beecher: Thought we had a deal here.{{< /line >}}
+{{< line >}}[00:23:44.410] Dan McClellan: Yeah, and the rhetorical point here is to suggest that if you're trying to counter Israel, if you're trying to oppose Israel, God's not on your side.{{< /line >}}
+{{< line >}}[00:23:57.390] Dan McClellan: God is going to stop these efforts.{{< /line >}}
+{{< line >}}[00:23:59.950] Dan McClellan: And what's interesting is we actually have an inscription from around the 8th century BCE that mentions a dude named Balaam of Peor.{{< /line >}}
+{{< line >}}[00:24:12.270] Dan McClellan: So this itinerant blesser, cursor probably existed.{{< /line >}}
+{{< line >}}[00:24:20.110] Dan McClellan: This inscription comes from Deir Alla, which is a place on the east side of the Jordan river in the Jordan Valley, so a little further north from Jericho.{{< /line >}}
+{{< line >}}[00:24:33.970] Dan McClellan: But it's in a language that's kind of Aramaic-y but has some oddities to it.{{< /line >}}
+{{< line >}}[00:24:39.810] Dan McClellan: But we do have this story about him being hired to do prophetic stuff.{{< /line >}}
+{{< line >}}[00:24:47.650] Dan McClellan: So this was probably an itinerant prophet, but one of the interesting things is this.{{< /line >}}
+{{< line >}}[00:24:55.260] Dan McClellan: This person existed like four or five hundred years after these stories are supposed to have taken place.{{< /line >}}
+{{< line >}}[00:25:02.620] Dan McClellan: A strong indication that these stories were written many centuries later and are reflecting the circumstances and reflecting rhetorical goals that are embedded within much later social circumstances.{{< /line >}}
+{{< line >}}[00:25:16.540] Dan Beecher: Well, and it sounds like it's using sort of known characters like Balaam in the storytelling to sort of just sort of as fun cultural touchstones or some, you know, something along those lines.{{< /line >}}
+{{< line >}}[00:25:29.740] Dan Beecher: Does that.{{< /line >}}
+{{< line >}}[00:25:30.180] Dan Beecher: Does that jive with what you're thinking?{{< /line >}}
+{{< line >}}[00:25:32.140] Dan McClellan: Yeah, absolutely.{{< /line >}}
+{{< line >}}[00:25:32.940] Dan McClellan: And this is.{{< /line >}}
+{{< line >}}[00:25:33.740] Dan McClellan: This is how these stories are supposed to kind of resonate with their audiences.{{< /line >}}
+{{< line >}}[00:25:38.620] Dan McClellan: They're like, oh, yeah, we know a guy like that.{{< /line >}}
+{{< line >}}[00:25:40.460] Dan McClellan: We're kind of familiar with this motif, with what goes on here.{{< /line >}}
+{{< line >}}[00:25:44.300] Dan McClellan: And in that inscription, it talks about the gods coming to Balaam at night and speaking to Balaam.{{< /line >}}
+{{< line >}}[00:25:50.860] Dan McClellan: And so there are some interesting parallels that indicate the story here is supposed to kind of sound familiar and is supposed to appeal to kind of existing literary conventions.entions.{{< /line >}}
+{{< line >}}[00:26:06.540] Dan Beecher: Okay, that's fun.{{< /line >}}
+{{< line >}}[00:26:08.060] Dan Beecher: That's kind of.{{< /line >}}
+{{< line >}}[00:26:08.820] Dan Beecher: Yeah, that's interesting.{{< /line >}}
+{{< line >}}[00:26:10.700] Dan McClellan: I think that's how they're hoping you will react to this story.{{< /line >}}
+{{< line >}}[00:26:13.500] Dan McClellan: That's fun.{{< /line >}}
+{{< line >}}[00:26:17.020] Dan Beecher: I mean, my reaction is not that makes a lot of sense, but it's kind of fun.{{< /line >}}
+{{< line >}}[00:26:23.880] Dan Beecher: So that.{{< /line >}}
+{{< line >}}[00:26:24.400] Dan Beecher: That's where I'm going with it.{{< /line >}}
+{{< line >}}[00:26:26.200] Dan McClellan: Okay, that sounds good.{{< /line >}}
+{{< line >}}[00:26:28.280] Dan Beecher: All right, well, I think it's time for.{{< /line >}}
+{{< line >}}[00:26:32.200] Dan Beecher: Could it be Satan?{{< /line >}}
+{{< line >}}[00:26:38.440] Dan Beecher: All right, it's the devil time.{{< /line >}}
+{{< line >}}[00:26:40.800] Dan McClellan: I.{{< /line >}}
+{{< line >}}[00:26:41.120] Dan Beecher: It is.{{< /line >}}
+{{< line >}}[00:26:41.800] Dan Beecher: The devil is in the details.{{< /line >}}
+{{< line >}}[00:26:43.560] Dan Beecher: So give us the deets.{{< /line >}}
+{{< line >}}[00:26:46.150] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:26:46.630] Dan McClellan: So let's talk.{{< /line >}}
+{{< line >}}[00:26:48.230] Dan McClellan: A lot of people use the word devil to refer to Satan.{{< /line >}}
+{{< line >}}[00:26:53.590] Dan McClellan: Now, devil comes from a Greek word, so the word doesn't occur anywhere in the Hebrew Bible.{{< /line >}}
+{{< line >}}[00:26:59.390] Dan McClellan: It's not until it was translated into Greek that we have this Greek word diabolos or devil.{{< /line >}}
+{{< line >}}[00:27:06.950] Dan McClellan: So I'm going to talk first about the word satan, which is frequently taken by Christians as the.{{< /line >}}
+{{< line >}}[00:27:14.280] Dan McClellan: The proper.{{< /line >}}
+{{< line >}}[00:27:15.000] Dan McClellan: The personal name of God's adversary as some kind of.{{< /line >}}
+{{< line >}}[00:27:21.160] Dan Beecher: That certainly seems how the church lady was using it.{{< /line >}}
+{{< line >}}[00:27:23.560] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:27:24.200] Dan McClellan: A malevolent figure who has some kind of authority over a divine retinue, some kind of army or something like that, and basically stands opposed to the God of Israel.{{< /line >}}
+{{< line >}}[00:27:37.090] Dan McClellan: There is not a single syllable in any part of the Hebrew Bible that supports that understanding of the word satan.{{< /line >}}
+{{< line >}}[00:27:45.370] Dan McClellan: As we mentioned in the, in the previous segments with Balaam, satan is a noun, a generic noun that means something like accuser, adversary, opponent.{{< /line >}}
+{{< line >}}[00:27:57.170] Dan McClellan: There's one kind of conceptual parallel that, that helps people to, to think about it in contemporary terms is it's kind of like the prosecutor for the divine council for God.{{< /line >}}
+{{< line >}}[00:28:10.820] Dan McClellan: It's.{{< /line >}}
+{{< line >}}[00:28:12.100] Dan McClellan: And there's at least one story where it seems to kind of come close to that idea, but for the most part, it just means if, if you're accusing someone, if you're opposing someone, if you are acting as their adversary, you are acting as a satan.{{< /line >}}
+{{< line >}}[00:28:29.140] Dan Beecher: So when people say Jack Smith is Satan or he is an adversary.{{< /line >}}
+{{< line >}}[00:28:37.570] Dan McClellan: He is, yes, he's functioning in that role.{{< /line >}}
+{{< line >}}[00:28:39.810] Dan McClellan: So just like the angel of the Lord comes to function as Balaam's satan adversary.{{< /line >}}
+{{< line >}}[00:28:48.050] Dan McClellan: Yes, Jack Smith is functioning as the satan to a serial sexual predator who can barely read.{{< /line >}}
+{{< line >}}[00:28:56.210] Dan McClellan: But.{{< /line >}}
+{{< line >}}[00:28:58.150] Dan McClellan: But that is neither here nor there.{{< /line >}}
+{{< line >}}[00:29:00.950] Dan McClellan: But.{{< /line >}}
+{{< line >}}[00:29:01.990] Dan McClellan: So Numbers 22 is one of the earliest references that we have to this.{{< /line >}}
+{{< line >}}[00:29:08.310] Dan McClellan: At least canonically.{{< /line >}}
+{{< line >}}[00:29:09.590] Dan McClellan: This is the earliest reference we have to this noun satan.{{< /line >}}
+{{< line >}}[00:29:13.350] Dan McClellan: In fact, actually, I'm going to just look and see how many total occurrences we have.{{< /line >}}
+{{< line >}}[00:29:21.190] Dan McClellan: I used to know off the top of my head how many occurrences we have, but I have forgotten.{{< /line >}}
+{{< line >}}[00:29:28.340] Dan McClellan: So right now, yes, it looks like 27 occurrences in the entire Hebrew Bible.{{< /line >}}
+{{< line >}}[00:29:35.780] Dan McClellan: In the entire Hebrew Bible, yes.{{< /line >}}
+{{< line >}}[00:29:37.700] Dan Beecher: Oh, wow.{{< /line >}}
+{{< line >}}[00:29:38.260] Dan Beecher: That is not a lot, because that's a.{{< /line >}}
+{{< line >}}[00:29:40.060] Dan Beecher: There's a lot in, in the Hebrew Bible itself.{{< /line >}}
+{{< line >}}[00:29:42.540] Dan Beecher: There's that.{{< /line >}}
+{{< line >}}[00:29:43.100] Dan Beecher: It's a big book.{{< /line >}}
+{{< line >}}[00:29:44.220] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:29:45.580] Dan McClellan: And, and a lot of these are.{{< /line >}}
+{{< line >}}[00:29:46.820] Dan McClellan: Are humans referring to other humans.{{< /line >}}
+{{< line >}}[00:29:48.660] Dan McClellan: So in 2 Samuel 19:22, but David said, what have I to do with you, you sons of Zeruiah, that you should today become a satan to me?{{< /line >}}
+{{< line >}}[00:30:02.920] Dan McClellan: So, but now the Lord my God has given me rest on every side.{{< /line >}}
+{{< line >}}[00:30:08.280] Dan McClellan: There is neither satan nor misfortune.{{< /line >}}
+{{< line >}}[00:30:11.840] Dan McClellan: There is no adversary.{{< /line >}}
+{{< line >}}[00:30:13.120] Dan McClellan: There's nobody standing in my way.{{< /line >}}
+{{< line >}}[00:30:18.450] Dan McClellan: We have the.{{< /line >}}
+{{< line >}}[00:30:19.810] Dan McClellan: The Lord raised up an adversary against Solomon, Hadad the Edomite.mite.{{< /line >}}
+{{< line >}}[00:30:25.810] Dan McClellan: So it's, it's a role that people are filling.{{< /line >}}
+{{< line >}}[00:30:29.010] Dan McClellan: Now Numbers 22 is, is a pretty interesting one because it's the angel of the Lord or God themselves who is functioning as a Satan.{{< /line >}}
+{{< line >}}[00:30:38.690] Dan McClellan: Another place where we.{{< /line >}}
+{{< line >}}[00:30:41.010] Dan McClellan: Where we actually see somewhat of an overlap is 2nd Samuel 24:1, which is where we have David's census, the infamous census.{{< /line >}}
+{{< line >}}[00:30:57.160] Dan McClellan: And it says there.{{< /line >}}
+{{< line >}}[00:30:58.440] Dan McClellan: And the anger of the Lord was kindled against Israel, and he incited David against them, saying, go count the people of Israel and Judah.{{< /line >}}
+{{< line >}}[00:31:07.720] Dan McClellan: So this is Adonai.{{< /line >}}
+{{< line >}}[00:31:08.800] Dan McClellan: This is.{{< /line >}}
+{{< line >}}[00:31:09.040] Dan McClellan: The God of Israel is upset.{{< /line >}}
+{{< line >}}[00:31:10.960] Dan McClellan: And I love that, by the way, that the anger of the Lord is.{{< /line >}}
+{{< line >}}[00:31:16.470] Dan McClellan: When it gets kindled, it actually means the nose gets hot, so glows red with heat, is getting angry.{{< /line >}}
+{{< line >}}[00:31:27.510] Dan Beecher: You don't want the Lord going Rudolph on you, right?{{< /line >}}
+{{< line >}}[00:31:30.550] Dan Beecher: That's a bad time.{{< /line >}}
+{{< line >}}[00:31:33.590] Dan McClellan: So we have that passage in 2nd Samuel 24:1.{{< /line >}}
+{{< line >}}[00:31:36.030] Dan McClellan: Now, a little later, we have Chronicles, which is basically retelling a lot of these stories, using probably Samuel and Kings as a source, but also using other sources.{{< /line >}}
+{{< line >}}[00:31:46.290] Dan McClellan: And so if we go to 1st Chronicles 21:1, we have the same story, but it says Satan stood up against Israel and incited David to count the people of Israel.{{< /line >}}
+{{< line >}}[00:32:02.690] Dan Beecher: Oh, wow.{{< /line >}}
+{{< line >}}[00:32:04.050] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:32:04.610] Dan McClellan: And here it's.{{< /line >}}
+{{< line >}}[00:32:05.530] Dan McClellan: It's not Hasatan, it's not the Satan, it's just Satan.{{< /line >}}
+{{< line >}}[00:32:11.520] Dan McClellan: Some people will argue this suggests it's functioning more as a name, but it's probably something more like a title, the accuser, or an accuser or something like that.{{< /line >}}
+{{< line >}}[00:32:24.160] Dan McClellan: And what I would argue here, when we put these two texts in parallel, that the 1st Chronicles text is probably trying to avoid the theological discomfort of the 2nd Samuel 24 passage, rather than having God themselves get angry and incite David, it's kind of masking it.{{< /line >}}
+{{< line >}}[00:32:44.910] Dan McClellan: But instead of saying the angel of the Lord did it, they're using this other option.{{< /line >}}
+{{< line >}}[00:32:50.510] Dan McClellan: We're going to do the Satan who did this.{{< /line >}}
+{{< line >}}[00:32:53.270] Dan McClellan: And so Chronicles is kind of updating, superseding the story as told in 2 Samuel 24.{{< /line >}}
+{{< line >}}[00:33:02.430] Dan McClellan: And so it's like somebody's like, I heard the Lord did this.{{< /line >}}
+{{< line >}}[00:33:06.430] Dan McClellan: And 1st Chronicles is saying, no, no, it was a Satan.{{< /line >}}
+{{< line >}}[00:33:12.620] Dan McClellan: It was an adversary.{{< /line >}}
+{{< line >}}[00:33:15.580] Dan McClellan: So obscuring who's responsible there for that.{{< /line >}}
+{{< line >}}[00:33:19.100] Dan McClellan: We also have Zechariah 3, where we have the angel of the Lord and we have Joshua, and we have the Satan standing by trying to accuse.{{< /line >}}
+{{< line >}}[00:33:31.020] Dan McClellan: And this is another instance where it seems to be someone who is filling a role.{{< /line >}}
+{{< line >}}[00:33:35.480] Dan McClellan: But we get this impression that this role is beginning to crystallize into some kind of formal office somehow associated with the divine council.{{< /line >}}
+{{< line >}}[00:33:45.800] Dan McClellan: And that seems to be what's going on in Job 1 and 2, which is the last famous part from the Hebrew Bible, where we have this reference to Satan in a way that sounds an awful lot like this divine bad guy.{{< /line >}}
+{{< line >}}[00:34:01.250] Dan McClellan: And this is where we have the story starts off talking about Job.{{< /line >}}
+{{< line >}}[00:34:08.370] Dan McClellan: And then in verse 6, it says the.{{< /line >}}
+{{< line >}}[00:34:11.170] Dan McClellan: The Bene Elohim, the children of God, came before God one day.{{< /line >}}
+{{< line >}}[00:34:16.130] Dan McClellan: And it says Satan was.{{< /line >}}
+{{< line >}}[00:34:19.170] Dan McClellan: Was with them.{{< /line >}}
+{{< line >}}[00:34:21.730] Dan McClellan: Now I'm going to check it.{{< /line >}}
+{{< line >}}[00:34:24.010] Dan McClellan: So it says Hasatan.{{< /line >}}
+{{< line >}}[00:34:26.050] Dan McClellan: So the.{{< /line >}}
+{{< line >}}[00:34:27.170] Dan McClellan: Now, you don't normally have a definite article with a proper name.{{< /line >}}
+{{< line >}}[00:34:32.010] Dan McClellan: So this is not a personal name.{{< /line >}}
+{{< line >}}[00:34:34.130] Dan McClellan: This is like a title.{{< /line >}}
+{{< line >}}[00:34:35.850] Dan McClellan: So it's kind of like the accuser came with them.{{< /line >}}
+{{< line >}}[00:34:39.370] Dan Beecher: So this is almost like a divine prosecutor.{{< /line >}}
+{{< line >}}[00:34:42.250] Dan Beecher: This is.{{< /line >}}
+{{< line >}}[00:34:42.690] Dan Beecher: This is.{{< /line >}}
+{{< line >}}[00:34:43.530] Dan McClellan: Yeah, this is where we're approximating this idea of someone who is in God's employ.{{< /line >}}
+{{< line >}}[00:34:49.930] Dan McClellan: This is someone who is doing God's bidding.{{< /line >}}
+{{< line >}}[00:34:53.450] Dan McClellan: And they're coming with the Bene Elohim, and Bene Elohim, children of God.{{< /line >}}
+{{< line >}}[00:34:58.330] Dan McClellan: This has been interpreted a number of different ways, but.{{< /line >}}
+{{< line >}}[00:35:00.900] Dan McClellan: But it's pretty much the second tier deities.{{< /line >}}
+{{< line >}}[00:35:03.620] Dan McClellan: You have the high deity and their consort, and then their offspring are the second tier deities.{{< /line >}}
+{{< line >}}[00:35:08.380] Dan McClellan: These are the Benei Elohim.{{< /line >}}
+{{< line >}}[00:35:09.860] Dan McClellan: This is Genesis 6.{{< /line >}}
+{{< line >}}[00:35:11.940] Dan McClellan: And the.{{< /line >}}
+{{< line >}}[00:35:13.380] Dan McClellan: The accuser is one of them, which suggests the accuser is one of the children of God, is part of the divine council.{{< /line >}}
+{{< line >}}[00:35:23.860] Dan Beecher: Not outside of the divine council, but actually a member with this particular employment.{{< /line >}}
+{{< line >}}[00:35:31.760] Dan McClellan: An assignment within the divine council.{{< /line >}}
+{{< line >}}[00:35:34.200] Dan McClellan: And there are.{{< /line >}}
+{{< line >}}[00:35:34.800] Dan McClellan: There are different takes on this.{{< /line >}}
+{{< line >}}[00:35:36.120] Dan McClellan: For instance, there's a wonderful book called The Satan: How God's Executioner Became the Enemy by a scholar named Ryan Stokes.{{< /line >}}
+{{< line >}}[00:35:45.319] Dan McClellan: And Ryan argues that Satan there should be understood to mean executioner.{{< /line >}}
+{{< line >}}[00:35:50.760] Dan McClellan: And so this again is someone in God's employ.{{< /line >}}
+{{< line >}}[00:35:55.500] Dan McClellan: This is someone doing God's bidding, filling a specific office within God's administrative infrastructure.{{< /line >}}
+{{< line >}}[00:36:04.380] Dan McClellan: So here the Satan, you know, comes sidling up to God and is like.{{< /line >}}
+{{< line >}}[00:36:09.420] Dan McClellan: So starts to challenge Job's faithfulness.{{< /line >}}
+{{< line >}}[00:36:15.420] Dan McClellan: Oh, Job just likes you because you bless him.{{< /line >}}
+{{< line >}}[00:36:17.740] Dan McClellan: So, you know, if you take away everything, you know, he'll curse you.{{< /line >}}
+{{< line >}}[00:36:22.880] Dan McClellan: And I don't know.{{< /line >}}
+{{< line >}}[00:36:23.360] Dan McClellan: I have not seen the second.{{< /line >}}
+{{< line >}}[00:36:25.040] Dan McClellan: The first episode of the second season of.{{< /line >}}
+{{< line >}}[00:36:27.280] Dan McClellan: Of the name of the show with the.{{< /line >}}
+{{< line >}}[00:36:34.240] Dan McClellan: The two angels, the good angels.{{< /line >}}
+{{< line >}}[00:36:37.040] Dan Beecher: Good Omens.{{< /line >}}
+{{< line >}}[00:36:37.720] Dan McClellan: Good Omens.{{< /line >}}
+{{< line >}}[00:36:38.720] Dan McClellan: But evidently it starts.{{< /line >}}
+{{< line >}}[00:36:40.960] Dan Beecher: Start that sentence again.{{< /line >}}
+{{< line >}}[00:36:42.040] Dan Beecher: I have not seen that.{{< /line >}}
+{{< line >}}[00:36:42.880] Dan McClellan: Okay, now I have not seen the first episode of the second season of Good Omens, but I heard that it starts off with.{{< /line >}}
+{{< line >}}[00:36:51.070] Dan McClellan: With the good angel coming to confront the bad angel.{{< /line >}}
+{{< line >}}[00:36:54.070] Dan McClellan: And it's like, oh, it's you.{{< /line >}}
+{{< line >}}[00:36:55.390] Dan McClellan: And he's like, you're you know, you're not supposed to be doing this.{{< /line >}}
+{{< line >}}[00:36:58.310] Dan McClellan: He's like, no, I have a permit.{{< /line >}}
+{{< line >}}[00:36:59.950] Dan McClellan: God told me I could do it.{{< /line >}}
+{{< line >}}[00:37:00.990] Dan McClellan: And he's harassing Job.{{< /line >}}
+{{< line >}}[00:37:03.950] Dan Beecher: So.{{< /line >}}
+{{< line >}}[00:37:06.590] Dan McClellan: I look forward to catching up on Good Omens.{{< /line >}}
+{{< line >}}[00:37:09.550] Dan Beecher: But, yeah, it's a great show.{{< /line >}}
+{{< line >}}[00:37:12.190] Dan McClellan: So this is not the contemporary Christian concept of Satan.{{< /line >}}
+{{< line >}}[00:37:16.760] Dan McClellan: This is something very different now.{{< /line >}}
+{{< line >}}[00:37:19.560] Dan McClellan: And this, this text comes from the Persian period.{{< /line >}}
+{{< line >}}[00:37:21.760] Dan McClellan: A lot of people think Job is one of the oldest texts in the Hebrew Bible.{{< /line >}}
+{{< line >}}[00:37:25.000] Dan McClellan: It's not.{{< /line >}}
+{{< line >}}[00:37:25.440] Dan McClellan: It's one of the youngest texts in the Hebrew Bible.{{< /line >}}
+{{< line >}}[00:37:28.280] Dan McClellan: It is a tale that was written in the Persian period.{{< /line >}}
+{{< line >}}[00:37:31.760] Dan McClellan: And it's kind of.{{< /line >}}
+{{< line >}}[00:37:33.400] Dan McClellan: It's kind of foreignizing and archaizing.{{< /line >}}
+{{< line >}}[00:37:36.280] Dan McClellan: It's trying to sound old and foreign in an effort to kind of dislodge it from any discernible historical context.{{< /line >}}
+{{< line >}}[00:37:43.960] Dan McClellan: It's kind of a.{{< /line >}}
+{{< line >}}[00:37:45.640] Dan McClellan: A long, long time ago in a kingdom far, far away kind of story.{{< /line >}}
+{{< line >}}[00:37:50.840] Dan McClellan: And so we're starting to move in the direction of Satan being something individuated.{{< /line >}}
+{{< line >}}[00:38:01.000] Dan McClellan: But the real linchpin for that is the traditions that develop in the Greco-Roman period around the tradition of the fall of the angels, the watchers, the Nephilim, all this kind of stuff.{{< /line >}}
+{{< line >}}[00:38:16.390] Dan McClellan: So the Book of Enoch, the Book of Giants, Jubilees, Genesis Apocrypha, and some of the other, what used to be called rewritten Bible.{{< /line >}}
+{{< line >}}[00:38:28.790] Dan McClellan: That's not really a handy genre anymore, but basically we're taking famous stories, particularly from Genesis, and particularly Genesis 6, the story where the Benei Elohim, the children of God, come down and marry and reproduce with the daughters of humanity.{{< /line >}}
+{{< line >}}[00:38:46.580] Dan McClellan: And in Genesis 6 it says, these were warriors of old, men of renown, and they were on the earth at the same time as the Nephilim..{{< /line >}}
+{{< line >}}[00:38:55.860] Dan McClellan: And in the Greco-Roman period, these traditions accrete to this story.{{< /line >}}
+{{< line >}}[00:39:01.100] Dan McClellan: They're kind of retelling these traditions, and these now become angels.{{< /line >}}
+{{< line >}}[00:39:05.060] Dan McClellan: And we have a whole raft of like 200 angels who descend upon Mount Hermon.{{< /line >}}
+{{< line >}}[00:39:09.540] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:39:09.940] Dan McClellan: And they are rebelling.{{< /line >}}
+{{< line >}}[00:39:12.260] Dan McClellan: And traditions are kind of.{{< /line >}}
+{{< line >}}[00:39:14.660] Dan McClellan: We get different takes on this tradition all the way into like the medieval period within Christianity, where we have the story where basically Adam and Eve are created and God tells the angels to go worship Adam and Eve.{{< /line >}}
+{{< line >}}[00:39:27.740] Dan McClellan: And then one of the angels is like, why are we worshiping this dude?{{< /line >}}
+{{< line >}}[00:39:31.260] Dan McClellan: We're better than this dude.{{< /line >}}
+{{< line >}}[00:39:33.300] Dan McClellan: And basically kind of ginning up a mutiny against God and that's responsible for the fall of the angels.{{< /line >}}
+{{< line >}}[00:39:40.850] Dan McClellan: And in a later period, Satan is kind of the leader of these angels.{{< /line >}}
+{{< line >}}[00:39:44.570] Dan McClellan: But in the Greco-Roman period, satan is still kind of a generic noun.{{< /line >}}
+{{< line >}}[00:39:48.610] Dan McClellan: And so in the Enochic and other literature, you actually have the plural use of this noun.{{< /line >}}
+{{< line >}}[00:39:53.370] Dan McClellan: You have satans, which is just kind of a.{{< /line >}}
+{{< line >}}[00:39:56.610] Dan McClellan: Just kind of a generic.{{< /line >}}
+{{< line >}}[00:39:58.210] Dan McClellan: These deities.{{< /line >}}
+{{< line >}}[00:39:59.810] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:40:00.610] Dan McClellan: But you do begin to see a hierarchy among the angels.{{< /line >}}
+{{< line >}}[00:40:05.650] Dan McClellan: And you do begin to see some names popping up for some of these leaders.{{< /line >}}
+{{< line >}}[00:40:11.610] Dan McClellan: Belial, which is like "worthless."{{< /line >}}
+{{< line >}}[00:40:16.730] Dan McClellan: This is the name of a leader.{{< /line >}}
+{{< line >}}[00:40:19.450] Dan McClellan: You get this concept of the Bene Belial, the sons of the children of Belial.{{< /line >}}
+{{< line >}}[00:40:25.530] Dan McClellan: And then there's an alternative spelling, Beliar.{{< /line >}}
+{{< line >}}[00:40:30.770] Dan McClellan: Like I said, you get the plural of satan, and you have an alternate spelling of that as well.{{< /line >}}
+{{< line >}}[00:40:35.050] Dan McClellan: You have this word satam with an M on the end.{{< /line >}}
+{{< line >}}[00:40:40.840] Dan McClellan: And this is a verb that means to persecute, to pursue, to entrap, to hate.{{< /line >}}
+{{< line >}}[00:40:45.480] Dan McClellan: And so one of the names of one of these leaders is Mastema, which is taking that verbal root and turning it into a noun.{{< /line >}}
+{{< line >}}[00:40:55.000] Dan McClellan: So Mastema would mean persecution, pursuit, entrapment, things like that.{{< /line >}}
+{{< line >}}[00:41:01.720] Dan McClellan: And we see that in Hosea.{{< /line >}}
+{{< line >}}[00:41:03.200] Dan McClellan: In the book of Hosea 9:8, it talks about mastema, this abstract noun, but that becomes one of the names of the leaders of these fallen angels.{{< /line >}}
+{{< line >}}[00:41:13.950] Dan McClellan: And so you get this hierarchy that's developing, and you get these ideas about these different folks who might be in charge of these wicked angels.{{< /line >}}
+{{< line >}}[00:41:25.310] Dan McClellan: And one of the names that also comes up is Beelzebub.{{< /line >}}
+{{< line >}}[00:41:29.230] Dan Beecher: Yes, which.{{< /line >}}
+{{< line >}}[00:41:30.350] Dan Beecher: We've all heard that one.{{< /line >}}
+{{< line >}}[00:41:31.550] Dan McClellan: We've all heard that one.{{< /line >}}
+{{< line >}}[00:41:32.710] Dan McClellan: That's a very famous one, which is actually a.{{< /line >}}
+{{< line >}}[00:41:35.650] Dan McClellan: It's kind of an editorialization of a name, a title that actually exists in ancient Northwest Semitic traditions.{{< /line >}}
+{{< line >}}[00:41:44.370] Dan McClellan: It was originally Zebul Baal or Baal Zebul, which means Prince Baal, but Beelzebub would mean.{{< /line >}}
+{{< line >}}[00:41:53.890] Dan McClellan: And so Baal means Lord.{{< /line >}}
+{{< line >}}[00:41:55.490] Dan McClellan: So Prince Lord.{{< /line >}}
+{{< line >}}[00:41:56.050] Dan McClellan: Prince Baal.{{< /line >}}
+{{< line >}}[00:41:57.410] Dan McClellan: But when you say Beelzebub, it's "Lord of Flies."{{< /line >}}
+{{< line >}}[00:42:01.420] Dan McClellan: So it's kind of taking the name and corrupting it to make it an editorialization on that name.{{< /line >}}
+{{< line >}}[00:42:07.500] Dan McClellan: And you actually.{{< /line >}}
+{{< line >}}[00:42:08.860] Dan Beecher: Presumably, flies were not thought to be good.{{< /line >}}
+{{< line >}}[00:42:11.900] Dan McClellan: No.{{< /line >}}
+{{< line >}}[00:42:12.260] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:42:12.700] Dan McClellan: This is.{{< /line >}}
+{{< line >}}[00:42:13.580] Dan McClellan: This is a pretty demeaning denigrating title.{{< /line >}}
+{{< line >}}[00:42:17.340] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:42:17.820] Dan McClellan: But in the New Testament, you usually see it transliterated in the English as Beelzebub.{{< /line >}}
+{{< line >}}[00:42:24.620] Dan McClellan: It's actually spelled correctly in the Greek.{{< /line >}}
+{{< line >}}[00:42:27.560] Dan McClellan: It's Beelzebul in the Greek.{{< /line >}}
+{{< line >}}[00:42:30.280] Dan McClellan: But because of the tradition of that editorialization, usually translations will render Beelzebub.0] Dan McClellan: So a little oddity of how modern translators render that kind of thing.{{< /line >}}
+{{< line >}}[00:42:45.720] Dan McClellan: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:42:47.960] Dan McClellan: So some of the places where Satan is not mentioned in the Hebrew Bible that are going to be kind of roped in in later periods.{{< /line >}}
+{{< line >}}[00:42:57.100] Dan McClellan: The serpent in the Garden of Eden.{{< /line >}}
+{{< line >}}[00:42:59.500] Dan McClellan: Nowhere in the entire Bible is identified as Satan.{{< /line >}}
+{{< line >}}[00:43:04.220] Dan Beecher: Yeah, we talked about that a little bit in our, in our first episode that, like, it's just a snake.{{< /line >}}
+{{< line >}}[00:43:09.419] Dan McClellan: Yep, just a snake.{{< /line >}}
+{{< line >}}[00:43:10.700] Dan McClellan: And snakes were associated with a few different things anciently, with wisdom, with healing, also with eternal life.{{< /line >}}
+{{< line >}}[00:43:20.140] Dan McClellan: And so in the story of Gilgamesh, Gilgamesh is trying to get this flower that's going to give him eternal life.{{< /line >}}
+{{< line >}}[00:43:30.250] Dan McClellan: And then he is, I think he's in the sea and he's trying to get to this flower and a snake steals it from him.{{< /line >}}
+{{< line >}}[00:43:37.770] Dan McClellan: And so it is also, it's associated with eternal life.{{< /line >}}
+{{< line >}}[00:43:40.410] Dan McClellan: It's also associated with obstructing human access to eternal life, which somewhat overlaps with the story of Adam and Eve in the Garden of Eden.{{< /line >}}
+{{< line >}}[00:43:54.810] Dan Beecher: Yes, but opposite, because in that case, the snake is actually granting access to knowledge.{{< /line >}}
+{{< line >}}[00:44:01.930] Dan McClellan: So that's interesting, moving them in that direction.{{< /line >}}
+{{< line >}}[00:44:04.490] Dan McClellan: And then God is the one who steps in and says.{{< /line >}}
+{{< line >}}[00:44:08.970] Dan McClellan: Another figure that is mentioned in the Hebrew Bible that actually has nothing to do with Satan is Lucifer.{{< /line >}}
+{{< line >}}[00:44:16.100] Dan McClellan: So Isaiah 14:12, we have this story about this.{{< /line >}}
+{{< line >}}[00:44:20.780] Dan McClellan: This chapter is explicitly about a king of Babylon.{{< /line >}}
+{{< line >}}[00:44:24.980] Dan McClellan: Like the author says, this is about this king, and then goes on to say these things and then says, oh, how you have fallen.{{< /line >}}
+{{< line >}}[00:44:31.860] Dan McClellan: Oh.{{< /line >}}
+{{< line >}}[00:44:32.340] Dan McClellan: And the Hebrew is Helel ben Shahar, which means shining one, son of the dawn.{{< /line >}}
+{{< line >}}[00:44:41.310] Dan McClellan: And there have been a number of attempts to try to situate this within an existing kind of traditional background.{{< /line >}}
+{{< line >}}[00:44:49.390] Dan McClellan: I think that probably the most popular is to associate Helel with this Northwest Semitic deity, Athtar, known from the Baal cycle and from some other literature, irrespective.{{< /line >}}
+{{< line >}}[00:45:03.190] Dan McClellan: However, this is talking about the king of Babylon that way and kind of sarcastically saying, oh, you tried to exalt yourself up above, above the stars of heaven, which is a reference to the gods over the.{{< /line >}}
+{{< line >}}[00:45:16.770] Dan McClellan: The throne of El.{{< /line >}}
+{{< line >}}[00:45:18.730] Dan McClellan: You wanted to be higher than all of them, but you've been thrown down, you've been subjected, you've been buried under the earth, you are in the underworld.{{< /line >}}
+{{< line >}}[00:45:27.450] Dan McClellan: In other words, you wanted to be high, but now you're the lowest of the low.{{< /line >}}
+{{< line >}}[00:45:33.210] Dan McClellan: And so it's, it's mocking the king of Babylon.{{< /line >}}
+{{< line >}}[00:45:36.090] Dan McClellan: And we have no connection of that story with Satan.{{< /line >}}
+{{< line >}}[00:45:40.120] Dan McClellan: No, no explicit connection until the middle of the second century CE.{{< /line >}}
+{{< line >}}[00:45:43.880] Dan McClellan: I think around Justin Martyr or somewhere around there is the first time somebody says, hey, this is Satan.{{< /line >}}
+{{< line >}}[00:45:51.800] Dan Beecher: Will you connect with for me the.{{< /line >}}
+{{< line >}}[00:45:54.280] Dan Beecher: Because I didn't catch how the name Lucifer is connected.{{< /line >}}
+{{< line >}}[00:45:58.520] Dan McClellan: Oh, right, sorry.{{< /line >}}
+{{< line >}}[00:46:00.200] Dan McClellan: So this Helel ben Shahar or ben Shahar, this is probably a reference to the planet Venus and traditions that deified this planet and that connected certain deities with this planet.{{< /line >}}
+{{< line >}}[00:46:15.530] Dan McClellan: Son of the dawn, this is the morning star.{{< /line >}}
+{{< line >}}[00:46:18.170] Dan McClellan: This is the brightest star in the sky.{{< /line >}}
+{{< line >}}[00:46:19.690] Dan McClellan: That's actually a planet before the sun comes up.{{< /line >}}
+{{< line >}}[00:46:22.410] Dan McClellan: And so in the Greek translation, they rendered heosphoros, which is like light bringer, light bearer, which is a similar reference to Venus as a deity.{{< /line >}}
+{{< line >}}[00:46:34.860] Dan McClellan: In fact, that was one of the names of the deity who was connected with Venus.{{< /line >}}
+{{< line >}}[00:46:39.980] Dan McClellan: In the Roman pantheon, you had a deity named Lucifer, which also means light bearer, light bringer.{{< /line >}}
+{{< line >}}[00:46:46.420] Dan McClellan: And so you have Jerome, the translator of the Vulgate into Latin, who renders Lucifer for heosphoros in the Greek.{{< /line >}}
+{{< line >}}[00:46:55.580] Dan McClellan: So this is all parallel.{{< /line >}}
+{{< line >}}[00:46:57.260] Dan McClellan: They're all different kind of socially contingent ways to refer to a deity linked with the planet Venus.360] Dan McClellan: As.{{< /line >}}
+{{< line >}}[00:47:07.640] Dan McClellan: As time goes on, Lucifer as kind of a title for the planet Venus takes on the qualities of a proper name.{{< /line >}}
+{{< line >}}[00:47:17.800] Dan McClellan: And so you start to see, and particularly when it gets connected with Satan the adversary, then Lucifer becomes a proper name.{{< /line >}}
+{{< line >}}[00:47:26.040] Dan McClellan: I've heard some people say that it's the King James version that first capitalizes the L or something like that, and that's simply not true.{{< /line >}}
+{{< line >}}[00:47:33.310] Dan McClellan: Every English translation back to Wycliffe capitalized the L, treated that, if not as a personal name, as a title that was referring to a specific individual.{{< /line >}}
+{{< line >}}[00:47:45.950] Dan McClellan: And that probably goes back to early traditions of how the Vulgate was read.{{< /line >}}
+{{< line >}}[00:47:53.230] Dan McClellan: But so, yeah, Lucifer nowhere connected with Satan.{{< /line >}}
+{{< line >}}[00:47:57.390] Dan McClellan: There are two places where people in the New Testament where people suggest this is connected with Satan.{{< /line >}}
+{{< line >}}[00:48:02.650] Dan McClellan: And I think it's probably closer to some other traditions.{{< /line >}}
+{{< line >}}[00:48:06.450] Dan McClellan: So one is in Luke where Jesus says, I saw Satan falling from heaven like lightning.{{< /line >}}
+{{< line >}}[00:48:11.690] Dan McClellan: And so this kind of sounds like Isaiah 14:12, oh, how thou art fallen from heaven.{{< /line >}}
+{{< line >}}[00:48:19.610] Dan Beecher: But kind of.{{< /line >}}
+{{< line >}}[00:48:20.730] Dan Beecher: But kind of not really.{{< /line >}}
+{{< line >}}[00:48:23.050] Dan Beecher: I mean, lightning is.{{< /line >}}
+{{< line >}}[00:48:25.290] Dan Beecher: Is.{{< /line >}}
+{{< line >}}[00:48:25.650] Dan Beecher: Is.{{< /line >}}
+{{< line >}}[00:48:26.010] Dan Beecher: Is a little more direct than.{{< /line >}}
+{{< line >}}[00:48:27.690] Dan McClellan: Yeah, that's kind of a flash.{{< /line >}}
+{{< line >}}[00:48:30.380] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:48:31.500] Dan McClellan: But this also sounds an awful lot like the traditions of the fall of the angels from the Greco-Roman period with the Enochic literature and others where the angels are rebelling and are being thrown down with their leader, who is, in the Greco-Roman period, has not yet been named Satan, but by the time of the New Testament, is going to be associated with Satan.{{< /line >}}
+{{< line >}}[00:48:54.940] Dan McClellan: And then we also have, in the Book of Revelation, it talks about Satan as that ancient serpent.{{< /line >}}
+{{< line >}}[00:49:02.510] Dan McClellan: And so people think, ah, serpent, the serpent from the Garden of Eden, case closed.{{< /line >}}
+{{< line >}}[00:49:08.350] Dan McClellan: But that's probably a reference to Leviathan, who is mentioned in a handful of places, Isaiah 27:1, one of them mentioned in Job, mentioned in some of the Psalms.{{< /line >}}
+{{< line >}}[00:49:19.470] Dan McClellan: But Leviathan is kind of a prehistoric chaos monster that is associated with other divine entities from the traditions around them.{{< /line >}}
+{{< line >}}[00:49:31.800] Dan McClellan: In the Ugaritic literature, the word is Lotan, which is cognate, meaning it's, it's the same word, but in another language.{{< /line >}}
+{{< line >}}[00:49:41.000] Dan McClellan: And in the Ugaritic literature, Lotan has seven heads.{{< /line >}}
+{{< line >}}[00:49:45.640] Dan McClellan: And in Revelation, the ancient serpent is the dragon who has seven heads.{{< /line >}}
+{{< line >}}[00:49:51.960] Dan McClellan: So I think, at least in Revelation, it's much more closely linked with the tradition of the Leviathan rather than the serpent in the Garden of Eden.{{< /line >}}
+{{< line >}}[00:50:02.950] Dan McClellan: And there are some folks who think that.{{< /line >}}
+{{< line >}}[00:50:06.070] Dan McClellan: See the Wisdom of Solomon, chapter 2, verse 24, I think it says because of the.{{< /line >}}
+{{< line >}}[00:50:13.430] Dan McClellan: What is it because of the envy of the devil, death entered the world.{{< /line >}}
+{{< line >}}[00:50:17.110] Dan McClellan: diabolou, that's the genitive of diabolos, death entered the world.{{< /line >}}
+{{< line >}}[00:50:23.930] Dan McClellan: And I mentioned diabolou or diabolos, devil in the beginning of this segment.{{< /line >}}
+{{< line >}}[00:50:30.970] Dan McClellan: That's a Greek word that literally, etymologically it means to cast through or beyond, basically to miss the mark.{{< /line >}}
+{{< line >}}[00:50:40.250] Dan McClellan: And the ancient Greek translation of the Hebrew Bible uses that to translate Satan.{{< /line >}}
+{{< line >}}[00:50:48.170] Dan McClellan: And so there's a connection there.{{< /line >}}
+{{< line >}}[00:50:50.690] Dan McClellan: And so some people think, ah, diabolou, there must be Satan, therefore it was Satan who allowed death to enter the world in the Garden of Eden.{{< /line >}}
+{{< line >}}[00:51:01.850] Dan McClellan: So that we see some loose, maybe connections.{{< /line >}}
+{{< line >}}[00:51:04.890] Dan McClellan: But we don't really see an explicit identification of Satan either with the serpent in the Garden of Eden or with Lucifer until we get into the 2nd and 3rd centuries CE within early Christianity.{{< /line >}}
+{{< line >}}[00:51:15.890] Dan McClellan: So I would argue that these are most clearly post-biblical identifications.{{< /line >}}
+{{< line >}}[00:51:22.690] Dan McClellan: But by the time we get to the New Testament, we have Satan functioning kind of as the proper personal name of an individual who stands opposed to God, has rule over the evil spirits, the malevolent forces of the world.{{< /line >}}
+{{< line >}}[00:51:43.390] Dan McClellan: And some people have asked, where does this come from??{{< /line >}}
+{{< line >}}[00:51:48.830] Dan McClellan: Does this have to do with Zoroastrianism?{{< /line >}}
+{{< line >}}[00:51:51.710] Dan McClellan: And we, I don't think we have enough data about Zoroastrianism to say for sure, but I think it's likely that.{{< /line >}}
+{{< line >}}[00:51:58.350] Dan Beecher: Does Zoroastrianism have a Satan figure?{{< /line >}}
+{{< line >}}[00:52:01.230] Dan Beecher: Is that what we're saying?{{< /line >}}
+{{< line >}}[00:52:02.590] Dan McClellan: So Zoroastrianism has a leader, Ahura Mazda, this is the divine leader.{{< /line >}}
+{{< line >}}[00:52:12.560] Dan McClellan: And there are two spirits that derive from Ahura Mazda.{{< /line >}}
+{{< line >}}[00:52:17.680] Dan McClellan: One is called Angra Mainyu, which is like the opposing spirit.{{< /line >}}
+{{< line >}}[00:52:21.520] Dan McClellan: And the other is called Spenta Mainyu, which is the holy or the bountiful spirit.{{< /line >}}
+{{< line >}}[00:52:26.720] Dan Beecher: And they live on our shoulders, because I've heard of that one.{{< /line >}}
+{{< line >}}[00:52:30.480] Dan McClellan: They dress in white and in red, and they sound an awful lot like Patrick Warburton.{{< /line >}}
+{{< line >}}[00:52:36.750] Dan McClellan: But this is this dualism that kind of exists within Zoroastrianism, as near as we can tell.{{< /line >}}
+{{< line >}}[00:52:44.670] Dan McClellan: And Ahura Mazda and Angra Mainyu represent opposite sides of this spectrum.{{< /line >}}
+{{< line >}}[00:52:49.550] Dan McClellan: And so people think it's reasonable to think that while the Judahites were in exile in Babylon, the empire that ruled over them was heavily influenced by Zoroastrianism.{{< /line >}}
+{{< line >}}[00:53:05.800] Dan McClellan: These traditions would have been there.{{< /line >}}
+{{< line >}}[00:53:07.800] Dan McClellan: These traditions would have influenced their understanding of God's relationship to good and to evil.{{< /line >}}
+{{< line >}}[00:53:14.760] Dan McClellan: And so maybe this concept, this dualism of a good deity and then a bad deity was brought back to the land of Israel.{{< /line >}}
+{{< line >}}[00:53:24.760] Dan McClellan: But there were an awful lot of Jewish folks who remained behind in Babylon as well and stayed there for many centuries.{{< /line >}}
+{{< line >}}[00:53:30.770] Dan McClellan: And so we have, like, the Sons of Light and the Sons of Darkness in the Dead Sea Scrolls.{{< /line >}}
+{{< line >}}[00:53:36.450] Dan McClellan: These are spiritual forces.{{< /line >}}
+{{< line >}}[00:53:38.690] Dan McClellan: And some of them are{{< /line >}}
+{{< line >}}[00:53:39.890] Dan McClellan: also human.{{< /line >}}
+{{< line >}}[00:53:41.250] Dan McClellan: Human.{{< /line >}}
+{{< line >}}[00:53:41.810] Dan McClellan: So we have a dualism that seems to pop up within early Judaism following the Babylonian exile.{{< /line >}}
+{{< line >}}[00:53:48.210] Dan McClellan: And a lot of scholars would say Zoroastrianism seems like the most likely source of that.{{< /line >}}
+{{< line >}}[00:53:54.050] Dan McClellan: And so this may have contributed to the need to whittle these different figures down to a single one.{{< /line >}}
+{{< line >}}[00:54:01.860] Dan McClellan: And a lot of these different figures that exist, all these sources of evil in the Hebrew Bible and in the Greco-Roman period Judaism get consolidated within this one figure.{{< /line >}}
+{{< line >}}[00:54:13.060] Dan McClellan: So Satan, the devil, the serpent, Lucifer, Leviathan, Beelzebub, all of these things all just get consolidated into one figure, who then takes the name Satan or the title the devil.{{< /line >}}
+{{< line >}}[00:54:27.610] Dan Beecher: If, if the{{< /line >}}
+{{< line >}}[00:54:28.890] Dan Beecher: the idea of a single character with this sort of title, if that came up, if that really first appears in the New Testament, is{{< /line >}}
+{{< line >}}[00:54:41.210] Dan Beecher: would you say that it's an innovation of followers of Jesus, or is it something that was more broadly applied in Judaism at that time?{{< /line >}}
+{{< line >}}[00:54:50.090] Dan McClellan: I think you see kind of this developmental trajectory within the Judaism of that time.{{< /line >}}
+{{< line >}}[00:54:55.130] Dan McClellan: I think the New Testament followers of Jesus are probably the ones who systematize it.{{< /line >}}
+{{< line >}}[00:55:00.950] Dan McClellan: So kind of boil it down to, okay, this is what it's going to be moving forward.{{< /line >}}
+{{< line >}}[00:55:05.710] Dan McClellan: And everybody kind of agrees there's still some variability.{{< /line >}}
+{{< line >}}[00:55:08.950] Dan McClellan: Like there are scholars who talk about the different ways that the different gospels talk about Satan.{{< /line >}}
+{{< line >}}[00:55:14.710] Dan McClellan: Some of them still seem to preserve a little of this ambiguity, a little of this concept of a role rather than{{< /line >}}
+{{< line >}}[00:55:21.510] Dan McClellan: a personal name.{{< /line >}}
+{{< line >}}[00:55:22.390] Dan McClellan: So a good book on that, Archie Wright has a book called The Origin of Evil Spirits, which I think does a wonderful job of tracing that developmental trajectory.{{< /line >}}
+{{< line >}}[00:55:35.370] Dan McClellan: And so the New Testament is where it is most clearly and systematically fleshed out, but it's going on within Judaism already.{{< /line >}}
+{{< line >}}[00:55:43.930] Dan McClellan: And so they're not the first to kind of come up with these ideas, but they're the first to most clearly kind of tie them all together with a nice little bow, the name Satan.{{< /line >}}
+{{< line >}}[00:55:56.230] Dan Beecher: Well, there you go.{{< /line >}}
+{{< line >}}[00:55:58.470] Dan Beecher: I, you know, he's a confusing character, and now I understand why.eecher: Because my tradition has always, or, you know, the tradition that I grew up in, did that consolidating.{{< /line >}}
+{{< line >}}[00:56:08.830] Dan Beecher: Oh, did that consolidating and, and then went.{{< /line >}}
+{{< line >}}[00:56:12.110] Dan Beecher: And sort of like you say, went back and relabeled all of these other characters that aren't that guy to be that guy.{{< /line >}}
+{{< line >}}[00:56:21.860] Dan Beecher: So I, I appreciate that.{{< /line >}}
+{{< line >}}[00:56:23.780] Dan Beecher: I think that that's actually a.{{< /line >}}
+{{< line >}}[00:56:25.580] Dan Beecher: A very useful history to know as we move forward and as we understand the Bible.{{< /line >}}
+{{< line >}}[00:56:32.780] Dan McClellan: And speaking of Patrick Warburton, your labels all look alike.{{< /line >}}
+{{< line >}}[00:56:36.340] Dan McClellan: You might consider relabeling as Satan.{{< /line >}}
+{{< line >}}[00:56:42.140] Dan Beecher: Oh, man.{{< /line >}}
+{{< line >}}[00:56:43.820] Dan Beecher: Now we need Patrick to come.{{< /line >}}
+{{< line >}}[00:56:45.030] Dan Beecher: Come on and do some.{{< /line >}}
+{{< line >}}[00:56:45.830] Dan Beecher: Do some voiceovers for us.{{< /line >}}
+{{< line >}}[00:56:47.270] Dan Beecher: Patrick, I know you're watching.{{< /line >}}
+{{< line >}}[00:56:48.830] Dan Beecher: I know you're listening.{{< /line >}}
+{{< line >}}[00:56:50.310] Dan Beecher: Get in here.{{< /line >}}
+{{< line >}}[00:56:51.670] Dan McClellan: Much better things to do at this time, I imagine.{{< /line >}}
+{{< line >}}[00:56:54.150] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:56:54.510] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:56:55.590] Dan Beecher: Well, that's it for today's show.{{< /line >}}
+{{< line >}}[00:56:57.310] Dan Beecher: Thank you so much for listening.{{< /line >}}
+{{< line >}}[00:57:00.230] Dan Beecher: If you have any comments, questions, any of that sort of thing, we don't guarantee that we'll answer them, but please feel free to write in.{{< /line >}}
+{{< line >}}[00:57:06.950] Dan Beecher: Our email address is contact@dataoverdogmapod.com. You can also become a patron of the show.{{< /line >}}
+{{< line >}}[00:57:15.600] Dan Beecher: That's our favorite kind of listener.{{< /line >}}
+{{< line >}}[00:57:18.400] Dan Beecher: You can go to patreon.com/dataoverdogma and, and.{{< /line >}}
+{{< line >}}[00:57:23.280] Dan Beecher: And sign up at whatever level works with your budget.{{< /line >}}
+{{< line >}}[00:57:27.440] Dan Beecher: You'll get some extra content.{{< /line >}}
+{{< line >}}[00:57:29.760] Dan Beecher: There's patrons-only content every week.{{< /line >}}
+{{< line >}}[00:57:32.320] Dan Beecher: And you'll get to know that you are one of the goodest of the people and that we love you extra.{{< /line >}}
+{{< line >}}[00:57:38.410] Dan Beecher: Dan, thanks so much.{{< /line >}}
+{{< line >}}[00:57:41.850] Dan Beecher: Thank you for all of your knowledge and everyone.{{< /line >}}
+{{< line >}}[00:57:44.210] Dan Beecher: We'll see you again next week.{{< /line >}}
+{{< line >}}[00:57:46.090] Dan McClellan: Bye, everybody.{{< /line >}}

@@ -1,0 +1,771 @@
+---
+title: The Dans Go to Hell
+date: 2023-07-17T00:00:00Z
+episodeNumber: 15
+videoId: 7oB6UrrFn6c
+aliases:
+  - /episodes/15/
+tags:
+  - Hell
+  - Matthew
+  - Judas Iscariot
+  - Jesus
+  - Zechariah
+  - Book of Enoch
+  - Israel
+  - Book of Acts
+  - Jerusalem
+  - YHWH
+  - Hebrew Bible
+  - New Testament
+  - angel
+  - Sheol
+  - Univocality
+  - Genesis
+  - Isaiah
+  - King Saul
+  - Book of Revelation
+  - Christianity
+  - etiology
+  - Samuel
+  - archaeology
+  - Book of Isaiah
+  - child sacrifice
+  - Gospel of Matthew
+  - Hebrews
+  - inerrancy
+  - Jeremiah
+  - Judaism
+  - Nephilim
+  - Paul
+  - Abraham
+  - Book of Job
+  - Daniel
+  - Egypt
+  - Enoch
+  - Flood
+  - Gospel of Mark
+  - Josephus
+  - King James Version
+  - Kings
+  - Papias of Hierapolis
+  - Satan
+  - theology
+speakers:
+  - Dan McClellan
+  - Dan Beecher
+draft: false
+---
+
+{{< line >}}[00:00:02.320] Dan McClellan: So he just has a field and is standing there beholding the field in which he grows all his—{{< /line >}}
+{{< line >}}[00:00:08.160] Dan McClellan: You know what.{{< /line >}}
+{{< line >}}[00:00:09.200] Dan McClellan: And then he just starts swelling up like Violet in Charlie and the Chocolate Factory, and then bursts.{{< /line >}}
+{{< line >}}[00:00:18.800] Dan McClellan: And then, you know, you find traditions somewhat like this in the ancient world where somebody—{{< /line >}}
+{{< line >}}[00:00:24.440] Dan McClellan: Some divine punishment was that somebody swelled up and popped.{{< /line >}}
+{{< line >}}[00:00:29.360] Dan McClellan: So would not be totally unheard of, but very gross.{{< /line >}}
+{{< line >}}[00:00:33.740] Dan McClellan: And then the other option is that he—{{< /line >}}
+{{< line >}}[00:00:35.820] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:00:36.180] Dan McClellan: Was just walking and was like, doo, doo, doo.{{< /line >}}
+{{< line >}}[00:00:38.860] Dan McClellan: And then splat.{{< /line >}}
+{{< line >}}[00:00:40.620] Dan McClellan: Fell on his head.{{< /line >}}
+{{< line >}}[00:00:41.980] Dan Beecher: Sometimes when you hit your head just right, your entire bowels burst out of your body.{{< /line >}}
+{{< line >}}[00:00:46.940] Dan Beecher: It's a—{{< /line >}}
+{{< line >}}[00:00:48.380] Dan Beecher: That's a known thing.{{< /line >}}
+{{< line >}}[00:00:53.180] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:54.940] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
+{{< line >}}[00:00:56.140] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we bring you greater access to the academic study of the Bible and religion and combat the spread of misinformation.{{< /line >}}
+{{< line >}}[00:01:05.960] Dan McClellan: About the same.{{< /line >}}
+{{< line >}}[00:01:07.080] Dan McClellan: And before we get into any—{{< /line >}}
+{{< line >}}[00:01:08.440] Dan McClellan: Anything, Dan, I wanted to share a brief note about an episode from a couple of weeks ago where we talked about God regretting and repenting.{{< /line >}}
+{{< line >}}[00:01:19.480] Dan McClellan: Because a helpful listener pointed out that I had two different words confused when I was talking about the root nacham.{{< /line >}}
+{{< line >}}[00:01:27.960] Dan McClellan: I mentioned that it was related to the word for the womb, and that is actually a different noun.{{< /line >}}
+{{< line >}}[00:01:33.630] Dan McClellan: And I had those two confused in my head.{{< /line >}}
+{{< line >}}[00:01:35.790] Dan McClellan: Little slip of the brain there.{{< /line >}}
+{{< line >}}[00:01:37.030] Dan McClellan: It doesn't affect my commentary.{{< /line >}}
+{{< line >}}[00:01:39.390] Dan McClellan: It doesn't affect the argument against the claim that God does not regret or repent.{{< /line >}}
+{{< line >}}[00:01:44.510] Dan McClellan: But I do want to keep it 100 and make sure I'm acknowledging when—{{< /line >}}
+{{< line >}}[00:01:49.790] Dan McClellan: When I made mistakes and—{{< /line >}}
+{{< line >}}[00:01:51.630] Dan McClellan: And a helpful listener pointed that out.{{< /line >}}
+{{< line >}}[00:01:53.470] Dan Beecher: So I like that.{{< /line >}}
+{{< line >}}[00:01:54.870] Dan Beecher: I think, you know, it is the official position of this podcast that admitting when you make a mistake makes you more credible, not less, everybody.{{< /line >}}
+{{< line >}}[00:02:05.430] Dan Beecher: So if that's not your position, then, Dan, you've just lost all credibility.{{< /line >}}
+{{< line >}}[00:02:10.230] Dan McClellan: Well, you know, there are a lot of people for whom I never had any credibility to begin with.{{< /line >}}
+{{< line >}}[00:02:14.510] Dan Beecher: So there you go.{{< /line >}}
+{{< line >}}[00:02:15.310] Dan McClellan: I think the balances are—{{< /line >}}
+{{< line >}}[00:02:17.550] Dan McClellan: Are not thrown too far off.{{< /line >}}
+{{< line >}}[00:02:19.910] Dan Beecher: I'm lucky I'm in the position where I don't have to be credible.{{< /line >}}
+{{< line >}}[00:02:23.670] Dan Beecher: You're the only one—I'm in-credible and you're credible.{{< /line >}}
+{{< line >}}[00:02:27.450] Dan McClellan: Yeah, well, there's—{{< /line >}}
+{{< line >}}[00:02:29.530] Dan McClellan: There's that great line from—{{< /line >}}
+{{< line >}}[00:02:30.810] Dan McClellan: I think it was the first Mission Impossible movie with Tom Cruise:{{< /line >}}
+{{< line >}}[00:02:34.210] Dan McClellan: I'm gonna miss being disreputable.{{< /line >}}
+{{< line >}}[00:02:36.570] Dan McClellan: I wish I could be disreputable sometimes.{{< /line >}}
+{{< line >}}[00:02:40.490] Dan Beecher: No, you're not allowed to.{{< /line >}}
+{{< line >}}[00:02:41.610] Dan McClellan: You—{{< /line >}}
+{{< line >}}[00:02:41.850] Dan Beecher: You have to be the reputable one.{{< /line >}}
+{{< line >}}[00:02:43.850] Dan Beecher: I get to be as disreputable as I want to be.{{< /line >}}
+{{< line >}}[00:02:47.210] Dan Beecher: Well, so this—{{< /line >}}
+{{< line >}}[00:02:49.690] Dan Beecher: This week on the show, we got a fun show coming up.{{< /line >}}
+{{< line >}}[00:02:52.810] Dan McClellan: We're gonna try something different.{{< /line >}}
+{{< line >}}[00:02:54.330] Dan Beecher: You're—{{< /line >}}
+{{< line >}}[00:02:54.690] Dan Beecher: You're gonna—{{< /line >}}
+{{< line >}}[00:02:55.210] Dan Beecher: You're gonna take us straight to hell.{{< /line >}}
+{{< line >}}[00:02:56.950] Dan McClellan: Yep.{{< /line >}}
+{{< line >}}[00:02:57.590] Dan Beecher: To start us out with.{{< /line >}}
+{{< line >}}[00:02:59.270] Dan Beecher: For—{{< /line >}}
+{{< line >}}[00:02:59.750] Dan Beecher: For a—{{< /line >}}
+{{< line >}}[00:03:01.670] Dan Beecher: A—{{< /line >}}
+{{< line >}}[00:03:02.230] Dan Beecher: All right, let's see it.{{< /line >}}
+{{< line >}}[00:03:03.390] Dan Beecher: And then we're gonna go chapter and verse.{{< /line >}}
+{{< line >}}[00:03:05.670] Dan Beecher: And I—{{< /line >}}
+{{< line >}}[00:03:06.790] Dan Beecher: We're gonna—{{< /line >}}
+{{< line >}}[00:03:07.470] Dan Beecher: You're gonna explain to me why something in the Bible feels like it contradicts itself.{{< /line >}}
+{{< line >}}[00:03:13.350] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:03:13.790] Dan Beecher: I'm sure that what you're going to do is just completely harmonize everything and it'll all work out great and everyone will feel at peace.{{< /line >}}
+{{< line >}}[00:03:21.390] Dan McClellan: We're gonna make these texts get together, sing Kumbaya, and it's going to be a great time.{{< /line >}}
+{{< line >}}[00:03:27.150] Dan McClellan: All right.{{< /line >}}
+{{< line >}}[00:03:27.630] Dan Beecher: But first..{{< /line >}}
+{{< line >}}[00:03:28.670] Dan McClellan: All right, let's see it.{{< /line >}}
+{{< line >}}[00:03:31.630] Dan McClellan: You mentioned a pastor or author from a handful of years ago.{{< /line >}}
+{{< line >}}[00:03:38.110] Dan McClellan: I think we're at an age now where a few years ago means 15 years ago.{{< /line >}}
+{{< line >}}[00:03:42.830] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:03:43.630] Dan Beecher: So it felt like only a few years ago, but yeah.{{< /line >}}
+{{< line >}}[00:03:46.710] Dan Beecher: There was a guy named Carlton Pearson who made waves.{{< /line >}}
+{{< line >}}[00:03:51.550] Dan Beecher: He was the pastor of one of the largest Pentecostal congregations in the country.{{< /line >}}
+{{< line >}}[00:03:57.850] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:03:58.650] Dan Beecher: And he.{{< /line >}}
+{{< line >}}[00:03:59.530] Dan Beecher: He was out of Tulsa, Oklahoma, and he came out as being{{< /line >}}
+{{< line >}}[00:04:06.570] Dan Beecher: no longer believing in hell.{{< /line >}}
+{{< line >}}[00:04:09.930] Dan Beecher: He said it just.{{< /line >}}
+{{< line >}}[00:04:11.370] Dan Beecher: It just didn't line up with either his theology or his reading of the Bible.{{< /line >}}
+{{< line >}}[00:04:17.290] Dan Beecher: And.{{< /line >}}
+{{< line >}}[00:04:18.090] Dan Beecher: And that just.{{< /line >}}
+{{< line >}}[00:04:20.180] Dan Beecher: blew minds across the country.{{< /line >}}
+{{< line >}}[00:04:21.900] Dan Beecher: And since then, I have seen plenty of debate about what is hell.{{< /line >}}
+{{< line >}}[00:04:27.300] Dan Beecher: Does the Bible talk about hell?{{< /line >}}
+{{< line >}}[00:04:29.620] Dan Beecher: What is.{{< /line >}}
+{{< line >}}[00:04:31.060] Dan Beecher: I mean, was it just made up?{{< /line >}}
+{{< line >}}[00:04:34.260] Dan Beecher: What's going on?{{< /line >}}
+{{< line >}}[00:04:35.380] Dan Beecher: So, Dan, help us.{{< /line >}}
+{{< line >}}[00:04:39.380] Dan Beecher: Was.{{< /line >}}
+{{< line >}}[00:04:39.860] Dan Beecher: I mean, there was a movie with.{{< /line >}}
+{{< line >}}[00:04:41.540] Dan Beecher: with Chiwetel Ejiofor.{{< /line >}}
+{{< line >}}[00:04:43.340] Dan Beecher: I have no idea if that's how to pronounce it.{{< /line >}}
+{{< line >}}[00:04:45.020] Dan Beecher: Chiwetel.{{< /line >}}
+{{< line >}}[00:04:45.620] Dan Beecher: I know you're a listener.{{< /line >}}
+{{< line >}}[00:04:47.400] Dan McClellan: Write in.{{< /line >}}
+{{< line >}}[00:04:47.840] Dan Beecher: Help me understand how to.{{< /line >}}
+{{< line >}}[00:04:49.000] Dan Beecher: How to say your name, but send.{{< /line >}}
+{{< line >}}[00:04:50.800] Dan McClellan: A recording, preferably, rather than just write it.{{< /line >}}
+{{< line >}}[00:04:53.040] Dan Beecher: Yeah, or just call me.{{< /line >}}
+{{< line >}}[00:04:54.200] Dan Beecher: Well, I'll give you my number.{{< /line >}}
+{{< line >}}[00:04:55.880] Dan Beecher: You can call me.{{< /line >}}
+{{< line >}}[00:04:56.680] Dan Beecher: Anyway, help us out here.{{< /line >}}
+{{< line >}}[00:04:59.320] Dan McClellan: What?{{< /line >}}
+{{< line >}}[00:05:00.760] Dan Beecher: You know, if this was a.{{< /line >}}
+{{< line >}}[00:05:02.280] Dan Beecher: As big a bombshell as.{{< /line >}}
+{{< line >}}[00:05:04.080] Dan Beecher: As it was, we should know what we're talking about here.{{< /line >}}
+{{< line >}}[00:05:07.600] Dan Beecher: What?{{< /line >}}
+{{< line >}}[00:05:07.920] Dan Beecher: It seems like it would be obvious, but it doesn't feel that way.{{< /line >}}
+{{< line >}}[00:05:12.440] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:05:12.800] Dan McClellan: And it.{{< /line >}}
+{{< line >}}[00:05:13.160] Dan McClellan: It.{{< /line >}}
+{{< line >}}[00:05:14.040] Dan McClellan: There are a lot of arguments on social media.{{< /line >}}
+{{< line >}}[00:05:16.760] Dan McClellan: I see it a lot on Instagram, on TikTok, on other places where people insist that the concept of hell as a place of eternal conscious torment is something that's not anywhere in the Bible but was developed post-biblically, perhaps even as late as some of the early English literature, or even pre-English literature, Italian literature, Dante and others.{{< /line >}}
+{{< line >}}[00:05:42.360] Dan McClellan: Maybe that's where the concept of hell as burning forever in a lake of fire comes from.{{< /line >}}
+{{< line >}}[00:05:47.900] Dan McClellan: But there's actually a lot to say about concepts of the afterlife in ancient Israel and early Judaism and in early Christianity.{{< /line >}}
+{{< line >}}[00:05:56.860] Dan McClellan: And it's a little more complex than this black and white.{{< /line >}}
+{{< line >}}[00:06:00.900] Dan McClellan: Oh, it wasn't in the Bible.{{< /line >}}
+{{< line >}}[00:06:02.260] Dan McClellan: And then after the Bible, it just popped up.{{< /line >}}
+{{< line >}}[00:06:06.620] Dan McClellan: There's actually a long history of innovation on concepts of the afterlife that go from nothing remotely approximating our concept of hell to how we understand the concept of hell today generally.{{< /line >}}
+{{< line >}}[00:06:21.910] Dan McClellan: So I want to start all the way in ancient Israel.{{< /line >}}
+{{< line >}}[00:06:24.510] Dan McClellan: However, there is a popular idea that there was no concept of the afterlife in ancient Israel.{{< /line >}}
+{{< line >}}[00:06:31.750] Dan McClellan: That you died.{{< /line >}}
+{{< line >}}[00:06:33.270] Dan McClellan: That was annihilation.{{< /line >}}
+{{< line >}}[00:06:34.630] Dan McClellan: That was everything.{{< /line >}}
+{{< line >}}[00:06:35.590] Dan McClellan: You just ceased to exist consciously, physically, metaphorically, grammatically, ecumenically, just in every possible sense.{{< /line >}}
+{{< line >}}[00:06:44.560] Dan Beecher: Oh, man.{{< /line >}}
+{{< line >}}[00:06:45.280] Dan Beecher: Your grammar dies with you.{{< /line >}}
+{{< line >}}[00:06:47.040] Dan McClellan: That's.{{< /line >}}
+{{< line >}}[00:06:47.520] Dan Beecher: That is rough.{{< /line >}}
+{{< line >}}[00:06:48.640] Dan Beecher: That is rough.{{< /line >}}
+{{< line >}}[00:06:49.920] Dan McClellan: But that doesn't really fit with the archaeological data.{{< /line >}}
+{{< line >}}[00:06:53.280] Dan McClellan: One of the interesting things about ancient Israel and the.{{< /line >}}
+{{< line >}}[00:06:58.000] Dan McClellan: The material remains is we have a lot of material remains that come from tombs and from graves.{{< /line >}}
+{{< line >}}[00:07:04.480] Dan McClellan: And partly because everybody just shoved a bunch of stuff underground, sealed it up, and that happens to preserve things quite nicely in the drier climates, like in Egypt, like in parts of Israel.{{< /line >}}
+{{< line >}}[00:07:16.790] Dan McClellan: And so we've got a lot of grave goods.{{< /line >}}
+{{< line >}}[00:07:20.550] Dan McClellan: And this is actually responsible for a bias towards grave goods.{{< /line >}}
+{{< line >}}[00:07:26.710] Dan McClellan: Like when we reconstruct what we have about the ancient world, it seems they were really focused on the grave and the tomb.{{< /line >}}
+{{< line >}}[00:07:35.230] Dan McClellan: And really, it's because that's where we find most of the stuff that we happen to find.{{< /line >}}
+{{< line >}}[00:07:39.550] Dan McClellan: So there.{{< /line >}}
+{{< line >}}[00:07:40.650] Dan Beecher: Fairness to the people who have.{{< /line >}}
+{{< line >}}[00:07:41.890] Dan Beecher: Who take that approach, pretty much everybody from the ancient times did die.{{< /line >}}
+{{< line >}}[00:07:47.690] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:07:48.130] Dan Beecher: So.{{< /line >}}
+{{< line >}}[00:07:48.890] Dan Beecher: So they.{{< /line >}}
+{{< line >}}[00:07:49.610] Dan Beecher: So it makes sense to be to.{{< /line >}}
+{{< line >}}[00:07:51.450] Dan Beecher: To recognize that, you know, they.{{< /line >}}
+{{< line >}}[00:07:53.290] Dan Beecher: There were a lot of graves.{{< /line >}}
+{{< line >}}[00:07:54.450] Dan McClellan: Yeah, there.{{< /line >}}
+{{< line >}}[00:07:55.010] Dan McClellan: There were a lot of graves.{{< /line >}}
+{{< line >}}[00:07:56.050] Dan McClellan: We.{{< /line >}}
+{{< line >}}[00:07:56.330] Dan McClellan: We don't find nearly all of them, but the majority, I don't know.{{< /line >}}
+{{< line >}}[00:08:01.210] Dan McClellan: I don't know exactly what percentage, but there is definitely a disproportionate amount of our material remains from the ancient world that are grave goods.{{< /line >}}
+{{< line >}}[00:08:11.020] Dan McClellan: And two books I just want to highlight if you want to go learn more about the grave and the afterlife in ancient Israel.{{< /line >}}
+{{< line >}}[00:08:17.300] Dan McClellan: One was one that recently came out by a scholar named Kerry Sonia, and it's called Caring for the Dead in Ancient Israel.{{< /line >}}
+{{< line >}}[00:08:24.860] Dan McClellan: That's a wonderful book.{{< /line >}}
+{{< line >}}[00:08:25.980] Dan McClellan: And then another one by a friend of mine, Chris Hayes, called A Covenant with Death.{{< /line >}}
+{{< line >}}[00:08:32.060] Dan McClellan: And this is the subtitle is Death in the Iron Age II and its rhetorical uses in Proto-Isaiah.{{< /line >}}
+{{< line >}}[00:08:38.950] Dan McClellan: But there's wonderful information in there about the fact that the things that were provided to the dead seem to indicate that ancient Israelites believed the dead kept on living in one sense or another.{{< /line >}}
+{{< line >}}[00:08:51.190] Dan McClellan: And that whatever this agency that kept on existing, whether you want to call it a spirit or a soul or a ghost or whatever, whatever this agency that kept on existing was, it in some sense was kind of tethered to the corporeal body, to the remains of the dead and to the location of them.{{< /line >}}
+{{< line >}}[00:09:14.220] Dan McClellan: And so we would see people providing food, providing light, providing protection for the deceased in the afterlife.{{< /line >}}
+{{< line >}}[00:09:24.180] Dan McClellan: And we also see them communing with the deceased in different ways, visiting them at prescribed intervals to have feasts or to petition them for aid or to seek information from them.{{< /line >}}
+{{< line >}}[00:09:37.740] Dan McClellan: So necromancy was phenomenally common in ancient Israel.{{< /line >}}
+{{< line >}}[00:09:43.360] Dan Beecher: Necromancy, help me out with, with that word because it sounds magical or whatever, but in this case we're just, it's.{{< /line >}}
+{{< line >}}[00:09:52.600] Dan McClellan: Basically seeking information from the dead, communing with them to engage in some kind of exchange of information.{{< /line >}}
+{{< line >}}[00:10:01.200] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:10:01.560] Dan Beecher: And you know, it's interesting to say that, I mean you, you started this part of, of your segment by saying that, that people are saying that the ancient Hebrews had no, no concept of an afterlife.{{< /line >}}
+{{< line >}}[00:10:14.960] Dan Beecher: But now I'm realizing that I remember there being stories, you know, the, the witch of Endor jumps to mind where someone is called back from the dead or someone is communicated with after they've died.{{< /line >}}
+{{< line >}}[00:10:29.720] Dan McClellan: So that's the, the necromancer of Endor.{{< /line >}}
+{{< line >}}[00:10:32.200] Dan McClellan: She, her profession has been outlawed by Saul.{{< /line >}}
+{{< line >}}[00:10:35.600] Dan McClellan: But then Saul is, is in a bind and he needs to get information from Adonai and the prophets aren't doing it for him.{{< /line >}}
+{{< line >}}[00:10:43.630] Dan McClellan: So in disguise he visits the necromancer of Endor and wants to call up Samuel.{{< /line >}}
+{{< line >}}[00:10:50.630] Dan McClellan: And it works.{{< /line >}}
+{{< line >}}[00:10:52.550] Dan McClellan: And the necromancer says, I see Elohim, I see deity rising up from the underworld.{{< /line >}}
+{{< line >}}[00:11:00.630] Dan McClellan: And Saul asks, you know, what is its form?{{< /line >}}
+{{< line >}}[00:11:04.620] Dan McClellan: And, and basically Samuel's coming there to say, you should have let me sleep.{{< /line >}}
+{{< line >}}[00:11:09.900] Dan McClellan: And, and then says Saul is going to die in, in battle.{{< /line >}}
+{{< line >}}[00:11:16.340] Dan McClellan: And that's what ends up happening.{{< /line >}}
+{{< line >}}[00:11:18.700] Dan McClellan: But yeah, we see some interesting things there.{{< /line >}}
+{{< line >}}[00:11:20.660] Dan McClellan: One, Samuel is still extant, still exists in the sense that they are some kind of, I, I don't want to say incorporeal or immaterial, but some kind of non-fleshly sense..{{< /line >}}
+{{< line >}}[00:11:39.150] Dan McClellan: And he's referred to as an elohim, as a deity, which kind of attests to the overlap in the concept of ancestors and deities.{{< /line >}}
+{{< line >}}[00:11:50.270] Dan Beecher: Interesting.{{< /line >}}
+{{< line >}}[00:11:51.230] Dan McClellan: But you have care and feeding for the dead because they kept on existing in some sense.{{< /line >}}
+{{< line >}}[00:11:56.590] Dan McClellan: And there's a way, this is kind of like the movie Coco, where they were thought to exist as long as they were remembered.{{< /line >}}
+{{< line >}}[00:12:05.020] Dan McClellan: And so some of the ways that people would try to ensure that they were remembered for longer periods is they would pay to have their name pronounced over their mortuary chapel or something like that.{{< /line >}}
+{{< line >}}[00:12:18.540] Dan McClellan: Or they would.{{< /line >}}
+{{< line >}}[00:12:19.220] Dan McClellan: The families were expected to go make offerings, to commune with them, to pronounce their name, because the pronunciation of their name, in a sense, was a materialization of their name, in a sense, extended their postmortem existence.{{< /line >}}
+{{< line >}}[00:12:34.560] Dan McClellan: And the nature of this postmortem existence is not incredibly clear from what we can tell from the biblical text.{{< /line >}}
+{{< line >}}[00:12:41.440] Dan McClellan: It was just kind of a dreary, murky, ambiguous, just existence of some kind that was.{{< /line >}}
+{{< line >}}[00:12:50.160] Dan McClellan: We get the sense that it was fraught with all kinds of dangers associated with malevolent or benevolent forces that might exist in this.{{< /line >}}
+{{< line >}}[00:12:59.010] Dan McClellan: In this world of the deceased, but also, somehow the deceased also had access to strategic information and so could be petitioned for aid.{{< /line >}}
+{{< line >}}[00:13:08.370] Dan McClellan: People would go.{{< /line >}}
+{{< line >}}[00:13:09.810] Dan McClellan: And in this type of worship we refer to as ancestor worship, they could go petition their ancestors for aid or say, hey, can you get so-and-so to stop stealing my stuff?{{< /line >}}
+{{< line >}}[00:13:22.130] Dan McClellan: Or to give back my stuff?{{< /line >}}
+{{< line >}}[00:13:25.090] Dan McClellan: Or, you know, you had imprecatory petitions and things like that too.{{< /line >}}
+{{< line >}}[00:13:29.800] Dan McClellan: So they were.{{< /line >}}
+{{< line >}}[00:13:31.000] Dan Beecher: You just used a word I do not know.{{< /line >}}
+{{< line >}}[00:13:32.240] Dan McClellan: Imprecatory, which has to do with cursing.{{< /line >}}
+{{< line >}}[00:13:36.680] Dan McClellan: So imprecatory means I'm putting some kind of curse on you.{{< /line >}}
+{{< line >}}[00:13:40.800] Dan Beecher: I'm saying, go spook my neighbor.{{< /line >}}
+{{< line >}}[00:13:42.800] Dan Beecher: He's a.{{< /line >}}
+{{< line >}}[00:13:43.280] Dan Beecher: He's a jerk.{{< /line >}}
+{{< line >}}[00:13:44.840] Dan McClellan: Or make somebody fall in love with me or make somebody not be in love with me.{{< /line >}}
+{{< line >}}[00:13:49.960] Dan McClellan: Like, there were all kinds of different ways that the deceased could.{{< /line >}}
+{{< line >}}[00:13:52.880] Dan McClellan: Could help out.{{< /line >}}
+{{< line >}}[00:13:53.560] Dan McClellan: But this.{{< /line >}}
+{{< line >}}[00:13:55.200] Dan McClellan: This realm of the dead was the same for everybody.{{< /line >}}
+{{< line >}}[00:13:58.640] Dan McClellan: There was no distinction between the good and the evil.{{< /line >}}
+{{< line >}}[00:14:03.440] Dan McClellan: It was the same place for everyone.{{< /line >}}
+{{< line >}}[00:14:05.520] Dan McClellan: And in the Hebrew, the word most commonly associated with this realm was Sheol, which just.{{< /line >}}
+{{< line >}}[00:14:11.560] Dan McClellan: It could mean the grave literally, or it could mean the grave figuratively, the realm of the dead.{{< /line >}}
+{{< line >}}[00:14:16.880] Dan McClellan: And so everybody was destined for Sheol in one sense or another.{{< /line >}}
+{{< line >}}[00:14:21.070] Dan McClellan: And in many English translations of the Bible, Sheol is translated hell or grave or pit or something like that.{{< /line >}}
+{{< line >}}[00:14:28.830] Dan McClellan: So this is.{{< /line >}}
+{{< line >}}[00:14:29.470] Dan Beecher: But in and of itself, that word doesn't have a negative or a positive connotation.{{< /line >}}
+{{< line >}}[00:14:33.790] Dan McClellan: It's negative in the sense that it's mysterious, it's murky and it sucks to be dead.{{< /line >}}
+{{< line >}}[00:14:40.350] Dan McClellan: Yeah, it's going to suck to be there, but there's not a distinction of do good and you'll get on, you know, you'll be in the, the better part of Sheol.{{< /line >}}
+{{< line >}}[00:14:51.840] Dan McClellan: It was just everybody's going to Sheol.{{< /line >}}
+{{< line >}}[00:14:55.040] Dan McClellan: And so you did good or bad or how you acted in life really only affected your lot in life because once you were dead, everybody's lot was the same.{{< /line >}}
+{{< line >}}[00:15:06.160] Dan Beecher: Interesting.{{< /line >}}
+{{< line >}}[00:15:06.960] Dan McClellan: So when we get into the Hellenistic period, when we have a lot more interactions with first the Zoroastrian societies and then the Greco-Roman societies, we start to see some bleeding into Judaism.{{< /line >}}
+{{< line >}}[00:15:25.260] Dan McClellan: These concepts of Hades on the, the Greco-Roman side of things and a kind of dualism on the Zoroastrian side of things.{{< /line >}}
+{{< line >}}[00:15:35.980] Dan McClellan: And you start to see people distinguishing a, a different kind of abode in the afterlife for those who, who do bad and for those who do good.{{< /line >}}
+{{< line >}}[00:15:47.140] Dan McClellan: And, and I get the sense there's still an argument to make.re's still an argument to make.{{< /line >}}
+{{< line >}}[00:15:51.560] Dan McClellan: It's still debated, but I would argue that the concept of punishment in the afterlife probably derived from early Jewish experiences with larger empires that were oppressing them.{{< /line >}}
+{{< line >}}[00:16:05.920] Dan McClellan: And the observation that there did not seem to be punishment for the wicked in this life because the people who seem to be the most successful and the most powerful and the most wealthy frequently were also the most wicked and the most evil and they didn't ever really seem to get their comeuppance.{{< /line >}}
+{{< line >}}[00:16:24.000] Dan McClellan: And so I think there's an argument to make that the concept of divine punishment in the afterlife is rooted in some sense in fantasizing about the incredibly wicked and evil and powerful people of the world getting their just deserts, if not in this life, then in the life to come.{{< /line >}}
+{{< line >}}[00:16:43.820] Dan Beecher: Well, it makes sense.{{< /line >}}
+{{< line >}}[00:16:44.860] Dan Beecher: How, how can one believe in a just deity, in a just God?{{< /line >}}
+{{< line >}}[00:16:49.820] Dan Beecher: And yet justice doesn't come to the worst people that they can think of, the people who have most hurt their people.{{< /line >}}
+{{< line >}}[00:16:58.540] Dan Beecher: There's got, you know, it, it all.{{< /line >}}
+{{< line >}}[00:17:00.380] Dan Beecher: It just makes a lot of sense to imagine a justice that comes after this life.{{< /line >}}
+{{< line >}}[00:17:06.540] Dan McClellan: Yeah, and, and we see these debates about, in wisdom literature, in Job and Ecclesiastes and elsewhere this idea.{{< /line >}}
+{{< line >}}[00:17:15.400] Dan McClellan: Do bad things happen to good people and good things happen to bad people?{{< /line >}}
+{{< line >}}[00:17:19.240] Dan McClellan: There doesn't seem to be any justice.{{< /line >}}
+{{< line >}}[00:17:21.120] Dan McClellan: Well, once you can tack on what Latter-day Saints are used to calling the eternal perspective or the fact that there is an afterlife and so everything can be resolved in the afterlife.{{< /line >}}
+{{< line >}}[00:17:31.400] Dan McClellan: That is a convenient.{{< /line >}}
+{{< line >}}[00:17:33.640] Dan McClellan: That's a convenient way to outsource that problem.{{< /line >}}
+{{< line >}}[00:17:37.240] Dan McClellan: We'll take care of that in the afterlife.{{< /line >}}
+{{< line >}}[00:17:39.680] Dan McClellan: So I'm going to posit, and I am working on research on this and we'll publish something hopefully at some point in the future.{{< /line >}}
+{{< line >}}[00:17:47.090] Dan McClellan: And I know some other people are working on similar projects as well, that, that is one of the main foundations of the concept of divine punishment.{{< /line >}}
+{{< line >}}[00:17:55.290] Dan McClellan: But we begin to see the concept of divine punishment popping up in the Hebrew Bible in some of the most recent layers of the Hebrew Bible and some of the most recent passages.{{< /line >}}
+{{< line >}}[00:18:08.410] Dan McClellan: So one is in Daniel 12, which was written in the middle of the second century BCE.{{< /line >}}
+{{< line >}}[00:18:13.860] Dan McClellan: Again, this is under heavy persecution from the Seleucid Empire, these Greco-Roman folks that are oppressing them.{{< /line >}}
+{{< line >}}[00:18:22.500] Dan McClellan: And the other is the very last verse of the book of Isaiah, Isaiah 66:24, where we have this statement I'm reading from the NRSV here.{{< /line >}}
+{{< line >}}[00:18:30.660] Dan McClellan: And they shall go out and look at the dead bodies of the people who have rebelled against me.{{< /line >}}
+{{< line >}}[00:18:35.940] Dan McClellan: For their worm shall not die, their fire shall not be quenched, and they shall be an abhorrence to all flesh.{{< /line >}}
+{{< line >}}[00:18:44.320] Dan McClellan: So this idea is that these people are going to see the place where these bodies are amassed and the worm shall not die, the fire shall not be quenched.{{< /line >}}
+{{< line >}}[00:18:54.920] Dan McClellan: Now, this doesn't have to be interpreted to mean they will experience this pain and this torment for eternity.{{< /line >}}
+{{< line >}}[00:19:03.920] Dan McClellan: This can just mean the worms and the fire that the people are seeing doesn't go away.{{< /line >}}
+{{< line >}}[00:19:10.700] Dan McClellan: It doesn't necessarily mean they're going to be feeling that.{{< /line >}}
+{{< line >}}[00:19:13.900] Dan McClellan: But here we see this concept of divine punishment that gets picked up in later authors and particularly this idea of the worm that does not die and the fire shall not be quenched is going to pop up in the New Testament, but there are.{{< /line >}}
+{{< line >}}[00:19:29.660] Dan Beecher: And the idea is that.{{< /line >}}
+{{< line >}}[00:19:30.780] Dan Beecher: Sorry, I'm.{{< /line >}}
+{{< line >}}[00:19:31.740] Dan Beecher: This concept of an undying worm is baffling me a little bit.{{< /line >}}
+{{< line >}}[00:19:36.140] Dan Beecher: Yeah, the idea is not anything to do with the worm other than you.{{< /line >}}
+{{< line >}}[00:19:40.810] Dan Beecher: These bodies do not stop being eaten.{{< /line >}}
+{{< line >}}[00:19:43.770] Dan Beecher: Yeah, somehow.{{< /line >}}
+{{< line >}}[00:19:45.690] Dan Beecher: Somehow they, I, I mean, one would think that after a while of being worm digested, you are, you're just goo.{{< /line >}}
+{{< line >}}[00:19:53.850] Dan Beecher: But apparently worms like goo.{{< /line >}}
+{{< line >}}[00:19:56.650] Dan McClellan: Well, it's.{{< /line >}}
+{{< line >}}[00:19:57.330] Dan Beecher: And burnt goo with that.{{< /line >}}
+{{< line >}}[00:19:58.570] Dan Beecher: Because the fires are still going.{{< /line >}}
+{{< line >}}[00:20:00.330] Dan McClellan: Yeah.:00.690] Dan McClellan: And so this is, this is pretty horrific imagery.{{< /line >}}
+{{< line >}}[00:20:03.850] Dan McClellan: It's hyperbolic imagery where you're just imagining these, these bodies just rotting and being consumed for eternity by worms and being burned for eternity without necessarily saying they're gonna feel all that for eternity.{{< /line >}}
+{{< line >}}[00:20:21.190] Dan McClellan: But we have some other literature that is not part of what we understand as the canonical Bible that is reflecting on this as well.{{< /line >}}
+{{< line >}}[00:20:29.750] Dan McClellan: The book of First Enoch, for instance, seems to be one of the innovators of the concepts that are going to be picked up later on.{{< /line >}}
+{{< line >}}[00:20:38.030] Dan McClellan: And particularly as it relates to the word Gehenna, which is in the New Testament, in the Greek transliteration, frequently translated hell in English translations.{{< /line >}}
+{{< line >}}[00:20:49.750] Dan McClellan: Now Gehenna is in the Hebrew Bible.{{< /line >}}
+{{< line >}}[00:20:53.230] Dan McClellan: If you go look it up in your Bible, it's referred to as the Valley of the Son of Hinnom.{{< /line >}}
+{{< line >}}[00:20:59.270] Dan McClellan: So Ge Ben Hinnom is the word in Hebrew, but it becomes Gehenna or Gehinnom in the Greco-Roman period.{{< /line >}}
+{{< line >}}[00:21:10.870] Dan McClellan: And this is an actual valley that kind of swoops down and runs to the south and then to the southeast around Mount Zion.{{< /line >}}
+{{< line >}}[00:21:20.190] Dan McClellan: It meets up with the Central Valley and the Kidron Valley coming down around both sides of the City of David.{{< /line >}}
+{{< line >}}[00:21:27.880] Dan McClellan: And this valley is where Tophet was located.{{< /line >}}
+{{< line >}}[00:21:32.440] Dan McClellan: And Topheth is a name that's used in the Hebrew Bible to refer to the place where the pre-exilic kings of Israel made their children to pass through the fire.{{< /line >}}
+{{< line >}}[00:21:41.680] Dan McClellan: In other words, engaged in child sacrifice.{{< /line >}}
+{{< line >}}[00:21:45.160] Dan McClellan: So this place is associated with unspeakable evil in the eyes of the folks who are curating these traditions in the exilic and in the post-exilic period.{{< /line >}}
+{{< line >}}[00:21:57.460] Dan McClellan: Now I want to stop and make a quick qualification here.{{< /line >}}
+{{< line >}}[00:22:00.660] Dan McClellan: There is a, an idea that this place around the time of Jesus was a landfill where there were perpetually burning fires or where the bodies of criminals were tossed.{{< /line >}}
+{{< line >}}[00:22:14.500] Dan McClellan: And so there's this idea that this is just this perpetually burning place of filth and dead bodies and stench and all this.{{< /line >}}
+{{< line >}}[00:22:23.130] Dan McClellan: And there are no archaeological or textual data that actually support that.{{< /line >}}
+{{< line >}}[00:22:29.770] Dan Beecher: Interesting.{{< /line >}}
+{{< line >}}[00:22:30.450] Dan Beecher: I have heard those theories.{{< /line >}}
+{{< line >}}[00:22:31.850] Dan Beecher: Yeah, that's something that has popped up in my just looking around.{{< /line >}}
+{{< line >}}[00:22:35.370] Dan McClellan: And that's something that we don't see anybody making those claims until many centuries after the time of Jesus.{{< /line >}}
+{{< line >}}[00:22:42.810] Dan McClellan: And I was just in that valley a couple weeks ago.{{< /line >}}
+{{< line >}}[00:22:45.530] Dan McClellan: It's a lovely park down there.{{< /line >}}
+{{< line >}}[00:22:47.450] Dan Beecher: So no, no garbage.{{< /line >}}
+{{< line >}}[00:22:49.210] Dan McClellan: No, no garbage at all.{{< /line >}}
+{{< line >}}[00:22:51.120] Dan McClellan: Grass, green grass.{{< /line >}}
+{{< line >}}[00:22:53.200] Dan McClellan: There's, there's a little like rope bridge that goes across part of the valley that you can go run across if, if you're brave enough.{{< /line >}}
+{{< line >}}[00:23:05.840] Dan McClellan: And they have a little concert venue on one end of it.{{< /line >}}
+{{< line >}}[00:23:08.960] Dan McClellan: It's a lovely area.{{< /line >}}
+{{< line >}}[00:23:10.560] Dan McClellan: So I tell people, or you know, I told the, the tour group I was with, you can tell people now you've been to hell and there's a lovely park.{{< /line >}}
+{{< line >}}[00:23:19.890] Dan Beecher: There you go.{{< /line >}}
+{{< line >}}[00:23:20.850] Dan Beecher: Absolutely.{{< /line >}}
+{{< line >}}[00:23:21.810] Dan Beecher: So very few child sacrifices.{{< /line >}}
+{{< line >}}[00:23:25.410] Dan McClellan: Yeah, that's.{{< /line >}}
+{{< line >}}[00:23:26.370] Dan McClellan: That's all in the past.{{< /line >}}
+{{< line >}}[00:23:27.730] Dan Beecher: That's gone way down.{{< /line >}}
+{{< line >}}[00:23:29.010] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:23:29.450] Dan Beecher: Since.{{< /line >}}
+{{< line >}}[00:23:29.890] Dan Beecher: Since the.{{< /line >}}
+{{< line >}}[00:23:30.850] Dan Beecher: The exilic period.{{< /line >}}
+{{< line >}}[00:23:32.690] Dan McClellan: But when we get into the Hellenistic period, because this valley is associated with unspeakable evil and with child sacrifice and with burning, it becomes kind of a symbolic location for wickedness and punishment.{{< /line >}}
+{{< line >}}[00:23:47.610] Dan McClellan: So we have in the Book of Enoch a reference to this valley right by Jerusalem where certain entities.{{< /line >}}
+{{< line >}}[00:23:55.530] Dan McClellan: We've got some angels who are being buried under mountains, and we've got some other who.{{< /line >}}
+{{< line >}}[00:23:59.850] Dan McClellan: Who are being reserved in this deep, dark valley where they're going to be punished.{{< /line >}}
+{{< line >}}[00:24:06.330] Dan McClellan: And we first have a reference to or suggestion that this is a place for eternal postmortem punishment.{{< /line >}}
+{{< line >}}[00:24:15.700] Dan McClellan: So First Enoch is. McClellan: Is kind of the.{{< /line >}}
+{{< line >}}[00:24:18.660] Dan McClellan: The seedbed for this idea.{{< /line >}}
+{{< line >}}[00:24:21.060] Dan McClellan: And this is.{{< /line >}}
+{{< line >}}[00:24:21.580] Dan Beecher: And talk to me about Enoch.{{< /line >}}
+{{< line >}}[00:24:22.740] Dan Beecher: I don't know.{{< /line >}}
+{{< line >}}[00:24:24.660] Dan McClellan: So First Enoch.{{< /line >}}
+{{< line >}}[00:24:25.660] Dan McClellan: Well, yeah, it's.{{< /line >}}
+{{< line >}}[00:24:27.060] Dan McClellan: A lot of people don't.{{< /line >}}
+{{< line >}}[00:24:28.100] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:24:28.380] Dan McClellan: And even the people who spend all of their time on.{{< /line >}}
+{{< line >}}[00:24:31.140] Dan McClellan: On TikTok making videos about First Enoch frequently don't understand what it is.{{< /line >}}
+{{< line >}}[00:24:36.180] Dan McClellan: But it's.{{< /line >}}
+{{< line >}}[00:24:37.140] Dan McClellan: It's.{{< /line >}}
+{{< line >}}[00:24:37.620] Dan McClellan: In a sense, it's a retelling of some of the main stories from Genesis that.{{< /line >}}
+{{< line >}}[00:24:43.540] Dan McClellan: And particularly focused on Genesis 6, the kind of setting the stage for the flood, where it talks about the Bnai Elohim, the sons of God, seeing the.{{< /line >}}
+{{< line >}}[00:24:55.220] Dan McClellan: The daughters of humanity, seeing that they are beautiful, going down, marrying them, having children with them.{{< /line >}}
+{{< line >}}[00:25:01.860] Dan McClellan: And then it says in the text of Genesis, the Nephilim were in the land in those days and after as well.{{< /line >}}
+{{< line >}}[00:25:08.060] Dan McClellan: And then it goes straight into.{{< /line >}}
+{{< line >}}[00:25:09.300] Dan McClellan: And so the Lord saw that everything was corrupt and wanted to destroy the earth.{{< /line >}}
+{{< line >}}[00:25:13.350] Dan McClellan: And so it's probably an older disconnected tradition that was inserted in this spot to kind of buttress the idea that God was perfectly validated in wanting to destroy everything that breathed on the earth.{{< /line >}}
+{{< line >}}[00:25:30.470] Dan McClellan: But what First Enoch does is pick up that story and kind of expand on it, fill in a lot of the gaps, and use that as kind of a conceptual template for this story about angels rebelling against God, coming down and inappropriately engaging in sexual intercourse with human women and siring these giants.{{< /line >}}
+{{< line >}}[00:25:54.630] Dan McClellan: And then the giants have children who are the Nephilim, and they die.{{< /line >}}
+{{< line >}}[00:25:58.510] Dan McClellan: And then the ghosts or the spirits that.{{< /line >}}
+{{< line >}}[00:26:01.110] Dan McClellan: That rise up from their deceased bodies become demons.{{< /line >}}
+{{< line >}}[00:26:04.270] Dan McClellan: And the angels teach humanity everything, all the wickedness from warfare to makeup.{{< /line >}}
+{{< line >}}[00:26:14.350] Dan Beecher: Interesting.{{< /line >}}
+{{< line >}}[00:26:15.150] Dan McClellan: And so it's.{{< /line >}}
+{{< line >}}[00:26:16.150] Dan McClellan: It's really.{{< /line >}}
+{{< line >}}[00:26:18.110] Dan Beecher: We're gonna have to do a whole.{{< /line >}}
+{{< line >}}[00:26:19.270] Dan Beecher: A whole episode?{{< /line >}}
+{{< line >}}[00:26:20.070] Dan McClellan: Oh, yeah, yeah, definitely.{{< /line >}}
+{{< line >}}[00:26:21.150] Dan McClellan: First Enoch needs to have a whole discussion.{{< /line >}}
+{{< line >}}[00:26:23.750] Dan McClellan: But.{{< /line >}}
+{{< line >}}[00:26:24.350] Dan McClellan: And this is one of the most influential nonbiblical texts in this period.{{< /line >}}
+{{< line >}}[00:26:28.230] Dan McClellan: This sets the stage for so much that goes on regarding angels, regarding the source of evil.{{< /line >}}
+{{< line >}}[00:26:34.910] Dan McClellan: And in part this was a way to account for where evil came from.{{< /line >}}
+{{< line >}}[00:26:38.970] Dan McClellan: We had the problem of evil, of theodicy.{{< /line >}}
+{{< line >}}[00:26:41.170] Dan McClellan: How do we get evil from a creation that was all good?{{< /line >}}
+{{< line >}}[00:26:44.450] Dan McClellan: And it's.{{< /line >}}
+{{< line >}}[00:26:44.930] Dan McClellan: Well, these angels rebelled and they came down and they basically physically reproduced evil and then spread knowledge of evil.{{< /line >}}
+{{< line >}}[00:26:53.690] Dan Beecher: And when was this book written?{{< /line >}}
+{{< line >}}[00:26:55.850] Dan McClellan: So this is the Greco Roman period, the Hellenistic period.{{< /line >}}
+{{< line >}}[00:26:58.730] Dan McClellan: It's probably the earliest phases of it are probably somewhere around 300 BCE or after.{{< /line >}}
+{{< line >}}[00:27:06.810] Dan McClellan: And it kind of cumulatively picks up a bunch of stories.{{< /line >}}
+{{< line >}}[00:27:10.670] Dan McClellan: So there are several.{{< /line >}}
+{{< line >}}[00:27:11.670] Dan McClellan: I think there are five distinct books within the Book of Enoch and they are generally dated to different periods by scholars starting around 300 BCE down to probably close to the turn of the era.{{< /line >}}
+{{< line >}}[00:27:25.109] Dan McClellan: Well, actually some of the later layers of some of these books probably come in the Common Era rather than before the Common Era.{{< /line >}}
+{{< line >}}[00:27:33.910] Dan McClellan: But the issue with identifying this as the origins of hell is that eternal conscious torment is not the only concept that is reflected in there.{{< /line >}}
+{{< line >}}[00:27:46.000] Dan McClellan: We also have two other concepts of divine punishment in the afterlife.{{< /line >}}
+{{< line >}}[00:27:49.920] Dan McClellan: One of them is annihilationism, the idea that the wicked, when they die, they just stop existing.{{< /line >}}
+{{< line >}}[00:27:57.200] Dan McClellan: And the other is temporary torment followed by annihilationism, the idea that the wicked are punished for a time and then there comes a point when they stop existing entirely.rely.{{< /line >}}
+{{< line >}}[00:28:10.450] Dan McClellan: So I think the best scholarship on the development of these concepts would identify three different general categories of post mortem divine punishment: annihilationism, temporary torment followed by annihilationism, and then eternal conscious torment.{{< /line >}}
+{{< line >}}[00:28:29.020] Dan McClellan: And we have this reflected in First Enoch.{{< /line >}}
+{{< line >}}[00:28:30.900] Dan McClellan: We have this reflected in places like the Book of Judith from the Apocrypha, which is quoting or at least alluding to Isaiah 66 and the fire and the worms.{{< /line >}}
+{{< line >}}[00:28:44.140] Dan McClellan: And we have it in a handful of other texts.{{< /line >}}
+{{< line >}}[00:28:47.420] Dan McClellan: We have even Josephus discussing things like this.{{< /line >}}
+{{< line >}}[00:28:49.980] Dan McClellan: We have some rabbinic literature that is discussing things like this, the Apocalypse of Abraham, Second Baruch, a number of texts that are considered Apocrypha or Pseudepigrapha or other early Jewish writings are kind of...{{< /line >}}
+{{< line >}}[00:29:05.370] Dan McClellan: We see one or more of these three different categories bubbling to the surface.{{< /line >}}
+{{< line >}}[00:29:10.570] Dan McClellan: And so what we can say is that the concept of hell or divine punishment in the afterlife is not yet systematized.{{< /line >}}
+{{< line >}}[00:29:19.610] Dan McClellan: It is kind of ambiguous, it is inconsistent.{{< /line >}}
+{{< line >}}[00:29:23.730] Dan McClellan: People are making use of different ways of thinking about it to the degree it serves their rhetorical goals, but it has not sifted out into one kind of universal idea.{{< /line >}}
+{{< line >}}[00:29:37.760] Dan McClellan: That is something that would not come until after the Bible.{{< /line >}}
+{{< line >}}[00:29:42.920] Dan McClellan: So in the New Testament, we see all three of these categories as well.{{< /line >}}
+{{< line >}}[00:29:47.720] Dan McClellan: We have, yeah, we have this idea of the...{{< /line >}}
+{{< line >}}[00:29:51.800] Dan McClellan: ...worm and the fire reflected in places like Mark and Matthew.{{< /line >}}
+{{< line >}}[00:29:56.800] Dan McClellan: And we have Jesus talking about divine punishment as eternal conscious torment.{{< /line >}}
+{{< line >}}[00:30:02.960] Dan McClellan: But we also have Jesus talking about it as if it is just annihilationism or as if it is temporary torment followed by annihilationism.{{< /line >}}
+{{< line >}}[00:30:11.840] Dan McClellan: We have all of that in the Gospels.{{< /line >}}
+{{< line >}}[00:30:14.240] Dan McClellan: So it is not a systematized concept yet in the Gospels.{{< /line >}}
+{{< line >}}[00:30:19.840] Dan McClellan: Some of the other literature in the New Testament similarly reflects one or more of these concepts.{{< /line >}}
+{{< line >}}[00:30:28.150] Dan McClellan: Paul does not talk about it at all.{{< /line >}}
+{{< line >}}[00:30:30.710] Dan McClellan: We do not have any of them in Paul.{{< /line >}}
+{{< line >}}[00:30:33.270] Dan McClellan: And probably the place where we get the most imagery that is going to be picked up later in the systematization of hell, in the programmatization—program—I don't even know what that word should be.{{< /line >}}
+{{< line >}}[00:30:48.960] Dan McClellan: But in the...{{< /line >}}
+{{< line >}}[00:30:49.840] Dan Beecher: I think you nailed it.{{< /line >}}
+{{< line >}}[00:30:52.000] Dan McClellan: When they finally decide hell is going to be this, they pull a lot of the imagery from the Book of Revelation where we have this idea of a lake of fire and we have this dragon and we have Satan and there is throwing down of stuff.{{< /line >}}
+{{< line >}}[00:31:08.720] Dan McClellan: But even death and hell in the Book of Revelation come to an end.{{< /line >}}
+{{< line >}}[00:31:14.140] Dan McClellan: And so we are fans on this channel of rejecting univocality.{{< /line >}}
+{{< line >}}[00:31:21.420] Dan McClellan: So even the concept of hell is not presented univocally in any single Gospel, much less in all the Gospels, much less across the entire New Testament.{{< /line >}}
+{{< line >}}[00:31:31.260] Dan McClellan: It is entirely inconsistent.{{< /line >}}
+{{< line >}}[00:31:33.460] Dan McClellan: And it is not until early Christianity becomes institutionalized and gains political support and resources once it takes over the Roman Empire in the fourth and fifth centuries CE, that we get the means of systematizing everything and then enforcing a single concept of hell, which does reduce down to this concept of eternal conscious torment.{{< /line >}}
+{{< line >}}[00:32:02.380] Dan McClellan: But for the authors of the New Testament, there is no one concept of hell.{{< /line >}}
+{{< line >}}[00:32:06.980] Dan McClellan: Some of them do not refer to any of these concepts of hell.{{< /line >}}
+{{< line >}}[00:32:10.550] Dan McClellan: Some of them refer to multiple different ones.{{< /line >}}
+{{< line >}}[00:32:12.550] Dan McClellan: And these are influenced by Greco Roman ideas of Hades.{{< /line >}}
+{{< line >}}[00:32:17.510] Dan McClellan: They are influenced by what is going on in the Book of Enoch.{{< /line >}}
+{{< line >}}[00:32:21.350] Dan McClellan: They are influenced perhaps by Zoroastrianism, although we do not have a lot of great data to show us exactly how it was influenced.{{< /line >}}
+{{< line >}}[00:32:29.710] Dan McClellan: And so hell comes together from a number of different streams of traditions that begin inconsistently and do not really arrive at what we understand today about hell until well after the Bible has been completed.{{< /line >}}
+{{< line >}}[00:32:44.450] Dan McClellan: And then we also have obviously that other literature, Dante and others that are giving us additional imagery that contribute to the accumulated kind of conceptual package that we generally evoke today when we talk about hell.[00:33:02.050] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:33:02.690] Dan Beecher: So sort of circling back to Pastor Pearson that I, that I mentioned at the beginning of this segment.{{< /line >}}
+{{< line >}}[00:33:13.010] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:33:14.050] Dan Beecher: Would you say that there is a valid argument to be made that there is no hell?{{< /line >}}
+{{< line >}}[00:33:21.410] Dan Beecher: Do you think that is because there are so many different concepts presented biblically?{{< /line >}}
+{{< line >}}[00:33:30.710] Dan Beecher: Is that a tenable position?{{< /line >}}
+{{< line >}}[00:33:34.470] Dan Beecher: Or do you think that somehow we have to, if we're following the Bible, there is some hell-like concept that is more likely than not?{{< /line >}}
+{{< line >}}[00:33:48.150] Dan Beecher: To be, to be more likely than not?{{< /line >}}
+{{< line >}}[00:33:50.790] Dan McClellan: I think if you're talking about the Bible as a single text and if you are going to impose a univocal lens upon it and say we have to reduce it down to one concept, then that concept is going to be negotiated.{{< /line >}}
+{{< line >}}[00:34:04.140] Dan McClellan: And I think all of those possibilities are there.{{< /line >}}
+{{< line >}}[00:34:07.540] Dan McClellan: You have everything from absolutely no reference whatsoever to post-mortem divine punishment, all the way to eternal conscious torment across the different authors of the Bible.{{< /line >}}
+{{< line >}}[00:34:18.620] Dan McClellan: So I would suggest that any one of those positions is arguable.{{< /line >}}
+{{< line >}}[00:34:23.379] Dan McClellan: If you're trying to accommodate a univocal take, if you're trying to say we have the text and we must arrive at a single conclusion with the text, then that is a negotiated conclusion and any one of those is tenable.{{< /line >}}
+{{< line >}}[00:34:38.339] Dan McClellan: If we're saying, what did the authors of these texts believe about divine punishment?{{< /line >}}
+{{< line >}}[00:34:45.459] Dan McClellan: You have to say there are authors that say absolutely nothing about it, that it's not relevant, certainly not salient.{{< /line >}}
+{{< line >}}[00:34:53.390] Dan McClellan: They may not have believed in it at all.{{< /line >}}
+{{< line >}}[00:34:55.750] Dan McClellan: Then there are other authors who treat it one way, other authors who treat it another, and we have authors that treat it a variety of different ways.{{< /line >}}
+{{< line >}}[00:35:03.310] Dan McClellan: So I think it's murky and it's a little more complex than just saying yes it's there or no it's not there.{{< /line >}}
+{{< line >}}[00:35:10.910] Dan McClellan: It depends on what you're doing with the text.{{< /line >}}
+{{< line >}}[00:35:12.870] Dan McClellan: It depends on how you understand the text and its function.{{< /line >}}
+{{< line >}}[00:35:18.350] Dan McClellan: And it depends on, yeah, I suppose it depends upon the group that you're doing it for.{{< /line >}}
+{{< line >}}[00:35:24.910] Dan McClellan: What are your goals for this?{{< /line >}}
+{{< line >}}[00:35:28.190] Dan McClellan: All right.{{< /line >}}
+{{< line >}}[00:35:29.150] Dan Beecher: Well, thankfully our next segment isn't going to be anywhere near as confusing.{{< /line >}}
+{{< line >}}[00:35:37.230] Dan Beecher: Don't worry, we'll find a way to make the Bible all say one thing, just stick with us.{{< /line >}}
+{{< line >}}[00:35:42.550] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:35:42.870] Dan McClellan: This is.{{< /line >}}
+{{< line >}}[00:35:43.270] Dan McClellan: This is the problem of putting data over dogma; it frequently does not sift out into one easy answer.{{< /line >}}
+{{< line >}}[00:35:50.910] Dan McClellan: It.{{< /line >}}
+{{< line >}}[00:35:51.470] Dan McClellan: The answer is usually yes with a "but" or no with an "and" or something that is just entirely confusing.{{< /line >}}
+{{< line >}}[00:35:58.910] Dan McClellan: So.{{< /line >}}
+{{< line >}}[00:35:59.270] Dan Beecher: Or just pick one.{{< /line >}}
+{{< line >}}[00:36:01.950] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:36:02.310] Dan McClellan: It's up to you.{{< /line >}}
+{{< line >}}[00:36:02.870] Dan McClellan: If I can show up and muddy up the waters and then scamper away, I've done my job.{{< /line >}}
+{{< line >}}[00:36:08.100] Dan Beecher: Good, good.{{< /line >}}
+{{< line >}}[00:36:08.660] Dan Beecher: Well, let's.{{< /line >}}
+{{< line >}}[00:36:10.500] Dan Beecher: Let's do some more muddying with some chapter and verse.{{< /line >}}
+{{< line >}}[00:36:13.140] Dan McClellan: Sounds good.{{< /line >}}
+{{< line >}}[00:36:13.700] Dan McClellan: Let's do it.{{< /line >}}
+{{< line >}}[00:36:17.060] Dan Beecher: All right, so for this week's chapter and verse, we're gonna talk about the villain, the final villain of the Jesus story, Judas Iscariot, the man, the myth, the legend, the guy, the betrayer of Jesus.{{< /line >}}
+{{< line >}}[00:36:40.190] Dan Beecher: Because there's a confusing discrepancy between the story of Judas in Matthew and the story of Judas in Acts.{{< /line >}}
+{{< line >}}[00:36:55.390] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:36:56.350] Dan Beecher: So I thought we would dive in and just sort of talk about this discrepancy.{{< /line >}}
+{{< line >}}[00:37:03.560] Dan Beecher: And so where should we start?{{< /line >}}
+{{< line >}}[00:37:05.840] Dan Beecher: Should we start with Acts or should we start with Matthew?{{< /line >}}
+{{< line >}}[00:37:09.000] Dan McClellan: Why don't we start with Acts, actually?{{< /line >}}
+{{< line >}}[00:37:12.440] Dan Beecher: Okay, well, that's the fun one.{{< /line >}}
+{{< line >}}[00:37:14.840] Dan Beecher: We will definitely start with the fun one.{{< /line >}}
+{{< line >}}[00:37:17.720] Dan Beecher: Where?{{< /line >}}
+{{< line >}}[00:37:19.000] Dan Beecher: In Acts.{{< /line >}}
+{{< line >}}[00:37:19.880] Dan Beecher: And this is.an Beecher: This is chapter one, verse, what, 15?{{< /line >}}
+{{< line >}}[00:37:25.480] Dan Beecher: No, sorry, I had it pulled up.{{< /line >}}
+{{< line >}}[00:37:29.090] Dan McClellan: It starts in 18.{{< /line >}}
+{{< line >}}[00:37:30.370] Dan McClellan: We have this parenthetical aside about what happened to Judas.{{< /line >}}
+{{< line >}}[00:37:34.450] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:37:36.130] Dan Beecher: So, yeah.{{< /line >}}
+{{< line >}}[00:37:37.850] Dan Beecher: Chapter one, verse 18.{{< /line >}}
+{{< line >}}[00:37:39.970] Dan Beecher: Judas, having received his pieces of silver for his betrayal of Jesus, has apparently purchased himself a field.{{< /line >}}
+{{< line >}}[00:37:53.400] Dan Beecher: In verse 18, it says, now this man acquired a field with the reward of his wickedness.{{< /line >}}
+{{< line >}}[00:37:58.440] Dan Beecher: And this is so great.{{< /line >}}
+{{< line >}}[00:38:01.320] Dan Beecher: Falling headlong, he burst open in the middle and all his bowels gushed out.{{< /line >}}
+{{< line >}}[00:38:09.400] Dan Beecher: This became known to all the residents of Jerusalem, so that the field was called in their language, Hakeldama.{{< /line >}}
+{{< line >}}[00:38:19.000] Dan Beecher: I, I, I'm gonna assume I pronounce that perfectly.{{< /line >}}
+{{< line >}}[00:38:22.600] Dan Beecher: That is Field of Blood.{{< /line >}}
+{{< line >}}[00:38:24.760] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:38:28.360] Dan Beecher: So, yeah, we.{{< /line >}}
+{{< line >}}[00:38:29.960] Dan McClellan: That.{{< /line >}}
+{{< line >}}[00:38:30.320] Dan Beecher: That's a gruesome end to, To a person's life.{{< /line >}}
+{{< line >}}[00:38:34.120] Dan Beecher: Just, Just tripping, apparently, and just explosion.{{< /line >}}
+{{< line >}}[00:38:40.680] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:38:41.800] Dan McClellan: Well, we have a couple of things.{{< /line >}}
+{{< line >}}[00:38:44.040] Dan McClellan: First, this sounds to some degree like kind of an etiology for why there's this field called the Field of Blood.{{< /line >}}
+{{< line >}}[00:38:50.530] Dan McClellan: And so it may be that the author is saying, oh, this would be a great opportunity to tie in and tie off the story of Judas.{{< /line >}}
+{{< line >}}[00:38:58.930] Dan McClellan: Because we got this place over here that's called the Field of Blood.{{< /line >}}
+{{< line >}}[00:39:02.530] Dan McClellan: And it's a.{{< /line >}}
+{{< line >}}[00:39:03.250] Dan McClellan: It's a Greek transliteration.{{< /line >}}
+{{< line >}}[00:39:05.650] Dan McClellan: Hakeldamach is how.{{< /line >}}
+{{< line >}}[00:39:10.530] Dan McClellan: What it is in.{{< /line >}}
+{{< line >}}[00:39:11.570] Dan McClellan: In the Greek but yeah, it is.{{< /line >}}
+{{< line >}}[00:39:14.150] Dan McClellan: It is pretty brief.{{< /line >}}
+{{< line >}}[00:39:15.830] Dan McClellan: And yeah, he has a reward.{{< /line >}}
+{{< line >}}[00:39:18.390] Dan McClellan: He buys a field.{{< /line >}}
+{{< line >}}[00:39:19.670] Dan McClellan: Now, the Greek here, where it talks about him falling, says headlong in the KJV.{{< /line >}}
+{{< line >}}[00:39:25.270] Dan McClellan: This could mean head first, or it could mean towards his head or on his head.{{< /line >}}
+{{< line >}}[00:39:31.430] Dan McClellan: There's an argument that some people have made that the Greek there could, instead of falling, could mean to.{{< /line >}}
+{{< line >}}[00:39:40.340] Dan McClellan: To burst.{{< /line >}}
+{{< line >}}[00:39:41.780] Dan McClellan: And so that would kind of fit a little better.{{< /line >}}
+{{< line >}}[00:39:44.660] Dan McClellan: The verb to swell up.{{< /line >}}
+{{< line >}}[00:39:47.140] Dan McClellan: That would kind of fit a little better.{{< /line >}}
+{{< line >}}[00:39:49.580] Dan McClellan: This idea that he burst asunder.{{< /line >}}
+{{< line >}}[00:39:51.380] Dan McClellan: So he just has a field and is standing there beholding the field in which he grows all his.{{< /line >}}
+{{< line >}}[00:39:57.300] Dan McClellan: You know what.{{< /line >}}
+{{< line >}}[00:39:58.340] Dan McClellan: And then he just starts swelling up like Violet in Charlie and the Chocolate Factory.{{< /line >}}
+{{< line >}}[00:40:06.750] Dan McClellan: And then bursts.{{< /line >}}
+{{< line >}}[00:40:07.950] Dan McClellan: And then, you know, you find traditions somewhat like this in the ancient world where somebody.{{< /line >}}
+{{< line >}}[00:40:13.590] Dan McClellan: Some divine punishment was that somebody swelled up and.{{< /line >}}
+{{< line >}}[00:40:16.910] Dan McClellan: And popped.{{< /line >}}
+{{< line >}}[00:40:18.510] Dan McClellan: So would not be totally unheard of, but very gross.{{< /line >}}
+{{< line >}}[00:40:22.910] Dan McClellan: And then the other option is that he, yeah, was just walking and was like, do, do, do.{{< /line >}}
+{{< line >}}[00:40:27.950] Dan McClellan: And then splat.{{< /line >}}
+{{< line >}}[00:40:29.710] Dan McClellan: Fell on his head.{{< /line >}}
+{{< line >}}[00:40:31.320] Dan Beecher: Sometimes when you hit your head just right, your entire bowels burst out of your body.{{< /line >}}
+{{< line >}}[00:40:36.120] Dan Beecher: It's.{{< /line >}}
+{{< line >}}[00:40:37.000] Dan Beecher: It's a.{{< /line >}}
+{{< line >}}[00:40:37.520] Dan Beecher: That's a known thing.{{< /line >}}
+{{< line >}}[00:40:38.920] Dan Beecher: Yeah, it's a little.{{< /line >}}
+{{< line >}}[00:40:41.080] Dan Beecher: It's an alarming story.{{< /line >}}
+{{< line >}}[00:40:42.360] Dan Beecher: It's an alarming tale.{{< /line >}}
+{{< line >}}[00:40:44.680] Dan Beecher: And what.{{< /line >}}
+{{< line >}}[00:40:46.040] Dan Beecher: I don't.{{< /line >}}
+{{< line >}}[00:40:47.000] Dan Beecher: I don't think it could happen.{{< /line >}}
+{{< line >}}[00:40:48.360] Dan Beecher: I don't think you can just burst open.{{< /line >}}
+{{< line >}}[00:40:50.640] Dan Beecher: But there you go.{{< /line >}}
+{{< line >}}[00:40:51.280] Dan Beecher: There, there.{{< /line >}}
+{{< line >}}[00:40:51.840] Dan Beecher: There's one story of Judas.{{< /line >}}
+{{< line >}}[00:40:55.640] Dan Beecher: The other comes to us from Matthew 27.{{< /line >}}
+{{< line >}}[00:40:58.120] Dan McClellan: And I want to make a point here before we move to the one in Matthew 27.{{< /line >}}
+{{< line >}}[00:41:01.400] Dan McClellan: This is two verses long.{{< /line >}}
+{{< line >}}[00:41:03.280] Dan McClellan: The first verse tells what happened.{{< /line >}}
+{{< line >}}[00:41:05.280] Dan McClellan: And then the second verse just ties it into this etiology for. etiology for{{< /line >}}
+{{< line >}}[00:41:11.600] Dan Beecher: For this place that was called the Field of Blood.{{< /line >}}
+{{< line >}}[00:41:11.600] Dan Beecher: Yeah, it definitely like, the one thing that seems clear from{{< /line >}}
+{{< line >}}[00:41:16.400] Dan Beecher: From comparing these two stories is that there is in fact a field of blood at the end of both of these stories.{{< /line >}}
+{{< line >}}[00:41:23.680] Dan Beecher: We know that there's a place called the Field of Blood.{{< /line >}}
+{{< line >}}[00:41:26.240] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:41:27.360] Dan Beecher: So here we go.{{< /line >}}
+{{< line >}}[00:41:28.400] Dan McClellan: This is.{{< /line >}}
+{{< line >}}[00:41:28.880] Dan Beecher: I'm going to start with.{{< /line >}}
+{{< line >}}[00:41:30.610] Dan McClellan: With.{{< /line >}}
+{{< line >}}[00:41:31.090] Dan Beecher: This is chapter 27, verse 3.{{< /line >}}
+{{< line >}}[00:41:34.050] Dan Beecher: When Judas his betrayer saw that Jesus was condemned, he repented.{{< /line >}}
+{{< line >}}[00:41:38.930] Dan Beecher: And brought back the 30 pieces of silver to the chief priests and elders.{{< /line >}}
+{{< line >}}[00:41:44.450] Dan Beecher: He said, I have sinned by betraying innocent blood.{{< /line >}}
+{{< line >}}[00:41:48.690] Dan Beecher: But they said, what is that to us?{{< /line >}}
+{{< line >}}[00:41:50.530] Dan Beecher: See it.{{< /line >}}
+{{< line >}}[00:41:51.090] Dan Beecher: See to it yourself.{{< /line >}}
+{{< line >}}[00:41:53.490] Dan Beecher: Throwing down the pieces of silver in the temple, he departed and he went and hanged himself.{{< /line >}}
+{{< line >}}[00:42:00.920] Dan Beecher: But the chief priests taking the pieces of silver said, it is not lawful to put them in the{{< /line >}}
+{{< line >}}[00:42:05.720] Dan Beecher: Into the treasury, since they are blood money.{{< /line >}}
+{{< line >}}[00:42:09.400] Dan Beecher: After conferring together, they used them to buy the potter's field as a place to bury foreigners.{{< /line >}}
+{{< line >}}[00:42:16.360] Dan Beecher: For this reason, that field has been called the field of blood to this day.{{< /line >}}
+{{< line >}}[00:42:21.160] Dan McClellan: And then the next two verses, I think are relevant, but we'll get to them in a second.{{< /line >}}
+{{< line >}}[00:42:25.840] Dan McClellan: Let's talk about this story a little bit.{{< /line >}}
+{{< line >}}[00:42:27.820] Dan McClellan: So the passage in Acts was two verses.{{< /line >}}
+{{< line >}}[00:42:31.660] Dan McClellan: This one is so far, six verses.{{< /line >}}
+{{< line >}}[00:42:34.980] Dan McClellan: Six of a total of eight.{{< /line >}}
+{{< line >}}[00:42:37.020] Dan McClellan: So the first thing to note is that this story is significantly expanded.{{< /line >}}
+{{< line >}}[00:42:41.500] Dan McClellan: And when you're comparing two versions of a story, one principle that is not a hard and fast law, but is a tendency is something called lectio{{< /line >}}
+{{< line >}}[00:42:54.120] Dan McClellan: Oh, I forget the Latin lectio{{< /line >}}
+{{< line >}}[00:42:56.760] Dan McClellan: brevior, I think.{{< /line >}}
+{{< line >}}[00:42:57.640] Dan McClellan: I think is what it is.{{< /line >}}
+{{< line >}}[00:42:58.840] Dan McClellan: But the, the shorter reading is what that means.{{< /line >}}
+{{< line >}}[00:43:01.960] Dan McClellan: And the idea is the shorter reading is usually, not always, but usually the earlier one, because the tendency is for stories to accrete more details rather than for people to shave details off.{{< /line >}}
+{{< line >}}[00:43:15.880] Dan McClellan: And so just from looking at the length of these two stories, it's seems like the one in Matthew is probably the one that's a little later and is adding more details to it.{{< /line >}}
+{{< line >}}[00:43:27.260] Dan McClellan: But the details are also interesting.{{< /line >}}
+{{< line >}}[00:43:30.140] Dan McClellan: Let's take a look at the beginning.{{< /line >}}
+{{< line >}}[00:43:33.340] Dan McClellan: And there's an earlier part where Judas goes to these people and negotiates the price for turning Jesus over.{{< /line >}}
+{{< line >}}[00:43:40.940] Dan McClellan: And they negotiate 30 pieces of silver.{{< /line >}}
+{{< line >}}[00:43:43.300] Dan McClellan: And so that's delivered to Judas.{{< /line >}}
+{{< line >}}[00:43:45.340] Dan McClellan: And here it says he repented, brought back the 30 pieces, threw it into the temple.{{< /line >}}
+{{< line >}}[00:43:51.460] Dan McClellan: And they tell him, you know, this is your problem, man.{{< /line >}}
+{{< line >}}[00:43:55.860] Dan McClellan: Now that 30 pieces of silver is significant, but I want to put a pin in that and keep going.{{< /line >}}
+{{< line >}}[00:44:03.380] Dan McClellan: The chief priests take the silver and say, this is blood money.{{< /line >}}
+{{< line >}}[00:44:07.340] Dan McClellan: And here we have the tie in with the field of blood idea.{{< /line >}}
+{{< line >}}[00:44:10.740] Dan McClellan: But they buy a potter's field as a place to bury foreigners.{{< /line >}}
+{{< line >}}[00:44:15.220] Dan McClellan: And this potter's field is also interesting.{{< /line >}}
+{{< line >}}[00:44:18.740] Dan McClellan: So I want to go on to verses 9 and 10 where the author of Matthew says, then was fulfilled what had been spoken through the prophet Jeremiah.{{< /line >}}
+{{< line >}}[00:44:28.580] Dan McClellan: And this one is wrong.{{< /line >}}
+{{< line >}}[00:44:30.380] Dan McClellan: It's not Jeremiah, it's actually Zechariah.{{< /line >}}
+{{< line >}}[00:44:35.460] Dan Beecher: Oh, Matthew, get it straight, will you?{{< /line >}}
+{{< line >}}[00:44:39.220] Dan McClellan: And this is probably Zechariah 11:12-13.{{< /line >}}
+{{< line >}}[00:44:46.020] Dan McClellan: But we also have a reference to verse nine.{{< /line >}}
+{{< line >}}[00:44:49.730] Dan McClellan: But.{{< /line >}}
+{{< line >}}[00:44:53.090] Dan McClellan: And they took the 30 pieces.{{< /line >}}
+{{< line >}}[00:44:54.610] Dan McClellan: So this is Zechariah.{{< /line >}}
+{{< line >}}[00:44:56.210] Dan McClellan: And they took the 30 pieces of silver, the price of the one on whom a price had been set, on whom some of the people of Israel had set a price, and they gave them for the potter's field as the Lord commanded me.r's field as the Lord commanded me.{{< /line >}}
+{{< line >}}[00:45:08.930] Dan McClellan: So this is, this doesn't exactly match any text that we have from Zechariah, but it very closely matches Zechariah 11:12-13, where it says, I then said to them, if it seems right to you, give me my wages, but if not, keep them.{{< /line >}}
+{{< line >}}[00:45:24.090] Dan McClellan: So they weighed out as my wages 30 shekels of silver.{{< /line >}}
+{{< line >}}[00:45:28.730] Dan McClellan: Then the Lord said to me, throw it into the treasury for this lordly price at which I was valued by them.{{< /line >}}
+{{< line >}}[00:45:36.130] Dan McClellan: So I took the 30 shekels of silver and threw them into the treasury in the house{{< /line >}}
+{{< line >}}[00:45:41.810] Dan McClellan: of The Lord.{{< /line >}}
+{{< line >}}[00:45:44.210] Dan McClellan: And so the story in Matthew seems very, very close to this prophecy from Zechariah.{{< /line >}}
+{{< line >}}[00:45:52.690] Dan McClellan: And this fits Matthew's M.O.{{< /line >}}
+{{< line >}}[00:45:55.250] Dan McClellan: One of the things Matthew is doing is trying to show that Jesus fulfills all these prophecies from the Hebrew Bible, and Matthew is willing to change the story to make it fit better these prophecies.{{< /line >}}
+{{< line >}}[00:46:08.200] Dan McClellan: So sometimes these are prophecies that are found in the other Gospels; sometimes they're prophecies that are not, that Matthew is coming up with.{{< /line >}}
+{{< line >}}[00:46:16.350] Dan McClellan: And so if we look in Acts, we've got a very short story.{{< /line >}}
+{{< line >}}[00:46:20.030] Dan McClellan: None of the details that are found in the prophecy from Zechariah are found in the story of Judas's death from Acts.{{< /line >}}
+{{< line >}}[00:46:29.150] Dan Beecher: Yeah, it's very interesting.{{< /line >}}
+{{< line >}}[00:46:31.150] Dan Beecher: You know, it's funny because one of the things that I looked at when I was looking into this was, you know, if you just Google "how did Judas die?"{{< /line >}}
+{{< line >}}[00:46:40.070] Dan Beecher: You find a lot of apologetic websites, things like Answers in Genesis, saying, don't worry, these aren't conflicting stories because maybe Judas hanged himself like Matthew says, and then he rotted.{{< /line >}}
+{{< line >}}[00:46:58.630] Dan Beecher: And while he was hanging there, he expanded and expanded because he was, you know, the bacteria and blah, blah, blah.{{< /line >}}
+{{< line >}}[00:47:06.140] Dan Beecher: And then they burst open after the rope broke or the branch broke.{{< /line >}}
+{{< line >}}[00:47:11.060] Dan Beecher: And they, they, they go through this very elaborate harmonizing of these two different stories.{{< /line >}}
+{{< line >}}[00:47:18.780] Dan Beecher: None of them acknowledge that there's another problem.{{< /line >}}
+{{< line >}}[00:47:22.340] Dan Beecher: And that is who bought the field.{{< /line >}}
+{{< line >}}[00:47:24.780] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:47:25.420] Dan Beecher: Which is a directly conflicting idea.{{< /line >}}
+{{< line >}}[00:47:27.980] Dan Beecher: Like there, you can't harmonize.{{< /line >}}
+{{< line >}}[00:47:30.340] Dan Beecher: He bought the field and was walking in his field and he fell headlong.{{< /line >}}
+{{< line >}}[00:47:36.340] Dan Beecher: Bought.{{< /line >}}
+{{< line >}}[00:47:36.740] Dan Beecher: He bought the field with his money that he got with that, the, the, the 30 pieces of silver, and then the Matthew version, which is he threw the pieces of silver back at them and then they went and bought the field.{{< /line >}}
+{{< line >}}[00:47:52.180] Dan McClellan: Yeah, there.{{< /line >}}
+{{< line >}}[00:47:53.020] Dan McClellan: You can't plausibly harmonize it, but there are a lot of folks who are willing to say, well, if you presuppose this scenario, and if you assume this scenario and if this were going on in the background and, oh, well, you could speak of someone buying something with the other person's money as the other person buying it.{{< /line >}}
+{{< line >}}[00:48:10.530] Dan McClellan: Like, you can come up with all of these rationalizations for why it is not impossible.{{< /line >}}
+{{< line >}}[00:48:17.490] Dan Beecher: Of course you can.{{< /line >}}
+{{< line >}}[00:48:18.210] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:48:18.530] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:48:18.810] Dan McClellan: And this is.{{< /line >}}
+{{< line >}}[00:48:19.370] Dan McClellan: This is something that I've repeatedly mentioned on my own social media channels: if you want to harmonize two passages, as long as "not impossible" is the bar.{{< /line >}}
+{{< line >}}[00:48:33.620] Dan McClellan: One, that's the lowest bar you could possibly set, but two, you can always get over that bar if "well, it's not physically impossible" is the bar; you can harmonize anything.{{< /line >}}
+{{< line >}}[00:48:44.900] Dan McClellan: But this, I think, raises one of the biggest problems with apologetics.{{< /line >}}
+{{< line >}}[00:48:49.020] Dan McClellan: This is apologetics.{{< /line >}}
+{{< line >}}[00:48:50.260] Dan McClellan: One does not follow the data where the data lead, does not allow the data to operate on their own terms.{{< /line >}}
+{{< line >}}[00:48:57.820] Dan McClellan: Apologetics treats the data as an obstacle to be overcome because they have a predetermined endpoint, and they just need to get around and get rid of and get over and get by the data to be able to arrive at that endpoint.{{< /line >}}
+{{< line >}}[00:49:14.540] Dan McClellan: And it so commonly results in "not impossible" stacked on "not impossible" stacked on "not impossible" stacked on "not impossible."{{< /line >}}
+{{< line >}}[00:49:23.700] Dan McClellan: Is it probable?{{< /line >}}
+{{< line >}}[00:49:24.580] Dan McClellan: Of course not.{{< /line >}}
+{{< line >}}[00:49:25.000] Dan McClellan: Of course not.{{< /line >}}
+{{< line >}}[00:49:25.300] Dan McClellan: Is it plausible?{{< /line >}}
+{{< line >}}[00:49:26.460] Dan McClellan: Of course not.{{< /line >}}
+{{< line >}}[00:49:27.300] Dan McClellan: Is it impossible?{{< /line >}}
+{{< line >}}[00:49:30.020] Dan McClellan: And as long as they can gin up the tiniest little sliver of "it's not physically impossible," even though we've got a dozen NIs—we've got a stack of 12 "it's not physically impossibles" sitting on top of each other—it's still not impossible, therefore, dangling like a Jenga...{{< /line >}}
+{{< line >}}[00:49:48.040] Dan Beecher: Tower that's ready to tumble at any...{{< /line >}}
+{{< line >}}[00:49:50.080] Dan McClellan: In any direction, they've got the tiniest little sliver of not impossible.{{< /line >}}
+{{< line >}}[00:49:54.480] Dan McClellan: And that's all they need, because the goal is not to show that it's probable or even that it's plausible.{{< /line >}}
+{{< line >}}[00:50:00.800] Dan McClellan: The goal is just to show it's not physically impossible.{{< /line >}}
+{{< line >}}[00:50:04.400] Dan McClellan: Therefore, there is the tiniest little glimmer of validity to the belief in the univocality, in the inerrancy of this text.{{< /line >}}
+{{< line >}}[00:50:14.270] Dan McClellan: And that's all they need to grasp onto, because it's ultimately not about coming up with what's most likely.{{< /line >}}
+{{< line >}}[00:50:22.350] Dan McClellan: It's about defending my belief in this—whatever, in the inerrancy of this text, in the univocality of this text—to themselves, not to anyone else, to themselves.{{< /line >}}
+{{< line >}}[00:50:36.670] Dan McClellan: So they can feel justified in having that belief, even if that justification is built upon the foundation of that tiniest little sliver of not impossible.{{< /line >}}
+{{< line >}}[00:50:46.840] Dan McClellan: And so any two stories from outside the Bible that were so incongruent as these two would immediately be dismissed as contradictory.{{< /line >}}
+{{< line >}}[00:50:59.440] Dan McClellan: But because the guiding principle here is not what really happened or what do the texts actually say, the guiding principle here is, damn it, make it work.{{< /line >}}
+{{< line >}}[00:51:10.330] Dan McClellan: That's going to be the end result, as long as I have that tiny little sliver of not impossible.{{< /line >}}
+{{< line >}}[00:51:16.490] Dan McClellan: But, yeah, what's going on here is Matthew is telling this story in a way to make it sound like a fulfillment of this prophecy in Zechariah.{{< /line >}}
+{{< line >}}[00:51:25.050] Dan McClellan: And we've got all these details that are not found in the other account of Judas's death that are there only to make Matthew's story fulfill the prophecy in Zechariah.{{< /line >}}
+{{< line >}}[00:51:35.760] Dan McClellan: And this is not the only place where Matthew is telling stories in weird ways.{{< /line >}}
+{{< line >}}[00:51:39.960] Dan McClellan: The triumphal entry is another one that is also a prophecy from Zechariah about the king riding into Jerusalem on a donkey, even a colt, the foal of a donkey.{{< /line >}}
+{{< line >}}[00:51:51.960] Dan McClellan: And this is apposition.{{< /line >}}
+{{< line >}}[00:51:55.640] Dan McClellan: This is repeating the same thing again, using different or additional details to kind of flesh it out further.{{< /line >}}
+{{< line >}}[00:52:03.860] Dan McClellan: Matthew tells the story in a way that has Jesus riding on two animals simultaneously into Jerusalem, which has been depicted...{{< /line >}}
+{{< line >}}[00:52:12.100] Dan McClellan: Yeah, it's been depicted a variety of different ways.{{< /line >}}
+{{< line >}}[00:52:14.380] Dan McClellan: Some people have him sitting on the bigger one with the smaller one...{{< /line >}}
+{{< line >}}[00:52:17.500] Dan McClellan: Like a foot rest.{{< /line >}}
+{{< line >}}[00:52:18.659] Dan Beecher: Like an ottoman.{{< /line >}}
+{{< line >}}[00:52:19.700] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:52:20.660] Dan Beecher: Nice donkey ottoman that you can get.{{< /line >}}
+{{< line >}}[00:52:22.580] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:52:23.140] Dan McClellan: I'd love to see a depiction of like a trick-riding Jesus where he's got a foot on each saddle and he's...{{< /line >}}
+{{< line >}}[00:52:28.900] Dan McClellan: And he's kind of...{{< /line >}}
+{{< line >}}[00:52:30.530] Dan Beecher: That's always been how I've pictured it.{{< /line >}}
+{{< line >}}[00:52:32.290] Dan Beecher: It's always been a circus act to me.{{< /line >}}
+{{< line >}}[00:52:34.130] Dan McClellan: But I...{{< /line >}}
+{{< line >}}[00:52:34.930] Dan Beecher: That's my preferred version.{{< /line >}}
+{{< line >}}[00:52:36.850] Dan McClellan: But that...{{< /line >}}
+{{< line >}}[00:52:37.610] Dan McClellan: And there...{{< /line >}}
+{{< line >}}[00:52:38.050] Dan McClellan: There are arguments for why this is the way it is, but one that I think is...{{< /line >}}
+{{< line >}}[00:52:42.050] Dan McClellan: Is probably most likely, in my opinion, is that Matthew's reading this in the Greek translation.{{< /line >}}
+{{< line >}}[00:52:47.970] Dan McClellan: And in the Greek translation, the poetry of the Hebrew, the apposition doesn't come through as well.{{< /line >}}
+{{< line >}}[00:52:53.650] Dan McClellan: And so I think Matthew saw a donkey and a colt, the foal of a donkey, and thought two of them.{{< /line >}}
+{{< line >}}[00:53:01.440] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:53:02.800] Dan McClellan: And wrote the story that way.{{< /line >}}
+{{< line >}}[00:53:04.680] Dan McClellan: Because his priority is making sure Jesus is fulfilling the prophecies from the Hebrew Bible as the author of Matthew understands him.{{< /line >}}
+{{< line >}}[00:53:14.320] Dan McClellan: Even if that means Jesus has stacked a colt on top of a donkey and then is balanced on top of the colt, which is probably the most likely way you're going to get Jesus into Jerusalem.to Jerusalem.{{< /line >}}
+{{< line >}}[00:53:25.020] Dan McClellan: Jerusalem on two animals.{{< /line >}}
+{{< line >}}[00:53:26.140] Dan McClellan: But we've got a similar situation with Judas where Matthew is telling the story in a completely different way, in a way that is incongruent, is not plausibly harmonized with Acts.{{< /line >}}
+{{< line >}}[00:53:38.700] Dan McClellan: And so there are going to be folks who are going to say, yeah, it's totally the same story.{{< /line >}}
+{{< line >}}[00:53:45.500] Dan McClellan: You know, I, I don't have a problem harmonizing.{{< /line >}}
+{{< line >}}[00:53:47.620] Dan McClellan: Of course not.{{< /line >}}
+{{< line >}}[00:53:48.940] Dan McClellan: Nobody has a problem doing what is necessary for their worldview to be safe.{{< /line >}}
+{{< line >}}[00:53:56.280] Dan McClellan: So it's, it's, it's two different stories.{{< /line >}}
+{{< line >}}[00:53:59.080] Dan McClellan: And yeah, we were talking earlier about a third version of this story.{{< /line >}}
+{{< line >}}[00:54:03.040] Dan Beecher: Oh yeah, a story as big as.{{< /line >}}
+{{< line >}}[00:54:04.720] Dan McClellan: A house comes from around 120 to 130 CE.{{< /line >}}
+{{< line >}}[00:54:09.160] Dan McClellan: There was this Christian leader named Papias of Hierapolis who wrote some accounts of Jesus's life that are no longer extant, but they are quoted in pieces in Eusebius's Ecclesiastical History.{{< /line >}}
+{{< line >}}[00:54:25.650] Dan McClellan: And to begin, Eusebius thought that Papias was kind of a moron, did not think he was incredibly intelligent.{{< /line >}}
+{{< line >}}[00:54:32.210] Dan McClellan: Doesn't seem to have respected Papias.{{< /line >}}
+{{< line >}}[00:54:34.690] Dan McClellan: I don't know.{{< /line >}}
+{{< line >}}[00:54:35.210] Dan Beecher: You've told me the story that Papias came up with for Judas and I think he sounds like a real smart guy.{{< /line >}}
+{{< line >}}[00:54:44.040] Dan McClellan: But Papias tells the story of Judas being on his property and basically swelling up again like Violet Beauregard from Charlie and the Chocolate Factory.{{< /line >}}
+{{< line >}}[00:54:56.040] Dan McClellan: But he grows to a size bigger than a house and this is all like maggots and festering whatnot is just making him swell up.{{< /line >}}
+{{< line >}}[00:55:06.520] Dan McClellan: And for some reason there's a mention of his genitals swelling up and becoming disgusting and he's exuding maggots and who knows what and bursts forth his intestines and whatever covers this property.{{< /line >}}
+{{< line >}}[00:55:21.790] Dan McClellan: And as the story goes, the stench was unbearable for over a century on the field of blood where Judas died.{{< /line >}}
+{{< line >}}[00:55:31.950] Dan McClellan: Which is an odd thing for Papias to say since ostensibly according to a lot of people, and this is a discussion for another day, but Papias, a lot of people claim, is one of the earliest witnesses to the Gospel of Matthew as written by Matthew.{{< /line >}}
+{{< line >}}[00:55:48.090] Dan McClellan: A lot of people think he's the first one to attribute Matthean authorship to the Gospel of Matthew, but doesn't seem to take it seriously if his story of Judas totally ignores Matthew's story and instead is this kind of outlandish Charlie and the Chocolate Factory story of Judas swelling up and then bursting asunder in the field.{{< /line >}}
+{{< line >}}[00:56:13.570] Dan Beecher: Well, there you go.{{< /line >}}
+{{< line >}}[00:56:15.730] Dan Beecher: I, I, I don't know what to believe now.{{< /line >}}
+{{< line >}}[00:56:18.450] Dan Beecher: Now I'm just, I'm confused.{{< /line >}}
+{{< line >}}[00:56:21.170] Dan Beecher: I, all I know for sure now is that I don't want to go to tumble headlong in a field because that sounds terrifying.{{< /line >}}
+{{< line >}}[00:56:30.210] Dan McClellan: Well, as long as you don't betray.{{< /line >}}
+{{< line >}}[00:56:31.810] Dan Beecher: The Lord, it should be okay.{{< /line >}}
+{{< line >}}[00:56:34.620] Dan McClellan: Yeah, yeah, that's.{{< /line >}}
+{{< line >}}[00:56:35.740] Dan McClellan: That's as long as you stay away from that cliff.{{< /line >}}
+{{< line >}}[00:56:38.020] Dan McClellan: I know it is tempting to go dance along the edge of that cliff, but stay away.{{< /line >}}
+{{< line >}}[00:56:42.700] Dan McClellan: I don't know how.{{< /line >}}
+{{< line >}}[00:56:43.300] Dan Beecher: How much silver you got.{{< /line >}}
+{{< line >}}[00:56:45.340] Dan Beecher: Well, I'll consider it anyway.{{< /line >}}
+{{< line >}}[00:56:47.900] Dan McClellan: Oh, and another thing to note, the.{{< /line >}}
+{{< line >}}[00:56:49.580] Dan McClellan: The 30 pieces of silver that according to a chapter in Exodus, that was the value of a slave, so.{{< /line >}}
+{{< line >}}[00:56:56.420] Dan Beecher: Oh, wow.{{< /line >}}
+{{< line >}}[00:56:56.980] Dan McClellan: A lot of people find that noteworthy that Christ was betrayed for the value of a slave.{{< /line >}}
+{{< line >}}[00:57:04.660] Dan McClellan: So now.{{< /line >}}
+{{< line >}}[00:57:05.460] Dan McClellan: Now we're connecting Matthew to Zechariah to Exodus.{{< /line >}}
+{{< line >}}[00:57:08.980] Dan McClellan: So there's some trigonometry involved, but I love it.{{< /line >}}
+{{< line >}}[00:57:12.740] Dan Beecher: Eventually we'll figure this thing out.{{< /line >}}
+{{< line >}}[00:57:15.299] Dan McClellan: Yeah, eventually.{{< /line >}}
+{{< line >}}[00:57:16.220] Dan McClellan: One day we'll get there.{{< /line >}}
+{{< line >}}[00:57:17.620] Dan Beecher: Okay, well, I guess that's how we're gonna have to leave this one, because I.{{< /line >}}
+{{< line >}}[00:57:23.820] Dan Beecher: There's no real concrete conclusion to come to, but thanks to all of you for tuning in.{{< /line >}}
+{{< line >}}[00:57:29.590] Dan Beecher: We sure do appreciate that.{{< /line >}}
+{{< line >}}[00:57:31.310] Dan Beecher: If you would like to become a part of helping to make this show go, you can go to our Patreon page, which is patreon..com/dataoverdogma.{{< /line >}}
+{{< line >}}[00:57:40.989] Dan Beecher: You can write into us contact@dataoverdogmapod.com is the way to do that.{{< /line >}}
+{{< line >}}[00:57:48.030] Dan Beecher: And until next week, have a good one.{{< /line >}}
+{{< line >}}[00:57:53.800] Dan McClellan: Bye, everybody.{{< /line >}}

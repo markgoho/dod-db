@@ -1,0 +1,680 @@
+---
+title: The Case of the Missing Verses
+date: 2023-07-31T00:00:00Z
+episodeNumber: 17
+videoId: naI65ELNhRw
+aliases:
+  - /episodes/17/
+tags:
+  - manuscript
+  - King James Version
+  - New Testament
+  - James
+  - William Tyndale
+  - Jesus
+  - Desiderius Erasmus
+  - Hebrew Bible
+  - Matthew
+  - Textus Receptus
+  - Gospel of John
+  - YHWH
+  - Book of Revelation
+  - Martin Luther
+  - angel
+  - Christianity
+  - Gospel of Mark
+  - Hell
+  - Latin Vulgate
+  - archaeology
+  - Book of Isaiah
+  - Council of Nicaea
+  - Hebrews
+  - Isaiah
+  - Jonah
+  - Kings
+  - Luke
+  - Moses
+  - Numbers
+  - Paul
+  - resurrection
+  - Satan
+  - Ten Commandments
+  - textual criticism
+  - theology
+speakers:
+  - Dan Beecher
+  - Dan McClellan
+draft: false
+---
+
+{{< line >}}[00:00:02.400] Dan Beecher: So this is the story where.{{< /line >}}
+{{< line >}}[00:00:04.160] Dan Beecher: Where Jesus says, let him who is without sin cast the first stone.{{< /line >}}
+{{< line >}}[00:00:07.800] Dan Beecher: Is that.{{< /line >}}
+{{< line >}}[00:00:08.400] Dan Beecher: Am I on the right story here?{{< /line >}}
+{{< line >}}[00:00:09.760] Dan McClellan: You are on the right story.{{< /line >}}
+{{< line >}}[00:00:11.200] Dan Beecher: That's one of the best stories in the book.{{< /line >}}
+{{< line >}}[00:00:13.080] Dan Beecher: You're telling me that that's not real?{{< /line >}}
+{{< line >}}[00:00:14.720] Dan Beecher: Oh, man, that's.{{< /line >}}
+{{< line >}}[00:00:17.760] Dan Beecher: That stays in my version.{{< /line >}}
+{{< line >}}[00:00:19.040] Dan McClellan: Well, that's one of the reasons that so many people make such an impassioned case for.{{< /line >}}
+{{< line >}}[00:00:23.280] Dan McClellan: For treating this historically.{{< /line >}}
+{{< line >}}[00:00:24.760] Dan McClellan: They can't imagine a Jesus who does not say, "Let him who is without sin cast the first stone," even as they go casting.{{< /line >}}
+{{< line >}}[00:00:36.140] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:37.660] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
+{{< line >}}[00:00:38.940] Dan McClellan: And you are listening to the Data Over Dogma podcast where we seek to increase public access to the academic study of the Bible and religion and combat misinformation.{{< /line >}}
+{{< line >}}[00:00:49.340] Dan McClellan: About the same.{{< /line >}}
+{{< line >}}[00:00:50.180] Dan McClellan: How are you doing today, Dan?{{< /line >}}
+{{< line >}}[00:00:51.900] Dan Beecher: Rocking and rolling, baby.{{< /line >}}
+{{< line >}}[00:00:53.420] Dan Beecher: It's.{{< /line >}}
+{{< line >}}[00:00:53.900] Dan Beecher: It's a good day to learn about the world.{{< /line >}}
+{{< line >}}[00:00:57.420] Dan McClellan: Yes, it is.{{< /line >}}
+{{< line >}}[00:00:58.550] Dan McClellan: As are most days.{{< /line >}}
+{{< line >}}[00:00:59.830] Dan Beecher: As are most days.{{< /line >}}
+{{< line >}}[00:01:01.590] Dan Beecher: Some days you don't want to.{{< /line >}}
+{{< line >}}[00:01:02.710] Dan Beecher: But today's a good day and we got some fun things coming up.{{< /line >}}
+{{< line >}}[00:01:09.030] Dan Beecher: We're keeping it historical.{{< /line >}}
+{{< line >}}[00:01:11.510] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:01:12.150] Dan McClellan: As is our wont.{{< /line >}}
+{{< line >}}[00:01:13.350] Dan Beecher: As is our wont.{{< /line >}}
+{{< line >}}[00:01:14.630] Dan Beecher: We are wont to do so.{{< /line >}}
+{{< line >}}[00:01:17.750] Dan Beecher: So maybe we should just dive in with.{{< /line >}}
+{{< line >}}[00:01:22.470] Dan Beecher: That's history.{{< /line >}}
+{{< line >}}[00:01:26.150] Dan McClellan: A question I get an awful lot.{{< /line >}}
+{{< line >}}[00:01:27.790] Dan McClellan: And something I think a lot of people don't know is how the King James Version came about.{{< /line >}}
+{{< line >}}[00:01:33.800] Dan McClellan: One of the most, probably the single most influential English translation of the Bible or perhaps any translation of the Bible that exists, the King James Version, many people know it was published in 1611, that King James had something to do with it.{{< /line >}}
+{{< line >}}[00:01:50.760] Dan McClellan: There are a lot of ideas out there about what precisely King James had to do with it and a lot of misinformation out there.{{< /line >}}
+{{< line >}}[00:01:56.520] Dan McClellan: So let's get into a discussion of the history of the King James Version.{{< /line >}}
+{{< line >}}[00:02:03.560] Dan Beecher: I love it.{{< /line >}}
+{{< line >}}[00:02:04.320] Dan Beecher: You know, when I was back some 10-ish years ago, I watched a play on London's West End and I'm trying to remember what that play was called.{{< /line >}}
+{{< line >}}[00:02:17.800] Dan Beecher: It was something along the lines of oh, oh, it was Written on the Heart.{{< /line >}}
+{{< line >}}[00:02:26.050] Dan Beecher: That's what it was.{{< /line >}}
+{{< line >}}[00:02:26.770] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:02:27.170] Dan Beecher: It was a play called Written on the Heart.{{< /line >}}
+{{< line >}}[00:02:28.570] Dan Beecher: And I think you'd love it.{{< /line >}}
+{{< line >}}[00:02:31.530] Dan Beecher: It's by a guy named David Edgar and he was a.{{< /line >}}
+{{< line >}}[00:02:35.250] Dan Beecher: And.{{< /line >}}
+{{< line >}}[00:02:35.570] Dan Beecher: And so.{{< /line >}}
+{{< line >}}[00:02:36.130] Dan Beecher: And it incorporates.{{< /line >}}
+{{< line >}}[00:02:37.610] Dan Beecher: It goes through some different moments in history.{{< /line >}}
+{{< line >}}[00:02:40.690] Dan Beecher: It has.{{< /line >}}
+{{< line >}}[00:02:41.170] Dan Beecher: William Tyndale.{{< /line >}}
+{{< line >}}[00:02:42.370] Dan Beecher: It has.{{< /line >}}
+{{< line >}}[00:02:44.930] Dan Beecher: But the thing that stood out to me was scenes where.{{< /line >}}
+{{< line >}}[00:02:49.880] Dan Beecher: And I don't remember it well.{{< /line >}}
+{{< line >}}[00:02:51.480] Dan Beecher: So, you know if someone else saw this and they, you can correct me if you want to, but it had scenes where there were the, it was a big room where people where, where a bunch of men were negotiating what was and wasn't going to go into this new version of the Bible.{{< /line >}}
+{{< line >}}[00:03:14.520] Dan Beecher: So this is, you know, a long time after, after.{{< /line >}}
+{{< line >}}[00:03:20.320] Dan Beecher: What's his name?{{< /line >}}
+{{< line >}}[00:03:21.200] Dan Beecher: I just said it.{{< /line >}}
+{{< line >}}[00:03:22.000] Dan Beecher: Tyndale. Tyndale.{{< /line >}}
+{{< line >}}[00:03:23.760] Dan Beecher: It's so it's a.{{< /line >}}
+{{< line >}}[00:03:24.800] Dan Beecher: But yeah, it's, it's the, it's the crafting and, and the sort of the, the, the political machinations that then became the, the King James Bible.{{< /line >}}
+{{< line >}}[00:03:35.440] Dan Beecher: So I'm excited to understand and hear a little more about it.{{< /line >}}
+{{< line >}}[00:03:40.800] Dan McClellan: Excellent.{{< /line >}}
+{{< line >}}[00:03:41.520] Dan McClellan: But actually to start talking about the King James Version, I want to go back to Tyndale and actually a little bit before Tyndale to a Dutch humanist scholar named Desiderius Erasmus.{{< /line >}}
+{{< line >}}[00:03:54.160] Dan McClellan: And he is working at the very beginning of the 1500s and he's a scholar publishing all different kinds of stuff.{{< /line >}}
+{{< line >}}[00:04:01.520] Dan McClellan: And at the time there was one main English translation of the Bible that was Wycliffe's translation.{{< /line >}}
+{{< line >}}[00:04:10.400] Dan McClellan: And it was not the product of Wycliffe's own work all by himself.{{< /line >}}
+{{< line >}}[00:04:16.450] Dan McClellan: It came together from the work of a lot of different people.{{< /line >}}
+{{< line >}}[00:04:19.530] Dan McClellan: But that was the end of the 14th century, so the end of the 1300s, we have Wycliffe's Bible, which is a translation of the Latin Vulgate into English.{{< /line >}}
+{{< line >}}[00:04:28.650] Dan McClellan: Now Erasmus does something pretty crafty.{{< /line >}}
+{{< line >}}[00:04:32.730] Dan McClellan: There is a desire to have a Greek or an edition of the Greek New Testament and somebody is working on one.{{< /line >}}
+{{< line >}}[00:04:42.180] Dan McClellan: And a publisher who is working with Erasmus comes to him and wants Erasmus to get to it first, basically cut this other scholar off.{{< /line >}}
+{{< line >}}[00:04:52.820] Dan McClellan: And Erasmus wants to create a new translation of the New Testament in Latin.{{< /line >}}
+{{< line >}}[00:04:57.260] Dan McClellan: And so what he does is he creates a two column text where he has his new Latin translation on one side and then Greek on the other.{{< /line >}}
+{{< line >}}[00:05:05.860] Dan McClellan: And the idea is to basically show his work here's the Greek text so you can compare and you can see that my translation rules.{{< /line >}}
+{{< line >}}[00:05:14.440] Dan McClellan: And in order to do this, he goes to his library in Switzerland, in Basel.{{< /line >}}
+{{< line >}}[00:05:20.600] Dan McClellan: And I never know if I'm saying that name right, but goes to the library and says, give me all your Greek New Testament manuscripts.{{< /line >}}
+{{< line >}}[00:05:27.560] Dan McClellan: And initially he's got like five or six of them.{{< /line >}}
+{{< line >}}[00:05:29.840] Dan McClellan: And the oldest one is from like 1100 CE, so not incredibly old manuscripts, but he has two manuscripts that represent the overwhelming majority of the text, almost every single verse.{{< /line >}}
+{{< line >}}[00:05:42.720] Dan McClellan: And then the other manuscripts, the five or six of them or four or five of them, are basically, he's going to look at them, and if he thinks one of them may preserve an earlier reading, he might, you know, fit that in there.{{< /line >}}
+{{< line >}}[00:05:55.400] Dan McClellan: And he's going to cobble together a Greek New Testament.{{< /line >}}
+{{< line >}}[00:05:59.400] Dan McClellan: And the last few verses of the Book of Revelation are not extant.{{< /line >}}
+{{< line >}}[00:06:02.640] Dan McClellan: He does not have them.{{< /line >}}
+{{< line >}}[00:06:03.640] Dan McClellan: And so what he does is he takes the Latin Vulgate and translates it back into Greek and then writes that Greek into the Greek column.{{< /line >}}
+{{< line >}}[00:06:14.330] Dan McClellan: And he then publishes this in the early.{{< /line >}}
+{{< line >}}[00:06:18.010] Dan Beecher: Look at how perfect my translation of my translation is.{{< /line >}}
+{{< line >}}[00:06:21.850] Dan McClellan: And this becomes the first edition of the Greek New Testament that had ever been published.{{< /line >}}
+{{< line >}}[00:06:31.050] Dan McClellan: And it's cobbled together from a handful of manuscripts.{{< /line >}}
+{{< line >}}[00:06:34.810] Dan McClellan: And that Greek side of things becomes the most popular aspect of this publication.{{< /line >}}
+{{< line >}}[00:06:40.540] Dan McClellan: I don't think that people really cared about his his translation of the of the Latin.{{< /line >}}
+{{< line >}}[00:06:44.620] Dan McClellan: But Erasmus, he goes on and does several more editions of this, and many years later, it becomes known as the Textus Receptus, which is Latin for the received text.{{< /line >}}
+{{< line >}}[00:06:57.020] Dan McClellan: And this is what's known as an eclectic manuscript, or an eclectic edition.{{< /line >}}
+{{< line >}}[00:07:01.820] Dan McClellan: We've looked at all the manuscripts.{{< /line >}}
+{{< line >}}[00:07:03.820] Dan McClellan: This does not represent one single manuscript, but we've cobbled together what we believe are the best readings from the manuscripts that we had available.{{< /line >}}
+{{< line >}}[00:07:11.800] Dan McClellan: And as he's doing these other editions, he looks at some other manuscripts and he brings some other manuscripts into view.{{< /line >}}
+{{< line >}}[00:07:19.800] Dan McClellan: But I don't think he ever gets more than like 14 or 15 manuscripts that he's consulting as a part of this.{{< /line >}}
+{{< line >}}[00:07:27.240] Dan McClellan: The second edition of his text is what Martin Luther uses to create his translation of the New Testament.{{< /line >}}
+{{< line >}}[00:07:36.040] Dan McClellan: Now we have a Greek text that we can use so that we're not translating from the Latin, we're translating all the way back from the Greek.{{< /line >}}
+{{< line >}}[00:07:44.540] Dan McClellan: William Tyndale does the same thing, translates his New Testament from the Greek provided by Erasmus, Textus Receptus.{{< /line >}}
+{{< line >}}[00:07:54.060] Dan McClellan: And this becomes very, very popular over the next 200 years.{{< /line >}}
+{{< line >}}[00:07:59.900] Dan McClellan: You have many, many translations going on.{{< /line >}}
+{{< line >}}[00:08:03.260] Dan McClellan: You also have many editions of the Textus Receptus book being produced all kind of in the same tradition.{{< /line >}}
+{{< line >}}[00:08:10.380] Dan McClellan: They're not departing significantly from each other.{{< /line >}}
+{{< line >}}[00:08:12.860] Dan McClellan: They're doing, they're making small, little adjustments here and there based on, oh, I actually like the way this manuscript reads here over the other. the other.{{< /line >}}
+{{< line >}}[00:08:20.820] Dan McClellan: William.{{< /line >}}
+{{< line >}}[00:08:21.940] Dan Beecher: Sorry, I'm just jumping in—is Erasmus's Greek side of things, since this was eclectic and came from various different groups?{{< /line >}}
+{{< line >}}[00:08:32.200] Dan Beecher: Greek manuscripts.{{< /line >}}
+{{< line >}}[00:08:33.080] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:08:33.800] Dan Beecher: Did he put multiple manuscript versions in his—{{< /line >}}
+{{< line >}}[00:08:37.880] Dan Beecher: On the Greek side of things, or did he just put whatever the ones that he wanted in?{{< /line >}}
+{{< line >}}[00:08:42.840] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:08:43.320] Dan McClellan: So he used two manuscripts as his base text.{{< /line >}}
+{{< line >}}[00:08:47.080] Dan McClellan: And then if there were readings in the other manuscripts that he thought were more original, he would write those in place of what the other manuscript was.{{< /line >}}
+{{< line >}}[00:08:55.880] Dan McClellan: So he's producing a single text with one version of every—{{< /line >}}
+{{< line >}}[00:08:59.800] Dan McClellan: Of every passage in the New Testament.{{< /line >}}
+{{< line >}}[00:09:02.430] Dan Beecher: And all of these other translators are then taking his Textus Receptus text as sort of the definitive thing.{{< /line >}}
+{{< line >}}[00:09:11.150] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:09:11.550] Dan Beecher: And not bothering to then go back to the other manuscripts to verify if they agree with the—{{< /line >}}
+{{< line >}}[00:09:17.230] Dan Beecher: The calls that Erasmus had been making.{{< /line >}}
+{{< line >}}[00:09:19.790] Dan McClellan: So some of them are going to do that too, to the degree that they're able, but they don't have great access to all these manuscripts.{{< /line >}}
+{{< line >}}[00:09:28.350] Dan McClellan: And—{{< /line >}}
+{{< line >}}[00:09:29.380] Dan McClellan: And we had not discovered the overwhelming majority of the manuscripts that we have now.{{< /line >}}
+{{< line >}}[00:09:33.420] Dan McClellan: So, yes, for the most part, translators are trusting that whatever edition of the Textus Receptus is most recent is based on the best scholarship comparing these manuscripts.{{< /line >}}
+{{< line >}}[00:09:44.500] Dan McClellan: And so Tyndale does his New Testament and does a couple editions of that, and he gets—{{< /line >}}
+{{< line >}}[00:09:50.260] Dan McClellan: He starts translating the Hebrew Bible as well.{{< /line >}}
+{{< line >}}[00:09:52.460] Dan McClellan: And he gets through all the way up through, I think, Kings, and then does, like, Jonah, and those are published.{{< /line >}}
+{{< line >}}[00:09:59.650] Dan McClellan: And then he is executed and famously says, O Lord, open the King of England's eyes.{{< /line >}}
+{{< line >}}[00:10:06.610] Dan McClellan: Because it was still illegal to produce English translations or any vernacular translation.{{< /line >}}
+{{< line >}}[00:10:12.370] Dan McClellan: And then we have a guy named Miles Coverdale who comes in and he wants to produce his own edition of the full Bible.{{< /line >}}
+{{< line >}}[00:10:20.810] Dan McClellan: So he takes Tyndale's New Testament and what he translated of the Hebrew Bible, and—{{< /line >}}
+{{< line >}}[00:10:25.270] Dan McClellan: And then he fills it in.{{< /line >}}
+{{< line >}}[00:10:26.470] Dan McClellan: Only Coverdale does not know Hebrew.{{< /line >}}
+{{< line >}}[00:10:29.030] Dan McClellan: So Coverdale takes the German translations that are available, the Latin translations that are available, and he compares those and then produces an English translation of those to fill in the gaps left by Tyndale.{{< /line >}}
+{{< line >}}[00:10:43.910] Dan McClellan: And then we have a handful of others who are going through and revising the editions that came before.{{< /line >}}
+{{< line >}}[00:10:51.510] Dan McClellan: So we've got Matthew's Bible, we've got Whitchurch's Bible, we've got the Geneva Bible, we've got the Great Bible, we've got the Bishops' Bible.{{< /line >}}
+{{< line >}}[00:10:59.390] Dan McClellan: These are all taking all the translations that had come before, making little tweaks here and there, and then releasing an edition of the Bible in English.{{< /line >}}
+{{< line >}}[00:11:07.990] Dan McClellan: And you can actually go find PDFs of all of these online fairly easily.{{< /line >}}
+{{< line >}}[00:11:12.829] Dan McClellan: And it is absolutely fascinating to chart the trajectory of renderings of certain passages.{{< /line >}}
+{{< line >}}[00:11:20.590] Dan McClellan: It's fascinating stuff.{{< /line >}}
+{{< line >}}[00:11:21.790] Dan McClellan: If you're listening to the audio, this will be meaningless to you, but I have a page from—{{< /line >}}
+{{< line >}}[00:11:28.590] Dan McClellan: This was a gift I was given by my former colleagues working in scripture translation for the LDS Church, I have a manuscript page from a 1549 version of, I believe, the Tyndale-Matthew Bible.{{< /line >}}
+{{< line >}}[00:11:43.630] Dan McClellan: So I still have to get it framed.{{< /line >}}
+{{< line >}}[00:11:47.310] Dan McClellan: But in America, trying to frame A4 papers is such a huge headache.{{< /line >}}
+{{< line >}}[00:11:54.310] Dan McClellan: Just kidding.{{< /line >}}
+{{< line >}}[00:11:54.830] Dan McClellan: It's not on A4 paper.{{< /line >}}
+{{< line >}}[00:11:56.230] Dan McClellan: But one of the things that, that is interesting about these translations is they're starting to add notes to them.{{< /line >}}
+{{< line >}}[00:12:05.110] Dan McClellan: The Geneva Bible is called by some people the world's first study Bible because it has introductions to a lot of the books and it has a lot of explanatory notes in the margins.{{< /line >}}
+{{< line >}}[00:12:14.550] Dan McClellan: And this Geneva Bible becomes the most popular Bible translation around.20.800] Dan McClellan: This is what the Puritans took with them.{{< /line >}}
+{{< line >}}[00:12:24.320] Dan McClellan: This, and it supported kind of a Puritan take on Christianity.{{< /line >}}
+{{< line >}}[00:12:30.320] Dan Beecher: And this is an English translation, regardless of the fact that English was not presumably what was spoken in Geneva.{{< /line >}}
+{{< line >}}[00:12:39.760] Dan McClellan: Correct.{{< /line >}}
+{{< line >}}[00:12:40.880] Dan McClellan: This was published in 1560, the Geneva Bible.{{< /line >}}
+{{< line >}}[00:12:44.600] Dan McClellan: There were people who spoke English in 1560, but it wasn't like the national language.{{< /line >}}
+{{< line >}}[00:12:50.280] Dan McClellan: The Bishops' Bible was supposed to be for the church.{{< /line >}}
+{{< line >}}[00:12:54.360] Dan McClellan: And then in 1604, we have the Hampton Court Conference, which was supposed to be a "come to Jesus" moment between Anglicans and Puritans.{{< /line >}}
+{{< line >}}[00:13:07.960] Dan McClellan: And there was very little "coming to Jesus" on either side of the aisle.{{< /line >}}
+{{< line >}}[00:13:12.850] Dan McClellan: But one of the things that a man named Rainolds did was say, "Hey, we need a new translation of the Bible. We can all come together on that; that will help Christianity become more unified."{{< /line >}}
+{{< line >}}[00:13:19.810] Dan McClellan: And this was one of the things that King James was like, "I like the cut of his jib."{{< /line >}}
+{{< line >}}[00:13:26.610] Dan McClellan: And so he decided he was going to approve that request.{{< /line >}}
+{{< line >}}[00:13:32.850] Dan McClellan: And so he decided he was going to approve that request.{{< /line >}}
+{{< line >}}[00:13:37.010] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:13:37.400] Dan McClellan: And thus was born the initiative to create what would become the King James Version of the Bible.{{< /line >}}
+{{< line >}}[00:13:45.800] Dan Beecher: Now, King James, this is an express attempt to create a Bible that could be useful both for the Church of England and the Puritans, is that what that was?{{< /line >}}
+{{< line >}}[00:14:01.240] Dan McClellan: I think some people were hoping would happen.{{< /line >}}
+{{< line >}}[00:14:03.320] Dan McClellan: That was not King James's intentions.{{< /line >}}
+{{< line >}}[00:14:06.030] Dan Beecher: Oh, okay.{{< /line >}}
+{{< line >}}[00:14:07.230] Dan McClellan: King James just wanted to put on a show that he was willing to kind of come to the table, but had very little interest in acquiescing to Puritan needs.{{< /line >}}
+{{< line >}}[00:14:22.190] Dan McClellan: But what King James did see an opportunity for was replacing the Geneva Bible.{{< /line >}}
+{{< line >}}[00:14:27.470] Dan McClellan: Because one of the things the Geneva Bible was, was very anti-monarchic, was very critical of kingship and monarchies.{{< /line >}}
+{{< line >}}[00:14:36.980] Dan McClellan: And this is something you find in the Hebrew Bible: "We have no king but God."{{< /line >}}
+{{< line >}}[00:14:39.140] Dan McClellan: You actually see some kind of conflict in parts of the Hebrew Bible where people are saying that we shouldn't have a king, the Lord is our King, and other people saying the Lord needs to give us a king.{{< /line >}}
+{{< line >}}[00:14:41.540] Dan McClellan: You actually see some kind of conflict in parts of the Hebrew Bible where people are saying that we shouldn't have a king, the Lord is our King, and other people saying the Lord needs to give us a king.{{< /line >}}
+{{< line >}}[00:14:49.500] Dan McClellan: And so the Geneva Bible is on the "we have no king but the Lord" side of things.{{< /line >}}
+{{< line >}}[00:15:00.020] Dan McClellan: And their explanatory notes kind of supported that they were anti-monarchical.{{< /line >}}
+{{< line >}}[00:15:05.350] Dan McClellan: And so King James saw this as an opportunity to try to supplant that.{{< /line >}}
+{{< line >}}[00:15:09.470] Dan McClellan: And so there were a list of 15 rules drafted for the translation of the King James Version.{{< /line >}}
+{{< line >}}[00:15:16.270] Dan McClellan: To begin, it was not really a translation in its own right; it was a revision of a 1602 edition of the Bishops' Bible.{{< /line >}}
+{{< line >}}[00:15:24.190] Dan McClellan: We're basically taking this ecclesiastical text, the Bishops' Bible, and we're just going to do a light revision to it.{{< /line >}}
+{{< line >}}[00:15:30.590] Dan McClellan: And so the rule was, and I'll go ahead and read this as it was originally written: "The ordinary Bible read in church, commonly called the Bishops' Bible, to be followed, and as little altered as the truth of the original will permit."{{< /line >}}
+{{< line >}}[00:15:45.070] Dan McClellan: So, very conservative revision of this text.{{< /line >}}
+{{< line >}}[00:15:48.870] Dan McClellan: And there are some scholars who have compared the King James Version to the Tyndale New Testament, and it matches word for word about 84% of the time.{{< /line >}}
+{{< line >}}[00:15:59.190] Dan McClellan: And then for the Old Testament that was produced for Tyndale's Old Testament and then the Coverdale Bible, it matches about 75% of the time.{{< /line >}}
+{{< line >}}[00:16:08.630] Dan McClellan: So they're following very, very closely in the footsteps of the translations that have come before.{{< /line >}}
+{{< line >}}[00:16:15.270] Dan McClellan: But Tyndale did some stuff that King James didn't like.{{< /line >}}
+{{< line >}}[00:16:21.310] Dan McClellan: Tyndale—and actually, one of the reasons that Tyndale got killed was because he was trying to undercut a lot of the structuring of power in favor of the institution of the church.{{< /line >}}
+{{< line >}}[00:16:34.230] Dan McClellan: So Tyndale didn't like the word "church"; he translated "congregation." He didn't like the word "priests"; he translated "elders."{{< /line >}}
+{{< line >}}[00:16:41.750] Dan McClellan: In fact, he was.{{< /line >}}
+{{< line >}}[00:16:45.990] Dan McClellan: Much of the church's condemnation of him was revolving around, I think, five or six words that he picked for his translation that moved away from kind of this ecclesiastical institutional model and towards kind of a more individual congregational model.{{< /line >}}
+{{< line >}}[00:17:04.610] Dan McClellan: And so the third rule that King James laid down was the old ecclesiastical words to be kept, viz. the word church, not to be translated congregation, etc.{{< /line >}}
+{{< line >}}[00:17:17.330] Dan Beecher: Interesting, you know, people.{{< /line >}}
+{{< line >}}[00:17:19.330] Dan Beecher: For anyone who says it doesn't matter how you translate it, it's still the word of God.{{< /line >}}
+{{< line >}}[00:17:24.010] Dan Beecher: Tell that to a guy who's tied to a stake over five different words.{{< /line >}}
+{{< line >}}[00:17:27.759] Dan McClellan: Yeah, yeah, that's nuts.{{< /line >}}
+{{< line >}}[00:17:29.599] Dan McClellan: Yeah, it's incredibly significant.{{< /line >}}
+{{< line >}}[00:17:32.559] Dan McClellan: And then the number six rule, number six, I think, is one of the interesting ones.{{< /line >}}
+{{< line >}}[00:17:37.599] Dan McClellan: So I said the Geneva Bible has a lot of marginal notes and a lot of them are very anti-monarchical.{{< /line >}}
+{{< line >}}[00:17:43.039] Dan McClellan: Number six.{{< /line >}}
+{{< line >}}[00:17:43.839] Dan McClellan: No marginal notes at all to be affixed.{{< /line >}}
+{{< line >}}[00:17:47.519] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:17:48.159] Dan McClellan: But only for the explanation of the Hebrew or Greek words which cannot without some circumlocution so briefly and fitly be expressed in the text.{{< /line >}}
+{{< line >}}[00:17:56.980] Dan McClellan: So King James didn't want any of that anti-monarchical sentiment in the text.{{< /line >}}
+{{< line >}}[00:18:03.460] Dan McClellan: And to the degree that he had any say over the text itself, he seems to have had some influence on the removal of the word tyrant from a handful of passages.{{< /line >}}
+{{< line >}}[00:18:16.740] Dan McClellan: So the King James Version does not have these occurrences of the word tyrant because he didn't like that idea at least.{{< /line >}}
+{{< line >}}[00:18:22.890] Dan Beecher: Weird.{{< /line >}}
+{{< line >}}[00:18:23.250] Dan Beecher: Why wouldn't he like that?{{< /line >}}
+{{< line >}}[00:18:24.170] Dan Beecher: That seems like.{{< /line >}}
+{{< line >}}[00:18:25.690] Dan McClellan: So a lot of people have noted that King James seems to have had some gay lovers who had access to his quarters through secret passages and in some of the places that were built for him and things like that.{{< /line >}}
+{{< line >}}[00:18:40.450] Dan McClellan: And so there are a lot of.{{< /line >}}
+{{< line >}}[00:18:41.610] Dan McClellan: I've heard rumors that, oh, he did this or that to try to influence the text one way or another regarding homosexuality in the Bible.{{< /line >}}
+{{< line >}}[00:18:50.980] Dan McClellan: And we talked a bit about that in the episode we did a while ago.{{< /line >}}
+{{< line >}}[00:18:55.460] Dan McClellan: But I don't see any indication whatsoever that he had any influence at all on how the passages that are thought to be relevant to homosexuality in the Bible.{{< /line >}}
+{{< line >}}[00:19:06.980] Dan McClellan: I don't see any evidence that he influenced that at all.{{< /line >}}
+{{< line >}}[00:19:10.420] Dan McClellan: So if anybody is wondering what.{{< /line >}}
+{{< line >}}[00:19:11.860] Dan McClellan: Yeah, what about that?{{< /line >}}
+{{< line >}}[00:19:13.540] Dan McClellan: I don't think there's a case to make that he had any influence there.{{< /line >}}
+{{< line >}}[00:19:18.120] Dan McClellan: But the text is basically, there are companies that are put together.{{< /line >}}
+{{< line >}}[00:19:24.920] Dan McClellan: The number of people involved, we're not exactly sure, but somewhere around 48 or 50 scholars and they're put in companies and then they're assigned certain texts.{{< /line >}}
+{{< line >}}[00:19:36.680] Dan McClellan: You have like the New Testament, you have the prophets, you have the Apocrypha.{{< /line >}}
+{{< line >}}[00:19:42.320] Dan McClellan: You have a handful of different divisions of the text assigned to these groups.{{< /line >}}
+{{< line >}}[00:19:47.630] Dan McClellan: And they're sent physical copies of the 1602 edition of the Bishops' Bible.{{< /line >}}
+{{< line >}}[00:19:51.950] Dan McClellan: And then they are literally crossing stuff out and writing in the margins what should go here.{{< /line >}}
+{{< line >}}[00:19:59.230] Dan McClellan: So they weren't even going from scratch writing down the Bishops' Bible translation.{{< /line >}}
+{{< line >}}[00:20:04.830] Dan McClellan: They were actually writing their recommended changes into the margins of the Bishops' Bible and then they would be collected.{{< /line >}}
+{{< line >}}[00:20:13.490] Dan McClellan: And well, one of the first things they did before that was meet together to discuss, consult about how they were rendering things.{{< /line >}}
+{{< line >}}[00:20:22.130] Dan McClellan: And so you talk about a meeting in a big room where they're trying to figure out what to include.{{< /line >}}
+{{< line >}}[00:20:27.330] Dan McClellan: If they're talking about what books to include, that was never up for debate.{{< /line >}}
+{{< line >}}[00:20:31.530] Dan McClellan: That was never discussed.{{< /line >}}
+{{< line >}}[00:20:32.570] Dan McClellan: It was always going to be the books that were in the Bishops' Bible.{{< /line >}}
+{{< line >}}[00:20:36.170] Dan McClellan: But if this was a meeting where they're saying, I like this rendering better than this other one over here, or, no, you're an idiot, it should be this way over here, that most likely did happen.d happen.{{< /line >}}
+{{< line >}}[00:20:47.690] Dan McClellan: So I don't know the contents of that meeting in that play, but it could.{{< /line >}}
+{{< line >}}[00:20:52.570] Dan McClellan: It may or may not have been somewhat historical.{{< /line >}}
+{{< line >}}[00:20:55.930] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:20:57.370] Dan McClellan: And so after they deliberate, the editors take the text and they get this final version.{{< /line >}}
+{{< line >}}[00:21:03.130] Dan McClellan: Now, it didn't always work exactly how it was supposed to work.{{< /line >}}
+{{< line >}}[00:21:05.930] Dan McClellan: There is evidence that a lot of people didn't do their job.{{< /line >}}
+{{< line >}}[00:21:11.150] Dan McClellan: There were people who carried the whole team, so to speak, for a lot of these companies.{{< /line >}}
+{{< line >}}[00:21:15.470] Dan McClellan: And there were a lot of issues as this went on.{{< /line >}}
+{{< line >}}[00:21:18.110] Dan McClellan: And if you want a really great discussion of this, there's a book called God's Secretaries that is all about the translators of the King James Version of the Bible.{{< /line >}}
+{{< line >}}[00:21:28.270] Dan McClellan: Some of them we know more about than others.{{< /line >}}
+{{< line >}}[00:21:30.590] Dan McClellan: In fact, we have some.{{< /line >}}
+{{< line >}}[00:21:32.590] Dan McClellan: A collection of notes that were kept by one of the people involved in the translation, which is just invaluable to reconstructing this history.{{< /line >}}
+{{< line >}}[00:21:43.040] Dan McClellan: But there's not a ton that we can talk about, or at least that I can remember about the details of the translation until we come out the other end in 1611 with this publication of the King James Version, which was not obviously not called the King James Version at the time.{{< /line >}}
+{{< line >}}[00:21:57.560] Dan McClellan: But some of the formatting things I think are interesting.{{< /line >}}
+{{< line >}}[00:22:01.930] Dan McClellan: You have versification, which is something that started in 1551, but the versification is front and center in the King James Version.{{< /line >}}
+{{< line >}}[00:22:12.250] Dan Beecher: And by that you mean delineating out numbering each verse?{{< /line >}}
+{{< line >}}[00:22:17.690] Dan Beecher: Specifically, yeah.{{< /line >}}
+{{< line >}}[00:22:18.890] Dan Beecher: In fact, that before then, it wasn't.{{< /line >}}
+{{< line >}}[00:22:21.370] Dan Beecher: It was just normal paragraphs the way.{{< /line >}}
+{{< line >}}[00:22:25.330] Dan Beecher: The way we would normally see a book.{{< /line >}}
+{{< line >}}[00:22:27.800] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:22:28.080] Dan McClellan: And there was.{{< /line >}}
+{{< line >}}[00:22:29.000] Dan McClellan: There was one editor of an edition of the Textus Receptus.{{< /line >}}
+{{< line >}}[00:22:32.720] Dan McClellan: I'm pretty sure it's the 1551 edition.{{< /line >}}
+{{< line >}}[00:22:34.840] Dan McClellan: I think Stephanus was the editor.{{< /line >}}
+{{< line >}}[00:22:37.320] Dan McClellan: But that was the first New Testament to introduce versification.{{< /line >}}
+{{< line >}}[00:22:43.160] Dan McClellan: And so the versification is not even 500 years old in the New Testament.{{< /line >}}
+{{< line >}}[00:22:48.920] Dan Beecher: Wow.{{< /line >}}
+{{< line >}}[00:22:49.880] Dan McClellan: And so they also increased punctuation.{{< /line >}}
+{{< line >}}[00:22:55.930] Dan McClellan: And there was a reason for this.{{< /line >}}
+{{< line >}}[00:22:57.610] Dan McClellan: Almost every clause is set off by a comma or a semicolon or a colon or something like that.{{< /line >}}
+{{< line >}}[00:23:02.970] Dan McClellan: And the reason was this allowed the reader to speak in shorter fragments and pause because this was not a text intended to be read privately or quietly.{{< /line >}}
+{{< line >}}[00:23:16.290] Dan McClellan: This was intended to be read in churches, in public, in a group setting.{{< /line >}}
+{{< line >}}[00:23:21.210] Dan McClellan: In fact, on the frontispiece of the 1611 edition, it says, appointed to be read in churches.{{< /line >}}
+{{< line >}}[00:23:27.850] Dan McClellan: It was an enormous text.{{< /line >}}
+{{< line >}}[00:23:29.930] Dan McClellan: It was far too.{{< /line >}}
+{{< line >}}[00:23:31.370] Dan McClellan: It was a showpiece.{{< /line >}}
+{{< line >}}[00:23:32.570] Dan McClellan: It was too big for normal private use and was frequently chained to the pulpit.{{< /line >}}
+{{< line >}}[00:23:38.730] Dan McClellan: And so this was a text that was designed to be read out loud in a church.{{< /line >}}
+{{< line >}}[00:23:44.130] Dan McClellan: And the verses were intended to allow people listening, to be able to know where things were, to be able to look things up.{{< /line >}}
+{{< line >}}[00:23:51.530] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:23:51.860] Dan McClellan: And you put.{{< /line >}}
+{{< line >}}[00:23:52.500] Dan McClellan: You separated out each verse into its own paragraph so that you could scan the page and more quickly find the verse you were looking for.{{< /line >}}
+{{< line >}}[00:24:01.620] Dan McClellan: And so when we think about the way Bibles are formatted, these Bibles were not formatted for somebody to sit down in their living room and read by themselves.{{< /line >}}
+{{< line >}}[00:24:09.860] Dan McClellan: These were intended for public oral reading.{{< /line >}}
+{{< line >}}[00:24:14.580] Dan McClellan: And that may not sound like a huge deal, but this does influence how the texts are used and how people make meaning with the texts.{{< /line >}}
+{{< line >}}[00:24:25.550] Dan McClellan: I think this is a fascinating aspect of the history of the King James Version, but I imagine that most everybody listening is like, move on with it.{{< /line >}}
+{{< line >}}[00:24:34.190] Dan McClellan: So it gets published.{{< /line >}}
+{{< line >}}[00:24:36.190] Dan McClellan: And it's not incredibly popular at the start.{{< /line >}}
+{{< line >}}[00:24:40.270] Dan McClellan: We have reviews that say, man, it's okay.[00:24:44.270] Dan McClellan: It's outdated because it was such a conservative revision of such conservative revisions of such conservative revisions.{{< /line >}}
+{{< line >}}[00:24:52.770] Dan McClellan: It's basically using the same language that Tyndale was using almost a century before.{{< /line >}}
+{{< line >}}[00:24:58.210] Dan McClellan: So the day the King James Version hit the shelves in 1611, it was using language that people were used to hearing from their grandparents.{{< /line >}}
+{{< line >}}[00:25:06.770] Dan McClellan: So as outdated as we think of it today, it was outdated on the very first day it was released.{{< /line >}}
+{{< line >}}[00:25:14.520] Dan McClellan: And so, yeah, that's something you don't.{{< /line >}}
+{{< line >}}[00:25:16.520] Dan Beecher: Necessarily think about because, you know, it.{{< /line >}}
+{{< line >}}[00:25:19.160] Dan Beecher: At this point, it just.{{< /line >}}
+{{< line >}}[00:25:21.720] Dan Beecher: That kind of language, whether it be from this, you know, from the KJV or, you know, people associate it with Shakespearean language, because Shakespeare was about the same time.{{< /line >}}
+{{< line >}}[00:25:33.880] Dan Beecher: It just sounds fancy to our to.{{< /line >}}
+{{< line >}}[00:25:36.480] Dan Beecher: To a modern ear.{{< /line >}}
+{{< line >}}[00:25:37.600] Dan Beecher: But, yeah, it's.{{< /line >}}
+{{< line >}}[00:25:39.090] Dan Beecher: For it to have been, you know, almost 100 years old in.{{< /line >}}
+{{< line >}}[00:25:43.730] Dan Beecher: In its.{{< /line >}}
+{{< line >}}[00:25:44.290] Dan Beecher: In how it sounds.{{< /line >}}
+{{< line >}}[00:25:46.210] Dan Beecher: That's a very different sound.{{< /line >}}
+{{< line >}}[00:25:47.850] Dan Beecher: Like, yeah, language changes fast.{{< /line >}}
+{{< line >}}[00:25:50.530] Dan McClellan: Yeah, it changes very fast.{{< /line >}}
+{{< line >}}[00:25:52.410] Dan McClellan: And so it did not become popular right off the bat, even though the King, you know, was like, I want one in every household.{{< /line >}}
+{{< line >}}[00:26:00.530] Dan McClellan: Did not become the most popular translation until around 1660, when the Geneva Bible went out of print.{{< /line >}}
+{{< line >}}[00:26:08.620] Dan McClellan: And it was there to fill in that vacuum.{{< /line >}}
+{{< line >}}[00:26:13.260] Dan McClellan: But it went through new editions and new printings almost every year because there was a lot of money to be made, because this was the official Bible of the Church, and so only a few publishers had rights to publish it, and so they were raking in money.{{< /line >}}
+{{< line >}}[00:26:31.580] Dan McClellan: Now, most editions of the King James Version that people get today are actually not the 1611.{{< /line >}}
+{{< line >}}[00:26:38.280] Dan McClellan: They're the 1769.{{< /line >}}
+{{< line >}}[00:26:40.440] Dan McClellan: One of these editions that was made was made by a guy named Benjamin Blaney in Oxford in 1769, and that became colloquially referred to as the Authorized Version.{{< /line >}}
+{{< line >}}[00:26:53.560] Dan McClellan: And for whatever reason like it, the differences are not huge, but there are differences here and there between that edition and the 1611 edition.{{< /line >}}
+{{< line >}}[00:27:02.320] Dan McClellan: But that became the most popular edition, and that is what has been reproduced in most editions of the King James Version ever since.{{< /line >}}
+{{< line >}}[00:27:11.120] Dan Beecher: Was there something specific that prompted that revision?{{< /line >}}
+{{< line >}}[00:27:13.880] Dan Beecher: Why did that happen?{{< /line >}}
+{{< line >}}[00:27:15.040] Dan Beecher: Why was the original not good enough?{{< /line >}}
+{{< line >}}[00:27:17.680] Dan McClellan: There were always concerns with how perfect the new edition was regarding not.{{< /line >}}
+{{< line >}}[00:27:25.120] Dan McClellan: Not a ton having to do with new manuscripts that were being discovered.{{< /line >}}
+{{< line >}}[00:27:28.760] Dan McClellan: But people would identify certain typos, or people would say, you know, it's been translated this way for so long.{{< /line >}}
+{{< line >}}[00:27:35.960] Dan McClellan: This is garbage.{{< /line >}}
+{{< line >}}[00:27:36.680] Dan McClellan: We need to translate it another way.{{< /line >}}
+{{< line >}}[00:27:38.360] Dan McClellan: So the little tiny things would be changed, and, you know, there would be kind of a critical mass of concern, and people would be like, gosh darn it, we need a new edition of the Bible again.{{< /line >}}
+{{< line >}}[00:27:50.360] Dan McClellan: And so Blaney's was just the one that kind of became the most popular one.{{< /line >}}
+{{< line >}}[00:27:57.090] Dan Beecher: And so we still call that the King James Version.{{< /line >}}
+{{< line >}}[00:27:59.810] Dan McClellan: Still the King James Version?{{< /line >}}
+{{< line >}}[00:28:00.890] Dan McClellan: Yeah, it's a very, very tiny revision of the text.{{< /line >}}
+{{< line >}}[00:28:05.250] Dan McClellan: And talking about language again, when we get into the 1600s or the 1700s.{{< /line >}}
+{{< line >}}[00:28:10.410] Dan McClellan: Excuse me.{{< /line >}}
+{{< line >}}[00:28:11.170] Dan McClellan: A lot of the language of the King James Version has dropped out of favor, but we suddenly get this rush of antiquarian interest.{{< /line >}}
+{{< line >}}[00:28:20.370] Dan McClellan: We need to get back to the old ways.{{< /line >}}
+{{< line >}}[00:28:22.450] Dan McClellan: You know, things were so much better in the good old days.{{< /line >}}
+{{< line >}}[00:28:25.490] Dan McClellan: And so the language is brought back into vogue because the King James Version is there.{{< /line >}}
+{{< line >}}[00:28:33.130] Dan McClellan: And that happens again in the 1800s.{{< /line >}}
+{{< line >}}[00:28:36.370] Dan McClellan: The Second Great Awakening makes.{{< /line >}}
+{{< line >}}[00:28:39.450] Dan McClellan: There's a kind of a resurgence of antiquarian interest, and people go back to the King James Version as the standard, even though it never really was the standard.:50.130] Dan McClellan: And so a lot of people think of the King James Version as this pinnacle of English literature.{{< /line >}}
+{{< line >}}[00:28:54.850] Dan McClellan: The truth is, that is an accident of history.{{< /line >}}
+{{< line >}}[00:28:59.210] Dan McClellan: It was never the pinnacle of English literature until one of these attempts to go back to the way it was in the good old days.{{< /line >}}
+{{< line >}}[00:29:06.530] Dan McClellan: The Second Great Awakening resulted in the King James Version, because of the American Bible Society just flooding not only the American market, but American schoolhouses.{{< /line >}}
+{{< line >}}[00:29:18.730] Dan McClellan: It became the translation that was used to teach children English.{{< /line >}}
+{{< line >}}[00:29:23.880] Dan McClellan: And so that cemented it in the foundation of the United States of America.{{< /line >}}
+{{< line >}}[00:29:29.400] Dan McClellan: Another interesting thing to note, in the 1800s, the American Bible Society and the British and Foreign Bible Society up till the 1800s had been including the Apocrypha in every edition.{{< /line >}}
+{{< line >}}[00:29:40.520] Dan McClellan: The Apocrypha was a part of the Bible.{{< /line >}}
+{{< line >}}[00:29:43.560] Dan McClellan: Now, when Luther produced his edition, he didn't like the Apocrypha for one, and he didn't like a lot of books in the Bible.{{< /line >}}
+{{< line >}}[00:29:51.240] Dan McClellan: Hebrews, James, Revelation, a handful of others.{{< /line >}}
+{{< line >}}[00:29:54.190] Dan McClellan: He was like, "These are garbage. I'm putting them in the back."{{< /line >}}
+{{< line >}}[00:29:57.430] Dan McClellan: And in earlier editions, the Apocrypha was just scattered among the other texts of the Hebrew Bible.{{< /line >}}
+{{< line >}}[00:30:02.350] Dan McClellan: Luther says, "Nope, I'm putting them together. They're in one section. They're the Apocrypha."{{< /line >}}
+{{< line >}}[00:30:07.110] Dan McClellan: And so this—{{< /line >}}
+{{< line >}}[00:30:08.630] Dan McClellan: And, you know, his movement of all those other books to the back, James and Revelation, all those other things, that was kind of, after a few editions, he was like, "Okay, fine."{{< /line >}}
+{{< line >}}[00:30:17.190] Dan McClellan: And they went back to where they were, but the Apocrypha stayed a separate collection, which is one of the things that facilitated the American Bible Society and the British and Foreign Bible Society in the mid-1900s saying, "We could move a lot more Bibles if we just pulled this out," and it makes for a thinner Bible, easier to print, costs less money.{{< /line >}}
+{{< line >}}[00:30:41.280] Dan McClellan: And so they started taking the Apocrypha out and producing this Apocrypha-less, sans-Apocrypha Bible, which quickly became phenomenally popular.{{< /line >}}
+{{< line >}}[00:30:51.010] Dan McClellan: And the Apocrypha was never seen again among Protestants.{{< /line >}}
+{{< line >}}[00:30:55.090] Dan Beecher: And you said that was in the—{{< /line >}}
+{{< line >}}[00:30:56.290] Dan McClellan: 1900s? Mid-19th century.{{< /line >}}
+{{< line >}}[00:30:59.410] Dan McClellan: Okay, so the mid-1800s.{{< /line >}}
+{{< line >}}[00:31:01.330] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:31:01.650] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:31:02.010] Dan McClellan: And so this is around the time period that Protestants are getting annoyed with the Apocrypha.{{< /line >}}
+{{< line >}}[00:31:08.090] Dan McClellan: And it gets taken out and it does not return to Protestant editions of the Bible for the most part.{{< /line >}}
+{{< line >}}[00:31:14.650] Dan McClellan: You know, if you get an NRSV today, it's going to—{{< /line >}}
+{{< line >}}[00:31:17.500] Dan McClellan: Usually it's going to have the Apocrypha in it, but you can get editions that do not.{{< /line >}}
+{{< line >}}[00:31:21.260] Dan Beecher: So the King James, the original KJV, had these books in it.{{< /line >}}
+{{< line >}}[00:31:26.620] Dan McClellan: Yep.{{< /line >}}
+{{< line >}}[00:31:27.500] Dan Beecher: That—{{< /line >}}
+{{< line >}}[00:31:28.060] Dan Beecher: That is crazy to me because the way that you hear a lot of, you know, Bible creators online talking about versions and talking about the perfection of this, you know, the holy word of God, it's become a definite theme of our show.{{< /line >}}
+{{< line >}}[00:31:48.910] Dan Beecher: That this is not a book that is, you know, breathed by God word for word or whatever.{{< /line >}}
+{{< line >}}[00:31:57.430] Dan Beecher: But even the book that's in their hand, as they're doing it, has been edited and changed in, oh yeah, huge ways that they're just not acknowledging or they don't know.{{< /line >}}
+{{< line >}}[00:32:08.110] Dan McClellan: Yeah, a lot of people don't know this history.{{< /line >}}
+{{< line >}}[00:32:10.130] Dan McClellan: They don't know that the Apocrypha was a part of it.{{< /line >}}
+{{< line >}}[00:32:11.890] Dan McClellan: They don't know that the spelling of Jesus began with an I: Iesus.{{< /line >}}
+{{< line >}}[00:32:16.250] Dan McClellan: Sean Connery would be very disappointed in most Protestants today for not knowing that it begins with an I, but in the—{{< /line >}}
+{{< line >}}[00:32:24.770] Dan McClellan: In—{{< /line >}}
+{{< line >}}[00:32:25.049] Dan McClellan: If you go look at a 1611 King James Version, it's going to be Iesus for Jesus.s.{{< /line >}}
+{{< line >}}[00:32:32.010] Dan McClellan: There are a number of things that they, that they don't know about the history of the King James Version.{{< /line >}}
+{{< line >}}[00:32:38.260] Dan McClellan: Most people tend to think of the edition that they grew up with or the edition of their lifetime as somehow having just fallen out of the sky and without an enormous history behind it.{{< /line >}}
+{{< line >}}[00:32:52.740] Dan McClellan: There's the famous edition of the King James Version called the Adulterer's Bible.{{< /line >}}
+{{< line >}}[00:32:58.260] Dan McClellan: Do you recall this one?{{< /line >}}
+{{< line >}}[00:33:00.110] Dan Beecher: No.{{< /line >}}
+{{< line >}}[00:33:01.390] Dan McClellan: The.{{< /line >}}
+{{< line >}}[00:33:01.790] Dan McClellan: The Ten Commandments.{{< /line >}}
+{{< line >}}[00:33:02.830] Dan McClellan: There was a typo, and one of the commandments is, thou shalt commit adultery.{{< /line >}}
+{{< line >}}[00:33:08.750] Dan Beecher: Now I remember that.{{< /line >}}
+{{< line >}}[00:33:09.710] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:33:10.510] Dan Beecher: I need a copy of that one.{{< /line >}}
+{{< line >}}[00:33:12.110] Dan Beecher: I like that.{{< /line >}}
+{{< line >}}[00:33:12.750] Dan McClellan: They.{{< /line >}}
+{{< line >}}[00:33:13.150] Dan McClellan: They are not cheap, I'm sure, but yeah, there have been.{{< /line >}}
+{{< line >}}[00:33:17.990] Dan McClellan: There have been these typos and, and things like that throughout the history of.{{< /line >}}
+{{< line >}}[00:33:22.750] Dan McClellan: Of these different editions that have resulted in some humorous anecdotes that probably cost someone some jail time, if not their life.{{< /line >}}
+{{< line >}}[00:33:34.140] Dan McClellan: But, yeah, the.{{< /line >}}
+{{< line >}}[00:33:35.900] Dan McClellan: The King James Version that we, that we have today largely is the 1769 Blayney edition.{{< /line >}}
+{{< line >}}[00:33:42.620] Dan McClellan: There are a number of things about the King James Version that I think would.{{< /line >}}
+{{< line >}}[00:33:47.380] Dan McClellan: Would surprise an awful lot of people.{{< /line >}}
+{{< line >}}[00:33:49.380] Dan McClellan: But in terms of the motivations for its production, the.{{< /line >}}
+{{< line >}}[00:33:53.420] Dan McClellan: This is really King James trying to cement his legacy, trying to protect his power.{{< /line >}}
+{{< line >}}[00:33:58.940] Dan McClellan: He was motivated by a desire to put down kind of the Puritan factions that were challenging the legitimacy of his reign, the legitimacy of the monarchy.{{< /line >}}
+{{< line >}}[00:34:10.220] Dan McClellan: He was trying to protect this translation from giving power to those who challenged the institution.{{< /line >}}
+{{< line >}}[00:34:17.660] Dan McClellan: And there's not a ton more that King James was involved in.{{< /line >}}
+{{< line >}}[00:34:22.060] Dan McClellan: He did not translate it himself.{{< /line >}}
+{{< line >}}[00:34:23.960] Dan McClellan: He did not write the Bible.{{< /line >}}
+{{< line >}}[00:34:25.840] Dan McClellan: There are folks that think the thing changed wildly, that either new books were added in or old books were taken out or that people.{{< /line >}}
+{{< line >}}[00:34:35.520] Dan McClellan: I've heard theories that the idea that, you know, thou shalt not allow a witch to live, that passage that that was something introduced by King James because he was a notorious witch hunter.{{< /line >}}
+{{< line >}}[00:34:47.360] Dan McClellan: Totally false.{{< /line >}}
+{{< line >}}[00:34:49.120] Dan McClellan: Because we can look at the other editions, the Bishops' Bible, the Great Bible, the Geneva Bible, all the way back to Coverdale and Tyndale.{{< /line >}}
+{{< line >}}[00:34:57.359] Dan McClellan: And we can see most of these things are already in place.{{< /line >}}
+{{< line >}}[00:35:00.519] Dan McClellan: The King James Version is kind of a boring, very conservative, not incredibly up to date revision that really became the most influential Bible translation to exist because of historical accident more than anything else.{{< /line >}}
+{{< line >}}[00:35:19.280] Dan Beecher: Interesting.{{< /line >}}
+{{< line >}}[00:35:21.040] Dan Beecher: Well, you know, one of the things that we are, that we're going to talk about coming up is some ways that King James, well, the guys who did the King James Bible, some ways that they might have gotten it wrong.{{< /line >}}
+{{< line >}}[00:35:38.400] Dan Beecher: So should we just move on to that?{{< /line >}}
+{{< line >}}[00:35:41.040] Dan McClellan: Let's do it.{{< /line >}}
+{{< line >}}[00:35:44.640] Dan Beecher: So on this edition of Know Your Bible, we're going to jump off of the KJV train in an interesting way, which is that there are, there's a bunch of verses in that if you're looking in your KJV, you're going to find them.{{< /line >}}
+{{< line >}}[00:36:06.910] Dan Beecher: And if you're looking in a whole bunch of other versions, they're just going to be missing.{{< /line >}}
+{{< line >}}[00:36:13.810] Dan McClellan: Yeah, this, this is something I, I see videos on this a lot and it's always the same verse.{{< /line >}}
+{{< line >}}[00:36:18.450] Dan McClellan: And the reason it's the same verse is because this is the first verse where this happens in the canonical New Testament.{{< /line >}}
+{{< line >}}[00:36:25.330] Dan McClellan: And for some reason people never seem to read past that.{{< /line >}}
+{{< line >}}[00:36:29.170] Dan McClellan: But you'll see, you'll see a lot of things on social media where somebody's like, I was just reading and I never noticed this before, but if you look in Matthew 17, go look for verse 21 and they'll show in there.{{< /line >}}
+{{< line >}}[00:36:45.420] Dan McClellan: They'll be like, I brought out all my different translations of the Bible and it goes from verse 20 straight to verse 22 and it skips over verse 21 and it blows many people's minds.le's minds.{{< /line >}}
+{{< line >}}[00:36:59.540] Dan Beecher: That's Satan's work right there.{{< /line >}}
+{{< line >}}[00:37:02.260] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:37:02.660] Dan McClellan: And they...{{< /line >}}
+{{< line >}}[00:37:03.300] Dan McClellan: And obviously they're immediately going to Revelation.{{< /line >}}
+{{< line >}}[00:37:06.140] Dan McClellan: Someone has taken from this book, taken something out of the book.{{< /line >}}
+{{< line >}}[00:37:12.250] Dan McClellan: And the reality is that most translations of the New Testament today are based on better manuscripts.{{< /line >}}
+{{< line >}}[00:37:19.410] Dan McClellan: And we'll talk a little bit more about that.{{< /line >}}
+{{< line >}}[00:37:21.010] Dan McClellan: But that verse was not part of the original New Testament.{{< /line >}}
+{{< line >}}[00:37:25.290] Dan McClellan: That verse was something that someone later down the road added in.{{< /line >}}
+{{< line >}}[00:37:29.290] Dan McClellan: And so if your translation is missing Matthew 17:21, you have a better translation.{{< /line >}}
+{{< line >}}[00:37:35.430] Dan McClellan: You have a version of the New Testament that is closer to the original.{{< /line >}}
+{{< line >}}[00:37:39.750] Dan McClellan: Unfortunately, it is very difficult to convince an awful lot of folks of that with data because they are too mired in dogma.{{< /line >}}
+{{< line >}}[00:37:50.310] Dan McClellan: But let's go back to the King James Version for a minute.{{< /line >}}
+{{< line >}}[00:37:53.030] Dan McClellan: We talked about the Textus Receptus being the authoritative source text for translations of the Bible.{{< /line >}}
+{{< line >}}[00:38:02.190] Dan McClellan: And this had been cobbled together from what started out as just a handful of manuscripts that Erasmus had available to him in his library in Switzerland in the early 1500s.{{< /line >}}
+{{< line >}}[00:38:15.309] Dan McClellan: And now we've discovered literally thousands of manuscripts of the New Testament.{{< /line >}}
+{{< line >}}[00:38:20.950] Dan McClellan: And we have found some early manuscripts that people knew about in the days of Erasmus.{{< /line >}}
+{{< line >}}[00:38:28.110] Dan McClellan: Like Vaticanus, for instance, was a text that people knew about, but was under lock and key in the Vatican.{{< /line >}}
+{{< line >}}[00:38:36.070] Dan McClellan: And Erasmus knew somebody who had access to it.{{< /line >}}
+{{< line >}}[00:38:39.830] Dan McClellan: And so there are a few instances where he said, hey, go look up this verse for me.{{< /line >}}
+{{< line >}}[00:38:45.110] Dan McClellan: Tell me what's going on here.{{< /line >}}
+{{< line >}}[00:38:47.030] Dan McClellan: And he would get answers about that.{{< /line >}}
+{{< line >}}[00:38:49.110] Dan McClellan: But he never had access, full access to the full manuscript of Vaticanus, which is a fourth, maybe fifth century manuscript of the full Bible.{{< /line >}}
+{{< line >}}[00:38:58.210] Dan McClellan: And, you know, that's 800 years earlier than the manuscripts Erasmus was working with.{{< /line >}}
+{{< line >}}[00:39:04.210] Dan McClellan: But since then, that's...{{< /line >}}
+{{< line >}}[00:39:05.570] Dan Beecher: That is a significant number of years.{{< /line >}}
+{{< line >}}[00:39:07.650] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:39:08.290] Dan McClellan: And as the, as the science slash{{< /line >}}
+{{< line >}}[00:39:11.890] Dan McClellan: art of biblical archaeology was developing, particularly in the 1800s, we started to discover a lot more manuscripts of the Bible.{{< /line >}}
+{{< line >}}[00:39:20.450] Dan McClellan: There's the famous discovery of Sinaiticus, which is our earliest manuscript of the full Bible that we know of.{{< /line >}}
+{{< line >}}[00:39:27.020] Dan McClellan: That's probably mid to late 4th century CE.{{< /line >}}
+{{< line >}}[00:39:30.740] Dan McClellan: In fact, there are some people who think that this may have been one of the copies of the Bible that Constantine commissioned Eusebius to produce following the Council of Nicaea.{{< /line >}}
+{{< line >}}[00:39:44.020] Dan McClellan: And this was discovered by somebody who was in St. Catherine's Monastery at the top of the traditional location of Mount Sinai, who was looking at some papers that were in a bin that was intended to be used for kindling and said, "What the what?"{{< /line >}}
+{{< line >}}[00:40:03.020] Dan Beecher: And maybe don't burn this bit.{{< /line >}}
+{{< line >}}[00:40:06.540] Dan McClellan: This bit might be important, but found Sinaiticus, which has become one of the most important manuscripts of the New Testament.{{< /line >}}
+{{< line >}}[00:40:15.060] Dan McClellan: But we, we found Codex Ephraemi Rescriptus.{{< /line >}}
+{{< line >}}[00:40:21.290] Dan McClellan: I'm probably screwing up the Latin there, but this was a palimpsest.{{< /line >}}
+{{< line >}}[00:40:26.170] Dan McClellan: And for those of you who don't know what a palimpsest is, that is when someone needs paper to write on or vellum or some kind of manuscript paper.{{< /line >}}
+{{< line >}}[00:40:34.730] Dan McClellan: And so they take an existing text and they scrape the ink off or wipe it off or something like that, and then they usually will turn it 90 degrees or something like that and then write their own text.{{< /line >}}
+{{< line >}}[00:40:47.610] Dan McClellan: And somebody found a text and was like, "There's something under here," and found a manuscript of the Bible that was probably 5th century.{{< /line >}}
+{{< line >}}[00:40:55.610] Dan McClellan: And then we find papyri that go all the way back to maybe even as early as around 125 CE.{{< /line >}}
+{{< line >}}[00:41:02.410] Dan McClellan: So we've discovered a ton of things.{{< /line >}}
+{{< line >}}[00:41:04.250] Dan McClellan: And as scholars have looked at these texts and the science slash art of textual criticism has developed, we've got a much better idea of what the New Testament probably said.00:41:15.890] Dan McClellan: So in 1881, there was a new edition of the King James Version published called the Revised Version.{{< /line >}}
+{{< line >}}[00:41:21.650] Dan McClellan: But one of the things that this version did was make use of a lot of these new editions of the Greek New Testament that were incorporating the readings from a lot of the newly discovered manuscripts, which meant there were a number of changes to the text, including an omission here or there.{{< /line >}}
+{{< line >}}[00:41:43.040] Dan McClellan: And since 1881, we've had the Revised Standard Version, the New Revised Standard Version, and a number of other translations that have settled on about 16 verses from the New Testament where scholars are pretty sure that those verses did not exist at all in the earliest New Testament.{{< /line >}}
+{{< line >}}[00:42:04.360] Dan McClellan: And Matthew 17:21 is an interesting one because this is one where our earliest manuscripts don't have it at all.{{< /line >}}
+{{< line >}}[00:42:11.020] Dan McClellan: And Sinaiticus is interesting because you can look at the page in Sinaiticus, and the verse is written at the top of the page with a little symbol next to it.{{< /line >}}
+{{< line >}}[00:42:21.940] Dan McClellan: And then that symbol is written right in the middle of one of the columns, basically saying, "put this here."{{< /line >}}
+{{< line >}}[00:42:28.860] Dan McClellan: And then later manuscripts have that little scribbled passage in the text, and that little scribbled passage is borrowed from Mark because it's telling the same story.{{< /line >}}
+{{< line >}}[00:42:43.110] Dan McClellan: And what's missing is this statement that Jesus—this is the disciples—they say, "We were not able to cast out this demon."{{< /line >}}
+{{< line >}}[00:42:49.270] Dan McClellan: And Jesus says, "This kind cometh not out except by prayer and fasting."{{< /line >}}
+{{< line >}}[00:42:55.270] Dan McClellan: And so someone has taken that statement from Mark and written it in the margins of the manuscript that has that story in Matthew.{{< /line >}}
+{{< line >}}[00:43:05.810] Dan McClellan: And later down the road, it just got incorporated right into Matthew.{{< /line >}}
+{{< line >}}[00:43:09.210] Dan McClellan: And so we know that that is not an original part of Matthew.{{< /line >}}
+{{< line >}}[00:43:12.370] Dan McClellan: And so these days it gets plucked out.{{< /line >}}
+{{< line >}}[00:43:15.050] Dan McClellan: And there are about 15 other passages{{< /line >}}
+{{< line >}}[00:43:20.690] Dan McClellan: where these verses are commonly missing.{{< /line >}}
+{{< line >}}[00:43:22.930] Dan McClellan: And most of them are because it appears somebody tried to copy something from another gospel in order to align the text of the Gospels.{{< /line >}}
+{{< line >}}[00:43:32.030] Dan McClellan: Or there's been some kind of expansion where someone has added a doxology or something like that.{{< /line >}}
+{{< line >}}[00:43:38.590] Dan Beecher: Talk about a doxology, I don't know.{{< /line >}}
+{{< line >}}[00:43:40.230] Dan McClellan: That's a glorification.{{< /line >}}
+{{< line >}}[00:43:41.950] Dan McClellan: It's basically saying, "praise God for this, that and the other," or "God is this, that and the other."{{< /line >}}
+{{< line >}}[00:43:46.749] Dan McClellan: It's.{{< /line >}}
+{{< line >}}[00:43:47.150] Dan McClellan: It's a little bit of praise that is added in, but a lot of them are{{< /line >}}
+{{< line >}}[00:43:51.030] Dan McClellan: harmonizations with other texts.{{< /line >}}
+{{< line >}}[00:43:54.350] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:43:54.750] Dan Beecher: Because it's so funny to me that people want to hold on to these, you know, want to make this a conspiracy theory so, so badly.{{< /line >}}
+{{< line >}}[00:44:02.110] Dan Beecher: Because it's not like removing these verses removes them from the book they're in.{{< /line >}}
+{{< line >}}[00:44:11.670] Dan Beecher: You know, as you say, this thing in Matthew is also in Mark.{{< /line >}}
+{{< line >}}[00:44:16.550] Dan Beecher: It exists in the book.{{< /line >}}
+{{< line >}}[00:44:18.310] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:44:18.710] Dan Beecher: And that's the case.{{< /line >}}
+{{< line >}}[00:44:19.670] Dan Beecher: You know, as I was going through these, that's the case with most of them.{{< /line >}}
+{{< line >}}[00:44:23.190] Dan Beecher: It's either in another book in the same part of the story, or it's even in—there's the case of{{< /line >}}
+{{< line >}}[00:44:32.100] Dan Beecher: there's the case of{{< /line >}}
+{{< line >}}[00:44:32.980] Dan Beecher: Mark 9, where they take out verse 44 and verse 46, because it's repeated.{{< /line >}}
+{{< line >}}[00:44:44.100] Dan Beecher: If you leave them in, it's repeated three times.{{< /line >}}
+{{< line >}}[00:44:46.220] Dan Beecher: It's also the same as verse 48.{{< /line >}}
+{{< line >}}[00:44:48.580] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:44:49.020] Dan Beecher: And, you know, that makes for an interesting sort of poetic moment{{< /line >}}
+{{< line >}}[00:44:53.140] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:44:53.380] Dan Beecher: where it's almost a call and response moment where they keep putting in this thing over and over again, but by removing it, you're not changing the meaning of anything.{{< /line >}}
+{{< line >}}[00:45:04.180] Dan Beecher: You're not changing...{{< /line >}}
+{{< line >}}[00:45:05.140] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:45:05.700] Dan McClellan: And then the Mark one is interesting because that's the statement that's borrowed from Isaiah 66 that we talked about in our episode on the development of the concept of hell.f hell.{{< /line >}}
+{{< line >}}[00:45:13.460] Dan McClellan: That's a quotation from the Hebrew Bible where their worm dieth not.{{< /line >}}
+{{< line >}}[00:45:17.460] Dan McClellan: And the fire is not{{< /line >}}
+{{< line >}}[00:45:18.830] Dan McClellan: quenched.{{< /line >}}
+{{< line >}}[00:45:19.430] Dan McClellan: And so where that's just.{{< /line >}}
+{{< line >}}[00:45:21.230] Dan McClellan: They're repeating something three times and they add that to the last iteration.{{< /line >}}
+{{< line >}}[00:45:25.630] Dan McClellan: Now they're like, no, we want to say that every time.{{< /line >}}
+{{< line >}}[00:45:28.430] Dan McClellan: So it's say something where their worm dieth not.{{< /line >}}
+{{< line >}}[00:45:31.670] Dan McClellan: Say something else where the worm dieth not.{{< /line >}}
+{{< line >}}[00:45:33.430] Dan McClellan: And so it's.{{< /line >}}
+{{< line >}}[00:45:34.589] Dan McClellan: Yeah, it's.{{< /line >}}
+{{< line >}}[00:45:35.150] Dan McClellan: It's poetic, it's repetitive, but it wasn't there to begin with.{{< /line >}}
+{{< line >}}[00:45:40.190] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:45:41.070] Dan Beecher: And so it does no harm to remove it.{{< /line >}}
+{{< line >}}[00:45:43.150] Dan McClellan: Yeah, there's an interesting one.{{< /line >}}
+{{< line >}}[00:45:45.190] Dan McClellan: John, chapter five.{{< /line >}}
+{{< line >}}[00:45:46.310] Dan McClellan: We have this story.{{< /line >}}
+{{< line >}}[00:45:49.540] Dan McClellan: I think we're at the pool of.{{< /line >}}
+{{< line >}}[00:45:51.700] Dan McClellan: It's Bethesda, isn't it?{{< /line >}}
+{{< line >}}[00:45:53.140] Dan McClellan: Pretty sure it's Bethesda, where there's the paralyzed man who can't get down into the water, and the water's supposed to heal him.{{< /line >}}
+{{< line >}}[00:46:04.100] Dan McClellan: And there's a thing where it says an angel came down a certain season into the pool and troubled the water and whoever{{< /line >}}
+{{< line >}}[00:46:10.340] Dan McClellan: the first person to get into the water after that was healed.{{< /line >}}
+{{< line >}}[00:46:13.790] Dan McClellan: And this is a weird kind of mythology that's, that's in the story there.{{< /line >}}
+{{< line >}}[00:46:20.990] Dan McClellan: But that is not in the earliest manuscripts.{{< /line >}}
+{{< line >}}[00:46:23.710] Dan McClellan: That is something that was added in later.{{< /line >}}
+{{< line >}}[00:46:25.510] Dan McClellan: And, and that's an instance where it seems somebody wanted an explanation.{{< /line >}}
+{{< line >}}[00:46:31.070] Dan McClellan: Why do they think this water is going to heal them again?{{< /line >}}
+{{< line >}}[00:46:33.470] Dan McClellan: And somebody was like, there was an angel that would come down and wiggle his finger in the water, and then you knew you had to jump in.{{< /line >}}
+{{< line >}}[00:46:40.510] Dan McClellan: And so that is something that was, that was added in later.{{< /line >}}
+{{< line >}}[00:46:44.310] Dan McClellan: So some of this is theological change.{{< /line >}}
+{{< line >}}[00:46:46.590] Dan McClellan: Some of it is intentional change.{{< /line >}}
+{{< line >}}[00:46:48.750] Dan McClellan: A lot of it is just kind of harmonization and wanting things to sound a little better.{{< /line >}}
+{{< line >}}[00:46:55.470] Dan McClellan: But there are a couple of big ones.{{< /line >}}
+{{< line >}}[00:46:57.030] Dan McClellan: You mentioned Mark 9.{{< /line >}}
+{{< line >}}[00:46:58.510] Dan McClellan: Another big one is Mark 16, the end of the Gospel of Mark, where we have the empty tomb and the story has the disciples running in fear.{{< /line >}}
+{{< line >}}[00:47:14.480] Dan McClellan: And then we have Jesus visiting them.{{< /line >}}
+{{< line >}}[00:47:16.600] Dan McClellan: And we have this post-resurrection ministry going on for a few passages or a few verses till we get to the end of Mark 16.{{< /line >}}
+{{< line >}}[00:47:24.160] Dan McClellan: That ending is not in our earliest manuscripts.{{< /line >}}
+{{< line >}}[00:47:26.960] Dan McClellan: We have this much, much shorter ending that kind of abruptly ties off the story right after the disciples run.{{< /line >}}
+{{< line >}}[00:47:35.450] Dan McClellan: And even that ending may have been added later on.{{< /line >}}
+{{< line >}}[00:47:40.330] Dan McClellan: And so many contemporary translations will have either a footnote or they'll put brackets around the last dozen or so verses of the Gospel of Mark, saying, hey man, this isn't in some of our earliest witnesses.{{< /line >}}
+{{< line >}}[00:47:55.930] Dan McClellan: And some scholars think that this ended very abruptly with the Greek particle gar, which generally means for or something like that.{{< /line >}}
+{{< line >}}[00:48:04.850] Dan McClellan: But it can be at the end of a sentence.{{< /line >}}
+{{< line >}}[00:48:07.730] Dan McClellan: But it is a little awkward to end a sentence that way.{{< /line >}}
+{{< line >}}[00:48:11.370] Dan McClellan: Very awkward to end a whole book that way.{{< /line >}}
+{{< line >}}[00:48:14.490] Dan McClellan: But there are some scholars that argue this was intentionally an abrupt ending to kind of inject the audience with this sense of urgency and of anxiety.{{< /line >}}
+{{< line >}}[00:48:27.050] Dan McClellan: The tomb is empty.{{< /line >}}
+{{< line >}}[00:48:29.920] Dan McClellan: And then, you know, scene.{{< /line >}}
+{{< line >}}[00:48:31.760] Dan McClellan: And so.{{< /line >}}
+{{< line >}}[00:48:33.040] Dan McClellan: And there's a theory that Mark was written to be performed, that it was intended as a play.{{< /line >}}
+{{< line >}}[00:48:41.520] Dan Beecher: Oh, that's interesting.{{< /line >}}
+{{< line >}}[00:48:42.680] Dan Beecher: I've never heard that.{{< /line >}}
+{{< line >}}[00:48:43.560] Dan Beecher: That's fascinating.{{< /line >}}
+{{< line >}}[00:48:44.480] Dan McClellan: Yeah, yeah, there's a lot of scholarship on that.{{< /line >}}
+{{< line >}}[00:48:47.240] Dan McClellan: I think it's a fascinating discussion as well.{{< /line >}}
+{{< line >}}[00:48:50.800] Dan McClellan: And I think one of the stories that is not in our earliest manuscripts and then begins to show up in the manuscripts, but not where we know it today, is the story of the woman taken in adultery.woman taken in adultery.{{< /line >}}
+{{< line >}}[00:49:06.710] Dan McClellan: So this is at the very end of, of John 7, and mostly in John 8.{{< /line >}}
+{{< line >}}[00:49:11.990] Dan McClellan: But in some manuscripts, we find this in Luke.{{< /line >}}
+{{< line >}}[00:49:15.590] Dan McClellan: In other manuscripts, it's in other places in John, and in our earliest manuscripts, it's not there at all.{{< /line >}}
+{{< line >}}[00:49:21.430] Dan McClellan: And scholars are in pretty widespread agreement that this is a.{{< /line >}}
+{{< line >}}[00:49:26.750] Dan McClellan: A later addition to the text.{{< /line >}}
+{{< line >}}[00:49:29.390] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:49:30.190] Dan McClellan: But this is such a famous story, and it's so central to a lot of people's understanding of the Gospel and the life of Jesus that there are an awful lot of people who still want to make the argument that it is historical and that it is something that the author of the Gospel of John told, and then it just got separated and then was brought back into the fold a little later on.{{< /line >}}
+{{< line >}}[00:49:53.690] Dan McClellan: But many contemporary translations of the New Testament will put that story in brackets and include a footnote saying, hey, man, this is not in our earliest witnesses.{{< /line >}}
+{{< line >}}[00:50:06.330] Dan McClellan: Just, you know, heads up.{{< /line >}}
+{{< line >}}[00:50:08.490] Dan Beecher: So this is the story where Jesus says, let he who is without sin cast the first stone.{{< /line >}}
+{{< line >}}[00:50:14.730] Dan Beecher: Am I on the right story here?{{< /line >}}
+{{< line >}}[00:50:16.050] Dan McClellan: You are on the right story.{{< /line >}}
+{{< line >}}[00:50:17.690] Dan McClellan: He's walking around in the temple.{{< /line >}}
+{{< line >}}[00:50:19.730] Dan McClellan: They bring him the woman, say she was caught in the act of adultery, in the very act.{{< /line >}}
+{{< line >}}[00:50:24.710] Dan McClellan: And they say, Moses said that she should be stoned.{{< /line >}}
+{{< line >}}[00:50:27.910] Dan McClellan: What say you?{{< /line >}}
+{{< line >}}[00:50:28.630] Dan McClellan: And he bends down and he writes in the sand.{{< /line >}}
+{{< line >}}[00:50:31.590] Dan McClellan: And then he stands up and says that he was without sin, cast the first stone.{{< /line >}}
+{{< line >}}[00:50:35.710] Dan McClellan: And then they.{{< /line >}}
+{{< line >}}[00:50:36.550] Dan McClellan: And then they.{{< /line >}}
+{{< line >}}[00:50:37.230] Dan McClellan: They depart from the young.{{< /line >}}
+{{< line >}}[00:50:39.150] Dan McClellan: It's either from the youngest to the oldest or the oldest to the youngest.{{< /line >}}
+{{< line >}}[00:50:41.790] Dan McClellan: I don't remember which.{{< /line >}}
+{{< line >}}[00:50:42.790] Dan McClellan: But then when they're all gone, she.{{< /line >}}
+{{< line >}}[00:50:45.270] Dan McClellan: He says, where are your accusers?{{< /line >}}
+{{< line >}}[00:50:47.350] Dan McClellan: And she says, there's no one left.{{< /line >}}
+{{< line >}}[00:50:49.460] Dan McClellan: And he says, go and sin no more.{{< /line >}}
+{{< line >}}[00:50:52.100] Dan Beecher: That's one of the best stories in the book.{{< /line >}}
+{{< line >}}[00:50:53.980] Dan Beecher: You're telling me that that's not real?{{< /line >}}
+{{< line >}}[00:50:55.620] Dan Beecher: Oh, man, that's.{{< /line >}}
+{{< line >}}[00:50:58.660] Dan Beecher: That stays in my version.{{< /line >}}
+{{< line >}}[00:50:59.940] Dan McClellan: Well, that's one of the reasons that so many people make such an impassioned case for.{{< /line >}}
+{{< line >}}[00:51:04.180] Dan McClellan: For treating this historically.{{< /line >}}
+{{< line >}}[00:51:05.660] Dan McClellan: They can't imagine a Jesus who does not say that he was without sin, cast the first stone.{{< /line >}}
+{{< line >}}[00:51:10.420] Dan McClellan: Even as they go casting stones.{{< /line >}}
+{{< line >}}[00:51:14.280] Dan McClellan: Oh, and the.{{< /line >}}
+{{< line >}}[00:51:15.000] Dan McClellan: And the whole drawing in the sand thing, people are like, oh, he was writing down the names of everybody, and he was writing down their sins and.{{< /line >}}
+{{< line >}}[00:51:23.560] Dan Beecher: Getting their addresses right.{{< /line >}}
+{{< line >}}[00:51:26.120] Dan Beecher: What's your Social Security number?{{< /line >}}
+{{< line >}}[00:51:27.800] Dan Beecher: I'm writing that down.{{< /line >}}
+{{< line >}}[00:51:28.920] Dan McClellan: He was doxing her accusers in the sand.{{< /line >}}
+{{< line >}}[00:51:33.080] Dan McClellan: And the reality is probably much more mundane, and that is that this has resonances with the Sotah, the ritual from Numbers 5, where if a man suspects a woman of adultery, he takes her to the temple.{{< /line >}}
+{{< line >}}[00:51:49.650] Dan McClellan: And then the priest writes down a curse on a piece of paper, scrapes the ink off into some water, and then takes some sand, some dirt from the temple floor, chucks it in the water, and she's got to drink this concoction.{{< /line >}}
+{{< line >}}[00:52:03.730] Dan McClellan: And then if she is guilty, her, her genitals are distended and deformed and her belly swells and most likely she dies.{{< /line >}}
+{{< line >}}[00:52:14.230] Dan McClellan: But the idea is she is stricken with infertility and if she is innocent, then she becomes more fertile and she will conceive.{{< /line >}}
+{{< line >}}[00:52:23.190] Dan McClellan: And we've, we've talked indirectly about this a number of times in the past, but there we have a lot of elements of this going on in this story.{{< /line >}}
+{{< line >}}[00:52:34.500] Dan McClellan: Woman taken in adultery brought to Jesus at the temple.{{< /line >}}
+{{< line >}}[00:52:38.260] Dan McClellan: And he writes in the dirt of the temple floor.{{< /line >}}
+{{< line >}}[00:52:42.580] Dan McClellan: And in a sense he's asserting authority to judge the woman, saying, just like the, you know, the curse that she drinks is going to determine whether she's guilty or innocent, Jesus scribbling in the dirt on the floor, stands up and, and says, you know, nor do I condemn you is a way of saying, this is my purview..{{< /line >}}
+{{< line >}}[00:53:08.670] Dan McClellan: I have authority over questions of guilt and innocence when it comes to adultery.{{< /line >}}
+{{< line >}}[00:53:14.030] Dan McClellan: So, I mean, I think that's probably what's going on.{{< /line >}}
+{{< line >}}[00:53:16.270] Dan Beecher: He made the potion of the sotah and then he said, all of you have to drink it.{{< /line >}}
+{{< line >}}[00:53:21.630] Dan McClellan: He turned around and went pocket sand and then made his escape.{{< /line >}}
+{{< line >}}[00:53:28.710] Dan Beecher: So, so what are we to make of, of, of all of this?{{< /line >}}
+{{< line >}}[00:53:33.910] Dan Beecher: I think I, I think part of the fascinating thing about the removal of these spurious verses is that this is still, to this modern day, a bit of a living document.{{< /line >}}
+{{< line >}}[00:53:50.670] Dan Beecher: It is, it is bound to continue to be updated.{{< /line >}}
+{{< line >}}[00:53:54.520] Dan McClellan: Absolutely.{{< /line >}}
+{{< line >}}[00:53:55.120] Dan McClellan: And the only reason that anybody notices anything is gone is because they maintain the traditional versification.{{< /line >}}
+{{< line >}}[00:54:03.480] Dan McClellan: Because if they, if they said we're going to make verse 21, we're going to, you know, move 22 up to fill 21, then you've screwed up the rest of the chapter.{{< /line >}}
+{{< line >}}[00:54:12.200] Dan McClellan: And then, you know, you can't compare verses between Bibles anymore.{{< /line >}}
+{{< line >}}[00:54:16.600] Dan McClellan: And that versification, again, doesn't come until 1500 years after, you know, the time of Paul.{{< /line >}}
+{{< line >}}[00:54:26.770] Dan McClellan: So there are these elements that we're adding to the text and there are these ways we're curating the text that then result in these sensitivities.{{< /line >}}
+{{< line >}}[00:54:37.570] Dan McClellan: And you know, if this happened and we didn't have any verses in the passages, no one would know and no one would care.{{< /line >}}
+{{< line >}}[00:54:44.610] Dan McClellan: Right, but because they're skipping from verse 20 to 22.{{< /line >}}
+{{< line >}}[00:54:48.600] Dan McClellan: Suddenly there's a problem with my Bible.{{< /line >}}
+{{< line >}}[00:54:53.240] Dan McClellan: But it is a better Bible.{{< /line >}}
+{{< line >}}[00:54:54.920] Dan McClellan: It is more faithful to the earliest text as far as we can reconstruct it.{{< /line >}}
+{{< line >}}[00:55:03.560] Dan McClellan: And there will hopefully be more and more insight in the future regarding the earliest shape of the text that will allow us to refine our Bible translations.{{< /line >}}
+{{< line >}}[00:55:16.190] Dan McClellan: And it will, it will continue to baffle me if that causes more consternation from folks.{{< /line >}}
+{{< line >}}[00:55:23.110] Dan McClellan: They're like, what, tearing their hair out over the fact that our Bible is now more accurate than it was before.{{< /line >}}
+{{< line >}}[00:55:29.390] Dan Beecher: Put on your helmet, buddy.{{< /line >}}
+{{< line >}}[00:55:30.550] Dan Beecher: You're prepared to be baffled.{{< /line >}}
+{{< line >}}[00:55:32.110] Dan Beecher: It will just, that's, that is going to continue as long as there's changes.{{< /line >}}
+{{< line >}}[00:55:37.630] Dan Beecher: Well, I, I find it fascinating.{{< /line >}}
+{{< line >}}[00:55:39.630] Dan McClellan: I love it.{{< /line >}}
+{{< line >}}[00:55:40.270] Dan Beecher: If you guys at home would like to hear a little bit more about this subject, chances are you can do so.{{< /line >}}
+{{< line >}}[00:55:47.830] Dan Beecher: Dan and I do some patron-only content after every show.{{< /line >}}
+{{< line >}}[00:55:53.030] Dan Beecher: So if you want to become a patron and hear what we have more conversation about this, you can go to patreon.com/dataoverdogma and become, you know, just kick a couple bucks our way every now and then and, and we'll, we'll give you a little bit more content.{{< /line >}}
+{{< line >}}[00:56:11.360] Dan Beecher: For the rest of you, thank you so much for tuning in.{{< /line >}}
+{{< line >}}[00:56:13.400] Dan Beecher: We sure appreciate it.{{< /line >}}
+{{< line >}}[00:56:15.680] Dan Beecher: You can write into us at contact@dataoverdogmapod.com if you have any questions and we'll see you again next week.{{< /line >}}
+{{< line >}}[00:56:24.960] Dan McClellan: Bye, everybody.{{< /line >}}
+{{< line >}}[00:56:29.690] Dan McClellan: It.{{< /line >}}

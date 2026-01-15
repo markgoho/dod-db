@@ -1,0 +1,688 @@
+---
+title: Does the Bible say the Earth is Flat?
+date: 2024-05-06T00:00:00Z
+episodeNumber: 57
+videoId: pXbbaMXd62k
+aliases:
+  - /episodes/57/
+tags:
+  - Gospel of Matthew
+  - Jesus
+  - Psalm
+  - Genesis
+  - Book of Job
+  - Christianity
+  - Book of Enoch
+  - Book of Isaiah
+  - David Carr
+  - gods
+  - King David
+  - Zechariah
+  - Enoch
+  - Hebrew Bible
+  - Univocality
+  - YHWH
+  - Athenagoras
+  - Book of Proverbs
+  - divine council
+  - Egypt
+  - El
+  - Eve
+  - Gospel of John
+  - Jerusalem
+  - Judah
+  - King James Version
+  - Paul
+  - Septuagint
+speakers:
+  - Dan McClellan
+  - Dan Beecher
+draft: false
+---
+
+{{< line >}}[00:00:01.280] Dan McClellan: Well, I hesitated to—like, when I decided to make this video this morning for my social media, I was like contemplating, do I really want to do this?{{< /line >}}
+{{< line >}}[00:00:09.280] Dan McClellan: I'm opening myself up for criticism.{{< /line >}}
+{{< line >}}[00:00:12.160] Dan McClellan: But I was like, no, if I feel this way, I've got to go through with this just because I wouldn't be able to look at myself in the mirror.{{< /line >}}
+{{< line >}}[00:00:24.880] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:26.920] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
+{{< line >}}[00:00:27.880] Dan McClellan: And you're listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation.{{< /line >}}
+{{< line >}}[00:00:37.800] Dan McClellan: About the same.{{< /line >}}
+{{< line >}}[00:00:39.400] Dan McClellan: How goes the storm, Dan?{{< /line >}}
+{{< line >}}[00:00:41.880] Dan Beecher: Well, it seems to have left you and come to me.{{< /line >}}
+{{< line >}}[00:00:44.120] Dan Beecher: We, we live on opposite sides of the Salt Lake City Valley.{{< /line >}}
+{{< line >}}[00:00:47.880] Dan Beecher: And yeah, I'm, I'm, I'm hearing thunder in the background.{{< /line >}}
+{{< line >}}[00:00:52.280] Dan Beecher: I hope our listeners can't hear it, but if you can, it'll just, we'll just call this a moody episode.{{< /line >}}
+{{< line >}}[00:00:57.320] Dan McClellan: Little, little ambiance, that's all.{{< /line >}}
+{{< line >}}[00:00:59.360] Dan Beecher: Yeah, exactly.{{< /line >}}
+{{< line >}}[00:01:00.880] Dan Beecher: I love it.{{< /line >}}
+{{< line >}}[00:01:01.920] Dan Beecher: And speaking of moody.{{< /line >}}
+{{< line >}}[00:01:03.360] Dan Beecher: Moody, we're, we're gonna have some fun with a conspiracy.{{< /line >}}
+{{< line >}}[00:01:09.480] Dan Beecher: We're doing Conspiracy Watch to start off with.{{< /line >}}
+{{< line >}}[00:01:13.200] Dan Beecher: And then we're gonna have opportunities for growth.{{< /line >}}
+{{< line >}}[00:01:17.040] Dan Beecher: I think that should be a self-help.{{< /line >}}
+{{< line >}}[00:01:20.000] Dan Beecher: We're gonna do Dan's self-help and.{{< /line >}}
+{{< line >}}[00:01:23.000] Dan McClellan: It's gonna be me looking into a mirror, right?{{< /line >}}
+{{< line >}}[00:01:26.290] Dan Beecher: Yeah, exactly.{{< /line >}}
+{{< line >}}[00:01:27.330] Dan Beecher: You're good enough, you're smart enough and—god doggone it or god dang it.{{< /line >}}
+{{< line >}}[00:01:33.090] Dan Beecher: I'm not sure what I'm trying to say here.{{< /line >}}
+{{< line >}}[00:01:35.010] Dan McClellan: Or you could just go all the way back to Shania Twain: "Gone and Done It."{{< /line >}}
+{{< line >}}[00:01:39.490] Dan Beecher: Gone and done it.{{< /line >}}
+{{< line >}}[00:01:40.250] Dan Beecher: There you go.{{< /line >}}
+{{< line >}}[00:01:40.930] Dan Beecher: I like it.{{< /line >}}
+{{< line >}}[00:01:42.610] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:01:43.250] Dan Beecher: But no, you are going to be looking into a mirror a little bit because you've revised your position on something.{{< /line >}}
+{{< line >}}[00:01:48.050] Dan McClellan: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:01:48.930] Dan McClellan: I am capable of growth from time to time.{{< /line >}}
+{{< line >}}[00:01:51.610] Dan McClellan: It is painful and it leaves behind{{< /line >}}
+{{< line >}}[00:01:54.850] Dan McClellan: a foul-smelling husk.{{< /line >}}
+{{< line >}}[00:01:56.290] Dan McClellan: But we have opportunities for growth all the time.{{< /line >}}
+{{< line >}}[00:01:59.650] Dan McClellan: And I want to share a little bit about how I—I don't think my position was necessarily wrong, but I'm going to revise it a little bit because I want to.{{< /line >}}
+{{< line >}}[00:02:09.170] Dan McClellan: I think I want to.{{< /line >}}
+{{< line >}}[00:02:10.090] Dan McClellan: I can point it a little more directly at the target.{{< /line >}}
+{{< line >}}[00:02:13.650] Dan McClellan: So we'll get to that at the second half of this.{{< /line >}}
+{{< line >}}[00:02:15.810] Dan Beecher: Oh, it sound—I mean, I made it sound all sexy and crazy and, and wild.{{< /line >}}
+{{< line >}}[00:02:20.210] Dan Beecher: And then you narrowed it down to the point where it almost doesn't sound like anything happened at all.{{< /line >}}
+{{< line >}}[00:02:24.170] Dan Beecher: But that's okay.{{< /line >}}
+{{< line >}}[00:02:24.770] Dan Beecher: We're gonna have a good time.{{< /line >}}
+{{< line >}}[00:02:27.150] Dan Beecher: Everyone stay tuned to hear how Dan was almost, but not quite, a little bit, maybe wrong.{{< /line >}}
+{{< line >}}[00:02:33.790] Dan McClellan: Ish.{{< /line >}}
+{{< line >}}[00:02:34.670] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:02:35.470] Dan McClellan: Not the first time and won't be the last time.{{< /line >}}
+{{< line >}}[00:02:39.230] Dan Beecher: But before that, Conspiracy Watch.{{< /line >}}
+{{< line >}}[00:02:45.950] Dan Beecher: So for today's conspiracy, Dan, you—you suggested this idea and I tried to Google it.{{< /line >}}
+{{< line >}}[00:02:54.040] Dan Beecher: And here's the problem with Googling certain big conspiracies that have been widely and, and well refuted by respected sources.{{< /line >}}
+{{< line >}}[00:03:06.840] Dan McClellan: Is it all the porn that comes up?{{< /line >}}
+{{< line >}}[00:03:09.160] Dan Beecher: It's all the porn.{{< /line >}}
+{{< line >}}[00:03:10.360] Dan Beecher: It's a problem.{{< /line >}}
+{{< line >}}[00:03:11.560] Dan Beecher: No, the problem is that what you get is those respected sources and their refutations—and their refutations very rarely include like the real off-the-wall dingbat stuff that you're looking for.{{< /line >}}
+{{< line >}}[00:03:25.930] Dan McClellan: There's not a lot of steelmanning going on when—when it comes time to refute some of these asinine conspiracy theories.{{< /line >}}
+{{< line >}}[00:03:32.930] Dan McClellan: So when you want—when you want the—the juicy stuff.{{< /line >}}
+{{< line >}}[00:03:35.450] Dan McClellan: When you want to—I want to know exactly what their argument is from their mouths.{{< /line >}}
+{{< line >}}[00:03:40.250] Dan McClellan: From their mouths.{{< /line >}}
+{{< line >}}[00:03:41.010] Dan McClellan: Yeah, you got to go into the trenches.{{< /line >}}
+{{< line >}}[00:03:42.970] Dan Beecher: And so I.{{< /line >}}
+{{< line >}}[00:03:44.010] Dan Beecher: Here's the thing.{{< /line >}}
+{{< line >}}[00:03:45.070] Dan Beecher: What we're talking about today is flat Earth and what I found.{{< /line >}}
+{{< line >}}[00:03:49.350] Dan Beecher: And I think this is why we're talking about it.{{< /line >}}
+{{< line >}}[00:03:51.750] Dan Beecher: I don't know.{{< /line >}}
+{{< line >}}[00:03:52.230] Dan Beecher: I haven't heard your argument yet.{{< /line >}}
+{{< line >}}[00:03:53.670] Dan Beecher: But I believe that this is why we're talking about it.{{< /line >}}
+{{< line >}}[00:03:55.870] Dan Beecher: If I type flat Earth, I get like page after page after page of refutations of the flat Earth conspiracy and.{{< /line >}}
+{{< line >}}[00:04:03.430] Dan McClellan: Probably something at the top saying, if you think the earth is flat, here's a number for you to call.{{< /line >}}
+{{< line >}}[00:04:08.270] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:04:08.590] Dan Beecher: Yeah, something like that.{{< /line >}}
+{{< line >}}[00:04:09.710] Dan Beecher: The flat Earth crisis line or whatever.{{< /line >}}
+{{< line >}}[00:04:13.930] Dan Beecher: What I found helped was if I typed in the word firmament.{{< /line >}}
+{{< line >}}[00:04:18.010] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:04:18.970] Dan Beecher: Because that changes things a lot and gets us to the heart of one of the main reasons why people are eager to believe that the earth is flat as opposed to a globe spinning in space.{{< /line >}}
+{{< line >}}[00:04:39.370] Dan Beecher: Okay, so let's talk a bit about why the flat Earth conspiracy loops back to our subject matter, which is the Bible.{{< /line >}}
+{{< line >}}[00:04:54.170] Dan Beecher: Do, do you want to start on that or do you want me to start?{{< /line >}}
+{{< line >}}[00:04:56.370] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:04:56.730] Dan McClellan: I thought you were still leading into.{{< /line >}}
+{{< line >}}[00:04:58.410] Dan Beecher: No, no, I was leading into you going.{{< /line >}}
+{{< line >}}[00:05:00.810] Dan Beecher: Now you.{{< /line >}}
+{{< line >}}[00:05:01.410] Dan Beecher: Now you say words just to pull.{{< /line >}}
+{{< line >}}[00:05:03.210] Dan McClellan: The curtain back a little bit.{{< /line >}}
+{{< line >}}[00:05:04.490] Dan McClellan: I, I imagine that sometimes people are like, they must have, like a script.{{< /line >}}
+{{< line >}}[00:05:08.490] Dan McClellan: They talked about this stuff beforehand.{{< /line >}}
+{{< line >}}[00:05:11.030] Dan McClellan: No, what usually happens is we'll text each other and be like, what do you want to talk about?{{< /line >}}
+{{< line >}}[00:05:15.070] Dan McClellan: Oh, I, I thought of this, I thought of that.{{< /line >}}
+{{< line >}}[00:05:17.510] Dan McClellan: And then the other will go and poke around and do some research.{{< /line >}}
+{{< line >}}[00:05:20.830] Dan McClellan: And then we get together and we're like, okay, hit record.{{< /line >}}
+{{< line >}}[00:05:23.910] Dan McClellan: So anyway, and.{{< /line >}}
+{{< line >}}[00:05:25.590] Dan Beecher: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:05:26.550] Dan Beecher: And that's.{{< /line >}}
+{{< line >}}[00:05:27.670] Dan Beecher: It's a miracle this makes sense at all.{{< /line >}}
+{{< line >}}[00:05:29.910] Dan McClellan: It's radio gold, in my opinion.{{< /line >}}
+{{< line >}}[00:05:33.350] Dan McClellan: So.{{< /line >}}
+{{< line >}}[00:05:34.790] Dan McClellan: So the, the Bible and the flat Earth, we've got a lot of different ways that the ancient conceptualization of the Earth and the universe is represented.{{< /line >}}
+{{< line >}}[00:05:46.010] Dan McClellan: But what we don't have is somebody saying, this is what our Earth looks like.{{< /line >}}
+{{< line >}}[00:05:52.090] Dan McClellan: What we have are just kind of scattered references to different features of the Earth and the heavens.{{< /line >}}
+{{< line >}}[00:05:58.210] Dan McClellan: And we have to kind of piece it all together.{{< /line >}}
+{{< line >}}[00:06:00.730] Dan McClellan: And there are two different dimensions to think about this.{{< /line >}}
+{{< line >}}[00:06:04.970] Dan McClellan: And we got some $2 words coming up here.{{< /line >}}
+{{< line >}}[00:06:07.610] Dan McClellan: One of them is diachronically, and the other is synchronically.{{< /line >}}
+{{< line >}}[00:06:11.040] Dan McClellan: Diachronically means through time.{{< /line >}}
+{{< line >}}[00:06:15.120] Dan McClellan: And so there are differences as you go from the earlier layers of the Bible to the later layers of the Bible.{{< /line >}}
+{{< line >}}[00:06:20.960] Dan McClellan: And then synchronically means at the same time, there can be differences from person to person, place to place, at the same time.{{< /line >}}
+{{< line >}}[00:06:29.680] Dan McClellan: And so it's not a.{{< /line >}}
+{{< line >}}[00:06:31.760] Dan McClellan: Because the Bible's not univocal.{{< /line >}}
+{{< line >}}[00:06:33.640] Dan McClellan: I don't know if you've heard about this yet, but what, what.{{< /line >}}
+{{< line >}}[00:06:37.370] Dan Beecher: When did this happen?{{< /line >}}
+{{< line >}}[00:06:38.570] Dan McClellan: It happened on February 3rd.{{< /line >}}
+{{< line >}}[00:06:40.810] Dan McClellan: The Bible is no longer univocal.{{< /line >}}
+{{< line >}}[00:06:42.850] Dan McClellan: It's multivocal.{{< /line >}}
+{{< line >}}[00:06:44.010] Dan McClellan: You have different people saying different things.{{< /line >}}
+{{< line >}}[00:06:46.810] Dan McClellan: And so there's a lot of kind of assuming and guesswork and filling in the gaps and trying to construct a cosmology from the Bible.{{< /line >}}
+{{< line >}}[00:06:57.290] Dan McClellan: But there are a handful of things that are pretty consistent that we see repeated reference to throughout the Bible.{{< /line >}}
+{{< line >}}[00:07:02.940] Dan McClellan: And those things include things like the pillars of the Earth.{{< /line >}}
+{{< line >}}[00:07:07.380] Dan McClellan: You get these.{{< /line >}}
+{{< line >}}[00:07:08.820] Dan McClellan: These pillars are referenced all over the place.{{< /line >}}
+{{< line >}}[00:07:11.300] Dan McClellan: You get this idea that the{{< /line >}}
+{{< line >}}[00:07:12.980] Dan McClellan: the Earth has been fixed and is immovable.{{< /line >}}
+{{< line >}}[00:07:16.820] Dan McClellan: This is something that you find in a number of different places as well.{{< /line >}}
+{{< line >}}[00:07:20.020] Dan Beecher: When you say pillars, are they pillars that are, like, holding up the sky?{{< /line >}}
+{{< line >}}[00:07:26.260] Dan Beecher: Are they pillars that are{{< /line >}}
+{{< line >}}[00:07:27.540] Dan Beecher: that the Earth is sitting upon?{{< /line >}}
+{{< line >}}[00:07:29.300] Dan Beecher: What pillars are we talking about?{{< /line >}}
+{{< line >}}[00:07:30.980] Dan McClellan: So that it's{{< /line >}}
+{{< line >}}[00:07:31.940] Dan McClellan: it's not entirely clear.{{< /line >}}
+{{< line >}}[00:07:33.760] Dan McClellan: Just have a bunch of different references to pillars of the Earth.{{< /line >}}
+{{< line >}}[00:07:36.240] Dan McClellan: But this is{{< /line >}}
+{{< line >}}[00:07:36.960] Dan McClellan: this is very clearly like foundations, architectural foundations, slash pillars.{{< /line >}}
+{{< line >}}[00:07:42.560] Dan McClellan: So they are things that are supporting, in some sense, the earth.{{< /line >}}
+{{< line >}}[00:07:47.280] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:07:48.000] Dan McClellan: And this is pretty consistent.{{< /line >}}
+{{< line >}}[00:07:50.160] Dan McClellan: And it's not just kind of, you know, flowery, poetic stuff.{{< /line >}}
+{{< line >}}[00:07:55.520] Dan McClellan: There seems to be this idea that there are foundations and{{< /line >}}
+{{< line >}}[00:07:58.800] Dan McClellan: or pillars to the earth.{{< /line >}}
+{{< line >}}[00:08:01.700] Dan McClellan: And then we{{< /line >}}
+{{< line >}}[00:08:02.340] Dan McClellan: have you mentioned the firmament.{{< /line >}}
+{{< line >}}[00:08:03.860] Dan McClellan: And the firmament comes from the King James translation of a{{< /line >}}
+{{< line >}}[00:08:08.180] Dan McClellan: a Hebrew word raqia{{< /line >}}
+{{< line >}}[00:08:10.420] Dan McClellan: which occurs in Genesis 1, where it talks about the{{< /line >}}
+{{< line >}}[00:08:15.140] Dan McClellan: the{{< /line >}}
+{{< line >}}[00:08:15.619] Dan McClellan: the heavens, the skies, and the idea in the priestly creation account from Genesis 1.{{< /line >}}
+{{< line >}}[00:08:22.180] Dan McClellan: And you can go all the way back to the very first episode of this dumb podcast to hear about the creation in{{< /line >}}
+{{< line >}}[00:08:31.640] Dan McClellan: in the early chapters of Genesis.{{< /line >}}
+{{< line >}}[00:08:34.120] Dan McClellan: Yeah, but the idea is that the earth is underwater, right?{{< /line >}}
+{{< line >}}[00:08:38.520] Dan McClellan: And these kind of chaotic waters of creation.{{< /line >}}
+{{< line >}}[00:08:42.040] Dan McClellan: And God affects creation by creating this raqia, which literally, it comes from a word that means to hammer out.{{< /line >}}
+{{< line >}}[00:08:51.810] Dan McClellan: And so you got to think of the steel drums playing while God kind of inserts this solid dome that separates the waters above from the waters beneath.{{< /line >}}
+{{< line >}}[00:09:07.570] Dan McClellan: So it is firm.{{< /line >}}
+{{< line >}}[00:09:08.850] Dan McClellan: It is a solid dome.{{< /line >}}
+{{< line >}}[00:09:10.330] Dan McClellan: And when you talk to conspiracy theorists today, they're like, yeah, there's no space travel.{{< /line >}}
+{{< line >}}[00:09:14.570] Dan McClellan: You{{< /line >}}
+{{< line >}}[00:09:14.770] Dan McClellan: you just bounce off.{{< /line >}}
+{{< line >}}[00:09:15.770] Dan Beecher: So, oh, let me tell you something.{{< /line >}}
+{{< line >}}[00:09:17.330] Dan Beecher: I had the delightful misfortune of go{{< /line >}}
+{{< line >}}[00:09:22.820] Dan Beecher: I, I stopped on Google and went over to TikTok for some content about this.{{< /line >}}
+{{< line >}}[00:09:28.220] Dan Beecher: And man, the number of videos that I saw where it's like, they{{< /line >}}
+{{< line >}}[00:09:34.940] Dan Beecher: either we can't penetrate the firmament.{{< /line >}}
+{{< line >}}[00:09:37.780] Dan Beecher: If you look at all of the NASA, first of all, NASA is apparently a whole thing for these.{{< /line >}}
+{{< line >}}[00:09:44.500] Dan McClellan: Oh, yeah, yeah.{{< /line >}}
+{{< line >}}[00:09:45.660] Dan Beecher: It's like{{< /line >}}
+{{< line >}}[00:09:46.420] Dan Beecher: like this is a{{< /line >}}
+{{< line >}}[00:09:47.380] Dan Beecher: like they're{{< /line >}}
+{{< line >}}[00:09:47.980] Dan Beecher: they're talking about nas{{< /line >}}
+{{< line >}}[00:09:50.120] Dan McClellan: deception, right.{{< /line >}}
+{{< line >}}[00:09:51.800] Dan Beecher: In Hebrew.{{< /line >}}
+{{< line >}}[00:09:52.800] Dan Beecher: Which does it.{{< /line >}}
+{{< line >}}[00:09:54.280] Dan McClellan: No.{{< /line >}}
+{{< line >}}[00:09:55.000] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:09:55.720] Dan McClellan: No, it doesn't.{{< /line >}}
+{{< line >}}[00:09:56.680] Dan Beecher: Are they referring to anything similar?{{< /line >}}
+{{< line >}}[00:09:59.480] Dan McClellan: There's a verbal root nasha, and because this is usually written with diacritics and they don't know how to read diacritics, they think N-A-S with a chevron on top of it{{< /line >}}
+{{< line >}}[00:10:13.120] Dan McClellan: A is pronounced NASA, but it's nasha.{{< /line >}}
+{{< line >}}[00:10:16.840] Dan McClellan: And then also that's just a reconstructed verbal root.{{< /line >}}
+{{< line >}}[00:10:20.970] Dan McClellan: The word never actually appears as nasha.{{< /line >}}
+{{< line >}}[00:10:24.250] Dan McClellan: To mean deceive, it has to be used in the causative hifil stem.{{< /line >}}
+{{< line >}}[00:10:28.730] Dan McClellan: And so{{< /line >}}
+{{< line >}}[00:10:29.850] Dan McClellan: and so we get some morphological changes to it.{{< /line >}}
+{{< line >}}[00:10:32.410] Dan McClellan: You have to add a preformative{{< /line >}}
+{{< line >}}[00:10:34.130] Dan McClellan: he, you get an i-quality vowel.{{< /line >}}
+{{< line >}}[00:10:36.650] Dan McClellan: You get a{{< /line >}}
+{{< line >}}[00:10:37.370] Dan McClellan: you get a consonant cluster with the nun and the shin, which means the nun gets assimilated to the shin.{{< /line >}}
+{{< line >}}[00:10:44.130] Dan McClellan: And then you get an i-quality vowel between the second and the third radical.{{< /line >}}
+{{< line >}}[00:10:47.890] Dan McClellan: And so basically, wherever this word means deceive, it's being pronounced like nasha.{{< /line >}}
+{{< line >}}[00:10:53.890] Dan McClellan: In Genesis 3, where Eve says, the serpent beguiled me, and people are like,{{< /line >}}
+{{< line >}}[00:10:59.370] Dan McClellan: "That means nasha."{{< /line >}}
+{{< line >}}[00:11:00.850] Dan McClellan: That word appears as hishiani in that verse.{{< /line >}}
+{{< line >}}[00:11:05.090] Dan McClellan: So no relation whatsoever to NASA.{{< /line >}}
+{{< line >}}[00:11:07.970] Dan Beecher: Cool.{{< /line >}}
+{{< line >}}[00:11:08.330] Dan McClellan: Sorry to—{{< /line >}}
+{{< line >}}[00:11:08.770] Dan McClellan: —not—{{< /line >}}
+{{< line >}}[00:11:09.410] Dan Beecher: Not at all.{{< /line >}}
+{{< line >}}[00:11:09.970] Dan Beecher: Sorry I asked.{{< /line >}}
+{{< line >}}[00:11:12.530] Dan Beecher: But yeah.{{< /line >}}
+{{< line >}}[00:11:13.530] Dan McClellan: So there's a whole thing about serpent tongue in the logo.{{< /line >}}
+{{< line >}}[00:11:17.650] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:11:18.210] Dan Beecher: So the NASA talking about how like all the rockets actually curve and then just come down again.{{< /line >}}
+{{< line >}}[00:11:24.030] Dan Beecher: Nothing actually—{{< /line >}}
+{{< line >}}[00:11:24.910] Dan Beecher: And then there, and then there was all this stuff about SpaceX and how they're trying to, like, how one of their things actually hit the firmament and they show a little thing and it's obviously just like the separation of the stages or something like that.{{< /line >}}
+{{< line >}}[00:11:40.990] Dan Beecher: But man, a lot of talk about firmament.{{< /line >}}
+{{< line >}}[00:11:44.790] Dan Beecher: There was even one, I saw one where they—{{< /line >}}
+{{< line >}}[00:11:47.420] Dan Beecher: It was like just an image of an observatory that happened to have like, I don't know, like looked like lasers shooting straight up.{{< /line >}}
+{{< line >}}[00:11:55.380] Dan Beecher: And it was like, are they trying to destroy the firmament?{{< /line >}}
+{{< line >}}[00:12:00.700] Dan McClellan: It's, it kind of gives you Mr. Burns vibes.{{< /line >}}
+{{< line >}}[00:12:03.860] Dan McClellan: For centuries, man has tried to blot out the sun.{{< /line >}}
+{{< line >}}[00:12:08.220] Dan Beecher: And I'm going to do it.{{< /line >}}
+{{< line >}}[00:12:10.460] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:12:11.660] Dan McClellan: But the firmament, in the biblical conceptualization, there is a solid dome up there and it's crystalline in nature and looks like sapphire and that's why it's blue.{{< /line >}}
+{{< line >}}[00:12:22.060] Dan McClellan: And the windows of heaven are actual like holes that open up to let the rain fall.{{< /line >}}
+{{< line >}}[00:12:28.460] Dan McClellan: And, and then the heavens of the—{{< /line >}}
+{{< line >}}[00:12:31.740] Dan McClellan: What's that?{{< /line >}}
+{{< line >}}[00:12:32.460] Dan Beecher: I was going to say the stars are like contained in the firmament.{{< /line >}}
+{{< line >}}[00:12:36.140] Dan McClellan: Yes, yes.{{< /line >}}
+{{< line >}}[00:12:37.660] Dan McClellan: And, and they are, you know, they're moving around.{{< /line >}}
+{{< line >}}[00:12:40.940] Dan McClellan: In fact, I think if you, if you look in—{{< /line >}}
+{{< line >}}[00:12:45.720] Dan McClellan: So, so this, this cosmology is kind of consistent in a bunch of different parts of ancient Southwest Asia going back to the Bronze Age.{{< /line >}}
+{{< line >}}[00:12:54.840] Dan McClellan: The Hebrew Bible's representation is generally coming from the, let's say the middle two-fourths of the first millennium BCE.{{< /line >}}
+{{< line >}}[00:13:06.760] Dan McClellan: That's where we get most of the discussion.{{< /line >}}
+{{< line >}}[00:13:10.060] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:13:11.100] Dan McClellan: And then we get—{{< /line >}}
+{{< line >}}[00:13:12.540] Dan McClellan: But it's just these scattered references.{{< /line >}}
+{{< line >}}[00:13:14.260] Dan McClellan: We don't actually get an attempt to describe things until the Book of Enoch, which is, as you can imagine, exciting.{{< /line >}}
+{{< line >}}[00:13:23.340] Dan McClellan: So the Book of Enoch is Hellenistic period.{{< /line >}}
+{{< line >}}[00:13:26.060] Dan McClellan: The majority of it's probably written between the 3rd and the 1st century BCE.{{< /line >}}
+{{< line >}}[00:13:29.740] Dan McClellan: But you actually get a, here's what the Earth looks like kind of pseudoscientific discussion.{{< /line >}}
+{{< line >}}[00:13:37.160] Dan McClellan: And I saw one part of it that was just so great.{{< /line >}}
+{{< line >}}[00:13:42.440] Dan McClellan: So the luminaries, the sun and the moon.{{< /line >}}
+{{< line >}}[00:13:46.280] Dan McClellan: And so this is First Enoch, chapter 72.{{< /line >}}
+{{< line >}}[00:13:49.960] Dan McClellan: This is the first law of the luminaries.{{< /line >}}
+{{< line >}}[00:13:52.080] Dan McClellan: The sun is a luminary whose egress is an opening of heaven, which is located in the direction of the east and whose ingress is another opening of heaven located in the west.{{< /line >}}
+{{< line >}}[00:14:02.650] Dan McClellan: I saw six openings through which the sun rises and six openings through which it sets.{{< /line >}}
+{{< line >}}[00:14:08.450] Dan McClellan: The moon also rises and sets through the same openings.{{< /line >}}
+{{< line >}}[00:14:11.250] Dan McClellan: And they are guided by the stars together with whom they lead.{{< /line >}}
+{{< line >}}[00:14:15.370] Dan McClellan: They are six in the east and six in the west.{{< /line >}}
+{{< line >}}[00:14:17.770] Dan McClellan: Heaven.{{< /line >}}
+{{< line >}}[00:14:18.730] Dan McClellan: All of them are arranged one after another in a constant order.{{< /line >}}
+{{< line >}}[00:14:22.170] Dan McClellan: So now we've got this idea of the stars and, and the luminaries kind of following specific tracks.{{< /line >}}
+{{< line >}}[00:14:30.180] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:14:31.140] Dan Beecher: And through openings.{{< /line >}}
+{{< line >}}[00:14:32.820] Dan McClellan: Through openings.{{< /line >}}
+{{< line >}}[00:14:33.660] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:14:34.100] Dan McClellan: So it's like the—{{< /line >}}
+{{< line >}}[00:14:35.180] Dan McClellan: Open the window.{{< /line >}}
+{{< line >}}[00:14:36.020] Dan McClellan: Open the window.{{< /line >}}
+{{< line >}}[00:14:37.060] Dan McClellan: The sun comes in.{{< /line >}}
+{{< line >}}[00:14:38.100] Dan McClellan: Hey, everybody.{{< /line >}}
+{{< line >}}[00:14:38.100] Dan McClellan: And, and here I'm, I'm thinking of the alternate universe from Rick and Morty where the sun is just constantly screaming.{{< /line >}}
+{{< line >}}[00:14:48.260] Dan McClellan: I don't know if you've seen that episode, but it's great.{{< /line >}}
+{{< line >}}[00:14:52.100] Dan Beecher: I don't, I don't think I've ever seen this Rick and Morty thing.{{< /line >}}
+{{< line >}}[00:14:54.740] Dan Beecher: But.{{< /line >}}
+{{< line >}}[00:14:56.840] Dan McClellan: You've never seen Rick and Morty.{{< /line >}}
+{{< line >}}[00:14:58.200] Dan Beecher: No, I saw, I saw like an episode or two.{{< /line >}}
+{{< line >}}[00:15:00.360] Dan Beecher: I, I didn't, it, it didn't suck me in the way I was promised it would.{{< /line >}}
+{{< line >}}[00:15:04.760] Dan McClellan: I, I, I think if you, if you got into it, you would just love it.{{< /line >}}
+{{< line >}}[00:15:08.600] Dan McClellan: But yeah, I can see how just one episode might, you might not get, get hooked.{{< /line >}}
+{{< line >}}[00:15:13.880] Dan Beecher: I like, I like this Enoch description just because it reminds me of like, you know, one of those big clocks in a German square that has all these things ticking around and like, coming out of openings and going.{{< /line >}}
+{{< line >}}[00:15:26.840] Dan McClellan: Something like.{{< /line >}}
+{{< line >}}[00:15:28.100] Dan McClellan: A guy with a rolling pin around the, the outside.{{< /line >}}
+{{< line >}}[00:15:30.660] Dan McClellan: It's kind of like a Disneyland situation.{{< /line >}}
+{{< line >}}[00:15:33.700] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:15:34.180] Dan McClellan: Pirates of the Caribbean.{{< /line >}}
+{{< line >}}[00:15:35.460] Dan Beecher: It is a small world after all.{{< /line >}}
+{{< line >}}[00:15:37.380] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:15:38.020] Dan McClellan: Or a planetarium or something like that.{{< /line >}}
+{{< line >}}[00:15:41.460] Dan McClellan: But the, the idea is basically that this dry land exists within these, within a ring of the sea.{{< /line >}}
+{{< line >}}[00:15:49.940] Dan McClellan: So basically you're surrounded by seas and you have references to the disc or the circle of the earth.{{< /line >}}
+{{< line >}}[00:15:58.310] Dan McClellan: And then the firmament comes up from the outside of the waters and then encloses this area and all the, you know, the birds of the skies and everything are in there, and then the luminaries and the planets and, and all of that.{{< /line >}}
+{{< line >}}[00:16:14.230] Dan McClellan: But, but Enoch actually talks about a little bit what's going on beyond the firmament when you go beyond the edges of the Earth.{{< /line >}}
+{{< line >}}[00:16:22.390] Dan McClellan: Getting a little Jules Verne on the Hellenistic Jewish world.{{< /line >}}
+{{< line >}}[00:16:28.730] Dan McClellan: And, and so I think there, there are a number of different drawings of, of the ancient Israelite concept of the cosmos.{{< /line >}}
+{{< line >}}[00:16:35.130] Dan McClellan: And who knows if any of them would actually match up with what an ancient Israelite or Judahite or early Jewish person might have drawn if you sat him down and were like, draw the, the cosmos.{{< /line >}}
+{{< line >}}[00:16:48.090] Dan McClellan: But generally the idea is that you've got dry land surrounded by water.{{< /line >}}
+{{< line >}}[00:16:55.230] Dan McClellan: There's a firmament that comes up out of there, that, that encloses that whole land, you've got an underworld, which is where the deceased are.{{< /line >}}
+{{< line >}}[00:17:04.590] Dan McClellan: And beneath that you've got the pillars of the earth.{{< /line >}}
+{{< line >}}[00:17:08.190] Dan McClellan: And then this is all resting on the broader kind of primordial waters of creation, slash chaos, slash whatever.{{< /line >}}
+{{< line >}}[00:17:18.050] Dan McClellan: And there's also a concept that the gods inhabit the heavens above the heavens of the earth.{{< /line >}}
+{{< line >}}[00:17:27.890] Dan McClellan: And, and so from the way the Bible represents things, it's a flat earth.{{< /line >}}
+{{< line >}}[00:17:33.810] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:17:35.010] Dan McClellan: It's obviously not what the earth is actually like.{{< /line >}}
+{{< line >}}[00:17:38.290] Dan Beecher: Well, why wouldn't they have that representation when.{{< /line >}}
+{{< line >}}[00:17:41.490] Dan Beecher: When no one could go more than, you know, literally, if no one, you know, has ever traveled more than a couple hundred miles in their whole life, you know, it, it, you're not going to be able to come up with a, a spherical idea.{{< /line >}}
+{{< line >}}[00:18:00.360] Dan Beecher: You're like, the Earth is huge and looks flat from where you are, other than like bumps and mountains and things.{{< /line >}}
+{{< line >}}[00:18:07.400] Dan McClellan: And most people, like, you know, you can see that far away.{{< /line >}}
+{{< line >}}[00:18:11.730] Dan McClellan: You can't really see things anymore.{{< /line >}}
+{{< line >}}[00:18:13.450] Dan McClellan: But they probably would have thought, oh, you just get smaller and smaller and smaller the further away you go, and you're just too small to see.{{< /line >}}
+{{< line >}}[00:18:19.810] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:18:20.770] Dan McClellan: And you have, you have references to there.{{< /line >}}
+{{< line >}}[00:18:23.290] Dan McClellan: There are a bunch of passages in the scriptures that make statements that suggest they imagine that they're on a pretty limited plot of land that is fairly flat.{{< /line >}}
+{{< line >}}[00:18:36.900] Dan McClellan: So, you know, the idea that every eye will see when Jesus comes in the clouds only makes sense if it's possible for every eye to see because, like, everybody can see the sun.{{< /line >}}
+{{< line >}}[00:18:50.580] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:18:51.220] Dan McClellan: At least as far as we know, everybody can see the sun up in the sky.{{< /line >}}
+{{< line >}}[00:18:56.740] Dan Beecher: And it probably is at the same time.{{< /line >}}
+{{< line >}}[00:18:58.660] Dan Beecher: Like, there's no, there's no way to, like, as you travel, there's no way to see that, you know, you're seeing the sun at a slightly different time than the place you came from or whatever.{{< /line >}}
+{{< line >}}[00:19:09.420] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:19:11.260] Dan McClellan: And you have, in the Greek world, you have in by, I think around the 5th century BCE, you start to have these ideas that the Earth is round.{{< /line >}}
+{{< line >}}[00:19:23.980] Dan McClellan: Now, this is not based on scientific study.{{< /line >}}
+{{< line >}}[00:19:26.020] Dan McClellan: Initially, it's because Plato, I don't know if he got dumped or something, but he just got really into spheres and was just like, man, I love spheres.{{< /line >}}
+{{< line >}}[00:19:36.720] Dan McClellan: And so just hypothesized that all the perfect things, all the central main, all the main characters in the universe are spherical.{{< /line >}}
+{{< line >}}[00:19:46.720] Dan McClellan: And the idea is that every point is the exact same distance from the center.{{< /line >}}
+{{< line >}}[00:19:51.280] Dan McClellan: And, and, ooh, doesn't that just make the tuning fork in your loins ring?{{< /line >}}
+{{< line >}}[00:19:57.620] Dan McClellan: Plato was a weird dude.{{< /line >}}
+{{< line >}}[00:19:59.300] Dan McClellan: But this information doesn't spread out to.{{< /line >}}
+{{< line >}}[00:20:02.500] Dan McClellan: To the Jewish world.{{< /line >}}
+{{< line >}}[00:20:03.660] Dan McClellan: But you have kind of the convergence of this aesthetic notion that the Earth is round with developing notions based on, like, people who are taking measurements about shadows that are being cast in Egypt and stuff like that, from one part to, you know, a bunch of miles down the other direction.{{< /line >}}
+{{< line >}}[00:20:21.300] Dan McClellan: And, and as our ability to measure time and distances and things like that gets refined, it becomes more and more clear that we live on a spherical Earth.{{< /line >}}
+{{< line >}}[00:20:32.030] Dan McClellan: And some of the earliest Christians insisted that we live on a spherical Earth.{{< /line >}}
+{{< line >}}[00:20:38.270] Dan McClellan: Like, there's a.{{< /line >}}
+{{< line >}}[00:20:38.950] Dan McClellan: There's an early Christian and philosopher named Athenagoras toward the end of the second century CE who is like, yep, the Earth is straight up a sphere, and other people didn't buy it.{{< /line >}}
+{{< line >}}[00:20:49.840] Dan McClellan: But that became kind of the, the consensus view among the more philosophically oriented, the more thoughtful Christians.{{< /line >}}
+{{< line >}}[00:20:58.640] Dan Beecher: Yeah, I mean, the idea of a spherical Earth dates back to ancient Greece.{{< /line >}}
+{{< line >}}[00:21:05.880] Dan Beecher: Like, this is not.{{< /line >}}
+{{< line >}}[00:21:06.840] Dan Beecher: This is not something that was not around the, the people who, who, you know, were alive in biblical times, or at least late biblical times, they might have encountered this idea.{{< /line >}}
+{{< line >}}[00:21:19.460] Dan McClellan: I. I imagine they did, but we, we don't.{{< /line >}}
+{{< line >}}[00:21:21.740] Dan McClellan: We just don't see it reflected in any of the texts.{{< /line >}}
+{{< line >}}[00:21:24.340] Dan McClellan: So folks like, you know, the author of the Gospel of John or Paul, maybe they believed in a spherical Earth, they never say one way or another.{{< /line >}}
+{{< line >}}[00:21:33.140] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:21:33.780] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:21:34.180] Dan McClellan: And some people talk about this idea that there are the four corners of the Earth.{{< /line >}}
+{{< line >}}[00:21:38.180] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:21:38.580] Dan McClellan: They're like, oh, that means it's got to be a flat Earth.{{< /line >}}
+{{< line >}}[00:21:40.700] Dan McClellan: And it's like, I talk about the corners of the earth, the, the ends of the earth, the.{{< /line >}}
+{{< line >}}[00:21:45.540] Dan McClellan: The edge of the Earth.{{< /line >}}
+{{< line >}}[00:21:47.520] Dan McClellan: You know, that doesn't mean that.{{< /line >}}
+{{< line >}}[00:21:50.080] Dan McClellan: I think there are actually four points that, that sit at the four corners of a square or something.{{< /line >}}
+{{< line >}}[00:21:56.520] Dan McClellan: It's a figure of speech.{{< /line >}}
+{{< line >}}[00:21:58.480] Dan Beecher: It is very funny to me how many people, how often I will hear someone say, you know, when they're, when they're defending their take on the Bible, one thing is obviously literal and another thing is obviously a metaphor or figurative.{{< /line >}}
+{{< line >}}[00:22:15.680] Dan Beecher: And.{{< /line >}}
+{{< line >}}[00:22:16.240] Dan Beecher: And it's like, okay, well, if one be figurative, other things can also be figurative.{{< /line >}}
+{{< line >}}[00:22:21.900] Dan Beecher: And how do you know the difference?{{< /line >}}
+{{< line >}}[00:22:23.500] Dan McClellan: Yeah, I. I think we.{{< /line >}}
+{{< line >}}[00:22:25.420] Dan McClellan: There's a lot of rhetoric where we're just kind of doing our best to try and feel it out and try to figure out, is this, does this make more sense as figurative?{{< /line >}}
+{{< line >}}[00:22:32.900] Dan McClellan: What's the trend when we see this language being used?{{< /line >}}
+{{< line >}}[00:22:36.060] Dan McClellan: Is, are there any contexts in which it is more clear if it's one or the other.{{< /line >}}
+{{< line >}}[00:22:42.940] Dan McClellan: more clear if it's one or the other. But yeah, I, I don't think the, the whole corners of the earth idea is very determinative, but we do see people talking about that.{{< /line >}}
+{{< line >}}[00:22:51.260] Dan McClellan: One thing I did want to bring up is there's a word in Hebrew that is chug.{{< /line >}}
+{{< line >}}[00:23:00.300] Dan McClellan: And this word occurs in a handful of places, but Isaiah 40, verse 22 is a place that people will bring up a lot.{{< /line >}}
+{{< line >}}[00:23:08.700] Dan McClellan: And this, let's see, the NRSVUE says this.{{< /line >}}
+{{< line >}}[00:23:13.420] Dan McClellan: It is he who sits above the circle of the earth, and its inhabitants are like grasshoppers, who stretches out the heavens like a curtain and spreads them like a tent to live in.{{< /line >}}
+{{< line >}}[00:23:23.230] Dan McClellan: And this.{{< /line >}}
+{{< line >}}[00:23:23.870] Dan McClellan: And, and people will appeal to this as evidence that the Bible is already aware that the earth is a sphere because they hear circle and then Job.{{< /line >}}
+{{< line >}}[00:23:36.190] Dan McClellan: I think there's some stuff in.{{< /line >}}
+{{< line >}}[00:23:37.550] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:23:37.870] Dan McClellan: Job 22:14, he walks.{{< /line >}}
+{{< line >}}[00:23:40.470] Dan McClellan: He.{{< /line >}}
+{{< line >}}[00:23:40.790] Dan McClellan: The KJV says he walketh in the circuit of heaven, and NET says vault of heaven.{{< /line >}}
+{{< line >}}[00:23:48.550] Dan McClellan: NRSVUE says dome of heaven.{{< /line >}}
+{{< line >}}[00:23:51.310] Dan McClellan: So I guess they're trying to link this word chug with, with the, the firmament, the dome.{{< /line >}}
+{{< line >}}[00:23:57.630] Dan McClellan: But, but chug is, is like you draw chug with a compass.{{< /line >}}
+{{< line >}}[00:24:02.830] Dan McClellan: So circle, disc.{{< /line >}}
+{{< line >}}[00:24:04.510] Dan McClellan: It's not necessarily a sphere, it's just a circle.{{< /line >}}
+{{< line >}}[00:24:09.150] Dan McClellan: And so Isaiah 40, verse 22 is talking about this idea of the disc of the earth that's surrounded by water.{{< /line >}}
+{{< line >}}[00:24:15.540] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:24:16.100] Dan McClellan: And it is not talking about the globe of the earth.{{< /line >}}
+{{< line >}}[00:24:20.900] Dan McClellan: Proverbs 8:27.{{< /line >}}
+{{< line >}}[00:24:22.500] Dan McClellan: The, the famous creation of, of wisdom has a part where it says, when he established the heavens, I was there when he drew a circle on the face of the deep.{{< /line >}}
+{{< line >}}[00:24:34.020] Dan McClellan: And this idea being we're inscribing the boundaries of the deep, and the dry land is going to be within those boundaries.{{< /line >}}
+{{< line >}}[00:24:42.380] Dan McClellan: So it's, it's a circle, it's not a sphere.{{< /line >}}
+{{< line >}}[00:24:46.510] Dan McClellan: So, so folks who appeal to that as, as evidence that, that Isaiah already knows about a spherical earth doesn't work all that well.{{< /line >}}
+{{< line >}}[00:24:58.190] Dan Beecher: Yeah, I mean, and I think, you know, when I look at biblical references and I see references like ends of the earth or, you know, corners of the earth, I, I don't see anyone.{{< /line >}}
+{{< line >}}[00:25:13.350] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:25:13.710] Dan Beecher: It doesn't seem to me like anyone's trying to make a, a solid representation of what the earth is.{{< /line >}}
+{{< line >}}[00:25:21.630] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:25:21.990] Dan Beecher: They're just.{{< /line >}}
+{{< line >}}[00:25:22.430] Dan Beecher: It, it mostly seems to me to be either figurative language or, or just sort of a big, you know, like.{{< /line >}}
+{{< line >}}[00:25:34.350] Dan McClellan: Another one that comes up quite a bit is Job 26:7.{{< /line >}}
+{{< line >}}[00:25:38.860] Dan McClellan: Let me pull this up and, and see what, what the NRSV has to say.{{< /line >}}
+{{< line >}}[00:25:44.860] Dan McClellan: About this.{{< /line >}}
+{{< line >}}[00:25:46.540] Dan McClellan: So he stretches out the north over the void and hangs the earth upon nothing.{{< /line >}}
+{{< line >}}[00:25:53.339] Dan McClellan: And so people will say that indicates God knows that the Earth is floating in space and that it is not on foundations, that it is not resting in a sea of, of primordial goo.{{< /line >}}
+{{< line >}}[00:26:07.460] Dan McClellan: And this.{{< /line >}}
+{{< line >}}[00:26:09.020] Dan Beecher: But what about the pillars then?{{< /line >}}
+{{< line >}}[00:26:11.780] Dan Beecher: And what's it hanging always?{{< /line >}}
+{{< line >}}[00:26:13.140] Dan McClellan: You always bring it back to the pillars.{{< /line >}}
+{{< line >}}[00:26:14.820] Dan McClellan: No, the.{{< /line >}}
+{{< line >}}[00:26:15.540] Dan McClellan: And, and this is where Job is getting particularly poetic.{{< /line >}}
+{{< line >}}[00:26:21.060] Dan McClellan: He binds up the waters in his thick clouds and the cloud is not torn open by them.{{< /line >}}
+{{< line >}}[00:26:26.100] Dan McClellan: He covers the face of the full moon and spreads over it his cloud.{{< /line >}}
+{{< line >}}[00:26:30.690] Dan McClellan: He has described a circle on the face of the waters.{{< /line >}}
+{{< line >}}[00:26:34.050] Dan McClellan: That's probably inscribed.{{< /line >}}
+{{< line >}}[00:26:37.170] Dan McClellan: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:26:37.930] Dan McClellan: He.{{< /line >}}
+{{< line >}}[00:26:38.850] Dan McClellan: At the boundary between light and darkness, the pillars of heaven tremble and are astounded at his rebuke.{{< /line >}}
+{{< line >}}[00:26:45.490] Dan McClellan: So now Heaven has pillars and, and they get scared when.{{< /line >}}
+{{< line >}}[00:26:51.490] Dan McClellan: When God gives them a talking to.{{< /line >}}
+{{< line >}}[00:26:53.250] Dan McClellan: So, so this is, this is very, very figurative language, but for some people, it's a proof text.{{< /line >}}
+{{< line >}}[00:26:59.410] Dan McClellan: If they want to try to suggest that as a, a scientific document, the, the Bible is accurate and, and all that it claims about the natural world, then they need to be.{{< /line >}}
+{{< line >}}[00:27:11.970] Dan McClellan: They need something in there, even if it means you gotta reject the other 999 things that are pretty clearly a flat Earth perspective and say, "Well, we got this one."{{< /line >}}
+{{< line >}}[00:27:23.640] Dan Beecher: Yeah, I guess I just, you know, it was so funny when, when the flat Earth theory started to regain prominence sort of 10 or 15 years ago, or it started to come back into, into sort of the, the, the parlance of our time, it took me by surprise.{{< /line >}}
+{{< line >}}[00:27:45.400] Dan Beecher: I was shocked.{{< /line >}}
+{{< line >}}[00:27:46.080] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:27:46.360] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:27:46.720] Dan Beecher: When it started to happen and I could not for the life of me figure out why it was happening.{{< /line >}}
+{{< line >}}[00:27:52.130] Dan Beecher: Like, we had thou—{{< /line >}}
+{{< line >}}[00:27:54.610] Dan Beecher: Literally thousands of years of knowledge all pointing to a spherical Earth.{{< /line >}}
+{{< line >}}[00:28:01.850] Dan Beecher: It was, it was set, it was done.{{< /line >}}
+{{< line >}}[00:28:03.730] Dan Beecher: It was easy.{{< /line >}}
+{{< line >}}[00:28:05.650] Dan Beecher: And then I—so I was like, why?{{< /line >}}
+{{< line >}}[00:28:08.930] Dan Beecher: Why is this happening?{{< /line >}}
+{{< line >}}[00:28:11.410] Dan Beecher: And I think that it, you know, Genesis is a problem.{{< /line >}}
+{{< line >}}[00:28:16.610] Dan Beecher: I think that a lot of it started from people not wanting that firmament model of a—{{< /line >}}
+{{< line >}}[00:28:26.600] Dan Beecher: Of, you know, an Earth with a dome over it to be refuted in their Bible.{{< /line >}}
+{{< line >}}[00:28:31.960] Dan Beecher: I think, I don't think that's the whole of the thing.{{< /line >}}
+{{< line >}}[00:28:35.799] Dan Beecher: I don't think that's all of why people—{{< /line >}}
+{{< line >}}[00:28:38.600] Dan Beecher: I think there's a lot of people that just really want to reject, you know, sort of understood knowledge.{{< /line >}}
+{{< line >}}[00:28:46.770] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:28:47.810] Dan Beecher: Because that's part of their personality.{{< /line >}}
+{{< line >}}[00:28:49.490] Dan Beecher: They just, they, they, you know, skepticism is good, but badly applied skepticism is bad.{{< /line >}}
+{{< line >}}[00:28:57.090] Dan Beecher: And I think, yeah, I think there—{{< /line >}}
+{{< line >}}[00:28:58.690] Dan McClellan: Are a lot of people who, there's an awful lot of pushback.{{< /line >}}
+{{< line >}}[00:29:03.170] Dan McClellan: And so you can, you can revise your position or you can dig in your heels.{{< /line >}}
+{{< line >}}[00:29:10.780] Dan McClellan: And we've got an awful lot of that going on where people are just digging in their heels and saying, "No, I'm drawing a line here and I don't care if it's just bafflingly dumb, I'm going to dig in my heels because this is an identity marker now."{{< /line >}}
+{{< line >}}[00:29:27.660] Dan McClellan: And so to show everybody I'm, I'm a real one, that I'm, I'm one of the, one of the good ones, I'm going to dig in my heels and make ridiculous claims in public just to put on display just how mindless I'm willing to be.{{< /line >}}
+{{< line >}}[00:29:46.270] Dan Beecher: I don't know, I, I'm gonna push back on you because I've seen a lot of actual, actually smart people making really interesting and scientifically literate arguments about why this could be true.{{< /line >}}
+{{< line >}}[00:30:01.150] Dan Beecher: And in the end it doesn't hold up.{{< /line >}}
+{{< line >}}[00:30:04.350] Dan Beecher: But they're using, they're using real math, they're using real, you know, real ideas and concepts that, that, that dumb people wouldn't come up with.{{< /line >}}
+{{< line >}}[00:30:15.350] Dan McClellan: Well, they're, they're performing that.{{< /line >}}
+{{< line >}}[00:30:17.750] Dan McClellan: Because when you try to take real math and real science and all—{{< /line >}}
+{{< line >}}[00:30:23.350] Dan McClellan: Take all of it.{{< /line >}}
+{{< line >}}[00:30:24.710] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:30:25.269] Dan McClellan: Then it obviously doesn't make any sense.{{< /line >}}
+{{< line >}}[00:30:27.670] Dan McClellan: I think those arguments are always isolating a tiny little sliver of real math and real science.{{< /line >}}
+{{< line >}}[00:30:34.630] Dan McClellan: To say if we, if we look at this little part right here, then that can be made to fit if you squint hard enough at it.{{< /line >}}
+{{< line >}}[00:30:43.140] Dan McClellan: And therefore the whole rest of the scientific community can just be summarily dismissed.{{< /line >}}
+{{< line >}}[00:30:51.460] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:30:51.820] Dan McClellan: And it always seems to come down to that, whether it's, it's climate change or whether it's the global flood or whether it's a round Earth.{{< /line >}}
+{{< line >}}[00:30:59.940] Dan McClellan: I love the last couple times we've had these eclipses or there's been a, a lunar eclipse.{{< /line >}}
+{{< line >}}[00:31:09.290] Dan McClellan: I love the, the folks who show the image of the moon and then there's like a, a little tiny disk-shaped shadow passing over the moon.{{< /line >}}
+{{< line >}}[00:31:19.170] Dan McClellan: It's like, "Shouldn't we be seeing this?"{{< /line >}}
+{{< line >}}[00:31:22.730] Dan Beecher: Like a slit as opposed to a circle or whatever?{{< /line >}}
+{{< line >}}[00:31:25.850] Dan McClellan: And depending on which part of the Earth you're on, maybe it's a, it's a little more oblong, but it's—{{< /line >}}
+{{< line >}}[00:31:30.730] Dan McClellan: Right, it's never approaching a perfect circle.{{< /line >}}
+{{< line >}}[00:31:35.180] Dan Beecher: Yeah, it, it is funny.{{< /line >}}
+{{< line >}}[00:31:36.540] Dan Beecher: And you know, I, I will say that the guys, the people who are, who are genuinely smart and they, they focus in on some of these, you know, scientific questions and mathematical questions in terms of the, the shape of the Earth.{{< /line >}}
+{{< line >}}[00:31:50.780] Dan Beecher: You can generally find them like going all the way with their experimentation or with their, with their, you know, math and then eventually going, "Oh wait, that didn't work out the way it should have."{{< /line >}}
+{{< line >}}[00:32:03.940] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:32:04.580] Dan Beecher: Hang on.{{< /line >}}
+{{< line >}}[00:32:05.700] Dan Beecher: And stuff.{{< /line >}}
+{{< line >}}[00:32:06.980] Dan McClellan: So anyway, there have been some, there have been some people who have like converted to reality and, and like have been high profile about it, have gone out and say, I no longer believe this.{{< /line >}}
+{{< line >}}[00:32:20.380] Dan McClellan: And you know, they've been, they've had big time followings on YouTube and, and elsewhere in social media and have.{{< /line >}}
+{{< line >}}[00:32:27.270] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:32:27.750] Dan McClellan: And have seen the light and then have come back to, to try to evangelize their, their compatriots and.{{< /line >}}
+{{< line >}}[00:32:37.670] Dan McClellan: Doesn't go well for them at least.{{< /line >}}
+{{< line >}}[00:32:39.390] Dan McClellan: No, at least with their old community.{{< /line >}}
+{{< line >}}[00:32:41.670] Dan Beecher: Once you've converted people to, to, to something like that, it's hard to get them to let, to let go of it.{{< /line >}}
+{{< line >}}[00:32:48.710] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:32:49.670] Dan Beecher: However, smart people, good people, people who are of good faith and wish only to be seeking better and more up to date knowledge, do often revise their positions, their older positions.{{< /line >}}
+{{< line >}}[00:33:04.940] Dan McClellan: Yes, they do.{{< /line >}}
+{{< line >}}[00:33:05.820] Dan Beecher: Which I think is a good segue into our opportunities for growth.{{< /line >}}
+{{< line >}}[00:33:13.820] Dan Beecher: So tell us, Dan, you, you know, we teased it at the beginning.{{< /line >}}
+{{< line >}}[00:33:18.950] Dan Beecher: You had a position that was, you know, that you took on our show and elsewhere, I think.{{< /line >}}
+{{< line >}}[00:33:27.510] Dan Beecher: Yeah, then, and then you, and you ended up butting up against some people.{{< /line >}}
+{{< line >}}[00:33:33.590] Dan Beecher: Talk us, talk us through it.{{< /line >}}
+{{< line >}}[00:33:35.430] Dan Beecher: Tell us what, what you had originally said.{{< /line >}}
+{{< line >}}[00:33:37.710] Dan Beecher: And then.{{< /line >}}
+{{< line >}}[00:33:38.070] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:33:38.790] Dan Beecher: And then what arguments have been made that steered you in a slightly different direction?{{< /line >}}
+{{< line >}}[00:33:45.040] Dan McClellan: Well, like nine or ten weeks ago we did an episode of the show where one of the things we talked about was Matthew's description of the triumphal entry and Jesus riding into Jerusalem on two animals at the same time.{{< /line >}}
+{{< line >}}[00:34:00.000] Dan McClellan: And it was a laugh riot.{{< /line >}}
+{{< line >}}[00:34:02.040] Dan Beecher: We had, we had a good time.{{< /line >}}
+{{< line >}}[00:34:03.520] Dan McClellan: We had a good time and I had, and I had made a video about that probably two or three weeks prior to that.{{< /line >}}
+{{< line >}}[00:34:12.060] Dan McClellan: And the way I had interpreted the text is we have this text where it says Jesus tells them, hey, go get me.{{< /line >}}
+{{< line >}}[00:34:20.300] Dan McClellan: You go to this house, you'll find a donkey and you will find a colt tied up with it.{{< /line >}}
+{{< line >}}[00:34:27.020] Dan McClellan: Untie them, bring them to me.{{< /line >}}
+{{< line >}}[00:34:28.540] Dan McClellan: If the owner gives you any guff, just give them a swift backhand.{{< /line >}}
+{{< line >}}[00:34:33.340] Dan McClellan: Tell them the Lord has need of them and they'll let you go.{{< /line >}}
+{{< line >}}[00:34:37.230] Dan McClellan: And it says they brought the, the donkey and the colt to Jesus.{{< /line >}}
+{{< line >}}[00:34:41.150] Dan McClellan: And this was done so that the prophecy in Zechariah 9:9 would be fulfilled and they took their cloaks and they put them on them and they put him on them.{{< /line >}}
+{{< line >}}[00:34:53.870] Dan McClellan: And the, and initially I was, I was pointing out the distinction between the King James rendering, which I was suggesting obscures this by saying they sat him thereon, which is not marked for number.{{< /line >}}
+{{< line >}}[00:35:07.320] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:35:08.360] Dan McClellan: But the them is very clearly plural.{{< /line >}}
+{{< line >}}[00:35:10.520] Dan McClellan: And whether you understand the, the antecedent of that pronoun to be the them that is the animals or the them that is the cloaks that are on the animals.{{< /line >}}
+{{< line >}}[00:35:22.360] Dan McClellan: The way the text is telling the story, Jesus is sitting on top of two animals.{{< /line >}}
+{{< line >}}[00:35:27.880] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:35:28.920] Dan Beecher: And, and we went through a bunch of different good ways to visualize this.{{< /line >}}
+{{< line >}}[00:35:33.550] Dan McClellan: Yes, yes.{{< /line >}}
+{{< line >}}[00:35:34.270] Dan Beecher: Including, including these sofa and ottoman style, the, the, the human donkey pyramid where you've got a donkey, a little donkey, and then a person up on top, right.{{< /line >}}
+{{< line >}}[00:35:48.830] Dan McClellan: There.{{< /line >}}
+{{< line >}}[00:35:49.190] Dan McClellan: There are a bunch of different ways that it has been visualized historically.{{< /line >}}
+{{< line >}}[00:35:52.750] Dan McClellan: And as I pointed out, we even have like medieval artwork from Christians who are representing Jesus sitting on the larger donkey with his feet resting on the colt that is tied up.{{< /line >}}
+{{< line >}}[00:36:04.090] Dan McClellan: Or some people say he, he switched back and forth.{{< /line >}}
+{{< line >}}[00:36:08.250] Dan McClellan: And after I, I made my initial video and then we released the podcast episode, there was some debate online on places like YouTube and elsewhere where apologists were, were bringing up challenges to this.{{< /line >}}
+{{< line >}}[00:36:21.850] Dan McClellan: And most of it had to do with how we think Matthew was interpreting the prophecy, whether it was a misunderstanding or whether he was intentionally interpreting it a certain way and presenting the fulfillment of a prophecy in a very careful, very specific way.{{< /line >}}
+{{< line >}}[00:36:40.220] Dan McClellan: And I think in our episode I even said whether or not you think that Matthew misunderstood this, but I suggested that Matthew was representing Jesus as riding on two animals because they were so concerned with ensuring that Jesus is fulfilling this prophecy to the T. And the prophecy as Matthew is representing it comes through.{{< /line >}}
+{{< line >}}[00:37:04.550] Dan McClellan: It's, it's a Greek translation.{{< /line >}}
+{{< line >}}[00:37:06.710] Dan McClellan: It's not exactly what the Septuagint says, but it's close to it.{{< /line >}}
+{{< line >}}[00:37:10.230] Dan McClellan: And I suggested that the apposition of the original prophecy.{{< /line >}}
+{{< line >}}[00:37:17.390] Dan McClellan: So the original prophecy in Hebrew says he will come riding on a donkey, even a colt, the foal of a donkey.{{< /line >}}
+{{< line >}}[00:37:25.850] Dan McClellan: And this is apposition.{{< /line >}}
+{{< line >}}[00:37:26.850] Dan McClellan: This is, this is just saying the same thing two different ways.{{< /line >}}
+{{< line >}}[00:37:30.050] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:37:30.410] Dan McClellan: So there's one animal in view.{{< /line >}}
+{{< line >}}[00:37:33.090] Dan McClellan: And, or actually, I think, I think the Hebrew says the foal of, of jennies or something like that.{{< /line >}}
+{{< line >}}[00:37:40.450] Dan McClellan: And in the Greek translation, however, it just seems to be two animals.{{< /line >}}
+{{< line >}}[00:37:45.080] Dan McClellan: He will come riding on a donkey and a colt, the foal of a donkey or jennies or something like that.{{< /line >}}
+{{< line >}}[00:37:52.200] Dan McClellan: And, and I suggested that Matthew was just trying to fulfill the prophecy exactly as they found in the Greek translation.{{< /line >}}
+{{< line >}}[00:38:00.600] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:38:02.120] Dan McClellan: And, and listening to the discussion, watching people argue about this, I think that there's a better way to understand it.{{< /line >}}
+{{< line >}}[00:38:11.630] Dan McClellan: I think that Matthew is actually trying to eat his cake and have it too.{{< /line >}}
+{{< line >}}[00:38:16.590] Dan McClellan: I think that Matthew is.{{< /line >}}
+{{< line >}}[00:38:18.110] Dan McClellan: Because there is ambiguity regarding the.{{< /line >}}
+{{< line >}}[00:38:20.990] Dan McClellan: "On them" pronoun.{{< /line >}}
+{{< line >}}[00:38:23.150] Dan McClellan: Does this refer to the clothing?{{< /line >}}
+{{< line >}}[00:38:24.590] Dan McClellan: Does it refer to the animals?{{< /line >}}
+{{< line >}}[00:38:26.990] Dan McClellan: And so naturally, like, if somebody told you this story and you'd never heard any of this before, you would be like, wait, is he sitting on both animals?{{< /line >}}
+{{< line >}}[00:38:39.720] Dan McClellan: Because it's just not clear.{{< /line >}}
+{{< line >}}[00:38:41.080] Dan McClellan: You would want clarification and the story does not clarify.{{< /line >}}
+{{< line >}}[00:38:45.400] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:38:46.520] Dan McClellan: So if Matthew sees the prophecy as saying two animals, it seems to me he's telling the story in a way that plausibly could be said to fulfill this prophecy with two animals and yet also plausibly could be interpreted as only as him having only one mount, him riding on one.{{< /line >}}
+{{< line >}}[00:39:08.800] Dan McClellan: Only one animal.{{< /line >}}
+{{< line >}}[00:39:09.960] Dan McClellan: So the idea is, hey, Matthew, are there two animals or one?{{< /line >}}
+{{< line >}}[00:39:14.160] Dan McClellan: Precisely, yeah.{{< /line >}}
+{{< line >}}[00:39:17.520] Dan Beecher: Are there two animals or one.{{< /line >}}
+{{< line >}}[00:39:18.960] Dan Beecher: Oh, look over there.{{< /line >}}
+{{< line >}}[00:39:24.560] Dan Beecher: So, so the, if I understand your.{{< /line >}}
+{{< line >}}[00:39:27.200] Dan Beecher: The new take.{{< /line >}}
+{{< line >}}[00:39:28.000] Dan Beecher: The new take is that it's not Matthew specifically saying Jesus is riding on these two animals.{{< /line >}}
+{{< line >}}[00:39:36.730] Dan Beecher: It is Matthew being purposefully obtuse so that you can take, you could take either position and it would be justifiable with his language.{{< /line >}}
+{{< line >}}[00:39:49.450] Dan McClellan: I, I think that makes more sense to me now in, in light of the, the arguments I've seen.{{< /line >}}
+{{< line >}}[00:39:56.930] Dan McClellan: And, and there, there are other arguments out there.{{< /line >}}
+{{< line >}}[00:39:58.890] Dan McClellan: There's a scholar named Carlson who published two papers in, I think Catholic Biblical Quarterly like five years ago, arguing that, that the, the way Matthew describes the prophecy is the, the plenary fulfillment of of Zechariah 9:9, where he's trying to include all of the imagery, all of the possible imagery that comes from Zechariah.{{< /line >}}
+{{< line >}}[00:40:27.500] Dan McClellan: And it's a complex argument for why the on them means that Jesus was actually on the colt there.{{< /line >}}
+{{< line >}}[00:40:36.060] Dan McClellan: I think reasonable people can disagree about this.{{< /line >}}
+{{< line >}}[00:40:39.020] Dan McClellan: There have been numerous different ways to try to explain what's going on here.{{< /line >}}
+{{< line >}}[00:40:44.460] Dan McClellan: The more I think about it, the more I consider the other arguments.{{< /line >}}
+{{< line >}}[00:40:49.020] Dan McClellan: I don't think there's a way to say the text indicates Jesus is only riding on one animal.{{< /line >}}
+{{< line >}}[00:40:55.990] Dan McClellan: I don't think the two.{{< /line >}}
+{{< line >}}[00:40:57.110] Dan McClellan: The two mount reading is precluded by anything.{{< /line >}}
+{{< line >}}[00:41:01.030] Dan McClellan: I think that has to be a possibility.{{< /line >}}
+{{< line >}}[00:41:03.190] Dan McClellan: But it makes more sense to me now that the ambiguity there has a rhetorical role in the way that Matthew has crafted this.{{< /line >}}
+{{< line >}}[00:41:13.990] Dan McClellan: Because, you know, if Matthew shows this draft to somebody, hey, look what I'm working on.{{< /line >}}
+{{< line >}}[00:41:18.840] Dan McClellan: They're going to be like, I think you may need to make it a little more clear what's going on here.{{< /line >}}
+{{< line >}}[00:41:23.080] Dan McClellan: And he's like, yeah, that's the point that makes the most sense to me.{{< /line >}}
+{{< line >}}[00:41:28.520] Dan McClellan: And so this is the judgment that, that I am a little more comfortable with now.{{< /line >}}
+{{< line >}}[00:41:35.480] Dan McClellan: That's not to say that, you know, this is the way it has to be and everybody is wrong.{{< /line >}}
+{{< line >}}[00:41:40.760] Dan McClellan: This is not the, the consensus view.{{< /line >}}
+{{< line >}}[00:41:43.560] Dan Beecher: Oh no, no, no.{{< /line >}}
+{{< line >}}[00:41:44.400] Dan Beecher: This is, this is now.{{< /line >}}
+{{< line >}}[00:41:45.800] Dan Beecher: This is the official position of the Data over Dogma pod.{{< /line >}}
+{{< line >}}[00:41:50.660] Dan Beecher: Its listeners have to now assume and.{{< /line >}}
+{{< line >}}[00:41:53.300] Dan McClellan: All of its subsidiaries and affiliates.{{< /line >}}
+{{< line >}}[00:41:55.700] Dan Beecher: That's right, everyone now from now on has to in perpetuity this way until further revised by you because we are all your acolytes and have to believe.{{< /line >}}
+{{< line >}}[00:42:06.180] Dan McClellan: As you do, which is, is a horrific thing to think about.{{< /line >}}
+{{< line >}}[00:42:10.860] Dan McClellan: And I'm glad it will never be the case.{{< /line >}}
+{{< line >}}[00:42:14.420] Dan Beecher: Well, I mean, it's kind of the point of having this segment.{{< /line >}}
+{{< line >}}[00:42:17.060] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:42:17.300] Dan Beecher: Is the idea that like, just to demonstrate that this is all we're doing the best we can.{{< /line >}}
+{{< line >}}[00:42:24.400] Dan Beecher: Like scholarship in general as a concept is especially scholarship like this where it's about something that was written 2,000 plus years ago.{{< /line >}}
+{{< line >}}[00:42:37.360] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:42:37.800] Dan Beecher: You know, two or more.{{< /line >}}
+{{< line >}}[00:42:39.840] Dan Beecher: And, and all we have is best guesses and all we have.{{< /line >}}
+{{< line >}}[00:42:45.040] Dan Beecher: And, and you know, we, and it's important to revise those ideas as other people's arguments come into play.{{< /line >}}
+{{< line >}}[00:42:53.990] Dan McClellan: Yeah, I agree.{{< /line >}}
+{{< line >}}[00:42:55.390] Dan McClellan: I think that, you know, this is not, is not a quote unquote hard science.{{< /line >}}
+{{< line >}}[00:43:01.270] Dan McClellan: It's a real squishy science for the most part.{{< /line >}}
+{{< line >}}[00:43:03.910] Dan McClellan: What we're doing is we're taking a bunch of judgment calls and we're just trying to see which judgment calls make the most sense, have the most support.{{< /line >}}
+{{< line >}}[00:43:12.790] Dan McClellan: And that's kind of our moving target.{{< /line >}}
+{{< line >}}[00:43:15.430] Dan McClellan: This is where we are right now and, and everybody changes on these things.{{< /line >}}
+{{< line >}}[00:43:19.680] Dan McClellan: I've a paper I published in 2018 in the Journal of Biblical Literature on Psalm 82 where I argued that Psalm 82 is a post-exilic, very late composition.{{< /line >}}
+{{< line >}}[00:43:31.200] Dan McClellan: If you had told me 10 years before that that I was going to be arguing that Psalm 82 was post-exilic, I would have laughed in your face because I was with the majority of scholars who saw Psalm 82 as one of the oldest texts in the Hebrew Bible.{{< /line >}}
+{{< line >}}[00:43:47.690] Dan McClellan: One of the earliest passages that sees Adonai and El as separate deities.{{< /line >}}
+{{< line >}}[00:43:53.330] Dan McClellan: That is a divine council scene.{{< /line >}}
+{{< line >}}[00:43:55.450] Dan McClellan: That is just this archaic mythology.{{< /line >}}
+{{< line >}}[00:43:59.410] Dan McClellan: And the more I looked at it and the more I looked at it and the more I tried to figure out what was going on here, I, I slowly changed my mind until I got to the point that I was like, no, I am convinced that it is the other way around.{{< /line >}}
+{{< line >}}[00:44:13.890] Dan McClellan: And so if you want to go see the argument that I've made, you can find my article on, on my Linktree.{{< /line >}}
+{{< line >}}[00:44:20.460] Dan McClellan: It's called The Gods' Complaint.{{< /line >}}
+{{< line >}}[00:44:22.500] Dan McClellan: Plural Gods' complaint.{{< /line >}}
+{{< line >}}[00:44:24.340] Dan McClellan: Psalm 82 is a psalm of complaint.{{< /line >}}
+{{< line >}}[00:44:26.460] Dan McClellan: And, and that's an example.{{< /line >}}
+{{< line >}}[00:44:27.940] Dan McClellan: People ask me from time to time, what are some things you've changed your mind about.{{< /line >}}
+{{< line >}}[00:44:31.820] Dan McClellan: That's an example.{{< /line >}}
+{{< line >}}[00:44:33.740] Dan McClellan: I think the Matthew writing, the triumphal entry question is another.{{< /line >}}
+{{< line >}}[00:44:38.300] Dan McClellan: There, there have been these things and as we talked with David Carr last week, and even he said that 1996 David Carr doesn't always agree with 2024 David Carr.{{< /line >}}
+{{< line >}}[00:44:50.340] Dan McClellan: And yeah, this is just, this is just the nature of the beast.{{< /line >}}
+{{< line >}}[00:44:54.580] Dan McClellan: And so, and it's the mark of.{{< /line >}}
+{{< line >}}[00:44:56.300] Dan Beecher: A, of, of a honest scholar or an honest person to say, like, I don't trust someone who agrees with their, you know, with 15 years ago, them about everything.{{< /line >}}
+{{< line >}}[00:45:10.460] Dan Beecher: That's not, you haven't done any work in that time period, if that's how you are.{{< /line >}}
+{{< line >}}[00:45:16.380] Dan McClellan: And I think that's, I think that's one of the indications of someone who is, who is not committed to a series of dogmas, because there are a lot of folks who, they have some wiggle room, but there are walls, and they are not going to go over those walls, not for anything whatsoever.{{< /line >}}
+{{< line >}}[00:45:37.380] Dan McClellan: And, and there are folks who, you know, they may be convinced of stuff to, to differing degrees, but for the most part, anything's fair game.{{< /line >}}
+{{< line >}}[00:45:44.660] Dan McClellan: And, and I'd like to think that I'm in that position that I have tried to model that where I'm not committed to anything to the degree that I, I just will say, no, it's impossible that it is this other thing within, within reason, you know, the flat earth, I think is something that's, you know, that's not the kind of thing we're talking about.{{< /line >}}
+{{< line >}}[00:46:05.940] Dan Beecher: I just thought of that, because you were talking about the walls that people have set up and they're sort of dogmatic walls.{{< /line >}}
+{{< line >}}[00:46:12.400] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:46:12.720] Dan Beecher: And my, and the image that instantly popped into my mind, the ice wall is the ice wall that flat earthers think surrounds the disc of the earth.{{< /line >}}
+{{< line >}}[00:46:22.440] Dan McClellan: It would be, it would be fun to see if there were any flat earthers who were talking about this ice wall before.{{< /line >}}
+{{< line >}}[00:46:29.560] Dan McClellan: Game of Thrones.{{< /line >}}
+{{< line >}}[00:46:30.360] Dan Beecher: Game of Thrones.{{< /line >}}
+{{< line >}}[00:46:32.680] Dan Beecher: Hey, man, that, that thing looks pretty good.{{< /line >}}
+{{< line >}}[00:46:34.960] Dan McClellan: I think this idea.{{< /line >}}
+{{< line >}}[00:46:36.480] Dan McClellan: Yeah, but in terms of actual, like, legitimate scholarly theories, I think everything has to be potentially on the table.{{< /line >}}
+{{< line >}}[00:46:49.840] Dan McClellan: And that's one of the things that frustrates me with a lot of the content that I engage with, is that there's only half a table there and they're only going to play with whatever is on half of that table.{{< /line >}}
+{{< line >}}[00:47:01.520] Dan McClellan: Yeah, but, yeah, so not, not a.{{< /line >}}
+{{< line >}}[00:47:04.520] Dan Beecher: Huge change, but no, it seems pretty minor when it comes to it.{{< /line >}}
+{{< line >}}[00:47:09.280] Dan McClellan: Well, I hesitated to like, when I decided to make this video this morning for my social media accounts.{{< /line >}}
+{{< line >}}[00:47:16.160] Dan McClellan: The socials.{{< /line >}}
+{{< line >}}[00:47:17.600] Dan McClellan: It, it took me, I, I was like contemplating, do I really want to do this?{{< /line >}}
+{{< line >}}[00:47:21.360] Dan McClellan: I'm opening myself up for, for criticism, even though it's a pretty minor thing.{{< /line >}}
+{{< line >}}[00:47:26.890] Dan McClellan: But, but that's one of the, one of the things that, that, that bothers me.{{< /line >}}
+{{< line >}}[00:47:31.130] Dan McClellan: And that's one of the things that can disincentivize more open, honest engagement.{{< /line >}}
+{{< line >}}[00:47:38.490] Dan McClellan: I would be lying if I said that, you know, I just go full bore whatever I'm thinking without ever considering the, the implications or the consequences.{{< /line >}}
+{{< line >}}[00:47:50.050] Dan McClellan: That's just not true.{{< /line >}}
+{{< line >}}[00:47:52.250] Dan McClellan: I do think about that stuff and I would like to think that it does not.{{< /line >}}
+{{< line >}}[00:47:56.390] Dan McClellan: I am not self censoring because of that.{{< /line >}}
+{{< line >}}[00:47:59.670] Dan McClellan: So I, I was like, no, if I, I feel this way, I've.{{< /line >}}
+{{< line >}}[00:48:03.910] Dan McClellan: I've got to go through with this just because I, I wouldn't be able to look at myself in the mirror if I were like, oh, no, they're gonna make fun of me.{{< /line >}}
+{{< line >}}[00:48:13.750] Dan Beecher: Well, let them.{{< /line >}}
+{{< line >}}[00:48:14.870] Dan Beecher: I mean, the truth is that, like, the people who would make fun of someone for revising their position based on new or different information are the people that, like, they're, they're really telling on themselves about what, what's important to them and what they value, which isn't truth.{{< /line >}}
+{{< line >}}[00:48:34.040] Dan Beecher: Certainly it may be something like, you know, I mean, people value their dogmatic beliefs and whatever, but it would be pretty hypocritical of you to, to have a dogmatic view that is impermeable to data, considering the title of our show.{{< /line >}}
+{{< line >}}[00:48:55.810] Dan McClellan: Yeah, I'm trying, I'm trying to live up.{{< /line >}}
+{{< line >}}[00:48:57.730] Dan McClellan: A lot of people are like, there's not.{{< /line >}}
+{{< line >}}[00:48:59.330] Dan McClellan: You can't be data over dogma.{{< /line >}}
+{{< line >}}[00:49:01.250] Dan McClellan: And I'm like, look, from day one, I have said this is aspirational.{{< /line >}}
+{{< line >}}[00:49:06.610] Dan McClellan: Yeah, nobody can, can do this perfectly.{{< /line >}}
+{{< line >}}[00:49:09.970] Dan McClellan: It is aspirational.{{< /line >}}
+{{< line >}}[00:49:11.170] Dan McClellan: And so I'm trying to live up to the standards to which we aspire on the Data Over Dogma podcast.{{< /line >}}
+{{< line >}}[00:49:18.660] Dan McClellan: And that's why I thought, hey, maybe this would be a good segment to talk about.{{< /line >}}
+{{< line >}}[00:49:22.820] Dan McClellan: It's.{{< /line >}}
+{{< line >}}[00:49:23.460] Dan McClellan: It's a little shift, but it's an example of, of me owning up to having changed my perspective.{{< /line >}}
+{{< line >}}[00:49:32.340] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:49:32.740] Dan Beecher: And I, and it's funny, I made fun of it for being little, but as you point out, like, entire careers are made on tiny little.{{< /line >}}
+{{< line >}}[00:49:42.860] Dan Beecher: Like, like this is, this is a field of study that concerns itself with minutiae.{{< /line >}}
+{{< line >}}[00:49:48.620] Dan Beecher: So I think I, I think, you know, I, I should be more.{{< /line >}}
+{{< line >}}[00:49:53.780] Dan Beecher: I should be more open to little things.{{< /line >}}
+{{< line >}}[00:49:57.260] Dan McClellan: It's the little things.{{< /line >}}
+{{< line >}}[00:49:58.700] Dan Beecher: It's the little things.{{< /line >}}
+{{< line >}}[00:50:00.540] Dan McClellan: Like the great poet once said, it's.{{< /line >}}
+{{< line >}}[00:50:02.220] Dan McClellan: It's the little people.{{< /line >}}
+{{< line >}}[00:50:03.260] Dan McClellan: Like you, Clark, and your family.{{< /line >}}
+{{< line >}}[00:50:06.470] Dan McClellan: That's Christmas Vacation.{{< /line >}}
+{{< line >}}[00:50:08.790] Dan Beecher: Yes.{{< /line >}}
+{{< line >}}[00:50:09.190] Dan McClellan: Just in case.{{< /line >}}
+{{< line >}}[00:50:09.830] Dan McClellan: One of.{{< /line >}}
+{{< line >}}[00:50:10.270] Dan McClellan: One of the greatest films ever made, in my humble opinion.{{< /line >}}
+{{< line >}}[00:50:15.830] Dan Beecher: Yeah, well, it's.{{< /line >}}
+{{< line >}}[00:50:17.270] Dan Beecher: That Griswold family is a real hoot.{{< /line >}}
+{{< line >}}[00:50:20.950] Dan Beecher: Beverly D'Angelo, you know, lots of, lots of, lots of young crushes.{{< /line >}}
+{{< line >}}[00:50:27.510] Dan Beecher: I'll just say.{{< /line >}}
+{{< line >}}[00:50:28.710] Dan Beecher: Oh, okay.{{< /line >}}
+{{< line >}}[00:50:29.670] Dan McClellan: We didn't need to go there, but I.{{< /line >}}
+{{< line >}}[00:50:31.670] Dan Beecher: Well, but.{{< /line >}}
+{{< line >}}[00:50:32.110] Dan McClellan: All right, that's fair that she came up.{{< /line >}}
+{{< line >}}[00:50:33.750] Dan Beecher: She came up.{{< /line >}}
+{{< line >}}[00:50:34.870] Dan Beecher: All right, well, listen, you and I are going to continue our conversation in a much less formal way over on the Patreon.{{< /line >}}
+{{< line >}}[00:50:44.050] Dan Beecher: So if any of you friends out there would like to help be a part of making this show, go and get extra added bonus content and an early ad free version of every episode of the show.{{< /line >}}
+{{< line >}}[00:50:55.170] Dan Beecher: You can become a patron, too.{{< /line >}}
+{{< line >}}[00:50:56.770] Dan Beecher: Just go head over to patreon.com/dataoverdogma if you'd like to do that, you can reach us by writing into contact@dataoverdogmapod.com Other than that, we'll just see y'all again next week.{{< /line >}}
+{{< line >}}[00:51:11.050] Dan McClellan: Bye, everybody.{{< /line >}}

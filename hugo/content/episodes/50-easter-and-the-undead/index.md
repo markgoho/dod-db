@@ -1,0 +1,925 @@
+---
+title: Easter and the Undead
+date: 2024-03-18T00:00:00Z
+episodeNumber: 50
+videoId: vHKXU5rmwyo
+aliases:
+  - /episodes/50/
+tags:
+  - Jesus
+  - Gospel of John
+  - resurrection
+  - Gospel of Mark
+  - Jerusalem
+  - Pontius Pilate
+  - Mary Magdalene
+  - Gospel of Matthew
+  - Bethany
+  - Romans
+  - Judas Iscariot
+  - New Testament
+  - Passover
+  - Christianity
+  - Sanhedrin
+  - Easter
+  - Holy Week
+  - Bart Ehrman
+  - biblical canon
+  - Galilee
+  - Hebrew Bible
+  - Hell
+  - Jonah
+  - Judaism
+  - King James Version
+  - Paul
+  - Satan
+  - Antiochus IV Epiphanes
+  - Athanasius of Alexandria
+  - Book of Acts
+  - Book of Revelation
+  - Daniel
+  - Elijah
+  - Ezekiel
+  - Hebrews
+  - Helen Bond
+  - Herod the Great
+  - Israel
+  - Peter
+speakers:
+  - Dan McClellan
+  - Dan Beecher
+draft: false
+---
+
+{{< line >}}[00:00:01.040] Dan McClellan: You know, you have different takes on.{{< /line >}}
+{{< line >}}[00:00:02.840] Dan McClellan: On Pilate, where Pilate's like, this man is innocent, but I will do whatever you tell me to.{{< /line >}}
+{{< line >}}[00:00:09.120] Dan McClellan: Which is very clearly fiction because the actual Pilate murdered Jewish citizens in Jerusalem by the handful whenever they annoyed him.{{< /line >}}
+{{< line >}}[00:00:20.960] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:00:21.320] Dan McClellan: So the notion that they would get together and be like, we're gonna tell on you, and he was like, okay, I'll do what you want is just not historical.{{< /line >}}
+{{< line >}}[00:00:33.020] Dan McClellan: Hey, Everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:34.740] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
+{{< line >}}[00:00:36.060] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation.{{< /line >}}
+{{< line >}}[00:00:45.860] Dan McClellan: About the same.{{< /line >}}
+{{< line >}}[00:00:46.940] Dan Beecher: And we do it with enthusiasm and with style.{{< /line >}}
+{{< line >}}[00:00:50.300] Dan Beecher: I don't know why I needed to be.{{< /line >}}
+{{< line >}}[00:00:51.700] Dan Beecher: Why did I want to just be enthusiastic in that moment?{{< /line >}}
+{{< line >}}[00:00:54.220] Dan McClellan: I don't know.{{< /line >}}
+{{< line >}}[00:00:54.860] Dan Beecher: I was.{{< /line >}}
+{{< line >}}[00:00:55.260] Dan Beecher: I'm excited.{{< /line >}}
+{{< line >}}[00:00:56.440] Dan McClellan: We're trying to cast a wider net for.{{< /line >}}
+{{< line >}}[00:00:59.240] Dan McClellan: For our audience.{{< /line >}}
+{{< line >}}[00:01:00.200] Dan Beecher: That's right.{{< /line >}}
+{{< line >}}[00:01:00.920] Dan Beecher: That's right.{{< /line >}}
+{{< line >}}[00:01:01.360] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:01:01.680] Dan McClellan: We tried the sound effects a couple of times.{{< /line >}}
+{{< line >}}[00:01:03.600] Dan McClellan: It didn't go so well, but I.{{< /line >}}
+{{< line >}}[00:01:05.920] Dan Beecher: Thought the slide whistle worked.{{< /line >}}
+{{< line >}}[00:01:07.280] Dan Beecher: I don't know why you were against it, but fine, fine.{{< /line >}}
+{{< line >}}[00:01:10.520] Dan McClellan: I really like the sound effect, but, you know, there's.{{< /line >}}
+{{< line >}}[00:01:15.440] Dan McClellan: There's stuff.{{< /line >}}
+{{< line >}}[00:01:16.280] Dan McClellan: There's baggage there.{{< /line >}}
+{{< line >}}[00:01:18.680] Dan McClellan: So how are things today, man?{{< /line >}}
+{{< line >}}[00:01:21.640] Dan Beecher: It's good.{{< /line >}}
+{{< line >}}[00:01:22.730] Dan Beecher: We are fast approaching, or depending on when you hear this recently passed Holy Week.{{< /line >}}
+{{< line >}}[00:01:30.810] Dan Beecher: We're.{{< /line >}}
+{{< line >}}[00:01:31.250] Dan McClellan: We're.{{< /line >}}
+{{< line >}}[00:01:31.490] Dan Beecher: We're trying to record this in a time, in a timely manner to make sure that it appears sometime around Easter.{{< /line >}}
+{{< line >}}[00:01:38.410] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:01:38.890] Dan Beecher: And that is.{{< /line >}}
+{{< line >}}[00:01:42.010] Dan Beecher: So that's a fun time for a lot of folks.{{< /line >}}
+{{< line >}}[00:01:44.490] Dan McClellan: The most beloved of holidays for many Christians around the world, although most of them don't call it Easter.{{< /line >}}
+{{< line >}}[00:01:50.800] Dan McClellan: But maybe we'll talk.{{< /line >}}
+{{< line >}}[00:01:52.160] Dan McClellan: Maybe we'll talk about that.{{< /line >}}
+{{< line >}}[00:01:53.440] Dan Beecher: Well, we talked about it a year ago, if you'll recall.{{< /line >}}
+{{< line >}}[00:01:56.000] Dan Beecher: We talked about.{{< /line >}}
+{{< line >}}[00:01:56.880] Dan Beecher: About Pesach.{{< /line >}}
+{{< line >}}[00:01:58.320] Dan Beecher: And there you go.{{< /line >}}
+{{< line >}}[00:02:00.080] Dan Beecher: And the.{{< /line >}}
+{{< line >}}[00:02:00.800] Dan Beecher: You know, the.{{< /line >}}
+{{< line >}}[00:02:01.760] Dan Beecher: The fact that it's Passover.{{< /line >}}
+{{< line >}}[00:02:03.520] Dan Beecher: Anyway, here's the thing about Easter.{{< /line >}}
+{{< line >}}[00:02:05.920] Dan Beecher: I find it very confusing.{{< /line >}}
+{{< line >}}[00:02:08.480] Dan Beecher: As a child, I always found it very confusing because there was joy and.{{< /line >}}
+{{< line >}}[00:02:14.450] Dan Beecher: And candy and fun and bunnies and a murder.{{< /line >}}
+{{< line >}}[00:02:22.450] Dan Beecher: A really important, horrific, painful, awful murder.{{< /line >}}
+{{< line >}}[00:02:27.010] Dan McClellan: State violence.{{< /line >}}
+{{< line >}}[00:02:28.290] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:02:28.690] Dan Beecher: State sanctioned violence, which felt incongruous to me.{{< /line >}}
+{{< line >}}[00:02:33.330] Dan Beecher: I don't know about the rest of you all, but.{{< /line >}}
+{{< line >}}[00:02:35.410] Dan McClellan: Well, I didn't know the word incongruous when I was a kid celebrating Easter.{{< /line >}}
+{{< line >}}[00:02:39.170] Dan Beecher: No, no, I'm.{{< /line >}}
+{{< line >}}[00:02:40.490] Dan Beecher: I'm imposing that one on.{{< /line >}}
+{{< line >}}[00:02:42.050] Dan McClellan: Okay, Okay.{{< /line >}}
+{{< line >}}[00:02:43.090] Dan Beecher: I don't think that I. I knew that one either.{{< /line >}}
+{{< line >}}[00:02:46.120] Dan Beecher: But we're gonna.{{< /line >}}
+{{< line >}}[00:02:47.000] Dan Beecher: So at the beginning of this episode, we're gonna talk about Holy Week, sort of what happened, the timeline.{{< /line >}}
+{{< line >}}[00:02:57.720] Dan Beecher: Do the Gospels, maybe.{{< /line >}}
+{{< line >}}[00:03:00.360] Dan Beecher: Do they not quite agree on a few things?{{< /line >}}
+{{< line >}}[00:03:02.840] Dan Beecher: And how, how does that work?{{< /line >}}
+{{< line >}}[00:03:04.840] Dan Beecher: And then you're gonna talk about resurrection and not just, not just Jesus's resurrection, but just the concept as a whole.{{< /line >}}
+{{< line >}}[00:03:14.680] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:03:15.080] Dan McClellan: Where.{{< /line >}}
+{{< line >}}[00:03:15.400] Dan McClellan: Where did this thing come being worked into the Gospels?{{< /line >}}
+{{< line >}}[00:03:20.020] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:03:20.900] Dan McClellan: Yeah, we're going to get into it.{{< /line >}}
+{{< line >}}[00:03:23.540] Dan McClellan: Probably the most controversial episode that we'll ever have regarding the.{{< /line >}}
+{{< line >}}[00:03:29.460] Dan McClellan: I'm, I'm being sarcastic.{{< /line >}}
+{{< line >}}[00:03:30.940] Dan McClellan: Just.{{< /line >}}
+{{< line >}}[00:03:31.540] Dan McClellan: Yeah, the, the notion that the Gospels conflict on their timeline for the, for the final week of Jesus's life probably shouldn't surprise anyone who has ever heard our voices before, but.{{< /line >}}
+{{< line >}}[00:03:44.260] Dan Beecher: Yeah, well, let's get into it.{{< /line >}}
+{{< line >}}[00:03:44.260] Dan Beecher: I'm going to call.{{< /line >}}
+{{< line >}}[00:03:47.180] Dan Beecher: I.{{< /line >}}
+{{< line >}}[00:03:48.220] Dan Beecher: We'll just call this a chapter and verse as we dive into this.{{< /line >}}
+{{< line >}}[00:03:54.380] Dan Beecher: So here's the thing.{{< /line >}}
+{{< line >}}[00:03:56.780] Dan Beecher: I.{{< /line >}}
+{{< line >}}[00:03:57.020] Dan Beecher: When I started to do some research about Holy Week and wanted a timeline, I just wanted to sort of understand the basic timeline and try to keep straight what each of the Gospels was doing.{{< /line >}}
+{{< line >}}[00:04:08.620] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:04:10.310] Dan Beecher: All of the timelines that I found were on apologetic websites that didn't seem to think that there were ever any conflicts.{{< /line >}}
+{{< line >}}[00:04:17.150] Dan Beecher: And it was all very easy to track.{{< /line >}}
+{{< line >}}[00:04:19.510] Dan Beecher: And.{{< /line >}}
+{{< line >}}[00:04:19.790] Dan Beecher: Yeah, and then those same websites would be like, of course, you know, the skeptics will say that blah, blah, blah and blah, blah, blah conflict.{{< /line >}}
+{{< line >}}[00:04:30.150] Dan Beecher: But that's not true because of all of our, you know, all X, Y and Z apologetics.{{< /line >}}
+{{< line >}}[00:04:37.330] Dan Beecher: So what I decided to do was actually go to the website that they were most often citing as what the skeptics would say, which is the Skeptic's Annotated Bible.{{< /line >}}
+{{< line >}}[00:04:47.330] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:04:48.370] Dan Beecher: And even I caught them out on a couple things that seemed like a bit of a stretch in terms of their, their contradictions, but some of them seem like important contradictions.{{< /line >}}
+{{< line >}}[00:04:57.890] Dan Beecher: So, so my, my thinking is we'll go through the timeline and, and I'll bring a couple things up as we go that, that might be contradictions or you can.{{< /line >}}
+{{< line >}}[00:05:09.120] Dan Beecher: And we start basically, don't we, with.{{< /line >}}
+{{< line >}}[00:05:11.440] Dan Beecher: With a story we've already told, which is Jesus riding two donkeys into Jerusalem.{{< /line >}}
+{{< line >}}[00:05:16.800] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:05:17.440] Dan McClellan: Whether this was one on top of the other, whether Jesus.{{< /line >}}
+{{< line >}}[00:05:23.840] Dan Beecher: Has quickly become my favorite.{{< /line >}}
+{{< line >}}[00:05:26.240] Dan McClellan: Yeah, that's.{{< /line >}}
+{{< line >}}[00:05:27.200] Dan McClellan: It's going to be canon pretty soon.{{< /line >}}
+{{< line >}}[00:05:28.960] Dan McClellan: I mean, once, once Zack Snyder gets a hold of it, that's gonna be canon.{{< /line >}}
+{{< line >}}[00:05:35.790] Dan McClellan: So we'll have some lens flares, we'll have Jesus on two donkeys.{{< /line >}}
+{{< line >}}[00:05:41.510] Dan McClellan: So I like it.{{< /line >}}
+{{< line >}}[00:05:43.790] Dan McClellan: And that is the, the triumphal entry.{{< /line >}}
+{{< line >}}[00:05:46.270] Dan Beecher: Which by the way, it sounded like you were.{{< /line >}}
+{{< line >}}[00:05:48.150] Dan Beecher: But you weren't just swearing under your breath because it sounds.{{< /line >}}
+{{< line >}}[00:05:51.390] Dan Beecher: Because if you mutter Jesus on two donkeys, that doesn't necessarily sound.{{< /line >}}
+{{< line >}}[00:05:56.470] Dan Beecher: That is what you were just talking about.{{< /line >}}
+{{< line >}}[00:05:57.950] Dan Beecher: That you weren't.{{< /line >}}
+{{< line >}}[00:05:58.750] Dan McClellan: Yeah, so yeah, in Disney movies it will be cheese on two donkeys.{{< /line >}}
+{{< line >}}[00:06:05.780] Dan Beecher: Yeah, exactly.{{< /line >}}
+{{< line >}}[00:06:06.540] Dan McClellan: Or whatever.{{< /line >}}
+{{< line >}}[00:06:07.700] Dan McClellan: Well, I don't know if you ever watch the Princess and the Frog, but there's one part where one of the characters is like getting upset and storms out of a church and she goes, cheese and crackers.{{< /line >}}
+{{< line >}}[00:06:17.620] Dan McClellan: I was like, that's like one of the most like transparent substitutions for, for what's considered profanity I've ever heard in a Disney movie.{{< /line >}}
+{{< line >}}[00:06:28.820] Dan Beecher: That's somebody writing, working on the script for that went to BYU.{{< /line >}}
+{{< line >}}[00:06:34.320] Dan Beecher: That's awesome.{{< /line >}}
+{{< line >}}[00:06:36.800] Dan McClellan: Okay, we, I want to go just before the triumphal entry though, because we already have, we already have something that is a bit incongruous.{{< /line >}}
+{{< line >}}[00:06:47.040] Dan Beecher: Oh, okay.{{< /line >}}
+{{< line >}}[00:06:47.720] Dan McClellan: Incongruous.{{< /line >}}
+{{< line >}}[00:06:48.600] Dan McClellan: If you're nasty.{{< /line >}}
+{{< line >}}[00:06:50.080] Dan McClellan: At the beginning of John 12 we have Jesus arriving in Bethany.{{< /line >}}
+{{< line >}}[00:06:55.040] Dan McClellan: Now one thing to note about the difference between John and the Synoptics is Jesus's ministry is one year in the Synoptics; he's up in Galilee, he's.{{< /line >}}
+{{< line >}}[00:07:05.970] Dan McClellan: You've got the, the evangelical triangle, these three main cities that he's operating within.{{< /line >}}
+{{< line >}}[00:07:14.210] Dan McClellan: And then it's kind of the, on the way to Jerusalem, you know, road trip and then he's in Jerusalem and that's the last week and then that's it.{{< /line >}}
+{{< line >}}[00:07:23.890] Dan McClellan: John actually has a, what seems to be a three year ministry.{{< /line >}}
+{{< line >}}[00:07:28.240] Dan McClellan: And John has Jesus arriving in Jerusalem and cleansing the temple in chapter two.{{< /line >}}
+{{< line >}}[00:07:35.840] Dan McClellan: Like right after the wedding in Cana, he goes down to Jerusalem to cleanse the temple.{{< /line >}}
+{{< line >}}[00:07:42.160] Dan Beecher: Remind us quickly what the order that we think the gospels were written in.{{< /line >}}
+{{< line >}}[00:07:47.360] Dan Beecher: John was the last one, right?{{< /line >}}
+{{< line >}}[00:07:49.280] Dan McClellan: Well, it depends on, on where you put Luke because Mark is, is almost universally agreed to be the earliest gospel.{{< /line >}}
+{{< line >}}[00:07:59.150] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:07:59.550] Dan McClellan: It's the shortest.{{< /line >}}
+{{< line >}}[00:08:00.550] Dan McClellan: It's the one that doesn't include some of the things that seems to be, seem to be expansions and innovations on the story that we find in Matthew and Luke.{{< /line >}}
+{{< line >}}[00:08:09.110] Dan McClellan: Like the birth narrative.{{< /line >}}
+{{< line >}}[00:08:10.830] Dan McClellan: It's the one that doesn't even seem to have a post-resurrection story at all.{{< /line >}}
+{{< line >}}[00:08:15.630] Dan McClellan: We have one that's tacked on later and then it's probably Matthew.{{< /line >}}
+{{< line >}}[00:08:20.590] Dan McClellan: Luke was probably written after Matthew and is reliance I, some scholars think is reliant to some degree on Matthew as well as, as on Mark.{{< /line >}}
+{{< line >}}[00:08:31.410] Dan McClellan: We talked a little bit with Helen Bond about the possibility that Luke might be early 2nd century, that it might have been written after John.{{< /line >}}
+{{< line >}}[00:08:38.730] Dan McClellan: But most people put John somewhere in the mid-90s CE, so almost at the very end of the first century CE.{{< /line >}}
+{{< line >}}[00:08:45.250] Dan Beecher: And why is John considered separate from the.{{< /line >}}
+{{< line >}}[00:08:47.730] Dan Beecher: The Synoptic Gospels?{{< /line >}}
+{{< line >}}[00:08:49.730] Dan McClellan: Because the narrative is so different.{{< /line >}}
+{{< line >}}[00:08:51.970] Dan McClellan: Synoptic.{{< /line >}}
+{{< line >}}[00:08:52.810] Dan McClellan: See, together you can line up the.{{< /line >}}
+{{< line >}}[00:08:55.200] Dan McClellan: The.{{< /line >}}
+{{< line >}}[00:08:55.360] Dan McClellan: The three Synoptic Gospels, and there's a lot of the narrative and a lot of the sayings are parallel.{{< /line >}}
+{{< line >}}[00:09:02.400] Dan McClellan: Or if they're not parallel, the same things are found in other parts of the narrative.{{< /line >}}
+{{< line >}}[00:09:06.640] Dan McClellan: So it seems clear that Matthew and Luke are reliant on Mark.{{< /line >}}
+{{< line >}}[00:09:11.840] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:09:12.560] Dan McClellan: They also share things that are not in Mark.{{< /line >}}
+{{< line >}}[00:09:16.240] Dan McClellan: And so this is where the idea of Q comes from.{{< /line >}}
+{{< line >}}[00:09:19.040] Dan McClellan: That Q, which is the.{{< /line >}}
+{{< line >}}[00:09:20.400] Dan McClellan: The a reference to the German word Quelle, which means source, is this other source that was not used by Mark that Matthew and Luke are sharing.{{< /line >}}
+{{< line >}}[00:09:31.720] Dan McClellan: And then Matthew and Luke also have their own stories that are not in Mark and are not shared between each other.{{< /line >}}
+{{< line >}}[00:09:38.200] Dan McClellan: And scholars will refer to Matthew's independent source as M, and they'll refer to Luke's independent source as L. So there's a complex relationship of all these things to each other, but probably Mark, Matthew, and then either Luke and John or John, then Luke.{{< /line >}}
+{{< line >}}[00:09:54.670] Dan McClellan: So it depends.{{< /line >}}
+{{< line >}}[00:09:56.110] Dan Beecher: Okay, got it.{{< /line >}}
+{{< line >}}[00:09:57.110] Dan Beecher: All right, so we are.{{< /line >}}
+{{< line >}}[00:09:58.830] Dan Beecher: So.{{< /line >}}
+{{< line >}}[00:09:59.390] Dan Beecher: So John has Jesus in Jerusalem way before the other guys.{{< /line >}}
+{{< line >}}[00:10:04.670] Dan McClellan: Yeah, he's.{{< /line >}}
+{{< line >}}[00:10:05.470] Dan McClellan: He gets baptized.{{< /line >}}
+{{< line >}}[00:10:07.630] Dan McClellan: It's like, I gotta hit this wedding.{{< /line >}}
+{{< line >}}[00:10:09.950] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:10:10.510] Dan McClellan: And then moseys on down to Jerusalem and cleanses the temple.{{< /line >}}
+{{< line >}}[00:10:14.910] Dan McClellan: And this is first year of his ministry.{{< /line >}}
+{{< line >}}[00:10:17.510] Dan McClellan: And he's going to be going back and forth between Jerusalem and Galilee a couple of times.{{< /line >}}
+{{< line >}}[00:10:21.920] Dan McClellan: But in.{{< /line >}}
+{{< line >}}[00:10:22.360] Dan McClellan: In John chapter 12, he shows up in Bethany for his.{{< /line >}}
+{{< line >}}[00:10:26.520] Dan McClellan: His third trip to Jerusalem.{{< /line >}}
+{{< line >}}[00:10:28.800] Dan McClellan: And then he is anointed before the triumphal entry.{{< /line >}}
+{{< line >}}[00:10:34.480] Dan Beecher: Oh, okay.{{< /line >}}
+{{< line >}}[00:10:35.360] Dan McClellan: All the other anointings take place after the triumphal entry.{{< /line >}}
+{{< line >}}[00:10:40.080] Dan Beecher: This is the, this is the, The.{{< /line >}}
+{{< line >}}[00:10:41.800] Dan Beecher: The.{{< /line >}}
+{{< line >}}[00:10:43.440] Dan Beecher: The anointing is a woman putting oil on his feet.{{< /line >}}
+{{< line >}}[00:10:47.280] Dan Beecher: Is that the thing, or am I thinking of something else?{{< /line >}}
+{{< line >}}[00:10:49.810] Dan McClellan: Yeah, we actually have a couple of different things where.{{< /line >}}
+{{< line >}}[00:10:53.330] Dan McClellan: Yeah, here what we have is somebody named Mary.{{< /line >}}
+{{< line >}}[00:10:57.810] Dan McClellan: Jesus is in Bethany.{{< /line >}}
+{{< line >}}[00:10:59.130] Dan McClellan: He's in Lazarus's house, which is different from the Synoptics as well, because in those, he's in the house of some dude named Simon.{{< /line >}}
+{{< line >}}[00:11:06.370] Dan McClellan: And Mary shows up and she's got a pound of this expensive ointment.{{< /line >}}
+{{< line >}}[00:11:16.450] Dan McClellan: Spikenard.{{< /line >}}
+{{< line >}}[00:11:17.410] Dan McClellan: I think is what.{{< /line >}}
+{{< line >}}[00:11:19.650] Dan McClellan: How it's translated in the.{{< /line >}}
+{{< line >}}[00:11:21.010] Dan Beecher: That is my favorite, favorite thing in the universe.{{< /line >}}
+{{< line >}}[00:11:23.550] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:11:26.750] Dan McClellan: And the.{{< /line >}}
+{{< line >}}[00:11:28.910] Dan McClellan: We.{{< /line >}}
+{{< line >}}[00:11:29.230] Dan McClellan: We usually translate anoint, but the Greek verb is not the normal verb for anoint there.{{< /line >}}
+{{< line >}}[00:11:35.390] Dan McClellan: So it's.{{< /line >}}
+{{< line >}}[00:11:35.950] Dan McClellan: It's more like just cleaning or perfuming his feet and wipes his feet with her hair.{{< /line >}}
+{{< line >}}[00:11:44.190] Dan McClellan: And this is.{{< /line >}}
+{{< line >}}[00:11:45.150] Dan McClellan: And there are a few different things that are going on.{{< /line >}}
+{{< line >}}[00:11:47.390] Dan McClellan: Here is one, his feet have not been washed.{{< /line >}}
+{{< line >}}[00:11:51.180] Dan McClellan: She's just dumping this oil on his feet and then wiping the oil off.{{< /line >}}
+{{< line >}}[00:11:54.780] Dan McClellan: So it's almost like.{{< /line >}}
+{{< line >}}[00:11:56.380] Dan McClellan: Let me get that for you.{{< /line >}}
+{{< line >}}[00:11:57.660] Dan McClellan: Let me just wipe that off.{{< /line >}}
+{{< line >}}[00:11:58.780] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:11:59.180] Dan McClellan: You should be good to go.{{< /line >}}
+{{< line >}}[00:12:01.020] Dan McClellan: And there's.{{< /line >}}
+{{< line >}}[00:12:02.620] Dan McClellan: There's a parallel here between Mary kind of washing Jesus's feet with this expensive nard.{{< /line >}}
+{{< line >}}[00:12:12.300] Dan Beecher: Gotta get some good spikenard in there.{{< /line >}}
+{{< line >}}[00:12:14.180] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:12:14.540] Dan McClellan: So I, I keep thinking of Monster Squad, Wolfman's Got Nards, and.{{< /line >}}
+{{< line >}}[00:12:20.020] Dan McClellan: And then later in the next chapter, Jesus is going to wash the feet of his disciples.{{< /line >}}
+{{< line >}}[00:12:24.980] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:12:25.620] Dan McClellan: And so you've got Jesus's feet don't need to be washed because he's already pure.{{< /line >}}
+{{< line >}}[00:12:31.620] Dan McClellan: He's not sinful.{{< /line >}}
+{{< line >}}[00:12:33.940] Dan McClellan: But this is taking the place of the anointing that.{{< /line >}}
+{{< line >}}[00:12:37.780] Dan McClellan: That happens later on in, in the other gospels.{{< /line >}}
+{{< line >}}[00:12:40.820] Dan Beecher: If I remember correctly, when we spoke to Elizabeth Schrader Polczer, many moons ago, she said that.{{< /line >}}
+{{< line >}}[00:12:48.660] Dan Beecher: That her theory is that that the Mary that does all of this is Mary Magdalene.{{< /line >}}
+{{< line >}}[00:12:54.220] Dan Beecher: Is that right?{{< /line >}}
+{{< line >}}[00:12:56.380] Dan McClellan: She is.{{< /line >}}
+{{< line >}}[00:12:57.180] Dan McClellan: I don't remember if we talked about John 12.{{< /line >}}
+{{< line >}}[00:12:59.500] Dan Beecher: I think we did.{{< /line >}}
+{{< line >}}[00:13:00.540] Dan McClellan: We.{{< /line >}}
+{{< line >}}[00:13:00.860] Dan McClellan: Did we.{{< /line >}}
+{{< line >}}[00:13:01.339] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:13:01.699] Dan McClellan: In.{{< /line >}}
+{{< line >}}[00:13:01.860] Dan Beecher: In Lazarus's house, I think.{{< /line >}}
+{{< line >}}[00:13:03.140] Dan McClellan: Yeah, yeah, yeah.{{< /line >}}
+{{< line >}}[00:13:04.620] Dan Beecher: She.{{< /line >}}
+{{< line >}}[00:13:05.020] Dan Beecher: She was claiming.{{< /line >}}
+{{< line >}}[00:13:05.820] Dan Beecher: She was saying that her research says that it could be that that was Mary Magdalene.{{< /line >}}
+{{< line >}}[00:13:10.060] Dan McClellan: Yeah, I. I think I remember that.{{< /line >}}
+{{< line >}}[00:13:11.660] Dan McClellan: There is.{{< /line >}}
+{{< line >}}[00:13:12.100] Dan McClellan: Now in Luke, you have this.{{< /line >}}
+{{< line >}}[00:13:15.700] Dan McClellan: Let me pull up the chapter.{{< /line >}}
+{{< line >}}[00:13:17.540] Dan McClellan: This happens in Luke 7, I believe it is.{{< /line >}}
+{{< line >}}[00:13:21.140] Dan McClellan: He's eating—a woman in the city, which was a sinner, having learned that he was eating in the Pharisee's house, brought an alabaster jar of ointment.{{< /line >}}
+{{< line >}}[00:13:29.300] Dan McClellan: She stood behind him at his feet, weeping and began to bathe his feet with her tears and to dry them with her hair, kissing his feet and anointing them with ointment.{{< /line >}}
+{{< line >}}[00:13:40.410] Dan McClellan: And again, that's a different word for anoint.{{< /line >}}
+{{< line >}}[00:13:43.210] Dan McClellan: And what's interesting here is that sinful woman is not identified.{{< /line >}}
+{{< line >}}[00:13:48.530] Dan McClellan: It's not Mary.{{< /line >}}
+{{< line >}}[00:13:50.730] Dan McClellan: But the beginning of chapter eight, it's going to talk about Mary as a woman out of whom Jesus cast seven devils.{{< /line >}}
+{{< line >}}[00:13:57.530] Dan McClellan: But this is actually where we get the idea that Mary Magdalene was a sex worker.{{< /line >}}
+{{< line >}}[00:14:02.570] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:14:03.450] Dan McClellan: Because we have Ephrem the Syrian in the 4th century, who conflates the two.{{< /line >}}
+{{< line >}}[00:14:09.540] Dan McClellan: And then Gregory.{{< /line >}}
+{{< line >}}[00:14:12.260] Dan McClellan: Pope Gregory the Great in 591 CE, gives this homily and says that, in fact, I think I have exactly what he said.{{< /line >}}
+{{< line >}}[00:14:25.140] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:14:25.500] Dan McClellan: She whom Luke calls the sinful woman, whom John calls Mary.{{< /line >}}
+{{< line >}}[00:14:30.340] Dan McClellan: So Gregory is conflating Luke 7 with John 12, we believe to be Mary, from whom seven devils were ejected according to Mark.{{< /line >}}
+{{< line >}}[00:14:39.970] Dan McClellan: So now we're taking the.{{< /line >}}
+{{< line >}}[00:14:41.890] Dan McClellan: The unnamed woman in Luke 7, the Mary who anoints Jesus's feet in John 12, and then the Mary from whom Jesus cast seven devils is Mary Magdalene from Mark, and I think is also mentioned in Luke 8.{{< /line >}}
+{{< line >}}[00:14:53.970] Dan McClellan: And what did these seven devils signify, if not all the vices?{{< /line >}}
+{{< line >}}[00:14:58.880] Dan McClellan: It is clear, brothers, that the woman previously used the unguent to perfume her flesh in forbidden acts.{{< /line >}}
+{{< line >}}[00:15:06.400] Dan Beecher: Oh, wow.{{< /line >}}
+{{< line >}}[00:15:07.840] Dan McClellan: What?{{< /line >}}
+{{< line >}}[00:15:08.120] Dan McClellan: She therefore displayed more scandalously.{{< /line >}}
+{{< line >}}[00:15:10.240] Dan McClellan: Scandalously, she was now offering to God in a more praiseworthy manner.{{< /line >}}
+{{< line >}}[00:15:14.080] Dan Beecher: So you look when you have one vial of ointment or unction or whatever.{{< /line >}}
+{{< line >}}[00:15:20.120] Dan McClellan: You got a pound of it.{{< /line >}}
+{{< line >}}[00:15:21.320] Dan McClellan: You got.{{< /line >}}
+{{< line >}}[00:15:21.800] Dan McClellan: You got.{{< /line >}}
+{{< line >}}[00:15:22.200] Dan Beecher: You got.{{< /line >}}
+{{< line >}}[00:15:22.720] Dan Beecher: Look, you got to use it for all the purposes you got.{{< /line >}}
+{{< line >}}[00:15:26.680] Dan Beecher: If it's your lube, it's also the thing that you wash your Savior's feet with.{{< /line >}}
+{{< line >}}[00:15:31.000] Dan Beecher: It's fine.{{< /line >}}
+{{< line >}}[00:15:32.120] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:15:33.240] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:15:33.760] Dan Beecher: We.{{< /line >}}
+{{< line >}}[00:15:34.080] Dan Beecher: Let's.{{< /line >}}
+{{< line >}}[00:15:34.400] Dan Beecher: Let's.{{< /line >}}
+{{< line >}}[00:15:34.640] Dan Beecher: Let's keep going with the.{{< /line >}}
+{{< line >}}[00:15:35.680] Dan Beecher: With the story here.{{< /line >}}
+{{< line >}}[00:15:36.680] Dan McClellan: With the story.{{< /line >}}
+{{< line >}}[00:15:37.360] Dan Beecher: Yeah, we got a whole week to get through.{{< /line >}}
+{{< line >}}[00:15:39.000] Dan McClellan: Oh, gosh, that's good.{{< /line >}}
+{{< line >}}[00:15:42.680] Dan Beecher: We.{{< /line >}}
+{{< line >}}[00:15:43.040] Dan Beecher: Look, we're not gonna get through all of it, but there will be other Easters, guys.{{< /line >}}
+{{< line >}}[00:15:47.040] Dan Beecher: We'll get back to it.{{< /line >}}
+{{< line >}}[00:15:48.680] Dan McClellan: So.{{< /line >}}
+{{< line >}}[00:15:49.560] Dan McClellan: So that brings us to the.{{< /line >}}
+{{< line >}}[00:15:50.760] Dan McClellan: The triumphal entry, and we've already gone through some of the.{{< /line >}}
+{{< line >}}[00:15:53.600] Dan McClellan: The differences with the triumphal entry, but this.{{< /line >}}
+{{< line >}}[00:15:57.060] Dan McClellan: And this is Palm Sunday.{{< /line >}}
+{{< line >}}[00:15:58.340] Dan Beecher: Right?{{< /line >}}
+{{< line >}}[00:16:00.740] Dan McClellan: So why do we call it Palm Sunday?{{< /line >}}
+{{< line >}}[00:16:00.740] Dan McClellan: Well, because they were waving palm fronds, palm branches, in celebration of the triumphal entry of their king, who was just sitting on his ass.{{< /line >}}
+{{< line >}}[00:16:10.740] Dan Beecher: Honey, honey, he's coming.{{< /line >}}
+{{< line >}}[00:16:12.180] Dan Beecher: Go get some leaves.{{< /line >}}
+{{< line >}}[00:16:16.340] Dan McClellan: That's a Brian Regan bit.{{< /line >}}
+{{< line >}}[00:16:18.260] Dan McClellan: Get some leaves.{{< /line >}}
+{{< line >}}[00:16:20.340] Dan Beecher: I. I don't know that.{{< /line >}}
+{{< line >}}[00:16:22.180] Dan Beecher: All right.{{< /line >}}
+{{< line >}}[00:16:23.220] Dan Beecher: Okay, so he makes it in.{{< /line >}}
+{{< line >}}[00:16:25.060] Dan Beecher: And now we have another timeline issue.{{< /line >}}
+{{< line >}}[00:16:31.000] Dan Beecher: You said that John cleansed the temple.{{< /line >}}
+{{< line >}}[00:16:33.480] Dan Beecher: John had him cleansing the temple way back in chapter two.{{< /line >}}
+{{< line >}}[00:16:36.440] Dan Beecher: Right now we've got Luke saying that basically not having any time between the triumphal entry and the cleansing of the temple.{{< /line >}}
+{{< line >}}[00:16:47.000] Dan McClellan: Yeah, it seems like Luke comes into the city, and then he's like.{{< /line >}}
+{{< line >}}[00:16:50.360] Dan McClellan: And, you know, he made his way over to the temple, and then he starts beating people, flipping tables, and yeah, flipping tables and, and gently letting the birds go.{{< /line >}}
+{{< line >}}[00:17:01.910] Dan McClellan: But.{{< /line >}}
+{{< line >}}[00:17:05.030] Dan McClellan: Yeah, exactly.{{< /line >}}
+{{< line >}}[00:17:05.790] Dan McClellan: I'm here to set some birds free and to kick some ass, and I'm all out of birds.{{< /line >}}
+{{< line >}}[00:17:10.390] Dan McClellan: That's right.{{< /line >}}
+{{< line >}}[00:17:11.430] Dan McClellan: He's.{{< /line >}}
+{{< line >}}[00:17:12.230] Dan McClellan: And according to Luke, that seems to happen on Sunday.{{< /line >}}
+{{< line >}}[00:17:14.830] Dan McClellan: He's not being very clear.{{< /line >}}
+{{< line >}}[00:17:16.790] Dan McClellan: In fact, right after the cleansing of the temple, it said.{{< /line >}}
+{{< line >}}[00:17:19.910] Dan McClellan: It just says like.{{< /line >}}
+{{< line >}}[00:17:20.670] Dan McClellan: And he was in the temple a bunch and not being clear about what day these things are.{{< /line >}}
+{{< line >}}[00:17:26.670] Dan Beecher: Are happening, but definitely makes it sound like it's that day.{{< /line >}}
+{{< line >}}[00:17:29.990] Dan McClellan: Yeah, yeah. There's.{{< /line >}}
+{{< line >}}[00:17:31.030] Dan McClellan: There's no narrative break.{{< /line >}}
+{{< line >}}[00:17:32.550] Dan McClellan: It's just.{{< /line >}}
+{{< line >}}[00:17:33.070] Dan McClellan: He's a triumphal entry.{{< /line >}}
+{{< line >}}[00:17:34.630] Dan McClellan: He makes his way to the temple and then he drives out the, the money changers.{{< /line >}}
+{{< line >}}[00:17:41.030] Dan McClellan: The other two synoptic authors, however, explicitly put this on the next day.{{< /line >}}
+{{< line >}}[00:17:46.400] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:17:47.760] Dan Beecher: So he.{{< /line >}}
+{{< line >}}[00:17:49.040] Dan Beecher: So he cleanses the temple.{{< /line >}}
+{{< line >}}[00:17:51.520] Dan Beecher: That.{{< /line >}}
+{{< line >}}[00:17:51.880] Dan Beecher: That's.{{< /line >}}
+{{< line >}}[00:17:52.320] Dan Beecher: That's a good day.{{< /line >}}
+{{< line >}}[00:17:54.560] Dan McClellan: And the, the cursing of the fig tree also is something that is not in Luke, it's in Matthew and Mark.{{< /line >}}
+{{< line >}}[00:18:02.160] Dan McClellan: And I don't know if that has something to do with why they put it on the next day, but that's something.{{< /line >}}
+{{< line >}}[00:18:07.280] Dan Beecher: That's.{{< /line >}}
+{{< line >}}[00:18:07.680] Dan Beecher: Yeah, that's right.{{< /line >}}
+{{< line >}}[00:18:08.320] Dan Beecher: That's another thing that we talked about on an earlier episode.{{< /line >}}
+{{< line >}}[00:18:11.550] Dan Beecher: Yeah, so great.{{< /line >}}
+{{< line >}}[00:18:14.110] Dan McClellan: Oh, and also, he seems home base here seems to be Bethany.{{< /line >}}
+{{< line >}}[00:18:18.030] Dan Beecher: Okay, so that's just outside of Jerusalem.{{< /line >}}
+{{< line >}}[00:18:21.070] Dan McClellan: So.{{< /line >}}
+{{< line >}}[00:18:21.470] Dan McClellan: Yeah, and so it's outside of.{{< /line >}}
+{{< line >}}[00:18:23.790] Dan McClellan: Of the city.{{< /line >}}
+{{< line >}}[00:18:24.750] Dan McClellan: So on the east side of Jerusalem you got this valley, the Kidron Valley, and then you have the Mount of Olives.{{< /line >}}
+{{< line >}}[00:18:31.070] Dan McClellan: And the Mount of Olives is, is.{{< /line >}}
+{{< line >}}[00:18:33.390] Dan McClellan: Is pretty big.{{< /line >}}
+{{< line >}}[00:18:35.630] Dan McClellan: And if you go up kind of the middle to the south end of the Mount of Olives and keep going east, kind of on the, the.{{< /line >}}
+{{< line >}}[00:18:43.630] Dan McClellan: The back slope of the Mount of Olives, you've got Bethany.{{< /line >}}
+{{< line >}}[00:18:47.350] Dan McClellan: And so he's just outside the city.{{< /line >}}
+{{< line >}}[00:18:51.110] Dan McClellan: Or as.{{< /line >}}
+{{< line >}}[00:18:51.990] Dan McClellan: What did the, what did the comedian say who talked about the fig tree?{{< /line >}}
+{{< line >}}[00:18:56.390] Dan McClellan: Like, when you fly into a place, you just stay at the Ramada by the airport.{{< /line >}}
+{{< line >}}[00:19:00.430] Dan McClellan: You don't.{{< /line >}}
+{{< line >}}[00:19:01.270] Dan McClellan: You don't go downtown to, to stay.{{< /line >}}
+{{< line >}}[00:19:04.630] Dan McClellan: So.{{< /line >}}
+{{< line >}}[00:19:05.910] Dan McClellan: So Bethany is where he returns to.{{< /line >}}
+{{< line >}}[00:19:08.560] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:19:08.960] Dan McClellan: In the evenings.{{< /line >}}
+{{< line >}}[00:19:09.920] Dan McClellan: And that is, I believe, across all four Gospels, John has him arriving in Bethany staying with.{{< /line >}}
+{{< line >}}[00:19:15.760] Dan McClellan: With Lazarus, and the others have him in Bethany spending the night with Simon, I think.{{< /line >}}
+{{< line >}}[00:19:22.080] Dan McClellan: So on Tuesday, we also have what most folks refer to as temple controversies, but we also have what's called the Olivet discourse on the return to Bethany.{{< /line >}}
+{{< line >}}[00:19:33.160] Dan McClellan: So they're heading back to the hotel and.{{< /line >}}
+{{< line >}}[00:19:36.730] Dan McClellan: And Jesus is talking about the Second Coming, basically.{{< /line >}}
+{{< line >}}[00:19:40.890] Dan McClellan: And this is in the three synoptic gospels.{{< /line >}}
+{{< line >}}[00:19:44.410] Dan McClellan: And this is where we get the, the Son of Man will be like this.{{< /line >}}
+{{< line >}}[00:19:48.210] Dan McClellan: There's one standing in the field.{{< /line >}}
+{{< line >}}[00:19:49.610] Dan McClellan: One will be taken, one will be left.{{< /line >}}
+{{< line >}}[00:19:52.570] Dan McClellan: Son of Man coming in the clouds of glory and, and all that imagery.{{< /line >}}
+{{< line >}}[00:19:58.490] Dan McClellan: And, but this is, this is not in John.{{< /line >}}
+{{< line >}}[00:20:01.210] Dan McClellan: John has another spot where he sprinkles some discourse in which I think is funny actually after the Last Supper.{{< /line >}}
+{{< line >}}[00:20:10.310] Dan McClellan: But Jesus is, you know, they, they finish the Last Supper and he goes, well, let's get out of here.{{< /line >}}
+{{< line >}}[00:20:16.310] Dan McClellan: And then there are three chapters of Jesus lecturing them.{{< /line >}}
+{{< line >}}[00:20:20.630] Dan McClellan: And then so that's like the, I think it's the end of, of chapter 14.{{< /line >}}
+{{< line >}}[00:20:27.350] Dan McClellan: It, he says, arise, let us go.{{< /line >}}
+{{< line >}}[00:20:30.790] Dan McClellan: And then it's not until chapter 18 that it's like, so they arose and they left.{{< /line >}}
+{{< line >}}[00:20:36.700] Dan Beecher: Well, listen, if, if I was facing down what Jesus was facing down at that time, I'd probably like, you know, dawdle a little bit myself.{{< /line >}}
+{{< line >}}[00:20:46.380] Dan McClellan: Yeah, so a lot of scholars think that, that the discourse in there, which includes the intercessory prayer, was added or moved from another part of John or something like that.{{< /line >}}
+{{< line >}}[00:20:59.860] Dan Beecher: Okay, so we do have, you know, the, the four Gospels don't always agree on when things happen, but it sounds like even John couldn't agree on when things were happening.{{< /line >}}
+{{< line >}}[00:21:09.940] Dan McClellan: Things were getting moved around.{{< /line >}}
+{{< line >}}[00:21:12.620] Dan McClellan: On Wednesday, Jesus continues to teach in the temple.{{< /line >}}
+{{< line >}}[00:21:15.900] Dan McClellan: The temple is, is kind of, you know, he spends the night in Bethany, but during the day he's, he's in the temple dropping knowledge.{{< /line >}}
+{{< line >}}[00:21:24.300] Dan McClellan: And there we also get reports that now the Sanhedrin, the bad guys are like, Jesus is in town, we need to exploit this opportunity.{{< /line >}}
+{{< line >}}[00:21:37.230] Dan Beecher: Well, and every time he goes to the temple, he's just raising a ruckus, he's causing trouble.{{< /line >}}
+{{< line >}}[00:21:41.870] Dan McClellan: So, and, and here's something that, that I brought up on, on some social media site recently that annoyed a lot of people.{{< /line >}}
+{{< line >}}[00:21:50.670] Dan McClellan: And it's something I've said before on, on TikTok, the reconstruction of the historical Jesus doesn't really have a role for the Sanhedrin in Jesus's death.{{< /line >}}
+{{< line >}}[00:22:01.560] Dan McClellan: It was probably the Romans who were like somebody came in and drove a bunch of people out of the temple and started a small riot.{{< /line >}}
+{{< line >}}[00:22:10.040] Dan McClellan: Well, kill that guy.{{< /line >}}
+{{< line >}}[00:22:13.080] Dan McClellan: That's probably not all that went into it.{{< /line >}}
+{{< line >}}[00:22:14.840] Dan Beecher: That's called disturbing the peace.{{< /line >}}
+{{< line >}}[00:22:16.760] Dan McClellan: Right?{{< /line >}}
+{{< line >}}[00:22:17.240] Dan Beecher: Not legal.{{< /line >}}
+{{< line >}}[00:22:18.440] Dan McClellan: And this is, this is the biggest festival celebration of the year in this giant city, capital city where the Romans are always struggling to keep the peace.{{< /line >}}
+{{< line >}}[00:22:30.370] Dan McClellan: And so if anything put Jesus on the Roman radar, it was making a whip and driving a bunch of people out of the Jewish temple and starting a small riot.{{< /line >}}
+{{< line >}}[00:22:41.730] Dan McClellan: And so from a, from a critical historical Jesus point of view, that was probably what got him killed.{{< /line >}}
+{{< line >}}[00:22:48.850] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:22:49.570] Dan McClellan: Now when the Gospel authors get a hold of it, you get this kind of trajectory from Mark, where, you know, the, the Jewish leaders are involved all the way to John, where it was like Satan entered into them and they were all trying to plot, how are we going to get this Jesus killed.{{< /line >}}
+{{< line >}}[00:23:09.920] Dan McClellan: And, and, you know, you have different takes on, on Pilate, where Pilate's like, this man is innocent, but I will do whatever you tell me to.{{< /line >}}
+{{< line >}}[00:23:18.960] Dan McClellan: Which is very clearly fiction because the actual Pilate murdered Jewish citizens in Jerusalem by the handful whenever they annoyed him.{{< /line >}}
+{{< line >}}[00:23:31.390] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:23:31.790] Dan McClellan: So the notion that they would get together and be like, we're gonna tell on you, and he was like, okay, I'll do what you want, is just not historical.{{< /line >}}
+{{< line >}}[00:23:39.550] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:23:40.430] Dan McClellan: And so it seems like the, the role of the Jewish leaders in this and up to.{{< /line >}}
+{{< line >}}[00:23:46.710] Dan McClellan: And including the.{{< /line >}}
+{{< line >}}[00:23:48.200] Dan McClellan: The notion that they all cried out with one voice saying, his blood will be on us.{{< /line >}}
+{{< line >}}[00:23:53.320] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:23:53.800] Dan McClellan: That's all fiction.{{< /line >}}
+{{< line >}}[00:23:54.920] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:23:55.280] Dan McClellan: That is something that they made up to shift the blame to the Jewish people and off of the people who were probably actually responsible for his death.{{< /line >}}
+{{< line >}}[00:24:09.080] Dan McClellan: The Romans, those called Romans.{{< /line >}}
+{{< line >}}[00:24:12.120] Dan Beecher: When you say they did this to shift the blame, you're talking about the authors of the Gospels.{{< /line >}}
+{{< line >}}[00:24:18.620] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:24:19.060] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:24:19.420] Dan McClellan: Well, probably this probably originated before they were actually committed to text.{{< /line >}}
+{{< line >}}[00:24:23.900] Dan McClellan: But the people who are curating the.{{< /line >}}
+{{< line >}}[00:24:25.740] Dan McClellan: The tradition, either as it was circulating orally, or who were committing it to writing and the sources that may have been used by Mark and the other Gospel authors was this.{{< /line >}}
+{{< line >}}[00:24:37.580] Dan Beecher: Do you.{{< /line >}}
+{{< line >}}[00:24:38.060] Dan Beecher: Do scholars believe that the reason to shift that blame from the Romans to the Jews was just as a means of separating Christianity, this new cult, from its Jewish roots.{{< /line >}}
+{{< line >}}[00:24:51.340] Dan Beecher: Was it?{{< /line >}}
+{{< line >}}[00:24:52.220] Dan Beecher: Or why would they do that?{{< /line >}}
+{{< line >}}[00:24:54.540] Dan McClellan: Not so much.{{< /line >}}
+{{< line >}}[00:24:56.460] Dan McClellan: I think probably part of it had to do with growing hostility between Jesus followers within Judaism and the rest of the movement.{{< /line >}}
+{{< line >}}[00:25:08.700] Dan McClellan: Probably some of it had to do with the fact that they were trying to get by in a Roman world.{{< /line >}}
+{{< line >}}[00:25:16.600] Dan McClellan: And so we're, we're trying to.{{< /line >}}
+{{< line >}}[00:25:18.520] Dan Beecher: So it's a bad look to be like, look, the Romans killed your. Your. Your God or whatever.{{< /line >}}
+{{< line >}}[00:25:23.240] Dan McClellan: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:25:23.840] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:25:24.080] Dan McClellan: And I think there were.{{< /line >}}
+{{< line >}}[00:25:26.040] Dan McClellan: There were other rhetorical points to make about the Jewish folks who rejected their savior.{{< /line >}}
+{{< line >}}[00:25:32.840] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:25:33.560] Dan McClellan: That have kind of an anti-Semitic tinge to them.{{< /line >}}
+{{< line >}}[00:25:37.950] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:25:38.430] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:25:38.830] Dan McClellan: And I.{{< /line >}}
+{{< line >}}[00:25:39.950] Dan McClellan: A wonderful book, I think, that discusses this to some degree is Bart Ehrman's book Jesus Before the Gospels, which uses social memory to talk about how the, the presentation of Jesus's life and death in the Gospels could be serving certain interests within kind of the, the social memory of, of what happened, what is likely a gist memory versus what has been altered in order to serve the rhetorical goals of the authors and, and the communities.{{< /line >}}
+{{< line >}}[00:26:12.520] Dan McClellan: Okay, so, so yeah, that's, that's something that is probably a literary creation is the, you know, the Sanhedrin sitting there plotting how are we going to get Jesus murdered?{{< /line >}}
+{{< line >}}[00:26:25.880] Dan McClellan: But okay, but that starts on Wednesday.{{< /line >}}
+{{< line >}}[00:26:27.960] Dan McClellan: According to.{{< /line >}}
+{{< line >}}[00:26:29.160] Dan McClellan: Yeah, that was their hump.{{< /line >}}
+{{< line >}}[00:26:30.640] Dan McClellan: Wednesday, Wednesday into Thursday.{{< /line >}}
+{{< line >}}[00:26:33.230] Dan McClellan: We're making preparations for the Passover.{{< /line >}}
+{{< line >}}[00:26:37.950] Dan McClellan: And then we have the Last Supper, which is in ye olde upper room.{{< /line >}}
+{{< line >}}[00:26:42.750] Dan McClellan: And if you go to Jerusalem today, there's even a, a medieval style upper room that they will take you through and, and a lot of space in there.{{< /line >}}
+{{< line >}}[00:26:53.150] Dan McClellan: It would have been a pretty happening Last Supper if that's where it had actually happened.{{< /line >}}
+{{< line >}}[00:27:00.380] Dan McClellan: We have.{{< /line >}}
+{{< line >}}[00:27:01.420] Dan Beecher: And the Last Supper itself was a Passover, right, Seder.{{< /line >}}
+{{< line >}}[00:27:07.020] Dan McClellan: Well, yeah, it would have been a Passover meal, but the way they would have done it in the first century CE is not perfectly clear to us.{{< /line >}}
+{{< line >}}[00:27:14.780] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:27:15.260] Dan McClellan: But the way it's done today is, is quite different.{{< /line >}}
+{{< line >}}[00:27:18.780] Dan McClellan: So it, you know, they didn't have a little matzah that they were passing around under the table to the, to the kids to hide and this kind of thing.{{< /line >}}
+{{< line >}}[00:27:28.050] Dan McClellan: Those are much later developed traditions.{{< /line >}}
+{{< line >}}[00:27:31.250] Dan McClellan: But yeah, it would have been a traditional Passover meal.{{< /line >}}
+{{< line >}}[00:27:36.370] Dan McClellan: And then we have, within the Synoptic Gospels, they, so they're in Jerusalem.{{< /line >}}
+{{< line >}}[00:27:41.810] Dan McClellan: They go out, probably skirt around the south side of Jerusalem to go down the hill into the Kidron Valley and come up the other side to the western slope of the Mount of Olives to what is known as the Garden of Gethsemane, which refers to an oil press.{{< /line >}}
+{{< line >}}[00:27:57.850] Dan McClellan: And so these are olive trees that make up this garden.{{< /line >}}
+{{< line >}}[00:28:02.170] Dan McClellan: And we have Jesus praying in the Garden of Gethsemane.{{< /line >}}
+{{< line >}}[00:28:05.690] Dan McClellan: We don't have this, this prayer in John.{{< /line >}}
+{{< line >}}[00:28:10.010] Dan McClellan: Some people think that the, the intercessory prayer is kind of the Johannine substitute for the prayer in the Garden of Gethsemane.{{< /line >}}
+{{< line >}}[00:28:19.450] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:28:19.930] Dan McClellan: At which point Jesus is arrested in the garden, which is something that is precipitated by the betrayal by Judas.{{< /line >}}
+{{< line >}}[00:28:29.920] Dan McClellan: And another interesting trajectory is with Judas, there's a theory that in Mark, there's not a presentation of Judas as, as a conniving backstabber.{{< /line >}}
+{{< line >}}[00:28:42.640] Dan McClellan: It says that he turned Jesus over, but the, the handed over verb is kind of morally neutral.{{< /line >}}
+{{< line >}}[00:28:51.790] Dan McClellan: Like, it's not a negative.{{< /line >}}
+{{< line >}}[00:28:53.230] Dan McClellan: It's not inherently negative.{{< /line >}}
+{{< line >}}[00:28:55.150] Dan McClellan: And there's a theory that, that Judas had done this in the hopes that he would be setting up the confrontation that would catalyze Jesus's, you know, hulking out and, and, and destroying the Romans.{{< /line >}}
+{{< line >}}[00:29:12.840] Dan McClellan: And then after he saw.{{< /line >}}
+{{< line >}}[00:29:14.560] Dan McClellan: Oh, no, that didn't work, he is distraught because he could have been trying to arrange the meeting to.{{< /line >}}
+{{< line >}}[00:29:26.040] Dan McClellan: To kick off the Second Coming.{{< /line >}}
+{{< line >}}[00:29:28.160] Dan McClellan: And it's in Matthew, Luke, and then John where Judas is increasingly possessed by the devil.{{< /line >}}
+{{< line >}}[00:29:37.560] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:29:37.960] Dan McClellan: To do this.{{< /line >}}
+{{< line >}}[00:29:39.880] Dan McClellan: So it's an interesting trajectory to see as.{{< /line >}}
+{{< line >}}[00:29:42.360] Dan McClellan: As Judas.{{< /line >}}
+{{< line >}}[00:29:42.960] Dan Beecher: So Mark doesn't have paid for it.{{< /line >}}
+{{< line >}}[00:29:45.220] Dan Beecher: Mark doesn't have any of that stuff.{{< /line >}}
+{{< line >}}[00:29:46.900] Dan McClellan: Is that right?{{< /line >}}
+{{< line >}}[00:29:48.020] Dan Beecher: I.{{< /line >}}
+{{< line >}}[00:29:48.820] Dan McClellan: There's definitely not.{{< /line >}}
+{{< line >}}[00:29:49.900] Dan McClellan: They don't mention Judas going and picking up money like we have in.{{< /line >}}
+{{< line >}}[00:29:55.060] Dan McClellan: In Matthew and in Luke-Acts.{{< /line >}}
+{{< line >}}[00:29:58.420] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:29:59.300] Dan McClellan: So yeah, it is.{{< /line >}}
+{{< line >}}[00:30:00.740] Dan McClellan: It is something that he just.{{< /line >}}
+{{< line >}}[00:30:02.460] Dan McClellan: It.{{< /line >}}
+{{< line >}}[00:30:02.740] Dan McClellan: It's just kind of like.{{< /line >}}
+{{< line >}}[00:30:03.660] Dan McClellan: And then Judas did this and they're.{{< /line >}}
+{{< line >}}[00:30:06.540] Dan Beecher: Like, hey, who's Jesus?{{< /line >}}
+{{< line >}}[00:30:07.500] Dan Beecher: And he's like, he's that guy.{{< /line >}}
+{{< line >}}[00:30:11.390] Dan Beecher: Oh, it's that one.{{< /line >}}
+{{< line >}}[00:30:12.750] Dan Beecher: Not.{{< /line >}}
+{{< line >}}[00:30:13.230] Dan Beecher: Not necessarily.{{< /line >}}
+{{< line >}}[00:30:14.150] Dan Beecher: A sort of.{{< /line >}}
+{{< line >}}[00:30:16.190] Dan McClellan: Yeah, yeah, yeah.{{< /line >}}
+{{< line >}}[00:30:18.030] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:30:18.350] Dan McClellan: And there have been some interesting stories of.{{< /line >}}
+{{< line >}}[00:30:22.510] Dan McClellan: Oh, that brings up.{{< /line >}}
+{{< line >}}[00:30:24.670] Dan McClellan: Oh, that brings up. There's one of the things that Jesus says on this last night in, in Luke, we have him say, you know, I sent you out without purse or scrip.{{< /line >}}
+{{< line >}}[00:30:34.390] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:30:34.590] Dan McClellan: And you guys did all right.{{< /line >}}
+{{< line >}}[00:30:35.590] Dan McClellan: Right?{{< /line >}}
+{{< line >}}[00:30:35.750] Dan McClellan: And they're like, yeah, we did fine.{{< /line >}}
+{{< line >}}[00:30:37.270] Dan McClellan: And then he says, well, now sell what you have and buy swords.{{< /line >}}
+{{< line >}}[00:30:43.910] Dan McClellan: Do you recall something in that area?{{< /line >}}
+{{< line >}}[00:30:47.670] Dan McClellan: And I've seen people recently appeal to that scripture as an indication that Christians need to be warriors.{{< /line >}}
+{{< line >}}[00:30:55.430] Dan McClellan: We gotta go strapped.{{< /line >}}
+{{< line >}}[00:30:58.310] Dan Beecher: It's the Jordan Peterson school of Christianity, school of meekness.{{< /line >}}
+{{< line >}}[00:31:02.270] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:31:02.550] Dan Beecher: Yes.{{< /line >}}
+{{< line >}}[00:31:08.330] Dan McClellan: But what happens is they.{{< /line >}}
+{{< line >}}[00:31:11.690] Dan Beecher: He.{{< /line >}}
+{{< line >}}[00:31:12.050] Dan McClellan: And it says because he.{{< /line >}}
+{{< line >}}[00:31:13.210] Dan McClellan: He's to be numbered among the criminals, or words to that effect.{{< /line >}}
+{{< line >}}[00:31:17.290] Dan McClellan: And then his.{{< /line >}}
+{{< line >}}[00:31:18.090] Dan McClellan: His followers say, hey, we got two swords right here.{{< /line >}}
+{{< line >}}[00:31:20.410] Dan McClellan: And he goes, that'll do.{{< /line >}}
+{{< line >}}[00:31:23.210] Dan McClellan: And it's.{{< /line >}}
+{{< line >}}[00:31:23.970] Dan McClellan: It's kind of a weird head scratcher there.{{< /line >}}
+{{< line >}}[00:31:25.610] Dan McClellan: But then when he gets caught in the Garden of Gethsemane, they're there with the swords, right?{{< /line >}}
+{{< line >}}[00:31:31.380] Dan McClellan: And so one dude loses an ear.{{< /line >}}
+{{< line >}}[00:31:33.740] Dan Beecher: One poor guy loses an ear.{{< /line >}}
+{{< line >}}[00:31:35.180] Dan McClellan: Yeah, Malchus.{{< /line >}}
+{{< line >}}[00:31:37.580] Dan McClellan: And the idea seems to be that if he's going to be counted among the criminals, let's have him have these guys with their unauthorized weapons on them when the Roman authorities show up to.{{< /line >}}
+{{< line >}}[00:31:51.260] Dan McClellan: To pinch him.{{< /line >}}
+{{< line >}}[00:31:53.100] Dan McClellan: And so it's not saying why.{{< /line >}}
+{{< line >}}[00:31:56.020] Dan Beecher: Why to what?{{< /line >}}
+{{< line >}}[00:31:57.220] Dan Beecher: To what end?{{< /line >}}
+{{< line >}}[00:31:57.820] Dan Beecher: I'm not sure I understand what the purpose of that was.{{< /line >}}
+{{< line >}}[00:32:00.020] Dan McClellan: So there's that, that prophecy counted among the, the transgressors or the criminals or something.{{< /line >}}
+{{< line >}}[00:32:06.200] Dan Beecher: Oh, okay, okay.{{< /line >}}
+{{< line >}}[00:32:07.240] Dan McClellan: And so the idea is, oh, that fulfills that prophecy.{{< /line >}}
+{{< line >}}[00:32:10.760] Dan McClellan: That when the Romans show up and it's kind of, it seems like an afterthought because, you know, it never really says.{{< /line >}}
+{{< line >}}[00:32:17.480] Dan McClellan: It's not like they try to fight off the Romans, apart from just the ear thing.{{< /line >}}
+{{< line >}}[00:32:23.080] Dan McClellan: One guy, he's like, hey, you guys.{{< /line >}}
+{{< line >}}[00:32:25.000] Dan Beecher: Remember that, that prophecy, you better get swords.{{< /line >}}
+{{< line >}}[00:32:27.480] Dan Beecher: We don't want people to be confused.{{< /line >}}
+{{< line >}}[00:32:30.320] Dan McClellan: And, and so the, that's the one passage people will appeal to.{{< /line >}}
+{{< line >}}[00:32:34.280] Dan McClellan: Like, see, Jesus is cool with, with us having AKs, but.{{< /line >}}
+{{< line >}}[00:32:38.480] Dan McClellan: Yeah, exactly.{{< /line >}}
+{{< line >}}[00:32:39.160] Dan McClellan: It's actually just Jesus saying, hey, we gotta fulfill a prophecy.{{< /line >}}
+{{< line >}}[00:32:42.240] Dan McClellan: Make sure you got a sword laying around.{{< /line >}}
+{{< line >}}[00:32:45.040] Dan Beecher: Wow.{{< /line >}}
+{{< line >}}[00:32:46.080] Dan McClellan: So, yeah, and, and there are, there are scholars who will say, oh, well, the, the disciples misunderstood.{{< /line >}}
+{{< line >}}[00:32:53.160] Dan McClellan: They didn't know what he was talking about with the swords.{{< /line >}}
+{{< line >}}[00:32:55.710] Dan McClellan: And Jesus was just like, you what, let's just drop it.{{< /line >}}
+{{< line >}}[00:33:00.110] Dan McClellan: But I, I think that's historicizing the, the text a little bit too much.{{< /line >}}
+{{< line >}}[00:33:05.390] Dan McClellan: But that brings us to the trial.{{< /line >}}
+{{< line >}}[00:33:09.310] Dan Beecher: Ah, yes.{{< /line >}}
+{{< line >}}[00:33:10.910] Dan McClellan: Did you have any questions leading up to this?{{< /line >}}
+{{< line >}}[00:33:14.190] Dan Beecher: No, I.{{< /line >}}
+{{< line >}}[00:33:15.950] Dan Beecher: Should I.{{< /line >}}
+{{< line >}}[00:33:16.510] Dan Beecher: Now I feel like I, I'm supposed to.{{< /line >}}
+{{< line >}}[00:33:19.950] Dan Beecher: Let's, let's, let's talk about the trial.{{< /line >}}
+{{< line >}}[00:33:22.270] Dan Beecher: I mean, so we've got.{{< /line >}}
+{{< line >}}[00:33:24.470] Dan Beecher: Yeah, start us in with what happens across.{{< /line >}}
+{{< line >}}[00:33:29.350] Dan McClellan: We have a few different people that Jesus goes before, and these are different according to the different gospels because we have Annas, who I believe is the father-in-law of Caiaphas.{{< /line >}}
+{{< line >}}[00:33:40.070] Dan McClellan: He used to be the high priest.{{< /line >}}
+{{< line >}}[00:33:41.350] Dan McClellan: So in John, he comes before Annas, then he goes before Caiaphas and part of the Sanhedrin and then later comes back before the Sanhedrin and then goes to Pilate.{{< /line >}}
+{{< line >}}[00:33:53.500] Dan McClellan: According to, I think it's Luke, Pilate sends him to Herod, who then sends him back to Pilate.{{< /line >}}
+{{< line >}}[00:34:03.100] Dan McClellan: So yeah, there it's kind of, it.{{< /line >}}
+{{< line >}}[00:34:05.460] Dan Beecher: Kind of happens in one day.{{< /line >}}
+{{< line >}}[00:34:07.660] Dan McClellan: Yeah, well, and it starts in like the middle of the night.{{< /line >}}
+{{< line >}}[00:34:10.620] Dan McClellan: So you can, you can imagine somebody was like getting, getting woken up and be like, yeah, put on my robe and go out and to see this guy.{{< /line >}}
+{{< line >}}[00:34:22.550] Dan McClellan: And yeah, we have Pilate interrogating him.{{< /line >}}
+{{< line >}}[00:34:25.470] Dan McClellan: And, and this, this is something that Bart Ehrman also points out in his book.{{< /line >}}
+{{< line >}}[00:34:30.390] Dan McClellan: There's in, in some of the accounts, Pilate like brings Jesus out to the crowd and he's like, this guy, you want me to kill this guy?{{< /line >}}
+{{< line >}}[00:34:39.910] Dan McClellan: And then he like takes him back in and then sentences him and then he goes off and is crucified.{{< /line >}}
+{{< line >}}[00:34:45.580] Dan McClellan: And, and where did we get the account of everything that Pilate and Jesus said in their little private meeting right in his office before he went off to get crucified.{{< /line >}}
+{{< line >}}[00:34:56.570] Dan McClellan: Because none of the disciples were anywhere near any of that.{{< /line >}}
+{{< line >}}[00:34:59.490] Dan McClellan: And there was no opportunity for Jesus to tell any of this story.{{< /line >}}
+{{< line >}}[00:35:04.050] Dan Beecher: You haven't read Pilate's authorized biography.{{< /line >}}
+{{< line >}}[00:35:08.050] Dan McClellan: They're, they're actually there in the, in the late 19th century.{{< /line >}}
+{{< line >}}[00:35:12.640] Dan McClellan: And I've got to remember the name of this book.{{< /line >}}
+{{< line >}}[00:35:15.280] Dan McClellan: There were some people who published what they called the Acts of Pilate, which they claimed were firsthand accounts of Pilate.{{< /line >}}
+{{< line >}}[00:35:25.840] Dan McClellan: But they were, you know, they were very clearly 19th century compositions.{{< /line >}}
+{{< line >}}[00:35:32.160] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:35:32.560] Dan McClellan: And, and they're also strangely white supremacist.{{< /line >}}
+{{< line >}}[00:35:36.960] Dan McClellan: Like, because one of them is like.{{< /line >}}
+{{< line >}}[00:35:38.680] Dan Beecher: He said, shocking no one.{{< /line >}}
+{{< line >}}[00:35:41.010] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:35:42.530] Dan McClellan: One of them describes Jesus's appearance and it's like he, he saw them and, and you know, he had flowing golden hair and, and blue eyes and lighter colored skin.{{< /line >}}
+{{< line >}}[00:35:53.690] Dan McClellan: And then all the Jewish people around him were swarthy with dark hair.{{< /line >}}
+{{< line >}}[00:35:59.010] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:35:59.370] Dan McClellan: You know, he's, he's this, he's this Aryan Adonis.{{< /line >}}
+{{< line >}}[00:36:03.650] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:36:04.690] Dan McClellan: And, and it's just, just straight up white supremacist.{{< /line >}}
+{{< line >}}[00:36:08.650] Dan McClellan: But you have some of those in circulation and every now and then on social media you will have people trot out those accounts and be like, see, we have accounts of what Jesus looked like.{{< /line >}}
+{{< line >}}[00:36:21.870] Dan Beecher: All right, let's, let's push through.{{< /line >}}
+{{< line >}}[00:36:23.790] Dan Beecher: We are, we're already threatening our final.{{< /line >}}
+{{< line >}}[00:36:26.190] Dan Beecher: We might not be able to make it to our.{{< /line >}}
+{{< line >}}[00:36:28.750] Dan McClellan: We can talk a bit about resurrection as we get to the resurrection in the.{{< /line >}}
+{{< line >}}[00:36:33.070] Dan Beecher: Sure, sure.{{< /line >}}
+{{< line >}}[00:36:34.110] Dan Beecher: So, so, so he's, he's pronounced guilty.{{< /line >}}
+{{< line >}}[00:36:38.190] Dan Beecher: We figured that out.{{< /line >}}
+{{< line >}}[00:36:39.580] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:36:40.220] Dan Beecher: And, and sent away to, to the thing.{{< /line >}}
+{{< line >}}[00:36:43.780] Dan Beecher: And meanwhile we've got Peter denying him along the way and there's some question as to the number of cock crowings and.{{< /line >}}
+{{< line >}}[00:36:55.740] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:36:56.380] Dan McClellan: Whether it's just once or three times.{{< /line >}}
+{{< line >}}[00:36:58.540] Dan Beecher: Right, Fine, fine, let's keep going.{{< /line >}}
+{{< line >}}[00:37:04.700] Dan McClellan: There's a, there's a big discrepancy, however, in regarding when Jesus is crucified.{{< /line >}}
+{{< line >}}[00:37:10.750] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:37:11.310] Dan McClellan: Because the Synoptic Gospels describe him being crucified at nine.{{< /line >}}
+{{< line >}}[00:37:16.830] Dan McClellan: And then it says around noon the sun went dark.{{< /line >}}
+{{< line >}}[00:37:20.910] Dan McClellan: And then around 3pm that is when Jesus says Eli Eli lama sabachthani and all that kind of stuff.{{< /line >}}
+{{< line >}}[00:37:29.550] Dan McClellan: So we have a several hour crucifixion.{{< /line >}}
+{{< line >}}[00:37:33.870] Dan McClellan: And in John it actually says that they lead him out and crucify him at noon, so.{{< /line >}}
+{{< line >}}[00:37:40.400] Dan Beecher: Oh, okay.{{< /line >}}
+{{< line >}}[00:37:41.080] Dan McClellan: They are off by a handful of hours.{{< /line >}}
+{{< line >}}[00:37:45.000] Dan Beecher: And that's.{{< /line >}}
+{{< line >}}[00:37:45.520] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:37:45.760] Dan Beecher: And that's.{{< /line >}}
+{{< line >}}[00:37:47.320] Dan Beecher: That's a significant difference.{{< /line >}}
+{{< line >}}[00:37:50.040] Dan Beecher: It's not, it's.{{< /line >}}
+{{< line >}}[00:37:51.160] Dan Beecher: It does.{{< /line >}}
+{{< line >}}[00:37:51.520] Dan Beecher: It's not, you know, it's not a game changer, but it does.{{< /line >}}
+{{< line >}}[00:37:54.880] Dan Beecher: I mean, if, if the sun, you know, if we've got moments like the sun going dark at noon, it does seem like it's important to sort of get.{{< /line >}}
+{{< line >}}[00:38:06.760] Dan Beecher: Keep some of these together.{{< /line >}}
+{{< line >}}[00:38:09.580] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:38:10.020] Dan McClellan: And then I've seen apologetic attempts to try to identify accounts from later Roman authors who were like, there was a...{{< /line >}}
+{{< line >}}[00:38:16.500] Dan McClellan: There was an eclipse this year.{{< /line >}}
+{{< line >}}[00:38:18.700] Dan McClellan: And they're like, "Ah, that's the year that Jesus was crucified."{{< /line >}}
+{{< line >}}[00:38:21.420] Dan McClellan: And it's like, well, there cannot be an eclipse at the Passover because the Passover is when the moon is on the other side of the earth from...{{< /line >}}
+{{< line >}}[00:38:30.620] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:38:31.420] Dan McClellan: So you can't really have an eclipse at that time.{{< /line >}}
+{{< line >}}[00:38:34.610] Dan McClellan: So.{{< /line >}}
+{{< line >}}[00:38:35.330] Dan Beecher: Interesting.{{< /line >}}
+{{< line >}}[00:38:36.850] Dan McClellan: And...{{< /line >}}
+{{< line >}}[00:38:37.130] Dan McClellan: And also, eclipses don't last for three hours, max seven minutes.{{< /line >}}
+{{< line >}}[00:38:44.050] Dan McClellan: Did you say yours don't?{{< /line >}}
+{{< line >}}[00:38:45.330] Dan Beecher: Yours don't.{{< /line >}}
+{{< line >}}[00:38:46.170] Dan Beecher: According to you, they had better eclipses back...{{< /line >}}
+{{< line >}}[00:38:49.170] Dan McClellan: I've been practicing.{{< /line >}}
+{{< line >}}[00:38:54.130] Dan Beecher: There. Let's... can we just briefly take a brief moment to talk about what the soldiers gave Jesus to drink?{{< /line >}}
+{{< line >}}[00:39:01.220] Dan McClellan: Yeah, let's talk about that.{{< /line >}}
+{{< line >}}[00:39:03.860] Dan McClellan: We have the... the... the accounts are different.{{< /line >}}
+{{< line >}}[00:39:06.260] Dan Beecher: Yes.{{< /line >}}
+{{< line >}}[00:39:07.220] Dan McClellan: Mark is the earliest.{{< /line >}}
+{{< line >}}[00:39:08.660] Dan McClellan: And I would say, since this account is found in all the Gospels, they're probably drawing from Mark or from whatever source Mark was drawing from.{{< /line >}}
+{{< line >}}[00:39:17.700] Dan McClellan: But Mark is our earliest.{{< /line >}}
+{{< line >}}[00:39:18.860] Dan McClellan: And it just says somebody ran, filled a sponge with sour wine, put it on a stick and gave it to him to drink, saying, "Let's see if Elijah will come to take him down."{{< /line >}}
+{{< line >}}[00:39:32.850] Dan Beecher: And then I... I've got wine mingled with myrrh.{{< /line >}}
+{{< line >}}[00:39:35.650] Dan Beecher: Is that just a...{{< /line >}}
+{{< line >}}[00:39:38.610] Dan McClellan: What translation are we looking at?{{< /line >}}
+{{< line >}}[00:39:40.530] Dan McClellan: Hang on just a moment.{{< /line >}}
+{{< line >}}[00:39:41.449] Dan McClellan: Let me pull up the... the Greek.{{< /line >}}
+{{< line >}}[00:39:46.770] Dan McClellan: Okay, so...{{< /line >}}
+{{< line >}}[00:39:51.180] Dan McClellan: So we got a sponge and we got sour wine slash vinegar.{{< /line >}}
+{{< line >}}[00:39:57.500] Dan Beecher: Huh.{{< /line >}}
+{{< line >}}[00:39:58.020] Dan McClellan: Let me look up this... this word here.{{< /line >}}
+{{< line >}}[00:40:01.740] Dan McClellan: Sour wine or wine vinegar is what it has in Mark.{{< /line >}}
+{{< line >}}[00:40:05.180] Dan Beecher: In Mark.{{< /line >}}
+{{< line >}}[00:40:05.820] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:40:06.300] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:40:06.699] Dan McClellan: Now let's... Matthew 27:48.{{< /line >}}
+{{< line >}}[00:40:10.620] Dan Beecher: So, okay.{{< /line >}}
+{{< line >}}[00:40:14.860] Dan McClellan: And... and that one has... I believe it has the same thing, vinegar to drink.{{< /line >}}
+{{< line >}}[00:40:23.210] Dan Beecher: So this says now...{{< /line >}}
+{{< line >}}[00:40:24.650] Dan Beecher: Okay, so I don't know what translation these guys are looking at.{{< /line >}}
+{{< line >}}[00:40:27.450] Dan Beecher: I'm gonna guess that we're in the... in the KJV.{{< /line >}}
+{{< line >}}[00:40:31.770] Dan McClellan: Oh, let me, let me take a look.{{< /line >}}
+{{< line >}}[00:40:33.450] Dan McClellan: Filled it with vinegar. That's what it has for Matthew 27:48 in the KJV.{{< /line >}}
+{{< line >}}[00:40:39.850] Dan Beecher: I've got...{{< /line >}}
+{{< line >}}[00:40:40.450] Dan Beecher: Oh, I'm looking at Matthew 27:34, gave him vinegar.{{< /line >}}
+{{< line >}}[00:40:48.090] Dan McClellan: Oh, they gave him vinegar to drink mingled with gall.{{< /line >}}
+{{< line >}}[00:40:52.650] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:40:53.130] Dan Beecher: Which doesn't sound very nice.{{< /line >}}
+{{< line >}}[00:40:54.810] Dan McClellan: No.{{< /line >}}
+{{< line >}}[00:40:56.090] Dan McClellan: And that... but that just says that has oinon or oinos, which is just wine.{{< /line >}}
+{{< line >}}[00:41:01.930] Dan McClellan: That's just the generic word for wine.{{< /line >}}
+{{< line >}}[00:41:04.570] Dan Beecher: So that's weird.{{< /line >}}
+{{< line >}}[00:41:05.850] Dan McClellan: Wine mixed with gall.{{< /line >}}
+{{< line >}}[00:41:08.090] Dan McClellan: But that's not the... the stick one.{{< /line >}}
+{{< line >}}[00:41:11.540] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:41:12.500] Dan McClellan: Which... which gets interesting.{{< /line >}}
+{{< line >}}[00:41:13.620] Dan McClellan: And then we've got John 19:29.{{< /line >}}
+{{< line >}}[00:41:18.980] Dan McClellan: And this is the... of all the... the Gospels, John is the least likely to be historical.{{< /line >}}
+{{< line >}}[00:41:24.100] Dan McClellan: It's writing the... the furthest away.{{< /line >}}
+{{< line >}}[00:41:26.100] Dan McClellan: Maybe it is also the one that's... that's toying with things the most and seems to be based on entirely different sources...{{< /line >}}
+{{< line >}}[00:41:33.460] Dan Beecher: sources, but also seems like the one that's best written, like it's most interestingly written.{{< /line >}}
+{{< line >}}[00:41:39.420] Dan McClellan: It's like...{{< /line >}}
+{{< line >}}[00:41:40.220] Dan Beecher: It's like telling a much better story.{{< /line >}}
+{{< line >}}[00:41:42.320] Dan Beecher: But yeah, probably it's storytelling like more.{{< /line >}}
+{{< line >}}[00:41:46.240] Dan Beecher: More than the other thing.{{< /line >}}
+{{< line >}}[00:41:48.000] Dan McClellan: And there we've got.{{< /line >}}
+{{< line >}}[00:41:49.360] Dan McClellan: Put a sponge full of.{{< /line >}}
+{{< line >}}[00:41:51.440] Dan McClellan: Of oxos.{{< /line >}}
+{{< line >}}[00:41:52.560] Dan McClellan: So that sour wine again on.{{< /line >}}
+{{< line >}}[00:41:55.680] Dan McClellan: Put it on hyssop and hyssop.{{< /line >}}
+{{< line >}}[00:41:59.600] Dan Beecher: I don't know what hyssop is.{{< /line >}}
+{{< line >}}[00:42:01.040] Dan McClellan: It's a.{{< /line >}}
+{{< line >}}[00:42:01.600] Dan McClellan: It's a type of branch.{{< /line >}}
+{{< line >}}[00:42:04.480] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:42:05.200] Dan McClellan: Type of.{{< /line >}}
+{{< line >}}[00:42:05.760] Dan McClellan: It's like a bush branch.{{< /line >}}
+{{< line >}}[00:42:08.820] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:42:09.020] Dan McClellan: And gave it to him to drink.{{< /line >}}
+{{< line >}}[00:42:10.340] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:42:10.740] Dan McClellan: And I've heard people say that this sounds like the xylospongium or the tersorium.{{< /line >}}
+{{< line >}}[00:42:19.540] Dan McClellan: And for folks who have visited ancient Roman cities, not anciently, but have visited them today, they have.{{< /line >}}
+{{< line >}}[00:42:29.620] Dan McClellan: You have the, the latrines, the.{{< /line >}}
+{{< line >}}[00:42:32.020] Dan McClellan: The public shared bathrooms.{{< /line >}}
+{{< line >}}[00:42:34.820] Dan Beecher: Oh, yeah.{{< /line >}}
+{{< line >}}[00:42:35.380] Dan McClellan: And there's a little trough that kind of runs right in front of you.{{< /line >}}
+{{< line >}}[00:42:38.820] Dan McClellan: So if you're{{< /line >}}
+{{< line >}}[00:42:39.920] Dan McClellan: down.{{< /line >}}
+{{< line >}}[00:42:40.080] Dan McClellan: It's down by your toes.{{< /line >}}
+{{< line >}}[00:42:42.560] Dan McClellan: And the xylospongium would be a sponge that was on the end of a stick.{{< /line >}}
+{{< line >}}[00:42:46.800] Dan McClellan: And you would take that stick and you'd splash it around in the water and then you would clean yourself with it.{{< /line >}}
+{{< line >}}[00:42:55.520] Dan McClellan: And so there is.{{< /line >}}
+{{< line >}}[00:42:57.240] Dan McClellan: There have been people who are arguing that this is what's going on, that.{{< /line >}}
+{{< line >}}[00:43:03.320] Dan Beecher: They gave him a poo stick.{{< /line >}}
+{{< line >}}[00:43:05.360] Dan McClellan: That they gave him a poo stick.{{< /line >}}
+{{< line >}}[00:43:06.960] Dan McClellan: And not the kind you throw under the bridge and then run the other side of the bridge.{{< /line >}}
+{{< line >}}[00:43:10.880] Dan McClellan: You heard that right?{{< /line >}}
+{{< line >}}[00:43:11.900] Dan McClellan: When the words came out, you were like, that sounds like Winnie the.{{< /line >}}
+{{< line >}}[00:43:14.260] Dan McClellan: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:43:15.820] Dan McClellan: So, yeah, there's.{{< /line >}}
+{{< line >}}[00:43:16.500] Dan McClellan: There's an argument for that, but that, that doesn't make much sense to me, particularly because of how the, the story changes.{{< /line >}}
+{{< line >}}[00:43:23.660] Dan McClellan: And, and.{{< /line >}}
+{{< line >}}[00:43:25.020] Dan McClellan: And some people say, well, they put vinegar on it to, to aid in, you know, antiseptic, whatever, but.{{< /line >}}
+{{< line >}}[00:43:30.180] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:43:31.180] Dan McClellan: It's wine.{{< /line >}}
+{{< line >}}[00:43:32.940] Dan McClellan: It's sour wine.{{< /line >}}
+{{< line >}}[00:43:34.020] Dan Beecher: Or no matter what, they were just trying to give him something gross as a last.{{< /line >}}
+{{< line >}}[00:43:37.860] Dan Beecher: As a.{{< /line >}}
+{{< line >}}[00:43:38.300] Dan Beecher: As a sort of rude last thing.{{< /line >}}
+{{< line >}}[00:43:41.980] Dan Beecher: An insult.{{< /line >}}
+{{< line >}}[00:43:43.020] Dan McClellan: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:43:44.300] Dan McClellan: And it doesn't.{{< /line >}}
+{{< line >}}[00:43:46.460] Dan Beecher: It almost doesn't matter if it was poo or if it was like nasty vinegar wine or whatever.{{< /line >}}
+{{< line >}}[00:43:50.780] Dan Beecher: It's like.{{< /line >}}
+{{< line >}}[00:43:51.300] Dan Beecher: Like you don't want to drink it.{{< /line >}}
+{{< line >}}[00:43:52.660] Dan Beecher: That's the.{{< /line >}}
+{{< line >}}[00:43:53.180] Dan McClellan: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:43:53.780] Dan McClellan: They're just making his.{{< /line >}}
+{{< line >}}[00:43:54.900] Dan McClellan: His final moments unpleasant.{{< /line >}}
+{{< line >}}[00:43:57.500] Dan McClellan: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:43:59.420] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:44:00.140] Dan McClellan: And then he.{{< /line >}}
+{{< line >}}[00:44:01.420] Dan McClellan: He gives up the ghost.{{< /line >}}
+{{< line >}}[00:44:03.420] Dan McClellan: We have the, the Aramaic, Eloi, Eloi, lama sabachthani.{{< /line >}}
+{{< line >}}[00:44:07.760] Dan McClellan: That's.{{< /line >}}
+{{< line >}}[00:44:07.960] Dan Beecher: That's.{{< /line >}}
+{{< line >}}[00:44:08.280] Dan Beecher: Oh, my God.{{< /line >}}
+{{< line >}}[00:44:09.160] Dan Beecher: My God, why hast thou forsaken me?{{< /line >}}
+{{< line >}}[00:44:10.880] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:44:11.440] Dan Beecher: Which he doesn't say in all of the Gospels.{{< /line >}}
+{{< line >}}[00:44:13.440] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:44:15.360] Dan McClellan: I think it's in most of them, but probably not all of them.{{< /line >}}
+{{< line >}}[00:44:18.280] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:44:18.600] Dan McClellan: Because I think in.{{< /line >}}
+{{< line >}}[00:44:20.400] Dan McClellan: Because the John, I don't think, wants to have Jesus asking God why he has been forsaken.{{< /line >}}
+{{< line >}}[00:44:27.840] Dan McClellan: Because for John, Jesus is the Word.{{< /line >}}
+{{< line >}}[00:44:29.960] Dan McClellan: They're united, right?{{< /line >}}
+{{< line >}}[00:44:31.920] Dan McClellan: In.{{< /line >}}
+{{< line >}}[00:44:32.800] Dan McClellan: In will and agency and all this kind of stuff.{{< /line >}}
+{{< line >}}[00:44:35.200] Dan McClellan: So, so you can't have that high Christological Jesus going, like, what's happening?{{< /line >}}
+{{< line >}}[00:44:42.000] Dan McClellan: So, so why didn't you save me, dad?{{< /line >}}
+{{< line >}}[00:44:45.040] Dan McClellan: So after he's received the vinegar, Jesus says it is finished, which in the Greek is tetelestai.{{< /line >}}
+{{< line >}}[00:44:57.040] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:49:20.850] Dan Beecher: Yeah, I, you said something in the middle of that that I think we need to touch on, which is how many days and nights was Jesus?{{< /line >}}
+{{< line >}}[00:49:30.290] Dan Beecher: Yeah, because it, you hear the number three tossed around a lot and yet it wasn't three.{{< /line >}}
+{{< line >}}[00:49:39.500] Dan McClellan: No.{{< /line >}}
+{{< line >}}[00:49:39.860] Dan McClellan: Well, I mean, or was it?{{< /line >}}
+{{< line >}}[00:49:42.860] Dan McClellan: So according to at least the Synoptics, he gives up the ghost around 3 pm. John doesn't really say exactly when he gives up the ghost, I don't think.{{< /line >}}
+{{< line >}}[00:49:51.339] Dan McClellan: But that is before nightfall.{{< /line >}}
+{{< line >}}[00:49:53.340] Dan McClellan: So that is 3 pm on Friday.{{< /line >}}
+{{< line >}}[00:49:55.420] Dan Beecher: Friday, right.{{< /line >}}
+{{< line >}}[00:49:56.700] Dan McClellan: So he dies on Friday before nightfall.{{< /line >}}
+{{< line >}}[00:49:59.940] Dan McClellan: The day starts at nightfall within the Jewish tradition.{{< /line >}}
+{{< line >}}[00:50:03.420] Dan McClellan: Okay, so Friday night would have been part of Saturday.{{< /line >}}
+{{< line >}}[00:50:06.780] Dan Beecher: Okay, so.{{< /line >}}
+{{< line >}}[00:50:08.940] Dan McClellan: So we have a full day.{{< /line >}}
+{{< line >}}[00:50:10.140] Dan McClellan: There is a full 24-hour period where he's gone.{{< /line >}}
+{{< line >}}[00:50:13.340] Dan McClellan: But he's only gone for a part of Friday, all of Saturday, and then a part of Sunday because they come to the tomb early Sunday morning and he's already gone.{{< /line >}}
+{{< line >}}[00:50:25.420] Dan Beecher: That's a day and a half if.{{< /line >}}
+{{< line >}}[00:50:27.860] Dan McClellan: We're going by 24-hour periods.{{< /line >}}
+{{< line >}}[00:50:29.620] Dan McClellan: Yeah, it's a day and a half now, you know, if I, if I fly to.{{< /line >}}
+{{< line >}}[00:50:34.080] Dan McClellan: Like I was on Monday, I flew to Kansas, and then I was all, I was in Kansas all day on Tuesday and I flew home Wednesday evening.{{< /line >}}
+{{< line >}}[00:50:43.160] Dan McClellan: And so I would say, you know, if I said I spent three days in Kansas now, would it be like, hey, you spent 56 hours in Kansas.{{< /line >}}
+{{< line >}}[00:50:52.320] Dan McClellan: That's not three days.{{< /line >}}
+{{< line >}}[00:50:54.600] Dan McClellan: But you know, I might be like, I was there for a day like either of those.{{< /line >}}
+{{< line >}}[00:51:00.020] Dan Beecher: It took up three of my days, essentially.{{< /line >}}
+{{< line >}}[00:51:04.580] Dan McClellan: Now there is a problem with this though, and that is that Jesus says, this adulterous generation will get no sign from me.{{< /line >}}
+{{< line >}}[00:51:13.180] Dan McClellan: No sign, except for the Sign of Jonah.{{< /line >}}
+{{< line >}}[00:51:16.420] Dan McClellan: And it says, just as Jonah was in the belly of the great fish for three days and three nights, so will the Son of Man be in the heart of the earth for three days and three nights.{{< /line >}}
+{{< line >}}[00:51:29.940] Dan Beecher: Okay, so that is a problem.{{< /line >}}
+{{< line >}}[00:51:32.420] Dan McClellan: Yeah, so that's where, you know, that's.{{< /line >}}
+{{< line >}}[00:51:36.420] Dan Beecher: How did you almost get the days right?{{< /line >}}
+{{< line >}}[00:51:39.300] Dan McClellan: I have approximate knowledge of many things. Some people will recognize that quote.{{< /line >}}
+{{< line >}}[00:51:45.260] Dan McClellan: But yeah, it's just a, it's a, you know, good enough prophecy because it absolutely was not three nights.{{< /line >}}
+{{< line >}}[00:51:54.120] Dan Beecher: Right?{{< /line >}}
+{{< line >}}[00:51:54.680] Dan McClellan: Yeah, that's okay.{{< /line >}}
+{{< line >}}[00:51:55.880] Dan Beecher: Well, and now we're at the point of talking about resurrection, so let's dive in quickly to resurrection as a concept.{{< /line >}}
+{{< line >}}[00:52:06.200] Dan Beecher: Where did, where did this idea come from?{{< /line >}}
+{{< line >}}[00:52:09.000] Dan McClellan: We, we don't really have anything.{{< /line >}}
+{{< line >}}[00:52:10.840] Dan McClellan: Well, we don't have much in the Hebrew Bible that could plausibly be connected with resurrection.{{< /line >}}
+{{< line >}}[00:52:16.640] Dan McClellan: We don't have anything that explicitly talks about a physical resurrection.{{< /line >}}
+{{< line >}}[00:52:22.920] Dan McClellan: In the earlier periods, once you die, your, you know, your body was put in, in a tomb, and then once everything had gone except for the bones, your bones would be collected up and in earlier periods, they would just be thrown in a, in a deeper part of the tomb and you would just become one of the ancestors.{{< /line >}}
+{{< line >}}[00:52:42.110] Dan McClellan: This mountain of bones where you were indistinguishable and disarticulated, or you were put in an ossuary, a bone box, and had a name written on it or not, and that was stuck in a smaller part of the tomb.{{< /line >}}
+{{< line >}}[00:52:57.050] Dan McClellan: There was no expectation of resurrection until we.{{< /line >}}
+{{< line >}}[00:53:01.370] Dan McClellan: Probably because of the Greco-Roman period, we have ideas about reward and punishment in the afterlife developing.{{< /line >}}
+{{< line >}}[00:53:09.850] Dan McClellan: We probably have in that period, ideas about resurrection.{{< /line >}}
+{{< line >}}[00:53:15.290] Dan McClellan: We have some, some hints in Daniel, we have Ezekiel, the Valley of the Dry Bones.{{< /line >}}
+{{< line >}}[00:53:20.760] Dan McClellan: You know, the, the flesh comes back to them.{{< /line >}}
+{{< line >}}[00:53:22.720] Dan McClellan: And this is really about the restoration of the nation of Israel.{{< /line >}}
+{{< line >}}[00:53:25.760] Dan McClellan: But this is probably fodder for the development of a concept of resurrection.{{< /line >}}
+{{< line >}}[00:53:31.400] Dan McClellan: We have it mentioned in Second Maccabees 7, which is probably a mid-to-late second century BCE text where it mentions the mother and the seven sons and that they were, because they were righteous, they were looking forward to a better resurrection.{{< /line >}}
+{{< line >}}[00:53:52.430] Dan McClellan: But because Antiochus IV Epiphanes was wicked, he's going to be destroyed.{{< /line >}}
+{{< line >}}[00:53:57.590] Dan McClellan: So in an earlier period, it seems like resurrection was the reward.{{< /line >}}
+{{< line >}}[00:54:02.150] Dan McClellan: No, non resurrection was the punishment.{{< /line >}}
+{{< line >}}[00:54:04.070] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:54:04.430] Dan Beecher: Annihilation.{{< /line >}}
+{{< line >}}[00:54:05.350] Dan McClellan: Like, yeah, annihilationism.{{< /line >}}
+{{< line >}}[00:54:07.110] Dan McClellan: Once we get to the New Testament, there seem to be three different concepts of postmortem punishment.{{< /line >}}
+{{< line >}}[00:54:11.830] Dan McClellan: Annihilationism, temporary conscious torment followed by annihilationism or eternal conscious torment.{{< /line >}}
+{{< line >}}[00:54:18.680] Dan McClellan: And we see those kind of sprinkled around the New Testament.{{< /line >}}
+{{< line >}}[00:54:21.960] Dan McClellan: Although Paul never refers to any of them explicitly, never refers to hell at all.{{< /line >}}
+{{< line >}}[00:54:27.720] Dan McClellan: Although does once, once and a half refer to people being destroyed?{{< /line >}}
+{{< line >}}[00:54:33.800] Dan McClellan: So might be annihilationism.{{< /line >}}
+{{< line >}}[00:54:36.680] Dan McClellan: But we have this, this concept of resurrection that is developing within Greco Roman period Judaism.{{< /line >}}
+{{< line >}}[00:54:42.880] Dan McClellan: And it seems to be represented a couple different ways in the New Testament.{{< /line >}}
+{{< line >}}[00:54:47.120] Dan McClellan: And you also have people being brought back to life in the Hebrew Bible and elsewhere.{{< /line >}}
+{{< line >}}[00:54:52.560] Dan McClellan: But there's not a sense of you're immortal now, it's you were dead.{{< /line >}}
+{{< line >}}[00:54:57.560] Dan McClellan: Oop.{{< /line >}}
+{{< line >}}[00:54:57.880] Dan McClellan: Okay, we're gonna do.{{< /line >}}
+{{< line >}}[00:54:59.440] Dan McClellan: Hit the reset button.{{< /line >}}
+{{< line >}}[00:55:00.720] Dan Beecher: You get a few more weeks, buddy.{{< /line >}}
+{{< line >}}[00:55:02.400] Dan McClellan: Yeah, you're still mortal.{{< /line >}}
+{{< line >}}[00:55:03.760] Dan McClellan: You're still gonna get old and die.{{< /line >}}
+{{< line >}}[00:55:06.400] Dan McClellan: There are some folks who argue that, that the idea of the dying and rising God, the kind of cyclical go down to the underworld, come back thing, might have influenced the idea of resurrection, but it's something that's developing in the century or two prior to the New Testament.{{< /line >}}
+{{< line >}}[00:55:23.330] Dan McClellan: And then we have Jesus is the one who, who kind of kicks off the resurrection, except in Matthew, because when Jesus dies, tombs open and people rise up, right?{{< /line >}}
+{{< line >}}[00:55:38.900] Dan McClellan: And there's like, there's like a little.{{< /line >}}
+{{< line >}}[00:55:40.740] Dan Beecher: It's a dead man's party.{{< /line >}}
+{{< line >}}[00:55:42.140] Dan Beecher: Who could ask for more?{{< /line >}}
+{{< line >}}[00:55:43.460] Dan McClellan: A little mini zombie apocalypse where.{{< /line >}}
+{{< line >}}[00:55:45.980] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:55:46.220] Dan McClellan: And it says that people were seen in the city and.{{< /line >}}
+{{< line >}}[00:55:49.220] Dan Beecher: Yeah, they're just wandering around the streets.{{< /line >}}
+{{< line >}}[00:55:51.020] Dan Beecher: It's fine.{{< /line >}}
+{{< line >}}[00:55:51.500] Dan Beecher: Don't worry about it.{{< /line >}}
+{{< line >}}[00:55:52.340] Dan McClellan: It's cool.{{< /line >}}
+{{< line >}}[00:55:52.980] Dan McClellan: And nothing.{{< /line >}}
+{{< line >}}[00:55:55.620] Dan McClellan: We.{{< /line >}}
+{{< line >}}[00:55:55.940] Dan McClellan: We don't hear anything about whether they were now immortal.{{< /line >}}
+{{< line >}}[00:55:58.820] Dan McClellan: If this was because Jesus is supposed to be the first fruits of the resurrection, the first person to be resurrected.{{< /line >}}
+{{< line >}}[00:56:06.030] Dan McClellan: So.{{< /line >}}
+{{< line >}}[00:56:06.350] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:56:06.670] Dan McClellan: Maybe it was just like, hey, you know, a.{{< /line >}}
+{{< line >}}[00:56:09.470] Dan McClellan: What was the, what was the.{{< /line >}}
+{{< line >}}[00:56:11.870] Dan McClellan: The Pixar movie, Onward?{{< /line >}}
+{{< line >}}[00:56:14.510] Dan McClellan: Maybe it was just A you got 24 hours kind of deal.{{< /line >}}
+{{< line >}}[00:56:18.070] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:56:20.510] Dan McClellan: But yeah, so the resurrection is.{{< /line >}}
+{{< line >}}[00:56:23.150] Dan McClellan: Is kind of unclear, but it's.{{< /line >}}
+{{< line >}}[00:56:24.630] Dan McClellan: It's crystallizing by the time of the New Testament.{{< /line >}}
+{{< line >}}[00:56:28.110] Dan McClellan: And it's in the periods following that that we get along with the systematization of heaven, of hell, and of these other things.{{< /line >}}
+{{< line >}}[00:56:37.360] Dan McClellan: And I think it's important to note that the Gospel authors, the other New Testament authors, they're mostly writing from their own point of view and they have different ideas about all of this stuff.{{< /line >}}
+{{< line >}}[00:56:49.280] Dan McClellan: But what makes it necessary to consolidate it all, reconcile it all, harmonize it all, is when the New Testament comes together and now we have one corpus and we're considering it a single corpus, which is something that starts in the second century and is really formalized in the fourth and fifth century.{{< /line >}}
+{{< line >}}[00:57:09.110] Dan McClellan: And now that we're looking at it all as inspired scripture, suddenly it's like, well, let's make sense of it all.{{< /line >}}
+{{< line >}}[00:57:15.910] Dan McClellan: And we have the apologists in the second century who are trying to make the Gospel intellectually palatable for the Greco Roman elite, the intelligentsia.{{< /line >}}
+{{< line >}}[00:57:26.460] Dan McClellan: who are trying to make the Gospel intellectually palatable for the Greco-Roman elite, the intelligentsia. And so they, they're looking at this corpus like, this is a mess.{{< /line >}}
+{{< line >}}[00:57:30.020] Dan McClellan: We gotta.{{< /line >}}
+{{< line >}}[00:57:30.860] Dan McClellan: We gotta get this organized.{{< /line >}}
+{{< line >}}[00:57:33.500] Dan McClellan: And that catalyzes this work of systematizing everything and taking all these disparate kind of incongruous pieces and trying to fit them together to make a single kind of systematic framework that can work.{{< /line >}}
+{{< line >}}[00:57:52.700] Dan McClellan: And that's what's going on between the second and, like, fourth and fifth centuries within Christianity.{{< /line >}}
+{{< line >}}[00:57:58.400] Dan McClellan: And that's why we have the ideas that we have now.{{< /line >}}
+{{< line >}}[00:58:01.200] Dan McClellan: It's.{{< /line >}}
+{{< line >}}[00:58:01.720] Dan McClellan: It's not because, you know, Matthew and Luke and Paul and John and James were all like, we agree on everything, right?{{< /line >}}
+{{< line >}}[00:58:12.600] Dan McClellan: Because they didn't.{{< /line >}}
+{{< line >}}[00:58:13.440] Dan Beecher: They.{{< /line >}}
+{{< line >}}[00:58:13.680] Dan McClellan: They disagreed on a ton of stuff.{{< /line >}}
+{{< line >}}[00:58:15.400] Dan McClellan: But then you have Clement and Athanasius and Tertullian and all these other guys who are looking back and saying, well, if we think these people were all inspired, then we got to make them agree.{{< /line >}}
+{{< line >}}[00:58:28.830] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:58:29.390] Dan McClellan: So it's kind of a necessity that drove the development of the, of the concepts as we have them now.{{< /line >}}
+{{< line >}}[00:58:35.830] Dan McClellan: But in the New Testament, they all have different ideas about the resurrection, about postmortem divine punishment, about all of these things.{{< /line >}}
+{{< line >}}[00:58:45.310] Dan Beecher: Interesting.{{< /line >}}
+{{< line >}}[00:58:46.510] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:58:46.990] Dan Beecher: Well, that'll do it for the, for the show.{{< /line >}}
+{{< line >}}[00:58:50.830] Dan Beecher: I think for our afterparty for our patrons, we should go through a few more of the contradictions in the story and we'll, we'll chat a bit about that.{{< /line >}}
+{{< line >}}[00:59:01.290] Dan Beecher: So if you want to become a patron who can actually hear that afterparty and hear bonus recordings of every week, you can join us over on patreon.com/dataoverdogma, which we would really appreciate.{{< /line >}}
+{{< line >}}[00:59:16.970] Dan Beecher: The $10 a month and up category is what will get you the afterparty.{{< /line >}}
+{{< line >}}[00:59:23.110] Dan Beecher: But also you can just join us there for an ad-free version of every show and early access to every show.{{< /line >}}
+{{< line >}}[00:59:31.190] Dan Beecher: If you'd like to reach out to us, you can always do that.{{< /line >}}
+{{< line >}}[00:59:34.150] Dan Beecher: contact@dataoverdogmapod.com is the way to do that.{{< /line >}}
+{{< line >}}[00:59:38.070] Dan Beecher: And we'll see you next week.{{< /line >}}
+{{< line >}}[00:59:40.710] Dan McClellan: Bye, everybody.{{< /line >}}

@@ -16,12 +16,26 @@ import {
 
 const HUGO_CONTENT_DIR = 'hugo/content/episodes';
 
+/** Regular hosts - anyone else in speakers array is a guest */
+const HOSTS = new Set(['Dan McClellan', 'Dan Beecher']);
+
+/**
+ * Extract guest speakers (non-hosts) from the speakers array.
+ * Returns guest names in the order they appear.
+ */
+function getGuestSpeakers(speakers: string[] | undefined): string[] {
+	if (!speakers) return [];
+	return speakers.filter((speaker) => !HOSTS.has(speaker));
+}
+
 /**
  * Extract the clean episode title from the full video title.
  * Handles formats like:
  * - 'Episode 1 (April 8, 2023), "In the Beginning"' -> 'In the Beginning'
  * - 'Episode 10 (June 12, 2023): "Adam and Steve..."' -> 'Adam and Steve...'
  * - 'Apostlepalooza!' -> 'Apostlepalooza!'
+ * - 'Christian Nationalism Ain't Christian: With Andrew Whitehead' -> 'Christian Nationalism Ain't Christian'
+ * - 'Episode 47, Introducing History Daily' -> 'Introducing History Daily'
  */
 function extractCleanTitle(fullTitle: string): string {
 	// Try to extract quoted portion
@@ -30,8 +44,33 @@ function extractCleanTitle(fullTitle: string): string {
 		return quotedMatch[1];
 	}
 
-	// No quotes - return the full title as-is
-	return fullTitle;
+	// No quotes - clean up the title
+	let title = fullTitle;
+
+	// Strip leading "Episode N," or "Episode N:" patterns
+	title = title.replace(/^Episode\s+\d+[,:]\s*/i, '');
+
+	// Strip trailing ": With Name" or "with Name" patterns
+	// (guest names are added programmatically from speakers array)
+	title = title.replace(/:?\s*[Ww]ith\s+[\w\s.]+$/, '');
+
+	return title.trim();
+}
+
+/**
+ * Convert a title to a URL-safe slug.
+ * Examples:
+ * - "The End(s) of Monotheism" -> "the-ends-of-monotheism"
+ * - "God's Wife" -> "gods-wife"
+ * - "Ehrmageddon!" -> "ehrmageddon"
+ */
+function slugifyTitle(title: string): string {
+	return title
+		.toLowerCase()
+		.replaceAll(/[()'"!?]/g, '') // Remove punctuation
+		.replaceAll(/[^a-z0-9]+/g, '-') // Replace non-alphanumeric with hyphens
+		.replaceAll(/-+/g, '-') // Collapse multiple hyphens
+		.replaceAll(/^-|-$/g, ''); // Remove leading/trailing hyphens
 }
 
 /**
@@ -108,8 +147,7 @@ function transformToShortcodes(content: string): string {
 /**
  * Generate YAML frontmatter for an episode.
  */
-function generateFrontmatter(video: ProcessedVideo): string {
-	const cleanTitle = extractCleanTitle(video.title);
+function generateFrontmatter(video: ProcessedVideo, cleanTitle: string): string {
 	const tags = video.tags?.map((t) => t.tag) ?? [];
 	const speakers = video.speakers ?? [];
 
@@ -122,6 +160,9 @@ function generateFrontmatter(video: ProcessedVideo): string {
 		`date: ${video.publishedAt}`,
 		`episodeNumber: ${video.episodeNumber}`,
 		`videoId: ${video.videoId}`,
+		// Alias for redirect from short URL (/episodes/N/) to canonical slug URL
+		'aliases:',
+		`  - /episodes/${video.episodeNumber}/`,
 	];
 
 	// Tags as YAML array
@@ -166,13 +207,18 @@ async function generateEpisodeContent(video: ProcessedVideo): Promise<boolean> {
 	const transcriptWithShortcodes = transformToShortcodes(transcriptContent);
 
 	// Generate frontmatter
-	const frontmatter = generateFrontmatter(video);
+	const cleanTitle = extractCleanTitle(video.title);
+	const frontmatter = generateFrontmatter(video, cleanTitle);
 
 	// Combine frontmatter and transcript
 	const content = `${frontmatter}\n\n${transcriptWithShortcodes}`;
 
-	// Write to Hugo content directory
-	const outputDir = path.join(HUGO_CONTENT_DIR, String(video.episodeNumber));
+	// Write to Hugo content directory with slug-based path
+	// Include guest name(s) in URL for SEO
+	const guests = getGuestSpeakers(video.speakers);
+	const titleSlug = slugifyTitle(cleanTitle);
+	const guestSlug = guests.length > 0 ? `-with-${slugifyTitle(guests.join('-and-'))}` : '';
+	const outputDir = path.join(HUGO_CONTENT_DIR, `${video.episodeNumber}-${titleSlug}${guestSlug}`);
 	const outputPath = path.join(outputDir, 'index.md');
 
 	// Ensure directory exists

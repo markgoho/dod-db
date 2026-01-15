@@ -1,0 +1,905 @@
+---
+title: Tiptoe Through the Talmud
+date: 2023-09-18T00:00:00Z
+episodeNumber: 24
+videoId: 8OqwDYUzrIY
+aliases:
+  - /episodes/24/
+tags:
+  - Talmud
+  - Torah
+  - Judaism
+  - Israel
+  - Hebrew Bible
+  - Jerusalem
+  - Jesus
+  - Babylon
+  - Hebrews
+  - Moses
+  - Christianity
+  - Ezekiel
+  - Genesis
+  - Judah
+  - Passover
+  - Romans
+speakers:
+  - Miriam Anzovin
+  - Dan McClellan
+  - Dan Beecher
+draft: false
+---
+
+{{< line >}}[00:00:02.160] Miriam Anzovin: Rabbinic Judaism has an oral tradition of teachings, traditions, rules, laws, however you want to put it, that were transmitted, at least this is how it's explained.{{< /line >}}
+{{< line >}}[00:00:14.000] Miriam Anzovin: Transmitted generation to generation verbally.{{< /line >}}
+{{< line >}}[00:00:17.840] Miriam Anzovin: And then what happened is the Roman Empire, unfortunately for everybody.{{< /line >}}
+{{< line >}}[00:00:22.720] Miriam Anzovin: And I don't care that they make nice roads.{{< /line >}}
+{{< line >}}[00:00:25.040] Miriam Anzovin: I don't care.{{< /line >}}
+{{< line >}}[00:00:26.400] Miriam Anzovin: But, you know, what about the aqueducts?{{< /line >}}
+{{< line >}}[00:00:29.120] Miriam Anzovin: I don't care.{{< /line >}}
+{{< line >}}[00:00:29.920] Miriam Anzovin: I don't.{{< /line >}}
+{{< line >}}[00:00:31.980] Dan McClellan: You know, what else have they done for us?{{< /line >}}
+{{< line >}}[00:00:33.580] Miriam Anzovin: Yeah, what have they done?{{< /line >}}
+{{< line >}}[00:00:34.500] Miriam Anzovin: They stole my.{{< /line >}}
+{{< line >}}[00:00:35.100] Miriam Anzovin: They stole our menorah.{{< /line >}}
+{{< line >}}[00:00:36.180] Miriam Anzovin: Okay?{{< /line >}}
+{{< line >}}[00:00:36.460] Miriam Anzovin: That was the least of what they did.{{< /line >}}
+{{< line >}}[00:00:37.580] Miriam Anzovin: And am I going to the Vatican to get it out of the basement?{{< /line >}}
+{{< line >}}[00:00:39.940] Miriam Anzovin: I will.{{< /line >}}
+{{< line >}}[00:00:41.020] Miriam Anzovin: For anyone who wants to join me on that highly illegal heist.{{< /line >}}
+{{< line >}}[00:00:47.500] Dan McClellan: Hey, Everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:49.100] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
+{{< line >}}[00:00:50.380] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we try to increase the public's access to the academic study of the Bible and religion and combat the spread of.{{< /line >}}
+{{< line >}}[00:01:00.840] Dan McClellan: Of misinformation.{{< /line >}}
+{{< line >}}[00:01:01.720] Dan McClellan: About the same.{{< /line >}}
+{{< line >}}[00:01:02.600] Dan McClellan: How are things today, Dan?{{< /line >}}
+{{< line >}}[00:01:04.040] Dan Beecher: Man, I'm excited.{{< /line >}}
+{{< line >}}[00:01:05.720] Dan Beecher: We got a great guest today.{{< /line >}}
+{{< line >}}[00:01:07.960] Dan Beecher: I'm very.{{< /line >}}
+{{< line >}}[00:01:08.600] Dan Beecher: I'm very pleased.{{< /line >}}
+{{< line >}}[00:01:09.360] Dan Beecher: I'm going to learn a lot of words that I don't actually know and figure out what the heck they mean because they're not in my language.{{< /line >}}
+{{< line >}}[00:01:17.080] Dan Beecher: So, Dan, why don't you introduce our guest?{{< /line >}}
+{{< line >}}[00:01:19.000] Dan McClellan: Happily, today we're going to be talking with Miriam Anzovin, who is on TikTok, is on social media, is an artist, is a creator across a number of different channels and in a number of different media.{{< /line >}}
+{{< line >}}[00:01:32.770] Dan McClellan: I know her from her very popular Daf reaction videos on TikTok, but she does so much more than that.{{< /line >}}
+{{< line >}}[00:01:40.370] Dan McClellan: So welcome to the show.{{< /line >}}
+{{< line >}}[00:01:41.570] Dan McClellan: Miriam, how are you doing today?{{< /line >}}
+{{< line >}}[00:01:43.330] Miriam Anzovin: I am so delighted to be here.{{< /line >}}
+{{< line >}}[00:01:45.250] Miriam Anzovin: Shalom, friends.{{< /line >}}
+{{< line >}}[00:01:46.290] Miriam Anzovin: To anybody listening who might be my follower, but to everybody else who is a fan of these two wonderful Dans and Dan's TikTok account.{{< /line >}}
+{{< line >}}[00:01:55.890] Miriam Anzovin: I am just delighted to be here as a fellow fan.{{< /line >}}
+{{< line >}}[00:01:58.770] Miriam Anzovin: So thank you so much for having me.{{< /line >}}
+{{< line >}}[00:02:00.290] Dan Beecher: All right, thank you.{{< /line >}}
+{{< line >}}[00:02:01.370] Dan McClellan: Well, thank you so much for being here.{{< /line >}}
+{{< line >}}[00:02:02.450] Dan McClellan: We really appreciate it.{{< /line >}}
+{{< line >}}[00:02:03.410] Dan McClellan: We were very excited to.{{< /line >}}
+{{< line >}}[00:02:04.890] Dan McClellan: To have the opportunity to talk to you a little bit today about things like the Talmud and the representation of women within the Talmud.{{< /line >}}
+{{< line >}}[00:02:13.450] Dan McClellan: But I think before we get into that, we want to hear a little bit more about your backstory so we can understand how you're coming at the Talmud and its representation of women and.{{< /line >}}
+{{< line >}}[00:02:25.210] Dan McClellan: And your experience on social media.{{< /line >}}
+{{< line >}}[00:02:27.770] Dan McClellan: And you were mentioning before we got started here that you were producing, editing, hosting a podcast.{{< /line >}}
+{{< line >}}[00:02:36.960] Dan McClellan: For a community, a Jewish community in the Boston area before they decided to corporatize and.{{< /line >}}
+{{< line >}}[00:02:44.960] Dan McClellan: And kick things over to a CEO and you were left in the wind.{{< /line >}}
+{{< line >}}[00:02:49.440] Dan McClellan: Which then led to what?{{< /line >}}
+{{< line >}}[00:02:52.640] Miriam Anzovin: It led to me having all of this creative Jewish energy and nowhere to put it, because in addition to hosting that podcast, The Vibe of the Tribe, Rest in peace, I also did a lot of graphic design.{{< /line >}}
+{{< line >}}[00:03:08.540] Miriam Anzovin: I designed Haggadot.{{< /line >}}
+{{< line >}}[00:03:10.460] Miriam Anzovin: I did infographics about Jewish ideas and holidays.{{< /line >}}
+{{< line >}}[00:03:14.540] Miriam Anzovin: And anything that I found fascinating about Jewishness, Jewish culture, I was able to create.{{< /line >}}
+{{< line >}}[00:03:20.860] Miriam Anzovin: I also wrote a series of comedic articles, which were sort of the forebearer, if you will, of what I do now in video format, in Daf reactions, and the other funny yet heartfelt Jewish content I create for social media.{{< /line >}}
+{{< line >}}[00:03:36.530] Miriam Anzovin: But yes, so what happened was I had all this.{{< /line >}}
+{{< line >}}[00:03:38.770] Miriam Anzovin: All this energy and I had nowhere to put it, nowhere to put all these Jewish thoughts in my head.{{< /line >}}
+{{< line >}}[00:03:44.690] Miriam Anzovin: And I had been, you know, lurking on TikTok for two years over the course of the pandemic.f the pandemic.{{< /line >}}
+{{< line >}}[00:03:49.650] Miriam Anzovin: I'm talking right now about, like, December 2021, you know, about two years.{{< /line >}}
+{{< line >}}[00:03:55.490] Miriam Anzovin: And I had been doing.{{< /line >}}
+{{< line >}}[00:03:57.160] Miriam Anzovin: Learning the Talmud.{{< /line >}}
+{{< line >}}[00:03:58.000] Miriam Anzovin: I have been doing Daf Yomi since January 5th of 2020.{{< /line >}}
+{{< line >}}[00:04:01.960] Miriam Anzovin: So it again, you know, been almost two years of that.{{< /line >}}
+{{< line >}}[00:04:05.000] Miriam Anzovin: And I thought to myself, well, TikTok is a place where I learned so many incredible things about things I never knew how other people live across the world, what their faith traditions might be like, their interests, their hobbies.{{< /line >}}
+{{< line >}}[00:04:18.280] Miriam Anzovin: Incredible, incredible things that were really eye opening to me is what I found on TikTok.{{< /line >}}
+{{< line >}}[00:04:23.960] Miriam Anzovin: And I also found a lot of humor that really supported me during that dark, dark time.{{< /line >}}
+{{< line >}}[00:04:28.640] Miriam Anzovin: So I thought, okay, I'm gonna make, you know, I'll make some reaction videos.{{< /line >}}
+{{< line >}}[00:04:31.720] Miriam Anzovin: It'll be like a play on reaction videos, a little bit of a play on beauty influencer kind of aesthetic, which is why I locked myself into a full face of makeup every time I record now.{{< /line >}}
+{{< line >}}[00:04:42.720] Miriam Anzovin: That was my mistake.{{< /line >}}
+{{< line >}}[00:04:44.440] Miriam Anzovin: But at the beginning, I was like, no one's gonna see this anyway.{{< /line >}}
+{{< line >}}[00:04:47.200] Miriam Anzovin: So this is just me having fun.{{< /line >}}
+{{< line >}}[00:04:49.000] Miriam Anzovin: Maybe five to 10 people who are similar to me in a lot of respects, maybe fellow millennials, fellow women who are learning the Talmud for the first time, might also be wrestling and struggling with some of the ideas I was encountering and, you know, trying to rectify that with our current modern mode of thinking.{{< /line >}}
+{{< line >}}[00:05:10.050] Miriam Anzovin: And I was like, okay, I will make.{{< /line >}}
+{{< line >}}[00:05:11.650] Miriam Anzovin: I will make some reaction videos.{{< /line >}}
+{{< line >}}[00:05:13.370] Miriam Anzovin: And, you know, those people may get it.{{< /line >}}
+{{< line >}}[00:05:15.570] Miriam Anzovin: And I remember the first one I did was a natural.{{< /line >}}
+{{< line >}}[00:05:18.690] Miriam Anzovin: A natural fit because it was a story about someone who we would define now as a Karen.{{< /line >}}
+{{< line >}}[00:05:26.050] Miriam Anzovin: And I said, oh, this is perfect.{{< /line >}}
+{{< line >}}[00:05:27.770] Miriam Anzovin: This translates beautifully to social media.{{< /line >}}
+{{< line >}}[00:05:30.410] Miriam Anzovin: Let me just take this, this very old text, this very, very, very old story.{{< /line >}}
+{{< line >}}[00:05:36.610] Miriam Anzovin: But it fits perfectly into a modern Internet paradigm, which I found as the work has progressed since that first video has been the case, quite often, it quite often lends itself, and I'm not the first person to have identified this idea.{{< /line >}}
+{{< line >}}[00:05:54.180] Miriam Anzovin: It lends itself well to being discussed online because.{{< /line >}}
+{{< line >}}[00:05:58.340] Miriam Anzovin: And I'm sure we'll get into more about this shortly, the, the Talmud, the way I describe it to people, it's very much like the Internet.{{< /line >}}
+{{< line >}}[00:06:05.620] Miriam Anzovin: You have the Mishnah, which is a blog post, for example, and then you have the Gemara, which is the comment section, and arguments and discussions and fights happening in there.{{< /line >}}
+{{< line >}}[00:06:16.830] Miriam Anzovin: And anyone who has had a comment section or been in one, sometimes you find comments that are brilliant and enlightening, and sometimes you find ones that are just like, I would like to block this.{{< /line >}}
+{{< line >}}[00:06:25.790] Miriam Anzovin: So it's very akin to that.{{< /line >}}
+{{< line >}}[00:06:27.950] Miriam Anzovin: And it's also a very hyperlinked text in a way, before there was such a thing.{{< /line >}}
+{{< line >}}[00:06:32.550] Miriam Anzovin: Before the advent of Sefaria.org where I learn Talmud.{{< /line >}}
+{{< line >}}[00:06:37.750] Miriam Anzovin: They offer the full Talmud for free, which I salute them.{{< /line >}}
+{{< line >}}[00:06:40.830] Miriam Anzovin: They can't see me if they're listening to this, but if they're watching on YouTube, I salute you.{{< /line >}}
+{{< line >}}[00:06:44.910] Miriam Anzovin: And it just, it really shockingly perhaps to me at the time, because I didn't know it was a natural fit to make videos about this.{{< /line >}}
+{{< line >}}[00:06:54.030] Miriam Anzovin: So a lot of things happened between then and now, but that's, that's how I first began.{{< /line >}}
+{{< line >}}[00:06:58.990] Miriam Anzovin: That was the genesis, if you will, of.{{< /line >}}
+{{< line >}}[00:07:01.470] Miriam Anzovin: Of Daf Reactions as a series.{{< /line >}}
+{{< line >}}[00:07:03.150] Dan Beecher: I'm gonna, I'm gonna jump in here because we've already gotten several of the words that I don't actually know.{{< /line >}}
+{{< line >}}[00:07:08.570] Dan Beecher: I've looked them up.{{< /line >}}
+{{< line >}}[00:07:09.650] Dan Beecher: I. I do know them.{{< /line >}}
+{{< line >}}[00:07:10.770] Dan Beecher: But I would love to.{{< /line >}}
+{{< line >}}[00:07:12.170] Dan Beecher: For you to explain to our listeners who may not have your particular background.{{< /line >}}
+{{< line >}}[00:07:17.690] Dan Beecher: Daf Yomi.{{< /line >}}
+{{< line >}}[00:07:18.650] Dan Beecher: I.{{< /line >}}
+{{< line >}}[00:07:19.130] Miriam Anzovin: Absolutely.{{< /line >}}
+{{< line >}}[00:07:19.850] Dan Beecher: What is that?{{< /line >}}
+{{< line >}}[00:07:20.730] Dan Beecher: What are we talking here?g here?{{< /line >}}
+{{< line >}}[00:07:22.010] Miriam Anzovin: Okay, well, let me first start with the Mishnah, because there are two basic components of the Talmud.{{< /line >}}
+{{< line >}}[00:07:27.850] Miriam Anzovin: And you'll understand what the Talmud is when I explain the components.{{< /line >}}
+{{< line >}}[00:07:31.130] Miriam Anzovin: So in Judaism, we have the Torah, the Five Books of Moses.{{< /line >}}
+{{< line >}}[00:07:36.730] Miriam Anzovin: One, you might know them as the Five Books of Moses.{{< /line >}}
+{{< line >}}[00:07:40.000] Miriam Anzovin: And in addition to that, however, Rabbinic Judaism has an oral tradition of teachings, traditions, rules, laws, however you want to put it, that were transmitted.{{< /line >}}
+{{< line >}}[00:07:52.360] Miriam Anzovin: At least this is how it's explained, transmitted generation to generation verbally.{{< /line >}}
+{{< line >}}[00:07:57.520] Miriam Anzovin: And then what happened is the Roman Empire—unfortunately for everybody.{{< /line >}}
+{{< line >}}[00:08:02.400] Miriam Anzovin: And I don't care that they make nice roads.{{< /line >}}
+{{< line >}}[00:08:04.680] Miriam Anzovin: I don't care.{{< /line >}}
+{{< line >}}[00:08:06.080] Dan McClellan: But you know, what about the aqueduct?{{< /line >}}
+{{< line >}}[00:08:08.800] Miriam Anzovin: I don't care.{{< /line >}}
+{{< line >}}[00:08:09.740] Miriam Anzovin: I don't care.{{< /line >}}
+{{< line >}}[00:08:11.420] Dan McClellan: You know what, what else have they done for us?{{< /line >}}
+{{< line >}}[00:08:13.260] Miriam Anzovin: Yeah, what have they done?{{< /line >}}
+{{< line >}}[00:08:14.140] Miriam Anzovin: They stole my—{{< /line >}}
+{{< line >}}[00:08:14.780] Miriam Anzovin: They stole our menorah.{{< /line >}}
+{{< line >}}[00:08:15.860] Miriam Anzovin: Okay?{{< /line >}}
+{{< line >}}[00:08:16.100] Miriam Anzovin: That was the least of what they did.{{< /line >}}
+{{< line >}}[00:08:17.260] Miriam Anzovin: And am I going to the Vatican to get it out of the basement?{{< /line >}}
+{{< line >}}[00:08:19.580] Miriam Anzovin: I will, for anyone who wants to join me on that highly illegal heist.{{< /line >}}
+{{< line >}}[00:08:24.460] Miriam Anzovin: But...{{< /line >}}
+{{< line >}}[00:08:24.780] Miriam Anzovin: So what happened was Rome.{{< /line >}}
+{{< line >}}[00:08:27.100] Miriam Anzovin: And because of the Roman takeover and steamrolling of Judea and the subsequent destruction of Judaism as it was at the time—centered entirely on the physical land of Israel and surrounding the sacrifices in the Temple in Jerusalem—this was the sort of basis around which all of Judaism converged.{{< /line >}}
+{{< line >}}[00:08:50.620] Miriam Anzovin: Right?{{< /line >}}
+{{< line >}}[00:08:51.180] Miriam Anzovin: The rabbis of that era, the community leaders of that era, had to figure out a way to preserve Judaism and preserve these teachings.{{< /line >}}
+{{< line >}}[00:08:59.580] Miriam Anzovin: And as part of that, they wrote down these oral traditions.{{< /line >}}
+{{< line >}}[00:09:04.140] Miriam Anzovin: And that is what the Mishnah is.{{< /line >}}
+{{< line >}}[00:09:06.060] Miriam Anzovin: And I believe that ended up being compiled around the year 200 CE.{{< /line >}}
+{{< line >}}[00:09:12.780] Miriam Anzovin: I mean, this is, this is a little wiggly.{{< /line >}}
+{{< line >}}[00:09:14.940] Miriam Anzovin: I am not...{{< /line >}}
+{{< line >}}[00:09:15.900] Miriam Anzovin: I want to state right now that I am not an academic.{{< /line >}}
+{{< line >}}[00:09:19.500] Miriam Anzovin: So, Dan, if you would like to interrupt me at any point and say, "Actually, it was a little bit more like this time period," please feel free.{{< /line >}}
+{{< line >}}[00:09:27.500] Miriam Anzovin: But then what happened after that?{{< /line >}}
+{{< line >}}[00:09:29.780] Miriam Anzovin: So we have that.{{< /line >}}
+{{< line >}}[00:09:31.480] Miriam Anzovin: But not everything in the Mishnah is entirely clear.{{< /line >}}
+{{< line >}}[00:09:35.240] Miriam Anzovin: A lot of it is not exactly comprehensible without additional context and additional discussion.{{< /line >}}
+{{< line >}}[00:09:42.680] Miriam Anzovin: And that is what we find in the Gemara, which is debate, discussion, and analysis of what is in the Mishnah.{{< /line >}}
+{{< line >}}[00:09:49.880] Miriam Anzovin: And also, you know, what is in the Torah and the Tanakh—the Hebrew Bible, I guess it's called.{{< /line >}}
+{{< line >}}[00:09:56.730] Miriam Anzovin: Right.{{< /line >}}
+{{< line >}}[00:09:57.650] Miriam Anzovin: I only refer to it as the Tanakh.{{< /line >}}
+{{< line >}}[00:09:59.410] Miriam Anzovin: So I think that's what the whole thing in its entirety is called.{{< /line >}}
+{{< line >}}[00:10:03.650] Miriam Anzovin: But these are multiple hundreds of rabbis called the Sages, talking over hundreds of years in multiple locations.{{< /line >}}
+{{< line >}}[00:10:14.610] Miriam Anzovin: So it starts out in the historic land of Israel, and then they move to Babylonia, where that became the center of Jewish learning in exile.{{< /line >}}
+{{< line >}}[00:10:25.180] Miriam Anzovin: And there were these academies of learning.{{< /line >}}
+{{< line >}}[00:10:28.260] Miriam Anzovin: And a lot of these discussions that we encounter in the Gemara come from all these different rabbis or houses of study.{{< /line >}}
+{{< line >}}[00:10:38.220] Miriam Anzovin: Like, it's not only Hillel and Shammai being two very well-known names.{{< /line >}}
+{{< line >}}[00:10:43.580] Miriam Anzovin: If you are a Jewish person, you know Hillel and Shammai as two opposing schools of thought, but Beit Hillel and Beit Shammai, the schools, and their disciples as well.{{< /line >}}
+{{< line >}}[00:10:52.930] Miriam Anzovin: So the Mishnah and the Gemara, plus additional commentary added over various years, added over time, including Rashi from the medieval period—{{< /line >}}
+{{< line >}}[00:11:04.050] Miriam Anzovin: Very, very important figure in understanding a lot of this and providing context.{{< /line >}}
+{{< line >}}[00:11:10.050] Miriam Anzovin: That is the Talmud in like a little nutshell.690] Dan Beecher: Does the, okay, so the Talmud being that, does it take the, the, the Tanakh, the, the, the Torah as the jumping off point and then sort of go from there?{{< /line >}}
+{{< line >}}[00:11:25.130] Dan Beecher: Or, or is it its own whole thing?{{< /line >}}
+{{< line >}}[00:11:28.290] Miriam Anzovin: It is interwoven.{{< /line >}}
+{{< line >}}[00:11:30.530] Miriam Anzovin: So let me, let me say it this way.{{< /line >}}
+{{< line >}}[00:11:33.330] Miriam Anzovin: All these different sages, the rabbis, they are arguing, right?{{< /line >}}
+{{< line >}}[00:11:36.930] Miriam Anzovin: Is there agreement amongst them?{{< /line >}}
+{{< line >}}[00:11:38.850] Miriam Anzovin: Rarely, which is why it's so fascinating because anyone who says that Judaism was a monolith, there was one way of thinking or being Jewish until the modern denominations is just simply ridiculous.{{< /line >}}
+{{< line >}}[00:11:51.510] Miriam Anzovin: If you, if you learn the Talmud, if, if that was the case, it wouldn't take so long to learn the whole thing.{{< /line >}}
+{{< line >}}[00:11:57.110] Miriam Anzovin: And that's what's brilliant about it, is I can agree with somebody and absolutely abhor the thoughts of somebody else.{{< /line >}}
+{{< line >}}[00:12:02.270] Miriam Anzovin: And I'm not alone.{{< /line >}}
+{{< line >}}[00:12:03.670] Miriam Anzovin: They, they also had those sorts of feelings.{{< /line >}}
+{{< line >}}[00:12:06.150] Miriam Anzovin: But in order to prove that their interpretation or read on something was the correct quote, unquote correct one, or the accurate one, or the one that we were supposed to do, they would bring proof texts from the Tanakh.{{< /line >}}
+{{< line >}}[00:12:21.970] Miriam Anzovin: So in order to prove XYZ thing, they would bring a statement, bring a pasuk, bring a line from the Torah or the Tanakh and reference that.{{< /line >}}
+{{< line >}}[00:12:32.370] Miriam Anzovin: So in order to have their arguments have validity, they needed to bring in the written Torah in order to back up their assertions.{{< /line >}}
+{{< line >}}[00:12:43.670] Miriam Anzovin: And so when you go through the Mishnah and you go through the Gemara, you will see always a source text is being referenced.{{< /line >}}
+{{< line >}}[00:12:52.550] Miriam Anzovin: And either they are elucidating it, they are expanding upon this idea or clarifying it, or extrapolating.{{< /line >}}
+{{< line >}}[00:13:00.630] Miriam Anzovin: And this is when it gets a little sketchy, extrapolating one idea from another because of parallel words used in one place that they find in another, and thus they find a connection between the two.{{< /line >}}
+{{< line >}}[00:13:14.850] Miriam Anzovin: I will give a little example from the current tractate I'm studying, although now that I say that, I realize I haven't explained what a tractate is.{{< /line >}}
+{{< line >}}[00:13:24.050] Miriam Anzovin: So a tractate is a volume, I guess we would say, of the Talmud, and there are different ones for different subjects.{{< /line >}}
+{{< line >}}[00:13:35.960] Miriam Anzovin: Do they stay on topic?{{< /line >}}
+{{< line >}}[00:13:37.720] Miriam Anzovin: Rarely.{{< /line >}}
+{{< line >}}[00:13:39.320] Miriam Anzovin: So the first one that I learned was Berakhot, which is ostensibly about blessings, but it's a lot about, but it's about a lot of other things in addition to that.{{< /line >}}
+{{< line >}}[00:13:50.040] Miriam Anzovin: So the current tractate I am learning right now is Tractate Kiddushin, which is about betrothal and marriage.{{< /line >}}
+{{< line >}}[00:14:00.370] Miriam Anzovin: And on the very first page of that, that tractate, the very first daf, that's a page of Talmud, the discussion is how does one acquire a woman?{{< /line >}}
+{{< line >}}[00:14:13.010] Miriam Anzovin: Right.{{< /line >}}
+{{< line >}}[00:14:13.490] Miriam Anzovin: And the ways to be acquired are multiple.{{< /line >}}
+{{< line >}}[00:14:17.250] Miriam Anzovin: One is a document, one is exchanging or giving her an item of a certain amount of money or value, and the third is sex.{{< /line >}}
+{{< line >}}[00:14:26.730] Miriam Anzovin: But the way they are discussing the word acquired has also to do, in their mind, they're connecting it to how the field was acquired in the biblical story of getting the Cave of Machpelah, the, the burial site which is now in Hebron.{{< /line >}}
+{{< line >}}[00:14:47.370] Miriam Anzovin: So they're like, ah, you acquire a field and you acquire a woman.{{< /line >}}
+{{< line >}}[00:14:50.890] Miriam Anzovin: Because these two kinds of wording, this, this parallel wording is taking place.{{< /line >}}
+{{< line >}}[00:14:56.780] Miriam Anzovin: Does that make me feel weird?{{< /line >}}
+{{< line >}}[00:14:57.980] Miriam Anzovin: Absolutely.{{< /line >}}
+{{< line >}}[00:14:58.420] Miriam Anzovin: And I'm sure we'll get into more of that.{{< /line >}}
+{{< line >}}[00:15:00.780] Dan Beecher: Why?{{< /line >}}
+{{< line >}}[00:15:01.740] Miriam Anzovin: I know why I feel weird about it.{{< /line >}}
+{{< line >}}[00:15:04.220] Dan Beecher: What's difficult about that?{{< /line >}}
+{{< line >}}[00:15:05.660] Miriam Anzovin: So it's normal.{{< /line >}}
+{{< line >}}[00:15:06.540] Miriam Anzovin: I am an object.{{< /line >}}
+{{< line >}}[00:15:08.140] Miriam Anzovin: But to get to your earlier question about Daf Yomi, let me just explain that that is a practice.{{< /line >}}
+{{< line >}}[00:15:14.180] Miriam Anzovin: It's only been 100 years of this practice.{{< /line >}}
+{{< line >}}[00:15:17.180] Miriam Anzovin: Actually, earlier this week was the anniversary of that.{{< /line >}}
+{{< line >}}[00:15:20.220] Miriam Anzovin: But it is the practice of learning the entire Babylonian Talmud.{{< /line >}}
+{{< line >}}[00:15:23.900] Miriam Anzovin: There's actually two.{{< /line >}}
+{{< line >}}[00:15:24.700] Miriam Anzovin: One is called the Jerusalem Talmud, it's the earlier one.Jerusalem Talmud, it's the earlier one.{{< /line >}}
+{{< line >}}[00:15:27.060] Miriam Anzovin: It's, it's not as fun in my opinion.{{< /line >}}
+{{< line >}}[00:15:29.740] Miriam Anzovin: But the Babylonian one is when it really gets good.{{< /line >}}
+{{< line >}}[00:15:32.460] Miriam Anzovin: That's when you have all the demon content that I love so much.{{< /line >}}
+{{< line >}}[00:15:35.980] Miriam Anzovin: But it's the practice of learning one double-sided folio page of the Babylonian Talmud every single day.{{< /line >}}
+{{< line >}}[00:15:42.060] Miriam Anzovin: It's like a worldwide book club.{{< /line >}}
+{{< line >}}[00:15:44.620] Miriam Anzovin: And it's a seven and a half year cycle.{{< /line >}}
+{{< line >}}[00:15:47.100] Miriam Anzovin: Seven and a half years.{{< /line >}}
+{{< line >}}[00:15:47.940] Dan Beecher: Oh, okay, so we're not, we're not talking like, you know, this is the 30 day challenge.{{< /line >}}
+{{< line >}}[00:15:53.340] Dan Beecher: No, this is a commitment.{{< /line >}}
+{{< line >}}[00:15:56.420] Miriam Anzovin: And this is why when I see anyone online say, well, the Talmud says blah, blah, blah, and they make up some something or they take something very out of context or they say something that is in there, but completely without the surrounding necessary information.{{< /line >}}
+{{< line >}}[00:16:12.420] Miriam Anzovin: And they say, I have read the Talmud.{{< /line >}}
+{{< line >}}[00:16:14.380] Miriam Anzovin: And I'm like, really?{{< /line >}}
+{{< line >}}[00:16:14.940] Miriam Anzovin: What year, what year are you on?{{< /line >}}
+{{< line >}}[00:16:17.940] Miriam Anzovin: Because I'm only halfway through.{{< /line >}}
+{{< line >}}[00:16:21.140] Miriam Anzovin: The halfway point is actually this coming Wednesday.{{< /line >}}
+{{< line >}}[00:16:24.700] Miriam Anzovin: I know this will probably come out after that, but this coming Wednesday to me is the half, the halfway point.{{< /line >}}
+{{< line >}}[00:16:30.180] Dan Beecher: Mazel tov!{{< /line >}}
+{{< line >}}[00:16:31.580] Miriam Anzovin: Thank you.{{< /line >}}
+{{< line >}}[00:16:33.980] Miriam Anzovin: The current cycle began in January 5th of 2020.{{< /line >}}
+{{< line >}}[00:16:37.740] Miriam Anzovin: So all of us who have been in this cycle began then.{{< /line >}}
+{{< line >}}[00:16:41.740] Dan Beecher: And that's the thing.{{< /line >}}
+{{< line >}}[00:16:42.540] Dan Beecher: People do it together.{{< /line >}}
+{{< line >}}[00:16:43.900] Dan Beecher: Everybody dives in at the same time.{{< /line >}}
+{{< line >}}[00:16:46.300] Dan Beecher: So if you miss it, you got to wait seven years.{{< /line >}}
+{{< line >}}[00:16:49.180] Miriam Anzovin: That's not entirely.{{< /line >}}
+{{< line >}}[00:16:50.220] Dan Beecher: No, you're not allowed to.{{< /line >}}
+{{< line >}}[00:16:51.580] Dan Beecher: I know.{{< /line >}}
+{{< line >}}[00:16:52.100] Dan Beecher: I read about it.{{< /line >}}
+{{< line >}}[00:16:53.420] Dan Beecher: You're out.{{< /line >}}
+{{< line >}}[00:16:54.230] Miriam Anzovin: People can.{{< /line >}}
+{{< line >}}[00:16:54.870] Miriam Anzovin: People.{{< /line >}}
+{{< line >}}[00:16:55.230] Miriam Anzovin: In fact, I am honored to say that some people have started doing Daf Yomi because of my videos and...{{< /line >}}
+{{< line >}}[00:17:00.470] Miriam Anzovin: which is, you know, mind blowing to me, but they will continue on, like, after the end of this current cycle.{{< /line >}}
+{{< line >}}[00:17:09.150] Miriam Anzovin: They will have to continue to catch up on the...{{< /line >}}
+{{< line >}}[00:17:11.110] Miriam Anzovin: on the tractates they missed.{{< /line >}}
+{{< line >}}[00:17:13.470] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:17:13.830] Miriam Anzovin: Right before they started going.{{< /line >}}
+{{< line >}}[00:17:15.150] Miriam Anzovin: So anyone can start at any time.{{< /line >}}
+{{< line >}}[00:17:16.990] Miriam Anzovin: There's nothing wrong with that at all.{{< /line >}}
+{{< line >}}[00:17:19.110] Miriam Anzovin: It just so happens that this...{{< /line >}}
+{{< line >}}[00:17:20.510] Miriam Anzovin: this idea of being all on the same page and being able to sort of be doing something that another Jew, completely different than me around, you know, across the world, who speaks a different language, who has a completely different life than I, but together we are meeting on this page every day for seven and a half years, and it's sort of like this fascinating collective experience.{{< /line >}}
+{{< line >}}[00:17:42.850] Miriam Anzovin: So not to take anything away from people who study Talmud in other ways.{{< /line >}}
+{{< line >}}[00:17:46.370] Miriam Anzovin: People spend years on just one tractate.{{< /line >}}
+{{< line >}}[00:17:48.970] Miriam Anzovin: You know, there's all types of ways to study Talmud.{{< /line >}}
+{{< line >}}[00:17:51.820] Miriam Anzovin: This is just the way that I am doing.{{< /line >}}
+{{< line >}}[00:17:53.660] Dan Beecher: I. Oh, go ahead, Dan.{{< /line >}}
+{{< line >}}[00:17:56.140] Dan McClellan: And this crosses kind of, for lack of a better word, denominational boundaries.{{< /line >}}
+{{< line >}}[00:18:01.420] Miriam Anzovin: Yes.{{< /line >}}
+{{< line >}}[00:18:01.900] Dan McClellan: All different types of Orthodox.{{< /line >}}
+{{< line >}}[00:18:03.980] Miriam Anzovin: Yes.{{< /line >}}
+{{< line >}}[00:18:04.700] Dan McClellan: Does that include, like, the Hasidic and other branches?{{< /line >}}
+{{< line >}}[00:18:08.620] Dan McClellan: It's something that everyone has kind of come together and said, let's...{{< /line >}}
+{{< line >}}[00:18:11.660] Dan McClellan: let's try this out.{{< /line >}}
+{{< line >}}[00:18:12.860] Miriam Anzovin: There are some people who dislike it for...{{< /line >}}
+{{< line >}}[00:18:15.900] Miriam Anzovin: I understand the reason.{{< /line >}}
+{{< line >}}[00:18:17.660] Miriam Anzovin: It is very complex material to get through.{{< /line >}}
+{{< line >}}[00:18:20.060] Miriam Anzovin: Really, really, really hard, sometimes, sometimes easier, sometimes less so, depending on what's being discussed and who...{{< /line >}}
+{{< line >}}[00:18:26.670] Miriam Anzovin: who is being...{{< /line >}}
+{{< line >}}[00:18:28.350] Miriam Anzovin: who is being talked about or, you know, is it a fun story?{{< /line >}}
+{{< line >}}[00:18:31.430] Miriam Anzovin: Is it really upsetting?550] Miriam Anzovin: Really depends on.{{< /line >}}
+{{< line >}}[00:18:33.630] Miriam Anzovin: Is it a complex set of laws?{{< /line >}}
+{{< line >}}[00:18:35.190] Miriam Anzovin: You know, all different types of content are within it.{{< /line >}}
+{{< line >}}[00:18:38.030] Miriam Anzovin: And I understand this reticence to devote only one day to a page because there is so much to be gotten out of out of these pages, more perhaps than one could get in a solitary day.{{< /line >}}
+{{< line >}}[00:18:50.500] Miriam Anzovin: So I understand this sort of pushback.{{< /line >}}
+{{< line >}}[00:18:52.300] Miriam Anzovin: In fact, when this practice was first introduced, it was like, no.{{< /line >}}
+{{< line >}}[00:18:55.780] Miriam Anzovin: What?{{< /line >}}
+{{< line >}}[00:18:56.580] Miriam Anzovin: No, this is wrong.{{< /line >}}
+{{< line >}}[00:18:57.620] Miriam Anzovin: This is bad.{{< /line >}}
+{{< line >}}[00:18:59.140] Miriam Anzovin: So definitely there are the anti.{{< /line >}}
+{{< line >}}[00:19:01.060] Miriam Anzovin: Anti-Daf Yomi people, but for a lot of people across different denominations, this has become an exciting thing, a unifying thing.{{< /line >}}
+{{< line >}}[00:19:11.060] Miriam Anzovin: And I say that because at the beginning, before the cycle began, when the.{{< /line >}}
+{{< line >}}[00:19:15.540] Miriam Anzovin: The previous cycle was coming to an end, and there's this, like, massive party, the Siyum after the completion, it was just like, everyone is so hyped.{{< /line >}}
+{{< line >}}[00:19:24.980] Miriam Anzovin: And I remember so many social media groups popping up or had already existed.{{< /line >}}
+{{< line >}}[00:19:30.180] Miriam Anzovin: You know, LGBTQ Talmud groups, Daf Yomi groups, women's Talmud groups, Orthodox women's Talmud groups.{{< /line >}}
+{{< line >}}[00:19:37.900] Miriam Anzovin: Every single day I learn the daf because I do not speak Aramaic.{{< /line >}}
+{{< line >}}[00:19:42.340] Miriam Anzovin: I know, I know.{{< /line >}}
+{{< line >}}[00:19:43.100] Miriam Anzovin: It is a fault.{{< /line >}}
+{{< line >}}[00:19:43.740] Miriam Anzovin: I do apologize.{{< /line >}}
+{{< line >}}[00:19:44.740] Miriam Anzovin: I listen to Rabbanit Farber.{{< /line >}}
+{{< line >}}[00:19:47.480] Miriam Anzovin: She has a podcast.{{< /line >}}
+{{< line >}}[00:19:48.520] Miriam Anzovin: She is an Orthodox woman and she teaches this incredible podcast, Hadran.{{< /line >}}
+{{< line >}}[00:19:54.320] Miriam Anzovin: And I hear her in my ear speaking the Aramaic and I read along, but I can't speak it.{{< /line >}}
+{{< line >}}[00:20:00.160] Miriam Anzovin: So I value that.{{< /line >}}
+{{< line >}}[00:20:02.480] Miriam Anzovin: But it really does cross so many different boundaries of so many different types of Jews.{{< /line >}}
+{{< line >}}[00:20:06.520] Miriam Anzovin: And for example, I myself am a secular atheist Jew and I am doing Daf Yomi.{{< /line >}}
+{{< line >}}[00:20:13.120] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:20:14.270] Dan Beecher: You know, sorry, I just wanted to get at one thing, which is you mentioned the.{{< /line >}}
+{{< line >}}[00:20:20.390] Dan Beecher: The podcast with.{{< /line >}}
+{{< line >}}[00:20:21.550] Dan Beecher: With a woman sort of explaining, you know, expounding on it.{{< /line >}}
+{{< line >}}[00:20:27.870] Dan Beecher: I.{{< /line >}}
+{{< line >}}[00:20:28.230] Dan Beecher: When I did a bunch of research for this interview, I found a lot of people talking about Daf Yomi, and most of the ones that I found had significantly more beard than you have.{{< /line >}}
+{{< line >}}[00:20:44.280] Dan Beecher: I. I'll just put it that way.{{< /line >}}
+{{< line >}}[00:20:45.840] Dan Beecher: They wore a different hat.{{< /line >}}
+{{< line >}}[00:20:47.720] Dan Beecher: And I'm wondering if you.{{< /line >}}
+{{< line >}}[00:20:50.120] Dan Beecher: If I just don't think you look like the standard person, who would be.{{< /line >}}
+{{< line >}}[00:20:55.880] Dan Beecher: Who would be reacting to the Daf Yomi.{{< /line >}}
+{{< line >}}[00:20:59.000] Dan Beecher: I wonder has.{{< /line >}}
+{{< line >}}[00:21:00.520] Dan Beecher: How has that been being a.{{< /line >}}
+{{< line >}}[00:21:03.240] Dan Beecher: A young.{{< /line >}}
+{{< line >}}[00:21:05.010] Dan Beecher: You know, our.{{< /line >}}
+{{< line >}}[00:21:06.290] Dan Beecher: Our listeners can't see you, but.{{< /line >}}
+{{< line >}}[00:21:07.810] Dan Beecher: But, you know, you're.{{< /line >}}
+{{< line >}}[00:21:08.690] Dan Beecher: You're very made up, you're very put together.{{< /line >}}
+{{< line >}}[00:21:11.810] Miriam Anzovin: Is my persona now.{{< /line >}}
+{{< line >}}[00:21:13.250] Dan Beecher: Yeah, exactly.{{< /line >}}
+{{< line >}}[00:21:15.810] Dan McClellan: The tyranny of the brand.{{< /line >}}
+{{< line >}}[00:21:17.810] Miriam Anzovin: Exactly.{{< /line >}}
+{{< line >}}[00:21:18.770] Dan Beecher: Talk about how people have reacted to that, all of that sort of thing.{{< /line >}}
+{{< line >}}[00:21:22.130] Miriam Anzovin: Yes, indeed.{{< /line >}}
+{{< line >}}[00:21:22.970] Miriam Anzovin: Yes, indeed.{{< /line >}}
+{{< line >}}[00:21:25.650] Miriam Anzovin: Well, firstly, so when I started creating these videos and I really didn't think anybody would see them, I never expected to be the center of any type of controversy because no one was gonna watch them except people like me.{{< /line >}}
+{{< line >}}[00:21:39.280] Miriam Anzovin: And who wouldn't care that I was a woman or wouldn't care, you know, anything about how I looked or that I don't dress according to the standards of modesty that I adhered to when I was an Orthodox person, which is, you know, covered up to the neckline, elbows covered, you know, the whole.{{< /line >}}
+{{< line >}}[00:21:56.600] Miriam Anzovin: The whole thing.{{< /line >}}
+{{< line >}}[00:21:57.840] Miriam Anzovin: I am a secular person now, and I dress accordingly.{{< /line >}}
+{{< line >}}[00:22:02.150] Miriam Anzovin: So when people started first taking note of these videos, the pushback, the really, really overwhelming pushback.{{< /line >}}
+{{< line >}}[00:22:11.270] Miriam Anzovin: And it has taken me a really long time to sort of acclimate to this.{{< /line >}}
+{{< line >}}[00:22:15.510] Miriam Anzovin: If I am acclimated to it, really.n't know if I am, having suddenly thousands of people with very strong opinions about.{{< /line >}}
+{{< line >}}[00:22:25.990] Miriam Anzovin: About me.{{< /line >}}
+{{< line >}}[00:22:27.410] Miriam Anzovin: And at first it was all negative, or not all negative, but widely negative.{{< /line >}}
+{{< line >}}[00:22:32.050] Miriam Anzovin: And there were several aspects to that negativity.{{< /line >}}
+{{< line >}}[00:22:35.810] Miriam Anzovin: The first is that I am not religious and I am an atheist.{{< /line >}}
+{{< line >}}[00:22:40.370] Miriam Anzovin: And in fact, I wrote an article on day two of doing Daf Yomi about why I felt it was important to do this, to learn Talmud, to learn Jewish texts.{{< /line >}}
+{{< line >}}[00:22:51.650] Miriam Anzovin: Even if I wasn't believing at the time, I felt it was really, really vital.{{< /line >}}
+{{< line >}}[00:22:55.920] Miriam Anzovin: And I still do.{{< /line >}}
+{{< line >}}[00:22:56.720] Miriam Anzovin: I still do.{{< /line >}}
+{{< line >}}[00:22:57.480] Miriam Anzovin: It includes so much about how to.{{< /line >}}
+{{< line >}}[00:22:59.720] Miriam Anzovin: How to understand Jewishness, Jewish identity as a nation.{{< /line >}}
+{{< line >}}[00:23:04.520] Miriam Anzovin: And I don't mean a state, I mean a nation in diaspora, how to understand all of these.{{< /line >}}
+{{< line >}}[00:23:10.840] Miriam Anzovin: These things that I really, deeply value about being Jewish, about being a Jewish person.{{< /line >}}
+{{< line >}}[00:23:16.760] Miriam Anzovin: So I thought it was really, really vital.{{< /line >}}
+{{< line >}}[00:23:19.570] Miriam Anzovin: So when people started to notice what I was doing, the negative responses were, she is immodest, not only in her dress, but in her.{{< /line >}}
+{{< line >}}[00:23:29.210] Miriam Anzovin: Her speech.{{< /line >}}
+{{< line >}}[00:23:30.370] Miriam Anzovin: She swears, she speaks like a millennial, because I am one.{{< /line >}}
+{{< line >}}[00:23:34.690] Miriam Anzovin: How could she do this?{{< /line >}}
+{{< line >}}[00:23:36.130] Miriam Anzovin: She is making jokes about the sages.{{< /line >}}
+{{< line >}}[00:23:39.010] Miriam Anzovin: This is ironic, considering the sages make a lot of jokes themselves about each other.{{< /line >}}
+{{< line >}}[00:23:43.730] Miriam Anzovin: And to anybody who does not believe me, please see the book Talmudic Insults and Curses.{{< /line >}}
+{{< line >}}[00:23:48.870] Miriam Anzovin: Highly recommend.{{< /line >}}
+{{< line >}}[00:23:49.990] Miriam Anzovin: I believe the author is Abba Helft.{{< /line >}}
+{{< line >}}[00:23:54.150] Miriam Anzovin: Great book.{{< /line >}}
+{{< line >}}[00:23:55.030] Miriam Anzovin: Great book.{{< /line >}}
+{{< line >}}[00:23:57.030] Miriam Anzovin: Yeah.{{< /line >}}
+{{< line >}}[00:23:57.390] Miriam Anzovin: It just really gives perspective on.{{< /line >}}
+{{< line >}}[00:23:58.990] Miriam Anzovin: On the levity that was also a factor they didn't like.{{< /line >}}
+{{< line >}}[00:24:02.070] Miriam Anzovin: You're making jokes, you're being comedic.{{< /line >}}
+{{< line >}}[00:24:03.870] Miriam Anzovin: You're not taking this seriously.{{< /line >}}
+{{< line >}}[00:24:05.270] Miriam Anzovin: This is for men to study in a yeshiva in a set setting where it's sort of guarded.{{< /line >}}
+{{< line >}}[00:24:12.390] Miriam Anzovin: This text is guarded.{{< /line >}}
+{{< line >}}[00:24:13.750] Miriam Anzovin: It is gatekept very literally.{{< /line >}}
+{{< line >}}[00:24:16.910] Miriam Anzovin: And most people are pushed away from engaging with it.{{< /line >}}
+{{< line >}}[00:24:21.350] Miriam Anzovin: That has certainly changed before I started doing this.{{< /line >}}
+{{< line >}}[00:24:23.590] Miriam Anzovin: I don't want to take credit for this, because so many women and people who are not men have worked very hard on opening those gates and.{{< /line >}}
+{{< line >}}[00:24:31.150] Miriam Anzovin: And doing this work.{{< /line >}}
+{{< line >}}[00:24:32.350] Miriam Anzovin: I am not.{{< /line >}}
+{{< line >}}[00:24:34.750] Miriam Anzovin: I did not pave this way.{{< /line >}}
+{{< line >}}[00:24:36.150] Miriam Anzovin: I can only walk on this path because others have gone before me.{{< /line >}}
+{{< line >}}[00:24:39.630] Miriam Anzovin: But perhaps they didn't do it on social media in this way.{{< /line >}}
+{{< line >}}[00:24:45.870] Dan Beecher: With those porn elbows flying left and right.{{< /line >}}
+{{< line >}}[00:24:48.110] Miriam Anzovin: Exactly, exactly.{{< /line >}}
+{{< line >}}[00:24:49.670] Miriam Anzovin: These scandalous elbows.{{< /line >}}
+{{< line >}}[00:24:51.470] Miriam Anzovin: Certainly not with vocabulary that I happen to use in my videos.{{< /line >}}
+{{< line >}}[00:24:56.350] Miriam Anzovin: And there was this also, like, she doesn't believe.{{< /line >}}
+{{< line >}}[00:24:59.710] Miriam Anzovin: How dare she, how dare she open the Talmud and talk about it?{{< /line >}}
+{{< line >}}[00:25:02.870] Miriam Anzovin: Which is ironic, considering people have less pushback about someone like me opening the Torah and reading it and studying it, which I have theories.{{< /line >}}
+{{< line >}}[00:25:12.690] Miriam Anzovin: I have theories about why that is, that's familiar.{{< /line >}}
+{{< line >}}[00:25:16.650] Dan McClellan: I get, I get a lot of that when I talk about the Bible.{{< /line >}}
+{{< line >}}[00:25:21.330] Dan McClellan: People say, you don't believe in it.{{< /line >}}
+{{< line >}}[00:25:23.050] Dan McClellan: Why are you even doing it?{{< /line >}}
+{{< line >}}[00:25:25.970] Dan McClellan: My gender has never come up.{{< /line >}}
+{{< line >}}[00:25:28.050] Dan McClellan: No one has ever said, I don't have.{{< /line >}}
+{{< line >}}[00:25:29.650] Miriam Anzovin: That must be nice.{{< /line >}}
+{{< line >}}[00:25:32.930] Dan McClellan: Unfortunately, yeah, that's, that's something that, that has never come up.{{< /line >}}
+{{< line >}}[00:25:36.930] Dan McClellan: But yeah, some people seem to think that if you approach this as a, as a secular exercise or something, you, you have no business doing that, have no right to it.{{< /line >}}
+{{< line >}}[00:25:46.370] Dan McClellan: But that's odd that the, the Talmud would be considered more sacred, more set apart than the Torah.y on that in a second.{{< /line >}}
+{{< line >}}[00:25:56.930] Miriam Anzovin: But I think the thing also that people would say to me is, women have made such progress in being Talmud scholars.{{< /line >}}
+{{< line >}}[00:26:03.480] Miriam Anzovin: How dare you come and make all their progress irrelevant?{{< /line >}}
+{{< line >}}[00:26:07.560] Miriam Anzovin: You have basically.{{< /line >}}
+{{< line >}}[00:26:08.520] Miriam Anzovin: Yeah, I know.{{< /line >}}
+{{< line >}}[00:26:09.160] Miriam Anzovin: Which is like, I'm not the Lorax.{{< /line >}}
+{{< line >}}[00:26:11.560] Miriam Anzovin: I don't speak for all women who learn Talmud.{{< /line >}}
+{{< line >}}[00:26:14.200] Miriam Anzovin: My reactions are my own.{{< /line >}}
+{{< line >}}[00:26:16.200] Miriam Anzovin: I never claim to teach Talmud.{{< /line >}}
+{{< line >}}[00:26:17.760] Miriam Anzovin: I am merely learning.{{< /line >}}
+{{< line >}}[00:26:19.480] Miriam Anzovin: This is a learning process.{{< /line >}}
+{{< line >}}[00:26:20.680] Miriam Anzovin: It's a project of personal learning that has become public.{{< /line >}}
+{{< line >}}[00:26:23.720] Miriam Anzovin: But it's about my own reactions to it, not, not me telling people what to believe.{{< /line >}}
+{{< line >}}[00:26:29.340] Dan Beecher: So you're wrong for doing it because you're a woman.{{< /line >}}
+{{< line >}}[00:26:31.820] Dan Beecher: And you're also wrong for doing it because you're making the other women look bad.{{< /line >}}
+{{< line >}}[00:26:35.300] Miriam Anzovin: I'm not the right type of woman.{{< /line >}}
+{{< line >}}[00:26:37.100] Dan Beecher: Wow.{{< /line >}}
+{{< line >}}[00:26:38.060] Dan Beecher: There's a lot, there's a lot of hoops that you have not jumped through.{{< /line >}}
+{{< line >}}[00:26:41.660] Miriam Anzovin: Right, right.{{< /line >}}
+{{< line >}}[00:26:42.700] Miriam Anzovin: And, and yes, the, the fact that I wear makeup was indeed a thing because.{{< /line >}}
+{{< line >}}[00:26:48.460] Miriam Anzovin: Oh, she's not serious.{{< /line >}}
+{{< line >}}[00:26:49.660] Miriam Anzovin: Oh, she's.{{< /line >}}
+{{< line >}}[00:26:50.460] Miriam Anzovin: And I actually heard this from some people.{{< /line >}}
+{{< line >}}[00:26:52.300] Miriam Anzovin: She's too pretty to learn with.{{< /line >}}
+{{< line >}}[00:26:54.620] Miriam Anzovin: And firstly, my terrible low self esteem for the majority of my life says, oh, really?{{< /line >}}
+{{< line >}}[00:26:59.610] Miriam Anzovin: Wow, thanks.{{< /line >}}
+{{< line >}}[00:27:01.210] Miriam Anzovin: Good to know.{{< /line >}}
+{{< line >}}[00:27:02.970] Miriam Anzovin: But I always respond to this with.{{< /line >}}
+{{< line >}}[00:27:07.050] Miriam Anzovin: In the Talmud, there is a particular sage, Rabbi Yochanan, who is notoriously the best looking human being.{{< /line >}}
+{{< line >}}[00:27:14.650] Miriam Anzovin: And he says it, the Talmud says it, everybody says it.{{< /line >}}
+{{< line >}}[00:27:17.930] Miriam Anzovin: It is a known fact.{{< /line >}}
+{{< line >}}[00:27:19.610] Miriam Anzovin: So I said, how dare you?{{< /line >}}
+{{< line >}}[00:27:20.970] Miriam Anzovin: How dare you, dare you disrespect Rabbi Yochanan that way?{{< /line >}}
+{{< line >}}[00:27:25.370] Miriam Anzovin: No, no.{{< /line >}}
+{{< line >}}[00:27:26.090] Miriam Anzovin: Okay.{{< /line >}}
+{{< line >}}[00:27:26.410] Miriam Anzovin: We can be attractive, but we have to be Rabbi Yochanan.{{< /line >}}
+{{< line >}}[00:27:29.290] Miriam Anzovin: That's the only one and actually, historically, I will just note there is a. I forget what, what era in which she lived, but there was this female Talmud scholar, Miriam Luria, and she was supposed to be very beautiful and she taught behind a screen so that she would not.{{< /line >}}
+{{< line >}}[00:27:45.410] Miriam Anzovin: Nobody would be, you know, and I teach behind a screen too.{{< /line >}}
+{{< line >}}[00:27:48.250] Miriam Anzovin: Not teach, but I react behind a screen.{{< /line >}}
+{{< line >}}[00:27:50.050] Miriam Anzovin: But it's a fun phone screen, which is different.{{< /line >}}
+{{< line >}}[00:27:53.540] Miriam Anzovin: So.{{< /line >}}
+{{< line >}}[00:27:54.100] Miriam Anzovin: So that is the.{{< /line >}}
+{{< line >}}[00:27:55.380] Miriam Anzovin: That about that piece of that.{{< /line >}}
+{{< line >}}[00:27:56.940] Miriam Anzovin: But to answer your question about why I think people get more irate with me about Talmud comedy versus Torah.{{< /line >}}
+{{< line >}}[00:28:05.300] Miriam Anzovin: People know the Torah, and if they know it as the Torah or the Bible or whatever it is, it is a known, known.{{< /line >}}
+{{< line >}}[00:28:12.020] Miriam Anzovin: It is out there.{{< /line >}}
+{{< line >}}[00:28:14.220] Miriam Anzovin: People know what's in it.{{< /line >}}
+{{< line >}}[00:28:15.300] Miriam Anzovin: People have engaged with it.{{< /line >}}
+{{< line >}}[00:28:16.380] Miriam Anzovin: There has been Bible jokes since, ever since forever, literally.{{< /line >}}
+{{< line >}}[00:28:21.600] Miriam Anzovin: It seems more comfortable in a certain way because it's already out there and you can't take it back.{{< /line >}}
+{{< line >}}[00:28:26.400] Miriam Anzovin: With Talmud, there has been such a.{{< /line >}}
+{{< line >}}[00:28:28.640] Miriam Anzovin: A sense of protection about it.{{< /line >}}
+{{< line >}}[00:28:30.800] Miriam Anzovin: And I understand why in some ways certain things are said in the Talmud that come from a place, were written in a time when the Jews were being exiled, they were being persecuted, and they verbally, in these discussions, which no one else was supposed to see, push back.{{< /line >}}
+{{< line >}}[00:28:48.220] Miriam Anzovin: And in their minds, this is a protest against their oppressors.{{< /line >}}
+{{< line >}}[00:28:53.500] Miriam Anzovin: So there are some unflattering things said about somebody who is often believed to be that Jesus.{{< /line >}}
+{{< line >}}[00:29:00.380] Miriam Anzovin: I will say, however, that those unflattering things have also been directed at me.{{< /line >}}
+{{< line >}}[00:29:03.820] Miriam Anzovin: So it's just gonna be me.{{< /line >}}
+{{< line >}}[00:29:05.100] Miriam Anzovin: It's me and Jesus and Shabbetai Zevi.Zevi.{{< /line >}}
+{{< line >}}[00:29:08.700] Dan Beecher: What we've learned about you so far is that you're very attractive and you're Jesus.{{< /line >}}
+{{< line >}}[00:29:12.590] Miriam Anzovin: Correct.{{< /line >}}
+{{< line >}}[00:29:14.190] Miriam Anzovin: And I wonder, you know, because we always see depictions of Jesus as, you know, gorge.{{< /line >}}
+{{< line >}}[00:29:20.830] Miriam Anzovin: And I think we know who to blame in art history for this.{{< /line >}}
+{{< line >}}[00:29:23.390] Miriam Anzovin: But I am not, though.{{< /line >}}
+{{< line >}}[00:29:25.590] Miriam Anzovin: I'm not on his level.{{< /line >}}
+{{< line >}}[00:29:26.510] Miriam Anzovin: I don't have his abs also.{{< /line >}}
+{{< line >}}[00:29:28.270] Miriam Anzovin: And I also don't want to talk too much about Jesus because that is not my wheelhouse, not my faith.{{< /line >}}
+{{< line >}}[00:29:34.270] Miriam Anzovin: I do have to address it when it comes up in the daf.{{< /line >}}
+{{< line >}}[00:29:36.870] Miriam Anzovin: But there are things for which Jews were persecuted historically because Christians looked at the conversations in the Talmud, found some things that they found offensive and edited the Talmud or punished people directly for it.{{< /line >}}
+{{< line >}}[00:29:53.479] Miriam Anzovin: And if you still, to this day, if you go on TikTok, I did this before I first, you know, ever posted a video.{{< /line >}}
+{{< line >}}[00:29:59.040] Miriam Anzovin: I wanted to say, see, I wanted to see if anyone else is doing this.{{< /line >}}
+{{< line >}}[00:30:02.680] Miriam Anzovin: So I didn't like step on anyone's toes.{{< /line >}}
+{{< line >}}[00:30:04.360] Miriam Anzovin: And I'm like, put "Talmud" into search into TikTok.{{< /line >}}
+{{< line >}}[00:30:07.380] Miriam Anzovin: It is all antisemitic stuff that is the same exact antisemitic stuff as they were saying a thousand years plus ago.{{< /line >}}
+{{< line >}}[00:30:15.740] Miriam Anzovin: Like literally has not changed.{{< /line >}}
+{{< line >}}[00:30:17.980] Miriam Anzovin: Which is also another reason why I find it very important to learn it, to be able to counter these narratives.{{< /line >}}
+{{< line >}}[00:30:21.980] Miriam Anzovin: But so there's that self-defense aspect of gatekeeping the text.{{< /line >}}
+{{< line >}}[00:30:27.500] Miriam Anzovin: If nobody knows what's in it, we don't have to defend these things, which I don't have a problem with.{{< /line >}}
+{{< line >}}[00:30:32.940] Miriam Anzovin: I mean I don't care what they said about the Romans.{{< /line >}}
+{{< line >}}[00:30:35.980] Miriam Anzovin: I really don't, like, it's a vent.{{< /line >}}
+{{< line >}}[00:30:41.290] Miriam Anzovin: But on the other hand, the Talmud represents a shift in power.{{< /line >}}
+{{< line >}}[00:30:45.930] Miriam Anzovin: It represents a shift of power from the Kohanim, the Kohen familial, how do we say, genetic, I guess leadership in Judea or in Israel before the destruction of the temple.{{< /line >}}
+{{< line >}}[00:31:01.410] Miriam Anzovin: And then that shifts right as the temple is destroyed.{{< /line >}}
+{{< line >}}[00:31:04.650] Miriam Anzovin: Now the sages, now the rabbis are in charge and they are in charge of defining what Judaism will be outside of the land of Israel or in the land of Israel under occupation.{{< /line >}}
+{{< line >}}[00:31:16.230] Miriam Anzovin: And therefore the power shifts to them.{{< /line >}}
+{{< line >}}[00:31:19.430] Miriam Anzovin: And by kicking at that, what people think I am doing is kicking at that bedrock of modern rabbinic Judaism, which I'm not actually doing, that is a more of a threat to some people than doing some light comedy about the Torah.{{< /line >}}
+{{< line >}}[00:31:38.230] Dan McClellan: It seems to me that one of the things that the Talmud is doing is kind of mediating between the Torah and communities who are trying to live these things.{{< /line >}}
+{{< line >}}[00:31:46.550] Dan McClellan: Because the Torah is very complex, it's self-contradictory in many ways.{{< /line >}}
+{{< line >}}[00:31:50.950] Dan McClellan: It does not provide answers to all possible questions.{{< /line >}}
+{{< line >}}[00:31:54.310] Dan Beecher: And so although if your ox does fall in a hole, I keep telling you, you know what to do.{{< /line >}}
+{{< line >}}[00:31:59.990] Dan McClellan: Very oddly specific and never relevant guidance.{{< /line >}}
+{{< line >}}[00:32:04.230] Dan McClellan: And so you have the sages coming in and contemplating all the different ways you can take that ox, the goring ox story, and kind of extrapolate all these different principles out from it.{{< /line >}}
+{{< line >}}[00:32:16.720] Dan McClellan: And then that becomes kind of the locus of authority, as it is closer to the people in their living of that religion.{{< /line >}}
+{{< line >}}[00:32:26.400] Dan McClellan: That this is actually what we are, is kind of how we're engaging it more so than even the Torah itself.{{< /line >}}
+{{< line >}}[00:32:33.250] Miriam Anzovin: I think the sages are looking both backwards and forwards.{{< /line >}}
+{{< line >}}[00:32:36.130] Miriam Anzovin: They're looking backwards to a world that already was in the process of being demolished.{{< /line >}}
+{{< line >}}[00:32:41.170] Miriam Anzovin: So they're looking back and trying to figure out how do we translate a prayer structure, for example, that at the time before them was about animal sacrifice, how do we pivot away from that and define prayer being a set of written down prayers that we recite, you know, three times a day that correspond to the times when Jews of that era would do sacrifices, but we're not doing animal sacrifice anymore because the temple no longer exists.{{< /line >}}
+{{< line >}}[00:33:08.460] Miriam Anzovin: How do we pivot?:33:09.420] Miriam Anzovin: How do we change that when we are clearly obligated in the Torah to do these things, but we can't, we can't do them anymore.{{< /line >}}
+{{< line >}}[00:33:17.740] Miriam Anzovin: So it's like figuring out what used to go on, how to sort of carry that through in a way that makes sense, if possible, to something that they could do, which was verbal prayer, and how to make, how to make this sort of jump between what they knew, what had been Jewishness at that time, or practicing Judaism and what it had to become in order to survive.{{< /line >}}
+{{< line >}}[00:33:44.700] Miriam Anzovin: So I do want to give a lot of credit.{{< /line >}}
+{{< line >}}[00:33:46.660] Miriam Anzovin: I know I make a lot of jokes, but to be able to survive that long, and I think the credit goes to Yochanan ben Zakkai.{{< /line >}}
+{{< line >}}[00:33:55.860] Miriam Anzovin: There's a famous story where Jerusalem is being destroyed and he fakes his own death and gets smuggled out in a coffin to go speak to somebody who heads the Roman army.{{< /line >}}
+{{< line >}}[00:34:05.380] Miriam Anzovin: I think it's Vespasian, I'm not sure, but.{{< /line >}}
+{{< line >}}[00:34:08.140] Miriam Anzovin: And he, he, he tries to convince him, you know, how do we, how do we, what do we do?{{< /line >}}
+{{< line >}}[00:34:14.460] Miriam Anzovin: And Vespasian or whoever is in that position of authority, says, well, what, what do you want?{{< /line >}}
+{{< line >}}[00:34:22.460] Miriam Anzovin: I can't stop Jerusalem from being destroyed.{{< /line >}}
+{{< line >}}[00:34:24.260] Miriam Anzovin: It's going to happen.{{< /line >}}
+{{< line >}}[00:34:24.940] Miriam Anzovin: That's going to happen.{{< /line >}}
+{{< line >}}[00:34:26.060] Miriam Anzovin: And so Rabbi ben Zakkai says, okay, give me Yavneh. Yavneh is a city.{{< /line >}}
+{{< line >}}[00:34:33.640] Miriam Anzovin: And that's where he took the sages, took the rabbis, and they reconstituted themselves there.{{< /line >}}
+{{< line >}}[00:34:39.800] Miriam Anzovin: They could continue the process of rabbinic learning and transmission of traditions that way.{{< /line >}}
+{{< line >}}[00:34:46.840] Miriam Anzovin: So in that moment, I think it was really down to him.{{< /line >}}
+{{< line >}}[00:34:50.040] Miriam Anzovin: Although obviously a lot of other things happened in that story.{{< /line >}}
+{{< line >}}[00:34:53.240] Miriam Anzovin: I don't know about the accuracy historically of it, but the way it's presented is this is the moment where he saved Judaism by making it portable, by making it something that while everything in our tradition is deeply connected to the agricultural cycle of the land of Israel, you know, some of our holidays that we celebrate here in North America do not make sense here in North America, but they do there.{{< /line >}}
+{{< line >}}[00:35:21.900] Miriam Anzovin: But it was that or annihilation, you gotta pick.{{< /line >}}
+{{< line >}}[00:35:26.460] Miriam Anzovin: And so he made that choice.{{< /line >}}
+{{< line >}}[00:35:28.300] Dan McClellan: And that's very similar to the crisis that Judahites faced in exile in Babylon.{{< /line >}}
+{{< line >}}[00:35:34.060] Dan McClellan: And you have different ways of trying to, like Ezekiel, for instance, makes God's presence portable by saying, what if his throne had wheels?{{< /line >}}
+{{< line >}}[00:35:41.740] Dan McClellan: Which is, yeah, I mean that's, I.{{< /line >}}
+{{< line >}}[00:35:46.060] Miriam Anzovin: I mean it's really cool.{{< /line >}}
+{{< line >}}[00:35:47.740] Miriam Anzovin: Very true.{{< /line >}}
+{{< line >}}[00:35:48.290] Dan Beecher: Trippy deity wheelchair is invented.{{< /line >}}
+{{< line >}}[00:35:50.210] Dan Beecher: That's pretty cool.{{< /line >}}
+{{< line >}}[00:35:50.930] Dan Beecher: Yeah, I like that.{{< /line >}}
+{{< line >}}[00:35:51.850] Dan McClellan: But that's a lot of what's going on in the Torah is similarly responding to crisis and trying to figure out how we can keep our community together, increase that social cohesion and maintain our identity.{{< /line >}}
+{{< line >}}[00:36:05.250] Dan McClellan: And so in a lot of ways, the Talmud is simply doing that.{{< /line >}}
+{{< line >}}[00:36:09.010] Dan McClellan: And so I, I, I can tell that you have an appreciation for what they're doing, a respect for the Talmud, while also, you know, having to react to and engage with a lot of rather problematic or a lot of.{{< /line >}}
+{{< line >}}[00:36:24.300] Miriam Anzovin: Rather sus aspects of it.{{< /line >}}
+{{< line >}}[00:36:26.540] Dan McClellan: For instance, the fact that uh, women are treated as property in some ways when it comes to, and I don't know what the term in the Talmud is, but in the Hebrew Bible it's lakach is what you, you do to get a wife, you take a wife.{{< /line >}}
+{{< line >}}[00:36:44.380] Miriam Anzovin: Yes.{{< /line >}}
+{{< line >}}[00:36:44.860] Dan McClellan: And so can you talk a little bit about the conceptualization of women within the Talmud?{{< /line >}}
+{{< line >}}[00:36:51.910] Dan McClellan: What kind of questions are being asked and how are women being represented?{{< /line >}}
+{{< line >}}[00:36:55.990] Dan McClellan: And is there agency even a question?{{< /line >}}
+{{< line >}}[00:36:59.190] Dan McClellan: Or is it just only the agency of the man?{{< /line >}}
+{{< line >}}[00:37:05.350] Miriam Anzovin: When I go to do workshops with people and I don't teach them Talmud, I teach them how to react to Talmud.{{< /line >}}
+{{< line >}}[00:37:11.110] Miriam Anzovin: One of the things I recommend is asking themselves who is speaking in this portion of the text and who is being spoken about.{{< /line >}}
+{{< line >}}[00:37:20.660] Miriam Anzovin: And often the people who are being spoken about but who have very little agency.ncy.{{< /line >}}
+{{< line >}}[00:37:25.820] Miriam Anzovin: I mean, it depends on the area and the topic, but they're women.{{< /line >}}
+{{< line >}}[00:37:30.420] Miriam Anzovin: Women are often discussed in the Talmud.{{< /line >}}
+{{< line >}}[00:37:33.060] Miriam Anzovin: In fact, there is a whole order of the Mishnah.{{< /line >}}
+{{< line >}}[00:37:35.340] Miriam Anzovin: We're in it right now, Seder Nashim, all about women and for better or worse.{{< /line >}}
+{{< line >}}[00:37:41.500] Miriam Anzovin: And so sometimes we see huge debates over multiple pages or whole tractates that could have been easily resolved had they asked a woman, but they didn't.{{< /line >}}
+{{< line >}}[00:37:53.360] Miriam Anzovin: So.{{< /line >}}
+{{< line >}}[00:37:53.560] Miriam Anzovin: And no women were present.{{< /line >}}
+{{< line >}}[00:37:54.720] Miriam Anzovin: Well, let me rephrase that.{{< /line >}}
+{{< line >}}[00:37:56.560] Miriam Anzovin: Let me add just a little bit about that.{{< /line >}}
+{{< line >}}[00:37:59.760] Miriam Anzovin: Some women were present.{{< /line >}}
+{{< line >}}[00:38:01.440] Miriam Anzovin: I want to mention Baruria in particular.{{< /line >}}
+{{< line >}}[00:38:04.720] Miriam Anzovin: She was a sage.{{< /line >}}
+{{< line >}}[00:38:07.160] Miriam Anzovin: I think we can fairly say that in her own right.{{< /line >}}
+{{< line >}}[00:38:10.560] Miriam Anzovin: And she famously learned 300 halachot laws in one afternoon because she could.{{< /line >}}
+{{< line >}}[00:38:18.060] Miriam Anzovin: And other people did not have her aptitude for, for learning for Talmud for, for her knowledge is incredible.{{< /line >}}
+{{< line >}}[00:38:26.780] Miriam Anzovin: Off the, off the charts.{{< /line >}}
+{{< line >}}[00:38:28.060] Miriam Anzovin: There are only a few women named in the Talmud, fewer who are actually knowledgeable about Jewish law or Torah tradition and who are, you know, pointed at as being right in their interpretations.{{< /line >}}
+{{< line >}}[00:38:43.500] Miriam Anzovin: She is definitely one person who is.{{< /line >}}
+{{< line >}}[00:38:45.920] Miriam Anzovin: Her rulings, her judgments.{{< /line >}}
+{{< line >}}[00:38:47.360] Miriam Anzovin: I mean, not her rulings.{{< /line >}}
+{{< line >}}[00:38:48.520] Miriam Anzovin: She wasn't allowed to do that, but her judgments, her suggestions, her.{{< /line >}}
+{{< line >}}[00:38:52.720] Miriam Anzovin: Her read.{{< /line >}}
+{{< line >}}[00:38:53.840] Dan McClellan: Is she quoted or is she just.{{< /line >}}
+{{< line >}}[00:38:55.600] Miriam Anzovin: She is quoted.{{< /line >}}
+{{< line >}}[00:38:56.800] Miriam Anzovin: She is quoted and she is quoted.{{< /line >}}
+{{< line >}}[00:39:00.080] Miriam Anzovin: And there's one quote.{{< /line >}}
+{{< line >}}[00:39:01.359] Miriam Anzovin: I think one.{{< /line >}}
+{{< line >}}[00:39:01.920] Miriam Anzovin: One thing I really appreciate about her is she weaponized the.{{< /line >}}
+{{< line >}}[00:39:05.760] Miriam Anzovin: What we would term now, sexism in the Talmud in her own.{{< /line >}}
+{{< line >}}[00:39:10.970] Miriam Anzovin: To her own benefit.{{< /line >}}
+{{< line >}}[00:39:11.930] Miriam Anzovin: There is a story where she is walking along a road, minding her own business, right?{{< /line >}}
+{{< line >}}[00:39:17.050] Miriam Anzovin: Doing whatever she needed to get done.{{< /line >}}
+{{< line >}}[00:39:19.210] Miriam Anzovin: And Rabbi Yossi walks up to her and says, which way to Lod?{{< /line >}}
+{{< line >}}[00:39:24.370] Miriam Anzovin: Or something like that.{{< /line >}}
+{{< line >}}[00:39:25.210] Miriam Anzovin: And she turns around and clearly she didn't want to be bothered on her walk.{{< /line >}}
+{{< line >}}[00:39:28.890] Miriam Anzovin: And she says to him, and I'm paraphrasing because I don't remember the actual how it is actually said.{{< /line >}}
+{{< line >}}[00:39:35.130] Miriam Anzovin: Use fewer words when speaking to women, which is something that the sages are saying.{{< /line >}}
+{{< line >}}[00:39:39.370] Miriam Anzovin: Don't talk to women.{{< /line >}}
+{{< line >}}[00:39:40.610] Miriam Anzovin: It's bad idea.{{< /line >}}
+{{< line >}}[00:39:41.290] Miriam Anzovin: It's a bad idea, right?{{< /line >}}
+{{< line >}}[00:39:42.490] Miriam Anzovin: They're going to lure you into stuff.{{< /line >}}
+{{< line >}}[00:39:44.370] Miriam Anzovin: No, don't do it.{{< /line >}}
+{{< line >}}[00:39:45.810] Miriam Anzovin: And she's like, speak.{{< /line >}}
+{{< line >}}[00:39:47.010] Miriam Anzovin: Speak less to women.{{< /line >}}
+{{< line >}}[00:39:48.130] Miriam Anzovin: You should have just said which way to Lod?{{< /line >}}
+{{< line >}}[00:39:50.370] Miriam Anzovin: Instead of, oh, are we on the right way?{{< /line >}}
+{{< line >}}[00:39:51.890] Miriam Anzovin: Are we on the right path?{{< /line >}}
+{{< line >}}[00:39:52.810] Miriam Anzovin: Where are you going?{{< /line >}}
+{{< line >}}[00:39:53.650] Miriam Anzovin: Am I going this way?{{< /line >}}
+{{< line >}}[00:39:54.690] Miriam Anzovin: So she was like, weaponizing.{{< /line >}}
+{{< line >}}[00:39:55.970] Miriam Anzovin: She's like, sir, have you not heard?{{< /line >}}
+{{< line >}}[00:39:58.130] Miriam Anzovin: Speak less to women.{{< /line >}}
+{{< line >}}[00:40:00.130] Miriam Anzovin: But then we get also people like Yalta, who famously did not appreciate being disrespected openly by a sage, Ulla, who was visiting her own home.{{< /line >}}
+{{< line >}}[00:40:12.690] Miriam Anzovin: And she had requested to also have the.{{< /line >}}
+{{< line >}}[00:40:16.850] Miriam Anzovin: The kiddush.{{< /line >}}
+{{< line >}}[00:40:18.610] Miriam Anzovin: So the.{{< /line >}}
+{{< line >}}[00:40:19.050] Miriam Anzovin: The wine that is used to.{{< /line >}}
+{{< line >}}[00:40:21.810] Miriam Anzovin: As.{{< /line >}}
+{{< line >}}[00:40:22.170] Miriam Anzovin: As part of, like, Shabbat, part of a lot of Jewish rituals.{{< /line >}}
+{{< line >}}[00:40:25.250] Miriam Anzovin: And Ulla, who was not her husband, but the guy who was visiting, was like, don't give it to her.{{< /line >}}
+{{< line >}}[00:40:29.450] Miriam Anzovin: She's a woman.{{< /line >}}
+{{< line >}}[00:40:30.130] Miriam Anzovin: And she was like, okay, I won't say what I would usually say.{{< /line >}}
+{{< line >}}[00:40:34.150] Miriam Anzovin: It involves swears.{{< /line >}}
+{{< line >}}[00:40:35.350] Miriam Anzovin: But she.{{< /line >}}
+{{< line >}}[00:40:36.390] Miriam Anzovin: She goes down.] Dan Beecher: And she rejected the notion.{{< /line >}}
+{{< line >}}[00:40:38.950] Miriam Anzovin: She firmly rejected it.{{< /line >}}
+{{< line >}}[00:40:40.310] Miriam Anzovin: She went and smashed 300 barrels of wine.{{< /line >}}
+{{< line >}}[00:40:44.150] Dan Beecher: Wow.{{< /line >}}
+{{< line >}}[00:40:44.590] Miriam Anzovin: She's like, oh, you want.{{< /line >}}
+{{< line >}}[00:40:45.590] Miriam Anzovin: You want it in my.{{< /line >}}
+{{< line >}}[00:40:46.470] Miriam Anzovin: In my house?{{< /line >}}
+{{< line >}}[00:40:47.030] Miriam Anzovin: You're gonna do this.{{< /line >}}
+{{< line >}}[00:40:48.470] Miriam Anzovin: Let's go.{{< /line >}}
+{{< line >}}[00:40:49.590] Miriam Anzovin: I actually, this.{{< /line >}}
+{{< line >}}[00:40:50.710] Miriam Anzovin: If anyone's watching on YouTube, I don't know, but this is an image I drew of her.{{< /line >}}
+{{< line >}}[00:40:54.950] Miriam Anzovin: She is holding an ax on her shoulder and ready to smash the patriarchy.{{< /line >}}
+{{< line >}}[00:41:00.010] Miriam Anzovin: Yeah, but.{{< /line >}}
+{{< line >}}[00:41:01.690] Dan Beecher: And a bunch of wine, which I think is the.{{< /line >}}
+{{< line >}}[00:41:04.210] Dan Beecher: Is a bit of a tragedy.{{< /line >}}
+{{< line >}}[00:41:06.050] Dan Beecher: But sometimes.{{< /line >}}
+{{< line >}}[00:41:06.890] Miriam Anzovin: I understand, but sometimes you have to make a point.{{< /line >}}
+{{< line >}}[00:41:09.330] Miriam Anzovin: Yeah, you know, I do understand.{{< /line >}}
+{{< line >}}[00:41:10.970] Miriam Anzovin: I do, I do.{{< /line >}}
+{{< line >}}[00:41:11.890] Miriam Anzovin: And it was.{{< /line >}}
+{{< line >}}[00:41:12.290] Dan Beecher: If you guys had a Jesus, he could have just turned some water back into the wine.{{< /line >}}
+{{< line >}}[00:41:16.210] Miriam Anzovin: But easy now, there is a story about somebody.{{< /line >}}
+{{< line >}}[00:41:19.850] Miriam Anzovin: Okay, I won't go into that because we're talking about, we're talking about the woman question.{{< /line >}}
+{{< line >}}[00:41:26.070] Miriam Anzovin: So yes, we do hear from.{{< /line >}}
+{{< line >}}[00:41:27.750] Miriam Anzovin: We do have actual quotes from a few women in the Talmud who have significant-ish parts to play or things to convey, stories about them that are relevant and important to the topics being discussed.{{< /line >}}
+{{< line >}}[00:41:44.630] Miriam Anzovin: And I appreciate that, I do.{{< /line >}}
+{{< line >}}[00:41:47.190] Miriam Anzovin: Then there's the rest of it where, you know, not only do we usually hear about women in relation to a man, this is someone's wife or daughter and she doesn't get a name.{{< /line >}}
+{{< line >}}[00:41:57.430] Miriam Anzovin: In my videos.{{< /line >}}
+{{< line >}}[00:41:58.270] Miriam Anzovin: I give them names so that they can have one.{{< /line >}}
+{{< line >}}[00:42:02.630] Miriam Anzovin: But it's the discussion as a whole, depending on what we are talking about.{{< /line >}}
+{{< line >}}[00:42:07.830] Miriam Anzovin: Women did not have rights of owning things on their own when they were married.{{< /line >}}
+{{< line >}}[00:42:13.510] Miriam Anzovin: Everything she made, like if she had a job, that's really the ownership of that money or whatever went to her husband.{{< /line >}}
+{{< line >}}[00:42:22.800] Miriam Anzovin: She does not hold on to that.{{< /line >}}
+{{< line >}}[00:42:23.880] Miriam Anzovin: And actually the same if she's younger and is working, her father gets that.{{< /line >}}
+{{< line >}}[00:42:28.280] Miriam Anzovin: If you know, she is sexually assaulted, the fee that the rapist pays doesn't go to her.{{< /line >}}
+{{< line >}}[00:42:35.319] Miriam Anzovin: It's not about her and her embarrassment that goes to her father.{{< /line >}}
+{{< line >}}[00:42:39.640] Dan McClellan: She's a commodity.{{< /line >}}
+{{< line >}}[00:42:40.560] Dan McClellan: And now the commodity has been compromised.{{< /line >}}
+{{< line >}}[00:42:42.840] Miriam Anzovin: Exactly.{{< /line >}}
+{{< line >}}[00:42:43.400] Miriam Anzovin: And her value also goes down as a non-virgin, which is also a deeply obnoxious pattern.{{< /line >}}
+{{< line >}}[00:42:49.420] Miriam Anzovin: You know, really difficult thing to come to terms with.{{< /line >}}
+{{< line >}}[00:42:52.540] Miriam Anzovin: The value is virginity and your price lowers.{{< /line >}}
+{{< line >}}[00:42:58.340] Dan Beecher: Good thing nobody thinks that way anymore.{{< /line >}}
+{{< line >}}[00:43:00.660] Miriam Anzovin: Right.{{< /line >}}
+{{< line >}}[00:43:00.980] Miriam Anzovin: Thank goodness nobody has that idea since then.{{< /line >}}
+{{< line >}}[00:43:06.020] Dan McClellan: Yeah, I think, what was it, 1973 when women could, could have credit cards.{{< /line >}}
+{{< line >}}[00:43:11.780] Miriam Anzovin: Oh really?{{< /line >}}
+{{< line >}}[00:43:12.740] Miriam Anzovin: Or something like that.{{< /line >}}
+{{< line >}}[00:43:13.780] Dan McClellan: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:43:15.180] Miriam Anzovin: So we've come a long way, right?{{< /line >}}
+{{< line >}}[00:43:17.540] Miriam Anzovin: In some ways we have come a long way.{{< /line >}}
+{{< line >}}[00:43:19.220] Miriam Anzovin: But the thing I will say is I do get very mad at a lot of things in the Talmud about women.{{< /line >}}
+{{< line >}}[00:43:25.860] Miriam Anzovin: And some of them I'm like, okay, this was 2000-ish years ago.{{< /line >}}
+{{< line >}}[00:43:30.260] Miriam Anzovin: I can't change that.{{< /line >}}
+{{< line >}}[00:43:32.180] Miriam Anzovin: Sure, it's disturbing to come across and to process it.{{< /line >}}
+{{< line >}}[00:43:35.860] Miriam Anzovin: Sometimes I will donate to a women's organization or something like I have to, I'm learning this, but I'm going to change something in the present.{{< /line >}}
+{{< line >}}[00:43:43.030] Miriam Anzovin: What really gets me is times when the Talmud is discussing an issue involving women.{{< /line >}}
+{{< line >}}[00:43:49.030] Miriam Anzovin: And the problem has trickled down to this day and affects us.{{< /line >}}
+{{< line >}}[00:43:54.350] Miriam Anzovin: Now, I will use an example.{{< /line >}}
+{{< line >}}[00:43:57.430] Miriam Anzovin: We just got out of Tractate Gittin, which is about divorce.{{< /line >}}
+{{< line >}}[00:44:02.630] Miriam Anzovin: Right.{{< /line >}}
+{{< line >}}[00:44:03.110] Miriam Anzovin: Actually, until the 10th century, women didn't have to agree to a divorce.ave to agree to a divorce.{{< /line >}}
+{{< line >}}[00:44:06.350] Miriam Anzovin: They just, bye.{{< /line >}}
+{{< line >}}[00:44:08.010] Miriam Anzovin: Couldn't do anything about it.{{< /line >}}
+{{< line >}}[00:44:09.130] Miriam Anzovin: At the time, marriage was the only way for economic support, status, protection.{{< /line >}}
+{{< line >}}[00:44:17.090] Miriam Anzovin: And I hate that that was the case.{{< /line >}}
+{{< line >}}[00:44:18.650] Miriam Anzovin: I hate that.{{< /line >}}
+{{< line >}}[00:44:20.170] Miriam Anzovin: But a man is the only one who can grant a divorce in Judaism, and still to this day among the Orthodox community, only a man can initiate a divorce.{{< /line >}}
+{{< line >}}[00:44:31.530] Miriam Anzovin: And a man can withhold that divorce, leading the woman, the woman, the wife, even if she desperately wants to be away from him, even if he is abusive, whatever it is, she will not be free of him until he grants her that get.{{< /line >}}
+{{< line >}}[00:44:45.810] Miriam Anzovin: And women who are in that position of being chained to a dead marriage are called agunot.{{< /line >}}
+{{< line >}}[00:44:50.890] Miriam Anzovin: And there is a, a truly terrible crisis about that.{{< /line >}}
+{{< line >}}[00:44:57.050] Miriam Anzovin: Especially I will say, in the state of Israel where there is no secular marriage or divorce, it is all through the Rabbinate.{{< /line >}}
+{{< line >}}[00:45:06.760] Dan Beecher: So I have a friend who lives in, in Jerusalem who literally, she and her partner just very recently traveled to Cyprus to get married.{{< /line >}}
+{{< line >}}[00:45:17.040] Dan Beecher: A day trip out and back.{{< /line >}}
+{{< line >}}[00:45:18.760] Miriam Anzovin: Yeah.{{< /line >}}
+{{< line >}}[00:45:19.200] Dan Beecher: Because they didn't want, because they couldn't go.{{< /line >}}
+{{< line >}}[00:45:21.880] Dan Beecher: They're secular even though they are of Jewish origin.{{< /line >}}
+{{< line >}}[00:45:26.650] Miriam Anzovin: Right.{{< /line >}}
+{{< line >}}[00:45:26.890] Dan Beecher: And they couldn't, they, they had no way to do it otherwise.{{< /line >}}
+{{< line >}}[00:45:30.890] Miriam Anzovin: Yeah, it doesn't actually matter what I would believe.{{< /line >}}
+{{< line >}}[00:45:34.090] Miriam Anzovin: If I went there and I wanted to get married, I would have to do it through the Rabbinate.{{< /line >}}
+{{< line >}}[00:45:39.250] Miriam Anzovin: And if I wanted to get a divorce, I would have to do the same thing.{{< /line >}}
+{{< line >}}[00:45:42.489] Miriam Anzovin: And that plays into issues of custody and things like that as well.{{< /line >}}
+{{< line >}}[00:45:46.570] Miriam Anzovin: And that is not good.{{< /line >}}
+{{< line >}}[00:45:47.930] Miriam Anzovin: That is very bad.{{< /line >}}
+{{< line >}}[00:45:49.610] Miriam Anzovin: So I hope, I, I really hope that soon Israel will have civil divorce, civil marriage, but even here in America, so I am a divorced person.{{< /line >}}
+{{< line >}}[00:46:00.440] Miriam Anzovin: I was married for nine years to a fellow Jew and we were divorced in American law.{{< /line >}}
+{{< line >}}[00:46:07.480] Miriam Anzovin: And I also made sure, even though I am not observant, I am not a believer at this time, that he went to a Beit Din, which is a Jewish court of three men, if it's an Orthodox one or three people, if it's not Orthodox.{{< /line >}}
+{{< line >}}[00:46:24.470] Miriam Anzovin: And I received my get.{{< /line >}}
+{{< line >}}[00:46:25.950] Miriam Anzovin: This is my document of freedom, which is not too dissimilar to a document freeing a slave.{{< /line >}}
+{{< line >}}[00:46:32.310] Dan Beecher: Wow.{{< /line >}}
+{{< line >}}[00:46:33.590] Dan McClellan: So you, you have been manumitted.{{< /line >}}
+{{< line >}}[00:46:36.150] Miriam Anzovin: I have indeed been freed.{{< /line >}}
+{{< line >}}[00:46:38.310] Dan McClellan: Now, did they, did they drop it for you?{{< /line >}}
+{{< line >}}[00:46:40.990] Miriam Anzovin: Yes.{{< /line >}}
+{{< line >}}[00:46:41.270] Miriam Anzovin: And you catch it.{{< /line >}}
+{{< line >}}[00:46:42.230] Miriam Anzovin: So yes.{{< /line >}}
+{{< line >}}[00:46:43.190] Miriam Anzovin: And I did a very.{{< /line >}}
+{{< line >}}[00:46:44.310] Miriam Anzovin: So I was the only woman in the room.{{< /line >}}
+{{< line >}}[00:46:47.470] Miriam Anzovin: And I was like, okay, I'm gonna make this funny.{{< /line >}}
+{{< line >}}[00:46:50.270] Miriam Anzovin: This is the last hoop I have to jump through before I am free of this person.{{< /line >}}
+{{< line >}}[00:46:54.350] Miriam Anzovin: And so they.{{< /line >}}
+{{< line >}}[00:46:55.670] Miriam Anzovin: The person who was a stand-in.{{< /line >}}
+{{< line >}}[00:46:57.230] Miriam Anzovin: Well, there was a stand-in for my husband there because I didn't want to be in the same room with him.{{< /line >}}
+{{< line >}}[00:47:01.070] Miriam Anzovin: But at one point, the get, the document is actually dropped into the wife's hands.{{< /line >}}
+{{< line >}}[00:47:06.070] Miriam Anzovin: She catches it and she, like, brings it into her, so she's like, boop.{{< /line >}}
+{{< line >}}[00:47:09.390] Miriam Anzovin: And I did a very dramatic one.{{< /line >}}
+{{< line >}}[00:47:11.630] Miriam Anzovin: I did get. People did laugh.{{< /line >}}
+{{< line >}}[00:47:13.830] Miriam Anzovin: So I win.{{< /line >}}
+{{< line >}}[00:47:15.030] Dan Beecher: It's so good when you kill at your get.{{< /line >}}
+{{< line >}}[00:47:17.830] Dan Beecher: That is a. I know.{{< /line >}}
+{{< line >}}[00:47:19.590] Dan McClellan: That's a.{{< /line >}}
+{{< line >}}[00:47:20.030] Dan Beecher: That's a coup.{{< /line >}}
+{{< line >}}[00:47:20.830] Dan Beecher: That is a coup.{{< /line >}}
+{{< line >}}[00:47:21.430] Miriam Anzovin: Right, right, right.{{< /line >}}
+{{< line >}}[00:47:22.350] Dan Beecher: That's good stuff.{{< /line >}}
+{{< line >}}[00:47:23.190] Miriam Anzovin: Yeah.{{< /line >}}
+{{< line >}}[00:47:23.990] Miriam Anzovin: So I did.{{< /line >}}
+{{< line >}}[00:47:24.590] Miriam Anzovin: I did receive it.{{< /line >}}
+{{< line >}}[00:47:25.310] Miriam Anzovin: I went through the whole ritual.{{< /line >}}
+{{< line >}}[00:47:26.870] Miriam Anzovin: The thing is that they don't.{{< /line >}}
+{{< line >}}[00:47:28.070] Miriam Anzovin: You don't get to keep that.iriam Anzovin: You get a receipt that says, I have my get.{{< /line >}}
+{{< line >}}[00:47:33.350] Miriam Anzovin: You don't keep it.{{< /line >}}
+{{< line >}}[00:47:34.110] Miriam Anzovin: The Beit Din keeps it.{{< /line >}}
+{{< line >}}[00:47:35.510] Dan Beecher: Wow.{{< /line >}}
+{{< line >}}[00:47:35.990] Miriam Anzovin: They keep it in the event because they don't want, like, anything to happen to it, anything to be changed about it, which could invalidate what happened.{{< /line >}}
+{{< line >}}[00:47:43.650] Miriam Anzovin: They actually cut it before, you know, it's sealed in a special way.{{< /line >}}
+{{< line >}}[00:47:47.330] Miriam Anzovin: It's cut with a knife, and then they keep it.{{< /line >}}
+{{< line >}}[00:47:49.410] Miriam Anzovin: And I have a receipt in a security box.{{< /line >}}
+{{< line >}}[00:47:54.130] Miriam Anzovin: But.{{< /line >}}
+{{< line >}}[00:47:55.170] Miriam Anzovin: Right.{{< /line >}}
+{{< line >}}[00:47:55.570] Miriam Anzovin: So this is an example of something that we see in the Talmud that I can be mad about then and I can be mad about now, because the through line is direct.{{< /line >}}
+{{< line >}}[00:48:05.970] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:48:06.690] Dan Beecher: I'm guessing a lot of people your age, especially women, really appreciate having someone having, you know, an avatar of them talking in this way, because I can't imagine that it's common.{{< /line >}}
+{{< line >}}[00:48:23.660] Dan Beecher: I can't imagine that this is a.{{< /line >}}
+{{< line >}}[00:48:25.180] Dan Beecher: That this is a usual way of talking about the Talmud, about.{{< /line >}}
+{{< line >}}[00:48:29.980] Dan Beecher: About the.{{< /line >}}
+{{< line >}}[00:48:31.340] Dan Beecher: The Daf, all of that stuff.{{< /line >}}
+{{< line >}}[00:48:34.520] Miriam Anzovin: It is and it isn't.{{< /line >}}
+{{< line >}}[00:48:35.640] Miriam Anzovin: It is and it isn't.{{< /line >}}
+{{< line >}}[00:48:36.800] Miriam Anzovin: I will say that there are a lot of other forms of media in which this is done.{{< /line >}}
+{{< line >}}[00:48:42.520] Miriam Anzovin: For example, there are great meme pages about the Daf Yomi on Instagram that I love.{{< /line >}}
+{{< line >}}[00:48:47.480] Miriam Anzovin: Right.{{< /line >}}
+{{< line >}}[00:48:47.880] Miriam Anzovin: So it is addressed in that way for other people who also find this comedic nugget in there.{{< /line >}}
+{{< line >}}[00:48:55.400] Miriam Anzovin: But also the intense part that we are sort of making a commentary on and in meme form, in terms of short-form video.{{< /line >}}
+{{< line >}}[00:49:04.090] Miriam Anzovin: I have not found another me.{{< /line >}}
+{{< line >}}[00:49:07.050] Miriam Anzovin: If I had, I probably wouldn't have created this series because I. I was like, oh, no, this person has it.{{< /line >}}
+{{< line >}}[00:49:11.450] Miriam Anzovin: They already, they have this down.{{< /line >}}
+{{< line >}}[00:49:13.130] Miriam Anzovin: They don't need me.{{< /line >}}
+{{< line >}}[00:49:15.050] Miriam Anzovin: But I hadn't found a me.{{< /line >}}
+{{< line >}}[00:49:16.970] Miriam Anzovin: That's not to say that other women don't have these thoughts or have these opinions and share them in, in their own groups or their own way.{{< /line >}}
+{{< line >}}[00:49:22.970] Miriam Anzovin: Or maybe there are those out there whose videos I haven't discovered yet.{{< /line >}}
+{{< line >}}[00:49:26.010] Miriam Anzovin: But.{{< /line >}}
+{{< line >}}[00:49:26.580] Miriam Anzovin: But I think there's a reason that people started taking note and writing about it and showing it on Israeli TV, showing my videos on Israeli TV without censoring it, which is hilarious.{{< /line >}}
+{{< line >}}[00:49:36.020] Miriam Anzovin: And why it became such a huge controversy at the beginning of when I started to do this because it was a new-ish approach.{{< /line >}}
+{{< line >}}[00:49:42.980] Miriam Anzovin: It was a fairly new approach in a, in a medium, TikTok, that had not been, it hadn't been done before and it hadn't been done by somebody like me.{{< /line >}}
+{{< line >}}[00:49:51.220] Miriam Anzovin: And to your point, there is a way in which I am an avatar.{{< /line >}}
+{{< line >}}[00:49:55.340] Miriam Anzovin: I am no longer just myself.{{< /line >}}
+{{< line >}}[00:49:58.140] Miriam Anzovin: Miriam Anzovin was just me.{{< /line >}}
+{{< line >}}[00:50:00.540] Miriam Anzovin: And then in January of 2022, I became more than just me when this happened.{{< /line >}}
+{{< line >}}[00:50:06.060] Miriam Anzovin: And I'm cognizant of that, deeply cognizant of that.{{< /line >}}
+{{< line >}}[00:50:08.700] Miriam Anzovin: Because people see me and they say, I didn't think that I could learn Talmud because I am a non-religious woman.{{< /line >}}
+{{< line >}}[00:50:15.140] Miriam Anzovin: Or I didn't think I could learn Talmud because I am, or even, I want to say, not even just women, people who aren't men, anybody who isn't men, a man.{{< /line >}}
+{{< line >}}[00:50:25.880] Miriam Anzovin: Or they say I used to be religious and then I stopped being religious because I shared my views, my opinions, my reactions in Yeshiva and I was kicked out and told that I could not have these opinions, that there was a set paradigm with which I was to understand this text and I was not to think too far beyond it or engage with it on a deeply personal level where I could have these thoughts.{{< /line >}}
+{{< line >}}[00:50:48.510] Dan Beecher: That's interesting.{{< /line >}}
+{{< line >}}[00:50:49.350] Dan Beecher: Sorry, can I just.{{< /line >}}
+{{< line >}}[00:50:50.270] Miriam Anzovin: Yeah.{{< /line >}}
+{{< line >}}[00:50:50.670] Dan Beecher: Drill into that a little bit?{{< /line >}}
+{{< line >}}[00:50:51.830] Miriam Anzovin: Yes.{{< /line >}}
+{{< line >}}[00:50:52.230] Dan Beecher: What's fascinating to me, you literally just said, you know, when you're explaining Talmud to us, that there are these factions of discussion that are disagreeing with each other. other.{{< /line >}}
+{{< line >}}[00:51:04.110] Dan Beecher: There's a tradition of disagreement.{{< /line >}}
+{{< line >}}[00:51:06.710] Dan Beecher: And yet things, as they so often do in human life, things people are more comfortable once something has solidified.{{< /line >}}
+{{< line >}}[00:51:15.460] Miriam Anzovin: The.{{< /line >}}
+{{< line >}}[00:51:16.260] Miriam Anzovin: The Talmud became calcified at a certain point, or I should say the discussions became calcified.{{< /line >}}
+{{< line >}}[00:51:24.420] Miriam Anzovin: It became, I think once the Shulchan Aruch came around and possibly before this, so the Shulchan Aruch.{{< /line >}}
+{{< line >}}[00:51:30.260] Miriam Anzovin: When people say you get your laws out of the Talmud, that is not necessarily true.{{< /line >}}
+{{< line >}}[00:51:34.100] Miriam Anzovin: You get your arguments out of the Talmud.{{< /line >}}
+{{< line >}}[00:51:36.180] Miriam Anzovin: Some.{{< /line >}}
+{{< line >}}[00:51:36.500] Miriam Anzovin: You have questions, a lot of questions, not all of which are answered.{{< /line >}}
+{{< line >}}[00:51:39.720] Miriam Anzovin: But the Shulchan Aruch is a book.{{< /line >}}
+{{< line >}}[00:51:43.960] Miriam Anzovin: It's literally called the set table.{{< /line >}}
+{{< line >}}[00:51:45.520] Miriam Anzovin: It is how you should do things and it clearly articulates it.{{< /line >}}
+{{< line >}}[00:51:49.640] Miriam Anzovin: And so while there are differences in practice across, for sure, geographic locations, like diaspora communities who may have lived hither and yon and don't have the same practices or customs, always those who, who kind of did come from this specific tradition, it's now like, this is what you do.{{< /line >}}
+{{< line >}}[00:52:08.940] Miriam Anzovin: And if you want to consult and find out the right way, quote, unquote, the right way to prepare for Passover and, you know, go and do whatever XYZ thing, you don't go and look in the Talmud, you look at a later compendium of law.{{< /line >}}
+{{< line >}}[00:52:23.740] Miriam Anzovin: So even though I know you would, you would think that looking in the Talmud, you'd be like, yeah, we're, we are here to argue.{{< /line >}}
+{{< line >}}[00:52:30.060] Miriam Anzovin: And a lot of people do see that.{{< /line >}}
+{{< line >}}[00:52:31.540] Miriam Anzovin: A lot of people do see that.{{< /line >}}
+{{< line >}}[00:52:32.940] Miriam Anzovin: And they will reenact, in a way, the arguments between these, these, you know, multiple viewpoints, these sages who are well known, like people that, that you kind of grew up hearing about, that's how, how important they are in, in Jewish tradition that, that we know their names and we know how they thought, we know a little bit about their lives and how that impacted how they thought.{{< /line >}}
+{{< line >}}[00:52:55.520] Miriam Anzovin: In a lot of ways, the fear of thinking outside of the box in a way that is a little bit too dramatic or could be detrimental to modern Jewish communities in some way.{{< /line >}}
+{{< line >}}[00:53:07.370] Miriam Anzovin: Like, oh, no, we don't want people to think too hard because then they're going to go off the derech.{{< /line >}}
+{{< line >}}[00:53:11.290] Miriam Anzovin: They're going to go, they're not going to be religious anymore.{{< /line >}}
+{{< line >}}[00:53:14.770] Miriam Anzovin: I am an OTD and off the derech too.{{< /line >}}
+{{< line >}}[00:53:18.450] Miriam Anzovin: And a lot of people don't like that term, but it is a commonly used one.{{< /line >}}
+{{< line >}}[00:53:22.450] Miriam Anzovin: The concern is, no, you are not.{{< /line >}}
+{{< line >}}[00:53:25.010] Miriam Anzovin: You're not.{{< /line >}}
+{{< line >}}[00:53:25.570] Miriam Anzovin: Don't think too hard.{{< /line >}}
+{{< line >}}[00:53:26.690] Miriam Anzovin: Don't react this way.{{< /line >}}
+{{< line >}}[00:53:28.130] Miriam Anzovin: We know the reactions that we should be having to this.{{< /line >}}
+{{< line >}}[00:53:31.370] Miriam Anzovin: And if you have a different one, why are you questioning what I am telling you?{{< /line >}}
+{{< line >}}[00:53:35.770] Miriam Anzovin: Not what the Talmud is saying necessarily, but what modern instructors, modern teachers, modern rabbis are saying about the right way to interpret and the right way to react.{{< /line >}}
+{{< line >}}[00:53:48.170] Miriam Anzovin: And sometimes I have had, I think very early on third month maybe, that I had been making these videos.{{< /line >}}
+{{< line >}}[00:53:55.730] Miriam Anzovin: I spoke about the agunah crisis and I also spoke about sexual assault because it was a daf, it was a page addressing sexual assault.{{< /line >}}
+{{< line >}}[00:54:05.330] Miriam Anzovin: Such a fun topic.{{< /line >}}
+{{< line >}}[00:54:06.130] Miriam Anzovin: Such a fun topic.{{< /line >}}
+{{< line >}}[00:54:07.130] Miriam Anzovin: And I remember while I got a lot of pushback from men who were like, you have to understand, this is actually better than it was everywhere else at the time.{{< /line >}}
+{{< line >}}[00:54:14.210] Miriam Anzovin: And I'm like, no.{{< /line >}}
+{{< line >}}[00:54:19.450] Miriam Anzovin: So many people wrote to me privately and said, I.{{< /line >}}
+{{< line >}}[00:54:23.140] Miriam Anzovin: Well, either people who had experienced a sexual assault and were giving me their stories to hold.{{< /line >}}
+{{< line >}}[00:54:28.580] Miriam Anzovin: So I, you know, have this.{{< /line >}}
+{{< line >}}[00:54:31.380] Miriam Anzovin: This responsibility now to hold these stories for people.{{< /line >}}
+{{< line >}}[00:54:35.060] Miriam Anzovin: And I'm honored they trusted me with those other people who are men wrote and said, I have learned this seven times I have learned this.{{< /line >}}
+{{< line >}}[00:54:42.100] Miriam Anzovin: However many times I have learned this page of Talmud.{{< /line >}}
+{{< line >}}[00:54:44.380] Miriam Anzovin: And I never thought about that because I never learned it with a woman.00] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:54:48.750] Miriam Anzovin: So it's.{{< /line >}}
+{{< line >}}[00:54:50.510] Miriam Anzovin: If you have the same type of person learning with you, you are going to have the same types of reactions, same types of thoughts, and you're not going to expand beyond that.{{< /line >}}
+{{< line >}}[00:54:59.390] Miriam Anzovin: But I think what the Talmud says to me is that the more voices in Talmud, the better.{{< /line >}}
+{{< line >}}[00:55:04.350] Miriam Anzovin: And I just wish that more people now agreed with that.{{< /line >}}
+{{< line >}}[00:55:08.830] Dan McClellan: Well, and I think.{{< /line >}}
+{{< line >}}[00:55:09.510] Dan McClellan: I think TikTok is a great democratizer in a lot because it enables people to get in front of an audience and it gives you a seat at the table.{{< /line >}}
+{{< line >}}[00:55:17.320] Dan McClellan: And I think that's probably what's threatening a lot of people is they're so used to people who experience the world in the same way as them, and they're comfortable in their power structures and in that patriarchy, and having a seat at the table threatens those power structures, and that is threatening their worldview and threatening their experience of the world around them.{{< /line >}}
+{{< line >}}[00:55:37.440] Dan McClellan: And for a lot of people, that's unacceptable.{{< /line >}}
+{{< line >}}[00:55:39.320] Miriam Anzovin: Yeah.{{< /line >}}
+{{< line >}}[00:55:40.040] Dan McClellan: Which I think is one of the reasons, is that it's something that is not.{{< /line >}}
+{{< line >}}[00:55:47.580] Dan McClellan: It's a good way to say this.{{< /line >}}
+{{< line >}}[00:55:49.340] Dan McClellan: You haven't come across many other people doing what you're doing from your set of experiences and perspectives, because it takes some bravery to do that, because you're going to get pushback from those folks who don't know any better than to just reflexively defend the patriarchy, because that's the.{{< /line >}}
+{{< line >}}[00:56:09.830] Dan McClellan: The foundation of their worldview.{{< /line >}}
+{{< line >}}[00:56:11.510] Miriam Anzovin: Yeah.{{< /line >}}
+{{< line >}}[00:56:12.790] Miriam Anzovin: I do want to say before.{{< /line >}}
+{{< line >}}[00:56:15.190] Miriam Anzovin: Before anyone gets a wrong idea, that people view my videos from across the Jewish spectrum.{{< /line >}}
+{{< line >}}[00:56:21.590] Miriam Anzovin: I have people who are not religious at all, and I have people who are Orthodox.{{< /line >}}
+{{< line >}}[00:56:25.670] Miriam Anzovin: And I appreciate that.{{< /line >}}
+{{< line >}}[00:56:27.790] Miriam Anzovin: And I appreciate when somebody who is.{{< /line >}}
+{{< line >}}[00:56:30.630] Miriam Anzovin: Has existed in that structure says to me, I actually really love this.{{< /line >}}
+{{< line >}}[00:56:35.390] Miriam Anzovin: I love what you're doing.{{< /line >}}
+{{< line >}}[00:56:36.310] Miriam Anzovin: I can't wait to get to this page and this topic and I'm just really excited to see what you do with it.{{< /line >}}
+{{< line >}}[00:56:42.200] Miriam Anzovin: So I just wanted to express my gratitude for all the people who may not initially, perhaps have felt comfortable with what I'm doing, but have come to or always did perhaps find value in it and see what I'm trying to do.{{< /line >}}
+{{< line >}}[00:56:56.280] Miriam Anzovin: Comes from a place of deep love and appreciation.{{< /line >}}
+{{< line >}}[00:56:59.160] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:56:59.560] Miriam Anzovin: That doesn't mean I don't have difficulties with it, but it comes from not a place of hate or wanting to dismantle it.{{< /line >}}
+{{< line >}}[00:57:05.740] Miriam Anzovin: It comes from a place of deep.{{< /line >}}
+{{< line >}}[00:57:07.420] Dan McClellan: Love and I think people who are sincerely engaging with your content can sense that.{{< /line >}}
+{{< line >}}[00:57:13.020] Dan McClellan: And I have similar experiences where I have people from all across the spectrum of belief and non belief who appreciate the content that I produce.{{< /line >}}
+{{< line >}}[00:57:20.940] Dan McClellan: And I'm also very, very humbled and grateful that, that I'm getting that feedback because it validates what I'm doing.{{< /line >}}
+{{< line >}}[00:57:29.140] Dan McClellan: I'm sure it validates for you what you're doing.{{< /line >}}
+{{< line >}}[00:57:32.220] Dan McClellan: So congratulations that you're.{{< /line >}}
+{{< line >}}[00:57:34.560] Dan McClellan: I think that's a sign that you're in a sweet spot that you're doing something right.{{< /line >}}
+{{< line >}}[00:57:39.200] Dan McClellan: And I'm very hopeful that continues and, and increases as, as the reach of your social media content expands.{{< /line >}}
+{{< line >}}[00:57:48.960] Dan McClellan: And I was going to ask TikTok is, is that where you create most of your content or that's the environment for which you create most of it?{{< /line >}}
+{{< line >}}[00:57:56.720] Miriam Anzovin: TikTok is the environment for which I create.{{< /line >}}
+{{< line >}}[00:58:00.100] Miriam Anzovin: However, I have noticed since the pandemic has, I mean, it's still here, but, you know, things have shifted.{{< /line >}}
+{{< line >}}[00:58:05.540] Miriam Anzovin: There's actually been a change also in TikTok where it has become a lot more strict in what I can and cannot say, which is why I have to use euphemisms all the time.{{< /line >}}
+{{< line >}}[00:58:15.380] Miriam Anzovin: But it's become more strict and my views there are going down often, but my views on like Instagram and YouTube are going up.{{< /line >}}
+{{< line >}}[00:58:21.940] Miriam Anzovin: So like this strange shift is happening, which is a bit odd.{{< /line >}}
+{{< line >}}[00:58:27.160] Miriam Anzovin: I think what I initially love about TikTok and I still love about TikTok, even though it has experienced some changes since 2020 at its height, when everyone created a TikTok page and was like, this is my life now.age and was like, "This is my life now," I think that some of the changes or some of the things that I really appreciate and appreciated about it still is the sense of community that I don't necessarily find on Instagram or YouTube.{{< /line >}}
+{{< line >}}[00:58:50.840] Miriam Anzovin: There's viewers, there's, you know, in the comments, we're going back and forth.{{< /line >}}
+{{< line >}}[00:58:53.870] Miriam Anzovin: But TikTok is a special kind of environment.{{< /line >}}
+{{< line >}}[00:58:56.710] Miriam Anzovin: It is a special kind of environment and I really value the community that has been built there.{{< /line >}}
+{{< line >}}[00:59:02.630] Miriam Anzovin: Without that, this wouldn't have happened on Instagram.{{< /line >}}
+{{< line >}}[00:59:04.950] Miriam Anzovin: This wouldn't have happened on YouTube without TikTok kicking it off first.{{< /line >}}
+{{< line >}}[00:59:09.190] Miriam Anzovin: I think that it has a very unique way of approaching interacting with content and the way people can respond and you can respond with videos in this kind of ongoing conversation, which is not too unlike Talmud in a way.{{< /line >}}
+{{< line >}}[00:59:25.800] Miriam Anzovin: But I, I think that whatever fluctuations happen on social media between the platforms and you know, depending on how earlier this year, there was that fear about TikTok going away.{{< /line >}}
+{{< line >}}[00:59:35.800] Miriam Anzovin: There's the debacle with Twitter where now all we have all these...{{< /line >}}
+{{< line >}}[00:59:39.480] Miriam Anzovin: This diaspora of J-Twitter who are wandering around trying to find each other on like Mastodon and Bluesky and everywhere.{{< /line >}}
+{{< line >}}[00:59:47.390] Miriam Anzovin: There's so many shifts in social media, but the general trend is that more and more people across the board are watching my stuff.{{< /line >}}
+{{< line >}}[00:59:54.510] Miriam Anzovin: And for that I am deeply, deeply grateful.{{< /line >}}
+{{< line >}}[00:59:57.310] Miriam Anzovin: And you know, I really do have to...{{< /line >}}
+{{< line >}}[00:59:59.350] Miriam Anzovin: Have to give it up for TikTok, because without that, this would not have happened.{{< /line >}}
+{{< line >}}[01:00:04.190] Dan Beecher: Well, so speaking of all of these places where...{{< /line >}}
+{{< line >}}[01:00:06.950] Dan Beecher: How do people find you?{{< /line >}}
+{{< line >}}[01:00:08.110] Dan Beecher: How do they track you down?{{< /line >}}
+{{< line >}}[01:00:09.470] Miriam Anzovin: You can find...{{< /line >}}
+{{< line >}}[01:00:10.230] Miriam Anzovin: Well, don't try to track me down because I literally, I'm...{{< /line >}}
+{{< line >}}[01:00:13.310] Miriam Anzovin: I truly do believe that I will be tracked down.{{< /line >}}
+{{< line >}}[01:00:16.630] Miriam Anzovin: I truly believe that I will be assassinated by...{{< /line >}}
+{{< line >}}[01:00:19.110] Miriam Anzovin: By somebody who hates what I do.{{< /line >}}
+{{< line >}}[01:00:22.150] Miriam Anzovin: You can find me on TikTok, on Instagram, on YouTube, on Mastodon, on Bluesky, and on Threads @miriamanzovin.{{< /line >}}
+{{< line >}}[01:00:30.510] Miriam Anzovin: M-I-R-I-A-M A-N-Z-O-V-I-N. And I post videos, you know, usually everywhere, all those places.{{< /line >}}
+{{< line >}}[01:00:38.310] Miriam Anzovin: Everywhere, all those places.{{< /line >}}
+{{< line >}}[01:00:39.870] Miriam Anzovin: So if you're not on TikTok and you're a YouTube person, you will see the same content that I post on my TikTok and my Instagram.{{< /line >}}
+{{< line >}}[01:00:47.310] Dan McClellan: And it's not just Daf reactions.{{< /line >}}
+{{< line >}}[01:00:49.070] Dan McClellan: You also react to other genres of Talmudic and other literature.{{< /line >}}
+{{< line >}}[01:00:53.190] Dan Beecher: Well, that...{{< /line >}}
+{{< line >}}[01:00:53.550] Dan Beecher: You know what we're gonna have to...{{< /line >}}
+{{< line >}}[01:00:54.710] Dan Beecher: That is a talk, a discussion for a different episode of this show.{{< /line >}}
+{{< line >}}[01:00:58.070] Dan Beecher: So maybe we'll have you back to...{{< /line >}}
+{{< line >}}[01:00:59.910] Dan Beecher: To talk about other things and so that I can learn.{{< /line >}}
+{{< line >}}[01:01:02.230] Miriam Anzovin: I would be delighted.{{< /line >}}
+{{< line >}}[01:01:03.550] Miriam Anzovin: I would be delighted.{{< /line >}}
+{{< line >}}[01:01:04.830] Dan Beecher: Well, Miriam Anzovin, thank you so much for joining us.{{< /line >}}
+{{< line >}}[01:01:07.710] Dan Beecher: We really appreciate it.{{< /line >}}
+{{< line >}}[01:01:09.800] Dan Beecher: For those of you who are patrons of our show, if you stick around, we'll do some...{{< /line >}}
+{{< line >}}[01:01:14.840] Dan Beecher: Miriam has agreed to...{{< /line >}}
+{{< line >}}[01:01:16.440] Dan Beecher: Foolishly probably, agreed probably to...{{< /line >}}
+{{< line >}}[01:01:19.720] Dan Beecher: To stick around and chat with us a little bit more.{{< /line >}}
+{{< line >}}[01:01:22.800] Dan Beecher: We'll...{{< /line >}}
+{{< line >}}[01:01:23.400] Dan Beecher: We'll get down and dirty and personal.{{< /line >}}
+{{< line >}}[01:01:25.400] Dan Beecher: She might show her elbows, you never know what's gonna happen.{{< /line >}}
+{{< line >}}[01:01:28.280] Dan Beecher: And, and, for those of you who aren't patrons, but would like to be, you can always go to patreon.com/dataoverdogma to become one.{{< /line >}}
+{{< line >}}[01:01:38.850] Dan Beecher: And what's the other thing?{{< /line >}}
+{{< line >}}[01:01:40.890] Dan Beecher: Oh, if you want to contact us, you can write to us.{{< /line >}}
+{{< line >}}[01:01:43.450] Dan Beecher: Contact...{{< /line >}}
+{{< line >}}[01:01:43.970] Dan Beecher: It's contact@dataoverdogmapod.com.{{< /line >}}
+{{< line >}}[01:01:45.810] Dan Beecher: Thanks so much for joining us.{{< /line >}}
+{{< line >}}[01:01:49.690] Dan Beecher: We'll talk to you again next week.{{< /line >}}
+{{< line >}}[01:01:51.490] Dan McClellan: Bye, everybody.{{< /line >}}
