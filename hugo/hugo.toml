@@ -19,8 +19,8 @@ enableGitInfo = true
     extended = true
     min = "0.129.0"
 
-[taxonomies]
-  tag = "tags"
+# [taxonomies]
+#   tag = "tags"
 
 
 

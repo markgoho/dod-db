@@ -47,3 +47,6 @@ data/transcripts/*-raw.txt
 .genkit
 public
 .playwright-mcp
+
+hugo/public
+hugo/resources

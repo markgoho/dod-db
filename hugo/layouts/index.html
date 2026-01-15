@@ -1,5 +1,5 @@
 {{ define "head-styles" }}
-  {{ $pageCSS := "scss/landing-page.scss" }}
+  {{ $pageCSS := "scss/styles.scss" }}
   {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
   {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
