@@ -35,6 +35,13 @@
       {{/* Transcript */}}
       <section class="episode-transcript">
         <h2>Transcript</h2>
+        <div class="transcript-controls">
+          <label class="auto-scroll-toggle">
+            <input type="checkbox" id="auto-scroll-checkbox" checked>
+            <span class="toggle-switch"></span>
+            <span class="toggle-label">Auto-scroll</span>
+          </label>
+        </div>
         <div class="transcript-content">
           {{ .Content }}
         </div>

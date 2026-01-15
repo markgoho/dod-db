@@ -1,0 +1,36 @@
+{{- /* Parse transcript line: [HH:MM:SS.mmm] Speaker Name: Text content */ -}}
+{{- $inner := .Inner -}}
+{{- $matches := findRESubmatch `\[(\d{2}):(\d{2}):(\d{2})\.(\d{3})\]\s*([^:]+):\s*(.+)` $inner -}}
+
+{{- if $matches -}}
+  {{- $hours := index (index $matches 0) 1 -}}
+  {{- $minutes := index (index $matches 0) 2 -}}
+  {{- $seconds := index (index $matches 0) 3 -}}
+  {{- $ms := index (index $matches 0) 4 -}}
+  {{- $speaker := index (index $matches 0) 5 -}}
+  {{- $text := index (index $matches 0) 6 -}}
+
+  {{- /* Strip leading zeros by converting through printf */ -}}
+  {{- $hoursNum := int (printf "%d" (int (strings.TrimLeft "0" $hours | default "0"))) -}}
+  {{- $minutesNum := int (printf "%d" (int (strings.TrimLeft "0" $minutes | default "0"))) -}}
+  {{- $secondsNum := int (printf "%d" (int (strings.TrimLeft "0" $seconds | default "0"))) -}}
+  {{- $msNum := int (printf "%d" (int (strings.TrimLeft "0" $ms | default "0"))) -}}
+
+  {{- /* Calculate total seconds with millisecond precision */ -}}
+  {{- $totalSeconds := add (mul $hoursNum 3600) (add (mul $minutesNum 60) (add $secondsNum (div (float $msNum) 1000.0))) -}}
+
+  {{- /* Generate speaker slug */ -}}
+  {{- $speakerSlug := $speaker | lower | replaceRE `\s+` "-" -}}
+
+  {{- /* Video ID from page params */ -}}
+  {{- $videoId := .Page.Params.videoId -}}
+
+<div class="transcript-line" data-start="{{ $totalSeconds }}">
+  <a class="timestamp visually-hidden" data-seconds="{{ $totalSeconds }}" href="https://youtu.be/{{ $videoId }}?t={{ $totalSeconds }}">[{{ $hours }}:{{ $minutes }}:{{ $seconds }}]</a>
+  <span class="speaker-pill" data-speaker="{{ $speakerSlug }}">{{ $speaker }}</span>
+  <span class="line-text">{{ $text }}</span>
+</div>
+{{- else -}}
+  {{- /* Fallback: render as plain text if parsing fails */ -}}
+  <p class="transcript-line-error">{{ $inner }}</p>
+{{- end -}}

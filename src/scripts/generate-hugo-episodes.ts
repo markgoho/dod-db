@@ -35,23 +35,74 @@ function extractCleanTitle(fullTitle: string): string {
 }
 
 /**
- * Transform transcript timestamps into clickable links.
- * Converts [HH:MM:SS.mmm] to <a> tags with YouTube seek URLs.
+ * Parsed transcript line with timestamp, speaker, and text.
  */
-function transformTimestamps(content: string, videoId: string): string {
-	const pattern = /\[(\d{2}):(\d{2}):(\d{2})(?:\.\d{3})?\]/g;
+type ParsedLine = {
+	timestamp: string;
+	totalSeconds: number;
+	speaker: string;
+	speakerSlug: string;
+	text: string;
+};
 
-	return content.replaceAll(pattern, (_match, hours: string, minutes: string, seconds: string) => {
-		const totalSeconds =
-			Number.parseInt(hours, 10) * 3600 +
-			Number.parseInt(minutes, 10) * 60 +
-			Number.parseInt(seconds, 10);
+/**
+ * Parse a transcript line into its components.
+ * Expected format: [HH:MM:SS.mmm] Speaker Name: Text content here
+ */
+function parseTranscriptLine(line: string): ParsedLine | undefined {
+	const pattern = /^\[(\d{2}):(\d{2}):(\d{2})(?:\.(\d{3}))?\]\s*([^:]+):\s*(.+)$/;
+	const match = pattern.exec(line);
 
-		const display = `${hours}:${minutes}:${seconds}`;
-		const url = `https://youtu.be/${videoId}?t=${totalSeconds}`;
+	if (!match) {
+		return undefined;
+	}
 
-		return `<a class="timestamp" data-seconds="${totalSeconds}" href="${url}">[${display}]</a>`;
-	});
+	const hours = match[1] ?? '00';
+	const minutes = match[2] ?? '00';
+	const seconds = match[3] ?? '00';
+	const milliseconds = match[4] ?? '000';
+	const speaker = match[5]?.trim() ?? '';
+	const text = match[6]?.trim() ?? '';
+
+	// Calculate total seconds with millisecond precision
+	const totalSeconds =
+		Number.parseInt(hours, 10) * 3600 +
+		Number.parseInt(minutes, 10) * 60 +
+		Number.parseInt(seconds, 10) +
+		Number.parseInt(milliseconds, 10) / 1000;
+
+	const timestamp = `${hours}:${minutes}:${seconds}`;
+	const speakerSlug = speaker.toLowerCase().replaceAll(/\s+/g, '-');
+
+	return { timestamp, totalSeconds, speaker, speakerSlug, text };
+}
+
+/**
+ * Transform transcript content into Hugo shortcode format.
+ * Each line becomes a {{< line >}}...{{< /line >}} shortcode.
+ * The shortcode handles parsing and HTML generation.
+ */
+function transformToShortcodes(content: string): string {
+	const lines = content.split('\n');
+	const shortcodeLines: string[] = [];
+
+	for (const line of lines) {
+		const trimmed = line.trim();
+		if (trimmed.length === 0) {
+			continue;
+		}
+
+		// Only wrap lines that match the transcript pattern
+		const parsed = parseTranscriptLine(trimmed);
+		if (parsed) {
+			// Reconstruct the line with full millisecond precision
+			const msString = String(Math.round((parsed.totalSeconds % 1) * 1000)).padStart(3, '0');
+			const fullTimestamp = `[${parsed.timestamp}.${msString}]`;
+			shortcodeLines.push(`{{< line >}}${fullTimestamp} ${parsed.speaker}: ${parsed.text}{{< /line >}}`);
+		}
+	}
+
+	return shortcodeLines.join('\n');
 }
 
 /**
@@ -111,14 +162,14 @@ async function generateEpisodeContent(video: ProcessedVideo): Promise<boolean> {
 	// Read transcript content
 	const transcriptContent = await transcriptFile.text();
 
-	// Transform timestamps to clickable links
-	const transcriptWithLinks = transformTimestamps(transcriptContent, video.videoId);
+	// Transform to Hugo shortcode format
+	const transcriptWithShortcodes = transformToShortcodes(transcriptContent);
 
 	// Generate frontmatter
 	const frontmatter = generateFrontmatter(video);
 
 	// Combine frontmatter and transcript
-	const content = `${frontmatter}\n\n${transcriptWithLinks}`;
+	const content = `${frontmatter}\n\n${transcriptWithShortcodes}`;
 
 	// Write to Hugo content directory
 	const outputDir = path.join(HUGO_CONTENT_DIR, String(video.episodeNumber));
