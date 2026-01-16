@@ -1,0 +1,155 @@
+// ============================================
+// Individual Tag Page (Term)
+// ============================================
+
+// Import episode card component
+@import 'episode-card';
+
+main.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-m) var(--space-3xl);
+}
+
+// Tag Header
+.tag-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  position: relative;
+
+  // Large decorative letter behind title
+  &::before {
+    content: attr(data-letter);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-serif);
+    font-size: clamp(10rem, 25vw, 18rem);
+    font-weight: 800;
+    color: var(--brown-200);
+    opacity: 0.15;
+    z-index: -1;
+    pointer-events: none;
+    line-height: 1;
+  }
+}
+
+.tag-header__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  padding: var(--space-2xs) var(--space-s);
+  margin-bottom: var(--space-l);
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--brown-450);
+  text-decoration: none;
+  background: var(--tan-100);
+  border: 1px solid var(--brown-300);
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--brown-300);
+    color: var(--brown-600);
+
+    .tag-header__back-arrow {
+      transform: translateX(-0.25rem);
+    }
+  }
+}
+
+.tag-header__back-arrow {
+  transition: transform 0.2s ease;
+}
+
+.tag-header__back-text {
+  letter-spacing: 0.02em;
+}
+
+.tag-header__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  color: var(--olive-600);
+  margin: 0 0 var(--space-l) 0;
+  position: relative;
+  padding-bottom: var(--space-m);
+  text-wrap: balance;
+
+  // Decorative underline
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(4rem, 40%, 10rem);
+    height: 3px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--brown-500) 50%,
+      transparent 100%
+    );
+  }
+}
+
+.tag-header__meta {
+  display: inline-flex;
+  gap: var(--space-m);
+}
+
+.tag-header__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-s) var(--space-l);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--brown-300);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.tag-header__stat-number {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--brown-500);
+}
+
+.tag-header__stat-label {
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--brown-450);
+}
+
+// Episodes section
+.tag-episodes {
+  // Container for the grid
+}
+
+// Episodes grid (same as episode-list)
+.episodes-grid {
+  display: grid;
+  gap: var(--space-l);
+
+  @media (min-width: 60rem) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+// Current tag highlight within episode cards
+.episode-card__tag--current {
+  background: var(--olive-500);
+  color: white;
+
+  &:hover {
+    background: var(--olive-600);
+  }
+}

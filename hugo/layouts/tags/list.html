@@ -1,0 +1,24 @@
+{{ define "head-styles" }}
+  {{ $pageCSS := "scss/tags-list.scss" }}
+  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
+  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+  <div class="tags-page">
+    <h1 class="tags-page__title">Topics</h1>
+    <p class="tags-page__description">
+      {{ len .Data.Terms }} topics across all episodes
+    </p>
+
+    <div class="tags-cloud">
+      {{ range .Data.Terms.Alphabetical }}
+        <a href="{{ .Page.RelPermalink }}" class="tag-pill">
+          {{ .Page.Title }}
+          <span class="tag-pill__count">{{ .Count }}</span>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

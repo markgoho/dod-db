@@ -409,7 +409,7 @@ function handleTranscriptScroll(): void {
  */
 function init(): void {
 	const player = document.querySelector<HTMLElement>('.video-player');
-	const facade = player?.querySelector<HTMLAnchorElement>('.video-facade');
+	const thumbnail = player?.querySelector<HTMLAnchorElement>('a');
 
 	if (!player) {
 		return;
@@ -435,9 +435,9 @@ function init(): void {
 		checkbox.addEventListener('change', handleToggleChange);
 	}
 
-	// Handle facade click
-	if (facade) {
-		facade.addEventListener('click', (event) => {
+	// Handle thumbnail click
+	if (thumbnail) {
+		thumbnail.addEventListener('click', (event) => {
 			handleFacadeClick(event, player);
 		});
 	}
