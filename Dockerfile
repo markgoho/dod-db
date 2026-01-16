@@ -47,5 +47,7 @@ RUN echo "Hugo version: $(hugo version)"
 RUN echo "Sass version: $(sass --version)"
 RUN echo "Node.js version: $(node --version)"
 
+# test trigger
+
 # Set the working directory for when the container starts
 WORKDIR /workspace
