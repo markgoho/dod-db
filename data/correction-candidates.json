@@ -41,10 +41,11 @@
       "original": "Ball",
       "corrected": "Baal",
       "category": "spelling",
-      "totalOccurrences": 5,
-      "episodeCount": 1,
+      "totalOccurrences": 7,
+      "episodeCount": 2,
       "episodes": [
-        "833s6y6kW2k"
+        "833s6y6kW2k",
+        "oKe-ukUfIKs"
       ],
       "examples": [
         "\"that was Ball.\"",
@@ -66,9 +67,9 @@
         "833s6y6kW2k",
         "833s6y6kW2k"
       ],
-      "confidence": 15,
+      "confidence": 40,
       "firstSeen": "2026-01-11T17:59:30.189Z",
-      "lastSeen": "2026-01-11T17:59:30.189Z",
+      "lastSeen": "2026-01-16T19:49:03.956Z",
       "status": "pending"
     },
     "like okay→like Okay": {
@@ -878,10 +879,11 @@
       "original": "Jesus",
       "corrected": "Jesus's",
       "category": "spelling",
-      "totalOccurrences": 3,
-      "episodeCount": 1,
+      "totalOccurrences": 5,
+      "episodeCount": 2,
       "episodes": [
-        "YyN1w9PYjS4"
+        "YyN1w9PYjS4",
+        "1w8zmAKheQE"
       ],
       "examples": [
         "\"terms of Jesus power to\"",
@@ -903,9 +905,9 @@
         "YyN1w9PYjS4",
         "YyN1w9PYjS4"
       ],
-      "confidence": 20,
+      "confidence": 40,
       "firstSeen": "2026-01-11T17:59:30.350Z",
-      "lastSeen": "2026-01-11T17:59:30.350Z",
+      "lastSeen": "2026-01-16T19:48:22.470Z",
       "status": "rejected",
       "reviewedAt": "2026-01-11T18:06:21.391Z",
       "reviewedBy": "UI Review"
@@ -6572,10 +6574,11 @@
       "original": "Nazarite",
       "corrected": "Nazirite",
       "category": "spelling",
-      "totalOccurrences": 5,
-      "episodeCount": 1,
+      "totalOccurrences": 7,
+      "episodeCount": 2,
       "episodes": [
-        "DnsTYWOw5r0"
+        "DnsTYWOw5r0",
+        "XO3fcbF6Jyc"
       ],
       "examples": [
         "\"being a Nazarite. Right. Someone\"",
@@ -6597,9 +6600,9 @@
         "DnsTYWOw5r0",
         "DnsTYWOw5r0"
       ],
-      "confidence": 25,
+      "confidence": 50,
       "firstSeen": "2026-01-16T04:58:37.376Z",
-      "lastSeen": "2026-01-16T04:58:37.376Z",
+      "lastSeen": "2026-01-16T19:36:22.701Z",
       "status": "pending"
     },
     "Mandians→Mandaeans": {
@@ -6751,7 +6754,601 @@
       "firstSeen": "2026-01-16T05:12:44.171Z",
       "lastSeen": "2026-01-16T05:12:44.171Z",
       "status": "pending"
+    },
+    "Malach→malak": {
+      "original": "Malach",
+      "corrected": "malak",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "XO3fcbF6Jyc"
+      ],
+      "examples": [
+        "\"the angel Malach. But I\"",
+        "\"argued that malach here was\""
+      ],
+      "correctedExamples": [
+        "\"the angel malak. But I\"",
+        "\"argued that malak here was\""
+      ],
+      "timestamps": [
+        "00:23:05.560",
+        "00:23:05.560"
+      ],
+      "episodeIds": [
+        "XO3fcbF6Jyc",
+        "XO3fcbF6Jyc"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T19:36:22.701Z",
+      "lastSeen": "2026-01-16T19:36:22.701Z",
+      "status": "pending"
+    },
+    "histories→History's": {
+      "original": "histories",
+      "corrected": "History's",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "yXeCVNSmhYQ"
+      ],
+      "examples": [
+        "\"be a histories mysteries where\"",
+        "\"on to histories mysteries.\""
+      ],
+      "correctedExamples": [
+        "\"be a History's Mysteries where\"",
+        "\"on to History's Mysteries.\""
+      ],
+      "timestamps": [
+        "00:02:11.590",
+        "00:34:56.650"
+      ],
+      "episodeIds": [
+        "yXeCVNSmhYQ",
+        "yXeCVNSmhYQ"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-16T19:41:09.560Z",
+      "lastSeen": "2026-01-16T19:41:09.560Z",
+      "status": "pending"
+    },
+    "Barack→Barak": {
+      "original": "Barack",
+      "corrected": "Barak",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "yXeCVNSmhYQ"
+      ],
+      "examples": [
+        "\"Deborah and Barack.\"",
+        "\"I mean, Barack was told.\""
+      ],
+      "correctedExamples": [
+        "\"Deborah and Barak.\"",
+        "\"I mean, Barak was told.\""
+      ],
+      "timestamps": [
+        "00:03:21.730",
+        "00:20:42.910"
+      ],
+      "episodeIds": [
+        "yXeCVNSmhYQ",
+        "yXeCVNSmhYQ"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T19:41:09.560Z",
+      "lastSeen": "2026-01-16T19:41:09.560Z",
+      "status": "pending"
+    },
+    "like oh→like Oh": {
+      "original": "like oh",
+      "corrected": "like Oh",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "yXeCVNSmhYQ"
+      ],
+      "examples": [
+        "\"And they're like, oh, well, there's\"",
+        "\"And she's like, oh, I'm going\""
+      ],
+      "correctedExamples": [
+        "\"And they're like, \"Oh, well, there's\"",
+        "\"And she's like, \"Oh, I'm going\""
+      ],
+      "timestamps": [
+        "00:07:34.590",
+        "00:15:16.910"
+      ],
+      "episodeIds": [
+        "yXeCVNSmhYQ",
+        "yXeCVNSmhYQ"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-16T19:41:09.560Z",
+      "lastSeen": "2026-01-16T19:41:09.560Z",
+      "status": "pending"
+    },
+    "Cicera's→Sisera's": {
+      "original": "Cicera's",
+      "corrected": "Sisera's",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "yXeCVNSmhYQ"
+      ],
+      "examples": [
+        "\"This is Cicera's mom.\"",
+        "\"That's just Cicera's mom just\""
+      ],
+      "correctedExamples": [
+        "\"This is Sisera's mom.\"",
+        "\"That's just Sisera's mom just\""
+      ],
+      "timestamps": [
+        "00:32:49.020",
+        "00:33:46.910"
+      ],
+      "episodeIds": [
+        "yXeCVNSmhYQ",
+        "yXeCVNSmhYQ"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-16T19:41:09.560Z",
+      "lastSeen": "2026-01-16T19:41:09.560Z",
+      "status": "pending"
+    },
+    "Papia→Papias": {
+      "original": "Papia",
+      "corrected": "Papias",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "1w8zmAKheQE"
+      ],
+      "examples": [
+        "\"second century. Papia seems to\"",
+        "\"Didache and Papia, let's just\""
+      ],
+      "correctedExamples": [
+        "\"second century. Papias seems to\"",
+        "\"Didache and Papias, let's just\""
+      ],
+      "timestamps": [
+        "00:17:24.039",
+        "00:47:31.790"
+      ],
+      "episodeIds": [
+        "1w8zmAKheQE",
+        "1w8zmAKheQE"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T19:41:49.972Z",
+      "lastSeen": "2026-01-16T19:41:49.972Z",
+      "status": "pending"
+    },
+    "Papius→Papias": {
+      "original": "Papius",
+      "corrected": "Papias",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "1w8zmAKheQE"
+      ],
+      "examples": [
+        "\"I think Papius is talking\"",
+        "\"but still Papius at the\"",
+        "\"evidence is Papius is probably\""
+      ],
+      "correctedExamples": [
+        "\"I think Papias is talking\"",
+        "\"but still Papias at the\"",
+        "\"evidence is Papias is probably\""
+      ],
+      "timestamps": [
+        "00:29:24.500",
+        "00:45:52.220",
+        "00:18:24.510"
+      ],
+      "episodeIds": [
+        "1w8zmAKheQE",
+        "1w8zmAKheQE",
+        "1w8zmAKheQE"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-16T19:41:49.972Z",
+      "lastSeen": "2026-01-16T19:48:22.470Z",
+      "status": "pending"
+    },
+    "comic book→Comic Book": {
+      "original": "comic book",
+      "corrected": "Comic Book",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "Z6-5mEJYYQU"
+      ],
+      "examples": [
+        "\"my favorite comic book guy lines\"",
+        "\"and the comic book guy says,\""
+      ],
+      "correctedExamples": [
+        "\"my favorite Comic Book Guy lines\"",
+        "\"and the Comic Book Guy says,\""
+      ],
+      "timestamps": [
+        "00:02:31.310",
+        "00:02:31.310"
+      ],
+      "episodeIds": [
+        "Z6-5mEJYYQU",
+        "Z6-5mEJYYQU"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T19:45:42.090Z",
+      "lastSeen": "2026-01-16T19:45:42.090Z",
+      "status": "pending"
+    },
+    "book guy→Book Guy": {
+      "original": "book guy",
+      "corrected": "Book Guy",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "Z6-5mEJYYQU"
+      ],
+      "examples": [
+        "\"favorite comic book guy lines when\"",
+        "\"the comic book guy says, as\""
+      ],
+      "correctedExamples": [
+        "\"favorite Comic Book Guy lines when\"",
+        "\"the Comic Book Guy says, as\""
+      ],
+      "timestamps": [
+        "00:02:31.310",
+        "00:02:31.310"
+      ],
+      "episodeIds": [
+        "Z6-5mEJYYQU",
+        "Z6-5mEJYYQU"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T19:45:42.090Z",
+      "lastSeen": "2026-01-16T19:45:42.090Z",
+      "status": "pending"
+    },
+    "steely→stele": {
+      "original": "steely",
+      "corrected": "stele",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "Z6-5mEJYYQU"
+      ],
+      "examples": [
+        "\"of the steely and not\"",
+        "\"tell, Dan, steely people are\"",
+        "\"the main steely I want\""
+      ],
+      "correctedExamples": [
+        "\"of the stele and not\"",
+        "\"Tell Dan Stele people are\"",
+        "\"the main stele I want\""
+      ],
+      "timestamps": [
+        "00:16:21.360",
+        "00:16:21.360",
+        "00:23:00.280"
+      ],
+      "episodeIds": [
+        "Z6-5mEJYYQU",
+        "Z6-5mEJYYQU",
+        "Z6-5mEJYYQU"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-16T19:45:42.090Z",
+      "lastSeen": "2026-01-16T19:45:42.090Z",
+      "status": "pending"
+    },
+    "Katumua→Katumuwa": {
+      "original": "Katumua",
+      "corrected": "Katumuwa",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "Z6-5mEJYYQU"
+      ],
+      "examples": [
+        "\"is the Katumua stele, which\"",
+        "\"I am Katumua, servant of\""
+      ],
+      "correctedExamples": [
+        "\"is the Katumuwa stele, which\"",
+        "\"I am Katumuwa, servant of\""
+      ],
+      "timestamps": [
+        "00:23:00.280",
+        "00:24:03.950"
+      ],
+      "episodeIds": [
+        "Z6-5mEJYYQU",
+        "Z6-5mEJYYQU"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T19:45:42.090Z",
+      "lastSeen": "2026-01-16T19:45:42.090Z",
+      "status": "pending"
+    },
+    "Acadian→Akkadian": {
+      "original": "Acadian",
+      "corrected": "Akkadian",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "Z6-5mEJYYQU"
+      ],
+      "examples": [
+        "\"with an Acadian term. And\"",
+        "\"But the Acadian casit has\""
+      ],
+      "correctedExamples": [
+        "\"with an Akkadian term. And\"",
+        "\"But the Akkadian kasitu has\""
+      ],
+      "timestamps": [
+        "00:46:20.320",
+        "00:47:22.960"
+      ],
+      "episodeIds": [
+        "Z6-5mEJYYQU",
+        "Z6-5mEJYYQU"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T19:45:42.090Z",
+      "lastSeen": "2026-01-16T19:45:42.090Z",
+      "status": "pending"
+    },
+    "neighbors→neighbor's": {
+      "original": "neighbors",
+      "corrected": "neighbor's",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "oKe-ukUfIKs"
+      ],
+      "examples": [
+        "\"know, your neighbors got slaves.\"",
+        "\"Covets neighbors, wives.\""
+      ],
+      "correctedExamples": [
+        "\"know, your neighbor's got slaves.\"",
+        "\"Covets neighbor's wives.\""
+      ],
+      "timestamps": [
+        "00:56:06.480",
+        "00:57:54.180"
+      ],
+      "episodeIds": [
+        "oKe-ukUfIKs",
+        "oKe-ukUfIKs"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-16T19:49:03.956Z",
+      "lastSeen": "2026-01-16T19:49:03.956Z",
+      "status": "pending"
+    },
+    "It's It's→It's it's": {
+      "original": "It's It's",
+      "corrected": "It's it's",
+      "category": "capitalization",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "ZwJai1EPbw4"
+      ],
+      "examples": [
+        "\"It's. It's not easy\"",
+        "\"weird today. It's. It's. It's a\"",
+        "\"today. It's. It's. It's a little\""
+      ],
+      "correctedExamples": [
+        "\"It's... it's not easy\"",
+        "\"weird today. It's... it's... it's a\"",
+        "\"today. It's... it's... it's a little\""
+      ],
+      "timestamps": [
+        "00:00:49.820",
+        "00:01:06.470",
+        "00:01:06.470"
+      ],
+      "episodeIds": [
+        "ZwJai1EPbw4",
+        "ZwJai1EPbw4",
+        "ZwJai1EPbw4"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-16T19:57:20.100Z",
+      "lastSeen": "2026-01-16T19:57:20.100Z",
+      "status": "pending"
+    },
+    "Shalah→Shelah": {
+      "original": "Shalah",
+      "corrected": "Shelah",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "ZwJai1EPbw4"
+      ],
+      "examples": [
+        "\"much less Shalah. But. So\"",
+        "\"She sees Shalah with Judah\"",
+        "\"my son Shalah and he\""
+      ],
+      "correctedExamples": [
+        "\"much less Shelah. But... so\"",
+        "\"She sees Shelah with Judah\"",
+        "\"my son Shelah and he\""
+      ],
+      "timestamps": [
+        "00:04:24.270",
+        "00:17:59.790",
+        "00:26:34.220"
+      ],
+      "episodeIds": [
+        "ZwJai1EPbw4",
+        "ZwJai1EPbw4",
+        "ZwJai1EPbw4"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-16T19:57:20.100Z",
+      "lastSeen": "2026-01-16T19:57:20.100Z",
+      "status": "pending"
+    },
+    "Shala→Shelah": {
+      "original": "Shala",
+      "corrected": "Shelah",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "ZwJai1EPbw4"
+      ],
+      "examples": [
+        "\"sees that Shala. She sees\"",
+        "\"and not Shala.\""
+      ],
+      "correctedExamples": [
+        "\"sees that Shelah. She sees\"",
+        "\"and not Shelah.\""
+      ],
+      "timestamps": [
+        "00:17:59.790",
+        "00:33:47.870"
+      ],
+      "episodeIds": [
+        "ZwJai1EPbw4",
+        "ZwJai1EPbw4"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T19:57:20.100Z",
+      "lastSeen": "2026-01-16T19:57:20.100Z",
+      "status": "pending"
+    },
+    "Leverett→Levirate": {
+      "original": "Leverett",
+      "corrected": "Levirate",
+      "category": "spelling",
+      "totalOccurrences": 6,
+      "episodeCount": 1,
+      "episodes": [
+        "ZwJai1EPbw4"
+      ],
+      "examples": [
+        "\"of the Leverett marriage, since\"",
+        "\"Yeah. So Leverett marriage is\"",
+        "\"fulfill the Leverett marriage, because\""
+      ],
+      "correctedExamples": [
+        "\"of the Levirate marriage, since\"",
+        "\"Yeah. So Levirate marriage is\"",
+        "\"fulfill the Levirate marriage, because\""
+      ],
+      "timestamps": [
+        "00:22:57.600",
+        "00:23:23.370",
+        "00:24:04.900"
+      ],
+      "episodeIds": [
+        "ZwJai1EPbw4",
+        "ZwJai1EPbw4",
+        "ZwJai1EPbw4"
+      ],
+      "confidence": 30,
+      "firstSeen": "2026-01-16T19:57:20.100Z",
+      "lastSeen": "2026-01-16T19:57:20.100Z",
+      "status": "pending"
+    },
+    "roof→Ruth": {
+      "original": "roof",
+      "corrected": "Ruth",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "ZwJai1EPbw4"
+      ],
+      "examples": [
+        "\"do a roof.\"",
+        "\"do a roof. Yeah. So\""
+      ],
+      "correctedExamples": [
+        "\"do a Ruth.\"",
+        "\"do a Ruth. Yeah. So\""
+      ],
+      "timestamps": [
+        "00:23:37.450",
+        "00:23:38.610"
+      ],
+      "episodeIds": [
+        "ZwJai1EPbw4",
+        "ZwJai1EPbw4"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T19:57:20.100Z",
+      "lastSeen": "2026-01-16T19:57:20.100Z",
+      "status": "pending"
+    },
+    "alma→almah": {
+      "original": "alma",
+      "corrected": "almah",
+      "category": "spelling",
+      "totalOccurrences": 5,
+      "episodeCount": 1,
+      "episodes": [
+        "ZwJai1EPbw4"
+      ],
+      "examples": [
+        "\"do have alma, which is\"",
+        "\"And so alma is not\"",
+        "\"either or alma usually is.\""
+      ],
+      "correctedExamples": [
+        "\"do have almah, which is\"",
+        "\"And so almah is not\"",
+        "\"either or almah usually is.\""
+      ],
+      "timestamps": [
+        "00:49:57.340",
+        "00:49:57.340",
+        "00:49:57.340"
+      ],
+      "episodeIds": [
+        "ZwJai1EPbw4",
+        "ZwJai1EPbw4",
+        "ZwJai1EPbw4"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-16T19:57:20.100Z",
+      "lastSeen": "2026-01-16T19:57:20.100Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-16T05:12:44.171Z"
+  "lastUpdated": "2026-01-16T19:57:20.100Z"
 }

@@ -5,6 +5,7 @@ export type SegmentType =
   | 'advertisement'
   | 'all-right-lets-see-it'
   | 'archaeology-of-israel'
+  | 'bible-heroes'
   | 'bible-vs-bible'
   | 'by-the-numbers'
   | 'chapter-and-verse'
@@ -13,6 +14,7 @@ export type SegmentType =
   | 'ex-eventu'
   | 'getting-angelic'
   | 'getting-demonic'
+  | 'historys-mysteries'
   | 'intro'
   | 'is-it-canon'
   | 'its-the-law'
@@ -40,6 +42,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   intro: 'Intro',
   'all-right-lets-see-it': "All Right, Let's See It",
   'archaeology-of-israel': 'Archaeology of Israel',
+  'bible-heroes': 'Bible Heroes?',
   'bible-vs-bible': 'Bible vs Bible',
   'by-the-numbers': 'By the Numbers',
   'chapter-and-verse': 'Chapter and Verse',
@@ -48,6 +51,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'ex-eventu': 'Ex Eventu',
   'getting-angelic': 'Getting Angelic',
   'getting-demonic': 'Getting Demonic',
+  'historys-mysteries': "History's Mysteries",
   'is-it-canon': 'Is it Canon?',
   'its-the-law': "It's the Law",
   'know-your-bible': 'Know Your Bible',
@@ -76,6 +80,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   intro: '#6366f1', // indigo
   'all-right-lets-see-it': '#ef4444', // red
   'archaeology-of-israel': '#a16207', // yellow-700 (bronze/earth tone)
+  'bible-heroes': '#60a5fa', // blue-400 (heroic/noble)
   'bible-vs-bible': '#0891b2', // cyan-600 (scholarly comparison)
   'by-the-numbers': '#06b6d4', // cyan-500
   'chapter-and-verse': '#22c55e', // green
@@ -84,6 +89,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'ex-eventu': '#6366f1', // indigo-500 (scholarly/prophecy)
   'getting-angelic': '#fbbf24', // amber-400 (golden/heavenly)
   'getting-demonic': '#b91c1c', // red-700 (dark red)
+  'historys-mysteries': '#818cf8', // indigo-400 (mysterious/historical)
   'is-it-canon': '#14b8a6', // teal
   'its-the-law': '#059669', // emerald-600 (legal/authoritative green)
   'know-your-bible': '#10b981', // emerald-500
@@ -115,6 +121,11 @@ export const SEGMENT_PATTERNS: Record<
   Exclude<SegmentType, 'intro' | 'main-content' | 'segment'>,
   RegExp[]
 > = {
+  'bible-heroes': [
+    /bible heroes\??/i,
+    /welcome to.*bible heroes/i,
+    /let'?s do.*bible heroes/i,
+  ],
   'bible-vs-bible': [
     /bible vs\.? bible/i,
     /welcome to.*bible vs\.? bible/i,
@@ -194,6 +205,11 @@ export const SEGMENT_PATTERNS: Record<
   'by-the-numbers': [/by the numbers/i, /welcome to.*by the numbers/i],
   'getting-angelic': [/getting angelic/i, /welcome to.*getting angelic/i],
   'getting-demonic': [/getting demonic/i, /welcome to.*getting demonic/i],
+  'historys-mysteries': [
+    /history'?s mysteries/i,
+    /welcome to.*history'?s mysteries/i,
+    /let'?s.*history'?s mysteries/i,
+  ],
   'nature-of-god': [
     /nature of god/i,
     /welcome to.*nature of god/i,
@@ -242,6 +258,7 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
   intro: 'Opening of the episode with theme music and brief introduction',
   'all-right-lets-see-it': 'Examining and discussing visual content like charts, maps, or images',
   'archaeology-of-israel': 'Archaeological findings and discoveries related to ancient Israel',
+  'bible-heroes': 'Examining biblical characters traditionally viewed as heroes, questioning their heroic status and exploring moral complexities',
   'bible-vs-bible': 'Comparing and contrasting different Bible passages, translations, or interpretations',
   'by-the-numbers': 'Statistical analysis and numerical data about biblical or religious topics',
   'chapter-and-verse': 'Reading and discussing specific Bible passages in depth',
@@ -250,6 +267,7 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
   'ex-eventu': 'Discussing prophecy written after the fact (prophecy after the event)',
   'getting-angelic': 'Exploring angels, heavenly beings, and divine messengers in scripture',
   'getting-demonic': 'Exploring demons, evil spirits, and malevolent beings in scripture',
+  'historys-mysteries': 'Examining unsolved historical puzzles, enigmatic archaeological discoveries, and debated events from biblical and ancient history',
   'is-it-canon': 'Discussing what texts are included in biblical canons and why',
   'its-the-law': 'Examining biblical laws, commandments, and legal codes',
   'know-your-bible': 'Educational segment about biblical books, structure, and content',

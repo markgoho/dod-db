@@ -348,6 +348,7 @@ export async function processYouTubeVideo(
     tags: [], // Empty initially
     segments,
     speakers,
+    ...(metadata.chapters !== undefined && { chapters: metadata.chapters }),
   });
 
   // Extract tags from corrected transcript (now with episode number for newly discovered tags)

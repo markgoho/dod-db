@@ -2,12 +2,18 @@ import { formatDate, titleToSlug } from '../utils/slugify.js';
 import * as path from 'node:path';
 import { mkdir, readdir } from 'node:fs/promises';
 
+export interface VideoChapter {
+  title: string;
+  startTime: number;
+}
+
 export interface VideoMetadata {
   id: string;
   title: string;
   description: string;
   publishedAt: string;
   channelTitle: string;
+  chapters?: VideoChapter[];
 }
 
 /**
@@ -29,6 +35,16 @@ export async function fetchVideoMetadata(
 
   const data = JSON.parse(metadata);
 
+  // Extract chapters if available (YouTube uploader-defined chapters)
+  const chapters: VideoChapter[] | undefined = data.chapters
+    ? data.chapters.map(
+        (chapter: { title: string; start_time: number }) => ({
+          title: chapter.title,
+          startTime: chapter.start_time,
+        }),
+      )
+    : undefined;
+
   return {
     id: videoId,
     title: data.title || 'Untitled',
@@ -37,6 +53,7 @@ export async function fetchVideoMetadata(
       ? `${data.upload_date.slice(0, 4)}-${data.upload_date.slice(4, 6)}-${data.upload_date.slice(6, 8)}T00:00:00Z`
       : new Date().toISOString(),
     channelTitle: data.uploader || '',
+    ...(chapters !== undefined && { chapters }),
   };
 }
 

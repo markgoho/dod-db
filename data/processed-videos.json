@@ -11774,5 +11774,1085 @@
       "Dan Beecher",
       "Dan McClellan"
     ]
+  },
+  {
+    "videoId": "XO3fcbF6Jyc",
+    "title": "Episode 63 (June 17, 2024), \"Wrastlin’ With God\"",
+    "publishedAt": "2024-06-17T00:00:00Z",
+    "processedAt": "2026-01-16T19:35:53.055Z",
+    "transcriptPath": "data/transcripts/2024-06-17-episode-63-june-17-2024-wrastlin-with-god.txt",
+    "episodeNumber": 63,
+    "tags": [
+      {
+        "tag": "Philistines",
+        "mentions": 22
+      },
+      {
+        "tag": "Israel",
+        "mentions": 20
+      },
+      {
+        "tag": "Samson",
+        "mentions": 20
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 19
+      },
+      {
+        "tag": "Judges",
+        "mentions": 15
+      },
+      {
+        "tag": "angel",
+        "mentions": 14
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 11
+      },
+      {
+        "tag": "El",
+        "mentions": 9
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 6
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 5
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 4
+      },
+      {
+        "tag": "Moses",
+        "mentions": 4
+      },
+      {
+        "tag": "John the Baptist",
+        "mentions": 3
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 3
+      },
+      {
+        "tag": "Ezekiel",
+        "mentions": 2
+      },
+      {
+        "tag": "Gaza",
+        "mentions": 2
+      },
+      {
+        "tag": "gods",
+        "mentions": 2
+      },
+      {
+        "tag": "Hell",
+        "mentions": 2
+      },
+      {
+        "tag": "Jephthah",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 2
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Exodus",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Kings",
+        "mentions": 1
+      },
+      {
+        "tag": "theology",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:10.475]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-heroes",
+        "startTimestamp": "[00:02:10.475]",
+        "endTimestamp": "[00:32:01.431]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-heroes",
+        "startTimestamp": "[00:32:01.431]",
+        "endTimestamp": "[00:56:16.000]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:56:16.000]",
+        "endTimestamp": "[00:57:48.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
+    ]
+  },
+  {
+    "videoId": "yXeCVNSmhYQ",
+    "title": "Episode 64 (June 24, 2024), \"The Historicity of David\"",
+    "publishedAt": "2024-06-24T00:00:00Z",
+    "processedAt": "2026-01-16T19:39:30.010Z",
+    "transcriptPath": "data/transcripts/2024-06-24-episode-64-june-24-2024-the-historicity-of-david.txt",
+    "episodeNumber": 64,
+    "tags": [
+      {
+        "tag": "King David",
+        "mentions": 71
+      },
+      {
+        "tag": "Israel",
+        "mentions": 22
+      },
+      {
+        "tag": "Judges",
+        "mentions": 17
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 16
+      },
+      {
+        "tag": "King Saul",
+        "mentions": 15
+      },
+      {
+        "tag": "Judah",
+        "mentions": 11
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 9
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 4
+      },
+      {
+        "tag": "Jephthah",
+        "mentions": 4
+      },
+      {
+        "tag": "Samson",
+        "mentions": 4
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 3
+      },
+      {
+        "tag": "Kings",
+        "mentions": 3
+      },
+      {
+        "tag": "El",
+        "mentions": 2
+      },
+      {
+        "tag": "1 Timothy",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "angel",
+        "mentions": 1
+      },
+      {
+        "tag": "Canaan",
+        "mentions": 1
+      },
+      {
+        "tag": "Canaanites",
+        "mentions": 1
+      },
+      {
+        "tag": "First Corinthians",
+        "mentions": 1
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 1
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 1
+      },
+      {
+        "tag": "Goliath",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "King Josiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:02.319]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:03:02.319]",
+        "endTimestamp": "[00:35:07.909]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "historys-mysteries",
+        "startTimestamp": "[00:35:07.909]",
+        "endTimestamp": "[00:58:13.000]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:58:13.000]",
+        "endTimestamp": "[00:59:07.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "Z6-5mEJYYQU",
+    "title": "Episode 65 (July 1, 2024), \"I Got Soul, and I'm Super Bad\"",
+    "publishedAt": "2024-07-01T00:00:00Z",
+    "processedAt": "2026-01-16T19:45:31.304Z",
+    "transcriptPath": "data/transcripts/2024-07-01-episode-65-july-1-2024-i-got-soul-and-im-super-bad.txt",
+    "episodeNumber": 65,
+    "tags": [
+      {
+        "tag": "gods",
+        "mentions": 7
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 6
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 5
+      },
+      {
+        "tag": "Ezekiel",
+        "mentions": 5
+      },
+      {
+        "tag": "Israel",
+        "mentions": 5
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 5
+      },
+      {
+        "tag": "Mesopotamian",
+        "mentions": 3
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 3
+      },
+      {
+        "tag": "El",
+        "mentions": 2
+      },
+      {
+        "tag": "Anatolia",
+        "mentions": 1
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Kings",
+        "mentions": 1
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:04:02.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:04:02.000]",
+        "endTimestamp": "[00:42:01.614]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:42:01.614]",
+        "endTimestamp": "[00:58:36.280]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "oKe-ukUfIKs",
+    "title": "Episode 66 (July 8, 2024), \"Thou Shalt Not\"",
+    "publishedAt": "2024-07-08T00:00:00Z",
+    "processedAt": "2026-01-16T19:48:49.402Z",
+    "transcriptPath": "data/transcripts/2024-07-08-episode-66-july-8-2024-thou-shalt-not.txt",
+    "episodeNumber": 66,
+    "tags": [
+      {
+        "tag": "YHWH",
+        "mentions": 31
+      },
+      {
+        "tag": "Ten Commandments",
+        "mentions": 26
+      },
+      {
+        "tag": "Israel",
+        "mentions": 12
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 9
+      },
+      {
+        "tag": "gods",
+        "mentions": 9
+      },
+      {
+        "tag": "El",
+        "mentions": 8
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 5
+      },
+      {
+        "tag": "Book of Exodus",
+        "mentions": 5
+      },
+      {
+        "tag": "Baal",
+        "mentions": 4
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 3
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 3
+      },
+      {
+        "tag": "Kings",
+        "mentions": 3
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "Islam",
+        "mentions": 2
+      },
+      {
+        "tag": "Jehu",
+        "mentions": 2
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 2
+      },
+      {
+        "tag": "Judges",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 2
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 2
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 2
+      },
+      {
+        "tag": "Cherubim",
+        "mentions": 1
+      },
+      {
+        "tag": "Elephantine",
+        "mentions": 1
+      },
+      {
+        "tag": "Elijah",
+        "mentions": 1
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Joram",
+        "mentions": 1
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 1
+      },
+      {
+        "tag": "Mesopotamian",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Ritual Decalogue",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:50.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:50.000]",
+        "endTimestamp": "[00:59:38.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:59:38.000]",
+        "endTimestamp": "[01:00:36.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "lKaNTTA4gWw",
+    "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi",
+    "publishedAt": "2024-07-15T00:00:00Z",
+    "processedAt": "2026-01-16T19:52:46.101Z",
+    "transcriptPath": "data/transcripts/2024-07-15-episode-67-july-15-2024-prophets-kings-and-terrible-men-with-aaron-higashi.txt",
+    "episodeNumber": 67,
+    "tags": [
+      {
+        "tag": "King David",
+        "mentions": 71
+      },
+      {
+        "tag": "2 Samuel",
+        "mentions": 30
+      },
+      {
+        "tag": "King Saul",
+        "mentions": 30
+      },
+      {
+        "tag": "Israel",
+        "mentions": 17
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 12
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 10
+      },
+      {
+        "tag": "1 Samuel",
+        "mentions": 9
+      },
+      {
+        "tag": "Moses",
+        "mentions": 8
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 6
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 6
+      },
+      {
+        "tag": "2 Chronicles",
+        "mentions": 4
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 4
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 4
+      },
+      {
+        "tag": "Kings",
+        "mentions": 4
+      },
+      {
+        "tag": "Goliath",
+        "mentions": 3
+      },
+      {
+        "tag": "Judges",
+        "mentions": 3
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 3
+      },
+      {
+        "tag": "theology",
+        "mentions": 3
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Christian Nationalism",
+        "mentions": 1
+      },
+      {
+        "tag": "Gideon",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 1
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 1
+      },
+      {
+        "tag": "Sheol",
+        "mentions": 1
+      },
+      {
+        "tag": "Talmud",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:16.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:16.000]",
+        "endTimestamp": "[00:58:36.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:58:36.000]",
+        "endTimestamp": "[00:59:19.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Aaron Higashi",
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "ZwJai1EPbw4",
+    "title": "Episode 68 (July 22, 2024), \"Take My Wife... Please!\"",
+    "publishedAt": "2024-07-22T00:00:00Z",
+    "processedAt": "2026-01-16T19:57:05.068Z",
+    "transcriptPath": "data/transcripts/2024-07-22-episode-68-july-22-2024-take-my-wife-please.txt",
+    "episodeNumber": 68,
+    "tags": [
+      {
+        "tag": "Judah",
+        "mentions": 51
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 8
+      },
+      {
+        "tag": "Israel",
+        "mentions": 6
+      },
+      {
+        "tag": "Book of Exodus",
+        "mentions": 4
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 4
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 3
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 3
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 3
+      },
+      {
+        "tag": "Leviticus",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Proverbs",
+        "mentions": 1
+      },
+      {
+        "tag": "Canaan",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 1
+      },
+      {
+        "tag": "Judges",
+        "mentions": 1
+      },
+      {
+        "tag": "Samson",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Ten Commandments",
+        "mentions": 1
+      },
+      {
+        "tag": "theology",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:48.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:48.000]",
+        "endTimestamp": "[00:37:47.944]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:37:47.944]",
+        "endTimestamp": "[01:01:15.000]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:01:15.000]",
+        "endTimestamp": "[01:02:05.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "1w8zmAKheQE",
+    "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok",
+    "publishedAt": "2024-07-29T00:00:00Z",
+    "processedAt": "2026-01-16T19:46:49.291Z",
+    "transcriptPath": "data/transcripts/2024-07-29-episode-69-july-29-2024-gospel-authorship-with-michael-kok.txt",
+    "episodeNumber": 69,
+    "tags": [
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 75
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 62
+      },
+      {
+        "tag": "Luke",
+        "mentions": 60
+      },
+      {
+        "tag": "Papias of Hierapolis",
+        "mentions": 54
+      },
+      {
+        "tag": "Peter",
+        "mentions": 38
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 36
+      },
+      {
+        "tag": "Paul",
+        "mentions": 21
+      },
+      {
+        "tag": "Irenaeus",
+        "mentions": 15
+      },
+      {
+        "tag": "Book of Acts",
+        "mentions": 13
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 13
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 10
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 9
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 8
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 6
+      },
+      {
+        "tag": "Josephus",
+        "mentions": 5
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 4
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 4
+      },
+      {
+        "tag": "2nd Timothy",
+        "mentions": 3
+      },
+      {
+        "tag": "theology",
+        "mentions": 3
+      },
+      {
+        "tag": "1 Timothy",
+        "mentions": 2
+      },
+      {
+        "tag": "Capernaum",
+        "mentions": 2
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 2
+      },
+      {
+        "tag": "John the Baptist",
+        "mentions": 2
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 2
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 2
+      },
+      {
+        "tag": "1 Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Easter",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Latin Vulgate",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "Virgin Birth",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:34.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:34.000]",
+        "endTimestamp": "[01:00:33.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:00:33.000]",
+        "endTimestamp": "[01:01:03.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Michael Kok",
+      "Dan McClellan",
+      "Dan Beecher"
+    ],
+    "chapters": [
+      {
+        "title": "Intro",
+        "startTime": 0
+      },
+      {
+        "title": "About Michael Kok",
+        "startTime": 165
+      },
+      {
+        "title": "Baptist College",
+        "startTime": 226
+      },
+      {
+        "title": "Gospel Authorship",
+        "startTime": 439
+      },
+      {
+        "title": "Title attributions",
+        "startTime": 623
+      },
+      {
+        "title": "Justin Martyr",
+        "startTime": 903
+      },
+      {
+        "title": "The date of the Gospel",
+        "startTime": 1030
+      },
+      {
+        "title": "Who is the Elder John",
+        "startTime": 1210
+      },
+      {
+        "title": "Why or why not",
+        "startTime": 1474
+      },
+      {
+        "title": "Matthew in the Toll Booth",
+        "startTime": 2154
+      },
+      {
+        "title": "Matthew in Hebrew",
+        "startTime": 2344
+      },
+      {
+        "title": "Impact of this reference",
+        "startTime": 2647
+      },
+      {
+        "title": "Luke is 2 Century",
+        "startTime": 2811
+      },
+      {
+        "title": "The Four Gospel Authors",
+        "startTime": 3271
+      }
+    ]
   }
 ]
