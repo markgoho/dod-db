@@ -34,10 +34,8 @@ tags:
   - New Testament
   - Sheol
   - Talmud
-speakers:
+guests:
   - Aaron Higashi
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

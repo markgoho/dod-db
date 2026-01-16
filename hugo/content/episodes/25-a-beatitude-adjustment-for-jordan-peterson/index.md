@@ -34,9 +34,6 @@ tags:
   - Latin Vulgate
   - manuscript
   - Moses
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Chapter and Verse
   - All Right, Let's See It

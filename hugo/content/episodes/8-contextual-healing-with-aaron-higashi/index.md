@@ -25,10 +25,8 @@ tags:
   - Second Temple period
   - source criticism
   - Trinity
-speakers:
+guests:
   - Aaron Higashi
-  - Dan Beecher
-  - Dan McClellan
 draft: false
 ---
 

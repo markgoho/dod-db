@@ -41,9 +41,7 @@ tags:
   - Torah
   - Trinity
   - Univocality
-speakers:
-  - Dan McClellan
-  - Dan Beecher
+guests:
   - Joel McHale
 draft: false
 ---

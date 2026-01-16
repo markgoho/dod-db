@@ -34,9 +34,6 @@ tags:
   - James
   - John of Patmos
   - Satan
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Conspiracy Watch
   - What Does That Mean?

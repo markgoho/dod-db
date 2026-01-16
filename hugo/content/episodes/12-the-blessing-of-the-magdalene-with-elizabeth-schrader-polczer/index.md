@@ -40,9 +40,8 @@ tags:
   - resurrection
   - Samaritans
   - Textus Receptus
-speakers:
+guests:
   - Elizabeth Schrader Polczer
-  - Dan McClellan
 draft: false
 ---
 

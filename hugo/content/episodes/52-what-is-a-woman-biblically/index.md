@@ -36,9 +36,6 @@ tags:
   - Judaism
   - Mary Magdalene
   - Peter
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Bible vs Bible
   - Taking Issue

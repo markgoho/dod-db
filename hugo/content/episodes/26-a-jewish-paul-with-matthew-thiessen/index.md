@@ -34,10 +34,8 @@ tags:
   - forgery
   - King David
   - Saint Titus
-speakers:
+guests:
   - Matthew Thiessen
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

@@ -41,9 +41,6 @@ tags:
   - Psalm
   - resurrection
   - textual criticism
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - All Right, Let's See It
   - What Does That Mean?

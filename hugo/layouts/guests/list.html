@@ -1,0 +1,53 @@
+{{ define "head-styles" }}
+  {{ $pageCSS := "scss/guests-list.scss" }}
+  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
+  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+  <div class="guests-page">
+    <h1 class="guests-page__title">Guests</h1>
+    <p class="guests-page__description">
+      {{ len .Data.Terms }} guest speakers across all episodes
+    </p>
+
+    {{ $multipleAppearances := slice }}
+    {{ $singleAppearance := slice }}
+    {{ range .Data.Terms.Alphabetical }}
+      {{ if gt .Count 1 }}
+        {{ $multipleAppearances = $multipleAppearances | append . }}
+      {{ else }}
+        {{ $singleAppearance = $singleAppearance | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{ if $multipleAppearances }}
+      <div class="guests-section">
+        <h2 class="guests-section__title">Frequent Guests</h2>
+        <div class="guests-cloud">
+          {{ range $multipleAppearances }}
+            <a href="{{ .Page.RelPermalink }}" class="guest-pill guest-pill--featured">
+              {{ .Page.Title }}
+              <span class="guest-pill__count">{{ .Count }}</span>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if $singleAppearance }}
+      <div class="guests-section guests-section--secondary">
+        <h2 class="guests-section__title">Guest Appearances</h2>
+        <div class="guests-cloud">
+          {{ range $singleAppearance }}
+            <a href="{{ .Page.RelPermalink }}" class="guest-pill">
+              {{ .Page.Title }}
+              <span class="guest-pill__count">{{ .Count }}</span>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

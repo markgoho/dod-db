@@ -24,10 +24,8 @@ tags:
   - New Testament
   - Numbers
   - YHWH
-speakers:
+guests:
   - Andrew Whitehead
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

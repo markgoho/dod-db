@@ -44,9 +44,6 @@ tags:
   - Psalm
   - resurrection
   - Ugarit
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - That's History
   - Chapter and Verse

@@ -10,9 +10,7 @@ tags:
   - Italy
   - Kings
   - Psalm
-speakers:
-  - Dan McClellan
-  - Dan Beecher
+guests:
   - Lindsay Graham
 draft: false
 ---

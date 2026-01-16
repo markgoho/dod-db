@@ -56,9 +56,6 @@ tags:
   - Moses
   - resurrection
   - YHWH
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - By the Numbers
   - What Does That Mean?

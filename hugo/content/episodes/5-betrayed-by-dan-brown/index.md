@@ -30,9 +30,6 @@ tags:
   - monotheism
   - Paul
   - Romans
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - All Right, Let's See It
   - Urban Legends

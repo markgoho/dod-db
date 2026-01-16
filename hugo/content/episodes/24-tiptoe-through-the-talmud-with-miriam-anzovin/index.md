@@ -22,10 +22,8 @@ tags:
   - Judah
   - Passover
   - Romans
-speakers:
+guests:
   - Miriam Anzovin
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

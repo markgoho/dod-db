@@ -50,10 +50,8 @@ tags:
   - Philistines
   - Samson
   - Torah
-speakers:
+guests:
   - Jacob Wright
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

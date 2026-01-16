@@ -48,9 +48,6 @@ tags:
   - Second Temple period
   - Shem
   - Univocality
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - It's the Law
   - Chapter and Verse

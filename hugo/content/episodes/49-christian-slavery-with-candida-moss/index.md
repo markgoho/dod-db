@@ -32,10 +32,8 @@ tags:
   - Martin Luther
   - Mary Magdalene
   - Second Temple period
-speakers:
+guests:
   - Candida Moss
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

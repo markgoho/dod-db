@@ -51,9 +51,6 @@ tags:
   - Numbers
   - Persia
   - Trinity
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

@@ -51,10 +51,8 @@ tags:
   - Syria
   - theophany
   - Trinity
-speakers:
+guests:
   - Francesca Stavrakopoulou
-  - Dan Beecher
-  - Dan McClellan
 draft: false
 ---
 

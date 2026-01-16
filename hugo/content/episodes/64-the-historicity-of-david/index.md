@@ -31,9 +31,6 @@ tags:
   - Isaac
   - King Josiah
   - Paul
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Chapter and Verse
   - History's Mysteries

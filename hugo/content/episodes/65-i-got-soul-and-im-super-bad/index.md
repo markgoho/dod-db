@@ -26,9 +26,6 @@ tags:
   - Judaism
   - Kings
   - New Testament
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Chapter and Verse
 segmentData:

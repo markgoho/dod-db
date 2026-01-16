@@ -37,9 +37,6 @@ tags:
   - Textus Receptus
   - theology
   - Univocality
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Textual Healing
 segmentData:

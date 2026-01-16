@@ -33,10 +33,8 @@ tags:
   - Judaism
   - King Saul
   - Romans
-speakers:
+guests:
   - Isaac Soon
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

@@ -39,10 +39,8 @@ tags:
   - Moses
   - Trinity
   - Virgin Birth
-speakers:
+guests:
   - Michael Kok
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

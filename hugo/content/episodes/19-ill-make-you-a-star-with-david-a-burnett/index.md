@@ -52,9 +52,7 @@ tags:
   - Sarah
   - Torah
   - Tower of Babel
-speakers:
-  - Dan McClellan
-  - Dan Beecher
+guests:
   - David A. Burnett
 draft: false
 ---

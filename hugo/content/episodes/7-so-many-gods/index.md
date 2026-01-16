@@ -60,9 +60,6 @@ tags:
   - King Josiah
   - Michael
   - Philistines
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Chapter and Verse
   - What Does That Mean?

@@ -34,9 +34,6 @@ tags:
   - King James Version
   - Paul
   - Septuagint
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Conspiracy Watch
   - Opportunities for Growth

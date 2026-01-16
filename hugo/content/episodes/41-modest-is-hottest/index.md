@@ -43,9 +43,6 @@ tags:
   - Judaism
   - New Testament
   - Romans
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Chapter and Verse
   - Your Patriarchy and You

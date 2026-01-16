@@ -40,9 +40,6 @@ tags:
   - Sarah
   - Septuagint
   - Syria
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - McClellan 911
   - Women in the Bible

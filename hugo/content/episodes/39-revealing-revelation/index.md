@@ -54,9 +54,6 @@ tags:
   - Septuagint
   - textual criticism
   - Ugarit
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Chapter and Verse
 segmentData:

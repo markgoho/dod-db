@@ -43,9 +43,6 @@ tags:
   - Numbers
   - Samuel
   - Ten Commandments
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Who's That?
   - What Does That Mean?

@@ -52,9 +52,6 @@ tags:
   - Mary Magdalene
   - Numbers
   - theology
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Bible vs Bible
   - Chapter and Verse

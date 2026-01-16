@@ -42,9 +42,6 @@ tags:
   - Satan
   - theology
   - Univocality
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Ex Eventu
   - What Does That Mean?

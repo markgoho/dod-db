@@ -60,9 +60,6 @@ tags:
   - Moabites
   - Psalm
   - Zechariah
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Chapter and Verse
   - Could it be Satan?

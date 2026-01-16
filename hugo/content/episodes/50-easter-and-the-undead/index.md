@@ -46,9 +46,6 @@ tags:
   - Herod the Great
   - Israel
   - Peter
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Chapter and Verse
 segmentData:

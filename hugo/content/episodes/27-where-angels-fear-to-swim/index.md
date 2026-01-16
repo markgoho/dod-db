@@ -45,9 +45,6 @@ tags:
   - Septuagint
   - Seth
   - Sodom
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - All Right, Let's See It
   - Chapter and Verse

@@ -34,9 +34,6 @@ tags:
   - Kings
   - theology
   - Ugarit
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Bible Heroes?
 segmentData:

@@ -50,9 +50,6 @@ tags:
   - theophany
   - Tower of Babel
   - Trinity
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - What Does That Mean?
 segmentData:

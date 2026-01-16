@@ -24,9 +24,6 @@ tags:
   - Satan
   - Ten Commandments
   - theology
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Chapter and Verse
 segmentData:

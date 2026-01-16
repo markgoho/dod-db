@@ -51,9 +51,6 @@ tags:
   - Samaria
   - Satan
   - Sodom
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Chapter and Verse
   - Conspiracy Watch

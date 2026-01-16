@@ -49,10 +49,8 @@ tags:
   - resurrection
   - Romans
   - Tower of Babel
-speakers:
-  - Dan McClellan
+guests:
   - David Burnett
-  - Dan Beecher
 draft: false
 ---
 

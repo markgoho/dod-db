@@ -28,9 +28,6 @@ tags:
   - Paul
   - Southern Baptist Convention
   - Univocality
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

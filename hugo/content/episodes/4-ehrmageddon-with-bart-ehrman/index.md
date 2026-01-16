@@ -47,9 +47,7 @@ tags:
   - Univocality
   - YHWH
   - Zechariah
-speakers:
-  - Dan Beecher
-  - Dan McClellan
+guests:
   - Bart Ehrman
 draft: false
 ---

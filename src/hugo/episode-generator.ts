@@ -269,7 +269,7 @@ export function transformToShortcodes(content: string): string {
  */
 export function generateFrontmatter(video: ProcessedVideo, cleanTitle: string): string {
 	const tags = video.tags?.map((t) => t.tag) ?? [];
-	const speakers = video.speakers ?? [];
+	const guests = getGuestSpeakers(video.speakers);
 	const { segments, segmentData } = formatSegmentsForFrontmatter(video.segments);
 
 	const lines: string[] = [
@@ -291,9 +291,9 @@ export function generateFrontmatter(video: ProcessedVideo, cleanTitle: string): 
 		lines.push('tags:', ...tags.map((tag) => `  - ${tag}`));
 	}
 
-	// Speakers as YAML array
-	if (speakers.length > 0) {
-		lines.push('speakers:', ...speakers.map((speaker) => `  - ${speaker}`));
+	// Guests as YAML array (non-host speakers)
+	if (guests.length > 0) {
+		lines.push('guests:', ...guests.map((guest) => `  - ${guest}`));
 	}
 
 	// Segments taxonomy (unique segment names for /segments/ pages)

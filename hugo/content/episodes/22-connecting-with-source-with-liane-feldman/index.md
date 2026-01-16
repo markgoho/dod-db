@@ -37,9 +37,7 @@ tags:
   - Mesopotamian
   - Noah
   - Psalm
-speakers:
-  - Dan Beecher
-  - Dan McClellan
+guests:
   - Liane Feldman
 draft: false
 ---

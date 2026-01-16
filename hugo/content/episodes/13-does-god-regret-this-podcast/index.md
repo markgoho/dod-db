@@ -42,9 +42,6 @@ tags:
   - monotheism
   - New Testament
   - Samuel
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Archaeology of Israel
   - All Right, Let's See It

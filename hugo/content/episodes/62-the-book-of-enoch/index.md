@@ -63,9 +63,6 @@ tags:
   - Psalm
   - Syria
   - theology
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Left Behind
 segmentData:

@@ -25,14 +25,7 @@
   <div class="segment-episodes">
     <div class="episodes-grid">
       {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-        {{ $guests := slice }}
-        {{ if .Params.speakers }}
-          {{ range .Params.speakers }}
-            {{ if and (ne . "Dan McClellan") (ne . "Dan Beecher") }}
-              {{ $guests = $guests | append . }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
+        {{ $guests := .Params.guests | default slice }}
         <article class="episode-card">
           <a href="{{ .RelPermalink }}" class="episode-card__link">
             <div class="episode-card__number">{{ .Params.episodeNumber }}</div>

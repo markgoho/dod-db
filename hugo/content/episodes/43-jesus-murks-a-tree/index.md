@@ -41,9 +41,6 @@ tags:
   - Passover
   - Peter
   - theophany
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Chapter and Verse
   - What Does That Mean?

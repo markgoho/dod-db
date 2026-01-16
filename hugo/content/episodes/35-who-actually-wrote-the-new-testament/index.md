@@ -40,9 +40,6 @@ tags:
   - Ishmael
   - King James Version
   - Septuagint
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

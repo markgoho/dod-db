@@ -41,9 +41,6 @@ tags:
   - Ten Commandments
   - textual criticism
   - theology
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - That's History
   - Know Your Bible

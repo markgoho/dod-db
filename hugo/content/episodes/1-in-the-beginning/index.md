@@ -51,9 +51,6 @@ tags:
   - Numbers
   - source criticism
   - Syria
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Chapter and Verse
   - What Does That Mean?

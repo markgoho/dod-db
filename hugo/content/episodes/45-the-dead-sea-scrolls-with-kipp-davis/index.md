@@ -71,10 +71,8 @@ tags:
   - Second Temple period
   - textual criticism
   - Ugarit
-speakers:
-  - Dan McClellan
+guests:
   - Kipp Davis
-  - Dan Beecher
 draft: false
 ---
 

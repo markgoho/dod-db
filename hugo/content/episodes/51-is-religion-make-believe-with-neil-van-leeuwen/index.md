@@ -12,10 +12,8 @@ tags:
   - Dead Sea Scrolls
   - Garden of Eden
   - Jesus
-speakers:
+guests:
   - Neil Van Leeuwen
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

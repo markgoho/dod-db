@@ -64,9 +64,6 @@ tags:
   - Sarah
   - Septuagint
   - Seth
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Getting Angelic
   - Getting Demonic

@@ -46,10 +46,8 @@ tags:
   - Samuel
   - Talmud
   - Torah
-speakers:
-  - Dan McClellan
+guests:
   - James McGrath
-  - Dan Beecher
 draft: false
 ---
 

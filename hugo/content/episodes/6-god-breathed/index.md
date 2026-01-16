@@ -53,9 +53,6 @@ tags:
   - Psalm
   - Trinity
   - William Tyndale
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - What Does That Mean?
   - Chapter and Verse

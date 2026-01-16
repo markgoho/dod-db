@@ -42,9 +42,6 @@ tags:
   - Psalm
   - Saint Titus
   - theology
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - Chapter and Verse
   - Nature of God

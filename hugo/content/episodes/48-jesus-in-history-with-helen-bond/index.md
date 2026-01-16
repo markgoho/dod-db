@@ -48,10 +48,8 @@ tags:
   - Pliny the Younger
   - Septuagint
   - theology
-speakers:
+guests:
   - Helen Bond
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

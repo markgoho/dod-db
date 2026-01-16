@@ -46,10 +46,8 @@ tags:
   - Psalm
   - Syria
   - Ugarit
-speakers:
+guests:
   - David Carr
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

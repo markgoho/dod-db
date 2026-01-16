@@ -50,10 +50,8 @@ tags:
   - Paul
   - Peter
   - Satan
-speakers:
-  - Dan Beecher
+guests:
   - Aaron Adair
-  - Dan McClellan
 draft: false
 ---
 

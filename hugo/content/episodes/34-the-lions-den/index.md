@@ -50,9 +50,6 @@ tags:
   - Qumran
   - Rapture
   - Syria
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 

@@ -15,14 +15,7 @@
 
   <h1 class="episode-single-title">{{ .Title }}</h1>
 
-  {{ $guests := slice }}
-  {{ if .Params.speakers }}
-    {{ range .Params.speakers }}
-      {{ if and (ne . "Dan McClellan") (ne . "Dan Beecher") }}
-        {{ $guests = $guests | append . }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
+  {{ $guests := .Params.guests | default slice }}
 
   {{ if gt (len $guests) 0 }}
     <div class="episode-single-guest">

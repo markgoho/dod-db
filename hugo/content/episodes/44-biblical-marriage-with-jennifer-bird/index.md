@@ -29,10 +29,8 @@ tags:
   - Israel
   - Ten Commandments
   - YHWH
-speakers:
-  - Dan McClellan
+guests:
   - Jennifer Bird
-  - Dan Beecher
 draft: false
 ---
 

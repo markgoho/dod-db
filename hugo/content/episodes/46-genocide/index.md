@@ -58,9 +58,6 @@ tags:
   - Samuel
   - Septuagint
   - Univocality
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 segments:
   - Chapter and Verse
 segmentData:

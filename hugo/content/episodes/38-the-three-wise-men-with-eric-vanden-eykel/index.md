@@ -39,9 +39,7 @@ tags:
   - Second Temple period
   - Septuagint
   - theology
-speakers:
-  - Dan Beecher
-  - Dan McClellan
+guests:
   - Eric Vanden Eykel
 draft: false
 ---

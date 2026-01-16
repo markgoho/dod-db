@@ -297,7 +297,7 @@
   }
 
   @media (min-width: 60rem) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
   }
 }
@@ -354,13 +354,6 @@
     }
   }
 
-  @media (min-width: 60rem) {
-    &--primary {
-      grid-row: span 2;
-      align-content: center;
-    }
-  }
-
   // Tertiary variant with teal accent for segments
   &--tertiary {
     border-color: var(--teal-300);
@@ -395,6 +388,43 @@
 
     .feature-card__arrow {
       color: var(--teal-500);
+    }
+  }
+
+  // Quaternary variant with blue accent for guests
+  &--quaternary {
+    border-color: var(--blue-300);
+
+    &::before {
+      background: linear-gradient(
+        135deg,
+        transparent 0%,
+        transparent 50%,
+        var(--blue-100) 50%,
+        var(--blue-100) 100%
+      );
+    }
+
+    &:hover {
+      border-color: var(--blue-400);
+
+      &::before {
+        background: linear-gradient(
+          135deg,
+          transparent 0%,
+          transparent 50%,
+          var(--blue-300) 50%,
+          var(--blue-300) 100%
+        );
+      }
+    }
+
+    .feature-card__decoration {
+      border-color: var(--blue-400);
+    }
+
+    .feature-card__arrow {
+      color: var(--blue-500);
     }
   }
 }

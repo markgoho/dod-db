@@ -45,6 +45,10 @@
         <div class="stat-card__number">{{ len .Site.Taxonomies.segments }}</div>
         <div class="stat-card__label">Segments</div>
       </div>
+      <div class="stat-card">
+        <div class="stat-card__number">{{ len .Site.Taxonomies.guests }}</div>
+        <div class="stat-card__label">Guests</div>
+      </div>
     </div>
   </section>
   <section class="home-intro">
@@ -86,6 +90,17 @@
           <h2 class="feature-card__title">Browse by Segment</h2>
           <p class="feature-card__description">
             Explore recurring segments like Chapter and Verse, What Does That Mean?, and more.
+          </p>
+          <span class="feature-card__arrow">→</span>
+        </div>
+      </a>
+
+      <a href="/guests/" class="feature-card feature-card--quaternary">
+        <div class="feature-card__decoration"></div>
+        <div class="feature-card__content">
+          <h2 class="feature-card__title">Browse by Guest</h2>
+          <p class="feature-card__description">
+            Discover episodes featuring renowned scholars and experts in biblical studies.
           </p>
           <span class="feature-card__arrow">→</span>
         </div>

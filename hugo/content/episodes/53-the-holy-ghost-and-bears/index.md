@@ -35,9 +35,6 @@ tags:
   - Philo of Alexandria
   - Psalm
   - Samaria
-speakers:
-  - Dan Beecher
-  - Dan McClellan
 segments:
   - What Does That Mean?
   - Chapter and Verse

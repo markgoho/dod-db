@@ -39,9 +39,6 @@ tags:
   - Moses
   - Ritual Decalogue
   - Satan
-speakers:
-  - Dan McClellan
-  - Dan Beecher
 draft: false
 ---
 
