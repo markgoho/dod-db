@@ -37,6 +37,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - Conspiracy Watch
+  - Opportunities for Growth
+segmentData:
+  - type: conspiracy-watch
+    label: "Conspiracy Watch"
+    startSeconds: 163.175
+  - type: opportunities-for-growth
+    label: "Opportunities for Growth"
+    startSeconds: 1990.792
 draft: false
 ---
 

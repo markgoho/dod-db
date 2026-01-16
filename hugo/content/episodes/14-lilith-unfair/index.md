@@ -46,6 +46,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - Who's That?
+  - What Does That Mean?
+segmentData:
+  - type: whos-that
+    label: "Who's That?"
+    startSeconds: 166
+  - type: what-does-that-mean
+    label: "What Does That Mean?"
+    startSeconds: 1640
 draft: false
 ---
 

@@ -17,6 +17,7 @@ export type SegmentType =
   | 'is-it-canon'
   | 'its-the-law'
   | 'know-your-bible'
+  | 'left-behind'
   | 'main-content'
   | 'mcclellan-911'
   | 'nature-of-god'
@@ -50,6 +51,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'is-it-canon': 'Is it Canon?',
   'its-the-law': "It's the Law",
   'know-your-bible': 'Know Your Bible',
+  'left-behind': 'Left Behind',
   'main-content': 'Main Content',
   'mcclellan-911': 'McClellan 911',
   'nature-of-god': 'Nature of God',
@@ -85,6 +87,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'is-it-canon': '#14b8a6', // teal
   'its-the-law': '#059669', // emerald-600 (legal/authoritative green)
   'know-your-bible': '#10b981', // emerald-500
+  'left-behind': '#7dd3fc', // sky-300 (ethereal/rapture theme)
   'main-content': '#64748b', // slate
   'mcclellan-911': '#ec4899', // pink
   'nature-of-god': '#3b82f6', // blue-500 (divine/theological)
@@ -179,6 +182,11 @@ export const SEGMENT_PATTERNS: Record<
     /welcome to.*know your bible/i,
     /So on this edition of Know Your Bible, we're going to jump o/i,
   ],
+  'left-behind': [
+    /left behind/i,
+    /welcome to.*left behind/i,
+    /segment.*left behind/i,
+  ],
   'could-it-be-satan': [
     /could it be satan\??/i,
     /welcome to.*could it be satan/i,
@@ -245,6 +253,7 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
   'is-it-canon': 'Discussing what texts are included in biblical canons and why',
   'its-the-law': 'Examining biblical laws, commandments, and legal codes',
   'know-your-bible': 'Educational segment about biblical books, structure, and content',
+  'left-behind': 'Discussing rapture theology, end times beliefs, and the Left Behind cultural phenomenon',
   'main-content': 'Primary discussion topic of the episode',
   'mcclellan-911': 'Listener questions answered by Dan McClellan',
   'nature-of-god': 'Theological discussion about the nature and attributes of God',

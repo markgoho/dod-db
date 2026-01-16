@@ -10,6 +10,7 @@ tags:
   - Jesus
   - John the Baptist
   - Christianity
+  - Herod Antipas
   - Josephus
   - Mesopotamian
   - Essenes
@@ -19,6 +20,7 @@ tags:
   - Qumran
   - Book of Isaiah
   - Dead Sea Scrolls
+  - James McGrath
   - Judaism
   - angel
   - Book of Acts
@@ -33,6 +35,7 @@ tags:
   - biblical canon
   - Book of Revelation
   - circumcision
+  - Elizabeth
   - Genesis
   - Gospel of Matthew
   - Holy Spirit

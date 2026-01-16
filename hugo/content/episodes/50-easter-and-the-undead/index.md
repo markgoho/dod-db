@@ -42,12 +42,19 @@ tags:
   - Ezekiel
   - Hebrews
   - Helen Bond
+  - Herod Antipas
   - Herod the Great
   - Israel
   - Peter
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - Chapter and Verse
+segmentData:
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 231
 draft: false
 ---
 

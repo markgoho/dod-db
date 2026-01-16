@@ -33,6 +33,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - All Right, Let's See It
+  - Urban Legends
+segmentData:
+  - type: all-right-lets-see-it
+    label: "All Right, Let's See It"
+    startSeconds: 94
+  - type: urban-legends
+    label: "Urban Legends"
+    startSeconds: 1674.76
 draft: false
 ---
 

@@ -45,6 +45,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - Ex Eventu
+  - What Does That Mean?
+segmentData:
+  - type: ex-eventu
+    label: "Ex Eventu"
+    startSeconds: 104
+  - type: what-does-that-mean
+    label: "What Does That Mean?"
+    startSeconds: 1828
 draft: false
 ---
 

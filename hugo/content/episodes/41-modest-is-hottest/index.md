@@ -46,6 +46,16 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - Chapter and Verse
+  - Your Patriarchy and You
+segmentData:
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 134
+  - type: your-patriarchy-and-you
+    label: "Your Patriarchy and You"
+    startSeconds: 1782
 draft: false
 ---
 

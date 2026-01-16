@@ -21,8 +21,10 @@ import {
   loadProcessedVideos,
   saveProcessedVideos,
   updateVideoSegments,
+  getVideoById,
   type EpisodeSegment,
 } from '../storage/processed-videos.js';
+import { generateHugoEpisode } from '../pipeline/generate-hugo-episode.js';
 import { tagVocabulary, TAG_CATEGORIES } from '../config/tag-vocabulary.js';
 import { reprocessEpisodes } from '../pipeline/reprocess-episodes.js';
 import { addTagToEpisodes } from '../pipeline/add-tag-to-episodes.js';
@@ -887,6 +889,13 @@ const _server = Bun.serve({
         }
 
         await updateVideoSegments(videoId, body.segments);
+
+        // Regenerate Hugo episode page with updated segments
+        const video = await getVideoById(videoId);
+        if (video) {
+          await generateHugoEpisode(video);
+        }
+
         return jsonResponse({ success: true });
       } catch (error) {
         return jsonResponse(

@@ -45,6 +45,16 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - Archaeology of Israel
+  - All Right, Let's See It
+segmentData:
+  - type: archaeology-of-israel
+    label: "Archaeology of Israel"
+    startSeconds: 316
+  - type: all-right-lets-see-it
+    label: "All Right, Let's See It"
+    startSeconds: 2224.59
 draft: false
 ---
 

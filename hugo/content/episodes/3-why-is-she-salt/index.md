@@ -53,6 +53,12 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - What Does That Mean?
+segmentData:
+  - type: what-does-that-mean
+    label: "What Does That Mean?"
+    startSeconds: 75
 draft: false
 ---
 

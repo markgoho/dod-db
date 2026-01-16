@@ -59,6 +59,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - By the Numbers
+  - What Does That Mean?
+segmentData:
+  - type: by-the-numbers
+    label: "By the Numbers"
+    startSeconds: 78
+  - type: what-does-that-mean
+    label: "What Does That Mean?"
+    startSeconds: 1592
 draft: false
 ---
 

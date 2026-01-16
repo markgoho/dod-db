@@ -3,7 +3,7 @@
 // ============================================
 
 // Import episode card component
-@import 'episode-card';
+@use 'episode-card';
 
 main.container {
   max-width: 80rem;

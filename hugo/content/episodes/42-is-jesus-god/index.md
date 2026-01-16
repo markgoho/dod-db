@@ -44,6 +44,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - All Right, Let's See It
+  - What Does That Mean?
+segmentData:
+  - type: all-right-lets-see-it
+    label: "All Right, Let's See It"
+    startSeconds: 120.42
+  - type: what-does-that-mean
+    label: "What Does That Mean?"
+    startSeconds: 2371
 draft: false
 ---
 

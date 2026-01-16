@@ -55,6 +55,16 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - Bible vs Bible
+  - Chapter and Verse
+segmentData:
+  - type: bible-vs-bible
+    label: "Bible vs Bible"
+    startSeconds: 79
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 1431.483
 draft: false
 ---
 

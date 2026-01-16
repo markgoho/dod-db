@@ -39,21 +39,38 @@
   {{ end }}
 
   <div class="episode-layout">
-    {{/* Video Player */}}
-    {{ with .Params.videoId }}
-    <div class="video-player" data-video-id="{{ . }}">
-      <a href="https://www.youtube.com/watch?v={{ . }}"
-         target="_blank"
-         rel="noopener">
-        <img
-          src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
-          alt="Watch {{ $.Title }} on YouTube"
-          loading="lazy"
-          onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'"
-        />
-      </a>
+    {{/* Sticky sidebar with video + segments */}}
+    <div class="episode-sidebar">
+      {{/* Video Player */}}
+      {{ with .Params.videoId }}
+      <div class="video-player" data-video-id="{{ . }}">
+        <a href="https://www.youtube.com/watch?v={{ . }}"
+           target="_blank"
+           rel="noopener">
+          <img
+            src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
+            alt="Watch {{ $.Title }} on YouTube"
+            loading="lazy"
+            onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'"
+          />
+        </a>
+      </div>
+      {{ end }}
+
+      {{/* Segments */}}
+      {{ if .Params.segmentData }}
+      <div class="episode-segments">
+        <h2 class="episode-segments__title">Segments</h2>
+        <div class="episode-segments__list">
+          {{ range .Params.segmentData }}
+          <button class="segment-chip" data-start="{{ .startSeconds }}" type="button">
+            {{ .label }}
+          </button>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
     </div>
-    {{ end }}
 
     {{/* Transcript */}}
     <div class="episode-transcript">

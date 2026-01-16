@@ -382,6 +382,28 @@ function handleFacadeClick(event: Event, container: HTMLElement): void {
 }
 
 /**
+ * Handle click on segment chip.
+ */
+function handleSegmentClick(event: Event): void {
+	const button = event.currentTarget as HTMLButtonElement;
+	const seconds = Number.parseFloat(button.dataset['start'] ?? '0');
+
+	const container = document.querySelector<HTMLElement>('.video-player');
+	if (!container) {
+		return;
+	}
+
+	if (state.player) {
+		seekTo(seconds);
+	} else {
+		// Load player and seek to segment
+		loadYouTubeAPI().then(() => {
+			createPlayer(container, seconds);
+		});
+	}
+}
+
+/**
  * Handle auto-scroll toggle change.
  */
 function handleToggleChange(event: Event): void {
@@ -445,6 +467,12 @@ function init(): void {
 	// Handle transcript line clicks
 	for (const line of state.lines) {
 		line.element.addEventListener('click', handleLineClick);
+	}
+
+	// Handle segment chip clicks
+	const segmentChips = document.querySelectorAll<HTMLButtonElement>('.segment-chip');
+	for (const chip of segmentChips) {
+		chip.addEventListener('click', handleSegmentClick);
 	}
 
 	// Detect manual scroll in transcript

@@ -63,6 +63,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - Chapter and Verse
+  - Could it be Satan?
+segmentData:
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 132
+  - type: could-it-be-satan
+    label: "Could it be Satan?"
+    startSeconds: 1592
 draft: false
 ---
 

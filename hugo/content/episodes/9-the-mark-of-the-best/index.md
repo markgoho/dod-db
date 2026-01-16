@@ -37,6 +37,16 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - Conspiracy Watch
+  - What Does That Mean?
+segmentData:
+  - type: conspiracy-watch
+    label: "Conspiracy Watch"
+    startSeconds: 191
+  - type: what-does-that-mean
+    label: "What Does That Mean?"
+    startSeconds: 2120
 draft: false
 ---
 

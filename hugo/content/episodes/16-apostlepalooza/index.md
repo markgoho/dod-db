@@ -43,6 +43,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - McClellan 911
+  - Women in the Bible
+segmentData:
+  - type: mcclellan-911
+    label: "McClellan 911"
+    startSeconds: 122
+  - type: women-in-the-bible
+    label: "Women in the Bible"
+    startSeconds: 2449
 draft: false
 ---
 

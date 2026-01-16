@@ -28,6 +28,7 @@ tags:
   - Ham
   - Qumran
   - Hell
+  - James VanderKam
   - Japheth
   - Lamech
   - Satan
@@ -65,6 +66,12 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - Left Behind
+segmentData:
+  - type: left-behind
+    label: "Left Behind"
+    startSeconds: 84.388
 draft: false
 ---
 

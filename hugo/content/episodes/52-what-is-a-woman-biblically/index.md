@@ -39,6 +39,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - Bible vs Bible
+  - Taking Issue
+segmentData:
+  - type: bible-vs-bible
+    label: "Bible vs Bible"
+    startSeconds: 105.2
+  - type: taking-issue
+    label: "Taking Issue"
+    startSeconds: 1148.451
 draft: false
 ---
 

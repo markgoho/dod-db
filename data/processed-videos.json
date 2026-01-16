@@ -11752,15 +11752,22 @@
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:01:24.388]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
-        "type": "is-it-canon",
+        "type": "left-behind",
         "startTimestamp": "[00:01:24.388]",
-        "endTimestamp": "[00:56:04.221]",
-        "confidence": "auto",
+        "endTimestamp": "[00:55:11.000]",
+        "confidence": "verified",
         "detectionMethod": "llm"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:55:11.000]",
+        "endTimestamp": "[00:56:04.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ],
     "speakers": [

@@ -20,6 +20,7 @@ enableGitInfo = true
 
 [taxonomies]
   tag = "tags"
+  segment = "segments"
 
 # Disable RSS entirely
 [outputs]

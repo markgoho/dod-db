@@ -63,6 +63,16 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - Chapter and Verse
+  - What Does That Mean?
+segmentData:
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 109.28
+  - type: what-does-that-mean
+    label: "What Does That Mean?"
+    startSeconds: 2089
 draft: false
 ---
 

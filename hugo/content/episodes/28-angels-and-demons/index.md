@@ -67,6 +67,16 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - Getting Angelic
+  - Getting Demonic
+segmentData:
+  - type: getting-angelic
+    label: "Getting Angelic"
+    startSeconds: 77
+  - type: getting-demonic
+    label: "Getting Demonic"
+    startSeconds: 1900
 draft: false
 ---
 

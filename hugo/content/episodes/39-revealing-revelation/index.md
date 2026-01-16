@@ -57,6 +57,12 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - Chapter and Verse
+segmentData:
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 80
 draft: false
 ---
 

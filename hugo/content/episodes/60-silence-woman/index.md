@@ -40,6 +40,15 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - Textual Healing
+segmentData:
+  - type: textual-healing
+    label: "Textual Healing (1)"
+    startSeconds: 76.547
+  - type: textual-healing
+    label: "Textual Healing (2)"
+    startSeconds: 1606
 draft: false
 ---
 

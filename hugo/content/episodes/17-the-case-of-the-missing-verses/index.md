@@ -44,6 +44,16 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - That's History
+  - Know Your Bible
+segmentData:
+  - type: thats-history
+    label: "That's History"
+    startSeconds: 82
+  - type: know-your-bible
+    label: "Know Your Bible"
+    startSeconds: 2145
 draft: false
 ---
 

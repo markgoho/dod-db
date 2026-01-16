@@ -45,6 +45,16 @@ tags:
 speakers:
   - Dan Beecher
   - Dan McClellan
+segments:
+  - Chapter and Verse
+  - Nature of God
+segmentData:
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 134
+  - type: nature-of-god
+    label: "Nature of God"
+    startSeconds: 1955
 draft: false
 ---
 

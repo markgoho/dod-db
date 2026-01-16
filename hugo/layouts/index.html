@@ -41,6 +41,10 @@
         <div class="stat-card__number">{{ len .Site.Taxonomies.tags }}</div>
         <div class="stat-card__label">Topics</div>
       </div>
+      <div class="stat-card">
+        <div class="stat-card__number">{{ len .Site.Taxonomies.segments }}</div>
+        <div class="stat-card__label">Segments</div>
+      </div>
     </div>
   </section>
   <section class="home-intro">
@@ -71,6 +75,17 @@
           <h2 class="feature-card__title">Browse by Topic</h2>
           <p class="feature-card__description">
             Find episodes by biblical characters, places, theological concepts, and more.
+          </p>
+          <span class="feature-card__arrow">→</span>
+        </div>
+      </a>
+
+      <a href="/segments/" class="feature-card feature-card--tertiary">
+        <div class="feature-card__decoration"></div>
+        <div class="feature-card__content">
+          <h2 class="feature-card__title">Browse by Segment</h2>
+          <p class="feature-card__description">
+            Explore recurring segments like Chapter and Verse, What Does That Mean?, and more.
           </p>
           <span class="feature-card__arrow">→</span>
         </div>

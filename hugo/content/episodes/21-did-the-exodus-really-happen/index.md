@@ -47,6 +47,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - That's History
+  - Chapter and Verse
+segmentData:
+  - type: thats-history
+    label: "That's History"
+    startSeconds: 126
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 2010
 draft: false
 ---
 

@@ -54,6 +54,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - Chapter and Verse
+  - Conspiracy Watch
+segmentData:
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 240.085
+  - type: conspiracy-watch
+    label: "Conspiracy Watch"
+    startSeconds: 2649.158
 draft: false
 ---
 

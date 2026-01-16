@@ -51,6 +51,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - It's the Law
+  - Chapter and Verse
+segmentData:
+  - type: its-the-law
+    label: "It's the Law"
+    startSeconds: 57
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 2118
 draft: false
 ---
 

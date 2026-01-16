@@ -54,6 +54,16 @@ tags:
 speakers:
   - Dan McClellan
   - Dan Beecher
+segments:
+  - All Right, Let's See It
+  - Chapter and Verse
+segmentData:
+  - type: all-right-lets-see-it
+    label: "All Right, Let's See It"
+    startSeconds: 208.67
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 2170
 draft: false
 ---
 
