@@ -21,6 +21,13 @@ enableGitInfo = true
 [taxonomies]
   tag = "tags"
 
+# Disable RSS entirely
+[outputs]
+  home = ["html"]
+  section = ["html"]
+  taxonomy = ["html"]
+  term = ["html"]
+
 [permalinks]
   episodes = "/episodes/:contentbasename/"
 
