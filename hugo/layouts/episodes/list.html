@@ -1,17 +1,57 @@
-{{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ with .Content }}
-    <div class="section-description">{{ . }}</div>
-  {{ end }}
+{{ define "head-styles" }}
+  {{ $pageCSS := "scss/episode-list.scss" }}
+  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
+  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
 
-  <div class="episodes-list">
-    {{ range sort .Pages ".Params.episodeNumber" "desc" }}
+{{ define "main" }}
+  <div class="episodes-header">
+    <h1 class="episodes-header__title">{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="episodes-header__description">{{ . }}</div>
+    {{ end }}
+    <div class="episodes-header__count">
+      <span class="episodes-header__count-number">{{ len .Pages }}</span>
+      <span class="episodes-header__count-label">Episodes</span>
+    </div>
+  </div>
+
+  <div class="episodes-grid">
+    {{ range $index, $page := sort .Pages ".Params.episodeNumber" "desc" }}
+      {{ $guests := slice }}
+      {{ if .Params.speakers }}
+        {{ range .Params.speakers }}
+          {{ if and (ne . "Dan McClellan") (ne . "Dan Beecher") }}
+            {{ $guests = $guests | append . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
       <article class="episode-card">
-        <a href="{{ .RelPermalink }}">
-          <h2>Episode {{ .Params.episodeNumber }}: {{ .Title }}</h2>
-          <time datetime="{{ .Date.Format "2006-01-02" }}">
-            {{ .Date.Format "January 2, 2006" }}
-          </time>
+        <a href="{{ .RelPermalink }}" class="episode-card__link">
+          <div class="episode-card__number">{{ .Params.episodeNumber }}</div>
+          <div class="episode-card__content">
+            <h2 class="episode-card__title">{{ .Title }}</h2>
+            {{ if gt (len $guests) 0 }}
+              <div class="episode-card__guest">
+                with {{ index $guests 0 }}
+              </div>
+            {{ end }}
+            <time class="episode-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "January 2, 2006" }}
+            </time>
+            {{ if .Params.tags }}
+              <div class="episode-card__tags">
+                {{ range first 3 .Params.tags }}
+                  <span class="episode-card__tag">{{ . }}</span>
+                {{ end }}
+                {{ if gt (len .Params.tags) 3 }}
+                  <span class="episode-card__tag-more">+{{ sub (len .Params.tags) 3 }}</span>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+          <div class="episode-card__arrow">→</div>
         </a>
       </article>
     {{ end }}

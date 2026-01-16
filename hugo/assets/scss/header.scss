@@ -23,6 +23,12 @@
   margin: 0;
 }
 
+.navbar__logo-img {
+  height: clamp(2.5rem, 4vw, 3.5rem);
+  width: auto;
+  object-fit: contain;
+}
+
 .navbar__nav {
   grid-area: nav;
   display: flex;

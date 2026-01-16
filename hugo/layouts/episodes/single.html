@@ -1,53 +1,75 @@
+{{ define "head-styles" }}
+  {{ $pageCSS := "scss/episode-single.scss" }}
+  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
+  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
 {{ define "main" }}
-  <article class="episode">
-    <header class="episode-header">
-      <h1>Episode {{ .Params.episodeNumber }}: {{ .Title }}</h1>
-      <time datetime="{{ .Date.Format "2006-01-02" }}">
-        {{ .Date.Format "January 2, 2006" }}
-      </time>
+  <div class="episode-single-header">
+    <span class="episode-single-number">Episode {{ .Params.episodeNumber }}</span>
+    <time class="episode-single-date" datetime="{{ .Date.Format "2006-01-02" }}">
+      {{ .Date.Format "January 2, 2006" }}
+    </time>
+  </div>
 
-      {{ with .Params.speakers }}
-        <p class="episode-speakers">
-          {{ delimit . ", " }}
-        </p>
+  <h1 class="episode-single-title">{{ .Title }}</h1>
+
+  {{ $guests := slice }}
+  {{ if .Params.speakers }}
+    {{ range .Params.speakers }}
+      {{ if and (ne . "Dan McClellan") (ne . "Dan Beecher") }}
+        {{ $guests = $guests | append . }}
       {{ end }}
-    </header>
+    {{ end }}
+  {{ end }}
 
-    <div class="episode-layout">
-      {{/* Video Player */}}
-      {{ with .Params.videoId }}
-      <aside class="video-player" data-video-id="{{ . }}">
-        <a href="https://www.youtube.com/watch?v={{ . }}"
-           class="video-facade"
-           target="_blank"
-           rel="noopener">
-          <img
-            src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
-            alt="Watch {{ $.Title }} on YouTube"
-            loading="lazy"
-            onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'"
-          />
-          <span class="video-facade__play" aria-hidden="true"></span>
-        </a>
-      </aside>
-      {{ end }}
-
-      {{/* Transcript */}}
-      <section class="episode-transcript">
-        <h2>Transcript</h2>
-        <div class="transcript-controls">
-          <label class="auto-scroll-toggle">
-            <input type="checkbox" id="auto-scroll-checkbox" checked>
-            <span class="toggle-switch"></span>
-            <span class="toggle-label">Auto-scroll</span>
-          </label>
-        </div>
-        <div class="transcript-content">
-          {{ .Content }}
-        </div>
-      </section>
+  {{ if gt (len $guests) 0 }}
+    <div class="episode-single-guest">
+      with {{ delimit $guests ", " }}
     </div>
-  </article>
+  {{ end }}
+
+  {{ if .Params.tags }}
+    <div class="episode-single-tags">
+      {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}/" class="episode-single-tag">{{ . }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <div class="episode-layout">
+    {{/* Video Player */}}
+    {{ with .Params.videoId }}
+    <div class="video-player" data-video-id="{{ . }}">
+      <a href="https://www.youtube.com/watch?v={{ . }}"
+         target="_blank"
+         rel="noopener">
+        <img
+          src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
+          alt="Watch {{ $.Title }} on YouTube"
+          loading="lazy"
+          onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'"
+        />
+      </a>
+    </div>
+    {{ end }}
+
+    {{/* Transcript */}}
+    <div class="episode-transcript">
+      <div class="transcript-header">
+        <h2 class="transcript-header-title">Transcript</h2>
+        <label class="auto-scroll-toggle">
+          <input type="checkbox" id="auto-scroll-checkbox" checked>
+          <span class="toggle-switch"></span>
+          <span class="toggle-label">Auto-scroll</span>
+        </label>
+      </div>
+      <div class="transcript-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
 {{ end }}
 
 {{ define "footer-scripts" }}
