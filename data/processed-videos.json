@@ -192,13 +192,13 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:01:14.000]",
+        "endTimestamp": "[00:01:29.000]",
         "confidence": "verified",
         "detectionMethod": "pattern"
       },
       {
         "type": "chapter-and-verse",
-        "startTimestamp": "[00:01:14.040]",
+        "startTimestamp": "[00:01:29.000]",
         "endTimestamp": "[00:40:43.020]",
         "confidence": "verified",
         "detectionMethod": "pattern"
@@ -206,7 +206,7 @@
       {
         "type": "what-does-that-mean",
         "startTimestamp": "[00:40:43.020]",
-        "endTimestamp": null,
+        "endTimestamp": "[01:07:01.000]",
         "confidence": "verified",
         "detectionMethod": "pattern"
       }
@@ -4430,6 +4430,10 @@
       {
         "tag": "New Testament",
         "mentions": 6
+      },
+      {
+        "tag": "Elizabeth",
+        "mentions": 5
       },
       {
         "tag": "Hebrew Bible",
@@ -9435,6 +9439,10 @@
         "mentions": 1
       },
       {
+        "tag": "Herod Antipas",
+        "mentions": 1
+      },
+      {
         "tag": "Herod the Great",
         "mentions": 1
       },
@@ -11071,6 +11079,10 @@
         "mentions": 1
       },
       {
+        "tag": "Herod Antipas",
+        "mentions": 1
+      },
+      {
         "tag": "Herod the Great",
         "mentions": 1
       },
@@ -11293,6 +11305,462 @@
         "endTimestamp": "[00:54:30.000]",
         "confidence": "verified",
         "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
+    ]
+  },
+  {
+    "videoId": "DnsTYWOw5r0",
+    "title": "Episode 61 (June 3, 2024), \"Christmaker!\" with James McGrath",
+    "publishedAt": "2024-06-03T00:00:00Z",
+    "processedAt": "2026-01-16T04:58:02.740Z",
+    "transcriptPath": "data/transcripts/2024-06-03-episode-61-june-3-2024-christmaker-with-james-mcgrath.txt",
+    "episodeNumber": 61,
+    "tags": [
+      {
+        "tag": "Gospel of John",
+        "mentions": 84
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 46
+      },
+      {
+        "tag": "John the Baptist",
+        "mentions": 24
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 11
+      },
+      {
+        "tag": "Herod Antipas",
+        "mentions": 10
+      },
+      {
+        "tag": "Josephus",
+        "mentions": 8
+      },
+      {
+        "tag": "Mesopotamian",
+        "mentions": 7
+      },
+      {
+        "tag": "Essenes",
+        "mentions": 6
+      },
+      {
+        "tag": "Gospel of Mark",
+        "mentions": 6
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 6
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 4
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 4
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 3
+      },
+      {
+        "tag": "James McGrath",
+        "mentions": 3
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 3
+      },
+      {
+        "tag": "angel",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Acts",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of Thomas",
+        "mentions": 2
+      },
+      {
+        "tag": "Islam",
+        "mentions": 2
+      },
+      {
+        "tag": "Kings",
+        "mentions": 2
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 2
+      },
+      {
+        "tag": "Samson",
+        "mentions": 2
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "circumcision",
+        "mentions": 1
+      },
+      {
+        "tag": "Elizabeth",
+        "mentions": 1
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "Israel",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Judges",
+        "mentions": 1
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Talmud",
+        "mentions": 1
+      },
+      {
+        "tag": "Torah",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:58.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:58.000]",
+        "endTimestamp": "[00:59:42.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:59:42.000]",
+        "endTimestamp": "[01:01:04.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "James McGrath",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "zghJE1-ZCQw",
+    "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\"",
+    "publishedAt": "2024-06-10T00:00:00Z",
+    "processedAt": "2026-01-16T05:12:10.389Z",
+    "transcriptPath": "data/transcripts/2024-06-10-episode-62-june-10-2024-the-book-of-enoch.txt",
+    "episodeNumber": 62,
+    "tags": [
+      {
+        "tag": "Enoch",
+        "mentions": 49
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 38
+      },
+      {
+        "tag": "angel",
+        "mentions": 27
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 16
+      },
+      {
+        "tag": "Noah",
+        "mentions": 14
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 13
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 9
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 9
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 9
+      },
+      {
+        "tag": "Methuselah",
+        "mentions": 8
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 8
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 8
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 7
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 7
+      },
+      {
+        "tag": "Adam",
+        "mentions": 6
+      },
+      {
+        "tag": "Cain",
+        "mentions": 6
+      },
+      {
+        "tag": "Jude",
+        "mentions": 6
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 5
+      },
+      {
+        "tag": "Flood",
+        "mentions": 5
+      },
+      {
+        "tag": "Ham",
+        "mentions": 5
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 5
+      },
+      {
+        "tag": "Hell",
+        "mentions": 4
+      },
+      {
+        "tag": "James VanderKam",
+        "mentions": 4
+      },
+      {
+        "tag": "Japheth",
+        "mentions": 4
+      },
+      {
+        "tag": "Lamech",
+        "mentions": 4
+      },
+      {
+        "tag": "Satan",
+        "mentions": 4
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 3
+      },
+      {
+        "tag": "gods",
+        "mentions": 3
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 3
+      },
+      {
+        "tag": "Judeans",
+        "mentions": 3
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 3
+      },
+      {
+        "tag": "Seth",
+        "mentions": 3
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 2
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "Jared",
+        "mentions": 2
+      },
+      {
+        "tag": "Origen",
+        "mentions": 2
+      },
+      {
+        "tag": "Shem",
+        "mentions": 2
+      },
+      {
+        "tag": "2 Corinthians",
+        "mentions": 1
+      },
+      {
+        "tag": "2 Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Africa",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "circumcision",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Eve",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Nephilim",
+        "mentions": 1
+      },
+      {
+        "tag": "Numbers",
+        "mentions": 1
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 1
+      },
+      {
+        "tag": "Syria",
+        "mentions": 1
+      },
+      {
+        "tag": "theology",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:24.388]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "is-it-canon",
+        "startTimestamp": "[00:01:24.388]",
+        "endTimestamp": "[00:56:04.221]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
       }
     ],
     "speakers": [

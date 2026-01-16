@@ -417,6 +417,18 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'nrsvue', variations: ['nrsv'], category: 'literature', description: 'New Revised Standard Version Updated Edition - a recent revision of the NRSV translation of the Bible', status: 'proposed' },
 	{ canonical: 'Southern Baptist Convention', variations: ['southern baptist'], category: 'religion', status: 'accepted' },
 	{ canonical: 'numbers 5', variations: [], category: 'literature', description: 'A passage in the book of Numbers that describes the ordeal of bitter waters for suspected adultery.', status: 'proposed' },
+	{ canonical: 'James McGrath', variations: ['McGrath', 'James F. McGrath'], category: 'person', llmVerify: true, description: 'Professor of New Testament at Butler University, scholar of John the Baptist and the Mandaeans', status: 'accepted' },
+	{ canonical: 'baptism', variations: ['baptized'], category: 'theology', description: 'A religious ritual involving immersion in water, symbolizing purification or initiation', status: 'proposed', addedInEpisode: 61 },
+	{ canonical: 'Elizabeth', variations: [], category: 'character', llmVerify: true, description: 'Mother of John the Baptist in the Gospel of Luke, wife of Zechariah', status: 'accepted' },
+	{ canonical: 'mandaeans', variations: ['mandaean'], category: 'religion', description: 'A Gnostic religious group that reveres John the Baptist, originating in Mesopotamia', status: 'proposed', addedInEpisode: 61 },
+	{ canonical: 'gnostic', variations: ['gnosticism'], category: 'religion', description: 'A religious movement emphasizing personal spiritual knowledge and a dualistic worldview', status: 'proposed', addedInEpisode: 61 },
+	{ canonical: 'Herod Antipas', variations: ['Herod'], category: 'person', llmVerify: true, description: 'The son of Herod the Great, tetrarch of Galilee and Perea, who ordered the execution of John the Baptist', status: 'accepted' },
+	{ canonical: 'herodias', variations: [], category: 'person', description: 'Wife of Herod Antipas who requested the beheading of John the Baptist', status: 'proposed', addedInEpisode: 61 },
+	{ canonical: 'nag hammadi', variations: [], category: 'place', description: 'The location in upper Egypt where a collection of early Christian Gnostic texts were discovered in 1945', status: 'proposed', addedInEpisode: 61 },
+	{ canonical: 'epistemology', variations: [], category: 'scholarship', description: 'The branch of philosophy concerned with the theory of knowledge.', status: 'proposed', addedInEpisode: 61 },
+	{ canonical: 'asael', variations: ['Azael'], category: 'character', description: 'A fallen angel mentioned in the Book of Enoch', status: 'proposed', addedInEpisode: 62 },
+	{ canonical: 'nickelsburg', variations: ['George Nickelsburg'], category: 'person', description: 'George Nickelsburg, scholar known for his work on 1 Enoch', status: 'proposed', addedInEpisode: 62 },
+	{ canonical: 'James VanderKam', variations: ['VanderKam'], category: 'person', llmVerify: true, description: 'James VanderKam, scholar known for his work on the Dead Sea Scrolls and 1 Enoch', status: 'accepted' },
 ];
 
 /**

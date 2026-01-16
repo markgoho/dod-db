@@ -1,4 +1,5 @@
 import { AssemblyAI, type TranscribeParams } from 'assemblyai';
+import { MAX_DURATION_MS } from '../utils/collapse-transcript.js';
 
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY!,
@@ -48,19 +49,52 @@ export async function transcribeAudio(audioFilePath: string): Promise<string> {
     const sentencesResponse = await client.transcripts.sentences(transcript.id);
 
     if (sentencesResponse.sentences && sentencesResponse.sentences.length > 0) {
-      const transcriptLines: string[] = [];
+      // Group consecutive sentences by speaker to reduce line count
+      // Only emit a timestamp when the speaker changes
+      const groups: Array<{ timestamp: number; speaker: string; texts: string[] }> = [];
+      let currentGroup: { timestamp: number; speaker: string; texts: string[] } | undefined;
 
       for (const sentence of sentencesResponse.sentences) {
         // Use first word's timestamp for accuracy (sentence.start can be early due to pause detection)
         const firstWord = sentence.words?.[0];
         const timestamp = firstWord?.start ?? sentence.start;
-        const formattedTime = formatTimestamp(timestamp);
         const speakerLabel = sentence.speaker
           ? `Speaker ${sentence.speaker}`
           : 'Unknown';
-        const line = `${formattedTime} ${speakerLabel}: ${sentence.text}`;
-        transcriptLines.push(line);
+
+        // Check if we can append to the current group
+        const canAppend =
+          currentGroup !== undefined &&
+          currentGroup.speaker === speakerLabel &&
+          timestamp - currentGroup.timestamp <= MAX_DURATION_MS;
+
+        if (canAppend && currentGroup !== undefined) {
+          // Same speaker within time limit - append text to current group
+          currentGroup.texts.push(sentence.text);
+        } else {
+          // New speaker OR exceeded time limit - save current group and start a new one
+          if (currentGroup) {
+            groups.push(currentGroup);
+          }
+          currentGroup = {
+            timestamp,
+            speaker: speakerLabel,
+            texts: [sentence.text],
+          };
+        }
       }
+
+      // Don't forget the last group
+      if (currentGroup) {
+        groups.push(currentGroup);
+      }
+
+      // Format groups into transcript lines
+      const transcriptLines = groups.map((group) => {
+        const formattedTime = formatTimestamp(group.timestamp);
+        const text = group.texts.join(' ');
+        return `${formattedTime} ${group.speaker}: ${text}`;
+      });
 
       return transcriptLines.join('\n');
     }

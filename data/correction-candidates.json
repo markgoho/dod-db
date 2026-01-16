@@ -1888,11 +1888,12 @@
       "original": "first Enoch",
       "corrected": "First Enoch",
       "category": "capitalization",
-      "totalOccurrences": 4,
-      "episodeCount": 2,
+      "totalOccurrences": 9,
+      "episodeCount": 3,
       "episodes": [
         "7oB6UrrFn6c",
-        "p8CjJR4yhfk"
+        "p8CjJR4yhfk",
+        "zghJE1-ZCQw"
       ],
       "examples": [
         "\"book of first Enoch, for instance,\"",
@@ -1914,9 +1915,9 @@
         "7oB6UrrFn6c",
         "p8CjJR4yhfk"
       ],
-      "confidence": 40,
+      "confidence": 65,
       "firstSeen": "2026-01-11T19:08:48.714Z",
-      "lastSeen": "2026-01-11T21:20:04.094Z",
+      "lastSeen": "2026-01-16T05:12:44.171Z",
       "status": "approved",
       "reviewedAt": "2026-01-13T03:11:40.636Z",
       "reviewedBy": "UI Review"
@@ -6566,7 +6567,191 @@
       "firstSeen": "2026-01-15T04:35:40.547Z",
       "lastSeen": "2026-01-15T14:19:21.207Z",
       "status": "pending"
+    },
+    "Nazarite→Nazirite": {
+      "original": "Nazarite",
+      "corrected": "Nazirite",
+      "category": "spelling",
+      "totalOccurrences": 5,
+      "episodeCount": 1,
+      "episodes": [
+        "DnsTYWOw5r0"
+      ],
+      "examples": [
+        "\"being a Nazarite. Right. Someone\"",
+        "\"of the Nazarite. Right. So\"",
+        "\"So the Nazarite keeps their\""
+      ],
+      "correctedExamples": [
+        "\"being a Nazirite. Right. Someone\"",
+        "\"of the Nazirite. Right. So\"",
+        "\"So the Nazirite keeps their\""
+      ],
+      "timestamps": [
+        "00:20:35.840",
+        "00:22:25.590",
+        "00:22:25.590"
+      ],
+      "episodeIds": [
+        "DnsTYWOw5r0",
+        "DnsTYWOw5r0",
+        "DnsTYWOw5r0"
+      ],
+      "confidence": 25,
+      "firstSeen": "2026-01-16T04:58:37.376Z",
+      "lastSeen": "2026-01-16T04:58:37.376Z",
+      "status": "pending"
+    },
+    "Mandians→Mandaeans": {
+      "original": "Mandians",
+      "corrected": "Mandaeans",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "DnsTYWOw5r0"
+      ],
+      "examples": [
+        "\"about the Mandians. Can you\"",
+        "\"of essentially, Mandians. Right. You\""
+      ],
+      "correctedExamples": [
+        "\"about the Mandaeans. Can you\"",
+        "\"of essentially, Mandaeans. Right. You\""
+      ],
+      "timestamps": [
+        "00:27:56.440",
+        "00:39:11.400"
+      ],
+      "episodeIds": [
+        "DnsTYWOw5r0",
+        "DnsTYWOw5r0"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-16T04:58:37.376Z",
+      "lastSeen": "2026-01-16T04:58:37.376Z",
+      "status": "pending"
+    },
+    "Mandans→Mandaeans": {
+      "original": "Mandans",
+      "corrected": "Mandaeans",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "DnsTYWOw5r0"
+      ],
+      "examples": [
+        "\"in the Mandans, the convergence\"",
+        "\"you know, Mandans are going\""
+      ],
+      "correctedExamples": [
+        "\"in the Mandaeans, the convergence\"",
+        "\"you know, Mandaeans are going\""
+      ],
+      "timestamps": [
+        "00:37:06.130",
+        "00:46:52.100"
+      ],
+      "episodeIds": [
+        "DnsTYWOw5r0",
+        "DnsTYWOw5r0"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-16T04:58:37.376Z",
+      "lastSeen": "2026-01-16T04:58:37.376Z",
+      "status": "pending"
+    },
+    "Mandian→Mandaean": {
+      "original": "Mandian",
+      "corrected": "Mandaean",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "DnsTYWOw5r0"
+      ],
+      "examples": [
+        "\"So the Mandian texts mention\"",
+        "\"than the Mandian text, but\""
+      ],
+      "correctedExamples": [
+        "\"So the Mandaean texts mention\"",
+        "\"than the Mandaean text, but\""
+      ],
+      "timestamps": [
+        "00:38:09.250",
+        "00:38:09.250"
+      ],
+      "episodeIds": [
+        "DnsTYWOw5r0",
+        "DnsTYWOw5r0"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T04:58:37.376Z",
+      "lastSeen": "2026-01-16T04:58:37.376Z",
+      "status": "pending"
+    },
+    "third Enoch→Third Enoch": {
+      "original": "third Enoch",
+      "corrected": "Third Enoch",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "zghJE1-ZCQw"
+      ],
+      "examples": [
+        "\"and a third Enoch and then\"",
+        "\"second or third Enoch if they\""
+      ],
+      "correctedExamples": [
+        "\"and a Third Enoch and then\"",
+        "\"Second or Third Enoch if they\""
+      ],
+      "timestamps": [
+        "00:02:17.760",
+        "00:02:17.760"
+      ],
+      "episodeIds": [
+        "zghJE1-ZCQw",
+        "zghJE1-ZCQw"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T05:12:44.171Z",
+      "lastSeen": "2026-01-16T05:12:44.171Z",
+      "status": "pending"
+    },
+    "Kuman→Qumran": {
+      "original": "Kuman",
+      "corrected": "Qumran",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "zghJE1-ZCQw"
+      ],
+      "examples": [
+        "\"found at Kuman.\"",
+        "\"say at Kuman, we're talking\""
+      ],
+      "correctedExamples": [
+        "\"found at Qumran.\"",
+        "\"say at Qumran, we're talking\""
+      ],
+      "timestamps": [
+        "00:37:56.700",
+        "00:39:24.240"
+      ],
+      "episodeIds": [
+        "zghJE1-ZCQw",
+        "zghJE1-ZCQw"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-16T05:12:44.171Z",
+      "lastSeen": "2026-01-16T05:12:44.171Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-15T14:19:21.207Z"
+  "lastUpdated": "2026-01-16T05:12:44.171Z"
 }

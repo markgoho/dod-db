@@ -46,865 +46,223 @@ speakers:
 draft: false
 ---
 
-{{< line >}}[00:00:02.480] Dan McClellan: I've seen this claim.{{< /line >}}
-{{< line >}}[00:00:03.480] Dan McClellan: I don't know where it's coming from.{{< /line >}}
-{{< line >}}[00:00:04.720] Dan McClellan: I don't know if there's.{{< /line >}}
-{{< line >}}[00:00:05.680] Dan McClellan: If this has ever been argued by any scholars, but I've seen some folks try to argue that Thomas is Jesus's twin.{{< /line >}}
-{{< line >}}[00:00:12.400] Dan Beecher: Okay, well, that would change the nativity stories a lot.{{< /line >}}
-{{< line >}}[00:00:18.240] Dan Beecher: Yeah, I mean, now we have to hire Danny DeVito to play Didymus, have.{{< /line >}}
-{{< line >}}[00:00:25.040] Dan McClellan: Him say your back looks like a relief map of the Andes.{{< /line >}}
-{{< line >}}[00:00:33.660] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:02.480] Dan McClellan: I've seen this claim. I don't know where it's coming from. I don't know if there's. If this has ever been argued by any scholars, but I've seen some folks try to argue that Thomas is Jesus's twin.{{< /line >}}
+{{< line >}}[00:00:12.400] Dan Beecher: Okay, well, that would change the nativity stories a lot. Yeah, I mean, now we have to hire Danny DeVito to play Didymus, have.{{< /line >}}
+{{< line >}}[00:00:25.040] Dan McClellan: Him say your back looks like a relief map of the Andes. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:35.140] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
-{{< line >}}[00:00:36.380] Dan McClellan: And you are listening to the Data Over Dogma podcast where we try to increase the public's access to the academic study of the Bible and religion and combat the spread of misinformation.{{< /line >}}
-{{< line >}}[00:00:46.860] Dan McClellan: About the same, which unfortunately seems always to be increasing.{{< /line >}}
-{{< line >}}[00:00:50.700] Dan McClellan: How are we doing today, Dan?{{< /line >}}
-{{< line >}}[00:00:53.260] Dan Beecher: Doing okay.{{< /line >}}
-{{< line >}}[00:00:54.460] Dan Beecher: I am doing my best not to increase the misinformation, though.{{< /line >}}
-{{< line >}}[00:00:59.900] Dan Beecher: I'm not, you know, I'm a bear of very little brain.{{< /line >}}
-{{< line >}}[00:01:02.780] Dan Beecher: It's not like I'm gonna.{{< /line >}}
-{{< line >}}[00:01:04.460] Dan Beecher: I'm gonna do it sometimes just by accident.{{< /line >}}
-{{< line >}}[00:01:06.540] Dan Beecher: It's just bound to happen.{{< /line >}}
-{{< line >}}[00:01:07.660] Dan McClellan: Well, yeah, yeah.{{< /line >}}
-{{< line >}}[00:01:08.860] Dan McClellan: And who of us is innocent of every now and then spreading a little misinformation?{{< /line >}}
+{{< line >}}[00:00:36.380] Dan McClellan: And you are listening to the Data Over Dogma podcast where we try to increase the public's access to the academic study of the Bible and religion and combat the spread of misinformation. About the same, which unfortunately seems always to be increasing. How are we doing today, Dan?{{< /line >}}
+{{< line >}}[00:00:53.260] Dan Beecher: Doing okay. I am doing my best not to increase the misinformation, though. I'm not, you know, I'm a bear of very little brain. It's not like I'm gonna. I'm gonna do it sometimes just by accident. It's just bound to happen.{{< /line >}}
+{{< line >}}[00:01:07.660] Dan McClellan: Well, yeah, yeah. And who of us is innocent of every now and then spreading a little misinformation?{{< /line >}}
 {{< line >}}[00:01:15.500] Dan Beecher: Yes, indeed.{{< /line >}}
-{{< line >}}[00:01:16.340] Dan McClellan: There is a lot of it online these days, though.{{< /line >}}
-{{< line >}}[00:01:18.700] Dan McClellan: And in today's episode, I understand we're going to be just full of questions.{{< /line >}}
-{{< line >}}[00:01:23.100] Dan McClellan: We got.{{< /line >}}
-{{< line >}}[00:01:23.540] Dan Beecher: We got a whole lot of questions.{{< /line >}}
-{{< line >}}[00:01:24.860] Dan Beecher: It is an apostolic episode.{{< /line >}}
-{{< line >}}[00:01:28.250] Dan Beecher: We are going to be talking about apostles left and right, even epistles about apostles.{{< /line >}}
-{{< line >}}[00:01:34.970] Dan Beecher: So it's.{{< /line >}}
-{{< line >}}[00:01:36.090] Dan Beecher: It's a.{{< /line >}}
-{{< line >}}[00:01:36.730] Dan Beecher: It's a good time.{{< /line >}}
-{{< line >}}[00:01:39.450] Dan Beecher: But to start us off, I.{{< /line >}}
-{{< line >}}[00:01:42.650] Dan Beecher: Look, here's what happened.{{< /line >}}
-{{< line >}}[00:01:45.050] Dan Beecher: I was doing some research for one of our segments and I went down a rabbit hole and almost didn't make it back out.{{< /line >}}
-{{< line >}}[00:01:55.580] Dan Beecher: So I messaged you and I was like, you need to help me out with this.{{< /line >}}
-{{< line >}}[00:01:59.900] Dan Beecher: I don't know what's going on.{{< /line >}}
-{{< line >}}[00:02:02.220] Dan Beecher: So let's jump into our segment.{{< /line >}}
-{{< line >}}[00:02:05.100] Dan Beecher: McClellan 911.{{< /line >}}
-{{< line >}}[00:02:10.060] Dan McClellan: I guess our audio of choice.{{< /line >}}
-{{< line >}}[00:02:12.780] Dan McClellan: Mine.{{< /line >}}
-{{< line >}}[00:02:13.100] Dan McClellan: Anyways.{{< /line >}}
+{{< line >}}[00:01:16.340] Dan McClellan: There is a lot of it online these days, though. And in today's episode, I understand we're going to be just full of questions. We got.{{< /line >}}
+{{< line >}}[00:01:23.540] Dan Beecher: We got a whole lot of questions. It is an apostolic episode. We are going to be talking about apostles left and right, even epistles about apostles. So it's. It's a. It's a good time. But to start us off, I. Look, here's what happened. I was doing some research for one of our segments and I went down a rabbit hole and almost didn't make it back out. So I messaged you and I was like, you need to help me out with this. I don't know what's going on. So let's jump into our segment. McClellan 911.{{< /line >}}
+{{< line >}}[00:02:10.060] Dan McClellan: I guess our audio of choice. Mine. Anyways.{{< /line >}}
 {{< line >}}[00:02:17.340] Dan Beecher: Let's do the segment.{{< /line >}}
-{{< line >}}[00:02:21.500] Dan McClellan: Alrighty.{{< /line >}}
-{{< line >}}[00:02:21.980] Dan McClellan: What are we talking about, Dan?{{< /line >}}
-{{< line >}}[00:02:23.100] Dan McClellan: What is your emergency?{{< /line >}}
-{{< line >}}[00:02:24.600] Dan Beecher: Okay, here's the thing.{{< /line >}}
-{{< line >}}[00:02:27.080] Dan Beecher: I was looking up what the word apostle meant.{{< /line >}}
-{{< line >}}[00:02:31.000] Dan Beecher: And.{{< /line >}}
-{{< line >}}[00:02:31.960] Dan Beecher: And then I decided to think about.{{< /line >}}
-{{< line >}}[00:02:33.720] Dan Beecher: And then I was thinking about apostles and the original 12 came up.{{< /line >}}
-{{< line >}}[00:02:40.039] Dan Beecher: The 12 apostles.{{< /line >}}
-{{< line >}}[00:02:41.240] Dan Beecher: They're very famous.{{< /line >}}
-{{< line >}}[00:02:42.160] Dan Beecher: I don't know if you've heard of them, but a lot of people have.{{< /line >}}
+{{< line >}}[00:02:21.500] Dan McClellan: Alrighty. What are we talking about, Dan? What is your emergency?{{< /line >}}
+{{< line >}}[00:02:24.600] Dan Beecher: Okay, here's the thing. I was looking up what the word apostle meant. And. And then I decided to think about. And then I was thinking about apostles and the original 12 came up. The 12 apostles. They're very famous. I don't know if you've heard of them, but a lot of people have.{{< /line >}}
 {{< line >}}[00:02:45.080] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:02:45.600] Dan Beecher: And the thing about them was I started to ask myself, wait, can I name the 12 apostles?{{< /line >}}
-{{< line >}}[00:02:52.170] Dan Beecher: It seems like something I should know, and, you know, I got.{{< /line >}}
-{{< line >}}[00:02:55.890] Dan Beecher: I got Peter, James, and John, or Matthew and Mark and Luke, and I don't.{{< /line >}}
-{{< line >}}[00:03:00.810] Dan Beecher: I. I don't know who was an apostle.{{< /line >}}
-{{< line >}}[00:03:02.610] Dan Beecher: I literally suddenly realized, like, who's at that Last Supper?{{< /line >}}
-{{< line >}}[00:03:07.810] Dan Beecher: I don't know.{{< /line >}}
-{{< line >}}[00:03:08.690] Dan Beecher: You know, I. I knew Judas was one.{{< /line >}}
-{{< line >}}[00:03:11.890] Dan Beecher: And then when I really racked my brains, I came up with, you know, Mr. Doubting Thomas.{{< /line >}}
-{{< line >}}[00:03:18.420] Dan Beecher: And then I got so confused, so I went and looked it up, thinking this is a thing that will just have an easy list of names.{{< /line >}}
-{{< line >}}[00:03:27.700] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:03:28.580] Dan McClellan: One would imagine the way people talk about the 12 apostles, it seems like it's just a simple datum.{{< /line >}}
-{{< line >}}[00:03:33.860] Dan McClellan: Here they are.{{< /line >}}
-{{< line >}}[00:03:34.820] Dan Beecher: Yeah, there's 12 dudes.{{< /line >}}
-{{< line >}}[00:03:37.060] Dan Beecher: How hard could that possibly be?{{< /line >}}
-{{< line >}}[00:03:39.140] Dan Beecher: And then I go to Wikipedia and there's a grid.{{< /line >}}
-{{< line >}}[00:03:44.660] Dan Beecher: There's, like, graphics.{{< /line >}}
-{{< line >}}[00:03:45.980] Dan Beecher: And like, I. I was blown away.{{< /line >}}
-{{< line >}}[00:03:50.230] Dan Beecher: Now, I know that I've been confused before by things like name changes, which happen way too frequently in the Bible for my comfort, for my personal comfort. Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:04:02.869] Dan Beecher: You know, we've talked about.{{< /line >}}
-{{< line >}}[00:04:04.110] Dan Beecher: We.{{< /line >}}
-{{< line >}}[00:04:04.390] Dan Beecher: We talked about Abram becoming Abraham.{{< /line >}}
+{{< line >}}[00:02:45.600] Dan Beecher: And the thing about them was I started to ask myself, wait, can I name the 12 apostles? It seems like something I should know, and, you know, I got. I got Peter, James, and John, or Matthew and Mark and Luke, and I don't. I. I don't know who was an apostle. I literally suddenly realized, like, who's at that Last Supper? I don't know. You know, I. I knew Judas was one. And then when I really racked my brains, I came up with, you know, Mr. Doubting Thomas. And then I got so confused, so I went and looked it up, thinking this is a thing that will just have an easy list of names.{{< /line >}}
+{{< line >}}[00:03:27.700] Dan McClellan: Yeah. One would imagine the way people talk about the 12 apostles, it seems like it's just a simple datum. Here they are.{{< /line >}}
+{{< line >}}[00:03:34.820] Dan Beecher: Yeah, there's 12 dudes. How hard could that possibly be? And then I go to Wikipedia and there's a grid. There's, like, graphics. And like, I. I was blown away. Now, I know that I've been confused before by things like name changes, which happen way too frequently in the Bible for my comfort, for my personal comfort. Dan McClellan: Yeah. You know, we've talked about. We. We talked about Abram becoming Abraham.{{< /line >}}
 {{< line >}}[00:04:07.750] Dan McClellan: We.{{< /line >}}
-{{< line >}}[00:04:08.150] Dan Beecher: We talked.{{< /line >}}
-{{< line >}}[00:04:08.750] Dan Beecher: You know, there's.{{< /line >}}
-{{< line >}}[00:04:09.470] Dan Beecher: There's.{{< /line >}}
-{{< line >}}[00:04:11.830] Dan McClellan: Jacob becomes Israel.{{< /line >}}
-{{< line >}}[00:04:13.830] Dan McClellan: Even God's name changes.{{< /line >}}
-{{< line >}}[00:04:15.750] Dan McClellan: You have God introducing themselves to Moses, saying, look, they all knew me by this name.{{< /line >}}
-{{< line >}}[00:04:21.890] Dan McClellan: They didn't know me by this other name.{{< /line >}}
-{{< line >}}[00:04:23.650] Dan McClellan: But I'm letting you know my actual name is this.{{< /line >}}
-{{< line >}}[00:04:26.770] Dan McClellan: And then you go look at those other texts, and it's like, that name's in there, too.{{< /line >}}
-{{< line >}}[00:04:30.370] Dan McClellan: So, yeah, even God's name is not safe.{{< /line >}}
-{{< line >}}[00:04:34.290] Dan McClellan: They're getting changed up.{{< /line >}}
-{{< line >}}[00:04:35.810] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:04:36.170] Dan Beecher: And the other thing that I want to talk.{{< /line >}}
-{{< line >}}[00:04:37.490] Dan Beecher: So, okay, so we've got some names that are changing.{{< /line >}}
-{{< line >}}[00:04:40.050] Dan Beecher: We've got some names that are confusing.{{< /line >}}
-{{< line >}}[00:04:42.210] Dan Beecher: And the other thing is that I'm pretty sure that none of the names that I know are the original, like, Aramaic names of these guys.{{< /line >}}
-{{< line >}}[00:04:52.140] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:04:52.620] Dan McClellan: And this is something I get asked all the time.{{< /line >}}
-{{< line >}}[00:04:54.380] Dan McClellan: Did people running around this area 2000 years ago really have names like John and Matt and Andrew?{{< /line >}}
-{{< line >}}[00:05:02.540] Dan McClellan: Yeah, exactly.{{< /line >}}
-{{< line >}}[00:05:04.540] Dan McClellan: And there's some confusion going on regarding how we get the pronunciations of the names as we have them today.{{< /line >}}
-{{< line >}}[00:05:11.290] Dan McClellan: Okay, so lots of fun.{{< /line >}}
+{{< line >}}[00:04:08.150] Dan Beecher: We talked. You know, there's. There's.{{< /line >}}
+{{< line >}}[00:04:11.830] Dan McClellan: Jacob becomes Israel. Even God's name changes. You have God introducing themselves to Moses, saying, look, they all knew me by this name. They didn't know me by this other name. But I'm letting you know my actual name is this. And then you go look at those other texts, and it's like, that name's in there, too. So, yeah, even God's name is not safe. They're getting changed up.{{< /line >}}
+{{< line >}}[00:04:35.810] Dan Beecher: Yeah. And the other thing that I want to talk. So, okay, so we've got some names that are changing. We've got some names that are confusing. And the other thing is that I'm pretty sure that none of the names that I know are the original, like, Aramaic names of these guys.{{< /line >}}
+{{< line >}}[00:04:52.140] Dan McClellan: Yeah. And this is something I get asked all the time. Did people running around this area 2000 years ago really have names like John and Matt and Andrew? Yeah, exactly. And there's some confusion going on regarding how we get the pronunciations of the names as we have them today. Okay, so lots of fun.{{< /line >}}
 {{< line >}}[00:05:13.370] Dan Beecher: I'm wondering, let's start with just a few confusing things from the group of apostles.{{< /line >}}
 {{< line >}}[00:05:21.770] Dan McClellan: All right?{{< /line >}}
-{{< line >}}[00:05:22.570] Dan Beecher: One of the first things is that I have never known.{{< /line >}}
-{{< line >}}[00:05:25.370] Dan Beecher: I have heard the name Simon.{{< /line >}}
-{{< line >}}[00:05:27.130] Dan Beecher: I have heard the name Peter.{{< /line >}}
-{{< line >}}[00:05:28.730] Dan Beecher: I have heard the name Simon Peter.{{< /line >}}
-{{< line >}}[00:05:31.050] Dan Beecher: And I don't know.{{< /line >}}
-{{< line >}}[00:05:32.210] Dan Beecher: Are these three different guys?{{< /line >}}
-{{< line >}}[00:05:33.770] Dan Beecher: Are they the same guy?{{< /line >}}
-{{< line >}}[00:05:35.050] Dan Beecher: I don't know who we're talking about.{{< /line >}}
-{{< line >}}[00:05:37.130] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:05:37.610] Dan McClellan: So we've got the name Simon, which is a Greek transliteration of Shimon, which is an older Hebrew name.{{< /line >}}
-{{< line >}}[00:05:46.940] Dan McClellan: And so there's nothing too.{{< /line >}}
+{{< line >}}[00:05:22.570] Dan Beecher: One of the first things is that I have never known. I have heard the name Simon. I have heard the name Peter. I have heard the name Simon Peter. And I don't know. Are these three different guys? Are they the same guy? I don't know who we're talking about.{{< /line >}}
+{{< line >}}[00:05:37.130] Dan McClellan: Yeah. So we've got the name Simon, which is a Greek transliteration of Shimon, which is an older Hebrew name. And so there's nothing too.{{< /line >}}
 {{< line >}}[00:05:48.300] Dan Beecher: Also also a frequent thing that Michael Jackson would shamone.{{< /line >}}
-{{< line >}}[00:05:54.299] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:05:54.620] Dan McClellan: Which is a great interpretive key to interpreting his lyrics, so.{{< /line >}}
+{{< line >}}[00:05:54.299] Dan McClellan: Yeah. Which is a great interpretive key to interpreting his lyrics, so.{{< /line >}}
 {{< line >}}[00:05:59.060] Dan Beecher: Yes, exactly.{{< /line >}}
-{{< line >}}[00:06:01.260] Dan McClellan: But we have Simon also referred to as Peter in the text.{{< /line >}}
-{{< line >}}[00:06:06.530] Dan McClellan: And this is a name that Jesus was supposed to have given to Simon.{{< /line >}}
-{{< line >}}[00:06:12.210] Dan McClellan: And in the Gospel of John, it's Kephas, which would be a transliteration of the Aramaic word for rock, which is what Petros would be related to, rock of some kind.{{< /line >}}
-{{< line >}}[00:06:25.250] Dan McClellan: Some people try to read a lot more significance into the name than probably was there.{{< /line >}}
-{{< line >}}[00:06:30.130] Dan McClellan: Oh, it means a little itty bitty rock.{{< /line >}}
-{{< line >}}[00:06:31.850] Dan McClellan: Oh, it means a bedrock.{{< /line >}}
-{{< line >}}[00:06:33.130] Dan McClellan: Oh, it means a boulder.{{< /line >}}
-{{< line >}}[00:06:34.050] Dan McClellan: It, you know, I don't think it's quite so.{{< /line >}}
-{{< line >}}[00:06:36.850] Dan McClellan: So granular what's going on there?{{< /line >}}
-{{< line >}}[00:06:39.630] Dan McClellan: But yeah, Simon Peter is an individual who seems to have two names.{{< /line >}}
-{{< line >}}[00:06:44.430] Dan McClellan: Now, there was a tradition, evidently, I have not plumbed the depths of the data regarding this notion that anciently they would have their traditional Aramaic Hebrew name and would also adopt a Greco Roman name.{{< /line >}}
-{{< line >}}[00:07:01.710] Dan McClellan: Kind of like how when folks come here from parts of Asia, they'll adopt, you know, they'll be like, my name's Sarah.{{< /line >}}
-{{< line >}}[00:07:07.790] Dan McClellan: It's like.{{< /line >}}
+{{< line >}}[00:06:01.260] Dan McClellan: But we have Simon also referred to as Peter in the text. And this is a name that Jesus was supposed to have given to Simon. And in the Gospel of John, it's Kephas, which would be a transliteration of the Aramaic word for rock, which is what Petros would be related to, rock of some kind. Some people try to read a lot more significance into the name than probably was there. Oh, it means a little itty bitty rock. Oh, it means a bedrock. Oh, it means a boulder. It, you know, I don't think it's quite so. So granular what's going on there? But yeah, Simon Peter is an individual who seems to have two names. Now, there was a tradition, evidently, I have not plumbed the depths of the data regarding this notion that anciently they would have their traditional Aramaic Hebrew name and would also adopt a Greco Roman name.{{< /line >}}
+{{< line >}}[00:07:01.710] Dan McClellan: Kind of like how when folks come here from parts of Asia, they'll adopt, you know, they'll be like, my name's Sarah. It's like.{{< /line >}}
 {{< line >}}[00:07:08.270] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:07:10.040] Dan McClellan: And you know, they've got another name that most people would just have a rough time pronouncing.{{< /line >}}
-{{< line >}}[00:07:15.120] Dan McClellan: And so they will adopt an Anglicized name of some kind.{{< /line >}}
-{{< line >}}[00:07:19.400] Dan McClellan: So conventional wisdom says that was going on back then.{{< /line >}}
-{{< line >}}[00:07:23.800] Dan McClellan: So Simon is already a Greek transliteration of an Aramaic Hebrew name.{{< /line >}}
-{{< line >}}[00:07:31.480] Dan McClellan: And Cephas Peter would be the same.{{< /line >}}
-{{< line >}}[00:07:35.080] Dan McClellan: So it doesn't seem like that's fitting in with that tradition. fitting in with that tradition.{{< /line >}}
-{{< line >}}[00:07:38.980] Dan McClellan: And there's actually an argument to make that these may have been two different people, that Simon and Kephas were separate people.{{< /line >}}
-{{< line >}}[00:07:48.180] Dan McClellan: I think Bart Ehrman published an article a long time ago talking about how many early Christians understood them to be two different people.{{< /line >}}
-{{< line >}}[00:07:56.820] Dan McClellan: And so it's a little confusing when you look across the four different Gospels and then into the book of Acts because they're referred to in different ways.{{< /line >}}
-{{< line >}}[00:08:04.380] Dan McClellan: So in Matthew it's Simon, also known as Peter. In the other synoptic Gospels,{{< /line >}}
-{{< line >}}[00:08:11.760] Dan McClellan: so Mark and Luke, it's Simon, whom he named Peter.{{< /line >}}
-{{< line >}}[00:08:16.280] Dan McClellan: And then in John you've got Simon Kephas, which is translated Peter.{{< /line >}}
-{{< line >}}[00:08:21.080] Dan McClellan: In Acts he's referred to as Peter.{{< /line >}}
-{{< line >}}[00:08:22.960] Dan McClellan: It's almost like there's kind of a chronological trajectory.{{< /line >}}
-{{< line >}}[00:08:26.960] Dan McClellan: Starts off as Simon, and then by the end of the first century he's completely Peter.{{< /line >}}
-{{< line >}}[00:08:33.360] Dan McClellan: Which suggests that{{< /line >}}
-{{< line >}}[00:08:35.080] Dan McClellan: they're wrestling with what to do here.{{< /line >}}
-{{< line >}}[00:08:37.360] Dan McClellan: And you just have different texts approaching it in different ways, which could indicate they were two different people and their identities were just merged.{{< /line >}}
-{{< line >}}[00:08:43.899] Dan McClellan: It could indicate that, you know, he used his own name inconsistently and they were just trying to figure out a way to make sense of it, but we don't really know for sure.{{< /line >}}
-{{< line >}}[00:08:53.259] Dan Beecher: I'm going to go back to something because I think I understood what you were saying.{{< /line >}}
-{{< line >}}[00:08:57.499] Dan Beecher: But.{{< /line >}}
-{{< line >}}[00:08:57.899] Dan Beecher: So Peter, that's a transliteration of{{< /line >}}
-{{< line >}}[00:09:01.979] Dan Beecher: of an Aramaic.{{< /line >}}
-{{< line >}}[00:09:05.339] Dan McClellan: Well, that's the Greek word Petros.{{< /line >}}
-{{< line >}}[00:09:09.339] Dan McClellan: Right.{{< /line >}}
-{{< line >}}[00:09:09.699] Dan McClellan: And in John, Jesus gave him the name Kephas, and so Petros is just a translation—{{< /line >}}
-{{< line >}}[00:09:16.880] Dan McClellan: excuse me, Petros is a translation of Kephas.{{< /line >}}
+{{< line >}}[00:07:10.040] Dan McClellan: And you know, they've got another name that most people would just have a rough time pronouncing. And so they will adopt an Anglicized name of some kind. So conventional wisdom says that was going on back then. So Simon is already a Greek transliteration of an Aramaic Hebrew name. And Cephas Peter would be the same. So it doesn't seem like that's fitting in with that tradition. fitting in with that tradition. And there's actually an argument to make that these may have been two different people, that Simon and Kephas were separate people. I think Bart Ehrman published an article a long time ago talking about how many early Christians understood them to be two different people. And so it's a little confusing when you look across the four different Gospels and then into the book of Acts because they're referred to in different ways. So in Matthew it's Simon, also known as Peter. In the other synoptic Gospels,{{< /line >}}
+{{< line >}}[00:08:11.760] Dan McClellan: so Mark and Luke, it's Simon, whom he named Peter. And then in John you've got Simon Kephas, which is translated Peter. In Acts he's referred to as Peter. It's almost like there's kind of a chronological trajectory. Starts off as Simon, and then by the end of the first century he's completely Peter. Which suggests that they're wrestling with what to do here. And you just have different texts approaching it in different ways, which could indicate they were two different people and their identities were just merged. It could indicate that, you know, he used his own name inconsistently and they were just trying to figure out a way to make sense of it, but we don't really know for sure.{{< /line >}}
+{{< line >}}[00:08:53.259] Dan Beecher: I'm going to go back to something because I think I understood what you were saying. But. So Peter, that's a transliteration of of an Aramaic.{{< /line >}}
+{{< line >}}[00:09:05.339] Dan McClellan: Well, that's the Greek word Petros. Right. And in John, Jesus gave him the name Kephas, and so Petros is just a translation— excuse me, Petros is a translation of Kephas.{{< /line >}}
 {{< line >}}[00:09:20.920] Dan Beecher: And so translation from Greek to Greek?{{< /line >}}
 {{< line >}}[00:09:24.280] Dan McClellan: No, Kephas would be Aramaic.{{< /line >}}
 {{< line >}}[00:09:26.040] Dan Beecher: Oh, Kephas is the Aramaic.{{< /line >}}
-{{< line >}}[00:09:27.400] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:09:27.800] Dan McClellan: So in John we have the story that Jesus gave him the name Kephas.{{< /line >}}
-{{< line >}}[00:09:32.600] Dan McClellan: And then if you translate Kephas from Aramaic into Greek, you get Petros.{{< /line >}}
-{{< line >}}[00:09:37.040] Dan McClellan: And then in English that is transliterated as Peter.{{< /line >}}
+{{< line >}}[00:09:27.400] Dan McClellan: Yeah. So in John we have the story that Jesus gave him the name Kephas. And then if you translate Kephas from Aramaic into Greek, you get Petros. And then in English that is transliterated as Peter.{{< /line >}}
 {{< line >}}[00:09:41.110] Dan Beecher: So Simon is a transliteration, and Peter is a potential translation of Kephas.{{< /line >}}
 {{< line >}}[00:09:49.110] Dan McClellan: If John is to be believed.{{< /line >}}
-{{< line >}}[00:09:51.070] Dan Beecher: If.{{< /line >}}
-{{< line >}}[00:09:51.590] Dan Beecher: Okay, all right, fine.{{< /line >}}
-{{< line >}}[00:09:52.990] Dan Beecher: You know what, I'm done with...{{< /line >}}
-{{< line >}}[00:09:54.790] Dan Beecher: But he was also called Simon Peter, right?{{< /line >}}
-{{< line >}}[00:09:57.830] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:09:58.230] Dan McClellan: We have in John the double name.{{< /line >}}
-{{< line >}}[00:10:01.270] Dan Beecher: Okay, then there's also—{{< /line >}}
-{{< line >}}[00:10:05.110] Dan Beecher: I don't want to confuse things too much, but one of the other apostles is also Simon.{{< /line >}}
-{{< line >}}[00:10:10.440] Dan Beecher: Am I right about that?{{< /line >}}
-{{< line >}}[00:10:11.480] Dan Beecher: That's...{{< /line >}}
+{{< line >}}[00:09:51.070] Dan Beecher: If. Okay, all right, fine. You know what, I'm done with... But he was also called Simon Peter, right?{{< /line >}}
+{{< line >}}[00:09:57.830] Dan McClellan: Yeah. We have in John the double name.{{< /line >}}
+{{< line >}}[00:10:01.270] Dan Beecher: Okay, then there's also— I don't want to confuse things too much, but one of the other apostles is also Simon. Am I right about that? That's...{{< /line >}}
 {{< line >}}[00:10:14.200] Dan McClellan: They really—{{< /line >}}
-{{< line >}}[00:10:14.800] Dan Beecher: This was poor planning on the part of the Savior, I think.{{< /line >}}
-{{< line >}}[00:10:17.680] Dan Beecher: Because there's doubles of a couple of names.{{< /line >}}
+{{< line >}}[00:10:14.800] Dan Beecher: This was poor planning on the part of the Savior, I think. Because there's doubles of a couple of names.{{< /line >}}
 {{< line >}}[00:10:20.840] Dan McClellan: So here's the...{{< /line >}}
 {{< line >}}[00:10:21.640] Dan Beecher: Because there's doubles of a couple of names.{{< /line >}}
-{{< line >}}[00:10:23.560] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:10:24.200] Dan McClellan: So Simon is not...{{< /line >}}
-{{< line >}}[00:10:26.680] Dan McClellan: This other Simon, who is one of the original twelve ostensibly, is not mentioned in the Gospel of John because John nowhere says, "here are the twelve apostles."{{< /line >}}
-{{< line >}}[00:10:35.830] Dan McClellan: He just mentions them randomly, but he does not give a list of them like the other Gospels do.{{< /line >}}
-{{< line >}}[00:10:41.910] Dan McClellan: And when the other Gospels mention this other Simon, they tag on some kind of identifier.{{< /line >}}
-{{< line >}}[00:10:47.270] Dan McClellan: They call him the Zealot.{{< /line >}}
-{{< line >}}[00:10:48.550] Dan McClellan: They call him the Canaanite.{{< /line >}}
-{{< line >}}[00:10:50.550] Dan McClellan: Mark calls him the Cananaean or something like that.{{< /line >}}
+{{< line >}}[00:10:23.560] Dan McClellan: Yeah. So Simon is not... This other Simon, who is one of the original twelve ostensibly, is not mentioned in the Gospel of John because John nowhere says, "here are the twelve apostles." He just mentions them randomly, but he does not give a list of them like the other Gospels do. And when the other Gospels mention this other Simon, they tag on some kind of identifier. They call him the Zealot. They call him the Canaanite. Mark calls him the Cananaean or something like that.{{< /line >}}
 {{< line >}}[00:10:53.990] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:10:54.790] Dan McClellan: And I think, yeah, Luke and Acts call him the Zealot to distinguish him from Simon Peter.{{< /line >}}
-{{< line >}}[00:11:03.550] Dan McClellan: And John just isn't{{< /line >}}
-{{< line >}}[00:11:05.030] Dan McClellan: worried about it.{{< /line >}}
-{{< line >}}[00:11:06.390] Dan Beecher: I like the Zealot.{{< /line >}}
-{{< line >}}[00:11:08.230] Dan Beecher: You know, it's like a version of this is Jeremy A and Jeremy M when you're in school or whatever.Beecher: But they're, they're just adding, I think The Zealot is a much.{{< /line >}}
-{{< line >}}[00:11:18.870] Dan Beecher: If you are an elementary school teacher and you have two Johns or whatever in your, in your class, name one of them the Zealot.{{< /line >}}
-{{< line >}}[00:11:25.950] Dan Beecher: It's much better than.{{< /line >}}
-{{< line >}}[00:11:27.030] Dan Beecher: Yeah, just giving their last initial.{{< /line >}}
-{{< line >}}[00:11:29.470] Dan McClellan: Well, that's what we could do.{{< /line >}}
-{{< line >}}[00:11:30.630] Dan McClellan: We could be Mack and the Zealot or something like that.{{< /line >}}
-{{< line >}}[00:11:32.670] Dan Beecher: There you go.{{< /line >}}
-{{< line >}}[00:11:34.430] Dan Beecher: I don't think I'm the Zealot.{{< /line >}}
-{{< line >}}[00:11:36.510] Dan Beecher: Between the two of us, I think the atheist is probably not the zealot among us.{{< /line >}}
+{{< line >}}[00:10:54.790] Dan McClellan: And I think, yeah, Luke and Acts call him the Zealot to distinguish him from Simon Peter. And John just isn't worried about it.{{< /line >}}
+{{< line >}}[00:11:06.390] Dan Beecher: I like the Zealot. You know, it's like a version of this is Jeremy A and Jeremy M when you're in school or whatever.Beecher: But they're, they're just adding, I think The Zealot is a much. If you are an elementary school teacher and you have two Johns or whatever in your, in your class, name one of them the Zealot. It's much better than. Yeah, just giving their last initial.{{< /line >}}
+{{< line >}}[00:11:29.470] Dan McClellan: Well, that's what we could do. We could be Mack and the Zealot or something like that.{{< /line >}}
+{{< line >}}[00:11:32.670] Dan Beecher: There you go. I don't think I'm the Zealot. Between the two of us, I think the atheist is probably not the zealot among us.{{< /line >}}
 {{< line >}}[00:11:42.030] Dan McClellan: Beecher and the Zealot, I don't know.{{< /line >}}
-{{< line >}}[00:11:43.789] Dan Beecher: That you're a zealot either.{{< /line >}}
-{{< line >}}[00:11:44.950] Dan Beecher: So I think zealotry is actually is.{{< /line >}}
-{{< line >}}[00:11:47.390] Dan Beecher: But you're right.{{< /line >}}
-{{< line >}}[00:11:48.270] Dan Beecher: How did I not think of the fact that we are two Daniels.{{< /line >}}
-{{< line >}}[00:11:50.550] Dan Beecher: Okay, fine.{{< /line >}}
-{{< line >}}[00:11:52.590] Dan Beecher: Speaking of two names, we got two Jameses.{{< /line >}}
+{{< line >}}[00:11:43.789] Dan Beecher: That you're a zealot either. So I think zealotry is actually is. But you're right. How did I not think of the fact that we are two Daniels. Okay, fine. Speaking of two names, we got two Jameses.{{< /line >}}
 {{< line >}}[00:11:57.930] Dan McClellan: We got, yes, two Jameses.{{< /line >}}
-{{< line >}}[00:12:01.130] Dan Beecher: So there's James son of Zebedee, who is the brother of somebody.{{< /line >}}
-{{< line >}}[00:12:08.650] Dan Beecher: Right?{{< /line >}}
-{{< line >}}[00:12:09.130] Dan Beecher: No, wait, there's.{{< /line >}}
-{{< line >}}[00:12:10.890] Dan Beecher: There's various Zebedee, Zebedians.{{< /line >}}
-{{< line >}}[00:12:13.690] Dan Beecher: So there's James and then there's another James son of Alphaeus.{{< /line >}}
-{{< line >}}[00:12:19.370] Dan Beecher: And where does.{{< /line >}}
-{{< line >}}[00:12:21.050] Dan Beecher: So first of all, let's talk about the name James.{{< /line >}}
-{{< line >}}[00:12:23.780] Dan Beecher: What's the origin?{{< /line >}}
-{{< line >}}[00:12:24.860] Dan Beecher: What's the original name in its, in its original language?{{< /line >}}
+{{< line >}}[00:12:01.130] Dan Beecher: So there's James son of Zebedee, who is the brother of somebody. Right? No, wait, there's. There's various Zebedee, Zebedians. So there's James and then there's another James son of Alphaeus. And where does. So first of all, let's talk about the name James. What's the origin? What's the original name in its, in its original language?{{< /line >}}
 {{< line >}}[00:12:28.580] Dan McClellan: So James actually comes from the Hebrew name Yaakov, Jacob.{{< /line >}}
 {{< line >}}[00:12:33.700] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:12:34.500] Dan McClellan: And.{{< /line >}}
-{{< line >}}[00:12:36.020] Dan McClellan: And so if you go look in the Greek, you're actually going to see Iakobos is what the Greek says there.{{< /line >}}
-{{< line >}}[00:12:45.060] Dan McClellan: Now.{{< /line >}}
-{{< line >}}[00:12:45.380] Dan McClellan: Okay, we use James today because that's, that has become conventionalized, that particular transliteration.{{< /line >}}
-{{< line >}}[00:12:53.700] Dan McClellan: And there's, there's actually we can trace the development of this name through different languages to get us from Jacob to James.{{< /line >}}
-{{< line >}}[00:13:04.720] Dan McClellan: And this was just a side note.{{< /line >}}
-{{< line >}}[00:13:07.320] Dan McClellan: This was always a complication in translating the Book of Mormon because you have the Book of Jacob and you also have.{{< /line >}}
-{{< line >}}[00:13:15.680] Dan McClellan: When you're saying, well, there's also the Epistle of James in the Bible.{{< /line >}}
-{{< line >}}[00:13:20.840] Dan McClellan: And so when you're referring to these, you got to distinguish somehow.{{< /line >}}
-{{< line >}}[00:13:23.880] Dan McClellan: But in many languages, they don't distinguish Jacob from James.{{< /line >}}
+{{< line >}}[00:12:34.500] Dan McClellan: And. And so if you go look in the Greek, you're actually going to see Iakobos is what the Greek says there. Now. Okay, we use James today because that's, that has become conventionalized, that particular transliteration. And there's, there's actually we can trace the development of this name through different languages to get us from Jacob to James. And this was just a side note. This was always a complication in translating the Book of Mormon because you have the Book of Jacob and you also have. When you're saying, well, there's also the Epistle of James in the Bible. And so when you're referring to these, you got to distinguish somehow. But in many languages, they don't distinguish Jacob from James.{{< /line >}}
 {{< line >}}[00:13:26.800] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:13:27.900] Dan McClellan: Anyway, that's, that's not important here.{{< /line >}}
-{{< line >}}[00:13:29.820] Dan McClellan: But yeah, Jacob, when you go into Latin, you get Iacobus, which is, which is very close to the Greek.{{< /line >}}
-{{< line >}}[00:13:37.500] Dan McClellan: But there are some dialects where you have kind of a nasalization of the B and it's Iacomus, which is how it sounds.{{< /line >}}
-{{< line >}}[00:13:47.580] Dan McClellan: And then there are, as that name is used, there are some places where the B nasalizes and you get Iacomus, and then you go into.{{< /line >}}
-{{< line >}}[00:13:57.940] Dan McClellan: And then you get Iacomo, which is a name that we find in some languages.{{< /line >}}
-{{< line >}}[00:14:04.660] Dan McClellan: And then the, the Hard C sound that we have in the.{{< /line >}}
-{{< line >}}[00:14:09.220] Dan McClellan: In the.{{< /line >}}
-{{< line >}}[00:14:11.220] Dan McClellan: Or the.{{< /line >}}
-{{< line >}}[00:14:11.940] Dan McClellan: The M drops off entirely and the hard C sound will turn to.{{< /line >}}
-{{< line >}}[00:14:15.700] Dan McClellan: Into like a G or something like that.{{< /line >}}
-{{< line >}}[00:14:18.340] Dan McClellan: Iago{{< /line >}}
-{{< line >}}[00:14:20.590] Dan McClellan: derives from this{{< /line >}}
-{{< line >}}[00:14:23.230] Dan McClellan: name.{{< /line >}}
-{{< line >}}[00:14:23.950] Dan McClellan: And then.{{< /line >}}
-{{< line >}}[00:14:24.830] Dan McClellan: So San Diego, contrary to the conventional wisdom, has nothing to do with a whale.{{< /line >}}
-{{< line >}}[00:14:31.790] Dan McClellan: Right.{{< /line >}}
-{{< line >}}[00:14:33.070] Dan McClellan: But is St. James or St. Jacob San Diego.{{< /line >}}
-{{< line >}}[00:14:38.590] Dan McClellan: So Diego is also a variation on this name.{{< /line >}}
-{{< line >}}[00:14:42.510] Dan McClellan: Santiago is a variation on this name.{{< /line >}}
-{{< line >}}[00:14:45.150] Dan McClellan: Tiago is a variation on this name.{{< /line >}}
-{{< line >}}[00:14:47.740] Dan McClellan: And when it gets into English, we have James as one of the variations on this.{{< /line >}}
-{{< line >}}[00:14:55.700] Dan McClellan: And so I forget exactly the path that we have to trace, what countries we have to go through to get from the Latin to the English.{{< /line >}}
-{{< line >}}[00:15:03.660] Dan McClellan: But these are just different ways that people pronounce these things based on the conventions that their languages held in their particular region in their particular time.e.{{< /line >}}
-{{< line >}}[00:15:14.180] Dan McClellan: And this is going to have relevance when we talk about how we get from Yeshu to Jesus, which we'll talk about a little bit later.{{< /line >}}
-{{< line >}}[00:15:24.650] Dan Beecher: But I'm just saying.{{< /line >}}
-{{< line >}}[00:15:26.130] Dan Beecher: I'm just going to say that of all of the names that you went through that are versions of this original Yaakov or whatever, what was the original in the Hebrew?{{< /line >}}
+{{< line >}}[00:13:27.900] Dan McClellan: Anyway, that's, that's not important here. But yeah, Jacob, when you go into Latin, you get Iacobus, which is, which is very close to the Greek. But there are some dialects where you have kind of a nasalization of the B and it's Iacomus, which is how it sounds. And then there are, as that name is used, there are some places where the B nasalizes and you get Iacomus, and then you go into. And then you get Iacomo, which is a name that we find in some languages. And then the, the Hard C sound that we have in the. In the. Or the. The M drops off entirely and the hard C sound will turn to. Into like a G or something like that. Iago derives from this name. And then. So San Diego, contrary to the conventional wisdom, has nothing to do with a whale.{{< /line >}}
+{{< line >}}[00:14:31.790] Dan McClellan: Right. But is St. James or St. Jacob San Diego. So Diego is also a variation on this name. Santiago is a variation on this name. Tiago is a variation on this name. And when it gets into English, we have James as one of the variations on this. And so I forget exactly the path that we have to trace, what countries we have to go through to get from the Latin to the English. But these are just different ways that people pronounce these things based on the conventions that their languages held in their particular region in their particular time.e. And this is going to have relevance when we talk about how we get from Yeshu to Jesus, which we'll talk about a little bit later.{{< /line >}}
+{{< line >}}[00:15:24.650] Dan Beecher: But I'm just saying. I'm just going to say that of all of the names that you went through that are versions of this original Yaakov or whatever, what was the original in the Hebrew?{{< /line >}}
 {{< line >}}[00:15:36.290] Dan McClellan: Yaakov.{{< /line >}}
-{{< line >}}[00:15:37.250] Dan Beecher: Yaakov.{{< /line >}}
-{{< line >}}[00:15:38.850] Dan Beecher: I feel like James is the worst of all of, like, that is that you...{{< /line >}}
-{{< line >}}[00:15:43.810] Dan Beecher: You've gone way too far down the road.{{< /line >}}
-{{< line >}}[00:15:46.350] Dan Beecher: Let's back it up a few steps.{{< /line >}}
-{{< line >}}[00:15:48.270] Dan McClellan: But okay, yeah, we've also got Jaime and Jamie, and we got a bunch of different variations that...{{< /line >}}
-{{< line >}}[00:15:56.990] Dan McClellan: That are derived from that as well.{{< /line >}}
-{{< line >}}[00:15:58.790] Dan McClellan: So, yeah, it's...{{< /line >}}
-{{< line >}}[00:16:00.350] Dan McClellan: It's a bit of a mess.{{< /line >}}
-{{< line >}}[00:16:01.430] Dan McClellan: But...{{< /line >}}
-{{< line >}}[00:16:02.830] Dan McClellan: But I think it's fascinating linguistic...{{< /line >}}
-{{< line >}}[00:16:04.790] Dan Beecher: It is fascinating.{{< /line >}}
-{{< line >}}[00:16:06.750] Dan Beecher: And I think we can do the same...{{< /line >}}
-{{< line >}}[00:16:07.950] Dan Beecher: We can do the same kind of crazy name tree with James, James's brother John.{{< /line >}}
-{{< line >}}[00:16:16.290] Dan Beecher: Which John.{{< /line >}}
-{{< line >}}[00:16:17.250] Dan Beecher: What?{{< /line >}}
-{{< line >}}[00:16:17.570] Dan Beecher: So do we know what the original Hebrew slash Aramaic name for that was?{{< /line >}}
-{{< line >}}[00:16:25.010] Dan Beecher: Which sounds like, like...{{< /line >}}
-{{< line >}}[00:16:27.410] Dan Beecher: So, like, I know the German Johannes is...{{< /line >}}
-{{< line >}}[00:16:31.650] Dan Beecher: Is...{{< /line >}}
-{{< line >}}[00:16:32.050] Dan Beecher: Would be a variant of...{{< /line >}}
-{{< line >}}[00:16:34.250] Dan Beecher: Of John that sounds more like Yohanan than John.{{< /line >}}
-{{< line >}}[00:16:38.060] Dan Beecher: Yeah, I can...{{< /line >}}
-{{< line >}}[00:16:38.820] Dan Beecher: But at least I can see a...{{< /line >}}
-{{< line >}}[00:16:41.660] Dan Beecher: A thread through all of those better than I can with James.{{< /line >}}
-{{< line >}}[00:16:45.260] Dan Beecher: But, yeah, there's...{{< /line >}}
-{{< line >}}[00:16:46.620] Dan Beecher: There's a thousand different John variants.{{< /line >}}
-{{< line >}}[00:16:49.260] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:16:49.700] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:16:50.060] Dan McClellan: So when...{{< /line >}}
-{{< line >}}[00:16:50.460] Dan McClellan: When people are like, was there really a dude named John living in Syria-Palestine, 2,000 years ago?{{< /line >}}
-{{< line >}}[00:16:56.100] Dan McClellan: And no, they were Yohanan or if they were using Greek, Ioannes or something like that.{{< /line >}}
-{{< line >}}[00:17:04.260] Dan McClellan: And then that goes into a bunch of different languages.{{< /line >}}
-{{< line >}}[00:17:07.340] Dan McClellan: We have Ian is developed from this.{{< /line >}}
-{{< line >}}[00:17:10.179] Dan McClellan: We have Giannis develops from this John.{{< /line >}}
-{{< line >}}[00:17:15.299] Dan McClellan: Hundreds of different variations.{{< /line >}}
-{{< line >}}[00:17:17.019] Dan McClellan: And in fact, the...{{< /line >}}
-{{< line >}}[00:17:18.419] Dan McClellan: This was something I discovered when I was living in England and did a little research on my own last name, McClellan.{{< /line >}}
-{{< line >}}[00:17:23.059] Dan McClellan: There are over a hundred different names that derive from the name McClellan.{{< /line >}}
-{{< line >}}[00:17:28.219] Dan McClellan: Mine isn't the...{{< /line >}}
-{{< line >}}[00:17:29.379] Dan McClellan: My spelling isn't the original spelling by any stretch of the imagination.{{< /line >}}
-{{< line >}}[00:17:32.659] Dan McClellan: But we have neighbors, the Gillilands, who...{{< /line >}}
-{{< line >}}[00:17:37.090] Dan McClellan: Their last name is a derivation of McClellan as well.{{< /line >}}
-{{< line >}}[00:17:41.970] Dan McClellan: So there are so many names are related and derived from other names.{{< /line >}}
-{{< line >}}[00:17:49.250] Dan McClellan: It's so fascinating when you look into it, but I think some people get confused and think because some of these things have relationships like that, that they can just arbitrarily imagine relationships that exist between other words, which is a problem that I am constantly trying to respond to on my social media channels when people are like, well, this...{{< /line >}}
-{{< line >}}[00:18:11.880] Dan McClellan: Like, what did I just hear?{{< /line >}}
-{{< line >}}[00:18:13.040] Dan McClellan: Oh, demos from democratic.{{< /line >}}
-{{< line >}}[00:18:16.120] Dan McClellan: So I just saw a video 30 minutes ago where somebody was like, that looks like demon.{{< /line >}}
-{{< line >}}[00:18:21.000] Dan McClellan: So Democrats are demons.{{< /line >}}
-{{< line >}}[00:18:22.720] Dan McClellan: And it's like, okay, so they both come from Greek, but they don't look at all alike in Greek.{{< /line >}}
-{{< line >}}[00:18:28.920] Dan McClellan: And so, yeah, that's...{{< /line >}}
-{{< line >}}[00:18:31.240] Dan McClellan: There...{{< /line >}}
-{{< line >}}[00:18:31.640] Dan McClellan: There are a lot of...{{< /line >}}
-{{< line >}}[00:18:33.490] Dan McClellan: A lot of amateur etymologists out there that should not quit their day job, but should quit being amateur etymologists.{{< /line >}}
-{{< line >}}[00:18:42.210] Dan Beecher: Well, or at very least, we should all quit listening to them if they...{{< /line >}}
-{{< line >}}[00:18:47.610] Dan Beecher: If they're not going to have, you know, the...{{< /line >}}
-{{< line >}}[00:18:49.890] Dan Beecher: The...{{< /line >}}
-{{< line >}}[00:18:50.530] Dan Beecher: If they're going to approach this without credentials, at very least we can all reject whatever it is that they have to say.{{< /line >}}
-{{< line >}}[00:18:56.850] Dan Beecher: Yeah, yeah, I'm.{{< /line >}}
-{{< line >}}[00:18:58.530] Dan Beecher: I'm gonna dive into.{{< /line >}}
-{{< line >}}[00:19:00.370] Dan Beecher: I'm.{{< /line >}}
-{{< line >}}[00:19:00.810] Dan Beecher: I'm just now going to.{{< /line >}}
-{{< line >}}[00:19:01.810] Dan Beecher: As a refresher, as a little palate cleanser, I'm going to say that in the massive grid of, you know, who's named what and where they are in the lineup and everything, Philip is delightfully easy.{{< /line >}}
-{{< line >}}[00:19:15.960] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:19:17.160] Dan McClellan: Non.{{< /line >}}
-{{< line >}}[00:19:17.520] Dan McClellan: Controversial.{{< /line >}}
-{{< line >}}[00:19:18.680] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:19:19.320] Dan Beecher: Everyone calls him Philip.{{< /line >}}
-{{< line >}}[00:19:20.760] Dan Beecher: No one calls him anything else.{{< /line >}}
-{{< line >}}[00:19:22.240] Dan Beecher: No one tacks anything onto his name or anything.{{< /line >}}
-{{< line >}}[00:19:25.480] Dan Beecher: Just Philip.{{< /line >}}
-{{< line >}}[00:19:26.680] Dan McClellan: You know, he didn't cause any problems.{{< /line >}}
-{{< line >}}[00:19:28.400] Dan McClellan: He showed up on time.{{< /line >}}
-{{< line >}}[00:19:29.560] Dan McClellan: He did what he was asked to do.{{< /line >}}
-{{< line >}}[00:19:31.910] Dan McClellan: And.{{< /line >}}
-{{< line >}}[00:19:32.550] Dan McClellan: And, yeah, it didn't cause any issues.{{< /line >}}
-{{< line >}}[00:19:34.390] Dan Beecher: Do we know what that name was in the.{{< /line >}}
-{{< line >}}[00:19:36.710] Dan Beecher: In the original.{{< /line >}}
-{{< line >}}[00:19:38.550] Dan McClellan: In the original, it probably has to do with Philippos, which would be lover of horses or something like that, if I'm.{{< /line >}}
-{{< line >}}[00:19:47.990] Dan McClellan: If I'm remembering correctly.{{< /line >}}
-{{< line >}}[00:19:50.950] Dan McClellan: But I didn't.{{< /line >}}
-{{< line >}}[00:19:52.470] Dan McClellan: I haven't looked that one up in a long time.{{< /line >}}
-{{< line >}}[00:19:54.790] Dan Beecher: I didn't expect you to look up all of the.{{< /line >}}
-{{< line >}}[00:19:56.630] Dan Beecher: All of them, I will say.{{< /line >}}
-{{< line >}}[00:19:59.200] Dan Beecher: So let's see.{{< /line >}}
-{{< line >}}[00:20:00.200] Dan Beecher: We've had all of those.{{< /line >}}
-{{< line >}}[00:20:02.240] Dan Beecher: Bartholomew looks almost as.{{< /line >}}
-{{< line >}}[00:20:04.160] Dan Beecher: As nice as.{{< /line >}}
-{{< line >}}[00:20:05.000] Dan Beecher: As clean as Philip.{{< /line >}}
-{{< line >}}[00:20:06.160] Dan Beecher: Until you get to the Gospel of John.{{< /line >}}
-{{< line >}}[00:20:08.720] Dan McClellan: Yep.{{< /line >}}
-{{< line >}}[00:20:09.080] Dan McClellan: And then doesn't mention him.{{< /line >}}
-{{< line >}}[00:20:10.560] Dan Beecher: Well, in this thing it says, you know, on.{{< /line >}}
-{{< line >}}[00:20:13.720] Dan Beecher: On the.{{< /line >}}
-{{< line >}}[00:20:14.160] Dan Beecher: In.{{< /line >}}
-{{< line >}}[00:20:14.400] Dan Beecher: In my grid here, it says Nathanael is associated somehow with Bartholomew.{{< /line >}}
-{{< line >}}[00:20:19.840] Dan McClellan: So it's not.{{< /line >}}
-{{< line >}}[00:20:21.120] Dan McClellan: Nathanael is mentioned in the Gospel of John.{{< /line >}}
-{{< line >}}[00:20:23.840] Dan McClellan: And so the algebra here is.{{< /line >}}
-{{< line >}}[00:20:27.700] Dan McClellan: Okay, John mentions a bunch of other people who are mentioned in the synoptics.{{< /line >}}
-{{< line >}}[00:20:31.940] Dan McClellan: John doesn't ever mention Bartholomew, but he does mention this guy Nathanael, who's not mentioned in the synoptics.{{< /line >}}
-{{< line >}}[00:20:38.660] Dan McClellan: Nathanael must therefore be Bartholomew by the process of elimination, if we assume that they're telling the same story with the same characters, Nathanael would have to be Bartholomew.{{< /line >}}
-{{< line >}}[00:20:51.670] Dan McClellan: There's an argument to make for that.{{< /line >}}
-{{< line >}}[00:20:53.110] Dan McClellan: There's an argument to make against that.{{< /line >}}
-{{< line >}}[00:20:54.630] Dan McClellan: I don't know for sure.{{< /line >}}
-{{< line >}}[00:20:55.670] Dan McClellan: I don't have strong feelings about that identification.{{< /line >}}
+{{< line >}}[00:15:37.250] Dan Beecher: Yaakov. I feel like James is the worst of all of, like, that is that you... You've gone way too far down the road. Let's back it up a few steps.{{< /line >}}
+{{< line >}}[00:15:48.270] Dan McClellan: But okay, yeah, we've also got Jaime and Jamie, and we got a bunch of different variations that... That are derived from that as well. So, yeah, it's... It's a bit of a mess. But... But I think it's fascinating linguistic...{{< /line >}}
+{{< line >}}[00:16:04.790] Dan Beecher: It is fascinating. And I think we can do the same... We can do the same kind of crazy name tree with James, James's brother John. Which John. What? So do we know what the original Hebrew slash Aramaic name for that was? Which sounds like, like... So, like, I know the German Johannes is... Is... Would be a variant of... Of John that sounds more like Yohanan than John. Yeah, I can... But at least I can see a... A thread through all of those better than I can with James. But, yeah, there's... There's a thousand different John variants.{{< /line >}}
+{{< line >}}[00:16:49.260] Dan McClellan: Yeah. Yeah. So when... When people are like, was there really a dude named John living in Syria-Palestine, 2,000 years ago? And no, they were Yohanan or if they were using Greek, Ioannes or something like that. And then that goes into a bunch of different languages. We have Ian is developed from this. We have Giannis develops from this John. Hundreds of different variations. And in fact, the... This was something I discovered when I was living in England and did a little research on my own last name, McClellan. There are over a hundred different names that derive from the name McClellan. Mine isn't the... My spelling isn't the original spelling by any stretch of the imagination. But we have neighbors, the Gillilands, who... Their last name is a derivation of McClellan as well. So there are so many names are related and derived from other names. It's so fascinating when you look into it, but I think some people get confused and think because some of these things have relationships like that, that they can just arbitrarily imagine relationships that exist between other words, which is a problem that I am constantly trying to respond to on my social media channels when people are like, well, this...{{< /line >}}
+{{< line >}}[00:18:11.880] Dan McClellan: Like, what did I just hear? Oh, demos from democratic. So I just saw a video 30 minutes ago where somebody was like, that looks like demon. So Democrats are demons. And it's like, okay, so they both come from Greek, but they don't look at all alike in Greek. And so, yeah, that's... There... There are a lot of... A lot of amateur etymologists out there that should not quit their day job, but should quit being amateur etymologists.{{< /line >}}
+{{< line >}}[00:18:42.210] Dan Beecher: Well, or at very least, we should all quit listening to them if they... If they're not going to have, you know, the... The... If they're going to approach this without credentials, at very least we can all reject whatever it is that they have to say. Yeah, yeah, I'm. I'm gonna dive into. I'm. I'm just now going to. As a refresher, as a little palate cleanser, I'm going to say that in the massive grid of, you know, who's named what and where they are in the lineup and everything, Philip is delightfully easy.{{< /line >}}
+{{< line >}}[00:19:15.960] Dan McClellan: Yeah. Non. Controversial. Yeah.{{< /line >}}
+{{< line >}}[00:19:19.320] Dan Beecher: Everyone calls him Philip. No one calls him anything else. No one tacks anything onto his name or anything. Just Philip.{{< /line >}}
+{{< line >}}[00:19:26.680] Dan McClellan: You know, he didn't cause any problems. He showed up on time. He did what he was asked to do. And. And, yeah, it didn't cause any issues.{{< /line >}}
+{{< line >}}[00:19:34.390] Dan Beecher: Do we know what that name was in the. In the original.{{< /line >}}
+{{< line >}}[00:19:38.550] Dan McClellan: In the original, it probably has to do with Philippos, which would be lover of horses or something like that, if I'm. If I'm remembering correctly. But I didn't. I haven't looked that one up in a long time.{{< /line >}}
+{{< line >}}[00:19:54.790] Dan Beecher: I didn't expect you to look up all of the. All of them, I will say. So let's see. We've had all of those. Bartholomew looks almost as. As nice as. As clean as Philip. Until you get to the Gospel of John.{{< /line >}}
+{{< line >}}[00:20:08.720] Dan McClellan: Yep. And then doesn't mention him.{{< /line >}}
+{{< line >}}[00:20:10.560] Dan Beecher: Well, in this thing it says, you know, on. On the. In. In my grid here, it says Nathanael is associated somehow with Bartholomew.{{< /line >}}
+{{< line >}}[00:20:19.840] Dan McClellan: So it's not. Nathanael is mentioned in the Gospel of John. And so the algebra here is. Okay, John mentions a bunch of other people who are mentioned in the synoptics. John doesn't ever mention Bartholomew, but he does mention this guy Nathanael, who's not mentioned in the synoptics. Nathanael must therefore be Bartholomew by the process of elimination, if we assume that they're telling the same story with the same characters, Nathanael would have to be Bartholomew. There's an argument to make for that. There's an argument to make against that. I don't know for sure. I don't have strong feelings about that identification.{{< /line >}}
 {{< line >}}[00:21:00.230] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:21:01.110] Dan McClellan: But Nathanael would be a good Hebrew name.{{< /line >}}
-{{< line >}}[00:21:07.350] Dan McClellan: God has given or gift of God.{{< /line >}}
-{{< line >}}[00:21:09.830] Dan McClellan: So Nathanael in Hebrew would be the same as Theodore in Greek.{{< /line >}}
-{{< line >}}[00:21:14.230] Dan McClellan: Gift of God.{{< /line >}}
-{{< line >}}[00:21:15.270] Dan McClellan: Okay, so that would be like the Peter-Cephas thing.{{< /line >}}
-{{< line >}}[00:21:20.040] Dan McClellan: Yeah, that would be a translation into Greek.{{< /line >}}
-{{< line >}}[00:21:22.200] Dan Beecher: So in those two, the.{{< /line >}}
-{{< line >}}[00:21:23.440] Dan Beecher: The God part would be the El in Nathanael and the theos in the Theo in Theodore.{{< /line >}}
-{{< line >}}[00:21:31.160] Dan Beecher: Is that what we're talking about?{{< /line >}}
-{{< line >}}[00:21:32.360] Dan Beecher: Am I.{{< /line >}}
-{{< line >}}[00:21:32.840] Dan Beecher: Am I sounding smart at all?{{< /line >}}
+{{< line >}}[00:21:01.110] Dan McClellan: But Nathanael would be a good Hebrew name. God has given or gift of God. So Nathanael in Hebrew would be the same as Theodore in Greek. Gift of God. Okay, so that would be like the Peter-Cephas thing. Yeah, that would be a translation into Greek.{{< /line >}}
+{{< line >}}[00:21:22.200] Dan Beecher: So in those two, the. The God part would be the El in Nathanael and the theos in the Theo in Theodore. Is that what we're talking about? Am I. Am I sounding smart at all?{{< /line >}}
 {{< line >}}[00:21:34.320] Dan McClellan: Yes.{{< /line >}}
-{{< line >}}[00:21:34.640] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:21:36.040] Dan Beecher: All right.{{< /line >}}
-{{< line >}}[00:21:36.840] Dan Beecher: After Bartholomew, slash Nathanael, we have Thomas.{{< /line >}}
-{{< line >}}[00:21:40.960] Dan Beecher: Thomas.{{< /line >}}
-{{< line >}}[00:21:41.400] Dan Beecher: Thomas.{{< /line >}}
-{{< line >}}[00:21:42.200] Dan Beecher: And then Thomas, also called Didymus.{{< /line >}}
-{{< line >}}[00:21:44.840] Dan McClellan: Didymus, yes.{{< /line >}}
-{{< line >}}[00:21:45.760] Dan McClellan: Which means twin.{{< /line >}}
+{{< line >}}[00:21:34.640] Dan Beecher: Okay. All right. After Bartholomew, slash Nathanael, we have Thomas. Thomas. Thomas. And then Thomas, also called Didymus.{{< /line >}}
+{{< line >}}[00:21:44.840] Dan McClellan: Didymus, yes. Which means twin.{{< /line >}}
 {{< line >}}[00:21:47.690] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:21:48.730] Dan McClellan: And there.{{< /line >}}
-{{< line >}}[00:21:49.210] Dan McClellan: There are some.{{< /line >}}
-{{< line >}}[00:21:50.170] Dan McClellan: I've seen this claim.{{< /line >}}
-{{< line >}}[00:21:51.290] Dan McClellan: I don't know where it's coming from.{{< /line >}}
-{{< line >}}[00:21:52.490] Dan McClellan: I don't know if there's.{{< /line >}}
-{{< line >}}[00:21:53.530] Dan McClellan: If this has ever been argued by any scholars, but I've seen some folks try to argue that Thomas is Jesus's twin.{{< /line >}}
-{{< line >}}[00:22:00.810] Dan McClellan: And I think this may come from a Gnostic text.is may come from a Gnostic text.{{< /line >}}
+{{< line >}}[00:21:48.730] Dan McClellan: And there. There are some. I've seen this claim. I don't know where it's coming from. I don't know if there's. If this has ever been argued by any scholars, but I've seen some folks try to argue that Thomas is Jesus's twin. And I think this may come from a Gnostic text.is may come from a Gnostic text.{{< /line >}}
 {{< line >}}[00:22:04.250] Dan Beecher: Oh, interesting.{{< /line >}}
-{{< line >}}[00:22:05.450] Dan McClellan: From later on.{{< /line >}}
-{{< line >}}[00:22:07.530] Dan McClellan: But I have not looked deeply enough into that to have any more information than to say somebody once suggested that they think Thomas was Jesus's twin.{{< /line >}}
-{{< line >}}[00:22:17.360] Dan Beecher: Okay, well, that would change the.{{< /line >}}
-{{< line >}}[00:22:20.080] Dan Beecher: The.{{< /line >}}
-{{< line >}}[00:22:20.440] Dan Beecher: The nativity stories a lot.{{< /line >}}
-{{< line >}}[00:22:23.040] Dan Beecher: Yeah, if that.{{< /line >}}
+{{< line >}}[00:22:05.450] Dan McClellan: From later on. But I have not looked deeply enough into that to have any more information than to say somebody once suggested that they think Thomas was Jesus's twin.{{< /line >}}
+{{< line >}}[00:22:17.360] Dan Beecher: Okay, well, that would change the. The. The nativity stories a lot. Yeah, if that.{{< /line >}}
 {{< line >}}[00:22:24.640] Dan McClellan: Now you.{{< /line >}}
 {{< line >}}[00:22:26.000] Dan Beecher: I mean, now we have to hire Danny DeVito to play them.{{< /line >}}
-{{< line >}}[00:22:32.320] Dan McClellan: Them.{{< /line >}}
-{{< line >}}[00:22:32.639] Dan McClellan: Say your.{{< /line >}}
-{{< line >}}[00:22:33.120] Dan McClellan: Your back looks like a relief map of the Andes.{{< /line >}}
-{{< line >}}[00:22:38.000] Dan McClellan: Well, no, I was thinking of Life of Brian when they realized that Jesus is actually next door and they come back and take the gifts away from Brian.{{< /line >}}
-{{< line >}}[00:22:47.700] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:22:48.900] Dan Beecher: From Brian.{{< /line >}}
-{{< line >}}[00:22:51.540] Dan Beecher: From Didymus, from Thomas.{{< /line >}}
-{{< line >}}[00:22:53.340] Dan McClellan: So, yeah, Thomas.{{< /line >}}
-{{< line >}}[00:22:54.420] Dan McClellan: Thomas is just sitting there.{{< /line >}}
-{{< line >}}[00:22:55.580] Dan McClellan: Like, "Why is he getting all the attention?"{{< /line >}}
-{{< line >}}[00:22:57.460] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:22:59.300] Dan Beecher: So now I want to get to Matthew.{{< /line >}}
+{{< line >}}[00:22:32.320] Dan McClellan: Them. Say your. Your back looks like a relief map of the Andes. Well, no, I was thinking of Life of Brian when they realized that Jesus is actually next door and they come back and take the gifts away from Brian.{{< /line >}}
+{{< line >}}[00:22:47.700] Dan Beecher: Right. From Brian. From Didymus, from Thomas.{{< /line >}}
+{{< line >}}[00:22:53.340] Dan McClellan: So, yeah, Thomas. Thomas is just sitting there. Like, "Why is he getting all the attention?"{{< /line >}}
+{{< line >}}[00:22:57.460] Dan Beecher: Yeah. So now I want to get to Matthew.{{< /line >}}
 {{< line >}}[00:23:01.860] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:23:02.660] Dan Beecher: Who is referred to in the Gospel of Matthew as the publican.{{< /line >}}
 {{< line >}}[00:23:07.220] Dan McClellan: The publican, yeah.{{< /line >}}
-{{< line >}}[00:23:08.220] Dan Beecher: Is this the same Matthew?{{< /line >}}
-{{< line >}}[00:23:09.540] Dan Beecher: I mean, are these meant to be the same Matthew, the Gospel of Matthew and Matthew the publican?{{< /line >}}
-{{< line >}}[00:23:15.160] Dan McClellan: So that identification seems to be made by Papias between 120 and 130 CE. He says, "Hey, tax collector Matthew, he wrote down sayings of Jesus in Hebrew."{{< /line >}}
-{{< line >}}[00:23:32.520] Dan McClellan: And a lot of people think, "Oh, he's talking about the Gospel of Matthew."{{< /line >}}
-{{< line >}}[00:23:36.520] Dan McClellan: But it's not for another 50 to 60 years before anybody identifies this gospel as the Gospel according to Matthew.{{< /line >}}
-{{< line >}}[00:23:44.140] Dan McClellan: So, and I would also argue that the text as Papias describes it is not our Gospel of Matthew.{{< /line >}}
-{{< line >}}[00:23:50.540] Dan McClellan: It was definitely not written in Hebrew and it's not a sayings gospel.{{< /line >}}
-{{< line >}}[00:23:55.420] Dan McClellan: And so when it was, when we do finally have this identification of the Gospel of Matthew as written by Matthew, I would argue that this is based on Papias's identification.{{< /line >}}
-{{< line >}}[00:24:09.620] Dan McClellan: They're looking for an author and they're like, "Papias says Matthew wrote one. This one mentions Matthew."{{< /line >}}
-{{< line >}}[00:24:14.020] Dan McClellan: This is the only one that actually mentions the calling of Matthew by Jesus as the tax collector.{{< /line >}}
-{{< line >}}[00:24:23.700] Dan McClellan: And so they're like, natch, that one was written by Matthew.{{< /line >}}
-{{< line >}}[00:24:28.020] Dan McClellan: Because the other ones talk about the calling of Levi.{{< /line >}}
+{{< line >}}[00:23:08.220] Dan Beecher: Is this the same Matthew? I mean, are these meant to be the same Matthew, the Gospel of Matthew and Matthew the publican?{{< /line >}}
+{{< line >}}[00:23:15.160] Dan McClellan: So that identification seems to be made by Papias between 120 and 130 CE. He says, "Hey, tax collector Matthew, he wrote down sayings of Jesus in Hebrew." And a lot of people think, "Oh, he's talking about the Gospel of Matthew." But it's not for another 50 to 60 years before anybody identifies this gospel as the Gospel according to Matthew. So, and I would also argue that the text as Papias describes it is not our Gospel of Matthew. It was definitely not written in Hebrew and it's not a sayings gospel. And so when it was, when we do finally have this identification of the Gospel of Matthew as written by Matthew, I would argue that this is based on Papias's identification. They're looking for an author and they're like, "Papias says Matthew wrote one. This one mentions Matthew." This is the only one that actually mentions the calling of Matthew by Jesus as the tax collector.{{< /line >}}
+{{< line >}}[00:24:23.700] Dan McClellan: And so they're like, natch, that one was written by Matthew. Because the other ones talk about the calling of Levi.{{< /line >}}
 {{< line >}}[00:24:30.500] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:24:31.060] Dan McClellan: Not the calling of Matthew.{{< /line >}}
 {{< line >}}[00:24:32.580] Dan Beecher: And so in our grid it says Matthew Levi.{{< /line >}}
 {{< line >}}[00:24:36.120] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:24:36.600] Dan Beecher: On the Mark and Luke gospels.{{< /line >}}
 {{< line >}}[00:24:39.720] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:24:40.520] Dan Beecher: So they've just made an association between...{{< /line >}}
-{{< line >}}[00:24:42.920] Dan Beecher: These are potentially, these are not the same person.{{< /line >}}
-{{< line >}}[00:24:46.080] Dan Beecher: Or are they?{{< /line >}}
-{{< line >}}[00:24:47.240] Dan Beecher: How are we...{{< /line >}}
-{{< line >}}[00:24:48.200] Dan McClellan: Again, a lot of people would say they're the same person.{{< /line >}}
-{{< line >}}[00:24:51.799] Dan McClellan: And other people would be like, maybe they're not.{{< /line >}}
-{{< line >}}[00:24:54.920] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:24:55.240] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:24:56.200] Dan Beecher: And, and again, not mentioned by John.{{< /line >}}
-{{< line >}}[00:24:58.840] Dan Beecher: Not mentioned.{{< /line >}}
-{{< line >}}[00:24:59.680] Dan Beecher: Which feels a little catty, John not mentioning the name of another author of another...{{< /line >}}
-{{< line >}}[00:25:05.600] Dan Beecher: Or at least of a gospel.{{< /line >}}
-{{< line >}}[00:25:09.210] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:25:10.890] Dan McClellan: And then why couldn't he be more like Philip?{{< /line >}}
-{{< line >}}[00:25:13.450] Dan McClellan: John would have been happy to name him if he was more like Philip.{{< /line >}}
-{{< line >}}[00:25:16.090] Dan Beecher: If he could have been more like Philip or be like Simon Peter.{{< /line >}}
-{{< line >}}[00:25:19.850] Dan Beecher: And then just get multiple names, get all the names.{{< /line >}}
-{{< line >}}[00:25:25.770] Dan Beecher: All right, then we got another James, this is the son of Alphaeus.{{< /line >}}
-{{< line >}}[00:25:30.170] Dan Beecher: And then Thaddeus, who is also Judas.{{< /line >}}
-{{< line >}}[00:25:35.670] Dan Beecher: What the heck, Thaddeus or Lebbaeus.{{< /line >}}
-{{< line >}}[00:25:41.190] Dan McClellan: Well, we have, yeah, we have...{{< /line >}}
-{{< line >}}[00:25:44.390] Dan McClellan: And this is a textual thing.{{< /line >}}
-{{< line >}}[00:25:46.110] Dan McClellan: Some manuscripts say Thaddeus, some manuscripts say Judas. Judas.{{< /line >}}
-{{< line >}}[00:25:50.470] Dan McClellan: And those, the, the differences there are probably a product of the fact that some of the other gospels seem to put the name Judas in the place where they're expecting Thaddeus.{{< /line >}}
-{{< line >}}[00:26:04.940] Dan McClellan: And so maybe some people made some corrections here or there.{{< /line >}}
-{{< line >}}[00:26:08.540] Dan McClellan: So yeah, it's confusing, this Jude.{{< /line >}}
-{{< line >}}[00:26:13.780] Dan Beecher: Judas.{{< /line >}}
-{{< line >}}[00:26:14.460] Dan Beecher: So if it's not Thaddeus.{{< /line >}}
-{{< line >}}[00:26:15.980] Dan Beecher: So in Matthew and Mark, we've got Thaddeus.{{< /line >}}
-{{< line >}}[00:26:18.580] Dan Beecher: In Matthew, it says it's Thaddeus or Lebbaeus, called Judas the Zealot.{{< /line >}}
-{{< line >}}[00:26:26.590] Dan Beecher: We've got another zealot with all this zealotry.{{< /line >}}
-{{< line >}}[00:26:30.270] Dan Beecher: Then in Matthew, Mark, Luke, we've got Judas.{{< /line >}}
-{{< line >}}[00:26:34.910] Dan Beecher: It's listed as Judas, quote, son of James.{{< /line >}}
-{{< line >}}[00:26:40.030] Dan Beecher: And then Judas.{{< /line >}}
-{{< line >}}[00:26:41.230] Dan Beecher: And then in John, Judas.{{< /line >}}
-{{< line >}}[00:26:43.950] Dan Beecher: Not Iscariot.{{< /line >}}
+{{< line >}}[00:24:40.520] Dan Beecher: So they've just made an association between... These are potentially, these are not the same person. Or are they? How are we...{{< /line >}}
+{{< line >}}[00:24:48.200] Dan McClellan: Again, a lot of people would say they're the same person. And other people would be like, maybe they're not.{{< /line >}}
+{{< line >}}[00:24:54.920] Dan Beecher: Okay. Okay. And, and again, not mentioned by John. Not mentioned. Which feels a little catty, John not mentioning the name of another author of another... Or at least of a gospel.{{< /line >}}
+{{< line >}}[00:25:09.210] Dan McClellan: Yeah. And then why couldn't he be more like Philip? John would have been happy to name him if he was more like Philip.{{< /line >}}
+{{< line >}}[00:25:16.090] Dan Beecher: If he could have been more like Philip or be like Simon Peter. And then just get multiple names, get all the names. All right, then we got another James, this is the son of Alphaeus. And then Thaddeus, who is also Judas. What the heck, Thaddeus or Lebbaeus.{{< /line >}}
+{{< line >}}[00:25:41.190] Dan McClellan: Well, we have, yeah, we have... And this is a textual thing. Some manuscripts say Thaddeus, some manuscripts say Judas. Judas. And those, the, the differences there are probably a product of the fact that some of the other gospels seem to put the name Judas in the place where they're expecting Thaddeus. And so maybe some people made some corrections here or there. So yeah, it's confusing, this Jude.{{< /line >}}
+{{< line >}}[00:26:13.780] Dan Beecher: Judas. So if it's not Thaddeus. So in Matthew and Mark, we've got Thaddeus. In Matthew, it says it's Thaddeus or Lebbaeus, called Judas the Zealot. We've got another zealot with all this zealotry. Then in Matthew, Mark, Luke, we've got Judas. It's listed as Judas, quote, son of James. And then Judas. And then in John, Judas. Not Iscariot.{{< /line >}}
 {{< line >}}[00:26:45.470] Dan McClellan: Not that one, just the other one.{{< /line >}}
-{{< line >}}[00:26:49.310] Dan Beecher: And then.{{< /line >}}
-{{< line >}}[00:26:50.110] Dan Beecher: Yeah, so that's.{{< /line >}}
-{{< line >}}[00:26:51.950] Dan McClellan: I can see the author being like.{{< /line >}}
-{{< line >}}[00:26:53.190] Dan McClellan: And then Judas.{{< /line >}}
-{{< line >}}[00:26:54.650] Dan McClellan: Oh, not the Judas I just talked about.{{< /line >}}
-{{< line >}}[00:26:57.050] Dan McClellan: This was another guy.{{< /line >}}
+{{< line >}}[00:26:49.310] Dan Beecher: And then. Yeah, so that's.{{< /line >}}
+{{< line >}}[00:26:51.950] Dan McClellan: I can see the author being like. And then Judas. Oh, not the Judas I just talked about. This was another guy.{{< /line >}}
 {{< line >}}[00:26:58.330] Dan Beecher: Just not that one.{{< /line >}}
 {{< line >}}[00:26:59.410] Dan McClellan: Another Judas.{{< /line >}}
-{{< line >}}[00:27:00.330] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:27:02.250] Dan Beecher: And then we've got Simon that we already talked about, who's the Canaanite or the Cananaean or the Zealot or just not mentioned by John because he's kind of prone to that.{{< /line >}}
-{{< line >}}[00:27:14.010] Dan Beecher: And then, and then Judas Iscariot, son of, confusingly, Simon Iscariot, which we don't need any more.{{< /line >}}
+{{< line >}}[00:27:00.330] Dan Beecher: Yeah. And then we've got Simon that we already talked about, who's the Canaanite or the Cananaean or the Zealot or just not mentioned by John because he's kind of prone to that. And then, and then Judas Iscariot, son of, confusingly, Simon Iscariot, which we don't need any more.{{< /line >}}
 {{< line >}}[00:27:22.380] Dan McClellan: According to John.{{< /line >}}
 {{< line >}}[00:27:23.460] Dan Beecher: According to John.{{< /line >}}
 {{< line >}}[00:27:24.660] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:27:25.540] Dan Beecher: I, I'm just gonna read.{{< /line >}}
-{{< line >}}[00:27:27.620] Dan Beecher: I wanna, I do want to get to the most important name in the New Testament in just a moment, but I did want to read this.{{< /line >}}
-{{< line >}}[00:27:37.780] Dan Beecher: I, I, There's a sentence that I wanted to read from the Wikipedia article that made my head explode, and I just thought I'd share it.{{< /line >}}
+{{< line >}}[00:27:25.540] Dan Beecher: I, I'm just gonna read. I wanna, I do want to get to the most important name in the New Testament in just a moment, but I did want to read this. I, I, There's a sentence that I wanted to read from the Wikipedia article that made my head explode, and I just thought I'd share it.{{< /line >}}
 {{< line >}}[00:27:46.980] Dan McClellan: You feel nicely?{{< /line >}}
-{{< line >}}[00:27:48.740] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:27:49.100] Dan Beecher: Thank you.{{< /line >}}
-{{< line >}}[00:27:49.620] Dan Beecher: Thank you.{{< /line >}}
-{{< line >}}[00:27:51.860] Dan Beecher: Is it this one?{{< /line >}}
-{{< line >}}[00:27:52.620] Dan Beecher: Since the father of both James son of Alphaeus and Matthew is named Alphaeus according to the tradition in the Eastern Orthodox Church, the two were brothers as well.{{< /line >}}
-{{< line >}}[00:28:03.060] Dan Beecher: Oh, that's not, that's not even, that's, that's crazy right there.{{< /line >}}
-{{< line >}}[00:28:06.260] Dan Beecher: And then there's another one that says, according to the tradition of the Catholic Church, based on the writings of the Apostolic Father, Papias, the apostles James, son of Alphaeus, and Thaddeus were brothers and sons of Alphaeus, also named Clopas, and his wife Mary of Clopas, was the sister of the mother of Jesus.{{< /line >}}
-{{< line >}}[00:28:33.480] Dan Beecher: Mary had a sister named Mary.{{< /line >}}
-{{< line >}}[00:28:36.680] Dan Beecher: What's happening is this.{{< /line >}}
-{{< line >}}[00:28:39.640] Dan Beecher: Do we have a George Foreman situation here?{{< /line >}}
-{{< line >}}[00:28:42.040] Dan Beecher: I, I, like, I had to read that sentence 22 times to figure out.{{< /line >}}
-{{< line >}}[00:28:46.620] Dan McClellan: What was happening, make sure you understood it right.{{< /line >}}
-{{< line >}}[00:28:49.060] Dan McClellan: Yeah, well, there have been, you know, when these traditions kind of accrete around specific locations and specific leaders and, and specific manuscripts and texts and things like that, they develop their own little ways to deal with a lot of these incongruities, and they don't compare notes with the other guys, they just, you know, we're going to do it our way.{{< /line >}}
-{{< line >}}[00:29:10.260] Dan McClellan: And, and sometimes those ways sound more rational than, than others.{{< /line >}}
-{{< line >}}[00:29:15.310] Dan McClellan: And so, yeah, it's an issue, but certainly not the biggest issue in all of biblical interpretation, but certainly one that I think a lot of people overlook, assuming that, yeah, there were 12 apostles and that's that.{{< /line >}}
-{{< line >}}[00:29:32.990] Dan McClellan: But you can memorize a little song to help you remember the books of the New Testament in order or something like that, largely uncontroversially.{{< /line >}}
-{{< line >}}[00:29:45.880] Dan McClellan: But the song you got to memorize.{{< /line >}}
+{{< line >}}[00:27:48.740] Dan Beecher: Yeah. Thank you. Thank you. Is it this one? Since the father of both James son of Alphaeus and Matthew is named Alphaeus according to the tradition in the Eastern Orthodox Church, the two were brothers as well. Oh, that's not, that's not even, that's, that's crazy right there. And then there's another one that says, according to the tradition of the Catholic Church, based on the writings of the Apostolic Father, Papias, the apostles James, son of Alphaeus, and Thaddeus were brothers and sons of Alphaeus, also named Clopas, and his wife Mary of Clopas, was the sister of the mother of Jesus. Mary had a sister named Mary. What's happening is this. Do we have a George Foreman situation here? I, I, like, I had to read that sentence 22 times to figure out.{{< /line >}}
+{{< line >}}[00:28:46.620] Dan McClellan: What was happening, make sure you understood it right. Yeah, well, there have been, you know, when these traditions kind of accrete around specific locations and specific leaders and, and specific manuscripts and texts and things like that, they develop their own little ways to deal with a lot of these incongruities, and they don't compare notes with the other guys, they just, you know, we're going to do it our way. And, and sometimes those ways sound more rational than, than others. And so, yeah, it's an issue, but certainly not the biggest issue in all of biblical interpretation, but certainly one that I think a lot of people overlook, assuming that, yeah, there were 12 apostles and that's that. But you can memorize a little song to help you remember the books of the New Testament in order or something like that, largely uncontroversially. But the song you got to memorize.{{< /line >}}
 {{< line >}}[00:29:48.560] Dan Beecher: For this kind of go according to.{{< /line >}}
-{{< line >}}[00:29:51.120] Dan McClellan: John and according to Matthew, but then if you don't.{{< /line >}}
-{{< line >}}[00:29:53.720] Dan McClellan: And then he's.{{< /line >}}
-{{< line >}}[00:29:54.320] Dan Beecher: How many write this song?{{< /line >}}
-{{< line >}}[00:29:55.800] Dan Beecher: Yeah, it's going to be 24 verses long.{{< /line >}}
-{{< line >}}[00:29:58.120] Dan Beecher: But I want{{< /line >}}
-{{< line >}}[00:29:59.119] Dan Beecher: I want this song to exist where it's like Simon, who is Peter, who.{{< /line >}}
+{{< line >}}[00:29:51.120] Dan McClellan: John and according to Matthew, but then if you don't. And then he's.{{< /line >}}
+{{< line >}}[00:29:54.320] Dan Beecher: How many write this song? Yeah, it's going to be 24 verses long. But I want I want this song to exist where it's like Simon, who is Peter, who.{{< /line >}}
 {{< line >}}[00:30:02.560] Dan McClellan: Is Cephas, also known as Cephas, who is not the Simon that's mentioned by John in the other part of this book in the manuscript witness from the third century.{{< /line >}}
-{{< line >}}[00:30:14.330] Dan Beecher: Yeah, I like it.{{< /line >}}
-{{< line >}}[00:30:16.330] Dan Beecher: Somebody's got to write this song and.{{< /line >}}
-{{< line >}}[00:30:18.490] Dan Beecher: And I'll bet they will.{{< /line >}}
-{{< line >}}[00:30:19.410] Dan Beecher: Anyway, let's get quickly.{{< /line >}}
-{{< line >}}[00:30:21.850] Dan Beecher: You know, we could probably do a whole segment on the name of Jesus.{{< /line >}}
-{{< line >}}[00:30:27.130] Dan McClellan: That's not his name.{{< /line >}}
-{{< line >}}[00:30:29.450] Dan McClellan: Well, I just want you to.{{< /line >}}
-{{< line >}}[00:30:30.650] Dan Beecher: That's a good point.{{< /line >}}
-{{< line >}}[00:30:33.210] Dan Beecher: I feel like I can't sing.{{< /line >}}
+{{< line >}}[00:30:14.330] Dan Beecher: Yeah, I like it. Somebody's got to write this song and. And I'll bet they will. Anyway, let's get quickly. You know, we could probably do a whole segment on the name of Jesus.{{< /line >}}
+{{< line >}}[00:30:27.130] Dan McClellan: That's not his name. Well, I just want you to.{{< /line >}}
+{{< line >}}[00:30:30.650] Dan Beecher: That's a good point. I feel like I can't sing.{{< /line >}}
 {{< line >}}[00:30:35.850] Dan McClellan: Okay, sorry.{{< /line >}}
-{{< line >}}[00:30:36.810] Dan Beecher: You've had a lot of people on your TikTok come after you about that one name and.{{< /line >}}
-{{< line >}}[00:30:42.990] Dan Beecher: Yeah, and you've also exposed a lot of people who, like, claim that they know the original name and there's meaning behind it and all of this stuff.{{< /line >}}
-{{< line >}}[00:30:50.470] Dan McClellan: There's a weird genre of, like, entrepreneurial bro, like, who just randomly starts sharing videos about Jesus's name and where it comes from, and obviously not even remotely informed about these things, but for some reason, this adds value to their entrepreneurial endeavors on social media.{{< /line >}}
-{{< line >}}[00:31:15.050] Dan McClellan: I don't understand this.{{< /line >}}
-{{< line >}}[00:31:16.650] Dan Beecher: They have this.{{< /line >}}
-{{< line >}}[00:31:18.410] Dan Beecher: I mean, you call them a bro, they have this braggadocio about them where it's like, if you really knew the real name of Jesus, you wouldn't be coming at me with your nonsense.{{< /line >}}
-{{< line >}}[00:31:27.930] Dan Beecher: Yeah, I know the real name of Jesus, and therefore I'm somehow better.{{< /line >}}
-{{< line >}}[00:31:33.530] Dan Beecher: Yeah, yeah.{{< /line >}}
-{{< line >}}[00:31:34.730] Dan Beecher: So.{{< /line >}}
-{{< line >}}[00:31:35.210] Dan Beecher: So, okay.{{< /line >}}
+{{< line >}}[00:30:36.810] Dan Beecher: You've had a lot of people on your TikTok come after you about that one name and. Yeah, and you've also exposed a lot of people who, like, claim that they know the original name and there's meaning behind it and all of this stuff.{{< /line >}}
+{{< line >}}[00:30:50.470] Dan McClellan: There's a weird genre of, like, entrepreneurial bro, like, who just randomly starts sharing videos about Jesus's name and where it comes from, and obviously not even remotely informed about these things, but for some reason, this adds value to their entrepreneurial endeavors on social media. I don't understand this.{{< /line >}}
+{{< line >}}[00:31:16.650] Dan Beecher: They have this. I mean, you call them a bro, they have this braggadocio about them where it's like, if you really knew the real name of Jesus, you wouldn't be coming at me with your nonsense. Yeah, I know the real name of Jesus, and therefore I'm somehow better. Yeah, yeah. So. So, okay.{{< /line >}}
 {{< line >}}[00:31:36.090] Dan McClellan: Doesn't believe any of it either, but wants to let you know that I know better than you.{{< /line >}}
 {{< line >}}[00:31:40.970] Dan Beecher: So there wasn't a guy walking around in Judea named Jesus.{{< /line >}}
-{{< line >}}[00:31:45.370] Dan McClellan: Right.{{< /line >}}
-{{< line >}}[00:31:45.770] Dan McClellan: They didn't say, hey, Jesus, back in the first century CE.{{< /line >}}
+{{< line >}}[00:31:45.370] Dan McClellan: Right. They didn't say, hey, Jesus, back in the first century CE.{{< /line >}}
 {{< line >}}[00:31:52.570] Dan Beecher: So what did they say?{{< /line >}}
-{{< line >}}[00:31:55.210] Dan McClellan: That's tricky.{{< /line >}}
-{{< line >}}[00:31:57.850] Dan McClellan: We have, we have to reconstruct what was going on anciently.{{< /line >}}
-{{< line >}}[00:32:01.490] Dan McClellan: But to begin, we go back to the Hebrew Bible and we got this.{{< /line >}}
-{{< line >}}[00:32:04.810] Dan McClellan: This name that is usually translated as Joshua. Yehoshua is, is how it is used in the Hebrew.{{< /line >}}
-{{< line >}}[00:32:18.540] Dan McClellan: And this is.{{< /line >}}
-{{< line >}}[00:32:21.260] Dan McClellan: And it means Adonai saves or Adonai delivers or something like that.{{< /line >}}
-{{< line >}}[00:32:26.060] Dan McClellan: And this is Joshua son of Nun, who takes over after Moses.{{< /line >}}
-{{< line >}}[00:32:31.420] Dan McClellan: And when we get into the post-exilic period, into the Greco-Roman period, so we're talking about after 500 BCE, between 500 and the period of the New Testament, the name seems to change into this Aramaic variant that seems to be spelled, at least in the text, it's spelled Yeshua.{{< /line >}}
-{{< line >}}[00:32:55.350] Dan McClellan: And the Greek transliteration, as we have it, seems to be Jesus.{{< /line >}}
-{{< line >}}[00:33:02.320] Dan McClellan: Now, the transliteration into Jesus or Iesous is how some folks do it.{{< /line >}}
-{{< line >}}[00:33:08.720] Dan McClellan: There are different ways to reconstruct the pronunciation, but that transliteration predates the New Testament, predates the birth of Jesus.{{< /line >}}
-{{< line >}}[00:33:16.600] Dan McClellan: It comes from a couple centuries BCE.{{< /line >}}
+{{< line >}}[00:31:55.210] Dan McClellan: That's tricky. We have, we have to reconstruct what was going on anciently. But to begin, we go back to the Hebrew Bible and we got this. This name that is usually translated as Joshua. Yehoshua is, is how it is used in the Hebrew. And this is. And it means Adonai saves or Adonai delivers or something like that. And this is Joshua son of Nun, who takes over after Moses. And when we get into the post-exilic period, into the Greco-Roman period, so we're talking about after 500 BCE, between 500 and the period of the New Testament, the name seems to change into this Aramaic variant that seems to be spelled, at least in the text, it's spelled Yeshua.{{< /line >}}
+{{< line >}}[00:32:55.350] Dan McClellan: And the Greek transliteration, as we have it, seems to be Jesus. Now, the transliteration into Jesus or Iesous is how some folks do it. There are different ways to reconstruct the pronunciation, but that transliteration predates the New Testament, predates the birth of Jesus. It comes from a couple centuries BCE.{{< /line >}}
 {{< line >}}[00:33:20.160] Dan Beecher: Oh, interesting.{{< /line >}}
-{{< line >}}[00:33:21.120] Dan McClellan: A transliteration of this Aramaic variant on the name Yehoshua, Joshua.{{< /line >}}
-{{< line >}}[00:33:26.760] Dan McClellan: And so we already see what we find in the Greek New Testament, in the Septuagint translation, the ancient Greek translation of the Hebrew Bible.{{< /line >}}
-{{< line >}}[00:33:37.320] Dan McClellan: And so this is just, just like we've been talking about.{{< /line >}}
-{{< line >}}[00:33:40.080] Dan McClellan: Petros.{{< /line >}}
-{{< line >}}[00:33:41.880] Dan McClellan: An English transliteration is Peter.{{< /line >}}
-{{< line >}}[00:33:45.480] Dan McClellan: Jesus is a transliteration of.{{< /line >}}
-{{< line >}}[00:33:49.400] Dan McClellan: However this Aramaic name was pronounced.{{< /line >}}
-{{< line >}}[00:33:52.450] Dan McClellan: Now, Jesus walking around in Galilee was not being referred to in a Greek transliteration, was being referred to in Aramaic.{{< /line >}}
-{{< line >}}[00:34:01.650] Dan McClellan: And scholars have pointed out that the pronunciation conventions in the Galilee were probably slightly different from what we get in other regions.{{< /line >}}
-{{< line >}}[00:34:12.210] Dan McClellan: And one of the things that they've noted is there's a letter called an ayin which is in this name, and it's kind of a glottal stop.here are indications from not many contemporary texts, but particularly from later rabbinic texts, that the Galileans were known for not really pronouncing their ayins very well or just dropping them off entirely.{{< /line >}}
-{{< line >}}[00:34:37.200] Dan McClellan: And so if the ayin was pronounced anciently in Aramaic, the name Yeshua would have been Yeshua.{{< /line >}}
-{{< line >}}[00:34:45.429] Dan McClellan: And then we have this glottal stop.{{< /line >}}
-{{< line >}}[00:34:48.069] Dan McClellan: And if the Galileans didn't pronounce that glottal stop or pronounced it poorly, it would have just been Yeshu or Yeshu.{{< /line >}}
-{{< line >}}[00:34:56.309] Dan McClellan: So with a short e or a long e at the beginning.{{< /line >}}
-{{< line >}}[00:34:58.629] Dan McClellan: But that a was probably something that was added later in the manuscripts.{{< /line >}}
-{{< line >}}[00:35:04.629] Dan McClellan: There's a complex linguistic argument for why that is.{{< /line >}}
-{{< line >}}[00:35:08.349] Dan McClellan: But in short, I think the scholarship is moving in the direction of suggesting if you were talking to Jesus in Galilee in the early first century CE, he would have referred to himself as Yeshu or Yeshu.{{< /line >}}
-{{< line >}}[00:35:23.770] Dan McClellan: So that's probably how his name was pronounced.{{< /line >}}
-{{< line >}}[00:35:27.530] Dan McClellan: When it goes into Greek, we have Iesous now, so we still don't have that ah on the end.{{< /line >}}
-{{< line >}}[00:35:32.970] Dan McClellan: It's not Yeshua or.{{< /line >}}
-{{< line >}}[00:35:34.810] Dan McClellan: Or anything like that, or Iesous in.{{< /line >}}
-{{< line >}}[00:35:38.290] Dan McClellan: In the Greek transliteration.{{< /line >}}
-{{< line >}}[00:35:39.570] Dan McClellan: It's just Jesus or Iesous or however you want to reconstruct that pronunciation.{{< /line >}}
-{{< line >}}[00:35:45.270] Dan McClellan: And then that goes into Latin as Iesus or something, or words to that effect.{{< /line >}}
-{{< line >}}[00:35:52.310] Dan McClellan: So the earliest English translations of the Bible actually transliterate straight from the Latin, which is pretty cut and dry.{{< /line >}}
-{{< line >}}[00:36:02.070] Dan McClellan: Iesus, Jesus or Iesus or Iesous.{{< /line >}}
-{{< line >}}[00:36:08.460] Dan McClellan: It was probably pronounced a bunch of different ways.{{< /line >}}
-{{< line >}}[00:36:10.260] Dan McClellan: So the first edition of the King James Version, which, by the way, wasn't remotely the first English translation of the Bible, but for many years, the King James Version used Iesus.{{< /line >}}
-{{< line >}}[00:36:21.500] Dan McClellan: And it was not until decades later that we get the introduction of the J in the English alphabet.{{< /line >}}
-{{< line >}}[00:36:32.460] Dan McClellan: And some folks argue that the I was being pronounced close to what the J represented in the 17th century.{{< /line >}}
-{{< line >}}[00:36:42.590] Dan McClellan: Other folks say, no, the J kind of altered the way the I was pronounced.{{< /line >}}
-{{< line >}}[00:36:47.510] Dan McClellan: But once we get the J, that stands in as the consonantal use of I, so it starts the word, and we're going to use it more as a consonant than as a vowel.{{< /line >}}
-{{< line >}}[00:36:59.710] Dan McClellan: So we get Jesus.{{< /line >}}
-{{< line >}}[00:37:01.790] Dan McClellan: So it is a natural development within the language.{{< /line >}}
-{{< line >}}[00:37:05.150] Dan McClellan: It's not like it's a different name.{{< /line >}}
-{{< line >}}[00:37:07.830] Dan McClellan: There are some people who are like, oh, Jesus means Hail Zeus, which is absolutely laughable.{{< /line >}}
+{{< line >}}[00:33:21.120] Dan McClellan: A transliteration of this Aramaic variant on the name Yehoshua, Joshua. And so we already see what we find in the Greek New Testament, in the Septuagint translation, the ancient Greek translation of the Hebrew Bible. And so this is just, just like we've been talking about. Petros. An English transliteration is Peter. Jesus is a transliteration of. However this Aramaic name was pronounced. Now, Jesus walking around in Galilee was not being referred to in a Greek transliteration, was being referred to in Aramaic. And scholars have pointed out that the pronunciation conventions in the Galilee were probably slightly different from what we get in other regions. And one of the things that they've noted is there's a letter called an ayin which is in this name, and it's kind of a glottal stop.here are indications from not many contemporary texts, but particularly from later rabbinic texts, that the Galileans were known for not really pronouncing their ayins very well or just dropping them off entirely.{{< /line >}}
+{{< line >}}[00:34:37.200] Dan McClellan: And so if the ayin was pronounced anciently in Aramaic, the name Yeshua would have been Yeshua. And then we have this glottal stop. And if the Galileans didn't pronounce that glottal stop or pronounced it poorly, it would have just been Yeshu or Yeshu. So with a short e or a long e at the beginning. But that a was probably something that was added later in the manuscripts. There's a complex linguistic argument for why that is. But in short, I think the scholarship is moving in the direction of suggesting if you were talking to Jesus in Galilee in the early first century CE, he would have referred to himself as Yeshu or Yeshu. So that's probably how his name was pronounced. When it goes into Greek, we have Iesous now, so we still don't have that ah on the end. It's not Yeshua or. Or anything like that, or Iesous in.{{< /line >}}
+{{< line >}}[00:35:38.290] Dan McClellan: In the Greek transliteration. It's just Jesus or Iesous or however you want to reconstruct that pronunciation. And then that goes into Latin as Iesus or something, or words to that effect. So the earliest English translations of the Bible actually transliterate straight from the Latin, which is pretty cut and dry. Iesus, Jesus or Iesus or Iesous. It was probably pronounced a bunch of different ways. So the first edition of the King James Version, which, by the way, wasn't remotely the first English translation of the Bible, but for many years, the King James Version used Iesus. And it was not until decades later that we get the introduction of the J in the English alphabet. And some folks argue that the I was being pronounced close to what the J represented in the 17th century.{{< /line >}}
+{{< line >}}[00:36:42.590] Dan McClellan: Other folks say, no, the J kind of altered the way the I was pronounced. But once we get the J, that stands in as the consonantal use of I, so it starts the word, and we're going to use it more as a consonant than as a vowel. So we get Jesus. So it is a natural development within the language. It's not like it's a different name. There are some people who are like, oh, Jesus means Hail Zeus, which is absolutely laughable.{{< /line >}}
 {{< line >}}[00:37:16.310] Dan Beecher: I've never heard that.{{< /line >}}
-{{< line >}}[00:37:17.510] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:37:17.870] Dan McClellan: Oh, yeah, yeah, I love that.{{< /line >}}
-{{< line >}}[00:37:20.230] Dan McClellan: So, like, that's not his name that means Hail Zeus.{{< /line >}}
-{{< line >}}[00:37:22.990] Dan McClellan: It doesn't mean anything remotely like Hail Zeus.{{< /line >}}
-{{< line >}}[00:37:25.990] Dan McClellan: It's just a transliteration that has been following the phonetic development of the English language.{{< /line >}}
-{{< line >}}[00:37:37.170] Dan McClellan: And so Jesus is a perfectly legitimate transliteration of this, just like James is a perfectly legitimate transliteration of Yaakov or Jacob.{{< /line >}}
-{{< line >}}[00:37:49.010] Dan McClellan: And so there's no reason to be upset about this.{{< /line >}}
-{{< line >}}[00:37:52.930] Dan McClellan: There are folks who think there is some kind of metaphysical power in how we pronounce the name, who are like, you have to say Joshua.{{< /line >}}
-{{< line >}}[00:37:59.450] Dan McClellan: Well, that's wrong too.{{< /line >}}
-{{< line >}}[00:38:01.370] Dan McClellan: Oh, you have to say Yeshua.{{< /line >}}
-{{< line >}}[00:38:03.690] Dan McClellan: Well, that's also kind of wrong too.{{< /line >}}
-{{< line >}}[00:38:06.330] Dan McClellan: So if there's metaphysical power in that, there are very few people who are getting it right.{{< /line >}}
-{{< line >}}[00:38:11.610] Dan McClellan: And so I think people need to just chill about the name.{{< /line >}}
-{{< line >}}[00:38:16.410] Dan McClellan: Jesus is perfectly fine.{{< /line >}}
-{{< line >}}[00:38:18.330] Dan McClellan: I think a lot of people are just trying to make themselves sound better informed than other people to try to prop themselves up.{{< /line >}}
-{{< line >}}[00:38:27.040] Dan McClellan: And it has a lot more to do with pride than being more informed about these things.{{< /line >}}
-{{< line >}}[00:38:32.800] Dan Beecher: I am fascinated.{{< /line >}}
-{{< line >}}[00:38:33.880] Dan Beecher: You know, I don't want to get too deep into this where, you know, this segment's going long, but I do love that it does seem weird that we don't call him Joshua.hat we don't call him Joshua.{{< /line >}}
-{{< line >}}[00:38:44.240] Dan Beecher: It just seems like that as a, as a transliteration is so much closer.{{< /line >}}
-{{< line >}}[00:38:47.760] Dan Beecher: Is and, and has also just as much of a, of a, of a sort of traditional tradition.{{< /line >}}
-{{< line >}}[00:38:54.590] Dan McClellan: Well, there are two reasons for that, I would point out.{{< /line >}}
-{{< line >}}[00:38:57.030] Dan McClellan: First, Joshua is directly from Yehoshua, which preserves the ho sound, which is absent from the Aramaic variant Yeshua.{{< /line >}}
-{{< line >}}[00:39:08.670] Dan McClellan: So the ho isn't there in the way Jesus's name was pronounced in the first century.{{< /line >}}
-{{< line >}}[00:39:13.390] Dan McClellan: So Joshua would also be inaccurate in that regard.{{< /line >}}
-{{< line >}}[00:39:15.950] Dan McClellan: But also, and this is a part that a lot of people get uncomfortable with, Jesus is only attested in Greek texts.{{< /line >}}
-{{< line >}}[00:39:24.070] Dan McClellan: And so we are going with what the texts use rather than saying, I'm going to artificially impose what the text should have been using or something like that.{{< /line >}}
+{{< line >}}[00:37:17.510] Dan McClellan: Yeah. Oh, yeah, yeah, I love that. So, like, that's not his name that means Hail Zeus. It doesn't mean anything remotely like Hail Zeus. It's just a transliteration that has been following the phonetic development of the English language. And so Jesus is a perfectly legitimate transliteration of this, just like James is a perfectly legitimate transliteration of Yaakov or Jacob. And so there's no reason to be upset about this. There are folks who think there is some kind of metaphysical power in how we pronounce the name, who are like, you have to say Joshua. Well, that's wrong too. Oh, you have to say Yeshua. Well, that's also kind of wrong too. So if there's metaphysical power in that, there are very few people who are getting it right. And so I think people need to just chill about the name. Jesus is perfectly fine.{{< /line >}}
+{{< line >}}[00:38:18.330] Dan McClellan: I think a lot of people are just trying to make themselves sound better informed than other people to try to prop themselves up. And it has a lot more to do with pride than being more informed about these things.{{< /line >}}
+{{< line >}}[00:38:32.800] Dan Beecher: I am fascinated. You know, I don't want to get too deep into this where, you know, this segment's going long, but I do love that it does seem weird that we don't call him Joshua.hat we don't call him Joshua. It just seems like that as a, as a transliteration is so much closer. Is and, and has also just as much of a, of a, of a sort of traditional tradition.{{< /line >}}
+{{< line >}}[00:38:54.590] Dan McClellan: Well, there are two reasons for that, I would point out. First, Joshua is directly from Yehoshua, which preserves the ho sound, which is absent from the Aramaic variant Yeshua. So the ho isn't there in the way Jesus's name was pronounced in the first century. So Joshua would also be inaccurate in that regard. But also, and this is a part that a lot of people get uncomfortable with, Jesus is only attested in Greek texts. And so we are going with what the texts use rather than saying, I'm going to artificially impose what the text should have been using or something like that.{{< /line >}}
 {{< line >}}[00:39:36.069] Dan Beecher: Okay, that makes sense.{{< /line >}}
-{{< line >}}[00:39:37.190] Dan McClellan: And so Joshua would be saying, we're not going to do what the gospel authors said.{{< /line >}}
-{{< line >}}[00:39:42.550] Dan McClellan: We're not going to do what the original text that referred to Jesus said.{{< /line >}}
-{{< line >}}[00:39:46.110] Dan McClellan: We're going to go back, go back and say we're taking from this, from this earlier tradition that is not connected to Jesus.{{< /line >}}
-{{< line >}}[00:39:52.980] Dan McClellan: So, and, you know, there, you can disagree with that.{{< /line >}}
-{{< line >}}[00:39:57.620] Dan McClellan: There, there are folks who will try to use an Aramaic transliteration in their renderings of the text.{{< /line >}}
-{{< line >}}[00:40:02.700] Dan McClellan: And I mean, you know, you're not going to get struck by lightning, not by me at least.{{< /line >}}
-{{< line >}}[00:40:07.940] Dan McClellan: So there's nothing wrong with that.{{< /line >}}
-{{< line >}}[00:40:09.620] Dan McClellan: But at the same time, yeah, there's, there are perfectly good and valid reasons for doing it the way folks are doing it.{{< /line >}}
-{{< line >}}[00:40:18.910] Dan Beecher: Okay, well, then I will agree to not call Jesus Joshua, but I won't.{{< /line >}}
-{{< line >}}[00:40:24.110] Dan Beecher: But I am going to start calling James Jacob, because that just seems obvious to me.{{< /line >}}
-{{< line >}}[00:40:29.110] Dan McClellan: Yeah, all right.{{< /line >}}
-{{< line >}}[00:40:31.230] Dan McClellan: Well, yeah, that would be fine.{{< /line >}}
-{{< line >}}[00:40:33.310] Dan Beecher: Okay, good.{{< /line >}}
-{{< line >}}[00:40:34.590] Dan Beecher: You know, there is another fascinating apostle that we need to get to, so I say we move on to that.{{< /line >}}
+{{< line >}}[00:39:37.190] Dan McClellan: And so Joshua would be saying, we're not going to do what the gospel authors said. We're not going to do what the original text that referred to Jesus said. We're going to go back, go back and say we're taking from this, from this earlier tradition that is not connected to Jesus. So, and, you know, there, you can disagree with that. There, there are folks who will try to use an Aramaic transliteration in their renderings of the text. And I mean, you know, you're not going to get struck by lightning, not by me at least. So there's nothing wrong with that. But at the same time, yeah, there's, there are perfectly good and valid reasons for doing it the way folks are doing it.{{< /line >}}
+{{< line >}}[00:40:18.910] Dan Beecher: Okay, well, then I will agree to not call Jesus Joshua, but I won't. But I am going to start calling James Jacob, because that just seems obvious to me.{{< /line >}}
+{{< line >}}[00:40:29.110] Dan McClellan: Yeah, all right. Well, yeah, that would be fine.{{< /line >}}
+{{< line >}}[00:40:33.310] Dan Beecher: Okay, good. You know, there is another fascinating apostle that we need to get to, so I say we move on to that.{{< /line >}}
 {{< line >}}[00:40:43.130] Dan McClellan: Okay, let's do it.{{< /line >}}
-{{< line >}}[00:40:47.290] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:40:49.210] Dan Beecher: We're introducing this new segment, Women in the Bible, because I, you know, it's, it's something we've already talked about a few times without calling it its own segment, but it is an important thing.{{< /line >}}
+{{< line >}}[00:40:47.290] Dan Beecher: Okay. We're introducing this new segment, Women in the Bible, because I, you know, it's, it's something we've already talked about a few times without calling it its own segment, but it is an important thing.{{< /line >}}
 {{< line >}}[00:40:58.650] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:40:59.450] Dan Beecher: And we were taking as our reading for the day, Romans 16.{{< /line >}}
-{{< line >}}[00:41:06.090] Dan Beecher: This is the final chapter of St. Paul's Epistle to the Romans.{{< /line >}}
-{{< line >}}[00:41:13.240] Dan Beecher: And, and it's.{{< /line >}}
-{{< line >}}[00:41:15.000] Dan Beecher: It's nice.{{< /line >}}
-{{< line >}}[00:41:15.800] Dan Beecher: It's just a.{{< /line >}}
-{{< line >}}[00:41:16.760] Dan Beecher: He's just calling out to a whole bunch of friends, hey, say hi to our friends here and our friends there.{{< /line >}}
+{{< line >}}[00:40:59.450] Dan Beecher: And we were taking as our reading for the day, Romans 16. This is the final chapter of St. Paul's Epistle to the Romans. And, and it's. It's nice. It's just a. He's just calling out to a whole bunch of friends, hey, say hi to our friends here and our friends there.{{< /line >}}
 {{< line >}}[00:41:21.760] Dan McClellan: And shout out Ampliatus.{{< /line >}}
-{{< line >}}[00:41:23.960] Dan Beecher: Yeah, yeah.{{< /line >}}
-{{< line >}}[00:41:25.040] Dan Beecher: Who's a great guy.{{< /line >}}
-{{< line >}}[00:41:26.280] Dan Beecher: Everybody loves him.{{< /line >}}
-{{< line >}}[00:41:27.640] Dan Beecher: The family of Narcissus and whatever.{{< /line >}}
-{{< line >}}[00:41:30.920] Dan Beecher: But right in the middle, there is something that has befuddled and.{{< /line >}}
-{{< line >}}[00:41:36.260] Dan Beecher: And bedeviled many a reader of it, which is.{{< /line >}}
-{{< line >}}[00:41:40.980] Dan Beecher: Starts on.{{< /line >}}
-{{< line >}}[00:41:41.660] Dan Beecher: Which is verse seven where he says greet.{{< /line >}}
-{{< line >}}[00:41:46.580] Dan Beecher: And now I. I am taking.{{< /line >}}
-{{< line >}}[00:41:48.620] Dan Beecher: I.{{< /line >}}
-{{< line >}}[00:41:48.980] Dan Beecher: This is from the.{{< /line >}}
-{{< line >}}[00:41:50.340] Dan Beecher: The NRSV.{{< /line >}}
+{{< line >}}[00:41:23.960] Dan Beecher: Yeah, yeah. Who's a great guy. Everybody loves him. The family of Narcissus and whatever. But right in the middle, there is something that has befuddled and. And bedeviled many a reader of it, which is. Starts on. Which is verse seven where he says greet. And now I. I am taking. I. This is from the. The NRSV.{{< /line >}}
 {{< line >}}[00:41:51.540] Dan McClellan: Okay.{{< /line >}}
-{{< line >}}[00:41:53.540] Dan Beecher: And that will become important in a minute because different translations definitely have a different take on this.{{< /line >}}
-{{< line >}}[00:42:02.820] Dan Beecher: On this particular verse.{{< /line >}}
-{{< line >}}[00:42:04.270] Dan McClellan: Verse.{{< /line >}}
-{{< line >}}[00:42:04.510] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:42:04.870] Dan McClellan: Strong feelings about this.{{< /line >}}
-{{< line >}}[00:42:06.350] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:42:07.550] Dan Beecher: So from.{{< /line >}}
-{{< line >}}[00:42:08.350] Dan Beecher: From the NRSV, greet Andronicus and Junia, my fellow Israelites who were imprisoned with me.{{< /line >}}
-{{< line >}}[00:42:16.830] Dan Beecher: They are prominent among the apostles, and they were in Christ before I was.{{< /line >}}
-{{< line >}}[00:42:24.510] Dan Beecher: Now that's.{{< /line >}}
-{{< line >}}[00:42:25.950] Dan Beecher: There's a lot packed into that one thing, but I think the.{{< /line >}}
-{{< line >}}[00:42:30.450] Dan Beecher: The thing that we're going to focus on is that name Junia and, and the idea that this person could have been prominent among the apostles.h.{{< /line >}}
+{{< line >}}[00:41:53.540] Dan Beecher: And that will become important in a minute because different translations definitely have a different take on this. On this particular verse.{{< /line >}}
+{{< line >}}[00:42:04.270] Dan McClellan: Verse. Yeah. Strong feelings about this.{{< /line >}}
+{{< line >}}[00:42:06.350] Dan Beecher: Yeah. So from. From the NRSV, greet Andronicus and Junia, my fellow Israelites who were imprisoned with me. They are prominent among the apostles, and they were in Christ before I was. Now that's. There's a lot packed into that one thing, but I think the. The thing that we're going to focus on is that name Junia and, and the idea that this person could have been prominent among the apostles.h.{{< /line >}}
 {{< line >}}[00:42:44.370] Dan McClellan: Is.{{< /line >}}
 {{< line >}}[00:42:44.770] Dan Beecher: Is it me or is that a lady apostle?{{< /line >}}
-{{< line >}}[00:42:49.650] Dan McClellan: So, yes, this.{{< /line >}}
-{{< line >}}[00:42:51.970] Dan McClellan: The academic consensus right now, I would argue, and I think I'm supported by.{{< /line >}}
-{{< line >}}[00:42:56.780] Dan McClellan: By most scholars, is that this name is a feminine name.{{< /line >}}
-{{< line >}}[00:43:03.180] Dan McClellan: Now, there has been controversy for some time, but a lot of people might be surprised to hear that this controversy is actually quite new regarding how we.{{< /line >}}
-{{< line >}}[00:43:17.660] Dan McClellan: How we accentuate this name, because this name could be masculine or feminine with the spelling that we find in the Greek of Romans 16:7.{{< /line >}}
-{{< line >}}[00:43:27.500] Dan McClellan: The difference would be what accent you put on what syllable of the word.{{< /line >}}
-{{< line >}}[00:43:33.420] Dan McClellan: And unfortunately, the earliest manuscripts of the New Testament, in fact, the manuscripts for centuries after the New Testament was written did not put in accents.{{< /line >}}
-{{< line >}}[00:43:44.540] Dan McClellan: Accents were added centuries later.{{< /line >}}
-{{< line >}}[00:43:47.260] Dan McClellan: And so we are basically going with traditional accentuation, or if we want to try to revise that accentuation, that's just based on our own judgment calls.{{< /line >}}
+{{< line >}}[00:42:49.650] Dan McClellan: So, yes, this. The academic consensus right now, I would argue, and I think I'm supported by. By most scholars, is that this name is a feminine name. Now, there has been controversy for some time, but a lot of people might be surprised to hear that this controversy is actually quite new regarding how we. How we accentuate this name, because this name could be masculine or feminine with the spelling that we find in the Greek of Romans 16:7. The difference would be what accent you put on what syllable of the word. And unfortunately, the earliest manuscripts of the New Testament, in fact, the manuscripts for centuries after the New Testament was written did not put in accents. Accents were added centuries later. And so we are basically going with traditional accentuation, or if we want to try to revise that accentuation, that's just based on our own judgment calls.{{< /line >}}
 {{< line >}}[00:43:58.920] Dan McClellan: And there is no early Christian author who identifies this name as a masculine name until the 1200s.{{< /line >}}
 {{< line >}}[00:44:07.240] Dan Beecher: Oh, wow.{{< /line >}}
-{{< line >}}[00:44:08.040] Dan McClellan: And we have several early Christian authors and authorities who make reference to Junia, either just acknowledging that it is a feminine name or actually praising Junia for being a woman apostle.{{< /line >}}
-{{< line >}}[00:44:25.250] Dan McClellan: In fact, there's a prominent, I think, Bishop of Constantinople, if I'm not wrong.{{< /line >}}
-{{< line >}}[00:44:31.810] Dan McClellan: John Chrysostom, writing just before or around the year 400 CE, basically says, wow, can you imagine this person being how cool this person was?{{< /line >}}
-{{< line >}}[00:44:45.330] Dan McClellan: To be a woman apostle, just being an apostle is one thing, but to be a woman apostle, how great she must have been.{{< /line >}}
-{{< line >}}[00:44:54.410] Dan McClellan: And we have no disagreements with this identification of Junia as a woman until the 13th century.{{< /line >}}
-{{< line >}}[00:45:02.730] Dan McClellan: And so the record is not strong for those who are arguing that this is a masculine name.{{< /line >}}
-{{< line >}}[00:45:08.090] Dan McClellan: Additionally, if we go look into other occurrences of this name, this name doesn't really appear much in Greek.{{< /line >}}
-{{< line >}}[00:45:15.200] Dan McClellan: Primarily it appears in Latin.{{< /line >}}
-{{< line >}}[00:45:16.880] Dan McClellan: But there are over 200 occurrences of this name in Latin in the first century CE, and every single one of them is a feminine name.{{< /line >}}
-{{< line >}}[00:45:26.760] Dan McClellan: There's one occurrence in all of known history of this name as a masculine name, and that comes from a century later.{{< /line >}}
+{{< line >}}[00:44:08.040] Dan McClellan: And we have several early Christian authors and authorities who make reference to Junia, either just acknowledging that it is a feminine name or actually praising Junia for being a woman apostle. In fact, there's a prominent, I think, Bishop of Constantinople, if I'm not wrong. John Chrysostom, writing just before or around the year 400 CE, basically says, wow, can you imagine this person being how cool this person was? To be a woman apostle, just being an apostle is one thing, but to be a woman apostle, how great she must have been. And we have no disagreements with this identification of Junia as a woman until the 13th century. And so the record is not strong for those who are arguing that this is a masculine name.{{< /line >}}
+{{< line >}}[00:45:08.090] Dan McClellan: Additionally, if we go look into other occurrences of this name, this name doesn't really appear much in Greek. Primarily it appears in Latin. But there are over 200 occurrences of this name in Latin in the first century CE, and every single one of them is a feminine name. There's one occurrence in all of known history of this name as a masculine name, and that comes from a century later.{{< /line >}}
 {{< line >}}[00:45:35.440] Dan Beecher: Oh, wow.{{< /line >}}
-{{< line >}}[00:45:36.480] Dan McClellan: And so the data do not support the identification of Junia as a man.{{< /line >}}
-{{< line >}}[00:45:42.770] Dan McClellan: The data overwhelmingly support identifying Junia as a woman.{{< /line >}}
-{{< line >}}[00:45:48.770] Dan McClellan: And so it would seem to suggest that Andronicus and Junia.{{< /line >}}
-{{< line >}}[00:45:51.770] Dan McClellan: Now frequently when Paul mentions a man and a woman together, they're either relatives of each other.{{< /line >}}
-{{< line >}}[00:45:58.130] Dan McClellan: More often they are husband and wife.{{< /line >}}
-{{< line >}}[00:46:00.290] Dan McClellan: So some folks suggest that Andronicus and Junia are husband and wife.{{< /line >}}
-{{< line >}}[00:46:05.650] Dan McClellan: That may or may not be the case.{{< /line >}}
-{{< line >}}[00:46:07.250] Dan McClellan: I'm not arguing for that right now, but I would argue that Junia is definitely a feminine name.{{< /line >}}
-{{< line >}}[00:46:13.910] Dan Beecher: I did read an article that.{{< /line >}}
-{{< line >}}[00:46:15.270] Dan Beecher: That linked them as husband and wife.{{< /line >}}
-{{< line >}}[00:46:17.990] Dan Beecher: Was absolutely certain of it.{{< /line >}}
-{{< line >}}[00:46:19.430] Dan Beecher: And not only was certain that.{{< /line >}}
-{{< line >}}[00:46:21.190] Dan Beecher: That they were husband and wife, but literally, like, kept pounding it home, which I didn't understand.{{< /line >}}
-{{< line >}}[00:46:27.350] Dan Beecher: I didn't understand why it was important to that author to make sure that we all understood that this was a couple who was a husband and wife.{{< /line >}}
-{{< line >}}[00:46:36.030] Dan McClellan: But, yeah, I mean, there are certainly situations where.{{< /line >}}
-{{< line >}}[00:46:39.390] Dan McClellan: Where that would be.{{< /line >}}
-{{< line >}}[00:46:41.480] Dan McClellan: That would be more meaningful than others.{{< /line >}}
-{{< line >}}[00:46:43.320] Dan McClellan: But for the context of our discussion right now, I think it suffices to mention that it's certainly possible.{{< /line >}}
-{{< line >}}[00:46:49.480] Dan McClellan: It's certainly plausible that that's the case.{{< /line >}}
-{{< line >}}[00:46:52.520] Dan McClellan: But it's interesting what Paul says about them.{{< /line >}}
-{{< line >}}[00:46:55.240] Dan McClellan: Uses this word syngeneis in Greek, which means my kin together.{{< /line >}}
-{{< line >}}[00:47:03.640] Dan McClellan: And then genos is what the other word is in Greek..{{< /line >}}
-{{< line >}}[00:47:08.840] Dan McClellan: So kinsmen, family.{{< /line >}}
-{{< line >}}[00:47:11.630] Dan McClellan: I think you read fellow Israelites.{{< /line >}}
-{{< line >}}[00:47:13.510] Dan McClellan: Is that the edition you read?{{< /line >}}
+{{< line >}}[00:45:36.480] Dan McClellan: And so the data do not support the identification of Junia as a man. The data overwhelmingly support identifying Junia as a woman. And so it would seem to suggest that Andronicus and Junia. Now frequently when Paul mentions a man and a woman together, they're either relatives of each other. More often they are husband and wife. So some folks suggest that Andronicus and Junia are husband and wife. That may or may not be the case. I'm not arguing for that right now, but I would argue that Junia is definitely a feminine name.{{< /line >}}
+{{< line >}}[00:46:13.910] Dan Beecher: I did read an article that. That linked them as husband and wife. Was absolutely certain of it. And not only was certain that. That they were husband and wife, but literally, like, kept pounding it home, which I didn't understand. I didn't understand why it was important to that author to make sure that we all understood that this was a couple who was a husband and wife.{{< /line >}}
+{{< line >}}[00:46:36.030] Dan McClellan: But, yeah, I mean, there are certainly situations where. Where that would be. That would be more meaningful than others. But for the context of our discussion right now, I think it suffices to mention that it's certainly possible. It's certainly plausible that that's the case. But it's interesting what Paul says about them. Uses this word syngeneis in Greek, which means my kin together. And then genos is what the other word is in Greek.. So kinsmen, family. I think you read fellow Israelites. Is that the edition you read?{{< /line >}}
 {{< line >}}[00:47:14.830] Dan Beecher: That's what the NRSV has.{{< /line >}}
 {{< line >}}[00:47:16.510] Dan McClellan: Is that the NRSV?{{< /line >}}
-{{< line >}}[00:47:17.790] Dan Beecher: UE.{{< /line >}}
-{{< line >}}[00:47:18.230] Dan Beecher: NRSV, yeah, the NRSV.{{< /line >}}
-{{< line >}}[00:47:20.910] Dan McClellan: UE. Yeah, UE.{{< /line >}}
-{{< line >}}[00:47:22.270] Dan McClellan: Okay, that's interesting, because the previous NRSV reads my relatives.{{< /line >}}
-{{< line >}}[00:47:27.630] Dan McClellan: Okay, relatives or compatriots.{{< /line >}}
-{{< line >}}[00:47:31.390] Dan McClellan: But yeah, the idea is kin, and that's probably figurative, but who knows?{{< /line >}}
-{{< line >}}[00:47:37.640] Dan McClellan: And then fellow prisoners.{{< /line >}}
-{{< line >}}[00:47:39.720] Dan McClellan: And then it goes on to say they were of note among the apostles or prominent among the apostles.{{< /line >}}
-{{< line >}}[00:47:46.240] Dan McClellan: And here's where the folks who don't like the idea of a woman apostle have another opportunity to try to make their case against that.{{< /line >}}
-{{< line >}}[00:47:54.120] Dan McClellan: There is another way to read the Greek here where instead of saying they are prominent among the apostles is to say they are well known to the apostles.{{< /line >}}
-{{< line >}}[00:48:03.050] Dan McClellan: Right.{{< /line >}}
-{{< line >}}[00:48:03.450] Dan McClellan: That is a possible reading of the Greek.{{< /line >}}
-{{< line >}}[00:48:07.050] Dan McClellan: And there are some people who have argued very strenuously for that reading.{{< /line >}}
-{{< line >}}[00:48:11.130] Dan Beecher: And that's.{{< /line >}}
-{{< line >}}[00:48:11.730] Dan Beecher: That's what the English Standard Version has.{{< /line >}}
-{{< line >}}[00:48:14.370] Dan Beecher: They are well known to the.{{< /line >}}
-{{< line >}}[00:48:15.890] Dan McClellan: Yeah, well, the ESV was written, or was.{{< /line >}}
-{{< line >}}[00:48:20.170] Dan McClellan: Is a translation that was executed by complementarians who were basically upset that the NIV and the RSV and the NRSV were not as misogynistic as they felt they should have been.{{< /line >}}
-{{< line >}}[00:48:37.320] Dan McClellan: So the ESV is like, in a lot of ways, it's a perfectly adequate translation.{{< /line >}}
-{{< line >}}[00:48:45.400] Dan McClellan: In other ways, it is an awful.{{< /line >}}
+{{< line >}}[00:47:17.790] Dan Beecher: UE. NRSV, yeah, the NRSV.{{< /line >}}
+{{< line >}}[00:47:20.910] Dan McClellan: UE. Yeah, UE. Okay, that's interesting, because the previous NRSV reads my relatives. Okay, relatives or compatriots. But yeah, the idea is kin, and that's probably figurative, but who knows? And then fellow prisoners. And then it goes on to say they were of note among the apostles or prominent among the apostles. And here's where the folks who don't like the idea of a woman apostle have another opportunity to try to make their case against that. There is another way to read the Greek here where instead of saying they are prominent among the apostles is to say they are well known to the apostles. Right. That is a possible reading of the Greek. And there are some people who have argued very strenuously for that reading.{{< /line >}}
+{{< line >}}[00:48:11.130] Dan Beecher: And that's. That's what the English Standard Version has. They are well known to the.{{< /line >}}
+{{< line >}}[00:48:15.890] Dan McClellan: Yeah, well, the ESV was written, or was. Is a translation that was executed by complementarians who were basically upset that the NIV and the RSV and the NRSV were not as misogynistic as they felt they should have been. So the ESV is like, in a lot of ways, it's a perfectly adequate translation. In other ways, it is an awful.{{< /line >}}
 {{< line >}}[00:48:47.880] Dan Beecher: Translation, particularly man woman hater translation.{{< /line >}}
-{{< line >}}[00:48:51.960] Dan McClellan: Yes, in a lot of ways.{{< /line >}}
-{{< line >}}[00:48:53.400] Dan McClellan: So it's one of the newer translations that have come out of the Bible and they.{{< /line >}}
-{{< line >}}[00:49:00.120] Dan McClellan: And it's.{{< /line >}}
-{{< line >}}[00:49:00.720] Dan McClellan: And it's quite popular.{{< /line >}}
-{{< line >}}[00:49:01.720] Dan McClellan: But a lot of people don't realize that.{{< /line >}}
-{{< line >}}[00:49:03.460] Dan McClellan: That the purpose of the ESV was to push back against what they saw as too much progressivism with the NIV, of all things.{{< /line >}}
-{{< line >}}[00:49:14.020] Dan McClellan: So, yeah, and there's a great sociologist who works for the Sociology of Religion named Samuel Perry, who has published a wonderful article discussing how the ESV intentionally tries to structure power directly over and against the interests of women.{{< /line >}}
-{{< line >}}[00:49:32.070] Dan McClellan: But anyway, getting back to that.{{< /line >}}
-{{< line >}}[00:49:33.390] Dan McClellan: So the ESV says they're well known to the apostles.{{< /line >}}
-{{< line >}}[00:49:36.630] Dan McClellan: Possible reading of the Greek here.{{< /line >}}
-{{< line >}}[00:49:39.030] Dan McClellan: There are a handful of reasons I don't think this makes sense.{{< /line >}}
-{{< line >}}[00:49:42.950] Dan McClellan: One is that this is Paul writing.{{< /line >}}
-{{< line >}}[00:49:45.510] Dan McClellan: Paul was not a huge fan of the other apostles and didn't really care what the other apostles thought.{{< /line >}}
-{{< line >}}[00:49:51.670] Dan McClellan: So for Paul to say, hey, Andronicus and Junia, these are cool folks, even the other apostles thought they were really cool is out of character.{{< /line >}}
-{{< line >}}[00:50:02.040] Dan McClellan: For Paul, the estimation of the other apostles is no big deal.{{< /line >}}
-{{< line >}}[00:50:06.160] Dan McClellan: He does not care what the other apostles think.{{< /line >}}
-{{< line >}}[00:50:09.840] Dan McClellan: And then the last clause of the verse is, they were in Christ before me.{{< /line >}}
-{{< line >}}[00:50:16.640] Dan McClellan: Which would fit with Paul's rhetorical bent elsewhere of always wanting to remind everybody that he is the last one who gets to be called an apostle, that everyone else who is called an apostle was in Christ before him, and he's the last apostle.{{< /line >}}
-{{< line >}}[00:50:35.430] Dan McClellan: So I think the way that this verse is set up and the way Paul's rhetoric is in the genuine Pauline epistles pretty firmly point in the direction of interpreting that passage to say who are prominent among the apostles.{{< /line >}}
-{{< line >}}[00:50:52.090] Dan McClellan: In other words, these are prominent apostles, which would identify Junia as a woman apostle, which is, you know, despite Paul's misogyny elsewhere, I think he was willing to call balls and strikes when it came to who was occupying what office, what position elsewhere in the church, because he refers to other women as leaders in the church and is not shy about that.{{< /line >}}
+{{< line >}}[00:48:51.960] Dan McClellan: Yes, in a lot of ways. So it's one of the newer translations that have come out of the Bible and they. And it's. And it's quite popular. But a lot of people don't realize that. That the purpose of the ESV was to push back against what they saw as too much progressivism with the NIV, of all things. So, yeah, and there's a great sociologist who works for the Sociology of Religion named Samuel Perry, who has published a wonderful article discussing how the ESV intentionally tries to structure power directly over and against the interests of women. But anyway, getting back to that. So the ESV says they're well known to the apostles. Possible reading of the Greek here. There are a handful of reasons I don't think this makes sense. One is that this is Paul writing. Paul was not a huge fan of the other apostles and didn't really care what the other apostles thought. So for Paul to say, hey, Andronicus and Junia, these are cool folks, even the other apostles thought they were really cool is out of character.{{< /line >}}
+{{< line >}}[00:50:02.040] Dan McClellan: For Paul, the estimation of the other apostles is no big deal. He does not care what the other apostles think. And then the last clause of the verse is, they were in Christ before me. Which would fit with Paul's rhetorical bent elsewhere of always wanting to remind everybody that he is the last one who gets to be called an apostle, that everyone else who is called an apostle was in Christ before him, and he's the last apostle. So I think the way that this verse is set up and the way Paul's rhetoric is in the genuine Pauline epistles pretty firmly point in the direction of interpreting that passage to say who are prominent among the apostles. In other words, these are prominent apostles, which would identify Junia as a woman apostle, which is, you know, despite Paul's misogyny elsewhere, I think he was willing to call balls and strikes when it came to who was occupying what office, what position elsewhere in the church, because he refers to other women as leaders in the church and is not shy about that.{{< /line >}}
 {{< line >}}[00:51:23.070] Dan Beecher: So since we're using this word apostle.{{< /line >}}
 {{< line >}}[00:51:26.670] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:51:27.230] Dan Beecher: How are we defining it?{{< /line >}}
-{{< line >}}[00:51:28.670] Dan Beecher: What, what is an apostle?{{< /line >}}
-{{< line >}}[00:51:29.910] Dan Beecher: What does that mean here?{{< /line >}}
+{{< line >}}[00:51:27.230] Dan Beecher: How are we defining it? What, what is an apostle? What does that mean here?{{< /line >}}
 {{< line >}}[00:51:33.390] Dan McClellan: So, you know, I don't like defining stuff.{{< /line >}}
-{{< line >}}[00:51:36.430] Dan Beecher: That's a great point.{{< /line >}}
-{{< line >}}[00:51:37.630] Dan Beecher: That's a great point.{{< /line >}}
-{{< line >}}[00:51:38.670] Dan McClellan: But I was using the word, so we need to, I will just describe it.{{< /line >}}
-{{< line >}}[00:51:41.910] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:51:36.430] Dan Beecher: That's a great point. That's a great point.{{< /line >}}
+{{< line >}}[00:51:38.670] Dan McClellan: But I was using the word, so we need to, I will just describe it. Yeah.{{< /line >}}
 {{< line >}}[00:51:42.390] Dan Beecher: In some way what we're talking about.{{< /line >}}
-{{< line >}}[00:51:44.790] Dan McClellan: So it comes from a Greek word that means one who is sent.{{< /line >}}
-{{< line >}}[00:51:47.670] Dan McClellan: And the idea is messenger, emissary, delegate.{{< /line >}}
-{{< line >}}[00:51:51.550] Dan McClellan: Like it's not just somebody sent some person, it's this person is traveling on my behalf to execute some function for me, whether it's deliver a message or whether it is actually do something or something like that.{{< /line >}}
-{{< line >}}[00:52:07.910] Dan McClellan: So it's comes from the idea of one who is sent out.{{< /line >}}
-{{< line >}}[00:52:13.270] Dan McClellan: And by the time of the New Testament, though it, well around the, because of its use in the New Testament, it takes on status as kind of an office that this person may have been sent out, but they're not an apostle, because that is a specific assignment, a specific designation that kind of is cordoned off.{{< /line >}}
-{{< line >}}[00:52:37.910] Dan McClellan: And only certain special people get to be called that kind of messenger.{{< /line >}}
-{{< line >}}[00:52:43.660] Dan McClellan: And so it becomes an office, a duty, an honorific title later on.{{< /line >}}
-{{< line >}}[00:52:50.380] Dan McClellan: And, and by the time of Paul, then that's what we're, that's where Paul is coming in and be like, I'm an apostle.{{< /line >}}
-{{< line >}}[00:52:58.939] Dan McClellan: And he gets upset with, well, not, he kind of sarcastically refers to other folks as super apostles.{{< /line >}}
-{{< line >}}[00:53:07.660] Dan McClellan: He's like, oh, all these people, these super apostles going around doing all this stuff.{{< /line >}}
-{{< line >}}[00:53:14.060] Dan McClellan: But, but the idea is that this is, this is a, a special designation, a special calling, a special assignment that, that somebody has.{{< /line >}}
-{{< line >}}[00:53:23.060] Dan McClellan: But yeah, it fundamentally comes from the idea of, of emissary, delegate, maybe messenger.{{< /line >}}
+{{< line >}}[00:51:44.790] Dan McClellan: So it comes from a Greek word that means one who is sent. And the idea is messenger, emissary, delegate. Like it's not just somebody sent some person, it's this person is traveling on my behalf to execute some function for me, whether it's deliver a message or whether it is actually do something or something like that. So it's comes from the idea of one who is sent out. And by the time of the New Testament, though it, well around the, because of its use in the New Testament, it takes on status as kind of an office that this person may have been sent out, but they're not an apostle, because that is a specific assignment, a specific designation that kind of is cordoned off. And only certain special people get to be called that kind of messenger. And so it becomes an office, a duty, an honorific title later on.{{< /line >}}
+{{< line >}}[00:52:50.380] Dan McClellan: And, and by the time of Paul, then that's what we're, that's where Paul is coming in and be like, I'm an apostle. And he gets upset with, well, not, he kind of sarcastically refers to other folks as super apostles. He's like, oh, all these people, these super apostles going around doing all this stuff. But, but the idea is that this is, this is a, a special designation, a special calling, a special assignment that, that somebody has. But yeah, it fundamentally comes from the idea of, of emissary, delegate, maybe messenger.{{< /line >}}
 {{< line >}}[00:53:29.100] Dan Beecher: To be an envoy, if you will.{{< /line >}}
-{{< line >}}[00:53:31.060] Dan McClellan: Envoy?{{< /line >}}
-{{< line >}}[00:53:31.580] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:53:32.300] Dan Beecher: I, I, I saw at least one article looking through this, you know, and when I was sort of reading up on Junia and, you know, I wanted to see arguments for and against this person, this woman being considered an apostle.{{< /line >}}
-{{< line >}}[00:53:47.660] Dan Beecher: And one of the things that came up a few times when people wanted to argue that there's no way she could have been an apostle was that the original 12 were.{{< /line >}}
-{{< line >}}[00:54:00.900] Dan Beecher: There were specifically 12.{{< /line >}}
-{{< line >}}[00:54:03.080] Dan Beecher: They were all men, therefore there should always be 12 and they should always be men.{{< /line >}}
+{{< line >}}[00:53:31.060] Dan McClellan: Envoy? Yeah.{{< /line >}}
+{{< line >}}[00:53:32.300] Dan Beecher: I, I, I saw at least one article looking through this, you know, and when I was sort of reading up on Junia and, you know, I wanted to see arguments for and against this person, this woman being considered an apostle. And one of the things that came up a few times when people wanted to argue that there's no way she could have been an apostle was that the original 12 were. There were specifically 12. They were all men, therefore there should always be 12 and they should always be men.{{< /line >}}
 {{< line >}}[00:54:08.520] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:54:09.800] Dan Beecher: Is there.{{< /line >}}
-{{< line >}}[00:54:10.440] Dan Beecher: I mean, so when you start to talk about this, this word, this appellation, becoming a, an office in Jesus's time because Paul's after Jesus or after his, his life.{{< /line >}}
-{{< line >}}[00:54:29.140] Dan Beecher: What.{{< /line >}}
-{{< line >}}[00:54:30.900] Dan Beecher: Is there any indication that in Jesus's time this was an office that he was designating that there should be 12 of and that those should be men?{{< /line >}}
-{{< line >}}[00:54:41.420] Dan Beecher: Is there anything that you can think of that, that would, that would fill in that argument or bolster that argument as far as.{{< /line >}}
-{{< line >}}[00:54:50.460] Dan McClellan: As any data that would support that argument?{{< /line >}}
-{{< line >}}[00:54:53.420] Dan McClellan: No, that's an is ought fallacy.{{< /line >}}
-{{< line >}}[00:54:55.180] Dan McClellan: They're saying, oh, this is the way it was, therefore this is the way it ought to be.{{< /line >}}
-{{< line >}}[00:54:59.350] Dan McClellan: The.{{< /line >}}
-{{< line >}}[00:55:00.550] Dan McClellan: There is the indication in the Book of Acts in the beginning where they say, well, Judas is gone.{{< /line >}}
-{{< line >}}[00:55:06.310] Dan McClellan: We need to fill in that office.{{< /line >}}
-{{< line >}}[00:55:08.710] Dan McClellan: So the idea that they were supposed to be 12 is found in the Book of Acts, which is not from Jesus's day.{{< /line >}}
-{{< line >}}[00:55:15.670] Dan McClellan: This is decades after Jesus's death.{{< /line >}}
-{{< line >}}[00:55:17.830] Dan McClellan: And so that does not necessarily indicate that Jesus was like, it's got to be 12, but at least within the decades after Jesus's life, yes, they understood that there should be 12.{{< /line >}}
-{{< line >}}[00:55:30.490] Dan McClellan: And 12 is a significant number.{{< /line >}}
-{{< line >}}[00:55:33.370] Dan McClellan: It has symbolic weight anciently.{{< /line >}}
-{{< line >}}[00:55:36.050] Dan McClellan: It is completion.{{< /line >}}
-{{< line >}}[00:55:37.010] Dan McClellan: It is fullness.{{< /line >}}
-{{< line >}}[00:55:37.810] Dan McClellan: And so that is supported by the.{{< /line >}}
-{{< line >}}[00:55:41.690] Dan McClellan: Or that supports this notion that they felt there needed to be 12.e 12.{{< /line >}}
-{{< line >}}[00:55:46.130] Dan McClellan: The notion that it had to be men.{{< /line >}}
-{{< line >}}[00:55:48.250] Dan McClellan: There is nothing that supports that apart from this is-ought fallacy.{{< /line >}}
-{{< line >}}[00:55:51.890] Dan McClellan: Well, they were all men, therefore they were supposed to all be men, which is not mentioned in Acts in any way and is undermined by this passage in Romans 16:7.{{< /line >}}
-{{< line >}}[00:56:03.890] Dan McClellan: So I don't, I don't think that's a good argument.{{< /line >}}
-{{< line >}}[00:56:08.450] Dan Beecher: So.{{< /line >}}
-{{< line >}}[00:56:09.010] Dan Beecher: And also, you know, I don't, I don't know how this, how this, you know, the significance of the number 12 works, but it also seems like the need to have 12 could also be the need to have at least 12.{{< /line >}}
-{{< line >}}[00:56:24.470] Dan Beecher: You know what I mean?{{< /line >}}
-{{< line >}}[00:56:25.350] Dan Beecher: And I don't know, you tell me, because Andronicus and Junia are not, you know, they're not listed in.{{< /line >}}
-{{< line >}}[00:56:34.310] Dan Beecher: Neither of those are one of the many names that are listed in our original 12.{{< /line >}}
-{{< line >}}[00:56:38.790] Dan McClellan: Yeah, yeah.{{< /line >}}
-{{< line >}}[00:56:39.510] Dan McClellan: And.{{< /line >}}
-{{< line >}}[00:56:39.830] Dan McClellan: And certainly, you know, the, the text of Acts says, you know, that office has got to be filled, doesn't necessarily say it's got to always be 12.{{< /line >}}
-{{< line >}}[00:56:52.590] Dan McClellan: I would lean a little more in that direction just because of the significance of 12, there are.{{< /line >}}
-{{< line >}}[00:57:03.470] Dan McClellan: Sorry, is it a reference to the.{{< /line >}}
+{{< line >}}[00:54:09.800] Dan Beecher: Is there. I mean, so when you start to talk about this, this word, this appellation, becoming a, an office in Jesus's time because Paul's after Jesus or after his, his life. What. Is there any indication that in Jesus's time this was an office that he was designating that there should be 12 of and that those should be men? Is there anything that you can think of that, that would, that would fill in that argument or bolster that argument as far as.{{< /line >}}
+{{< line >}}[00:54:50.460] Dan McClellan: As any data that would support that argument? No, that's an is ought fallacy. They're saying, oh, this is the way it was, therefore this is the way it ought to be. The. There is the indication in the Book of Acts in the beginning where they say, well, Judas is gone. We need to fill in that office. So the idea that they were supposed to be 12 is found in the Book of Acts, which is not from Jesus's day. This is decades after Jesus's death. And so that does not necessarily indicate that Jesus was like, it's got to be 12, but at least within the decades after Jesus's life, yes, they understood that there should be 12. And 12 is a significant number. It has symbolic weight anciently. It is completion. It is fullness. And so that is supported by the. Or that supports this notion that they felt there needed to be 12.e 12. The notion that it had to be men. There is nothing that supports that apart from this is-ought fallacy.{{< /line >}}
+{{< line >}}[00:55:51.890] Dan McClellan: Well, they were all men, therefore they were supposed to all be men, which is not mentioned in Acts in any way and is undermined by this passage in Romans 16:7. So I don't, I don't think that's a good argument.{{< /line >}}
+{{< line >}}[00:56:08.450] Dan Beecher: So. And also, you know, I don't, I don't know how this, how this, you know, the significance of the number 12 works, but it also seems like the need to have 12 could also be the need to have at least 12. You know what I mean? And I don't know, you tell me, because Andronicus and Junia are not, you know, they're not listed in. Neither of those are one of the many names that are listed in our original 12.{{< /line >}}
+{{< line >}}[00:56:38.790] Dan McClellan: Yeah, yeah. And. And certainly, you know, the, the text of Acts says, you know, that office has got to be filled, doesn't necessarily say it's got to always be 12. I would lean a little more in that direction just because of the significance of 12, there are. Sorry, is it a reference to the.{{< /line >}}
 {{< line >}}[00:57:04.990] Dan Beecher: 12 tribes of Israel sort of thing?{{< /line >}}
-{{< line >}}[00:57:06.790] Dan McClellan: Well, to some degree, the 12 tribes of Israel, there was significance to the number 12.{{< /line >}}
-{{< line >}}[00:57:12.590] Dan McClellan: But you know, when you get into the book of Revelation as well, you've got 12 coming up, particularly in reference to, you know, the 144,000 or 12,000 from the 12 tribes of Israel.{{< /line >}}
+{{< line >}}[00:57:06.790] Dan McClellan: Well, to some degree, the 12 tribes of Israel, there was significance to the number 12. But you know, when you get into the book of Revelation as well, you've got 12 coming up, particularly in reference to, you know, the 144,000 or 12,000 from the 12 tribes of Israel.{{< /line >}}
 {{< line >}}[00:57:23.640] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:57:24.080] Dan McClellan: And 12 is used a handful of places.{{< /line >}}
-{{< line >}}[00:57:26.640] Dan McClellan: And seven is another significant number.{{< /line >}}
-{{< line >}}[00:57:30.080] Dan McClellan: And so seven is perfection.{{< /line >}}
-{{< line >}}[00:57:32.080] Dan McClellan: Twelve is fullness, completeness, stuff like that.{{< /line >}}
-{{< line >}}[00:57:35.920] Dan McClellan: And also in the years between the death of Jesus and the writing of Romans, people are dying and other people are stepping in.{{< /line >}}
-{{< line >}}[00:57:46.970] Dan McClellan: I don't know that I know enough about the circumstances to know whether or not we have enough data to say there were never more than 12.{{< /line >}}
-{{< line >}}[00:57:54.330] Dan McClellan: I don't know what the consensus is in that regard.{{< /line >}}
-{{< line >}}[00:57:57.930] Dan McClellan: I'm sure there are people who know a lot better than me, but.{{< /line >}}
-{{< line >}}[00:58:00.570] Dan McClellan: Yeah, that's a good question.{{< /line >}}
-{{< line >}}[00:58:02.250] Dan McClellan: I have feelings about it.{{< /line >}}
-{{< line >}}[00:58:03.730] Dan McClellan: I don't know that I could definitively say one way or another.{{< /line >}}
-{{< line >}}[00:58:07.980] Dan Beecher: Okay, well, then we'll leave it at that.{{< /line >}}
-{{< line >}}[00:58:12.700] Dan Beecher: Junia, for my money, I love the idea of.{{< /line >}}
-{{< line >}}[00:58:15.700] Dan Beecher: Of a woman apostle that.{{< /line >}}
-{{< line >}}[00:58:17.580] Dan Beecher: That makes me happy.{{< /line >}}
-{{< line >}}[00:58:19.020] Dan Beecher: And since that is at least arguable, if not probable, I'm going with it.{{< /line >}}
-{{< line >}}[00:58:27.340] Dan Beecher: There was a woman apostle, and there's.{{< /line >}}
-{{< line >}}[00:58:29.300] Dan McClellan: A wonderful book by a scholar named J. Eldon Epp.{{< /line >}}
-{{< line >}}[00:58:34.820] Dan McClellan: Eldon J. Epp is the name, called Junia: The First Woman Apostle, published in 2005.{{< /line >}}
-{{< line >}}[00:58:43.420] Dan McClellan: And I think that book kind of set the tone for the scholarly consensus.{{< /line >}}
-{{< line >}}[00:58:48.540] Dan McClellan: So if you'd like more information on this, that's a wonderful book to go check out.{{< /line >}}
-{{< line >}}[00:58:52.580] Dan Beecher: Nice.{{< /line >}}
-{{< line >}}[00:58:53.220] Dan Beecher: I love it.{{< /line >}}
-{{< line >}}[00:58:53.940] Dan Beecher: Well, thanks so much, Dan.{{< /line >}}
-{{< line >}}[00:58:55.620] Dan Beecher: Listen, friends at home, if you would like to be a part of making this show go.{{< /line >}}
-{{< line >}}[00:59:01.210] Dan Beecher: And what we have kind of settled on is that if you.{{< /line >}}
-{{< line >}}[00:59:05.450] Dan Beecher: If you want to hear Dan and I talk more about the topics of each of these episodes and, and get into it in a much more casual way, you can.{{< /line >}}
-{{< line >}}[00:59:18.250] Dan Beecher: There is patron only content available.{{< /line >}}
-{{< line >}}[00:59:21.130] Dan Beecher: If you become a patron over on Patreon, go to patreon.com/dataoverdogma and.{{< /line >}}
-{{< line >}}[00:59:28.180] Dan Beecher: And you can join up there at whatever, you know, amount you want.{{< /line >}}
-{{< line >}}[00:59:32.500] Dan Beecher: And we will be very thankful for your patronage.{{< /line >}}
-{{< line >}}[00:59:36.580] Dan Beecher: If you would like to write to us about anything, contact@dataoverdogmapod.com is the place to do that.{{< /line >}}
-{{< line >}}[00:59:44.500] Dan Beecher: And other than that, we'll see you next week.{{< /line >}}
-{{< line >}}[00:59:47.540] Dan McClellan: Bye, everybody.{{< /line >}}
-{{< line >}}[00:59:51.870] Dan McClellan: See ya.{{< /line >}}
+{{< line >}}[00:57:24.080] Dan McClellan: And 12 is used a handful of places. And seven is another significant number. And so seven is perfection. Twelve is fullness, completeness, stuff like that. And also in the years between the death of Jesus and the writing of Romans, people are dying and other people are stepping in. I don't know that I know enough about the circumstances to know whether or not we have enough data to say there were never more than 12. I don't know what the consensus is in that regard. I'm sure there are people who know a lot better than me, but. Yeah, that's a good question. I have feelings about it. I don't know that I could definitively say one way or another.{{< /line >}}
+{{< line >}}[00:58:07.980] Dan Beecher: Okay, well, then we'll leave it at that. Junia, for my money, I love the idea of. Of a woman apostle that. That makes me happy. And since that is at least arguable, if not probable, I'm going with it. There was a woman apostle, and there's.{{< /line >}}
+{{< line >}}[00:58:29.300] Dan McClellan: A wonderful book by a scholar named J. Eldon Epp. Eldon J. Epp is the name, called Junia: The First Woman Apostle, published in 2005. And I think that book kind of set the tone for the scholarly consensus. So if you'd like more information on this, that's a wonderful book to go check out.{{< /line >}}
+{{< line >}}[00:58:52.580] Dan Beecher: Nice. I love it. Well, thanks so much, Dan. Listen, friends at home, if you would like to be a part of making this show go. And what we have kind of settled on is that if you. If you want to hear Dan and I talk more about the topics of each of these episodes and, and get into it in a much more casual way, you can. There is patron only content available. If you become a patron over on Patreon, go to patreon.com/dataoverdogma and. And you can join up there at whatever, you know, amount you want. And we will be very thankful for your patronage. If you would like to write to us about anything, contact@dataoverdogmapod.com is the place to do that. And other than that, we'll see you next week.{{< /line >}}
+{{< line >}}[00:59:47.540] Dan McClellan: Bye, everybody. See ya.{{< /line >}}

@@ -58,826 +58,203 @@ speakers:
 draft: false
 ---
 
-{{< line >}}[00:00:01.120] Dan Beecher: His first impulse isn't just like, hey, I'll heal you.{{< /line >}}
-{{< line >}}[00:00:03.680] Dan Beecher: His first impulse is like, we'll do this other thing, and then I'll use the healing as the proof that I.{{< /line >}}
-{{< line >}}[00:00:09.640] Dan Beecher: That I have the authority to do that.{{< /line >}}
-{{< line >}}[00:00:11.280] Dan McClellan: Yes.{{< /line >}}
-{{< line >}}[00:00:11.760] Dan McClellan: It's almost as if the story was carefully crafted to tag these rhetorical bases.{{< /line >}}
-{{< line >}}[00:00:18.280] Dan McClellan: Yeah, you didn't hear it from me.{{< /line >}}
-{{< line >}}[00:00:24.160] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:01.120] Dan Beecher: His first impulse isn't just like, hey, I'll heal you. His first impulse is like, we'll do this other thing, and then I'll use the healing as the proof that I. That I have the authority to do that.{{< /line >}}
+{{< line >}}[00:00:11.280] Dan McClellan: Yes. It's almost as if the story was carefully crafted to tag these rhetorical bases. Yeah, you didn't hear it from me. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:26.120] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
-{{< line >}}[00:00:27.160] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation.{{< /line >}}
-{{< line >}}[00:00:37.720] Dan McClellan: About the same.{{< /line >}}
-{{< line >}}[00:00:38.560] Dan McClellan: How are things today, Dan?{{< /line >}}
-{{< line >}}[00:00:40.280] Dan Beecher: Going well, man, I'm.{{< /line >}}
-{{< line >}}[00:00:41.640] Dan Beecher: I don't have a headache like you do, so that's good.{{< /line >}}
-{{< line >}}[00:00:45.640] Dan Beecher: I'm.{{< /line >}}
-{{< line >}}[00:00:46.040] Dan Beecher: I'm.{{< /line >}}
-{{< line >}}[00:00:46.320] Dan Beecher: I'm one up on you anyway, so that's great.{{< /line >}}
-{{< line >}}[00:00:49.160] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:00:50.040] Dan Beecher: And I'm looking forward to today's show.{{< /line >}}
-{{< line >}}[00:00:51.840] Dan Beecher: We got some fun stuff.{{< /line >}}
-{{< line >}}[00:00:53.240] Dan Beecher: We're.{{< /line >}}
-{{< line >}}[00:00:53.600] Dan Beecher: We're going to do a Bible versus Bible and, and, and.{{< /line >}}
-{{< line >}}[00:00:58.310] Dan Beecher: And find some.{{< /line >}}
-{{< line >}}[00:00:59.790] Dan Beecher: Some interesting contradictions.{{< /line >}}
-{{< line >}}[00:01:01.630] Dan Beecher: And then we're gonna look at the concept of sin, forgiveness via a big hole in the ceiling.{{< /line >}}
-{{< line >}}[00:01:10.670] Dan Beecher: So that's gonna be fun.{{< /line >}}
-{{< line >}}[00:01:12.590] Dan Beecher: Everyone should stay tuned for that.{{< /line >}}
-{{< line >}}[00:01:14.830] Dan Beecher: But first, let's do Bible versus Bible.{{< /line >}}
+{{< line >}}[00:00:27.160] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation. About the same. How are things today, Dan?{{< /line >}}
+{{< line >}}[00:00:40.280] Dan Beecher: Going well, man, I'm. I don't have a headache like you do, so that's good. I'm. I'm. I'm one up on you anyway, so that's great. Yeah. And I'm looking forward to today's show. We got some fun stuff. We're. We're going to do a Bible versus Bible and, and, and. And find some. Some interesting contradictions. And then we're gonna look at the concept of sin, forgiveness via a big hole in the ceiling. So that's gonna be fun. Everyone should stay tuned for that. But first, let's do Bible versus Bible.{{< /line >}}
 {{< line >}}[00:01:21.630] Dan McClellan: All right, so what are we talking about today?{{< /line >}}
-{{< line >}}[00:01:24.110] Dan Beecher: Well, since it was your idea, I think you already know, but Ahaziah is.{{< /line >}}
-{{< line >}}[00:01:31.340] Dan Beecher: Is the name of a guy that I had never heard of, but he pops up in both second Kings and second Chronicles or just first and second Chronicles.{{< /line >}}
-{{< line >}}[00:01:42.380] Dan Beecher: So, yeah, he's in.{{< /line >}}
-{{< line >}}[00:01:43.500] Dan Beecher: He's in both of these places.{{< /line >}}
-{{< line >}}[00:01:46.860] Dan Beecher: I'm.{{< /line >}}
-{{< line >}}[00:01:47.340] Dan Beecher: It's.{{< /line >}}
-{{< line >}}[00:01:48.380] Dan Beecher: It's always a bad idea for the Bible to retread the same ground, because every time it does that, it's tricky.{{< /line >}}
+{{< line >}}[00:01:24.110] Dan Beecher: Well, since it was your idea, I think you already know, but Ahaziah is. Is the name of a guy that I had never heard of, but he pops up in both second Kings and second Chronicles or just first and second Chronicles. So, yeah, he's in. He's in both of these places. I'm. It's. It's always a bad idea for the Bible to retread the same ground, because every time it does that, it's tricky.{{< /line >}}
 {{< line >}}[00:01:56.250] Dan McClellan: It's tricky.{{< /line >}}
-{{< line >}}[00:01:57.610] Dan Beecher: It's a different retelling, and they have some different things.{{< /line >}}
-{{< line >}}[00:02:00.970] Dan Beecher: So why don't you walk us through the story?{{< /line >}}
-{{< line >}}[00:02:05.210] Dan Beecher: Do you want.{{< /line >}}
-{{< line >}}[00:02:06.650] Dan Beecher: Who is Ahaziah?{{< /line >}}
-{{< line >}}[00:02:08.410] Dan Beecher: Or.{{< /line >}}
-{{< line >}}[00:02:08.810] Dan McClellan: Right.{{< /line >}}
-{{< line >}}[00:02:09.450] Dan McClellan: So we got a.{{< /line >}}
-{{< line >}}[00:02:10.170] Dan McClellan: We actually have a couple Ahaziahs in.{{< /line >}}
-{{< line >}}[00:02:12.050] Dan McClellan: In.{{< /line >}}
-{{< line >}}[00:02:12.970] Dan McClellan: In this history, but Ahaziah is a king of Judah.{{< /line >}}
-{{< line >}}[00:02:18.010] Dan McClellan: So in this period, traditionally, we think of the United Kingdom, the.{{< /line >}}
-{{< line >}}[00:02:23.650] Dan McClellan: That was founded by Saul and David and Solomon, and then we had the divided kingdom.{{< /line >}}
-{{< line >}}[00:02:28.850] Dan McClellan: The reality is that there was probably never a united kingdom, that these are two kingdoms that developed separately and were never.{{< /line >}}
+{{< line >}}[00:01:57.610] Dan Beecher: It's a different retelling, and they have some different things. So why don't you walk us through the story? Do you want. Who is Ahaziah? Or.{{< /line >}}
+{{< line >}}[00:02:08.810] Dan McClellan: Right. So we got a. We actually have a couple Ahaziahs in. In. In this history, but Ahaziah is a king of Judah. So in this period, traditionally, we think of the United Kingdom, the. That was founded by Saul and David and Solomon, and then we had the divided kingdom. The reality is that there was probably never a united kingdom, that these are two kingdoms that developed separately and were never.{{< /line >}}
 {{< line >}}[00:02:36.850] Dan Beecher: Judah and Israel.{{< /line >}}
-{{< line >}}[00:02:37.810] Dan McClellan: Correct.{{< /line >}}
-{{< line >}}[00:02:38.450] Dan McClellan: So Judah in the south, with Jerusalem as home base, and then Israel in the north with Samaria as home base.{{< /line >}}
-{{< line >}}[00:02:47.330] Dan McClellan: And this.{{< /line >}}
-{{< line >}}[00:02:48.210] Dan McClellan: And the northern kingdom of Israel was the larger kingdom, the more successful kingdom.{{< /line >}}
-{{< line >}}[00:02:52.770] Dan McClellan: And in the 8th century, this was.{{< /line >}}
-{{< line >}}[00:02:55.550] Dan McClellan: There was a lot more economic growth going on.{{< /line >}}
-{{< line >}}[00:02:59.390] Dan McClellan: There was a lot more cities popping up.{{< /line >}}
-{{< line >}}[00:03:02.510] Dan McClellan: There was a lot more money flowing in.{{< /line >}}
-{{< line >}}[00:03:04.750] Dan McClellan: And Jerusalem, to the degree that it was able to engage in, like, international trade and things like that, it was probably through the Northern Kingdom of Israel.{{< /line >}}
-{{< line >}}[00:03:15.070] Dan McClellan: And Jerusalem doesn't become prominent until the fall of, of the Northern Kingdom of Israel, because they kind of take over the identity of the Northern Kingdom of Israel.{{< /line >}}
-{{< line >}}[00:03:26.680] Dan McClellan: And we get the creation of this history where there's a.{{< /line >}}
-{{< line >}}[00:03:30.360] Dan McClellan: A united kingdom, but Ahaziah is a, a king in Judah.{{< /line >}}
-{{< line >}}[00:03:35.200] Dan McClellan: And we have, we have Joram as a king in Israel.{{< /line >}}
-{{< line >}}[00:03:40.720] Dan McClellan: So that's in the, in the Northern Kingdom.{{< /line >}}
-{{< line >}}[00:03:42.560] Dan McClellan: And then Jehu is giving Joram a.{{< /line >}}
-{{< line >}}[00:03:45.720] Dan Beecher: Hard time, and Jehu is a, is a.{{< /line >}}
-{{< line >}}[00:03:49.840] Dan Beecher: Some sort of antagonist.{{< /line >}}
-{{< line >}}[00:03:51.040] Dan Beecher: But, but, but, but a powerful dude has a lot.{{< /line >}}
-{{< line >}}[00:03:55.080] Dan McClellan: Yes.{{< /line >}}
-{{< line >}}[00:03:55.480] Dan McClellan: And, and Jehu is actually going to Jehu is one of the earliest figures from the Hebrew Bible, for which we actually have direct archaeological evidence.{{< /line >}}
-{{< line >}}[00:04:06.800] Dan McClellan: Oh, cool.{{< /line >}}
-{{< line >}}[00:04:07.520] Dan McClellan: In fact, even a pictorial representation of Jehu.{{< /line >}}
+{{< line >}}[00:02:37.810] Dan McClellan: Correct. So Judah in the south, with Jerusalem as home base, and then Israel in the north with Samaria as home base. And this. And the northern kingdom of Israel was the larger kingdom, the more successful kingdom. And in the 8th century, this was. There was a lot more economic growth going on. There was a lot more cities popping up. There was a lot more money flowing in. And Jerusalem, to the degree that it was able to engage in, like, international trade and things like that, it was probably through the Northern Kingdom of Israel. And Jerusalem doesn't become prominent until the fall of, of the Northern Kingdom of Israel, because they kind of take over the identity of the Northern Kingdom of Israel. And we get the creation of this history where there's a. A united kingdom, but Ahaziah is a, a king in Judah. And we have, we have Joram as a king in Israel.{{< /line >}}
+{{< line >}}[00:03:40.720] Dan McClellan: So that's in the, in the Northern Kingdom. And then Jehu is giving Joram a.{{< /line >}}
+{{< line >}}[00:03:45.720] Dan Beecher: Hard time, and Jehu is a, is a. Some sort of antagonist. But, but, but, but a powerful dude has a lot.{{< /line >}}
+{{< line >}}[00:03:55.080] Dan McClellan: Yes. And, and Jehu is actually going to Jehu is one of the earliest figures from the Hebrew Bible, for which we actually have direct archaeological evidence. Oh, cool. In fact, even a pictorial representation of Jehu.{{< /line >}}
 {{< line >}}[00:04:12.400] Dan Beecher: Oh.{{< /line >}}
-{{< line >}}[00:04:13.120] Dan McClellan: Bowing down before an Assyrian emperor, Shalmaneser III.{{< /line >}}
-{{< line >}}[00:04:18.850] Dan McClellan: But still one of the first ones that we have represented anywhere in the, in the late 9th century.{{< /line >}}
-{{< line >}}[00:04:24.410] Dan McClellan: But we have the story of Ahaziah's death because Ahaziah is considered a wicked king.{{< /line >}}
-{{< line >}}[00:04:32.250] Dan McClellan: And so Jehu is on the warpath.{{< /line >}}
-{{< line >}}[00:04:36.610] Dan McClellan: Well, Jehu is coming after Ahaziah.{{< /line >}}
-{{< line >}}[00:04:39.570] Dan McClellan: And let me see where we got the Jehu.{{< /line >}}
-{{< line >}}[00:04:42.980] Dan McClellan: He's going after Joram first.{{< /line >}}
-{{< line >}}[00:04:44.340] Dan McClellan: Jehu drew his bow with all his strength.{{< /line >}}
-{{< line >}}[00:04:46.460] Dan McClellan: This is 2nd Kings 9, verse 24.{{< /line >}}
-{{< line >}}[00:04:48.580] Dan McClellan: And shot Joram between the shoulders so that the arrow pierced his heart and he sank in his chariot.{{< /line >}}
-{{< line >}}[00:04:54.980] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:04:55.300] Dan Beecher: This is fun.{{< /line >}}
-{{< line >}}[00:04:55.780] Dan Beecher: It's like chariot.{{< /line >}}
-{{< line >}}[00:04:56.980] Dan Beecher: All a bunch of chariot stuff.{{< /line >}}
-{{< line >}}[00:04:58.820] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:05:00.420] Dan Beecher: Meet each other on, on the field in chariots.{{< /line >}}
-{{< line >}}[00:05:03.620] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:05:04.020] Dan McClellan: And.{{< /line >}}
-{{< line >}}[00:05:04.260] Dan McClellan: And we're in the.{{< /line >}}
-{{< line >}}[00:05:05.140] Dan McClellan: The Jezreel Valley, which is.{{< /line >}}
-{{< line >}}[00:05:08.100] Dan McClellan: You got Megiddo over there, the Jezreel Valley.{{< /line >}}
-{{< line >}}[00:05:11.540] Dan McClellan: You go further north and you get Megiddo.{{< /line >}}
-{{< line >}}[00:05:13.500] Dan Beecher: I'm sorry to interrupt, but what's that pronounced?{{< /line >}}
-{{< line >}}[00:05:15.900] Dan Beecher: Megiddo?{{< /line >}}
-{{< line >}}[00:05:18.660] Dan McClellan: And further north, Nazareth is, is kind of in a little bowl place where if you go up on the hill, you can look south over the Jezreel Valley.{{< /line >}}
-{{< line >}}[00:05:29.100] Dan McClellan: And on a clear day, maybe you.{{< /line >}}
-{{< line >}}[00:05:31.180] Dan McClellan: You can at least pick out where Megiddo would be way off in the south.{{< /line >}}
-{{< line >}}[00:05:37.060] Dan McClellan: And Jehu said to his aide, Bidkar, lift him out and throw him on the plot of ground belonging to Naboth the Jezreelite, for remember, and I rode side by side behind his father Ahab.{{< /line >}}
-{{< line >}}[00:05:47.640] Dan McClellan: How The Lord uttered this oracle against him that.{{< /line >}}
-{{< line >}}[00:05:50.640] Dan McClellan: That basically he was going to.{{< /line >}}
-{{< line >}}[00:05:52.040] Dan McClellan: He was going to die.{{< /line >}}
-{{< line >}}[00:05:53.520] Dan McClellan: When King Ahaziah of Judah saw this, he fled in the direction of Beth Haggan, house of the garden.{{< /line >}}
-{{< line >}}[00:06:00.960] Dan McClellan: And this is southeast of.{{< /line >}}
-{{< line >}}[00:06:04.160] Dan McClellan: Of Megiddo.{{< /line >}}
-{{< line >}}[00:06:05.160] Dan McClellan: This is basically just over the hill from the southern tip of the Jezreel Valley.{{< /line >}}
-{{< line >}}[00:06:09.360] Dan McClellan: Jehu pursued him, saying, shoot him also.{{< /line >}}
-{{< line >}}[00:06:13.310] Dan McClellan: And they shot him in the chariot at the ascent to Gur, which is by Ibleam.{{< /line >}}
-{{< line >}}[00:06:19.070] Dan McClellan: And then he fled to Megiddo and died there.{{< /line >}}
-{{< line >}}[00:06:23.630] Dan McClellan: His officers carried him in a chariot to Jerusalem and buried him in his tomb with his ancestors in the city of David.{{< /line >}}
+{{< line >}}[00:04:13.120] Dan McClellan: Bowing down before an Assyrian emperor, Shalmaneser III. But still one of the first ones that we have represented anywhere in the, in the late 9th century. But we have the story of Ahaziah's death because Ahaziah is considered a wicked king. And so Jehu is on the warpath. Well, Jehu is coming after Ahaziah. And let me see where we got the Jehu. He's going after Joram first. Jehu drew his bow with all his strength. This is 2nd Kings 9, verse 24. And shot Joram between the shoulders so that the arrow pierced his heart and he sank in his chariot.{{< /line >}}
+{{< line >}}[00:04:54.980] Dan Beecher: Yeah. This is fun. It's like chariot. All a bunch of chariot stuff. Yeah. Meet each other on, on the field in chariots.{{< /line >}}
+{{< line >}}[00:05:03.620] Dan McClellan: Yeah. And. And we're in the. The Jezreel Valley, which is. You got Megiddo over there, the Jezreel Valley. You go further north and you get Megiddo.{{< /line >}}
+{{< line >}}[00:05:13.500] Dan Beecher: I'm sorry to interrupt, but what's that pronounced? Megiddo?{{< /line >}}
+{{< line >}}[00:05:18.660] Dan McClellan: And further north, Nazareth is, is kind of in a little bowl place where if you go up on the hill, you can look south over the Jezreel Valley. And on a clear day, maybe you. You can at least pick out where Megiddo would be way off in the south. And Jehu said to his aide, Bidkar, lift him out and throw him on the plot of ground belonging to Naboth the Jezreelite, for remember, and I rode side by side behind his father Ahab. How The Lord uttered this oracle against him that. That basically he was going to. He was going to die. When King Ahaziah of Judah saw this, he fled in the direction of Beth Haggan, house of the garden. And this is southeast of. Of Megiddo. This is basically just over the hill from the southern tip of the Jezreel Valley. Jehu pursued him, saying, shoot him also. And they shot him in the chariot at the ascent to Gur, which is by Ibleam.{{< /line >}}
+{{< line >}}[00:06:19.070] Dan McClellan: And then he fled to Megiddo and died there. His officers carried him in a chariot to Jerusalem and buried him in his tomb with his ancestors in the city of David.{{< /line >}}
 {{< line >}}[00:06:32.190] Dan Beecher: So all very specific, like, yes, he was riding in his chariot.{{< /line >}}
 {{< line >}}[00:06:37.750] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:06:38.030] Dan Beecher: He was shot.{{< /line >}}
-{{< line >}}[00:06:40.470] Dan Beecher: He slumped, but he didn't die yet.{{< /line >}}
-{{< line >}}[00:06:43.990] Dan McClellan: It was another guy who.{{< /line >}}
-{{< line >}}[00:06:45.030] Dan McClellan: Who slumped to the ground.{{< /line >}}
-{{< line >}}[00:06:47.350] Dan McClellan: It was Joram who was killed.{{< /line >}}
-{{< line >}}[00:06:49.110] Dan McClellan: And then.{{< /line >}}
-{{< line >}}[00:06:49.590] Dan McClellan: And then Jehu is like, get him too.{{< /line >}}
+{{< line >}}[00:06:38.030] Dan Beecher: He was shot. He slumped, but he didn't die yet.{{< /line >}}
+{{< line >}}[00:06:43.990] Dan McClellan: It was another guy who. Who slumped to the ground. It was Joram who was killed. And then. And then Jehu is like, get him too.{{< /line >}}
 {{< line >}}[00:06:52.470] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:06:52.910] Dan McClellan: And so he's going to get away.{{< /line >}}
-{{< line >}}[00:06:54.430] Dan McClellan: And so they.{{< /line >}}
-{{< line >}}[00:06:55.350] Dan McClellan: They shoot Ahaziah in his chariot.{{< /line >}}
+{{< line >}}[00:06:52.910] Dan McClellan: And so he's going to get away. And so they. They shoot Ahaziah in his chariot.{{< /line >}}
 {{< line >}}[00:06:58.310] Dan Beecher: Yes.{{< /line >}}
 {{< line >}}[00:06:59.270] Dan McClellan: And it says then he fled to Megiddo and died there.{{< /line >}}
 {{< line >}}[00:07:02.150] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:07:02.630] Dan McClellan: And then.{{< /line >}}
-{{< line >}}[00:07:03.430] Dan Beecher: And Megiddo isn't even as.{{< /line >}}
-{{< line >}}[00:07:05.940] Dan Beecher: Oh, yeah.{{< /line >}}
-{{< line >}}[00:07:06.420] Dan Beecher: So like, he.{{< /line >}}
-{{< line >}}[00:07:08.020] Dan Beecher: They shot him at the ascent to Gur.{{< /line >}}
-{{< line >}}[00:07:10.180] Dan Beecher: Meaning he was climbing a hill or something.{{< /line >}}
+{{< line >}}[00:07:03.430] Dan Beecher: And Megiddo isn't even as. Oh, yeah. So like, he. They shot him at the ascent to Gur. Meaning he was climbing a hill or something.{{< /line >}}
 {{< line >}}[00:07:12.420] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:07:12.940] Dan Beecher: In the chariot.{{< /line >}}
-{{< line >}}[00:07:14.260] Dan Beecher: And then he made it to a little town and then died.{{< /line >}}
-{{< line >}}[00:07:18.740] Dan McClellan: Yeah, It's.{{< /line >}}
-{{< line >}}[00:07:19.460] Dan McClellan: It's a little.{{< /line >}}
-{{< line >}}[00:07:20.340] Dan McClellan: It's out of the way.{{< /line >}}
-{{< line >}}[00:07:21.460] Dan McClellan: Like, his chariot, he turned and went another direction.{{< /line >}}
-{{< line >}}[00:07:24.580] Dan McClellan: Probably like, "I'm not gonna make it there.{{< /line >}}
-{{< line >}}[00:07:25.980] Dan McClellan: I'm gonna.{{< /line >}}
-{{< line >}}[00:07:26.420] Dan McClellan: I'm gonna head to this place thinking."{{< /line >}}
+{{< line >}}[00:07:12.940] Dan Beecher: In the chariot. And then he made it to a little town and then died.{{< /line >}}
+{{< line >}}[00:07:18.740] Dan McClellan: Yeah, It's. It's a little. It's out of the way. Like, his chariot, he turned and went another direction. Probably like, "I'm not gonna make it there. I'm gonna. I'm gonna head to this place thinking."{{< /line >}}
 {{< line >}}[00:07:28.180] Dan Beecher: They can't shoot me if I serpentine.{{< /line >}}
-{{< line >}}[00:07:30.820] Dan McClellan: Right, serpentine.{{< /line >}}
-{{< line >}}[00:07:33.470] Dan McClellan: And then Ahaziah's own officers carried him in a chariot to Jerusalem and buried him in his tomb with his ancestors in the city of David.{{< /line >}}
-{{< line >}}[00:07:43.790] Dan McClellan: So we've got a clear picture of how this happened.{{< /line >}}
-{{< line >}}[00:07:47.070] Dan McClellan: And then we're going to go to 2 Chronicles.{{< /line >}}
-{{< line >}}[00:07:50.430] Dan McClellan: And it's funny how many of these contradictions are between Samuel-Kings and Chronicles, because Chronicles—Samuel-Kings are basically taking a bunch of records and putting together a single history of what went on with the kings.{{< /line >}}
-{{< line >}}[00:08:05.090] Dan McClellan: And then Chronicles is basically doing the same thing, but a couple of centuries later.{{< /line >}}
-{{< line >}}[00:08:10.530] Dan McClellan: And they're like, "We don't like what that's doing.{{< /line >}}
-{{< line >}}[00:08:14.090] Dan McClellan: We're going to take this over here.{{< /line >}}
-{{< line >}}[00:08:15.250] Dan McClellan: We're going to carry the two, and we're going to slice that out right there."{{< /line >}}
-{{< line >}}[00:08:17.890] Dan Beecher: So that's not what I heard.{{< /line >}}
-{{< line >}}[00:08:19.810] Dan Beecher: What I heard happened.{{< /line >}}
-{{< line >}}[00:08:21.570] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:08:23.010] Dan McClellan: We think whoever put together Chronicles certainly had access to some version of Samuel-Kings.{{< /line >}}
-{{< line >}}[00:08:29.850] Dan McClellan: It certainly wasn't the version exactly as we have it, because even in the Dead Sea Scrolls, like, there's a lot going on that's different.{{< /line >}}
-{{< line >}}[00:08:37.150] Dan McClellan: And so.{{< /line >}}
-{{< line >}}[00:08:37.590] Dan McClellan: And this was centuries before that, so some version was there, but among other things.{{< /line >}}
+{{< line >}}[00:07:30.820] Dan McClellan: Right, serpentine. And then Ahaziah's own officers carried him in a chariot to Jerusalem and buried him in his tomb with his ancestors in the city of David. So we've got a clear picture of how this happened. And then we're going to go to 2 Chronicles. And it's funny how many of these contradictions are between Samuel-Kings and Chronicles, because Chronicles—Samuel-Kings are basically taking a bunch of records and putting together a single history of what went on with the kings. And then Chronicles is basically doing the same thing, but a couple of centuries later. And they're like, "We don't like what that's doing. We're going to take this over here. We're going to carry the two, and we're going to slice that out right there."{{< /line >}}
+{{< line >}}[00:08:17.890] Dan Beecher: So that's not what I heard. What I heard happened.{{< /line >}}
+{{< line >}}[00:08:21.570] Dan McClellan: Yeah. We think whoever put together Chronicles certainly had access to some version of Samuel-Kings. It certainly wasn't the version exactly as we have it, because even in the Dead Sea Scrolls, like, there's a lot going on that's different. And so. And this was centuries before that, so some version was there, but among other things.{{< /line >}}
 {{< line >}}[00:08:42.430] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:08:42.870] Dan McClellan: And also they were.{{< /line >}}
-{{< line >}}[00:08:45.070] Dan McClellan: They were trying to.{{< /line >}}
-{{< line >}}[00:08:46.350] Dan McClellan: The reason they decided to compose this history is because they had certain rhetorical goals, so to speak, of their own.{{< /line >}}
-{{< line >}}[00:08:55.390] Dan McClellan: And then, so we go to 2 Chronicles 22, verse 7.{{< /line >}}
-{{< line >}}[00:08:58.030] Dan McClellan: "But it was ordained by God that the downfall of Ahaziah should come about through his going to visit Joram."{{< /line >}}
-{{< line >}}[00:09:04.560] Dan McClellan: So we're on the same page, at least that Ahaziah and Joram are having a.{{< /line >}}
-{{< line >}}[00:09:10.880] Dan McClellan: A game night or something.{{< /line >}}
-{{< line >}}[00:09:12.880] Dan McClellan: And it says, "For when he came there, he went out with Jehoram to meet Jehu son of Nimshi, whom the Lord had anointed to destroy the house of Ahab."{{< /line >}}
-{{< line >}}[00:09:23.920] Dan McClellan: So Jehu had been anointed by Adonai, the God of Israel, because this.{{< /line >}}
-{{< line >}}[00:09:29.120] Dan McClellan: These are members of the.{{< /line >}}
-{{< line >}}[00:09:31.780] Dan McClellan: The dynasty of Ahab.{{< /line >}}
-{{< line >}}[00:09:33.220] Dan McClellan: And so they've got a—Jehu's going to shut them down.{{< /line >}}
-{{< line >}}[00:09:37.940] Dan McClellan: When Jehu was executing judgment on the house of Ahab, he met the officials of Judah and the sons of Ahaziah's brothers who attended Ahaziah, and he killed them.{{< /line >}}
-{{< line >}}[00:09:49.060] Dan McClellan: He searched for Ahaziah, who was captured while hiding in Samaria and was brought up to Jehu and put to death.{{< /line >}}
-{{< line >}}[00:09:59.240] Dan McClellan: They buried him, for they said, "He is the grandson of Jehoshaphat, who sought the Lord with all his heart."{{< /line >}}
-{{< line >}}[00:10:06.680] Dan McClellan: And the house of Ahaziah had no one able to rule the kingdom.{{< /line >}}
-{{< line >}}[00:10:10.360] Dan McClellan: So end of the dynasty here.{{< /line >}}
-{{< line >}}[00:10:12.200] Dan McClellan: But we got a very different telling of the story.{{< /line >}}
-{{< line >}}[00:10:15.000] Dan McClellan: Yeah, we've got Jehu executing judgment on the house of Ahab, the officials of Judah.{{< /line >}}
-{{< line >}}[00:10:21.040] Dan McClellan: So remember, this is the king from—from Judah, the sons of Ahaziah's brothers, all the—they get killed.{{< /line >}}
-{{< line >}}[00:10:26.730] Dan McClellan: Ahaziah is not there.{{< /line >}}
-{{< line >}}[00:10:28.770] Dan McClellan: And so they—they had to go and pound the pavement and look for Ahaziah and captured him hiding in Samaria.{{< /line >}}
-{{< line >}}[00:10:35.970] Dan McClellan: Now, this is a reference to Shomron.{{< /line >}}
-{{< line >}}[00:10:38.170] Dan McClellan: This is a reference to a city, not the region of Samaria.{{< /line >}}
-{{< line >}}[00:10:44.690] Dan McClellan: And they.{{< /line >}}
-{{< line >}}[00:10:45.730] Dan McClellan: And.{{< /line >}}
-{{< line >}}[00:10:46.050] Dan McClellan: And this is the people who are searching for Ahaziah brought him to Jehu.{{< /line >}}
-{{< line >}}[00:10:51.740] Dan McClellan: And the Hebrew is plural, which means they put him to death.{{< /line >}}
-{{< line >}}[00:10:57.020] Dan McClellan: That being the people who sought him out and found him in Samaria.{{< /line >}}
-{{< line >}}[00:11:02.380] Dan McClellan: They.{{< /line >}}
-{{< line >}}[00:11:02.860] Dan McClellan: The people who sought him out, found him, killed him, buried him.{{< /line >}}
-{{< line >}}[00:11:07.180] Dan McClellan: And it gives a reason why they would bury their enemy, right?{{< /line >}}
-{{< line >}}[00:11:10.380] Dan McClellan: Because they said, hey, this guy's daddy was important.{{< /line >}}
-{{< line >}}[00:11:14.060] Dan McClellan: Granddaddy was important.{{< /line >}}
-{{< line >}}[00:11:15.820] Dan McClellan: So we're going to do him the honor of giving him a proper burial.{{< /line >}}
-{{< line >}}[00:11:21.040] Dan McClellan: So right off the bat, we've got a number of significant differences between these two.{{< /line >}}
-{{< line >}}[00:11:25.840] Dan Beecher: A very specific set of circumstances or.{{< /line >}}
-{{< line >}}[00:11:29.440] Dan Beecher: Or set of plot points, but just none of them line up other than the cast of characters.{{< /line >}}
-{{< line >}}[00:11:37.680] Dan McClellan: And even there, like, we don't have Joram being shot between the shoulder blades and slumping down in his chariot.{{< /line >}}
-{{< line >}}[00:11:46.360] Dan McClellan: A very, A very graphic telling of.{{< /line >}}
-{{< line >}}[00:11:49.840] Dan McClellan: Of that story.{{< /line >}}
-{{< line >}}[00:11:50.440] Dan McClellan: But we do have Ahaziah, who is hiding out and brought to Jehu, which is not Jehu, commanding his men to fire upon Ahaziah in his chariot while he is fleeing.{{< /line >}}
+{{< line >}}[00:08:42.870] Dan McClellan: And also they were. They were trying to. The reason they decided to compose this history is because they had certain rhetorical goals, so to speak, of their own. And then, so we go to 2 Chronicles 22, verse 7. "But it was ordained by God that the downfall of Ahaziah should come about through his going to visit Joram." So we're on the same page, at least that Ahaziah and Joram are having a. A game night or something. And it says, "For when he came there, he went out with Jehoram to meet Jehu son of Nimshi, whom the Lord had anointed to destroy the house of Ahab." So Jehu had been anointed by Adonai, the God of Israel, because this. These are members of the. The dynasty of Ahab. And so they've got a—Jehu's going to shut them down. When Jehu was executing judgment on the house of Ahab, he met the officials of Judah and the sons of Ahaziah's brothers who attended Ahaziah, and he killed them.{{< /line >}}
+{{< line >}}[00:09:49.060] Dan McClellan: He searched for Ahaziah, who was captured while hiding in Samaria and was brought up to Jehu and put to death. They buried him, for they said, "He is the grandson of Jehoshaphat, who sought the Lord with all his heart." And the house of Ahaziah had no one able to rule the kingdom. So end of the dynasty here. But we got a very different telling of the story. Yeah, we've got Jehu executing judgment on the house of Ahab, the officials of Judah. So remember, this is the king from—from Judah, the sons of Ahaziah's brothers, all the—they get killed. Ahaziah is not there. And so they—they had to go and pound the pavement and look for Ahaziah and captured him hiding in Samaria. Now, this is a reference to Shomron. This is a reference to a city, not the region of Samaria. And they. And. And this is the people who are searching for Ahaziah brought him to Jehu.{{< /line >}}
+{{< line >}}[00:10:51.740] Dan McClellan: And the Hebrew is plural, which means they put him to death. That being the people who sought him out and found him in Samaria. They. The people who sought him out, found him, killed him, buried him. And it gives a reason why they would bury their enemy, right? Because they said, hey, this guy's daddy was important. Granddaddy was important. So we're going to do him the honor of giving him a proper burial. So right off the bat, we've got a number of significant differences between these two.{{< /line >}}
+{{< line >}}[00:11:25.840] Dan Beecher: A very specific set of circumstances or. Or set of plot points, but just none of them line up other than the cast of characters.{{< /line >}}
+{{< line >}}[00:11:37.680] Dan McClellan: And even there, like, we don't have Joram being shot between the shoulder blades and slumping down in his chariot. A very, A very graphic telling of. Of that story. But we do have Ahaziah, who is hiding out and brought to Jehu, which is not Jehu, commanding his men to fire upon Ahaziah in his chariot while he is fleeing.{{< /line >}}
 {{< line >}}[00:12:04.800] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:12:05.280] Dan McClellan: And then fleeing to Megiddo and dying there.{{< /line >}}
-{{< line >}}[00:12:08.040] Dan McClellan: According to Second Chronicles, he was killed before Jehu by Jehu's men, and then Jehu's men buried him.{{< /line >}}
-{{< line >}}[00:12:16.080] Dan McClellan: And I think this is one of the most explicit contradictions.{{< /line >}}
-{{< line >}}[00:12:20.200] Dan McClellan: In Second Chronicles, it is Jehu's men who bury Ahaziah.{{< /line >}}
-{{< line >}}[00:12:25.240] Dan McClellan: In Second Kings, it is Ahaziah's men who bury Ahaziah with his ancestors.{{< /line >}}
-{{< line >}}[00:12:32.920] Dan McClellan: With his ancestors, yeah.{{< /line >}}
-{{< line >}}[00:12:34.280] Dan McClellan: It's.{{< /line >}}
-{{< line >}}[00:12:34.760] Dan McClellan: That is an explicit contradiction.{{< /line >}}
-{{< line >}}[00:12:37.240] Dan McClellan: Jehu's men are not Ahaziah's men.{{< /line >}}
-{{< line >}}[00:12:39.970] Dan McClellan: And so that can't be reconciled.{{< /line >}}
-{{< line >}}[00:12:44.370] Dan McClellan: But we do have interesting attempts to try to gin up these scenarios that are not in evidence to make these things gel where he.{{< /line >}}
-{{< line >}}[00:12:56.850] Dan McClellan: What was.{{< /line >}}
-{{< line >}}[00:12:57.330] Dan McClellan: I heard an interesting one.{{< /line >}}
-{{< line >}}[00:12:58.530] Dan McClellan: They searched for him, found him in Samaria, brought him to the Jezreel Valley and were like, run.{{< /line >}}
-{{< line >}}[00:13:05.730] Dan McClellan: And then he was like, okay.{{< /line >}}
-{{< line >}}[00:13:07.050] Dan McClellan: And runs off in his chariot and then they shoot him and he goes to Megiddo and they find.{{< /line >}}
-{{< line >}}[00:13:13.560] Dan McClellan: And then they have to go find him again and they find him in Megiddo and then they put him to death in Megiddo.{{< /line >}}
-{{< line >}}[00:13:21.200] Dan McClellan: So it's.{{< /line >}}
-{{< line >}}[00:13:22.400] Dan Beecher: You gotta add a lot.{{< /line >}}
-{{< line >}}[00:13:24.960] Dan Beecher: And also, like, the hiding thing, like, Kings doesn't have any of that.{{< /line >}}
-{{< line >}}[00:13:30.240] Dan Beecher: Kings has him.{{< /line >}}
-{{< line >}}[00:13:31.480] Dan Beecher: And who's the other Jay guy?{{< /line >}}
-{{< line >}}[00:13:33.920] Dan Beecher: Jehoram?{{< /line >}}
-{{< line >}}[00:13:34.560] Dan Beecher: Is that the other Joram Joram?{{< /line >}}
+{{< line >}}[00:12:05.280] Dan McClellan: And then fleeing to Megiddo and dying there. According to Second Chronicles, he was killed before Jehu by Jehu's men, and then Jehu's men buried him. And I think this is one of the most explicit contradictions. In Second Chronicles, it is Jehu's men who bury Ahaziah. In Second Kings, it is Ahaziah's men who bury Ahaziah with his ancestors. With his ancestors, yeah. It's. That is an explicit contradiction. Jehu's men are not Ahaziah's men. And so that can't be reconciled. But we do have interesting attempts to try to gin up these scenarios that are not in evidence to make these things gel where he. What was. I heard an interesting one. They searched for him, found him in Samaria, brought him to the Jezreel Valley and were like, run.{{< /line >}}
+{{< line >}}[00:13:05.730] Dan McClellan: And then he was like, okay. And runs off in his chariot and then they shoot him and he goes to Megiddo and they find. And then they have to go find him again and they find him in Megiddo and then they put him to death in Megiddo. So it's.{{< /line >}}
+{{< line >}}[00:13:22.400] Dan Beecher: You gotta add a lot. And also, like, the hiding thing, like, Kings doesn't have any of that. Kings has him. And who's the other Jay guy? Jehoram? Is that the other Joram Joram?{{< /line >}}
 {{< line >}}[00:13:36.750] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:13:37.470] Dan Beecher: Both riding out specifically to meet Jehu in that place.{{< /line >}}
-{{< line >}}[00:13:43.950] Dan Beecher: Like, yeah.{{< /line >}}
-{{< line >}}[00:13:44.590] Dan Beecher: There's a whole thing that leads up to it.{{< /line >}}
-{{< line >}}[00:13:46.150] Dan Beecher: So, yeah, there's.{{< /line >}}
-{{< line >}}[00:13:47.550] Dan Beecher: He couldn't have been hiding in Samaria.{{< /line >}}
-{{< line >}}[00:13:49.870] Dan Beecher: That's not possible.{{< /line >}}
-{{< line >}}[00:13:52.429] Dan Beecher: Unless you really, really.{{< /line >}}
-{{< line >}}[00:13:54.350] Dan Beecher: You gotta squint and turn sideways and kind of like, definitely.{{< /line >}}
-{{< line >}}[00:13:59.390] Dan Beecher: You can't.{{< /line >}}
-{{< line >}}[00:13:59.910] Dan Beecher: You.{{< /line >}}
-{{< line >}}[00:14:00.190] Dan Beecher: You can't.{{< /line >}}
-{{< line >}}[00:14:00.950] Dan Beecher: You have to be working real, real hard.{{< /line >}}
-{{< line >}}[00:14:03.910] Dan McClellan: Right?{{< /line >}}
-{{< line >}}[00:14:04.710] Dan McClellan: You're.{{< /line >}}
-{{< line >}}[00:14:05.110] Dan McClellan: You're not letting the text set its own terms.{{< /line >}}
-{{< line >}}[00:14:08.310] Dan McClellan: You're setting the terms for the text and, and here's something that I find so baffling about the attempt to salvage the inerrancy and the univocality of these two texts is you basically have to turn both authors into liars.{{< /line >}}
-{{< line >}}[00:14:22.790] Dan McClellan: You have to say that each account is just wildly misrepresenting the events.{{< /line >}}
+{{< line >}}[00:13:37.470] Dan Beecher: Both riding out specifically to meet Jehu in that place. Like, yeah. There's a whole thing that leads up to it. So, yeah, there's. He couldn't have been hiding in Samaria. That's not possible. Unless you really, really. You gotta squint and turn sideways and kind of like, definitely. You can't. You. You can't. You have to be working real, real hard.{{< /line >}}
+{{< line >}}[00:14:03.910] Dan McClellan: Right? You're. You're not letting the text set its own terms. You're setting the terms for the text and, and here's something that I find so baffling about the attempt to salvage the inerrancy and the univocality of these two texts is you basically have to turn both authors into liars. You have to say that each account is just wildly misrepresenting the events.{{< /line >}}
 {{< line >}}[00:14:28.320] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:14:28.800] Dan McClellan: So that you can say there are these connecting events that get us from point A to point B that are being entirely omitted.{{< /line >}}
-{{< line >}}[00:14:38.800] Dan McClellan: And so you have one story where everything's going on in the Jezreel Valley and it's, it, it is coherent, it makes sense.{{< /line >}}
-{{< line >}}[00:14:45.880] Dan McClellan: There's a beginning, a middle and an end.{{< /line >}}
-{{< line >}}[00:14:47.520] Dan McClellan: And it all happens in this one little corner of the valley.{{< /line >}}
-{{< line >}}[00:14:50.480] Dan McClellan: And then it's like, no, the reality is that this thing was spanning over dozens of miles and we have people coming back and forth and we have people who are giving them a chance to get away or something and you know, playing sport with them.{{< /line >}}
-{{< line >}}[00:15:06.030] Dan McClellan: And you basically make each story entirely false in order to protect the inerrancy of the two stories, which is something that frequently happens when we're talking about contradictions.{{< /line >}}
-{{< line >}}[00:15:22.720] Dan McClellan: Like the, the death of, of Judas is like that.{{< /line >}}
-{{< line >}}[00:15:27.840] Dan McClellan: People are like, oh, well, that's simple.{{< /line >}}
-{{< line >}}[00:15:29.120] Dan McClellan: He went and he hanged himself.{{< /line >}}
-{{< line >}}[00:15:30.560] Dan McClellan: And then over time the rope broke and he fell and then, you know, everything just, he burst and, and all that.{{< /line >}}
-{{< line >}}[00:15:37.920] Dan McClellan: It's like, that's not the story.{{< /line >}}
-{{< line >}}[00:15:39.960] Dan McClellan: Yeah, that is a very, very different story from the two stories that were told.{{< /line >}}
-{{< line >}}[00:15:44.920] Dan McClellan: You're, you're, you have to insist on sovereignty over what the text is actually saying and you turn the text into a falsehood for the sake of protecting the inerrancy of the text.{{< /line >}}
-{{< line >}}[00:15:59.570] Dan Beecher: Yeah, I mean, one of the things that I wanted this discussion to be about was the idea of why we point out these contradictions on this show.{{< /line >}}
-{{< line >}}[00:16:10.770] Dan Beecher: Because I think, I think you think it's a very important thing to do.{{< /line >}}
-{{< line >}}[00:16:16.260] Dan Beecher: And it's not about poking holes.{{< /line >}}
-{{< line >}}[00:16:18.820] Dan Beecher: You know, I know plenty of people who point out contradictions because they want to poke holes in the Bible and haha, it's a big gotcha.{{< /line >}}
-{{< line >}}[00:16:24.940] Dan Beecher: But that's not what this is about.{{< /line >}}
-{{< line >}}[00:16:26.260] Dan Beecher: So why is it important to you?{{< /line >}}
-{{< line >}}[00:16:29.860] Dan McClellan: It's important to me because I think it is necessary to take the Bible more seriously.{{< /line >}}
-{{< line >}}[00:16:34.580] Dan McClellan: If we believe that the, what the Bible is saying is important, then I think you have to let the Bible operate on its own terms.{{< /line >}}
-{{< line >}}[00:16:43.250] Dan McClellan: But so many people don't want to let the Bible operate on its own terms because these presuppositions of inerrancy, of inspiration, of univocality have more authority than the text of the Bible.{{< /line >}}
-{{< line >}}[00:16:56.690] Dan McClellan: And that's not taking the Bible seriously, that's taking those dogmas seriously.{{< /line >}}
-{{< line >}}[00:17:01.570] Dan McClellan: But if I, I'm trying to let what these authors were trying to say come through.{{< /line >}}
-{{< line >}}[00:17:08.920] Dan McClellan: When you mask, when you obscure what the authors are trying to say and alter it in order to salvage your dogmas, you're just shoving the Bible down.{{< /line >}}
-{{< line >}}[00:17:21.480] Dan McClellan: You're not taking the Bible seriously.{{< /line >}}
-{{< line >}}[00:17:23.400] Dan McClellan: And this is why I insist there's no such thing as a biblical literalist because one, the Bible is not univocal, it's multivocal.{{< /line >}}
-{{< line >}}[00:17:33.800] Dan McClellan: There are lots of different people saying lots of different things.{{< /line >}}
-{{< line >}}[00:17:36.280] Dan McClellan: So you can't even extract a single coherent, consistent worldview from the Bible as a whole.{{< /line >}}
-{{< line >}}[00:17:42.500] Dan McClellan: You have to pick and choose.{{< /line >}}
-{{< line >}}[00:17:44.260] Dan McClellan: You have to say we're going to, we're going to take this one for this situation and we're going to leave that one on the side for this situation.{{< /line >}}
-{{< line >}}[00:17:50.740] Dan McClellan: You have no choice but to do that.{{< /line >}}
-{{< line >}}[00:17:52.500] Dan McClellan: And if you try to impose a unifying framework upon the whole thing to say no, it all works, then what you're doing is saying the Bible cannot operate on its own terms, it has to operate on my terms.{{< /line >}}
+{{< line >}}[00:14:28.800] Dan McClellan: So that you can say there are these connecting events that get us from point A to point B that are being entirely omitted. And so you have one story where everything's going on in the Jezreel Valley and it's, it, it is coherent, it makes sense. There's a beginning, a middle and an end. And it all happens in this one little corner of the valley. And then it's like, no, the reality is that this thing was spanning over dozens of miles and we have people coming back and forth and we have people who are giving them a chance to get away or something and you know, playing sport with them. And you basically make each story entirely false in order to protect the inerrancy of the two stories, which is something that frequently happens when we're talking about contradictions. Like the, the death of, of Judas is like that. People are like, oh, well, that's simple.{{< /line >}}
+{{< line >}}[00:15:29.120] Dan McClellan: He went and he hanged himself. And then over time the rope broke and he fell and then, you know, everything just, he burst and, and all that. It's like, that's not the story. Yeah, that is a very, very different story from the two stories that were told. You're, you're, you have to insist on sovereignty over what the text is actually saying and you turn the text into a falsehood for the sake of protecting the inerrancy of the text.{{< /line >}}
+{{< line >}}[00:15:59.570] Dan Beecher: Yeah, I mean, one of the things that I wanted this discussion to be about was the idea of why we point out these contradictions on this show. Because I think, I think you think it's a very important thing to do. And it's not about poking holes. You know, I know plenty of people who point out contradictions because they want to poke holes in the Bible and haha, it's a big gotcha. But that's not what this is about. So why is it important to you?{{< /line >}}
+{{< line >}}[00:16:29.860] Dan McClellan: It's important to me because I think it is necessary to take the Bible more seriously. If we believe that the, what the Bible is saying is important, then I think you have to let the Bible operate on its own terms. But so many people don't want to let the Bible operate on its own terms because these presuppositions of inerrancy, of inspiration, of univocality have more authority than the text of the Bible. And that's not taking the Bible seriously, that's taking those dogmas seriously. But if I, I'm trying to let what these authors were trying to say come through. When you mask, when you obscure what the authors are trying to say and alter it in order to salvage your dogmas, you're just shoving the Bible down. You're not taking the Bible seriously. And this is why I insist there's no such thing as a biblical literalist because one, the Bible is not univocal, it's multivocal.{{< /line >}}
+{{< line >}}[00:17:33.800] Dan McClellan: There are lots of different people saying lots of different things. So you can't even extract a single coherent, consistent worldview from the Bible as a whole. You have to pick and choose. You have to say we're going to, we're going to take this one for this situation and we're going to leave that one on the side for this situation. You have no choice but to do that. And if you try to impose a unifying framework upon the whole thing to say no, it all works, then what you're doing is saying the Bible cannot operate on its own terms, it has to operate on my terms.{{< /line >}}
 {{< line >}}[00:18:03.700] Dan Beecher: Well, it doesn't leave room in a book that was written over the course of what, a thousand years or something like that?{{< /line >}}
-{{< line >}}[00:18:10.440] Dan McClellan: About a thousand years.{{< /line >}}
-{{< line >}}[00:18:11.480] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:18:12.480] Dan Beecher: There's no room in your worldview for innovation within that period of time for, for change, for, you know, change in thought, change in philosophy, theology.{{< /line >}}
-{{< line >}}[00:18:23.440] Dan Beecher: Over a thousand years is impossible.{{< /line >}}
-{{< line >}}[00:18:28.560] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:18:29.200] Dan McClellan: And, and it's, it's an example I've brought up many times in the past, but just within my own lifetime I have seen people on one side of the political aisle go from you can never have an adulterer as president to it's okay to have an adulterer as president.{{< /line >}}
-{{< line >}}[00:18:47.300] Dan McClellan: Like within a single generation you can have people entirely flip flop on what they claim are absolutely essential central ideologies for their identities.{{< /line >}}
+{{< line >}}[00:18:10.440] Dan McClellan: About a thousand years. Yeah.{{< /line >}}
+{{< line >}}[00:18:12.480] Dan Beecher: There's no room in your worldview for innovation within that period of time for, for change, for, you know, change in thought, change in philosophy, theology. Over a thousand years is impossible.{{< /line >}}
+{{< line >}}[00:18:28.560] Dan McClellan: Yeah. And, and it's, it's an example I've brought up many times in the past, but just within my own lifetime I have seen people on one side of the political aisle go from you can never have an adulterer as president to it's okay to have an adulterer as president. Like within a single generation you can have people entirely flip flop on what they claim are absolutely essential central ideologies for their identities.{{< /line >}}
 {{< line >}}[00:18:58.500] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:18:59.140] Dan McClellan: And so over the course of a thousand years that's going to happen thousands and thousands of times.{{< /line >}}
-{{< line >}}[00:19:05.650] Dan McClellan: So yeah, it doesn't treat the Bible as an authority on its own.{{< /line >}}
-{{< line >}}[00:19:10.850] Dan McClellan: Right.{{< /line >}}
-{{< line >}}[00:19:11.410] Dan McClellan: It treats the Bible as the proof text for the real authority, which is the dogmas that are prioritized for a given set of social identities.{{< /line >}}
-{{< line >}}[00:19:26.210] Dan McClellan: Whatever one's identity politics demands the Bible be, that's what they're gonna make the Bible into.{{< /line >}}
-{{< line >}}[00:19:33.150] Dan Beecher: It doesn't even allow the Bible to be the authority on the Bible.{{< /line >}}
-{{< line >}}[00:19:37.790] Dan Beecher: Yeah, like if there's one thing that the Bible can definitively be the authority on, it's damn self.{{< /line >}}
-{{< line >}}[00:19:47.150] Dan McClellan: Yeah, but we assert authority over that as well.{{< /line >}}
-{{< line >}}[00:19:50.830] Dan McClellan: When you have New Testament authors quoting from the book of First Enoch or referring to Second Maccabees or the Ascension of Isaiah or something like that, we've got to say that wasn't really Scripture.{{< /line >}}
+{{< line >}}[00:18:59.140] Dan McClellan: And so over the course of a thousand years that's going to happen thousands and thousands of times. So yeah, it doesn't treat the Bible as an authority on its own. Right. It treats the Bible as the proof text for the real authority, which is the dogmas that are prioritized for a given set of social identities. Whatever one's identity politics demands the Bible be, that's what they're gonna make the Bible into.{{< /line >}}
+{{< line >}}[00:19:33.150] Dan Beecher: It doesn't even allow the Bible to be the authority on the Bible. Yeah, like if there's one thing that the Bible can definitively be the authority on, it's damn self.{{< /line >}}
+{{< line >}}[00:19:47.150] Dan McClellan: Yeah, but we assert authority over that as well. When you have New Testament authors quoting from the book of First Enoch or referring to Second Maccabees or the Ascension of Isaiah or something like that, we've got to say that wasn't really Scripture.{{< /line >}}
 {{< line >}}[00:20:02.760] Dan Beecher: Yeah, yeah, that's a problem.{{< /line >}}
-{{< line >}}[00:20:05.560] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:20:05.920] Dan McClellan: The folks 300, 400 years later who sat down and hammered out what the boundaries of the Bible were going to be, they knew better.{{< /line >}}
-{{< line >}}[00:20:14.600] Dan McClellan: Or at least we're giving them more authority than we are to the actual authors of the biblical texts.{{< /line >}}
-{{< line >}}[00:20:20.840] Dan McClellan: So it's such a disingenuous concern, this trying to protect univocality because it has absolutely no choice but to assert the authority to dictate to the Bible what it is and is not allowed to mean.{{< /line >}}
-{{< line >}}[00:20:39.960] Dan McClellan: Like, this is one of the reasons I'm not a huge fan of the New International Version of the Bible because it says in the preface or the introduction that all the translators are committed to the inspiration and infallibility of the text.{{< /line >}}
-{{< line >}}[00:20:56.680] Dan McClellan: It's like if you're committed to that, then you're not letting the authors speak, you are speaking for them and on their behalf.{{< /line >}}
-{{< line >}}[00:21:05.680] Dan McClellan: And you have to make changes in order to make things fit.{{< /line >}}
-{{< line >}}[00:21:09.200] Dan McClellan: And they do.{{< /line >}}
-{{< line >}}[00:21:10.320] Dan McClellan: You can find places where they are fiddling with the translation in ways that are not academically defensible just to make things fit this ideology.{{< /line >}}
-{{< line >}}[00:21:24.010] Dan Beecher: Yeah, it makes sense to me that the, yeah, this whole thing, I will say this on a slightly different topic because I think we've made that point.{{< /line >}}
-{{< line >}}[00:21:37.010] Dan Beecher: I think that that's, I think we're clear on that.{{< /line >}}
-{{< line >}}[00:21:40.660] Dan Beecher: Anyone who would disagree with us at this point about that is just defending that ideology or they're defending those dogmas.{{< /line >}}
-{{< line >}}[00:21:51.860] Dan Beecher: I do think that one of the things when I was reading Second Kings chapter 9 about Jehu son of Nimshi, I think we should have in our merch.{{< /line >}}
-{{< line >}}[00:22:02.660] Dan Beecher: We don't have merch yet, but we will.{{< /line >}}
-{{< line >}}[00:22:04.260] Dan Beecher: But in our merch, I think we should have a bumper sticker that says Second Kings chapter 9, verse 20, because that has the part that says it looks like the driving of Jehu son of Nimshi, for he drives like a maniac.{{< /line >}}
-{{< line >}}[00:22:22.420] Dan Beecher: And I just think that would be funny.{{< /line >}}
+{{< line >}}[00:20:05.560] Dan McClellan: Yeah. The folks 300, 400 years later who sat down and hammered out what the boundaries of the Bible were going to be, they knew better. Or at least we're giving them more authority than we are to the actual authors of the biblical texts. So it's such a disingenuous concern, this trying to protect univocality because it has absolutely no choice but to assert the authority to dictate to the Bible what it is and is not allowed to mean. Like, this is one of the reasons I'm not a huge fan of the New International Version of the Bible because it says in the preface or the introduction that all the translators are committed to the inspiration and infallibility of the text. It's like if you're committed to that, then you're not letting the authors speak, you are speaking for them and on their behalf.{{< /line >}}
+{{< line >}}[00:21:05.680] Dan McClellan: And you have to make changes in order to make things fit. And they do. You can find places where they are fiddling with the translation in ways that are not academically defensible just to make things fit this ideology.{{< /line >}}
+{{< line >}}[00:21:24.010] Dan Beecher: Yeah, it makes sense to me that the, yeah, this whole thing, I will say this on a slightly different topic because I think we've made that point. I think that that's, I think we're clear on that. Anyone who would disagree with us at this point about that is just defending that ideology or they're defending those dogmas. I do think that one of the things when I was reading Second Kings chapter 9 about Jehu son of Nimshi, I think we should have in our merch. We don't have merch yet, but we will. But in our merch, I think we should have a bumper sticker that says Second Kings chapter 9, verse 20, because that has the part that says it looks like the driving of Jehu son of Nimshi, for he drives like a maniac. And I just think that would be funny.{{< /line >}}
 {{< line >}}[00:22:25.860] Dan Beecher: You drive like Jehu son of Nimshi would be a bumper sticker or something like that.{{< /line >}}
 {{< line >}}[00:22:31.300] Dan McClellan: Is that what it says in the King James Version?{{< /line >}}
 {{< line >}}[00:22:33.380] Dan Beecher: Oh, that's what it says in the NRSV.{{< /line >}}
-{{< line >}}[00:22:35.220] Dan McClellan: Oh, NRSV.{{< /line >}}
-{{< line >}}[00:22:36.060] Dan McClellan: Drives like a maniac.{{< /line >}}
+{{< line >}}[00:22:35.220] Dan McClellan: Oh, NRSV. Drives like a maniac.{{< /line >}}
 {{< line >}}[00:22:36.940] Dan Beecher: Drives like a maniac.{{< /line >}}
-{{< line >}}[00:22:38.620] Dan McClellan: Maniac.{{< /line >}}
-{{< line >}}[00:22:39.120] Dan McClellan: Oh, I probably can't sing that.{{< /line >}}
+{{< line >}}[00:22:38.620] Dan McClellan: Maniac. Oh, I probably can't sing that.{{< /line >}}
 {{< line >}}[00:22:42.160] Dan Beecher: Nobody heard that, right?{{< /line >}}
-{{< line >}}[00:22:43.840] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:22:45.840] Dan McClellan: The King James Version says, for he driveth furiously.{{< /line >}}
-{{< line >}}[00:22:49.040] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:22:49.480] Dan Beecher: Either way, both are good.{{< /line >}}
-{{< line >}}[00:22:50.800] Dan McClellan: Fast and Furious.{{< /line >}}
-{{< line >}}[00:22:54.960] Dan McClellan: And then the New English Translation says, he drives recklessly.{{< /line >}}
-{{< line >}}[00:22:59.040] Dan Beecher: Oh, I like like a maniac, but furiously also.{{< /line >}}
-{{< line >}}[00:23:02.960] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:23:03.320] Dan Beecher: The Fast and the Furious.{{< /line >}}
-{{< line >}}[00:23:04.320] Dan Beecher: I love it.{{< /line >}}
-{{< line >}}[00:23:05.010] Dan Beecher: Jehu, son of Nimshi.{{< /line >}}
-{{< line >}}[00:23:10.370] Dan Beecher: All right, well, there's that.{{< /line >}}
-{{< line >}}[00:23:14.210] Dan Beecher: However Ahaziah died, we will never know the truth of it, unfortunately.{{< /line >}}
-{{< line >}}[00:23:19.330] Dan McClellan: Probably not.{{< /line >}}
-{{< line >}}[00:23:19.970] Dan McClellan: Probably not.{{< /line >}}
-{{< line >}}[00:23:20.730] Dan McClellan: Yeah, so I would just say that Second Kings is probably closer to the truth than Chronicles, since it's coming so much later and.{{< /line >}}
-{{< line >}}[00:23:32.140] Dan McClellan: And.{{< /line >}}
-{{< line >}}[00:23:32.260] Dan McClellan: And is trying to fiddle with things more.{{< /line >}}
-{{< line >}}[00:23:34.780] Dan Beecher: Okay, fair enough.{{< /line >}}
-{{< line >}}[00:23:36.140] Dan Beecher: All right, I'm.{{< /line >}}
-{{< line >}}[00:23:36.940] Dan Beecher: We're gonna.{{< /line >}}
-{{< line >}}[00:23:37.380] Dan Beecher: We're gonna say he drove wounded his chariot back to wherever the place was.{{< /line >}}
-{{< line >}}[00:23:45.100] Dan Beecher: All right, well, I think it's time for a bit of chapter and verse.{{< /line >}}
+{{< line >}}[00:22:43.840] Dan McClellan: Yeah. The King James Version says, for he driveth furiously.{{< /line >}}
+{{< line >}}[00:22:49.040] Dan Beecher: Yeah. Either way, both are good.{{< /line >}}
+{{< line >}}[00:22:50.800] Dan McClellan: Fast and Furious. And then the New English Translation says, he drives recklessly.{{< /line >}}
+{{< line >}}[00:22:59.040] Dan Beecher: Oh, I like like a maniac, but furiously also. Yeah. The Fast and the Furious. I love it. Jehu, son of Nimshi. All right, well, there's that. However Ahaziah died, we will never know the truth of it, unfortunately.{{< /line >}}
+{{< line >}}[00:23:19.330] Dan McClellan: Probably not. Probably not. Yeah, so I would just say that Second Kings is probably closer to the truth than Chronicles, since it's coming so much later and. And. And is trying to fiddle with things more.{{< /line >}}
+{{< line >}}[00:23:34.780] Dan Beecher: Okay, fair enough. All right, I'm. We're gonna. We're gonna say he drove wounded his chariot back to wherever the place was. All right, well, I think it's time for a bit of chapter and verse.{{< /line >}}
 {{< line >}}[00:23:50.300] Dan McClellan: All right, let's hit it.{{< /line >}}
-{{< line >}}[00:23:54.060] Dan Beecher: All right, so we're.{{< /line >}}
-{{< line >}}[00:23:56.940] Dan Beecher: We're going now to Mark and.{{< /line >}}
-{{< line >}}[00:23:59.690] Dan Beecher: Walk us through.{{< /line >}}
-{{< line >}}[00:24:00.410] Dan Beecher: This is.{{< /line >}}
-{{< line >}}[00:24:01.530] Dan Beecher: We're in Mark, chapter two.{{< /line >}}
+{{< line >}}[00:23:54.060] Dan Beecher: All right, so we're. We're going now to Mark and. Walk us through. This is. We're in Mark, chapter two.{{< /line >}}
 {{< line >}}[00:24:03.370] Dan McClellan: Mark, chapter two.{{< /line >}}
 {{< line >}}[00:24:04.410] Dan Beecher: And there is a fun story of Jesus, and it starts at his house.{{< /line >}}
-{{< line >}}[00:24:12.810] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:24:13.770] Dan McClellan: So this is Mark, chapter one.{{< /line >}}
-{{< line >}}[00:24:17.730] Dan McClellan: The Gospel of Mark begins with, we've got the forerunner coming.{{< /line >}}
-{{< line >}}[00:24:22.610] Dan McClellan: Here's Jesus.{{< /line >}}
-{{< line >}}[00:24:23.330] Dan McClellan: He's getting baptized.{{< /line >}}
-{{< line >}}[00:24:24.930] Dan McClellan: He's been baptized.{{< /line >}}
-{{< line >}}[00:24:25.890] Dan McClellan: And then we have Jesus staying within what some people call the Evangelical triangle, which is a triangle of three cities on the northwestern corner of the Sea of Galilee.{{< /line >}}
-{{< line >}}[00:24:41.010] Dan McClellan: Bethsaida, Capernaum.{{< /line >}}
-{{< line >}}[00:24:46.210] Dan McClellan: And I.{{< /line >}}
-{{< line >}}[00:24:46.850] Dan McClellan: Shoot, I forget what the other one is, but it's a little up the hills, up the hills away.{{< /line >}}
-{{< line >}}[00:24:52.090] Dan McClellan: And it has black stone, like the city was constructed of black stone.{{< /line >}}
-{{< line >}}[00:24:56.370] Dan McClellan: And there are hyraxes there.{{< /line >}}
-{{< line >}}[00:24:58.090] Dan McClellan: And so you got to be careful, because these rodents will yell at you.{{< /line >}}
-{{< line >}}[00:25:03.290] Dan McClellan: And they're bizarre, bizarre creatures.{{< /line >}}
-{{< line >}}[00:25:06.010] Dan McClellan: However.{{< /line >}}
-{{< line >}}[00:25:06.650] Dan McClellan: So everything's going on up in Galilee in Mark 1.{{< /line >}}
-{{< line >}}[00:25:10.170] Dan McClellan: And he has a.{{< /line >}}
-{{< line >}}[00:25:11.450] Dan McClellan: He casts out an unclean spirit.{{< /line >}}
-{{< line >}}[00:25:16.010] Dan McClellan: He heals many at Simon's house.{{< /line >}}
-{{< line >}}[00:25:18.630] Dan McClellan: And Simon lives in Capernaum, or Capernaum, or Capernaum, however you like to pronounce that name.{{< /line >}}
-{{< line >}}[00:25:27.390] Dan McClellan: And when.{{< /line >}}
-{{< line >}}[00:25:27.790] Dan McClellan: If you go visit, if you ever have the privilege of visiting, there is a statue right outside the front entrance.{{< /line >}}
-{{< line >}}[00:25:35.190] Dan McClellan: As you're going in the front entrance, you look to the left, and there will be a bench and there is a, what looks like a homeless man covered in a sheet or something laying on the bench.{{< /line >}}
-{{< line >}}[00:25:47.270] Dan McClellan: But you look at the feet and you see there are scars on the feet.{{< /line >}}
-{{< line >}}[00:25:52.910] Dan McClellan: And so this is Jesus.{{< /line >}}
-{{< line >}}[00:25:55.310] Dan McClellan: It's trying to remind you he's. Jesus is one of us.{{< /line >}}
-{{< line >}}[00:25:59.230] Dan McClellan: He's a, He's a beggar.{{< /line >}}
-{{< line >}}[00:26:00.390] Dan McClellan: I thought that was a.{{< /line >}}
-{{< line >}}[00:26:01.390] Dan McClellan: That's a lovely touch.{{< /line >}}
-{{< line >}}[00:26:03.070] Dan McClellan: But you go into Capernaum and you can actually go visit what some people think is Simon's actual home.{{< /line >}}
-{{< line >}}[00:26:10.350] Dan McClellan: Like they've, they've drilled down to a dwelling place that likely dates to the first century and seems to have very quickly become a pilgrimage site.{{< /line >}}
+{{< line >}}[00:24:12.810] Dan McClellan: Yeah. So this is Mark, chapter one. The Gospel of Mark begins with, we've got the forerunner coming. Here's Jesus. He's getting baptized. He's been baptized. And then we have Jesus staying within what some people call the Evangelical triangle, which is a triangle of three cities on the northwestern corner of the Sea of Galilee. Bethsaida, Capernaum. And I. Shoot, I forget what the other one is, but it's a little up the hills, up the hills away. And it has black stone, like the city was constructed of black stone. And there are hyraxes there. And so you got to be careful, because these rodents will yell at you. And they're bizarre, bizarre creatures. However. So everything's going on up in Galilee in Mark 1. And he has a. He casts out an unclean spirit.{{< /line >}}
+{{< line >}}[00:25:16.010] Dan McClellan: He heals many at Simon's house. And Simon lives in Capernaum, or Capernaum, or Capernaum, however you like to pronounce that name. And when. If you go visit, if you ever have the privilege of visiting, there is a statue right outside the front entrance. As you're going in the front entrance, you look to the left, and there will be a bench and there is a, what looks like a homeless man covered in a sheet or something laying on the bench. But you look at the feet and you see there are scars on the feet. And so this is Jesus. It's trying to remind you he's. Jesus is one of us. He's a, He's a beggar. I thought that was a. That's a lovely touch. But you go into Capernaum and you can actually go visit what some people think is Simon's actual home. Like they've, they've drilled down to a dwelling place that likely dates to the first century and seems to have very quickly become a pilgrimage site.{{< /line >}}
 {{< line >}}[00:26:22.170] Dan McClellan: And so a lot of folks think this might be Peter's home, but Simon's home.{{< /line >}}
 {{< line >}}[00:26:26.690] Dan Beecher: But you do.{{< /line >}}
-{{< line >}}[00:26:27.650] Dan McClellan: Simon.{{< /line >}}
-{{< line >}}[00:26:28.050] Dan McClellan: Peter.{{< /line >}}
-{{< line >}}[00:26:28.810] Dan McClellan: Oh, okay.{{< /line >}}
-{{< line >}}[00:26:30.730] Dan McClellan: Sorry.{{< /line >}}
-{{< line >}}[00:26:31.210] Dan Beecher: These guys and these names, man, I never, I will never get the New Testament prophets straight or New Testament apostles.{{< /line >}}
-{{< line >}}[00:26:39.840] Dan Beecher: Apostles, yeah.{{< /line >}}
+{{< line >}}[00:26:27.650] Dan McClellan: Simon. Peter. Oh, okay. Sorry.{{< /line >}}
+{{< line >}}[00:26:31.210] Dan Beecher: These guys and these names, man, I never, I will never get the New Testament prophets straight or New Testament apostles. Apostles, yeah.{{< /line >}}
 {{< line >}}[00:26:40.920] Dan McClellan: We did a show on this.{{< /line >}}
 {{< line >}}[00:26:42.160] Dan Beecher: I know.{{< /line >}}
-{{< line >}}[00:26:45.200] Dan McClellan: And so Mark 2 begins.{{< /line >}}
-{{< line >}}[00:26:47.600] Dan McClellan: When he returned to Capernaum after some days, it was reported that he was at home.{{< /line >}}
-{{< line >}}[00:26:52.400] Dan McClellan: And the Greek here suggests that Jesus was at his own home.{{< /line >}}
-{{< line >}}[00:26:57.440] Dan McClellan: So Jesus probably lived in Capernaum.{{< /line >}}
-{{< line >}}[00:27:00.480] Dan Beecher: Okay, there you go.{{< /line >}}
-{{< line >}}[00:27:02.080] Dan Beecher: If you need to send him letters.{{< /line >}}
-{{< line >}}[00:27:05.440] Dan McClellan: Yeah, to care of Mary.{{< /line >}}
-{{< line >}}[00:27:08.120] Dan McClellan: And so many gathered around that there was no longer room for them.{{< /line >}}
-{{< line >}}[00:27:13.560] Dan McClellan: So the, the word got out.{{< /line >}}
-{{< line >}}[00:27:15.000] Dan McClellan: It's like, it's like the tours going around where The Rock lives and people are like, "I saw him go in," and they all run over.{{< /line >}}
-{{< line >}}[00:27:24.440] Dan McClellan: Not even in front of the, the door.{{< /line >}}
-{{< line >}}[00:27:26.280] Dan Beecher: Open, without the top.{{< /line >}}
-{{< line >}}[00:27:27.480] Dan Beecher: So that they.{{< /line >}}
-{{< line >}}[00:27:28.120] Dan Beecher: Yeah, yeah, go and see.{{< /line >}}
-{{< line >}}[00:27:29.400] Dan McClellan: Yeah, the double decker.{{< /line >}}
-{{< line >}}[00:27:30.480] Dan McClellan: Yeah, gotta have that.{{< /line >}}
-{{< line >}}[00:27:33.890] Dan McClellan: I.{{< /line >}}
-{{< line >}}[00:27:34.090] Dan McClellan: One of the funny.{{< /line >}}
-{{< line >}}[00:27:34.850] Dan McClellan: Just a sidebar here.{{< /line >}}
-{{< line >}}[00:27:36.610] Dan McClellan: One of the things I remember the most about riding double decker buses in, in England was I was always surprised by how much moss and mold and stuff grew on the tops of the bus stops.{{< /line >}}
+{{< line >}}[00:26:45.200] Dan McClellan: And so Mark 2 begins. When he returned to Capernaum after some days, it was reported that he was at home. And the Greek here suggests that Jesus was at his own home. So Jesus probably lived in Capernaum.{{< /line >}}
+{{< line >}}[00:27:00.480] Dan Beecher: Okay, there you go. If you need to send him letters.{{< /line >}}
+{{< line >}}[00:27:05.440] Dan McClellan: Yeah, to care of Mary. And so many gathered around that there was no longer room for them. So the, the word got out. It's like, it's like the tours going around where The Rock lives and people are like, "I saw him go in," and they all run over. Not even in front of the, the door.{{< /line >}}
+{{< line >}}[00:27:26.280] Dan Beecher: Open, without the top. So that they. Yeah, yeah, go and see.{{< /line >}}
+{{< line >}}[00:27:29.400] Dan McClellan: Yeah, the double decker. Yeah, gotta have that. I. One of the funny. Just a sidebar here. One of the things I remember the most about riding double decker buses in, in England was I was always surprised by how much moss and mold and stuff grew on the tops of the bus stops.{{< /line >}}
 {{< line >}}[00:27:49.410] Dan Beecher: Oh.{{< /line >}}
-{{< line >}}[00:27:50.370] Dan McClellan: Because normally you see a bus stop and you see there's a covering there, but you're not looking down on the top of it.{{< /line >}}
-{{< line >}}[00:27:55.970] Dan McClellan: And.{{< /line >}}
-{{< line >}}[00:27:56.450] Dan McClellan: But when you're on the top deck of the bus, you're like, "Oh, I'm looking down on this roof here and there's moss everywhere."{{< /line >}}
-{{< line >}}[00:28:01.940] Dan McClellan: Okay.{{< /line >}}
-{{< line >}}[00:28:02.300] Dan Beecher: So I just liked being on the.{{< /line >}}
-{{< line >}}[00:28:03.860] Dan Beecher: Sorry, now I'm on double.{{< /line >}}
-{{< line >}}[00:28:05.940] Dan Beecher: I just loved being at the very front on the top layer of a.{{< /line >}}
+{{< line >}}[00:27:50.370] Dan McClellan: Because normally you see a bus stop and you see there's a covering there, but you're not looking down on the top of it. And. But when you're on the top deck of the bus, you're like, "Oh, I'm looking down on this roof here and there's moss everywhere." Okay.{{< /line >}}
+{{< line >}}[00:28:02.300] Dan Beecher: So I just liked being on the. Sorry, now I'm on double. I just loved being at the very front on the top layer of a.{{< /line >}}
 {{< line >}}[00:28:10.300] Dan McClellan: Double decker because just flying, you think.{{< /line >}}
-{{< line >}}[00:28:13.060] Dan Beecher: You're going to hit literally every—first of all,{{< /line >}}
-{{< line >}}[00:28:17.100] Dan Beecher: those bus drivers, especially in London, are maniacs.{{< /line >}}
-{{< line >}}[00:28:20.420] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:28:20.900] Dan McClellan: But they, they drive it furiously, huh?{{< /line >}}
-{{< line >}}[00:28:23.380] Dan Beecher: Yeah, they do.{{< /line >}}
-{{< line >}}[00:28:24.260] Dan Beecher: They do.{{< /line >}}
-{{< line >}}[00:28:24.700] Dan Beecher: They are like, what's his name? Son of what's his name?{{< /line >}}
-{{< line >}}[00:28:27.710] Dan Beecher: But they also, like, they get really close, and you feel like you're just, like, going to hit every single.{{< /line >}}
-{{< line >}}[00:28:34.910] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:28:35.310] Dan Beecher: In front of it.{{< /line >}}
-{{< line >}}[00:28:36.590] Dan McClellan: I.{{< /line >}}
-{{< line >}}[00:28:36.950] Dan McClellan: That.{{< /line >}}
-{{< line >}}[00:28:37.270] Dan McClellan: I. I don't know what would be more un—{{< /line >}}
-{{< line >}}[00:28:39.870] Dan McClellan: I don't think that's as uncomfortable as back in the day riding in the back of the station wagon, the seats that pointed backwards.{{< /line >}}
-{{< line >}}[00:28:48.750] Dan Beecher: I used to.{{< /line >}}
-{{< line >}}[00:28:50.030] Dan Beecher: That was my favorite.{{< /line >}}
-{{< line >}}[00:28:51.790] Dan McClellan: I hated.{{< /line >}}
-{{< line >}}[00:28:52.590] Dan McClellan: Because when, you know you're on a road trip and somebody's behind you on the interstate and you're like, "Where do I look?"{{< /line >}}
-{{< line >}}[00:28:58.170] Dan McClellan: I don't want to just stare down the person who's going to be behind us for an hour.{{< /line >}}
+{{< line >}}[00:28:13.060] Dan Beecher: You're going to hit literally every—first of all, those bus drivers, especially in London, are maniacs.{{< /line >}}
+{{< line >}}[00:28:20.420] Dan McClellan: Yeah. But they, they drive it furiously, huh?{{< /line >}}
+{{< line >}}[00:28:23.380] Dan Beecher: Yeah, they do. They do. They are like, what's his name? Son of what's his name? But they also, like, they get really close, and you feel like you're just, like, going to hit every single. Yeah. In front of it.{{< /line >}}
+{{< line >}}[00:28:36.590] Dan McClellan: I. That. I. I don't know what would be more un— I don't think that's as uncomfortable as back in the day riding in the back of the station wagon, the seats that pointed backwards.{{< /line >}}
+{{< line >}}[00:28:48.750] Dan Beecher: I used to. That was my favorite.{{< /line >}}
+{{< line >}}[00:28:51.790] Dan McClellan: I hated. Because when, you know you're on a road trip and somebody's behind you on the interstate and you're like, "Where do I look?" I don't want to just stare down the person who's going to be behind us for an hour.{{< /line >}}
 {{< line >}}[00:29:02.650] Dan Beecher: Oh, I was there like an idiot waving.{{< /line >}}
-{{< line >}}[00:29:07.050] Dan McClellan: Okay.{{< /line >}}
-{{< line >}}[00:29:07.570] Dan McClellan: So many gathered around that.{{< /line >}}
-{{< line >}}[00:29:09.850] Dan McClellan: So many gathered around that there was no longer room for them.{{< /line >}}
-{{< line >}}[00:29:13.130] Dan McClellan: Not even in front of the door.{{< /line >}}
-{{< line >}}[00:29:14.410] Dan McClellan: And he was speaking the word to them.{{< /line >}}
-{{< line >}}[00:29:17.610] Dan McClellan: Then some people came, bringing to him a paralyzed man, carried by four of them.{{< /line >}}
-{{< line >}}[00:29:22.330] Dan McClellan: And in the King James Version, it says, "one sick of the palsy," but this just means someone who was paralyzed.{{< /line >}}
+{{< line >}}[00:29:07.050] Dan McClellan: Okay. So many gathered around that. So many gathered around that there was no longer room for them. Not even in front of the door. And he was speaking the word to them. Then some people came, bringing to him a paralyzed man, carried by four of them. And in the King James Version, it says, "one sick of the palsy," but this just means someone who was paralyzed.{{< /line >}}
 {{< line >}}[00:29:28.960] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:29:29.720] Dan McClellan: And there were four people carrying him.{{< /line >}}
-{{< line >}}[00:29:32.520] Dan McClellan: And when they could not bring him to Jesus because of the crowd, they removed the roof above him.{{< /line >}}
-{{< line >}}[00:29:37.760] Dan McClellan: And after having dug through it, they let down the mat on which the paralytic lay, so that they climbed up on the roof, which would have been a flat roof, and it would have been there.{{< /line >}}
-{{< line >}}[00:29:48.760] Dan McClellan: There would have been a couple layers of things there.{{< /line >}}
-{{< line >}}[00:29:50.680] Dan McClellan: There would have been some mud, branches, and then probably a bunch of straw and stuff like that.{{< /line >}}
+{{< line >}}[00:29:29.720] Dan McClellan: And there were four people carrying him. And when they could not bring him to Jesus because of the crowd, they removed the roof above him. And after having dug through it, they let down the mat on which the paralytic lay, so that they climbed up on the roof, which would have been a flat roof, and it would have been there. There would have been a couple layers of things there. There would have been some mud, branches, and then probably a bunch of straw and stuff like that.{{< /line >}}
 {{< line >}}[00:29:55.450] Dan Beecher: They literally dismantled Jesus's house.{{< /line >}}
 {{< line >}}[00:29:58.210] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:29:58.610] Dan Beecher: And then what?{{< /line >}}
-{{< line >}}[00:29:59.410] Dan Beecher: Craned the guy down?{{< /line >}}
-{{< line >}}[00:30:00.810] Dan Beecher: How did they.{{< /line >}}
-{{< line >}}[00:30:01.570] Dan Beecher: Like, it seems.{{< /line >}}
-{{< line >}}[00:30:03.770] Dan Beecher: It seems like they could have just sort of maybe asked the crowd to part a little bit, but.{{< /line >}}
-{{< line >}}[00:30:08.370] Dan Beecher: "Okay, we're going in the hard way."{{< /line >}}
-{{< line >}}[00:30:10.130] Dan Beecher: That's fine.{{< /line >}}
-{{< line >}}[00:30:10.730] Dan McClellan: Yeah, yeah.{{< /line >}}
-{{< line >}}[00:30:11.370] Dan McClellan: The.{{< /line >}}
-{{< line >}}[00:30:11.610] Dan McClellan: The very hard way.{{< /line >}}
-{{< line >}}[00:30:13.730] Dan McClellan: When Jesus saw their faith, he said to the paralytic child, your sins are forgiven.{{< /line >}}
-{{< line >}}[00:30:19.610] Dan McClellan: So he's obviously not upset about the property damage.{{< /line >}}
+{{< line >}}[00:29:58.610] Dan Beecher: And then what? Craned the guy down? How did they. Like, it seems. It seems like they could have just sort of maybe asked the crowd to part a little bit, but. "Okay, we're going in the hard way." That's fine.{{< /line >}}
+{{< line >}}[00:30:10.730] Dan McClellan: Yeah, yeah. The. The very hard way. When Jesus saw their faith, he said to the paralytic child, your sins are forgiven. So he's obviously not upset about the property damage.{{< /line >}}
 {{< line >}}[00:30:22.330] Dan Beecher: No, he's.{{< /line >}}
-{{< line >}}[00:30:22.970] Dan McClellan: Because he can.{{< /line >}}
-{{< line >}}[00:30:23.850] Dan McClellan: Yeah, because I'm.{{< /line >}}
-{{< line >}}[00:30:24.850] Dan McClellan: I'm sure he can just wave his hands and, you know, rebuild.{{< /line >}}
-{{< line >}}[00:30:30.490] Dan McClellan: Bibbidi bobbidi boo.{{< /line >}}
-{{< line >}}[00:30:31.690] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:30:32.010] Dan McClellan: The way.{{< /line >}}
-{{< line >}}[00:30:32.970] Dan McClellan: He has repaired.{{< /line >}}
-{{< line >}}[00:30:35.210] Dan McClellan: Maybe it's not Bibbidi bobbidi boo.{{< /line >}}
-{{< line >}}[00:30:36.850] Dan McClellan: Maybe it's.{{< /line >}}
-{{< line >}}[00:30:37.330] Dan McClellan: What is.{{< /line >}}
-{{< line >}}[00:30:37.850] Dan McClellan: What does Merlin do in.{{< /line >}}
-{{< line >}}[00:30:40.570] Dan McClellan: In Sword in the Stone?{{< /line >}}
-{{< line >}}[00:30:45.880] Dan Beecher: It's.{{< /line >}}
-{{< line >}}[00:30:46.280] Dan Beecher: It's whatever the Aramaic is for.{{< /line >}}
-{{< line >}}[00:30:48.000] Dan Beecher: Bibbidi bobbidi.{{< /line >}}
-{{< line >}}[00:30:48.920] Dan McClellan: Yeah, yeah.{{< /line >}}
-{{< line >}}[00:30:50.280] Dan McClellan: Now, some of the scribes were sitting there questioning in their hearts, so they're not saying this out loud.{{< /line >}}
-{{< line >}}[00:30:55.320] Dan McClellan: They're thinking this and this.{{< /line >}}
-{{< line >}}[00:30:56.840] Dan McClellan: And this raises an interesting thing here.{{< /line >}}
-{{< line >}}[00:30:59.800] Dan McClellan: Mark is a little closer to kind of the.{{< /line >}}
-{{< line >}}[00:31:03.720] Dan McClellan: Let's say, Semitic culture than to the Greco-Roman culture.{{< /line >}}
-{{< line >}}[00:31:07.480] Dan McClellan: And in the more Semitic side of things, your heart was the seat of not just emotion, but also cognition.{{< /line >}}
+{{< line >}}[00:30:22.970] Dan McClellan: Because he can. Yeah, because I'm. I'm sure he can just wave his hands and, you know, rebuild. Bibbidi bobbidi boo. Yeah. The way. He has repaired. Maybe it's not Bibbidi bobbidi boo. Maybe it's. What is. What does Merlin do in. In Sword in the Stone?{{< /line >}}
+{{< line >}}[00:30:45.880] Dan Beecher: It's. It's whatever the Aramaic is for. Bibbidi bobbidi.{{< /line >}}
+{{< line >}}[00:30:48.920] Dan McClellan: Yeah, yeah. Now, some of the scribes were sitting there questioning in their hearts, so they're not saying this out loud. They're thinking this and this. And this raises an interesting thing here. Mark is a little closer to kind of the. Let's say, Semitic culture than to the Greco-Roman culture. And in the more Semitic side of things, your heart was the seat of not just emotion, but also cognition.{{< /line >}}
 {{< line >}}[00:31:14.710] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:31:16.070] Dan McClellan: So you thought with your heart, you didn't think with your brain because they didn't care about your brain.{{< /line >}}
-{{< line >}}[00:31:21.950] Dan McClellan: That's why the Egyptians, when they mummified people, they just scooped the brain out.{{< /line >}}
+{{< line >}}[00:31:16.070] Dan McClellan: So you thought with your heart, you didn't think with your brain because they didn't care about your brain. That's why the Egyptians, when they mummified people, they just scooped the brain out.{{< /line >}}
 {{< line >}}[00:31:26.470] Dan Beecher: Throw that away.{{< /line >}}
 {{< line >}}[00:31:27.270] Dan McClellan: Threw it away.{{< /line >}}
 {{< line >}}[00:31:27.950] Dan Beecher: Yeah, one of those.{{< /line >}}
-{{< line >}}[00:31:29.430] Dan McClellan: Yeah, it's.{{< /line >}}
-{{< line >}}[00:31:30.230] Dan McClellan: It's.{{< /line >}}
-{{< line >}}[00:31:30.670] Dan McClellan: You know, it's like.{{< /line >}}
-{{< line >}}[00:31:32.550] Dan McClellan: Like a gigantic oyster.{{< /line >}}
-{{< line >}}[00:31:34.550] Dan McClellan: Just this goo that we're gonna get rid of.{{< /line >}}
-{{< line >}}[00:31:38.070] Dan McClellan: So the.{{< /line >}}
-{{< line >}}[00:31:38.630] Dan McClellan: The heart was the seat of.{{< /line >}}
-{{< line >}}[00:31:40.470] Dan McClellan: Of cognition.{{< /line >}}
-{{< line >}}[00:31:41.310] Dan McClellan: And so in the.{{< /line >}}
-{{< line >}}[00:31:42.590] Dan McClellan: The statement, the first great commandment, love God with all your heart, might, mind, and strength.{{< /line >}}
-{{< line >}}[00:31:49.430] Dan McClellan: That is a Greek translation of the.{{< /line >}}
-{{< line >}}[00:31:54.950] Dan McClellan: The actual commandment from Deuteronomy, which only says heart, might, and soul.{{< /line >}}
-{{< line >}}[00:32:01.430] Dan McClellan: So if.{{< /line >}}
-{{< line >}}[00:32:02.510] Dan McClellan: If they're talking about the mind, it's not Hebrew Bible stuff.{{< /line >}}
+{{< line >}}[00:31:29.430] Dan McClellan: Yeah, it's. It's. You know, it's like. Like a gigantic oyster. Just this goo that we're gonna get rid of. So the. The heart was the seat of. Of cognition. And so in the. The statement, the first great commandment, love God with all your heart, might, mind, and strength. That is a Greek translation of the. The actual commandment from Deuteronomy, which only says heart, might, and soul. So if. If they're talking about the mind, it's not Hebrew Bible stuff.{{< /line >}}
 {{< line >}}[00:32:07.190] Dan Beecher: Interesting.{{< /line >}}
-{{< line >}}[00:32:07.870] Dan McClellan: And that.{{< /line >}}
-{{< line >}}[00:32:08.350] Dan McClellan: Yeah, that would not have been how Jesus would have talked about this stuff.{{< /line >}}
-{{< line >}}[00:32:12.850] Dan Beecher: But I'm also interested in the fact that the author of Mark is writing in the third person.{{< /line >}}
-{{< line >}}[00:32:19.650] Dan Beecher: Omniscient.{{< /line >}}
-{{< line >}}[00:32:21.010] Dan Beecher: Just talking about how.{{< /line >}}
-{{< line >}}[00:32:22.370] Dan Beecher: What.{{< /line >}}
-{{< line >}}[00:32:22.730] Dan Beecher: What's going on in everybody's heart.{{< /line >}}
-{{< line >}}[00:32:24.610] Dan McClellan: Yeah, well, and this.{{< /line >}}
-{{< line >}}[00:32:26.570] Dan McClellan: This is something that some folks bring up when it comes to some of the stories of Jesus's trial.{{< /line >}}
-{{< line >}}[00:32:32.530] Dan McClellan: Because when Jesus is before Pilate, Pilate takes him out, like, puts him on display.{{< /line >}}
-{{< line >}}[00:32:38.810] Dan McClellan: Hey, everybody, what's going on?{{< /line >}}
-{{< line >}}[00:32:40.130] Dan McClellan: And they say, crucify him.{{< /line >}}
-{{< line >}}[00:32:42.520] Dan McClellan: Pilate brings him back in, interrogates him.{{< /line >}}
-{{< line >}}[00:32:44.760] Dan McClellan: He's alone.{{< /line >}}
-{{< line >}}[00:32:45.960] Dan McClellan: And then Jesus immediately goes to his death.{{< /line >}}
-{{< line >}}[00:32:49.320] Dan McClellan: So whoever is telling that story, obviously is just.{{< /line >}}
-{{< line >}}[00:32:53.960] Dan McClellan: We have to imagine what would have.{{< /line >}}
-{{< line >}}[00:32:55.600] Dan McClellan: What Pilate would have said to Jesus.{{< /line >}}
-{{< line >}}[00:32:57.640] Dan McClellan: But.{{< /line >}}
-{{< line >}}[00:32:58.440] Dan McClellan: But yeah, the.{{< /line >}}
-{{< line >}}[00:32:59.320] Dan McClellan: The narrator is omniscient.{{< /line >}}
-{{< line >}}[00:33:01.480] Dan McClellan: So.{{< /line >}}
-{{< line >}}[00:33:02.840] Dan McClellan: So they're questioning in their hearts, why does this fellow speak in this way?{{< /line >}}
-{{< line >}}[00:33:05.960] Dan McClellan: It is blasphemy.{{< /line >}}
-{{< line >}}[00:33:07.160] Dan McClellan: Who can forgive sins but God alone.{{< /line >}}
-{{< line >}}[00:33:11.610] Dan McClellan: At once, Jesus perceived in his spirit that they were discussing these questions among themselves.{{< /line >}}
-{{< line >}}[00:33:17.170] Dan McClellan: And he said to them, why do you raise such questions in your hearts?{{< /line >}}
-{{< line >}}[00:33:21.370] Dan McClellan: to them, why do you raise such questions in your hearts? Which is easier to say to the paralytic, your sins are forgiven, or to say, stand up and take your mat and walk.{{< /line >}}
-{{< line >}}[00:33:28.410] Dan McClellan: But so that you may know that the Son of Man has authority on earth to forgive sins, he said to the paralytic, I say to you, stand up, take your mat, and go to your home.{{< /line >}}
-{{< line >}}[00:33:40.200] Dan McClellan: And he stood up and immediately took the mat and went out before all of them.{{< /line >}}
-{{< line >}}[00:33:43.640] Dan McClellan: So that they were all amazed and glorified God saying, we have never seen anything like this.{{< /line >}}
+{{< line >}}[00:32:07.870] Dan McClellan: And that. Yeah, that would not have been how Jesus would have talked about this stuff.{{< /line >}}
+{{< line >}}[00:32:12.850] Dan Beecher: But I'm also interested in the fact that the author of Mark is writing in the third person. Omniscient. Just talking about how. What. What's going on in everybody's heart.{{< /line >}}
+{{< line >}}[00:32:24.610] Dan McClellan: Yeah, well, and this. This is something that some folks bring up when it comes to some of the stories of Jesus's trial. Because when Jesus is before Pilate, Pilate takes him out, like, puts him on display. Hey, everybody, what's going on? And they say, crucify him. Pilate brings him back in, interrogates him. He's alone. And then Jesus immediately goes to his death. So whoever is telling that story, obviously is just. We have to imagine what would have. What Pilate would have said to Jesus. But. But yeah, the. The narrator is omniscient. So. So they're questioning in their hearts, why does this fellow speak in this way? It is blasphemy. Who can forgive sins but God alone. At once, Jesus perceived in his spirit that they were discussing these questions among themselves. And he said to them, why do you raise such questions in your hearts? to them, why do you raise such questions in your hearts? Which is easier to say to the paralytic, your sins are forgiven, or to say, stand up and take your mat and walk.{{< /line >}}
+{{< line >}}[00:33:28.410] Dan McClellan: But so that you may know that the Son of Man has authority on earth to forgive sins, he said to the paralytic, I say to you, stand up, take your mat, and go to your home. And he stood up and immediately took the mat and went out before all of them. So that they were all amazed and glorified God saying, we have never seen anything like this.{{< /line >}}
 {{< line >}}[00:33:49.480] Dan Beecher: Well, there you go.{{< /line >}}
 {{< line >}}[00:33:50.680] Dan McClellan: Quite the powerful parlor trick here of healing the paralyzed man.{{< /line >}}
-{{< line >}}[00:33:57.880] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:33:59.000] Dan Beecher: And there's something interesting of being able to.{{< /line >}}
-{{< line >}}[00:34:03.530] Dan Beecher: As a demonstration of the authority to forgive sins, which is.{{< /line >}}
+{{< line >}}[00:33:57.880] Dan Beecher: Right. And there's something interesting of being able to. As a demonstration of the authority to forgive sins, which is.{{< /line >}}
 {{< line >}}[00:34:08.170] Dan McClellan: Yes.{{< /line >}}
-{{< line >}}[00:34:08.490] Dan Beecher: Interesting.{{< /line >}}
-{{< line >}}[00:34:09.530] Dan Beecher: Reason.{{< /line >}}
-{{< line >}}[00:34:10.570] Dan Beecher: Not.{{< /line >}}
-{{< line >}}[00:34:11.290] Dan Beecher: It's.{{< /line >}}
-{{< line >}}[00:34:11.730] Dan Beecher: He does like, it's.{{< /line >}}
-{{< line >}}[00:34:12.770] Dan Beecher: His first impulse isn't just like, hey, I'll heal you.{{< /line >}}
-{{< line >}}[00:34:15.370] Dan Beecher: His first impulse is like, we'll do this other thing.{{< /line >}}
-{{< line >}}[00:34:18.650] Dan Beecher: And then I'll use the healing as the proof that I. That I have the authority to do that.{{< /line >}}
-{{< line >}}[00:34:23.690] Dan McClellan: Yes.{{< /line >}}
-{{< line >}}[00:34:24.170] Dan McClellan: It's almost as if the story was carefully crafted.{{< /line >}}
-{{< line >}}[00:34:30.809] Dan Beecher: Wait.{{< /line >}}
-{{< line >}}[00:34:31.209] Dan Beecher: To.{{< /line >}}
+{{< line >}}[00:34:08.490] Dan Beecher: Interesting. Reason. Not. It's. He does like, it's. His first impulse isn't just like, hey, I'll heal you. His first impulse is like, we'll do this other thing. And then I'll use the healing as the proof that I. That I have the authority to do that.{{< /line >}}
+{{< line >}}[00:34:23.690] Dan McClellan: Yes. It's almost as if the story was carefully crafted.{{< /line >}}
+{{< line >}}[00:34:30.809] Dan Beecher: Wait. To.{{< /line >}}
 {{< line >}}[00:34:31.609] Dan McClellan: To tag these rhetorical bases.{{< /line >}}
-{{< line >}}[00:34:34.089] Dan Beecher: Yeah, here's.{{< /line >}}
-{{< line >}}[00:34:35.929] Dan Beecher: Here's what.{{< /line >}}
+{{< line >}}[00:34:34.089] Dan Beecher: Yeah, here's. Here's what.{{< /line >}}
 {{< line >}}[00:34:36.369] Dan McClellan: You didn't hear it from me.{{< /line >}}
-{{< line >}}[00:34:37.609] Dan Beecher: Right?{{< /line >}}
-{{< line >}}[00:34:37.969] Dan Beecher: Here's what.{{< /line >}}
-{{< line >}}[00:34:38.489] Dan Beecher: Here's what I think this story does.{{< /line >}}
-{{< line >}}[00:34:39.889] Dan Beecher: At least one of the things the story does.{{< /line >}}
-{{< line >}}[00:34:41.409] Dan Beecher: We'll get to the forgiven, because that's where we're really angled for.{{< /line >}}
-{{< line >}}[00:34:44.049] Dan Beecher: But if anyone ever claims that they are a messiah, if you ever run into a David Koresh figure or whatever, dig into his roof, break into his house, and if he's mad at you, that's not him.{{< /line >}}
-{{< line >}}[00:34:59.500] Dan McClellan: Not the Messiah, not the one.{{< /line >}}
-{{< line >}}[00:35:03.460] Dan McClellan: So we've got this question about divine forgiveness.{{< /line >}}
-{{< line >}}[00:35:06.020] Dan McClellan: Who can forgive sins but God alone?{{< /line >}}
-{{< line >}}[00:35:09.700] Dan McClellan: One of the things that baffles me about this and.{{< /line >}}
-{{< line >}}[00:35:12.180] Dan McClellan: And this text is.{{< /line >}}
-{{< line >}}[00:35:13.300] Dan McClellan: Is appealed to frequently by folks who are trying to make the case that Jesus is God.{{< /line >}}
+{{< line >}}[00:34:37.609] Dan Beecher: Right? Here's what. Here's what I think this story does. At least one of the things the story does. We'll get to the forgiven, because that's where we're really angled for. But if anyone ever claims that they are a messiah, if you ever run into a David Koresh figure or whatever, dig into his roof, break into his house, and if he's mad at you, that's not him.{{< /line >}}
+{{< line >}}[00:34:59.500] Dan McClellan: Not the Messiah, not the one. So we've got this question about divine forgiveness. Who can forgive sins but God alone? One of the things that baffles me about this and. And this text is. Is appealed to frequently by folks who are trying to make the case that Jesus is God.{{< /line >}}
 {{< line >}}[00:35:20.260] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:35:20.900] Dan McClellan: And basically, you have to agree that the scribes.{{< /line >}}
-{{< line >}}[00:35:24.820] Dan McClellan: Is it scribes or who does it say in here?{{< /line >}}
-{{< line >}}[00:35:27.280] Dan Beecher: Sorry, Yeah, I think it's scribes.{{< /line >}}
-{{< line >}}[00:35:29.280] Dan Beecher: You said the word.{{< /line >}}
-{{< line >}}[00:35:30.120] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:35:30.480] Dan McClellan: Some of the scribes.{{< /line >}}
-{{< line >}}[00:35:31.080] Dan McClellan: Some of the scribes are sitting there questioning in their hearts.{{< /line >}}
-{{< line >}}[00:35:32.840] Dan McClellan: So basically, you have to suppose that the scribes are right that no one can forgive sins except for God alone.{{< /line >}}
-{{< line >}}[00:35:42.400] Dan McClellan: And this is.{{< /line >}}
-{{< line >}}[00:35:43.280] Dan McClellan: I mean, this is not an incorrect inference to draw from the way the Hebrew Bible talks about the forgiveness of sins.{{< /line >}}
-{{< line >}}[00:35:51.520] Dan McClellan: However, I think Jesus's response precludes that understanding of what's going on here.{{< /line >}}
-{{< line >}}[00:35:57.930] Dan McClellan: Because Jesus doesn't say, then turn around and give him one of these.{{< /line >}}
-{{< line >}}[00:36:02.810] Dan McClellan: What do you think that makes me.{{< /line >}}
-{{< line >}}[00:36:05.370] Dan McClellan: Jesus says wrong so that you may know you lack information.{{< /line >}}
-{{< line >}}[00:36:12.730] Dan McClellan: You don't know something.{{< /line >}}
-{{< line >}}[00:36:14.730] Dan McClellan: I am going to drop some knowledge on you.{{< /line >}}
-{{< line >}}[00:36:18.330] Dan McClellan: What is that knowledge?{{< /line >}}
-{{< line >}}[00:36:19.950] Dan McClellan: That the Son of Man has authority on earth to forgive sins.{{< /line >}}
-{{< line >}}[00:36:23.750] Dan McClellan: In other words, the scribes were wrong.{{< /line >}}
-{{< line >}}[00:36:27.790] Dan McClellan: Who can forgive sins but God alone?{{< /line >}}
-{{< line >}}[00:36:29.870] Dan McClellan: Jesus says Son of Man can forgive sins.{{< /line >}}
-{{< line >}}[00:36:33.150] Dan Beecher: And Son of Man.{{< /line >}}
-{{< line >}}[00:36:34.030] Dan Beecher: Here is a reference specifically to him himself.{{< /line >}}
-{{< line >}}[00:36:37.230] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:36:37.630] Dan McClellan: So there's a, there's a debate about this.{{< /line >}}
-{{< line >}}[00:36:39.990] Dan McClellan: I, I think Mark is presenting Jesus as the Son of Man.{{< /line >}}
-{{< line >}}[00:36:44.030] Dan McClellan: However, those who, Bart Ehrman and others who try to reconstruct how Jesus himself might have thought about this, they, some of them will argue that Jesus did not actually think he was the Son of Man.{{< /line >}}
-{{< line >}}[00:37:00.290] Dan McClellan: And this requires kind of taking some of these Son of Man statements as actual words of Jesus, but reinterpreting them as, as third person references rather than first person references.{{< /line >}}
-{{< line >}}[00:37:15.100] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:37:15.900] Dan Beecher: But I mean, the way this story presents itself, it is very clear that he is saying, I have this authority.{{< /line >}}
-{{< line >}}[00:37:22.420] Dan Beecher: He's not.{{< /line >}}
-{{< line >}}[00:37:22.940] Dan Beecher: And he's not saying anyone else does.{{< /line >}}
-{{< line >}}[00:37:24.940] Dan Beecher: So it's basically according to him, at least in this moment.{{< /line >}}
-{{< line >}}[00:37:28.460] Dan Beecher: Me and dad.{{< /line >}}
-{{< line >}}[00:37:29.900] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:37:30.620] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:37:31.580] Dan McClellan: The guys are saying only God can, can do this.{{< /line >}}
-{{< line >}}[00:37:34.380] Dan McClellan: And Jesus says, I am God's plus one because the Son of Man has authority on earth to forgive sins.{{< /line >}}
-{{< line >}}[00:37:41.840] Dan McClellan: I, I just don't see how you can interpret this as anything other than a correction of an error.{{< /line >}}
-{{< line >}}[00:37:49.080] Dan McClellan: Now it's.{{< /line >}}
-{{< line >}}[00:37:50.760] Dan McClellan: And, and so right off the bat, I don't think it serves as a proof text for the notion that, that Jesus is God.{{< /line >}}
-{{< line >}}[00:37:59.280] Dan McClellan: But there's more to this when it comes to the forgiveness of sins, because this is a, this is a question that we see rising up in some other Jewish literature, even some Greco-Roman period Jewish literature.{{< /line >}}
-{{< line >}}[00:38:14.060] Dan McClellan: There's an idea that there might be a Dead Sea Scroll fragment that is talking about a priest having authority to forgive sins.{{< /line >}}
-{{< line >}}[00:38:22.580] Dan McClellan: But there's this, this is a debate that people have been having for a while.{{< /line >}}
-{{< line >}}[00:38:26.980] Dan McClellan: Does the Bible say that only God forgives sins?{{< /line >}}
-{{< line >}}[00:38:30.730] Dan McClellan: And is there anything else, anywhere else that says anyone else has the authority to forgive sins?{{< /line >}}
-{{< line >}}[00:38:35.890] Dan McClellan: Because this is something that is repeatedly attributed to.{{< /line >}}
-{{< line >}}[00:38:40.010] Dan McClellan: This is a divine prerogative throughout the Hebrew Bible and most of the New Testament, except for here.{{< /line >}}
-{{< line >}}[00:38:48.650] Dan McClellan: So we have in Numbers 14, Moses asked God to forgive the people, and God says, I have pardoned according to your word.{{< /line >}}
-{{< line >}}[00:38:58.670] Dan McClellan: We have a bunch of references to God having authority to forgive sins.{{< /line >}}
-{{< line >}}[00:39:02.590] Dan McClellan: In fact, in Joshua 24:19, you have Joshua telling the people, you can't serve God because he's a jealous God and he will not forgive your sins.{{< /line >}}
-{{< line >}}[00:39:19.230] Dan McClellan: The word there is a word that's more commonly translated transgressions.{{< /line >}}
-{{< line >}}[00:39:22.830] Dan McClellan: But there's a lot of semantic overlap between the two.{{< /line >}}
-{{< line >}}[00:39:26.540] Dan McClellan: But Joshua says he will not forgive your transgressions.{{< /line >}}
-{{< line >}}[00:39:30.460] Dan McClellan: And, and most scholars agree this is, this is not saying that, you know, you're hopeless.{{< /line >}}
-{{< line >}}[00:39:36.020] Dan McClellan: God's.{{< /line >}}
-{{< line >}}[00:39:36.580] Dan McClellan: God's never going to forgive your sins, but that God is the one who has the authority to do so.{{< /line >}}
-{{< line >}}[00:39:41.100] Dan McClellan: And God is jealous about that authority.{{< /line >}}
-{{< line >}}[00:39:44.500] Dan McClellan: And God is also pretty sparing with that authority, which does.{{< /line >}}
+{{< line >}}[00:35:20.900] Dan McClellan: And basically, you have to agree that the scribes. Is it scribes or who does it say in here?{{< /line >}}
+{{< line >}}[00:35:27.280] Dan Beecher: Sorry, Yeah, I think it's scribes. You said the word.{{< /line >}}
+{{< line >}}[00:35:30.120] Dan McClellan: Yeah. Some of the scribes. Some of the scribes are sitting there questioning in their hearts. So basically, you have to suppose that the scribes are right that no one can forgive sins except for God alone. And this is. I mean, this is not an incorrect inference to draw from the way the Hebrew Bible talks about the forgiveness of sins. However, I think Jesus's response precludes that understanding of what's going on here. Because Jesus doesn't say, then turn around and give him one of these. What do you think that makes me. Jesus says wrong so that you may know you lack information. You don't know something. I am going to drop some knowledge on you. What is that knowledge? That the Son of Man has authority on earth to forgive sins. In other words, the scribes were wrong. Who can forgive sins but God alone? Jesus says Son of Man can forgive sins.{{< /line >}}
+{{< line >}}[00:36:33.150] Dan Beecher: And Son of Man. Here is a reference specifically to him himself. Right.{{< /line >}}
+{{< line >}}[00:36:37.630] Dan McClellan: So there's a, there's a debate about this. I, I think Mark is presenting Jesus as the Son of Man. However, those who, Bart Ehrman and others who try to reconstruct how Jesus himself might have thought about this, they, some of them will argue that Jesus did not actually think he was the Son of Man. And this requires kind of taking some of these Son of Man statements as actual words of Jesus, but reinterpreting them as, as third person references rather than first person references.{{< /line >}}
+{{< line >}}[00:37:15.100] Dan Beecher: Okay. But I mean, the way this story presents itself, it is very clear that he is saying, I have this authority. He's not. And he's not saying anyone else does. So it's basically according to him, at least in this moment. Me and dad.{{< /line >}}
+{{< line >}}[00:37:29.900] Dan McClellan: Yeah. Yeah. The guys are saying only God can, can do this. And Jesus says, I am God's plus one because the Son of Man has authority on earth to forgive sins. I, I just don't see how you can interpret this as anything other than a correction of an error. Now it's. And, and so right off the bat, I don't think it serves as a proof text for the notion that, that Jesus is God. But there's more to this when it comes to the forgiveness of sins, because this is a, this is a question that we see rising up in some other Jewish literature, even some Greco-Roman period Jewish literature. There's an idea that there might be a Dead Sea Scroll fragment that is talking about a priest having authority to forgive sins. But there's this, this is a debate that people have been having for a while. Does the Bible say that only God forgives sins?{{< /line >}}
+{{< line >}}[00:38:30.730] Dan McClellan: And is there anything else, anywhere else that says anyone else has the authority to forgive sins? Because this is something that is repeatedly attributed to. This is a divine prerogative throughout the Hebrew Bible and most of the New Testament, except for here. So we have in Numbers 14, Moses asked God to forgive the people, and God says, I have pardoned according to your word. We have a bunch of references to God having authority to forgive sins. In fact, in Joshua 24:19, you have Joshua telling the people, you can't serve God because he's a jealous God and he will not forgive your sins. The word there is a word that's more commonly translated transgressions. But there's a lot of semantic overlap between the two. But Joshua says he will not forgive your transgressions. And, and most scholars agree this is, this is not saying that, you know, you're hopeless.{{< /line >}}
+{{< line >}}[00:39:36.020] Dan McClellan: God's. God's never going to forgive your sins, but that God is the one who has the authority to do so. And God is jealous about that authority. And God is also pretty sparing with that authority, which does.{{< /line >}}
 {{< line >}}[00:39:49.910] Dan Beecher: I mean, that feels in conflict with what I was taught, which is that, like, anyone who asks for forgiveness earnestly and repents and doesn't sin anymore gets forgiveness.{{< /line >}}
-{{< line >}}[00:40:03.190] Dan McClellan: It certainly sounds like that in the way the New Testament represents it, where we forgive those who have sinned against us seven times, 70 times, and things like that.{{< /line >}}
-{{< line >}}[00:40:13.110] Dan McClellan: It sounds an awful lot like we have the ability to, to forgive other people's sins.{{< /line >}}
-{{< line >}}[00:40:19.600] Dan Beecher: Well, no, I, I'm saying, like, I thought that God forgave our sins.{{< /line >}}
-{{< line >}}[00:40:24.720] Dan Beecher: Like, it, like he's not stingy about it.{{< /line >}}
-{{< line >}}[00:40:26.680] Dan Beecher: All you have to do is go ahead and ask for forgiveness. Ask for forgiveness.{{< /line >}}
-{{< line >}}[00:40:31.040] Dan Beecher: Then you get it.{{< /line >}}
-{{< line >}}[00:40:31.960] Dan Beecher: Like, it's, it's.{{< /line >}}
-{{< line >}}[00:40:34.080] Dan Beecher: So, it's interesting that, that the earlier idea was maybe, I don't know, we're gonna see.{{< /line >}}
-{{< line >}}[00:40:43.140] Dan Beecher: I doubt it.{{< /line >}}
-{{< line >}}[00:40:44.220] Dan Beecher: He doesn't like you very much.{{< /line >}}
-{{< line >}}[00:40:46.100] Dan McClellan: So, yeah, it's a mixed bag because the Bible is not univocal.{{< /line >}}
-{{< line >}}[00:40:52.100] Dan McClellan: So you've got a lot of different representations of God's perspective on sin because you have other things where Micah, for instance, is praising God, who is a God like you, pardoning iniquity and passing over transgression for the remnant of his inheritance.{{< /line >}}
-{{< line >}}[00:41:10.020] Dan McClellan: So God is praised as, as being pretty liberal with the forgiveness of sins.{{< /line >}}
-{{< line >}}[00:41:14.740] Dan McClellan: And elsewhere God is stingy with the forgiveness of sins, but God is, is mainly the one who is able to forgive sins, at least forgive the sins of, well, forgive other people's sins.{{< /line >}}
-{{< line >}}[00:41:31.540] Dan McClellan: Now, I was about to say, like, in human circumstances, we're supposed to forgive others who sin against us.{{< /line >}}
-{{< line >}}[00:41:39.640] Dan McClellan: And so.{{< /line >}}
-{{< line >}}[00:41:40.520] Dan McClellan: But we can't really forgive the sins of someone against somebody else.{{< /line >}}
+{{< line >}}[00:40:03.190] Dan McClellan: It certainly sounds like that in the way the New Testament represents it, where we forgive those who have sinned against us seven times, 70 times, and things like that. It sounds an awful lot like we have the ability to, to forgive other people's sins.{{< /line >}}
+{{< line >}}[00:40:19.600] Dan Beecher: Well, no, I, I'm saying, like, I thought that God forgave our sins. Like, it, like he's not stingy about it. All you have to do is go ahead and ask for forgiveness. Ask for forgiveness. Then you get it. Like, it's, it's. So, it's interesting that, that the earlier idea was maybe, I don't know, we're gonna see. I doubt it. He doesn't like you very much.{{< /line >}}
+{{< line >}}[00:40:46.100] Dan McClellan: So, yeah, it's a mixed bag because the Bible is not univocal. So you've got a lot of different representations of God's perspective on sin because you have other things where Micah, for instance, is praising God, who is a God like you, pardoning iniquity and passing over transgression for the remnant of his inheritance. So God is praised as, as being pretty liberal with the forgiveness of sins. And elsewhere God is stingy with the forgiveness of sins, but God is, is mainly the one who is able to forgive sins, at least forgive the sins of, well, forgive other people's sins. Now, I was about to say, like, in human circumstances, we're supposed to forgive others who sin against us. And so. But we can't really forgive the sins of someone against somebody else.{{< /line >}}
 {{< line >}}[00:41:44.760] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:41:45.120] Dan McClellan: And so the.{{< /line >}}
-{{< line >}}[00:41:46.040] Dan McClellan: That's outside of our purview.{{< /line >}}
-{{< line >}}[00:41:48.760] Dan McClellan: That's above our pay grade.{{< /line >}}
+{{< line >}}[00:41:45.120] Dan McClellan: And so the. That's outside of our purview. That's above our pay grade.{{< /line >}}
 {{< line >}}[00:41:50.280] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:41:51.160] Dan McClellan: And, and here we get into the question of how God's authority relates to that.{{< /line >}}
-{{< line >}}[00:41:56.440] Dan McClellan: And, and scholars would say that the sins as they are laid out, as they are described in the Bible and within, like, early Jewish literature and things like that, overwhelmingly are represented as violations of God's commands.{{< /line >}}
+{{< line >}}[00:41:51.160] Dan McClellan: And, and here we get into the question of how God's authority relates to that. And, and scholars would say that the sins as they are laid out, as they are described in the Bible and within, like, early Jewish literature and things like that, overwhelmingly are represented as violations of God's commands.{{< /line >}}
 {{< line >}}[00:42:12.580] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:42:13.140] Dan McClellan: So if it's not against God's command, then it's not a sin.{{< /line >}}
-{{< line >}}[00:42:16.500] Dan McClellan: And so God is the offended party, is the injured party when it comes to any sin whatsoever.{{< /line >}}
-{{< line >}}[00:42:23.419] Dan McClellan: And so it's up to God to do that.{{< /line >}}
-{{< line >}}[00:42:26.020] Dan Beecher: Yeah, because it's often bothered me the idea that, you know, Someone, even if it's God, that someone other than the, like, you know, I do something horrible to someone else, and then like, forgiveness is something that, that God can grant me.{{< /line >}}
-{{< line >}}[00:42:45.010] Dan Beecher: But I don't think to my mind, that's not how that transaction works.{{< /line >}}
-{{< line >}}[00:42:49.810] Dan Beecher: Like, the person, the only person who can grant me forgiveness is the person that I have hurt in some way.{{< /line >}}
-{{< line >}}[00:42:58.050] Dan Beecher: And, you know, they're under no obligation to do so.{{< /line >}}
-{{< line >}}[00:43:01.250] Dan Beecher: But.{{< /line >}}
-{{< line >}}[00:43:01.650] Dan Beecher: So I think that there's an, you know, I think that forgiveness also means different things.{{< /line >}}
-{{< line >}}[00:43:07.620] Dan Beecher: You know, there's forgive, forgiveness.{{< /line >}}
-{{< line >}}[00:43:09.660] Dan Beecher: I think oftentimes in this, in these kinds of contexts, in biblical contexts, it's more a sense of forgiveness as in we forgive a debt, not as in like an emotional forgiveness.{{< /line >}}
-{{< line >}}[00:43:23.300] Dan Beecher: Like, I have gotten myself to a place emotionally where I, you know, can now let go of the fact that you've done harm to me.{{< /line >}}
+{{< line >}}[00:42:13.140] Dan McClellan: So if it's not against God's command, then it's not a sin. And so God is the offended party, is the injured party when it comes to any sin whatsoever. And so it's up to God to do that.{{< /line >}}
+{{< line >}}[00:42:26.020] Dan Beecher: Yeah, because it's often bothered me the idea that, you know, Someone, even if it's God, that someone other than the, like, you know, I do something horrible to someone else, and then like, forgiveness is something that, that God can grant me. But I don't think to my mind, that's not how that transaction works. Like, the person, the only person who can grant me forgiveness is the person that I have hurt in some way. And, you know, they're under no obligation to do so. But. So I think that there's an, you know, I think that forgiveness also means different things. You know, there's forgive, forgiveness. I think oftentimes in this, in these kinds of contexts, in biblical contexts, it's more a sense of forgiveness as in we forgive a debt, not as in like an emotional forgiveness. Like, I have gotten myself to a place emotionally where I, you know, can now let go of the fact that you've done harm to me.{{< /line >}}
 {{< line >}}[00:43:34.280] Dan Beecher: But it's rather like, okay, you owe me X amount because you did this, and I forgive that debt sort of thing.{{< /line >}}
-{{< line >}}[00:43:41.280] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:43:41.680] Dan McClellan: And.{{< /line >}}
-{{< line >}}[00:43:42.080] Dan McClellan: And I think that is a, that is a metaphor that governs the representation of the, the moral transgressions.{{< /line >}}
-{{< line >}}[00:43:49.280] Dan McClellan: So the, the word that is used for forgive is, is like release, loosen, let go.{{< /line >}}
-{{< line >}}[00:43:56.620] Dan McClellan: And so I think it's, it's probably related to the idea of, of that debt.{{< /line >}}
-{{< line >}}[00:44:01.060] Dan McClellan: And, and as you pointed out as we were outlining what we were going to talk about today, in the Lord's Prayer in Matthew, it says, forgive our debts as we forgive our debtors.{{< /line >}}
-{{< line >}}[00:44:15.340] Dan McClellan: And then if you go to the, the Lukan version, the Sermon on the Plain, it says forgive our sins.{{< /line >}}
-{{< line >}}[00:44:22.470] Dan McClellan: And so one could interpret Matthew to be talking about fiscal principles, or it could be.{{< /line >}}
-{{< line >}}[00:44:31.590] Dan McClellan: I, I think it's probably more likely that it's being used figuratively to refer to moral debts and things like that.{{< /line >}}
-{{< line >}}[00:44:38.630] Dan Beecher: All I know is that the first time I looked up the, the Lord's Prayer, because I didn't.{{< /line >}}
-{{< line >}}[00:44:42.630] Dan Beecher: I wasn't raised saying it.{{< /line >}}
-{{< line >}}[00:44:44.310] Dan Beecher: LDS people don't say the Lord's Prayer.{{< /line >}}
-{{< line >}}[00:44:46.110] Dan Beecher: But I, you know, I'd heard it in like, you know, media on movies or whatever, and I kind of knew, you know, I kind of know it.{{< /line >}}
-{{< line >}}[00:44:53.580] Dan Beecher: It's enough in the Zeitgeist that I kind of know it.{{< /line >}}
-{{< line >}}[00:44:56.060] Dan Beecher: So I look it up in Matthew and I'm like, and forgive us, our debts are what?{{< /line >}}
-{{< line >}}[00:45:00.540] Dan Beecher: Huh?{{< /line >}}
-{{< line >}}[00:45:01.740] Dan Beecher: That's.{{< /line >}}
-{{< line >}}[00:45:02.300] Dan Beecher: That doesn't say trespasses.{{< /line >}}
-{{< line >}}[00:45:03.820] Dan Beecher: What's going on?{{< /line >}}
-{{< line >}}[00:45:04.540] Dan Beecher: It was very.{{< /line >}}
-{{< line >}}[00:45:05.420] Dan Beecher: I.{{< /line >}}
-{{< line >}}[00:45:05.980] Dan Beecher: And then I was in a frantic, like, like, I'm looking at all of the different translations and whatever, and it all says debts.{{< /line >}}
-{{< line >}}[00:45:12.820] Dan Beecher: And I was.{{< /line >}}
-{{< line >}}[00:45:13.260] Dan Beecher: I was blown away by that.{{< /line >}}
-{{< line >}}[00:45:15.150] Dan McClellan: Yeah, that.{{< /line >}}
-{{< line >}}[00:45:17.150] Dan McClellan: There's the.{{< /line >}}
-{{< line >}}[00:45:17.870] Dan McClellan: There's what the text says, and then there's the.{{< /line >}}
-{{< line >}}[00:45:21.310] Dan McClellan: The discourse about it.{{< /line >}}
-{{< line >}}[00:45:22.910] Dan McClellan: And, and frequently what we internalize and what we remember and what the.{{< /line >}}
-{{< line >}}[00:45:28.950] Dan McClellan: The level at which the discourse operates is not what's.{{< /line >}}
-{{< line >}}[00:45:32.030] Dan McClellan: What's in the text.{{< /line >}}
-{{< line >}}[00:45:32.870] Dan McClellan: Like, people.{{< /line >}}
-{{< line >}}[00:45:33.710] Dan McClellan: And that now, people.{{< /line >}}
-{{< line >}}[00:45:35.870] Dan McClellan: There are a lot of conspiracy theorists who claim that that's because, you know, CERN has been screwing with the fabric of reality and has been changing things.{{< /line >}}
-{{< line >}}[00:45:43.580] Dan McClellan: So it is the lion and the lamb.{{< /line >}}
-{{< line >}}[00:45:46.860] Dan McClellan: Because in reality, the Bible never talks about the lion and the lamb.{{< /line >}}
-{{< line >}}[00:45:49.820] Dan McClellan: It talks about the wolf and the lamb, but it has become the lion and the lamb in the discourse.{{< /line >}}
-{{< line >}}[00:45:55.660] Dan McClellan: And a lot of people are like, no, NASA and CERN have changed reality and Mandela effect.{{< /line >}}
-{{< line >}}[00:46:03.580] Dan McClellan: Exactly.{{< /line >}}
-{{< line >}}[00:46:04.380] Dan McClellan: So they're like, I know what I remember.{{< /line >}}
-{{< line >}}[00:46:07.520] Dan McClellan: And, you know, I.{{< /line >}}
-{{< line >}}[00:46:10.480] Dan McClellan: There was a.{{< /line >}}
-{{< line >}}[00:46:11.080] Dan McClellan: There was a scholar at one point.{{< /line >}}
-{{< line >}}[00:46:12.080] Dan McClellan: I can't remember where this was.{{< /line >}}
-{{< line >}}[00:46:13.560] Dan McClellan: I don't remember the context, but somebody at some point was talking about when.{{< /line >}}
-{{< line >}}[00:46:19.040] Dan McClellan: When.{{< /line >}}
-{{< line >}}[00:46:20.080] Dan McClellan: When the Pharaoh gave Moses his ring.{{< /line >}}
-{{< line >}}[00:46:22.960] Dan McClellan: And I was like, you're thinking of The Prince of Egypt.{{< /line >}}
-{{< line >}}[00:46:28.080] Dan McClellan: That was an animated movie.{{< /line >}}
-{{< line >}}[00:46:29.560] Dan McClellan: That's not in the text.{{< /line >}}
-{{< line >}}[00:46:34.720] Dan McClellan: So, yeah, I. I totally lost track of where we were going.{{< /line >}}
+{{< line >}}[00:43:41.280] Dan McClellan: Yeah. And. And I think that is a, that is a metaphor that governs the representation of the, the moral transgressions. So the, the word that is used for forgive is, is like release, loosen, let go. And so I think it's, it's probably related to the idea of, of that debt. And, and as you pointed out as we were outlining what we were going to talk about today, in the Lord's Prayer in Matthew, it says, forgive our debts as we forgive our debtors. And then if you go to the, the Lukan version, the Sermon on the Plain, it says forgive our sins. And so one could interpret Matthew to be talking about fiscal principles, or it could be. I, I think it's probably more likely that it's being used figuratively to refer to moral debts and things like that.{{< /line >}}
+{{< line >}}[00:44:38.630] Dan Beecher: All I know is that the first time I looked up the, the Lord's Prayer, because I didn't. I wasn't raised saying it. LDS people don't say the Lord's Prayer. But I, you know, I'd heard it in like, you know, media on movies or whatever, and I kind of knew, you know, I kind of know it. It's enough in the Zeitgeist that I kind of know it. So I look it up in Matthew and I'm like, and forgive us, our debts are what? Huh? That's. That doesn't say trespasses. What's going on? It was very. I. And then I was in a frantic, like, like, I'm looking at all of the different translations and whatever, and it all says debts. And I was. I was blown away by that.{{< /line >}}
+{{< line >}}[00:45:15.150] Dan McClellan: Yeah, that. There's the. There's what the text says, and then there's the. The discourse about it. And, and frequently what we internalize and what we remember and what the. The level at which the discourse operates is not what's. What's in the text. Like, people. And that now, people. There are a lot of conspiracy theorists who claim that that's because, you know, CERN has been screwing with the fabric of reality and has been changing things. So it is the lion and the lamb. Because in reality, the Bible never talks about the lion and the lamb. It talks about the wolf and the lamb, but it has become the lion and the lamb in the discourse. And a lot of people are like, no, NASA and CERN have changed reality and Mandela effect. Exactly. So they're like, I know what I remember. And, you know, I. There was a. There was a scholar at one point. I can't remember where this was. I don't remember the context, but somebody at some point was talking about when.{{< /line >}}
+{{< line >}}[00:46:19.040] Dan McClellan: When. When the Pharaoh gave Moses his ring. And I was like, you're thinking of The Prince of Egypt. That was an animated movie. That's not in the text. So, yeah, I. I totally lost track of where we were going.{{< /line >}}
 {{< line >}}[00:46:38.720] Dan Beecher: Forgiveness for a minute there.{{< /line >}}
-{{< line >}}[00:46:40.160] Dan McClellan: Forgiveness for sins.{{< /line >}}
-{{< line >}}[00:46:41.280] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:46:43.120] Dan McClellan: But I want to return to this idea of God being this jealous God who will not forgive your transgressions because there actually is another divine agent who.{{< /line >}}
-{{< line >}}[00:46:53.600] Dan McClellan: Of whom the exact same thing is said word for word.{{< /line >}}
-{{< line >}}[00:46:57.600] Dan McClellan: And that happens in Exodus 23, when we have the angel.{{< /line >}}
-{{< line >}}[00:47:02.580] Dan McClellan: God says, look, I'm sending an angel before you to guide you along the way.{{< /line >}}
-{{< line >}}[00:47:08.420] Dan McClellan: Don't disobey him, don't tick him off, says, because he will not forgive your sins.{{< /line >}}
-{{< line >}}[00:47:16.740] Dan McClellan: And it's the exact same Hebrew that we find in Joshua 24:19.{{< /line >}}
-{{< line >}}[00:47:21.860] Dan McClellan: The purview, the prerogative of the jealous God.{{< /line >}}
-{{< line >}}[00:47:25.390] Dan McClellan: And then it says, because my name is in him.{{< /line >}}
-{{< line >}}[00:47:28.190] Dan McClellan: And so I. I argue in my book that this seems to be.{{< /line >}}
-{{< line >}}[00:47:32.590] Dan McClellan: They're accounting for why the angel's identity gets mixed up with God's identity, which we see with.{{< /line >}}
-{{< line >}}[00:47:38.910] Dan McClellan: With the angel who appears to Moses in the burning bush.{{< /line >}}
-{{< line >}}[00:47:41.990] Dan McClellan: And.{{< /line >}}
-{{< line >}}[00:47:42.310] Dan McClellan: And it happens with Hagar, it happens with Abraham, it happens with Gideon, it happens with Manoah and his wife, where stories that were originally about God visiting humanity have the angel written in to kind of muddy the waters.{{< /line >}}
-{{< line >}}[00:47:57.360] Dan McClellan: And this, I argue, is.{{< /line >}}
-{{< line >}}[00:47:58.840] Dan McClellan: Is a way to account for how the angel can do what only God is supposed to be able to do.{{< /line >}}
-{{< line >}}[00:48:03.360] Dan McClellan: And in this, and in the case of Exodus 23, it's that prerogative not to forgive sins that the angel has as a result of God's name being in him.{{< /line >}}
-{{< line >}}[00:48:14.720] Dan McClellan: And so I would take this back to Mark 2 and say it's possible, I think it's likely that the author has in.{{< /line >}}
-{{< line >}}[00:48:26.770] Dan McClellan: In mind an allusion to this notion that, hey, there was a divine agent that was able to have authority over the forgiveness of sins.{{< /line >}}
-{{< line >}}[00:48:36.290] Dan McClellan: In the Hebrew Bible, the Son of man is held up as an example of someone who is able to exercise divine prerogatives, and in some instances, because they were endowed with God's name or have God's name indwelling within them.{{< /line >}}
+{{< line >}}[00:46:40.160] Dan McClellan: Forgiveness for sins. Yeah. But I want to return to this idea of God being this jealous God who will not forgive your transgressions because there actually is another divine agent who. Of whom the exact same thing is said word for word. And that happens in Exodus 23, when we have the angel. God says, look, I'm sending an angel before you to guide you along the way. Don't disobey him, don't tick him off, says, because he will not forgive your sins. And it's the exact same Hebrew that we find in Joshua 24:19. The purview, the prerogative of the jealous God. And then it says, because my name is in him. And so I. I argue in my book that this seems to be. They're accounting for why the angel's identity gets mixed up with God's identity, which we see with. With the angel who appears to Moses in the burning bush.{{< /line >}}
+{{< line >}}[00:47:41.990] Dan McClellan: And. And it happens with Hagar, it happens with Abraham, it happens with Gideon, it happens with Manoah and his wife, where stories that were originally about God visiting humanity have the angel written in to kind of muddy the waters. And this, I argue, is. Is a way to account for how the angel can do what only God is supposed to be able to do. And in this, and in the case of Exodus 23, it's that prerogative not to forgive sins that the angel has as a result of God's name being in him. And so I would take this back to Mark 2 and say it's possible, I think it's likely that the author has in. In mind an allusion to this notion that, hey, there was a divine agent that was able to have authority over the forgiveness of sins. In the Hebrew Bible, the Son of man is held up as an example of someone who is able to exercise divine prerogatives, and in some instances, because they were endowed with God's name or have God's name indwelling within them.{{< /line >}}
 {{< line >}}[00:48:51.590] Dan McClellan: And so I, I think that's probably what is underlying the story here, rather than the notion that Jesus is winking at them about being God through this narrative without actually coming out and saying, yeah, don't you get it yet?{{< /line >}}
 {{< line >}}[00:49:09.240] Dan Beecher: I'm the same guy.{{< /line >}}
 {{< line >}}[00:49:10.440] Dan McClellan: Yeah, it, it's-a me, the Messiah.{{< /line >}}
-{{< line >}}[00:49:18.520] Dan Beecher: Messiah-rio.{{< /line >}}
-{{< line >}}[00:49:21.400] Dan Beecher: Yeah, that, that's fascinating.{{< /line >}}
-{{< line >}}[00:49:24.200] Dan Beecher: I, it, it's weird that it happened.{{< /line >}}
-{{< line >}}[00:49:27.800] Dan Beecher: Like, the whole setup with the, the paralyzed guy coming in through the roof seems real strange to me since we're setting up something that could have happened in any number of other ways.{{< /line >}}
-{{< line >}}[00:49:43.620] Dan Beecher: But, but I mean, who knows?{{< /line >}}
-{{< line >}}[00:49:46.500] Dan Beecher: Maybe it's because it actually happened.{{< /line >}}
-{{< line >}}[00:49:48.180] Dan Beecher: You know, people digging through your roof.{{< /line >}}
-{{< line >}}[00:49:49.980] Dan Beecher: That's.{{< /line >}}
-{{< line >}}[00:49:51.060] Dan Beecher: That's a fun story.{{< /line >}}
-{{< line >}}[00:49:52.420] Dan Beecher: You're going to be dining out on that for a long time.{{< /line >}}
-{{< line >}}[00:49:55.780] Dan McClellan: And I, I think it's interesting that also that it says Jesus saw.{{< /line >}}
-{{< line >}}[00:50:01.140] Dan McClellan: Let me make sure that's.{{< /line >}}
-{{< line >}}[00:50:02.180] Dan McClellan: That's plural.{{< /line >}}
-{{< line >}}[00:50:02.980] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:50:03.340] Dan McClellan: Jesus saw their faith.{{< /line >}}
-{{< line >}}[00:50:05.990] Dan McClellan: So it's not the, it's not the, the man lying on the bed whose faith Jesus is rewarding.{{< /line >}}
+{{< line >}}[00:49:18.520] Dan Beecher: Messiah-rio. Yeah, that, that's fascinating. I, it, it's weird that it happened. Like, the whole setup with the, the paralyzed guy coming in through the roof seems real strange to me since we're setting up something that could have happened in any number of other ways. But, but I mean, who knows? Maybe it's because it actually happened. You know, people digging through your roof. That's. That's a fun story. You're going to be dining out on that for a long time.{{< /line >}}
+{{< line >}}[00:49:55.780] Dan McClellan: And I, I think it's interesting that also that it says Jesus saw. Let me make sure that's. That's plural. Yeah. Jesus saw their faith. So it's not the, it's not the, the man lying on the bed whose faith Jesus is rewarding.{{< /line >}}
 {{< line >}}[00:50:12.790] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:50:13.350] Dan McClellan: It's.{{< /line >}}
-{{< line >}}[00:50:13.830] Dan McClellan: It's the faith of his buddies.{{< /line >}}
-{{< line >}}[00:50:16.630] Dan McClellan: And he's like, oh, well, I'm gonna forgive this guy's sins.{{< /line >}}
-{{< line >}}[00:50:21.750] Dan McClellan: The four, the four buddies are probably like, and what about our sins?{{< /line >}}
-{{< line >}}[00:50:26.390] Dan McClellan: Yeah, it was our faith you were talking about there.{{< /line >}}
-{{< line >}}[00:50:30.640] Dan Beecher: We hoisted the guy all the way up here.{{< /line >}}
-{{< line >}}[00:50:33.920] Dan Beecher: We should get something.{{< /line >}}
-{{< line >}}[00:50:35.280] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:50:35.640] Dan McClellan: Unless it was the, the man who was, who's laying on the, the cot or whatever they were carrying him, who, who was like, dig through the roof.{{< /line >}}
-{{< line >}}[00:50:44.720] Dan McClellan: I gotta get in there.{{< /line >}}
-{{< line >}}[00:50:46.399] Dan McClellan: And he made them do it.{{< /line >}}
-{{< line >}}[00:50:48.560] Dan Beecher: It literally cannot be that.{{< /line >}}
-{{< line >}}[00:50:50.400] Dan Beecher: It, like some structural or civil engineer has to tell me how it is possible that they dug through the roof and it, the whole thing didn't cave in.{{< /line >}}
-{{< line >}}[00:51:01.240] Dan Beecher: I just want to know anyway.{{< /line >}}
-{{< line >}}[00:51:03.520] Dan McClellan: Yeah, because it's fine.{{< /line >}}
-{{< line >}}[00:51:05.040] Dan McClellan: Because it could have been, you know, like a basketball hoop sized hole and they just kind of lowered him down by his feet.{{< /line >}}
-{{< line >}}[00:51:12.240] Dan McClellan: Because if they had to hold him flat, that is a very large hole that they've got to dig into.{{< /line >}}
-{{< line >}}[00:51:19.280] Dan Beecher: And did they like, they keep referencing this guy and his mat.{{< /line >}}
-{{< line >}}[00:51:23.000] Dan Beecher: Did they lower him down on the mat?{{< /line >}}
-{{< line >}}[00:51:25.650] Dan Beecher: Like, it feels like they must have used the mat to lower him.{{< /line >}}
-{{< line >}}[00:51:28.250] Dan Beecher: I don't know.{{< /line >}}
-{{< line >}}[00:51:29.090] Dan Beecher: This is weird.{{< /line >}}
+{{< line >}}[00:50:13.350] Dan McClellan: It's. It's the faith of his buddies. And he's like, oh, well, I'm gonna forgive this guy's sins. The four, the four buddies are probably like, and what about our sins? Yeah, it was our faith you were talking about there.{{< /line >}}
+{{< line >}}[00:50:30.640] Dan Beecher: We hoisted the guy all the way up here. We should get something. Yeah.{{< /line >}}
+{{< line >}}[00:50:35.640] Dan McClellan: Unless it was the, the man who was, who's laying on the, the cot or whatever they were carrying him, who, who was like, dig through the roof. I gotta get in there. And he made them do it.{{< /line >}}
+{{< line >}}[00:50:48.560] Dan Beecher: It literally cannot be that. It, like some structural or civil engineer has to tell me how it is possible that they dug through the roof and it, the whole thing didn't cave in. I just want to know anyway.{{< /line >}}
+{{< line >}}[00:51:03.520] Dan McClellan: Yeah, because it's fine. Because it could have been, you know, like a basketball hoop sized hole and they just kind of lowered him down by his feet. Because if they had to hold him flat, that is a very large hole that they've got to dig into.{{< /line >}}
+{{< line >}}[00:51:19.280] Dan Beecher: And did they like, they keep referencing this guy and his mat. Did they lower him down on the mat? Like, it feels like they must have used the mat to lower him. I don't know. This is weird.{{< /line >}}
 {{< line >}}[00:51:30.290] Dan McClellan: They had a dolly and a bunch of straps that they were.{{< /line >}}
-{{< line >}}[00:51:34.370] Dan Beecher: Stop being weird.{{< /line >}}
-{{< line >}}[00:51:36.930] Dan Beecher: And lowering him down, inching him down.{{< /line >}}
+{{< line >}}[00:51:34.370] Dan Beecher: Stop being weird. And lowering him down, inching him down.{{< /line >}}
 {{< line >}}[00:51:39.490] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:51:40.130] Dan Beecher: Click by click.{{< /line >}}
 {{< line >}}[00:51:41.330] Dan McClellan: Or, or they just strapped him to the mat.{{< /line >}}
 {{< line >}}[00:51:44.930] Dan Beecher: Just roll him in.{{< /line >}}
-{{< line >}}[00:51:46.010] Dan McClellan: They were like, cross your fingers.{{< /line >}}
-{{< line >}}[00:51:50.770] Dan McClellan: But it's, it is, it is fun to imagine potential historical realities underlying these, these literary stories.{{< /line >}}
+{{< line >}}[00:51:46.010] Dan McClellan: They were like, cross your fingers. But it's, it is, it is fun to imagine potential historical realities underlying these, these literary stories.{{< /line >}}
 {{< line >}}[00:51:59.180] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:52:00.460] Dan McClellan: Because I, I think some of the ways that these stories are told, they're not told so that you imagine these realities, they're just told so you focus on the points that they're making.{{< /line >}}
-{{< line >}}[00:52:11.340] Dan McClellan: And then trying to imagine those realities raises peculiarities.{{< /line >}}
-{{< line >}}[00:52:17.020] Dan Beecher: Well, this is what I'm saying.{{< /line >}}
-{{< line >}}[00:52:18.620] Dan Beecher: I, if I could go back in time and talk to biblical authors, I would be like, I understand good storytelling involves details, but like, let's not make the details so weird that it totally distracts from the actual like point you're trying to make here.{{< /line >}}
-{{< line >}}[00:52:35.180] Dan Beecher: Because that, that's a weird detail.{{< /line >}}
-{{< line >}}[00:52:40.300] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:52:40.940] Dan McClellan: I don't know where, where they grew up, how they, how they learn their, their storytelling craft.{{< /line >}}
-{{< line >}}[00:52:47.180] Dan McClellan: But the one thing is for sure is the gospel authors were definitely well trained.{{< /line >}}
-{{< line >}}[00:52:53.920] Dan McClellan: So there, there were, they were sticking with the, the conventional, the conventions and the, the norms of, of their time.{{< /line >}}
-{{< line >}}[00:53:01.920] Dan McClellan: Even if it strikes us as, as peculiar and all.{{< /line >}}
-{{< line >}}[00:53:06.960] Dan Beecher: They did.{{< /line >}}
-{{< line >}}[00:53:08.560] Dan Beecher: The paralytic man did crowd surf to the place.{{< /line >}}
-{{< line >}}[00:53:13.360] Dan Beecher: All right, well, I guess that's it for this week's show.{{< /line >}}
-{{< line >}}[00:53:17.600] Dan Beecher: If you guys would like to become a part of making this show happen, as well as receive an ad free early version of every episode and get access to the after party, which is bonus content every week.{{< /line >}}
-{{< line >}}[00:53:33.490] Dan Beecher: You can head over to patreon.com/dataoverdogma and sign up there.{{< /line >}}
-{{< line >}}[00:53:39.010] Dan Beecher: Or if you just need to reach us for anything, please feel free to write into us; contact@dataoverdogmapod.com is the email address and we'll see you next week.{{< /line >}}
+{{< line >}}[00:52:00.460] Dan McClellan: Because I, I think some of the ways that these stories are told, they're not told so that you imagine these realities, they're just told so you focus on the points that they're making. And then trying to imagine those realities raises peculiarities.{{< /line >}}
+{{< line >}}[00:52:17.020] Dan Beecher: Well, this is what I'm saying. I, if I could go back in time and talk to biblical authors, I would be like, I understand good storytelling involves details, but like, let's not make the details so weird that it totally distracts from the actual like point you're trying to make here. Because that, that's a weird detail.{{< /line >}}
+{{< line >}}[00:52:40.300] Dan McClellan: Yeah. I don't know where, where they grew up, how they, how they learn their, their storytelling craft. But the one thing is for sure is the gospel authors were definitely well trained. So there, there were, they were sticking with the, the conventional, the conventions and the, the norms of, of their time. Even if it strikes us as, as peculiar and all.{{< /line >}}
+{{< line >}}[00:53:06.960] Dan Beecher: They did. The paralytic man did crowd surf to the place. All right, well, I guess that's it for this week's show. If you guys would like to become a part of making this show happen, as well as receive an ad free early version of every episode and get access to the after party, which is bonus content every week. You can head over to patreon.com/dataoverdogma and sign up there. Or if you just need to reach us for anything, please feel free to write into us; contact@dataoverdogmapod.com is the email address and we'll see you next week.{{< /line >}}
 {{< line >}}[00:53:52.220] Dan McClellan: Bye everybody.{{< /line >}}
