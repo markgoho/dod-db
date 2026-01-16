@@ -1,4 +1,4 @@
-baseURL = 'https://dod-db.web.app/'
+baseURL = 'https://dod-db-a9c10.web.app/'
 languageCode = 'en-us'
 title = 'Data Over Dogma Podcast'
 enableGitInfo = true
