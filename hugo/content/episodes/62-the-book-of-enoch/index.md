@@ -1,6 +1,6 @@
 ---
 title: The Book of Enoch
-date: 2024-06-10T00:00:00Z
+date: 2024-06-10T00:00:00.000Z
 episodeNumber: 62
 videoId: zghJE1-ZCQw
 aliases:
@@ -14,7 +14,6 @@ tags:
   - Christianity
   - biblical canon
   - Eschatology
-  - manuscript
   - Methuselah
   - New Testament
   - YHWH
@@ -67,7 +66,7 @@ segments:
   - Left Behind
 segmentData:
   - type: left-behind
-    label: "Left Behind"
+    label: Left Behind
     startSeconds: 84.388
 draft: false
 ---

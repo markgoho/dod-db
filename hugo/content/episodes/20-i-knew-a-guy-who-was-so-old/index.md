@@ -1,6 +1,6 @@
 ---
 title: I Knew a Guy Who Was SO OLD...
-date: 2023-08-21T00:00:00Z
+date: 2023-08-21T00:00:00.000Z
 episodeNumber: 20
 videoId: p8CjJR4yhfk
 aliases:
@@ -33,7 +33,6 @@ tags:
   - 2 Maccabees
   - Book of Revelation
   - Ishmael
-  - manuscript
   - Book of Daniel
   - Book of Isaiah
   - Dead Sea Scrolls
@@ -64,10 +63,10 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: by-the-numbers
-    label: "By the Numbers"
+    label: By the Numbers
     startSeconds: 78
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 1592
 draft: false
 ---

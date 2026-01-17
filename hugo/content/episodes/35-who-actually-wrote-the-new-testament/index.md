@@ -1,6 +1,6 @@
 ---
 title: Who ACTUALLY Wrote the New Testament?
-date: 2023-12-04T00:00:00Z
+date: 2023-12-04T00:00:00.000Z
 episodeNumber: 35
 videoId: _8in-xz4L8o
 aliases:
@@ -13,7 +13,6 @@ tags:
   - Papias of Hierapolis
   - Luke
   - Jesus
-  - manuscript
   - Peter
   - Christianity
   - James

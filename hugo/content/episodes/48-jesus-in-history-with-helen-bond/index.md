@@ -1,6 +1,6 @@
 ---
 title: Jesus in History
-date: 2024-03-04T00:00:00Z
+date: 2024-03-04T00:00:00.000Z
 episodeNumber: 48
 videoId: 5CCrRI2RX2s
 aliases:
@@ -33,7 +33,6 @@ tags:
   - Book of Isaiah
   - First Corinthians
   - Holy Spirit
-  - manuscript
   - resurrection
   - Saint Titus
   - archaeology

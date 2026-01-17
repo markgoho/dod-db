@@ -45,6 +45,7 @@ import {
 } from '../config/segment-patterns.js';
 import { youtubeConfig } from '../config/youtube.js';
 import type { TagDefinition, TagCategory } from '../config/tag-vocabulary.js';
+import { removeTagFromEpisode } from '../utils/hugo-frontmatter.js';
 import * as path from 'node:path';
 
 const PORT = 3001; // API server on separate port
@@ -721,31 +722,47 @@ const _server = Bun.serve({
         // Remove tag from all episodes in processed-videos.json
         console.log(`Removing "${canonical}" from all episodes...`);
         const videos = await loadProcessedVideos();
-        let removedCount = 0;
+        const affectedVideos: typeof videos = [];
 
         for (const video of videos) {
           if (video.tags) {
             const initialLength = video.tags.length;
             // Remove this tag (case-insensitive)
             video.tags = video.tags.filter(
-              (t) => t.tag.toLowerCase() !== canonical.toLowerCase()
+              (t) => t.tag.toLowerCase() !== canonical.toLowerCase(),
             );
             if (video.tags.length < initialLength) {
-              removedCount++;
+              affectedVideos.push(video);
             }
           }
         }
 
         // Save updated videos
         await saveProcessedVideos(videos);
-        console.log(`✓ Removed "${canonical}" from ${removedCount} episodes`);
+        console.log(`✓ Removed "${canonical}" from ${affectedVideos.length} episodes`);
+
+        // Update Hugo frontmatter ONLY for affected episodes (surgical update)
+        if (affectedVideos.length > 0) {
+          console.log(`Updating Hugo frontmatter for ${affectedVideos.length} episodes...`);
+          for (const video of affectedVideos) {
+            const removed = await removeTagFromEpisode({
+              video,
+              tagToRemove: canonical,
+            });
+            if (!removed) {
+              console.warn(
+                `  Warning: Tag "${canonical}" not found in Hugo frontmatter for episode ${video.episodeNumber}`,
+              );
+            }
+          }
+        }
 
         // Invalidate stats cache
         statsCache.data = null;
 
         return jsonResponse({
           success: true,
-          message: `Tag "${canonical}" rejected and removed from ${removedCount} episodes`,
+          message: `Tag "${canonical}" rejected and removed from ${affectedVideos.length} episodes`,
         });
       } catch (error) {
         console.error('Error rejecting tag:', error);
@@ -808,14 +825,53 @@ const _server = Bun.serve({
           url.pathname.replace('/api/tag-vocabulary/vocabulary/delete/', ''),
         );
 
+        // Delete from vocabulary file
         await deleteTagFromVocabulary(canonical);
+
+        // Remove tag from all episodes in processed-videos.json
+        console.log(`Removing "${canonical}" from all episodes...`);
+        const videos = await loadProcessedVideos();
+        const affectedVideos: typeof videos = [];
+
+        for (const video of videos) {
+          if (video.tags) {
+            const initialLength = video.tags.length;
+            // Remove this tag (case-insensitive)
+            video.tags = video.tags.filter(
+              (t) => t.tag.toLowerCase() !== canonical.toLowerCase(),
+            );
+            if (video.tags.length < initialLength) {
+              affectedVideos.push(video);
+            }
+          }
+        }
+
+        // Save updated videos
+        await saveProcessedVideos(videos);
+        console.log(`✓ Removed "${canonical}" from ${affectedVideos.length} episodes`);
+
+        // Update Hugo frontmatter ONLY for affected episodes (surgical update)
+        if (affectedVideos.length > 0) {
+          console.log(`Updating Hugo frontmatter for ${affectedVideos.length} episodes...`);
+          for (const video of affectedVideos) {
+            const removed = await removeTagFromEpisode({
+              video,
+              tagToRemove: canonical,
+            });
+            if (!removed) {
+              console.warn(
+                `  Warning: Tag "${canonical}" not found in Hugo frontmatter for episode ${video.episodeNumber}`,
+              );
+            }
+          }
+        }
 
         // Invalidate stats cache
         statsCache.data = null;
 
         return jsonResponse({
           success: true,
-          message: `Tag "${canonical}" deleted`,
+          message: `Tag "${canonical}" deleted from vocabulary and removed from ${affectedVideos.length} episodes`,
         });
       } catch (error) {
         console.error('Error deleting tag:', error);

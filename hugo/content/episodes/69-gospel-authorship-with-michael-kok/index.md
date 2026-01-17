@@ -1,6 +1,6 @@
 ---
 title: Gospel Authorship
-date: 2024-07-29T00:00:00Z
+date: 2024-07-29T00:00:00.000Z
 episodeNumber: 69
 videoId: 1w8zmAKheQE
 aliases:
@@ -17,7 +17,6 @@ tags:
   - Book of Acts
   - Gospel of Matthew
   - YHWH
-  - manuscript
   - Christianity
   - Hebrews
   - Ignatius

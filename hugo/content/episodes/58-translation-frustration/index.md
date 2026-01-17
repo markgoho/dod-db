@@ -1,6 +1,6 @@
 ---
 title: Translation Frustration
-date: 2024-05-13T00:00:00Z
+date: 2024-05-13T00:00:00.000Z
 episodeNumber: 58
 videoId: KDkyHw3nE0w
 aliases:
@@ -8,7 +8,6 @@ aliases:
 tags:
   - King James Version
   - gods
-  - manuscript
   - Genesis
   - New Testament
   - Israel

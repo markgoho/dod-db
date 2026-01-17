@@ -1,6 +1,6 @@
 ---
 title: The Joel McHale Episode!
-date: 2024-01-08T00:00:00Z
+date: 2024-01-08T00:00:00.000Z
 episodeNumber: 40
 videoId: MBA74-qj0Pw
 aliases:
@@ -23,7 +23,6 @@ tags:
   - 2 Kings
   - Baal
   - Kings
-  - manuscript
   - angel
   - Bart Ehrman
   - Book of Revelation

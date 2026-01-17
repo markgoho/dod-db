@@ -177,7 +177,6 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'archaeology', variations: ['archaeological'], category: 'scholarship', status: 'accepted' },
 	{ canonical: 'epigraphy', variations: ['epigraphers'], category: 'scholarship', status: 'accepted' },
 	{ canonical: 'forgery', variations: ['forged', 'fake artifacts'], category: 'scholarship', status: 'accepted' },
-	{ canonical: 'manuscript', variations: ['manuscripts'], category: 'scholarship', status: 'accepted' },
 	{ canonical: 'historical criticism', variations: ['historical-critical method'], category: 'scholarship', status: 'accepted' },
 	{ canonical: 'preterist interpretation', variations: ['preterism'], category: 'scholarship', status: 'accepted' },
 	{ canonical: 'futurist interpretation', variations: ['futurism'], category: 'scholarship', status: 'accepted' },

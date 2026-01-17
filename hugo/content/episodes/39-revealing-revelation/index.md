@@ -1,6 +1,6 @@
 ---
 title: Revealing Revelation
-date: 2024-01-01T00:00:00Z
+date: 2024-01-01T00:00:00.000Z
 episodeNumber: 39
 videoId: VTRccZ81UZs
 aliases:
@@ -12,7 +12,6 @@ tags:
   - Christianity
   - Hell
   - Paul
-  - manuscript
   - YHWH
   - Athanasius of Alexandria
   - Eschatology
@@ -60,7 +59,7 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 80
 draft: false
 ---

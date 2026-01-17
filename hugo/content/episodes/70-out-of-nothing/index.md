@@ -1,6 +1,6 @@
 ---
 title: Out of Nothing
-date: 2024-08-05T00:00:00Z
+date: 2024-08-05T00:00:00.000Z
 episodeNumber: 70
 videoId: wFcJAbbNOpk
 aliases:
@@ -43,7 +43,6 @@ tags:
   - Jerome
   - Justin Martyr
   - Latin Vulgate
-  - manuscript
   - Median Kingdom
   - Origen
   - Paul
@@ -53,10 +52,10 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: creation-stories
-    label: "Creation Stories"
+    label: Creation Stories
     startSeconds: 194.206
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 1787.214
 draft: false
 ---

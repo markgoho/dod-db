@@ -1,6 +1,6 @@
 ---
 title: Is Jesus God?
-date: 2024-01-22T00:00:00Z
+date: 2024-01-22T00:00:00.000Z
 episodeNumber: 42
 videoId: K0kobJi-sLI
 aliases:
@@ -16,7 +16,6 @@ tags:
   - gods
   - YHWH
   - Holy Spirit
-  - manuscript
   - New Testament
   - Hebrews
   - Judaism
@@ -47,10 +46,10 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: all-right-lets-see-it
-    label: "All Right, Let's See It"
+    label: All Right, Let's See It
     startSeconds: 120.42
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 2371
 draft: false
 ---

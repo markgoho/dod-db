@@ -1,13 +1,12 @@
 ---
 title: Silence, Woman!
-date: 2024-05-28T00:00:00Z
+date: 2024-05-28T00:00:00.000Z
 episodeNumber: 60
 videoId: irflmh20e8Y
 aliases:
   - /episodes/60/
 tags:
   - Jesus
-  - manuscript
   - Gospel of John
   - Paul
   - Priscilla
@@ -41,10 +40,10 @@ segments:
   - Textual Healing
 segmentData:
   - type: textual-healing
-    label: "Textual Healing (1)"
+    label: Textual Healing (1)
     startSeconds: 76.547
   - type: textual-healing
-    label: "Textual Healing (2)"
+    label: Textual Healing (2)
     startSeconds: 1606
 draft: false
 ---

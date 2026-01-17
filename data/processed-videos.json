@@ -1065,10 +1065,6 @@
         "mentions": 3
       },
       {
-        "tag": "manuscript",
-        "mentions": 3
-      },
-      {
         "tag": "1 Samuel",
         "mentions": 2
       },
@@ -1270,10 +1266,6 @@
       {
         "tag": "Baal",
         "mentions": 12
-      },
-      {
-        "tag": "manuscript",
-        "mentions": 9
       },
       {
         "tag": "angel",
@@ -1622,10 +1614,6 @@
         "mentions": 5
       },
       {
-        "tag": "manuscript",
-        "mentions": 4
-      },
-      {
         "tag": "Gospel of Mark",
         "mentions": 3
       },
@@ -1932,10 +1920,6 @@
         "mentions": 58
       },
       {
-        "tag": "manuscript",
-        "mentions": 55
-      },
-      {
         "tag": "Septuagint",
         "mentions": 29
       },
@@ -2203,10 +2187,6 @@
       {
         "tag": "Gospel of John",
         "mentions": 74
-      },
-      {
-        "tag": "manuscript",
-        "mentions": 55
       },
       {
         "tag": "Luke",
@@ -2682,10 +2662,6 @@
         "mentions": 1
       },
       {
-        "tag": "manuscript",
-        "mentions": 1
-      },
-      {
         "tag": "Mary Magdalene",
         "mentions": 1
       },
@@ -3014,10 +2990,6 @@
         "mentions": 9
       },
       {
-        "tag": "manuscript",
-        "mentions": 7
-      },
-      {
         "tag": "Gospel of Mark",
         "mentions": 6
       },
@@ -3165,10 +3137,6 @@
     "transcriptPath": "data/transcripts/2023-07-31-episode-17-july-31-2023-the-case-of-the-missing-verses.txt",
     "episodeNumber": 17,
     "tags": [
-      {
-        "tag": "manuscript",
-        "mentions": 47
-      },
       {
         "tag": "King James Version",
         "mentions": 35
@@ -3499,10 +3467,6 @@
       },
       {
         "tag": "Latin Vulgate",
-        "mentions": 2
-      },
-      {
-        "tag": "manuscript",
         "mentions": 2
       },
       {
@@ -3949,10 +3913,6 @@
       },
       {
         "tag": "Ishmael",
-        "mentions": 3
-      },
-      {
-        "tag": "manuscript",
         "mentions": 3
       },
       {
@@ -4418,10 +4378,6 @@
         "mentions": 1
       },
       {
-        "tag": "manuscript",
-        "mentions": 1
-      },
-      {
         "tag": "Mesopotamian",
         "mentions": 1
       },
@@ -4804,10 +4760,6 @@
       },
       {
         "tag": "Latin Vulgate",
-        "mentions": 1
-      },
-      {
-        "tag": "manuscript",
         "mentions": 1
       },
       {
@@ -6437,10 +6389,6 @@
         "mentions": 2
       },
       {
-        "tag": "manuscript",
-        "mentions": 2
-      },
-      {
         "tag": "Median Kingdom",
         "mentions": 2
       },
@@ -6571,10 +6519,6 @@
       },
       {
         "tag": "Jesus",
-        "mentions": 21
-      },
-      {
-        "tag": "manuscript",
         "mentions": 21
       },
       {
@@ -7349,10 +7293,6 @@
         "mentions": 12
       },
       {
-        "tag": "manuscript",
-        "mentions": 11
-      },
-      {
         "tag": "YHWH",
         "mentions": 11
       },
@@ -7627,10 +7567,6 @@
       },
       {
         "tag": "Kings",
-        "mentions": 2
-      },
-      {
-        "tag": "manuscript",
         "mentions": 2
       },
       {
@@ -7973,10 +7909,6 @@
       },
       {
         "tag": "Holy Spirit",
-        "mentions": 6
-      },
-      {
-        "tag": "manuscript",
         "mentions": 6
       },
       {
@@ -8441,10 +8373,6 @@
     "transcriptPath": "data/transcripts/2024-02-12-episode-45-february-12-2024-the-dead-sea-scrolls-with-kipp-davis.txt",
     "episodeNumber": 45,
     "tags": [
-      {
-        "tag": "manuscript",
-        "mentions": 54
-      },
       {
         "tag": "Dead Sea Scrolls",
         "mentions": 40
@@ -9147,10 +9075,6 @@
         "mentions": 2
       },
       {
-        "tag": "manuscript",
-        "mentions": 2
-      },
-      {
         "tag": "resurrection",
         "mentions": 2
       },
@@ -9287,10 +9211,6 @@
       {
         "tag": "Tertius",
         "mentions": 7
-      },
-      {
-        "tag": "manuscript",
-        "mentions": 5
       },
       {
         "tag": "Luke",
@@ -10804,10 +10724,6 @@
         "mentions": 18
       },
       {
-        "tag": "manuscript",
-        "mentions": 18
-      },
-      {
         "tag": "Genesis",
         "mentions": 15
       },
@@ -11277,10 +11193,6 @@
         "mentions": 14
       },
       {
-        "tag": "manuscript",
-        "mentions": 13
-      },
-      {
         "tag": "Gospel of John",
         "mentions": 11
       },
@@ -11533,10 +11445,6 @@
         "mentions": 2
       },
       {
-        "tag": "manuscript",
-        "mentions": 2
-      },
-      {
         "tag": "Samson",
         "mentions": 2
       },
@@ -11676,10 +11584,6 @@
       },
       {
         "tag": "Eschatology",
-        "mentions": 9
-      },
-      {
-        "tag": "manuscript",
         "mentions": 9
       },
       {
@@ -12856,10 +12760,6 @@
         "mentions": 10
       },
       {
-        "tag": "manuscript",
-        "mentions": 9
-      },
-      {
         "tag": "Christianity",
         "mentions": 8
       },
@@ -13213,10 +13113,6 @@
       },
       {
         "tag": "Latin Vulgate",
-        "mentions": 1
-      },
-      {
-        "tag": "manuscript",
         "mentions": 1
       },
       {

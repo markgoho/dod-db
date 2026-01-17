@@ -1,6 +1,6 @@
 ---
 title: Lilith Unfair
-date: 2023-07-10T00:00:00Z
+date: 2023-07-10T00:00:00.000Z
 episodeNumber: 14
 videoId: xYDiFyXinfs
 aliases:
@@ -37,7 +37,6 @@ tags:
   - Hebrews
   - Judaism
   - Lachish
-  - manuscript
   - Mary Magdalene
   - New Testament
   - Numbers
@@ -48,10 +47,10 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: whos-that
-    label: "Who's That?"
+    label: Who's That?
     startSeconds: 166
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 1640
 draft: false
 ---

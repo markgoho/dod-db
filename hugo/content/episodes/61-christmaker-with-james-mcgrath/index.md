@@ -1,6 +1,6 @@
 ---
 title: Christmaker!
-date: 2024-06-03T00:00:00Z
+date: 2024-06-03T00:00:00.000Z
 episodeNumber: 61
 videoId: DnsTYWOw5r0
 aliases:
@@ -29,7 +29,6 @@ tags:
   - Gospel of Thomas
   - Islam
   - Kings
-  - manuscript
   - Samson
   - Adam
   - apocalypse

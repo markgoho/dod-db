@@ -1,6 +1,6 @@
 ---
 title: Connecting with Source
-date: 2023-09-04T00:00:00Z
+date: 2023-09-04T00:00:00.000Z
 episodeNumber: 22
 videoId: B1uE2cv8fP0
 aliases:
@@ -33,7 +33,6 @@ tags:
   - Israel
   - King James Version
   - Latin Vulgate
-  - manuscript
   - Mesopotamian
   - Noah
   - Psalm

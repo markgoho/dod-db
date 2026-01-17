@@ -408,7 +408,7 @@ function renderVocabulary(category: string): void {
           `
               : ''
           }
-          <div style="display: flex; align-items: center; gap: 8px; margin-top: 8px;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-top: 8px; flex-wrap: wrap;">
             <span class="vocab-category-badge ${term.category}">
               ${formatCategoryName(term.category)}
             </span>
@@ -420,6 +420,12 @@ function renderVocabulary(category: string): void {
                 onclick="reprocessSingleTag('${term.canonical.replaceAll('\'', String.raw`\'`)}')"
                 title="Reprocess all episodes for this tag${term.llmVerify ? ' (uses LLM verification)' : ''}">
                 🔄 Reprocess
+              </button>
+              <button
+                class="vocab-delete-btn"
+                onclick="deleteTag('${term.canonical.replaceAll('\'', String.raw`\'`)}')"
+                title="Delete this tag from vocabulary">
+                🗑️ Delete
               </button>
             `
                 : ''
@@ -717,6 +723,59 @@ async function reprocessSingleTag(canonical: string): Promise<void> {
       },
     },
   });
+}
+
+// Delete a tag from the vocabulary
+async function deleteTag(canonical: string): Promise<void> {
+  if (
+    !confirm(
+      `Delete tag "${canonical}" from vocabulary?\n\nThis will:\n• Remove it from the vocabulary file\n• Remove it from all episodes\n\nThis action cannot be undone.`,
+    )
+  ) {
+    return;
+  }
+
+  try {
+    const response = await fetch(
+      `${API_BASE_URL}/api/tag-vocabulary/vocabulary/delete/${encodeURIComponent(canonical)}`,
+      {
+        method: 'DELETE',
+      },
+    );
+
+    if (!response.ok) {
+      const error = await response.json();
+      throw new Error(error.error || 'Failed to delete tag');
+    }
+
+    // Show success message
+    const statusContainer = document.querySelector('#migration-status');
+    const statusBadge = document.querySelector('#migration-status-badge');
+    const logsContainer = document.querySelector('#migration-logs');
+
+    if (statusContainer && statusBadge && logsContainer) {
+      statusContainer.classList.add('show');
+      statusBadge.textContent = '✓ Tag Deleted';
+      statusBadge.className = 'status-badge completed';
+      logsContainer.textContent = `Successfully deleted "${canonical}" from vocabulary.`;
+
+      // Auto-hide after 3 seconds
+      setTimeout(() => {
+        statusContainer.classList.remove('show');
+      }, 3000);
+    }
+
+    // Reload all data
+    setTimeout(() => {
+      loadEpisodes();
+      loadVocabulary();
+      loadAnalytics();
+    }, 500);
+  } catch (error) {
+    alert(
+      `Error deleting tag: ${error instanceof Error ? error.message : 'Unknown error'}`,
+    );
+  }
 }
 
 // ============================================
@@ -1032,6 +1091,7 @@ declare global {
     toggleEpisodeDetail: typeof toggleEpisodeDetail;
     filterVocabulary: typeof filterVocabulary;
     reprocessSingleTag: typeof reprocessSingleTag;
+    deleteTag: typeof deleteTag;
     filterEpisodes: typeof filterEpisodes;
     startMigration: typeof startMigration;
     toggleDescription: typeof toggleDescription;
@@ -1047,6 +1107,7 @@ declare global {
 (globalThis as unknown as Window).toggleEpisodeDetail = toggleEpisodeDetail;
 (globalThis as unknown as Window).filterVocabulary = filterVocabulary;
 (globalThis as unknown as Window).reprocessSingleTag = reprocessSingleTag;
+(globalThis as unknown as Window).deleteTag = deleteTag;
 (globalThis as unknown as Window).filterEpisodes = filterEpisodes;
 (globalThis as unknown as Window).startMigration = startMigration;
 (globalThis as unknown as Window).toggleDescription = toggleDescription;

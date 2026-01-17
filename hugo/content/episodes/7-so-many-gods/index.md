@@ -1,6 +1,6 @@
 ---
 title: So Many Gods!
-date: 2023-05-22T00:00:00Z
+date: 2023-05-22T00:00:00.000Z
 episodeNumber: 7
 videoId: 35Jz3A7tBgU
 aliases:
@@ -18,7 +18,6 @@ tags:
   - El
   - Judah
   - Baal
-  - manuscript
   - angel
   - Hezekiah
   - Joram
@@ -65,10 +64,10 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 109.28
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 2089
 draft: false
 ---

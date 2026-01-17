@@ -1,6 +1,6 @@
 ---
 title: Apostlepalooza!
-date: 2023-07-24T00:00:00Z
+date: 2023-07-24T00:00:00.000Z
 episodeNumber: 16
 videoId: V7PSCjcLFco
 aliases:
@@ -14,7 +14,6 @@ tags:
   - Paul
   - Joshua
   - New Testament
-  - manuscript
   - Gospel of Mark
   - Gospel of Matthew
   - Luke
@@ -46,10 +45,10 @@ segments:
   - Women in the Bible
 segmentData:
   - type: mcclellan-911
-    label: "McClellan 911"
+    label: McClellan 911
     startSeconds: 122
   - type: women-in-the-bible
-    label: "Women in the Bible"
+    label: Women in the Bible
     startSeconds: 2449
 draft: false
 ---

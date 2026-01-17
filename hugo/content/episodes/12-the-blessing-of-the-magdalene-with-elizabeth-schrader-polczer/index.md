@@ -1,6 +1,6 @@
 ---
 title: The Blessing of the Magdalene
-date: 2023-06-26T00:00:00Z
+date: 2023-06-26T00:00:00.000Z
 episodeNumber: 12
 videoId: zhX-8K8WtMs
 aliases:
@@ -9,7 +9,6 @@ tags:
   - Mary Magdalene
   - Jesus
   - Gospel of John
-  - manuscript
   - Luke
   - Peter
   - Bethany

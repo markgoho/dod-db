@@ -1,6 +1,6 @@
 ---
 title: Will the Best Bible Please Stand Up?
-date: 2023-06-19T00:00:00Z
+date: 2023-06-19T00:00:00.000Z
 episodeNumber: 11
 videoId: DD7Kkzh2kzg
 aliases:
@@ -8,7 +8,6 @@ aliases:
 tags:
   - Hebrew Bible
   - New Testament
-  - manuscript
   - Septuagint
   - Christianity
   - King James Version

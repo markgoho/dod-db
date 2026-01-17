@@ -1,12 +1,11 @@
 ---
 title: The Case of the Missing Verses
-date: 2023-07-31T00:00:00Z
+date: 2023-07-31T00:00:00.000Z
 episodeNumber: 17
 videoId: naI65ELNhRw
 aliases:
   - /episodes/17/
 tags:
-  - manuscript
   - King James Version
   - New Testament
   - James
@@ -47,10 +46,10 @@ segments:
   - Know Your Bible
 segmentData:
   - type: thats-history
-    label: "That's History"
+    label: That's History
     startSeconds: 82
   - type: know-your-bible
-    label: "Know Your Bible"
+    label: Know Your Bible
     startSeconds: 2145
 draft: false
 ---

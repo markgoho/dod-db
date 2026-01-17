@@ -1,6 +1,6 @@
 ---
 title: A Beatitude Adjustment for Jordan Peterson
-date: 2023-09-25T00:00:00Z
+date: 2023-09-25T00:00:00.000Z
 episodeNumber: 25
 videoId: Xtm9DX_0Rx0
 aliases:
@@ -32,17 +32,16 @@ tags:
   - Gospel of Matthew
   - James
   - Latin Vulgate
-  - manuscript
   - Moses
 segments:
   - Chapter and Verse
   - All Right, Let's See It
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 81.81
   - type: all-right-lets-see-it
-    label: "All Right, Let's See It"
+    label: All Right, Let's See It
     startSeconds: 3020.18
 draft: false
 ---

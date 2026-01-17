@@ -1,6 +1,6 @@
 ---
 title: Christian Slavery
-date: 2024-03-11T00:00:00Z
+date: 2024-03-11T00:00:00.000Z
 episodeNumber: 49
 videoId: GXyJILdNxUE
 aliases:
@@ -15,7 +15,6 @@ tags:
   - Romans
   - Peter
   - Tertius
-  - manuscript
   - Luke
   - theology
   - Candida Moss

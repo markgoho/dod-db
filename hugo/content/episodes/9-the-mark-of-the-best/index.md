@@ -1,6 +1,6 @@
 ---
 title: The Mark of the Best
-date: 2023-06-05T00:00:00Z
+date: 2023-06-05T00:00:00.000Z
 episodeNumber: 9
 videoId: Bs02oP4kQbM
 aliases:
@@ -12,7 +12,6 @@ tags:
   - Christianity
   - Jesus
   - monotheism
-  - manuscript
   - Gospel of Mark
   - New Testament
   - Numbers
@@ -39,10 +38,10 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: conspiracy-watch
-    label: "Conspiracy Watch"
+    label: Conspiracy Watch
     startSeconds: 191
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 2120
 draft: false
 ---

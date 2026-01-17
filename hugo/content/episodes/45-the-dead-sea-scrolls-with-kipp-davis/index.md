@@ -1,12 +1,11 @@
 ---
 title: The Dead Sea Scrolls
-date: 2024-02-12T00:00:00Z
+date: 2024-02-12T00:00:00.000Z
 episodeNumber: 45
 videoId: iO6mdYWPOyo
 aliases:
   - /episodes/45/
 tags:
-  - manuscript
   - Dead Sea Scrolls
   - Deuteronomy
   - Book of Daniel

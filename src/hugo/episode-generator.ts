@@ -4,6 +4,7 @@
  */
 
 import * as path from 'node:path';
+import * as yaml from 'js-yaml';
 import type { ProcessedVideo } from '../storage/processed-videos.js';
 import { SEGMENT_LABELS, type SegmentType } from '../config/segment-patterns.js';
 
@@ -265,57 +266,45 @@ export function transformToShortcodes(content: string): string {
 }
 
 /**
- * Generate YAML frontmatter for an episode.
+ * Generate YAML frontmatter for an episode using js-yaml.
  */
 export function generateFrontmatter(video: ProcessedVideo, cleanTitle: string): string {
 	const tags = video.tags?.map((t) => t.tag) ?? [];
 	const guests = getGuestSpeakers(video.speakers);
 	const { segments, segmentData } = formatSegmentsForFrontmatter(video.segments);
 
-	const lines: string[] = [
-		'---',
-		// Title - quote if it contains special characters
-		cleanTitle.includes(':') || cleanTitle.includes('#')
-			? `title: "${cleanTitle.replaceAll('"', String.raw`\"`)}"`
-			: `title: ${cleanTitle}`,
-		`date: ${video.publishedAt}`,
-		`episodeNumber: ${video.episodeNumber}`,
-		`videoId: ${video.videoId}`,
-		// Alias for redirect from short URL (/episodes/N/) to canonical slug URL
-		'aliases:',
-		`  - /episodes/${video.episodeNumber}/`,
-	];
+	// Build frontmatter object
+	const frontmatter: Record<string, unknown> = {
+		title: cleanTitle,
+		date: video.publishedAt,
+		episodeNumber: video.episodeNumber,
+		videoId: video.videoId,
+		aliases: [`/episodes/${video.episodeNumber}/`],
+	};
 
-	// Tags as YAML array
+	// Add optional fields only if they have values
 	if (tags.length > 0) {
-		lines.push('tags:', ...tags.map((tag) => `  - ${tag}`));
+		frontmatter.tags = tags;
 	}
 
-	// Guests as YAML array (non-host speakers)
 	if (guests.length > 0) {
-		lines.push('guests:', ...guests.map((guest) => `  - ${guest}`));
+		frontmatter.guests = guests;
 	}
 
-	// Segments taxonomy (unique segment names for /segments/ pages)
 	if (segments.length > 0) {
-		lines.push('segments:', ...segments.map((segment) => `  - ${segment}`));
+		frontmatter.segments = segments;
 	}
 
-	// Segment data (all instances with timestamps for clickable UI)
 	if (segmentData.length > 0) {
-		lines.push('segmentData:');
-		for (const data of segmentData) {
-			lines.push(
-				`  - type: ${data.type}`,
-				`    label: "${data.label}"`,
-				`    startSeconds: ${data.startSeconds}`,
-			);
-		}
+		frontmatter.segmentData = segmentData;
 	}
 
-	lines.push('draft: false', '---');
+	frontmatter.draft = false;
 
-	return lines.join('\n');
+	// Use js-yaml to serialize
+	const frontmatterYaml = yaml.dump(frontmatter);
+
+	return `---\n${frontmatterYaml}---`;
 }
 
 /**

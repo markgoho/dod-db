@@ -1,6 +1,6 @@
 ---
 title: The Devil Made Us Do It
-date: 2023-08-07T00:00:00Z
+date: 2023-08-07T00:00:00.000Z
 episodeNumber: 18
 videoId: 4PCkaPZMjTc
 aliases:
@@ -43,7 +43,6 @@ tags:
   - Joshua
   - Judah
   - Latin Vulgate
-  - manuscript
   - Nephilim
   - theology
   - Ugarit
@@ -67,10 +66,10 @@ segments:
   - Could it be Satan?
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 132
   - type: could-it-be-satan
-    label: "Could it be Satan?"
+    label: Could it be Satan?
     startSeconds: 1592
 draft: false
 ---

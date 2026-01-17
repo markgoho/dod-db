@@ -1,6 +1,6 @@
 ---
 title: God Breathed?
-date: 2023-05-15T00:00:00Z
+date: 2023-05-15T00:00:00.000Z
 episodeNumber: 6
 videoId: _zou11pMRag
 aliases:
@@ -26,7 +26,6 @@ tags:
   - Book of Isaiah
   - Genesis
   - Isaiah
-  - manuscript
   - 1 Samuel
   - Council of Jerusalem
   - Gospel of John
@@ -58,10 +57,10 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 177.1
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 1770
 draft: false
 ---
