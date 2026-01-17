@@ -3,18 +3,37 @@
  * Useful for targeted extraction when adding a new book.
  */
 
+import type { BookDefinition } from "../config/scripture-books.js";
 import { scriptureBooks } from "../config/scripture-books.js";
+import { buildBookRegex } from "./build-book-regex.js";
 import type { EpisodeScripture } from "./extract-scripture.js";
-import {
-  buildBookRegex,
-  findSpeakerLabelRanges,
-  isInSpeakerLabel,
-  isOverlapping,
-  type MatchInfo,
-  normalizeReference,
-} from "./extract-scripture-helpers.js";
+import { findSpeakerLabelRanges } from "./find-speaker-label-ranges.js";
+import { isInSpeakerLabel } from "./is-in-speaker-label.js";
+import { normalizeReference } from "./normalize-reference.js";
 import type { EpisodeContext } from "./verify-tag-matches.js";
 import { verifyScriptureMatches } from "./verify-scripture-matches.js";
+
+interface MatchInfo {
+  book: BookDefinition;
+  reference: string;
+  start: number;
+  end: number;
+  rawText: string;
+}
+
+/**
+ * Check if a range overlaps with any already-matched range.
+ * (Private helper - only used by this function)
+ */
+function isOverlapping(
+  start: number,
+  end: number,
+  matchedRanges: Array<{ start: number; end: number }>,
+): boolean {
+  return matchedRanges.some(
+    range => !(end <= range.start || start >= range.end),
+  );
+}
 
 export async function extractSingleBookScripture(
   transcript: string,
@@ -39,10 +58,7 @@ export async function extractSingleBookScripture(
 
   const { enableLlmVerification = false, episodeContext } = options;
 
-  // Find speaker label regions to exclude
   const speakerLabelRanges = findSpeakerLabelRanges(transcript);
-
-  // Track matched positions
   const matchedRanges: Array<{ start: number; end: number }> = [];
   const matches: MatchInfo[] = [];
 
@@ -53,17 +69,14 @@ export async function extractSingleBookScripture(
     const start = match.index;
     const end = start + match[0].length;
 
-    // Skip if overlaps with already-matched region
     if (isOverlapping(start, end, matchedRanges)) {
       continue;
     }
 
-    // Skip if in speaker label
     if (isInSpeakerLabel(start, end, speakerLabelRanges)) {
       continue;
     }
 
-    // Extract chapter and verse info
     const chapter = match[1];
     const verse = match[2];
     const endVerse = match[3];
@@ -87,7 +100,6 @@ export async function extractSingleBookScripture(
     return undefined;
   }
 
-  // Handle LLM verification if needed
   let verifiedMatches = matches;
   const needsVerification =
     enableLlmVerification && "llmVerify" in book && book.llmVerify;
@@ -109,7 +121,6 @@ export async function extractSingleBookScripture(
     }
   }
 
-  // Get unique references
   const uniqueReferences = [
     ...new Set(verifiedMatches.map(m => m.reference)),
   ].sort();

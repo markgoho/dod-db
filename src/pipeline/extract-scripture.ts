@@ -3,15 +3,8 @@
  * Detects Bible references and normalizes them to canonical format.
  */
 
+import type { BookDefinition } from "../config/scripture-books.js";
 import { scriptureBooks } from "../config/scripture-books.js";
-import {
-  buildBookRegex,
-  findSpeakerLabelRanges,
-  isInSpeakerLabel,
-  type MatchInfo,
-  normalizeReference,
-  resolveOverlaps,
-} from "./extract-scripture-helpers.js";
 import type { EpisodeContext } from "./verify-tag-matches.js";
 import { verifyScriptureMatches } from "./verify-scripture-matches.js";
 
@@ -25,6 +18,133 @@ export interface EpisodeScripture {
   references: string[];
   /** Total mention count across all references */
   mentions: number;
+}
+
+interface MatchInfo {
+  book: BookDefinition;
+  reference: string;
+  start: number;
+  end: number;
+  rawText: string;
+}
+
+/**
+ * Escape special regex characters in a string.
+ */
+function escapeRegex(string_: string): string {
+  return string_.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
+}
+
+/**
+ * Build all possible name patterns for a book (canonical, abbreviations, variants).
+ */
+function buildBookNamePatterns(book: BookDefinition): string[] {
+  const patterns: string[] = [escapeRegex(book.canonical)];
+
+  for (const abbreviation of book.abbreviations) {
+    patterns.push(`${escapeRegex(abbreviation)}${String.raw`\.?`}`);
+  }
+
+  for (const variant of book.variants) {
+    patterns.push(escapeRegex(variant));
+  }
+
+  return patterns;
+}
+
+/**
+ * Build regex pattern for detecting scripture references to a specific book.
+ */
+function buildBookRegex(book: BookDefinition): RegExp {
+  const namePatterns = buildBookNamePatterns(book);
+  const namesGroup = `(?:${namePatterns.join("|")})`;
+  const pattern = String.raw`\b${namesGroup}\s+(\d{1,3})(?::(\d{1,3})(?:-(\d{1,3}))?)?\b`;
+  return new RegExp(pattern, "gi");
+}
+
+/**
+ * Normalize a scripture reference to canonical format.
+ */
+function normalizeReference(
+  book: BookDefinition,
+  chapter: string,
+  verse?: string,
+  endVerse?: string,
+): string {
+  let reference = `${book.canonical} ${chapter}`;
+
+  if (verse !== undefined) {
+    reference += `:${verse}`;
+
+    if (endVerse !== undefined) {
+      reference += `-${endVerse}`;
+    }
+  }
+
+  return reference;
+}
+
+/**
+ * Find all speaker label regions to exclude from matching.
+ */
+function findSpeakerLabelRanges(
+  transcript: string,
+): Array<{ start: number; end: number }> {
+  const speakerLabelRanges: Array<{ start: number; end: number }> = [];
+  const speakerLabelPattern = /\[\d{2}:\d{2}:\d{2}(?:\.\d{3})?\]\s+([^:]+):/g;
+
+  let speakerMatch;
+  while ((speakerMatch = speakerLabelPattern.exec(transcript)) !== null) {
+    const fullMatch = speakerMatch[0];
+    const speakerName = speakerMatch[1];
+    if (!speakerName) continue;
+
+    const speakerNameStart =
+      speakerMatch.index + fullMatch.indexOf(speakerName);
+    const speakerNameEnd = speakerNameStart + speakerName.length;
+    speakerLabelRanges.push({ start: speakerNameStart, end: speakerNameEnd });
+  }
+
+  return speakerLabelRanges;
+}
+
+/**
+ * Check if a range falls within a speaker label.
+ */
+function isInSpeakerLabel(
+  start: number,
+  end: number,
+  speakerLabelRanges: Array<{ start: number; end: number }>,
+): boolean {
+  return speakerLabelRanges.some(
+    range => start >= range.start && end <= range.end,
+  );
+}
+
+/**
+ * Resolve overlapping matches by keeping the longest match at each position.
+ */
+function resolveOverlaps(matches: MatchInfo[]): MatchInfo[] {
+  if (matches.length === 0) return [];
+
+  const sorted = [...matches].sort((a, b) => {
+    if (a.start !== b.start) return a.start - b.start;
+    return (b.end - b.start) - (a.end - a.start);
+  });
+
+  const resolved: MatchInfo[] = [];
+  let lastEnd = -1;
+
+  for (const match of sorted) {
+    if (match.start < lastEnd) {
+      continue;
+    }
+
+    resolved.push(match);
+    lastEnd = match.end;
+  }
+
+  return resolved;
 }
 
 /**
@@ -45,13 +165,9 @@ export async function extractScripture(
 ): Promise<EpisodeScripture[]> {
   const { enableLlmVerification = false, episodeContext } = options;
 
-  // Find speaker label regions to exclude
   const speakerLabelRanges = findSpeakerLabelRanges(transcript);
-
-  // Collect ALL matches from ALL books first
   const allMatches: MatchInfo[] = [];
 
-  // Process each book and collect all potential matches
   for (const book of scriptureBooks) {
     const regex = buildBookRegex(book);
     let match;
@@ -60,12 +176,10 @@ export async function extractScripture(
       const start = match.index;
       const end = start + match[0].length;
 
-      // Skip if in speaker label
       if (isInSpeakerLabel(start, end, speakerLabelRanges)) {
         continue;
       }
 
-      // Extract chapter and verse info
       const chapter = match[1];
       const verse = match[2];
       const endVerse = match[3];
@@ -84,16 +198,10 @@ export async function extractScripture(
     }
   }
 
-  // Resolve overlapping matches (keep longest match at each position)
   const resolvedMatches = resolveOverlaps(allMatches);
-
-  // Track matches by book
   const bookMatches = new Map<string, MatchInfo[]>();
-
-  // Track matches needing LLM verification
   const matchesNeedingVerification = new Map<string, MatchInfo[]>();
 
-  // Categorize resolved matches
   for (const matchInfo of resolvedMatches) {
     const needsVerification =
       enableLlmVerification &&
@@ -113,7 +221,6 @@ export async function extractScripture(
     }
   }
 
-  // Verify matches for books that need LLM verification
   if (enableLlmVerification && matchesNeedingVerification.size > 0) {
     console.log(
       `  Scripture LLM verification needed for ${matchesNeedingVerification.size} book(s)`,
@@ -136,7 +243,6 @@ export async function extractScripture(
         episodeContext,
       );
 
-      // Add only verified matches
       if (verifiedIndices.length > 0) {
         const verifiedMatches = verifiedIndices
           .map(index => matches[index])
@@ -152,18 +258,15 @@ export async function extractScripture(
     }
   }
 
-  // Convert to EpisodeScripture array
   const results: EpisodeScripture[] = [];
 
   for (const [canonical, matches] of bookMatches) {
-    // Get unique references
     const uniqueReferences = [...new Set(matches.map(m => m.reference))].sort(
       (a, b) => {
-        // Sort by chapter then verse
         const parseReference = (
           reference: string,
         ): { chapter: number; verse: number } => {
-          const parts = reference.split(" ").slice(1).join(" "); // Remove book name
+          const parts = reference.split(" ").slice(1).join(" ");
           const [chapterPart] = parts.split(":");
           const chapter = Number.parseInt(chapterPart ?? "0", 10);
           const versePart = parts.includes(":") ? parts.split(":")[1] : "0";
@@ -191,7 +294,6 @@ export async function extractScripture(
     });
   }
 
-  // Sort by mention count (descending)
   results.sort((a, b) => b.mentions - a.mentions);
 
   return results;
