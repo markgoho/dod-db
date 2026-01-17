@@ -13,6 +13,7 @@ tags:
   - Julius Wellhausen
   - YHWH
   - Jerusalem
+  - Moab
   - Assyria
   - Egypt
   - Joshua

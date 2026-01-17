@@ -15,6 +15,7 @@ tags:
   - Judaism
   - Hezekiah
   - Israel
+  - King Sennacherib
   - Cyrus the Great
   - Judah
   - Bethany

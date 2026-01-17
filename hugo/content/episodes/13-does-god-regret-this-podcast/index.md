@@ -9,6 +9,7 @@ tags:
   - Jerusalem
   - Israel
   - Lachish
+  - King Sennacherib
   - Hezekiah
   - YHWH
   - Dead Sea
@@ -33,6 +34,7 @@ tags:
   - James
   - Joshua
   - Ken Ham
+  - Moab
   - monotheism
   - Samuel
 segments:

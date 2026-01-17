@@ -24,6 +24,7 @@ tags:
   - Jerusalem
   - Judah
   - King James Version
+  - Moab
   - Sarah
   - Ten Commandments
   - Textus Receptus

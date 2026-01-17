@@ -22,6 +22,7 @@ tags:
   - Cherubim
   - divine council
   - Isaiah
+  - Moab
   - angel
   - Asherah
   - Daniel

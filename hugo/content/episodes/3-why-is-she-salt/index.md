@@ -28,6 +28,7 @@ tags:
   - Hagar
   - Hebrews
   - King David
+  - King Sennacherib
   - Mount Ebal
   - Mount Gerizim
   - Noah

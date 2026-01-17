@@ -38,6 +38,7 @@ tags:
   - King James Version
   - Latin Vulgate
   - Babylon
+  - Bel and the Dragon
   - Clement of Rome
   - Codex Sinaiticus
   - Daniel

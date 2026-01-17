@@ -9,6 +9,7 @@ tags:
   - YHWH
   - Israel
   - divine council
+  - Moab
   - Deuteronomy
   - Asherah
   - El
@@ -17,6 +18,7 @@ tags:
   - angel
   - Hezekiah
   - Joram
+  - King Sennacherib
   - Samaria
   - Edom
   - Masoretic Text

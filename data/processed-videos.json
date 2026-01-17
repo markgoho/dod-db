@@ -72,6 +72,10 @@
         "mentions": 3
       },
       {
+        "tag": "Moab",
+        "mentions": 3
+      },
+      {
         "tag": "angel",
         "mentions": 2
       },
@@ -429,6 +433,10 @@
       },
       {
         "tag": "King David",
+        "mentions": 2
+      },
+      {
+        "tag": "King Sennacherib",
         "mentions": 2
       },
       {
@@ -1004,6 +1012,10 @@
         "mentions": 43
       },
       {
+        "tag": "Moab",
+        "mentions": 33
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 16
       },
@@ -1034,6 +1046,10 @@
       {
         "tag": "Joram",
         "mentions": 8
+      },
+      {
+        "tag": "King Sennacherib",
+        "mentions": 6
       },
       {
         "tag": "Samaria",
@@ -1890,6 +1906,10 @@
         "mentions": 12
       },
       {
+        "tag": "King Sennacherib",
+        "mentions": 9
+      },
+      {
         "tag": "Hezekiah",
         "mentions": 8
       },
@@ -1983,6 +2003,10 @@
       },
       {
         "tag": "Ken Ham",
+        "mentions": 1
+      },
+      {
+        "tag": "Moab",
         "mentions": 1
       },
       {
@@ -2694,6 +2718,10 @@
         "mentions": 6
       },
       {
+        "tag": "Moab",
+        "mentions": 6
+      },
+      {
         "tag": "Moses",
         "mentions": 6
       },
@@ -3149,6 +3177,10 @@
       },
       {
         "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Bel and the Dragon",
         "mentions": 1
       },
       {
@@ -4357,6 +4389,10 @@
         "mentions": 8
       },
       {
+        "tag": "King Sennacherib",
+        "mentions": 7
+      },
+      {
         "tag": "Jerusalem",
         "mentions": 4
       },
@@ -5323,6 +5359,10 @@
         "mentions": 5
       },
       {
+        "tag": "Moab",
+        "mentions": 5
+      },
+      {
         "tag": "Assyria",
         "mentions": 3
       },
@@ -6034,6 +6074,10 @@
         "mentions": 1
       },
       {
+        "tag": "Moab",
+        "mentions": 1
+      },
+      {
         "tag": "Sarah",
         "mentions": 1
       },
@@ -6421,6 +6465,10 @@
       },
       {
         "tag": "Israel",
+        "mentions": 6
+      },
+      {
+        "tag": "King Sennacherib",
         "mentions": 6
       },
       {
@@ -6969,6 +7017,10 @@
       },
       {
         "tag": "Megiddo",
+        "mentions": 2
+      },
+      {
+        "tag": "Moab",
         "mentions": 2
       },
       {
@@ -10284,6 +10336,10 @@
         "mentions": 40
       },
       {
+        "tag": "Bel and the Dragon",
+        "mentions": 13
+      },
+      {
         "tag": "Cyrus the Great",
         "mentions": 10
       },
@@ -10580,6 +10636,986 @@
         "endTimestamp": "[01:00:25.000]",
         "confidence": "verified",
         "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "600Z95nVTxs",
+    "title": "Episode 72 (August 19, 2024), \"The Truth About Ruth\"",
+    "publishedAt": "2024-08-19T00:00:00Z",
+    "processedAt": "2026-01-17T05:01:17.094Z",
+    "transcriptPath": "data/transcripts/2024-08-19-episode-72-august-19-2024-the-truth-about-ruth.txt",
+    "episodeNumber": 72,
+    "tags": [
+      {
+        "tag": "King Sennacherib",
+        "mentions": 44
+      },
+      {
+        "tag": "Hezekiah",
+        "mentions": 28
+      },
+      {
+        "tag": "Ruth",
+        "mentions": 26
+      },
+      {
+        "tag": "Naomi",
+        "mentions": 24
+      },
+      {
+        "tag": "Boaz",
+        "mentions": 18
+      },
+      {
+        "tag": "Judah",
+        "mentions": 17
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 12
+      },
+      {
+        "tag": "Lachish",
+        "mentions": 12
+      },
+      {
+        "tag": "Moab",
+        "mentions": 12
+      },
+      {
+        "tag": "angel",
+        "mentions": 7
+      },
+      {
+        "tag": "Tamar",
+        "mentions": 7
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 7
+      },
+      {
+        "tag": "Assyria",
+        "mentions": 6
+      },
+      {
+        "tag": "Bethlehem",
+        "mentions": 6
+      },
+      {
+        "tag": "Israel",
+        "mentions": 4
+      },
+      {
+        "tag": "Nineveh",
+        "mentions": 3
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "King Josiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Mesopotamian",
+        "mentions": 2
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 1
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Jonah",
+        "mentions": 1
+      },
+      {
+        "tag": "King David",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:56.670]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:01:56.670]",
+        "endTimestamp": "[00:39:17.242]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "whos-that",
+        "startTimestamp": "[00:39:17.242]",
+        "endTimestamp": "[00:59:41.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:59:41.000]",
+        "endTimestamp": "[01:00:32.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
+    ]
+  },
+  {
+    "videoId": "MhGc3c7LlP0",
+    "title": "Episode 73 (August 26, 2024), \"Bible Magic!\"",
+    "publishedAt": "2024-08-26T00:00:00Z",
+    "processedAt": "2026-01-17T05:13:31.423Z",
+    "transcriptPath": "data/transcripts/2024-08-26-episode-73-august-26-2024-bible-magic.txt",
+    "episodeNumber": 73,
+    "tags": [
+      {
+        "tag": "YHWH",
+        "mentions": 15
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 6
+      },
+      {
+        "tag": "King Saul",
+        "mentions": 6
+      },
+      {
+        "tag": "Israel",
+        "mentions": 5
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 5
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 3
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 3
+      },
+      {
+        "tag": "Josephus",
+        "mentions": 3
+      },
+      {
+        "tag": "Lilith",
+        "mentions": 3
+      },
+      {
+        "tag": "angel",
+        "mentions": 2
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 2
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 2
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 2
+      },
+      {
+        "tag": "Endor",
+        "mentions": 2
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Torah",
+        "mentions": 2
+      },
+      {
+        "tag": "Carthage",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "etiology",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Jonathan",
+        "mentions": 1
+      },
+      {
+        "tag": "Judas Iscariot",
+        "mentions": 1
+      },
+      {
+        "tag": "Mesopotamian",
+        "mentions": 1
+      },
+      {
+        "tag": "Moab",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 1
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:41.006]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "magical-thinking",
+        "startTimestamp": "[00:02:41.006]",
+        "endTimestamp": "[00:56:04.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:56:04.000]",
+        "endTimestamp": "[00:57:12.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "7v-E6j8Yf5U",
+    "title": "Episode 74: The Fabric Conspiracies",
+    "publishedAt": "2024-09-02T00:00:00Z",
+    "processedAt": "2026-01-17T05:07:50.199Z",
+    "transcriptPath": "data/transcripts/2024-09-02-episode-74-the-fabric-conspiracies.txt",
+    "episodeNumber": 74,
+    "tags": [
+      {
+        "tag": "Ishmael",
+        "mentions": 30
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 25
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 12
+      },
+      {
+        "tag": "Judah",
+        "mentions": 5
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 4
+      },
+      {
+        "tag": "Torah",
+        "mentions": 3
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Judeans",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Josephus",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:49.037]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "conspiracy-watch",
+        "startTimestamp": "[00:01:49.037]",
+        "endTimestamp": "[00:28:57.039]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:28:57.039]",
+        "endTimestamp": "[00:48:36.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:48:36.000]",
+        "endTimestamp": "[00:50:46.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "OLyMIgX2ueE",
+    "title": "Episode 75 (September 9, 2024), \"Shrouded in Mystery\"",
+    "publishedAt": "2024-09-09T00:00:00Z",
+    "processedAt": "2026-01-17T05:10:53.589Z",
+    "transcriptPath": "data/transcripts/2024-09-09-episode-75-september-9-2024-shrouded-in-mystery.txt",
+    "episodeNumber": 75,
+    "tags": [
+      {
+        "tag": "YHWH",
+        "mentions": 15
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 14
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 12
+      },
+      {
+        "tag": "Moses",
+        "mentions": 9
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 8
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 3
+      },
+      {
+        "tag": "Passover",
+        "mentions": 3
+      },
+      {
+        "tag": "Ten Commandments",
+        "mentions": 2
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 1
+      },
+      {
+        "tag": "Canaan",
+        "mentions": 1
+      },
+      {
+        "tag": "David Burnett",
+        "mentions": 1
+      },
+      {
+        "tag": "Elephantine",
+        "mentions": 1
+      },
+      {
+        "tag": "Israel",
+        "mentions": 1
+      },
+      {
+        "tag": "Masada",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:43.986]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:03:43.986]",
+        "endTimestamp": "[00:37:04.442]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "artifacts-and-fiction",
+        "startTimestamp": "[00:37:04.442]",
+        "endTimestamp": "[00:58:28.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:58:28.000]",
+        "endTimestamp": "[00:59:19.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "KTw6aVIhMOk",
+    "title": "Episode 76 S(September 16, 2024), \"Pay Your Tithing!\"",
+    "publishedAt": "2024-09-16T00:00:00Z",
+    "processedAt": "2026-01-17T05:13:10.479Z",
+    "transcriptPath": "data/transcripts/2024-09-16-episode-76-sseptember-16-2024-pay-your-tithing.txt",
+    "episodeNumber": 76,
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 19
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 9
+      },
+      {
+        "tag": "Peter",
+        "mentions": 7
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 6
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "Judah",
+        "mentions": 3
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
+      },
+      {
+        "tag": "Barnabas",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Mesopotamian",
+        "mentions": 1
+      },
+      {
+        "tag": "Persia",
+        "mentions": 1
+      },
+      {
+        "tag": "Romans",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:52.202]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:03:52.202]",
+        "endTimestamp": "[00:29:21.897]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:29:21.897]",
+        "endTimestamp": "[00:54:44.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:54:44.000]",
+        "endTimestamp": "[00:56:04.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "4u2tKZlUJUc",
+    "title": "Episode 77 (September 23, 2024), \"What is an Atheist?\"",
+    "publishedAt": "2024-09-23T00:00:00Z",
+    "processedAt": "2026-01-17T05:17:04.441Z",
+    "transcriptPath": "data/transcripts/2024-09-23-episode-77-september-23-2024-what-is-an-atheist.txt",
+    "episodeNumber": 77,
+    "tags": [
+      {
+        "tag": "Islam",
+        "mentions": 7
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 2
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "Gnostic",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Monotheism",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:45.075]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:01:45.075]",
+        "endTimestamp": "[00:39:40.849]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:39:40.849]",
+        "endTimestamp": "[01:03:56.820]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
+    ]
+  },
+  {
+    "videoId": "Jz4YpDhPHEg",
+    "title": "Episode 78 (September 30, 2024), \"The Biblical View of Immigrants\"",
+    "publishedAt": "2024-09-30T00:00:00Z",
+    "processedAt": "2026-01-17T05:19:46.520Z",
+    "transcriptPath": "data/transcripts/2024-09-30-episode-78-september-30-2024-the-biblical-view-of-immigrants.txt",
+    "episodeNumber": 78,
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 13
+      },
+      {
+        "tag": "Noah",
+        "mentions": 3
+      },
+      {
+        "tag": "Ten Commandments",
+        "mentions": 3
+      },
+      {
+        "tag": "cognitive dissonance",
+        "mentions": 2
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Eve",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "King David",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:58.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:58.000]",
+        "endTimestamp": "[01:01:26.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Craig Mousin, also known as Reverend Craig Moose. And J.D."
+    ]
+  },
+  {
+    "videoId": "HYzWpM_y_cI",
+    "title": "Episode 79 (October 6, 2024), \"Who is a True Christian\" w/ David Congdon",
+    "publishedAt": "2024-10-07T00:00:00Z",
+    "processedAt": "2026-01-17T05:19:53.783Z",
+    "transcriptPath": "data/transcripts/2024-10-07-episode-79-october-6-2024-who-is-a-true-christian-w-david-congdon.txt",
+    "episodeNumber": 79,
+    "tags": [
+      {
+        "tag": "inerrancy",
+        "mentions": 8
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 4
+      },
+      {
+        "tag": "Christian Nationalism",
+        "mentions": 3
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:23.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:23.000]",
+        "endTimestamp": "[01:03:02.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "David Congdon",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "OoXQAfsPutQ",
+    "title": "Episode 80 (October 14, 2024), \"Omni Everything?\"",
+    "publishedAt": "2024-10-14T00:00:00Z",
+    "processedAt": "2026-01-17T05:21:28.210Z",
+    "transcriptPath": "data/transcripts/2024-10-14-episode-80-october-14-2024-omni-everything.txt",
+    "episodeNumber": 80,
+    "tags": [
+      {
+        "tag": "James",
+        "mentions": 15
+      },
+      {
+        "tag": "Edom",
+        "mentions": 10
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 10
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 9
+      },
+      {
+        "tag": "Adam",
+        "mentions": 8
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 7
+      },
+      {
+        "tag": "King David",
+        "mentions": 6
+      },
+      {
+        "tag": "Council of Jerusalem",
+        "mentions": 5
+      },
+      {
+        "tag": "Paul",
+        "mentions": 5
+      },
+      {
+        "tag": "Judah",
+        "mentions": 4
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 4
+      },
+      {
+        "tag": "Luke",
+        "mentions": 4
+      },
+      {
+        "tag": "Barnabas",
+        "mentions": 3
+      },
+      {
+        "tag": "Eve",
+        "mentions": 2
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 2
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 2
+      },
+      {
+        "tag": "Moab",
+        "mentions": 2
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "angel",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Garden of Eden",
+        "mentions": 1
+      },
+      {
+        "tag": "Helen Bond",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Michael",
+        "mentions": 1
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:47.786]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:01:47.786]",
+        "endTimestamp": "[00:33:28.101]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:33:28.101]",
+        "endTimestamp": "[00:51:41.041]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
       }
     ],
     "speakers": [

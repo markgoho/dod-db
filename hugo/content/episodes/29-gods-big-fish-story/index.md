@@ -12,6 +12,7 @@ tags:
   - Assyria
   - Eve
   - Adam
+  - King Sennacherib
   - Jerusalem
   - Tarshish
   - Balaam

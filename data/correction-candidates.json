@@ -7444,7 +7444,413 @@
       "firstSeen": "2026-01-17T03:03:41.501Z",
       "lastSeen": "2026-01-17T03:03:41.501Z",
       "status": "pending"
+    },
+    "Judea→Judah": {
+      "original": "Judea",
+      "corrected": "Judah",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "600Z95nVTxs"
+      ],
+      "examples": [
+        "\"desert than Judea.\"",
+        "\"in, in Judea, most likely\""
+      ],
+      "correctedExamples": [
+        "\"desert than Judah.\"",
+        "\"in, in Judah, most likely\""
+      ],
+      "timestamps": [
+        "00:04:11.240",
+        "00:04:19.320"
+      ],
+      "episodeIds": [
+        "600Z95nVTxs",
+        "600Z95nVTxs"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-17T05:01:43.189Z",
+      "lastSeen": "2026-01-17T05:01:43.189Z",
+      "status": "pending"
+    },
+    "levirate marriage→Levirate marriage": {
+      "original": "levirate marriage",
+      "corrected": "Levirate marriage",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "600Z95nVTxs"
+      ],
+      "examples": [
+        "\"It's a levirate marriage thing. Now,\"",
+        "\"technically, with levirate marriage, the children\""
+      ],
+      "correctedExamples": [
+        "\"It's a Levirate marriage thing. Now,\"",
+        "\"technically, with Levirate marriage, the children\""
+      ],
+      "timestamps": [
+        "00:27:10.580",
+        "00:27:10.580"
+      ],
+      "episodeIds": [
+        "600Z95nVTxs",
+        "600Z95nVTxs"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-17T05:01:43.189Z",
+      "lastSeen": "2026-01-17T05:01:43.189Z",
+      "status": "pending"
+    },
+    "boppity→boppidi": {
+      "original": "boppity",
+      "corrected": "boppidi",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "MhGc3c7LlP0"
+      ],
+      "examples": [
+        "\"the bibbidi boppity boo that\"",
+        "\"go bibbidi boppity boo, well,\""
+      ],
+      "correctedExamples": [
+        "\"the bibbidi boppidi boo that\"",
+        "\"go bibbidi boppidi boo, well,\""
+      ],
+      "timestamps": [
+        "00:03:04.770",
+        "00:03:04.770"
+      ],
+      "episodeIds": [
+        "MhGc3c7LlP0",
+        "MhGc3c7LlP0"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-17T05:04:48.798Z",
+      "lastSeen": "2026-01-17T05:04:48.798Z",
+      "status": "pending"
+    },
+    "DC i→DC I": {
+      "original": "DC i",
+      "corrected": "DC I",
+      "category": "capitalization",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "OLyMIgX2ueE"
+      ],
+      "examples": [
+        "\"never in D.C. i don't think\"",
+        "\"Reagan in D.C. i don'T know.\"",
+        "\"it into D.C. i flew over,\""
+      ],
+      "correctedExamples": [
+        "\"never in D.C. I don't think\"",
+        "\"Reagan in D.C.? I don't know.\"",
+        "\"it into D.C. I flew over,\""
+      ],
+      "timestamps": [
+        "00:00:57.390",
+        "00:00:57.390",
+        "00:01:11.950"
+      ],
+      "episodeIds": [
+        "OLyMIgX2ueE",
+        "OLyMIgX2ueE",
+        "OLyMIgX2ueE"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-17T05:11:02.990Z",
+      "lastSeen": "2026-01-17T05:11:02.990Z",
+      "status": "pending"
+    },
+    "i don't→I don't": {
+      "original": "i don't",
+      "corrected": "I don't",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "OLyMIgX2ueE"
+      ],
+      "examples": [
+        "\"in D.C. i don't think I\"",
+        "\"in D.C. i don'T know.\""
+      ],
+      "correctedExamples": [
+        "\"in D.C. I don't think I\"",
+        "\"in D.C.? I don't know.\""
+      ],
+      "timestamps": [
+        "00:00:57.390",
+        "00:00:57.390"
+      ],
+      "episodeIds": [
+        "OLyMIgX2ueE",
+        "OLyMIgX2ueE"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-17T05:11:02.990Z",
+      "lastSeen": "2026-01-17T05:11:02.990Z",
+      "status": "pending"
+    },
+    "apostles→apostles'": {
+      "original": "apostles",
+      "corrected": "apostles'",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "KTw6aVIhMOk"
+      ],
+      "examples": [
+        "\"at the apostles feet and\"",
+        "\"at the apostles feet.\"",
+        "\"at the apostles feet was\""
+      ],
+      "correctedExamples": [
+        "\"at the apostles' feet and\"",
+        "\"at the apostles' feet.\"",
+        "\"at the apostles' feet was\""
+      ],
+      "timestamps": [
+        "00:29:29.980",
+        "00:29:29.980",
+        "00:30:50.320"
+      ],
+      "episodeIds": [
+        "KTw6aVIhMOk",
+        "KTw6aVIhMOk",
+        "KTw6aVIhMOk"
+      ],
+      "confidence": 25,
+      "firstSeen": "2026-01-17T05:13:21.868Z",
+      "lastSeen": "2026-01-17T05:13:21.868Z",
+      "status": "pending"
+    },
+    "deal→dill": {
+      "original": "deal",
+      "corrected": "dill",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "KTw6aVIhMOk"
+      ],
+      "examples": [
+        "\"neglect the deal, Jesus will\"",
+        "\"get that deal. We're making\""
+      ],
+      "correctedExamples": [
+        "\"neglect the dill, Jesus will\"",
+        "\"get that dill. We're making\""
+      ],
+      "timestamps": [
+        "00:52:47.310",
+        "00:54:38.980"
+      ],
+      "episodeIds": [
+        "KTw6aVIhMOk",
+        "KTw6aVIhMOk"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-17T05:13:21.868Z",
+      "lastSeen": "2026-01-17T05:13:21.868Z",
+      "status": "pending"
+    },
+    "Omega symbol→omega symbol": {
+      "original": "Omega symbol",
+      "corrected": "omega symbol",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "MhGc3c7LlP0"
+      ],
+      "examples": [
+        "\"the Greek Omega symbol. It was\"",
+        "\"think the Omega symbol may represent\""
+      ],
+      "correctedExamples": [
+        "\"the Greek omega symbol. It was\"",
+        "\"think the omega symbol may represent\""
+      ],
+      "timestamps": [
+        "00:37:55.260",
+        "00:37:55.260"
+      ],
+      "episodeIds": [
+        "MhGc3c7LlP0",
+        "MhGc3c7LlP0"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-17T05:13:49.093Z",
+      "lastSeen": "2026-01-17T05:13:49.093Z",
+      "status": "pending"
+    },
+    "rights→rites": {
+      "original": "rights",
+      "corrected": "rites",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "4u2tKZlUJUc"
+      ],
+      "examples": [
+        "\"in these rights and practices.\"",
+        "\"priesthoods, certain rights, certain ordinances,\"",
+        "\"and the rights and, and\""
+      ],
+      "correctedExamples": [
+        "\"in these rites and practices.\"",
+        "\"priesthoods, certain rites, certain ordinances,\"",
+        "\"and the rites and, and\""
+      ],
+      "timestamps": [
+        "00:19:16.420",
+        "00:20:17.900",
+        "00:20:17.900"
+      ],
+      "episodeIds": [
+        "4u2tKZlUJUc",
+        "4u2tKZlUJUc",
+        "4u2tKZlUJUc"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-17T05:17:11.582Z",
+      "lastSeen": "2026-01-17T05:17:11.582Z",
+      "status": "pending"
+    },
+    "Louis→Lewis": {
+      "original": "Louis",
+      "corrected": "Lewis",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "HYzWpM_y_cI"
+      ],
+      "examples": [
+        "\"you know, Louis. So I\"",
+        "\"absolutely immediately. Louis, you.\""
+      ],
+      "correctedExamples": [
+        "\"you know, Lewis. So I\"",
+        "\"absolutely immediately, Lewis, you.\""
+      ],
+      "timestamps": [
+        "00:22:27.400",
+        "00:23:55.210"
+      ],
+      "episodeIds": [
+        "HYzWpM_y_cI",
+        "HYzWpM_y_cI"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-17T05:20:03.051Z",
+      "lastSeen": "2026-01-17T05:20:03.051Z",
+      "status": "pending"
+    },
+    "Hayes→Hays": {
+      "original": "Hayes",
+      "corrected": "Hays",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "HYzWpM_y_cI"
+      ],
+      "examples": [
+        "\"by Chris Hayes and his\"",
+        "\"dad, Richard Hayes, which basically\"",
+        "\"scholar, Richard Hayes, changing his\""
+      ],
+      "correctedExamples": [
+        "\"by Chris Hays and his\"",
+        "\"dad, Richard Hays, which basically\"",
+        "\"scholar, Richard Hays, changing his\""
+      ],
+      "timestamps": [
+        "00:43:50.100",
+        "00:43:50.100",
+        "00:43:50.100"
+      ],
+      "episodeIds": [
+        "HYzWpM_y_cI",
+        "HYzWpM_y_cI",
+        "HYzWpM_y_cI"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-01-17T05:20:03.051Z",
+      "lastSeen": "2026-01-17T05:20:03.051Z",
+      "status": "pending"
+    },
+    "Ahan→Achan": {
+      "original": "Ahan",
+      "corrected": "Achan",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "OoXQAfsPutQ"
+      ],
+      "examples": [
+        "\"story of Ahan, who was\"",
+        "\"who identifies Ahan as the\""
+      ],
+      "correctedExamples": [
+        "\"story of Achan, who was\"",
+        "\"who identifies Achan as the\""
+      ],
+      "timestamps": [
+        "00:10:41.850",
+        "00:10:41.850"
+      ],
+      "episodeIds": [
+        "OoXQAfsPutQ",
+        "OoXQAfsPutQ"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-17T05:21:51.354Z",
+      "lastSeen": "2026-01-17T05:21:51.354Z",
+      "status": "pending"
+    },
+    "Akhan→Achan": {
+      "original": "Akhan",
+      "corrected": "Achan",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "OoXQAfsPutQ"
+      ],
+      "examples": [
+        "\"and swallows Akhan. And that'll\"",
+        "\"And so Akhan was a\""
+      ],
+      "correctedExamples": [
+        "\"and swallows Achan. And that'll\"",
+        "\"And so Achan was a\""
+      ],
+      "timestamps": [
+        "00:10:41.850",
+        "00:11:49.580"
+      ],
+      "episodeIds": [
+        "OoXQAfsPutQ",
+        "OoXQAfsPutQ"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-17T05:21:51.354Z",
+      "lastSeen": "2026-01-17T05:21:51.354Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-17T04:15:26.257Z"
+  "lastUpdated": "2026-01-17T05:21:51.354Z"
 }

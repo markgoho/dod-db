@@ -31,6 +31,7 @@ tags:
   - Judaism
   - Judas Iscariot
   - Megiddo
+  - Moab
   - Origen
   - angel
   - Balaam
