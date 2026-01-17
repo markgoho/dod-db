@@ -24,12 +24,30 @@ export const EpisodeTagSchema = z.object({
 });
 
 /**
+ * Scripture reference for an episode with mention count.
+ */
+export interface EpisodeScripture {
+  book: string; // Canonical book name: "Genesis", "1 Samuel"
+  references: string[]; // Unique normalized references: ["Genesis 1:1", "Genesis 2:4"]
+  mentions: number; // Total mention count across all references
+}
+
+/**
+ * Zod schema for EpisodeScripture validation.
+ */
+export const EpisodeScriptureSchema = z.object({
+  book: z.string(),
+  references: z.array(z.string()),
+  mentions: z.number().int().positive(),
+});
+
+/**
  * A detected segment in an episode.
  */
 export interface EpisodeSegment {
   type: SegmentType;
   startTimestamp: string; // "[HH:MM:SS.mmm]" format
-  endTimestamp?: string; // undefined if segment extends to end
+  endTimestamp?: string | null; // undefined/null if segment extends to end
   confidence: "auto" | "verified";
   detectionMethod: DetectionMethod;
 }
@@ -40,7 +58,7 @@ export interface EpisodeSegment {
 export const EpisodeSegmentSchema = z.object({
   type: z.string(),
   startTimestamp: z.string(),
-  endTimestamp: z.string().optional(),
+  endTimestamp: z.string().nullish(), // Allow null or undefined - data may have explicit null values
   confidence: z.enum(["auto", "verified"]),
   detectionMethod: z.enum(DETECTION_METHODS),
 });
@@ -83,6 +101,10 @@ export const ProcessedVideoSchema = z.object({
     .array(VideoChapterSchema)
     .optional()
     .describe("YouTube chapters defined by the video uploader"),
+  scriptures: z
+    .array(EpisodeScriptureSchema)
+    .optional()
+    .describe("Detected scripture references with mention counts"),
 });
 
 export type ProcessedVideo = z.infer<typeof ProcessedVideoSchema>;
@@ -283,6 +305,36 @@ export async function updateVideoTags(
   videos[videoIndex] = {
     ...existingVideo,
     tags,
+  };
+
+  await saveProcessedVideos(videos);
+}
+
+/**
+ * Update scriptures for an existing processed video.
+ *
+ * @param videoId - The video ID to update
+ * @param scriptures - The new scriptures to set
+ */
+export async function updateVideoScriptures(
+  videoId: string,
+  scriptures: EpisodeScripture[],
+): Promise<void> {
+  const videos = await loadProcessedVideos();
+
+  const videoIndex = videos.findIndex(v => v.videoId === videoId);
+  if (videoIndex === -1) {
+    throw new Error(`Video ${videoId} not found in processed videos`);
+  }
+
+  const existingVideo = videos[videoIndex];
+  if (!existingVideo) {
+    throw new Error(`Video at index ${videoIndex} is undefined`);
+  }
+
+  videos[videoIndex] = {
+    ...existingVideo,
+    scriptures,
   };
 
   await saveProcessedVideos(videos);

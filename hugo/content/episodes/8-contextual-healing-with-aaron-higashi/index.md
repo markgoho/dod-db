@@ -3,9 +3,9 @@ title: Contextual Healing
 date: 2023-05-29T00:00:00.000Z
 episodeNumber: 8
 videoId: YyN1w9PYjS4
-aliases:
+aliases: 
   - /episodes/8/
-tags:
+tags: 
   - Jesus
   - Bart Ehrman
   - Judeans
@@ -17,7 +17,9 @@ tags:
   - Second Temple period
   - source criticism
   - Trinity
-guests:
+books: 
+  - Ezra
+guests: 
   - Aaron Higashi
 draft: false
 ---

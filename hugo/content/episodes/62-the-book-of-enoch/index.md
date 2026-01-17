@@ -3,9 +3,9 @@ title: The Book of Enoch
 date: 2024-06-10T00:00:00.000Z
 episodeNumber: 62
 videoId: zghJE1-ZCQw
-aliases:
+aliases: 
   - /episodes/62/
-tags:
+tags: 
   - Enoch
   - Book of Enoch
   - angel
@@ -49,9 +49,11 @@ tags:
   - King James Version
   - Nephilim
   - Syria
-segments:
+books: 
+  - Genesis
+segments: 
   - Left Behind
-segmentData:
+segmentData: 
   - type: left-behind
     label: Left Behind
     startSeconds: 84.388

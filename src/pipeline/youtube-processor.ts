@@ -6,6 +6,7 @@ import {
   getVideoById,
   isVideoProcessed,
   markVideoAsProcessed,
+  updateVideoScriptures,
   updateVideoSegments,
   updateVideoTags,
   type EpisodeSegment,
@@ -15,6 +16,7 @@ import {
   detectSegmentsFromAudio,
   getAudioDuration,
 } from "./detect-segments.js";
+import { extractScripture } from "./extract-scripture.js";
 import { extractTags } from "./extract-tags.js";
 import { generateHugoEpisode } from "./generate-hugo-episode.js";
 import { identifySegmentTypes } from "./identify-segment-types.js";
@@ -225,6 +227,22 @@ export async function processYouTubeVideo(
 
     // Update video with extracted tags
     await updateVideoTags(videoId, tags);
+
+    // Extract scripture references
+    console.log("Extracting scripture references...");
+    const scriptures = await extractScripture(correctedTranscript, {
+      enableLlmVerification: true,
+      episodeContext: {
+        videoId,
+        title: existingVideo.title,
+        episodeNumber: existingVideo.episodeNumber,
+      },
+    });
+    console.log(`✓ Extracted ${scriptures.length} scripture books`);
+
+    // Update video with extracted scriptures
+    await updateVideoScriptures(videoId, scriptures);
+
     console.log("Done!");
 
     return {
@@ -367,6 +385,21 @@ export async function processYouTubeVideo(
 
   // Update video with extracted tags
   await updateVideoTags(videoId, tags);
+
+  // Extract scripture references from corrected transcript
+  console.log("Extracting scripture references...");
+  const scriptures = await extractScripture(correctedTranscript, {
+    enableLlmVerification: true,
+    episodeContext: {
+      videoId,
+      title: metadata.title,
+      ...(episodeNumber !== undefined && { episodeNumber }),
+    },
+  });
+  console.log(`✓ Extracted ${scriptures.length} scripture books`);
+
+  // Update video with extracted scriptures
+  await updateVideoScriptures(videoId, scriptures);
 
   // Analyze corrections for learning (compare raw vs corrected)
   await analyzeCorrections(transcriptWithNames, correctedTranscript, videoId);

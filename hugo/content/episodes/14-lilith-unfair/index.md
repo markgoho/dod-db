@@ -3,9 +3,9 @@ title: Lilith Unfair
 date: 2023-07-10T00:00:00.000Z
 episodeNumber: 14
 videoId: xYDiFyXinfs
-aliases:
+aliases: 
   - /episodes/14/
-tags:
+tags: 
   - Lilith
   - Adam
   - YHWH
@@ -35,12 +35,16 @@ tags:
   - Mary Magdalene
   - Samuel
   - Ten Commandments
-segments:
-  - Who's That?
+books: 
+  - Genesis
+  - Isaiah
+  - 1 Samuel
+segments: 
+  - "Who's That?"
   - What Does That Mean?
-segmentData:
+segmentData: 
   - type: whos-that
-    label: Who's That?
+    label: "Who's That?"
     startSeconds: 166
   - type: what-does-that-mean
     label: What Does That Mean?

@@ -606,12 +606,12 @@ export async function analyzeCorrections(
 
       for (const candidate of highConfidence.slice(0, 10)) {
         // Top 10
-        const badge =
-          candidate.confidence >= 70
-            ? "🔥"
-            : candidate.confidence >= 60
-              ? "⚡"
-              : "✨";
+        let badge = "✨";
+        if (candidate.confidence >= 70) {
+          badge = "🔥";
+        } else if (candidate.confidence >= 60) {
+          badge = "⚡";
+        }
         console.log(
           `${badge} ${candidate.original} → ${candidate.corrected} (${candidate.confidence}% confidence)`,
         );

@@ -105,4 +105,42 @@ describe("generateFrontmatter", () => {
     ).text();
     expect(actual).toBe(expected);
   });
+
+  test("includes books when scriptures present", async () => {
+    const video: ProcessedVideo = {
+      videoId: "book789",
+      title: "Episode 75",
+      publishedAt: "2024-07-15T10:00:00Z",
+      processedAt: "2024-07-15T12:00:00Z",
+      transcriptPath: "data/transcripts/2024-07-15-episode-75.txt",
+      episodeNumber: 75,
+      tags: [{ tag: "theology", mentions: 3 }],
+      speakers: ["Dan McClellan", "Dan Beecher"],
+      scriptures: [
+        {
+          book: "Genesis",
+          references: ["Genesis 1:1", "Genesis 2:4"],
+          mentions: 5,
+        },
+        {
+          book: "Exodus",
+          references: ["Exodus 20:1"],
+          mentions: 2,
+        },
+        {
+          book: "Matthew",
+          references: ["Matthew 5:3"],
+          mentions: 1,
+        },
+      ],
+    };
+
+    const cleanTitle = "Scripture Episode";
+    const actual = generateFrontmatter(video, cleanTitle);
+
+    const expected = await Bun.file(
+      "src/hugo/__fixtures__/frontmatter-with-books.md",
+    ).text();
+    expect(actual).toBe(expected);
+  });
 });

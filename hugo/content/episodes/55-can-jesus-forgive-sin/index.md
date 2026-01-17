@@ -3,9 +3,9 @@ title: Can Jesus Forgive Sin?
 date: 2024-04-22T00:00:00.000Z
 episodeNumber: 55
 videoId: 9pKuCIMUV4s
-aliases:
+aliases: 
   - /episodes/55/
-tags:
+tags: 
   - Jehu
   - Jesus
   - Ahaziah
@@ -43,10 +43,17 @@ tags:
   - Judas Iscariot
   - King Saul
   - Mary Magdalene
-segments:
+books: 
+  - Mark
+  - Joshua
+  - Exodus
+  - 2 Kings
+  - 2 Chronicles
+  - Numbers
+segments: 
   - Bible vs Bible
   - Chapter and Verse
-segmentData:
+segmentData: 
   - type: bible-vs-bible
     label: Bible vs Bible
     startSeconds: 79

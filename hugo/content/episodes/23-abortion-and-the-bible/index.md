@@ -3,9 +3,9 @@ title: Abortion and the Bible
 date: 2023-09-11T00:00:00.000Z
 episodeNumber: 23
 videoId: "-I3W7CTX8Kw"
-aliases:
+aliases: 
   - /episodes/23/
-tags:
+tags: 
   - Jeremiah
   - Elizabeth
   - King James Version
@@ -22,6 +22,14 @@ tags:
   - Paul
   - Southern Baptist Convention
   - Univocality
+books: 
+  - Exodus
+  - Jeremiah
+  - Genesis
+  - Psalms
+  - Luke
+  - Numbers
+  - Romans
 draft: false
 ---
 

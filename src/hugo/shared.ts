@@ -44,7 +44,7 @@ export interface FormattedSegments {
 export interface StoredSegment {
   type: string;
   startTimestamp: string;
-  endTimestamp?: string;
+  endTimestamp?: string | null;
   confidence: "auto" | "verified";
   detectionMethod: string;
 }

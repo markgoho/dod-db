@@ -1,11 +1,11 @@
 ---
-title: The Lion's Den
+title: "The Lion's Den"
 date: 2023-11-27T00:00:00.000Z
 episodeNumber: 34
 videoId: lHoBSsJoacQ
-aliases:
+aliases: 
   - /episodes/34/
-tags:
+tags: 
   - Daniel
   - Babylon
   - Nebuchadnezzar
@@ -42,6 +42,10 @@ tags:
   - Qumran
   - Rapture
   - Syria
+books: 
+  - Daniel
+  - Revelation
+  - Isaiah
 draft: false
 ---
 

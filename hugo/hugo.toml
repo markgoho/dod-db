@@ -22,6 +22,7 @@ enableGitInfo = true
   tag = "tags"
   segment = "segments"
   guest = "guests"
+  book = "books"
 
 # Disable RSS entirely
 [outputs]

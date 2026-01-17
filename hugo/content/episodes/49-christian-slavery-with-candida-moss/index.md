@@ -3,9 +3,9 @@ title: Christian Slavery
 date: 2024-03-11T00:00:00.000Z
 episodeNumber: 49
 videoId: GXyJILdNxUE
-aliases:
+aliases: 
   - /episodes/49/
-tags:
+tags: 
   - Jesus
   - Paul
   - Papias of Hierapolis
@@ -26,7 +26,7 @@ tags:
   - Martin Luther
   - Mary Magdalene
   - Second Temple period
-guests:
+guests: 
   - Candida Moss
 draft: false
 ---

@@ -3,9 +3,9 @@ title: A Jewish Paul
 date: 2023-10-01T00:00:00.000Z
 episodeNumber: 26
 videoId: sVplhtKv9Jc
-aliases:
+aliases: 
   - /episodes/26/
-tags:
+tags: 
   - Paul
   - Jesus
   - Judaism
@@ -27,7 +27,13 @@ tags:
   - forgery
   - King David
   - Saint Titus
-guests:
+books: 
+  - Romans
+  - 1 Corinthians
+  - Genesis
+  - James
+  - Galatians
+guests: 
   - Matthew Thiessen
 draft: false
 ---

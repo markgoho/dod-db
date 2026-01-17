@@ -3,9 +3,9 @@ title: Modest is Hottest?
 date: 2024-01-15T00:00:00.000Z
 episodeNumber: 41
 videoId: nu6jx8m14tI
-aliases:
+aliases: 
   - /episodes/41/
-tags:
+tags: 
   - Ham
   - Noah
   - Canaan
@@ -33,10 +33,21 @@ tags:
   - Joseph
   - Judaism
   - Romans
-segments:
+books: 
+  - Genesis
+  - 1 Corinthians
+  - Deuteronomy
+  - Zephaniah
+  - 1 Timothy
+  - Leviticus
+  - 1 Peter
+  - Romans
+  - Matthew
+  - Proverbs
+segments: 
   - Chapter and Verse
   - Your Patriarchy and You
-segmentData:
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 134

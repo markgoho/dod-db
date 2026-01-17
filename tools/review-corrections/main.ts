@@ -212,12 +212,12 @@ async function loadCandidates(): Promise<void> {
 
     container.innerHTML = pending
       .map(candidate => {
-        const confidenceClass =
-          candidate.confidence >= 70
-            ? "high"
-            : candidate.confidence >= 50
-              ? "medium"
-              : "low";
+        let confidenceClass = "low";
+        if (candidate.confidence >= 70) {
+          confidenceClass = "high";
+        } else if (candidate.confidence >= 50) {
+          confidenceClass = "medium";
+        }
 
         const categoryIcon: Record<string, string> = {
           "biblical-term": "📖",

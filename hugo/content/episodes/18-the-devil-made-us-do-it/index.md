@@ -3,9 +3,9 @@ title: The Devil Made Us Do It
 date: 2023-08-07T00:00:00.000Z
 episodeNumber: 18
 videoId: 4PCkaPZMjTc
-aliases:
+aliases: 
   - /episodes/18/
-tags:
+tags: 
   - Satan
   - Balaam
   - angel
@@ -46,10 +46,20 @@ tags:
   - King James Version
   - Luke
   - Moabites
-segments:
+books: 
+  - 2 Samuel
+  - Numbers
+  - Genesis
+  - Isaiah
+  - Exodus
+  - 1 Chronicles
+  - Zechariah
+  - Job
+  - Hosea
+segments: 
   - Chapter and Verse
   - Could it be Satan?
-segmentData:
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 132

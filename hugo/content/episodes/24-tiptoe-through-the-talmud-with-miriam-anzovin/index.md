@@ -3,9 +3,9 @@ title: Tiptoe Through the Talmud
 date: 2023-09-18T00:00:00.000Z
 episodeNumber: 24
 videoId: 8OqwDYUzrIY
-aliases:
+aliases: 
   - /episodes/24/
-tags:
+tags: 
   - Talmud
   - Torah
   - Judaism
@@ -18,7 +18,7 @@ tags:
   - Judah
   - Passover
   - Romans
-guests:
+guests: 
   - Miriam Anzovin
 draft: false
 ---

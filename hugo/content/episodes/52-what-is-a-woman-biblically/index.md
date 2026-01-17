@@ -1,11 +1,11 @@
 ---
-title: What is a Woman... Biblically?
+title: "What is a Woman... Biblically?"
 date: 2024-04-01T00:00:00.000Z
 episodeNumber: 52
 videoId: _mO8E0em3KA
-aliases:
+aliases: 
   - /episodes/52/
-tags:
+tags: 
   - Goliath
   - King David
   - Adam
@@ -24,10 +24,22 @@ tags:
   - Judaism
   - Mary Magdalene
   - Peter
-segments:
+books: 
+  - Genesis
+  - 2 Samuel
+  - 1 Chronicles
+  - 1 Samuel
+  - Romans
+  - Isaiah
+  - Galatians
+  - Proverbs
+  - Ephesians
+  - 1 Peter
+  - 1 Corinthians
+segments: 
   - Bible vs Bible
   - Taking Issue
-segmentData:
+segmentData: 
   - type: bible-vs-bible
     label: Bible vs Bible
     startSeconds: 105.2

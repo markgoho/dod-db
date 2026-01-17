@@ -1,11 +1,11 @@
 ---
-title: I Knew a Guy Who Was SO OLD...
+title: "I Knew a Guy Who Was SO OLD..."
 date: 2023-08-21T00:00:00.000Z
 episodeNumber: 20
 videoId: p8CjJR4yhfk
-aliases:
+aliases: 
   - /episodes/20/
-tags:
+tags: 
   - Flood
   - biblical canon
   - Methuselah
@@ -48,10 +48,14 @@ tags:
   - Galilee
   - Moses
   - YHWH
-segments:
+books: 
+  - Genesis
+  - Isaiah
+  - 2 Timothy
+segments: 
   - By the Numbers
   - What Does That Mean?
-segmentData:
+segmentData: 
   - type: by-the-numbers
     label: By the Numbers
     startSeconds: 78

@@ -3,9 +3,9 @@ title: Translation Frustration
 date: 2024-05-13T00:00:00.000Z
 episodeNumber: 58
 videoId: KDkyHw3nE0w
-aliases:
+aliases: 
   - /episodes/58/
-tags:
+tags: 
   - King James Version
   - Israel
   - Jesus
@@ -39,6 +39,14 @@ tags:
   - Martin Luther
   - Persia
   - Trinity
+books: 
+  - Genesis
+  - Exodus
+  - Mark
+  - John
+  - Deuteronomy
+  - Matthew
+  - Isaiah
 draft: false
 ---
 

@@ -13,6 +13,7 @@ export function generateFrontmatter(
   cleanTitle: string,
 ): string {
   const tags = video.tags?.map(t => t.tag) ?? [];
+  const books = video.scriptures?.map(s => s.book) ?? [];
   const guests = getGuestSpeakers(video.speakers);
   const { segments, segmentData } = formatSegmentsForFrontmatter(
     video.segments,
@@ -31,6 +32,10 @@ export function generateFrontmatter(
   // Add optional fields only if they have values
   if (tags.length > 0) {
     frontmatter.tags = tags;
+  }
+
+  if (books.length > 0) {
+    frontmatter.books = books;
   }
 
   if (guests.length > 0) {

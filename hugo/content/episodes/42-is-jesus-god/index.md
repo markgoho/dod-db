@@ -3,9 +3,9 @@ title: Is Jesus God?
 date: 2024-01-22T00:00:00.000Z
 episodeNumber: 42
 videoId: K0kobJi-sLI
-aliases:
+aliases: 
   - /episodes/42/
-tags:
+tags: 
   - Jesus
   - Trinity
   - angel
@@ -30,12 +30,17 @@ tags:
   - monotheism
   - provenance
   - textual criticism
-segments:
-  - All Right, Let's See It
+books: 
+  - John
+  - Isaiah
+  - Exodus
+  - Psalms
+segments: 
+  - "All Right, Let's See It"
   - What Does That Mean?
-segmentData:
+segmentData: 
   - type: all-right-lets-see-it
-    label: All Right, Let's See It
+    label: "All Right, Let's See It"
     startSeconds: 120.42
   - type: what-does-that-mean
     label: What Does That Mean?

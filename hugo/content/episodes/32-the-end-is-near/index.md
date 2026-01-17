@@ -3,9 +3,9 @@ title: The End is Near?
 date: 2023-11-13T00:00:00.000Z
 episodeNumber: 32
 videoId: i8nHBWR-8CM
-aliases:
+aliases: 
   - /episodes/32/
-tags:
+tags: 
   - Rapture
   - Jesus
   - Eschatology
@@ -29,10 +29,18 @@ tags:
   - Luke
   - Satan
   - Univocality
-segments:
+books: 
+  - Daniel
+  - Mark
+  - Matthew
+  - 1 Thessalonians
+  - Isaiah
+  - Luke
+  - Genesis
+segments: 
   - Ex Eventu
   - What Does That Mean?
-segmentData:
+segmentData: 
   - type: ex-eventu
     label: Ex Eventu
     startSeconds: 104

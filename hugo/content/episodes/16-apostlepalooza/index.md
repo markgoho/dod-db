@@ -3,9 +3,9 @@ title: Apostlepalooza!
 date: 2023-07-24T00:00:00.000Z
 episodeNumber: 16
 videoId: V7PSCjcLFco
-aliases:
+aliases: 
   - /episodes/16/
-tags:
+tags: 
   - Jesus
   - James
   - Matthew
@@ -31,10 +31,12 @@ tags:
   - Sarah
   - Septuagint
   - Syria
-segments:
+books: 
+  - Romans
+segments: 
   - McClellan 911
   - Women in the Bible
-segmentData:
+segmentData: 
   - type: mcclellan-911
     label: McClellan 911
     startSeconds: 122

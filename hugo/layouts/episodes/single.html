@@ -36,6 +36,13 @@
     </div>
   {{ end }}
 
+  {{ if .Params.books }}
+    <div class="episode-single-books">
+      {{ range .Params.books }}
+        <a href="/books/{{ . | urlize }}/" class="episode-single-book">{{ . }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
 
   <div class="episode-layout">
     {{/* Sticky sidebar with video + segments */}}

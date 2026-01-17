@@ -3,9 +3,9 @@ title: The Joel McHale Episode!
 date: 2024-01-08T00:00:00.000Z
 episodeNumber: 40
 videoId: MBA74-qj0Pw
-aliases:
+aliases: 
   - /episodes/40/
-tags:
+tags: 
   - King Saul
   - Samuel
   - Philistines
@@ -31,7 +31,11 @@ tags:
   - Torah
   - Trinity
   - Univocality
-guests:
+books: 
+  - 1 Samuel
+  - Exodus
+  - 2 Kings
+guests: 
   - Joel McHale
 draft: false
 ---

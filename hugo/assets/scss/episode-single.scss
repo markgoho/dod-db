@@ -94,6 +94,41 @@ main.container {
   }
 }
 
+// Scripture book pills (teal color to distinguish from tags)
+.episode-single-books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs);
+  justify-content: center;
+  margin-top: var(--space-xs);
+}
+
+.episode-single-book {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  padding: var(--space-3xs) var(--space-2xs);
+  font-size: var(--step--2);
+  font-weight: 600;
+  background: var(--teal-100);
+  color: var(--teal-700);
+  text-decoration: none;
+  border-radius: var(--border-radius-sm);
+  transition: all 0.2s ease;
+
+  // Book icon prefix
+  &::before {
+    content: "📖";
+    font-size: var(--step--2);
+  }
+
+  &:hover {
+    background: var(--teal-600);
+    color: var(--tan-000);
+    transform: translateY(-0.0625rem);
+  }
+}
+
 .episode-layout {
   display: grid;
   gap: var(--space-l);

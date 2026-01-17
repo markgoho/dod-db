@@ -3,9 +3,9 @@ title: Jesus Murks a Tree
 date: 2024-01-29T00:00:00.000Z
 episodeNumber: 43
 videoId: OsQMmt2QnPU
-aliases:
+aliases: 
   - /episodes/43/
-tags:
+tags: 
   - Jesus
   - Matthew
   - Jerusalem
@@ -35,10 +35,14 @@ tags:
   - Passover
   - Peter
   - theophany
-segments:
+books: 
+  - Isaiah
+  - Mark
+  - Matthew
+segments: 
   - Chapter and Verse
   - What Does That Mean?
-segmentData:
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 89.85

@@ -3,9 +3,9 @@ title: The Genesis of Genesis
 date: 2024-04-29T00:00:00.000Z
 episodeNumber: 56
 videoId: ZWm7gjCL3uA
-aliases:
+aliases: 
   - /episodes/56/
-tags:
+tags: 
   - Garden of Eden
   - Flood
   - Noah
@@ -38,7 +38,10 @@ tags:
   - Nephilim
   - Syria
   - Ugarit
-guests:
+books: 
+  - Genesis
+  - Psalms
+guests: 
   - David Carr
 draft: false
 ---

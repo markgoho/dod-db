@@ -1,0 +1,58 @@
+{{ define "head-styles" }}
+  {{ $pageCSS := "scss/books-list.scss" }}
+  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
+  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+  <div class="books-page">
+    <h1 class="books-page__title">Scripture References</h1>
+    <p class="books-page__description">
+      {{ len .Data.Terms }} books referenced across all episodes
+    </p>
+
+    {{ $oldTestament := slice }}
+    {{ $newTestament := slice }}
+
+    {{/* Categorize books by testament */}}
+    {{ $otBooks := slice "Genesis" "Exodus" "Leviticus" "Numbers" "Deuteronomy" "Joshua" "Judges" "Ruth" "1 Samuel" "2 Samuel" "1 Kings" "2 Kings" "1 Chronicles" "2 Chronicles" "Ezra" "Nehemiah" "Esther" "Job" "Psalms" "Proverbs" "Ecclesiastes" "Song of Solomon" "Isaiah" "Jeremiah" "Lamentations" "Ezekiel" "Daniel" "Hosea" "Joel" "Amos" "Obadiah" "Jonah" "Micah" "Nahum" "Habakkuk" "Zephaniah" "Haggai" "Zechariah" "Malachi" }}
+
+    {{ range .Data.Terms.Alphabetical }}
+      {{ $bookName := .Page.Title }}
+      {{ if in $otBooks $bookName }}
+        {{ $oldTestament = $oldTestament | append . }}
+      {{ else }}
+        {{ $newTestament = $newTestament | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{ if gt (len $oldTestament) 0 }}
+      <div class="books-section">
+        <h2 class="books-section__title">Old Testament</h2>
+        <div class="books-cloud">
+          {{ range $oldTestament }}
+            <a href="{{ .Page.RelPermalink }}" class="book-pill">
+              {{ .Page.Title }}
+              <span class="book-pill__count">{{ .Count }}</span>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if gt (len $newTestament) 0 }}
+      <div class="books-section">
+        <h2 class="books-section__title">New Testament</h2>
+        <div class="books-cloud">
+          {{ range $newTestament }}
+            <a href="{{ .Page.RelPermalink }}" class="book-pill">
+              {{ .Page.Title }}
+              <span class="book-pill__count">{{ .Count }}</span>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

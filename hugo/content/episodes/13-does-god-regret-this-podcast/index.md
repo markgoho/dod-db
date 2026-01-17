@@ -3,9 +3,9 @@ title: Does God Regret this Podcast?
 date: 2023-07-03T00:00:00.000Z
 episodeNumber: 13
 videoId: 5bA0OigwXR4
-aliases:
+aliases: 
   - /episodes/13/
-tags:
+tags: 
   - Jerusalem
   - Israel
   - Lachish
@@ -37,15 +37,20 @@ tags:
   - Moab
   - monotheism
   - Samuel
-segments:
+books: 
+  - Genesis
+  - 1 Samuel
+  - Deuteronomy
+  - Judges
+segments: 
   - Archaeology of Israel
-  - All Right, Let's See It
-segmentData:
+  - "All Right, Let's See It"
+segmentData: 
   - type: archaeology-of-israel
     label: Archaeology of Israel
     startSeconds: 316
   - type: all-right-lets-see-it
-    label: All Right, Let's See It
+    label: "All Right, Let's See It"
     startSeconds: 2224.59
 draft: false
 ---

@@ -1,11 +1,11 @@
 ---
-title: Silence, Woman!
+title: "Silence, Woman!"
 date: 2024-05-28T00:00:00.000Z
 episodeNumber: 60
 videoId: irflmh20e8Y
-aliases:
+aliases: 
   - /episodes/60/
-tags:
+tags: 
   - Jesus
   - Paul
   - Priscilla
@@ -25,9 +25,14 @@ tags:
   - textual criticism
   - Textus Receptus
   - Univocality
-segments:
+books: 
+  - 1 Corinthians
+  - John
+  - 1 Timothy
+  - Numbers
+segments: 
   - Textual Healing
-segmentData:
+segmentData: 
   - type: textual-healing
     label: Textual Healing (1)
     startSeconds: 76.547

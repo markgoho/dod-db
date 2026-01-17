@@ -3,9 +3,9 @@ title: The Historicity of David
 date: 2024-06-24T00:00:00.000Z
 episodeNumber: 64
 videoId: yXeCVNSmhYQ
-aliases:
+aliases: 
   - /episodes/64/
-tags:
+tags: 
   - King David
   - Israel
   - YHWH
@@ -29,15 +29,18 @@ tags:
   - Isaac
   - King Josiah
   - Paul
-segments:
+books: 
+  - Judges
+  - 1 Corinthians
+segments: 
   - Chapter and Verse
-  - History's Mysteries
-segmentData:
+  - "History's Mysteries"
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 182.319
   - type: historys-mysteries
-    label: History's Mysteries
+    label: "History's Mysteries"
     startSeconds: 2107.909
 draft: false
 ---

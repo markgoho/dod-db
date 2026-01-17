@@ -3,9 +3,9 @@ title: The Mark of the Best
 date: 2023-06-05T00:00:00.000Z
 episodeNumber: 9
 videoId: Bs02oP4kQbM
-aliases:
+aliases: 
   - /episodes/9/
-tags:
+tags: 
   - Nero
   - Jesus
   - monotheism
@@ -21,10 +21,16 @@ tags:
   - James
   - John of Patmos
   - Satan
-segments:
+books: 
+  - Isaiah
+  - Mark
+  - Genesis
+  - Deuteronomy
+  - Psalms
+segments: 
   - Conspiracy Watch
   - What Does That Mean?
-segmentData:
+segmentData: 
   - type: conspiracy-watch
     label: Conspiracy Watch
     startSeconds: 191

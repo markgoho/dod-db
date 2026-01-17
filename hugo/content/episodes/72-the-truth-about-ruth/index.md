@@ -3,9 +3,9 @@ title: The Truth About Ruth
 date: 2024-08-19T00:00:00.000Z
 episodeNumber: 72
 videoId: 600Z95nVTxs
-aliases:
+aliases: 
   - /episodes/72/
-tags:
+tags: 
   - King Sennacherib
   - Hezekiah
   - Ruth
@@ -33,15 +33,17 @@ tags:
   - Mary Magdalene
   - Paul
   - Peter
-segments:
+books: 
+  - 2 Kings
+segments: 
   - Chapter and Verse
-  - Who's That?
-segmentData:
+  - "Who's That?"
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 116.67
   - type: whos-that
-    label: Who's That?
+    label: "Who's That?"
     startSeconds: 2357.242
 draft: false
 ---

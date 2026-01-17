@@ -3,9 +3,9 @@ title: The End(s) of Monotheism
 date: 2024-05-20T00:00:00.000Z
 episodeNumber: 59
 videoId: BdJ_8a4ospk
-aliases:
+aliases: 
   - /episodes/59/
-tags:
+tags: 
   - Monotheism
   - Paul
   - Hypostasis
@@ -37,7 +37,12 @@ tags:
   - Latin Vulgate
   - Romans
   - Tower of Babel
-guests:
+books: 
+  - 1 Corinthians
+  - Proverbs
+  - Romans
+  - Isaiah
+guests: 
   - David Burnett
 draft: false
 ---

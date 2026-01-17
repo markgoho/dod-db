@@ -3,9 +3,9 @@ title: GENOCIDE!
 date: 2024-02-19T00:00:00.000Z
 episodeNumber: 46
 videoId: QFyFMwQpSko
-aliases:
+aliases: 
   - /episodes/46/
-tags:
+tags: 
   - Joshua
   - YHWH
   - Israel
@@ -44,9 +44,19 @@ tags:
   - Samuel
   - Septuagint
   - Univocality
-segments:
+books: 
+  - Genesis
+  - Zechariah
+  - Joshua
+  - Judges
+  - Deuteronomy
+  - Psalms
+  - Numbers
+  - Matthew
+  - Acts
+segments: 
   - Chapter and Verse
-segmentData:
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 2999.95

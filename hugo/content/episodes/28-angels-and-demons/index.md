@@ -3,9 +3,9 @@ title: Angels and Demons
 date: 2023-10-16T00:00:00.000Z
 episodeNumber: 28
 videoId: AUgdX7aH_hI
-aliases:
+aliases: 
   - /episodes/28/
-tags:
+tags: 
   - angel
   - YHWH
   - Judaism
@@ -51,10 +51,16 @@ tags:
   - Sarah
   - Septuagint
   - Seth
-segments:
+books: 
+  - Genesis
+  - Psalms
+  - Exodus
+  - Isaiah
+  - Deuteronomy
+segments: 
   - Getting Angelic
   - Getting Demonic
-segmentData:
+segmentData: 
   - type: getting-angelic
     label: Getting Angelic
     startSeconds: 77
