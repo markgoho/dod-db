@@ -123,7 +123,12 @@ export const scriptureBooks: BookDefinition[] = [
   {
     canonical: "2 Chronicles",
     abbreviations: ["2 Chr", "2Chr", "2Ch"],
-    variants: ["2nd Chronicles", "Second Chronicles", "II Chronicles", "II Chr"],
+    variants: [
+      "2nd Chronicles",
+      "Second Chronicles",
+      "II Chronicles",
+      "II Chr",
+    ],
     testament: "old",
   },
   {
@@ -491,4 +496,3 @@ export const scriptureBooks: BookDefinition[] = [
     testament: "new",
   },
 ];
-

@@ -3,11 +3,11 @@ title: Scripture Episode
 date: 2024-07-15T10:00:00.000Z
 episodeNumber: 75
 videoId: book789
-aliases: 
+aliases:
   - /episodes/75/
-tags: 
+tags:
   - theology
-books: 
+books:
   - Genesis
   - Exodus
   - Matthew

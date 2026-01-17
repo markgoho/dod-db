@@ -10,8 +10,8 @@ import type { EpisodeScripture } from "./extract-scripture.js";
 import { findSpeakerLabelRanges } from "./find-speaker-label-ranges.js";
 import { isInSpeakerLabel } from "./is-in-speaker-label.js";
 import { normalizeReference } from "./normalize-reference.js";
-import type { EpisodeContext } from "./verify-tag-matches.js";
 import { verifyScriptureMatches } from "./verify-scripture-matches.js";
+import type { EpisodeContext } from "./verify-tag-matches.js";
 
 interface MatchInfo {
   book: BookDefinition;
@@ -46,9 +46,7 @@ export async function extractSingleBookScripture(
   const book = scriptureBooks.find(
     b =>
       b.canonical.toLowerCase() === bookName.toLowerCase() ||
-      b.abbreviations.some(
-        a => a.toLowerCase() === bookName.toLowerCase(),
-      ) ||
+      b.abbreviations.some(a => a.toLowerCase() === bookName.toLowerCase()) ||
       b.variants.some(v => v.toLowerCase() === bookName.toLowerCase()),
   );
 

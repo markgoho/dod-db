@@ -26,7 +26,11 @@ export async function writeHugoFile({
         : frontmatter.date,
   };
 
-  const frontmatterYaml = Bun.YAML.stringify(normalizedFrontmatter, undefined, 2);
+  const frontmatterYaml = Bun.YAML.stringify(
+    normalizedFrontmatter,
+    undefined,
+    2,
+  );
   const fullContent = `---\n${frontmatterYaml}---\n${content}`;
   await Bun.write(filePath, fullContent);
 }

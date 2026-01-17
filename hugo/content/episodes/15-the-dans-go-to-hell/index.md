@@ -3,9 +3,9 @@ title: The Dans Go to Hell
 date: 2023-07-17T00:00:00.000Z
 episodeNumber: 15
 videoId: 7oB6UrrFn6c
-aliases: 
+aliases:
   - /episodes/15/
-tags: 
+tags:
   - Hell
   - Matthew
   - Judas Iscariot
@@ -40,16 +40,16 @@ tags:
   - King James Version
   - Papias of Hierapolis
   - Satan
-books: 
+books:
   - Isaiah
   - Matthew
   - Zechariah
   - Daniel
   - Genesis
-segments: 
+segments:
   - "All Right, Let's See It"
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: all-right-lets-see-it
     label: "All Right, Let's See It"
     startSeconds: 208.67

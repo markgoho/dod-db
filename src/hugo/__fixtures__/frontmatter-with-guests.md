@@ -3,9 +3,9 @@ title: Guest Episode
 date: 2024-06-10T09:00:00.000Z
 episodeNumber: 99
 videoId: guest456
-aliases: 
+aliases:
   - /episodes/99/
-guests: 
+guests:
   - Andrew Whitehead
 draft: false
 ---

@@ -3,9 +3,9 @@ title: The Rapture is not Coming!
 date: 2024-08-12T00:00:00.000Z
 episodeNumber: 71
 videoId: AwhAN-LQ34Y
-aliases: 
+aliases:
   - /episodes/71/
-tags: 
+tags:
   - Rapture
   - Daniel
   - Jesus
@@ -36,7 +36,7 @@ tags:
   - Syria
   - Torah
   - Univocality
-books: 
+books:
   - Daniel
   - Revelation
   - 1 Thessalonians
@@ -44,10 +44,10 @@ books:
   - Deuteronomy
   - Psalms
   - Isaiah
-segments: 
+segments:
   - Eschatological
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: eschatological
     label: Eschatological
     startSeconds: 190.911

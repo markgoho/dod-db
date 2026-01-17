@@ -3,9 +3,9 @@ title: Shrouded in Mystery
 date: 2024-09-09T00:00:00.000Z
 episodeNumber: 75
 videoId: OLyMIgX2ueE
-aliases: 
+aliases:
   - /episodes/75/
-tags: 
+tags:
   - YHWH
   - Egypt
   - Jesus
@@ -20,14 +20,14 @@ tags:
   - Elephantine
   - Israel
   - Masada
-books: 
+books:
   - Exodus
   - Genesis
   - Ezekiel
-segments: 
+segments:
   - Chapter and Verse
   - Artifacts and Fiction
-segmentData: 
+segmentData:
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 223.986

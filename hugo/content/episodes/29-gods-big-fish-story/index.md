@@ -3,9 +3,9 @@ title: "God's Big Fish Story"
 date: 2023-10-23T00:00:00.000Z
 episodeNumber: 29
 videoId: yveP4tc5OSo
-aliases: 
+aliases:
   - /episodes/29/
-tags: 
+tags:
   - Jonah
   - YHWH
   - Nineveh
@@ -31,17 +31,17 @@ tags:
   - Judeans
   - Peter
   - Saint Titus
-books: 
+books:
   - Jonah
   - Genesis
   - 2 Kings
   - Isaiah
   - Titus
   - Hebrews
-segments: 
+segments:
   - Chapter and Verse
   - Nature of God
-segmentData: 
+segmentData:
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 134

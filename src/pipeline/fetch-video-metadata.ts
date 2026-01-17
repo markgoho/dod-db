@@ -1,4 +1,4 @@
-import type { VideoMetadata, VideoChapter } from "./youtube.js";
+import type { VideoChapter, VideoMetadata } from "./youtube.js";
 
 /**
  * Fetch video metadata using yt-dlp.

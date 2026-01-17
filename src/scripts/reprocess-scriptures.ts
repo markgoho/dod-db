@@ -35,10 +35,13 @@ async function reprocessScriptures(options: {
   const toProcess = force
     ? videos
     : videos.filter(
-        video => video.scriptures === undefined || video.scriptures.length === 0,
+        video =>
+          video.scriptures === undefined || video.scriptures.length === 0,
       );
 
-  console.log(`Found ${toProcess.length}/${videos.length} episodes to process\n`);
+  console.log(
+    `Found ${toProcess.length}/${videos.length} episodes to process\n`,
+  );
 
   const result: ReprocessResult = {
     total: toProcess.length,

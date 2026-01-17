@@ -297,7 +297,8 @@ describe("extractScripture", () => {
     });
 
     test("sorts references within book by chapter and verse", async () => {
-      const transcript = "Genesis 2:4. Genesis 1:10. Genesis 1:1. Genesis 10:5.";
+      const transcript =
+        "Genesis 2:4. Genesis 1:10. Genesis 1:1. Genesis 10:5.";
       const results = await extractScripture(transcript);
 
       const genesis = results.find(result => result.book === "Genesis");

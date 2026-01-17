@@ -3,9 +3,9 @@ title: Where Angels Fear to Swim
 date: 2023-10-08T00:00:00.000Z
 episodeNumber: 27
 videoId: caKa7DTkSkQ
-aliases: 
+aliases:
   - /episodes/27/
-tags: 
+tags:
   - angel
   - Euphrates
   - Book of Enoch
@@ -34,14 +34,14 @@ tags:
   - Septuagint
   - Seth
   - Sodom
-books: 
+books:
   - Genesis
   - Psalms
   - Isaiah
-segments: 
+segments:
   - "All Right, Let's See It"
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: all-right-lets-see-it
     label: "All Right, Let's See It"
     startSeconds: 124.78

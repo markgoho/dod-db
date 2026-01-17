@@ -3,9 +3,9 @@ title: Gospel Authorship
 date: 2024-07-29T00:00:00.000Z
 episodeNumber: 69
 videoId: 1w8zmAKheQE
-aliases: 
+aliases:
   - /episodes/69/
-tags: 
+tags:
   - Jesus
   - Luke
   - Papias of Hierapolis
@@ -34,7 +34,7 @@ tags:
   - Moses
   - Trinity
   - Virgin Birth
-guests: 
+guests:
   - Michael Kok
 draft: false
 ---

@@ -31,7 +31,9 @@ const VerificationResultSchema = z.object({
  * Extract text content from a transcript line, removing timestamp and speaker label.
  */
 function extractTextFromLine(line: string): string {
-  const match = /^\[\d{2}:\d{2}:\d{2}(?:\.\d{3})?\]\s+[^:]+:\s*(.*)$/.exec(line);
+  const match = /^\[\d{2}:\d{2}:\d{2}(?:\.\d{3})?\]\s+[^:]+:\s*(.*)$/.exec(
+    line,
+  );
   return match?.[1] ?? line;
 }
 
@@ -95,7 +97,11 @@ export async function verifyScriptureMatches(
 
   // Extract context for each match
   const contexts: MatchContext[] = matches.map((match, index) => {
-    const { before, after } = extractContext(transcript, match.start, match.end);
+    const { before, after } = extractContext(
+      transcript,
+      match.start,
+      match.end,
+    );
     return {
       index,
       matchedText: match.text,
@@ -192,10 +198,7 @@ export async function verifyScriptureMatches(
         );
         return verifiedIndices;
       } catch (retryError) {
-        console.error(
-          `  ❌ Retry failed for "${book.canonical}":`,
-          retryError,
-        );
+        console.error(`  ❌ Retry failed for "${book.canonical}":`, retryError);
         return [];
       }
     }

@@ -3,9 +3,9 @@ title: God Breathed?
 date: 2023-05-15T00:00:00.000Z
 episodeNumber: 6
 videoId: _zou11pMRag
-aliases: 
+aliases:
   - /episodes/6/
-tags: 
+tags:
   - Paul
   - Univocality
   - James
@@ -36,7 +36,7 @@ tags:
   - Matthew
   - Trinity
   - William Tyndale
-books: 
+books:
   - Romans
   - 2 Timothy
   - James
@@ -44,10 +44,10 @@ books:
   - Isaiah
   - 2 Samuel
   - Genesis
-segments: 
+segments:
   - What Does That Mean?
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: what-does-that-mean
     label: What Does That Mean?
     startSeconds: 177.1

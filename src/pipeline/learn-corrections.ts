@@ -544,9 +544,8 @@ export async function analyzeCorrections(
 
   // Update tracker with corrections from this episode
   if (episodeId) {
-    const { getHighConfidenceCandidates } = await import(
-      "./get-high-confidence-candidates.js"
-    );
+    const { getHighConfidenceCandidates } =
+      await import("./get-high-confidence-candidates.js");
     const { loadTracker } = await import("./load-tracker.js");
     const { saveTracker } = await import("./save-tracker.js");
     const { updateTracker } = await import("./update-tracker.js");

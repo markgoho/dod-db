@@ -3,9 +3,9 @@ title: Who ACTUALLY Wrote the New Testament?
 date: 2023-12-04T00:00:00.000Z
 episodeNumber: 35
 videoId: _8in-xz4L8o
-aliases: 
+aliases:
   - /episodes/35/
-tags: 
+tags:
   - Paul
   - Matthew
   - Pastoral Epistles
@@ -28,7 +28,7 @@ tags:
   - Ishmael
   - King James Version
   - Septuagint
-books: 
+books:
   - 1 Corinthians
   - Matthew
   - 2 Timothy

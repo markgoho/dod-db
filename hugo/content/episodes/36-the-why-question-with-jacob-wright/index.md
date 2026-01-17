@@ -3,9 +3,9 @@ title: The Why Question
 date: 2023-12-11T00:00:00.000Z
 episodeNumber: 36
 videoId: 5ebvYxjXH2Y
-aliases: 
+aliases:
   - /episodes/36/
-tags: 
+tags:
   - Israel
   - Judah
   - Judeans
@@ -45,9 +45,9 @@ tags:
   - Philistines
   - Samson
   - Torah
-books: 
+books:
   - Genesis
-guests: 
+guests:
   - Jacob Wright
 draft: false
 ---

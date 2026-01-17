@@ -3,9 +3,9 @@ title: Pay Your Tithing!
 date: 2024-09-16T00:00:00.000Z
 episodeNumber: 76
 videoId: KTw6aVIhMOk
-aliases: 
+aliases:
   - /episodes/76/
-tags: 
+tags:
   - Jesus
   - Deuteronomy
   - Peter
@@ -25,16 +25,16 @@ tags:
   - Romans
   - Satan
   - Ugarit
-books: 
+books:
   - Deuteronomy
   - Malachi
   - Matthew
   - Numbers
   - Leviticus
-segments: 
+segments:
   - What Does That Mean?
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: what-does-that-mean
     label: What Does That Mean?
     startSeconds: 232.202

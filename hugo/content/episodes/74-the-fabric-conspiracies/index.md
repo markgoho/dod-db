@@ -3,9 +3,9 @@ title: The Fabric Conspiracies
 date: 2024-09-02T00:00:00.000Z
 episodeNumber: 74
 videoId: 7v-E6j8Yf5U
-aliases: 
+aliases:
   - /episodes/74/
-tags: 
+tags:
   - Ishmael
   - Joseph
   - Egypt
@@ -19,17 +19,17 @@ tags:
   - Hell
   - Josephus
   - Univocality
-books: 
+books:
   - Exodus
   - Deuteronomy
   - Ezekiel
   - Genesis
   - Leviticus
   - Judges
-segments: 
+segments:
   - Conspiracy Watch
   - Bible vs Bible
-segmentData: 
+segmentData:
   - type: conspiracy-watch
     label: Conspiracy Watch
     startSeconds: 109.037

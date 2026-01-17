@@ -16,12 +16,12 @@ import {
 } from "../pipeline/add-tag-to-vocabulary.js";
 import { deleteTagFromVocabulary } from "../pipeline/delete-tag-from-vocabulary.js";
 import { findTag } from "../pipeline/find-tag.js";
+import { reprocessEpisodes } from "../pipeline/reprocess-episodes.js";
 import { tagExists } from "../pipeline/tag-exists.js";
 import {
   updateTagInVocabulary,
   type UpdateTagParams as UpdateTagParameters,
 } from "../pipeline/update-tag-in-vocabulary.js";
-import { reprocessEpisodes } from "../pipeline/reprocess-episodes.js";
 import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 
 const PORT = 3001;

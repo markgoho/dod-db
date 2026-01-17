@@ -3,9 +3,9 @@ title: Ehrmageddon!
 date: 2023-05-01T00:00:00.000Z
 episodeNumber: 4
 videoId: WidY7lIBiyY
-aliases: 
+aliases:
   - /episodes/4/
-tags: 
+tags:
   - Bart Ehrman
   - Jesus
   - angel
@@ -37,9 +37,9 @@ tags:
   - textual criticism
   - Univocality
   - YHWH
-books: 
+books:
   - Psalms
-guests: 
+guests:
   - Bart Ehrman
 draft: false
 ---

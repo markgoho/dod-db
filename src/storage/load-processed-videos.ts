@@ -11,9 +11,7 @@ export async function loadProcessedVideos(): Promise<ProcessedVideo[]> {
     const exists = await file.exists();
 
     if (!exists) {
-      console.log(
-        "No processed videos file found. Starting with empty array.",
-      );
+      console.log("No processed videos file found. Starting with empty array.");
       return [];
     }
 

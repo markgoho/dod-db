@@ -1,7 +1,7 @@
 import * as path from "node:path";
 import { youtubeConfig } from "../config/youtube.js";
-import { writeToFile } from "../storage/file.js";
 import { extractSpeakersFromTranscript } from "../storage/extract-speakers-from-transcript.js";
+import { writeToFile } from "../storage/file.js";
 import { getVideoById } from "../storage/get-video-by-id.js";
 import { isVideoProcessed } from "../storage/is-video-processed.js";
 import { markVideoAsProcessed } from "../storage/mark-video-as-processed.js";
@@ -14,17 +14,17 @@ import {
   detectSegmentsFromAudio,
   getAudioDuration,
 } from "./detect-segments.js";
+import { downloadAudio } from "./download-audio.js";
 import { extractScripture } from "./extract-scripture.js";
 import { extractTags } from "./extract-tags.js";
+import { extractVideoId } from "./extract-video-id.js";
+import { fetchVideoMetadata } from "./fetch-video-metadata.js";
 import { generateHugoEpisode } from "./generate-hugo-episode.js";
+import { generateTranscriptFilename } from "./generate-transcript-filename.js";
 import { identifySegmentTypes } from "./identify-segment-types.js";
 import { identifySpeakers } from "./identify-speakers.js";
 import { analyzeCorrections } from "./learn-corrections.js";
 import { transcribeAudio } from "./transcribe.js";
-import { downloadAudio } from "./download-audio.js";
-import { extractVideoId } from "./extract-video-id.js";
-import { fetchVideoMetadata } from "./fetch-video-metadata.js";
-import { generateTranscriptFilename } from "./generate-transcript-filename.js";
 import type { VideoMetadata } from "./youtube.js";
 
 export interface ProcessYouTubeVideoResult {

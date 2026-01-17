@@ -12,7 +12,7 @@ export function resolveOverlaps<T extends Match>(matches: T[]): T[] {
 
   const sorted = [...matches].sort((a, b) => {
     if (a.start !== b.start) return a.start - b.start;
-    return (b.end - b.start) - (a.end - a.start);
+    return b.end - b.start - (a.end - a.start);
   });
 
   const resolved: T[] = [];

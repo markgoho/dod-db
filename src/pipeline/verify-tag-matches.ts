@@ -78,9 +78,9 @@ function getTerminalWidth(text: string): number {
     // 0x2600-0x26FF (Miscellaneous Symbols)
     // 0x2700-0x27BF (Dingbats)
     const isWideCharacter =
-      (code >= 0x1_F3_00 && code <= 0x1_F9_FF) ||
-      (code >= 0x26_00 && code <= 0x26_FF) ||
-      (code >= 0x27_00 && code <= 0x27_BF);
+      (code >= 0x1_f3_00 && code <= 0x1_f9_ff) ||
+      (code >= 0x26_00 && code <= 0x26_ff) ||
+      (code >= 0x27_00 && code <= 0x27_bf);
 
     width += isWideCharacter ? 2 : 1;
   }

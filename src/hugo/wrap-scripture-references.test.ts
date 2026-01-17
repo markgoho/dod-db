@@ -272,7 +272,9 @@ describe("wrapScriptureReferences", () => {
     const text = "See Romans 8 for encouragement.";
     const result = wrapScriptureReferences(text);
 
-    expect(result).toBe('See {{< scripture ref="Romans 8" >}} for encouragement.');
+    expect(result).toBe(
+      'See {{< scripture ref="Romans 8" >}} for encouragement.',
+    );
   });
 
   test("normalizes numbered book reference", () => {

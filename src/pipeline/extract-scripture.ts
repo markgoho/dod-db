@@ -5,8 +5,8 @@
 
 import type { BookDefinition } from "../config/scripture-books.js";
 import { scriptureBooks } from "../config/scripture-books.js";
-import type { EpisodeContext } from "./verify-tag-matches.js";
 import { verifyScriptureMatches } from "./verify-scripture-matches.js";
+import type { EpisodeContext } from "./verify-tag-matches.js";
 
 /**
  * Scripture reference for an episode.
@@ -129,7 +129,7 @@ function resolveOverlaps(matches: MatchInfo[]): MatchInfo[] {
 
   const sorted = [...matches].sort((a, b) => {
     if (a.start !== b.start) return a.start - b.start;
-    return (b.end - b.start) - (a.end - a.start);
+    return b.end - b.start - (a.end - a.start);
   });
 
   const resolved: MatchInfo[] = [];

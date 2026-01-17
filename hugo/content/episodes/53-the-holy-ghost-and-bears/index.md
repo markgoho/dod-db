@@ -3,9 +3,9 @@ title: The Holy Ghost (and Bears!)
 date: 2024-04-08T00:00:00.000Z
 episodeNumber: 53
 videoId: kLBgLbbZ9qw
-aliases: 
+aliases:
   - /episodes/53/
-tags: 
+tags:
   - Holy Spirit
   - Jesus
   - King Saul
@@ -25,15 +25,15 @@ tags:
   - Ken Ham
   - Philo of Alexandria
   - Samaria
-books: 
+books:
   - Genesis
   - Proverbs
   - 1 Kings
   - John
-segments: 
+segments:
   - What Does That Mean?
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: what-does-that-mean
     label: What Does That Mean?
     startSeconds: 80.634

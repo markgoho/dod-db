@@ -3,9 +3,9 @@ title: What is an Atheist?
 date: 2024-09-23T00:00:00.000Z
 episodeNumber: 77
 videoId: 4u2tKZlUJUc
-aliases: 
+aliases:
   - /episodes/77/
-tags: 
+tags:
   - Islam
   - Jesus
   - biblical canon
@@ -13,9 +13,9 @@ tags:
   - Hebrews
   - Monotheism
   - Peter
-segments: 
+segments:
   - What is That?
-segmentData: 
+segmentData:
   - type: what-is-that
     label: What is That? (1)
     startSeconds: 105.075

@@ -3,9 +3,9 @@ title: "The [Three] [Wise Men]"
 date: 2023-12-25T00:00:00.000Z
 episodeNumber: 38
 videoId: ymMm0ICgBmc
-aliases: 
+aliases:
   - /episodes/38/
-tags: 
+tags:
   - Matthew
   - Jesus
   - Luke
@@ -29,7 +29,7 @@ tags:
   - Judah
   - Second Temple period
   - Septuagint
-guests: 
+guests:
   - Eric Vanden Eykel
 draft: false
 ---
