@@ -44,7 +44,7 @@ import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 import type { EpisodeSegment } from "../storage/processed-videos.js";
 import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 import { updateVideoSegments } from "../storage/update-video-segments.js";
-import { removeTagFromEpisode } from "../utils/hugo-frontmatter.js";
+import { removeTagFromEpisode } from "../utils/remove-tag-from-episode.js";
 
 const PORT = 3001; // API server on separate port
 

@@ -2,7 +2,7 @@ import {
   SEGMENT_LABELS,
   type SegmentType,
 } from "../config/segment-patterns.js";
-import { parseTimestampToSeconds } from "./parse-timestamp-to-seconds.js";
+import { parseTimestampToSeconds } from "../utils/parse-timestamp-to-seconds.js";
 import type { FormattedSegments, StoredSegment } from "./shared.js";
 import { EXCLUDED_SEGMENT_TYPES } from "./shared.js";
 

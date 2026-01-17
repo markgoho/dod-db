@@ -1,4 +1,5 @@
 import js from "@eslint/js";
+import prettierConfig from "eslint-config-prettier";
 import unicorn from "eslint-plugin-unicorn";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
@@ -110,4 +111,6 @@ export default defineConfig([
       "unicorn/no-null": "off",
     },
   },
+  // Disable ESLint rules that conflict with Prettier (must be last)
+  prettierConfig,
 ]);

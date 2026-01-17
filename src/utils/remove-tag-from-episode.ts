@@ -29,15 +29,18 @@ export async function removeTagFromEpisode({
 
   const { frontmatter, content } = await parseHugoFile(filePath);
 
+  // Filter out the tag (case-insensitive)
   const originalLength = frontmatter.tags.length;
   frontmatter.tags = frontmatter.tags.filter(
     tag => tag.toLowerCase() !== tagToRemove.toLowerCase(),
   );
 
+  // If no tags were removed, return false
   if (frontmatter.tags.length === originalLength) {
     return false;
   }
 
+  // Write back updated frontmatter
   await writeHugoFile({ filePath, frontmatter, content });
 
   return true;
