@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a DoD database project built with Bun, Firebase, and the Google AI SDK for AI-powered audio transcript processing. The application transcribes audio files, corrects transcripts using AI, identifies speakers, and indexes the content in Firestore with vector embeddings.
+This is a DoD database project built with Bun and the Google AI SDK for AI-powered audio transcript processing. The application transcribes audio files, corrects transcripts using AI, and identifies speakers.
 
 ## Development Commands
 
@@ -83,7 +83,6 @@ Cost savings:
 
 **Other pipeline scripts:**
 
-- `bun run src/scripts/transcript-qa.ts` - Run Q&A over indexed transcripts
 - `bun run src/scripts/check-new-episodes.ts` - Check for and process new episodes (used by GitHub Actions)
 - `bun run src/scripts/reprocess-tags.ts` - Reprocess tags for all episodes after vocabulary changes
 - `bun run src/scripts/generate-hugo-episodes.ts` - Generate Hugo content pages from processed videos
@@ -215,7 +214,6 @@ The transcript processing pipeline is orchestrated via `src/pipeline/youtube-pro
    - **File**: Saves to `data/transcripts/` with date-slug naming
    - **Tracking**: Updates `data/processed-videos.json` with tags array and metadata
    - **Chapters**: YouTube chapters (when present) are extracted and stored in `processed-videos.json` but not yet used in Hugo pages
-   - **Firestore**: Vector embeddings stored with `FieldValue.vector()` for semantic search (TBD)
 
 ### Episode Number Tracking
 
@@ -424,7 +422,6 @@ bun run src/scripts/detect-all-segments.ts --force-verified
 - **Google AI Client**: Exported from `src/ai.ts` using `@google/genai` SDK
 - **Chunking Strategy**: Uses `llm-chunk` library with sentence-based splitting
   - Correction: 5000-10000 tokens, 200 overlap (maintain context)
-  - Embedding: 1000-2000 tokens, 100 overlap (precise retrieval)
 - **Prompt Organization**: Prompts in `src/prompts/` with barrel export
 - **Structured Output**: Uses Zod schemas with `zod-to-json-schema` for type-safe JSON responses
 - **Learning System**: Deterministic corrections + LLM with manual learning loop for continuous improvement
@@ -537,18 +534,14 @@ bun run experiments/runners/model-comparison.ts --all
 │   │   ├── tag-extraction.ts # Tag discovery prompt + schema
 │   │   └── index.ts         # Barrel export
 │   ├── storage/             # Data persistence
-│   │   ├── firestore.ts     # Firestore indexing & retrieval
 │   │   ├── file.ts          # Local file output
 │   │   ├── processed-videos.ts # Episode tracking with tags
 │   │   └── index.ts         # Barrel export
-│   ├── flows/               # Additional AI functions
-│   │   └── transcript-qa.ts # Q&A over indexed transcripts
 │   ├── scripts/             # CLI entry points
 │   │   ├── process-youtube.ts # Run full YouTube processing pipeline
 │   │   ├── reprocess-tags.ts # Reprocess tags for all episodes
 │   │   ├── generate-hugo-episodes.ts # Generate Hugo content from processed videos
-│   │   ├── tools-server.ts # Unified web tools server (port 3000)
-│   │   └── transcript-qa.ts     # Run Q&A function
+│   │   └── tools-server.ts # Unified web tools server (port 3000)
 │   ├── ai.ts                # Google AI client configuration
 │   └── index.ts             # Main barrel export
 ├── data/                     # Sample/output data files
@@ -560,8 +553,16 @@ bun run experiments/runners/model-comparison.ts --all
 │   ├── review-corrections.html # Correction review tool
 │   ├── tag-vocabulary.html  # Tag vocabulary management UI
 │   └── segment-verification.html # Segment verification tool
-├── experiments/              # Pipeline optimization experiments
+├── experiments/              # Pipeline optimization & experimental features
 │   ├── config/              # Experiment configuration (pricing, samples)
+│   │   └── get-firestore-db.ts # Firestore DB initialization (experimental)
+│   ├── storage/             # Experimental storage features
+│   │   ├── index-transcript.ts # Firestore vector indexing (experimental)
+│   │   └── retrieve-from-firestore.ts # Vector search (not implemented)
+│   ├── flows/               # Experimental AI flows
+│   │   └── transcript-qa.ts # Q&A over indexed transcripts (experimental)
+│   ├── scripts/             # Experimental scripts
+│   │   └── transcript-qa.ts # CLI for Q&A (experimental)
 │   ├── lib/                 # Shared utilities (accuracy, cost, parallel)
 │   ├── runners/             # Experiment scripts (baseline, parallel, model)
 │   └── results/             # Experiment output (gitignored)
@@ -580,7 +581,7 @@ Required environment variables:
 
 - `ASSEMBLYAI_API_KEY` - AssemblyAI API key for audio transcription
 - `GEMINI_API_KEY` - Google AI API key for Gemini models
-- `FIREBASE_PROJECT_ID` - Firebase project identifier (for Firestore indexing)
+- `FIREBASE_PROJECT_ID` - (Optional) Firebase project identifier for experimental Firestore features
 
 ## Code Conventions
 
@@ -593,14 +594,12 @@ Required environment variables:
   - Process spawning: Use `Bun.spawn()` instead of `child_process`
   - Path operations: `node:path` is acceptable (no Bun equivalent)
   - See: https://bun.sh/docs/api/file-io
-- **Firebase Admin**: Initialized with project ID from environment for Firestore access
-- **Google AI SDK**: Uses `@google/genai` for text generation and embeddings
+- **Firebase Admin**: Initialized with project ID from environment (for experimental features only)
+- **Google AI SDK**: Uses `@google/genai` for text generation
 
 ## Important Implementation Notes
 
-- The main transcript processing function (`processTranscript` in `src/pipeline/index.ts`) orchestrates: transcription → correction → speaker identification → Firestore indexing
-- Firestore uses vector embeddings (`FieldValue.vector()`) for semantic search capabilities
-- Vector retrieval is TBD - `retrieveFromFirestore` currently returns an empty array pending vector DB solution selection
+- The main transcript processing function (`processTranscript` in `src/pipeline/index.ts`) orchestrates: transcription → correction → speaker identification
 - The project uses Google Drive URLs for audio input (format: `https://drive.google.com/uc?export=download&id={fileId}`)
 - All configuration is centralized in `src/config/` - modify chunking settings, models, or Firebase config there
 - Structured output uses Zod schemas converted via `zod-to-json-schema` for the Google AI SDK

@@ -1,5 +1,5 @@
 import { getFirestore, type Firestore } from "firebase-admin/firestore";
-import { getFirebaseApp } from "./get-firebase-app.js";
+import { getFirebaseApp } from "../../src/config/get-firebase-app.js";
 
 let firestore: Firestore | undefined;
 

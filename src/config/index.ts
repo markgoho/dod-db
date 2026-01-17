@@ -3,7 +3,6 @@ export * from "./get-ambiguous-books.js";
 export * from "./get-book-by-any-name.js";
 export * from "./get-book-by-canonical.js";
 export * from "./get-firebase-app.js";
-export * from "./get-firestore-db.js";
 export * from "./get-new-testament-books.js";
 export * from "./get-old-testament-books.js";
 export * from "./models.js";

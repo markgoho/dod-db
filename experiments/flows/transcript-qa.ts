@@ -1,5 +1,5 @@
-import { ai } from "../ai.js";
-import { qaModel } from "../config/models.js";
+import { ai } from "../../src/ai.js";
+import { qaModel } from "../../src/config/models.js";
 import { retrieveFromFirestore } from "../storage/retrieve-from-firestore.js";
 
 /**

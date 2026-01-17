@@ -2,7 +2,7 @@
  * CLI script to ask questions about transcripts.
  *
  * Usage:
- *   bun run src/scripts/transcript-qa.ts
+ *   bun run experiments/scripts/transcript-qa.ts
  */
 
 import { transcriptQA } from "../flows/transcript-qa.js";

@@ -1,9 +1,9 @@
 import { FieldValue } from "firebase-admin/firestore";
 import { chunk } from "llm-chunk";
-import { ai } from "../ai.js";
-import { embeddingChunking } from "../config/chunking.js";
+import { ai } from "../../src/ai.js";
+import { embeddingChunking } from "../../src/config/chunking.js";
+import { embedderModel } from "../../src/config/models.js";
 import { getFirestoreDb as getFirestoreDatabase } from "../config/get-firestore-db.js";
-import { embedderModel } from "../config/models.js";
 
 const firestore = getFirestoreDatabase();
 
