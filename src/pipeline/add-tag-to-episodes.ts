@@ -87,6 +87,11 @@ export async function addTagToEpisodes(
 					transcript,
 					canonical,
 					enableLlmVerification,
+					{
+						episodeNumber: video.episodeNumber,
+						videoId: video.videoId,
+						title: video.title,
+					},
 				);
 
 				// Merge with existing tags

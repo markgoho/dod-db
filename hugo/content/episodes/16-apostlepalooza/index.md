@@ -26,6 +26,7 @@ tags:
   - Galilee
   - Mary Magdalene
   - Abraham
+  - Gnostic
   - Hebrew Bible
   - Hebrews
   - Judas Iscariot

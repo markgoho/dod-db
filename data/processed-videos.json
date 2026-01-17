@@ -909,6 +909,10 @@
         "mentions": 1
       },
       {
+        "tag": "Eusebius",
+        "mentions": 1
+      },
+      {
         "tag": "Hypostasis",
         "mentions": 1
       },
@@ -2080,6 +2084,10 @@
         "mentions": 2
       },
       {
+        "tag": "Jerome",
+        "mentions": 2
+      },
+      {
         "tag": "Jerusalem",
         "mentions": 2
       },
@@ -2121,6 +2129,10 @@
       },
       {
         "tag": "Galilee",
+        "mentions": 1
+      },
+      {
+        "tag": "Gnostic",
         "mentions": 1
       },
       {
@@ -2247,6 +2259,10 @@
       {
         "tag": "Paul",
         "mentions": 6
+      },
+      {
+        "tag": "Eusebius",
+        "mentions": 4
       },
       {
         "tag": "theology",
@@ -2814,6 +2830,10 @@
         "mentions": 3
       },
       {
+        "tag": "Endor",
+        "mentions": 3
+      },
+      {
         "tag": "etiology",
         "mentions": 3
       },
@@ -2831,6 +2851,10 @@
       },
       {
         "tag": "child sacrifice",
+        "mentions": 2
+      },
+      {
+        "tag": "Eusebius",
         "mentions": 2
       },
       {
@@ -3038,6 +3062,10 @@
         "mentions": 2
       },
       {
+        "tag": "Gnostic",
+        "mentions": 2
+      },
+      {
         "tag": "Hebrew Bible",
         "mentions": 2
       },
@@ -3223,6 +3251,10 @@
       },
       {
         "tag": "Council of Nicaea",
+        "mentions": 1
+      },
+      {
+        "tag": "Eusebius",
         "mentions": 1
       },
       {
@@ -3503,6 +3535,10 @@
       },
       {
         "tag": "James",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerome",
         "mentions": 1
       },
       {
@@ -3949,6 +3985,10 @@
       },
       {
         "tag": "Jeremiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerome",
         "mentions": 2
       },
       {
@@ -6231,6 +6271,10 @@
         "mentions": 1
       },
       {
+        "tag": "Ignatius",
+        "mentions": 1
+      },
+      {
         "tag": "Jeremiah",
         "mentions": 1
       },
@@ -6603,6 +6647,10 @@
       },
       {
         "tag": "Ephesians",
+        "mentions": 2
+      },
+      {
+        "tag": "Eusebius",
         "mentions": 2
       },
       {
@@ -7429,6 +7477,10 @@
         "mentions": 1
       },
       {
+        "tag": "Gnostic",
+        "mentions": 1
+      },
+      {
         "tag": "John of Patmos",
         "mentions": 1
       },
@@ -7524,6 +7576,10 @@
       {
         "tag": "Israel",
         "mentions": 9
+      },
+      {
+        "tag": "Endor",
+        "mentions": 7
       },
       {
         "tag": "Jesus",
@@ -8169,6 +8225,10 @@
       },
       {
         "tag": "Gentiles",
+        "mentions": 1
+      },
+      {
+        "tag": "Gnostic",
         "mentions": 1
       },
       {
@@ -9115,7 +9175,15 @@
         "mentions": 1
       },
       {
+        "tag": "Eusebius",
+        "mentions": 1
+      },
+      {
         "tag": "Gabriel",
+        "mentions": 1
+      },
+      {
+        "tag": "Gnostic",
         "mentions": 1
       },
       {
@@ -10872,7 +10940,15 @@
         "mentions": 1
       },
       {
+        "tag": "Endor",
+        "mentions": 1
+      },
+      {
         "tag": "Irenaeus",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerome",
         "mentions": 1
       },
       {
@@ -11366,6 +11442,10 @@
       },
       {
         "tag": "Christianity",
+        "mentions": 11
+      },
+      {
+        "tag": "Gnostic",
         "mentions": 11
       },
       {
@@ -12168,6 +12248,10 @@
         "mentions": 2
       },
       {
+        "tag": "Endor",
+        "mentions": 2
+      },
+      {
         "tag": "Anatolia",
         "mentions": 1
       },
@@ -12772,6 +12856,10 @@
         "mentions": 6
       },
       {
+        "tag": "Ignatius",
+        "mentions": 6
+      },
+      {
         "tag": "Josephus",
         "mentions": 5
       },
@@ -12793,6 +12881,14 @@
       },
       {
         "tag": "2nd Timothy",
+        "mentions": 3
+      },
+      {
+        "tag": "Eusebius",
+        "mentions": 3
+      },
+      {
+        "tag": "Jerome",
         "mentions": 3
       },
       {
@@ -12824,6 +12920,10 @@
         "mentions": 2
       },
       {
+        "tag": "Theophilus",
+        "mentions": 2
+      },
+      {
         "tag": "1 Peter",
         "mentions": 1
       },
@@ -12837,6 +12937,10 @@
       },
       {
         "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Gnostic",
         "mentions": 1
       },
       {

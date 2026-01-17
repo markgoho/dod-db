@@ -4,7 +4,7 @@
  */
 
 import { tagVocabulary } from '../config/tag-vocabulary.js';
-import { verifyTagMatches } from './verify-tag-matches.js';
+import { verifyTagMatches, type EpisodeContext } from './verify-tag-matches.js';
 import type { EpisodeTag } from '../storage/processed-videos.js';
 import type { TagDefinition } from '../config/tag-vocabulary.js';
 
@@ -15,12 +15,14 @@ import type { TagDefinition } from '../config/tag-vocabulary.js';
  * @param transcript - The transcript text to analyze
  * @param canonical - The canonical tag name to search for
  * @param enableLlmVerification - If true, use LLM to verify ambiguous matches
+ * @param episodeContext - Optional episode information for logging
  * @returns EpisodeTag object with mention count, or null if no matches
  */
 export async function extractSingleTag(
 	transcript: string,
 	canonical: string,
 	enableLlmVerification = true,
+	episodeContext?: EpisodeContext,
 ): Promise<EpisodeTag | null> {
 	// Find tag definition
 	const tagDef = tagVocabulary.find((t) => t.canonical === canonical);
@@ -118,6 +120,7 @@ export async function extractSingleTag(
 			transcript,
 			matches,
 			tagDef as TagDefinition & { llmVerify: true },
+			episodeContext,
 		);
 		verifiedCount = verifiedIndices.length;
 		console.log(

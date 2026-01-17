@@ -10,6 +10,7 @@ tags:
   - Jesus
   - John the Baptist
   - Christianity
+  - Gnostic
   - Herod Antipas
   - Josephus
   - Mesopotamian

@@ -42,6 +42,7 @@ tags:
   - Israel
   - James
   - Jeremiah
+  - Jerome
   - Joseph
   - King James Version
   - Latin Vulgate

@@ -46,6 +46,7 @@ tags:
   - Elijah
   - Genesis
   - Israel
+  - Jerome
   - Jerusalem
   - Judah
   - Numbers
@@ -57,6 +58,7 @@ tags:
   - Book of Revelation
   - Daniel
   - Galilee
+  - Gnostic
   - Jonah
   - Leviticus
   - resurrection

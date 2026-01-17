@@ -45,7 +45,9 @@ tags:
   - divine council
   - Egypt
   - Elijah
+  - Endor
   - Irenaeus
+  - Jerome
   - Judaism
   - Martin Luther
   - Numbers

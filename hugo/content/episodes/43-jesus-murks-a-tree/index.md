@@ -33,6 +33,7 @@ tags:
   - El
   - Galilee
   - Gentiles
+  - Gnostic
   - Hebrew Bible
   - Hell
   - Herod the Great

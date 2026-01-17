@@ -24,6 +24,7 @@ tags:
   - angel
   - apocalypse
   - Athanasius of Alexandria
+  - Eusebius
   - Hypostasis
   - Israel
   - Justin Martyr

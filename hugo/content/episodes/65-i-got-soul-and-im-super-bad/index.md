@@ -15,6 +15,7 @@ tags:
   - Mesopotamian
   - YHWH
   - El
+  - Endor
   - Anatolia
   - archaeology
   - Book of Isaiah

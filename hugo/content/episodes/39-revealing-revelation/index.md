@@ -45,6 +45,7 @@ tags:
   - Council of Nicaea
   - Deuteronomy
   - Euphrates
+  - Gnostic
   - John of Patmos
   - Justin Martyr
   - Numbers

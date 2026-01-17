@@ -20,12 +20,15 @@ tags:
   - manuscript
   - Christianity
   - Hebrews
+  - Ignatius
   - Josephus
   - Didache
   - Hebrew Bible
   - Jerusalem
   - Justin Martyr
   - 2nd Timothy
+  - Eusebius
+  - Jerome
   - theology
   - 1 Timothy
   - Capernaum
@@ -33,10 +36,12 @@ tags:
   - John the Baptist
   - New Testament
   - resurrection
+  - Theophilus
   - 1 Peter
   - Abraham
   - Easter
   - Egypt
+  - Gnostic
   - Latin Vulgate
   - Moses
   - Trinity

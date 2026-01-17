@@ -29,6 +29,7 @@ tags:
   - Egypt
   - First Corinthians
   - Holy Spirit
+  - Ignatius
   - Jeremiah
   - Judaism
   - King Saul

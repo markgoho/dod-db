@@ -5,7 +5,7 @@
  */
 
 import { tagVocabulary } from '../config/tag-vocabulary.js';
-import { verifyTagMatches } from './verify-tag-matches.js';
+import { verifyTagMatches, type EpisodeContext } from './verify-tag-matches.js';
 import type { EpisodeTag } from '../storage/processed-videos.js';
 import type { TagDefinition } from '../config/tag-vocabulary.js';
 
@@ -19,13 +19,14 @@ import type { TagDefinition } from '../config/tag-vocabulary.js';
  * @param transcript - The transcript text to analyze
  * @param options - Optional configuration
  * @param options.enableLlmVerification - If true, use LLM to verify tags with llmVerify: true
+ * @param options.episodeContext - Optional episode information for logging
  * @returns Array of tags with mention counts
  */
 export async function extractTagsDeterministic(
 	transcript: string,
-	options: { enableLlmVerification?: boolean } = {},
+	options: { enableLlmVerification?: boolean; episodeContext?: EpisodeContext } = {},
 ): Promise<EpisodeTag[]> {
-	const { enableLlmVerification = false } = options;
+	const { enableLlmVerification = false, episodeContext } = options;
 
 	// Only match accepted tags (not proposed or rejected)
 	const activeVocabulary = tagVocabulary.filter(t => t.status === 'accepted');
@@ -174,6 +175,7 @@ export async function extractTagsDeterministic(
 				transcript,
 				matches,
 				tagDef,
+				episodeContext,
 			);
 
 			// Count only verified matches (only add if > 0)
