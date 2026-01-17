@@ -37,15 +37,15 @@
         0deg,
         transparent,
         transparent 2px,
-        rgba(0, 0, 0, 0.01) 2px,
-        rgba(0, 0, 0, 0.01) 4px
+        color-mix(in srgb, var(--tan-900) 1%, transparent) 2px,
+        color-mix(in srgb, var(--tan-900) 1%, transparent) 4px
       ),
       repeating-linear-gradient(
         90deg,
         transparent,
         transparent 2px,
-        rgba(0, 0, 0, 0.01) 2px,
-        rgba(0, 0, 0, 0.01) 4px
+        color-mix(in srgb, var(--tan-900) 1%, transparent) 2px,
+        color-mix(in srgb, var(--tan-900) 1%, transparent) 4px
       );
     pointer-events: none;
     opacity: 0.5;
@@ -85,7 +85,7 @@
     width: 100%;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0 0.5rem 1rem color-mix(in srgb, var(--tan-900) 10%, transparent));
   }
 }
 
@@ -102,7 +102,7 @@
   svg {
     width: 100%;
     height: 100%;
-    filter: drop-shadow(0 0.25rem 0.5rem rgba(0, 0, 0, 0.05));
+    filter: drop-shadow(0 0.25rem 0.5rem color-mix(in srgb, var(--tan-900) 5%, transparent));
   }
 
   @media (max-width: 60rem) {
@@ -132,7 +132,7 @@
 
 .home-hero__title-main {
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-size: var(--step-6);
   font-weight: 800;
   line-height: 1;
   color: var(--olive-600);
@@ -148,8 +148,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: clamp(4rem, 15vw, 8rem);
-    height: 3px;
+    width: clamp(var(--space-xl), 15vw, var(--space-2xl));
+    height: var(--border-radius-sm);
     background: linear-gradient(
       90deg,
       var(--brown-500) 0%,
@@ -161,7 +161,7 @@
 
 .home-hero__title-sub {
   font-family: var(--font-family-main);
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: var(--step-0);
   font-weight: 600;
   color: var(--brown-450);
   letter-spacing: 0.05em;
@@ -171,7 +171,7 @@
 .home-hero__tagline {
   max-width: 40rem;
   margin-top: var(--space-l);
-  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-size: var(--step-0);
   font-weight: 400;
   line-height: 1.6;
   color: var(--olive-500);
@@ -197,26 +197,29 @@
   flex-direction: column;
   align-items: center;
   padding: var(--space-m) var(--space-l);
-  background: rgba(255, 255, 255, 0.6);
+  background: color-mix(in srgb, var(--tan-000) 60%, transparent);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--brown-300);
-  border-radius: 0.25rem;
+  border: var(--border-width-sm) solid var(--brown-300);
+  border-radius: var(--border-radius-sm);
   box-shadow:
-    0 0.5rem 1rem rgba(0, 0, 0, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    0 0.5rem 1rem color-mix(in srgb, var(--tan-900) 5%, transparent),
+    inset 0 1px 0 color-mix(in srgb, var(--tan-000) 50%, transparent);
   transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-0.25rem);
     box-shadow:
-      0 1rem 2rem rgba(0, 0, 0, 0.1),
-      inset 0 1px 0 rgba(255, 255, 255, 0.5);
+      0 1rem 2rem color-mix(in srgb, var(--tan-900) 10%, transparent),
+      inset 0 1px 0 color-mix(in srgb, var(--tan-000) 50%, transparent);
   }
 }
 
 .stat-card__number {
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: var(--step-4);
   font-weight: 700;
   line-height: 1;
   color: var(--brown-500);
@@ -244,7 +247,7 @@
   top: -0.5rem;
   left: 0;
   font-family: var(--font-serif);
-  font-size: clamp(8rem, 15vw, 12rem);
+  font-size: var(--font-decorative-md);
   font-weight: 700;
   line-height: 1;
   color: var(--brown-200);
@@ -262,7 +265,7 @@
 }
 
 .home-intro__text {
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: var(--step-1);
   font-weight: 400;
   line-height: 1.7;
   color: var(--olive-600);
@@ -306,8 +309,8 @@
   position: relative;
   display: block;
   padding: var(--space-xl);
-  background: white;
-  border: 2px solid var(--brown-300);
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--brown-300);
   text-decoration: none;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -335,8 +338,8 @@
     transform: translateY(-0.5rem) translateX(0.25rem);
     border-color: var(--brown-500);
     box-shadow:
-      -0.5rem 1rem 2rem rgba(0, 0, 0, 0.1),
-      -0.25rem 0.5rem 1rem rgba(0, 0, 0, 0.05);
+      -0.5rem 1rem 2rem color-mix(in srgb, var(--tan-900) 10%, transparent),
+      -0.25rem 0.5rem 1rem color-mix(in srgb, var(--tan-900) 5%, transparent);
 
     &::before {
       width: 6rem;
@@ -393,38 +396,38 @@
 
   // Quaternary variant with blue accent for guests
   &--quaternary {
-    border-color: var(--blue-300);
+    border-color: var(--teal-300);
 
     &::before {
       background: linear-gradient(
         135deg,
         transparent 0%,
         transparent 50%,
-        var(--blue-100) 50%,
-        var(--blue-100) 100%
+        var(--tan-100) 50%,
+        var(--tan-100) 100%
       );
     }
 
     &:hover {
-      border-color: var(--blue-400);
+      border-color: var(--teal-400);
 
       &::before {
         background: linear-gradient(
           135deg,
           transparent 0%,
           transparent 50%,
-          var(--blue-300) 50%,
-          var(--blue-300) 100%
+          var(--teal-300) 50%,
+          var(--teal-300) 100%
         );
       }
     }
 
     .feature-card__decoration {
-      border-color: var(--blue-400);
+      border-color: var(--teal-400);
     }
 
     .feature-card__arrow {
-      color: var(--blue-500);
+      color: var(--teal-500);
     }
   }
 }
@@ -435,7 +438,7 @@
   right: var(--space-m);
   width: 3rem;
   height: 3rem;
-  border: 2px solid var(--brown-400);
+  border: var(--border-width-sm) solid var(--brown-400);
   border-radius: 50%;
   opacity: 0.3;
   transition: all 0.4s ease;
@@ -448,7 +451,7 @@
 
 .feature-card__title {
   font-family: var(--font-serif);
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-size: var(--step-2);
   font-weight: 700;
   line-height: 1.2;
   color: var(--olive-600);
@@ -457,7 +460,7 @@
 }
 
 .feature-card__description {
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: var(--step-0);
   line-height: 1.6;
   color: var(--olive-500);
   margin: 0 0 var(--space-m) 0;
@@ -466,7 +469,7 @@
 
 .feature-card__arrow {
   display: inline-block;
-  font-size: 2rem;
+  font-size: var(--step-2);
   color: var(--brown-500);
   transition: transform 0.3s ease;
 }
@@ -476,7 +479,7 @@
   padding: var(--space-xl);
   background: var(--olive-700);
   color: var(--tan-000);
-  border-radius: 0.25rem;
+  border-radius: var(--border-radius-sm);
 
   @media (min-width: 48rem) {
     grid-column: span 2;
@@ -490,7 +493,7 @@
 
 .recent-episodes__title {
   font-family: var(--font-serif);
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-size: var(--step-2);
   font-weight: 700;
   color: var(--tan-100);
   margin: 0 0 var(--space-l) 0;
@@ -504,8 +507,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 3rem;
-    height: 2px;
+    width: var(--space-l);
+    height: var(--border-radius-sm);
     background: var(--brown-400);
   }
 }
@@ -530,13 +533,13 @@
   padding: var(--space-s);
   text-decoration: none;
   color: inherit;
-  border-left: 2px solid transparent;
+  border-left: var(--border-width-sm) solid transparent;
   transition: all 0.3s ease;
 
   &:hover {
     border-left-color: var(--brown-400);
     padding-left: var(--space-m);
-    background: rgba(255, 255, 255, 0.05);
+    background: color-mix(in srgb, var(--tan-000) 5%, transparent);
 
     .recent-episodes__number {
       color: var(--brown-400);
@@ -547,7 +550,7 @@
 
 .recent-episodes__number {
   font-family: var(--font-serif);
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-size: var(--step-1);
   font-weight: 700;
   color: var(--brown-300);
   min-width: 3rem;
@@ -555,7 +558,7 @@
 }
 
 .recent-episodes__title-text {
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: var(--step-0);
   line-height: 1.4;
   color: var(--tan-100);
 }

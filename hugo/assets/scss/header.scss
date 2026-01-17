@@ -82,7 +82,7 @@
 }
 
 .navbar__nav > li {
-  border-bottom: 5px solid transparent;
+  border-bottom: var(--border-width-md) solid transparent;
 }
 
 .navbar__nav > .active {

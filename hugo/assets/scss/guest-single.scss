@@ -6,15 +6,6 @@
 // Import episode card component
 @use 'episode-card';
 
-:root {
-  --blue-100: hsl(210, 40%, 94%);
-  --blue-200: hsl(210, 40%, 85%);
-  --blue-300: hsl(210, 45%, 65%);
-  --blue-400: hsl(210, 50%, 45%);
-  --blue-500: hsl(210, 55%, 35%);
-  --blue-600: hsl(210, 60%, 25%);
-}
-
 main.container {
   max-width: 80rem;
   margin: 0 auto;
@@ -36,19 +27,19 @@ main.container {
   margin-bottom: var(--space-l);
   font-size: var(--step--1);
   font-weight: 600;
-  color: var(--blue-500);
+  color: var(--teal-500);
   text-decoration: none;
-  background: var(--blue-100);
-  border: 1px solid var(--blue-300);
+  background: var(--tan-100);
+  border: var(--border-width-sm) solid var(--teal-300);
   border-radius: 2rem;
   transition: all 0.2s ease;
 
   &:hover {
-    background: var(--blue-400);
-    color: white;
+    background: var(--teal-400);
+    color: var(--tan-000);
 
     .guest-header__back-arrow {
-      transform: translateX(-0.25rem);
+      transform: translateX(calc(-1 * var(--space-3xs)));
     }
   }
 }
@@ -63,7 +54,7 @@ main.container {
 
 .guest-header__title {
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-size: var(--step-6);
   font-weight: 800;
   color: var(--olive-600);
   margin: 0 0 var(--space-l) 0;
@@ -78,12 +69,12 @@ main.container {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: clamp(4rem, 40%, 10rem);
-    height: 3px;
+    width: clamp(var(--space-xl), 40%, var(--space-3xl));
+    height: var(--border-radius-sm);
     background: linear-gradient(
       90deg,
       transparent 0%,
-      var(--blue-400) 50%,
+      var(--teal-400) 50%,
       transparent 100%
     );
   }
@@ -99,18 +90,18 @@ main.container {
   flex-direction: column;
   align-items: center;
   padding: var(--space-s) var(--space-l);
-  background: rgba(255, 255, 255, 0.6);
+  background: color-mix(in srgb, var(--tan-000) 60%, transparent);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--blue-300);
-  border-radius: 0.25rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  border: var(--border-width-sm) solid var(--teal-300);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 var(--space-2xs) var(--space-s) color-mix(in srgb, var(--tan-900) 5%, transparent);
 }
 
 .guest-header__stat-number {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: var(--step-3);
   font-weight: 700;
-  color: var(--blue-500);
+  color: var(--teal-500);
 }
 
 .guest-header__stat-label {
@@ -118,7 +109,7 @@ main.container {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--blue-600);
+  color: var(--teal-600);
 }
 
 // Episodes section

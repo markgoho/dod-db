@@ -25,7 +25,7 @@ main.container {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: var(--font-serif);
-    font-size: clamp(10rem, 25vw, 18rem);
+    font-size: var(--font-decorative-lg);
     font-weight: 800;
     color: var(--brown-200);
     opacity: 0.15;
@@ -46,7 +46,7 @@ main.container {
   color: var(--brown-450);
   text-decoration: none;
   background: var(--tan-100);
-  border: 1px solid var(--brown-300);
+  border: var(--border-width-sm) solid var(--brown-300);
   border-radius: 2rem;
   transition: all 0.2s ease;
 
@@ -70,7 +70,7 @@ main.container {
 
 .tag-header__title {
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-size: var(--step-6);
   font-weight: 800;
   color: var(--olive-600);
   margin: 0 0 var(--space-l) 0;
@@ -106,16 +106,16 @@ main.container {
   flex-direction: column;
   align-items: center;
   padding: var(--space-s) var(--space-l);
-  background: rgba(255, 255, 255, 0.6);
+  background: color-mix(in srgb, var(--tan-000) 60%, transparent);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--brown-300);
-  border-radius: 0.25rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  border: var(--border-width-sm) solid var(--brown-300);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 0.5rem 1rem color-mix(in srgb, var(--tan-900) 5%, transparent);
 }
 
 .tag-header__stat-number {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: var(--step-3);
   font-weight: 700;
   color: var(--brown-500);
 }
@@ -147,7 +147,7 @@ main.container {
 // Current tag highlight within episode cards
 .episode-card__tag--current {
   background: var(--olive-500);
-  color: white;
+  color: var(--tan-000);
 
   &:hover {
     background: var(--olive-600);

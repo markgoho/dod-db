@@ -3,7 +3,7 @@
 
   padding: var(--space-m) var(--space-l);
   background-color: var(--olive-700);
-  border-top: 5px solid var(--tan-500);
+  border-top: var(--border-width-md) solid var(--tan-500);
   container: footer / inline-size;
   color: var(--tan-300);
 }
@@ -13,7 +13,7 @@
   grid-template-columns: 1fr;
   gap: var(--space-m);
   padding-block-end: var(--space-m);
-  border-bottom: 2px solid var(--tan-600);
+  border-bottom: var(--border-width-sm) solid var(--tan-600);
 }
 
 .footer__nav {

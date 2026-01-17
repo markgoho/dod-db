@@ -19,7 +19,7 @@ main.container {
 
 .episodes-header__title {
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: var(--step-5);
   font-weight: 800;
   color: var(--olive-600);
   margin: 0 0 var(--space-l) 0;
@@ -48,16 +48,16 @@ main.container {
   flex-direction: column;
   align-items: center;
   padding: var(--space-s) var(--space-l);
-  background: rgba(255, 255, 255, 0.6);
+  background: color-mix(in srgb, var(--tan-000) 60%, transparent);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--brown-300);
-  border-radius: 0.25rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  border: var(--border-width-sm) solid var(--brown-300);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 0.5rem 1rem color-mix(in srgb, var(--tan-900) 5%, transparent);
 }
 
 .episodes-header__count-number {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: var(--step-3);
   font-weight: 700;
   color: var(--brown-500);
 }
