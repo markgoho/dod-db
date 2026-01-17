@@ -4,7 +4,6 @@
  */
 
 import * as path from 'node:path';
-import * as yaml from 'js-yaml';
 import type { ProcessedVideo } from '../storage/processed-videos.js';
 import { SEGMENT_LABELS, type SegmentType } from '../config/segment-patterns.js';
 
@@ -266,7 +265,7 @@ export function transformToShortcodes(content: string): string {
 }
 
 /**
- * Generate YAML frontmatter for an episode using js-yaml.
+ * Generate YAML frontmatter for an episode using Bun.YAML.
  */
 export function generateFrontmatter(video: ProcessedVideo, cleanTitle: string): string {
 	const tags = video.tags?.map((t) => t.tag) ?? [];
@@ -274,7 +273,7 @@ export function generateFrontmatter(video: ProcessedVideo, cleanTitle: string): 
 	const { segments, segmentData } = formatSegmentsForFrontmatter(video.segments);
 
 	// Build frontmatter object
-	// Convert date string to Date object so yaml.dump produces consistent unquoted format
+	// Convert date string to Date object so Bun.YAML.stringify produces consistent unquoted format
 	const frontmatter: Record<string, unknown> = {
 		title: cleanTitle,
 		date: new Date(video.publishedAt),
@@ -302,8 +301,8 @@ export function generateFrontmatter(video: ProcessedVideo, cleanTitle: string): 
 
 	frontmatter.draft = false;
 
-	// Use js-yaml to serialize
-	const frontmatterYaml = yaml.dump(frontmatter);
+	// Use Bun.YAML to serialize (with 2-space indentation for block-style output)
+	const frontmatterYaml = Bun.YAML.stringify(frontmatter, null, 2);
 
 	return `---\n${frontmatterYaml}---`;
 }

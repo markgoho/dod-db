@@ -2,7 +2,6 @@
  * Hugo frontmatter utilities for reading and writing episode metadata.
  */
 
-import * as yaml from 'js-yaml';
 import * as path from 'node:path';
 import {
 	extractCleanTitle,
@@ -13,7 +12,7 @@ import type { ProcessedVideo } from '../storage/processed-videos.js';
 /**
  * Hugo episode frontmatter structure.
  * Matches the frontmatter in hugo/content/episodes/{number}/index.md
- * Note: date can be string or Date depending on yaml.load() auto-conversion
+ * Note: date can be string or Date depending on Bun.YAML.parse() auto-conversion
  */
 export interface HugoEpisodeFrontmatter {
 	title: string;
@@ -49,7 +48,7 @@ export async function parseHugoFile(filePath: string): Promise<{
 
 	const frontmatterYaml = match[1];
 	const content = match[2];
-	const frontmatter = yaml.load(frontmatterYaml) as HugoEpisodeFrontmatter;
+	const frontmatter = Bun.YAML.parse(frontmatterYaml) as HugoEpisodeFrontmatter;
 
 	return { frontmatter, content };
 }
@@ -71,13 +70,13 @@ export async function writeHugoFile({
 	content: string;
 }): Promise<void> {
 	// Normalize date to Date object for consistent formatting
-	// Ensures yaml.dump produces unquoted date with milliseconds
+	// Ensures Bun.YAML.stringify produces unquoted date with milliseconds
 	const normalizedFrontmatter = {
 		...frontmatter,
 		date: typeof frontmatter.date === 'string' ? new Date(frontmatter.date) : frontmatter.date,
 	};
 
-	const frontmatterYaml = yaml.dump(normalizedFrontmatter);
+	const frontmatterYaml = Bun.YAML.stringify(normalizedFrontmatter, null, 2);
 	const fullContent = `---\n${frontmatterYaml}---\n${content}`;
 	await Bun.write(filePath, fullContent);
 }

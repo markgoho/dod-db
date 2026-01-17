@@ -16,13 +16,11 @@
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@types/bun": "latest",
-    "@types/js-yaml": "^4.0.9",
     "eslint": "^9.39.2",
     "eslint-plugin-unicorn": "^62.0.0",
     "firebase-tools": "^15.3.1",
     "globals": "^17.0.0",
     "jiti": "^2.6.1",
-    "js-yaml": "^4.1.1",
     "prettier": "^3.7.4",
     "prettier-plugin-go-template": "^0.0.15",
     "typescript-eslint": "^8.53.0"
