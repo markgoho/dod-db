@@ -1,18 +1,16 @@
 ---
 title: Black Hole Sun
-date: 2024-04-15T00:00:00Z
+date: 2024-04-15T00:00:00.000Z
 episodeNumber: 54
 videoId: cY_sI0kis0g
 aliases:
   - /episodes/54/
 tags:
   - Paul
-  - Book of Acts
   - Jesus
   - Gentiles
   - Jerusalem
   - Jonah
-  - Christianity
   - James
   - Edom
   - Barnabas
@@ -20,33 +18,24 @@ tags:
   - YHWH
   - Peter
   - Luke
-  - Book of Amos
   - Council of Jerusalem
   - Nineveh
   - Judaism
   - Moses
   - Septuagint
-  - Book of Revelation
   - Hell
   - Israel
   - Rapture
   - Silas
   - Adam
-  - Book of Jonah
   - Cornelius
-  - gods
-  - Gospel of John
-  - Gospel of Matthew
-  - Hebrew Bible
   - Holy Spirit
   - King David
   - Syria
-  - Genesis
   - Hebrews
   - Herod the Great
   - Mary Magdalene
   - Nero
-  - New Testament
   - Pergamum
   - Samaria
   - Satan
@@ -56,10 +45,10 @@ segments:
   - Conspiracy Watch
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 240.085
   - type: conspiracy-watch
-    label: "Conspiracy Watch"
+    label: Conspiracy Watch
     startSeconds: 2649.158
 draft: false
 ---

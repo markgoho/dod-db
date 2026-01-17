@@ -1,6 +1,6 @@
 ---
 title: Where Angels Fear to Swim
-date: 2023-10-08T00:00:00Z
+date: 2023-10-08T00:00:00.000Z
 episodeNumber: 27
 videoId: caKa7DTkSkQ
 aliases:
@@ -10,25 +10,16 @@ tags:
   - Euphrates
   - Book of Enoch
   - Nephilim
-  - Book of Revelation
-  - Genesis
   - Israel
   - YHWH
-  - Christianity
   - Flood
   - Judaism
   - Eschatology
-  - gods
-  - Hebrew Bible
   - Hell
-  - Jude
   - Adam
-  - Book of Job
   - etiology
   - Goliath
-  - Kings
   - Mesopotamian
-  - New Testament
   - Noah
   - Rapture
   - biblical canon
@@ -38,9 +29,7 @@ tags:
   - Islam
   - Jerusalem
   - King James Version
-  - Numbers
   - Peter
-  - Psalm
   - Satan
   - Septuagint
   - Seth
@@ -50,10 +39,10 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: all-right-lets-see-it
-    label: "All Right, Let's See It"
+    label: All Right, Let's See It
     startSeconds: 124.78
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 1286
 draft: false
 ---

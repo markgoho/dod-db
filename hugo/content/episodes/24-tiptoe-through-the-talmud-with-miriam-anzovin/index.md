@@ -1,6 +1,6 @@
 ---
 title: Tiptoe Through the Talmud
-date: 2023-09-18T00:00:00Z
+date: 2023-09-18T00:00:00.000Z
 episodeNumber: 24
 videoId: 8OqwDYUzrIY
 aliases:
@@ -10,15 +10,11 @@ tags:
   - Torah
   - Judaism
   - Israel
-  - Hebrew Bible
   - Jerusalem
   - Jesus
   - Babylon
   - Hebrews
   - Moses
-  - Christianity
-  - Ezekiel
-  - Genesis
   - Judah
   - Passover
   - Romans

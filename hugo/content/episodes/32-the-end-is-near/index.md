@@ -1,6 +1,6 @@
 ---
 title: The End is Near?
-date: 2023-11-13T00:00:00Z
+date: 2023-11-13T00:00:00.000Z
 episodeNumber: 32
 videoId: i8nHBWR-8CM
 aliases:
@@ -9,48 +9,35 @@ tags:
   - Rapture
   - Jesus
   - Eschatology
-  - Christianity
   - Daniel
   - preterist interpretation
-  - Gospel of Mark
   - Matthew
   - Paul
   - YHWH
-  - 1 Thessalonians
   - Babylon
-  - Ezekiel
   - futurist interpretation
   - Israel
   - Jeremiah
-  - Book of Isaiah
-  - Book of Revelation
   - Gaza
-  - Gospel of John
   - Isaiah
   - Jerusalem
-  - New Testament
   - Antiochus IV Epiphanes
   - Baal
-  - Book of Daniel
-  - Genesis
   - Hebrews
   - Hell
   - King James Version
   - Luke
-  - Numbers
-  - resurrection
   - Satan
-  - theology
   - Univocality
 segments:
   - Ex Eventu
   - What Does That Mean?
 segmentData:
   - type: ex-eventu
-    label: "Ex Eventu"
+    label: Ex Eventu
     startSeconds: 104
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 1828
 draft: false
 ---

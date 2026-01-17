@@ -1,37 +1,27 @@
 ---
 title: Adam and Steve (what the Bible says about homosexuality)
-date: 2023-06-12T00:00:00Z
+date: 2023-06-12T00:00:00.000Z
 episodeNumber: 10
 videoId: gW6w-AOiKNM
 aliases:
   - /episodes/10/
 tags:
   - Paul
-  - Leviticus
   - angel
-  - New Testament
   - Adam
   - Philo of Alexandria
   - Judaism
   - Lilith
-  - Genesis
   - Gentiles
-  - Hebrew Bible
   - Jesus
-  - 1 Timothy
-  - Christianity
   - Israel
   - Sodom
-  - First Corinthians
   - Garden of Eden
-  - Jude
   - Mesopotamian
   - Romans
   - etiology
   - Eve
-  - Judges
   - Matthew
-  - 1 Thessalonians
   - Aesop
   - Book of Enoch
   - Egypt

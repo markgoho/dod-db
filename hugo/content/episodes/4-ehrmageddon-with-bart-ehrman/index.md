@@ -1,18 +1,13 @@
 ---
 title: Ehrmageddon!
-date: 2023-05-01T00:00:00Z
+date: 2023-05-01T00:00:00.000Z
 episodeNumber: 4
 videoId: WidY7lIBiyY
 aliases:
   - /episodes/4/
 tags:
   - Bart Ehrman
-  - Book of Revelation
   - Jesus
-  - Christianity
-  - Gospel of John
-  - New Testament
-  - Hebrew Bible
   - angel
   - Rapture
   - biblical canon
@@ -27,26 +22,21 @@ tags:
   - Council of Nicaea
   - Hebrews
   - Matthew
-  - theology
   - Trinity
   - Babylon
   - Christian Nationalism
   - Domitian
   - Euphrates
-  - Ezekiel
   - futurist interpretation
-  - Gospel of Matthew
   - inerrancy
   - James
   - Jerusalem
   - Paul
   - preterist interpretation
-  - Psalm
   - Romans
   - textual criticism
   - Univocality
   - YHWH
-  - Zechariah
 guests:
   - Bart Ehrman
 draft: false

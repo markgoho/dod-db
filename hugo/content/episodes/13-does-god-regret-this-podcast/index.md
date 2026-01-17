@@ -1,6 +1,6 @@
 ---
 title: Does God Regret this Podcast?
-date: 2023-07-03T00:00:00Z
+date: 2023-07-03T00:00:00.000Z
 episodeNumber: 13
 videoId: 5bA0OigwXR4
 aliases:
@@ -9,8 +9,6 @@ tags:
   - Jerusalem
   - Israel
   - Lachish
-  - theology
-  - Genesis
   - Hezekiah
   - YHWH
   - Dead Sea
@@ -19,11 +17,8 @@ tags:
   - archaeology
   - King David
   - Goliath
-  - Gospel of John
-  - Christianity
   - Nineveh
   - Peter
-  - 1 Samuel
   - Assyria
   - Baal
   - Babylon
@@ -31,26 +26,24 @@ tags:
   - Deuteronomy
   - Elhanan son of Jair
   - epigraphy
+  - Esau
   - Galilee
   - Ham
-  - Hebrew Bible
   - Isaac
   - James
   - Joshua
-  - Judges
   - Ken Ham
   - monotheism
-  - New Testament
   - Samuel
 segments:
   - Archaeology of Israel
   - All Right, Let's See It
 segmentData:
   - type: archaeology-of-israel
-    label: "Archaeology of Israel"
+    label: Archaeology of Israel
     startSeconds: 316
   - type: all-right-lets-see-it
-    label: "All Right, Let's See It"
+    label: All Right, Let's See It
     startSeconds: 2224.59
 draft: false
 ---

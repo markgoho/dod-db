@@ -1,6 +1,6 @@
 ---
 title: A Jewish Paul
-date: 2023-10-01T00:00:00Z
+date: 2023-10-01T00:00:00.000Z
 episodeNumber: 26
 videoId: sVplhtKv9Jc
 aliases:
@@ -12,21 +12,14 @@ tags:
   - Abraham
   - James
   - Romans
-  - Christianity
   - Gentiles
   - Hebrews
-  - resurrection
-  - theology
   - circumcision
-  - First Corinthians
   - Pastoral Epistles
   - Matthew
-  - Genesis
-  - New Testament
   - Philo of Alexandria
   - Rapture
   - Trinity
-  - 2nd Timothy
   - apocalypse
   - Bart Ehrman
   - biblical canon

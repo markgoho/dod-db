@@ -1,38 +1,31 @@
 ---
 title: Take My Wife... Please!
-date: 2024-07-22T00:00:00Z
+date: 2024-07-22T00:00:00.000Z
 episodeNumber: 68
 videoId: ZwJai1EPbw4
 aliases:
   - /episodes/68/
 tags:
   - Judah
+  - Er
   - Onan
   - Tamar
   - Deuteronomy
   - Israel
   - Ruth
-  - Book of Exodus
-  - Genesis
   - Boaz
-  - Hebrew Bible
   - Joseph
   - YHWH
-  - Leviticus
-  - Book of Proverbs
   - Canaan
   - Egypt
-  - Gospel of Matthew
-  - Judges
   - Samson
   - Satan
   - Ten Commandments
-  - theology
 segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 2267.944
 draft: false
 ---

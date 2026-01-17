@@ -1,34 +1,23 @@
 ---
 title: Does the Bible say the Earth is Flat?
-date: 2024-05-06T00:00:00Z
+date: 2024-05-06T00:00:00.000Z
 episodeNumber: 57
 videoId: pXbbaMXd62k
 aliases:
   - /episodes/57/
 tags:
-  - Gospel of Matthew
   - Jesus
-  - Psalm
-  - Genesis
-  - Book of Job
-  - Christianity
   - Book of Enoch
-  - Book of Isaiah
   - David Carr
-  - gods
   - King David
-  - Zechariah
   - Enoch
-  - Hebrew Bible
   - Univocality
   - YHWH
   - Athenagoras
-  - Book of Proverbs
   - divine council
   - Egypt
   - El
   - Eve
-  - Gospel of John
   - Jerusalem
   - Judah
   - King James Version
@@ -39,10 +28,10 @@ segments:
   - Opportunities for Growth
 segmentData:
   - type: conspiracy-watch
-    label: "Conspiracy Watch"
+    label: Conspiracy Watch
     startSeconds: 163.175
   - type: opportunities-for-growth
-    label: "Opportunities for Growth"
+    label: Opportunities for Growth
     startSeconds: 1990.792
 draft: false
 ---

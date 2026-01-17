@@ -1,12 +1,11 @@
 ---
 title: Jesus Murks a Tree
-date: 2024-01-29T00:00:00Z
+date: 2024-01-29T00:00:00.000Z
 episodeNumber: 43
 videoId: OsQMmt2QnPU
 aliases:
   - /episodes/43/
 tags:
-  - Book of Isaiah
   - Jesus
   - Matthew
   - Jerusalem
@@ -19,26 +18,19 @@ tags:
   - Cyrus the Great
   - Judah
   - Bethany
-  - Gospel of Mark
   - Second Temple period
   - YHWH
   - Josephus
-  - Kings
   - Romans
-  - 2 Kings
   - Bernhard Duhm
   - Bethlehem
-  - Book of Revelation
-  - Christianity
   - El
   - Galilee
   - Gentiles
   - Gnostic
-  - Hebrew Bible
   - Hell
   - Herod the Great
   - Joseph
-  - New Testament
   - Passover
   - Peter
   - theophany
@@ -47,10 +39,10 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 89.85
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 1892
 draft: false
 ---

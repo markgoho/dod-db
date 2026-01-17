@@ -1,6 +1,6 @@
 ---
 title: Did the Exodus Really Happen?
-date: 2023-08-28T00:00:00Z
+date: 2023-08-28T00:00:00.000Z
 episodeNumber: 21
 videoId: SHLLzroKzI0
 aliases:
@@ -11,21 +11,15 @@ tags:
   - Moses
   - child sacrifice
   - Hebrews
-  - Ezekiel
-  - Hebrew Bible
   - Molek
   - Ten Commandments
-  - gods
   - Carthage
   - Baal
   - Babylon
-  - Book of Exodus
   - Judaism
   - Abraham
-  - Numbers
   - Samuel
   - YHWH
-  - Christianity
   - Deuteronomy
   - Hezekiah
   - Isaac
@@ -38,21 +32,18 @@ tags:
   - Flood
   - Jerusalem
   - Joshua
-  - Leviticus
   - Masoretic Text
   - Moabites
-  - Psalm
-  - resurrection
   - Ugarit
 segments:
   - That's History
   - Chapter and Verse
 segmentData:
   - type: thats-history
-    label: "That's History"
+    label: That's History
     startSeconds: 126
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 2010
 draft: false
 ---

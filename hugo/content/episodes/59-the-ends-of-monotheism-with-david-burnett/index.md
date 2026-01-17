@@ -1,21 +1,16 @@
 ---
 title: The End(s) of Monotheism
-date: 2024-05-20T00:00:00Z
+date: 2024-05-20T00:00:00.000Z
 episodeNumber: 59
 videoId: BdJ_8a4ospk
 aliases:
   - /episodes/59/
 tags:
   - Monotheism
-  - gods
   - Paul
-  - Christianity
   - Hypostasis
   - Jesus
   - Philo of Alexandria
-  - New Testament
-  - Hebrew Bible
-  - Book of Isaiah
   - Judaism
   - Abraham
   - Athenagoras
@@ -26,19 +21,13 @@ tags:
   - YHWH
   - Debra Scoggins Ballentine
   - Septuagint
-  - theology
   - angel
   - apocalypse
   - Baal
-  - Book of Exodus
-  - Book of Proverbs
-  - Book of Revelation
   - David Burnett
   - divine council
   - El
   - Elephantine
-  - First Corinthians
-  - Genesis
   - Hebrews
   - Herod Antipas
   - Herod the Great
@@ -46,7 +35,6 @@ tags:
   - Islam
   - King James Version
   - Latin Vulgate
-  - resurrection
   - Romans
   - Tower of Babel
 guests:

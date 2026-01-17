@@ -1,6 +1,6 @@
 ---
 title: Follow That Star!
-date: 2023-12-18T00:00:00Z
+date: 2023-12-18T00:00:00.000Z
 episodeNumber: 37
 videoId: UHN2ZPsFyoY
 aliases:
@@ -12,31 +12,18 @@ tags:
   - Matthew
   - Hebrews
   - angel
-  - resurrection
   - Israel
-  - Dr. Aaron Adair
   - Easter
   - Garden of Eden
   - Gentiles
-  - gods
-  - Gospel of John
-  - Gospel of Matthew
   - Judaism
-  - Kings
-  - Numbers
   - Persia
   - Romans
-  - theology
   - Virgin Birth
   - Adam
   - apocalypse
   - Babylon
-  - Book of Isaiah
-  - Book of Revelation
-  - Christianity
   - Dead Sea Scrolls
-  - Genesis
-  - Hebrew Bible
   - Herod the Great
   - Isaiah
   - Joseph
@@ -46,7 +33,6 @@ tags:
   - King James Version
   - Mary Magdalene
   - Nephilim
-  - New Testament
   - Paul
   - Peter
   - Satan

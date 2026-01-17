@@ -1,6 +1,6 @@
 ---
 title: The [Three] [Wise Men]
-date: 2023-12-25T00:00:00Z
+date: 2023-12-25T00:00:00.000Z
 episodeNumber: 38
 videoId: ymMm0ICgBmc
 aliases:
@@ -8,7 +8,6 @@ aliases:
 tags:
   - Matthew
   - Jesus
-  - Kings
   - Luke
   - Judeans
   - Bethlehem
@@ -16,12 +15,8 @@ tags:
   - Hebrews
   - Persia
   - Mary Magdalene
-  - Christianity
   - Gentiles
-  - Hebrew Bible
   - Judaism
-  - New Testament
-  - Book of Revelation
   - Flood
   - James
   - Enoch
@@ -29,16 +24,11 @@ tags:
   - Joseph
   - Moses
   - angel
-  - Book of Acts
   - Egypt
-  - Genesis
-  - gods
   - Gospel of James
-  - Gospel of Matthew
   - Judah
   - Second Temple period
   - Septuagint
-  - theology
 guests:
   - Eric Vanden Eykel
 draft: false

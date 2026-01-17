@@ -1,36 +1,24 @@
 ---
 title: What is a Woman... Biblically?
-date: 2024-04-01T00:00:00Z
+date: 2024-04-01T00:00:00.000Z
 episodeNumber: 52
 videoId: _mO8E0em3KA
 aliases:
   - /episodes/52/
 tags:
   - Goliath
-  - Genesis
-  - 2 Samuel
   - King David
-  - 1 Chronicles
   - Adam
   - Elhanan son of Jair
   - Jesus
   - Philistines
-  - 1 Samuel
-  - Hebrew Bible
-  - Ephesians
   - Eve
   - King James Version
-  - 1 Timothy
-  - Christianity
   - Romans
-  - 1 Peter
-  - Book of Proverbs
-  - New Testament
   - Paul
   - Univocality
   - YHWH
   - Bethlehem
-  - First Corinthians
   - Hebrews
   - Hell
   - Judaism
@@ -41,10 +29,10 @@ segments:
   - Taking Issue
 segmentData:
   - type: bible-vs-bible
-    label: "Bible vs Bible"
+    label: Bible vs Bible
     startSeconds: 105.2
   - type: taking-issue
-    label: "Taking Issue"
+    label: Taking Issue
     startSeconds: 1148.451
 draft: false
 ---

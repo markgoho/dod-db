@@ -274,9 +274,10 @@ export function generateFrontmatter(video: ProcessedVideo, cleanTitle: string): 
 	const { segments, segmentData } = formatSegmentsForFrontmatter(video.segments);
 
 	// Build frontmatter object
+	// Convert date string to Date object so yaml.dump produces consistent unquoted format
 	const frontmatter: Record<string, unknown> = {
 		title: cleanTitle,
-		date: video.publishedAt,
+		date: new Date(video.publishedAt),
 		episodeNumber: video.episodeNumber,
 		videoId: video.videoId,
 		aliases: [`/episodes/${video.episodeNumber}/`],

@@ -1,29 +1,24 @@
 ---
 title: In the Beginning
-date: 2023-04-08T00:00:00Z
+date: 2023-04-08T00:00:00.000Z
 episodeNumber: 1
 videoId: 833s6y6kW2k
 aliases:
   - /episodes/1/
 tags:
   - YHWH
-  - Genesis
   - Israel
   - Baal
   - El
-  - Hebrew Bible
-  - gods
   - Adam
   - Eve
   - Satan
   - Egypt
   - Garden of Eden
-  - Kings
   - Mesopotamian
   - Ugarit
   - Abraham
   - Babylon
-  - Book of Isaiah
   - Cherubim
   - divine council
   - Isaiah
@@ -34,13 +29,10 @@ tags:
   - Isaac
   - James
   - Moses
-  - New Testament
   - Paul
-  - Psalm
-  - 2 Kings
-  - Christianity
   - Dead Sea Scrolls
   - Deuteronomy
+  - Esau
   - Flood
   - Joseph
   - Judah
@@ -48,7 +40,6 @@ tags:
   - Judeans
   - King James Version
   - monotheism
-  - Numbers
   - source criticism
   - Syria
 segments:
@@ -56,10 +47,10 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 89
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 2443.02
 draft: false
 ---

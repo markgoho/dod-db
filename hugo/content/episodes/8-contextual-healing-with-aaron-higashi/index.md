@@ -1,26 +1,18 @@
 ---
 title: Contextual Healing
-date: 2023-05-29T00:00:00Z
+date: 2023-05-29T00:00:00.000Z
 episodeNumber: 8
 videoId: YyN1w9PYjS4
 aliases:
   - /episodes/8/
 tags:
-  - theology
   - Jesus
-  - Christianity
-  - Hebrew Bible
-  - New Testament
   - Bart Ehrman
-  - Book of Revelation
   - Judeans
-  - Numbers
   - Africa
   - Hell
-  - incarnation
   - James
   - Jerusalem
-  - Judges
   - Paul
   - Second Temple period
   - source criticism

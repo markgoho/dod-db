@@ -1,6 +1,6 @@
 ---
 title: Why Is She Salt?
-date: 2023-04-24T00:00:00Z
+date: 2023-04-24T00:00:00.000Z
 episodeNumber: 3
 videoId: M-7Gql8NQBU
 aliases:
@@ -13,7 +13,6 @@ tags:
   - YHWH
   - angel
   - Israel
-  - Genesis
   - archaeology
   - Dead Sea Scrolls
   - etiology
@@ -28,7 +27,6 @@ tags:
   - Adam
   - Hagar
   - Hebrews
-  - Judges
   - King David
   - Mount Ebal
   - Mount Gerizim
@@ -38,11 +36,8 @@ tags:
   - divine council
   - epigraphy
   - Eve
-  - Ezekiel
   - Flood
-  - gods
   - Goliath
-  - Hebrew Bible
   - Hezekiah
   - Nineveh
   - Qumran
@@ -54,7 +49,7 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 75
 draft: false
 ---

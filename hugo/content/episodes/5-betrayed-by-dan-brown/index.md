@@ -1,29 +1,26 @@
 ---
 title: Betrayed by Dan Brown
-date: 2023-05-08T00:00:00Z
+date: 2023-05-08T00:00:00.000Z
 episodeNumber: 5
 videoId: G2s8VvaAgHQ
 aliases:
   - /episodes/5/
 tags:
-  - Christianity
   - Jesus
   - Easter
   - Passover
-  - resurrection
   - biblical canon
   - Council of Nicaea
-  - New Testament
   - Trinity
   - Judaism
   - Baal
   - Egypt
-  - Gospel of John
   - Mary Magdalene
   - Virgin Birth
   - angel
   - apocalypse
   - Athanasius of Alexandria
+  - baptism
   - Eusebius
   - Hypostasis
   - Israel
@@ -37,10 +34,10 @@ segments:
   - Urban Legends
 segmentData:
   - type: all-right-lets-see-it
-    label: "All Right, Let's See It"
+    label: All Right, Let's See It
     startSeconds: 94
   - type: urban-legends
-    label: "Urban Legends"
+    label: Urban Legends
     startSeconds: 1674.76
 draft: false
 ---

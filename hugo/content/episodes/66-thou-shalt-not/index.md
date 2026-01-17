@@ -1,6 +1,6 @@
 ---
 title: Thou Shalt Not
-date: 2024-07-08T00:00:00Z
+date: 2024-07-08T00:00:00.000Z
 episodeNumber: 66
 videoId: oKe-ukUfIKs
 aliases:
@@ -10,27 +10,19 @@ tags:
   - Ten Commandments
   - Israel
   - Egypt
-  - gods
   - El
   - Asherah
-  - Book of Exodus
   - Baal
-  - Christianity
   - Judaism
-  - Kings
-  - Hebrew Bible
   - Islam
   - Jehu
   - Jesus
-  - Judges
   - King James Version
-  - Leviticus
   - Onan
   - Ugarit
   - Cherubim
   - Elephantine
   - Elijah
-  - Genesis
   - Hebrews
   - Jerusalem
   - Joram

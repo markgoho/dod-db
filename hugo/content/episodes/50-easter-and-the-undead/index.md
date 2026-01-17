@@ -1,32 +1,24 @@
 ---
 title: Easter and the Undead
-date: 2024-03-18T00:00:00Z
+date: 2024-03-18T00:00:00.000Z
 episodeNumber: 50
 videoId: vHKXU5rmwyo
 aliases:
   - /episodes/50/
 tags:
   - Jesus
-  - Gospel of John
-  - resurrection
-  - Gospel of Mark
   - Jerusalem
   - Pontius Pilate
   - Mary Magdalene
-  - Gospel of Matthew
   - Bethany
   - Romans
   - Judas Iscariot
-  - New Testament
   - Passover
-  - Christianity
   - Sanhedrin
   - Easter
-  - Holy Week
   - Bart Ehrman
   - biblical canon
   - Galilee
-  - Hebrew Bible
   - Hell
   - Jonah
   - Judaism
@@ -36,11 +28,9 @@ tags:
   - 2 Maccabees
   - Antiochus IV Epiphanes
   - Athanasius of Alexandria
-  - Book of Acts
-  - Book of Revelation
+  - baptism
   - Daniel
   - Elijah
-  - Ezekiel
   - Hebrews
   - Helen Bond
   - Herod Antipas
@@ -51,7 +41,7 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 231
 draft: false
 ---

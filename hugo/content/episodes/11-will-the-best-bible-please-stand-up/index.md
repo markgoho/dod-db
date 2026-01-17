@@ -6,10 +6,7 @@ videoId: DD7Kkzh2kzg
 aliases:
   - /episodes/11/
 tags:
-  - Hebrew Bible
-  - New Testament
   - Septuagint
-  - Christianity
   - King James Version
   - biblical canon
   - Latin Vulgate
@@ -19,7 +16,6 @@ tags:
   - Jesus
   - Egypt
   - James
-  - Gospel of John
   - Desiderius Erasmus
   - Martin Luther
   - Jeremiah
@@ -29,13 +25,10 @@ tags:
   - Leningrad Codex
   - Matthew
   - Codex Sinaiticus
-  - Gospel of Mark
   - Judeans
-  - Kings
   - Luke
   - Moses
   - Origen
-  - Psalm
   - Torah
   - Africa
   - Babylon
@@ -43,24 +36,18 @@ tags:
   - Deuteronomy
   - Easter
   - Elijah
-  - Genesis
   - Israel
   - Jerome
   - Jerusalem
   - Judah
-  - Numbers
   - Samuel
   - Textus Receptus
-  - 2 Chronicles
   - apocalypse
   - Bart Ehrman
-  - Book of Revelation
   - Daniel
   - Galilee
   - Gnostic
   - Jonah
-  - Leviticus
-  - resurrection
   - Sarah
   - Syria
 draft: false

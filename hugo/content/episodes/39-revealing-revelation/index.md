@@ -6,10 +6,7 @@ videoId: VTRccZ81UZs
 aliases:
   - /episodes/39/
 tags:
-  - Book of Revelation
   - Jesus
-  - Gospel of John
-  - Christianity
   - Hell
   - Paul
   - YHWH
@@ -19,19 +16,14 @@ tags:
   - Satan
   - angel
   - biblical canon
-  - Book of Isaiah
   - Daniel
   - Isaiah
-  - New Testament
   - apocalypse
   - Anatolia
   - Balaam
-  - Book of Daniel
   - Codex Sinaiticus
   - Domitian
-  - Ezekiel
   - Garden of Eden
-  - Hebrew Bible
   - Hebrews
   - Israel
   - Jerusalem
@@ -39,7 +31,6 @@ tags:
   - Nero
   - Theosis
   - Bart Ehrman
-  - Book of Acts
   - Council of Jerusalem
   - Council of Nicaea
   - Deuteronomy
@@ -47,10 +38,8 @@ tags:
   - Gnostic
   - John of Patmos
   - Justin Martyr
-  - Numbers
   - Pergamum
   - preterist interpretation
-  - Psalm
   - Romans
   - Septuagint
   - textual criticism

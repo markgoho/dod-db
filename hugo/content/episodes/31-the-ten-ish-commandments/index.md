@@ -1,6 +1,6 @@
 ---
 title: The Ten (ish) Commandments
-date: 2023-11-06T00:00:00Z
+date: 2023-11-06T00:00:00.000Z
 episodeNumber: 31
 videoId: q5Yw6xPCS6U
 aliases:
@@ -8,10 +8,7 @@ aliases:
 tags:
   - Ten Commandments
   - YHWH
-  - gods
-  - Christianity
   - Deuteronomy
-  - Hebrew Bible
   - Judaism
   - Israel
   - Moses
@@ -22,9 +19,7 @@ tags:
   - Ritual Decalogue
   - Asherah
   - King James Version
-  - New Testament
   - Baal
-  - Book of Isaiah
   - Cherubim
   - Council of Jerusalem
   - Jerusalem
@@ -33,7 +28,6 @@ tags:
   - Josephus
   - Septuagint
   - Amorites
-  - Book of Acts
   - Canaanites
   - circumcision
   - Gentiles
@@ -42,7 +36,6 @@ tags:
   - James
   - Judah
   - Mount Gerizim
-  - Psalm
   - Qumran
   - Samaritans
   - Second Temple period
@@ -53,10 +46,10 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: its-the-law
-    label: "It's the Law"
+    label: It's the Law
     startSeconds: 57
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 2118
 draft: false
 ---

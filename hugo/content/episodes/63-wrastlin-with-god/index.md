@@ -1,6 +1,6 @@
 ---
 title: Wrastlin’ With God
-date: 2024-06-17T00:00:00Z
+date: 2024-06-17T00:00:00.000Z
 episodeNumber: 63
 videoId: XO3fcbF6Jyc
 aliases:
@@ -10,39 +10,32 @@ tags:
   - Israel
   - Samson
   - Isaac
-  - Judges
   - angel
   - Abraham
   - El
+  - Esau
   - Hebrews
   - YHWH
-  - Genesis
   - Moses
   - John the Baptist
   - Samuel
-  - Ezekiel
   - Gaza
-  - gods
   - Hell
   - Jephthah
   - Judah
-  - Numbers
   - apocalypse
-  - Book of Exodus
   - Egypt
   - King James Version
-  - Kings
   - Tamar
-  - theology
   - Ugarit
 segments:
   - Bible Heroes?
 segmentData:
   - type: bible-heroes
-    label: "Bible Heroes? (1)"
+    label: Bible Heroes? (1)
     startSeconds: 130.475
   - type: bible-heroes
-    label: "Bible Heroes? (2)"
+    label: Bible Heroes? (2)
     startSeconds: 1921.431
 draft: false
 ---

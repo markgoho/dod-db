@@ -1,22 +1,19 @@
 ---
 title: The Genesis of Genesis
-date: 2024-04-29T00:00:00Z
+date: 2024-04-29T00:00:00.000Z
 episodeNumber: 56
 videoId: ZWm7gjCL3uA
 aliases:
   - /episodes/56/
 tags:
-  - Genesis
   - Garden of Eden
   - Flood
   - Noah
   - Babylon
   - Cain
   - Tower of Babel
-  - gods
   - Mesopotamian
   - Israel
-  - Hebrew Bible
   - Adam
   - Canaan
   - Eve
@@ -24,15 +21,12 @@ tags:
   - biblical canon
   - Egypt
   - forgery
-  - theology
   - David Carr
   - Jerusalem
   - Moses
   - Shem
   - Torah
   - Assyria
-  - Book of Isaiah
-  - Book of Revelation
   - Canaanites
   - Ham
   - Hebrews
@@ -41,9 +35,7 @@ tags:
   - Joshua
   - Judah
   - Lamech
-  - Leviticus
   - Nephilim
-  - Psalm
   - Syria
   - Ugarit
 guests:

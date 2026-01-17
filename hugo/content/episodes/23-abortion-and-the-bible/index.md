@@ -1,26 +1,19 @@
 ---
 title: Abortion and the Bible
-date: 2023-09-11T00:00:00Z
+date: 2023-09-11T00:00:00.000Z
 episodeNumber: 23
-videoId: -I3W7CTX8Kw
+videoId: '-I3W7CTX8Kw'
 aliases:
   - /episodes/23/
 tags:
-  - Christianity
   - Jeremiah
-  - Gospel of John
-  - New Testament
   - Elizabeth
-  - Hebrew Bible
   - King James Version
   - Romans
-  - Genesis
   - Judaism
   - Luke
   - John the Baptist
   - Mary Magdalene
-  - Numbers
-  - Psalm
   - Ten Commandments
   - Barnabas
   - Didache

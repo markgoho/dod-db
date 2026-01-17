@@ -13,10 +13,11 @@ import type { ProcessedVideo } from '../storage/processed-videos.js';
 /**
  * Hugo episode frontmatter structure.
  * Matches the frontmatter in hugo/content/episodes/{number}/index.md
+ * Note: date can be string or Date depending on yaml.load() auto-conversion
  */
 export interface HugoEpisodeFrontmatter {
 	title: string;
-	date: string;
+	date: string | Date;
 	episodeNumber: number;
 	videoId: string;
 	youtubeUrl: string;
@@ -69,7 +70,14 @@ export async function writeHugoFile({
 	frontmatter: HugoEpisodeFrontmatter;
 	content: string;
 }): Promise<void> {
-	const frontmatterYaml = yaml.dump(frontmatter);
+	// Normalize date to Date object for consistent formatting
+	// Ensures yaml.dump produces unquoted date with milliseconds
+	const normalizedFrontmatter = {
+		...frontmatter,
+		date: typeof frontmatter.date === 'string' ? new Date(frontmatter.date) : frontmatter.date,
+	};
+
+	const frontmatterYaml = yaml.dump(normalizedFrontmatter);
 	const fullContent = `---\n${frontmatterYaml}---\n${content}`;
 	await Bun.write(filePath, fullContent);
 }

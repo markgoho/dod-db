@@ -1,28 +1,21 @@
 ---
 title: Christian Nationalism Ain't Christian
-date: 2023-10-30T00:00:00Z
+date: 2023-10-30T00:00:00.000Z
 episodeNumber: 30
 videoId: 10fIBhgQYF8
 aliases:
   - /episodes/30/
 tags:
-  - Christianity
   - Christian Nationalism
   - Paul
   - Jesus
   - Romans
-  - gods
   - Andrew Whitehead
   - Hebrews
-  - 2 Chronicles
   - apocalypse
-  - Book of Isaiah
   - Cyrus the Great
   - Isaiah
   - King David
-  - Leviticus
-  - New Testament
-  - Numbers
   - YHWH
 guests:
   - Andrew Whitehead

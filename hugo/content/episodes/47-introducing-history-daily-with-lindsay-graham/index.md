@@ -1,15 +1,12 @@
 ---
 title: Introducing History Daily
-date: 2024-02-26T00:00:00Z
+date: 2024-02-26T00:00:00.000Z
 episodeNumber: 47
 videoId: 2p2chxLz3eo
 aliases:
   - /episodes/47/
 tags:
   - Egypt
-  - Italy
-  - Kings
-  - Psalm
 guests:
   - Lindsay Graham
 draft: false

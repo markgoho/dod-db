@@ -1,40 +1,30 @@
 ---
 title: Prophets, Kings, and Terrible Men
-date: 2024-07-15T00:00:00Z
+date: 2024-07-15T00:00:00.000Z
 episodeNumber: 67
 videoId: lKaNTTA4gWw
 aliases:
   - /episodes/67/
 tags:
   - King David
-  - 2 Samuel
   - King Saul
   - Israel
   - Jesus
   - Samuel
-  - 1 Samuel
   - Jonathan
   - Moses
   - Absalom
-  - Christianity
   - Philistines
-  - 2 Chronicles
   - archaeology
   - Bathsheba
-  - Hebrew Bible
-  - Kings
   - Goliath
-  - Judges
   - Septuagint
-  - theology
   - Jerusalem
   - Judah
   - Babylon
   - Christian Nationalism
   - Gideon
-  - Gospel of John
   - Joshua
-  - New Testament
   - Sheol
   - Talmud
 guests:

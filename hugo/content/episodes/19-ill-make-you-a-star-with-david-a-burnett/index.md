@@ -1,40 +1,28 @@
 ---
 title: I'll make you a STAR!
-date: 2023-08-14T00:00:00Z
+date: 2023-08-14T00:00:00.000Z
 episodeNumber: 19
 videoId: fiptp1bU5qQ
 aliases:
   - /episodes/19/
 tags:
-  - gods
   - Paul
-  - resurrection
-  - Christianity
   - Jesus
   - monotheism
-  - Psalm
   - Deuteronomy
   - Hebrews
   - Judaism
   - Abraham
   - Israel
-  - New Testament
-  - First Corinthians
   - angel
   - David Burnett
   - Eschatology
-  - Genesis
   - apocalypse
   - divine council
   - Philo of Alexandria
   - Romans
-  - theology
   - YHWH
-  - Book of Revelation
-  - Hebrew Bible
-  - Judges
   - Second Temple period
-  - Book of Isaiah
   - Egypt
   - Isaiah
   - Matthew
@@ -43,11 +31,8 @@ tags:
   - Daniel
   - Dead Sea Scrolls
   - Gentiles
-  - Gospel of John
-  - Gospel of Mark
   - Hell
   - King David
-  - Kings
   - Luke
   - Sarah
   - Torah

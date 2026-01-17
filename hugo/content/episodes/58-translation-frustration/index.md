@@ -7,23 +7,13 @@ aliases:
   - /episodes/58/
 tags:
   - King James Version
-  - gods
-  - Genesis
-  - New Testament
   - Israel
-  - Judges
   - Jesus
-  - theology
   - angel
-  - Book of Exodus
   - William Tyndale
-  - Hebrew Bible
   - Septuagint
-  - Gospel of John
-  - Gospel of Mark
   - Dead Sea Scrolls
   - Desiderius Erasmus
-  - Gospel of Matthew
   - Sir Thomas More
   - YHWH
   - Deuteronomy
@@ -38,8 +28,6 @@ tags:
   - Michael
   - Moses
   - Univocality
-  - Book of Daniel
-  - Christianity
   - Daniel
   - divine council
   - Egypt
@@ -49,7 +37,6 @@ tags:
   - Jerome
   - Judaism
   - Martin Luther
-  - Numbers
   - Persia
   - Trinity
 draft: false

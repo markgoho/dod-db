@@ -1,6 +1,6 @@
 ---
 title: Can Jesus Forgive Sin?
-date: 2024-04-22T00:00:00Z
+date: 2024-04-22T00:00:00.000Z
 episodeNumber: 55
 videoId: 9pKuCIMUV4s
 aliases:
@@ -11,29 +11,22 @@ tags:
   - Ahaziah
   - Joram
   - Megiddo
-  - Gospel of Mark
   - Israel
   - Judah
   - angel
   - Capernaum
   - Samaria
   - YHWH
-  - 2 Chronicles
-  - 2 Kings
-  - Kings
-  - Hebrew Bible
   - Jerusalem
-  - New Testament
   - Univocality
   - inerrancy
   - Joshua
   - King David
   - Pontius Pilate
-  - Gospel of Matthew
   - King James Version
   - Moses
   - Samuel
-  - Book of Exodus
+  - baptism
   - Galilee
   - Peter
   - 2 Maccabees
@@ -41,7 +34,6 @@ tags:
   - archaeology
   - Bart Ehrman
   - Book of Enoch
-  - Book of Isaiah
   - Dead Sea
   - Dead Sea Scrolls
   - Deuteronomy
@@ -51,17 +43,15 @@ tags:
   - Judas Iscariot
   - King Saul
   - Mary Magdalene
-  - Numbers
-  - theology
 segments:
   - Bible vs Bible
   - Chapter and Verse
 segmentData:
   - type: bible-vs-bible
-    label: "Bible vs Bible"
+    label: Bible vs Bible
     startSeconds: 79
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 1431.483
 draft: false
 ---

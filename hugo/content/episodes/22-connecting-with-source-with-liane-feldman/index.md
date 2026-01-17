@@ -6,8 +6,6 @@ videoId: B1uE2cv8fP0
 aliases:
   - /episodes/22/
 tags:
-  - Genesis
-  - Leviticus
   - Hebrews
   - YHWH
   - Julius Wellhausen
@@ -17,25 +15,19 @@ tags:
   - Flood
   - Qumran
   - Seth
-  - Book of Isaiah
   - El
   - James
   - Joseph
-  - Numbers
   - Adam
   - Babylon
-  - Book of Job
   - Cain
   - Eve
-  - Ezekiel
-  - Hebrew Bible
   - Ishmael
   - Israel
   - King James Version
   - Latin Vulgate
   - Mesopotamian
   - Noah
-  - Psalm
 guests:
   - Liane Feldman
 draft: false

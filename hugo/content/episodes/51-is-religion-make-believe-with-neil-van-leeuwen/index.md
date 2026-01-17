@@ -1,14 +1,11 @@
 ---
 title: Is Religion Make-Believe?
-date: 2024-03-25T00:00:00Z
+date: 2024-03-25T00:00:00.000Z
 episodeNumber: 51
 videoId: qNROe-Slo8Y
 aliases:
   - /episodes/51/
 tags:
-  - Christianity
-  - Book of Isaiah
-  - theology
   - Dead Sea Scrolls
   - Garden of Eden
   - Jesus

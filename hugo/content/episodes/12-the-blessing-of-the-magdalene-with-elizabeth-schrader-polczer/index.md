@@ -8,14 +8,10 @@ aliases:
 tags:
   - Mary Magdalene
   - Jesus
-  - Gospel of John
   - Luke
   - Peter
   - Bethany
   - Matthew
-  - Gospel of Mark
-  - Christianity
-  - New Testament
   - Galilee
   - textual criticism
   - James
@@ -23,21 +19,16 @@ tags:
   - Josephus
   - Paul
   - Eusebius
-  - theology
   - angel
   - archaeology
   - El
   - Israel
   - King James Version
   - source criticism
-  - Book of Acts
   - Codex Sinaiticus
-  - Hebrew Bible
   - Jerusalem
   - Judas Iscariot
   - Pastoral Epistles
-  - Psalm
-  - resurrection
   - Samaritans
   - Textus Receptus
 guests:

@@ -1,53 +1,39 @@
 ---
 title: God's Wife
-date: 2023-04-17T00:00:00Z
+date: 2023-04-17T00:00:00.000Z
 episodeNumber: 2
 videoId: luJhJvFzpew
 aliases:
   - /episodes/2/
 tags:
   - YHWH
-  - gods
   - child sacrifice
-  - Hebrew Bible
   - Molek
-  - theology
-  - Ezekiel
-  - Book of Isaiah
   - El
   - archaeology
   - Asherah
   - Israel
   - Jerusalem
   - Adam
-  - Christianity
   - Jesus
   - circumcision
   - Isaac
   - Abraham
-  - Genesis
   - Jephthah
   - Judah
   - Ugarit
   - Baal
-  - Book of Job
   - Carthage
   - divine council
-  - Gospel of John
   - Hebrews
   - Isaiah
   - angel
   - Babylon
-  - corporeal deity
   - Deuteronomy
   - Egypt
   - Elephantine
   - Jeremiah
-  - Judges
-  - Kings
   - Masoretic Text
-  - New Testament
-  - Psalm
   - Syria
   - theophany
   - Trinity

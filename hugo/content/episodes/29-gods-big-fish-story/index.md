@@ -1,6 +1,6 @@
 ---
 title: God's Big Fish Story
-date: 2023-10-23T00:00:00Z
+date: 2023-10-23T00:00:00.000Z
 episodeNumber: 29
 videoId: yveP4tc5OSo
 aliases:
@@ -11,46 +11,34 @@ tags:
   - Nineveh
   - Assyria
   - Eve
-  - gods
   - Adam
   - Jerusalem
   - Tarshish
   - Balaam
-  - Book of Jonah
   - Garden of Eden
-  - Genesis
-  - Hebrew Bible
   - Hezekiah
   - Israel
   - King James Version
   - Lachish
   - Satan
   - Univocality
-  - 2 Kings
   - inerrancy
   - Judah
-  - Kings
-  - Numbers
   - Abraham
   - Cherubim
-  - Christianity
-  - Gospel of John
   - Hebrews
   - Judeans
-  - New Testament
   - Peter
-  - Psalm
   - Saint Titus
-  - theology
 segments:
   - Chapter and Verse
   - Nature of God
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 134
   - type: nature-of-god
-    label: "Nature of God"
+    label: Nature of God
     startSeconds: 1955
 draft: false
 ---

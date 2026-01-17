@@ -1,6 +1,6 @@
 ---
 title: GENOCIDE!
-date: 2024-02-19T00:00:00Z
+date: 2024-02-19T00:00:00.000Z
 episodeNumber: 46
 videoId: QFyFMwQpSko
 aliases:
@@ -13,44 +13,29 @@ tags:
   - Canaanites
   - Hebrews
   - Moses
-  - Christianity
   - Deuteronomy
-  - Gospel of Matthew
-  - Zechariah
   - Judah
-  - Judges
   - Lot
   - Abraham
   - Canaan
-  - Genesis
   - Jerusalem
   - King James Version
-  - Kings
   - Samaria
   - Amorites
   - archaeology
   - Babylon
   - Flood
-  - Gospel of Mark
   - inerrancy
-  - Psalm
   - Sodom
   - Gaza
-  - Hebrew Bible
   - Judaism
   - Judas Iscariot
   - Megiddo
-  - New Testament
-  - Numbers
   - Origen
   - angel
   - Balaam
-  - Book of Acts
-  - Book of Isaiah
   - circumcision
   - Egypt
-  - gods
-  - Gospel of John
   - King David
   - King Josiah
   - Luke
@@ -62,7 +47,7 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 2999.95
 draft: false
 ---

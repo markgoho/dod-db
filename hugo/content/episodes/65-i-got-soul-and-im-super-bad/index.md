@@ -1,15 +1,12 @@
 ---
 title: I Got Soul, and I'm Super Bad
-date: 2024-07-01T00:00:00Z
+date: 2024-07-01T00:00:00.000Z
 episodeNumber: 65
 videoId: Z6-5mEJYYQU
 aliases:
   - /episodes/65/
 tags:
-  - gods
-  - Hebrew Bible
   - Egypt
-  - Ezekiel
   - Israel
   - King James Version
   - Mesopotamian
@@ -18,20 +15,16 @@ tags:
   - Endor
   - Anatolia
   - archaeology
-  - Book of Isaiah
-  - Christianity
   - Deuteronomy
   - Jerusalem
   - Jesus
   - Judah
   - Judaism
-  - Kings
-  - New Testament
 segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 2521.614
 draft: false
 ---

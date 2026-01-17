@@ -1,6 +1,6 @@
 ---
 title: The Bible and Disability
-date: 2023-11-20T00:00:00Z
+date: 2023-11-20T00:00:00.000Z
 episodeNumber: 33
 videoId: 1qbh8bFGfvg
 aliases:
@@ -9,25 +9,16 @@ tags:
   - Paul
   - circumcision
   - Jesus
-  - Christianity
-  - New Testament
-  - 2 Corinthians
   - Satan
-  - theology
   - angel
   - Isaac
   - Gentiles
-  - Book of Revelation
   - Hebrews
   - YHWH
   - Israel
-  - gods
-  - Hebrew Bible
   - apocalypse
-  - Book of Acts
   - Candida Moss
   - Egypt
-  - First Corinthians
   - Holy Spirit
   - Ignatius
   - Jeremiah

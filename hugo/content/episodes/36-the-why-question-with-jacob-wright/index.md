@@ -1,6 +1,6 @@
 ---
 title: The Why Question
-date: 2023-12-11T00:00:00Z
+date: 2023-12-11T00:00:00.000Z
 episodeNumber: 36
 videoId: 5ebvYxjXH2Y
 aliases:
@@ -8,27 +8,21 @@ aliases:
 tags:
   - Israel
   - Judah
-  - Genesis
   - Judeans
   - Hebrews
   - Julius Wellhausen
   - YHWH
-  - Christianity
   - Jerusalem
-  - Kings
-  - theology
-  - Book of Proverbs
   - Assyria
   - Egypt
-  - Hebrew Bible
   - Joshua
   - Ruth
   - Deuteronomy
+  - Esau
   - Garden of Eden
   - Jeremiah
   - King Saul
   - monotheism
-  - Psalm
   - Samaria
   - Samuel
   - Abraham
@@ -46,7 +40,6 @@ tags:
   - King Josiah
   - Mesopotamian
   - Moses
-  - New Testament
   - Nineveh
   - Philistines
   - Samson

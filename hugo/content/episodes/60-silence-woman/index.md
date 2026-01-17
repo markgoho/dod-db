@@ -7,26 +7,16 @@ aliases:
   - /episodes/60/
 tags:
   - Jesus
-  - Gospel of John
   - Paul
   - Priscilla
-  - First Corinthians
   - YHWH
   - Aquila
-  - Christianity
-  - 1 Timothy
-  - New Testament
   - Moses
   - Eve
   - Adam
-  - Gospel of Mark
   - Jerusalem
   - King James Version
-  - Numbers
   - Romans
-  - 2nd Timothy
-  - Book of Revelation
-  - Hebrew Bible
   - inerrancy
   - Luke
   - Pastoral Epistles
@@ -34,7 +24,6 @@ tags:
   - Southern Baptist Convention
   - textual criticism
   - Textus Receptus
-  - theology
   - Univocality
 segments:
   - Textual Healing

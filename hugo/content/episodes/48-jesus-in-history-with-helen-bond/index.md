@@ -7,20 +7,13 @@ aliases:
   - /episodes/48/
 tags:
   - Jesus
-  - Christianity
-  - Gospel of Mark
-  - Gospel of John
-  - Gospel of Matthew
   - Paul
   - Jerusalem
   - Mary Magdalene
   - John the Baptist
   - Galilee
-  - New Testament
   - Josephus
   - Papias of Hierapolis
-  - Book of Acts
-  - Hebrew Bible
   - Helen Bond
   - Israel
   - Luke
@@ -30,13 +23,9 @@ tags:
   - apocalypse
   - Athanasius of Alexandria
   - biblical canon
-  - Book of Isaiah
-  - First Corinthians
   - Holy Spirit
-  - resurrection
   - Saint Titus
   - archaeology
-  - Book of Revelation
   - Candida Moss
   - Easter
   - Eschatology
@@ -48,7 +37,6 @@ tags:
   - King David
   - Pliny the Younger
   - Septuagint
-  - theology
 guests:
   - Helen Bond
 draft: false

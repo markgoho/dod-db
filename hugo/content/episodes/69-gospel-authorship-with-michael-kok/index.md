@@ -6,37 +6,26 @@ videoId: 1w8zmAKheQE
 aliases:
   - /episodes/69/
 tags:
-  - Gospel of Mark
   - Jesus
   - Luke
   - Papias of Hierapolis
   - Peter
-  - Gospel of John
   - Paul
   - Irenaeus
-  - Book of Acts
-  - Gospel of Matthew
   - YHWH
-  - Christianity
+  - baptism
   - Hebrews
   - Ignatius
   - Josephus
   - Didache
-  - Hebrew Bible
   - Jerusalem
   - Justin Martyr
-  - 2nd Timothy
   - Eusebius
   - Jerome
-  - theology
-  - 1 Timothy
   - Capernaum
   - Galilee
   - John the Baptist
-  - New Testament
-  - resurrection
   - Theophilus
-  - 1 Peter
   - Abraham
   - Easter
   - Egypt

@@ -6,17 +6,13 @@ videoId: GXyJILdNxUE
 aliases:
   - /episodes/49/
 tags:
-  - Gospel of Mark
-  - Christianity
   - Jesus
   - Paul
   - Papias of Hierapolis
-  - New Testament
   - Romans
   - Peter
   - Tertius
   - Luke
-  - theology
   - Candida Moss
   - Clement of Rome
   - Egypt
@@ -27,7 +23,6 @@ tags:
   - archaeology
   - First Clement
   - Israel
-  - Kings
   - Martin Luther
   - Mary Magdalene
   - Second Temple period

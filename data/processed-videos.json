@@ -12,10 +12,6 @@
         "mentions": 65
       },
       {
-        "tag": "Genesis",
-        "mentions": 36
-      },
-      {
         "tag": "Israel",
         "mentions": 28
       },
@@ -26,14 +22,6 @@
       {
         "tag": "El",
         "mentions": 18
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 14
-      },
-      {
-        "tag": "gods",
-        "mentions": 12
       },
       {
         "tag": "Adam",
@@ -56,10 +44,6 @@
         "mentions": 5
       },
       {
-        "tag": "Kings",
-        "mentions": 4
-      },
-      {
         "tag": "Mesopotamian",
         "mentions": 4
       },
@@ -73,10 +57,6 @@
       },
       {
         "tag": "Babylon",
-        "mentions": 3
-      },
-      {
-        "tag": "Book of Isaiah",
         "mentions": 3
       },
       {
@@ -120,24 +100,8 @@
         "mentions": 2
       },
       {
-        "tag": "New Testament",
-        "mentions": 2
-      },
-      {
         "tag": "Paul",
         "mentions": 2
-      },
-      {
-        "tag": "Psalm",
-        "mentions": 2
-      },
-      {
-        "tag": "2 Kings",
-        "mentions": 1
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 1
       },
       {
         "tag": "Dead Sea Scrolls",
@@ -145,6 +109,10 @@
       },
       {
         "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Esau",
         "mentions": 1
       },
       {
@@ -173,10 +141,6 @@
       },
       {
         "tag": "monotheism",
-        "mentions": 1
-      },
-      {
-        "tag": "Numbers",
         "mentions": 1
       },
       {
@@ -229,32 +193,12 @@
         "mentions": 24
       },
       {
-        "tag": "gods",
-        "mentions": 20
-      },
-      {
         "tag": "child sacrifice",
         "mentions": 16
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 12
-      },
-      {
         "tag": "Molek",
         "mentions": 12
-      },
-      {
-        "tag": "theology",
-        "mentions": 12
-      },
-      {
-        "tag": "Ezekiel",
-        "mentions": 11
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 9
       },
       {
         "tag": "El",
@@ -281,10 +225,6 @@
         "mentions": 6
       },
       {
-        "tag": "Christianity",
-        "mentions": 6
-      },
-      {
         "tag": "Jesus",
         "mentions": 6
       },
@@ -298,10 +238,6 @@
       },
       {
         "tag": "Abraham",
-        "mentions": 3
-      },
-      {
-        "tag": "Genesis",
         "mentions": 3
       },
       {
@@ -321,19 +257,11 @@
         "mentions": 2
       },
       {
-        "tag": "Book of Job",
-        "mentions": 2
-      },
-      {
         "tag": "Carthage",
         "mentions": 2
       },
       {
         "tag": "divine council",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of John",
         "mentions": 2
       },
       {
@@ -353,10 +281,6 @@
         "mentions": 1
       },
       {
-        "tag": "corporeal deity",
-        "mentions": 1
-      },
-      {
         "tag": "Deuteronomy",
         "mentions": 1
       },
@@ -373,23 +297,7 @@
         "mentions": 1
       },
       {
-        "tag": "Judges",
-        "mentions": 1
-      },
-      {
-        "tag": "Kings",
-        "mentions": 1
-      },
-      {
         "tag": "Masoretic Text",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
         "mentions": 1
       },
       {
@@ -464,10 +372,6 @@
         "mentions": 14
       },
       {
-        "tag": "Genesis",
-        "mentions": 10
-      },
-      {
         "tag": "archaeology",
         "mentions": 6
       },
@@ -524,10 +428,6 @@
         "mentions": 2
       },
       {
-        "tag": "Judges",
-        "mentions": 2
-      },
-      {
         "tag": "King David",
         "mentions": 2
       },
@@ -564,23 +464,11 @@
         "mentions": 1
       },
       {
-        "tag": "Ezekiel",
-        "mentions": 1
-      },
-      {
         "tag": "Flood",
         "mentions": 1
       },
       {
-        "tag": "gods",
-        "mentions": 1
-      },
-      {
         "tag": "Goliath",
-        "mentions": 1
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 1
       },
       {
@@ -646,28 +534,8 @@
         "mentions": 440
       },
       {
-        "tag": "Book of Revelation",
-        "mentions": 60
-      },
-      {
         "tag": "Jesus",
         "mentions": 45
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 30
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 17
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 13
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 9
       },
       {
         "tag": "angel",
@@ -726,10 +594,6 @@
         "mentions": 2
       },
       {
-        "tag": "theology",
-        "mentions": 2
-      },
-      {
         "tag": "Trinity",
         "mentions": 2
       },
@@ -750,15 +614,7 @@
         "mentions": 1
       },
       {
-        "tag": "Ezekiel",
-        "mentions": 1
-      },
-      {
         "tag": "futurist interpretation",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of Matthew",
         "mentions": 1
       },
       {
@@ -782,10 +638,6 @@
         "mentions": 1
       },
       {
-        "tag": "Psalm",
-        "mentions": 1
-      },
-      {
         "tag": "Romans",
         "mentions": 1
       },
@@ -799,10 +651,6 @@
       },
       {
         "tag": "YHWH",
-        "mentions": 1
-      },
-      {
-        "tag": "Zechariah",
         "mentions": 1
       }
     ],
@@ -837,10 +685,6 @@
     "episodeNumber": 5,
     "tags": [
       {
-        "tag": "Christianity",
-        "mentions": 52
-      },
-      {
         "tag": "Jesus",
         "mentions": 43
       },
@@ -853,19 +697,11 @@
         "mentions": 14
       },
       {
-        "tag": "resurrection",
-        "mentions": 10
-      },
-      {
         "tag": "biblical canon",
         "mentions": 9
       },
       {
         "tag": "Council of Nicaea",
-        "mentions": 4
-      },
-      {
-        "tag": "New Testament",
         "mentions": 4
       },
       {
@@ -882,10 +718,6 @@
       },
       {
         "tag": "Egypt",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of John",
         "mentions": 2
       },
       {
@@ -906,6 +738,10 @@
       },
       {
         "tag": "Athanasius of Alexandria",
+        "mentions": 1
+      },
+      {
+        "tag": "baptism",
         "mentions": 1
       },
       {
@@ -997,19 +833,11 @@
         "mentions": 17
       },
       {
-        "tag": "Christianity",
-        "mentions": 12
-      },
-      {
         "tag": "Goliath",
         "mentions": 10
       },
       {
         "tag": "King David",
-        "mentions": 7
-      },
-      {
-        "tag": "New Testament",
         "mentions": 7
       },
       {
@@ -1025,10 +853,6 @@
         "mentions": 6
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 6
-      },
-      {
         "tag": "inerrancy",
         "mentions": 6
       },
@@ -1041,10 +865,6 @@
         "mentions": 6
       },
       {
-        "tag": "2 Samuel",
-        "mentions": 4
-      },
-      {
         "tag": "Elhanan son of Jair",
         "mentions": 4
       },
@@ -1053,27 +873,11 @@
         "mentions": 4
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 3
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 3
-      },
-      {
         "tag": "Isaiah",
         "mentions": 3
       },
       {
-        "tag": "1 Samuel",
-        "mentions": 2
-      },
-      {
         "tag": "Council of Jerusalem",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of John",
         "mentions": 2
       },
       {
@@ -1101,31 +905,11 @@
         "mentions": 2
       },
       {
-        "tag": "1 Chronicles",
-        "mentions": 1
-      },
-      {
-        "tag": "1 Timothy",
-        "mentions": 1
-      },
-      {
-        "tag": "2nd Timothy",
-        "mentions": 1
-      },
-      {
         "tag": "biblical canon",
         "mentions": 1
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 1
-      },
-      {
         "tag": "Book of Enoch",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
         "mentions": 1
       },
       {
@@ -1141,23 +925,11 @@
         "mentions": 1
       },
       {
-        "tag": "Kings",
-        "mentions": 1
-      },
-      {
-        "tag": "Leviticus",
-        "mentions": 1
-      },
-      {
         "tag": "Martin Luther",
         "mentions": 1
       },
       {
         "tag": "Matthew",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
         "mentions": 1
       },
       {
@@ -1232,27 +1004,11 @@
         "mentions": 43
       },
       {
-        "tag": "gods",
-        "mentions": 30
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 19
-      },
-      {
-        "tag": "Psalm",
-        "mentions": 18
-      },
-      {
         "tag": "Deuteronomy",
         "mentions": 16
       },
       {
         "tag": "Asherah",
-        "mentions": 14
-      },
-      {
-        "tag": "Kings",
         "mentions": 14
       },
       {
@@ -1278,10 +1034,6 @@
       {
         "tag": "Joram",
         "mentions": 8
-      },
-      {
-        "tag": "2 Kings",
-        "mentions": 7
       },
       {
         "tag": "Samaria",
@@ -1320,10 +1072,6 @@
         "mentions": 4
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 3
-      },
-      {
         "tag": "Dead Sea",
         "mentions": 3
       },
@@ -1337,10 +1085,6 @@
       },
       {
         "tag": "Jerusalem",
-        "mentions": 3
-      },
-      {
-        "tag": "Judges",
         "mentions": 3
       },
       {
@@ -1376,10 +1120,6 @@
         "mentions": 2
       },
       {
-        "tag": "New Testament",
-        "mentions": 2
-      },
-      {
         "tag": "Persia",
         "mentions": 2
       },
@@ -1397,10 +1137,6 @@
       },
       {
         "tag": "biblical canon",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Daniel",
         "mentions": 1
       },
       {
@@ -1476,39 +1212,15 @@
     "episodeNumber": 8,
     "tags": [
       {
-        "tag": "theology",
-        "mentions": 77
-      },
-      {
         "tag": "Jesus",
         "mentions": 12
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 9
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 6
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 4
       },
       {
         "tag": "Bart Ehrman",
         "mentions": 2
       },
       {
-        "tag": "Book of Revelation",
-        "mentions": 2
-      },
-      {
         "tag": "Judeans",
-        "mentions": 2
-      },
-      {
-        "tag": "Numbers",
         "mentions": 2
       },
       {
@@ -1520,19 +1232,11 @@
         "mentions": 1
       },
       {
-        "tag": "incarnation",
-        "mentions": 1
-      },
-      {
         "tag": "James",
         "mentions": 1
       },
       {
         "tag": "Jerusalem",
-        "mentions": 1
-      },
-      {
-        "tag": "Judges",
         "mentions": 1
       },
       {
@@ -1594,18 +1298,6 @@
         "mentions": 18
       },
       {
-        "tag": "Book of Revelation",
-        "mentions": 12
-      },
-      {
-        "tag": "gods",
-        "mentions": 11
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 10
-      },
-      {
         "tag": "Jesus",
         "mentions": 5
       },
@@ -1614,31 +1306,7 @@
         "mentions": 5
       },
       {
-        "tag": "Gospel of Mark",
-        "mentions": 3
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 3
-      },
-      {
-        "tag": "Numbers",
-        "mentions": 3
-      },
-      {
-        "tag": "Psalm",
-        "mentions": 3
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 2
-      },
-      {
         "tag": "Christian Nationalism",
-        "mentions": 2
-      },
-      {
-        "tag": "Genesis",
         "mentions": 2
       },
       {
@@ -1647,10 +1315,6 @@
       },
       {
         "tag": "Judaism",
-        "mentions": 2
-      },
-      {
-        "tag": "Kings",
         "mentions": 2
       },
       {
@@ -1671,14 +1335,6 @@
       },
       {
         "tag": "Garden of Eden",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 1
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 1
       },
       {
@@ -1746,16 +1402,8 @@
         "mentions": 50
       },
       {
-        "tag": "Leviticus",
-        "mentions": 29
-      },
-      {
         "tag": "angel",
         "mentions": 13
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 9
       },
       {
         "tag": "Adam",
@@ -1774,28 +1422,12 @@
         "mentions": 6
       },
       {
-        "tag": "Genesis",
-        "mentions": 5
-      },
-      {
         "tag": "Gentiles",
-        "mentions": 5
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 5
       },
       {
         "tag": "Jesus",
         "mentions": 5
-      },
-      {
-        "tag": "1 Timothy",
-        "mentions": 4
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 4
       },
       {
         "tag": "Israel",
@@ -1806,15 +1438,7 @@
         "mentions": 4
       },
       {
-        "tag": "First Corinthians",
-        "mentions": 3
-      },
-      {
         "tag": "Garden of Eden",
-        "mentions": 3
-      },
-      {
-        "tag": "Jude",
         "mentions": 3
       },
       {
@@ -1834,16 +1458,8 @@
         "mentions": 2
       },
       {
-        "tag": "Judges",
-        "mentions": 2
-      },
-      {
         "tag": "Matthew",
         "mentions": 2
-      },
-      {
-        "tag": "1 Thessalonians",
-        "mentions": 1
       },
       {
         "tag": "Aesop",
@@ -1912,20 +1528,8 @@
     "episodeNumber": 11,
     "tags": [
       {
-        "tag": "Hebrew Bible",
-        "mentions": 59
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 58
-      },
-      {
         "tag": "Septuagint",
         "mentions": 29
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 24
       },
       {
         "tag": "King James Version",
@@ -1964,10 +1568,6 @@
         "mentions": 9
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 8
-      },
-      {
         "tag": "Desiderius Erasmus",
         "mentions": 6
       },
@@ -2004,15 +1604,7 @@
         "mentions": 3
       },
       {
-        "tag": "Gospel of Mark",
-        "mentions": 3
-      },
-      {
         "tag": "Judeans",
-        "mentions": 3
-      },
-      {
-        "tag": "Kings",
         "mentions": 3
       },
       {
@@ -2025,10 +1617,6 @@
       },
       {
         "tag": "Origen",
-        "mentions": 3
-      },
-      {
-        "tag": "Psalm",
         "mentions": 3
       },
       {
@@ -2060,10 +1648,6 @@
         "mentions": 2
       },
       {
-        "tag": "Genesis",
-        "mentions": 2
-      },
-      {
         "tag": "Israel",
         "mentions": 2
       },
@@ -2080,10 +1664,6 @@
         "mentions": 2
       },
       {
-        "tag": "Numbers",
-        "mentions": 2
-      },
-      {
         "tag": "Samuel",
         "mentions": 2
       },
@@ -2092,19 +1672,11 @@
         "mentions": 2
       },
       {
-        "tag": "2 Chronicles",
-        "mentions": 1
-      },
-      {
         "tag": "apocalypse",
         "mentions": 1
       },
       {
         "tag": "Bart Ehrman",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
         "mentions": 1
       },
       {
@@ -2121,14 +1693,6 @@
       },
       {
         "tag": "Jonah",
-        "mentions": 1
-      },
-      {
-        "tag": "Leviticus",
-        "mentions": 1
-      },
-      {
-        "tag": "resurrection",
         "mentions": 1
       },
       {
@@ -2185,10 +1749,6 @@
         "mentions": 83
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 74
-      },
-      {
         "tag": "Luke",
         "mentions": 51
       },
@@ -2203,18 +1763,6 @@
       {
         "tag": "Matthew",
         "mentions": 13
-      },
-      {
-        "tag": "Gospel of Mark",
-        "mentions": 12
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 11
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 11
       },
       {
         "tag": "Galilee",
@@ -2245,10 +1793,6 @@
         "mentions": 4
       },
       {
-        "tag": "theology",
-        "mentions": 4
-      },
-      {
         "tag": "angel",
         "mentions": 3
       },
@@ -2273,15 +1817,7 @@
         "mentions": 2
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 1
-      },
-      {
         "tag": "Codex Sinaiticus",
-        "mentions": 1
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 1
       },
       {
@@ -2294,14 +1830,6 @@
       },
       {
         "tag": "Pastoral Epistles",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
-        "mentions": 1
-      },
-      {
-        "tag": "resurrection",
         "mentions": 1
       },
       {
@@ -2362,14 +1890,6 @@
         "mentions": 12
       },
       {
-        "tag": "theology",
-        "mentions": 11
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 9
-      },
-      {
         "tag": "Hezekiah",
         "mentions": 8
       },
@@ -2402,24 +1922,12 @@
         "mentions": 3
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 3
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 2
-      },
-      {
         "tag": "Nineveh",
         "mentions": 2
       },
       {
         "tag": "Peter",
         "mentions": 2
-      },
-      {
-        "tag": "1 Samuel",
-        "mentions": 1
       },
       {
         "tag": "Assyria",
@@ -2450,15 +1958,15 @@
         "mentions": 1
       },
       {
+        "tag": "Esau",
+        "mentions": 1
+      },
+      {
         "tag": "Galilee",
         "mentions": 1
       },
       {
         "tag": "Ham",
-        "mentions": 1
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 1
       },
       {
@@ -2474,19 +1982,11 @@
         "mentions": 1
       },
       {
-        "tag": "Judges",
-        "mentions": 1
-      },
-      {
         "tag": "Ken Ham",
         "mentions": 1
       },
       {
         "tag": "monotheism",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
         "mentions": 1
       },
       {
@@ -2558,10 +2058,6 @@
         "mentions": 8
       },
       {
-        "tag": "Genesis",
-        "mentions": 7
-      },
-      {
         "tag": "Mesopotamian",
         "mentions": 5
       },
@@ -2578,16 +2074,8 @@
         "mentions": 4
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 4
-      },
-      {
         "tag": "Sarah",
         "mentions": 4
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 3
       },
       {
         "tag": "etiology",
@@ -2610,10 +2098,6 @@
         "mentions": 3
       },
       {
-        "tag": "Christianity",
-        "mentions": 2
-      },
-      {
         "tag": "Egypt",
         "mentions": 2
       },
@@ -2628,10 +2112,6 @@
       {
         "tag": "Philistines",
         "mentions": 2
-      },
-      {
-        "tag": "1 Samuel",
-        "mentions": 1
       },
       {
         "tag": "Anatolia",
@@ -2663,14 +2143,6 @@
       },
       {
         "tag": "Mary Magdalene",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 1
-      },
-      {
-        "tag": "Numbers",
         "mentions": 1
       },
       {
@@ -2742,10 +2214,6 @@
         "mentions": 17
       },
       {
-        "tag": "Zechariah",
-        "mentions": 11
-      },
-      {
         "tag": "Book of Enoch",
         "mentions": 10
       },
@@ -2754,24 +2222,12 @@
         "mentions": 10
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 8
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 7
       },
       {
         "tag": "YHWH",
         "mentions": 7
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 6
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 6
       },
       {
         "tag": "angel",
@@ -2786,24 +2242,12 @@
         "mentions": 5
       },
       {
-        "tag": "Genesis",
-        "mentions": 4
-      },
-      {
         "tag": "Isaiah",
         "mentions": 4
       },
       {
         "tag": "King Saul",
         "mentions": 4
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 3
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 3
       },
       {
         "tag": "Endor",
@@ -2822,19 +2266,11 @@
         "mentions": 2
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 2
-      },
-      {
         "tag": "child sacrifice",
         "mentions": 2
       },
       {
         "tag": "Eusebius",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of Matthew",
         "mentions": 2
       },
       {
@@ -2866,10 +2302,6 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Job",
-        "mentions": 1
-      },
-      {
         "tag": "Daniel",
         "mentions": 1
       },
@@ -2886,10 +2318,6 @@
         "mentions": 1
       },
       {
-        "tag": "Gospel of Mark",
-        "mentions": 1
-      },
-      {
         "tag": "Josephus",
         "mentions": 1
       },
@@ -2898,19 +2326,11 @@
         "mentions": 1
       },
       {
-        "tag": "Kings",
-        "mentions": 1
-      },
-      {
         "tag": "Papias of Hierapolis",
         "mentions": 1
       },
       {
         "tag": "Satan",
-        "mentions": 1
-      },
-      {
-        "tag": "theology",
         "mentions": 1
       }
     ],
@@ -2962,10 +2382,6 @@
         "mentions": 45
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 32
-      },
-      {
         "tag": "James",
         "mentions": 22
       },
@@ -2986,18 +2402,6 @@
         "mentions": 10
       },
       {
-        "tag": "New Testament",
-        "mentions": 9
-      },
-      {
-        "tag": "Gospel of Mark",
-        "mentions": 6
-      },
-      {
-        "tag": "Gospel of Matthew",
-        "mentions": 5
-      },
-      {
         "tag": "Luke",
         "mentions": 5
       },
@@ -3014,14 +2418,6 @@
         "mentions": 4
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 3
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 3
-      },
-      {
         "tag": "Galilee",
         "mentions": 3
       },
@@ -3035,10 +2431,6 @@
       },
       {
         "tag": "Gnostic",
-        "mentions": 2
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 2
       },
       {
@@ -3066,15 +2458,7 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Revelation",
-        "mentions": 1
-      },
-      {
         "tag": "El",
-        "mentions": 1
-      },
-      {
-        "tag": "Jude",
         "mentions": 1
       },
       {
@@ -3142,10 +2526,6 @@
         "mentions": 35
       },
       {
-        "tag": "New Testament",
-        "mentions": 25
-      },
-      {
         "tag": "James",
         "mentions": 21
       },
@@ -3162,10 +2542,6 @@
         "mentions": 13
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 9
-      },
-      {
         "tag": "Matthew",
         "mentions": 9
       },
@@ -3174,16 +2550,8 @@
         "mentions": 7
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 5
-      },
-      {
         "tag": "YHWH",
         "mentions": 5
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 4
       },
       {
         "tag": "Martin Luther",
@@ -3191,14 +2559,6 @@
       },
       {
         "tag": "angel",
-        "mentions": 2
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of Mark",
         "mentions": 2
       },
       {
@@ -3211,10 +2571,6 @@
       },
       {
         "tag": "archaeology",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Isaiah",
         "mentions": 1
       },
       {
@@ -3238,10 +2594,6 @@
         "mentions": 1
       },
       {
-        "tag": "Kings",
-        "mentions": 1
-      },
-      {
         "tag": "Luke",
         "mentions": 1
       },
@@ -3250,15 +2602,7 @@
         "mentions": 1
       },
       {
-        "tag": "Numbers",
-        "mentions": 1
-      },
-      {
         "tag": "Paul",
-        "mentions": 1
-      },
-      {
-        "tag": "resurrection",
         "mentions": 1
       },
       {
@@ -3271,10 +2615,6 @@
       },
       {
         "tag": "textual criticism",
-        "mentions": 1
-      },
-      {
-        "tag": "theology",
         "mentions": 1
       }
     ],
@@ -3338,24 +2678,8 @@
         "mentions": 30
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 16
-      },
-      {
         "tag": "Israel",
         "mentions": 15
-      },
-      {
-        "tag": "Numbers",
-        "mentions": 8
-      },
-      {
-        "tag": "Book of Job",
-        "mentions": 7
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 7
       },
       {
         "tag": "Baal",
@@ -3374,15 +2698,7 @@
         "mentions": 6
       },
       {
-        "tag": "2 Samuel",
-        "mentions": 5
-      },
-      {
         "tag": "divine council",
-        "mentions": 5
-      },
-      {
-        "tag": "Genesis",
         "mentions": 5
       },
       {
@@ -3394,10 +2710,6 @@
         "mentions": 5
       },
       {
-        "tag": "Christianity",
-        "mentions": 4
-      },
-      {
         "tag": "Hebrews",
         "mentions": 4
       },
@@ -3406,19 +2718,7 @@
         "mentions": 4
       },
       {
-        "tag": "1 Chronicles",
-        "mentions": 3
-      },
-      {
         "tag": "Adam",
-        "mentions": 3
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 3
-      },
-      {
-        "tag": "Book of Revelation",
         "mentions": 3
       },
       {
@@ -3427,10 +2727,6 @@
       },
       {
         "tag": "Eve",
-        "mentions": 3
-      },
-      {
-        "tag": "gods",
         "mentions": 3
       },
       {
@@ -3474,10 +2770,6 @@
         "mentions": 2
       },
       {
-        "tag": "theology",
-        "mentions": 2
-      },
-      {
         "tag": "Ugarit",
         "mentions": 2
       },
@@ -3510,10 +2802,6 @@
         "mentions": 1
       },
       {
-        "tag": "Judges",
-        "mentions": 1
-      },
-      {
         "tag": "Justin Martyr",
         "mentions": 1
       },
@@ -3522,23 +2810,11 @@
         "mentions": 1
       },
       {
-        "tag": "Kings",
-        "mentions": 1
-      },
-      {
         "tag": "Luke",
         "mentions": 1
       },
       {
         "tag": "Moabites",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
-        "mentions": 1
-      },
-      {
-        "tag": "Zechariah",
         "mentions": 1
       }
     ],
@@ -3586,20 +2862,8 @@
     "episodeNumber": 19,
     "tags": [
       {
-        "tag": "gods",
-        "mentions": 63
-      },
-      {
         "tag": "Paul",
         "mentions": 45
-      },
-      {
-        "tag": "resurrection",
-        "mentions": 30
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 22
       },
       {
         "tag": "Jesus",
@@ -3607,10 +2871,6 @@
       },
       {
         "tag": "monotheism",
-        "mentions": 18
-      },
-      {
-        "tag": "Psalm",
         "mentions": 18
       },
       {
@@ -3634,14 +2894,6 @@
         "mentions": 10
       },
       {
-        "tag": "New Testament",
-        "mentions": 9
-      },
-      {
-        "tag": "First Corinthians",
-        "mentions": 8
-      },
-      {
         "tag": "angel",
         "mentions": 6
       },
@@ -3651,10 +2903,6 @@
       },
       {
         "tag": "Eschatology",
-        "mentions": 6
-      },
-      {
-        "tag": "Genesis",
         "mentions": 6
       },
       {
@@ -3674,32 +2922,12 @@
         "mentions": 5
       },
       {
-        "tag": "theology",
-        "mentions": 5
-      },
-      {
         "tag": "YHWH",
         "mentions": 5
       },
       {
-        "tag": "Book of Revelation",
-        "mentions": 4
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 3
-      },
-      {
-        "tag": "Judges",
-        "mentions": 3
-      },
-      {
         "tag": "Second Temple period",
         "mentions": 3
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 2
       },
       {
         "tag": "Egypt",
@@ -3734,23 +2962,11 @@
         "mentions": 1
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of Mark",
-        "mentions": 1
-      },
-      {
         "tag": "Hell",
         "mentions": 1
       },
       {
         "tag": "King David",
-        "mentions": 1
-      },
-      {
-        "tag": "Kings",
         "mentions": 1
       },
       {
@@ -3808,16 +3024,8 @@
     "episodeNumber": 20,
     "tags": [
       {
-        "tag": "Christianity",
-        "mentions": 34
-      },
-      {
         "tag": "Flood",
         "mentions": 34
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 28
       },
       {
         "tag": "biblical canon",
@@ -3852,10 +3060,6 @@
         "mentions": 13
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 11
-      },
-      {
         "tag": "Masoretic Text",
         "mentions": 10
       },
@@ -3880,14 +3084,6 @@
         "mentions": 7
       },
       {
-        "tag": "Kings",
-        "mentions": 6
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 6
-      },
-      {
         "tag": "Abraham",
         "mentions": 5
       },
@@ -3900,28 +3096,12 @@
         "mentions": 4
       },
       {
-        "tag": "Numbers",
-        "mentions": 4
-      },
-      {
         "tag": "2 Maccabees",
-        "mentions": 3
-      },
-      {
-        "tag": "Book of Revelation",
         "mentions": 3
       },
       {
         "tag": "Ishmael",
         "mentions": 3
-      },
-      {
-        "tag": "Book of Daniel",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 2
       },
       {
         "tag": "Dead Sea Scrolls",
@@ -4000,15 +3180,7 @@
         "mentions": 1
       },
       {
-        "tag": "Jude",
-        "mentions": 1
-      },
-      {
         "tag": "Moses",
-        "mentions": 1
-      },
-      {
-        "tag": "resurrection",
         "mentions": 1
       },
       {
@@ -4087,24 +3259,12 @@
         "mentions": 8
       },
       {
-        "tag": "Ezekiel",
-        "mentions": 7
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 7
-      },
-      {
         "tag": "Molek",
         "mentions": 7
       },
       {
         "tag": "Ten Commandments",
         "mentions": 7
-      },
-      {
-        "tag": "gods",
-        "mentions": 6
       },
       {
         "tag": "Carthage",
@@ -4119,19 +3279,11 @@
         "mentions": 4
       },
       {
-        "tag": "Book of Exodus",
-        "mentions": 4
-      },
-      {
         "tag": "Judaism",
         "mentions": 4
       },
       {
         "tag": "Abraham",
-        "mentions": 3
-      },
-      {
-        "tag": "Numbers",
         "mentions": 3
       },
       {
@@ -4141,10 +3293,6 @@
       {
         "tag": "YHWH",
         "mentions": 3
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 2
       },
       {
         "tag": "Deuteronomy",
@@ -4195,23 +3343,11 @@
         "mentions": 1
       },
       {
-        "tag": "Leviticus",
-        "mentions": 1
-      },
-      {
         "tag": "Masoretic Text",
         "mentions": 1
       },
       {
         "tag": "Moabites",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
-        "mentions": 1
-      },
-      {
-        "tag": "resurrection",
         "mentions": 1
       },
       {
@@ -4270,14 +3406,6 @@
     "episodeNumber": 22,
     "tags": [
       {
-        "tag": "Genesis",
-        "mentions": 35
-      },
-      {
-        "tag": "Leviticus",
-        "mentions": 24
-      },
-      {
         "tag": "Hebrews",
         "mentions": 7
       },
@@ -4314,10 +3442,6 @@
         "mentions": 3
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 2
-      },
-      {
         "tag": "El",
         "mentions": 2
       },
@@ -4330,10 +3454,6 @@
         "mentions": 2
       },
       {
-        "tag": "Numbers",
-        "mentions": 2
-      },
-      {
         "tag": "Adam",
         "mentions": 1
       },
@@ -4342,23 +3462,11 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Job",
-        "mentions": 1
-      },
-      {
         "tag": "Cain",
         "mentions": 1
       },
       {
         "tag": "Eve",
-        "mentions": 1
-      },
-      {
-        "tag": "Ezekiel",
-        "mentions": 1
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 1
       },
       {
@@ -4383,10 +3491,6 @@
       },
       {
         "tag": "Noah",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
         "mentions": 1
       }
     ],
@@ -4428,27 +3532,11 @@
     "episodeNumber": 23,
     "tags": [
       {
-        "tag": "Christianity",
-        "mentions": 14
-      },
-      {
         "tag": "Jeremiah",
         "mentions": 9
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 6
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 6
-      },
-      {
         "tag": "Elizabeth",
-        "mentions": 5
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 5
       },
       {
@@ -4458,10 +3546,6 @@
       {
         "tag": "Romans",
         "mentions": 4
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 3
       },
       {
         "tag": "Judaism",
@@ -4477,14 +3561,6 @@
       },
       {
         "tag": "Mary Magdalene",
-        "mentions": 2
-      },
-      {
-        "tag": "Numbers",
-        "mentions": 2
-      },
-      {
-        "tag": "Psalm",
         "mentions": 2
       },
       {
@@ -4573,10 +3649,6 @@
         "mentions": 8
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 7
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 6
       },
@@ -4595,18 +3667,6 @@
       {
         "tag": "Moses",
         "mentions": 2
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 1
-      },
-      {
-        "tag": "Ezekiel",
-        "mentions": 1
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 1
       },
       {
         "tag": "Judah",
@@ -4671,40 +3731,16 @@
         "mentions": 17
       },
       {
-        "tag": "Psalm",
-        "mentions": 9
-      },
-      {
         "tag": "YHWH",
         "mentions": 9
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 8
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 6
       },
       {
         "tag": "Eschatology",
         "mentions": 5
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 4
-      },
-      {
         "tag": "Israel",
         "mentions": 4
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 3
-      },
-      {
-        "tag": "Gospel of Mark",
-        "mentions": 3
       },
       {
         "tag": "Isaiah",
@@ -4723,10 +3759,6 @@
         "mentions": 2
       },
       {
-        "tag": "Kings",
-        "mentions": 2
-      },
-      {
         "tag": "Septuagint",
         "mentions": 2
       },
@@ -4740,18 +3772,6 @@
       },
       {
         "tag": "Egypt",
-        "mentions": 1
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of Matthew",
         "mentions": 1
       },
       {
@@ -4835,10 +3855,6 @@
         "mentions": 17
       },
       {
-        "tag": "Christianity",
-        "mentions": 16
-      },
-      {
         "tag": "Gentiles",
         "mentions": 16
       },
@@ -4847,19 +3863,7 @@
         "mentions": 16
       },
       {
-        "tag": "resurrection",
-        "mentions": 15
-      },
-      {
-        "tag": "theology",
-        "mentions": 7
-      },
-      {
         "tag": "circumcision",
-        "mentions": 6
-      },
-      {
-        "tag": "First Corinthians",
         "mentions": 6
       },
       {
@@ -4869,14 +3873,6 @@
       {
         "tag": "Matthew",
         "mentions": 3
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 2
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 2
       },
       {
         "tag": "Philo of Alexandria",
@@ -4889,10 +3885,6 @@
       {
         "tag": "Trinity",
         "mentions": 2
-      },
-      {
-        "tag": "2nd Timothy",
-        "mentions": 1
       },
       {
         "tag": "apocalypse",
@@ -4977,24 +3969,12 @@
         "mentions": 18
       },
       {
-        "tag": "Book of Revelation",
-        "mentions": 14
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 8
-      },
-      {
         "tag": "Israel",
         "mentions": 7
       },
       {
         "tag": "YHWH",
         "mentions": 7
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 6
       },
       {
         "tag": "Flood",
@@ -5009,27 +3989,11 @@
         "mentions": 4
       },
       {
-        "tag": "gods",
-        "mentions": 4
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 3
-      },
-      {
         "tag": "Hell",
         "mentions": 3
       },
       {
-        "tag": "Jude",
-        "mentions": 3
-      },
-      {
         "tag": "Adam",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Job",
         "mentions": 2
       },
       {
@@ -5041,15 +4005,7 @@
         "mentions": 2
       },
       {
-        "tag": "Kings",
-        "mentions": 2
-      },
-      {
         "tag": "Mesopotamian",
-        "mentions": 2
-      },
-      {
-        "tag": "New Testament",
         "mentions": 2
       },
       {
@@ -5089,15 +4045,7 @@
         "mentions": 1
       },
       {
-        "tag": "Numbers",
-        "mentions": 1
-      },
-      {
         "tag": "Peter",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
         "mentions": 1
       },
       {
@@ -5165,18 +4113,6 @@
         "mentions": 91
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 26
-      },
-      {
-        "tag": "gods",
-        "mentions": 17
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 17
-      },
-      {
         "tag": "YHWH",
         "mentions": 16
       },
@@ -5191,14 +4127,6 @@
       {
         "tag": "Israel",
         "mentions": 12
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 10
-      },
-      {
-        "tag": "Ezekiel",
-        "mentions": 8
       },
       {
         "tag": "Satan",
@@ -5233,19 +4161,7 @@
         "mentions": 4
       },
       {
-        "tag": "Genesis",
-        "mentions": 4
-      },
-      {
-        "tag": "Jude",
-        "mentions": 4
-      },
-      {
         "tag": "Michael",
-        "mentions": 4
-      },
-      {
-        "tag": "Psalm",
         "mentions": 4
       },
       {
@@ -5281,10 +4197,6 @@
         "mentions": 2
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 2
-      },
-      {
         "tag": "El",
         "mentions": 2
       },
@@ -5309,24 +4221,12 @@
         "mentions": 2
       },
       {
-        "tag": "Judges",
-        "mentions": 2
-      },
-      {
         "tag": "Sodom",
         "mentions": 2
       },
       {
         "tag": "Syria",
         "mentions": 2
-      },
-      {
-        "tag": "theology",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 1
       },
       {
         "tag": "Deuteronomy",
@@ -5346,10 +4246,6 @@
       },
       {
         "tag": "Garden of Eden",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of John",
         "mentions": 1
       },
       {
@@ -5457,10 +4353,6 @@
         "mentions": 9
       },
       {
-        "tag": "gods",
-        "mentions": 9
-      },
-      {
         "tag": "Adam",
         "mentions": 8
       },
@@ -5477,19 +4369,7 @@
         "mentions": 3
       },
       {
-        "tag": "Book of Jonah",
-        "mentions": 3
-      },
-      {
         "tag": "Garden of Eden",
-        "mentions": 3
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 3
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 3
       },
       {
@@ -5517,23 +4397,11 @@
         "mentions": 3
       },
       {
-        "tag": "2 Kings",
-        "mentions": 2
-      },
-      {
         "tag": "inerrancy",
         "mentions": 2
       },
       {
         "tag": "Judah",
-        "mentions": 2
-      },
-      {
-        "tag": "Kings",
-        "mentions": 2
-      },
-      {
-        "tag": "Numbers",
         "mentions": 2
       },
       {
@@ -5545,14 +4413,6 @@
         "mentions": 1
       },
       {
-        "tag": "Christianity",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 1
-      },
-      {
         "tag": "Hebrews",
         "mentions": 1
       },
@@ -5561,23 +4421,11 @@
         "mentions": 1
       },
       {
-        "tag": "New Testament",
-        "mentions": 1
-      },
-      {
         "tag": "Peter",
         "mentions": 1
       },
       {
-        "tag": "Psalm",
-        "mentions": 1
-      },
-      {
         "tag": "Saint Titus",
-        "mentions": 1
-      },
-      {
-        "tag": "theology",
         "mentions": 1
       }
     ],
@@ -5625,10 +4473,6 @@
     "episodeNumber": 30,
     "tags": [
       {
-        "tag": "Christianity",
-        "mentions": 64
-      },
-      {
         "tag": "Christian Nationalism",
         "mentions": 51
       },
@@ -5645,10 +4489,6 @@
         "mentions": 5
       },
       {
-        "tag": "gods",
-        "mentions": 4
-      },
-      {
         "tag": "Andrew Whitehead",
         "mentions": 3
       },
@@ -5657,15 +4497,7 @@
         "mentions": 3
       },
       {
-        "tag": "2 Chronicles",
-        "mentions": 2
-      },
-      {
         "tag": "apocalypse",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Isaiah",
         "mentions": 1
       },
       {
@@ -5678,18 +4510,6 @@
       },
       {
         "tag": "King David",
-        "mentions": 1
-      },
-      {
-        "tag": "Leviticus",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 1
-      },
-      {
-        "tag": "Numbers",
         "mentions": 1
       },
       {
@@ -5743,20 +4563,8 @@
         "mentions": 21
       },
       {
-        "tag": "gods",
-        "mentions": 17
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 16
-      },
-      {
         "tag": "Deuteronomy",
         "mentions": 10
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 8
       },
       {
         "tag": "Judaism",
@@ -5799,15 +4607,7 @@
         "mentions": 4
       },
       {
-        "tag": "New Testament",
-        "mentions": 4
-      },
-      {
         "tag": "Baal",
-        "mentions": 3
-      },
-      {
-        "tag": "Book of Isaiah",
         "mentions": 3
       },
       {
@@ -5843,10 +4643,6 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 1
-      },
-      {
         "tag": "Canaanites",
         "mentions": 1
       },
@@ -5876,10 +4672,6 @@
       },
       {
         "tag": "Mount Gerizim",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
         "mentions": 1
       },
       {
@@ -5959,20 +4751,12 @@
         "mentions": 16
       },
       {
-        "tag": "Christianity",
-        "mentions": 14
-      },
-      {
         "tag": "Daniel",
         "mentions": 12
       },
       {
         "tag": "preterist interpretation",
         "mentions": 7
-      },
-      {
-        "tag": "Gospel of Mark",
-        "mentions": 5
       },
       {
         "tag": "Matthew",
@@ -5987,15 +4771,7 @@
         "mentions": 4
       },
       {
-        "tag": "1 Thessalonians",
-        "mentions": 3
-      },
-      {
         "tag": "Babylon",
-        "mentions": 3
-      },
-      {
-        "tag": "Ezekiel",
         "mentions": 3
       },
       {
@@ -6011,19 +4787,7 @@
         "mentions": 3
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 2
-      },
-      {
         "tag": "Gaza",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of John",
         "mentions": 2
       },
       {
@@ -6035,23 +4799,11 @@
         "mentions": 2
       },
       {
-        "tag": "New Testament",
-        "mentions": 2
-      },
-      {
         "tag": "Antiochus IV Epiphanes",
         "mentions": 1
       },
       {
         "tag": "Baal",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Daniel",
-        "mentions": 1
-      },
-      {
-        "tag": "Genesis",
         "mentions": 1
       },
       {
@@ -6071,19 +4823,7 @@
         "mentions": 1
       },
       {
-        "tag": "Numbers",
-        "mentions": 1
-      },
-      {
-        "tag": "resurrection",
-        "mentions": 1
-      },
-      {
         "tag": "Satan",
-        "mentions": 1
-      },
-      {
-        "tag": "theology",
         "mentions": 1
       },
       {
@@ -6147,24 +4887,8 @@
         "mentions": 20
       },
       {
-        "tag": "Christianity",
-        "mentions": 19
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 14
-      },
-      {
-        "tag": "2 Corinthians",
-        "mentions": 11
-      },
-      {
         "tag": "Satan",
         "mentions": 10
-      },
-      {
-        "tag": "theology",
-        "mentions": 8
       },
       {
         "tag": "angel",
@@ -6179,10 +4903,6 @@
         "mentions": 5
       },
       {
-        "tag": "Book of Revelation",
-        "mentions": 4
-      },
-      {
         "tag": "Hebrews",
         "mentions": 4
       },
@@ -6195,19 +4915,7 @@
         "mentions": 3
       },
       {
-        "tag": "gods",
-        "mentions": 2
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 2
-      },
-      {
         "tag": "apocalypse",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Acts",
         "mentions": 1
       },
       {
@@ -6216,10 +4924,6 @@
       },
       {
         "tag": "Egypt",
-        "mentions": 1
-      },
-      {
-        "tag": "First Corinthians",
         "mentions": 1
       },
       {
@@ -6321,10 +5025,6 @@
         "mentions": 6
       },
       {
-        "tag": "Book of Daniel",
-        "mentions": 5
-      },
-      {
         "tag": "Eschatology",
         "mentions": 5
       },
@@ -6337,16 +5037,8 @@
         "mentions": 5
       },
       {
-        "tag": "Christianity",
-        "mentions": 4
-      },
-      {
         "tag": "Cyrus the Great",
         "mentions": 4
-      },
-      {
-        "tag": "Kings",
-        "mentions": 3
       },
       {
         "tag": "Michael",
@@ -6366,14 +5058,6 @@
       },
       {
         "tag": "Dead Sea Scrolls",
-        "mentions": 2
-      },
-      {
-        "tag": "gods",
-        "mentions": 2
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 2
       },
       {
@@ -6401,10 +5085,6 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 1
-      },
-      {
         "tag": "Dead Sea",
         "mentions": 1
       },
@@ -6414,10 +5094,6 @@
       },
       {
         "tag": "Egypt",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of John",
         "mentions": 1
       },
       {
@@ -6502,10 +5178,6 @@
         "mentions": 37
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 35
-      },
-      {
         "tag": "Pastoral Epistles",
         "mentions": 28
       },
@@ -6526,23 +5198,11 @@
         "mentions": 21
       },
       {
-        "tag": "Christianity",
-        "mentions": 15
-      },
-      {
         "tag": "James",
         "mentions": 9
       },
       {
-        "tag": "2nd Timothy",
-        "mentions": 7
-      },
-      {
         "tag": "Irenaeus",
-        "mentions": 7
-      },
-      {
-        "tag": "New Testament",
         "mentions": 7
       },
       {
@@ -6550,28 +5210,8 @@
         "mentions": 6
       },
       {
-        "tag": "First Corinthians",
-        "mentions": 5
-      },
-      {
-        "tag": "Book of Acts",
-        "mentions": 4
-      },
-      {
         "tag": "Galilee",
         "mentions": 4
-      },
-      {
-        "tag": "Gospel of Matthew",
-        "mentions": 4
-      },
-      {
-        "tag": "Gospel of Mark",
-        "mentions": 3
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 3
       },
       {
         "tag": "Hebrews",
@@ -6584,18 +5224,6 @@
       {
         "tag": "YHWH",
         "mentions": 3
-      },
-      {
-        "tag": "1 Timothy",
-        "mentions": 2
-      },
-      {
-        "tag": "2 Corinthians",
-        "mentions": 2
-      },
-      {
-        "tag": "Ephesians",
-        "mentions": 2
       },
       {
         "tag": "Eusebius",
@@ -6675,10 +5303,6 @@
         "mentions": 24
       },
       {
-        "tag": "Genesis",
-        "mentions": 10
-      },
-      {
         "tag": "Judeans",
         "mentions": 9
       },
@@ -6695,24 +5319,8 @@
         "mentions": 7
       },
       {
-        "tag": "Christianity",
-        "mentions": 6
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 5
-      },
-      {
-        "tag": "Kings",
-        "mentions": 5
-      },
-      {
-        "tag": "theology",
-        "mentions": 5
-      },
-      {
-        "tag": "Book of Proverbs",
-        "mentions": 4
       },
       {
         "tag": "Assyria",
@@ -6720,10 +5328,6 @@
       },
       {
         "tag": "Egypt",
-        "mentions": 3
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 3
       },
       {
@@ -6736,6 +5340,10 @@
       },
       {
         "tag": "Deuteronomy",
+        "mentions": 2
+      },
+      {
+        "tag": "Esau",
         "mentions": 2
       },
       {
@@ -6752,10 +5360,6 @@
       },
       {
         "tag": "monotheism",
-        "mentions": 2
-      },
-      {
-        "tag": "Psalm",
         "mentions": 2
       },
       {
@@ -6824,10 +5428,6 @@
       },
       {
         "tag": "Moses",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
         "mentions": 1
       },
       {
@@ -6909,16 +5509,8 @@
         "mentions": 4
       },
       {
-        "tag": "resurrection",
-        "mentions": 4
-      },
-      {
         "tag": "Israel",
         "mentions": 3
-      },
-      {
-        "tag": "Dr. Aaron Adair",
-        "mentions": 2
       },
       {
         "tag": "Easter",
@@ -6933,27 +5525,7 @@
         "mentions": 2
       },
       {
-        "tag": "gods",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of Matthew",
-        "mentions": 2
-      },
-      {
         "tag": "Judaism",
-        "mentions": 2
-      },
-      {
-        "tag": "Kings",
-        "mentions": 2
-      },
-      {
-        "tag": "Numbers",
         "mentions": 2
       },
       {
@@ -6962,10 +5534,6 @@
       },
       {
         "tag": "Romans",
-        "mentions": 2
-      },
-      {
-        "tag": "theology",
         "mentions": 2
       },
       {
@@ -6985,27 +5553,7 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 1
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 1
-      },
-      {
         "tag": "Dead Sea Scrolls",
-        "mentions": 1
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 1
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 1
       },
       {
@@ -7042,10 +5590,6 @@
       },
       {
         "tag": "Nephilim",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
         "mentions": 1
       },
       {
@@ -7107,10 +5651,6 @@
         "mentions": 39
       },
       {
-        "tag": "Kings",
-        "mentions": 21
-      },
-      {
         "tag": "Luke",
         "mentions": 15
       },
@@ -7139,28 +5679,12 @@
         "mentions": 5
       },
       {
-        "tag": "Christianity",
-        "mentions": 4
-      },
-      {
         "tag": "Gentiles",
-        "mentions": 4
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 4
       },
       {
         "tag": "Judaism",
         "mentions": 4
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 4
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 3
       },
       {
         "tag": "Flood",
@@ -7191,27 +5715,11 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 1
-      },
-      {
         "tag": "Egypt",
         "mentions": 1
       },
       {
-        "tag": "Genesis",
-        "mentions": 1
-      },
-      {
-        "tag": "gods",
-        "mentions": 1
-      },
-      {
         "tag": "Gospel of James",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of Matthew",
         "mentions": 1
       },
       {
@@ -7224,10 +5732,6 @@
       },
       {
         "tag": "Septuagint",
-        "mentions": 1
-      },
-      {
-        "tag": "theology",
         "mentions": 1
       }
     ],
@@ -7269,20 +5773,8 @@
     "episodeNumber": 39,
     "tags": [
       {
-        "tag": "Book of Revelation",
-        "mentions": 48
-      },
-      {
         "tag": "Jesus",
         "mentions": 23
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 18
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 16
       },
       {
         "tag": "Hell",
@@ -7321,19 +5813,11 @@
         "mentions": 4
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 4
-      },
-      {
         "tag": "Daniel",
         "mentions": 4
       },
       {
         "tag": "Isaiah",
-        "mentions": 4
-      },
-      {
-        "tag": "New Testament",
         "mentions": 4
       },
       {
@@ -7349,10 +5833,6 @@
         "mentions": 2
       },
       {
-        "tag": "Book of Daniel",
-        "mentions": 2
-      },
-      {
         "tag": "Codex Sinaiticus",
         "mentions": 2
       },
@@ -7361,15 +5841,7 @@
         "mentions": 2
       },
       {
-        "tag": "Ezekiel",
-        "mentions": 2
-      },
-      {
         "tag": "Garden of Eden",
-        "mentions": 2
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 2
       },
       {
@@ -7401,10 +5873,6 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 1
-      },
-      {
         "tag": "Council of Jerusalem",
         "mentions": 1
       },
@@ -7433,19 +5901,11 @@
         "mentions": 1
       },
       {
-        "tag": "Numbers",
-        "mentions": 1
-      },
-      {
         "tag": "Pergamum",
         "mentions": 1
       },
       {
         "tag": "preterist interpretation",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
         "mentions": 1
       },
       {
@@ -7530,43 +5990,11 @@
         "mentions": 6
       },
       {
-        "tag": "New Testament",
-        "mentions": 6
-      },
-      {
-        "tag": "gods",
-        "mentions": 5
-      },
-      {
-        "tag": "1 Samuel",
-        "mentions": 4
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 3
-      },
-      {
-        "tag": "italy",
-        "mentions": 3
-      },
-      {
-        "tag": "Numbers",
-        "mentions": 3
-      },
-      {
-        "tag": "seattle",
-        "mentions": 3
-      },
-      {
-        "tag": "2 Kings",
-        "mentions": 2
-      },
-      {
         "tag": "Baal",
         "mentions": 2
       },
       {
-        "tag": "Kings",
+        "tag": "baptism",
         "mentions": 2
       },
       {
@@ -7575,10 +6003,6 @@
       },
       {
         "tag": "Bart Ehrman",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
         "mentions": 1
       },
       {
@@ -7591,14 +6015,6 @@
       },
       {
         "tag": "Galilee",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 1
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 1
       },
       {
@@ -7696,10 +6112,6 @@
         "mentions": 14
       },
       {
-        "tag": "Christianity",
-        "mentions": 11
-      },
-      {
         "tag": "Japheth",
         "mentions": 11
       },
@@ -7716,14 +6128,6 @@
         "mentions": 5
       },
       {
-        "tag": "Genesis",
-        "mentions": 5
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 5
-      },
-      {
         "tag": "Jesus",
         "mentions": 4
       },
@@ -7736,10 +6140,6 @@
         "mentions": 3
       },
       {
-        "tag": "First Corinthians",
-        "mentions": 3
-      },
-      {
         "tag": "Joshua",
         "mentions": 3
       },
@@ -7748,23 +6148,11 @@
         "mentions": 3
       },
       {
-        "tag": "Leviticus",
-        "mentions": 3
-      },
-      {
         "tag": "Matthew",
         "mentions": 3
       },
       {
         "tag": "Africa",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Proverbs",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Revelation",
         "mentions": 2
       },
       {
@@ -7778,10 +6166,6 @@
       {
         "tag": "Peter",
         "mentions": 2
-      },
-      {
-        "tag": "1 Peter",
-        "mentions": 1
       },
       {
         "tag": "Adam",
@@ -7804,10 +6188,6 @@
         "mentions": 1
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 1
-      },
-      {
         "tag": "Islam",
         "mentions": 1
       },
@@ -7817,10 +6197,6 @@
       },
       {
         "tag": "Judaism",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
         "mentions": 1
       },
       {
@@ -7876,10 +6252,6 @@
         "mentions": 116
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 41
-      },
-      {
         "tag": "Trinity",
         "mentions": 28
       },
@@ -7896,24 +6268,12 @@
         "mentions": 10
       },
       {
-        "tag": "Christianity",
-        "mentions": 9
-      },
-      {
-        "tag": "gods",
-        "mentions": 8
-      },
-      {
         "tag": "YHWH",
         "mentions": 7
       },
       {
         "tag": "Holy Spirit",
         "mentions": 6
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 5
       },
       {
         "tag": "Hebrews",
@@ -7930,14 +6290,6 @@
       {
         "tag": "Council of Nicaea",
         "mentions": 3
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 2
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 2
       },
       {
         "tag": "Isaac",
@@ -7960,23 +6312,11 @@
         "mentions": 2
       },
       {
-        "tag": "theology",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 1
-      },
-      {
         "tag": "Daniel",
         "mentions": 1
       },
       {
         "tag": "Deuteronomy",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of Mark",
         "mentions": 1
       },
       {
@@ -7997,14 +6337,6 @@
       },
       {
         "tag": "provenance",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
-        "mentions": 1
-      },
-      {
-        "tag": "resurrection",
         "mentions": 1
       },
       {
@@ -8056,10 +6388,6 @@
     "episodeNumber": 43,
     "tags": [
       {
-        "tag": "Book of Isaiah",
-        "mentions": 60
-      },
-      {
         "tag": "Jesus",
         "mentions": 38
       },
@@ -8108,10 +6436,6 @@
         "mentions": 3
       },
       {
-        "tag": "Gospel of Mark",
-        "mentions": 3
-      },
-      {
         "tag": "Second Temple period",
         "mentions": 3
       },
@@ -8124,16 +6448,8 @@
         "mentions": 2
       },
       {
-        "tag": "Kings",
-        "mentions": 2
-      },
-      {
         "tag": "Romans",
         "mentions": 2
-      },
-      {
-        "tag": "2 Kings",
-        "mentions": 1
       },
       {
         "tag": "Bernhard Duhm",
@@ -8141,14 +6457,6 @@
       },
       {
         "tag": "Bethlehem",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 1
-      },
-      {
-        "tag": "Christianity",
         "mentions": 1
       },
       {
@@ -8168,10 +6476,6 @@
         "mentions": 1
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 1
-      },
-      {
         "tag": "Hell",
         "mentions": 1
       },
@@ -8181,10 +6485,6 @@
       },
       {
         "tag": "Joseph",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
         "mentions": 1
       },
       {
@@ -8252,40 +6552,8 @@
         "mentions": 21
       },
       {
-        "tag": "Genesis",
-        "mentions": 18
-      },
-      {
-        "tag": "Gospel of Matthew",
-        "mentions": 16
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 9
-      },
-      {
-        "tag": "First Corinthians",
-        "mentions": 6
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 6
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 4
-      },
-      {
         "tag": "Jennifer Bird",
         "mentions": 3
-      },
-      {
-        "tag": "Leviticus",
-        "mentions": 3
-      },
-      {
-        "tag": "Ephesians",
-        "mentions": 2
       },
       {
         "tag": "Gentiles",
@@ -8298,10 +6566,6 @@
       {
         "tag": "Univocality",
         "mentions": 2
-      },
-      {
-        "tag": "1 Thessalonians",
-        "mentions": 1
       },
       {
         "tag": "Abraham",
@@ -8382,20 +6646,12 @@
         "mentions": 26
       },
       {
-        "tag": "Book of Daniel",
-        "mentions": 15
-      },
-      {
         "tag": "Qumran",
         "mentions": 15
       },
       {
         "tag": "Septuagint",
         "mentions": 11
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 10
       },
       {
         "tag": "Israel",
@@ -8426,14 +6682,6 @@
         "mentions": 5
       },
       {
-        "tag": "Genesis",
-        "mentions": 5
-      },
-      {
-        "tag": "gods",
-        "mentions": 5
-      },
-      {
         "tag": "Jeremiah",
         "mentions": 5
       },
@@ -8444,14 +6692,6 @@
       {
         "tag": "Samuel",
         "mentions": 5
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 4
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 4
       },
       {
         "tag": "Dead Sea",
@@ -8470,23 +6710,11 @@
         "mentions": 4
       },
       {
-        "tag": "Psalm",
-        "mentions": 4
-      },
-      {
         "tag": "Essenes",
         "mentions": 3
       },
       {
         "tag": "Moses",
-        "mentions": 3
-      },
-      {
-        "tag": "Numbers",
-        "mentions": 3
-      },
-      {
-        "tag": "theology",
         "mentions": 3
       },
       {
@@ -8502,10 +6730,6 @@
         "mentions": 2
       },
       {
-        "tag": "Book of Exodus",
-        "mentions": 2
-      },
-      {
         "tag": "El",
         "mentions": 2
       },
@@ -8515,10 +6739,6 @@
       },
       {
         "tag": "Eschatology",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of Matthew",
         "mentions": 2
       },
       {
@@ -8562,19 +6782,11 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Revelation",
-        "mentions": 1
-      },
-      {
         "tag": "Candida Moss",
         "mentions": 1
       },
       {
         "tag": "Egypt",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of Mark",
         "mentions": 1
       },
       {
@@ -8598,15 +6810,7 @@
         "mentions": 1
       },
       {
-        "tag": "Kings",
-        "mentions": 1
-      },
-      {
         "tag": "Mount Ebal",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
         "mentions": 1
       },
       {
@@ -8696,27 +6900,11 @@
         "mentions": 7
       },
       {
-        "tag": "Christianity",
-        "mentions": 6
-      },
-      {
         "tag": "Deuteronomy",
         "mentions": 6
       },
       {
-        "tag": "Gospel of Matthew",
-        "mentions": 6
-      },
-      {
-        "tag": "Zechariah",
-        "mentions": 6
-      },
-      {
         "tag": "Judah",
-        "mentions": 5
-      },
-      {
-        "tag": "Judges",
         "mentions": 5
       },
       {
@@ -8732,19 +6920,11 @@
         "mentions": 4
       },
       {
-        "tag": "Genesis",
-        "mentions": 4
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 4
       },
       {
         "tag": "King James Version",
-        "mentions": 4
-      },
-      {
-        "tag": "Kings",
         "mentions": 4
       },
       {
@@ -8768,15 +6948,7 @@
         "mentions": 3
       },
       {
-        "tag": "Gospel of Mark",
-        "mentions": 3
-      },
-      {
         "tag": "inerrancy",
-        "mentions": 3
-      },
-      {
-        "tag": "Psalm",
         "mentions": 3
       },
       {
@@ -8785,10 +6957,6 @@
       },
       {
         "tag": "Gaza",
-        "mentions": 2
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 2
       },
       {
@@ -8804,14 +6972,6 @@
         "mentions": 2
       },
       {
-        "tag": "New Testament",
-        "mentions": 2
-      },
-      {
-        "tag": "Numbers",
-        "mentions": 2
-      },
-      {
         "tag": "Origen",
         "mentions": 2
       },
@@ -8824,27 +6984,11 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 1
-      },
-      {
         "tag": "circumcision",
         "mentions": 1
       },
       {
         "tag": "Egypt",
-        "mentions": 1
-      },
-      {
-        "tag": "gods",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of John",
         "mentions": 1
       },
       {
@@ -8922,18 +7066,6 @@
       {
         "tag": "Egypt",
         "mentions": 8
-      },
-      {
-        "tag": "Italy",
-        "mentions": 5
-      },
-      {
-        "tag": "Kings",
-        "mentions": 2
-      },
-      {
-        "tag": "Psalm",
-        "mentions": 1
       }
     ],
     "segments": [
@@ -8971,22 +7103,6 @@
         "mentions": 73
       },
       {
-        "tag": "Christianity",
-        "mentions": 24
-      },
-      {
-        "tag": "Gospel of Mark",
-        "mentions": 22
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 18
-      },
-      {
-        "tag": "Gospel of Matthew",
-        "mentions": 16
-      },
-      {
         "tag": "Paul",
         "mentions": 16
       },
@@ -9007,24 +7123,12 @@
         "mentions": 6
       },
       {
-        "tag": "New Testament",
-        "mentions": 5
-      },
-      {
         "tag": "Josephus",
         "mentions": 4
       },
       {
         "tag": "Papias of Hierapolis",
         "mentions": 4
-      },
-      {
-        "tag": "Book of Acts",
-        "mentions": 3
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 3
       },
       {
         "tag": "Helen Bond",
@@ -9063,19 +7167,7 @@
         "mentions": 2
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 2
-      },
-      {
-        "tag": "First Corinthians",
-        "mentions": 2
-      },
-      {
         "tag": "Holy Spirit",
-        "mentions": 2
-      },
-      {
-        "tag": "resurrection",
         "mentions": 2
       },
       {
@@ -9084,10 +7176,6 @@
       },
       {
         "tag": "archaeology",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
         "mentions": 1
       },
       {
@@ -9133,10 +7221,6 @@
       {
         "tag": "Septuagint",
         "mentions": 1
-      },
-      {
-        "tag": "theology",
-        "mentions": 1
       }
     ],
     "segments": [
@@ -9177,14 +7261,6 @@
     "episodeNumber": 49,
     "tags": [
       {
-        "tag": "Gospel of Mark",
-        "mentions": 43
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 42
-      },
-      {
         "tag": "Jesus",
         "mentions": 34
       },
@@ -9195,10 +7271,6 @@
       {
         "tag": "Papias of Hierapolis",
         "mentions": 12
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 10
       },
       {
         "tag": "Romans",
@@ -9215,10 +7287,6 @@
       {
         "tag": "Luke",
         "mentions": 4
-      },
-      {
-        "tag": "theology",
-        "mentions": 3
       },
       {
         "tag": "Candida Moss",
@@ -9258,10 +7326,6 @@
       },
       {
         "tag": "Israel",
-        "mentions": 1
-      },
-      {
-        "tag": "Kings",
         "mentions": 1
       },
       {
@@ -9319,18 +7383,6 @@
         "mentions": 60
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 34
-      },
-      {
-        "tag": "resurrection",
-        "mentions": 21
-      },
-      {
-        "tag": "Gospel of Mark",
-        "mentions": 17
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 16
       },
@@ -9341,10 +7393,6 @@
       {
         "tag": "Mary Magdalene",
         "mentions": 14
-      },
-      {
-        "tag": "Gospel of Matthew",
-        "mentions": 12
       },
       {
         "tag": "Bethany",
@@ -9359,16 +7407,8 @@
         "mentions": 8
       },
       {
-        "tag": "New Testament",
-        "mentions": 8
-      },
-      {
         "tag": "Passover",
         "mentions": 8
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 5
       },
       {
         "tag": "Sanhedrin",
@@ -9377,10 +7417,6 @@
       {
         "tag": "Easter",
         "mentions": 4
-      },
-      {
-        "tag": "Holy Week",
-        "mentions": 3
       },
       {
         "tag": "Bart Ehrman",
@@ -9392,10 +7428,6 @@
       },
       {
         "tag": "Galilee",
-        "mentions": 2
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 2
       },
       {
@@ -9435,11 +7467,7 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
+        "tag": "baptism",
         "mentions": 1
       },
       {
@@ -9448,10 +7476,6 @@
       },
       {
         "tag": "Elijah",
-        "mentions": 1
-      },
-      {
-        "tag": "Ezekiel",
         "mentions": 1
       },
       {
@@ -9516,18 +7540,6 @@
     "episodeNumber": 51,
     "tags": [
       {
-        "tag": "Christianity",
-        "mentions": 6
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 2
-      },
-      {
-        "tag": "theology",
-        "mentions": 2
-      },
-      {
         "tag": "Dead Sea Scrolls",
         "mentions": 1
       },
@@ -9586,20 +7598,8 @@
         "mentions": 26
       },
       {
-        "tag": "Genesis",
-        "mentions": 21
-      },
-      {
-        "tag": "2 Samuel",
-        "mentions": 16
-      },
-      {
         "tag": "King David",
         "mentions": 14
-      },
-      {
-        "tag": "1 Chronicles",
-        "mentions": 12
       },
       {
         "tag": "Adam",
@@ -9618,18 +7618,6 @@
         "mentions": 8
       },
       {
-        "tag": "1 Samuel",
-        "mentions": 7
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 5
-      },
-      {
-        "tag": "Ephesians",
-        "mentions": 4
-      },
-      {
         "tag": "Eve",
         "mentions": 4
       },
@@ -9638,28 +7626,8 @@
         "mentions": 4
       },
       {
-        "tag": "1 Timothy",
-        "mentions": 3
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 3
-      },
-      {
         "tag": "Romans",
         "mentions": 3
-      },
-      {
-        "tag": "1 Peter",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Proverbs",
-        "mentions": 2
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 2
       },
       {
         "tag": "Paul",
@@ -9675,10 +7643,6 @@
       },
       {
         "tag": "Bethlehem",
-        "mentions": 1
-      },
-      {
-        "tag": "First Corinthians",
         "mentions": 1
       },
       {
@@ -9754,19 +7718,7 @@
         "mentions": 11
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 8
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 8
-      },
-      {
         "tag": "King Saul",
-        "mentions": 5
-      },
-      {
-        "tag": "Kings",
         "mentions": 5
       },
       {
@@ -9774,16 +7726,8 @@
         "mentions": 5
       },
       {
-        "tag": "2 Kings",
-        "mentions": 4
-      },
-      {
         "tag": "YHWH",
         "mentions": 4
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 3
       },
       {
         "tag": "Elijah",
@@ -9798,14 +7742,6 @@
         "mentions": 3
       },
       {
-        "tag": "Genesis",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 2
-      },
-      {
         "tag": "Israel",
         "mentions": 2
       },
@@ -9814,19 +7750,11 @@
         "mentions": 2
       },
       {
-        "tag": "1 Samuel",
-        "mentions": 1
-      },
-      {
         "tag": "Baal",
         "mentions": 1
       },
       {
         "tag": "Bethel",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Proverbs",
         "mentions": 1
       },
       {
@@ -9851,10 +7779,6 @@
       },
       {
         "tag": "Philo of Alexandria",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
         "mentions": 1
       },
       {
@@ -9910,10 +7834,6 @@
         "mentions": 34
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 32
-      },
-      {
         "tag": "Jesus",
         "mentions": 16
       },
@@ -9928,10 +7848,6 @@
       {
         "tag": "Jonah",
         "mentions": 14
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 13
       },
       {
         "tag": "James",
@@ -9962,10 +7878,6 @@
         "mentions": 8
       },
       {
-        "tag": "Book of Amos",
-        "mentions": 7
-      },
-      {
         "tag": "Council of Jerusalem",
         "mentions": 6
       },
@@ -9984,10 +7896,6 @@
       {
         "tag": "Septuagint",
         "mentions": 5
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 4
       },
       {
         "tag": "Hell",
@@ -10010,27 +7918,7 @@
         "mentions": 2
       },
       {
-        "tag": "Book of Jonah",
-        "mentions": 2
-      },
-      {
         "tag": "Cornelius",
-        "mentions": 2
-      },
-      {
-        "tag": "gods",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 2
-      },
-      {
-        "tag": "Gospel of Matthew",
-        "mentions": 2
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 2
       },
       {
@@ -10046,10 +7934,6 @@
         "mentions": 2
       },
       {
-        "tag": "Genesis",
-        "mentions": 1
-      },
-      {
         "tag": "Hebrews",
         "mentions": 1
       },
@@ -10063,10 +7947,6 @@
       },
       {
         "tag": "Nero",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
         "mentions": 1
       },
       {
@@ -10150,10 +8030,6 @@
         "mentions": 12
       },
       {
-        "tag": "Gospel of Mark",
-        "mentions": 11
-      },
-      {
         "tag": "Israel",
         "mentions": 8
       },
@@ -10178,27 +8054,7 @@
         "mentions": 7
       },
       {
-        "tag": "2 Chronicles",
-        "mentions": 6
-      },
-      {
-        "tag": "2 Kings",
-        "mentions": 6
-      },
-      {
-        "tag": "Kings",
-        "mentions": 6
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 5
-      },
-      {
         "tag": "Jerusalem",
-        "mentions": 5
-      },
-      {
-        "tag": "New Testament",
         "mentions": 5
       },
       {
@@ -10222,10 +8078,6 @@
         "mentions": 4
       },
       {
-        "tag": "Gospel of Matthew",
-        "mentions": 3
-      },
-      {
         "tag": "King James Version",
         "mentions": 3
       },
@@ -10238,7 +8090,7 @@
         "mentions": 3
       },
       {
-        "tag": "Book of Exodus",
+        "tag": "baptism",
         "mentions": 2
       },
       {
@@ -10267,10 +8119,6 @@
       },
       {
         "tag": "Book of Enoch",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Isaiah",
         "mentions": 1
       },
       {
@@ -10307,14 +8155,6 @@
       },
       {
         "tag": "Mary Magdalene",
-        "mentions": 1
-      },
-      {
-        "tag": "Numbers",
-        "mentions": 1
-      },
-      {
-        "tag": "theology",
         "mentions": 1
       }
     ],
@@ -10362,10 +8202,6 @@
     "episodeNumber": 56,
     "tags": [
       {
-        "tag": "Genesis",
-        "mentions": 47
-      },
-      {
         "tag": "Garden of Eden",
         "mentions": 23
       },
@@ -10390,20 +8226,12 @@
         "mentions": 9
       },
       {
-        "tag": "gods",
-        "mentions": 8
-      },
-      {
         "tag": "Mesopotamian",
         "mentions": 8
       },
       {
         "tag": "Israel",
         "mentions": 7
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 6
       },
       {
         "tag": "Adam",
@@ -10434,10 +8262,6 @@
         "mentions": 3
       },
       {
-        "tag": "theology",
-        "mentions": 3
-      },
-      {
         "tag": "David Carr",
         "mentions": 2
       },
@@ -10459,14 +8283,6 @@
       },
       {
         "tag": "Assyria",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
         "mentions": 1
       },
       {
@@ -10502,15 +8318,7 @@
         "mentions": 1
       },
       {
-        "tag": "Leviticus",
-        "mentions": 1
-      },
-      {
         "tag": "Nephilim",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
         "mentions": 1
       },
       {
@@ -10560,35 +8368,11 @@
     "episodeNumber": 57,
     "tags": [
       {
-        "tag": "Gospel of Matthew",
-        "mentions": 14
-      },
-      {
         "tag": "Jesus",
         "mentions": 11
       },
       {
-        "tag": "Psalm",
-        "mentions": 6
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 5
-      },
-      {
-        "tag": "Book of Job",
-        "mentions": 4
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 4
-      },
-      {
         "tag": "Book of Enoch",
-        "mentions": 3
-      },
-      {
-        "tag": "Book of Isaiah",
         "mentions": 3
       },
       {
@@ -10596,23 +8380,11 @@
         "mentions": 3
       },
       {
-        "tag": "gods",
-        "mentions": 3
-      },
-      {
         "tag": "King David",
         "mentions": 3
       },
       {
-        "tag": "Zechariah",
-        "mentions": 3
-      },
-      {
         "tag": "Enoch",
-        "mentions": 2
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 2
       },
       {
@@ -10625,10 +8397,6 @@
       },
       {
         "tag": "Athenagoras",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Proverbs",
         "mentions": 1
       },
       {
@@ -10645,10 +8413,6 @@
       },
       {
         "tag": "Eve",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of John",
         "mentions": 1
       },
       {
@@ -10720,23 +8484,7 @@
         "mentions": 30
       },
       {
-        "tag": "gods",
-        "mentions": 18
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 15
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 15
-      },
-      {
         "tag": "Israel",
-        "mentions": 11
-      },
-      {
-        "tag": "Judges",
         "mentions": 11
       },
       {
@@ -10744,15 +8492,7 @@
         "mentions": 10
       },
       {
-        "tag": "theology",
-        "mentions": 10
-      },
-      {
         "tag": "angel",
-        "mentions": 8
-      },
-      {
-        "tag": "Book of Exodus",
         "mentions": 8
       },
       {
@@ -10760,20 +8500,8 @@
         "mentions": 8
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 6
-      },
-      {
         "tag": "Septuagint",
         "mentions": 6
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 5
-      },
-      {
-        "tag": "Gospel of Mark",
-        "mentions": 5
       },
       {
         "tag": "Dead Sea Scrolls",
@@ -10781,10 +8509,6 @@
       },
       {
         "tag": "Desiderius Erasmus",
-        "mentions": 4
-      },
-      {
-        "tag": "Gospel of Matthew",
         "mentions": 4
       },
       {
@@ -10844,14 +8568,6 @@
         "mentions": 2
       },
       {
-        "tag": "Book of Daniel",
-        "mentions": 1
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 1
-      },
-      {
         "tag": "Daniel",
         "mentions": 1
       },
@@ -10885,10 +8601,6 @@
       },
       {
         "tag": "Martin Luther",
-        "mentions": 1
-      },
-      {
-        "tag": "Numbers",
         "mentions": 1
       },
       {
@@ -10983,16 +8695,8 @@
         "mentions": 78
       },
       {
-        "tag": "gods",
-        "mentions": 39
-      },
-      {
         "tag": "Paul",
         "mentions": 21
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 18
       },
       {
         "tag": "Hypostasis",
@@ -11005,18 +8709,6 @@
       {
         "tag": "Philo of Alexandria",
         "mentions": 10
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 9
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 7
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 6
       },
       {
         "tag": "Judaism",
@@ -11059,10 +8751,6 @@
         "mentions": 2
       },
       {
-        "tag": "theology",
-        "mentions": 2
-      },
-      {
         "tag": "angel",
         "mentions": 1
       },
@@ -11072,18 +8760,6 @@
       },
       {
         "tag": "Baal",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Exodus",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Proverbs",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
         "mentions": 1
       },
       {
@@ -11100,14 +8776,6 @@
       },
       {
         "tag": "Elephantine",
-        "mentions": 1
-      },
-      {
-        "tag": "First Corinthians",
-        "mentions": 1
-      },
-      {
-        "tag": "Genesis",
         "mentions": 1
       },
       {
@@ -11136,10 +8804,6 @@
       },
       {
         "tag": "Latin Vulgate",
-        "mentions": 1
-      },
-      {
-        "tag": "resurrection",
         "mentions": 1
       },
       {
@@ -11193,10 +8857,6 @@
         "mentions": 14
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 11
-      },
-      {
         "tag": "Paul",
         "mentions": 11
       },
@@ -11205,28 +8865,12 @@
         "mentions": 11
       },
       {
-        "tag": "First Corinthians",
-        "mentions": 10
-      },
-      {
         "tag": "YHWH",
         "mentions": 9
       },
       {
         "tag": "Aquila",
         "mentions": 7
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 7
-      },
-      {
-        "tag": "1 Timothy",
-        "mentions": 5
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 5
       },
       {
         "tag": "Moses",
@@ -11241,10 +8885,6 @@
         "mentions": 2
       },
       {
-        "tag": "Gospel of Mark",
-        "mentions": 2
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 2
       },
@@ -11253,24 +8893,8 @@
         "mentions": 2
       },
       {
-        "tag": "Numbers",
-        "mentions": 2
-      },
-      {
         "tag": "Romans",
         "mentions": 2
-      },
-      {
-        "tag": "2nd Timothy",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 1
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 1
       },
       {
         "tag": "inerrancy",
@@ -11298,10 +8922,6 @@
       },
       {
         "tag": "Textus Receptus",
-        "mentions": 1
-      },
-      {
-        "tag": "theology",
         "mentions": 1
       },
       {
@@ -11353,10 +8973,6 @@
     "episodeNumber": 61,
     "tags": [
       {
-        "tag": "Gospel of John",
-        "mentions": 84
-      },
-      {
         "tag": "Jesus",
         "mentions": 46
       },
@@ -11365,8 +8981,8 @@
         "mentions": 24
       },
       {
-        "tag": "Christianity",
-        "mentions": 11
+        "tag": "baptism",
+        "mentions": 14
       },
       {
         "tag": "Gnostic",
@@ -11389,24 +9005,12 @@
         "mentions": 6
       },
       {
-        "tag": "Gospel of Mark",
-        "mentions": 6
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 6
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 4
       },
       {
         "tag": "Qumran",
         "mentions": 4
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 3
       },
       {
         "tag": "Dead Sea Scrolls",
@@ -11429,19 +9033,11 @@
         "mentions": 2
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 2
-      },
-      {
         "tag": "Gospel of Thomas",
         "mentions": 2
       },
       {
         "tag": "Islam",
-        "mentions": 2
-      },
-      {
-        "tag": "Kings",
         "mentions": 2
       },
       {
@@ -11465,23 +9061,11 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Revelation",
-        "mentions": 1
-      },
-      {
         "tag": "circumcision",
         "mentions": 1
       },
       {
         "tag": "Elizabeth",
-        "mentions": 1
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of Matthew",
         "mentions": 1
       },
       {
@@ -11498,10 +9082,6 @@
       },
       {
         "tag": "Judah",
-        "mentions": 1
-      },
-      {
-        "tag": "Judges",
         "mentions": 1
       },
       {
@@ -11567,16 +9147,8 @@
         "mentions": 27
       },
       {
-        "tag": "Genesis",
-        "mentions": 16
-      },
-      {
         "tag": "Noah",
         "mentions": 14
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 13
       },
       {
         "tag": "biblical canon",
@@ -11591,16 +9163,8 @@
         "mentions": 8
       },
       {
-        "tag": "New Testament",
-        "mentions": 8
-      },
-      {
         "tag": "YHWH",
         "mentions": 8
-      },
-      {
-        "tag": "Book of Revelation",
-        "mentions": 7
       },
       {
         "tag": "Daniel",
@@ -11612,10 +9176,6 @@
       },
       {
         "tag": "Cain",
-        "mentions": 6
-      },
-      {
-        "tag": "Jude",
         "mentions": 6
       },
       {
@@ -11659,10 +9219,6 @@
         "mentions": 3
       },
       {
-        "tag": "gods",
-        "mentions": 3
-      },
-      {
         "tag": "Isaac",
         "mentions": 3
       },
@@ -11680,10 +9236,6 @@
       },
       {
         "tag": "Antiochus IV Epiphanes",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Isaiah",
         "mentions": 2
       },
       {
@@ -11707,19 +9259,7 @@
         "mentions": 2
       },
       {
-        "tag": "2 Corinthians",
-        "mentions": 1
-      },
-      {
-        "tag": "2 Samuel",
-        "mentions": 1
-      },
-      {
         "tag": "Africa",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Daniel",
         "mentions": 1
       },
       {
@@ -11739,11 +9279,11 @@
         "mentions": 1
       },
       {
-        "tag": "Eve",
+        "tag": "Esau",
         "mentions": 1
       },
       {
-        "tag": "Hebrew Bible",
+        "tag": "Eve",
         "mentions": 1
       },
       {
@@ -11763,19 +9303,7 @@
         "mentions": 1
       },
       {
-        "tag": "Numbers",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
-        "mentions": 1
-      },
-      {
         "tag": "Syria",
-        "mentions": 1
-      },
-      {
-        "tag": "theology",
         "mentions": 1
       }
     ],
@@ -11832,10 +9360,6 @@
         "mentions": 19
       },
       {
-        "tag": "Judges",
-        "mentions": 15
-      },
-      {
         "tag": "angel",
         "mentions": 14
       },
@@ -11848,16 +9372,16 @@
         "mentions": 9
       },
       {
+        "tag": "Esau",
+        "mentions": 6
+      },
+      {
         "tag": "Hebrews",
         "mentions": 6
       },
       {
         "tag": "YHWH",
         "mentions": 5
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 4
       },
       {
         "tag": "Moses",
@@ -11872,15 +9396,7 @@
         "mentions": 3
       },
       {
-        "tag": "Ezekiel",
-        "mentions": 2
-      },
-      {
         "tag": "Gaza",
-        "mentions": 2
-      },
-      {
-        "tag": "gods",
         "mentions": 2
       },
       {
@@ -11896,15 +9412,7 @@
         "mentions": 2
       },
       {
-        "tag": "Numbers",
-        "mentions": 2
-      },
-      {
         "tag": "apocalypse",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Exodus",
         "mentions": 1
       },
       {
@@ -11916,15 +9424,7 @@
         "mentions": 1
       },
       {
-        "tag": "Kings",
-        "mentions": 1
-      },
-      {
         "tag": "Tamar",
-        "mentions": 1
-      },
-      {
-        "tag": "theology",
         "mentions": 1
       },
       {
@@ -11984,10 +9484,6 @@
         "mentions": 22
       },
       {
-        "tag": "Judges",
-        "mentions": 17
-      },
-      {
         "tag": "YHWH",
         "mentions": 16
       },
@@ -12028,16 +9524,8 @@
         "mentions": 3
       },
       {
-        "tag": "Kings",
-        "mentions": 3
-      },
-      {
         "tag": "El",
         "mentions": 2
-      },
-      {
-        "tag": "1 Timothy",
-        "mentions": 1
       },
       {
         "tag": "Abraham",
@@ -12053,10 +9541,6 @@
       },
       {
         "tag": "Canaanites",
-        "mentions": 1
-      },
-      {
-        "tag": "First Corinthians",
         "mentions": 1
       },
       {
@@ -12128,19 +9612,7 @@
     "episodeNumber": 65,
     "tags": [
       {
-        "tag": "gods",
-        "mentions": 7
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 6
-      },
-      {
         "tag": "Egypt",
-        "mentions": 5
-      },
-      {
-        "tag": "Ezekiel",
         "mentions": 5
       },
       {
@@ -12176,14 +9648,6 @@
         "mentions": 1
       },
       {
-        "tag": "Book of Isaiah",
-        "mentions": 1
-      },
-      {
-        "tag": "Christianity",
-        "mentions": 1
-      },
-      {
         "tag": "Deuteronomy",
         "mentions": 1
       },
@@ -12201,14 +9665,6 @@
       },
       {
         "tag": "Judaism",
-        "mentions": 1
-      },
-      {
-        "tag": "Kings",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
         "mentions": 1
       }
     ],
@@ -12265,10 +9721,6 @@
         "mentions": 9
       },
       {
-        "tag": "gods",
-        "mentions": 9
-      },
-      {
         "tag": "El",
         "mentions": 8
       },
@@ -12277,28 +9729,12 @@
         "mentions": 5
       },
       {
-        "tag": "Book of Exodus",
-        "mentions": 5
-      },
-      {
         "tag": "Baal",
         "mentions": 4
       },
       {
-        "tag": "Christianity",
-        "mentions": 3
-      },
-      {
         "tag": "Judaism",
         "mentions": 3
-      },
-      {
-        "tag": "Kings",
-        "mentions": 3
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 2
       },
       {
         "tag": "Islam",
@@ -12313,15 +9749,7 @@
         "mentions": 2
       },
       {
-        "tag": "Judges",
-        "mentions": 2
-      },
-      {
         "tag": "King James Version",
-        "mentions": 2
-      },
-      {
-        "tag": "Leviticus",
         "mentions": 2
       },
       {
@@ -12342,10 +9770,6 @@
       },
       {
         "tag": "Elijah",
-        "mentions": 1
-      },
-      {
-        "tag": "Genesis",
         "mentions": 1
       },
       {
@@ -12426,10 +9850,6 @@
         "mentions": 71
       },
       {
-        "tag": "2 Samuel",
-        "mentions": 30
-      },
-      {
         "tag": "King Saul",
         "mentions": 30
       },
@@ -12446,10 +9866,6 @@
         "mentions": 10
       },
       {
-        "tag": "1 Samuel",
-        "mentions": 9
-      },
-      {
         "tag": "Jonathan",
         "mentions": 8
       },
@@ -12462,16 +9878,8 @@
         "mentions": 7
       },
       {
-        "tag": "Christianity",
-        "mentions": 6
-      },
-      {
         "tag": "Philistines",
         "mentions": 6
-      },
-      {
-        "tag": "2 Chronicles",
-        "mentions": 4
       },
       {
         "tag": "archaeology",
@@ -12482,27 +9890,11 @@
         "mentions": 4
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 4
-      },
-      {
-        "tag": "Kings",
-        "mentions": 4
-      },
-      {
         "tag": "Goliath",
         "mentions": 3
       },
       {
-        "tag": "Judges",
-        "mentions": 3
-      },
-      {
         "tag": "Septuagint",
-        "mentions": 3
-      },
-      {
-        "tag": "theology",
         "mentions": 3
       },
       {
@@ -12526,15 +9918,7 @@
         "mentions": 1
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 1
-      },
-      {
         "tag": "Joshua",
-        "mentions": 1
-      },
-      {
-        "tag": "New Testament",
         "mentions": 1
       },
       {
@@ -12588,6 +9972,10 @@
         "mentions": 51
       },
       {
+        "tag": "Er",
+        "mentions": 16
+      },
+      {
         "tag": "Onan",
         "mentions": 16
       },
@@ -12608,19 +9996,7 @@
         "mentions": 6
       },
       {
-        "tag": "Book of Exodus",
-        "mentions": 4
-      },
-      {
-        "tag": "Genesis",
-        "mentions": 4
-      },
-      {
         "tag": "Boaz",
-        "mentions": 3
-      },
-      {
-        "tag": "Hebrew Bible",
         "mentions": 3
       },
       {
@@ -12632,27 +10008,11 @@
         "mentions": 3
       },
       {
-        "tag": "Leviticus",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Proverbs",
-        "mentions": 1
-      },
-      {
         "tag": "Canaan",
         "mentions": 1
       },
       {
         "tag": "Egypt",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of Matthew",
-        "mentions": 1
-      },
-      {
-        "tag": "Judges",
         "mentions": 1
       },
       {
@@ -12665,10 +10025,6 @@
       },
       {
         "tag": "Ten Commandments",
-        "mentions": 1
-      },
-      {
-        "tag": "theology",
         "mentions": 1
       }
     ],
@@ -12716,10 +10072,6 @@
     "episodeNumber": 69,
     "tags": [
       {
-        "tag": "Gospel of Mark",
-        "mentions": 75
-      },
-      {
         "tag": "Jesus",
         "mentions": 62
       },
@@ -12736,10 +10088,6 @@
         "mentions": 38
       },
       {
-        "tag": "Gospel of John",
-        "mentions": 36
-      },
-      {
         "tag": "Paul",
         "mentions": 21
       },
@@ -12748,20 +10096,12 @@
         "mentions": 15
       },
       {
-        "tag": "Book of Acts",
-        "mentions": 13
-      },
-      {
-        "tag": "Gospel of Matthew",
-        "mentions": 13
-      },
-      {
         "tag": "YHWH",
         "mentions": 10
       },
       {
-        "tag": "Christianity",
-        "mentions": 8
+        "tag": "baptism",
+        "mentions": 7
       },
       {
         "tag": "Hebrews",
@@ -12780,10 +10120,6 @@
         "mentions": 4
       },
       {
-        "tag": "Hebrew Bible",
-        "mentions": 4
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 4
       },
@@ -12792,24 +10128,12 @@
         "mentions": 4
       },
       {
-        "tag": "2nd Timothy",
-        "mentions": 3
-      },
-      {
         "tag": "Eusebius",
         "mentions": 3
       },
       {
         "tag": "Jerome",
         "mentions": 3
-      },
-      {
-        "tag": "theology",
-        "mentions": 3
-      },
-      {
-        "tag": "1 Timothy",
-        "mentions": 2
       },
       {
         "tag": "Capernaum",
@@ -12824,20 +10148,8 @@
         "mentions": 2
       },
       {
-        "tag": "New Testament",
-        "mentions": 2
-      },
-      {
-        "tag": "resurrection",
-        "mentions": 2
-      },
-      {
         "tag": "Theophilus",
         "mentions": 2
-      },
-      {
-        "tag": "1 Peter",
-        "mentions": 1
       },
       {
         "tag": "Abraham",
@@ -12972,18 +10284,6 @@
         "mentions": 40
       },
       {
-        "tag": "Christianity",
-        "mentions": 14
-      },
-      {
-        "tag": "New Testament",
-        "mentions": 13
-      },
-      {
-        "tag": "Book of Daniel",
-        "mentions": 12
-      },
-      {
         "tag": "Cyrus the Great",
         "mentions": 10
       },
@@ -13004,20 +10304,8 @@
         "mentions": 7
       },
       {
-        "tag": "Genesis",
-        "mentions": 6
-      },
-      {
-        "tag": "Hebrew Bible",
-        "mentions": 5
-      },
-      {
         "tag": "Monotheism",
         "mentions": 5
-      },
-      {
-        "tag": "resurrection",
-        "mentions": 4
       },
       {
         "tag": "YHWH",
@@ -13029,10 +10317,6 @@
       },
       {
         "tag": "Antiochus IV Epiphanes",
-        "mentions": 2
-      },
-      {
-        "tag": "Book of Job",
         "mentions": 2
       },
       {
@@ -13060,23 +10344,11 @@
         "mentions": 2
       },
       {
-        "tag": "theology",
-        "mentions": 2
-      },
-      {
         "tag": "apocalypse",
         "mentions": 1
       },
       {
         "tag": "Baal",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Isaiah",
-        "mentions": 1
-      },
-      {
-        "tag": "Book of Revelation",
         "mentions": 1
       },
       {
@@ -13089,18 +10361,6 @@
       },
       {
         "tag": "Gnostic",
-        "mentions": 1
-      },
-      {
-        "tag": "gods",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of John",
-        "mentions": 1
-      },
-      {
-        "tag": "Gospel of Matthew",
         "mentions": 1
       },
       {
@@ -13125,10 +10385,6 @@
       },
       {
         "tag": "Paul",
-        "mentions": 1
-      },
-      {
-        "tag": "Psalm",
         "mentions": 1
       }
     ],
@@ -13158,6 +10414,170 @@
         "type": "outro",
         "startTimestamp": "[00:54:46.000]",
         "endTimestamp": "[00:55:20.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ]
+  },
+  {
+    "videoId": "AwhAN-LQ34Y",
+    "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\"",
+    "publishedAt": "2024-08-12T00:00:00Z",
+    "processedAt": "2026-01-17T04:14:58.664Z",
+    "transcriptPath": "data/transcripts/2024-08-12-episode-71-august-12-2024-the-rapture-is-not-coming.txt",
+    "episodeNumber": 71,
+    "tags": [
+      {
+        "tag": "Rapture",
+        "mentions": 35
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 25
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 23
+      },
+      {
+        "tag": "Persia",
+        "mentions": 16
+      },
+      {
+        "tag": "angel",
+        "mentions": 11
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 9
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 7
+      },
+      {
+        "tag": "Judah",
+        "mentions": 7
+      },
+      {
+        "tag": "Israel",
+        "mentions": 6
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 5
+      },
+      {
+        "tag": "Paul",
+        "mentions": 5
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 4
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 4
+      },
+      {
+        "tag": "Michael",
+        "mentions": 4
+      },
+      {
+        "tag": "Cyrus the Great",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "Judeans",
+        "mentions": 2
+      },
+      {
+        "tag": "Latin Vulgate",
+        "mentions": 2
+      },
+      {
+        "tag": "Mesopotamian",
+        "mentions": 2
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 1
+      },
+      {
+        "tag": "Assyria",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Elijah",
+        "mentions": 1
+      },
+      {
+        "tag": "Garden of Eden",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Syria",
+        "mentions": 1
+      },
+      {
+        "tag": "Torah",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:10.911]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "eschatological",
+        "startTimestamp": "[00:03:10.911]",
+        "endTimestamp": "[00:33:54.836]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:33:54.836]",
+        "endTimestamp": "[00:59:45.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:59:45.000]",
+        "endTimestamp": "[01:00:25.000]",
         "confidence": "verified",
         "detectionMethod": "manual"
       }

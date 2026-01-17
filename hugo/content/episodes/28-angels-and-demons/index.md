@@ -1,21 +1,16 @@
 ---
 title: Angels and Demons
-date: 2023-10-16T00:00:00Z
+date: 2023-10-16T00:00:00.000Z
 episodeNumber: 28
 videoId: AUgdX7aH_hI
 aliases:
   - /episodes/28/
 tags:
   - angel
-  - Hebrew Bible
-  - gods
-  - New Testament
   - YHWH
   - Judaism
   - Baal
   - Israel
-  - Christianity
-  - Ezekiel
   - Satan
   - Cherubim
   - Ugarit
@@ -24,10 +19,7 @@ tags:
   - Abraham
   - Book of Enoch
   - Daniel
-  - Genesis
-  - Jude
   - Michael
-  - Psalm
   - divine council
   - King Saul
   - Lot
@@ -36,24 +28,19 @@ tags:
   - Moses
   - Persia
   - Babylon
-  - Book of Isaiah
   - El
   - Galilee
   - Gideon
   - Hagar
   - Hebrews
   - Isaiah
-  - Judges
   - Sodom
   - Syria
-  - theology
-  - Book of Revelation
   - Deuteronomy
   - Egypt
   - Enoch
   - Euphrates
   - Garden of Eden
-  - Gospel of John
   - Isaac
   - Islam
   - John the Baptist
@@ -69,10 +56,10 @@ segments:
   - Getting Demonic
 segmentData:
   - type: getting-angelic
-    label: "Getting Angelic"
+    label: Getting Angelic
     startSeconds: 77
   - type: getting-demonic
-    label: "Getting Demonic"
+    label: Getting Demonic
     startSeconds: 1900
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: The Dans Go to Hell
-date: 2023-07-17T00:00:00Z
+date: 2023-07-17T00:00:00.000Z
 episodeNumber: 15
 videoId: 7oB6UrrFn6c
 aliases:
@@ -10,30 +10,21 @@ tags:
   - Matthew
   - Judas Iscariot
   - Jesus
-  - Zechariah
   - Book of Enoch
   - Israel
-  - Book of Acts
   - Jerusalem
   - YHWH
-  - Hebrew Bible
-  - New Testament
   - angel
   - Sheol
   - Univocality
-  - Genesis
   - Isaiah
   - King Saul
-  - Book of Revelation
-  - Christianity
   - Endor
   - etiology
   - Samuel
   - archaeology
-  - Book of Isaiah
   - child sacrifice
   - Eusebius
-  - Gospel of Matthew
   - Hebrews
   - inerrancy
   - Jeremiah
@@ -41,27 +32,23 @@ tags:
   - Nephilim
   - Paul
   - Abraham
-  - Book of Job
   - Daniel
   - Egypt
   - Enoch
   - Flood
-  - Gospel of Mark
   - Josephus
   - King James Version
-  - Kings
   - Papias of Hierapolis
   - Satan
-  - theology
 segments:
   - All Right, Let's See It
   - Chapter and Verse
 segmentData:
   - type: all-right-lets-see-it
-    label: "All Right, Let's See It"
+    label: All Right, Let's See It
     startSeconds: 208.67
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 2170
 draft: false
 ---

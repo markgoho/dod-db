@@ -1,6 +1,6 @@
 ---
 title: Biblical Marriage
-date: 2024-02-05T00:00:00Z
+date: 2024-02-05T00:00:00.000Z
 episodeNumber: 44
 videoId: BQOMbZtGs6E
 aliases:
@@ -8,19 +8,10 @@ aliases:
 tags:
   - Jesus
   - Paul
-  - Genesis
-  - Gospel of Matthew
-  - Christianity
-  - First Corinthians
-  - Hebrew Bible
-  - New Testament
   - Jennifer Bird
-  - Leviticus
-  - Ephesians
   - Gentiles
   - Judaism
   - Univocality
-  - 1 Thessalonians
   - Abraham
   - Baal
   - biblical canon

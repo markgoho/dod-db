@@ -1,6 +1,6 @@
 ---
 title: The Holy Ghost (and Bears!)
-date: 2024-04-08T00:00:00Z
+date: 2024-04-08T00:00:00.000Z
 episodeNumber: 53
 videoId: kLBgLbbZ9qw
 aliases:
@@ -8,42 +8,32 @@ aliases:
 tags:
   - Holy Spirit
   - Jesus
-  - Hebrew Bible
-  - New Testament
   - King Saul
-  - Kings
   - Trinity
-  - 2 Kings
   - YHWH
-  - Christianity
   - Elijah
   - King James Version
   - Satan
-  - Genesis
-  - Gospel of John
   - Israel
   - Samuel
-  - 1 Samuel
   - Baal
   - Bethel
-  - Book of Proverbs
   - Ham
   - inerrancy
   - Judah
   - Judaism
   - Ken Ham
   - Philo of Alexandria
-  - Psalm
   - Samaria
 segments:
   - What Does That Mean?
   - Chapter and Verse
 segmentData:
   - type: what-does-that-mean
-    label: "What Does That Mean?"
+    label: What Does That Mean?
     startSeconds: 80.634
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 2117.21
 draft: false
 ---

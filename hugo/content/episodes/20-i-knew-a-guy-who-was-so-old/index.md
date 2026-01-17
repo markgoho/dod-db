@@ -6,9 +6,7 @@ videoId: p8CjJR4yhfk
 aliases:
   - /episodes/20/
 tags:
-  - Christianity
   - Flood
-  - Genesis
   - biblical canon
   - Methuselah
   - Lamech
@@ -17,24 +15,17 @@ tags:
   - Noah
   - Adam
   - Seth
-  - Hebrew Bible
   - Masoretic Text
   - Septuagint
   - Martin Luther
   - Book of Enoch
   - Jared
   - Jesus
-  - Kings
-  - New Testament
   - Abraham
   - Judaism
   - Athanasius of Alexandria
-  - Numbers
   - 2 Maccabees
-  - Book of Revelation
   - Ishmael
-  - Book of Daniel
-  - Book of Isaiah
   - Dead Sea Scrolls
   - Egypt
   - Hebrews
@@ -54,9 +45,7 @@ tags:
   - Didache
   - First Clement
   - Galilee
-  - Jude
   - Moses
-  - resurrection
   - YHWH
 segments:
   - By the Numbers

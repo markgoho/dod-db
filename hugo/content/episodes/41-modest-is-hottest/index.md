@@ -1,6 +1,6 @@
 ---
 title: Modest is Hottest?
-date: 2024-01-15T00:00:00Z
+date: 2024-01-15T00:00:00.000Z
 episodeNumber: 41
 videoId: nu6jx8m14tI
 aliases:
@@ -10,48 +10,38 @@ tags:
   - Noah
   - Canaan
   - Shem
-  - Christianity
   - Japheth
   - Paul
   - Africans
   - Canaanites
-  - Genesis
-  - Hebrew Bible
   - Jesus
   - YHWH
   - Deuteronomy
-  - First Corinthians
   - Joshua
   - King James Version
-  - Leviticus
   - Matthew
   - Africa
-  - Book of Proverbs
-  - Book of Revelation
   - Flood
   - Hell
   - Peter
-  - 1 Peter
   - Adam
   - angel
   - Egypt
   - etiology
   - Eve
-  - Gospel of John
   - Islam
   - Joseph
   - Judaism
-  - New Testament
   - Romans
 segments:
   - Chapter and Verse
   - Your Patriarchy and You
 segmentData:
   - type: chapter-and-verse
-    label: "Chapter and Verse"
+    label: Chapter and Verse
     startSeconds: 134
   - type: your-patriarchy-and-you
-    label: "Your Patriarchy and You"
+    label: Your Patriarchy and You
     startSeconds: 1782
 draft: false
 ---
