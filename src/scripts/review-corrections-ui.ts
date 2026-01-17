@@ -6,15 +6,15 @@
  *   Then open http://localhost:3000
  */
 
+import * as path from "node:path";
 import {
-  loadTracker,
-  saveTracker,
-  getPendingCandidates,
   approveCandidate,
+  getPendingCandidates,
+  loadTracker,
   rejectCandidate,
+  saveTracker,
   type CorrectionCandidate,
-} from '../pipeline/correction-tracker.js';
-import * as path from 'node:path';
+} from "../pipeline/correction-tracker.js";
 
 const PORT = 3000;
 
@@ -24,17 +24,17 @@ async function addToCorrectionFile(
 ): Promise<void> {
   const correctionsPath = path.join(
     process.cwd(),
-    'src',
-    'config',
-    'corrections.ts',
+    "src",
+    "config",
+    "corrections.ts",
   );
 
   const file = await Bun.file(correctionsPath).text();
 
   // Find the insertion point (before the closing ];)
-  const insertionPoint = file.lastIndexOf('];');
+  const insertionPoint = file.lastIndexOf("];");
   if (insertionPoint === -1) {
-    throw new Error('Could not find insertion point in corrections.ts');
+    throw new Error("Could not find insertion point in corrections.ts");
   }
 
   // Format the new rule
@@ -54,47 +54,47 @@ const _server = Bun.serve({
     const url = new URL(request.url);
 
     // Serve the main UI (correction review)
-    if (url.pathname === '/' || url.pathname === '/index.html') {
+    if (url.pathname === "/" || url.pathname === "/index.html") {
       const filePath = path.join(
         process.cwd(),
-        'tools',
-        'review-corrections.html',
+        "tools",
+        "review-corrections.html",
       );
       const file = Bun.file(filePath);
       return new Response(file, {
-        headers: { 'Content-Type': 'text/html' },
+        headers: { "Content-Type": "text/html" },
       });
     }
 
     // Serve data files
-    if (url.pathname === '/data/correction-candidates.json') {
+    if (url.pathname === "/data/correction-candidates.json") {
       const filePath = path.join(
         process.cwd(),
-        'data',
-        'correction-candidates.json',
+        "data",
+        "correction-candidates.json",
       );
       const file = Bun.file(filePath);
       return new Response(file, {
-        headers: { 'Content-Type': 'application/json' },
+        headers: { "Content-Type": "application/json" },
       });
     }
 
     // Serve audio files
-    if (url.pathname.startsWith('/audio/')) {
-      const videoId = url.pathname.replace('/audio/', '');
-      const audioDir = path.join(process.cwd(), 'data', 'audio');
+    if (url.pathname.startsWith("/audio/")) {
+      const videoId = url.pathname.replace("/audio/", "");
+      const audioDir = path.join(process.cwd(), "data", "audio");
 
       // Find the audio file (could be .webm, .m4a, .opus, etc.)
-      const { readdir } = await import('node:fs/promises');
+      const { readdir } = await import("node:fs/promises");
       try {
         const files = await readdir(audioDir);
-        const audioFile = files.find((f) => f.startsWith(videoId));
+        const audioFile = files.find(f => f.startsWith(videoId));
 
         if (audioFile) {
           const filePath = path.join(audioDir, audioFile);
           const file = Bun.file(filePath);
           return new Response(file, {
-            headers: { 'Content-Type': 'audio/webm' },
+            headers: { "Content-Type": "audio/webm" },
           });
         }
       } catch {
@@ -103,27 +103,27 @@ const _server = Bun.serve({
     }
 
     // API: Get pending candidates
-    if (url.pathname === '/api/candidates') {
+    if (url.pathname === "/api/candidates") {
       const tracker = await loadTracker();
       const pending = getPendingCandidates(tracker);
       return Response.json(pending);
     }
 
     // API: Approve a candidate
-    if (url.pathname.startsWith('/api/approve/')) {
-      const key = decodeURIComponent(url.pathname.replace('/api/approve/', ''));
+    if (url.pathname.startsWith("/api/approve/")) {
+      const key = decodeURIComponent(url.pathname.replace("/api/approve/", ""));
       const tracker = await loadTracker();
 
       const candidate = tracker.candidates[key];
       if (!candidate) {
-        return Response.json({ error: 'Candidate not found' }, { status: 404 });
+        return Response.json({ error: "Candidate not found" }, { status: 404 });
       }
 
       try {
         // Get edited values from query params (if provided)
         const searchParameters = new URL(request.url).searchParams;
-        const editedOriginal = searchParameters.get('original');
-        const editedCorrected = searchParameters.get('corrected');
+        const editedOriginal = searchParameters.get("original");
+        const editedCorrected = searchParameters.get("corrected");
 
         // Use edited values if provided, otherwise use candidate's values
         const finalCandidate = {
@@ -136,14 +136,14 @@ const _server = Bun.serve({
         await addToCorrectionFile(finalCandidate);
 
         // Mark as approved
-        approveCandidate(tracker, key, 'UI Review');
+        approveCandidate(tracker, key, "UI Review");
         await saveTracker(tracker);
 
         return Response.json({ success: true });
       } catch (error) {
         return Response.json(
           {
-            error: error instanceof Error ? error.message : 'Failed to approve',
+            error: error instanceof Error ? error.message : "Failed to approve",
           },
           { status: 500 },
         );
@@ -151,21 +151,21 @@ const _server = Bun.serve({
     }
 
     // API: Reject a candidate
-    if (url.pathname.startsWith('/api/reject/')) {
-      const key = decodeURIComponent(url.pathname.replace('/api/reject/', ''));
+    if (url.pathname.startsWith("/api/reject/")) {
+      const key = decodeURIComponent(url.pathname.replace("/api/reject/", ""));
       const tracker = await loadTracker();
 
       if (!tracker.candidates[key]) {
-        return Response.json({ error: 'Candidate not found' }, { status: 404 });
+        return Response.json({ error: "Candidate not found" }, { status: 404 });
       }
 
-      rejectCandidate(tracker, key, 'UI Review');
+      rejectCandidate(tracker, key, "UI Review");
       await saveTracker(tracker);
 
       return Response.json({ success: true });
     }
 
-    return new Response('Not Found', { status: 404 });
+    return new Response("Not Found", { status: 404 });
   },
 });
 

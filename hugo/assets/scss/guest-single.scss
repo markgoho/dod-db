@@ -4,7 +4,7 @@
 // Uses blue color scheme to differentiate from segments (teal) and tags (olive)
 
 // Import episode card component
-@use 'episode-card';
+@use "episode-card";
 
 main.container {
   max-width: 80rem;
@@ -94,7 +94,8 @@ main.container {
   backdrop-filter: blur(10px);
   border: var(--border-width-sm) solid var(--teal-300);
   border-radius: var(--border-radius-sm);
-  box-shadow: 0 var(--space-2xs) var(--space-s) color-mix(in srgb, var(--tan-900) 5%, transparent);
+  box-shadow: 0 var(--space-2xs) var(--space-s)
+    color-mix(in srgb, var(--tan-900) 5%, transparent);
 }
 
 .guest-header__stat-number {

@@ -3,15 +3,15 @@
  * Shared CRUD operations for managing episode segments
  */
 
-import type { EpisodeSegment } from './types.js';
-import { timestampToSeconds, formatSecondsToTimestamp } from './timestamp.js';
+import { formatSecondsToTimestamp, timestampToSeconds } from "./timestamp.js";
+import type { EpisodeSegment } from "./types.js";
 
 // Add a new segment at current audio time
 export function addSegmentAtTime({
   segments,
   currentTime,
   audioDuration,
-  defaultType = 'main-content',
+  defaultType = "main-content",
 }: {
   segments: EpisodeSegment[];
   currentTime: number;
@@ -21,17 +21,21 @@ export function addSegmentAtTime({
   const newSegment: EpisodeSegment = {
     type: defaultType,
     startTimestamp: formatSecondsToTimestamp(currentTime),
-     
-    endTimestamp: audioDuration ? formatSecondsToTimestamp(audioDuration) : null,
-    confidence: 'auto',
-    detectionMethod: 'manual',
+
+    endTimestamp: audioDuration
+      ? formatSecondsToTimestamp(audioDuration)
+      : null,
+    confidence: "auto",
+    detectionMethod: "manual",
   };
 
   const newSegments = [...segments, newSegment];
 
   // Sort by start time
   newSegments.sort(
-    (a, b) => timestampToSeconds(a.startTimestamp) - timestampToSeconds(b.startTimestamp),
+    (a, b) =>
+      timestampToSeconds(a.startTimestamp) -
+      timestampToSeconds(b.startTimestamp),
   );
 
   // Find index of newly inserted segment
@@ -55,13 +59,17 @@ export function deleteSegmentAtIndex({
   const newSegments = [...segments];
   newSegments.splice(index, 1);
 
-  if (fillGaps && index < newSegments.length && // Extend previous segment to fill gap
-    index > 0 && newSegments[index]) {
-      newSegments[index - 1] = {
-        ...newSegments[index - 1]!,
-        endTimestamp: newSegments[index]!.startTimestamp,
-      };
-    }
+  if (
+    fillGaps &&
+    index < newSegments.length && // Extend previous segment to fill gap
+    index > 0 &&
+    newSegments[index]
+  ) {
+    newSegments[index - 1] = {
+      ...newSegments[index - 1]!,
+      endTimestamp: newSegments[index]!.startTimestamp,
+    };
+  }
 
   return newSegments;
 }
@@ -82,7 +90,7 @@ export function updateSegmentType({
   newSegments[index] = {
     ...newSegments[index]!,
     type,
-    confidence: 'auto',
+    confidence: "auto",
   };
 
   return newSegments;
@@ -104,7 +112,7 @@ export function updateSegmentStart({
   newSegments[index] = {
     ...newSegments[index]!,
     startTimestamp: timestamp,
-    confidence: 'auto',
+    confidence: "auto",
   };
 
   return newSegments;
@@ -125,25 +133,31 @@ export function updateSegmentEnd({
   const newSegments = [...segments];
   newSegments[index] = {
     ...newSegments[index]!,
-     
+
     endTimestamp: timestamp ?? null,
-    confidence: 'auto',
+    confidence: "auto",
   };
 
   return newSegments;
 }
 
 // Mark all segments as verified
-export function markAllSegmentsVerified(segments: EpisodeSegment[]): EpisodeSegment[] {
-  return segments.map((seg) => ({
+export function markAllSegmentsVerified(
+  segments: EpisodeSegment[],
+): EpisodeSegment[] {
+  return segments.map(seg => ({
     ...seg,
-    confidence: 'verified',
+    confidence: "verified",
   }));
 }
 
 // Sort segments by start timestamp
-export function sortSegmentsByTime(segments: EpisodeSegment[]): EpisodeSegment[] {
+export function sortSegmentsByTime(
+  segments: EpisodeSegment[],
+): EpisodeSegment[] {
   return [...segments].sort(
-    (a, b) => timestampToSeconds(a.startTimestamp) - timestampToSeconds(b.startTimestamp),
+    (a, b) =>
+      timestampToSeconds(a.startTimestamp) -
+      timestampToSeconds(b.startTimestamp),
   );
 }

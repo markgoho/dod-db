@@ -1,1 +1,1 @@
-export * from './transcript-qa.js';
+export * from "./transcript-qa.js";

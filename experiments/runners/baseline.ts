@@ -13,28 +13,35 @@
  *   bun run experiments/runners/baseline.ts --dry-run
  */
 
-import { chunk } from 'llm-chunk';
-import { parseArgs } from 'node:util';
-import { correctionChunking } from '../../src/config/chunking.js';
-import { reviewModel } from '../../src/config/models.js';
-import { globalCorrections } from '../../src/config/corrections.js';
-import { type ModelId } from '../config/experiment-config.js';
-import { ai } from '../../src/ai.js';
-import { correctionPrompt } from '../../src/prompts/correction.js';
+import { chunk } from "llm-chunk";
+import { parseArgs } from "node:util";
+import { ai } from "../../src/ai.js";
+import { correctionChunking } from "../../src/config/chunking.js";
+import { globalCorrections } from "../../src/config/corrections.js";
+import { reviewModel } from "../../src/config/models.js";
 import {
   applyDeterministicCorrections,
   deduplicateChunks,
-} from '../../src/pipeline/correct-utils.js';
-import { measureAccuracy, formatAccuracyMetrics } from '../lib/accuracy.js';
-import { calculateCost, aggregateCosts, formatCost, type TokenUsage } from '../lib/cost-calculator.js';
+} from "../../src/pipeline/correct-utils.js";
+import { correctionPrompt } from "../../src/prompts/correction.js";
 import {
-  writeResults,
+  SAMPLE_TRANSCRIPTS,
+  type ModelId,
+} from "../config/experiment-config.js";
+import { formatAccuracyMetrics, measureAccuracy } from "../lib/accuracy.js";
+import {
+  aggregateCosts,
+  calculateCost,
+  formatCost,
+  type TokenUsage,
+} from "../lib/cost-calculator.js";
+import {
   calculateSummary,
   printSummary,
+  writeResults,
   type BaselineResult,
   type TimingMetrics,
-} from '../lib/results-reporter.js';
-import { SAMPLE_TRANSCRIPTS } from '../config/experiment-config.js';
+} from "../lib/results-reporter.js";
 
 interface ChunkTiming {
   index: number;
@@ -63,22 +70,24 @@ async function runBaselineSingle(
   const wallClockStart = performance.now();
 
   // Step 1: Deterministic corrections
-  console.log('\n  Step 1: Deterministic corrections...');
+  console.log("\n  Step 1: Deterministic corrections...");
   const deterStart = performance.now();
   const { correctedText: afterDeterministic, count: deterCount } =
     applyDeterministicCorrections(rawTranscript, globalCorrections);
   const deterMs = performance.now() - deterStart;
-  console.log(`    Applied ${deterCount} corrections in ${deterMs.toFixed(0)}ms`);
+  console.log(
+    `    Applied ${deterCount} corrections in ${deterMs.toFixed(0)}ms`,
+  );
 
   // Step 2: Chunking
-  console.log('\n  Step 2: Chunking...');
+  console.log("\n  Step 2: Chunking...");
   const chunkStart = performance.now();
   const chunks = chunk(afterDeterministic, correctionChunking);
   const chunkMs = performance.now() - chunkStart;
   console.log(`    Created ${chunks.length} chunks in ${chunkMs.toFixed(0)}ms`);
 
   // Step 3: Sequential LLM correction
-  console.log('\n  Step 3: LLM correction (sequential)...');
+  console.log("\n  Step 3: LLM correction (sequential)...");
   const correctedChunks: string[] = [];
   const llmStart = performance.now();
 
@@ -114,7 +123,7 @@ async function runBaselineSingle(
   const llmTotalMs = performance.now() - llmStart;
 
   // Step 4: Deduplication
-  console.log('\n  Step 4: Deduplication...');
+  console.log("\n  Step 4: Deduplication...");
   const dedupStart = performance.now();
   const output = deduplicateChunks(correctedChunks, correctionChunking.overlap);
   const dedupMs = performance.now() - dedupStart;
@@ -123,23 +132,23 @@ async function runBaselineSingle(
   const wallClockMs = performance.now() - wallClockStart;
 
   // Calculate metrics
-  console.log('\n  Measuring accuracy...');
+  console.log("\n  Measuring accuracy...");
   const accuracy = measureAccuracy(output, groundTruth);
   console.log(formatAccuracyMetrics(accuracy));
 
   // Calculate cost
-  const costs = chunkTimings.map((ct) =>
+  const costs = chunkTimings.map(ct =>
     calculateCost(model as ModelId, ct.tokens),
   );
   const totalCost = aggregateCosts(costs);
-  console.log('\n  Cost:');
+  console.log("\n  Cost:");
   console.log(formatCost(totalCost));
 
   const timing: TimingMetrics = {
     deterministicMs: deterMs,
     chunkingMs: chunkMs,
     llmTotalMs,
-    perChunkMs: chunkTimings.map((ct) => ct.durationMs),
+    perChunkMs: chunkTimings.map(ct => ct.durationMs),
     deduplicationMs: dedupMs,
     wallClockMs,
   };
@@ -179,8 +188,8 @@ async function runBaselineAll(): Promise<BaselineResult[]> {
  * Dry run - show what would be processed without calling API.
  */
 async function dryRun(): Promise<void> {
-  console.log('=== DRY RUN ===\n');
-  console.log('Sample transcripts to process:');
+  console.log("=== DRY RUN ===\n");
+  console.log("Sample transcripts to process:");
 
   for (const [index, sample] of SAMPLE_TRANSCRIPTS.entries()) {
     const rawFile = Bun.file(sample.raw);
@@ -190,8 +199,10 @@ async function dryRun(): Promise<void> {
     const truthExists = await truthFile.exists();
 
     console.log(`\n${index + 1}. ${sample.name}`);
-    console.log(`   Raw: ${sample.raw} (${rawExists ? 'exists' : 'MISSING'})`);
-    console.log(`   Truth: ${sample.truth} (${truthExists ? 'exists' : 'MISSING'})`);
+    console.log(`   Raw: ${sample.raw} (${rawExists ? "exists" : "MISSING"})`);
+    console.log(
+      `   Truth: ${sample.truth} (${truthExists ? "exists" : "MISSING"})`,
+    );
 
     if (rawExists) {
       const rawText = await rawFile.text();
@@ -202,20 +213,20 @@ async function dryRun(): Promise<void> {
   }
 
   console.log(`\nModel: ${reviewModel}`);
-  console.log('Chunking config:', correctionChunking);
+  console.log("Chunking config:", correctionChunking);
 }
 
 async function main(): Promise<void> {
   const { values } = parseArgs({
     args: Bun.argv.slice(2),
     options: {
-      all: { type: 'boolean', default: false },
-      transcript: { type: 'string' },
-      'dry-run': { type: 'boolean', default: false },
+      all: { type: "boolean", default: false },
+      transcript: { type: "string" },
+      "dry-run": { type: "boolean", default: false },
     },
   });
 
-  if (values['dry-run']) {
+  if (values["dry-run"]) {
     await dryRun();
     return;
   }
@@ -234,10 +245,10 @@ async function main(): Promise<void> {
   } else if (values.all) {
     results = await runBaselineAll();
   } else {
-    console.log('Usage:');
-    console.log('  bun run experiments/runners/baseline.ts --all');
-    console.log('  bun run experiments/runners/baseline.ts --transcript=0');
-    console.log('  bun run experiments/runners/baseline.ts --dry-run');
+    console.log("Usage:");
+    console.log("  bun run experiments/runners/baseline.ts --all");
+    console.log("  bun run experiments/runners/baseline.ts --transcript=0");
+    console.log("  bun run experiments/runners/baseline.ts --dry-run");
     return;
   }
 
@@ -246,7 +257,7 @@ async function main(): Promise<void> {
   printSummary(summary);
 
   // Write results
-  await writeResults('baseline', results, summary);
+  await writeResults("baseline", results, summary);
 }
 
 main().catch(console.error);

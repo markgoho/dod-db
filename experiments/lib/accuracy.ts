@@ -80,8 +80,8 @@ export function lineByLineMatch(
   groundTruth: string,
   maxMismatches = 10,
 ): LineMatchResult {
-  const outputLines = output.split('\n');
-  const truthLines = groundTruth.split('\n');
+  const outputLines = output.split("\n");
+  const truthLines = groundTruth.split("\n");
 
   let matching = 0;
   const mismatches: LineMismatch[] = [];
@@ -89,8 +89,8 @@ export function lineByLineMatch(
   const maxLines = Math.max(outputLines.length, truthLines.length);
 
   for (let i = 0; i < maxLines; i++) {
-    const outLine = outputLines[i] ?? '';
-    const truthLine = truthLines[i] ?? '';
+    const outLine = outputLines[i] ?? "";
+    const truthLine = truthLines[i] ?? "";
 
     if (outLine === truthLine) {
       matching++;
@@ -187,9 +187,9 @@ export function formatAccuracyMetrics(metrics: AccuracyMetrics): string {
     `Levenshtein Similarity: ${(metrics.levenshteinSimilarity * 100).toFixed(2)}%`,
     `Line Match: ${metrics.lineMatchPercentage.toFixed(2)}%`,
     `Timestamp Preservation: ${(metrics.timestampPreservationRate * 100).toFixed(2)}%`,
-    `Character Delta: ${metrics.characterDelta > 0 ? '+' : ''}${metrics.characterDelta}`,
-    metrics.dataLossDetected ? 'WARNING: Data loss detected!' : '',
+    `Character Delta: ${metrics.characterDelta > 0 ? "+" : ""}${metrics.characterDelta}`,
+    metrics.dataLossDetected ? "WARNING: Data loss detected!" : "",
   ]
     .filter(Boolean)
-    .join('\n');
+    .join("\n");
 }

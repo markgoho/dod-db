@@ -1,12 +1,12 @@
-import { z } from 'zod';
-import { speakerIdModel } from '../config/models.js';
-import { ai } from '../ai.js';
+import { z } from "zod";
+import { ai } from "../ai.js";
+import { speakerIdModel } from "../config/models.js";
 import {
   addSpeakerLabels,
-  SpeakerLabelsSchema,
   speakerLabelPrompt,
+  SpeakerLabelsSchema,
   type SpeakerLabels,
-} from '../prompts/speaker-labels.js';
+} from "../prompts/speaker-labels.js";
 
 export async function identifySpeakers(
   transcript: string,
@@ -16,14 +16,14 @@ export async function identifySpeakers(
     model: speakerIdModel,
     contents: speakerLabelPrompt(transcript, metadata),
     config: {
-      responseMimeType: 'application/json',
+      responseMimeType: "application/json",
       responseSchema: z.toJSONSchema(SpeakerLabelsSchema),
     },
   });
 
   const responseText = response.text;
   if (!responseText) {
-    throw new Error('Speaker identification response was null or empty');
+    throw new Error("Speaker identification response was null or empty");
   }
 
   const output = SpeakerLabelsSchema.parse(

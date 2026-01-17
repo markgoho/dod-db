@@ -17,7 +17,9 @@
     <div class="tag-header__meta">
       <div class="tag-header__stat">
         <span class="tag-header__stat-number">{{ len .Pages }}</span>
-        <span class="tag-header__stat-label">{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span>
+        <span class="tag-header__stat-label"
+          >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
+        >
       </div>
     </div>
   </div>
@@ -33,17 +35,22 @@
               <h2 class="episode-card__title">{{ .Title }}</h2>
               {{ if gt (len $guests) 0 }}
                 <div class="episode-card__guest">
-                  with {{ index $guests 0 }}
+                  with
+                  {{ index $guests 0 }}
                 </div>
               {{ end }}
-              <time class="episode-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
+              <time
+                class="episode-card__date"
+                datetime="{{ .Date.Format "2006-01-02" }}">
                 {{ .Date.Format "January 2, 2006" }}
               </time>
               {{ if .Params.tags }}
                 <div class="episode-card__tags">
                   {{ $currentTag := $.Title }}
                   {{/* Show current tag first, highlighted */}}
-                  <span class="episode-card__tag episode-card__tag--current">{{ $currentTag }}</span>
+                  <span class="episode-card__tag episode-card__tag--current"
+                    >{{ $currentTag }}</span
+                  >
                   {{/* Then show up to 2 other tags */}}
                   {{ $otherTags := slice }}
                   {{ range .Params.tags }}
@@ -56,7 +63,9 @@
                   {{ end }}
                   {{ $remaining := sub (len $otherTags) 2 }}
                   {{ if gt $remaining 0 }}
-                    <span class="episode-card__tag-more">+{{ $remaining }}</span>
+                    <span class="episode-card__tag-more"
+                      >+{{ $remaining }}</span
+                    >
                   {{ end }}
                 </div>
               {{ end }}

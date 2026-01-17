@@ -25,15 +25,25 @@
   {{- /* Video ID from page params */ -}}
   {{- $videoId := .Page.Params.videoId -}}
 
-<article class="transcript-line" data-start="{{ $totalSeconds }}" data-speaker="{{ $speakerSlug }}">
-  <header class="transcript-line-header">
-    <cite class="speaker-name" data-speaker="{{ $speakerSlug }}">{{ $speaker }}</cite>
-    <a class="timestamp" data-seconds="{{ $totalSeconds }}" href="https://youtu.be/{{ $videoId }}?t={{ $totalSeconds }}" aria-label="Jump to {{ $hours }}:{{ $minutes }}:{{ $seconds }}">
-      <time>{{ $hours }}:{{ $minutes }}:{{ $seconds }}</time>
-    </a>
-  </header>
-  <p class="transcript-text">{{ $text }}</p>
-</article>
+
+  <article
+    class="transcript-line"
+    data-start="{{ $totalSeconds }}"
+    data-speaker="{{ $speakerSlug }}">
+    <header class="transcript-line-header">
+      <cite class="speaker-name" data-speaker="{{ $speakerSlug }}"
+        >{{ $speaker }}</cite
+      >
+      <a
+        class="timestamp"
+        data-seconds="{{ $totalSeconds }}"
+        href="https://youtu.be/{{ $videoId }}?t={{ $totalSeconds }}"
+        aria-label="Jump to {{ $hours }}:{{ $minutes }}:{{ $seconds }}">
+        <time>{{ $hours }}:{{ $minutes }}:{{ $seconds }}</time>
+      </a>
+    </header>
+    <p class="transcript-text">{{ $text }}</p>
+  </article>
 {{- else -}}
   {{- /* Fallback: render as plain text if parsing fails */ -}}
   <p class="transcript-line-error">{{ $inner }}</p>

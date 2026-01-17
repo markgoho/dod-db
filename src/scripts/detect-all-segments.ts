@@ -10,16 +10,19 @@
  */
 
 import {
-  loadProcessedVideos,
-  updateVideoSegments,
-  type EpisodeSegment,
-} from '../storage/processed-videos.js';
+  SEGMENT_LABELS,
+  type SegmentType,
+} from "../config/segment-patterns.js";
 import {
   detectSegmentsFromAudio,
   formatTimestamp,
   getAudioDuration,
-} from '../pipeline/detect-segments.js';
-import { SEGMENT_LABELS, type SegmentType } from '../config/segment-patterns.js';
+} from "../pipeline/detect-segments.js";
+import {
+  loadProcessedVideos,
+  updateVideoSegments,
+  type EpisodeSegment,
+} from "../storage/processed-videos.js";
 
 interface DetectionResult {
   videoId: string;
@@ -31,24 +34,28 @@ interface DetectionResult {
 }
 
 async function main() {
-  console.log('🎬 Segment Detection Script\n');
+  console.log("🎬 Segment Detection Script\n");
 
   // Parse CLI arguments
-  const force = process.argv.includes('--force');
-  const forceVerified = process.argv.includes('--force-verified');
-  const verbose = process.argv.includes('--verbose');
-  const dryRun = process.argv.includes('--dry-run');
+  const force = process.argv.includes("--force");
+  const forceVerified = process.argv.includes("--force-verified");
+  const verbose = process.argv.includes("--verbose");
+  const dryRun = process.argv.includes("--dry-run");
 
   if (forceVerified) {
-    console.log('⚠️  Force-verified mode: Reprocessing ALL episodes including verified\n');
+    console.log(
+      "⚠️  Force-verified mode: Reprocessing ALL episodes including verified\n",
+    );
   } else if (force) {
-    console.log('⚠️  Force mode: Reprocessing unverified episodes (skipping verified)\n');
+    console.log(
+      "⚠️  Force mode: Reprocessing unverified episodes (skipping verified)\n",
+    );
   }
   if (dryRun) {
-    console.log('🔍 Dry run mode: No changes will be saved\n');
+    console.log("🔍 Dry run mode: No changes will be saved\n");
   }
   if (verbose) {
-    console.log('📝 Verbose mode: Showing detailed logs\n');
+    console.log("📝 Verbose mode: Showing detailed logs\n");
   }
 
   // Load all processed videos
@@ -56,8 +63,8 @@ async function main() {
   console.log(`Found ${videos.length} processed episodes\n`);
 
   // Helper to check if an episode has any verified segments
-  const hasVerifiedSegments = (v: typeof videos[0]) =>
-    v.segments?.some((s) => s.confidence === 'verified') ?? false;
+  const hasVerifiedSegments = (v: (typeof videos)[0]) =>
+    v.segments?.some(s => s.confidence === "verified") ?? false;
 
   // Filter videos to process
   let toProcess: typeof videos;
@@ -69,26 +76,30 @@ async function main() {
   } else if (force) {
     // Process all except verified
     skippedVerified = videos.filter(hasVerifiedSegments);
-    toProcess = videos.filter((v) => !hasVerifiedSegments(v));
+    toProcess = videos.filter(v => !hasVerifiedSegments(v));
   } else {
     // Only process episodes without segments
-    toProcess = videos.filter((v) => !v.segments || v.segments.length === 0);
+    toProcess = videos.filter(v => !v.segments || v.segments.length === 0);
   }
 
   if (toProcess.length === 0) {
-    console.log('✅ All episodes already have segments detected.');
+    console.log("✅ All episodes already have segments detected.");
     if (skippedVerified.length > 0) {
-      console.log(`   Skipped ${skippedVerified.length} episode(s) with verified segments.`);
-      console.log('   Use --force-verified to reprocess verified episodes.');
+      console.log(
+        `   Skipped ${skippedVerified.length} episode(s) with verified segments.`,
+      );
+      console.log("   Use --force-verified to reprocess verified episodes.");
     } else {
-      console.log('   Use --force to reprocess all episodes.');
+      console.log("   Use --force to reprocess all episodes.");
     }
     return;
   }
 
   // Show skipped verified episodes
   if (skippedVerified.length > 0) {
-    console.log(`⏭️  Skipping ${skippedVerified.length} episode(s) with verified segments:`);
+    console.log(
+      `⏭️  Skipping ${skippedVerified.length} episode(s) with verified segments:`,
+    );
     for (const v of skippedVerified) {
       console.log(`   - Episode ${v.episodeNumber}: ${v.title}`);
     }
@@ -98,7 +109,10 @@ async function main() {
   console.log(`Processing ${toProcess.length} episodes...\n`);
 
   const results: DetectionResult[] = [];
-  const globalStats: Record<SegmentType, number> = {} as Record<SegmentType, number>;
+  const globalStats: Record<SegmentType, number> = {} as Record<
+    SegmentType,
+    number
+  >;
 
   for (const video of toProcess) {
     const result: DetectionResult = {
@@ -124,7 +138,9 @@ async function main() {
       // Get audio duration for accurate end timestamp
       const durationSeconds = await getAudioDuration(video.videoId);
       if (verbose && durationSeconds) {
-        console.log(`   Audio duration: ${(durationSeconds / 60).toFixed(1)} minutes`);
+        console.log(
+          `   Audio duration: ${(durationSeconds / 60).toFixed(1)} minutes`,
+        );
       }
 
       // Detect segments using audio jingle matching
@@ -133,7 +149,7 @@ async function main() {
         durationSeconds: durationSeconds ?? undefined,
       });
       result.segmentsFound = segments.length;
-      result.segmentTypes = segments.map((s) => s.type);
+      result.segmentTypes = segments.map(s => s.type);
 
       // Update global stats
       for (const segment of segments) {
@@ -141,7 +157,7 @@ async function main() {
       }
 
       // Convert to EpisodeSegment (remove matchedPattern for storage)
-      const episodeSegments: EpisodeSegment[] = segments.map((s) => ({
+      const episodeSegments: EpisodeSegment[] = segments.map(s => ({
         type: s.type,
         startTimestamp: s.startTimestamp,
         endTimestamp: s.endTimestamp,
@@ -155,17 +171,23 @@ async function main() {
       }
 
       // Log result
-      const prefix = dryRun ? '🔍' : '✅';
-      const episodeLabel = video.episodeNumber ? `Episode ${video.episodeNumber}` : video.videoId;
-      console.log(`${prefix} ${episodeLabel}: ${segments.length} segments found`);
+      const prefix = dryRun ? "🔍" : "✅";
+      const episodeLabel = video.episodeNumber
+        ? `Episode ${video.episodeNumber}`
+        : video.videoId;
+      console.log(
+        `${prefix} ${episodeLabel}: ${segments.length} segments found`,
+      );
 
       if (verbose) {
         for (const segment of segments) {
           const start = formatTimestamp(segment.startTimestamp);
           const end = segment.endTimestamp
             ? formatTimestamp(segment.endTimestamp)
-            : 'end';
-          console.log(`   - ${SEGMENT_LABELS[segment.type]}: ${start} → ${end}`);
+            : "end";
+          console.log(
+            `   - ${SEGMENT_LABELS[segment.type]}: ${start} → ${end}`,
+          );
         }
         console.log();
       }
@@ -179,12 +201,12 @@ async function main() {
   }
 
   // Print summary
-  console.log('\n' + '='.repeat(60));
-  console.log('SUMMARY');
-  console.log('='.repeat(60));
+  console.log("\n" + "=".repeat(60));
+  console.log("SUMMARY");
+  console.log("=".repeat(60));
 
-  const successful = results.filter((r) => !r.error);
-  const failed = results.filter((r) => r.error);
+  const successful = results.filter(r => !r.error);
+  const failed = results.filter(r => r.error);
 
   console.log(`\nProcessed: ${successful.length}/${results.length} episodes`);
   if (failed.length > 0) {
@@ -192,7 +214,7 @@ async function main() {
   }
 
   // Segment type breakdown
-  console.log('\nSegments by type:');
+  console.log("\nSegments by type:");
   const sortedTypes = Object.entries(globalStats).sort(([, a], [, b]) => b - a);
   for (const [type, count] of sortedTypes) {
     console.log(`  ${SEGMENT_LABELS[type as SegmentType]}: ${count}`);
@@ -200,9 +222,11 @@ async function main() {
 
   // Episodes without named segments
   const withoutNamedSegments = results.filter(
-    (r) =>
+    r =>
       !r.error &&
-      r.segmentTypes.every((t) => t === 'intro' || t === 'main-content' || t === 'outro'),
+      r.segmentTypes.every(
+        t => t === "intro" || t === "main-content" || t === "outro",
+      ),
   );
   if (withoutNamedSegments.length > 0) {
     console.log(`\n⚠️  Episodes with only intro/outro (no named segments):`);
@@ -212,8 +236,8 @@ async function main() {
   }
 
   if (dryRun) {
-    console.log('\n🔍 Dry run complete. No changes were saved.');
-    console.log('   Remove --dry-run to save segment data.');
+    console.log("\n🔍 Dry run complete. No changes were saved.");
+    console.log("   Remove --dry-run to save segment data.");
   }
 }
 

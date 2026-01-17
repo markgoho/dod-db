@@ -8,26 +8,45 @@
 {{ define "main" }}
   <section class="home-hero">
     <div class="home-hero__logo-bg" aria-hidden="true">
-      <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2152669595/settings_images/ba0cce-f0f1-d8-ff0f-00033ad3d421_D_D.png" alt="" loading="eager">
+      <img
+        src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2152669595/settings_images/ba0cce-f0f1-d8-ff0f-00033ad3d421_D_D.png"
+        alt=""
+        loading="eager" />
     </div>
 
     <div class="home-hero__ornament" aria-hidden="true">
       <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="none" stroke="currentColor" stroke-width="1"/>
-        <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path
+          d="M50 10 L90 50 L50 90 L10 50 Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1" />
+        <circle
+          cx="50"
+          cy="50"
+          r="15"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1" />
       </svg>
     </div>
 
     <div class="home-hero__content">
       <div class="home-hero__logo">
-        <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2152669595/settings_images/ba0cce-f0f1-d8-ff0f-00033ad3d421_D_D.png" alt="Data Over Dogma logo" loading="eager">
+        <img
+          src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2152669595/settings_images/ba0cce-f0f1-d8-ff0f-00033ad3d421_D_D.png"
+          alt="Data Over Dogma logo"
+          loading="eager" />
       </div>
       <h1 class="home-hero__title">
         <span class="home-hero__title-main">Data Over Dogma</span>
-        <span class="home-hero__title-sub">A Podcast on Biblical Scholarship</span>
+        <span class="home-hero__title-sub"
+          >A Podcast on Biblical Scholarship</span
+        >
       </h1>
       <p class="home-hero__tagline">
-        Increasing public access to the academic study of the Bible and religion, combating the spread of misinformation.
+        Increasing public access to the academic study of the Bible and
+        religion, combating the spread of misinformation.
       </p>
     </div>
 
@@ -55,7 +74,9 @@
     <div class="home-intro__quote">"</div>
     <div class="home-intro__content">
       <p class="home-intro__text">
-        Explore transcripts from the Data Over Dogma podcast, featuring in-depth discussions on biblical scholarship, theology, and the historical context of religious texts.
+        Explore transcripts from the Data Over Dogma podcast, featuring in-depth
+        discussions on biblical scholarship, theology, and the historical
+        context of religious texts.
       </p>
     </div>
   </section>
@@ -78,7 +99,8 @@
         <div class="feature-card__content">
           <h2 class="feature-card__title">Browse by Topic</h2>
           <p class="feature-card__description">
-            Find episodes by biblical characters, places, theological concepts, and more.
+            Find episodes by biblical characters, places, theological concepts,
+            and more.
           </p>
           <span class="feature-card__arrow">→</span>
         </div>
@@ -89,7 +111,8 @@
         <div class="feature-card__content">
           <h2 class="feature-card__title">Browse by Segment</h2>
           <p class="feature-card__description">
-            Explore recurring segments like Chapter and Verse, What Does That Mean?, and more.
+            Explore recurring segments like Chapter and Verse, What Does That
+            Mean?, and more.
           </p>
           <span class="feature-card__arrow">→</span>
         </div>
@@ -100,7 +123,8 @@
         <div class="feature-card__content">
           <h2 class="feature-card__title">Browse by Guest</h2>
           <p class="feature-card__description">
-            Discover episodes featuring renowned scholars and experts in biblical studies.
+            Discover episodes featuring renowned scholars and experts in
+            biblical studies.
           </p>
           <span class="feature-card__arrow">→</span>
         </div>
@@ -108,19 +132,21 @@
 
       {{ $recentEpisodes := first 3 (where .Site.RegularPages "Type" "episodes") }}
       {{ if $recentEpisodes }}
-      <div class="recent-episodes">
-        <h3 class="recent-episodes__title">Recent Episodes</h3>
-        <ul class="recent-episodes__list">
-          {{ range $recentEpisodes }}
-          <li class="recent-episodes__item">
-            <a href="{{ .RelPermalink }}" class="recent-episodes__link">
-              <span class="recent-episodes__number">{{ .Params.episodeNumber }}</span>
-              <span class="recent-episodes__title-text">{{ .Title }}</span>
-            </a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
+        <div class="recent-episodes">
+          <h3 class="recent-episodes__title">Recent Episodes</h3>
+          <ul class="recent-episodes__list">
+            {{ range $recentEpisodes }}
+              <li class="recent-episodes__item">
+                <a href="{{ .RelPermalink }}" class="recent-episodes__link">
+                  <span class="recent-episodes__number"
+                    >{{ .Params.episodeNumber }}</span
+                  >
+                  <span class="recent-episodes__title-text">{{ .Title }}</span>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
       {{ end }}
     </div>
   </section>

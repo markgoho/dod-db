@@ -52,9 +52,14 @@ import { Document } from "genkit/retriever";
 const myIndexer = devLocalIndexerRef("my_vectorstore");
 
 // Create documents from text
-const data = ["This is the first document.", "This is the second document.", "This is the third document.", "This is the fourth document."];
+const data = [
+  "This is the first document.",
+  "This is the second document.",
+  "This is the third document.",
+  "This is the fourth document.",
+];
 
-const documents = data.map((text) => Document.fromText(text));
+const documents = data.map(text => Document.fromText(text));
 
 // Index the documents
 await ai.index({
@@ -81,7 +86,7 @@ const docs = await ai.retrieve({
 });
 
 // Process the retrieved documents
-docs.forEach((doc) => {
+docs.forEach(doc => {
   console.log(doc.content);
 });
 ```

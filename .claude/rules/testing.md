@@ -9,7 +9,7 @@ paths: "src/**/*.test.ts"
 Use **Bun's native test framework** for all unit tests.
 
 ```typescript
-import { describe, test, expect } from 'bun:test';
+import { describe, test, expect } from "bun:test";
 ```
 
 ## File Organization
@@ -32,15 +32,19 @@ src/hugo/
 **Prefer exact output matching over weak assertions.**
 
 ### ❌ BAD - Weak assertions
+
 ```typescript
-expect(frontmatter).toContain('title: Test');
-expect(frontmatter).toContain('tags:');
+expect(frontmatter).toContain("title: Test");
+expect(frontmatter).toContain("tags:");
 ```
 
 ### ✅ GOOD - Exact snapshot matching
+
 ```typescript
-const actual = generateFrontmatter(video, 'Test');
-const expected = await Bun.file('src/hugo/__fixtures__/frontmatter-complete.md').text();
+const actual = generateFrontmatter(video, "Test");
+const expected = await Bun.file(
+  "src/hugo/__fixtures__/frontmatter-complete.md",
+).text();
 expect(actual).toBe(expected);
 ```
 
@@ -91,23 +95,24 @@ Use realistic test data that matches production types:
 
 ```typescript
 const video: ProcessedVideo = {
-  videoId: 'abc123',
+  videoId: "abc123",
   title: 'Episode 1, "Test Episode"',
-  publishedAt: '2024-01-15T10:00:00Z',
-  processedAt: '2024-01-15T12:00:00Z',
-  transcriptPath: 'data/transcripts/2024-01-15-test-episode.txt',
+  publishedAt: "2024-01-15T10:00:00Z",
+  processedAt: "2024-01-15T12:00:00Z",
+  transcriptPath: "data/transcripts/2024-01-15-test-episode.txt",
   episodeNumber: 1,
   tags: [
-    { tag: 'theology', mentions: 5 },
-    { tag: 'Torah', mentions: 10 },
+    { tag: "theology", mentions: 5 },
+    { tag: "Torah", mentions: 10 },
   ],
-  speakers: ['Dan McClellan', 'Dan Beecher'],
+  speakers: ["Dan McClellan", "Dan Beecher"],
 };
 ```
 
 ## When to Write Tests
 
 **Write tests when:**
+
 - Creating new utilities or functions
 - Refactoring existing code (write tests first!)
 - Fixing bugs (write a failing test, then fix it)
@@ -118,6 +123,7 @@ const video: ProcessedVideo = {
 ## Test Quality Wins
 
 During the js-yaml → Bun.YAML migration, snapshot tests caught:
+
 1. **Date serialization bug** - Date objects serialized as `{}` instead of ISO strings
 2. **Missing newline** - Frontmatter closing `---` was missing a newline separator
 

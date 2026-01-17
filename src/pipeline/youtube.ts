@@ -1,6 +1,6 @@
-import { formatDate, titleToSlug } from '../utils/slugify.js';
-import * as path from 'node:path';
-import { mkdir, readdir } from 'node:fs/promises';
+import { mkdir, readdir } from "node:fs/promises";
+import * as path from "node:path";
+import { formatDate, titleToSlug } from "../utils/slugify.js";
 
 export interface VideoChapter {
   title: string;
@@ -24,7 +24,7 @@ export async function fetchVideoMetadata(
 ): Promise<VideoMetadata> {
   const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
 
-  const proc = Bun.spawn(['yt-dlp', videoUrl, '--dump-json', '--no-playlist']);
+  const proc = Bun.spawn(["yt-dlp", videoUrl, "--dump-json", "--no-playlist"]);
 
   const metadata = await new Response(proc.stdout).text();
   const exitCode = await proc.exited;
@@ -37,22 +37,20 @@ export async function fetchVideoMetadata(
 
   // Extract chapters if available (YouTube uploader-defined chapters)
   const chapters: VideoChapter[] | undefined = data.chapters
-    ? data.chapters.map(
-        (chapter: { title: string; start_time: number }) => ({
-          title: chapter.title,
-          startTime: chapter.start_time,
-        }),
-      )
+    ? data.chapters.map((chapter: { title: string; start_time: number }) => ({
+        title: chapter.title,
+        startTime: chapter.start_time,
+      }))
     : undefined;
 
   return {
     id: videoId,
-    title: data.title || 'Untitled',
-    description: data.description || '',
+    title: data.title || "Untitled",
+    description: data.description || "",
     publishedAt: data.upload_date
       ? `${data.upload_date.slice(0, 4)}-${data.upload_date.slice(4, 6)}-${data.upload_date.slice(6, 8)}T00:00:00Z`
       : new Date().toISOString(),
-    channelTitle: data.uploader || '',
+    channelTitle: data.uploader || "",
     ...(chapters !== undefined && { chapters }),
   };
 }
@@ -77,11 +75,11 @@ export async function downloadAudio(
   // This handles variations in available formats across different videos
   // (e.g., format 140 AAC, 251 Opus, or DRC variants)
   const proc = Bun.spawn([
-    'yt-dlp',
+    "yt-dlp",
     videoUrl,
-    '-f',
-    'bestaudio',
-    '-o',
+    "-f",
+    "bestaudio",
+    "-o",
     outputTemplate,
   ]);
 
@@ -94,7 +92,7 @@ export async function downloadAudio(
   // Find the actual downloaded file (could be .m4a, .webm, .opus, etc.)
   const files = await readdir(outputDirectory);
   const downloadedFile = files.find(
-    (f) => f.startsWith(videoId) && f !== `${videoId}.mp3`,
+    f => f.startsWith(videoId) && f !== `${videoId}.mp3`,
   );
 
   if (!downloadedFile) {
@@ -134,7 +132,7 @@ export function extractVideoId(url: string): string {
 
   throw new Error(
     `Invalid YouTube URL or video ID: ${url}\n` +
-      'Expected format: https://www.youtube.com/watch?v=VIDEO_ID or https://youtu.be/VIDEO_ID',
+      "Expected format: https://www.youtube.com/watch?v=VIDEO_ID or https://youtu.be/VIDEO_ID",
   );
 }
 

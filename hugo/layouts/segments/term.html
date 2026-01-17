@@ -17,7 +17,9 @@
     <div class="segment-header__meta">
       <div class="segment-header__stat">
         <span class="segment-header__stat-number">{{ len .Pages }}</span>
-        <span class="segment-header__stat-label">{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span>
+        <span class="segment-header__stat-label"
+          >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
+        >
       </div>
     </div>
   </div>
@@ -33,17 +35,23 @@
               <h2 class="episode-card__title">{{ .Title }}</h2>
               {{ if gt (len $guests) 0 }}
                 <div class="episode-card__guest">
-                  with {{ index $guests 0 }}
+                  with
+                  {{ index $guests 0 }}
                 </div>
               {{ end }}
-              <time class="episode-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
+              <time
+                class="episode-card__date"
+                datetime="{{ .Date.Format "2006-01-02" }}">
                 {{ .Date.Format "January 2, 2006" }}
               </time>
               {{ if .Params.segments }}
                 <div class="episode-card__segments">
                   {{ $currentSegment := $.Title }}
                   {{/* Show current segment first, highlighted */}}
-                  <span class="episode-card__segment episode-card__segment--current">{{ $currentSegment }}</span>
+                  <span
+                    class="episode-card__segment episode-card__segment--current"
+                    >{{ $currentSegment }}</span
+                  >
                   {{/* Then show up to 2 other segments */}}
                   {{ $otherSegments := slice }}
                   {{ range .Params.segments }}
@@ -56,7 +64,9 @@
                   {{ end }}
                   {{ $remaining := sub (len $otherSegments) 2 }}
                   {{ if gt $remaining 0 }}
-                    <span class="episode-card__segment-more">+{{ $remaining }}</span>
+                    <span class="episode-card__segment-more"
+                      >+{{ $remaining }}</span
+                    >
                   {{ end }}
                 </div>
               {{ end }}

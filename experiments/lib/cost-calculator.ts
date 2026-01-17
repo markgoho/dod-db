@@ -2,7 +2,7 @@
  * Cost calculation utilities using official Gemini API pricing.
  */
 
-import { MODEL_PRICING, type ModelId } from '../config/experiment-config.js';
+import { MODEL_PRICING, type ModelId } from "../config/experiment-config.js";
 
 export interface TokenUsage {
   inputTokens: number;
@@ -26,7 +26,10 @@ export interface CostBreakdown {
  * @param usage - Token counts from API response usageMetadata
  * @returns Cost breakdown in USD
  */
-export function calculateCost(model: ModelId, usage: TokenUsage): CostBreakdown {
+export function calculateCost(
+  model: ModelId,
+  usage: TokenUsage,
+): CostBreakdown {
   const pricing = MODEL_PRICING[model];
 
   const inputCost = (usage.inputTokens * pricing.input) / 1_000_000;
@@ -53,11 +56,11 @@ export function aggregateCosts(costs: CostBreakdown[]): CostBreakdown {
       inputCost: 0,
       outputCost: 0,
       totalCost: 0,
-      model: 'none',
+      model: "none",
     };
   }
 
-  const model = costs[0]?.model ?? 'unknown';
+  const model = costs[0]?.model ?? "unknown";
 
   let inputTokens = 0;
   let outputTokens = 0;
@@ -85,7 +88,7 @@ export function formatCost(cost: CostBreakdown): string {
     `Input: ${cost.inputTokens.toLocaleString()} tokens ($${cost.inputCost.toFixed(6)})`,
     `Output: ${cost.outputTokens.toLocaleString()} tokens ($${cost.outputCost.toFixed(6)})`,
     `Total: $${cost.totalCost.toFixed(6)}`,
-  ].join('\n');
+  ].join("\n");
 }
 
 /**
@@ -100,5 +103,9 @@ export function compareCosts(
     cost1.totalCost === 0 ? 0 : (savings / cost1.totalCost) * 100;
   const cheaper = savings > 0 ? cost2.model : cost1.model;
 
-  return { savings: Math.abs(savings), savingsPercent: Math.abs(savingsPercent), cheaper };
+  return {
+    savings: Math.abs(savings),
+    savingsPercent: Math.abs(savingsPercent),
+    cheaper,
+  };
 }

@@ -1,2 +1,2 @@
-export * from './file.js';
-export * from './firestore.js';
+export * from "./file.js";
+export * from "./firestore.js";

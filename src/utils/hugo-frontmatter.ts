@@ -2,10 +2,10 @@
  * Hugo frontmatter utilities for reading and writing episode metadata.
  */
 
-import * as path from 'node:path';
-import { extractCleanTitle } from '../hugo/extract-clean-title.js';
-import { getEpisodeOutputPath } from '../hugo/get-episode-path.js';
-import type { ProcessedVideo } from '../storage/processed-videos.js';
+import * as path from "node:path";
+import { extractCleanTitle } from "../hugo/extract-clean-title.js";
+import { getEpisodeOutputPath } from "../hugo/get-episode-path.js";
+import type { ProcessedVideo } from "../storage/processed-videos.js";
 
 /**
  * Hugo episode frontmatter structure.
@@ -13,14 +13,14 @@ import type { ProcessedVideo } from '../storage/processed-videos.js';
  * Note: date can be string or Date depending on Bun.YAML.parse() auto-conversion
  */
 export interface HugoEpisodeFrontmatter {
-	title: string;
-	date: string | Date;
-	episodeNumber: number;
-	videoId: string;
-	youtubeUrl: string;
-	tags: string[];
-	speakers: string[];
-	draft?: boolean;
+  title: string;
+  date: string | Date;
+  episodeNumber: number;
+  videoId: string;
+  youtubeUrl: string;
+  tags: string[];
+  speakers: string[];
+  draft?: boolean;
 }
 
 /**
@@ -30,25 +30,25 @@ export interface HugoEpisodeFrontmatter {
  * @returns Object with frontmatter and content
  */
 export async function parseHugoFile(filePath: string): Promise<{
-	frontmatter: HugoEpisodeFrontmatter;
-	content: string;
+  frontmatter: HugoEpisodeFrontmatter;
+  content: string;
 }> {
-	const file = Bun.file(filePath);
-	const fullContent = await file.text();
+  const file = Bun.file(filePath);
+  const fullContent = await file.text();
 
-	// Hugo frontmatter is between --- markers
-	const frontmatterRegex = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/;
-	const match = fullContent.match(frontmatterRegex);
+  // Hugo frontmatter is between --- markers
+  const frontmatterRegex = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/;
+  const match = fullContent.match(frontmatterRegex);
 
-	if (!match || !match[1] || !match[2]) {
-		throw new Error(`No frontmatter found in ${filePath}`);
-	}
+  if (!match || !match[1] || !match[2]) {
+    throw new Error(`No frontmatter found in ${filePath}`);
+  }
 
-	const frontmatterYaml = match[1];
-	const content = match[2];
-	const frontmatter = Bun.YAML.parse(frontmatterYaml) as HugoEpisodeFrontmatter;
+  const frontmatterYaml = match[1];
+  const content = match[2];
+  const frontmatter = Bun.YAML.parse(frontmatterYaml) as HugoEpisodeFrontmatter;
 
-	return { frontmatter, content };
+  return { frontmatter, content };
 }
 
 /**
@@ -59,24 +59,27 @@ export async function parseHugoFile(filePath: string): Promise<{
  * @param content - Markdown content (unchanged)
  */
 export async function writeHugoFile({
-	filePath,
-	frontmatter,
-	content,
+  filePath,
+  frontmatter,
+  content,
 }: {
-	filePath: string;
-	frontmatter: HugoEpisodeFrontmatter;
-	content: string;
+  filePath: string;
+  frontmatter: HugoEpisodeFrontmatter;
+  content: string;
 }): Promise<void> {
-	// Normalize date to Date object for consistent formatting
-	// Ensures Bun.YAML.stringify produces unquoted date with milliseconds
-	const normalizedFrontmatter = {
-		...frontmatter,
-		date: typeof frontmatter.date === 'string' ? new Date(frontmatter.date) : frontmatter.date,
-	};
+  // Normalize date to Date object for consistent formatting
+  // Ensures Bun.YAML.stringify produces unquoted date with milliseconds
+  const normalizedFrontmatter = {
+    ...frontmatter,
+    date:
+      typeof frontmatter.date === "string"
+        ? new Date(frontmatter.date)
+        : frontmatter.date,
+  };
 
-	const frontmatterYaml = Bun.YAML.stringify(normalizedFrontmatter, null, 2);
-	const fullContent = `---\n${frontmatterYaml}---\n${content}`;
-	await Bun.write(filePath, fullContent);
+  const frontmatterYaml = Bun.YAML.stringify(normalizedFrontmatter, null, 2);
+  const fullContent = `---\n${frontmatterYaml}---\n${content}`;
+  await Bun.write(filePath, fullContent);
 }
 
 /**
@@ -87,9 +90,9 @@ export async function writeHugoFile({
  * @returns Absolute path to the Hugo episode markdown file
  */
 export function getHugoEpisodePath(video: ProcessedVideo): string {
-	const cleanTitle = extractCleanTitle(video.title);
-	const relativePath = getEpisodeOutputPath(video, cleanTitle);
-	return path.join(process.cwd(), relativePath);
+  const cleanTitle = extractCleanTitle(video.title);
+  const relativePath = getEpisodeOutputPath(video, cleanTitle);
+  return path.join(process.cwd(), relativePath);
 }
 
 /**
@@ -100,39 +103,39 @@ export function getHugoEpisodePath(video: ProcessedVideo): string {
  * @returns true if tag was found and removed, false otherwise
  */
 export async function removeTagFromEpisode({
-	video,
-	tagToRemove,
+  video,
+  tagToRemove,
 }: {
-	video: ProcessedVideo;
-	tagToRemove: string;
+  video: ProcessedVideo;
+  tagToRemove: string;
 }): Promise<boolean> {
-	const filePath = getHugoEpisodePath(video);
-	const file = Bun.file(filePath);
+  const filePath = getHugoEpisodePath(video);
+  const file = Bun.file(filePath);
 
-	if (!(await file.exists())) {
-		console.warn(
-			`Hugo episode file not found for episode ${video.episodeNumber}: ${filePath}`,
-		);
-		return false;
-	}
+  if (!(await file.exists())) {
+    console.warn(
+      `Hugo episode file not found for episode ${video.episodeNumber}: ${filePath}`,
+    );
+    return false;
+  }
 
-	const { frontmatter, content } = await parseHugoFile(filePath);
+  const { frontmatter, content } = await parseHugoFile(filePath);
 
-	// Filter out the tag (case-insensitive)
-	const originalLength = frontmatter.tags.length;
-	frontmatter.tags = frontmatter.tags.filter(
-		(tag) => tag.toLowerCase() !== tagToRemove.toLowerCase(),
-	);
+  // Filter out the tag (case-insensitive)
+  const originalLength = frontmatter.tags.length;
+  frontmatter.tags = frontmatter.tags.filter(
+    tag => tag.toLowerCase() !== tagToRemove.toLowerCase(),
+  );
 
-	// If no tags were removed, return false
-	if (frontmatter.tags.length === originalLength) {
-		return false;
-	}
+  // If no tags were removed, return false
+  if (frontmatter.tags.length === originalLength) {
+    return false;
+  }
 
-	// Write back updated frontmatter
-	await writeHugoFile({ filePath, frontmatter, content });
+  // Write back updated frontmatter
+  await writeHugoFile({ filePath, frontmatter, content });
 
-	return true;
+  return true;
 }
 
 /**
@@ -142,23 +145,23 @@ export async function removeTagFromEpisode({
  * @param tags - New tags array
  */
 export async function updateEpisodeTags({
-	video,
-	tags,
+  video,
+  tags,
 }: {
-	video: ProcessedVideo;
-	tags: string[];
+  video: ProcessedVideo;
+  tags: string[];
 }): Promise<void> {
-	const filePath = getHugoEpisodePath(video);
-	const file = Bun.file(filePath);
+  const filePath = getHugoEpisodePath(video);
+  const file = Bun.file(filePath);
 
-	if (!(await file.exists())) {
-		throw new Error(
-			`Hugo episode file not found for episode ${video.episodeNumber}: ${filePath}`,
-		);
-	}
+  if (!(await file.exists())) {
+    throw new Error(
+      `Hugo episode file not found for episode ${video.episodeNumber}: ${filePath}`,
+    );
+  }
 
-	const { frontmatter, content } = await parseHugoFile(filePath);
-	frontmatter.tags = tags;
+  const { frontmatter, content } = await parseHugoFile(filePath);
+  frontmatter.tags = tags;
 
-	await writeHugoFile({ filePath, frontmatter, content });
+  await writeHugoFile({ filePath, frontmatter, content });
 }

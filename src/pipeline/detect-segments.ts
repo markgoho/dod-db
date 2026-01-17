@@ -4,18 +4,18 @@
  * Fallback: Verbal markers in transcripts (for when audio unavailable)
  */
 
-import { join } from 'node:path';
+import { join } from "node:path";
 import {
-  SEGMENT_PATTERNS,
   INTRO_END_PATTERNS,
+  SEGMENT_PATTERNS,
   type SegmentType,
-} from '../config/segment-patterns.js';
+} from "../config/segment-patterns.js";
 
 /**
  * Available detection methods.
  * Single source of truth for segment detection methods.
  */
-export const DETECTION_METHODS = ['pattern', 'llm', 'manual', 'audio'] as const;
+export const DETECTION_METHODS = ["pattern", "llm", "manual", "audio"] as const;
 
 /**
  * How a segment was detected.
@@ -26,11 +26,13 @@ export type DetectionMethod = (typeof DETECTION_METHODS)[number];
  * Get audio duration in seconds using ffprobe.
  * Returns undefined if the file doesn't exist or ffprobe fails.
  */
-export async function getAudioDuration(videoId: string): Promise<number | undefined> {
-  const audioDir = join(process.cwd(), 'data', 'audio');
+export async function getAudioDuration(
+  videoId: string,
+): Promise<number | undefined> {
+  const audioDir = join(process.cwd(), "data", "audio");
 
   // Try common audio extensions
-  const extensions = ['.m4a', '.webm', '.mp3', '.wav'];
+  const extensions = [".m4a", ".webm", ".mp3", ".wav"];
 
   for (const extension of extensions) {
     const audioPath = join(audioDir, `${videoId}${extension}`);
@@ -39,13 +41,13 @@ export async function getAudioDuration(videoId: string): Promise<number | undefi
     if (await file.exists()) {
       try {
         const proc = Bun.spawn([
-          'ffprobe',
-          '-v',
-          'quiet',
-          '-show_entries',
-          'format=duration',
-          '-of',
-          'csv=p=0',
+          "ffprobe",
+          "-v",
+          "quiet",
+          "-show_entries",
+          "format=duration",
+          "-of",
+          "csv=p=0",
           audioPath,
         ]);
 
@@ -71,7 +73,7 @@ export interface Segment {
   type: SegmentType;
   startTimestamp: string; // "[HH:MM:SS.mmm]" format
   endTimestamp?: string; // undefined if segment extends to end of episode
-  confidence: 'auto' | 'verified';
+  confidence: "auto" | "verified";
   detectionMethod: DetectionMethod;
   matchedPattern?: string; // The pattern that triggered detection (for debugging)
 }
@@ -100,12 +102,13 @@ interface SegmentMatch {
  * Parse a transcript into structured lines.
  */
 export function parseTranscript(transcript: string): TranscriptLine[] {
-  const lines = transcript.split('\n');
+  const lines = transcript.split("\n");
   const parsed: TranscriptLine[] = [];
 
   // Pattern: [HH:MM:SS] or [HH:MM:SS.mmm] Speaker Name: text
   // Milliseconds are optional
-  const linePattern = /^\s*\[(\d{2}:\d{2}:\d{2}(?:\.\d{3})?)\]\s*([^:]+):\s*(.*)$/;
+  const linePattern =
+    /^\s*\[(\d{2}:\d{2}:\d{2}(?:\.\d{3})?)\]\s*([^:]+):\s*(.*)$/;
 
   for (const [index, rawLine] of lines.entries()) {
     if (!rawLine) continue;
@@ -116,8 +119,8 @@ export function parseTranscript(transcript: string): TranscriptLine[] {
     if (match && match[1] && match[2] && match[3]) {
       // Normalize timestamp to always include milliseconds
       let timestamp = match[1];
-      if (!timestamp.includes('.')) {
-        timestamp += '.000';
+      if (!timestamp.includes(".")) {
+        timestamp += ".000";
       }
       parsed.push({
         timestamp: `[${timestamp}]`,
@@ -136,11 +139,11 @@ export function parseTranscript(transcript: string): TranscriptLine[] {
  */
 export function timestampToSeconds(timestamp: string): number {
   // Remove brackets: "[00:01:23.456]" -> "00:01:23.456"
-  const clean = timestamp.replaceAll(/[[\]]/g, '');
-  const parts = clean.split(':');
-  const hours = Number.parseInt(parts[0] ?? '0', 10);
-  const minutes = Number.parseInt(parts[1] ?? '0', 10);
-  const seconds = Number.parseFloat(parts[2] ?? '0');
+  const clean = timestamp.replaceAll(/[[\]]/g, "");
+  const parts = clean.split(":");
+  const hours = Number.parseInt(parts[0] ?? "0", 10);
+  const minutes = Number.parseInt(parts[1] ?? "0", 10);
+  const seconds = Number.parseFloat(parts[2] ?? "0");
   return hours * 3600 + minutes * 60 + seconds;
 }
 
@@ -154,7 +157,7 @@ export function secondsToTimestamp(totalSeconds: number): string {
   const ms = Math.floor((seconds % 1) * 1000);
   const wholeSeconds = Math.floor(seconds);
 
-  return `[${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${wholeSeconds.toString().padStart(2, '0')}.${ms.toString().padStart(3, '0')}]`;
+  return `[${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${wholeSeconds.toString().padStart(2, "0")}.${ms.toString().padStart(3, "0")}]`;
 }
 
 /**
@@ -216,12 +219,12 @@ export async function detectSegmentsFromAudio({
   videoId: string;
   durationSeconds?: number;
 }): Promise<Segment[]> {
-  const audioDir = join(process.cwd(), 'data', 'audio');
-  const jinglePath = join(process.cwd(), 'data', 'jingles', 'jingle-pure.wav');
+  const audioDir = join(process.cwd(), "data", "audio");
+  const jinglePath = join(process.cwd(), "data", "jingles", "jingle-pure.wav");
 
   // Find audio file
-  const extensions = ['.m4a', '.webm', '.mp3', '.wav'];
-  let audioPath = '';
+  const extensions = [".m4a", ".webm", ".mp3", ".wav"];
+  let audioPath = "";
 
   for (const extension of extensions) {
     const path = join(audioDir, `${videoId}${extension}`);
@@ -233,29 +236,29 @@ export async function detectSegmentsFromAudio({
   }
 
   if (!audioPath) {
-    console.log('Audio file not found, skipping audio detection');
+    console.log("Audio file not found, skipping audio detection");
     return [];
   }
 
   // Check if jingle exists
   const jingleFile = Bun.file(jinglePath);
   if (!(await jingleFile.exists())) {
-    console.log('Jingle file not found, skipping audio detection');
+    console.log("Jingle file not found, skipping audio detection");
     return [];
   }
 
   // Run Python script to find jingles
   const proc = Bun.spawn(
     [
-      'uv',
-      'run',
-      join(process.cwd(), 'scripts', 'find_jingles_uv.py'),
+      "uv",
+      "run",
+      join(process.cwd(), "scripts", "find_jingles_uv.py"),
       jinglePath,
       audioPath,
     ],
     {
-      stdout: 'pipe',
-      stderr: 'ignore', // Suppress progress output
+      stdout: "pipe",
+      stderr: "ignore", // Suppress progress output
     },
   );
 
@@ -263,7 +266,7 @@ export async function detectSegmentsFromAudio({
   const exitCode = await proc.exited;
 
   if (exitCode !== 0) {
-    console.log('Audio detection failed, skipping');
+    console.log("Audio detection failed, skipping");
     return [];
   }
 
@@ -277,7 +280,7 @@ export async function detectSegmentsFromAudio({
 
   // Filter for >80% confidence and sort by timestamp
   const highConfidenceMatches = matches
-    .filter((match) => match.confidence >= 80)
+    .filter(match => match.confidence >= 80)
     .sort((a, b) => a.timestamp - b.timestamp);
 
   const segments: Segment[] = [];
@@ -286,12 +289,12 @@ export async function detectSegmentsFromAudio({
   const firstMatch = highConfidenceMatches[0];
   if (firstMatch) {
     segments.push({
-      type: 'intro',
-      startTimestamp: '[00:00:00.000]',
+      type: "intro",
+      startTimestamp: "[00:00:00.000]",
       endTimestamp: secondsToTimestamp(firstMatch.timestamp),
-      confidence: 'auto',
-      detectionMethod: 'audio',
-      matchedPattern: 'start-of-episode',
+      confidence: "auto",
+      detectionMethod: "audio",
+      matchedPattern: "start-of-episode",
     });
   }
 
@@ -307,11 +310,11 @@ export async function detectSegmentsFromAudio({
     }
 
     segments.push({
-      type: 'segment' as SegmentType,
+      type: "segment" as SegmentType,
       startTimestamp,
       endTimestamp,
-      confidence: 'auto' as const,
-      detectionMethod: 'audio' as const,
+      confidence: "auto" as const,
+      detectionMethod: "audio" as const,
       matchedPattern: `audio-jingle-${match.confidence.toFixed(1)}%`,
     });
   }
@@ -352,12 +355,12 @@ export function detectSegments(
   const introEndTime =
     introEnd ?? (firstMatch ? firstMatch.timestamp : episodeEndTimestamp);
   segments.push({
-    type: 'intro',
-    startTimestamp: '[00:00:00.000]',
+    type: "intro",
+    startTimestamp: "[00:00:00.000]",
     endTimestamp: introEndTime,
-    confidence: 'auto',
-    detectionMethod: 'pattern',
-    matchedPattern: 'start-of-episode',
+    confidence: "auto",
+    detectionMethod: "pattern",
+    matchedPattern: "start-of-episode",
   });
 
   // Process segment matches
@@ -377,8 +380,8 @@ export function detectSegments(
       type: match.type,
       startTimestamp: match.timestamp,
       endTimestamp,
-      confidence: 'auto',
-      detectionMethod: 'pattern',
+      confidence: "auto",
+      detectionMethod: "pattern",
       matchedPattern: match.matchedPattern,
     });
   }
@@ -409,7 +412,7 @@ export function getSegmentStats(segments: Segment[]): {
 
   for (const segment of segments) {
     byType[segment.type] = (byType[segment.type] || 0) + 1;
-    if (segment.confidence === 'auto') {
+    if (segment.confidence === "auto") {
       autoDetected++;
     } else {
       verified++;
@@ -429,5 +432,5 @@ export function getSegmentStats(segments: Segment[]): {
  */
 export function formatTimestamp(timestamp: string): string {
   // "[00:01:23.456]" -> "00:01:23"
-  return timestamp.replace(/\.\d{3}/, '').replaceAll(/[[\]]/g, '');
+  return timestamp.replace(/\.\d{3}/, "").replaceAll(/[[\]]/g, "");
 }

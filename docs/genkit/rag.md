@@ -135,7 +135,10 @@ npm install --save-dev @types/pdf-parse
 ### Add a local vector store to your configuration
 
 ```ts
-import { devLocalIndexerRef, devLocalVectorstore } from "@genkit-ai/dev-local-vectorstore";
+import {
+  devLocalIndexerRef,
+  devLocalVectorstore,
+} from "@genkit-ai/dev-local-vectorstore";
 import { googleAI } from "@genkit-ai/google-genai";
 import { z, genkit } from "genkit";
 
@@ -222,13 +225,17 @@ export const indexMenu = ai.defineFlow(
       filePath = path.resolve(filePath);
 
       // Read the pdf
-      const pdfTxt = await ai.run("extract-text", () => extractTextFromPdf(filePath));
+      const pdfTxt = await ai.run("extract-text", () =>
+        extractTextFromPdf(filePath),
+      );
 
       // Divide the pdf text into segments
-      const chunks = await ai.run("chunk-it", async () => chunk(pdfTxt, chunkingConfig));
+      const chunks = await ai.run("chunk-it", async () =>
+        chunk(pdfTxt, chunkingConfig),
+      );
 
       // Convert chunks of text into documents to store in the index.
-      const documents = chunks.map((text) => {
+      const documents = chunks.map(text => {
         return Document.fromText(text, { filePath });
       });
 
@@ -417,7 +424,15 @@ documents based on their relevance to the provided query using a predefined
 Vertex AI reranker.
 
 ```ts
-const FAKE_DOCUMENT_CONTENT = ["pythagorean theorem", "e=mc^2", "pi", "dinosaurs", "quantum mechanics", "pizza", "harry potter"];
+const FAKE_DOCUMENT_CONTENT = [
+  "pythagorean theorem",
+  "e=mc^2",
+  "pi",
+  "dinosaurs",
+  "quantum mechanics",
+  "pizza",
+  "harry potter",
+];
 
 export const rerankFlow = ai.defineFlow(
   {
@@ -431,7 +446,7 @@ export const rerankFlow = ai.defineFlow(
     ),
   },
   async ({ query }) => {
-    const documents = FAKE_DOCUMENT_CONTENT.map((text) => ({ content: text }));
+    const documents = FAKE_DOCUMENT_CONTENT.map(text => ({ content: text }));
 
     const rerankedDocuments = await ai.rerank({
       reranker: "vertexai/semantic-ranker-512",
@@ -439,7 +454,7 @@ export const rerankFlow = ai.defineFlow(
       documents,
     });
 
-    return rerankedDocuments.map((doc) => ({
+    return rerankedDocuments.map(doc => ({
       text: doc.content,
       score: doc.metadata.score,
     }));
@@ -467,7 +482,7 @@ export const customReranker = ai.defineReranker(
   },
   async (query, documents, options) => {
     // Your custom reranking logic here
-    const rerankedDocs = documents.map((doc) => {
+    const rerankedDocs = documents.map(doc => {
       const score = Math.random(); // Assign random scores for demonstration
       return {
         ...doc,
@@ -475,7 +490,9 @@ export const customReranker = ai.defineReranker(
       };
     });
 
-    return rerankedDocs.sort((a, b) => b.metadata.score - a.metadata.score).slice(0, options.k || 3);
+    return rerankedDocs
+      .sort((a, b) => b.metadata.score - a.metadata.score)
+      .slice(0, options.k || 3);
   },
 );
 ```

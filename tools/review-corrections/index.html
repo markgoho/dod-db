@@ -28,18 +28,52 @@
           </div>
         </div>
 
-        <div style="margin-top: 24px; padding: 16px; background: rgba(255,255,255,0.9); border-radius: 8px;">
-          <label style="display: block; font-weight: 600; margin-bottom: 8px; color: #1f2937;">
+        <div
+          style="
+            margin-top: 24px;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+          "
+        >
+          <label
+            style="
+              display: block;
+              font-weight: 600;
+              margin-bottom: 8px;
+              color: #1f2937;
+            "
+          >
             🎙️ Audio Player
           </label>
-          <div id="audioStatus" style="font-size: 13px; color: #6b7280; margin-bottom: 8px;">
+          <div
+            id="audioStatus"
+            style="font-size: 13px; color: #6b7280; margin-bottom: 8px"
+          >
             Loading audio for current candidate...
           </div>
-          <audio id="audioPlayer" controls style="width: 100%; display: none;"></audio>
-          <details style="margin-top: 8px;">
-            <summary style="cursor: pointer; font-size: 13px; color: #6b7280;">Manual upload (if auto-load fails)</summary>
-            <input type="file" id="audioFile" accept="audio/*"
-                   style="width: 100%; padding: 8px; border: 2px solid #e5e7eb; border-radius: 6px; background: white; margin-top: 8px;" />
+          <audio
+            id="audioPlayer"
+            controls
+            style="width: 100%; display: none"
+          ></audio>
+          <details style="margin-top: 8px">
+            <summary style="cursor: pointer; font-size: 13px; color: #6b7280">
+              Manual upload (if auto-load fails)
+            </summary>
+            <input
+              type="file"
+              id="audioFile"
+              accept="audio/*"
+              style="
+                width: 100%;
+                padding: 8px;
+                border: 2px solid #e5e7eb;
+                border-radius: 6px;
+                background: white;
+                margin-top: 8px;
+              "
+            />
           </details>
         </div>
       </header>

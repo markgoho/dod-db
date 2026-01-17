@@ -1,7 +1,7 @@
-import { writeToFile } from '../storage/file.js';
-import { correctTranscript } from './correct.js';
-import { identifySpeakers } from './identify-speakers.js';
-import { transcribeAudio } from './transcribe.js';
+import { writeToFile } from "../storage/file.js";
+import { correctTranscript } from "./correct.js";
+import { identifySpeakers } from "./identify-speakers.js";
+import { transcribeAudio } from "./transcribe.js";
 
 /**
  * Commit a pipeline stage to git with descriptive message.
@@ -10,19 +10,22 @@ import { transcribeAudio } from './transcribe.js';
  * @param stageName - Name of the pipeline stage (e.g., 'transcription')
  * @param filePath - Path to the file to commit
  */
-async function _commitStage(stageName: string, filePath: string): Promise<void> {
+async function _commitStage(
+  stageName: string,
+  filePath: string,
+): Promise<void> {
   try {
     // Add file to git
-    const addProc = Bun.spawn(['git', 'add', filePath]);
+    const addProc = Bun.spawn(["git", "add", filePath]);
     await addProc.exited;
 
     // Commit with descriptive message
     const commitProc = Bun.spawn([
-      'git',
-      'commit',
-      '-m',
+      "git",
+      "commit",
+      "-m",
       `Transcript ${stageName} complete`,
-      '--author=Pipeline <pipeline@dod-db>',
+      "--author=Pipeline <pipeline@dod-db>",
     ]);
     await commitProc.exited;
 
@@ -44,24 +47,24 @@ export async function processTranscript({
   transcriptUrl: string;
   metadata?: { title?: string; description?: string };
 }): Promise<void> {
-  console.log('Transcribing Audio');
+  console.log("Transcribing Audio");
   const transcription = await transcribeAudio(transcriptUrl);
 
-  console.log('Correcting Transcript');
+  console.log("Correcting Transcript");
   const correctedTranscript = await correctTranscript(transcription);
 
-  console.log('Identifying Speakers');
+  console.log("Identifying Speakers");
   const { transcript: transcriptWithNames } = await identifySpeakers(
     correctedTranscript,
     metadata,
   );
 
-  console.log('Writing to file');
-  await writeToFile('corrected_transcript.txt', transcriptWithNames);
+  console.log("Writing to file");
+  await writeToFile("corrected_transcript.txt", transcriptWithNames);
 
-  console.log('Done!');
+  console.log("Done!");
 }
 
-export { transcribeAudio } from './transcribe.js';
-export { correctTranscript } from './correct.js';
-export { identifySpeakers } from './identify-speakers.js';
+export { correctTranscript } from "./correct.js";
+export { identifySpeakers } from "./identify-speakers.js";
+export { transcribeAudio } from "./transcribe.js";

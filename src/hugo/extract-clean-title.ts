@@ -12,21 +12,21 @@
  * - 'Episode 47, Introducing History Daily' -> 'Introducing History Daily'
  */
 export function extractCleanTitle(fullTitle: string): string {
-	// Try to extract quoted portion
-	const quotedMatch = /"([^"]+)"/.exec(fullTitle);
-	if (quotedMatch?.[1]) {
-		return quotedMatch[1];
-	}
+  // Try to extract quoted portion
+  const quotedMatch = /"([^"]+)"/.exec(fullTitle);
+  if (quotedMatch?.[1]) {
+    return quotedMatch[1];
+  }
 
-	// No quotes - clean up the title
-	let title = fullTitle;
+  // No quotes - clean up the title
+  let title = fullTitle;
 
-	// Strip leading "Episode N," or "Episode N:" patterns
-	title = title.replace(/^Episode\s+\d+[,:]\s*/i, '');
+  // Strip leading "Episode N," or "Episode N:" patterns
+  title = title.replace(/^Episode\s+\d+[,:]\s*/i, "");
 
-	// Strip trailing ": With Name" or "with Name" patterns
-	// (guest names are added programmatically from speakers array)
-	title = title.replace(/:?\s*[Ww]ith\s+[\w\s.]+$/, '');
+  // Strip trailing ": With Name" or "with Name" patterns
+  // (guest names are added programmatically from speakers array)
+  title = title.replace(/:?\s*[Ww]ith\s+[\w\s.]+$/, "");
 
-	return title.trim();
+  return title.trim();
 }

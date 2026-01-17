@@ -2,10 +2,14 @@
  * Parallel correction processing with concurrency control.
  */
 
-import { ai } from '../../src/ai.js';
-import { correctionPrompt } from '../../src/prompts/correction.js';
-import { PARALLEL_CONFIG, type ConcurrencyLevel, type ModelId } from '../config/experiment-config.js';
-import type { TokenUsage } from './cost-calculator.js';
+import { ai } from "../../src/ai.js";
+import { correctionPrompt } from "../../src/prompts/correction.js";
+import {
+  PARALLEL_CONFIG,
+  type ConcurrencyLevel,
+  type ModelId,
+} from "../config/experiment-config.js";
+import type { TokenUsage } from "./cost-calculator.js";
 
 export interface ChunkResult {
   index: number;
@@ -45,7 +49,7 @@ class Semaphore {
       return;
     }
 
-    return new Promise<void>((resolve) => {
+    return new Promise<void>(resolve => {
       this.queue.push(() => {
         this.running++;
         resolve();
@@ -64,7 +68,7 @@ class Semaphore {
  * Sleep for a given duration.
  */
 function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 /**
@@ -101,7 +105,7 @@ async function processChunk(
 
       return {
         index,
-        output: response.text ?? '',
+        output: response.text ?? "",
         tokens,
         durationMs,
         retryCount,
@@ -113,7 +117,9 @@ async function processChunk(
       if (retryCount <= maxRetries) {
         // Exponential backoff
         const delay = retryDelay * 2 ** (retryCount - 1);
-        console.log(`  Chunk ${index + 1}: Retry ${retryCount}/${maxRetries} after ${delay}ms`);
+        console.log(
+          `  Chunk ${index + 1}: Retry ${retryCount}/${maxRetries} after ${delay}ms`,
+        );
         await sleep(delay);
       }
     }
@@ -123,11 +129,11 @@ async function processChunk(
   const durationMs = performance.now() - startTime;
   return {
     index,
-    output: '',
+    output: "",
     tokens: { inputTokens: 0, outputTokens: 0 },
     durationMs,
     retryCount,
-    error: lastError?.message ?? 'Unknown error',
+    error: lastError?.message ?? "Unknown error",
   };
 }
 
@@ -141,7 +147,7 @@ export async function correctChunksParallel(
   config: ParallelConfig,
 ): Promise<ParallelCorrectionResult> {
   const concurrencyLimit =
-    config.concurrency === 'full' ? chunks.length : config.concurrency;
+    config.concurrency === "full" ? chunks.length : config.concurrency;
 
   const semaphore = new Semaphore(concurrencyLimit);
   const results: ChunkResult[] = Array.from({ length: chunks.length });
@@ -177,7 +183,7 @@ export async function correctChunksParallel(
   // Calculate totals
   const totalProcessingMs = results.reduce((sum, r) => sum + r.durationMs, 0);
   const retries = results.reduce((sum, r) => sum + r.retryCount, 0);
-  const errors = results.filter((r) => r.error).length;
+  const errors = results.filter(r => r.error).length;
 
   return {
     chunks: results,
@@ -192,5 +198,5 @@ export async function correctChunksParallel(
  * Get ordered outputs from parallel results for deduplication.
  */
 export function getOrderedOutputs(result: ParallelCorrectionResult): string[] {
-  return result.chunks.map((c) => c.output);
+  return result.chunks.map(c => c.output);
 }

@@ -27,8 +27,8 @@ export interface EpisodeSegment {
   type: string;
   startTimestamp: string;
   endTimestamp: string | null;
-  confidence: 'auto' | 'verified';
-  detectionMethod?: 'pattern' | 'llm' | 'manual' | 'audio';
+  confidence: "auto" | "verified";
+  detectionMethod?: "pattern" | "llm" | "manual" | "audio";
 }
 
 // Segment metadata (types, colors, labels)
@@ -70,7 +70,7 @@ export interface AudioPlayerOptions {
 // Job status types
 export interface JobStatus {
   jobId: string;
-  status: 'running' | 'completed' | 'failed';
+  status: "running" | "completed" | "failed";
   logs?: string;
 }
 

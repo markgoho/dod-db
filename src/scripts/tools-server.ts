@@ -9,44 +9,44 @@
  *   bun run src/scripts/tools-server.ts
  */
 
+import * as path from "node:path";
 import {
-  loadTracker,
-  saveTracker,
-  getPendingCandidates,
+  SEGMENT_COLORS,
+  SEGMENT_LABELS,
+  type SegmentType,
+} from "../config/segment-patterns.js";
+import type { TagCategory, TagDefinition } from "../config/tag-vocabulary.js";
+import { TAG_CATEGORIES, tagVocabulary } from "../config/tag-vocabulary.js";
+import { youtubeConfig } from "../config/youtube.js";
+import { addTagToEpisodes } from "../pipeline/add-tag-to-episodes.js";
+import {
+  addTagToVocabulary,
+  deleteTagFromVocabulary,
+  findTag,
+  tagExists,
+  updateTagInVocabulary,
+  type AddTagParams as AddTagParameters,
+  type UpdateTagParams as UpdateTagParameters,
+} from "../pipeline/add-tag-to-vocabulary.js";
+import {
   approveCandidate,
+  getPendingCandidates,
+  loadTracker,
   rejectCandidate,
+  saveTracker,
   type CorrectionCandidate,
-} from '../pipeline/correction-tracker.js';
+} from "../pipeline/correction-tracker.js";
+import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
+import { reprocessEpisodes } from "../pipeline/reprocess-episodes.js";
 import {
+  getProcessedVideosWithNumbers,
+  getVideoById,
   loadProcessedVideos,
   saveProcessedVideos,
   updateVideoSegments,
-  getVideoById,
-  getProcessedVideosWithNumbers,
   type EpisodeSegment,
-} from '../storage/processed-videos.js';
-import { generateHugoEpisode } from '../pipeline/generate-hugo-episode.js';
-import { tagVocabulary, TAG_CATEGORIES } from '../config/tag-vocabulary.js';
-import { reprocessEpisodes } from '../pipeline/reprocess-episodes.js';
-import { addTagToEpisodes } from '../pipeline/add-tag-to-episodes.js';
-import {
-  addTagToVocabulary,
-  tagExists,
-  updateTagInVocabulary,
-  deleteTagFromVocabulary,
-  findTag,
-  type AddTagParams as AddTagParameters,
-  type UpdateTagParams as UpdateTagParameters,
-} from '../pipeline/add-tag-to-vocabulary.js';
-import {
-  SEGMENT_LABELS,
-  SEGMENT_COLORS,
-  type SegmentType,
-} from '../config/segment-patterns.js';
-import { youtubeConfig } from '../config/youtube.js';
-import type { TagDefinition, TagCategory } from '../config/tag-vocabulary.js';
-import { removeTagFromEpisode } from '../utils/hugo-frontmatter.js';
-import * as path from 'node:path';
+} from "../storage/processed-videos.js";
+import { removeTagFromEpisode } from "../utils/hugo-frontmatter.js";
 
 const PORT = 3001; // API server on separate port
 
@@ -69,7 +69,7 @@ const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 // Migration job tracking
 interface MigrationJob {
   id: string;
-  status: 'running' | 'completed' | 'failed';
+  status: "running" | "completed" | "failed";
   logs: string[];
   startTime: number;
   endTime?: number;
@@ -84,17 +84,17 @@ async function addToCorrectionFile(
 ): Promise<void> {
   const correctionsPath = path.join(
     process.cwd(),
-    'src',
-    'config',
-    'corrections.ts',
+    "src",
+    "config",
+    "corrections.ts",
   );
 
   const file = await Bun.file(correctionsPath).text();
 
   // Find the insertion point (before the closing ];)
-  const insertionPoint = file.lastIndexOf('];');
+  const insertionPoint = file.lastIndexOf("];");
   if (insertionPoint === -1) {
-    throw new Error('Could not find insertion point in corrections.ts');
+    throw new Error("Could not find insertion point in corrections.ts");
   }
 
   // Format the new rule
@@ -145,7 +145,7 @@ async function computeTagStats(): Promise<TagStats[]> {
         statsMap.set(canonicalLower, {
           episodeCount: 0,
           totalMentions: 0,
-          category: vocab?.category || 'unknown',
+          category: vocab?.category || "unknown",
           variations: vocab?.variations || [],
         });
       }
@@ -186,7 +186,7 @@ async function runMigrationWithTagTracking(
   const jobId = `migration-${Date.now()}`;
   const job: MigrationJob = {
     id: jobId,
-    status: 'running',
+    status: "running",
     logs: [],
     startTime: Date.now(),
   };
@@ -198,15 +198,15 @@ async function runMigrationWithTagTracking(
   const originalWarn = console.warn;
 
   console.log = (...arguments_) => {
-    job.logs.push(arguments_.join(' ') + '\n');
+    job.logs.push(arguments_.join(" ") + "\n");
     originalLog(...arguments_);
   };
   console.error = (...arguments_) => {
-    job.logs.push('[ERROR] ' + arguments_.join(' ') + '\n');
+    job.logs.push("[ERROR] " + arguments_.join(" ") + "\n");
     originalError(...arguments_);
   };
   console.warn = (...arguments_) => {
-    job.logs.push('[WARN] ' + arguments_.join(' ') + '\n');
+    job.logs.push("[WARN] " + arguments_.join(" ") + "\n");
     originalWarn(...arguments_);
   };
 
@@ -223,16 +223,17 @@ async function runMigrationWithTagTracking(
 
         // Show tag-specific results
         job.logs.push(
-          `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`, `📊 "${trackTag}" Results:\n`
-        , `   Found in ${result.episodesWithTag} episodes\n`, `   Total mentions: ${result.totalMentions}\n`);
+          `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`,
+          `📊 "${trackTag}" Results:\n`,
+          `   Found in ${result.episodesWithTag} episodes\n`,
+          `   Total mentions: ${result.totalMentions}\n`,
+        );
         if (result.episodesWithTag > 0) {
           job.logs.push(
             `   Average: ${(result.totalMentions / result.episodesWithTag).toFixed(1)} mentions/episode\n`,
           );
         }
-        job.logs.push(
-          `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`,
-        );
+        job.logs.push(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
       } else {
         // Full reprocessing of all tags
         await reprocessEpisodes({ force: true, skipLlm, verbose: false });
@@ -247,11 +248,11 @@ async function runMigrationWithTagTracking(
       }
       job.logs.push(`✓ Front matter updated\n`);
 
-      job.status = 'completed';
+      job.status = "completed";
       job.exitCode = 0;
     } catch (error) {
       job.logs.push(`\n[ERROR] Migration failed: ${error}\n`);
-      job.status = 'failed';
+      job.status = "failed";
       job.exitCode = 1;
     } finally {
       job.endTime = Date.now();
@@ -272,22 +273,19 @@ async function addPatternToConfig(
   segmentType: string,
   pattern: string,
 ): Promise<void> {
-  const configPath = path.join(
-    process.cwd(),
-    'src/config/segment-patterns.ts',
-  );
+  const configPath = path.join(process.cwd(), "src/config/segment-patterns.ts");
   const file = Bun.file(configPath);
   let content = await file.text();
 
   // Escape special regex characters in the pattern
   const escapedPattern = pattern
     .replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`)
-    .replaceAll('\'', String.raw`\'`);
+    .replaceAll("'", String.raw`\'`);
 
   // Find the array for this segment type and add the new pattern
   const patterns = [
-    new RegExp(String.raw`('${segmentType}':\s*\[)([^\]]*)`, 's'),
-    new RegExp(String.raw`(${segmentType}:\s*\[)([^\]]*)`, 's'),
+    new RegExp(String.raw`('${segmentType}':\s*\[)([^\]]*)`, "s"),
+    new RegExp(String.raw`(${segmentType}:\s*\[)([^\]]*)`, "s"),
   ];
 
   let found = false;
@@ -305,11 +303,11 @@ async function addPatternToConfig(
       }
 
       const separator =
-        existingPatterns.endsWith(',') || existingPatterns === ''
-          ? '\n    '
-          : ',\n    ';
+        existingPatterns.endsWith(",") || existingPatterns === ""
+          ? "\n    "
+          : ",\n    ";
       const newContent =
-        match[1] + existingPatterns + separator + newPattern + ',\n  ';
+        match[1] + existingPatterns + separator + newPattern + ",\n  ";
       content = content.replace(regex, newContent);
       found = true;
       break;
@@ -331,7 +329,7 @@ async function getAudioFilePath(videoId: string): Promise<string | null> {
   const audioDir = youtubeConfig.audioDirectory;
 
   // Try common extensions
-  const extensions = ['.webm', '.m4a', '.mp3', '.wav'];
+  const extensions = [".webm", ".m4a", ".mp3", ".wav"];
 
   for (const extension of extensions) {
     const filePath = path.join(audioDir, `${videoId}${extension}`);
@@ -352,13 +350,13 @@ const _server = Bun.serve({
 
     // CORS headers for cross-origin requests from static file server
     const corsHeaders = {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
     };
 
     // Handle preflight OPTIONS requests
-    if (request.method === 'OPTIONS') {
+    if (request.method === "OPTIONS") {
       return new Response(null, { headers: corsHeaders });
     }
 
@@ -368,37 +366,40 @@ const _server = Bun.serve({
     };
 
     // Only handle /api/* routes
-    if (!url.pathname.startsWith('/api/')) {
+    if (!url.pathname.startsWith("/api/")) {
       return jsonResponse(
-        { error: 'Not Found - This is an API-only server. Serve HTML files with: cd tools && bun index.html' },
-        404
+        {
+          error:
+            "Not Found - This is an API-only server. Serve HTML files with: cd tools && bun index.html",
+        },
+        404,
       );
     }
 
     // Review Corrections API: Get pending candidates
-    if (url.pathname === '/api/review-corrections/candidates') {
+    if (url.pathname === "/api/review-corrections/candidates") {
       const tracker = await loadTracker();
       const pending = getPendingCandidates(tracker);
       return jsonResponse(pending);
     }
 
     // Review Corrections API: Approve a candidate
-    if (url.pathname.startsWith('/api/review-corrections/approve/')) {
+    if (url.pathname.startsWith("/api/review-corrections/approve/")) {
       const key = decodeURIComponent(
-        url.pathname.replace('/api/review-corrections/approve/', ''),
+        url.pathname.replace("/api/review-corrections/approve/", ""),
       );
       const tracker = await loadTracker();
 
       const candidate = tracker.candidates[key];
       if (!candidate) {
-        return jsonResponse({ error: 'Candidate not found' }, 404);
+        return jsonResponse({ error: "Candidate not found" }, 404);
       }
 
       try {
         // Get edited values from query params (if provided)
         const searchParameters = new URL(request.url).searchParams;
-        const editedOriginal = searchParameters.get('original');
-        const editedCorrected = searchParameters.get('corrected');
+        const editedOriginal = searchParameters.get("original");
+        const editedCorrected = searchParameters.get("corrected");
 
         // Use edited values if provided, otherwise use candidate's values
         const finalCandidate = {
@@ -411,14 +412,14 @@ const _server = Bun.serve({
         await addToCorrectionFile(finalCandidate);
 
         // Mark as approved
-        approveCandidate(tracker, key, 'UI Review');
+        approveCandidate(tracker, key, "UI Review");
         await saveTracker(tracker);
 
         return jsonResponse({ success: true });
       } catch (error) {
         return jsonResponse(
           {
-            error: error instanceof Error ? error.message : 'Failed to approve',
+            error: error instanceof Error ? error.message : "Failed to approve",
           },
           500,
         );
@@ -426,17 +427,17 @@ const _server = Bun.serve({
     }
 
     // Review Corrections API: Reject a candidate
-    if (url.pathname.startsWith('/api/review-corrections/reject/')) {
+    if (url.pathname.startsWith("/api/review-corrections/reject/")) {
       const key = decodeURIComponent(
-        url.pathname.replace('/api/review-corrections/reject/', ''),
+        url.pathname.replace("/api/review-corrections/reject/", ""),
       );
       const tracker = await loadTracker();
 
       if (!tracker.candidates[key]) {
-        return jsonResponse({ error: 'Candidate not found' }, 404);
+        return jsonResponse({ error: "Candidate not found" }, 404);
       }
 
-      rejectCandidate(tracker, key, 'UI Review');
+      rejectCandidate(tracker, key, "UI Review");
       await saveTracker(tracker);
 
       return jsonResponse({ success: true });
@@ -447,31 +448,31 @@ const _server = Bun.serve({
     // ========================================
 
     // Tag Vocabulary API: Get all processed episodes with tags
-    if (url.pathname === '/api/tag-vocabulary/episodes') {
+    if (url.pathname === "/api/tag-vocabulary/episodes") {
       const videos = await loadProcessedVideos();
       return jsonResponse(videos);
     }
 
     // Tag Vocabulary API: Get tag vocabulary
-    if (url.pathname === '/api/tag-vocabulary/vocabulary') {
+    if (url.pathname === "/api/tag-vocabulary/vocabulary") {
       return jsonResponse(tagVocabulary);
     }
 
     // Tag Vocabulary API: Get available categories
-    if (url.pathname === '/api/tag-vocabulary/categories') {
+    if (url.pathname === "/api/tag-vocabulary/categories") {
       return jsonResponse(TAG_CATEGORIES);
     }
 
     // Tag Vocabulary API: Get tag statistics
-    if (url.pathname === '/api/tag-vocabulary/tag-stats') {
+    if (url.pathname === "/api/tag-vocabulary/tag-stats") {
       const stats = await computeTagStats();
       return jsonResponse(stats);
     }
 
     // Tag Vocabulary API: Add tag to vocabulary
     if (
-      url.pathname === '/api/tag-vocabulary/vocabulary/add' &&
-      request.method === 'POST'
+      url.pathname === "/api/tag-vocabulary/vocabulary/add" &&
+      request.method === "POST"
     ) {
       try {
         const body = (await request.json()) as {
@@ -485,24 +486,24 @@ const _server = Bun.serve({
           body;
 
         // Validate required fields
-        if (!canonical || typeof canonical !== 'string') {
+        if (!canonical || typeof canonical !== "string") {
           return jsonResponse(
-            { error: 'canonical is required and must be a string' },
+            { error: "canonical is required and must be a string" },
             400,
           );
         }
 
-        if (!category || typeof category !== 'string') {
+        if (!category || typeof category !== "string") {
           return jsonResponse(
-            { error: 'category is required and must be a string' },
+            { error: "category is required and must be a string" },
             400,
           );
         }
 
         // Validate llmVerify + description dependency
-        if (llmVerify && (!description || typeof description !== 'string')) {
+        if (llmVerify && (!description || typeof description !== "string")) {
           return jsonResponse(
-            { error: 'description is required when llmVerify is true' },
+            { error: "description is required when llmVerify is true" },
             400,
           );
         }
@@ -510,11 +511,11 @@ const _server = Bun.serve({
         // Parse variations (comma-separated string or array)
         let variationsArray: string[] = [];
         if (variations) {
-          if (typeof variations === 'string') {
+          if (typeof variations === "string") {
             variationsArray = variations
-              .split(',')
-              .map((v) => v.trim())
-              .filter((v) => v.length > 0);
+              .split(",")
+              .map(v => v.trim())
+              .filter(v => v.length > 0);
           } else if (Array.isArray(variations)) {
             variationsArray = variations;
           }
@@ -554,10 +555,10 @@ const _server = Bun.serve({
           jobId,
         });
       } catch (error) {
-        console.error('Error adding tag:', error);
+        console.error("Error adding tag:", error);
         return jsonResponse(
           {
-            error: error instanceof Error ? error.message : 'Failed to add tag',
+            error: error instanceof Error ? error.message : "Failed to add tag",
           },
           500,
         );
@@ -566,19 +567,19 @@ const _server = Bun.serve({
 
     // Tag Vocabulary API: Start migration
     if (
-      url.pathname === '/api/tag-vocabulary/migrate' &&
-      request.method === 'POST'
+      url.pathname === "/api/tag-vocabulary/migrate" &&
+      request.method === "POST"
     ) {
       try {
         const jobId = await runMigrationWithTagTracking();
-        return jsonResponse({ jobId, status: 'started' });
+        return jsonResponse({ jobId, status: "started" });
       } catch (error) {
         return jsonResponse(
           {
             error:
               error instanceof Error
                 ? error.message
-                : 'Failed to start migration',
+                : "Failed to start migration",
           },
           500,
         );
@@ -586,21 +587,21 @@ const _server = Bun.serve({
     }
 
     // Tag Vocabulary API: Get migration status
-    if (url.pathname.startsWith('/api/tag-vocabulary/migrate-status/')) {
+    if (url.pathname.startsWith("/api/tag-vocabulary/migrate-status/")) {
       const jobId = url.pathname.replace(
-        '/api/tag-vocabulary/migrate-status/',
-        '',
+        "/api/tag-vocabulary/migrate-status/",
+        "",
       );
       const job = migrationJobs.get(jobId);
 
       if (!job) {
-        return jsonResponse({ error: 'Job not found' }, 404);
+        return jsonResponse({ error: "Job not found" }, 404);
       }
 
       return jsonResponse({
         id: job.id,
         status: job.status,
-        logs: job.logs.join(''),
+        logs: job.logs.join(""),
         startTime: job.startTime,
         endTime: job.endTime,
         exitCode: job.exitCode,
@@ -609,19 +610,19 @@ const _server = Bun.serve({
 
     // Tag Vocabulary API: Update a tag in vocabulary
     if (
-      url.pathname.startsWith('/api/tag-vocabulary/vocabulary/update/') &&
-      request.method === 'PUT'
+      url.pathname.startsWith("/api/tag-vocabulary/vocabulary/update/") &&
+      request.method === "PUT"
     ) {
       try {
         const originalCanonical = decodeURIComponent(
-          url.pathname.replace('/api/tag-vocabulary/vocabulary/update/', ''),
+          url.pathname.replace("/api/tag-vocabulary/vocabulary/update/", ""),
         );
         const body = (await request.json()) as UpdateTagParameters;
 
         // Check if status is changing to 'accepted' (for auto-reprocessing)
         const existingTag = findTag(originalCanonical);
-        const wasProposed = existingTag?.status === 'proposed';
-        const isBeingAccepted = body.status === 'accepted';
+        const wasProposed = existingTag?.status === "proposed";
+        const isBeingAccepted = body.status === "accepted";
 
         await updateTagInVocabulary(originalCanonical, body);
 
@@ -645,11 +646,11 @@ const _server = Bun.serve({
           message: `Tag "${originalCanonical}" updated successfully`,
         });
       } catch (error) {
-        console.error('Error updating tag:', error);
+        console.error("Error updating tag:", error);
         return jsonResponse(
           {
             error:
-              error instanceof Error ? error.message : 'Failed to update tag',
+              error instanceof Error ? error.message : "Failed to update tag",
           },
           500,
         );
@@ -658,23 +659,20 @@ const _server = Bun.serve({
 
     // Tag Vocabulary API: Approve a proposed tag
     if (
-      url.pathname.startsWith('/api/tag-vocabulary/vocabulary/approve/') &&
-      request.method === 'POST'
+      url.pathname.startsWith("/api/tag-vocabulary/vocabulary/approve/") &&
+      request.method === "POST"
     ) {
       try {
         const canonical = decodeURIComponent(
-          url.pathname.replace('/api/tag-vocabulary/vocabulary/approve/', ''),
+          url.pathname.replace("/api/tag-vocabulary/vocabulary/approve/", ""),
         );
         const tag = findTag(canonical);
 
         if (!tag) {
-          return jsonResponse(
-            { error: `Tag "${canonical}" not found` },
-            404,
-          );
+          return jsonResponse({ error: `Tag "${canonical}" not found` }, 404);
         }
 
-        await updateTagInVocabulary(canonical, { status: 'accepted' });
+        await updateTagInVocabulary(canonical, { status: "accepted" });
 
         // Invalidate stats cache
         statsCache.data = null;
@@ -688,11 +686,11 @@ const _server = Bun.serve({
           jobId,
         });
       } catch (error) {
-        console.error('Error approving tag:', error);
+        console.error("Error approving tag:", error);
         return jsonResponse(
           {
             error:
-              error instanceof Error ? error.message : 'Failed to approve tag',
+              error instanceof Error ? error.message : "Failed to approve tag",
           },
           500,
         );
@@ -701,23 +699,20 @@ const _server = Bun.serve({
 
     // Tag Vocabulary API: Reject a proposed tag
     if (
-      url.pathname.startsWith('/api/tag-vocabulary/vocabulary/reject/') &&
-      request.method === 'POST'
+      url.pathname.startsWith("/api/tag-vocabulary/vocabulary/reject/") &&
+      request.method === "POST"
     ) {
       try {
         const canonical = decodeURIComponent(
-          url.pathname.replace('/api/tag-vocabulary/vocabulary/reject/', ''),
+          url.pathname.replace("/api/tag-vocabulary/vocabulary/reject/", ""),
         );
         const tag = findTag(canonical);
 
         if (!tag) {
-          return jsonResponse(
-            { error: `Tag "${canonical}" not found` },
-            404,
-          );
+          return jsonResponse({ error: `Tag "${canonical}" not found` }, 404);
         }
 
-        await updateTagInVocabulary(canonical, { status: 'rejected' });
+        await updateTagInVocabulary(canonical, { status: "rejected" });
 
         // Remove tag from all episodes in processed-videos.json
         console.log(`Removing "${canonical}" from all episodes...`);
@@ -729,7 +724,7 @@ const _server = Bun.serve({
             const initialLength = video.tags.length;
             // Remove this tag (case-insensitive)
             video.tags = video.tags.filter(
-              (t) => t.tag.toLowerCase() !== canonical.toLowerCase(),
+              t => t.tag.toLowerCase() !== canonical.toLowerCase(),
             );
             if (video.tags.length < initialLength) {
               affectedVideos.push(video);
@@ -739,11 +734,15 @@ const _server = Bun.serve({
 
         // Save updated videos
         await saveProcessedVideos(videos);
-        console.log(`✓ Removed "${canonical}" from ${affectedVideos.length} episodes`);
+        console.log(
+          `✓ Removed "${canonical}" from ${affectedVideos.length} episodes`,
+        );
 
         // Update Hugo frontmatter ONLY for affected episodes (surgical update)
         if (affectedVideos.length > 0) {
-          console.log(`Updating Hugo frontmatter for ${affectedVideos.length} episodes...`);
+          console.log(
+            `Updating Hugo frontmatter for ${affectedVideos.length} episodes...`,
+          );
           for (const video of affectedVideos) {
             const removed = await removeTagFromEpisode({
               video,
@@ -765,11 +764,11 @@ const _server = Bun.serve({
           message: `Tag "${canonical}" rejected and removed from ${affectedVideos.length} episodes`,
         });
       } catch (error) {
-        console.error('Error rejecting tag:', error);
+        console.error("Error rejecting tag:", error);
         return jsonResponse(
           {
             error:
-              error instanceof Error ? error.message : 'Failed to reject tag',
+              error instanceof Error ? error.message : "Failed to reject tag",
           },
           500,
         );
@@ -778,21 +777,18 @@ const _server = Bun.serve({
 
     // Tag Vocabulary API: Reprocess a single tag
     if (
-      url.pathname.startsWith('/api/tag-vocabulary/reprocess-tag/') &&
-      request.method === 'POST'
+      url.pathname.startsWith("/api/tag-vocabulary/reprocess-tag/") &&
+      request.method === "POST"
     ) {
       try {
         const canonical = decodeURIComponent(
-          url.pathname.replace('/api/tag-vocabulary/reprocess-tag/', ''),
+          url.pathname.replace("/api/tag-vocabulary/reprocess-tag/", ""),
         );
 
         // Verify tag exists
         const tag = findTag(canonical);
         if (!tag) {
-          return jsonResponse(
-            { error: `Tag "${canonical}" not found` },
-            404,
-          );
+          return jsonResponse({ error: `Tag "${canonical}" not found` }, 404);
         }
 
         // Start reprocessing for this tag (with LLM verification enabled)
@@ -804,11 +800,13 @@ const _server = Bun.serve({
           jobId,
         });
       } catch (error) {
-        console.error('Error reprocessing tag:', error);
+        console.error("Error reprocessing tag:", error);
         return jsonResponse(
           {
             error:
-              error instanceof Error ? error.message : 'Failed to reprocess tag',
+              error instanceof Error
+                ? error.message
+                : "Failed to reprocess tag",
           },
           500,
         );
@@ -817,12 +815,12 @@ const _server = Bun.serve({
 
     // Tag Vocabulary API: Delete a tag from vocabulary
     if (
-      url.pathname.startsWith('/api/tag-vocabulary/vocabulary/delete/') &&
-      request.method === 'DELETE'
+      url.pathname.startsWith("/api/tag-vocabulary/vocabulary/delete/") &&
+      request.method === "DELETE"
     ) {
       try {
         const canonical = decodeURIComponent(
-          url.pathname.replace('/api/tag-vocabulary/vocabulary/delete/', ''),
+          url.pathname.replace("/api/tag-vocabulary/vocabulary/delete/", ""),
         );
 
         // Delete from vocabulary file
@@ -838,7 +836,7 @@ const _server = Bun.serve({
             const initialLength = video.tags.length;
             // Remove this tag (case-insensitive)
             video.tags = video.tags.filter(
-              (t) => t.tag.toLowerCase() !== canonical.toLowerCase(),
+              t => t.tag.toLowerCase() !== canonical.toLowerCase(),
             );
             if (video.tags.length < initialLength) {
               affectedVideos.push(video);
@@ -848,11 +846,15 @@ const _server = Bun.serve({
 
         // Save updated videos
         await saveProcessedVideos(videos);
-        console.log(`✓ Removed "${canonical}" from ${affectedVideos.length} episodes`);
+        console.log(
+          `✓ Removed "${canonical}" from ${affectedVideos.length} episodes`,
+        );
 
         // Update Hugo frontmatter ONLY for affected episodes (surgical update)
         if (affectedVideos.length > 0) {
-          console.log(`Updating Hugo frontmatter for ${affectedVideos.length} episodes...`);
+          console.log(
+            `Updating Hugo frontmatter for ${affectedVideos.length} episodes...`,
+          );
           for (const video of affectedVideos) {
             const removed = await removeTagFromEpisode({
               video,
@@ -874,11 +876,11 @@ const _server = Bun.serve({
           message: `Tag "${canonical}" deleted from vocabulary and removed from ${affectedVideos.length} episodes`,
         });
       } catch (error) {
-        console.error('Error deleting tag:', error);
+        console.error("Error deleting tag:", error);
         return jsonResponse(
           {
             error:
-              error instanceof Error ? error.message : 'Failed to delete tag',
+              error instanceof Error ? error.message : "Failed to delete tag",
           },
           500,
         );
@@ -890,7 +892,7 @@ const _server = Bun.serve({
     // ========================================
 
     // Segment Verification API: Get all episodes with segments
-    if (url.pathname === '/api/segment-verification/episodes') {
+    if (url.pathname === "/api/segment-verification/episodes") {
       const videos = await loadProcessedVideos();
       // Sort by episode number
       const sorted = [...videos].sort(
@@ -900,7 +902,7 @@ const _server = Bun.serve({
     }
 
     // Segment Verification API: Get segment metadata
-    if (url.pathname === '/api/segment-verification/segment-metadata') {
+    if (url.pathname === "/api/segment-verification/segment-metadata") {
       return jsonResponse({
         labels: SEGMENT_LABELS,
         colors: SEGMENT_COLORS,
@@ -909,25 +911,22 @@ const _server = Bun.serve({
     }
 
     // Segment Verification API: Get transcript for an episode
-    if (url.pathname.startsWith('/api/segment-verification/transcript/')) {
+    if (url.pathname.startsWith("/api/segment-verification/transcript/")) {
       const videoId = url.pathname.replace(
-        '/api/segment-verification/transcript/',
-        '',
+        "/api/segment-verification/transcript/",
+        "",
       );
       const videos = await loadProcessedVideos();
-      const video = videos.find((v) => v.videoId === videoId);
+      const video = videos.find(v => v.videoId === videoId);
 
       if (!video) {
-        return jsonResponse({ error: 'Video not found' }, 404);
+        return jsonResponse({ error: "Video not found" }, 404);
       }
 
       const file = Bun.file(video.transcriptPath);
       const exists = await file.exists();
       if (!exists) {
-        return jsonResponse(
-          { error: 'Transcript file not found' },
-          404,
-        );
+        return jsonResponse({ error: "Transcript file not found" }, 404);
       }
 
       const transcript = await file.text();
@@ -936,22 +935,19 @@ const _server = Bun.serve({
 
     // Segment Verification API: Update segments for an episode
     if (
-      url.pathname.startsWith('/api/segment-verification/segments/') &&
-      request.method === 'PUT'
+      url.pathname.startsWith("/api/segment-verification/segments/") &&
+      request.method === "PUT"
     ) {
       const videoId = url.pathname.replace(
-        '/api/segment-verification/segments/',
-        '',
+        "/api/segment-verification/segments/",
+        "",
       );
 
       try {
         const body = (await request.json()) as { segments: EpisodeSegment[] };
 
         if (!Array.isArray(body.segments)) {
-          return jsonResponse(
-            { error: 'segments must be an array' },
-            400,
-          );
+          return jsonResponse({ error: "segments must be an array" }, 400);
         }
 
         await updateVideoSegments(videoId, body.segments);
@@ -969,7 +965,7 @@ const _server = Bun.serve({
             error:
               error instanceof Error
                 ? error.message
-                : 'Failed to update segments',
+                : "Failed to update segments",
           },
           500,
         );
@@ -977,7 +973,7 @@ const _server = Bun.serve({
     }
 
     // Segment Verification API: Get segment statistics
-    if (url.pathname === '/api/segment-verification/stats') {
+    if (url.pathname === "/api/segment-verification/stats") {
       const videos = await loadProcessedVideos();
 
       const stats = {
@@ -994,7 +990,7 @@ const _server = Bun.serve({
           stats.episodesWithSegments++;
 
           const allVerified = video.segments.every(
-            (s) => s.confidence === 'verified',
+            s => s.confidence === "verified",
           );
           if (allVerified) {
             stats.episodesVerified++;
@@ -1004,7 +1000,7 @@ const _server = Bun.serve({
             stats.segmentsByType[segment.type] =
               (stats.segmentsByType[segment.type] || 0) + 1;
 
-            if (segment.confidence === 'auto') {
+            if (segment.confidence === "auto") {
               stats.autoDetected++;
             } else {
               stats.verified++;
@@ -1018,8 +1014,8 @@ const _server = Bun.serve({
 
     // Segment Verification API: Add a learned pattern
     if (
-      url.pathname === '/api/segment-verification/patterns/add' &&
-      request.method === 'POST'
+      url.pathname === "/api/segment-verification/patterns/add" &&
+      request.method === "POST"
     ) {
       try {
         const body = (await request.json()) as {
@@ -1029,7 +1025,7 @@ const _server = Bun.serve({
 
         if (!body.segmentType || !body.pattern) {
           return jsonResponse(
-            { error: 'segmentType and pattern are required' },
+            { error: "segmentType and pattern are required" },
             400,
           );
         }
@@ -1051,7 +1047,7 @@ const _server = Bun.serve({
         return jsonResponse(
           {
             error:
-              error instanceof Error ? error.message : 'Failed to add pattern',
+              error instanceof Error ? error.message : "Failed to add pattern",
           },
           500,
         );
@@ -1063,12 +1059,12 @@ const _server = Bun.serve({
     // ========================================
 
     // Serve audio files (used by multiple tools)
-    if (url.pathname.startsWith('/api/audio/')) {
-      const videoId = url.pathname.replace('/api/audio/', '');
+    if (url.pathname.startsWith("/api/audio/")) {
+      const videoId = url.pathname.replace("/api/audio/", "");
       const audioPath = await getAudioFilePath(videoId);
 
       if (!audioPath) {
-        return jsonResponse({ error: 'Audio not found' }, 404);
+        return jsonResponse({ error: "Audio not found" }, 404);
       }
 
       const file = Bun.file(audioPath);
@@ -1076,16 +1072,16 @@ const _server = Bun.serve({
 
       // Determine content type
       const contentTypes: Record<string, string> = {
-        '.webm': 'audio/webm',
-        '.m4a': 'audio/mp4',
-        '.mp3': 'audio/mpeg',
-        '.wav': 'audio/wav',
+        ".webm": "audio/webm",
+        ".m4a": "audio/mp4",
+        ".mp3": "audio/mpeg",
+        ".wav": "audio/wav",
       };
 
       return new Response(file, {
         headers: {
-          'Content-Type': contentTypes[extension] || 'audio/webm',
-          'Accept-Ranges': 'bytes',
+          "Content-Type": contentTypes[extension] || "audio/webm",
+          "Accept-Ranges": "bytes",
         },
       });
     }
@@ -1095,13 +1091,16 @@ const _server = Bun.serve({
     // ========================================
 
     // Episode API: Get single episode data
-    if (/^\/api\/episode\/[^/]+$/.test(url.pathname) && request.method === 'GET') {
-      const videoId = url.pathname.replace('/api/episode/', '');
+    if (
+      /^\/api\/episode\/[^/]+$/.test(url.pathname) &&
+      request.method === "GET"
+    ) {
+      const videoId = url.pathname.replace("/api/episode/", "");
       const videos = await loadProcessedVideos();
-      const video = videos.find((v) => v.videoId === videoId);
+      const video = videos.find(v => v.videoId === videoId);
 
       if (!video) {
-        return jsonResponse({ error: 'Episode not found' }, 404);
+        return jsonResponse({ error: "Episode not found" }, 404);
       }
 
       // Check audio availability
@@ -1114,26 +1113,31 @@ const _server = Bun.serve({
     }
 
     // Episode API: Get corrections scoped to an episode
-    if (/^\/api\/episode\/[^/]+\/corrections$/.test(url.pathname) && request.method === 'GET') {
-      const videoId = url.pathname.split('/')[3] ?? '';
+    if (
+      /^\/api\/episode\/[^/]+\/corrections$/.test(url.pathname) &&
+      request.method === "GET"
+    ) {
+      const videoId = url.pathname.split("/")[3] ?? "";
       const tracker = await loadTracker();
 
       // Filter candidates that include this episode
       const episodeCandidates = Object.entries(tracker.candidates)
-        .filter(([, c]) => c.episodeIds?.includes(videoId) || c.episodes?.some((e: string) => e.includes(videoId)))
+        .filter(
+          ([, c]) =>
+            c.episodeIds?.includes(videoId) ||
+            c.episodes?.some((e: string) => e.includes(videoId)),
+        )
         .map(([key, candidate]) => ({ key, ...candidate }));
 
       return jsonResponse(episodeCandidates);
     }
 
-    return jsonResponse({ error: 'API endpoint not found' }, 404);
+    return jsonResponse({ error: "API endpoint not found" }, 404);
   },
 });
 
 console.log(`\n🔌 DoD API Server`);
-console.log(
-  `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`,
-);
+console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
 console.log(`🌐 API Server running: http://localhost:${PORT}`);
 console.log(`\n📋 API Endpoints available:`);
 console.log(`   • /api/review-corrections/*`);
@@ -1141,6 +1145,10 @@ console.log(`   • /api/tag-vocabulary/*`);
 console.log(`   • /api/segment-verification/*`);
 console.log(`   • /api/episode/*`);
 console.log(`\n📄 To serve HTML/TS/CSS files, run in separate terminal:`);
-console.log(`   cd tools && bun index.html tag-vocabulary.html segment-verification.html`);
-console.log(`\n   This will start a static file server on http://localhost:3000`);
+console.log(
+  `   cd tools && bun index.html tag-vocabulary.html segment-verification.html`,
+);
+console.log(
+  `\n   This will start a static file server on http://localhost:3000`,
+);
 console.log(`\n`);

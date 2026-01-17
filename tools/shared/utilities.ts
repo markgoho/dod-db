@@ -4,172 +4,172 @@
  */
 
 // Re-export constants
-export { API_BASE_URL, CATEGORY_LABELS } from './constants.js';
+export { API_BASE_URL, CATEGORY_LABELS } from "./constants.js";
 
 // Re-export types
 export type {
-  Episode,
-  EpisodeTag,
-  EpisodeSegment,
-  EpisodeWithAudio,
-  ParsedLine,
-  TranscriptLine,
-  BreadcrumbItem,
   AudioPlayerOptions,
+  BreadcrumbItem,
+  Episode,
+  EpisodeSegment,
+  EpisodeTag,
+  EpisodeWithAudio,
   JobStatus,
+  ParsedLine,
   PollJobOptions,
-  TagVocabularyEntry,
   SegmentMetadata,
-} from './types.js';
+  TagVocabularyEntry,
+  TranscriptLine,
+} from "./types.js";
 
 // Re-export formatting utilities
-export { formatDate, escapeHtml } from './formatting.js';
+export { escapeHtml, formatDate } from "./formatting.js";
 
 // Re-export timestamp utilities
 export {
-  timestampToSeconds,
-  secondsToTimestamp,
+  formatSecondsToTimestamp,
   formatTimestamp,
   parseTimestamp,
-  formatSecondsToTimestamp,
-} from './timestamp.js';
+  secondsToTimestamp,
+  timestampToSeconds,
+} from "./timestamp.js";
 
 // Re-export API utilities
 export {
-  getEpisode,
+  fetchSegmentMetadata,
   getAllEpisodes,
+  getEpisode,
   getTranscript,
   parseTranscript,
-  fetchSegmentMetadata,
   saveSegments,
-} from './api.js';
+} from "./api.js";
 
 // Re-export UI utilities
 export {
-  renderBreadcrumbs,
-  showToast,
   createAudioPlayer,
-  seekToTimestamp,
-  renderEpisodeCard,
   getTagCategoryClass,
-} from './ui.js';
+  renderBreadcrumbs,
+  renderEpisodeCard,
+  seekToTimestamp,
+  showToast,
+} from "./ui.js";
 
 // Re-export URL utilities
-export { getVideoIdFromUrl, getSubpageFromUrl } from './url.js';
+export { getSubpageFromUrl, getVideoIdFromUrl } from "./url.js";
 
 // Re-export segment utilities
-export { getSegmentDuration, getTotalDuration } from './segment.js';
+export { getSegmentDuration, getTotalDuration } from "./segment.js";
 
 // Re-export segment operations
 export {
   addSegmentAtTime,
   deleteSegmentAtIndex,
-  updateSegmentType,
-  updateSegmentStart,
-  updateSegmentEnd,
   markAllSegmentsVerified,
   sortSegmentsByTime,
-} from './segment-operations.js';
+  updateSegmentEnd,
+  updateSegmentStart,
+  updateSegmentType,
+} from "./segment-operations.js";
 
 // Re-export timeline utilities
-export { renderTimeline, renderSegmentLegend } from './timeline.js';
+export { renderSegmentLegend, renderTimeline } from "./timeline.js";
 
 // Re-export job polling utilities
-export { pollJobStatus, startJobPolling } from './job-polling.js';
+export { pollJobStatus, startJobPolling } from "./job-polling.js";
 
 // Re-export storage utilities
-export { saveToStorage, loadFromStorage } from './storage.js';
+export { loadFromStorage, saveToStorage } from "./storage.js";
 
 // Re-export debounce utility
-export { debounce } from './debounce.js';
+export { debounce } from "./debounce.js";
 
 // Re-export vocabulary utilities
 export {
-  getTagVocabEntry,
-  getTagCategory,
   fetchVocabulary,
-} from './vocabulary.js';
+  getTagCategory,
+  getTagVocabEntry,
+} from "./vocabulary.js";
 
 // Re-export form utilities
 export {
-  getTagFormData,
   clearTagForm,
+  getTagFormData,
   parseVariations,
-  validateTagForm,
   toggleDescriptionField,
   updateFormButtonState,
+  validateTagForm,
   type TagFormData,
-} from './form-utils.js';
+} from "./form-utils.js";
 
 // Re-export tag management utilities
 export {
   addTagWithPolling,
-  reprocessTag,
   reprocessAllEpisodes,
+  reprocessTag,
   startJobPollingWithUI,
   type JobPollingUIConfig,
-} from './tag-management.js';
+} from "./tag-management.js";
 
 // Import for namespace object
-import { API_BASE_URL, CATEGORY_LABELS } from './constants.js';
-import { formatDate, escapeHtml } from './formatting.js';
 import {
-  timestampToSeconds,
-  secondsToTimestamp,
-  formatTimestamp,
-  parseTimestamp,
-  formatSecondsToTimestamp,
-} from './timestamp.js';
-import {
-  getEpisode,
+  fetchSegmentMetadata,
   getAllEpisodes,
+  getEpisode,
   getTranscript,
   parseTranscript,
-  fetchSegmentMetadata,
   saveSegments,
-} from './api.js';
+} from "./api.js";
+import { API_BASE_URL, CATEGORY_LABELS } from "./constants.js";
+import { debounce } from "./debounce.js";
 import {
-  renderBreadcrumbs,
-  showToast,
-  createAudioPlayer,
-  seekToTimestamp,
-  renderEpisodeCard,
-  getTagCategoryClass,
-} from './ui.js';
-import { getVideoIdFromUrl, getSubpageFromUrl } from './url.js';
-import { getSegmentDuration, getTotalDuration } from './segment.js';
+  clearTagForm,
+  getTagFormData,
+  parseVariations,
+  toggleDescriptionField,
+  updateFormButtonState,
+  validateTagForm,
+} from "./form-utils.js";
+import { escapeHtml, formatDate } from "./formatting.js";
+import { pollJobStatus, startJobPolling } from "./job-polling.js";
 import {
   addSegmentAtTime,
   deleteSegmentAtIndex,
-  updateSegmentType,
-  updateSegmentStart,
-  updateSegmentEnd,
   markAllSegmentsVerified,
   sortSegmentsByTime,
-} from './segment-operations.js';
-import { renderTimeline, renderSegmentLegend } from './timeline.js';
-import { pollJobStatus, startJobPolling } from './job-polling.js';
-import { saveToStorage, loadFromStorage } from './storage.js';
-import { debounce } from './debounce.js';
-import {
-  getTagVocabEntry,
-  getTagCategory,
-  fetchVocabulary,
-} from './vocabulary.js';
-import {
-  getTagFormData,
-  clearTagForm,
-  parseVariations,
-  validateTagForm,
-  toggleDescriptionField,
-  updateFormButtonState,
-} from './form-utils.js';
+  updateSegmentEnd,
+  updateSegmentStart,
+  updateSegmentType,
+} from "./segment-operations.js";
+import { getSegmentDuration, getTotalDuration } from "./segment.js";
+import { loadFromStorage, saveToStorage } from "./storage.js";
 import {
   addTagWithPolling,
-  reprocessTag,
   reprocessAllEpisodes,
+  reprocessTag,
   startJobPollingWithUI,
-} from './tag-management.js';
+} from "./tag-management.js";
+import { renderSegmentLegend, renderTimeline } from "./timeline.js";
+import {
+  formatSecondsToTimestamp,
+  formatTimestamp,
+  parseTimestamp,
+  secondsToTimestamp,
+  timestampToSeconds,
+} from "./timestamp.js";
+import {
+  createAudioPlayer,
+  getTagCategoryClass,
+  renderBreadcrumbs,
+  renderEpisodeCard,
+  seekToTimestamp,
+  showToast,
+} from "./ui.js";
+import { getSubpageFromUrl, getVideoIdFromUrl } from "./url.js";
+import {
+  fetchVocabulary,
+  getTagCategory,
+  getTagVocabEntry,
+} from "./vocabulary.js";
 
 // Export namespace for global access in HTML
 export const DoDTools = {

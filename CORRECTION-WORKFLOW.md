@@ -54,6 +54,7 @@ bun run src/scripts/process-transcript.ts
 ```
 
 The output will show:
+
 ```
 Pass 1 complete: 17 deterministic, 169 marked by LLM
 Pass 2 complete: 169 confirmed, 0 revised
@@ -76,6 +77,7 @@ bun run src/scripts/suggest-corrections.ts "data/transcripts/episode-1-original.
 ```
 
 Output:
+
 ```
 Suggested correction rule for "Torah":
 
@@ -95,15 +97,16 @@ export const globalCorrections: CorrectionRule[] = [
   // ... existing rules ...
 
   // New rules learned from Episode 1
-  [['Torrah', 'Tora'], 'Torah'],
-  [['Berashit', 'Beresheet'], 'Bereshit'],
-  [['rakeea', 'rakea'], 'raqia'],
+  [["Torrah", "Tora"], "Torah"],
+  [["Berashit", "Beresheet"], "Bereshit"],
+  [["rakeea", "rakea"], "raqia"],
 ];
 ```
 
 ### 4. Next Episode is Faster
 
 On the next episode:
+
 - "Torrah" → instantly corrected to "Torah" (deterministic)
 - No LLM call needed for this correction
 - Cheaper and faster!
@@ -120,6 +123,7 @@ On the next episode:
 ### High-Priority Additions
 
 Add corrections that:
+
 - **Occur frequently** (5+ times per episode)
 - **Are consistent** (same correction every time)
 - **Are proper nouns** (names, places, books)
@@ -128,6 +132,7 @@ Add corrections that:
 ### Low-Priority Additions
 
 Don't add:
+
 - **One-off corrections** (occur only once)
 - **Context-dependent** (different correction depending on context)
 - **Subjective edits** (style changes, not factual corrections)
@@ -158,18 +163,19 @@ Don't add:
 
 Track improvement over time:
 
-| Episode | Deterministic | LLM Marked | Cost Savings |
-|---------|--------------|------------|--------------|
-| 1       | 17           | 169        | 9% deterministic |
-| 2       | 45           | 120        | 27% deterministic |
-| 3       | 78           | 85         | 48% deterministic |
-| 10      | 150          | 20         | 88% deterministic |
+| Episode | Deterministic | LLM Marked | Cost Savings      |
+| ------- | ------------- | ---------- | ----------------- |
+| 1       | 17            | 169        | 9% deterministic  |
+| 2       | 45            | 120        | 27% deterministic |
+| 3       | 78            | 85         | 48% deterministic |
+| 10      | 150           | 20         | 88% deterministic |
 
 **Goal**: Get to 80%+ deterministic corrections for maximum efficiency.
 
 ## Automation Ideas (Future)
 
 Potential enhancements:
+
 1. **Auto-suggest script** that diffs original vs corrected and outputs correction rules
 2. **Frequency threshold** - auto-add corrections that occur 10+ times
 3. **ML-based learning** - train a model on correction patterns
@@ -178,6 +184,7 @@ Potential enhancements:
 ## Summary
 
 The learning workflow transforms the correction system from:
+
 - **Initial**: Slow, expensive, LLM-heavy
 - **After learning**: Fast, cheap, mostly deterministic
 

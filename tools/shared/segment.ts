@@ -2,11 +2,14 @@
  * Segment utilities for DoD Tools
  */
 
-import type { EpisodeSegment } from './types.js';
-import { timestampToSeconds } from './timestamp.js';
+import { timestampToSeconds } from "./timestamp.js";
+import type { EpisodeSegment } from "./types.js";
 
 // Get segment duration in seconds
-export function getSegmentDuration(segment: EpisodeSegment, totalDuration?: number): number {
+export function getSegmentDuration(
+  segment: EpisodeSegment,
+  totalDuration?: number,
+): number {
   const start = timestampToSeconds(segment.startTimestamp);
   const end = segment.endTimestamp
     ? timestampToSeconds(segment.endTimestamp)

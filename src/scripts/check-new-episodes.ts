@@ -6,11 +6,11 @@
  *   bun run src/scripts/check-new-episodes.ts
  */
 
-import { isVideoProcessed } from '../storage/processed-videos.js';
-import { processYouTubeVideo } from '../pipeline/youtube-processor.js';
+import { processYouTubeVideo } from "../pipeline/youtube-processor.js";
+import { isVideoProcessed } from "../storage/processed-videos.js";
 
 // Data over Dogma channel URL
-const CHANNEL_URL = 'https://www.youtube.com/@DataOverDogma/videos';
+const CHANNEL_URL = "https://www.youtube.com/@DataOverDogma/videos";
 
 async function fetchLatestVideos(maxResults: number = 10): Promise<string[]> {
   console.log(`Fetching ${maxResults} most recent videos from channel...`);
@@ -20,13 +20,13 @@ async function fetchLatestVideos(maxResults: number = 10): Promise<string[]> {
   // --playlist-end: Limit number of videos
   // --dump-json: Output as JSON
   const proc = Bun.spawn([
-    'yt-dlp',
+    "yt-dlp",
     CHANNEL_URL,
-    '--flat-playlist',
-    '--playlist-end',
+    "--flat-playlist",
+    "--playlist-end",
     maxResults.toString(),
-    '--dump-json',
-    '--skip-download',
+    "--dump-json",
+    "--skip-download",
   ]);
 
   const output = await new Response(proc.stdout).text();
@@ -39,7 +39,7 @@ async function fetchLatestVideos(maxResults: number = 10): Promise<string[]> {
   }
 
   // Parse newline-delimited JSON
-  const lines = output.trim().split('\n');
+  const lines = output.trim().split("\n");
   const videoIds: string[] = [];
 
   for (const line of lines) {
@@ -57,7 +57,7 @@ async function fetchLatestVideos(maxResults: number = 10): Promise<string[]> {
 }
 
 async function main() {
-  console.log('Checking for new episodes...');
+  console.log("Checking for new episodes...");
 
   const videoIds = await fetchLatestVideos();
   console.log(`Found ${videoIds.length} recent videos`);
@@ -96,15 +96,15 @@ async function main() {
     }
   }
 
-  console.log('');
-  console.log('--- Summary ---');
+  console.log("");
+  console.log("--- Summary ---");
   console.log(`Processed: ${processedCount}`);
   console.log(`Skipped: ${skippedCount}`);
   console.log(`Errors: ${errors.length}`);
 
   if (errors.length > 0) {
-    console.error('');
-    console.error('Errors encountered:');
+    console.error("");
+    console.error("Errors encountered:");
     for (const { videoId, error } of errors) {
       console.error(`  ${videoId}: ${error}`);
     }

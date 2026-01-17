@@ -10,12 +10,14 @@ This skill guides you through adding a new segment type to the Data Over Dogma p
 ## What is a Segment?
 
 Segments are recurring named sections in Data Over Dogma podcast episodes, such as:
+
 - "Chapter and Verse"
 - "Could it be Satan?"
 - "Getting Angelic"
 - "Getting Demonic"
 
 Each segment has:
+
 1. A unique type identifier (kebab-case)
 2. A human-readable label
 3. A color for UI visualization
@@ -33,13 +35,13 @@ Add the new segment type to the union (alphabetically or logically grouped):
 
 ```typescript
 export type SegmentType =
-  | 'intro'
-  | 'chapter-and-verse'
+  | "intro"
+  | "chapter-and-verse"
   // ... existing segments ...
-  | 'your-new-segment'  // Add here (kebab-case)
-  | 'advertisement'
-  | 'main-content'
-  | 'outro';
+  | "your-new-segment" // Add here (kebab-case)
+  | "advertisement"
+  | "main-content"
+  | "outro";
 ```
 
 **Naming convention:** Use kebab-case (lowercase with hyphens)
@@ -52,9 +54,9 @@ Add a human-readable label:
 
 ```typescript
 export const SEGMENT_LABELS: Record<SegmentType, string> = {
-  intro: 'Intro',
+  intro: "Intro",
   // ... existing labels ...
-  'your-new-segment': 'Your New Segment',  // Title Case
+  "your-new-segment": "Your New Segment", // Title Case
   // ... rest of labels ...
 };
 ```
@@ -69,20 +71,22 @@ Assign a color using Tailwind CSS color values:
 
 ```typescript
 export const SEGMENT_COLORS: Record<SegmentType, string> = {
-  intro: '#6366f1', // indigo
+  intro: "#6366f1", // indigo
   // ... existing colors ...
-  'your-new-segment': '#10b981', // emerald-500
+  "your-new-segment": "#10b981", // emerald-500
   // ... rest of colors ...
 };
 ```
 
 **Color guidelines:**
+
 - Use hex color codes from Tailwind CSS palette
 - Choose colors that stand out from existing segments
 - Consider thematic associations (e.g., golden for angelic, dark red for demonic)
 - Add a comment describing the color
 
 **Common Tailwind colors:**
+
 - `#ef4444` - red-500
 - `#f59e0b` - amber-500
 - `#10b981` - emerald-500
@@ -100,11 +104,11 @@ Add regex patterns to automatically detect when this segment starts in transcrip
 
 ```typescript
 export const SEGMENT_PATTERNS: Record<
-  Exclude<SegmentType, 'intro' | 'main-content'>,
+  Exclude<SegmentType, "intro" | "main-content">,
   RegExp[]
 > = {
   // ... existing patterns ...
-  'your-new-segment': [
+  "your-new-segment": [
     /your new segment/i,
     /welcome to.*your new segment/i,
     /let'?s do.*your new segment/i,
@@ -114,6 +118,7 @@ export const SEGMENT_PATTERNS: Record<
 ```
 
 **Pattern guidelines:**
+
 - All patterns are case-insensitive (use `/i` flag)
 - First pattern: Direct mention of segment name
 - Second pattern: Common intro phrases (e.g., "welcome to...", "coming up...")
@@ -121,6 +126,7 @@ export const SEGMENT_PATTERNS: Record<
 - Listen to episodes to identify exact phrases
 
 **Common intro patterns:**
+
 - `/segment name/i` - Direct mention
 - `/welcome to.*segment name/i` - Standard welcome
 - `/let'?s do.*segment name/i` - Action-based intro

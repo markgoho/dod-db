@@ -9,16 +9,16 @@
  *   bun run src/scripts/process-transcript.ts "https://drive.google.com/uc?export=download&id=FILE_ID"
  */
 
-import { processTranscript } from '../pipeline/index.js';
+import { processTranscript } from "../pipeline/index.js";
 
 const [, , url, title] = process.argv;
 
 if (!url) {
-  console.error('Error: URL is required\n');
+  console.error("Error: URL is required\n");
   console.log(
-    'Usage: bun run src/scripts/process-transcript.ts <url> [title]\n',
+    "Usage: bun run src/scripts/process-transcript.ts <url> [title]\n",
   );
-  console.log('Examples:');
+  console.log("Examples:");
   console.log(
     '  bun run src/scripts/process-transcript.ts "https://www.youtube.com/watch?v=VIDEO_ID" "Episode 2 (April 17, 2023)"',
   );

@@ -6,35 +6,38 @@
  *   Then open http://localhost:3002
  */
 
+import * as path from "node:path";
+import {
+  SEGMENT_COLORS,
+  SEGMENT_LABELS,
+  type SegmentType,
+} from "../config/segment-patterns.js";
+import { youtubeConfig } from "../config/youtube.js";
 import {
   loadProcessedVideos,
   updateVideoSegments,
   type EpisodeSegment,
-} from '../storage/processed-videos.js';
-import {
-  SEGMENT_LABELS,
-  SEGMENT_COLORS,
-  type SegmentType,
-} from '../config/segment-patterns.js';
-import { youtubeConfig } from '../config/youtube.js';
-import * as path from 'node:path';
+} from "../storage/processed-videos.js";
 
 // Add a new pattern to segment-patterns.ts
-async function addPatternToConfig(segmentType: string, pattern: string): Promise<void> {
-  const configPath = path.join(process.cwd(), 'src/config/segment-patterns.ts');
+async function addPatternToConfig(
+  segmentType: string,
+  pattern: string,
+): Promise<void> {
+  const configPath = path.join(process.cwd(), "src/config/segment-patterns.ts");
   const file = Bun.file(configPath);
   let content = await file.text();
 
   // Escape special regex characters in the pattern
   const escapedPattern = pattern
     .replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`)
-    .replaceAll('\'', String.raw`\'`);
+    .replaceAll("'", String.raw`\'`);
 
   // Find the array for this segment type and add the new pattern
   // Look for: 'segment-type': [ or segment-type: [
   const patterns = [
-    new RegExp(String.raw`('${segmentType}':\s*\[)([^\]]*)`, 's'),
-    new RegExp(String.raw`(${segmentType}:\s*\[)([^\]]*)`, 's'),
+    new RegExp(String.raw`('${segmentType}':\s*\[)([^\]]*)`, "s"),
+    new RegExp(String.raw`(${segmentType}:\s*\[)([^\]]*)`, "s"),
   ];
 
   let found = false;
@@ -51,8 +54,12 @@ async function addPatternToConfig(segmentType: string, pattern: string): Promise
         return;
       }
 
-      const separator = existingPatterns.endsWith(',') || existingPatterns === '' ? '\n    ' : ',\n    ';
-      const newContent = match[1] + existingPatterns + separator + newPattern + ',\n  ';
+      const separator =
+        existingPatterns.endsWith(",") || existingPatterns === ""
+          ? "\n    "
+          : ",\n    ";
+      const newContent =
+        match[1] + existingPatterns + separator + newPattern + ",\n  ";
       content = content.replace(regex, newContent);
       found = true;
       break;
@@ -60,7 +67,9 @@ async function addPatternToConfig(segmentType: string, pattern: string): Promise
   }
 
   if (!found) {
-    throw new Error(`Could not find pattern array for segment type: ${segmentType}`);
+    throw new Error(
+      `Could not find pattern array for segment type: ${segmentType}`,
+    );
   }
 
   await Bun.write(configPath, content);
@@ -74,7 +83,7 @@ async function getAudioFilePath(videoId: string): Promise<string | null> {
   const audioDir = youtubeConfig.audioDirectory;
 
   // Try common extensions
-  const extensions = ['.webm', '.m4a', '.mp3', '.wav'];
+  const extensions = [".webm", ".m4a", ".mp3", ".wav"];
 
   for (const extension of extensions) {
     const filePath = path.join(audioDir, `${videoId}${extension}`);
@@ -94,27 +103,27 @@ const _server = Bun.serve({
     const url = new URL(request.url);
 
     // Serve the main UI
-    if (url.pathname === '/' || url.pathname === '/index.html') {
+    if (url.pathname === "/" || url.pathname === "/index.html") {
       const filePath = path.join(
         process.cwd(),
-        'tools',
-        'segment-verification.html',
+        "tools",
+        "segment-verification.html",
       );
       const file = Bun.file(filePath);
       const exists = await file.exists();
       if (!exists) {
         return new Response(
-          'UI file not found. Please create tools/segment-verification.html',
+          "UI file not found. Please create tools/segment-verification.html",
           { status: 404 },
         );
       }
       return new Response(file, {
-        headers: { 'Content-Type': 'text/html' },
+        headers: { "Content-Type": "text/html" },
       });
     }
 
     // API: Get all episodes with segments
-    if (url.pathname === '/api/episodes') {
+    if (url.pathname === "/api/episodes") {
       const videos = await loadProcessedVideos();
       // Sort by episode number
       const sorted = [...videos].sort(
@@ -124,7 +133,7 @@ const _server = Bun.serve({
     }
 
     // API: Get segment metadata (labels, colors)
-    if (url.pathname === '/api/segment-metadata') {
+    if (url.pathname === "/api/segment-metadata") {
       return Response.json({
         labels: SEGMENT_LABELS,
         colors: SEGMENT_COLORS,
@@ -133,20 +142,20 @@ const _server = Bun.serve({
     }
 
     // API: Get transcript for an episode
-    if (url.pathname.startsWith('/api/transcript/')) {
-      const videoId = url.pathname.replace('/api/transcript/', '');
+    if (url.pathname.startsWith("/api/transcript/")) {
+      const videoId = url.pathname.replace("/api/transcript/", "");
       const videos = await loadProcessedVideos();
-      const video = videos.find((v) => v.videoId === videoId);
+      const video = videos.find(v => v.videoId === videoId);
 
       if (!video) {
-        return Response.json({ error: 'Video not found' }, { status: 404 });
+        return Response.json({ error: "Video not found" }, { status: 404 });
       }
 
       const file = Bun.file(video.transcriptPath);
       const exists = await file.exists();
       if (!exists) {
         return Response.json(
-          { error: 'Transcript file not found' },
+          { error: "Transcript file not found" },
           { status: 404 },
         );
       }
@@ -156,12 +165,12 @@ const _server = Bun.serve({
     }
 
     // API: Get audio file for an episode
-    if (url.pathname.startsWith('/api/audio/')) {
-      const videoId = url.pathname.replace('/api/audio/', '');
+    if (url.pathname.startsWith("/api/audio/")) {
+      const videoId = url.pathname.replace("/api/audio/", "");
       const audioPath = await getAudioFilePath(videoId);
 
       if (!audioPath) {
-        return Response.json({ error: 'Audio not found' }, { status: 404 });
+        return Response.json({ error: "Audio not found" }, { status: 404 });
       }
 
       const file = Bun.file(audioPath);
@@ -169,30 +178,30 @@ const _server = Bun.serve({
 
       // Determine content type
       const contentTypes: Record<string, string> = {
-        '.webm': 'audio/webm',
-        '.m4a': 'audio/mp4',
-        '.mp3': 'audio/mpeg',
-        '.wav': 'audio/wav',
+        ".webm": "audio/webm",
+        ".m4a": "audio/mp4",
+        ".mp3": "audio/mpeg",
+        ".wav": "audio/wav",
       };
 
       return new Response(file, {
         headers: {
-          'Content-Type': contentTypes[extension] || 'audio/webm',
-          'Accept-Ranges': 'bytes',
+          "Content-Type": contentTypes[extension] || "audio/webm",
+          "Accept-Ranges": "bytes",
         },
       });
     }
 
     // API: Update segments for an episode
-    if (url.pathname.startsWith('/api/segments/') && request.method === 'PUT') {
-      const videoId = url.pathname.replace('/api/segments/', '');
+    if (url.pathname.startsWith("/api/segments/") && request.method === "PUT") {
+      const videoId = url.pathname.replace("/api/segments/", "");
 
       try {
         const body = (await request.json()) as { segments: EpisodeSegment[] };
 
         if (!Array.isArray(body.segments)) {
           return Response.json(
-            { error: 'segments must be an array' },
+            { error: "segments must be an array" },
             { status: 400 },
           );
         }
@@ -203,7 +212,9 @@ const _server = Bun.serve({
         return Response.json(
           {
             error:
-              error instanceof Error ? error.message : 'Failed to update segments',
+              error instanceof Error
+                ? error.message
+                : "Failed to update segments",
           },
           { status: 500 },
         );
@@ -211,7 +222,7 @@ const _server = Bun.serve({
     }
 
     // API: Get segment statistics
-    if (url.pathname === '/api/stats') {
+    if (url.pathname === "/api/stats") {
       const videos = await loadProcessedVideos();
 
       const stats = {
@@ -228,7 +239,7 @@ const _server = Bun.serve({
           stats.episodesWithSegments++;
 
           const allVerified = video.segments.every(
-            (s) => s.confidence === 'verified',
+            s => s.confidence === "verified",
           );
           if (allVerified) {
             stats.episodesVerified++;
@@ -238,7 +249,7 @@ const _server = Bun.serve({
             stats.segmentsByType[segment.type] =
               (stats.segmentsByType[segment.type] || 0) + 1;
 
-            if (segment.confidence === 'auto') {
+            if (segment.confidence === "auto") {
               stats.autoDetected++;
             } else {
               stats.verified++;
@@ -251,13 +262,16 @@ const _server = Bun.serve({
     }
 
     // API: Add a learned pattern
-    if (url.pathname === '/api/patterns/add' && request.method === 'POST') {
+    if (url.pathname === "/api/patterns/add" && request.method === "POST") {
       try {
-        const body = (await request.json()) as { segmentType: string; pattern: string };
+        const body = (await request.json()) as {
+          segmentType: string;
+          pattern: string;
+        };
 
         if (!body.segmentType || !body.pattern) {
           return Response.json(
-            { error: 'segmentType and pattern are required' },
+            { error: "segmentType and pattern are required" },
             { status: 400 },
           );
         }
@@ -271,19 +285,22 @@ const _server = Bun.serve({
         }
 
         await addPatternToConfig(body.segmentType, body.pattern);
-        return Response.json({ success: true, message: `Pattern added for ${body.segmentType}` });
+        return Response.json({
+          success: true,
+          message: `Pattern added for ${body.segmentType}`,
+        });
       } catch (error) {
         return Response.json(
           {
             error:
-              error instanceof Error ? error.message : 'Failed to add pattern',
+              error instanceof Error ? error.message : "Failed to add pattern",
           },
           { status: 500 },
         );
       }
     }
 
-    return new Response('Not Found', { status: 404 });
+    return new Response("Not Found", { status: 404 });
   },
 });
 

@@ -1,33 +1,33 @@
-import * as path from 'node:path';
-import { youtubeConfig } from '../config/youtube.js';
+import * as path from "node:path";
+import { youtubeConfig } from "../config/youtube.js";
+import { writeToFile } from "../storage/file.js";
+import {
+  extractSpeakersFromTranscript,
+  getVideoById,
+  isVideoProcessed,
+  markVideoAsProcessed,
+  updateVideoSegments,
+  updateVideoTags,
+  type EpisodeSegment,
+} from "../storage/processed-videos.js";
+import { correctTranscript } from "./correct.js";
+import {
+  detectSegmentsFromAudio,
+  getAudioDuration,
+} from "./detect-segments.js";
+import { extractTags } from "./extract-tags.js";
+import { generateHugoEpisode } from "./generate-hugo-episode.js";
+import { identifySegmentTypes } from "./identify-segment-types.js";
+import { identifySpeakers } from "./identify-speakers.js";
+import { analyzeCorrections } from "./learn-corrections.js";
+import { transcribeAudio } from "./transcribe.js";
 import {
   downloadAudio,
   extractVideoId,
   fetchVideoMetadata,
   generateTranscriptFilename,
   type VideoMetadata,
-} from './youtube.js';
-import { transcribeAudio } from './transcribe.js';
-import { correctTranscript } from './correct.js';
-import { identifySpeakers } from './identify-speakers.js';
-import { extractTags } from './extract-tags.js';
-import { analyzeCorrections } from './learn-corrections.js';
-import {
-  detectSegmentsFromAudio,
-  getAudioDuration,
-} from './detect-segments.js';
-import { identifySegmentTypes } from './identify-segment-types.js';
-import { generateHugoEpisode } from './generate-hugo-episode.js';
-import { writeToFile } from '../storage/file.js';
-import {
-  isVideoProcessed,
-  markVideoAsProcessed,
-  getVideoById,
-  updateVideoSegments,
-  updateVideoTags,
-  extractSpeakersFromTranscript,
-  type EpisodeSegment,
-} from '../storage/processed-videos.js';
+} from "./youtube.js";
 
 export interface ProcessYouTubeVideoResult {
   videoId: string;
@@ -38,7 +38,7 @@ export interface ProcessYouTubeVideoResult {
 
 export interface ProcessYouTubeVideoOptions {
   force?: boolean;
-  startFrom?: 'correct' | 'segment-detection' | 'extract-tags';
+  startFrom?: "correct" | "segment-detection" | "extract-tags";
 }
 
 /**
@@ -71,24 +71,24 @@ export async function processYouTubeVideo(
       );
       return {
         videoId,
-        transcriptPath: '',
+        transcriptPath: "",
         metadata: {
           id: videoId,
-          title: '',
-          description: '',
-          publishedAt: '',
-          channelTitle: '',
+          title: "",
+          description: "",
+          publishedAt: "",
+          channelTitle: "",
         },
         skipped: true,
       };
     }
   } else if (options.force) {
-    console.log('🔄 Force mode: reprocessing video...');
+    console.log("🔄 Force mode: reprocessing video...");
   }
 
   // Handle segment-detection stage (early return - only updates segments)
-  if (options.startFrom === 'segment-detection') {
-    console.log('Starting from segment detection stage...');
+  if (options.startFrom === "segment-detection") {
+    console.log("Starting from segment detection stage...");
 
     const existingVideo = await getVideoById(videoId);
     if (!existingVideo) {
@@ -106,24 +106,30 @@ export async function processYouTubeVideo(
     }
 
     const correctedTranscript = await transcriptFile.text();
-    console.log(`Loaded existing transcript from: ${existingVideo.transcriptPath}`);
+    console.log(
+      `Loaded existing transcript from: ${existingVideo.transcriptPath}`,
+    );
 
     // Check if this is a guest episode
-    const regularHosts = new Set(['Dan McClellan', 'Dan Beecher']);
+    const regularHosts = new Set(["Dan McClellan", "Dan Beecher"]);
     const speakers = existingVideo.speakers ?? [];
-    const hasGuest = speakers.some((speaker) => !regularHosts.has(speaker));
+    const hasGuest = speakers.some(speaker => !regularHosts.has(speaker));
 
     // Preserve any verified segments from existing data
     const existingSegments = existingVideo.segments ?? [];
-    const verifiedSegments = existingSegments.filter((s) => s.confidence === 'verified');
+    const verifiedSegments = existingSegments.filter(
+      s => s.confidence === "verified",
+    );
 
     if (verifiedSegments.length > 0) {
-      console.log(`📌 Preserving ${verifiedSegments.length} verified segment(s)`);
+      console.log(
+        `📌 Preserving ${verifiedSegments.length} verified segment(s)`,
+      );
     }
 
     if (hasGuest) {
       // Guest episodes typically don't have recurring segments - skip detection entirely
-      console.log('⏭️ Guest episode detected, keeping existing segments');
+      console.log("⏭️ Guest episode detected, keeping existing segments");
       // Don't update segments at all for guest episodes
       return {
         videoId,
@@ -131,15 +137,15 @@ export async function processYouTubeVideo(
         metadata: {
           id: videoId,
           title: existingVideo.title,
-          description: '',
+          description: "",
           publishedAt: existingVideo.publishedAt,
-          channelTitle: '',
+          channelTitle: "",
         },
       };
     }
 
     // Detect segments using audio jingle
-    console.log('Detecting segments with audio jingle...');
+    console.log("Detecting segments with audio jingle...");
     const audioDuration = await getAudioDuration(videoId);
     const detectedSegments = await detectSegmentsFromAudio({
       videoId,
@@ -152,7 +158,7 @@ export async function processYouTubeVideo(
       correctedTranscript,
     );
 
-    const newSegments: EpisodeSegment[] = identifiedSegments.map((s) => ({
+    const newSegments: EpisodeSegment[] = identifiedSegments.map(s => ({
       type: s.type,
       startTimestamp: s.startTimestamp,
       endTimestamp: s.endTimestamp,
@@ -163,13 +169,14 @@ export async function processYouTubeVideo(
 
     // Merge: keep verified segments, replace auto-detected ones
     // Use verified segments as the base, then add new segments that don't conflict
-    const segments: EpisodeSegment[] = verifiedSegments.length > 0
-      ? (verifiedSegments as EpisodeSegment[])
-      : newSegments;
+    const segments: EpisodeSegment[] =
+      verifiedSegments.length > 0
+        ? (verifiedSegments as EpisodeSegment[])
+        : newSegments;
 
     // Update only segments
     await updateVideoSegments(videoId, segments);
-    console.log('Done!');
+    console.log("Done!");
 
     return {
       videoId,
@@ -177,16 +184,16 @@ export async function processYouTubeVideo(
       metadata: {
         id: videoId,
         title: existingVideo.title,
-        description: '',
+        description: "",
         publishedAt: existingVideo.publishedAt,
-        channelTitle: '',
+        channelTitle: "",
       },
     };
   }
 
   // Handle extract-tags stage (early return - only updates tags)
-  if (options.startFrom === 'extract-tags') {
-    console.log('Starting from tag extraction stage...');
+  if (options.startFrom === "extract-tags") {
+    console.log("Starting from tag extraction stage...");
 
     const existingVideo = await getVideoById(videoId);
     if (!existingVideo) {
@@ -204,10 +211,12 @@ export async function processYouTubeVideo(
     }
 
     const correctedTranscript = await transcriptFile.text();
-    console.log(`Loaded existing transcript from: ${existingVideo.transcriptPath}`);
+    console.log(
+      `Loaded existing transcript from: ${existingVideo.transcriptPath}`,
+    );
 
     // Extract tags
-    console.log('Extracting tags...');
+    console.log("Extracting tags...");
     const tags = await extractTags(correctedTranscript, {
       enableLlmVerification: true,
       episodeNumber: existingVideo.episodeNumber,
@@ -216,7 +225,7 @@ export async function processYouTubeVideo(
 
     // Update video with extracted tags
     await updateVideoTags(videoId, tags);
-    console.log('Done!');
+    console.log("Done!");
 
     return {
       videoId,
@@ -224,15 +233,15 @@ export async function processYouTubeVideo(
       metadata: {
         id: videoId,
         title: existingVideo.title,
-        description: '',
+        description: "",
         publishedAt: existingVideo.publishedAt,
-        channelTitle: '',
+        channelTitle: "",
       },
     };
   }
 
   // Fetch metadata
-  console.log('Fetching video metadata...');
+  console.log("Fetching video metadata...");
   const metadata = await fetchVideoMetadata(videoId);
   console.log(`Title: ${metadata.title}`);
   console.log(`Published: ${metadata.publishedAt}`);
@@ -243,13 +252,13 @@ export async function processYouTubeVideo(
     metadata.publishedAt,
   );
   const transcriptPath = path.join(youtubeConfig.transcriptDirectory, filename);
-  const rawPath = transcriptPath.replace('.txt', '-raw.txt');
+  const rawPath = transcriptPath.replace(".txt", "-raw.txt");
 
   let transcriptWithNames: string;
 
-  if (options.startFrom === 'correct') {
+  if (options.startFrom === "correct") {
     // Resume from correction stage - load existing raw transcript
-    console.log('Starting from correction stage...');
+    console.log("Starting from correction stage...");
     const rawFile = Bun.file(rawPath);
     if (!(await rawFile.exists())) {
       throw new Error(
@@ -261,58 +270,55 @@ export async function processYouTubeVideo(
     console.log(`Loaded existing raw transcript from: ${rawPath}`);
   } else {
     // Normal flow: download → transcribe → identify → save raw
-    console.log('Downloading audio...');
+    console.log("Downloading audio...");
     const audioPath = await downloadAudio(
       videoId,
       youtubeConfig.audioDirectory,
     );
     console.log(`Audio downloaded to: ${audioPath}`);
 
-    console.log('Transcribing audio...');
+    console.log("Transcribing audio...");
     const transcription = await transcribeAudio(audioPath);
 
-    console.log('Identifying speakers...');
+    console.log("Identifying speakers...");
     const { transcript: identified } = await identifySpeakers(transcription, {
       title: metadata.title,
       description: metadata.description,
     });
     transcriptWithNames = identified;
 
-    console.log('Saving raw transcript...');
+    console.log("Saving raw transcript...");
     await writeToFile(rawPath, transcriptWithNames);
     console.log(`Raw transcript saved to: ${rawPath}`);
   }
 
   // Extract speakers from the raw transcript (early stage - before correction)
-  console.log('Extracting speaker names...');
-  const speakers = await extractSpeakersFromTranscript(
-    rawPath,
-    metadata.title,
-  );
-  console.log(`✓ Found ${speakers.length} speakers: ${speakers.join(', ')}`);
+  console.log("Extracting speaker names...");
+  const speakers = await extractSpeakersFromTranscript(rawPath, metadata.title);
+  console.log(`✓ Found ${speakers.length} speakers: ${speakers.join(", ")}`);
 
   // Correct transcript
-  console.log('Correcting transcript...');
+  console.log("Correcting transcript...");
   const correctedTranscript = await correctTranscript(transcriptWithNames);
 
   // Write final transcript (this is the one we commit)
-  console.log('Writing final transcript...');
+  console.log("Writing final transcript...");
   await writeToFile(transcriptPath, correctedTranscript);
   console.log(`Final transcript saved to: ${transcriptPath}`);
 
   // Detect segments using audio jingle
-  console.log('Detecting segments with audio jingle...');
+  console.log("Detecting segments with audio jingle...");
   const audioDuration = await getAudioDuration(videoId);
 
   // Check if this is a guest episode (has speakers other than the regular hosts)
-  const regularHosts = new Set(['Dan McClellan', 'Dan Beecher']);
-  const hasGuest = speakers.some((speaker) => !regularHosts.has(speaker));
+  const regularHosts = new Set(["Dan McClellan", "Dan Beecher"]);
+  const hasGuest = speakers.some(speaker => !regularHosts.has(speaker));
 
   let segments: EpisodeSegment[];
 
   if (hasGuest) {
     // Guest episodes typically don't have recurring segments - skip audio detection
-    console.log('⏭️ Guest episode detected, skipping segment detection');
+    console.log("⏭️ Guest episode detected, skipping segment detection");
     segments = [];
   } else {
     // Regular episode: detect segments and identify types
@@ -327,7 +333,7 @@ export async function processYouTubeVideo(
       correctedTranscript,
     );
 
-    segments = identifiedSegments.map((s) => ({
+    segments = identifiedSegments.map(s => ({
       type: s.type,
       startTimestamp: s.startTimestamp,
       endTimestamp: s.endTimestamp,
@@ -338,7 +344,7 @@ export async function processYouTubeVideo(
   }
 
   // Mark as processed FIRST to get episode number assigned
-  console.log('Marking video as processed...');
+  console.log("Marking video as processed...");
   const episodeNumber = await markVideoAsProcessed({
     videoId,
     title: metadata.title,
@@ -352,7 +358,7 @@ export async function processYouTubeVideo(
   });
 
   // Extract tags from corrected transcript (now with episode number for newly discovered tags)
-  console.log('Extracting tags...');
+  console.log("Extracting tags...");
   const tags = await extractTags(correctedTranscript, {
     enableLlmVerification: true, // Enable LLM verification for ambiguous tags (e.g., "David", "John")
     episodeNumber, // Tag newly discovered tags with episode number
@@ -366,13 +372,13 @@ export async function processYouTubeVideo(
   await analyzeCorrections(transcriptWithNames, correctedTranscript, videoId);
 
   // Generate Hugo episode page
-  console.log('Generating Hugo episode page...');
+  console.log("Generating Hugo episode page...");
   const updatedVideo = await getVideoById(videoId);
   if (updatedVideo) {
     await generateHugoEpisode(updatedVideo);
   }
 
-  console.log('Done!');
+  console.log("Done!");
 
   return {
     videoId,

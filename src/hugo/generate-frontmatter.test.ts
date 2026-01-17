@@ -2,99 +2,107 @@
  * Unit tests for generateFrontmatter.
  */
 
-import { describe, test, expect } from 'bun:test';
-import { generateFrontmatter } from './generate-frontmatter.js';
-import type { ProcessedVideo } from '../storage/processed-videos.js';
+import { describe, expect, test } from "bun:test";
+import type { ProcessedVideo } from "../storage/processed-videos.js";
+import { generateFrontmatter } from "./generate-frontmatter.js";
 
-describe('generateFrontmatter', () => {
-	test('generates complete YAML frontmatter with all fields', async () => {
-		const video: ProcessedVideo = {
-			videoId: 'abc123',
-			title: 'Episode 1, "Test Episode"',
-			publishedAt: '2024-01-15T10:00:00Z',
-			processedAt: '2024-01-15T12:00:00Z',
-			transcriptPath: 'data/transcripts/2024-01-15-test-episode.txt',
-			episodeNumber: 1,
-			tags: [
-				{ tag: 'theology', mentions: 5 },
-				{ tag: 'Torah', mentions: 10 },
-			],
-			speakers: ['Dan McClellan', 'Dan Beecher'],
-		};
+describe("generateFrontmatter", () => {
+  test("generates complete YAML frontmatter with all fields", async () => {
+    const video: ProcessedVideo = {
+      videoId: "abc123",
+      title: 'Episode 1, "Test Episode"',
+      publishedAt: "2024-01-15T10:00:00Z",
+      processedAt: "2024-01-15T12:00:00Z",
+      transcriptPath: "data/transcripts/2024-01-15-test-episode.txt",
+      episodeNumber: 1,
+      tags: [
+        { tag: "theology", mentions: 5 },
+        { tag: "Torah", mentions: 10 },
+      ],
+      speakers: ["Dan McClellan", "Dan Beecher"],
+    };
 
-		const cleanTitle = 'Test Episode';
-		const actual = generateFrontmatter(video, cleanTitle);
+    const cleanTitle = "Test Episode";
+    const actual = generateFrontmatter(video, cleanTitle);
 
-		const expected = await Bun.file('src/hugo/__fixtures__/frontmatter-complete.md').text();
-		expect(actual).toBe(expected);
-	});
+    const expected = await Bun.file(
+      "src/hugo/__fixtures__/frontmatter-complete.md",
+    ).text();
+    expect(actual).toBe(expected);
+  });
 
-	test('omits optional fields when empty', async () => {
-		const video: ProcessedVideo = {
-			videoId: 'xyz789',
-			title: 'Episode 42',
-			publishedAt: '2024-03-20T14:30:00Z',
-			processedAt: '2024-03-20T16:00:00Z',
-			transcriptPath: 'data/transcripts/2024-03-20-episode-42.txt',
-			episodeNumber: 42,
-			// No tags
-			speakers: ['Dan McClellan'], // Only hosts, no guests
-		};
+  test("omits optional fields when empty", async () => {
+    const video: ProcessedVideo = {
+      videoId: "xyz789",
+      title: "Episode 42",
+      publishedAt: "2024-03-20T14:30:00Z",
+      processedAt: "2024-03-20T16:00:00Z",
+      transcriptPath: "data/transcripts/2024-03-20-episode-42.txt",
+      episodeNumber: 42,
+      // No tags
+      speakers: ["Dan McClellan"], // Only hosts, no guests
+    };
 
-		const cleanTitle = 'Solo Episode';
-		const actual = generateFrontmatter(video, cleanTitle);
+    const cleanTitle = "Solo Episode";
+    const actual = generateFrontmatter(video, cleanTitle);
 
-		const expected = await Bun.file('src/hugo/__fixtures__/frontmatter-minimal.md').text();
-		expect(actual).toBe(expected);
-	});
+    const expected = await Bun.file(
+      "src/hugo/__fixtures__/frontmatter-minimal.md",
+    ).text();
+    expect(actual).toBe(expected);
+  });
 
-	test('includes guests when present', async () => {
-		const video: ProcessedVideo = {
-			videoId: 'guest456',
-			title: 'Episode 99',
-			publishedAt: '2024-06-10T09:00:00Z',
-			processedAt: '2024-06-10T11:00:00Z',
-			transcriptPath: 'data/transcripts/2024-06-10-episode-99.txt',
-			episodeNumber: 99,
-			speakers: ['Dan McClellan', 'Andrew Whitehead', 'Dan Beecher'],
-		};
+  test("includes guests when present", async () => {
+    const video: ProcessedVideo = {
+      videoId: "guest456",
+      title: "Episode 99",
+      publishedAt: "2024-06-10T09:00:00Z",
+      processedAt: "2024-06-10T11:00:00Z",
+      transcriptPath: "data/transcripts/2024-06-10-episode-99.txt",
+      episodeNumber: 99,
+      speakers: ["Dan McClellan", "Andrew Whitehead", "Dan Beecher"],
+    };
 
-		const cleanTitle = 'Guest Episode';
-		const actual = generateFrontmatter(video, cleanTitle);
+    const cleanTitle = "Guest Episode";
+    const actual = generateFrontmatter(video, cleanTitle);
 
-		const expected = await Bun.file('src/hugo/__fixtures__/frontmatter-with-guests.md').text();
-		expect(actual).toBe(expected);
-	});
+    const expected = await Bun.file(
+      "src/hugo/__fixtures__/frontmatter-with-guests.md",
+    ).text();
+    expect(actual).toBe(expected);
+  });
 
-	test('includes segments when present', async () => {
-		const video: ProcessedVideo = {
-			videoId: 'seg123',
-			title: 'Episode 50',
-			publishedAt: '2024-05-01T12:00:00Z',
-			processedAt: '2024-05-01T14:00:00Z',
-			transcriptPath: 'data/transcripts/2024-05-01-episode-50.txt',
-			episodeNumber: 50,
-			speakers: ['Dan McClellan', 'Dan Beecher'],
-			segments: [
-				{
-					type: 'chapter-and-verse',
-					startTimestamp: '[00:10:00.000]',
-					confidence: 'verified',
-					detectionMethod: 'manual',
-				},
-				{
-					type: 'getting-academic',
-					startTimestamp: '[00:25:00.000]',
-					confidence: 'verified',
-					detectionMethod: 'manual',
-				},
-			],
-		};
+  test("includes segments when present", async () => {
+    const video: ProcessedVideo = {
+      videoId: "seg123",
+      title: "Episode 50",
+      publishedAt: "2024-05-01T12:00:00Z",
+      processedAt: "2024-05-01T14:00:00Z",
+      transcriptPath: "data/transcripts/2024-05-01-episode-50.txt",
+      episodeNumber: 50,
+      speakers: ["Dan McClellan", "Dan Beecher"],
+      segments: [
+        {
+          type: "chapter-and-verse",
+          startTimestamp: "[00:10:00.000]",
+          confidence: "verified",
+          detectionMethod: "manual",
+        },
+        {
+          type: "getting-academic",
+          startTimestamp: "[00:25:00.000]",
+          confidence: "verified",
+          detectionMethod: "manual",
+        },
+      ],
+    };
 
-		const cleanTitle = 'Segmented Episode';
-		const actual = generateFrontmatter(video, cleanTitle);
+    const cleanTitle = "Segmented Episode";
+    const actual = generateFrontmatter(video, cleanTitle);
 
-		const expected = await Bun.file('src/hugo/__fixtures__/frontmatter-with-segments.md').text();
-		expect(actual).toBe(expected);
-	});
+    const expected = await Bun.file(
+      "src/hugo/__fixtures__/frontmatter-with-segments.md",
+    ).text();
+    expect(actual).toBe(expected);
+  });
 });

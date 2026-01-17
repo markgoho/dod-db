@@ -1,9 +1,9 @@
-import { FieldValue } from 'firebase-admin/firestore';
-import { chunk } from 'llm-chunk';
-import { embeddingChunking } from '../config/chunking.js';
-import { getFirestoreDb as getFirestoreDatabase } from '../config/firebase.js';
-import { embedderModel } from '../config/models.js';
-import { ai } from '../ai.js';
+import { FieldValue } from "firebase-admin/firestore";
+import { chunk } from "llm-chunk";
+import { ai } from "../ai.js";
+import { embeddingChunking } from "../config/chunking.js";
+import { getFirestoreDb as getFirestoreDatabase } from "../config/firebase.js";
+import { embedderModel } from "../config/models.js";
 
 const firestore = getFirestoreDatabase();
 
@@ -22,7 +22,7 @@ export async function indexTranscript(transcript: string): Promise<void> {
     const embedding = response.embeddings?.[0]?.values;
 
     if (embedding !== undefined) {
-      await firestore.collection('documents').add({
+      await firestore.collection("documents").add({
         embedding: FieldValue.vector(embedding),
         text: textChunk,
       });
@@ -47,7 +47,7 @@ export async function retrieveFromFirestore(
 ): Promise<Document[]> {
   // Vector DB solution is TBD - returning empty array for now
   console.warn(
-    'retrieveFromFirestore: Vector search not yet implemented. Returning empty results.',
+    "retrieveFromFirestore: Vector search not yet implemented. Returning empty results.",
   );
   return [];
 }

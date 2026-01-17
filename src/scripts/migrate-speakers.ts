@@ -10,10 +10,10 @@ import {
   extractSpeakersFromTranscript,
   getProcessedVideos,
   saveProcessedVideos,
-} from '../storage/processed-videos.js';
+} from "../storage/processed-videos.js";
 
 async function migrate(): Promise<void> {
-  console.log('Loading processed videos...');
+  console.log("Loading processed videos...");
   const videos = await getProcessedVideos();
 
   console.log(`Found ${videos.length} videos to process\n`);
@@ -39,20 +39,18 @@ async function migrate(): Promise<void> {
 
     if (speakers.length > 0) {
       video.speakers = speakers;
-      console.log(`   ✅ Found speakers: ${speakers.join(', ')}`);
+      console.log(`   ✅ Found speakers: ${speakers.join(", ")}`);
       updated++;
     } else {
-      console.log(
-        '   ⚠️  No speakers found (empty or missing transcript)',
-      );
+      console.log("   ⚠️  No speakers found (empty or missing transcript)");
       failed++;
     }
   }
 
-  console.log('\nSaving updated metadata...');
+  console.log("\nSaving updated metadata...");
   await saveProcessedVideos(videos);
 
-  console.log('\n✨ Migration complete:');
+  console.log("\n✨ Migration complete:");
   console.log(`   Updated: ${updated} videos`);
   console.log(`   Skipped: ${skipped} videos (already had speakers)`);
   console.log(`   Failed:  ${failed} videos (no speakers found)`);

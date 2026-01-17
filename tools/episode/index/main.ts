@@ -1,10 +1,10 @@
-import { DoDTools } from '../../shared/utilities.js';
+import { DoDTools } from "../../shared/utilities.js";
 
 const videoId = DoDTools.getVideoIdFromUrl();
 
 async function init(): Promise<void> {
   if (!videoId) {
-    const heroElement = document.querySelector('#episode-hero');
+    const heroElement = document.querySelector("#episode-hero");
     if (heroElement) {
       heroElement.innerHTML =
         '<div class="empty-state"><div class="empty-state-text">Invalid episode URL</div></div>';
@@ -16,7 +16,7 @@ async function init(): Promise<void> {
     const episode = await DoDTools.getEpisode(videoId);
 
     if (!episode) {
-      const heroElement = document.querySelector('#episode-hero');
+      const heroElement = document.querySelector("#episode-hero");
       if (heroElement) {
         heroElement.innerHTML =
           '<div class="empty-state"><div class="empty-state-text">Episode not found</div></div>';
@@ -32,10 +32,10 @@ async function init(): Promise<void> {
     }
 
     // Update page title
-    document.title = `Episode ${episode.episodeNumber || '?'} - DoD Tools`;
+    document.title = `Episode ${episode.episodeNumber || "?"} - DoD Tools`;
   } catch (error) {
-    console.error('Failed to load episode:', error);
-    const heroElement = document.querySelector('#episode-hero');
+    console.error("Failed to load episode:", error);
+    const heroElement = document.querySelector("#episode-hero");
     if (heroElement) {
       heroElement.innerHTML =
         '<div class="empty-state"><div class="empty-state-text">Failed to load episode</div></div>';
@@ -43,24 +43,27 @@ async function init(): Promise<void> {
   }
 }
 
-function renderEpisode(episode: Awaited<ReturnType<typeof DoDTools.getEpisode>>): void {
+function renderEpisode(
+  episode: Awaited<ReturnType<typeof DoDTools.getEpisode>>,
+): void {
   if (!episode) return;
 
-  const heroElement = document.querySelector('#episode-hero');
-  const breadcrumbTitle = document.querySelector('#breadcrumb-title');
+  const heroElement = document.querySelector("#episode-hero");
+  const breadcrumbTitle = document.querySelector("#breadcrumb-title");
 
   if (breadcrumbTitle) {
-    breadcrumbTitle.textContent = `Episode ${episode.episodeNumber || '?'}`;
+    breadcrumbTitle.textContent = `Episode ${episode.episodeNumber || "?"}`;
   }
 
   const tagCount = episode.tags?.length || 0;
   const segmentCount = episode.segments?.length || 0;
-  const totalMentions = episode.tags?.reduce((sum, t) => sum + t.mentions, 0) || 0;
+  const totalMentions =
+    episode.tags?.reduce((sum, t) => sum + t.mentions, 0) || 0;
 
   if (heroElement) {
     heroElement.innerHTML = `
       <div>
-        <span class="episode-badge">Episode ${episode.episodeNumber || '?'}</span>
+        <span class="episode-badge">Episode ${episode.episodeNumber || "?"}</span>
         <h1>${DoDTools.escapeHtml(episode.title)}</h1>
         <div class="episode-date">${DoDTools.formatDate(episode.publishedAt)}</div>
       </div>
@@ -82,10 +85,12 @@ function renderEpisode(episode: Awaited<ReturnType<typeof DoDTools.getEpisode>>)
   }
 }
 
-function renderTools(episode: Awaited<ReturnType<typeof DoDTools.getEpisode>>): void {
+function renderTools(
+  episode: Awaited<ReturnType<typeof DoDTools.getEpisode>>,
+): void {
   if (!episode) return;
 
-  const toolsGrid = document.querySelector('#tools-grid');
+  const toolsGrid = document.querySelector("#tools-grid");
   const tagCount = episode.tags?.length || 0;
   const segmentCount = episode.segments?.length || 0;
 
@@ -115,12 +120,12 @@ function renderTools(episode: Awaited<ReturnType<typeof DoDTools.getEpisode>>): 
 function renderAudio(): void {
   if (!videoId) return;
 
-  const audioSection = document.querySelector('#audio-section') as HTMLElement;
+  const audioSection = document.querySelector("#audio-section") as HTMLElement;
   if (audioSection) {
-    audioSection.style.display = 'block';
+    audioSection.style.display = "block";
   }
 
-  DoDTools.createAudioPlayer('audio-container', videoId);
+  DoDTools.createAudioPlayer("audio-container", videoId);
 }
 
 init();

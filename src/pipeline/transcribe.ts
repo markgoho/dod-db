@@ -1,5 +1,5 @@
-import { AssemblyAI, type TranscribeParams } from 'assemblyai';
-import { MAX_DURATION_MS } from '../utils/collapse-transcript.js';
+import { AssemblyAI, type TranscribeParams } from "assemblyai";
+import { MAX_DURATION_MS } from "../utils/collapse-transcript.js";
 
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY!,
@@ -11,14 +11,14 @@ const client = new AssemblyAI({
 function formatTimestamp(milliseconds: number): string {
   const hours = Math.floor(milliseconds / 3_600_000)
     .toString()
-    .padStart(2, '0');
+    .padStart(2, "0");
   const minutes = Math.floor((milliseconds % 3_600_000) / 60_000)
     .toString()
-    .padStart(2, '0');
+    .padStart(2, "0");
   const seconds = Math.floor((milliseconds % 60_000) / 1000)
     .toString()
-    .padStart(2, '0');
-  const ms = (milliseconds % 1000).toString().padStart(3, '0');
+    .padStart(2, "0");
+  const ms = (milliseconds % 1000).toString().padStart(3, "0");
   return `[${hours}:${minutes}:${seconds}.${ms}]`;
 }
 
@@ -29,7 +29,7 @@ function formatTimestamp(milliseconds: number): string {
  */
 export async function transcribeAudio(audioFilePath: string): Promise<string> {
   // Upload local audio file to AssemblyAI
-  console.log('  Uploading audio to AssemblyAI...');
+  console.log("  Uploading audio to AssemblyAI...");
   const uploadedUrl = await client.files.upload(audioFilePath);
   const audioUrl = uploadedUrl;
 
@@ -39,20 +39,26 @@ export async function transcribeAudio(audioFilePath: string): Promise<string> {
   };
   const transcript = await client.transcripts.transcribe(parameters);
 
-  if (transcript.status === 'error') {
+  if (transcript.status === "error") {
     throw new Error(`Error transcribing audio: ${transcript.error}`);
   }
 
   // Try to get sentence-level timestamps first (more granular)
   try {
-    console.log('  Retrieving sentence-level timestamps...');
+    console.log("  Retrieving sentence-level timestamps...");
     const sentencesResponse = await client.transcripts.sentences(transcript.id);
 
     if (sentencesResponse.sentences && sentencesResponse.sentences.length > 0) {
       // Group consecutive sentences by speaker to reduce line count
       // Only emit a timestamp when the speaker changes
-      const groups: Array<{ timestamp: number; speaker: string; texts: string[] }> = [];
-      let currentGroup: { timestamp: number; speaker: string; texts: string[] } | undefined;
+      const groups: Array<{
+        timestamp: number;
+        speaker: string;
+        texts: string[];
+      }> = [];
+      let currentGroup:
+        | { timestamp: number; speaker: string; texts: string[] }
+        | undefined;
 
       for (const sentence of sentencesResponse.sentences) {
         // Use first word's timestamp for accuracy (sentence.start can be early due to pause detection)
@@ -60,7 +66,7 @@ export async function transcribeAudio(audioFilePath: string): Promise<string> {
         const timestamp = firstWord?.start ?? sentence.start;
         const speakerLabel = sentence.speaker
           ? `Speaker ${sentence.speaker}`
-          : 'Unknown';
+          : "Unknown";
 
         // Check if we can append to the current group
         const canAppend =
@@ -90,17 +96,17 @@ export async function transcribeAudio(audioFilePath: string): Promise<string> {
       }
 
       // Format groups into transcript lines
-      const transcriptLines = groups.map((group) => {
+      const transcriptLines = groups.map(group => {
         const formattedTime = formatTimestamp(group.timestamp);
-        const text = group.texts.join(' ');
+        const text = group.texts.join(" ");
         return `${formattedTime} ${group.speaker}: ${text}`;
       });
 
-      return transcriptLines.join('\n');
+      return transcriptLines.join("\n");
     }
   } catch {
     console.warn(
-      '  Warning: Could not retrieve sentence-level timestamps, falling back to utterances',
+      "  Warning: Could not retrieve sentence-level timestamps, falling back to utterances",
     );
   }
 
@@ -112,12 +118,12 @@ export async function transcribeAudio(audioFilePath: string): Promise<string> {
       const line = `${formattedTime} Speaker ${utterance.speaker}: ${utterance.text}`;
       transcriptLines.push(line);
     }
-    return transcriptLines.join('\n');
+    return transcriptLines.join("\n");
   }
 
   // Final fallback to raw text
   if (!transcript.text) {
-    throw new Error('No text was transcribed');
+    throw new Error("No text was transcribed");
   }
 
   return transcript.text;

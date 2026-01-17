@@ -1,88 +1,88 @@
-import { z } from 'zod';
-import { youtubeConfig } from '../config/youtube.js';
-import type { SegmentType } from '../config/segment-patterns.js';
+import { z } from "zod";
+import type { SegmentType } from "../config/segment-patterns.js";
+import { youtubeConfig } from "../config/youtube.js";
 import {
   DETECTION_METHODS,
   type DetectionMethod,
-} from '../pipeline/detect-segments.js';
+} from "../pipeline/detect-segments.js";
 
 /**
  * Tag on an episode with mention count.
  * Distinct from TagDefinition in tag-vocabulary.ts.
  */
 export interface EpisodeTag {
-	tag: string; // Canonical tag name: "Moses", "Septuagint"
-	mentions: number; // Count of mentions in this episode
+  tag: string; // Canonical tag name: "Moses", "Septuagint"
+  mentions: number; // Count of mentions in this episode
 }
 
 /**
  * Zod schema for EpisodeTag validation.
  */
 export const EpisodeTagSchema = z.object({
-	tag: z.string(),
-	mentions: z.number().int().positive(),
+  tag: z.string(),
+  mentions: z.number().int().positive(),
 });
 
 /**
  * A detected segment in an episode.
  */
 export interface EpisodeSegment {
-	type: SegmentType;
-	startTimestamp: string; // "[HH:MM:SS.mmm]" format
-	endTimestamp?: string; // undefined if segment extends to end
-	confidence: 'auto' | 'verified';
-	detectionMethod: DetectionMethod;
+  type: SegmentType;
+  startTimestamp: string; // "[HH:MM:SS.mmm]" format
+  endTimestamp?: string; // undefined if segment extends to end
+  confidence: "auto" | "verified";
+  detectionMethod: DetectionMethod;
 }
 
 /**
  * Zod schema for EpisodeSegment validation.
  */
 export const EpisodeSegmentSchema = z.object({
-	type: z.string(),
-	startTimestamp: z.string(),
-	endTimestamp: z.string().optional(),
-	confidence: z.enum(['auto', 'verified']),
-	detectionMethod: z.enum(DETECTION_METHODS),
+  type: z.string(),
+  startTimestamp: z.string(),
+  endTimestamp: z.string().optional(),
+  confidence: z.enum(["auto", "verified"]),
+  detectionMethod: z.enum(DETECTION_METHODS),
 });
 
 /**
  * Zod schema for VideoChapter validation.
  */
 export const VideoChapterSchema = z.object({
-	title: z.string(),
-	startTime: z.number(),
+  title: z.string(),
+  startTime: z.number(),
 });
 
 export const ProcessedVideoSchema = z.object({
-	videoId: z.string().describe('YouTube video ID'),
-	title: z.string().describe('Video title'),
-	publishedAt: z.string().describe('ISO 8601 publication date'),
-	processedAt: z.string().describe('ISO 8601 processing timestamp'),
-	transcriptPath: z.string().describe('Path to the transcript file'),
-	episodeNumber: z
-		.number()
-		.int()
-		.positive()
-		.optional()
-		.describe('Sequential episode number based on publishedAt'),
-	tags: z
-		.array(EpisodeTagSchema)
-		.optional()
-		.describe('Extracted tags with mention counts'),
-	segments: z
-		.array(EpisodeSegmentSchema)
-		.optional()
-		.describe('Detected audio segments'),
-	speakers: z
-		.array(z.string())
-		.optional()
-		.describe(
-			'Array of speaker names in order of appearance (e.g., ["Dan McClellan", "Dan Beecher"])',
-		),
-	chapters: z
-		.array(VideoChapterSchema)
-		.optional()
-		.describe('YouTube chapters defined by the video uploader'),
+  videoId: z.string().describe("YouTube video ID"),
+  title: z.string().describe("Video title"),
+  publishedAt: z.string().describe("ISO 8601 publication date"),
+  processedAt: z.string().describe("ISO 8601 processing timestamp"),
+  transcriptPath: z.string().describe("Path to the transcript file"),
+  episodeNumber: z
+    .number()
+    .int()
+    .positive()
+    .optional()
+    .describe("Sequential episode number based on publishedAt"),
+  tags: z
+    .array(EpisodeTagSchema)
+    .optional()
+    .describe("Extracted tags with mention counts"),
+  segments: z
+    .array(EpisodeSegmentSchema)
+    .optional()
+    .describe("Detected audio segments"),
+  speakers: z
+    .array(z.string())
+    .optional()
+    .describe(
+      'Array of speaker names in order of appearance (e.g., ["Dan McClellan", "Dan Beecher"])',
+    ),
+  chapters: z
+    .array(VideoChapterSchema)
+    .optional()
+    .describe("YouTube chapters defined by the video uploader"),
 });
 
 export type ProcessedVideo = z.infer<typeof ProcessedVideoSchema>;
@@ -106,7 +106,7 @@ export async function loadProcessedVideos(): Promise<ProcessedVideo[]> {
     // Validate array of videos
     return z.array(ProcessedVideoSchema).parse(data);
   } catch (error) {
-    console.error('Error loading processed videos:', error);
+    console.error("Error loading processed videos:", error);
     return [];
   }
 }
@@ -126,7 +126,7 @@ export async function saveProcessedVideos(
  */
 export async function isVideoProcessed(videoId: string): Promise<boolean> {
   const videos = await loadProcessedVideos();
-  return videos.some((video) => video.videoId === videoId);
+  return videos.some(video => video.videoId === videoId);
 }
 
 /**
@@ -138,7 +138,7 @@ export async function markVideoAsProcessed(
   const videos = await loadProcessedVideos();
 
   // Check if already exists
-  const exists = videos.some((v) => v.videoId === video.videoId);
+  const exists = videos.some(v => v.videoId === video.videoId);
   if (exists) {
     console.warn(`Video ${video.videoId} already marked as processed`);
     return undefined;
@@ -152,7 +152,7 @@ export async function markVideoAsProcessed(
   await saveProcessedVideos(withNumbers);
 
   // Log assigned episode number and return it
-  const newVideo = withNumbers.find((v) => v.videoId === video.videoId);
+  const newVideo = withNumbers.find(v => v.videoId === video.videoId);
   if (newVideo?.episodeNumber) {
     console.log(`✓ Assigned episode number: ${newVideo.episodeNumber}`);
     return newVideo.episodeNumber;
@@ -196,7 +196,7 @@ export function computeEpisodeNumbers(
   });
 
   // First pass: Extract episode numbers from titles (authoritative source)
-  const withTitleNumbers = sorted.map((video) => {
+  const withTitleNumbers = sorted.map(video => {
     // If video already has a manually-set episodeNumber, respect it
     if (video.episodeNumber !== undefined) {
       return video;
@@ -218,14 +218,14 @@ export function computeEpisodeNumbers(
   // Find which episode numbers are already taken
   const takenNumbers = new Set(
     withTitleNumbers
-      .map((v) => v.episodeNumber)
+      .map(v => v.episodeNumber)
       .filter((n): n is number => n !== undefined),
   );
 
   // Second pass: Assign sequential numbers to episodes without title numbers
   // Fill gaps in the sequence (e.g., if we have 1-15, 17-20, assign 16 to next unnumbered)
   let nextSequential = 1;
-  const result = withTitleNumbers.map((video) => {
+  const result = withTitleNumbers.map(video => {
     if (video.episodeNumber !== undefined) {
       return video;
     }
@@ -270,7 +270,7 @@ export async function updateVideoTags(
 ): Promise<void> {
   const videos = await loadProcessedVideos();
 
-  const videoIndex = videos.findIndex((v) => v.videoId === videoId);
+  const videoIndex = videos.findIndex(v => v.videoId === videoId);
   if (videoIndex === -1) {
     throw new Error(`Video ${videoId} not found in processed videos`);
   }
@@ -296,7 +296,7 @@ export async function getVideoByEpisodeNumber(
   episodeNumber: number,
 ): Promise<ProcessedVideo | undefined> {
   const videos = await getProcessedVideosWithNumbers();
-  return videos.find((v) => v.episodeNumber === episodeNumber);
+  return videos.find(v => v.episodeNumber === episodeNumber);
 }
 
 /**
@@ -307,7 +307,7 @@ export async function getEpisodeNumber(
   videoId: string,
 ): Promise<number | undefined> {
   const videos = await getProcessedVideosWithNumbers();
-  const video = videos.find((v) => v.videoId === videoId);
+  const video = videos.find(v => v.videoId === videoId);
   return video?.episodeNumber;
 }
 
@@ -320,7 +320,7 @@ export async function updateVideoSegments(
   segments: EpisodeSegment[],
 ): Promise<void> {
   const videos = await loadProcessedVideos();
-  const index = videos.findIndex((v) => v.videoId === videoId);
+  const index = videos.findIndex(v => v.videoId === videoId);
 
   const existingVideo = videos[index];
   if (index === -1 || !existingVideo) {
@@ -343,7 +343,7 @@ export async function getVideoById(
   videoId: string,
 ): Promise<ProcessedVideo | undefined> {
   const videos = await loadProcessedVideos();
-  return videos.find((v) => v.videoId === videoId);
+  return videos.find(v => v.videoId === videoId);
 }
 
 /**
@@ -370,8 +370,7 @@ function levenshteinDistance(string1: string, string2: string): number {
   // Fill matrix
   for (let index1 = 1; index1 <= length1; index1++) {
     for (let index2 = 1; index2 <= length2; index2++) {
-      const cost =
-        string1[index1 - 1] === string2[index2 - 1] ? 0 : 1;
+      const cost = string1[index1 - 1] === string2[index2 - 1] ? 0 : 1;
       const previousRow = matrix[index1 - 1];
       const currentRow = matrix[index1];
       const previousCell = previousRow?.[index2];
@@ -441,7 +440,8 @@ function extractGuestNamesFromTitle(title: string): string[] {
 
   // Pattern: "with Name" or "With Name" (case insensitive)
   // Captures everything after "with " until end or a delimiter
-  const withPattern = /\bwith\s+([^,\n]+?)(?:\s+and\s+([^,\n]+?))?(?:\s*$|[,\n])/gi;
+  const withPattern =
+    /\bwith\s+([^,\n]+?)(?:\s+and\s+([^,\n]+?))?(?:\s*$|[,\n])/gi;
   let match = withPattern.exec(title);
 
   while (match !== null) {
@@ -451,7 +451,7 @@ function extractGuestNamesFromTitle(title: string): string[] {
     if (guest1) {
       // Clean up common artifacts
       const cleanedGuest1 = guest1
-        .replace(/^(Prof\.|Dr\.|Professor|Doctor)\s+/i, '')
+        .replace(/^(Prof\.|Dr\.|Professor|Doctor)\s+/i, "")
         .trim();
       if (cleanedGuest1) {
         guests.push(cleanedGuest1);
@@ -460,7 +460,7 @@ function extractGuestNamesFromTitle(title: string): string[] {
 
     if (guest2) {
       const cleanedGuest2 = guest2
-        .replace(/^(Prof\.|Dr\.|Professor|Doctor)\s+/i, '')
+        .replace(/^(Prof\.|Dr\.|Professor|Doctor)\s+/i, "")
         .trim();
       if (cleanedGuest2) {
         guests.push(cleanedGuest2);
@@ -495,11 +495,13 @@ export async function extractSpeakersFromTranscript(
     }
 
     // Extract guest names from title if provided
-    const titleGuests = videoTitle ? extractGuestNamesFromTitle(videoTitle) : [];
+    const titleGuests = videoTitle
+      ? extractGuestNamesFromTitle(videoTitle)
+      : [];
     const hasTitleGuests = titleGuests.length > 0;
 
     // Host names to always include
-    const hosts = ['Dan McClellan', 'Dan Beecher'];
+    const hosts = ["Dan McClellan", "Dan Beecher"];
 
     // Match pattern: [HH:MM:SS] SpeakerName: or [HH:MM:SS.mmm] SpeakerName:
     const speakerRegex = /^\[(\d{2}:\d{2}:\d{2}(?:\.\d{3})?)\] (.+?):/gm;
@@ -515,7 +517,10 @@ export async function extractSpeakersFromTranscript(
     while (match !== null) {
       const speakerName = match[2]?.trim();
       if (speakerName && speakerName.length >= minimumNameLength) {
-        speakerCounts.set(speakerName, (speakerCounts.get(speakerName) ?? 0) + 1);
+        speakerCounts.set(
+          speakerName,
+          (speakerCounts.get(speakerName) ?? 0) + 1,
+        );
       }
       match = speakerRegex.exec(content);
     }
@@ -527,66 +532,70 @@ export async function extractSpeakersFromTranscript(
     match = speakerRegex.exec(content);
     while (match !== null) {
       const speakerName = match[2]?.trim();
-      if (speakerName && speakerName.length >= minimumNameLength && !seen.has(speakerName)) {
+      if (
+        speakerName &&
+        speakerName.length >= minimumNameLength &&
+        !seen.has(speakerName)
+      ) {
         // Check if this is one of the hosts
         const isHost = hosts.some(
-          (host) => calculateSimilarity(speakerName, host) >= similarityThreshold,
+          host => calculateSimilarity(speakerName, host) >= similarityThreshold,
         );
 
-          if (isHost) {
-            // Add host with their canonical name
-            const canonicalHost = hosts.find(
-              (host) =>
-                calculateSimilarity(speakerName, host) >= similarityThreshold,
-            );
-            if (canonicalHost && !speakers.includes(canonicalHost)) {
-              speakers.push(canonicalHost);
+        if (isHost) {
+          // Add host with their canonical name
+          const canonicalHost = hosts.find(
+            host =>
+              calculateSimilarity(speakerName, host) >= similarityThreshold,
+          );
+          if (canonicalHost && !speakers.includes(canonicalHost)) {
+            speakers.push(canonicalHost);
+          }
+          seen.add(speakerName);
+        } else if (hasTitleGuests) {
+          // If title explicitly mentions guests with "with [Name]", ONLY include those guests
+          // This filters out speakers from clips (e.g., Jordan Peterson in episode 25)
+          const titleGuest = findSimilarSpeaker(
+            speakerName,
+            titleGuests,
+            similarityThreshold,
+          );
+
+          if (titleGuest) {
+            // Use the title spelling as authoritative
+            if (!speakers.includes(titleGuest)) {
+              speakers.push(titleGuest);
             }
             seen.add(speakerName);
-          } else if (hasTitleGuests) {
-            // If title explicitly mentions guests with "with [Name]", ONLY include those guests
-            // This filters out speakers from clips (e.g., Jordan Peterson in episode 25)
-            const titleGuest = findSimilarSpeaker(
+          } else {
+            // Speaker not in title - skip (likely from clips)
+            seen.add(speakerName);
+          }
+        } else {
+          // No guests in title - use fuzzy matching + mention threshold
+          // This handles episodes where guest isn't mentioned in title (e.g., episode 22)
+          // Require minimum mentions to filter out clip speakers
+          const mentionCount = speakerCounts.get(speakerName) ?? 0;
+          if (mentionCount >= minimumMentions) {
+            const similarSpeaker = findSimilarSpeaker(
               speakerName,
-              titleGuests,
+              speakers,
               similarityThreshold,
             );
 
-            if (titleGuest) {
-              // Use the title spelling as authoritative
-              if (!speakers.includes(titleGuest)) {
-                speakers.push(titleGuest);
-              }
+            if (similarSpeaker) {
+              // Name is similar to existing speaker - don't add, but track the variant
               seen.add(speakerName);
             } else {
-              // Speaker not in title - skip (likely from clips)
+              // New unique speaker with enough mentions
+              speakers.push(speakerName);
               seen.add(speakerName);
             }
           } else {
-            // No guests in title - use fuzzy matching + mention threshold
-            // This handles episodes where guest isn't mentioned in title (e.g., episode 22)
-            // Require minimum mentions to filter out clip speakers
-            const mentionCount = speakerCounts.get(speakerName) ?? 0;
-            if (mentionCount >= minimumMentions) {
-              const similarSpeaker = findSimilarSpeaker(
-                speakerName,
-                speakers,
-                similarityThreshold,
-              );
-
-              if (similarSpeaker) {
-                // Name is similar to existing speaker - don't add, but track the variant
-                seen.add(speakerName);
-              } else {
-                // New unique speaker with enough mentions
-                speakers.push(speakerName);
-                seen.add(speakerName);
-              }
-            } else {
-              // Not enough mentions - likely from clips, skip
-              seen.add(speakerName);
-            }
+            // Not enough mentions - likely from clips, skip
+            seen.add(speakerName);
           }
+        }
       }
       match = speakerRegex.exec(content);
     }

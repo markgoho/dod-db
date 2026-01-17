@@ -14,15 +14,15 @@ export const MAX_DURATION_MS = MAX_DURATION_SECONDS * 1000;
  * Parse timestamp string "HH:MM:SS.mmm" or "HH:MM:SS" into total seconds
  */
 export function parseTimestampToSeconds(timestamp: string): number {
-	const match = /^(\d{2}):(\d{2}):(\d{2})(?:\.(\d{3}))?$/.exec(timestamp);
-	if (!match) return 0;
+  const match = /^(\d{2}):(\d{2}):(\d{2})(?:\.(\d{3}))?$/.exec(timestamp);
+  if (!match) return 0;
 
-	const hours = Number.parseInt(match[1] ?? '0', 10);
-	const minutes = Number.parseInt(match[2] ?? '0', 10);
-	const seconds = Number.parseInt(match[3] ?? '0', 10);
-	const milliseconds = Number.parseInt(match[4] ?? '0', 10);
+  const hours = Number.parseInt(match[1] ?? "0", 10);
+  const minutes = Number.parseInt(match[2] ?? "0", 10);
+  const seconds = Number.parseInt(match[3] ?? "0", 10);
+  const milliseconds = Number.parseInt(match[4] ?? "0", 10);
 
-	return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000;
+  return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000;
 }
 
 /**
@@ -36,18 +36,18 @@ export function parseTimestampToSeconds(timestamp: string): number {
  * @returns true if can append, false if should start new group
  */
 export function canAppendToGroup({
-	currentSpeaker,
-	currentTimestampSeconds,
-	newSpeaker,
-	newTimestampSeconds,
+  currentSpeaker,
+  currentTimestampSeconds,
+  newSpeaker,
+  newTimestampSeconds,
 }: {
-	currentSpeaker: string;
-	currentTimestampSeconds: number;
-	newSpeaker: string;
-	newTimestampSeconds: number;
+  currentSpeaker: string;
+  currentTimestampSeconds: number;
+  newSpeaker: string;
+  newTimestampSeconds: number;
 }): boolean {
-	return (
-		currentSpeaker === newSpeaker &&
-		newTimestampSeconds - currentTimestampSeconds <= MAX_DURATION_SECONDS
-	);
+  return (
+    currentSpeaker === newSpeaker &&
+    newTimestampSeconds - currentTimestampSeconds <= MAX_DURATION_SECONDS
+  );
 }

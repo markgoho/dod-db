@@ -1,29 +1,34 @@
-import js from '@eslint/js';
-import unicorn from 'eslint-plugin-unicorn';
-import { defineConfig } from 'eslint/config';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
+import js from "@eslint/js";
+import unicorn from "eslint-plugin-unicorn";
+import { defineConfig } from "eslint/config";
+import globals from "globals";
+import tseslint from "typescript-eslint";
 
 export default defineConfig([
   {
-    ignores: ['functions/lib/**', 'node_modules/**', 'hugo/public/**', 'public/**'],
+    ignores: [
+      "functions/lib/**",
+      "node_modules/**",
+      "hugo/public/**",
+      "public/**",
+    ],
   },
   {
-    files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
     plugins: { js },
-    extends: ['js/recommended'],
+    extends: ["js/recommended"],
     languageOptions: { globals: globals.browser },
   },
   tseslint.configs.recommended,
   {
     rules: {
       // Allow underscore prefix for intentionally unused variables
-      '@typescript-eslint/no-unused-vars': [
-        'error',
+      "@typescript-eslint/no-unused-vars": [
+        "error",
         {
-          argsIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
         },
       ],
     },
@@ -35,15 +40,15 @@ export default defineConfig([
     rules: {
       ...unicorn.configs.recommended.rules,
       // Allow arrow functions in computed signals and similar reactive contexts
-      'unicorn/consistent-function-scoping': [
-        'error',
+      "unicorn/consistent-function-scoping": [
+        "error",
         {
           checkArrowFunctions: false,
         },
       ],
       // Relax abbreviation rules - many common abbreviations are fine
-      'unicorn/prevent-abbreviations': [
-        'error',
+      "unicorn/prevent-abbreviations": [
+        "error",
         {
           allowList: {
             db: true,
@@ -72,28 +77,28 @@ export default defineConfig([
         },
       ],
       // Allow sort() mutation - toSorted() isn't always appropriate
-      'unicorn/no-array-sort': 'off',
+      "unicorn/no-array-sort": "off",
       // Allow path imports style
-      'unicorn/import-style': 'off',
+      "unicorn/import-style": "off",
       // Allow process.exit() in CLI scripts
-      'unicorn/no-process-exit': 'off',
+      "unicorn/no-process-exit": "off",
       // Allow top-level async patterns
-      'unicorn/prefer-top-level-await': 'off',
+      "unicorn/prefer-top-level-await": "off",
       // Allow array callback references (e.g., .filter(isValid))
-      'unicorn/no-array-callback-reference': 'off',
+      "unicorn/no-array-callback-reference": "off",
       // Allow consecutive ignored values in destructuring
-      'unicorn/no-unreadable-array-destructuring': 'off',
+      "unicorn/no-unreadable-array-destructuring": "off",
     },
   },
   // File-specific null overrides
   {
     files: [
-      'src/hugo/**/*.ts',
-      'src/utils/hugo-frontmatter.ts',
-      'tools/**/*.ts',
-      'src/scripts/*-ui.ts',
-      'src/scripts/tools-server.ts',
-      'experiments/**/*.ts',
+      "src/hugo/**/*.ts",
+      "src/utils/hugo-frontmatter.ts",
+      "tools/**/*.ts",
+      "src/scripts/*-ui.ts",
+      "src/scripts/tools-server.ts",
+      "experiments/**/*.ts",
     ],
     rules: {
       // Allow null in:
@@ -102,7 +107,7 @@ export default defineConfig([
       // - UI scripts: DOM manipulation and state management
       // - tools-server.ts: HTTP Response API (new Response(null, ...))
       // - Experiments: Allow flexibility in experimental code
-      'unicorn/no-null': 'off',
+      "unicorn/no-null": "off",
     },
   },
 ]);

@@ -3,14 +3,20 @@
  * Uses Gemini AI to discover new high-value tags (5+ mentions).
  */
 
-import { z } from 'zod';
-import { ai } from '../ai.js';
-import { speakerIdModel } from '../config/models.js';
-import { TagDiscoverySchema, tagExtractionPrompt } from '../prompts/tag-extraction.js';
-import { tagVocabulary, getAllSearchableTerms } from '../config/tag-vocabulary.js';
-import type { TagCategory } from '../config/tag-vocabulary.js';
-import { addTagToVocabulary, tagExists } from './add-tag-to-vocabulary.js';
-import type { EpisodeTag } from '../storage/processed-videos.js';
+import { z } from "zod";
+import { ai } from "../ai.js";
+import { speakerIdModel } from "../config/models.js";
+import type { TagCategory } from "../config/tag-vocabulary.js";
+import {
+  getAllSearchableTerms,
+  tagVocabulary,
+} from "../config/tag-vocabulary.js";
+import {
+  TagDiscoverySchema,
+  tagExtractionPrompt,
+} from "../prompts/tag-extraction.js";
+import type { EpisodeTag } from "../storage/processed-videos.js";
+import { addTagToVocabulary, tagExists } from "./add-tag-to-vocabulary.js";
 
 /**
  * Use LLM to discover new tags not in vocabulary.
@@ -23,112 +29,129 @@ import type { EpisodeTag } from '../storage/processed-videos.js';
  * @returns Array of newly discovered tags
  */
 export async function extractTagsLlm(
-	transcript: string,
-	existingTags: EpisodeTag[],
-	allowedCategories?: TagCategory[],
-	episodeNumber?: number,
+  transcript: string,
+  existingTags: EpisodeTag[],
+  allowedCategories?: TagCategory[],
+  episodeNumber?: number,
 ): Promise<EpisodeTag[]> {
-	// Build comprehensive exclusion set from vocabulary (canonical + all variations)
-	const vocabularyTerms = getAllSearchableTerms(tagVocabulary);
-	const allKnownTerms = new Set<string>();
-	for (const term of vocabularyTerms.keys()) {
-		allKnownTerms.add(term.toLowerCase());
-	}
+  // Build comprehensive exclusion set from vocabulary (canonical + all variations)
+  const vocabularyTerms = getAllSearchableTerms(tagVocabulary);
+  const allKnownTerms = new Set<string>();
+  for (const term of vocabularyTerms.keys()) {
+    allKnownTerms.add(term.toLowerCase());
+  }
 
-	// Also add existing tags (in case deterministic found something)
-	for (const t of existingTags) {
-		allKnownTerms.add(t.tag.toLowerCase());
-	}
+  // Also add existing tags (in case deterministic found something)
+  for (const t of existingTags) {
+    allKnownTerms.add(t.tag.toLowerCase());
+  }
 
-	try {
-		const startTime = Date.now();
-		const transcriptLength = transcript.length;
-		console.log(`    → Sending ${transcriptLength.toLocaleString()} chars to Gemini 2.0 Flash...`);
+  try {
+    const startTime = Date.now();
+    const transcriptLength = transcript.length;
+    console.log(
+      `    → Sending ${transcriptLength.toLocaleString()} chars to Gemini 2.0 Flash...`,
+    );
 
-		const response = await ai.models.generateContent({
-			model: speakerIdModel, // gemini-2.0-flash (fast, cheap)
-			contents: tagExtractionPrompt(transcript, [...allKnownTerms], allowedCategories),
-			config: {
-				responseMimeType: 'application/json',
-				responseSchema: z.toJSONSchema(TagDiscoverySchema),
-			},
-		});
+    const response = await ai.models.generateContent({
+      model: speakerIdModel, // gemini-2.0-flash (fast, cheap)
+      contents: tagExtractionPrompt(
+        transcript,
+        [...allKnownTerms],
+        allowedCategories,
+      ),
+      config: {
+        responseMimeType: "application/json",
+        responseSchema: z.toJSONSchema(TagDiscoverySchema),
+      },
+    });
 
-		const elapsed = Date.now() - startTime;
-		console.log(`    ← LLM responded in ${elapsed}ms`);
+    const elapsed = Date.now() - startTime;
+    console.log(`    ← LLM responded in ${elapsed}ms`);
 
-		const responseText = response.text;
-		if (!responseText) {
-			console.warn('  ⚠ Tag discovery returned empty response');
-			return [];
-		}
+    const responseText = response.text;
+    if (!responseText) {
+      console.warn("  ⚠ Tag discovery returned empty response");
+      return [];
+    }
 
-		const output = TagDiscoverySchema.parse(JSON.parse(responseText));
+    const output = TagDiscoverySchema.parse(JSON.parse(responseText));
 
-		// Filter to only tags with 3+ mentions AND not in vocabulary AND in allowed categories
-		// (double-check in case LLM still returns a vocabulary term or wrong category)
-		const validTags = output.tags.filter((t) => {
-			if (t.mentions < 3) return false;
-			if (allKnownTerms.has(t.tag.toLowerCase())) {
-				console.log(`    Filtering out "${t.tag}" (already in vocabulary)`);
-				return false;
-			}
-			if (allowedCategories && !allowedCategories.includes(t.category as TagCategory)) {
-				console.log(`    Filtering out "${t.tag}" (category "${t.category}" not in allowed list)`);
-				return false;
-			}
-			return true;
-		});
+    // Filter to only tags with 3+ mentions AND not in vocabulary AND in allowed categories
+    // (double-check in case LLM still returns a vocabulary term or wrong category)
+    const validTags = output.tags.filter(t => {
+      if (t.mentions < 3) return false;
+      if (allKnownTerms.has(t.tag.toLowerCase())) {
+        console.log(`    Filtering out "${t.tag}" (already in vocabulary)`);
+        return false;
+      }
+      if (
+        allowedCategories &&
+        !allowedCategories.includes(t.category as TagCategory)
+      ) {
+        console.log(
+          `    Filtering out "${t.tag}" (category "${t.category}" not in allowed list)`,
+        );
+        return false;
+      }
+      return true;
+    });
 
-		// Auto-add discovered tags to vocabulary with 'proposed' status
-		const uncategorizedTags: Array<{ tag: string; mentions: number }> = [];
+    // Auto-add discovered tags to vocabulary with 'proposed' status
+    const uncategorizedTags: Array<{ tag: string; mentions: number }> = [];
 
-		for (const tag of validTags) {
-			// Skip 'other' category - needs manual categorization
-			if (tag.category === 'other') {
-				uncategorizedTags.push({ tag: tag.tag, mentions: tag.mentions });
-				continue;
-			}
+    for (const tag of validTags) {
+      // Skip 'other' category - needs manual categorization
+      if (tag.category === "other") {
+        uncategorizedTags.push({ tag: tag.tag, mentions: tag.mentions });
+        continue;
+      }
 
-			// Check if already added (e.g., from a previous run)
-			if (tagExists(tag.tag)) {
-				console.log(`    "${tag.tag}" already exists in vocabulary`);
-				continue;
-			}
+      // Check if already added (e.g., from a previous run)
+      if (tagExists(tag.tag)) {
+        console.log(`    "${tag.tag}" already exists in vocabulary`);
+        continue;
+      }
 
-			try {
-				await addTagToVocabulary({
-					canonical: tag.tag,
-					variations: tag.variations ?? [],
-					category: tag.category as TagCategory,
-					status: 'proposed',
-					description: tag.description,
-					caseSensitive: tag.caseSensitive,
-					addedInEpisode: episodeNumber,
-				});
-			} catch (error) {
-				console.error(`    Failed to add "${tag.tag}" to vocabulary:`, error);
-			}
-		}
+      try {
+        await addTagToVocabulary({
+          canonical: tag.tag,
+          variations: tag.variations ?? [],
+          category: tag.category as TagCategory,
+          status: "proposed",
+          description: tag.description,
+          caseSensitive: tag.caseSensitive,
+          addedInEpisode: episodeNumber,
+        });
+      } catch (error) {
+        console.error(`    Failed to add "${tag.tag}" to vocabulary:`, error);
+      }
+    }
 
-		// Report uncategorized tags that need manual review
-		if (uncategorizedTags.length > 0) {
-			console.log('\n⚠️  TAGS NEEDING CATEGORIZATION:');
-			console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-			for (const tag of uncategorizedTags.sort((a, b) => b.mentions - a.mentions)) {
-				console.log(`  • ${tag.tag} (${tag.mentions} mentions) - needs category`);
-			}
-			console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-			console.log('Categories: character, person, place, people, literature, theology, scholarship, religion, event');
-			console.log('Or suggest a NEW category if none fit!\n');
-		}
+    // Report uncategorized tags that need manual review
+    if (uncategorizedTags.length > 0) {
+      console.log("\n⚠️  TAGS NEEDING CATEGORIZATION:");
+      console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+      for (const tag of uncategorizedTags.sort(
+        (a, b) => b.mentions - a.mentions,
+      )) {
+        console.log(
+          `  • ${tag.tag} (${tag.mentions} mentions) - needs category`,
+        );
+      }
+      console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+      console.log(
+        "Categories: character, person, place, people, literature, theology, scholarship, religion, event",
+      );
+      console.log("Or suggest a NEW category if none fit!\n");
+    }
 
-		return validTags.map((t) => ({
-			tag: t.tag,
-			mentions: t.mentions,
-		}));
-	} catch (error) {
-		console.error('  ⚠ Tag discovery failed:', error);
-		return [];
-	}
+    return validTags.map(t => ({
+      tag: t.tag,
+      mentions: t.mentions,
+    }));
+  } catch (error) {
+    console.error("  ⚠ Tag discovery failed:", error);
+    return [];
+  }
 }

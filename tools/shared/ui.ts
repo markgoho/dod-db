@@ -2,10 +2,10 @@
  * UI component utilities for DoD Tools
  */
 
-import type { BreadcrumbItem, AudioPlayerOptions, Episode } from './types.js';
-import { escapeHtml, formatDate } from './formatting.js';
-import { secondsToTimestamp, timestampToSeconds } from './timestamp.js';
-import type { TagCategory } from '../../src/config/tag-vocabulary.js';
+import type { TagCategory } from "../../src/config/tag-vocabulary.js";
+import { escapeHtml, formatDate } from "./formatting.js";
+import { secondsToTimestamp, timestampToSeconds } from "./timestamp.js";
+import type { AudioPlayerOptions, BreadcrumbItem, Episode } from "./types.js";
 
 // Render breadcrumb navigation
 export function renderBreadcrumbs(items: BreadcrumbItem[]): string {
@@ -15,17 +15,17 @@ export function renderBreadcrumbs(items: BreadcrumbItem[]): string {
       if (isLast) {
         return `<span class="current">${escapeHtml(item.label)}</span>`;
       }
-      return `<a href="${item.href || '#'}">${escapeHtml(item.label)}</a><span class="separator">&gt;</span>`;
+      return `<a href="${item.href || "#"}">${escapeHtml(item.label)}</a><span class="separator">&gt;</span>`;
     })
-    .join('');
+    .join("");
 }
 
 // Show toast notification
 export function showToast(
   message: string,
-  type: 'success' | 'error' | 'warning' | 'info' = 'info',
+  type: "success" | "error" | "warning" | "info" = "info",
 ): void {
-  const toast = document.createElement('div');
+  const toast = document.createElement("div");
   toast.className = `toast ${type}`;
   toast.textContent = message;
   document.body.append(toast);
@@ -41,24 +41,24 @@ export function createAudioPlayer(
   const container = document.querySelector(`#${containerId}`);
   if (!container) return undefined;
 
-  const audio = document.createElement('audio');
+  const audio = document.createElement("audio");
   audio.controls = true;
   audio.src = `/api/audio/${videoId}`;
-  audio.style.width = '100%';
+  audio.style.width = "100%";
 
-  const timeDisplay = document.createElement('span');
-  timeDisplay.className = 'audio-time';
-  timeDisplay.textContent = '00:00:00';
+  const timeDisplay = document.createElement("span");
+  timeDisplay.className = "audio-time";
+  timeDisplay.textContent = "00:00:00";
 
-  audio.addEventListener('timeupdate', () => {
+  audio.addEventListener("timeupdate", () => {
     timeDisplay.textContent = secondsToTimestamp(audio.currentTime);
     options.onTimeUpdate?.(audio.currentTime);
   });
 
-  audio.addEventListener('play', () => options.onPlay?.());
-  audio.addEventListener('pause', () => options.onPause?.());
+  audio.addEventListener("play", () => options.onPlay?.());
+  audio.addEventListener("pause", () => options.onPause?.());
 
-  container.innerHTML = '';
+  container.innerHTML = "";
   container.append(audio);
   container.append(timeDisplay);
 
@@ -89,12 +89,12 @@ export function renderEpisodeCard(
 
   const href = linkTo || `/episode/${episode.videoId}`;
 
-  let tagsHtml = '';
+  let tagsHtml = "";
   if (showTags && tagsPreview.length > 0) {
     tagsHtml = `
       <div class="episode-tags">
-        ${tagsPreview.map((tag) => `<span class="tag-badge">${escapeHtml(tag.tag)} (${tag.mentions})</span>`).join('')}
-        ${moreCount > 0 ? `<span class="tag-badge">+${moreCount} more</span>` : ''}
+        ${tagsPreview.map(tag => `<span class="tag-badge">${escapeHtml(tag.tag)} (${tag.mentions})</span>`).join("")}
+        ${moreCount > 0 ? `<span class="tag-badge">+${moreCount} more</span>` : ""}
       </div>
     `;
   }
@@ -102,7 +102,7 @@ export function renderEpisodeCard(
   return `
     <a href="${href}" class="episode-card">
       <div class="episode-header">
-        <div class="episode-number">Episode ${episode.episodeNumber || '?'}</div>
+        <div class="episode-number">Episode ${episode.episodeNumber || "?"}</div>
         <div class="episode-title">${escapeHtml(episode.title)}</div>
       </div>
       <div class="episode-meta">

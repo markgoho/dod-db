@@ -7,8 +7,12 @@
 
 {{ define "main" }}
   <div class="episode-single-header">
-    <span class="episode-single-number">Episode {{ .Params.episodeNumber }}</span>
-    <time class="episode-single-date" datetime="{{ .Date.Format "2006-01-02" }}">
+    <span class="episode-single-number"
+      >Episode {{ .Params.episodeNumber }}</span
+    >
+    <time
+      class="episode-single-date"
+      datetime="{{ .Date.Format "2006-01-02" }}">
       {{ .Date.Format "January 2, 2006" }}
     </time>
   </div>
@@ -19,7 +23,8 @@
 
   {{ if gt (len $guests) 0 }}
     <div class="episode-single-guest">
-      with {{ delimit $guests ", " }}
+      with
+      {{ delimit $guests ", " }}
     </div>
   {{ end }}
 
@@ -31,37 +36,41 @@
     </div>
   {{ end }}
 
+
   <div class="episode-layout">
     {{/* Sticky sidebar with video + segments */}}
     <div class="episode-sidebar">
       {{/* Video Player */}}
       {{ with .Params.videoId }}
-      <div class="video-player" data-video-id="{{ . }}">
-        <a href="https://www.youtube.com/watch?v={{ . }}"
-           target="_blank"
-           rel="noopener">
-          <img
-            src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
-            alt="Watch {{ $.Title }} on YouTube"
-            loading="lazy"
-            onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'"
-          />
-        </a>
-      </div>
+        <div class="video-player" data-video-id="{{ . }}">
+          <a
+            href="https://www.youtube.com/watch?v={{ . }}"
+            target="_blank"
+            rel="noopener">
+            <img
+              src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
+              alt="Watch {{ $.Title }} on YouTube"
+              loading="lazy"
+              onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'" />
+          </a>
+        </div>
       {{ end }}
 
       {{/* Segments */}}
       {{ if .Params.segmentData }}
-      <div class="episode-segments">
-        <h2 class="episode-segments__title">Segments</h2>
-        <div class="episode-segments__list">
-          {{ range .Params.segmentData }}
-          <button class="segment-chip" data-start="{{ .startSeconds }}" type="button">
-            {{ .label }}
-          </button>
-          {{ end }}
+        <div class="episode-segments">
+          <h2 class="episode-segments__title">Segments</h2>
+          <div class="episode-segments__list">
+            {{ range .Params.segmentData }}
+              <button
+                class="segment-chip"
+                data-start="{{ .startSeconds }}"
+                type="button">
+                {{ .label }}
+              </button>
+            {{ end }}
+          </div>
         </div>
-      </div>
       {{ end }}
     </div>
 
@@ -70,7 +79,7 @@
       <div class="transcript-header">
         <h2 class="transcript-header-title">Transcript</h2>
         <label class="auto-scroll-toggle">
-          <input type="checkbox" id="auto-scroll-checkbox" checked>
+          <input type="checkbox" id="auto-scroll-checkbox" checked />
           <span class="toggle-switch"></span>
           <span class="toggle-label">Auto-scroll</span>
         </label>

@@ -1,6 +1,6 @@
-import { qaModel } from '../config/models.js';
-import { ai } from '../ai.js';
-import { retrieveFromFirestore } from '../storage/firestore.js';
+import { ai } from "../ai.js";
+import { qaModel } from "../config/models.js";
+import { retrieveFromFirestore } from "../storage/firestore.js";
 
 /**
  * Ask a question about transcripts and get an answer.
@@ -15,11 +15,11 @@ export async function transcriptQA({
   if (docs.length === 0) {
     return {
       answer:
-        'I could not find any relevant information in the transcript to answer your question.',
+        "I could not find any relevant information in the transcript to answer your question.",
     };
   }
 
-  const context = docs.map((document_) => document_.text).join('\n\n');
+  const context = docs.map(document_ => document_.text).join("\n\n");
 
   const response = await ai.models.generateContent({
     model: qaModel,
@@ -31,5 +31,5 @@ ${context}
 Question: ${query}`,
   });
 
-  return { answer: response.text ?? '' };
+  return { answer: response.text ?? "" };
 }

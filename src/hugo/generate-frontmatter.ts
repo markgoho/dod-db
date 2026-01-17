@@ -2,48 +2,53 @@
  * Generate YAML frontmatter for Hugo episode pages.
  */
 
-import type { ProcessedVideo } from '../storage/processed-videos.js';
-import { formatSegmentsForFrontmatter, getGuestSpeakers } from './shared.js';
+import type { ProcessedVideo } from "../storage/processed-videos.js";
+import { formatSegmentsForFrontmatter, getGuestSpeakers } from "./shared.js";
 
 /**
  * Generate YAML frontmatter for an episode using Bun.YAML.
  */
-export function generateFrontmatter(video: ProcessedVideo, cleanTitle: string): string {
-	const tags = video.tags?.map((t) => t.tag) ?? [];
-	const guests = getGuestSpeakers(video.speakers);
-	const { segments, segmentData } = formatSegmentsForFrontmatter(video.segments);
+export function generateFrontmatter(
+  video: ProcessedVideo,
+  cleanTitle: string,
+): string {
+  const tags = video.tags?.map(t => t.tag) ?? [];
+  const guests = getGuestSpeakers(video.speakers);
+  const { segments, segmentData } = formatSegmentsForFrontmatter(
+    video.segments,
+  );
 
-	// Build frontmatter object
-	// Convert date string to ISO format for consistent YAML output
-	const frontmatter: Record<string, unknown> = {
-		title: cleanTitle,
-		date: new Date(video.publishedAt).toISOString(),
-		episodeNumber: video.episodeNumber,
-		videoId: video.videoId,
-		aliases: [`/episodes/${video.episodeNumber}/`],
-	};
+  // Build frontmatter object
+  // Convert date string to ISO format for consistent YAML output
+  const frontmatter: Record<string, unknown> = {
+    title: cleanTitle,
+    date: new Date(video.publishedAt).toISOString(),
+    episodeNumber: video.episodeNumber,
+    videoId: video.videoId,
+    aliases: [`/episodes/${video.episodeNumber}/`],
+  };
 
-	// Add optional fields only if they have values
-	if (tags.length > 0) {
-		frontmatter.tags = tags;
-	}
+  // Add optional fields only if they have values
+  if (tags.length > 0) {
+    frontmatter.tags = tags;
+  }
 
-	if (guests.length > 0) {
-		frontmatter.guests = guests;
-	}
+  if (guests.length > 0) {
+    frontmatter.guests = guests;
+  }
 
-	if (segments.length > 0) {
-		frontmatter.segments = segments;
-	}
+  if (segments.length > 0) {
+    frontmatter.segments = segments;
+  }
 
-	if (segmentData.length > 0) {
-		frontmatter.segmentData = segmentData;
-	}
+  if (segmentData.length > 0) {
+    frontmatter.segmentData = segmentData;
+  }
 
-	frontmatter.draft = false;
+  frontmatter.draft = false;
 
-	// Use Bun.YAML to serialize (with 2-space indentation for block-style output)
-	const frontmatterYaml = Bun.YAML.stringify(frontmatter, null, 2);
+  // Use Bun.YAML to serialize (with 2-space indentation for block-style output)
+  const frontmatterYaml = Bun.YAML.stringify(frontmatter, null, 2);
 
-	return `---\n${frontmatterYaml}\n---`;
+  return `---\n${frontmatterYaml}\n---`;
 }

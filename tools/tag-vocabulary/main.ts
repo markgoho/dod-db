@@ -3,19 +3,19 @@
  * Client-side TypeScript for the tag vocabulary tool
  */
 
-import type { TagCategory } from '../../src/config/tag-vocabulary.js';
+import type { TagCategory } from "../../src/config/tag-vocabulary.js";
 import {
+  addTagWithPolling,
   API_BASE_URL,
   CATEGORY_LABELS,
-  formatDate,
   escapeHtml,
-  updateFormButtonState,
-  addTagWithPolling,
-  reprocessTag as reprocessTagShared,
-  reprocessAllEpisodes,
-  startJobPollingWithUI,
+  formatDate,
   getTagFormData,
-} from '../shared/utilities.js';
+  reprocessAllEpisodes,
+  reprocessTag as reprocessTagShared,
+  startJobPollingWithUI,
+  updateFormButtonState,
+} from "../shared/utilities.js";
 
 // Available tag categories (loaded from API)
 let availableCategories: TagCategory[] = [];
@@ -23,7 +23,7 @@ let availableCategories: TagCategory[] = [];
 // Get tag category class
 function getTagCategoryClass(_tagName: string): string {
   // For now, return default; will be enhanced in Phase 2 with vocabulary data
-  return '';
+  return "";
 }
 
 interface Episode {
@@ -43,7 +43,7 @@ function renderEpisodeCard(episode: Episode): string {
   return `
     <div class="episode-card" onclick="toggleEpisodeDetail('${episode.videoId}')">
       <div class="episode-header">
-        <div class="episode-number">Episode ${episode.episodeNumber || '?'}</div>
+        <div class="episode-number">Episode ${episode.episodeNumber || "?"}</div>
         <div class="episode-title">${episode.title}</div>
       </div>
       <div class="episode-meta">
@@ -53,27 +53,27 @@ function renderEpisodeCard(episode: Episode): string {
       <div class="episode-tags">
         ${tagsPreview
           .map(
-            (tag) => `
+            tag => `
           <span class="tag-badge ${getTagCategoryClass(tag.tag)}">
             ${tag.tag} (${tag.mentions})
           </span>
         `,
           )
-          .join('')}
-        ${moreCount > 0 ? `<span class="tag-badge">+${moreCount} more</span>` : ''}
+          .join("")}
+        ${moreCount > 0 ? `<span class="tag-badge">+${moreCount} more</span>` : ""}
       </div>
       <div class="episode-detail" id="detail-${episode.videoId}">
         <div class="tag-list">
           ${(episode.tags || [])
             .map(
-              (tag) => `
+              tag => `
             <div class="tag-detail">
               <span class="tag-name">${tag.tag}</span>
               <span class="tag-mentions">${tag.mentions} mentions</span>
             </div>
           `,
             )
-            .join('')}
+            .join("")}
         </div>
       </div>
     </div>
@@ -84,7 +84,7 @@ function renderEpisodeCard(episode: Episode): string {
 function toggleEpisodeDetail(videoId: string): void {
   const detail = document.querySelector(`#detail-${videoId}`);
   if (detail) {
-    detail.classList.toggle('show');
+    detail.classList.toggle("show");
   }
 }
 
@@ -96,7 +96,7 @@ async function loadEpisodes(): Promise<void> {
   try {
     const response = await fetch(`${API_BASE_URL}/api/tag-vocabulary/episodes`);
     if (!response.ok) {
-      throw new Error('Failed to load episodes');
+      throw new Error("Failed to load episodes");
     }
 
     allEpisodes = await response.json();
@@ -108,13 +108,14 @@ async function loadEpisodes(): Promise<void> {
       0,
     );
     const avgTags =
-      totalEpisodes > 0 ? (totalTags / totalEpisodes).toFixed(1) : '0';
+      totalEpisodes > 0 ? (totalTags / totalEpisodes).toFixed(1) : "0";
 
-    const totalEpisodesElement = document.querySelector('#total-episodes');
-    const totalTagsElement = document.querySelector('#total-tags');
-    const avgTagsElement = document.querySelector('#avg-tags');
+    const totalEpisodesElement = document.querySelector("#total-episodes");
+    const totalTagsElement = document.querySelector("#total-tags");
+    const avgTagsElement = document.querySelector("#avg-tags");
 
-    if (totalEpisodesElement) totalEpisodesElement.textContent = totalEpisodes.toString();
+    if (totalEpisodesElement)
+      totalEpisodesElement.textContent = totalEpisodes.toString();
     if (totalTagsElement) totalTagsElement.textContent = totalTags.toString();
     if (avgTagsElement) avgTagsElement.textContent = avgTags;
 
@@ -124,13 +125,13 @@ async function loadEpisodes(): Promise<void> {
     // Render episodes with initial filter
     filterEpisodes();
   } catch (error) {
-    console.error('Error loading episodes:', error);
-    const container = document.querySelector('#episodes-container');
+    console.error("Error loading episodes:", error);
+    const container = document.querySelector("#episodes-container");
     if (container) {
       container.innerHTML = `
         <div class="empty-state">
           <div class="empty-state-icon">⚠️</div>
-          <div class="empty-state-text">Error loading episodes: ${error instanceof Error ? error.message : 'Unknown error'}</div>
+          <div class="empty-state-text">Error loading episodes: ${error instanceof Error ? error.message : "Unknown error"}</div>
         </div>
       `;
     }
@@ -148,7 +149,7 @@ function populateTagFilter(episodes: Episode[]): void {
     }
   }
 
-  const tagFilter = document.querySelector('#tag-filter') as HTMLSelectElement;
+  const tagFilter = document.querySelector("#tag-filter") as HTMLSelectElement;
   if (!tagFilter) return;
 
   const sortedTags = [...allTags].sort();
@@ -156,18 +157,20 @@ function populateTagFilter(episodes: Episode[]): void {
   // Keep "All tags" option and add all unique tags
   tagFilter.innerHTML =
     '<option value="">All tags</option>' +
-    sortedTags.map((tag) => `<option value="${tag}">${tag}</option>`).join('');
+    sortedTags.map(tag => `<option value="${tag}">${tag}</option>`).join("");
 }
 
 // Filter and sort episodes based on user input
 function filterEpisodes(): void {
   const searchInput = document.querySelector(
-    '#episode-search',
+    "#episode-search",
   ) as HTMLInputElement;
   const tagFilterElement = document.querySelector(
-    '#tag-filter',
+    "#tag-filter",
   ) as HTMLSelectElement;
-  const sortSelect = document.querySelector('#sort-select') as HTMLSelectElement;
+  const sortSelect = document.querySelector(
+    "#sort-select",
+  ) as HTMLSelectElement;
 
   if (!searchInput || !tagFilterElement || !sortSelect) return;
 
@@ -176,7 +179,7 @@ function filterEpisodes(): void {
   const sortOption = sortSelect.value;
 
   // Filter episodes
-  const filtered = allEpisodes.filter((episode) => {
+  const filtered = allEpisodes.filter(episode => {
     // Search filter
     const matchesSearch =
       !searchTerm || episode.title.toLowerCase().includes(searchTerm);
@@ -184,7 +187,7 @@ function filterEpisodes(): void {
     // Tag filter
     const matchesTag =
       !selectedTag ||
-      (episode.tags && episode.tags.some((t) => t.tag === selectedTag));
+      (episode.tags && episode.tags.some(t => t.tag === selectedTag));
 
     return matchesSearch && matchesTag;
   });
@@ -192,22 +195,22 @@ function filterEpisodes(): void {
   // Sort episodes
   filtered.sort((a, b) => {
     switch (sortOption) {
-      case 'episode-desc': {
+      case "episode-desc": {
         return (b.episodeNumber || 0) - (a.episodeNumber || 0);
       }
-      case 'episode-asc': {
+      case "episode-asc": {
         return (a.episodeNumber || 0) - (b.episodeNumber || 0);
       }
-      case 'date-desc': {
+      case "date-desc": {
         return b.publishedAt.localeCompare(a.publishedAt);
       }
-      case 'date-asc': {
+      case "date-asc": {
         return a.publishedAt.localeCompare(b.publishedAt);
       }
-      case 'tags-desc': {
+      case "tags-desc": {
         return (b.tags?.length || 0) - (a.tags?.length || 0);
       }
-      case 'tags-asc': {
+      case "tags-asc": {
         return (a.tags?.length || 0) - (b.tags?.length || 0);
       }
       default: {
@@ -222,7 +225,7 @@ function filterEpisodes(): void {
 
 // Render episodes grid
 function renderEpisodesGrid(episodes: Episode[]): void {
-  const container = document.querySelector('#episodes-container');
+  const container = document.querySelector("#episodes-container");
   if (!container) return;
 
   if (episodes.length === 0) {
@@ -237,7 +240,7 @@ function renderEpisodesGrid(episodes: Episode[]): void {
 
   container.innerHTML = `
     <div class="episodes-grid">
-      ${episodes.map(renderEpisodeCard).join('')}
+      ${episodes.map(renderEpisodeCard).join("")}
     </div>
   `;
 }
@@ -254,14 +257,16 @@ interface TagDefinition {
 
 // Load and display vocabulary
 let allVocabulary: TagDefinition[] = [];
-let currentCategory = 'all';
+let currentCategory = "all";
 
 // Load available categories from API
 async function loadCategories(): Promise<void> {
   try {
-    const response = await fetch(`${API_BASE_URL}/api/tag-vocabulary/categories`);
+    const response = await fetch(
+      `${API_BASE_URL}/api/tag-vocabulary/categories`,
+    );
     if (!response.ok) {
-      throw new Error('Failed to load categories');
+      throw new Error("Failed to load categories");
     }
     availableCategories = await response.json();
 
@@ -271,17 +276,17 @@ async function loadCategories(): Promise<void> {
     // Populate category select dropdowns
     populateCategorySelects();
   } catch (error) {
-    console.error('Error loading categories:', error);
+    console.error("Error loading categories:", error);
     // Fallback to hardcoded categories if API fails
     availableCategories = [
-      'character',
-      'person',
-      'place',
-      'people',
-      'literature',
-      'theology',
-      'scholarship',
-      'religion',
+      "character",
+      "person",
+      "place",
+      "people",
+      "literature",
+      "theology",
+      "scholarship",
+      "religion",
     ];
     renderCategoryTabs();
     populateCategorySelects();
@@ -290,26 +295,26 @@ async function loadCategories(): Promise<void> {
 
 // Render category tabs dynamically
 function renderCategoryTabs(): void {
-  const tabsContainer = document.querySelector('#category-tabs');
+  const tabsContainer = document.querySelector("#category-tabs");
   if (!tabsContainer) return;
 
   tabsContainer.innerHTML = `
     <div class="category-tab active" onclick="filterVocabulary('all')">All</div>
     ${availableCategories
       .map(
-        (cat) => `
+        cat => `
       <div class="category-tab" onclick="filterVocabulary('${cat}')">
         ${CATEGORY_LABELS[cat] || cat.charAt(0).toUpperCase() + cat.slice(1)}
       </div>
     `,
       )
-      .join('')}
+      .join("")}
   `;
 }
 
 // Populate category select dropdowns
 function populateCategorySelects(): void {
-  const selects = [document.querySelector('#tag-category')];
+  const selects = [document.querySelector("#tag-category")];
 
   for (const select of selects) {
     if (select) {
@@ -317,11 +322,11 @@ function populateCategorySelects(): void {
         <option value="">Select a category...</option>
         ${availableCategories
           .map(
-            (cat) => `
+            cat => `
           <option value="${cat}">${CATEGORY_LABELS[cat] || cat.charAt(0).toUpperCase() + cat.slice(1)}</option>
         `,
           )
-          .join('')}
+          .join("")}
       `;
     }
   }
@@ -329,25 +334,27 @@ function populateCategorySelects(): void {
 
 async function loadVocabulary(): Promise<void> {
   try {
-    const response = await fetch(`${API_BASE_URL}/api/tag-vocabulary/vocabulary`);
+    const response = await fetch(
+      `${API_BASE_URL}/api/tag-vocabulary/vocabulary`,
+    );
     if (!response.ok) {
-      throw new Error('Failed to load vocabulary');
+      throw new Error("Failed to load vocabulary");
     }
 
     // Filter out rejected tags
     const vocab = await response.json();
     allVocabulary = vocab.filter(
-      (tag: TagDefinition) => tag.status !== 'rejected',
+      (tag: TagDefinition) => tag.status !== "rejected",
     );
     renderVocabulary(currentCategory);
   } catch (error) {
-    console.error('Error loading vocabulary:', error);
-    const container = document.querySelector('#vocabulary-container');
+    console.error("Error loading vocabulary:", error);
+    const container = document.querySelector("#vocabulary-container");
     if (container) {
       container.innerHTML = `
         <div class="empty-state">
           <div class="empty-state-icon">⚠️</div>
-          <div class="empty-state-text">Error loading vocabulary: ${error instanceof Error ? error.message : 'Unknown error'}</div>
+          <div class="empty-state-text">Error loading vocabulary: ${error instanceof Error ? error.message : "Unknown error"}</div>
         </div>
       `;
     }
@@ -359,20 +366,22 @@ function renderVocabulary(category: string): void {
   currentCategory = category;
 
   // Update active tab
-  for (const tab of document.querySelectorAll('.category-tab')) {
-    tab.classList.remove('active');
+  for (const tab of document.querySelectorAll(".category-tab")) {
+    tab.classList.remove("active");
   }
-  const activeTab = [...document.querySelectorAll('.category-tab')].find((tab) => tab.textContent?.toLowerCase().includes(category));
-  activeTab?.classList.add('active');
+  const activeTab = [...document.querySelectorAll(".category-tab")].find(tab =>
+    tab.textContent?.toLowerCase().includes(category),
+  );
+  activeTab?.classList.add("active");
 
   // Filter vocabulary
   const filtered =
-    category === 'all'
+    category === "all"
       ? allVocabulary
-      : allVocabulary.filter((term) => term.category === category);
+      : allVocabulary.filter(term => term.category === category);
 
   // Render cards
-  const container = document.querySelector('#vocabulary-container');
+  const container = document.querySelector("#vocabulary-container");
   if (!container) return;
 
   if (filtered.length === 0) {
@@ -389,15 +398,15 @@ function renderVocabulary(category: string): void {
     <div class="vocab-grid">
       ${filtered
         .map(
-          (term) => `
+          term => `
         <div class="vocab-card">
           <div class="vocab-canonical">
             ${term.canonical}
-            ${term.llmVerify ? '<span class="llm-verify-badge" title="Uses LLM verification for context">🤖 LLM</span>' : ''}
-            ${term.caseSensitive ? '<span class="case-sensitive-badge" title="Case-sensitive matching">Aa</span>' : ''}
+            ${term.llmVerify ? '<span class="llm-verify-badge" title="Uses LLM verification for context">🤖 LLM</span>' : ""}
+            ${term.caseSensitive ? '<span class="case-sensitive-badge" title="Case-sensitive matching">Aa</span>' : ""}
           </div>
           <div class="vocab-variations">
-            ${term.variations.length > 0 ? `Variations: ${term.variations.join(', ')}` : 'No variations'}
+            ${term.variations.length > 0 ? `Variations: ${term.variations.join(", ")}` : "No variations"}
           </div>
           ${
             term.description
@@ -406,35 +415,35 @@ function renderVocabulary(category: string): void {
               <strong>Context:</strong> ${term.description}
             </div>
           `
-              : ''
+              : ""
           }
           <div style="display: flex; align-items: center; gap: 8px; margin-top: 8px; flex-wrap: wrap;">
             <span class="vocab-category-badge ${term.category}">
               ${formatCategoryName(term.category)}
             </span>
             ${
-              term.status === 'accepted' || !term.status
+              term.status === "accepted" || !term.status
                 ? `
               <button
                 class="vocab-reprocess-btn"
-                onclick="reprocessSingleTag('${term.canonical.replaceAll('\'', String.raw`\'`)}')"
-                title="Reprocess all episodes for this tag${term.llmVerify ? ' (uses LLM verification)' : ''}">
+                onclick="reprocessSingleTag('${term.canonical.replaceAll("'", String.raw`\'`)}')"
+                title="Reprocess all episodes for this tag${term.llmVerify ? " (uses LLM verification)" : ""}">
                 🔄 Reprocess
               </button>
               <button
                 class="vocab-delete-btn"
-                onclick="deleteTag('${term.canonical.replaceAll('\'', String.raw`\'`)}')"
+                onclick="deleteTag('${term.canonical.replaceAll("'", String.raw`\'`)}')"
                 title="Delete this tag from vocabulary">
                 🗑️ Delete
               </button>
             `
-                : ''
+                : ""
             }
           </div>
         </div>
       `,
         )
-        .join('')}
+        .join("")}
     </div>
   `;
 }
@@ -447,21 +456,21 @@ function filterVocabulary(category: string): void {
 // Format category name for display
 function formatCategoryName(category: string): string {
   return category
-    .split('-')
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+    .split("-")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 }
 
 // Generate category options for select dropdown with selected value
 function getCategoryOptions(selectedCategory: string): string {
   return availableCategories
     .map(
-      (cat) =>
-        `<option value="${cat}" ${cat === selectedCategory ? 'selected' : ''}>
+      cat =>
+        `<option value="${cat}" ${cat === selectedCategory ? "selected" : ""}>
           ${CATEGORY_LABELS[cat] || cat.charAt(0).toUpperCase() + cat.slice(1)}
         </option>`,
     )
-    .join('');
+    .join("");
 }
 
 interface TagStats {
@@ -475,21 +484,23 @@ interface TagStats {
 // Load and display analytics
 async function loadAnalytics(): Promise<void> {
   try {
-    const response = await fetch(`${API_BASE_URL}/api/tag-vocabulary/tag-stats`);
+    const response = await fetch(
+      `${API_BASE_URL}/api/tag-vocabulary/tag-stats`,
+    );
     if (!response.ok) {
-      throw new Error('Failed to load analytics');
+      throw new Error("Failed to load analytics");
     }
 
     const stats: TagStats[] = await response.json();
     renderAnalytics(stats);
   } catch (error) {
-    console.error('Error loading analytics:', error);
-    const container = document.querySelector('#analytics-container');
+    console.error("Error loading analytics:", error);
+    const container = document.querySelector("#analytics-container");
     if (container) {
       container.innerHTML = `
         <div class="empty-state">
           <div class="empty-state-icon">⚠️</div>
-          <div class="empty-state-text">Error loading analytics: ${error instanceof Error ? error.message : 'Unknown error'}</div>
+          <div class="empty-state-text">Error loading analytics: ${error instanceof Error ? error.message : "Unknown error"}</div>
         </div>
       `;
     }
@@ -498,7 +509,7 @@ async function loadAnalytics(): Promise<void> {
 
 // Render analytics dashboard
 function renderAnalytics(stats: TagStats[]): void {
-  const container = document.querySelector('#analytics-container');
+  const container = document.querySelector("#analytics-container");
   if (!container) return;
 
   if (stats.length === 0) {
@@ -516,12 +527,10 @@ function renderAnalytics(stats: TagStats[]): void {
     (a, b) => b.episodeCount - a.episodeCount,
   );
   const topTags = sortedByEpisodeCount.slice(0, 15);
-  const maxEpisodeCount = Math.max(...topTags.map((t) => t.episodeCount));
+  const maxEpisodeCount = Math.max(...topTags.map(t => t.episodeCount));
 
   // Find underused vocabulary terms (in vocabulary but < 3 episodes)
-  const underused = stats.filter(
-    (s) => s.episodeCount < 3 && s.episodeCount > 0,
-  );
+  const underused = stats.filter(s => s.episodeCount < 3 && s.episodeCount > 0);
 
   // Category distribution
   const categoryCount: Record<string, number> = {};
@@ -534,7 +543,7 @@ function renderAnalytics(stats: TagStats[]): void {
       <div class="analytics-card">
         <div class="analytics-title">Top 15 Most Used Tags</div>
         ${topTags
-          .map((tag) => {
+          .map(tag => {
             const percentage = (tag.episodeCount / maxEpisodeCount) * 100;
             return `
             <div class="chart-bar">
@@ -546,7 +555,7 @@ function renderAnalytics(stats: TagStats[]): void {
             </div>
           `;
           })
-          .join('')}
+          .join("")}
       </div>
 
       <div class="analytics-card">
@@ -565,7 +574,7 @@ function renderAnalytics(stats: TagStats[]): void {
               </div>
             `;
           })
-          .join('')}
+          .join("")}
       </div>
     </div>
 
@@ -577,37 +586,37 @@ function renderAnalytics(stats: TagStats[]): void {
         <div class="underused-list">
           ${underused
             .map(
-              (tag) => `
+              tag => `
             <span class="underused-tag">${tag.canonical} (${tag.episodeCount})</span>
           `,
             )
-            .join('')}
+            .join("")}
         </div>
       </div>
     `
-        : ''
+        : ""
     }
   `;
 }
 
 // Migration management
 async function startMigration(): Promise<void> {
-  const button = document.querySelector('#migrate-btn') as HTMLButtonElement;
+  const button = document.querySelector("#migrate-btn") as HTMLButtonElement;
 
   if (!button) return;
 
   // Disable button
   button.disabled = true;
-  button.textContent = 'Starting...';
+  button.textContent = "Starting...";
 
   await reprocessAllEpisodes({
     pollingConfig: {
-      statusContainerSelector: '#migration-status',
-      statusBadgeSelector: '#migration-status-badge',
-      logsContainerSelector: '#migration-logs',
+      statusContainerSelector: "#migration-status",
+      statusBadgeSelector: "#migration-status-badge",
+      logsContainerSelector: "#migration-logs",
       onComplete: () => {
         button.disabled = false;
-        button.textContent = 'Run Migration';
+        button.textContent = "Run Migration";
         // Reload data
         setTimeout(() => {
           loadEpisodes();
@@ -619,17 +628,19 @@ async function startMigration(): Promise<void> {
 
   // Re-enable button if validation/confirmation failed
   button.disabled = false;
-  button.textContent = 'Run Migration';
+  button.textContent = "Run Migration";
 }
 
 // Add tag form management
 function toggleDescription(): void {
   // Description field is now always visible, just update required marker
-  const llmVerify = (document.querySelector('#tag-llm-verify') as HTMLInputElement).checked;
-  const requiredMarker = document.querySelector('#description-required');
+  const llmVerify = (
+    document.querySelector("#tag-llm-verify") as HTMLInputElement
+  ).checked;
+  const requiredMarker = document.querySelector("#description-required");
 
   if (requiredMarker) {
-    requiredMarker.textContent = llmVerify ? '*' : '';
+    requiredMarker.textContent = llmVerify ? "*" : "";
   }
 
   validateForm();
@@ -638,7 +649,7 @@ function toggleDescription(): void {
 function validateForm(): void {
   const formData = getTagFormData();
   updateFormButtonState({
-    buttonSelector: '#add-tag-btn',
+    buttonSelector: "#add-tag-btn",
     formData,
   });
 }
@@ -647,49 +658,48 @@ function validateForm(): void {
 function scrollToTop(): void {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 }
 
 // Show/hide go-to-top button based on scroll position
 function handleScroll(): void {
-  const goToTopButton = document.querySelector('#go-to-top');
+  const goToTopButton = document.querySelector("#go-to-top");
   if (!goToTopButton) return;
 
-  goToTopButton.classList.toggle('show', window.scrollY > 300);
+  goToTopButton.classList.toggle("show", window.scrollY > 300);
 }
 
 // Add scroll event listener
-window.addEventListener('scroll', handleScroll);
-
+window.addEventListener("scroll", handleScroll);
 
 async function addTag(event: Event): Promise<void> {
   event.preventDefault();
 
-  const button = document.querySelector('#add-tag-btn') as HTMLButtonElement;
-  const successMessage = document.querySelector('#add-tag-success');
-  const errorMessage = document.querySelector('#add-tag-error');
+  const button = document.querySelector("#add-tag-btn") as HTMLButtonElement;
+  const successMessage = document.querySelector("#add-tag-success");
+  const errorMessage = document.querySelector("#add-tag-error");
 
   if (!button || !successMessage || !errorMessage) return;
 
   // Hide previous messages
-  successMessage.classList.remove('show');
-  errorMessage.classList.remove('show');
+  successMessage.classList.remove("show");
+  errorMessage.classList.remove("show");
 
   // Disable button
   button.disabled = true;
-  button.textContent = 'Adding...';
+  button.textContent = "Adding...";
 
   await addTagWithPolling({
     pollingConfig: {
-      statusContainerSelector: '#add-tag-status',
-      statusBadgeSelector: '#add-tag-status-badge',
-      logsContainerSelector: '#add-tag-logs',
+      statusContainerSelector: "#add-tag-status",
+      statusBadgeSelector: "#add-tag-status-badge",
+      logsContainerSelector: "#add-tag-logs",
       onComplete: () => {
         button.disabled = false;
-        button.textContent = 'Add Tag & Reprocess Episodes';
-        successMessage.textContent = 'Tag added successfully!';
-        successMessage.classList.add('show');
+        button.textContent = "Add Tag & Reprocess Episodes";
+        successMessage.textContent = "Tag added successfully!";
+        successMessage.classList.add("show");
         // Reload all data
         setTimeout(() => {
           loadEpisodes();
@@ -702,7 +712,7 @@ async function addTag(event: Event): Promise<void> {
 
   // Re-enable button if validation failed (addTagWithPolling returns early)
   button.disabled = false;
-  button.textContent = 'Add Tag & Reprocess Episodes';
+  button.textContent = "Add Tag & Reprocess Episodes";
 }
 
 // Reprocess a single tag across all episodes
@@ -710,9 +720,9 @@ async function reprocessSingleTag(canonical: string): Promise<void> {
   await reprocessTagShared({
     canonical,
     pollingConfig: {
-      statusContainerSelector: '#migration-status',
-      statusBadgeSelector: '#migration-status-badge',
-      logsContainerSelector: '#migration-logs',
+      statusContainerSelector: "#migration-status",
+      statusBadgeSelector: "#migration-status-badge",
+      logsContainerSelector: "#migration-logs",
       onComplete: () => {
         // Reload all data
         setTimeout(() => {
@@ -739,29 +749,29 @@ async function deleteTag(canonical: string): Promise<void> {
     const response = await fetch(
       `${API_BASE_URL}/api/tag-vocabulary/vocabulary/delete/${encodeURIComponent(canonical)}`,
       {
-        method: 'DELETE',
+        method: "DELETE",
       },
     );
 
     if (!response.ok) {
       const error = await response.json();
-      throw new Error(error.error || 'Failed to delete tag');
+      throw new Error(error.error || "Failed to delete tag");
     }
 
     // Show success message
-    const statusContainer = document.querySelector('#migration-status');
-    const statusBadge = document.querySelector('#migration-status-badge');
-    const logsContainer = document.querySelector('#migration-logs');
+    const statusContainer = document.querySelector("#migration-status");
+    const statusBadge = document.querySelector("#migration-status-badge");
+    const logsContainer = document.querySelector("#migration-logs");
 
     if (statusContainer && statusBadge && logsContainer) {
-      statusContainer.classList.add('show');
-      statusBadge.textContent = '✓ Tag Deleted';
-      statusBadge.className = 'status-badge completed';
+      statusContainer.classList.add("show");
+      statusBadge.textContent = "✓ Tag Deleted";
+      statusBadge.className = "status-badge completed";
       logsContainer.textContent = `Successfully deleted "${canonical}" from vocabulary.`;
 
       // Auto-hide after 3 seconds
       setTimeout(() => {
-        statusContainer.classList.remove('show');
+        statusContainer.classList.remove("show");
       }, 3000);
     }
 
@@ -773,7 +783,7 @@ async function deleteTag(canonical: string): Promise<void> {
     }, 500);
   } catch (error) {
     alert(
-      `Error deleting tag: ${error instanceof Error ? error.message : 'Unknown error'}`,
+      `Error deleting tag: ${error instanceof Error ? error.message : "Unknown error"}`,
     );
   }
 }
@@ -787,23 +797,25 @@ let proposedTags: TagDefinition[] = [];
 // Load proposed tags from vocabulary
 async function loadProposedTags(): Promise<void> {
   try {
-    const response = await fetch(`${API_BASE_URL}/api/tag-vocabulary/vocabulary`);
+    const response = await fetch(
+      `${API_BASE_URL}/api/tag-vocabulary/vocabulary`,
+    );
     if (!response.ok) {
-      throw new Error('Failed to load vocabulary');
+      throw new Error("Failed to load vocabulary");
     }
 
     const vocabulary: TagDefinition[] = await response.json();
-    proposedTags = vocabulary.filter((tag) => tag.status === 'proposed');
+    proposedTags = vocabulary.filter(tag => tag.status === "proposed");
 
     renderProposedTags();
   } catch (error) {
-    console.error('Error loading proposed tags:', error);
-    const container = document.querySelector('#proposed-container');
+    console.error("Error loading proposed tags:", error);
+    const container = document.querySelector("#proposed-container");
     if (container) {
       container.innerHTML = `
         <div class="empty-state">
           <div class="empty-state-icon">⚠️</div>
-          <div class="empty-state-text">Error loading proposed tags: ${error instanceof Error ? error.message : 'Unknown error'}</div>
+          <div class="empty-state-text">Error loading proposed tags: ${error instanceof Error ? error.message : "Unknown error"}</div>
         </div>
       `;
     }
@@ -812,31 +824,33 @@ async function loadProposedTags(): Promise<void> {
 
 // Render proposed tags for review
 function renderProposedTags(): void {
-  const section = document.querySelector('#proposed-section') as HTMLElement;
-  const container = document.querySelector('#proposed-container') as HTMLElement;
+  const section = document.querySelector("#proposed-section") as HTMLElement;
+  const container = document.querySelector(
+    "#proposed-container",
+  ) as HTMLElement;
 
   if (!section || !container) return;
 
   if (proposedTags.length === 0) {
-    section.style.display = 'none';
+    section.style.display = "none";
     return;
   }
 
-  section.style.display = 'block';
+  section.style.display = "block";
 
   container.innerHTML = `
     <div class="proposed-grid">
-      ${proposedTags.map((tag, index) => renderProposedCard(tag, index)).join('')}
+      ${proposedTags.map((tag, index) => renderProposedCard(tag, index)).join("")}
     </div>
   `;
 }
 
 // Render a single proposed tag card
 function renderProposedCard(tag: TagDefinition, index: number): string {
-  const variationsString = tag.variations ? tag.variations.join(', ') : '';
+  const variationsString = tag.variations ? tag.variations.join(", ") : "";
   const escapedCanonical = escapeHtml(tag.canonical);
   const isLlmVerify = tag.llmVerify === true;
-  const description = tag.description || '';
+  const description = tag.description || "";
 
   return `
     <div class="proposed-card" id="proposed-card-${index}" data-original="${escapedCanonical}">
@@ -863,7 +877,7 @@ function renderProposedCard(tag: TagDefinition, index: number): string {
         </div>
         <div class="proposed-checkbox-row">
           <input type="checkbox" class="proposed-checkbox" id="proposed-llmVerify-${index}"
-                 ${isLlmVerify ? 'checked' : ''}
+                 ${isLlmVerify ? "checked" : ""}
                  onchange="toggleProposedDescription(${index})" />
           <label class="proposed-checkbox-label" for="proposed-llmVerify-${index}">
             Use LLM context verification
@@ -883,7 +897,7 @@ function renderProposedCard(tag: TagDefinition, index: number): string {
         </div>
         <div class="proposed-description-group" id="proposed-description-group-${index}">
           <div class="proposed-row">
-            <label class="proposed-label">Description<span class="proposed-required" id="proposed-required-${index}">${isLlmVerify ? ' *' : ''}</span>:</label>
+            <label class="proposed-label">Description<span class="proposed-required" id="proposed-required-${index}">${isLlmVerify ? " *" : ""}</span>:</label>
             <textarea class="proposed-textarea" id="proposed-description-${index}" rows="3"
                       placeholder="e.g., King David of Israel, second king, son of Jesse, defeated Goliath"
             >${escapeHtml(description)}</textarea>
@@ -910,13 +924,11 @@ function toggleProposedDescription(index: number): void {
   const llmVerify = (
     document.querySelector(`#proposed-llmVerify-${index}`) as HTMLInputElement
   ).checked;
-  const requiredMarker = document.querySelector(
-    `#proposed-required-${index}`,
-  );
+  const requiredMarker = document.querySelector(`#proposed-required-${index}`);
 
   if (!requiredMarker) return;
 
-  requiredMarker.textContent = llmVerify ? ' *' : '';
+  requiredMarker.textContent = llmVerify ? " *" : "";
 }
 
 // Approve a proposed tag
@@ -953,19 +965,19 @@ async function approveTag(index: number): Promise<void> {
 
   // Validate: if llmVerify is checked, description is required
   if (llmVerify && !description) {
-    alert('Description is required when using LLM verification');
+    alert("Description is required when using LLM verification");
     return;
   }
 
   // Parse variations
   const variations = variationsInput
     ? variationsInput
-        .split(',')
-        .map((v) => v.trim())
-        .filter((v) => v.length > 0)
+        .split(",")
+        .map(v => v.trim())
+        .filter(v => v.length > 0)
     : [];
 
-  card.classList.add('saving');
+  card.classList.add("saving");
 
   try {
     // Build update body based on llmVerify
@@ -973,7 +985,7 @@ async function approveTag(index: number): Promise<void> {
       canonical: newCanonical,
       variations,
       category,
-      status: 'accepted',
+      status: "accepted",
       llmVerify,
       caseSensitive,
       description: llmVerify ? description : undefined,
@@ -983,15 +995,15 @@ async function approveTag(index: number): Promise<void> {
     const updateResponse = await fetch(
       `${API_BASE_URL}/api/tag-vocabulary/vocabulary/update/${encodeURIComponent(originalCanonical)}`,
       {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updateBody),
       },
     );
 
     if (!updateResponse.ok) {
       const error = await updateResponse.json();
-      throw new Error(error.error || 'Failed to approve tag');
+      throw new Error(error.error || "Failed to approve tag");
     }
 
     const data = await updateResponse.json();
@@ -1008,11 +1020,11 @@ async function approveTag(index: number): Promise<void> {
     if (data.jobId) {
       startJobPollingWithUI({
         jobId: data.jobId,
-        statusContainerSelector: '#migration-status',
-        statusBadgeSelector: '#migration-status-badge',
-        logsContainerSelector: '#migration-logs',
+        statusContainerSelector: "#migration-status",
+        statusBadgeSelector: "#migration-status-badge",
+        logsContainerSelector: "#migration-logs",
         initialMessage: `Reprocessing episodes for "${newCanonical}"...`,
-        completedMessage: '✓ Tag Approved & Episodes Reprocessed',
+        completedMessage: "✓ Tag Approved & Episodes Reprocessed",
         onComplete: () => {
           // Reload all data
           setTimeout(() => {
@@ -1025,9 +1037,9 @@ async function approveTag(index: number): Promise<void> {
     }
   } catch (error) {
     alert(
-      `Error approving tag: ${error instanceof Error ? error.message : 'Unknown error'}`,
+      `Error approving tag: ${error instanceof Error ? error.message : "Unknown error"}`,
     );
-    card.classList.remove('saving');
+    card.classList.remove("saving");
   }
 }
 
@@ -1047,19 +1059,19 @@ async function rejectTag(index: number): Promise<void> {
     return;
   }
 
-  card.classList.add('saving');
+  card.classList.add("saving");
 
   try {
     const response = await fetch(
       `${API_BASE_URL}/api/tag-vocabulary/vocabulary/reject/${encodeURIComponent(originalCanonical)}`,
       {
-        method: 'POST',
+        method: "POST",
       },
     );
 
     if (!response.ok) {
       const error = await response.json();
-      throw new Error(error.error || 'Failed to reject tag');
+      throw new Error(error.error || "Failed to reject tag");
     }
 
     // Remove from proposed list and re-render
@@ -1070,9 +1082,9 @@ async function rejectTag(index: number): Promise<void> {
     loadVocabulary();
   } catch (error) {
     alert(
-      `Error rejecting tag: ${error instanceof Error ? error.message : 'Unknown error'}`,
+      `Error rejecting tag: ${error instanceof Error ? error.message : "Unknown error"}`,
     );
-    card.classList.remove('saving');
+    card.classList.remove("saving");
   }
 }
 
@@ -1113,7 +1125,8 @@ declare global {
 (globalThis as unknown as Window).toggleDescription = toggleDescription;
 (globalThis as unknown as Window).validateForm = validateForm;
 (globalThis as unknown as Window).addTag = addTag;
-(globalThis as unknown as Window).toggleProposedDescription = toggleProposedDescription;
+(globalThis as unknown as Window).toggleProposedDescription =
+  toggleProposedDescription;
 (globalThis as unknown as Window).approveTag = approveTag;
 (globalThis as unknown as Window).rejectTag = rejectTag;
 (globalThis as unknown as Window).scrollToTop = scrollToTop;

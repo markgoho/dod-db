@@ -1,13 +1,13 @@
-import { chunk } from 'llm-chunk';
-import { correctionChunking } from '../config/chunking.js';
-import { reviewModel } from '../config/models.js';
-import { globalCorrections } from '../config/corrections.js';
-import { ai } from '../ai.js';
-import { correctionPrompt } from '../prompts/correction.js';
+import { chunk } from "llm-chunk";
+import { ai } from "../ai.js";
+import { correctionChunking } from "../config/chunking.js";
+import { globalCorrections } from "../config/corrections.js";
+import { reviewModel } from "../config/models.js";
+import { correctionPrompt } from "../prompts/correction.js";
 import {
   applyDeterministicCorrections,
   deduplicateChunks,
-} from './correct-utils.js';
+} from "./correct-utils.js";
 
 /**
  * Process a single chunk with the LLM.
@@ -26,11 +26,13 @@ async function processChunk(
   });
 
   const durationMs = performance.now() - startTime;
-  console.log(`    Chunk ${index + 1}/${total}: Done in ${(durationMs / 1000).toFixed(1)}s`);
+  console.log(
+    `    Chunk ${index + 1}/${total}: Done in ${(durationMs / 1000).toFixed(1)}s`,
+  );
 
   return {
     index,
-    text: response.text ?? '',
+    text: response.text ?? "",
     durationMs,
   };
 }
@@ -58,7 +60,7 @@ async function processChunk(
  */
 export async function correctTranscript(transcript: string): Promise<string> {
   // 1. Apply deterministic corrections first
-  console.log('  Applying deterministic corrections...');
+  console.log("  Applying deterministic corrections...");
   const { correctedText: afterDeterministic, count: deterministicCount } =
     applyDeterministicCorrections(transcript, globalCorrections);
   console.log(`  ✓ Applied ${deterministicCount} deterministic corrections`);
@@ -70,24 +72,26 @@ export async function correctTranscript(transcript: string): Promise<string> {
   // 3. Process all chunks in parallel (I/O-bound, not CPU-bound)
   const startTime = performance.now();
   const results = await Promise.all(
-    chunks.map((textChunk, index) => processChunk(textChunk, index, chunks.length)),
+    chunks.map((textChunk, index) =>
+      processChunk(textChunk, index, chunks.length),
+    ),
   );
   const totalTime = performance.now() - startTime;
 
   // Sort by index to maintain correct order for deduplication
   results.sort((a, b) => a.index - b.index);
-  const correctedChunks = results.map((r) => r.text);
+  const correctedChunks = results.map(r => r.text);
 
   console.log(`  ✓ All chunks completed in ${(totalTime / 1000).toFixed(1)}s`);
 
   // 4. Deduplicate overlaps
-  console.log('  Deduplicating overlaps...');
+  console.log("  Deduplicating overlaps...");
   const correctedText = deduplicateChunks(
     correctedChunks,
     correctionChunking.overlap,
   );
 
-  console.log('✓ Correction complete');
+  console.log("✓ Correction complete");
 
   return correctedText;
 }

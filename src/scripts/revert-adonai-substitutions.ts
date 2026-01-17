@@ -4,10 +4,10 @@
  * by comparing -raw.txt files to final .txt files.
  */
 
-import { readdirSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
+import { existsSync, readdirSync } from "node:fs";
+import { join } from "node:path";
 
-const TRANSCRIPTS_DIR = join(import.meta.dir, '../../data/transcripts');
+const TRANSCRIPTS_DIR = join(import.meta.dir, "../../data/transcripts");
 
 interface Reversion {
   file: string;
@@ -17,20 +17,24 @@ interface Reversion {
 }
 
 async function main() {
-  const dryRun = !process.argv.includes('--apply');
+  const dryRun = !process.argv.includes("--apply");
 
   if (dryRun) {
-    console.log('DRY RUN - showing what would be changed. Use --apply to make changes.\n');
+    console.log(
+      "DRY RUN - showing what would be changed. Use --apply to make changes.\n",
+    );
   }
 
   const files = readdirSync(TRANSCRIPTS_DIR);
-  const finalFiles = files.filter(f => f.endsWith('.txt') && !f.includes('-raw'));
+  const finalFiles = files.filter(
+    f => f.endsWith(".txt") && !f.includes("-raw"),
+  );
 
   let totalReversions = 0;
   const allReversions: { file: string; reversions: Reversion[] }[] = [];
 
   for (const finalFile of finalFiles) {
-    const rawFile = finalFile.replace('.txt', '-raw.txt');
+    const rawFile = finalFile.replace(".txt", "-raw.txt");
     const rawPath = join(TRANSCRIPTS_DIR, rawFile);
     const finalPath = join(TRANSCRIPTS_DIR, finalFile);
 
@@ -41,8 +45,8 @@ async function main() {
     const rawContent = await Bun.file(rawPath).text();
     const finalContent = await Bun.file(finalPath).text();
 
-    const rawLines = rawContent.split('\n');
-    const finalLines = finalContent.split('\n');
+    const rawLines = rawContent.split("\n");
+    const finalLines = finalContent.split("\n");
 
     // Build a map of timestamps to raw lines for comparison
     const rawByTimestamp = new Map<string, string>();
@@ -61,7 +65,7 @@ async function main() {
       if (line === undefined) continue;
       const match = line.match(/^\[(\d{2}:\d{2}:\d{2}\.\d{3})\]/);
 
-      if (match?.[1] && line.toLowerCase().includes('adonai')) {
+      if (match?.[1] && line.toLowerCase().includes("adonai")) {
         const timestamp = match[1];
         const rawLine = rawByTimestamp.get(timestamp);
 
@@ -70,7 +74,7 @@ async function main() {
           const rawLower = rawLine.toLowerCase();
           const finalLower = line.toLowerCase();
 
-          if (rawLower.includes('the lord') && finalLower.includes('adonai')) {
+          if (rawLower.includes("the lord") && finalLower.includes("adonai")) {
             // Find and replace Adonai with the original casing from raw
             // Extract "the Lord" variant from raw (preserve original casing)
             const lordMatch = rawLine.match(/the lord/i);
@@ -99,27 +103,35 @@ async function main() {
       allReversions.push({ file: finalFile, reversions });
 
       if (!dryRun) {
-        await Bun.write(finalPath, newFinalLines.join('\n'));
-        console.log(`✓ Fixed ${reversions.length} substitution(s) in ${finalFile}`);
+        await Bun.write(finalPath, newFinalLines.join("\n"));
+        console.log(
+          `✓ Fixed ${reversions.length} substitution(s) in ${finalFile}`,
+        );
       }
     }
   }
 
   // Print summary
-  console.log('\n' + '='.repeat(80));
-  console.log(`SUMMARY: Found ${totalReversions} "The Lord" → "Adonai" substitutions across ${allReversions.length} files\n`);
+  console.log("\n" + "=".repeat(80));
+  console.log(
+    `SUMMARY: Found ${totalReversions} "The Lord" → "Adonai" substitutions across ${allReversions.length} files\n`,
+  );
 
   for (const { file, reversions } of allReversions) {
     console.log(`\n📄 ${file} (${reversions.length} reversions)`);
     for (const r of reversions) {
       console.log(`   Line ${r.line}:`);
-      console.log(`   - Raw:       ${r.raw.slice(0, 100)}${r.raw.length > 100 ? '...' : ''}`);
-      console.log(`   + Corrected: ${r.corrected.slice(0, 100)}${r.corrected.length > 100 ? '...' : ''}`);
+      console.log(
+        `   - Raw:       ${r.raw.slice(0, 100)}${r.raw.length > 100 ? "..." : ""}`,
+      );
+      console.log(
+        `   + Corrected: ${r.corrected.slice(0, 100)}${r.corrected.length > 100 ? "..." : ""}`,
+      );
     }
   }
 
   if (dryRun && totalReversions > 0) {
-    console.log('\n\nRun with --apply to make these changes.');
+    console.log("\n\nRun with --apply to make these changes.");
   }
 }
 

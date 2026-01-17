@@ -3,12 +3,12 @@
  * additions to the deterministic corrections list.
  */
 
-import * as path from 'node:path';
+import * as path from "node:path";
 
 export interface CorrectionCandidate {
   original: string;
   corrected: string;
-  category: 'capitalization' | 'spelling' | 'proper-noun' | 'biblical-term';
+  category: "capitalization" | "spelling" | "proper-noun" | "biblical-term";
   totalOccurrences: number;
   episodeCount: number;
   episodes: string[]; // Episode IDs where this correction appeared
@@ -19,7 +19,7 @@ export interface CorrectionCandidate {
   confidence: number; // 0-100 score
   firstSeen: string; // ISO date
   lastSeen: string; // ISO date
-  status: 'pending' | 'approved' | 'rejected'; // Review status
+  status: "pending" | "approved" | "rejected"; // Review status
   reviewedAt?: string; // ISO date when reviewed
   reviewedBy?: string; // Who reviewed it (optional)
 }
@@ -31,8 +31,8 @@ export interface CorrectionTracker {
 
 const TRACKER_PATH = path.join(
   process.cwd(),
-  'data',
-  'correction-candidates.json',
+  "data",
+  "correction-candidates.json",
 );
 
 /**
@@ -54,27 +54,29 @@ function calculateConfidence(candidate: CorrectionCandidate): number {
 
   // Category weight
   switch (candidate.category) {
-  case 'biblical-term': {
-  score += 15;
-  break;
-  }
-  case 'proper-noun': {
-  score += 10;
-  break;
-  }
-  case 'spelling': { {
-  score += 5;
-  // No default
-  }
-  break;
-  }
+    case "biblical-term": {
+      score += 15;
+      break;
+    }
+    case "proper-noun": {
+      score += 10;
+      break;
+    }
+    case "spelling": {
+      {
+        score += 5;
+        // No default
+      }
+      break;
+    }
   }
   // capitalization gets 0 (lowest priority)
 
   // Word specificity (longer words are more specific)
   const avgLength =
     (candidate.original.length + candidate.corrected.length) / 2;
-  if (avgLength >= 8) score += 10; // Long words (e.g., "Septuagint")
+  if (avgLength >= 8)
+    score += 10; // Long words (e.g., "Septuagint")
   else if (avgLength >= 5) score += 5; // Medium words
 
   return Math.min(100, score);
@@ -93,7 +95,7 @@ export async function loadTracker(): Promise<CorrectionTracker> {
       return data as CorrectionTracker;
     }
   } catch {
-    console.warn('Could not load correction tracker, starting fresh');
+    console.warn("Could not load correction tracker, starting fresh");
   }
 
   return {
@@ -119,7 +121,7 @@ export function updateTracker(
   corrections: Array<{
     original: string;
     corrected: string;
-    category: CorrectionCandidate['category'];
+    category: CorrectionCandidate["category"];
     count: number;
     examples: string[];
     correctedExamples: string[];
@@ -192,7 +194,7 @@ export function updateTracker(
         confidence: 0, // Will be calculated below
         firstSeen: now,
         lastSeen: now,
-        status: 'pending',
+        status: "pending",
       };
       tracker.candidates[key].confidence = calculateConfidence(
         tracker.candidates[key],
@@ -211,7 +213,7 @@ export function getHighConfidenceCandidates(
   threshold = 50,
 ): CorrectionCandidate[] {
   return Object.values(tracker.candidates)
-    .filter((c) => c.confidence >= threshold)
+    .filter(c => c.confidence >= threshold)
     .sort((a, b) => b.confidence - a.confidence);
 }
 
@@ -220,10 +222,10 @@ export function getHighConfidenceCandidates(
  */
 export function getCandidatesByCategory(
   tracker: CorrectionTracker,
-  category: CorrectionCandidate['category'],
+  category: CorrectionCandidate["category"],
 ): CorrectionCandidate[] {
   return Object.values(tracker.candidates)
-    .filter((c) => c.category === category)
+    .filter(c => c.category === category)
     .sort((a, b) => b.confidence - a.confidence);
 }
 
@@ -234,7 +236,7 @@ export function getPendingCandidates(
   tracker: CorrectionTracker,
 ): CorrectionCandidate[] {
   return Object.values(tracker.candidates)
-    .filter((c) => c.status === 'pending')
+    .filter(c => c.status === "pending")
     .sort((a, b) => b.confidence - a.confidence);
 }
 
@@ -248,7 +250,7 @@ export function approveCandidate(
 ): void {
   const candidate = tracker.candidates[key];
   if (candidate) {
-    candidate.status = 'approved';
+    candidate.status = "approved";
     candidate.reviewedAt = new Date().toISOString();
     if (reviewedBy) {
       candidate.reviewedBy = reviewedBy;
@@ -266,7 +268,7 @@ export function rejectCandidate(
 ): void {
   const candidate = tracker.candidates[key];
   if (candidate) {
-    candidate.status = 'rejected';
+    candidate.status = "rejected";
     candidate.reviewedAt = new Date().toISOString();
     if (reviewedBy) {
       candidate.reviewedBy = reviewedBy;

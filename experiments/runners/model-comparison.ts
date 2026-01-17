@@ -10,29 +10,34 @@
  *   bun run experiments/runners/model-comparison.ts --transcript=0 --model=gemini-2.0-flash
  */
 
-import { chunk } from 'llm-chunk';
-import { parseArgs } from 'node:util';
-import { correctionChunking } from '../../src/config/chunking.js';
-import { globalCorrections } from '../../src/config/corrections.js';
-import { ai } from '../../src/ai.js';
-import { correctionPrompt } from '../../src/prompts/correction.js';
+import { chunk } from "llm-chunk";
+import { parseArgs } from "node:util";
+import { ai } from "../../src/ai.js";
+import { correctionChunking } from "../../src/config/chunking.js";
+import { globalCorrections } from "../../src/config/corrections.js";
 import {
   applyDeterministicCorrections,
   deduplicateChunks,
-} from '../../src/pipeline/correct-utils.js';
-import { measureAccuracy, formatAccuracyMetrics } from '../lib/accuracy.js';
-import { calculateCost, aggregateCosts, formatCost, type TokenUsage } from '../lib/cost-calculator.js';
+} from "../../src/pipeline/correct-utils.js";
+import { correctionPrompt } from "../../src/prompts/correction.js";
 import {
-  writeResults,
+  MODELS_TO_TEST,
+  SAMPLE_TRANSCRIPTS,
+  type ModelId,
+} from "../config/experiment-config.js";
+import { formatAccuracyMetrics, measureAccuracy } from "../lib/accuracy.js";
+import {
+  aggregateCosts,
+  calculateCost,
+  formatCost,
+  type TokenUsage,
+} from "../lib/cost-calculator.js";
+import {
   printSummary,
+  writeResults,
   type ModelComparisonResult,
   type TimingMetrics,
-} from '../lib/results-reporter.js';
-import {
-  SAMPLE_TRANSCRIPTS,
-  MODELS_TO_TEST,
-  type ModelId,
-} from '../config/experiment-config.js';
+} from "../lib/results-reporter.js";
 
 /**
  * Run correction with a specific model on a single transcript.
@@ -57,7 +62,9 @@ async function runWithModel(
   const { correctedText: afterDeterministic, count: deterCount } =
     applyDeterministicCorrections(rawTranscript, globalCorrections);
   const deterMs = performance.now() - deterStart;
-  console.log(`  Deterministic: ${deterCount} corrections in ${deterMs.toFixed(0)}ms`);
+  console.log(
+    `  Deterministic: ${deterCount} corrections in ${deterMs.toFixed(0)}ms`,
+  );
 
   // Step 2: Chunking
   const chunkStart = performance.now();
@@ -104,20 +111,20 @@ async function runWithModel(
 
   // Calculate metrics
   const accuracy = measureAccuracy(output, groundTruth);
-  console.log('\n  Accuracy:');
+  console.log("\n  Accuracy:");
   console.log(formatAccuracyMetrics(accuracy));
 
   // Calculate cost
-  const costs = chunkTimings.map((ct) => calculateCost(model, ct.tokens));
+  const costs = chunkTimings.map(ct => calculateCost(model, ct.tokens));
   const totalCost = aggregateCosts(costs);
-  console.log('\n  Cost:');
+  console.log("\n  Cost:");
   console.log(formatCost(totalCost));
 
   const timing: TimingMetrics = {
     deterministicMs: deterMs,
     chunkingMs: chunkMs,
     llmTotalMs,
-    perChunkMs: chunkTimings.map((ct) => ct.durationMs),
+    perChunkMs: chunkTimings.map(ct => ct.durationMs),
     deduplicationMs: dedupMs,
     wallClockMs,
   };
@@ -139,9 +146,9 @@ async function runWithModel(
  * Run model comparison on all samples with all models.
  */
 async function runFullComparison(): Promise<void> {
-  console.log('=== FULL MODEL COMPARISON ===\n');
-  console.log('Models:', MODELS_TO_TEST);
-  console.log('Transcripts:', SAMPLE_TRANSCRIPTS.length);
+  console.log("=== FULL MODEL COMPARISON ===\n");
+  console.log("Models:", MODELS_TO_TEST);
+  console.log("Transcripts:", SAMPLE_TRANSCRIPTS.length);
 
   const allResults: Map<ModelId, ModelComparisonResult[]> = new Map();
 
@@ -171,9 +178,10 @@ async function runFullComparison(): Promise<void> {
     const avgCost =
       results.reduce((sum, r) => sum + r.cost.totalCost, 0) / results.length;
     const avgTime =
-      results.reduce((sum, r) => sum + r.timing.wallClockMs, 0) / results.length;
+      results.reduce((sum, r) => sum + r.timing.wallClockMs, 0) /
+      results.length;
 
-    await writeResults('model-comparison', results, {
+    await writeResults("model-comparison", results, {
       totalTranscripts: results.length,
       avgAccuracy,
       avgCostPerTranscript: avgCost,
@@ -183,11 +191,13 @@ async function runFullComparison(): Promise<void> {
   }
 
   // Print comparison summary
-  console.log('\n\n========================================');
-  console.log('MODEL COMPARISON SUMMARY');
-  console.log('========================================');
-  console.log('\nModel                    | Accuracy | Cost/Trans | Time/Trans');
-  console.log('-------------------------|----------|------------|------------');
+  console.log("\n\n========================================");
+  console.log("MODEL COMPARISON SUMMARY");
+  console.log("========================================");
+  console.log(
+    "\nModel                    | Accuracy | Cost/Trans | Time/Trans",
+  );
+  console.log("-------------------------|----------|------------|------------");
 
   for (const [model, results] of allResults) {
     const avgAccuracy =
@@ -196,7 +206,8 @@ async function runFullComparison(): Promise<void> {
     const avgCost =
       results.reduce((sum, r) => sum + r.cost.totalCost, 0) / results.length;
     const avgTime =
-      results.reduce((sum, r) => sum + r.timing.wallClockMs, 0) / results.length;
+      results.reduce((sum, r) => sum + r.timing.wallClockMs, 0) /
+      results.length;
 
     console.log(
       `${model.padEnd(24)} | ${(avgAccuracy * 100).toFixed(1).padStart(6)}% | $${avgCost.toFixed(5).padStart(9)} | ${(avgTime / 1000).toFixed(1).padStart(8)}s`,
@@ -222,7 +233,7 @@ async function runFullComparison(): Promise<void> {
       b[1].reduce((s, r) => s + r.timing.wallClockMs, 0),
   )[0]?.[0];
 
-  console.log('\nRecommendations:');
+  console.log("\nRecommendations:");
   console.log(`  Best accuracy: ${bestAccuracy}`);
   console.log(`  Cheapest: ${cheapest}`);
   console.log(`  Fastest: ${fastest}`);
@@ -231,7 +242,9 @@ async function runFullComparison(): Promise<void> {
 /**
  * Run with a single model on all samples.
  */
-async function runSingleModel(model: ModelId): Promise<ModelComparisonResult[]> {
+async function runSingleModel(
+  model: ModelId,
+): Promise<ModelComparisonResult[]> {
   const results: ModelComparisonResult[] = [];
 
   for (const sample of SAMPLE_TRANSCRIPTS) {
@@ -251,9 +264,9 @@ async function main(): Promise<void> {
   const { values } = parseArgs({
     args: Bun.argv.slice(2),
     options: {
-      all: { type: 'boolean', default: false },
-      model: { type: 'string' },
-      transcript: { type: 'string' },
+      all: { type: "boolean", default: false },
+      model: { type: "string" },
+      transcript: { type: "string" },
     },
   });
 
@@ -263,18 +276,22 @@ async function main(): Promise<void> {
   }
 
   if (!values.model) {
-    console.log('Usage:');
-    console.log('  bun run experiments/runners/model-comparison.ts --all');
-    console.log('  bun run experiments/runners/model-comparison.ts --model=gemini-2.0-flash');
-    console.log('  bun run experiments/runners/model-comparison.ts --transcript=0 --model=gemini-2.0-flash');
-    console.log('\nAvailable models:', MODELS_TO_TEST.join(', '));
+    console.log("Usage:");
+    console.log("  bun run experiments/runners/model-comparison.ts --all");
+    console.log(
+      "  bun run experiments/runners/model-comparison.ts --model=gemini-2.0-flash",
+    );
+    console.log(
+      "  bun run experiments/runners/model-comparison.ts --transcript=0 --model=gemini-2.0-flash",
+    );
+    console.log("\nAvailable models:", MODELS_TO_TEST.join(", "));
     return;
   }
 
   const model = values.model as ModelId;
   if (!MODELS_TO_TEST.includes(model)) {
     console.error(`Invalid model: ${model}`);
-    console.error('Valid models:', MODELS_TO_TEST.join(', '));
+    console.error("Valid models:", MODELS_TO_TEST.join(", "));
     process.exit(1);
   }
 
@@ -289,7 +306,9 @@ async function main(): Promise<void> {
       console.error(`Invalid transcript index: ${index}`);
       process.exit(1);
     }
-    results = [await runWithModel(sample.raw, sample.truth, sample.name, model)];
+    results = [
+      await runWithModel(sample.raw, sample.truth, sample.name, model),
+    ];
   }
 
   // Print summary
@@ -309,7 +328,7 @@ async function main(): Promise<void> {
     recommendations: [],
   });
 
-  await writeResults('model-comparison', results, {
+  await writeResults("model-comparison", results, {
     totalTranscripts: results.length,
     avgAccuracy,
     avgCostPerTranscript: avgCost,

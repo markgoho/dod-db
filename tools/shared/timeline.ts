@@ -3,9 +3,9 @@
  * Shared logic for rendering segment timelines
  */
 
-import type { EpisodeSegment, SegmentMetadata } from './types.js';
-import { timestampToSeconds } from './timestamp.js';
-import { escapeHtml } from './formatting.js';
+import { escapeHtml } from "./formatting.js";
+import { timestampToSeconds } from "./timestamp.js";
+import type { EpisodeSegment, SegmentMetadata } from "./types.js";
 
 // Render timeline visualization with segments
 export function renderTimeline({
@@ -33,24 +33,26 @@ export function renderTimeline({
         : totalDuration;
       const left = (start / totalDuration) * 100;
       const width = ((end - start) / totalDuration) * 100;
-      const color = metadata.colors[seg.type] || '#666';
+      const color = metadata.colors[seg.type] || "#666";
       const label = metadata.labels[seg.type] || seg.type;
       const isSelected = index === selectedIndex;
 
-      const clickHandler = onSegmentClick ? `onclick="${onSegmentClick}(${index})"` : '';
+      const clickHandler = onSegmentClick
+        ? `onclick="${onSegmentClick}(${index})"`
+        : "";
 
       return `
         <div
-          class="timeline-segment ${isSelected ? 'selected' : ''}"
+          class="timeline-segment ${isSelected ? "selected" : ""}"
           style="left: ${left}%; width: ${width}%; background-color: ${color};"
           ${clickHandler}
-          title="${escapeHtml(label)}: ${seg.startTimestamp} - ${seg.endTimestamp || 'end'}"
+          title="${escapeHtml(label)}: ${seg.startTimestamp} - ${seg.endTimestamp || "end"}"
         >
           <span class="timeline-label">${escapeHtml(label)}</span>
         </div>
       `;
     })
-    .join('');
+    .join("");
 }
 
 // Render segment type legend
@@ -60,8 +62,8 @@ export function renderSegmentLegend({
   metadata: SegmentMetadata;
 }): string {
   return metadata.types
-    .map((type) => {
-      const color = metadata.colors[type] || '#666';
+    .map(type => {
+      const color = metadata.colors[type] || "#666";
       const label = metadata.labels[type] || type;
 
       return `
@@ -71,5 +73,5 @@ export function renderSegmentLegend({
         </div>
       `;
     })
-    .join('');
+    .join("");
 }

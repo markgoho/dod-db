@@ -27,7 +27,9 @@
         <h2 class="guests-section__title">Frequent Guests</h2>
         <div class="guests-cloud">
           {{ range $multipleAppearances }}
-            <a href="{{ .Page.RelPermalink }}" class="guest-pill guest-pill--featured">
+            <a
+              href="{{ .Page.RelPermalink }}"
+              class="guest-pill guest-pill--featured">
               {{ .Page.Title }}
               <span class="guest-pill__count">{{ .Count }}</span>
             </a>

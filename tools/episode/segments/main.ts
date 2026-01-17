@@ -1,29 +1,29 @@
 import {
-  getVideoIdFromUrl,
-  getEpisode,
-  getTranscript,
-  fetchSegmentMetadata,
-  parseTranscript,
-  saveSegments,
-  getTotalDuration,
-  timestampToSeconds,
-  secondsToTimestamp,
-  formatTimestamp,
-  parseTimestamp,
-  renderTimeline,
   addSegmentAtTime,
   deleteSegmentAtIndex,
-  updateSegmentType,
-  updateSegmentStart,
-  updateSegmentEnd,
-  markAllSegmentsVerified,
   escapeHtml,
+  fetchSegmentMetadata,
+  formatTimestamp,
+  getEpisode,
+  getTotalDuration,
+  getTranscript,
+  getVideoIdFromUrl,
+  markAllSegmentsVerified,
+  parseTimestamp,
+  parseTranscript,
+  renderTimeline,
+  saveSegments,
+  secondsToTimestamp,
   showToast,
+  timestampToSeconds,
+  updateSegmentEnd,
+  updateSegmentStart,
+  updateSegmentType,
   type Episode,
   type EpisodeSegment,
   type SegmentMetadata,
   type TranscriptLine,
-} from '../../shared/utilities.js';
+} from "../../shared/utilities.js";
 
 const videoId = getVideoIdFromUrl();
 let episode: Episode | undefined;
@@ -36,7 +36,7 @@ let hasUnsavedChanges = false;
 let episodeHasAudio = false;
 
 async function init(): Promise<void> {
-  const segmentsListElement = document.querySelector('#segments-list');
+  const segmentsListElement = document.querySelector("#segments-list");
 
   if (!videoId) {
     if (segmentsListElement) {
@@ -57,7 +57,8 @@ async function init(): Promise<void> {
     episode = episodeData;
     metadata = metadataData || { labels: {}, colors: {}, types: [] };
     segments = [...(episode?.segments || [])];
-    episodeHasAudio = (episodeData as { hasAudio?: boolean })?.hasAudio || false;
+    episodeHasAudio =
+      (episodeData as { hasAudio?: boolean })?.hasAudio || false;
 
     if (!episode) {
       if (segmentsListElement) {
@@ -68,17 +69,19 @@ async function init(): Promise<void> {
     }
 
     // Update breadcrumb
-    const breadcrumbEpisode = document.querySelector('#breadcrumb-episode') as HTMLAnchorElement;
+    const breadcrumbEpisode = document.querySelector(
+      "#breadcrumb-episode",
+    ) as HTMLAnchorElement;
     if (breadcrumbEpisode) {
       breadcrumbEpisode.href = `/episode/${videoId}`;
-      breadcrumbEpisode.textContent = `Episode ${episode.episodeNumber || '?'}`;
+      breadcrumbEpisode.textContent = `Episode ${episode.episodeNumber || "?"}`;
     }
 
-    const panelTitle = document.querySelector('#panel-title');
+    const panelTitle = document.querySelector("#panel-title");
     if (panelTitle) {
-      panelTitle.textContent = `Episode ${episode.episodeNumber || '?'}: Segments`;
+      panelTitle.textContent = `Episode ${episode.episodeNumber || "?"}: Segments`;
     }
-    document.title = `Segments - Episode ${episode.episodeNumber || '?'} - DoD Tools`;
+    document.title = `Segments - Episode ${episode.episodeNumber || "?"} - DoD Tools`;
 
     // Parse transcript
     if (transcriptText) {
@@ -93,7 +96,7 @@ async function init(): Promise<void> {
     renderTimelineView();
     renderSegmentsList();
   } catch (error) {
-    console.error('Failed to load segments:', error);
+    console.error("Failed to load segments:", error);
     if (segmentsListElement) {
       segmentsListElement.innerHTML =
         '<div class="empty-segments">Failed to load segments</div>';
@@ -102,28 +105,32 @@ async function init(): Promise<void> {
 }
 
 function setupAudio(): void {
-  const audioElement_ = document.querySelector('#audio') as HTMLAudioElement;
+  const audioElement_ = document.querySelector("#audio") as HTMLAudioElement;
   if (!audioElement_) return;
 
   audioElement = audioElement_;
 
   if (episodeHasAudio && videoId) {
     audioElement.src = `/api/audio/${videoId}`;
-    audioElement.addEventListener('timeupdate', () => {
-      const currentTimeElement = document.querySelector('#current-time');
+    audioElement.addEventListener("timeupdate", () => {
+      const currentTimeElement = document.querySelector("#current-time");
       if (currentTimeElement && audioElement) {
-        currentTimeElement.textContent = secondsToTimestamp(audioElement.currentTime);
+        currentTimeElement.textContent = secondsToTimestamp(
+          audioElement.currentTime,
+        );
         updateActiveTranscriptLine(audioElement.currentTime);
       }
     });
-    audioElement.addEventListener('loadedmetadata', () => {
-      const totalTimeElement = document.querySelector('#total-time');
+    audioElement.addEventListener("loadedmetadata", () => {
+      const totalTimeElement = document.querySelector("#total-time");
       if (totalTimeElement && audioElement) {
-        totalTimeElement.textContent = secondsToTimestamp(audioElement.duration);
+        totalTimeElement.textContent = secondsToTimestamp(
+          audioElement.duration,
+        );
       }
     });
   } else {
-    const audioSection = document.querySelector('#audio-section');
+    const audioSection = document.querySelector("#audio-section");
     if (audioSection) {
       audioSection.innerHTML =
         '<div style="padding: 20px; text-align: center; color: var(--color-gray-500);">Audio not available</div>';
@@ -132,7 +139,7 @@ function setupAudio(): void {
 }
 
 function renderTimelineView(): void {
-  const timeline = document.querySelector('#timeline');
+  const timeline = document.querySelector("#timeline");
   if (!timeline) return;
 
   const totalDuration = getTotalDuration(segments);
@@ -142,37 +149,43 @@ function renderTimelineView(): void {
     totalDuration,
     metadata,
     selectedIndex: selectedSegmentIndex,
-    onSegmentClick: 'selectSegment',
+    onSegmentClick: "selectSegment",
   });
 }
 
 function renderSegmentsList(): void {
-  const container = document.querySelector('#segments-list');
+  const container = document.querySelector("#segments-list");
   if (!container) return;
 
   if (segments.length === 0) {
-    container.innerHTML = '<div class="empty-segments">No segments detected. Click "+ Add Segment" to create one.</div>';
+    container.innerHTML =
+      '<div class="empty-segments">No segments detected. Click "+ Add Segment" to create one.</div>';
     return;
   }
 
-  container.innerHTML = segments.map((seg, i) => {
-    const isActive = i === selectedSegmentIndex;
+  container.innerHTML = segments
+    .map((seg, i) => {
+      const isActive = i === selectedSegmentIndex;
 
-    return `
-      <div class="segment-row ${isActive ? 'active' : ''}" data-index="${i}">
+      return `
+      <div class="segment-row ${isActive ? "active" : ""}" data-index="${i}">
         <select onchange="updateSegmentType(${i}, this.value)">
-          ${metadata.types.map(type => `
-            <option value="${type}" ${seg.type === type ? 'selected' : ''}>
+          ${metadata.types
+            .map(
+              type => `
+            <option value="${type}" ${seg.type === type ? "selected" : ""}>
               ${metadata.labels[type] || type}
             </option>
-          `).join('')}
+          `,
+            )
+            .join("")}
         </select>
         <input type="text"
                value="${formatTimestamp(seg.startTimestamp)}"
                onchange="updateSegmentStart(${i}, this.value)"
                placeholder="Start">
         <input type="text"
-               value="${seg.endTimestamp ? formatTimestamp(seg.endTimestamp) : ''}"
+               value="${seg.endTimestamp ? formatTimestamp(seg.endTimestamp) : ""}"
                onchange="updateSegmentEnd(${i}, this.value)"
                placeholder="End">
         <span class="segment-confidence ${seg.confidence}">${seg.confidence}</span>
@@ -182,11 +195,12 @@ function renderSegmentsList(): void {
         </div>
       </div>
     `;
-  }).join('');
+    })
+    .join("");
 }
 
 function renderTranscript(): void {
-  const container = document.querySelector('#transcript-content');
+  const container = document.querySelector("#transcript-content");
   if (!container) return;
 
   container.innerHTML = transcriptLines
@@ -199,13 +213,13 @@ function renderTranscript(): void {
     </div>
   `,
     )
-    .join('');
+    .join("");
 }
 
 function updateActiveTranscriptLine(currentTime: number): void {
   // Remove previous active
-  for (const element of document.querySelectorAll('.transcript-line.active')) {
-    element.classList.remove('active');
+  for (const element of document.querySelectorAll(".transcript-line.active")) {
+    element.classList.remove("active");
   }
 
   // Find current line
@@ -214,15 +228,17 @@ function updateActiveTranscriptLine(currentTime: number): void {
     if (line && line.seconds <= currentTime) {
       const element = document.querySelector(`#tline-${i}`);
       if (element) {
-        element.classList.add('active');
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        element.classList.add("active");
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
       }
       break;
     }
   }
 }
 
-(globalThis as typeof globalThis & Window).selectSegment = function (index: number): void {
+(globalThis as typeof globalThis & Window).selectSegment = function (
+  index: number,
+): void {
   selectedSegmentIndex = index;
   const seg = segments[index];
   if (seg && audioElement) {
@@ -235,12 +251,18 @@ function updateActiveTranscriptLine(currentTime: number): void {
   renderSegmentsList();
 };
 
-(globalThis as typeof globalThis & Window).playSegment = function (index: number): void {
-  const selectSegmentFunction = (globalThis as { selectSegment?: (i: number) => void }).selectSegment;
+(globalThis as typeof globalThis & Window).playSegment = function (
+  index: number,
+): void {
+  const selectSegmentFunction = (
+    globalThis as { selectSegment?: (i: number) => void }
+  ).selectSegment;
   selectSegmentFunction?.(index);
 };
 
-(globalThis as typeof globalThis & Window).jumpToTime = function (seconds: number): void {
+(globalThis as typeof globalThis & Window).jumpToTime = function (
+  seconds: number,
+): void {
   if (audioElement) {
     audioElement.currentTime = seconds;
     audioElement.play().catch(() => {
@@ -249,13 +271,19 @@ function updateActiveTranscriptLine(currentTime: number): void {
   }
 };
 
-(globalThis as typeof globalThis & Window).updateSegmentType = function (index: number, type: string): void {
+(globalThis as typeof globalThis & Window).updateSegmentType = function (
+  index: number,
+  type: string,
+): void {
   segments = updateSegmentType({ segments, index, type });
   hasUnsavedChanges = true;
   renderTimelineView();
 };
 
-(globalThis as typeof globalThis & Window).updateSegmentStart = function (index: number, value: string): void {
+(globalThis as typeof globalThis & Window).updateSegmentStart = function (
+  index: number,
+  value: string,
+): void {
   const parsed = parseTimestamp(value);
   if (parsed) {
     segments = updateSegmentStart({ segments, index, timestamp: parsed });
@@ -264,15 +292,20 @@ function updateActiveTranscriptLine(currentTime: number): void {
   }
 };
 
-(globalThis as typeof globalThis & Window).updateSegmentEnd = function (index: number, value: string): void {
+(globalThis as typeof globalThis & Window).updateSegmentEnd = function (
+  index: number,
+  value: string,
+): void {
   const parsed = value ? parseTimestamp(value) : undefined;
   segments = updateSegmentEnd({ segments, index, timestamp: parsed });
   hasUnsavedChanges = true;
   renderTimelineView();
 };
 
-(globalThis as typeof globalThis & Window).deleteSegment = function (index: number): void {
-  if (confirm('Delete this segment?')) {
+(globalThis as typeof globalThis & Window).deleteSegment = function (
+  index: number,
+): void {
+  if (confirm("Delete this segment?")) {
     segments = deleteSegmentAtIndex({ segments, index });
     selectedSegmentIndex = -1;
     hasUnsavedChanges = true;
@@ -284,7 +317,7 @@ function updateActiveTranscriptLine(currentTime: number): void {
 (globalThis as typeof globalThis & Window).addSegment = function (): void {
   const currentTime = audioElement ? audioElement.currentTime : 0;
   const audioDuration = audioElement?.duration;
-  const defaultType = metadata.types[0] || 'main-content';
+  const defaultType = metadata.types[0] || "main-content";
 
   const result = addSegmentAtTime({
     segments,
@@ -298,30 +331,31 @@ function updateActiveTranscriptLine(currentTime: number): void {
   hasUnsavedChanges = true;
   renderTimelineView();
   renderSegmentsList();
-  showToast('Segment added', 'success');
+  showToast("Segment added", "success");
 };
 
 (globalThis as typeof globalThis & Window).markAllVerified = function (): void {
   segments = markAllSegmentsVerified(segments);
   hasUnsavedChanges = true;
   renderSegmentsList();
-  showToast('All segments marked as verified', 'success');
+  showToast("All segments marked as verified", "success");
 };
 
-(globalThis as typeof globalThis & Window).saveSegments = async function (): Promise<void> {
-  if (!videoId) return;
+(globalThis as typeof globalThis & Window).saveSegments =
+  async function (): Promise<void> {
+    if (!videoId) return;
 
-  const success = await saveSegments({ videoId, segments });
-  if (success) {
-    hasUnsavedChanges = false;
-  }
-};
+    const success = await saveSegments({ videoId, segments });
+    if (success) {
+      hasUnsavedChanges = false;
+    }
+  };
 
 // Warn before leaving with unsaved changes
-window.addEventListener('beforeunload', (event) => {
+window.addEventListener("beforeunload", event => {
   if (hasUnsavedChanges) {
     event.preventDefault();
-    event.returnValue = '';
+    event.returnValue = "";
   }
 });
 

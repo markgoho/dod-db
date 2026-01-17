@@ -131,6 +131,7 @@ Each episode page includes:
 - **Tags**: Topical tags for filtering and discovery
 
 **Technical details:**
+
 - ~50 lines TypeScript for video facade and timestamp seeking (`hugo/assets/ts/video-player.ts`)
 - Timestamps transformed to clickable links during episode generation
 - Graceful fallback: Without JS, timestamps link to YouTube at correct time
@@ -229,6 +230,7 @@ Episode numbers are automatically assigned using intelligent title-based extract
 - **Deterministic**: Same dates use videoId as tiebreaker for stable ordering
 
 **Algorithm:**
+
 1. Extract episode numbers from titles (if present)
 2. Sort by publishedAt for chronological order
 3. Assign available sequential numbers to episodes without title numbers
@@ -329,6 +331,7 @@ When a tag is accepted in the UI (or added via "Add New Tag" form), the followin
 5. **Update analytics** - Tag counts and stats are recalculated
 
 This ensures that:
+
 - Tags appear immediately on the website after acceptance
 - No manual regeneration step needed
 - `processed-videos.json` and Hugo frontmatter stay in sync
@@ -342,6 +345,7 @@ bun run src/scripts/check-hugo-sync.ts
 ```
 
 This script:
+
 - Compares tags in `processed-videos.json` with Hugo frontmatter for all episodes
 - Reports any mismatches (missing tags, extra tags, count differences)
 - Exits with error code 1 if mismatches found (useful for CI/CD)
@@ -394,6 +398,7 @@ bun run src/scripts/check-hugo-sync.ts
 - `experiments/find-jingles.ts` - Standalone testing tool
 
 **Performance:**
+
 - ~15 seconds per episode
 - 80-100% confidence at real segment boundaries
 - Saves ~5 minutes of manual work per episode
@@ -429,11 +434,13 @@ bun run src/scripts/detect-all-segments.ts --force-verified
 The transcript correction pipeline uses **parallel network I/O** to achieve ~7x speedup over sequential processing.
 
 **Why parallelization works:**
+
 - LLM API calls are **I/O-bound** (waiting for network responses), not CPU-bound
 - `Promise.all()` overlaps waiting time without additional CPU cost
 - No semaphore or concurrency limiting needed - Gemini handles rate limiting
 
 **Implementation pattern:**
+
 ```typescript
 // Process all chunks concurrently
 const results = await Promise.all(
@@ -451,6 +458,7 @@ results.sort((a, b) => a.index - b.index);
 | Parallel (full) | 88s (~1.5 min) | 7.4x |
 
 **Key considerations:**
+
 - Results must be sorted by index after parallel completion (chunks complete out of order)
 - Deduplication depends on correct chunk ordering
 - Cost remains constant (~$0.08/episode) regardless of parallelization
@@ -478,6 +486,7 @@ experiments/
 ```
 
 **Running experiments:**
+
 ```bash
 # Baseline (sequential processing)
 bun run experiments/runners/baseline.ts --all

@@ -415,7 +415,9 @@ main.container {
   color: var(--tan-450);
   text-decoration: none;
   opacity: 0.6;
-  transition: opacity 0.15s ease, color 0.15s ease;
+  transition:
+    opacity 0.15s ease,
+    color 0.15s ease;
 
   time {
     font-variant-numeric: tabular-nums;

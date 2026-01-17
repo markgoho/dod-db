@@ -2,7 +2,7 @@ export type ChunkingConfig = {
   minLength: number;
   maxLength: number;
   overlap: number;
-  splitter: 'sentence' | 'paragraph';
+  splitter: "sentence" | "paragraph";
   delimiters: string;
 };
 
@@ -13,9 +13,9 @@ export type ChunkingConfig = {
 export const correctionChunking: ChunkingConfig = {
   minLength: 5000,
   maxLength: 10_000,
-  splitter: 'sentence',
+  splitter: "sentence",
   overlap: 200,
-  delimiters: '',
+  delimiters: "",
 };
 
 /**
@@ -25,7 +25,7 @@ export const correctionChunking: ChunkingConfig = {
 export const embeddingChunking: ChunkingConfig = {
   minLength: 1000,
   maxLength: 2000,
-  splitter: 'sentence',
+  splitter: "sentence",
   overlap: 100,
-  delimiters: '',
+  delimiters: "",
 };

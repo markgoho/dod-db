@@ -27,10 +27,13 @@
             <h2 class="episode-card__title">{{ .Title }}</h2>
             {{ if gt (len $guests) 0 }}
               <div class="episode-card__guest">
-                with {{ index $guests 0 }}
+                with
+                {{ index $guests 0 }}
               </div>
             {{ end }}
-            <time class="episode-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
+            <time
+              class="episode-card__date"
+              datetime="{{ .Date.Format "2006-01-02" }}">
               {{ .Date.Format "January 2, 2006" }}
             </time>
             {{ if .Params.tags }}
@@ -39,7 +42,9 @@
                   <span class="episode-card__tag">{{ . }}</span>
                 {{ end }}
                 {{ if gt (len .Params.tags) 3 }}
-                  <span class="episode-card__tag-more">+{{ sub (len .Params.tags) 3 }}</span>
+                  <span class="episode-card__tag-more"
+                    >+{{ sub (len .Params.tags) 3 }}</span
+                  >
                 {{ end }}
               </div>
             {{ end }}

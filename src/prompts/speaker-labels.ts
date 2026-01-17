@@ -1,9 +1,9 @@
-import { z } from 'zod';
+import { z } from "zod";
 
 export const SpeakerLabelsSchema = z.object({
-  'Speaker A': z.string(),
-  'Speaker B': z.string(),
-  'Speaker C': z.string().optional(),
+  "Speaker A": z.string(),
+  "Speaker B": z.string(),
+  "Speaker C": z.string().optional(),
 });
 
 export type SpeakerLabels = z.infer<typeof SpeakerLabelsSchema>;
@@ -15,14 +15,14 @@ export function speakerLabelPrompt(
   const contextSection = context
     ? `
   <video-context>
-    Title: ${context.title || 'N/A'}
-    Description: ${context.description || 'N/A'}
+    Title: ${context.title || "N/A"}
+    Description: ${context.description || "N/A"}
   </video-context>
 
   Use the video context above to help identify speakers if they are mentioned.
 
   `
-    : '';
+    : "";
 
   return `You are an expert in speaker label recognition. You will receive a portion of a transcript with timestamps, and speaker labels but the labels don't have the names, only Speaker A, Speaker B, etc.
 
@@ -71,7 +71,7 @@ export function addSpeakerLabels(
   // Replace all identified speakers dynamically
   for (const [speakerLabel, speakerName] of Object.entries(speakerLabels)) {
     if (speakerName) {
-      result = result.replaceAll(new RegExp(speakerLabel, 'g'), speakerName);
+      result = result.replaceAll(new RegExp(speakerLabel, "g"), speakerName);
     }
   }
 

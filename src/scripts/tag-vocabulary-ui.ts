@@ -6,13 +6,21 @@
  *   Then open http://localhost:3001
  */
 
-import { loadProcessedVideos } from '../storage/processed-videos.js';
-import { tagVocabulary } from '../config/tag-vocabulary.js';
-import { reprocessEpisodes } from '../pipeline/reprocess-episodes.js';
-import { addTagToEpisodes } from '../pipeline/add-tag-to-episodes.js';
-import { addTagToVocabulary, tagExists, updateTagInVocabulary, deleteTagFromVocabulary, findTag, type AddTagParams as AddTagParameters, type UpdateTagParams as UpdateTagParameters } from '../pipeline/add-tag-to-vocabulary.js';
-import type { TagDefinition, TagCategory } from '../config/tag-vocabulary.js';
-import * as path from 'node:path';
+import * as path from "node:path";
+import type { TagCategory, TagDefinition } from "../config/tag-vocabulary.js";
+import { tagVocabulary } from "../config/tag-vocabulary.js";
+import { addTagToEpisodes } from "../pipeline/add-tag-to-episodes.js";
+import {
+  addTagToVocabulary,
+  deleteTagFromVocabulary,
+  findTag,
+  tagExists,
+  updateTagInVocabulary,
+  type AddTagParams as AddTagParameters,
+  type UpdateTagParams as UpdateTagParameters,
+} from "../pipeline/add-tag-to-vocabulary.js";
+import { reprocessEpisodes } from "../pipeline/reprocess-episodes.js";
+import { loadProcessedVideos } from "../storage/processed-videos.js";
 
 const PORT = 3001;
 
@@ -35,7 +43,7 @@ const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 // Migration job tracking
 interface MigrationJob {
   id: string;
-  status: 'running' | 'completed' | 'failed';
+  status: "running" | "completed" | "failed";
   logs: string[];
   startTime: number;
   endTime?: number;
@@ -61,12 +69,15 @@ async function computeTagStats(): Promise<TagStats[]> {
   }
 
   // Aggregate statistics per tag
-  const statsMap = new Map<string, {
-    episodeCount: number;
-    totalMentions: number;
-    category: string;
-    variations: string[];
-  }>();
+  const statsMap = new Map<
+    string,
+    {
+      episodeCount: number;
+      totalMentions: number;
+      category: string;
+      variations: string[];
+    }
+  >();
 
   for (const video of videos) {
     if (!video.tags) continue;
@@ -79,7 +90,7 @@ async function computeTagStats(): Promise<TagStats[]> {
         statsMap.set(canonicalLower, {
           episodeCount: 0,
           totalMentions: 0,
-          category: vocab?.category || 'unknown',
+          category: vocab?.category || "unknown",
           variations: vocab?.variations || [],
         });
       }
@@ -113,11 +124,14 @@ async function computeTagStats(): Promise<TagStats[]> {
 }
 
 // Run migration with tag-specific tracking (single tag mode)
-async function runMigrationWithTagTracking(skipLlm = false, trackTag?: string): Promise<string> {
+async function runMigrationWithTagTracking(
+  skipLlm = false,
+  trackTag?: string,
+): Promise<string> {
   const jobId = `migration-${Date.now()}`;
   const job: MigrationJob = {
     id: jobId,
-    status: 'running',
+    status: "running",
     logs: [],
     startTime: Date.now(),
   };
@@ -129,15 +143,15 @@ async function runMigrationWithTagTracking(skipLlm = false, trackTag?: string): 
   const originalWarn = console.warn;
 
   console.log = (...arguments_) => {
-    job.logs.push(arguments_.join(' ') + '\n');
+    job.logs.push(arguments_.join(" ") + "\n");
     originalLog(...arguments_);
   };
   console.error = (...arguments_) => {
-    job.logs.push('[ERROR] ' + arguments_.join(' ') + '\n');
+    job.logs.push("[ERROR] " + arguments_.join(" ") + "\n");
     originalError(...arguments_);
   };
   console.warn = (...arguments_) => {
-    job.logs.push('[WARN] ' + arguments_.join(' ') + '\n');
+    job.logs.push("[WARN] " + arguments_.join(" ") + "\n");
     originalWarn(...arguments_);
   };
 
@@ -153,9 +167,16 @@ async function runMigrationWithTagTracking(skipLlm = false, trackTag?: string): 
         });
 
         // Show tag-specific results
-        job.logs.push(`\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`, `📊 "${trackTag}" Results:\n`, `   Found in ${result.episodesWithTag} episodes\n`, `   Total mentions: ${result.totalMentions}\n`);
+        job.logs.push(
+          `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`,
+          `📊 "${trackTag}" Results:\n`,
+          `   Found in ${result.episodesWithTag} episodes\n`,
+          `   Total mentions: ${result.totalMentions}\n`,
+        );
         if (result.episodesWithTag > 0) {
-          job.logs.push(`   Average: ${(result.totalMentions / result.episodesWithTag).toFixed(1)} mentions/episode\n`);
+          job.logs.push(
+            `   Average: ${(result.totalMentions / result.episodesWithTag).toFixed(1)} mentions/episode\n`,
+          );
         }
         job.logs.push(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
       } else {
@@ -163,11 +184,11 @@ async function runMigrationWithTagTracking(skipLlm = false, trackTag?: string): 
         await reprocessEpisodes({ force: true, skipLlm, verbose: false });
       }
 
-      job.status = 'completed';
+      job.status = "completed";
       job.exitCode = 0;
     } catch (error) {
       job.logs.push(`\n[ERROR] Migration failed: ${error}\n`);
-      job.status = 'failed';
+      job.status = "failed";
       job.exitCode = 1;
     } finally {
       job.endTime = Date.now();
@@ -188,7 +209,7 @@ async function runMigration(skipLlm = false): Promise<string> {
   const jobId = `migration-${Date.now()}`;
   const job: MigrationJob = {
     id: jobId,
-    status: 'running',
+    status: "running",
     logs: [],
     startTime: Date.now(),
   };
@@ -200,15 +221,15 @@ async function runMigration(skipLlm = false): Promise<string> {
   const originalWarn = console.warn;
 
   console.log = (...arguments_) => {
-    job.logs.push(arguments_.join(' ') + '\n');
+    job.logs.push(arguments_.join(" ") + "\n");
     originalLog(...arguments_);
   };
   console.error = (...arguments_) => {
-    job.logs.push('[ERROR] ' + arguments_.join(' ') + '\n');
+    job.logs.push("[ERROR] " + arguments_.join(" ") + "\n");
     originalError(...arguments_);
   };
   console.warn = (...arguments_) => {
-    job.logs.push('[WARN] ' + arguments_.join(' ') + '\n');
+    job.logs.push("[WARN] " + arguments_.join(" ") + "\n");
     originalWarn(...arguments_);
   };
 
@@ -216,11 +237,11 @@ async function runMigration(skipLlm = false): Promise<string> {
   (async () => {
     try {
       await reprocessEpisodes({ force: true, skipLlm, verbose: false });
-      job.status = 'completed';
+      job.status = "completed";
       job.exitCode = 0;
     } catch (error) {
       job.logs.push(`\n[ERROR] Migration failed: ${error}\n`);
-      job.status = 'failed';
+      job.status = "failed";
       job.exitCode = 1;
     } finally {
       job.endTime = Date.now();
@@ -243,37 +264,33 @@ const _server = Bun.serve({
     const url = new URL(request.url);
 
     // Serve the main UI
-    if (url.pathname === '/' || url.pathname === '/index.html') {
-      const filePath = path.join(
-        process.cwd(),
-        'tools',
-        'tag-vocabulary.html',
-      );
+    if (url.pathname === "/" || url.pathname === "/index.html") {
+      const filePath = path.join(process.cwd(), "tools", "tag-vocabulary.html");
       const file = Bun.file(filePath);
       return new Response(file, {
-        headers: { 'Content-Type': 'text/html' },
+        headers: { "Content-Type": "text/html" },
       });
     }
 
     // API: Get all processed episodes with tags
-    if (url.pathname === '/api/episodes') {
+    if (url.pathname === "/api/episodes") {
       const videos = await loadProcessedVideos();
       return Response.json(videos);
     }
 
     // API: Get tag vocabulary
-    if (url.pathname === '/api/vocabulary') {
+    if (url.pathname === "/api/vocabulary") {
       return Response.json(tagVocabulary);
     }
 
     // API: Get tag statistics
-    if (url.pathname === '/api/tag-stats') {
+    if (url.pathname === "/api/tag-stats") {
       const stats = await computeTagStats();
       return Response.json(stats);
     }
 
     // API: Add tag to vocabulary
-    if (url.pathname === '/api/vocabulary/add' && request.method === 'POST') {
+    if (url.pathname === "/api/vocabulary/add" && request.method === "POST") {
       try {
         const body = (await request.json()) as {
           canonical?: string;
@@ -283,27 +300,34 @@ const _server = Bun.serve({
           caseSensitive?: boolean;
           description?: string;
         };
-        const { canonical, variations, category, llmVerify, caseSensitive, description } = body;
+        const {
+          canonical,
+          variations,
+          category,
+          llmVerify,
+          caseSensitive,
+          description,
+        } = body;
 
         // Validate required fields
-        if (!canonical || typeof canonical !== 'string') {
+        if (!canonical || typeof canonical !== "string") {
           return Response.json(
-            { error: 'canonical is required and must be a string' },
+            { error: "canonical is required and must be a string" },
             { status: 400 },
           );
         }
 
-        if (!category || typeof category !== 'string') {
+        if (!category || typeof category !== "string") {
           return Response.json(
-            { error: 'category is required and must be a string' },
+            { error: "category is required and must be a string" },
             { status: 400 },
           );
         }
 
         // Validate llmVerify + description dependency
-        if (llmVerify && (!description || typeof description !== 'string')) {
+        if (llmVerify && (!description || typeof description !== "string")) {
           return Response.json(
-            { error: 'description is required when llmVerify is true' },
+            { error: "description is required when llmVerify is true" },
             { status: 400 },
           );
         }
@@ -311,9 +335,9 @@ const _server = Bun.serve({
         // Parse variations (comma-separated string or array)
         let variationsArray: string[] = [];
         if (variations) {
-          if (typeof variations === 'string') {
+          if (typeof variations === "string") {
             variationsArray = variations
-              .split(',')
+              .split(",")
               .map(v => v.trim())
               .filter(v => v.length > 0);
           } else if (Array.isArray(variations)) {
@@ -357,10 +381,10 @@ const _server = Bun.serve({
           jobId,
         });
       } catch (error) {
-        console.error('Error adding tag:', error);
+        console.error("Error adding tag:", error);
         return Response.json(
           {
-            error: error instanceof Error ? error.message : 'Failed to add tag',
+            error: error instanceof Error ? error.message : "Failed to add tag",
           },
           { status: 500 },
         );
@@ -368,14 +392,17 @@ const _server = Bun.serve({
     }
 
     // API: Start migration
-    if (url.pathname === '/api/migrate' && request.method === 'POST') {
+    if (url.pathname === "/api/migrate" && request.method === "POST") {
       try {
         const jobId = await runMigration();
-        return Response.json({ jobId, status: 'started' });
+        return Response.json({ jobId, status: "started" });
       } catch (error) {
         return Response.json(
           {
-            error: error instanceof Error ? error.message : 'Failed to start migration',
+            error:
+              error instanceof Error
+                ? error.message
+                : "Failed to start migration",
           },
           { status: 500 },
         );
@@ -383,18 +410,18 @@ const _server = Bun.serve({
     }
 
     // API: Get migration status
-    if (url.pathname.startsWith('/api/migrate-status/')) {
-      const jobId = url.pathname.replace('/api/migrate-status/', '');
+    if (url.pathname.startsWith("/api/migrate-status/")) {
+      const jobId = url.pathname.replace("/api/migrate-status/", "");
       const job = migrationJobs.get(jobId);
 
       if (!job) {
-        return Response.json({ error: 'Job not found' }, { status: 404 });
+        return Response.json({ error: "Job not found" }, { status: 404 });
       }
 
       return Response.json({
         id: job.id,
         status: job.status,
-        logs: job.logs.join(''),
+        logs: job.logs.join(""),
         startTime: job.startTime,
         endTime: job.endTime,
         exitCode: job.exitCode,
@@ -402,9 +429,14 @@ const _server = Bun.serve({
     }
 
     // API: Update a tag in vocabulary
-    if (url.pathname.startsWith('/api/vocabulary/update/') && request.method === 'PUT') {
+    if (
+      url.pathname.startsWith("/api/vocabulary/update/") &&
+      request.method === "PUT"
+    ) {
       try {
-        const originalCanonical = decodeURIComponent(url.pathname.replace('/api/vocabulary/update/', ''));
+        const originalCanonical = decodeURIComponent(
+          url.pathname.replace("/api/vocabulary/update/", ""),
+        );
         const body = (await request.json()) as UpdateTagParameters;
 
         await updateTagInVocabulary(originalCanonical, body);
@@ -417,25 +449,36 @@ const _server = Bun.serve({
           message: `Tag "${originalCanonical}" updated successfully`,
         });
       } catch (error) {
-        console.error('Error updating tag:', error);
+        console.error("Error updating tag:", error);
         return Response.json(
-          { error: error instanceof Error ? error.message : 'Failed to update tag' },
+          {
+            error:
+              error instanceof Error ? error.message : "Failed to update tag",
+          },
           { status: 500 },
         );
       }
     }
 
     // API: Approve a proposed tag (change status to accepted)
-    if (url.pathname.startsWith('/api/vocabulary/approve/') && request.method === 'POST') {
+    if (
+      url.pathname.startsWith("/api/vocabulary/approve/") &&
+      request.method === "POST"
+    ) {
       try {
-        const canonical = decodeURIComponent(url.pathname.replace('/api/vocabulary/approve/', ''));
+        const canonical = decodeURIComponent(
+          url.pathname.replace("/api/vocabulary/approve/", ""),
+        );
         const tag = findTag(canonical);
 
         if (!tag) {
-          return Response.json({ error: `Tag "${canonical}" not found` }, { status: 404 });
+          return Response.json(
+            { error: `Tag "${canonical}" not found` },
+            { status: 404 },
+          );
         }
 
-        await updateTagInVocabulary(canonical, { status: 'accepted' });
+        await updateTagInVocabulary(canonical, { status: "accepted" });
 
         // Invalidate stats cache
         statsCache.data = null;
@@ -445,25 +488,36 @@ const _server = Bun.serve({
           message: `Tag "${canonical}" approved`,
         });
       } catch (error) {
-        console.error('Error approving tag:', error);
+        console.error("Error approving tag:", error);
         return Response.json(
-          { error: error instanceof Error ? error.message : 'Failed to approve tag' },
+          {
+            error:
+              error instanceof Error ? error.message : "Failed to approve tag",
+          },
           { status: 500 },
         );
       }
     }
 
     // API: Reject a proposed tag (change status to rejected)
-    if (url.pathname.startsWith('/api/vocabulary/reject/') && request.method === 'POST') {
+    if (
+      url.pathname.startsWith("/api/vocabulary/reject/") &&
+      request.method === "POST"
+    ) {
       try {
-        const canonical = decodeURIComponent(url.pathname.replace('/api/vocabulary/reject/', ''));
+        const canonical = decodeURIComponent(
+          url.pathname.replace("/api/vocabulary/reject/", ""),
+        );
         const tag = findTag(canonical);
 
         if (!tag) {
-          return Response.json({ error: `Tag "${canonical}" not found` }, { status: 404 });
+          return Response.json(
+            { error: `Tag "${canonical}" not found` },
+            { status: 404 },
+          );
         }
 
-        await updateTagInVocabulary(canonical, { status: 'rejected' });
+        await updateTagInVocabulary(canonical, { status: "rejected" });
 
         // Invalidate stats cache
         statsCache.data = null;
@@ -473,18 +527,26 @@ const _server = Bun.serve({
           message: `Tag "${canonical}" rejected`,
         });
       } catch (error) {
-        console.error('Error rejecting tag:', error);
+        console.error("Error rejecting tag:", error);
         return Response.json(
-          { error: error instanceof Error ? error.message : 'Failed to reject tag' },
+          {
+            error:
+              error instanceof Error ? error.message : "Failed to reject tag",
+          },
           { status: 500 },
         );
       }
     }
 
     // API: Delete a tag from vocabulary
-    if (url.pathname.startsWith('/api/vocabulary/delete/') && request.method === 'DELETE') {
+    if (
+      url.pathname.startsWith("/api/vocabulary/delete/") &&
+      request.method === "DELETE"
+    ) {
       try {
-        const canonical = decodeURIComponent(url.pathname.replace('/api/vocabulary/delete/', ''));
+        const canonical = decodeURIComponent(
+          url.pathname.replace("/api/vocabulary/delete/", ""),
+        );
 
         await deleteTagFromVocabulary(canonical);
 
@@ -496,18 +558,26 @@ const _server = Bun.serve({
           message: `Tag "${canonical}" deleted`,
         });
       } catch (error) {
-        console.error('Error deleting tag:', error);
+        console.error("Error deleting tag:", error);
         return Response.json(
-          { error: error instanceof Error ? error.message : 'Failed to delete tag' },
+          {
+            error:
+              error instanceof Error ? error.message : "Failed to delete tag",
+          },
           { status: 500 },
         );
       }
     }
 
     // API: Reprocess a single tag across all episodes
-    if (url.pathname.startsWith('/api/vocabulary/reprocess-tag/') && request.method === 'POST') {
+    if (
+      url.pathname.startsWith("/api/vocabulary/reprocess-tag/") &&
+      request.method === "POST"
+    ) {
       try {
-        const canonical = decodeURIComponent(url.pathname.replace('/api/vocabulary/reprocess-tag/', ''));
+        const canonical = decodeURIComponent(
+          url.pathname.replace("/api/vocabulary/reprocess-tag/", ""),
+        );
 
         // Start reprocessing for this specific tag (with LLM verification enabled)
         const jobId = await runMigrationWithTagTracking(false, canonical); // skipLlm = false, track this tag
@@ -518,15 +588,20 @@ const _server = Bun.serve({
           jobId,
         });
       } catch (error) {
-        console.error('Error reprocessing tag:', error);
+        console.error("Error reprocessing tag:", error);
         return Response.json(
-          { error: error instanceof Error ? error.message : 'Failed to reprocess tag' },
+          {
+            error:
+              error instanceof Error
+                ? error.message
+                : "Failed to reprocess tag",
+          },
           { status: 500 },
         );
       }
     }
 
-    return new Response('Not Found', { status: 404 });
+    return new Response("Not Found", { status: 404 });
   },
 });
 

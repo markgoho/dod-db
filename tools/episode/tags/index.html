@@ -9,7 +9,10 @@
   </head>
   <body>
     <div class="container-wide">
-      <div class="section" style="background: transparent; box-shadow: none; padding: 0;">
+      <div
+        class="section"
+        style="background: transparent; box-shadow: none; padding: 0"
+      >
         <nav class="breadcrumbs" id="breadcrumbs">
           <a href="/">Episodes</a>
           <span class="separator">&gt;</span>
@@ -42,13 +45,19 @@
 
             <div class="category-tabs" id="category-tabs">
               <div class="category-tab active" data-category="all">All</div>
-              <div class="category-tab" data-category="character">Characters</div>
+              <div class="category-tab" data-category="character">
+                Characters
+              </div>
               <div class="category-tab" data-category="person">Persons</div>
               <div class="category-tab" data-category="place">Places</div>
               <div class="category-tab" data-category="people">People</div>
-              <div class="category-tab" data-category="literature">Literature</div>
+              <div class="category-tab" data-category="literature">
+                Literature
+              </div>
               <div class="category-tab" data-category="theology">Theology</div>
-              <div class="category-tab" data-category="scholarship">Scholarship</div>
+              <div class="category-tab" data-category="scholarship">
+                Scholarship
+              </div>
             </div>
 
             <div class="tags-grid" id="tags-container">
@@ -62,14 +71,29 @@
             <h3>Add New Tag</h3>
             <form id="add-tag-form">
               <div class="form-group">
-                <label class="form-label" for="tag-canonical">Canonical Name *</label>
-                <input type="text" id="tag-canonical" class="form-input" placeholder="e.g., Hezekiah" required />
+                <label class="form-label" for="tag-canonical"
+                  >Canonical Name *</label
+                >
+                <input
+                  type="text"
+                  id="tag-canonical"
+                  class="form-input"
+                  placeholder="e.g., Hezekiah"
+                  required
+                />
                 <div class="form-hint">Primary form of the tag</div>
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="tag-variations">Variations</label>
-                <input type="text" id="tag-variations" class="form-input" placeholder="e.g., Hezekiah's, King Hezekiah" />
+                <label class="form-label" for="tag-variations"
+                  >Variations</label
+                >
+                <input
+                  type="text"
+                  id="tag-variations"
+                  class="form-input"
+                  placeholder="e.g., Hezekiah's, King Hezekiah"
+                />
                 <div class="form-hint">Comma-separated alternatives</div>
               </div>
 
@@ -88,17 +112,39 @@
               </div>
 
               <div class="checkbox-group">
-                <input type="checkbox" id="tag-llm-verify" onchange="toggleDescription()" />
+                <input
+                  type="checkbox"
+                  id="tag-llm-verify"
+                  onchange="toggleDescription()"
+                />
                 <label for="tag-llm-verify">Use LLM verification</label>
               </div>
-              <div class="form-hint" style="margin-bottom: 12px; margin-top: -8px;">For ambiguous names like "David" or "John"</div>
-
-              <div class="form-group" id="description-group" style="display: none;">
-                <label class="form-label" for="tag-description">Description *</label>
-                <textarea id="tag-description" class="form-input" rows="2" placeholder="Brief description for AI context"></textarea>
+              <div
+                class="form-hint"
+                style="margin-bottom: 12px; margin-top: -8px"
+              >
+                For ambiguous names like "David" or "John"
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Add Tag</button>
+              <div
+                class="form-group"
+                id="description-group"
+                style="display: none"
+              >
+                <label class="form-label" for="tag-description"
+                  >Description *</label
+                >
+                <textarea
+                  id="tag-description"
+                  class="form-input"
+                  rows="2"
+                  placeholder="Brief description for AI context"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                Add Tag
+              </button>
 
               <div class="migration-status" id="add-tag-status">
                 <div id="add-tag-status-badge"></div>
@@ -109,10 +155,20 @@
 
           <div class="sidebar-section">
             <h3>Reprocess Tags</h3>
-            <p style="font-size: 14px; color: var(--color-gray-600); margin-bottom: 16px;">
+            <p
+              style="
+                font-size: 14px;
+                color: var(--color-gray-600);
+                margin-bottom: 16px;
+              "
+            >
               Re-run tag extraction for this episode using current vocabulary.
             </p>
-            <button class="btn btn-secondary" style="width: 100%;" onclick="reprocessEpisode()">
+            <button
+              class="btn btn-secondary"
+              style="width: 100%"
+              onclick="reprocessEpisode()"
+            >
               Reprocess This Episode
             </button>
             <div class="migration-status" id="reprocess-status">
@@ -123,10 +179,20 @@
 
           <div class="sidebar-section">
             <h3>Quick Links</h3>
-            <p style="font-size: 14px; color: var(--color-gray-600); margin-bottom: 12px;">
+            <p
+              style="
+                font-size: 14px;
+                color: var(--color-gray-600);
+                margin-bottom: 12px;
+              "
+            >
               For bulk operations and vocabulary management:
             </p>
-            <a href="/tag-vocabulary" class="btn btn-secondary" style="width: 100%; text-align: center;">
+            <a
+              href="/tag-vocabulary"
+              class="btn btn-secondary"
+              style="width: 100%; text-align: center"
+            >
               Open Tag Vocabulary Manager
             </a>
           </div>
@@ -142,9 +208,21 @@
           <button class="close-modal" onclick="closeModal()">x</button>
         </div>
         <div id="modal-content"></div>
-        <div style="margin-top: 24px; display: flex; gap: 12px;">
-          <button class="btn btn-secondary" style="flex: 1;" onclick="reprocessTag()">Reprocess Tag</button>
-          <button class="btn btn-secondary" style="flex: 1;" onclick="closeModal()">Close</button>
+        <div style="margin-top: 24px; display: flex; gap: 12px">
+          <button
+            class="btn btn-secondary"
+            style="flex: 1"
+            onclick="reprocessTag()"
+          >
+            Reprocess Tag
+          </button>
+          <button
+            class="btn btn-secondary"
+            style="flex: 1"
+            onclick="closeModal()"
+          >
+            Close
+          </button>
         </div>
       </div>
     </div>

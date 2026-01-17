@@ -7,7 +7,7 @@ interface CorrectionSuggestion {
   original: string;
   corrected: string;
   count: number;
-  category: 'capitalization' | 'spelling' | 'proper-noun' | 'biblical-term';
+  category: "capitalization" | "spelling" | "proper-noun" | "biblical-term";
   examples: string[]; // Store raw text example contexts
   correctedExamples: string[]; // Store corrected text examples
   timestamps: string[]; // Store timestamps for examples
@@ -47,7 +47,11 @@ function levenshteinDistance(string1: string, string2: string): number {
         const deletion = previousRow[index_] ?? 0;
         const insertion = currentRow[index_ - 1] ?? 0;
         const substitution = previousRow[index_ - 1] ?? 0;
-        currentRow[index_] = Math.min(deletion + 1, insertion + 1, substitution + 1);
+        currentRow[index_] = Math.min(
+          deletion + 1,
+          insertion + 1,
+          substitution + 1,
+        );
       }
     }
   }
@@ -58,164 +62,164 @@ function levenshteinDistance(string1: string, string2: string): number {
 
 // Common English words to filter out (not candidates for deterministic corrections)
 const COMMON_WORDS = new Set([
-  'the',
-  'of',
-  'in',
-  'to',
-  'and',
-  'a',
-  'is',
-  'it',
-  'that',
-  'be',
-  'for',
-  'on',
-  'with',
-  'as',
-  'by',
-  'at',
-  'or',
-  'an',
-  'this',
-  'from',
-  'they',
-  'we',
-  'you',
-  'he',
-  'she',
-  'was',
-  'were',
-  'been',
-  'are',
-  'have',
-  'has',
-  'had',
-  'do',
-  'does',
-  'did',
-  'will',
-  'would',
-  'could',
-  'should',
-  'may',
-  'might',
-  'can',
-  'but',
-  'not',
-  'what',
-  'which',
-  'who',
-  'when',
-  'where',
-  'why',
-  'how',
-  'all',
-  'each',
-  'every',
-  'some',
-  'any',
-  'more',
-  'most',
-  'other',
-  'such',
-  'only',
-  'own',
-  'same',
-  'so',
-  'than',
-  'too',
-  'very',
-  'just',
-  'about',
-  'into',
-  'through',
-  'during',
-  'before',
-  'after',
-  'above',
-  'below',
-  'between',
-  'under',
-  'again',
-  'once',
-  'here',
-  'there',
-  'then',
-  'now',
-  'also',
-  'being',
-  'going',
-  'people',
-  'know',
-  'think',
-  'say',
-  'get',
-  'make',
-  'go',
-  'see',
-  'come',
-  'take',
-  'give',
-  'find',
-  'tell',
-  'ask',
-  'work',
-  'seem',
-  'feel',
-  'try',
-  'leave',
-  'call',
+  "the",
+  "of",
+  "in",
+  "to",
+  "and",
+  "a",
+  "is",
+  "it",
+  "that",
+  "be",
+  "for",
+  "on",
+  "with",
+  "as",
+  "by",
+  "at",
+  "or",
+  "an",
+  "this",
+  "from",
+  "they",
+  "we",
+  "you",
+  "he",
+  "she",
+  "was",
+  "were",
+  "been",
+  "are",
+  "have",
+  "has",
+  "had",
+  "do",
+  "does",
+  "did",
+  "will",
+  "would",
+  "could",
+  "should",
+  "may",
+  "might",
+  "can",
+  "but",
+  "not",
+  "what",
+  "which",
+  "who",
+  "when",
+  "where",
+  "why",
+  "how",
+  "all",
+  "each",
+  "every",
+  "some",
+  "any",
+  "more",
+  "most",
+  "other",
+  "such",
+  "only",
+  "own",
+  "same",
+  "so",
+  "than",
+  "too",
+  "very",
+  "just",
+  "about",
+  "into",
+  "through",
+  "during",
+  "before",
+  "after",
+  "above",
+  "below",
+  "between",
+  "under",
+  "again",
+  "once",
+  "here",
+  "there",
+  "then",
+  "now",
+  "also",
+  "being",
+  "going",
+  "people",
+  "know",
+  "think",
+  "say",
+  "get",
+  "make",
+  "go",
+  "see",
+  "come",
+  "take",
+  "give",
+  "find",
+  "tell",
+  "ask",
+  "work",
+  "seem",
+  "feel",
+  "try",
+  "leave",
+  "call",
 ]);
 
 // Biblical and theological terms (if we see these, they're likely good candidates)
 const BIBLICAL_TERMS = new Set([
-  'torah',
-  'septuagint',
-  'apocrypha',
-  'deuteronomy',
-  'genesis',
-  'exodus',
-  'leviticus',
-  'numbers',
-  'revelation',
-  'apocalypse',
-  'messiah',
-  'yhwh',
-  'yahweh',
-  'elohim',
-  'adonai',
-  'gospel',
-  'epistle',
-  'testament',
-  'apostle',
-  'pharisee',
-  'sadducee',
-  'essene',
-  'zealot',
-  'synagogue',
-  'sanhedrin',
-  'pentateuch',
-  'psalms',
-  'proverbs',
-  'prophets',
-  'maccabees',
-  'josephus',
-  'philo',
-  'talmud',
-  'midrash',
-  'mishnah',
-  'aramaic',
-  'hebrew',
-  'koine',
-  'byzantine',
-  'alexandrian',
-  'codex',
-  'papyrus',
-  'manuscript',
-  'textual',
-  'canonical',
-  'apocryphal',
-  'deuterocanonical',
+  "torah",
+  "septuagint",
+  "apocrypha",
+  "deuteronomy",
+  "genesis",
+  "exodus",
+  "leviticus",
+  "numbers",
+  "revelation",
+  "apocalypse",
+  "messiah",
+  "yhwh",
+  "yahweh",
+  "elohim",
+  "adonai",
+  "gospel",
+  "epistle",
+  "testament",
+  "apostle",
+  "pharisee",
+  "sadducee",
+  "essene",
+  "zealot",
+  "synagogue",
+  "sanhedrin",
+  "pentateuch",
+  "psalms",
+  "proverbs",
+  "prophets",
+  "maccabees",
+  "josephus",
+  "philo",
+  "talmud",
+  "midrash",
+  "mishnah",
+  "aramaic",
+  "hebrew",
+  "koine",
+  "byzantine",
+  "alexandrian",
+  "codex",
+  "papyrus",
+  "manuscript",
+  "textual",
+  "canonical",
+  "apocryphal",
+  "deuterocanonical",
 ]);
 
 /**
@@ -227,10 +231,8 @@ export async function analyzeCorrections(
   correctedTranscript: string,
   episodeId?: string,
 ): Promise<void> {
-  const rawLines = rawTranscript.split('\n').filter((l) => l.trim());
-  const correctedLines = correctedTranscript
-    .split('\n')
-    .filter((l) => l.trim());
+  const rawLines = rawTranscript.split("\n").filter(l => l.trim());
+  const correctedLines = correctedTranscript.split("\n").filter(l => l.trim());
 
   // Build maps indexed by timestamp for alignment
   const rawByTimestamp = new Map<string, string>();
@@ -276,12 +278,27 @@ export async function analyzeCorrections(
 
     // Detect multi-word patterns
     for (let index = 0; index < correctedWords.length - 1; index++) {
-      const correctedWord1Orig = correctedWords[index]?.replaceAll(/[.,!?;:()[\]"]/g, '');
-      const correctedWord2Orig = correctedWords[index + 1]?.replaceAll(/[.,!?;:()[\]"]/g, '');
-      const rawWord1Orig = rawWords[index]?.replaceAll(/[.,!?;:()[\]"]/g, '');
-      const rawWord2Orig = rawWords[index + 1]?.replaceAll(/[.,!?;:()[\]"]/g, '');
+      const correctedWord1Orig = correctedWords[index]?.replaceAll(
+        /[.,!?;:()[\]"]/g,
+        "",
+      );
+      const correctedWord2Orig = correctedWords[index + 1]?.replaceAll(
+        /[.,!?;:()[\]"]/g,
+        "",
+      );
+      const rawWord1Orig = rawWords[index]?.replaceAll(/[.,!?;:()[\]"]/g, "");
+      const rawWord2Orig = rawWords[index + 1]?.replaceAll(
+        /[.,!?;:()[\]"]/g,
+        "",
+      );
 
-      if (!correctedWord1Orig || !correctedWord2Orig || !rawWord1Orig || !rawWord2Orig) continue;
+      if (
+        !correctedWord1Orig ||
+        !correctedWord2Orig ||
+        !rawWord1Orig ||
+        !rawWord2Orig
+      )
+        continue;
 
       const correctedWord1 = correctedWord1Orig.toLowerCase();
       const correctedWord2 = correctedWord2Orig.toLowerCase();
@@ -289,54 +306,61 @@ export async function analyzeCorrections(
       const rawWord2 = rawWord2Orig.toLowerCase();
 
       // Check for 2-word capitalization patterns (e.g., "hebrew bible" → "Hebrew Bible")
-      if (rawWord1 === correctedWord1 && rawWord2 === correctedWord2 && // Same words, check if only capitalization changed
-        (rawWord1Orig !== correctedWord1Orig || rawWord2Orig !== correctedWord2Orig)) {
-          // Capitalization change in a 2-word phrase
-          const originalPhrase = rawWord1Orig + ' ' + rawWord2Orig;
-          const correctedPhrase = correctedWord1Orig + ' ' + correctedWord2Orig;
+      if (
+        rawWord1 === correctedWord1 &&
+        rawWord2 === correctedWord2 && // Same words, check if only capitalization changed
+        (rawWord1Orig !== correctedWord1Orig ||
+          rawWord2Orig !== correctedWord2Orig)
+      ) {
+        // Capitalization change in a 2-word phrase
+        const originalPhrase = rawWord1Orig + " " + rawWord2Orig;
+        const correctedPhrase = correctedWord1Orig + " " + correctedWord2Orig;
 
-          // Skip if it's common words
-          if (COMMON_WORDS.has(rawWord1) || COMMON_WORDS.has(rawWord2)) continue;
+        // Skip if it's common words
+        if (COMMON_WORDS.has(rawWord1) || COMMON_WORDS.has(rawWord2)) continue;
 
-          const key = `${originalPhrase.toLowerCase()}→${correctedPhrase.toLowerCase()}`;
+        const key = `${originalPhrase.toLowerCase()}→${correctedPhrase.toLowerCase()}`;
 
-          if (corrections.has(key)) {
-            const suggestion = corrections.get(key)!;
-            suggestion.count++;
-            if (suggestion.examples.length < 3) {
-              suggestion.examples.push(
-                `"${rawWords.slice(Math.max(0, index - 2), index + 4).join(' ')}"`,
-              );
-              suggestion.correctedExamples.push(
-                `"${correctedWords.slice(Math.max(0, index - 2), index + 4).join(' ')}"`,
-              );
-              suggestion.timestamps.push(timestamp);
-            }
-          } else {
-            corrections.set(key, {
-              original: originalPhrase,
-              corrected: correctedPhrase,
-              count: 1,
-              category: 'capitalization',
-              examples: [
-                `"${rawWords.slice(Math.max(0, index - 2), index + 4).join(' ')}"`,
-              ],
-              correctedExamples: [
-                `"${correctedWords.slice(Math.max(0, index - 2), index + 4).join(' ')}"`,
-              ],
-              timestamps: [timestamp],
-            });
+        if (corrections.has(key)) {
+          const suggestion = corrections.get(key)!;
+          suggestion.count++;
+          if (suggestion.examples.length < 3) {
+            suggestion.examples.push(
+              `"${rawWords.slice(Math.max(0, index - 2), index + 4).join(" ")}"`,
+            );
+            suggestion.correctedExamples.push(
+              `"${correctedWords.slice(Math.max(0, index - 2), index + 4).join(" ")}"`,
+            );
+            suggestion.timestamps.push(timestamp);
           }
+        } else {
+          corrections.set(key, {
+            original: originalPhrase,
+            corrected: correctedPhrase,
+            count: 1,
+            category: "capitalization",
+            examples: [
+              `"${rawWords.slice(Math.max(0, index - 2), index + 4).join(" ")}"`,
+            ],
+            correctedExamples: [
+              `"${correctedWords.slice(Math.max(0, index - 2), index + 4).join(" ")}"`,
+            ],
+            timestamps: [timestamp],
+          });
         }
+      }
     }
 
     // Simple word-by-word comparison
     const maxLength = Math.max(rawWords.length, correctedWords.length);
     for (let index = 0; index < maxLength; index++) {
-      const rawWordOriginal = rawWords[index]?.replaceAll(/[.,!?;:()[\]"]/g, '');
+      const rawWordOriginal = rawWords[index]?.replaceAll(
+        /[.,!?;:()[\]"]/g,
+        "",
+      );
       const correctedWordOriginal = correctedWords[index]?.replaceAll(
         /[.,!?;:()[\]"]/g,
-        '',
+        "",
       );
 
       if (!rawWordOriginal || !correctedWordOriginal) continue;
@@ -356,25 +380,29 @@ export async function analyzeCorrections(
         }
 
         // Determine category
-        let category: CorrectionSuggestion['category'] = 'spelling';
+        let category: CorrectionSuggestion["category"] = "spelling";
 
         // Check if it's only a capitalization difference
-        if (rawWord === correctedWord && rawWordOriginal !== correctedWordOriginal) {
-          category = 'capitalization';
+        if (
+          rawWord === correctedWord &&
+          rawWordOriginal !== correctedWordOriginal
+        ) {
+          category = "capitalization";
         }
         // Check if it's a biblical term
         else if (
           BIBLICAL_TERMS.has(rawWord) ||
           BIBLICAL_TERMS.has(correctedWord)
         ) {
-          category = 'biblical-term';
+          category = "biblical-term";
         }
         // Check if it looks like a proper noun (capitalized in correction)
         else if (
-          correctedWordOriginal[0] === correctedWordOriginal[0]?.toUpperCase() &&
+          correctedWordOriginal[0] ===
+            correctedWordOriginal[0]?.toUpperCase() &&
           rawWordOriginal[0] !== rawWordOriginal[0]?.toUpperCase()
         ) {
-          category = 'proper-noun';
+          category = "proper-noun";
         }
 
         // Found a correction
@@ -386,10 +414,10 @@ export async function analyzeCorrections(
           // Store up to 3 example contexts (both raw and corrected)
           if (suggestion.examples.length < 3) {
             suggestion.examples.push(
-              `"${rawWords.slice(Math.max(0, index - 2), index + 3).join(' ')}"`,
+              `"${rawWords.slice(Math.max(0, index - 2), index + 3).join(" ")}"`,
             );
             suggestion.correctedExamples.push(
-              `"${correctedWords.slice(Math.max(0, index - 2), index + 3).join(' ')}"`,
+              `"${correctedWords.slice(Math.max(0, index - 2), index + 3).join(" ")}"`,
             );
             suggestion.timestamps.push(timestamp);
           }
@@ -400,10 +428,10 @@ export async function analyzeCorrections(
             count: 1,
             category,
             examples: [
-              `"${rawWords.slice(Math.max(0, index - 2), index + 3).join(' ')}"`,
+              `"${rawWords.slice(Math.max(0, index - 2), index + 3).join(" ")}"`,
             ],
             correctedExamples: [
-              `"${correctedWords.slice(Math.max(0, index - 2), index + 3).join(' ')}"`,
+              `"${correctedWords.slice(Math.max(0, index - 2), index + 3).join(" ")}"`,
             ],
             timestamps: [timestamp],
           });
@@ -414,36 +442,36 @@ export async function analyzeCorrections(
 
   // Print results
   if (corrections.size === 0) {
-    console.log('\n✓ No corrections needed - transcript was already accurate!');
+    console.log("\n✓ No corrections needed - transcript was already accurate!");
     return;
   }
 
   // Separate by category
   const capitalizations = [...corrections.values()]
-    .filter((c) => c.category === 'capitalization')
+    .filter(c => c.category === "capitalization")
     .sort((a, b) => b.count - a.count);
 
   const biblicalTerms = [...corrections.values()]
-    .filter((c) => c.category === 'biblical-term')
+    .filter(c => c.category === "biblical-term")
     .sort((a, b) => b.count - a.count);
 
   const properNouns = [...corrections.values()]
-    .filter((c) => c.category === 'proper-noun')
+    .filter(c => c.category === "proper-noun")
     .sort((a, b) => b.count - a.count);
 
   const spellingCorrections = [...corrections.values()]
-    .filter((c) => c.category === 'spelling')
+    .filter(c => c.category === "spelling")
     .sort((a, b) => b.count - a.count);
 
-  console.log('\n📚 Learning Report: LLM Corrections Analysis');
-  console.log('==============================================\n');
+  console.log("\n📚 Learning Report: LLM Corrections Analysis");
+  console.log("==============================================\n");
 
   // Biblical/Theological Terms (HIGHEST PRIORITY)
-  const highPriorityBiblical = biblicalTerms.filter((c) => c.count >= 2);
+  const highPriorityBiblical = biblicalTerms.filter(c => c.count >= 2);
   if (highPriorityBiblical.length > 0) {
-    console.log('🔥 BIBLICAL/THEOLOGICAL TERMS (2+ occurrences):');
-    console.log('------------------------------------------------');
-    console.log('These are EXCELLENT candidates for corrections.ts!\n');
+    console.log("🔥 BIBLICAL/THEOLOGICAL TERMS (2+ occurrences):");
+    console.log("------------------------------------------------");
+    console.log("These are EXCELLENT candidates for corrections.ts!\n");
     for (const correction of highPriorityBiblical) {
       console.log(`  ${correction.original} → ${correction.corrected}`);
       console.log(`    Occurrences: ${correction.count}`);
@@ -451,69 +479,67 @@ export async function analyzeCorrections(
         `    Suggested rule: [["${correction.original}"], "${correction.corrected}"],`,
       );
       console.log(`    Example: ${correction.examples[0]}`);
-      console.log('');
+      console.log("");
     }
   }
 
   // Proper Nouns
-  const highPriorityNouns = properNouns.filter((c) => c.count >= 3);
+  const highPriorityNouns = properNouns.filter(c => c.count >= 3);
   if (highPriorityNouns.length > 0) {
-    console.log('📛 PROPER NOUNS (3+ occurrences):');
-    console.log('----------------------------------');
-    console.log('Review these - could be scholar names, places, etc.\n');
+    console.log("📛 PROPER NOUNS (3+ occurrences):");
+    console.log("----------------------------------");
+    console.log("Review these - could be scholar names, places, etc.\n");
     for (const correction of highPriorityNouns) {
       console.log(
         `  ${correction.original} → ${correction.corrected} (${correction.count}x)`,
       );
       console.log(`    Example: ${correction.examples[0]}`);
-      console.log('');
+      console.log("");
     }
   }
 
   // Capitalization patterns
-  const frequentCapitalizations = capitalizations.filter((c) => c.count >= 3);
+  const frequentCapitalizations = capitalizations.filter(c => c.count >= 3);
   if (frequentCapitalizations.length > 0) {
-    console.log('🔤 CAPITALIZATION PATTERNS (3+ occurrences):');
-    console.log('--------------------------------------------');
-    console.log('These might be worth adding if they are specific terms.\n');
+    console.log("🔤 CAPITALIZATION PATTERNS (3+ occurrences):");
+    console.log("--------------------------------------------");
+    console.log("These might be worth adding if they are specific terms.\n");
     for (const correction of frequentCapitalizations) {
       console.log(
         `  ${correction.original} → ${correction.corrected} (${correction.count}x)`,
       );
     }
-    console.log('');
+    console.log("");
   }
 
   // Spelling corrections
-  const highPrioritySpelling = spellingCorrections.filter((c) => c.count >= 3);
+  const highPrioritySpelling = spellingCorrections.filter(c => c.count >= 3);
   if (highPrioritySpelling.length > 0) {
-    console.log('✏️  SPELLING CORRECTIONS (3+ occurrences):');
-    console.log('------------------------------------------');
+    console.log("✏️  SPELLING CORRECTIONS (3+ occurrences):");
+    console.log("------------------------------------------");
     for (const correction of highPrioritySpelling) {
       console.log(
         `  ${correction.original} → ${correction.corrected} (${correction.count}x)`,
       );
       console.log(`    Example: ${correction.examples[0]}`);
-      console.log('');
+      console.log("");
     }
   }
 
   // Summary
-  console.log('\n📊 Summary:');
-  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+  console.log("\n📊 Summary:");
+  console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
   console.log(`  Total unique corrections: ${corrections.size}`);
   console.log(`  Biblical/Theological terms: ${biblicalTerms.length}`);
   console.log(`    └─ High priority (2+): ${highPriorityBiblical.length}`);
   console.log(`  Proper nouns: ${properNouns.length}`);
   console.log(`    └─ High priority (3+): ${highPriorityNouns.length}`);
   console.log(`  Capitalization patterns: ${capitalizations.length}`);
-  console.log(
-    `    └─ High priority (3+): ${frequentCapitalizations.length}`,
-  );
+  console.log(`    └─ High priority (3+): ${frequentCapitalizations.length}`);
   console.log(`  Spelling corrections: ${spellingCorrections.length}`);
   console.log(`    └─ High priority (3+): ${highPrioritySpelling.length}`);
   console.log(
-    '\n💡 Focus on Biblical/Theological terms first - they have the highest ROI!\n',
+    "\n💡 Focus on Biblical/Theological terms first - they have the highest ROI!\n",
   );
 
   // Update tracker with corrections from this episode
@@ -523,36 +549,36 @@ export async function analyzeCorrections(
       saveTracker,
       updateTracker,
       getHighConfidenceCandidates,
-    } = await import('./correction-tracker.js');
+    } = await import("./correction-tracker.js");
 
     // Filter corrections to only track high-quality candidates
     // We only want to track systematic transcription errors, not sentence reorganization
-    const highQualityCandidates = [...corrections.values()].filter(
-      (c) => {
-        // Skip very different words (likely sentence restructuring, not transcription errors)
-        // Calculate Levenshtein distance as a ratio
-        const maxLength = Math.max(c.original.length, c.corrected.length);
-        const similarity = 1 - levenshteinDistance(c.original, c.corrected) / maxLength;
+    const highQualityCandidates = [...corrections.values()].filter(c => {
+      // Skip very different words (likely sentence restructuring, not transcription errors)
+      // Calculate Levenshtein distance as a ratio
+      const maxLength = Math.max(c.original.length, c.corrected.length);
+      const similarity =
+        1 - levenshteinDistance(c.original, c.corrected) / maxLength;
 
-        // Only track if words are similar (>40% similar) OR it's a biblical term OR proper noun
-        const isSimilar = similarity > 0.4;
-        const isImportantCategory = c.category === 'biblical-term' || c.category === 'proper-noun';
+      // Only track if words are similar (>40% similar) OR it's a biblical term OR proper noun
+      const isSimilar = similarity > 0.4;
+      const isImportantCategory =
+        c.category === "biblical-term" || c.category === "proper-noun";
 
-        if (!isSimilar && !isImportantCategory) {
-          return false;
-        }
+      if (!isSimilar && !isImportantCategory) {
+        return false;
+      }
 
-        // Skip if it appears only once in this episode (not systematic enough)
-        if (c.count < 2) {
-          return false;
-        }
+      // Skip if it appears only once in this episode (not systematic enough)
+      if (c.count < 2) {
+        return false;
+      }
 
-        return true;
-      },
-    );
+      return true;
+    });
 
     // Prepare corrections for tracker
-    const allCorrections = highQualityCandidates.map((c) => ({
+    const allCorrections = highQualityCandidates.map(c => ({
       original: c.original,
       corrected: c.corrected,
       category: c.category,
@@ -571,21 +597,21 @@ export async function analyzeCorrections(
     const highConfidence = getHighConfidenceCandidates(tracker, 50);
 
     if (highConfidence.length > 0) {
-      console.log('\n⭐ HIGH-CONFIDENCE CANDIDATES (across all episodes):');
-      console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+      console.log("\n⭐ HIGH-CONFIDENCE CANDIDATES (across all episodes):");
+      console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
       console.log(
-        '🎯 These corrections appear in multiple episodes and are strong',
+        "🎯 These corrections appear in multiple episodes and are strong",
       );
-      console.log('   candidates for adding to src/config/corrections.ts\n');
+      console.log("   candidates for adding to src/config/corrections.ts\n");
 
       for (const candidate of highConfidence.slice(0, 10)) {
         // Top 10
         const badge =
           candidate.confidence >= 70
-            ? '🔥'
-            : (candidate.confidence >= 60
-              ? '⚡'
-              : '✨');
+            ? "🔥"
+            : candidate.confidence >= 60
+              ? "⚡"
+              : "✨";
         console.log(
           `${badge} ${candidate.original} → ${candidate.corrected} (${candidate.confidence}% confidence)`,
         );
@@ -596,20 +622,20 @@ export async function analyzeCorrections(
           `   Suggested rule: [["${candidate.original}"], "${candidate.corrected}"],`,
         );
         console.log(`   Example: ${candidate.examples[0]}`);
-        console.log('');
+        console.log("");
       }
 
       if (highConfidence.length > 10) {
         console.log(`   ... and ${highConfidence.length - 10} more\n`);
       }
 
-      console.log('💾 Tracker updated: data/correction-candidates.json');
+      console.log("💾 Tracker updated: data/correction-candidates.json");
       console.log(
         '📝 Run "bun run src/scripts/review-corrections.ts" to review and approve\n',
       );
     } else {
       console.log(
-        '\n💾 Tracker updated: data/correction-candidates.json (no high-confidence candidates yet)\n',
+        "\n💾 Tracker updated: data/correction-candidates.json (no high-confidence candidates yet)\n",
       );
     }
   }
@@ -621,7 +647,7 @@ export async function analyzeCorrections(
 function extractTimestamp(line: string): string | undefined {
   // Match: [HH:MM:SS.mmm] or [HH:MM:SS] with optional spaces
   const match = line.match(/^\[(\d{2}:\d{2}:\d{2}(?:\.\d{3})?)\]/);
-  return match?.[1]?.replaceAll(/\s+/g, ''); // Remove any spaces
+  return match?.[1]?.replaceAll(/\s+/g, ""); // Remove any spaces
 }
 
 /**

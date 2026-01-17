@@ -3,23 +3,23 @@ name: Process YouTube Episodes
 on:
   # Run weekly on Mondays at 8am EST (1pm UTC)
   schedule:
-    - cron: '0 13 * * 1'
+    - cron: "0 13 * * 1"
 
   # Manual trigger with video URLs
   workflow_dispatch:
     inputs:
       video_urls:
-        description: 'YouTube video URLs (comma-separated)'
+        description: "YouTube video URLs (comma-separated)"
         required: false
         type: string
       force:
-        description: 'Force reprocess already-processed videos'
+        description: "Force reprocess already-processed videos"
         required: false
         type: boolean
         default: false
 
 permissions:
-  contents: write  # Need write access to commit processed-videos.json and transcripts
+  contents: write # Need write access to commit processed-videos.json and transcripts
 
 jobs:
   process_episodes:

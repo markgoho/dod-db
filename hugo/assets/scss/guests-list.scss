@@ -13,7 +13,7 @@
 
   // Subtle parchment texture
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     background:
@@ -53,7 +53,7 @@
 
   // Ornamental divider
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -73,7 +73,7 @@
 
   // Decorative dots
   &::before {
-    content: '◆';
+    content: "◆";
     position: absolute;
     bottom: calc(-1 * var(--space-4xs));
     left: 50%;
@@ -114,7 +114,7 @@
 
     // Subtle ornamental divider
     &::before {
-      content: '◆';
+      content: "◆";
       position: absolute;
       top: 0;
       left: 50%;
@@ -173,7 +173,7 @@
 
   // Decorative corner accent
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;

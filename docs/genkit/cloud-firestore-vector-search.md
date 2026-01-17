@@ -66,7 +66,9 @@ const app = initializeApp();
 let firestore = getFirestore(app);
 
 if (process.env.GCLOUD_SERVICE_ACCOUNT_CREDS) {
-  const serviceAccountCreds = JSON.parse(process.env.GCLOUD_SERVICE_ACCOUNT_CREDS);
+  const serviceAccountCreds = JSON.parse(
+    process.env.GCLOUD_SERVICE_ACCOUNT_CREDS,
+  );
   const authOptions = { credentials: serviceAccountCreds };
   firestore.settings(authOptions);
 }
@@ -224,7 +226,7 @@ export const exampleFlow = ai.defineFlow(
   {
     name: "exampleFlow",
   },
-  async (prompt) => {
+  async prompt => {
     // Flow logic goes here.
 
     return response;

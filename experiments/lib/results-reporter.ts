@@ -2,11 +2,11 @@
  * Results reporting and persistence utilities.
  */
 
-import type { AccuracyMetrics } from './accuracy.js';
-import type { CostBreakdown } from './cost-calculator.js';
-import { OUTPUT_CONFIG } from '../config/experiment-config.js';
+import { OUTPUT_CONFIG } from "../config/experiment-config.js";
+import type { AccuracyMetrics } from "./accuracy.js";
+import type { CostBreakdown } from "./cost-calculator.js";
 
-export type ExperimentType = 'baseline' | 'parallel' | 'model-comparison';
+export type ExperimentType = "baseline" | "parallel" | "model-comparison";
 
 export interface TimingMetrics {
   deterministicMs: number;
@@ -30,7 +30,7 @@ export interface BaselineResult {
 export interface ParallelResult {
   transcript: string;
   transcriptName: string;
-  concurrency: number | 'full';
+  concurrency: number | "full";
   chunks: number;
   timing: {
     wallClockMs: number;
@@ -78,7 +78,7 @@ export interface ExperimentRun<T> {
  * Generate a unique experiment ID.
  */
 export function generateExperimentId(): string {
-  const timestamp = new Date().toISOString().replaceAll(/[:.]/g, '-');
+  const timestamp = new Date().toISOString().replaceAll(/[:.]/g, "-");
   const random = Math.random().toString(36).slice(2, 8);
   return `${timestamp}-${random}`;
 }
@@ -86,7 +86,7 @@ export function generateExperimentId(): string {
 /**
  * Get environment information.
  */
-export function getEnvironmentInfo(): ExperimentRun<unknown>['environment'] {
+export function getEnvironmentInfo(): ExperimentRun<unknown>["environment"] {
   return {
     bunVersion: Bun.version,
     platform: process.platform,
@@ -98,13 +98,13 @@ export function getEnvironmentInfo(): ExperimentRun<unknown>['environment'] {
  */
 export async function getGitCommit(): Promise<string> {
   try {
-    const proc = Bun.spawn(['git', 'rev-parse', '--short', 'HEAD'], {
-      stdout: 'pipe',
+    const proc = Bun.spawn(["git", "rev-parse", "--short", "HEAD"], {
+      stdout: "pipe",
     });
     const output = await new Response(proc.stdout).text();
     return output.trim();
   } catch {
-    return 'unknown';
+    return "unknown";
   }
 }
 
@@ -114,7 +114,7 @@ export async function getGitCommit(): Promise<string> {
 export async function writeResults<T>(
   experimentType: ExperimentType,
   results: T[],
-  summary: ExperimentRun<T>['summary'],
+  summary: ExperimentRun<T>["summary"],
 ): Promise<string> {
   const id = generateExperimentId();
   const gitCommit = await getGitCommit();
@@ -144,14 +144,14 @@ export async function writeResults<T>(
 export async function loadPreviousRuns<T>(
   experimentType: ExperimentType,
 ): Promise<Array<ExperimentRun<T>>> {
-  const { readdir } = await import('node:fs/promises');
+  const { readdir } = await import("node:fs/promises");
 
   try {
     const files = await readdir(OUTPUT_CONFIG.directory);
     const runs: Array<ExperimentRun<T>> = [];
 
     for (const file of files) {
-      if (file.startsWith(experimentType) && file.endsWith('.json')) {
+      if (file.startsWith(experimentType) && file.endsWith(".json")) {
         const content = await Bun.file(
           `${OUTPUT_CONFIG.directory}/${file}`,
         ).text();
@@ -169,8 +169,12 @@ export async function loadPreviousRuns<T>(
  * Calculate summary statistics from results.
  */
 export function calculateSummary(
-  results: Array<{ accuracy: AccuracyMetrics; cost: CostBreakdown; timing: { wallClockMs: number } }>,
-): ExperimentRun<unknown>['summary'] {
+  results: Array<{
+    accuracy: AccuracyMetrics;
+    cost: CostBreakdown;
+    timing: { wallClockMs: number };
+  }>,
+): ExperimentRun<unknown>["summary"] {
   if (results.length === 0) {
     return {
       totalTranscripts: 0,
@@ -192,10 +196,12 @@ export function calculateSummary(
   const recommendations: string[] = [];
 
   if (avgAccuracy < 0.95) {
-    recommendations.push('Accuracy below 95% - consider reviewing model choice');
+    recommendations.push(
+      "Accuracy below 95% - consider reviewing model choice",
+    );
   }
   if (avgCost > 0.01) {
-    recommendations.push('Cost >$0.01/transcript - consider cheaper model');
+    recommendations.push("Cost >$0.01/transcript - consider cheaper model");
   }
 
   return {
@@ -210,15 +216,17 @@ export function calculateSummary(
 /**
  * Print summary to console.
  */
-export function printSummary(summary: ExperimentRun<unknown>['summary']): void {
-  console.log('\n=== SUMMARY ===');
+export function printSummary(summary: ExperimentRun<unknown>["summary"]): void {
+  console.log("\n=== SUMMARY ===");
   console.log(`Transcripts processed: ${summary.totalTranscripts}`);
   console.log(`Average accuracy: ${(summary.avgAccuracy * 100).toFixed(2)}%`);
   console.log(`Average cost: $${summary.avgCostPerTranscript.toFixed(6)}`);
-  console.log(`Average time: ${(summary.avgTimePerTranscript / 1000).toFixed(1)}s`);
+  console.log(
+    `Average time: ${(summary.avgTimePerTranscript / 1000).toFixed(1)}s`,
+  );
 
   if (summary.recommendations.length > 0) {
-    console.log('\nRecommendations:');
+    console.log("\nRecommendations:");
     for (const rec of summary.recommendations) {
       console.log(`  - ${rec}`);
     }

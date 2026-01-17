@@ -5,7 +5,7 @@
 // Debounce function calls
 export function debounce<T extends (...arguments_: unknown[]) => void>(
   function_: T,
-  delay: number
+  delay: number,
 ): (...arguments_: Parameters<T>) => void {
   let timeoutId: ReturnType<typeof setTimeout>;
   return (...arguments_: Parameters<T>) => {

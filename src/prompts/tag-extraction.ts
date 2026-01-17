@@ -3,34 +3,34 @@
  * Used to identify NEW high-value tags (3+ mentions) that aren't in the vocabulary yet.
  */
 
-import { z } from 'zod';
+import { z } from "zod";
 
 /**
  * Zod schema for structured tag discovery output from LLM.
  * Each discovered tag includes its name, mention count, and category.
  */
 export const TagDiscoverySchema = z.object({
-	tags: z.array(
-		z.object({
-			tag: z.string(),
-			mentions: z.number(),
-			category: z.enum([
-				'character',
-				'person',
-				'place',
-				'people',
-				'literature',
-				'theology',
-				'scholarship',
-				'religion',
-				'event',
-				'other',
-			]),
-			description: z.string(), // Brief context for disambiguation (1-2 sentences)
-			variations: z.array(z.string()).optional(), // Alternative names, spellings, or abbreviations
-			caseSensitive: z.boolean().optional(), // True for short words that match common English (Lot, Job, Mark)
-		}),
-	),
+  tags: z.array(
+    z.object({
+      tag: z.string(),
+      mentions: z.number(),
+      category: z.enum([
+        "character",
+        "person",
+        "place",
+        "people",
+        "literature",
+        "theology",
+        "scholarship",
+        "religion",
+        "event",
+        "other",
+      ]),
+      description: z.string(), // Brief context for disambiguation (1-2 sentences)
+      variations: z.array(z.string()).optional(), // Alternative names, spellings, or abbreviations
+      caseSensitive: z.boolean().optional(), // True for short words that match common English (Lot, Job, Mark)
+    }),
+  ),
 });
 
 export type TagDiscovery = z.infer<typeof TagDiscoverySchema>;
@@ -46,20 +46,20 @@ export type TagDiscovery = z.infer<typeof TagDiscoverySchema>;
  * @returns Formatted prompt string for LLM
  */
 export function tagExtractionPrompt(
-	transcript: string,
-	excludeTags: string[],
-	allowedCategories?: string[],
+  transcript: string,
+  excludeTags: string[],
+  allowedCategories?: string[],
 ): string {
-	const exclusionList =
-		excludeTags.length > 0
-			? `\n\n<exclude-tags>\nDO NOT include these tags (already identified):\n${excludeTags.map((t) => `- ${t}`).join('\n')}\n</exclude-tags>`
-			: '';
+  const exclusionList =
+    excludeTags.length > 0
+      ? `\n\n<exclude-tags>\nDO NOT include these tags (already identified):\n${excludeTags.map(t => `- ${t}`).join("\n")}\n</exclude-tags>`
+      : "";
 
-	const categoryRestriction = allowedCategories
-		? `\n\n<category-restriction>\n⚠️  IMPORTANT: ONLY extract tags in these categories: ${allowedCategories.join(', ')}\nIgnore all other categories completely.\n</category-restriction>`
-		: '';
+  const categoryRestriction = allowedCategories
+    ? `\n\n<category-restriction>\n⚠️  IMPORTANT: ONLY extract tags in these categories: ${allowedCategories.join(", ")}\nIgnore all other categories completely.\n</category-restriction>`
+    : "";
 
-	return `You are an expert in biblical scholarship and theological terminology. Extract significant tags from this podcast transcript.
+  return `You are an expert in biblical scholarship and theological terminology. Extract significant tags from this podcast transcript.
 
 <podcast-context>
 This is "Data Over Dogma" - a biblical scholarship podcast with hosts Dan McClellan and Dan Beecher.
