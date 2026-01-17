@@ -33,22 +33,22 @@
 
     <div class="home-hero__stats">
       {{ $episodes := where .Site.RegularPages "Type" "episodes" }}
-      <div class="stat-card">
+      <a href="/episodes/" class="stat-card">
         <div class="stat-card__number">{{ len $episodes }}</div>
         <div class="stat-card__label">Episodes</div>
-      </div>
-      <div class="stat-card">
+      </a>
+      <a href="/tags/" class="stat-card">
         <div class="stat-card__number">{{ len .Site.Taxonomies.tags }}</div>
         <div class="stat-card__label">Topics</div>
-      </div>
-      <div class="stat-card">
+      </a>
+      <a href="/segments/" class="stat-card">
         <div class="stat-card__number">{{ len .Site.Taxonomies.segments }}</div>
         <div class="stat-card__label">Segments</div>
-      </div>
-      <div class="stat-card">
+      </a>
+      <a href="/guests/" class="stat-card">
         <div class="stat-card__number">{{ len .Site.Taxonomies.guests }}</div>
         <div class="stat-card__label">Guests</div>
-      </div>
+      </a>
     </div>
   </section>
   <section class="home-intro">
