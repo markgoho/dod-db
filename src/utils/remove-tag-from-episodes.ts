@@ -3,11 +3,9 @@
  * Useful when marking a tag as 'rejected' to clean up existing data.
  */
 
-import {
-  loadProcessedVideos,
-  saveProcessedVideos,
-  type ProcessedVideo,
-} from "../storage/processed-videos.js";
+import { loadProcessedVideos } from "../storage/load-processed-videos.js";
+import type { ProcessedVideo } from "../storage/processed-videos.js";
+import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 
 /**
  * Remove a tag from all episodes.

@@ -544,12 +544,12 @@ export async function analyzeCorrections(
 
   // Update tracker with corrections from this episode
   if (episodeId) {
-    const {
-      loadTracker,
-      saveTracker,
-      updateTracker,
-      getHighConfidenceCandidates,
-    } = await import("./correction-tracker.js");
+    const { getHighConfidenceCandidates } = await import(
+      "./get-high-confidence-candidates.js"
+    );
+    const { loadTracker } = await import("./load-tracker.js");
+    const { saveTracker } = await import("./save-tracker.js");
+    const { updateTracker } = await import("./update-tracker.js");
 
     // Filter corrections to only track high-quality candidates
     // We only want to track systematic transcription errors, not sentence reorganization

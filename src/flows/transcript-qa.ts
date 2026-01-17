@@ -1,6 +1,6 @@
 import { ai } from "../ai.js";
 import { qaModel } from "../config/models.js";
-import { retrieveFromFirestore } from "../storage/firestore.js";
+import { retrieveFromFirestore } from "../storage/retrieve-from-firestore.js";
 
 /**
  * Ask a question about transcripts and get an answer.

@@ -4,10 +4,8 @@ import { correctionChunking } from "../config/chunking.js";
 import { globalCorrections } from "../config/corrections.js";
 import { reviewModel } from "../config/models.js";
 import { correctionPrompt } from "../prompts/correction.js";
-import {
-  applyDeterministicCorrections,
-  deduplicateChunks,
-} from "./correct-utils.js";
+import { applyDeterministicCorrections } from "./apply-deterministic-corrections.js";
+import { deduplicateChunks } from "./deduplicate-chunks.js";
 
 /**
  * Process a single chunk with the LLM.

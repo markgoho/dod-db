@@ -18,10 +18,8 @@
 import { Glob } from "bun";
 import path from "node:path";
 import { parseArgs } from "node:util";
-import {
-  MAX_DURATION_SECONDS,
-  parseTimestampToSeconds,
-} from "../utils/collapse-transcript.js";
+import { MAX_DURATION_SECONDS } from "../utils/collapse-transcript-constants.js";
+import { parseTimestampToSeconds } from "../utils/parse-timestamp-to-seconds.js";
 
 // Regex to parse: [HH:MM:SS.mmm] or [HH:MM:SS] Speaker Name: text
 // Milliseconds are optional since some older transcripts don't have them

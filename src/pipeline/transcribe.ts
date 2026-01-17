@@ -1,5 +1,5 @@
 import { AssemblyAI, type TranscribeParams } from "assemblyai";
-import { MAX_DURATION_MS } from "../utils/collapse-transcript.js";
+import { MAX_DURATION_MS } from "../utils/collapse-transcript-constants.js";
 
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY!,

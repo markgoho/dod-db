@@ -4,7 +4,9 @@
 
 import * as path from "node:path";
 import type { ProcessedVideo } from "../storage/processed-videos.js";
-import { HUGO_CONTENT_DIR, getGuestSpeakers, slugifyTitle } from "./shared.js";
+import { getGuestSpeakers } from "./get-guest-speakers.js";
+import { HUGO_CONTENT_DIR } from "./shared.js";
+import { slugifyTitle } from "./slugify-title.js";
 
 /**
  * Get the output path for an episode's Hugo content file.

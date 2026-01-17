@@ -9,11 +9,9 @@
  *   bun run src/scripts/review-corrections.ts [--min-confidence 50]
  */
 
-import {
-  getHighConfidenceCandidates,
-  loadTracker,
-  type CorrectionCandidate,
-} from "../pipeline/correction-tracker.js";
+import type { CorrectionCandidate } from "../pipeline/correction-tracker.js";
+import { getHighConfidenceCandidates } from "../pipeline/get-high-confidence-candidates.js";
+import { loadTracker } from "../pipeline/load-tracker.js";
 
 async function reviewCorrections(minConfidence = 50) {
   console.log("📋 Loading correction candidates...\n");

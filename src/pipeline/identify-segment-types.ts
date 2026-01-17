@@ -18,9 +18,9 @@ import {
   SEGMENT_PATTERNS,
   type SegmentType,
 } from "../config/segment-patterns.js";
+import { segmentIdentificationPrompt } from "../prompts/segment-identification-prompt.js";
 import {
   SegmentIdentificationSchema,
-  segmentIdentificationPrompt,
   type SegmentContext,
 } from "../prompts/segment-identification.js";
 import {

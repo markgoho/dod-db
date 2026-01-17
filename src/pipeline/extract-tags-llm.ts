@@ -16,7 +16,8 @@ import {
   tagExtractionPrompt,
 } from "../prompts/tag-extraction.js";
 import type { EpisodeTag } from "../storage/processed-videos.js";
-import { addTagToVocabulary, tagExists } from "./add-tag-to-vocabulary.js";
+import { addTagToVocabulary } from "./add-tag-to-vocabulary.js";
+import { tagExists } from "./tag-exists.js";
 
 /**
  * Use LLM to discover new tags not in vocabulary.

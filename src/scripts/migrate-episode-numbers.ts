@@ -5,11 +5,9 @@
  * Usage: bun run src/scripts/migrate-episode-numbers.ts
  */
 
-import {
-  computeEpisodeNumbers,
-  loadProcessedVideos,
-  saveProcessedVideos,
-} from "../storage/processed-videos.js";
+import { computeEpisodeNumbers } from "../storage/compute-episode-numbers.js";
+import { loadProcessedVideos } from "../storage/load-processed-videos.js";
+import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 
 async function migrate() {
   console.log("Loading processed videos...");

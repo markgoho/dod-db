@@ -11,11 +11,9 @@
 
 import { extractScripture } from "../pipeline/extract-scripture.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
-import {
-  getProcessedVideos,
-  updateVideoScriptures,
-  type ProcessedVideo,
-} from "../storage/processed-videos.js";
+import { getProcessedVideos } from "../storage/get-processed-videos.js";
+import type { ProcessedVideo } from "../storage/processed-videos.js";
+import { updateVideoScriptures } from "../storage/update-video-scriptures.js";
 
 interface ReprocessResult {
   total: number;

@@ -4,11 +4,9 @@
  */
 
 import { tagVocabulary } from "../config/tag-vocabulary.js";
-import {
-  loadProcessedVideos,
-  saveProcessedVideos,
-  type ProcessedVideo,
-} from "../storage/processed-videos.js";
+import { loadProcessedVideos } from "../storage/load-processed-videos.js";
+import type { ProcessedVideo } from "../storage/processed-videos.js";
+import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 
 // Build set of accepted canonical tags
 const acceptedTags = new Set<string>();

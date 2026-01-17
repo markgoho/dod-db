@@ -1,12 +1,10 @@
 import { describe, expect, test } from "bun:test";
-import {
-  getAmbiguousBooks,
-  getBookByAnyName,
-  getBookByCanonical,
-  getNewTestamentBooks,
-  getOldTestamentBooks,
-  scriptureBooks,
-} from "./scripture-books.js";
+import { getAmbiguousBooks } from "./get-ambiguous-books.js";
+import { getBookByAnyName } from "./get-book-by-any-name.js";
+import { getBookByCanonical } from "./get-book-by-canonical.js";
+import { getNewTestamentBooks } from "./get-new-testament-books.js";
+import { getOldTestamentBooks } from "./get-old-testament-books.js";
+import { scriptureBooks } from "./scripture-books.js";
 
 describe("scripture-books", () => {
   describe("canonical book count", () => {

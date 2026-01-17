@@ -18,11 +18,9 @@ import {
   formatTimestamp,
   getAudioDuration,
 } from "../pipeline/detect-segments.js";
-import {
-  loadProcessedVideos,
-  updateVideoSegments,
-  type EpisodeSegment,
-} from "../storage/processed-videos.js";
+import { loadProcessedVideos } from "../storage/load-processed-videos.js";
+import type { EpisodeSegment } from "../storage/processed-videos.js";
+import { updateVideoSegments } from "../storage/update-video-segments.js";
 
 interface DetectionResult {
   videoId: string;

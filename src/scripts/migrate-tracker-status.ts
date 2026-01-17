@@ -2,7 +2,8 @@
  * One-time migration script to add status field to existing candidates.
  */
 
-import { loadTracker, saveTracker } from "../pipeline/correction-tracker.js";
+import { loadTracker } from "../pipeline/load-tracker.js";
+import { saveTracker } from "../pipeline/save-tracker.js";
 
 async function migrate() {
   console.log("Loading tracker...");

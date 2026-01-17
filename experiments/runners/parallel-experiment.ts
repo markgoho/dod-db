@@ -15,10 +15,8 @@ import { parseArgs } from "node:util";
 import { correctionChunking } from "../../src/config/chunking.js";
 import { globalCorrections } from "../../src/config/corrections.js";
 import { reviewModel } from "../../src/config/models.js";
-import {
-  applyDeterministicCorrections,
-  deduplicateChunks,
-} from "../../src/pipeline/correct-utils.js";
+import { applyDeterministicCorrections } from "../../src/pipeline/apply-deterministic-corrections.js";
+import { deduplicateChunks } from "../../src/pipeline/deduplicate-chunks.js";
 import {
   CONCURRENCY_LEVELS,
   SAMPLE_TRANSCRIPTS,

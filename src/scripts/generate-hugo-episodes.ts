@@ -11,11 +11,9 @@ import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { generateFrontmatter } from "../hugo/generate-frontmatter.js";
 import { getEpisodeOutputPath } from "../hugo/get-episode-path.js";
 import { transformToShortcodes } from "../hugo/transform-shortcodes.js";
-import {
-  getProcessedVideosWithNumbers,
-  getVideoByEpisodeNumber,
-  type ProcessedVideo,
-} from "../storage/processed-videos.js";
+import { getProcessedVideosWithNumbers } from "../storage/get-processed-videos-with-numbers.js";
+import { getVideoByEpisodeNumber } from "../storage/get-video-by-episode-number.js";
+import type { ProcessedVideo } from "../storage/processed-videos.js";
 
 /**
  * Generate Hugo content file for a single episode.

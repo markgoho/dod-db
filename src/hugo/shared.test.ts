@@ -3,11 +3,9 @@
  */
 
 import { describe, expect, test } from "bun:test";
-import {
-  getGuestSpeakers,
-  parseTranscriptLine,
-  slugifyTitle,
-} from "./shared.js";
+import { getGuestSpeakers } from "./get-guest-speakers.js";
+import { parseTranscriptLine } from "./parse-transcript-line.js";
+import { slugifyTitle } from "./slugify-title.js";
 
 describe("slugifyTitle", () => {
   test("converts title to lowercase", () => {

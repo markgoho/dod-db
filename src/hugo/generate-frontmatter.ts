@@ -3,7 +3,8 @@
  */
 
 import type { ProcessedVideo } from "../storage/processed-videos.js";
-import { formatSegmentsForFrontmatter, getGuestSpeakers } from "./shared.js";
+import { formatSegmentsForFrontmatter } from "./format-segments-for-frontmatter.js";
+import { getGuestSpeakers } from "./get-guest-speakers.js";
 
 /**
  * Generate YAML frontmatter for an episode using Bun.YAML.

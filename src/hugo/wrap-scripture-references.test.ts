@@ -3,11 +3,9 @@
  */
 
 import { describe, expect, test } from "bun:test";
-import {
-  buildBibleGatewayUrl,
-  findScriptureMatches,
-  wrapScriptureReferences,
-} from "./wrap-scripture-references.js";
+import { buildBibleGatewayUrl } from "./build-bible-gateway-url.js";
+import { findScriptureMatches } from "./find-scripture-matches.js";
+import { wrapScriptureReferences } from "./wrap-scripture-references-function.js";
 
 describe("buildBibleGatewayUrl", () => {
   test("builds URL for simple reference", () => {

@@ -13,11 +13,9 @@ import {
   type SegmentType,
 } from "../config/segment-patterns.js";
 import { youtubeConfig } from "../config/youtube.js";
-import {
-  loadProcessedVideos,
-  updateVideoSegments,
-  type EpisodeSegment,
-} from "../storage/processed-videos.js";
+import { loadProcessedVideos } from "../storage/load-processed-videos.js";
+import type { EpisodeSegment } from "../storage/processed-videos.js";
+import { updateVideoSegments } from "../storage/update-video-segments.js";
 
 // Add a new pattern to segment-patterns.ts
 async function addPatternToConfig(

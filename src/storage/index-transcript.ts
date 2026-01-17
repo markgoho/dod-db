@@ -2,7 +2,7 @@ import { FieldValue } from "firebase-admin/firestore";
 import { chunk } from "llm-chunk";
 import { ai } from "../ai.js";
 import { embeddingChunking } from "../config/chunking.js";
-import { getFirestoreDb as getFirestoreDatabase } from "../config/firebase.js";
+import { getFirestoreDb as getFirestoreDatabase } from "../config/get-firestore-db.js";
 import { embedderModel } from "../config/models.js";
 
 const firestore = getFirestoreDatabase();
@@ -28,26 +28,4 @@ export async function indexTranscript(transcript: string): Promise<void> {
       });
     }
   }
-}
-
-/**
- * Document type for retrieved transcript chunks.
- */
-export interface Document {
-  text: string;
-  metadata?: Record<string, unknown>;
-}
-
-/**
- * Retrieve relevant transcript chunks for a query.
- * TODO: Implement vector search when vector DB solution is finalized.
- */
-export async function retrieveFromFirestore(
-  _query: string,
-): Promise<Document[]> {
-  // Vector DB solution is TBD - returning empty array for now
-  console.warn(
-    "retrieveFromFirestore: Vector search not yet implemented. Returning empty results.",
-  );
-  return [];
 }

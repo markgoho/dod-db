@@ -7,7 +7,7 @@
  */
 
 import { processYouTubeVideo } from "../pipeline/youtube-processor.js";
-import { isVideoProcessed } from "../storage/processed-videos.js";
+import { isVideoProcessed } from "../storage/is-video-processed.js";
 
 // Data over Dogma channel URL
 const CHANNEL_URL = "https://www.youtube.com/@DataOverDogma/videos";

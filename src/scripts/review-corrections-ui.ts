@@ -7,14 +7,12 @@
  */
 
 import * as path from "node:path";
-import {
-  approveCandidate,
-  getPendingCandidates,
-  loadTracker,
-  rejectCandidate,
-  saveTracker,
-  type CorrectionCandidate,
-} from "../pipeline/correction-tracker.js";
+import { approveCandidate } from "../pipeline/approve-candidate.js";
+import type { CorrectionCandidate } from "../pipeline/correction-tracker.js";
+import { getPendingCandidates } from "../pipeline/get-pending-candidates.js";
+import { loadTracker } from "../pipeline/load-tracker.js";
+import { rejectCandidate } from "../pipeline/reject-candidate.js";
+import { saveTracker } from "../pipeline/save-tracker.js";
 
 const PORT = 3000;
 

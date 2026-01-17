@@ -3,10 +3,8 @@
  * More efficient than full reprocessing when you only need to add one new tag.
  */
 
-import {
-  loadProcessedVideos,
-  saveProcessedVideos,
-} from "../storage/processed-videos.js";
+import { loadProcessedVideos } from "../storage/load-processed-videos.js";
+import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 import { sortTags } from "../utils/tag-utils.js";
 import { extractSingleTag } from "./extract-single-tag.js";
 

@@ -1,9 +1,9 @@
 import { z } from "zod";
 import { ai } from "../ai.js";
 import { speakerIdModel } from "../config/models.js";
+import { addSpeakerLabels } from "../prompts/add-speaker-labels.js";
+import { speakerLabelPrompt } from "../prompts/speaker-label-prompt.js";
 import {
-  addSpeakerLabels,
-  speakerLabelPrompt,
   SpeakerLabelsSchema,
   type SpeakerLabels,
 } from "../prompts/speaker-labels.js";

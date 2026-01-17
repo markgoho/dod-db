@@ -1,16 +1,14 @@
 import * as path from "node:path";
 import { youtubeConfig } from "../config/youtube.js";
 import { writeToFile } from "../storage/file.js";
-import {
-  extractSpeakersFromTranscript,
-  getVideoById,
-  isVideoProcessed,
-  markVideoAsProcessed,
-  updateVideoScriptures,
-  updateVideoSegments,
-  updateVideoTags,
-  type EpisodeSegment,
-} from "../storage/processed-videos.js";
+import { extractSpeakersFromTranscript } from "../storage/extract-speakers-from-transcript.js";
+import { getVideoById } from "../storage/get-video-by-id.js";
+import { isVideoProcessed } from "../storage/is-video-processed.js";
+import { markVideoAsProcessed } from "../storage/mark-video-as-processed.js";
+import type { EpisodeSegment } from "../storage/processed-videos.js";
+import { updateVideoScriptures } from "../storage/update-video-scriptures.js";
+import { updateVideoSegments } from "../storage/update-video-segments.js";
+import { updateVideoTags } from "../storage/update-video-tags.js";
 import { correctTranscript } from "./correct.js";
 import {
   detectSegmentsFromAudio,
@@ -23,13 +21,11 @@ import { identifySegmentTypes } from "./identify-segment-types.js";
 import { identifySpeakers } from "./identify-speakers.js";
 import { analyzeCorrections } from "./learn-corrections.js";
 import { transcribeAudio } from "./transcribe.js";
-import {
-  downloadAudio,
-  extractVideoId,
-  fetchVideoMetadata,
-  generateTranscriptFilename,
-  type VideoMetadata,
-} from "./youtube.js";
+import { downloadAudio } from "./download-audio.js";
+import { extractVideoId } from "./extract-video-id.js";
+import { fetchVideoMetadata } from "./fetch-video-metadata.js";
+import { generateTranscriptFilename } from "./generate-transcript-filename.js";
+import type { VideoMetadata } from "./youtube.js";
 
 export interface ProcessYouTubeVideoResult {
   videoId: string;

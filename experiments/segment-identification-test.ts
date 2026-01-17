@@ -18,7 +18,7 @@ import {
   getAudioDuration,
 } from "../src/pipeline/detect-segments.js";
 import { identifySegmentTypes } from "../src/pipeline/identify-segment-types.js";
-import { loadProcessedVideos } from "../src/storage/processed-videos.js";
+import { loadProcessedVideos } from "../src/storage/load-processed-videos.js";
 
 interface SegmentComparison {
   timestamp: string;

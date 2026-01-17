@@ -6,11 +6,9 @@
  * Usage: bun run src/scripts/migrate-speakers.ts
  */
 
-import {
-  extractSpeakersFromTranscript,
-  getProcessedVideos,
-  saveProcessedVideos,
-} from "../storage/processed-videos.js";
+import { extractSpeakersFromTranscript } from "../storage/extract-speakers-from-transcript.js";
+import { getProcessedVideos } from "../storage/get-processed-videos.js";
+import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 
 async function migrate(): Promise<void> {
   console.log("Loading processed videos...");

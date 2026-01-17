@@ -2,8 +2,8 @@
  * Transform transcript content into Hugo shortcode format.
  */
 
-import { parseTranscriptLine } from "./shared.js";
-import { wrapScriptureReferences } from "./wrap-scripture-references.js";
+import { parseTranscriptLine } from "./parse-transcript-line.js";
+import { wrapScriptureReferences } from "./wrap-scripture-references-function.js";
 
 /**
  * Transform transcript content into Hugo shortcode format.

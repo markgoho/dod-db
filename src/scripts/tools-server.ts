@@ -21,31 +21,29 @@ import { youtubeConfig } from "../config/youtube.js";
 import { addTagToEpisodes } from "../pipeline/add-tag-to-episodes.js";
 import {
   addTagToVocabulary,
-  deleteTagFromVocabulary,
-  findTag,
-  tagExists,
-  updateTagInVocabulary,
   type AddTagParams as AddTagParameters,
-  type UpdateTagParams as UpdateTagParameters,
 } from "../pipeline/add-tag-to-vocabulary.js";
+import { deleteTagFromVocabulary } from "../pipeline/delete-tag-from-vocabulary.js";
+import { findTag } from "../pipeline/find-tag.js";
+import { tagExists } from "../pipeline/tag-exists.js";
 import {
-  approveCandidate,
-  getPendingCandidates,
-  loadTracker,
-  rejectCandidate,
-  saveTracker,
-  type CorrectionCandidate,
-} from "../pipeline/correction-tracker.js";
+  updateTagInVocabulary,
+  type UpdateTagParams as UpdateTagParameters,
+} from "../pipeline/update-tag-in-vocabulary.js";
+import { approveCandidate } from "../pipeline/approve-candidate.js";
+import type { CorrectionCandidate } from "../pipeline/correction-tracker.js";
+import { getPendingCandidates } from "../pipeline/get-pending-candidates.js";
+import { loadTracker } from "../pipeline/load-tracker.js";
+import { rejectCandidate } from "../pipeline/reject-candidate.js";
+import { saveTracker } from "../pipeline/save-tracker.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
 import { reprocessEpisodes } from "../pipeline/reprocess-episodes.js";
-import {
-  getProcessedVideosWithNumbers,
-  getVideoById,
-  loadProcessedVideos,
-  saveProcessedVideos,
-  updateVideoSegments,
-  type EpisodeSegment,
-} from "../storage/processed-videos.js";
+import { getProcessedVideosWithNumbers } from "../storage/get-processed-videos-with-numbers.js";
+import { getVideoById } from "../storage/get-video-by-id.js";
+import { loadProcessedVideos } from "../storage/load-processed-videos.js";
+import type { EpisodeSegment } from "../storage/processed-videos.js";
+import { saveProcessedVideos } from "../storage/save-processed-videos.js";
+import { updateVideoSegments } from "../storage/update-video-segments.js";
 import { removeTagFromEpisode } from "../utils/hugo-frontmatter.js";
 
 const PORT = 3001; // API server on separate port
