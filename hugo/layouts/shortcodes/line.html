@@ -42,7 +42,7 @@
         <time>{{ $hours }}:{{ $minutes }}:{{ $seconds }}</time>
       </a>
     </header>
-    <p class="transcript-text">{{ $text }}</p>
+    <p class="transcript-text">{{ $text | safeHTML }}</p>
   </article>
 {{- else -}}
   {{- /* Fallback: render as plain text if parsing fails */ -}}

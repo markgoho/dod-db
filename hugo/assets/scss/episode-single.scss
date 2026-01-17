@@ -492,6 +492,30 @@ main.container {
 }
 
 // ============================================
+// Scripture Reference Links
+// ============================================
+
+.scripture-reference {
+  color: var(--teal-500);
+  text-decoration: underline;
+  text-decoration-color: var(--teal-300);
+  text-decoration-thickness: var(--border-width-sm);
+  text-underline-offset: var(--space-4xs);
+  transition: all 0.15s ease;
+
+  &:hover {
+    color: var(--teal-400);
+    text-decoration-color: var(--teal-400);
+  }
+
+  &:focus-visible {
+    outline: var(--border-width-sm) solid var(--teal-300);
+    outline-offset: var(--space-4xs);
+    border-radius: var(--border-radius-sm);
+  }
+}
+
+// ============================================
 // Utilities
 // ============================================
 

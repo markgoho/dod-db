@@ -3,6 +3,7 @@
  */
 
 import { parseTranscriptLine } from "./shared.js";
+import { wrapScriptureReferences } from "./wrap-scripture-references.js";
 
 /**
  * Transform transcript content into Hugo shortcode format.
@@ -26,8 +27,12 @@ export function transformToShortcodes(content: string): string {
         Math.round((parsed.totalSeconds % 1) * 1000),
       ).padStart(3, "0");
       const fullTimestamp = `[${parsed.timestamp}.${msString}]`;
+
+      // Wrap scripture references with Bible Gateway links
+      const textWithScripture = wrapScriptureReferences(parsed.text);
+
       shortcodeLines.push(
-        `{{< line >}}${fullTimestamp} ${parsed.speaker}: ${parsed.text}{{< /line >}}`,
+        `{{< line >}}${fullTimestamp} ${parsed.speaker}: ${textWithScripture}{{< /line >}}`,
       );
     }
   }

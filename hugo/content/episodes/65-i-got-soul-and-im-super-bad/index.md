@@ -161,7 +161,7 @@ draft: false
 {{< line >}}[00:41:56.800] Dan McClellan: Yeah, let's do it.{{< /line >}}
 {{< line >}}[00:41:57.640] Dan Beecher: And, and, and, and get to the biblical concept.{{< /line >}}
 {{< line >}}[00:42:00.960] Dan McClellan: Absolutely.{{< /line >}}
-{{< line >}}[00:42:04.320] Dan Beecher: So the chapter and verse that you gave me, we're, we're launching into Ezekiel 13. And I looked at this in several different translations because the first thing I did. Now we're, we're Ezekiel 13, verses like 17 through 23. Is, is that what we're talking about?{{< /line >}}
+{{< line >}}[00:42:04.320] Dan Beecher: So the chapter and verse that you gave me, we're, we're launching into {{< scripture ref="Ezekiel 13" >}}. And I looked at this in several different translations because the first thing I did. Now we're, we're {{< scripture ref="Ezekiel 13" >}}, verses like 17 through 23. Is, is that what we're talking about?{{< /line >}}
 {{< line >}}[00:42:27.770] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:42:28.970] Dan Beecher: And the. I went to, to our go-to the NRSVUE, uh-huh. And saw nothing about a soul and went, what are we doing here? Yeah, so I, I went and looked in other places and, and then it started to make more sense. KJV mentions the soul, the NASB, the, the. The New American Standard Bible, 1995 edition. It's. It's all different. I'm going to start with the KJV. Can I just read some of the KJV so that people can get a sense of it?{{< /line >}}
 {{< line >}}[00:43:07.840] Dan McClellan: Read on.{{< /line >}}
