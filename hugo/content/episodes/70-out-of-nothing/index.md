@@ -1,0 +1,290 @@
+---
+title: Out of Nothing
+date: 2024-08-05T00:00:00Z
+episodeNumber: 70
+videoId: wFcJAbbNOpk
+aliases:
+  - /episodes/70/
+tags:
+  - Daniel
+  - Christianity
+  - New Testament
+  - Book of Daniel
+  - Cyrus the Great
+  - 2 Maccabees
+  - Babylon
+  - angel
+  - Habakkuk
+  - Genesis
+  - Hebrew Bible
+  - Monotheism
+  - resurrection
+  - YHWH
+  - biblical canon
+  - Antiochus IV Epiphanes
+  - Book of Job
+  - Hebrews
+  - Jesus
+  - Judaism
+  - Martin Luther
+  - Romans
+  - Septuagint
+  - theology
+  - apocalypse
+  - Baal
+  - Book of Isaiah
+  - Book of Revelation
+  - David Burnett
+  - Elijah
+  - Gnostic
+  - gods
+  - Gospel of John
+  - Gospel of Matthew
+  - Jerome
+  - Justin Martyr
+  - Latin Vulgate
+  - manuscript
+  - Median Kingdom
+  - Origen
+  - Paul
+  - Psalm
+segments:
+  - Creation Stories
+  - Chapter and Verse
+segmentData:
+  - type: creation-stories
+    label: "Creation Stories"
+    startSeconds: 194.206
+  - type: chapter-and-verse
+    label: "Chapter and Verse"
+    startSeconds: 1787.214
+draft: false
+---
+
+{{< line >}}[00:00:01.280] Dan McClellan: He says, sir, I have never seen Babylon and I know nothing about the den. Then the angel of the Lord took him by the crown of his head and carried him by his hair. So the angel was just like, no, stupid little. He's gonna be like, ow, ow, ow. Hey, everybody. I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:27.790] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
+{{< line >}}[00:00:28.750] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of that pesky misinformation about the Bible. How are things today, Dan?{{< /line >}}
+{{< line >}}[00:00:42.670] Dan Beecher: Good, good. Just having a lovely time. You and I are recording this well before it's going to be coming out because we're all going on trips and we're going to be having fun times. So, though we only have things to look forward to now.{{< /line >}}
+{{< line >}}[00:01:00.230] Dan McClellan: By the time this comes out, I will probably be. I might be in San Diego for the San Diego Comic Con. I don't know when this is going to come out or.{{< /line >}}
+{{< line >}}[00:01:07.430] Dan Beecher: Or it will have already happened. And who. Who knows? Who knows? We'll both be tan. You never know.{{< /line >}}
+{{< line >}}[00:01:14.710] Dan McClellan: I. I will probably be just as white as now, just because I'm. I'm so susceptible that I just drench myself in sunscreen whenever I remember and because the last thing I need is another sunburn. I. I grew up, like, perpetually peeling dead skin off of old sunburns, so.{{< /line >}}
+{{< line >}}[00:01:35.810] Dan Beecher: Yeah. So, yeah, that's always fun. Yeah, it's always fun. I did see a thing, just. This is not relevant to our show, but I just saw a thing that there's a new vaccine for skin cancer that they've been working on.{{< /line >}}
+{{< line >}}[00:01:53.100] Dan McClellan: Really?{{< /line >}}
+{{< line >}}[00:01:53.660] Dan Beecher: Yeah. An mRNA thing that. That has been very effective for stopping melanomas and stuff. So maybe it'll save you. Who knows?{{< /line >}}
+{{< line >}}[00:02:02.220] Dan McClellan: Man, wish I would have known about that in the 80s and 90s, right? Good night. Yeah.{{< /line >}}
+{{< line >}}[00:02:07.499] Dan Beecher: Yeah. I don't. I don't know anything more about it than that, but I'm sure it will. I'm sure there will be conspiracy theories about it soon. Coming up on today's show, we are going to be looking at a couple of really interesting things. First of all, we are going to be diving into the. The creation of the universe, you guys. So that's pretty fancy.{{< /line >}}
+{{< line >}}[00:02:29.640] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:02:30.000] Dan Beecher: I don't. I don't know if you know this, but it was us. It was me and Dan. We. We built it. And then after that, one of the lesser known but fascinating books of the Apocrypha. We're gonna. We're gonna get We, I, I always want to say Belle and Sebastian, but we're doing Bel and the Dragon.{{< /line >}}
+{{< line >}}[00:02:51.040] Dan McClellan: Bel and the Dragon and not a book, but one of the additions to the Book of Daniel. So we'll talk, we'll talk about that when we get.{{< /line >}}
+{{< line >}}[00:02:59.500] Dan Beecher: How dare you, sir? How dare you. Oh, I deny it, deny it its book status. But yes, it, it's, it, it's a fun one. You're going to want to stick around.{{< /line >}}
+{{< line >}}[00:03:08.820] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:03:09.940] Dan Beecher: But first, let's, let's launch into creation stories.{{< /line >}}
+{{< line >}}[00:03:17.860] Dan McClellan: Creation ex nihilo, to be more specific. We've, we've talked about some creation accounts before and we've talked about, in fact, I think our very first episode of this podcast, we talked about Genesis 1:1. And one of the things that we pointed out is that correctly interpreted, there's no creation ex nihilo going on there. That everything seems to have been created from the, the chaotic murky waters of creation that probably had some kind of unformed earth submerged beneath them. And creation was a process of separating things out, light and dark, water from water, dry land from water and, and so on and so forth and thus and so. But when we get a little closer to the New Testament, we get some passages that people who are willing to give a little on creation ex nihilo in Genesis 1:1. These passages, people are a little more strict about.{{< /line >}}
+{{< line >}}[00:04:18.930] Dan McClellan: They're a little more insistent.{{< /line >}}
+{{< line >}}[00:04:20.860] Dan Beecher: Let's, before we get too far into this, let's define ex nihilo as.{{< /line >}}
+{{< line >}}[00:04:24.940] Dan McClellan: So, yeah, creation ex nihilo is, is half of a, half of it is Latin out of nothing. And this is the idea that the universe was created from nothing, that God brought all the material that makes up the universe into existence from nothing.{{< /line >}}
+{{< line >}}[00:04:46.830] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:04:47.070] Dan McClellan: And so therefore God is the ultimate creator of and source of all matter that exists.{{< /line >}}
+{{< line >}}[00:04:54.030] Dan Beecher: And yeah, and it's so funny like, like, like you say the, that Genesis 1 creation story, it is clear that it's not from nothing. There is, there's already plenty of something when that starts. But boy, man, if you, if you get into an argument with a young Earth creationist online, ex nihilo is the only way to go.{{< /line >}}
+{{< line >}}[00:05:21.400] Dan McClellan: Absolutely. And there's a reason for this. And this is something that I talk, we've talked about in some of the other videos, particularly where we talked about monotheism with David Burnett. When we get the development of monotheism, part of the requirement is that you have creation ex nihilo, because if not, then you had something that existed apart from God eternally. And there's a question of how God can have sovereignty over all of matter if it is co-equal and co-eternal with God. And so part of the doctrine of monotheism is reliant upon the doctrine of creation ex nihilo. So this is pretty important. But the question is, when do we get it? And a lot of people think it's in the Bible or maybe in the Apocrypha, but the academic consensus right now is that we don't get it until the last couple of decades of the second century CE.{{< /line >}}
+{{< line >}}[00:06:21.820] Dan McClellan: What, so like, like 180 CE is probably where we first see any clear articulation of the idea that God created everything out of nothing.{{< /line >}}
+{{< line >}}[00:06:31.500] Dan Beecher: How dare you?{{< /line >}}
+{{< line >}}[00:06:33.020] Dan McClellan: Oh, I, I dare not.{{< /line >}}
+{{< line >}}[00:06:34.820] Dan Beecher: In the Bible.{{< /line >}}
+{{< line >}}[00:06:37.900] Dan McClellan: Oh, there's so much that's not in the book. But usually when you point out that you don't have creation ex nihilo in Genesis, people are like, fine, but it's in Second Maccabees 7:28. And don't you dare try to tell me it's not.{{< /line >}}
+{{< line >}}[00:06:52.010] Dan Beecher: And Second Maccabees, we're diving right back into that, that old Apocrypha.{{< /line >}}
+{{< line >}}[00:06:57.130] Dan McClellan: Yeah, we're going to get apocryphal on your butt. So to speak to, to paraphrase the, the great poet in chapter seven of Second Maccabees is one of the most fascinating stories I think, in, in all of Second Maccabees. If you've never read First and Second Maccabees, you've really gotta, because this is a lot of this is, is agreed to be historical. This is about this great battle, series of battles between Antiochus Epiphanes IV, the Seleucid ruler, and the Jewish people in the 160s BCE. And the story in chapter seven is not historical. It's usually referred to as the mother and her seven sons. And the idea is that the Seleucid ruler was trying to force people to consume pork and force them to offer sacrifices to other gods and everything like that in an effort to try to stamp out Judaism.{{< /line >}}
+{{< line >}}[00:07:58.690] Dan McClellan: And in this chapter we have a story where Antiochus IV Epiphanes comes upon a mother and her seven sons, youngish sons, and one by one tortures each of her sons and then kills them because they refuse to violate their, the laws of, of their, their people, the Jewish purity laws. And each time the mother exhorts the sons before they are killed to remain faithful. And there are a series of promises and statements that go into this. In verse 28 we have this statement that she says, I beseech you, child, to look toward heaven and earth and on seeing all that is in them, to know that God did not make these things from what existed. And the human race came into existence in the same way. And so it kind of sounds like creation ex nihilo.{{< /line >}}
+{{< line >}}[00:08:59.380] Dan McClellan: And people are like, that's definitely creation ex nihilo. God did not make these things the universe around you from what existed. And so case closed. Or so everybody thought. Yeah. So the Greek there is ouk ex onton, which is out of the being stuff or what is. What it. What is what exists. And this is actually referring as, as most scholars today agree, to a traditional Greek philosophical concepts that we find most clearly in Aristotle but is found elsewhere, that matter exists either in a state of being or non-being. And it all comes down to whether or not it has form and function. And so you can just have unorganized chaotic matter. And according to Aristotle, that is existing in, in a state or a realm of non-being. But once you impose form and function on it, you have moved it into a state of being.{{< /line >}}
+{{< line >}}[00:10:01.790] Dan McClellan: So he has this, this statement in a text called On the Generation of Animals, Aristotle says, for generation is from non-being into being. Generation meaning creation.{{< /line >}}
+{{< line >}}[00:10:13.230] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:10:13.950] Dan McClellan: And corruption from being again into non-being.{{< /line >}}
+{{< line >}}[00:10:18.760] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:10:19.080] Dan McClellan: And so when things deteriorate.{{< /line >}}
+{{< line >}}[00:10:20.760] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:10:21.280] Dan McClellan: They go from having form and function to, to not having form and function to.{{< /line >}}
+{{< line >}}[00:10:27.440] Dan Beecher: Being soggy and gross.{{< /line >}}
+{{< line >}}[00:10:29.000] Dan McClellan: Yes. And stuff that you don't want to eat or play with or whatever. And so the author of Second Maccabees 7:28 is saying, the heavens and earth were created ouk ex onton or not out of being stuff. And so the idea is adopting this Greek philosophical view that basically God took unformed, unorganized, chaotic matter and squished it together and shaped it and made little eyes and a nose and.{{< /line >}}
+{{< line >}}[00:11:07.510] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:11:08.310] Dan McClellan: Which is definitely not out of nothing. The human race, even according to Genesis, was created out of being stuff.{{< /line >}}
+{{< line >}}[00:11:17.210] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:11:17.770] Dan McClellan: Or, you know, is created out of the dust of the earth according to Genesis 2.{{< /line >}}
+{{< line >}}[00:11:21.610] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:11:22.490] Dan McClellan: And so, yeah, this is not a case of creation ex nihilo. This is a case of creation ex materia. And we've even got a bunch of passages in the New Testament that people will cite and say, well, at least this is very clearly creation ex nihilo. So we've got Romans 4:17, where Paul concludes by referring to God as the one who calls into existence the things that do not exist. And that's how the NRSV translates it. But this "things that do not exist" are different, different Greek words to say the same thing: ta me onta, which is the non-being things. It is a neuter plural instead of a masculine plural word for being. And so it's the same idea. And then we've got Hebrews 11:3. By faith we understand that the universe was ordered by God's word so that what is seen came from what is not visible.{{< /line >}}
+{{< line >}}[00:12:29.340] Dan McClellan: And so people will be like, well what is not visible obviously means, you know.{{< /line >}}
+{{< line >}}[00:12:33.660] Dan Beecher: Nothing, means it doesn't exist.{{< /line >}}
+{{< line >}}[00:12:35.820] Dan McClellan: Doesn't exist. Yeah, because if you can't see it, it doesn't exist. But others have pointed out, we go to Colossians 1:16, we got the invisible features of God's creation which are the powers, thrones, dominions, rulers and so forth. And, and these are always understood as divine forces. They're, they're just not seen, they're invisible. So that, that's obviously not creation ex nihilo either.{{< /line >}}
+{{< line >}}[00:13:02.810] Dan Beecher: Yeah, I mean one would point out that God himself is unseen and yet is also there.{{< /line >}}
+{{< line >}}[00:13:10.890] Dan McClellan: According to a lot of New Testament authors. Yeah. God is, is themselves unseen but exists. According to those New Testament authors.{{< /line >}}
+{{< line >}}[00:13:20.530] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:13:21.450] Dan McClellan: Now the, what the apologists who are aware of the current academic consensus but don't like it will, will go on to argue is that in the New Testament we have repeated references to God being the creator of all things. And the idea is if God created all things, then obviously it came out of nothing. And, and this is a pretty strained argument because it would have to mean that this extends to all things that exist or that have ever existed. In other words, nothing could exist that was not created by God, including material that pre-existed creation by God. But that's, that's expanding the rhetorical scope of these statements well beyond what was obviously intended by the authors. Because the, the New Testament authors are very clearly trying to make the case that God has sovereignty over all things.{{< /line >}}
+{{< line >}}[00:14:21.590] Dan McClellan: What things specifically? Well, the things that are around us right now. Yeah. So there's a temporal scope to this rhetoric. It's talking about now. Now that was then, this is now. When will then be now? Soon. And so we, we still don't have any, any concept of creation ex nihilo. And we also have, in the, in the New Testament there are, there are plenty of places where people use that word panta, which means all things in ways that obviously don't actually mean all things. The woman at the well in John 4 goes to her town and says to the people, come see a man who told me all things that I have done. You had a long conversation. If Jesus told you literally all things that you have ever done. And in Matthew 17:11, Jesus says, Elijah is going to return to restore all things, don't think that literally all things that have ever existed down to the minutest atom will be restored.{{< /line >}}
+{{< line >}}[00:15:32.430] Dan McClellan: So the, it's not taking seriously the, the rhetorical context of, of these phrases in the New Testament. So there's just no case to make that we find creation ex nihilo in the Hebrew Bible, in Second Maccabees 7:28, or in the New Testament. We don't see it anywhere in the Bible or the literature that was composed around the same time as the Bible. What we see is the earliest Christians agreeing with the conventional wisdom that matter is eternal, that matter goes all the way back, that out of nothing, nothing can come. But things start to change in the second century, because in the second century we've got this effort on the parts of Christians to intellectualize the gospel. The apologists take over. These are educated folks who are trying to make the gospel palatable for the Greco-Roman intelligentsia so that the gospel can then, you know, be disseminated on, on a higher social level rather than the traditional notion of Christianity as a religion for women and slaves.{{< /line >}}
+{{< line >}}[00:16:43.540] Dan McClellan: Slaves, which is how it's described. Right. When we get into the second century CE and we have these, these debates between Christians and Gnostics and other Greek thinkers, philosophers, arguers about the, one, materiality of eternal matter and two, the rationality of the resurrection. Because within the Greek philosophical mindset, the only thing that is divine and eternal and unchanging is spirit. The flesh is corrupt and dumb. And, you know, we just don't like it. We want to get rid of it. And this is why in the Gnostic worldview, salvation is about escaping the prison of our fleshly bodies so that our spirits can ascend to the Pleroma and be one with the divine forever.{{< /line >}}
+{{< line >}}[00:17:46.220] Dan McClellan: And so you basically have Christians going, oh no, our bodies are going to be resurrected and we're going to live eternally in fleshly bodies. And they're like, why would we want these to live forever? Basically strapped to this pigsty that we're trying to get away from. Like, they didn't, they didn't. Like, these are the worst parts. Yeah. And it was like, hey, you know, these bodies die, they get consumed by animals and then ejected as waste from animals. And you're saying that that excrement is going to come out and reconstitute the body and we're going to just live like this forever. That's gross. So there's a lot of criticism of the idea of the resurrection. And, and you have arguments that begin with this idea of, oh, well, you know, God can. God can create a human being out of what begins as just a tiny little bit of matter.{{< /line >}}
+{{< line >}}[00:18:48.190] Dan McClellan: So God can reconstitute a body that has been burned to cinders or that has been consumed by an animal that has, you know, deteriorated at the bottom of the sea. That's not a big obstacle for God. But then there's also the problem of the materiality of eternal matter. If you've got matter existing eternally and matter is dumb and corrupt and changing, then it exists eternally apart from God and God is not sovereign over it. And it just creates this kind of tension with the way, the direction Christians are wanting to go with how they're representing God within the Greco-Roman milieu. If we want to make this sound rational and reasonable to Greek thinking people, we have to do something about this. And the idea that we get is that matter and, and the divine are not co-eternal twin principles.{{< /line >}}
+{{< line >}}[00:19:50.930] Dan McClellan: And I think the first person who clearly articulates this idea that no, God created all matter from nothing, which is a flagrant violation of the conventional wisdom about, you know, how matter exists. So this guy Tatian, who was a student of Justin Martyr around 170 CE, he's, he's got this text called Address to the Greeks where he argues that that God created all matter out of nothing. And I've got a quote here. Neither is matter without cause, as is God, nor is it equal in power to God, because it is without cause. It was generated, and it was not generated by anyone else, but it was expressed only by the demiurge of all. Therefore, we believe that there will be a resurrection of bodies after the consummation of everything. So it kind of combines both of these ideas. Matter is not co-eternal with God and the resurrection is not stupid.{{< /line >}}
+{{< line >}}[00:20:52.180] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:20:52.740] Dan Beecher: Shut up.{{< /line >}}
+{{< line >}}[00:20:53.770] Dan McClellan: Yeah, shut up, man. And we have the first articulation of creatio ex nihilo of creation out of nothing. And then we have.{{< /line >}}
+{{< line >}}[00:21:04.330] Dan Beecher: And the first ex.{{< /line >}}
+{{< line >}}[00:21:05.770] Dan McClellan: The.{{< /line >}}
+{{< line >}}[00:21:06.250] Dan Beecher: The first mention of the, the special pleading for God, the uncaused causer.{{< /line >}}
+{{< line >}}[00:21:11.690] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:21:12.090] Dan Beecher: Where not everything else was caused. But that doesn't have to apply to him.{{< /line >}}
+{{< line >}}[00:21:17.690] Dan McClellan: Well, and, and that goes back a little further with with Platonic philosophy. But, but certainly the, the first use of that argument to, to defend Christianity and its belief that we're all going to be. Our, our soggy, messy, fleshly bodies are going to be resurrected. And then we've got this dude named Theophilus of Antioch who comes after Tatian. And he mocked the Platonists who believe that matter existed eternally and argued that God created all matter. Around 180 CE, he wrote in a text that just as God is changeless because he is ungenerated, so also, if matter is ungenerated, it is also changeless and equal to God. For that which is generated is mutable and changeable. The ungenerated is immutable and unchangeable. Therefore matter can't be co-equal and co-eternal with God.{{< /line >}}
+{{< line >}}[00:22:18.700] Dan McClellan: And we have to have this idea of creation out of nothing.{{< /line >}}
+{{< line >}}[00:22:23.660] Dan Beecher: I find that so interesting. Like I just quickly I this idea because what you just said, that argument, the thing doesn't follow for me. Like these two things share one set of, of. Of features. That is eternality and therefore they're equal. I don't know why that would necessarily follow, but. Okay, fine.{{< /line >}}
+{{< line >}}[00:22:49.500] Dan McClellan: Well, there, there is an idea in, in some philosophical circles. What? Circles. Sure, that circles. Circles makes more sense than surfaces. That what comes before is superior, what comes after is inferior. And so if matter and deity neither precedes the other, then chronologically at least, and therefore morally they are equal.{{< /line >}}
+{{< line >}}[00:23:19.520] Dan Beecher: I mean, it makes sense. I'm older than my sister and I'm way better than she is. So that makes. There's some logic to that. I can see that.{{< /line >}}
+{{< line >}}[00:23:26.960] Dan McClellan: I can see that too. I'm older than my brother, but he's like three inches taller than me. So that's the only, the only part where our relationship just totally violates these natural laws.{{< /line >}}
+{{< line >}}[00:23:39.400] Dan Beecher: So you should tell him that you violate natural laws.{{< /line >}}
+{{< line >}}[00:23:46.280] Dan McClellan: And so we, once we get this idea, then we have Christians looking back on those passages that we talked about and stroking their beards and clucking their tongues and saying, hey, look at that. Creation ex nihilo. So they look back at Romans and they look back at Second Maccabees 7:28. And they look back at these passages and there's another one. Shepherd of Hermas 26:1. This is, this is part of. This is a text written around 100 CE, didn't make it into the Bible ultimately, but was included in some of our earliest editions of the Bible. I think it's in Sinaiticus.{{< /line >}}
+{{< line >}}[00:24:25.290] Dan Beecher: I can see why it didn't make it in that. Just the, even the name just sounds like they made it up. That's just made up.{{< /line >}}
+{{< line >}}[00:24:32.260] Dan McClellan: But in the Shepherd of Hermas, it says, truly. Then the scripture declared, which says, first of all, believe that there is one God who has established all things and completed them and having ca. And having caused that from what had no being, all things should come into existence. And so they're now saying, hey, look at these passages. This is all confirmation of creation ex nihilo. So basically, we came up with this new way of thinking about creation, and that became the interpretive lens. And then when they turned that interpretive lens back on the biblical text, that never meant that before. It was like, ah, it makes sense. It makes perfect sense. It all fits together.{{< /line >}}
+{{< line >}}[00:25:11.430] Dan Beecher: Everything's working, baby.{{< /line >}}
+{{< line >}}[00:25:13.030] Dan McClellan: Yeah, everything in its place and a place for everything. I think I probably got that backwards, but I don't know.{{< /line >}}
+{{< line >}}[00:25:19.830] Dan Beecher: It'll be fine, we'll survive.{{< /line >}}
+{{< line >}}[00:25:22.350] Dan McClellan: And then we have later kind of authoritative Christian philosophers, Tertullian, Origen, Augustine, Aquinas and others kind of come in and further flesh out how this all fits within the Christian worldview as well as within a philosophical kind of canon. They make it philosophically defensible. They. They set up the, the reinforcements for it. And then, you know, by the time you get to the medieval period and then into the Enlightenment, it is rock solid, baby. It is in the foundation of, of Christian theology. And so when we get to the creation of monotheism in the 17th century with Henry More and Ralph Cudworth and the Deists in the, in the 18th century, creation ex nihilo is. Is just presupposed and in fact forms the foundation of the concept of, of monotheism.{{< /line >}}
+{{< line >}}[00:26:25.000] Dan McClellan: So these things are, are all interrelated.{{< /line >}}
+{{< line >}}[00:26:28.520] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:26:29.000] Dan McClellan: Ultimately, in the long run, that's. That's how it turns out. But, but yeah, totally made up. Second century CE.{{< /line >}}
+{{< line >}}[00:26:36.360] Dan Beecher: That's, that's crude. Yeah, it's, it's so funny because, you know, I've had conversations online with people. I've had conversations in person with people who presuppose ex nihilo creation to the point where, like, even questioning it makes you, like, heretical. Utterly heretical.{{< /line >}}
+{{< line >}}[00:26:59.490] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:26:59.930] Dan Beecher: And. And then, and now they're going through and they're sort of backfilling it with like, astrophysics and, you know, all of the stuff that we're hearing that we hear every. The, you know, every time a new. The word quantum comes into the picture, it's just like, okay, you guys. All right, there you go.{{< /line >}}
+{{< line >}}[00:27:20.920] Dan McClellan: There's a. There. There's definitely an apologetic argument these days where whether it be like, you know, even Stephen Hawking thinks that the universe was created or, or there was a time when it didn't exist or something like that. Like that. It's like. Well, that kind of misrepresents the, the physics a little bit. But yeah, the, the doctrine didn't exist when the Bible was being written.{{< /line >}}
+{{< line >}}[00:28:23.200] Dan McClellan: But like the first chapter of the edited volume is, is saying basically, yeah, we have the building blocks. We don't have a clear articulation until the second century CE, but, you know, it's biblical-ish. So there's, there's a pretty widespread acknowledgment that the idea was not articulated until 170, 180 CE, which. Yeah, but, but if you question it today, for a lot of people, it just totally undercuts God's sovereignty. How can it possibly be that God is not the creator of all of the material that exists in the universe? And that's. That I, I think shows that a lot of people are, are operating in their theology not on the level of the biblical text or the biblical authors, but on the philosophical level, which is, which is this, this conceptual fortress that is constructed in the thousand years after the Bible was written, not during the writing of the Bible.{{< /line >}}
+{{< line >}}[00:29:25.810] Dan Beecher: Fair enough. All right, well, let's, let's. We're. We're gonna switch gears then downshift.{{< /line >}}
+{{< line >}}[00:29:35.570] Dan McClellan: We, we're gonna like, like Rocky II.{{< /line >}}
+{{< line >}}[00:29:38.210] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:29:38.650] Dan McClellan: And that in that Porsche.{{< /line >}}
+{{< line >}}[00:29:43.650] Dan Beecher: All right, let's do a chapter and verse.{{< /line >}}
+{{< line >}}[00:29:46.530] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:29:49.970] Dan Beecher: And this chapter and verse is fascinating. We are, we. We're back into the, the Apocrypha.{{< /line >}}
+{{< line >}}[00:29:57.200] Dan McClellan: We, We.{{< /line >}}
+{{< line >}}[00:29:57.760] Dan Beecher: We spent a little bit, a moment or two in the Maccabees in the first half of the show. Now we're, we're in Belle and Sebastian. I mean, Bel and the Dragon. And I will never be able to get it right because that's just what's gonna pop into my head. But Bel and the Dragon, which I was only made aware. Look, I didn't, I don't know the Apocrypha. I never read any of the apocrypha before, very recently, I wasn't raised with it, certainly. And so when someone told me that there was a biblical book called Bel and the Dragon, I got very, very excited. When I found out it was an actual dragon, I got even exciteder because that's amazing. And then when I found out that these are stories of a beloved biblical character that we already know, I thought, oh, that's really cool. So take us in, man. What do we got?{{< /line >}}
+{{< line >}}[00:30:56.550] Dan McClellan: So we're in the part of the Apocrypha that is known as the additions. And this means that they're not independent books. It's not First and Second Maccabees. It's not those independent books, but it's versions of things from the Hebrew Bible that were probably added later on. And so this is actually chapter 14 of the Greek version of the Book of Daniel.{{< /line >}}
+{{< line >}}[00:31:24.100] Dan Beecher: Oh, okay.{{< /line >}}
+{{< line >}}[00:31:24.860] Dan McClellan: And so it, it's. It's an additional chapter that's tacked on at the. The end of Daniel and was probably written in Greek and added into the Book of Daniel. And there are, there's an argument to make. In fact, a lot of scholars think that this story of, particularly the story of Daniel in the lion's den comes from before the story that actually gets preserved in the canonical book of Daniel. Really?{{< /line >}}
+{{< line >}}[00:31:54.530] Dan Beecher: Oh, interesting.{{< /line >}}
+{{< line >}}[00:31:56.210] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:31:56.850] Dan Beecher: And you said this was in Greek, was the Book of Daniel. What, what language was the Book of Daniel originally written?{{< /line >}}
+{{< line >}}[00:32:03.090] Dan McClellan: So some of it was Hebrew, some of it was Aramaic.{{< /line >}}
+{{< line >}}[00:32:06.290] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:32:07.010] Dan McClellan: But it comes to. It comes together in the final form. As we know it. Dates can date no earlier than the early 160s BCE. Okay. So it is, it came together fairly, fairly late.{{< /line >}}
+{{< line >}}[00:32:20.780] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:32:21.820] Dan McClellan: And the story is we have this kind of contest between Daniel and the priests of Bel, where the Babylonians have this idol called Bel. And, and this is probably related to Baal. And every day they provide it for it, provided for it 12 bushels of choice flour and 40 sheep and six measures of wine.{{< /line >}}
+{{< line >}}[00:32:47.170] Dan Beecher: And this, by the way, this story does answer we had after we talked about. I don't remember what specifically we talked about, but we were talking about. Oh, we were talking about ancestor worship, and we were talking about people leaving offerings for ancestors and that sort of thing.{{< /line >}}
+{{< line >}}[00:33:41.500] Dan McClellan: Yeah, yeah. And, and there were a few different ways they did these like, funerary meals and stuff. One way was just, they just ate in their presence. So the, the, the living people are consuming the, the food themselves. Another way is, is the burnt offering idea that by burning it, you're allowing the, the sustenance to take smoke form and rise up or something like that. And then the other way was just putting stuff in the tomb and then, you know, you wouldn't see it for a year. And guess what? The chicken wing has deteriorated in, in the year. And if they're boneless, then, you know, there's nothing left. So.{{< /line >}}
+{{< line >}}[00:34:21.630] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:34:22.630] Dan McClellan: Which is probably what the, the deceased folks prefer anyway because the, you know, the gristle just gets in the way. So. Yeah, what you've got here is, is, is basically they're mocking how they were, were trying to represent the consumption of the, the offerings. So the king says to Daniel, do you not think that Bel is a living God? Do you not see how much he eats and drinks every day? And, and Daniel guffaws and said, do not be deceived, O king, for this thing is only clay inside and bronze outside, and it has never eaten, eaten or drunk anything. So we've got some idol mockery going on here. We've got.{{< /line >}}
+{{< line >}}[00:35:05.960] Dan Beecher: It's bold.{{< /line >}}
+{{< line >}}[00:35:06.840] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:35:07.200] Dan Beecher: And this is, this king, by the way, is, is Cyrus, right?{{< /line >}}
+{{< line >}}[00:35:11.480] Dan McClellan: Yeah, it is Cyrus. And so Daniel's like, you fool, the deity is not eating these things. And the king is angry and calls all the priests of Bel and says, you know, we gotta, we gotta prove that, that this deity is eating all these things. And the priests of Bel had a little trap door. Yeah, they were sneaky and they, they would come in at night, you know, the, the doors are all shut and locked. You know, I don't know if you remember from Dr. No. James Bond does a little ploy, takes out a little hair and licks it and puts it across the, between the door and the frame so that he can tell if someone has opened this door.{{< /line >}}
+{{< line >}}[00:35:57.340] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:35:57.540] Dan McClellan: They've got all that in place.{{< /line >}}
+{{< line >}}[00:35:59.020] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:35:59.660] Dan McClellan: But because they've got this trap door inside, they can sneak in and they can eat all the food themselves.{{< /line >}}
+{{< line >}}[00:36:04.940] Dan Beecher: It's not exactly David Blaine levels of magic. It's a, it's a pretty obvious trick, but they haven't told anybody about it, so. So when Cyrus is like, we're going to put this to the test. Yeah. Daniel's like, all right, well, we'll put it to the test. They go in, they put in all the food.{{< /line >}}
+{{< line >}}[00:36:25.640] Dan McClellan: Mm.{{< /line >}}
+{{< line >}}[00:36:26.840] Dan Beecher: But Daniel has an extra. Like, Daniel's going full Amazing Randi on this one.{{< /line >}}
+{{< line >}}[00:36:34.280] Dan McClellan: Yeah. This. This is where it would have been really nice to have Gallagher come in and.{{< /line >}}
+{{< line >}}[00:36:40.280] Dan Beecher: Oh, that's a. That's a reference to a totally different podcast.{{< /line >}}
+{{< line >}}[00:36:43.680] Dan McClellan: Call back to our. Our time on God Awful Movies, the podcast. So Daniel's like, hey, King, check this out. Everybody's gone for the evening. You and I are the only ones here. We're gonna take a bunch of ash. We're just gonna sprinkle ash around everywhere. And the priests don't know about this. So it's dark, they are tripping over each other. They come out of the trapdoor, they go munch on the food. And then.{{< /line >}}
+{{< line >}}[00:37:10.670] Dan Beecher: And it's not just the priests, by the way. It's the priests, their wives and all of their children. It is like. And. And there are 70 priests, I think. So it is. It's mayhem in there.{{< /line >}}
+{{< line >}}[00:37:21.890] Dan McClellan: Yeah. And. And then the next day, Daniel and the king show up and the priests are like, the food is gone. And Daniel's like, oh my gosh, look at the floor, everybody.{{< /line >}}
+{{< line >}}[00:37:34.210] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:37:35.250] Dan McClellan: And the king says, I see the footprints of men and women and children. Then the king was enraged and he arrested the priests and their wives and children and they showed him the secret doors which they used to enter to consume what was on the table. And therefore the king put them to death and gave Bel over to Daniel who destroyed it and its temple.{{< /line >}}
+{{< line >}}[00:37:59.440] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:38:00.080] Dan McClellan: Which has kind of taken a. You know, this, this probably brings a tear of appreciation to the eye of some of the more militant of the. Of the online atheists these days that maybe not that people were killed, but the fact that the. Daniel was able to cleverly expose the ruse. Yeah.{{< /line >}}
+{{< line >}}[00:38:23.470] Dan Beecher: But it does get it. One of the things that it's sort of points out is that at very least according to the story, the. The King Cyrus actually believed that this, that this God was eating all of this food.{{< /line >}}
+{{< line >}}[00:38:39.680] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:38:39.960] Dan Beecher: So. So I, at very least the story claims that people believed that. I don't know how, I don't know how much, how much people actually believed it, but that. That's interesting. So there you go. Daniel has. Has slain one God. He is the God slayer and now. But that God was just a statue.{{< /line >}}
+{{< line >}}[00:39:02.320] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:39:02.960] Dan Beecher: Which is. Anybody can prove a statue is not a God. But who can what. But his next task. It's starting to feel like the, the tasks of Hercules or something because he, he gets, he gets another. There's a. He's confronted by another, more differenter God. And that is a dragon. It's Trogdor. So, so yeah, that. Where, where does this come from? Do we have any sense? Because this is not, this is not like a metaphor or something. This is like this. The story is the king's like, oh yeah, well, what about the dragon though? That's a God, right?{{< /line >}}
+{{< line >}}[00:39:51.070] Dan McClellan: Yeah. So does he say. You cannot deny that this is a living God.{{< /line >}}
+{{< line >}}[00:39:56.110] Dan Beecher: Yeah. So worship him. Yeah. So what, what's going on there?{{< /line >}}
+{{< line >}}[00:40:01.350] Dan McClellan: So dragon slash serpent. And this is, this is based on earlier mythology associated with like Leviathan, which is a serpent slash dragon. We've talked about that. Isaiah 27:1, Psalm 74, a bunch of places in Job. You know the. On, on Twitter, I think I saw the best summary of, of the book of Job. And it was God saying to Job going, what's up with all the suffering? And God's saying, how dare you speak that way to the inventor of the hippopotamus. But so the Leviathan is this classical mythological chaos. Dragon monster, sea serpent.{{< /line >}}
+{{< line >}}[00:40:45.780] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:40:46.140] Dan McClellan: And so in this period, the idea is that there were these things in antiquity. And, and this is being written probably in the second century BCE, third or second century BCE. And so, you know, the Babylonian exile is hoary antiquity. And so maybe the dragons were around back then.{{< /line >}}
+{{< line >}}[00:41:04.450] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:41:04.930] Dan McClellan: So. So, you know, Cyrus is like, well, what about the dragon down there? You got a little dragon over there?{{< /line >}}
+{{< line >}}[00:41:12.930] Dan Beecher: No, no, it is a great dragon. It says so right in verse 23.{{< /line >}}
+{{< line >}}[00:41:17.740] Dan McClellan: And, and Daniel says, I worship the Lord my God, for he is a living God, but give me permission, O King, and I will kill the dragon without sword or club. The king said, I'll allow it just this once. So Daniel took pitch fat and hair and boiled them together and made cakes. And I think I've had one of these cakes before.{{< /line >}}
+{{< line >}}[00:41:40.020] Dan Beecher: But yeah, if you've ever, if you. It's dense, but it's delicious. Yeah. And boy, it is. Dragons cannot resist.{{< /line >}}
+{{< line >}}[00:41:50.160] Dan McClellan: Yeah, they. That's their Achilles heel. And he fed him to the dragon. And there's a. If you get the SBL Study Bible, there's a wonderful 16th century painting of Daniel slaying the dragon.{{< /line >}}
+{{< line >}}[00:42:08.000] Dan Beecher: Oh, I love it.{{< /line >}}
+{{< line >}}[00:42:08.960] Dan McClellan: By a, a Dutch artist. And it shows Daniel feeding these cakes to a dragon who's kind of like, oh, I've had enough, no more. But. And the, the dragon eats them and explodes.{{< /line >}}
+{{< line >}}[00:42:25.850] Dan Beecher: Yeah. So there you go. Poor Trogdor, he is done.{{< /line >}}
+{{< line >}}[00:42:31.130] Dan McClellan: And then Daniel says, see what you've been worshiping?{{< /line >}}
+{{< line >}}[00:42:34.970] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:42:35.450] Dan McClellan: The idea being, hey, if this thing can, you know, if this thing can get aced by, you know, a rough cake.{{< /line >}}
+{{< line >}}[00:42:44.200] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:42:44.600] Dan McClellan: Then, you know, you don't have a God. You have something with a pretty weak constitution.{{< /line >}}
+{{< line >}}[00:42:51.240] Dan Beecher: You have a dragon, which is pretty darn cool. I. I feel like, you know, I get that he didn't want him to worship the dragon and that. That, like, you know, if you're claiming godship for the dragon, that's probably not right. But don't kill the. Don't blow up a dragon with cakes just to make a point that a dragon's a cool thing to have, man.{{< /line >}}
+{{< line >}}[00:43:11.810] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:43:13.650] Dan Beecher: All right.{{< /line >}}
+{{< line >}}[00:43:14.930] Dan McClellan: But because God is, you know, the destroyer of. Of the leviathan and the tamer of the savage beast, they're representing Daniel as. As wielding the same power. Yeah. But then the Babylonians are upset because, you know, you killed our dragon.{{< /line >}}
+{{< line >}}[00:43:32.300] Dan Beecher: You killed. You killed our statue and our dragon.{{< /line >}}
+{{< line >}}[00:43:35.380] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:43:35.780] Dan Beecher: This. This sucks.{{< /line >}}
+{{< line >}}[00:43:36.980] Dan McClellan: And then the. They make a weird accusation, and they were very indignant and conspired against the king, saying, the king has become a Jew. He has destroyed Bel and killed the dragon and slaughtered the priests.{{< /line >}}
+{{< line >}}[00:43:50.900] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:43:51.780] Dan McClellan: Going to the king, they said, hand Daniel over to us or we will kill you and your household.{{< /line >}}
+{{< line >}}[00:43:58.330] Dan Beecher: Wow.{{< /line >}}
+{{< line >}}[00:43:59.050] Dan McClellan: Yeah. I. I don't know if this is. This is all the Babylonians, right?{{< /line >}}
+{{< line >}}[00:44:04.890] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:44:05.290] Dan McClellan: I mean, it's kind of an eat the rich situation where the whole. The whole town is. Is just like. We outnumber you significantly.{{< /line >}}
+{{< line >}}[00:44:12.729] Dan Beecher: Yeah. Cyrus didn't seem to have a handle on this.{{< /line >}}
+{{< line >}}[00:44:15.130] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:44:15.650] Dan Beecher: Particular situation.{{< /line >}}
+{{< line >}}[00:44:17.050] Dan McClellan: Yeah. The king saw that they were pressing him hard, and under compulsion, he handed Daniel over to them. At which point Daniel gets thrown where? In the lion's den.{{< /line >}}
+{{< line >}}[00:44:28.270] Dan Beecher: Right. Which is. Which differs from the other account of. Of why Daniel was thrown in the lion's den, which was.{{< /line >}}
+{{< line >}}[00:44:33.750] Dan McClellan: Right. And also the. The. The account of Daniel being in the lion's den, because here he's in there for six days.{{< /line >}}
+{{< line >}}[00:44:40.590] Dan Beecher: Yeah. Yeah.{{< /line >}}
+{{< line >}}[00:44:41.630] Dan McClellan: Just like the lions are hungry.{{< /line >}}
+{{< line >}}[00:44:44.270] Dan Beecher: And if you're wondering to yourself, how did Daniel eat for six days? What. What happened? Oh, we've got a story for that.{{< /line >}}
+{{< line >}}[00:44:53.930] Dan McClellan: But. But first, you got to know that these lions are voracious, because now there were seven lions in the den, and every day they had been given two human bodies and two sheep, but now they were giving nothing so that they would devour Daniel. And then. And then we've got a cameo.{{< /line >}}
+{{< line >}}[00:45:10.970] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:45:11.530] Dan McClellan: The prophet Habakkuk shows up, and he just. Just incidentally.{{< /line >}}
+{{< line >}}[00:45:21.080] Dan Beecher: Yeah. And he's chilling far away from there. He's all the way in Judea and he. And he's hanging out, and he's made a stew, which is nice. That sounds delicious.{{< /line >}}
+{{< line >}}[00:45:33.080] Dan McClellan: As one does. Yeah.{{< /line >}}
+{{< line >}}[00:45:34.280] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:45:35.400] Dan McClellan: And suddenly you imagine he's sitting down, he's got it all laid out nice. And he's like, I'll get some stew.{{< /line >}}
+{{< line >}}[00:45:42.760] Dan Beecher: It's time, baby.{{< /line >}}
+{{< line >}}[00:45:44.520] Dan McClellan: And then who shows up?{{< /line >}}
+{{< line >}}[00:45:46.440] Dan Beecher: The angel of the Lord says, says, take this to Babylon and give it to Daniel.{{< /line >}}
+{{< line >}}[00:45:53.670] Dan McClellan: Which Habakkuk's like, I don't. What?{{< /line >}}
+{{< line >}}[00:45:57.350] Dan Beecher: Can I make another. Can I. Can I make him another stew when I get there? That's, like a ways away.{{< /line >}}
+{{< line >}}[00:46:03.510] Dan McClellan: Yeah. I'm low on gas and you need a jacket. So he says, sir, I have never seen Babylon and I know nothing about the den. Then the angel of the Lord took him by the crown of his head and carried him by his hair. So the angel was just, like, with the rush of his spirit. With a gust of wind, he set him down in Babylon right over the den, presumably with the stew in tow. Right. Like, he was like, grab the stew. Pick up, Grab your stew.{{< /line >}}
+{{< line >}}[00:46:36.730] Dan Beecher: We're going. You'd think, you know, you'd think they'd have other modes of transportation, but the dragon is dead, so all you got is a gust of wind and some hair grabbing.{{< /line >}}
+{{< line >}}[00:46:46.490] Dan McClellan: Yeah. And then Habakkuk shouted, Daniel. Daniel, take the food that God has sent you. It sounds like the angel could have just taken Habakkuk's food because Habakkuk is out of the picture.{{< /line >}}
+{{< line >}}[00:46:59.530] Dan Beecher: It does seem like a very elaborate way to get food to Daniel.{{< /line >}}
+{{< line >}}[00:47:04.730] Dan McClellan: Yeah. Picking him up by his hair and then flying him. He's gonna be like, ow, ow, ow. Daniel says, you have remembered me, O God, and have not abandoned those who love love you. So Daniel got up and ate, and the angel of God immediately returned Habakkuk to his own place. You're not needed anymore.{{< /line >}}
+{{< line >}}[00:47:23.360] Dan Beecher: At which point Habakkuk said, was all of this necessary? Why was I involved in this.{{< /line >}}
+{{< line >}}[00:47:30.720] Dan McClellan: Now I got to go make some more stew.{{< /line >}}
+{{< line >}}[00:47:34.080] Dan Beecher: My head hurts. I'm out of stew. This is terrible.{{< /line >}}
+{{< line >}}[00:47:38.720] Dan McClellan: And then on the seventh day, the king came to mourn for Daniel. When he came to the den, he looked in, and there sat Daniel. Exclamation point. The king shouted with a loud voice, you are great, O Lord, the God of Daniel, and there is no other besides you.{{< /line >}}
+{{< line >}}[00:48:24.920] Dan Beecher: Let me ask you, this was—because I'm not remembering my Book of Daniel, like the book well enough—was the king that threw Daniel into the lion's den in Daniel, was that Cyrus or was it—because I don't, I don't remember which king it was that—but I don't think it was Cyrus, was it?{{< /line >}}
+{{< line >}}[00:48:48.860] Dan McClellan: So it's a post-Babylonian king, but it's Darius who is represented in the Book of Daniel as the Median king who defeats Babylon, and then Cyrus comes after Darius. Okay. I imagine this other text might be representing Cyrus as the one who conquers Babylon. But if it is integrated into the rest of the Book of Daniel, then it was probably following their chronology, even though it comes after all of the apocalyptic visions and everything from chapter 7 through 12. So, yeah, it is.{{< /line >}}
+{{< line >}}[00:49:26.800] Dan Beecher: So where did the—so up until the Apocrypha was sort of yeeted out of the Bible, did this—did this just sit next to it? Like, what happened with this? Why, why was it in? Why wasn't it, you know, why was it—I guess I can see why it was rejected, why it was scooted out, but just sort of give me the—because it, it doesn't seem like it aligns with the rest of the, you know, with the Book of Daniel, for example.{{< /line >}}
+{{< line >}}[00:50:02.570] Dan McClellan: Yeah. Yeah. Well, none of the Book of Daniel seems to align with the rest of the Book of Daniel, but...{{< /line >}}
+{{< line >}}[00:50:06.810] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:50:07.690] Dan McClellan: Yeah. You got to remember, for early Christianity, their Bible was the Septuagint, which was the Greek translation. And so this was part of the Greek translation. So when they get together and are like, "All right, these are our books, these are our guys. This, this is our canon." And they put it together, our earliest editions of a codex with all of the text of the Bible in one volume are these Greek editions. And so they have these texts that were either composed in Greek or primarily circulated in Greek, including these additions. And so this was just a part of the Bible. When we get to the Vulgate, Jerome is including most of what is in the Greek Septuagint. And so this is just part of the Bible until we get down to the Protestant Reformation, at which point now Christianity is doing their thing with their version of the Bible, but Judaism is actually just focusing on the texts that are circulated in Hebrew.{{< /line >}}
+{{< line >}}[00:51:11.770] Dan McClellan: So their version of Daniel is Hebrew and Aramaic, it's not Greek, and so it doesn't include these additions. And so by the time we get down to Martin Luther in the beginning of the 16th century CE, he wants to translate his own version of the Bible. And he's like, "Now we're doing the—we're doing the Greek New Testament and then we're going back to the Hebrew." He learns Hebrew, he, he learns how to translate and goes back to the Jewish manuscripts of the Hebrew Bible. And so he's like, "Hey, all this other stuff isn't here. Instead of just having it, you know, integrated into the Old Testament, I'm gonna take them out and I'm gonna go put them over here in an entirely separate section." In the, I think the first edition, it was like an appendix. Everything was moved to the back. And he also moved James and Hebrews and Revelation and a bunch of New Testament texts to the back that he didn't like. In subsequent editions, he was like, "Fine, I'll restore the New Testament stuff, but I, I'm gonna put the other text, the Apocrypha, in their own section."{{< /line >}}
+{{< line >}}[00:52:19.270] Dan McClellan: And so it goes Old Testament, Apocrypha, New Testament. And so what Martin Luther does is basically isolates and separates the Apocrypha and creates a third volume within the Bible known as the Apocrypha. That then in the 19th century, publishers are like, "Man, and that is—"{{< /line >}}
+{{< line >}}[00:52:40.550] Dan Beecher: They're taking up pages.{{< /line >}}
+{{< line >}}[00:52:43.070] Dan McClellan: Yeah, just, just valuable pages that are costing us money. And so the combination of Protestantism's kind of demotion of the Apocrypha to its own segment and then its treatment of the Apocrypha as not as inspired as the rest of the text resulted ultimately in its ejection from the canon by the end of the 19th century.{{< /line >}}
+{{< line >}}[00:53:07.040] Dan Beecher: Okay, well, I mean, it makes sense that this was the, the, the Greek part that was not included in the Hebrew part. Like, I guess I, I now I see the logic of that. That totally makes sense to me.{{< /line >}}
+{{< line >}}[00:53:17.680] Dan McClellan: Yeah. So.{{< /line >}}
+{{< line >}}[00:53:18.920] Dan Beecher: Well, there you go.{{< /line >}}
+{{< line >}}[00:53:19.840] Dan McClellan: There is a logic to it all. It's not all entirely arbitrary, but there are some fascinating stories like this in the Apocrypha. Highly, highly recommend get you getting yourself of an edition of the Bible that includes the Apocrypha so that you can check some of these stories out.{{< /line >}}
+{{< line >}}[00:53:38.970] Dan Beecher: Yeah, we're people who are, who are, you know, living without the Apocrypha. They're. They're living without dragons, people. This is, this is Targaryen stuff.{{< /line >}}
+{{< line >}}[00:53:48.170] Dan McClellan: Yeah. There be dragons there. So, you know, how can you turn that down? And we've, we've talked about the Apocrypha on the show before, haven't we? Yeah, yeah, yeah. Again, highly recommend. Introduction to the Apocrypha: Jewish Books in Christian Bibles by Lawrence Wills from 2021. Great discussion.{{< /line >}}
+{{< line >}}[00:54:07.860] Dan Beecher: Nice. Excellent. Well, thanks for that. I, I enjoyed that thoroughly. I really, I really just.{{< /line >}}
+{{< line >}}[00:54:17.780] Dan McClellan: Yeah, it's just a delightful little story. They, they, they're not beating around the bush. They're cutting right to the chase. Yeah. And it is incisive. It is, it is punchy.{{< /line >}}
+{{< line >}}[00:54:30.190] Dan Beecher: Yeah. It's literally my favorite part of the Bible that I've ever read. I haven't read the whole thing cover to cover. I've read a lot of it and I think that Bel and the Dragon is probably my favorite little chapter that there is. So.{{< /line >}}
+{{< line >}}[00:54:45.390] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:54:45.950] Dan Beecher: There you go. All right, well, you and I, Dan, are now going to adjourn to the after party where all of our patrons at the $10 level and up can... can hang out with us for a little bit more. For the rest of you, thank you so much for joining us. If you want to contact us, the email address is contact at dataoverdogma.com. We, we sure do appreciate you checking in with us and we'll talk to you again next week.{{< /line >}}
+{{< line >}}[00:55:14.050] Dan McClellan: Bye, everybody.{{< /line >}}

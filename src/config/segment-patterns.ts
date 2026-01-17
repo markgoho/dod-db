@@ -11,6 +11,7 @@ export type SegmentType =
   | 'chapter-and-verse'
   | 'conspiracy-watch'
   | 'could-it-be-satan'
+  | 'creation-stories'
   | 'ex-eventu'
   | 'getting-angelic'
   | 'getting-demonic'
@@ -48,6 +49,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   'chapter-and-verse': 'Chapter and Verse',
   'conspiracy-watch': 'Conspiracy Watch',
   'could-it-be-satan': 'Could it be Satan?',
+  'creation-stories': 'Creation Stories',
   'ex-eventu': 'Ex Eventu',
   'getting-angelic': 'Getting Angelic',
   'getting-demonic': 'Getting Demonic',
@@ -86,6 +88,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   'chapter-and-verse': '#22c55e', // green
   'conspiracy-watch': '#dc2626', // red-600 (darker red)
   'could-it-be-satan': '#7c3aed', // violet-600 (deep purple)
+  'creation-stories': '#2dd4bf', // teal-400 (bright teal for origins/creation)
   'ex-eventu': '#6366f1', // indigo-500 (scholarly/prophecy)
   'getting-angelic': '#fbbf24', // amber-400 (golden/heavenly)
   'getting-demonic': '#b91c1c', // red-700 (dark red)
@@ -202,6 +205,11 @@ export const SEGMENT_PATTERNS: Record<
     /could it be satan\??/i,
     /welcome to.*could it be satan/i,
   ],
+  'creation-stories': [
+    /creation stories/i,
+    /welcome to.*creation stories/i,
+    /let'?s do.*creation stories/i,
+  ],
   'by-the-numbers': [/by the numbers/i, /welcome to.*by the numbers/i],
   'getting-angelic': [/getting angelic/i, /welcome to.*getting angelic/i],
   'getting-demonic': [/getting demonic/i, /welcome to.*getting demonic/i],
@@ -264,6 +272,7 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
   'chapter-and-verse': 'Reading and discussing specific Bible passages in depth',
   'conspiracy-watch': 'Examining and debunking conspiracy theories related to religion',
   'could-it-be-satan': 'Exploring Satan, demons, and evil in biblical and religious contexts',
+  'creation-stories': 'Examining ancient creation narratives from the Bible and other cultures, comparing cosmologies and origin myths',
   'ex-eventu': 'Discussing prophecy written after the fact (prophecy after the event)',
   'getting-angelic': 'Exploring angels, heavenly beings, and divine messengers in scripture',
   'getting-demonic': 'Exploring demons, evil spirits, and malevolent beings in scripture',

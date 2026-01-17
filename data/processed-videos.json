@@ -3940,6 +3940,10 @@
         "mentions": 4
       },
       {
+        "tag": "2 Maccabees",
+        "mentions": 3
+      },
+      {
         "tag": "Book of Revelation",
         "mentions": 3
       },
@@ -9499,6 +9503,10 @@
         "mentions": 2
       },
       {
+        "tag": "2 Maccabees",
+        "mentions": 1
+      },
+      {
         "tag": "Antiochus IV Epiphanes",
         "mentions": 1
       },
@@ -10320,6 +10328,10 @@
       {
         "tag": "Peter",
         "mentions": 2
+      },
+      {
+        "tag": "2 Maccabees",
+        "mentions": 1
       },
       {
         "tag": "Abraham",
@@ -13045,6 +13057,218 @@
         "title": "The Four Gospel Authors",
         "startTime": 3271
       }
+    ]
+  },
+  {
+    "videoId": "wFcJAbbNOpk",
+    "title": "Episode 70 (August 5, 2024), \"Out of Nothing\"",
+    "publishedAt": "2024-08-05T00:00:00Z",
+    "processedAt": "2026-01-17T03:03:07.206Z",
+    "transcriptPath": "data/transcripts/2024-08-05-episode-70-august-5-2024-out-of-nothing.txt",
+    "episodeNumber": 70,
+    "tags": [
+      {
+        "tag": "Daniel",
+        "mentions": 40
+      },
+      {
+        "tag": "Christianity",
+        "mentions": 14
+      },
+      {
+        "tag": "New Testament",
+        "mentions": 13
+      },
+      {
+        "tag": "Book of Daniel",
+        "mentions": 12
+      },
+      {
+        "tag": "Cyrus the Great",
+        "mentions": 10
+      },
+      {
+        "tag": "2 Maccabees",
+        "mentions": 9
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 8
+      },
+      {
+        "tag": "angel",
+        "mentions": 7
+      },
+      {
+        "tag": "Habakkuk",
+        "mentions": 7
+      },
+      {
+        "tag": "Genesis",
+        "mentions": 6
+      },
+      {
+        "tag": "Hebrew Bible",
+        "mentions": 5
+      },
+      {
+        "tag": "Monotheism",
+        "mentions": 5
+      },
+      {
+        "tag": "resurrection",
+        "mentions": 4
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 4
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 3
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 2
+      },
+      {
+        "tag": "Book of Job",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 2
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "theology",
+        "mentions": 2
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 1
+      },
+      {
+        "tag": "Baal",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Revelation",
+        "mentions": 1
+      },
+      {
+        "tag": "David Burnett",
+        "mentions": 1
+      },
+      {
+        "tag": "Elijah",
+        "mentions": 1
+      },
+      {
+        "tag": "Gnostic",
+        "mentions": 1
+      },
+      {
+        "tag": "gods",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of John",
+        "mentions": 1
+      },
+      {
+        "tag": "Gospel of Matthew",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerome",
+        "mentions": 1
+      },
+      {
+        "tag": "Justin Martyr",
+        "mentions": 1
+      },
+      {
+        "tag": "Latin Vulgate",
+        "mentions": 1
+      },
+      {
+        "tag": "manuscript",
+        "mentions": 1
+      },
+      {
+        "tag": "Median Kingdom",
+        "mentions": 1
+      },
+      {
+        "tag": "Origen",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Psalm",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:14.206]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "creation-stories",
+        "startTimestamp": "[00:03:14.206]",
+        "endTimestamp": "[00:29:47.214]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:29:47.214]",
+        "endTimestamp": "[00:54:46.000]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:54:46.000]",
+        "endTimestamp": "[00:55:20.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
     ]
   }
 ]

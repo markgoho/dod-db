@@ -6603,7 +6603,9 @@
       "confidence": 50,
       "firstSeen": "2026-01-16T04:58:37.376Z",
       "lastSeen": "2026-01-16T19:36:22.701Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-01-17T03:05:31.275Z",
+      "reviewedBy": "UI Review"
     },
     "Mandians→Mandaeans": {
       "original": "Mandians",
@@ -7348,7 +7350,101 @@
       "firstSeen": "2026-01-16T19:57:20.100Z",
       "lastSeen": "2026-01-16T19:57:20.100Z",
       "status": "pending"
+    },
+    "Bell→Bel": {
+      "original": "Bell",
+      "corrected": "Bel",
+      "category": "spelling",
+      "totalOccurrences": 8,
+      "episodeCount": 1,
+      "episodes": [
+        "wFcJAbbNOpk"
+      ],
+      "examples": [
+        "\"we're doing Bell and the\"",
+        "\"I mean, Bell and the\"",
+        "\"head. But Bell and the\""
+      ],
+      "correctedExamples": [
+        "\"we're doing Bel and the\"",
+        "\"I mean, Bel and the\"",
+        "\"head. But Bel and the\""
+      ],
+      "timestamps": [
+        "00:02:30.000",
+        "00:29:57.760",
+        "00:29:57.760"
+      ],
+      "episodeIds": [
+        "wFcJAbbNOpk",
+        "wFcJAbbNOpk",
+        "wFcJAbbNOpk"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-17T03:03:41.501Z",
+      "lastSeen": "2026-01-17T03:03:41.501Z",
+      "status": "pending"
+    },
+    "second Maccabees→Second Maccabees": {
+      "original": "second Maccabees",
+      "corrected": "Second Maccabees",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "wFcJAbbNOpk"
+      ],
+      "examples": [
+        "\"Bible. In second Maccabees 7:28 in\"",
+        "\"back at second Maccabees 7:28. And\""
+      ],
+      "correctedExamples": [
+        "\"Bible, in Second Maccabees 7:28, or\"",
+        "\"back at Second Maccabees 7:28. And\""
+      ],
+      "timestamps": [
+        "00:15:32.430",
+        "00:23:46.280"
+      ],
+      "episodeIds": [
+        "wFcJAbbNOpk",
+        "wFcJAbbNOpk"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-17T03:03:41.501Z",
+      "lastSeen": "2026-01-17T03:03:41.501Z",
+      "status": "pending"
+    },
+    "century bce→century BCE": {
+      "original": "century bce",
+      "corrected": "century BCE",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "wFcJAbbNOpk"
+      ],
+      "examples": [
+        "\"the second century bce, third or\"",
+        "\"or second century bce. And so,\""
+      ],
+      "correctedExamples": [
+        "\"the second century BCE, third or\"",
+        "\"or second century BCE. And so,\""
+      ],
+      "timestamps": [
+        "00:40:46.140",
+        "00:40:46.140"
+      ],
+      "episodeIds": [
+        "wFcJAbbNOpk",
+        "wFcJAbbNOpk"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-17T03:03:41.501Z",
+      "lastSeen": "2026-01-17T03:03:41.501Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-16T19:57:20.100Z"
+  "lastUpdated": "2026-01-17T03:05:31.275Z"
 }

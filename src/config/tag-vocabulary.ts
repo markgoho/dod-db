@@ -471,6 +471,12 @@ export const tagVocabulary: TagDefinition[] = [
 	{ canonical: 'Ruth', variations: [], category: 'literature', llmVerify: true, description: 'Book in the Hebrew Bible that tells the story of Ruth, a Moabite woman, and her relationship with Boaz', status: 'accepted' },
 	{ canonical: 'Boaz', variations: [], category: 'character', llmVerify: true, description: 'Kinsman of Ruth\'s deceased husband who marries her and continues the family line; story told in the Book of Ruth', status: 'accepted' },
 	{ canonical: 'Genesis 38', variations: [], category: 'literature', description: 'Chapter 38 of the Book of Genesis, which tells the story of Judah and Tamar', status: 'proposed', addedInEpisode: 68 },
+	{ canonical: '2 Maccabees', variations: ['2nd Maccabees', 'Second Maccabees'], category: 'literature', llmVerify: true, description: 'Deuterocanonical book recounting the Maccabean Revolt against the Seleucid Empire', status: 'accepted' },
+	{ canonical: 'Aristotle', variations: ['Aristotelian'], category: 'person', description: 'Ancient Greek philosopher and scientist, influential in Western thought', status: 'proposed', addedInEpisode: 70 },
+	{ canonical: 'Bel and the Dragon', variations: ['Bel'], category: 'literature', description: 'Addition to the Book of Daniel in the Septuagint, featuring stories of Daniel confronting idols and a dragon', status: 'proposed', addedInEpisode: 70 },
+	{ canonical: 'Second Century CE', variations: ['100s CE', '100 CE'], category: 'event', description: 'Period from 100 to 200 CE, significant for the development of early Christian theology', status: 'proposed', addedInEpisode: 70 },
+	{ canonical: 'Habakkuk', variations: [], category: 'character', llmVerify: true, description: 'Hebrew prophet, appears briefly in Bel and the Dragon to deliver food to Daniel in the lion\'s den', status: 'accepted' },
+	{ canonical: 'Darius', variations: [], category: 'person', description: 'Several Persian kings named Darius, one mentioned in the Book of Daniel', status: 'proposed', addedInEpisode: 70 },
 ];
 
 /**

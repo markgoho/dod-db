@@ -36,6 +36,7 @@ tags:
   - Book of Exodus
   - Galilee
   - Peter
+  - 2 Maccabees
   - Abraham
   - archaeology
   - Bart Ehrman

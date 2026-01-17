@@ -58,4 +58,5 @@ export const globalCorrections: CorrectionRule[] = [
   [["Antiochus IV epiphanies"], "Antiochus IV Epiphanes"], // proper-noun - confidence: 20%
   [["second Timothy"], "Second Timothy"], // capitalization - confidence: 20%
   [["Monogones Theos"], "Monogenes Theos"], // spelling - confidence: 25%
+  [["Nazarite"], "Nazirite"], // spelling - confidence: 50%
 ];

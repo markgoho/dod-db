@@ -30,6 +30,7 @@ tags:
   - Judaism
   - Athanasius of Alexandria
   - Numbers
+  - 2 Maccabees
   - Book of Revelation
   - Ishmael
   - manuscript
