@@ -618,17 +618,17 @@ export async function analyzeCorrections(
 /**
  * Extract timestamp from a transcript line
  */
-function extractTimestamp(line: string): string | null {
+function extractTimestamp(line: string): string | undefined {
   // Match: [HH:MM:SS.mmm] or [HH:MM:SS] with optional spaces
   const match = line.match(/^\[(\d{2}:\d{2}:\d{2}(?:\.\d{3})?)\]/);
-  return match?.[1]?.replaceAll(/\s+/g, '') ?? null; // Remove any spaces
+  return match?.[1]?.replaceAll(/\s+/g, ''); // Remove any spaces
 }
 
 /**
  * Extract text content from a transcript line (removes timestamp and speaker)
  */
-function extractText(line: string): string | null {
+function extractText(line: string): string | undefined {
   // Match: [HH:MM:SS.mmm] Speaker Name: text (with optional spaces in timestamp)
   const match = line.match(/^\[[\d:.\s]+\]\s+.+?:\s+(.+)$/);
-  return match?.[1] ?? null;
+  return match?.[1];
 }

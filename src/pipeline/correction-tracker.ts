@@ -107,7 +107,7 @@ export async function loadTracker(): Promise<CorrectionTracker> {
  */
 export async function saveTracker(tracker: CorrectionTracker): Promise<void> {
   tracker.lastUpdated = new Date().toISOString();
-  await Bun.write(TRACKER_PATH, JSON.stringify(tracker, null, 2));
+  await Bun.write(TRACKER_PATH, JSON.stringify(tracker, undefined, 2));
 }
 
 /**

@@ -24,9 +24,9 @@ export type DetectionMethod = (typeof DETECTION_METHODS)[number];
 
 /**
  * Get audio duration in seconds using ffprobe.
- * Returns null if the file doesn't exist or ffprobe fails.
+ * Returns undefined if the file doesn't exist or ffprobe fails.
  */
-export async function getAudioDuration(videoId: string): Promise<number | null> {
+export async function getAudioDuration(videoId: string): Promise<number | undefined> {
   const audioDir = join(process.cwd(), 'data', 'audio');
 
   // Try common audio extensions
@@ -61,7 +61,7 @@ export async function getAudioDuration(videoId: string): Promise<number | null> 
     }
   }
 
-  return null;
+  return undefined;
 }
 
 /**
@@ -70,7 +70,7 @@ export async function getAudioDuration(videoId: string): Promise<number | null> 
 export interface Segment {
   type: SegmentType;
   startTimestamp: string; // "[HH:MM:SS.mmm]" format
-  endTimestamp: string | null; // null if segment extends to end of episode
+  endTimestamp?: string; // undefined if segment extends to end of episode
   confidence: 'auto' | 'verified';
   detectionMethod: DetectionMethod;
   matchedPattern?: string; // The pattern that triggered detection (for debugging)
@@ -191,7 +191,7 @@ function findSegmentMatches(lines: TranscriptLine[]): SegmentMatch[] {
  * Find the intro end timestamp.
  * Intro runs from start until the podcast tagline/welcome message.
  */
-function findIntroEnd(lines: TranscriptLine[]): string | null {
+function findIntroEnd(lines: TranscriptLine[]): string | undefined {
   for (const line of lines) {
     for (const pattern of INTRO_END_PATTERNS) {
       if (pattern.test(line.text)) {
@@ -199,7 +199,7 @@ function findIntroEnd(lines: TranscriptLine[]): string | null {
       }
     }
   }
-  return null;
+  return undefined;
 }
 
 /**
@@ -299,7 +299,7 @@ export async function detectSegmentsFromAudio({
   for (const [index, match] of highConfidenceMatches.entries()) {
     const nextMatch = highConfidenceMatches[index + 1];
     const startTimestamp = secondsToTimestamp(match.timestamp);
-    let endTimestamp: string | null = null;
+    let endTimestamp: string | undefined; // Will be assigned if next match or duration exists
     if (nextMatch) {
       endTimestamp = secondsToTimestamp(nextMatch.timestamp);
     } else if (durationSeconds) {
@@ -367,7 +367,7 @@ export function detectSegments(
     const nextMatch = matches[index + 1];
 
     // Determine end timestamp
-    let endTimestamp: string | null = null;
+    let endTimestamp: string | undefined; // Will be assigned if next match exists
     if (nextMatch) {
       endTimestamp = nextMatch.timestamp;
     }

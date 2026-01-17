@@ -71,8 +71,6 @@ export default defineConfig([
           },
         },
       ],
-      // Allow null for DOM APIs and JSON parsing where it's idiomatic
-      'unicorn/no-null': 'off',
       // Allow sort() mutation - toSorted() isn't always appropriate
       'unicorn/no-array-sort': 'off',
       // Allow path imports style
@@ -85,6 +83,26 @@ export default defineConfig([
       'unicorn/no-array-callback-reference': 'off',
       // Allow consecutive ignored values in destructuring
       'unicorn/no-unreadable-array-destructuring': 'off',
+    },
+  },
+  // File-specific null overrides
+  {
+    files: [
+      'src/hugo/**/*.ts',
+      'src/utils/hugo-frontmatter.ts',
+      'tools/**/*.ts',
+      'src/scripts/*-ui.ts',
+      'src/scripts/tools-server.ts',
+      'experiments/**/*.ts',
+    ],
+    rules: {
+      // Allow null in:
+      // - Hugo files: YAML/JSON serialization APIs (Bun.YAML.stringify, JSON.stringify)
+      // - Tools: Browser DOM APIs (querySelector, etc.)
+      // - UI scripts: DOM manipulation and state management
+      // - tools-server.ts: HTTP Response API (new Response(null, ...))
+      // - Experiments: Allow flexibility in experimental code
+      'unicorn/no-null': 'off',
     },
   },
 ]);

@@ -41,12 +41,13 @@ export function applyDeterministicCorrections(
  * Find the last timestamp in text and return its position.
  * Used to find where chunk 1 content ends for matching in chunk 2.
  */
-function findLastTimestamp(text: string): { timestamp: string; position: number } | null {
+function findLastTimestamp(text: string): { timestamp: string; position: number } | undefined {
   // Find all timestamps in the text
   const timestampPattern = /\[([0-9]{1,2}:[0-9]{2}:[0-9]{2}(?:\.[0-9]{3})?)\]/g;
-  let lastMatch: RegExpExecArray | null = null;
+  let lastMatch: RegExpExecArray | undefined;
   let match: RegExpExecArray | null;
 
+  // RegExp.exec() returns null (not undefined) when no match found
   while ((match = timestampPattern.exec(text)) !== null) {
     lastMatch = match;
   }
@@ -57,14 +58,14 @@ function findLastTimestamp(text: string): { timestamp: string; position: number 
       position: lastMatch.index,
     };
   }
-  return null;
+  return undefined;
 }
 
 /**
  * Find the position in chunk where a timestamp line starts.
  * Returns the position of the newline before the timestamp (or 0 if at start).
  */
-function findTimestampLineStart(chunk: string, timestamp: string): number | null {
+function findTimestampLineStart(chunk: string, timestamp: string): number | undefined {
   // Look for the timestamp at the start of a line
   const pattern = new RegExp(String.raw`(^|\n)(\[${timestamp.replace('.', String.raw`\.`)}\])`, 'g');
   const match = pattern.exec(chunk);
@@ -73,7 +74,7 @@ function findTimestampLineStart(chunk: string, timestamp: string): number | null
     // Return position right after the newline (or 0 if at start)
     return match[1] === '\n' ? match.index + 1 : match.index;
   }
-  return null;
+  return undefined;
 }
 
 /**
@@ -127,7 +128,7 @@ export function deduplicateChunks(
     const chunk = correctedChunks[index];
     if (!chunk) continue;
 
-    let trimStart: number | null = null; // null means not found yet
+    let trimStart: number | undefined; // undefined means not found yet
     let resultTrimEnd = result.length; // How much of result to keep
 
     // Check if result ends with incomplete line
@@ -138,7 +139,7 @@ export function deduplicateChunks(
       if (lastTs) {
         const tsInChunk = findTimestampLineStart(chunk, lastTs.timestamp);
 
-        if (tsInChunk !== null) {
+        if (tsInChunk !== undefined) {
           // Found the timestamp - start from the NEXT line (skip the duplicate)
           const afterTs = chunk.slice(tsInChunk);
           const nextLineStart = afterTs.indexOf('\n');
@@ -155,7 +156,7 @@ export function deduplicateChunks(
         // Look for this timestamp in the new chunk
         const tsInChunk = findTimestampLineStart(chunk, incompleteTs.timestamp);
 
-        if (tsInChunk !== null) {
+        if (tsInChunk !== undefined) {
           // Found it! Remove incomplete line from result, start chunk from this timestamp
           resultTrimEnd = complete.length;
           trimStart = tsInChunk;
@@ -163,11 +164,11 @@ export function deduplicateChunks(
       }
 
       // If we couldn't find the timestamp, try matching the last complete line's timestamp
-      if (trimStart === null && complete.length > 0) {
+      if (trimStart === undefined && complete.length > 0) {
         const lastCompleteTs = findLastTimestamp(complete);
         if (lastCompleteTs) {
           const tsInChunk = findTimestampLineStart(chunk, lastCompleteTs.timestamp);
-          if (tsInChunk !== null) {
+          if (tsInChunk !== undefined) {
             resultTrimEnd = complete.length;
             // Skip to AFTER this line in chunk (it's already in result)
             const afterTs = chunk.slice(tsInChunk);
@@ -179,7 +180,7 @@ export function deduplicateChunks(
     }
 
     // Fallback: if we couldn't find matching timestamps, use approximate overlap
-    if (trimStart === null) {
+    if (trimStart === undefined) {
       // Look for the first timestamp line after approximately half the overlap
       const searchStart = Math.max(0, Math.floor(overlapSize * 0.5));
       const searchRegion = chunk.slice(searchStart, Math.min(chunk.length, overlapSize * 2));

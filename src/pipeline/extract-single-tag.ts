@@ -16,14 +16,14 @@ import type { TagDefinition } from '../config/tag-vocabulary.js';
  * @param canonical - The canonical tag name to search for
  * @param enableLlmVerification - If true, use LLM to verify ambiguous matches
  * @param episodeContext - Optional episode information for logging
- * @returns EpisodeTag object with mention count, or null if no matches
+ * @returns EpisodeTag object with mention count, or undefined if no matches
  */
 export async function extractSingleTag(
 	transcript: string,
 	canonical: string,
 	enableLlmVerification = true,
 	episodeContext?: EpisodeContext,
-): Promise<EpisodeTag | null> {
+): Promise<EpisodeTag | undefined> {
 	// Find tag definition
 	const tagDef = tagVocabulary.find((t) => t.canonical === canonical);
 	if (!tagDef) {
@@ -101,9 +101,9 @@ export async function extractSingleTag(
 		}
 	}
 
-	// If no matches found, return null
+	// If no matches found, return undefined
 	if (matches.length === 0) {
-		return null;
+		return undefined;
 	}
 
 	// Check if LLM verification is needed
@@ -128,9 +128,9 @@ export async function extractSingleTag(
 		);
 	}
 
-	// Return null if no verified matches
+	// Return undefined if no verified matches
 	if (verifiedCount === 0) {
-		return null;
+		return undefined;
 	}
 
 	return {

@@ -3,10 +3,8 @@
  */
 
 import * as path from 'node:path';
-import {
-	extractCleanTitle,
-	getEpisodeOutputPath,
-} from '../hugo/episode-generator.js';
+import { extractCleanTitle } from '../hugo/extract-clean-title.js';
+import { getEpisodeOutputPath } from '../hugo/get-episode-path.js';
 import type { ProcessedVideo } from '../storage/processed-videos.js';
 
 /**

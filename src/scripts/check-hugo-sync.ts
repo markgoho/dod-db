@@ -7,7 +7,8 @@
  */
 
 import { getProcessedVideosWithNumbers } from '../storage/processed-videos.js';
-import { getEpisodeOutputPath, extractCleanTitle } from '../hugo/episode-generator.js';
+import { extractCleanTitle } from '../hugo/extract-clean-title.js';
+import { getEpisodeOutputPath } from '../hugo/get-episode-path.js';
 
 /**
  * Parse YAML frontmatter from Hugo content file.

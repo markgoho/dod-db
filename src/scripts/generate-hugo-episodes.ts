@@ -12,12 +12,10 @@ import {
 	getVideoByEpisodeNumber,
 	type ProcessedVideo,
 } from '../storage/processed-videos.js';
-import {
-	extractCleanTitle,
-	generateFrontmatter,
-	getEpisodeOutputPath,
-	transformToShortcodes,
-} from '../hugo/episode-generator.js';
+import { extractCleanTitle } from '../hugo/extract-clean-title.js';
+import { generateFrontmatter } from '../hugo/generate-frontmatter.js';
+import { getEpisodeOutputPath } from '../hugo/get-episode-path.js';
+import { transformToShortcodes } from '../hugo/transform-shortcodes.js';
 
 /**
  * Generate Hugo content file for a single episode.

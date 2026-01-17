@@ -1,0 +1,9 @@
+# Bun configuration file
+# See: https://bun.sh/docs/runtime/bunfig
+
+[test]
+# Look for test files in src directory
+root = "./src"
+
+# Enable coverage reporting by default
+coverage = true

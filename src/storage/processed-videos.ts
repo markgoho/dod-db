@@ -29,7 +29,7 @@ export const EpisodeTagSchema = z.object({
 export interface EpisodeSegment {
 	type: SegmentType;
 	startTimestamp: string; // "[HH:MM:SS.mmm]" format
-	endTimestamp: string | null; // null if segment extends to end
+	endTimestamp?: string; // undefined if segment extends to end
 	confidence: 'auto' | 'verified';
 	detectionMethod: DetectionMethod;
 }
@@ -40,7 +40,7 @@ export interface EpisodeSegment {
 export const EpisodeSegmentSchema = z.object({
 	type: z.string(),
 	startTimestamp: z.string(),
-	endTimestamp: z.string().nullable(),
+	endTimestamp: z.string().optional(),
 	confidence: z.enum(['auto', 'verified']),
 	detectionMethod: z.enum(DETECTION_METHODS),
 });
@@ -117,7 +117,7 @@ export async function loadProcessedVideos(): Promise<ProcessedVideo[]> {
 export async function saveProcessedVideos(
   videos: ProcessedVideo[],
 ): Promise<void> {
-  const content = JSON.stringify(videos, null, 2);
+  const content = JSON.stringify(videos, undefined, 2);
   await Bun.write(youtubeConfig.processedVideosFile, content);
 }
 
