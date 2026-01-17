@@ -26,6 +26,7 @@ tags:
   - Athanasius of Alexandria
   - Hypostasis
   - Israel
+  - Justin Martyr
   - Mesopotamian
   - monotheism
   - Paul

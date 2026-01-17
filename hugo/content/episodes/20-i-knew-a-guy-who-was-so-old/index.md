@@ -50,6 +50,7 @@ tags:
   - Codex Sinaiticus
   - Daniel
   - David Carr
+  - Didache
   - First Clement
   - Galilee
   - Jude

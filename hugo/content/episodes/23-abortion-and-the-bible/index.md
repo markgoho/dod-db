@@ -23,6 +23,7 @@ tags:
   - Psalm
   - Ten Commandments
   - Barnabas
+  - Didache
   - Holy Spirit
   - Isaac
   - Paul

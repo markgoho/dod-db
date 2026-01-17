@@ -28,7 +28,7 @@ bun run src/scripts/process-youtube.ts <youtube-url> [options]
 This is the canonical way to kick off the full pipeline. It:
 
 1. Extracts video ID and checks if already processed
-2. Fetches metadata from YouTube (title, date, description)
+2. Fetches metadata from YouTube (title, date, description, chapters if present)
 3. Downloads audio to `data/audio/`
 4. Transcribes with AssemblyAI (with speaker labels)
 5. Identifies speakers using metadata and podcast context
@@ -212,21 +212,27 @@ The transcript processing pipeline is orchestrated via `src/pipeline/youtube-pro
 
 5. **Storage** (`src/storage/`)
    - **File**: Saves to `data/transcripts/` with date-slug naming
-   - **Tracking**: Updates `data/processed-videos.json` with tags array
+   - **Tracking**: Updates `data/processed-videos.json` with tags array and metadata
+   - **Chapters**: YouTube chapters (when present) are extracted and stored in `processed-videos.json` but not yet used in Hugo pages
    - **Firestore**: Vector embeddings stored with `FieldValue.vector()` for semantic search (TBD)
 
 ### Episode Number Tracking
 
-Episode numbers are automatically assigned based on `publishedAt` date order:
+Episode numbers are automatically assigned using intelligent title-based extraction:
 
-- **Sequential numbering**: Earliest episode = 1, next = 2, etc.
-- **All episodes included**: Even those without numbers in titles (like "Apostlepalooza!")
+- **Title-based numbering**: Extracts "Episode N" from titles as authoritative source (e.g., "Episode 69" → 69)
+- **Gap filling**: Special episodes without numbers (like "Apostlepalooza!") fill gaps sequentially (becomes Episode 16)
+- **Chronological ordering**: Sorted by `publishedAt` date to maintain episode release order
 - **Stored permanently**: In `data/processed-videos.json` as `episodeNumber` field
 - **Computed automatically**: When processing new videos via `markVideoAsProcessed()`
-- **Manual overrides**: Respected (set `episodeNumber` directly in JSON)
+- **Manual overrides**: Respected (pre-existing `episodeNumber` fields won't be overwritten)
 - **Deterministic**: Same dates use videoId as tiebreaker for stable ordering
 
-**One-time migration**: Run `bun run src/scripts/migrate-episode-numbers.ts` to backfill existing episodes.
+**Algorithm:**
+1. Extract episode numbers from titles (if present)
+2. Sort by publishedAt for chronological order
+3. Assign available sequential numbers to episodes without title numbers
+4. Result: No duplicate numbers, gaps filled intelligently
 
 **Utility functions** (in `src/storage/processed-videos.ts`):
 
@@ -309,7 +315,48 @@ The UI provides:
   - Canonical name, variations (comma-separated), category (dropdown)
   - "Use LLM verification" checkbox for ambiguous names (requires description)
   - Automatically reprocesses all episodes and shows tag-specific results
+  - **Automatic Hugo sync**: After accepting a tag, Hugo episode pages are regenerated with updated tags
 - **Migration Tools**: Reprocess all episodes after manual vocabulary edits
+
+**Tag acceptance workflow:**
+
+When a tag is accepted in the UI (or added via "Add New Tag" form), the following happens automatically:
+
+1. **Update vocabulary** - Tag is added/updated in `src/config/tag-vocabulary.ts`
+2. **Extract tags** - All episodes are reprocessed to find the new tag
+3. **Update processed-videos.json** - Episodes with the tag get it added to their `tags` array
+4. **Regenerate Hugo pages** - All episode pages in `hugo/content/episodes/{number}/index.md` are regenerated with updated frontmatter
+5. **Update analytics** - Tag counts and stats are recalculated
+
+This ensures that:
+- Tags appear immediately on the website after acceptance
+- No manual regeneration step needed
+- `processed-videos.json` and Hugo frontmatter stay in sync
+
+**Verifying sync:**
+
+Use the diagnostic script to check if Hugo frontmatter is in sync with `processed-videos.json`:
+
+```bash
+bun run src/scripts/check-hugo-sync.ts
+```
+
+This script:
+- Compares tags in `processed-videos.json` with Hugo frontmatter for all episodes
+- Reports any mismatches (missing tags, extra tags, count differences)
+- Exits with error code 1 if mismatches found (useful for CI/CD)
+
+**Manual sync (if needed):**
+
+If Hugo pages get out of sync (e.g., after manual edits to `processed-videos.json`):
+
+```bash
+# Regenerate all Hugo episodes from processed-videos.json
+bun run src/scripts/generate-hugo-episodes.ts --all
+
+# Verify sync
+bun run src/scripts/check-hugo-sync.ts
+```
 
 **Adding tags with LLM verification:**
 

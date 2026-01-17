@@ -35,6 +35,7 @@ tags:
   - Deuteronomy
   - Gospel of Mark
   - Joseph
+  - Justin Martyr
   - King James Version
   - monotheism
   - provenance

@@ -46,6 +46,7 @@ tags:
   - Deuteronomy
   - Euphrates
   - John of Patmos
+  - Justin Martyr
   - Numbers
   - Pergamum
   - preterist interpretation

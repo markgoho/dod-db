@@ -22,6 +22,7 @@ tags:
   - Egypt
   - Hebrew Bible
   - Joshua
+  - Ruth
   - Deuteronomy
   - Garden of Eden
   - Jeremiah

@@ -32,6 +32,7 @@ tags:
   - Egypt
   - King James Version
   - Kings
+  - Tamar
   - theology
   - Ugarit
 segments:

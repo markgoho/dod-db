@@ -13,11 +13,14 @@ tags:
   - Jesus
   - Samuel
   - 1 Samuel
+  - Jonathan
   - Moses
+  - Absalom
   - Christianity
   - Philistines
   - 2 Chronicles
   - archaeology
+  - Bathsheba
   - Hebrew Bible
   - Kings
   - Goliath

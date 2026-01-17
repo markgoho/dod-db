@@ -22,6 +22,7 @@ import {
   saveProcessedVideos,
   updateVideoSegments,
   getVideoById,
+  getProcessedVideosWithNumbers,
   type EpisodeSegment,
 } from '../storage/processed-videos.js';
 import { generateHugoEpisode } from '../pipeline/generate-hugo-episode.js';
@@ -235,6 +236,15 @@ async function runMigrationWithTagTracking(
         // Full reprocessing of all tags
         await reprocessEpisodes({ force: true, skipLlm, verbose: false });
       }
+
+      // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+      // Regenerate all Hugo episode pages (silent, fast, idempotent)
+      // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+      const allVideos = await getProcessedVideosWithNumbers();
+      for (const video of allVideos) {
+        await generateHugoEpisode(video, { silent: true });
+      }
+      job.logs.push(`✓ Front matter updated\n`);
 
       job.status = 'completed';
       job.exitCode = 0;

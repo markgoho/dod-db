@@ -24,6 +24,8 @@ export interface AddTagToEpisodesResult {
 	episodesWithTag: number;
 	totalMentions: number;
 	failed: number;
+	/** Video IDs of episodes where the tag was added/updated */
+	updatedVideoIds: string[];
 }
 
 /**
@@ -51,6 +53,7 @@ export async function addTagToEpisodes(
 	let episodesWithTag = 0;
 	let totalMentions = 0;
 	let failed = 0;
+	const updatedVideoIds: string[] = [];
 
 	for (let index = 0; index < videos.length; index++) {
 		const video = videos[index];
@@ -100,6 +103,7 @@ export async function addTagToEpisodes(
 					sortTags(video.tags);
 					episodesWithTag++;
 					totalMentions += tagResult.mentions;
+					updatedVideoIds.push(video.videoId);
 
 					if (verbose) {
 						console.log(`  ✓ Found ${tagResult.mentions} mentions`);
@@ -157,5 +161,6 @@ export async function addTagToEpisodes(
 		episodesWithTag,
 		totalMentions,
 		failed,
+		updatedVideoIds,
 	};
 }

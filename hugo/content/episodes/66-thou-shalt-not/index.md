@@ -25,6 +25,7 @@ tags:
   - Judges
   - King James Version
   - Leviticus
+  - Onan
   - Ugarit
   - Cherubim
   - Elephantine

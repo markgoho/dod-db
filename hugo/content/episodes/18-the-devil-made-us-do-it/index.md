@@ -54,6 +54,7 @@ tags:
   - James
   - Joseph
   - Judges
+  - Justin Martyr
   - King James Version
   - Kings
   - Luke

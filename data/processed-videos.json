@@ -917,6 +917,10 @@
         "mentions": 1
       },
       {
+        "tag": "Justin Martyr",
+        "mentions": 1
+      },
+      {
         "tag": "Mesopotamian",
         "mentions": 1
       },
@@ -3510,6 +3514,10 @@
         "mentions": 1
       },
       {
+        "tag": "Justin Martyr",
+        "mentions": 1
+      },
+      {
         "tag": "King James Version",
         "mentions": 1
       },
@@ -3973,6 +3981,10 @@
       },
       {
         "tag": "David Carr",
+        "mentions": 1
+      },
+      {
+        "tag": "Didache",
         "mentions": 1
       },
       {
@@ -4481,6 +4493,10 @@
       },
       {
         "tag": "Barnabas",
+        "mentions": 1
+      },
+      {
+        "tag": "Didache",
         "mentions": 1
       },
       {
@@ -6719,6 +6735,10 @@
         "mentions": 3
       },
       {
+        "tag": "Ruth",
+        "mentions": 3
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 2
       },
@@ -7413,6 +7433,10 @@
         "mentions": 1
       },
       {
+        "tag": "Justin Martyr",
+        "mentions": 1
+      },
+      {
         "tag": "Numbers",
         "mentions": 1
       },
@@ -7965,6 +7989,10 @@
       },
       {
         "tag": "Joseph",
+        "mentions": 1
+      },
+      {
+        "tag": "Justin Martyr",
         "mentions": 1
       },
       {
@@ -9513,6 +9541,10 @@
       },
       {
         "tag": "Jesus",
+        "mentions": 1
+      },
+      {
+        "tag": "Justin Martyr",
         "mentions": 1
       }
     ],
@@ -11377,6 +11409,10 @@
         "mentions": 3
       },
       {
+        "tag": "Herodias",
+        "mentions": 3
+      },
+      {
         "tag": "James McGrath",
         "mentions": 3
       },
@@ -11888,6 +11924,10 @@
         "mentions": 1
       },
       {
+        "tag": "Tamar",
+        "mentions": 1
+      },
+      {
         "tag": "theology",
         "mentions": 1
       },
@@ -11960,12 +12000,20 @@
         "mentions": 15
       },
       {
+        "tag": "Jonathan",
+        "mentions": 13
+      },
+      {
         "tag": "Judah",
         "mentions": 11
       },
       {
         "tag": "Philistines",
         "mentions": 9
+      },
+      {
+        "tag": "Bathsheba",
+        "mentions": 7
       },
       {
         "tag": "Hebrews",
@@ -12277,6 +12325,10 @@
         "mentions": 2
       },
       {
+        "tag": "Onan",
+        "mentions": 2
+      },
+      {
         "tag": "Ugarit",
         "mentions": 2
       },
@@ -12398,8 +12450,16 @@
         "mentions": 9
       },
       {
+        "tag": "Jonathan",
+        "mentions": 8
+      },
+      {
         "tag": "Moses",
         "mentions": 8
+      },
+      {
+        "tag": "Absalom",
+        "mentions": 7
       },
       {
         "tag": "Christianity",
@@ -12415,6 +12475,10 @@
       },
       {
         "tag": "archaeology",
+        "mentions": 4
+      },
+      {
+        "tag": "Bathsheba",
         "mentions": 4
       },
       {
@@ -12524,11 +12588,23 @@
         "mentions": 51
       },
       {
+        "tag": "Onan",
+        "mentions": 16
+      },
+      {
+        "tag": "Tamar",
+        "mentions": 13
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 8
       },
       {
         "tag": "Israel",
+        "mentions": 6
+      },
+      {
+        "tag": "Ruth",
         "mentions": 6
       },
       {
@@ -12538,6 +12614,10 @@
       {
         "tag": "Genesis",
         "mentions": 4
+      },
+      {
+        "tag": "Boaz",
+        "mentions": 3
       },
       {
         "tag": "Hebrew Bible",
@@ -12696,11 +12776,19 @@
         "mentions": 5
       },
       {
+        "tag": "Didache",
+        "mentions": 4
+      },
+      {
         "tag": "Hebrew Bible",
         "mentions": 4
       },
       {
         "tag": "Jerusalem",
+        "mentions": 4
+      },
+      {
+        "tag": "Justin Martyr",
         "mentions": 4
       },
       {

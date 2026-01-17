@@ -15,7 +15,10 @@ import {
  * Generate Hugo content file for a single episode.
  * Returns true if successful, false if skipped.
  */
-export async function generateHugoEpisode(video: ProcessedVideo): Promise<boolean> {
+export async function generateHugoEpisode(
+	video: ProcessedVideo,
+	options?: { silent?: boolean },
+): Promise<boolean> {
 	if (video.episodeNumber === undefined) {
 		console.warn(`⚠️  Cannot generate Hugo page: no episode number for ${video.videoId}`);
 		return false;
@@ -45,6 +48,8 @@ export async function generateHugoEpisode(video: ProcessedVideo): Promise<boolea
 	const outputPath = getEpisodeOutputPath(video, cleanTitle);
 	await Bun.write(outputPath, content);
 
-	console.log(`✓ Generated Hugo page: /episodes/${video.episodeNumber}/`);
+	if (options?.silent !== true) {
+		console.log(`✓ Generated Hugo page: /episodes/${video.episodeNumber}/`);
+	}
 	return true;
 }

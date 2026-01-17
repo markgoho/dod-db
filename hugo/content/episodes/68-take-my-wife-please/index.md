@@ -7,10 +7,14 @@ aliases:
   - /episodes/68/
 tags:
   - Judah
+  - Onan
+  - Tamar
   - Deuteronomy
   - Israel
+  - Ruth
   - Book of Exodus
   - Genesis
+  - Boaz
   - Hebrew Bible
   - Joseph
   - YHWH

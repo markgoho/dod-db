@@ -21,8 +21,10 @@ tags:
   - Christianity
   - Hebrews
   - Josephus
+  - Didache
   - Hebrew Bible
   - Jerusalem
+  - Justin Martyr
   - 2nd Timothy
   - theology
   - 1 Timothy

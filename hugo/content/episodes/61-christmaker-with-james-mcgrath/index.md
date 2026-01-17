@@ -20,6 +20,7 @@ tags:
   - Qumran
   - Book of Isaiah
   - Dead Sea Scrolls
+  - Herodias
   - James McGrath
   - Judaism
   - angel

@@ -11,8 +11,10 @@ tags:
   - Judges
   - YHWH
   - King Saul
+  - Jonathan
   - Judah
   - Philistines
+  - Bathsheba
   - Hebrews
   - Jephthah
   - Samson
