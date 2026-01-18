@@ -36,6 +36,16 @@ tags:
   - Peter
   - Philo of Alexandria
   - Syria
+segments:
+  - "History's Mysteries"
+  - "Who's That?"
+segmentData:
+  - type: historys-mysteries
+    label: "History's Mysteries"
+    startSeconds: 181.819
+  - type: whos-that
+    label: "Who's That?"
+    startSeconds: 2289.967
 draft: false
 ---
 

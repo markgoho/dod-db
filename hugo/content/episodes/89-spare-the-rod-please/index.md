@@ -22,6 +22,16 @@ books:
   - Proverbs
   - Leviticus
   - 1 Corinthians
+segments:
+  - Taking Issue
+  - Chapter and Verse
+segmentData:
+  - type: taking-issue
+    label: Taking Issue
+    startSeconds: 130.017
+  - type: chapter-and-verse
+    label: Chapter and Verse
+    startSeconds: 1514.942
 draft: false
 ---
 

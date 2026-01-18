@@ -110,6 +110,34 @@ export {
   type JobPollingUIConfig,
 } from "./tag-management.js";
 
+// Re-export YouTube player types
+export {
+  YTPlayerState,
+  type YouTubePlayerState,
+  type YTGlobal,
+  type YTPlayer,
+  type YTPlayerEvent,
+  type YTPlayerStateValue,
+} from "./youtube-player-types.js";
+
+// Re-export YouTube player utilities
+export {
+  applyPendingSeek,
+  createInitialPlayerState,
+  createYouTubePlayer,
+  destroyYouTubePlayer,
+  getYouTubeCurrentTime,
+  getYouTubeDuration,
+  isYouTubePlaying,
+  loadYouTubeAPI,
+  pauseYouTube,
+  playYouTube,
+  seekYouTube,
+  startTimePolling,
+  stopTimePolling,
+  type CreateYouTubePlayerOptions,
+} from "./youtube-player.js";
+
 // Import for namespace object
 import {
   fetchSegmentMetadata,
@@ -170,6 +198,22 @@ import {
   getTagCategory,
   getTagVocabEntry,
 } from "./vocabulary.js";
+import {
+  applyPendingSeek,
+  createInitialPlayerState,
+  createYouTubePlayer,
+  destroyYouTubePlayer,
+  getYouTubeCurrentTime,
+  getYouTubeDuration,
+  isYouTubePlaying,
+  loadYouTubeAPI,
+  pauseYouTube,
+  playYouTube,
+  seekYouTube,
+  startTimePolling,
+  stopTimePolling,
+  YTPlayerState,
+} from "./youtube-player.js";
 
 // Export namespace for global access in HTML
 export const DoDTools = {
@@ -251,6 +295,22 @@ export const DoDTools = {
   reprocessTag,
   reprocessAllEpisodes,
   startJobPollingWithUI,
+
+  // YouTube Player
+  YTPlayerState,
+  loadYouTubeAPI,
+  createYouTubePlayer,
+  createInitialPlayerState,
+  startTimePolling,
+  stopTimePolling,
+  seekYouTube,
+  applyPendingSeek,
+  getYouTubeCurrentTime,
+  getYouTubeDuration,
+  playYouTube,
+  pauseYouTube,
+  isYouTubePlaying,
+  destroyYouTubePlayer,
 
   // General
   debounce,

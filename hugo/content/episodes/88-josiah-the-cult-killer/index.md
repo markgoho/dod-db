@@ -37,6 +37,16 @@ books:
   - 2 Kings
   - Deuteronomy
   - Judges
+segments:
+  - Bible Heroes?
+  - Artifacts and Fiction
+segmentData:
+  - type: bible-heroes
+    label: Bible Heroes?
+    startSeconds: 103.574
+  - type: artifacts-and-fiction
+    label: Artifacts and Fiction
+    startSeconds: 2286.38
 draft: false
 ---
 

@@ -1,16 +1,25 @@
 import {
   API_BASE_URL,
+  applyPendingSeek,
+  createInitialPlayerState,
+  createYouTubePlayer,
+  destroyYouTubePlayer,
   escapeHtml,
   formatSecondsToTimestamp,
   formatTimestamp,
+  getYouTubeCurrentTime,
+  getYouTubeDuration,
   parseTimestamp,
   secondsToTimestamp,
+  seekYouTube,
   showToast,
+  startTimePolling,
   timestampToSeconds,
   type Episode,
   type EpisodeSegment,
   type SegmentMetadata,
   type TranscriptLine,
+  type YouTubePlayerState,
 } from "../shared/utilities.js";
 
 // State
@@ -18,7 +27,7 @@ let episodes: Episode[] = [];
 let metadata: SegmentMetadata = { labels: {}, colors: {}, types: [] };
 let selectedEpisode: Episode | undefined;
 let selectedSegmentIndex: number | undefined;
-let audioElement: HTMLAudioElement | undefined;
+let playerState: YouTubePlayerState = createInitialPlayerState();
 let transcriptLines: TranscriptLine[] = [];
 
 // Load data on page load
@@ -28,20 +37,24 @@ async function init(): Promise<void> {
 }
 
 async function loadMetadata(): Promise<void> {
-  const res = await fetch(
+  const response = await fetch(
     `${API_BASE_URL}/api/segment-verification/segment-metadata`,
   );
-  metadata = await res.json();
+  metadata = await response.json();
 }
 
 async function loadEpisodes(): Promise<void> {
-  const res = await fetch(`${API_BASE_URL}/api/segment-verification/episodes`);
-  episodes = await res.json();
+  const response = await fetch(
+    `${API_BASE_URL}/api/segment-verification/episodes`,
+  );
+  episodes = await response.json();
 }
 
 async function loadStats(): Promise<void> {
-  const res = await fetch(`${API_BASE_URL}/api/segment-verification/stats`);
-  const stats = await res.json();
+  const response = await fetch(
+    `${API_BASE_URL}/api/segment-verification/stats`,
+  );
+  const stats = await response.json();
   const totalEpisodesElement = document.querySelector("#total-episodes");
   const totalSegmentsElement = document.querySelector("#total-segments");
   const verifiedCountElement = document.querySelector("#verified-count");
@@ -62,27 +75,27 @@ function renderEpisodeList(): void {
 
   const filter = filterElement.value;
 
-  const filtered = episodes.filter(ep => {
+  const filtered = episodes.filter(episode => {
     if (filter === "all") return true;
     const allVerified =
-      ep.segments?.every(s => s.confidence === "verified") ?? false;
+      episode.segments?.every(s => s.confidence === "verified") ?? false;
     if (filter === "verified") return allVerified;
     if (filter === "needs-review") return !allVerified;
     return true;
   });
 
   listElement.innerHTML = filtered
-    .map(ep => {
-      const segmentCount = ep.segments?.length || 0;
+    .map(episode => {
+      const segmentCount = episode.segments?.length || 0;
       const verifiedCount =
-        ep.segments?.filter(s => s.confidence === "verified").length || 0;
+        episode.segments?.filter(s => s.confidence === "verified").length || 0;
       const allVerified = segmentCount > 0 && verifiedCount === segmentCount;
-      const isActive = selectedEpisode?.videoId === ep.videoId;
+      const isActive = selectedEpisode?.videoId === episode.videoId;
 
       return `
-        <div class="episode-item ${isActive ? "active" : ""}" onclick="selectEpisode('${ep.videoId}')">
-          <div class="ep-number">Episode ${ep.episodeNumber || "?"}</div>
-          <div class="ep-title">${escapeHtml(ep.title)}</div>
+        <div class="episode-item ${isActive ? "active" : ""}" onclick="selectEpisode('${episode.videoId}')">
+          <div class="ep-number">Episode ${episode.episodeNumber || "?"}</div>
+          <div class="ep-title">${escapeHtml(episode.title)}</div>
           <div class="ep-segments">
             ${segmentCount} segments
             <span class="status-badge ${allVerified ? "verified" : "auto"}">
@@ -90,7 +103,7 @@ function renderEpisodeList(): void {
             </span>
           </div>
           <div class="segment-dots">
-            ${(ep.segments || [])
+            ${(episode.segments || [])
               .map(
                 s =>
                   `<div class="segment-dot" style="background: ${metadata.colors[s.type] || "#666"}"></div>`,
@@ -104,13 +117,14 @@ function renderEpisodeList(): void {
 }
 
 async function selectEpisode(videoId: string): Promise<void> {
-  selectedEpisode = episodes.find(ep => ep.videoId === videoId);
+  selectedEpisode = episodes.find(episode => episode.videoId === videoId);
   selectedSegmentIndex = undefined;
 
   if (!selectedEpisode) return;
 
   renderEpisodeList();
   renderContent();
+  await initializeYouTubePlayer();
 }
 
 function renderContent(): void {
@@ -138,18 +152,18 @@ function renderContent(): void {
       <div class="timeline-label">Segment Timeline</div>
       <div class="timeline" id="timeline">
         ${segments
-          .map((seg, i) => {
+          .map((seg, index) => {
             const start = timestampToSeconds(seg.startTimestamp);
             const end = seg.endTimestamp
               ? timestampToSeconds(seg.endTimestamp)
               : totalDuration;
             const left = (start / totalDuration) * 100;
             const width = ((end - start) / totalDuration) * 100;
-            const isActive = i === selectedSegmentIndex;
+            const isActive = index === selectedSegmentIndex;
             return `
             <div class="timeline-segment ${isActive ? "active" : ""}"
                  style="left: ${left}%; width: ${width}%; background: ${metadata.colors[seg.type] || "#666"}"
-                 onclick="selectSegment(${i})"
+                 onclick="selectSegment(${index})"
                  title="${metadata.labels[seg.type] || seg.type}">
               ${metadata.labels[seg.type] || seg.type}
             </div>
@@ -159,12 +173,9 @@ function renderContent(): void {
       </div>
     </div>
 
-    <div class="audio-container">
-      <audio id="audio" controls>
-        <source src="${API_BASE_URL}/api/audio/${selectedEpisode.videoId}" type="audio/webm">
-        Your browser does not support the audio element.
-      </audio>
-      <div class="audio-time">
+    <div class="video-container">
+      <div id="youtube-player-wrapper"></div>
+      <div class="video-time">
         <span id="current-time">00:00:00</span>
         <span id="total-time">--:--:--</span>
       </div>
@@ -175,9 +186,9 @@ function renderContent(): void {
       <div class="segment-list" id="segment-list">
         ${segments
           .map(
-            (seg, i) => `
-          <div class="segment-row ${i === selectedSegmentIndex ? "active" : ""}" data-index="${i}">
-            <select onchange="updateSegmentType(${i}, this.value)">
+            (seg, index) => `
+          <div class="segment-row ${index === selectedSegmentIndex ? "active" : ""}" data-index="${index}">
+            <select onchange="updateSegmentType(${index}, this.value)">
               ${metadata.types
                 .map(
                   type => `
@@ -189,16 +200,16 @@ function renderContent(): void {
                 .join("")}
             </select>
             <input type="text" value="${formatTimestamp(seg.startTimestamp)}"
-                   onchange="updateSegmentStart(${i}, this.value)"
+                   onchange="updateSegmentStart(${index}, this.value)"
                    placeholder="Start">
             <input type="text" value="${seg.endTimestamp ? formatTimestamp(seg.endTimestamp) : ""}"
-                   onchange="updateSegmentEnd(${i}, this.value)"
+                   onchange="updateSegmentEnd(${index}, this.value)"
                    placeholder="End">
             <div>
               <span class="status-badge ${seg.confidence}">${seg.confidence}</span>
             </div>
-            <button class="btn btn-small btn-secondary" onclick="playSegment(${i})">Play</button>
-            <button class="btn btn-small btn-danger" onclick="deleteSegment(${i})">X</button>
+            <button class="btn btn-small btn-secondary" onclick="playSegment(${index})">Play</button>
+            <button class="btn btn-small btn-danger" onclick="deleteSegment(${index})">X</button>
           </div>
         `,
           )
@@ -212,31 +223,63 @@ function renderContent(): void {
     </div>
   `;
 
-  // Setup audio element
-  audioElement = document.querySelector("#audio") as HTMLAudioElement;
-  if (audioElement) {
-    audioElement.addEventListener("timeupdate", updateTimeDisplay);
-    audioElement.addEventListener("loadedmetadata", () => {
-      const totalTimeElement = document.querySelector("#total-time");
-      if (totalTimeElement && audioElement) {
-        totalTimeElement.textContent = secondsToTimestamp(
-          audioElement.duration,
-        );
-      }
-    });
-  }
-
   // Load transcript
   loadTranscript();
+}
+
+async function initializeYouTubePlayer(): Promise<void> {
+  if (!selectedEpisode) return;
+
+  // Destroy existing player if any
+  destroyYouTubePlayer(playerState);
+  playerState = createInitialPlayerState();
+
+  const videoId = selectedEpisode.videoId;
+  playerState.videoId = videoId;
+
+  try {
+    playerState.player = await createYouTubePlayer({
+      containerId: "youtube-player-wrapper",
+      videoId,
+      onReady: (): void => {
+        playerState.isReady = true;
+        playerState.duration = playerState.player?.getDuration() ?? 0;
+
+        // Update total time display
+        const totalTimeElement = document.querySelector("#total-time");
+        if (totalTimeElement) {
+          totalTimeElement.textContent = secondsToTimestamp(
+            playerState.duration,
+          );
+        }
+
+        // Apply any pending seek
+        applyPendingSeek(playerState, false);
+
+        // Start time polling for transcript highlighting
+        startTimePolling(playerState, (currentTime, duration) => {
+          updateTimeDisplay(currentTime);
+          playerState.duration = duration;
+        });
+      },
+      onError: (event): void => {
+        console.error("YouTube player error:", event.data);
+        showToast("Error loading video", "error");
+      },
+    });
+  } catch (error) {
+    console.error("Failed to create YouTube player:", error);
+    showToast("Failed to load video player", "error");
+  }
 }
 
 async function loadTranscript(): Promise<void> {
   if (!selectedEpisode) return;
 
-  const res = await fetch(
+  const response = await fetch(
     `${API_BASE_URL}/api/segment-verification/transcript/${selectedEpisode.videoId}`,
   );
-  const data = await res.json();
+  const data = await response.json();
 
   const transcriptLinesElement = document.querySelector("#transcript-lines");
   if (!transcriptLinesElement) return;
@@ -269,8 +312,8 @@ async function loadTranscript(): Promise<void> {
   // Render transcript (show all lines - virtualization could be added later if needed)
   transcriptLinesElement.innerHTML = transcriptLines
     .map(
-      (line, i) => `
-      <div class="transcript-line" id="tline-${i}" onclick="jumpToTime('${line.timestamp}')">
+      (line, index) => `
+      <div class="transcript-line" id="tline-${index}" onclick="jumpToTime('${line.timestamp}')">
         <span class="timestamp">[${line.timestamp}]</span>
         <span class="speaker">${escapeHtml(line.speaker)}:</span>
         <span class="text">${escapeHtml(line.text)}</span>
@@ -282,58 +325,41 @@ async function loadTranscript(): Promise<void> {
 
 function selectSegment(index: number): void {
   selectedSegmentIndex = index;
-  // Jump audio to segment start and play
+  // Jump video to segment start and play
   const seg = selectedEpisode?.segments?.[index];
-  if (seg && audioElement) {
+  if (seg) {
     const seconds = timestampToSeconds(seg.startTimestamp);
-    audioElement.currentTime = seconds;
-    audioElement.play();
+    seekYouTube(playerState, seconds, true);
   }
-  // Update visual selection without re-rendering (preserves audio state)
+  // Update visual selection without re-rendering (preserves player state)
   updateSegmentSelection();
 }
 
 function updateSegmentSelection(): void {
   // Update timeline segment highlighting
-  for (const [i, element] of document
+  for (const [index, element] of document
     .querySelectorAll(".timeline-segment")
     .entries()) {
-    element.classList.toggle("active", i === selectedSegmentIndex);
+    element.classList.toggle("active", index === selectedSegmentIndex);
   }
   // Update segment row highlighting
-  for (const [i, element] of document
+  for (const [index, element] of document
     .querySelectorAll(".segment-row")
     .entries()) {
-    element.classList.toggle("active", i === selectedSegmentIndex);
+    element.classList.toggle("active", index === selectedSegmentIndex);
   }
-}
-
-function _jumpToSegment(index: number): void {
-  if (!selectedEpisode?.segments) return;
-  const seg = selectedEpisode.segments[index];
-  if (!seg || !audioElement) return;
-
-  const seconds = timestampToSeconds(seg.startTimestamp);
-  audioElement.currentTime = seconds;
-  audioElement.play();
-  selectedSegmentIndex = index;
-  // Don't call renderContent() - it recreates the audio element and resets position
-  updateSegmentSelection();
 }
 
 function playSegment(index: number): void {
-  // Get audio element directly from DOM (more reliable)
-  const audio = document.querySelector("#audio") as HTMLAudioElement | null;
   const seg = selectedEpisode?.segments?.[index];
-  if (!seg || !audio) {
-    console.error("playSegment failed:", { seg, audio, index });
+  if (!seg) {
+    console.error("playSegment failed: segment not found", { index });
     return;
   }
 
   const seconds = timestampToSeconds(seg.startTimestamp);
   console.log("Playing segment", index, "at", seconds, "seconds");
-  audio.currentTime = seconds;
-  audio.play().catch(error => console.error("Play failed:", error));
+  seekYouTube(playerState, seconds, true);
   selectedSegmentIndex = index;
   updateSegmentSelection();
 }
@@ -364,34 +390,30 @@ function deleteSegment(index: number): void {
   segments.splice(index, 1);
   selectedSegmentIndex = undefined;
   renderContent();
+  // Re-initialize player after content render
+  initializeYouTubePlayer();
 }
 
 function jumpToTime(timestamp: string): void {
-  if (!audioElement) return;
   const seconds = timestampToSeconds(`[${timestamp}]`);
   console.log("Jumping to timestamp:", timestamp, "seconds:", seconds);
-  audioElement.currentTime = seconds;
-  audioElement.play();
+  seekYouTube(playerState, seconds, true);
 }
 
-function updateTimeDisplay(): void {
-  if (!audioElement) return;
+function updateTimeDisplay(currentTime: number): void {
   const currentTimeElement = document.querySelector("#current-time");
   if (currentTimeElement) {
-    currentTimeElement.textContent = secondsToTimestamp(
-      audioElement.currentTime,
-    );
+    currentTimeElement.textContent = secondsToTimestamp(currentTime);
   }
 
   // Auto-highlight and scroll transcript
   if (transcriptLines.length === 0) return;
-  const currentTime = audioElement.currentTime;
 
   // Find the most recent line whose timestamp has passed
-  for (let i = transcriptLines.length - 1; i >= 0; i--) {
-    const line = transcriptLines[i];
+  for (let index = transcriptLines.length - 1; index >= 0; index--) {
+    const line = transcriptLines[index];
     if (line && line.seconds <= currentTime) {
-      const lineId = `tline-${i}`;
+      const lineId = `tline-${index}`;
       const currentActive = document.querySelector(".transcript-line.active");
 
       // Only update if different line
@@ -438,18 +460,18 @@ function updateTimeline(): void {
   if (!timeline) return;
 
   timeline.innerHTML = segments
-    .map((seg, i) => {
+    .map((seg, index) => {
       const start = timestampToSeconds(seg.startTimestamp);
       const end = seg.endTimestamp
         ? timestampToSeconds(seg.endTimestamp)
         : totalDuration;
       const left = (start / totalDuration) * 100;
       const width = ((end - start) / totalDuration) * 100;
-      const isActive = i === selectedSegmentIndex;
+      const isActive = index === selectedSegmentIndex;
       return `
         <div class="timeline-segment ${isActive ? "active" : ""}"
              style="left: ${left}%; width: ${width}%; background: ${metadata.colors[seg.type] || "#666"}"
-             onclick="selectSegment(${i})"
+             onclick="selectSegment(${index})"
              title="${metadata.labels[seg.type] || seg.type}">
           ${metadata.labels[seg.type] || seg.type}
         </div>
@@ -486,18 +508,19 @@ function addSegment(): void {
     selectedEpisode.segments = [];
   }
 
-  const currentTime = audioElement?.currentTime || 0;
+  const currentTime = getYouTubeCurrentTime(playerState);
+  const videoDuration = getYouTubeDuration(playerState);
   const newStartTimestamp = formatSecondsToTimestamp(currentTime);
 
   // Find where to insert based on timestamp order
   const segments = selectedEpisode.segments;
   let insertIndex = segments.length; // Default: end of list
 
-  for (const [i, seg] of segments.entries()) {
+  for (const [index, seg] of segments.entries()) {
     if (!seg) continue;
     const segStart = timestampToSeconds(seg.startTimestamp);
     if (currentTime < segStart) {
-      insertIndex = i;
+      insertIndex = index;
       break;
     }
   }
@@ -512,15 +535,13 @@ function addSegment(): void {
   }
 
   // Insert new segment at the correct position
-  // If inserting at end, use audio duration for end timestamp
+  // If inserting at end, use video duration for end timestamp
   const newSegment: EpisodeSegment = {
     type: "main-content",
     startTimestamp: newStartTimestamp,
     endTimestamp:
       segments[insertIndex]?.startTimestamp ||
-      (audioElement?.duration
-        ? formatSecondsToTimestamp(audioElement.duration)
-        : null),
+      (videoDuration > 0 ? formatSecondsToTimestamp(videoDuration) : null),
     confidence: "auto",
     detectionMethod: "manual",
   };
@@ -529,6 +550,9 @@ function addSegment(): void {
   selectedSegmentIndex = insertIndex;
 
   renderContent();
+  // Re-initialize player after content render and seek to the new segment
+  playerState.pendingSeek = currentTime;
+  initializeYouTubePlayer();
 }
 
 async function markAllVerified(): Promise<void> {
@@ -561,6 +585,8 @@ async function markAllVerified(): Promise<void> {
     seg.confidence = "verified";
   }
   renderContent();
+  // Re-initialize player after content render
+  initializeYouTubePlayer();
 }
 
 async function learnPatternFromSegment(seg: EpisodeSegment): Promise<void> {
@@ -594,7 +620,7 @@ async function learnPatternFromSegment(seg: EpisodeSegment): Promise<void> {
   if (!pattern) return; // User cancelled
 
   try {
-    const res = await fetch(
+    const response = await fetch(
       `${API_BASE_URL}/api/segment-verification/patterns/add`,
       {
         method: "POST",
@@ -606,8 +632,8 @@ async function learnPatternFromSegment(seg: EpisodeSegment): Promise<void> {
       },
     );
 
-    const data = await res.json();
-    if (!res.ok) {
+    const data = await response.json();
+    if (!response.ok) {
       throw new Error(data.error || "Failed to add pattern");
     }
 
@@ -621,7 +647,7 @@ async function saveSegments(): Promise<void> {
   if (!selectedEpisode) return;
 
   try {
-    const res = await fetch(
+    const response = await fetch(
       `${API_BASE_URL}/api/segment-verification/segments/${selectedEpisode.videoId}`,
       {
         method: "PUT",
@@ -630,8 +656,8 @@ async function saveSegments(): Promise<void> {
       },
     );
 
-    if (!res.ok) {
-      const error = await res.json();
+    if (!response.ok) {
+      const error = await response.json();
       throw new Error(error.error || "Failed to save");
     }
 

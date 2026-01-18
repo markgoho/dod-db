@@ -15175,79 +15175,16 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:07:58.120]",
-        "confidence": "auto",
+        "endTimestamp": "[00:02:43.000]",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
-        "type": "segment",
-        "startTimestamp": "[00:07:58.120]",
-        "endTimestamp": "[00:08:05.803]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:08:05.803]",
-        "endTimestamp": "[00:08:19.284]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:08:19.284]",
-        "endTimestamp": "[00:12:22.520]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "getting-demonic",
-        "startTimestamp": "[00:12:22.520]",
-        "endTimestamp": "[00:16:28.993]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:16:28.993]",
-        "endTimestamp": "[00:18:01.180]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:18:01.180]",
-        "endTimestamp": "[00:29:02.730]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:29:02.730]",
-        "endTimestamp": "[00:29:12.367]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:29:12.367]",
-        "endTimestamp": "[00:29:29.042]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:29:29.042]",
-        "endTimestamp": "[00:51:55.822]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:51:55.822]",
+        "type": "main-content",
+        "startTimestamp": "[00:02:43.000]",
         "endTimestamp": "[00:59:05.981]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ],
     "speakers": [
@@ -15587,21 +15524,21 @@
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:03:01.819]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
-        "type": "segment",
+        "type": "historys-mysteries",
         "startTimestamp": "[00:03:01.819]",
         "endTimestamp": "[00:38:09.967]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
-        "type": "segment",
+        "type": "whos-that",
         "startTimestamp": "[00:38:09.967]",
         "endTimestamp": "[01:01:48.121]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       }
     ],
@@ -15744,170 +15681,16 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:05:25.618]",
-        "confidence": "auto",
+        "endTimestamp": "[00:02:27.000]",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:05:25.618]",
-        "endTimestamp": "[00:10:31.032]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:10:31.032]",
-        "endTimestamp": "[00:11:20.204]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "what-does-that-mean",
-        "startTimestamp": "[00:11:20.204]",
-        "endTimestamp": "[00:12:10.908]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "watch-your-language",
-        "startTimestamp": "[00:12:10.908]",
-        "endTimestamp": "[00:15:23.471]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "watch-your-language",
-        "startTimestamp": "[00:15:23.471]",
-        "endTimestamp": "[00:16:29.428]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:16:29.428]",
-        "endTimestamp": "[00:17:25.228]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:17:25.228]",
-        "endTimestamp": "[00:18:14.440]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "watch-your-language",
-        "startTimestamp": "[00:18:14.440]",
-        "endTimestamp": "[00:24:03.654]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:24:03.654]",
-        "endTimestamp": "[00:26:46.229]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:26:46.229]",
-        "endTimestamp": "[00:27:33.552]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:27:33.552]",
-        "endTimestamp": "[00:27:39.535]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:27:39.535]",
-        "endTimestamp": "[00:30:54.952]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:30:54.952]",
-        "endTimestamp": "[00:33:32.735]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:33:32.735]",
-        "endTimestamp": "[00:34:14.671]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:34:14.671]",
-        "endTimestamp": "[00:37:19.859]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:37:19.859]",
-        "endTimestamp": "[00:38:03.716]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:38:03.716]",
-        "endTimestamp": "[00:39:20.597]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:39:20.597]",
-        "endTimestamp": "[00:46:54.941]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:46:54.941]",
-        "endTimestamp": "[00:50:11.223]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:50:11.223]",
-        "endTimestamp": "[00:54:46.705]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:54:46.705]",
-        "endTimestamp": "[00:55:41.369]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:55:41.369]",
-        "endTimestamp": "[00:58:06.430]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "advertisement",
-        "startTimestamp": "[00:58:06.430]",
-        "endTimestamp": "[00:59:49.361]",
-        "confidence": "auto",
-        "detectionMethod": "pattern"
+        "type": "main-content",
+        "startTimestamp": "[00:02:27.000]",
+        "endTimestamp": "[00:59:50.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ],
     "speakers": [
@@ -16061,21 +15844,21 @@
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:01:43.574]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
         "type": "bible-heroes",
         "startTimestamp": "[00:01:43.574]",
         "endTimestamp": "[00:38:06.380]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "llm"
       },
       {
-        "type": "segment",
+        "type": "artifacts-and-fiction",
         "startTimestamp": "[00:38:06.380]",
         "endTimestamp": "[00:54:11.901]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       }
     ],
@@ -16169,21 +15952,21 @@
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
         "endTimestamp": "[00:02:10.017]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
-        "type": "segment",
+        "type": "taking-issue",
         "startTimestamp": "[00:02:10.017]",
         "endTimestamp": "[00:25:14.942]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
-        "type": "segment",
+        "type": "chapter-and-verse",
         "startTimestamp": "[00:25:14.942]",
         "endTimestamp": "[00:50:45.861]",
-        "confidence": "auto",
+        "confidence": "verified",
         "detectionMethod": "audio"
       }
     ],
@@ -16322,191 +16105,16 @@
       {
         "type": "intro",
         "startTimestamp": "[00:00:00.000]",
-        "endTimestamp": "[00:05:02.588]",
-        "confidence": "auto",
+        "endTimestamp": "[00:03:49.000]",
+        "confidence": "verified",
         "detectionMethod": "audio"
       },
       {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:05:02.588]",
-        "endTimestamp": "[00:11:04.230]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:11:04.230]",
-        "endTimestamp": "[00:18:13.133]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:18:13.133]",
-        "endTimestamp": "[00:19:22.161]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:19:22.161]",
-        "endTimestamp": "[00:20:07.144]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "what-does-that-mean",
-        "startTimestamp": "[00:20:07.144]",
-        "endTimestamp": "[00:23:28.309]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:23:28.309]",
-        "endTimestamp": "[00:24:02.796]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:24:02.796]",
-        "endTimestamp": "[00:24:40.484]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:24:40.484]",
-        "endTimestamp": "[00:27:33.710]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:27:33.710]",
-        "endTimestamp": "[00:29:58.884]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "taking-issue",
-        "startTimestamp": "[00:29:58.884]",
-        "endTimestamp": "[00:31:02.890]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:31:02.890]",
-        "endTimestamp": "[00:31:17.529]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "taking-issue",
-        "startTimestamp": "[00:31:17.529]",
-        "endTimestamp": "[00:31:27.383]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "taking-issue",
-        "startTimestamp": "[00:31:27.383]",
-        "endTimestamp": "[00:32:14.755]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:32:14.755]",
-        "endTimestamp": "[00:33:41.651]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:33:41.651]",
-        "endTimestamp": "[00:34:50.783]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:34:50.783]",
-        "endTimestamp": "[00:36:14.002]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:36:14.002]",
-        "endTimestamp": "[00:36:51.191]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:36:51.191]",
-        "endTimestamp": "[00:40:09.451]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:40:09.451]",
-        "endTimestamp": "[00:42:57.772]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:42:57.772]",
-        "endTimestamp": "[00:46:05.630]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:46:05.630]",
-        "endTimestamp": "[00:46:52.497]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:46:52.497]",
-        "endTimestamp": "[00:47:26.484]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:47:26.484]",
-        "endTimestamp": "[00:47:42.292]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:47:42.292]",
-        "endTimestamp": "[00:52:57.692]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
-      },
-      {
-        "type": "segment",
-        "startTimestamp": "[00:52:57.692]",
-        "endTimestamp": "[00:55:30.610]",
-        "confidence": "auto",
-        "detectionMethod": "audio"
-      },
-      {
-        "type": "bible-vs-bible",
-        "startTimestamp": "[00:55:30.610]",
-        "endTimestamp": "[01:00:58.561]",
-        "confidence": "auto",
-        "detectionMethod": "llm"
+        "type": "main-content",
+        "startTimestamp": "[00:03:49.000]",
+        "endTimestamp": "[01:00:59.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
       }
     ],
     "speakers": [
