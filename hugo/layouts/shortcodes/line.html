@@ -27,9 +27,18 @@
   {{- $lineIdRaw := printf "t-%.3f" $totalSeconds -}}
   {{- $lineId := replace $lineIdRaw "." "-" -}}
 
-  <article class="transcript-line" id="{{ $lineId }}" data-start="{{ $totalSeconds }}" data-speaker="{{ $speakerSlug }}">
-    <span class="speaker-name" data-speaker="{{ $speakerSlug }}">{{ $speaker }}</span>
-    <span class="timestamp" data-seconds="{{ $totalSeconds }}">{{ $hours }}:{{ $minutes }}:{{ $seconds }}</span>
+
+  <article
+    class="transcript-line"
+    id="{{ $lineId }}"
+    data-start="{{ $totalSeconds }}"
+    data-speaker="{{ $speakerSlug }}">
+    <span class="speaker-name" data-speaker="{{ $speakerSlug }}"
+      >{{ $speaker }}</span
+    >
+    <span class="timestamp" data-seconds="{{ $totalSeconds }}"
+      >{{ $hours }}:{{ $minutes }}:{{ $seconds }}</span
+    >
     <p class="transcript-text">{{ $text | safeHTML }}</p>
   </article>
 {{- else -}}

@@ -3040,6 +3040,464 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
     addedInEpisode: 82,
   },
+  {
+    canonical: "psalm",
+    variations: ["psalms", "psalmist"],
+    category: "literature",
+    description:
+      "A sacred song or hymn, especially one of those contained in the biblical Book of Psalms",
+    status: "proposed",
+    addedInEpisode: 83,
+  },
+  {
+    canonical: "mark",
+    variations: ["Gospel of Mark"],
+    category: "literature",
+    description:
+      "The second book of the New Testament, one of the Synoptic Gospels",
+    status: "proposed",
+    addedInEpisode: 83,
+  },
+  {
+    canonical: "elisha",
+    variations: ["elias"],
+    category: "character",
+    description: "A prophet in the Hebrew Bible, successor to Elijah",
+    status: "proposed",
+    addedInEpisode: 83,
+  },
+  {
+    canonical: "church of the holy sepulcher",
+    variations: ["holy sepulcher"],
+    category: "place",
+    description:
+      "A church located in the Christian Quarter of the Old City of Jerusalem, considered one of the holiest sites in Christianity",
+    status: "proposed",
+    addedInEpisode: 83,
+  },
+  {
+    canonical: "garden tomb",
+    variations: ["garden tomb association", "Gordon's Calvary"],
+    category: "place",
+    description:
+      "A rock-cut tomb in Jerusalem, proposed by some as the site of Jesus' burial and resurrection",
+    status: "proposed",
+    addedInEpisode: 83,
+  },
+  {
+    canonical: "constantine",
+    variations: [],
+    category: "person",
+    description:
+      "Roman Emperor who legalized Christianity in the 4th century CE",
+    status: "proposed",
+    addedInEpisode: 83,
+  },
+  {
+    canonical: "new testament",
+    variations: ["nt"],
+    category: "literature",
+    description:
+      "The second major part of the Christian biblical canon, comprising 27 books",
+    status: "proposed",
+    addedInEpisode: 84,
+  },
+  {
+    canonical: "daimon",
+    variations: ["daimons"],
+    category: "theology",
+    description:
+      "A Greek term for a divine power or spirit, not necessarily evil, but influential",
+    status: "proposed",
+    addedInEpisode: 84,
+  },
+  {
+    canonical: "daimonia",
+    variations: ["daimoniois"],
+    category: "theology",
+    description:
+      "Plural form of 'daimonion' in Greek, referring to a multitude of divine powers or spirits",
+    status: "proposed",
+    addedInEpisode: 84,
+  },
+  {
+    canonical: "jubilees",
+    variations: [],
+    category: "literature",
+    description:
+      "An ancient Jewish religious work of 50 chapters, considered canonical by Ethiopian Orthodox Church",
+    status: "proposed",
+    addedInEpisode: 84,
+  },
+  {
+    canonical: "beelzebul",
+    variations: ["beelzebub"],
+    category: "character",
+    description:
+      "A name for the devil, possibly derived from Baal-Zebub, meaning 'Lord of the Flies'",
+    status: "proposed",
+    addedInEpisode: 84,
+  },
+  {
+    canonical: "Logan Williams",
+    variations: ["Logan"],
+    category: "person",
+    description:
+      "Kirby Laing Research Fellow in New Testament at Aberdeen in Scotland, guest on Data Over Dogma",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "New Testament Studies",
+    variations: [],
+    category: "literature",
+    description:
+      "Academic journal for biblical scholarship, where Logan Williams published his article",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "Scotland",
+    variations: [],
+    category: "place",
+    description:
+      "Country in northwest Europe; Logan Williams is a Research Fellow in Aberdeen, Scotland",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "Aberdeen",
+    variations: [],
+    category: "place",
+    description: "City in Scotland where Logan Williams is a Research Fellow",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "kosher laws",
+    variations: ["kashrut"],
+    category: "theology",
+    description:
+      "Dietary rules in Judaism concerning which foods may be eaten and how they must be prepared",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "Mark 7",
+    variations: ["Mark, chapter seven"],
+    category: "literature",
+    description:
+      "Chapter 7 of the Gospel of Mark, discusses purity laws and traditions of the elders",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "purity laws",
+    variations: ["purity ideas"],
+    category: "theology",
+    description:
+      "Jewish regulations concerning ritual purity and impurity, involve practices of cleansing and separation",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "Matt Thiessen",
+    variations: ["Thiessen"],
+    category: "person",
+    description: "Biblical scholar who wrote 'Jesus and the Forces of Death'",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "ritual impurity",
+    variations: ["impurity"],
+    category: "theology",
+    description:
+      "Religious concept of uncleanness that can be transmitted and ameliorated through ritual actions",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "Leviticus 11",
+    variations: [],
+    category: "literature",
+    description:
+      "Chapter 11 of Leviticus, containing laws about clean and unclean animals",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "Westcott and Hort",
+    variations: ["Hort", "Westcott"],
+    category: "person",
+    description:
+      "Two 19th-century biblical scholars who produced a critical edition of the Greek New Testament",
+    status: "proposed",
+    addedInEpisode: 85,
+  },
+  {
+    canonical: "Horus",
+    variations: ["Ra Horakhty"],
+    category: "character",
+    description:
+      "Egyptian sky god, sometimes conflated with Ra as Ra Horakhty (sun god)",
+    status: "proposed",
+    addedInEpisode: 86,
+  },
+  {
+    canonical: "Dionysus",
+    variations: ["Dionysian"],
+    category: "character",
+    description: "Greek god of wine, fertility, theatre, and religious ecstasy",
+    status: "proposed",
+    addedInEpisode: 86,
+  },
+  {
+    canonical: "Flavius Josephus",
+    variations: ["Josephus", "Flavius"],
+    category: "person",
+    description:
+      "Jewish historian who lived in the 1st century CE and wrote about the history of the Jewish people and the Jewish-Roman War",
+    status: "proposed",
+    addedInEpisode: 86,
+  },
+  {
+    canonical: "Testimonium Flavianum",
+    variations: ["Testimonium"],
+    category: "literature",
+    description:
+      "A passage in Josephus's Antiquities of the Jews that discusses Jesus, widely considered to be at least partially a Christian interpolation",
+    status: "proposed",
+    addedInEpisode: 86,
+  },
+  {
+    canonical: "Winter solstice",
+    variations: ["solstice"],
+    category: "event",
+    description:
+      "The day of the year with the fewest hours of sunlight, marking the sun's southernmost point",
+    status: "proposed",
+    addedInEpisode: 86,
+  },
+  {
+    canonical: "Mithra",
+    variations: ["Mithras"],
+    category: "character",
+    description: "God of Zoroastrianism, later popular in the Roman Empire",
+    status: "proposed",
+    addedInEpisode: 86,
+  },
+  {
+    canonical: "Krishna",
+    variations: [],
+    category: "character",
+    description: "Major deity in Hinduism",
+    status: "proposed",
+    addedInEpisode: 86,
+  },
+  {
+    canonical: "Attis",
+    variations: [],
+    category: "character",
+    description: "Phrygian consort of Cybele",
+    status: "proposed",
+    addedInEpisode: 86,
+  },
+  {
+    canonical: "Nazareth",
+    variations: ["Nazarene"],
+    category: "place",
+    description:
+      "Town in Galilee where Jesus grew up, often associated with his identity",
+    status: "proposed",
+    addedInEpisode: 87,
+  },
+  {
+    canonical: "Magi",
+    variations: ["Magi's"],
+    category: "character",
+    description:
+      "Wise men who visited Jesus after his birth, bringing gifts and paying homage",
+    status: "proposed",
+    addedInEpisode: 87,
+  },
+  {
+    canonical: "Shepherds",
+    variations: [],
+    category: "character",
+    description:
+      "Figures who were visited by angels and told of Jesus' birth in the Gospel of Luke",
+    status: "proposed",
+    addedInEpisode: 87,
+  },
+  {
+    canonical: "Second Kings",
+    variations: ["2 Kings", "Kings"],
+    category: "literature",
+    description:
+      "Book in the Hebrew Bible/Old Testament that describes the history of the Israelite kingdoms",
+    status: "proposed",
+    addedInEpisode: 88,
+  },
+  {
+    canonical: "Chronicles",
+    variations: [],
+    category: "literature",
+    description:
+      "Books in the Hebrew Bible retelling the history of ancient Israel and Judah",
+    status: "proposed",
+    addedInEpisode: 88,
+  },
+  {
+    canonical: "Book of the Law",
+    variations: [],
+    category: "literature",
+    description:
+      "A scroll discovered in the Temple during Josiah's reign, traditionally identified with Deuteronomy",
+    status: "proposed",
+    addedInEpisode: 88,
+  },
+  {
+    canonical: "Wadi Kidron",
+    variations: [],
+    category: "place",
+    description:
+      "Valley east of Jerusalem, mentioned in connection with Josiah's reforms",
+    status: "proposed",
+    addedInEpisode: 88,
+  },
+  {
+    canonical: "People of Judah",
+    variations: [],
+    category: "people",
+    description: "Inhabitants of the kingdom of Judah",
+    status: "proposed",
+    addedInEpisode: 88,
+  },
+  {
+    canonical: "First Temple period",
+    variations: [],
+    category: "event",
+    description:
+      "The time period in Israelite history from the building of Solomon's Temple until its destruction by the Babylonians",
+    status: "proposed",
+    addedInEpisode: 88,
+  },
+  {
+    canonical: "Deuteronomistic",
+    variations: [],
+    category: "scholarship",
+    description:
+      "Relating to the Deuteronomistic History, a scholarly construct describing a series of books sharing a common theological perspective",
+    status: "proposed",
+    addedInEpisode: 88,
+  },
+  {
+    canonical: "Proverbs",
+    variations: [],
+    category: "literature",
+    description:
+      "A book of wisdom literature in the Hebrew Bible, traditionally attributed to King Solomon",
+    status: "proposed",
+    addedInEpisode: 89,
+  },
+  {
+    canonical: "wisdom",
+    variations: [],
+    category: "theology",
+    description:
+      "The quality of having experience, knowledge, and good judgment; the ability to apply knowledge.",
+    status: "proposed",
+    addedInEpisode: 89,
+  },
+  {
+    canonical: "first corinthians",
+    variations: ["1 corinthians", "first corinthians 5", "1 corinthians 5"],
+    category: "literature",
+    description:
+      "A letter from the Apostle Paul to the church in Corinth, addressing various issues.",
+    status: "proposed",
+    addedInEpisode: 89,
+  },
+  {
+    canonical: "flesh",
+    variations: [],
+    category: "theology",
+    description: "The physical body, often contrasted with the spirit or soul.",
+    status: "proposed",
+    addedInEpisode: 89,
+  },
+  {
+    canonical: "universalism",
+    variations: [],
+    category: "theology",
+    description:
+      "The theological belief that all people will ultimately be saved.",
+    status: "proposed",
+    addedInEpisode: 89,
+  },
+  {
+    canonical: "eisegesis",
+    variations: ["eisegesis'"],
+    category: "scholarship",
+    description:
+      "The interpretation of a text by reading one's own ideas into it",
+    status: "proposed",
+    addedInEpisode: 90,
+  },
+  {
+    canonical: "exegesis",
+    variations: ["exegesis'"],
+    category: "scholarship",
+    description:
+      "Critical explanation or interpretation of a text, especially of scripture.",
+    status: "proposed",
+    addedInEpisode: 90,
+  },
+  {
+    canonical: "genesis 3",
+    variations: ["Genesis 3"],
+    category: "literature",
+    description:
+      "The third chapter of the Book of Genesis, detailing the temptation and fall of Adam and Eve.",
+    status: "proposed",
+    addedInEpisode: 90,
+  },
+  {
+    canonical: "genesis 4",
+    variations: ["Genesis 4"],
+    category: "literature",
+    description:
+      "The fourth chapter of the Book of Genesis, recounting the stories of Cain and Abel, and the early generations after them.",
+    status: "proposed",
+    addedInEpisode: 90,
+  },
+  {
+    canonical: "genesis 5",
+    variations: ["Genesis 5"],
+    category: "literature",
+    description:
+      "The fifth chapter of the Book of Genesis, which details the genealogy from Adam to Noah.",
+    status: "proposed",
+    addedInEpisode: 90,
+  },
+  {
+    canonical: "adam and eve",
+    variations: ["Adam and Eve"],
+    category: "character",
+    description: "The first man and woman in the Bible, according to Genesis.",
+    status: "proposed",
+    addedInEpisode: 90,
+  },
+  {
+    canonical: "abel",
+    variations: ["Abel"],
+    category: "character",
+    description:
+      "The son of Adam and Eve who was murdered by his brother Cain.",
+    status: "proposed",
+    addedInEpisode: 90,
+  },
 ];
 
 /**

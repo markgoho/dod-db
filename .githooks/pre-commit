@@ -10,9 +10,14 @@ fi
 
 echo "Running Prettier and ESLint on staged files..."
 
-# Run Prettier check
+# Run Prettier to format files
 echo "$STAGED_FILES" | xargs bunx prettier --write --ignore-unknown
 PRETTIER_EXIT=$?
+
+# Re-add formatted files to staging so the formatted versions are committed
+if [ $PRETTIER_EXIT -eq 0 ]; then
+  echo "$STAGED_FILES" | xargs git add
+fi
 
 # Run ESLint
 echo "$STAGED_FILES" | xargs bunx eslint

@@ -3,9 +3,9 @@ title: Will the Best Bible Please Stand Up?
 date: 2023-06-19T00:00:00.000Z
 episodeNumber: 11
 videoId: DD7Kkzh2kzg
-aliases: 
+aliases:
   - /episodes/11/
-tags: 
+tags:
   - Septuagint
   - King James Version
   - biblical canon
@@ -53,7 +53,7 @@ tags:
   - Sarah
   - Syria
   - The Reformation
-books: 
+books:
   - John
   - Matthew
   - Mark

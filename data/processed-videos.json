@@ -14891,5 +14891,1736 @@
     ],
     "episodeNumber": 82,
     "scriptures": []
+  },
+  {
+    "videoId": "vZqmxICxUh8",
+    "title": "Episode 83 (November 4, 2024), \"The God-Forsaken Psalm\"",
+    "publishedAt": "2024-11-04T00:00:00Z",
+    "processedAt": "2026-01-18T16:40:55.217Z",
+    "transcriptPath": "data/transcripts/2024-11-04-episode-83-november-4-2024-the-god-forsaken-psalm.txt",
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 41
+      },
+      {
+        "tag": "King David",
+        "mentions": 17
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 13
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 10
+      },
+      {
+        "tag": "Elijah",
+        "mentions": 6
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 5
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 3
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 3
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 3
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "John",
+        "mentions": 2
+      },
+      {
+        "tag": "Luke",
+        "mentions": 2
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 2
+      },
+      {
+        "tag": "Bel and the Dragon",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:05:10.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:05:10.000]",
+        "endTimestamp": "[00:36:44.465]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "artifacts-and-fiction",
+        "startTimestamp": "[00:36:44.465]",
+        "endTimestamp": "[00:58:03.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[00:58:03.000]",
+        "endTimestamp": "[00:59:01.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
+    ],
+    "episodeNumber": 83,
+    "scriptures": [
+      {
+        "book": "Psalms",
+        "references": [
+          "Psalms 21",
+          "Psalms 22",
+          "Psalms 82"
+        ],
+        "mentions": 16
+      }
+    ]
+  },
+  {
+    "videoId": "-C1AFxpKb2U",
+    "title": "Episode 84 (November 11, 2024), \"The Demon Haunted Bible\"",
+    "publishedAt": "2024-11-11T00:00:00Z",
+    "processedAt": "2026-01-18T16:44:38.019Z",
+    "transcriptPath": "data/transcripts/2024-11-11-episode-84-november-11-2024-the-demon-haunted-bible.txt",
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 13
+      },
+      {
+        "tag": "angel",
+        "mentions": 10
+      },
+      {
+        "tag": "Hell",
+        "mentions": 8
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 5
+      },
+      {
+        "tag": "Mesopotamian",
+        "mentions": 5
+      },
+      {
+        "tag": "Satan",
+        "mentions": 5
+      },
+      {
+        "tag": "Baal",
+        "mentions": 3
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 3
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 3
+      },
+      {
+        "tag": "Peter",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "King Saul",
+        "mentions": 2
+      },
+      {
+        "tag": "Luke",
+        "mentions": 2
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 2
+      },
+      {
+        "tag": "Nephilim",
+        "mentions": 2
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "Africa",
+        "mentions": 1
+      },
+      {
+        "tag": "Balaam",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "El",
+        "mentions": 1
+      },
+      {
+        "tag": "etiology",
+        "mentions": 1
+      },
+      {
+        "tag": "Gabriel",
+        "mentions": 1
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Herod Antipas",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Michael",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 1
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Sheol",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:07:58.120]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:07:58.120]",
+        "endTimestamp": "[00:08:05.803]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:08:05.803]",
+        "endTimestamp": "[00:08:19.284]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:08:19.284]",
+        "endTimestamp": "[00:12:22.520]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "getting-demonic",
+        "startTimestamp": "[00:12:22.520]",
+        "endTimestamp": "[00:16:28.993]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:16:28.993]",
+        "endTimestamp": "[00:18:01.180]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:18:01.180]",
+        "endTimestamp": "[00:29:02.730]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:29:02.730]",
+        "endTimestamp": "[00:29:12.367]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:29:12.367]",
+        "endTimestamp": "[00:29:29.042]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:29:29.042]",
+        "endTimestamp": "[00:51:55.822]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:51:55.822]",
+        "endTimestamp": "[00:59:05.981]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
+    ],
+    "episodeNumber": 84,
+    "scriptures": [
+      {
+        "book": "Luke",
+        "references": [
+          "Luke 8"
+        ],
+        "mentions": 2
+      },
+      {
+        "book": "Matthew",
+        "references": [
+          "Matthew 9",
+          "Matthew 15:22"
+        ],
+        "mentions": 2
+      },
+      {
+        "book": "Genesis",
+        "references": [
+          "Genesis 6"
+        ],
+        "mentions": 1
+      },
+      {
+        "book": "2 Peter",
+        "references": [
+          "2 Peter 2"
+        ],
+        "mentions": 1
+      },
+      {
+        "book": "Deuteronomy",
+        "references": [
+          "Deuteronomy 32"
+        ],
+        "mentions": 1
+      },
+      {
+        "book": "Psalms",
+        "references": [
+          "Psalms 106:37"
+        ],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "ueEDfCqjPYs",
+    "title": "Episode 85 (November 18, 2024), \"Purify This!\" With Logan Williams",
+    "publishedAt": "2024-11-18T00:00:00Z",
+    "processedAt": "2026-01-18T16:48:10.876Z",
+    "transcriptPath": "data/transcripts/2024-11-18-episode-85-november-18-2024-purify-this-with-logan-williams.txt",
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 38
+      },
+      {
+        "tag": "Torah",
+        "mentions": 37
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 24
+      },
+      {
+        "tag": "Second Temple period",
+        "mentions": 12
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 9
+      },
+      {
+        "tag": "Textus Receptus",
+        "mentions": 7
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 5
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 5
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 4
+      },
+      {
+        "tag": "Josephus",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "circumcision",
+        "mentions": 1
+      },
+      {
+        "tag": "Essenes",
+        "mentions": 1
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Judeans",
+        "mentions": 1
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 1
+      },
+      {
+        "tag": "Talmud",
+        "mentions": 1
+      }
+    ],
+    "segments": [],
+    "speakers": [
+      "Logan Williams",
+      "Dan Beecher",
+      "Dan McClellan"
+    ],
+    "episodeNumber": 85,
+    "scriptures": [
+      {
+        "book": "Leviticus",
+        "references": [
+          "Leviticus 11",
+          "Leviticus 11:43",
+          "Leviticus 12",
+          "Leviticus 17",
+          "Leviticus 17:15",
+          "Leviticus 22:8"
+        ],
+        "mentions": 19
+      },
+      {
+        "book": "Mark",
+        "references": [
+          "Mark 7",
+          "Mark 7:18-19",
+          "Mark 7:19"
+        ],
+        "mentions": 6
+      },
+      {
+        "book": "Deuteronomy",
+        "references": [
+          "Deuteronomy 14:1",
+          "Deuteronomy 14:21",
+          "Deuteronomy 21",
+          "Deuteronomy 23"
+        ],
+        "mentions": 5
+      },
+      {
+        "book": "Isaiah",
+        "references": [
+          "Isaiah 28"
+        ],
+        "mentions": 1
+      },
+      {
+        "book": "Psalms",
+        "references": [
+          "Psalms 103"
+        ],
+        "mentions": 1
+      },
+      {
+        "book": "Numbers",
+        "references": [
+          "Numbers 19"
+        ],
+        "mentions": 1
+      },
+      {
+        "book": "Acts",
+        "references": [
+          "Acts 15"
+        ],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "Z-9XhhrGN6w",
+    "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\"",
+    "publishedAt": "2024-11-25T00:00:00Z",
+    "processedAt": "2026-01-18T16:52:02.172Z",
+    "transcriptPath": "data/transcripts/2024-11-25-episode-86-november-25-2024-debunking-jesus.txt",
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 64
+      },
+      {
+        "tag": "Josephus",
+        "mentions": 27
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 9
+      },
+      {
+        "tag": "Romans",
+        "mentions": 6
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 5
+      },
+      {
+        "tag": "James",
+        "mentions": 3
+      },
+      {
+        "tag": "John",
+        "mentions": 3
+      },
+      {
+        "tag": "King David",
+        "mentions": 3
+      },
+      {
+        "tag": "Pontius Pilate",
+        "mentions": 3
+      },
+      {
+        "tag": "baptism",
+        "mentions": 2
+      },
+      {
+        "tag": "forgery",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "Judeans",
+        "mentions": 2
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 2
+      },
+      {
+        "tag": "Monotheism",
+        "mentions": 2
+      },
+      {
+        "tag": "Persia",
+        "mentions": 2
+      },
+      {
+        "tag": "Africa",
+        "mentions": 1
+      },
+      {
+        "tag": "Baal",
+        "mentions": 1
+      },
+      {
+        "tag": "Egyptians",
+        "mentions": 1
+      },
+      {
+        "tag": "Essenes",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Herod the Great",
+        "mentions": 1
+      },
+      {
+        "tag": "John the Baptist",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Passover",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 1
+      },
+      {
+        "tag": "Syria",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:01.819]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:03:01.819]",
+        "endTimestamp": "[00:38:09.967]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:38:09.967]",
+        "endTimestamp": "[01:01:48.121]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ],
+    "episodeNumber": 86,
+    "scriptures": []
+  },
+  {
+    "videoId": "UNTBSfnu4Rs",
+    "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\"",
+    "publishedAt": "2024-12-02T00:00:00Z",
+    "processedAt": "2026-01-18T16:55:28.160Z",
+    "transcriptPath": "data/transcripts/2024-12-02-episode-87-december-2-2024-the-dans-ruin-christmas.txt",
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 52
+      },
+      {
+        "tag": "Bethlehem",
+        "mentions": 21
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 17
+      },
+      {
+        "tag": "angel",
+        "mentions": 12
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 12
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 11
+      },
+      {
+        "tag": "King David",
+        "mentions": 8
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 7
+      },
+      {
+        "tag": "John the Baptist",
+        "mentions": 6
+      },
+      {
+        "tag": "Paul",
+        "mentions": 6
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 6
+      },
+      {
+        "tag": "Gabriel",
+        "mentions": 5
+      },
+      {
+        "tag": "Gospel of James",
+        "mentions": 5
+      },
+      {
+        "tag": "Elizabeth",
+        "mentions": 3
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 3
+      },
+      {
+        "tag": "Herod the Great",
+        "mentions": 3
+      },
+      {
+        "tag": "Syria",
+        "mentions": 3
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 2
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 1
+      },
+      {
+        "tag": "baptism",
+        "mentions": 1
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 1
+      },
+      {
+        "tag": "James McGrath",
+        "mentions": 1
+      },
+      {
+        "tag": "Josephus",
+        "mentions": 1
+      },
+      {
+        "tag": "Romans",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:05:25.618]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:05:25.618]",
+        "endTimestamp": "[00:10:31.032]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:10:31.032]",
+        "endTimestamp": "[00:11:20.204]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:11:20.204]",
+        "endTimestamp": "[00:12:10.908]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "watch-your-language",
+        "startTimestamp": "[00:12:10.908]",
+        "endTimestamp": "[00:15:23.471]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "watch-your-language",
+        "startTimestamp": "[00:15:23.471]",
+        "endTimestamp": "[00:16:29.428]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:16:29.428]",
+        "endTimestamp": "[00:17:25.228]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:17:25.228]",
+        "endTimestamp": "[00:18:14.440]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "watch-your-language",
+        "startTimestamp": "[00:18:14.440]",
+        "endTimestamp": "[00:24:03.654]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:24:03.654]",
+        "endTimestamp": "[00:26:46.229]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:26:46.229]",
+        "endTimestamp": "[00:27:33.552]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:27:33.552]",
+        "endTimestamp": "[00:27:39.535]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:27:39.535]",
+        "endTimestamp": "[00:30:54.952]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:30:54.952]",
+        "endTimestamp": "[00:33:32.735]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:33:32.735]",
+        "endTimestamp": "[00:34:14.671]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:34:14.671]",
+        "endTimestamp": "[00:37:19.859]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:37:19.859]",
+        "endTimestamp": "[00:38:03.716]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:38:03.716]",
+        "endTimestamp": "[00:39:20.597]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:39:20.597]",
+        "endTimestamp": "[00:46:54.941]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:46:54.941]",
+        "endTimestamp": "[00:50:11.223]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:50:11.223]",
+        "endTimestamp": "[00:54:46.705]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:54:46.705]",
+        "endTimestamp": "[00:55:41.369]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:55:41.369]",
+        "endTimestamp": "[00:58:06.430]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "advertisement",
+        "startTimestamp": "[00:58:06.430]",
+        "endTimestamp": "[00:59:49.361]",
+        "confidence": "auto",
+        "detectionMethod": "pattern"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ],
+    "episodeNumber": 87,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": [
+          "Isaiah 7:14",
+          "Isaiah 11:1"
+        ],
+        "mentions": 3
+      },
+      {
+        "book": "Deuteronomy",
+        "references": [
+          "Deuteronomy 22"
+        ],
+        "mentions": 2
+      },
+      {
+        "book": "Luke",
+        "references": [
+          "Luke 1"
+        ],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "4HiEJGpNAQU",
+    "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\"",
+    "publishedAt": "2024-12-09T00:00:00Z",
+    "processedAt": "2026-01-18T16:58:54.823Z",
+    "transcriptPath": "data/transcripts/2024-12-09-episode-88-december-9-2024-josiah-the-cult-killer.txt",
+    "tags": [
+      {
+        "tag": "King Josiah",
+        "mentions": 25
+      },
+      {
+        "tag": "Hezekiah",
+        "mentions": 20
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 19
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 17
+      },
+      {
+        "tag": "Israel",
+        "mentions": 11
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 10
+      },
+      {
+        "tag": "King Sennacherib",
+        "mentions": 9
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 7
+      },
+      {
+        "tag": "Judah",
+        "mentions": 7
+      },
+      {
+        "tag": "Baal",
+        "mentions": 6
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 5
+      },
+      {
+        "tag": "Bethel",
+        "mentions": 4
+      },
+      {
+        "tag": "Moab",
+        "mentions": 4
+      },
+      {
+        "tag": "Assyria",
+        "mentions": 3
+      },
+      {
+        "tag": "Aaron",
+        "mentions": 2
+      },
+      {
+        "tag": "Judeans",
+        "mentions": 2
+      },
+      {
+        "tag": "Lachish",
+        "mentions": 2
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 1
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Bethlehem",
+        "mentions": 1
+      },
+      {
+        "tag": "Christian Nationalism",
+        "mentions": 1
+      },
+      {
+        "tag": "divine council",
+        "mentions": 1
+      },
+      {
+        "tag": "El",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "King David",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 1
+      },
+      {
+        "tag": "Nineveh",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:43.574]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-heroes",
+        "startTimestamp": "[00:01:43.574]",
+        "endTimestamp": "[00:38:06.380]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:38:06.380]",
+        "endTimestamp": "[00:54:11.901]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ],
+    "episodeNumber": 88,
+    "scriptures": [
+      {
+        "book": "2 Kings",
+        "references": [
+          "2 Kings 22"
+        ],
+        "mentions": 1
+      },
+      {
+        "book": "Deuteronomy",
+        "references": [
+          "Deuteronomy 4:19"
+        ],
+        "mentions": 1
+      },
+      {
+        "book": "Judges",
+        "references": [
+          "Judges 5"
+        ],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "t40eXH29l-8",
+    "title": "Episode 89 (December 16, 2024), \"Spare the Rod... Please!\"",
+    "publishedAt": "2024-12-16T00:00:00Z",
+    "processedAt": "2026-01-18T17:02:39.833Z",
+    "transcriptPath": "data/transcripts/2024-12-16-episode-89-december-16-2024-spare-the-rod-please.txt",
+    "tags": [
+      {
+        "tag": "Paul",
+        "mentions": 26
+      },
+      {
+        "tag": "Satan",
+        "mentions": 16
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 13
+      },
+      {
+        "tag": "Hell",
+        "mentions": 8
+      },
+      {
+        "tag": "Sheol",
+        "mentions": 4
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 2
+      },
+      {
+        "tag": "Gnostic",
+        "mentions": 2
+      },
+      {
+        "tag": "Origen",
+        "mentions": 2
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 2
+      },
+      {
+        "tag": "cognitive dissonance",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "Romans",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:10.017]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:02:10.017]",
+        "endTimestamp": "[00:25:14.942]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:25:14.942]",
+        "endTimestamp": "[00:50:45.861]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": [
+      "Dan McClellan",
+      "Dan Beecher"
+    ],
+    "episodeNumber": 89,
+    "scriptures": [
+      {
+        "book": "Proverbs",
+        "references": [
+          "Proverbs 10:13",
+          "Proverbs 13:24",
+          "Proverbs 22:8",
+          "Proverbs 22:15",
+          "Proverbs 23",
+          "Proverbs 26:3",
+          "Proverbs 29:15"
+        ],
+        "mentions": 8
+      },
+      {
+        "book": "Leviticus",
+        "references": [
+          "Leviticus 18:8"
+        ],
+        "mentions": 2
+      },
+      {
+        "book": "1 Corinthians",
+        "references": [
+          "1 Corinthians 5"
+        ],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "NbA7Ro-bZtI",
+    "title": "Episode 90 (December 23, 2024), \"With Counter-Apologies\"",
+    "publishedAt": "2024-12-23T00:00:00Z",
+    "processedAt": "2026-01-18T17:07:24.951Z",
+    "transcriptPath": "data/transcripts/2024-12-23-episode-90-december-23-2024-with-counter-apologies.txt",
+    "tags": [
+      {
+        "tag": "Cain",
+        "mentions": 23
+      },
+      {
+        "tag": "Adam",
+        "mentions": 17
+      },
+      {
+        "tag": "Seth",
+        "mentions": 10
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 9
+      },
+      {
+        "tag": "Eve",
+        "mentions": 8
+      },
+      {
+        "tag": "Garden of Eden",
+        "mentions": 6
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 6
+      },
+      {
+        "tag": "Passover",
+        "mentions": 4
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 3
+      },
+      {
+        "tag": "Flood",
+        "mentions": 2
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 2
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Lamech",
+        "mentions": 2
+      },
+      {
+        "tag": "Satan",
+        "mentions": 2
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 2
+      },
+      {
+        "tag": "etiology",
+        "mentions": 1
+      },
+      {
+        "tag": "Ham",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:05:02.588]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:05:02.588]",
+        "endTimestamp": "[00:11:04.230]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:11:04.230]",
+        "endTimestamp": "[00:18:13.133]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:18:13.133]",
+        "endTimestamp": "[00:19:22.161]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:19:22.161]",
+        "endTimestamp": "[00:20:07.144]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-does-that-mean",
+        "startTimestamp": "[00:20:07.144]",
+        "endTimestamp": "[00:23:28.309]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:23:28.309]",
+        "endTimestamp": "[00:24:02.796]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:24:02.796]",
+        "endTimestamp": "[00:24:40.484]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:24:40.484]",
+        "endTimestamp": "[00:27:33.710]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:27:33.710]",
+        "endTimestamp": "[00:29:58.884]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:29:58.884]",
+        "endTimestamp": "[00:31:02.890]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:31:02.890]",
+        "endTimestamp": "[00:31:17.529]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:31:17.529]",
+        "endTimestamp": "[00:31:27.383]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:31:27.383]",
+        "endTimestamp": "[00:32:14.755]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:32:14.755]",
+        "endTimestamp": "[00:33:41.651]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:33:41.651]",
+        "endTimestamp": "[00:34:50.783]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:34:50.783]",
+        "endTimestamp": "[00:36:14.002]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:36:14.002]",
+        "endTimestamp": "[00:36:51.191]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:36:51.191]",
+        "endTimestamp": "[00:40:09.451]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:40:09.451]",
+        "endTimestamp": "[00:42:57.772]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:42:57.772]",
+        "endTimestamp": "[00:46:05.630]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:46:05.630]",
+        "endTimestamp": "[00:46:52.497]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:46:52.497]",
+        "endTimestamp": "[00:47:26.484]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:47:26.484]",
+        "endTimestamp": "[00:47:42.292]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:47:42.292]",
+        "endTimestamp": "[00:52:57.692]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "segment",
+        "startTimestamp": "[00:52:57.692]",
+        "endTimestamp": "[00:55:30.610]",
+        "confidence": "auto",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:55:30.610]",
+        "endTimestamp": "[01:00:58.561]",
+        "confidence": "auto",
+        "detectionMethod": "llm"
+      }
+    ],
+    "speakers": [
+      "Dan Beecher",
+      "Dan McClellan"
+    ],
+    "chapters": [
+      {
+        "title": "Intro",
+        "startTime": 0
+      },
+      {
+        "title": "Ex Jesus vs Isog Jesus",
+        "startTime": 90
+      },
+      {
+        "title": "Preorders Available",
+        "startTime": 210
+      },
+      {
+        "title": "In Genesis",
+        "startTime": 300
+      },
+      {
+        "title": "Genesis 2119",
+        "startTime": 540
+      },
+      {
+        "title": "The Nivs Priority",
+        "startTime": 840
+      },
+      {
+        "title": "The Experts",
+        "startTime": 1020
+      },
+      {
+        "title": "Nasha",
+        "startTime": 1260
+      },
+      {
+        "title": "Scientific Method",
+        "startTime": 1590
+      },
+      {
+        "title": "Apologetics",
+        "startTime": 1710
+      },
+      {
+        "title": "Solar Eclipse",
+        "startTime": 1890
+      },
+      {
+        "title": "Flat Earth",
+        "startTime": 2070
+      },
+      {
+        "title": "The Truman Show",
+        "startTime": 2250
+      },
+      {
+        "title": "The Circle",
+        "startTime": 2430
+      },
+      {
+        "title": "The Dome Theory",
+        "startTime": 2610
+      },
+      {
+        "title": "Procreate",
+        "startTime": 2790
+      },
+      {
+        "title": "Cain and Abel",
+        "startTime": 2970
+      }
+    ],
+    "episodeNumber": 90,
+    "scriptures": [
+      {
+        "book": "Genesis",
+        "references": [
+          "Genesis 1",
+          "Genesis 2",
+          "Genesis 2:8",
+          "Genesis 2:19",
+          "Genesis 3",
+          "Genesis 4",
+          "Genesis 5",
+          "Genesis 6"
+        ],
+        "mentions": 32
+      },
+      {
+        "book": "Isaiah",
+        "references": [
+          "Isaiah 40",
+          "Isaiah 40:22"
+        ],
+        "mentions": 3
+      },
+      {
+        "book": "Proverbs",
+        "references": [
+          "Proverbs 8:27"
+        ],
+        "mentions": 3
+      },
+      {
+        "book": "Job",
+        "references": [
+          "Job 22:14"
+        ],
+        "mentions": 1
+      }
+    ]
   }
 ]

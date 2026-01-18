@@ -3,9 +3,9 @@ title: Who is a True Christian
 date: 2024-10-07T00:00:00.000Z
 episodeNumber: 79
 videoId: HYzWpM_y_cI
-aliases: 
+aliases:
   - /episodes/79/
-tags: 
+tags:
   - inerrancy
   - The Reformation
   - Trinity
@@ -15,7 +15,7 @@ tags:
   - Eschatology
   - Holy Spirit
   - Peter
-guests: 
+guests:
   - David Congdon
 draft: false
 ---

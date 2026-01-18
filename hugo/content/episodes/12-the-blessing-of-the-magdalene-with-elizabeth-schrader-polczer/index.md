@@ -3,9 +3,9 @@ title: The Blessing of the Magdalene
 date: 2023-06-26T00:00:00.000Z
 episodeNumber: 12
 videoId: zhX-8K8WtMs
-aliases: 
+aliases:
   - /episodes/12/
-tags: 
+tags:
   - Mary Magdalene
   - Jesus
   - Luke
@@ -31,11 +31,11 @@ tags:
   - Pastoral Epistles
   - Samaritans
   - Textus Receptus
-books: 
+books:
   - John
   - Luke
   - Matthew
-guests: 
+guests:
   - Elizabeth Schrader Polczer
 draft: false
 ---

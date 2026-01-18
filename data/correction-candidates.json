@@ -41,11 +41,12 @@
       "original": "Ball",
       "corrected": "Baal",
       "category": "spelling",
-      "totalOccurrences": 7,
-      "episodeCount": 2,
+      "totalOccurrences": 10,
+      "episodeCount": 3,
       "episodes": [
         "833s6y6kW2k",
-        "oKe-ukUfIKs"
+        "oKe-ukUfIKs",
+        "4HiEJGpNAQU"
       ],
       "examples": [
         "\"that was Ball.\"",
@@ -67,9 +68,9 @@
         "833s6y6kW2k",
         "833s6y6kW2k"
       ],
-      "confidence": 40,
+      "confidence": 65,
       "firstSeen": "2026-01-11T17:59:30.189Z",
-      "lastSeen": "2026-01-16T19:49:03.956Z",
+      "lastSeen": "2026-01-18T16:59:20.517Z",
       "status": "pending"
     },
     "like okay→like Okay": {
@@ -3856,30 +3857,35 @@
       "original": "him",
       "corrected": "them",
       "category": "spelling",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
+      "totalOccurrences": 4,
+      "episodeCount": 2,
       "episodes": [
-        "caKa7DTkSkQ"
+        "caKa7DTkSkQ",
+        "UNTBSfnu4Rs"
       ],
       "examples": [
         "\"They teach him.\"",
-        "\"They teach him how to\""
+        "\"They teach him how to\"",
+        "\"didn't put him in a\""
       ],
       "correctedExamples": [
         "\"They teach them.\"",
-        "\"—they teach them how to\""
+        "\"—they teach them how to\"",
+        "\"didn't put them in a\""
       ],
       "timestamps": [
         "00:37:56.060",
-        "00:37:59.860"
+        "00:37:59.860",
+        "00:43:06.690"
       ],
       "episodeIds": [
         "caKa7DTkSkQ",
-        "caKa7DTkSkQ"
+        "caKa7DTkSkQ",
+        "UNTBSfnu4Rs"
       ],
-      "confidence": 5,
+      "confidence": 35,
       "firstSeen": "2026-01-13T02:10:06.917Z",
-      "lastSeen": "2026-01-13T02:10:06.917Z",
+      "lastSeen": "2026-01-18T16:56:17.799Z",
       "status": "pending"
     },
     "malach→malakh": {
@@ -5734,10 +5740,11 @@
       "original": "pornia",
       "corrected": "porneia",
       "category": "spelling",
-      "totalOccurrences": 4,
-      "episodeCount": 1,
+      "totalOccurrences": 8,
+      "episodeCount": 2,
       "episodes": [
-        "cY_sI0kis0g"
+        "cY_sI0kis0g",
+        "t40eXH29l-8"
       ],
       "examples": [
         "\"probably is pornia.\"",
@@ -5759,9 +5766,9 @@
         "cY_sI0kis0g",
         "cY_sI0kis0g"
       ],
-      "confidence": 20,
+      "confidence": 45,
       "firstSeen": "2026-01-14T15:18:26.244Z",
-      "lastSeen": "2026-01-14T15:18:26.244Z",
+      "lastSeen": "2026-01-18T17:02:51.228Z",
       "status": "pending"
     },
     "Magneto→Megiddo": {
@@ -8006,7 +8013,597 @@
       "firstSeen": "2026-01-18T15:58:12.723Z",
       "lastSeen": "2026-01-18T15:58:12.723Z",
       "status": "pending"
+    },
+    "major general→Major General": {
+      "original": "major general",
+      "corrected": "Major General",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "vZqmxICxUh8"
+      ],
+      "examples": [
+        "\"was this major general named Charles\"",
+        "\"a modern major general. I hope\""
+      ],
+      "correctedExamples": [
+        "\"was this Major General named Charles\"",
+        "\"a modern Major General. I hope\""
+      ],
+      "timestamps": [
+        "00:40:04.160",
+        "00:40:04.160"
+      ],
+      "episodeIds": [
+        "vZqmxICxUh8",
+        "vZqmxICxUh8"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T16:41:16.728Z",
+      "lastSeen": "2026-01-18T16:41:16.728Z",
+      "status": "pending"
+    },
+    "Tomb association→Tomb Association": {
+      "original": "Tomb association",
+      "corrected": "Tomb Association",
+      "category": "capitalization",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "vZqmxICxUh8"
+      ],
+      "examples": [
+        "\"the Garden Tomb association is this\"",
+        "\"the Garden Tomb association, you're basically\"",
+        "\"the Garden Tomb association was like,\""
+      ],
+      "correctedExamples": [
+        "\"the Garden Tomb Association is this\"",
+        "\"the Garden Tomb Association, you're basically\"",
+        "\"the Garden Tomb Association was like,\""
+      ],
+      "timestamps": [
+        "00:41:11.280",
+        "00:43:25.710",
+        "00:57:06.250"
+      ],
+      "episodeIds": [
+        "vZqmxICxUh8",
+        "vZqmxICxUh8",
+        "vZqmxICxUh8"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-18T16:41:16.728Z",
+      "lastSeen": "2026-01-18T16:41:16.728Z",
+      "status": "pending"
+    },
+    "garden tomb→Garden Tomb": {
+      "original": "garden tomb",
+      "corrected": "Garden Tomb",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "vZqmxICxUh8"
+      ],
+      "examples": [
+        "\"understand, the garden tomb passes the\"",
+        "\"at the garden tomb. So a\""
+      ],
+      "correctedExamples": [
+        "\"understand, the Garden Tomb passes the\"",
+        "\"at the Garden Tomb. So a\""
+      ],
+      "timestamps": [
+        "00:43:25.710",
+        "00:54:52.940"
+      ],
+      "episodeIds": [
+        "vZqmxICxUh8",
+        "vZqmxICxUh8"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T16:41:16.728Z",
+      "lastSeen": "2026-01-18T16:41:16.728Z",
+      "status": "pending"
+    },
+    "Texas→Textus": {
+      "original": "Texas",
+      "corrected": "Textus",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "ueEDfCqjPYs"
+      ],
+      "examples": [
+        "\"The. The Texas receptus or.\"",
+        "\"than the Texas receptus. They\"",
+        "\"change the Texas receptus. Right.\""
+      ],
+      "correctedExamples": [
+        "\"The. The Textus Receptus or.\"",
+        "\"than the Textus Receptus. They\"",
+        "\"change the Textus Receptus. Right.\""
+      ],
+      "timestamps": [
+        "00:17:51.590",
+        "00:17:51.590",
+        "00:17:51.590"
+      ],
+      "episodeIds": [
+        "ueEDfCqjPYs",
+        "ueEDfCqjPYs",
+        "ueEDfCqjPYs"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-18T16:48:31.616Z",
+      "lastSeen": "2026-01-18T16:48:31.616Z",
+      "status": "pending"
+    },
+    "Religious→Religulous": {
+      "original": "Religious",
+      "corrected": "Religulous",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "Z-9XhhrGN6w"
+      ],
+      "examples": [
+        "\"Maher called Religious.\"",
+        "\"Religious. Right.\"",
+        "\"But yes, religious. Religious. That\""
+      ],
+      "correctedExamples": [
+        "\"Maher called Religulous.\"",
+        "\"Religulous. Right.\"",
+        "\"But yes, Religulous. Religulous. That\""
+      ],
+      "timestamps": [
+        "00:02:52.670",
+        "00:03:26.030",
+        "00:03:37.750"
+      ],
+      "episodeIds": [
+        "Z-9XhhrGN6w",
+        "Z-9XhhrGN6w",
+        "Z-9XhhrGN6w"
+      ],
+      "confidence": 25,
+      "firstSeen": "2026-01-18T16:52:18.677Z",
+      "lastSeen": "2026-01-18T16:52:18.677Z",
+      "status": "pending"
+    },
+    "Freak→Freke": {
+      "original": "Freak",
+      "corrected": "Freke",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "Z-9XhhrGN6w"
+      ],
+      "examples": [
+        "\"by Timothy Freak and Peter\"",
+        "\"the nose freak family. Like,\"",
+        "\"name is Freak, don't go\""
+      ],
+      "correctedExamples": [
+        "\"by Timothy Freke and Peter\"",
+        "\"the nose Freke family. Like,\"",
+        "\"name is Freke, don't go\""
+      ],
+      "timestamps": [
+        "00:18:52.190",
+        "00:19:25.720",
+        "00:19:25.720"
+      ],
+      "episodeIds": [
+        "Z-9XhhrGN6w",
+        "Z-9XhhrGN6w",
+        "Z-9XhhrGN6w"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-18T16:52:18.677Z",
+      "lastSeen": "2026-01-18T16:52:18.677Z",
+      "status": "pending"
+    },
+    "Murdoch→Murdock": {
+      "original": "Murdoch",
+      "corrected": "Murdock",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "Z-9XhhrGN6w"
+      ],
+      "examples": [
+        "\"of Dorothy Murdoch who along\"",
+        "\"that Dorothy Murdoch and, and\""
+      ],
+      "correctedExamples": [
+        "\"of Dorothy Murdock who along\"",
+        "\"that Dorothy Murdock and, and\""
+      ],
+      "timestamps": [
+        "00:19:41.800",
+        "00:19:41.800"
+      ],
+      "episodeIds": [
+        "Z-9XhhrGN6w",
+        "Z-9XhhrGN6w"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T16:52:18.677Z",
+      "lastSeen": "2026-01-18T16:52:18.677Z",
+      "status": "pending"
+    },
+    "Soul→Sol": {
+      "original": "Soul",
+      "corrected": "Sol",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "Z-9XhhrGN6w"
+      ],
+      "examples": [
+        "\"with, like, Soul Invictus, because\"",
+        "\"the 25th soul, Invictus does.\""
+      ],
+      "correctedExamples": [
+        "\"with, like, Sol Invictus, because\"",
+        "\"the 25th, Sol Invictus does.\""
+      ],
+      "timestamps": [
+        "00:36:31.180",
+        "00:36:31.180"
+      ],
+      "episodeIds": [
+        "Z-9XhhrGN6w",
+        "Z-9XhhrGN6w"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-01-18T16:52:18.677Z",
+      "lastSeen": "2026-01-18T16:52:18.677Z",
+      "status": "pending"
+    },
+    "it's like→It's like": {
+      "original": "it's like",
+      "corrected": "It's like",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "UNTBSfnu4Rs"
+      ],
+      "examples": [
+        "\"the direction it's like. It's like\"",
+        "\"it's like. It's like follow the\""
+      ],
+      "correctedExamples": [
+        "\"the direction. It's like, it's like\"",
+        "\"It's like, it's like follow the\""
+      ],
+      "timestamps": [
+        "00:21:51.020",
+        "00:21:51.020"
+      ],
+      "episodeIds": [
+        "UNTBSfnu4Rs",
+        "UNTBSfnu4Rs"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T16:56:17.799Z",
+      "lastSeen": "2026-01-18T16:56:17.799Z",
+      "status": "pending"
+    },
+    "Cicera→Sisera": {
+      "original": "Cicera",
+      "corrected": "Sisera",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "4HiEJGpNAQU"
+      ],
+      "examples": [
+        "\"five with Cicera. The. The\"",
+        "\"courses against Cicera. So they're.\""
+      ],
+      "correctedExamples": [
+        "\"5 with Sisera. The. The\"",
+        "\"courses against Sisera. So they're.\""
+      ],
+      "timestamps": [
+        "00:21:57.020",
+        "00:21:57.020"
+      ],
+      "episodeIds": [
+        "4HiEJGpNAQU",
+        "4HiEJGpNAQU"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T16:59:20.517Z",
+      "lastSeen": "2026-01-18T16:59:20.517Z",
+      "status": "pending"
+    },
+    "Chemos→Chemosh": {
+      "original": "Chemos",
+      "corrected": "Chemosh",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "4HiEJGpNAQU"
+      ],
+      "examples": [
+        "\"temple of Chemos, the abomination\"",
+        "\"talked about Chemos before. As\""
+      ],
+      "correctedExamples": [
+        "\"temple of Chemosh, the abomination\"",
+        "\"talked about Chemosh before. As\""
+      ],
+      "timestamps": [
+        "00:26:21.830",
+        "00:26:21.830"
+      ],
+      "episodeIds": [
+        "4HiEJGpNAQU",
+        "4HiEJGpNAQU"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T16:59:20.517Z",
+      "lastSeen": "2026-01-18T16:59:20.517Z",
+      "status": "pending"
+    },
+    "second kings→Second Kings": {
+      "original": "second kings",
+      "corrected": "Second Kings",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "4HiEJGpNAQU"
+      ],
+      "examples": [
+        "\"when was second kings written? Like\"",
+        "\"reign was second kings written? Like\""
+      ],
+      "correctedExamples": [
+        "\"when was Second Kings written? Like\"",
+        "\"reign was Second Kings written? Like\""
+      ],
+      "timestamps": [
+        "00:50:04.480",
+        "00:50:04.480"
+      ],
+      "episodeIds": [
+        "4HiEJGpNAQU",
+        "4HiEJGpNAQU"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T16:59:20.517Z",
+      "lastSeen": "2026-01-18T16:59:20.517Z",
+      "status": "pending"
+    },
+    "kings written→Kings written": {
+      "original": "kings written",
+      "corrected": "Kings written",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "4HiEJGpNAQU"
+      ],
+      "examples": [
+        "\"was second kings written? Like how\"",
+        "\"was second kings written? Like how,\""
+      ],
+      "correctedExamples": [
+        "\"was Second Kings written? Like how\"",
+        "\"was Second Kings written? Like how,\""
+      ],
+      "timestamps": [
+        "00:50:04.480",
+        "00:50:04.480"
+      ],
+      "episodeIds": [
+        "4HiEJGpNAQU",
+        "4HiEJGpNAQU"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T16:59:20.517Z",
+      "lastSeen": "2026-01-18T16:59:20.517Z",
+      "status": "pending"
+    },
+    "taking issue→Taking Issue": {
+      "original": "taking issue",
+      "corrected": "Taking Issue",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "t40eXH29l-8"
+      ],
+      "examples": [
+        "\"our segment taking issue. We're going\"",
+        "\"dive into taking issue. So we're\""
+      ],
+      "correctedExamples": [
+        "\"our segment Taking Issue. We're going\"",
+        "\"dive into Taking Issue. So we're\""
+      ],
+      "timestamps": [
+        "00:01:23.960",
+        "00:02:04.620"
+      ],
+      "episodeIds": [
+        "t40eXH29l-8",
+        "t40eXH29l-8"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T17:02:51.228Z",
+      "lastSeen": "2026-01-18T17:02:51.228Z",
+      "status": "pending"
+    },
+    "shevat→shevet": {
+      "original": "shevat",
+      "corrected": "shevet",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "t40eXH29l-8"
+      ],
+      "examples": [
+        "\"But a shevat is for\"",
+        "\"the word Shevat in the\""
+      ],
+      "correctedExamples": [
+        "\"But a shevet is for\"",
+        "\"the word shevet in the\""
+      ],
+      "timestamps": [
+        "00:12:38.950",
+        "00:14:48.320"
+      ],
+      "episodeIds": [
+        "t40eXH29l-8",
+        "t40eXH29l-8"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T17:02:51.228Z",
+      "lastSeen": "2026-01-18T17:02:51.228Z",
+      "status": "pending"
+    },
+    "always sunny→Always Sunny": {
+      "original": "always sunny",
+      "corrected": "Always Sunny",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "t40eXH29l-8"
+      ],
+      "examples": [
+        "\"That'S an always sunny reference. Is\"",
+        "\"That's an always sunny. Yeah, Yeah.\""
+      ],
+      "correctedExamples": [
+        "\"That's an Always Sunny reference. Is\"",
+        "\"That's an Always Sunny. Yeah, yeah.\""
+      ],
+      "timestamps": [
+        "00:18:51.720",
+        "00:18:53.680"
+      ],
+      "episodeIds": [
+        "t40eXH29l-8",
+        "t40eXH29l-8"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T17:02:51.228Z",
+      "lastSeen": "2026-01-18T17:02:51.228Z",
+      "status": "pending"
+    },
+    "International version→International Version": {
+      "original": "International version",
+      "corrected": "International Version",
+      "category": "capitalization",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "NbA7Ro-bZtI"
+      ],
+      "examples": [
+        "\"International version and the\"",
+        "\"the new international version in verse\"",
+        "\"the New international version says, now\""
+      ],
+      "correctedExamples": [
+        "\"International Version and the\"",
+        "\"the New International Version in verse\"",
+        "\"the New International Version says, now\""
+      ],
+      "timestamps": [
+        "00:08:14.790",
+        "00:08:18.630",
+        "00:08:18.630"
+      ],
+      "episodeIds": [
+        "NbA7Ro-bZtI",
+        "NbA7Ro-bZtI",
+        "NbA7Ro-bZtI"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-01-18T17:07:50.771Z",
+      "lastSeen": "2026-01-18T17:07:50.771Z",
+      "status": "pending"
+    },
+    "new international→New International": {
+      "original": "new international",
+      "corrected": "New International",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "NbA7Ro-bZtI"
+      ],
+      "examples": [
+        "\"But the new international version in\"",
+        "\"in the New international version says,\""
+      ],
+      "correctedExamples": [
+        "\"But the New International Version in\"",
+        "\"in the New International Version says,\""
+      ],
+      "timestamps": [
+        "00:08:18.630",
+        "00:08:18.630"
+      ],
+      "episodeIds": [
+        "NbA7Ro-bZtI",
+        "NbA7Ro-bZtI"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T17:07:50.771Z",
+      "lastSeen": "2026-01-18T17:07:50.771Z",
+      "status": "pending"
+    },
+    "they're→there're": {
+      "original": "they're",
+      "corrected": "there're",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "NbA7Ro-bZtI"
+      ],
+      "examples": [
+        "\"me like they're. They're people\"",
+        "\"like they're. They're people around.\""
+      ],
+      "correctedExamples": [
+        "\"me like there're. There're people\"",
+        "\"like there're. There're people around.\""
+      ],
+      "timestamps": [
+        "00:52:46.920",
+        "00:52:46.920"
+      ],
+      "episodeIds": [
+        "NbA7Ro-bZtI",
+        "NbA7Ro-bZtI"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T17:07:50.771Z",
+      "lastSeen": "2026-01-18T17:07:50.771Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-18T15:58:12.723Z"
+  "lastUpdated": "2026-01-18T17:07:50.771Z"
 }

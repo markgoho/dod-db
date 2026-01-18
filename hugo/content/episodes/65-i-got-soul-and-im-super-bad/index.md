@@ -3,9 +3,9 @@ title: "I Got Soul, and I'm Super Bad"
 date: 2024-07-01T00:00:00.000Z
 episodeNumber: 65
 videoId: Z6-5mEJYYQU
-aliases: 
+aliases:
   - /episodes/65/
-tags: 
+tags:
   - Egypt
   - Israel
   - King James Version
@@ -21,12 +21,12 @@ tags:
   - Judah
   - Judaism
   - The Reformation
-books: 
+books:
   - Ezekiel
   - Revelation
-segments: 
+segments:
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 2521.614

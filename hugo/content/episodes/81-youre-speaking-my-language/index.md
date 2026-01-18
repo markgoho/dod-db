@@ -3,9 +3,9 @@ title: "You're Speaking My Language!"
 date: 2024-10-21T00:00:00.000Z
 episodeNumber: 81
 videoId: iFp-3_c6QWQ
-aliases: 
+aliases:
   - /episodes/81/
-tags: 
+tags:
   - Babylon
   - Tower of Babel
   - Jesus
@@ -39,12 +39,12 @@ tags:
   - Septuagint
   - Syria
   - The Reformation
-books: 
+books:
   - Genesis
-segments: 
+segments:
   - Chapter and Verse
   - Watch Your Language
-segmentData: 
+segmentData:
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 141.362

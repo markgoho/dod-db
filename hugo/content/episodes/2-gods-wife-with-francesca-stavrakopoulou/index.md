@@ -3,9 +3,9 @@ title: "God's Wife"
 date: 2023-04-17T00:00:00.000Z
 episodeNumber: 2
 videoId: luJhJvFzpew
-aliases: 
+aliases:
   - /episodes/2/
-tags: 
+tags:
   - YHWH
   - child sacrifice
   - Molek
@@ -37,14 +37,14 @@ tags:
   - Syria
   - theophany
   - Trinity
-books: 
+books:
   - Ezekiel
   - Isaiah
   - Genesis
   - Deuteronomy
   - Exodus
   - Judges
-guests: 
+guests:
   - Francesca Stavrakopoulou
 draft: false
 ---

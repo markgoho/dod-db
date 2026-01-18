@@ -3,15 +3,15 @@ title: Is Religion Make-Believe?
 date: 2024-03-25T00:00:00.000Z
 episodeNumber: 51
 videoId: qNROe-Slo8Y
-aliases: 
+aliases:
   - /episodes/51/
-tags: 
+tags:
   - Catholicism
   - Dead Sea Scrolls
   - Garden of Eden
   - Jesus
   - Justin Martyr
-guests: 
+guests:
   - Neil Van Leeuwen
 draft: false
 ---

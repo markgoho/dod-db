@@ -3,9 +3,9 @@ title: The Biblical View of Immigrants
 date: 2024-09-30T00:00:00.000Z
 episodeNumber: 78
 videoId: Jz4YpDhPHEg
-aliases: 
+aliases:
   - /episodes/78/
-tags: 
+tags:
   - Jesus
   - Nehemiah
   - Noah
@@ -22,9 +22,9 @@ tags:
   - King David
   - Paul
   - Protestantism
-books: 
+books:
   - Luke
-guests: 
+guests:
   - "Craig Mousin, also known as Reverend Craig Moose. And J.D."
 draft: false
 ---

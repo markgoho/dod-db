@@ -3,9 +3,9 @@ title: Connecting with Source
 date: 2023-09-04T00:00:00.000Z
 episodeNumber: 22
 videoId: B1uE2cv8fP0
-aliases: 
+aliases:
   - /episodes/22/
-tags: 
+tags:
   - Hebrews
   - YHWH
   - Julius Wellhausen
@@ -29,11 +29,11 @@ tags:
   - Mesopotamian
   - Midianites
   - Noah
-books: 
+books:
   - Genesis
   - Leviticus
   - Exodus
-guests: 
+guests:
   - Liane Feldman
 draft: false
 ---

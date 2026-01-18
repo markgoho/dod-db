@@ -3,15 +3,15 @@ title: Deconstruction Zone
 date: 2024-10-28T00:00:00.000Z
 episodeNumber: 82
 videoId: iK9FSp6IiVo
-aliases: 
+aliases:
   - /episodes/82/
-tags: 
+tags:
   - Southern Baptist Convention
   - Jesus
   - Rapture
   - Christian Nationalism
   - YHWH
-guests: 
+guests:
   - Rev Karla Kamstra
 draft: false
 ---

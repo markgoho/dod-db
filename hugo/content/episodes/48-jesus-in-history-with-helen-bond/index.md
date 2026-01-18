@@ -3,9 +3,9 @@ title: Jesus in History
 date: 2024-03-04T00:00:00.000Z
 episodeNumber: 48
 videoId: 5CCrRI2RX2s
-aliases: 
+aliases:
   - /episodes/48/
-tags: 
+tags:
   - Jesus
   - Paul
   - Jerusalem
@@ -37,13 +37,13 @@ tags:
   - King David
   - Pliny the Younger
   - Septuagint
-books: 
+books:
   - Isaiah
   - Romans
   - Matthew
   - Luke
   - 1 Corinthians
-guests: 
+guests:
   - Helen Bond
 draft: false
 ---

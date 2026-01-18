@@ -3,9 +3,9 @@ title: The Ten (ish) Commandments
 date: 2023-11-06T00:00:00.000Z
 episodeNumber: 31
 videoId: q5Yw6xPCS6U
-aliases: 
+aliases:
   - /episodes/31/
-tags: 
+tags:
   - Ten Commandments
   - YHWH
   - Deuteronomy
@@ -43,15 +43,15 @@ tags:
   - Second Temple period
   - Shem
   - Univocality
-books: 
+books:
   - Exodus
   - Deuteronomy
   - Isaiah
   - Acts
-segments: 
+segments:
   - "It's the Law"
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: its-the-law
     label: "It's the Law"
     startSeconds: 57

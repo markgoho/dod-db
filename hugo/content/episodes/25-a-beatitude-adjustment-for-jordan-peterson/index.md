@@ -3,9 +3,9 @@ title: A Beatitude Adjustment for Jordan Peterson
 date: 2023-09-25T00:00:00.000Z
 episodeNumber: 25
 videoId: Xtm9DX_0Rx0
-aliases: 
+aliases:
   - /episodes/25/
-tags: 
+tags:
   - Matthew
   - Jesus
   - Luke
@@ -23,7 +23,7 @@ tags:
   - James
   - Latin Vulgate
   - Moses
-books: 
+books:
   - Matthew
   - Psalms
   - Isaiah
@@ -31,10 +31,10 @@ books:
   - Deuteronomy
   - Exodus
   - Genesis
-segments: 
+segments:
   - Chapter and Verse
   - "All Right, Let's See It"
-segmentData: 
+segmentData:
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 81.81

@@ -3,9 +3,9 @@ title: The Dead Sea Scrolls
 date: 2024-02-12T00:00:00.000Z
 episodeNumber: 45
 videoId: iO6mdYWPOyo
-aliases: 
+aliases:
   - /episodes/45/
-tags: 
+tags:
   - Dead Sea Scrolls
   - Deuteronomy
   - Qumran
@@ -56,11 +56,11 @@ tags:
   - Second Temple period
   - textual criticism
   - Ugarit
-books: 
+books:
   - Deuteronomy
   - Psalms
   - Isaiah
-guests: 
+guests:
   - Kipp Davis
 draft: false
 ---

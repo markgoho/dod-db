@@ -3,9 +3,9 @@ title: Thou Shalt Not
 date: 2024-07-08T00:00:00.000Z
 episodeNumber: 66
 videoId: oKe-ukUfIKs
-aliases: 
+aliases:
   - /episodes/66/
-tags: 
+tags:
   - YHWH
   - Ten Commandments
   - Israel
@@ -34,7 +34,7 @@ tags:
   - Protestantism
   - Ritual Decalogue
   - Satan
-books: 
+books:
   - Exodus
   - Habakkuk
   - Judges

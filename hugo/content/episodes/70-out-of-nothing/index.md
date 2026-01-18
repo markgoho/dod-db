@@ -3,9 +3,9 @@ title: Out of Nothing
 date: 2024-08-05T00:00:00.000Z
 episodeNumber: 70
 videoId: wFcJAbbNOpk
-aliases: 
+aliases:
   - /episodes/70/
-tags: 
+tags:
   - Daniel
   - Bel and the Dragon
   - Cyrus the Great
@@ -36,7 +36,7 @@ tags:
   - Median Kingdom
   - Origen
   - Paul
-books: 
+books:
   - Genesis
   - Romans
   - Hebrews
@@ -45,10 +45,10 @@ books:
   - Matthew
   - Isaiah
   - Psalms
-segments: 
+segments:
   - Creation Stories
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: creation-stories
     label: Creation Stories
     startSeconds: 194.206

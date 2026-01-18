@@ -3,9 +3,9 @@ title: Bible Magic!
 date: 2024-08-26T00:00:00.000Z
 episodeNumber: 73
 videoId: MhGc3c7LlP0
-aliases: 
+aliases:
   - /episodes/73/
-tags: 
+tags:
   - YHWH
   - Egypt
   - King Saul
@@ -40,7 +40,7 @@ tags:
   - Philistines
   - Samuel
   - Satan
-books: 
+books:
   - Numbers
   - 1 Samuel
   - Exodus
@@ -48,9 +48,9 @@ books:
   - Deuteronomy
   - Ezra
   - Nehemiah
-segments: 
+segments:
   - Magical Thinking
-segmentData: 
+segmentData:
   - type: magical-thinking
     label: Magical Thinking
     startSeconds: 161.006

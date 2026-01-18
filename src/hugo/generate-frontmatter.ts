@@ -54,7 +54,11 @@ export function generateFrontmatter(
   frontmatter.draft = false;
 
   // Use Bun.YAML to serialize (with 2-space indentation for block-style output)
-  const frontmatterYaml = Bun.YAML.stringify(frontmatter, null, 2);
+  // Remove trailing whitespace from each line (Bun.YAML adds trailing spaces after block-style array keys)
+  const frontmatterYaml = Bun.YAML.stringify(frontmatter, null, 2).replaceAll(
+    / +\n/g,
+    "\n",
+  );
 
   return `---\n${frontmatterYaml}\n---`;
 }

@@ -3,9 +3,9 @@ title: Omni Everything?
 date: 2024-10-14T00:00:00.000Z
 episodeNumber: 80
 videoId: OoXQAfsPutQ
-aliases: 
+aliases:
   - /episodes/80/
-tags: 
+tags:
   - James
   - Edom
   - Gentiles
@@ -34,14 +34,14 @@ tags:
   - Philistines
   - The Reformation
   - Univocality
-books: 
+books:
   - Amos
   - Acts
   - 1 John
-segments: 
+segments:
   - What is That?
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: what-is-that
     label: What is That?
     startSeconds: 107.786

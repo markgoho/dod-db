@@ -3,9 +3,9 @@ title: Why Is She Salt?
 date: 2023-04-24T00:00:00.000Z
 episodeNumber: 3
 videoId: M-7Gql8NQBU
-aliases: 
+aliases:
   - /episodes/3/
-tags: 
+tags:
   - Lot
   - provenance
   - Sodom
@@ -46,14 +46,14 @@ tags:
   - theophany
   - Tower of Babel
   - Trinity
-books: 
+books:
   - Genesis
   - Deuteronomy
   - Isaiah
   - Judges
-segments: 
+segments:
   - What Does That Mean?
-segmentData: 
+segmentData:
   - type: what-does-that-mean
     label: What Does That Mean?
     startSeconds: 75

@@ -3,9 +3,9 @@ title: Revealing Revelation
 date: 2024-01-01T00:00:00.000Z
 episodeNumber: 39
 videoId: VTRccZ81UZs
-aliases: 
+aliases:
   - /episodes/39/
-tags: 
+tags:
   - Jesus
   - Hell
   - Paul
@@ -45,15 +45,15 @@ tags:
   - Septuagint
   - textual criticism
   - Ugarit
-books: 
+books:
   - Isaiah
   - Revelation
   - Daniel
   - Psalms
   - John
-segments: 
+segments:
   - Chapter and Verse
-segmentData: 
+segmentData:
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 80
