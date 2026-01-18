@@ -181,6 +181,90 @@ function scrollToLine(element: HTMLElement): void {
 }
 
 /**
+ * Show a temporary toast notification.
+ */
+function showToast(message: string): void {
+  // Remove existing toast if any
+  const existingToast = document.querySelector(".copy-toast");
+  if (existingToast) {
+    existingToast.remove();
+  }
+
+  // Create toast element
+  const toast = document.createElement("div");
+  toast.className = "copy-toast";
+  toast.textContent = message;
+  toast.setAttribute("role", "status");
+  toast.setAttribute("aria-live", "polite");
+  toast.setAttribute("aria-atomic", "true");
+  document.body.append(toast);
+
+  // Show with animation (next frame for CSS transition)
+  globalThis.requestAnimationFrame(() => {
+    toast.classList.add("show");
+  });
+
+  // Hide and remove after 2 seconds
+  globalThis.setTimeout(() => {
+    toast.classList.remove("show");
+    globalThis.setTimeout(() => {
+      toast.remove();
+    }, 300); // Match CSS transition duration
+  }, 2000);
+}
+
+/**
+ * Handle URL hash on page load.
+ * Supports both transcript line hashes (#t-123-456) and segment hashes (#chapter-and-verse).
+ */
+function handleInitialHash(): void {
+  const hash = globalThis.location.hash.slice(1); // Remove #
+  if (!hash) {
+    return;
+  }
+
+  const element = document.querySelector<HTMLElement>(`#${hash}`);
+  if (!element) {
+    return;
+  }
+
+  const startAttribute = element.dataset["start"];
+  if (!startAttribute) {
+    return;
+  }
+
+  const seconds = Number.parseFloat(startAttribute);
+
+  // Store for when player loads
+  state.pendingSeekSeconds = seconds;
+
+  // Handle transcript lines
+  if (element.classList.contains("transcript-line")) {
+    // Scroll to element
+    element.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    // Highlight it
+    element.classList.add("active");
+  }
+
+  // Handle segments - scroll sidebar into view
+  if (element.classList.contains("segment-chip")) {
+    element.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  // Load the player at the timestamp (user can click play when ready)
+  const videoContainer = document.querySelector(".video-player");
+  if (videoContainer instanceof HTMLElement && !state.player) {
+    const thumbnail = videoContainer.querySelector<HTMLAnchorElement>("a");
+    if (thumbnail) {
+      loadYouTubeAPI().then(() => {
+        createPlayer(videoContainer, seconds);
+      });
+    }
+  }
+}
+
+/**
  * Update the active transcript line based on current video time.
  */
 function updateActiveTranscriptLine(): void {
@@ -351,12 +435,23 @@ function seekTo(seconds: number): void {
 function handleLineClick(event: Event): void {
   const line = event.currentTarget as HTMLElement;
   const seconds = Number.parseFloat(line.dataset["start"] ?? "0");
+  const lineId = line.id;
 
-  // Prevent default if clicking the hidden timestamp anchor
-  const target = event.target as HTMLElement;
-  if (target.classList.contains("timestamp")) {
-    event.preventDefault();
+  // Update URL hash (don't trigger reload)
+  if (lineId) {
+    globalThis.history.pushState(undefined, "", `#${lineId}`);
   }
+
+  // Copy full URL to clipboard
+  globalThis.navigator.clipboard
+    .writeText(globalThis.location.href)
+    .then(() => {
+      showToast("Link copied!");
+    })
+    .catch((error: unknown) => {
+      console.error("Failed to copy to clipboard:", error);
+      showToast("Failed to copy link");
+    });
 
   const container = document.querySelector<HTMLElement>(".video-player");
   if (!container) {
@@ -388,8 +483,27 @@ function handleFacadeClick(event: Event, container: HTMLElement): void {
  * Handle click on segment chip.
  */
 function handleSegmentClick(event: Event): void {
-  const button = event.currentTarget as HTMLButtonElement;
-  const seconds = Number.parseFloat(button.dataset["start"] ?? "0");
+  event.preventDefault(); // Prevent default hash navigation
+
+  const anchor = event.currentTarget as HTMLAnchorElement;
+  const seconds = Number.parseFloat(anchor.dataset["start"] ?? "0");
+  const segmentId = anchor.id;
+
+  // Update URL hash (the href would do this, but we prevented default)
+  if (segmentId) {
+    globalThis.history.pushState(undefined, "", `#${segmentId}`);
+  }
+
+  // Copy full URL to clipboard
+  globalThis.navigator.clipboard
+    .writeText(globalThis.location.href)
+    .then(() => {
+      showToast("Link copied!");
+    })
+    .catch((error: unknown) => {
+      console.error("Failed to copy to clipboard:", error);
+      showToast("Failed to copy link");
+    });
 
   const container = document.querySelector<HTMLElement>(".video-player");
   if (!container) {
@@ -449,6 +563,9 @@ function init(): void {
 
   // Build line index
   state.lines = buildLineIndex();
+
+  // Handle URL hash on page load (for deep linking)
+  handleInitialHash();
 
   // Load auto-scroll preference
   state.autoScrollEnabled = loadAutoScrollPreference();

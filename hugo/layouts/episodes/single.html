@@ -72,12 +72,13 @@
           <h2 class="episode-segments__title">Segments</h2>
           <div class="episode-segments__list">
             {{ range .Params.segmentData }}
-              <button
+              <a
                 class="segment-chip"
-                data-start="{{ .startSeconds }}"
-                type="button">
+                id="{{ .type }}"
+                href="#{{ .type }}"
+                data-start="{{ .startSeconds }}">
                 {{ .label }}
-              </button>
+              </a>
             {{ end }}
           </div>
         </div>

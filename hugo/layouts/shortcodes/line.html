@@ -22,26 +22,14 @@
   {{- /* Generate speaker slug */ -}}
   {{- $speakerSlug := $speaker | lower | replaceRE `\s+` "-" -}}
 
-  {{- /* Video ID from page params */ -}}
-  {{- $videoId := .Page.Params.videoId -}}
+  {{- /* Generate timestamp-based ID from calculated totalSeconds */ -}}
+  {{- /* Replace period with hyphen for valid CSS selector (t-1128-580 instead of t-1128.580) */ -}}
+  {{- $lineIdRaw := printf "t-%.3f" $totalSeconds -}}
+  {{- $lineId := replace $lineIdRaw "." "-" -}}
 
-
-  <article
-    class="transcript-line"
-    data-start="{{ $totalSeconds }}"
-    data-speaker="{{ $speakerSlug }}">
-    <header class="transcript-line-header">
-      <cite class="speaker-name" data-speaker="{{ $speakerSlug }}"
-        >{{ $speaker }}</cite
-      >
-      <a
-        class="timestamp"
-        data-seconds="{{ $totalSeconds }}"
-        href="https://youtu.be/{{ $videoId }}?t={{ $totalSeconds }}"
-        aria-label="Jump to {{ $hours }}:{{ $minutes }}:{{ $seconds }}">
-        <time>{{ $hours }}:{{ $minutes }}:{{ $seconds }}</time>
-      </a>
-    </header>
+  <article class="transcript-line" id="{{ $lineId }}" data-start="{{ $totalSeconds }}" data-speaker="{{ $speakerSlug }}">
+    <span class="speaker-name" data-speaker="{{ $speakerSlug }}">{{ $speaker }}</span>
+    <span class="timestamp" data-seconds="{{ $totalSeconds }}">{{ $hours }}:{{ $minutes }}:{{ $seconds }}</span>
     <p class="transcript-text">{{ $text | safeHTML }}</p>
   </article>
 {{- else -}}
