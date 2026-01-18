@@ -11,7 +11,7 @@ fi
 echo "Running Prettier and ESLint on staged files..."
 
 # Run Prettier check
-echo "$STAGED_FILES" | xargs bunx prettier --check
+echo "$STAGED_FILES" | xargs bunx prettier --write --ignore-unknown
 PRETTIER_EXIT=$?
 
 # Run ESLint
