@@ -1,0 +1,2 @@
+# Hugo shortcodes - prevent Prettier from breaking template syntax
+hugo/layouts/shortcodes/**/*.html
