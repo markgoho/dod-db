@@ -10,6 +10,7 @@ tags:
   - The Reformation
   - Trinity
   - Christian Nationalism
+  - Protestantism
   - biblical canon
   - Eschatology
   - Holy Spirit

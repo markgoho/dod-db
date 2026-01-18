@@ -33,6 +33,7 @@ tags:
   - Jerusalem
   - Paul
   - preterist interpretation
+  - Protestantism
   - Romans
   - textual criticism
   - The Reformation

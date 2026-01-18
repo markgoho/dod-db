@@ -31,6 +31,7 @@ tags:
   - Masoretic Text
   - Mesopotamian
   - Moses
+  - Protestantism
   - Ritual Decalogue
   - Satan
 books: 

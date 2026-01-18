@@ -41,6 +41,7 @@ tags:
   - Jerome
   - Jerusalem
   - Judah
+  - Protestantism
   - Samuel
   - Textus Receptus
   - apocalypse

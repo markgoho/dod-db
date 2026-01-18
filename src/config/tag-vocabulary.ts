@@ -2849,17 +2849,17 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "deity",
     variations: ["deities"],
     category: "theology",
-    description: "A god or goddess.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 77,
   },
   {
     canonical: "Protestantism",
     variations: ["Protestant"],
     category: "religion",
+    llmVerify: true,
     description:
       "A form of Christianity which originated with the Reformation.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 77,
   },
   {
@@ -2870,12 +2870,13 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 77,
   },
   {
-    canonical: "deism",
+    canonical: "Deism",
     variations: ["deist", "deists"],
     category: "religion",
+    llmVerify: true,
     description:
       "Belief in the existence of a supreme being, specifically of a creator who does not intervene in the universe.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 77,
   },
   {

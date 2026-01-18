@@ -25,6 +25,7 @@ tags:
   - King Saul
   - Origen
   - Philistines
+  - Protestantism
   - Qumran
   - Saint Titus
   - biblical canon

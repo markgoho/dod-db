@@ -40,6 +40,7 @@ tags:
   - Justin Martyr
   - Pergamum
   - preterist interpretation
+  - Protestantism
   - Romans
   - Septuagint
   - textual criticism

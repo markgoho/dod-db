@@ -6,8 +6,10 @@ videoId: 4u2tKZlUJUc
 aliases: 
   - /episodes/77/
 tags: 
+  - Protestantism
   - Catholicism
   - Islam
+  - Deism
   - The Reformation
   - Jesus
   - biblical canon

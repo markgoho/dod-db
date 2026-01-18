@@ -37,6 +37,7 @@ tags:
   - James
   - Judah
   - Mount Gerizim
+  - Protestantism
   - Qumran
   - Samaritans
   - Second Temple period

@@ -22,6 +22,7 @@ tags:
   - Endor
   - Galilee
   - Judah
+  - Protestantism
   - Torah
   - Aaron
   - Carthage

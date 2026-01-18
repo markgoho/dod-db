@@ -21,11 +21,13 @@ tags:
   - Jesus
   - Judaism
   - Martin Luther
+  - Protestantism
   - Romans
   - Septuagint
   - apocalypse
   - Baal
   - David Burnett
+  - Deism
   - Elijah
   - Gnostic
   - Jerome

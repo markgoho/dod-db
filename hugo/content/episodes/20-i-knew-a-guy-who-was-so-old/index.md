@@ -24,6 +24,7 @@ tags:
   - Abraham
   - Judaism
   - Athanasius of Alexandria
+  - Protestantism
   - 2 Maccabees
   - Catholicism
   - Ishmael

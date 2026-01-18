@@ -770,6 +770,10 @@
         "mentions": 1
       },
       {
+        "tag": "Protestantism",
+        "mentions": 1
+      },
+      {
         "tag": "Romans",
         "mentions": 1
       },
@@ -1052,6 +1056,10 @@
       },
       {
         "tag": "Philistines",
+        "mentions": 2
+      },
+      {
+        "tag": "Protestantism",
         "mentions": 2
       },
       {
@@ -2053,6 +2061,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Protestantism",
         "mentions": 2
       },
       {
@@ -3188,6 +3200,10 @@
         "mentions": 1
       },
       {
+        "tag": "Protestantism",
+        "mentions": 1
+      },
+      {
         "tag": "Satan",
         "mentions": 1
       },
@@ -3857,6 +3873,10 @@
       },
       {
         "tag": "Athanasius of Alexandria",
+        "mentions": 4
+      },
+      {
+        "tag": "Protestantism",
         "mentions": 4
       },
       {
@@ -4840,6 +4860,10 @@
       {
         "tag": "Hebrews",
         "mentions": 16
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 8
       },
       {
         "tag": "circumcision",
@@ -5832,6 +5856,10 @@
       },
       {
         "tag": "Mount Gerizim",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
         "mentions": 1
       },
       {
@@ -6886,6 +6914,10 @@
         "mentions": 4
       },
       {
+        "tag": "Deism",
+        "mentions": 4
+      },
+      {
         "tag": "Israel",
         "mentions": 3
       },
@@ -7309,6 +7341,10 @@
       },
       {
         "tag": "preterist interpretation",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
         "mentions": 1
       },
       {
@@ -9159,6 +9195,10 @@
       },
       {
         "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
         "mentions": 1
       },
       {
@@ -11020,6 +11060,10 @@
         "mentions": 1
       },
       {
+        "tag": "Protestantism",
+        "mentions": 1
+      },
+      {
         "tag": "Romans",
         "mentions": 1
       },
@@ -11366,6 +11410,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
         "mentions": 1
       },
       {
@@ -12207,6 +12255,10 @@
         "mentions": 1
       },
       {
+        "tag": "Protestantism",
+        "mentions": 1
+      },
+      {
         "tag": "Ritual Decalogue",
         "mentions": 1
       },
@@ -12844,6 +12896,10 @@
         "mentions": 2
       },
       {
+        "tag": "Protestantism",
+        "mentions": 2
+      },
+      {
         "tag": "Romans",
         "mentions": 2
       },
@@ -12861,6 +12917,10 @@
       },
       {
         "tag": "David Burnett",
+        "mentions": 1
+      },
+      {
+        "tag": "Deism",
         "mentions": 1
       },
       {
@@ -13443,6 +13503,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Protestantism",
         "mentions": 2
       },
       {
@@ -14038,12 +14102,20 @@
     "episodeNumber": 77,
     "tags": [
       {
+        "tag": "Protestantism",
+        "mentions": 14
+      },
+      {
         "tag": "Catholicism",
         "mentions": 7
       },
       {
         "tag": "Islam",
         "mentions": 7
+      },
+      {
+        "tag": "Deism",
+        "mentions": 5
       },
       {
         "tag": "The Reformation",
@@ -14170,6 +14242,10 @@
       {
         "tag": "Paul",
         "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -14225,6 +14301,10 @@
       {
         "tag": "Christian Nationalism",
         "mentions": 3
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 2
       },
       {
         "tag": "biblical canon",

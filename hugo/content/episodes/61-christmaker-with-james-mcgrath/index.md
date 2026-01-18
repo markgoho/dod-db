@@ -34,6 +34,7 @@ tags:
   - inerrancy
   - Israel
   - Judah
+  - Protestantism
   - Samuel
   - Talmud
   - Torah
