@@ -26,7 +26,7 @@ export async function deleteTagFromVocabulary(
     String.raw`\$&`,
   );
   const tagRegex = new RegExp(
-    String.raw`\t\{\s*canonical:\s*'${escapedCanonical}'[^}]+\},?\n`,
+    String.raw`\s+\{\s*canonical:\s*['"]${escapedCanonical}['"][\s\S]+?\},?\n`,
     "i",
   );
 

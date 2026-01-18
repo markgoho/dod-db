@@ -3,9 +3,9 @@ title: So Many Gods!
 date: 2023-05-22T00:00:00.000Z
 episodeNumber: 7
 videoId: 35Jz3A7tBgU
-aliases:
+aliases: 
   - /episodes/7/
-tags:
+tags: 
   - YHWH
   - Israel
   - divine council
@@ -52,17 +52,17 @@ tags:
   - King Josiah
   - Michael
   - Philistines
-books:
+books: 
   - Psalms
   - Deuteronomy
   - 2 Kings
   - 1 Kings
   - Isaiah
   - Jeremiah
-segments:
+segments: 
   - Chapter and Verse
   - What Does That Mean?
-segmentData:
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 109.28

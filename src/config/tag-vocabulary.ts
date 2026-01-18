@@ -2662,19 +2662,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Ezekiel 44",
     variations: ["Ezekiel"],
     category: "literature",
-    description:
-      "Chapter 44 of the Book of Ezekiel in the Hebrew Bible, discussing the roles and responsibilities of priests.",
-    status: "proposed",
-    addedInEpisode: 74,
-  },
-  {
-    canonical: "Exodus 28",
-    variations: ["Exodus"],
-    category: "literature",
-    description:
-      "Chapter 28 of the Book of Exodus, detailing instructions for priestly garments.",
-    status: "proposed",
-    addedInEpisode: 74,
+    status: "rejected",
   },
   {
     canonical: "Midianites",
@@ -2703,13 +2691,13 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 75,
   },
   {
-    canonical: "aaron",
+    canonical: "Aaron",
     variations: [],
     category: "character",
+    llmVerify: true,
     description:
       "Moses' brother and spokesman, played a key role in the Exodus narrative.",
-    status: "proposed",
-    addedInEpisode: 75,
+    status: "accepted",
   },
   {
     canonical: "signs and wonders",
@@ -2777,28 +2765,22 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Acts",
     variations: ["Book of Acts"],
     category: "literature",
-    description:
-      "Fifth book of the New Testament, sequel to the Gospel of Luke, describing the early Christian church",
-    status: "proposed",
-    addedInEpisode: 76,
+    status: "rejected",
   },
   {
     canonical: "Malachi",
     variations: [],
     category: "literature",
-    description:
-      "The final book of the Old Testament prophets, traditionally attributed to the prophet Malachi",
-    status: "proposed",
-    addedInEpisode: 76,
+    status: "rejected",
   },
   {
     canonical: "Melchizedek",
     variations: ["Melchisedek"],
     category: "character",
+    llmVerify: true,
     description:
       "A king and priest mentioned in Genesis 14 and Psalm 110, who blessed Abraham",
-    status: "proposed",
-    addedInEpisode: 76,
+    status: "accepted",
   },
   {
     canonical: "Sapphira",
@@ -2848,10 +2830,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "1 Samuel",
     variations: ["First Samuel"],
     category: "literature",
-    description:
-      "A book in the Hebrew Bible that recounts the stories of Samuel, Saul, and David.",
-    status: "proposed",
-    addedInEpisode: 73,
+    status: "rejected",
   },
   {
     canonical: "Numbers 6",
@@ -2883,18 +2862,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "religion",
     variations: ["religio", "religions", "religious"],
     category: "theology",
-    description:
-      "The human relationship to the divine or sacred; a system of beliefs, practices, and values.",
-    status: "proposed",
-    addedInEpisode: 77,
-  },
-  {
-    canonical: "christianity",
-    variations: ["Christian", "Christians"],
-    category: "religion",
-    description: "A religion based on the life and teachings of Jesus Christ.",
-    status: "proposed",
-    addedInEpisode: 77,
+    status: "rejected",
   },
   {
     canonical: "deity",
@@ -2934,36 +2902,13 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "faith",
     variations: ["fide"],
     category: "theology",
-    description: "Belief in something for which there is no proof.",
-    status: "proposed",
-    addedInEpisode: 77,
-  },
-  {
-    canonical: "God",
-    variations: ["gods"],
-    category: "theology",
-    description:
-      "In monotheistic religion, the single supreme being, creator, and ruler of the universe.",
-    status: "proposed",
-    addedInEpisode: 77,
+    status: "rejected",
   },
   {
     canonical: "Christian",
     variations: ["Christians"],
     category: "religion",
-    description:
-      "Someone who adheres to Christianity, following the teachings of Jesus Christ.",
-    status: "proposed",
-    addedInEpisode: 78,
-  },
-  {
-    canonical: "Craig Mousin",
-    variations: ["Mousin"],
-    category: "person",
-    description:
-      "Reverend Craig Mousin, J.D., a professor at the Grace School of Applied Diplomacy at DePaul University and associate minister for immigrant justice at the Wellington United Church of Christ.",
-    status: "proposed",
-    addedInEpisode: 78,
+    status: "rejected",
   },
   {
     canonical: "Cecil Cicirello",
@@ -2978,27 +2923,19 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "United States",
     variations: ["US"],
     category: "place",
-    description:
-      "Country in North America, often involved in discussions about immigration policy.",
-    status: "proposed",
-    addedInEpisode: 78,
+    status: "rejected",
   },
   {
-    canonical: "Christianity",
-    variations: ["Christianities"],
+    canonical: "christianity",
+    variations: ["Christian", "Christians"],
     category: "religion",
-    description: "Religion based on the life and teachings of Jesus Christ.",
-    status: "proposed",
-    addedInEpisode: 78,
+    status: "rejected",
   },
   {
     canonical: "Luke 10",
     variations: ["Luke"],
     category: "literature",
-    description:
-      "Chapter 10 of the Gospel of Luke, containing the parable of the Good Samaritan.",
-    status: "proposed",
-    addedInEpisode: 78,
+    status: "rejected",
   },
   {
     canonical: "Global South",
@@ -3031,10 +2968,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Utah",
     variations: ["Salt Lake City"],
     category: "place",
-    description:
-      "A state in the western United States, known for the Great Salt Lake.",
-    status: "proposed",
-    addedInEpisode: 78,
+    status: "rejected",
   },
   {
     canonical: "christian",
@@ -3075,9 +3009,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "donald trump",
     variations: ["trump"],
     category: "person",
-    description: "45th President of the United States",
-    status: "proposed",
-    addedInEpisode: 79,
+    status: "rejected",
   },
   {
     canonical: "cs lewis",
@@ -3101,10 +3033,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "world war ii",
     variations: ["World War II"],
     category: "event",
-    description:
-      "A global conflict from 1939 to 1945 involving a vast majority of the world's countries, forming two opposing military alliances.",
-    status: "proposed",
-    addedInEpisode: 79,
+    status: "rejected",
   },
   {
     canonical: "omniscience",
@@ -3137,28 +3066,19 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "acts 15",
     variations: ["Acts, chapter 15"],
     category: "literature",
-    description:
-      "A chapter in the Book of Acts that recounts the Jerusalem Council",
-    status: "proposed",
-    addedInEpisode: 80,
+    status: "rejected",
   },
   {
     canonical: "hebrew bible",
     variations: ["old testament"],
     category: "literature",
-    description:
-      "The collection of Jewish religious writings that served as the textual basis for both Old Testament and New Testament",
-    status: "proposed",
-    addedInEpisode: 80,
+    status: "rejected",
   },
   {
     canonical: "amos",
     variations: ["Book of Amos"],
     category: "character",
-    description:
-      "An Old Testament prophet whose book contains prophecies and moral teachings",
-    status: "proposed",
-    addedInEpisode: 80,
+    status: "rejected",
   },
 ];
 

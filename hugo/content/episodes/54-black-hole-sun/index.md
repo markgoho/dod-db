@@ -3,9 +3,9 @@ title: Black Hole Sun
 date: 2024-04-15T00:00:00.000Z
 episodeNumber: 54
 videoId: cY_sI0kis0g
-aliases:
+aliases: 
   - /episodes/54/
-tags:
+tags: 
   - Paul
   - Jesus
   - Gentiles
@@ -31,6 +31,7 @@ tags:
   - Cornelius
   - Holy Spirit
   - King David
+  - Melchizedek
   - Syria
   - Hebrews
   - Herod the Great
@@ -40,15 +41,15 @@ tags:
   - Samaria
   - Satan
   - Sodom
-books:
+books: 
   - Acts
   - Galatians
   - Amos
   - Isaiah
-segments:
+segments: 
   - Chapter and Verse
   - Conspiracy Watch
-segmentData:
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 240.085

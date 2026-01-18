@@ -3,9 +3,9 @@ title: "I'll make you a STAR!"
 date: 2023-08-14T00:00:00.000Z
 episodeNumber: 19
 videoId: fiptp1bU5qQ
-aliases:
+aliases: 
   - /episodes/19/
-tags:
+tags: 
   - Paul
   - Jesus
   - monotheism
@@ -14,6 +14,7 @@ tags:
   - Judaism
   - Abraham
   - Israel
+  - Melchizedek
   - angel
   - David Burnett
   - Eschatology
@@ -37,7 +38,7 @@ tags:
   - Sarah
   - Torah
   - Tower of Babel
-books:
+books: 
   - Psalms
   - 1 Corinthians
   - Deuteronomy
@@ -45,7 +46,7 @@ books:
   - Romans
   - Judges
   - Isaiah
-guests:
+guests: 
   - David A. Burnett
 draft: false
 ---

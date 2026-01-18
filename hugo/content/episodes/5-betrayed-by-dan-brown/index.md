@@ -3,9 +3,9 @@ title: Betrayed by Dan Brown
 date: 2023-05-08T00:00:00.000Z
 episodeNumber: 5
 videoId: G2s8VvaAgHQ
-aliases:
+aliases: 
   - /episodes/5/
-tags:
+tags: 
   - Jesus
   - Easter
   - Passover
@@ -29,12 +29,12 @@ tags:
   - monotheism
   - Paul
   - Romans
-books:
+books: 
   - Isaiah
-segments:
+segments: 
   - "All Right, Let's See It"
   - Urban Legends
-segmentData:
+segmentData: 
   - type: all-right-lets-see-it
     label: "All Right, Let's See It"
     startSeconds: 94

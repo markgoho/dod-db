@@ -3,9 +3,9 @@ title: "Take My Wife... Please!"
 date: 2024-07-22T00:00:00.000Z
 episodeNumber: 68
 videoId: ZwJai1EPbw4
-aliases:
+aliases: 
   - /episodes/68/
-tags:
+tags: 
   - Judah
   - Er
   - Onan
@@ -21,16 +21,16 @@ tags:
   - Samson
   - Satan
   - Ten Commandments
-books:
+books: 
   - Deuteronomy
   - Leviticus
   - Matthew
   - Genesis
   - Isaiah
   - Exodus
-segments:
+segments: 
   - Chapter and Verse
-segmentData:
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 2267.944

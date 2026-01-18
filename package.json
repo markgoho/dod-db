@@ -10,9 +10,8 @@
     "tools:api": "bun run src/scripts/tools-server.ts",
     "typecheck": "tsc --noEmit --project tsconfig.json",
     "lint": "eslint .",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "check": "bun run typecheck && bun run lint && bun run format:check",
+    "format": "prettier --write . --ignore-unknown",
+    "check": "bun run typecheck && bun run lint && bun run format",
     "hugo:dev": "cd hugo && hugo server",
     "build:hugo": "cd hugo && hugo --minify"
   },

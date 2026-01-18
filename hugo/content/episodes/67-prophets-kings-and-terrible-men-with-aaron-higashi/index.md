@@ -3,9 +3,9 @@ title: "Prophets, Kings, and Terrible Men"
 date: 2024-07-15T00:00:00.000Z
 episodeNumber: 67
 videoId: lKaNTTA4gWw
-aliases:
+aliases: 
   - /episodes/67/
-tags:
+tags: 
   - King David
   - King Saul
   - Israel
@@ -27,9 +27,9 @@ tags:
   - Joshua
   - Sheol
   - Talmud
-books:
+books: 
   - 1 Samuel
-guests:
+guests: 
   - Aaron Higashi
 draft: false
 ---

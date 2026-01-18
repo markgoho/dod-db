@@ -3,9 +3,9 @@ title: The Case of the Missing Verses
 date: 2023-07-31T00:00:00.000Z
 episodeNumber: 17
 videoId: naI65ELNhRw
-aliases:
+aliases: 
   - /episodes/17/
-tags:
+tags: 
   - King James Version
   - James
   - William Tyndale
@@ -30,16 +30,16 @@ tags:
   - Satan
   - Ten Commandments
   - textual criticism
-books:
+books: 
   - Mark
   - Matthew
   - John
   - Isaiah
   - Numbers
-segments:
+segments: 
   - "That's History"
   - Know Your Bible
-segmentData:
+segmentData: 
   - type: thats-history
     label: "That's History"
     startSeconds: 82

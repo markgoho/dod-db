@@ -3,9 +3,9 @@ title: Easter and the Undead
 date: 2024-03-18T00:00:00.000Z
 episodeNumber: 50
 videoId: vHKXU5rmwyo
-aliases:
+aliases: 
   - /episodes/50/
-tags:
+tags: 
   - Jesus
   - Jerusalem
   - Pontius Pilate
@@ -37,14 +37,14 @@ tags:
   - Herod the Great
   - Israel
   - Peter
-books:
+books: 
   - John
   - Luke
   - Matthew
   - Isaiah
-segments:
+segments: 
   - Chapter and Verse
-segmentData:
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 231

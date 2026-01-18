@@ -55,7 +55,7 @@ export async function updateTagInVocabulary(
     String.raw`\$&`,
   );
   const tagRegex = new RegExp(
-    String.raw`\t\{\s*canonical:\s*'${escapedCanonical}'[^}]+\},?\n`,
+    String.raw`\s+\{\s*canonical:\s*['"]${escapedCanonical}['"][\s\S]+?\},?\n`,
     "i",
   );
 
@@ -80,6 +80,8 @@ export async function updateTagInVocabulary(
   const newDescription =
     updates.description ??
     ("description" in existingTag ? existingTag.description : undefined);
+  const newAddedInEpisode =
+    "addedInEpisode" in existingTag ? existingTag.addedInEpisode : undefined;
 
   // Format the new entry (with proper escaping)
   const variationsString =
@@ -88,11 +90,15 @@ export async function updateTagInVocabulary(
       : "[]";
   const statusString = `, status: '${newStatus}'`;
   const caseSensitiveString = newCaseSensitive ? ", caseSensitive: true" : "";
+  const addedInEpisodeString =
+    newAddedInEpisode === undefined
+      ? ""
+      : `, addedInEpisode: ${newAddedInEpisode}`;
 
   const newEntry =
     newLlmVerify && newDescription
-      ? `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}', llmVerify: true, description: '${escapeForTsString(newDescription)}'${statusString}${caseSensitiveString} },\n`
-      : `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}'${statusString}${caseSensitiveString} },\n`;
+      ? `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}', llmVerify: true, description: '${escapeForTsString(newDescription)}'${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`
+      : `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}'${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`;
 
   // Replace the old entry with the new one
   const newContent = content.replace(tagRegex, newEntry);
@@ -115,6 +121,9 @@ export async function updateTagInVocabulary(
             description: newDescription,
             status: newStatus,
             caseSensitive: newCaseSensitive,
+            ...(newAddedInEpisode !== undefined && {
+              addedInEpisode: newAddedInEpisode,
+            }),
           }
         : {
             canonical: newCanonical,
@@ -122,6 +131,9 @@ export async function updateTagInVocabulary(
             category: newCategory,
             status: newStatus,
             caseSensitive: newCaseSensitive,
+            ...(newAddedInEpisode !== undefined && {
+              addedInEpisode: newAddedInEpisode,
+            }),
           };
     tagVocabulary[index] = updatedTag;
   }

@@ -3,9 +3,9 @@ title: The Bible and Disability
 date: 2023-11-20T00:00:00.000Z
 episodeNumber: 33
 videoId: 1qbh8bFGfvg
-aliases:
+aliases: 
   - /episodes/33/
-tags:
+tags: 
   - Paul
   - circumcision
   - Jesus
@@ -25,14 +25,14 @@ tags:
   - Judaism
   - King Saul
   - Romans
-books:
+books: 
   - 2 Corinthians
   - Galatians
   - Jeremiah
   - Revelation
   - Acts
   - 1 Corinthians
-guests:
+guests: 
   - Isaac Soon
 draft: false
 ---

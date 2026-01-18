@@ -3,9 +3,9 @@ title: Biblical Marriage
 date: 2024-02-05T00:00:00.000Z
 episodeNumber: 44
 videoId: BQOMbZtGs6E
-aliases:
+aliases: 
   - /episodes/44/
-tags:
+tags: 
   - Jesus
   - Paul
   - Jennifer Bird
@@ -20,14 +20,14 @@ tags:
   - Israel
   - Ten Commandments
   - YHWH
-books:
+books: 
   - Genesis
   - Matthew
   - 1 Corinthians
   - Ephesians
   - Leviticus
   - Galatians
-guests:
+guests: 
   - Jennifer Bird
 draft: false
 ---

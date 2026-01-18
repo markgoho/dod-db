@@ -34,6 +34,7 @@ export type SegmentType =
   | "textual-healing"
   | "thats-history"
   | "urban-legends"
+  | "watch-your-language"
   | "what-does-that-mean"
   | "what-is-that"
   | "whos-that"
@@ -74,6 +75,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "textual-healing": "Textual Healing",
   "thats-history": "That's History",
   "urban-legends": "Urban Legends",
+  "watch-your-language": "Watch Your Language",
   "what-does-that-mean": "What Does That Mean?",
   "what-is-that": "What is That?",
   "whos-that": "Who's That?",
@@ -117,6 +119,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "textual-healing": "#0891b2", // cyan-600 (textual analysis/manuscripts)
   "thats-history": "#84cc16", // lime-500 (lime green)
   "urban-legends": "#8b5cf6", // violet
+  "watch-your-language": "#16a34a", // green-600 (scholarly/linguistic)
   "what-does-that-mean": "#f59e0b", // amber
   "what-is-that": "#fb923c", // orange-400 (inquiry/exploration)
   "whos-that": "#0ea5e9", // sky-500 (sky blue)
@@ -172,6 +175,11 @@ export const SEGMENT_PATTERNS: Record<
     /welcome to.*urban legends/i,
     /segment.*urban legends/i,
     /urban legends.*spread.*far and wide/i,
+  ],
+  "watch-your-language": [
+    /watch your language/i,
+    /welcome to.*watch your language/i,
+    /let'?s do.*watch your language/i,
   ],
   "mcclellan-911": [/mcclellan 911/i, /what is your emergency/i],
   "is-it-canon": [/is it canon\?/i, /welcome to.*is it canon/i],
@@ -349,6 +357,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Examining textual criticism, manuscript variants, and biblical text transmission",
   "thats-history": "Historical context and background for biblical events",
   "urban-legends": "Examining popular myths and misconceptions about the Bible",
+  "watch-your-language":
+    "Exploring biblical languages, linguistics, etymology, translation issues, and the importance of language in biblical scholarship",
   "what-does-that-mean":
     "Explaining biblical/scholarly terminology and concepts",
   "what-is-that":

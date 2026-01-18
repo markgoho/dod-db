@@ -3,9 +3,9 @@ title: Wrastlin’ With God
 date: 2024-06-17T00:00:00.000Z
 episodeNumber: 63
 videoId: XO3fcbF6Jyc
-aliases:
+aliases: 
   - /episodes/63/
-tags:
+tags: 
   - Philistines
   - Israel
   - Samson
@@ -28,16 +28,16 @@ tags:
   - King James Version
   - Tamar
   - Ugarit
-books:
+books: 
   - Judges
   - Hosea
   - Genesis
   - Exodus
   - Ezekiel
   - Numbers
-segments:
+segments: 
   - Bible Heroes?
-segmentData:
+segmentData: 
   - type: bible-heroes
     label: Bible Heroes? (1)
     startSeconds: 130.475

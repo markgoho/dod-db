@@ -3,9 +3,9 @@ title: Adam and Steve (what the Bible says about homosexuality)
 date: 2023-06-12T00:00:00.000Z
 episodeNumber: 10
 videoId: gW6w-AOiKNM
-aliases:
+aliases: 
   - /episodes/10/
-tags:
+tags: 
   - Paul
   - angel
   - Adam
@@ -31,7 +31,7 @@ tags:
   - Luke
   - Septuagint
   - Univocality
-books:
+books: 
   - Leviticus
   - Genesis
   - Romans

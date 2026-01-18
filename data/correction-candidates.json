@@ -3706,7 +3706,9 @@
       "confidence": 45,
       "firstSeen": "2026-01-14T02:00:10.571Z",
       "lastSeen": "2026-01-15T04:25:26.712Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-01-18T14:38:17.101Z",
+      "reviewedBy": "UI Review"
     },
     "Lindsey→Lindsay": {
       "original": "Lindsey",
@@ -5469,7 +5471,95 @@
       "firstSeen": "2026-01-17T05:21:51.354Z",
       "lastSeen": "2026-01-17T05:21:51.354Z",
       "status": "pending"
+    },
+    "ideologies→etiologies": {
+      "original": "ideologies",
+      "corrected": "etiologies",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["iFp-3_c6QWQ"],
+      "examples": [
+        "\"we've got ideologies kind of\"",
+        "\"of other ideologies for the\""
+      ],
+      "correctedExamples": [
+        "\"we've got etiologies kind of\"",
+        "\"of other etiologies for the\""
+      ],
+      "timestamps": ["00:03:43.390", "00:09:18.640"],
+      "episodeIds": ["iFp-3_c6QWQ", "iFp-3_c6QWQ"],
+      "confidence": 15,
+      "firstSeen": "2026-01-18T14:29:15.493Z",
+      "lastSeen": "2026-01-18T14:29:15.493Z",
+      "status": "pending"
+    },
+    "millennium bce→millennium BCE": {
+      "original": "millennium bce",
+      "corrected": "millennium BCE",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["iFp-3_c6QWQ"],
+      "examples": [
+        "\"the second millennium bce, beginning of\"",
+        "\"the first millennium bce You've got\""
+      ],
+      "correctedExamples": [
+        "\"the second millennium BCE, beginning of\"",
+        "\"the first millennium BCE you've got\""
+      ],
+      "timestamps": ["00:05:18.910", "00:05:18.910"],
+      "episodeIds": ["iFp-3_c6QWQ", "iFp-3_c6QWQ"],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T14:29:15.493Z",
+      "lastSeen": "2026-01-18T14:29:15.493Z",
+      "status": "pending"
+    },
+    "hell→Hail": {
+      "original": "hell",
+      "corrected": "Hail",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["iFp-3_c6QWQ"],
+      "examples": [
+        "\"But yeah, hell, Hell Zeus\"",
+        "\"yeah, hell, Hell Zeus would\""
+      ],
+      "correctedExamples": [
+        "\"But yeah, Hail, Hail Zeus\"",
+        "\"yeah, Hail, Hail Zeus would\""
+      ],
+      "timestamps": ["00:32:05.490", "00:32:05.490"],
+      "episodeIds": ["iFp-3_c6QWQ", "iFp-3_c6QWQ"],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T14:29:15.493Z",
+      "lastSeen": "2026-01-18T14:29:15.493Z",
+      "status": "pending"
+    },
+    "Bible tea→Bible Tea": {
+      "original": "Bible tea",
+      "corrected": "Bible Tea",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["iFp-3_c6QWQ"],
+      "examples": [
+        "\"talks about Bible tea. Time to\"",
+        "\"spill the Bible tea. Who made\""
+      ],
+      "correctedExamples": [
+        "\"talks about Bible Tea. Time to\"",
+        "\"spill the Bible Tea. Who made\""
+      ],
+      "timestamps": ["00:34:56.869", "00:34:56.869"],
+      "episodeIds": ["iFp-3_c6QWQ", "iFp-3_c6QWQ"],
+      "confidence": 10,
+      "firstSeen": "2026-01-18T14:29:15.493Z",
+      "lastSeen": "2026-01-18T14:29:15.493Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-17T05:21:51.354Z"
+  "lastUpdated": "2026-01-18T14:38:17.101Z"
 }

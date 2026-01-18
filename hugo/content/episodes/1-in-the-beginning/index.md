@@ -3,9 +3,9 @@ title: In the Beginning
 date: 2023-04-08T00:00:00.000Z
 episodeNumber: 1
 videoId: 833s6y6kW2k
-aliases:
+aliases: 
   - /episodes/1/
-tags:
+tags: 
   - YHWH
   - Israel
   - Baal
@@ -43,16 +43,16 @@ tags:
   - monotheism
   - source criticism
   - Syria
-books:
+books: 
   - Genesis
   - Exodus
   - Isaiah
   - Deuteronomy
   - Psalms
-segments:
+segments: 
   - Chapter and Verse
   - What Does That Mean?
-segmentData:
+segmentData: 
   - type: chapter-and-verse
     label: Chapter and Verse
     startSeconds: 89

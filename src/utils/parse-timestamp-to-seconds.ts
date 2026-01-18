@@ -1,8 +1,9 @@
 /**
- * Parse timestamp string "HH:MM:SS.mmm" or "HH:MM:SS" into total seconds
+ * Parse timestamp string "[HH:MM:SS.mmm]" or "HH:MM:SS.mmm" or "HH:MM:SS" into total seconds.
+ * Handles both bracketed (from stored segments) and non-bracketed (from transcripts) formats.
  */
 export function parseTimestampToSeconds(timestamp: string): number {
-  const match = /^(\d{2}):(\d{2}):(\d{2})(?:\.(\d{3}))?$/.exec(timestamp);
+  const match = /^\[?(\d{2}):(\d{2}):(\d{2})(?:\.(\d{3}))?\]?$/.exec(timestamp);
   if (!match) return 0;
 
   const hours = Number.parseInt(match[1] ?? "0", 10);

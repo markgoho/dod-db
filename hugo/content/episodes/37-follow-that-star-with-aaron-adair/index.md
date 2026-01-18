@@ -3,9 +3,9 @@ title: Follow That Star!
 date: 2023-12-18T00:00:00.000Z
 episodeNumber: 37
 videoId: UHN2ZPsFyoY
-aliases:
+aliases: 
   - /episodes/37/
-tags:
+tags: 
   - Jesus
   - Bethlehem
   - Jerusalem
@@ -36,10 +36,10 @@ tags:
   - Paul
   - Peter
   - Satan
-books:
+books: 
   - Numbers
   - Genesis
-guests:
+guests: 
   - Aaron Adair
 draft: false
 ---

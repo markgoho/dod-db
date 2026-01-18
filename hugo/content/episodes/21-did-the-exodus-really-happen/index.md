@@ -3,9 +3,9 @@ title: Did the Exodus Really Happen?
 date: 2023-08-28T00:00:00.000Z
 episodeNumber: 21
 videoId: SHLLzroKzI0
-aliases:
+aliases: 
   - /episodes/21/
-tags:
+tags: 
   - Egypt
   - Israel
   - Moses
@@ -35,14 +35,14 @@ tags:
   - Masoretic Text
   - Moabites
   - Ugarit
-books:
+books: 
   - Exodus
   - Psalms
   - Numbers
-segments:
+segments: 
   - "That's History"
   - Chapter and Verse
-segmentData:
+segmentData: 
   - type: thats-history
     label: "That's History"
     startSeconds: 126
