@@ -1,6 +1,9 @@
 {{- /* Parse transcript line: [HH:MM:SS.mmm] Speaker Name: Text content */ -}}
+{{- /* IMPORTANT: This shortcode supports nested shortcodes (e.g., scripture references) */ -}}
+{{- /* The regex uses (?s) and [\s\S]+ to match content including newlines */ -}}
+{{- /* .Page.RenderString processes any nested shortcodes in the text */ -}}
 {{- $inner := .Inner -}}
-{{- $matches := findRESubmatch `\[(\d{2}):(\d{2}):(\d{2})\.(\d{3})\]\s*([^:]+):\s*(.+)` $inner -}}
+{{- $matches := findRESubmatch `(?s)\[(\d{2}):(\d{2}):(\d{2})\.(\d{3})\]\s*([^:]+):\s*([\s\S]+)` $inner -}}
 
 {{- if $matches -}}
   {{- $hours := index (index $matches 0) 1 -}}
@@ -27,6 +30,8 @@
   {{- $lineIdRaw := printf "t-%.3f" $totalSeconds -}}
   {{- $lineId := replace $lineIdRaw "." "-" -}}
 
+  {{- /* Render nested shortcodes in the text */ -}}
+  {{- $renderedText := .Page.RenderString $text -}}
 
   <article
     class="transcript-line"
@@ -39,7 +44,7 @@
     <span class="timestamp" data-seconds="{{ $totalSeconds }}"
       >{{ $hours }}:{{ $minutes }}:{{ $seconds }}</span
     >
-    <p class="transcript-text">{{ $text | safeHTML }}</p>
+    <p class="transcript-text">{{ $renderedText | safeHTML }}</p>
   </article>
 {{- else -}}
   {{- /* Fallback: render as plain text if parsing fails */ -}}
