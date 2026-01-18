@@ -29,10 +29,12 @@ tags:
   - Africa
   - Ammonites
   - Amorites
+  - Egyptians
   - Flood
   - Jerusalem
   - Joshua
   - Masoretic Text
+  - Midianites
   - Moabites
   - Ugarit
 books: 

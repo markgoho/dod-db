@@ -40,6 +40,7 @@ tags:
   - King David
   - King Josiah
   - Luke
+  - Midianites
   - Philistines
   - Samuel
   - Septuagint

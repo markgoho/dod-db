@@ -38,6 +38,7 @@ tags:
   - Dead Sea Scrolls
   - Deuteronomy
   - Egypt
+  - Egyptians
   - Gideon
   - Hagar
   - Judas Iscariot

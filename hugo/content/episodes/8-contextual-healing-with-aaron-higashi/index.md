@@ -13,6 +13,7 @@ tags:
   - Hell
   - James
   - Jerusalem
+  - Midianites
   - Nehemiah
   - Paul
   - Second Temple period

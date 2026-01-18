@@ -33,6 +33,7 @@ tags:
   - Joshua
   - Judah
   - Latin Vulgate
+  - Midianites
   - Nephilim
   - Ugarit
   - Ammonites

@@ -27,6 +27,7 @@ tags:
   - King James Version
   - Latin Vulgate
   - Mesopotamian
+  - Midianites
   - Noah
 books: 
   - Genesis

@@ -27,6 +27,7 @@ tags:
   - Adam
   - angel
   - Egypt
+  - Egyptians
   - etiology
   - Eve
   - Islam

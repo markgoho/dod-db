@@ -49,6 +49,7 @@ tags:
   - Didache
   - First Clement
   - Galilee
+  - Midianites
   - Moses
   - YHWH
 books: 

@@ -7,8 +7,10 @@ aliases:
   - /episodes/74/
 tags: 
   - Ishmael
+  - Midianites
   - Joseph
   - Egypt
+  - Reuben
   - Judah
   - Deuteronomy
   - Torah

@@ -9,6 +9,7 @@ tags:
   - YHWH
   - Egypt
   - Jesus
+  - Egyptians
   - Moses
   - Hebrews
   - Aaron

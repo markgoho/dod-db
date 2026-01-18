@@ -116,6 +116,10 @@
         "mentions": 1
       },
       {
+        "tag": "Egyptians",
+        "mentions": 1
+      },
+      {
         "tag": "Esau",
         "mentions": 1
       },
@@ -1522,6 +1526,10 @@
       },
       {
         "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Midianites",
         "mentions": 1
       },
       {
@@ -3408,6 +3416,10 @@
         "mentions": 2
       },
       {
+        "tag": "Midianites",
+        "mentions": 2
+      },
+      {
         "tag": "Nephilim",
         "mentions": 2
       },
@@ -3976,6 +3988,10 @@
         "mentions": 1
       },
       {
+        "tag": "Midianites",
+        "mentions": 1
+      },
+      {
         "tag": "Moses",
         "mentions": 1
       },
@@ -4154,6 +4170,10 @@
         "mentions": 1
       },
       {
+        "tag": "Egyptians",
+        "mentions": 1
+      },
+      {
         "tag": "Flood",
         "mentions": 1
       },
@@ -4167,6 +4187,10 @@
       },
       {
         "tag": "Masoretic Text",
+        "mentions": 1
+      },
+      {
+        "tag": "Midianites",
         "mentions": 1
       },
       {
@@ -4337,6 +4361,10 @@
       },
       {
         "tag": "Mesopotamian",
+        "mentions": 1
+      },
+      {
+        "tag": "Midianites",
         "mentions": 1
       },
       {
@@ -6194,6 +6222,10 @@
         "mentions": 3
       },
       {
+        "tag": "Egyptians",
+        "mentions": 2
+      },
+      {
         "tag": "apocalypse",
         "mentions": 1
       },
@@ -7693,6 +7725,10 @@
         "mentions": 1
       },
       {
+        "tag": "Egyptians",
+        "mentions": 1
+      },
+      {
         "tag": "etiology",
         "mentions": 1
       },
@@ -8744,6 +8780,10 @@
       },
       {
         "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Midianites",
         "mentions": 1
       },
       {
@@ -10194,6 +10234,10 @@
       },
       {
         "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Egyptians",
         "mentions": 1
       },
       {
@@ -13673,11 +13717,19 @@
         "mentions": 30
       },
       {
+        "tag": "Midianites",
+        "mentions": 26
+      },
+      {
         "tag": "Joseph",
         "mentions": 25
       },
       {
         "tag": "Egypt",
+        "mentions": 12
+      },
+      {
+        "tag": "Reuben",
         "mentions": 12
       },
       {
@@ -13821,6 +13873,10 @@
       {
         "tag": "Jesus",
         "mentions": 12
+      },
+      {
+        "tag": "Egyptians",
+        "mentions": 11
       },
       {
         "tag": "Moses",

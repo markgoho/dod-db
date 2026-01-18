@@ -16,6 +16,7 @@ tags:
   - Hebrews
   - YHWH
   - Israel
+  - Egyptians
   - apocalypse
   - Candida Moss
   - Egypt

@@ -33,6 +33,7 @@ tags:
   - Paul
   - Dead Sea Scrolls
   - Deuteronomy
+  - Egyptians
   - Esau
   - Flood
   - Joseph

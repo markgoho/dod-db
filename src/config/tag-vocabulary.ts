@@ -2653,24 +2653,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["Ezekiel"],
     category: "literature",
     status: "rejected",
-  },
-  {
-    canonical: "Midianites",
-    variations: [],
-    category: "people",
-    description:
-      "Nomadic people living in Northwest Arabia, appearing in the narratives of Exodus and Judges.",
-    status: "proposed",
-    addedInEpisode: 74,
-  },
-  {
-    canonical: "Reuben",
-    variations: ["Reuben's"],
-    category: "character",
-    description: "Firstborn son of Jacob and Leah in the Book of Genesis.",
-    status: "proposed",
-    addedInEpisode: 74,
-  },
+  },	{ canonical: 'Midianites', variations: [], category: 'people', llmVerify: true, description: 'Nomadic people living in Northwest Arabia, appearing in the narratives of Exodus and Judges.', status: 'accepted', addedInEpisode: 74 },
   {
     canonical: "pharaoh",
     variations: [],
@@ -2812,16 +2795,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["First Samuel"],
     category: "literature",
     status: "rejected",
-  },
-  {
-    canonical: "Numbers 6",
-    variations: [],
-    category: "literature",
-    description:
-      "Chapter six of the Book of Numbers in the Hebrew Bible containing the priestly blessing",
-    status: "proposed",
-    addedInEpisode: 73,
-  },
+  },	{ canonical: 'Numbers 6', variations: [], category: 'literature', status: 'rejected', addedInEpisode: 73 },
   {
     canonical: "Ancient Near East",
     variations: [],
@@ -2830,15 +2804,7 @@ export const tagVocabulary: TagDefinition[] = [
       "A geographical region encompassing the area of modern-day Middle East",
     status: "proposed",
     addedInEpisode: 73,
-  },
-  {
-    canonical: "Egyptians",
-    variations: [],
-    category: "people",
-    description: "The people of ancient Egypt.",
-    status: "proposed",
-    addedInEpisode: 73,
-  },
+  },	{ canonical: 'Egyptians', variations: [], category: 'people', status: 'accepted', addedInEpisode: 73 },
   {
     canonical: "religion",
     variations: ["religio", "religions", "religious"],
