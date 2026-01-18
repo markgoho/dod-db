@@ -21,6 +21,7 @@ tags:
   - apocalypse
   - Athanasius of Alexandria
   - baptism
+  - Catholicism
   - Eusebius
   - Hypostasis
   - Israel

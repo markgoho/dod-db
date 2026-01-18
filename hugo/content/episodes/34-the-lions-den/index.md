@@ -30,6 +30,7 @@ tags:
   - Median Kingdom
   - Second Temple period
   - Adam
+  - Catholicism
   - Dead Sea
   - Easter
   - Egypt

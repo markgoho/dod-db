@@ -17,6 +17,7 @@ tags:
   - Jerusalem
   - King James Version
   - Romans
+  - Catholicism
   - inerrancy
   - Luke
   - Pastoral Epistles

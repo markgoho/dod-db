@@ -25,6 +25,7 @@ tags:
   - Judas Iscariot
   - angel
   - Bart Ehrman
+  - Catholicism
   - Ishmael
   - King James Version
   - Septuagint

@@ -16,6 +16,7 @@ tags:
   - Mary Magdalene
   - Ten Commandments
   - Barnabas
+  - Catholicism
   - Didache
   - Holy Spirit
   - Isaac

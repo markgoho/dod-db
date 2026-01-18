@@ -21,6 +21,7 @@ tags:
   - Jeremiah
   - YHWH
   - Book of Enoch
+  - Catholicism
   - Judaism
   - Leningrad Codex
   - Matthew
@@ -50,6 +51,7 @@ tags:
   - Jonah
   - Sarah
   - Syria
+  - The Reformation
 books: 
   - John
   - Matthew

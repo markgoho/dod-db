@@ -24,6 +24,7 @@ tags:
   - Jeremiah
   - King Saul
   - monotheism
+  - Nehemiah
   - Samaria
   - Samuel
   - Abraham
@@ -44,6 +45,7 @@ tags:
   - Nineveh
   - Philistines
   - Samson
+  - The Reformation
   - Torah
 books: 
   - Genesis

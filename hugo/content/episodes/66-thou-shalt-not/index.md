@@ -20,6 +20,7 @@ tags:
   - King James Version
   - Onan
   - Ugarit
+  - Catholicism
   - Cherubim
   - Elephantine
   - Elijah

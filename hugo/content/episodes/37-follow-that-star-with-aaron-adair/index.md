@@ -23,6 +23,7 @@ tags:
   - Adam
   - apocalypse
   - Babylon
+  - Catholicism
   - Dead Sea Scrolls
   - Herod the Great
   - Isaiah

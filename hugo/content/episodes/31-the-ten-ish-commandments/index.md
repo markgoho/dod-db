@@ -24,6 +24,7 @@ tags:
   - Council of Jerusalem
   - Jerusalem
   - Talmud
+  - Catholicism
   - Ethical Decalogue
   - Josephus
   - Septuagint

@@ -16,6 +16,7 @@ tags:
   - Desiderius Erasmus
   - Sir Thomas More
   - YHWH
+  - Catholicism
   - Deuteronomy
   - Monotheism
   - Textus Receptus
@@ -38,6 +39,7 @@ tags:
   - Judaism
   - Martin Luther
   - Persia
+  - The Reformation
   - Trinity
 books: 
   - Genesis

@@ -25,7 +25,9 @@ tags:
   - Judaism
   - Athanasius of Alexandria
   - 2 Maccabees
+  - Catholicism
   - Ishmael
+  - The Reformation
   - Dead Sea Scrolls
   - Egypt
   - Hebrews

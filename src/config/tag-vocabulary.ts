@@ -351,7 +351,7 @@ export const tagVocabulary: TagDefinition[] = [
   // THEOLOGICAL CONCEPTS (27 terms)
   {
     canonical: "YHWH",
-    variations: ["Yahweh", "Adonai", "the Lord", "ancient of days"],
+    variations: ["Yahweh", "Adonai"],
     category: "character",
     status: "accepted",
   },
@@ -2296,9 +2296,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Richard Steiner",
     variations: ["Steiner"],
     category: "person",
-    description:
-      "Scholar who wrote 'Disembodied Souls: The Nephesh in Israel and Kindred Spirits in the Ancient Near East'",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 65,
   },
   {
@@ -2329,9 +2327,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Establishment Clause",
     variations: [],
     category: "event",
-    description:
-      "A clause in the First Amendment to the U.S. Constitution that prohibits the government from establishing a religion",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 66,
   },
   { canonical: "Texas", variations: [], category: "place", status: "rejected" },
@@ -2345,9 +2341,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "First Amendment",
     variations: [],
     category: "event",
-    description:
-      "An amendment to the U.S. Constitution regarding freedom of speech and religion, relevant in the context of Establishment Clause cases",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 66,
   },
   {
@@ -2491,9 +2485,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Aristotle",
     variations: ["Aristotelian"],
     category: "person",
-    description:
-      "Ancient Greek philosopher and scientist, influential in Western thought",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 70,
   },
   {
@@ -2653,9 +2645,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Leviticus",
     variations: ["Leviticus'"],
     category: "literature",
-    description:
-      "Third book of the Hebrew Bible/Old Testament, containing laws and priestly regulations.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 74,
   },
   {
@@ -2723,15 +2713,6 @@ export const tagVocabulary: TagDefinition[] = [
     category: "place",
     description:
       "Major river in Egypt, central to the narrative of the plagues in the Book of Exodus.",
-    status: "proposed",
-    addedInEpisode: 75,
-  },
-  {
-    canonical: "adoni",
-    variations: ["Adonai"],
-    category: "theology",
-    description:
-      "Hebrew name meaning 'Lord' or 'Master,' often used as a substitute for the tetragrammaton YHWH.",
     status: "proposed",
     addedInEpisode: 75,
   },
@@ -2882,11 +2863,10 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 77,
   },
   {
-    canonical: "Catholic Church",
-    variations: ["Catholic"],
+    canonical: "Catholicism",
+    variations: ["Catholic", "Catholic Church"],
     category: "religion",
-    description: "The largest Christian church, headed by the Pope.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 77,
   },
   {
@@ -2911,15 +2891,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
   },
   {
-    canonical: "Cecil Cicirello",
-    variations: ["Cecil"],
-    category: "person",
-    description:
-      "Co-host of the Lawful Assembly podcast, described as an atheist and secular humanist.",
-    status: "proposed",
-    addedInEpisode: 78,
-  },
-  {
     canonical: "United States",
     variations: ["US"],
     category: "place",
@@ -2941,27 +2912,14 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Global South",
     variations: ["global south"],
     category: "place",
-    description:
-      "Term used to refer to countries generally located in the Southern Hemisphere, often associated with developing economies.",
-    status: "proposed",
-    addedInEpisode: 78,
-  },
-  {
-    canonical: "Nehemiah",
-    variations: ["Nehemiah"],
-    category: "character",
-    description:
-      "A Jewish leader in the 5th century BCE who supervised the rebuilding of Jerusalem after the Babylonian exile.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 78,
   },
   {
     canonical: "Good Samaritan",
     variations: ["Good Samaritan story"],
     category: "character",
-    description:
-      "A figure in a parable told by Jesus in the Gospel of Luke, known for his compassion towards a stranger in need.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 78,
   },
   {
@@ -2979,12 +2937,13 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 79,
   },
   {
-    canonical: "reformation",
-    variations: ["The Reformation"],
+    canonical: "The Reformation",
+    variations: ["Reformationist", "Reformationism"],
     category: "event",
+    llmVerify: true,
     description:
       "16th-century religious and political upheaval that divided Western Christianity and challenged papal authority.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 79,
   },
   {
@@ -3015,18 +2974,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "cs lewis",
     variations: ["lewis"],
     category: "person",
-    description:
-      "British author and Christian apologist known for works like The Chronicles of Narnia and Mere Christianity.",
-    status: "proposed",
-    addedInEpisode: 79,
-  },
-  {
-    canonical: "rudolf bultmann",
-    variations: ["bultmann"],
-    category: "person",
-    description:
-      "German Lutheran theologian and professor, known for his work on the demythologization of the New Testament.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 79,
   },
   {
@@ -3079,6 +3027,27 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["Book of Amos"],
     category: "character",
     status: "rejected",
+  },
+  {
+    canonical: "Rev Karla Kamstra",
+    variations: ["Karla", "@RevKarla"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 82,
+  },
+  {
+    canonical: "patriarchy",
+    variations: [],
+    category: "theology",
+    status: "rejected",
+    addedInEpisode: 82,
+  },
+  {
+    canonical: "Kentucky",
+    variations: [],
+    category: "place",
+    status: "rejected",
+    addedInEpisode: 82,
   },
 ];
 

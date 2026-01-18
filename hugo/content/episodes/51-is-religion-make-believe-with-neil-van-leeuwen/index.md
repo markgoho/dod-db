@@ -6,6 +6,7 @@ videoId: qNROe-Slo8Y
 aliases: 
   - /episodes/51/
 tags: 
+  - Catholicism
   - Dead Sea Scrolls
   - Garden of Eden
   - Jesus

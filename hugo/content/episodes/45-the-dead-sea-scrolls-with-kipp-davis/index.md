@@ -26,6 +26,7 @@ tags:
   - Masada
   - Essenes
   - Moses
+  - Nehemiah
   - Trinity
   - YHWH
   - archaeology

@@ -18,6 +18,7 @@ tags:
   - Samuel
   - Baal
   - Bethel
+  - Catholicism
   - Ham
   - inerrancy
   - Judah

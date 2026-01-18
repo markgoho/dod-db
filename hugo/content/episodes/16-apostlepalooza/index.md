@@ -26,6 +26,7 @@ tags:
   - Moses
   - YHWH
   - Bart Ehrman
+  - Catholicism
   - El
   - Michael
   - Sarah

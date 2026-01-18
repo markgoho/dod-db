@@ -25,6 +25,7 @@ tags:
   - Torah
   - Aaron
   - Carthage
+  - Catholicism
   - Deuteronomy
   - etiology
   - Hell
@@ -33,6 +34,7 @@ tags:
   - Judas Iscariot
   - Mesopotamian
   - Moab
+  - Nehemiah
   - Paul
   - Philistines
   - Samuel

@@ -14,6 +14,7 @@ tags:
   - Univocality
   - YHWH
   - Athenagoras
+  - Catholicism
   - divine council
   - Egypt
   - El

@@ -17,6 +17,7 @@ tags:
   - circumcision
   - Pastoral Epistles
   - Matthew
+  - Catholicism
   - Philo of Alexandria
   - Rapture
   - Trinity

@@ -29,6 +29,7 @@ tags:
   - Saint Titus
   - biblical canon
   - Book of Enoch
+  - Catholicism
   - Dead Sea Scrolls
   - Hebrews
   - Israel
