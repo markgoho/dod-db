@@ -86,12 +86,13 @@ function getVocabularyResponse(): TagVocabularyResponse[] {
 }
 
 function mergeVariationsCaseInsensitive(
-  acceptedVariations: string[],
+  acceptedTag: TagDefinition,
   proposedTag: TagDefinition,
-): string[] {
-  const mergedVariations = [...acceptedVariations];
+): { mergedVariations: string[]; addedVariations: string[] } {
+  const mergedVariations = [...acceptedTag.variations];
+  const addedVariations: string[] = [];
   const existingTerms = new Set(
-    [proposedTag.canonical, ...acceptedVariations].map(term =>
+    [acceptedTag.canonical, ...acceptedTag.variations].map(term =>
       term.toLowerCase(),
     ),
   );
@@ -103,10 +104,53 @@ function mergeVariationsCaseInsensitive(
     }
 
     mergedVariations.push(variation);
+    addedVariations.push(variation);
     existingTerms.add(lowerVariation);
   }
 
-  return mergedVariations;
+  return { mergedVariations, addedVariations };
+}
+
+function getMergeMessage(
+  proposedCanonical: string,
+  acceptedCanonical: string,
+  addedVariations: string[],
+): string {
+  if (addedVariations.length === 0) {
+    return `Merged "${proposedCanonical}" into "${acceptedCanonical}". No new variations were added; the proposal was already covered.`;
+  }
+
+  const variationLabel =
+    addedVariations.length === 1 ? "variation" : "variations";
+  return `Merged "${proposedCanonical}" into "${acceptedCanonical}". Added ${addedVariations.length} new ${variationLabel}: ${addedVariations.join(", ")}.`;
+}
+
+function getMergeLogLine(addedVariations: string[]): string {
+  if (addedVariations.length === 0) {
+    return "No new variations were added; accepted tag already covered the proposal.";
+  }
+
+  return `Added variations: ${addedVariations.join(", ")}`;
+}
+
+function formatMergeResult(
+  proposedCanonical: string,
+  acceptedCanonical: string,
+  addedVariations: string[],
+) {
+  return {
+    success: true,
+    message: getMergeMessage(
+      proposedCanonical,
+      acceptedCanonical,
+      addedVariations,
+    ),
+    addedVariations,
+    addedVariationCount: addedVariations.length,
+    mergeTarget: acceptedCanonical,
+    mergeSource: proposedCanonical,
+    logLine: getMergeLogLine(addedVariations),
+  };
 }
 
 const PORT = 3001; // API server on separate port
@@ -854,10 +898,8 @@ const _server = Bun.serve({
           );
         }
 
-        const mergedVariations = mergeVariationsCaseInsensitive(
-          acceptedTag.variations,
-          proposedTag,
-        );
+        const { mergedVariations, addedVariations } =
+          mergeVariationsCaseInsensitive(acceptedTag, proposedTag);
 
         await updateTagInVocabulary(acceptedCanonical, {
           variations: mergedVariations,
@@ -866,10 +908,13 @@ const _server = Bun.serve({
 
         statsCache.data = null;
 
-        return jsonResponse({
-          success: true,
-          message: `Merged "${proposedCanonical}" into "${acceptedCanonical}"`,
-        });
+        return jsonResponse(
+          formatMergeResult(
+            proposedCanonical,
+            acceptedCanonical,
+            addedVariations,
+          ),
+        );
       } catch (error) {
         console.error("Error merging tag:", error);
         return jsonResponse(

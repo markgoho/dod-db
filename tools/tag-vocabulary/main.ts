@@ -1111,6 +1111,46 @@ async function dismissTag(index: number): Promise<void> {
   }
 }
 
+function showMergeStatus(message: string): void {
+  const statusContainer = document.querySelector("#migration-status");
+  const statusBadge = document.querySelector("#migration-status-badge");
+  const logsContainer = document.querySelector("#migration-logs");
+
+  if (!statusContainer || !statusBadge || !logsContainer) {
+    return;
+  }
+
+  statusContainer.classList.add("show");
+  statusBadge.textContent = "✓ Tag Merged";
+  statusBadge.className = "status-badge completed";
+
+  const existingText = logsContainer.textContent?.trim();
+  logsContainer.textContent = existingText
+    ? `${existingText}\n${message}`
+    : message;
+}
+
+function showMergeResult(data: {
+  message?: string;
+  addedVariationCount?: number;
+  mergeSource?: string;
+  mergeTarget?: string;
+}): void {
+  if (data.message) {
+    showMergeStatus(data.message);
+    return;
+  }
+
+  const source = data.mergeSource ?? "proposal";
+  const target = data.mergeTarget ?? "accepted tag";
+  const count = data.addedVariationCount ?? 0;
+  const fallbackMessage =
+    count === 0
+      ? `Merged "${source}" into "${target}". No new variations were added.`
+      : `Merged "${source}" into "${target}" and added ${count} new variation${count === 1 ? "" : "s"}.`;
+  showMergeStatus(fallbackMessage);
+}
+
 async function mergeTag(index: number): Promise<void> {
   const card = document.querySelector(`#proposed-card-${index}`) as HTMLElement;
   if (!card) return;
@@ -1142,15 +1182,17 @@ async function mergeTag(index: number): Promise<void> {
       },
     );
 
+    const data = await response.json();
+
     if (!response.ok) {
-      const error = await response.json();
-      throw new Error(error.error || "Failed to merge tag");
+      throw new Error(data.error || "Failed to merge tag");
     }
 
     proposedTags.splice(index, 1);
     renderProposedTags();
     loadVocabulary();
     loadAnalytics();
+    showMergeResult(data);
   } catch (error) {
     alert(
       `Error merging tag: ${error instanceof Error ? error.message : "Unknown error"}`,

@@ -436,7 +436,7 @@ export const tagVocabulary: TagDefinition[] = [
   { canonical: "Sheol", variations: [], category: "place", status: "accepted" },
   {
     canonical: "Satan",
-    variations: ["the devil", "devil"],
+    variations: ["the devil", "devil", "satanic"],
     category: "theology",
     status: "accepted",
   },
@@ -1124,7 +1124,7 @@ export const tagVocabulary: TagDefinition[] = [
   { canonical: "east", variations: [], category: "place", status: "rejected" },
   {
     canonical: "Gospel of James",
-    variations: ["protevangelium of james"],
+    variations: ["protevangelium of james", "Proto-Gospel of James"],
     category: "literature",
     llmVerify: true,
     description:
@@ -3477,14 +3477,6 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 91,
   },
   {
-    canonical: "satanic",
-    variations: ["Satan"],
-    category: "theology",
-    description: "Related to Satan or Satanism; considered evil or demonic",
-    status: "proposed",
-    addedInEpisode: 91,
-  },
-  {
     canonical: "America",
     variations: ["American"],
     category: "place",
@@ -3725,15 +3717,6 @@ export const tagVocabulary: TagDefinition[] = [
       "In Greek mythology and the New Testament, Hades is the underworld, the abode of the dead.",
     status: "proposed",
     addedInEpisode: 98,
-  },
-  {
-    canonical: "Proto-Gospel of James",
-    variations: ["Protevangelium of James"],
-    category: "literature",
-    description:
-      "Also known as the Protevangelium of James, a 2nd-century infancy gospel expanding on the birth and early life of Mary",
-    status: "proposed",
-    addedInEpisode: 99,
   },
   {
     canonical: "Galatians",
