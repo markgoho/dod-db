@@ -31,6 +31,7 @@ tags:
   - James
   - Moses
   - Paul
+  - Beelzebul
   - Dead Sea Scrolls
   - Deuteronomy
   - Egyptians

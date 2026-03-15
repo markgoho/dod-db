@@ -14,6 +14,7 @@ tags:
   - John of Patmos
   - Athanasius of Alexandria
   - apocalypse
+  - Arius
   - Armageddon
   - Daniel
   - Peter
@@ -23,6 +24,7 @@ tags:
   - Hebrews
   - Matthew
   - Trinity
+  - Apocrypha
   - Babylon
   - Christian Nationalism
   - Domitian

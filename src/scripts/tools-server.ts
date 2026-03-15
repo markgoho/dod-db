@@ -46,6 +46,69 @@ import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 import { updateVideoSegments } from "../storage/update-video-segments.js";
 import { removeTagFromEpisode } from "../utils/remove-tag-from-episode.js";
 
+type TagVocabularyResponse = TagDefinition & {
+  duplicateOf?: string;
+};
+
+function getTagTerms(tag: TagDefinition): string[] {
+  return [tag.canonical, ...tag.variations];
+}
+
+function findAcceptedDuplicate(tag: TagDefinition): string | undefined {
+  if (tag.status !== "proposed") {
+    return undefined;
+  }
+
+  const proposedTerms = new Set(
+    getTagTerms(tag).map(term => term.toLowerCase()),
+  );
+
+  return tagVocabulary.find(candidate => {
+    if (candidate.status === "proposed" || candidate.status === "rejected") {
+      return false;
+    }
+
+    if (candidate.canonical.toLowerCase() === tag.canonical.toLowerCase()) {
+      return false;
+    }
+
+    return getTagTerms(candidate).some(term =>
+      proposedTerms.has(term.toLowerCase()),
+    );
+  })?.canonical;
+}
+
+function getVocabularyResponse(): TagVocabularyResponse[] {
+  return tagVocabulary.map(tag => ({
+    ...tag,
+    duplicateOf: findAcceptedDuplicate(tag),
+  }));
+}
+
+function mergeVariationsCaseInsensitive(
+  acceptedVariations: string[],
+  proposedTag: TagDefinition,
+): string[] {
+  const mergedVariations = [...acceptedVariations];
+  const existingTerms = new Set(
+    [proposedTag.canonical, ...acceptedVariations].map(term =>
+      term.toLowerCase(),
+    ),
+  );
+
+  for (const variation of getTagTerms(proposedTag)) {
+    const lowerVariation = variation.toLowerCase();
+    if (existingTerms.has(lowerVariation)) {
+      continue;
+    }
+
+    mergedVariations.push(variation);
+    existingTerms.add(lowerVariation);
+  }
+
+  return mergedVariations;
+}
+
 const PORT = 3001; // API server on separate port
 
 // Cache for tag statistics (5 minute TTL)
@@ -453,7 +516,7 @@ const _server = Bun.serve({
 
     // Tag Vocabulary API: Get tag vocabulary
     if (url.pathname === "/api/tag-vocabulary/vocabulary") {
-      return jsonResponse(tagVocabulary);
+      return jsonResponse(getVocabularyResponse());
     }
 
     // Tag Vocabulary API: Get available categories
@@ -689,6 +752,130 @@ const _server = Bun.serve({
           {
             error:
               error instanceof Error ? error.message : "Failed to approve tag",
+          },
+          500,
+        );
+      }
+    }
+
+    // Tag Vocabulary API: Dismiss a proposed tag
+    if (
+      url.pathname.startsWith("/api/tag-vocabulary/vocabulary/dismiss/") &&
+      request.method === "POST"
+    ) {
+      try {
+        const canonical = decodeURIComponent(
+          url.pathname.replace("/api/tag-vocabulary/vocabulary/dismiss/", ""),
+        );
+        const tag = findTag(canonical);
+
+        if (!tag) {
+          return jsonResponse({ error: `Tag "${canonical}" not found` }, 404);
+        }
+
+        if (tag.status !== "proposed") {
+          return jsonResponse(
+            { error: `Only proposed tags can be dismissed` },
+            400,
+          );
+        }
+
+        await deleteTagFromVocabulary(canonical);
+
+        statsCache.data = null;
+
+        return jsonResponse({
+          success: true,
+          message: `Tag "${canonical}" dismissed`,
+        });
+      } catch (error) {
+        console.error("Error dismissing tag:", error);
+        return jsonResponse(
+          {
+            error:
+              error instanceof Error ? error.message : "Failed to dismiss tag",
+          },
+          500,
+        );
+      }
+    }
+
+    // Tag Vocabulary API: Merge a proposed tag into an accepted tag
+    if (
+      url.pathname === "/api/tag-vocabulary/vocabulary/merge" &&
+      request.method === "POST"
+    ) {
+      try {
+        const body = (await request.json()) as {
+          proposedCanonical?: string;
+          acceptedCanonical?: string;
+        };
+        const { proposedCanonical, acceptedCanonical } = body;
+
+        if (!proposedCanonical || !acceptedCanonical) {
+          return jsonResponse(
+            {
+              error: "proposedCanonical and acceptedCanonical are required",
+            },
+            400,
+          );
+        }
+
+        const proposedTag = findTag(proposedCanonical);
+        if (!proposedTag) {
+          return jsonResponse(
+            { error: `Tag "${proposedCanonical}" not found` },
+            404,
+          );
+        }
+
+        if (proposedTag.status !== "proposed") {
+          return jsonResponse(
+            { error: `Only proposed tags can be merged` },
+            400,
+          );
+        }
+
+        const acceptedTag = findTag(acceptedCanonical);
+        if (!acceptedTag) {
+          return jsonResponse(
+            { error: `Tag "${acceptedCanonical}" not found` },
+            404,
+          );
+        }
+
+        if (
+          acceptedTag.status === "proposed" ||
+          acceptedTag.status === "rejected"
+        ) {
+          return jsonResponse(
+            { error: `Merge target must be an accepted tag` },
+            400,
+          );
+        }
+
+        const mergedVariations = mergeVariationsCaseInsensitive(
+          acceptedTag.variations,
+          proposedTag,
+        );
+
+        await updateTagInVocabulary(acceptedCanonical, {
+          variations: mergedVariations,
+        });
+        await deleteTagFromVocabulary(proposedCanonical);
+
+        statsCache.data = null;
+
+        return jsonResponse({
+          success: true,
+          message: `Merged "${proposedCanonical}" into "${acceptedCanonical}"`,
+        });
+      } catch (error) {
+        console.error("Error merging tag:", error);
+        return jsonResponse(
+          {
+            error:
+              error instanceof Error ? error.message : "Failed to merge tag",
           },
           500,
         );

@@ -6,6 +6,7 @@ videoId: p8CjJR4yhfk
 aliases:
   - /episodes/20/
 tags:
+  - Apocrypha
   - Flood
   - biblical canon
   - Methuselah

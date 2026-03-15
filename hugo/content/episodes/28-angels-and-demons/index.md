@@ -12,6 +12,7 @@ tags:
   - Baal
   - Israel
   - Satan
+  - Beelzebul
   - Cherubim
   - Ugarit
   - Gabriel
@@ -27,6 +28,7 @@ tags:
   - Mesopotamian
   - Moses
   - Persia
+  - Apocrypha
   - Babylon
   - El
   - Galilee

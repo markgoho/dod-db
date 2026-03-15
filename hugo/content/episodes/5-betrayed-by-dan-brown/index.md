@@ -8,11 +8,14 @@ aliases:
 tags:
   - Jesus
   - Easter
+  - Arius
   - Passover
+  - Constantine
   - biblical canon
   - Council of Nicaea
   - Trinity
   - Judaism
+  - Apocrypha
   - Baal
   - Egypt
   - Mary Magdalene

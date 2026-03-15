@@ -22,6 +22,7 @@ tags:
   - Endor
   - etiology
   - Samuel
+  - Apocrypha
   - archaeology
   - child sacrifice
   - Eusebius
@@ -35,6 +36,7 @@ tags:
   - Daniel
   - Egypt
   - Enoch
+  - Flavius Josephus
   - Flood
   - Josephus
   - King James Version

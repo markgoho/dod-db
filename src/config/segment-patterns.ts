@@ -2,12 +2,14 @@
  * Segment types for Data Over Dogma podcast episodes.
  */
 export type SegmentType =
+  | "above-the-law"
   | "advertisement"
   | "all-right-lets-see-it"
   | "archaeology-of-israel"
   | "artifacts-and-fiction"
   | "bible-heroes"
   | "bible-vs-bible"
+  | "biblicalish"
   | "by-the-numbers"
   | "chapter-and-verse"
   | "conspiracy-watch"
@@ -17,6 +19,8 @@ export type SegmentType =
   | "ex-eventu"
   | "getting-angelic"
   | "getting-demonic"
+  | "here-we-go"
+  | "historys-heresies"
   | "historys-mysteries"
   | "intro"
   | "is-it-canon"
@@ -30,6 +34,7 @@ export type SegmentType =
   | "opportunities-for-growth"
   | "outro"
   | "segment"
+  | "segment-no-2"
   | "taking-issue"
   | "textual-healing"
   | "thats-history"
@@ -38,6 +43,7 @@ export type SegmentType =
   | "what-does-that-mean"
   | "what-is-that"
   | "whos-that"
+  | "who-dat"
   | "women-in-the-bible"
   | "your-patriarchy-and-you";
 
@@ -46,11 +52,13 @@ export type SegmentType =
  */
 export const SEGMENT_LABELS: Record<SegmentType, string> = {
   intro: "Intro",
+  "above-the-law": "Above the Law",
   "all-right-lets-see-it": "All Right, Let's See It",
   "archaeology-of-israel": "Archaeology of Israel",
   "artifacts-and-fiction": "Artifacts and Fiction",
   "bible-heroes": "Bible Heroes?",
   "bible-vs-bible": "Bible vs Bible",
+  biblicalish: "Biblicalish",
   "by-the-numbers": "By the Numbers",
   "chapter-and-verse": "Chapter and Verse",
   "conspiracy-watch": "Conspiracy Watch",
@@ -60,6 +68,8 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "ex-eventu": "Ex Eventu",
   "getting-angelic": "Getting Angelic",
   "getting-demonic": "Getting Demonic",
+  "here-we-go": "Here We Go!",
+  "historys-heresies": "History's Heresies",
   "historys-mysteries": "History's Mysteries",
   "is-it-canon": "Is it Canon?",
   "its-the-law": "It's the Law",
@@ -71,6 +81,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "nature-of-god": "Nature of God",
   "opportunities-for-growth": "Opportunities for Growth",
   segment: "Segment (Unknown)",
+  "segment-no-2": "Segment No. 2",
   "taking-issue": "Taking Issue",
   "textual-healing": "Textual Healing",
   "thats-history": "That's History",
@@ -79,6 +90,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "what-does-that-mean": "What Does That Mean?",
   "what-is-that": "What is That?",
   "whos-that": "Who's That?",
+  "who-dat": "Who Dat??",
   "women-in-the-bible": "Women in the Bible",
   "your-patriarchy-and-you": "Your Patriarchy and You",
   advertisement: "Advertisement",
@@ -90,11 +102,13 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
  */
 export const SEGMENT_COLORS: Record<SegmentType, string> = {
   intro: "#6366f1", // indigo
+  "above-the-law": "#f59e0b", // amber-500 (gold/law/authority)
   "all-right-lets-see-it": "#ef4444", // red
   "archaeology-of-israel": "#a16207", // yellow-700 (bronze/earth tone)
   "artifacts-and-fiction": "#92400e", // amber-800 (ancient/archaeological)
   "bible-heroes": "#60a5fa", // blue-400 (heroic/noble)
   "bible-vs-bible": "#0891b2", // cyan-600 (scholarly comparison)
+  biblicalish: "#a78bfa", // violet-400 (playful purple for "ish" quality)
   "by-the-numbers": "#06b6d4", // cyan-500
   "chapter-and-verse": "#22c55e", // green
   "conspiracy-watch": "#dc2626", // red-600 (darker red)
@@ -104,6 +118,8 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "ex-eventu": "#6366f1", // indigo-500 (scholarly/prophecy)
   "getting-angelic": "#fbbf24", // amber-400 (golden/heavenly)
   "getting-demonic": "#b91c1c", // red-700 (dark red)
+  "here-we-go": "#f97316", // orange-500 (energetic/exclamatory)
+  "historys-heresies": "#dc2626", // red-600 (fiery/condemned)
   "historys-mysteries": "#818cf8", // indigo-400 (mysterious/historical)
   "is-it-canon": "#14b8a6", // teal
   "its-the-law": "#059669", // emerald-600 (legal/authoritative green)
@@ -115,6 +131,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "nature-of-god": "#3b82f6", // blue-500 (divine/theological)
   "opportunities-for-growth": "#2563eb", // blue-600 (learning/professional development)
   segment: "#9ca3af", // gray-400 (neutral/unknown)
+  "segment-no-2": "#34d399", // emerald-400 (fresh/secondary)
   "taking-issue": "#ea580c", // orange-600 (debate/critique)
   "textual-healing": "#0891b2", // cyan-600 (textual analysis/manuscripts)
   "thats-history": "#84cc16", // lime-500 (lime green)
@@ -123,6 +140,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "what-does-that-mean": "#f59e0b", // amber
   "what-is-that": "#fb923c", // orange-400 (inquiry/exploration)
   "whos-that": "#0ea5e9", // sky-500 (sky blue)
+  "who-dat": "#38bdf8", // sky-400 (lighter blue, sibling to whos-that)
   "women-in-the-bible": "#db2777", // pink-600 (rose)
   "your-patriarchy-and-you": "#a855f7", // purple-500
   advertisement: "#f97316", // orange
@@ -144,10 +162,20 @@ export const SEGMENT_PATTERNS: Record<
     /welcome to.*bible heroes/i,
     /let'?s do.*bible heroes/i,
   ],
+  "above-the-law": [
+    /above the law/i,
+    /welcome to.*above the law/i,
+    /segment.*above the law/i,
+  ],
   "bible-vs-bible": [
     /bible vs\.? bible/i,
     /welcome to.*bible vs\.? bible/i,
     /let'?s do.*bible vs\.? bible/i,
+  ],
+  biblicalish: [
+    /biblicalish/i,
+    /welcome to.*biblicalish/i,
+    /segment.*biblicalish/i,
   ],
   "chapter-and-verse": [
     /let'?s\s+(dive into|do a|start with)\s+chapter and verse/i,
@@ -204,6 +232,7 @@ export const SEGMENT_PATTERNS: Record<
     /segment.*artifacts and fiction/i,
   ],
   "whos-that": [/who'?s that\?/i, /welcome to.*who'?s that/i],
+  "who-dat": [/who dat\??\??/i, /welcome to.*who dat/i, /segment.*who dat/i],
   "women-in-the-bible": [
     /women in the bible/i,
     /welcome to.*women in the bible/i,
@@ -218,6 +247,11 @@ export const SEGMENT_PATTERNS: Record<
     /taking issue/i,
     /welcome to.*taking issue/i,
     /let'?s.*taking issue/i,
+  ],
+  "segment-no-2": [
+    /segment\s+no\.?\s*2/i,
+    /welcome to.*segment\s+no\.?\s*2/i,
+    /segment\s+number\s+2/i,
   ],
   "textual-healing": [
     /textual healing/i,
@@ -257,6 +291,16 @@ export const SEGMENT_PATTERNS: Record<
   "by-the-numbers": [/by the numbers/i, /welcome to.*by the numbers/i],
   "getting-angelic": [/getting angelic/i, /welcome to.*getting angelic/i],
   "getting-demonic": [/getting demonic/i, /welcome to.*getting demonic/i],
+  "here-we-go": [
+    /here we go!?/i,
+    /welcome to.*here we go/i,
+    /segment.*here we go/i,
+  ],
+  "historys-heresies": [
+    /history'?s heresies/i,
+    /welcome to.*history'?s heresies/i,
+    /let'?s.*history'?s heresies/i,
+  ],
   "historys-mysteries": [
     /history'?s mysteries/i,
     /welcome to.*history'?s mysteries/i,
@@ -305,6 +349,8 @@ export const INTRO_END_PATTERNS: RegExp[] = [
  */
 export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
   intro: "Opening of the episode with theme music and brief introduction",
+  "above-the-law":
+    "Examining biblical figures, religious leaders, or institutions that act outside or above the law, including exemptions, abuses of power, and accountability",
   "all-right-lets-see-it":
     "Examining and discussing visual content like charts, maps, or images",
   "archaeology-of-israel":
@@ -315,6 +361,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Examining biblical characters traditionally viewed as heroes, questioning their heroic status and exploring moral complexities",
   "bible-vs-bible":
     "Comparing and contrasting different Bible passages, translations, or interpretations",
+  biblicalish:
+    "Exploring topics that are loosely or tangentially related to the Bible, with a playful or informal approach",
   "by-the-numbers":
     "Statistical analysis and numerical data about biblical or religious topics",
   "chapter-and-verse":
@@ -333,6 +381,10 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Exploring angels, heavenly beings, and divine messengers in scripture",
   "getting-demonic":
     "Exploring demons, evil spirits, and malevolent beings in scripture",
+  "here-we-go":
+    "An energetic kick-off segment diving into a topic or discussion with enthusiasm",
+  "historys-heresies":
+    "Examining historical heresies, condemned beliefs, and movements the church declared heterodox throughout Christian history",
   "historys-mysteries":
     "Examining unsolved historical puzzles, enigmatic archaeological discoveries, and debated events from biblical and ancient history",
   "is-it-canon":
@@ -351,6 +403,7 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
   "opportunities-for-growth":
     "Revisiting previous positions, acknowledging mistakes, and discussing personal or scholarly growth",
   segment: "Unidentified segment type (placeholder)",
+  "segment-no-2": "The second named segment of the episode",
   "taking-issue":
     "Critical analysis and debate of controversial biblical or theological topics",
   "textual-healing":
@@ -365,6 +418,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Examining and explaining specific objects, artifacts, or physical items mentioned in biblical texts or discovered through archaeology",
   "whos-that":
     "Profiles of biblical characters, historical figures, or scholars",
+  "who-dat":
+    "Identifying and profiling lesser-known or surprising biblical and historical figures with an informal, energetic style",
   "women-in-the-bible":
     "Discussing women and their roles in biblical narratives",
   "your-patriarchy-and-you":

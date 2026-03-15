@@ -2188,12 +2188,13 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 64,
   },
   {
-    canonical: "king jabin",
+    canonical: "King Jabin",
     variations: ["jabin"],
     category: "character",
+    llmVerify: true,
     description:
       "King of Canaan in the Book of Judges, oppresses the Israelites",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 64,
   },
   {
@@ -3085,12 +3086,13 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 83,
   },
   {
-    canonical: "constantine",
+    canonical: "Constantine",
     variations: [],
     category: "person",
+    llmVerify: true,
     description:
       "Roman Emperor who legalized Christianity in the 4th century CE",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 83,
   },
   {
@@ -3130,12 +3132,13 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 84,
   },
   {
-    canonical: "beelzebul",
+    canonical: "Beelzebul",
     variations: ["beelzebub"],
     category: "character",
+    llmVerify: true,
     description:
       "A name for the devil, possibly derived from Baal-Zebub, meaning 'Lord of the Flies'",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 84,
   },
   {
@@ -3221,9 +3224,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Leviticus 11",
     variations: [],
     category: "literature",
-    description:
-      "Chapter 11 of Leviticus, containing laws about clean and unclean animals",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 85,
   },
   {
@@ -3256,18 +3257,10 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Flavius Josephus",
     variations: ["Josephus", "Flavius"],
     category: "person",
+    llmVerify: true,
     description:
       "Jewish historian who lived in the 1st century CE and wrote about the history of the Jewish people and the Jewish-Roman War",
-    status: "proposed",
-    addedInEpisode: 86,
-  },
-  {
-    canonical: "Testimonium Flavianum",
-    variations: ["Testimonium"],
-    category: "literature",
-    description:
-      "A passage in Josephus's Antiquities of the Jews that discusses Jesus, widely considered to be at least partially a Christian interpolation",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 86,
   },
   {
@@ -3414,9 +3407,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "first corinthians",
     variations: ["1 corinthians", "first corinthians 5", "1 corinthians 5"],
     category: "literature",
-    description:
-      "A letter from the Apostle Paul to the church in Corinth, addressing various issues.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 89,
   },
   {
@@ -3458,27 +3449,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "genesis 3",
     variations: ["Genesis 3"],
     category: "literature",
-    description:
-      "The third chapter of the Book of Genesis, detailing the temptation and fall of Adam and Eve.",
-    status: "proposed",
-    addedInEpisode: 90,
-  },
-  {
-    canonical: "genesis 4",
-    variations: ["Genesis 4"],
-    category: "literature",
-    description:
-      "The fourth chapter of the Book of Genesis, recounting the stories of Cain and Abel, and the early generations after them.",
-    status: "proposed",
-    addedInEpisode: 90,
-  },
-  {
-    canonical: "genesis 5",
-    variations: ["Genesis 5"],
-    category: "literature",
-    description:
-      "The fifth chapter of the Book of Genesis, which details the genealogy from Adam to Noah.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 90,
   },
   {
@@ -3497,6 +3468,306 @@ export const tagVocabulary: TagDefinition[] = [
       "The son of Adam and Eve who was murdered by his brother Cain.",
     status: "proposed",
     addedInEpisode: 90,
+  },
+  {
+    canonical: "April Ajoy",
+    variations: ["Ajoy"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 91,
+  },
+  {
+    canonical: "satanic",
+    variations: ["Satan"],
+    category: "theology",
+    description: "Related to Satan or Satanism; considered evil or demonic",
+    status: "proposed",
+    addedInEpisode: 91,
+  },
+  {
+    canonical: "America",
+    variations: ["American"],
+    category: "place",
+    status: "rejected",
+    addedInEpisode: 91,
+  },
+  {
+    canonical: "Curse of Cain",
+    variations: [],
+    category: "theology",
+    description:
+      "The mark or curse placed on Cain after he murdered Abel, often misinterpreted as dark skin",
+    status: "proposed",
+    addedInEpisode: 92,
+  },
+  {
+    canonical: "Susanna",
+    variations: [],
+    category: "character",
+    description:
+      "Main character in the Book of Susanna, falsely accused of adultery by two elders",
+    status: "proposed",
+    caseSensitive: true,
+    addedInEpisode: 92,
+  },
+  {
+    canonical: "Apocrypha",
+    variations: ["Apocryphal"],
+    category: "literature",
+    llmVerify: true,
+    description:
+      "Biblical books and passages considered canonical by some Christians but not by Protestants or Jews",
+    status: "accepted",
+    addedInEpisode: 92,
+  },
+  {
+    canonical: "Curse of Ham",
+    variations: [],
+    category: "theology",
+    description:
+      "Misinterpretation of the curse placed on Canaan, son of Ham, used to justify slavery",
+    status: "proposed",
+    addedInEpisode: 92,
+  },
+  {
+    canonical: "Joachim",
+    variations: [],
+    category: "character",
+    description: "Husband of Susanna in the Book of Susanna.",
+    status: "proposed",
+    addedInEpisode: 92,
+  },
+  {
+    canonical: "Exodus 21",
+    variations: [],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 93,
+  },
+  {
+    canonical: "Hammurabi's law",
+    variations: [],
+    category: "literature",
+    description:
+      "A Babylonian legal code of ancient Mesopotamia, dating back to c. 1754 BC, containing laws and punishments.",
+    status: "proposed",
+    addedInEpisode: 93,
+  },
+  {
+    canonical: "Eglon",
+    variations: [],
+    category: "character",
+    description:
+      "King of Moab who oppressed Israel, assassinated by Ehud in the Book of Judges.",
+    status: "proposed",
+    addedInEpisode: 93,
+  },
+  {
+    canonical: "David Wright",
+    variations: [],
+    category: "person",
+    description:
+      "Biblical scholar and author known for his work on the relationship between biblical law and ancient Near Eastern legal codes.",
+    status: "proposed",
+    addedInEpisode: 93,
+  },
+  {
+    canonical: "People",
+    variations: [],
+    category: "people",
+    status: "rejected",
+    addedInEpisode: 93,
+  },
+  {
+    canonical: "Theological",
+    variations: [],
+    category: "theology",
+    status: "rejected",
+    addedInEpisode: 93,
+  },
+  {
+    canonical: "Cathars",
+    variations: ["Catharism"],
+    category: "religion",
+    description:
+      "Members of a Christian dualist movement that flourished in Southern Europe during the 12th-14th centuries.",
+    status: "proposed",
+    addedInEpisode: 94,
+  },
+  {
+    canonical: "Arius",
+    variations: ["Arian"],
+    category: "person",
+    llmVerify: true,
+    description:
+      "A Christian presbyter from Alexandria whose teachings about the nature of Christ were condemned as heresy at the Council of Nicaea",
+    status: "accepted",
+    addedInEpisode: 94,
+  },
+  {
+    canonical: "Jericho",
+    variations: ["walls of Jericho"],
+    category: "place",
+    description:
+      "Ancient city in the Jordan River Valley, famous for its walls being toppled in the Book of Joshua.",
+    status: "proposed",
+    addedInEpisode: 95,
+  },
+  {
+    canonical: "Genesis 9",
+    variations: [],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 95,
+  },
+  {
+    canonical: "Speaker Johnson",
+    variations: [],
+    category: "person",
+    description:
+      "Mike Johnson, current Speaker of the House of Representatives",
+    status: "proposed",
+    addedInEpisode: 96,
+  },
+  {
+    canonical: "speaker of the house",
+    variations: [],
+    category: "person",
+    description:
+      "The presiding officer of the House of Representatives, currently Mike Johnson.",
+    status: "proposed",
+    addedInEpisode: 96,
+  },
+  {
+    canonical: "sadducees",
+    variations: [],
+    category: "people",
+    description:
+      "A Jewish sect during the Second Temple period, associated with the priestly aristocracy and Temple administration.",
+    status: "proposed",
+    addedInEpisode: 96,
+  },
+  {
+    canonical: "romans 13",
+    variations: [],
+    category: "literature",
+    description:
+      "Chapter 13 of the Epistle to the Romans, discussing submission to governing authorities.",
+    status: "proposed",
+    addedInEpisode: 96,
+  },
+  {
+    canonical: "Turkey",
+    variations: ["Turkish"],
+    category: "place",
+    description:
+      "A country in Eurasia, site of the Durupinar formation, which Ron Wyatt claimed was Noah's Ark.",
+    status: "proposed",
+    addedInEpisode: 97,
+  },
+  {
+    canonical: "Ron Wyatt",
+    variations: ["Wyatt"],
+    category: "person",
+    description:
+      "An amateur archaeologist known for his claims about finding biblical artifacts",
+    status: "proposed",
+    addedInEpisode: 97,
+  },
+  {
+    canonical: "Durupinar site",
+    variations: ["Durupinar"],
+    category: "place",
+    description:
+      "A geological formation in Turkey that some claim is the remains of Noah's Ark.",
+    status: "proposed",
+    addedInEpisode: 97,
+  },
+  {
+    canonical: "Saudi Arabia",
+    variations: ["Saudi Arabian"],
+    category: "place",
+    description:
+      "A country in the Middle East, location of Jabal Maqla and Jebel al-Lawz, mountains proposed as Mount Sinai.",
+    status: "proposed",
+    addedInEpisode: 97,
+  },
+  {
+    canonical: "King Solomon",
+    variations: ["Solomon"],
+    category: "character",
+    description:
+      "A biblical king of Israel, son of David, known for his wisdom and building the First Temple in Jerusalem.",
+    status: "proposed",
+    addedInEpisode: 97,
+  },
+  {
+    canonical: "Mount Sinai",
+    variations: ["Mounts Sinai"],
+    category: "place",
+    description:
+      "The mountain where Moses received the Ten Commandments from God, according to the Book of Exodus.",
+    status: "proposed",
+    addedInEpisode: 97,
+  },
+  {
+    canonical: "Hosea",
+    variations: [],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 97,
+  },
+  {
+    canonical: "hades",
+    variations: [],
+    category: "theology",
+    description:
+      "In Greek mythology and the New Testament, Hades is the underworld, the abode of the dead.",
+    status: "proposed",
+    addedInEpisode: 98,
+  },
+  {
+    canonical: "Proto-Gospel of James",
+    variations: ["Protevangelium of James"],
+    category: "literature",
+    description:
+      "Also known as the Protevangelium of James, a 2nd-century infancy gospel expanding on the birth and early life of Mary",
+    status: "proposed",
+    addedInEpisode: 99,
+  },
+  {
+    canonical: "Galatians",
+    variations: ["Galatians 1"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 99,
+  },
+  {
+    canonical: "Tanakh",
+    variations: [],
+    category: "literature",
+    description:
+      "The Hebrew Bible consisting of the Torah (Law), Nevi'im (Prophets), and Ketuvim (Writings)",
+    status: "proposed",
+    addedInEpisode: 99,
+  },
+  {
+    canonical: "Philemon",
+    variations: ["Philemon 1", "Philemon's"],
+    category: "literature",
+    description:
+      "A short Pauline epistle in the New Testament, addressed to Philemon regarding his slave Onesimus",
+    status: "proposed",
+    addedInEpisode: 100,
+  },
+  {
+    canonical: "Onesimus",
+    variations: ["Onesimus'"],
+    category: "character",
+    description:
+      "A slave belonging to Philemon, mentioned in the New Testament epistle of the same name; Paul intercedes on his behalf",
+    status: "proposed",
+    addedInEpisode: 100,
   },
 ];
 

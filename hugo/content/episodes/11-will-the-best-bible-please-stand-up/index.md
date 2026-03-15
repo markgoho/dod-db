@@ -7,6 +7,7 @@ aliases:
   - /episodes/11/
 tags:
   - Septuagint
+  - Apocrypha
   - King James Version
   - biblical canon
   - Latin Vulgate

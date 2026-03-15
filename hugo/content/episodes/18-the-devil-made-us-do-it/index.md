@@ -11,6 +11,7 @@ tags:
   - angel
   - YHWH
   - Israel
+  - Beelzebul
   - Baal
   - Babylon
   - Garden of Eden
@@ -37,6 +38,7 @@ tags:
   - Nephilim
   - Ugarit
   - Ammonites
+  - Apocrypha
   - Book of Enoch
   - Dead Sea Scrolls
   - El

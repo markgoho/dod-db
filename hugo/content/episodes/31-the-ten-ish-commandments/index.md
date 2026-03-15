@@ -26,6 +26,7 @@ tags:
   - Talmud
   - Catholicism
   - Ethical Decalogue
+  - Flavius Josephus
   - Josephus
   - Septuagint
   - Amorites

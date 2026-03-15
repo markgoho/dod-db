@@ -14,6 +14,7 @@ tags:
   - Matthew
   - Galilee
   - textual criticism
+  - Flavius Josephus
   - James
   - Joseph
   - Josephus
@@ -25,6 +26,7 @@ tags:
   - Israel
   - King James Version
   - source criticism
+  - Apocrypha
   - Codex Sinaiticus
   - Jerusalem
   - Judas Iscariot

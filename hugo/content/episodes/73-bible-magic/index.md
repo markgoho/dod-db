@@ -12,6 +12,7 @@ tags:
   - Israel
   - Judaism
   - Dead Sea Scrolls
+  - Flavius Josephus
   - Jesus
   - Josephus
   - Lilith

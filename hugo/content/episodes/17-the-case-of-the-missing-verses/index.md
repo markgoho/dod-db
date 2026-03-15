@@ -9,6 +9,7 @@ tags:
   - King James Version
   - James
   - William Tyndale
+  - Apocrypha
   - Jesus
   - Desiderius Erasmus
   - Matthew
@@ -19,6 +20,7 @@ tags:
   - Hell
   - Latin Vulgate
   - archaeology
+  - Constantine
   - Council of Nicaea
   - Eusebius
   - Hebrews

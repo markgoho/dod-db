@@ -48,7 +48,9 @@
       "confidence": 65,
       "firstSeen": "2026-01-11T17:59:30.189Z",
       "lastSeen": "2026-01-18T16:59:20.517Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-03-15T05:32:17.773Z",
+      "reviewedBy": "UI Review"
     },
     "like okay→like Okay": {
       "original": "like okay",
@@ -5661,9 +5663,9 @@
       "original": "Texas",
       "corrected": "Textus",
       "category": "spelling",
-      "totalOccurrences": 3,
-      "episodeCount": 1,
-      "episodes": ["ueEDfCqjPYs"],
+      "totalOccurrences": 5,
+      "episodeCount": 2,
+      "episodes": ["ueEDfCqjPYs", "xLE723NlGGU"],
       "examples": [
         "\"The. The Texas receptus or.\"",
         "\"than the Texas receptus. They\"",
@@ -5676,9 +5678,9 @@
       ],
       "timestamps": ["00:17:51.590", "00:17:51.590", "00:17:51.590"],
       "episodeIds": ["ueEDfCqjPYs", "ueEDfCqjPYs", "ueEDfCqjPYs"],
-      "confidence": 20,
+      "confidence": 40,
       "firstSeen": "2026-01-18T16:48:31.616Z",
-      "lastSeen": "2026-01-18T16:48:31.616Z",
+      "lastSeen": "2026-03-15T06:34:33.194Z",
       "status": "pending"
     },
     "Religious→Religulous": {
@@ -6013,7 +6015,452 @@
       "firstSeen": "2026-01-18T17:07:50.771Z",
       "lastSeen": "2026-01-18T17:07:50.771Z",
       "status": "pending"
+    },
+    "seen→scene": {
+      "original": "seen",
+      "corrected": "scene",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["nocqzFi7bp0"],
+      "examples": ["\"And so seen and seen.\"", "\"seen and seen.\""],
+      "correctedExamples": [
+        "\"And so, scene and scene.\"",
+        "\"scene and scene.\""
+      ],
+      "timestamps": ["00:49:54.080", "00:49:54.080"],
+      "episodeIds": ["nocqzFi7bp0", "nocqzFi7bp0"],
+      "confidence": 5,
+      "firstSeen": "2026-03-15T06:03:52.058Z",
+      "lastSeen": "2026-03-15T06:03:52.058Z",
+      "status": "pending"
+    },
+    "it's It's→it's it's": {
+      "original": "it's It's",
+      "corrected": "it's it's",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["4JOQmZvWz3Q"],
+      "examples": [
+        "\"mountain. Like, it's. It's a very\"",
+        "\"likely. Yeah, it's. It's not perfectly\""
+      ],
+      "correctedExamples": [
+        "\"mountain. Like, it's, it's a very\"",
+        "\"likely. Yeah, it's, it's not perfectly\""
+      ],
+      "timestamps": ["00:05:52.220", "00:15:44.340"],
+      "episodeIds": ["4JOQmZvWz3Q", "4JOQmZvWz3Q"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:08:35.892Z",
+      "lastSeen": "2026-03-15T06:08:35.892Z",
+      "status": "pending"
+    },
+    "Aryan→Arian": {
+      "original": "Aryan",
+      "corrected": "Arian",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["d1E8IL2wMms"],
+      "examples": [
+        "\"was an Aryan con, not\"",
+        "\"not an Aryan Constantine, an\"",
+        "\"Constantine, an Aryan emperor in\""
+      ],
+      "correctedExamples": [
+        "\"was an Arian con, not\"",
+        "\"not an Arian Constantine, an\"",
+        "\"Constantine, an Arian emperor in\""
+      ],
+      "timestamps": ["00:25:56.200", "00:25:56.200", "00:25:56.200"],
+      "episodeIds": ["d1E8IL2wMms", "d1E8IL2wMms", "d1E8IL2wMms"],
+      "confidence": 20,
+      "firstSeen": "2026-03-15T06:13:27.319Z",
+      "lastSeen": "2026-03-15T06:13:27.319Z",
+      "status": "pending"
+    },
+    "unseal→uncial": {
+      "original": "unseal",
+      "corrected": "uncial",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["d1E8IL2wMms"],
+      "examples": [
+        "\"the word unseal. It's literally\"",
+        "\"Sinaiticus is unseal one.\""
+      ],
+      "correctedExamples": [
+        "\"the word uncial. It's literally\"",
+        "\"Sinaiticus is uncial one.\""
+      ],
+      "timestamps": ["00:40:27.500", "00:40:27.500"],
+      "episodeIds": ["d1E8IL2wMms", "d1E8IL2wMms"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:13:27.319Z",
+      "lastSeen": "2026-03-15T06:13:27.319Z",
+      "status": "pending"
+    },
+    "Wilson→Willson": {
+      "original": "Wilson",
+      "corrected": "Willson",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["73-1JSS7w1Q"],
+      "examples": [
+        "\"Meredith Wilson was. Where\"",
+        "\"me, Meredith Wilson. We'll see.\""
+      ],
+      "correctedExamples": [
+        "\"Meredith Willson was where\"",
+        "\"me, Meredith Willson. We'll see.\""
+      ],
+      "timestamps": ["00:02:24.110", "00:03:18.880"],
+      "episodeIds": ["73-1JSS7w1Q", "73-1JSS7w1Q"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:17:29.313Z",
+      "lastSeen": "2026-03-15T06:17:29.313Z",
+      "status": "pending"
+    },
+    "promised Land→promised land": {
+      "original": "promised Land",
+      "corrected": "promised land",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["73-1JSS7w1Q"],
+      "examples": [
+        "\"see the promised Land from across\"",
+        "\"of the promised land, apparently. All\""
+      ],
+      "correctedExamples": [
+        "\"see the promised land from across\"",
+        "\"of the Promised Land, apparently. All\""
+      ],
+      "timestamps": ["00:36:09.270", "00:50:41.790"],
+      "episodeIds": ["73-1JSS7w1Q", "73-1JSS7w1Q"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:17:29.313Z",
+      "lastSeen": "2026-03-15T06:17:29.313Z",
+      "status": "pending"
+    },
+    "archeology→archaeology": {
+      "original": "archeology",
+      "corrected": "archaeology",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["CtROVUxwKyM"],
+      "examples": [
+        "\"the amateur archeology path forever.\"",
+        "\"of biblical archeology, because they\""
+      ],
+      "correctedExamples": [
+        "\"the amateur archaeology path forever.\"",
+        "\"of biblical archaeology, because they\""
+      ],
+      "timestamps": ["00:03:01.820", "00:08:33.270"],
+      "episodeIds": ["CtROVUxwKyM", "CtROVUxwKyM"],
+      "confidence": 15,
+      "firstSeen": "2026-03-15T06:25:27.490Z",
+      "lastSeen": "2026-03-15T06:25:27.490Z",
+      "status": "pending"
+    },
+    "Durapinar→Durupinar": {
+      "original": "Durapinar",
+      "corrected": "Durupinar",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["CtROVUxwKyM"],
+      "examples": [
+        "\"about the Durapinar site.\"",
+        "\"about the Durapinar site.\""
+      ],
+      "correctedExamples": [
+        "\"about the Durupinar site.\"",
+        "\"about the Durupinar site.\""
+      ],
+      "timestamps": ["00:03:29.940", "00:07:50.280"],
+      "episodeIds": ["CtROVUxwKyM", "CtROVUxwKyM"],
+      "confidence": 15,
+      "firstSeen": "2026-03-15T06:25:27.490Z",
+      "lastSeen": "2026-03-15T06:25:27.490Z",
+      "status": "pending"
+    },
+    "Nueva→Nuweiba": {
+      "original": "Nueva",
+      "corrected": "Nuweiba",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["CtROVUxwKyM"],
+      "examples": [
+        "\"on the Nueva beach side\"",
+        "\"on the Nueva beach side,\""
+      ],
+      "correctedExamples": [
+        "\"on the Nuweiba beach side\"",
+        "\"on the Nuweiba beach side,\""
+      ],
+      "timestamps": ["00:12:39.560", "00:13:42.820"],
+      "episodeIds": ["CtROVUxwKyM", "CtROVUxwKyM"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:25:27.490Z",
+      "lastSeen": "2026-03-15T06:25:27.490Z",
+      "status": "pending"
+    },
+    "Nuweba→Nuweiba": {
+      "original": "Nuweba",
+      "corrected": "Nuweiba",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["CtROVUxwKyM"],
+      "examples": [
+        "\"bridge at Nuweba, that the\"",
+        "\"at the Nuweba part. So.\""
+      ],
+      "correctedExamples": [
+        "\"bridge at Nuweiba, that the\"",
+        "\"at the Nuweiba part. So.\""
+      ],
+      "timestamps": ["00:23:04.010", "00:23:04.010"],
+      "episodeIds": ["CtROVUxwKyM", "CtROVUxwKyM"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:25:27.490Z",
+      "lastSeen": "2026-03-15T06:25:27.490Z",
+      "status": "pending"
+    },
+    "James's→Jameses": {
+      "original": "James's",
+      "corrected": "Jameses",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": ["xLE723NlGGU"],
+      "examples": [
+        "\"are other. James's in the\"",
+        "\"handful of James's there. There\"",
+        "\"lot of James's. We've already\""
+      ],
+      "correctedExamples": [
+        "\"are other Jameses in the\"",
+        "\"handful of Jameses there. There\"",
+        "\"lot of Jameses. We've already\""
+      ],
+      "timestamps": ["00:02:50.760", "00:03:40.030", "00:24:07.640"],
+      "episodeIds": ["xLE723NlGGU", "xLE723NlGGU", "xLE723NlGGU"],
+      "confidence": 20,
+      "firstSeen": "2026-03-15T06:34:33.194Z",
+      "lastSeen": "2026-03-15T06:34:33.194Z",
+      "status": "pending"
+    },
+    "Testament library→Testament Library": {
+      "original": "Testament library",
+      "corrected": "Testament Library",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["xLE723NlGGU"],
+      "examples": [
+        "\"The Old Testament library, slash New\"",
+        "\"slash New Testament library is very\""
+      ],
+      "correctedExamples": [
+        "\"The Old Testament Library, slash New\"",
+        "\"slash New Testament Library is very\""
+      ],
+      "timestamps": ["00:22:58.050", "00:22:58.050"],
+      "episodeIds": ["xLE723NlGGU", "xLE723NlGGU"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:34:33.194Z",
+      "lastSeen": "2026-03-15T06:34:33.194Z",
+      "status": "pending"
+    },
+    "Jacobus→Iakobos": {
+      "original": "Jacobus",
+      "corrected": "Iakobos",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["xLE723NlGGU"],
+      "examples": [
+        "\"because it's Jacobus. Am I\"",
+        "\"It's Jacobus. Yeah. That.\""
+      ],
+      "correctedExamples": [
+        "\"because it's Iakobos. Am I\"",
+        "\"It's Iakobos. Yeah. That's\""
+      ],
+      "timestamps": ["00:28:03.690", "00:28:10.930"],
+      "episodeIds": ["xLE723NlGGU", "xLE723NlGGU"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:34:33.194Z",
+      "lastSeen": "2026-03-15T06:34:33.194Z",
+      "status": "pending"
+    },
+    "masoretic text→Masoretic Text": {
+      "original": "masoretic text",
+      "corrected": "Masoretic Text",
+      "category": "capitalization",
+      "totalOccurrences": 9,
+      "episodeCount": 1,
+      "episodes": ["xLE723NlGGU"],
+      "examples": [
+        "\"it the masoretic text? Is that.\"",
+        "\"to the Masoretic text. It's supposed\"",
+        "\"the, the Masoretic text is considered\""
+      ],
+      "correctedExamples": [
+        "\"it the Masoretic Text? Is that.\"",
+        "\"to the Masoretic Text. It's supposed\"",
+        "\"the, the Masoretic Text is considered\""
+      ],
+      "timestamps": ["00:34:20.460", "00:45:37.830", "00:46:43.130"],
+      "episodeIds": ["xLE723NlGGU", "xLE723NlGGU", "xLE723NlGGU"],
+      "confidence": 25,
+      "firstSeen": "2026-03-15T06:34:33.194Z",
+      "lastSeen": "2026-03-15T06:34:33.194Z",
+      "status": "pending"
+    },
+    "Tiberius→Tiberias": {
+      "original": "Tiberius",
+      "corrected": "Tiberias",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["xLE723NlGGU"],
+      "examples": [
+        "\"Jerusalem and Tiberius. Tiberius is\"",
+        "\"and Tiberius. Tiberius is a\"",
+        "\"written in Tiberius. So this\""
+      ],
+      "correctedExamples": [
+        "\"Jerusalem and Tiberias. Tiberias is\"",
+        "\"and Tiberias. Tiberias is a\"",
+        "\"written in Tiberias. So this\""
+      ],
+      "timestamps": ["00:37:51.060", "00:37:51.060", "00:44:36.020"],
+      "episodeIds": ["xLE723NlGGU", "xLE723NlGGU", "xLE723NlGGU"],
+      "confidence": 25,
+      "firstSeen": "2026-03-15T06:34:33.194Z",
+      "lastSeen": "2026-03-15T06:34:33.194Z",
+      "status": "pending"
+    },
+    "masora parva→Masora Parva": {
+      "original": "masora parva",
+      "corrected": "Masora Parva",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["xLE723NlGGU"],
+      "examples": [
+        "\"call the masora parva and the\"",
+        "\"are the masora parva or the,\""
+      ],
+      "correctedExamples": [
+        "\"call the Masora Parva and the\"",
+        "\"are the Masora Parva or the,\""
+      ],
+      "timestamps": ["00:39:58.130", "00:39:58.130"],
+      "episodeIds": ["xLE723NlGGU", "xLE723NlGGU"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:34:33.194Z",
+      "lastSeen": "2026-03-15T06:34:33.194Z",
+      "status": "pending"
+    },
+    "karay→Qere": {
+      "original": "karay",
+      "corrected": "Qere",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["xLE723NlGGU"],
+      "examples": [
+        "\"kativ or karay. And this\"",
+        "\"where Katif karay readings are\""
+      ],
+      "correctedExamples": [
+        "\"Ketiv or Qere. And this\"",
+        "\"where Ketiv Qere readings are\""
+      ],
+      "timestamps": ["00:39:58.130", "00:39:58.130"],
+      "episodeIds": ["xLE723NlGGU", "xLE723NlGGU"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:34:33.194Z",
+      "lastSeen": "2026-03-15T06:34:33.194Z",
+      "status": "pending"
+    },
+    "text It's→Text It's": {
+      "original": "text It's",
+      "corrected": "Text It's",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["xLE723NlGGU"],
+      "examples": [
+        "\"the Masoretic text. It's supposed to\"",
+        "\"the Masoretic text, it's, it's the\""
+      ],
+      "correctedExamples": [
+        "\"the Masoretic Text. It's supposed to\"",
+        "\"the Masoretic Text, it's, it's the\""
+      ],
+      "timestamps": ["00:45:37.830", "00:51:45.440"],
+      "episodeIds": ["xLE723NlGGU", "xLE723NlGGU"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:34:33.194Z",
+      "lastSeen": "2026-03-15T06:34:33.194Z",
+      "status": "pending"
+    },
+    "release him→Release him": {
+      "original": "release him",
+      "corrected": "Release him",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["aMOdy4N6U4M"],
+      "examples": [
+        "\"He's like, release him so that\"",
+        "\"me, not release him and then\""
+      ],
+      "correctedExamples": [
+        "\"He's like, \"Release him so that\"",
+        "\"me,\" not \"Release him and then\""
+      ],
+      "timestamps": ["00:32:16.110", "00:32:16.110"],
+      "episodeIds": ["aMOdy4N6U4M", "aMOdy4N6U4M"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:38:51.199Z",
+      "lastSeen": "2026-03-15T06:38:51.199Z",
+      "status": "pending"
+    },
+    "minor prophets→Minor Prophets": {
+      "original": "minor prophets",
+      "corrected": "Minor Prophets",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["aMOdy4N6U4M"],
+      "examples": [
+        "\"like the minor prophets, Those are\"",
+        "\"the 12 minor prophets might be\""
+      ],
+      "correctedExamples": [
+        "\"like the Minor Prophets, those are\"",
+        "\"the 12 Minor Prophets might be\""
+      ],
+      "timestamps": ["00:49:56.390", "00:49:56.390"],
+      "episodeIds": ["aMOdy4N6U4M", "aMOdy4N6U4M"],
+      "confidence": 10,
+      "firstSeen": "2026-03-15T06:38:51.199Z",
+      "lastSeen": "2026-03-15T06:38:51.199Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-01-18T17:07:50.771Z"
+  "lastUpdated": "2026-03-15T06:38:51.199Z"
 }

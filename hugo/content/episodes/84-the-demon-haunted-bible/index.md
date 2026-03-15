@@ -9,6 +9,7 @@ tags:
   - Jesus
   - angel
   - Hell
+  - Beelzebul
   - Enoch
   - Mesopotamian
   - Satan

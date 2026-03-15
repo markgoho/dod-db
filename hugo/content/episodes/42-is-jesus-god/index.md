@@ -11,11 +11,13 @@ tags:
   - angel
   - Israel
   - Abraham
+  - Arius
   - YHWH
   - Holy Spirit
   - Hebrews
   - Judaism
   - Moses
+  - Constantine
   - Council of Nicaea
   - Isaac
   - Isaiah

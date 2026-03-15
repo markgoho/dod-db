@@ -15,6 +15,7 @@ tags:
   - Deuteronomy
   - King James Version
   - Septuagint
+  - Flavius Josephus
   - Josephus
   - Moses
   - YHWH

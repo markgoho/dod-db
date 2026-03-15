@@ -19,6 +19,7 @@ tags:
   - Samson
   - Jerusalem
   - El
+  - King Jabin
   - Abraham
   - angel
   - Canaan

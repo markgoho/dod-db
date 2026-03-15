@@ -16,6 +16,7 @@ tags:
   - baptism
   - Hebrews
   - Ignatius
+  - Flavius Josephus
   - Josephus
   - Didache
   - Jerusalem

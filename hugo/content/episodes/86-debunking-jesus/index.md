@@ -7,9 +7,11 @@ aliases:
   - /episodes/86/
 tags:
   - Jesus
+  - Flavius Josephus
   - Josephus
   - Egypt
   - Romans
+  - Testimonium Flavianum
   - Galilee
   - James
   - John

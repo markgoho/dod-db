@@ -253,6 +253,7 @@ interface TagDefinition {
   caseSensitive?: boolean;
   description?: string;
   status?: string;
+  duplicateOf?: string;
 }
 
 // Load and display vocabulary
@@ -851,13 +852,42 @@ function renderProposedCard(tag: TagDefinition, index: number): string {
   const escapedCanonical = escapeHtml(tag.canonical);
   const isLlmVerify = tag.llmVerify === true;
   const description = tag.description || "";
+  const duplicateOf = tag.duplicateOf;
+  const duplicateNotice = duplicateOf
+    ? `
+        <div class="proposed-hint" style="margin-bottom: 12px; color: #92400e; font-weight: 600;">
+          Matches existing accepted tag: <strong>${escapeHtml(duplicateOf)}</strong>
+        </div>
+      `
+    : "";
+  const actionButtons = duplicateOf
+    ? `
+        <button class="btn btn-approve" onclick="mergeTag(${index})">
+          ⇄ Merge into ${escapeHtml(duplicateOf)}
+        </button>
+        <button class="btn" onclick="dismissTag(${index})">
+          Dismiss
+        </button>
+      `
+    : `
+        <button class="btn btn-approve" onclick="approveTag(${index})">
+          ✓ Approve
+        </button>
+        <button class="btn" onclick="dismissTag(${index})">
+          Dismiss
+        </button>
+        <button class="btn btn-reject" onclick="rejectTag(${index})">
+          ✗ Reject
+        </button>
+      `;
 
   return `
-    <div class="proposed-card" id="proposed-card-${index}" data-original="${escapedCanonical}">
+    <div class="proposed-card" id="proposed-card-${index}" data-original="${escapedCanonical}" data-duplicate-of="${duplicateOf ? escapeHtml(duplicateOf) : ""}">
       <div class="proposed-header">
         <span class="proposed-status">Proposed</span>
       </div>
       <div class="proposed-form">
+        ${duplicateNotice}
         <div class="proposed-row">
           <label class="proposed-label">Canonical:</label>
           <input type="text" class="proposed-input" id="proposed-canonical-${index}"
@@ -887,7 +917,8 @@ function renderProposedCard(tag: TagDefinition, index: number): string {
           For ambiguous names (like "David" or "John"), use AI to verify each match based on context
         </div>
         <div class="proposed-checkbox-row">
-          <input type="checkbox" class="proposed-checkbox" id="proposed-caseSensitive-${index}" />
+          <input type="checkbox" class="proposed-checkbox" id="proposed-caseSensitive-${index}"
+                 ${tag.caseSensitive ? "checked" : ""} />
           <label class="proposed-checkbox-label" for="proposed-caseSensitive-${index}">
             Case-sensitive matching
           </label>
@@ -908,12 +939,7 @@ function renderProposedCard(tag: TagDefinition, index: number): string {
         </div>
       </div>
       <div class="proposed-actions">
-        <button class="btn btn-approve" onclick="approveTag(${index})">
-          ✓ Approve
-        </button>
-        <button class="btn btn-reject" onclick="rejectTag(${index})">
-          ✗ Reject
-        </button>
+        ${actionButtons}
       </div>
     </div>
   `;
@@ -1043,6 +1069,96 @@ async function approveTag(index: number): Promise<void> {
   }
 }
 
+async function dismissTag(index: number): Promise<void> {
+  const card = document.querySelector(`#proposed-card-${index}`) as HTMLElement;
+  if (!card) return;
+
+  const originalCanonical = card.dataset.original;
+  if (!originalCanonical) return;
+
+  if (
+    !confirm(
+      `Dismiss tag "${originalCanonical}"? This removes it from the review queue only and allows future rediscovery.`,
+    )
+  ) {
+    return;
+  }
+
+  card.classList.add("saving");
+
+  try {
+    const response = await fetch(
+      `${API_BASE_URL}/api/tag-vocabulary/vocabulary/dismiss/${encodeURIComponent(originalCanonical)}`,
+      {
+        method: "POST",
+      },
+    );
+
+    if (!response.ok) {
+      const error = await response.json();
+      throw new Error(error.error || "Failed to dismiss tag");
+    }
+
+    proposedTags.splice(index, 1);
+    renderProposedTags();
+    loadVocabulary();
+    loadAnalytics();
+  } catch (error) {
+    alert(
+      `Error dismissing tag: ${error instanceof Error ? error.message : "Unknown error"}`,
+    );
+    card.classList.remove("saving");
+  }
+}
+
+async function mergeTag(index: number): Promise<void> {
+  const card = document.querySelector(`#proposed-card-${index}`) as HTMLElement;
+  if (!card) return;
+
+  const originalCanonical = card.dataset.original;
+  const duplicateOf = card.dataset.duplicateOf;
+  if (!originalCanonical || !duplicateOf) return;
+
+  if (
+    !confirm(
+      `Merge proposed tag "${originalCanonical}" into accepted tag "${duplicateOf}"? Useful variations will be added to the accepted tag and the proposal will be removed.`,
+    )
+  ) {
+    return;
+  }
+
+  card.classList.add("saving");
+
+  try {
+    const response = await fetch(
+      `${API_BASE_URL}/api/tag-vocabulary/vocabulary/merge`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          proposedCanonical: originalCanonical,
+          acceptedCanonical: duplicateOf,
+        }),
+      },
+    );
+
+    if (!response.ok) {
+      const error = await response.json();
+      throw new Error(error.error || "Failed to merge tag");
+    }
+
+    proposedTags.splice(index, 1);
+    renderProposedTags();
+    loadVocabulary();
+    loadAnalytics();
+  } catch (error) {
+    alert(
+      `Error merging tag: ${error instanceof Error ? error.message : "Unknown error"}`,
+    );
+    card.classList.remove("saving");
+  }
+}
+
 // Reject a proposed tag
 async function rejectTag(index: number): Promise<void> {
   const card = document.querySelector(`#proposed-card-${index}`) as HTMLElement;
@@ -1053,7 +1169,7 @@ async function rejectTag(index: number): Promise<void> {
 
   if (
     !confirm(
-      `Reject tag "${originalCanonical}"? It will be marked as rejected and excluded from future discovery.`,
+      `Reject tag "${originalCanonical}"? This blacklists it by marking it rejected and excluding it from future discovery. Use Dismiss instead to just remove it from the queue.`,
     )
   ) {
     return;
@@ -1111,6 +1227,8 @@ declare global {
     addTag: typeof addTag;
     toggleProposedDescription: typeof toggleProposedDescription;
     approveTag: typeof approveTag;
+    dismissTag: typeof dismissTag;
+    mergeTag: typeof mergeTag;
     rejectTag: typeof rejectTag;
     scrollToTop: typeof scrollToTop;
   }
@@ -1128,5 +1246,7 @@ declare global {
 (globalThis as unknown as Window).toggleProposedDescription =
   toggleProposedDescription;
 (globalThis as unknown as Window).approveTag = approveTag;
+(globalThis as unknown as Window).dismissTag = dismissTag;
+(globalThis as unknown as Window).mergeTag = mergeTag;
 (globalThis as unknown as Window).rejectTag = rejectTag;
 (globalThis as unknown as Window).scrollToTop = scrollToTop;

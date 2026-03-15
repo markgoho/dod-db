@@ -38,6 +38,7 @@ tags:
   - Origen
   - Shem
   - Africa
+  - Apocrypha
   - circumcision
   - Dead Sea
   - Deuteronomy

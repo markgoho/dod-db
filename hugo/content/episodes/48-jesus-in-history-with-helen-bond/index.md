@@ -14,6 +14,7 @@ tags:
   - Galilee
   - Josephus
   - Papias of Hierapolis
+  - Flavius Josephus
   - Helen Bond
   - Israel
   - Luke

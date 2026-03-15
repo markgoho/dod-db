@@ -21,6 +21,7 @@ tags:
   - Bethany
   - Second Temple period
   - YHWH
+  - Flavius Josephus
   - Josephus
   - Romans
   - Bernhard Duhm

@@ -28,6 +28,7 @@ tags:
   - Isaiah
   - Matthew
   - Septuagint
+  - Apocrypha
   - Book of Enoch
   - Catholicism
   - Daniel

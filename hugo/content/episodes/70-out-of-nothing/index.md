@@ -7,6 +7,7 @@ aliases:
   - /episodes/70/
 tags:
   - Daniel
+  - Apocrypha
   - Bel and the Dragon
   - Cyrus the Great
   - 2 Maccabees

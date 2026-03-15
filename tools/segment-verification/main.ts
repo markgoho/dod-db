@@ -77,8 +77,12 @@ function renderEpisodeList(): void {
 
   const filtered = episodes.filter(episode => {
     if (filter === "all") return true;
+
+    const segmentCount = episode.segments?.length || 0;
     const allVerified =
-      episode.segments?.every(s => s.confidence === "verified") ?? false;
+      segmentCount > 0 &&
+      (episode.segments?.every(s => s.confidence === "verified") ?? false);
+
     if (filter === "verified") return allVerified;
     if (filter === "needs-review") return !allVerified;
     return true;
