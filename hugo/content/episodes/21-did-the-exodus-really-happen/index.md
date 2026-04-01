@@ -36,6 +36,7 @@ tags:
   - Masoretic Text
   - Midianites
   - Moabites
+  - Red Sea
   - Ugarit
 books:
   - Exodus

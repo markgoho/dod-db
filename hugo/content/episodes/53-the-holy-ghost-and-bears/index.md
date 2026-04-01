@@ -8,6 +8,7 @@ aliases:
 tags:
   - Holy Spirit
   - Jesus
+  - Elisha
   - King Saul
   - Trinity
   - YHWH

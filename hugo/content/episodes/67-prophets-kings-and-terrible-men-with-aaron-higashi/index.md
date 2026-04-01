@@ -27,6 +27,7 @@ tags:
   - Joshua
   - Sheol
   - Talmud
+  - Zipporah
 books:
   - 1 Samuel
 guests:

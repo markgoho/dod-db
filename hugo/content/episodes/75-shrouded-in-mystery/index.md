@@ -10,6 +10,8 @@ tags:
   - Egypt
   - Jesus
   - Egyptians
+  - Red Sea
+  - Turin
   - Moses
   - Hebrews
   - Aaron

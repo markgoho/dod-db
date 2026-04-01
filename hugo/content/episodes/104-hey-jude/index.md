@@ -1,0 +1,310 @@
+---
+title: Hey Jude
+date: 2025-03-31T00:00:00.000Z
+episodeNumber: 104
+videoId: h7SIkjdpCi4
+aliases:
+  - /episodes/104/
+tags:
+  - Jesus
+  - angel
+  - Enoch
+  - Peter
+  - James
+  - Book of Enoch
+  - Israel
+  - Sodom
+  - Babylon
+  - Egypt
+  - King James Version
+  - Monotheism
+  - Deutero-Isaiah
+  - Deuteronomy
+  - Moses
+  - Paul
+  - Baal
+  - Eschatology
+  - Adam
+  - Judah
+  - YHWH
+  - biblical canon
+  - Flood
+  - Isaiah
+  - Jacob
+  - provenance
+  - Textus Receptus
+  - Trinity
+  - Abraham
+  - Dead Sea Scrolls
+  - El
+  - forgery
+  - Hebrews
+  - Holy Spirit
+  - inerrancy
+  - Isaac
+  - Joshua
+  - Judas Iscariot
+  - Masoretic Text
+  - Nephilim
+  - Nineveh
+  - Second Temple period
+  - Septuagint
+  - Ten Commandments
+  - textual criticism
+  - Univocality
+books:
+  - Exodus
+  - Isaiah
+  - Deuteronomy
+  - Genesis
+  - Hosea
+  - Psalms
+  - 2 Peter
+  - Jude
+  - Philippians
+  - Ezekiel
+segments:
+  - Chapter and Verse
+  - Taking Issue
+segmentData:
+  - type: chapter-and-verse
+    label: Chapter and Verse
+    startSeconds: 158.17
+  - type: taking-issue
+    label: Taking Issue
+    startSeconds: 2519.404
+draft: false
+---
+
+{{< line >}}[00:00:01.040] Dan McClellan: The word Baal, which is the name of the northwest Semitic storm deity. And so God is saying, get those nasty Baals' names out. Baal's names out of your mouth. And. Hey, Everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:21.440] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
+{{< line >}}[00:00:22.640] Dan McClellan: And you're listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and we combat the spread of misinformation about the same. How go things today, Dan?{{< /line >}}
+{{< line >}}[00:00:35.820] Dan Beecher: It's a beautiful day in the neighborhood. Life is good. And we're. I'm. I, you know, it's funny. I'm kind of excited about today's show.{{< /line >}}
+{{< line >}}[00:00:44.860] Dan McClellan: All right.{{< /line >}}
+{{< line >}}[00:00:45.380] Dan Beecher: Honest with you, I think we're. When you suggested that we just talk about the book of Jude, which is one of the. One of the single chapter books, you know, they're my favorite in the Bible. I didn't know what to expect because I don't know anything about Jude. So I read it and woof. I found a lot of things that I was eager to talk to you about.{{< /line >}}
+{{< line >}}[00:01:06.660] Dan McClellan: Yeah, it is, it is dense.{{< /line >}}
+{{< line >}}[00:01:08.740] Dan Beecher: So that's our chapter and verse up front. And then at the end we're gonna go back into some stuff like we're gonna get back into monotheism as a concept and, and the pushback that you have gotten because you keep saying that there isn't monotheism like a liar and other people are totally getting you with good verses. So. So you will be defending yourself, sir?{{< /line >}}
+{{< line >}}[00:01:35.020] Dan McClellan: Yes, I will be talking about some passages from mainly Deutero-Isaiah and. And a couple other scattered locations that people always immediately say you're wrong because of these passages. And I'm going to talk about what those passages are saying in the view of. I would say maybe not the majority, but an increasing number of scholars are endorsing and I think will be the majority before. Within the next few years. So.{{< /line >}}
+{{< line >}}[00:02:07.000] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:02:07.840] Dan McClellan: Yes, Jude.{{< /line >}}
+{{< line >}}[00:02:09.040] Dan Beecher: Bold predictions coming out. We're coming in hot, baby.{{< /line >}}
+{{< line >}}[00:02:12.080] Dan McClellan: And my. I'm editing a volume based on some. A conference that we had last. Yes. Last year.{{< /line >}}
+{{< line >}}[00:02:19.180] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:02:19.980] Dan McClellan: Will be one of the. One of the main volleys in this back and forth. So, yeah, I don't say this lightly.{{< /line >}}
+{{< line >}}[00:02:25.860] Dan Beecher: We talked about that a number of times. So yes, I'm excited about all of that. But first, before we get all into all of that, we got Jude to get into. So let's do a chapter and verse. And this chapter and verse. We are. We. So. Okay. It is a letter.{{< /line >}}
+{{< line >}}[00:02:46.310] Dan McClellan: Huh?{{< /line >}}
+{{< line >}}[00:02:46.710] Dan Beecher: It is a letter from Jude.{{< /line >}}
+{{< line >}}[00:02:49.110] Dan McClellan: Somebody named Jude.{{< /line >}}
+{{< line >}}[00:02:50.710] Dan Beecher: Yeah. Which by the way, in the NRSVue, I click on the footnote and it says the Greek is Ioudas. And I'm like, why is it just not Judas then?{{< /line >}}
+{{< line >}}[00:03:00.470] Dan McClellan: So, yeah, that is, that is a little peculiar, isn't it? So Ioudas is the, is the Greek. And this is actually a Greek transliteration of the Hebrew name Judah. So one of the, the sons of Jacob, one of the 12 tribes of Israel. And in the Greek transliteration, it's just spelled a little bit differently because of their naming convention. So we get, we get Ioudas in, in Greek, which gets changed to Jude in English.{{< /line >}}
+{{< line >}}[00:03:35.310] Dan Beecher: It's so maddening to me. Can I just say the naming thing? It just frustrated because okay, any of those would have been acceptable, but there's so many other versions of the same name. And why are they getting translated differently or transliterated differently? Why are we like it just like. And then the naming problem doesn't end there because right after that Jude, a servant of Jesus Christ and brother of James, but not that James apparently a different.{{< /line >}}
+{{< line >}}[00:04:05.000] Dan McClellan: Or is it.{{< /line >}}
+{{< line >}}[00:04:06.360] Dan Beecher: Well, you. One would think that if he, if he were a brother of that James, he would have said a brother of Jesus Christ also.{{< /line >}}
+{{< line >}}[00:04:13.170] Dan McClellan: One would think. And there's, and there's a lengthy debate. Is there that within the scholarship? Yeah. Because what other, what other James is he talking about? I mean it. He seems to be wanting to try to arrogate some authority based on this other James and.{{< /line >}}
+{{< line >}}[00:04:27.330] Dan Beecher: Because why not otherwise?{{< /line >}}
+{{< line >}}[00:04:29.090] Dan McClellan: Yeah. If you're talking about Jameses with authority, there's the main one. Yeah. Guy is James the, the brother of Jesus, which would make this guy the brother of Jesus, which would be an odd omission. I mean, you could trump James, the brother of Jesus by just going straight to Jesus, but there, there is an indication that, that Jesus maybe had another brother named Jude. And, and to go back to why transliterate differently? I think traditionally the idea is you don't want to confuse this Jude with the other one who betrayed Jesus. So if this is the, the epistle of Judas, suddenly it gets a little, a little wonky.{{< /line >}}
+{{< line >}}[00:05:09.890] Dan Beecher: I understand that. But we haven't had that problem with so many other confusing the names and stuff. Like, I get that. Yeah. You don't want this guy to be confused with the dude who, who like actually did Jesus dirty. I. That's probably true.{{< /line >}}
+{{< line >}}[00:05:24.890] Dan McClellan: El Duderino, as, as he prefers to.{{< /line >}}
+{{< line >}}[00:05:28.370] Dan Beecher: The whole brevity thing.{{< /line >}}
+{{< line >}}[00:05:29.890] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:05:31.330] Dan Beecher: So, okay, he starts off the letter, he's just like, hello, this is me. And, and then me.{{< /line >}}
+{{< line >}}[00:05:38.650] Dan McClellan: You're looking for. Right, yeah.{{< /line >}}
+{{< line >}}[00:05:41.170] Dan Beecher: And then says, you know, hey, I was going to write to you about salvation and how great it is that we're all getting saved, but I can't because I need to write to you about this other thing that's really, really important.{{< /line >}}
+{{< line >}}[00:05:56.530] Dan McClellan: We've been trying to contact you regarding.{{< /line >}}
+{{< line >}}[00:05:58.690] Dan Beecher: Your vehicle's extended warranty.{{< /line >}}
+{{< line >}}[00:06:03.370] Dan McClellan: That would be. That would be quite the. The slow play.{{< /line >}}
+{{< line >}}[00:06:06.650] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:06:07.930] Dan McClellan: Well, before we. I do want to talk briefly about date and authorship, though, because there's more to the question because whoever James is, whoever Jude is claiming to be, I think the majority of scholars suggest that's not actually who they were.{{< /line >}}
+{{< line >}}[00:06:23.850] Dan Beecher: Oh.{{< /line >}}
+{{< line >}}[00:06:25.130] Dan McClellan: Because this letter was probably written closer to the end of the first century CE or the beginning of the second century CE. It was probably not written contemporaneous with the life of James, the brother of Jesus. And, and so is probably pseudepigraphic, meaning that the person was probably writing in someone else's name, falsely arrogating their identity and thus their authority. And there have even been debates about this. Obviously folks who are committed to the inerrancy of and the inspiration of the entire Bible are going to want to defend traditional authorship. Yeah, there's not.{{< /line >}}
+{{< line >}}[00:07:05.900] Dan Beecher: I would see. I could see that.{{< /line >}}
+{{< line >}}[00:07:08.620] Dan McClellan: Yeah. There's not an incredibly strong argument to make. And there are some peculiarities about this that we're going to get into that make it seem like maybe this is. This is somebody who's a little outside of, you know, the central hierarchy of the followers of Jesus. And so I personally think we're probably looking at the 90s or maybe the, the 100s, the aughts of the, the second century CE. There are parts of this that seem to be referred to in the Epistle of Second Peter. And so most scholars think that Second Peter is probably referencing parts of Jude, and so it has to have come before Second Peter. However, Second Peter is agreed by the majority of scholars to have been written like between 120 and 150 CE.{{< /line >}}
+{{< line >}}[00:08:05.380] Dan Beecher: Oh.{{< /line >}}
+{{< line >}}[00:08:05.780] Dan McClellan: So that. That was probably the last text that was written in the whole New Testament. So Jude is. Is probably later than the majority of the Gospels, probably much later than Paul, but not quite as late as Second Peter. So sorry, I just thought the, the table needed to be set a little bit regarding.{{< /line >}}
+{{< line >}}[00:08:24.260] Dan Beecher: No, no, no. Totally, totally. So what you're saying is that this whole thing should be ignored as, as, as bunk as baloney as well, at.{{< /line >}}
+{{< line >}}[00:08:34.710] Dan McClellan: Least in terms of it's. It's probably a forgery or pseudepigraphic. Now there is it probably was an actual letter that was sent to a group.{{< /line >}}
+{{< line >}}[00:08:48.670] Dan Beecher: Yeah, that makes sense.{{< /line >}}
+{{< line >}}[00:08:49.870] Dan McClellan: Yeah. It wasn't like this guy was like, needed to come up with an artifact and so scribbled this down and was like, aha, I got, I got this thing. It probably was written in. In the name of this other person and probably sent. But yeah, probably not by the actual Jude, the brother of, of James and.{{< /line >}}
+{{< line >}}[00:09:08.460] Dan Beecher: The brother of Jesus.{{< /line >}}
+{{< line >}}[00:09:09.620] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:09:10.660] Dan Beecher: And. And also, unlike many of the other epistles that we've encountered, this does not have a to-line, like, we don't know who this was written to, do we?{{< /line >}}
+{{< line >}}[00:09:20.740] Dan McClellan: Yes, I. I think there's, there's a greeting to those who are called, who are beloved in God the Father and kept safe for Jesus Christ, which is a pretty broad. Yeah. Designation. It's not like the people who are saved who are in Thessaloniki. Right. Or it's, it's just sent out broadly.{{< /line >}}
+{{< line >}}[00:09:43.110] Dan Beecher: Yeah, it just seem, it just seems like this is an open letter to everybody, sort of almost.{{< /line >}}
+{{< line >}}[00:09:48.230] Dan McClellan: Yeah, this is a. This is Jude's Substack. And it's just, you know, this is for anybody who, who cares, but mostly for my subscribers. And, and yeah. Which would have been, you know, sending out a letter to everybody would have been a phenomenally difficult thing to do in antiquity because.{{< /line >}}
+{{< line >}}[00:10:14.320] Dan Beecher: Exactly.{{< /line >}}
+{{< line >}}[00:10:14.800] Dan McClellan: You had to pay somebody to scribble it out by hand and transcribe these things. And so to make copies of this is. Is a phenomenally difficult thing to do. And generally what happened is somebody would get a hold of it and then they would have a couple of copies made and then those copies would be disseminated and someone who got a hold of one of them might have a couple copies made and then those would go on. So it was a slow process. But. But yeah, the pretty.{{< /line >}}
+{{< line >}}[00:10:38.810] Dan Beecher: It took off. This was an important one to them.{{< /line >}}
+{{< line >}}[00:10:41.169] Dan McClellan: Yeah. Yeah.{{< /line >}}
+{{< line >}}[00:10:41.930] Dan Beecher: Which. Which kind of baffles me because it doesn't feel like there's that much in it. There's a lot for us to talk about. But in terms of, like, when I put myself in the, in the shoes of people in that time, other than it feels like you send it to all of your friends who have a problem with grumblers in their, in their midst, because it does seem like that's the issue at hand.{{< /line >}}
+{{< line >}}[00:11:04.690] Dan McClellan: Yeah, it is, it's. It's a bit of a polemic. It is complaining about these opponents, these other folks who are. And, and most of the. The letter seems to be kind of quoting scriptures and referring to traditions that's, you know, in an effort to drag these folks.{{< /line >}}
+{{< line >}}[00:11:25.530] Dan Beecher: Yes. And it, and, and it, and it also. It feels. We'll get to it. We'll get to it. It feels very. From a particular perspective, it feels like this is, this is designed and aimed entirely at squashing one perspective or squashing a new idea. And, and you guys all have to adhere to the way I'm thinking about things. Anyway, we'll get to that.{{< /line >}}
+{{< line >}}[00:11:51.810] Dan McClellan: And, and that. Are you going to read verse four?{{< /line >}}
+{{< line >}}[00:11:56.290] Dan Beecher: I wasn't. Oh, yes, we should read verse four. It's. Yeah, because. Because the, the reason for the letter isn't the salvation which it was going to be, but rather verse four: "for certain intruders have stolen in among you people who long, who long ago were designated for this condemnation as ungodly, who pervert the grace of our God into debauchery and deny our only Master and Lord Jesus Christ." So there you go.{{< /line >}}
+{{< line >}}[00:12:26.940] Dan McClellan: Ouch.{{< /line >}}
+{{< line >}}[00:12:27.540] Dan Beecher: Yeah. Now I was looking at another version of this.{{< /line >}}
+{{< line >}}[00:12:32.060] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:12:32.780] Dan Beecher: And it. Verse 4 ends with "and denying the only Lord God and our Lord Jesus Christ." But. So that's in the. The KJV. But in another version it sounded like. And I was just. I, I have this. I have one app that will read it. Read the Bible to me when I'm busily doing other things. So I was listening to it and I don't know what version that was because I'm using my phone to do our video. So I can't look it up on my phone right now. But it said it made it seem like it was. And denying the only Lord God, Jesus Christ, conflating them as the same thing. Yes, I. So I did have a question about that, but I'm. But I don't have that version in front of me. Anyway. Did. Is. Is there a reason why it might be translated that way or.{{< /line >}}
+{{< line >}}[00:13:27.530] Dan McClellan: Well, that. That's just going to have to do with the, the manuscripts that we're looking at. So the King James Version says turning the grace of our God into lasciviousness and denying the only Lord God and our Lord Jesus Christ.{{< /line >}}
+{{< line >}}[00:13:40.440] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:13:40.920] Dan McClellan: And so let me just. That will be the Textus Receptus that the King James Version will be based on opening that up. And yeah, it looks like. And so the definite article is not being used for any of these. And so these could. This could be interpreted to refer to one and the same entity that is described by, by both of those things. But so it.{{< /line >}}
+{{< line >}}[00:14:19.480] Dan Beecher: So in when the KJV adds the word and.{{< /line >}}
+{{< line >}}[00:14:24.000] Dan McClellan: Well, and is there. So, okay, so Theon Kyrion, that's, that's. And. But normally we would look at the definite article. There's, there's this rule about how you don't repeat the definite article if you're, if you want the designation to kind of extend over. To be distributed. And I've explained that horribly. But I'm, I'm actually pulling up Bruce Metzger's New Testament Textual Commentary, which goes through all of the verses that have textual variations that are considered at all significant and talks about them and, and why they would. They would or would not support those readings. And it looks like for verse four, it doesn't really have. Okay, okay. So it says in order to avoid the ambiguity of whether despoten, which means master despot, refers to Christ as in {{< scripture ref="2 Peter 2:1" >}}, or to God as elsewhere in the New Testament, the Textus Receptus, following a handful of manuscripts, appends Theon, so adds that on the end. The shorter reading, without the interpolation, is decisively supported by.{{< /line >}}
+{{< line >}}[00:15:47.820] Dan McClellan: And then lists a bunch of manuscripts including like P72, Sinaiticus, Alexandrinus, Vaticanus. So those are the most authoritative.{{< /line >}}
+{{< line >}}[00:15:56.450] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:15:57.490] Dan McClellan: So no other commentary. But it sounds like, yeah, the—whatever the request is, or whatever the case—that is a secondary addition. So the King James Version should not be considered the authoritative one.{{< /line >}}
+{{< line >}}[00:16:12.090] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:16:12.410] Dan McClellan: But yeah, it sounds like somebody later on is trying, looking for an opportunity to throw something Trinitarian in there.{{< /line >}}
+{{< line >}}[00:16:20.560] Dan Beecher: Yeah. And "deny our only Master and Lord." Like, okay, so Master and Lord Jesus Christ is probably the best way of looking at it. Yeah. Okay, good. It's... yeah, man. See, these... this is the reason why people get... I can see why lots of people pick a version and then just, you know, will not stray from it because it just gets—you get into the weeds with this stuff. All right.{{< /line >}}
+{{< line >}}[00:16:51.970] Dan McClellan: Yeah. But we do have in verse five something that's... that raises the specter of the Trinity all over again. So.{{< /line >}}
+{{< line >}}[00:17:01.850] Dan Beecher: Yeah, so. And that's kind of why I was... yeah, why I was hung up on the first thing is because now we get into verse five and it says, "now I desire to remind you, though you are fully informed once and for all, that Jesus, who saved a people out of the land of Egypt, afterward destroyed those who did not believe." That is, you know—for—that is the first time I've... I personally—and I have not read this book cover to cover—but that is the first time that I have read a scripture and thought, oh, that's a problem, that's a problem. And I see why the Trinitarians had to contend with it because I did not understand Jesus to be the one who had done that. I mean, presumably we're talking about the Exodus. We're not talking about that time when Jesus lived in Egypt and happened to save a bunch of people out there and we just don't know that story.{{< /line >}}
+{{< line >}}[00:17:58.760] Dan McClellan: There was a... there was a fire and he had to get everybody out. Yeah, no, this is peculiar, but there are, again, we've got manuscript variations here. There are some that read "the Lord," and then there are some that read "God," and then there's at least one that reads "God, Christ." And so it's peculiar. It's obviously a little confusing because it's a difficult reading to say Jesus did this. Wait a minute, the Hebrew Bible says God did this.{{< /line >}}
+{{< line >}}[00:18:33.030] Dan Beecher: But.{{< /line >}}
+{{< line >}}[00:18:33.590] Dan McClellan: And so there's a principle within textual criticism called lectio difficilior. It's not like a hard and fast rule, but most of the time the trend is in the direction of making text easier to understand. If you're going to mess up the text, it's going to be in the direction of making it easier to understand. And so whichever reading is less easy to understand tends to be the earlier reading. And that is... that is a bizarre reading that Jesus did this. So the attempts to change it to Lord or God or something like that are probably the secondary readings. Okay. I think most scholars today would say, yeah, it probably says Jesus. Now we have in the book of Exodus, God being the one who is doing this, kind of, because you also have another entity that is involved and that is the messenger of the Lord. Because who appears to Moses in {{< scripture ref="Exodus 3" >}}? A lot of people... well, in verse 6, whoever appears to Moses says, "I am the God of your father, the God of Abraham, the God of Isaac, the God of Jacob."{{< /line >}}
+{{< line >}}[00:19:37.240] Dan McClellan: But in verse two, the entity that appears to Moses in the flame of fire amidst the burning bush is explicitly said to be the angel of Adonai. And so this is one of those examples where... that we see in Judges, that we see in Genesis, that we see here in Exodus, maybe in Joshua, where the identity of the angel of God is kind of mixed up with the identity of God themselves. So you have the angel saying, "I am the God of your Father." And then in {{< scripture ref="Exodus 23" >}}, in verse 20—this is after the... right after the Ten Commandments and the Covenant Code—you have God tell the Israelites, "hey, look, I'm sending an angel before you to guide you on the way. Don't disobey him. Don't piss him off because he does not have to forgive your transgressions because my name is in him." And this is a bizarre verse, but one of the things that I have argued and others... I think this has been...{{< /line >}}
+{{< line >}}[00:20:46.890] Dan McClellan: Actually, no, now that I think about it, I think I'm the... if someone else has argued it, it's not in a very prominent public way, but I think this makes the most sense of things. What's going on here is this is probably trying to account for why we have these other passages where the angel of the Lord is identifying as the Lord.{{< /line >}}
+{{< line >}}[00:21:51.730] Dan McClellan: And how can that be? Well, my name is in him. And what this results in, in early Christianity, as a result of other influences from Greek philosophy about the immateriality of God and that kind of stuff, is a very early tradition within Christianity that Jesus was the angel of the Lord because Jesus is, is God in some sense. And the angel of the Lord is God in some sense. And so the premortal or the pre-incarnation appearances of God are actually appearances of Jesus. And so when it says that Jesus saved a people out of the land of Egypt—{{< scripture ref="Jude 5" >}}—if Jesus is the angel of the Lord, then the angel of the Lord is one who saves people out of Egypt. So I think what it's doing is identifying Jesus as the angel of the Lord, right? Who is the one who appeared to Moses in {{< scripture ref="Exodus 3" >}}, who's the one who is going to lead everybody out of Egypt according to {{< scripture ref="Exodus 23" >}}.{{< /line >}}
+{{< line >}}[00:22:52.570] Dan Beecher: So and then destroy the people who did not believe?{{< /line >}}
+{{< line >}}[00:22:57.290] Dan McClellan: Well, and the. Yeah, hilarity ensues. Yeah, there's all kinds of things that happen as a result of that.{{< /line >}}
+{{< line >}}[00:23:03.450] Dan Beecher: But I think what's fascinating to me is that this isn't, you know, a, a some sort of third century CE innovation or whatever this is. This must have developed quickly. This idea that Jesus was, was the angel of God or somehow was conflated with God in like, like Old Testament kind of God. Yeah, I think that that's really interesting that that had already come about by this time.{{< /line >}}
+{{< line >}}[00:23:33.310] Dan McClellan: Well, and, and I think. Yeah. That it was already in circulation when the New Testament was being written. Because according to the argument that I've published in a couple different places and will be publishing in a couple more within the next year, the, the template that is provided by the angel of the Lord, this "not God, but also can claim to be God" template, that conceptual template was one of the things that facilitated this kind of oh, Jesus is God, but also not God. So I think that is what contributed to the conceptualization of Jesus's identity and mission was this idea of one of a few different contributions. Because you also have the Son of Man tradition that is going on there. You also have, you have a few different traditions going on. But I think the idea of Jesus as patterned after this angel who bears God's name and so exercises God's authority.{{< /line >}}
+{{< line >}}[00:24:33.660] Dan McClellan: Yeah. Pops up very, very early and is in the Gospels and it might even be in Paul in Philippians, the Christ hymn, {{< scripture ref="Philippians 2:6-10" >}}. Paul Holloway's got a wonderful Hermeneia commentary on that which is right here. And for those watching on the video, those listening, that doesn't mean anything, but I'm getting used to the fact that, that people can't see me most of the time.{{< /line >}}
+{{< line >}}[00:25:04.070] Dan Beecher: Yeah. Most of the people who are getting this message are, are only hearing it.{{< /line >}}
+{{< line >}}[00:25:07.990] Dan McClellan: That's true. But. And, and he talks about how this, this Christ hymn seems to reflect this Second Temple Jewish idea about a name-bearing angel. And so if that's already present in Paul, then that's present in our various, very, various very earliest New Testament texts. So yes, I think it is very early.{{< /line >}}
+{{< line >}}[00:25:30.240] Dan Beecher: That's interesting. Okay. I also wanted to get, I mean we're only five verses in. We got to get through this thing. But I wanted to. Then I got hung up on verse seven.{{< /line >}}
+{{< line >}}[00:25:40.640] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:25:41.360] Dan Beecher: And part of that is because we have talked about, you know, we've talked about Sodom and Gomorrah and we've talked about how many people said many people assume and use the, use the destruction of Sodom and Gomorrah as a reason to justify saying that God is against homosexuality. Now, we've done a whole episode about that, and one of the things that we concluded was that. And you. You'll have to remind me what verse this comes from. But there's a verse that, somewhere in the Old Testament, I think, that says that the sin of Sodom was inhospitality.{{< /line >}}
+{{< line >}}[00:26:18.740] Dan McClellan: Yes. Yeah, that. Well, that's in Ezekiel.{{< /line >}}
+{{< line >}}[00:26:22.580] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:26:23.180] Dan McClellan: And I'm for some reason blanking on {{< scripture ref="Ezekiel 16:49" >}}. I got it. Right. Okay.{{< /line >}}
+{{< line >}}[00:26:28.860] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:26:29.940] Dan McClellan: One of the most difficult things about being a Bible scholar is remembering verses because it's like, oh, man, they get messed up in your head real easy, at least in mine. But that's probably because I am neurodivergent in a lot of ways. But it says this was the guilt of your sister Sodom. She and her daughters had pride, excess of food and prosperous ease, but did not aid the poor and needy. They were haughty and did abominable things before me, therefore I removed them when I saw it. So, yeah, according to Ezekiel, never says anything about same-sex attraction or even same-sex intercourse. And so, at least for the earliest witnesses to this tradition, that doesn't seem to be the issue.{{< /line >}}
+{{< line >}}[00:27:20.520] Dan Beecher: Well, Jude takes issue with you, sir, and says in verse seven, likewise, Sodom and Gomorrah and the surrounding cities, which, in the same manner as they indulged in sexual immorality and pursued unnatural lust, serve as an example by undergoing a punishment of eternal fire.{{< /line >}}
+{{< line >}}[00:27:44.140] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:27:45.900] Dan Beecher: So now, first of all, can I just say, the fire of Sodom and Gomorrah was not eternal. It went out.{{< /line >}}
+{{< line >}}[00:27:50.940] Dan McClellan: No, it. This was not burning an eternal flame. So I'm sorry, I'm gonna have to go back to the. That was like my favorite song when I was in elementary school. And I don't know why, I don't know why, but I love.{{< /line >}}
+{{< line >}}[00:28:04.420] Dan Beecher: Who is that? Pat Benatar? The Bangles? I don't know.{{< /line >}}
+{{< line >}}[00:28:07.700] Dan McClellan: I think I want to say it's the Bangles, but I don't remember. But yeah, it was. Yep, it's the Bangles.{{< /line >}}
+{{< line >}}[00:28:15.040] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:28:16.280] Dan McClellan: Yeah, I used to love that song. Anyway, so we've got to contextualize this a little bit as, as, you know, one must do. Now, when apologists say context, what they mean is canonical context. You have to make it fit with everything else in the Bible, which presupposes that univocality. I want to talk about literary context, particularly in light of the first word of verse seven, which was what?{{< /line >}}
+{{< line >}}[00:28:39.800] Dan Beecher: Likewise.{{< /line >}}
+{{< line >}}[00:28:40.920] Dan McClellan: Likewise. To what likewise? What are we talking about here?{{< /line >}}
+{{< line >}}[00:28:43.440] Dan Beecher: Okay, so we gotta, we're talking verse six, verse six.{{< /line >}}
+{{< line >}}[00:28:47.080] Dan McClellan: And the angels who did not keep their own position, but deserted their proper dwelling, he has kept in eternal chains in deepest darkness for the judgment of the great day.{{< /line >}}
+{{< line >}}[00:28:56.920] Dan Beecher: Right?{{< /line >}}
+{{< line >}}[00:28:57.280] Dan McClellan: This is a reference to First Enoch. This is a reference to the Enochic tradition, the idea that angels came down and they did the hibbity dibbity with the human women. And that resulted in these giants, who resulted in the Nephilim, who resulted in the demons who taught the evils of warfare and of makeup to humanity. Now it says so, so what happened? Angels had sex with human women. Likewise Sodom and Gomorrah and the surrounding cities, which in the same manner as they, okay, indulged in sexual immorality and pursued unnatural lust. Now here's the problem. Unnatural lust is an awful translation of sarkos heteras, which in Greek means flesh, other or other flesh. Now if it's translated unnatural lust, people will think what's more unnatural than two men doing what is unseemly?{{< /line >}}
+{{< line >}}[00:29:56.350] Dan Beecher: Only on, only very uninformed people think that that's unnatural. It's kind of the most natural, if you look at the animal world. But that's okay.{{< /line >}}
+{{< line >}}[00:30:05.610] Dan McClellan: But, and, and I'm talking about the folks who are coming to this with the idea that that same-sex intercourse and attraction is icky, right? But when it says other flesh, there's not really a case to make based on 1st century or early 2nd century Greek that this is a reference to same-sex intercourse, right? What it's a reference to is other flesh, angelic flesh, human flesh. They are pursuing other flesh. In the Book of Enoch, it was angels who had sex with humans. In {{< scripture ref="Genesis 19" >}}, it was the humans who threatened to sexually assault the angels, right? And so the sexual immorality and the unnatural lust here is human men wanting to, or at least threatening to sexually assault, engage in sexual intercourse with angelic beings. And this is what, if you look this up in critical commentaries, this is what they will say. This seems to be about human-angelic intercourse.{{< /line >}}
+{{< line >}}[00:31:09.070] Dan McClellan: And this was a controversy at the time. In fact, you can look in later rabbinic literature and they're talking about this because they're looking at {{< scripture ref="Genesis 6" >}} and they're going, what's up with these, these Bene Elohim, these children of God, these must be angels.{{< /line >}}
+{{< line >}}[00:32:03.150] Dan Beecher: Interesting. Okay. Got it. I like it.{{< /line >}}
+{{< line >}}[00:32:05.950] Dan McClellan: Okay.{{< /line >}}
+{{< line >}}[00:32:06.390] Dan Beecher: And it does make sense. You're, you're absolutely right. That, that, that verse seven absolutely is referencing verse six right before it, which is, which is about angels not keeping their proper dwelling, as it were.{{< /line >}}
+{{< line >}}[00:32:23.500] Dan McClellan: Yes. Not keeping things where they belong. Zipped up.{{< /line >}}
+{{< line >}}[00:32:27.660] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:32:28.060] Dan McClellan: Where they, they belong. Right.{{< /line >}}
+{{< line >}}[00:32:32.300] Dan Beecher: Okay. So.{{< /line >}}
+{{< line >}}[00:32:33.300] Dan McClellan: And.{{< /line >}}
+{{< line >}}[00:32:34.220] Dan Beecher: Oh, go on, go.{{< /line >}}
+{{< line >}}[00:32:35.420] Dan McClellan: Well, I was just going to say, and a good indication that the book of First Enoch is influential for the author of Jude is the fact that the author of Jude explicitly quotes from the book of First Enoch, verses 14 and 15. And something interesting here, I want to say verse 14, it says: "It was about these, that Enoch in the seventh generation from Adam prophesied saying, see, the Lord is coming with ten thousands of his holy ones to execute judgment on all and to convict all the ungodly of all the deeds of ungodliness that they have committed in such an ungodly way, and of all the harsh things that ungodly sinners have spoken against him." So he's, he's belaboring the ungodly point. Yeah, I think. But this is directly quoting 1st Enoch 1:9.{{< /line >}}
+{{< line >}}[00:33:28.810] Dan Beecher: Oh, okay.{{< /line >}}
+{{< line >}}[00:33:29.490] Dan McClellan: And so this is straight out of.{{< /line >}}
+{{< line >}}[00:33:31.490] Dan Beecher: Enoch, which makes it like, when I read that and, and saw that it was literally that it, like, it's not just the words from Enoch, but like, literally like name checks Enoch himself and, and, and sort of gives provenance, provenance to where it's all coming from by saying, you know, seventh generation from Adam and stuff.{{< /line >}}
+{{< line >}}[00:33:53.940] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:33:54.900] Dan Beecher: That made it kind of shocking to me that Enoch didn't make it into the final cut when they, when, when they were deciding what was going to be, you know, canon. Yeah, it's that, that feels like genuinely shocking. Well, it's that this made it and that didn't. You know what I mean?{{< /line >}}
+{{< line >}}[00:34:14.819] Dan McClellan: And for the, for a long time, it was considered inspired and authoritative scripture. The author of Jude, whoever they were, their text ends up in the New Testament. Their text is inspired, right, in authoritative scripture. And we have like authors like Tertullian, was an early Christian writing around 200 CE, who seems to acknowledge that people are questioning the authenticity, the authority, the inspiration of First Enoch. And he swings into Enoch's defense and says, "Nope, this is 100 percent inspired scripture." And, and his, his closing volley after he's made all of his points about how it's, you know, it could be historical, it can be all these things, he, he ties it all off by saying, "And it's quoted by the inspired author of Jude. So case closed." And it's not.{{< /line >}}
+{{< line >}}[00:35:05.360] Dan Beecher: That feels like case closed to me.{{< /line >}}
+{{< line >}}[00:35:07.480] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:35:07.920] Dan Beecher: And it feels totally real.{{< /line >}}
+{{< line >}}[00:35:09.600] Dan McClellan: Yeah. And it's, and it's not only that it's quoted. You will have apologists today who will be like, "You know, Paul quoted some Greek philosophers in the book of Acts. Just because they quote something doesn't mean that he's endorsing its inspiration or its authority." But he doesn't just say Enoch said this. He said Enoch prophesied.{{< /line >}}
+{{< line >}}[00:35:29.770] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:35:30.250] Dan McClellan: And what is inspired scripture if not the work of prophecy? This is how people understood the scriptures to be scriptures because they are spirit-led prophecy. And so the author of Jude quite explicitly calls this prophecy.{{< /line >}}
+{{< line >}}[00:35:49.210] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:35:49.610] Dan McClellan: If that's, if that's not scripture, nothing can qualify as scripture. And so yeah, this is, this is pretty clearly the author of Jude asserting the inspiration, the authority, the, the scriptural nature of the book of First Enoch. And, and what happened with Enoch is, is by the time you get into the third and the fourth centuries, you get people who are like, well man, it's weird.{{< /line >}}
+{{< line >}}[00:36:50.730] Dan McClellan: And so it falls out of favor. And in the 4th century, but not before some missionaries take Greek translations of it down to the kingdom of Aksum, which would become what we now know of as Ethiopia. So it is officially part of the canon of the Ethiopian Orthodox Tewahedo Church to this day. So Right. So, yeah, the First Enoch got the shaft by, by the Europeans.{{< /line >}}
+{{< line >}}[00:37:12.960] Dan Beecher: But I mean, that pre-flood, surviving the flood, that, that, that also is pretty smart. That makes a lot of sense too.{{< /line >}}
+{{< line >}}[00:37:23.180] Dan McClellan: Yeah, they, they made some, they made some good points, but they, they made those points over and against their dogmas about inspiration.{{< /line >}}
+{{< line >}}[00:37:30.780] Dan Beecher: Right. Yeah.{{< /line >}}
+{{< line >}}[00:37:31.420] Dan McClellan: And, and, and other things like Jude happen to slip in without people.{{< /line >}}
+{{< line >}}[00:37:36.300] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:37:37.100] Dan McClellan: Asking. Thinking very critically about what's going on,.{{< /line >}}
+{{< line >}}[00:37:39.820] Dan Beecher: About the origins and, and, and authorship sort of thing.{{< /line >}}
+{{< line >}}[00:37:43.260] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:37:43.660] Dan Beecher: All right, we got to get through this. Oh my gosh, we're. Oh gosh, we're deep into this thing. All right, so, so basically, as Enoch is warning. Warning us, he says these are, these are grumblers and malcontents. He's saying. He's referring to the ungodly sinners that have spoken against him. And they indulge their lusts. Their mouths utter bombastic nonsense, flattering people to their advantage. But you beloved, this is the final. This is, this is the final. The thrust of the, of the letter. But you beloved, must remember the words previously spoken by the apostles of our Lord Jesus Christ. For they say unto you, they say to you in the last time there will be scoffers indulging their own ungodly lusts. It is these worldly people devoid of spirit that are causing divisions. I want, I did want to just quickly say it very much. Seems to me like Jude is saying that the time that they are in the time of the writing of Jude are.{{< /line >}}
+{{< line >}}[00:38:49.670] Dan Beecher: Is the last time. It's like it's. They said unto you in the last time there will be scoffers. Is he saying that that is the last time the final end times? Because it seems like that's what he's.{{< /line >}}
+{{< line >}}[00:39:02.910] Dan McClellan: Saying in the last time. Let me see what the Greek is there.{{< /line >}}
+{{< line >}}[00:39:08.460] Dan Beecher: In verse 18.{{< /line >}}
+{{< line >}}[00:39:09.580] Dan McClellan: Yeah, there we go. So eschatou would be of the. Of the end. Eschaton is where that comes from, right? Yeah. So in the. That would be the last days, the last time.{{< /line >}}
+{{< line >}}[00:39:23.259] Dan Beecher: So it does seem like he's.{{< /line >}}
+{{< line >}}[00:39:24.460] Dan McClellan: He's.{{< /line >}}
+{{< line >}}[00:39:24.900] Dan Beecher: He's claiming that that is the end time, that they are living in the end times. Right.{{< /line >}}
+{{< line >}}[00:39:30.300] Dan McClellan: Yeah. And this, and this seems to be. And this is where we, we have an overlap with Second Peter. We have Second Peter. I think it's three. Yeah. Second Peter Three, Three. And so some folks say that this is quoting Second Peter. And then others would suggest maybe Second Peter is actually turning around and quoting this. So the, the relative chronology there is, is a little tricky. But yeah, this is, this is The. The last days. I. I think this. And this seems to me to harmonize with what we have in. In some other pseudepigraphic literature where they're talking about how, oh, we're gonna have the falling away, The. The man of lawlessness, the man of sin will be revealed. And these are ways to kind of rationalize why Jesus does not seem to have been on time for his own second coming.{{< /line >}}
+{{< line >}}[00:40:18.450] Dan Beecher: Right, right. Which was supposed to be like, this generation will not pass away before he returns. Right.{{< /line >}}
+{{< line >}}[00:40:23.730] Dan McClellan: So. Right.{{< /line >}}
+{{< line >}}[00:40:24.250] Dan Beecher: So it was supposed to have happened, like, in a generation or two.{{< /line >}}
+{{< line >}}[00:40:27.850] Dan McClellan: Yeah. So I think this is probably another indicator that this is coming later in the development of the New Testament.{{< /line >}}
+{{< line >}}[00:40:35.090] Dan Beecher: Sure.{{< /line >}}
+{{< line >}}[00:40:35.850] Dan McClellan: Yes.{{< /line >}}
+{{< line >}}[00:40:36.410] Dan Beecher: Okay. But you, beloved, build. Build yourselves up on your most holy faith. Praying in the Holy Spirit, keep yourselves in the love of God. Look forward to the mercy of our Lord Jesus Christ that leads to eternal life. And have mercy on some who are wavering. That's an interesting little moment. Save others by snatching them out of the fire. And have mercy on still others with fear, hating even the tunic defiled by their bodies.{{< /line >}}
+{{< line >}}[00:41:06.430] Dan McClellan: That.{{< /line >}}
+{{< line >}}[00:41:07.230] Dan Beecher: That. So if they're really nasty, just.{{< /line >}}
+{{< line >}}[00:41:12.270] Dan McClellan: Yeah, and the idea is don't even touch their clothes. Yeah, like, it's. Yeah, you don't even. So it's. It's kind of a thin. It's a pretty. It's a pretty thin line. He's. He's telling these people, they get to. They get to try to walk. It's like, have mercy on some, but don't even touch the clothes.{{< /line >}}
+{{< line >}}[00:41:31.910] Dan Beecher: Figure out which ones are the nastiest, and then, like, hate even their garments.{{< /line >}}
+{{< line >}}[00:41:36.630] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:41:37.269] Dan Beecher: Yeah. All right. Well, wow. We've taken plenty of time on. On Jude. Congratulations to them. To Jude, for getting himself into the Bible when Enoch couldn't make it.{{< /line >}}
+{{< line >}}[00:41:52.840] Dan McClellan: Was quite the coup.{{< /line >}}
+{{< line >}}[00:41:53.720] Dan Beecher: Yeah, it was. It was good. All right, let's move on to taking issue. All right. And the issue that we are taking today, Dan, is. Is an issue that people are taking with you. People are taking issue with you saying that we. And we hinted at this before that. That no part of the Bible. Yeah. You have in the past said no part of the Bible is really monotheistic. And we've talked about that on the show before. That there are, you know, that. That even though, you know, there's one God for this people or for this land or for this, you know, zone or whatever, there's no. There's no point at which they don't also believe that there are other gods. Those are just other gods that aren't for us.{{< /line >}}
+{{< line >}}[00:42:46.700] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:42:47.340] Dan Beecher: So the issue that people take with that people have come up with many verses that they say proves you wrong.{{< /line >}}
+{{< line >}}[00:42:58.940] Dan McClellan: Yeah, I, I get quite a bit of that. And I've addressed these verses many times, but that's, that's kind of the, the nature of social media is every time I make that video, there's somebody who has not seen the dozen videos before, right. Where I say, by the way, this is not an exception. And they will be like, you idiot, don't you know about this exception? And, and then I have to be like, I've talked about this ad nauseam.{{< /line >}}
+{{< line >}}[00:43:28.550] Dan Beecher: But okay, well, let, let me pull up a couple of these scriptures and just, and just let you have at it, because I will admit a lot of them sound pretty definitive. Okay, let's see. Declare and present your case. This is {{< scripture ref="Isaiah 45:21" >}}. Take counsel together. Who told this long ago? Who declared it of old? Was it not I, the Lord? There is no other God beside me. A righteous God and a Savior. There is no one besides me.{{< /line >}}
+{{< line >}}[00:44:04.160] Dan McClellan: Yes, boom, boom, indeed. And, and this phrase, this idea, besides me, none other besides me is repeated a bunch of times, particularly in Deutero-Isaiah. But we also see it in Deuteronomy, {{< scripture ref="Deuteronomy 32" >}}. And we also see it once in {{< scripture ref="Hosea 13" >}}, which is a. A little peculiar. But when you look at the Hebrew, there are a few different phrases that can be rendered besides me. One is mibbaladei, which is without, basically from without me. And there. There are a handful of others. The idea is basically the same besides me. Like spatially with me. There are not. It's. It's not like a universal apart from me. None other exist. It is. There is none other beside me. There is no other room. Yeah, because you can, you can. You can find occurrences of the use of very similar phrases, using the same words where like somebody says, do you have a sword?{{< /line >}}
+{{< line >}}[00:45:10.580] Dan McClellan: And he says, there is no sword besides me. And you know, the idea is not nowhere in the universe. The idea is within the scope of the, the rhetorical scope of the context.{{< /line >}}
+{{< line >}}[00:45:25.920] Dan Beecher: Right?{{< /line >}}
+{{< line >}}[00:45:26.240] Dan McClellan: Like if somebody says, do you have a sword? And you go, there's no sword besides me. Like you're saying that I can get to conveniently.{{< /line >}}
+{{< line >}}[00:45:33.680] Dan Beecher: Right. You're not claiming that there are no swords in the world.{{< /line >}}
+{{< line >}}[00:45:37.360] Dan McClellan: Right. And so the idea here is that, hey, you and me, we're having a discussion. In this discussion, there's nobody else besides me. Yeah, don't look at him.{{< /line >}}
+{{< line >}}[00:45:47.760] Dan Beecher: Don't look around. Don't You. You look at me.{{< /line >}}
+{{< line >}}[00:45:49.760] Dan McClellan: Yeah, yeah. And. And there are a few reasons that I think this is, this is clearly what is intended. I already gave you one. We can see the use of. Of similar terminology where the statements are limited to the rhetorical scope, the context in Isaiah, we also have a couple places where the same statement is put into the mouths of personified cities like Babylon and Nineveh.{{< /line >}}
+{{< line >}}[00:46:34.560] Dan Beecher: So that's not the Lord talking, that is Babylon talking.{{< /line >}}
+{{< line >}}[00:46:37.600] Dan McClellan: Right. The Lord says, "who say in your heart." And then the Lord is quoting Babylon. You're basically saying, "Babylon, you silly billy. You think there's no one besides you." And the idea is not that Babylon is represented as thinking they're the only city that exists.{{< /line >}}
+{{< line >}}[00:46:54.420] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:46:54.780] Dan McClellan: The idea is they think they're the only city that matters to their constituents. And this would be—and I've used this metaphor a lot—this would be like me saying, "You silly... what are they now? Las Vegas Raiders? You think there's no one besides you?"{{< /line >}}
+{{< line >}}[00:47:15.270] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:47:15.710] Dan McClellan: "The reality is that there's no one besides the Denver Broncos." At least that's what I could get away with back in the late 90s. No longer. But anyway, it's rhetoric. You're speaking to your own constituency saying, "Hey, nobody else matters but me. You know, I am the main character." And so you have that same statement put into the mouth of a couple other personified cities. So again, not saying—not a philosophical denial of the existence of other gods. It's just saying I'm the only one that matters.{{< /line >}}
+{{< line >}}[00:47:51.570] Dan Beecher: And is it possible that it would be better translated as "beside me" rather than "besides me"?{{< /line >}}
+{{< line >}}[00:47:59.330] Dan McClellan: Yeah, I think that's better.{{< /line >}}
+{{< line >}}[00:48:02.610] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:48:03.570] Dan McClellan: Because what we're going to look at is a bunch of... the immediate context is God's deliverance of Israel. "Thus says the Lord, the King of Israel, and his Redeemer, the Lord of Hosts"—and meaning the Redeemer of Israel—"I am the first, and I am the last. Besides me, there is no God." "I am the Lord. There is no other besides me. There is no God. I arm you, though you do not know me." And then you have a bunch of... you get the word Savior brought into this as well. "There is no other God besides me. A righteous God and a savior." And the idea seems to be that God's savior... there's only one for Israel.{{< /line >}}
+{{< line >}}[00:48:52.090] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:48:52.490] Dan McClellan: And when we look in the context, it's always God lecturing Israel about giving credit to other gods for saving them and warning them against giving credit to other gods for saving them. So what God is basically saying here in Deutero-Isaiah is, "Don't you go attributing your salvation and your well-being to other gods. There's no one else but me." Yeah, and you know, this is kind of abusive rhetoric that you might get from a domestic partner.{{< /line >}}
+{{< line >}}[00:49:28.160] Dan Beecher: Right? Yeah, yeah.{{< /line >}}
+{{< line >}}[00:49:29.440] Dan McClellan: But the idea is basically when it comes to your safety, your well-being, your deliverance, all of that, you have no one else to thank but me. So don't go—{{< /line >}}
+{{< line >}}[00:49:38.960] Dan Beecher: And also presumably no one else to go to in the future.{{< /line >}}
+{{< line >}}[00:49:42.320] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:49:42.800] Dan Beecher: Like this is, "I'm the only... I'm your only hope, Obi-Wan Kenobi."{{< /line >}}
+{{< line >}}[00:49:47.680] Dan McClellan: Right.{{< /line >}}
+{{< line >}}[00:49:49.360] Dan Beecher: But no, it's... but yeah, it's like, yeah, it very... it makes sense to say there is no one else besides me. You have to come to me. And that doesn't necessarily mean that there isn't another God to go to. It's just... this is... it may... I mean, I can see why you could interpret it both ways. But as you're saying contextually it makes sense that this is God just saying, "Don't look anywhere else. You've gotta come to me."{{< /line >}}
+{{< line >}}[00:50:23.450] Dan McClellan: Yeah. All eyes on me. And you see this in a couple other instances in {{< scripture ref="Isaiah 43:10" >}}, 43:11 is one of these places where it says, "I, I am the Lord, and besides me there is no savior." But in 43:10 it says, "You are my witnesses, says the Lord, and my servant, whom I have chosen, so that you may know and believe me and understand that I am he. Before me, no God was formed, nor shall there be any after me." And this is also frequently thrown at me.{{< /line >}}
+{{< line >}}[00:50:52.040] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:50:52.920] Dan McClellan: But the verb there for formed is yatsar. And this is a verb that is used to refer to—this is what God formed Adam from the dust of the earth. This verb is frequently used to refer to the creation of pottery. And so a clay entity that is formed would be a divine image. And so this is Deutero-Isaiah. This is post-exilic. This is after the people have been in Babylon among all the idol makers. And so the idea here is nothing that was formed is an actual God.{{< /line >}}
+{{< line >}}[00:52:05.750] Dan Beecher: So it's almost like it's not. There's no monotheism, but there is monogamy. There's theological monogamy.{{< /line >}}
+{{< line >}}[00:52:15.030] Dan McClellan: Yeah. And when you go into Hosea, where Hosea is saying, you know, I don't want you to call me Baali, I want you to call me Ishi, both meaning my husband, but Baali uses the word Baal, which is the name of the Northwest Semitic storm deity. And so God is saying, get those nasty Baals' names, Baal's names out of your mouth. And then, and then you've got in the next chapter—well, actually, it's a few chapters down the road, but there's this metaphor about Israel as the unfaithful wife.{{< /line >}}
+{{< line >}}[00:52:53.180] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:52:53.500] Dan McClellan: And then {{< scripture ref="Hosea 13" >}}, chapter 13, verse 4. Yet I have been Adonai, your God ever since the land of Egypt, you know, no God but me. So again, we've got the, the exclusive relationship. And besides me, there is no savior, basically, again, saying, I'm all you got. Yeah. Nobody else is going to care about you. Nobody's going to want you.{{< /line >}}
+{{< line >}}[00:53:18.180] Dan Beecher: But also referencing the, the, the story of the Exodus, which explicitly mentions multiple times other gods that are very powerful. Powerful. And so I think that that kind of. That's another reason why that might put the lie to the idea that there aren't other gods. It's, it's. Yeah, it's just. This is for you. Yeah.{{< /line >}}
+{{< line >}}[00:53:39.500] Dan McClellan: And I think one of the most explicit examples of this, my last piece of evidence is that you have the same rhetoric in Deuteronomy, {{< scripture ref="Deuteronomy 32" >}}, the Song of Moses. See, now that I, even I am he, there is no God besides me. That sounds pretty definitive. Right. I kill and I make alive. I wound and I heal, and no one can deliver from my hand. So that's verse 39, verse 43 says, bow down to him, all gods. So we have. Yeah. Not. Not only an explicit reference to other gods, but calling on them to worship God. And like, if you look in your KJV, it's not going to be in there because the Masoretic Text actually removed that part, but it's directly quoted in {{< scripture ref="Psalms 97:7" >}}. So you can just go to {{< scripture ref="Psalms 97:7" >}} for the, the preservation of that. But we know it's there because of the Dead Sea Scrolls and because of the Septuagint. Okay, and, and basically what you've got going on here is a reference to the other gods as subordinate to Adonai.{{< /line >}}
+{{< line >}}[00:54:44.480] Dan McClellan: And it's pretty impotent and pathetic rhetoric to say all the gods that we think are non existent, imaginary beings have to bow down to our God. Like that doesn't, that's, you know, that's pitiful, right? The more powerful the other gods, the more impressive the rhetoric. So if you are, if you are, you know, the little brother of some gigantic empires next to you who have monumentally powerful gods and you say, yeah, well, all your gods need to bow down to our God, that's impressive rhetoric. That means something. It means nothing if you don't believe the other gods exist. It means a lot more if you believe not only that they exist, but that they are monumentally powerful. So the rhetoric of {{< scripture ref="Deuteronomy 32" >}} is identical and it occurs right next to an explicit recognition of the other gods. And so the only reason people think Deutero-Isaiah is philosophical monotheism is because Isaiah is not willing to, is not going to call on the other gods to do anything because Isaiah thinks I don't even want to talk about them.{{< /line >}}
+{{< line >}}[00:55:55.100] Dan McClellan: You know, they're going to be, I'm going to call them abominations and things like that. So yeah, it's just not, there's not a good case to make here that this is philosophical monotheism as we understand it. This is, it's just rhetoric. It's the same crap I said about the Broncos in 1998, particularly in comparison to the Raiders. Don't quote me on that today though. But, but, but yeah, this is just rhetoric and people need to understand how rhetoric works.{{< /line >}}
+{{< line >}}[00:56:28.760] Dan Beecher: Now I, I'm going to push back on something since you're making the rhetoric argument so hard. I am going to say that like when you were talking about how you know it rhetorically, it, that phrase had much more power if they believe that the, that the, the surrounding gods are powerful and they must bow down to their God.{{< /line >}}
+{{< line >}}[00:57:15.290] Dan McClellan: Could I. I think that would make sense if the rhetoric were being directed to those other folks. Okay, but it's. But it's not here. This is. This is internally circulating. This is. This is the. The Judahites speaking amongst themselves. And so I. I don't think that, you know, and so there are a couple degrees of separation if you're like, hey, you gotta. I'm speaking to you, but you gotta read this imagining that I'm speaking to these other people. And that way the rhetoric will make better sense. Like. Sure. Is it possible? Yeah. Do we have any indication in the text that that's what's going on? No, not. Not based on all of the other stuff that we're seeing in the context where the message is clearly to the other Judahites saying, I'm all that matters to you. I'm the only one who can save you. Which is. Which is the kind of language that is used by someone who knows there are a bunch of other people around who can do the same thing.{{< /line >}}
+{{< line >}}[00:58:16.870] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:58:17.190] Dan McClellan: But they just need to gaslight the other folks into believing that they're the only ones.{{< /line >}}
+{{< line >}}[00:58:22.710] Dan Beecher: And all I can think about is that moment in Best in Show when he's yelling at his dog and he says, don't look at these other losers. You look at me.{{< /line >}}
+{{< line >}}[00:58:35.330] Dan McClellan: That. That. That wasn't Eugene Levy, was it?{{< /line >}}
+{{< line >}}[00:58:38.490] Dan Beecher: No, no, that was. Oh, I don't know the actor's name, but he's. He's brilliant in it.{{< /line >}}
+{{< line >}}[00:58:42.530] Dan McClellan: Yeah. Okay.{{< /line >}}
+{{< line >}}[00:58:43.490] Dan Beecher: Yeah. All right. Well, I think. I think we've put that to bed for a little bit of time. And now when you. When you have people bring these up, you can refer them to the podcast and just say, go check out this episode, and. And all your questions will be answered and you will be unsatisfied and still be.{{< /line >}}
+{{< line >}}[00:59:02.830] Dan McClellan: Yeah, that's the. That's the nature of dogmatism. I've always wanted to do, like, a video or a blog post or something that starts off with, hey, if you're listening to this, you've been sent here either by me or by someone else who wants to drop some knowledge on you.{{< /line >}}
+{{< line >}}[00:59:17.190] Dan Beecher: So here's. I feel like that's kind of the. The tacit. The implicit, like, intro to all of our stuff. Really?{{< /line >}}
+{{< line >}}[00:59:26.990] Dan McClellan: Yeah. Yeah, I think.{{< /line >}}
+{{< line >}}[00:59:28.630] Dan Beecher: All right. Well, friends, that's it for today. If you would like to become a part of making this show go and show some appreciation for the work that we do, we would sure appreciate it if you would go to patreon.com/dataoverdogma and become one of our patrons. At certain levels, you'll get different things, including an early and ad-free version of every episode. You can get the access to us to the After Party that we do. That's bonus content that we do for you every week. If you'd like to reach us, the email address is contact@dataoverdogmapod.com and we'll talk to you again next week.{{< /line >}}
+{{< line >}}[01:00:05.920] Dan McClellan: Bye, everybody.{{< /line >}}

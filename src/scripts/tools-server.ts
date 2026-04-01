@@ -44,6 +44,7 @@ import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 import type { EpisodeSegment } from "../storage/processed-videos.js";
 import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 import { updateVideoSegments } from "../storage/update-video-segments.js";
+import { isScriptureTag } from "../utils/is-scripture-tag.js";
 import { removeTagFromEpisode } from "../utils/remove-tag-from-episode.js";
 
 type TagVocabularyResponse = TagDefinition & {
@@ -79,10 +80,14 @@ function findAcceptedDuplicate(tag: TagDefinition): string | undefined {
 }
 
 function getVocabularyResponse(): TagVocabularyResponse[] {
-  return tagVocabulary.map(tag => ({
-    ...tag,
-    duplicateOf: findAcceptedDuplicate(tag),
-  }));
+  return tagVocabulary
+    .filter(
+      tag => !(tag.status === "proposed" && isScriptureTag(tag.canonical)),
+    )
+    .map(tag => ({
+      ...tag,
+      duplicateOf: findAcceptedDuplicate(tag),
+    }));
 }
 
 function mergeVariationsCaseInsensitive(

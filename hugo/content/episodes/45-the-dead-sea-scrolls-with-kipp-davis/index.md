@@ -25,6 +25,7 @@ tags:
   - Leningrad Codex
   - Masada
   - Essenes
+  - Gilead
   - Moses
   - Nehemiah
   - Trinity

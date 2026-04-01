@@ -13,6 +13,7 @@ tags:
   - YHWH
   - El
   - Endor
+  - Witch of Endor
   - Anatolia
   - archaeology
   - Deuteronomy

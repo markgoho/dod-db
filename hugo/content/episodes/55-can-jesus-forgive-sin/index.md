@@ -29,7 +29,6 @@ tags:
   - baptism
   - Galilee
   - Peter
-  - 2 Maccabees
   - Abraham
   - archaeology
   - Bart Ehrman
@@ -44,6 +43,7 @@ tags:
   - Judas Iscariot
   - King Saul
   - Mary Magdalene
+  - Nazareth
 books:
   - Mark
   - Joshua

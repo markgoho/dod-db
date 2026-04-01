@@ -36,6 +36,7 @@ tags:
   - Hebrews
   - Judaism
   - King David
+  - Nazareth
   - Pliny the Younger
   - Septuagint
 books:

@@ -22,6 +22,7 @@ tags:
   - Endor
   - etiology
   - Samuel
+  - Witch of Endor
   - Apocrypha
   - archaeology
   - child sacrifice

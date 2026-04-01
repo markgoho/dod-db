@@ -36,6 +36,7 @@ tags:
   - angel
   - Balaam
   - circumcision
+  - Deutero-Isaiah
   - Egypt
   - King David
   - King Josiah

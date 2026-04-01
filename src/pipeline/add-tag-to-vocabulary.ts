@@ -8,6 +8,7 @@ import type {
   TagStatus,
 } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
+import { isScriptureTag } from "../utils/is-scripture-tag.js";
 import { escapeForTsString } from "./escape-for-ts-string.js";
 import { tagExists } from "./tag-exists.js";
 
@@ -44,6 +45,13 @@ export async function addTagToVocabulary(
   parameters: AddTagParams,
 ): Promise<void> {
   const { canonical, variations, category } = parameters;
+
+  // Block scripture references/books - handled by separate extraction
+  if (isScriptureTag(canonical)) {
+    throw new Error(
+      `Tag "${canonical}" is a scripture reference or Bible book`,
+    );
+  }
 
   // Check for duplicates
   if (tagExists(canonical)) {

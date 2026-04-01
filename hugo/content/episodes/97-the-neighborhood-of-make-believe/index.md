@@ -10,6 +10,7 @@ tags:
   - archaeology
   - Noah
   - Moses
+  - Red Sea
   - Jerusalem
   - Samaria
   - Hebrews

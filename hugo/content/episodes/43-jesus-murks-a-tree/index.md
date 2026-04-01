@@ -8,6 +8,7 @@ aliases:
 tags:
   - Jesus
   - Matthew
+  - Deutero-Isaiah
   - Jerusalem
   - Luke
   - Babylon

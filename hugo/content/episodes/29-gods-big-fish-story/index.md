@@ -17,6 +17,7 @@ tags:
   - Tarshish
   - Balaam
   - Garden of Eden
+  - Gilead
   - Hezekiah
   - Israel
   - King James Version

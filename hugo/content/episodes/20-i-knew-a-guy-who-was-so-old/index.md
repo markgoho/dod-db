@@ -26,7 +26,6 @@ tags:
   - Judaism
   - Athanasius of Alexandria
   - Protestantism
-  - 2 Maccabees
   - Catholicism
   - Ishmael
   - The Reformation
@@ -50,6 +49,7 @@ tags:
   - Didache
   - First Clement
   - Galilee
+  - Hanukkah
   - Midianites
   - Moses
   - YHWH

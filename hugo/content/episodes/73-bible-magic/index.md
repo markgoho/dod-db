@@ -25,6 +25,7 @@ tags:
   - Judah
   - Protestantism
   - Torah
+  - Witch of Endor
   - Aaron
   - Carthage
   - Catholicism

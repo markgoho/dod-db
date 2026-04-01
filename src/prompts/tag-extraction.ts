@@ -97,10 +97,10 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
    - Titles: "Gospel of Thomas" not "gospel of thomas"
    - Names: "Helen Bond" not "helen bond"
    - Places: "Jerusalem" not "jerusalem"
-8. For biblical books, use the BOOK NAME ONLY (no chapter/verse numbers):
-   - Use "Genesis" not "Genesis 1", "Genesis 6", "Genesis 18", etc.
-   - Use "Isaiah" not "Isaiah 40"
-   - Exception: Scholarly terms like "Deutero-Isaiah" or "Third Isaiah" ARE valid
+8. Do NOT suggest Bible books, abbreviations, or chapter/verse references as tags:
+   - Skip book names like "Genesis", "Isaiah", "Luke", or "Romans"
+   - Skip references like "Genesis 1", "Luke 6", or "1 Corinthians 13:4"
+   - Scripture references are handled separately from tag extraction
 9. Stay focused on ANCIENT WORLD and BIBLICAL SCHOLARSHIP:
    - INCLUDE: Ancient Near East places (Babylon, Ugarit), biblical characters, ancient empires, scholars who study the Bible
    - EXCLUDE: Modern cities mentioned in passing (New Orleans, Paris, Seattle)
@@ -117,7 +117,7 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
     - Adjective/derived forms: "Egyptian" from "Egypt", "Pauline" from "Paul"
     - Abbreviations: "LXX" for "Septuagint"
     - Alternative titles: "John the Revelator" for "John of Patmos"
-    - Shortened book names: "Mark" for "Gospel of Mark", "Acts" for "Book of Acts"
+    - Shortened titles for non-scripture works only when they are not Bible books
     - Different numbering: "1 Corinthians" and "1st Corinthians" for "First Corinthians"
     - Possessive forms: "Moses'", "Abraham's"
     - Plural/singular: "angels" for "angel"

@@ -1902,15 +1902,7 @@ export const tagVocabulary: TagDefinition[] = [
       "A conference held at Brown University that was organized by Dan McClellan and David Burnett.",
     status: "proposed",
     addedInEpisode: 59,
-  },
-  {
-    canonical: "Creation ex nihilo",
-    variations: ["creatio ex nihilo"],
-    category: "theology",
-    description: "The doctrine that God created the universe from nothing.",
-    status: "proposed",
-    addedInEpisode: 59,
-  },
+  },	{ canonical: 'Creation ex nihilo', variations: ['creatio ex nihilo'], category: 'theology', llmVerify: true, description: 'The doctrine that God created the universe from nothing.', status: 'accepted', addedInEpisode: 59 },
   {
     canonical: "Unitarians",
     variations: ["Unitarian"],
@@ -2002,15 +1994,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["jill hicks-keaton"],
     category: "person",
     status: "rejected",
-  },
-  {
-    canonical: "nrsvue",
-    variations: ["nrsv"],
-    category: "literature",
-    description:
-      "New Revised Standard Version Updated Edition - a recent revision of the NRSV translation of the Bible",
-    status: "proposed",
-  },
+  },	{ canonical: 'nrsvue', variations: ['nrsv'], category: 'literature', status: 'rejected' },
   {
     canonical: "Southern Baptist Convention",
     variations: ["southern baptist"],
@@ -2349,9 +2333,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Red Scare",
     variations: [],
     category: "event",
-    description:
-      "A period of intense anti-communism in the United States during the 20th century",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 66,
   },
   {
@@ -2472,15 +2454,6 @@ export const tagVocabulary: TagDefinition[] = [
     variations: [],
     category: "literature",
     status: "rejected",
-  },
-  {
-    canonical: "2 Maccabees",
-    variations: ["2nd Maccabees", "Second Maccabees"],
-    category: "literature",
-    llmVerify: true,
-    description:
-      "Deuterocanonical book recounting the Maccabean Revolt against the Seleucid Empire",
-    status: "accepted",
   },
   {
     canonical: "Aristotle",
@@ -2628,13 +2601,14 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 73,
   },
   {
-    canonical: "necromancer of endor",
-    variations: [],
+    canonical: "Witch of Endor",
+    variations: ["necromancer of endor"],
     category: "character",
+    status: "accepted",
+    addedInEpisode: 73,
+    llmVerify: true,
     description:
       "A figure in the Book of Samuel who summons the spirit of Samuel for Saul",
-    status: "proposed",
-    addedInEpisode: 73,
   },
   {
     canonical: "exodus",
@@ -2700,23 +2674,14 @@ export const tagVocabulary: TagDefinition[] = [
       "Series of disasters inflicted upon Egypt in the Book of Exodus to persuade Pharaoh to release the Israelites from slavery.",
     status: "proposed",
     addedInEpisode: 75,
-  },
-  {
-    canonical: "nil",
-    variations: [],
-    category: "place",
-    description:
-      "Major river in Egypt, central to the narrative of the plagues in the Book of Exodus.",
-    status: "proposed",
-    addedInEpisode: 75,
-  },
-  {
-    canonical: "red sea",
+  },  {
+    canonical: "Red Sea",
     variations: ["sea of reeds", "yam suf"],
     category: "place",
+    llmVerify: true,
     description:
       "Sea crossed by the Israelites during the Exodus from Egypt, according to the biblical narrative.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 75,
   },
   {
@@ -2729,11 +2694,12 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 75,
   },
   {
-    canonical: "turin",
+    canonical: "Turin",
     variations: ["Torino"],
     category: "place",
+    llmVerify: true,
     description: "City in northern Italy where the Shroud of Turin is housed.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 75,
   },
   {
@@ -3009,12 +2975,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
   },
   {
-    canonical: "hebrew bible",
-    variations: ["old testament"],
-    category: "literature",
-    status: "rejected",
-  },
-  {
     canonical: "amos",
     variations: ["Book of Amos"],
     category: "character",
@@ -3045,35 +3005,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "psalm",
     variations: ["psalms", "psalmist"],
     category: "literature",
-    description:
-      "A sacred song or hymn, especially one of those contained in the biblical Book of Psalms",
-    status: "proposed",
-    addedInEpisode: 83,
-  },
-  {
-    canonical: "mark",
-    variations: ["Gospel of Mark"],
-    category: "literature",
-    description:
-      "The second book of the New Testament, one of the Synoptic Gospels",
-    status: "proposed",
-    addedInEpisode: 83,
-  },
-  {
-    canonical: "elisha",
-    variations: ["elias"],
-    category: "character",
-    description: "A prophet in the Hebrew Bible, successor to Elijah",
-    status: "proposed",
-    addedInEpisode: 83,
-  },
-  {
-    canonical: "church of the holy sepulcher",
-    variations: ["holy sepulcher"],
-    category: "place",
-    description:
-      "A church located in the Christian Quarter of the Old City of Jerusalem, considered one of the holiest sites in Christianity",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 83,
   },
   {
@@ -3099,9 +3031,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "new testament",
     variations: ["nt"],
     category: "literature",
-    description:
-      "The second major part of the Christian biblical canon, comprising 27 books",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 84,
   },
   {
@@ -3145,35 +3075,14 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Logan Williams",
     variations: ["Logan"],
     category: "person",
-    description:
-      "Kirby Laing Research Fellow in New Testament at Aberdeen in Scotland, guest on Data Over Dogma",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 85,
   },
   {
     canonical: "New Testament Studies",
     variations: [],
     category: "literature",
-    description:
-      "Academic journal for biblical scholarship, where Logan Williams published his article",
-    status: "proposed",
-    addedInEpisode: 85,
-  },
-  {
-    canonical: "Scotland",
-    variations: [],
-    category: "place",
-    description:
-      "Country in northwest Europe; Logan Williams is a Research Fellow in Aberdeen, Scotland",
-    status: "proposed",
-    addedInEpisode: 85,
-  },
-  {
-    canonical: "Aberdeen",
-    variations: [],
-    category: "place",
-    description: "City in Scotland where Logan Williams is a Research Fellow",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 85,
   },
   {
@@ -3207,8 +3116,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Matt Thiessen",
     variations: ["Thiessen"],
     category: "person",
-    description: "Biblical scholar who wrote 'Jesus and the Forces of Death'",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 85,
   },
   {
@@ -3231,9 +3139,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Westcott and Hort",
     variations: ["Hort", "Westcott"],
     category: "person",
-    description:
-      "Two 19th-century biblical scholars who produced a critical edition of the Greek New Testament",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 85,
   },
   {
@@ -3298,11 +3204,9 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Nazareth",
-    variations: ["Nazarene"],
+    variations: [],
     category: "place",
-    description:
-      "Town in Galilee where Jesus grew up, often associated with his identity",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 87,
   },
   {
@@ -3558,9 +3462,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "David Wright",
     variations: [],
     category: "person",
-    description:
-      "Biblical scholar and author known for his work on the relationship between biblical law and ancient Near Eastern legal codes.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 93,
   },
   {
@@ -3616,18 +3518,14 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Speaker Johnson",
     variations: [],
     category: "person",
-    description:
-      "Mike Johnson, current Speaker of the House of Representatives",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 96,
   },
   {
     canonical: "speaker of the house",
     variations: [],
     category: "person",
-    description:
-      "The presiding officer of the House of Representatives, currently Mike Johnson.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 96,
   },
   {
@@ -3661,9 +3559,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Ron Wyatt",
     variations: ["Wyatt"],
     category: "person",
-    description:
-      "An amateur archaeologist known for his claims about finding biblical artifacts",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 97,
   },
   {
@@ -3726,15 +3622,6 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 99,
   },
   {
-    canonical: "Tanakh",
-    variations: [],
-    category: "literature",
-    description:
-      "The Hebrew Bible consisting of the Torah (Law), Nevi'im (Prophets), and Ketuvim (Writings)",
-    status: "proposed",
-    addedInEpisode: 99,
-  },
-  {
     canonical: "Philemon",
     variations: ["Philemon 1", "Philemon's"],
     category: "literature",
@@ -3751,6 +3638,419 @@ export const tagVocabulary: TagDefinition[] = [
       "A slave belonging to Philemon, mentioned in the New Testament epistle of the same name; Paul intercedes on his behalf",
     status: "proposed",
     addedInEpisode: 100,
+  },
+  {
+    canonical: "ephesians",
+    variations: ["Ephesians 6"],
+    category: "literature",
+    description:
+      "A letter from the New Testament, traditionally attributed to Paul, that discusses Christian living and household codes.",
+    status: "proposed",
+    addedInEpisode: 101,
+  },
+  {
+    canonical: "slave bible",
+    variations: ["the slave bible"],
+    category: "literature",
+    description:
+      "An abridged version of the Bible published in 1807 for use among enslaved people in the British West Indies.",
+    status: "proposed",
+    addedInEpisode: 101,
+  },
+  {
+    canonical: "Dave Ramsey",
+    variations: ["Ramsey"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 102,
+  },
+  {
+    canonical: "Micah",
+    variations: [],
+    category: "literature",
+    description:
+      "A book in the Hebrew Bible containing the prophecies of the prophet Micah",
+    status: "proposed",
+    addedInEpisode: 102,
+  },
+  {
+    canonical: "Deuteronomistic history",
+    variations: ["Deuteronomistic history"],
+    category: "scholarship",
+    description:
+      "A modern theory proposing a unified literary work comprising Deuteronomy, Joshua, Judges, Samuel, and Kings",
+    status: "proposed",
+    addedInEpisode: 102,
+  },
+  {
+    canonical: "Judges",
+    variations: ["Book of Judges"],
+    category: "literature",
+    description:
+      "A book in the Hebrew Bible featuring stories of judges who led Israel after Joshua",
+    status: "proposed",
+    addedInEpisode: 102,
+  },
+  {
+    canonical: "Martin Noth",
+    variations: [],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 102,
+  },
+  {
+    canonical: "Thomas Romer",
+    variations: [],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 102,
+  },
+  {
+    canonical: "Jeremy Steele",
+    variations: ["Steele"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 103,
+  },
+  {
+    canonical: "Dan Beecher",
+    variations: [],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 103,
+  },
+  {
+    canonical: "god",
+    variations: [],
+    category: "theology",
+    status: "rejected",
+    addedInEpisode: 103,
+  },
+  {
+    canonical: "deep south",
+    variations: [],
+    category: "place",
+    status: "rejected",
+    addedInEpisode: 103,
+  },
+  {
+    canonical: "Jude",
+    variations: ["Book of Jude", "Epistle of Jude"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 104,
+  },
+  {
+    canonical: "Second Peter",
+    variations: ["2 Peter", "Epistle of Second Peter"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 104,
+  },
+  {
+    canonical: "Deutero-Isaiah",
+    variations: [],
+    category: "literature",
+    llmVerify: true,
+    description:
+      "Chapters 40-55 of the Book of Isaiah, believed by many scholars to be written by a different author than the earlier chapters",
+    status: "accepted",
+    addedInEpisode: 104,
+  },
+  {
+    canonical: "Lord",
+    variations: [],
+    category: "theology",
+    status: "rejected",
+    caseSensitive: true,
+    addedInEpisode: 104,
+  },
+  {
+    canonical: "Angela Roskop Erisman",
+    variations: ["Erisman"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 105,
+  },
+  {
+    canonical: "Cincinnati",
+    variations: ["FC Cincinnati"],
+    category: "place",
+    status: "rejected",
+    addedInEpisode: 105,
+  },
+  {
+    canonical: "Marginalia Review of Books",
+    variations: ["Marginalia"],
+    category: "literature",
+    description:
+      "Online review of books in the field of religion and ancillary fields; Angela Roskop Erisman was one of the founding editors.",
+    status: "proposed",
+    addedInEpisode: 105,
+  },
+  {
+    canonical: "Midwest",
+    variations: [],
+    category: "place",
+    status: "rejected",
+    addedInEpisode: 105,
+  },
+  {
+    canonical: "Assyrian",
+    variations: [],
+    category: "people",
+    description: "Relating to the ancient empire of Assyria.",
+    status: "proposed",
+    addedInEpisode: 105,
+  },
+  {
+    canonical: "Sargon",
+    variations: [],
+    category: "character",
+    description: "Refers to both Sargon II and Sargon the Great.",
+    status: "proposed",
+    addedInEpisode: 105,
+  },
+  {
+    canonical: "Korach",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "A Levite who led a rebellion against Moses and Aaron in the Book of Numbers.",
+    status: "accepted",
+    addedInEpisode: 105,
+  },
+  {
+    canonical: "Persian Period",
+    variations: [],
+    category: "event",
+    description:
+      "The time following the Babylonian exile when Persia controlled the region.",
+    status: "proposed",
+    addedInEpisode: 105,
+  },
+  {
+    canonical: "Book",
+    variations: [],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 105,
+  },
+  {
+    canonical: "Alexiana Fry",
+    variations: [],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 105,
+  },
+  {
+    canonical: "Usury",
+    variations: ["interest"],
+    category: "theology",
+    description:
+      "The practice of lending money at interest, historically condemned in many religious traditions",
+    status: "proposed",
+    addedInEpisode: 106,
+  },
+  {
+    canonical: "Oxford",
+    variations: ["Jewish quarter of Oxford"],
+    category: "place",
+    description: "City in England, known for the University of Oxford",
+    status: "proposed",
+    addedInEpisode: 106,
+  },
+  {
+    canonical: "Luke 6",
+    variations: ["Luke, chapter 6"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 106,
+  },
+  {
+    canonical: "New Haven",
+    variations: ["New Haven Green"],
+    category: "place",
+    status: "rejected",
+    addedInEpisode: 107,
+  },
+  {
+    canonical: "columbus",
+    variations: ["Christopher Columbus"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 107,
+  },
+  {
+    canonical: "revelation 21",
+    variations: ["revelation"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 107,
+  },
+  {
+    canonical: "revelation 22",
+    variations: ["revelation"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 107,
+  },
+  {
+    canonical: "junia",
+    variations: [],
+    category: "character",
+    description:
+      "Figure mentioned in Romans 16:7, often identified as a female apostle.",
+    status: "proposed",
+    addedInEpisode: 107,
+  },
+  {
+    canonical: "eldon epp",
+    variations: ["epp"],
+    category: "person",
+    description:
+      "Scholar known for his work on Junia, the first woman apostle.",
+    status: "proposed",
+    addedInEpisode: 107,
+  },
+  {
+    canonical: "sexual immorality",
+    variations: ["porneia"],
+    category: "theology",
+    description:
+      "Term used in the New Testament to denote various forms of sexual sin or transgression",
+    status: "proposed",
+    addedInEpisode: 108,
+  },
+  {
+    canonical: "Song of Songs",
+    variations: ["Song of Solomon"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 108,
+  },
+  {
+    canonical: "Orthodox",
+    variations: ["Eastern Orthodox"],
+    category: "religion",
+    status: "rejected",
+    addedInEpisode: 109,
+  },
+  {
+    canonical: "Pope Gregory",
+    variations: ["Gregory"],
+    category: "person",
+    description:
+      "Likely refers to Pope Gregory XIII, who introduced the Gregorian calendar",
+    status: "proposed",
+    addedInEpisode: 109,
+  },
+  {
+    canonical: "Athens",
+    variations: [],
+    category: "place",
+    status: "rejected",
+    addedInEpisode: 109,
+  },
+  {
+    canonical: "Resurrection",
+    variations: [],
+    category: "theology",
+    status: "rejected",
+    addedInEpisode: 109,
+  },
+  {
+    canonical: "World Council of Churches",
+    variations: [],
+    category: "religion",
+    description:
+      "International ecumenical organization founded in 1948 to promote Christian unity",
+    status: "proposed",
+    addedInEpisode: 109,
+  },
+  {
+    canonical: "Anglican Communion",
+    variations: [],
+    category: "religion",
+    description:
+      "International association of churches consisting of the Church of England and other national and regional churches in full communion with it.",
+    status: "proposed",
+    addedInEpisode: 109,
+  },
+  {
+    canonical: "Colossians",
+    variations: [],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 110,
+  },
+  {
+    canonical: "Philippians",
+    variations: [],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 110,
+  },
+  {
+    canonical: "First Kings",
+    variations: ["1 Kings"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 110,
+  },
+  {
+    canonical: "Gilead",
+    variations: [],
+    category: "place",
+    llmVerify: true,
+    description:
+      "A mountainous region east of the Jordan River, mentioned in the Hebrew Bible",
+    status: "accepted",
+    addedInEpisode: 111,
+  },
+  {
+    canonical: "seleucid",
+    variations: ["Seleucids"],
+    category: "people",
+    description: "A major Hellenistic dynasty that existed in the Near East",
+    status: "proposed",
+    addedInEpisode: 112,
+  },
+  {
+    canonical: "Maccabees",
+    variations: ["Maccabean"],
+    category: "people",
+    description:
+      "The family who led the Jewish revolt against the Seleucid Empire in the 2nd century BCE",
+    status: "proposed",
+    addedInEpisode: 112,
+  },
+  {
+    canonical: "Judas Maccabeus",
+    variations: ["Judas Maccabeus"],
+    category: "person",
+    description:
+      "A Jewish priest and a son of Mattathias, who led the Maccabean revolt against the Seleucid Empire",
+    status: "proposed",
+    addedInEpisode: 112,
+  },
+  {
+    canonical: "Hanukkah",
+    variations: [],
+    category: "event",
+    status: "accepted",
+    addedInEpisode: 112,
+  },
+  {
+    canonical: "Assumption of Moses",
+    variations: [],
+    category: "literature",
+    llmVerify: true,
+    description:
+      "A pseudepigraphal Jewish text, a testament attributed to Moses",
+    status: "accepted",
+    addedInEpisode: 112,
   },
 ];
 

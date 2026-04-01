@@ -11,6 +11,7 @@ tags:
   - Septuagint
   - Jerusalem
   - Elijah
+  - Church of the Holy Sepulcher
   - King James Version
   - archaeology
   - Protestantism

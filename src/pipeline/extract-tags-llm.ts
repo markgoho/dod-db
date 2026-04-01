@@ -16,6 +16,7 @@ import {
   tagExtractionPrompt,
 } from "../prompts/tag-extraction.js";
 import type { EpisodeTag } from "../storage/processed-videos.js";
+import { isScriptureTag } from "../utils/is-scripture-tag.js";
 import { addTagToVocabulary } from "./add-tag-to-vocabulary.js";
 import { tagExists } from "./tag-exists.js";
 
@@ -82,6 +83,12 @@ export async function extractTagsLlm(
     // (double-check in case LLM still returns a vocabulary term or wrong category)
     const validTags = output.tags.filter(t => {
       if (t.mentions < 3) return false;
+      if (isScriptureTag(t.tag)) {
+        console.log(
+          `    Filtering out "${t.tag}" (scripture handled separately)`,
+        );
+        return false;
+      }
       if (allKnownTerms.has(t.tag.toLowerCase())) {
         console.log(`    Filtering out "${t.tag}" (already in vocabulary)`);
         return false;

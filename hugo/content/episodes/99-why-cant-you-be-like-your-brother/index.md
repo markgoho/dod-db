@@ -44,6 +44,7 @@ tags:
   - Latin Vulgate
   - Martin Luther
   - Mesopotamian
+  - Nazareth
   - Pastoral Epistles
   - Saint Titus
   - Sanhedrin

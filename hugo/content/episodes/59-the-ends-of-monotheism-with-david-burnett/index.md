@@ -19,12 +19,14 @@ tags:
   - Moses
   - Second Temple period
   - YHWH
+  - Creation ex nihilo
   - Debra Scoggins Ballentine
   - Septuagint
   - angel
   - apocalypse
   - Baal
   - David Burnett
+  - Deutero-Isaiah
   - divine council
   - El
   - Elephantine

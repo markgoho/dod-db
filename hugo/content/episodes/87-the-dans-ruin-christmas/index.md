@@ -7,6 +7,7 @@ aliases:
   - /episodes/87/
 tags:
   - Jesus
+  - Nazareth
   - Bethlehem
   - Mary Magdalene
   - angel

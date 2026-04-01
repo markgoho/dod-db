@@ -25,6 +25,7 @@ tags:
   - Philo of Alexandria
   - Septuagint
   - Daniel
+  - Deutero-Isaiah
   - Deuteronomy
   - Joseph
   - Justin Martyr

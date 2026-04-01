@@ -8,9 +8,9 @@ aliases:
 tags:
   - Daniel
   - Apocrypha
+  - Creation ex nihilo
   - Bel and the Dragon
   - Cyrus the Great
-  - 2 Maccabees
   - Babylon
   - angel
   - Habakkuk

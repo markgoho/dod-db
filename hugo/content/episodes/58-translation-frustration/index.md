@@ -29,6 +29,7 @@ tags:
   - Michael
   - Moses
   - Univocality
+  - Creation ex nihilo
   - Daniel
   - divine council
   - Egypt
@@ -41,6 +42,7 @@ tags:
   - Persia
   - The Reformation
   - Trinity
+  - Witch of Endor
 books:
   - Genesis
   - Exodus

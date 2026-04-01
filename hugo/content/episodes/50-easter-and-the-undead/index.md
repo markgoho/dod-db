@@ -25,7 +25,6 @@ tags:
   - King James Version
   - Paul
   - Satan
-  - 2 Maccabees
   - Antiochus IV Epiphanes
   - Athanasius of Alexandria
   - baptism

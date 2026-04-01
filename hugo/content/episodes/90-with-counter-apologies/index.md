@@ -27,6 +27,7 @@ tags:
   - Holy Spirit
   - Jerusalem
   - Moses
+  - Red Sea
   - Ugarit
 books:
   - Genesis

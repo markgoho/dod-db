@@ -21,6 +21,7 @@ tags:
   - King Sennacherib
   - Samaria
   - Edom
+  - Elisha
   - Masoretic Text
   - Assyria
   - Babylon

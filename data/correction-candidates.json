@@ -5151,22 +5151,24 @@
       "original": "second Maccabees",
       "corrected": "Second Maccabees",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["wFcJAbbNOpk"],
+      "totalOccurrences": 4,
+      "episodeCount": 2,
+      "episodes": ["wFcJAbbNOpk", "kiOlyxiorow"],
       "examples": [
         "\"Bible. In second Maccabees 7:28 in\"",
-        "\"back at second Maccabees 7:28. And\""
+        "\"back at second Maccabees 7:28. And\"",
+        "\"is in second Maccabees, chapter seven.\""
       ],
       "correctedExamples": [
         "\"Bible, in Second Maccabees 7:28, or\"",
-        "\"back at Second Maccabees 7:28. And\""
+        "\"back at Second Maccabees 7:28. And\"",
+        "\"is in Second Maccabees, chapter seven.\""
       ],
-      "timestamps": ["00:15:32.430", "00:23:46.280"],
-      "episodeIds": ["wFcJAbbNOpk", "wFcJAbbNOpk"],
-      "confidence": 10,
+      "timestamps": ["00:15:32.430", "00:23:46.280", "00:01:55.830"],
+      "episodeIds": ["wFcJAbbNOpk", "wFcJAbbNOpk", "kiOlyxiorow"],
+      "confidence": 40,
       "firstSeen": "2026-01-17T03:03:41.501Z",
-      "lastSeen": "2026-01-17T03:03:41.501Z",
+      "lastSeen": "2026-04-01T16:43:53.697Z",
       "status": "pending"
     },
     "century bce→century BCE": {
@@ -5889,22 +5891,24 @@
       "original": "taking issue",
       "corrected": "Taking Issue",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["t40eXH29l-8"],
+      "totalOccurrences": 4,
+      "episodeCount": 2,
+      "episodes": ["t40eXH29l-8", "Zpp6qUqrins"],
       "examples": [
         "\"our segment taking issue. We're going\"",
-        "\"dive into taking issue. So we're\""
+        "\"dive into taking issue. So we're\"",
+        "\"on our taking issue is the\""
       ],
       "correctedExamples": [
         "\"our segment Taking Issue. We're going\"",
-        "\"dive into Taking Issue. So we're\""
+        "\"dive into Taking Issue. So we're\"",
+        "\"on our Taking Issue is the\""
       ],
-      "timestamps": ["00:01:23.960", "00:02:04.620"],
-      "episodeIds": ["t40eXH29l-8", "t40eXH29l-8"],
-      "confidence": 10,
+      "timestamps": ["00:01:23.960", "00:02:04.620", "00:02:10.940"],
+      "episodeIds": ["t40eXH29l-8", "t40eXH29l-8", "Zpp6qUqrins"],
+      "confidence": 40,
       "firstSeen": "2026-01-18T17:02:51.228Z",
-      "lastSeen": "2026-01-18T17:02:51.228Z",
+      "lastSeen": "2026-04-01T16:31:18.494Z",
       "status": "pending"
     },
     "shevat→shevet": {
@@ -6460,7 +6464,372 @@
       "firstSeen": "2026-03-15T06:38:51.199Z",
       "lastSeen": "2026-03-15T06:38:51.199Z",
       "status": "pending"
+    },
+    "slave Bible→Slave Bible": {
+      "original": "slave Bible",
+      "corrected": "Slave Bible",
+      "category": "capitalization",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["KQlq_lmgBOk"],
+      "examples": [
+        "\"about the slave Bible and then\"",
+        "\"is the slave bible?\"",
+        "\"on the slave Bible.\""
+      ],
+      "correctedExamples": [
+        "\"about the Slave Bible and then\"",
+        "\"is the Slave Bible?\"",
+        "\"on the Slave Bible.\""
+      ],
+      "timestamps": ["00:01:52.680", "00:02:32.100", "00:06:57.630"],
+      "episodeIds": ["KQlq_lmgBOk", "KQlq_lmgBOk", "KQlq_lmgBOk"],
+      "confidence": 20,
+      "firstSeen": "2026-04-01T15:58:14.857Z",
+      "lastSeen": "2026-04-01T15:58:14.857Z",
+      "status": "pending"
+    },
+    "proverbs No→Proverbs No": {
+      "original": "proverbs No",
+      "corrected": "Proverbs No",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["KQlq_lmgBOk"],
+      "examples": [
+        "\"handful of proverbs. No psalms. They\"",
+        "\"But for proverbs, no, we're all\""
+      ],
+      "correctedExamples": [
+        "\"handful of Proverbs. No Psalms. They\"",
+        "\"But for Proverbs, no, we're all\""
+      ],
+      "timestamps": ["00:05:42.050", "00:53:12.650"],
+      "episodeIds": ["KQlq_lmgBOk", "KQlq_lmgBOk"],
+      "confidence": 10,
+      "firstSeen": "2026-04-01T15:58:14.857Z",
+      "lastSeen": "2026-04-01T15:58:14.857Z",
+      "status": "pending"
+    },
+    "Corbin→Corban": {
+      "original": "Corbin",
+      "corrected": "Corban",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["57SveZa-w7g"],
+      "examples": ["\"who say, Corbin, do you\"", "\"it is Corbin, that is\""],
+      "correctedExamples": [
+        "\"who say, Corban, do you\"",
+        "\"it is Corban, that is\""
+      ],
+      "timestamps": ["00:23:41.360", "00:23:41.360"],
+      "episodeIds": ["57SveZa-w7g", "57SveZa-w7g"],
+      "confidence": 10,
+      "firstSeen": "2026-04-01T16:02:18.445Z",
+      "lastSeen": "2026-04-01T16:02:18.445Z",
+      "status": "pending"
+    },
+    "Steel→Steele": {
+      "original": "Steel",
+      "corrected": "Steele",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["tXvgcXtcgQc"],
+      "examples": ["\"Steel. Steel.\"", "\"Steel. Steel.\""],
+      "correctedExamples": ["\"Steele. Steele.\"", "\"Steele. Steele.\""],
+      "timestamps": ["00:01:08.190", "00:01:08.190"],
+      "episodeIds": ["tXvgcXtcgQc", "tXvgcXtcgQc"],
+      "confidence": 10,
+      "firstSeen": "2026-04-01T16:06:16.997Z",
+      "lastSeen": "2026-04-01T16:06:16.997Z",
+      "status": "pending"
+    },
+    "it's Yeah→it's yeah": {
+      "original": "it's Yeah",
+      "corrected": "it's yeah",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["tXvgcXtcgQc"],
+      "examples": [
+        "\"I mean, it's. Yeah, it's great.\"",
+        "\"love it. It's. Yeah. The Ford\""
+      ],
+      "correctedExamples": [
+        "\"I mean, it's... yeah, it's great.\"",
+        "\"love it. It's... yeah. The foreword\""
+      ],
+      "timestamps": ["00:58:49.520", "01:00:14.540"],
+      "episodeIds": ["tXvgcXtcgQc", "tXvgcXtcgQc"],
+      "confidence": 10,
+      "firstSeen": "2026-04-01T16:06:16.997Z",
+      "lastSeen": "2026-04-01T16:06:16.997Z",
+      "status": "pending"
+    },
+    "Udas→Ioudas": {
+      "original": "Udas",
+      "corrected": "Ioudas",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["h7SIkjdpCi4"],
+      "examples": ["\"it? So Udas is the,\"", "\"we get Udas in, in\""],
+      "correctedExamples": [
+        "\"it? So Ioudas is the,\"",
+        "\"we get Ioudas in, in\""
+      ],
+      "timestamps": ["00:03:00.470", "00:03:00.470"],
+      "episodeIds": ["h7SIkjdpCi4", "h7SIkjdpCi4"],
+      "confidence": 10,
+      "firstSeen": "2026-04-01T16:10:38.219Z",
+      "lastSeen": "2026-04-01T16:10:38.219Z",
+      "status": "pending"
+    },
+    "second Peter→Second Peter": {
+      "original": "second Peter",
+      "corrected": "Second Peter",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["h7SIkjdpCi4"],
+      "examples": [
+        "\"Epistle of second Peter. And so\"",
+        "\"late as second Peter. So sorry,\""
+      ],
+      "correctedExamples": [
+        "\"Epistle of Second Peter. And so\"",
+        "\"late as Second Peter. So sorry,\""
+      ],
+      "timestamps": ["00:07:08.620", "00:08:05.780"],
+      "episodeIds": ["h7SIkjdpCi4", "h7SIkjdpCi4"],
+      "confidence": 10,
+      "firstSeen": "2026-04-01T16:10:38.219Z",
+      "lastSeen": "2026-04-01T16:10:38.219Z",
+      "status": "pending"
+    },
+    "says hell→says Hell": {
+      "original": "says hell",
+      "corrected": "says Hell",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["eiszXKzofys"],
+      "examples": [
+        "\"and it says hell is real\"",
+        "\"that, it says hell is real.\""
+      ],
+      "correctedExamples": [
+        "\"and it says Hell is Real\"",
+        "\"that, it says Hell is Real.\""
+      ],
+      "timestamps": ["00:06:14.060", "00:07:16.810"],
+      "episodeIds": ["eiszXKzofys", "eiszXKzofys"],
+      "confidence": 10,
+      "firstSeen": "2026-04-01T16:14:51.662Z",
+      "lastSeen": "2026-04-01T16:14:51.662Z",
+      "status": "pending"
+    },
+    "llama→lammah": {
+      "original": "llama",
+      "corrected": "lammah",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["eiszXKzofys"],
+      "examples": [
+        "\"the word llama, llama occurs\"",
+        "\"word llama, llama occurs in\""
+      ],
+      "correctedExamples": [
+        "\"the word lammah, lammah occurs\"",
+        "\"word lammah, lammah occurs in\""
+      ],
+      "timestamps": ["00:53:28.430", "00:53:28.430"],
+      "episodeIds": ["eiszXKzofys", "eiszXKzofys"],
+      "confidence": 10,
+      "firstSeen": "2026-04-01T16:14:51.662Z",
+      "lastSeen": "2026-04-01T16:14:51.662Z",
+      "status": "pending"
+    },
+    "center church→Center Church": {
+      "original": "center church",
+      "corrected": "Center Church",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["HIgF6uy4H3U"],
+      "examples": [
+        "\"of the center church on the\"",
+        "\"graves under center church. So you\""
+      ],
+      "correctedExamples": [
+        "\"of the Center Church on the\"",
+        "\"graves under Center Church. So you\""
+      ],
+      "timestamps": ["00:07:12.840", "00:07:12.840"],
+      "episodeIds": ["HIgF6uy4H3U", "HIgF6uy4H3U"],
+      "confidence": 10,
+      "firstSeen": "2026-04-01T16:22:54.475Z",
+      "lastSeen": "2026-04-01T16:22:54.475Z",
+      "status": "pending"
+    },
+    "didache You're→Didache You're": {
+      "original": "didache You're",
+      "corrected": "Didache You're",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["KmgcugRalZs"],
+      "examples": [
+        "\"follow the didache. You're keeping an\"",
+        "\"follow the didache. You're keeping an\""
+      ],
+      "correctedExamples": [
+        "\"follow the Didache. You're keeping an\"",
+        "\"follow the Didache. You're keeping an\""
+      ],
+      "timestamps": ["00:00:01.120", "00:28:54.660"],
+      "episodeIds": ["KmgcugRalZs", "KmgcugRalZs"],
+      "confidence": 10,
+      "firstSeen": "2026-04-01T16:35:39.919Z",
+      "lastSeen": "2026-04-01T16:35:39.919Z",
+      "status": "pending"
+    },
+    "Name→Nai": {
+      "original": "Name",
+      "corrected": "Nai",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["KmgcugRalZs"],
+      "examples": [
+        "\"Name means. Yeah.\"",
+        "\"Because, because name means no\""
+      ],
+      "correctedExamples": [
+        "\"Nai means... yeah.\"",
+        "\"Because, because nai means no\""
+      ],
+      "timestamps": ["00:22:26.490", "00:22:26.490"],
+      "episodeIds": ["KmgcugRalZs", "KmgcugRalZs"],
+      "confidence": 5,
+      "firstSeen": "2026-04-01T16:35:39.919Z",
+      "lastSeen": "2026-04-01T16:35:39.919Z",
+      "status": "pending"
+    },
+    "Tove→tov": {
+      "original": "Tove",
+      "corrected": "tov",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["9WfRfzTRUVI"],
+      "examples": [
+        "\"well, because Tove is spelled\"",
+        "\"it's, it's Tove. And I,\"",
+        "\"named Emmanuel. Tove. Okay. It's\""
+      ],
+      "correctedExamples": [
+        "\"well, because tov is spelled\"",
+        "\"it's, it's tov. And I,\"",
+        "\"named Emanuel Tov. Okay. It's\""
+      ],
+      "timestamps": ["00:07:36.800", "00:07:41.920", "00:07:41.920"],
+      "episodeIds": ["9WfRfzTRUVI", "9WfRfzTRUVI", "9WfRfzTRUVI"],
+      "confidence": 15,
+      "firstSeen": "2026-04-01T16:39:48.948Z",
+      "lastSeen": "2026-04-01T16:39:48.948Z",
+      "status": "pending"
+    },
+    "Allah→alah": {
+      "original": "Allah",
+      "corrected": "alah",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["9WfRfzTRUVI"],
+      "examples": [
+        "\"there is Allah, which means\"",
+        "\"I'm gonna Allah and Allah,\""
+      ],
+      "correctedExamples": [
+        "\"there is alah, which means\"",
+        "\"I'm gonna alah an olah,\""
+      ],
+      "timestamps": ["00:13:55.920", "00:13:55.920"],
+      "episodeIds": ["9WfRfzTRUVI", "9WfRfzTRUVI"],
+      "confidence": 5,
+      "firstSeen": "2026-04-01T16:39:48.948Z",
+      "lastSeen": "2026-04-01T16:39:48.948Z",
+      "status": "pending"
+    },
+    "My side→My Side": {
+      "original": "My side",
+      "corrected": "My Side",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["9WfRfzTRUVI"],
+      "examples": ["\"I read My side of the\"", "\"my Bible, my side of the\""],
+      "correctedExamples": [
+        "\"I read My Side of the\"",
+        "\"my Bible, My Side of the\""
+      ],
+      "timestamps": ["00:21:13.450", "00:21:13.450"],
+      "episodeIds": ["9WfRfzTRUVI", "9WfRfzTRUVI"],
+      "confidence": 5,
+      "firstSeen": "2026-04-01T16:39:48.948Z",
+      "lastSeen": "2026-04-01T16:39:48.948Z",
+      "status": "pending"
+    },
+    "Maccabees→Maccabeus": {
+      "original": "Maccabees",
+      "corrected": "Maccabeus",
+      "category": "biblical-term",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["kiOlyxiorow"],
+      "examples": [
+        "\"So Judas Maccabees, for instance,\"",
+        "\"where Judas Maccabees and his\""
+      ],
+      "correctedExamples": [
+        "\"So Judas Maccabeus, for instance,\"",
+        "\"where Judas Maccabeus and his\""
+      ],
+      "timestamps": ["00:04:16.060", "00:04:16.060"],
+      "episodeIds": ["kiOlyxiorow", "kiOlyxiorow"],
+      "confidence": 25,
+      "firstSeen": "2026-04-01T16:43:53.697Z",
+      "lastSeen": "2026-04-01T16:43:53.697Z",
+      "status": "pending"
+    },
+    "disciples→disciples'": {
+      "original": "disciples",
+      "corrected": "disciples'",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["kiOlyxiorow"],
+      "examples": [
+        "\"washes his disciples feet. They\"",
+        "\"wash his disciples feet, drying\"",
+        "\"Wash the disciples feet and\""
+      ],
+      "correctedExamples": [
+        "\"washes his disciples' feet. They\"",
+        "\"wash his disciples' feet, drying\"",
+        "\"Wash the disciples' feet and\""
+      ],
+      "timestamps": ["00:26:57.390", "00:26:57.390", "00:32:35.110"],
+      "episodeIds": ["kiOlyxiorow", "kiOlyxiorow", "kiOlyxiorow"],
+      "confidence": 25,
+      "firstSeen": "2026-04-01T16:43:53.697Z",
+      "lastSeen": "2026-04-01T16:43:53.697Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-03-15T06:38:51.199Z"
+  "lastUpdated": "2026-04-01T16:43:53.697Z"
 }
