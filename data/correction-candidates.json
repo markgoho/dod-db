@@ -6829,7 +6829,185 @@
       "firstSeen": "2026-04-01T16:43:53.697Z",
       "lastSeen": "2026-04-01T16:43:53.697Z",
       "status": "pending"
+    },
+    "Davis county→Davis County": {
+      "original": "Davis county",
+      "corrected": "Davis County",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["nWTu2bw1dQc"],
+      "examples": [
+        "\"people in Davis county who probably\"",
+        "\"people in Davis county who probably\""
+      ],
+      "correctedExamples": [
+        "\"people in Davis County who probably\"",
+        "\"people in Davis County who probably\""
+      ],
+      "timestamps": ["00:00:22.440", "00:34:37.489"],
+      "episodeIds": ["nWTu2bw1dQc", "nWTu2bw1dQc"],
+      "confidence": 10,
+      "firstSeen": "2026-04-02T14:10:55.302Z",
+      "lastSeen": "2026-04-02T14:10:55.302Z",
+      "status": "pending"
+    },
+    "We're We're→we're we're": {
+      "original": "We're We're",
+      "corrected": "we're we're",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["nWTu2bw1dQc"],
+      "examples": [
+        "\"We're getting. We're. We're going to\"",
+        "\"So we're. We're going to\""
+      ],
+      "correctedExamples": [
+        "\"we're getting, we're, we're going to\"",
+        "\"So we're, we're going to\""
+      ],
+      "timestamps": ["00:01:54.260", "00:02:16.750"],
+      "episodeIds": ["nWTu2bw1dQc", "nWTu2bw1dQc"],
+      "confidence": 10,
+      "firstSeen": "2026-04-02T14:10:55.302Z",
+      "lastSeen": "2026-04-02T14:10:55.302Z",
+      "status": "pending"
+    },
+    "Cola→Qol": {
+      "original": "Cola",
+      "corrected": "Qol",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["oHss4HKVMIs"],
+      "examples": [
+        "\"So the Cola Adonai is\"",
+        "\"powerful. The Cola Adonai is\""
+      ],
+      "correctedExamples": [
+        "\"So the Qol Adonai is\"",
+        "\"powerful. The Qol Adonai is\""
+      ],
+      "timestamps": ["00:18:34.160", "00:18:34.160"],
+      "episodeIds": ["oHss4HKVMIs", "oHss4HKVMIs"],
+      "confidence": 5,
+      "firstSeen": "2026-04-02T14:15:18.672Z",
+      "lastSeen": "2026-04-02T14:15:18.672Z",
+      "status": "pending"
+    },
+    "Hagai→Haggai": {
+      "original": "Hagai",
+      "corrected": "Haggai",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["oHss4HKVMIs"],
+      "examples": [
+        "\"went to Hagai, it starts\"",
+        "\"is. Then Hagai said, if\""
+      ],
+      "correctedExamples": [
+        "\"went to Haggai, it starts\"",
+        "\"is. Then Haggai said, if\""
+      ],
+      "timestamps": ["00:38:15.340", "00:48:39.350"],
+      "episodeIds": ["oHss4HKVMIs", "oHss4HKVMIs"],
+      "confidence": 10,
+      "firstSeen": "2026-04-02T14:15:18.672Z",
+      "lastSeen": "2026-04-02T14:15:18.672Z",
+      "status": "pending"
+    },
+    "Shaltiel→Shealtiel": {
+      "original": "Shaltiel",
+      "corrected": "Shealtiel",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["oHss4HKVMIs"],
+      "examples": [
+        "\"And that's Shaltiel or Shieldiel\"",
+        "\"So. And Shaltiel, that is\""
+      ],
+      "correctedExamples": [
+        "\"And that's Shealtiel or Shealtiel\"",
+        "\"So. And Shealtiel, that is\""
+      ],
+      "timestamps": ["00:43:41.450", "00:44:38.290"],
+      "episodeIds": ["oHss4HKVMIs", "oHss4HKVMIs"],
+      "confidence": 15,
+      "firstSeen": "2026-04-02T14:15:18.672Z",
+      "lastSeen": "2026-04-02T14:15:18.672Z",
+      "status": "pending"
+    },
+    "uncleanliness→uncleanness": {
+      "original": "uncleanliness",
+      "corrected": "uncleanness",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["oHss4HKVMIs"],
+      "examples": [
+        "\"we've got uncleanliness. Does is\"",
+        "\"property of uncleanliness? Does that\"",
+        "\"literal physical uncleanliness. But. But\""
+      ],
+      "correctedExamples": [
+        "\"we've got uncleanness. Does... is\"",
+        "\"property of uncleanness? Does that\"",
+        "\"literal physical uncleanness. But... but\""
+      ],
+      "timestamps": ["00:48:39.350", "00:48:39.350", "00:50:01.500"],
+      "episodeIds": ["oHss4HKVMIs", "oHss4HKVMIs", "oHss4HKVMIs"],
+      "confidence": 25,
+      "firstSeen": "2026-04-02T14:15:18.672Z",
+      "lastSeen": "2026-04-02T14:15:18.672Z",
+      "status": "pending"
+    },
+    "Shekhaniah→Shekhanyah": {
+      "original": "Shekhaniah",
+      "corrected": "Shekhanyah",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["dr1_wxhIqMo"],
+      "examples": [
+        "\"Right. So Shekhaniah has accidentally\"",
+        "\"away with Shekhaniah, who is\""
+      ],
+      "correctedExamples": [
+        "\"Right. So Shekhanyah has accidentally\"",
+        "\"away with Shekhanyah, who is\""
+      ],
+      "timestamps": ["00:41:15.540", "00:42:22.530"],
+      "episodeIds": ["dr1_wxhIqMo", "dr1_wxhIqMo"],
+      "confidence": 15,
+      "firstSeen": "2026-04-02T14:20:04.982Z",
+      "lastSeen": "2026-04-02T14:20:04.982Z",
+      "status": "pending"
+    },
+    "they're They're→they're they're": {
+      "original": "they're They're",
+      "corrected": "they're they're",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["dr1_wxhIqMo"],
+      "examples": [
+        "\"and. And they're. They're. They're dying\"",
+        "\"And they're. They're. They're dying because\""
+      ],
+      "correctedExamples": [
+        "\"and... and they're... they're... they're dying\"",
+        "\"and they're... they're... they're dying because\""
+      ],
+      "timestamps": ["00:52:27.180", "00:52:27.180"],
+      "episodeIds": ["dr1_wxhIqMo", "dr1_wxhIqMo"],
+      "confidence": 10,
+      "firstSeen": "2026-04-02T14:20:04.982Z",
+      "lastSeen": "2026-04-02T14:20:04.982Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-04-01T16:43:53.697Z"
+  "lastUpdated": "2026-04-02T14:20:04.982Z"
 }

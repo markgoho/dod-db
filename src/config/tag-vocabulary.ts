@@ -1242,7 +1242,7 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Canaanites",
-    variations: [],
+    variations: ["Canaanite"],
     category: "people",
     status: "accepted",
   },
@@ -1902,7 +1902,16 @@ export const tagVocabulary: TagDefinition[] = [
       "A conference held at Brown University that was organized by Dan McClellan and David Burnett.",
     status: "proposed",
     addedInEpisode: 59,
-  },	{ canonical: 'Creation ex nihilo', variations: ['creatio ex nihilo'], category: 'theology', llmVerify: true, description: 'The doctrine that God created the universe from nothing.', status: 'accepted', addedInEpisode: 59 },
+  },
+  {
+    canonical: "Creation ex nihilo",
+    variations: ["creatio ex nihilo"],
+    category: "theology",
+    llmVerify: true,
+    description: "The doctrine that God created the universe from nothing.",
+    status: "accepted",
+    addedInEpisode: 59,
+  },
   {
     canonical: "Unitarians",
     variations: ["Unitarian"],
@@ -1994,7 +2003,13 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["jill hicks-keaton"],
     category: "person",
     status: "rejected",
-  },	{ canonical: 'nrsvue', variations: ['nrsv'], category: 'literature', status: 'rejected' },
+  },
+  {
+    canonical: "nrsvue",
+    variations: ["nrsv"],
+    category: "literature",
+    status: "rejected",
+  },
   {
     canonical: "Southern Baptist Convention",
     variations: ["southern baptist"],
@@ -2674,7 +2689,8 @@ export const tagVocabulary: TagDefinition[] = [
       "Series of disasters inflicted upon Egypt in the Book of Exodus to persuade Pharaoh to release the Israelites from slavery.",
     status: "proposed",
     addedInEpisode: 75,
-  },  {
+  },
+  {
     canonical: "Red Sea",
     variations: ["sea of reeds", "yam suf"],
     category: "place",
@@ -4021,18 +4037,20 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Maccabees",
     variations: ["Maccabean"],
     category: "people",
+    llmVerify: true,
     description:
       "The family who led the Jewish revolt against the Seleucid Empire in the 2nd century BCE",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 112,
   },
   {
     canonical: "Judas Maccabeus",
     variations: ["Judas Maccabeus"],
     category: "person",
+    llmVerify: true,
     description:
       "A Jewish priest and a son of Mattathias, who led the Maccabean revolt against the Seleucid Empire",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 112,
   },
   {
@@ -4051,6 +4069,74 @@ export const tagVocabulary: TagDefinition[] = [
       "A pseudepigraphal Jewish text, a testament attributed to Moses",
     status: "accepted",
     addedInEpisode: 112,
+  },
+  {
+    canonical: "Charlie Kirk",
+    variations: ["Kirk"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 113,
+  },
+  {
+    canonical: "Hebrew Bible",
+    variations: ["Old Testament"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 113,
+  },
+  {
+    canonical: "Ezra-Nehemiah",
+    variations: ["Ezra"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 113,
+  },
+  {
+    canonical: "pride",
+    variations: [],
+    category: "theology",
+    description:
+      "The theological concept of excessive belief in one's own abilities; also, the positive sense of self-respect and dignity.",
+    status: "proposed",
+    caseSensitive: true,
+    addedInEpisode: 114,
+  },
+  {
+    canonical: "Mark Driscoll",
+    variations: ["Driscoll"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 114,
+  },
+  {
+    canonical: "Mars Hill Church",
+    variations: ["Mars Hill"],
+    category: "religion",
+    status: "rejected",
+    addedInEpisode: 114,
+  },
+  {
+    canonical: "zerubbabel",
+    variations: ["Zerubbabel's"],
+    category: "person",
+    description:
+      "Governor of Judah during the reign of Darius I, who led the first group of Jewish exiles returning from Babylon. He played a key role in rebuilding the Second Temple in Jerusalem.",
+    status: "proposed",
+    addedInEpisode: 115,
+  },
+  {
+    canonical: "Aaron Higashi",
+    variations: ["Higashi", "Dr. Higashi"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 116,
+  },
+  {
+    canonical: "Ken Stone",
+    variations: ["Dr. Stone", "Professor Stone"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 116,
   },
 ];
 
