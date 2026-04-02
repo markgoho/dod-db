@@ -42,7 +42,9 @@ export async function generateHugoEpisode(
   const frontmatter = generateFrontmatter(video, cleanTitle);
 
   // Combine frontmatter and transcript
-  const content = `${frontmatter}\n\n${transcriptWithShortcodes}`;
+  const content = transcriptWithShortcodes.endsWith("\n")
+    ? `${frontmatter}\n\n${transcriptWithShortcodes}`
+    : `${frontmatter}\n\n${transcriptWithShortcodes}\n`;
 
   // Write to Hugo content directory with slug-based path
   const outputPath = getEpisodeOutputPath(video, cleanTitle);

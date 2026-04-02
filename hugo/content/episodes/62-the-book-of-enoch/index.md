@@ -48,6 +48,7 @@ tags:
   - Jesus
   - Judaism
   - King James Version
+  - Maccabees
   - Nephilim
   - Syria
 books:

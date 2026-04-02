@@ -8,6 +8,7 @@ aliases:
 tags:
   - Hebrews
   - YHWH
+  - Enuma Elish
   - Julius Wellhausen
   - Moses
   - Deuteronomy

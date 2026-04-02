@@ -60,5 +60,5 @@ export function generateFrontmatter(
     "\n",
   );
 
-  return `---\n${frontmatterYaml}\n---`;
+  return `---\n${frontmatterYaml}\n---\n`;
 }

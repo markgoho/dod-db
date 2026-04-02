@@ -33,6 +33,7 @@ tags:
   - Garden of Eden
   - Hebrews
   - Hell
+  - Maccabees
   - Syria
   - Torah
   - Univocality

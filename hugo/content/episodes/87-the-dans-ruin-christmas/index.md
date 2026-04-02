@@ -37,6 +37,7 @@ tags:
   - Jacob
   - James McGrath
   - Josephus
+  - Maccabees
   - Romans
 books:
   - Isaiah

@@ -39,6 +39,7 @@ tags:
   - Isaiah
   - Jeremiah
   - Jerusalem
+  - Maccabees
   - Mesopotamian
   - Qumran
   - Rapture

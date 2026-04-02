@@ -8,6 +8,7 @@ aliases:
 tags:
   - Jesus
   - Peter
+  - Maccabees
   - Luke
   - Apocrypha
   - Creation ex nihilo

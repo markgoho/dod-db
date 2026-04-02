@@ -42,6 +42,7 @@ tags:
   - Hagar
   - Judas Iscariot
   - King Saul
+  - Maccabees
   - Mary Magdalene
   - Nazareth
 books:

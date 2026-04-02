@@ -14,6 +14,7 @@ tags:
   - Tower of Babel
   - Mesopotamian
   - Israel
+  - Enuma Elish
   - Adam
   - Canaan
   - Eve

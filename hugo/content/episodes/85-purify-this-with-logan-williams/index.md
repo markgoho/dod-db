@@ -24,6 +24,7 @@ tags:
   - Gentiles
   - Hell
   - Judeans
+  - Maccabees
   - Qumran
   - Talmud
 books:

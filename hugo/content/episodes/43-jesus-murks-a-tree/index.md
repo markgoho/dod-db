@@ -34,6 +34,7 @@ tags:
   - Hell
   - Herod the Great
   - Joseph
+  - Maccabees
   - Passover
   - Peter
   - theophany

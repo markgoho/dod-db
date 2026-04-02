@@ -11,6 +11,7 @@ tags:
   - Creation ex nihilo
   - Bel and the Dragon
   - Cyrus the Great
+  - Maccabees
   - Babylon
   - angel
   - Habakkuk

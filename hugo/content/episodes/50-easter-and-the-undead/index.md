@@ -35,6 +35,7 @@ tags:
   - Herod Antipas
   - Herod the Great
   - Israel
+  - Maccabees
   - Peter
 books:
   - John

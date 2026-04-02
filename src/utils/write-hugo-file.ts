@@ -31,6 +31,7 @@ export async function writeHugoFile({
     undefined,
     2,
   );
-  const fullContent = `---\n${frontmatterYaml}---\n${content}`;
+  const normalizedContent = content.endsWith("\n") ? content : `${content}\n`;
+  const fullContent = `---\n${frontmatterYaml}---\n${normalizedContent}`;
   await Bun.write(filePath, fullContent);
 }

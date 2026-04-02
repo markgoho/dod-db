@@ -28,6 +28,7 @@ tags:
   - David Burnett
   - forgery
   - King David
+  - Maccabees
   - Saint Titus
 books:
   - Romans

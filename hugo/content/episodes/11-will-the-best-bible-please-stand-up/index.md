@@ -42,6 +42,7 @@ tags:
   - Jerome
   - Jerusalem
   - Judah
+  - Maccabees
   - Protestantism
   - Samuel
   - Textus Receptus
