@@ -1,4 +1,4 @@
-import { describe, expect, test } from "bun:test";
+import { describe, expect, mock, spyOn, test } from "bun:test";
 import type { ProcessedVideo } from "../storage/processed-videos.js";
 import { computeEpisodeNumbersFromRss } from "./compute-episode-numbers-from-rss.js";
 
@@ -64,6 +64,8 @@ describe("computeEpisodeNumbersFromRss", () => {
   });
 
   test("uses Patreon main episode order and excludes After Party items", () => {
+    const warnSpy = spyOn(console, "warn").mockImplementation(mock(() => {}));
+
     const videos: ProcessedVideo[] = [
       {
         ...baseVideo,
@@ -128,6 +130,212 @@ describe("computeEpisodeNumbersFromRss", () => {
       ["future114aa1", 114],
       ["future115bb2", 115],
     ]);
+    expect(warnSpy).not.toHaveBeenCalled();
+
+    warnSpy.mockRestore();
+  });
+
+  test("warns on mismatches that are not covered by overrides", () => {
+    const warnSpy = spyOn(console, "warn").mockImplementation(mock(() => {}));
+
+    computeEpisodeNumbersFromRss(
+      [
+        {
+          ...baseVideo,
+          videoId: "ep113aaaaaa",
+          title: "Bibliomancy! The Biblical Dance with the Devil?",
+          publishedAt: "2025-06-02T00:00:00Z",
+        },
+        {
+          ...baseVideo,
+          videoId: "future114aa1",
+          title: "Pride Month vs. the Bible!",
+          publishedAt: "2025-06-09T00:00:00Z",
+        },
+      ],
+      [
+        {
+          title: "Bibliomancy! The Biblical Dance with the Devil?",
+          pubDate: "Sun, 01 Jun 2025 15:12:05 GMT",
+          guid: "113",
+        },
+        {
+          title: "Pride Month vs. the Bible!",
+          pubDate: "Sun, 08 Jun 2025 16:02:44 GMT",
+          guid: "114",
+          itunesEpisode: 999,
+        },
+      ],
+    );
+
+    expect(warnSpy).toHaveBeenCalledWith(
+      'Patreon RSS episode mismatch for "Pride Month vs. the Bible!": itunes:episode=999, assigned=114',
+    );
+
+    warnSpy.mockRestore();
+  });
+
+  test("warns when title-anchored numbering disagrees with metadata", () => {
+    const warnSpy = spyOn(console, "warn").mockImplementation(mock(() => {}));
+
+    computeEpisodeNumbersFromRss(
+      [
+        {
+          ...baseVideo,
+          videoId: "video114aaaa",
+          title: 'Episode 114, "Pride Month vs. the Bible!"',
+          publishedAt: "2025-06-09T00:00:00Z",
+        },
+      ],
+      [
+        {
+          title: "Episode 114: Pride Month vs. the Bible!",
+          pubDate: "Sun, 08 Jun 2025 16:02:44 GMT",
+          guid: "114",
+          itunesEpisode: 999,
+        },
+      ],
+    );
+
+    expect(warnSpy).toHaveBeenCalledWith(
+      'Patreon RSS episode mismatch for "Episode 114: Pride Month vs. the Bible!": itunes:episode=999, assigned=114',
+    );
+
+    warnSpy.mockRestore();
+  });
+
+  test("suppresses warnings for explicit override mismatches", () => {
+    const warnSpy = spyOn(console, "warn").mockImplementation(mock(() => {}));
+
+    computeEpisodeNumbersFromRss(
+      [
+        {
+          ...baseVideo,
+          videoId: "29tvdRjwlJI",
+          title: "Bibliomancy! The Biblical Dance with the Devil?",
+          publishedAt: "2025-06-02T00:00:00Z",
+        },
+      ],
+      [
+        {
+          title: "Bibliomancy! The Biblical Dance with the Devil?",
+          pubDate: "Sun, 01 Jun 2025 15:12:05 GMT",
+          guid: "113",
+          itunesEpisode: 116,
+        },
+      ],
+    );
+
+    expect(warnSpy).not.toHaveBeenCalled();
+
+    warnSpy.mockRestore();
+  });
+
+  test("does not warn when metadata matches the assigned number", () => {
+    const warnSpy = spyOn(console, "warn").mockImplementation(mock(() => {}));
+
+    computeEpisodeNumbersFromRss(
+      [
+        {
+          ...baseVideo,
+          videoId: "future114aa1",
+          title: "Pride Month vs. the Bible!",
+          publishedAt: "2025-06-09T00:00:00Z",
+        },
+      ],
+      [
+        {
+          title: "Pride Month vs. the Bible!",
+          pubDate: "Sun, 08 Jun 2025 16:02:44 GMT",
+          guid: "114",
+          itunesEpisode: 114,
+        },
+      ],
+    );
+
+    expect(warnSpy).not.toHaveBeenCalled();
+
+    warnSpy.mockRestore();
+  });
+
+  test("does not warn when metadata is missing", () => {
+    const warnSpy = spyOn(console, "warn").mockImplementation(mock(() => {}));
+
+    computeEpisodeNumbersFromRss(
+      [
+        {
+          ...baseVideo,
+          videoId: "future114aa1",
+          title: "Pride Month vs. the Bible!",
+          publishedAt: "2025-06-09T00:00:00Z",
+        },
+      ],
+      [
+        {
+          title: "Pride Month vs. the Bible!",
+          pubDate: "Sun, 08 Jun 2025 16:02:44 GMT",
+          guid: "114",
+        },
+      ],
+    );
+
+    expect(warnSpy).not.toHaveBeenCalled();
+
+    warnSpy.mockRestore();
+  });
+
+  test("does not warn when RSS item does not match a video", () => {
+    const warnSpy = spyOn(console, "warn").mockImplementation(mock(() => {}));
+
+    computeEpisodeNumbersFromRss(
+      [
+        {
+          ...baseVideo,
+          videoId: "future114aa1",
+          title: "Pride Month vs. the Bible!",
+          publishedAt: "2025-06-09T00:00:00Z",
+        },
+      ],
+      [
+        {
+          title: "Completely Different Episode",
+          pubDate: "Sun, 08 Jun 2025 16:02:44 GMT",
+          guid: "114",
+          itunesEpisode: 999,
+        },
+      ],
+    );
+
+    expect(warnSpy).not.toHaveBeenCalled();
+
+    warnSpy.mockRestore();
+  });
+
+  test("does not warn when no episode number could be assigned", () => {
+    const warnSpy = spyOn(console, "warn").mockImplementation(mock(() => {}));
+
+    computeEpisodeNumbersFromRss(
+      [
+        {
+          ...baseVideo,
+          videoId: "unknown111111",
+          title: "Untitled Episode",
+          publishedAt: "2025-06-09T00:00:00Z",
+        },
+      ],
+      [
+        {
+          title: "Untitled Episode",
+          pubDate: "Sun, 08 Jun 2025 16:02:44 GMT",
+          guid: "114",
+          itunesEpisode: 999,
+        },
+      ],
+    );
+
+    expect(warnSpy).not.toHaveBeenCalled();
+
+    warnSpy.mockRestore();
   });
 
   test("falls back to the existing numbering algorithm when RSS items are empty", () => {

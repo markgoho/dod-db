@@ -22,6 +22,7 @@ tags:
   - Eschatology
   - Isaiah
   - Second Temple period
+  - Solomon
   - Daniel
   - Deuteronomy
   - Hebrews

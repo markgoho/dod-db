@@ -12,6 +12,7 @@ tags:
   - Romans
   - Andrew Whitehead
   - Hebrews
+  - Solomon
   - apocalypse
   - Cyrus the Great
   - Isaiah

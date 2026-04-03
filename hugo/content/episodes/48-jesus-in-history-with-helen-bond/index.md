@@ -39,6 +39,7 @@ tags:
   - Nazareth
   - Pliny the Younger
   - Septuagint
+  - Solomon
 books:
   - Isaiah
   - Romans

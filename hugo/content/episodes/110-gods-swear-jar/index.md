@@ -17,6 +17,7 @@ tags:
   - Dead Sea Scrolls
   - Isaiah
   - King James Version
+  - Solomon
   - archaeology
   - Deuteronomy
   - Egypt

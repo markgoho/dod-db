@@ -29,6 +29,7 @@ tags:
   - Baal
   - divine council
   - Edom
+  - Edomites
   - Egypt
   - Eve
   - Galilee

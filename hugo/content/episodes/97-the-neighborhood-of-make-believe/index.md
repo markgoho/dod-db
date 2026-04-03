@@ -11,9 +11,11 @@ tags:
   - Noah
   - Moses
   - Red Sea
+  - Jericho
   - Jerusalem
   - Samaria
   - Hebrews
+  - Mount Sinai
   - Babylon
   - Dead Sea
   - Israel
@@ -27,6 +29,7 @@ tags:
   - Luke
   - Protestantism
   - Samaritans
+  - Solomon
   - Syria
   - Ten Commandments
 books:

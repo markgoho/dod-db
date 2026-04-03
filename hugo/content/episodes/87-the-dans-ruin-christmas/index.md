@@ -26,6 +26,7 @@ tags:
   - Syria
   - Deuteronomy
   - Israel
+  - Jericho
   - Judah
   - YHWH
   - Antiochus IV Epiphanes

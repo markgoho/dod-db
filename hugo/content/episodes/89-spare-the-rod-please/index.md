@@ -14,6 +14,7 @@ tags:
   - Gentiles
   - Gnostic
   - Origen
+  - Solomon
   - Univocality
   - cognitive dissonance
   - inerrancy

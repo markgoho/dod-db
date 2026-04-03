@@ -191,7 +191,7 @@ const migrationJobs = new Map<string, MigrationJob>();
 // Helper to add a correction to corrections.ts
 async function addToCorrectionFile(
   candidate: CorrectionCandidate,
-): Promise<void> {
+): Promise<boolean> {
   const correctionsPath = path.join(
     process.cwd(),
     "src",
@@ -207,14 +207,20 @@ async function addToCorrectionFile(
     throw new Error("Could not find insertion point in corrections.ts");
   }
 
+  const rulePrefix = `  [[${JSON.stringify(candidate.original)}], ${JSON.stringify(candidate.corrected)}],`;
+  if (file.includes(rulePrefix)) {
+    return false;
+  }
+
   // Format the new rule
-  const newRule = `  [["${candidate.original}"], "${candidate.corrected}"], // ${candidate.category} - confidence: ${candidate.confidence}%\n`;
+  const newRule = `${rulePrefix} // ${candidate.category} - confidence: ${candidate.confidence}%\n`;
 
   // Insert the new rule
   const updatedFile =
     file.slice(0, insertionPoint) + newRule + file.slice(insertionPoint);
 
   await Bun.write(correctionsPath, updatedFile);
+  return true;
 }
 
 // Compute tag statistics across all episodes
@@ -518,14 +524,25 @@ const _server = Bun.serve({
           corrected: editedCorrected || candidate.corrected,
         };
 
-        // Add to corrections.ts
-        await addToCorrectionFile(finalCandidate);
+        const wasAdded = await addToCorrectionFile(finalCandidate);
 
-        // Mark as approved
-        approveCandidate(tracker, key, "UI Review");
-        await saveTracker(tracker);
+        try {
+          approveCandidate(tracker, key, "UI Review");
+          await saveTracker(tracker);
+        } catch (error) {
+          console.error(
+            "Failed to save approved correction to tracker:",
+            error,
+          );
+          return jsonResponse({
+            success: true,
+            warning:
+              "Correction was added to corrections.ts, but the review tracker did not update.",
+            wasAdded,
+          });
+        }
 
-        return jsonResponse({ success: true });
+        return jsonResponse({ success: true, wasAdded });
       } catch (error) {
         return jsonResponse(
           {
@@ -547,10 +564,20 @@ const _server = Bun.serve({
         return jsonResponse({ error: "Candidate not found" }, 404);
       }
 
-      rejectCandidate(tracker, key, "UI Review");
-      await saveTracker(tracker);
+      try {
+        rejectCandidate(tracker, key, "UI Review");
+        await saveTracker(tracker);
 
-      return jsonResponse({ success: true });
+        return jsonResponse({ success: true });
+      } catch (error) {
+        console.error("Failed to save rejected correction to tracker:", error);
+        return jsonResponse(
+          {
+            error: error instanceof Error ? error.message : "Failed to reject",
+          },
+          500,
+        );
+      }
     }
 
     // ========================================

@@ -59,4 +59,15 @@ export const globalCorrections: CorrectionRule[] = [
   [["second Timothy"], "Second Timothy"], // capitalization - confidence: 20%
   [["Monogones Theos"], "Monogenes Theos"], // spelling - confidence: 25%
   [["Nazarite"], "Nazirite"], // spelling - confidence: 50%
+  [["pornia"], "porneia"], // spelling - confidence: 45%
+  [["first Timothy"], "First Timothy"], // capitalization - confidence: 40%
+  [["second Maccabees"], "Second Maccabees"], // capitalization - confidence: 40%
+  [["taking issue"], "Taking Issue"], // capitalization - confidence: 40%
+  [["Leverett"], "Levirate"], // spelling - confidence: 30%
+  [["Elephantini"], "Elephantine"], // spelling - confidence: 30%
+  [["masoretic text"], "Masoretic Text"], // capitalization - confidence: 25%
+  [["Olivet discourse"], "Olivet Discourse"], // capitalization - confidence: 25%
+  [["Terrafim"], "Teraphim"], // spelling - confidence: 25%
+  [["Kumran"], "Qumran"], // spelling - confidence: 20%
+  [["Akilah"], "Aquila"], // spelling - confidence: 20%
 ];

@@ -30,6 +30,7 @@ tags:
   - King David
   - Maccabees
   - Saint Titus
+  - Solomon
 books:
   - Romans
   - 1 Corinthians

@@ -14,6 +14,7 @@ tags:
   - Hebrews
   - Moses
   - Deuteronomy
+  - Jericho
   - Judah
   - Lot
   - Abraham

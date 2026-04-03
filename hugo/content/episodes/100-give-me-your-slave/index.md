@@ -8,6 +8,7 @@ aliases:
 tags:
   - Paul
   - Septuagint
+  - Onesimus
   - Jesus
   - Moses
   - Luke

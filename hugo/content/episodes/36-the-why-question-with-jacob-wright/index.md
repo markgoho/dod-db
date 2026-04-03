@@ -27,6 +27,7 @@ tags:
   - Nehemiah
   - Samaria
   - Samuel
+  - Solomon
   - Abraham
   - Ammonites
   - Babylon

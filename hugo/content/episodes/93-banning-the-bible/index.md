@@ -27,6 +27,7 @@ tags:
   - King James Version
   - Lot
   - Moab
+  - Mount Sinai
   - Passover
   - Philistines
   - Samson

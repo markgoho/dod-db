@@ -14,6 +14,7 @@ tags:
   - Judah
   - Philistines
   - Bathsheba
+  - Solomon
   - Hebrews
   - Jephthah
   - Samson

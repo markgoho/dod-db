@@ -31,11 +31,13 @@ tags:
   - Amorites
   - Dead Sea
   - Ishmael
+  - Jericho
   - Joshua
   - Judah
   - Latin Vulgate
   - Midianites
   - Nephilim
+  - Solomon
   - Ugarit
   - Ammonites
   - Apocrypha

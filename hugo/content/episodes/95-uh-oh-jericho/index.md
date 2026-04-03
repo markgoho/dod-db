@@ -7,6 +7,7 @@ aliases:
   - /episodes/95/
 tags:
   - Noah
+  - Jericho
   - Flood
   - Joshua
   - Moses

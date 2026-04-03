@@ -12,10 +12,16 @@ function extractEpisodeNumberFromTitle(title: string): number | undefined {
   return match?.[1] ? Number.parseInt(match[1], 10) : undefined;
 }
 
-function getAnchoredEpisodeNumber(item: PatreonRssItem): number | undefined {
+function getExplicitOverrideEpisodeNumber(
+  item: PatreonRssItem,
+): number | undefined {
   const normalizedTitle = slugifyTitle(extractCleanTitle(item.title));
+  return EPISODE_NUMBER_OVERRIDES[normalizedTitle];
+}
+
+function getAnchoredEpisodeNumber(item: PatreonRssItem): number | undefined {
   return (
-    EPISODE_NUMBER_OVERRIDES[normalizedTitle] ??
+    getExplicitOverrideEpisodeNumber(item) ??
     extractEpisodeNumberFromTitle(item.title)
   );
 }
@@ -85,13 +91,19 @@ function warnOnMetadataMismatch(
   assignedEpisodeNumber: number,
 ): void {
   if (
-    item.itunesEpisode !== undefined &&
-    item.itunesEpisode !== assignedEpisodeNumber
+    item.itunesEpisode === undefined ||
+    item.itunesEpisode === assignedEpisodeNumber
   ) {
-    console.warn(
-      `Patreon RSS episode mismatch for "${item.title}": itunes:episode=${item.itunesEpisode}, assigned=${assignedEpisodeNumber}`,
-    );
+    return;
   }
+
+  if (getExplicitOverrideEpisodeNumber(item) === assignedEpisodeNumber) {
+    return;
+  }
+
+  console.warn(
+    `Patreon RSS episode mismatch for "${item.title}": itunes:episode=${item.itunesEpisode}, assigned=${assignedEpisodeNumber}`,
+  );
 }
 
 export function computeEpisodeNumbersFromRss(

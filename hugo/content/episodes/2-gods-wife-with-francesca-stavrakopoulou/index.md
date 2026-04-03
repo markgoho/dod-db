@@ -34,6 +34,7 @@ tags:
   - Elephantine
   - Jeremiah
   - Masoretic Text
+  - Solomon
   - Syria
   - theophany
   - Trinity

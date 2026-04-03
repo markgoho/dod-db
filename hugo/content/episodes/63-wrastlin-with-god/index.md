@@ -19,6 +19,7 @@ tags:
   - Moses
   - John the Baptist
   - Samuel
+  - Abimelech
   - Gaza
   - Hell
   - Jephthah

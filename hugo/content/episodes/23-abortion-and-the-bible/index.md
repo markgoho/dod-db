@@ -14,6 +14,7 @@ tags:
   - Luke
   - John the Baptist
   - Mary Magdalene
+  - Rebekah
   - Ten Commandments
   - Barnabas
   - Catholicism

@@ -343,6 +343,10 @@
         "mentions": 1
       },
       {
+        "tag": "Solomon",
+        "mentions": 1
+      },
+      {
         "tag": "Syria",
         "mentions": 1
       },
@@ -713,6 +717,10 @@
         "mentions": 1
       },
       {
+        "tag": "Dionysius of Alexandria",
+        "mentions": 1
+      },
+      {
         "tag": "Domitian",
         "mentions": 1
       },
@@ -1047,6 +1055,10 @@
         "mentions": 2
       },
       {
+        "tag": "Solomon",
+        "mentions": 2
+      },
+      {
         "tag": "biblical canon",
         "mentions": 1
       },
@@ -1337,6 +1349,10 @@
       },
       {
         "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Edomites",
         "mentions": 1
       },
       {
@@ -1762,6 +1778,10 @@
       },
       {
         "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Solomon",
         "mentions": 1
       },
       {
@@ -3084,6 +3104,10 @@
         "mentions": 1
       },
       {
+        "tag": "Mount Sinai",
+        "mentions": 1
+      },
+      {
         "tag": "Paul",
         "mentions": 1
       },
@@ -3272,6 +3296,10 @@
         "mentions": 2
       },
       {
+        "tag": "Jericho",
+        "mentions": 2
+      },
+      {
         "tag": "Joshua",
         "mentions": 2
       },
@@ -3289,6 +3317,10 @@
       },
       {
         "tag": "Nephilim",
+        "mentions": 2
+      },
+      {
+        "tag": "Solomon",
         "mentions": 2
       },
       {
@@ -3786,6 +3818,10 @@
       {
         "tag": "Latin Vulgate",
         "mentions": 2
+      },
+      {
+        "tag": "Abimelech",
+        "mentions": 1
       },
       {
         "tag": "Babylon",
@@ -4290,6 +4326,10 @@
         "mentions": 2
       },
       {
+        "tag": "Rebekah",
+        "mentions": 2
+      },
+      {
         "tag": "Ten Commandments",
         "mentions": 2
       },
@@ -4729,6 +4769,10 @@
       },
       {
         "tag": "Saint Titus",
+        "mentions": 1
+      },
+      {
+        "tag": "Solomon",
         "mentions": 1
       }
     ],
@@ -5424,6 +5468,10 @@
       },
       {
         "tag": "Hebrews",
+        "mentions": 3
+      },
+      {
+        "tag": "Solomon",
         "mentions": 3
       },
       {
@@ -6459,6 +6507,10 @@
         "mentions": 2
       },
       {
+        "tag": "Solomon",
+        "mentions": 2
+      },
+      {
         "tag": "Abraham",
         "mentions": 1
       },
@@ -6950,6 +7002,10 @@
       },
       {
         "tag": "Codex Sinaiticus",
+        "mentions": 2
+      },
+      {
+        "tag": "Dionysius of Alexandria",
         "mentions": 2
       },
       {
@@ -8266,6 +8322,10 @@
         "mentions": 6
       },
       {
+        "tag": "Jericho",
+        "mentions": 5
+      },
+      {
         "tag": "Judah",
         "mentions": 5
       },
@@ -8649,6 +8709,10 @@
       },
       {
         "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Solomon",
         "mentions": 1
       }
     ],
@@ -9750,6 +9814,10 @@
       },
       {
         "tag": "Nazareth",
+        "mentions": 1
+      },
+      {
+        "tag": "Solomon",
         "mentions": 1
       }
     ],
@@ -11231,6 +11299,10 @@
         "mentions": 3
       },
       {
+        "tag": "Abimelech",
+        "mentions": 2
+      },
+      {
         "tag": "Gaza",
         "mentions": 2
       },
@@ -11370,6 +11442,10 @@
       {
         "tag": "Bathsheba",
         "mentions": 7
+      },
+      {
+        "tag": "Solomon",
+        "mentions": 5
       },
       {
         "tag": "Hebrews",
@@ -13954,6 +14030,10 @@
         "mentions": 1
       },
       {
+        "tag": "Edomites",
+        "mentions": 1
+      },
+      {
         "tag": "Egypt",
         "mentions": 1
       },
@@ -14917,6 +14997,10 @@
         "mentions": 2
       },
       {
+        "tag": "Jericho",
+        "mentions": 2
+      },
+      {
         "tag": "Judah",
         "mentions": 2
       },
@@ -15201,6 +15285,10 @@
       },
       {
         "tag": "Origen",
+        "mentions": 2
+      },
+      {
+        "tag": "Solomon",
         "mentions": 2
       },
       {
@@ -15923,6 +16011,10 @@
         "mentions": 1
       },
       {
+        "tag": "Mount Sinai",
+        "mentions": 1
+      },
+      {
         "tag": "Passover",
         "mentions": 1
       },
@@ -16117,6 +16209,10 @@
         "mentions": 1
       },
       {
+        "tag": "Mount Sinai",
+        "mentions": 1
+      },
+      {
         "tag": "Qumran",
         "mentions": 1
       },
@@ -16184,6 +16280,10 @@
       {
         "tag": "Noah",
         "mentions": 39
+      },
+      {
+        "tag": "Jericho",
+        "mentions": 20
       },
       {
         "tag": "Flood",
@@ -16463,6 +16563,10 @@
         "mentions": 5
       },
       {
+        "tag": "Jericho",
+        "mentions": 4
+      },
+      {
         "tag": "Jerusalem",
         "mentions": 4
       },
@@ -16472,6 +16576,10 @@
       },
       {
         "tag": "Hebrews",
+        "mentions": 3
+      },
+      {
+        "tag": "Mount Sinai",
         "mentions": 3
       },
       {
@@ -16524,6 +16632,10 @@
       },
       {
         "tag": "Samaritans",
+        "mentions": 1
+      },
+      {
+        "tag": "Solomon",
         "mentions": 1
       },
       {
@@ -17021,6 +17133,10 @@
       {
         "tag": "Septuagint",
         "mentions": 30
+      },
+      {
+        "tag": "Onesimus",
+        "mentions": 18
       },
       {
         "tag": "Jesus",
@@ -17918,6 +18034,10 @@
         "mentions": 2
       },
       {
+        "tag": "Anselm of Canterbury",
+        "mentions": 1
+      },
+      {
         "tag": "Arius",
         "mentions": 1
       },
@@ -18430,6 +18550,10 @@
       },
       {
         "tag": "King James Version",
+        "mentions": 3
+      },
+      {
+        "tag": "Solomon",
         "mentions": 3
       },
       {
@@ -19271,6 +19395,10 @@
         "mentions": 2
       },
       {
+        "tag": "Solomon",
+        "mentions": 2
+      },
+      {
         "tag": "Daniel",
         "mentions": 1
       },
@@ -19440,6 +19568,10 @@
         "mentions": 2
       },
       {
+        "tag": "Edomites",
+        "mentions": 2
+      },
+      {
         "tag": "Jesus",
         "mentions": 2
       },
@@ -19469,6 +19601,10 @@
       },
       {
         "tag": "Jacob",
+        "mentions": 1
+      },
+      {
+        "tag": "Jericho",
         "mentions": 1
       },
       {
@@ -19617,5 +19753,1096 @@
       }
     ],
     "episodeNumber": 116
+  },
+  {
+    "videoId": "9umlMF6WWX4",
+    "title": "Is Allie Beth Stuckey a Sheep or a Goat?",
+    "publishedAt": "2025-06-30T00:00:00Z",
+    "processedAt": "2026-04-03T00:23:27.630Z",
+    "transcriptPath": "data/transcripts/2025-06-30-is-allie-beth-stuckey-a-sheep-or-a-goat.txt",
+    "tags": [
+      {
+        "tag": "Elephantine",
+        "mentions": 18
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 14
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 12
+      },
+      {
+        "tag": "Judah",
+        "mentions": 9
+      },
+      {
+        "tag": "Torah",
+        "mentions": 7
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 5
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 3
+      },
+      {
+        "tag": "Passover",
+        "mentions": 3
+      },
+      {
+        "tag": "El",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 2
+      },
+      {
+        "tag": "Maccabees",
+        "mentions": 2
+      },
+      {
+        "tag": "Africa",
+        "mentions": 1
+      },
+      {
+        "tag": "angel",
+        "mentions": 1
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Egyptians",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "Israel",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Judeans",
+        "mentions": 1
+      },
+      {
+        "tag": "King Josiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Monotheism",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:18.127]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:03:18.127]",
+        "endTimestamp": "[00:33:27.601]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "artifacts-and-fiction",
+        "startTimestamp": "[00:33:27.601]",
+        "endTimestamp": "[00:57:11.321]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "chapters": [
+      {
+        "title": "Intro",
+        "startTime": 0
+      },
+      {
+        "title": "Taking Issue",
+        "startTime": 198
+      },
+      {
+        "title": "King James Version",
+        "startTime": 427
+      },
+      {
+        "title": "Interpretations",
+        "startTime": 592
+      },
+      {
+        "title": "Who is being targeted",
+        "startTime": 812
+      },
+      {
+        "title": "Toxic empathy",
+        "startTime": 1093
+      },
+      {
+        "title": "Border laws",
+        "startTime": 1174
+      },
+      {
+        "title": "Leviticus",
+        "startTime": 1442
+      },
+      {
+        "title": "Immigration Laws",
+        "startTime": 1597
+      },
+      {
+        "title": "Nonopressive Treatment",
+        "startTime": 1796
+      },
+      {
+        "title": "Elephantini",
+        "startTime": 2007
+      },
+      {
+        "title": "Why Elephantini",
+        "startTime": 2082
+      },
+      {
+        "title": "When did the Torah come from",
+        "startTime": 2254
+      },
+      {
+        "title": "When did the Torah come together",
+        "startTime": 2287
+      },
+      {
+        "title": "The Divine Pair",
+        "startTime": 2862
+      },
+      {
+        "title": "Isolation",
+        "startTime": 2978
+      },
+      {
+        "title": "The Temptation",
+        "startTime": 3133
+      },
+      {
+        "title": "Conclusion",
+        "startTime": 3205
+      }
+    ],
+    "episodeNumber": 117,
+    "scriptures": [
+      {
+        "book": "Matthew",
+        "references": ["Matthew 25"],
+        "mentions": 5
+      },
+      {
+        "book": "Leviticus",
+        "references": ["Leviticus 19", "Leviticus 19:33"],
+        "mentions": 3
+      },
+      {
+        "book": "Hosea",
+        "references": ["Hosea 6:6"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "OtxuR9K4PKA",
+    "title": "Tucker Vs Ted: The Israel Throwdown",
+    "publishedAt": "2025-07-07T00:00:00Z",
+    "processedAt": "2026-04-03T00:28:03.835Z",
+    "transcriptPath": "data/transcripts/2025-07-07-tucker-vs-ted-the-israel-throwdown.txt",
+    "tags": [
+      {
+        "tag": "Israel",
+        "mentions": 45
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 11
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 11
+      },
+      {
+        "tag": "Origen",
+        "mentions": 8
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 7
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 5
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 5
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 5
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 4
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 4
+      },
+      {
+        "tag": "Jonah",
+        "mentions": 4
+      },
+      {
+        "tag": "divine council",
+        "mentions": 3
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 3
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 3
+      },
+      {
+        "tag": "Edomites",
+        "mentions": 2
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 2
+      },
+      {
+        "tag": "Christian Nationalism",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "Ishmael",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "King David",
+        "mentions": 1
+      },
+      {
+        "tag": "Lachish",
+        "mentions": 1
+      },
+      {
+        "tag": "Nineveh",
+        "mentions": 1
+      },
+      {
+        "tag": "preterist interpretation",
+        "mentions": 1
+      },
+      {
+        "tag": "Terah",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:13.979]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:02:13.979]",
+        "endTimestamp": "[00:31:16.887]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:31:16.887]",
+        "endTimestamp": "[00:51:48.381]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 118,
+    "scriptures": [
+      {
+        "book": "Genesis",
+        "references": ["Genesis 1", "Genesis 11", "Genesis 12"],
+        "mentions": 9
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 82", "Psalms 137"],
+        "mentions": 3
+      },
+      {
+        "book": "Ezekiel",
+        "references": ["Ezekiel 38"],
+        "mentions": 1
+      },
+      {
+        "book": "Joshua",
+        "references": ["Joshua 11"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "_vuCVVcOsHg",
+    "title": "Problematic Prophecy",
+    "publishedAt": "2025-07-14T00:00:00Z",
+    "processedAt": "2026-04-03T00:32:20.251Z",
+    "transcriptPath": "data/transcripts/2025-07-14-problematic-prophecy.txt",
+    "tags": [
+      {
+        "tag": "preterist interpretation",
+        "mentions": 24
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 23
+      },
+      {
+        "tag": "John",
+        "mentions": 20
+      },
+      {
+        "tag": "Athanasius of Alexandria",
+        "mentions": 14
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 13
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 12
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 9
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 8
+      },
+      {
+        "tag": "Israel",
+        "mentions": 5
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 5
+      },
+      {
+        "tag": "Dionysius of Alexandria",
+        "mentions": 4
+      },
+      {
+        "tag": "Apocrypha",
+        "mentions": 3
+      },
+      {
+        "tag": "Eusebius",
+        "mentions": 3
+      },
+      {
+        "tag": "Nero",
+        "mentions": 3
+      },
+      {
+        "tag": "Constantine",
+        "mentions": 2
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Justin Martyr",
+        "mentions": 2
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 2
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 1
+      },
+      {
+        "tag": "Arius",
+        "mentions": 1
+      },
+      {
+        "tag": "Armageddon",
+        "mentions": 1
+      },
+      {
+        "tag": "Bel and the Dragon",
+        "mentions": 1
+      },
+      {
+        "tag": "Carthage",
+        "mentions": 1
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "Council of Nicaea",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Easter",
+        "mentions": 1
+      },
+      {
+        "tag": "futurist interpretation",
+        "mentions": 1
+      },
+      {
+        "tag": "Gnostic",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "John of Patmos",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Papias of Hierapolis",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:02.111]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:03:02.111]",
+        "endTimestamp": "[00:27:27.033]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:27:27.033]",
+        "endTimestamp": "[00:54:39.601]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 119,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 1"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "Zrw0LBtnjn8",
+    "title": "Save Me!",
+    "publishedAt": "2025-07-21T00:00:00Z",
+    "processedAt": "2026-04-03T00:37:03.414Z",
+    "transcriptPath": "data/transcripts/2025-07-21-save-me.txt",
+    "tags": [
+      {
+        "tag": "Isaiah",
+        "mentions": 22
+      },
+      {
+        "tag": "angel",
+        "mentions": 9
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 8
+      },
+      {
+        "tag": "Israel",
+        "mentions": 6
+      },
+      {
+        "tag": "Judah",
+        "mentions": 6
+      },
+      {
+        "tag": "Moses",
+        "mentions": 6
+      },
+      {
+        "tag": "Sheol",
+        "mentions": 6
+      },
+      {
+        "tag": "divine council",
+        "mentions": 5
+      },
+      {
+        "tag": "Paul",
+        "mentions": 5
+      },
+      {
+        "tag": "Adam",
+        "mentions": 4
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 4
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 3
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 3
+      },
+      {
+        "tag": "Hell",
+        "mentions": 3
+      },
+      {
+        "tag": "etiology",
+        "mentions": 2
+      },
+      {
+        "tag": "Eve",
+        "mentions": 2
+      },
+      {
+        "tag": "Garden of Eden",
+        "mentions": 2
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "Satan",
+        "mentions": 2
+      },
+      {
+        "tag": "Aesop",
+        "mentions": 1
+      },
+      {
+        "tag": "Assyria",
+        "mentions": 1
+      },
+      {
+        "tag": "Cherubim",
+        "mentions": 1
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Egyptians",
+        "mentions": 1
+      },
+      {
+        "tag": "Gilead",
+        "mentions": 1
+      },
+      {
+        "tag": "Irenaeus",
+        "mentions": 1
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Judeans",
+        "mentions": 1
+      },
+      {
+        "tag": "theophany",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:02.486]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:03:02.486]",
+        "endTimestamp": "[00:34:47.389]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:34:47.389]",
+        "endTimestamp": "[01:00:32.961]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 120,
+    "scriptures": [
+      {
+        "book": "Genesis",
+        "references": ["Genesis 2", "Genesis 3"],
+        "mentions": 4
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 2:17", "Exodus 33"],
+        "mentions": 3
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 1", "Isaiah 6"],
+        "mentions": 3
+      },
+      {
+        "book": "Ezekiel",
+        "references": ["Ezekiel 28"],
+        "mentions": 2
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew 1:21"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Kings",
+        "references": ["1 Kings 22"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "BXE7A6iiQD8",
+    "title": "Sister wives",
+    "publishedAt": "2025-07-28T00:00:00Z",
+    "processedAt": "2026-04-03T00:41:57.099Z",
+    "transcriptPath": "data/transcripts/2025-07-28-sister-wives.txt",
+    "tags": [
+      {
+        "tag": "Abraham",
+        "mentions": 60
+      },
+      {
+        "tag": "Abimelech",
+        "mentions": 35
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 22
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 16
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 14
+      },
+      {
+        "tag": "King David",
+        "mentions": 10
+      },
+      {
+        "tag": "Sarah",
+        "mentions": 10
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 10
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 7
+      },
+      {
+        "tag": "Judah",
+        "mentions": 4
+      },
+      {
+        "tag": "Lot",
+        "mentions": 4
+      },
+      {
+        "tag": "Rebekah",
+        "mentions": 4
+      },
+      {
+        "tag": "Canaan",
+        "mentions": 3
+      },
+      {
+        "tag": "Israel",
+        "mentions": 3
+      },
+      {
+        "tag": "King Saul",
+        "mentions": 3
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 3
+      },
+      {
+        "tag": "Bethlehem",
+        "mentions": 2
+      },
+      {
+        "tag": "etiology",
+        "mentions": 2
+      },
+      {
+        "tag": "Terah",
+        "mentions": 2
+      },
+      {
+        "tag": "Egyptians",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Jephthah",
+        "mentions": 1
+      },
+      {
+        "tag": "Jonah",
+        "mentions": 1
+      },
+      {
+        "tag": "Melchizedek",
+        "mentions": 1
+      },
+      {
+        "tag": "Nineveh",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:40.029]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:01:40.029]",
+        "endTimestamp": "[00:38:56.263]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:38:56.263]",
+        "endTimestamp": "[01:01:27.461]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
+    "episodeNumber": 121,
+    "scriptures": [
+      {
+        "book": "Genesis",
+        "references": [
+          "Genesis 11",
+          "Genesis 12",
+          "Genesis 26",
+          "Genesis 31",
+          "Genesis 31:19"
+        ],
+        "mentions": 5
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges 17", "Judges 18:3"],
+        "mentions": 3
+      },
+      {
+        "book": "1 Samuel",
+        "references": ["1 Samuel 19", "1 Samuel 19:13"],
+        "mentions": 2
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 21", "Exodus 22"],
+        "mentions": 2
+      }
+    ]
+  },
+  {
+    "videoId": "G-bwyrQQI5g",
+    "title": "At-One-Ment",
+    "publishedAt": "2025-08-04T00:00:00Z",
+    "processedAt": "2026-04-03T00:46:52.349Z",
+    "transcriptPath": "data/transcripts/2025-08-04-at-one-ment.txt",
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 38
+      },
+      {
+        "tag": "Satan",
+        "mentions": 16
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 9
+      },
+      {
+        "tag": "Leningrad Codex",
+        "mentions": 8
+      },
+      {
+        "tag": "Paul",
+        "mentions": 7
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 5
+      },
+      {
+        "tag": "Anselm of Canterbury",
+        "mentions": 2
+      },
+      {
+        "tag": "Gregory of Nyssa",
+        "mentions": 2
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Noah",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "The Reformation",
+        "mentions": 2
+      },
+      {
+        "tag": "Athanasius of Alexandria",
+        "mentions": 1
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "Codex Sinaiticus",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Deutero-Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Irenaeus",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Pastoral Epistles",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:49.390]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:02:49.390]",
+        "endTimestamp": "[01:10:17.121]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 122,
+    "scriptures": [
+      {
+        "book": "Romans",
+        "references": ["Romans 3:25"],
+        "mentions": 2
+      },
+      {
+        "book": "Hebrews",
+        "references": ["Hebrews 2:17"],
+        "mentions": 1
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 53"],
+        "mentions": 1
+      },
+      {
+        "book": "John",
+        "references": ["John 3:16"],
+        "mentions": 1
+      }
+    ]
   }
 ]

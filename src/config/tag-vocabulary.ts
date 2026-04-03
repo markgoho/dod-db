@@ -278,6 +278,9 @@ export const tagVocabulary: TagDefinition[] = [
     variations: [],
     category: "place",
     status: "accepted",
+    llmVerify: true,
+    description:
+      "an island in the Nile river that was home to a Jewish community in antiquity",
   },
   {
     canonical: "Carthage",
@@ -787,7 +790,7 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Sarah",
-    variations: [],
+    variations: ["sarai"],
     category: "people",
     llmVerify: true,
     description: "Abraham's wife, mentioned in the Old Testament",
@@ -3516,11 +3519,12 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Jericho",
-    variations: ["walls of Jericho"],
+    variations: ["Walls of Jericho"],
     category: "place",
+    llmVerify: true,
     description:
       "Ancient city in the Jordan River Valley, famous for its walls being toppled in the Book of Joshua.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 95,
   },
   {
@@ -3597,21 +3601,23 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 97,
   },
   {
-    canonical: "King Solomon",
-    variations: ["Solomon"],
+    canonical: "Solomon",
+    variations: ["King Solomon"],
     category: "character",
+    llmVerify: true,
     description:
       "A biblical king of Israel, son of David, known for his wisdom and building the First Temple in Jerusalem.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 97,
   },
   {
     canonical: "Mount Sinai",
     variations: ["Mounts Sinai"],
     category: "place",
+    llmVerify: true,
     description:
       "The mountain where Moses received the Ten Commandments from God, according to the Book of Exodus.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 97,
   },
   {
@@ -3648,11 +3654,12 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Onesimus",
-    variations: ["Onesimus'"],
+    variations: [],
     category: "character",
+    llmVerify: true,
     description:
       "A slave belonging to Philemon, mentioned in the New Testament epistle of the same name; Paul intercedes on his behalf",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 100,
   },
   {
@@ -4137,6 +4144,141 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     status: "rejected",
     addedInEpisode: 116,
+  },
+  {
+    canonical: "Allie Beth Stuckey",
+    variations: ["Stuckey"],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 117,
+  },
+  {
+    canonical: "exile",
+    variations: ["Babylonian exile"],
+    category: "event",
+    description: "Forced removal of people from their homeland.",
+    status: "proposed",
+    addedInEpisode: 117,
+  },
+  {
+    canonical: "Ted Cruz",
+    variations: [],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 118,
+  },
+  {
+    canonical: "Iran",
+    variations: [],
+    category: "place",
+    description:
+      "A country in the Middle East, often discussed in the context of its relationship with Israel and interpretations of biblical prophecy.",
+    status: "proposed",
+    addedInEpisode: 118,
+  },
+  {
+    canonical: "Christian Zionism",
+    variations: [],
+    category: "theology",
+    description:
+      "A theological perspective that supports the modern state of Israel based on interpretations of biblical prophecy.",
+    status: "proposed",
+    addedInEpisode: 118,
+  },
+  {
+    canonical: "Christian Nationalists",
+    variations: [],
+    category: "people",
+    description:
+      "Group of people who combine Christian religious beliefs with American nationalism, often advocating for a particular vision of American identity and values.",
+    status: "proposed",
+    addedInEpisode: 118,
+  },
+  {
+    canonical: "Edomites",
+    variations: [],
+    category: "people",
+    status: "accepted",
+    addedInEpisode: 118,
+  },
+  {
+    canonical: "Olivet Discourse",
+    variations: ["Olivet discourses"],
+    category: "literature",
+    description:
+      "A discourse given by Jesus in the Synoptic Gospels concerning the destruction of the Temple in Jerusalem and the coming of the Son of Man.",
+    status: "proposed",
+    addedInEpisode: 119,
+  },
+  {
+    canonical: "Dionysius of Alexandria",
+    variations: ["Dionysius"],
+    category: "person",
+    llmVerify: true,
+    description:
+      "A 3rd-century bishop of Alexandria and theologian known for his writings and involvement in controversies of his time.",
+    status: "accepted",
+    addedInEpisode: 119,
+  },
+  {
+    canonical: "millennialism",
+    variations: ["millenarianism"],
+    category: "theology",
+    description:
+      "The belief in a future thousand-year reign of peace and righteousness, often associated with the return of Christ.",
+    status: "proposed",
+    addedInEpisode: 119,
+  },
+  {
+    canonical: "salvation",
+    variations: [],
+    category: "theology",
+    description:
+      "The concept of being saved from sin and its consequences, often associated with faith or divine intervention.",
+    status: "proposed",
+    addedInEpisode: 120,
+  },
+  {
+    canonical: "Abimelech",
+    variations: ["Abimelek"],
+    category: "character",
+    llmVerify: true,
+    description:
+      "A Philistine king in Gerar who encountered both Abraham and Isaac, according to Genesis.",
+    status: "accepted",
+    addedInEpisode: 121,
+  },
+  {
+    canonical: "atonement",
+    variations: ["at-one-ment"],
+    category: "theology",
+    description:
+      "The concept of reconciliation between humanity and the divine, often involving reparation for wrongdoing",
+    status: "proposed",
+    addedInEpisode: 122,
+  },
+  {
+    canonical: "hilasterion",
+    variations: ["hilaskomai"],
+    category: "theology",
+    description:
+      "Greek word meaning 'place of atonement' or 'expiation', used in Romans 3:25",
+    status: "proposed",
+    addedInEpisode: 122,
+  },
+  {
+    canonical: "Gregory of Nyssa",
+    variations: [],
+    category: "person",
+    status: "accepted",
+    addedInEpisode: 122,
+  },
+  {
+    canonical: "Anselm of Canterbury",
+    variations: ["Saint Anselm of Canterbury"],
+    category: "person",
+    status: "accepted",
+    addedInEpisode: 122,
   },
 ];
 

@@ -14,6 +14,7 @@ tags:
   - Islam
   - King James Version
   - Paul
+  - Anselm of Canterbury
   - Arius
   - Catholicism
   - Easter

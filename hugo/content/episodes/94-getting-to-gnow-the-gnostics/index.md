@@ -34,6 +34,7 @@ tags:
   - Judaism
   - Latin Vulgate
   - Lot
+  - Mount Sinai
   - Qumran
   - Septuagint
   - Trinity

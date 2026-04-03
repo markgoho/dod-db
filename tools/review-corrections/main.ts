@@ -1,4 +1,4 @@
-import { API_BASE_URL, escapeHtml } from "../shared/utilities.js";
+import { API_BASE_URL, escapeHtml, showToast } from "../shared/utilities.js";
 
 // Types
 interface Candidate {
@@ -311,7 +311,7 @@ async function loadCandidates(): Promise<void> {
         '<div class="empty">' +
         '<div class="empty-icon">⚠️</div>' +
         "<h2>Error Loading Candidates</h2>" +
-        "<p>Make sure you're running the review server: bun run src/scripts/review-corrections-ui.ts</p>" +
+        "<p>Make sure you're running the tools server with bun run tools</p>" +
         "</div>";
     }
   }
@@ -350,14 +350,29 @@ async function approve(key: string): Promise<void> {
       },
     );
 
-    if (response.ok) {
-      removeCandidate(key, "✅ Approved and added to corrections.ts!");
-    } else {
-      const error = await response.json();
-      alert(`Error: ${error.error}`);
+    let data: { error?: string; warning?: string; wasAdded?: boolean } = {};
+    try {
+      data = (await response.json()) as typeof data;
+    } catch (error) {
+      console.error("Failed to parse approve response:", error);
     }
-  } catch {
-    alert("Failed to approve. Make sure the server is running.");
+
+    if (response.ok) {
+      removeCandidate(
+        key,
+        data.wasAdded === false
+          ? "✅ Approved (already present in corrections.ts)"
+          : "✅ Approved and added to corrections.ts!",
+      );
+      if (data.warning) {
+        showToast(data.warning, "warning");
+      }
+    } else {
+      alert(`Error: ${data.error || `Request failed (${response.status})`}`);
+    }
+  } catch (error) {
+    console.error("Failed to approve correction:", error);
+    alert("Network error — could not reach the API server on port 3001.");
   }
 }
 
@@ -370,18 +385,27 @@ async function reject(key: string): Promise<void> {
       },
     );
 
+    let data: { error?: string } = {};
+    try {
+      data = (await response.json()) as typeof data;
+    } catch (error) {
+      console.error("Failed to parse reject response:", error);
+    }
+
     if (response.ok) {
       removeCandidate(key, "❌ Rejected");
+    } else {
+      alert(`Error: ${data.error || `Request failed (${response.status})`}`);
     }
-  } catch {
-    alert("Failed to reject. Make sure the server is running.");
+  } catch (error) {
+    console.error("Failed to reject correction:", error);
+    alert("Network error — could not reach the API server on port 3001.");
   }
 }
 
 function removeCandidate(key: string, message: string): void {
-  const candidateElement = document.querySelector(
-    `#candidate-${safeEncode(key)}`,
-  );
+  const candidateSelector = `#${CSS.escape(`candidate-${safeEncode(key)}`)}`;
+  const candidateElement = document.querySelector(candidateSelector);
   if (!candidateElement) return;
 
   candidateElement.classList.add("removing");

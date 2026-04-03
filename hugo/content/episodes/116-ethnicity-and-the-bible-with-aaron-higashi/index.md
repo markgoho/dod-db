@@ -21,6 +21,7 @@ tags:
   - King David
   - Midianites
   - archaeology
+  - Edomites
   - Jesus
   - Noah
   - Peter
@@ -29,6 +30,7 @@ tags:
   - Garden of Eden
   - Gentiles
   - Jacob
+  - Jericho
   - Jerusalem
   - Joshua
   - Judeans

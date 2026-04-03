@@ -760,9 +760,15 @@
       "original": "Masoretic text",
       "corrected": "Masoretic Text",
       "category": "capitalization",
-      "totalOccurrences": 22,
-      "episodeCount": 4,
-      "episodes": ["DD7Kkzh2kzg", "p8CjJR4yhfk", "iO6mdYWPOyo", "KDkyHw3nE0w"],
+      "totalOccurrences": 24,
+      "episodeCount": 5,
+      "episodes": [
+        "DD7Kkzh2kzg",
+        "p8CjJR4yhfk",
+        "iO6mdYWPOyo",
+        "KDkyHw3nE0w",
+        "G-bwyrQQI5g"
+      ],
       "examples": [
         "\"of the Masoretic text.\"",
         "\"tradition, the Masoretic text is what\"",
@@ -777,7 +783,7 @@
       "episodeIds": ["DD7Kkzh2kzg", "DD7Kkzh2kzg", "DD7Kkzh2kzg"],
       "confidence": 85,
       "firstSeen": "2026-01-11T17:59:30.418Z",
-      "lastSeen": "2026-01-15T04:29:15.006Z",
+      "lastSeen": "2026-04-03T00:47:04.717Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:05:54.102Z",
       "reviewedBy": "UI Review"
@@ -786,9 +792,9 @@
       "original": "Origin",
       "corrected": "Origen",
       "category": "spelling",
-      "totalOccurrences": 3,
-      "episodeCount": 1,
-      "episodes": ["DD7Kkzh2kzg"],
+      "totalOccurrences": 5,
+      "episodeCount": 2,
+      "episodes": ["DD7Kkzh2kzg", "OtxuR9K4PKA"],
       "examples": [
         "\"you have Origin of Alexandria\"",
         "\"Oh, origin.\"",
@@ -801,9 +807,9 @@
       ],
       "timestamps": ["00:28:24.970", "00:29:39.100", "00:29:42.780"],
       "episodeIds": ["DD7Kkzh2kzg", "DD7Kkzh2kzg", "DD7Kkzh2kzg"],
-      "confidence": 20,
+      "confidence": 40,
       "firstSeen": "2026-01-11T17:59:30.418Z",
-      "lastSeen": "2026-01-11T17:59:30.418Z",
+      "lastSeen": "2026-04-03T00:28:16.661Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:06:58.759Z",
       "reviewedBy": "UI Review"
@@ -1505,9 +1511,9 @@
       "original": "won't",
       "corrected": "wont",
       "category": "spelling",
-      "totalOccurrences": 4,
-      "episodeCount": 2,
-      "episodes": ["naI65ELNhRw", "nu6jx8m14tI"],
+      "totalOccurrences": 6,
+      "episodeCount": 3,
+      "episodes": ["naI65ELNhRw", "nu6jx8m14tI", "BXE7A6iiQD8"],
       "examples": [
         "\"is our won't.\"",
         "\"is our won't.\"",
@@ -1520,9 +1526,9 @@
       ],
       "timestamps": ["00:01:12.150", "00:01:13.350", "00:29:56.110"],
       "episodeIds": ["naI65ELNhRw", "naI65ELNhRw", "nu6jx8m14tI"],
-      "confidence": 35,
+      "confidence": 60,
       "firstSeen": "2026-01-11T20:29:33.102Z",
-      "lastSeen": "2026-01-13T22:18:59.168Z",
+      "lastSeen": "2026-04-03T00:42:23.597Z",
       "status": "rejected",
       "reviewedAt": "2026-01-13T22:22:26.131Z",
       "reviewedBy": "UI Review"
@@ -1668,7 +1674,9 @@
       "confidence": 40,
       "firstSeen": "2026-01-11T20:29:33.102Z",
       "lastSeen": "2026-01-14T01:56:41.407Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-03T01:20:52.831Z",
+      "reviewedBy": "UI Review"
     },
     "Sea scroll→Sea Scroll": {
       "original": "Sea scroll",
@@ -2035,7 +2043,9 @@
       "confidence": 40,
       "firstSeen": "2026-01-11T21:05:21.564Z",
       "lastSeen": "2026-01-15T04:32:30.415Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-03T01:27:21.644Z",
+      "reviewedBy": "UI Review"
     },
     "claironomia→kleronomia": {
       "original": "claironomia",
@@ -2663,9 +2673,9 @@
       "original": "anarchic",
       "corrected": "Enochic",
       "category": "proper-noun",
-      "totalOccurrences": 4,
-      "episodeCount": 2,
-      "episodes": ["caKa7DTkSkQ", "AUgdX7aH_hI"],
+      "totalOccurrences": 6,
+      "episodeCount": 3,
+      "episodes": ["caKa7DTkSkQ", "AUgdX7aH_hI", "Zrw0LBtnjn8"],
       "examples": [
         "\"in the anarchic literature as\"",
         "\"literature, the anarchic literature sits\"",
@@ -2678,9 +2688,9 @@
       ],
       "timestamps": ["00:35:56.750", "00:44:35.880", "00:24:51.040"],
       "episodeIds": ["caKa7DTkSkQ", "caKa7DTkSkQ", "AUgdX7aH_hI"],
-      "confidence": 45,
+      "confidence": 70,
       "firstSeen": "2026-01-13T02:10:06.917Z",
-      "lastSeen": "2026-01-13T03:14:41.804Z",
+      "lastSeen": "2026-04-03T00:37:28.331Z",
       "status": "rejected",
       "reviewedAt": "2026-01-13T03:35:45.057Z",
       "reviewedBy": "UI Review"
@@ -3366,7 +3376,9 @@
       "confidence": 40,
       "firstSeen": "2026-01-13T22:18:59.168Z",
       "lastSeen": "2026-01-15T14:19:21.207Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:29:14.348Z",
+      "reviewedBy": "UI Review"
     },
     "parody→parity": {
       "original": "parody",
@@ -3623,7 +3635,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-14T01:56:41.407Z",
       "lastSeen": "2026-01-14T01:56:41.407Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:42:20.059Z",
+      "reviewedBy": "UI Review"
     },
     "Nachosh→Nachash": {
       "original": "Nachosh",
@@ -4020,7 +4034,9 @@
       "confidence": 45,
       "firstSeen": "2026-01-14T15:18:26.244Z",
       "lastSeen": "2026-01-18T17:02:51.228Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:07:04.995Z",
+      "reviewedBy": "UI Review"
     },
     "Magneto→Megiddo": {
       "original": "Magneto",
@@ -4570,7 +4586,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-15T04:35:40.547Z",
       "lastSeen": "2026-01-15T14:19:21.207Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:42:32.583Z",
+      "reviewedBy": "UI Review"
     },
     "Nazarite→Nazirite": {
       "original": "Nazarite",
@@ -5081,7 +5099,9 @@
       "confidence": 30,
       "firstSeen": "2026-01-16T19:57:20.100Z",
       "lastSeen": "2026-01-16T19:57:20.100Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:41:08.610Z",
+      "reviewedBy": "UI Review"
     },
     "roof→Ruth": {
       "original": "roof",
@@ -5169,7 +5189,9 @@
       "confidence": 40,
       "firstSeen": "2026-01-17T03:03:41.501Z",
       "lastSeen": "2026-04-01T16:43:53.697Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:33:08.430Z",
+      "reviewedBy": "UI Review"
     },
     "century bce→century BCE": {
       "original": "century bce",
@@ -5683,7 +5705,9 @@
       "confidence": 40,
       "firstSeen": "2026-01-18T16:48:31.616Z",
       "lastSeen": "2026-03-15T06:34:33.194Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-03T01:40:28.860Z",
+      "reviewedBy": "UI Review"
     },
     "Religious→Religulous": {
       "original": "Religious",
@@ -5909,7 +5933,9 @@
       "confidence": 40,
       "firstSeen": "2026-01-18T17:02:51.228Z",
       "lastSeen": "2026-04-01T16:31:18.494Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:40:37.949Z",
+      "reviewedBy": "UI Review"
     },
     "shevat→shevet": {
       "original": "shevat",
@@ -6329,7 +6355,9 @@
       "confidence": 25,
       "firstSeen": "2026-03-15T06:34:33.194Z",
       "lastSeen": "2026-03-15T06:34:33.194Z",
-      "status": "pending"
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:41:34.484Z",
+      "reviewedBy": "UI Review"
     },
     "Tiberius→Tiberias": {
       "original": "Tiberius",
@@ -6353,7 +6381,9 @@
       "confidence": 25,
       "firstSeen": "2026-03-15T06:34:33.194Z",
       "lastSeen": "2026-03-15T06:34:33.194Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-03T01:41:42.117Z",
+      "reviewedBy": "UI Review"
     },
     "masora parva→Masora Parva": {
       "original": "masora parva",
@@ -6804,7 +6834,9 @@
       "confidence": 25,
       "firstSeen": "2026-04-01T16:43:53.697Z",
       "lastSeen": "2026-04-01T16:43:53.697Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-03T01:41:48.265Z",
+      "reviewedBy": "UI Review"
     },
     "disciples→disciples'": {
       "original": "disciples",
@@ -7007,7 +7039,239 @@
       "firstSeen": "2026-04-02T14:20:04.982Z",
       "lastSeen": "2026-04-02T14:20:04.982Z",
       "status": "pending"
+    },
+    "Ali→Allie": {
+      "original": "Ali",
+      "corrected": "Allie",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["9umlMF6WWX4"],
+      "examples": [
+        "\"to accuse Ali Beth Stuckey\"",
+        "\"of, like, Ali Beth Stuckey\""
+      ],
+      "correctedExamples": [
+        "\"to accuse Allie Beth Stuckey\"",
+        "\"of, like, Allie Beth Stuckey\""
+      ],
+      "timestamps": ["00:18:40.370", "00:54:13.830"],
+      "episodeIds": ["9umlMF6WWX4", "9umlMF6WWX4"],
+      "confidence": 5,
+      "firstSeen": "2026-04-03T00:23:44.092Z",
+      "lastSeen": "2026-04-03T00:23:44.092Z",
+      "status": "pending"
+    },
+    "Elephantini→Elephantine": {
+      "original": "Elephantini",
+      "corrected": "Elephantine",
+      "category": "spelling",
+      "totalOccurrences": 7,
+      "episodeCount": 1,
+      "episodes": ["9umlMF6WWX4"],
+      "examples": [
+        "\"Yeah, to Elephantini, which is\"",
+        "\"temple in Elephantini destroyed. And\"",
+        "\"citizens of Elephantini, thus say\""
+      ],
+      "correctedExamples": [
+        "\"Yeah, to Elephantine, which is\"",
+        "\"temple in Elephantine destroyed. And\"",
+        "\"citizens of Elephantine, thus say\""
+      ],
+      "timestamps": ["00:36:06.670", "00:40:30.870", "00:43:00.400"],
+      "episodeIds": ["9umlMF6WWX4", "9umlMF6WWX4", "9umlMF6WWX4"],
+      "confidence": 30,
+      "firstSeen": "2026-04-03T00:23:44.092Z",
+      "lastSeen": "2026-04-03T00:23:44.092Z",
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:41:14.041Z",
+      "reviewedBy": "UI Review"
+    },
+    "Yedania→Yedaniah": {
+      "original": "Yedania",
+      "corrected": "Yedaniah",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["9umlMF6WWX4"],
+      "examples": [
+        "\"guy named Yedania or Yedania\"",
+        "\"Yedania or Yedania or Jedania,\""
+      ],
+      "correctedExamples": [
+        "\"guy named Yedaniah or Yedaniah\"",
+        "\"Yedaniah or Yedaniah or Jedaniah,\""
+      ],
+      "timestamps": ["00:40:30.870", "00:40:30.870"],
+      "episodeIds": ["9umlMF6WWX4", "9umlMF6WWX4"],
+      "confidence": 10,
+      "firstSeen": "2026-04-03T00:23:44.092Z",
+      "lastSeen": "2026-04-03T00:23:44.092Z",
+      "status": "pending"
+    },
+    "Hosea→Hoshea": {
+      "original": "Hosea",
+      "corrected": "Hoshea",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["9umlMF6WWX4"],
+      "examples": [
+        "\"of Haggai, Hosea son of\"",
+        "\"of Jatham, Hosea son of\""
+      ],
+      "correctedExamples": [
+        "\"of Haggai, Hoshea son of\"",
+        "\"of Jotham, Hoshea son of\""
+      ],
+      "timestamps": ["00:43:00.400", "00:43:00.400"],
+      "episodeIds": ["9umlMF6WWX4", "9umlMF6WWX4"],
+      "confidence": 10,
+      "firstSeen": "2026-04-03T00:23:44.092Z",
+      "lastSeen": "2026-04-03T00:23:44.092Z",
+      "status": "pending"
+    },
+    "trigramaton→trigrammaton": {
+      "original": "trigramaton",
+      "corrected": "trigrammaton",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["9umlMF6WWX4"],
+      "examples": [
+        "\"tetragrammatic, the trigramaton. Yes. And\"",
+        "\"and the trigramaton. So.\""
+      ],
+      "correctedExamples": [
+        "\"tetragrammaton, the trigrammaton. Yes. And\"",
+        "\"and the trigrammaton. So.\""
+      ],
+      "timestamps": ["00:45:01.820", "00:46:18.600"],
+      "episodeIds": ["9umlMF6WWX4", "9umlMF6WWX4"],
+      "confidence": 15,
+      "firstSeen": "2026-04-03T00:23:44.092Z",
+      "lastSeen": "2026-04-03T00:23:44.092Z",
+      "status": "pending"
+    },
+    "Olivet discourse→Olivet Discourse": {
+      "original": "Olivet discourse",
+      "corrected": "Olivet Discourse",
+      "category": "capitalization",
+      "totalOccurrences": 6,
+      "episodeCount": 1,
+      "episodes": ["_vuCVVcOsHg"],
+      "examples": [
+        "\"the, the Olivet discourse.\"",
+        "\"The Olivet discourse, right. And\"",
+        "\"how the Olivet discourse makes it\""
+      ],
+      "correctedExamples": [
+        "\"the, the Olivet Discourse.\"",
+        "\"The Olivet Discourse, right. And\"",
+        "\"how the Olivet Discourse makes it\""
+      ],
+      "timestamps": ["00:05:39.900", "00:05:42.140", "00:05:42.140"],
+      "episodeIds": ["_vuCVVcOsHg", "_vuCVVcOsHg", "_vuCVVcOsHg"],
+      "confidence": 25,
+      "firstSeen": "2026-04-03T00:32:53.592Z",
+      "lastSeen": "2026-04-03T00:32:53.592Z",
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:41:59.099Z",
+      "reviewedBy": "UI Review"
+    },
+    "Dionysus→Dionysius": {
+      "original": "Dionysus",
+      "corrected": "Dionysius",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["_vuCVVcOsHg"],
+      "examples": [
+        "\"guy named Dionysus of Alexandria.\"",
+        "\"But Dionysus writes, he's\""
+      ],
+      "correctedExamples": [
+        "\"guy named Dionysius of Alexandria.\"",
+        "\"But Dionysius writes, he's\""
+      ],
+      "timestamps": ["00:31:29.650", "00:32:22.650"],
+      "episodeIds": ["_vuCVVcOsHg", "_vuCVVcOsHg"],
+      "confidence": 15,
+      "firstSeen": "2026-04-03T00:32:53.592Z",
+      "lastSeen": "2026-04-03T00:32:53.592Z",
+      "status": "pending"
+    },
+    "Babylonian exile→Babylonian Exile": {
+      "original": "Babylonian exile",
+      "corrected": "Babylonian Exile",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["Zrw0LBtnjn8"],
+      "examples": [
+        "\"after the Babylonian exile.\"",
+        "\"the, the Babylonian exile.\""
+      ],
+      "correctedExamples": [
+        "\"after the Babylonian Exile.\"",
+        "\"the, the Babylonian Exile.\""
+      ],
+      "timestamps": ["00:52:42.050", "00:55:00.690"],
+      "episodeIds": ["Zrw0LBtnjn8", "Zrw0LBtnjn8"],
+      "confidence": 10,
+      "firstSeen": "2026-04-03T00:37:28.331Z",
+      "lastSeen": "2026-04-03T00:37:28.331Z",
+      "status": "pending"
+    },
+    "Terrafim→Teraphim": {
+      "original": "Terrafim",
+      "corrected": "Teraphim",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["BXE7A6iiQD8"],
+      "examples": [
+        "\"that. It's Terrafim.\"",
+        "\"on. Yeah. Terrafim.\"",
+        "\"And the terrafim would be.\""
+      ],
+      "correctedExamples": [
+        "\"that. It's Teraphim.\"",
+        "\"on. Yeah. Teraphim.\"",
+        "\"And the teraphim would be.\""
+      ],
+      "timestamps": ["00:01:08.640", "00:01:31.500", "00:51:27.990"],
+      "episodeIds": ["BXE7A6iiQD8", "BXE7A6iiQD8", "BXE7A6iiQD8"],
+      "confidence": 25,
+      "firstSeen": "2026-04-03T00:42:23.597Z",
+      "lastSeen": "2026-04-03T00:42:23.597Z",
+      "status": "approved",
+      "reviewedAt": "2026-04-03T01:42:13.319Z",
+      "reviewedBy": "UI Review"
+    },
+    "Eclectic Edition→eclectic edition": {
+      "original": "Eclectic Edition",
+      "corrected": "eclectic edition",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["G-bwyrQQI5g"],
+      "examples": [
+        "\"called the Eclectic Edition. And the\"",
+        "\"And the Eclectic Edition is where\""
+      ],
+      "correctedExamples": [
+        "\"called the eclectic edition. And the\"",
+        "\"And the eclectic edition is where\""
+      ],
+      "timestamps": ["00:52:48.480", "00:52:48.480"],
+      "episodeIds": ["G-bwyrQQI5g", "G-bwyrQQI5g"],
+      "confidence": 10,
+      "firstSeen": "2026-04-03T00:47:04.717Z",
+      "lastSeen": "2026-04-03T00:47:04.717Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-04-02T14:20:04.982Z"
+  "lastUpdated": "2026-04-03T01:42:32.583Z"
 }

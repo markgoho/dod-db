@@ -48,6 +48,7 @@ tags:
   - biblical canon
   - Daniel
   - Dead Sea Scrolls
+  - Edomites
   - Jephthah
   - Judaism
   - King Josiah

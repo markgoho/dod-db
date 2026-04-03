@@ -31,6 +31,7 @@ tags:
   - King David
   - Luke
   - Septuagint
+  - Solomon
   - Univocality
 books:
   - Leviticus

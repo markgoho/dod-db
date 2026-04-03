@@ -41,6 +41,7 @@ tags:
   - Joseph
   - King James Version
   - Latin Vulgate
+  - Abimelech
   - Babylon
   - Bel and the Dragon
   - Clement of Rome

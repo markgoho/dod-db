@@ -45,6 +45,7 @@ tags:
   - Maccabees
   - Mary Magdalene
   - Nazareth
+  - Solomon
 books:
   - Mark
   - Joshua

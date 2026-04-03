@@ -28,6 +28,7 @@ tags:
   - Protestantism
   - Qumran
   - Saint Titus
+  - Solomon
   - biblical canon
   - Book of Enoch
   - Catholicism

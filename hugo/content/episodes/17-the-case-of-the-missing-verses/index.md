@@ -28,6 +28,7 @@ tags:
   - Jonah
   - Luke
   - Moses
+  - Mount Sinai
   - Paul
   - Protestantism
   - Satan
