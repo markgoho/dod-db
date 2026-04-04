@@ -106,15 +106,7 @@ export async function extractTagsLlm(
     });
 
     // Auto-add discovered tags to vocabulary with 'proposed' status
-    const uncategorizedTags: Array<{ tag: string; mentions: number }> = [];
-
     for (const tag of validTags) {
-      // Skip 'other' category - needs manual categorization
-      if (tag.category === "other") {
-        uncategorizedTags.push({ tag: tag.tag, mentions: tag.mentions });
-        continue;
-      }
-
       // Check if already added (e.g., from a previous run)
       if (tagExists(tag.tag)) {
         console.log(`    "${tag.tag}" already exists in vocabulary`);
@@ -134,24 +126,6 @@ export async function extractTagsLlm(
       } catch (error) {
         console.error(`    Failed to add "${tag.tag}" to vocabulary:`, error);
       }
-    }
-
-    // Report uncategorized tags that need manual review
-    if (uncategorizedTags.length > 0) {
-      console.log("\n⚠️  TAGS NEEDING CATEGORIZATION:");
-      console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-      for (const tag of uncategorizedTags.sort(
-        (a, b) => b.mentions - a.mentions,
-      )) {
-        console.log(
-          `  • ${tag.tag} (${tag.mentions} mentions) - needs category`,
-        );
-      }
-      console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-      console.log(
-        "Categories: character, person, place, people, literature, theology, scholarship, religion, event",
-      );
-      console.log("Or suggest a NEW category if none fit!\n");
     }
 
     return validTags.map(t => ({

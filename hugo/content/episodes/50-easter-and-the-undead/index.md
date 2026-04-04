@@ -51,6 +51,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.040] Dan McClellan: You know, you have different takes on. On Pilate, where Pilate's like, this man is innocent, but I will do whatever you tell me to. Which is very clearly fiction because the actual Pilate murdered Jewish citizens in Jerusalem by the handful whenever they annoyed him.{{< /line >}}
 {{< line >}}[00:00:20.960] Dan Beecher: Right.{{< /line >}}
 {{< line >}}[00:00:21.320] Dan McClellan: So the notion that they would get together and be like, we're gonna tell on you, and he was like, okay, I'll do what you want is just not historical. Hey, Everybody, I'm Dan McClellan.{{< /line >}}

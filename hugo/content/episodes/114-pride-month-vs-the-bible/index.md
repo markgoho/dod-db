@@ -43,6 +43,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Dan Beecher: I think most basically all Christians in a modern context would be very happy to say that they disavow the idea of marriage as one man purchasing a woman from another man. We're all on board with that, hopefully.{{< /line >}}
 {{< line >}}[00:00:22.440] Dan McClellan: Yeah, I think there are some people in Davis County who probably are not quite there yet.{{< /line >}}
 {{< line >}}[00:00:28.310] Dan Beecher: Okay, fair enough.{{< /line >}}

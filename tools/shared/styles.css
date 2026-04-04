@@ -312,6 +312,11 @@ header {
   color: #065f46;
 }
 
+.tag-badge.miscellaneous {
+  background: #f1f5f9;
+  color: #475569;
+}
+
 /* Buttons */
 .btn {
   padding: 12px 24px;

@@ -49,6 +49,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Dan Beecher: I love the final moment of the Book of John. We'll give him the full three years. Yeah, it's still, it's still a pretty big claim to say that if everything that Jesus did was written down, even the whole world would not have room for the books that would be written. Yeah, that feels a little, a little strong coming on a little strong, Author of John.{{< /line >}}
 {{< line >}}[00:00:27.600] Dan McClellan: Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:29.660] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

@@ -60,6 +60,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.219] Dan McClellan: Well, if you use "an," you don't pronounce the H, because that's why it's "an," because they didn't pronounce the H.{{< /line >}}
 {{< line >}}[00:00:06.272] Dan Beecher: Don't tell me how to pronounce things. People are in our comment sections telling us how to pronounce things, and frankly, pedantry is the most boring thing in the world.{{< /line >}}
 {{< line >}}[00:00:14.068] Dan McClellan: Hey, I make half my living off of pedantry, so don't be badmouthing pedantry. Hey everybody, I'm Dan McClellan. And I'm Dan Beecher, and you're listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion, and we combat the spread of misinformation about the same. How go things today, Dan?{{< /line >}}

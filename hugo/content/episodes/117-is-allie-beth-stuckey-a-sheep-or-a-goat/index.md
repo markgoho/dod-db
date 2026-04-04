@@ -51,6 +51,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: We're back to this new right-wing authoritarian talking point. Wait a minute. The problem is empathy because Jesus was big on being like, oh, don't go too far. Love your neighbor, but don't go nuts.{{< /line >}}
 {{< line >}}[00:00:13.520] Dan Beecher: Don't be crazy about it.{{< /line >}}
 {{< line >}}[00:00:16.240] Dan McClellan: That's just irrational. Hey, everybody, I'm Dan McClellan.{{< /line >}}

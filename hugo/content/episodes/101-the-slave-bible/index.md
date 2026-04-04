@@ -42,6 +42,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.280] Dan McClellan: Next time you, you want to put on a fancy sweater or a fancy suit to go yell about how much poor people suck to a congregation of other Christians, sit a few plays out, have a Coke and a smile and you know how to finish that quote. Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:21.800] Dan Beecher: And I'm Dan Beecher and you're listening.{{< /line >}}
 {{< line >}}[00:00:23.960] Dan McClellan: To the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and we combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}

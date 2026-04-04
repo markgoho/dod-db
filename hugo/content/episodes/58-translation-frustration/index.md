@@ -54,6 +54,7 @@ books:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Dan McClellan: So Tyndale translated the. The New Testament into English. 1525, 26. This was still considered problematic, bordering on heretical. Well, it resulted in him being burned at the stake.{{< /line >}}
 {{< line >}}[00:00:14.800] Dan Beecher: Okay. So, yeah, not just bordering on.{{< /line >}}
 {{< line >}}[00:00:17.200] Dan McClellan: It was only a couple years after he was executed that they were like, you know what? I think we're gonna go with this English Bible thing.{{< /line >}}

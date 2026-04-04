@@ -30,6 +30,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Eric Swalwell: I do think there's a difference between being anti-Christian and being anti-Christian nationalism. You know, being pro-secularism does not mean you're anti-Christian. And if we have not made that clear, then that's on us. And we should do a better job of doing that because...{{< /line >}}
 {{< line >}}[00:00:19.440] Dan Beecher: I agree. I think you should.{{< /line >}}
 {{< line >}}[00:00:20.720] Eric Swalwell: Yeah.{{< /line >}}

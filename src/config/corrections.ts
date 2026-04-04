@@ -70,4 +70,6 @@ export const globalCorrections: CorrectionRule[] = [
   [["Terrafim"], "Teraphim"], // spelling - confidence: 25%
   [["Kumran"], "Qumran"], // spelling - confidence: 20%
   [["Akilah"], "Aquila"], // spelling - confidence: 20%
+  [["Papius"], "Papias"], // spelling - confidence: 20%
+  [["International version"], "International Version"], // capitalization - confidence: 20%
 ];

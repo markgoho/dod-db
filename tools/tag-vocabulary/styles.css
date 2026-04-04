@@ -150,6 +150,10 @@ h2 {
   background: #d1fae5;
   color: #065f46;
 }
+.tag-badge.miscellaneous {
+  background: #f1f5f9;
+  color: #475569;
+}
 .episode-detail {
   margin-top: 16px;
   padding-top: 16px;
@@ -328,6 +332,10 @@ h2 {
 .vocab-category-badge.religion {
   background: #fef9c3;
   color: #854d0e;
+}
+.vocab-category-badge.miscellaneous {
+  background: #f1f5f9;
+  color: #475569;
 }
 .vocab-reprocess-btn {
   font-size: 11px;

@@ -66,6 +66,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Dan McClellan: Matthew will tell the story so as to make it fulfill prophecy, even if it is ludicrous. And so Matthew is describing Jesus riding two animals at the same time into Jerusalem. You can find paintings of Jesus sidesaddle on a big donkey with his feet resting on a small donkey. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:31.370] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:32.570] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion, and we combat the spread of misinformation about the same. How are things, Dan?{{< /line >}}

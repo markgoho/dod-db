@@ -20,6 +20,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Dan McClellan: Can you talk about what actually makes a true Christian versus a fake Christian like me?{{< /line >}}
 {{< line >}}[00:00:07.680] David Congdon: I think it has... I mean, political power is part of it, but I would specify it specifically in terms of money. I think it's about... I think it's about money.{{< /line >}}
 {{< line >}}[00:00:19.360] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}

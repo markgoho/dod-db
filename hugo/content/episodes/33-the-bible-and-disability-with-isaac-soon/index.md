@@ -38,6 +38,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.280] Isaac Soon: People don't realize that they have this kind of normal template of an able body that, well, that's what every human should be. And there's a kind of cultural inertia to push bodies in that direction through prosthetics, through medication, through scriptural texts. I mean, access to religious buildings, for example. Right. You know, everyone's welcome to this church, but, you know, if you are a wheelchair user, you can use the ramp around the back.{{< /line >}}
 {{< line >}}[00:00:28.160] Dan McClellan: Hey, Everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:29.990] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

@@ -24,7 +24,7 @@ export const TagDiscoverySchema = z.object({
         "scholarship",
         "religion",
         "event",
-        "other",
+        "miscellaneous",
       ]),
       description: z.string(), // Brief context for disambiguation (1-2 sentences)
       variations: z.array(z.string()).optional(), // Alternative names, spellings, or abbreviations
@@ -82,7 +82,8 @@ Topics include ancient Near Eastern history, biblical texts, theological concept
    - scholarship: Academic methods (form criticism, textual variants)
    - religion: Religious traditions and denominations (Judaism, Christianity, Islam, Zoroastrianism)
    - event: Historical events, councils, wars (Council of Nicaea, Babylonian Exile, exodus event)
-   - Use "other" ONLY if truly none of the above fit - prefer assigning a category
+   - miscellaneous: Fallback bucket when none of the above fit well
+   - Use "miscellaneous" ONLY if truly none of the above fit - prefer assigning a more specific category
 3. Use canonical forms (not variations):
    - "Septuagint" not "LXX"
    - "First Enoch" or "1 Enoch" not "Enoch" (the book vs the character)

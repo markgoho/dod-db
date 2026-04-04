@@ -51,6 +51,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Dan McClellan: And that's where they came up with what's called the hypostatic union, where Jesus is 100% God, but Jesus is 100% human. How does that work? Shut up. Doesn't make a ton of sense. It makes enough sense that we can threaten people if they don't agree with it. And so it is.{{< /line >}}
 {{< line >}}[00:00:18.440] Dan Beecher: The.{{< /line >}}
 {{< line >}}[00:00:18.640] Dan McClellan: The institution of the church is the only reason that the concept of the Trinity survived, because without the Roman Empire and all of the might and the coercion and the force behind it, it would have gone the way of the dodo long ago. Hey everybody, I'm Dan McClellan.{{< /line >}}

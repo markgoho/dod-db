@@ -18,6 +18,7 @@ export const TAG_CATEGORIES = [
   "scholarship",
   "religion",
   "event",
+  "miscellaneous",
 ] as const;
 
 /**
@@ -3675,9 +3676,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "slave bible",
     variations: ["the slave bible"],
     category: "literature",
-    description:
-      "An abridged version of the Bible published in 1807 for use among enslaved people in the British West Indies.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 101,
   },
   {
@@ -3806,9 +3805,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Marginalia Review of Books",
     variations: ["Marginalia"],
     category: "literature",
-    description:
-      "Online review of books in the field of religion and ancillary fields; Angela Roskop Erisman was one of the founding editors.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 105,
   },
   {
@@ -3830,8 +3827,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Sargon",
     variations: [],
     category: "character",
-    description: "Refers to both Sargon II and Sargon the Great.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 105,
   },
   {
@@ -3848,9 +3844,7 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Persian Period",
     variations: [],
     category: "event",
-    description:
-      "The time following the Babylonian exile when Persia controlled the region.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 105,
   },
   {
@@ -4330,6 +4324,58 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
     addedInEpisode: 125,
   },
+  {
+    canonical: "Letter of Jeremiah",
+    variations: ["Epistle of Jeremiah"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 126,
+  },
+  {
+    canonical: "Shema",
+    variations: ["Shema Yisrael"],
+    category: "theology",
+    description:
+      "A Jewish prayer affirming monotheism, taken from Deuteronomy 6:4-9, Numbers 15:37-41, and Deuteronomy 11:13-21",
+    status: "proposed",
+    addedInEpisode: 126,
+  },
+  {
+    canonical: "Nathan MacDonald",
+    variations: [],
+    category: "person",
+    status: "rejected",
+    addedInEpisode: 126,
+  },
+  {
+    canonical: "Arad",
+    variations: [],
+    category: "place",
+    description:
+      "An ancient site in the Negev desert, Israel, with archaeological remains including a Judahite temple",
+    status: "proposed",
+    addedInEpisode: 126,
+  },
+  {
+    canonical: "common english bible",
+    variations: [],
+    category: "literature",
+    description: "A translation of the bible.",
+    status: "proposed",
+    addedInEpisode: 127,
+  },
+  {
+    canonical: "ben sommer",
+    variations: ["sommer"],
+    category: "person",
+    description:
+      "A biblical scholar known for his work on the nature of God in the Hebrew Bible.",
+    status: "proposed",
+    addedInEpisode: 127,
+  },	{ canonical: 'Hugo Mendez', variations: ['Mendez'], category: 'person', status: 'rejected', addedInEpisode: 128 },
+	{ canonical: 'pseudepigraphy', variations: ['pseudepigraphal'], category: 'scholarship', description: 'The practice of writing under a false name, common in ancient Jewish and Christian literature.', status: 'proposed', addedInEpisode: 128 },
+	{ canonical: 'Johannine Community', variations: [], category: 'miscellaneous', description: 'A hypothetical community thought to be the origin of the Gospel of John and the Johannine epistles.', status: 'proposed', addedInEpisode: 128 },	{ canonical: 'Polybius', variations: ['Polybios'], category: 'person', llmVerify: true, description: 'Greek historian of the Hellenistic period, known for The Histories.', status: 'accepted', addedInEpisode: 128 },
+	{ canonical: 'Sea of Galilee', variations: [], category: 'place', description: 'A lake in northern Israel, also known as the Sea of Tiberias or Lake Kinneret, prominent in the Gospels.', status: 'proposed', addedInEpisode: 128 },	{ canonical: 'Aristobulus', variations: [], category: 'person', llmVerify: true, description: 'Jewish philosopher of the Second Temple period, known for his attempt to harmonize Greek philosophy and Jewish thought.', status: 'accepted', addedInEpisode: 128 },
 ];
 
 /**

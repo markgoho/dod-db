@@ -55,6 +55,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Jacob Wright: That's where the Bible really gets going in interesting ways. It's in a certain sense, very real sense. All responses to what makes a people, what brings us together as a people, how do we survive, you know, what role does a kingdom play in all? How is that not everything? What do we do when that kingdom is defeated and conquered? And the biblical project, I think, is just this magnificent collaborative effort. Effort to prepare for that or to respond to it in very honest ways and also creative ways.{{< /line >}}
 {{< line >}}[00:00:36.960] Dan McClellan: Hey, Everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:38.600] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

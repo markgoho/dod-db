@@ -55,6 +55,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: I'm curious. I would love to know for whom this was considered authoritative. Like, what groups out there were like, we're gonna. We gotta follow the Didache, you know, and in our household, we follow the Didache. You're keeping an apostle in your room for more than two days.{{< /line >}}
 {{< line >}}[00:00:16.000] Dan Beecher: How long has he been here? A day. Okay, you're fine. Have some goat.{{< /line >}}
 {{< line >}}[00:00:25.760] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}

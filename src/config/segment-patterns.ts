@@ -6,6 +6,7 @@ export type SegmentType =
   | "advertisement"
   | "all-right-lets-see-it"
   | "archaeology-of-israel"
+  | "ark-of-the-covenant"
   | "artifacts-and-fiction"
   | "bible-heroes"
   | "bible-vs-bible"
@@ -19,6 +20,7 @@ export type SegmentType =
   | "ex-eventu"
   | "getting-angelic"
   | "getting-demonic"
+  | "grail"
   | "here-we-go"
   | "historys-heresies"
   | "historys-mysteries"
@@ -56,6 +58,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "above-the-law": "Above the Law",
   "all-right-lets-see-it": "All Right, Let's See It",
   "archaeology-of-israel": "Archaeology of Israel",
+  "ark-of-the-covenant": "The Ark of the Covenant",
   "artifacts-and-fiction": "Artifacts and Fiction",
   "bible-heroes": "Bible Heroes?",
   "bible-vs-bible": "Bible vs Bible",
@@ -69,6 +72,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "ex-eventu": "Ex Eventu",
   "getting-angelic": "Getting Angelic",
   "getting-demonic": "Getting Demonic",
+  grail: "The Grail",
   "here-we-go": "Here We Go!",
   "historys-heresies": "History's Heresies",
   "historys-mysteries": "History's Mysteries",
@@ -107,6 +111,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "above-the-law": "#f59e0b", // amber-500 (gold/law/authority)
   "all-right-lets-see-it": "#ef4444", // red
   "archaeology-of-israel": "#a16207", // yellow-700 (bronze/earth tone)
+  "ark-of-the-covenant": "#ca8a04", // yellow-600 (golden sacred object)
   "artifacts-and-fiction": "#92400e", // amber-800 (ancient/archaeological)
   "bible-heroes": "#60a5fa", // blue-400 (heroic/noble)
   "bible-vs-bible": "#0891b2", // cyan-600 (scholarly comparison)
@@ -120,6 +125,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "ex-eventu": "#6366f1", // indigo-500 (scholarly/prophecy)
   "getting-angelic": "#fbbf24", // amber-400 (golden/heavenly)
   "getting-demonic": "#b91c1c", // red-700 (dark red)
+  grail: "#eab308", // yellow-500 (legendary golden relic)
   "here-we-go": "#f97316", // orange-500 (energetic/exclamatory)
   "historys-heresies": "#dc2626", // red-600 (fiery/condemned)
   "historys-mysteries": "#818cf8", // indigo-400 (mysterious/historical)
@@ -229,6 +235,11 @@ export const SEGMENT_PATTERNS: Record<
     /welcome to.*archaeology of israel/i,
     /Let's look at archaeology of Israel\./i,
   ],
+  "ark-of-the-covenant": [
+    /the ark of the covenant/i,
+    /welcome to.*the ark of the covenant/i,
+    /let'?s do.*the ark of the covenant/i,
+  ],
   "artifacts-and-fiction": [
     /artifacts and fiction/i,
     /welcome to.*artifacts and fiction/i,
@@ -299,6 +310,11 @@ export const SEGMENT_PATTERNS: Record<
   "by-the-numbers": [/by the numbers/i, /welcome to.*by the numbers/i],
   "getting-angelic": [/getting angelic/i, /welcome to.*getting angelic/i],
   "getting-demonic": [/getting demonic/i, /welcome to.*getting demonic/i],
+  grail: [
+    /the grail/i,
+    /welcome to.*the grail/i,
+    /let'?s do.*the grail/i,
+  ],
   "here-we-go": [
     /here we go!?/i,
     /welcome to.*here we go/i,
@@ -363,6 +379,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Examining and discussing visual content like charts, maps, or images",
   "archaeology-of-israel":
     "Archaeological findings and discoveries related to ancient Israel",
+  "ark-of-the-covenant":
+    "Discussion of the Ark of the Covenant as object, tradition, symbol, or artifact, including its history, meaning, and legends",
   "artifacts-and-fiction":
     "Examining archaeological artifacts that appear in fictional or legendary narratives, distinguishing between historical evidence and storytelling",
   "bible-heroes":
@@ -389,6 +407,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Exploring angels, heavenly beings, and divine messengers in scripture",
   "getting-demonic":
     "Exploring demons, evil spirits, and malevolent beings in scripture",
+  grail:
+    "Discussion of the Grail as relic, legend, literary tradition, or symbol, including holy grail narratives and interpretations",
   "here-we-go":
     "An energetic kick-off segment diving into a topic or discussion with enthusiasm",
   "historys-heresies":

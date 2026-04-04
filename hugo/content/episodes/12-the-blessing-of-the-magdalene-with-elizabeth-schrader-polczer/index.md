@@ -42,6 +42,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:02.400] Elizabeth Schrader Polczer: So, you know, oftentimes people will hold up the Bible and say, the Bible is clear, or the Bible says this. And people who do that are not always thinking about where the Bible comes from. I think on some level they do know that it comes from manuscripts, and they probably know that there are thousands of manuscripts. But what they might not know is not every single manuscript was exactly alike. And finding the ones that are closer to the source, oftentimes those are the oldest manuscripts, even the best manuscripts. And in fact, several text critics have pointed out that the further back you go, the more variation you get, which is not what you would expect if there was this word of God that was carefully preserved. You would expect that, like, oh, down the line, some people snuck some things in. But if you go to the very beginnings, you see a lot of textual variation.{{< /line >}}
 {{< line >}}[00:01:00.620] Dan McClellan: Hey, everybody. Welcome to the Data Over Dogma podcast, where we try to increase the public's access to the academic study of the Bible and religion and confront the spread of misinformation about the same. I am very excited today to have Dr. Elizabeth Schrader Polczer with us. How are you doing today, Elizabeth?{{< /line >}}
 {{< line >}}[00:01:19.719] Elizabeth Schrader Polczer: I'm doing great. It's a beautiful day here.{{< /line >}}

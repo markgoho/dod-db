@@ -53,6 +53,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan Beecher: I don't know if you know this. No interpretation is required with the Bible. Oh man. I've heard it said many times that it just says what it says and you don't interpret it. Not what McClellan tends to say. But he's not here, so I can say what it says.{{< /line >}}
 {{< line >}}[00:00:16.800] Aaron Higashi: You can say.{{< /line >}}
 {{< line >}}[00:00:17.840] Dan Beecher: It's my show. Hey, everybody. You're listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and combat the spread of misinformation about the same. I'm Dan Beecher and there is no Dan McClellan today. In his stead, we've brought in someone possibly better. It's Aaron Higashi. You've been on the show a bunch of times. Hi, Aaron. How are you doing today?{{< /line >}}

@@ -16,6 +16,7 @@ tags:
   - Dead Sea Scrolls
   - Jerusalem
   - John
+  - Aristobulus
   - Egypt
   - Torah
   - apocalypse
@@ -47,6 +48,7 @@ segmentData:
     startSeconds: 2039.967
 draft: false
 ---
+
 
 {{< line >}}[00:00:01.120] Dan McClellan: This is one of the imprisonments of Paul.{{< /line >}}
 {{< line >}}[00:00:03.040] Dan Beecher: He's a career criminal is what he is.{{< /line >}}

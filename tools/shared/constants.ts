@@ -18,4 +18,5 @@ export const CATEGORY_LABELS: Record<TagCategory, string> = {
   scholarship: "Scholarship",
   religion: "Religion",
   event: "Event",
+  miscellaneous: "Miscellaneous",
 };
