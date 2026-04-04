@@ -53,6 +53,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:02.400] Dan McClellan: Lilith and Adam are in the garden, and Lilith gets upset because she wants to. And the text says, be on top. And some people try to interpret this figuratively as an authority question. I think it is far more likely that this is a reference to sexual positions, that Lilith wants to be on top. And Adam says, you are not fit to be on top. I am the only one who is fit to be on top. And this would align with the long notion that the only sexual position appropriate for a man is the dominant one, and the only sexual position appropriate for a woman is the submissive one. And so for a woman to be on top throws a wrench into the social hierarchy. And dogs and cats running wild. It's pandemonium. I'm forgetting the Ghostbusters mass hysteria. Mass hysteria, yeah. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:01:02.140] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:01:03.740] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we try to increase the public's access to the academic study of the Bible and religion and combat the spread of misinformation. About the same. How are you doing today, Dan?{{< /line >}}

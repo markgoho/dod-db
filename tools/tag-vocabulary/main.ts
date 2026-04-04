@@ -288,6 +288,7 @@ async function loadCategories(): Promise<void> {
       "theology",
       "scholarship",
       "religion",
+      "event",
     ];
     renderCategoryTabs();
     populateCategorySelects();

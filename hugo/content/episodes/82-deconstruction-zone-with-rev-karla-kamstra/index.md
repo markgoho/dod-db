@@ -16,6 +16,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Rev Karla Kamstra: To come to that realization, like we were telling on each other. It's only out of Christian love that I'm going to tell you this, Sister Karla. Well, and you know, I let the pastors know about this. This was just brutal.{{< /line >}}
 {{< line >}}[00:00:16.160] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:00:20.720] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}

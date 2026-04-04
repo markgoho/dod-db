@@ -36,6 +36,7 @@ export async function transcribeAudio(audioFilePath: string): Promise<string> {
   const parameters: TranscribeParams = {
     audio: audioUrl,
     speaker_labels: true,
+    speech_models: ["universal-3-pro", "universal-2"],
   };
   const transcript = await client.transcripts.transcribe(parameters);
 

@@ -53,6 +53,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: Ezekiel is like, "I can fix it. I'm gonna give God wheels. We're gonna mobilize the throne so that God can just go crashing out of the temple and vroom, go." Yeah, God's like, "Where we're going, we don't need roads." Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:21.320] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:22.560] Dan McClellan: And you're listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and we combat that ever-present spread of misinformation about the same. How are things today, Dan?{{< /line >}}

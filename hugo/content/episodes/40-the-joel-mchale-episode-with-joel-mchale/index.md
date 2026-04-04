@@ -42,6 +42,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: It's gotta be demoralizing for his other prophets for him to be like, you all suck. I'm gonna go visit an illegal necromancer to find my dead prophet.{{< /line >}}
 {{< line >}}[00:00:09.880] Dan Beecher: Yeah, exactly.{{< /line >}}
 {{< line >}}[00:00:15.200] Dan McClellan: Hey, everybody. I'm Dan McClellan.{{< /line >}}

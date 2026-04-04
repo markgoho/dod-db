@@ -46,6 +46,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.360] Dan Beecher: So what you're saying is, if a disciple shows up in your room, don't get medical attention, just believe whatever he says.{{< /line >}}
 {{< line >}}[00:00:09.120] Aaron Adair: I think you should at least get out some milk and cookies. He's at least 2000 years old at this point. Arthritis is through the roof. Get him some help.{{< /line >}}
 {{< line >}}[00:00:16.400] Dan Beecher: Yeah.{{< /line >}}

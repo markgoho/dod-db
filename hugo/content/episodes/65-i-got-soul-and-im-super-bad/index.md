@@ -34,6 +34,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.040] Dan McClellan: They are literally taking these pillowcases and like, and you know, oh, I got your soul. And then God is like, you naughty little minxes. I'm gonna grab those pillowcases and I'm gonna open them up and the souls are gonna be able to get back out. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:21.640] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:22.960] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat that pernicious spread of misinformation about the same. How are things, Dan?{{< /line >}}

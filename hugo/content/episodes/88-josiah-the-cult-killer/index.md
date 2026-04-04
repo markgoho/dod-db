@@ -50,6 +50,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: Hezekiah was able to defend Jerusalem and after a while, Sennacherib up and left and later wrote that he trapped Hezekiah in his capital city like a bird in a cage, but ultimately couldn't, couldn't—{{< /line >}}
 {{< line >}}[00:00:13.800] Dan Beecher: Take the city, couldn't get at the bird, but man, he was trapped there.{{< /line >}}
 {{< line >}}[00:00:17.760] Dan McClellan: Yeah, he rattled the cage a bit and got upset and was like, I'm—{{< /line >}}

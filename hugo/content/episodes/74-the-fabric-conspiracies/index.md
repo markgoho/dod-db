@@ -43,6 +43,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: Now get this. The energy of these two fabrics put together—wool sweater on top of a linen outfit—collapsed the electrical field as well as wearing of black colored fabric.{{< /line >}}
 {{< line >}}[00:00:15.120] Dan Beecher: Wow.{{< /line >}}
 {{< line >}}[00:00:16.240] Dan McClellan: Yeah.{{< /line >}}

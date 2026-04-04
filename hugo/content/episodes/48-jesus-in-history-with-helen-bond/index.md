@@ -51,6 +51,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Helen Bond: The author sort of keeps the, the beginning and the end of something and sort of loses the bit in the middle. And you can sort of see the way he works with his source material.{{< /line >}}
 {{< line >}}[00:00:11.400] Dan McClellan: There and just it reads the introduction and the conclusion.{{< /line >}}
 {{< line >}}[00:00:16.000] Helen Bond: Oh, I can't be bothered with that bit in the middle.{{< /line >}}

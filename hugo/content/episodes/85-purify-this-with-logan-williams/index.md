@@ -40,6 +40,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Logan Williams: So I find two examples where there's something going on which there isn't a name for, but I give it a label and I call it the nominative absolute circumstantial participle.{{< /line >}}
 {{< line >}}[00:00:14.160] Dan Beecher: All right, fine, fine. If we're gonna go there, let's go there.{{< /line >}}
 {{< line >}}[00:00:18.000] Dan McClellan: No, you need to do what the 19th-century Germans did and just name it after yourself. The Logan Rule.{{< /line >}}

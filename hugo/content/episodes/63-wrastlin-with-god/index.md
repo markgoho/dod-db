@@ -48,6 +48,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:00.240] Dan Beecher: Hey there, YouTubers, it's Dan Beecher. We had some technical difficulties and this week's show will have no video, so sorry about that. But please join us and listen with your ears. And next week, you can see our bright shining faces once more. Thanks.{{< /line >}}
 {{< line >}}[00:00:20.560] Dan McClellan: So there's some tradition, evidently, anciently, where Israelites were like, "Nope, can't eat that part."{{< /line >}}
 {{< line >}}[00:00:25.640] Dan Beecher: Wait, was this by the hip? Get out of. Get this out of here.{{< /line >}}

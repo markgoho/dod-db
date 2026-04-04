@@ -64,6 +64,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:00.960] Dan Beecher: They hear God tromping around in the garden and they hide from him and they kind of sheepishly go, we're not here. Come back another time.{{< /line >}}
 {{< line >}}[00:00:12.000] Dan McClellan: Dave's not here, man. Hey, everybody.{{< /line >}}
 {{< line >}}[00:00:19.520] Dan Beecher: Hi, friends, and welcome to the Data Over Dogma podcast where we bring you.{{< /line >}}

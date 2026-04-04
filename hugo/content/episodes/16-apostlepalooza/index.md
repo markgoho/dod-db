@@ -47,6 +47,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:02.480] Dan McClellan: I've seen this claim. I don't know where it's coming from. I don't know if there's. If this has ever been argued by any scholars, but I've seen some folks try to argue that Thomas is Jesus's twin.{{< /line >}}
 {{< line >}}[00:00:12.400] Dan Beecher: Okay, well, that would change the nativity stories a lot. Yeah, I mean, now we have to hire Danny DeVito to play Didymus, have.{{< /line >}}
 {{< line >}}[00:00:25.040] Dan McClellan: Him say your back looks like a relief map of the Andes. Hey, everybody, I'm Dan McClellan.{{< /line >}}

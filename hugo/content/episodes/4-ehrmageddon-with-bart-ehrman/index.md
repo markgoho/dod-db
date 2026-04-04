@@ -49,6 +49,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.840] Dan Beecher: There are, there are many beasts spoken of in Revelation and blah, blah, blah. But what I was shocked by is how terrifying the angels were in, you know, just sort of to your point, like the good guys are horrifying in Revelation.{{< /line >}}
 {{< line >}}[00:00:21.600] Dan McClellan: Hey, everybody, this is Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:23.320] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

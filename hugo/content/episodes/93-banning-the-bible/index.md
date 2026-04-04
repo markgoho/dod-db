@@ -48,6 +48,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.040] Dan McClellan: Eglon came immediately to mind. You want to talk about violence, that's where the dude goes in. He's a large man, he's fat. And he gets stabbed all the way to the hilt so that the dirt came out. I remember the first time I read that, I was like, that is awesome. Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:24.720] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:26.080] Dan McClellan: And you're listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation about the Bible. How are things today, Dan?{{< /line >}}

@@ -47,6 +47,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: They're doing that with AI now. I know they're using a lot of the Gen Z slang and everything, so I think it's so funny when they've got Moses, he's like, "The sea has been split." And people are like... and he's like, "I told y'all, trust the process." And I was like, oh my gosh.{{< /line >}}
 {{< line >}}[00:00:19.680] Dan Beecher: Jesus has mad TikTok rizz, y'all.{{< /line >}}
 {{< line >}}[00:00:22.160] Dan McClellan: We are in the dumbest timeline. Hey everybody, I'm Dan McClellan.{{< /line >}}

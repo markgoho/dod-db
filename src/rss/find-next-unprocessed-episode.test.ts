@@ -1,0 +1,125 @@
+import { describe, expect, test } from "bun:test";
+import { rankCandidates } from "./find-next-unprocessed-episode.js";
+
+describe("rankCandidates", () => {
+  test("ranks exact normalized title matches ahead of weaker substring matches", () => {
+    const item = {
+      title: "Jezebel!",
+      pubDate: "Sun, 10 Aug 2025 16:16:07 GMT",
+      guid: "136166014",
+    };
+
+    const candidates = rankCandidates(item, [
+      { id: "audio123", title: "Jezebel! Audio Podcast" },
+      { id: "video123", title: "Jezebel!" },
+      { id: "other123", title: "Completely Different Episode" },
+    ]);
+
+    expect(candidates).toEqual([
+      {
+        id: "video123",
+        title: "Jezebel!",
+        url: "https://www.youtube.com/watch?v=video123",
+        score: 100,
+      },
+      {
+        id: "audio123",
+        title: "Jezebel! Audio Podcast",
+        url: "https://www.youtube.com/watch?v=audio123",
+        score: 80,
+      },
+    ]);
+  });
+
+  test("scores reverse substring matches below direct substring matches", () => {
+    const item = {
+      title: "Jezebel! Audio Podcast",
+      pubDate: "Sun, 10 Aug 2025 16:16:07 GMT",
+      guid: "136166014",
+    };
+
+    expect(
+      rankCandidates(item, [
+        { id: "video123", title: "Jezebel!" },
+        { id: "audio123", title: "Jezebel! Audio Podcast Full Episode" },
+      ]),
+    ).toEqual([
+      {
+        id: "audio123",
+        title: "Jezebel! Audio Podcast Full Episode",
+        url: "https://www.youtube.com/watch?v=audio123",
+        score: 80,
+      },
+      {
+        id: "video123",
+        title: "Jezebel!",
+        url: "https://www.youtube.com/watch?v=video123",
+        score: 60,
+      },
+    ]);
+  });
+
+  test("returns an empty list when nothing plausibly matches", () => {
+    const item = {
+      title: "Jezebel!",
+      pubDate: "Sun, 10 Aug 2025 16:16:07 GMT",
+      guid: "136166014",
+    };
+
+    expect(
+      rankCandidates(item, [
+        { id: "other123", title: "Another Episode Entirely" },
+      ]),
+    ).toEqual([]);
+  });
+
+  test("limits candidates to the top five and breaks ties alphabetically", () => {
+    const item = {
+      title: "Jezebel!",
+      pubDate: "Sun, 10 Aug 2025 16:16:07 GMT",
+      guid: "136166014",
+    };
+
+    expect(
+      rankCandidates(item, [
+        { id: "f", title: "Jezebel! F" },
+        { id: "d", title: "Jezebel! D" },
+        { id: "b", title: "Jezebel! B" },
+        { id: "e", title: "Jezebel! E" },
+        { id: "a", title: "Jezebel! A" },
+        { id: "c", title: "Jezebel! C" },
+      ]),
+    ).toEqual([
+      {
+        id: "a",
+        title: "Jezebel! A",
+        url: "https://www.youtube.com/watch?v=a",
+        score: 80,
+      },
+      {
+        id: "b",
+        title: "Jezebel! B",
+        url: "https://www.youtube.com/watch?v=b",
+        score: 80,
+      },
+      {
+        id: "c",
+        title: "Jezebel! C",
+        url: "https://www.youtube.com/watch?v=c",
+        score: 80,
+      },
+      {
+        id: "d",
+        title: "Jezebel! D",
+        url: "https://www.youtube.com/watch?v=d",
+        score: 80,
+      },
+      {
+        id: "e",
+        title: "Jezebel! E",
+        url: "https://www.youtube.com/watch?v=e",
+        score: 80,
+      },
+    ]);
+  });
+});

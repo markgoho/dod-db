@@ -59,6 +59,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.040] Dan McClellan: Jonah gets upset when they repent and are forgiven because Jonah was like, I knew you would do this to me.{{< /line >}}
 {{< line >}}[00:00:07.200] Dan Beecher: You're always doing this. You're always making me look bad in front of my friends.{{< /line >}}
 {{< line >}}[00:00:12.400] Dan McClellan: You're always forgiving people. Hey, everybody, I'm Dan McClellan.{{< /line >}}

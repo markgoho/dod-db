@@ -38,6 +38,7 @@ export type SegmentType =
   | "taking-issue"
   | "textual-healing"
   | "thats-history"
+  | "twisted-scripture"
   | "urban-legends"
   | "watch-your-language"
   | "what-does-that-mean"
@@ -85,6 +86,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "taking-issue": "Taking Issue",
   "textual-healing": "Textual Healing",
   "thats-history": "That's History",
+  "twisted-scripture": "Twisted Scripture",
   "urban-legends": "Urban Legends",
   "watch-your-language": "Watch Your Language",
   "what-does-that-mean": "What Does That Mean?",
@@ -135,6 +137,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "taking-issue": "#ea580c", // orange-600 (debate/critique)
   "textual-healing": "#0891b2", // cyan-600 (textual analysis/manuscripts)
   "thats-history": "#84cc16", // lime-500 (lime green)
+  "twisted-scripture": "#7c2d12", // orange-900 (distortion/misuse warning)
   "urban-legends": "#8b5cf6", // violet
   "watch-your-language": "#16a34a", // green-600 (scholarly/linguistic)
   "what-does-that-mean": "#f59e0b", // amber
@@ -259,6 +262,11 @@ export const SEGMENT_PATTERNS: Record<
     /segment.*textual healing/i,
   ],
   "thats-history": [/that'?s history/i, /welcome to.*that'?s history/i],
+  "twisted-scripture": [
+    /twisted scripture/i,
+    /welcome to.*twisted scripture/i,
+    /let'?s do.*twisted scripture/i,
+  ],
   "know-your-bible": [
     /know your bible/i,
     /welcome to.*know your bible/i,
@@ -409,6 +417,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
   "textual-healing":
     "Examining textual criticism, manuscript variants, and biblical text transmission",
   "thats-history": "Historical context and background for biblical events",
+  "twisted-scripture":
+    "Examining scripture that is distorted, decontextualized, or rhetorically misused in argumentation or teaching",
   "urban-legends": "Examining popular myths and misconceptions about the Bible",
   "watch-your-language":
     "Exploring biblical languages, linguistics, etymology, translation issues, and the importance of language in biblical scholarship",

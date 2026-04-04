@@ -43,6 +43,7 @@ books:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: Like in Egypt, you have all. You've got the God of bricks, you got the God of lovemaking, you got the God of beer.{{< /line >}}
 {{< line >}}[00:00:07.600] Dan Beecher: Those gods knew how to party.{{< /line >}}
 {{< line >}}[00:00:09.040] Dan McClellan: Yeah. You got your bricks, you got your beer, you got your lovemaking. And you've got a weekend.{{< /line >}}

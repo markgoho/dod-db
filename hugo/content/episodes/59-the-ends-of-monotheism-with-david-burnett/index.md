@@ -50,6 +50,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: There's some ambiguity. There is Paul saying, oh, yeah, these things that people call gods, but we know there's only one God. Is Paul saying that or is Paul saying, yeah, there are these gods all over the place, but as far as we're concerned, only one God matters to us.{{< /line >}}
 {{< line >}}[00:00:17.840] David Burnett: That is what he's saying.{{< /line >}}
 {{< line >}}[00:00:23.040] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}

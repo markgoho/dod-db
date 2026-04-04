@@ -60,6 +60,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:02.000] Dan Beecher: As Lot and his family are fleeing and the Lord is raining down sulfur and fire on these other cities, Lot's wife turns around, she turns into a pillar of salt, and there's no explanation. I was so ready for the explanation. Dan, help me out. I do not. Why is she salt?{{< /line >}}
 {{< line >}}[00:00:26.320] Dan McClellan: Hey, everybody.{{< /line >}}
 {{< line >}}[00:00:27.920] Dan Beecher: Hi, friends, and welcome to the Data Over Dogma podcast, where we bring you.{{< /line >}}
