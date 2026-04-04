@@ -74,7 +74,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:02.320] Dan McClellan: In some of these other texts, like the Samaritan Pentateuch and some Dead Sea Scroll manuscripts, it's the angel of Adonai that is saying, "Balaam, hey, wake up." In, like, {{< scripture ref="Exodus 4:24" >}}. So this is where Adonai confronts Moses at the Motel 6 or whatever and says— Tries to kill him, and then his wife circumcises him and throws it at his feet and says, "Thou art a bloody husband unto me." In the Targumim and in the Septuagint, it's the angel that confronts Moses and tries to kill him. It's not Adonai himself. So this is something that was done quite commonly anciently. And so my argument here is that this is Adonai himself who is confronting Balaam.{{< /line >}}
 {{< line >}}[00:00:53.820] Dan Beecher: I don't think that that helps me understand the story more. No, no, it's more interesting.{{< /line >}}
 {{< line >}}[00:00:58.140] Dan McClellan: It just muddies the waters. Hey, everybody, I'm Dan McClellan.{{< /line >}}

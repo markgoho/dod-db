@@ -26,7 +26,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.280] Andrew Whitehead: Well, I think this is where, you know, our work around Christian nationalism actually is really helpful because I think really Trump just kind of pulled back the curtains of something that was always true, that it was about power. It was about getting the person of power who will give us access to power to make, you know, this world look like we hope it will, you know, as we interpret the Bible or think about, you know, the ways that it should look. And so I think that's. That's the difference.{{< /line >}}
 {{< line >}}[00:00:33.980] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:35.420] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

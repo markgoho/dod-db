@@ -41,7 +41,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.200] Dan McClellan: We've got a fever. And the only prescription is to sell everything that you own and give the money to the poor.{{< /line >}}
 {{< line >}}[00:00:07.120] Dan Beecher: Yeah, exactly.{{< /line >}}
 {{< line >}}[00:00:08.080] Dan McClellan: Cowbell. Hey, everybody, I'm Dan McClellan.{{< /line >}}

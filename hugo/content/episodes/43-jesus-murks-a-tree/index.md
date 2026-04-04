@@ -55,7 +55,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan McClellan: Out of methodological necessity. Critical scholarship cannot accept real prophecy, at least in my opinion. Which means that, no, if the text says there's this dude named Cyrus. That text was written after that dude named Cyrus was on the scene. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:21.400] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:22.720] Dan McClellan: And you are listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and combat the spread of that pernicious misinformation about the Bible. How go things, Dan?{{< /line >}}

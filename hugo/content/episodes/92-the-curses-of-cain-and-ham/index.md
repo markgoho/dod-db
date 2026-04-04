@@ -60,7 +60,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan McClellan: It still goes on today. There are plenty of folks today who try to find ways to read racism into the Bible. We're still struggling with trying to figure out how to not read the Bible with the goal of hurting other people. So the vindicatory approach to the Bible is still very much in vogue. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:25.970] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:27.170] Dan McClellan: And you're listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}

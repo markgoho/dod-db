@@ -33,7 +33,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Candida Moss: I don't think anyone is well served by pretending that Christianity isn't implicated in the history of slavery. There are texts within the New Testament that can be used and hopefully should be used for liberatory goals. But the fact of the matter is, if you read the Bible as happened during abolitionist debates, the pro-slavery group have it and you have to work really, really hard and ignore a lot of evidence to say that it's an anti-slavery text.{{< /line >}}
 {{< line >}}[00:00:37.420] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:39.100] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

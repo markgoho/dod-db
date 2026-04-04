@@ -44,7 +44,6 @@ books:
 draft: false
 ---
 
-
 {{< line >}}[00:00:02.160] Dan McClellan: In 1 Corinthians and in Thessalonians, we have this idea. It's better to be celibate, but if you can't hack celibacy, go ahead and get married. However, sex within marriage should be without passion, because that's for the dirty, dirty Gentiles. And it should be basically prophylactic. You only have enough sex to keep a lid on sexual desire. Not to say you must keep it at a level zero at all times, but to say whenever it starts bubbling up, you don't want it to boil over. And so sex is really prophylactic within Paul's sexual ethic, but he would prefer people just didn't have it.{{< /line >}}
 {{< line >}}[00:00:42.650] Dan Beecher: Consider me Team Dirty, Dirty Gentile on that one.{{< /line >}}
 {{< line >}}[00:00:46.250] Dan McClellan: But that's...{{< /line >}}

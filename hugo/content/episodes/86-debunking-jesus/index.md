@@ -51,7 +51,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan McClellan: The law of parsimony and Occam's razor just kind of tear to shreds all of the very complex convoluted structures that you have to build upon other structures upon other structures in order to make it all work. And it seems an awful lot more convenient to just say, there was a dude, he died. Tradition started circulating about him coming back to life, and then it took off from there. Like, that is a far simpler solution to the problem. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:36.930] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:38.090] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation about the Bible. How are things, Dan?{{< /line >}}

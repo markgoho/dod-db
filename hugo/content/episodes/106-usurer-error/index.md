@@ -44,7 +44,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.040] Dan McClellan: In {{< scripture ref="Ezekiel 18" >}}, he rattles off a list of bad folks, and the last thing on the list is takes advance or accrued interest.{{< /line >}}
 {{< line >}}[00:00:09.840] Dan Beecher: Wow.{{< /line >}}
 {{< line >}}[00:00:10.240] Dan McClellan: Shall he then live? He shall not. Hey, everybody, I'm Dan McClellan.{{< /line >}}

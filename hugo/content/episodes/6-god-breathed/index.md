@@ -60,7 +60,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.920] Dan Beecher: The concept of writing history wasn't exactly... There weren't rules laid out for people in ancient West Asia for how to do it appropriately and correctly.{{< /line >}}
 {{< line >}}[00:00:11.560] Dan McClellan: Yeah, yeah. There was no, you know, you weren't going to get an email if you said something from some authority who's going to come down on you. And you know your badge isn't going to work the next day when you try to badge in at the front door.{{< /line >}}
 {{< line >}}[00:00:29.760] Dan Beecher: Hey, friends, welcome to the Data Over Dogma podcast. I'm Dan Beecher.{{< /line >}}

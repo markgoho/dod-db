@@ -51,7 +51,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.040] Dan McClellan: Oh, but what if I want that kind of God? Oh, oh, yeah, yeah. That's who God is.{{< /line >}}
 {{< line >}}[00:00:04.080] Dan Beecher: Go ahead.{{< /line >}}
 {{< line >}}[00:00:04.600] Dan McClellan: Sure, sure.{{< /line >}}

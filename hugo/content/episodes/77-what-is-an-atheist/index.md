@@ -29,7 +29,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.680] Dan Beecher: I feel like what we've done is make everything worse for everybody. Like this whole episode is just about making everything worse.{{< /line >}}
 {{< line >}}[00:00:10.240] Dan McClellan: I will frequently say if I just come in and muddy the water and then run away, I've done my job. Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:22.960] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

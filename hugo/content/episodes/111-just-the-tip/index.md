@@ -49,7 +49,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan Beecher: You never know when God's gonna pop up and decide to kill you.{{< /line >}}
 {{< line >}}[00:00:04.960] Dan McClellan: That reframes a little bit the popular Latter-day Saint painting of Jesus in the middle of the night, knocking on the door.{{< /line >}}
 {{< line >}}[00:00:13.760] Dan Beecher: Hey, are all of your children's penises intact? Because I'm not down with that.{{< /line >}}

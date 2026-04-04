@@ -50,7 +50,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.520] Dan McClellan: If you hear people talking about these prophecies in Revelation, in Daniel, in Ezekiel, Gog and Magog are Russia and Iran. No, they're not. If you hear people talking about this to try to predict the future, they do not have the first clue what they're talking about, and none of what they're saying is accurate. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:27.890] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:29.010] Dan McClellan: And you're listening to the Data Over Dogma podcast, where we seek to increase public access to the academic study of the Bible and religion and combat the spread of misinformation. About the same. How are things, Dan?{{< /line >}}

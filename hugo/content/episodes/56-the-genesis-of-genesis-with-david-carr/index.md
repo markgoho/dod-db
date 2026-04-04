@@ -47,7 +47,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] David Carr: The Bible, when you get inside it more, turns out to be this complex, sometimes conflictual dialogue between different perspectives that are very opposed to each other. Many people, when they read the Bible, just presuppose, oh, I'm supposed to just agree with everything in it and just, you know, organize my whole life around it. But the Bible itself models a process of argument and wrestling and that sort of thing. That's how this text got put together.{{< /line >}}
 {{< line >}}[00:00:34.940] Dan McClellan: Hey, Everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:36.460] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

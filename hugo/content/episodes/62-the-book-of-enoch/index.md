@@ -62,7 +62,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan Beecher: If you feel inclined to start conspiracy theories based on this book, get on with your bad self. You're just giving Dan fodder for his TikToks.{{< /line >}}
 {{< line >}}[00:00:10.320] Dan McClellan: It's just job security at this point. That's right. That's right.{{< /line >}}
 {{< line >}}[00:00:13.360] Dan Beecher: You should. You should be embracing this, Dan. I don't know why you're fighting it.{{< /line >}}

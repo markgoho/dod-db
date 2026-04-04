@@ -47,7 +47,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.040] Dan McClellan: It's in the gospel, "He must increase while I must decrease." He kind of passes the baton.{{< /line >}}
 {{< line >}}[00:00:05.840] James McGrath: Yeah. And that's made, you know, so explicit in the Gospel of John that scholars, you know, historically skeptical scholars are like, "Yeah, right."{{< /line >}}
 {{< line >}}[00:00:15.360] Dan McClellan: How convenient. Hey, everybody, I'm Dan McClellan.{{< /line >}}

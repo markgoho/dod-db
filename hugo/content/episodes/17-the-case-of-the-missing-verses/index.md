@@ -53,7 +53,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:02.400] Dan Beecher: So this is the story where. Where Jesus says, let him who is without sin cast the first stone. Is that. Am I on the right story here?{{< /line >}}
 {{< line >}}[00:00:09.760] Dan McClellan: You are on the right story.{{< /line >}}
 {{< line >}}[00:00:11.200] Dan Beecher: That's one of the best stories in the book. You're telling me that that's not real? Oh, man, that's. That stays in my version.{{< /line >}}

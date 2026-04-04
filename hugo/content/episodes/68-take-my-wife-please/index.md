@@ -37,7 +37,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.200] Dan McClellan: It's no benefit to us if we kill our brother. Let's sell him. So Judah's already not looking good from a modern sensibilities point of view. But he's a dick is what he—to put it bluntly, yes, that is what Judah is. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:24.520] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:25.900] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}

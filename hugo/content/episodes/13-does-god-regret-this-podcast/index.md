@@ -56,7 +56,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:02.320] Dan Beecher: The question becomes, how could God regret or repent himself of something? And someone online has this answer to that.{{< /line >}}
 {{< line >}}[00:00:14.880] Dan McClellan: So the Hebrew word for regret is nacham, and it's difficult to translate into English. Well, I'm gonna have to say. All right, let's see it.{{< /line >}}
 {{< line >}}[00:00:23.520] Dan Beecher: Boom, baby. That's a golden phrase right there.{{< /line >}}

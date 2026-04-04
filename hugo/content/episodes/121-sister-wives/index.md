@@ -49,7 +49,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan Beecher: I would say that God was the master of mixed messaging. I'm gonna kill you if you don't let her go. I didn't do anything. I know because I stopped you.{{< /line >}}
 {{< line >}}[00:00:10.040] Dan McClellan: Yeah, a bit of a narcissist.{{< /line >}}
 {{< line >}}[00:00:11.600] Dan Beecher: Just keep stopping me then. I don't. What are you doing?{{< /line >}}

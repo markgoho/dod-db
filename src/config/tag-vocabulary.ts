@@ -4279,10 +4279,57 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     status: "accepted",
     addedInEpisode: 122,
-  },	{ canonical: 'Jezebel', variations: ['Jezebel\'s'], category: 'character', llmVerify: true, description: 'Phoenician princess who married King Ahab and promoted the worship of Baal and Asherah, portrayed negatively in the Hebrew Bible', status: 'accepted', addedInEpisode: 123 },
-	{ canonical: 'King Ahab', variations: ['Ahab'], category: 'character', description: 'King of Israel in the 9th century BCE, husband of Jezebel, criticized for allowing the worship of Baal', status: 'proposed', addedInEpisode: 123 },	{ canonical: 'Thyratira', variations: [], category: 'place', status: 'rejected', addedInEpisode: 123 },
-	{ canonical: 'Asa', variations: [], category: 'character', description: 'King of Judah, mentioned in 1 Kings, known for religious reforms.', status: 'proposed', addedInEpisode: 125 },
-	{ canonical: 'Jehoshaphat', variations: [], category: 'character', description: 'King of Judah, mentioned in 1 and 2 Kings.', status: 'proposed', addedInEpisode: 125 },	{ canonical: '151', variations: ['Psalm 151'], category: 'literature', status: 'rejected', addedInEpisode: 125 },
+  },
+  {
+    canonical: "Jezebel",
+    variations: ["Jezebel's"],
+    category: "character",
+    llmVerify: true,
+    description:
+      "Phoenician princess who married King Ahab and promoted the worship of Baal and Asherah, portrayed negatively in the Hebrew Bible",
+    status: "accepted",
+    addedInEpisode: 123,
+  },
+  {
+    canonical: "King Ahab",
+    variations: ["Ahab"],
+    category: "character",
+    description:
+      "King of Israel in the 9th century BCE, husband of Jezebel, criticized for allowing the worship of Baal",
+    status: "proposed",
+    addedInEpisode: 123,
+  },
+  {
+    canonical: "Thyratira",
+    variations: [],
+    category: "place",
+    status: "rejected",
+    addedInEpisode: 123,
+  },
+  {
+    canonical: "Asa",
+    variations: [],
+    category: "character",
+    description:
+      "King of Judah, mentioned in 1 Kings, known for religious reforms.",
+    status: "proposed",
+    addedInEpisode: 125,
+  },
+  {
+    canonical: "Jehoshaphat",
+    variations: [],
+    category: "character",
+    description: "King of Judah, mentioned in 1 and 2 Kings.",
+    status: "proposed",
+    addedInEpisode: 125,
+  },
+  {
+    canonical: "151",
+    variations: ["Psalm 151"],
+    category: "literature",
+    status: "rejected",
+    addedInEpisode: 125,
+  },
 ];
 
 /**

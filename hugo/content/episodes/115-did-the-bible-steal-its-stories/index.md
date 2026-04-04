@@ -54,7 +54,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.200] Dan McClellan: This seems like something that was just appropriated.{{< /line >}}
 {{< line >}}[00:00:03.840] Dan Beecher: Right.{{< /line >}}
 {{< line >}}[00:00:04.240] Dan McClellan: By the psalmist, the worshipers of Adonai, who were like, "I like the sound of that. Why don't you shove that in your bag real quick?"{{< /line >}}
