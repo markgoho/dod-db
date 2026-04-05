@@ -1,6 +1,6 @@
 /**
  * Print the next canonical RSS episode that has not been processed yet,
- * along with likely matching YouTube videos from the Data Over Dogma channel.
+ * along with its canonical enclosure audio URL.
  *
  * Usage:
  *   bun run src/scripts/next-unprocessed-episode.ts
@@ -16,7 +16,7 @@ async function main(): Promise<void> {
     return;
   }
 
-  const { rssItem, candidates, audioUrl, preferAudio } = result;
+  const { rssItem, audioUrl } = result;
 
   console.log(`Next unprocessed episode: ${rssItem.title}`);
   console.log(`Published: ${rssItem.pubDate}`);
@@ -26,27 +26,7 @@ async function main(): Promise<void> {
   }
 
   console.log(`GUID: ${rssItem.guid}`);
-
-  if (audioUrl) {
-    console.log(`Enclosure: ${audioUrl}`);
-  }
-
-  if (preferAudio && audioUrl) {
-    console.log("Recommendation: use canonical audio for site embedding");
-  }
-
-  if (candidates.length === 0) {
-    console.log("Likely YouTube matches: none found in recent channel videos");
-    console.log("RSS feed item:");
-    console.log(JSON.stringify(rssItem, undefined, 2));
-    return;
-  }
-
-  console.log("Likely YouTube matches:");
-  for (const [index, candidate] of candidates.entries()) {
-    console.log(`  ${index + 1}. [${candidate.videoType}] ${candidate.title}`);
-    console.log(`     ${candidate.url}`);
-  }
+  console.log(`Enclosure: ${audioUrl}`);
 }
 
 await main();

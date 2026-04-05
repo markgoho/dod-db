@@ -490,7 +490,7 @@ async function getAudioFilePath(videoId: string): Promise<string | null> {
   }
 
   if (video.audioUrl) {
-    const audioFiles = Array.from(new Bun.Glob("rss-*.mp3").scanSync(audioDir));
+    const audioFiles = [...new Bun.Glob("rss-*.mp3").scanSync(audioDir)];
     const matchingFile = audioFiles.find(fileName =>
       fileName.includes(filename.replace(/\.txt$/, "")),
     );

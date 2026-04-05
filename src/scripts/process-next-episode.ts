@@ -1,16 +1,12 @@
 /**
- * CLI script to process the next canonical episode.
- * Episodes 1-142 use the legacy YouTube-backed flow.
- * Episodes 143+ process directly from canonical RSS audio.
+ * CLI script to process the next canonical RSS episode from its enclosure audio.
  *
  * Usage:
- *   bun run src/scripts/process-next-episode.ts [youtube-url] [options]
- *   bun run src/scripts/process-next-episode.ts https://www.youtube.com/watch?v=833s6y6kW2k
+ *   bun run src/scripts/process-next-episode.ts [options]
  *   bun run src/scripts/process-next-episode.ts --rss-url=https://feeds.megaphone.fm/ARML8571494714
  */
 
 import { processRssEpisode } from "../pipeline/rss-audio-processor.js";
-import { processYouTubeVideo } from "../pipeline/youtube-processor.js";
 import { findNextUnprocessedEpisode } from "../rss/index.js";
 
 const arguments_ = process.argv.slice(2);
@@ -51,9 +47,7 @@ if (startFromIndex !== -1) {
 
 function printUsage(): void {
   console.error("Usage:");
-  console.error(
-    "  bun run src/scripts/process-next-episode.ts [youtube-url] [options]",
-  );
+  console.error("  bun run src/scripts/process-next-episode.ts [options]");
   console.error("");
   console.error("Options:");
   console.error(
@@ -67,14 +61,6 @@ function printUsage(): void {
   );
   console.error(
     "                       Supported stages: correct, segment-detection, extract-tags",
-  );
-}
-
-function isYouTubeInput(value: string): boolean {
-  return (
-    value.includes("youtube.com") ||
-    value.includes("youtu.be") ||
-    /^[\w-]{11}$/.test(value)
   );
 }
 
@@ -92,12 +78,21 @@ if (startFromIndex !== -1) {
   }
 }
 
-const videoUrl = arguments_.find(
+const unexpectedArguments = arguments_.filter(
   (argument, index) =>
     !consumedIndexes.has(index) &&
     !argument.startsWith("--") &&
-    isYouTubeInput(argument),
+    argument !== "--force",
 );
+
+if (unexpectedArguments.length > 0) {
+  console.error(
+    `Error: unexpected positional argument(s): ${unexpectedArguments.join(", ")}`,
+  );
+  console.error("");
+  printUsage();
+  process.exit(1);
+}
 
 try {
   const nextEpisode = await findNextUnprocessedEpisode(rssUrl);
@@ -113,60 +108,24 @@ try {
     console.log(`Episode number: ${episodeNumber}`);
   }
 
-  if (
-    nextEpisode.preferAudio ||
-    (episodeNumber !== undefined && episodeNumber >= 143)
-  ) {
-    const result = await processRssEpisode(nextEpisode.rssItem, {
-      force,
-      startFrom,
-    });
-
-    if (result.skipped) {
-      console.log("");
-      console.log("⊘ Episode already processed (use --force to reprocess)");
-      process.exit(0);
-    }
-
-    console.log("");
-    console.log("✓ Successfully processed episode");
-    console.log(`  Record ID: ${result.videoId}`);
-    console.log(`  Title: ${result.metadata.title}`);
-    console.log(`  Transcript: ${result.transcriptPath}`);
-    console.log("  Embed: canonical audio");
-    process.exit(0);
-  }
-
-  if (!videoUrl) {
-    console.error(
-      "Error: YouTube URL or video ID is required for episodes 1-142",
-    );
-    console.error("");
-    printUsage();
-    process.exit(1);
-  }
-
-  const audioUrl = nextEpisode.preferAudio ? nextEpisode.audioUrl : undefined;
-  const result = await processYouTubeVideo(videoUrl, {
+  const result = await processRssEpisode(nextEpisode.rssItem, {
     force,
     startFrom,
-    ...(audioUrl !== undefined && { audioUrl }),
   });
 
   if (result.skipped) {
     console.log("");
-    console.log("⊘ Video already processed (use --force to reprocess)");
+    console.log("⊘ Episode already processed (use --force to reprocess)");
     process.exit(0);
   }
 
   console.log("");
   console.log("✓ Successfully processed episode");
-  console.log(`  Video ID: ${result.videoId}`);
+  console.log(`  Record ID: ${result.videoId}`);
   console.log(`  Title: ${result.metadata.title}`);
   console.log(`  Transcript: ${result.transcriptPath}`);
-  if (audioUrl) {
-    console.log("  Embed: canonical audio");
-  }
+  console.log("  Embed: canonical audio");
+  process.exit(0);
 } catch (error) {
   console.error("");
   console.error("✗ Error processing episode:");

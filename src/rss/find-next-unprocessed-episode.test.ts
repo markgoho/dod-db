@@ -1,178 +1,138 @@
-import { describe, expect, test } from "bun:test";
-import {
-  rankCandidates,
-  shouldPreferAudio,
-} from "./find-next-unprocessed-episode.js";
+import { beforeEach, describe, expect, mock, test } from "bun:test";
+import type { ProcessedVideo } from "../storage/processed-videos.js";
 
-describe("rankCandidates", () => {
-  test("ranks exact normalized title matches ahead of weaker substring matches", () => {
-    const item = {
-      title: "Jezebel!",
-      pubDate: "Sun, 10 Aug 2025 16:16:07 GMT",
-      guid: "136166014",
-    };
+const fetchPodcastRssMock = mock(
+  async (_url: string | undefined): Promise<string | undefined> => undefined,
+);
+const loadProcessedVideosMock = mock(async (): Promise<ProcessedVideo[]> => []);
 
-    const candidates = rankCandidates(item, [
-      { id: "audio123", title: "Jezebel! Audio Podcast" },
-      { id: "video123", title: "Jezebel!" },
-      { id: "other123", title: "Completely Different Episode" },
-    ]);
+mock.module("../config/youtube.js", () => ({
+  youtubeConfig: {
+    canonicalRssUrl: "https://example.com/canonical.xml",
+  },
+}));
 
-    expect(candidates).toEqual([
-      {
-        id: "video123",
-        title: "Jezebel!",
-        url: "https://www.youtube.com/watch?v=video123",
-        score: 100,
-        videoType: "unknown",
-      },
-      {
-        id: "audio123",
-        title: "Jezebel! Audio Podcast",
-        url: "https://www.youtube.com/watch?v=audio123",
-        score: 80,
-        videoType: "unknown",
-      },
-    ]);
-  });
+mock.module("../storage/load-processed-videos.js", () => ({
+  loadProcessedVideos: loadProcessedVideosMock,
+}));
 
-  test("scores reverse substring matches below direct substring matches", () => {
-    const item = {
-      title: "Jezebel! Audio Podcast",
-      pubDate: "Sun, 10 Aug 2025 16:16:07 GMT",
-      guid: "136166014",
-    };
+mock.module("./fetch-patreon-rss.js", () => ({
+  fetchPodcastRss: fetchPodcastRssMock,
+}));
 
-    expect(
-      rankCandidates(item, [
-        { id: "video123", title: "Jezebel!" },
-        { id: "audio123", title: "Jezebel! Audio Podcast Full Episode" },
-      ]),
-    ).toEqual([
-      {
-        id: "audio123",
-        title: "Jezebel! Audio Podcast Full Episode",
-        url: "https://www.youtube.com/watch?v=audio123",
-        score: 80,
-        videoType: "unknown",
-      },
-      {
-        id: "video123",
-        title: "Jezebel!",
-        url: "https://www.youtube.com/watch?v=video123",
-        score: 60,
-        videoType: "unknown",
-      },
-    ]);
-  });
+const { findNextUnprocessedEpisode } =
+  await import("./find-next-unprocessed-episode.js");
 
-  test("returns an empty list when nothing plausibly matches", () => {
-    const item = {
-      title: "Jezebel!",
-      pubDate: "Sun, 10 Aug 2025 16:16:07 GMT",
-      guid: "136166014",
-    };
-
-    expect(
-      rankCandidates(item, [
-        { id: "other123", title: "Another Episode Entirely" },
-      ]),
-    ).toEqual([]);
-  });
-
-  test("limits candidates to the top five and breaks ties alphabetically", () => {
-    const item = {
-      title: "Jezebel!",
-      pubDate: "Sun, 10 Aug 2025 16:16:07 GMT",
-      guid: "136166014",
-    };
-
-    expect(
-      rankCandidates(item, [
-        { id: "f", title: "Jezebel! F" },
-        { id: "d", title: "Jezebel! D" },
-        { id: "b", title: "Jezebel! B" },
-        { id: "e", title: "Jezebel! E" },
-        { id: "a", title: "Jezebel! A" },
-        { id: "c", title: "Jezebel! C" },
-      ]),
-    ).toEqual([
-      {
-        id: "a",
-        title: "Jezebel! A",
-        url: "https://www.youtube.com/watch?v=a",
-        score: 80,
-        videoType: "unknown",
-      },
-      {
-        id: "b",
-        title: "Jezebel! B",
-        url: "https://www.youtube.com/watch?v=b",
-        score: 80,
-        videoType: "unknown",
-      },
-      {
-        id: "c",
-        title: "Jezebel! C",
-        url: "https://www.youtube.com/watch?v=c",
-        score: 80,
-        videoType: "unknown",
-      },
-      {
-        id: "d",
-        title: "Jezebel! D",
-        url: "https://www.youtube.com/watch?v=d",
-        score: 80,
-        videoType: "unknown",
-      },
-      {
-        id: "e",
-        title: "Jezebel! E",
-        url: "https://www.youtube.com/watch?v=e",
-        score: 80,
-        videoType: "unknown",
-      },
-    ]);
-  });
+beforeEach(() => {
+  fetchPodcastRssMock.mockClear();
+  loadProcessedVideosMock.mockClear();
 });
 
-describe("shouldPreferAudio", () => {
-  test("prefers audio when there are no candidates", () => {
-    expect(shouldPreferAudio([])).toBe(true);
+const baseVideo = {
+  processedAt: "2026-01-01T00:00:00Z",
+  transcriptPath: "data/transcripts/example.txt",
+} satisfies Pick<ProcessedVideo, "processedAt" | "transcriptPath">;
+
+describe("findNextUnprocessedEpisode", () => {
+  test("returns the oldest unmatched canonical item with its enclosure URL", async () => {
+    fetchPodcastRssMock.mockImplementation(
+      async () => `<?xml version="1.0"?>
+      <rss>
+        <channel>
+          <item>
+            <title>Episode 144 After Party</title>
+            <pubDate>Sun, 04 Jan 2026 18:00:00 GMT</pubDate>
+            <guid>144-ap</guid>
+            <enclosure url="https://cdn.example.com/144-ap.mp3" />
+          </item>
+          <item>
+            <title>Bring Me the Head of John the Baptist!</title>
+            <pubDate>Sun, 04 Jan 2026 17:50:53 GMT</pubDate>
+            <guid>147400629</guid>
+            <itunes:episode>144</itunes:episode>
+            <enclosure url="https://cdn.example.com/144.mp3" />
+          </item>
+          <item>
+            <title>Shiny Happy People!</title>
+            <pubDate>Sun, 28 Dec 2025 17:50:53 GMT</pubDate>
+            <guid>143-guid</guid>
+            <itunes:episode>143</itunes:episode>
+            <enclosure url="https://cdn.example.com/143.mp3" />
+          </item>
+        </channel>
+      </rss>`,
+    );
+    loadProcessedVideosMock.mockImplementation(async () => [
+      {
+        ...baseVideo,
+        videoId: "processed-143",
+        title: "Shiny Happy People!",
+        publishedAt: "2025-12-29T10:10:00.000Z",
+      },
+    ]);
+
+    const result = await findNextUnprocessedEpisode();
+
+    expect(fetchPodcastRssMock).toHaveBeenCalledWith(
+      "https://example.com/canonical.xml",
+    );
+    expect(result).toEqual({
+      rssItem: {
+        title: "Bring Me the Head of John the Baptist!",
+        pubDate: "Sun, 04 Jan 2026 17:50:53 GMT",
+        guid: "147400629",
+        itunesEpisode: 144,
+        enclosureUrl: "https://cdn.example.com/144.mp3",
+      },
+      audioUrl: "https://cdn.example.com/144.mp3",
+    });
   });
 
-  test("prefers audio when no candidate is classified as real video", () => {
-    expect(
-      shouldPreferAudio([
-        {
-          id: "audio1",
-          title: "Audio one",
-          url: "https://www.youtube.com/watch?v=audio1",
-          score: 80,
-          videoType: "audio-only",
-        },
-        {
-          id: "unknown1",
-          title: "Unknown one",
-          url: "https://www.youtube.com/watch?v=unknown1",
-          score: 60,
-          videoType: "unknown",
-        },
-      ]),
-    ).toBe(true);
+  test("returns undefined when all canonical items are already processed", async () => {
+    fetchPodcastRssMock.mockImplementation(
+      async () => `<?xml version="1.0"?>
+      <rss>
+        <channel>
+          <item>
+            <title>Shiny Happy People!</title>
+            <pubDate>Sun, 28 Dec 2025 17:50:53 GMT</pubDate>
+            <guid>143-guid</guid>
+            <itunes:episode>143</itunes:episode>
+            <enclosure url="https://cdn.example.com/143.mp3" />
+          </item>
+        </channel>
+      </rss>`,
+    );
+    loadProcessedVideosMock.mockImplementation(async () => [
+      {
+        ...baseVideo,
+        videoId: "processed-143",
+        title: "Shiny Happy People!",
+        publishedAt: "2025-12-29T10:10:00.000Z",
+      },
+    ]);
+
+    await expect(findNextUnprocessedEpisode()).resolves.toBeUndefined();
   });
 
-  test("does not prefer audio when a real video candidate exists", () => {
-    expect(
-      shouldPreferAudio([
-        {
-          id: "video1",
-          title: "Video one",
-          url: "https://www.youtube.com/watch?v=video1",
-          score: 100,
-          videoType: "video",
-        },
-      ]),
-    ).toBe(false);
+  test("throws when the next unmatched canonical item has no enclosure URL", async () => {
+    fetchPodcastRssMock.mockImplementation(
+      async () => `<?xml version="1.0"?>
+      <rss>
+        <channel>
+          <item>
+            <title>Bring Me the Head of John the Baptist!</title>
+            <pubDate>Sun, 04 Jan 2026 17:50:53 GMT</pubDate>
+            <guid>147400629</guid>
+            <itunes:episode>144</itunes:episode>
+          </item>
+        </channel>
+      </rss>`,
+    );
+    loadProcessedVideosMock.mockImplementation(async () => []);
+
+    await expect(findNextUnprocessedEpisode()).rejects.toThrow(
+      "Next unprocessed RSS episode is missing enclosure URL: Bring Me the Head of John the Baptist!",
+    );
   });
 });
