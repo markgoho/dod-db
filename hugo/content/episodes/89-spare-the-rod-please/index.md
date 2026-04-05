@@ -36,6 +36,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Dan McClellan: Once you build up this, this brittle foundation of it's all perfect and all true and all inspired, any problem with it just. Just brings the whole thing crumbling down. It is a house of cards and you just kind of have to ignore that you already have taken cards out and just hope that it stays together. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:27.300] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:28.500] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}

@@ -55,6 +55,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.440] Dan Beecher: The likeness of anything that creeps on the ground. The likeness of any fish that is in the water under the earth. Well, that couldn't be more clear. Thank you, Bible, for that.{{< /line >}}
 {{< line >}}[00:00:18.560] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:20.280] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

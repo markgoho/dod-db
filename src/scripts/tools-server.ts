@@ -813,10 +813,11 @@ const _server = Bun.serve({
         // If tag was proposed and is now being accepted, reprocess all episodes
         if (wasProposed && isBeingAccepted) {
           const canonical = body.canonical || originalCanonical;
+          const shouldSkipLlm = body.llmVerify !== true;
           const { jobId, completion } = await runMigrationWithTagTracking(
-            true,
+            shouldSkipLlm,
             canonical,
-          ); // skipLlm = true, track this tag
+          );
           void completion
             .then(async result => {
               if (result.episodeNumbers) {
@@ -876,10 +877,12 @@ const _server = Bun.serve({
         statsCache.data = null;
 
         // Trigger reprocessing for this tag across all episodes (like manual add does)
+        const updatedTag = findTag(canonical);
+        const shouldSkipLlm = updatedTag?.llmVerify !== true;
         const { jobId, completion } = await runMigrationWithTagTracking(
-          true,
+          shouldSkipLlm,
           canonical,
-        ); // skipLlm = true, track this tag
+        );
         void completion
           .then(async result => {
             if (result.episodeNumbers) {

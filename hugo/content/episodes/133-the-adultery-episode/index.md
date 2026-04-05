@@ -68,6 +68,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.075] Dan McClellan: Or I will remove the name of the Baals from her mouth. Well, the names, the names of the Baals.{{< /line >}}
 {{< line >}}[00:00:07.991] Dan Beecher: The names of the Baals.{{< /line >}}
 {{< line >}}[00:00:09.179] Dan McClellan: Yeah. Thunder and Lightning.{{< /line >}}

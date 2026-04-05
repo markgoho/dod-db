@@ -16,6 +16,7 @@ tags:
   - James
   - Irenaeus
   - Saint Titus
+  - Marcion
   - Galilee
   - Hebrews
   - Romans
@@ -36,6 +37,7 @@ books:
   - 2 Timothy
 draft: false
 ---
+
 
 {{< line >}}[00:00:01.120] Dan McClellan: The end of one chapter, you have Jesus say, all right, well, let's get out of here. And then the next chapter begins, and it's just Jesus sermonizing. It seems like some sermons were just inserted in there. And so. I don't know, man.{{< /line >}}
 {{< line >}}[00:00:14.320] Dan Beecher: You've never tried to leave a party with my wife. You can say, let's get out of here, and then have lots and lots of talking before you leave.{{< /line >}}

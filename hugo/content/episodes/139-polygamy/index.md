@@ -59,6 +59,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.057] Dan McClellan: Thus you should say to them, my little finger is thicker than my father's loins.{{< /line >}}
 {{< line >}}[00:00:06.508] Dan Beecher: I'm going to assume that means what I think it means.{{< /line >}}
 {{< line >}}[00:00:09.233] Dan McClellan: It does. He's holding up his pinky and going, this is bigger than my dad's Johnson. Hey everybody, I'm Dan McClellan.{{< /line >}}

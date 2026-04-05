@@ -51,6 +51,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.040] Dan McClellan: The walls of Jericho came tumbling down a number of times long before any historical Joshua could have existed. And that was because of battering rams and siege ramps and torches, and not because of the Ark of the Covenant, the blast of a ram's horn and everybody yelling really loud. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:24.320] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:25.840] Dan McClellan: And you are listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and we combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}

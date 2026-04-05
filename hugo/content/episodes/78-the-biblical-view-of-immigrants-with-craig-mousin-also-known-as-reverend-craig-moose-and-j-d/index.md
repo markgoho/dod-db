@@ -29,6 +29,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Cecil Cicirello: What about us sending weapons and arms and training people in other countries to... to terrorize their own citizens and then they... they flee those places and come here? We create a lot of problems in the world and then we close our doors when we don't want to see the problems that we created.{{< /line >}}
 {{< line >}}[00:00:16.680] Dan Beecher: I love that. We're proposing a... you broke it, you bought it.{{< /line >}}
 {{< line >}}[00:00:21.120] Craig Mousin: I like that on immigration.{{< /line >}}

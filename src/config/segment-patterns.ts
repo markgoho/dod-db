@@ -37,6 +37,7 @@ export type SegmentType =
   | "outro"
   | "segment"
   | "segment-no-2"
+  | "sorry-apologetics"
   | "taking-issue"
   | "terrible-parables"
   | "textual-healing"
@@ -89,6 +90,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "opportunities-for-growth": "Opportunities for Growth",
   segment: "Segment (Unknown)",
   "segment-no-2": "Segment No. 2",
+  "sorry-apologetics": "Sorry Apologetics",
   "taking-issue": "Taking Issue",
   "terrible-parables": "Terrible Parables",
   "textual-healing": "Textual Healing",
@@ -144,6 +146,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "opportunities-for-growth": "#2563eb", // blue-600 (learning/professional development)
   segment: "#9ca3af", // gray-400 (neutral/unknown)
   "segment-no-2": "#34d399", // emerald-400 (fresh/secondary)
+  "sorry-apologetics": "#ec4899", // pink-500 (playful/apologetics branding)
   "taking-issue": "#ea580c", // orange-600 (debate/critique)
   "terrible-parables": "#c2410c", // orange-700 (grim cautionary storytelling)
   "textual-healing": "#0891b2", // cyan-600 (textual analysis/manuscripts)
@@ -272,6 +275,11 @@ export const SEGMENT_PATTERNS: Record<
     /segment\s+no\.?\s*2/i,
     /welcome to.*segment\s+no\.?\s*2/i,
     /segment\s+number\s+2/i,
+  ],
+  "sorry-apologetics": [
+    /sorry apologetics/i,
+    /welcome to.*sorry apologetics/i,
+    /let'?s do.*sorry apologetics/i,
   ],
   "terrible-parables": [
     /terrible parables/i,
@@ -444,6 +452,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Revisiting previous positions, acknowledging mistakes, and discussing personal or scholarly growth",
   segment: "Unidentified segment type (placeholder)",
   "segment-no-2": "The second named segment of the episode",
+  "sorry-apologetics":
+    "Examining apologetic claims, arguments, or defenses with a skeptical or corrective lens",
   "taking-issue":
     "Critical analysis and debate of controversial biblical or theological topics",
   "terrible-parables":

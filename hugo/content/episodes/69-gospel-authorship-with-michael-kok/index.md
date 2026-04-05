@@ -10,6 +10,7 @@ tags:
   - Luke
   - Papias of Hierapolis
   - Peter
+  - Marcion
   - Paul
   - Irenaeus
   - YHWH
@@ -39,6 +40,7 @@ guests:
   - Michael Kok
 draft: false
 ---
+
 
 {{< line >}}[00:00:01.280] Michael Kok: When it comes to authorship, I know these debates get heated and apologetic versus anti-apologetic. I would just probably defend maybe three theses where I would say the Gospels are formally anonymous. The titles of the Gospel according to Matthew, Mark, Luke, or John are secondary, so they are added by scribes. And that we can kind of look at the traditions in the second century and kind of piece together why they ascribe them to those figures. And I think those Christians in the second century were answering questions in the second century, so they're more helpful for how did they receive the Gospels? And maybe not necessarily are they historically accurate to how the Gospels originated?{{< /line >}}
 {{< line >}}[00:00:49.820] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}

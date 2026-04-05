@@ -16,6 +16,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Neil Van Leeuwen: I was sort of vilified by the hardcore atheists as a religious apologist. Right.{{< /line >}}
 {{< line >}}[00:00:07.520] Dan McClellan: And when your book is called Religion as Make-Believe, I mean.{{< /line >}}
 {{< line >}}[00:00:11.840] Dan Beecher: Right.{{< /line >}}

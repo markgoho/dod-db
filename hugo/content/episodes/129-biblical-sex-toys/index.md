@@ -50,6 +50,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.058] Dan McClellan: His son Gideon was beating out wheat in the wine press, which is, you know, just what they called it.{{< /line >}}
 {{< line >}}[00:00:06.188] Dan Beecher: Don't, don't mix your grains and your grapes. We, we don't need to do that in the same place. There's plenty of room. Why are we doing that?{{< /line >}}
 {{< line >}}[00:00:14.044] Dan McClellan: You're not beating out your wheat there in the wine press again, are you, Gideon?{{< /line >}}

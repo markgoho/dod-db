@@ -21,12 +21,14 @@ describe("rankCandidates", () => {
         title: "Jezebel!",
         url: "https://www.youtube.com/watch?v=video123",
         score: 100,
+        videoType: "unknown",
       },
       {
         id: "audio123",
         title: "Jezebel! Audio Podcast",
         url: "https://www.youtube.com/watch?v=audio123",
         score: 80,
+        videoType: "unknown",
       },
     ]);
   });
@@ -49,12 +51,14 @@ describe("rankCandidates", () => {
         title: "Jezebel! Audio Podcast Full Episode",
         url: "https://www.youtube.com/watch?v=audio123",
         score: 80,
+        videoType: "unknown",
       },
       {
         id: "video123",
         title: "Jezebel!",
         url: "https://www.youtube.com/watch?v=video123",
         score: 60,
+        videoType: "unknown",
       },
     ]);
   });
@@ -95,30 +99,35 @@ describe("rankCandidates", () => {
         title: "Jezebel! A",
         url: "https://www.youtube.com/watch?v=a",
         score: 80,
+        videoType: "unknown",
       },
       {
         id: "b",
         title: "Jezebel! B",
         url: "https://www.youtube.com/watch?v=b",
         score: 80,
+        videoType: "unknown",
       },
       {
         id: "c",
         title: "Jezebel! C",
         url: "https://www.youtube.com/watch?v=c",
         score: 80,
+        videoType: "unknown",
       },
       {
         id: "d",
         title: "Jezebel! D",
         url: "https://www.youtube.com/watch?v=d",
         score: 80,
+        videoType: "unknown",
       },
       {
         id: "e",
         title: "Jezebel! E",
         url: "https://www.youtube.com/watch?v=e",
         score: 80,
+        videoType: "unknown",
       },
     ]);
   });

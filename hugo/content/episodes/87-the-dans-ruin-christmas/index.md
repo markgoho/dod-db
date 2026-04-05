@@ -48,6 +48,7 @@ books:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: I think it's just. It's just vibes, you know, we. So here it is, the Lamb of God. So you gotta have some shepherds come by and go, yep, that's the Lamb of God. Okay, well, there's your problem right there. You left him in the manger. Wait, you can take him out of the manger. Hey Everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:27.440] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:28.560] Dan McClellan: And you're listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and we combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}

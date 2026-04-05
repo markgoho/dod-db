@@ -55,6 +55,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.280] Dan McClellan: Saul was like, hey, love what you're doing down there. Keep up the good work.{{< /line >}}
 {{< line >}}[00:00:05.200] Dan Beecher: Love your work. Huge fan.{{< /line >}}
 {{< line >}}[00:00:08.080] Dan McClellan: But in the story it gets turned into David played the harp and soothed the savage beast.{{< /line >}}

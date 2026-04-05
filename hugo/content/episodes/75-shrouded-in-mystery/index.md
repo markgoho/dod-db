@@ -41,6 +41,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: I can imagine Egyptians being like, this is an unusual number of frogs.{{< /line >}}
 {{< line >}}[00:00:06.320] Dan Beecher: This feels excessive. This feels excessive.{{< /line >}}
 {{< line >}}[00:00:09.280] Dan McClellan: Did you leave the fridge open? Because we have...{{< /line >}}

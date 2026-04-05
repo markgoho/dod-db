@@ -50,6 +50,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:02.000] Francesca Stavrakopoulou: I think that's kind of like one of the common misconceptions is that goddesses were all about fertility. They weren't, they were about warfare as much as they were about nurturing.{{< /line >}}
 {{< line >}}[00:00:14.000] Dan Beecher: Well, Dan, we are very fortunate today to have a renowned guest on the show. Someone with whom you, Dan, are pretty familiar. Why don't you introduce our guest and tell our friends listening and viewing who she is and what she's all about?{{< /line >}}
 {{< line >}}[00:00:32.000] Dan McClellan: Of course. So today I'm very happy to have my former dissertation supervisor, Francesca Stavrakopoulou, professor of Hebrew Bible and Ancient Religion at Exeter University, former head of the Department of Theology and Religion, which is still the name on my doctoral dissertation. Welcome to the show, Francesca or Professor Stavrakopoulou. How has your day been? I hear it's a little hectic over there right now in the academic world.{{< /line >}}

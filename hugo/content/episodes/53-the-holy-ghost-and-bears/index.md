@@ -45,6 +45,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Dan Beecher: Here's the thing, if nothing else, bears. Bears can't kill 42 boys.{{< /line >}}
 {{< line >}}[00:00:07.200] Dan McClellan: Yeah. Unless they...{{< /line >}}
 {{< line >}}[00:00:08.640] Dan Beecher: You're gonna have a couple get away. Yeah, you're gonna have a couple get away.{{< /line >}}

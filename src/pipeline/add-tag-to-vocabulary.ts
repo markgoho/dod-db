@@ -12,6 +12,76 @@ import { isScriptureTag } from "../utils/is-scripture-tag.js";
 import { escapeForTsString } from "./escape-for-ts-string.js";
 import { tagExists } from "./tag-exists.js";
 
+function formatTagEntry(tag: TagDefinition): string {
+  const lines = [
+    "\t{",
+    `\t\tcanonical: '${escapeForTsString(tag.canonical)}',`,
+    `\t\tvariations: [${tag.variations.map(v => `'${escapeForTsString(v)}'`).join(", ")}],`,
+    `\t\tcategory: '${tag.category}',`,
+  ];
+
+  if ("llmVerify" in tag && tag.llmVerify) {
+    lines.push("\t\tllmVerify: true,");
+  }
+
+  if ("description" in tag && tag.description) {
+    lines.push(`\t\tdescription: '${escapeForTsString(tag.description)}',`);
+  }
+
+  lines.push(`\t\tstatus: '${tag.status}',`);
+
+  if (tag.caseSensitive) {
+    lines.push("\t\tcaseSensitive: true,");
+  }
+
+  if (tag.addedInEpisode !== undefined) {
+    lines.push(`\t\taddedInEpisode: ${tag.addedInEpisode},`);
+  }
+
+  if (tag.episodes && tag.episodes.length > 0) {
+    lines.push(`\t\tepisodes: [${tag.episodes.join(", ")}],`);
+  }
+
+  lines.push("\t},");
+  return `${lines.join("\n")}\n`;
+}
+
+function normalizeEpisodes(episodes?: number[]): number[] | undefined {
+  const normalized = episodes
+    ? [...new Set(episodes)].sort((a, b) => a - b)
+    : undefined;
+  return normalized && normalized.length > 0 ? normalized : undefined;
+}
+
+function buildTagDefinition(
+  parameters: AddTagParams,
+  status: TagStatus,
+): TagDefinition {
+  const baseTag = {
+    canonical: parameters.canonical,
+    variations: parameters.variations,
+    category: parameters.category,
+    status,
+    caseSensitive: parameters.caseSensitive,
+    addedInEpisode: parameters.addedInEpisode,
+    episodes: normalizeEpisodes(parameters.episodes),
+  };
+
+  if ("llmVerify" in parameters && parameters.llmVerify) {
+    return {
+      ...baseTag,
+      llmVerify: true,
+      description: parameters.description,
+    } as TagDefinition;
+  }
+
+  return parameters.description
+    ? { ...baseTag, description: parameters.description }
+    : (baseTag as TagDefinition);
+}
+
+export { buildTagDefinition, formatTagEntry, normalizeEpisodes };
+
 export type AddTagParams =
   | {
       canonical: string;
@@ -46,7 +116,7 @@ export type AddTagParams =
 export async function addTagToVocabulary(
   parameters: AddTagParams,
 ): Promise<void> {
-  const { canonical, variations, category } = parameters;
+  const { canonical } = parameters;
 
   // Block scripture references/books - handled by separate extraction
   if (isScriptureTag(canonical)) {
@@ -71,36 +141,9 @@ export async function addTagToVocabulary(
     throw new Error("Could not find closing bracket in tag-vocabulary.ts");
   }
 
-  // Format the new tag entry (with proper escaping)
-  const variationsString =
-    variations.length > 0
-      ? `[${variations.map(v => `'${escapeForTsString(v)}'`).join(", ")}]`
-      : "[]";
-
-  // Build entry based on options (llmVerify, caseSensitive, status, addedInEpisode, description)
   const status = parameters.status || "accepted";
-  const statusString = `, status: '${status}'`;
-  const caseSensitiveString = parameters.caseSensitive
-    ? ", caseSensitive: true"
-    : "";
-  const addedInEpisodeString = parameters.addedInEpisode
-    ? `, addedInEpisode: ${parameters.addedInEpisode}`
-    : "";
-  const descriptionString = parameters.description
-    ? `, description: '${escapeForTsString(parameters.description)}'`
-    : "";
-  const episodes = parameters.episodes
-    ? [...new Set(parameters.episodes)].sort((a, b) => a - b)
-    : undefined;
-  const episodesString =
-    episodes && episodes.length > 0
-      ? `, episodes: [${episodes.join(", ")}]`
-      : "";
-
-  const newEntry =
-    "llmVerify" in parameters && parameters.llmVerify
-      ? `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}', llmVerify: true, description: '${escapeForTsString(parameters.description)}'${statusString}${caseSensitiveString}${addedInEpisodeString}${episodesString} },\n`
-      : `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}'${descriptionString}${statusString}${caseSensitiveString}${addedInEpisodeString}${episodesString} },\n`;
+  const newTag = buildTagDefinition(parameters, status);
+  const newEntry = formatTagEntry(newTag);
 
   // Insert the new entry before the closing bracket
   const beforeClosing = content.slice(0, closingBracketIndex);
@@ -112,36 +155,7 @@ export async function addTagToVocabulary(
   await Bun.write(filePath, newContent);
 
   // Also update the in-memory vocabulary array so reprocessing can use it immediately
-  if ("llmVerify" in parameters && parameters.llmVerify) {
-    tagVocabulary.push({
-      canonical,
-      variations,
-      category,
-      llmVerify: true,
-      description: parameters.description,
-      status,
-      caseSensitive: parameters.caseSensitive,
-      addedInEpisode: parameters.addedInEpisode,
-      episodes,
-    } as TagDefinition);
-  } else {
-    // Build tag with description if provided
-    const baseTag = {
-      canonical,
-      variations,
-      category,
-      status,
-      caseSensitive: parameters.caseSensitive,
-      addedInEpisode: parameters.addedInEpisode,
-      episodes,
-    };
-
-    tagVocabulary.push(
-      parameters.description
-        ? { ...baseTag, description: parameters.description }
-        : baseTag,
-    );
-  }
+  tagVocabulary.push(newTag);
 
   const statusLabel = status === "proposed" ? " (proposed)" : "";
   console.log(`✓ Added tag "${canonical}" to vocabulary${statusLabel}`);

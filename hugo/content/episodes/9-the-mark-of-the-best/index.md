@@ -41,6 +41,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:02.160] Dan Beecher: The mark of the beast. Now, if you've read the book of Revelation, which I assume, Dan, that you...{{< /line >}}
 {{< line >}}[00:00:07.200] Dan McClellan: Have, a long, long, long time ago. Yeah.{{< /line >}}
 {{< line >}}[00:00:10.400] Dan Beecher: You have to admit that what happens in chapter 13 bears a striking resemblance to Gates putting cell phone enabled nanobots in our bloodstream.{{< /line >}}

@@ -35,6 +35,7 @@ books:
 draft: false
 ---
 
+
 {{< line >}}[00:00:00.320] Dan McClellan: There are a lot of folks who think the Bible is fully on one side or fully on the other. And I think we're gonna make things a little more complicated.{{< /line >}}
 {{< line >}}[00:00:08.880] Dan Beecher: Well, I mean, that's the thing. Right. The whole problem with these either-or propositions and the Bible is that it never takes a position. It's always a much more nuanced conversation.{{< /line >}}
 {{< line >}}[00:00:24.720] Dan McClellan: And that's for things that the Bible actually might even take an actual stance on; this issue, the Bible has no stance. The Bible has no stance.{{< /line >}}

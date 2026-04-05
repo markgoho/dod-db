@@ -57,6 +57,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.200] Dan Beecher: They place so much importance on the different languages and how much that just destroyed everything. I mean, it takes humanity from literally the precipice of godhood to. Oh, now you're all just screwed, huh? Sorry. You're all just dumb now.{{< /line >}}
 {{< line >}}[00:00:18.640] Dan McClellan: Now you're Bronze Age goat herders.{{< /line >}}
 {{< line >}}[00:00:20.280] Dan Beecher: Yeah. Suck it.{{< /line >}}

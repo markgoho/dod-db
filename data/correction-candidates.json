@@ -3620,7 +3620,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-14T01:56:41.407Z",
       "lastSeen": "2026-01-14T01:56:41.407Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-05T15:05:09.012Z",
+      "reviewedBy": "UI Review"
     },
     "Kumran→Qumran": {
       "original": "Kumran",
@@ -3934,7 +3936,9 @@
       "confidence": 20,
       "firstSeen": "2026-01-14T02:16:52.177Z",
       "lastSeen": "2026-01-14T02:16:52.177Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-05T15:05:10.043Z",
+      "reviewedBy": "UI Review"
     },
     "Boudre→Boudry": {
       "original": "Boudre",
@@ -4615,9 +4619,9 @@
       "original": "Nazarite",
       "corrected": "Nazirite",
       "category": "spelling",
-      "totalOccurrences": 7,
-      "episodeCount": 2,
-      "episodes": ["DnsTYWOw5r0", "XO3fcbF6Jyc"],
+      "totalOccurrences": 9,
+      "episodeCount": 3,
+      "episodes": ["DnsTYWOw5r0", "XO3fcbF6Jyc", "VEfI1TgWVHY"],
       "examples": [
         "\"being a Nazarite. Right. Someone\"",
         "\"of the Nazarite. Right. So\"",
@@ -4630,9 +4634,9 @@
       ],
       "timestamps": ["00:20:35.840", "00:22:25.590", "00:22:25.590"],
       "episodeIds": ["DnsTYWOw5r0", "DnsTYWOw5r0", "DnsTYWOw5r0"],
-      "confidence": 50,
+      "confidence": 70,
       "firstSeen": "2026-01-16T04:58:37.376Z",
-      "lastSeen": "2026-01-16T19:36:22.701Z",
+      "lastSeen": "2026-04-05T14:42:34.271Z",
       "status": "approved",
       "reviewedAt": "2026-01-17T03:05:31.275Z",
       "reviewedBy": "UI Review"
@@ -5150,9 +5154,9 @@
       "original": "alma",
       "corrected": "almah",
       "category": "spelling",
-      "totalOccurrences": 5,
-      "episodeCount": 1,
-      "episodes": ["ZwJai1EPbw4"],
+      "totalOccurrences": 7,
+      "episodeCount": 2,
+      "episodes": ["ZwJai1EPbw4", "VEfI1TgWVHY"],
       "examples": [
         "\"do have alma, which is\"",
         "\"And so alma is not\"",
@@ -5165,9 +5169,9 @@
       ],
       "timestamps": ["00:49:57.340", "00:49:57.340", "00:49:57.340"],
       "episodeIds": ["ZwJai1EPbw4", "ZwJai1EPbw4", "ZwJai1EPbw4"],
-      "confidence": 15,
+      "confidence": 40,
       "firstSeen": "2026-01-16T19:57:20.100Z",
-      "lastSeen": "2026-01-16T19:57:20.100Z",
+      "lastSeen": "2026-04-05T14:42:34.271Z",
       "status": "pending"
     },
     "Bell→Bel": {
@@ -5766,7 +5770,9 @@
       "confidence": 25,
       "firstSeen": "2026-01-18T16:52:18.677Z",
       "lastSeen": "2026-01-18T16:52:18.677Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-05T15:04:50.037Z",
+      "reviewedBy": "UI Review"
     },
     "Freak→Freke": {
       "original": "Freak",
@@ -5952,9 +5958,9 @@
       "original": "taking issue",
       "corrected": "Taking Issue",
       "category": "capitalization",
-      "totalOccurrences": 8,
-      "episodeCount": 3,
-      "episodes": ["t40eXH29l-8", "Zpp6qUqrins", "yviFHESG_HA"],
+      "totalOccurrences": 10,
+      "episodeCount": 4,
+      "episodes": ["t40eXH29l-8", "Zpp6qUqrins", "yviFHESG_HA", "VEfI1TgWVHY"],
       "examples": [
         "\"our segment taking issue. We're going\"",
         "\"dive into taking issue. So we're\"",
@@ -5967,9 +5973,9 @@
       ],
       "timestamps": ["00:01:23.960", "00:02:04.620", "00:02:10.940"],
       "episodeIds": ["t40eXH29l-8", "t40eXH29l-8", "Zpp6qUqrins"],
-      "confidence": 65,
+      "confidence": 85,
       "firstSeen": "2026-01-18T17:02:51.228Z",
-      "lastSeen": "2026-04-04T02:36:48.159Z",
+      "lastSeen": "2026-04-05T14:42:34.271Z",
       "status": "approved",
       "reviewedAt": "2026-04-03T01:40:37.949Z",
       "reviewedBy": "UI Review"
@@ -7445,7 +7451,9 @@
       "confidence": 25,
       "firstSeen": "2026-04-04T21:51:36.835Z",
       "lastSeen": "2026-04-04T21:51:36.835Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-05T15:05:00.480Z",
+      "reviewedBy": "UI Review"
     },
     "Humanity I→Humanity i": {
       "original": "Humanity I",
@@ -7606,7 +7614,9 @@
       "confidence": 25,
       "firstSeen": "2026-04-05T02:29:48.545Z",
       "lastSeen": "2026-04-05T02:29:48.545Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-05T15:05:02.481Z",
+      "reviewedBy": "UI Review"
     },
     "Protoevangelium→Protevangelium": {
       "original": "Protoevangelium",
@@ -7656,7 +7666,9 @@
       "confidence": 25,
       "firstSeen": "2026-04-05T03:01:04.250Z",
       "lastSeen": "2026-04-05T03:01:04.250Z",
-      "status": "pending"
+      "status": "rejected",
+      "reviewedAt": "2026-04-05T15:05:04.370Z",
+      "reviewedBy": "UI Review"
     },
     "Jerubal→Jerubbaal": {
       "original": "Jerubal",
@@ -7705,7 +7717,186 @@
       "status": "rejected",
       "reviewedAt": "2026-04-05T03:07:04.091Z",
       "reviewedBy": "UI Review"
+    },
+    "'Shall→Shall": {
+      "original": "'Shall",
+      "corrected": "Shall",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["VEfI1TgWVHY"],
+      "examples": [
+        "\"virgin. 'Right.' 'Shall call his\"",
+        "\"it says, 'Shall call his\"",
+        "\"doesn't say, 'Shall call him,'\""
+      ],
+      "correctedExamples": [
+        "\"virgin. \"Right.\" \"Shall call his\"",
+        "\"it says, \"Shall call his\"",
+        "\"doesn't say, \"Shall call him,\"\""
+      ],
+      "timestamps": ["00:08:50.723", "00:09:51.165", "00:09:51.165"],
+      "episodeIds": ["VEfI1TgWVHY", "VEfI1TgWVHY", "VEfI1TgWVHY"],
+      "confidence": 20,
+      "firstSeen": "2026-04-05T14:42:34.271Z",
+      "lastSeen": "2026-04-05T14:42:34.271Z",
+      "status": "pending"
+    },
+    "name'→name": {
+      "original": "name'",
+      "corrected": "name",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["VEfI1TgWVHY"],
+      "examples": ["\"call his name.' So the\"", "\"call his name,' even in\""],
+      "correctedExamples": [
+        "\"call his name.\" So the\"",
+        "\"call his name,\" even in\""
+      ],
+      "timestamps": ["00:08:50.723", "00:09:51.165"],
+      "episodeIds": ["VEfI1TgWVHY", "VEfI1TgWVHY"],
+      "confidence": 5,
+      "firstSeen": "2026-04-05T14:42:34.271Z",
+      "lastSeen": "2026-04-05T14:42:34.271Z",
+      "status": "pending"
+    },
+    "Emmanuel'→Emmanuel": {
+      "original": "Emmanuel'",
+      "corrected": "Emmanuel",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["VEfI1TgWVHY"],
+      "examples": [
+        "\"'his name Emmanuel.' It doesn't\"",
+        "\"yeah, 'the Emmanuel.' Shall refer\""
+      ],
+      "correctedExamples": [
+        "\"\"his name Emmanuel.\" It doesn't\"",
+        "\"yeah, \"the Emmanuel.\" Shall refer\""
+      ],
+      "timestamps": ["00:09:51.165", "00:09:51.165"],
+      "episodeIds": ["VEfI1TgWVHY", "VEfI1TgWVHY"],
+      "confidence": 15,
+      "firstSeen": "2026-04-05T14:42:34.271Z",
+      "lastSeen": "2026-04-05T14:42:34.271Z",
+      "status": "pending"
+    },
+    "Parthenos I→parthenos I": {
+      "original": "Parthenos I",
+      "corrected": "parthenos I",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["VEfI1TgWVHY"],
+      "examples": [
+        "\"Alma as Parthenos. I think that\"",
+        "\"it says Parthenos, I got to\""
+      ],
+      "correctedExamples": [
+        "\"almah as parthenos. I think that\"",
+        "\"it says parthenos, I got to\""
+      ],
+      "timestamps": ["00:16:27.697", "00:16:27.697"],
+      "episodeIds": ["VEfI1TgWVHY", "VEfI1TgWVHY"],
+      "confidence": 10,
+      "firstSeen": "2026-04-05T14:42:34.271Z",
+      "lastSeen": "2026-04-05T14:42:34.271Z",
+      "status": "pending"
+    },
+    "Rama→Ramah": {
+      "original": "Rama",
+      "corrected": "Ramah",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["VEfI1TgWVHY"],
+      "examples": [
+        "\"Bethlehem because Rama is not\"",
+        "\"of Jerusalem. Rama is like\""
+      ],
+      "correctedExamples": [
+        "\"Bethlehem because Ramah is not\"",
+        "\"of Jerusalem. Ramah is like\""
+      ],
+      "timestamps": ["00:28:27.165", "00:28:27.165"],
+      "episodeIds": ["VEfI1TgWVHY", "VEfI1TgWVHY"],
+      "confidence": 5,
+      "firstSeen": "2026-04-05T14:42:34.271Z",
+      "lastSeen": "2026-04-05T14:42:34.271Z",
+      "status": "pending"
+    },
+    "Clete→Clitae": {
+      "original": "Clete",
+      "corrected": "Clitae",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["VEfI1TgWVHY"],
+      "examples": [
+        "\"C-L-I-T-A-E. Clete? Yeah, something\"",
+        "\"Tacitus, the Clete, uh, were\""
+      ],
+      "correctedExamples": [
+        "\"C-L-I-T-A-E. Clitae? Yeah, something\"",
+        "\"Tacitus, the Clitae, uh, were\""
+      ],
+      "timestamps": ["00:59:31.163", "00:59:40.243"],
+      "episodeIds": ["VEfI1TgWVHY", "VEfI1TgWVHY"],
+      "confidence": 10,
+      "firstSeen": "2026-04-05T14:42:34.271Z",
+      "lastSeen": "2026-04-05T14:42:34.271Z",
+      "status": "pending"
+    },
+    "ideology→etiology": {
+      "original": "ideology",
+      "corrected": "etiology",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["d05D1TuJNHI"],
+      "examples": [
+        "\"a folk ideology for pair\"",
+        "\"a folk ideology. And the\"",
+        "\"a folk ideology, it doesn't\""
+      ],
+      "correctedExamples": [
+        "\"a folk etiology for pair\"",
+        "\"a folk etiology. And the\"",
+        "\"a folk etiology, it doesn't\""
+      ],
+      "timestamps": ["00:18:06.682", "00:18:06.682", "00:33:54.940"],
+      "episodeIds": ["d05D1TuJNHI", "d05D1TuJNHI", "d05D1TuJNHI"],
+      "confidence": 25,
+      "firstSeen": "2026-04-05T14:47:38.936Z",
+      "lastSeen": "2026-04-05T14:47:38.936Z",
+      "status": "rejected",
+      "reviewedAt": "2026-04-05T15:05:07.615Z",
+      "reviewedBy": "UI Review"
+    },
+    "die'→die": {
+      "original": "die'",
+      "corrected": "die",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["d05D1TuJNHI"],
+      "examples": [
+        "\"you shall die.' So another\"",
+        "\"you shall die.' God's warning\""
+      ],
+      "correctedExamples": [
+        "\"you shall die. So another\"",
+        "\"you shall die.\" God's warning\""
+      ],
+      "timestamps": ["00:24:01.181", "00:24:01.181"],
+      "episodeIds": ["d05D1TuJNHI", "d05D1TuJNHI"],
+      "confidence": 5,
+      "firstSeen": "2026-04-05T14:47:38.936Z",
+      "lastSeen": "2026-04-05T14:47:38.936Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-04-05T03:07:04.091Z"
+  "lastUpdated": "2026-04-05T15:05:10.043Z"
 }

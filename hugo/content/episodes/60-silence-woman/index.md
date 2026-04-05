@@ -43,6 +43,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.360] Dan Beecher: Friends, if you've been using some of these scriptures as sexist bludgeons, I say unto you, go and sin no more.{{< /line >}}
 {{< line >}}[00:00:12.400] Dan McClellan: I saw what you did there. I saw what you did. You brought it, brought it around.{{< /line >}}
 {{< line >}}[00:00:16.320] Dan Beecher: It's just a full circle sort of thing. I had that one in my back pocket right there.{{< /line >}}

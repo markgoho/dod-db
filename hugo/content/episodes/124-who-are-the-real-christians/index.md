@@ -63,6 +63,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.220] Dan McClellan: Angels can't rebel. They don't have their own agency. They can't do that. They're not sexually compatible. They're not made of flesh and bone.{{< /line >}}
 {{< line >}}[00:00:13.747] Dan Beecher: Never mind.{{< /line >}}
 {{< line >}}[00:00:14.968] Dan McClellan: So to speak. Yes. Hey everybody, I'm Dan McClellan.{{< /line >}}

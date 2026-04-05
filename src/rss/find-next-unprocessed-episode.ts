@@ -1,6 +1,7 @@
 import { youtubeConfig } from "../config/youtube.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { slugifyTitle } from "../hugo/slugify-title.js";
+import { fetchRawVideoMetadata } from "../pipeline/fetch-video-metadata.js";
 import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 import {
   fetchPatreonRss,
@@ -14,12 +15,17 @@ const CHANNEL_URL = "https://www.youtube.com/@DataOverDogma/videos";
 const RECENT_YOUTUBE_RESULTS = 40;
 const EXTENDED_YOUTUBE_RESULTS = 200;
 const MAX_CANDIDATES = 5;
+const STATIC_IMAGE_MAX_FPS = 6;
+const REAL_VIDEO_MIN_FPS = 15;
+
+export type YouTubeCandidateVideoType = "video" | "audio-only" | "unknown";
 
 export interface YouTubeCandidate {
   id: string;
   title: string;
   url: string;
   score: number;
+  videoType: YouTubeCandidateVideoType;
 }
 
 export interface NextUnprocessedEpisodeResult {
@@ -69,10 +75,57 @@ function rankCandidates(
       title: video.title,
       url: `https://www.youtube.com/watch?v=${video.id}`,
       score: scoreCandidate(item, video),
+      videoType: "unknown" as const,
     }))
     .filter(candidate => candidate.score > 0)
     .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title))
     .slice(0, MAX_CANDIDATES);
+}
+
+function classifyCandidateVideoType(
+  fps: number | undefined,
+  vcodec: string | undefined,
+): YouTubeCandidateVideoType {
+  if (vcodec === "none") {
+    return "audio-only";
+  }
+
+  if (typeof fps !== "number") {
+    return "unknown";
+  }
+
+  if (fps <= STATIC_IMAGE_MAX_FPS) {
+    return "audio-only";
+  }
+
+  if (fps >= REAL_VIDEO_MIN_FPS) {
+    return "video";
+  }
+
+  return "unknown";
+}
+
+async function enrichCandidatesWithVideoType(
+  candidates: YouTubeCandidate[],
+): Promise<YouTubeCandidate[]> {
+  const results = await Promise.allSettled(
+    candidates.map(async candidate => {
+      const metadata = await fetchRawVideoMetadata(candidate.id);
+
+      return {
+        ...candidate,
+        videoType: classifyCandidateVideoType(metadata.fps, metadata.vcodec),
+      };
+    }),
+  );
+
+  return results.map((result, index) => {
+    const candidate = candidates[index]!;
+
+    return result.status === "fulfilled"
+      ? result.value
+      : { ...candidate, videoType: "unknown" };
+  });
 }
 
 async function fetchLatestYouTubeVideos(
@@ -143,7 +196,9 @@ export async function findNextUnprocessedEpisode(): Promise<
     return undefined;
   }
 
-  const recentCandidates = rankCandidates(nextItem, recentYouTubeVideos);
+  const recentCandidates = await enrichCandidatesWithVideoType(
+    rankCandidates(nextItem, recentYouTubeVideos),
+  );
 
   if (recentCandidates.length > 0) {
     return {
@@ -158,7 +213,9 @@ export async function findNextUnprocessedEpisode(): Promise<
 
   return {
     rssItem: nextItem,
-    candidates: rankCandidates(nextItem, extendedYouTubeVideos),
+    candidates: await enrichCandidatesWithVideoType(
+      rankCandidates(nextItem, extendedYouTubeVideos),
+    ),
   };
 }
 

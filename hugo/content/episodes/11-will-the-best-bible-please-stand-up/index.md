@@ -64,6 +64,7 @@ books:
 draft: false
 ---
 
+
 {{< line >}}[00:00:02.160] Dan McClellan: And you can go visit the cave in Bethlehem where he spent 30 years translating his Vulgate. But this was a translation.{{< /line >}}
 {{< line >}}[00:00:11.760] Dan Beecher: There's dudes in their caves.{{< /line >}}
 {{< line >}}[00:00:13.840] Dan McClellan: Caves were a big deal back then.{{< /line >}}

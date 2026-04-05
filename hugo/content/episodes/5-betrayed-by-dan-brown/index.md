@@ -48,6 +48,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.840] Dan McClellan: There's one account that says things got so heated that this guy Nicholas slapped Arius in the face. And this is the famous St. Nicholas. So this is Santa Claus, who some people like to think of as him punching Arius.{{< /line >}}
 {{< line >}}[00:00:19.000] Dan Beecher: Oh, Santa, how far you've fallen.{{< /line >}}
 {{< line >}}[00:00:24.960] Dan McClellan: Hey, everybody.{{< /line >}}

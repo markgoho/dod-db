@@ -33,6 +33,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.040] Yii-Jan Lin: Thinking about us hurtling towards climate disaster. Right. Or the end of the economic world as we know it, the rise of populism. You know, is there a sense of like, well, it's foretold, you know, like a sense of teleology in which all these catastrophic, terrible things are just part of the plan. That really disturbs me to think that that kind of thinking can be entrenched and think, well, a new world is coming. Well, great, but what if it doesn't, you know, and, and this is what we're stuck with.{{< /line >}}
 {{< line >}}[00:00:32.230] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:33.990] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

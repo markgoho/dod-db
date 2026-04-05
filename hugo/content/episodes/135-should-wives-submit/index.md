@@ -47,6 +47,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.139] Dan McClellan: As conspiracy theories go, okay, you know, so no, definitely not, but like, okay.{{< /line >}}
 {{< line >}}[00:00:13.734] Dan Beecher: Hey everybody, I'm Dan McClellan, and I'm Dan Beecher, and you're listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion, and we combat the spread of misinformation about the same. How go things today, Dan?{{< /line >}}
 {{< line >}}[00:00:30.677] Dan McClellan: They go, uh, things, things, things are trucking along. I'm pretty excited about today's, uh, episode because A, we're gonna uphold the patriarchy, which we always love to do, and B, we're going to, uh, we're gonna get into some, some, uh, some, some space stuff. We're gonna get into some conspiracy theories. I hope everybody's got their tin hats. Yeah, ready to go. Their tin foil hats.{{< /line >}}

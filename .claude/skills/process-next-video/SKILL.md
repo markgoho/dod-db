@@ -42,6 +42,8 @@ Do not guess which YouTube match is correct.
 If likely matches are found:
 
 - show the episode title and candidate URLs clearly
+- include any `[video]`, `[audio-only]`, or `[unknown]` classification shown by the script
+- treat that classification as guidance only, not automatic selection
 - ask the user which candidate to use
 - allow the user to paste a different YouTube URL or bare video ID instead
 

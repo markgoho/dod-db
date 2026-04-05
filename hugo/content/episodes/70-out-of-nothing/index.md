@@ -60,6 +60,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.280] Dan McClellan: He says, sir, I have never seen Babylon and I know nothing about the den. Then the angel of the Lord took him by the crown of his head and carried him by his hair. So the angel was just like, no, stupid little. He's gonna be like, ow, ow, ow. Hey, everybody. I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:27.790] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:28.750] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of that pesky misinformation about the Bible. How are things today, Dan?{{< /line >}}

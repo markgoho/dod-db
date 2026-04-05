@@ -44,6 +44,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: It starts in {{< scripture ref="Deuteronomy 22:13" >}}. Suppose a man marries a woman but after going into her. And this is a euphemism for consummation, which is itself a euphemism for sexual intercourse.{{< /line >}}
 {{< line >}}[00:00:13.280] Dan Beecher: It's not much of a euphemism. It's pretty—it's pretty strange.{{< /line >}}
 {{< line >}}[00:00:16.119] Dan McClellan: It's pretty graphic. Yeah.{{< /line >}}

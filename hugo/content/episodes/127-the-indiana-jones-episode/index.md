@@ -49,6 +49,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.314] Dan McClellan: Did the Red Hulk ever lift Thor's hammer? And I guess he was—.{{< /line >}}
 {{< line >}}[00:00:06.667] Dan Beecher: Now we're crossing the streams. We're crossing the streams.{{< /line >}}
 {{< line >}}[00:00:09.312] Dan McClellan: And you know you can't cross streams. It's just— don't cross the streams. Hey everybody, I'm Dan McClellan.{{< /line >}}

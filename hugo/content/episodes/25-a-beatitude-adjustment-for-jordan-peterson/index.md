@@ -45,6 +45,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.280] Dan McClellan: This is a case of someone trying to leverage the authority of the Bible to give permission to their specific group of followers to be monsters, because he knows they want to be monsters and they want Jesus's blessing. And you don't have Jesus's blessing to be a monster. Hey, Everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:24.800] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:25.920] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we try to increase the public's access to the academic study of the Bible and religion and combat the spread of misinformation. About the same. And today we're going to be doing some of said combating, aren't we, Dan?{{< /line >}}

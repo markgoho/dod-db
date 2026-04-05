@@ -40,6 +40,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.154] Hugo Mendez: One thing I set out to do in this book was to really press the question: if John knows the Synoptics, which I argue he did, then why does he want to change them in the way that he does? What does he add to them that's different? Something new that I do is I put together a very different theological vision of the Gospel of John than I think has really existed in any other book that's out there right now on the market. Hey, everybody.{{< /line >}}
 {{< line >}}[00:00:32.000] Dan McClellan: Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:33.326] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

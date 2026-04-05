@@ -50,6 +50,7 @@ segmentData:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.120] Dan McClellan: This is one of the imprisonments of Paul.{{< /line >}}
 {{< line >}}[00:00:03.040] Dan Beecher: He's a career criminal is what he is.{{< /line >}}
 {{< line >}}[00:00:05.000] Dan McClellan: Yes. Yeah, I think there were 34 felonies that he was convicted of.{{< /line >}}

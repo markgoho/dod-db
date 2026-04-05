@@ -38,7 +38,7 @@ async function main(): Promise<void> {
 
   console.log("Likely YouTube matches:");
   for (const [index, candidate] of candidates.entries()) {
-    console.log(`  ${index + 1}. ${candidate.title}`);
+    console.log(`  ${index + 1}. [${candidate.videoType}] ${candidate.title}`);
     console.log(`     ${candidate.url}`);
   }
 }

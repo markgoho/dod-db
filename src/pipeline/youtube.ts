@@ -14,4 +14,6 @@ export interface VideoMetadata {
   publishedAt: string;
   channelTitle: string;
   chapters?: VideoChapter[];
+  fps?: number;
+  vcodec?: string;
 }

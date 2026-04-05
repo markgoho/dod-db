@@ -1,11 +1,18 @@
 import type { VideoChapter, VideoMetadata } from "./youtube.js";
 
-/**
- * Fetch video metadata using yt-dlp.
- */
-export async function fetchVideoMetadata(
+interface RawVideoMetadata {
+  title?: string;
+  description?: string;
+  upload_date?: string;
+  uploader?: string;
+  chapters?: { title: string; start_time: number }[];
+  fps?: number;
+  vcodec?: string;
+}
+
+export async function fetchRawVideoMetadata(
   videoId: string,
-): Promise<VideoMetadata> {
+): Promise<RawVideoMetadata> {
   const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
 
   const proc = Bun.spawn(["yt-dlp", videoUrl, "--dump-json", "--no-playlist"]);
@@ -17,11 +24,20 @@ export async function fetchVideoMetadata(
     throw new Error(`yt-dlp failed with exit code ${exitCode}`);
   }
 
-  const data = JSON.parse(metadata);
+  return JSON.parse(metadata) as RawVideoMetadata;
+}
+
+/**
+ * Fetch video metadata using yt-dlp.
+ */
+export async function fetchVideoMetadata(
+  videoId: string,
+): Promise<VideoMetadata> {
+  const data = await fetchRawVideoMetadata(videoId);
 
   // Extract chapters if available (YouTube uploader-defined chapters)
   const chapters: VideoChapter[] | undefined = data.chapters
-    ? data.chapters.map((chapter: { title: string; start_time: number }) => ({
+    ? data.chapters.map(chapter => ({
         title: chapter.title,
         startTime: chapter.start_time,
       }))
@@ -36,5 +52,7 @@ export async function fetchVideoMetadata(
       : new Date().toISOString(),
     channelTitle: data.uploader || "",
     ...(chapters !== undefined && { chapters }),
+    ...(typeof data.fps === "number" ? { fps: data.fps } : {}),
+    ...(typeof data.vcodec === "string" ? { vcodec: data.vcodec } : {}),
   };
 }

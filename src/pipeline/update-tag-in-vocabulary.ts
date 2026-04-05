@@ -1,11 +1,11 @@
-import type {
-  TagCategory,
-  TagDefinition,
-  TagStatus,
-} from "../config/tag-vocabulary.js";
+import type { TagCategory, TagStatus } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
 import { removeTagFromAllEpisodes } from "../utils/remove-tag-from-episodes.js";
-import { escapeForTsString } from "./escape-for-ts-string.js";
+import {
+  buildTagDefinition,
+  formatTagEntry,
+  normalizeEpisodes,
+} from "./add-tag-to-vocabulary.js";
 import { findTag } from "./find-tag.js";
 import { tagExists } from "./tag-exists.js";
 
@@ -87,29 +87,33 @@ export async function updateTagInVocabulary(
     updates.episodes ??
     ("episodes" in existingTag ? existingTag.episodes : undefined);
 
-  // Format the new entry (with proper escaping)
-  const variationsString =
-    newVariations.length > 0
-      ? `[${newVariations.map(v => `'${escapeForTsString(v)}'`).join(", ")}]`
-      : "[]";
-  const statusString = `, status: '${newStatus}'`;
-  const caseSensitiveString = newCaseSensitive ? ", caseSensitive: true" : "";
-  const addedInEpisodeString =
-    newAddedInEpisode === undefined
-      ? ""
-      : `, addedInEpisode: ${newAddedInEpisode}`;
-  const episodes = newEpisodes
-    ? [...new Set(newEpisodes)].sort((a, b) => a - b)
-    : undefined;
-  const episodesString =
-    episodes && episodes.length > 0
-      ? `, episodes: [${episodes.join(", ")}]`
-      : "";
-
-  const newEntry =
+  const episodes = normalizeEpisodes(newEpisodes);
+  const updatedTag = buildTagDefinition(
     newLlmVerify && newDescription
-      ? `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}', llmVerify: true, description: '${escapeForTsString(newDescription)}'${statusString}${caseSensitiveString}${addedInEpisodeString}${episodesString} },\n`
-      : `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}'${statusString}${caseSensitiveString}${addedInEpisodeString}${episodesString} },\n`;
+      ? {
+          canonical: newCanonical,
+          variations: newVariations,
+          category: newCategory,
+          llmVerify: true,
+          description: newDescription,
+          status: newStatus,
+          caseSensitive: newCaseSensitive,
+          addedInEpisode: newAddedInEpisode,
+          episodes,
+        }
+      : {
+          canonical: newCanonical,
+          variations: newVariations,
+          category: newCategory,
+          description: newDescription,
+          status: newStatus,
+          caseSensitive: newCaseSensitive,
+          addedInEpisode: newAddedInEpisode,
+          episodes,
+        },
+    newStatus,
+  );
+  const newEntry = formatTagEntry(updatedTag);
 
   // Replace the old entry with the new one
   const newContent = content.replace(tagRegex, newEntry);
@@ -122,32 +126,6 @@ export async function updateTagInVocabulary(
     t => t.canonical.toLowerCase() === originalCanonical.toLowerCase(),
   );
   if (index !== -1) {
-    const updatedTag: TagDefinition =
-      newLlmVerify && newDescription
-        ? {
-            canonical: newCanonical,
-            variations: newVariations,
-            category: newCategory,
-            llmVerify: true,
-            description: newDescription,
-            status: newStatus,
-            caseSensitive: newCaseSensitive,
-            ...(newAddedInEpisode !== undefined && {
-              addedInEpisode: newAddedInEpisode,
-            }),
-            ...(episodes !== undefined && { episodes }),
-          }
-        : {
-            canonical: newCanonical,
-            variations: newVariations,
-            category: newCategory,
-            status: newStatus,
-            caseSensitive: newCaseSensitive,
-            ...(newAddedInEpisode !== undefined && {
-              addedInEpisode: newAddedInEpisode,
-            }),
-            ...(episodes !== undefined && { episodes }),
-          };
     tagVocabulary[index] = updatedTag;
   }
 

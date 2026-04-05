@@ -42,6 +42,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:01.040] Matthew Thiessen: I'm going to give a really brief analogy. Someone recently on social media posted a picture of, you know, those little tacky plaques you can get at craft stores. And it said, "Be sure to lick the bowl." And it's sort of like, you know, really enjoy your food. Well, that's one thing when it's in the kitchen. This picture was taken right with it sitting on top of the toilet. So the message becomes a very different message, a much more odious message. Disgusting message. And I think that's not actually really... It's not bad for thinking about Paul and James. If we get their audiences wrong or we get the location wrong, we're going to misunderstand them.{{< /line >}}
 {{< line >}}[00:00:40.140] Dan McClellan: Hey, everybody, my name is Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:42.100] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

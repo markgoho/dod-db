@@ -23,6 +23,7 @@ tags:
   - Gospel of Thomas
   - Israel
   - James
+  - Marcion
   - Textus Receptus
   - Athanasius of Alexandria
   - Egypt
@@ -53,6 +54,7 @@ segmentData:
     startSeconds: 2003.472
 draft: false
 ---
+
 
 {{< line >}}[00:00:01.120] Dan McClellan: Screw dust covers.{{< /line >}}
 {{< line >}}[00:00:03.520] Dan Beecher: Says the man whose book is about to come out guaranteed with dust covers on it.{{< /line >}}

@@ -1009,7 +1009,6 @@ async function approveTag(index: number): Promise<void> {
   card.classList.add("saving");
 
   try {
-    // Build update body based on llmVerify
     const updateBody = {
       canonical: newCanonical,
       variations,
@@ -1017,7 +1016,7 @@ async function approveTag(index: number): Promise<void> {
       status: "accepted",
       llmVerify,
       caseSensitive,
-      description: llmVerify ? description : undefined,
+      description: description || undefined,
     };
 
     // First update the tag with any changes

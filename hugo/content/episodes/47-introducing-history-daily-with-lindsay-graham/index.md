@@ -14,6 +14,7 @@ guests:
 draft: false
 ---
 
+
 {{< line >}}[00:00:00.160] Dan McClellan: Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:01.640] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:03.280] Dan McClellan: And you're listening to the Data Over Dogma podcast.{{< /line >}}
