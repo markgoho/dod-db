@@ -16,6 +16,7 @@ tags:
   - Galilee
   - Hell
   - Judaism
+  - Sea of Galilee
   - Septuagint
   - Dead Sea Scrolls
   - Deuteronomy
@@ -43,7 +44,6 @@ segmentData:
     startSeconds: 3020.18
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.280] Dan McClellan: This is a case of someone trying to leverage the authority of the Bible to give permission to their specific group of followers to be monsters, because he knows they want to be monsters and they want Jesus's blessing. And you don't have Jesus's blessing to be a monster. Hey, Everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:24.800] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

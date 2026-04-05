@@ -15,6 +15,7 @@ tags:
   - Eve
   - King James Version
   - Romans
+  - Junia
   - Paul
   - Univocality
   - YHWH
@@ -48,7 +49,6 @@ segmentData:
     startSeconds: 1148.451
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.200] Dan McClellan: The scholarly consensus is that there was a story about a dude named Elhanan who killed this giant named Goliath. And suddenly there's a five-finger discount going on by whoever is responsible for the David history. And this just makes perfect sense of how his tradition developed over time. Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:25.360] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

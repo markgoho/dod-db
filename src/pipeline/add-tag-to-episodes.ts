@@ -24,6 +24,8 @@ export interface AddTagToEpisodesResult {
   failed: number;
   /** Video IDs of episodes where the tag was added/updated */
   updatedVideoIds: string[];
+  /** Episode numbers where the tag appears after processing */
+  episodeNumbers: number[];
 }
 
 /**
@@ -157,6 +159,20 @@ export async function addTagToEpisodes(
     console.log(""); // New line after progress dots
   }
 
+  const episodeNumbers = videos
+    .filter(
+      video =>
+        video.episodeNumber !== undefined &&
+        video.tags?.some(
+          tag => tag.tag.toLowerCase() === canonical.toLowerCase(),
+        ),
+    )
+    .map(video => video.episodeNumber)
+    .filter(
+      (episodeNumber): episodeNumber is number => episodeNumber !== undefined,
+    )
+    .sort((a, b) => a - b);
+
   console.log("\n\nSaving updated processed-videos.json...");
   await saveProcessedVideos(videos);
 
@@ -173,5 +189,6 @@ export async function addTagToEpisodes(
     totalMentions,
     failed,
     updatedVideoIds,
+    episodeNumbers,
   };
 }

@@ -26,7 +26,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:02.080] Aaron Higashi: And then that sort of got read back into biblical interpretation.{{< /line >}}
 {{< line >}}[00:00:04.760] Dan Beecher: We're going to get back to it. But I, I have to say you keep saying this as though you can interpret the Bible when obviously that, that can't be right. It's the perfect word of God. It's just devoid of all interpretation. Am I wrong? I thought that's how it's supposed to work here.{{< /line >}}
 {{< line >}}[00:00:20.560] Aaron Higashi: Some people think so. Some people. Some people absolutely hold that. And it's, that's often one of the biggest difficulties you encounter in trying to talk to people about the Bible.{{< /line >}}

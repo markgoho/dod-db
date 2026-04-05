@@ -28,6 +28,7 @@ tags:
   - King James Version
   - Moab
   - Sarah
+  - Sea of Galilee
   - Ten Commandments
   - Textus Receptus
   - Torah
@@ -41,7 +42,6 @@ guests:
   - Joel McHale
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.120] Dan McClellan: It's gotta be demoralizing for his other prophets for him to be like, you all suck. I'm gonna go visit an illegal necromancer to find my dead prophet.{{< /line >}}
 {{< line >}}[00:00:09.880] Dan Beecher: Yeah, exactly.{{< /line >}}

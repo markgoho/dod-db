@@ -17,6 +17,7 @@ export type UpdateTagParams = {
   llmVerify?: boolean;
   caseSensitive?: boolean;
   description?: string;
+  episodes?: number[];
 };
 
 /**
@@ -82,6 +83,9 @@ export async function updateTagInVocabulary(
     ("description" in existingTag ? existingTag.description : undefined);
   const newAddedInEpisode =
     "addedInEpisode" in existingTag ? existingTag.addedInEpisode : undefined;
+  const newEpisodes =
+    updates.episodes ??
+    ("episodes" in existingTag ? existingTag.episodes : undefined);
 
   // Format the new entry (with proper escaping)
   const variationsString =
@@ -94,11 +98,18 @@ export async function updateTagInVocabulary(
     newAddedInEpisode === undefined
       ? ""
       : `, addedInEpisode: ${newAddedInEpisode}`;
+  const episodes = newEpisodes
+    ? [...new Set(newEpisodes)].sort((a, b) => a - b)
+    : undefined;
+  const episodesString =
+    episodes && episodes.length > 0
+      ? `, episodes: [${episodes.join(", ")}]`
+      : "";
 
   const newEntry =
     newLlmVerify && newDescription
-      ? `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}', llmVerify: true, description: '${escapeForTsString(newDescription)}'${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`
-      : `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}'${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`;
+      ? `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}', llmVerify: true, description: '${escapeForTsString(newDescription)}'${statusString}${caseSensitiveString}${addedInEpisodeString}${episodesString} },\n`
+      : `\t{ canonical: '${escapeForTsString(newCanonical)}', variations: ${variationsString}, category: '${newCategory}'${statusString}${caseSensitiveString}${addedInEpisodeString}${episodesString} },\n`;
 
   // Replace the old entry with the new one
   const newContent = content.replace(tagRegex, newEntry);
@@ -124,6 +135,7 @@ export async function updateTagInVocabulary(
             ...(newAddedInEpisode !== undefined && {
               addedInEpisode: newAddedInEpisode,
             }),
+            ...(episodes !== undefined && { episodes }),
           }
         : {
             canonical: newCanonical,
@@ -134,6 +146,7 @@ export async function updateTagInVocabulary(
             ...(newAddedInEpisode !== undefined && {
               addedInEpisode: newAddedInEpisode,
             }),
+            ...(episodes !== undefined && { episodes }),
           };
     tagVocabulary[index] = updatedTag;
   }

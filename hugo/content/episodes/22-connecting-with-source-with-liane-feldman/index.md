@@ -19,7 +19,9 @@ tags:
   - El
   - James
   - Joseph
+  - Abel
   - Adam
+  - Arad
   - Babylon
   - Cain
   - Eve
@@ -38,7 +40,6 @@ guests:
   - Liane Feldman
 draft: false
 ---
-
 
 {{< line >}}[00:00:02.320] Liane Feldman: That's where you get the ritual in {{< scripture ref="Leviticus 16" >}}, the famous Day of Atonement ritual, where the priest has to sort of lay his hands on the head of that scapegoat and confess all of the sins of the Israelites over it and then banish that goat into the wilderness. It's only the rabbis who say it has to get driven over a cliff. That's not actually in Leviticus. Love that addition. But it's not actually in Leviticus. It just gets driven into the wilderness in Leviticus.{{< /line >}}
 {{< line >}}[00:00:28.210] Dan Beecher: Also, I've seen goats on cliffs. They're actually very sure-footed. I don't know.{{< /line >}}

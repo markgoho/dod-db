@@ -18,11 +18,13 @@ tags:
   - angel
   - Hezekiah
   - Joram
+  - Jehoshaphat
   - King Sennacherib
   - Samaria
   - Edom
   - Elisha
   - Masoretic Text
+  - Ahab
   - Assyria
   - Babylon
   - Hebrews
@@ -42,6 +44,7 @@ tags:
   - monotheism
   - Moses
   - Persia
+  - Sea of Galilee
   - Septuagint
   - archaeology
   - Bethel
@@ -73,7 +76,6 @@ segmentData:
     startSeconds: 2089
 draft: false
 ---
-
 
 {{< line >}}[00:00:02.080] Dan Beecher: And I gotta say, like, the reason that I chose this story was that you frequently shocked me with stories in the Bible that I had never heard or had never heard in the way that you explained them. Some of those stories were just interesting, but some were literally jaw-dropping, and today's story dropped my jaw, so.{{< /line >}}
 {{< line >}}[00:00:24.880] Dan McClellan: Hey, everybody.{{< /line >}}

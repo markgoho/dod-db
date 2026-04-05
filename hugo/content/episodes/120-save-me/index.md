@@ -26,6 +26,7 @@ tags:
   - Judaism
   - Satan
   - Aesop
+  - Ahab
   - Assyria
   - Cherubim
   - Egypt
@@ -54,7 +55,6 @@ segmentData:
     startSeconds: 2087.389
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.120] Dan McClellan: So God was like, I need you to be naked for the next three years. And he's like, oh, my gosh, I.{{< /line >}}
 {{< line >}}[00:00:06.440] Dan Beecher: Need three years of nudity for a metaphor that I'm working on.{{< /line >}}

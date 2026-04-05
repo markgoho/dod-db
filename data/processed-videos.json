@@ -186,10 +186,7 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Genesis",
@@ -205,31 +202,22 @@
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 6:3"
-        ],
+        "references": ["Exodus 6:3"],
         "mentions": 4
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 2",
-          "Isaiah 27:1"
-        ],
+        "references": ["Isaiah 2", "Isaiah 27:1"],
         "mentions": 3
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 32"
-        ],
+        "references": ["Deuteronomy 32"],
         "mentions": 1
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 29"
-        ],
+        "references": ["Psalms 29"],
         "mentions": 1
       }
     ],
@@ -387,55 +375,36 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Francesca Stavrakopoulou",
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Francesca Stavrakopoulou", "Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 1",
-          "Ezekiel 16",
-          "Ezekiel 23"
-        ],
+        "references": ["Ezekiel 1", "Ezekiel 16", "Ezekiel 23"],
         "mentions": 8
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 6"
-        ],
+        "references": ["Isaiah 6"],
         "mentions": 6
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 22",
-          "Genesis 49"
-        ],
+        "references": ["Genesis 22", "Genesis 49"],
         "mentions": 3
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 33:2"
-        ],
+        "references": ["Deuteronomy 33:2"],
         "mentions": 1
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 22"
-        ],
+        "references": ["Exodus 22"],
         "mentions": 1
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 11"
-        ],
+        "references": ["Judges 11"],
         "mentions": 1
       }
     ],
@@ -625,10 +594,7 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Genesis",
@@ -643,23 +609,17 @@
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 27"
-        ],
+        "references": ["Deuteronomy 27"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 50"
-        ],
+        "references": ["Isaiah 50"],
         "mentions": 1
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 19"
-        ],
+        "references": ["Judges 19"],
         "mentions": 1
       }
     ],
@@ -833,17 +793,11 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan",
-      "Bart Ehrman"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan", "Bart Ehrman"],
     "scriptures": [
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 90"
-        ],
+        "references": ["Psalms 90"],
         "mentions": 1
       }
     ],
@@ -995,16 +949,11 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 100"
-        ],
+        "references": ["Isaiah 100"],
         "mentions": 2
       }
     ],
@@ -1102,6 +1051,10 @@
         "mentions": 2
       },
       {
+        "tag": "Quran",
+        "mentions": 2
+      },
+      {
         "tag": "Saint Titus",
         "mentions": 2
       },
@@ -1187,61 +1140,41 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Romans",
-        "references": [
-          "Romans 3",
-          "Romans 3:28",
-          "Romans 4:3"
-        ],
+        "references": ["Romans 3", "Romans 3:28", "Romans 4:3"],
         "mentions": 3
       },
       {
         "book": "2 Timothy",
-        "references": [
-          "2 Timothy 3:16"
-        ],
+        "references": ["2 Timothy 3:16"],
         "mentions": 3
       },
       {
         "book": "James",
-        "references": [
-          "James 2"
-        ],
+        "references": ["James 2"],
         "mentions": 2
       },
       {
         "book": "1 Samuel",
-        "references": [
-          "1 Samuel 17"
-        ],
+        "references": ["1 Samuel 17"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 29",
-          "Isaiah 30"
-        ],
+        "references": ["Isaiah 29", "Isaiah 30"],
         "mentions": 2
       },
       {
         "book": "2 Samuel",
-        "references": [
-          "2 Samuel 21:19"
-        ],
+        "references": ["2 Samuel 21:19"],
         "mentions": 1
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 2:7"
-        ],
+        "references": ["Genesis 2:7"],
         "mentions": 1
       }
     ],
@@ -1303,6 +1236,10 @@
         "mentions": 8
       },
       {
+        "tag": "Jehoshaphat",
+        "mentions": 6
+      },
+      {
         "tag": "King Sennacherib",
         "mentions": 6
       },
@@ -1321,6 +1258,10 @@
       {
         "tag": "Masoretic Text",
         "mentions": 5
+      },
+      {
+        "tag": "Ahab",
+        "mentions": 4
       },
       {
         "tag": "Assyria",
@@ -1396,6 +1337,10 @@
       },
       {
         "tag": "Persia",
+        "mentions": 2
+      },
+      {
+        "tag": "Sea of Galilee",
         "mentions": 2
       },
       {
@@ -1477,18 +1422,11 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 76",
-          "Psalms 82",
-          "Psalms 83"
-        ],
+        "references": ["Psalms 76", "Psalms 82", "Psalms 83"],
         "mentions": 11
       },
       {
@@ -1503,34 +1441,22 @@
       },
       {
         "book": "2 Kings",
-        "references": [
-          "2 Kings 18",
-          "2 Kings 3:27",
-          "2 Kings 3"
-        ],
+        "references": ["2 Kings 18", "2 Kings 3:27", "2 Kings 3"],
         "mentions": 6
       },
       {
         "book": "1 Kings",
-        "references": [
-          "1 Kings 16",
-          "1 Kings 22"
-        ],
+        "references": ["1 Kings 16", "1 Kings 22"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 6",
-          "Isaiah 40"
-        ],
+        "references": ["Isaiah 6", "Isaiah 40"],
         "mentions": 2
       },
       {
         "book": "Jeremiah",
-        "references": [
-          "Jeremiah 23:18"
-        ],
+        "references": ["Jeremiah 23:18"],
         "mentions": 1
       }
     ],
@@ -1619,17 +1545,11 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Aaron Higashi",
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Aaron Higashi", "Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Ezra",
-        "references": [
-          "Ezra 10"
-        ],
+        "references": ["Ezra 10"],
         "mentions": 2
       }
     ],
@@ -1699,6 +1619,10 @@
         "mentions": 1
       },
       {
+        "tag": "Quran",
+        "mentions": 1
+      },
+      {
         "tag": "Satan",
         "mentions": 1
       }
@@ -1733,10 +1657,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Isaiah",
@@ -1751,31 +1672,22 @@
       },
       {
         "book": "Mark",
-        "references": [
-          "Mark 2"
-        ],
+        "references": ["Mark 2"],
         "mentions": 3
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 3",
-          "Genesis 6"
-        ],
+        "references": ["Genesis 3", "Genesis 6"],
         "mentions": 2
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 6:8"
-        ],
+        "references": ["Deuteronomy 6:8"],
         "mentions": 1
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 82"
-        ],
+        "references": ["Psalms 82"],
         "mentions": 1
       }
     ],
@@ -1885,6 +1797,10 @@
         "mentions": 1
       },
       {
+        "tag": "Pseudepigrapha",
+        "mentions": 1
+      },
+      {
         "tag": "Septuagint",
         "mentions": 1
       },
@@ -1913,10 +1829,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Leviticus",
@@ -1930,46 +1843,32 @@
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 2",
-          "Genesis 6",
-          "Genesis 19"
-        ],
+        "references": ["Genesis 2", "Genesis 6", "Genesis 19"],
         "mentions": 4
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 1"
-        ],
+        "references": ["Romans 1"],
         "mentions": 3
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 19"
-        ],
+        "references": ["Judges 19"],
         "mentions": 2
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 19"
-        ],
+        "references": ["Matthew 19"],
         "mentions": 1
       },
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 6"
-        ],
+        "references": ["1 Corinthians 6"],
         "mentions": 1
       },
       {
         "book": "Jude",
-        "references": [
-          "Jude 1:7"
-        ],
+        "references": ["Jude 1:7"],
         "mentions": 1
       }
     ],
@@ -2025,6 +1924,10 @@
       {
         "tag": "James",
         "mentions": 9
+      },
+      {
+        "tag": "Pseudepigrapha",
+        "mentions": 7
       },
       {
         "tag": "Desiderius Erasmus",
@@ -2202,38 +2105,26 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "John",
-        "references": [
-          "John 7",
-          "John 8"
-        ],
+        "references": ["John 7", "John 8"],
         "mentions": 3
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 17"
-        ],
+        "references": ["Matthew 17"],
         "mentions": 1
       },
       {
         "book": "Mark",
-        "references": [
-          "Mark 16"
-        ],
+        "references": ["Mark 16"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 32:8"
-        ],
+        "references": ["Deuteronomy 32:8"],
         "mentions": 1
       }
     ],
@@ -2272,6 +2163,10 @@
       },
       {
         "tag": "Galilee",
+        "mentions": 10
+      },
+      {
+        "tag": "Sea of Galilee",
         "mentions": 10
       },
       {
@@ -2343,6 +2238,10 @@
         "mentions": 1
       },
       {
+        "tag": "Junia",
+        "mentions": 1
+      },
+      {
         "tag": "Pastoral Epistles",
         "mentions": 1
       },
@@ -2378,10 +2277,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Elizabeth Schrader Polczer",
-      "Dan McClellan"
-    ],
+    "speakers": ["Elizabeth Schrader Polczer", "Dan McClellan"],
     "scriptures": [
       {
         "book": "John",
@@ -2400,20 +2296,12 @@
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 2",
-          "Luke 7",
-          "Luke 10",
-          "Luke 22"
-        ],
+        "references": ["Luke 2", "Luke 7", "Luke 10", "Luke 22"],
         "mentions": 6
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 15",
-          "Matthew 15:39"
-        ],
+        "references": ["Matthew 15", "Matthew 15:39"],
         "mentions": 3
       }
     ],
@@ -2461,6 +2349,10 @@
       {
         "tag": "Judah",
         "mentions": 6
+      },
+      {
+        "tag": "Arad",
+        "mentions": 5
       },
       {
         "tag": "archaeology",
@@ -2553,6 +2445,10 @@
       {
         "tag": "Samuel",
         "mentions": 1
+      },
+      {
+        "tag": "Sea of Galilee",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -2585,39 +2481,26 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6",
-          "Genesis 24",
-          "Genesis 27"
-        ],
+        "references": ["Genesis 6", "Genesis 24", "Genesis 27"],
         "mentions": 7
       },
       {
         "book": "1 Samuel",
-        "references": [
-          "1 Samuel 17"
-        ],
+        "references": ["1 Samuel 17"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 32"
-        ],
+        "references": ["Deuteronomy 32"],
         "mentions": 1
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 2"
-        ],
+        "references": ["Judges 2"],
         "mentions": 1
       }
     ],
@@ -2715,6 +2598,10 @@
         "mentions": 1
       },
       {
+        "tag": "Arad",
+        "mentions": 1
+      },
+      {
         "tag": "Bethel",
         "mentions": 1
       },
@@ -2732,6 +2619,10 @@
       },
       {
         "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Ketef Hinnom",
         "mentions": 1
       },
       {
@@ -2781,31 +2672,21 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 2"
-        ],
+        "references": ["Genesis 1", "Genesis 2"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 34"
-        ],
+        "references": ["Isaiah 34"],
         "mentions": 2
       },
       {
         "book": "1 Samuel",
-        "references": [
-          "1 Samuel 4"
-        ],
+        "references": ["1 Samuel 4"],
         "mentions": 1
       }
     ],
@@ -2931,6 +2812,10 @@
         "mentions": 1
       },
       {
+        "tag": "Baruch",
+        "mentions": 1
+      },
+      {
         "tag": "Daniel",
         "mentions": 1
       },
@@ -2960,6 +2845,10 @@
       },
       {
         "tag": "Papias of Hierapolis",
+        "mentions": 1
+      },
+      {
+        "tag": "Pseudepigrapha",
         "mentions": 1
       },
       {
@@ -2997,45 +2886,31 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 66",
-          "Isaiah 66:24"
-        ],
+        "references": ["Isaiah 66", "Isaiah 66:24"],
         "mentions": 2
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 27"
-        ],
+        "references": ["Matthew 27"],
         "mentions": 2
       },
       {
         "book": "Zechariah",
-        "references": [
-          "Zechariah 11:12-13"
-        ],
+        "references": ["Zechariah 11:12-13"],
         "mentions": 2
       },
       {
         "book": "Daniel",
-        "references": [
-          "Daniel 12"
-        ],
+        "references": ["Daniel 12"],
         "mentions": 1
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6"
-        ],
+        "references": ["Genesis 6"],
         "mentions": 1
       }
     ],
@@ -3063,6 +2938,10 @@
       {
         "tag": "Peter",
         "mentions": 20
+      },
+      {
+        "tag": "Junia",
+        "mentions": 16
       },
       {
         "tag": "Paul",
@@ -3183,17 +3062,11 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Romans",
-        "references": [
-          "Romans 16",
-          "Romans 16:7"
-        ],
+        "references": ["Romans 16", "Romans 16:7"],
         "mentions": 3
       }
     ],
@@ -3349,47 +3222,31 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Mark",
-        "references": [
-          "Mark 9",
-          "Mark 16"
-        ],
+        "references": ["Mark 9", "Mark 16"],
         "mentions": 4
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 17",
-          "Matthew 17:21"
-        ],
+        "references": ["Matthew 17", "Matthew 17:21"],
         "mentions": 3
       },
       {
         "book": "John",
-        "references": [
-          "John 7",
-          "John 8"
-        ],
+        "references": ["John 7", "John 8"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 66"
-        ],
+        "references": ["Isaiah 66"],
         "mentions": 1
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 5"
-        ],
+        "references": ["Numbers 5"],
         "mentions": 1
       }
     ],
@@ -3613,76 +3470,51 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "2 Samuel",
-        "references": [
-          "2 Samuel 19:22",
-          "2 Samuel 24:1",
-          "2 Samuel 24"
-        ],
+        "references": ["2 Samuel 19:22", "2 Samuel 24:1", "2 Samuel 24"],
         "mentions": 5
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 22",
-          "Numbers 22:21"
-        ],
+        "references": ["Numbers 22", "Numbers 22:21"],
         "mentions": 4
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6"
-        ],
+        "references": ["Genesis 6"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 14:12",
-          "Isaiah 27:1"
-        ],
+        "references": ["Isaiah 14:12", "Isaiah 27:1"],
         "mentions": 3
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 4:24"
-        ],
+        "references": ["Exodus 4:24"],
         "mentions": 2
       },
       {
         "book": "1 Chronicles",
-        "references": [
-          "1 Chronicles 21:1"
-        ],
+        "references": ["1 Chronicles 21:1"],
         "mentions": 1
       },
       {
         "book": "Zechariah",
-        "references": [
-          "Zechariah 3"
-        ],
+        "references": ["Zechariah 3"],
         "mentions": 1
       },
       {
         "book": "Job",
-        "references": [
-          "Job 1"
-        ],
+        "references": ["Job 1"],
         "mentions": 1
       },
       {
         "book": "Hosea",
-        "references": [
-          "Hosea 9:8"
-        ],
+        "references": ["Hosea 9:8"],
         "mentions": 1
       }
     ],
@@ -3784,7 +3616,15 @@
         "mentions": 2
       },
       {
+        "tag": "Sisera",
+        "mentions": 2
+      },
+      {
         "tag": "Apocrypha",
+        "mentions": 1
+      },
+      {
+        "tag": "Baruch",
         "mentions": 1
       },
       {
@@ -3804,6 +3644,10 @@
         "mentions": 1
       },
       {
+        "tag": "Deborah",
+        "mentions": 1
+      },
+      {
         "tag": "Gentiles",
         "mentions": 1
       },
@@ -3817,6 +3661,10 @@
       },
       {
         "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Pseudepigrapha",
         "mentions": 1
       },
       {
@@ -3855,18 +3703,11 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher",
-      "David A. Burnett"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher", "David A. Burnett"],
     "scriptures": [
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 82",
-          "Psalms 110"
-        ],
+        "references": ["Psalms 82", "Psalms 110"],
         "mentions": 17
       },
       {
@@ -3890,34 +3731,22 @@
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 14",
-          "Genesis 15",
-          "Genesis 15:5"
-        ],
+        "references": ["Genesis 1", "Genesis 14", "Genesis 15", "Genesis 15:5"],
         "mentions": 5
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 4",
-          "Romans 8"
-        ],
+        "references": ["Romans 4", "Romans 8"],
         "mentions": 4
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 5"
-        ],
+        "references": ["Judges 5"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 52"
-        ],
+        "references": ["Isaiah 52"],
         "mentions": 1
       }
     ],
@@ -4013,6 +3842,10 @@
       {
         "tag": "Protestantism",
         "mentions": 4
+      },
+      {
+        "tag": "Baruch",
+        "mentions": 3
       },
       {
         "tag": "Catholicism",
@@ -4123,6 +3956,10 @@
         "mentions": 1
       },
       {
+        "tag": "Pseudepigrapha",
+        "mentions": 1
+      },
+      {
         "tag": "YHWH",
         "mentions": 1
       }
@@ -4164,34 +4001,21 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 4",
-          "Genesis 4:23",
-          "Genesis 5"
-        ],
+        "references": ["Genesis 1", "Genesis 4", "Genesis 4:23", "Genesis 5"],
         "mentions": 26
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 100",
-          "Isaiah 130"
-        ],
+        "references": ["Isaiah 100", "Isaiah 130"],
         "mentions": 2
       },
       {
         "book": "2 Timothy",
-        "references": [
-          "2 Timothy 3:16"
-        ],
+        "references": ["2 Timothy 3:16"],
         "mentions": 1
       }
     ],
@@ -4370,10 +4194,7 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Exodus",
@@ -4388,16 +4209,12 @@
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 82"
-        ],
+        "references": ["Psalms 82"],
         "mentions": 1
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 5"
-        ],
+        "references": ["Numbers 5"],
         "mentions": 1
       }
     ],
@@ -4463,7 +4280,15 @@
         "mentions": 2
       },
       {
+        "tag": "Abel",
+        "mentions": 1
+      },
+      {
         "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Arad",
         "mentions": 1
       },
       {
@@ -4530,11 +4355,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan",
-      "Liane Feldman"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan", "Liane Feldman"],
     "scriptures": [
       {
         "book": "Genesis",
@@ -4550,18 +4371,12 @@
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 1",
-          "Leviticus 16"
-        ],
+        "references": ["Leviticus 1", "Leviticus 16"],
         "mentions": 3
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 1",
-          "Exodus 6"
-        ],
+        "references": ["Exodus 1", "Exodus 6"],
         "mentions": 2
       }
     ],
@@ -4670,62 +4485,41 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 20",
-          "Exodus 21",
-          "Exodus 21:22-25"
-        ],
+        "references": ["Exodus 20", "Exodus 21", "Exodus 21:22-25"],
         "mentions": 6
       },
       {
         "book": "Jeremiah",
-        "references": [
-          "Jeremiah 1",
-          "Jeremiah 1:5"
-        ],
+        "references": ["Jeremiah 1", "Jeremiah 1:5"],
         "mentions": 3
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 2:7"
-        ],
+        "references": ["Genesis 2:7"],
         "mentions": 3
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 139"
-        ],
+        "references": ["Psalms 139"],
         "mentions": 2
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 1:41",
-          "Luke 41"
-        ],
+        "references": ["Luke 1:41", "Luke 41"],
         "mentions": 2
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 5"
-        ],
+        "references": ["Numbers 5"],
         "mentions": 2
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 9"
-        ],
+        "references": ["Romans 9"],
         "mentions": 1
       }
     ],
@@ -4810,11 +4604,7 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Miriam Anzovin",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Miriam Anzovin", "Dan McClellan", "Dan Beecher"],
     "scriptures": [],
     "episodeNumber": 24
   },
@@ -4863,6 +4653,10 @@
       },
       {
         "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "Sea of Galilee",
         "mentions": 2
       },
       {
@@ -4924,10 +4718,7 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Matthew",
@@ -4951,39 +4742,27 @@
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 1",
-          "Isaiah 61"
-        ],
+        "references": ["Isaiah 1", "Isaiah 61"],
         "mentions": 4
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 6",
-          "Luke 6:21"
-        ],
+        "references": ["Luke 6", "Luke 6:21"],
         "mentions": 3
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 16:16"
-        ],
+        "references": ["Deuteronomy 16:16"],
         "mentions": 1
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 33:20"
-        ],
+        "references": ["Exodus 33:20"],
         "mentions": 1
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6"
-        ],
+        "references": ["Genesis 6"],
         "mentions": 1
       }
     ],
@@ -5120,11 +4899,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Matthew Thiessen",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Matthew Thiessen", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Romans",
@@ -5140,31 +4915,22 @@
       },
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 15"
-        ],
+        "references": ["1 Corinthians 15"],
         "mentions": 5
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 15",
-          "Genesis 17"
-        ],
+        "references": ["Genesis 15", "Genesis 17"],
         "mentions": 2
       },
       {
         "book": "James",
-        "references": [
-          "James 2"
-        ],
+        "references": ["James 2"],
         "mentions": 1
       },
       {
         "book": "Galatians",
-        "references": [
-          "Galatians 3"
-        ],
+        "references": ["Galatians 3"],
         "mentions": 1
       }
     ],
@@ -5320,30 +5086,21 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6"
-        ],
+        "references": ["Genesis 6"],
         "mentions": 3
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 29:1"
-        ],
+        "references": ["Psalms 29:1"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 120"
-        ],
+        "references": ["Isaiah 120"],
         "mentions": 1
       }
     ],
@@ -5477,6 +5234,10 @@
         "mentions": 2
       },
       {
+        "tag": "Pseudepigrapha",
+        "mentions": 2
+      },
+      {
         "tag": "Sodom",
         "mentions": 2
       },
@@ -5537,6 +5298,10 @@
         "mentions": 1
       },
       {
+        "tag": "Sea of Galilee",
+        "mentions": 1
+      },
+      {
         "tag": "Septuagint",
         "mentions": 1
       },
@@ -5575,48 +5340,31 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6",
-          "Genesis 18"
-        ],
+        "references": ["Genesis 6", "Genesis 18"],
         "mentions": 4
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 29",
-          "Psalms 82",
-          "Psalms 104"
-        ],
+        "references": ["Psalms 29", "Psalms 82", "Psalms 104"],
         "mentions": 3
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 3"
-        ],
+        "references": ["Exodus 3"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 6",
-          "Isaiah 27:1"
-        ],
+        "references": ["Isaiah 6", "Isaiah 27:1"],
         "mentions": 2
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 32:17"
-        ],
+        "references": ["Deuteronomy 32:17"],
         "mentions": 1
       }
     ],
@@ -5656,6 +5404,10 @@
       {
         "tag": "King Sennacherib",
         "mentions": 7
+      },
+      {
+        "tag": "Ahab",
+        "mentions": 6
       },
       {
         "tag": "Jerusalem",
@@ -5707,6 +5459,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Sukkot",
         "mentions": 2
       },
       {
@@ -5764,53 +5520,36 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Jonah",
-        "references": [
-          "Jonah 2",
-          "Jonah 3"
-        ],
+        "references": ["Jonah 2", "Jonah 3"],
         "mentions": 3
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 2",
-          "Genesis 2:17"
-        ],
+        "references": ["Genesis 2", "Genesis 2:17"],
         "mentions": 2
       },
       {
         "book": "2 Kings",
-        "references": [
-          "2 Kings 14:25"
-        ],
+        "references": ["2 Kings 14:25"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 40"
-        ],
+        "references": ["Isaiah 40"],
         "mentions": 1
       },
       {
         "book": "Titus",
-        "references": [
-          "Titus 1"
-        ],
+        "references": ["Titus 1"],
         "mentions": 1
       },
       {
         "book": "Hebrews",
-        "references": [
-          "Hebrews 6"
-        ],
+        "references": ["Hebrews 6"],
         "mentions": 1
       }
     ],
@@ -5895,24 +5634,16 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Andrew Whitehead",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Andrew Whitehead", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Romans",
-        "references": [
-          "Romans 13:1"
-        ],
+        "references": ["Romans 13:1"],
         "mentions": 3
       },
       {
         "book": "2 Chronicles",
-        "references": [
-          "2 Chronicles 7:14"
-        ],
+        "references": ["2 Chronicles 7:14"],
         "mentions": 1
       }
     ],
@@ -6022,6 +5753,10 @@
         "mentions": 1
       },
       {
+        "tag": "Arad",
+        "mentions": 1
+      },
+      {
         "tag": "Canaanites",
         "mentions": 1
       },
@@ -6108,43 +5843,26 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 20",
-          "Exodus 23",
-          "Exodus 34",
-          "Exodus 34:23"
-        ],
+        "references": ["Exodus 20", "Exodus 23", "Exodus 34", "Exodus 34:23"],
         "mentions": 24
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 5",
-          "Deuteronomy 16:16"
-        ],
+        "references": ["Deuteronomy 5", "Deuteronomy 16:16"],
         "mentions": 8
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 1",
-          "Isaiah 10",
-          "Isaiah 613"
-        ],
+        "references": ["Isaiah 1", "Isaiah 10", "Isaiah 613"],
         "mentions": 3
       },
       {
         "book": "Acts",
-        "references": [
-          "Acts 15"
-        ],
+        "references": ["Acts 15"],
         "mentions": 1
       }
     ],
@@ -6280,62 +5998,41 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Daniel",
-        "references": [
-          "Daniel 7",
-          "Daniel 9",
-          "Daniel 9:25"
-        ],
+        "references": ["Daniel 7", "Daniel 9", "Daniel 9:25"],
         "mentions": 6
       },
       {
         "book": "Mark",
-        "references": [
-          "Mark 13"
-        ],
+        "references": ["Mark 13"],
         "mentions": 4
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 16",
-          "Matthew 24"
-        ],
+        "references": ["Matthew 16", "Matthew 24"],
         "mentions": 2
       },
       {
         "book": "1 Thessalonians",
-        "references": [
-          "1 Thessalonians 4",
-          "1 Thessalonians 4:17"
-        ],
+        "references": ["1 Thessalonians 4", "1 Thessalonians 4:17"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 2"
-        ],
+        "references": ["Isaiah 2"],
         "mentions": 2
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 21"
-        ],
+        "references": ["Luke 21"],
         "mentions": 1
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 8:22"
-        ],
+        "references": ["Genesis 8:22"],
         "mentions": 1
       }
     ],
@@ -6452,11 +6149,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Isaac Soon",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Isaac Soon", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "2 Corinthians",
@@ -6470,38 +6163,27 @@
       },
       {
         "book": "Galatians",
-        "references": [
-          "Galatians 4",
-          "Galatians 5"
-        ],
+        "references": ["Galatians 4", "Galatians 5"],
         "mentions": 2
       },
       {
         "book": "Jeremiah",
-        "references": [
-          "Jeremiah 31"
-        ],
+        "references": ["Jeremiah 31"],
         "mentions": 1
       },
       {
         "book": "Revelation",
-        "references": [
-          "Revelation 12"
-        ],
+        "references": ["Revelation 12"],
         "mentions": 1
       },
       {
         "book": "Acts",
-        "references": [
-          "Acts 9"
-        ],
+        "references": ["Acts 9"],
         "mentions": 1
       },
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 15"
-        ],
+        "references": ["1 Corinthians 15"],
         "mentions": 1
       }
     ],
@@ -6690,32 +6372,21 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Daniel",
-        "references": [
-          "Daniel 1:1",
-          "Daniel 2",
-          "Daniel 7"
-        ],
+        "references": ["Daniel 1:1", "Daniel 2", "Daniel 7"],
         "mentions": 4
       },
       {
         "book": "Revelation",
-        "references": [
-          "Revelation 11"
-        ],
+        "references": ["Revelation 11"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 45"
-        ],
+        "references": ["Isaiah 45"],
         "mentions": 1
       }
     ],
@@ -6797,6 +6468,10 @@
         "mentions": 2
       },
       {
+        "tag": "Sea of Galilee",
+        "mentions": 2
+      },
+      {
         "tag": "angel",
         "mentions": 1
       },
@@ -6844,30 +6519,21 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 14"
-        ],
+        "references": ["1 Corinthians 14"],
         "mentions": 2
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 1"
-        ],
+        "references": ["Matthew 1"],
         "mentions": 1
       },
       {
         "book": "2 Timothy",
-        "references": [
-          "2 Timothy 3:16"
-        ],
+        "references": ["2 Timothy 3:16"],
         "mentions": 1
       }
     ],
@@ -6927,6 +6593,10 @@
       {
         "tag": "Ruth",
         "mentions": 3
+      },
+      {
+        "tag": "Deborah",
+        "mentions": 2
       },
       {
         "tag": "Deuteronomy",
@@ -7072,18 +6742,11 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Jacob Wright",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Jacob Wright", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 2"
-        ],
+        "references": ["Genesis 1", "Genesis 2"],
         "mentions": 3
       }
     ],
@@ -7248,25 +6911,16 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Aaron Adair",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Aaron Adair", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 24",
-          "Numbers 24:17"
-        ],
+        "references": ["Numbers 24", "Numbers 24:17"],
         "mentions": 2
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6"
-        ],
+        "references": ["Genesis 6"],
         "mentions": 1
       }
     ],
@@ -7403,11 +7057,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan",
-      "Eric Vanden Eykel"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan", "Eric Vanden Eykel"],
     "scriptures": [],
     "episodeNumber": 38
   },
@@ -7610,48 +7260,31 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 27:1",
-          "Isaiah 100"
-        ],
+        "references": ["Isaiah 27:1", "Isaiah 100"],
         "mentions": 4
       },
       {
         "book": "Revelation",
-        "references": [
-          "Revelation 3",
-          "Revelation 20",
-          "Revelation 21:5"
-        ],
+        "references": ["Revelation 3", "Revelation 20", "Revelation 21:5"],
         "mentions": 3
       },
       {
         "book": "Daniel",
-        "references": [
-          "Daniel 7:9",
-          "Daniel 7:13"
-        ],
+        "references": ["Daniel 7:9", "Daniel 7:13"],
         "mentions": 2
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 74"
-        ],
+        "references": ["Psalms 74"],
         "mentions": 1
       },
       {
         "book": "John",
-        "references": [
-          "John 17"
-        ],
+        "references": ["John 17"],
         "mentions": 1
       }
     ],
@@ -7753,6 +7386,10 @@
         "mentions": 1
       },
       {
+        "tag": "Sea of Galilee",
+        "mentions": 1
+      },
+      {
         "tag": "Ten Commandments",
         "mentions": 1
       },
@@ -7796,33 +7433,21 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher",
-      "Joel McHale"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher", "Joel McHale"],
     "scriptures": [
       {
         "book": "1 Samuel",
-        "references": [
-          "1 Samuel 28"
-        ],
+        "references": ["1 Samuel 28"],
         "mentions": 2
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 22",
-          "Exodus 22:29"
-        ],
+        "references": ["Exodus 22", "Exodus 22:29"],
         "mentions": 2
       },
       {
         "book": "2 Kings",
-        "references": [
-          "2 Kings 3",
-          "2 Kings 3:27"
-        ],
+        "references": ["2 Kings 3", "2 Kings 3:27"],
         "mentions": 2
       }
     ],
@@ -7908,6 +7533,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abigail",
+        "mentions": 1
+      },
+      {
         "tag": "Adam",
         "mentions": 1
       },
@@ -7978,82 +7607,56 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 9:19",
-          "Genesis 10"
-        ],
+        "references": ["Genesis 9:19", "Genesis 10"],
         "mentions": 2
       },
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 11",
-          "1 Corinthians 12:23"
-        ],
+        "references": ["1 Corinthians 11", "1 Corinthians 12:23"],
         "mentions": 2
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 22",
-          "Deuteronomy 25"
-        ],
+        "references": ["Deuteronomy 22", "Deuteronomy 25"],
         "mentions": 2
       },
       {
         "book": "Zephaniah",
-        "references": [
-          "Zephaniah 1"
-        ],
+        "references": ["Zephaniah 1"],
         "mentions": 2
       },
       {
         "book": "1 Timothy",
-        "references": [
-          "1 Timothy 2"
-        ],
+        "references": ["1 Timothy 2"],
         "mentions": 2
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 20"
-        ],
+        "references": ["Leviticus 20"],
         "mentions": 1
       },
       {
         "book": "1 Peter",
-        "references": [
-          "1 Peter 3"
-        ],
+        "references": ["1 Peter 3"],
         "mentions": 1
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 14"
-        ],
+        "references": ["Romans 14"],
         "mentions": 1
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 5"
-        ],
+        "references": ["Matthew 5"],
         "mentions": 1
       },
       {
         "book": "Proverbs",
-        "references": [
-          "Proverbs 11:22"
-        ],
+        "references": ["Proverbs 11:22"],
         "mentions": 1
       }
     ],
@@ -8205,10 +7808,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "John",
@@ -8225,25 +7825,17 @@
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 100"
-        ],
+        "references": ["Isaiah 100"],
         "mentions": 4
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 3",
-          "Exodus 3:14",
-          "Exodus 23"
-        ],
+        "references": ["Exodus 3", "Exodus 3:14", "Exodus 23"],
         "mentions": 4
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 82"
-        ],
+        "references": ["Psalms 82"],
         "mentions": 1
       }
     ],
@@ -8381,6 +7973,10 @@
         "mentions": 1
       },
       {
+        "tag": "Quran",
+        "mentions": 1
+      },
+      {
         "tag": "theophany",
         "mentions": 1
       }
@@ -8415,10 +8011,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Isaiah",
@@ -8434,16 +8027,12 @@
       },
       {
         "book": "Mark",
-        "references": [
-          "Mark 11"
-        ],
+        "references": ["Mark 11"],
         "mentions": 2
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 21"
-        ],
+        "references": ["Matthew 21"],
         "mentions": 1
       }
     ],
@@ -8536,11 +8125,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Jennifer Bird",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Jennifer Bird", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
@@ -8556,40 +8141,27 @@
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 19",
-          "Matthew 19:4",
-          "Matthew 19:12"
-        ],
+        "references": ["Matthew 19", "Matthew 19:4", "Matthew 19:12"],
         "mentions": 8
       },
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 7"
-        ],
+        "references": ["1 Corinthians 7"],
         "mentions": 3
       },
       {
         "book": "Ephesians",
-        "references": [
-          "Ephesians 5:31"
-        ],
+        "references": ["Ephesians 5:31"],
         "mentions": 2
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 18:22",
-          "Leviticus 20:13"
-        ],
+        "references": ["Leviticus 18:22", "Leviticus 20:13"],
         "mentions": 2
       },
       {
         "book": "Galatians",
-        "references": [
-          "Galatians 3"
-        ],
+        "references": ["Galatians 3"],
         "mentions": 1
       }
     ],
@@ -8834,33 +8406,21 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Kipp Davis",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Kipp Davis", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 27",
-          "Deuteronomy 32",
-          "Deuteronomy 32:8"
-        ],
+        "references": ["Deuteronomy 27", "Deuteronomy 32", "Deuteronomy 32:8"],
         "mentions": 8
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 97"
-        ],
+        "references": ["Psalms 97"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 13"
-        ],
+        "references": ["Isaiah 13"],
         "mentions": 1
       }
     ],
@@ -9068,78 +8628,51 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6",
-          "Genesis 18",
-          "Genesis 19"
-        ],
+        "references": ["Genesis 6", "Genesis 18", "Genesis 19"],
         "mentions": 4
       },
       {
         "book": "Zechariah",
-        "references": [
-          "Zechariah 9:9"
-        ],
+        "references": ["Zechariah 9:9"],
         "mentions": 4
       },
       {
         "book": "Joshua",
-        "references": [
-          "Joshua 6",
-          "Joshua 10",
-          "Joshua 17"
-        ],
+        "references": ["Joshua 6", "Joshua 10", "Joshua 17"],
         "mentions": 3
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 1",
-          "Judges 1:19"
-        ],
+        "references": ["Judges 1", "Judges 1:19"],
         "mentions": 3
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 7"
-        ],
+        "references": ["Deuteronomy 7"],
         "mentions": 2
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 82",
-          "Psalms 137:9"
-        ],
+        "references": ["Psalms 82", "Psalms 137:9"],
         "mentions": 2
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 31"
-        ],
+        "references": ["Numbers 31"],
         "mentions": 1
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 21"
-        ],
+        "references": ["Matthew 21"],
         "mentions": 1
       },
       {
         "book": "Acts",
-        "references": [
-          "Acts 1"
-        ],
+        "references": ["Acts 1"],
         "mentions": 1
       }
     ],
@@ -9173,17 +8706,11 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher",
-      "Lindsay Graham"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher", "Lindsay Graham"],
     "scriptures": [
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 40"
-        ],
+        "references": ["Isaiah 40"],
         "mentions": 1
       }
     ],
@@ -9313,6 +8840,10 @@
         "mentions": 1
       },
       {
+        "tag": "Junia",
+        "mentions": 1
+      },
+      {
         "tag": "King David",
         "mentions": 1
       },
@@ -9356,46 +8887,31 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Helen Bond",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Helen Bond", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 7"
-        ],
+        "references": ["Isaiah 7"],
         "mentions": 2
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 16",
-          "Romans 16:7"
-        ],
+        "references": ["Romans 16", "Romans 16:7"],
         "mentions": 2
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 19"
-        ],
+        "references": ["Matthew 19"],
         "mentions": 1
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 1"
-        ],
+        "references": ["Luke 1"],
         "mentions": 1
       },
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 11:34"
-        ],
+        "references": ["1 Corinthians 11:34"],
         "mentions": 1
       }
     ],
@@ -9520,11 +9036,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Candida Moss",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Candida Moss", "Dan McClellan", "Dan Beecher"],
     "scriptures": [],
     "episodeNumber": 49
   },
@@ -9683,40 +9195,26 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "John",
-        "references": [
-          "John 12",
-          "John 19:29"
-        ],
+        "references": ["John 12", "John 19:29"],
         "mentions": 5
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 7",
-          "Luke 8"
-        ],
+        "references": ["Luke 7", "Luke 8"],
         "mentions": 4
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 27:34",
-          "Matthew 27:48"
-        ],
+        "references": ["Matthew 27:34", "Matthew 27:48"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 3"
-        ],
+        "references": ["Isaiah 3"],
         "mentions": 1
       }
     ],
@@ -9773,11 +9271,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Neil Van Leeuwen",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Neil Van Leeuwen", "Dan McClellan", "Dan Beecher"],
     "scriptures": [],
     "episodeNumber": 51
   },
@@ -9823,6 +9317,10 @@
       {
         "tag": "Romans",
         "mentions": 3
+      },
+      {
+        "tag": "Junia",
+        "mentions": 2
       },
       {
         "tag": "Paul",
@@ -9891,10 +9389,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
@@ -9909,74 +9404,52 @@
       },
       {
         "book": "2 Samuel",
-        "references": [
-          "2 Samuel 21"
-        ],
+        "references": ["2 Samuel 21"],
         "mentions": 11
       },
       {
         "book": "1 Chronicles",
-        "references": [
-          "1 Chronicles 20"
-        ],
+        "references": ["1 Chronicles 20"],
         "mentions": 8
       },
       {
         "book": "1 Samuel",
-        "references": [
-          "1 Samuel 17"
-        ],
+        "references": ["1 Samuel 17"],
         "mentions": 4
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 16:6",
-          "Romans 16:7"
-        ],
+        "references": ["Romans 16:6", "Romans 16:7"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 1",
-          "Isaiah 80"
-        ],
+        "references": ["Isaiah 1", "Isaiah 80"],
         "mentions": 2
       },
       {
         "book": "Galatians",
-        "references": [
-          "Galatians 3"
-        ],
+        "references": ["Galatians 3"],
         "mentions": 2
       },
       {
         "book": "Proverbs",
-        "references": [
-          "Proverbs 31"
-        ],
+        "references": ["Proverbs 31"],
         "mentions": 1
       },
       {
         "book": "Ephesians",
-        "references": [
-          "Ephesians 5:22"
-        ],
+        "references": ["Ephesians 5:22"],
         "mentions": 1
       },
       {
         "book": "1 Peter",
-        "references": [
-          "1 Peter 3:1"
-        ],
+        "references": ["1 Peter 3:1"],
         "mentions": 1
       },
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 14"
-        ],
+        "references": ["1 Corinthians 14"],
         "mentions": 1
       }
     ],
@@ -10104,37 +9577,26 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1"
-        ],
+        "references": ["Genesis 1"],
         "mentions": 1
       },
       {
         "book": "Proverbs",
-        "references": [
-          "Proverbs 8"
-        ],
+        "references": ["Proverbs 8"],
         "mentions": 1
       },
       {
         "book": "1 Kings",
-        "references": [
-          "1 Kings 22"
-        ],
+        "references": ["1 Kings 22"],
         "mentions": 1
       },
       {
         "book": "John",
-        "references": [
-          "John 15:26"
-        ],
+        "references": ["John 15:26"],
         "mentions": 1
       }
     ],
@@ -10318,39 +9780,26 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Acts",
-        "references": [
-          "Acts 10",
-          "Acts 15",
-          "Acts 16:4"
-        ],
+        "references": ["Acts 10", "Acts 15", "Acts 16:4"],
         "mentions": 11
       },
       {
         "book": "Galatians",
-        "references": [
-          "Galatians 2"
-        ],
+        "references": ["Galatians 2"],
         "mentions": 2
       },
       {
         "book": "Amos",
-        "references": [
-          "Amos 9"
-        ],
+        "references": ["Amos 9"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 666"
-        ],
+        "references": ["Isaiah 666"],
         "mentions": 1
       }
     ],
@@ -10406,6 +9855,10 @@
       {
         "tag": "YHWH",
         "mentions": 7
+      },
+      {
+        "tag": "Ahab",
+        "mentions": 5
       },
       {
         "tag": "Jerusalem",
@@ -10500,6 +9953,10 @@
         "mentions": 1
       },
       {
+        "tag": "Jehoshaphat",
+        "mentions": 1
+      },
+      {
         "tag": "Judas Iscariot",
         "mentions": 1
       },
@@ -10517,6 +9974,10 @@
       },
       {
         "tag": "Nazareth",
+        "mentions": 1
+      },
+      {
+        "tag": "Sea of Galilee",
         "mentions": 1
       },
       {
@@ -10554,52 +10015,36 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Mark",
-        "references": [
-          "Mark 1",
-          "Mark 2"
-        ],
+        "references": ["Mark 1", "Mark 2"],
         "mentions": 3
       },
       {
         "book": "Joshua",
-        "references": [
-          "Joshua 24:19"
-        ],
+        "references": ["Joshua 24:19"],
         "mentions": 2
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 23"
-        ],
+        "references": ["Exodus 23"],
         "mentions": 2
       },
       {
         "book": "2 Kings",
-        "references": [
-          "2 Kings 9"
-        ],
+        "references": ["2 Kings 9"],
         "mentions": 1
       },
       {
         "book": "2 Chronicles",
-        "references": [
-          "2 Chronicles 22"
-        ],
+        "references": ["2 Chronicles 22"],
         "mentions": 1
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 14"
-        ],
+        "references": ["Numbers 14"],
         "mentions": 1
       }
     ],
@@ -10639,6 +10084,10 @@
       {
         "tag": "Mesopotamian",
         "mentions": 8
+      },
+      {
+        "tag": "Abel",
+        "mentions": 7
       },
       {
         "tag": "Israel",
@@ -10768,11 +10217,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "David Carr",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["David Carr", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
@@ -10792,9 +10237,7 @@
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 137"
-        ],
+        "references": ["Psalms 137"],
         "mentions": 1
       }
     ],
@@ -10910,53 +10353,36 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 82"
-        ],
+        "references": ["Psalms 82"],
         "mentions": 5
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 3"
-        ],
+        "references": ["Genesis 1", "Genesis 3"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 40"
-        ],
+        "references": ["Isaiah 40"],
         "mentions": 2
       },
       {
         "book": "Job",
-        "references": [
-          "Job 22:14",
-          "Job 26:7"
-        ],
+        "references": ["Job 22:14", "Job 26:7"],
         "mentions": 2
       },
       {
         "book": "Zechariah",
-        "references": [
-          "Zechariah 9:9"
-        ],
+        "references": ["Zechariah 9:9"],
         "mentions": 2
       },
       {
         "book": "Proverbs",
-        "references": [
-          "Proverbs 8:27"
-        ],
+        "references": ["Proverbs 8:27"],
         "mentions": 1
       }
     ],
@@ -11183,10 +10609,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
@@ -11203,29 +10626,17 @@
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 21",
-          "Exodus 21:6",
-          "Exodus 22",
-          "Exodus 22:8"
-        ],
+        "references": ["Exodus 21", "Exodus 21:6", "Exodus 22", "Exodus 22:8"],
         "mentions": 7
       },
       {
         "book": "Mark",
-        "references": [
-          "Mark 1",
-          "Mark 9"
-        ],
+        "references": ["Mark 1", "Mark 9"],
         "mentions": 4
       },
       {
         "book": "John",
-        "references": [
-          "John 1",
-          "John 1:1",
-          "John 1:18"
-        ],
+        "references": ["John 1", "John 1:1", "John 1:18"],
         "mentions": 4
       },
       {
@@ -11239,17 +10650,12 @@
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 17",
-          "Matthew 17:21"
-        ],
+        "references": ["Matthew 17", "Matthew 17:21"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 1"
-        ],
+        "references": ["Isaiah 1"],
         "mentions": 1
       }
     ],
@@ -11383,6 +10789,10 @@
         "mentions": 1
       },
       {
+        "tag": "Laban",
+        "mentions": 1
+      },
+      {
         "tag": "Latin Vulgate",
         "mentions": 1
       },
@@ -11422,39 +10832,26 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "David Burnett",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "David Burnett", "Dan Beecher"],
     "scriptures": [
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 15",
-          "1 Corinthians 8"
-        ],
+        "references": ["1 Corinthians 15", "1 Corinthians 8"],
         "mentions": 2
       },
       {
         "book": "Proverbs",
-        "references": [
-          "Proverbs 8"
-        ],
+        "references": ["Proverbs 8"],
         "mentions": 1
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 4"
-        ],
+        "references": ["Romans 4"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 20"
-        ],
+        "references": ["Isaiah 20"],
         "mentions": 1
       }
     ],
@@ -11578,10 +10975,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "1 Corinthians",
@@ -11596,25 +10990,17 @@
       },
       {
         "book": "John",
-        "references": [
-          "John 7",
-          "John 7:53"
-        ],
+        "references": ["John 7", "John 7:53"],
         "mentions": 2
       },
       {
         "book": "1 Timothy",
-        "references": [
-          "1 Timothy 2",
-          "1 Timothy 2:11"
-        ],
+        "references": ["1 Timothy 2", "1 Timothy 2:11"],
         "mentions": 2
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 5"
-        ],
+        "references": ["Numbers 5"],
         "mentions": 1
       }
     ],
@@ -11783,24 +11169,16 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "James McGrath",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "James McGrath", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 1"
-        ],
+        "references": ["Isaiah 1"],
         "mentions": 2
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 13"
-        ],
+        "references": ["Judges 13"],
         "mentions": 1
       }
     ],
@@ -11856,6 +11234,10 @@
       {
         "tag": "Cain",
         "mentions": 6
+      },
+      {
+        "tag": "Asael",
+        "mentions": 5
       },
       {
         "tag": "Dead Sea Scrolls",
@@ -11931,6 +11313,10 @@
       },
       {
         "tag": "Origen",
+        "mentions": 2
+      },
+      {
+        "tag": "Pseudepigrapha",
         "mentions": 2
       },
       {
@@ -12017,10 +11403,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Genesis",
@@ -12072,12 +11455,20 @@
         "mentions": 9
       },
       {
+        "tag": "Laban",
+        "mentions": 8
+      },
+      {
         "tag": "Esau",
         "mentions": 6
       },
       {
         "tag": "Hebrews",
         "mentions": 6
+      },
+      {
+        "tag": "Rachel",
+        "mentions": 5
       },
       {
         "tag": "YHWH",
@@ -12113,6 +11504,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Leah",
         "mentions": 2
       },
       {
@@ -12166,55 +11561,36 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Judges",
-        "references": [
-          "Judges 5",
-          "Judges 9",
-          "Judges 13"
-        ],
+        "references": ["Judges 5", "Judges 9", "Judges 13"],
         "mentions": 3
       },
       {
         "book": "Hosea",
-        "references": [
-          "Hosea 12",
-          "Hosea 12:4"
-        ],
+        "references": ["Hosea 12", "Hosea 12:4"],
         "mentions": 2
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 3",
-          "Genesis 18"
-        ],
+        "references": ["Genesis 3", "Genesis 18"],
         "mentions": 2
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 33:20"
-        ],
+        "references": ["Exodus 33:20"],
         "mentions": 1
       },
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 1"
-        ],
+        "references": ["Ezekiel 1"],
         "mentions": 1
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 6"
-        ],
+        "references": ["Numbers 6"],
         "mentions": 1
       }
     ],
@@ -12236,6 +11612,14 @@
         "mentions": 22
       },
       {
+        "tag": "Deborah",
+        "mentions": 18
+      },
+      {
+        "tag": "Sisera",
+        "mentions": 18
+      },
+      {
         "tag": "YHWH",
         "mentions": 16
       },
@@ -12248,6 +11632,10 @@
         "mentions": 13
       },
       {
+        "tag": "Barak",
+        "mentions": 12
+      },
+      {
         "tag": "Judah",
         "mentions": 11
       },
@@ -12258,6 +11646,14 @@
       {
         "tag": "Bathsheba",
         "mentions": 7
+      },
+      {
+        "tag": "Jael",
+        "mentions": 7
+      },
+      {
+        "tag": "Abigail",
+        "mentions": 6
       },
       {
         "tag": "Solomon",
@@ -12330,6 +11726,14 @@
       {
         "tag": "Paul",
         "mentions": 1
+      },
+      {
+        "tag": "Rehoboam",
+        "mentions": 1
+      },
+      {
+        "tag": "Sea of Galilee",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -12362,24 +11766,16 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Judges",
-        "references": [
-          "Judges 5",
-          "Judges 11"
-        ],
+        "references": ["Judges 5", "Judges 11"],
         "mentions": 2
       },
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 14"
-        ],
+        "references": ["1 Corinthians 14"],
         "mentions": 1
       }
     ],
@@ -12480,23 +11876,16 @@
         "detectionMethod": "llm"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 13"
-        ],
+        "references": ["Ezekiel 13"],
         "mentions": 2
       },
       {
         "book": "Revelation",
-        "references": [
-          "Revelation 40"
-        ],
+        "references": ["Revelation 40"],
         "mentions": 1
       }
     ],
@@ -12645,46 +12034,31 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 3",
-          "Exodus 20",
-          "Exodus 34"
-        ],
+        "references": ["Exodus 3", "Exodus 20", "Exodus 34"],
         "mentions": 4
       },
       {
         "book": "Habakkuk",
-        "references": [
-          "Habakkuk 71"
-        ],
+        "references": ["Habakkuk 71"],
         "mentions": 1
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 17"
-        ],
+        "references": ["Judges 17"],
         "mentions": 1
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 19"
-        ],
+        "references": ["Leviticus 19"],
         "mentions": 1
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 38"
-        ],
+        "references": ["Genesis 38"],
         "mentions": 1
       }
     ],
@@ -12742,6 +12116,10 @@
         "mentions": 4
       },
       {
+        "tag": "Abigail",
+        "mentions": 3
+      },
+      {
         "tag": "Goliath",
         "mentions": 3
       },
@@ -12771,6 +12149,10 @@
       },
       {
         "tag": "Joshua",
+        "mentions": 1
+      },
+      {
+        "tag": "Rachel",
         "mentions": 1
       },
       {
@@ -12809,11 +12191,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Aaron Higashi",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Aaron Higashi", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "1 Samuel",
@@ -12853,6 +12231,10 @@
       },
       {
         "tag": "Deuteronomy",
+        "mentions": 8
+      },
+      {
+        "tag": "Shelah",
         "mentions": 8
       },
       {
@@ -12926,53 +12308,36 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 22",
-          "Deuteronomy 25"
-        ],
+        "references": ["Deuteronomy 22", "Deuteronomy 25"],
         "mentions": 4
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 18",
-          "Leviticus 20"
-        ],
+        "references": ["Leviticus 18", "Leviticus 20"],
         "mentions": 2
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 1"
-        ],
+        "references": ["Matthew 1"],
         "mentions": 1
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 38"
-        ],
+        "references": ["Genesis 38"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 22"
-        ],
+        "references": ["Isaiah 22"],
         "mentions": 1
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 20"
-        ],
+        "references": ["Exodus 20"],
         "mentions": 1
       }
     ],
@@ -13125,11 +12490,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Michael Kok",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Michael Kok", "Dan McClellan", "Dan Beecher"],
     "chapters": [
       {
         "title": "Intro",
@@ -13357,67 +12718,46 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 1:1",
-          "Genesis 2"
-        ],
+        "references": ["Genesis 1", "Genesis 1:1", "Genesis 2"],
         "mentions": 4
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 4:17"
-        ],
+        "references": ["Romans 4:17"],
         "mentions": 1
       },
       {
         "book": "Hebrews",
-        "references": [
-          "Hebrews 11:3"
-        ],
+        "references": ["Hebrews 11:3"],
         "mentions": 1
       },
       {
         "book": "Colossians",
-        "references": [
-          "Colossians 1:16"
-        ],
+        "references": ["Colossians 1:16"],
         "mentions": 1
       },
       {
         "book": "John",
-        "references": [
-          "John 4"
-        ],
+        "references": ["John 4"],
         "mentions": 1
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 17:11"
-        ],
+        "references": ["Matthew 17:11"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 27:1"
-        ],
+        "references": ["Isaiah 27:1"],
         "mentions": 1
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 74"
-        ],
+        "references": ["Psalms 74"],
         "mentions": 1
       }
     ],
@@ -13585,62 +12925,41 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Daniel",
-        "references": [
-          "Daniel 7",
-          "Daniel 7:13",
-          "Daniel 10",
-          "Daniel 10:21"
-        ],
+        "references": ["Daniel 7", "Daniel 7:13", "Daniel 10", "Daniel 10:21"],
         "mentions": 6
       },
       {
         "book": "Revelation",
-        "references": [
-          "Revelation 20"
-        ],
+        "references": ["Revelation 20"],
         "mentions": 3
       },
       {
         "book": "1 Thessalonians",
-        "references": [
-          "1 Thessalonians 7:14",
-          "1 Thessalonians 4:17"
-        ],
+        "references": ["1 Thessalonians 7:14", "1 Thessalonians 4:17"],
         "mentions": 2
       },
       {
         "book": "2 Corinthians",
-        "references": [
-          "2 Corinthians 12:2"
-        ],
+        "references": ["2 Corinthians 12:2"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 32:8"
-        ],
+        "references": ["Deuteronomy 32:8"],
         "mentions": 1
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 82"
-        ],
+        "references": ["Psalms 82"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 6"
-        ],
+        "references": ["Isaiah 6"],
         "mentions": 1
       }
     ],
@@ -13730,6 +13049,10 @@
         "mentions": 2
       },
       {
+        "tag": "Arad",
+        "mentions": 1
+      },
+      {
         "tag": "archaeology",
         "mentions": 1
       },
@@ -13750,6 +13073,10 @@
         "mentions": 1
       },
       {
+        "tag": "Leah",
+        "mentions": 1
+      },
+      {
         "tag": "Mary Magdalene",
         "mentions": 1
       },
@@ -13759,6 +13086,10 @@
       },
       {
         "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Rachel",
         "mentions": 1
       }
     ],
@@ -13792,18 +13123,11 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "2 Kings",
-        "references": [
-          "2 Kings 18",
-          "2 Kings 18:7",
-          "2 Kings 19"
-        ],
+        "references": ["2 Kings 18", "2 Kings 18:7", "2 Kings 19"],
         "mentions": 3
       }
     ],
@@ -13819,6 +13143,10 @@
       {
         "tag": "YHWH",
         "mentions": 15
+      },
+      {
+        "tag": "Ketef Hinnom",
+        "mentions": 7
       },
       {
         "tag": "Egypt",
@@ -13933,6 +13261,10 @@
         "mentions": 1
       },
       {
+        "tag": "Laban",
+        "mentions": 1
+      },
+      {
         "tag": "Mesopotamian",
         "mentions": 1
       },
@@ -13959,6 +13291,10 @@
       {
         "tag": "Satan",
         "mentions": 1
+      },
+      {
+        "tag": "Sea of Galilee",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -13984,61 +13320,41 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 6",
-          "Numbers 6:27",
-          "Numbers 27:21"
-        ],
+        "references": ["Numbers 6", "Numbers 6:27", "Numbers 27:21"],
         "mentions": 3
       },
       {
         "book": "1 Samuel",
-        "references": [
-          "1 Samuel 14",
-          "1 Samuel 28:6"
-        ],
+        "references": ["1 Samuel 14", "1 Samuel 28:6"],
         "mentions": 2
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 28:30"
-        ],
+        "references": ["Exodus 28:30"],
         "mentions": 1
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 8:8"
-        ],
+        "references": ["Leviticus 8:8"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 33:8"
-        ],
+        "references": ["Deuteronomy 33:8"],
         "mentions": 1
       },
       {
         "book": "Ezra",
-        "references": [
-          "Ezra 2:63"
-        ],
+        "references": ["Ezra 2:63"],
         "mentions": 1
       },
       {
         "book": "Nehemiah",
-        "references": [
-          "Nehemiah 7:65"
-        ],
+        "references": ["Nehemiah 7:65"],
         "mentions": 1
       }
     ],
@@ -14150,53 +13466,36 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 28",
-          "Exodus 28:6"
-        ],
+        "references": ["Exodus 28", "Exodus 28:6"],
         "mentions": 3
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 22",
-          "Deuteronomy 22:11"
-        ],
+        "references": ["Deuteronomy 22", "Deuteronomy 22:11"],
         "mentions": 2
       },
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 44"
-        ],
+        "references": ["Ezekiel 44"],
         "mentions": 2
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 37"
-        ],
+        "references": ["Genesis 37"],
         "mentions": 2
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 19:19"
-        ],
+        "references": ["Leviticus 19:19"],
         "mentions": 1
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 19"
-        ],
+        "references": ["Judges 19"],
         "mentions": 1
       }
     ],
@@ -14312,32 +13611,21 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 7",
-          "Exodus 12:12"
-        ],
+        "references": ["Exodus 7", "Exodus 12:12"],
         "mentions": 2
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 21"
-        ],
+        "references": ["Genesis 1", "Genesis 21"],
         "mentions": 2
       },
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 20:25"
-        ],
+        "references": ["Ezekiel 20:25"],
         "mentions": 1
       }
     ],
@@ -14361,6 +13649,10 @@
       {
         "tag": "Peter",
         "mentions": 7
+      },
+      {
+        "tag": "Sapphira",
+        "mentions": 6
       },
       {
         "tag": "YHWH",
@@ -14461,45 +13753,31 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 14:22-23",
-          "Deuteronomy 15"
-        ],
+        "references": ["Deuteronomy 14:22-23", "Deuteronomy 15"],
         "mentions": 2
       },
       {
         "book": "Malachi",
-        "references": [
-          "Malachi 3"
-        ],
+        "references": ["Malachi 3"],
         "mentions": 2
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 19"
-        ],
+        "references": ["Matthew 19"],
         "mentions": 2
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 18"
-        ],
+        "references": ["Numbers 18"],
         "mentions": 1
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 27"
-        ],
+        "references": ["Leviticus 27"],
         "mentions": 1
       }
     ],
@@ -14580,10 +13858,7 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [],
     "episodeNumber": 77
   },
@@ -14682,9 +13957,7 @@
     "scriptures": [
       {
         "book": "Luke",
-        "references": [
-          "Luke 10"
-        ],
+        "references": ["Luke 10"],
         "mentions": 1
       }
     ],
@@ -14750,11 +14023,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "David Congdon",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "David Congdon", "Dan Beecher"],
     "scriptures": [],
     "episodeNumber": 79
   },
@@ -14901,31 +14170,21 @@
         "detectionMethod": "llm"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Amos",
-        "references": [
-          "Amos 9:11",
-          "Amos 9:12"
-        ],
+        "references": ["Amos 9:11", "Amos 9:12"],
         "mentions": 3
       },
       {
         "book": "Acts",
-        "references": [
-          "Acts 15"
-        ],
+        "references": ["Acts 15"],
         "mentions": 2
       },
       {
         "book": "1 John",
-        "references": [
-          "1 John 3:20"
-        ],
+        "references": ["1 John 3:20"],
         "mentions": 1
       }
     ],
@@ -15067,6 +14326,10 @@
         "mentions": 1
       },
       {
+        "tag": "Quran",
+        "mentions": 1
+      },
+      {
         "tag": "Septuagint",
         "mentions": 1
       },
@@ -15102,10 +14365,7 @@
         "detectionMethod": "llm"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "chapters": [
       {
         "title": "Intro",
@@ -15187,11 +14447,7 @@
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 10",
-          "Genesis 11"
-        ],
+        "references": ["Genesis 1", "Genesis 10", "Genesis 11"],
         "mentions": 3
       }
     ],
@@ -15248,11 +14504,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Rev Karla Kamstra",
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Rev Karla Kamstra", "Dan Beecher", "Dan McClellan"],
     "scriptures": [],
     "episodeNumber": 82
   },
@@ -15378,18 +14630,11 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 21",
-          "Psalms 22",
-          "Psalms 82"
-        ],
+        "references": ["Psalms 21", "Psalms 22", "Psalms 82"],
         "mentions": 16
       }
     ],
@@ -15539,6 +14784,10 @@
         "mentions": 1
       },
       {
+        "tag": "Sea of Galilee",
+        "mentions": 1
+      },
+      {
         "tag": "Sheol",
         "mentions": 1
       },
@@ -15563,52 +14812,36 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Luke",
-        "references": [
-          "Luke 8"
-        ],
+        "references": ["Luke 8"],
         "mentions": 2
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 9",
-          "Matthew 15:22"
-        ],
+        "references": ["Matthew 9", "Matthew 15:22"],
         "mentions": 2
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6"
-        ],
+        "references": ["Genesis 6"],
         "mentions": 1
       },
       {
         "book": "2 Peter",
-        "references": [
-          "2 Peter 2"
-        ],
+        "references": ["2 Peter 2"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 32"
-        ],
+        "references": ["Deuteronomy 32"],
         "mentions": 1
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 106:37"
-        ],
+        "references": ["Psalms 106:37"],
         "mentions": 1
       }
     ],
@@ -15729,11 +14962,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Logan Williams",
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Logan Williams", "Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Leviticus",
@@ -15749,11 +14978,7 @@
       },
       {
         "book": "Mark",
-        "references": [
-          "Mark 7",
-          "Mark 7:18-19",
-          "Mark 7:19"
-        ],
+        "references": ["Mark 7", "Mark 7:18-19", "Mark 7:19"],
         "mentions": 6
       },
       {
@@ -15768,30 +14993,22 @@
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 28"
-        ],
+        "references": ["Isaiah 28"],
         "mentions": 1
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 103"
-        ],
+        "references": ["Psalms 103"],
         "mentions": 1
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 19"
-        ],
+        "references": ["Numbers 19"],
         "mentions": 1
       },
       {
         "book": "Acts",
-        "references": [
-          "Acts 15"
-        ],
+        "references": ["Acts 15"],
         "mentions": 1
       }
     ],
@@ -15929,6 +15146,10 @@
         "mentions": 1
       },
       {
+        "tag": "Sea of Galilee",
+        "mentions": 1
+      },
+      {
         "tag": "Syria",
         "mentions": 1
       }
@@ -15956,10 +15177,7 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [],
     "episodeNumber": 86
   },
@@ -16036,6 +15254,10 @@
       },
       {
         "tag": "Herod the Great",
+        "mentions": 3
+      },
+      {
+        "tag": "Sea of Galilee",
         "mentions": 3
       },
       {
@@ -16123,31 +15345,21 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 7:14",
-          "Isaiah 11:1"
-        ],
+        "references": ["Isaiah 7:14", "Isaiah 11:1"],
         "mentions": 3
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 22"
-        ],
+        "references": ["Deuteronomy 22"],
         "mentions": 2
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 1"
-        ],
+        "references": ["Luke 1"],
         "mentions": 1
       }
     ],
@@ -16221,11 +15433,19 @@
         "mentions": 2
       },
       {
+        "tag": "Arad",
+        "mentions": 2
+      },
+      {
         "tag": "Judeans",
         "mentions": 2
       },
       {
         "tag": "Lachish",
+        "mentions": 2
+      },
+      {
+        "tag": "Sisera",
         "mentions": 2
       },
       {
@@ -16292,30 +15512,21 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "2 Kings",
-        "references": [
-          "2 Kings 22"
-        ],
+        "references": ["2 Kings 22"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 4:19"
-        ],
+        "references": ["Deuteronomy 4:19"],
         "mentions": 1
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 5"
-        ],
+        "references": ["Judges 5"],
         "mentions": 1
       }
     ],
@@ -16404,10 +15615,7 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Proverbs",
@@ -16424,16 +15632,12 @@
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 18:8"
-        ],
+        "references": ["Leviticus 18:8"],
         "mentions": 2
       },
       {
         "book": "1 Corinthians",
-        "references": [
-          "1 Corinthians 5"
-        ],
+        "references": ["1 Corinthians 5"],
         "mentions": 1
       }
     ],
@@ -16453,6 +15657,10 @@
       {
         "tag": "Adam",
         "mentions": 17
+      },
+      {
+        "tag": "Abel",
+        "mentions": 10
       },
       {
         "tag": "Seth",
@@ -16555,10 +15763,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "chapters": [
       {
         "title": "Intro",
@@ -16646,24 +15851,17 @@
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 40",
-          "Isaiah 40:22"
-        ],
+        "references": ["Isaiah 40", "Isaiah 40:22"],
         "mentions": 3
       },
       {
         "book": "Proverbs",
-        "references": [
-          "Proverbs 8:27"
-        ],
+        "references": ["Proverbs 8:27"],
         "mentions": 3
       },
       {
         "book": "Job",
-        "references": [
-          "Job 22:14"
-        ],
+        "references": ["Job 22:14"],
         "mentions": 1
       }
     ],
@@ -16740,11 +15938,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "April Ajoy",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["April Ajoy", "Dan McClellan", "Dan Beecher"],
     "chapters": [
       {
         "title": "Intro",
@@ -16802,9 +15996,7 @@
     "scriptures": [
       {
         "book": "John",
-        "references": [
-          "John 3:16"
-        ],
+        "references": ["John 3:16"],
         "mentions": 1
       }
     ],
@@ -16910,6 +16102,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abel",
+        "mentions": 1
+      },
+      {
         "tag": "Adam",
         "mentions": 1
       },
@@ -17000,26 +16196,16 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 4",
-          "Genesis 4:1",
-          "Genesis 10"
-        ],
+        "references": ["Genesis 1", "Genesis 4", "Genesis 4:1", "Genesis 10"],
         "mentions": 5
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 22"
-        ],
+        "references": ["Deuteronomy 22"],
         "mentions": 1
       }
     ],
@@ -17067,6 +16253,10 @@
       {
         "tag": "King Saul",
         "mentions": 3
+      },
+      {
+        "tag": "Eglon",
+        "mentions": 2
       },
       {
         "tag": "Noah",
@@ -17167,10 +16357,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Exodus",
@@ -17187,17 +16374,12 @@
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 19",
-          "Genesis 38"
-        ],
+        "references": ["Genesis 19", "Genesis 38"],
         "mentions": 2
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 15"
-        ],
+        "references": ["Deuteronomy 15"],
         "mentions": 1
       }
     ],
@@ -17369,23 +16551,16 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 17:21"
-        ],
+        "references": ["Matthew 17:21"],
         "mentions": 3
       },
       {
         "book": "Mark",
-        "references": [
-          "Mark 8"
-        ],
+        "references": ["Mark 8"],
         "mentions": 1
       }
     ],
@@ -17483,6 +16658,10 @@
         "mentions": 1
       },
       {
+        "tag": "Ararat",
+        "mentions": 1
+      },
+      {
         "tag": "Cain",
         "mentions": 1
       },
@@ -17541,26 +16720,16 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 4",
-          "Genesis 5",
-          "Genesis 6"
-        ],
+        "references": ["Genesis 1", "Genesis 4", "Genesis 5", "Genesis 6"],
         "mentions": 9
       },
       {
         "book": "Joshua",
-        "references": [
-          "Joshua 6"
-        ],
+        "references": ["Joshua 6"],
         "mentions": 1
       }
     ],
@@ -17656,17 +16825,11 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Romans",
-        "references": [
-          "Romans 13",
-          "Romans 13:1"
-        ],
+        "references": ["Romans 13", "Romans 13:1"],
         "mentions": 3
       }
     ],
@@ -17814,44 +16977,31 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 3"
-        ],
+        "references": ["Exodus 3"],
         "mentions": 1
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 10"
-        ],
+        "references": ["Luke 10"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 6:5"
-        ],
+        "references": ["Deuteronomy 6:5"],
         "mentions": 1
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 19:18"
-        ],
+        "references": ["Leviticus 19:18"],
         "mentions": 1
       },
       {
         "book": "Hosea",
-        "references": [
-          "Hosea 6:6"
-        ],
+        "references": ["Hosea 6:6"],
         "mentions": 1
       }
     ],
@@ -17941,6 +17091,10 @@
         "mentions": 1
       },
       {
+        "tag": "Asael",
+        "mentions": 1
+      },
+      {
         "tag": "Bart Ehrman",
         "mentions": 1
       },
@@ -17999,10 +17153,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Revelation",
@@ -18018,25 +17169,17 @@
       },
       {
         "book": "1 Peter",
-        "references": [
-          "1 Peter 3:18",
-          "1 Peter 3:18-20",
-          "1 Peter 3"
-        ],
+        "references": ["1 Peter 3:18", "1 Peter 3:18-20", "1 Peter 3"],
         "mentions": 4
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 23:43"
-        ],
+        "references": ["Luke 23:43"],
         "mentions": 2
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6"
-        ],
+        "references": ["Genesis 6"],
         "mentions": 1
       }
     ],
@@ -18222,6 +17365,10 @@
         "mentions": 1
       },
       {
+        "tag": "Sea of Galilee",
+        "mentions": 1
+      },
+      {
         "tag": "Septuagint",
         "mentions": 1
       },
@@ -18260,30 +17407,21 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 13:55"
-        ],
+        "references": ["Matthew 13:55"],
         "mentions": 1
       },
       {
         "book": "Galatians",
-        "references": [
-          "Galatians 1"
-        ],
+        "references": ["Galatians 1"],
         "mentions": 1
       },
       {
         "book": "Mark",
-        "references": [
-          "Mark 6:3"
-        ],
+        "references": ["Mark 6:3"],
         "mentions": 1
       }
     ],
@@ -18334,6 +17472,10 @@
       },
       {
         "tag": "John",
+        "mentions": 3
+      },
+      {
+        "tag": "Pseudepigrapha",
         "mentions": 3
       },
       {
@@ -18435,23 +17577,16 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Philemon",
-        "references": [
-          "Philemon 1"
-        ],
+        "references": ["Philemon 1"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 72"
-        ],
+        "references": ["Isaiah 72"],
         "mentions": 1
       }
     ],
@@ -18556,46 +17691,31 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 5",
-          "Matthew 5:3"
-        ],
+        "references": ["Matthew 5", "Matthew 5:3"],
         "mentions": 5
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 6:20"
-        ],
+        "references": ["Luke 6:20"],
         "mentions": 2
       },
       {
         "book": "Proverbs",
-        "references": [
-          "Proverbs 14",
-          "Proverbs 31:10"
-        ],
+        "references": ["Proverbs 14", "Proverbs 31:10"],
         "mentions": 2
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 18"
-        ],
+        "references": ["Exodus 18"],
         "mentions": 1
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 9"
-        ],
+        "references": ["Genesis 9"],
         "mentions": 1
       }
     ],
@@ -18641,8 +17761,16 @@
         "mentions": 2
       },
       {
+        "tag": "Quran",
+        "mentions": 2
+      },
+      {
         "tag": "YHWH",
         "mentions": 2
+      },
+      {
+        "tag": "Arad",
+        "mentions": 1
       },
       {
         "tag": "Christian Nationalism",
@@ -18666,6 +17794,10 @@
       },
       {
         "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Sapphira",
         "mentions": 1
       },
       {
@@ -18696,44 +17828,31 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 12"
-        ],
+        "references": ["Deuteronomy 12"],
         "mentions": 2
       },
       {
         "book": "Acts",
-        "references": [
-          "Acts 4"
-        ],
+        "references": ["Acts 4"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 5"
-        ],
+        "references": ["Isaiah 5"],
         "mentions": 1
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 19"
-        ],
+        "references": ["Genesis 19"],
         "mentions": 1
       },
       {
         "book": "Mark",
-        "references": [
-          "Mark 7"
-        ],
+        "references": ["Mark 7"],
         "mentions": 1
       }
     ],
@@ -18790,11 +17909,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Jeremy Steele",
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Jeremy Steele", "Dan Beecher", "Dan McClellan"],
     "scriptures": [],
     "episodeNumber": 103
   },
@@ -19013,83 +18128,56 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 3",
-          "Exodus 23"
-        ],
+        "references": ["Exodus 3", "Exodus 23"],
         "mentions": 4
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 43:10",
-          "Isaiah 45:21",
-          "Isaiah 100"
-        ],
+        "references": ["Isaiah 43:10", "Isaiah 45:21", "Isaiah 100"],
         "mentions": 3
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 32"
-        ],
+        "references": ["Deuteronomy 32"],
         "mentions": 3
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6",
-          "Genesis 19"
-        ],
+        "references": ["Genesis 6", "Genesis 19"],
         "mentions": 2
       },
       {
         "book": "Hosea",
-        "references": [
-          "Hosea 13"
-        ],
+        "references": ["Hosea 13"],
         "mentions": 2
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 97:7"
-        ],
+        "references": ["Psalms 97:7"],
         "mentions": 2
       },
       {
         "book": "2 Peter",
-        "references": [
-          "2 Peter 2:1"
-        ],
+        "references": ["2 Peter 2:1"],
         "mentions": 1
       },
       {
         "book": "Jude",
-        "references": [
-          "Jude 5"
-        ],
+        "references": ["Jude 5"],
         "mentions": 1
       },
       {
         "book": "Philippians",
-        "references": [
-          "Philippians 2:6-10"
-        ],
+        "references": ["Philippians 2:6-10"],
         "mentions": 1
       },
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 16:49"
-        ],
+        "references": ["Ezekiel 16:49"],
         "mentions": 1
       }
     ],
@@ -19214,34 +18302,21 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Angela Roskop Erisman",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Angela Roskop Erisman", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 2",
-          "Exodus 7:1",
-          "Exodus 14",
-          "Exodus 17"
-        ],
+        "references": ["Exodus 2", "Exodus 7:1", "Exodus 14", "Exodus 17"],
         "mentions": 5
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 11"
-        ],
+        "references": ["Isaiah 11"],
         "mentions": 1
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 82"
-        ],
+        "references": ["Psalms 82"],
         "mentions": 1
       }
     ],
@@ -19350,54 +18425,36 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 18",
-          "Ezekiel 22"
-        ],
+        "references": ["Ezekiel 18", "Ezekiel 22"],
         "mentions": 5
       },
       {
         "book": "Luke",
-        "references": [
-          "Luke 6",
-          "Luke 6:34-36",
-          "Luke 19"
-        ],
+        "references": ["Luke 6", "Luke 6:34-36", "Luke 19"],
         "mentions": 5
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 25"
-        ],
+        "references": ["Matthew 25"],
         "mentions": 2
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 22"
-        ],
+        "references": ["Exodus 22"],
         "mentions": 1
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 25"
-        ],
+        "references": ["Leviticus 25"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 23:19"
-        ],
+        "references": ["Deuteronomy 23:19"],
         "mentions": 1
       }
     ],
@@ -19424,6 +18481,10 @@
       },
       {
         "tag": "Eschatology",
+        "mentions": 6
+      },
+      {
+        "tag": "Junia",
         "mentions": 6
       },
       {
@@ -19506,24 +18567,16 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Yii-Jan Lin",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Yii-Jan Lin", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Revelation",
-        "references": [
-          "Revelation 21"
-        ],
+        "references": ["Revelation 21"],
         "mentions": 1
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 16:7"
-        ],
+        "references": ["Romans 16:7"],
         "mentions": 1
       }
     ],
@@ -19640,10 +18693,7 @@
         "detectionMethod": "llm"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Deuteronomy",
@@ -19657,24 +18707,17 @@
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 5",
-          "Matthew 19"
-        ],
+        "references": ["Matthew 5", "Matthew 19"],
         "mentions": 4
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 50"
-        ],
+        "references": ["Isaiah 50"],
         "mentions": 1
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 22"
-        ],
+        "references": ["Exodus 22"],
         "mentions": 1
       }
     ],
@@ -19775,26 +18818,16 @@
         "detectionMethod": "llm"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 1:8",
-          "Exodus 4",
-          "Exodus 7",
-          "Exodus 7:13"
-        ],
+        "references": ["Exodus 1:8", "Exodus 4", "Exodus 7", "Exodus 7:13"],
         "mentions": 5
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 13"
-        ],
+        "references": ["Isaiah 13"],
         "mentions": 1
       }
     ],
@@ -19939,66 +18972,46 @@
         "detectionMethod": "pattern"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 16:26",
-          "Ezekiel 23:20"
-        ],
+        "references": ["Ezekiel 16:26", "Ezekiel 23:20"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 6"
-        ],
+        "references": ["Isaiah 6"],
         "mentions": 1
       },
       {
         "book": "Song of Solomon",
-        "references": [
-          "Song of Solomon 5"
-        ],
+        "references": ["Song of Solomon 5"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 28"
-        ],
+        "references": ["Deuteronomy 28"],
         "mentions": 1
       },
       {
         "book": "1 Kings",
-        "references": [
-          "1 Kings 14"
-        ],
+        "references": ["1 Kings 14"],
         "mentions": 1
       },
       {
         "book": "Ephesians",
-        "references": [
-          "Ephesians 5"
-        ],
+        "references": ["Ephesians 5"],
         "mentions": 1
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 5"
-        ],
+        "references": ["Matthew 5"],
         "mentions": 1
       },
       {
         "book": "Colossians",
-        "references": [
-          "Colossians 3:8"
-        ],
+        "references": ["Colossians 3:8"],
         "mentions": 1
       }
     ],
@@ -20139,31 +19152,21 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 17"
-        ],
+        "references": ["Genesis 17"],
         "mentions": 3
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 4",
-          "Exodus 4:24"
-        ],
+        "references": ["Exodus 4", "Exodus 4:24"],
         "mentions": 2
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 11"
-        ],
+        "references": ["Judges 11"],
         "mentions": 1
       }
     ],
@@ -20308,23 +19311,16 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 2"
-        ],
+        "references": ["Genesis 2"],
         "mentions": 1
       },
       {
         "book": "John",
-        "references": [
-          "John 13"
-        ],
+        "references": ["John 13"],
         "mentions": 1
       }
     ],
@@ -20469,10 +19465,7 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Jeremiah",
@@ -20486,51 +19479,37 @@
       },
       {
         "book": "Galatians",
-        "references": [
-          "Galatians 3:28"
-        ],
+        "references": ["Galatians 3:28"],
         "mentions": 1
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1"
-        ],
+        "references": ["Genesis 1"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 40"
-        ],
+        "references": ["Isaiah 40"],
         "mentions": 1
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 13"
-        ],
+        "references": ["Romans 13"],
         "mentions": 1
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 34:17-20"
-        ],
+        "references": ["Psalms 34:17-20"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 18:10"
-        ],
+        "references": ["Deuteronomy 18:10"],
         "mentions": 1
       },
       {
         "book": "Acts",
-        "references": [
-          "Acts 16"
-        ],
+        "references": ["Acts 16"],
         "mentions": 1
       }
     ],
@@ -20631,10 +19610,7 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
         "book": "Leviticus",
@@ -20648,46 +19624,32 @@
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 18:20",
-          "Genesis 19"
-        ],
+        "references": ["Genesis 18:20", "Genesis 19"],
         "mentions": 5
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 1",
-          "Romans 12:16"
-        ],
+        "references": ["Romans 1", "Romans 12:16"],
         "mentions": 2
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 19"
-        ],
+        "references": ["Judges 19"],
         "mentions": 2
       },
       {
         "book": "Proverbs",
-        "references": [
-          "Proverbs 16:18"
-        ],
+        "references": ["Proverbs 16:18"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 2:10"
-        ],
+        "references": ["Isaiah 2:10"],
         "mentions": 1
       },
       {
         "book": "James",
-        "references": [
-          "James 4:6"
-        ],
+        "references": ["James 4:6"],
         "mentions": 1
       }
     ],
@@ -20840,48 +19802,31 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 6"
-        ],
+        "references": ["Genesis 1", "Genesis 6"],
         "mentions": 5
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 29",
-          "Psalms 74",
-          "Psalms 104"
-        ],
+        "references": ["Psalms 29", "Psalms 74", "Psalms 104"],
         "mentions": 4
       },
       {
         "book": "Proverbs",
-        "references": [
-          "Proverbs 22"
-        ],
+        "references": ["Proverbs 22"],
         "mentions": 2
       },
       {
         "book": "Haggai",
-        "references": [
-          "Haggai 1",
-          "Haggai 2"
-        ],
+        "references": ["Haggai 1", "Haggai 2"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 27:1"
-        ],
+        "references": ["Isaiah 27:1"],
         "mentions": 1
       }
     ],
@@ -21050,10 +19995,7 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Aaron Higashi"
-    ],
+    "speakers": ["Dan Beecher", "Aaron Higashi"],
     "chapters": [
       {
         "title": "Intro",
@@ -21103,61 +20045,42 @@
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 2",
-          "Genesis 10"
-        ],
+        "references": ["Genesis 2", "Genesis 10"],
         "mentions": 6
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 15",
-          "Exodus 23:24"
-        ],
+        "references": ["Exodus 15", "Exodus 23:24"],
         "mentions": 3
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 25",
-          "Numbers 31"
-        ],
+        "references": ["Numbers 25", "Numbers 31"],
         "mentions": 2
       },
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 16"
-        ],
+        "references": ["Ezekiel 16"],
         "mentions": 1
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 18:9"
-        ],
+        "references": ["Deuteronomy 18:9"],
         "mentions": 1
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 18"
-        ],
+        "references": ["Leviticus 18"],
         "mentions": 1
       },
       {
         "book": "Mark",
-        "references": [
-          "Mark 7"
-        ],
+        "references": ["Mark 7"],
         "mentions": 1
       },
       {
         "book": "Acts",
-        "references": [
-          "Acts 15"
-        ],
+        "references": ["Acts 15"],
         "mentions": 1
       }
     ],
@@ -21306,10 +20229,7 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "chapters": [
       {
         "title": "Intro",
@@ -21388,24 +20308,17 @@
     "scriptures": [
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 25"
-        ],
+        "references": ["Matthew 25"],
         "mentions": 5
       },
       {
         "book": "Leviticus",
-        "references": [
-          "Leviticus 19",
-          "Leviticus 19:33"
-        ],
+        "references": ["Leviticus 19", "Leviticus 19:33"],
         "mentions": 3
       },
       {
         "book": "Hosea",
-        "references": [
-          "Hosea 6:6"
-        ],
+        "references": ["Hosea 6:6"],
         "mentions": 1
       }
     ]
@@ -21557,41 +20470,27 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "episodeNumber": 118,
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 1",
-          "Genesis 11",
-          "Genesis 12"
-        ],
+        "references": ["Genesis 1", "Genesis 11", "Genesis 12"],
         "mentions": 9
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 82",
-          "Psalms 137"
-        ],
+        "references": ["Psalms 82", "Psalms 137"],
         "mentions": 3
       },
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 38"
-        ],
+        "references": ["Ezekiel 38"],
         "mentions": 1
       },
       {
         "book": "Joshua",
-        "references": [
-          "Joshua 11"
-        ],
+        "references": ["Joshua 11"],
         "mentions": 1
       }
     ]
@@ -21688,6 +20587,10 @@
         "mentions": 1
       },
       {
+        "tag": "Baruch",
+        "mentions": 1
+      },
+      {
         "tag": "Bel and the Dragon",
         "mentions": 1
       },
@@ -21767,17 +20670,12 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "episodeNumber": 119,
     "scriptures": [
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 1"
-        ],
+        "references": ["Isaiah 1"],
         "mentions": 1
       }
     ]
@@ -21870,6 +20768,10 @@
         "mentions": 1
       },
       {
+        "tag": "Ahab",
+        "mentions": 1
+      },
+      {
         "tag": "Assyria",
         "mentions": 1
       },
@@ -21929,55 +20831,37 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "episodeNumber": 120,
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 2",
-          "Genesis 3"
-        ],
+        "references": ["Genesis 2", "Genesis 3"],
         "mentions": 4
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 2:17",
-          "Exodus 33"
-        ],
+        "references": ["Exodus 2:17", "Exodus 33"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 1",
-          "Isaiah 6"
-        ],
+        "references": ["Isaiah 1", "Isaiah 6"],
         "mentions": 3
       },
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 28"
-        ],
+        "references": ["Ezekiel 28"],
         "mentions": 2
       },
       {
         "book": "Matthew",
-        "references": [
-          "Matthew 1:21"
-        ],
+        "references": ["Matthew 1:21"],
         "mentions": 1
       },
       {
         "book": "1 Kings",
-        "references": [
-          "1 Kings 22"
-        ],
+        "references": ["1 Kings 22"],
         "mentions": 1
       }
     ]
@@ -22014,12 +20898,20 @@
         "mentions": 10
       },
       {
+        "tag": "Rachel",
+        "mentions": 10
+      },
+      {
         "tag": "Sarah",
         "mentions": 10
       },
       {
         "tag": "YHWH",
         "mentions": 10
+      },
+      {
+        "tag": "Laban",
+        "mentions": 8
       },
       {
         "tag": "Jacob",
@@ -22082,6 +20974,10 @@
         "mentions": 1
       },
       {
+        "tag": "Leah",
+        "mentions": 1
+      },
+      {
         "tag": "Melchizedek",
         "mentions": 1
       },
@@ -22113,10 +21009,7 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan Beecher",
-      "Dan McClellan"
-    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
     "episodeNumber": 121,
     "scriptures": [
       {
@@ -22132,26 +21025,17 @@
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 17",
-          "Judges 18:3"
-        ],
+        "references": ["Judges 17", "Judges 18:3"],
         "mentions": 3
       },
       {
         "book": "1 Samuel",
-        "references": [
-          "1 Samuel 19",
-          "1 Samuel 19:13"
-        ],
+        "references": ["1 Samuel 19", "1 Samuel 19:13"],
         "mentions": 2
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 21",
-          "Exodus 22"
-        ],
+        "references": ["Exodus 21", "Exodus 22"],
         "mentions": 2
       }
     ]
@@ -22288,38 +21172,27 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "episodeNumber": 122,
     "scriptures": [
       {
         "book": "Romans",
-        "references": [
-          "Romans 3:25"
-        ],
+        "references": ["Romans 3:25"],
         "mentions": 2
       },
       {
         "book": "Hebrews",
-        "references": [
-          "Hebrews 2:17"
-        ],
+        "references": ["Hebrews 2:17"],
         "mentions": 1
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 53"
-        ],
+        "references": ["Isaiah 53"],
         "mentions": 1
       },
       {
         "book": "John",
-        "references": [
-          "John 3:16"
-        ],
+        "references": ["John 3:16"],
         "mentions": 1
       }
     ]
@@ -22334,6 +21207,10 @@
       {
         "tag": "Jezebel",
         "mentions": 27
+      },
+      {
+        "tag": "Ahab",
+        "mentions": 17
       },
       {
         "tag": "Baal",
@@ -22408,6 +21285,10 @@
         "mentions": 2
       },
       {
+        "tag": "Jael",
+        "mentions": 2
+      },
+      {
         "tag": "Moses",
         "mentions": 2
       },
@@ -22441,6 +21322,10 @@
       },
       {
         "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Deborah",
         "mentions": 1
       },
       {
@@ -22519,33 +21404,22 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "episodeNumber": 123,
     "scriptures": [
       {
         "book": "1 Kings",
-        "references": [
-          "1 Kings 16",
-          "1 Kings 21:25",
-          "1 Kings 18"
-        ],
+        "references": ["1 Kings 16", "1 Kings 21:25", "1 Kings 18"],
         "mentions": 4
       },
       {
         "book": "Revelation",
-        "references": [
-          "Revelation 2"
-        ],
+        "references": ["Revelation 2"],
         "mentions": 1
       },
       {
         "book": "Judges",
-        "references": [
-          "Judges 5"
-        ],
+        "references": ["Judges 5"],
         "mentions": 1
       }
     ]
@@ -22717,82 +21591,52 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "episodeNumber": 124,
     "scriptures": [
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 6",
-          "Genesis 6:3"
-        ],
+        "references": ["Genesis 6", "Genesis 6:3"],
         "mentions": 6
       },
       {
         "book": "Romans",
-        "references": [
-          "Romans 12",
-          "Romans 12:13",
-          "Romans 13:1"
-        ],
+        "references": ["Romans 12", "Romans 12:13", "Romans 13:1"],
         "mentions": 5
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 29",
-          "Psalms 82",
-          "Psalms 104:4"
-        ],
+        "references": ["Psalms 29", "Psalms 82", "Psalms 104:4"],
         "mentions": 3
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 21",
-          "Exodus 22"
-        ],
+        "references": ["Exodus 21", "Exodus 22"],
         "mentions": 3
       },
       {
         "book": "Job",
-        "references": [
-          "Job 1:6",
-          "Job 2",
-          "Job 7:5"
-        ],
+        "references": ["Job 1:6", "Job 2", "Job 7:5"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 6",
-          "Isaiah 100"
-        ],
+        "references": ["Isaiah 6", "Isaiah 100"],
         "mentions": 2
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 32:8-9"
-        ],
+        "references": ["Deuteronomy 32:8-9"],
         "mentions": 2
       },
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 13"
-        ],
+        "references": ["Numbers 13"],
         "mentions": 1
       },
       {
         "book": "Revelation",
-        "references": [
-          "Revelation 300"
-        ],
+        "references": ["Revelation 300"],
         "mentions": 1
       }
     ]
@@ -22837,6 +21681,10 @@
         "mentions": 4
       },
       {
+        "tag": "Asa",
+        "mentions": 4
+      },
+      {
         "tag": "Israel",
         "mentions": 4
       },
@@ -22854,6 +21702,10 @@
       },
       {
         "tag": "Dead Sea",
+        "mentions": 3
+      },
+      {
+        "tag": "Jehoshaphat",
         "mentions": 3
       },
       {
@@ -22948,85 +21800,57 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "episodeNumber": 125,
     "scriptures": [
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 151",
-          "Psalms 152"
-        ],
+        "references": ["Psalms 151", "Psalms 152"],
         "mentions": 13
       },
       {
         "book": "1 Kings",
-        "references": [
-          "1 Kings 15:12",
-          "1 Kings 14:24",
-          "1 Kings 15"
-        ],
+        "references": ["1 Kings 15:12", "1 Kings 14:24", "1 Kings 15"],
         "mentions": 5
       },
       {
         "book": "Genesis",
-        "references": [
-          "Genesis 38:21",
-          "Genesis 38:21-22"
-        ],
+        "references": ["Genesis 38:21", "Genesis 38:21-22"],
         "mentions": 2
       },
       {
         "book": "1 Samuel",
-        "references": [
-          "1 Samuel 17",
-          "1 Samuel 10"
-        ],
+        "references": ["1 Samuel 17", "1 Samuel 10"],
         "mentions": 2
       },
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 23:17"
-        ],
+        "references": ["Deuteronomy 23:17"],
         "mentions": 1
       },
       {
         "book": "2 Kings",
-        "references": [
-          "2 Kings 23:7"
-        ],
+        "references": ["2 Kings 23:7"],
         "mentions": 1
       },
       {
         "book": "Hosea",
-        "references": [
-          "Hosea 4:14"
-        ],
+        "references": ["Hosea 4:14"],
         "mentions": 1
       },
       {
         "book": "2 Samuel",
-        "references": [
-          "2 Samuel 21:19"
-        ],
+        "references": ["2 Samuel 21:19"],
         "mentions": 1
       },
       {
         "book": "Ezekiel",
-        "references": [
-          "Ezekiel 28"
-        ],
+        "references": ["Ezekiel 28"],
         "mentions": 1
       },
       {
         "book": "Job",
-        "references": [
-          "Job 36:14"
-        ],
+        "references": ["Job 36:14"],
         "mentions": 1
       }
     ]
@@ -23079,6 +21903,10 @@
         "mentions": 6
       },
       {
+        "tag": "Baruch",
+        "mentions": 5
+      },
+      {
         "tag": "King Josiah",
         "mentions": 5
       },
@@ -23116,6 +21944,10 @@
       },
       {
         "tag": "angel",
+        "mentions": 1
+      },
+      {
+        "tag": "Arad",
         "mentions": 1
       },
       {
@@ -23186,34 +22018,22 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "episodeNumber": 126,
     "scriptures": [
       {
         "book": "Deuteronomy",
-        "references": [
-          "Deuteronomy 6",
-          "Deuteronomy 6:1",
-          "Deuteronomy 6:4"
-        ],
+        "references": ["Deuteronomy 6", "Deuteronomy 6:1", "Deuteronomy 6:4"],
         "mentions": 12
       },
       {
         "book": "Song of Solomon",
-        "references": [
-          "Song of Solomon 6:9"
-        ],
+        "references": ["Song of Solomon 6:9"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
-        "references": [
-          "Isaiah 4",
-          "Isaiah 126"
-        ],
+        "references": ["Isaiah 4", "Isaiah 126"],
         "mentions": 2
       }
     ]
@@ -23345,47 +22165,32 @@
         "detectionMethod": "audio"
       }
     ],
-    "speakers": [
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
     "episodeNumber": 127,
     "scriptures": [
       {
         "book": "Numbers",
-        "references": [
-          "Numbers 10"
-        ],
+        "references": ["Numbers 10"],
         "mentions": 3
       },
       {
         "book": "Exodus",
-        "references": [
-          "Exodus 25"
-        ],
+        "references": ["Exodus 25"],
         "mentions": 2
       },
       {
         "book": "Joshua",
-        "references": [
-          "Joshua 3",
-          "Joshua 3:6"
-        ],
+        "references": ["Joshua 3", "Joshua 3:6"],
         "mentions": 2
       },
       {
         "book": "1 Samuel",
-        "references": [
-          "1 Samuel 3",
-          "1 Samuel 4:1"
-        ],
+        "references": ["1 Samuel 3", "1 Samuel 4:1"],
         "mentions": 2
       },
       {
         "book": "2 Samuel",
-        "references": [
-          "2 Samuel 6"
-        ],
+        "references": ["2 Samuel 6"],
         "mentions": 2
       }
     ]
@@ -23414,8 +22219,16 @@
         "mentions": 6
       },
       {
+        "tag": "Pseudepigrapha",
+        "mentions": 5
+      },
+      {
         "tag": "Galilee",
         "mentions": 4
+      },
+      {
+        "tag": "Sea of Galilee",
+        "mentions": 3
       },
       {
         "tag": "forgery",
@@ -23513,36 +22326,2047 @@
         "detectionMethod": "manual"
       }
     ],
-    "speakers": [
-      "Hugo Méndez",
-      "Dan McClellan",
-      "Dan Beecher"
-    ],
+    "speakers": ["Hugo Méndez", "Dan McClellan", "Dan Beecher"],
     "episodeNumber": 128,
     "scriptures": [
       {
         "book": "John",
-        "references": [
-          "John 1",
-          "John 1:1",
-          "John 1:12",
-          "John 10",
-          "John 21"
-        ],
+        "references": ["John 1", "John 1:1", "John 1:12", "John 10", "John 21"],
         "mentions": 7
       },
       {
         "book": "Psalms",
-        "references": [
-          "Psalms 82"
-        ],
+        "references": ["Psalms 82"],
         "mentions": 2
       },
       {
         "book": "Isaiah",
+        "references": ["Isaiah 1:14"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "2Znu-wgg2Hw",
+    "title": "Biblical Sex Toys?!?",
+    "publishedAt": "2025-09-22T00:00:00Z",
+    "processedAt": "2026-04-04T21:50:59.612Z",
+    "transcriptPath": "data/transcripts/2025-09-22-biblical-sex-toys.txt",
+    "tags": [
+      {
+        "tag": "Gideon",
+        "mentions": 72
+      },
+      {
+        "tag": "angel",
+        "mentions": 19
+      },
+      {
+        "tag": "Baal",
+        "mentions": 18
+      },
+      {
+        "tag": "Israel",
+        "mentions": 14
+      },
+      {
+        "tag": "Midianites",
+        "mentions": 13
+      },
+      {
+        "tag": "Joash",
+        "mentions": 12
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 9
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 7
+      },
+      {
+        "tag": "Sodom",
+        "mentions": 5
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 5
+      },
+      {
+        "tag": "Canaanites",
+        "mentions": 3
+      },
+      {
+        "tag": "Moses",
+        "mentions": 3
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 2
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 2
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Gomorrah",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 2
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Amorites",
+        "mentions": 1
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "El",
+        "mentions": 1
+      },
+      {
+        "tag": "Hagar",
+        "mentions": 1
+      },
+      {
+        "tag": "King David",
+        "mentions": 1
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 1
+      },
+      {
+        "tag": "Samson",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:31.163]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:02:31.163]",
+        "endTimestamp": "[00:44:26.051]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "twisted-scripture",
+        "startTimestamp": "[00:44:26.051]",
+        "endTimestamp": "[00:58:17.921]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 129,
+    "scriptures": [
+      {
+        "book": "Ezekiel",
+        "references": ["Ezekiel 16", "Ezekiel 16:17"],
+        "mentions": 2
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges 6", "Judges 13"],
+        "mentions": 2
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 33:20"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "Sfp8Vj-Ouxw",
+    "title": "Blessed Baruch!",
+    "publishedAt": "2025-09-29T00:00:00Z",
+    "processedAt": "2026-04-04T22:06:30.750Z",
+    "transcriptPath": "data/transcripts/2025-09-29-blessed-baruch.txt",
+    "tags": [
+      {
+        "tag": "Jeremiah",
+        "mentions": 36
+      },
+      {
+        "tag": "Baruch",
+        "mentions": 28
+      },
+      {
+        "tag": "Paul",
+        "mentions": 12
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 12
+      },
+      {
+        "tag": "Israel",
+        "mentions": 8
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 8
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 6
+      },
+      {
+        "tag": "Cyrus the Great",
+        "mentions": 6
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 6
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 5
+      },
+      {
+        "tag": "Belshazzar",
+        "mentions": 4
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 4
+      },
+      {
+        "tag": "Judah",
+        "mentions": 4
+      },
+      {
+        "tag": "Nebuchadnezzar",
+        "mentions": 4
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 4
+      },
+      {
+        "tag": "Apocrypha",
+        "mentions": 3
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 3
+      },
+      {
+        "tag": "Latin Vulgate",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Jehoiakim",
+        "mentions": 2
+      },
+      {
+        "tag": "Christian Nationalism",
+        "mentions": 1
+      },
+      {
+        "tag": "Flavius Josephus",
+        "mentions": 1
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerome",
+        "mentions": 1
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Mount Sinai",
+        "mentions": 1
+      },
+      {
+        "tag": "Origen",
+        "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Second Temple period",
+        "mentions": 1
+      },
+      {
+        "tag": "textual criticism",
+        "mentions": 1
+      },
+      {
+        "tag": "Torah",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:00.424]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "is-it-canon",
+        "startTimestamp": "[00:02:00.424]",
+        "endTimestamp": "[00:45:06.061]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
+    "episodeNumber": 130,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 3:29", "Isaiah 45", "Isaiah 45:1"],
+        "mentions": 3
+      },
+      {
+        "book": "Jeremiah",
+        "references": ["Jeremiah 29", "Jeremiah 36"],
+        "mentions": 2
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 24:10"],
+        "mentions": 1
+      },
+      {
+        "book": "Proverbs",
+        "references": ["Proverbs 8"],
+        "mentions": 1
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew 17:21"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "ro4MNHH7T5k",
+    "title": "You Want a Boat? I Noah Guy",
+    "publishedAt": "2025-10-06T00:00:00Z",
+    "processedAt": "2026-04-04T22:15:27.947Z",
+    "transcriptPath": "data/transcripts/2025-10-06-you-want-a-boat-i-noah-guy.txt",
+    "tags": [
+      {
+        "tag": "Noah",
+        "mentions": 33
+      },
+      {
+        "tag": "Flood",
+        "mentions": 8
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 7
+      },
+      {
+        "tag": "Ararat",
+        "mentions": 5
+      },
+      {
+        "tag": "Ham",
+        "mentions": 5
+      },
+      {
+        "tag": "Japheth",
+        "mentions": 4
+      },
+      {
+        "tag": "Shem",
+        "mentions": 4
+      },
+      {
+        "tag": "Cain",
+        "mentions": 2
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 2
+      },
+      {
+        "tag": "Ken Ham",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 2
+      },
+      {
+        "tag": "Lamech",
+        "mentions": 2
+      },
+      {
+        "tag": "Luke",
+        "mentions": 2
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Canaan",
+        "mentions": 1
+      },
+      {
+        "tag": "Garden of Eden",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 1
+      },
+      {
+        "tag": "Solomon",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:19.735]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "textual-healing",
+        "startTimestamp": "[00:02:19.735]",
+        "endTimestamp": "[00:36:21.692]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "terrible-parables",
+        "startTimestamp": "[00:36:21.692]",
+        "endTimestamp": "[00:51:59.601]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 131,
+    "scriptures": [
+      {
+        "book": "Genesis",
         "references": [
-          "Isaiah 1:14"
+          "Genesis 1",
+          "Genesis 4",
+          "Genesis 5",
+          "Genesis 6",
+          "Genesis 9"
         ],
+        "mentions": 11
+      },
+      {
+        "book": "Luke",
+        "references": ["Luke 12:33"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "04EVQLvnAj8",
+    "title": "Peter Thiel is Bankrupt! (Theologically)",
+    "publishedAt": "2025-10-13T00:00:00Z",
+    "processedAt": "2026-04-05T01:30:01.566Z",
+    "transcriptPath": "data/transcripts/2025-10-13-peter-thiel-is-bankrupt-theologically.txt",
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 19
+      },
+      {
+        "tag": "Peter",
+        "mentions": 11
+      },
+      {
+        "tag": "Molek",
+        "mentions": 10
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 6
+      },
+      {
+        "tag": "Paul",
+        "mentions": 6
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 5
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 3
+      },
+      {
+        "tag": "Capernaum",
+        "mentions": 3
+      },
+      {
+        "tag": "King David",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 3
+      },
+      {
+        "tag": "Solomon",
+        "mentions": 3
+      },
+      {
+        "tag": "child sacrifice",
+        "mentions": 2
+      },
+      {
+        "tag": "cognitive dissonance",
+        "mentions": 2
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 2
+      },
+      {
+        "tag": "Israel",
+        "mentions": 2
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 2
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 1
+      },
+      {
+        "tag": "Leningrad Codex",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Silas",
+        "mentions": 1
+      },
+      {
+        "tag": "Ten Commandments",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:58.506]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "twisted-scripture",
+        "startTimestamp": "[00:01:58.506]",
+        "endTimestamp": "[00:37:01.732]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:37:01.732]",
+        "endTimestamp": "[00:57:04.161]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 132,
+    "scriptures": [
+      {
+        "book": "Acts",
+        "references": ["Acts 4", "Acts 7:43"],
+        "mentions": 5
+      },
+      {
+        "book": "Amos",
+        "references": ["Amos 5:26"],
+        "mentions": 3
+      },
+      {
+        "book": "Luke",
+        "references": ["Luke 12", "Luke 18"],
+        "mentions": 2
+      },
+      {
+        "book": "1 Thessalonians",
+        "references": ["1 Thessalonians 5:3"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel 12:4"],
+        "mentions": 1
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew 19"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark 10"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "8nkm6_nzl8k",
+    "title": "The Adult(ery) Episode",
+    "publishedAt": "2025-10-20T00:00:00Z",
+    "processedAt": "2026-04-05T01:39:42.680Z",
+    "transcriptPath": "data/transcripts/2025-10-20-the-adultery-episode.txt",
+    "tags": [
+      {
+        "tag": "Israel",
+        "mentions": 29
+      },
+      {
+        "tag": "Judah",
+        "mentions": 10
+      },
+      {
+        "tag": "Baal",
+        "mentions": 8
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 8
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 6
+      },
+      {
+        "tag": "King David",
+        "mentions": 5
+      },
+      {
+        "tag": "Samaria",
+        "mentions": 5
+      },
+      {
+        "tag": "Ten Commandments",
+        "mentions": 5
+      },
+      {
+        "tag": "Paul",
+        "mentions": 4
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 3
+      },
+      {
+        "tag": "Gomer",
+        "mentions": 3
+      },
+      {
+        "tag": "Hezekiah",
+        "mentions": 3
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 3
+      },
+      {
+        "tag": "Bathsheba",
+        "mentions": 2
+      },
+      {
+        "tag": "Jehu",
+        "mentions": 2
+      },
+      {
+        "tag": "King Saul",
+        "mentions": 2
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 2
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 1
+      },
+      {
+        "tag": "Assyria",
+        "mentions": 1
+      },
+      {
+        "tag": "Council of Nicaea",
+        "mentions": 1
+      },
+      {
+        "tag": "Cyrus the Great",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Elijah",
+        "mentions": 1
+      },
+      {
+        "tag": "Hagar",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 1
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 1
+      },
+      {
+        "tag": "Leah",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Persia",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 1
+      },
+      {
+        "tag": "Rachel",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Solomon",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:42.985]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "its-the-law",
+        "startTimestamp": "[00:03:42.985]",
+        "endTimestamp": "[00:34:29.079]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:34:29.079]",
+        "endTimestamp": "[01:07:35.781]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 133,
+    "scriptures": [
+      {
+        "book": "Exodus",
+        "references": ["Exodus 20", "Exodus 22:16", "Exodus 34"],
+        "mentions": 5
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 3", "Deuteronomy 5", "Deuteronomy 22:28"],
+        "mentions": 5
+      },
+      {
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians 7:1-5"],
+        "mentions": 3
+      },
+      {
+        "book": "Hosea",
+        "references": ["Hosea 1:2", "Hosea 6:6", "Hosea 14:9"],
+        "mentions": 3
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 15", "Isaiah 20"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Chronicles",
+        "references": ["2 Chronicles 36"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "FL5YxTKUioI",
+    "title": "Don't Get Cross With Me",
+    "publishedAt": "2025-10-27T00:00:00Z",
+    "processedAt": "2026-04-05T01:46:18.980Z",
+    "transcriptPath": "data/transcripts/2025-10-27-dont-get-cross-with-me.txt",
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 26
+      },
+      {
+        "tag": "King James Version",
+        "mentions": 6
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 3
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 3
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 2
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "Solomon",
+        "mentions": 2
+      },
+      {
+        "tag": "Constantine",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Irenaeus",
+        "mentions": 1
+      },
+      {
+        "tag": "Israel",
+        "mentions": 1
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 1
+      },
+      {
+        "tag": "Pontius Pilate",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:05:21.208]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "historys-mysteries",
+        "startTimestamp": "[00:05:21.208]",
+        "endTimestamp": "[00:31:13.551]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:31:13.551]",
+        "endTimestamp": "[00:48:44.401]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 134,
+    "scriptures": [
+      {
+        "book": "Ezekiel",
+        "references": ["Ezekiel 37", "Ezekiel 37:9"],
+        "mentions": 2
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 1", "Genesis 1:2"],
+        "mentions": 2
+      },
+      {
+        "book": "Ecclesiastes",
+        "references": ["Ecclesiastes 5", "Ecclesiastes 11:5"],
+        "mentions": 2
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 21"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "efYng6wT4YY",
+    "title": "Should Wives Submit?",
+    "publishedAt": "2025-11-03T00:00:00Z",
+    "processedAt": "2026-04-05T01:53:50.957Z",
+    "transcriptPath": "data/transcripts/2025-11-03-should-wives-submit.txt",
+    "tags": [
+      {
+        "tag": "Jesus",
+        "mentions": 12
+      },
+      {
+        "tag": "Paul",
+        "mentions": 12
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 9
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 6
+      },
+      {
+        "tag": "apocalypse",
+        "mentions": 5
+      },
+      {
+        "tag": "Baal",
+        "mentions": 3
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 3
+      },
+      {
+        "tag": "angel",
+        "mentions": 2
+      },
+      {
+        "tag": "Flavius Josephus",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Eve",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "Israel",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Nephilim",
+        "mentions": 1
+      },
+      {
+        "tag": "Pastoral Epistles",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:47.995]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:01:47.995]",
+        "endTimestamp": "[00:32:39.553]",
+        "confidence": "verified",
+        "detectionMethod": "llm"
+      },
+      {
+        "type": "the-x-files",
+        "startTimestamp": "[00:32:39.553]",
+        "endTimestamp": "[01:00:35.001]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "chapters": [
+      {
+        "title": "Intro & Patriarchy Teaser",
+        "startTime": 0
+      },
+      {
+        "title": "Ephesians Explained",
+        "startTime": 120
+      },
+      {
+        "title": "Greek Grammar & Context",
+        "startTime": 360
+      },
+      {
+        "title": "Submission and Misogyny",
+        "startTime": 495
+      },
+      {
+        "title": "Pseudo-Paul and Household Codes",
+        "startTime": 720
+      },
+      {
+        "title": "Greek Philosophy & Early Christianity",
+        "startTime": 1080
+      },
+      {
+        "title": "Evolving Laws & Modern Faith",
+        "startTime": 1560
+      },
+      {
+        "title": "The Chi Files Intro",
+        "startTime": 1950
+      },
+      {
+        "title": "Ancient Aliens & Zecharia Sitchin",
+        "startTime": 2025
+      },
+      {
+        "title": "Nibiru, Tiamat & Anunnaki",
+        "startTime": 2160
+      },
+      {
+        "title": "Why Gold?",
+        "startTime": 2340
+      },
+      {
+        "title": "From Sumer to Scripture",
+        "startTime": 2430
+      },
+      {
+        "title": "Ezekiel’s UFO Vision",
+        "startTime": 2490
+      },
+      {
+        "title": "Prophets on Drugs?",
+        "startTime": 2685
+      },
+      {
+        "title": "Wheels of Fire & Dyson Spheres",
+        "startTime": 2715
+      },
+      {
+        "title": "Why Alien Theories Persist",
+        "startTime": 2820
+      }
+    ],
+    "episodeNumber": 135,
+    "scriptures": [
+      {
+        "book": "Ephesians",
+        "references": ["Ephesians 5", "Ephesians 5:22", "Ephesians 6"],
+        "mentions": 5
+      },
+      {
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians 11", "1 Corinthians 7"],
+        "mentions": 2
+      },
+      {
+        "book": "Ezekiel",
+        "references": ["Ezekiel 1", "Ezekiel 1:4"],
+        "mentions": 2
+      },
+      {
+        "book": "Zechariah",
+        "references": ["Zechariah 5"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "H2pVUWUFUts",
+    "title": "Close Encounters of the Catholic Kind",
+    "publishedAt": "2025-11-10T00:00:00Z",
+    "processedAt": "2026-04-05T02:29:22.756Z",
+    "transcriptPath": "data/transcripts/2025-11-10-close-encounters-of-the-catholic-kind.txt",
+    "tags": [
+      {
+        "tag": "Catholicism",
+        "mentions": 48
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 13
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 11
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 11
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 5
+      },
+      {
+        "tag": "Gospel of James",
+        "mentions": 5
+      },
+      {
+        "tag": "The Reformation",
+        "mentions": 4
+      },
+      {
+        "tag": "Deutero-Isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 2
+      },
+      {
+        "tag": "Junia",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "angel",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Candida Moss",
+        "mentions": 1
+      },
+      {
+        "tag": "Gabriel",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:46.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:46.000]",
+        "endTimestamp": "[01:02:20.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:02:20.000]",
+        "endTimestamp": "[01:03:28.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Michael Peppard", "Dan McClellan"],
+    "episodeNumber": 136,
+    "scriptures": [
+      {
+        "book": "Psalms",
+        "references": ["Psalms 82"],
+        "mentions": 2
+      },
+      {
+        "book": "Proverbs",
+        "references": ["Proverbs 31"],
+        "mentions": 1
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 6:2-4"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "lwvdqRsQF-c",
+    "title": "It's a Jubilee!",
+    "publishedAt": "2025-11-17T00:00:00Z",
+    "processedAt": "2026-04-05T02:37:09.584Z",
+    "transcriptPath": "data/transcripts/2025-11-17-its-a-jubilee.txt",
+    "tags": [
+      {
+        "tag": "Moses",
+        "mentions": 21
+      },
+      {
+        "tag": "angel",
+        "mentions": 20
+      },
+      {
+        "tag": "Quran",
+        "mentions": 12
+      },
+      {
+        "tag": "biblical canon",
+        "mentions": 9
+      },
+      {
+        "tag": "Sodom",
+        "mentions": 9
+      },
+      {
+        "tag": "Adam",
+        "mentions": 7
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 7
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 5
+      },
+      {
+        "tag": "Islam",
+        "mentions": 5
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 4
+      },
+      {
+        "tag": "Judas Iscariot",
+        "mentions": 4
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 3
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 3
+      },
+      {
+        "tag": "Lot",
+        "mentions": 3
+      },
+      {
+        "tag": "Sukkot",
+        "mentions": 3
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 2
+      },
+      {
+        "tag": "Eve",
+        "mentions": 2
+      },
+      {
+        "tag": "Satan",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "Flavius Josephus",
+        "mentions": 1
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "James VanderKam",
+        "mentions": 1
+      },
+      {
+        "tag": "John",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 1
+      },
+      {
+        "tag": "Justin Martyr",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Maccabees",
+        "mentions": 1
+      },
+      {
+        "tag": "Moab",
+        "mentions": 1
+      },
+      {
+        "tag": "Origen",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 1
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Talmud",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:44.325]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "is-it-canon",
+        "startTimestamp": "[00:01:44.325]",
+        "endTimestamp": "[00:29:45.046]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:29:45.046]",
+        "endTimestamp": "[00:55:03.041]",
+        "confidence": "verified",
+        "detectionMethod": "pattern"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "chapters": [
+      {
+        "title": "Intro",
+        "startTime": 0
+      },
+      {
+        "title": "Is It Canon? Jubilees",
+        "startTime": 75
+      },
+      {
+        "title": "What Is the Book of Jubilees?",
+        "startTime": 192
+      },
+      {
+        "title": "Why Ethiopia Preserved Jubilees",
+        "startTime": 242
+      },
+      {
+        "title": "Dead Sea Scrolls & Jubilees’ Importance",
+        "startTime": 310
+      },
+      {
+        "title": "Jubilees as Rewritten Genesis",
+        "startTime": 454
+      },
+      {
+        "title": "The 364-Day Calendar",
+        "startTime": 620
+      },
+      {
+        "title": "Early Biblical Apologetics",
+        "startTime": 829
+      },
+      {
+        "title": "Adam’s “One Day = 1000 Years”",
+        "startTime": 899
+      },
+      {
+        "title": "Sodom Story Rewritten",
+        "startTime": 1146
+      },
+      {
+        "title": "Surprising Emphases in Jubilees",
+        "startTime": 1323
+      },
+      {
+        "title": "Who Really “Wrote” Jubilees?",
+        "startTime": 1395
+      },
+      {
+        "title": "Angel Mediator Tradition",
+        "startTime": 1463
+      },
+      {
+        "title": "Early Christian Use of Jubilees",
+        "startTime": 1562
+      },
+      {
+        "title": "Best Modern Translation",
+        "startTime": 1764
+      },
+      {
+        "title": "Taking Issue",
+        "startTime": 1879
+      },
+      {
+        "title": "The Viral Bible Cross-Reference Chart",
+        "startTime": 1960
+      },
+      {
+        "title": "The 63,779 Claim Explained",
+        "startTime": 2039
+      },
+      {
+        "title": "What Counts as a Cross-Reference",
+        "startTime": 2146
+      },
+      {
+        "title": "Why the Bible References Itself",
+        "startTime": 2307
+      },
+      {
+        "title": "Why the Chart Fails as Evidence",
+        "startTime": 2364
+      },
+      {
+        "title": "Judas Death Contradiction",
+        "startTime": 2418
+      },
+      {
+        "title": "Fake Qur’an Chart Debunked",
+        "startTime": 2834
+      },
+      {
+        "title": "Online Islamophobia Misinformation",
+        "startTime": 2909
+      }
+    ],
+    "episodeNumber": 137,
+    "scriptures": [
+      {
+        "book": "Genesis",
+        "references": [
+          "Genesis 1",
+          "Genesis 1:1",
+          "Genesis 2:17",
+          "Genesis 18",
+          "Genesis 19",
+          "Genesis 50"
+        ],
+        "mentions": 13
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 5", "Isaiah 49", "Isaiah 50"],
+        "mentions": 3
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 23", "Exodus 24"],
+        "mentions": 2
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew 18:7", "Matthew 27:3-10"],
+        "mentions": 2
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 119:18", "Psalms 129"],
+        "mentions": 2
+      },
+      {
+        "book": "Galatians",
+        "references": ["Galatians 3"],
+        "mentions": 1
+      },
+      {
+        "book": "Ezekiel",
+        "references": ["Ezekiel 37"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark 14"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "mMJ5mHoWrSM",
+    "title": "Who Deserves to Eat?",
+    "publishedAt": "2025-11-24T00:00:00Z",
+    "processedAt": "2026-04-05T02:48:32.738Z",
+    "transcriptPath": "data/transcripts/2025-11-24-who-deserves-to-eat.txt",
+    "tags": [
+      {
+        "tag": "Egypt",
+        "mentions": 30
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 23
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 16
+      },
+      {
+        "tag": "Paul",
+        "mentions": 15
+      },
+      {
+        "tag": "Israel",
+        "mentions": 5
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 4
+      },
+      {
+        "tag": "Hebrews",
+        "mentions": 4
+      },
+      {
+        "tag": "Mesopotamian",
+        "mentions": 4
+      },
+      {
+        "tag": "Pastoral Epistles",
+        "mentions": 3
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 2
+      },
+      {
+        "tag": "Egyptians",
+        "mentions": 2
+      },
+      {
+        "tag": "Flavius Josephus",
+        "mentions": 2
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Syria",
+        "mentions": 2
+      },
+      {
+        "tag": "Ararat",
+        "mentions": 1
+      },
+      {
+        "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "Jericho",
+        "mentions": 1
+      },
+      {
+        "tag": "Saint Titus",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:23.364]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:02:23.364]",
+        "endTimestamp": "[00:35:09.328]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:35:09.328]",
+        "endTimestamp": "[00:51:30.241]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 138,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 2"],
+        "mentions": 1
+      },
+      {
+        "book": "Luke",
+        "references": ["Luke 12"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Thessalonians",
+        "references": ["2 Thessalonians 3:10"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "_9yyHZkqA5c",
+    "title": "Polygamy!",
+    "publishedAt": "2025-12-01T00:00:00Z",
+    "processedAt": "2026-04-05T03:00:34.537Z",
+    "transcriptPath": "data/transcripts/2025-12-01-polygamy.txt",
+    "tags": [
+      {
+        "tag": "Solomon",
+        "mentions": 23
+      },
+      {
+        "tag": "Israel",
+        "mentions": 18
+      },
+      {
+        "tag": "King David",
+        "mentions": 18
+      },
+      {
+        "tag": "Paul",
+        "mentions": 11
+      },
+      {
+        "tag": "Rehoboam",
+        "mentions": 11
+      },
+      {
+        "tag": "Molek",
+        "mentions": 8
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 7
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 7
+      },
+      {
+        "tag": "Ammonites",
+        "mentions": 6
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 6
+      },
+      {
+        "tag": "Egypt",
+        "mentions": 5
+      },
+      {
+        "tag": "Jesus",
+        "mentions": 5
+      },
+      {
+        "tag": "King Saul",
+        "mentions": 5
+      },
+      {
+        "tag": "Leah",
+        "mentions": 4
+      },
+      {
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Moab",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Aesop",
+        "mentions": 1
+      },
+      {
+        "tag": "archaeology",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "etiology",
+        "mentions": 1
+      },
+      {
+        "tag": "Eve",
+        "mentions": 1
+      },
+      {
+        "tag": "Flavius Josephus",
+        "mentions": 1
+      },
+      {
+        "tag": "Rezin",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Shishak",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:10.685]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:02:10.685]",
+        "endTimestamp": "[00:37:59.665]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:37:59.665]",
+        "endTimestamp": "[00:58:30.781]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 139,
+    "scriptures": [
+      {
+        "book": "1 Timothy",
+        "references": ["1 Timothy 3:2", "1 Timothy 5:9"],
+        "mentions": 8
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 2:24", "Genesis 30"],
+        "mentions": 3
+      },
+      {
+        "book": "Leviticus",
+        "references": ["Leviticus 18", "Leviticus 18:18"],
+        "mentions": 2
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew 19:9", "Matthew 27:52-53"],
+        "mentions": 2
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 2"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Chronicles",
+        "references": ["2 Chronicles 24"],
+        "mentions": 1
+      },
+      {
+        "book": "Ephesians",
+        "references": ["Ephesians 4"],
+        "mentions": 1
+      },
+      {
+        "book": "Malachi",
+        "references": ["Malachi 2:15-16"],
+        "mentions": 1
+      },
+      {
+        "book": "Romans",
+        "references": ["Romans 11:29"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Kings",
+        "references": ["1 Kings 11"],
         "mentions": 1
       }
     ]

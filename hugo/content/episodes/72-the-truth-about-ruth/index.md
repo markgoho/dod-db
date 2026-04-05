@@ -25,14 +25,17 @@ tags:
   - Isaiah
   - King Josiah
   - Mesopotamian
+  - Arad
   - archaeology
   - Babylon
   - Jonah
   - King David
   - King James Version
+  - Leah
   - Mary Magdalene
   - Paul
   - Peter
+  - Rachel
 books:
   - 2 Kings
 segments:
@@ -47,7 +50,6 @@ segmentData:
     startSeconds: 2357.242
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.120] Dan Beecher: We scared him away, everybody. Yeah, with our, with all of our gold. We terrified them and they ran like cowards.{{< /line >}}
 {{< line >}}[00:00:09.280] Dan McClellan: What were all those trunks that they were carrying out of Jerusalem? Never mind, never mind. You didn't see any of them. Hey, everybody, I'm Dan McClellan.{{< /line >}}

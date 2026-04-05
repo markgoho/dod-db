@@ -16,6 +16,7 @@ tags:
   - Moses
   - Judah
   - Philistines
+  - Baruch
   - King Josiah
   - biblical canon
   - Hebrews
@@ -26,6 +27,7 @@ tags:
   - Isaac
   - Isaiah
   - angel
+  - Arad
   - Asherah
   - Baal
   - Deutero-Isaiah
@@ -53,7 +55,6 @@ segmentData:
     startSeconds: 1818.829
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.156] Dan McClellan: What's the Song of Songs all about?{{< /line >}}
 {{< line >}}[00:00:03.501] Dan Beecher: Songs. Oh, sex.{{< /line >}}

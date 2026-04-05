@@ -58,7 +58,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan McClellan: The Rapture is, is something that some, some dudes made up that was then leveraged as a means of. Of trying to influence people to be good, to eat their vegetables, to not touch themselves. That's just a tool, a piece of leverage that people use to try to control behavior and incentivize or disincentivize certain behaviors. And it has been phenomenally harmful to entire generations. And, and stop it. Hey, Everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:37.670] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:38.950] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation about the same. How are things, Dan?{{< /line >}}

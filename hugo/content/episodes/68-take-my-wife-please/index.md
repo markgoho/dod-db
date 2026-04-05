@@ -11,6 +11,7 @@ tags:
   - Onan
   - Tamar
   - Deuteronomy
+  - Shelah
   - Israel
   - Ruth
   - Boaz
@@ -36,7 +37,6 @@ segmentData:
     startSeconds: 2267.944
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.200] Dan McClellan: It's no benefit to us if we kill our brother. Let's sell him. So Judah's already not looking good from a modern sensibilities point of view. But he's a dick is what he—to put it bluntly, yes, that is what Judah is. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:24.520] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

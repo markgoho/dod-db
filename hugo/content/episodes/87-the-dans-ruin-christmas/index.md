@@ -23,6 +23,7 @@ tags:
   - Elizabeth
   - Hebrews
   - Herod the Great
+  - Sea of Galilee
   - Syria
   - Deuteronomy
   - Israel
@@ -46,7 +47,6 @@ books:
   - Luke
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.120] Dan McClellan: I think it's just. It's just vibes, you know, we. So here it is, the Lamb of God. So you gotta have some shepherds come by and go, yep, that's the Lamb of God. Okay, well, there's your problem right there. You left him in the manger. Wait, you can take him out of the manger. Hey Everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:27.440] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

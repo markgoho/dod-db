@@ -14,11 +14,13 @@ tags:
   - Garden of Eden
   - Maccabees
   - angel
+  - Asa
   - Israel
   - Judah
   - Satan
   - archaeology
   - Dead Sea
+  - Jehoshaphat
   - Philistines
   - Adam
   - Apocrypha
@@ -59,7 +61,6 @@ segmentData:
     startSeconds: 1870.881
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.219] Dan McClellan: Well, if you use "an," you don't pronounce the H, because that's why it's "an," because they didn't pronounce the H.{{< /line >}}
 {{< line >}}[00:00:06.272] Dan Beecher: Don't tell me how to pronounce things. People are in our comment sections telling us how to pronounce things, and frankly, pedantry is the most boring thing in the world.{{< /line >}}

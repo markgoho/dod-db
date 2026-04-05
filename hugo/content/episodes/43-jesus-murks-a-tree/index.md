@@ -37,6 +37,7 @@ tags:
   - Maccabees
   - Passover
   - Peter
+  - Quran
   - theophany
 books:
   - Isaiah
@@ -54,7 +55,6 @@ segmentData:
     startSeconds: 1892
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.120] Dan McClellan: Out of methodological necessity. Critical scholarship cannot accept real prophecy, at least in my opinion. Which means that, no, if the text says there's this dude named Cyrus. That text was written after that dude named Cyrus was on the scene. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:21.400] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

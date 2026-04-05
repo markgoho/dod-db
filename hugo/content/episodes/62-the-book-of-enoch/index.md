@@ -17,6 +17,7 @@ tags:
   - Daniel
   - Adam
   - Cain
+  - Asael
   - Dead Sea Scrolls
   - Flood
   - Ham
@@ -36,6 +37,7 @@ tags:
   - Israel
   - Jared
   - Origen
+  - Pseudepigrapha
   - Shem
   - Africa
   - Apocrypha
@@ -61,7 +63,6 @@ segmentData:
     startSeconds: 84.388
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.120] Dan Beecher: If you feel inclined to start conspiracy theories based on this book, get on with your bad self. You're just giving Dan fodder for his TikToks.{{< /line >}}
 {{< line >}}[00:00:10.320] Dan McClellan: It's just job security at this point. That's right. That's right.{{< /line >}}

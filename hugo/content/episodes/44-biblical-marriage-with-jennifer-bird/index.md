@@ -32,7 +32,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan McClellan: You see this in Paul's sexuality as well. Paul is very much, in my opinion, he's suggesting one that passion is for the dirty, dirty Gentiles.{{< /line >}}
 {{< line >}}[00:00:11.680] Jennifer Bird: Yes.{{< /line >}}
 {{< line >}}[00:00:12.320] Dan McClellan: Because sex is supposed to be holy and with honor, not with the passion of desire.{{< /line >}}

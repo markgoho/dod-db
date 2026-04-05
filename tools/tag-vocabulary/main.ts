@@ -253,6 +253,7 @@ interface TagDefinition {
   caseSensitive?: boolean;
   description?: string;
   status?: string;
+  episodes?: number[];
   duplicateOf?: string;
 }
 

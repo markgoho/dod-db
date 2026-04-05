@@ -27,6 +27,7 @@ tags:
   - Athanasius of Alexandria
   - Maccabees
   - Protestantism
+  - Baruch
   - Catholicism
   - Ishmael
   - The Reformation
@@ -54,6 +55,7 @@ tags:
   - Hanukkah
   - Midianites
   - Moses
+  - Pseudepigrapha
   - YHWH
 books:
   - Genesis
@@ -71,7 +73,6 @@ segmentData:
     startSeconds: 1592
 draft: false
 ---
-
 
 {{< line >}}[00:00:02.000] Dan McClellan: The first point to make is that these ages are just fictional. People were not living this long anciently.{{< /line >}}
 {{< line >}}[00:00:08.240] Dan Beecher: And wait a minute. You are saying that Methuselah did not live 969 years?{{< /line >}}

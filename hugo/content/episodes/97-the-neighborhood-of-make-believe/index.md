@@ -51,7 +51,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.040] Dan Beecher: Is it me or is this bush not really burning, man? I can't tell. It looks like it's just on fire, but never burns.{{< /line >}}
 {{< line >}}[00:00:08.640] Dan McClellan: You got any more of that manna? Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:18.640] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

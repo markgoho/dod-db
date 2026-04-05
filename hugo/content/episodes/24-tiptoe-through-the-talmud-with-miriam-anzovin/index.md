@@ -23,7 +23,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:02.160] Miriam Anzovin: Rabbinic Judaism has an oral tradition of teachings, traditions, rules, laws, however you want to put it, that were transmitted, at least this is how it's explained. Transmitted generation to generation verbally. And then what happened is the Roman Empire, unfortunately for everybody. And I don't care that they make nice roads. I don't care. But, you know, what about the aqueducts? I don't care. I don't.{{< /line >}}
 {{< line >}}[00:00:31.980] Dan McClellan: You know, what else have they done for us?{{< /line >}}
 {{< line >}}[00:00:33.580] Miriam Anzovin: Yeah, what have they done? They stole my. They stole our menorah. Okay? That was the least of what they did. And am I going to the Vatican to get it out of the basement? I will. For anyone who wants to join me on that highly illegal heist.{{< /line >}}

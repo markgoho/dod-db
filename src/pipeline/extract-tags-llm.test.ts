@@ -37,7 +37,8 @@ describe("extractTagsLlm", () => {
             tag: "Holy Grail",
             mentions: 4,
             category: "miscellaneous",
-            description: "A legendary Christian relic discussed in the episode.",
+            description:
+              "A legendary Christian relic discussed in the episode.",
             variations: ["holy grail"],
           },
         ],
@@ -79,7 +80,8 @@ describe("extractTagsLlm", () => {
             tag: "Holy Grail",
             mentions: 4,
             category: "miscellaneous",
-            description: "A legendary Christian relic discussed in the episode.",
+            description:
+              "A legendary Christian relic discussed in the episode.",
           },
         ],
       }),
@@ -110,7 +112,8 @@ describe("extractTagsLlm", () => {
             tag: "Holy Grail",
             mentions: 2,
             category: "miscellaneous",
-            description: "A legendary Christian relic discussed in the episode.",
+            description:
+              "A legendary Christian relic discussed in the episode.",
           },
         ],
       }),

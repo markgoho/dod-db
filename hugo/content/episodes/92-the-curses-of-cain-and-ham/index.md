@@ -29,6 +29,7 @@ tags:
   - Jesus
   - Philo of Alexandria
   - Ugarit
+  - Abel
   - Adam
   - Africa
   - biblical canon
@@ -59,7 +60,6 @@ segmentData:
     startSeconds: 1898
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.120] Dan McClellan: It still goes on today. There are plenty of folks today who try to find ways to read racism into the Bible. We're still struggling with trying to figure out how to not read the Bible with the goal of hurting other people. So the vindicatory approach to the Bible is still very much in vogue. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:25.970] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

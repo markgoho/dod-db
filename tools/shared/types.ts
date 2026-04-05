@@ -92,4 +92,5 @@ export interface TagVocabularyEntry {
   caseSensitive?: boolean;
   description?: string;
   status?: string;
+  episodes?: number[];
 }

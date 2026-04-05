@@ -28,15 +28,19 @@ tags:
   - Isaiah
   - Matthew
   - Septuagint
+  - Sisera
   - Apocrypha
+  - Baruch
   - Book of Enoch
   - Catholicism
   - Daniel
   - Dead Sea Scrolls
+  - Deborah
   - Gentiles
   - Hell
   - King David
   - Luke
+  - Pseudepigrapha
   - Sarah
   - Torah
   - Tower of Babel
@@ -52,7 +56,6 @@ guests:
   - David A. Burnett
 draft: false
 ---
-
 
 {{< line >}}[00:00:02.080] Dan McClellan: If we want to understand the Bible and early Judaism and early Christianity on its own terms, rather than on the terms we are imposing, we need to rethink this category and talk more about something like one God rhetoric, where we. We see people talking about the one God the way that I talk about the Denver Broncos in the late 90s. There's no other team. The Oakland Raiders. They're not even a football team. Like, it's the same kind of rhetoric. It's not an actual philosophical assertion that the Raiders do not exist as a football team. I wish that were the case, but it's not. And so I, I think we need to shift to talking about one God rhetoric. Hey, Everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:52.860] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

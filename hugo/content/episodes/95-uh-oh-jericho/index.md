@@ -27,6 +27,7 @@ tags:
   - Qumran
   - Aesop
   - Ammonites
+  - Ararat
   - Cain
   - David Carr
   - Eve
@@ -49,7 +50,6 @@ segmentData:
     startSeconds: 2114.291
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.040] Dan McClellan: The walls of Jericho came tumbling down a number of times long before any historical Joshua could have existed. And that was because of battering rams and siege ramps and torches, and not because of the Ark of the Covenant, the blast of a ram's horn and everybody yelling really loud. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:24.320] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

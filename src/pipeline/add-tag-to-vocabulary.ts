@@ -22,6 +22,7 @@ export type AddTagParams =
       status?: TagStatus;
       caseSensitive?: boolean;
       addedInEpisode?: number;
+      episodes?: number[];
     }
   | {
       canonical: string;
@@ -32,6 +33,7 @@ export type AddTagParams =
       status?: TagStatus;
       caseSensitive?: boolean;
       addedInEpisode?: number;
+      episodes?: number[];
     };
 
 /**
@@ -87,11 +89,18 @@ export async function addTagToVocabulary(
   const descriptionString = parameters.description
     ? `, description: '${escapeForTsString(parameters.description)}'`
     : "";
+  const episodes = parameters.episodes
+    ? [...new Set(parameters.episodes)].sort((a, b) => a - b)
+    : undefined;
+  const episodesString =
+    episodes && episodes.length > 0
+      ? `, episodes: [${episodes.join(", ")}]`
+      : "";
 
   const newEntry =
     "llmVerify" in parameters && parameters.llmVerify
-      ? `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}', llmVerify: true, description: '${escapeForTsString(parameters.description)}'${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`
-      : `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}'${descriptionString}${statusString}${caseSensitiveString}${addedInEpisodeString} },\n`;
+      ? `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}', llmVerify: true, description: '${escapeForTsString(parameters.description)}'${statusString}${caseSensitiveString}${addedInEpisodeString}${episodesString} },\n`
+      : `\t{ canonical: '${escapeForTsString(canonical)}', variations: ${variationsString}, category: '${category}'${descriptionString}${statusString}${caseSensitiveString}${addedInEpisodeString}${episodesString} },\n`;
 
   // Insert the new entry before the closing bracket
   const beforeClosing = content.slice(0, closingBracketIndex);
@@ -113,6 +122,7 @@ export async function addTagToVocabulary(
       status,
       caseSensitive: parameters.caseSensitive,
       addedInEpisode: parameters.addedInEpisode,
+      episodes,
     } as TagDefinition);
   } else {
     // Build tag with description if provided
@@ -123,6 +133,7 @@ export async function addTagToVocabulary(
       status,
       caseSensitive: parameters.caseSensitive,
       addedInEpisode: parameters.addedInEpisode,
+      episodes,
     };
 
     tagVocabulary.push(

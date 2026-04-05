@@ -55,7 +55,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:02.240] Dan McClellan: The firstborn of thy sons shalt thou give unto me.{{< /line >}}
 {{< line >}}[00:00:06.800] Dan Beecher: Yikes.{{< /line >}}
 {{< line >}}[00:00:07.760] Dan McClellan: Yikes indeed.{{< /line >}}

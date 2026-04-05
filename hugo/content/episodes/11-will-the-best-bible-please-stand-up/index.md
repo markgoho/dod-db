@@ -17,6 +17,7 @@ tags:
   - Jesus
   - Egypt
   - James
+  - Pseudepigrapha
   - Desiderius Erasmus
   - Martin Luther
   - Jeremiah
@@ -62,7 +63,6 @@ books:
   - Deuteronomy
 draft: false
 ---
-
 
 {{< line >}}[00:00:02.160] Dan McClellan: And you can go visit the cave in Bethlehem where he spent 30 years translating his Vulgate. But this was a translation.{{< /line >}}
 {{< line >}}[00:00:11.760] Dan Beecher: There's dudes in their caves.{{< /line >}}

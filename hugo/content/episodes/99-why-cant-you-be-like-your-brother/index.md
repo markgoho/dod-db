@@ -49,6 +49,7 @@ tags:
   - Saint Titus
   - Sanhedrin
   - Satan
+  - Sea of Galilee
   - Septuagint
   - Torah
 books:
@@ -67,7 +68,6 @@ segmentData:
     startSeconds: 2010.98
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.040] Dan McClellan: He's like, I wish y'all were like me. But, you know, if you can't hack it, then go ahead, get married so you can have occasional prophylactic and passionless intercourse.{{< /line >}}
 {{< line >}}[00:00:12.800] Dan Beecher: Which sounds great.{{< /line >}}

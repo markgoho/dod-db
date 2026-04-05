@@ -8,12 +8,17 @@ aliases:
 tags:
   - King David
   - Israel
+  - Deborah
+  - Sisera
   - YHWH
   - King Saul
   - Jonathan
+  - Barak
   - Judah
   - Philistines
   - Bathsheba
+  - Jael
+  - Abigail
   - Solomon
   - Hebrews
   - Jephthah
@@ -32,6 +37,8 @@ tags:
   - King Josiah
   - Nehemiah
   - Paul
+  - Rehoboam
+  - Sea of Galilee
 books:
   - Judges
   - 1 Corinthians
@@ -47,7 +54,6 @@ segmentData:
     startSeconds: 2107.909
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.280] Dan McClellan: Saul was like, hey, love what you're doing down there. Keep up the good work.{{< /line >}}
 {{< line >}}[00:00:05.200] Dan Beecher: Love your work. Huge fan.{{< /line >}}

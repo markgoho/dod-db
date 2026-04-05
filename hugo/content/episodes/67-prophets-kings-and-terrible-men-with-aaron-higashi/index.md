@@ -17,6 +17,7 @@ tags:
   - Philistines
   - archaeology
   - Bathsheba
+  - Abigail
   - Goliath
   - Septuagint
   - Jerusalem
@@ -25,6 +26,7 @@ tags:
   - Christian Nationalism
   - Gideon
   - Joshua
+  - Rachel
   - Sheol
   - Talmud
   - Zipporah
@@ -34,7 +36,6 @@ guests:
   - Aaron Higashi
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.200] Aaron Higashi: Stories of David and Goliath, stories of David dancing in front of the ark. That's the image that you have of David in your mind as a child. And you try and come back to these stories as an adult and you find all these stories are compromised. There's not a single one of these classical stories that is not in some way overshadowed by these issues that you're probably going to pick up on as an adult. So what now? How can we take something from the story now that our more adult perspective on these characters has sort of come to light?{{< /line >}}
 {{< line >}}[00:00:32.680] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}

@@ -38,7 +38,9 @@ export type SegmentType =
   | "segment"
   | "segment-no-2"
   | "taking-issue"
+  | "terrible-parables"
   | "textual-healing"
+  | "the-x-files"
   | "thats-history"
   | "twisted-scripture"
   | "urban-legends"
@@ -88,7 +90,9 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   segment: "Segment (Unknown)",
   "segment-no-2": "Segment No. 2",
   "taking-issue": "Taking Issue",
+  "terrible-parables": "Terrible Parables",
   "textual-healing": "Textual Healing",
+  "the-x-files": "The X-Files",
   "thats-history": "That's History",
   "twisted-scripture": "Twisted Scripture",
   "urban-legends": "Urban Legends",
@@ -141,7 +145,9 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   segment: "#9ca3af", // gray-400 (neutral/unknown)
   "segment-no-2": "#34d399", // emerald-400 (fresh/secondary)
   "taking-issue": "#ea580c", // orange-600 (debate/critique)
+  "terrible-parables": "#c2410c", // orange-700 (grim cautionary storytelling)
   "textual-healing": "#0891b2", // cyan-600 (textual analysis/manuscripts)
+  "the-x-files": "#0f766e", // teal-700 (mysterious/paranormal)
   "thats-history": "#84cc16", // lime-500 (lime green)
   "twisted-scripture": "#7c2d12", // orange-900 (distortion/misuse warning)
   "urban-legends": "#8b5cf6", // violet
@@ -267,10 +273,20 @@ export const SEGMENT_PATTERNS: Record<
     /welcome to.*segment\s+no\.?\s*2/i,
     /segment\s+number\s+2/i,
   ],
+  "terrible-parables": [
+    /terrible parables/i,
+    /welcome to.*terrible parables/i,
+    /let'?s do.*terrible parables/i,
+  ],
   "textual-healing": [
     /textual healing/i,
     /welcome to.*textual healing/i,
     /segment.*textual healing/i,
+  ],
+  "the-x-files": [
+    /the x-files/i,
+    /welcome to.*the x-files/i,
+    /looks like x-files/i,
   ],
   "thats-history": [/that'?s history/i, /welcome to.*that'?s history/i],
   "twisted-scripture": [
@@ -310,11 +326,7 @@ export const SEGMENT_PATTERNS: Record<
   "by-the-numbers": [/by the numbers/i, /welcome to.*by the numbers/i],
   "getting-angelic": [/getting angelic/i, /welcome to.*getting angelic/i],
   "getting-demonic": [/getting demonic/i, /welcome to.*getting demonic/i],
-  grail: [
-    /the grail/i,
-    /welcome to.*the grail/i,
-    /let'?s do.*the grail/i,
-  ],
+  grail: [/the grail/i, /welcome to.*the grail/i, /let'?s do.*the grail/i],
   "here-we-go": [
     /here we go!?/i,
     /welcome to.*here we go/i,
@@ -434,8 +446,12 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
   "segment-no-2": "The second named segment of the episode",
   "taking-issue":
     "Critical analysis and debate of controversial biblical or theological topics",
+  "terrible-parables":
+    "Examining parables or parable-like stories with disturbing, unsettling, morally difficult, or unexpectedly dark themes",
   "textual-healing":
     "Examining textual criticism, manuscript variants, and biblical text transmission",
+  "the-x-files":
+    "Exploring aliens, extraterrestrials, UFO claims, and speculative connections between religion, the Bible, and paranormal or cosmic phenomena",
   "thats-history": "Historical context and background for biblical events",
   "twisted-scripture":
     "Examining scripture that is distorted, decontextualized, or rhetorically misused in argumentation or teaching",

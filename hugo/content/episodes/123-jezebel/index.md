@@ -7,6 +7,7 @@ aliases:
   - /episodes/123/
 tags:
   - Jezebel
+  - Ahab
   - Baal
   - Asherah
   - Paul
@@ -25,6 +26,7 @@ tags:
   - Egypt
   - Essenes
   - Hanukkah
+  - Jael
   - Moses
   - Samaria
   - YHWH
@@ -34,6 +36,7 @@ tags:
   - Balaam
   - Beelzebul
   - Dead Sea Scrolls
+  - Deborah
   - Deuteronomy
   - Enoch
   - Flavius Josephus
@@ -63,7 +66,6 @@ segmentData:
     startSeconds: 2229.531
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.089] Dan McClellan: According to some early Mormons, they inhabit an oasis behind ice walls up at the North Pole. So, wow.{{< /line >}}
 {{< line >}}[00:00:11.952] Dan Beecher: Yeah, just throwing that out there, man. You're just chucking that bomb and then running away.{{< /line >}}

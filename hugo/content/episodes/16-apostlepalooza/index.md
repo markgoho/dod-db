@@ -10,6 +10,7 @@ tags:
   - James
   - Matthew
   - Peter
+  - Junia
   - Paul
   - Joshua
   - Luke
@@ -46,7 +47,6 @@ segmentData:
     startSeconds: 2449
 draft: false
 ---
-
 
 {{< line >}}[00:00:02.480] Dan McClellan: I've seen this claim. I don't know where it's coming from. I don't know if there's. If this has ever been argued by any scholars, but I've seen some folks try to argue that Thomas is Jesus's twin.{{< /line >}}
 {{< line >}}[00:00:12.400] Dan Beecher: Okay, well, that would change the nativity stories a lot. Yeah, I mean, now we have to hire Danny DeVito to play Didymus, have.{{< /line >}}

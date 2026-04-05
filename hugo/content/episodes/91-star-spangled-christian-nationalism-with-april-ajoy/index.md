@@ -23,7 +23,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] April Ajoy: Like, when I take a step back, I'm like, no, y'all are demonizing me. And you're celebrating this man as someone that Jesus would, would choose to lead our Christian nation. I'm like, are you reading the Gospels at all?{{< /line >}}
 {{< line >}}[00:00:21.200] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:22.920] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

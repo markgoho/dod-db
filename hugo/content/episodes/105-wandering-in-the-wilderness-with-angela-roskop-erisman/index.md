@@ -37,7 +37,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Angela Roskop Erisman: The reason that we look for an Exodus and a Moses in the Late Bronze Age is because we understand this story as history writing. But once we understand that, oh, this started at least its life as fictional biography, that is political allegory, suddenly the whole world can look different.{{< /line >}}
 {{< line >}}[00:00:26.480] Dan McClellan: Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:28.240] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

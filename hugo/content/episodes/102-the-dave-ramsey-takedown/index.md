@@ -14,13 +14,16 @@ tags:
   - Joshua
   - Israel
   - Judaism
+  - Quran
   - YHWH
+  - Arad
   - Christian Nationalism
   - Isaiah
   - John
   - Judah
   - King James Version
   - Peter
+  - Sapphira
   - Ten Commandments
 books:
   - Deuteronomy
@@ -40,7 +43,6 @@ segmentData:
     startSeconds: 2002.638
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.200] Dan McClellan: We've got a fever. And the only prescription is to sell everything that you own and give the money to the poor.{{< /line >}}
 {{< line >}}[00:00:07.120] Dan Beecher: Yeah, exactly.{{< /line >}}

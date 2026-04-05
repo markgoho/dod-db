@@ -38,7 +38,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.360] Dan Beecher: My favorite of the tricks that he was like, okay, hey, put your hand in your robe. Okay, pull it out. Leprosy. He's like, ah. Wait, why, why did you do that? And he's like, okay, put it back in your robe. Now it's cured. That is not a good trick. Don't, don't, don't do that.{{< /line >}}
 {{< line >}}[00:00:21.440] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:23.240] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

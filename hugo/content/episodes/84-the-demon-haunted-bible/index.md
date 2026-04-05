@@ -40,6 +40,7 @@ tags:
   - Moses
   - Rapture
   - Samuel
+  - Sea of Galilee
   - Sheol
   - Ugarit
 books:
@@ -51,7 +52,6 @@ books:
   - Psalms
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.200] Dan Beecher: And of course, all of this is just something bad guys would say. So we're obviously in that... in that latter category.{{< /line >}}
 {{< line >}}[00:00:08.040] Dan McClellan: Yeah. Oh, yeah. I get reminded every day that I... that I am a demonic tool of Satan. Yeah. It warms the cockles of my demon-possessed heart. Hey, everybody, I'm Dan McClellan.{{< /line >}}

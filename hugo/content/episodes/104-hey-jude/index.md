@@ -76,7 +76,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.040] Dan McClellan: The word Baal, which is the name of the northwest Semitic storm deity. And so God is saying, get those nasty Baals' names out. Baal's names out of your mouth. And. Hey, Everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:21.440] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:22.640] Dan McClellan: And you're listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and we combat the spread of misinformation about the same. How go things today, Dan?{{< /line >}}

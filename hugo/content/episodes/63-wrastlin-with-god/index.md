@@ -13,8 +13,10 @@ tags:
   - angel
   - Abraham
   - El
+  - Laban
   - Esau
   - Hebrews
+  - Rachel
   - YHWH
   - Moses
   - John the Baptist
@@ -24,6 +26,7 @@ tags:
   - Hell
   - Jephthah
   - Judah
+  - Leah
   - apocalypse
   - Egypt
   - King James Version
@@ -47,7 +50,6 @@ segmentData:
     startSeconds: 1921.431
 draft: false
 ---
-
 
 {{< line >}}[00:00:00.240] Dan Beecher: Hey there, YouTubers, it's Dan Beecher. We had some technical difficulties and this week's show will have no video, so sorry about that. But please join us and listen with your ears. And next week, you can see our bright shining faces once more. Thanks.{{< /line >}}
 {{< line >}}[00:00:20.560] Dan McClellan: So there's some tradition, evidently, anciently, where Israelites were like, "Nope, can't eat that part."{{< /line >}}

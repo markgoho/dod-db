@@ -51,6 +51,10 @@ type TagVocabularyResponse = TagDefinition & {
   duplicateOf?: string;
 };
 
+type TagMigrationResult = {
+  episodeNumbers?: number[];
+};
+
 function getTagTerms(tag: TagDefinition): string[] {
   return [tag.canonical, ...tag.variations];
 }
@@ -298,7 +302,7 @@ async function computeTagStats(): Promise<TagStats[]> {
 async function runMigrationWithTagTracking(
   skipLlm = false,
   trackTag?: string,
-): Promise<string> {
+): Promise<{ jobId: string; completion: Promise<TagMigrationResult> }> {
   const jobId = `migration-${Date.now()}`;
   const job: MigrationJob = {
     id: jobId,
@@ -307,6 +311,13 @@ async function runMigrationWithTagTracking(
     startTime: Date.now(),
   };
   migrationJobs.set(jobId, job);
+
+  let resolveCompletion!: (result: TagMigrationResult) => void;
+  let rejectCompletion!: (error: unknown) => void;
+  const completion = new Promise<TagMigrationResult>((resolve, reject) => {
+    resolveCompletion = resolve;
+    rejectCompletion = reject;
+  });
 
   // Capture console output
   const originalLog = console.log;
@@ -329,13 +340,16 @@ async function runMigrationWithTagTracking(
   // Run reprocessing in background
   (async () => {
     try {
+      let migrationResult: TagMigrationResult = {};
+
       // If tracking a specific tag, use single-tag mode (much faster!)
       if (trackTag) {
         const result = await addTagToEpisodes({
           canonical: trackTag,
-          enableLlmVerification: true,
+          enableLlmVerification: !skipLlm,
           verbose: false,
         });
+        migrationResult = { episodeNumbers: result.episodeNumbers };
 
         // Show tag-specific results
         job.logs.push(
@@ -366,10 +380,12 @@ async function runMigrationWithTagTracking(
 
       job.status = "completed";
       job.exitCode = 0;
+      resolveCompletion(migrationResult);
     } catch (error) {
       job.logs.push(`\n[ERROR] Migration failed: ${error}\n`);
       job.status = "failed";
       job.exitCode = 1;
+      rejectCompletion(error);
     } finally {
       job.endTime = Date.now();
       // Restore console
@@ -381,7 +397,7 @@ async function runMigrationWithTagTracking(
     }
   })();
 
-  return jobId;
+  return { jobId, completion };
 }
 
 // Add a new pattern to segment-patterns.ts
@@ -618,9 +634,16 @@ const _server = Bun.serve({
           category?: string;
           llmVerify?: boolean;
           description?: string;
+          episodes?: number[];
         };
-        const { canonical, variations, category, llmVerify, description } =
-          body;
+        const {
+          canonical,
+          variations,
+          category,
+          llmVerify,
+          description,
+          episodes,
+        } = body;
 
         // Validate required fields
         if (!canonical || typeof canonical !== "string") {
@@ -674,17 +697,36 @@ const _server = Bun.serve({
               category: category as TagCategory,
               llmVerify: true,
               description: description!, // We validated this is present when llmVerify is true
+              episodes,
             }
           : {
               canonical,
               variations: variationsArray,
               category: category as TagCategory,
+              episodes,
             };
 
         await addTagToVocabulary(tagParameters);
 
         // Start reprocessing all episodes (skip LLM to save costs)
-        const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
+        const { jobId, completion } = await runMigrationWithTagTracking(
+          true,
+          canonical,
+        ); // skipLlm = true, track this tag
+        void completion
+          .then(async result => {
+            if (result.episodeNumbers) {
+              await updateTagInVocabulary(canonical, {
+                episodes: result.episodeNumbers,
+              });
+            }
+          })
+          .catch(error => {
+            console.error(
+              `Error persisting episodes for tag "${canonical}":`,
+              error,
+            );
+          });
 
         return jsonResponse({
           success: true,
@@ -708,7 +750,7 @@ const _server = Bun.serve({
       request.method === "POST"
     ) {
       try {
-        const jobId = await runMigrationWithTagTracking();
+        const { jobId } = await runMigrationWithTagTracking();
         return jsonResponse({ jobId, status: "started" });
       } catch (error) {
         return jsonResponse(
@@ -754,7 +796,9 @@ const _server = Bun.serve({
         const originalCanonical = decodeURIComponent(
           url.pathname.replace("/api/tag-vocabulary/vocabulary/update/", ""),
         );
-        const body = (await request.json()) as UpdateTagParameters;
+        const body = (await request.json()) as UpdateTagParameters & {
+          episodes?: number[];
+        };
 
         // Check if status is changing to 'accepted' (for auto-reprocessing)
         const existingTag = findTag(originalCanonical);
@@ -769,7 +813,24 @@ const _server = Bun.serve({
         // If tag was proposed and is now being accepted, reprocess all episodes
         if (wasProposed && isBeingAccepted) {
           const canonical = body.canonical || originalCanonical;
-          const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
+          const { jobId, completion } = await runMigrationWithTagTracking(
+            true,
+            canonical,
+          ); // skipLlm = true, track this tag
+          void completion
+            .then(async result => {
+              if (result.episodeNumbers) {
+                await updateTagInVocabulary(canonical, {
+                  episodes: result.episodeNumbers,
+                });
+              }
+            })
+            .catch(error => {
+              console.error(
+                `Error persisting episodes for tag "${canonical}":`,
+                error,
+              );
+            });
 
           return jsonResponse({
             success: true,
@@ -815,7 +876,24 @@ const _server = Bun.serve({
         statsCache.data = null;
 
         // Trigger reprocessing for this tag across all episodes (like manual add does)
-        const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
+        const { jobId, completion } = await runMigrationWithTagTracking(
+          true,
+          canonical,
+        ); // skipLlm = true, track this tag
+        void completion
+          .then(async result => {
+            if (result.episodeNumbers) {
+              await updateTagInVocabulary(canonical, {
+                episodes: result.episodeNumbers,
+              });
+            }
+          })
+          .catch(error => {
+            console.error(
+              `Error persisting episodes for tag "${canonical}":`,
+              error,
+            );
+          });
 
         return jsonResponse({
           success: true,
@@ -1054,7 +1132,24 @@ const _server = Bun.serve({
         }
 
         // Start reprocessing for this tag (with LLM verification enabled)
-        const jobId = await runMigrationWithTagTracking(false, canonical); // skipLlm = false, track this tag
+        const { jobId, completion } = await runMigrationWithTagTracking(
+          false,
+          canonical,
+        ); // skipLlm = false, track this tag
+        void completion
+          .then(async result => {
+            if (result.episodeNumbers) {
+              await updateTagInVocabulary(canonical, {
+                episodes: result.episodeNumbers,
+              });
+            }
+          })
+          .catch(error => {
+            console.error(
+              `Error persisting episodes for tag "${canonical}":`,
+              error,
+            );
+          });
 
         return jsonResponse({
           success: true,

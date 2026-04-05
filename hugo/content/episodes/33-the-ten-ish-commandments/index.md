@@ -30,6 +30,7 @@ tags:
   - Josephus
   - Septuagint
   - Amorites
+  - Arad
   - Canaanites
   - circumcision
   - Gentiles
@@ -61,7 +62,6 @@ segmentData:
     startSeconds: 2118
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.280] Dan McClellan: The idea is basically, you're paying money so that you don't have to sacrifice this animal or this child.{{< /line >}}
 {{< line >}}[00:00:08.560] Dan Beecher: It's a nice donkey you got there. I hate for anything to happen to it. You know, if you give us a little bit of money, well, we'll let it go.{{< /line >}}

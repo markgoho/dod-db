@@ -7,6 +7,7 @@ aliases:
   - /episodes/73/
 tags:
   - YHWH
+  - Ketef Hinnom
   - Egypt
   - King Saul
   - Israel
@@ -35,6 +36,7 @@ tags:
   - Jerusalem
   - Jonathan
   - Judas Iscariot
+  - Laban
   - Mesopotamian
   - Moab
   - Nehemiah
@@ -42,6 +44,7 @@ tags:
   - Philistines
   - Samuel
   - Satan
+  - Sea of Galilee
 books:
   - Numbers
   - 1 Samuel
@@ -58,7 +61,6 @@ segmentData:
     startSeconds: 161.006
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.200] Dan McClellan: Throughout the ancient world, everybody just seemed to presuppose that, yeah, there's magic out there, that witchcraft works. It's just a matter of trying to suggest that when we do it, the person on the other end of the line is righteous. When they do it, it's demons. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:20.040] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

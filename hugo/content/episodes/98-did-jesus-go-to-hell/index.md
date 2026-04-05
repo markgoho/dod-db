@@ -25,6 +25,7 @@ tags:
   - Judaism
   - Justin Martyr
   - Abraham
+  - Asael
   - Bart Ehrman
   - Gaza
   - Holy Spirit
@@ -49,7 +50,6 @@ segmentData:
     startSeconds: 1989.959
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.200] Dan McClellan: "Today you will be with me in paradise." {{< scripture ref="Luke 23:43" >}}. He did not say, "I will see you in hell." Yeah, that would be a weird thing for Jesus to—{{< /line >}}
 {{< line >}}[00:00:11.760] Dan Beecher: That would be so much better, though, if Jesus turns to the guy on the other cross and goes, "I'll see you in hell."{{< /line >}}

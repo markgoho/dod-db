@@ -15,6 +15,7 @@ tags:
   - Dead Sea
   - Jesus
   - Judah
+  - Arad
   - archaeology
   - King David
   - Goliath
@@ -38,6 +39,7 @@ tags:
   - Moab
   - monotheism
   - Samuel
+  - Sea of Galilee
 books:
   - Genesis
   - 1 Samuel
@@ -55,7 +57,6 @@ segmentData:
     startSeconds: 2224.59
 draft: false
 ---
-
 
 {{< line >}}[00:00:02.320] Dan Beecher: The question becomes, how could God regret or repent himself of something? And someone online has this answer to that.{{< /line >}}
 {{< line >}}[00:00:14.880] Dan McClellan: So the Hebrew word for regret is nacham, and it's difficult to translate into English. Well, I'm gonna have to say. All right, let's see it.{{< /line >}}

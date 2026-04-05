@@ -8,6 +8,7 @@ aliases:
 tags:
   - Cain
   - Adam
+  - Abel
   - Seth
   - YHWH
   - Eve
@@ -36,7 +37,6 @@ books:
   - Job
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.040] Dan Beecher: Why do you hate the Bible, Dan?{{< /line >}}
 {{< line >}}[00:00:02.880] Dan McClellan: Well, it's because I hate God. Can't you tell?{{< /line >}}

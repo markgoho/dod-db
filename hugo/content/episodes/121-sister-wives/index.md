@@ -12,8 +12,10 @@ tags:
   - Egypt
   - Philistines
   - King David
+  - Rachel
   - Sarah
   - YHWH
+  - Laban
   - Jacob
   - Judah
   - Lot
@@ -29,6 +31,7 @@ tags:
   - Hebrews
   - Jephthah
   - Jonah
+  - Leah
   - Melchizedek
   - Nineveh
 books:
@@ -48,7 +51,6 @@ segmentData:
     startSeconds: 2336.263
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.120] Dan Beecher: I would say that God was the master of mixed messaging. I'm gonna kill you if you don't let her go. I didn't do anything. I know because I stopped you.{{< /line >}}
 {{< line >}}[00:00:10.040] Dan McClellan: Yeah, a bit of a narcissist.{{< /line >}}

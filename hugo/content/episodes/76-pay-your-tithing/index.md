@@ -9,6 +9,7 @@ tags:
   - Jesus
   - Deuteronomy
   - Peter
+  - Sapphira
   - YHWH
   - Abraham
   - Judah
@@ -44,7 +45,6 @@ segmentData:
     startSeconds: 1761.897
 draft: false
 ---
-
 
 {{< line >}}[00:00:01.120] Dan McClellan: And I see this all the time. Oh, that's situational. That's Jesus giving specific guidance to one individual person. That's not generalizable. That's not universalizable. It's like, I, I kind of think it is.{{< /line >}}
 {{< line >}}[00:00:13.200] Dan Beecher: Why would it be in there if it weren't?{{< /line >}}

@@ -44,7 +44,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.280] Dan McClellan: Well, I hesitated to—like, when I decided to make this video this morning for my social media, I was like contemplating, do I really want to do this? I'm opening myself up for criticism. But I was like, no, if I feel this way, I've got to go through with this just because I wouldn't be able to look at myself in the mirror. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:26.920] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:27.880] Dan McClellan: And you're listening to the Data Over Dogma podcast where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation. About the same. How goes the storm, Dan?{{< /line >}}
