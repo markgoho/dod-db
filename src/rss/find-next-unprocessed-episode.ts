@@ -4,12 +4,12 @@ import { slugifyTitle } from "../hugo/slugify-title.js";
 import { fetchRawVideoMetadata } from "../pipeline/fetch-video-metadata.js";
 import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 import {
-  fetchPatreonRss,
+  fetchPodcastRss,
   isAfterPartyItem,
   matchRssItemToVideo,
-  parsePatreonRss,
+  parsePodcastRss,
 } from "./index.js";
-import type { PatreonRssItem } from "./patreon-rss-item.js";
+import type { PodcastRssItem } from "./patreon-rss-item.js";
 
 const CHANNEL_URL = "https://www.youtube.com/@DataOverDogma/videos";
 const RECENT_YOUTUBE_RESULTS = 40;
@@ -29,8 +29,10 @@ export interface YouTubeCandidate {
 }
 
 export interface NextUnprocessedEpisodeResult {
-  rssItem: PatreonRssItem;
+  rssItem: PodcastRssItem;
   candidates: YouTubeCandidate[];
+  audioUrl?: string;
+  preferAudio: boolean;
 }
 
 interface YouTubeVideo {
@@ -42,7 +44,7 @@ function normalizeTitle(title: string): string {
   return slugifyTitle(extractCleanTitle(title));
 }
 
-function scoreCandidate(item: PatreonRssItem, video: YouTubeVideo): number {
+function scoreCandidate(item: PodcastRssItem, video: YouTubeVideo): number {
   const normalizedItemTitle = normalizeTitle(item.title);
   const normalizedVideoTitle = normalizeTitle(video.title);
 
@@ -66,7 +68,7 @@ function scoreCandidate(item: PatreonRssItem, video: YouTubeVideo): number {
 }
 
 function rankCandidates(
-  item: PatreonRssItem,
+  item: PodcastRssItem,
   videos: YouTubeVideo[],
 ): YouTubeCandidate[] {
   return videos
@@ -103,6 +105,14 @@ function classifyCandidateVideoType(
   }
 
   return "unknown";
+}
+
+function shouldPreferAudio(candidates: YouTubeCandidate[]): boolean {
+  if (candidates.length === 0) {
+    return true;
+  }
+
+  return !candidates.some(candidate => candidate.videoType === "video");
 }
 
 async function enrichCandidatesWithVideoType(
@@ -165,24 +175,26 @@ async function fetchLatestYouTubeVideos(
     });
 }
 
-export async function findNextUnprocessedEpisode(): Promise<
-  NextUnprocessedEpisodeResult | undefined
-> {
-  if (!youtubeConfig.patreonRssUrl) {
-    throw new Error("PATREON_RSS_URL is not set");
+export async function findNextUnprocessedEpisode(
+  rssUrlOverride?: string,
+): Promise<NextUnprocessedEpisodeResult | undefined> {
+  const canonicalRssUrl = rssUrlOverride ?? youtubeConfig.canonicalRssUrl;
+
+  if (!canonicalRssUrl) {
+    throw new Error("Canonical RSS URL is not set");
   }
 
   const [rssXml, processedVideos, recentYouTubeVideos] = await Promise.all([
-    fetchPatreonRss(youtubeConfig.patreonRssUrl),
+    fetchPodcastRss(canonicalRssUrl),
     loadProcessedVideos(),
     fetchLatestYouTubeVideos(),
   ]);
 
   if (!rssXml) {
-    throw new Error("Failed to load Patreon RSS");
+    throw new Error("Failed to load canonical RSS");
   }
 
-  const canonicalItems = parsePatreonRss(rssXml)
+  const canonicalItems = parsePodcastRss(rssXml)
     .filter(item => !isAfterPartyItem(item))
     .sort(
       (a, b) => new Date(a.pubDate).getTime() - new Date(b.pubDate).getTime(),
@@ -204,6 +216,8 @@ export async function findNextUnprocessedEpisode(): Promise<
     return {
       rssItem: nextItem,
       candidates: recentCandidates,
+      audioUrl: nextItem.enclosureUrl,
+      preferAudio: shouldPreferAudio(recentCandidates),
     };
   }
 
@@ -211,12 +225,16 @@ export async function findNextUnprocessedEpisode(): Promise<
     EXTENDED_YOUTUBE_RESULTS,
   );
 
+  const extendedCandidates = await enrichCandidatesWithVideoType(
+    rankCandidates(nextItem, extendedYouTubeVideos),
+  );
+
   return {
     rssItem: nextItem,
-    candidates: await enrichCandidatesWithVideoType(
-      rankCandidates(nextItem, extendedYouTubeVideos),
-    ),
+    candidates: extendedCandidates,
+    audioUrl: nextItem.enclosureUrl,
+    preferAudio: shouldPreferAudio(extendedCandidates),
   };
 }
 
-export { rankCandidates };
+export { rankCandidates, shouldPreferAudio };

@@ -68,7 +68,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.090] Dan McClellan: Somebody listening to this is going to be like, "Dan, you moron." Ah, got him!{{< /line >}}
 {{< line >}}[00:00:05.626] Dan Beecher: He got him, everybody! He didn't know which one it was. Ha!{{< /line >}}
 {{< line >}}[00:00:14.443] Dan McClellan: Hey everybody, I'm Dan McClellan.{{< /line >}}

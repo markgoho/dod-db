@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const PatreonRssItemSchema = z.object({
+export const PodcastRssItemSchema = z.object({
   title: z.string(),
   pubDate: z.string(),
   guid: z.string(),
@@ -8,4 +8,7 @@ export const PatreonRssItemSchema = z.object({
   itunesEpisode: z.number().int().positive().optional(),
 });
 
-export type PatreonRssItem = z.infer<typeof PatreonRssItemSchema>;
+export type PodcastRssItem = z.infer<typeof PodcastRssItemSchema>;
+
+export const PatreonRssItemSchema = PodcastRssItemSchema;
+export type PatreonRssItem = PodcastRssItem;

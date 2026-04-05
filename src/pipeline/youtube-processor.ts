@@ -37,6 +37,7 @@ export interface ProcessYouTubeVideoResult {
 export interface ProcessYouTubeVideoOptions {
   force?: boolean;
   startFrom?: "correct" | "segment-detection" | "extract-tags";
+  audioUrl?: string;
 }
 
 /**
@@ -361,6 +362,7 @@ export async function processYouTubeVideo(
   console.log("Marking video as processed...");
   const episodeNumber = await markVideoAsProcessed({
     videoId,
+    ...(options.audioUrl !== undefined && { audioUrl: options.audioUrl }),
     title: metadata.title,
     publishedAt: metadata.publishedAt,
     processedAt: new Date().toISOString(),

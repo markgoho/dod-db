@@ -29,7 +29,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.138] Dan McClellan: So here's where I'm going to say something that is going to annoy an awful lot of people. You can define sin about as well as you can define what success means. It's 100% vibes. Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:21.833] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:22.875] Dan McClellan: And you're listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion, and we combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}

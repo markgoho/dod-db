@@ -28,6 +28,7 @@ import type { CorrectionCandidate } from "../pipeline/correction-tracker.js";
 import { deleteTagFromVocabulary } from "../pipeline/delete-tag-from-vocabulary.js";
 import { findTag } from "../pipeline/find-tag.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
+import { generateTranscriptFilename } from "../pipeline/generate-transcript-filename.js";
 import { getPendingCandidates } from "../pipeline/get-pending-candidates.js";
 import { loadTracker } from "../pipeline/load-tracker.js";
 import { rejectCandidate } from "../pipeline/reject-candidate.js";
@@ -456,11 +457,11 @@ async function addPatternToConfig(
   console.log(`Added pattern for ${segmentType}: ${pattern}`);
 }
 
-// Get audio file path for a video ID
+// Get audio file path for a processed record
 async function getAudioFilePath(videoId: string): Promise<string | null> {
   const audioDir = youtubeConfig.audioDirectory;
 
-  // Try common extensions
+  // Try common extensions for legacy YouTube-backed episodes
   const extensions = [".webm", ".m4a", ".mp3", ".wav"];
 
   for (const extension of extensions) {
@@ -468,6 +469,33 @@ async function getAudioFilePath(videoId: string): Promise<string | null> {
     const file = Bun.file(filePath);
     if (await file.exists()) {
       return filePath;
+    }
+  }
+
+  // RSS-backed episodes store audio using the generated transcript filename stem
+  const videos = await loadProcessedVideos();
+  const video = videos.find(item => item.videoId === videoId);
+  if (!video) {
+    return null;
+  }
+
+  const filename = generateTranscriptFilename(video.title, video.publishedAt);
+  const rssAudioPath = path.join(
+    audioDir,
+    `rss-${filename.replace(/\.txt$/, "")}.mp3`,
+  );
+
+  if (await Bun.file(rssAudioPath).exists()) {
+    return rssAudioPath;
+  }
+
+  if (video.audioUrl) {
+    const audioFiles = Array.from(new Bun.Glob("rss-*.mp3").scanSync(audioDir));
+    const matchingFile = audioFiles.find(fileName =>
+      fileName.includes(filename.replace(/\.txt$/, "")),
+    );
+    if (matchingFile) {
+      return path.join(audioDir, matchingFile);
     }
   }
 
@@ -1254,8 +1282,15 @@ const _server = Bun.serve({
     // Segment Verification API: Get all episodes with segments
     if (url.pathname === "/api/segment-verification/episodes") {
       const videos = await getProcessedVideosWithNumbers();
+      const videosWithAudio = await Promise.all(
+        videos.map(async video => ({
+          ...video,
+          hasAudio: !!(await getAudioFilePath(video.videoId)),
+        })),
+      );
+
       // Sort by episode number
-      const sorted = [...videos].sort(
+      const sorted = [...videosWithAudio].sort(
         (a, b) => (a.episodeNumber || 0) - (b.episodeNumber || 0),
       );
       return jsonResponse(sorted);

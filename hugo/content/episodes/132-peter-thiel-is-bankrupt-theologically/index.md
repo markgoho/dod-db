@@ -50,7 +50,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.235] Dan McClellan: You have a lot of folks who are like, "Ah, the Jesus fish is just a sideways vulva with a tail." With a tail, sure, sure. And so it's all— this is all about worship of the divine feminine and that holy vulva. With her tail. Yeah. Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:25.283] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:26.823] Dan McClellan: You're listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion, and we combat the spread of misinformation about the same. How are things, Dan?{{< /line >}}

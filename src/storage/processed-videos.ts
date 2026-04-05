@@ -72,6 +72,11 @@ export const VideoChapterSchema = z.object({
 
 export const ProcessedVideoSchema = z.object({
   videoId: z.string().describe("YouTube video ID"),
+  audioUrl: z
+    .string()
+    .url()
+    .optional()
+    .describe("Canonical podcast audio URL for site embedding"),
   title: z.string().describe("Video title"),
   publishedAt: z.string().describe("ISO 8601 publication date"),
   processedAt: z.string().describe("ISO 8601 processing timestamp"),

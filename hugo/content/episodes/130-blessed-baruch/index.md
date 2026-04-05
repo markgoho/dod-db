@@ -56,7 +56,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.138] Dan Beecher: Maybe Paul read this. Maybe Paul was into this thing.{{< /line >}}
 {{< line >}}[00:00:03.640] Dan McClellan: Maybe Paul was. I think Paul was probably into a lot of the, you know, the more underground stuff. You've probably never heard of it.{{< /line >}}
 {{< line >}}[00:00:12.525] Dan Beecher: I liked Baruch back when it was— I liked his early stuff.{{< /line >}}

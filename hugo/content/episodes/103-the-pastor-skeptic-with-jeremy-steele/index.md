@@ -16,7 +16,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.440] Jeremy Steele: When a kid comes out, it's a 15% chance that they'll try to kill themselves. If they're rejected on religious grounds by their family, that doubles. Why don't we set the bar at only sharing beliefs that don't make them want to kill themselves? Right. It's a low bar, but I—{{< /line >}}
 {{< line >}}[00:00:19.280] Dan Beecher: It seems so great.{{< /line >}}
 {{< line >}}[00:00:20.360] Jeremy Steele: I feel like we can clear it. Yeah. Right.{{< /line >}}

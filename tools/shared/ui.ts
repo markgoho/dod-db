@@ -3,6 +3,7 @@
  */
 
 import type { TagCategory } from "../../src/config/tag-vocabulary.js";
+import { API_BASE_URL } from "./constants.js";
 import { escapeHtml, formatDate } from "./formatting.js";
 import { secondsToTimestamp, timestampToSeconds } from "./timestamp.js";
 import type { AudioPlayerOptions, BreadcrumbItem, Episode } from "./types.js";
@@ -43,7 +44,7 @@ export function createAudioPlayer(
 
   const audio = document.createElement("audio");
   audio.controls = true;
-  audio.src = `/api/audio/${videoId}`;
+  audio.src = `${API_BASE_URL}/api/audio/${videoId}`;
   audio.style.width = "100%";
 
   const timeDisplay = document.createElement("span");

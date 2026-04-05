@@ -59,7 +59,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan Beecher: I mean, in. In fairness to Ham, there were like seven people left in the whole world. So, like, you know, there's not. There's not many people that can satisfy whatever sexy feelings you're having. But still, your dad or your mom is probably the wrong choice.{{< /line >}}
 {{< line >}}[00:00:21.040] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:22.680] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

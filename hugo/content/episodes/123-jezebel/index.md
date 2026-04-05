@@ -67,7 +67,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.089] Dan McClellan: According to some early Mormons, they inhabit an oasis behind ice walls up at the North Pole. So, wow.{{< /line >}}
 {{< line >}}[00:00:11.952] Dan Beecher: Yeah, just throwing that out there, man. You're just chucking that bomb and then running away.{{< /line >}}
 {{< line >}}[00:00:17.881] Dan McClellan: Okay, it's what we do here. We show up, we muddy the waters, and we scamper off. Hey everybody, I'm Dan McClellan.{{< /line >}}

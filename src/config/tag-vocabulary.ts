@@ -5151,16 +5151,17 @@ export const tagVocabulary: TagDefinition[] = [
       "The Second Vatican Council, a gathering of Catholic leaders in the 1960s that led to significant reforms",
     status: "proposed",
     addedInEpisode: 136,
-  },	{
-		canonical: 'Marcion',
-		variations: [],
-		category: 'person',
-		llmVerify: true,
-		description: 'Early Christian theologian who rejected the Old Testament',
-		status: 'accepted',
-		addedInEpisode: 136,
-		episodes: [6, 35, 69, 94, 119, 136],
-	},
+  },
+  {
+    canonical: "Marcion",
+    variations: [],
+    category: "person",
+    llmVerify: true,
+    description: "Early Christian theologian who rejected the Old Testament",
+    status: "accepted",
+    addedInEpisode: 136,
+    episodes: [6, 35, 69, 94, 119, 136],
+  },
   {
     canonical: "Annunciation",
     variations: [],
@@ -5292,6 +5293,32 @@ export const tagVocabulary: TagDefinition[] = [
       "A prophet from Shiloh who appears in the Books of Kings in the Hebrew Bible, known for his role in anointing Jeroboam as king over the northern tribes of Israel",
     status: "proposed",
     addedInEpisode: 139,
+  },
+  {
+    canonical: "Bethsaida",
+    variations: ["el-araj"],
+    category: "place",
+    description:
+      "A city on the northeastern shore of the Sea of Galilee, mentioned in the Gospels.",
+    status: "proposed",
+    addedInEpisode: 143,
+  },
+  {
+    canonical: "disciples",
+    variations: ["apostles"],
+    category: "miscellaneous",
+    description: "Followers of Jesus during his ministry",
+    status: "proposed",
+    addedInEpisode: 143,
+  },
+  {
+    canonical: "kingdom of god",
+    variations: [],
+    category: "theology",
+    description:
+      "A central concept in the teachings of Jesus, referring to the reign or rule of God.",
+    status: "proposed",
+    addedInEpisode: 143,
   },
 ];
 

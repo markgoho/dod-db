@@ -63,7 +63,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan McClellan: Some of the features of Jewish apocalyptic texts. This is usually a revelation given to somebody, to a human from some kind of divine being, an angel or some kind of. Psychopomp is the pedantic word.{{< /line >}}
 {{< line >}}[00:00:14.200] Dan Beecher: Wait, I'm sorry, some kind of what psychopomp is. If that's not a German, like EDM group, I don't know what's happening.{{< /line >}}
 {{< line >}}[00:00:26.480] Dan McClellan: Hey, Everybody, I'm Dan McClellan.{{< /line >}}

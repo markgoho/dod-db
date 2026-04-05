@@ -51,7 +51,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.360] Dan McClellan: So I think what we have here is a reflection, an echo of this idea that there are angels bound. Only here it's placing them at the Euphrates River. And when they are set free, they're going to go and marshal an army of 200 million cavalry and their horses are going to have the heads of lions and they're going to breathe fire and their tails are going to be like scorpions.{{< /line >}}
 {{< line >}}[00:00:26.500] Dan Beecher: Where are you gonna find 200 million lion-headed horses? I just, I, you know, you can barely find two of them.{{< /line >}}
 {{< line >}}[00:00:34.740] Dan McClellan: There's not a market for that anymore.{{< /line >}}

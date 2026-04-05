@@ -58,7 +58,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan McClellan: The trains that are derailing. That reminds me of Revelation, where you have the... the horses and they have the tails like scorpions and all this, and... Can we just not? Can we please stop doing that?{{< /line >}}
 {{< line >}}[00:00:12.800] Dan Beecher: Just relax, everybody. Yeah. You're gonna be okay.{{< /line >}}
 {{< line >}}[00:00:20.480] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}

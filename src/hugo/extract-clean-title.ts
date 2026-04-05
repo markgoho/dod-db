@@ -24,9 +24,13 @@ export function extractCleanTitle(fullTitle: string): string {
   // Strip leading "Episode N," or "Episode N:" patterns
   title = title.replace(/^Episode\s+\d+[,:]\s*/i, "");
 
-  // Strip trailing ": With Name" or "with Name" patterns
+  // Strip trailing guest suffixes like ": With Name", "w/ Name", or
+  // bare "with Name" when the tail clearly looks like a person name.
   // (guest names are added programmatically from speakers array)
-  title = title.replace(/:?\s*[Ww]ith\s+[\w\s.]+$/, "");
+  title = title.replace(
+    /(?:[:!,?-]\s*with\s+[\p{L}\w.'’ -]+|\s+w\/\s+[\p{L}\w.'’ -]+|\s+with\s+(?:Prof\.?|Dr\.?)?\s*[A-Z][\p{L}'’.-]+(?:\s+[A-Z][\p{L}'’.-]+){1,})$/iu,
+    "",
+  );
 
   return title.trim();
 }

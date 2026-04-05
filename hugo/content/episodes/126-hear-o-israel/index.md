@@ -56,7 +56,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.156] Dan McClellan: What's the Song of Songs all about?{{< /line >}}
 {{< line >}}[00:00:03.501] Dan Beecher: Songs. Oh, sex.{{< /line >}}
 {{< line >}}[00:00:05.348] Dan McClellan: No, there you go. The hibbity-dibbity. So we're going to go to {{< scripture ref="Song of Solomon 6:9" >}}. Thank you for that.{{< /line >}}

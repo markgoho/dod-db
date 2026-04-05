@@ -5,7 +5,7 @@ import { computeEpisodeNumbers } from "../storage/compute-episode-numbers.js";
 import type { ProcessedVideo } from "../storage/processed-videos.js";
 import { isAfterPartyItem } from "./is-after-party-item.js";
 import { matchRssItemToVideo } from "./match-rss-to-video.js";
-import type { PatreonRssItem } from "./patreon-rss-item.js";
+import type { PodcastRssItem } from "./patreon-rss-item.js";
 
 function extractEpisodeNumberFromTitle(title: string): number | undefined {
   const match = title.match(/Episode\s+(\d+)/i);
@@ -13,21 +13,22 @@ function extractEpisodeNumberFromTitle(title: string): number | undefined {
 }
 
 function getExplicitOverrideEpisodeNumber(
-  item: PatreonRssItem,
+  item: PodcastRssItem,
 ): number | undefined {
   const normalizedTitle = slugifyTitle(extractCleanTitle(item.title));
   return EPISODE_NUMBER_OVERRIDES[normalizedTitle];
 }
 
-function getAnchoredEpisodeNumber(item: PatreonRssItem): number | undefined {
+function getAnchoredEpisodeNumber(item: PodcastRssItem): number | undefined {
   return (
     getExplicitOverrideEpisodeNumber(item) ??
-    extractEpisodeNumberFromTitle(item.title)
+    extractEpisodeNumberFromTitle(item.title) ??
+    item.itunesEpisode
   );
 }
 
 function fillEpisodeNumbers(
-  items: PatreonRssItem[],
+  items: PodcastRssItem[],
 ): Array<number | undefined> {
   const assigned = items.map(item => getAnchoredEpisodeNumber(item));
 
@@ -87,7 +88,7 @@ function getFallbackEpisodeNumbers(
 }
 
 function warnOnMetadataMismatch(
-  item: PatreonRssItem,
+  item: PodcastRssItem,
   assignedEpisodeNumber: number,
 ): void {
   if (
@@ -102,13 +103,13 @@ function warnOnMetadataMismatch(
   }
 
   console.warn(
-    `Patreon RSS episode mismatch for "${item.title}": itunes:episode=${item.itunesEpisode}, assigned=${assignedEpisodeNumber}`,
+    `Canonical RSS episode mismatch for "${item.title}": itunes:episode=${item.itunesEpisode}, assigned=${assignedEpisodeNumber}`,
   );
 }
 
 export function computeEpisodeNumbersFromRss(
   videos: ProcessedVideo[],
-  rssItems: PatreonRssItem[],
+  rssItems: PodcastRssItem[],
 ): ProcessedVideo[] {
   if (rssItems.length === 0) {
     return computeEpisodeNumbers(videos);

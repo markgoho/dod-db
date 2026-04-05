@@ -64,7 +64,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:02.320] Dan McClellan: So he just has a field and is standing there beholding the field in which he grows all his— You know what. And then he just starts swelling up like Violet in Charlie and the Chocolate Factory, and then bursts. And then, you know, you find traditions somewhat like this in the ancient world where somebody— Some divine punishment was that somebody swelled up and popped. So would not be totally unheard of, but very gross. And then the other option is that he— Yeah. Was just walking and was like, doo, doo, doo. And then splat. Fell on his head.{{< /line >}}
 {{< line >}}[00:00:41.980] Dan Beecher: Sometimes when you hit your head just right, your entire bowels burst out of your body. It's a— That's a known thing.{{< /line >}}
 {{< line >}}[00:00:53.180] Dan McClellan: Hey, everybody, I'm Dan McClellan.{{< /line >}}

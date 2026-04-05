@@ -42,7 +42,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.477] Dan McClellan: Does the context support that interpretation? I'm going to say, along with the majority of scholars, hahaha, of course not, you jerk. Hey everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:19.067] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:20.433] Dan McClellan: And you're listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion. And we combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}

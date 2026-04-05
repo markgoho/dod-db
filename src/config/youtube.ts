@@ -6,7 +6,10 @@ export const youtubeConfig = {
   audioDirectory: "data/audio",
   transcriptDirectory: "data/transcripts",
   processedVideosFile: "data/processed-videos.json",
-  patreonRssUrl: process.env.PATREON_RSS_URL,
+  canonicalRssUrl:
+    process.env.CANONICAL_RSS_URL ??
+    process.env.PUBLIC_RSS_URL ??
+    process.env.PATREON_RSS_URL,
 } as const;
 
 /**

@@ -62,7 +62,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.200] Dan McClellan: Throughout the ancient world, everybody just seemed to presuppose that, yeah, there's magic out there, that witchcraft works. It's just a matter of trying to suggest that when we do it, the person on the other end of the line is righteous. When they do it, it's demons. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:20.040] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:21.280] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}

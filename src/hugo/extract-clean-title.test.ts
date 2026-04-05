@@ -33,4 +33,29 @@ describe("extractCleanTitle", () => {
       "Christian Nationalism Ain't Christian",
     );
   });
+
+  test('removes trailing "w/ Guest" pattern', () => {
+    const input = "The Blessing of the Magdalene w/ Elizabeth Schrader Polczer";
+    expect(extractCleanTitle(input)).toBe("The Blessing of the Magdalene");
+  });
+
+  test('removes trailing "With Guest" after punctuation', () => {
+    const input = "John! With Hugo Méndez";
+    expect(extractCleanTitle(input)).toBe("John");
+  });
+
+  test('removes trailing bare "with Guest" when it looks like a name', () => {
+    const input = "God's Wife with Francesca Stavrakopoulou";
+    expect(extractCleanTitle(input)).toBe("God's Wife");
+  });
+
+  test('removes trailing bare "with Prof. Guest" when it looks like a name', () => {
+    const input = "God's Wife with Prof. Francesca Stavrakopoulou";
+    expect(extractCleanTitle(input)).toBe("God's Wife");
+  });
+
+  test('keeps title words that include "With"', () => {
+    const input = "Connecting With Source";
+    expect(extractCleanTitle(input)).toBe("Connecting With Source");
+  });
 });

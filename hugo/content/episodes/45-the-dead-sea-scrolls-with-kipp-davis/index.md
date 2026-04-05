@@ -67,7 +67,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.280] Dan McClellan: There have been fragments of Dead Sea Scrolls that have popped up on the market in the last 20 or so years. And so how many of these fragments have surfaced and were purchased?{{< /line >}}
 {{< line >}}[00:00:11.440] Kipp Davis: I think since 2002, I've counted around 80.{{< /line >}}
 {{< line >}}[00:00:15.724] Dan McClellan: 80?{{< /line >}}

@@ -14,6 +14,16 @@ const arguments_ = process.argv.slice(2);
 const videoUrl = arguments_[0];
 const force = arguments_.includes("--force");
 
+const audioUrlIndex = arguments_.findIndex(argument =>
+  argument.startsWith("--audio-url"),
+);
+const audioUrl =
+  audioUrlIndex === -1
+    ? undefined
+    : arguments_[audioUrlIndex]?.includes("=")
+      ? arguments_[audioUrlIndex]?.split("=")[1]
+      : arguments_[audioUrlIndex + 1];
+
 // Parse --start-from flag
 const startFromIndex = arguments_.findIndex(argument =>
   argument.startsWith("--start-from"),
@@ -50,6 +60,9 @@ if (!videoUrl) {
     "  --force              Reprocess video even if already processed",
   );
   console.error(
+    "  --audio-url=URL      Store canonical audio URL for site embedding",
+  );
+  console.error(
     "  --start-from=STAGE   Resume from a specific stage (saves API costs)",
   );
   console.error(
@@ -68,7 +81,11 @@ if (!videoUrl) {
 }
 
 try {
-  const result = await processYouTubeVideo(videoUrl, { force, startFrom });
+  const result = await processYouTubeVideo(videoUrl, {
+    force,
+    startFrom,
+    ...(audioUrl !== undefined && { audioUrl }),
+  });
 
   if (result.skipped) {
     console.log("");

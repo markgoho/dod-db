@@ -50,20 +50,28 @@
   <div class="episode-layout">
     {{/* Sticky sidebar with video + segments */}}
     <div class="episode-sidebar">
-      {{/* Video Player */}}
-      {{ with .Params.videoId }}
-        <div class="video-player" data-video-id="{{ . }}">
-          <a
-            href="https://www.youtube.com/watch?v={{ . }}"
-            target="_blank"
-            rel="noopener">
-            <img
-              src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
-              alt="Watch {{ $.Title }} on YouTube"
-              loading="lazy"
-              onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'" />
-          </a>
+      {{/* Media Player */}}
+      {{ if .Params.audioUrl }}
+        <div class="audio-player">
+          <audio controls preload="metadata" src="{{ .Params.audioUrl }}">
+            Your browser does not support the audio element.
+          </audio>
         </div>
+      {{ else }}
+        {{ with .Params.videoId }}
+          <div class="video-player" data-video-id="{{ . }}">
+            <a
+              href="https://www.youtube.com/watch?v={{ . }}"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
+                alt="Watch {{ $.Title }} on YouTube"
+                loading="lazy"
+                onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'" />
+            </a>
+          </div>
+        {{ end }}
       {{ end }}
 
       {{/* Segments */}}

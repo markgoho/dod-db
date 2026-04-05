@@ -51,7 +51,6 @@ books:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.040] Dan McClellan: Because if somebody just says, Antiochus IV Epiphanes is a bad dude, and let's hope God comes in and saves us, that's not as effective as saying, I found this text from this ancient prophet. And this ancient prophet says, don't know who this is, but there's a person who's going to be coming who's a really bad dude, and God's going to deliver us, injecting it with that artificial antiquity. And this notion of real prophecy provides a lot more power, a lot more authority to the text. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:38.970] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:40.290] Dan McClellan: And you are listening to the Data Over Dogma podcast, where we increase public access to the academic study of the Bible and religion and combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}

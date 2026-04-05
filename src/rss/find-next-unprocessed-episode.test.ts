@@ -1,5 +1,8 @@
 import { describe, expect, test } from "bun:test";
-import { rankCandidates } from "./find-next-unprocessed-episode.js";
+import {
+  rankCandidates,
+  shouldPreferAudio,
+} from "./find-next-unprocessed-episode.js";
 
 describe("rankCandidates", () => {
   test("ranks exact normalized title matches ahead of weaker substring matches", () => {
@@ -130,5 +133,46 @@ describe("rankCandidates", () => {
         videoType: "unknown",
       },
     ]);
+  });
+});
+
+describe("shouldPreferAudio", () => {
+  test("prefers audio when there are no candidates", () => {
+    expect(shouldPreferAudio([])).toBe(true);
+  });
+
+  test("prefers audio when no candidate is classified as real video", () => {
+    expect(
+      shouldPreferAudio([
+        {
+          id: "audio1",
+          title: "Audio one",
+          url: "https://www.youtube.com/watch?v=audio1",
+          score: 80,
+          videoType: "audio-only",
+        },
+        {
+          id: "unknown1",
+          title: "Unknown one",
+          url: "https://www.youtube.com/watch?v=unknown1",
+          score: 60,
+          videoType: "unknown",
+        },
+      ]),
+    ).toBe(true);
+  });
+
+  test("does not prefer audio when a real video candidate exists", () => {
+    expect(
+      shouldPreferAudio([
+        {
+          id: "video1",
+          title: "Video one",
+          url: "https://www.youtube.com/watch?v=video1",
+          score: 100,
+          videoType: "video",
+        },
+      ]),
+    ).toBe(false);
   });
 });

@@ -42,7 +42,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.058] Dan McClellan: So when you go to the Trump rally and you see the people wheeling around their full cross, that is historically inaccurate and they should know better.{{< /line >}}
 {{< line >}}[00:00:10.596] Dan Beecher: It's also symbolically inaccurate, but that's okay. That's a question for another time.{{< /line >}}
 {{< line >}}[00:00:18.612] Dan McClellan: Hey everybody, I'm Dan McClellan.{{< /line >}}

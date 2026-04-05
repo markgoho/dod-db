@@ -69,7 +69,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.040] Dan McClellan: He's like, I wish y'all were like me. But, you know, if you can't hack it, then go ahead, get married so you can have occasional prophylactic and passionless intercourse.{{< /line >}}
 {{< line >}}[00:00:12.800] Dan Beecher: Which sounds great.{{< /line >}}
 {{< line >}}[00:00:14.080] Dan McClellan: Yeah. Oh, yeah. It's definitely what everybody was joining the church for. Hey, everybody, I'm Dan McClellan.{{< /line >}}

@@ -12,28 +12,32 @@ import { secondsToTimestamp } from "./seconds-to-timestamp.js";
  */
 export async function detectSegmentsFromAudio({
   videoId,
+  audioPath,
   durationSeconds,
 }: {
-  videoId: string;
+  videoId?: string;
+  audioPath?: string;
   durationSeconds?: number;
 }): Promise<Segment[]> {
   const audioDir = join(process.cwd(), "data", "audio");
   const jinglePath = join(process.cwd(), "data", "jingles", "jingle-pure.wav");
 
-  // Find audio file
-  const extensions = [".m4a", ".webm", ".mp3", ".wav"];
-  let audioPath = "";
+  let resolvedAudioPath = audioPath ?? "";
 
-  for (const extension of extensions) {
-    const path = join(audioDir, `${videoId}${extension}`);
-    const file = Bun.file(path);
-    if (await file.exists()) {
-      audioPath = path;
-      break;
+  if (!resolvedAudioPath && videoId) {
+    const extensions = [".m4a", ".webm", ".mp3", ".wav"];
+
+    for (const extension of extensions) {
+      const path = join(audioDir, `${videoId}${extension}`);
+      const file = Bun.file(path);
+      if (await file.exists()) {
+        resolvedAudioPath = path;
+        break;
+      }
     }
   }
 
-  if (!audioPath) {
+  if (!resolvedAudioPath) {
     console.log("Audio file not found, skipping audio detection");
     return [];
   }
@@ -52,7 +56,7 @@ export async function detectSegmentsFromAudio({
       "run",
       join(process.cwd(), "scripts", "find_jingles_uv.py"),
       jinglePath,
-      audioPath,
+      resolvedAudioPath,
     ],
     {
       stdout: "pipe",

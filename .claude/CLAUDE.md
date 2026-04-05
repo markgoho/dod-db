@@ -14,6 +14,8 @@ DoD database project built with Bun and Google AI SDK. Transcribes podcast audio
 
 ## Processing Pipeline
 
+**Episode 143+ note:** Starting at episode 143, canonical episode identity/audio comes from the public podcast RSS feed rather than YouTube, because YouTube uploads no longer map 1:1 to podcast episodes. Treat YouTube as legacy/auxiliary for episodes through 142.
+
 **Primary command:**
 
 ```bash

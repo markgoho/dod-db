@@ -63,7 +63,7 @@ describe("computeEpisodeNumbersFromRss", () => {
     ]);
   });
 
-  test("uses Patreon main episode order and excludes After Party items", () => {
+  test("uses canonical RSS episode order and excludes bonus items", () => {
     const warnSpy = spyOn(console, "warn").mockImplementation(mock(() => {}));
 
     const videos: ProcessedVideo[] = [
@@ -135,7 +135,7 @@ describe("computeEpisodeNumbersFromRss", () => {
     warnSpy.mockRestore();
   });
 
-  test("warns on mismatches that are not covered by overrides", () => {
+  test("does not warn when title/date ordering determines the canonical number", () => {
     const warnSpy = spyOn(console, "warn").mockImplementation(mock(() => {}));
 
     computeEpisodeNumbersFromRss(
@@ -168,9 +168,7 @@ describe("computeEpisodeNumbersFromRss", () => {
       ],
     );
 
-    expect(warnSpy).toHaveBeenCalledWith(
-      'Patreon RSS episode mismatch for "Pride Month vs. the Bible!": itunes:episode=999, assigned=114',
-    );
+    expect(warnSpy).not.toHaveBeenCalled();
 
     warnSpy.mockRestore();
   });
@@ -198,7 +196,7 @@ describe("computeEpisodeNumbersFromRss", () => {
     );
 
     expect(warnSpy).toHaveBeenCalledWith(
-      'Patreon RSS episode mismatch for "Episode 114: Pride Month vs. the Bible!": itunes:episode=999, assigned=114',
+      'Canonical RSS episode mismatch for "Episode 114: Pride Month vs. the Bible!": itunes:episode=999, assigned=114',
     );
 
     warnSpy.mockRestore();

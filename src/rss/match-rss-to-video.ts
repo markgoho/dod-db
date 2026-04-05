@@ -1,7 +1,7 @@
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { slugifyTitle } from "../hugo/slugify-title.js";
 import type { ProcessedVideo } from "../storage/processed-videos.js";
-import type { PatreonRssItem } from "./patreon-rss-item.js";
+import type { PodcastRssItem } from "./patreon-rss-item.js";
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const MAX_DATE_DISTANCE_DAYS = 3;
@@ -11,8 +11,10 @@ function hasEpisodeNumberInTitle(title: string): boolean {
   return EPISODE_IN_TITLE_PATTERN.test(title);
 }
 
-function canUseDateFallback(item: PatreonRssItem): boolean {
-  return hasEpisodeNumberInTitle(item.title);
+function canUseDateFallback(item: PodcastRssItem): boolean {
+  return (
+    item.itunesEpisode !== undefined || hasEpisodeNumberInTitle(item.title)
+  );
 }
 
 function normalizeTitle(title: string): string {
@@ -31,7 +33,7 @@ function isWithinDateWindow(a: string, b: string): boolean {
 }
 
 export function matchRssItemToVideo(
-  item: PatreonRssItem,
+  item: PodcastRssItem,
   videos: ProcessedVideo[],
 ): ProcessedVideo | undefined {
   const normalizedItemTitle = normalizeTitle(item.title);

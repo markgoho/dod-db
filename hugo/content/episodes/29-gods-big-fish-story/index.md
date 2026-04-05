@@ -54,7 +54,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.280] Dan Beecher: I had to read this like six or seven times, and I still don't have a handle on what the Lord is trying to say here.{{< /line >}}
 {{< line >}}[00:00:07.120] Dan McClellan: The idea is that Jonah is so upset about the destruction of such a small thing, but is looking forward to the destruction of such a big thing. And God's like, you really want all these people to die? And also this cattle and the cows.{{< /line >}}
 {{< line >}}[00:00:24.280] Dan Beecher: What about the cows?{{< /line >}}

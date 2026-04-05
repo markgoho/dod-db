@@ -30,6 +30,10 @@ export function generateFrontmatter(
     aliases: [`/episodes/${video.episodeNumber}/`],
   };
 
+  if (video.audioUrl) {
+    frontmatter.audioUrl = video.audioUrl;
+  }
+
   // Add optional fields only if they have values
   if (tags.length > 0) {
     frontmatter.tags = tags;
@@ -60,5 +64,5 @@ export function generateFrontmatter(
     "\n",
   );
 
-  return `---\n${frontmatterYaml}\n---\n`;
+  return `---\n${frontmatterYaml}\n---`;
 }

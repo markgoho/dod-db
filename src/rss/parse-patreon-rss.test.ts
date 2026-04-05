@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
-import { parsePatreonRss } from "./parse-patreon-rss.js";
+import { parsePodcastRss } from "./parse-patreon-rss.js";
 
-describe("parsePatreonRss", () => {
+describe("parsePodcastRss", () => {
   test("parses RSS items with optional itunes episode", () => {
     const xml = `<?xml version="1.0"?>
       <rss>
@@ -21,7 +21,7 @@ describe("parsePatreonRss", () => {
         </channel>
       </rss>`;
 
-    expect(parsePatreonRss(xml)).toEqual([
+    expect(parsePodcastRss(xml)).toEqual([
       {
         title: "Bibliomancy! The Biblical Dance with the Devil?",
         pubDate: "Sun, 01 Jun 2025 15:12:05 GMT",
@@ -39,6 +39,6 @@ describe("parsePatreonRss", () => {
 
   test("returns an empty array when there are no items", () => {
     const xml = `<?xml version="1.0"?><rss><channel></channel></rss>`;
-    expect(parsePatreonRss(xml)).toEqual([]);
+    expect(parsePodcastRss(xml)).toEqual([]);
   });
 });

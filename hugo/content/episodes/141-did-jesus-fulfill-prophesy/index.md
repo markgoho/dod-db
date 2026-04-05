@@ -26,7 +26,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.715] Dan Beecher: You're saying they couldn't find the clit? I'm just gonna say that's delightful.{{< /line >}}
 {{< line >}}[00:00:10.692] Dan McClellan: Look, they were hiding. They were up under a cleft.{{< /line >}}
 {{< line >}}[00:00:13.721] Dan Beecher: It's not always easy to find. It's not their fault.{{< /line >}}

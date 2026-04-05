@@ -143,4 +143,25 @@ describe("generateFrontmatter", () => {
     ).text();
     expect(actual).toBe(expected);
   });
+
+  test("includes audioUrl when present", async () => {
+    const video: ProcessedVideo = {
+      videoId: "audio123",
+      audioUrl: "https://cdn.example.com/audio.mp3",
+      title: "Episode 143",
+      publishedAt: "2024-08-01T10:00:00Z",
+      processedAt: "2024-08-01T12:00:00Z",
+      transcriptPath: "data/transcripts/2024-08-01-episode-143.txt",
+      episodeNumber: 143,
+      speakers: ["Dan McClellan", "Dan Beecher"],
+    };
+
+    const cleanTitle = "Audio Episode";
+    const actual = generateFrontmatter(video, cleanTitle);
+
+    const expected = await Bun.file(
+      "src/hugo/__fixtures__/frontmatter-with-audio.md",
+    ).text();
+    expect(actual).toBe(expected);
+  });
 });

@@ -1,6 +1,6 @@
 import {
-  PatreonRssItemSchema,
-  type PatreonRssItem,
+  PodcastRssItemSchema,
+  type PodcastRssItem,
 } from "./patreon-rss-item.js";
 
 function decodeXmlEntities(value: string): string {
@@ -43,19 +43,26 @@ function extractAttribute(
   return decodeXmlEntities(match[1]);
 }
 
-export function parsePatreonRss(xml: string): PatreonRssItem[] {
+export function parsePodcastRss(xml: string): PodcastRssItem[] {
   const itemBlocks = xml.match(/<item\b[\s\S]*?<\/item>/gi) ?? [];
 
   return itemBlocks.map(block =>
-    PatreonRssItemSchema.parse({
+    PodcastRssItemSchema.parse({
       title: extractTag(block, "title"),
       pubDate: extractTag(block, "pubDate"),
       guid: extractTag(block, "guid"),
       enclosureUrl: extractAttribute(block, "enclosure", "url"),
       itunesEpisode: (() => {
         const value = extractTag(block, "itunes:episode");
-        return value ? Number.parseInt(value, 10) : undefined;
+        if (!value) {
+          return;
+        }
+
+        const parsed = Number.parseInt(value, 10);
+        return Number.isNaN(parsed) ? undefined : parsed;
       })(),
     }),
   );
 }
+
+export const parsePatreonRss = parsePodcastRss;

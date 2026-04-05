@@ -1,4 +1,4 @@
-export async function fetchPatreonRss(
+export async function fetchPodcastRss(
   url: string | undefined,
 ): Promise<string | undefined> {
   if (!url) {
@@ -7,8 +7,10 @@ export async function fetchPatreonRss(
 
   const response = await fetch(url);
   if (!response.ok) {
-    throw new Error(`Failed to fetch Patreon RSS: ${response.status}`);
+    throw new Error(`Failed to fetch podcast RSS: ${response.status}`);
   }
 
   return response.text();
 }
+
+export const fetchPatreonRss = fetchPodcastRss;

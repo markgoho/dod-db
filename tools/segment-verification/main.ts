@@ -1,6 +1,7 @@
 import {
   API_BASE_URL,
   applyPendingSeek,
+  createAudioPlayer,
   createInitialPlayerState,
   createYouTubePlayer,
   destroyYouTubePlayer,
@@ -11,23 +12,32 @@ import {
   getYouTubeDuration,
   parseTimestamp,
   secondsToTimestamp,
+  seekToTimestamp,
   seekYouTube,
   showToast,
   startTimePolling,
   timestampToSeconds,
-  type Episode,
   type EpisodeSegment,
+  type EpisodeWithAudio,
   type SegmentMetadata,
   type TranscriptLine,
   type YouTubePlayerState,
 } from "../shared/utilities.js";
 
+const AUDIO_TIME_POLL_MS = 250;
+
+function isFiniteDuration(value: number): boolean {
+  return Number.isFinite(value) && value > 0;
+}
+
 // State
-let episodes: Episode[] = [];
+let episodes: EpisodeWithAudio[] = [];
 let metadata: SegmentMetadata = { labels: {}, colors: {}, types: [] };
-let selectedEpisode: Episode | undefined;
+let selectedEpisode: EpisodeWithAudio | undefined;
 let selectedSegmentIndex: number | undefined;
 let playerState: YouTubePlayerState = createInitialPlayerState();
+let audioPlayer: HTMLAudioElement | undefined;
+let audioTimePollingInterval: ReturnType<typeof setInterval> | undefined;
 let transcriptLines: TranscriptLine[] = [];
 
 // Load data on page load
@@ -48,6 +58,126 @@ async function loadEpisodes(): Promise<void> {
     `${API_BASE_URL}/api/segment-verification/episodes`,
   );
   episodes = await response.json();
+}
+
+function stopAudioTimePolling(): void {
+  if (audioTimePollingInterval !== undefined) {
+    clearInterval(audioTimePollingInterval);
+    audioTimePollingInterval = undefined;
+  }
+}
+
+function cleanupMediaState(): void {
+  stopAudioTimePolling();
+  if (audioPlayer) {
+    audioPlayer.pause();
+    audioPlayer = undefined;
+  }
+  destroyYouTubePlayer(playerState);
+  playerState = createInitialPlayerState();
+}
+
+function getCurrentMediaTime(): number {
+  if (audioPlayer) {
+    return audioPlayer.currentTime;
+  }
+
+  return getYouTubeCurrentTime(playerState);
+}
+
+function getCurrentMediaDuration(): number {
+  if (audioPlayer) {
+    return isFiniteDuration(audioPlayer.duration) ? audioPlayer.duration : 0;
+  }
+
+  return getYouTubeDuration(playerState);
+}
+
+function seekMedia(seconds: number, autoPlay: boolean): void {
+  if (audioPlayer) {
+    audioPlayer.currentTime = seconds;
+    if (autoPlay) {
+      audioPlayer.play().catch(() => {
+        // Autoplay may be blocked until the user interacts.
+      });
+    }
+    return;
+  }
+
+  seekYouTube(playerState, seconds, autoPlay);
+}
+
+function seekMediaToTimestamp(timestamp: string): void {
+  if (audioPlayer) {
+    seekToTimestamp(audioPlayer, timestamp);
+    return;
+  }
+
+  const seconds = timestampToSeconds(timestamp);
+  seekYouTube(playerState, seconds, true);
+}
+
+function initializeAudioPlayer(pendingSeek?: number): void {
+  if (!selectedEpisode) return;
+
+  audioPlayer = createAudioPlayer(
+    "youtube-player-wrapper",
+    selectedEpisode.videoId,
+    {
+      onTimeUpdate: currentTime => {
+        updateTimeDisplay(currentTime);
+      },
+    },
+  );
+
+  if (!audioPlayer) {
+    showToast("Failed to load audio player", "error");
+    return;
+  }
+
+  const totalTimeElement = document.querySelector("#total-time");
+  const updateDuration = (): void => {
+    if (!totalTimeElement) return;
+    totalTimeElement.textContent = isFiniteDuration(audioPlayer?.duration ?? 0)
+      ? secondsToTimestamp(audioPlayer?.duration ?? 0)
+      : "--:--:--";
+  };
+
+  audioPlayer.addEventListener("loadedmetadata", () => {
+    updateDuration();
+    if (pendingSeek !== undefined && audioPlayer) {
+      audioPlayer.currentTime = pendingSeek;
+    }
+  });
+  audioPlayer.addEventListener("durationchange", updateDuration);
+
+  stopAudioTimePolling();
+  audioTimePollingInterval = setInterval(() => {
+    const currentAudioPlayer = audioPlayer;
+    if (currentAudioPlayer && !currentAudioPlayer.paused) {
+      updateTimeDisplay(currentAudioPlayer.currentTime);
+    }
+  }, AUDIO_TIME_POLL_MS);
+
+  updateDuration();
+  if (pendingSeek === undefined) {
+    updateTimeDisplay(audioPlayer.currentTime);
+  }
+}
+
+async function initializePlayer(): Promise<void> {
+  const pendingSeek = playerState.pendingSeek;
+  cleanupMediaState();
+
+  if (!selectedEpisode) return;
+
+  if (selectedEpisode.hasAudio) {
+    initializeAudioPlayer(pendingSeek);
+    return;
+  }
+
+  playerState.pendingSeek = pendingSeek;
+  await initializeYouTubePlayer();
 }
 
 async function loadStats(): Promise<void> {
@@ -128,7 +258,7 @@ async function selectEpisode(videoId: string): Promise<void> {
 
   renderEpisodeList();
   renderContent();
-  await initializeYouTubePlayer();
+  await initializePlayer();
 }
 
 function renderContent(): void {
@@ -234,10 +364,6 @@ function renderContent(): void {
 async function initializeYouTubePlayer(): Promise<void> {
   if (!selectedEpisode) return;
 
-  // Destroy existing player if any
-  destroyYouTubePlayer(playerState);
-  playerState = createInitialPlayerState();
-
   const videoId = selectedEpisode.videoId;
   playerState.videoId = videoId;
 
@@ -333,7 +459,7 @@ function selectSegment(index: number): void {
   const seg = selectedEpisode?.segments?.[index];
   if (seg) {
     const seconds = timestampToSeconds(seg.startTimestamp);
-    seekYouTube(playerState, seconds, true);
+    seekMedia(seconds, true);
   }
   // Update visual selection without re-rendering (preserves player state)
   updateSegmentSelection();
@@ -363,7 +489,7 @@ function playSegment(index: number): void {
 
   const seconds = timestampToSeconds(seg.startTimestamp);
   console.log("Playing segment", index, "at", seconds, "seconds");
-  seekYouTube(playerState, seconds, true);
+  seekMedia(seconds, true);
   selectedSegmentIndex = index;
   updateSegmentSelection();
 }
@@ -395,13 +521,12 @@ function deleteSegment(index: number): void {
   selectedSegmentIndex = undefined;
   renderContent();
   // Re-initialize player after content render
-  initializeYouTubePlayer();
+  void initializePlayer();
 }
 
 function jumpToTime(timestamp: string): void {
-  const seconds = timestampToSeconds(`[${timestamp}]`);
-  console.log("Jumping to timestamp:", timestamp, "seconds:", seconds);
-  seekYouTube(playerState, seconds, true);
+  console.log("Jumping to timestamp:", timestamp);
+  seekMediaToTimestamp(`[${timestamp}]`);
 }
 
 function updateTimeDisplay(currentTime: number): void {
@@ -512,8 +637,8 @@ function addSegment(): void {
     selectedEpisode.segments = [];
   }
 
-  const currentTime = getYouTubeCurrentTime(playerState);
-  const videoDuration = getYouTubeDuration(playerState);
+  const currentTime = getCurrentMediaTime();
+  const videoDuration = getCurrentMediaDuration();
   const newStartTimestamp = formatSecondsToTimestamp(currentTime);
 
   // Find where to insert based on timestamp order
@@ -556,7 +681,7 @@ function addSegment(): void {
   renderContent();
   // Re-initialize player after content render and seek to the new segment
   playerState.pendingSeek = currentTime;
-  initializeYouTubePlayer();
+  void initializePlayer();
 }
 
 async function markAllVerified(): Promise<void> {
@@ -590,7 +715,7 @@ async function markAllVerified(): Promise<void> {
   }
   renderContent();
   // Re-initialize player after content render
-  initializeYouTubePlayer();
+  void initializePlayer();
 }
 
 async function learnPatternFromSegment(seg: EpisodeSegment): Promise<void> {

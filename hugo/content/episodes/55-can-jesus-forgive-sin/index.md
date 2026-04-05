@@ -69,7 +69,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.120] Dan Beecher: His first impulse isn't just like, hey, I'll heal you. His first impulse is like, we'll do this other thing, and then I'll use the healing as the proof that I. That I have the authority to do that.{{< /line >}}
 {{< line >}}[00:00:11.280] Dan McClellan: Yes. It's almost as if the story was carefully crafted to tag these rhetorical bases. Yeah, you didn't hear it from me. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:26.120] Dan Beecher: And I'm Dan Beecher.{{< /line >}}

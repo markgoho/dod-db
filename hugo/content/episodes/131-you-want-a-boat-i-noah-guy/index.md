@@ -41,7 +41,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.299] Dan McClellan: He built the ark out of gopher wood. Maybe there was some shittim.{{< /line >}}
 {{< line >}}[00:00:06.515] Dan Beecher: I'm hoping for shittim. That's my wood right there.{{< /line >}}
 {{< line >}}[00:00:09.661] Dan McClellan: Yeah, shittim real good.{{< /line >}}

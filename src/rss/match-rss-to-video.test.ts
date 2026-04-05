@@ -30,7 +30,7 @@ describe("matchRssItemToVideo", () => {
     expect(matched?.videoId).toBe("29tvdRjwlJI");
   });
 
-  test("falls back to date matching for numbered episode posts", () => {
+  test("falls back to date matching for numbered or itunes-numbered episodes", () => {
     const videos: ProcessedVideo[] = [
       {
         ...baseVideo,
@@ -80,7 +80,30 @@ describe("matchRssItemToVideo", () => {
     expect(matched).toBeUndefined();
   });
 
-  test("does not fall back to date matching for non-episode Patreon posts", () => {
+  test("falls back to date matching when itunes episode metadata is present", () => {
+    const videos: ProcessedVideo[] = [
+      {
+        ...baseVideo,
+        videoId: "megaphone114",
+        title: "Different YouTube Title Entirely",
+        publishedAt: "2025-06-09T00:00:00Z",
+      },
+    ];
+
+    const matched = matchRssItemToVideo(
+      {
+        title: "Pride Month vs. the Bible!",
+        pubDate: "Sun, 08 Jun 2025 16:02:44 GMT",
+        guid: "114",
+        itunesEpisode: 114,
+      },
+      videos,
+    );
+
+    expect(matched?.videoId).toBe("megaphone114");
+  });
+
+  test("does not fall back to date matching for non-canonical bonus posts", () => {
     const videos: ProcessedVideo[] = [
       {
         ...baseVideo,

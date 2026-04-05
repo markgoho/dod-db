@@ -25,7 +25,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.460] Dan Beecher: It suddenly occurred to me that when Jesus said, "Let he who is without sin cast the first stone," good thing Mary wasn't there.{{< /line >}}
 {{< line >}}[00:00:08.537] Dan McClellan: Yeah, they could have trotted out his mom.{{< /line >}}
 {{< line >}}[00:00:10.382] Dan Beecher: She could have chucked a rock and started that woman down a bad path.{{< /line >}}

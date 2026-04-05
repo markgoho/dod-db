@@ -77,6 +77,7 @@ type TranscriptLine = {
 
 type State = {
   player: YTPlayer | undefined;
+  audioElement: HTMLAudioElement | undefined;
   videoId: string;
   lines: TranscriptLine[];
   currentLineIndex: number;
@@ -88,6 +89,7 @@ type State = {
 
 const state: State = {
   player: undefined,
+  audioElement: undefined,
   videoId: "",
   lines: [],
   currentLineIndex: -1,
@@ -267,8 +269,21 @@ function handleInitialHash(): void {
 /**
  * Update the active transcript line based on current video time.
  */
+function getCurrentPlaybackTime(): number | undefined {
+  if (state.player) {
+    return state.player.getCurrentTime();
+  }
+
+  return state.audioElement?.currentTime;
+}
+
 function updateActiveTranscriptLine(): void {
-  if (!state.player || !state.autoScrollEnabled) {
+  if (!state.autoScrollEnabled) {
+    return;
+  }
+
+  const currentTime = getCurrentPlaybackTime();
+  if (currentTime === undefined) {
     return;
   }
 
@@ -278,7 +293,6 @@ function updateActiveTranscriptLine(): void {
     return;
   }
 
-  const currentTime = state.player.getCurrentTime();
   const lineIndex = findCurrentLineIndex(currentTime);
 
   if (lineIndex !== state.currentLineIndex) {
@@ -423,10 +437,19 @@ function seekTo(seconds: number): void {
   if (state.player) {
     state.player.seekTo(seconds, true);
     state.player.playVideo();
-  } else {
-    // Player not loaded yet - store for later
-    state.pendingSeekSeconds = seconds;
+    return;
   }
+
+  if (state.audioElement) {
+    state.audioElement.currentTime = seconds;
+    void state.audioElement.play().catch((error: unknown) => {
+      console.error("Failed to play audio:", error);
+    });
+    return;
+  }
+
+  // Player not loaded yet - store for later
+  state.pendingSeekSeconds = seconds;
 }
 
 /**
@@ -454,13 +477,10 @@ function handleLineClick(event: Event): void {
     });
 
   const container = document.querySelector<HTMLElement>(".video-player");
-  if (!container) {
-    return;
-  }
 
-  if (state.player) {
+  if (state.player || state.audioElement) {
     seekTo(seconds);
-  } else {
+  } else if (container) {
     // Load player and seek
     loadYouTubeAPI().then(() => {
       createPlayer(container, seconds);
@@ -506,13 +526,10 @@ function handleSegmentClick(event: Event): void {
     });
 
   const container = document.querySelector<HTMLElement>(".video-player");
-  if (!container) {
-    return;
-  }
 
-  if (state.player) {
+  if (state.player || state.audioElement) {
     seekTo(seconds);
-  } else {
+  } else if (container) {
     // Load player and seek to segment
     loadYouTubeAPI().then(() => {
       createPlayer(container, seconds);
@@ -549,17 +566,20 @@ function handleTranscriptScroll(): void {
 function init(): void {
   const player = document.querySelector<HTMLElement>(".video-player");
   const thumbnail = player?.querySelector<HTMLAnchorElement>("a");
+  const audioElement = document.querySelector<HTMLAudioElement>(
+    ".audio-player audio",
+  );
 
-  if (!player) {
+  if (!player && !audioElement) {
     return;
   }
 
-  const videoId = player.dataset["videoId"];
-  if (!videoId) {
-    return;
+  const videoId = player?.dataset["videoId"];
+  if (videoId) {
+    state.videoId = videoId;
   }
 
-  state.videoId = videoId;
+  state.audioElement = audioElement ?? undefined;
 
   // Build line index
   state.lines = buildLineIndex();
@@ -580,10 +600,21 @@ function init(): void {
   }
 
   // Handle thumbnail click
-  if (thumbnail) {
+  if (player && thumbnail) {
     thumbnail.addEventListener("click", event => {
       handleFacadeClick(event, player);
     });
+  }
+
+  if (audioElement) {
+    audioElement.addEventListener("play", startPolling);
+    audioElement.addEventListener("pause", stopPolling);
+    audioElement.addEventListener("ended", stopPolling);
+
+    if (state.pendingSeekSeconds !== undefined) {
+      audioElement.currentTime = state.pendingSeekSeconds;
+      state.pendingSeekSeconds = undefined;
+    }
   }
 
   // Handle transcript line clicks

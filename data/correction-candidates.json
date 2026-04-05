@@ -7896,7 +7896,57 @@
       "firstSeen": "2026-04-05T14:47:38.936Z",
       "lastSeen": "2026-04-05T14:47:38.936Z",
       "status": "pending"
+    },
+    "brooklynbettingcom→brooklynbeddingcom": {
+      "original": "brooklynbettingcom",
+      "corrected": "brooklynbeddingcom",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["fecba3cc-6b03-11f0-bcd8-d3a762c218f9"],
+      "examples": [
+        "\"else. That's brooklynbetting.com and promo\"",
+        "\"well. That's brooklynbetting.com, promo code\""
+      ],
+      "correctedExamples": [
+        "\"else. That's brooklynbedding.com and promo\"",
+        "\"well. That's brooklynbedding.com, promo code\""
+      ],
+      "timestamps": ["00:01:45.777", "00:01:45.777"],
+      "episodeIds": [
+        "fecba3cc-6b03-11f0-bcd8-d3a762c218f9",
+        "fecba3cc-6b03-11f0-bcd8-d3a762c218f9"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-04-05T20:28:11.465Z",
+      "lastSeen": "2026-04-05T20:28:11.465Z",
+      "status": "pending"
+    },
+    "eat'→eat": {
+      "original": "eat'",
+      "corrected": "eat",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["fecba3cc-6b03-11f0-bcd8-d3a762c218f9"],
+      "examples": [
+        "\"something to eat.\"' Which is\"",
+        "\"them to eat?\"' And 200\""
+      ],
+      "correctedExamples": [
+        "\"something to eat.\" Which is\"",
+        "\"them to eat?\" And 200\""
+      ],
+      "timestamps": ["00:44:53.667", "00:45:24.462"],
+      "episodeIds": [
+        "fecba3cc-6b03-11f0-bcd8-d3a762c218f9",
+        "fecba3cc-6b03-11f0-bcd8-d3a762c218f9"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-04-05T20:28:11.465Z",
+      "lastSeen": "2026-04-05T20:28:11.465Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-04-05T15:05:10.043Z"
+  "lastUpdated": "2026-04-05T20:28:11.465Z"
 }

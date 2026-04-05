@@ -36,7 +36,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.200] Dan Beecher: All we have left is Orient. We know that they were from the East. Right. You're not taking that away from us, are you?{{< /line >}}
 {{< line >}}[00:00:07.120] Dan McClellan: That's not a great word to use there.{{< /line >}}
 {{< line >}}[00:00:09.360] Eric Vanden Eykel: So I didn't write the song, Dan.{{< /line >}}

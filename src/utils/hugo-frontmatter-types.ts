@@ -8,6 +8,7 @@ export interface HugoEpisodeFrontmatter {
   date: string | Date;
   episodeNumber: number;
   videoId: string;
+  audioUrl?: string;
   youtubeUrl: string;
   tags: string[];
   speakers: string[];

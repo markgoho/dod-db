@@ -74,7 +74,6 @@ segmentData:
 draft: false
 ---
 
-
 {{< line >}}[00:00:01.280] Dan Beecher: There's the cherubim, which are. They have four faces. An eagle face, a human face, an ox, and a lion face. It does kind of have the feel of a. Of a design by committee, doesn't it? It kind of. It has a feel of like. Like a whole bunch of guys sitting around and they're like, well, how are we gonna get the. The bull in there? Well, you could have the bull's feet.{{< /line >}}
 {{< line >}}[00:00:22.880] Dan McClellan: Somebody's leaning over the shoulder of somebody on a drafting table. More eyes. Yeah.{{< /line >}}
 {{< line >}}[00:00:27.840] Dan Beecher: Why?{{< /line >}}

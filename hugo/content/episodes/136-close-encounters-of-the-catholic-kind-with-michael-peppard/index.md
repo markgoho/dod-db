@@ -37,7 +37,6 @@ guests:
 draft: false
 ---
 
-
 {{< line >}}[00:00:00.995] Dan Beecher: For those of us who don't know, talk a bit about what that means.{{< /line >}}
 {{< line >}}[00:00:03.949] Michael Peppard: Oh yeah, sure.{{< /line >}}
 {{< line >}}[00:00:05.169] Dan McClellan: Explain yourself.{{< /line >}}
