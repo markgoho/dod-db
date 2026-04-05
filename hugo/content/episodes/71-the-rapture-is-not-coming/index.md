@@ -10,7 +10,6 @@ tags:
   - Daniel
   - Jesus
   - Persia
-  - angel
   - YHWH
   - Eschatology
   - Judah
@@ -25,7 +24,6 @@ tags:
   - Judaism
   - Judeans
   - Latin Vulgate
-  - Mesopotamian
   - Antiochus IV Epiphanes
   - Assyria
   - Deuteronomy

@@ -8,7 +8,6 @@ aliases:
 tags:
   - Jesus
   - Trinity
-  - angel
   - Israel
   - Abraham
   - Arius

@@ -7,7 +7,6 @@ aliases:
   - /episodes/120/
 tags:
   - Isaiah
-  - angel
   - Jesus
   - Israel
   - Judah

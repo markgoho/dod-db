@@ -17,7 +17,6 @@ tags:
   - Jesus
   - Josephus
   - Lilith
-  - angel
   - archaeology
   - Asherah
   - Babylon
@@ -37,7 +36,6 @@ tags:
   - Jonathan
   - Judas Iscariot
   - Laban
-  - Mesopotamian
   - Moab
   - Nehemiah
   - Paul

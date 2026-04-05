@@ -34,7 +34,6 @@ tags:
   - Megiddo
   - Moab
   - Origen
-  - angel
   - Balaam
   - circumcision
   - Deutero-Isaiah

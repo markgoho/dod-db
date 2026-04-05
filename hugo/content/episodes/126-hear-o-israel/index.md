@@ -26,7 +26,6 @@ tags:
   - Paul
   - Isaac
   - Isaiah
-  - angel
   - Arad
   - Asherah
   - Baal
@@ -34,7 +33,6 @@ tags:
   - Hell
   - Joshua
   - King Sennacherib
-  - Mesopotamian
   - Moab
   - Nebuchadnezzar
   - Samuel

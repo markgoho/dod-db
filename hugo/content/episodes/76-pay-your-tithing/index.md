@@ -22,7 +22,6 @@ tags:
   - Isaiah
   - Jerusalem
   - Judaism
-  - Mesopotamian
   - Persia
   - Romans
   - Satan

@@ -14,7 +14,6 @@ tags:
   - Israel
   - Jerusalem
   - YHWH
-  - angel
   - Sheol
   - Univocality
   - Isaiah

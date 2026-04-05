@@ -6,7 +6,6 @@ videoId: AUgdX7aH_hI
 aliases:
   - /episodes/28/
 tags:
-  - angel
   - YHWH
   - Judaism
   - Baal
@@ -25,7 +24,6 @@ tags:
   - King Saul
   - Lot
   - Mary Magdalene
-  - Mesopotamian
   - Moses
   - Persia
   - Apocrypha
@@ -39,6 +37,7 @@ tags:
   - Pseudepigrapha
   - Sodom
   - Syria
+  - Annunciation
   - Deuteronomy
   - Egypt
   - Enoch

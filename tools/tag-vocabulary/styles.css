@@ -278,6 +278,12 @@ h2 {
   color: #6b7280;
   margin-bottom: 8px;
 }
+.vocab-suggested-episode {
+  font-size: 13px;
+  color: #4b5563;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
 .vocab-description {
   font-size: 13px;
   color: #4b5563;
@@ -633,6 +639,15 @@ h2 {
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+.proposed-source-episode {
+  font-size: 13px;
+  font-weight: 700;
+  color: #7c2d12;
+  background: #fde68a;
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 .proposed-form {
   display: grid;

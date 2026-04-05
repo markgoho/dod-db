@@ -7,11 +7,9 @@ aliases:
   - /episodes/84/
 tags:
   - Jesus
-  - angel
   - Hell
   - Beelzebul
   - Enoch
-  - Mesopotamian
   - Satan
   - Baal
   - Book of Enoch

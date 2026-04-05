@@ -15,7 +15,6 @@ tags:
   - Israel
   - Egyptians
   - Judah
-  - Mesopotamian
   - etiology
   - Eve
   - King David

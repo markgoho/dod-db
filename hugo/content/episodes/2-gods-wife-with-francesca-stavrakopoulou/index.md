@@ -27,7 +27,6 @@ tags:
   - divine council
   - Hebrews
   - Isaiah
-  - angel
   - Babylon
   - Deuteronomy
   - Egypt

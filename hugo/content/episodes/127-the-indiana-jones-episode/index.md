@@ -23,7 +23,6 @@ tags:
   - Moses
   - Passover
   - Samuel
-  - angel
   - Babylon
   - Egyptians
   - Joseph

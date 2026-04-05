@@ -13,7 +13,6 @@ tags:
   - apocalypse
   - Baal
   - Philo of Alexandria
-  - angel
   - Flavius Josephus
   - YHWH
   - Adam

@@ -15,7 +15,6 @@ tags:
   - Satan
   - Egypt
   - Garden of Eden
-  - Mesopotamian
   - Ugarit
   - Abraham
   - Babylon
@@ -23,7 +22,6 @@ tags:
   - divine council
   - Isaiah
   - Moab
-  - angel
   - Asherah
   - Daniel
   - Elijah

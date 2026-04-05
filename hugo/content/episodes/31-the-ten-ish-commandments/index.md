@@ -30,6 +30,7 @@ tags:
   - Josephus
   - Septuagint
   - Amorites
+  - Arad
   - Canaanites
   - circumcision
   - Gentiles

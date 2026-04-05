@@ -27,7 +27,6 @@ tags:
   - El
   - King Jabin
   - Abraham
-  - angel
   - Canaan
   - Canaanites
   - Galilee

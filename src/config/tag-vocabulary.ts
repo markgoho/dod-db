@@ -626,20 +626,7 @@ export const tagVocabulary: TagDefinition[] = [
       76, 84, 89, 90, 91, 94, 98, 99, 113, 114, 120, 122, 124, 125, 130, 132,
       133, 137,
     ],
-  },
-  {
-    canonical: "angel",
-    variations: ["angels"],
-    category: "theology",
-    status: "accepted",
-    episodes: [
-      1, 2, 3, 4, 5, 7, 10, 12, 14, 15, 17, 18, 19, 27, 28, 33, 34, 35, 37, 38,
-      39, 40, 41, 42, 45, 46, 55, 58, 59, 61, 62, 63, 64, 70, 71, 72, 73, 80,
-      84, 87, 91, 92, 95, 98, 104, 107, 114, 117, 120, 123, 124, 125, 126, 127,
-      129, 135, 136, 137,
-    ],
-  },
-  {
+  },  {
     canonical: "Monotheism",
     variations: ["monotheistic"],
     category: "theology",
@@ -2170,18 +2157,7 @@ export const tagVocabulary: TagDefinition[] = [
       "Referring to the Priestly Source (P), one of the hypothesized sources of the Pentateuch",
     status: "proposed",
     addedInEpisode: 56,
-  },
-  {
-    canonical: "Mesopotamian",
-    variations: ["Mesopotamia"],
-    category: "place",
-    status: "accepted",
-    episodes: [
-      1, 5, 10, 14, 22, 27, 28, 34, 36, 56, 61, 65, 66, 71, 72, 73, 76, 81, 84,
-      92, 95, 99, 105, 115, 116, 126, 138,
-    ],
-  },
-  {
+  },  {
     canonical: "Flood",
     variations: ["the Flood"],
     category: "event",
@@ -2477,16 +2453,6 @@ export const tagVocabulary: TagDefinition[] = [
     variations: [],
     category: "literature",
     status: "rejected",
-  },
-  {
-    canonical: "James McGrath",
-    variations: ["McGrath", "James F. McGrath"],
-    category: "person",
-    llmVerify: true,
-    description:
-      "Professor of New Testament at Butler University, scholar of John the Baptist and the Mandaeans",
-    status: "accepted",
-    episodes: [61, 87, 94],
   },
   {
     canonical: "baptism",
@@ -5094,16 +5060,14 @@ export const tagVocabulary: TagDefinition[] = [
       "A method of execution used by the Romans, involving binding or nailing a person to a cross or other wooden structure",
     status: "proposed",
     addedInEpisode: 134,
-  },
-  {
-    canonical: "Greco-Roman",
-    variations: [],
-    category: "miscellaneous",
-    description:
-      "Relating to the culture and civilization of ancient Greece and Rome",
-    status: "proposed",
-    addedInEpisode: 135,
-  },
+  },	{
+		canonical: 'Greco-Roman',
+		variations: [],
+		category: 'miscellaneous',
+		description: 'Relating to the culture and civilization of ancient Greece and Rome',
+		status: 'rejected',
+		addedInEpisode: 135,
+	},
   {
     canonical: "Anunnaki",
     variations: ["Anunnaki/Nephilim"],
@@ -5161,16 +5125,16 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     addedInEpisode: 136,
     episodes: [6, 35, 69, 94, 119, 136],
-  },
-  {
-    canonical: "Annunciation",
-    variations: [],
-    category: "event",
-    description:
-      "The announcement by the angel Gabriel to the Virgin Mary that she would conceive and become the mother of Jesus",
-    status: "proposed",
-    addedInEpisode: 136,
-  },
+  },	{
+		canonical: 'Annunciation',
+		variations: [],
+		category: 'event',
+		llmVerify: true,
+		description: 'The announcement by the angel Gabriel to the Virgin Mary that she would conceive and become the mother of Jesus',
+		status: 'accepted',
+		addedInEpisode: 136,
+		episodes: [28, 86, 136, 140],
+	},
   {
     canonical: "Geez",
     variations: [],
@@ -5199,16 +5163,16 @@ export const tagVocabulary: TagDefinition[] = [
       "One of the creators of the Bible Cross-Reference Visualization chart.",
     status: "rejected",
     addedInEpisode: 137,
-  },
-  {
-    canonical: "Hermeneia",
-    variations: [],
-    category: "scholarship",
-    description:
-      "Academic commentary series on the Bible, known for its scholarly rigor and detailed analysis.",
-    status: "proposed",
-    addedInEpisode: 137,
-  },
+  },	{
+		canonical: 'Hermeneia',
+		variations: [],
+		category: 'scholarship',
+		llmVerify: true,
+		description: 'Academic commentary series on the Bible, known for its scholarly rigor and detailed analysis.',
+		status: 'accepted',
+		addedInEpisode: 137,
+		episodes: [26, 34, 62, 89, 99, 104, 106, 137],
+	},
   {
     canonical: "Adam Lambert",
     variations: [],
@@ -5317,9 +5281,40 @@ export const tagVocabulary: TagDefinition[] = [
     category: "theology",
     description:
       "A central concept in the teachings of Jesus, referring to the reign or rule of God.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 143,
   },
+	{
+		canonical: 'Jordan',
+		variations: ['River Jordan'],
+		category: 'place',
+		description: 'Jordan River, a river in the Middle East that flows into the Dead Sea',
+		status: 'proposed',
+		addedInEpisode: 145,
+	},	{
+		canonical: 'Messiah',
+		variations: ['Messiah\'s', 'the Messiah'],
+		category: 'theology',
+		description: 'The anticipated king and deliverer of the Jewish people; in Christianity, Jesus is considered the Messiah',
+		status: 'rejected',
+		addedInEpisode: 145,
+	},
+	{
+		canonical: 'Esarhaddon',
+		variations: [],
+		category: 'person',
+		description: 'King of Assyria in the early 7th century BCE, successor to Sennacherib, known for the Vassal Treaty of Esarhaddon',
+		status: 'proposed',
+		addedInEpisode: 146,
+	},
+	{
+		canonical: 'Ashurbanipal',
+		variations: [],
+		category: 'person',
+		description: 'King of Assyria in the mid-7th century BCE, known for his vast library and military campaigns',
+		status: 'proposed',
+		addedInEpisode: 146,
+	},
 ];
 
 /**

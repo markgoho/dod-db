@@ -13,7 +13,6 @@ tags:
   - Megiddo
   - Israel
   - Judah
-  - angel
   - Capernaum
   - Samaria
   - YHWH

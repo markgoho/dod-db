@@ -15,7 +15,6 @@ tags:
   - Abraham
   - Israel
   - Melchizedek
-  - angel
   - David Burnett
   - Eschatology
   - apocalypse

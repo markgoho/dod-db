@@ -253,8 +253,28 @@ interface TagDefinition {
   caseSensitive?: boolean;
   description?: string;
   status?: string;
+  addedInEpisode?: number;
   episodes?: number[];
   duplicateOf?: string;
+}
+
+function formatSuggestedEpisode(addedInEpisode?: number): string {
+  if (!addedInEpisode) {
+    return "Source episode: unknown";
+  }
+
+  return `Source episode: ${addedInEpisode}`;
+}
+
+function sortVocabularyNewestFirst(a: TagDefinition, b: TagDefinition): number {
+  const aEpisode = a.addedInEpisode ?? -1;
+  const bEpisode = b.addedInEpisode ?? -1;
+
+  if (aEpisode !== bEpisode) {
+    return bEpisode - aEpisode;
+  }
+
+  return a.canonical.localeCompare(b.canonical);
 }
 
 // Load and display vocabulary
@@ -347,9 +367,9 @@ async function loadVocabulary(): Promise<void> {
 
     // Filter out rejected tags
     const vocab = await response.json();
-    allVocabulary = vocab.filter(
-      (tag: TagDefinition) => tag.status !== "rejected",
-    );
+    allVocabulary = vocab
+      .filter((tag: TagDefinition) => tag.status !== "rejected")
+      .sort(sortVocabularyNewestFirst);
     renderVocabulary(currentCategory);
   } catch (error) {
     console.error("Error loading vocabulary:", error);
@@ -411,6 +431,9 @@ function renderVocabulary(category: string): void {
           </div>
           <div class="vocab-variations">
             ${term.variations.length > 0 ? `Variations: ${term.variations.join(", ")}` : "No variations"}
+          </div>
+          <div class="vocab-suggested-episode">
+            ${formatSuggestedEpisode(term.addedInEpisode)}
           </div>
           ${
             term.description
@@ -809,7 +832,9 @@ async function loadProposedTags(): Promise<void> {
     }
 
     const vocabulary: TagDefinition[] = await response.json();
-    proposedTags = vocabulary.filter(tag => tag.status === "proposed");
+    proposedTags = vocabulary
+      .filter(tag => tag.status === "proposed")
+      .sort(sortVocabularyNewestFirst);
 
     renderProposedTags();
   } catch (error) {
@@ -888,6 +913,7 @@ function renderProposedCard(tag: TagDefinition, index: number): string {
     <div class="proposed-card" id="proposed-card-${index}" data-original="${escapedCanonical}" data-duplicate-of="${duplicateOf ? escapeHtml(duplicateOf) : ""}">
       <div class="proposed-header">
         <span class="proposed-status">Proposed</span>
+        <span class="proposed-source-episode">${formatSuggestedEpisode(tag.addedInEpisode)}</span>
       </div>
       <div class="proposed-form">
         ${duplicateNotice}

@@ -9,7 +9,6 @@ tags:
   - Egypt
   - Israel
   - King James Version
-  - Mesopotamian
   - YHWH
   - El
   - Endor

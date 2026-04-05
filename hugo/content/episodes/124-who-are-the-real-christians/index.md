@@ -6,7 +6,6 @@ videoId: yviFHESG_HA
 aliases:
   - /episodes/124/
 tags:
-  - angel
   - Nephilim
   - Jesus
   - YHWH

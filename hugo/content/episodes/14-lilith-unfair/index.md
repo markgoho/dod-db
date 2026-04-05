@@ -11,9 +11,7 @@ tags:
   - YHWH
   - Asherah
   - Israel
-  - Mesopotamian
   - Moses
-  - angel
   - Eve
   - Sarah
   - etiology

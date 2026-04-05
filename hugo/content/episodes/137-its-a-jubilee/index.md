@@ -7,7 +7,6 @@ aliases:
   - /episodes/137/
 tags:
   - Moses
-  - angel
   - Quran
   - biblical canon
   - Sodom
@@ -18,6 +17,7 @@ tags:
   - Jerusalem
   - Judas Iscariot
   - Abraham
+  - Hermeneia
   - Jesus
   - Judaism
   - Lot

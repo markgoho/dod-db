@@ -10,6 +10,7 @@ tags:
   - Jesus
   - Mary Magdalene
   - Protestantism
+  - Annunciation
   - biblical canon
   - Gospel of James
   - The Reformation
@@ -21,7 +22,6 @@ tags:
   - Junia
   - Paul
   - Romans
-  - angel
   - Book of Enoch
   - Candida Moss
   - Gabriel

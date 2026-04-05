@@ -13,7 +13,6 @@ tags:
   - etiology
   - Israel
   - Judah
-  - Mesopotamian
   - Noah
   - El
   - Flood

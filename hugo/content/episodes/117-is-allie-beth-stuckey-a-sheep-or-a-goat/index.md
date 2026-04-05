@@ -20,7 +20,6 @@ tags:
   - King James Version
   - Maccabees
   - Africa
-  - angel
   - Babylon
   - Catholicism
   - Deuteronomy

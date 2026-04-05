@@ -38,12 +38,12 @@ tags:
   - Egypt
   - Elijah
   - Eusebius
+  - Hermeneia
   - Isaiah
   - John of Patmos
   - Judeans
   - Latin Vulgate
   - Martin Luther
-  - Mesopotamian
   - Nazareth
   - Pastoral Epistles
   - Saint Titus

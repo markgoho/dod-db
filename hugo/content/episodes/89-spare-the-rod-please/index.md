@@ -17,6 +17,7 @@ tags:
   - Solomon
   - Univocality
   - cognitive dissonance
+  - Hermeneia
   - inerrancy
   - Romans
 books:

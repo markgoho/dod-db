@@ -7,7 +7,6 @@ aliases:
   - /episodes/104/
 tags:
   - Jesus
-  - angel
   - Enoch
   - Peter
   - James
@@ -39,6 +38,7 @@ tags:
   - El
   - forgery
   - Hebrews
+  - Hermeneia
   - Holy Spirit
   - inerrancy
   - Isaac

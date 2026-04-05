@@ -12,7 +12,6 @@ tags:
   - Babylon
   - Cain
   - Tower of Babel
-  - Mesopotamian
   - Abel
   - Israel
   - Enuma Elish

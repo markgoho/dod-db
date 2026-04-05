@@ -11,7 +11,6 @@ tags:
   - Sodom
   - Abraham
   - YHWH
-  - angel
   - Israel
   - archaeology
   - Dead Sea Scrolls

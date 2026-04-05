@@ -26,7 +26,6 @@ tags:
   - Babylon
   - David Carr
   - Israel
-  - Mesopotamian
   - YHWH
 books:
   - Exodus

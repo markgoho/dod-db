@@ -27,6 +27,7 @@ tags:
   - biblical canon
   - David Burnett
   - forgery
+  - Hermeneia
   - King David
   - Maccabees
   - Saint Titus

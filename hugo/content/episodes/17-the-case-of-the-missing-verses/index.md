@@ -16,7 +16,6 @@ tags:
   - Textus Receptus
   - YHWH
   - Martin Luther
-  - angel
   - Hell
   - Latin Vulgate
   - archaeology

@@ -7,7 +7,6 @@ aliases:
   - /episodes/129/
 tags:
   - Gideon
-  - angel
   - Baal
   - Israel
   - Midianites

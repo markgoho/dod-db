@@ -22,7 +22,6 @@ tags:
   - Creation ex nihilo
   - Debra Scoggins Ballentine
   - Septuagint
-  - angel
   - apocalypse
   - Baal
   - David Burnett

@@ -10,7 +10,6 @@ tags:
   - circumcision
   - Jesus
   - Satan
-  - angel
   - Isaac
   - Gentiles
   - Hebrews

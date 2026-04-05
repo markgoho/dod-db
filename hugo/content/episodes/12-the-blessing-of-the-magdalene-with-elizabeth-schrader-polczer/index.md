@@ -21,7 +21,6 @@ tags:
   - Josephus
   - Paul
   - Eusebius
-  - angel
   - archaeology
   - El
   - Israel

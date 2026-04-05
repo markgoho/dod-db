@@ -15,7 +15,6 @@ tags:
   - Jesus
   - Protestantism
   - Adam
-  - angel
   - biblical canon
   - epigraphy
   - Euphrates

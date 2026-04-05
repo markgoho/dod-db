@@ -22,7 +22,6 @@ tags:
   - Judeans
   - Maccabees
   - Second Temple period
-  - angel
   - Egypt
   - Essenes
   - Hanukkah

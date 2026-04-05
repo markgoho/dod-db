@@ -10,7 +10,6 @@ tags:
   - Jesus
   - Peter
   - Sheol
-  - angel
   - Noah
   - John
   - Book of Enoch

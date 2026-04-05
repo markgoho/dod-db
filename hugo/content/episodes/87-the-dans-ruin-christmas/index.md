@@ -10,7 +10,6 @@ tags:
   - Nazareth
   - Bethlehem
   - Mary Magdalene
-  - angel
   - Jerusalem
   - Egypt
   - King David
@@ -37,7 +36,6 @@ tags:
   - Hell
   - Holy Spirit
   - Jacob
-  - James McGrath
   - Josephus
   - Maccabees
   - Romans

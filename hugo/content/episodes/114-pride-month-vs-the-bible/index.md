@@ -10,7 +10,6 @@ tags:
   - Israel
   - Paul
   - Hell
-  - angel
   - Lot
   - Romans
   - YHWH

@@ -12,7 +12,6 @@ tags:
   - Hell
   - cognitive dissonance
   - biblical canon
-  - angel
   - Mary Magdalene
   - Paul
   - Rapture

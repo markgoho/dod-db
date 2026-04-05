@@ -15,7 +15,6 @@ tags:
   - El
   - Judah
   - Baal
-  - angel
   - Hezekiah
   - Joram
   - Jehoshaphat

@@ -16,13 +16,11 @@ export async function writeHugoFile({
   frontmatter: HugoEpisodeFrontmatter;
   content: string;
 }): Promise<void> {
-  // Normalize date to Date object for consistent formatting
-  // Ensures Bun.YAML.stringify produces unquoted date with milliseconds
   const normalizedFrontmatter = {
     ...frontmatter,
     date:
-      typeof frontmatter.date === "string"
-        ? new Date(frontmatter.date)
+      frontmatter.date instanceof Date
+        ? frontmatter.date.toISOString()
         : frontmatter.date,
   };
 
@@ -30,8 +28,8 @@ export async function writeHugoFile({
     normalizedFrontmatter,
     undefined,
     2,
-  );
+  ).replaceAll(/ +\n/g, "\n");
   const normalizedContent = content.endsWith("\n") ? content : `${content}\n`;
-  const fullContent = `---\n${frontmatterYaml}---\n${normalizedContent}`;
+  const fullContent = `---\n${frontmatterYaml}\n---\n${normalizedContent}`;
   await Bun.write(filePath, fullContent);
 }

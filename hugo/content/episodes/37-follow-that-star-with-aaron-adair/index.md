@@ -11,7 +11,6 @@ tags:
   - Jerusalem
   - Matthew
   - Hebrews
-  - angel
   - Deism
   - Israel
   - Easter

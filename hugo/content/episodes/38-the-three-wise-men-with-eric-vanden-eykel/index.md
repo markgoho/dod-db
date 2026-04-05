@@ -24,7 +24,6 @@ tags:
   - etiology
   - Joseph
   - Moses
-  - angel
   - Egypt
   - Gospel of James
   - Judah

@@ -42,7 +42,6 @@ tags:
   - Jephthah
   - Jesus
   - King Josiah
-  - Mesopotamian
   - Moses
   - Nineveh
   - Philistines

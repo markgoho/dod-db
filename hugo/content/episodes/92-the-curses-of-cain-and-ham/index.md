@@ -24,7 +24,6 @@ tags:
   - Babylon
   - Septuagint
   - Abraham
-  - angel
   - Hebrews
   - Jesus
   - Philo of Alexandria
@@ -43,7 +42,6 @@ tags:
   - Judah
   - Judaism
   - Martin Luther
-  - Mesopotamian
   - Nebuchadnezzar
 books:
   - Genesis

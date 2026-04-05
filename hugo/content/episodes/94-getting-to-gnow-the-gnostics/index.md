@@ -30,7 +30,6 @@ tags:
   - Essenes
   - Galilee
   - Hell
-  - James McGrath
   - Jeremiah
   - Judaism
   - Latin Vulgate

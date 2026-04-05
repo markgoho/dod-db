@@ -6,7 +6,6 @@ videoId: caKa7DTkSkQ
 aliases:
   - /episodes/27/
 tags:
-  - angel
   - Euphrates
   - Book of Enoch
   - Nephilim
@@ -19,7 +18,6 @@ tags:
   - Adam
   - etiology
   - Goliath
-  - Mesopotamian
   - Noah
   - Rapture
   - biblical canon

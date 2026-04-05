@@ -14,7 +14,6 @@ tags:
   - Eschatology
   - Moses
   - Satan
-  - angel
   - biblical canon
   - Daniel
   - Isaiah

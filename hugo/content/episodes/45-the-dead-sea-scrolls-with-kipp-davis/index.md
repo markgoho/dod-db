@@ -16,7 +16,6 @@ tags:
   - Daniel
   - Masoretic Text
   - Nebuchadnezzar
-  - angel
   - Jeremiah
   - Nabonidus
   - Samuel

@@ -13,7 +13,6 @@ tags:
   - Cyrus the Great
   - Maccabees
   - Babylon
-  - angel
   - Habakkuk
   - Monotheism
   - YHWH

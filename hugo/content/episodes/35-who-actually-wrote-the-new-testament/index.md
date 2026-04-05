@@ -25,7 +25,6 @@ tags:
   - Jerusalem
   - Judas Iscariot
   - Sea of Galilee
-  - angel
   - Bart Ehrman
   - Catholicism
   - Ishmael

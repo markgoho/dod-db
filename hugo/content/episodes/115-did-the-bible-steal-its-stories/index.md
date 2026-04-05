@@ -31,7 +31,6 @@ tags:
   - Ken Ham
   - King James Version
   - Melchizedek
-  - Mesopotamian
   - Moses
   - Persia
   - Syria

@@ -25,7 +25,6 @@ tags:
   - Masoretic Text
   - Moab
   - Septuagint
-  - angel
   - Egypt
   - Garden of Eden
   - Helen Bond

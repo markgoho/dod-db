@@ -8,7 +8,6 @@ aliases:
 tags:
   - Bart Ehrman
   - Jesus
-  - angel
   - Rapture
   - biblical canon
   - John of Patmos

@@ -1,6 +1,6 @@
 ---
 name: process-next-episode
-description: Find the next unprocessed canonical RSS episode, show its enclosure audio URL, ask for confirmation, then run the RSS audio processing pipeline.
+description: Find the next unprocessed canonical RSS episode and, when an audio URL is available, run the RSS audio processing pipeline automatically without asking for confirmation.
 ---
 
 # Process Next Episode
@@ -36,17 +36,17 @@ This script should show:
 - GUID
 - enclosure/audio URL
 
-### 2. Present the RSS episode to the user
+### 2. Show the episode details and proceed
 
 Show the episode title and enclosure URL clearly.
 
 Do not mention YouTube candidates or channel matching.
 
-Ask the user to confirm before processing.
+Do not ask for confirmation. Proceed directly to Step 3.
 
-### 3. After user confirmation, run the processing pipeline
+### 3. Run the processing pipeline
 
-Once the user confirms, run:
+Once the episode has been identified, run:
 
 ```bash
 bun run src/scripts/process-next-episode.ts

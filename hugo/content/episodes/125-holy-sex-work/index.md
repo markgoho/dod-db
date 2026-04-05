@@ -13,7 +13,6 @@ tags:
   - Dead Sea Scrolls
   - Garden of Eden
   - Maccabees
-  - angel
   - Asa
   - Israel
   - Judah

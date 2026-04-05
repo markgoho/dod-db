@@ -29,7 +29,6 @@ tags:
   - Joram
   - Mary Magdalene
   - Masoretic Text
-  - Mesopotamian
   - Moses
   - Protestantism
   - Ritual Decalogue

@@ -13,7 +13,6 @@ tags:
   - Israel
   - Eschatology
   - Hebrews
-  - Mesopotamian
   - Pastoral Epistles
   - archaeology
   - Egyptians

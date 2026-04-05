@@ -20,7 +20,6 @@ tags:
   - Egypt
   - Mary Magdalene
   - Virgin Birth
-  - angel
   - apocalypse
   - Athanasius of Alexandria
   - baptism
@@ -29,7 +28,6 @@ tags:
   - Hypostasis
   - Israel
   - Justin Martyr
-  - Mesopotamian
   - monotheism
   - Paul
   - Romans

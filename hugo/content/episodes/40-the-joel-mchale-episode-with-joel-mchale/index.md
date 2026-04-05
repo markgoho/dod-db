@@ -17,7 +17,6 @@ tags:
   - Catholicism
   - Baal
   - baptism
-  - angel
   - Bart Ehrman
   - Capernaum
   - Desiderius Erasmus

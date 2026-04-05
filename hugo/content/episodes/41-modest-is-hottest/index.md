@@ -26,7 +26,6 @@ tags:
   - Peter
   - Abigail
   - Adam
-  - angel
   - Egypt
   - Egyptians
   - etiology

@@ -8,7 +8,6 @@ aliases:
 tags:
   - Enoch
   - Book of Enoch
-  - angel
   - Noah
   - biblical canon
   - Eschatology
@@ -21,6 +20,7 @@ tags:
   - Dead Sea Scrolls
   - Flood
   - Ham
+  - Hermeneia
   - Qumran
   - Hell
   - James VanderKam

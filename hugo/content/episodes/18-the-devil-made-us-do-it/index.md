@@ -8,7 +8,6 @@ aliases:
 tags:
   - Satan
   - Balaam
-  - angel
   - YHWH
   - Israel
   - Beelzebul

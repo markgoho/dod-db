@@ -22,7 +22,6 @@ tags:
   - Michael
   - Romans
   - Trinity
-  - angel
   - Dead Sea Scrolls
   - Jesus
   - Judaism
@@ -35,12 +34,12 @@ tags:
   - Easter
   - Egypt
   - Hebrews
+  - Hermeneia
   - inerrancy
   - Isaiah
   - Jeremiah
   - Jerusalem
   - Maccabees
-  - Mesopotamian
   - Qumran
   - Rapture
   - Syria

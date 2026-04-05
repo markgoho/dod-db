@@ -9,7 +9,6 @@ tags:
   - King James Version
   - Israel
   - Jesus
-  - angel
   - William Tyndale
   - Septuagint
   - Dead Sea Scrolls

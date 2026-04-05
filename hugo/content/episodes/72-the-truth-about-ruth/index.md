@@ -15,7 +15,6 @@ tags:
   - Jerusalem
   - Lachish
   - Moab
-  - angel
   - Tamar
   - YHWH
   - Assyria
@@ -24,7 +23,6 @@ tags:
   - Nineveh
   - Isaiah
   - King Josiah
-  - Mesopotamian
   - Arad
   - archaeology
   - Babylon

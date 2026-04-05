@@ -7,7 +7,6 @@ aliases:
   - /episodes/10/
 tags:
   - Paul
-  - angel
   - Adam
   - Philo of Alexandria
   - Judaism
@@ -17,7 +16,6 @@ tags:
   - Israel
   - Sodom
   - Garden of Eden
-  - Mesopotamian
   - Romans
   - etiology
   - Eve

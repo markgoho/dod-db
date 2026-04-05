@@ -10,7 +10,6 @@ tags:
   - Israel
   - Samson
   - Isaac
-  - angel
   - Abraham
   - El
   - Laban
