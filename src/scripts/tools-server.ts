@@ -602,7 +602,7 @@ const _server = Bun.serve({
 
     // Tag Vocabulary API: Get all processed episodes with tags
     if (url.pathname === "/api/tag-vocabulary/episodes") {
-      const videos = await loadProcessedVideos();
+      const videos = await getProcessedVideosWithNumbers();
       return jsonResponse(videos);
     }
 
@@ -1253,7 +1253,7 @@ const _server = Bun.serve({
 
     // Segment Verification API: Get all episodes with segments
     if (url.pathname === "/api/segment-verification/episodes") {
-      const videos = await loadProcessedVideos();
+      const videos = await getProcessedVideosWithNumbers();
       // Sort by episode number
       const sorted = [...videos].sort(
         (a, b) => (a.episodeNumber || 0) - (b.episodeNumber || 0),
@@ -1456,7 +1456,7 @@ const _server = Bun.serve({
       request.method === "GET"
     ) {
       const videoId = url.pathname.replace("/api/episode/", "");
-      const videos = await loadProcessedVideos();
+      const videos = await getProcessedVideosWithNumbers();
       const video = videos.find(v => v.videoId === videoId);
 
       if (!video) {

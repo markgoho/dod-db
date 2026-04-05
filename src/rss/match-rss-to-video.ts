@@ -5,6 +5,15 @@ import type { PatreonRssItem } from "./patreon-rss-item.js";
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const MAX_DATE_DISTANCE_DAYS = 3;
+const EPISODE_IN_TITLE_PATTERN = /episode\s+\d+/i;
+
+function hasEpisodeNumberInTitle(title: string): boolean {
+  return EPISODE_IN_TITLE_PATTERN.test(title);
+}
+
+function canUseDateFallback(item: PatreonRssItem): boolean {
+  return hasEpisodeNumberInTitle(item.title);
+}
 
 function normalizeTitle(title: string): string {
   return slugifyTitle(extractCleanTitle(title));
@@ -34,7 +43,7 @@ export function matchRssItemToVideo(
     return exactTitleMatches[0];
   }
 
-  if (exactTitleMatches.length > 1) {
+  if (exactTitleMatches.length > 1 || !canUseDateFallback(item)) {
     return undefined;
   }
 

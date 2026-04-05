@@ -338,6 +338,70 @@ describe("computeEpisodeNumbersFromRss", () => {
     warnSpy.mockRestore();
   });
 
+  test("uses the Ten-ish Commandments override when RSS ordering would otherwise drift", () => {
+    const videos: ProcessedVideo[] = [
+      {
+        ...baseVideo,
+        videoId: "ep30aaaaaaa",
+        title: 'Episode 30 (October 30, 2023), "Jacob Wrestles a Dude"',
+        publishedAt: "2023-10-30T00:00:00Z",
+      },
+      {
+        ...baseVideo,
+        videoId: "q5Yw6xPCS6U",
+        title: 'Episode 31 (November 6, 2023), "The Ten (ish) Commandments"',
+        publishedAt: "2023-11-06T00:00:00Z",
+      },
+      {
+        ...baseVideo,
+        videoId: "ep32bbbbbbb",
+        title: 'Episode 32 (November 13, 2023), "Annihilationism!"',
+        publishedAt: "2023-11-13T00:00:00Z",
+      },
+      {
+        ...baseVideo,
+        videoId: "1qbh8bFGfvg",
+        title:
+          'Episode 33 (November 20, 2023), "The Bible and Disability" with Isaac Soon',
+        publishedAt: "2023-11-20T00:00:00Z",
+      },
+    ];
+
+    const result = computeEpisodeNumbersFromRss(videos, [
+      {
+        title: "Episode 30: Jacob Wrestles a Dude",
+        pubDate: "Sun, 29 Oct 2023 15:12:05 GMT",
+        guid: "30",
+        itunesEpisode: 30,
+      },
+      {
+        title: "Episode 32: Annihilationism!",
+        pubDate: "Sun, 12 Nov 2023 15:12:05 GMT",
+        guid: "32",
+        itunesEpisode: 32,
+      },
+      {
+        title: "The Ten (ish) Commandments",
+        pubDate: "Wed, 15 Nov 2023 15:12:05 GMT",
+        guid: "31",
+        itunesEpisode: 31,
+      },
+      {
+        title: "Episode 33: The Bible and Disability",
+        pubDate: "Sun, 19 Nov 2023 15:12:05 GMT",
+        guid: "33",
+        itunesEpisode: 33,
+      },
+    ]);
+
+    expect(result.map(video => [video.videoId, video.episodeNumber])).toEqual([
+      ["ep30aaaaaaa", 30],
+      ["q5Yw6xPCS6U", 31],
+      ["ep32bbbbbbb", 32],
+      ["1qbh8bFGfvg", 33],
+    ]);
+  });
+
   test("falls back to the existing numbering algorithm when RSS items are empty", () => {
     const videos: ProcessedVideo[] = [
       {

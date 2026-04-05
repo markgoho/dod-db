@@ -30,7 +30,7 @@ describe("matchRssItemToVideo", () => {
     expect(matched?.videoId).toBe("29tvdRjwlJI");
   });
 
-  test("falls back to date matching when title does not normalize equally", () => {
+  test("falls back to date matching for numbered episode posts", () => {
     const videos: ProcessedVideo[] = [
       {
         ...baseVideo,
@@ -42,7 +42,7 @@ describe("matchRssItemToVideo", () => {
 
     const matched = matchRssItemToVideo(
       {
-        title: "Patreon Main Episode Title",
+        title: "Episode 114: Patreon Main Episode Title",
         pubDate: "Sun, 01 Jun 2025 15:12:05 GMT",
         guid: "130431711",
       },
@@ -70,9 +70,31 @@ describe("matchRssItemToVideo", () => {
 
     const matched = matchRssItemToVideo(
       {
-        title: "Patreon Main Episode Title",
+        title: "Episode 114: Patreon Main Episode Title",
         pubDate: "Sun, 01 Jun 2025 15:12:05 GMT",
         guid: "130431711",
+      },
+      videos,
+    );
+
+    expect(matched).toBeUndefined();
+  });
+
+  test("does not fall back to date matching for non-episode Patreon posts", () => {
+    const videos: ProcessedVideo[] = [
+      {
+        ...baseVideo,
+        videoId: "q5Yw6xPCS6U",
+        title: 'Episode 31 (November 6, 2023), "The Ten (ish) Commandments"',
+        publishedAt: "2023-11-06T00:00:00Z",
+      },
+    ];
+
+    const matched = matchRssItemToVideo(
+      {
+        title: "Members PLUS Content",
+        pubDate: "Sun, 05 Nov 2023 18:20:43 GMT",
+        guid: "bonus-post",
       },
       videos,
     );
