@@ -138,7 +138,7 @@ export const SEGMENT_PATTERNS: Record<
 Run type checking to ensure no errors:
 
 ```bash
-bun run --bun tsc --noEmit src/config/segment-patterns.ts
+bun run typecheck
 ```
 
 ### 6. Restart Tools Server
