@@ -8,6 +8,7 @@ aliases:
 tags:
   - Solomon
   - King David
+  - Jeroboam
   - Paul
   - Rehoboam
   - Molek

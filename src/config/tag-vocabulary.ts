@@ -5384,16 +5384,14 @@ export const tagVocabulary: TagDefinition[] = [
       "The governor mentioned in the Acts of Paul and Thecla before whom Paul is brought.",
     status: "proposed",
     addedInEpisode: 148,
-  },
-  {
-    canonical: "Jennifer Garcia-Bashaw",
-    variations: ["Jen"],
-    category: "person",
-    description:
-      "Professor at Campbell University and an ordained Baptist minister, with a PhD in New Testament from Fuller Seminary. She is the co-author of 'Serving Up Scripture'.",
-    status: "proposed",
-    addedInEpisode: 149,
-  },
+  },	{
+		canonical: 'Jennifer Garcia-Bashaw',
+		variations: ['Jen'],
+		category: 'person',
+		description: 'Professor at Campbell University and an ordained Baptist minister, with a PhD in New Testament from Fuller Seminary. She is the co-author of \'Serving Up Scripture\'.',
+		status: 'rejected',
+		addedInEpisode: 149,
+	},
   {
     canonical: "Chicago Theological Seminary",
     variations: [],
@@ -5438,16 +5436,16 @@ export const tagVocabulary: TagDefinition[] = [
       "A deacon in the early church in Jerusalem who was stoned to death for his faith, as recorded in the Book of Acts.",
     status: "proposed",
     addedInEpisode: 149,
-  },
-  {
-    canonical: "Jeroboam",
-    variations: [],
-    category: "character",
-    description:
-      "First king of the northern Kingdom of Israel after the revolt of the ten northern Israelite tribes against the Davidic dynasty.",
-    status: "proposed",
-    addedInEpisode: 149,
-  },
+  },	{
+		canonical: 'Jeroboam',
+		variations: [],
+		category: 'character',
+		llmVerify: true,
+		description: 'First king of the northern Kingdom of Israel after the revolt of the ten northern Israelite tribes against the Davidic dynasty.',
+		status: 'accepted',
+		addedInEpisode: 149,
+		episodes: [7, 64, 110, 139, 149],
+	},
   {
     canonical: "Ethiopian Orthodox",
     variations: ["Ethiopian Orthodox Tewahedo Church"],
@@ -5474,24 +5472,13 @@ export const tagVocabulary: TagDefinition[] = [
 		status: 'accepted',
 		addedInEpisode: 152,
 		episodes: [19, 44, 70, 77, 89, 98, 120, 140, 142, 149, 152],
-	},
-  {
-    canonical: "Galileo",
-    variations: [],
-    category: "person",
-    description:
-      "Italian astronomer, physicist and engineer whose observations provided evidence for heliocentrism, leading to conflict with the Catholic Church",
-    status: "proposed",
-    addedInEpisode: 152,
-  },	{
-		canonical: 'Chicago Statement on Inerrancy',
-		variations: ['chicago statement'],
-		category: 'event',
-		llmVerify: true,
-		description: 'A statement affirming biblical inerrancy, adopted in 1978 by the International Council on Biblical Inerrancy',
-		status: 'accepted',
+	},	{
+		canonical: 'Galileo',
+		variations: [],
+		category: 'person',
+		description: 'Italian astronomer, physicist and engineer whose observations provided evidence for heliocentrism, leading to conflict with the Catholic Church',
+		status: 'rejected',
 		addedInEpisode: 152,
-		episodes: [149, 152],
 	},
   {
     canonical: "Rabbi Akiva",

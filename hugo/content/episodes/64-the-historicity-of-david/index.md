@@ -31,6 +31,7 @@ tags:
   - Gentiles
   - Goliath
   - Isaac
+  - Jeroboam
   - King Josiah
   - Nehemiah
   - Paul

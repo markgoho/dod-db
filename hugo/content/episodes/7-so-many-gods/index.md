@@ -36,6 +36,7 @@ tags:
   - Syria
   - Galilee
   - Jeremiah
+  - Jeroboam
   - King David
   - Leningrad Codex
   - monotheism

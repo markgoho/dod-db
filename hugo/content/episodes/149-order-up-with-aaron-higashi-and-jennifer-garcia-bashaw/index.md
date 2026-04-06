@@ -19,6 +19,7 @@ tags:
   - Abraham
   - Chicago Statement on Inerrancy
   - Deuteronomy
+  - Jeroboam
   - Joseph
   - Monotheism
   - Rehoboam

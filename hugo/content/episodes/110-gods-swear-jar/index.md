@@ -11,6 +11,7 @@ tags:
   - Judaism
   - Clement of Alexandria
   - Egyptians
+  - Jeroboam
   - baptism
   - biblical canon
   - Dead Sea Scrolls
