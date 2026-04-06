@@ -6,19 +6,16 @@ videoId: FL5YxTKUioI
 aliases:
   - /episodes/134/
 tags:
-  - Jesus
   - King James Version
   - Judaism
   - Septuagint
   - Catholicism
   - Daniel
-  - Hebrews
   - Romans
   - Solomon
   - Constantine
   - Deuteronomy
   - Irenaeus
-  - Israel
   - Masoretic Text
   - Moses
   - Paul

@@ -6,7 +6,6 @@ videoId: efYng6wT4YY
 aliases:
   - /episodes/135/
 tags:
-  - Jesus
   - Paul
   - Judaism
   - Babylon
@@ -18,9 +17,7 @@ tags:
   - Adam
   - Daniel
   - Eve
-  - Hebrews
   - Islam
-  - Israel
   - Jerusalem
   - Judah
   - Nephilim

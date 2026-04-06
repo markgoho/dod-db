@@ -8,10 +8,8 @@ aliases:
 tags:
   - Christian Nationalism
   - Paul
-  - Jesus
   - Romans
   - Andrew Whitehead
-  - Hebrews
   - Solomon
   - apocalypse
   - Cyrus the Great

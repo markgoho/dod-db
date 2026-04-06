@@ -6,7 +6,6 @@ videoId: irflmh20e8Y
 aliases:
   - /episodes/60/
 tags:
-  - Jesus
   - Paul
   - Priscilla
   - YHWH

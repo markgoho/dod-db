@@ -7,12 +7,10 @@ aliases:
   - /episodes/38/
 tags:
   - Matthew
-  - Jesus
   - Luke
   - Judeans
   - Bethlehem
   - Jerusalem
-  - Hebrews
   - Persia
   - Mary Magdalene
   - Apocrypha

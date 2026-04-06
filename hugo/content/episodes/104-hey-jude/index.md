@@ -6,12 +6,10 @@ videoId: h7SIkjdpCi4
 aliases:
   - /episodes/104/
 tags:
-  - Jesus
   - Enoch
   - Peter
   - James
   - Book of Enoch
-  - Israel
   - Sodom
   - Babylon
   - Egypt
@@ -34,10 +32,10 @@ tags:
   - Textus Receptus
   - Trinity
   - Abraham
+  - Codex Vaticanus
   - Dead Sea Scrolls
   - El
   - forgery
-  - Hebrews
   - Hermeneia
   - Holy Spirit
   - inerrancy
@@ -50,6 +48,7 @@ tags:
   - Second Temple period
   - Septuagint
   - Ten Commandments
+  - Tertullian
   - textual criticism
   - Univocality
 books:

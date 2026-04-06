@@ -20,7 +20,6 @@ tags:
   - Garden of Eden
   - Gilead
   - Hezekiah
-  - Israel
   - King James Version
   - Lachish
   - Satan
@@ -30,7 +29,6 @@ tags:
   - Sukkot
   - Abraham
   - Cherubim
-  - Hebrews
   - Judeans
   - Peter
   - Saint Titus

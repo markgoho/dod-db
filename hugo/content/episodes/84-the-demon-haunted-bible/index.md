@@ -6,7 +6,6 @@ videoId: "-C1AFxpKb2U"
 aliases:
   - /episodes/84/
 tags:
-  - Jesus
   - Hell
   - Beelzebul
   - Enoch
@@ -17,7 +16,6 @@ tags:
   - King James Version
   - Peter
   - Egypt
-  - Israel
   - King Saul
   - Luke
   - Mary Magdalene
@@ -30,7 +28,6 @@ tags:
   - etiology
   - Gabriel
   - Galilee
-  - Hebrews
   - Herod Antipas
   - Isaiah
   - Jerusalem
@@ -41,6 +38,7 @@ tags:
   - Sea of Galilee
   - Sheol
   - Ugarit
+  - Uriel
 books:
   - Luke
   - Matthew

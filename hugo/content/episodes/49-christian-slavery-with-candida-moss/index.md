@@ -6,7 +6,6 @@ videoId: GXyJILdNxUE
 aliases:
   - /episodes/49/
 tags:
-  - Jesus
   - Paul
   - Papias of Hierapolis
   - Romans
@@ -15,15 +14,14 @@ tags:
   - Luke
   - Nazareth
   - Candida Moss
+  - Clement of Alexandria
   - Clement of Rome
   - Egypt
-  - Hebrews
   - Pliny the Younger
   - Aesop
   - Africa
   - archaeology
   - First Clement
-  - Israel
   - Martin Luther
   - Mary Magdalene
   - Protestantism

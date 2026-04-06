@@ -7,7 +7,6 @@ aliases:
   - /episodes/94/
 tags:
   - Gnostic
-  - Jesus
   - Codex Sinaiticus
   - Constantine
   - Mary Magdalene
@@ -19,9 +18,9 @@ tags:
   - Peter
   - YHWH
   - Catholicism
+  - Codex Vaticanus
   - Eusebius
   - Gospel of Thomas
-  - Israel
   - James
   - Marcion
   - Textus Receptus

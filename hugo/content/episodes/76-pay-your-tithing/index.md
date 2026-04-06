@@ -6,14 +6,12 @@ videoId: KTw6aVIhMOk
 aliases:
   - /episodes/76/
 tags:
-  - Jesus
   - Deuteronomy
   - Peter
   - Sapphira
   - YHWH
   - Abraham
   - Judah
-  - Israel
   - Joshua
   - Melchizedek
   - Paul

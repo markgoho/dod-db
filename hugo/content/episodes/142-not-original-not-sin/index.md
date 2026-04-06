@@ -6,6 +6,7 @@ videoId: d05D1TuJNHI
 aliases:
   - /episodes/142/
 tags:
+  - Tertullian
   - The Reformation
 books:
   - Genesis

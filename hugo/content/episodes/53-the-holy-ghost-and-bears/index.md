@@ -7,7 +7,6 @@ aliases:
   - /episodes/53/
 tags:
   - Holy Spirit
-  - Jesus
   - Elisha
   - King Saul
   - Trinity
@@ -15,7 +14,6 @@ tags:
   - Elijah
   - King James Version
   - Satan
-  - Israel
   - Samuel
   - Baal
   - Bethel

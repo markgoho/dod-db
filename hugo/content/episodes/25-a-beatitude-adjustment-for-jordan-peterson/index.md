@@ -7,11 +7,9 @@ aliases:
   - /episodes/25/
 tags:
   - Matthew
-  - Jesus
   - Luke
   - YHWH
   - Eschatology
-  - Israel
   - Isaiah
   - Galilee
   - Hell

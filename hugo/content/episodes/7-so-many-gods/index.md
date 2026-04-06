@@ -7,7 +7,6 @@ aliases:
   - /episodes/7/
 tags:
   - YHWH
-  - Israel
   - divine council
   - Moab
   - Deuteronomy
@@ -26,7 +25,6 @@ tags:
   - Ahab
   - Assyria
   - Babylon
-  - Hebrews
   - Isaiah
   - King James Version
   - Ugarit

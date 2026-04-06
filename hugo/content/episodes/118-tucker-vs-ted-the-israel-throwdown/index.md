@@ -6,7 +6,6 @@ videoId: OtxuR9K4PKA
 aliases:
   - /episodes/118/
 tags:
-  - Israel
   - Abraham
   - Babylon
   - Origen
@@ -15,10 +14,8 @@ tags:
   - Jacob
   - Jerusalem
   - Egypt
-  - Jesus
   - Jonah
   - divine council
-  - Hebrews
   - Septuagint
   - Edomites
   - inerrancy

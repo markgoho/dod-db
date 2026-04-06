@@ -8,17 +8,14 @@ aliases:
 tags:
   - Babylon
   - Tower of Babel
-  - Jesus
   - YHWH
   - etiology
-  - Israel
   - Judah
   - Noah
   - El
   - Flood
   - Garden of Eden
   - Ham
-  - Hebrews
   - Japheth
   - Joshua
   - Shem

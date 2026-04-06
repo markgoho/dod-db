@@ -11,7 +11,6 @@ tags:
   - Sodom
   - Abraham
   - YHWH
-  - Israel
   - archaeology
   - Dead Sea Scrolls
   - etiology
@@ -25,7 +24,6 @@ tags:
   - Samaritans
   - Adam
   - Hagar
-  - Hebrews
   - King David
   - King Sennacherib
   - Mount Ebal

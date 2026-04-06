@@ -9,10 +9,8 @@ audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/1
 tags:
   - Herod Antipas
   - John the Baptist
-  - Jesus
   - Herodias
   - Flavius Josephus
-  - Hebrews
   - Luke
   - Peter
   - Univocality

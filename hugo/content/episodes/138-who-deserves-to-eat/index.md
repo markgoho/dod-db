@@ -7,12 +7,9 @@ aliases:
   - /episodes/138/
 tags:
   - Egypt
-  - Jesus
   - Joseph
   - Paul
-  - Israel
   - Eschatology
-  - Hebrews
   - Pastoral Epistles
   - archaeology
   - Egyptians

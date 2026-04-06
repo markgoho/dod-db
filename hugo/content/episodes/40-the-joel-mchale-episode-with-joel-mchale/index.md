@@ -10,9 +10,7 @@ tags:
   - Samuel
   - Philistines
   - YHWH
-  - Israel
   - Endor
-  - Jesus
   - Witch of Endor
   - Catholicism
   - Baal

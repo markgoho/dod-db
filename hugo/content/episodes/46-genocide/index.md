@@ -8,10 +8,7 @@ aliases:
 tags:
   - Joshua
   - YHWH
-  - Israel
-  - Jesus
   - Canaanites
-  - Hebrews
   - Moses
   - Deuteronomy
   - Jericho

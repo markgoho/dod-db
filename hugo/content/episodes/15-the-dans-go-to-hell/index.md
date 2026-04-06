@@ -9,9 +9,7 @@ tags:
   - Hell
   - Matthew
   - Judas Iscariot
-  - Jesus
   - Book of Enoch
-  - Israel
   - Jerusalem
   - YHWH
   - Sheol
@@ -26,7 +24,6 @@ tags:
   - archaeology
   - child sacrifice
   - Eusebius
-  - Hebrews
   - inerrancy
   - Jeremiah
   - Judaism

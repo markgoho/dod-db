@@ -7,7 +7,6 @@ aliases:
   - /episodes/98/
 tags:
   - Hell
-  - Jesus
   - Peter
   - Sheol
   - Noah
@@ -18,6 +17,7 @@ tags:
   - Athanasius of Alexandria
   - biblical canon
   - Eschatology
+  - Raphael
   - Catholicism
   - Enoch
   - Flood
@@ -32,6 +32,7 @@ tags:
   - King James Version
   - Lamech
   - Pontius Pilate
+  - Uriel
 books:
   - Revelation
   - 1 Peter

@@ -12,8 +12,6 @@ tags:
   - Onan
   - King David
   - child sacrifice
-  - Hebrews
-  - Israel
   - King Saul
   - Eglon
   - Noah

@@ -7,7 +7,6 @@ aliases:
   - /episodes/82/
 tags:
   - Southern Baptist Convention
-  - Jesus
   - Rapture
   - Christian Nationalism
   - YHWH

@@ -8,7 +8,6 @@ aliases:
 tags:
   - YHWH
   - Ten Commandments
-  - Israel
   - Egypt
   - El
   - Asherah
@@ -16,7 +15,6 @@ tags:
   - Judaism
   - Islam
   - Jehu
-  - Jesus
   - King James Version
   - Onan
   - Ugarit
@@ -24,7 +22,6 @@ tags:
   - Cherubim
   - Elephantine
   - Elijah
-  - Hebrews
   - Jerusalem
   - Joram
   - Mary Magdalene

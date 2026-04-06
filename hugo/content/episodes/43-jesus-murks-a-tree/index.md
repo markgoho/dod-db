@@ -6,7 +6,6 @@ videoId: OsQMmt2QnPU
 aliases:
   - /episodes/43/
 tags:
-  - Jesus
   - Matthew
   - Deutero-Isaiah
   - Jerusalem
@@ -15,7 +14,6 @@ tags:
   - Isaiah
   - Judaism
   - Hezekiah
-  - Israel
   - King Sennacherib
   - Cyrus the Great
   - Judah

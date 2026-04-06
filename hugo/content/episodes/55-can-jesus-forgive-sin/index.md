@@ -7,11 +7,9 @@ aliases:
   - /episodes/55/
 tags:
   - Jehu
-  - Jesus
   - Ahaziah
   - Joram
   - Megiddo
-  - Israel
   - Judah
   - Capernaum
   - Samaria

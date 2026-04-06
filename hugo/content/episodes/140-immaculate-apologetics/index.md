@@ -8,6 +8,7 @@ aliases:
 tags:
   - Flavius Josephus
   - Annunciation
+  - Codex Vaticanus
 books:
   - Matthew
   - John

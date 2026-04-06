@@ -21,7 +21,6 @@ tags:
   - Martin Luther
   - Book of Enoch
   - Jared
-  - Jesus
   - Abraham
   - Judaism
   - Athanasius of Alexandria
@@ -33,9 +32,7 @@ tags:
   - The Reformation
   - Dead Sea Scrolls
   - Egypt
-  - Hebrews
   - Isaiah
-  - Israel
   - James
   - Jeremiah
   - Jerome
@@ -45,8 +42,10 @@ tags:
   - Abimelech
   - Babylon
   - Bel and the Dragon
+  - Clement of Alexandria
   - Clement of Rome
   - Codex Sinaiticus
+  - Codex Vaticanus
   - Daniel
   - David Carr
   - Didache

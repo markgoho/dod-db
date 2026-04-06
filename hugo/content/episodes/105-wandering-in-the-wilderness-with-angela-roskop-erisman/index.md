@@ -12,7 +12,6 @@ tags:
   - Korach
   - Hezekiah
   - Egypt
-  - Hebrews
   - Isaiah
   - Judah
   - Torah
@@ -25,7 +24,6 @@ tags:
   - Philo of Alexandria
   - Babylon
   - David Carr
-  - Israel
   - YHWH
 books:
   - Exodus

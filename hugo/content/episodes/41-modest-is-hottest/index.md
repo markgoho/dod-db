@@ -14,7 +14,6 @@ tags:
   - Paul
   - Africans
   - Canaanites
-  - Jesus
   - YHWH
   - Deuteronomy
   - Joshua

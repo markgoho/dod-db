@@ -8,14 +8,11 @@ aliases:
 tags:
   - YHWH
   - Jeremiah
-  - Jesus
   - Babylon
   - Judah
-  - Israel
   - Deuteronomy
   - Jerusalem
   - Christian Nationalism
-  - Hebrews
   - Joshua
   - Judas Iscariot
   - King James Version

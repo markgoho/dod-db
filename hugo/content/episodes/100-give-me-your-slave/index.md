@@ -9,10 +9,9 @@ tags:
   - Paul
   - Septuagint
   - Onesimus
-  - Jesus
   - Moses
+  - Codex Vaticanus
   - Luke
-  - Israel
   - Dead Sea Scrolls
   - Jerusalem
   - John
@@ -28,7 +27,6 @@ tags:
   - Egyptians
   - Eusebius
   - Flavius Josephus
-  - Hebrews
   - Herod Antipas
   - Isaiah
   - Leningrad Codex

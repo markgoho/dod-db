@@ -8,12 +8,10 @@ aliases:
 tags:
   - Rapture
   - Daniel
-  - Jesus
   - Persia
   - YHWH
   - Eschatology
   - Judah
-  - Israel
   - Babylon
   - Paul
   - apocalypse
@@ -29,7 +27,6 @@ tags:
   - Deuteronomy
   - Elijah
   - Garden of Eden
-  - Hebrews
   - Hell
   - Maccabees
   - Syria

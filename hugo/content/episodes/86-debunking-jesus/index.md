@@ -6,7 +6,6 @@ videoId: Z-9XhhrGN6w
 aliases:
   - /episodes/86/
 tags:
-  - Jesus
   - Flavius Josephus
   - Josephus
   - Egypt
@@ -20,7 +19,6 @@ tags:
   - Annunciation
   - baptism
   - forgery
-  - Hebrews
   - Jerusalem
   - Judeans
   - Matthew

@@ -7,7 +7,6 @@ aliases:
   - /episodes/4/
 tags:
   - Bart Ehrman
-  - Jesus
   - Rapture
   - biblical canon
   - John of Patmos
@@ -20,7 +19,6 @@ tags:
   - Abraham
   - cognitive dissonance
   - Council of Nicaea
-  - Hebrews
   - Matthew
   - Trinity
   - Apocrypha

@@ -7,11 +7,10 @@ aliases:
   - /episodes/110/
 tags:
   - Didache
-  - Jesus
   - Paul
   - Judaism
+  - Clement of Alexandria
   - Egyptians
-  - Israel
   - baptism
   - biblical canon
   - Dead Sea Scrolls
@@ -27,7 +26,6 @@ tags:
   - Talmud
   - Clement of Rome
   - Flavius Josephus
-  - Hebrews
   - John
   - Judeans
   - King David

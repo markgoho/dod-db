@@ -7,7 +7,6 @@ aliases:
   - /episodes/65/
 tags:
   - Egypt
-  - Israel
   - King James Version
   - YHWH
   - El
@@ -17,7 +16,6 @@ tags:
   - archaeology
   - Deuteronomy
   - Jerusalem
-  - Jesus
   - Judah
   - Judaism
   - The Reformation

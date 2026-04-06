@@ -7,7 +7,6 @@ aliases:
   - /episodes/136/
 tags:
   - Catholicism
-  - Jesus
   - Mary Magdalene
   - Protestantism
   - Annunciation
@@ -18,7 +17,6 @@ tags:
   - Judaism
   - Marcion
   - Egypt
-  - Hebrews
   - Junia
   - Paul
   - Romans

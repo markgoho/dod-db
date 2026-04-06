@@ -13,7 +13,6 @@ tags:
   - Cain
   - Tower of Babel
   - Abel
-  - Israel
   - Enuma Elish
   - Adam
   - Canaan
@@ -30,7 +29,6 @@ tags:
   - Assyria
   - Canaanites
   - Ham
-  - Hebrews
   - Jeremiah
   - Joseph
   - Joshua

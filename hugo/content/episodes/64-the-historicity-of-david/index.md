@@ -7,7 +7,6 @@ aliases:
   - /episodes/64/
 tags:
   - King David
-  - Israel
   - Deborah
   - Sisera
   - YHWH
@@ -20,7 +19,6 @@ tags:
   - Jael
   - Abigail
   - Solomon
-  - Hebrews
   - Jephthah
   - Samson
   - Jerusalem

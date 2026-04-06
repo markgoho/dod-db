@@ -6,10 +6,8 @@ videoId: 5ebvYxjXH2Y
 aliases:
   - /episodes/36/
 tags:
-  - Israel
   - Judah
   - Judeans
-  - Hebrews
   - Julius Wellhausen
   - YHWH
   - Jerusalem
@@ -40,7 +38,6 @@ tags:
   - Hezekiah
   - Isaac
   - Jephthah
-  - Jesus
   - King Josiah
   - Moses
   - Nineveh

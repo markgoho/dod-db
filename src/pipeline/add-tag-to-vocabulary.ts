@@ -9,6 +9,7 @@ import type {
 } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
 import { isScriptureTag } from "../utils/is-scripture-tag.js";
+import { withTagVocabularyWriteLock } from "./tag-vocabulary-write-lock.js";
 import { escapeForTsString } from "./escape-for-ts-string.js";
 import { tagExists } from "./tag-exists.js";
 
@@ -118,45 +119,47 @@ export async function addTagToVocabulary(
 ): Promise<void> {
   const { canonical } = parameters;
 
-  // Block scripture references/books - handled by separate extraction
-  if (isScriptureTag(canonical)) {
-    throw new Error(
-      `Tag "${canonical}" is a scripture reference or Bible book`,
-    );
-  }
+  await withTagVocabularyWriteLock(async () => {
+    // Block scripture references/books - handled by separate extraction
+    if (isScriptureTag(canonical)) {
+      throw new Error(
+        `Tag "${canonical}" is a scripture reference or Bible book`,
+      );
+    }
 
-  // Check for duplicates
-  if (tagExists(canonical)) {
-    throw new Error(`Tag "${canonical}" already exists in vocabulary`);
-  }
+    // Check for duplicates
+    if (tagExists(canonical)) {
+      throw new Error(`Tag "${canonical}" already exists in vocabulary`);
+    }
 
-  // Read the existing file
-  const filePath = "src/config/tag-vocabulary.ts";
-  const file = Bun.file(filePath);
-  const content = await file.text();
+    // Read the existing file
+    const filePath = "src/config/tag-vocabulary.ts";
+    const file = Bun.file(filePath);
+    const content = await file.text();
 
-  // Find the last entry before the closing ];
-  const closingBracketIndex = content.lastIndexOf("];");
-  if (closingBracketIndex === -1) {
-    throw new Error("Could not find closing bracket in tag-vocabulary.ts");
-  }
+    // Find the last entry before the closing ];
+    const closingBracketIndex = content.lastIndexOf("];");
+    if (closingBracketIndex === -1) {
+      throw new Error("Could not find closing bracket in tag-vocabulary.ts");
+    }
 
-  const status = parameters.status || "accepted";
-  const newTag = buildTagDefinition(parameters, status);
-  const newEntry = formatTagEntry(newTag);
+    const status = parameters.status || "accepted";
+    const newTag = buildTagDefinition(parameters, status);
+    const newEntry = formatTagEntry(newTag);
 
-  // Insert the new entry before the closing bracket
-  const beforeClosing = content.slice(0, closingBracketIndex);
-  const afterClosing = content.slice(closingBracketIndex);
+    // Insert the new entry before the closing bracket
+    const beforeClosing = content.slice(0, closingBracketIndex);
+    const afterClosing = content.slice(closingBracketIndex);
 
-  const newContent = beforeClosing + newEntry + afterClosing;
+    const newContent = beforeClosing + newEntry + afterClosing;
 
-  // Write back to file
-  await Bun.write(filePath, newContent);
+    // Write back to file
+    await Bun.write(filePath, newContent);
 
-  // Also update the in-memory vocabulary array so reprocessing can use it immediately
-  tagVocabulary.push(newTag);
+    // Also update the in-memory vocabulary array so reprocessing can use it immediately
+    tagVocabulary.push(newTag);
 
-  const statusLabel = status === "proposed" ? " (proposed)" : "";
-  console.log(`✓ Added tag "${canonical}" to vocabulary${statusLabel}`);
+    const statusLabel = status === "proposed" ? " (proposed)" : "";
+    console.log(`✓ Added tag "${canonical}" to vocabulary${statusLabel}`);
+  });
 }

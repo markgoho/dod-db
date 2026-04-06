@@ -9,7 +9,6 @@ tags:
   - Euphrates
   - Book of Enoch
   - Nephilim
-  - Israel
   - YHWH
   - Flood
   - Judaism

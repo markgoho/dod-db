@@ -7,7 +7,6 @@ aliases:
   - /episodes/117/
 tags:
   - Elephantine
-  - Jesus
   - YHWH
   - Judah
   - Torah
@@ -15,7 +14,6 @@ tags:
   - Asherah
   - Passover
   - El
-  - Hebrews
   - Jerusalem
   - King James Version
   - Maccabees
@@ -26,7 +24,6 @@ tags:
   - Egyptians
   - Hell
   - inerrancy
-  - Israel
   - Judaism
   - Judeans
   - King Josiah

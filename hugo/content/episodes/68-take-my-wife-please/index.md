@@ -12,7 +12,6 @@ tags:
   - Tamar
   - Deuteronomy
   - Shelah
-  - Israel
   - Ruth
   - Boaz
   - Joseph

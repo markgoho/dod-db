@@ -6,22 +6,21 @@ videoId: V7PSCjcLFco
 aliases:
   - /episodes/16/
 tags:
-  - Jesus
   - James
   - Matthew
   - Peter
   - Junia
   - Paul
   - Joshua
+  - Thaddeus
+  - Bartholomew
   - Luke
   - Papias of Hierapolis
   - Romans
-  - Israel
   - Galilee
   - Mary Magdalene
   - Abraham
   - Gnostic
-  - Hebrews
   - Judas Iscariot
   - King James Version
   - Moses

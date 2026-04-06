@@ -100,21 +100,6 @@ export const tagVocabulary: TagDefinition[] = [
     ],
   },
   {
-    canonical: "Jesus",
-    variations: ["Jesus'", "Christ"],
-    category: "character",
-    status: "accepted",
-    episodes: [
-      2, 4, 5, 6, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 24, 25, 26,
-      28, 30, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 48,
-      49, 50, 51, 52, 53, 54, 55, 57, 58, 59, 60, 61, 62, 65, 66, 67, 69, 70,
-      71, 73, 75, 76, 77, 78, 80, 81, 82, 83, 84, 85, 86, 87, 89, 90, 91, 92,
-      94, 96, 97, 98, 99, 100, 101, 102, 103, 104, 106, 107, 108, 109, 110, 111,
-      112, 113, 114, 116, 117, 118, 119, 120, 122, 123, 124, 125, 127, 128, 130,
-      131, 132, 133, 134, 135, 136, 137, 138, 139,
-    ],
-  },
-  {
     canonical: "Moses",
     variations: ["Moshe", "Moses'", "Moses's"],
     category: "character",
@@ -291,7 +276,15 @@ export const tagVocabulary: TagDefinition[] = [
       5, 12, 14, 16, 23, 28, 37, 38, 48, 49, 50, 52, 54, 55, 66, 72, 84, 87, 91,
       94, 99, 123, 127, 128, 133, 136,
     ],
-  },
+  },	{
+		canonical: 'Lydia',
+		variations: [],
+		category: 'character',
+		llmVerify: true,
+		description: 'A woman mentioned in the New Testament, especially in Acts 16, associated with the early Jesus movement.',
+		status: 'accepted',
+		episodes: [12, 153],
+	},
   {
     canonical: "Balaam",
     variations: [],
@@ -626,7 +619,8 @@ export const tagVocabulary: TagDefinition[] = [
       76, 84, 89, 90, 91, 94, 98, 99, 113, 114, 120, 122, 124, 125, 130, 132,
       133, 137,
     ],
-  },  {
+  },
+  {
     canonical: "Monotheism",
     variations: ["monotheistic"],
     category: "theology",
@@ -759,20 +753,6 @@ export const tagVocabulary: TagDefinition[] = [
       57, 61, 63, 64, 65, 67, 68, 71, 72, 73, 74, 76, 80, 81, 87, 88, 92, 97,
       102, 103, 104, 105, 108, 111, 112, 113, 114, 115, 116, 117, 118, 120, 121,
       122, 123, 125, 126, 130, 133, 135, 139,
-    ],
-  },
-  {
-    canonical: "Israel",
-    variations: [],
-    category: "place",
-    status: "accepted",
-    episodes: [
-      1, 2, 3, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 24, 25,
-      27, 28, 29, 32, 33, 34, 36, 37, 39, 40, 42, 43, 44, 45, 46, 48, 49, 50,
-      53, 54, 55, 56, 58, 61, 62, 63, 64, 65, 66, 67, 68, 71, 72, 73, 75, 76,
-      78, 80, 81, 83, 84, 87, 88, 92, 93, 94, 95, 97, 100, 101, 102, 103, 104,
-      105, 108, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122,
-      123, 124, 125, 126, 127, 129, 130, 132, 133, 134, 135, 138, 139,
     ],
   },
   {
@@ -1150,19 +1130,6 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     status: "accepted",
     episodes: [4, 5, 20, 39, 48, 50, 94, 98, 119, 122, 128],
-  },
-  {
-    canonical: "Hebrews",
-    variations: ["jews", "hebrews", "israelites"],
-    category: "people",
-    status: "accepted",
-    episodes: [
-      2, 3, 4, 6, 7, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 26, 28, 29, 30, 32,
-      33, 34, 35, 36, 37, 38, 39, 42, 45, 46, 48, 49, 50, 52, 54, 56, 59, 63,
-      64, 66, 69, 70, 71, 74, 75, 77, 78, 81, 84, 85, 86, 87, 88, 92, 93, 96,
-      97, 99, 100, 104, 105, 106, 107, 109, 110, 111, 113, 115, 116, 117, 118,
-      121, 122, 123, 125, 126, 127, 128, 129, 130, 134, 135, 136, 137, 138,
-    ],
   },
   {
     canonical: "rabbis",
@@ -1750,7 +1717,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: [],
     category: "person",
     status: "accepted",
-    episodes: [6, 11, 46, 62, 70, 89, 118, 130, 137],
+    episodes: [6, 11, 46, 62, 70, 89, 118, 130, 137, 149, 152, 154],
   },
   {
     canonical: "Helen Bond",
@@ -2157,7 +2124,8 @@ export const tagVocabulary: TagDefinition[] = [
       "Referring to the Priestly Source (P), one of the hypothesized sources of the Pentateuch",
     status: "proposed",
     addedInEpisode: 56,
-  },  {
+  },
+  {
     canonical: "Flood",
     variations: ["the Flood"],
     category: "event",
@@ -5060,14 +5028,16 @@ export const tagVocabulary: TagDefinition[] = [
       "A method of execution used by the Romans, involving binding or nailing a person to a cross or other wooden structure",
     status: "proposed",
     addedInEpisode: 134,
-  },	{
-		canonical: 'Greco-Roman',
-		variations: [],
-		category: 'miscellaneous',
-		description: 'Relating to the culture and civilization of ancient Greece and Rome',
-		status: 'rejected',
-		addedInEpisode: 135,
-	},
+  },
+  {
+    canonical: "Greco-Roman",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Relating to the culture and civilization of ancient Greece and Rome",
+    status: "rejected",
+    addedInEpisode: 135,
+  },
   {
     canonical: "Anunnaki",
     variations: ["Anunnaki/Nephilim"],
@@ -5125,16 +5095,18 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     addedInEpisode: 136,
     episodes: [6, 35, 69, 94, 119, 136],
-  },	{
-		canonical: 'Annunciation',
-		variations: [],
-		category: 'event',
-		llmVerify: true,
-		description: 'The announcement by the angel Gabriel to the Virgin Mary that she would conceive and become the mother of Jesus',
-		status: 'accepted',
-		addedInEpisode: 136,
-		episodes: [28, 86, 136, 140],
-	},
+  },
+  {
+    canonical: "Annunciation",
+    variations: [],
+    category: "event",
+    llmVerify: true,
+    description:
+      "The announcement by the angel Gabriel to the Virgin Mary that she would conceive and become the mother of Jesus",
+    status: "accepted",
+    addedInEpisode: 136,
+    episodes: [28, 86, 136, 140],
+  },
   {
     canonical: "Geez",
     variations: [],
@@ -5163,16 +5135,18 @@ export const tagVocabulary: TagDefinition[] = [
       "One of the creators of the Bible Cross-Reference Visualization chart.",
     status: "rejected",
     addedInEpisode: 137,
-  },	{
-		canonical: 'Hermeneia',
-		variations: [],
-		category: 'scholarship',
-		llmVerify: true,
-		description: 'Academic commentary series on the Bible, known for its scholarly rigor and detailed analysis.',
-		status: 'accepted',
-		addedInEpisode: 137,
-		episodes: [26, 34, 62, 89, 99, 104, 106, 137],
-	},
+  },
+  {
+    canonical: "Hermeneia",
+    variations: [],
+    category: "scholarship",
+    llmVerify: true,
+    description:
+      "Academic commentary series on the Bible, known for its scholarly rigor and detailed analysis.",
+    status: "accepted",
+    addedInEpisode: 137,
+    episodes: [26, 34, 62, 89, 99, 104, 106, 137],
+  },
   {
     canonical: "Adam Lambert",
     variations: [],
@@ -5284,37 +5258,430 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
     addedInEpisode: 143,
   },
-	{
-		canonical: 'Jordan',
-		variations: ['River Jordan'],
-		category: 'place',
-		description: 'Jordan River, a river in the Middle East that flows into the Dead Sea',
-		status: 'proposed',
-		addedInEpisode: 145,
-	},	{
-		canonical: 'Messiah',
-		variations: ['Messiah\'s', 'the Messiah'],
-		category: 'theology',
-		description: 'The anticipated king and deliverer of the Jewish people; in Christianity, Jesus is considered the Messiah',
+  {
+    canonical: "Jordan",
+    variations: ["River Jordan"],
+    category: "place",
+    description:
+      "Jordan River, a river in the Middle East that flows into the Dead Sea",
+    status: "proposed",
+    addedInEpisode: 145,
+  },
+  {
+    canonical: "Messiah",
+    variations: ["Messiah's", "the Messiah"],
+    category: "theology",
+    description:
+      "The anticipated king and deliverer of the Jewish people; in Christianity, Jesus is considered the Messiah",
+    status: "rejected",
+    addedInEpisode: 145,
+  },
+  {
+    canonical: "Esarhaddon",
+    variations: [],
+    category: "person",
+    llmVerify: true,
+    description:
+      "King of Assyria in the early 7th century BCE, successor to Sennacherib, known for the Vassal Treaty of Esarhaddon",
+    status: "accepted",
+    addedInEpisode: 146,
+    episodes: [108, 126, 145, 146],
+  },
+  {
+    canonical: "Ashurbanipal",
+    variations: [],
+    category: "person",
+    llmVerify: true,
+    description:
+      "King of Assyria in the mid-7th century BCE, known for his vast library and military campaigns",
+    status: "accepted",
+    addedInEpisode: 146,
+    episodes: [126, 146],
+  },
+  {
+    canonical: "Purim",
+    variations: ["Pur"],
+    category: "event",
+    description:
+      "A Jewish holiday commemorating the saving of the Jews from Haman's plot to annihilate them, as recounted in the Book of Esther",
+    status: "proposed",
+    addedInEpisode: 147,
+  },
+  {
+    canonical: "Haman",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "The main antagonist in the Book of Esther, an Agagite who plotted to destroy all the Jews in Persia",
+    status: "accepted",
+    addedInEpisode: 147,
+    episodes: [147],
+  },
+  {
+    canonical: "Mordecai",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "Esther's cousin and guardian in the Book of Esther, who plays a key role in thwarting Haman's plot",
+    status: "accepted",
+    addedInEpisode: 147,
+    episodes: [147],
+  },
+  {
+    canonical: "Acts of Paul and Thecla",
+    variations: ["Acts of Paul"],
+    category: "literature",
+    description:
+      "A 2nd-century CE apocryphal text recounting the story of Thecla's conversion and adventures with the apostle Paul.",
+    status: "proposed",
+    addedInEpisode: 148,
+  },
+  {
+    canonical: "Demas",
+    variations: ["demas"],
+    category: "character",
+    description:
+      "A companion of Paul mentioned in the New Testament, who later deserted him according to 2 Timothy.",
+    status: "proposed",
+    addedInEpisode: 148,
+  },
+  {
+    canonical: "Hermogenes",
+    variations: [],
+    category: "character",
+    description:
+      "Mentioned in 2 Timothy 1:15, a figure who turned away from Paul's teachings.",
+    status: "proposed",
+    addedInEpisode: 148,
+  },
+  {
+    canonical: "Iconium",
+    variations: ["Iconians"],
+    category: "place",
+    description:
+      "An ancient city in Asia Minor, present-day Konya, Turkey, visited by Paul and Barnabas.",
+    status: "proposed",
+    addedInEpisode: 148,
+  },
+  {
+    canonical: "Onesiphorus",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "A Christian mentioned in 2 Timothy, known for his kindness to Paul.",
+    status: "accepted",
+    addedInEpisode: 148,
+    episodes: [148],
+  },
+  {
+    canonical: "Castelius",
+    variations: [],
+    category: "person",
+    description:
+      "The governor mentioned in the Acts of Paul and Thecla before whom Paul is brought.",
+    status: "proposed",
+    addedInEpisode: 148,
+  },
+  {
+    canonical: "Jennifer Garcia-Bashaw",
+    variations: ["Jen"],
+    category: "person",
+    description:
+      "Professor at Campbell University and an ordained Baptist minister, with a PhD in New Testament from Fuller Seminary. She is the co-author of 'Serving Up Scripture'.",
+    status: "proposed",
+    addedInEpisode: 149,
+  },
+  {
+    canonical: "Chicago Theological Seminary",
+    variations: [],
+    category: "scholarship",
+    description:
+      "A seminary located in Chicago, Illinois, known for its progressive and interreligious approach to theological education.",
+    status: "proposed",
+    addedInEpisode: 149,
+  },
+  {
+    canonical: "Contextual theology",
+    variations: [],
+    category: "theology",
+    description:
+      "An approach to theology that takes into account the specific historical, cultural, and social context in which it is being developed.",
+    status: "proposed",
+    addedInEpisode: 149,
+  },
+  {
+    canonical: "Black theology",
+    variations: [],
+    category: "theology",
+    description:
+      "A theological perspective that emphasizes the experiences and concerns of Black people, often focusing on liberation and social justice.",
+    status: "proposed",
+    addedInEpisode: 149,
+  },
+  {
+    canonical: "feminist theology",
+    variations: [],
+    category: "theology",
+    description:
+      "A theological perspective that critically examines religious traditions and practices from a feminist perspective, often challenging patriarchal structures and promoting gender equality.",
+    status: "proposed",
+    addedInEpisode: 149,
+  },
+  {
+    canonical: "Stephen",
+    variations: [],
+    category: "character",
+    description:
+      "A deacon in the early church in Jerusalem who was stoned to death for his faith, as recorded in the Book of Acts.",
+    status: "proposed",
+    addedInEpisode: 149,
+  },
+  {
+    canonical: "Jeroboam",
+    variations: [],
+    category: "character",
+    description:
+      "First king of the northern Kingdom of Israel after the revolt of the ten northern Israelite tribes against the Davidic dynasty.",
+    status: "proposed",
+    addedInEpisode: 149,
+  },
+  {
+    canonical: "Ethiopian Orthodox",
+    variations: ["Ethiopian Orthodox Tewahedo Church"],
+    category: "religion",
+    description:
+      "An ancient branch of Orthodox Christianity primarily practiced in Ethiopia and Eritrea, known for its unique traditions and biblical canon",
+    status: "proposed",
+    addedInEpisode: 151,
+  },
+  {
+    canonical: "Beatitudes",
+    variations: ["The Beatitudes"],
+    category: "theology",
+    description:
+      "A set of teachings by Jesus in the Sermon on the Mount (Matthew 5:3-12), expressing ideals of humility, compassion, and righteousness",
+    status: "proposed",
+    addedInEpisode: 151,
+  },	{
+		canonical: 'Augustine',
+		variations: [],
+		category: 'person',
+		llmVerify: true,
+		description: 'Early Christian theologian and philosopher, bishop of Hippo Regius, whose writings influenced the development of Western Christianity',
+		status: 'accepted',
+		addedInEpisode: 152,
+		episodes: [19, 44, 70, 77, 89, 98, 120, 140, 142, 149, 152],
+	},
+  {
+    canonical: "Galileo",
+    variations: [],
+    category: "person",
+    description:
+      "Italian astronomer, physicist and engineer whose observations provided evidence for heliocentrism, leading to conflict with the Catholic Church",
+    status: "proposed",
+    addedInEpisode: 152,
+  },
+  {
+    canonical: "Chicago Statement on Inerrancy",
+    variations: [],
+    category: "event",
+    description:
+      "A statement affirming biblical inerrancy, adopted in 1978 by the International Council on Biblical Inerrancy",
+    status: "proposed",
+    addedInEpisode: 152,
+  },	{
+		canonical: 'Lincoln Blumell',
+		variations: ['Blumell'],
+		category: 'person',
+		description: 'Professor of religious education at Brigham Young University, specializing in ancient letters and papyri.',
 		status: 'rejected',
-		addedInEpisode: 145,
-	},
-	{
-		canonical: 'Esarhaddon',
-		variations: [],
+		addedInEpisode: 153,
+	},	{
+		canonical: 'Clement of Alexandria',
+		variations: ['Clement'],
 		category: 'person',
-		description: 'King of Assyria in the early 7th century BCE, successor to Sennacherib, known for the Vassal Treaty of Esarhaddon',
-		status: 'proposed',
-		addedInEpisode: 146,
+		description: 'Early Christian theologian and head of the Catechetical School of Alexandria.',
+		status: 'accepted',
+		addedInEpisode: 153,
+		episodes: [20, 49, 50, 69, 75, 99, 110, 153, 156],
 	},
-	{
-		canonical: 'Ashurbanipal',
-		variations: [],
-		category: 'person',
-		description: 'King of Assyria in the mid-7th century BCE, known for his vast library and military campaigns',
-		status: 'proposed',
-		addedInEpisode: 146,
+  {
+    canonical: "Rabbi Akiva",
+    variations: ["Akiva"],
+    category: "person",
+    description:
+      "A Jewish sage of the late first and early second centuries CE, influential in the development of rabbinic Judaism.",
+    status: "proposed",
+    addedInEpisode: 154,
+  },
+  {
+    canonical: "Common Era",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "CE, also known as AD, this is a secular dating system that is used as an alternative to the BC/AD notation.",
+    status: "proposed",
+    addedInEpisode: 154,
+  },
+  {
+    canonical: "Unprotected Texts",
+    variations: [],
+    category: "literature",
+    description:
+      "A book by Jennifer Knust examining surprising contradictions about sex and desire in the Bible.",
+    status: "proposed",
+    addedInEpisode: 154,
+  },
+  {
+    canonical: "Letter of Aristeas",
+    variations: ["Aristeas"],
+    category: "literature",
+    description:
+      "A pseudepigraphic letter that purports to be from Aristeas to his brother Philocrates, describing the translation of the Hebrew Bible into Greek, which is traditionally known as the Septuagint.",
+    status: "proposed",
+    addedInEpisode: 155,
+  },	{
+		canonical: 'Pentateuch',
+		variations: ['First 5 books of Moses'],
+		category: 'literature',
+		description: 'The first five books of the Hebrew Bible: Genesis, Exodus, Leviticus, Numbers, and Deuteronomy; traditionally ascribed to Moses.',
+		status: 'rejected',
+		addedInEpisode: 155,
 	},
+  {
+    canonical: "Alexandria",
+    variations: [],
+    category: "place",
+    description:
+      "An ancient city in Egypt founded by Alexander the Great, known for its Great Library and as a center of Hellenistic culture.",
+    status: "proposed",
+    addedInEpisode: 155,
+  },
+  {
+    canonical: "Demetrius of Phalerum",
+    variations: [],
+    category: "person",
+    description:
+      "An Athenian statesman, orator, and philosopher who served as a librarian in Alexandria under Ptolemy I Soter.",
+    status: "proposed",
+    addedInEpisode: 155,
+  },
+  {
+    canonical: "Ptolemy II Philadelphus",
+    variations: ["Ptolemy II"],
+    category: "person",
+    description:
+      "A pharaoh of Ptolemaic Egypt who reigned in the 3rd century BCE, known for his patronage of the Library of Alexandria and involvement in the Septuagint translation.",
+    status: "proposed",
+    addedInEpisode: 155,
+  },
+  {
+    canonical: "Philocrates",
+    variations: ["Aristeas"],
+    category: "person",
+    description:
+      "The (fictional) brother of Aristeas to whom the Letter of Aristeas is addressed.",
+    status: "proposed",
+    addedInEpisode: 155,
+  },
+  {
+    canonical: "Amalek",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "Figure in the Hebrew Bible, grandson of Esau, also used as a collective name for the Amalekites",
+    status: "accepted",
+    addedInEpisode: 156,
+    episodes: [40, 156],
+  },
+  {
+    canonical: "amalekites",
+    variations: ["amalekite"],
+    category: "people",
+    description:
+      "Ancient nomadic people who opposed the Israelites in the Hebrew Bible, often associated with conflict and enmity",
+    status: "proposed",
+    addedInEpisode: 156,
+  },
+  {
+    canonical: "herem",
+    variations: ["haram"],
+    category: "theology",
+    description:
+      "Concept in the Hebrew Bible referring to things or people devoted to destruction as an offering to God, often in the context of warfare",
+    status: "proposed",
+    addedInEpisode: 156,
+  },
+  {
+    canonical: "kenites",
+    variations: ["kenite"],
+    category: "people",
+    description:
+      "Nomadic tribe in the Hebrew Bible, sometimes associated with the Midianites and connected to Moses' father-in-law",
+    status: "proposed",
+    addedInEpisode: 156,
+  },
+  {
+    canonical: "Agag",
+    variations: ["king agag"],
+    category: "character",
+    llmVerify: true,
+    description:
+      "King of the Amalekites who was spared by Saul but later executed by Samuel",
+    status: "accepted",
+    addedInEpisode: 156,
+    episodes: [156],
+  },
+  {
+    canonical: "ziklag",
+    variations: [],
+    category: "place",
+    description:
+      "Town given to David by the Philistine king Achish, later raided by the Amalekites",
+    status: "proposed",
+    addedInEpisode: 156,
+  },
+  {
+    canonical: "benjamin netanyahu",
+    variations: ["netanyahu"],
+    category: "person",
+    description:
+      "Current Prime Minister of Israel, who has invoked the story of Amalek in reference to modern conflicts",
+    status: "rejected",
+    addedInEpisode: 156,
+  },
+  {
+    canonical: "crucified",
+    variations: [],
+    category: "event",
+    description:
+      "Affixing someone to a cross as a form of torture and execution.",
+    status: "rejected",
+    addedInEpisode: 156,
+  },
+  {
+    canonical: "Philip",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description: "Apostle in the New Testament.",
+    status: "accepted",
+    addedInEpisode: 156,
+    episodes: [16, 143, 149, 156],
+  },
+  {
+    canonical: "Thaddeus",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description: "An apostle of Jesus, mentioned in the New Testament",
+    status: "accepted",
+    episodes: [16, 156],
+  },
 ];
 
 /**

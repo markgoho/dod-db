@@ -12,7 +12,6 @@ tags:
   - Eschatology
   - Junia
   - Catholicism
-  - Jesus
   - Protestantism
   - Adam
   - biblical canon
@@ -20,7 +19,6 @@ tags:
   - Euphrates
   - Garden of Eden
   - Gentiles
-  - Hebrews
   - John
   - Joshua
   - Romans

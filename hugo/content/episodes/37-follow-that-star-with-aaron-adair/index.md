@@ -6,13 +6,10 @@ videoId: UHN2ZPsFyoY
 aliases:
   - /episodes/37/
 tags:
-  - Jesus
   - Bethlehem
   - Jerusalem
   - Matthew
-  - Hebrews
   - Deism
-  - Israel
   - Easter
   - Garden of Eden
   - Gentiles

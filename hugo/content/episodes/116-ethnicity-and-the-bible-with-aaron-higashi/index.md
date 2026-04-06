@@ -7,12 +7,10 @@ aliases:
   - /episodes/116/
 tags:
   - Canaanites
-  - Hebrews
   - Canaan
   - Egypt
   - Moabites
   - Adam
-  - Israel
   - Egyptians
   - Judah
   - etiology
@@ -21,7 +19,6 @@ tags:
   - Midianites
   - archaeology
   - Edomites
-  - Jesus
   - Noah
   - Peter
   - YHWH

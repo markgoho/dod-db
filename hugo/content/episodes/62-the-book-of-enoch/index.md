@@ -34,7 +34,6 @@ tags:
   - Seth
   - Antiochus IV Epiphanes
   - Gentiles
-  - Israel
   - Jared
   - Origen
   - Pseudepigrapha
@@ -47,12 +46,14 @@ tags:
   - Egypt
   - Esau
   - Eve
-  - Jesus
   - Judaism
   - King James Version
   - Maccabees
   - Nephilim
+  - Raphael
   - Syria
+  - Tertullian
+  - Uriel
 books:
   - Genesis
 segments:

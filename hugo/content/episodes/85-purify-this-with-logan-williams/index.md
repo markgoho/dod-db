@@ -6,9 +6,7 @@ videoId: ueEDfCqjPYs
 aliases:
   - /episodes/85/
 tags:
-  - Jesus
   - Torah
-  - Hebrews
   - Second Temple period
   - Judaism
   - Textus Receptus

@@ -11,9 +11,7 @@ tags:
   - Baal
   - Asherah
   - Paul
-  - Israel
   - Elijah
-  - Jesus
   - Judah
   - Judaism
   - Mary Magdalene
@@ -39,7 +37,6 @@ tags:
   - Deuteronomy
   - Enoch
   - Flavius Josephus
-  - Hebrews
   - Hell
   - Jericho
   - King David

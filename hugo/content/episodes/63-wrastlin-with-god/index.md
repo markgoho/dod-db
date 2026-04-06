@@ -7,14 +7,12 @@ aliases:
   - /episodes/63/
 tags:
   - Philistines
-  - Israel
   - Samson
   - Isaac
   - Abraham
   - El
   - Laban
   - Esau
-  - Hebrews
   - Rachel
   - YHWH
   - Moses

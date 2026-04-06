@@ -6,14 +6,11 @@ videoId: K0kobJi-sLI
 aliases:
   - /episodes/42/
 tags:
-  - Jesus
   - Trinity
-  - Israel
   - Abraham
   - Arius
   - YHWH
   - Holy Spirit
-  - Hebrews
   - Judaism
   - Moses
   - Constantine

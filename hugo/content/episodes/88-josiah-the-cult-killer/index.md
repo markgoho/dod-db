@@ -10,7 +10,6 @@ tags:
   - Hezekiah
   - Jerusalem
   - Asherah
-  - Israel
   - YHWH
   - King Sennacherib
   - Deuteronomy
@@ -31,7 +30,6 @@ tags:
   - Christian Nationalism
   - divine council
   - El
-  - Hebrews
   - King David
   - King James Version
   - Nineveh

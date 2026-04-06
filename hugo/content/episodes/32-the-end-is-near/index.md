@@ -7,7 +7,6 @@ aliases:
   - /episodes/32/
 tags:
   - Rapture
-  - Jesus
   - Eschatology
   - Daniel
   - preterist interpretation
@@ -16,14 +15,12 @@ tags:
   - YHWH
   - Babylon
   - futurist interpretation
-  - Israel
   - Jeremiah
   - Gaza
   - Isaiah
   - Jerusalem
   - Antiochus IV Epiphanes
   - Baal
-  - Hebrews
   - Hell
   - King James Version
   - Luke

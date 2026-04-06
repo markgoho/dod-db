@@ -8,7 +8,6 @@ aliases:
 tags:
   - YHWH
   - Judah
-  - Israel
   - Ugarit
   - Baal
   - Babylon
@@ -25,7 +24,6 @@ tags:
   - Solomon
   - Daniel
   - Deuteronomy
-  - Hebrews
   - Joseph
   - Joshua
   - Ken Ham

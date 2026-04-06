@@ -8,7 +8,6 @@ aliases:
 tags:
   - Paul
   - Satan
-  - Jesus
   - Hell
   - Sheol
   - Gentiles

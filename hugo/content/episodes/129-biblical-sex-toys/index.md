@@ -8,10 +8,8 @@ aliases:
 tags:
   - Gideon
   - Baal
-  - Israel
   - Midianites
   - Joash
-  - Hebrews
   - Jerusalem
   - Sodom
   - YHWH

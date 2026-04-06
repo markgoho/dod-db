@@ -6,8 +6,6 @@ videoId: oJ9ifpprXjM
 aliases:
   - /episodes/106/
 tags:
-  - Jesus
-  - Hebrews
   - Council of Nicaea
   - Deuteronomy
   - biblical canon

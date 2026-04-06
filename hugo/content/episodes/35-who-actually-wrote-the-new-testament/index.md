@@ -11,16 +11,15 @@ tags:
   - Pastoral Epistles
   - Papias of Hierapolis
   - Luke
-  - Jesus
   - Peter
   - James
   - Irenaeus
   - Saint Titus
   - Marcion
   - Galilee
-  - Hebrews
   - Romans
   - YHWH
+  - Codex Vaticanus
   - Eusebius
   - Jerusalem
   - Judas Iscariot

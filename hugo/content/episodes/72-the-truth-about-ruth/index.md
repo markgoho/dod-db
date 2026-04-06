@@ -19,7 +19,6 @@ tags:
   - YHWH
   - Assyria
   - Bethlehem
-  - Israel
   - Nineveh
   - Isaiah
   - King Josiah

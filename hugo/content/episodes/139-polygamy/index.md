@@ -7,7 +7,6 @@ aliases:
   - /episodes/139/
 tags:
   - Solomon
-  - Israel
   - King David
   - Paul
   - Rehoboam
@@ -17,7 +16,6 @@ tags:
   - Ammonites
   - Jacob
   - Egypt
-  - Jesus
   - King Saul
   - Leah
   - Judah

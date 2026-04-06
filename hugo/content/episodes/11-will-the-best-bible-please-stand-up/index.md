@@ -14,7 +14,6 @@ tags:
   - William Tyndale
   - Masoretic Text
   - Dead Sea Scrolls
-  - Jesus
   - Egypt
   - James
   - Pseudepigrapha
@@ -39,7 +38,6 @@ tags:
   - Deuteronomy
   - Easter
   - Elijah
-  - Israel
   - Jerome
   - Jerusalem
   - Judah
@@ -49,6 +47,7 @@ tags:
   - Textus Receptus
   - apocalypse
   - Bart Ehrman
+  - Codex Vaticanus
   - Daniel
   - Galilee
   - Gnostic

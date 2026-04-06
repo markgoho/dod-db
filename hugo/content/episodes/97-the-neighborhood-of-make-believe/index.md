@@ -6,7 +6,6 @@ videoId: CtROVUxwKyM
 aliases:
   - /episodes/97/
 tags:
-  - Jesus
   - archaeology
   - Noah
   - Moses
@@ -14,11 +13,9 @@ tags:
   - Jericho
   - Jerusalem
   - Samaria
-  - Hebrews
   - Mount Sinai
   - Babylon
   - Dead Sea
-  - Israel
   - Deuteronomy
   - forgery
   - Isaiah

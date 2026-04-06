@@ -7,10 +7,8 @@ aliases:
   - /episodes/103/
 tags:
   - Hell
-  - Jesus
   - Moses
   - Judah
-  - Israel
 guests:
   - Jeremy Steele
 draft: false

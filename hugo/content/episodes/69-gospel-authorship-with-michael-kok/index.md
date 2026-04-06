@@ -6,7 +6,6 @@ videoId: 1w8zmAKheQE
 aliases:
   - /episodes/69/
 tags:
-  - Jesus
   - Luke
   - Papias of Hierapolis
   - Peter
@@ -15,7 +14,6 @@ tags:
   - Irenaeus
   - YHWH
   - baptism
-  - Hebrews
   - Ignatius
   - Flavius Josephus
   - Josephus
@@ -27,8 +25,10 @@ tags:
   - Capernaum
   - Galilee
   - John the Baptist
+  - Tertullian
   - Theophilus
   - Abraham
+  - Clement of Alexandria
   - Easter
   - Egypt
   - Gnostic

@@ -6,7 +6,6 @@ videoId: VTRccZ81UZs
 aliases:
   - /episodes/39/
 tags:
-  - Jesus
   - Hell
   - Paul
   - YHWH
@@ -25,8 +24,6 @@ tags:
   - Dionysius of Alexandria
   - Domitian
   - Garden of Eden
-  - Hebrews
-  - Israel
   - Jerusalem
   - Judah
   - Nero

@@ -11,7 +11,6 @@ tags:
   - Gentiles
   - YHWH
   - Adam
-  - Jesus
   - King David
   - Council of Jerusalem
   - Paul
@@ -20,7 +19,6 @@ tags:
   - Luke
   - Barnabas
   - Eve
-  - Israel
   - Joshua
   - Masoretic Text
   - Moab

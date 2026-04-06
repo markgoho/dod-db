@@ -7,14 +7,12 @@ aliases:
   - /episodes/124/
 tags:
   - Nephilim
-  - Jesus
   - YHWH
   - Flood
   - Romans
   - Paul
   - divine council
   - El
-  - Israel
   - Book of Enoch
   - Protestantism
   - Asherah

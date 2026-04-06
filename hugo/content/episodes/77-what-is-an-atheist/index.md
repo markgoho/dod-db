@@ -11,10 +11,8 @@ tags:
   - Islam
   - Deism
   - The Reformation
-  - Jesus
   - biblical canon
   - Gnostic
-  - Hebrews
   - Monotheism
   - Peter
 segments:

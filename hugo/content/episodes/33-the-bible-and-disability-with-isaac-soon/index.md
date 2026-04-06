@@ -8,13 +8,10 @@ aliases:
 tags:
   - Paul
   - circumcision
-  - Jesus
   - Satan
   - Isaac
   - Gentiles
-  - Hebrews
   - YHWH
-  - Israel
   - Egyptians
   - apocalypse
   - Candida Moss
@@ -25,6 +22,7 @@ tags:
   - Judaism
   - King Saul
   - Romans
+  - Thecla
 books:
   - 2 Corinthians
   - Galatians

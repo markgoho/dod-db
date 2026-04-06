@@ -6,14 +6,11 @@ videoId: Jz4YpDhPHEg
 aliases:
   - /episodes/78/
 tags:
-  - Jesus
   - Nehemiah
   - Noah
   - Ten Commandments
   - cognitive dissonance
   - Egypt
-  - Hebrews
-  - Israel
   - Adam
   - Eve
   - Jerusalem

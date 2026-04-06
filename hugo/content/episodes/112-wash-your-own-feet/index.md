@@ -6,14 +6,12 @@ videoId: kiOlyxiorow
 aliases:
   - /episodes/112/
 tags:
-  - Jesus
   - Peter
   - Maccabees
   - Luke
   - Apocrypha
   - Creation ex nihilo
   - Flavius Josephus
-  - Israel
   - Matthew
   - Moses
   - Adam

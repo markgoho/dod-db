@@ -8,21 +8,19 @@ aliases:
 tags:
   - YHWH
   - Egypt
-  - Jesus
   - Egyptians
   - Red Sea
   - Turin
   - Moses
-  - Hebrews
   - Aaron
   - Isaac
   - Passover
+  - Clement of Alexandria
   - Ten Commandments
   - archaeology
   - Canaan
   - David Burnett
   - Elephantine
-  - Israel
   - Masada
 books:
   - Exodus

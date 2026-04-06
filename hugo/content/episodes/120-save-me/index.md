@@ -7,8 +7,6 @@ aliases:
   - /episodes/120/
 tags:
   - Isaiah
-  - Jesus
-  - Israel
   - Judah
   - Moses
   - Sheol
@@ -34,6 +32,7 @@ tags:
   - Irenaeus
   - Jeremiah
   - Judeans
+  - Tertullian
   - theophany
 books:
   - Genesis

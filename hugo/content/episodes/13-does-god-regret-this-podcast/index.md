@@ -7,13 +7,11 @@ aliases:
   - /episodes/13/
 tags:
   - Jerusalem
-  - Israel
   - Lachish
   - King Sennacherib
   - Hezekiah
   - YHWH
   - Dead Sea
-  - Jesus
   - Judah
   - Arad
   - archaeology

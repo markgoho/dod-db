@@ -10,7 +10,6 @@ tags:
   - Adam
   - YHWH
   - Asherah
-  - Israel
   - Moses
   - Eve
   - Sarah
@@ -29,7 +28,6 @@ tags:
   - Bethel
   - Dead Sea Scrolls
   - Edom
-  - Hebrews
   - Judaism
   - Ketef Hinnom
   - Lachish

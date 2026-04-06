@@ -18,8 +18,6 @@ tags:
   - YHWH
   - biblical canon
   - Antiochus IV Epiphanes
-  - Hebrews
-  - Jesus
   - Judaism
   - Martin Luther
   - Protestantism
@@ -37,6 +35,7 @@ tags:
   - Median Kingdom
   - Origen
   - Paul
+  - Tertullian
 books:
   - Genesis
   - Romans

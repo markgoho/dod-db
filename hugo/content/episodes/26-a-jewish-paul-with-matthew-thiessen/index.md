@@ -7,13 +7,11 @@ aliases:
   - /episodes/26/
 tags:
   - Paul
-  - Jesus
   - Judaism
   - Abraham
   - James
   - Romans
   - Gentiles
-  - Hebrews
   - Protestantism
   - circumcision
   - Pastoral Epistles

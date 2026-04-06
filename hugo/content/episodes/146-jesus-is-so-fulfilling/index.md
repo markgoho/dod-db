@@ -7,12 +7,13 @@ aliases:
   - /episodes/146/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/148539134.mp3?sig=4IcEQq8GZBhpLkJTqyTSaz_HmeeFAWxYkJZN5exlDfs%3D
 tags:
-  - Jesus
   - Deuteronomy
+  - Esarhaddon
   - Paul
   - Assyria
   - Gentiles
   - King Sennacherib
+  - Ashurbanipal
   - Eschatology
   - Lachish
   - Moses
@@ -20,14 +21,12 @@ tags:
   - biblical canon
   - circumcision
   - Essenes
-  - Israel
   - James
   - Judaism
   - Ten Commandments
   - Torah
   - Univocality
   - cognitive dissonance
-  - Hebrews
   - Hezekiah
   - inerrancy
   - Jonah

@@ -10,7 +10,6 @@ tags:
   - King David
   - Adam
   - Elhanan son of Jair
-  - Jesus
   - Philistines
   - Eve
   - King James Version
@@ -20,7 +19,6 @@ tags:
   - Univocality
   - YHWH
   - Bethlehem
-  - Hebrews
   - Hell
   - Judaism
   - Mary Magdalene

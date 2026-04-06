@@ -10,9 +10,7 @@ tags:
   - YHWH
   - Deuteronomy
   - Judaism
-  - Israel
   - Moses
-  - Jesus
   - King Josiah
   - Paul
   - Philo of Alexandria
@@ -34,7 +32,6 @@ tags:
   - Canaanites
   - circumcision
   - Gentiles
-  - Hebrews
   - Hell
   - James
   - Judah

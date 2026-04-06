@@ -6,7 +6,6 @@ videoId: B1uE2cv8fP0
 aliases:
   - /episodes/22/
 tags:
-  - Hebrews
   - YHWH
   - Enuma Elish
   - Julius Wellhausen
@@ -26,7 +25,6 @@ tags:
   - Cain
   - Eve
   - Ishmael
-  - Israel
   - King James Version
   - Latin Vulgate
   - Midianites

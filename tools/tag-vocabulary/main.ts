@@ -893,8 +893,15 @@ function renderProposedCard(tag: TagDefinition, index: number): string {
         <button class="btn btn-approve" onclick="mergeTag(${index})">
           ⇄ Merge into ${escapeHtml(duplicateOf)}
         </button>
+        <button class="btn btn-override" onclick="approveTag(${index})"
+                title="Approve as a distinct tag despite the similarity warning">
+          ✓ Approve Anyway
+        </button>
         <button class="btn" onclick="dismissTag(${index})">
           Dismiss
+        </button>
+        <button class="btn btn-reject" onclick="rejectTag(${index})">
+          ✗ Reject
         </button>
       `
     : `
@@ -993,6 +1000,16 @@ async function approveTag(index: number): Promise<void> {
 
   const originalCanonical = card.dataset.original;
   if (!originalCanonical) return;
+
+  const duplicateOf = card.dataset.duplicateOf;
+  if (
+    duplicateOf
+    && !confirm(
+      `"${originalCanonical}" was flagged as possibly duplicate of "${duplicateOf}".\n\nApprove anyway as a distinct tag?`,
+    )
+  ) {
+    return;
+  }
 
   // Get updated values from form
   const newCanonical = (

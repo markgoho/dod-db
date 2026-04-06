@@ -6,7 +6,6 @@ videoId: 6LXqyB1ZeLE
 aliases:
   - /episodes/128/
 tags:
-  - Jesus
   - John
   - Philo of Alexandria
   - Jerusalem
@@ -14,7 +13,6 @@ tags:
   - Galilee
   - Sea of Galilee
   - forgery
-  - Hebrews
   - Judaism
   - Matthew
   - Paul

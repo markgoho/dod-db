@@ -18,7 +18,6 @@ tags:
   - Judas Iscariot
   - Abraham
   - Hermeneia
-  - Jesus
   - Judaism
   - Lot
   - Sukkot
@@ -29,7 +28,6 @@ tags:
   - Daniel
   - Dead Sea
   - Flavius Josephus
-  - Hebrews
   - Hell
   - inerrancy
   - James VanderKam

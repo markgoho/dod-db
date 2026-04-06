@@ -15,7 +15,6 @@ tags:
   - Samuel
   - Abraham
   - inerrancy
-  - Jesus
   - Pastoral Epistles
   - Elhanan son of Jair
   - Romans
@@ -34,8 +33,6 @@ tags:
   - Book of Enoch
   - Catholicism
   - Dead Sea Scrolls
-  - Hebrews
-  - Israel
   - Marcion
   - Martin Luther
   - Matthew

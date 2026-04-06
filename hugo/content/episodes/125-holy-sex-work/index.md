@@ -14,7 +14,6 @@ tags:
   - Garden of Eden
   - Maccabees
   - Asa
-  - Israel
   - Judah
   - Satan
   - archaeology
@@ -28,9 +27,7 @@ tags:
   - Masoretic Text
   - Tamar
   - circumcision
-  - Hebrews
   - Hezekiah
-  - Jesus
   - King Josiah
   - Latin Vulgate
   - Martin Luther

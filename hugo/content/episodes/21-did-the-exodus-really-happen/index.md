@@ -7,10 +7,8 @@ aliases:
   - /episodes/21/
 tags:
   - Egypt
-  - Israel
   - Moses
   - child sacrifice
-  - Hebrews
   - Molek
   - Ten Commandments
   - Carthage
@@ -23,7 +21,6 @@ tags:
   - Deuteronomy
   - Hezekiah
   - Isaac
-  - Jesus
   - King James Version
   - Syria
   - Africa

@@ -12,8 +12,6 @@ tags:
   - Judaism
   - Lilith
   - Gentiles
-  - Jesus
-  - Israel
   - Sodom
   - Garden of Eden
   - Romans

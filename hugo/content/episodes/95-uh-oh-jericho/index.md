@@ -29,7 +29,6 @@ tags:
   - Cain
   - David Carr
   - Eve
-  - Israel
   - Jerusalem
   - Seth
   - YHWH

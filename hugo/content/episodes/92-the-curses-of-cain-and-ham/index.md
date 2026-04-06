@@ -24,8 +24,6 @@ tags:
   - Babylon
   - Septuagint
   - Abraham
-  - Hebrews
-  - Jesus
   - Philo of Alexandria
   - Ugarit
   - Abel
@@ -36,7 +34,6 @@ tags:
   - Egyptians
   - Eve
   - Holy Spirit
-  - Israel
   - Jeremiah
   - Jerome
   - Judah

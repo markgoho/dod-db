@@ -5,6 +5,7 @@ export type SegmentType =
   | "above-the-law"
   | "advertisement"
   | "all-right-lets-see-it"
+  | "apocryphilia"
   | "archaeology-of-israel"
   | "ark-of-the-covenant"
   | "artifacts-and-fiction"
@@ -60,6 +61,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   intro: "Intro",
   "above-the-law": "Above the Law",
   "all-right-lets-see-it": "All Right, Let's See It",
+  apocryphilia: "Apocryphilia",
   "archaeology-of-israel": "Archaeology of Israel",
   "ark-of-the-covenant": "The Ark of the Covenant",
   "artifacts-and-fiction": "Artifacts and Fiction",
@@ -116,6 +118,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   intro: "#6366f1", // indigo
   "above-the-law": "#f59e0b", // amber-500 (gold/law/authority)
   "all-right-lets-see-it": "#ef4444", // red
+  apocryphilia: "#8b5cf6", // violet-500 (mysterious apocryphal literature)
   "archaeology-of-israel": "#a16207", // yellow-700 (bronze/earth tone)
   "ark-of-the-covenant": "#ca8a04", // yellow-600 (golden sacred object)
   "artifacts-and-fiction": "#92400e", // amber-800 (ancient/archaeological)
@@ -217,6 +220,11 @@ export const SEGMENT_PATTERNS: Record<
     /segment.*what is that/i,
   ],
   "all-right-lets-see-it": [/all right,?\s+let'?s see it/i],
+  apocryphilia: [
+    /apocryphilia/i,
+    /dive in with apocryphilia/i,
+    /this week'?s apocryphilia/i,
+  ],
   "urban-legends": [
     /welcome to.*urban legends/i,
     /segment.*urban legends/i,
@@ -397,6 +405,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Examining biblical figures, religious leaders, or institutions that act outside or above the law, including exemptions, abuses of power, and accountability",
   "all-right-lets-see-it":
     "Examining and discussing visual content like charts, maps, or images",
+  apocryphilia:
+    "Exploring apocryphal and non-canonical texts, traditions, and stories that circulated around biblical literature",
   "archaeology-of-israel":
     "Archaeological findings and discoveries related to ancient Israel",
   "ark-of-the-covenant":

@@ -9,7 +9,6 @@ tags:
   - Monotheism
   - Paul
   - Hypostasis
-  - Jesus
   - Philo of Alexandria
   - Judaism
   - Abraham
@@ -29,7 +28,6 @@ tags:
   - divine council
   - El
   - Elephantine
-  - Hebrews
   - Herod Antipas
   - Herod the Great
   - Isaac

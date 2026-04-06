@@ -12,10 +12,8 @@ tags:
   - El
   - archaeology
   - Asherah
-  - Israel
   - Jerusalem
   - Adam
-  - Jesus
   - circumcision
   - Isaac
   - Abraham
@@ -25,7 +23,6 @@ tags:
   - Baal
   - Carthage
   - divine council
-  - Hebrews
   - Isaiah
   - Babylon
   - Deuteronomy

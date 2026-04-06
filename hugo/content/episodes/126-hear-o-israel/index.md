@@ -11,7 +11,6 @@ tags:
   - Jeremiah
   - Jerusalem
   - Babylon
-  - Israel
   - Monotheism
   - Moses
   - Judah
@@ -19,7 +18,6 @@ tags:
   - Baruch
   - King Josiah
   - biblical canon
-  - Hebrews
   - Judaism
   - Apocrypha
   - King James Version
@@ -28,8 +26,10 @@ tags:
   - Isaiah
   - Arad
   - Asherah
+  - Ashurbanipal
   - Baal
   - Deutero-Isaiah
+  - Esarhaddon
   - Hell
   - Joshua
   - King Sennacherib

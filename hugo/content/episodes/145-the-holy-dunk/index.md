@@ -7,12 +7,10 @@ aliases:
   - /episodes/145/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/147973619.mp3?sig=KtLy2HJCzmQJuE8fSUtbqzSCBNED6QN6tmEWMyAbuwg%3D
 tags:
-  - Jesus
   - baptism
   - John the Baptist
   - Deuteronomy
   - Luke
-  - Israel
   - Holy Spirit
   - Nazareth
   - Galilee
@@ -28,8 +26,8 @@ tags:
   - Canaanites
   - Dead Sea
   - Deutero-Isaiah
+  - Esarhaddon
   - Garden of Gethsemane
-  - Hebrews
   - Herod Antipas
   - Judas Iscariot
   - King Josiah

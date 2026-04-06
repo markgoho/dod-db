@@ -7,7 +7,6 @@ aliases:
   - /episodes/12/
 tags:
   - Mary Magdalene
-  - Jesus
   - Luke
   - Peter
   - Bethany
@@ -22,15 +21,17 @@ tags:
   - Paul
   - Eusebius
   - archaeology
+  - Tertullian
   - El
-  - Israel
   - King James Version
   - source criticism
   - Apocrypha
   - Codex Sinaiticus
+  - Codex Vaticanus
   - Jerusalem
   - Judas Iscariot
   - Junia
+  - Lydia
   - Pastoral Epistles
   - Samaritans
   - Textus Receptus

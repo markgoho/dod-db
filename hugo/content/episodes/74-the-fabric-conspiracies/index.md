@@ -14,7 +14,6 @@ tags:
   - Judah
   - Deuteronomy
   - Torah
-  - Hebrews
   - Judeans
   - YHWH
   - apocalypse

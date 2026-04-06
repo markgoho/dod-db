@@ -6,7 +6,6 @@ videoId: YyN1w9PYjS4
 aliases:
   - /episodes/8/
 tags:
-  - Jesus
   - Bart Ehrman
   - Judeans
   - Africa

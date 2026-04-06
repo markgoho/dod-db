@@ -6,14 +6,12 @@ videoId: 1esLkNDbMNo
 aliases:
   - /episodes/96/
 tags:
-  - Jesus
   - Paul
   - Romans
   - Christian Nationalism
   - Judaism
   - Ten Commandments
   - Nero
-  - Hebrews
   - Herod the Great
   - Islam
   - King David

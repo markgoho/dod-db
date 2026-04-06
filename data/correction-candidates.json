@@ -8500,13 +8500,14 @@
       "original": "taking issue",
       "corrected": "Taking Issue",
       "category": "capitalization",
-      "totalOccurrences": 10,
-      "episodeCount": 4,
+      "totalOccurrences": 13,
+      "episodeCount": 5,
       "episodes": [
         "t40eXH29l-8",
         "Zpp6qUqrins",
         "yviFHESG_HA",
-        "VEfI1TgWVHY"
+        "VEfI1TgWVHY",
+        "151982360"
       ],
       "examples": [
         "\"our segment taking issue. We're going\"",
@@ -8530,7 +8531,7 @@
       ],
       "confidence": 85,
       "firstSeen": "2026-01-18T17:02:51.228Z",
-      "lastSeen": "2026-04-05T14:42:34.271Z",
+      "lastSeen": "2026-04-05T22:57:31.968Z",
       "status": "approved",
       "reviewedAt": "2026-04-03T01:40:37.949Z",
       "reviewedBy": "UI Review"
@@ -10309,30 +10310,35 @@
       "original": "Babylonian exile",
       "corrected": "Babylonian Exile",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
+      "totalOccurrences": 4,
+      "episodeCount": 2,
       "episodes": [
-        "Zrw0LBtnjn8"
+        "Zrw0LBtnjn8",
+        "151982360"
       ],
       "examples": [
         "\"after the Babylonian exile.\"",
-        "\"the, the Babylonian exile.\""
+        "\"the, the Babylonian exile.\"",
+        "\"after the Babylonian exile, when they\""
       ],
       "correctedExamples": [
         "\"after the Babylonian Exile.\"",
-        "\"the, the Babylonian Exile.\""
+        "\"the, the Babylonian Exile.\"",
+        "\"after the Babylonian Exile, when they\""
       ],
       "timestamps": [
         "00:52:42.050",
-        "00:55:00.690"
+        "00:55:00.690",
+        "00:37:40.218"
       ],
       "episodeIds": [
         "Zrw0LBtnjn8",
-        "Zrw0LBtnjn8"
+        "Zrw0LBtnjn8",
+        "151982360"
       ],
-      "confidence": 10,
+      "confidence": 40,
       "firstSeen": "2026-04-03T00:37:28.331Z",
-      "lastSeen": "2026-04-03T00:37:28.331Z",
+      "lastSeen": "2026-04-05T22:57:31.968Z",
       "status": "pending"
     },
     "Terrafim→Teraphim": {
@@ -11328,7 +11334,665 @@
       "firstSeen": "2026-04-05T22:14:06.322Z",
       "lastSeen": "2026-04-05T22:14:06.322Z",
       "status": "pending"
+    },
+    "the—→the-": {
+      "original": "the—",
+      "corrected": "the-",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "149083715"
+      ],
+      "examples": [
+        "\"written in the— oh, I\"",
+        "\"they discuss the— the Jewish\""
+      ],
+      "correctedExamples": [
+        "\"written in the- oh, I\"",
+        "\"they discuss the- the Jewish\""
+      ],
+      "timestamps": [
+        "00:05:41.685",
+        "00:07:36.723"
+      ],
+      "episodeIds": [
+        "149083715",
+        "149083715"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-04-05T22:32:45.966Z",
+      "lastSeen": "2026-04-05T22:32:45.966Z",
+      "status": "pending"
+    },
+    "Leslie→Lesley": {
+      "original": "Leslie",
+      "corrected": "Lesley",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "149083715"
+      ],
+      "examples": [
+        "\"she's like Leslie Gore. And\"",
+        "\"know who Leslie Gore is,\"",
+        "\"yeah, she Leslie Gores, um,\""
+      ],
+      "correctedExamples": [
+        "\"she's like Lesley Gore. And\"",
+        "\"know who Lesley Gore is,\"",
+        "\"yeah, she Lesley Gores, um,\""
+      ],
+      "timestamps": [
+        "00:15:44.165",
+        "00:15:44.165",
+        "00:16:00.355"
+      ],
+      "episodeIds": [
+        "149083715",
+        "149083715",
+        "149083715"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-04-05T22:32:45.966Z",
+      "lastSeen": "2026-04-05T22:32:45.966Z",
+      "status": "pending"
+    },
+    "ladder→Latter": {
+      "original": "ladder",
+      "corrected": "Latter",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "149083715"
+      ],
+      "examples": [
+        "\"Which is ladder, ladder something.\"",
+        "\"is ladder, ladder something. You're—.\""
+      ],
+      "correctedExamples": [
+        "\"Which is Latter, Latter something.\"",
+        "\"is Latter, Latter something. You're—.\""
+      ],
+      "timestamps": [
+        "01:09:38.522",
+        "01:09:38.522"
+      ],
+      "episodeIds": [
+        "149083715",
+        "149083715"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-04-05T22:32:45.966Z",
+      "lastSeen": "2026-04-05T22:32:45.966Z",
+      "status": "pending"
+    },
+    "Thekla→Thecla": {
+      "original": "Thekla",
+      "corrected": "Thecla",
+      "category": "spelling",
+      "totalOccurrences": 5,
+      "episodeCount": 1,
+      "episodes": [
+        "149672881"
+      ],
+      "examples": [
+        "\"only what Thekla seems excited\"",
+        "\"And then Thekla comes in.\"",
+        "\"Uh, and Thekla, by night,\""
+      ],
+      "correctedExamples": [
+        "\"only what Thecla seems excited\"",
+        "\"And then Thecla comes in.\"",
+        "\"Uh, and Thecla, by night,\""
+      ],
+      "timestamps": [
+        "00:09:35.426",
+        "00:18:49.616",
+        "00:19:07.675"
+      ],
+      "episodeIds": [
+        "149672881",
+        "149672881",
+        "149672881"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-04-05T22:36:30.541Z",
+      "lastSeen": "2026-04-05T22:36:30.541Z",
+      "status": "pending"
+    },
+    "Theoklia→Theokleia": {
+      "original": "Theoklia",
+      "corrected": "Theokleia",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "149672881"
+      ],
+      "examples": [
+        "\"name is Theoklia. Theoklia. And\"",
+        "\"is Theoklia. Theoklia. And I\""
+      ],
+      "correctedExamples": [
+        "\"name is Theokleia. Theokleia. And\"",
+        "\"is Theokleia. Theokleia. And I\""
+      ],
+      "timestamps": [
+        "00:15:36.921",
+        "00:15:36.921"
+      ],
+      "episodeIds": [
+        "149672881",
+        "149672881"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-04-05T22:36:30.541Z",
+      "lastSeen": "2026-04-05T22:36:30.541Z",
+      "status": "pending"
+    },
+    "synoptic gospels→Synoptic Gospels": {
+      "original": "synoptic gospels",
+      "corrected": "Synoptic Gospels",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "149672881"
+      ],
+      "examples": [
+        "\"in the synoptic gospels, interestingly. Yes,\"",
+        "\"interestingly. Yes, synoptic gospels, because which—.\""
+      ],
+      "correctedExamples": [
+        "\"in the Synoptic Gospels, interestingly. Yes,\"",
+        "\"interestingly. Yes, Synoptic Gospels, because which—.\""
+      ],
+      "timestamps": [
+        "00:41:04.999",
+        "00:41:04.999"
+      ],
+      "episodeIds": [
+        "149672881",
+        "149672881"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-04-05T22:36:30.541Z",
+      "lastSeen": "2026-04-05T22:36:30.541Z",
+      "status": "pending"
+    },
+    "Origins→Origen's": {
+      "original": "Origins",
+      "corrected": "Origen's",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": [
+        "150225488"
+      ],
+      "examples": [
+        "\"the Bible, Origins, Four Levels\"",
+        "\"things that Origins Framework facilitated,\"",
+        "\"retreat to Origins Framework. They've\""
+      ],
+      "correctedExamples": [
+        "\"the Bible, Origen's Four Levels\"",
+        "\"things that Origen's framework facilitated,\"",
+        "\"retreat to Origen's framework. They've\""
+      ],
+      "timestamps": [
+        "00:25:47.549",
+        "00:31:12.474",
+        "00:31:12.474"
+      ],
+      "episodeIds": [
+        "150225488",
+        "150225488",
+        "150225488"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-04-05T22:41:59.494Z",
+      "lastSeen": "2026-04-05T22:41:59.494Z",
+      "status": "pending"
+    },
+    "Sakut→Sakkuth": {
+      "original": "Sakut",
+      "corrected": "Sakkuth",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "150842642"
+      ],
+      "examples": [
+        "\"gone from \"Sakut, your king\"\"",
+        "\"Molech.\" So, \"Sakut,\" yes.\"",
+        "\"following this. \"Sakut your king.\"\""
+      ],
+      "correctedExamples": [
+        "\"gone from \"Sakkuth, your king\"\"",
+        "\"Molech.\" So, \"Sakkuth,\" yes.\"",
+        "\"following this. \"Sakkuth your king.\"\""
+      ],
+      "timestamps": [
+        "00:35:26.852",
+        "00:35:26.852",
+        "00:35:56.901"
+      ],
+      "episodeIds": [
+        "150842642",
+        "150842642",
+        "150842642"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-04-05T22:47:41.905Z",
+      "lastSeen": "2026-04-05T22:47:41.905Z",
+      "status": "pending"
+    },
+    "classical Greek→Classical Greek": {
+      "original": "classical Greek",
+      "corrected": "Classical Greek",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "151389925"
+      ],
+      "examples": [
+        "\"used in classical Greek, not Koine\"",
+        "\"Greek, but classical Greek, to refer\""
+      ],
+      "correctedExamples": [
+        "\"used in Classical Greek, not Koine\"",
+        "\"Greek, but Classical Greek, to refer\""
+      ],
+      "timestamps": [
+        "00:46:20.964",
+        "00:46:20.964"
+      ],
+      "episodeIds": [
+        "151389925",
+        "151389925"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-04-05T22:53:26.899Z",
+      "lastSeen": "2026-04-05T22:53:26.899Z",
+      "status": "pending"
+    },
+    "analogical→anagogical": {
+      "original": "analogical",
+      "corrected": "anagogical",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "151982360"
+      ],
+      "examples": [
+        "\"was moral analogical, and other\"",
+        "\"sense, an analogical sense, something\""
+      ],
+      "correctedExamples": [
+        "\"was moral, anagogical, and other\"",
+        "\"sense, an anagogical sense, something\""
+      ],
+      "timestamps": [
+        "00:07:12.671",
+        "00:09:13.153"
+      ],
+      "episodeIds": [
+        "151982360",
+        "151982360"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-04-05T22:57:31.968Z",
+      "lastSeen": "2026-04-05T22:57:31.968Z",
+      "status": "pending"
+    },
+    "curia→kuria": {
+      "original": "curia",
+      "corrected": "kuria",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "152538050"
+      ],
+      "examples": [
+        "\"the word \"curia\" and they'll\"",
+        "\"name, and \"curia\" always follows,\""
+      ],
+      "correctedExamples": [
+        "\"the word \"kuria\" and they'll\"",
+        "\"name, and \"kuria\" always follows,\""
+      ],
+      "timestamps": [
+        "00:07:35.416",
+        "00:38:48.030"
+      ],
+      "episodeIds": [
+        "152538050",
+        "152538050"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-04-05T23:09:00.912Z",
+      "lastSeen": "2026-04-05T23:09:00.912Z",
+      "status": "pending"
+    },
+    "Eclecte→Eklekte": {
+      "original": "Eclecte",
+      "corrected": "Eklekte",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "152538050"
+      ],
+      "examples": [
+        "\"is this Eclecte? If we\"",
+        "\"letter string Eclecte there, could\"",
+        "\"the lady Eclecte. But the\""
+      ],
+      "correctedExamples": [
+        "\"is this Eklekte? If we\"",
+        "\"letter string Eklekte there, could\"",
+        "\"the lady Eklekte. But the\""
+      ],
+      "timestamps": [
+        "00:14:51.060",
+        "00:14:51.060",
+        "00:49:30.365"
+      ],
+      "episodeIds": [
+        "152538050",
+        "152538050",
+        "152538050"
+      ],
+      "confidence": 20,
+      "firstSeen": "2026-04-05T23:09:00.912Z",
+      "lastSeen": "2026-04-05T23:09:00.912Z",
+      "status": "pending"
+    },
+    "6th→7th": {
+      "original": "6th",
+      "corrected": "7th",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "152538050"
+      ],
+      "examples": [
+        "\"hit the 6th, 7th century,\"",
+        "\"in the 6th, 7th, 8th\""
+      ],
+      "correctedExamples": [
+        "\"the 6th, 7th century, you\"",
+        "\"the 6th, 7th, 8th century,\""
+      ],
+      "timestamps": [
+        "00:34:19.200",
+        "00:34:19.200"
+      ],
+      "episodeIds": [
+        "152538050",
+        "152538050"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-04-05T23:09:00.912Z",
+      "lastSeen": "2026-04-05T23:09:00.912Z",
+      "status": "pending"
+    },
+    "eklektei→eklekte": {
+      "original": "eklektei",
+      "corrected": "eklekte",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "152538050"
+      ],
+      "examples": [
+        "\"Ho presbuteros eklektei kuria, right?\"",
+        "\"that as eklektei and then\""
+      ],
+      "correctedExamples": [
+        "\"Ho presbuteros eklekte kuria, right?\"",
+        "\"that as eklekte and then\""
+      ],
+      "timestamps": [
+        "00:37:44.424",
+        "00:38:48.030"
+      ],
+      "episodeIds": [
+        "152538050",
+        "152538050"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-04-05T23:09:00.912Z",
+      "lastSeen": "2026-04-05T23:09:00.912Z",
+      "status": "pending"
+    },
+    "evocative→vocative": {
+      "original": "evocative",
+      "corrected": "vocative",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "152538050"
+      ],
+      "examples": [
+        "\"to be evocative. It's been\"",
+        "\"for the evocative to omit\""
+      ],
+      "correctedExamples": [
+        "\"to be vocative. It's been\"",
+        "\"for the vocative to omit\""
+      ],
+      "timestamps": [
+        "00:55:17.701",
+        "00:55:17.701"
+      ],
+      "episodeIds": [
+        "152538050",
+        "152538050"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-04-05T23:09:00.912Z",
+      "lastSeen": "2026-04-05T23:09:00.912Z",
+      "status": "pending"
+    },
+    "Aristaeus→Aristeas": {
+      "original": "Aristaeus",
+      "corrected": "Aristeas",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "153667245"
+      ],
+      "examples": [
+        "\"letter of Aristaeus.\"",
+        "\"happens is Aristaeus and others\"",
+        "\"the dude Aristaeus who's in\""
+      ],
+      "correctedExamples": [
+        "\"letter of Aristeas.\"",
+        "\"happens is Aristeas and others\"",
+        "\"the dude Aristeas who's in\""
+      ],
+      "timestamps": [
+        "00:02:30.618",
+        "00:08:15.972",
+        "00:11:21.999"
+      ],
+      "episodeIds": [
+        "153667245",
+        "153667245",
+        "153667245"
+      ],
+      "confidence": 25,
+      "firstSeen": "2026-04-05T23:17:11.197Z",
+      "lastSeen": "2026-04-05T23:17:11.197Z",
+      "status": "pending"
+    },
+    "500→500000": {
+      "original": "500",
+      "corrected": "500000",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": [
+        "153667245"
+      ],
+      "examples": [
+        "\"to collect 500 volumes of\"",
+        "\"you said 500 volumes of\"",
+        "\"it was 500 volumes?\""
+      ],
+      "correctedExamples": [
+        "\"to collect 500,000 volumes of\"",
+        "\"you said 500,000 volumes of\"",
+        "\"it was 500,000 volumes?\""
+      ],
+      "timestamps": [
+        "00:06:44.726",
+        "00:07:26.659",
+        "00:07:26.659"
+      ],
+      "episodeIds": [
+        "153667245",
+        "153667245",
+        "153667245"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-04-05T23:17:11.197Z",
+      "lastSeen": "2026-04-05T23:17:11.197Z",
+      "status": "pending"
+    },
+    "covenant code→Covenant Code": {
+      "original": "covenant code",
+      "corrected": "Covenant Code",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "153667245"
+      ],
+      "examples": [
+        "\"of the covenant code?\"",
+        "\"of the covenant code. You are\""
+      ],
+      "correctedExamples": [
+        "\"of the Covenant Code?\"",
+        "\"of the Covenant Code. You are\""
+      ],
+      "timestamps": [
+        "00:31:20.044",
+        "00:31:42.330"
+      ],
+      "episodeIds": [
+        "153667245",
+        "153667245"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-04-05T23:17:11.197Z",
+      "lastSeen": "2026-04-05T23:17:11.197Z",
+      "status": "pending"
+    },
+    "we'll→we'll—": {
+      "original": "we'll",
+      "corrected": "we'll—",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "153667245"
+      ],
+      "examples": [
+        "\"like, well, we'll Well, we'll\"",
+        "\"an agenda, we'll We'll make\""
+      ],
+      "correctedExamples": [
+        "\"like, well, we'll— well, we'll\"",
+        "\"an agenda, we'll— we'll make\""
+      ],
+      "timestamps": [
+        "00:48:33.187",
+        "00:55:25.183"
+      ],
+      "episodeIds": [
+        "153667245",
+        "153667245"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-04-05T23:17:11.197Z",
+      "lastSeen": "2026-04-05T23:17:11.197Z",
+      "status": "pending"
+    },
+    "daring-do→derring-do": {
+      "original": "daring-do",
+      "corrected": "derring-do",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "154250873"
+      ],
+      "examples": [
+        "\"magic and daring-do and all\"",
+        "\"of the daring-do that can\""
+      ],
+      "correctedExamples": [
+        "\"magic and derring-do and all\"",
+        "\"of the derring-do that can\""
+      ],
+      "timestamps": [
+        "00:37:30.336",
+        "00:38:01.638"
+      ],
+      "episodeIds": [
+        "154250873",
+        "154250873"
+      ],
+      "confidence": 15,
+      "firstSeen": "2026-04-05T23:24:45.454Z",
+      "lastSeen": "2026-04-05T23:24:45.454Z",
+      "status": "pending"
+    },
+    "Hermanni→Hermoni": {
+      "original": "Hermanni",
+      "corrected": "Hermoni",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "154855073"
+      ],
+      "examples": [
+        "\"of roots. Hermanni taught sorcery\"",
+        "\"not Hermione, Hermanni. It's the,\""
+      ],
+      "correctedExamples": [
+        "\"of roots. Hermoni taught sorcery\"",
+        "\"not Hermione, Hermoni. It's the,\""
+      ],
+      "timestamps": [
+        "00:35:27.384",
+        "00:35:45.263"
+      ],
+      "episodeIds": [
+        "154855073",
+        "154855073"
+      ],
+      "confidence": 10,
+      "firstSeen": "2026-04-05T23:28:45.084Z",
+      "lastSeen": "2026-04-05T23:28:45.084Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-04-05T22:14:06.322Z"
+  "lastUpdated": "2026-04-05T23:28:45.084Z"
 }

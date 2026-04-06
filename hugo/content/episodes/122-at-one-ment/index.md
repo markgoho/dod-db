@@ -6,7 +6,6 @@ videoId: G-bwyrQQI5g
 aliases:
   - /episodes/122/
 tags:
-  - Jesus
   - Satan
   - Septuagint
   - Leningrad Codex
@@ -14,7 +13,6 @@ tags:
   - King James Version
   - Anselm of Canterbury
   - Gregory of Nyssa
-  - Israel
   - Masoretic Text
   - Moses
   - Noah
@@ -26,7 +24,6 @@ tags:
   - Dead Sea
   - Dead Sea Scrolls
   - Deutero-Isaiah
-  - Hebrews
   - Hell
   - Irenaeus
   - Isaiah

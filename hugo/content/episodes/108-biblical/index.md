@@ -6,7 +6,6 @@ videoId: josnjFOYjrA
 aliases:
   - /episodes/108/
 tags:
-  - Jesus
   - Deuteronomy
   - Moses
   - Onan
@@ -16,8 +15,8 @@ tags:
   - Boaz
   - Catholicism
   - Christian Nationalism
+  - Esarhaddon
   - Hagar
-  - Israel
   - Judah
   - Judaism
   - Naomi

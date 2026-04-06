@@ -8,7 +8,6 @@ aliases:
 tags:
   - Noah
   - Flood
-  - Jesus
   - Ararat
   - Ham
   - Japheth

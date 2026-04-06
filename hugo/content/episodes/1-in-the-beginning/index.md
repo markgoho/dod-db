@@ -7,7 +7,6 @@ aliases:
   - /episodes/1/
 tags:
   - YHWH
-  - Israel
   - Baal
   - El
   - Adam

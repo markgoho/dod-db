@@ -6,7 +6,6 @@ videoId: DnsTYWOw5r0
 aliases:
   - /episodes/61/
 tags:
-  - Jesus
   - John the Baptist
   - baptism
   - Gnostic
@@ -30,7 +29,6 @@ tags:
   - Elizabeth
   - Holy Spirit
   - inerrancy
-  - Israel
   - Judah
   - Protestantism
   - Samuel

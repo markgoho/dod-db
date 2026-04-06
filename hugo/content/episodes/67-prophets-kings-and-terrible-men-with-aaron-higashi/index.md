@@ -8,8 +8,6 @@ aliases:
 tags:
   - King David
   - King Saul
-  - Israel
-  - Jesus
   - Samuel
   - Jonathan
   - Moses

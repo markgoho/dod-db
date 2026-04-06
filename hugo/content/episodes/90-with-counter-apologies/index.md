@@ -13,7 +13,6 @@ tags:
   - YHWH
   - Eve
   - Garden of Eden
-  - Jesus
   - Passover
   - Enoch
   - Flood

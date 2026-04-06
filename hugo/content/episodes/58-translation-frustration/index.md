@@ -7,8 +7,6 @@ aliases:
   - /episodes/58/
 tags:
   - King James Version
-  - Israel
-  - Jesus
   - William Tyndale
   - Septuagint
   - Dead Sea Scrolls

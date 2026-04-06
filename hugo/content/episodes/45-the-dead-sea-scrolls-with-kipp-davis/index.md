@@ -10,7 +10,6 @@ tags:
   - Deuteronomy
   - Qumran
   - Septuagint
-  - Israel
   - Ammonites
   - Babylon
   - Daniel
@@ -34,7 +33,6 @@ tags:
   - Enoch
   - Eschatology
   - Flavius Josephus
-  - Hebrews
   - Josephus
   - Judaism
   - Mount Gerizim
@@ -48,7 +46,6 @@ tags:
   - Egypt
   - Herod the Great
   - inerrancy
-  - Jesus
   - Judeans
   - King Saul
   - Mount Ebal

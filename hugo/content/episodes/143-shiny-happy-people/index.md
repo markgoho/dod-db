@@ -7,7 +7,6 @@ aliases:
   - /episodes/143/
 audioUrl: https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/YfZO4tERxneauNcW9Fgn/mgln.ai/e/211/pscrb.fm/rss/p/traffic.megaphone.fm/ARML5332921728.mp3?updated=1766945104
 tags:
-  - Jesus
   - Elijah
   - Moses
   - Peter
@@ -23,7 +22,6 @@ tags:
   - Easter
   - Eschatology
   - Herod Antipas
-  - Israel
   - Jerusalem
   - Mount Sinai
   - Syria
@@ -33,7 +31,6 @@ tags:
   - Deuteronomy
   - El
   - Garden of Gethsemane
-  - Hebrews
   - Judaism
   - Samson
   - Textus Receptus

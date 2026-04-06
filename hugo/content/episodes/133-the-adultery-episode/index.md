@@ -6,10 +6,8 @@ videoId: 8nkm6_nzl8k
 aliases:
   - /episodes/133/
 tags:
-  - Israel
   - Judah
   - Baal
-  - Jesus
   - Deuteronomy
   - King David
   - Samaria

@@ -6,7 +6,6 @@ videoId: 04EVQLvnAj8
 aliases:
   - /episodes/132/
 tags:
-  - Jesus
   - Peter
   - Molek
   - Judaism
@@ -20,7 +19,6 @@ tags:
   - child sacrifice
   - cognitive dissonance
   - Daniel
-  - Israel
   - Masoretic Text
   - Egypt
   - Leningrad Codex

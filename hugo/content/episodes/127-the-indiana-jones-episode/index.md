@@ -8,13 +8,10 @@ aliases:
 tags:
   - Philistines
   - YHWH
-  - Israel
   - Joshua
   - Jerusalem
-  - Jesus
   - Cherubim
   - Egypt
-  - Hebrews
   - King David
   - Asherah
   - Jeremiah

@@ -9,13 +9,11 @@ tags:
   - YHWH
   - Judaism
   - Baal
-  - Israel
   - Satan
   - Beelzebul
   - Cherubim
   - Ugarit
   - Gabriel
-  - Jesus
   - Abraham
   - Book of Enoch
   - Daniel
@@ -32,7 +30,6 @@ tags:
   - Galilee
   - Gideon
   - Hagar
-  - Hebrews
   - Isaiah
   - Pseudepigrapha
   - Sodom
@@ -48,12 +45,14 @@ tags:
   - John the Baptist
   - Molek
   - Peter
+  - Raphael
   - Samson
   - Samuel
   - Sarah
   - Sea of Galilee
   - Septuagint
   - Seth
+  - Uriel
 books:
   - Genesis
   - Psalms

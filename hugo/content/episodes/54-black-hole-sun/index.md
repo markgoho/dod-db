@@ -7,7 +7,6 @@ aliases:
   - /episodes/54/
 tags:
   - Paul
-  - Jesus
   - Gentiles
   - Jerusalem
   - Jonah
@@ -24,7 +23,6 @@ tags:
   - Moses
   - Septuagint
   - Hell
-  - Israel
   - Rapture
   - Silas
   - Adam
@@ -33,7 +31,6 @@ tags:
   - King David
   - Melchizedek
   - Syria
-  - Hebrews
   - Herod the Great
   - Mary Magdalene
   - Nero

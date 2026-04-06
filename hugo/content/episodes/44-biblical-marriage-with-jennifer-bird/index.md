@@ -6,7 +6,6 @@ videoId: BQOMbZtGs6E
 aliases:
   - /episodes/44/
 tags:
-  - Jesus
   - Paul
   - Jennifer Bird
   - Gentiles
@@ -17,7 +16,6 @@ tags:
   - biblical canon
   - Daniel
   - etiology
-  - Israel
   - Ten Commandments
   - YHWH
 books:

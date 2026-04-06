@@ -6,7 +6,6 @@ videoId: vHKXU5rmwyo
 aliases:
   - /episodes/50/
 tags:
-  - Jesus
   - Jerusalem
   - Pontius Pilate
   - Mary Magdalene
@@ -28,15 +27,15 @@ tags:
   - Antiochus IV Epiphanes
   - Athanasius of Alexandria
   - baptism
+  - Clement of Alexandria
   - Daniel
   - Elijah
-  - Hebrews
   - Helen Bond
   - Herod Antipas
   - Herod the Great
-  - Israel
   - Maccabees
   - Peter
+  - Tertullian
 books:
   - John
   - Luke

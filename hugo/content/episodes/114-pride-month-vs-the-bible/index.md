@@ -7,7 +7,6 @@ aliases:
   - /episodes/114/
 tags:
   - Sodom
-  - Israel
   - Paul
   - Hell
   - Lot
@@ -16,7 +15,6 @@ tags:
   - Ammonites
   - Gentiles
   - Isaiah
-  - Jesus
   - Judah
   - King James Version
   - Moabites

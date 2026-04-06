@@ -6,7 +6,6 @@ videoId: G2s8VvaAgHQ
 aliases:
   - /episodes/5/
 tags:
-  - Jesus
   - Easter
   - Arius
   - Passover
@@ -26,7 +25,6 @@ tags:
   - Catholicism
   - Eusebius
   - Hypostasis
-  - Israel
   - Justin Martyr
   - monotheism
   - Paul

@@ -6,7 +6,6 @@ videoId: i0PTK1YOQuE
 aliases:
   - /episodes/91/
 tags:
-  - Jesus
   - Christian Nationalism
   - Satan
   - Hell

@@ -6,7 +6,6 @@ videoId: UNTBSfnu4Rs
 aliases:
   - /episodes/87/
 tags:
-  - Jesus
   - Nazareth
   - Bethlehem
   - Mary Magdalene
@@ -20,12 +19,10 @@ tags:
   - Gabriel
   - Gospel of James
   - Elizabeth
-  - Hebrews
   - Herod the Great
   - Sea of Galilee
   - Syria
   - Deuteronomy
-  - Israel
   - Jericho
   - Judah
   - YHWH

@@ -6,10 +6,8 @@ videoId: KQlq_lmgBOk
 aliases:
   - /episodes/101/
 tags:
-  - Jesus
   - apocalypse
   - Eschatology
-  - Israel
   - King James Version
   - Paul
   - Pliny the Younger

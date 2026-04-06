@@ -6,7 +6,6 @@ videoId: 5CCrRI2RX2s
 aliases:
   - /episodes/48/
 tags:
-  - Jesus
   - Paul
   - Jerusalem
   - Mary Magdalene
@@ -16,7 +15,6 @@ tags:
   - Papias of Hierapolis
   - Flavius Josephus
   - Helen Bond
-  - Israel
   - Luke
   - Pastoral Epistles
   - Peter
@@ -33,7 +31,6 @@ tags:
   - Eusebius
   - Gabriel
   - Gnostic
-  - Hebrews
   - Judaism
   - Junia
   - King David

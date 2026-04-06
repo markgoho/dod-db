@@ -6,7 +6,6 @@ videoId: vZqmxICxUh8
 aliases:
   - /episodes/83/
 tags:
-  - Jesus
   - King David
   - Septuagint
   - Jerusalem
@@ -16,7 +15,6 @@ tags:
   - archaeology
   - Protestantism
   - Qumran
-  - Israel
   - John
   - Luke
   - Masoretic Text

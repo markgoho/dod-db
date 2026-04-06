@@ -6,7 +6,6 @@ videoId: xLE723NlGGU
 aliases:
   - /episodes/99/
 tags:
-  - Jesus
   - James
   - Masoretic Text
   - Paul
@@ -23,12 +22,12 @@ tags:
   - Judaism
   - Galilee
   - Gospel of James
-  - Hebrews
   - King James Version
   - Luke
   - Moses
   - Anatolia
   - biblical canon
+  - Clement of Alexandria
   - Constantine
   - Council of Jerusalem
   - Cyrus the Great

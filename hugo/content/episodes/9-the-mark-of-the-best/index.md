@@ -7,7 +7,6 @@ aliases:
   - /episodes/9/
 tags:
   - Nero
-  - Jesus
   - monotheism
   - Christian Nationalism
   - Isaiah

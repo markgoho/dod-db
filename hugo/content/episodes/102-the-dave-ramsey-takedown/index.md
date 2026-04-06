@@ -7,12 +7,10 @@ aliases:
   - /episodes/102/
 tags:
   - Deuteronomy
-  - Jesus
   - Jerusalem
   - Gnostic
   - King Josiah
   - Joshua
-  - Israel
   - Judaism
   - Quran
   - YHWH

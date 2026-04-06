@@ -7,13 +7,10 @@ aliases:
   - /episodes/19/
 tags:
   - Paul
-  - Jesus
   - monotheism
   - Deuteronomy
-  - Hebrews
   - Judaism
   - Abraham
-  - Israel
   - Melchizedek
   - David Burnett
   - Eschatology

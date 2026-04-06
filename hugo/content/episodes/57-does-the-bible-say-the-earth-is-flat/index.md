@@ -6,7 +6,6 @@ videoId: pXbbaMXd62k
 aliases:
   - /episodes/57/
 tags:
-  - Jesus
   - Book of Enoch
   - David Carr
   - King David
