@@ -15,6 +15,7 @@ tags:
   - Isaiah
   - Jacob
   - Luke
+  - Stephen
   - Trinity
   - Abraham
   - Chicago Statement on Inerrancy

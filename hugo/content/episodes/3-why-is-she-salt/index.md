@@ -29,6 +29,7 @@ tags:
   - Mount Ebal
   - Mount Gerizim
   - Noah
+  - Purim
   - Sarah
   - apocalypse
   - divine council

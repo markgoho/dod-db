@@ -16,6 +16,7 @@ tags:
   - King David
   - King James Version
   - Solomon
+  - Stephen
   - child sacrifice
   - cognitive dissonance
   - Daniel

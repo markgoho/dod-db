@@ -513,6 +513,10 @@
         "mentions": 2
       },
       {
+        "tag": "Purim",
+        "mentions": 2
+      },
+      {
         "tag": "Sarah",
         "mentions": 2
       },
@@ -6187,6 +6191,10 @@
       {
         "tag": "Egyptians",
         "mentions": 2
+      },
+      {
+        "tag": "Acts of Paul and Thecla",
+        "mentions": 1
       },
       {
         "tag": "apocalypse",
@@ -17729,6 +17737,10 @@
         "mentions": 1
       },
       {
+        "tag": "Demas",
+        "mentions": 1
+      },
+      {
         "tag": "Egyptians",
         "mentions": 1
       },
@@ -23228,6 +23240,10 @@
         "mentions": 3
       },
       {
+        "tag": "Stephen",
+        "mentions": 3
+      },
+      {
         "tag": "child sacrifice",
         "mentions": 2
       },
@@ -26021,6 +26037,10 @@
         "mentions": 27
       },
       {
+        "tag": "Purim",
+        "mentions": 9
+      },
+      {
         "tag": "Anatolia",
         "mentions": 5
       },
@@ -26171,6 +26191,18 @@
       {
         "tag": "Onesiphorus",
         "mentions": 9
+      },
+      {
+        "tag": "Acts of Paul and Thecla",
+        "mentions": 4
+      },
+      {
+        "tag": "Demas",
+        "mentions": 3
+      },
+      {
+        "tag": "Hermogenes",
+        "mentions": 3
       },
       {
         "tag": "Luke",
@@ -26325,6 +26357,10 @@
         "mentions": 2
       },
       {
+        "tag": "Stephen",
+        "mentions": 2
+      },
+      {
         "tag": "Trinity",
         "mentions": 2
       },
@@ -26435,6 +26471,10 @@
       {
         "tag": "Septuagint",
         "mentions": 21
+      },
+      {
+        "tag": "Stephen",
+        "mentions": 18
       },
       {
         "tag": "Jacob",

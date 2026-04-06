@@ -13,6 +13,7 @@ tags:
   - Gentiles
   - YHWH
   - Egyptians
+  - Acts of Paul and Thecla
   - apocalypse
   - Candida Moss
   - Egypt

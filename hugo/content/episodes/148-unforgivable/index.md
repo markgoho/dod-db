@@ -14,6 +14,9 @@ tags:
   - Beelzebul
   - baptism
   - Onesiphorus
+  - Acts of Paul and Thecla
+  - Demas
+  - Hermogenes
   - Luke
   - Peter
   - Mary Magdalene

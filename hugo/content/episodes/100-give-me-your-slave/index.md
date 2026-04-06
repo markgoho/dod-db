@@ -24,6 +24,7 @@ tags:
   - archaeology
   - Codex Sinaiticus
   - Constantine
+  - Demas
   - Egyptians
   - Eusebius
   - Flavius Josephus
