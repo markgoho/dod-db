@@ -1,5 +1,6 @@
 ---
-paths: "src/**/*.test.ts"
+paths:
+  - "src/**/*.test.ts"
 ---
 
 # Testing Strategy

@@ -1,5 +1,6 @@
 ---
-paths: tools/**
+paths:
+  - "tools/**"
 ---
 
 # DoD Tools

@@ -1,5 +1,6 @@
 ---
-paths: "hugo/**/*.scss"
+paths:
+  - "hugo/**/*.scss"
 ---
 
 ## MANDATORY: Use Design Tokens Only
