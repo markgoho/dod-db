@@ -17,6 +17,7 @@ tags:
   - Satan
   - Adam
   - Canaanites
+  - Chicago Statement on Inerrancy
   - Dead Sea
   - Dead Sea Scrolls
   - Eve

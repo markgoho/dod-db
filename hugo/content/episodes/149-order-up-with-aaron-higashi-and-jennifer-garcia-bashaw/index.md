@@ -17,6 +17,7 @@ tags:
   - Luke
   - Trinity
   - Abraham
+  - Chicago Statement on Inerrancy
   - Deuteronomy
   - Joseph
   - Monotheism
