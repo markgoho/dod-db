@@ -28,7 +28,6 @@ tags:
   - Garden of Eden
   - Lot
   - Peter
-  - biblical canon
   - Dead Sea Scrolls
   - Euphrates
   - King James Version

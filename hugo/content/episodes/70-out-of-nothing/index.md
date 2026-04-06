@@ -16,7 +16,6 @@ tags:
   - Habakkuk
   - Monotheism
   - YHWH
-  - biblical canon
   - Antiochus IV Epiphanes
   - Judaism
   - Martin Luther

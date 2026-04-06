@@ -24,7 +24,6 @@ tags:
   - Adam
   - apocalypse
   - Babylon
-  - biblical canon
   - circumcision
   - Elizabeth
   - Holy Spirit

@@ -18,7 +18,6 @@ tags:
   - Lachish
   - Moses
   - apocalypse
-  - biblical canon
   - circumcision
   - Essenes
   - James

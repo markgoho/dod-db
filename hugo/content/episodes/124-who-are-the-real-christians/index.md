@@ -16,7 +16,6 @@ tags:
   - Book of Enoch
   - Protestantism
   - Asherah
-  - biblical canon
   - Catholicism
   - Deuteronomy
   - Hell

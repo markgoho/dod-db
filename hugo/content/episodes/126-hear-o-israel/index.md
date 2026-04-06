@@ -17,7 +17,6 @@ tags:
   - Philistines
   - Baruch
   - King Josiah
-  - biblical canon
   - Judaism
   - Apocrypha
   - King James Version

@@ -22,7 +22,8 @@ tags:
 books:
   - Luke
 guests:
-  - "Craig Mousin, also known as Reverend Craig Moose. And J.D."
+  - Craig Mousin
+  - Cecil Cicirello
 draft: false
 ---
 

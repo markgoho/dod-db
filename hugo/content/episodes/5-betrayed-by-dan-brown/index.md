@@ -10,7 +10,6 @@ tags:
   - Arius
   - Passover
   - Constantine
-  - biblical canon
   - Council of Nicaea
   - Trinity
   - Judaism

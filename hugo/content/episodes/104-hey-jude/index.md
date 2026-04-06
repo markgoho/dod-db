@@ -24,7 +24,6 @@ tags:
   - Adam
   - Judah
   - YHWH
-  - biblical canon
   - Flood
   - Isaiah
   - Jacob

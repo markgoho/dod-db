@@ -10,7 +10,6 @@ tags:
   - Mary Magdalene
   - Protestantism
   - Annunciation
-  - biblical canon
   - Gospel of James
   - The Reformation
   - Deutero-Isaiah

@@ -10,7 +10,6 @@ tags:
   - Satan
   - Hell
   - cognitive dissonance
-  - biblical canon
   - Mary Magdalene
   - Paul
   - Rapture

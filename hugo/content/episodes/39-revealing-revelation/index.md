@@ -13,7 +13,6 @@ tags:
   - Eschatology
   - Moses
   - Satan
-  - biblical canon
   - Daniel
   - Isaiah
   - Jezebel

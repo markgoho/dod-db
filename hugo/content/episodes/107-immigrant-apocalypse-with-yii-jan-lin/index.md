@@ -14,7 +14,6 @@ tags:
   - Catholicism
   - Protestantism
   - Adam
-  - biblical canon
   - epigraphy
   - Euphrates
   - Garden of Eden

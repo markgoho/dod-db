@@ -8,7 +8,6 @@ aliases:
 tags:
   - Moses
   - Quran
-  - biblical canon
   - Sodom
   - Adam
   - Book of Enoch

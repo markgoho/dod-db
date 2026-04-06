@@ -22,7 +22,6 @@ tags:
   - King James Version
   - Abraham
   - Amorites
-  - biblical canon
   - Dead Sea Scrolls
   - El
   - Hagar

@@ -26,7 +26,6 @@ tags:
   - Luke
   - Moses
   - Anatolia
-  - biblical canon
   - Clement of Alexandria
   - Constantine
   - Council of Jerusalem

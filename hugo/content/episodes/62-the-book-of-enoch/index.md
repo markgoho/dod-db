@@ -9,7 +9,6 @@ tags:
   - Enoch
   - Book of Enoch
   - Noah
-  - biblical canon
   - Eschatology
   - Methuselah
   - YHWH

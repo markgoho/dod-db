@@ -22,7 +22,6 @@ tags:
   - Trinity
   - apocalypse
   - Bart Ehrman
-  - biblical canon
   - David Burnett
   - forgery
   - Hermeneia

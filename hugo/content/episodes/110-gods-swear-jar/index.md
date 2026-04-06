@@ -13,7 +13,6 @@ tags:
   - Egyptians
   - Jeroboam
   - baptism
-  - biblical canon
   - Dead Sea Scrolls
   - Isaiah
   - King James Version

@@ -19,7 +19,6 @@ tags:
   - Goliath
   - Noah
   - Rapture
-  - biblical canon
   - Canaan
   - child sacrifice
   - Enoch

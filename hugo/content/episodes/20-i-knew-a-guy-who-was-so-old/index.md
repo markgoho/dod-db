@@ -8,7 +8,6 @@ aliases:
 tags:
   - Apocrypha
   - Flood
-  - biblical canon
   - Methuselah
   - Lamech
   - Cain

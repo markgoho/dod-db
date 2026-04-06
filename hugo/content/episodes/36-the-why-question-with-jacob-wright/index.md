@@ -30,7 +30,6 @@ tags:
   - Abraham
   - Ammonites
   - Babylon
-  - biblical canon
   - Daniel
   - David Carr
   - Gideon

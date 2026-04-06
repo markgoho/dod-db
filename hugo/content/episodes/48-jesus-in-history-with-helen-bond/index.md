@@ -21,7 +21,6 @@ tags:
   - Romans
   - apocalypse
   - Athanasius of Alexandria
-  - biblical canon
   - Holy Spirit
   - Saint Titus
   - archaeology

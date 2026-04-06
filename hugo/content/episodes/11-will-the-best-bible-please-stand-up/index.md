@@ -9,7 +9,6 @@ tags:
   - Septuagint
   - Apocrypha
   - King James Version
-  - biblical canon
   - Latin Vulgate
   - William Tyndale
   - Masoretic Text

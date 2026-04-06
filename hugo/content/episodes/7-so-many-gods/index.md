@@ -46,7 +46,6 @@ tags:
   - Septuagint
   - archaeology
   - Bethel
-  - biblical canon
   - Daniel
   - Dead Sea Scrolls
   - Edomites

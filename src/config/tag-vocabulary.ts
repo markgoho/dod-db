@@ -656,19 +656,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "scholarship",
     status: "accepted",
     episodes: [1, 8, 12],
-  },
-  {
-    canonical: "biblical canon",
-    variations: ["canonicity", "canon"],
-    category: "scholarship",
-    status: "accepted",
-    episodes: [
-      4, 5, 6, 7, 11, 20, 26, 27, 36, 39, 44, 45, 48, 50, 56, 61, 62, 70, 77,
-      79, 83, 91, 92, 98, 99, 104, 106, 107, 110, 113, 119, 124, 126, 129, 130,
-      136, 137,
-    ],
-  },
-  {
+  },  {
     canonical: "provenance",
     variations: ["provenience", "unprovenanced"],
     category: "scholarship",

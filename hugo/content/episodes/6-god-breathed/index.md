@@ -29,7 +29,6 @@ tags:
   - Quran
   - Saint Titus
   - Solomon
-  - biblical canon
   - Book of Enoch
   - Catholicism
   - Dead Sea Scrolls

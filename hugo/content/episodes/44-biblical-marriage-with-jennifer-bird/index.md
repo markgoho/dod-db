@@ -13,7 +13,6 @@ tags:
   - Univocality
   - Abraham
   - Baal
-  - biblical canon
   - Daniel
   - etiology
   - Ten Commandments

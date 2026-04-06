@@ -17,7 +17,6 @@ tags:
   - Judas Iscariot
   - King James Version
   - Paul
-  - biblical canon
   - Deutero-Isaiah
   - Egypt
   - inerrancy

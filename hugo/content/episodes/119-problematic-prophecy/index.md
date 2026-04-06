@@ -7,7 +7,6 @@ aliases:
   - /episodes/119/
 tags:
   - preterist interpretation
-  - biblical canon
   - John
   - Athanasius of Alexandria
   - apocalypse

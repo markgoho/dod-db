@@ -21,7 +21,6 @@ tags:
   - Abraham
   - Antiochus IV Epiphanes
   - Apocrypha
-  - biblical canon
   - etiology
   - Hell
   - Judah

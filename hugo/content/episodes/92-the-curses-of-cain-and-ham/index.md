@@ -29,7 +29,6 @@ tags:
   - Abel
   - Adam
   - Africa
-  - biblical canon
   - Deuteronomy
   - Egyptians
   - Eve

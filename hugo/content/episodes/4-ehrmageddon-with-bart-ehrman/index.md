@@ -8,7 +8,6 @@ aliases:
 tags:
   - Bart Ehrman
   - Rapture
-  - biblical canon
   - John of Patmos
   - Athanasius of Alexandria
   - apocalypse

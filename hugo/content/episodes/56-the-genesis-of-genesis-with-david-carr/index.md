@@ -18,7 +18,6 @@ tags:
   - Canaan
   - Eve
   - Abraham
-  - biblical canon
   - Egypt
   - forgery
   - David Carr

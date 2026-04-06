@@ -15,7 +15,6 @@ tags:
   - Satan
   - apocalypse
   - Athanasius of Alexandria
-  - biblical canon
   - Eschatology
   - Raphael
   - Catholicism

@@ -16,7 +16,6 @@ tags:
   - Sanhedrin
   - Easter
   - Bart Ehrman
-  - biblical canon
   - Galilee
   - Hell
   - Jonah

@@ -11,7 +11,6 @@ tags:
   - Trinity
   - Christian Nationalism
   - Protestantism
-  - biblical canon
   - Eschatology
   - Holy Spirit
   - Peter

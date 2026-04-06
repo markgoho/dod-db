@@ -40,7 +40,6 @@ tags:
   - Ten Commandments
   - Torah
   - apocalypse
-  - biblical canon
   - Book of Enoch
   - Candida Moss
   - Egypt

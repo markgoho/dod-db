@@ -14,7 +14,6 @@ tags:
   - Babylon
   - Cyrus the Great
   - Jerusalem
-  - biblical canon
   - Belshazzar
   - Judah
   - Nebuchadnezzar

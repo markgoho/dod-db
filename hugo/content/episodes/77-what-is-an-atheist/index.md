@@ -11,7 +11,6 @@ tags:
   - Islam
   - Deism
   - The Reformation
-  - biblical canon
   - Gnostic
   - Monotheism
   - Peter

@@ -8,7 +8,6 @@ aliases:
 tags:
   - Council of Nicaea
   - Deuteronomy
-  - biblical canon
   - Hermeneia
   - Islam
   - King James Version

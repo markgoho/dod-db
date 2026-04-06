@@ -7,7 +7,6 @@ aliases:
   - /episodes/151/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/151389925.mp3?sig=cmlAHPDVc9BpalU8WRhGadf6uyCNGqD5xdZ-vb7JSSI%3D
 tags:
-  - biblical canon
   - King James Version
   - Protestantism
   - Septuagint
