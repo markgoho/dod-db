@@ -44,7 +44,7 @@ books:
   - Romans
   - Isaiah
 guests:
-  - David Burnett
+  - David A. Burnett
 draft: false
 ---
 
