@@ -9,9 +9,9 @@ import type {
 } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
 import { isScriptureTag } from "../utils/is-scripture-tag.js";
-import { withTagVocabularyWriteLock } from "./tag-vocabulary-write-lock.js";
 import { escapeForTsString } from "./escape-for-ts-string.js";
 import { tagExists } from "./tag-exists.js";
+import { withTagVocabularyWriteLock } from "./tag-vocabulary-write-lock.js";
 
 function formatTagEntry(tag: TagDefinition): string {
   const lines = [

@@ -6,6 +6,10 @@ import { describe, expect, test } from "bun:test";
 import type { ProcessedVideo } from "../storage/processed-videos.js";
 import { generateFrontmatter } from "./generate-frontmatter.js";
 
+async function readFixture(path: string): Promise<string> {
+  return (await Bun.file(path).text()).replace(/\n$/, "");
+}
+
 describe("generateFrontmatter", () => {
   test("generates complete YAML frontmatter with all fields", async () => {
     const video: ProcessedVideo = {
@@ -25,9 +29,9 @@ describe("generateFrontmatter", () => {
     const cleanTitle = "Test Episode";
     const actual = generateFrontmatter(video, cleanTitle);
 
-    const expected = await Bun.file(
+    const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-complete.md",
-    ).text();
+    );
     expect(actual).toBe(expected);
   });
 
@@ -46,9 +50,9 @@ describe("generateFrontmatter", () => {
     const cleanTitle = "Solo Episode";
     const actual = generateFrontmatter(video, cleanTitle);
 
-    const expected = await Bun.file(
+    const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-minimal.md",
-    ).text();
+    );
     expect(actual).toBe(expected);
   });
 
@@ -66,9 +70,29 @@ describe("generateFrontmatter", () => {
     const cleanTitle = "Guest Episode";
     const actual = generateFrontmatter(video, cleanTitle);
 
-    const expected = await Bun.file(
+    const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-with-guests.md",
-    ).text();
+    );
+    expect(actual).toBe(expected);
+  });
+
+  test("canonicalizes guest aliases in frontmatter", async () => {
+    const video: ProcessedVideo = {
+      videoId: "guest789",
+      title: "Episode 19",
+      publishedAt: "2023-08-14T00:00:00Z",
+      processedAt: "2023-08-14T01:00:00Z",
+      transcriptPath: "data/transcripts/2023-08-14-episode-19.txt",
+      episodeNumber: 19,
+      speakers: ["Dan McClellan", "David Burnett", "Dan Beecher"],
+    };
+
+    const cleanTitle = "Canonical Guest Episode";
+    const actual = generateFrontmatter(video, cleanTitle);
+
+    const expected = await readFixture(
+      "src/hugo/__fixtures__/frontmatter-with-canonical-guest.md",
+    );
     expect(actual).toBe(expected);
   });
 
@@ -100,9 +124,9 @@ describe("generateFrontmatter", () => {
     const cleanTitle = "Segmented Episode";
     const actual = generateFrontmatter(video, cleanTitle);
 
-    const expected = await Bun.file(
+    const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-with-segments.md",
-    ).text();
+    );
     expect(actual).toBe(expected);
   });
 
@@ -138,9 +162,9 @@ describe("generateFrontmatter", () => {
     const cleanTitle = "Scripture Episode";
     const actual = generateFrontmatter(video, cleanTitle);
 
-    const expected = await Bun.file(
+    const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-with-books.md",
-    ).text();
+    );
     expect(actual).toBe(expected);
   });
 
@@ -159,9 +183,9 @@ describe("generateFrontmatter", () => {
     const cleanTitle = "Audio Episode";
     const actual = generateFrontmatter(video, cleanTitle);
 
-    const expected = await Bun.file(
+    const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-with-audio.md",
-    ).text();
+    );
     expect(actual).toBe(expected);
   });
 });

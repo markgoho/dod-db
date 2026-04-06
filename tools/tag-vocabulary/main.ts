@@ -1003,8 +1003,8 @@ async function approveTag(index: number): Promise<void> {
 
   const duplicateOf = card.dataset.duplicateOf;
   if (
-    duplicateOf
-    && !confirm(
+    duplicateOf &&
+    !confirm(
       `"${originalCanonical}" was flagged as possibly duplicate of "${duplicateOf}".\n\nApprove anyway as a distinct tag?`,
     )
   ) {

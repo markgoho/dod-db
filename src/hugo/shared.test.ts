@@ -3,7 +3,7 @@
  */
 
 import { describe, expect, test } from "bun:test";
-import { getGuestSpeakers } from "./get-guest-speakers.js";
+import { getGuestSpeakers, getRawGuestSpeakers } from "./get-guest-speakers.js";
 import { parseTranscriptLine } from "./parse-transcript-line.js";
 import { slugifyTitle } from "./slugify-title.js";
 
@@ -53,6 +53,18 @@ describe("getGuestSpeakers", () => {
   test("returns all speakers if no hosts present", () => {
     const speakers = ["Guest One", "Guest Two"];
     expect(getGuestSpeakers(speakers)).toEqual(["Guest One", "Guest Two"]);
+  });
+
+  test("canonicalizes known guest aliases", () => {
+    const speakers = ["Dan McClellan", "David Burnett", "Dan Beecher"];
+    expect(getGuestSpeakers(speakers)).toEqual(["David A. Burnett"]);
+  });
+});
+
+describe("getRawGuestSpeakers", () => {
+  test("preserves original guest names for path generation", () => {
+    const speakers = ["Dan McClellan", "David Burnett", "Dan Beecher"];
+    expect(getRawGuestSpeakers(speakers)).toEqual(["David Burnett"]);
   });
 });
 

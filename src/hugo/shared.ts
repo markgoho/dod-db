@@ -9,6 +9,11 @@ export const HUGO_CONTENT_DIR = "hugo/content/episodes";
 /** Regular hosts - anyone else in speakers array is a guest */
 export const HOSTS = new Set(["Dan McClellan", "Dan Beecher"]);
 
+/** Canonical guest name aliases for Hugo taxonomy/frontmatter */
+export const GUEST_NAME_ALIASES = new Map([
+  ["David Burnett", "David A. Burnett"],
+]);
+
 /** Segment types to exclude from episode pages (generic/placeholder types) */
 export const EXCLUDED_SEGMENT_TYPES = new Set<SegmentType>([
   "intro",

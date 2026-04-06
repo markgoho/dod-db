@@ -4,7 +4,7 @@
 
 import * as path from "node:path";
 import type { ProcessedVideo } from "../storage/processed-videos.js";
-import { getGuestSpeakers } from "./get-guest-speakers.js";
+import { getRawGuestSpeakers } from "./get-guest-speakers.js";
 import { HUGO_CONTENT_DIR } from "./shared.js";
 import { slugifyTitle } from "./slugify-title.js";
 
@@ -16,7 +16,7 @@ export function getEpisodeOutputPath(
   video: ProcessedVideo,
   cleanTitle: string,
 ): string {
-  const guests = getGuestSpeakers(video.speakers);
+  const guests = getRawGuestSpeakers(video.speakers);
   const titleSlug = slugifyTitle(cleanTitle);
   const guestSlug =
     guests.length > 0 ? `-with-${slugifyTitle(guests.join("-and-"))}` : "";

@@ -44,7 +44,9 @@ export async function updateTagInVocabulary(
       updates.canonical.toLowerCase() !== originalCanonical.toLowerCase() &&
       tagExists(updates.canonical)
     ) {
-      throw new Error(`Tag "${updates.canonical}" already exists in vocabulary`);
+      throw new Error(
+        `Tag "${updates.canonical}" already exists in vocabulary`,
+      );
     }
 
     // Read the existing file
