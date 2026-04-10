@@ -8,7 +8,9 @@
 {{ define "main" }}
   <section class="segment-page">
     <header class="segment-hero">
-      <a href="/segments/" class="button-brutalist segment-hero__back">← All Segments</a>
+      <a href="/segments/" class="button-brutalist segment-hero__back"
+        >← All Segments</a
+      >
       <div class="segment-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow">Segment dossier</span>
       </div>
@@ -27,9 +29,14 @@
           {{ $guests := .Params.guests | default slice }}
           <article class="episode-card">
             <a href="{{ .RelPermalink }}" class="episode-card__link">
-              <div class="episode-card__number">{{ .Params.episodeNumber }}</div>
+              <div class="episode-card__number">
+                {{ .Params.episodeNumber }}
+              </div>
               <div class="episode-card__content">
-                <p class="episode-card__eyebrow type-eyebrow">Episode {{ .Params.episodeNumber }}</p>
+                <p class="episode-card__eyebrow type-eyebrow">
+                  Episode
+                  {{ .Params.episodeNumber }}
+                </p>
                 <h2 class="episode-card__title">{{ .Title }}</h2>
                 {{ if gt (len $guests) 0 }}
                   <div class="episode-card__guest">

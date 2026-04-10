@@ -115,7 +115,10 @@
 .feature-card:hover,
 .feature-card:focus-visible {
   background: var(--teal-400);
-  transform: translate(calc(-1 * var(--space-4xs)), calc(-1 * var(--space-4xs)));
+  transform: translate(
+    calc(-1 * var(--space-4xs)),
+    calc(-1 * var(--space-4xs))
+  );
 }
 
 .feature-card__content {

@@ -1,0 +1,750 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Episode 143: SHINY HAPPY PEOPLE! | METADATA over DOGMA</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .halftone-bg {
+        background-color: #fcf9f8;
+        background-image: radial-gradient(#dcd9d8 1px, transparent 0);
+        background-size: 8px 8px;
+      }
+      .comic-border {
+        border: 4px solid #1c1b1b;
+        box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+      }
+      .slanted {
+        transform: skew(-5deg);
+      }
+      .aggressive-text {
+        text-shadow: 2px 2px 0px #ffd700;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .speech-bubble-left {
+        position: relative;
+        background: #ffffff;
+        border: 3px solid #1c1b1b;
+        border-radius: 20px;
+      }
+      .speech-bubble-left:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-right-color: #1c1b1b;
+        border-left: 0;
+        border-top: 0;
+        margin-top: -10px;
+        margin-left: -20px;
+      }
+      .speech-bubble-right {
+        position: relative;
+        background: #f0edec;
+        border: 3px solid #1c1b1b;
+        border-radius: 20px;
+      }
+      .speech-bubble-right:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-left-color: #1c1b1b;
+        border-right: 0;
+        border-top: 0;
+        margin-top: -10px;
+        margin-right: -20px;
+      }
+    </style>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#5c3f41",
+              "inverse-on-surface": "#f3f0ef",
+              "inverse-primary": "#ffb2b8",
+              error: "#ba1a1a",
+              "tertiary-fixed": "#e4e2e2",
+              "surface-container-highest": "#e5e2e1",
+              surface: "#fcf9f8",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-primary": "#ffffff",
+              "on-error": "#ffffff",
+              background: "#fcf9f8",
+              "on-secondary": "#ffffff",
+              "on-background": "#1c1b1b",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#ffdadb",
+              "on-tertiary-fixed-variant": "#464747",
+              "on-secondary-fixed": "#1c1b1b",
+              "surface-tint": "#be003d",
+              "on-secondary-container": "#656464",
+              "surface-container": "#f0edec",
+              "on-primary-fixed-variant": "#91002d",
+              "surface-bright": "#fcf9f8",
+              "secondary-fixed": "#e5e2e1",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed-variant": "#474646",
+              "tertiary-fixed-dim": "#c7c6c6",
+              "on-primary-container": "#ffd9db",
+              "on-error-container": "#93000a",
+              secondary: "#5f5e5e",
+              "secondary-container": "#e5e2e1",
+              tertiary: "#4c4c4c",
+              "primary-fixed-dim": "#ffb2b8",
+              "outline-variant": "#e4bdbf",
+              "tertiary-container": "#646464",
+              "on-tertiary-fixed": "#1b1c1c",
+              "on-surface": "#1c1b1b",
+              "surface-container-low": "#f6f3f2",
+              "primary-container": "#c90041",
+              "inverse-surface": "#313030",
+              "on-tertiary-container": "#e3e1e1",
+              "on-tertiary": "#ffffff",
+              "surface-dim": "#dcd9d8",
+              primary: "#9c0030",
+              "surface-container-high": "#ebe7e6",
+              "on-primary-fixed": "#40000f",
+              outline: "#906f71",
+              "surface-variant": "#e5e2e1",
+              "highlight-yellow": "#FFD700",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["Epilogue"],
+              body: ["Work Sans"],
+              label: ["Work Sans"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-background text-on-background font-body halftone-bg min-h-screen"
+  >
+    <!-- TopNavBar -->
+    <nav
+      class="bg-stone-200 dark:bg-zinc-900 sticky top-0 z-50 border-b-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+    >
+      <div
+        class="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto"
+      >
+        <div
+          class="text-2xl font-black italic tracking-tighter text-rose-800 dark:text-rose-500 uppercase slanted"
+        >
+          METADATA over DOGMA
+        </div>
+        <div
+          class="hidden md:flex items-center space-x-8 font-headline tracking-tighter italic uppercase"
+        >
+          <a
+            class="text-rose-700 dark:text-rose-400 border-b-2 border-black dark:border-rose-400 pb-1"
+            href="#"
+            >Episodes</a
+          >
+          <a
+            class="text-zinc-800 dark:text-zinc-300 font-bold hover:text-rose-700 hover:bg-rose-100 dark:hover:bg-zinc-800 transition-colors duration-75"
+            href="#"
+            >Guests</a
+          >
+          <a
+            class="text-zinc-800 dark:text-zinc-300 font-bold hover:text-rose-700 hover:bg-rose-100 dark:hover:bg-zinc-800 transition-colors duration-75"
+            href="#"
+            >Archives</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="relative hidden sm:block">
+            <span
+              class="absolute inset-y-0 left-0 pl-3 flex items-center text-on-surface-variant"
+            >
+              <span class="material-symbols-outlined text-sm">search</span>
+            </span>
+            <input
+              class="bg-white border-2 border-black py-1 pl-10 pr-4 text-sm focus:ring-0 focus:border-rose-700"
+              placeholder="Search Archives..."
+              type="text"
+            />
+          </div>
+          <button
+            class="material-symbols-outlined text-rose-700 dark:text-rose-500 hover:bg-rose-100 dark:hover:bg-zinc-800 p-2 active:translate-x-0.5 active:translate-y-0.5"
+          >
+            book
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="max-w-6xl mx-auto px-6 py-12">
+      <!-- Hero Section: Episode Title -->
+      <header class="mb-16 text-center">
+        <div
+          class="inline-block bg-highlight-yellow comic-border px-4 py-1 mb-6 slanted"
+        >
+          <span
+            class="font-headline font-black uppercase text-xl italic tracking-widest"
+            >Episode 143 • Dec 29, 2025</span
+          >
+        </div>
+        <h1
+          class="font-headline text-7xl md:text-9xl font-black slanted aggressive-text uppercase leading-none tracking-tighter break-words mb-8"
+        >
+          SHINY HAPPY<br />PEOPLE!
+        </h1>
+      </header>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Left Column: Audio & Segments -->
+        <div class="lg:col-span-8 space-y-12">
+          <!-- Audio Player (Wiretap Aesthetic) -->
+          <section class="comic-border bg-white p-8 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-2 opacity-20">
+              <span
+                class="material-symbols-outlined text-8xl"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >graphic_eq</span
+              >
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+              <div
+                class="w-48 h-48 comic-border bg-zinc-900 flex-shrink-0 flex items-center justify-center relative group"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="High contrast ink sketch of a biblical crowd looking up at a bright yellow sun with halftone dot textures"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxdPm4pAvQ7WHjuZP_-Cd-BX0BBbbo82yKTveeI8d74kR4cJ4VQjxPp0M6xFdM8-e-ZZiKRh2AODEqkRwqbvskqPUJA09QfuT2mYPTGiShi1RkhQgubWhaMynrqGnpQJC3HkMZDJ3J9XITna-ae-zre4qIqHI9IyIXqoz7CHp26afOip3VhxXpp_GczF-fkcT1jqRlenZjzqXwuDX8kG-6qR8btB4X-W2bM7RpNaoq-r96ZXvnng2uZcyrCeyB4pdeIvu-b649vR0U"
+                />
+                <div
+                  class="absolute inset-0 bg-highlight-yellow opacity-20 group-hover:opacity-0 transition-opacity"
+                ></div>
+              </div>
+              <div class="flex-grow w-full">
+                <h3
+                  class="font-headline font-black italic text-2xl uppercase mb-4 tracking-tight"
+                >
+                  Audio Intercept: E143
+                </h3>
+                <div class="space-y-4">
+                  <div
+                    class="w-full h-12 bg-zinc-100 border-2 border-black flex items-center px-4"
+                  >
+                    <div
+                      class="flex-grow flex items-center gap-1 overflow-hidden h-6"
+                    >
+                      <div class="w-1 bg-black h-4"></div>
+                      <div class="w-1 bg-black h-2"></div>
+                      <div class="w-1 bg-black h-5"></div>
+                      <div class="w-1 bg-black h-3"></div>
+                      <div class="w-1 bg-black h-6"></div>
+                      <div class="w-1 bg-black h-4"></div>
+                      <div class="w-1 bg-black h-2"></div>
+                      <div class="w-1 bg-black h-5"></div>
+                      <div class="w-1 bg-rose-700 h-6"></div>
+                      <div class="w-1 bg-rose-700 h-4"></div>
+                      <div class="w-1 bg-rose-700 h-2"></div>
+                      <div class="w-1 bg-rose-700 h-5"></div>
+                      <div class="w-1 bg-zinc-400 h-3"></div>
+                      <div class="w-1 bg-zinc-400 h-4"></div>
+                      <div class="w-1 bg-zinc-400 h-2"></div>
+                      <div class="w-1 bg-zinc-400 h-5"></div>
+                      <div class="w-1 bg-zinc-400 h-6"></div>
+                      <div class="w-1 bg-zinc-400 h-3"></div>
+                      <div class="w-1 bg-zinc-400 h-4"></div>
+                      <div class="w-1 bg-zinc-400 h-2"></div>
+                      <div class="w-1 bg-zinc-400 h-5"></div>
+                      <div class="w-1 bg-zinc-400 h-6"></div>
+                      <div class="w-1 bg-zinc-400 h-3"></div>
+                      <div class="w-1 bg-zinc-400 h-4"></div>
+                    </div>
+                    <span class="font-mono text-sm ml-4">03:26 / 54:12</span>
+                  </div>
+                  <div class="flex gap-4">
+                    <button
+                      class="bg-black text-white p-3 flex items-center justify-center hover:bg-rose-700 transition-colors"
+                    >
+                      <span
+                        class="material-symbols-outlined"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >play_arrow</span
+                      >
+                    </button>
+                    <button
+                      class="border-2 border-black p-3 flex items-center justify-center hover:bg-highlight-yellow transition-colors"
+                    >
+                      <span class="material-symbols-outlined">fast_rewind</span>
+                    </button>
+                    <button
+                      class="border-2 border-black p-3 flex items-center justify-center hover:bg-highlight-yellow transition-colors"
+                    >
+                      <span class="material-symbols-outlined"
+                        >fast_forward</span
+                      >
+                    </button>
+                    <button
+                      class="border-2 border-black px-4 font-black text-sm uppercase flex items-center gap-2 hover:bg-stone-100 transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-sm"
+                        >download</span
+                      >
+                      MP3 INTERCEPT
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Segment Picker -->
+          <section>
+            <h4
+              class="font-headline font-black italic text-3xl uppercase mb-8 border-b-4 border-black inline-block"
+            >
+              Analysis Segments
+            </h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div
+                class="comic-border bg-highlight-yellow p-6 hover:-translate-y-1 hover:-translate-x-1 transition-transform cursor-pointer group"
+              >
+                <div class="flex justify-between items-start mb-4">
+                  <span
+                    class="material-symbols-outlined text-4xl group-hover:scale-110 transition-transform"
+                    >question_mark</span
+                  >
+                  <span class="font-mono text-sm bg-black text-white px-2 py-1"
+                    >SEGMENT A</span
+                  >
+                </div>
+                <h5 class="font-headline font-black text-2xl uppercase mb-2">
+                  What is That?
+                </h5>
+                <p class="text-sm font-medium leading-tight">
+                  Diving into the obscure artifacts and terminology that define
+                  the biblical landscape.
+                </p>
+              </div>
+              <div
+                class="comic-border bg-white p-6 hover:-translate-y-1 hover:-translate-x-1 transition-transform cursor-pointer group"
+              >
+                <div class="flex justify-between items-start mb-4">
+                  <span
+                    class="material-symbols-outlined text-4xl group-hover:scale-110 transition-transform"
+                    >menu_book</span
+                  >
+                  <span class="font-mono text-sm bg-black text-white px-2 py-1"
+                    >SEGMENT B</span
+                  >
+                </div>
+                <h5 class="font-headline font-black text-2xl uppercase mb-2">
+                  Chapter and Verse
+                </h5>
+                <p class="text-sm font-medium leading-tight">
+                  Exegetical deep-dives into the structure and philology of the
+                  primary source texts.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Transcript Section -->
+          <section class="space-y-8">
+            <h4
+              class="font-headline font-black italic text-3xl uppercase mb-4 border-b-4 border-black inline-block"
+            >
+              The Transcript
+            </h4>
+            <div class="space-y-10">
+              <!-- Dan McClellan -->
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full comic-border bg-rose-700 flex-shrink-0 flex items-center justify-center text-white font-black"
+                >
+                  DM
+                </div>
+                <div
+                  class="speech-bubble-left p-6 max-w-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+                >
+                  <p class="text-xs font-mono mb-2 opacity-60">00:02:49</p>
+                  <p class="font-medium">
+                    Yeah. Hey everybody, I’m Dan McClellan.
+                  </p>
+                </div>
+              </div>
+              <!-- Dan Beecher -->
+              <div class="flex items-start gap-4 justify-end">
+                <div
+                  class="speech-bubble-right p-6 max-w-lg shadow-[-4px_4px_0px_0px_rgba(0,0,0,1)] bg-stone-100"
+                >
+                  <p class="text-xs font-mono mb-2 opacity-60 text-right">
+                    00:02:57
+                  </p>
+                  <p class="font-medium">And I’m Dan Beecher.</p>
+                </div>
+                <div
+                  class="w-12 h-12 rounded-full comic-border bg-zinc-800 flex-shrink-0 flex items-center justify-center text-white font-black"
+                >
+                  DB
+                </div>
+              </div>
+              <!-- Dan McClellan -->
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full comic-border bg-rose-700 flex-shrink-0 flex items-center justify-center text-white font-black"
+                >
+                  DM
+                </div>
+                <div
+                  class="speech-bubble-left p-6 max-w-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+                >
+                  <p class="text-xs font-mono mb-2 opacity-60">00:02:59</p>
+                  <p class="font-medium">
+                    And you’re listening to the Data Over Dogma podcast...
+                  </p>
+                </div>
+              </div>
+              <!-- Dan Beecher -->
+              <div class="flex items-start gap-4 justify-end">
+                <div
+                  class="speech-bubble-right p-6 max-w-lg shadow-[-4px_4px_0px_0px_rgba(0,0,0,1)] bg-stone-100"
+                >
+                  <p class="text-xs font-mono mb-2 opacity-60 text-right">
+                    00:03:11
+                  </p>
+                  <p class="font-medium">
+                    Things are good. Things are good. I am well fed...
+                  </p>
+                </div>
+                <div
+                  class="w-12 h-12 rounded-full comic-border bg-zinc-800 flex-shrink-0 flex items-center justify-center text-white font-black"
+                >
+                  DB
+                </div>
+              </div>
+              <!-- Dan McClellan -->
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full comic-border bg-rose-700 flex-shrink-0 flex items-center justify-center text-white font-black"
+                >
+                  DM
+                </div>
+                <div
+                  class="speech-bubble-left p-6 max-w-xs shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+                >
+                  <p class="text-xs font-mono mb-2 opacity-60">00:03:20</p>
+                  <p class="font-medium">All right.</p>
+                </div>
+              </div>
+              <!-- Dan Beecher -->
+              <div class="flex items-start gap-4 justify-end">
+                <div
+                  class="speech-bubble-right p-6 max-w-lg shadow-[-4px_4px_0px_0px_rgba(0,0,0,1)] bg-stone-100"
+                >
+                  <p class="text-xs font-mono mb-2 opacity-60 text-right">
+                    00:03:20
+                  </p>
+                  <p class="font-medium">
+                    So we need to see if Factor has a loaves and fishes thing.
+                  </p>
+                </div>
+                <div
+                  class="w-12 h-12 rounded-full comic-border bg-zinc-800 flex-shrink-0 flex items-center justify-center text-white font-black"
+                >
+                  DB
+                </div>
+              </div>
+              <!-- Dan McClellan -->
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-full comic-border bg-rose-700 flex-shrink-0 flex items-center justify-center text-white font-black"
+                >
+                  DM
+                </div>
+                <div
+                  class="speech-bubble-left p-6 max-w-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+                >
+                  <p class="text-xs font-mono mb-2 opacity-60">00:03:26</p>
+                  <p class="font-medium">
+                    We need to get some Ezekiel bread...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Right Column: Metadata Sidebar -->
+        <aside class="lg:col-span-4 space-y-12">
+          <!-- Scripture References -->
+          <section class="comic-border bg-white p-6 rotate-1">
+            <h4
+              class="font-headline font-black italic text-xl uppercase mb-6 bg-black text-white px-3 py-1 inline-block"
+            >
+              Scripture Index
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >Mark</span
+              >
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >Exodus</span
+              >
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >Psalms</span
+              >
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >2 Kings</span
+              >
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >Judges</span
+              >
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >Matthew</span
+              >
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >Luke</span
+              >
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >Daniel</span
+              >
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >Ezekiel</span
+              >
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >Deuteronomy</span
+              >
+              <span
+                class="bg-stone-100 border-2 border-black px-3 py-1 text-sm font-bold hover:bg-highlight-yellow cursor-default"
+                >John</span
+              >
+            </div>
+          </section>
+          <!-- Semantic Tags -->
+          <section class="comic-border bg-stone-200 p-6 -rotate-1 halftone-bg">
+            <h4
+              class="font-headline font-black italic text-xl uppercase mb-6 bg-rose-800 text-white px-3 py-1 inline-block"
+            >
+              Terminology
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Elijah</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Moses</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Peter</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >John the Baptist</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Sea of Galilee</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Passover</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Galilee</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >James</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >John</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Nazareth</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >baptism</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Capernaum</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Easter</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Eschatology</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Herod Antipas</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Jerusalem</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Mount Sinai</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Syria</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >archaeology</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Baal</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Daniel</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Deuteronomy</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >El</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Garden of Gethsemane</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Judaism</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Samson</span
+              >
+              <span
+                class="text-xs font-black uppercase text-zinc-600 bg-white border border-black px-2 py-1"
+                >Textus Receptus</span
+              >
+            </div>
+          </section>
+          <!-- Classified/Ad space -->
+          <div class="comic-border p-1 bg-black">
+            <div class="bg-white p-4 flex flex-col items-center text-center">
+              <p class="font-headline font-black uppercase italic text-sm mb-2">
+                Classified Data
+              </p>
+              <img
+                class="w-full h-40 object-cover border-2 border-black mb-4"
+                data-alt="Close up of an old dusty book with leather binding and silver lettering in a dark study setting"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpABvpGebs-i9kOa6ZDI2Hncj6MWYn2eEd6ssq1ozOyCfaPyLpx-kE71yUi4Ccep9YVDmfP4u9o5mpXpEFr5mppPr7X5b5HRqan2o0HHmMyNzPkWWfDkldjZ1cz8Fwlc4BWZK0BYSXtNwS4w6fw8SOxPpGnu-j0N4S0Q5WcrAR4tFAKGXmgR-3MA7RVs36z8D392HOf58Mk7GhqPdyo_lvpQup15VXvVxHcmbkd5wf0HwykDDjh7phhFwewcG7tr5OW5GKdveeRwYG"
+              />
+              <p class="text-xs font-bold leading-tight">
+                Access the full scholarly corpus through our peer-reviewed
+                digital archives.
+              </p>
+              <button
+                class="mt-4 w-full bg-rose-700 text-white font-black py-2 uppercase text-xs tracking-widest hover:bg-black transition-colors"
+              >
+                Apply for Access
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-zinc-100 dark:bg-zinc-950 border-t-4 border-black dark:border-white"
+    >
+      <div
+        class="w-full py-12 px-6 flex flex-col md:flex-row justify-between items-center gap-8 max-w-screen-2xl mx-auto"
+      >
+        <div class="font-['Epilogue'] text-xs tracking-tight">
+          <p class="font-bold text-zinc-900 dark:text-white mb-2">
+            METADATA over DOGMA
+          </p>
+          <p class="text-zinc-600 dark:text-zinc-400">
+            © METADATA over DOGMA. Scholarly disclaimers apply. All rights
+            reserved.
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap justify-center gap-6 font-['Epilogue'] text-xs tracking-tight"
+        >
+          <a
+            class="text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white underline transition-all"
+            href="#"
+            >Academic Resources</a
+          >
+          <a
+            class="text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white underline transition-all"
+            href="#"
+            >Institutional Access</a
+          >
+          <a
+            class="text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white underline transition-all"
+            href="#"
+            >Citation Guide</a
+          >
+          <a
+            class="text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white underline transition-all"
+            href="#"
+            >Contact</a
+          >
+        </div>
+        <div class="flex gap-4">
+          <span class="material-symbols-outlined text-zinc-400">rss_feed</span>
+          <span class="material-symbols-outlined text-zinc-400">podcasts</span>
+          <span class="material-symbols-outlined text-zinc-400">share</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

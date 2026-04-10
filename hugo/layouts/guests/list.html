@@ -29,7 +29,9 @@
 
     {{ if $multipleAppearances }}
       <section class="guests-section">
-        <h2 class="type-section-title guests-section__title">Frequent Guests</h2>
+        <h2 class="type-section-title guests-section__title">
+          Frequent Guests
+        </h2>
         <div class="guests-cloud">
           {{ range $multipleAppearances }}
             <a
@@ -45,7 +47,9 @@
 
     {{ if $singleAppearance }}
       <section class="guests-section guests-section--secondary">
-        <h2 class="type-section-title guests-section__title">Guest Appearances</h2>
+        <h2 class="type-section-title guests-section__title">
+          Guest Appearances
+        </h2>
         <div class="guests-cloud">
           {{ range $singleAppearance }}
             <a href="{{ .Page.RelPermalink }}" class="guest-pill">

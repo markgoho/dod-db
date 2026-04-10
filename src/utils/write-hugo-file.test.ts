@@ -7,8 +7,10 @@ import { writeHugoFile } from "./write-hugo-file.js";
 
 describe("writeHugoFile", () => {
   test("preserves frontmatter formatting and date when rewriting parsed frontmatter", async () => {
-    const tempDir = await mkdtemp(path.join(tmpdir(), "write-hugo-file-"));
-    const filePath = path.join(tempDir, "index.md");
+    const temporaryDirectory = await mkdtemp(
+      path.join(tmpdir(), "write-hugo-file-"),
+    );
+    const filePath = path.join(temporaryDirectory, "index.md");
     const original = `---
 title: Test Episode
 date: 2024-01-15T10:00:00.000Z
@@ -53,7 +55,7 @@ Body content.
       expect(rewritten).toBe(expected);
       expect(rewritten).not.toContain("date:\n  {}");
     } finally {
-      await rm(tempDir, { recursive: true, force: true });
+      await rm(temporaryDirectory, { recursive: true, force: true });
     }
   });
 });

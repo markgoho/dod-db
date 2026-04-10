@@ -8,7 +8,8 @@
 .navbar {
   background: color-mix(in srgb, var(--tan-200) 92%, transparent);
   border-block-end: var(--border-width-md) solid var(--tan-900);
-  box-shadow: 0 var(--space-4xs) 0 color-mix(in srgb, var(--tan-900) 18%, transparent);
+  box-shadow: 0 var(--space-4xs) 0
+    color-mix(in srgb, var(--tan-900) 18%, transparent);
 }
 
 .navbar__inner {
@@ -97,7 +98,8 @@
 }
 
 .navbar__cta {
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 color-mix(in srgb, var(--tan-900) 14%, transparent);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0
+    color-mix(in srgb, var(--tan-900) 14%, transparent);
 }
 
 @container header (width > 60rem) {

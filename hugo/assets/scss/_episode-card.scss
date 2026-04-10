@@ -1,6 +1,9 @@
 .episode-card:hover .episode-card__link {
   background: var(--teal-400);
-  transform: translate(calc(-1 * var(--space-4xs)), calc(-1 * var(--space-4xs)));
+  transform: translate(
+    calc(-1 * var(--space-4xs)),
+    calc(-1 * var(--space-4xs))
+  );
 }
 
 .episode-card:hover .episode-card__arrow {
@@ -11,7 +14,8 @@
   align-items: center;
   background: var(--tan-000);
   border: var(--border-width-md) solid var(--tan-900);
-  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
+    var(--tan-900);
   color: var(--color-text-main);
   display: grid;
   gap: var(--space-s);

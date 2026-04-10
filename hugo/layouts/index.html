@@ -9,6 +9,7 @@
   {{ $episodes := where .Site.RegularPages "Type" "episodes" }}
   {{ $recentEpisodes := first 3 $episodes }}
 
+
   <section class="home-page">
     <section class="home-hero panel">
       <div class="home-hero__eyebrow panel panel--accent">
@@ -17,7 +18,9 @@
 
       <div class="home-hero__content">
         <h1 class="home-hero__title">Metadata over Dogma</h1>
-        <p class="home-hero__subtitle">An unofficial companion guide to the Data Over Dogma Podcast</p>
+        <p class="home-hero__subtitle">
+          An unofficial companion guide to the Data Over Dogma Podcast
+        </p>
         <p class="home-hero__tagline">
           Increasing public access to the metadata, transcripts, references, and
           scholarly context surrounding the academic study of the Bible and
@@ -35,7 +38,9 @@
           <div class="stat-card__label">Topics</div>
         </a>
         <a href="/segments/" class="stat-card panel">
-          <div class="stat-card__number">{{ len .Site.Taxonomies.segments }}</div>
+          <div class="stat-card__number">
+            {{ len .Site.Taxonomies.segments }}
+          </div>
           <div class="stat-card__label">Segments</div>
         </a>
         <a href="/guests/" class="stat-card panel">
@@ -60,7 +65,8 @@
           <div class="feature-card__content">
             <h2 class="feature-card__title">Browse Episodes</h2>
             <p class="feature-card__description">
-              Explore all companion guide entries for podcast episodes with full transcripts and timestamps.
+              Explore all companion guide entries for podcast episodes with full
+              transcripts and timestamps.
             </p>
             <span class="feature-card__arrow">→</span>
           </div>
@@ -70,8 +76,8 @@
           <div class="feature-card__content">
             <h2 class="feature-card__title">Browse by Topic</h2>
             <p class="feature-card__description">
-              Find episodes by biblical characters, places, theological concepts,
-              and more.
+              Find episodes by biblical characters, places, theological
+              concepts, and more.
             </p>
             <span class="feature-card__arrow">→</span>
           </div>
@@ -104,7 +110,9 @@
     {{ if $recentEpisodes }}
       <section class="recent-episodes panel">
         <div class="recent-episodes__header">
-          <h2 class="type-section-title recent-episodes__title">Recent Episodes</h2>
+          <h2 class="type-section-title recent-episodes__title">
+            Recent Episodes
+          </h2>
           <a href="/episodes/" class="button-brutalist">Browse archive</a>
         </div>
         <div class="recent-episodes__grid">
@@ -112,9 +120,14 @@
             {{ $guests := .Params.guests | default slice }}
             <article class="episode-card">
               <a href="{{ .RelPermalink }}" class="episode-card__link">
-                <div class="episode-card__number">{{ .Params.episodeNumber }}</div>
+                <div class="episode-card__number">
+                  {{ .Params.episodeNumber }}
+                </div>
                 <div class="episode-card__content">
-                  <p class="episode-card__eyebrow type-eyebrow">Episode {{ .Params.episodeNumber }}</p>
+                  <p class="episode-card__eyebrow type-eyebrow">
+                    Episode
+                    {{ .Params.episodeNumber }}
+                  </p>
                   <h3 class="episode-card__title">{{ .Title }}</h3>
                   {{ if gt (len $guests) 0 }}
                     <div class="episode-card__guest">

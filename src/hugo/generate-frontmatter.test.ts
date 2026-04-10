@@ -7,7 +7,10 @@ import type { ProcessedVideo } from "../storage/processed-videos.js";
 import { generateFrontmatter } from "./generate-frontmatter.js";
 
 async function readFixture(path: string): Promise<string> {
-  return (await Bun.file(path).text()).replace(/\n$/, "");
+  const fixture = Bun.file(path);
+  const contents = await fixture.text();
+
+  return contents.replace(/\n$/, "");
 }
 
 describe("generateFrontmatter", () => {

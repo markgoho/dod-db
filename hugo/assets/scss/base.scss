@@ -54,12 +54,19 @@ body {
 
 body::before {
   background-color: var(--tan-100);
-  background-image: radial-gradient(circle, var(--tan-300) 0, var(--tan-300) 1px, transparent 1px);
-  background-size: var(--space-2xs) var(--space-2xs);
+  background-image: radial-gradient(
+    circle,
+    var(--tan-300) 0,
+    var(--tan-300) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 10px 10px;
   content: "";
-  inset: 0;
+  inset: -10%;
   pointer-events: none;
   position: fixed;
+  transform: rotate(-2deg);
+  transform-origin: center;
   z-index: -1;
 }
 
@@ -140,7 +147,8 @@ textarea:not([rows]) {
   background: var(--tan-000);
   border: var(--border-width-md) solid var(--tan-900);
   border-radius: var(--border-radius-sm);
-  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
+    var(--tan-900);
 }
 
 .panel--muted {
@@ -289,7 +297,8 @@ textarea:not([rows]) {
   align-items: center;
   background: var(--tan-000);
   border: var(--border-width-md) solid var(--tan-900);
-  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
+    var(--tan-900);
   color: var(--color-text-main);
   display: inline-flex;
   gap: var(--space-xs);

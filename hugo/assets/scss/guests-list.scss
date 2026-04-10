@@ -63,7 +63,8 @@
   align-items: center;
   background: var(--tan-000);
   border: var(--border-width-md) solid var(--tan-900);
-  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
+    var(--tan-900);
   color: var(--color-text-main);
   display: inline-flex;
   gap: var(--space-xs);

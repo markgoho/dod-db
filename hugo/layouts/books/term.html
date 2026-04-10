@@ -27,9 +27,14 @@
           {{ $guests := .Params.guests | default slice }}
           <article class="episode-card">
             <a href="{{ .RelPermalink }}" class="episode-card__link">
-              <div class="episode-card__number">{{ .Params.episodeNumber }}</div>
+              <div class="episode-card__number">
+                {{ .Params.episodeNumber }}
+              </div>
               <div class="episode-card__content">
-                <p class="episode-card__eyebrow type-eyebrow">Episode {{ .Params.episodeNumber }}</p>
+                <p class="episode-card__eyebrow type-eyebrow">
+                  Episode
+                  {{ .Params.episodeNumber }}
+                </p>
                 <h2 class="episode-card__title">{{ .Title }}</h2>
                 {{ if gt (len $guests) 0 }}
                   <div class="episode-card__guest">

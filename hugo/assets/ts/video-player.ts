@@ -68,6 +68,7 @@ declare global {
 // Constants
 const STORAGE_KEY = "dod-transcript-auto-scroll";
 const POLL_INTERVAL_MS = 250;
+const AUDIO_SPEEDS = [1, 1.25, 1.5, 1.75, 2] as const;
 
 // Module state
 type TranscriptLine = {
@@ -249,8 +250,11 @@ function handleInitialHash(): void {
     element.classList.add("active");
   }
 
-  // Handle segments - scroll sidebar into view
-  if (element.classList.contains("segment-chip")) {
+  // Handle segments - scroll card into view
+  if (
+    element.classList.contains("segment-chip") ||
+    element.classList.contains("episode-segment-card")
+  ) {
     element.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
@@ -560,6 +564,144 @@ function handleTranscriptScroll(): void {
   state.lastManualScrollTime = Date.now();
 }
 
+function formatPlaybackTime(seconds: number): string {
+  if (!Number.isFinite(seconds) || seconds < 0) {
+    return "--:--";
+  }
+
+  const totalSeconds = Math.floor(seconds);
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const remainingSeconds = totalSeconds % 60;
+
+  if (hours > 0) {
+    return `${hours}:${minutes.toString().padStart(2, "0")}:${remainingSeconds
+      .toString()
+      .padStart(2, "0")}`;
+  }
+
+  return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
+}
+
+function updateAudioPlayerProgress(
+  scrubber: HTMLInputElement,
+  currentTime: number,
+  duration: number,
+): void {
+  const safeCurrentTime = Number.isFinite(currentTime) ? currentTime : 0;
+  const safeDuration = Number.isFinite(duration) && duration > 0 ? duration : 0;
+  const progress =
+    safeDuration > 0 ? `${(safeCurrentTime / safeDuration) * 100}%` : "0%";
+
+  scrubber.value = String(safeCurrentTime);
+  scrubber.style.setProperty("--audio-progress", progress);
+  scrubber.setAttribute(
+    "aria-valuetext",
+    `${formatPlaybackTime(safeCurrentTime)} of ${formatPlaybackTime(safeDuration)}`,
+  );
+}
+
+function initAudioPlayerChrome(audioElement: HTMLAudioElement): void {
+  const playButton = document.querySelector<HTMLButtonElement>(
+    ".audio-player__play",
+  );
+  const playText = document.querySelector<HTMLElement>(
+    ".audio-player__play-text",
+  );
+  const scrubber = document.querySelector<HTMLInputElement>(
+    ".audio-player__scrubber",
+  );
+  const currentTime = document.querySelector<HTMLElement>(
+    ".audio-player__current-time",
+  );
+  const duration = document.querySelector<HTMLElement>(
+    ".audio-player__duration",
+  );
+  const speedButton = document.querySelector<HTMLButtonElement>(
+    ".audio-player__speed",
+  );
+
+  if (
+    !playButton ||
+    !playText ||
+    !scrubber ||
+    !currentTime ||
+    !duration ||
+    !speedButton
+  ) {
+    return;
+  }
+
+  const updatePlayState = (): void => {
+    const isPlaying = !audioElement.paused;
+    playButton.setAttribute("aria-pressed", String(isPlaying));
+    playButton.setAttribute(
+      "aria-label",
+      isPlaying ? "Pause episode" : "Play episode",
+    );
+    playText.textContent = isPlaying ? "Pause" : "Play";
+  };
+
+  const updateTimeState = (): void => {
+    currentTime.textContent = formatPlaybackTime(audioElement.currentTime);
+    duration.textContent = formatPlaybackTime(audioElement.duration);
+    updateAudioPlayerProgress(
+      scrubber,
+      audioElement.currentTime,
+      audioElement.duration,
+    );
+  };
+
+  const updateSpeedState = (): void => {
+    speedButton.textContent = `${audioElement.playbackRate}×`;
+  };
+
+  playButton.addEventListener("click", () => {
+    if (audioElement.paused) {
+      void audioElement.play().catch((error: unknown) => {
+        console.error("Failed to play audio:", error);
+      });
+      return;
+    }
+
+    audioElement.pause();
+  });
+
+  scrubber.addEventListener("input", () => {
+    audioElement.currentTime = Number(scrubber.value);
+    updateTimeState();
+  });
+
+  speedButton.addEventListener("click", () => {
+    const currentIndex = AUDIO_SPEEDS.indexOf(
+      audioElement.playbackRate as (typeof AUDIO_SPEEDS)[number],
+    );
+    const nextIndex = currentIndex === -1 ? 1 : currentIndex + 1;
+    const nextRate = AUDIO_SPEEDS[nextIndex % AUDIO_SPEEDS.length];
+    if (nextRate === undefined) {
+      return;
+    }
+
+    audioElement.playbackRate = nextRate;
+    updateSpeedState();
+  });
+
+  audioElement.addEventListener("loadedmetadata", () => {
+    scrubber.max = String(audioElement.duration);
+    updateTimeState();
+  });
+  audioElement.addEventListener("durationchange", updateTimeState);
+  audioElement.addEventListener("timeupdate", updateTimeState);
+  audioElement.addEventListener("play", updatePlayState);
+  audioElement.addEventListener("pause", updatePlayState);
+  audioElement.addEventListener("ratechange", updateSpeedState);
+  audioElement.addEventListener("ended", updatePlayState);
+
+  updatePlayState();
+  updateTimeState();
+  updateSpeedState();
+}
+
 /**
  * Initialize the video player and transcript sync.
  */
@@ -580,6 +722,10 @@ function init(): void {
   }
 
   state.audioElement = audioElement ?? undefined;
+
+  if (audioElement) {
+    initAudioPlayerChrome(audioElement);
+  }
 
   // Build line index
   state.lines = buildLineIndex();
@@ -622,11 +768,12 @@ function init(): void {
     line.element.addEventListener("click", handleLineClick);
   }
 
-  // Handle segment chip clicks
-  const segmentChips =
-    document.querySelectorAll<HTMLButtonElement>(".segment-chip");
-  for (const chip of segmentChips) {
-    chip.addEventListener("click", handleSegmentClick);
+  // Handle segment clicks
+  const segmentLinks = document.querySelectorAll<HTMLAnchorElement>(
+    ".segment-chip, .episode-segment-card",
+  );
+  for (const segmentLink of segmentLinks) {
+    segmentLink.addEventListener("click", handleSegmentClick);
   }
 
   // Detect manual scroll in transcript
