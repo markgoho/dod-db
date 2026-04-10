@@ -27,24 +27,17 @@
 
     <div class="episode-layout">
       <section class="episode-primary">
-        <section class="episode-media panel">
+        <section
+          class="episode-media {{ if not .Params.audioUrl }}panel{{ end }}">
           <div class="episode-media__body">
             {{ if .Params.audioUrl }}
-              <div class="episode-media__artwork">
-                <div class="episode-media__artwork-inner">
-                  <span class="episode-media__artwork-label type-eyebrow"
-                    >Episode audio</span
-                  >
-                </div>
-              </div>
               <div class="episode-media__details audio-player">
-                <p class="episode-media__label type-eyebrow">
-                  Episode audio:
-                  E{{ .Params.episodeNumber }}
-                </p>
                 <div class="audio-player__shell">
                   <div class="audio-player__header">
-                    <span class="audio-player__title">Playback deck</span>
+                    <span class="audio-player__title"
+                      >Episode {{ .Params.episodeNumber }} •
+                      {{ .Date.Format "Jan 2, 2006" }}</span
+                    >
                     <button
                       class="audio-player__speed"
                       type="button"
@@ -59,16 +52,23 @@
                       type="button"
                       aria-label="Play episode {{ .Params.episodeNumber }}"
                       aria-pressed="false">
-                      <span
-                        class="audio-player__play-icon"
-                        aria-hidden="true"></span>
+                      <span class="audio-player__play-icon" aria-hidden="true"
+                        ><span class="audio-player__pause-bars"></span
+                      ></span>
                       <span class="audio-player__play-text">Play</span>
                     </button>
                     <div class="audio-player__transport">
-                      <label class="audio-player__scrubber-label">
+                      <div class="audio-player__meta-row">
                         <span class="audio-player__scrubber-text type-eyebrow"
                           >Timeline</span
                         >
+                        <div class="audio-player__time" aria-live="off">
+                          <span class="audio-player__current-time">0:00</span>
+                          <span aria-hidden="true">/</span>
+                          <span class="audio-player__duration">--:--</span>
+                        </div>
+                      </div>
+                      <label class="audio-player__scrubber-label">
                         <input
                           class="audio-player__scrubber"
                           type="range"
@@ -78,11 +78,6 @@
                           value="0"
                           aria-label="Seek through episode" />
                       </label>
-                      <div class="audio-player__time" aria-live="off">
-                        <span class="audio-player__current-time">0:00</span>
-                        <span aria-hidden="true">/</span>
-                        <span class="audio-player__duration">--:--</span>
-                      </div>
                     </div>
                   </div>
                 </div>
