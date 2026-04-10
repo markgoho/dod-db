@@ -24,7 +24,7 @@
 }
 
 .home-hero__kicker {
-  color: var(--olive-500);
+  color: var(--color-action);
   margin: 0;
 }
 
@@ -46,7 +46,7 @@
 
 .home-hero__tagline {
   margin: 0;
-  max-width: 42rem;
+  max-width: var(--content-max-width-prose);
 }
 
 .home-hero__stats {
@@ -69,7 +69,7 @@
 
 .stat-card:hover,
 .stat-card:focus-visible {
-  background: var(--teal-400);
+  background: var(--color-accent);
 }
 
 .stat-card__number {
@@ -114,7 +114,7 @@
 
 .feature-card:hover,
 .feature-card:focus-visible {
-  background: var(--teal-400);
+  background: var(--color-accent);
   transform: translate(
     calc(-1 * var(--space-4xs)),
     calc(-1 * var(--space-4xs))
@@ -135,7 +135,7 @@
 }
 
 .feature-card__arrow {
-  color: var(--olive-500);
+  color: var(--color-action);
   font-family: var(--font-family-display);
   font-size: var(--step-2);
   font-style: italic;
@@ -168,7 +168,10 @@
 @media (width > 60rem) {
   .home-hero {
     align-items: start;
-    grid-template-columns: minmax(0, 2fr) minmax(16rem, 1fr);
+    grid-template-columns: minmax(0, 2fr) minmax(
+        var(--content-max-width-sidebar),
+        1fr
+      );
   }
 
   .home-hero__stats {

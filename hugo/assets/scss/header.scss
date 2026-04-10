@@ -2,7 +2,7 @@
   container: header / inline-size;
   inset-block-start: 0;
   position: sticky;
-  z-index: 20;
+  z-index: var(--z-index-sticky);
 }
 
 .navbar {
@@ -29,7 +29,7 @@
 }
 
 .navbar__logo-mark {
-  color: var(--olive-500);
+  color: var(--color-action);
   font-family: var(--font-family-display);
   font-size: var(--step-2);
   font-style: italic;
@@ -79,7 +79,7 @@
 
 .navbar__link:hover,
 .navbar__link:focus-visible {
-  color: var(--olive-500);
+  color: var(--color-action);
 }
 
 .navbar__tools {

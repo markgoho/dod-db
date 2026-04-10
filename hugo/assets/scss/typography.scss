@@ -28,7 +28,7 @@
   --color-text-main: var(--tan-900);
   --color-text-muted: var(--tan-500);
   --color-text-inverse: var(--tan-000);
-  --color-link: var(--olive-500);
+  --color-link: var(--color-action);
 
   --step--2: clamp(0.8889rem, 0.8747rem + 0.0711vw, 0.96rem);
   --step--1: clamp(1rem, 0.96rem + 0.2vw, 1.2rem);
@@ -110,7 +110,7 @@ p {
 }
 
 a {
-  transition: color 0.2s;
+  transition: color var(--duration-fast) var(--ease-standard);
   color: var(--color-link);
 }
 

@@ -10,7 +10,7 @@ paths:
 ### Colors
 
 ❌ FORBIDDEN: `#fff`, `white`, `black`, `rgb()`, `rgba()`, hex codes
-✅ REQUIRED: `--tan-000`, `--tan-900`, `--brown-*`, `--olive-*`, `--teal-*`, `color-mix(in srgb, var(--tan-000) X%, transparent)`
+✅ REQUIRED: `--tan-000`, `--tan-900`, `--brown-*`, `--rust-*`, `--amber-*`, `--color-action`, `--color-accent`, `--color-accent-muted`, `color-mix(in srgb, var(--tan-000) X%, transparent)`
 
 ### Spacing (padding, margin, gap)
 

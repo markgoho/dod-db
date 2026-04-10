@@ -47,7 +47,7 @@ ol[role="list"] {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  line-height: 1.5;
+  line-height: var(--line-height-relaxed);
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
@@ -67,7 +67,7 @@ body::before {
   position: fixed;
   transform: rotate(-2deg);
   transform-origin: center;
-  z-index: -1;
+  z-index: var(--z-index-background);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -78,7 +78,7 @@ h4,
 button,
 input,
 label {
-  line-height: 1.1;
+  line-height: var(--line-height-heading);
 }
 
 /* Balance text wrapping on headings */
@@ -156,7 +156,7 @@ textarea:not([rows]) {
 }
 
 .panel--accent {
-  background: var(--teal-400);
+  background: var(--color-accent);
 }
 
 .chip-list {
@@ -183,7 +183,7 @@ textarea:not([rows]) {
 
 .chip:hover,
 .chip:focus-visible {
-  background: var(--teal-400);
+  background: var(--color-accent);
 }
 
 .button-brutalist {
@@ -206,7 +206,7 @@ textarea:not([rows]) {
 
 .button-brutalist:hover,
 .button-brutalist:focus-visible {
-  background: var(--olive-500);
+  background: var(--color-action);
   color: var(--color-text-inverse);
 }
 
@@ -229,7 +229,7 @@ textarea:not([rows]) {
 
 .page-hero__description {
   margin: 0;
-  max-width: 42rem;
+  max-width: var(--content-max-width-prose);
   padding: var(--space-s) var(--space-m);
 }
 
@@ -309,7 +309,7 @@ textarea:not([rows]) {
 
 .token-pill:hover,
 .token-pill:focus-visible {
-  background: var(--teal-400);
+  background: var(--color-accent);
 }
 
 .token-pill__name {

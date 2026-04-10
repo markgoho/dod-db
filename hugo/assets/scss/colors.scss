@@ -10,13 +10,13 @@
   --brown-700: hsl(8, 18%, 11%);
   --brown-800: hsl(10, 18%, 8%);
 
-  --olive-100: hsl(34, 24%, 96%);
-  --olive-200: hsl(28, 20%, 90%);
-  --olive-300: hsl(22, 18%, 80%);
-  --olive-400: hsl(8, 34%, 46%);
-  --olive-500: hsl(10, 60%, 31%);
-  --olive-600: hsl(8, 69%, 24%);
-  --olive-700: hsl(8, 71%, 14%);
+  --rust-100: hsl(34, 24%, 96%);
+  --rust-200: hsl(28, 20%, 90%);
+  --rust-300: hsl(22, 18%, 80%);
+  --rust-400: hsl(8, 34%, 46%);
+  --rust-500: hsl(10, 60%, 31%);
+  --rust-600: hsl(8, 69%, 24%);
+  --rust-700: hsl(8, 71%, 14%);
 
   --tan-000: hsl(24, 45%, 98%);
   --tan-100: hsl(20, 36%, 96%);
@@ -34,10 +34,21 @@
   --gray-600: hsl(0, 0%, 27%);
   --gray-700: hsl(0, 0%, 12%);
 
-  --teal-300: hsl(47, 100%, 70%);
-  --teal-400: hsl(47, 100%, 58%);
-  --teal-500: hsl(47, 100%, 50%);
-  --teal-600: hsl(44, 100%, 42%);
+  --amber-300: hsl(47, 100%, 70%);
+  --amber-400: hsl(47, 100%, 58%);
+  --amber-500: hsl(47, 100%, 50%);
+  --amber-600: hsl(44, 100%, 42%);
+
+  --color-action: var(--rust-500);
+  --color-accent: var(--amber-400);
+  --color-accent-muted: var(--amber-300);
+
+  --duration-fast: 200ms;
+  --ease-standard: ease;
+
+  --z-index-background: -1;
+  --z-index-toast: 10;
+  --z-index-sticky: 20;
 
   --light-bg: linear-gradient(180deg, var(--tan-100) 0%, var(--tan-200) 100%);
   --dark-bg: linear-gradient(180deg, var(--tan-600) 0%, var(--tan-700) 100%);
@@ -56,13 +67,13 @@
     --brown-700: oklch(0.191 0.0203 27.63);
     --brown-800: oklch(0.1514 0.0187 28.95);
 
-    --olive-100: oklch(0.9747 0.0086 62.57);
-    --olive-200: oklch(0.926 0.0127 58.58);
-    --olive-300: oklch(0.8498 0.0169 47.74);
-    --olive-400: oklch(0.5637 0.1274 27.96);
-    --olive-500: oklch(0.4312 0.1555 28.37);
-    --olive-600: oklch(0.3503 0.1363 27.37);
-    --olive-700: oklch(0.2402 0.0892 26.33);
+    --rust-100: oklch(0.9747 0.0086 62.57);
+    --rust-200: oklch(0.926 0.0127 58.58);
+    --rust-300: oklch(0.8498 0.0169 47.74);
+    --rust-400: oklch(0.5637 0.1274 27.96);
+    --rust-500: oklch(0.4312 0.1555 28.37);
+    --rust-600: oklch(0.3503 0.1363 27.37);
+    --rust-700: oklch(0.2402 0.0892 26.33);
 
     --tan-000: oklch(0.9896 0.0055 52.23);
     --tan-100: oklch(0.9709 0.0099 46.28);
@@ -80,9 +91,9 @@
     --gray-600: oklch(0.3742 0 0);
     --gray-700: oklch(0.2146 0 0);
 
-    --teal-300: oklch(0.8781 0.1651 94.35);
-    --teal-400: oklch(0.8108 0.1738 91.54);
-    --teal-500: oklch(0.7447 0.1775 89.8);
-    --teal-600: oklch(0.6719 0.1575 85.3);
+    --amber-300: oklch(0.8781 0.1651 94.35);
+    --amber-400: oklch(0.8108 0.1738 91.54);
+    --amber-500: oklch(0.7447 0.1775 89.8);
+    --amber-600: oklch(0.6719 0.1575 85.3);
   }
 }

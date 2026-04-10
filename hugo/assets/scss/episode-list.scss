@@ -23,7 +23,7 @@
 }
 
 .episodes-hero__description {
-  max-width: 48rem;
+  max-width: var(--content-max-width-copy);
   padding: var(--space-s) var(--space-m);
 }
 

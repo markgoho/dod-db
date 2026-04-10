@@ -1,5 +1,5 @@
 .episode-card:hover .episode-card__link {
-  background: var(--teal-400);
+  background: var(--color-accent);
   transform: translate(
     calc(-1 * var(--space-4xs)),
     calc(-1 * var(--space-4xs))
@@ -98,7 +98,7 @@
 }
 
 .episode-card__arrow {
-  color: var(--olive-500);
+  color: var(--color-action);
   font-family: var(--font-family-display);
   font-size: var(--step-2);
   font-style: italic;

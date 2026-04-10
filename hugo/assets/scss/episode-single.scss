@@ -18,7 +18,7 @@
 
 .episode-hero__title {
   margin: 0;
-  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--teal-400);
+  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
   text-wrap: pretty;
 }
 
@@ -57,9 +57,9 @@
   background: var(--tan-900);
   border: var(--border-width-md) solid var(--tan-900);
   box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
-    var(--teal-400);
+    var(--color-accent);
   display: grid;
-  max-width: 16rem;
+  max-width: var(--content-max-width-sidebar);
   place-self: center;
   width: 100%;
 }
@@ -73,7 +73,7 @@
       color-mix(in srgb, var(--tan-000) 12%, transparent) 1px,
       transparent 1px
     ),
-    var(--olive-500);
+    var(--color-action);
   background-size: var(--space-2xs) var(--space-2xs);
   display: grid;
   padding: var(--space-s);
@@ -106,8 +106,8 @@
 .audio-player__shell {
   background: linear-gradient(
     to bottom,
-    color-mix(in srgb, var(--tan-000) 90%, var(--olive-500)),
-    color-mix(in srgb, var(--tan-000) 96%, var(--teal-400))
+    color-mix(in srgb, var(--tan-000) 90%, var(--color-action)),
+    color-mix(in srgb, var(--tan-000) 96%, var(--color-accent))
   );
   border: var(--border-width-md) solid var(--tan-900);
   box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
@@ -161,10 +161,10 @@
 .audio-player__play {
   align-items: center;
   align-self: stretch;
-  background: color-mix(in srgb, var(--tan-000) 30%, var(--olive-500));
+  background: color-mix(in srgb, var(--tan-000) 30%, var(--color-action));
   border: var(--border-width-md) solid var(--tan-900);
   box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
-    color-mix(in srgb, var(--olive-500) 55%, var(--tan-900));
+    color-mix(in srgb, var(--color-action) 55%, var(--tan-900));
   color: var(--color-text-main);
   cursor: pointer;
   display: inline-flex;
@@ -197,16 +197,15 @@
 }
 
 .audio-player__play[aria-pressed="true"] .audio-player__pause-bars {
-  background:
-    linear-gradient(
-      to right,
-      var(--tan-900) 0,
-      var(--tan-900) calc(50% - var(--space-4xs)),
-      transparent calc(50% - var(--space-4xs)),
-      transparent calc(50% + var(--space-4xs)),
-      var(--tan-900) calc(50% + var(--space-4xs)),
-      var(--tan-900) 100%
-    );
+  background: linear-gradient(
+    to right,
+    var(--tan-900) 0,
+    var(--tan-900) calc(50% - var(--space-4xs)),
+    transparent calc(50% - var(--space-4xs)),
+    transparent calc(50% + var(--space-4xs)),
+    var(--tan-900) calc(50% + var(--space-4xs)),
+    var(--tan-900) 100%
+  );
   block-size: var(--space-s);
   display: block;
   inline-size: calc(var(--space-xs) + var(--space-2xs));
@@ -260,8 +259,8 @@
   background:
     linear-gradient(
       to right,
-      var(--teal-400) 0,
-      var(--teal-400) var(--audio-progress),
+      var(--color-accent) 0,
+      var(--color-accent) var(--audio-progress),
       color-mix(in srgb, var(--tan-000) 24%, var(--tan-900))
         var(--audio-progress),
       color-mix(in srgb, var(--tan-000) 24%, var(--tan-900)) 100%
@@ -285,7 +284,7 @@
   background: var(--tan-900);
   block-size: calc(var(--space-s) + var(--space-2xs));
   border: 0;
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--teal-400);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
   inline-size: var(--space-s);
 }
 
@@ -293,7 +292,7 @@
   background: var(--tan-900);
   block-size: calc(var(--space-s) + var(--space-2xs));
   border: 0;
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--teal-400);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
   inline-size: var(--space-s);
 }
 
@@ -312,7 +311,7 @@
 .audio-player__play:focus-visible,
 .audio-player__scrubber:focus-visible,
 .audio-player__speed:focus-visible {
-  outline: var(--border-width-sm) solid var(--olive-500);
+  outline: var(--border-width-sm) solid var(--color-action);
   outline-offset: var(--space-4xs);
 }
 
@@ -321,7 +320,7 @@
   border: var(--border-width-sm) solid var(--tan-000);
   bottom: var(--space-l);
   box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
-    var(--teal-400);
+    var(--color-accent);
   color: var(--color-text-inverse);
   font-family: var(--font-family-display);
   font-size: var(--step--1);
@@ -337,9 +336,9 @@
   text-transform: uppercase;
   transform: translateY(var(--space-xs));
   transition:
-    opacity 200ms ease,
-    transform 200ms ease;
-  z-index: 10;
+    opacity var(--duration-fast) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard);
+  z-index: var(--z-index-toast);
 }
 
 .copy-toast.show {
@@ -455,7 +454,7 @@
 }
 
 .auto-scroll-toggle input[type="checkbox"]:checked + .toggle-switch {
-  background: var(--teal-400);
+  background: var(--color-accent);
 }
 
 .auto-scroll-toggle input[type="checkbox"]:checked + .toggle-switch::after {
@@ -463,7 +462,7 @@
 }
 
 .auto-scroll-toggle input[type="checkbox"]:focus-visible + .toggle-switch {
-  outline: var(--border-width-sm) solid var(--olive-500);
+  outline: var(--border-width-sm) solid var(--color-action);
   outline-offset: var(--space-4xs);
 }
 
@@ -489,14 +488,14 @@
 
 .transcript-line:hover,
 .transcript-line.active {
-  background: color-mix(in srgb, var(--teal-300) 28%, var(--tan-000));
+  background: color-mix(in srgb, var(--color-accent-muted) 28%, var(--tan-000));
   margin-inline: calc(-1 * var(--space-xs));
   padding-inline: var(--space-xs);
 }
 
 .speaker-name {
   align-items: center;
-  background: var(--olive-500);
+  background: var(--color-action);
   border: var(--border-width-sm) solid var(--tan-900);
   color: var(--color-text-inverse);
   display: inline-flex;
@@ -533,7 +532,7 @@
 }
 
 .scripture-reference {
-  color: var(--olive-500);
+  color: var(--color-action);
   font-weight: var(--font-weight-bold);
   text-decoration-thickness: var(--border-width-sm);
   text-underline-offset: var(--space-4xs);
@@ -574,11 +573,16 @@
 @media (width > 70rem) {
   .episode-layout {
     align-items: start;
-    grid-template-columns: minmax(0, 2fr) minmax(18rem, 1fr);
+    grid-template-columns: minmax(0, 2fr) minmax(
+        var(--content-min-width-sidebar),
+        1fr
+      );
   }
 
   .episode-media.panel .episode-media__body {
-    grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr);
+    grid-template-columns:
+      minmax(12rem, var(--content-max-width-sidebar))
+      minmax(0, 1fr);
   }
 
   .episode-segments__grid {

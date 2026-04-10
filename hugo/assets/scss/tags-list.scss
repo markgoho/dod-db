@@ -31,7 +31,7 @@
 .tags-hero__description,
 .page-hero__description {
   margin: 0;
-  max-width: 42rem;
+  max-width: var(--content-max-width-prose);
   padding: var(--space-s) var(--space-m);
 }
 
@@ -65,7 +65,7 @@
 .tag-pill:focus-visible,
 .token-pill:hover,
 .token-pill:focus-visible {
-  background: var(--teal-400);
+  background: var(--color-accent);
 }
 
 .tag-pill__name,
