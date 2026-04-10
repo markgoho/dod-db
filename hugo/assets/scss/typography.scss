@@ -7,23 +7,28 @@
   font-variation-settings: "slnt" 0;
 }
 
-// Import serif font for headers
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Work+Sans:wght@400;500;600;700&display=swap");
 
-// Typography Design Tokens (already present)
 :root {
-  /* Typography */
-  --font-family-main: "Geologica", sans-serif;
-  --font-serif: "EB Garamond", Georgia, serif;
+  --font-family-main: "Work Sans", sans-serif;
+  --font-family-display: "Epilogue", sans-serif;
+  --font-serif: "Epilogue", sans-serif;
   --font-weight-boldest: 900;
   --font-weight-bold: 700;
   --font-weight-semibold: 600;
   --font-weight-regular: 400;
-  --font-weight-light: 300;
+  --font-weight-light: 400;
 
-  --line-height-tight: 1.25em;
-  --line-height-relaxed: 1.5em;
-  --color-text-main: var(--olive-500);
+  --line-height-tight: 1.05;
+  --line-height-heading: 1.1;
+  --line-height-relaxed: 1.5;
+  --letter-spacing-tight: -0.08em;
+  --letter-spacing-heading: -0.04em;
+  --letter-spacing-wide: 0.08em;
+  --color-text-main: var(--tan-900);
+  --color-text-muted: var(--tan-500);
+  --color-text-inverse: var(--tan-000);
+  --color-link: var(--olive-500);
 
   --step--2: clamp(0.8889rem, 0.8747rem + 0.0711vw, 0.96rem);
   --step--1: clamp(1rem, 0.96rem + 0.2vw, 1.2rem);
@@ -35,16 +40,14 @@
   --step-5: clamp(2.0273rem, 1.5172rem + 2.5504vw, 4.5776rem);
   --step-6: clamp(2.2807rem, 1.5924rem + 3.4413vw, 5.722rem);
 
-  /* Decorative utility font sizes for large background elements */
   --font-decorative-md: clamp(8rem, 15vw, 12rem);
   --font-decorative-lg: clamp(10rem, 25vw, 18rem);
 }
 
-// Global Typography Styles
 body {
   font-family: var(--font-family-main);
   font-size: var(--step-0);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
   line-height: var(--line-height-relaxed);
   color: var(--color-text-main);
   background: var(--light-bg);
@@ -56,26 +59,35 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family-main);
+  font-family: var(--font-family-display);
   font-weight: var(--font-weight-boldest);
-  line-height: var(--line-height-tight);
+  font-style: italic;
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
   color: var(--color-text-main);
-  margin-block-end: 0.5em;
+  margin-block-end: var(--space-xs);
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: var(--step-6);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
   text-wrap: balance;
 }
+
 h2 {
   font-size: var(--step-3);
 }
+
 h3 {
   font-size: var(--step-2);
 }
+
 h4 {
   font-size: var(--step-1);
 }
+
 h5,
 h6 {
   font-size: var(--step-0);
@@ -90,7 +102,7 @@ dd {
 }
 
 p {
-  margin-block-start: 0.75em;
+  margin-block-start: var(--space-2xs);
 
   > a {
     text-decoration-line: underline;
@@ -99,12 +111,32 @@ p {
 
 a {
   transition: color 0.2s;
-  color: var(--color-text-main);
+  color: var(--color-link);
 }
 
 main h1 {
-  text-align: center;
   margin-block-start: var(--space-xl);
+}
+
+.type-eyebrow {
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+.type-section-title {
+  display: inline-block;
+  border-block-end: var(--border-width-md) solid var(--tan-900);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  margin-block-end: var(--space-s);
+  text-transform: uppercase;
 }
 
 .highlight {

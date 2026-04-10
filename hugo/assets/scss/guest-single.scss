@@ -1,130 +1,65 @@
-// ============================================
-// Individual Guest Page (Term)
-// ============================================
-// Uses blue color scheme to differentiate from segments (teal) and tags (olive)
-
-// Import episode card component
 @use "episode-card";
 
-main.container {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: var(--space-2xl) var(--space-m) var(--space-3xl);
+.guest-page {
+  display: grid;
+  gap: var(--space-2xl);
 }
 
-// Guest Header
-.guest-header {
+.guest-hero,
+.page-hero {
+  align-items: center;
+  display: grid;
+  gap: var(--space-s);
+  justify-items: center;
   text-align: center;
-  margin-bottom: var(--space-3xl);
-  position: relative;
 }
 
-.guest-header__back {
-  display: inline-flex;
+.guest-hero__back,
+.term-page__back {
+  justify-self: start;
+}
+
+.guest-hero__eyebrow,
+.page-hero__eyebrow {
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
+}
+
+.guest-hero__title,
+.page-hero__title {
+  margin: 0;
+}
+
+.guest-hero__meta,
+.page-hero__meta {
   align-items: center;
-  gap: var(--space-2xs);
-  padding: var(--space-2xs) var(--space-s);
-  margin-bottom: var(--space-l);
-  font-size: var(--step--1);
-  font-weight: 600;
-  color: var(--teal-500);
-  text-decoration: none;
-  background: var(--tan-100);
-  border: var(--border-width-sm) solid var(--teal-300);
-  border-radius: 2rem;
-  transition: all 0.2s ease;
-
-  &:hover {
-    background: var(--teal-400);
-    color: var(--tan-000);
-
-    .guest-header__back-arrow {
-      transform: translateX(calc(-1 * var(--space-3xs)));
-    }
-  }
-}
-
-.guest-header__back-arrow {
-  transition: transform 0.2s ease;
-}
-
-.guest-header__back-text {
-  letter-spacing: 0.02em;
-}
-
-.guest-header__title {
-  font-family: var(--font-serif);
-  font-size: var(--step-6);
-  font-weight: 800;
-  color: var(--olive-600);
-  margin: 0 0 var(--space-l) 0;
-  position: relative;
-  padding-bottom: var(--space-m);
-  text-wrap: balance;
-
-  // Decorative underline - blue
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: clamp(var(--space-xl), 40%, var(--space-3xl));
-    height: var(--border-radius-sm);
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      var(--teal-400) 50%,
-      transparent 100%
-    );
-  }
-}
-
-.guest-header__meta {
   display: inline-flex;
-  gap: var(--space-m);
-}
-
-.guest-header__stat {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: var(--space-4xs);
   padding: var(--space-s) var(--space-l);
-  background: color-mix(in srgb, var(--tan-000) 60%, transparent);
-  backdrop-filter: blur(10px);
-  border: var(--border-width-sm) solid var(--teal-300);
-  border-radius: var(--border-radius-sm);
-  box-shadow: 0 var(--space-2xs) var(--space-s)
-    color-mix(in srgb, var(--tan-900) 5%, transparent);
 }
 
-.guest-header__stat-number {
-  font-family: var(--font-serif);
-  font-size: var(--step-3);
-  font-weight: 700;
-  color: var(--teal-500);
+.guest-hero__stat-number,
+.page-hero__stat-number {
+  font-family: var(--font-family-display);
+  font-size: var(--step-4);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
 }
 
-.guest-header__stat-label {
+.guest-hero__stat-label,
+.page-hero__stat-label {
+  color: var(--color-text-muted);
   font-size: var(--step--1);
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
   text-transform: uppercase;
-  color: var(--teal-600);
 }
 
-// Episodes section
-.guest-episodes {
-  // Container for the grid
-}
-
-// Episodes grid (same as episode-list)
-.episodes-grid {
+.guest-episodes .episodes-grid,
+.term-page__episodes-grid {
   display: grid;
   gap: var(--space-l);
-
-  @media (min-width: 60rem) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
-  }
 }

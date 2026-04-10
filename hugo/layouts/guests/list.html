@@ -6,11 +6,16 @@
 {{ end }}
 
 {{ define "main" }}
-  <div class="guests-page">
-    <h1 class="guests-page__title">Guests</h1>
-    <p class="guests-page__description">
-      {{ len .Data.Terms }} guest speakers across all episodes
-    </p>
+  <section class="guests-page">
+    <header class="guests-hero">
+      <div class="guests-hero__eyebrow panel panel--accent">
+        <span class="type-eyebrow">Guest archive</span>
+      </div>
+      <h1 class="guests-hero__title">Guests</h1>
+      <p class="guests-hero__description panel panel--muted">
+        {{ len .Data.Terms }} guest speakers across all episodes
+      </p>
+    </header>
 
     {{ $multipleAppearances := slice }}
     {{ $singleAppearance := slice }}
@@ -23,33 +28,33 @@
     {{ end }}
 
     {{ if $multipleAppearances }}
-      <div class="guests-section">
-        <h2 class="guests-section__title">Frequent Guests</h2>
+      <section class="guests-section">
+        <h2 class="type-section-title guests-section__title">Frequent Guests</h2>
         <div class="guests-cloud">
           {{ range $multipleAppearances }}
             <a
               href="{{ .Page.RelPermalink }}"
               class="guest-pill guest-pill--featured">
-              {{ .Page.Title }}
+              <span class="guest-pill__name">{{ .Page.Title }}</span>
               <span class="guest-pill__count">{{ .Count }}</span>
             </a>
           {{ end }}
         </div>
-      </div>
+      </section>
     {{ end }}
 
     {{ if $singleAppearance }}
-      <div class="guests-section guests-section--secondary">
-        <h2 class="guests-section__title">Guest Appearances</h2>
+      <section class="guests-section guests-section--secondary">
+        <h2 class="type-section-title guests-section__title">Guest Appearances</h2>
         <div class="guests-cloud">
           {{ range $singleAppearance }}
             <a href="{{ .Page.RelPermalink }}" class="guest-pill">
-              {{ .Page.Title }}
+              <span class="guest-pill__name">{{ .Page.Title }}</span>
               <span class="guest-pill__count">{{ .Count }}</span>
             </a>
           {{ end }}
         </div>
-      </div>
+      </section>
     {{ end }}
-  </div>
+  </section>
 {{ end }}

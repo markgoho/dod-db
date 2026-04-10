@@ -6,19 +6,24 @@
 {{ end }}
 
 {{ define "main" }}
-  <div class="tags-page">
-    <h1 class="tags-page__title">Topics</h1>
-    <p class="tags-page__description">
-      {{ len .Data.Terms }} topics across all episodes
-    </p>
+  <section class="tags-page">
+    <header class="tags-hero">
+      <div class="tags-hero__eyebrow panel panel--accent">
+        <span class="type-eyebrow">Topic index</span>
+      </div>
+      <h1 class="tags-hero__title">Topics</h1>
+      <p class="tags-hero__description panel panel--muted">
+        {{ len .Data.Terms }} topics across all episodes
+      </p>
+    </header>
 
     <div class="tags-cloud">
       {{ range .Data.Terms.Alphabetical }}
         <a href="{{ .Page.RelPermalink }}" class="tag-pill">
-          {{ .Page.Title }}
+          <span class="tag-pill__name">{{ .Page.Title }}</span>
           <span class="tag-pill__count">{{ .Count }}</span>
         </a>
       {{ end }}
     </div>
-  </div>
+  </section>
 {{ end }}

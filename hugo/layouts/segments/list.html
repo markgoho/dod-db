@@ -6,19 +6,24 @@
 {{ end }}
 
 {{ define "main" }}
-  <div class="segments-page">
-    <h1 class="segments-page__title">Segments</h1>
-    <p class="segments-page__description">
-      {{ len .Data.Terms }} recurring segment types across all episodes
-    </p>
+  <section class="segments-page">
+    <header class="segments-hero">
+      <div class="segments-hero__eyebrow panel panel--accent">
+        <span class="type-eyebrow">Segment index</span>
+      </div>
+      <h1 class="segments-hero__title">Segments</h1>
+      <p class="segments-hero__description panel panel--muted">
+        {{ len .Data.Terms }} recurring segment types across all episodes
+      </p>
+    </header>
 
     <div class="segments-cloud">
-      {{ range .Data.Terms.Alphabetical }}
+      {{ range .Data.Terms.ByCount }}
         <a href="{{ .Page.RelPermalink }}" class="segment-pill">
-          {{ .Page.Title }}
+          <span class="segment-pill__name">{{ .Page.Title }}</span>
           <span class="segment-pill__count">{{ .Count }}</span>
         </a>
       {{ end }}
     </div>
-  </div>
+  </section>
 {{ end }}

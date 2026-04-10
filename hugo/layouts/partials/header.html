@@ -1,15 +1,21 @@
-<nav class="navbar">
-  <a class="navbar__logo" href="/">
-    <img
-      src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2152669595/settings_images/ba0cce-f0f1-d8-ff0f-00033ad3d421_D_D.png"
-      alt="Data Over Dogma"
-      class="navbar__logo-img" />
-  </a>
-  <ul class="navbar__nav">
-    {{ range .Site.Menus.main }}
-      <li class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">
-        <a href="{{ .URL }}" class="navbar__link">{{ .Name }}</a>
-      </li>
-    {{ end }}
-  </ul>
+<nav class="navbar" aria-label="Primary navigation">
+  <div class="navbar__inner container container--wide">
+    <a class="navbar__logo" href="/">
+      <span class="navbar__logo-mark">Metadata over Dogma</span>
+      <span class="navbar__logo-subtitle">Unofficial companion archive</span>
+    </a>
+
+    <ul class="navbar__nav">
+      {{ range .Site.Menus.main }}
+        <li class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">
+          <a href="{{ .URL }}" class="navbar__link">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+
+    <div class="navbar__tools" aria-label="Archive utilities">
+      <span class="navbar__search-label">Search archives</span>
+      <a class="button-brutalist navbar__cta" href="/episodes/">Browse episodes</a>
+    </div>
+  </div>
 </nav>

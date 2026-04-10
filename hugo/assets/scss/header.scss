@@ -1,122 +1,115 @@
 .header {
   container: header / inline-size;
+  inset-block-start: 0;
+  position: sticky;
+  z-index: 20;
 }
 
 .navbar {
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  grid-template-areas: "logo search cta" "nav nav nav";
+  background: color-mix(in srgb, var(--tan-200) 92%, transparent);
+  border-block-end: var(--border-width-md) solid var(--tan-900);
+  box-shadow: 0 var(--space-4xs) 0 color-mix(in srgb, var(--tan-900) 18%, transparent);
+}
+
+.navbar__inner {
   align-items: center;
-  background: var(--tan-300);
-  padding: var(--space-xs);
-  column-gap: var(--space-xs);
-  row-gap: var(--space-xs);
+  display: grid;
+  gap: var(--space-s);
+  padding-block: var(--space-s);
 }
 
 .navbar__logo {
-  grid-area: logo;
+  color: var(--color-text-main);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4xs);
+  justify-self: start;
   text-decoration: none;
 }
 
-.navbar__logo h2 {
-  color: var(--color-text-main);
-  margin: 0;
+.navbar__logo-mark {
+  color: var(--olive-500);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+  text-transform: uppercase;
 }
 
-.navbar__logo-img {
-  height: clamp(2.5rem, 4vw, 3.5rem);
-  width: auto;
-  object-fit: contain;
+.navbar__logo-subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
 }
 
 .navbar__nav {
-  grid-area: nav;
+  align-items: center;
   display: flex;
-  gap: var(--space-l);
-  justify-self: center;
+  flex-wrap: wrap;
+  gap: var(--space-s);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar__search {
-  grid-area: search;
-  display: grid;
-  place-content: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  color: var(--color-text-main);
-  transition: color 0.2s;
-  justify-self: end;
-  padding: 0;
-
-  &:hover {
-    color: var(--olive-600);
-  }
-
-  .search-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+.navbar__nav > li {
+  border-block-end: var(--border-width-sm) solid transparent;
+  padding-block-end: var(--space-4xs);
 }
 
-.navbar__search-text {
-  display: none;
-}
-
-.navbar__search-icon {
-  display: grid;
-  place-content: center;
-}
-
-.navbar__cta {
-  grid-area: cta;
-  justify-self: end;
-  max-width: max-content;
+.navbar__nav > .active {
+  border-block-end-color: var(--tan-900);
 }
 
 .navbar__link {
   color: var(--color-text-main);
-  text-decoration: none;
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
   font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.navbar__nav > li {
-  border-bottom: var(--border-width-md) solid transparent;
+.navbar__link:hover,
+.navbar__link:focus-visible {
+  color: var(--olive-500);
 }
 
-.navbar__nav > .active {
-  border-bottom-color: var(--olive-500);
+.navbar__tools {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
 }
 
-@container header (min-width: 60rem) {
-  .navbar {
-    grid-template-columns: max-content 1fr max-content max-content;
-    grid-template-areas: "logo nav search cta";
-    grid-template-rows: auto;
-    padding: var(--space-s) var(--space-m);
-    column-gap: var(--space-l);
+.navbar__search-label {
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+.navbar__cta {
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 color-mix(in srgb, var(--tan-900) 14%, transparent);
+}
+
+@container header (width > 60rem) {
+  .navbar__inner {
+    grid-template-columns: max-content 1fr max-content;
   }
 
   .navbar__nav {
-    justify-self: end;
-  }
-
-  .navbar__search {
     justify-self: center;
-    width: auto;
-    height: auto;
-    padding: var(--space-xs) var(--space-s);
-    display: flex;
-    align-items: center;
-    gap: var(--space-2xs);
   }
 
-  .navbar__search-text {
-    display: inline;
-  }
-
-  .navbar__search-icon {
-    display: none;
+  .navbar__tools {
+    justify-self: end;
   }
 }

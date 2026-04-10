@@ -1,40 +1,50 @@
-<div class="footer__main">
-  <div class="footer__brand">
-    <div class="footer__brand-title">Data Over Dogma</div>
-    <p class="footer__inclusion">
-      Increasing public access to the academic study of the Bible and religion
-      and combating the spread of misinformation.
-    </p>
+<div class="footer__inner container container--wide">
+  <div class="footer__main panel panel--muted">
+    <div class="footer__brand">
+      <p class="type-eyebrow footer__eyebrow">Scholarly archive</p>
+      <div class="footer__brand-title">Metadata over Dogma</div>
+      <p class="footer__inclusion">
+        Increasing public access to the metadata, transcripts, references, and
+        scholarly context surrounding the academic study of the Bible and
+        religion.
+      </p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <div class="footer__col">
+        <h2 class="footer__col-title">Browse</h2>
+        <ul class="footer__links">
+          <li><a href="/episodes/">Episodes</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/books/">Books</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__col-title">Popular Tags</h2>
+        <ul class="footer__links">
+          {{ range first 3 .Site.Taxonomies.tags.ByCount }}
+            <li>
+              <a href="{{ .Page.RelPermalink }}"
+                >{{ .Page.Title }} ({{ .Count }})</a
+              >
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__col-title">About</h2>
+        <ul class="footer__links">
+          <li><a href="/about/">About this project</a></li>
+          <li><a href="/guests/">Guests</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
-  <nav class="footer__nav" aria-label="Footer navigation">
-    <div class="footer__col">
-      <h2 class="footer__col-title">Browse</h2>
-      <ul class="footer__links">
-        <li><a href="/episodes/">Episodes</a></li>
-        <li><a href="/tags/">Tags</a></li>
-      </ul>
-    </div>
-    <div class="footer__col">
-      <h2 class="footer__col-title">Popular Tags</h2>
-      <ul class="footer__links">
-        {{ range first 3 .Site.Taxonomies.tags.ByCount }}
-          <li>
-            <a href="{{ .Page.RelPermalink }}"
-              >{{ .Page.Title }} ({{ .Count }})</a
-            >
-          </li>
-        {{ end }}
-      </ul>
-    </div>
-    <div class="footer__col">
-      <h2 class="footer__col-title">About</h2>
-      <ul class="footer__links">
-        <li><a href="/about/">About this project</a></li>
-      </ul>
-      {{/* Social icons removed for bare-bones setup */}}
-    </div>
-  </nav>
-</div>
-<div class="footer__bottom">
-  <div class="footer__copyright">&copy; {{ now.Year }} Data Over Dogma</div>
+
+  <div class="footer__bottom">
+    <div class="footer__copyright">&copy; {{ now.Year }} Metadata over Dogma</div>
+    <div class="footer__meta">Unofficial fan-made site</div>
+  </div>
 </div>

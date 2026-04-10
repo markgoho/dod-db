@@ -1,158 +1,93 @@
-// ============================================
-// Individual Segment Page (Term)
-// ============================================
-
-// Import episode card component
 @use "episode-card";
 
-main.container {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: var(--space-2xl) var(--space-m) var(--space-3xl);
+.segment-page {
+  display: grid;
+  gap: var(--space-2xl);
 }
 
-// Segment Header
-.segment-header {
+.segment-hero,
+.page-hero {
+  align-items: center;
+  display: grid;
+  gap: var(--space-s);
+  justify-items: center;
   text-align: center;
-  margin-bottom: var(--space-3xl);
-  position: relative;
 }
 
-.segment-header__back {
-  display: inline-flex;
+.segment-hero__back,
+.term-page__back {
+  justify-self: start;
+}
+
+.segment-hero__eyebrow,
+.page-hero__eyebrow {
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
+}
+
+.segment-hero__title,
+.page-hero__title {
+  margin: 0;
+}
+
+.segment-hero__meta,
+.page-hero__meta {
   align-items: center;
-  gap: var(--space-2xs);
-  padding: var(--space-2xs) var(--space-s);
-  margin-bottom: var(--space-l);
-  font-size: var(--step--1);
-  font-weight: 600;
-  color: var(--teal-500);
-  text-decoration: none;
-  background: var(--teal-100);
-  border: var(--border-width-sm) solid var(--teal-300);
-  border-radius: 2rem;
-  transition: all 0.2s ease;
-
-  &:hover {
-    background: var(--teal-400);
-    color: var(--tan-000);
-
-    .segment-header__back-arrow {
-      transform: translateX(-0.25rem);
-    }
-  }
-}
-
-.segment-header__back-arrow {
-  transition: transform 0.2s ease;
-}
-
-.segment-header__back-text {
-  letter-spacing: 0.02em;
-}
-
-.segment-header__title {
-  font-family: var(--font-serif);
-  font-size: var(--step-6);
-  font-weight: 800;
-  color: var(--olive-600);
-  margin: 0 0 var(--space-l) 0;
-  position: relative;
-  padding-bottom: var(--space-m);
-  text-wrap: balance;
-
-  // Decorative underline - teal
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: clamp(4rem, 40%, 10rem);
-    height: 3px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      var(--teal-400) 50%,
-      transparent 100%
-    );
-  }
-}
-
-.segment-header__meta {
   display: inline-flex;
-  gap: var(--space-m);
-}
-
-.segment-header__stat {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: var(--space-4xs);
   padding: var(--space-s) var(--space-l);
-  background: color-mix(in srgb, var(--tan-000) 60%, transparent);
-  backdrop-filter: blur(10px);
-  border: var(--border-width-sm) solid var(--teal-300);
-  border-radius: var(--border-radius-sm);
-  box-shadow: 0 0.5rem 1rem color-mix(in srgb, var(--tan-900) 5%, transparent);
 }
 
-.segment-header__stat-number {
-  font-family: var(--font-serif);
-  font-size: var(--step-3);
-  font-weight: 700;
-  color: var(--teal-500);
+.segment-hero__stat-number,
+.page-hero__stat-number {
+  font-family: var(--font-family-display);
+  font-size: var(--step-4);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
 }
 
-.segment-header__stat-label {
+.segment-hero__stat-label,
+.page-hero__stat-label {
+  color: var(--color-text-muted);
   font-size: var(--step--1);
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
   text-transform: uppercase;
-  color: var(--teal-600);
 }
 
-// Episodes section
-.segment-episodes {
-  // Container for the grid
-}
-
-// Episodes grid (same as episode-list)
-.episodes-grid {
+.segment-episodes .episodes-grid,
+.term-page__episodes-grid {
   display: grid;
   gap: var(--space-l);
-
-  @media (min-width: 60rem) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
-  }
 }
 
-// Episode card segments display
 .episode-card__segments {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3xs);
-  margin-top: var(--space-2xs);
+}
+
+.episode-card__segment,
+.episode-card__segment-more {
+  align-items: center;
+  border: var(--border-width-sm) solid var(--tan-900);
+  display: inline-flex;
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-bold);
+  min-block-size: calc(var(--space-s) + var(--space-2xs));
+  padding-inline: var(--space-2xs);
+  text-transform: uppercase;
 }
 
 .episode-card__segment {
-  padding: var(--space-4xs) var(--space-3xs);
-  font-size: var(--step--2);
-  font-weight: 500;
-  background: var(--teal-100);
-  color: var(--teal-600);
-  border-radius: var(--border-radius-sm);
+  background: var(--tan-000);
 }
 
-// Current segment highlight within episode cards
-.episode-card__segment--current {
-  background: var(--teal-500);
-  color: var(--tan-000);
-}
-
+.episode-card__segment--current,
 .episode-card__segment-more {
-  padding: var(--space-4xs) var(--space-3xs);
-  font-size: var(--step--2);
-  font-weight: 500;
-  color: var(--teal-500);
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
 }

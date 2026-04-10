@@ -1,83 +1,119 @@
-// ============================================
-// Books List Page - Scripture References
-// ============================================
-
 .books-page {
-  max-width: 60rem;
-  margin: 0 auto;
+  display: grid;
+  gap: var(--space-2xl);
+  justify-items: center;
+}
+
+.books-hero,
+.page-hero {
+  align-items: center;
+  display: grid;
+  gap: var(--space-s);
+  justify-items: center;
   text-align: center;
 }
 
-.books-page__title {
-  font-family: var(--font-serif);
-  font-size: var(--step-5);
-  font-weight: 800;
-  color: var(--teal-600);
-  margin: 0 0 var(--space-s) 0;
+.books-hero {
+  width: 100%;
 }
 
-.books-page__description {
-  font-size: var(--step-0);
-  color: var(--brown-450);
-  margin: 0 0 var(--space-xl) 0;
+.books-hero__eyebrow,
+.page-hero__eyebrow {
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
 }
 
-// Testament sections
-.books-section {
-  margin-bottom: var(--space-2xl);
+.books-hero__title,
+.page-hero__title {
+  margin: 0;
 }
 
-.books-section__title {
-  font-family: var(--font-serif);
-  font-size: var(--step-2);
-  font-weight: 700;
-  color: var(--brown-500);
-  margin: 0 0 var(--space-m) 0;
-  padding-bottom: var(--space-xs);
-  border-bottom: var(--border-width-sm) solid var(--brown-300);
+.books-hero__description,
+.page-hero__description {
+  margin: 0;
+  max-width: 42rem;
+  padding: var(--space-s) var(--space-m);
 }
 
-// Book cloud
-.books-cloud {
+.books-section,
+.cloud-section {
+  display: grid;
+  gap: var(--space-s);
+}
+
+.books-section__title,
+.cloud-section__title {
+  justify-self: start;
+  margin: 0;
+}
+
+.books-cloud,
+.token-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2xs);
+  gap: var(--space-s);
+}
+
+.books-cloud {
   justify-content: center;
 }
 
-.book-pill {
-  display: inline-flex;
+.book-pill,
+.token-pill {
   align-items: center;
-  gap: var(--space-3xs);
-  padding: var(--space-3xs) var(--space-2xs);
-  font-size: var(--step--1);
-  font-weight: 600;
-  background: var(--teal-100);
-  color: var(--teal-700);
+  background: var(--tan-000);
+  border: var(--border-width-md) solid var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
+  color: var(--color-text-main);
+  display: inline-flex;
+  gap: var(--space-xs);
+  min-block-size: calc(var(--space-xl) + var(--space-2xs));
+  padding-inline: var(--space-s);
   text-decoration: none;
-  border-radius: var(--border-radius-sm);
-  transition: all 0.2s ease;
-
-  &:hover {
-    background: var(--teal-600);
-    color: var(--tan-000);
-
-    .book-pill__count {
-      background: color-mix(in srgb, var(--tan-000) 20%, transparent);
-      color: var(--tan-000);
-    }
-  }
 }
 
-.book-pill__count {
-  font-family: var(--font-serif);
-  font-size: var(--step--2);
-  font-weight: 700;
-  color: var(--teal-700);
-  background: var(--teal-200);
-  padding: var(--space-4xs) var(--space-3xs);
-  border-radius: var(--border-radius-md);
-  min-width: 1.5rem;
-  text-align: center;
-  transition: all 0.2s ease;
+.book-pill:hover,
+.book-pill:focus-visible,
+.token-pill:hover,
+.token-pill:focus-visible {
+  background: var(--teal-400);
+}
+
+.book-pill--empty,
+.book-pill--empty:hover,
+.book-pill--empty:focus-visible {
+  background: var(--tan-200);
+  border-color: var(--tan-400);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-400);
+  color: var(--color-text-muted);
+  cursor: default;
+}
+
+.book-pill--empty .book-pill__count {
+  background: var(--tan-400);
+  color: var(--tan-000);
+}
+
+.book-pill__name,
+.token-pill__name {
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+.book-pill__count,
+.token-pill__count {
+  align-items: center;
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+  display: inline-flex;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  justify-content: center;
+  min-block-size: calc(var(--space-s) + var(--space-2xs));
+  min-inline-size: calc(var(--space-s) + var(--space-2xs));
+  padding-inline: var(--space-2xs);
 }

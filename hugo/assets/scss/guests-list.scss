@@ -1,267 +1,108 @@
-// ============================================
-// Guests List Page - Modern Manuscript Aesthetic
-// ============================================
-// Sophisticated scholarly design with teal accents
-
-// Page container with manuscript texture
 .guests-page {
-  position: relative;
-  max-width: 70rem;
-  margin: 0 auto;
-  padding: var(--space-xl) var(--space-m) var(--space-2xl);
+  display: grid;
+  gap: var(--space-2xl);
+  justify-items: center;
+}
+
+.guests-hero,
+.page-hero {
+  align-items: center;
+  display: grid;
+  gap: var(--space-s);
+  justify-items: center;
   text-align: center;
-
-  // Subtle parchment texture
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-      repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 2px,
-        color-mix(in srgb, var(--tan-900) 0.8%, transparent) 2px,
-        color-mix(in srgb, var(--tan-900) 0.8%, transparent) 4px
-      ),
-      repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 2px,
-        color-mix(in srgb, var(--tan-900) 0.8%, transparent) 2px,
-        color-mix(in srgb, var(--tan-900) 0.8%, transparent) 4px
-      );
-    pointer-events: none;
-    opacity: 0.6;
-    z-index: 0;
-  }
 }
 
-// Title with ornamental underline
-.guests-page__title {
-  position: relative;
-  font-family: var(--font-serif);
-  font-size: var(--step-6);
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--olive-600);
-  margin: 0 0 var(--space-xs) 0;
-  padding-bottom: var(--space-s);
-  letter-spacing: -0.02em;
-  z-index: 1;
-  text-wrap: balance;
-
-  // Ornamental divider
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: clamp(8rem, 30%, 15rem);
-    height: 3px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      var(--teal-400) 20%,
-      var(--teal-500) 50%,
-      var(--teal-400) 80%,
-      transparent 100%
-    );
-    border-radius: var(--border-radius-sm);
-  }
-
-  // Decorative dots
-  &::before {
-    content: "◆";
-    position: absolute;
-    bottom: calc(-1 * var(--space-4xs));
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: var(--step--2);
-    color: var(--teal-500);
-    z-index: 1;
-  }
+.guests-hero {
+  width: 100%;
 }
 
-// Description with refined typography
-.guests-page__description {
-  position: relative;
-  max-width: 45rem;
-  margin: 0 auto var(--space-l);
-  font-size: var(--step-0);
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--olive-500);
-  z-index: 1;
-
-  // Emphasis on number
-  &::first-line {
-    font-weight: 600;
-    font-family: var(--font-serif);
-    color: var(--teal-600);
-  }
+.guests-hero__eyebrow,
+.page-hero__eyebrow {
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
 }
 
-// Section groupings for frequent vs single appearances
-.guests-section {
-  position: relative;
-  margin-bottom: var(--space-s);
-
-  &--secondary {
-    margin-top: var(--space-l);
-    padding-top: var(--space-m);
-
-    // Subtle ornamental divider
-    &::before {
-      content: "◆";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: var(--step--2);
-      color: var(--teal-400);
-      opacity: 0.4;
-    }
-  }
+.guests-hero__title,
+.page-hero__title {
+  margin: 0;
 }
 
-.guests-section__title {
-  font-family: var(--font-serif);
-  font-size: var(--step-0);
-  font-weight: 600;
-  color: var(--teal-500);
-  text-align: center;
-  margin: 0 0 var(--space-m) 0;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  opacity: 0.7;
+.guests-hero__description,
+.page-hero__description {
+  margin: 0;
+  max-width: 42rem;
+  padding: var(--space-s) var(--space-m);
 }
 
-// Guest cloud with refined spacing
-.guests-cloud {
-  position: relative;
+.guests-section,
+.cloud-section {
+  display: grid;
+  gap: var(--space-s);
+}
+
+.guests-section__title,
+.cloud-section__title {
+  justify-self: start;
+  margin: 0;
+}
+
+.guests-cloud,
+.token-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-xs);
+  gap: var(--space-s);
+}
+
+.guests-cloud {
   justify-content: center;
-  padding: var(--space-s) 0;
-  z-index: 1;
 }
 
-// Sophisticated guest pill design
-.guest-pill {
-  position: relative;
-  display: inline-flex;
+.guest-pill,
+.token-pill {
   align-items: center;
-  gap: var(--space-2xs);
-  padding: var(--space-2xs) var(--space-xs);
-  font-family: var(--font-family-main);
-  font-size: var(--step--1);
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  background: color-mix(in srgb, var(--tan-000) 80%, transparent);
-  backdrop-filter: blur(8px);
-  color: var(--teal-600);
+  background: var(--tan-000);
+  border: var(--border-width-md) solid var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
+  color: var(--color-text-main);
+  display: inline-flex;
+  gap: var(--space-xs);
+  min-block-size: calc(var(--space-xl) + var(--space-2xs));
+  padding-inline: var(--space-s);
   text-decoration: none;
-  border: var(--border-width-sm) solid var(--teal-300);
-  border-radius: var(--border-radius-sm);
-  box-shadow:
-    0 0.125rem 0.375rem color-mix(in srgb, var(--tan-900) 5%, transparent),
-    inset 0 1px 0 color-mix(in srgb, var(--tan-000) 50%, transparent);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-  // Decorative corner accent
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0.75rem;
-    height: 0.75rem;
-    background: linear-gradient(
-      135deg,
-      transparent 0%,
-      transparent 50%,
-      var(--tan-200) 50%,
-      var(--tan-200) 100%
-    );
-    opacity: 0.4;
-    transition: all 0.3s ease;
-  }
-
-  &:hover {
-    transform: translateY(-0.25rem);
-    background: var(--teal-400);
-    color: var(--tan-000);
-    border-color: var(--teal-500);
-    box-shadow:
-      0 0.5rem 1.5rem color-mix(in srgb, var(--tan-900) 15%, transparent),
-      inset 0 1px 0 color-mix(in srgb, var(--tan-000) 20%, transparent);
-
-    &::before {
-      width: 1rem;
-      height: 1rem;
-      background: linear-gradient(
-        135deg,
-        transparent 0%,
-        transparent 50%,
-        color-mix(in srgb, var(--tan-000) 20%, transparent) 50%,
-        color-mix(in srgb, var(--tan-000) 20%, transparent) 100%
-      );
-      opacity: 1;
-    }
-
-    .guest-pill__count {
-      background: color-mix(in srgb, var(--tan-000) 25%, transparent);
-      color: var(--tan-000);
-      border-color: color-mix(in srgb, var(--tan-000) 30%, transparent);
-      box-shadow: 0 0 0 1px color-mix(in srgb, var(--tan-000) 20%, transparent);
-    }
-  }
-
-  // Featured variant for frequent guests
-  &--featured {
-    background: color-mix(in srgb, var(--tan-000) 95%, transparent);
-    border-width: var(--border-width-sm);
-    border-color: var(--teal-400);
-    font-weight: 700;
-    box-shadow:
-      0 0.25rem 0.75rem color-mix(in srgb, var(--tan-900) 8%, transparent),
-      inset 0 1px 0 color-mix(in srgb, var(--tan-000) 70%, transparent);
-
-    &::before {
-      opacity: 0.6;
-    }
-
-    .guest-pill__count {
-      font-weight: 800;
-      background: var(--tan-200);
-      border-color: var(--teal-300);
-      color: var(--teal-600);
-    }
-
-    &:hover {
-      transform: translateY(-0.375rem) scale(1.02);
-      box-shadow:
-        0 0.75rem 2rem color-mix(in srgb, var(--tan-900) 20%, transparent),
-        inset 0 1px 0 color-mix(in srgb, var(--tan-000) 20%, transparent);
-    }
-  }
 }
 
-// Refined episode count badge
-.guest-pill__count {
-  font-family: var(--font-serif);
-  font-size: var(--step--2);
-  font-weight: 700;
-  color: var(--teal-500);
-  background: var(--tan-100);
-  border: var(--border-width-sm) solid var(--tan-200);
-  padding: var(--space-4xs) var(--space-2xs);
-  border-radius: var(--border-radius-sm);
-  min-width: 1.75rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 1px 2px color-mix(in srgb, var(--tan-900) 5%, transparent);
+.guest-pill:hover,
+.guest-pill:focus-visible,
+.token-pill:hover,
+.token-pill:focus-visible {
+  background: var(--teal-400);
+}
+
+.guest-pill--featured {
+  background: var(--tan-200);
+}
+
+.guest-pill__name,
+.token-pill__name {
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+.guest-pill__count,
+.token-pill__count {
+  align-items: center;
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+  display: inline-flex;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  justify-content: center;
+  min-block-size: calc(var(--space-s) + var(--space-2xs));
+  min-inline-size: calc(var(--space-s) + var(--space-2xs));
+  padding-inline: var(--space-2xs);
 }

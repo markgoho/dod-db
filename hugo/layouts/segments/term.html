@@ -6,75 +6,72 @@
 {{ end }}
 
 {{ define "main" }}
-  <div class="segment-header">
-    <a href="/segments/" class="segment-header__back">
-      <span class="segment-header__back-arrow">&#8592;</span>
-      <span class="segment-header__back-text">All Segments</span>
-    </a>
-
-    <h1 class="segment-header__title">{{ .Title }}</h1>
-
-    <div class="segment-header__meta">
-      <div class="segment-header__stat">
-        <span class="segment-header__stat-number">{{ len .Pages }}</span>
-        <span class="segment-header__stat-label"
+  <section class="segment-page">
+    <header class="segment-hero">
+      <a href="/segments/" class="button-brutalist segment-hero__back">← All Segments</a>
+      <div class="segment-hero__eyebrow panel panel--accent">
+        <span class="type-eyebrow">Segment dossier</span>
+      </div>
+      <h1 class="segment-hero__title">{{ .Title }}</h1>
+      <div class="segment-hero__meta panel">
+        <span class="segment-hero__stat-number">{{ len .Pages }}</span>
+        <span class="segment-hero__stat-label"
           >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
         >
       </div>
-    </div>
-  </div>
+    </header>
 
-  <div class="segment-episodes">
-    <div class="episodes-grid">
-      {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-        {{ $guests := .Params.guests | default slice }}
-        <article class="episode-card">
-          <a href="{{ .RelPermalink }}" class="episode-card__link">
-            <div class="episode-card__number">{{ .Params.episodeNumber }}</div>
-            <div class="episode-card__content">
-              <h2 class="episode-card__title">{{ .Title }}</h2>
-              {{ if gt (len $guests) 0 }}
-                <div class="episode-card__guest">
-                  with
-                  {{ index $guests 0 }}
-                </div>
-              {{ end }}
-              <time
-                class="episode-card__date"
-                datetime="{{ .Date.Format "2006-01-02" }}">
-                {{ .Date.Format "January 2, 2006" }}
-              </time>
-              {{ if .Params.segments }}
-                <div class="episode-card__segments">
-                  {{ $currentSegment := $.Title }}
-                  {{/* Show current segment first, highlighted */}}
-                  <span
-                    class="episode-card__segment episode-card__segment--current"
-                    >{{ $currentSegment }}</span
-                  >
-                  {{/* Then show up to 2 other segments */}}
-                  {{ $otherSegments := slice }}
-                  {{ range .Params.segments }}
-                    {{ if ne . $currentSegment }}
-                      {{ $otherSegments = $otherSegments | append . }}
-                    {{ end }}
-                  {{ end }}
-                  {{ range first 2 $otherSegments }}
-                    <span class="episode-card__segment">{{ . }}</span>
-                  {{ end }}
-                  {{ $remaining := sub (len $otherSegments) 2 }}
-                  {{ if gt $remaining 0 }}
-                    <span class="episode-card__segment-more"
-                      >+{{ $remaining }}</span
+    <section class="segment-episodes">
+      <div class="episodes-grid">
+        {{ range sort .Pages ".Params.episodeNumber" "desc" }}
+          {{ $guests := .Params.guests | default slice }}
+          <article class="episode-card">
+            <a href="{{ .RelPermalink }}" class="episode-card__link">
+              <div class="episode-card__number">{{ .Params.episodeNumber }}</div>
+              <div class="episode-card__content">
+                <p class="episode-card__eyebrow type-eyebrow">Episode {{ .Params.episodeNumber }}</p>
+                <h2 class="episode-card__title">{{ .Title }}</h2>
+                {{ if gt (len $guests) 0 }}
+                  <div class="episode-card__guest">
+                    with
+                    {{ index $guests 0 }}
+                  </div>
+                {{ end }}
+                <time
+                  class="episode-card__date"
+                  datetime="{{ .Date.Format "2006-01-02" }}">
+                  {{ .Date.Format "January 2, 2006" }}
+                </time>
+                {{ if .Params.segments }}
+                  <div class="episode-card__segments">
+                    {{ $currentSegment := $.Title }}
+                    <span
+                      class="episode-card__segment episode-card__segment--current"
+                      >{{ $currentSegment }}</span
                     >
-                  {{ end }}
-                </div>
-              {{ end }}
-            </div>
-            <div class="episode-card__arrow">&#8594;</div>
-          </a>
-        </article>
-      {{ end }}
-    </div>
-  </div>
+                    {{ $otherSegments := slice }}
+                    {{ range .Params.segments }}
+                      {{ if ne . $currentSegment }}
+                        {{ $otherSegments = $otherSegments | append . }}
+                      {{ end }}
+                    {{ end }}
+                    {{ range first 2 $otherSegments }}
+                      <span class="episode-card__segment">{{ . }}</span>
+                    {{ end }}
+                    {{ $remaining := sub (len $otherSegments) 2 }}
+                    {{ if gt $remaining 0 }}
+                      <span class="episode-card__segment-more"
+                        >+{{ $remaining }}</span
+                      >
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+              <div class="episode-card__arrow">→</div>
+            </a>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  </section>
 {{ end }}

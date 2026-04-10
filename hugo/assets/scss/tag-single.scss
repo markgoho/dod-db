@@ -1,155 +1,70 @@
-// ============================================
-// Individual Tag Page (Term)
-// ============================================
-
-// Import episode card component
 @use "episode-card";
 
-main.container {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: var(--space-2xl) var(--space-m) var(--space-3xl);
+.tag-page {
+  display: grid;
+  gap: var(--space-2xl);
 }
 
-// Tag Header
-.tag-header {
+.tag-hero,
+.page-hero {
+  align-items: center;
+  display: grid;
+  gap: var(--space-s);
+  justify-items: center;
   text-align: center;
-  margin-bottom: var(--space-3xl);
-  position: relative;
-
-  // Large decorative letter behind title
-  &::before {
-    content: attr(data-letter);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--font-serif);
-    font-size: var(--font-decorative-lg);
-    font-weight: 800;
-    color: var(--brown-200);
-    opacity: 0.15;
-    z-index: -1;
-    pointer-events: none;
-    line-height: 1;
-  }
 }
 
-.tag-header__back {
-  display: inline-flex;
+.tag-hero__back,
+.term-page__back {
+  justify-self: start;
+}
+
+.tag-hero__eyebrow,
+.page-hero__eyebrow {
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
+}
+
+.tag-hero__title,
+.page-hero__title {
+  margin: 0;
+}
+
+.tag-hero__meta,
+.page-hero__meta {
   align-items: center;
-  gap: var(--space-2xs);
-  padding: var(--space-2xs) var(--space-s);
-  margin-bottom: var(--space-l);
-  font-size: var(--step--1);
-  font-weight: 600;
-  color: var(--brown-450);
-  text-decoration: none;
-  background: var(--tan-100);
-  border: var(--border-width-sm) solid var(--brown-300);
-  border-radius: 2rem;
-  transition: all 0.2s ease;
-
-  &:hover {
-    background: var(--brown-300);
-    color: var(--brown-600);
-
-    .tag-header__back-arrow {
-      transform: translateX(-0.25rem);
-    }
-  }
-}
-
-.tag-header__back-arrow {
-  transition: transform 0.2s ease;
-}
-
-.tag-header__back-text {
-  letter-spacing: 0.02em;
-}
-
-.tag-header__title {
-  font-family: var(--font-serif);
-  font-size: var(--step-6);
-  font-weight: 800;
-  color: var(--olive-600);
-  margin: 0 0 var(--space-l) 0;
-  position: relative;
-  padding-bottom: var(--space-m);
-  text-wrap: balance;
-
-  // Decorative underline
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: clamp(4rem, 40%, 10rem);
-    height: 3px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      var(--brown-500) 50%,
-      transparent 100%
-    );
-  }
-}
-
-.tag-header__meta {
   display: inline-flex;
-  gap: var(--space-m);
-}
-
-.tag-header__stat {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: var(--space-4xs);
   padding: var(--space-s) var(--space-l);
-  background: color-mix(in srgb, var(--tan-000) 60%, transparent);
-  backdrop-filter: blur(10px);
-  border: var(--border-width-sm) solid var(--brown-300);
-  border-radius: var(--border-radius-sm);
-  box-shadow: 0 0.5rem 1rem color-mix(in srgb, var(--tan-900) 5%, transparent);
 }
 
-.tag-header__stat-number {
-  font-family: var(--font-serif);
-  font-size: var(--step-3);
-  font-weight: 700;
-  color: var(--brown-500);
+.tag-hero__stat-number,
+.page-hero__stat-number {
+  font-family: var(--font-family-display);
+  font-size: var(--step-4);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
 }
 
-.tag-header__stat-label {
+.tag-hero__stat-label,
+.page-hero__stat-label {
+  color: var(--color-text-muted);
   font-size: var(--step--1);
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
   text-transform: uppercase;
-  color: var(--brown-450);
 }
 
-// Episodes section
-.tag-episodes {
-  // Container for the grid
-}
-
-// Episodes grid (same as episode-list)
-.episodes-grid {
+.tag-episodes .episodes-grid,
+.term-page__episodes-grid {
   display: grid;
   gap: var(--space-l);
-
-  @media (min-width: 60rem) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
-  }
 }
 
-// Current tag highlight within episode cards
 .episode-card__tag--current {
   background: var(--olive-500);
-  color: var(--tan-000);
-
-  &:hover {
-    background: var(--olive-600);
-  }
+  color: var(--color-text-inverse);
 }

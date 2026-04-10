@@ -6,148 +6,134 @@
 {{ end }}
 
 {{ define "main" }}
-  <section class="home-hero">
-    <div class="home-hero__logo-bg" aria-hidden="true">
-      <img
-        src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2152669595/settings_images/ba0cce-f0f1-d8-ff0f-00033ad3d421_D_D.png"
-        alt=""
-        loading="eager" />
-    </div>
+  {{ $episodes := where .Site.RegularPages "Type" "episodes" }}
+  {{ $recentEpisodes := first 3 $episodes }}
 
-    <div class="home-hero__ornament" aria-hidden="true">
-      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M50 10 L90 50 L50 90 L10 50 Z"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1" />
-        <circle
-          cx="50"
-          cy="50"
-          r="15"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1" />
-      </svg>
-    </div>
-
-    <div class="home-hero__content">
-      <div class="home-hero__logo">
-        <img
-          src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2152669595/settings_images/ba0cce-f0f1-d8-ff0f-00033ad3d421_D_D.png"
-          alt="Data Over Dogma logo"
-          loading="eager" />
+  <section class="home-page">
+    <section class="home-hero panel">
+      <div class="home-hero__eyebrow panel panel--accent">
+        <span class="type-eyebrow">Scholarly archive</span>
       </div>
-      <h1 class="home-hero__title">
-        <span class="home-hero__title-main">Data Over Dogma</span>
-        <span class="home-hero__title-sub"
-          >A Podcast on Biblical Scholarship</span
-        >
-      </h1>
-      <p class="home-hero__tagline">
-        Increasing public access to the academic study of the Bible and
-        religion, combating the spread of misinformation.
-      </p>
-    </div>
 
-    <div class="home-hero__stats">
-      {{ $episodes := where .Site.RegularPages "Type" "episodes" }}
-      <a href="/episodes/" class="stat-card">
-        <div class="stat-card__number">{{ len $episodes }}</div>
-        <div class="stat-card__label">Episodes</div>
-      </a>
-      <a href="/tags/" class="stat-card">
-        <div class="stat-card__number">{{ len .Site.Taxonomies.tags }}</div>
-        <div class="stat-card__label">Topics</div>
-      </a>
-      <a href="/segments/" class="stat-card">
-        <div class="stat-card__number">{{ len .Site.Taxonomies.segments }}</div>
-        <div class="stat-card__label">Segments</div>
-      </a>
-      <a href="/guests/" class="stat-card">
-        <div class="stat-card__number">{{ len .Site.Taxonomies.guests }}</div>
-        <div class="stat-card__label">Guests</div>
-      </a>
-    </div>
-  </section>
-  <section class="home-intro">
-    <div class="home-intro__quote">"</div>
-    <div class="home-intro__content">
+      <div class="home-hero__content">
+        <h1 class="home-hero__title">Metadata over Dogma</h1>
+        <p class="home-hero__subtitle">An unofficial companion guide to the Data Over Dogma Podcast</p>
+        <p class="home-hero__tagline">
+          Increasing public access to the metadata, transcripts, references, and
+          scholarly context surrounding the academic study of the Bible and
+          religion.
+        </p>
+      </div>
+
+      <div class="home-hero__stats">
+        <a href="/episodes/" class="stat-card panel">
+          <div class="stat-card__number">{{ len $episodes }}</div>
+          <div class="stat-card__label">Episodes</div>
+        </a>
+        <a href="/tags/" class="stat-card panel">
+          <div class="stat-card__number">{{ len .Site.Taxonomies.tags }}</div>
+          <div class="stat-card__label">Topics</div>
+        </a>
+        <a href="/segments/" class="stat-card panel">
+          <div class="stat-card__number">{{ len .Site.Taxonomies.segments }}</div>
+          <div class="stat-card__label">Segments</div>
+        </a>
+        <a href="/guests/" class="stat-card panel">
+          <div class="stat-card__number">{{ len .Site.Taxonomies.guests }}</div>
+          <div class="stat-card__label">Guests</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-intro panel panel--muted">
+      <h2 class="type-section-title">What you'll find</h2>
       <p class="home-intro__text">
         Explore transcripts from the Data Over Dogma podcast, featuring in-depth
         discussions on biblical scholarship, theology, and the historical
         context of religious texts.
       </p>
-    </div>
-  </section>
+    </section>
 
-  <section class="home-nav">
-    <div class="home-nav__grid">
-      <a href="/episodes/" class="feature-card feature-card--primary">
-        <div class="feature-card__decoration"></div>
-        <div class="feature-card__content">
-          <h2 class="feature-card__title">Browse Episodes</h2>
-          <p class="feature-card__description">
-            Explore all podcast episodes with full transcripts and timestamps.
-          </p>
-          <span class="feature-card__arrow">→</span>
-        </div>
-      </a>
+    <section class="home-nav">
+      <div class="home-nav__grid">
+        <a href="/episodes/" class="feature-card panel panel--accent">
+          <div class="feature-card__content">
+            <h2 class="feature-card__title">Browse Episodes</h2>
+            <p class="feature-card__description">
+              Explore all companion guide entries for podcast episodes with full transcripts and timestamps.
+            </p>
+            <span class="feature-card__arrow">→</span>
+          </div>
+        </a>
 
-      <a href="/tags/" class="feature-card feature-card--secondary">
-        <div class="feature-card__decoration"></div>
-        <div class="feature-card__content">
-          <h2 class="feature-card__title">Browse by Topic</h2>
-          <p class="feature-card__description">
-            Find episodes by biblical characters, places, theological concepts,
-            and more.
-          </p>
-          <span class="feature-card__arrow">→</span>
-        </div>
-      </a>
+        <a href="/tags/" class="feature-card panel">
+          <div class="feature-card__content">
+            <h2 class="feature-card__title">Browse by Topic</h2>
+            <p class="feature-card__description">
+              Find episodes by biblical characters, places, theological concepts,
+              and more.
+            </p>
+            <span class="feature-card__arrow">→</span>
+          </div>
+        </a>
 
-      <a href="/segments/" class="feature-card feature-card--tertiary">
-        <div class="feature-card__decoration"></div>
-        <div class="feature-card__content">
-          <h2 class="feature-card__title">Browse by Segment</h2>
-          <p class="feature-card__description">
-            Explore recurring segments like Chapter and Verse, What Does That
-            Mean?, and more.
-          </p>
-          <span class="feature-card__arrow">→</span>
-        </div>
-      </a>
+        <a href="/segments/" class="feature-card panel">
+          <div class="feature-card__content">
+            <h2 class="feature-card__title">Browse by Segment</h2>
+            <p class="feature-card__description">
+              Explore recurring segments like Chapter and Verse, What Is That?,
+              and more.
+            </p>
+            <span class="feature-card__arrow">→</span>
+          </div>
+        </a>
 
-      <a href="/guests/" class="feature-card feature-card--quaternary">
-        <div class="feature-card__decoration"></div>
-        <div class="feature-card__content">
-          <h2 class="feature-card__title">Browse by Guest</h2>
-          <p class="feature-card__description">
-            Discover episodes featuring renowned scholars and experts in
-            biblical studies.
-          </p>
-          <span class="feature-card__arrow">→</span>
-        </div>
-      </a>
+        <a href="/guests/" class="feature-card panel">
+          <div class="feature-card__content">
+            <h2 class="feature-card__title">Browse by Guest</h2>
+            <p class="feature-card__description">
+              Discover episodes featuring renowned scholars and experts in
+              biblical studies.
+            </p>
+            <span class="feature-card__arrow">→</span>
+          </div>
+        </a>
+      </div>
+    </section>
 
-      {{ $recentEpisodes := first 3 (where .Site.RegularPages "Type" "episodes") }}
-      {{ if $recentEpisodes }}
-        <div class="recent-episodes">
-          <h3 class="recent-episodes__title">Recent Episodes</h3>
-          <ul class="recent-episodes__list">
-            {{ range $recentEpisodes }}
-              <li class="recent-episodes__item">
-                <a href="{{ .RelPermalink }}" class="recent-episodes__link">
-                  <span class="recent-episodes__number"
-                    >{{ .Params.episodeNumber }}</span
-                  >
-                  <span class="recent-episodes__title-text">{{ .Title }}</span>
-                </a>
-              </li>
-            {{ end }}
-          </ul>
+    {{ if $recentEpisodes }}
+      <section class="recent-episodes panel">
+        <div class="recent-episodes__header">
+          <h2 class="type-section-title recent-episodes__title">Recent Episodes</h2>
+          <a href="/episodes/" class="button-brutalist">Browse archive</a>
         </div>
-      {{ end }}
-    </div>
+        <div class="recent-episodes__grid">
+          {{ range $recentEpisodes }}
+            {{ $guests := .Params.guests | default slice }}
+            <article class="episode-card">
+              <a href="{{ .RelPermalink }}" class="episode-card__link">
+                <div class="episode-card__number">{{ .Params.episodeNumber }}</div>
+                <div class="episode-card__content">
+                  <p class="episode-card__eyebrow type-eyebrow">Episode {{ .Params.episodeNumber }}</p>
+                  <h3 class="episode-card__title">{{ .Title }}</h3>
+                  {{ if gt (len $guests) 0 }}
+                    <div class="episode-card__guest">
+                      with
+                      {{ index $guests 0 }}
+                    </div>
+                  {{ end }}
+                  <time
+                    class="episode-card__date"
+                    datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ .Date.Format "January 2, 2006" }}
+                  </time>
+                </div>
+                <div class="episode-card__arrow">→</div>
+              </a>
+            </article>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
   </section>
 {{ end }}

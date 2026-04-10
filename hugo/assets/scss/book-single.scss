@@ -1,158 +1,93 @@
-// ============================================
-// Individual Book Page (Term)
-// ============================================
-
-// Import episode card component
 @use "episode-card";
 
-main.container {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: var(--space-2xl) var(--space-m) var(--space-3xl);
+.book-page {
+  display: grid;
+  gap: var(--space-2xl);
 }
 
-// Book Header
-.book-header {
+.book-hero,
+.page-hero {
+  align-items: center;
+  display: grid;
+  gap: var(--space-s);
+  justify-items: center;
   text-align: center;
-  margin-bottom: var(--space-3xl);
-  position: relative;
 }
 
-.book-header__back {
-  display: inline-flex;
+.book-hero__back,
+.term-page__back {
+  justify-self: start;
+}
+
+.book-hero__eyebrow,
+.page-hero__eyebrow {
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
+}
+
+.book-hero__title,
+.page-hero__title {
+  margin: 0;
+}
+
+.book-hero__meta,
+.page-hero__meta {
   align-items: center;
-  gap: var(--space-2xs);
-  padding: var(--space-2xs) var(--space-s);
-  margin-bottom: var(--space-l);
-  font-size: var(--step--1);
-  font-weight: 600;
-  color: var(--teal-700);
-  text-decoration: none;
-  background: var(--teal-100);
-  border: var(--border-width-sm) solid var(--teal-300);
-  border-radius: 2rem;
-  transition: all 0.2s ease;
-
-  &:hover {
-    background: var(--teal-200);
-    color: var(--teal-800);
-
-    .book-header__back-arrow {
-      transform: translateX(-0.25rem);
-    }
-  }
-}
-
-.book-header__back-arrow {
-  transition: transform 0.2s ease;
-}
-
-.book-header__back-text {
-  letter-spacing: 0.02em;
-}
-
-.book-header__title {
-  font-family: var(--font-serif);
-  font-size: var(--step-6);
-  font-weight: 800;
-  color: var(--teal-700);
-  margin: 0 0 var(--space-l) 0;
-  position: relative;
-  padding-bottom: var(--space-m);
-  text-wrap: balance;
-
-  // Decorative underline
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: clamp(4rem, 40%, 10rem);
-    height: 3px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      var(--teal-500) 50%,
-      transparent 100%
-    );
-  }
-}
-
-.book-header__meta {
   display: inline-flex;
-  gap: var(--space-m);
-}
-
-.book-header__stat {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: var(--space-4xs);
   padding: var(--space-s) var(--space-l);
-  background: color-mix(in srgb, var(--teal-100) 60%, transparent);
-  backdrop-filter: blur(10px);
-  border: var(--border-width-sm) solid var(--teal-300);
-  border-radius: var(--border-radius-sm);
-  box-shadow: 0 0.5rem 1rem color-mix(in srgb, var(--tan-900) 5%, transparent);
 }
 
-.book-header__stat-number {
-  font-family: var(--font-serif);
-  font-size: var(--step-3);
-  font-weight: 700;
-  color: var(--teal-600);
+.book-hero__stat-number,
+.page-hero__stat-number {
+  font-family: var(--font-family-display);
+  font-size: var(--step-4);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
 }
 
-.book-header__stat-label {
+.book-hero__stat-label,
+.page-hero__stat-label {
+  color: var(--color-text-muted);
   font-size: var(--step--1);
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
   text-transform: uppercase;
-  color: var(--teal-700);
 }
 
-// Episodes section
-.book-episodes {
-  // Container for the grid
-}
-
-// Episodes grid (same as episode-list)
-.episodes-grid {
+.book-episodes .episodes-grid,
+.term-page__episodes-grid {
   display: grid;
   gap: var(--space-l);
-
-  @media (min-width: 60rem) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
-  }
 }
 
-// Book pills within episode cards
 .episode-card__books {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3xs);
-  margin-top: var(--space-2xs);
+}
+
+.episode-card__book,
+.episode-card__book-more {
+  align-items: center;
+  border: var(--border-width-sm) solid var(--tan-900);
+  display: inline-flex;
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-bold);
+  min-block-size: calc(var(--space-s) + var(--space-2xs));
+  padding-inline: var(--space-2xs);
+  text-transform: uppercase;
 }
 
 .episode-card__book {
-  font-size: var(--step--2);
-  font-weight: 600;
-  padding: var(--space-4xs) var(--space-2xs);
-  background: var(--teal-100);
-  color: var(--teal-700);
-  border-radius: var(--border-radius-sm);
+  background: var(--tan-000);
 }
 
-// Current book highlight within episode cards
-.episode-card__book--current {
-  background: var(--teal-600);
-  color: var(--tan-000);
-}
-
+.episode-card__book--current,
 .episode-card__book-more {
-  font-size: var(--step--2);
-  font-weight: 600;
-  padding: var(--space-4xs) var(--space-2xs);
-  color: var(--teal-600);
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
 }

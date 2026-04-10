@@ -6,61 +6,60 @@
 {{ end }}
 
 {{ define "main" }}
-  <div class="guest-header">
-    <a href="/guests/" class="guest-header__back">
-      <span class="guest-header__back-arrow">←</span>
-      <span class="guest-header__back-text">All Guests</span>
-    </a>
-
-    <h1 class="guest-header__title">{{ .Title }}</h1>
-
-    <div class="guest-header__meta">
-      <div class="guest-header__stat">
-        <span class="guest-header__stat-number">{{ len .Pages }}</span>
-        <span class="guest-header__stat-label"
+  <section class="guest-page">
+    <header class="guest-hero">
+      <a href="/guests/" class="button-brutalist guest-hero__back">← All Guests</a>
+      <div class="guest-hero__eyebrow panel panel--accent">
+        <span class="type-eyebrow">Guest dossier</span>
+      </div>
+      <h1 class="guest-hero__title">{{ .Title }}</h1>
+      <div class="guest-hero__meta panel">
+        <span class="guest-hero__stat-number">{{ len .Pages }}</span>
+        <span class="guest-hero__stat-label"
           >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
         >
       </div>
-    </div>
-  </div>
+    </header>
 
-  <div class="guest-episodes">
-    <div class="episodes-grid">
-      {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-        {{ $guests := .Params.guests }}
-        <article class="episode-card">
-          <a href="{{ .RelPermalink }}" class="episode-card__link">
-            <div class="episode-card__number">{{ .Params.episodeNumber }}</div>
-            <div class="episode-card__content">
-              <h2 class="episode-card__title">{{ .Title }}</h2>
-              {{ if gt (len $guests) 0 }}
-                <div class="episode-card__guest">
-                  with
-                  {{ index $guests 0 }}
-                </div>
-              {{ end }}
-              <time
-                class="episode-card__date"
-                datetime="{{ .Date.Format "2006-01-02" }}">
-                {{ .Date.Format "January 2, 2006" }}
-              </time>
-              {{ if .Params.tags }}
-                <div class="episode-card__tags">
-                  {{ range first 3 .Params.tags }}
-                    <span class="episode-card__tag">{{ . }}</span>
-                  {{ end }}
-                  {{ if gt (len .Params.tags) 3 }}
-                    <span class="episode-card__tag-more"
-                      >+{{ sub (len .Params.tags) 3 }}</span
-                    >
-                  {{ end }}
-                </div>
-              {{ end }}
-            </div>
-            <div class="episode-card__arrow">→</div>
-          </a>
-        </article>
-      {{ end }}
-    </div>
-  </div>
+    <section class="guest-episodes">
+      <div class="episodes-grid">
+        {{ range sort .Pages ".Params.episodeNumber" "desc" }}
+          {{ $guests := .Params.guests }}
+          <article class="episode-card">
+            <a href="{{ .RelPermalink }}" class="episode-card__link">
+              <div class="episode-card__number">{{ .Params.episodeNumber }}</div>
+              <div class="episode-card__content">
+                <p class="episode-card__eyebrow type-eyebrow">Episode {{ .Params.episodeNumber }}</p>
+                <h2 class="episode-card__title">{{ .Title }}</h2>
+                {{ if gt (len $guests) 0 }}
+                  <div class="episode-card__guest">
+                    with
+                    {{ index $guests 0 }}
+                  </div>
+                {{ end }}
+                <time
+                  class="episode-card__date"
+                  datetime="{{ .Date.Format "2006-01-02" }}">
+                  {{ .Date.Format "January 2, 2006" }}
+                </time>
+                {{ if .Params.tags }}
+                  <div class="episode-card__tags">
+                    {{ range first 3 .Params.tags }}
+                      <span class="episode-card__tag">{{ . }}</span>
+                    {{ end }}
+                    {{ if gt (len .Params.tags) 3 }}
+                      <span class="episode-card__tag-more"
+                        >+{{ sub (len .Params.tags) 3 }}</span
+                      >
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </div>
+              <div class="episode-card__arrow">→</div>
+            </a>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  </section>
 {{ end }}

@@ -1,556 +1,328 @@
-// ============================================
-// Episode Single Page
-// ============================================
-
-main.container {
+.episode-page {
   display: grid;
   gap: var(--space-2xl);
-  padding: var(--space-2xl) var(--space-m);
-  max-width: 90rem;
-  margin: 0 auto;
 }
 
-.episode-single-header {
-  display: flex;
-  justify-content: center;
+.episode-hero {
   align-items: center;
-  gap: var(--space-m);
-  flex-wrap: wrap;
-}
-
-.episode-single-number {
-  font-family: var(--font-serif);
-  font-size: var(--step-1);
-  font-weight: 700;
-  color: var(--brown-500);
-}
-
-.episode-single-date {
-  font-size: var(--step--1);
-  font-weight: 600;
-  color: var(--brown-450);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.episode-single-title {
-  font-family: var(--font-serif);
-  font-size: var(--step-4);
-  font-weight: 800;
-  line-height: 1.2;
-  color: var(--olive-600);
+  display: grid;
+  gap: var(--space-s);
+  justify-items: center;
   text-align: center;
-  text-wrap: balance;
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: var(--space-m);
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: clamp(5rem, 30%, 12rem);
-    height: 3px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      var(--brown-500) 50%,
-      transparent 100%
-    );
-  }
 }
 
-.episode-single-guest {
-  font-family: var(--font-serif);
+.episode-hero__eyebrow {
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
+}
+
+.episode-hero__title {
+  margin: 0;
+  max-width: 12ch;
+}
+
+.episode-hero__guest {
+  color: var(--color-text-muted);
   font-size: var(--step-0);
-  font-style: italic;
-  font-weight: 500;
-  color: var(--brown-450);
-  text-align: center;
-}
-
-.episode-single-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3xs);
-  justify-content: center;
-}
-
-.episode-single-tag {
-  padding: var(--space-3xs) var(--space-2xs);
-  font-size: var(--step--2);
-  font-weight: 600;
-  background: var(--tan-200);
-  color: var(--olive-600);
-  text-decoration: none;
-  border-radius: var(--border-radius-sm);
-  transition: all 0.2s ease;
-
-  &:hover {
-    background: var(--brown-300);
-    transform: translateY(-0.0625rem);
-  }
-}
-
-// Scripture book pills (teal color to distinguish from tags)
-.episode-single-books {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3xs);
-  justify-content: center;
-  margin-top: var(--space-xs);
-}
-
-.episode-single-book {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-3xs);
-  padding: var(--space-3xs) var(--space-2xs);
-  font-size: var(--step--2);
-  font-weight: 600;
-  background: var(--teal-100);
-  color: var(--teal-700);
-  text-decoration: none;
-  border-radius: var(--border-radius-sm);
-  transition: all 0.2s ease;
-
-  // Book icon prefix
-  &::before {
-    content: "📖";
-    font-size: var(--step--2);
-  }
-
-  &:hover {
-    background: var(--teal-600);
-    color: var(--tan-000);
-    transform: translateY(-0.0625rem);
-  }
+  margin: 0;
 }
 
 .episode-layout {
   display: grid;
   gap: var(--space-l);
-
-  @media (min-width: 768px) {
-    grid-template-columns: 400px 1fr;
-    align-items: start;
-  }
 }
 
-// ============================================
-// Episode Sidebar (Sticky container for video + segments)
-// ============================================
-
-.episode-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-m);
-
-  @media (min-width: 768px) {
-    position: sticky;
-    top: calc(var(--header-height) + var(--space-s));
-  }
+.episode-primary {
+  display: grid;
+  gap: var(--space-xl);
 }
 
-// ============================================
-// Episode Segments
-// ============================================
-
-.episode-segments {
-  padding: var(--space-m);
-  background: var(--tan-100);
-  border-radius: var(--border-radius-md);
-  border: var(--border-width-sm) solid var(--tan-300);
+.episode-media {
+  overflow: hidden;
+  padding: var(--space-l);
 }
 
-.episode-segments__title {
-  font-family: var(--font-serif);
-  font-size: var(--step-0);
-  font-weight: 600;
-  color: var(--olive-600);
-  margin: 0 0 var(--space-s) 0;
-}
-
-.episode-segments__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2xs);
-}
-
-.segment-chip {
-  display: inline-flex;
+.episode-media__body {
   align-items: center;
-  padding: var(--space-3xs) var(--space-2xs);
-  font-family: var(--font-family-main);
-  font-size: var(--step--1);
-  font-weight: 600;
-  background: var(--teal-100);
-  color: var(--teal-600);
-  border: var(--border-width-sm) solid var(--teal-300);
-  border-radius: 2rem;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease;
+  display: grid;
+  gap: var(--space-l);
+}
 
-  &:hover {
-    background: var(--teal-400);
-    color: var(--tan-000);
-    border-color: var(--teal-400);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px color-mix(in srgb, var(--tan-900) 10%, transparent);
-  }
+.episode-media__artwork {
+  aspect-ratio: 1;
+  background: var(--tan-900);
+  border: var(--border-width-md) solid var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--teal-400);
+  display: grid;
+  max-width: 16rem;
+  place-self: center;
+  width: 100%;
+}
 
-  &:focus-visible {
-    outline: var(--border-width-sm) solid var(--teal-300);
-    outline-offset: 2px;
-  }
+.episode-media__artwork-inner {
+  align-items: end;
+  background: radial-gradient(circle, color-mix(in srgb, var(--tan-000) 12%, transparent) 0, color-mix(in srgb, var(--tan-000) 12%, transparent) 1px, transparent 1px), var(--olive-500);
+  background-size: var(--space-2xs) var(--space-2xs);
+  display: grid;
+  padding: var(--space-s);
+}
 
-  &:active {
-    transform: translateY(0);
-  }
+.episode-media__artwork-label {
+  color: var(--color-text-inverse);
+}
+
+.episode-media__details {
+  display: grid;
+  gap: var(--space-s);
+}
+
+.episode-media__label {
+  margin: 0;
+}
+
+.episode-media audio {
+  inline-size: 100%;
+}
+
+.episode-media__video {
+  aspect-ratio: 16 / 9;
 }
 
 .video-player {
-  aspect-ratio: 16 / 9;
-  background: var(--tan-800);
-  border-radius: var(--border-radius-md);
+  border: var(--border-width-md) solid var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
   overflow: hidden;
-  position: relative;
-
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
 }
 
-// ============================================
-// Transcript Header
-// ============================================
+.video-player a,
+.video-player img,
+.video-player iframe {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.video-player img {
+  object-fit: cover;
+}
+
+.episode-segments {
+  display: grid;
+}
+
+.episode-segments__grid {
+  display: grid;
+  gap: var(--space-s);
+}
+
+.episode-segment-card {
+  color: var(--color-text-main);
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-s);
+  text-decoration: none;
+}
+
+.episode-segment-card__label {
+  color: var(--color-text-muted);
+}
+
+.episode-segment-card__title {
+  font-family: var(--font-family-display);
+  font-size: var(--step-1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+.episode-transcript {
+  display: grid;
+  gap: var(--space-s);
+}
 
 .transcript-header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-l);
-  padding-bottom: var(--space-m);
-  border-bottom: var(--border-width-sm) solid var(--tan-300);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  justify-content: space-between;
 }
 
 .transcript-header-title {
-  font-family: var(--font-serif);
-  font-size: var(--step-2);
-  font-weight: 600;
-  color: var(--olive-600);
   margin: 0;
-  letter-spacing: 0.02em;
 }
 
 .auto-scroll-toggle {
-  display: flex;
   align-items: center;
-  gap: var(--space-2xs);
+  color: var(--color-text-muted);
   cursor: pointer;
+  display: inline-flex;
   font-size: var(--step--1);
-  user-select: none;
+  font-weight: var(--font-weight-semibold);
+  gap: var(--space-2xs);
+  text-transform: uppercase;
+}
 
-  input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
+.auto-scroll-toggle input[type="checkbox"] {
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
 }
 
 .toggle-switch {
-  position: relative;
-  width: 2.5em;
-  height: 1.25em;
   background: var(--tan-400);
-  border-radius: 1em;
-  transition: background-color 0.2s;
+  border: var(--border-width-sm) solid var(--tan-900);
+  block-size: var(--space-s);
+  inline-size: calc(var(--space-m) + var(--space-2xs));
+  position: relative;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0.125em;
-    left: 0.125em;
-    width: 1em;
-    height: 1em;
-    background: var(--tan-000);
-    border-radius: 50%;
-    transition: transform 0.2s;
-  }
+.toggle-switch::after {
+  background: var(--tan-000);
+  block-size: calc(var(--space-s) - var(--space-4xs));
+  content: "";
+  inline-size: calc(var(--space-s) - var(--space-4xs));
+  inset-block-start: 50%;
+  inset-inline-start: var(--space-4xs);
+  position: absolute;
+  transform: translateY(-50%);
 }
 
 .auto-scroll-toggle input[type="checkbox"]:checked + .toggle-switch {
   background: var(--teal-400);
+}
 
-  &::after {
-    transform: translateX(1.25em);
-  }
+.auto-scroll-toggle input[type="checkbox"]:checked + .toggle-switch::after {
+  inset-inline-start: calc(var(--space-xs) + var(--space-4xs));
 }
 
 .auto-scroll-toggle input[type="checkbox"]:focus-visible + .toggle-switch {
-  outline: var(--border-width-sm) solid var(--teal-300);
-  outline-offset: 2px;
+  outline: var(--border-width-sm) solid var(--olive-500);
+  outline-offset: var(--space-4xs);
 }
-
-// ============================================
-// Modern Manuscript Transcript
-// ============================================
 
 .transcript-content {
-  // Generous horizontal space with centered content
-  max-width: 100%;
-  padding: var(--space-l) var(--space-m);
-
-  // Subtle manuscript paper feel
-  background: linear-gradient(
-    to bottom,
-    var(--tan-000) 0%,
-    var(--tan-000) 2%,
-    var(--tan-000) 98%,
-    var(--tan-100) 100%
-  );
-  border: var(--border-width-sm) solid var(--tan-300);
-  border-radius: var(--border-radius-sm);
-  box-shadow:
-    0 1px 3px color-mix(in srgb, var(--tan-900) 4%, transparent),
-    0 4px 12px color-mix(in srgb, var(--tan-900) 2%, transparent);
+  display: grid;
+  gap: var(--space-xs);
+  padding: var(--space-l);
 }
-
-// ============================================
-// Transcript Line - Modern Manuscript Style
-// ============================================
 
 .transcript-line {
-  // Constrain text width for readability, center in container
-  max-width: 65ch;
-  margin: 0 auto;
-  padding: var(--space-s) 0;
-  position: relative;
+  align-items: start;
+  border-block-end: var(--border-width-sm) solid var(--tan-200);
   cursor: pointer;
-  transition: background-color 0.15s ease;
-
-  // Grid layout: speaker and timestamp on same row, text below
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto 1fr;
-  gap: 0.375em var(--space-xs);
-  align-items: center;
-
-  // Subtle separator between entries
-  &:not(:last-child) {
-    border-bottom: var(--border-width-sm) solid var(--tan-200);
-  }
-
-  // Hover state - gentle highlight
-  &:hover {
-    background-color: var(--tan-100);
-    border-radius: var(--border-radius-sm);
-    margin-inline: calc(-1 * var(--space-2xs));
-    padding-inline: var(--space-2xs);
-
-    .timestamp {
-      opacity: 1;
-    }
-  }
-
-  // Active/playing state
-  &.active {
-    background-color: var(--tan-100);
-    border-radius: var(--border-radius-sm);
-    margin-inline: calc(-1 * var(--space-2xs));
-    padding-inline: var(--space-2xs);
-    outline: var(--border-width-sm) solid var(--teal-400);
-    outline-offset: -2px;
-
-    .timestamp {
-      opacity: 1;
-    }
-  }
+  gap: var(--space-3xs) var(--space-xs);
+  grid-template-columns: auto 1fr;
+  padding-block: var(--space-s);
 }
 
-// ============================================
-// Speaker Name - Elegant Attribution
-// ============================================
+.transcript-line:last-child {
+  border-block-end: 0;
+}
+
+.transcript-line:hover,
+.transcript-line.active {
+  background: color-mix(in srgb, var(--teal-300) 28%, var(--tan-000));
+  margin-inline: calc(-1 * var(--space-xs));
+  padding-inline: var(--space-xs);
+}
 
 .speaker-name {
-  // Grid placement: first column, first row
-  grid-column: 1;
-  grid-row: 1;
-
-  font-family: var(--font-serif);
-  font-size: var(--step--1);
-  font-weight: 600;
-  font-style: normal;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  display: flex;
   align-items: center;
-  gap: var(--space-2xs);
-
-  // Small decorative marker before name
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-
-  // Dan McClellan - Teal accent (the scholar)
-  &[data-speaker="dan-mcclellan"] {
-    color: var(--teal-500);
-
-    &::before {
-      background-color: var(--teal-400);
-    }
-  }
-
-  // Dan Beecher - Olive accent (the host)
-  &[data-speaker="dan-beecher"] {
-    color: var(--olive-500);
-
-    &::before {
-      background-color: var(--olive-400);
-    }
-  }
-
-  // Guests - Warm brown accent
-  &:not([data-speaker="dan-mcclellan"]):not([data-speaker="dan-beecher"]) {
-    color: var(--brown-500);
-
-    &::before {
-      background-color: var(--brown-400);
-    }
-  }
+  background: var(--olive-500);
+  border: var(--border-width-sm) solid var(--tan-900);
+  color: var(--color-text-inverse);
+  display: inline-flex;
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  grid-column: 1;
+  letter-spacing: var(--letter-spacing-heading);
+  min-block-size: calc(var(--space-l) - var(--space-2xs));
+  padding-inline: var(--space-xs);
+  text-transform: uppercase;
 }
 
-// ============================================
-// Timestamp - Subtle, Accessible
-// ============================================
+.speaker-name[data-speaker="dan-beecher"] {
+  background: var(--tan-900);
+}
 
 .timestamp {
-  // Grid placement: second column, first row
-  grid-column: 2;
-  grid-row: 1;
-
-  font-family: var(--font-family-main);
+  align-self: center;
+  color: var(--color-text-muted);
   font-size: var(--step--2);
-  font-weight: 500;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0.02em;
-  color: var(--tan-450);
-  opacity: 0.6;
-  transition:
-    opacity 0.15s ease,
-    color 0.15s ease;
+  font-weight: var(--font-weight-semibold);
+  grid-column: 2;
+  justify-self: end;
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
 }
-
-// ============================================
-// Transcript Text - Readable Body Copy
-// ============================================
 
 .transcript-text {
-  // Grid placement: span both columns, second row
+  color: var(--color-text-main);
   grid-column: 1 / -1;
-  grid-row: 2;
-
-  font-family: var(--font-serif);
-  font-size: var(--step-0);
-  font-weight: 400;
-  line-height: 1.65;
-  color: var(--olive-600);
   margin: 0;
-
-  // Improve text rendering
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
-
-// ============================================
-// Scripture Reference Links
-// ============================================
 
 .scripture-reference {
-  color: var(--teal-500);
-  text-decoration: underline;
-  text-decoration-color: var(--teal-300);
+  color: var(--olive-500);
+  font-weight: var(--font-weight-bold);
   text-decoration-thickness: var(--border-width-sm);
   text-underline-offset: var(--space-4xs);
-  transition: all 0.15s ease;
-
-  &:hover {
-    color: var(--teal-400);
-    text-decoration-color: var(--teal-400);
-  }
-
-  &:focus-visible {
-    outline: var(--border-width-sm) solid var(--teal-300);
-    outline-offset: var(--space-4xs);
-    border-radius: var(--border-radius-sm);
-  }
 }
 
-// ============================================
-// Utilities
-// ============================================
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+.scripture-reference:hover,
+.scripture-reference:focus-visible {
+  color: var(--tan-900);
 }
 
-// ============================================
-// Toast Notification
-// ============================================
+.episode-sidebar {
+  display: grid;
+  gap: var(--space-l);
+}
 
-.copy-toast {
-  position: fixed;
-  bottom: var(--space-l);
-  left: 50%;
-  transform: translateX(-50%) translateY(100px);
-  padding: var(--space-s) var(--space-m);
-  background-color: var(--teal-600);
-  color: var(--tan-000);
-  border-radius: var(--border-radius-md);
-  font-family: var(--font-family-main);
-  font-size: var(--step--1);
-  font-weight: 600;
-  box-shadow:
-    0 4px 12px color-mix(in srgb, var(--tan-900) 15%, transparent),
-    0 2px 6px color-mix(in srgb, var(--tan-900) 10%, transparent);
-  z-index: 1000;
-  opacity: 0;
-  transition: all 0.3s ease;
-  pointer-events: none;
+.episode-sidebar__section {
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
 
-  &.show {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
+.episode-sidebar__title {
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  justify-self: start;
+  letter-spacing: var(--letter-spacing-heading);
+  margin: 0;
+  padding-block: var(--space-3xs);
+  padding-inline: var(--space-xs);
+  text-transform: uppercase;
+}
+
+@media (width > 70rem) {
+  .episode-layout {
+    align-items: start;
+    grid-template-columns: minmax(0, 2fr) minmax(18rem, 1fr);
+  }
+
+  .episode-sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-s));
+  }
+
+  .episode-media__body {
+    grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr);
+  }
+
+  .episode-segments__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

@@ -1,6 +1,6 @@
 :root {
-  --spacing-nav-gap: 4.3125rem; /* 69px */
-  --header-height: 5rem; /* 80px - approximate header height for scroll offset */
+  --spacing-nav-gap: var(--space-l);
+  --header-height: calc(var(--space-2xl) + var(--space-xs));
 
   --border-width-sm: 2px;
   --border-width-md: 5px;
@@ -18,4 +18,8 @@
   --space-xl: clamp(3.375rem, 3.15rem + 1.125cqi, 4.5rem);
   --space-2xl: clamp(4.5rem, 4.2rem + 1.5cqi, 6rem);
   --space-3xl: clamp(6.75rem, 6.3rem + 2.25cqi, 9rem);
+
+  --content-max-width: 90rem;
+  --content-max-width-wide: 112rem;
+  --panel-shadow-offset: var(--space-3xs);
 }

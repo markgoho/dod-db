@@ -6,53 +6,91 @@
 {{ end }}
 
 {{ define "main" }}
-  <div class="books-page">
-    <h1 class="books-page__title">Scripture References</h1>
-    <p class="books-page__description">
-      {{ len .Data.Terms }} books referenced across all episodes
-    </p>
+  <section class="books-page">
+    <header class="books-hero">
+      <div class="books-hero__eyebrow panel panel--accent">
+        <span class="type-eyebrow">Scripture index</span>
+      </div>
+      <h1 class="books-hero__title">Scripture References</h1>
+      <p class="books-hero__description panel panel--muted">
+        {{ len .Data.Terms }} books referenced across all episodes
+      </p>
+    </header>
 
     {{ $oldTestament := slice }}
     {{ $newTestament := slice }}
 
-    {{/* Categorize books by testament */}}
     {{ $otBooks := slice "Genesis" "Exodus" "Leviticus" "Numbers" "Deuteronomy" "Joshua" "Judges" "Ruth" "1 Samuel" "2 Samuel" "1 Kings" "2 Kings" "1 Chronicles" "2 Chronicles" "Ezra" "Nehemiah" "Esther" "Job" "Psalms" "Proverbs" "Ecclesiastes" "Song of Solomon" "Isaiah" "Jeremiah" "Lamentations" "Ezekiel" "Daniel" "Hosea" "Joel" "Amos" "Obadiah" "Jonah" "Micah" "Nahum" "Habakkuk" "Zephaniah" "Haggai" "Zechariah" "Malachi" }}
+    {{ $ntBooks := slice "Matthew" "Mark" "Luke" "John" "Acts" "Romans" "1 Corinthians" "2 Corinthians" "Galatians" "Ephesians" "Philippians" "Colossians" "1 Thessalonians" "2 Thessalonians" "1 Timothy" "2 Timothy" "Titus" "Philemon" "Hebrews" "James" "1 Peter" "2 Peter" "1 John" "2 John" "3 John" "Jude" "Revelation" }}
 
-    {{ range .Data.Terms.Alphabetical }}
-      {{ $bookName := .Page.Title }}
-      {{ if in $otBooks $bookName }}
-        {{ $oldTestament = $oldTestament | append . }}
-      {{ else }}
-        {{ $newTestament = $newTestament | append . }}
+    {{ range $otBooks }}
+      {{ $bookName := . }}
+      {{ $matched := false }}
+      {{ range $.Data.Terms.Alphabetical }}
+        {{ if eq .Page.Title $bookName }}
+          {{ $oldTestament = $oldTestament | append (dict "title" .Page.Title "count" .Count "relPermalink" .Page.RelPermalink) }}
+          {{ $matched = true }}
+        {{ end }}
+      {{ end }}
+      {{ if not $matched }}
+        {{ $oldTestament = $oldTestament | append (dict "title" $bookName "count" 0 "relPermalink" "") }}
+      {{ end }}
+    {{ end }}
+
+    {{ range $ntBooks }}
+      {{ $bookName := . }}
+      {{ $matched := false }}
+      {{ range $.Data.Terms.Alphabetical }}
+        {{ if eq .Page.Title $bookName }}
+          {{ $newTestament = $newTestament | append (dict "title" .Page.Title "count" .Count "relPermalink" .Page.RelPermalink) }}
+          {{ $matched = true }}
+        {{ end }}
+      {{ end }}
+      {{ if not $matched }}
+        {{ $newTestament = $newTestament | append (dict "title" $bookName "count" 0 "relPermalink" "") }}
       {{ end }}
     {{ end }}
 
     {{ if gt (len $oldTestament) 0 }}
-      <div class="books-section">
-        <h2 class="books-section__title">Old Testament</h2>
+      <section class="books-section">
+        <h2 class="type-section-title books-section__title">Old Testament</h2>
         <div class="books-cloud">
           {{ range $oldTestament }}
-            <a href="{{ .Page.RelPermalink }}" class="book-pill">
-              {{ .Page.Title }}
-              <span class="book-pill__count">{{ .Count }}</span>
-            </a>
+            {{ if gt .count 0 }}
+              <a href="{{ .relPermalink }}" class="book-pill">
+                <span class="book-pill__name">{{ .title }}</span>
+                <span class="book-pill__count">{{ .count }}</span>
+              </a>
+            {{ else }}
+              <span class="book-pill book-pill--empty">
+                <span class="book-pill__name">{{ .title }}</span>
+                <span class="book-pill__count">{{ .count }}</span>
+              </span>
+            {{ end }}
           {{ end }}
         </div>
-      </div>
+      </section>
     {{ end }}
 
     {{ if gt (len $newTestament) 0 }}
-      <div class="books-section">
-        <h2 class="books-section__title">New Testament</h2>
+      <section class="books-section">
+        <h2 class="type-section-title books-section__title">New Testament</h2>
         <div class="books-cloud">
           {{ range $newTestament }}
-            <a href="{{ .Page.RelPermalink }}" class="book-pill">
-              {{ .Page.Title }}
-              <span class="book-pill__count">{{ .Count }}</span>
-            </a>
+            {{ if gt .count 0 }}
+              <a href="{{ .relPermalink }}" class="book-pill">
+                <span class="book-pill__name">{{ .title }}</span>
+                <span class="book-pill__count">{{ .count }}</span>
+              </a>
+            {{ else }}
+              <span class="book-pill book-pill--empty">
+                <span class="book-pill__name">{{ .title }}</span>
+                <span class="book-pill__count">{{ .count }}</span>
+              </span>
+            {{ end }}
           {{ end }}
         </div>
-      </div>
+      </section>
     {{ end }}
-  </div>
+  </section>
 {{ end }}

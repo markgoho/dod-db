@@ -1,10 +1,10 @@
 baseURL = 'https://dod-db-a9c10.web.app/'
 languageCode = 'en-us'
-title = 'Data Over Dogma Podcast'
+title = 'Metadata over Dogma'
 enableGitInfo = true
 
 [params]
-  description = "Increasing public access to the academic study of the Bible and religion and combating the spread of misinformation"
+  description = "Increasing public access to the metadata, transcripts, references, and scholarly context surrounding the academic study of the Bible and religion"
 
 [frontmatter]
   lastmod = [':git', 'lastmod', ':fileModTime', 'date', 'publishDate']

@@ -1,68 +1,92 @@
-// ============================================
-// Tags List Page - Tag Cloud Style
-// ============================================
-
 .tags-page {
-  max-width: 60rem;
-  margin: 0 auto;
+  display: grid;
+  gap: var(--space-2xl);
+  justify-items: center;
+}
+
+.tags-hero,
+.page-hero {
+  align-items: center;
+  display: grid;
+  gap: var(--space-s);
+  justify-items: center;
   text-align: center;
 }
 
-.tags-page__title {
-  font-family: var(--font-serif);
-  font-size: var(--step-5);
-  font-weight: 800;
-  color: var(--olive-600);
-  margin: 0 0 var(--space-s) 0;
+.tags-hero {
+  width: 100%;
 }
 
-.tags-page__description {
-  font-size: var(--step-0);
-  color: var(--brown-450);
-  margin: 0 0 var(--space-xl) 0;
+.tags-hero__eyebrow,
+.page-hero__eyebrow {
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
 }
 
-// Tag cloud - matching episode single page styling
-.tags-cloud {
+.tags-hero__title,
+.page-hero__title {
+  margin: 0;
+}
+
+.tags-hero__description,
+.page-hero__description {
+  margin: 0;
+  max-width: 42rem;
+  padding: var(--space-s) var(--space-m);
+}
+
+.tags-cloud,
+.token-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2xs);
+  gap: var(--space-s);
+}
+
+.tags-cloud {
   justify-content: center;
 }
 
-.tag-pill {
-  display: inline-flex;
+.tag-pill,
+.token-pill {
   align-items: center;
-  gap: var(--space-3xs);
-  padding: var(--space-3xs) var(--space-2xs);
-  font-size: var(--step--1);
-  font-weight: 600;
-  background: var(--tan-200);
-  color: var(--olive-600);
+  background: var(--tan-000);
+  border: var(--border-width-md) solid var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
+  color: var(--color-text-main);
+  display: inline-flex;
+  gap: var(--space-xs);
+  min-block-size: calc(var(--space-xl) + var(--space-2xs));
+  padding-inline: var(--space-s);
   text-decoration: none;
-  border-radius: var(--border-radius-sm);
-  transition: all 0.2s ease;
-
-  &:hover {
-    background: var(--brown-400);
-    color: var(--tan-000);
-
-    .tag-pill__count {
-      background: color-mix(in srgb, var(--tan-000) 20%, transparent);
-      color: var(--tan-000);
-    }
-  }
 }
 
-.tag-pill__count {
-  font-family: var(--font-serif);
-  font-size: var(--step--2);
-  font-weight: 700;
-  color: var(--brown-450);
-  background: var(--tan-300);
-  padding: var(--space-4xs) var(--space-3xs);
-  border-radius: var(--border-radius-md);
-  min-width: 1.5rem;
-  text-align: center;
-  transition: all 0.2s ease;
+.tag-pill:hover,
+.tag-pill:focus-visible,
+.token-pill:hover,
+.token-pill:focus-visible {
+  background: var(--teal-400);
+}
+
+.tag-pill__name,
+.token-pill__name {
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+.tag-pill__count,
+.token-pill__count {
+  align-items: center;
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+  display: inline-flex;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  justify-content: center;
+  min-block-size: calc(var(--space-s) + var(--space-2xs));
+  min-inline-size: calc(var(--space-s) + var(--space-2xs));
+  padding-inline: var(--space-2xs);
 }

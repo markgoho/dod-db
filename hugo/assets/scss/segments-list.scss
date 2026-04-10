@@ -1,70 +1,88 @@
-// ============================================
-// Segments List Page - Segment Cloud Style
-// ============================================
-
 .segments-page {
-  max-width: 60rem;
-  margin: 0 auto;
+  display: grid;
+  gap: var(--space-2xl);
+  justify-items: center;
+}
+
+.segments-hero,
+.page-hero {
+  align-items: center;
+  display: grid;
+  gap: var(--space-s);
+  justify-items: center;
   text-align: center;
 }
 
-.segments-page__title {
-  font-family: var(--font-serif);
-  font-size: var(--step-5);
-  font-weight: 800;
-  color: var(--olive-600);
-  margin: 0 0 var(--space-s) 0;
+.segments-hero {
+  width: 100%;
 }
 
-.segments-page__description {
-  font-size: var(--step-0);
-  color: var(--brown-450);
-  margin: 0 0 var(--space-xl) 0;
+.segments-hero__eyebrow,
+.page-hero__eyebrow {
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
 }
 
-// Segment cloud - teal color scheme
-.segments-cloud {
+.segments-hero__title,
+.page-hero__title {
+  margin: 0;
+}
+
+.segments-hero__description,
+.page-hero__description {
+  margin: 0;
+  max-width: 42rem;
+  padding: var(--space-s) var(--space-m);
+}
+
+.segments-cloud,
+.token-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2xs);
-  justify-content: center;
+  gap: var(--space-s);
 }
 
-.segment-pill {
-  display: inline-flex;
+.segment-pill,
+.token-pill {
   align-items: center;
-  gap: var(--space-3xs);
-  padding: var(--space-3xs) var(--space-2xs);
-  font-size: var(--step--1);
-  font-weight: 600;
-  background: var(--teal-100);
-  color: var(--teal-600);
+  background: var(--tan-000);
+  border: var(--border-width-md) solid var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
+  color: var(--color-text-main);
+  display: inline-flex;
+  gap: var(--space-xs);
+  min-block-size: calc(var(--space-xl) + var(--space-2xs));
+  padding-inline: var(--space-s);
   text-decoration: none;
-  border: var(--border-width-sm) solid var(--teal-300);
-  border-radius: 2rem;
-  transition: all 0.2s ease;
-
-  &:hover {
-    background: var(--teal-400);
-    color: var(--tan-000);
-    border-color: var(--teal-400);
-
-    .segment-pill__count {
-      background: color-mix(in srgb, var(--tan-000) 20%, transparent);
-      color: var(--tan-000);
-    }
-  }
 }
 
-.segment-pill__count {
-  font-family: var(--font-serif);
-  font-size: var(--step--2);
-  font-weight: 700;
-  color: var(--teal-500);
-  background: var(--teal-200);
-  padding: var(--space-4xs) var(--space-3xs);
-  border-radius: var(--border-radius-md);
-  min-width: 1.5rem;
-  text-align: center;
-  transition: all 0.2s ease;
+.segment-pill:hover,
+.segment-pill:focus-visible,
+.token-pill:hover,
+.token-pill:focus-visible {
+  background: var(--teal-400);
+}
+
+.segment-pill__name,
+.token-pill__name {
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+.segment-pill__count,
+.token-pill__count {
+  align-items: center;
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+  display: inline-flex;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  justify-content: center;
+  min-block-size: calc(var(--space-s) + var(--space-2xs));
+  min-inline-size: calc(var(--space-s) + var(--space-2xs));
+  padding-inline: var(--space-2xs);
 }
