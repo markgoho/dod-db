@@ -21,21 +21,21 @@
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-unicorn": "^62.0.0",
-    "firebase-tools": "^15.13.0",
+    "firebase-tools": "^15.14.0",
     "globals": "^17.4.0",
     "jiti": "^2.6.1",
     "prettier": "^3.8.1",
     "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-organize-imports": "^4.3.0",
-    "typescript-eslint": "^8.58.0"
+    "typescript-eslint": "^8.58.1"
   },
   "peerDependencies": {
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@google/genai": "^1.48.0",
+    "@google/genai": "^1.49.0",
     "assemblyai": "^4.29.0",
-    "firebase-admin": "^13.7.0",
+    "firebase-admin": "^13.8.0",
     "llm-chunk": "^0.0.1",
     "slugify": "^1.6.9",
     "zod": "^4.3.6"
