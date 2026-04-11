@@ -3,6 +3,11 @@
   gap: var(--space-2xl);
 }
 
+.episode-page.container--wide {
+  max-width: none;
+  padding-inline: var(--space-s);
+}
+
 .episode-hero {
   align-items: center;
   display: grid;
@@ -36,6 +41,11 @@
 .episode-primary {
   display: grid;
   gap: var(--space-xl);
+}
+
+.episode-primary__media-column {
+  display: grid;
+  gap: var(--space-l);
 }
 
 .episode-media {
@@ -130,16 +140,16 @@
 }
 
 .audio-player__header {
-  align-items: start;
+  align-items: center;
   display: flex;
   gap: var(--space-xs);
   justify-content: space-between;
 }
 
 .audio-player__title {
-  color: var(--color-text-main);
+  color: var(--color-text-muted);
   font-family: var(--font-family-display);
-  font-size: var(--step-1);
+  font-size: var(--step--1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
   letter-spacing: var(--letter-spacing-heading);
@@ -150,29 +160,29 @@
 .audio-player__speed {
   background: var(--tan-900);
   border: var(--border-width-sm) solid var(--tan-900);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
   color: var(--color-text-inverse);
   cursor: pointer;
   font-family: var(--font-family-display);
-  font-size: var(--step--1);
+  font-size: var(--step-0);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
   letter-spacing: var(--letter-spacing-heading);
-  min-inline-size: var(--space-xl);
-  padding-block: var(--space-4xs);
-  padding-inline: var(--space-xs);
+  min-inline-size: calc(var(--space-xl) + var(--space-s));
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
   text-transform: uppercase;
 }
 
-.audio-player__controls {
-  align-items: stretch;
+.audio-player__hero {
+  align-items: center;
   display: grid;
   gap: var(--space-s);
-  grid-template-columns: auto minmax(0, 1fr);
+  justify-items: stretch;
 }
 
 .audio-player__play {
   align-items: center;
-  align-self: stretch;
   background: color-mix(in srgb, var(--tan-000) 30%, var(--color-action));
   border: var(--border-width-md) solid var(--tan-900);
   box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
@@ -180,10 +190,11 @@
   color: var(--color-text-main);
   cursor: pointer;
   display: inline-flex;
-  gap: var(--space-xs);
-  inline-size: calc(var(--space-xl) * 2);
+  flex-direction: column;
+  gap: var(--space-3xs);
+  inline-size: 100%;
   justify-content: center;
-  min-block-size: var(--space-xl);
+  min-block-size: calc(var(--space-2xl) + var(--space-s));
   padding-block: var(--space-xs);
   padding-inline: var(--space-s);
 }
@@ -233,6 +244,14 @@
   text-transform: uppercase;
 }
 
+.audio-player__play-text {
+  font-size: var(--step-0);
+}
+
+.audio-player__hero .audio-player__speed {
+  justify-self: center;
+}
+
 .audio-player__transport {
   align-content: center;
   background:
@@ -244,16 +263,17 @@
     color-mix(in srgb, var(--tan-000) 92%, var(--tan-200));
   border: var(--border-width-sm) solid var(--tan-900);
   display: grid;
-  gap: var(--space-2xs);
+  gap: var(--space-xs);
+  inline-size: 100%;
   min-inline-size: 0;
-  padding: var(--space-xs);
+  padding: var(--space-s);
 }
 
 .audio-player__meta-row {
   align-items: center;
   display: flex;
   gap: var(--space-xs);
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .audio-player__scrubber-label {
@@ -262,6 +282,7 @@
 
 .audio-player__scrubber-text {
   color: var(--color-text-muted);
+  display: none;
 }
 
 .audio-player__scrubber {
@@ -317,7 +338,7 @@
   display: inline-flex;
   font-size: var(--step--2);
   gap: var(--space-3xs);
-  justify-self: end;
+  justify-self: center;
 }
 
 .audio-player__play:focus-visible,
@@ -384,6 +405,10 @@
   display: grid;
 }
 
+.episode-segments--subtle {
+  gap: var(--space-xs);
+}
+
 .episode-segments__grid {
   display: grid;
   gap: var(--space-s);
@@ -411,6 +436,11 @@
 }
 
 .episode-transcript {
+  display: grid;
+  gap: var(--space-s);
+}
+
+.transcript-preview {
   display: grid;
   gap: var(--space-s);
 }
@@ -481,6 +511,37 @@
   display: grid;
   gap: var(--space-xs);
   padding: var(--space-l);
+}
+
+.episode-transcript:not(.episode-transcript--revealed) .transcript-content {
+  mask-image: linear-gradient(
+    to bottom,
+    var(--tan-900) 0,
+    var(--tan-900) 72%,
+    transparent 100%
+  );
+  max-block-size: calc(var(--space-3xl) * 5);
+  overflow: hidden;
+}
+
+.transcript-reveal-button {
+  background: var(--tan-900);
+  border: var(--border-width-sm) solid var(--tan-900);
+  color: var(--color-text-inverse);
+  cursor: pointer;
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  justify-self: start;
+  letter-spacing: var(--letter-spacing-heading);
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
+  text-transform: uppercase;
+}
+
+.episode-transcript.episode-transcript--revealed .transcript-reveal-button {
+  display: none;
 }
 
 .transcript-line {
@@ -554,9 +615,11 @@
   color: var(--tan-900);
 }
 
-.episode-sidebar {
+.episode-metadata-footer {
+  align-items: start;
   display: grid;
   gap: var(--space-l);
+  margin-block-start: var(--space-xl);
 }
 
 .episode-sidebar__section {
@@ -583,28 +646,44 @@
 
 @media (width > 70rem) {
   .episode-layout {
+    display: block;
+  }
+
+  .episode-primary {
     align-items: start;
-    grid-template-columns: minmax(0, 2fr) minmax(
-        var(--content-min-width-sidebar),
+    gap: var(--space-l);
+    grid-template-columns: minmax(0, var(--content-max-width-sidebar)) minmax(
+        0,
         1fr
       );
   }
 
+  .episode-primary__media-column {
+    position: sticky;
+    inset-block-start: calc(var(--space-s) + var(--space-xs));
+  }
+
   .episode-media.panel .episode-media__body {
-    grid-template-columns:
-      minmax(12rem, var(--content-max-width-sidebar))
-      minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .episode-media.panel:has(.video-player) {
-    grid-column: 1 / -1;
+    grid-column: auto;
   }
 
   .episode-media.panel:has(.video-player) .episode-media__body {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  .episode-transcript {
+    min-width: 0;
+  }
+
   .episode-segments__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .episode-metadata-footer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

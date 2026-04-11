@@ -9,7 +9,7 @@
   {{ $guests := .Params.guests | default slice }}
 
 
-  <article class="episode-page">
+  <article class="episode-page container--wide">
     <header class="episode-hero">
       <div class="episode-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow"
@@ -27,41 +27,40 @@
 
     <div class="episode-layout">
       <section class="episode-primary">
-        <section
-          class="episode-media {{ if not .Params.audioUrl }}panel{{ end }}">
-          <div class="episode-media__body">
-            {{ if .Params.audioUrl }}
-              <div class="episode-media__details audio-player">
-                <div class="audio-player__shell">
-                  <div class="audio-player__header">
-                    <span class="audio-player__title"
-                      >Episode {{ .Params.episodeNumber }} •
-                      {{ .Date.Format "Jan 2, 2006" }}</span
-                    >
-                    <button
-                      class="audio-player__speed"
-                      type="button"
-                      aria-label="Playback speed"
-                      aria-live="polite">
-                      1×
-                    </button>
-                  </div>
-                  <div class="audio-player__controls">
-                    <button
-                      class="audio-player__play"
-                      type="button"
-                      aria-label="Play episode {{ .Params.episodeNumber }}"
-                      aria-pressed="false">
-                      <span class="audio-player__play-icon" aria-hidden="true"
-                        ><span class="audio-player__pause-bars"></span
-                      ></span>
-                      <span class="audio-player__play-text">Play</span>
-                    </button>
+        <div class="episode-primary__media-column">
+          <section
+            class="episode-media {{ if not .Params.audioUrl }}panel{{ end }}">
+            <div class="episode-media__body">
+              {{ if .Params.audioUrl }}
+                <div class="episode-media__details audio-player">
+                  <div class="audio-player__shell">
+                    <div class="audio-player__header">
+                      <span class="audio-player__title"
+                        >Episode {{ .Params.episodeNumber }} •
+                        {{ .Date.Format "Jan 2, 2006" }}</span
+                      >
+                    </div>
+                    <div class="audio-player__hero">
+                      <button
+                        class="audio-player__play"
+                        type="button"
+                        aria-label="Play episode {{ .Params.episodeNumber }}"
+                        aria-pressed="false">
+                        <span class="audio-player__play-icon" aria-hidden="true"
+                          ><span class="audio-player__pause-bars"></span
+                        ></span>
+                        <span class="audio-player__play-text">Play</span>
+                      </button>
+                      <button
+                        class="audio-player__speed"
+                        type="button"
+                        aria-label="Playback speed"
+                        aria-live="polite">
+                        1×
+                      </button>
+                    </div>
                     <div class="audio-player__transport">
                       <div class="audio-player__meta-row">
-                        <span class="audio-player__scrubber-text type-eyebrow"
-                          >Timeline</span
-                        >
                         <div class="audio-player__time" aria-live="off">
                           <span class="audio-player__current-time">0:00</span>
                           <span aria-hidden="true">/</span>
@@ -80,54 +79,55 @@
                       </label>
                     </div>
                   </div>
+                  <audio preload="metadata" src="{{ .Params.audioUrl }}">
+                    Your browser does not support the audio element.
+                  </audio>
                 </div>
-                <audio preload="metadata" src="{{ .Params.audioUrl }}">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            {{ else }}
-              {{ with .Params.videoId }}
-                <div
-                  class="episode-media__video video-player"
-                  data-video-id="{{ . }}">
-                  <a
-                    href="https://www.youtube.com/watch?v={{ . }}"
-                    target="_blank"
-                    rel="noopener">
-                    <img
-                      src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
-                      alt="Watch {{ $.Title }} on YouTube"
-                      loading="lazy"
-                      onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'" />
-                  </a>
-                </div>
-              {{ end }}
-            {{ end }}
-          </div>
-        </section>
-
-        {{ if .Params.segmentData }}
-          <section class="episode-segments">
-            <h2 class="type-section-title">Analysis Segments</h2>
-            <div class="episode-segments__grid">
-              {{ range .Params.segmentData }}
-                <a
-                  class="episode-segment-card panel {{ if eq .type "what-is-that" }}
-                    panel--accent
-                  {{ end }}"
-                  id="{{ .type }}"
-                  href="#{{ .type }}"
-                  data-start="{{ .startSeconds }}">
-                  <span class="episode-segment-card__label type-eyebrow"
-                    >{{ .type }}</span
-                  >
-                  <span class="episode-segment-card__title">{{ .label }}</span>
-                </a>
+              {{ else }}
+                {{ with .Params.videoId }}
+                  <div
+                    class="episode-media__video video-player"
+                    data-video-id="{{ . }}">
+                    <a
+                      href="https://www.youtube.com/watch?v={{ . }}"
+                      target="_blank"
+                      rel="noopener">
+                      <img
+                        src="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg"
+                        alt="Watch {{ $.Title }} on YouTube"
+                        loading="lazy"
+                        onerror="this.src='https://img.youtube.com/vi/{{ . }}/hqdefault.jpg'" />
+                    </a>
+                  </div>
+                {{ end }}
               {{ end }}
             </div>
           </section>
-        {{ end }}
 
+          {{ if .Params.segmentData }}
+            <section class="episode-segments episode-segments--subtle">
+              <h2 class="type-section-title">Analysis Segments</h2>
+              <div class="episode-segments__grid">
+                {{ range .Params.segmentData }}
+                  <a
+                    class="episode-segment-card panel {{ if eq .type "what-is-that" }}
+                      panel--accent
+                    {{ end }}"
+                    id="{{ .type }}"
+                    href="#{{ .type }}"
+                    data-start="{{ .startSeconds }}">
+                    <span class="episode-segment-card__label type-eyebrow"
+                      >{{ .type }}</span
+                    >
+                    <span class="episode-segment-card__title"
+                      >{{ .label }}</span
+                    >
+                  </a>
+                {{ end }}
+              </div>
+            </section>
+          {{ end }}
+        </div>
 
         <section class="episode-transcript">
           <div class="transcript-header">
@@ -140,44 +140,55 @@
               <span class="toggle-label">Auto-scroll</span>
             </label>
           </div>
-          <div class="transcript-content panel">
-            {{ .Content }}
+          <div class="transcript-preview">
+            <div class="transcript-content panel">
+              {{ .Content }}
+            </div>
+            <button class="transcript-reveal-button" type="button">
+              Show full transcript
+            </button>
           </div>
         </section>
       </section>
 
-      <aside class="episode-sidebar">
-        {{ if .Params.books }}
-          <section class="episode-sidebar__section panel">
-            <h2 class="episode-sidebar__title">Scripture Index</h2>
-            <div class="chip-list">
-              {{ range .Params.books }}
-                <a href="/books/{{ . | urlize }}/" class="chip">{{ . }}</a>
-              {{ end }}
-            </div>
-          </section>
-        {{ end }}
+      {{ if or .Params.books .Params.tags }}
+        <section class="episode-metadata-footer">
+          {{ if .Params.books }}
+            <section class="episode-sidebar__section panel">
+              <h2 class="episode-sidebar__title">Scripture Index</h2>
+              <div class="chip-list">
+                {{ range .Params.books }}
+                  <a href="/books/{{ . | urlize }}/" class="chip">{{ . }}</a>
+                {{ end }}
+              </div>
+            </section>
+          {{ end }}
 
-        {{ if .Params.tags }}
-          <section class="episode-sidebar__section panel panel--muted">
-            <h2 class="episode-sidebar__title">Terminology</h2>
-            <div class="chip-list">
-              {{ range .Params.tags }}
-                <a href="/tags/{{ . | urlize }}/" class="chip">{{ . }}</a>
-              {{ end }}
-            </div>
-          </section>
-        {{ end }}
-      </aside>
+          {{ if .Params.tags }}
+            <section class="episode-sidebar__section panel panel--muted">
+              <h2 class="episode-sidebar__title">Terminology</h2>
+              <div class="chip-list">
+                {{ range .Params.tags }}
+                  <a href="/tags/{{ . | urlize }}/" class="chip">{{ . }}</a>
+                {{ end }}
+              </div>
+            </section>
+          {{ end }}
+        </section>
+      {{ end }}
     </div>
   </article>
 {{ end }}
 
 {{ define "footer-scripts" }}
-  {{ $opts := dict "targetPath" "video-player.js" }}
-  {{ $built := resources.Get "ts/video-player.ts" | js.Build $opts }}
+  {{ $videoOpts := dict "targetPath" "video-player.js" }}
+  {{ $videoBuilt := resources.Get "ts/video-player.ts" | js.Build $videoOpts }}
+  {{ $previewOpts := dict "targetPath" "transcript-preview.js" }}
+  {{ $previewBuilt := resources.Get "ts/transcript-preview.ts" | js.Build $previewOpts }}
   {{ if hugo.IsProduction }}
-    {{ $built = $built | resources.Minify | resources.Fingerprint }}
+    {{ $videoBuilt = $videoBuilt | resources.Minify | resources.Fingerprint }}
+    {{ $previewBuilt = $previewBuilt | resources.Minify | resources.Fingerprint }}
   {{ end }}
-  <script src="{{ $built.RelPermalink }}"></script>
+  <script src="{{ $videoBuilt.RelPermalink }}"></script>
+  <script src="{{ $previewBuilt.RelPermalink }}"></script>
 {{ end }}

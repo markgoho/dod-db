@@ -30,7 +30,12 @@
         {{ end }}
       </header>
 
-      <main class="main site-main container">
+      <main
+        class="main site-main {{ if and (eq .Section "episodes") .IsPage }}
+          container--wide
+        {{ else }}
+          container
+        {{ end }}">
         {{ block "main" . }}
         {{ end }}
       </main>

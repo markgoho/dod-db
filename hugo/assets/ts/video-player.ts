@@ -179,7 +179,7 @@ function findCurrentLineIndex(currentTime: number): number {
 function scrollToLine(element: HTMLElement): void {
   element.scrollIntoView({
     behavior: "smooth",
-    block: "center",
+    block: "nearest",
   });
 }
 
@@ -244,7 +244,7 @@ function handleInitialHash(): void {
   // Handle transcript lines
   if (element.classList.contains("transcript-line")) {
     // Scroll to element
-    element.scrollIntoView({ behavior: "smooth", block: "center" });
+    element.scrollIntoView({ behavior: "smooth", block: "nearest" });
 
     // Highlight it
     element.classList.add("active");

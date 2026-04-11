@@ -1,8 +1,5 @@
 .header {
   container: header / inline-size;
-  inset-block-start: 0;
-  position: sticky;
-  z-index: var(--z-index-sticky);
 }
 
 .navbar {
