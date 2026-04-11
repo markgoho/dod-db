@@ -6,24 +6,101 @@
 {{ end }}
 
 {{ define "main" }}
+  {{ $profiles := index hugo.Data "guest-profiles" }}
+  {{ $profile := index $profiles .Title }}
+  <a href="/guests/" class="button-brutalist guest-hero__back">← All Guests</a>
   <section class="guest-page">
-    <header class="guest-hero">
-      <a href="/guests/" class="button-brutalist guest-hero__back"
-        >← All Guests</a
-      >
-      <div class="guest-hero__eyebrow panel panel--accent">
-        <span class="type-eyebrow">Guest dossier</span>
-      </div>
-      <h1 class="guest-hero__title">{{ .Title }}</h1>
-      <div class="guest-hero__meta panel">
-        <span class="guest-hero__stat-number">{{ len .Pages }}</span>
-        <span class="guest-hero__stat-label"
-          >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
-        >
+    <header class="guest-hero{{ if $profile }} guest-hero--profile{{ end }}">
+      {{ if $profile.image }}
+        <figure class="guest-hero__portrait panel">
+          <img
+            src="{{ $profile.image }}"
+            alt="{{ $profile.imageAlt }}"
+            class="guest-hero__portrait-image" />
+        </figure>
+      {{ end }}
+      <div class="guest-hero__content">
+        <h1 class="guest-hero__title">{{ .Title }}</h1>
+        {{ if $profile.shortRole }}
+          <p class="guest-hero__summary-role panel panel--accent">
+            {{ $profile.shortRole }}
+          </p>
+        {{ end }}
+        {{ if $profile.dek }}
+          <p class="guest-hero__dek">{{ $profile.dek }}</p>
+        {{ end }}
+        <div class="guest-hero__meta panel">
+          <span class="guest-hero__stat-number">{{ len .Pages }}</span>
+          <span class="guest-hero__stat-label"
+            >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
+          >
+        </div>
       </div>
     </header>
 
+    {{ if $profile }}
+      <div class="guest-profile-grid">
+        {{ with $profile.bio }}
+          <section class="guest-profile-panel panel">
+            <h2 class="type-section-title guest-profile-panel__title">
+              Profile
+            </h2>
+            <p class="guest-profile-panel__body">{{ . }}</p>
+          </section>
+        {{ end }}
+
+        {{ if $profile.expertise }}
+          <section class="guest-profile-panel panel panel--muted">
+            <h2 class="type-section-title guest-profile-panel__title">
+              Focus Areas
+            </h2>
+            <ul class="guest-profile-chips" role="list">
+              {{ range $profile.expertise }}
+                <li class="chip guest-profile-chip">{{ . }}</li>
+              {{ end }}
+            </ul>
+          </section>
+        {{ end }}
+
+        {{ if or $profile.works $profile.affiliations }}
+          <section class="guest-profile-panel panel">
+            <h2 class="type-section-title guest-profile-panel__title">
+              Selected Work
+            </h2>
+            {{ with $profile.works }}
+              <div class="guest-profile-list-block">
+                <p class="guest-profile-list-label type-eyebrow">Books</p>
+                <ul class="guest-profile-list" role="list">
+                  {{ range . }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+            {{ with $profile.affiliations }}
+              <div class="guest-profile-list-block">
+                <p class="guest-profile-list-label type-eyebrow">
+                  Affiliations
+                </p>
+                <ul class="guest-profile-list" role="list">
+                  {{ range . }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+          </section>
+        {{ end }}
+      </div>
+    {{ end }}
+
+
     <section class="guest-episodes">
+      {{ if $profile }}
+        <h2 class="type-section-title guest-episodes__title">
+          Appearances on the show
+        </h2>
+      {{ end }}
       <div class="episodes-grid">
         {{ range sort .Pages ".Params.episodeNumber" "desc" }}
           {{ $guests := .Params.guests }}

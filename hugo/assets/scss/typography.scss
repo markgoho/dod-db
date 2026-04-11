@@ -73,6 +73,7 @@ h1 {
   font-size: var(--step-6);
   line-height: var(--line-height-tight);
   letter-spacing: var(--letter-spacing-tight);
+  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
   text-wrap: balance;
 }
 
