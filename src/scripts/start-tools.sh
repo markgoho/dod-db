@@ -36,7 +36,8 @@ cd tools && bun \
   validate-timestamps/index.html \
   episode/index/index.html \
   episode/segments/index.html \
-  episode/tags/index.html
+  episode/tags/index.html \
+  episode/scriptures/index.html
 
 # Cleanup on exit
 trap "kill $API_PID 2>/dev/null" EXIT

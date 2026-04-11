@@ -11,6 +11,7 @@ export type {
   AudioPlayerOptions,
   BreadcrumbItem,
   Episode,
+  EpisodeScripture,
   EpisodeSegment,
   EpisodeTag,
   EpisodeWithAudio,
@@ -36,6 +37,7 @@ export {
 
 // Re-export API utilities
 export {
+  addScriptureBook,
   fetchSegmentMetadata,
   getAllEpisodes,
   getEpisode,
@@ -140,6 +142,7 @@ export {
 
 // Import for namespace object
 import {
+  addScriptureBook,
   fetchSegmentMetadata,
   getAllEpisodes,
   getEpisode,
@@ -239,6 +242,7 @@ export const DoDTools = {
   parseTranscript,
   fetchSegmentMetadata,
   saveSegments,
+  addScriptureBook,
 
   // UI
   renderBreadcrumbs,

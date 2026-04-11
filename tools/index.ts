@@ -138,7 +138,7 @@ function renderEpisodes(): void {
       const moreCount = tagCount > 4 ? tagCount - 4 : 0;
 
       return `
-      <a href="/episode/${episode.videoId}" class="episode-card">
+      <a href="/episode/index?id=${episode.videoId}" class="episode-card">
         <div class="episode-header">
           <div class="episode-number">Episode ${episode.episodeNumber || "?"}</div>
           <div class="episode-title">${DoDTools.escapeHtml(episode.title)}</div>

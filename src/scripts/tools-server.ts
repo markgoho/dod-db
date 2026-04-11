@@ -10,6 +10,7 @@
  */
 
 import * as path from "node:path";
+import { getBookByAnyName } from "../config/get-book-by-any-name.js";
 import {
   SEGMENT_COLORS,
   SEGMENT_LABELS,
@@ -26,6 +27,7 @@ import {
 import { approveCandidate } from "../pipeline/approve-candidate.js";
 import type { CorrectionCandidate } from "../pipeline/correction-tracker.js";
 import { deleteTagFromVocabulary } from "../pipeline/delete-tag-from-vocabulary.js";
+import { extractSingleBookScripture } from "../pipeline/extract-single-book-scripture.js";
 import { findTag } from "../pipeline/find-tag.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
 import { generateTranscriptFilename } from "../pipeline/generate-transcript-filename.js";
@@ -42,8 +44,12 @@ import {
 import { getProcessedVideosWithNumbers } from "../storage/get-processed-videos-with-numbers.js";
 import { getVideoById } from "../storage/get-video-by-id.js";
 import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import type { EpisodeSegment } from "../storage/processed-videos.js";
+import type {
+  EpisodeScripture,
+  EpisodeSegment,
+} from "../storage/processed-videos.js";
 import { saveProcessedVideos } from "../storage/save-processed-videos.js";
+import { updateVideoScriptures } from "../storage/update-video-scriptures.js";
 import { updateVideoSegments } from "../storage/update-video-segments.js";
 import { isScriptureTag } from "../utils/is-scripture-tag.js";
 import { removeTagFromEpisode } from "../utils/remove-tag-from-episode.js";
@@ -1505,6 +1511,98 @@ const _server = Bun.serve({
         ...video,
         hasAudio: !!audioPath,
       });
+    }
+
+    // Episode API: Add a scripture book to an episode
+    if (
+      /^\/api\/episode\/[^/]+\/scriptures\/add$/.test(url.pathname) &&
+      request.method === "POST"
+    ) {
+      const videoId = url.pathname.split("/")[3] ?? "";
+
+      try {
+        const body = (await request.json()) as { bookName?: string };
+        const bookName = body.bookName?.trim();
+
+        if (!bookName) {
+          return jsonResponse({ error: "bookName is required" }, 400);
+        }
+
+        const book = getBookByAnyName(bookName);
+        if (!book) {
+          return jsonResponse({ error: `Unknown book: "${bookName}"` }, 400);
+        }
+
+        const video = await getVideoById(videoId);
+        if (!video) {
+          return jsonResponse({ error: "Episode not found" }, 404);
+        }
+
+        const existingScriptures = video.scriptures ?? [];
+        const alreadyPresent = existingScriptures.some(
+          scripture =>
+            scripture.book.toLowerCase() === book.canonical.toLowerCase(),
+        );
+
+        if (alreadyPresent) {
+          return jsonResponse({
+            success: false,
+            alreadyPresent: true,
+            book: book.canonical,
+          });
+        }
+
+        const transcript = await Bun.file(video.transcriptPath).text();
+        const extractedScripture = await extractSingleBookScripture(
+          transcript,
+          book.canonical,
+          {
+            enableLlmVerification: true,
+            episodeContext: {
+              videoId,
+              title: video.title,
+            },
+          },
+        );
+
+        if (!extractedScripture) {
+          return jsonResponse(
+            {
+              error: `No verified references found for ${book.canonical} in this transcript`,
+            },
+            400,
+          );
+        }
+
+        const nextScriptures: EpisodeScripture[] = [
+          ...existingScriptures,
+          extractedScripture,
+        ].sort((a, b) => a.book.localeCompare(b.book));
+
+        await updateVideoScriptures(videoId, nextScriptures);
+
+        const updatedVideo = await getVideoById(videoId);
+        if (updatedVideo) {
+          await generateHugoEpisode(updatedVideo, { silent: true });
+        }
+
+        return jsonResponse({
+          success: true,
+          book: extractedScripture.book,
+          mentions: extractedScripture.mentions,
+          references: extractedScripture.references,
+        });
+      } catch (error) {
+        return jsonResponse(
+          {
+            error:
+              error instanceof Error
+                ? error.message
+                : "Failed to add scripture book",
+          },
+          500,
+        );
+      }
     }
 
     // Episode API: Get corrections scoped to an episode

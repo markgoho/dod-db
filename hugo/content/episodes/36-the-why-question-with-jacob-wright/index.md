@@ -17,6 +17,7 @@ tags:
   - Deborah
   - Deuteronomy
   - Esau
+  - Esther
   - Garden of Eden
   - Jeremiah
   - King Saul

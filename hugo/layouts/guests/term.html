@@ -10,7 +10,7 @@
   {{ $profile := index $profiles .Title }}
   <a href="/guests/" class="button-brutalist guest-hero__back">← All Guests</a>
   <section class="guest-page">
-    <header class="guest-hero{{ if $profile }} guest-hero--profile{{ end }}">
+    <header class="guest-hero{{ if $profile }}guest-hero--profile{{ end }}">
       {{ if $profile.image }}
         <figure class="guest-hero__portrait panel">
           <img
@@ -118,7 +118,7 @@
                 {{ if gt (len $guests) 0 }}
                   <div class="episode-card__guest">
                     with
-                    {{ index $guests 0 }}
+                    {{ delimit $guests ", " " & " }}
                   </div>
                 {{ end }}
                 <time

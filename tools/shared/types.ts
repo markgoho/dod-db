@@ -15,11 +15,18 @@ export interface Episode {
   transcriptPath: string;
   episodeNumber?: number;
   tags?: EpisodeTag[];
+  scriptures?: EpisodeScripture[];
   segments?: EpisodeSegment[];
 }
 
 export interface EpisodeTag {
   tag: string;
+  mentions: number;
+}
+
+export interface EpisodeScripture {
+  book: string;
+  references: string[];
   mentions: number;
 }
 

@@ -1,0 +1,121 @@
+/* Page-specific styles */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .two-column {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.scriptures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.scripture-card {
+  padding: 18px;
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-gray-200);
+}
+
+.scripture-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.scripture-book {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-gray-800);
+}
+
+.scripture-mentions {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  background: white;
+  border-radius: var(--radius-full);
+  padding: 6px 12px;
+}
+
+.scripture-meta {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-gray-500);
+  margin-bottom: 12px;
+}
+
+.scripture-references {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.scripture-reference {
+  font-size: 12px;
+  padding: 4px 10px;
+  background: white;
+  border-radius: var(--radius-full);
+  color: var(--color-gray-700);
+  border: 1px solid var(--color-gray-200);
+}
+
+.sidebar-section {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.sidebar-section h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-gray-200);
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.summary-stat {
+  text-align: center;
+  padding: 16px;
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+}
+
+.summary-stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.summary-stat-label {
+  font-size: 12px;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.notes-list {
+  padding-left: 20px;
+  color: var(--color-gray-600);
+  display: grid;
+  gap: 10px;
+  font-size: 14px;
+}

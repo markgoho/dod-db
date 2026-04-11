@@ -12,8 +12,9 @@
     "lint": "eslint .",
     "format": "prettier --write . --ignore-unknown",
     "check": "bun run typecheck && bun run lint && bun run format",
-    "hugo:dev": "cd hugo && hugo server",
-    "build:hugo": "cd hugo && hugo --minify"
+    "generate:tag-index": "bun run src/scripts/generate-tag-episode-index.ts",
+    "hugo:dev": "bun run generate:tag-index && cd hugo && hugo server",
+    "build:hugo": "bun run generate:tag-index && cd hugo && hugo --minify"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",

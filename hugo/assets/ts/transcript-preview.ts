@@ -1,4 +1,4 @@
-function revealTranscript(): void {
+export function revealTranscript(): void {
   const transcript = document.querySelector<HTMLElement>(".episode-transcript");
   transcript?.classList.add("episode-transcript--revealed");
 }
@@ -10,6 +10,10 @@ function initTranscriptPreview(): void {
 
   if (transcriptRevealButton) {
     transcriptRevealButton.addEventListener("click", revealTranscript);
+  }
+
+  if (globalThis.location.hash.startsWith("#t-")) {
+    revealTranscript();
   }
 
   const mediaPlayer = document.querySelector("audio, .video-player");

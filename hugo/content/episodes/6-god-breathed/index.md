@@ -16,6 +16,7 @@ tags:
   - Abraham
   - inerrancy
   - Elhanan son of Jair
+  - Esther
   - Romans
   - Isaiah
   - Council of Jerusalem

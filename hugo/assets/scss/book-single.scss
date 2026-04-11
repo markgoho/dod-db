@@ -5,31 +5,6 @@
   gap: var(--space-2xl);
 }
 
-.book-hero,
-.page-hero {
-  align-items: center;
-  display: grid;
-  gap: var(--space-s);
-  justify-items: center;
-  text-align: center;
-}
-
-.book-hero__back,
-.term-page__back {
-  justify-self: start;
-}
-
-.book-hero__eyebrow,
-.page-hero__eyebrow {
-  padding-block: var(--space-2xs);
-  padding-inline: var(--space-s);
-}
-
-.book-hero__title,
-.page-hero__title {
-  margin: 0;
-}
-
 .book-hero__meta,
 .page-hero__meta {
   align-items: center;

@@ -23,6 +23,7 @@ tags:
   - Jephthah
   - Judah
   - Leah
+  - Esther
   - King James Version
   - Tamar
   - Ugarit

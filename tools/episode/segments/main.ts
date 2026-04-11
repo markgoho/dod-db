@@ -73,7 +73,7 @@ async function init(): Promise<void> {
       "#breadcrumb-episode",
     ) as HTMLAnchorElement;
     if (breadcrumbEpisode) {
-      breadcrumbEpisode.href = `/episode/${videoId}`;
+      breadcrumbEpisode.href = `/episode/index?id=${videoId}`;
       breadcrumbEpisode.textContent = `Episode ${episode.episodeNumber || "?"}`;
     }
 

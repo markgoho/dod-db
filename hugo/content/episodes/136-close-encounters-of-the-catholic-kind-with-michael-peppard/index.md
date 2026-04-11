@@ -19,6 +19,7 @@ tags:
   - Paul
   - Romans
   - Book of Enoch
+  - Esther
   - Gabriel
   - Hell
   - Martin Luther

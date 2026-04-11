@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scriptures - Episode - Data Over Dogma Tools</title>
+    <link rel="stylesheet" href="/shared/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container-wide">
+      <div
+        class="section"
+        style="background: transparent; box-shadow: none; padding: 0"
+      >
+        <nav class="breadcrumbs">
+          <a href="/">Episodes</a>
+          <span class="separator">&gt;</span>
+          <a href="#" id="breadcrumb-episode">Episode</a>
+          <span class="separator">&gt;</span>
+          <span class="current">Scriptures</span>
+        </nav>
+
+        <h1 id="page-title">Episode Scriptures</h1>
+        <p class="subtitle">
+          Manage detected Bible books for this episode. Front matter is
+          regenerated from stored scripture metadata.
+        </p>
+      </div>
+
+      <div class="two-column">
+        <div>
+          <div class="section">
+            <div class="summary-stats">
+              <div class="summary-stat">
+                <div class="summary-stat-value" id="total-books">-</div>
+                <div class="summary-stat-label">Books</div>
+              </div>
+              <div class="summary-stat">
+                <div class="summary-stat-value" id="total-mentions">-</div>
+                <div class="summary-stat-label">Mentions</div>
+              </div>
+              <div class="summary-stat">
+                <div class="summary-stat-value" id="total-references">-</div>
+                <div class="summary-stat-label">References</div>
+              </div>
+            </div>
+
+            <div class="scriptures-grid" id="scriptures-container">
+              <div class="loading">Loading scriptures...</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar-section">
+            <h3>Add Book</h3>
+            <form id="add-scripture-form">
+              <div class="form-group">
+                <label class="form-label" for="book-name">Book name *</label>
+                <input
+                  type="text"
+                  id="book-name"
+                  class="form-input"
+                  list="book-options"
+                  placeholder="e.g., Matthew, Matt, 1 Samuel"
+                  required
+                />
+                <datalist id="book-options"></datalist>
+                <div class="form-hint">
+                  Uses deterministic matching first, then LLM verification for
+                  ambiguous book names.
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                Add Book to Episode
+              </button>
+            </form>
+          </div>
+
+          <div class="sidebar-section">
+            <h3>How it works</h3>
+            <ul class="notes-list">
+              <li>
+                Reads the episode transcript and scans for references to the
+                selected canonical book.
+              </li>
+              <li>
+                Uses LLM verification only when needed to distinguish a Bible
+                book from a person or common word.
+              </li>
+              <li>
+                Updates <code>data/processed-videos.json</code> and regenerates
+                the episode front matter.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.ts" type="module"></script>
+  </body>
+</html>

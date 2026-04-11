@@ -56,6 +56,7 @@ function renderEpisode(
   }
 
   const tagCount = episode.tags?.length || 0;
+  const scriptureCount = episode.scriptures?.length || 0;
   const segmentCount = episode.segments?.length || 0;
   const totalMentions =
     episode.tags?.reduce((sum, t) => sum + t.mentions, 0) || 0;
@@ -77,6 +78,10 @@ function renderEpisode(
           <div class="quick-info-label">Tag Mentions</div>
         </div>
         <div class="quick-info-item">
+          <div class="quick-info-value">${scriptureCount}</div>
+          <div class="quick-info-label">Books</div>
+        </div>
+        <div class="quick-info-item">
           <div class="quick-info-value">${segmentCount}</div>
           <div class="quick-info-label">Segments</div>
         </div>
@@ -92,11 +97,12 @@ function renderTools(
 
   const toolsGrid = document.querySelector("#tools-grid");
   const tagCount = episode.tags?.length || 0;
+  const scriptureCount = episode.scriptures?.length || 0;
   const segmentCount = episode.segments?.length || 0;
 
   if (toolsGrid) {
     toolsGrid.innerHTML = `
-      <a href="/episode/${videoId}/segments" class="tool-nav-card">
+      <a href="/episode/segments?id=${videoId}" class="tool-nav-card">
         <span class="tool-nav-icon">📊</span>
         <div class="tool-nav-title">Segments</div>
         <div class="tool-nav-description">
@@ -105,13 +111,22 @@ function renderTools(
         <div class="tool-nav-stat">${segmentCount} segments detected</div>
       </a>
 
-      <a href="/episode/${videoId}/tags" class="tool-nav-card">
+      <a href="/episode/tags?id=${videoId}" class="tool-nav-card">
         <span class="tool-nav-icon">🏷️</span>
         <div class="tool-nav-title">Tags</div>
         <div class="tool-nav-description">
           Browse all tags extracted from this episode, organized by category.
         </div>
         <div class="tool-nav-stat">${tagCount} tags found</div>
+      </a>
+
+      <a href="/episode/scriptures?id=${videoId}" class="tool-nav-card">
+        <span class="tool-nav-icon">📖</span>
+        <div class="tool-nav-title">Scriptures</div>
+        <div class="tool-nav-description">
+          Review detected Bible books and add a book when the transcript supports it.
+        </div>
+        <div class="tool-nav-stat">${scriptureCount} books indexed</div>
       </a>
     `;
   }

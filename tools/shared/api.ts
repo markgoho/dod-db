@@ -123,3 +123,49 @@ export async function saveSegments({
     return false;
   }
 }
+
+export async function addScriptureBook({
+  videoId,
+  bookName,
+}: {
+  videoId: string;
+  bookName: string;
+}): Promise<boolean> {
+  try {
+    const response = await fetch(
+      `${API_BASE_URL}/api/episode/${videoId}/scriptures/add`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ bookName }),
+      },
+    );
+
+    const result = (await response.json()) as {
+      success?: boolean;
+      alreadyPresent?: boolean;
+      error?: string;
+      book?: string;
+    };
+
+    if (response.ok && result.success) {
+      showToast(`Added ${result.book || bookName}`, "success");
+      return true;
+    }
+
+    if (response.ok && result.alreadyPresent) {
+      showToast(
+        `${result.book || bookName} is already on this episode`,
+        "info",
+      );
+      return false;
+    }
+
+    showToast(result.error || "Failed to add scripture book", "error");
+    return false;
+  } catch (error) {
+    console.error("Error adding scripture book:", error);
+    showToast("Failed to add scripture book", "error");
+    return false;
+  }
+}

@@ -38,6 +38,7 @@ tags:
   - Ten Commandments
   - Torah
   - Book of Enoch
+  - Esther
   - Herod the Great
   - inerrancy
   - Judeans

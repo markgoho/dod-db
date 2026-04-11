@@ -5,31 +5,47 @@
   gap: var(--space-2xl);
 }
 
-.tag-hero,
-.page-hero {
-  align-items: center;
-  display: grid;
-  gap: var(--space-s);
-  justify-items: center;
-  text-align: center;
+.tag-hero--profile {
+  align-items: start;
+  gap: var(--space-l);
+  justify-items: stretch;
+  text-align: left;
 }
 
-.tag-hero__back,
-.term-page__back {
-  justify-self: start;
+.tag-hero--profile > * {
+  width: fit-content;
 }
 
-.tag-hero__eyebrow,
-.page-hero__eyebrow {
-  padding-block: var(--space-2xs);
-  padding-inline: var(--space-s);
+.tag-hero--profile .tag-hero__title,
+.tag-hero--profile .tag-hero__dek,
+.tag-hero--profile .tag-hero__meta-row {
+  width: 100%;
 }
 
-.tag-hero__title,
-.page-hero__title {
+.tag-hero__dek {
+  color: var(--color-text-muted);
+  font-size: var(--step-1);
   margin: 0;
 }
 
+.tag-hero--profile .tag-hero__dek {
+  border-inline-start: var(--border-width-md) solid var(--color-action);
+  padding-inline-start: var(--space-m);
+}
+
+.tag-hero__meta-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  justify-content: center;
+}
+
+.tag-hero--profile .tag-hero__meta-row {
+  justify-content: start;
+}
+
+.tag-hero__classification,
 .tag-hero__meta,
 .page-hero__meta {
   align-items: center;
@@ -37,6 +53,15 @@
   flex-direction: column;
   gap: var(--space-4xs);
   padding: var(--space-s) var(--space-l);
+}
+
+.tag-hero__classification-value {
+  font-family: var(--font-family-display);
+  font-size: var(--step-1);
+  font-style: italic;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: capitalize;
 }
 
 .tag-hero__stat-number,
@@ -58,13 +83,97 @@
   text-transform: uppercase;
 }
 
-.tag-episodes .episodes-grid,
-.term-page__episodes-grid {
+.tag-quotes {
+  align-content: start;
+  display: grid;
+  gap: var(--space-m);
+}
+
+.tag-section-title {
+  margin: 0;
+}
+
+.tag-quotes__grid {
+  display: grid;
+  gap: var(--space-m);
+}
+
+.tag-quote {
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-card);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-m);
+}
+
+.tag-quote__text {
+  font-size: var(--step-0);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+.tag-quote__meta {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  justify-content: space-between;
+}
+
+.tag-quote__episode {
+  text-decoration: none;
+}
+
+.tag-section-heading {
+  display: grid;
+  gap: var(--space-2xs);
+}
+
+.tag-section-copy {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.tag-episodes {
   display: grid;
   gap: var(--space-l);
+}
+
+.tag-page .tag-episodes .episodes-grid {
+  display: grid;
+  gap: var(--space-l);
+}
+
+.episode-card__header-row {
+  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  justify-content: space-between;
+}
+
+.episode-card__mention-count {
+  background: var(--color-accent-muted);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text-main);
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  padding: var(--space-4xs) var(--space-2xs);
+  text-transform: uppercase;
 }
 
 .episode-card__tag--current {
   background: var(--color-action);
   color: var(--color-text-inverse);
+}
+
+@media (min-width: 48rem) {
+  .tag-quotes__grid,
+  .tag-page .tag-episodes .episodes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

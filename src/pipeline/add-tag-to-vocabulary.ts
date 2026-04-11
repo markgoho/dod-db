@@ -117,11 +117,11 @@ export type AddTagParams =
 export async function addTagToVocabulary(
   parameters: AddTagParams,
 ): Promise<void> {
-  const { canonical } = parameters;
+  const { canonical, category } = parameters;
 
   await withTagVocabularyWriteLock(async () => {
-    // Block scripture references/books - handled by separate extraction
-    if (isScriptureTag(canonical)) {
+    // Block scripture references/books except when another category disambiguates them
+    if (category === "literature" && isScriptureTag(canonical)) {
       throw new Error(
         `Tag "${canonical}" is a scripture reference or Bible book`,
       );

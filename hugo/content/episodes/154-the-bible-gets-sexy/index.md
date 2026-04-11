@@ -12,6 +12,7 @@ tags:
   - Judah
   - Moses
   - YHWH
+  - Esther
   - Jacob
   - King David
   - King Saul

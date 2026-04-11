@@ -21,6 +21,7 @@ tags:
   - baptism
   - Dead Sea
   - Elijah
+  - Esther
   - Herod the Great
   - Septuagint
   - Bethlehem

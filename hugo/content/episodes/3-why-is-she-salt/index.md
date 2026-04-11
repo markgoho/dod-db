@@ -22,6 +22,7 @@ tags:
   - Moabites
   - Samaritans
   - Adam
+  - Esther
   - Hagar
   - King David
   - King Sennacherib

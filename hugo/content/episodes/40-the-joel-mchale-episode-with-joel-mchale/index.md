@@ -17,6 +17,7 @@ tags:
   - baptism
   - Capernaum
   - Desiderius Erasmus
+  - Esther
   - Galilee
   - Hell
   - Jerusalem

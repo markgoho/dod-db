@@ -5550,6 +5550,16 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
     addedInEpisode: 143,
   },
+  {
+    canonical: "Esther",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "Jewish queen of Persia in the Book of Esther who hides her identity, becomes queen, and intercedes to save the Jews from Haman.",
+    status: "accepted",
+    episodes: [3, 6, 20, 34, 36, 40, 45, 63, 94, 136, 144, 147, 154],
+  },
 ];
 
 /**

@@ -46,6 +46,7 @@ tags:
   - Codex Vaticanus
   - Daniel
   - Didache
+  - Esther
   - First Clement
   - Galilee
   - Hanukkah

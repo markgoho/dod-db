@@ -218,12 +218,19 @@ textarea:not([rows]) {
   text-align: center;
 }
 
-.page-hero__eyebrow {
-  padding-block: var(--space-2xs);
-  padding-inline: var(--space-s);
+.page-hero > :is(.term-page__back, [class$="__back"]) {
+  justify-self: start;
+  width: max-content;
 }
 
-.page-hero__title {
+.page-hero > :is(.page-hero__eyebrow, [class$="__eyebrow"]) {
+  justify-self: start;
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-s);
+  width: max-content;
+}
+
+.page-hero > :is(.page-hero__title, [class$="__title"]) {
   margin: 0;
 }
 
@@ -265,6 +272,12 @@ textarea:not([rows]) {
 
 .term-page__back {
   justify-self: start;
+}
+
+.page-hero
+  > :is(.page-hero__eyebrow, [class$="__eyebrow"])
+  + :is(.page-hero__title, [class$="__title"]) {
+  margin-block-start: var(--space-2xs);
 }
 
 .term-page__episodes-grid {

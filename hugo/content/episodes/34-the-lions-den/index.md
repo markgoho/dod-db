@@ -29,6 +29,7 @@ tags:
   - Catholicism
   - Dead Sea
   - Easter
+  - Esther
   - Hermeneia
   - inerrancy
   - Isaiah

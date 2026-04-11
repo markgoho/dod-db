@@ -7,6 +7,7 @@ aliases:
   - /episodes/147/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/149083715.mp3?sig=ooy9_BMY5colGxQkH0jkPziz_0uOB_zBJ3Rq1UtYiQY%3D
 tags:
+  - Esther
   - Mordecai
   - Haman
   - Purim

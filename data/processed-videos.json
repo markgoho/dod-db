@@ -434,6 +434,10 @@
         "mentions": 2
       },
       {
+        "tag": "Esther",
+        "mentions": 2
+      },
+      {
         "tag": "Hagar",
         "mentions": 2
       },
@@ -888,6 +892,10 @@
       },
       {
         "tag": "Elhanan son of Jair",
+        "mentions": 4
+      },
+      {
+        "tag": "Esther",
         "mentions": 4
       },
       {
@@ -3540,6 +3548,10 @@
         "mentions": 1
       },
       {
+        "tag": "Esther",
+        "mentions": 1
+      },
+      {
         "tag": "First Clement",
         "mentions": 1
       },
@@ -5717,6 +5729,10 @@
         "mentions": 1
       },
       {
+        "tag": "Esther",
+        "mentions": 1
+      },
+      {
         "tag": "Hermeneia",
         "mentions": 1
       },
@@ -5980,6 +5996,10 @@
       },
       {
         "tag": "Esau",
+        "mentions": 2
+      },
+      {
+        "tag": "Esther",
         "mentions": 2
       },
       {
@@ -6627,6 +6647,10 @@
       },
       {
         "tag": "Desiderius Erasmus",
+        "mentions": 1
+      },
+      {
+        "tag": "Esther",
         "mentions": 1
       },
       {
@@ -7512,6 +7536,10 @@
       },
       {
         "tag": "Book of Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Esther",
         "mentions": 1
       },
       {
@@ -10368,6 +10396,10 @@
       {
         "tag": "Leah",
         "mentions": 2
+      },
+      {
+        "tag": "Esther",
+        "mentions": 1
       },
       {
         "tag": "King James Version",
@@ -14882,6 +14914,10 @@
       },
       {
         "tag": "Essenes",
+        "mentions": 1
+      },
+      {
+        "tag": "Esther",
         "mentions": 1
       },
       {
@@ -21362,6 +21398,10 @@
         "mentions": 1
       },
       {
+        "tag": "Esther",
+        "mentions": 1
+      },
+      {
         "tag": "Gabriel",
         "mentions": 1
       },
@@ -22415,6 +22455,10 @@
         "mentions": 2
       },
       {
+        "tag": "Esther",
+        "mentions": 2
+      },
+      {
         "tag": "Herod the Great",
         "mentions": 2
       },
@@ -22904,6 +22948,10 @@
     "processedAt": "2026-04-05T22:32:27.538Z",
     "transcriptPath": "data/transcripts/2026-01-25-hiding-god.txt",
     "tags": [
+      {
+        "tag": "Esther",
+        "mentions": 33
+      },
       {
         "tag": "Mordecai",
         "mentions": 33
@@ -23932,6 +23980,10 @@
       {
         "tag": "YHWH",
         "mentions": 4
+      },
+      {
+        "tag": "Esther",
+        "mentions": 3
       },
       {
         "tag": "Jacob",

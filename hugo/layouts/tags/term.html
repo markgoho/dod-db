@@ -6,76 +6,230 @@
 {{ end }}
 
 {{ define "main" }}
+  {{ $tagIndex := index hugo.Data "tag-episode-index" }}
+  {{ $rankedEpisodes := index $tagIndex .Title | default slice }}
+  {{ $topEpisodesLimit := .Params.topEpisodesLimit | default 6 }}
+  {{ $featuredEpisodes := first $topEpisodesLimit $rankedEpisodes }}
   <section class="tag-page">
-    <header class="tag-hero">
+    <header class="tag-hero{{ if .Params }}tag-hero--profile{{ end }}">
       <a href="/tags/" class="button-brutalist tag-hero__back">← All Topics</a>
       <div class="tag-hero__eyebrow panel panel--accent">
-        <span class="type-eyebrow">Topic dossier</span>
+        <span class="type-eyebrow">Topic archive</span>
       </div>
       <h1 class="tag-hero__title">{{ .Title }}</h1>
-      <div class="tag-hero__meta panel">
-        <span class="tag-hero__stat-number">{{ len .Pages }}</span>
-        <span class="tag-hero__stat-label"
-          >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
-        >
+      {{ with .Params.definition }}
+        <p class="tag-hero__dek">{{ . }}</p>
+      {{ else }}
+        {{ with .Params.dek }}
+          <p class="tag-hero__dek">{{ . }}</p>
+        {{ end }}
+      {{ end }}
+      <div class="tag-hero__meta-row">
+        {{ with .Params.category }}
+          <div class="tag-hero__classification panel panel--muted">
+            <span class="tag-hero__classification-label type-eyebrow"
+              >Classification</span
+            >
+            <span class="tag-hero__classification-value">{{ . }}</span>
+          </div>
+        {{ end }}
+        <div class="tag-hero__meta panel">
+          <span class="tag-hero__stat-number">{{ len .Pages }}</span>
+          <span class="tag-hero__stat-label"
+            >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
+          >
+        </div>
       </div>
     </header>
 
-    <section class="tag-episodes">
-      <div class="episodes-grid">
-        {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-          {{ $guests := .Params.guests | default slice }}
-          <article class="episode-card">
-            <a href="{{ .RelPermalink }}" class="episode-card__link">
-              <div class="episode-card__number">
-                {{ .Params.episodeNumber }}
-              </div>
-              <div class="episode-card__content">
-                <p class="episode-card__eyebrow type-eyebrow">
-                  Episode
-                  {{ .Params.episodeNumber }}
-                </p>
-                <h2 class="episode-card__title">{{ .Title }}</h2>
-                {{ if gt (len $guests) 0 }}
-                  <div class="episode-card__guest">
-                    with
-                    {{ index $guests 0 }}
-                  </div>
+    {{ with .Params.quotes }}
+      <section class="tag-quotes">
+        <h2 class="type-section-title tag-section-title">Quotes from Data</h2>
+        <div class="tag-quotes__grid">
+          {{ range . }}
+            {{ $episodePage := where $.Pages ".Params.episodeNumber" .episode }}
+            {{ $episode := index $episodePage 0 }}
+            <article class="tag-quote">
+              <p class="tag-quote__text">“{{ .text }}”</p>
+              <div class="tag-quote__meta">
+                <span class="tag-quote__speaker type-eyebrow"
+                  >{{ .speaker }}</span
+                >
+                {{ if $episode }}
+                  {{ $quoteHref := $episode.RelPermalink }}
+                  {{ with .timestamp }}
+                    {{ $timestampParts := split . "." }}
+                    {{ $timeParts := split (index $timestampParts 0) ":" }}
+                    {{ if eq (len $timeParts) 3 }}
+                      {{ $hours := int (index $timeParts 0) }}
+                      {{ $minutes := int (index $timeParts 1) }}
+                      {{ $seconds := int (index $timeParts 2) }}
+                      {{ $milliseconds := cond (gt (len $timestampParts) 1) (int (index $timestampParts 1)) 0 }}
+                      {{ $totalSeconds := add (mul $hours 3600) (add (mul $minutes 60) $seconds) }}
+                      {{ $quoteHref = printf "%s#t-%d-%03d" $episode.RelPermalink $totalSeconds $milliseconds }}
+                    {{ end }}
+                  {{ end }}
+                  <a href="{{ $quoteHref }}" class="tag-quote__episode chip">
+                    Episode
+                    {{ .episode }}
+                  </a>
+                {{ else }}
+                  <span class="tag-quote__episode chip">
+                    Episode
+                    {{ .episode }}{{ with .timestamp }}· {{ . }}{{ end }}
+                  </span>
                 {{ end }}
-                <time
-                  class="episode-card__date"
-                  datetime="{{ .Date.Format "2006-01-02" }}">
-                  {{ .Date.Format "January 2, 2006" }}
-                </time>
-                {{ if .Params.tags }}
-                  <div class="episode-card__tags">
-                    {{ $currentTag := $.Title }}
-                    <span class="episode-card__tag episode-card__tag--current"
-                      >{{ $currentTag }}</span
-                    >
-                    {{ $otherTags := slice }}
-                    {{ range .Params.tags }}
-                      {{ if ne . $currentTag }}
-                        {{ $otherTags = $otherTags | append . }}
-                      {{ end }}
-                    {{ end }}
-                    {{ range first 2 $otherTags }}
-                      <span class="episode-card__tag">{{ . }}</span>
-                    {{ end }}
-                    {{ $remaining := sub (len $otherTags) 2 }}
-                    {{ if gt $remaining 0 }}
-                      <span class="episode-card__tag-more"
-                        >+{{ $remaining }}</span
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ if and (.Params.showTopEpisodes | default true) (gt (len $featuredEpisodes) 0) }}
+      <section class="tag-episodes tag-episodes--featured">
+        <div class="tag-section-heading">
+          <div>
+            <h2 class="type-section-title tag-section-title">Top episodes</h2>
+            <p class="tag-section-copy">
+              Ranked by mentions of {{ .Title }} across the transcript.
+            </p>
+          </div>
+        </div>
+        <div class="episodes-grid term-page__episodes-grid">
+          {{ range $featuredEpisodes }}
+            {{ $episodePage := where $.Pages ".Params.episodeNumber" .ep }}
+            {{ $episode := index $episodePage 0 }}
+            {{ if $episode }}
+              {{ $guests := $episode.Params.guests | default slice }}
+              <article class="episode-card episode-card--ranked">
+                <a
+                  href="{{ $episode.RelPermalink }}"
+                  class="episode-card__link">
+                  <div class="episode-card__number">
+                    {{ $episode.Params.episodeNumber }}
+                  </div>
+                  <div class="episode-card__content">
+                    <div class="episode-card__header-row">
+                      <p class="episode-card__eyebrow type-eyebrow">
+                        Episode
+                        {{ $episode.Params.episodeNumber }}
+                      </p>
+                      <span class="episode-card__mention-count"
+                        >{{ .m }} mentions</span
                       >
+                    </div>
+                    <h2 class="episode-card__title">{{ $episode.Title }}</h2>
+                    {{ if gt (len $guests) 0 }}
+                      <div class="episode-card__guest">
+                        with
+                        {{ index $guests 0 }}
+                      </div>
+                    {{ end }}
+                    <time
+                      class="episode-card__date"
+                      datetime="{{ $episode.Date.Format "2006-01-02" }}">
+                      {{ $episode.Date.Format "January 2, 2006" }}
+                    </time>
+                    {{ if $episode.Params.tags }}
+                      <div class="episode-card__tags">
+                        {{ $currentTag := $.Title }}
+                        <span
+                          class="episode-card__tag episode-card__tag--current"
+                          >{{ $currentTag }}</span
+                        >
+                        {{ $otherTags := slice }}
+                        {{ range $episode.Params.tags }}
+                          {{ if ne . $currentTag }}
+                            {{ $otherTags = $otherTags | append . }}
+                          {{ end }}
+                        {{ end }}
+                        {{ range first 2 $otherTags }}
+                          <span class="episode-card__tag">{{ . }}</span>
+                        {{ end }}
+                        {{ $remaining := sub (len $otherTags) 2 }}
+                        {{ if gt $remaining 0 }}
+                          <span class="episode-card__tag-more"
+                            >+{{ $remaining }}</span
+                          >
+                        {{ end }}
+                      </div>
                     {{ end }}
                   </div>
-                {{ end }}
-              </div>
-              <div class="episode-card__arrow">→</div>
-            </a>
-          </article>
-        {{ end }}
-      </div>
-    </section>
+                  <div class="episode-card__arrow">→</div>
+                </a>
+              </article>
+            {{ end }}
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ if .Params.showAllEpisodes | default true }}
+      <section class="tag-episodes">
+        <div class="tag-section-heading">
+          <div>
+            <h2 class="type-section-title tag-section-title">All episodes</h2>
+            <p class="tag-section-copy">
+              Every episode currently tagged with {{ .Title }}.
+            </p>
+          </div>
+        </div>
+        <div class="episodes-grid term-page__episodes-grid">
+          {{ range sort .Pages ".Params.episodeNumber" "desc" }}
+            {{ $guests := .Params.guests | default slice }}
+            <article class="episode-card">
+              <a href="{{ .RelPermalink }}" class="episode-card__link">
+                <div class="episode-card__number">
+                  {{ .Params.episodeNumber }}
+                </div>
+                <div class="episode-card__content">
+                  <p class="episode-card__eyebrow type-eyebrow">
+                    Episode
+                    {{ .Params.episodeNumber }}
+                  </p>
+                  <h2 class="episode-card__title">{{ .Title }}</h2>
+                  {{ if gt (len $guests) 0 }}
+                    <div class="episode-card__guest">
+                      with
+                      {{ index $guests 0 }}
+                    </div>
+                  {{ end }}
+                  <time
+                    class="episode-card__date"
+                    datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ .Date.Format "January 2, 2006" }}
+                  </time>
+                  {{ if .Params.tags }}
+                    <div class="episode-card__tags">
+                      {{ $currentTag := $.Title }}
+                      <span class="episode-card__tag episode-card__tag--current"
+                        >{{ $currentTag }}</span
+                      >
+                      {{ $otherTags := slice }}
+                      {{ range .Params.tags }}
+                        {{ if ne . $currentTag }}
+                          {{ $otherTags = $otherTags | append . }}
+                        {{ end }}
+                      {{ end }}
+                      {{ range first 2 $otherTags }}
+                        <span class="episode-card__tag">{{ . }}</span>
+                      {{ end }}
+                      {{ $remaining := sub (len $otherTags) 2 }}
+                      {{ if gt $remaining 0 }}
+                        <span class="episode-card__tag-more"
+                          >+{{ $remaining }}</span
+                        >
+                      {{ end }}
+                    </div>
+                  {{ end }}
+                </div>
+                <div class="episode-card__arrow">→</div>
+              </a>
+            </article>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
   </section>
 {{ end }}

@@ -26,6 +26,7 @@ tags:
   - Textus Receptus
   - Athanasius of Alexandria
   - Essenes
+  - Esther
   - Galilee
   - Hell
   - Jeremiah
