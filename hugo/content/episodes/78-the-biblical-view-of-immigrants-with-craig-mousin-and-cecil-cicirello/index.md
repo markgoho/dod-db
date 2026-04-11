@@ -10,7 +10,6 @@ tags:
   - Noah
   - Ten Commandments
   - cognitive dissonance
-  - Egypt
   - Adam
   - Eve
   - Jerusalem

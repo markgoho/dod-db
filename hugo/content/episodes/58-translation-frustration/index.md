@@ -29,7 +29,6 @@ tags:
   - Creation ex nihilo
   - Daniel
   - divine council
-  - Egypt
   - Elijah
   - Endor
   - Irenaeus

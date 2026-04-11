@@ -12,7 +12,6 @@ tags:
   - Book of Enoch
   - Sodom
   - Babylon
-  - Egypt
   - King James Version
   - Monotheism
   - Deutero-Isaiah
@@ -33,7 +32,6 @@ tags:
   - Abraham
   - Codex Vaticanus
   - Dead Sea Scrolls
-  - El
   - forgery
   - Hermeneia
   - Holy Spirit
@@ -48,7 +46,6 @@ tags:
   - Septuagint
   - Ten Commandments
   - Tertullian
-  - textual criticism
   - Univocality
 books:
   - Exodus

@@ -22,7 +22,6 @@ tags:
   - etiology
   - Joseph
   - Moses
-  - Egypt
   - Gospel of James
   - Judah
   - Melchizedek

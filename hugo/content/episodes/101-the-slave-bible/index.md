@@ -6,7 +6,6 @@ videoId: KQlq_lmgBOk
 aliases:
   - /episodes/101/
 tags:
-  - apocalypse
   - Eschatology
   - King James Version
   - Paul

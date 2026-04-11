@@ -30,7 +30,6 @@ tags:
   - Abraham
   - Clement of Alexandria
   - Easter
-  - Egypt
   - Gnostic
   - Latin Vulgate
   - Moses

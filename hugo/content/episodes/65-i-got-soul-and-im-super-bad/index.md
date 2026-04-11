@@ -6,14 +6,11 @@ videoId: Z6-5mEJYYQU
 aliases:
   - /episodes/65/
 tags:
-  - Egypt
   - King James Version
   - YHWH
-  - El
   - Endor
   - Witch of Endor
   - Anatolia
-  - archaeology
   - Deuteronomy
   - Jerusalem
   - Judah

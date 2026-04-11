@@ -6,7 +6,6 @@ videoId: CtROVUxwKyM
 aliases:
   - /episodes/97/
 tags:
-  - archaeology
   - Noah
   - Moses
   - Red Sea

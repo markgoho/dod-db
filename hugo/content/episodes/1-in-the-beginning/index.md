@@ -8,11 +8,9 @@ aliases:
 tags:
   - YHWH
   - Baal
-  - El
   - Adam
   - Eve
   - Satan
-  - Egypt
   - Garden of Eden
   - Ugarit
   - Abraham

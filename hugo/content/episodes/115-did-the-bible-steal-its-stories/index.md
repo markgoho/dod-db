@@ -11,9 +11,7 @@ tags:
   - Ugarit
   - Baal
   - Babylon
-  - El
   - Flood
-  - Egypt
   - Jerusalem
   - Cyrus the Great
   - Abraham
@@ -26,7 +24,6 @@ tags:
   - Deuteronomy
   - Joseph
   - Joshua
-  - Ken Ham
   - King James Version
   - Melchizedek
   - Moses

@@ -9,7 +9,6 @@ audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/1
 tags:
   - Solomon
   - Deuteronomy
-  - Egypt
   - Judah
   - Moses
   - YHWH

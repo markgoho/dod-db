@@ -12,13 +12,12 @@ tags:
   - Constantine
   - Council of Nicaea
   - Trinity
+  - Crucifixion
   - Judaism
   - Apocrypha
   - Baal
-  - Egypt
   - Mary Magdalene
   - Virgin Birth
-  - apocalypse
   - Athanasius of Alexandria
   - baptism
   - Catholicism

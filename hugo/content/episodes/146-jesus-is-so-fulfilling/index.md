@@ -17,7 +17,6 @@ tags:
   - Eschatology
   - Lachish
   - Moses
-  - apocalypse
   - circumcision
   - Essenes
   - James

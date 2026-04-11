@@ -7,7 +7,6 @@ aliases:
   - /episodes/57/
 tags:
   - Book of Enoch
-  - David Carr
   - King David
   - Enoch
   - Univocality
@@ -15,8 +14,6 @@ tags:
   - Athenagoras
   - Catholicism
   - divine council
-  - Egypt
-  - El
   - Eve
   - Jerusalem
   - Judah

@@ -22,9 +22,7 @@ tags:
   - Protestantism
   - Romans
   - Septuagint
-  - apocalypse
   - Baal
-  - David Burnett
   - Deism
   - Elijah
   - Gnostic

@@ -15,7 +15,6 @@ tags:
   - Passover
   - Sanhedrin
   - Easter
-  - Bart Ehrman
   - Galilee
   - Hell
   - Jonah
@@ -27,9 +26,9 @@ tags:
   - Athanasius of Alexandria
   - baptism
   - Clement of Alexandria
+  - Crucifixion
   - Daniel
   - Elijah
-  - Helen Bond
   - Herod Antipas
   - Herod the Great
   - Maccabees

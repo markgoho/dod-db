@@ -13,7 +13,6 @@ tags:
   - Medes
   - Antiochus IV Epiphanes
   - Persia
-  - apocalypse
   - YHWH
   - Eschatology
   - Nabonidus
@@ -30,7 +29,6 @@ tags:
   - Catholicism
   - Dead Sea
   - Easter
-  - Egypt
   - Hermeneia
   - inerrancy
   - Isaiah

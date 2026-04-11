@@ -16,7 +16,6 @@ tags:
   - Agag
   - Moses
   - Matthew
-  - Egypt
   - Eusebius
   - Judas Iscariot
   - Papias of Hierapolis
@@ -28,6 +27,7 @@ tags:
   - Gaza
   - Joshua
   - Persia
+  - Ziklag
   - Aaron
   - Acts of Peter
   - Bartholomew

@@ -13,7 +13,6 @@ tags:
   - William Tyndale
   - Masoretic Text
   - Dead Sea Scrolls
-  - Egypt
   - James
   - Pseudepigrapha
   - Desiderius Erasmus
@@ -44,8 +43,6 @@ tags:
   - Protestantism
   - Samuel
   - Textus Receptus
-  - apocalypse
-  - Bart Ehrman
   - Codex Vaticanus
   - Daniel
   - Galilee

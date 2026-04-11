@@ -16,7 +16,6 @@ tags:
   - Daniel
   - Isaiah
   - Jezebel
-  - apocalypse
   - Anatolia
   - Balaam
   - Codex Sinaiticus
@@ -27,7 +26,6 @@ tags:
   - Judah
   - Nero
   - Theosis
-  - Bart Ehrman
   - Constantine
   - Council of Jerusalem
   - Council of Nicaea
@@ -41,7 +39,6 @@ tags:
   - Protestantism
   - Romans
   - Septuagint
-  - textual criticism
   - Ugarit
 books:
   - Isaiah

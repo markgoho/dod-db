@@ -8,14 +8,12 @@ aliases:
 tags:
   - YHWH
   - Ketef Hinnom
-  - Egypt
   - King Saul
   - Judaism
   - Dead Sea Scrolls
   - Flavius Josephus
   - Josephus
   - Lilith
-  - archaeology
   - Asherah
   - Babylon
   - Endor

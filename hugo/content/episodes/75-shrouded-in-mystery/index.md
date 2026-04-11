@@ -7,7 +7,6 @@ aliases:
   - /episodes/75/
 tags:
   - YHWH
-  - Egypt
   - Egyptians
   - Red Sea
   - Turin
@@ -17,9 +16,7 @@ tags:
   - Passover
   - Clement of Alexandria
   - Ten Commandments
-  - archaeology
   - Canaan
-  - David Burnett
   - Elephantine
   - Masada
 books:

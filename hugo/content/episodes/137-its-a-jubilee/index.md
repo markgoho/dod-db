@@ -20,7 +20,6 @@ tags:
   - Judaism
   - Lot
   - Sukkot
-  - Egypt
   - Eve
   - Satan
   - YHWH

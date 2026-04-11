@@ -21,7 +21,6 @@ tags:
   - Apocrypha
   - Daniel
   - Latin Vulgate
-  - Egypt
   - Jehoiakim
   - Christian Nationalism
   - Flavius Josephus
@@ -35,7 +34,6 @@ tags:
   - Protestantism
   - Satan
   - Second Temple period
-  - textual criticism
   - Torah
 books:
   - Isaiah

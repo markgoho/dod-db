@@ -9,7 +9,6 @@ tags:
   - Deuteronomy
   - Moses
   - Onan
-  - apocalypse
   - Paul
   - Abraham
   - Boaz
@@ -20,8 +19,6 @@ tags:
   - Judah
   - Judaism
   - Naomi
-  - Pastoral Epistles
-  - Ruth
   - Sarah
   - Sheol
   - Univocality

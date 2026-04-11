@@ -8,8 +8,6 @@ aliases:
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/152538050.mp3?sig=N409Iknulh6bw-O2w_KN8MDG1mLLumswL6Rl-E2Qy8Y%3D
 tags:
   - Clement of Alexandria
-  - Egypt
-  - textual criticism
   - Codex Vaticanus
   - Clement of Rome
   - John

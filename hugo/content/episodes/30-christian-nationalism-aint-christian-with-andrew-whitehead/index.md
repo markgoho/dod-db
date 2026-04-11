@@ -11,7 +11,6 @@ tags:
   - Romans
   - Andrew Whitehead
   - Solomon
-  - apocalypse
   - Cyrus the Great
   - Isaiah
   - King David

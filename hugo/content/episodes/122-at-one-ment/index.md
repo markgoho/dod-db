@@ -28,7 +28,6 @@ tags:
   - Irenaeus
   - Isaiah
   - Judah
-  - Pastoral Epistles
   - Univocality
 books:
   - Romans

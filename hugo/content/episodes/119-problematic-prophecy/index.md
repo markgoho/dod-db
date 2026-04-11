@@ -9,7 +9,6 @@ tags:
   - preterist interpretation
   - John
   - Athanasius of Alexandria
-  - apocalypse
   - Daniel
   - Eschatology
   - Jerusalem

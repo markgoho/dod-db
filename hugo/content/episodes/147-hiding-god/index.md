@@ -15,9 +15,7 @@ tags:
   - Persia
   - Qumran
   - Dead Sea Scrolls
-  - apocalypse
   - Deuteronomy
-  - Egypt
   - Abraham
   - Antiochus IV Epiphanes
   - Apocrypha

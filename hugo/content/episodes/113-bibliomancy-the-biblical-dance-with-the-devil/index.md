@@ -18,7 +18,6 @@ tags:
   - King James Version
   - Paul
   - Deutero-Isaiah
-  - Egypt
   - inerrancy
   - Isaiah
   - Judeans

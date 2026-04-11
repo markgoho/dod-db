@@ -27,7 +27,6 @@ tags:
   - Jerusalem
   - John
   - Junia
-  - Pastoral Epistles
   - Tertullian
   - Trinity
 books:

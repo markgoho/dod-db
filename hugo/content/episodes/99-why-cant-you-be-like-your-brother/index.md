@@ -33,7 +33,6 @@ tags:
   - Dead Sea Scrolls
   - Desiderius Erasmus
   - Deuteronomy
-  - Egypt
   - Elijah
   - Eusebius
   - Hermeneia
@@ -43,7 +42,6 @@ tags:
   - Latin Vulgate
   - Martin Luther
   - Nazareth
-  - Pastoral Epistles
   - Saint Titus
   - Sanhedrin
   - Satan

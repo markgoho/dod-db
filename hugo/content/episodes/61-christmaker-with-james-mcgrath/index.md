@@ -22,7 +22,6 @@ tags:
   - Islam
   - Samson
   - Adam
-  - apocalypse
   - Babylon
   - circumcision
   - Elizabeth

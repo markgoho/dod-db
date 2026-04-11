@@ -26,7 +26,6 @@ tags:
   - Persia
   - Apocrypha
   - Babylon
-  - El
   - Galilee
   - Gideon
   - Hagar
@@ -36,7 +35,6 @@ tags:
   - Syria
   - Annunciation
   - Deuteronomy
-  - Egypt
   - Enoch
   - Euphrates
   - Garden of Eden

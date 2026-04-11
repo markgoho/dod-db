@@ -25,9 +25,7 @@ tags:
   - King James Version
   - Moses
   - YHWH
-  - Bart Ehrman
   - Catholicism
-  - El
   - Michael
   - Sarah
   - Septuagint

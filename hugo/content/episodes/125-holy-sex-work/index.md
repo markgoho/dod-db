@@ -16,7 +16,6 @@ tags:
   - Asa
   - Judah
   - Satan
-  - archaeology
   - Dead Sea
   - Jehoshaphat
   - Philistines

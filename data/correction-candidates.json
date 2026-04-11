@@ -7934,25 +7934,28 @@
       "original": "eat'",
       "corrected": "eat",
       "category": "spelling",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["fecba3cc-6b03-11f0-bcd8-d3a762c218f9"],
+      "totalOccurrences": 4,
+      "episodeCount": 2,
+      "episodes": ["fecba3cc-6b03-11f0-bcd8-d3a762c218f9", "146857778"],
       "examples": [
         "\"something to eat.\"' Which is\"",
-        "\"them to eat?\"' And 200\""
+        "\"them to eat?\"' And 200\"",
+        "\"them to eat?' And 200\""
       ],
       "correctedExamples": [
         "\"something to eat.\" Which is\"",
+        "\"them to eat?\" And 200\"",
         "\"them to eat?\" And 200\""
       ],
-      "timestamps": ["00:44:53.667", "00:45:24.462"],
+      "timestamps": ["00:44:53.667", "00:45:24.462", "00:38:03.622"],
       "episodeIds": [
         "fecba3cc-6b03-11f0-bcd8-d3a762c218f9",
-        "fecba3cc-6b03-11f0-bcd8-d3a762c218f9"
+        "fecba3cc-6b03-11f0-bcd8-d3a762c218f9",
+        "146857778"
       ],
-      "confidence": 5,
+      "confidence": 35,
       "firstSeen": "2026-04-05T20:28:11.465Z",
-      "lastSeen": "2026-04-05T20:28:11.465Z",
+      "lastSeen": "2026-04-11T03:51:21.563Z",
       "status": "pending"
     },
     "Ein→Ayin": {
@@ -8473,5 +8476,5 @@
       "status": "pending"
     }
   },
-  "lastUpdated": "2026-04-05T23:28:45.084Z"
+  "lastUpdated": "2026-04-11T03:51:21.563Z"
 }

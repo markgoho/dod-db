@@ -8,11 +8,11 @@ aliases:
 tags:
   - King David
   - Septuagint
+  - Crucifixion
   - Jerusalem
   - Elijah
   - Church of the Holy Sepulcher
   - King James Version
-  - archaeology
   - Protestantism
   - Qumran
   - John

@@ -9,7 +9,6 @@ tags:
   - Easter
   - Passover
   - Moses
-  - Egypt
   - Council of Nicaea
   - Catholicism
   - Eve

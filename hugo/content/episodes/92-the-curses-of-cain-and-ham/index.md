@@ -11,8 +11,8 @@ tags:
   - Cain
   - Apocrypha
   - Canaan
+  - Susanna
   - Japheth
-  - Egypt
   - Noah
   - Shem
   - Africans
@@ -22,6 +22,7 @@ tags:
   - Flood
   - Protestantism
   - Babylon
+  - Joachim
   - Septuagint
   - Abraham
   - Philo of Alexandria

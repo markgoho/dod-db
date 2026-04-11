@@ -9,8 +9,6 @@ tags:
   - YHWH
   - child sacrifice
   - Molek
-  - El
-  - archaeology
   - Asherah
   - Jerusalem
   - Adam
@@ -26,7 +24,6 @@ tags:
   - Isaiah
   - Babylon
   - Deuteronomy
-  - Egypt
   - Elephantine
   - Jeremiah
   - Masoretic Text

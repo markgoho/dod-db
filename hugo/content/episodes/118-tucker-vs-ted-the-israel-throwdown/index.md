@@ -13,7 +13,6 @@ tags:
   - Eschatology
   - Jacob
   - Jerusalem
-  - Egypt
   - Jonah
   - divine council
   - Septuagint

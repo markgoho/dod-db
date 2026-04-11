@@ -17,7 +17,6 @@ tags:
   - King David
   - etiology
   - Zipporah
-  - Egypt
   - King Saul
   - Samson
   - Edom
@@ -25,7 +24,6 @@ tags:
   - Philistines
   - Africa
   - Amorites
-  - archaeology
   - Judah
   - Judaism
   - Moab

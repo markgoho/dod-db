@@ -17,7 +17,6 @@ tags:
   - Noah
   - Abraham
   - Christian Nationalism
-  - Egypt
   - Egyptians
   - Goliath
   - Hell

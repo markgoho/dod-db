@@ -6,12 +6,9 @@ videoId: mMJ5mHoWrSM
 aliases:
   - /episodes/138/
 tags:
-  - Egypt
   - Joseph
   - Paul
   - Eschatology
-  - Pastoral Epistles
-  - archaeology
   - Egyptians
   - Flavius Josephus
   - Jacob

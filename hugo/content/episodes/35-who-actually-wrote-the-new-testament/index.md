@@ -8,7 +8,6 @@ aliases:
 tags:
   - Paul
   - Matthew
-  - Pastoral Epistles
   - Papias of Hierapolis
   - Luke
   - Peter
@@ -24,7 +23,6 @@ tags:
   - Jerusalem
   - Judas Iscariot
   - Sea of Galilee
-  - Bart Ehrman
   - Catholicism
   - Ishmael
   - King James Version

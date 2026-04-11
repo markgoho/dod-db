@@ -18,9 +18,7 @@ tags:
   - etiology
   - Eve
   - Matthew
-  - Aesop
   - Book of Enoch
-  - Egypt
   - Flavius Josephus
   - Jerusalem
   - Josephus

@@ -21,7 +21,6 @@ tags:
   - Samuel
   - Witch of Endor
   - Apocrypha
-  - archaeology
   - child sacrifice
   - Eusebius
   - inerrancy
@@ -32,7 +31,6 @@ tags:
   - Abraham
   - Baruch
   - Daniel
-  - Egypt
   - Enoch
   - Flavius Josephus
   - Flood

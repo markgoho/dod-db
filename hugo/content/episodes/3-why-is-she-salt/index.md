@@ -11,7 +11,6 @@ tags:
   - Sodom
   - Abraham
   - YHWH
-  - archaeology
   - Dead Sea Scrolls
   - etiology
   - forgery
@@ -31,7 +30,6 @@ tags:
   - Noah
   - Purim
   - Sarah
-  - apocalypse
   - divine council
   - epigraphy
   - Eve

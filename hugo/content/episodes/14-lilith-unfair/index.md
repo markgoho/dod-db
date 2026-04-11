@@ -18,7 +18,6 @@ tags:
   - Isaiah
   - King James Version
   - Torah
-  - Egypt
   - Joshua
   - Judah
   - Philistines

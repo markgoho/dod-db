@@ -29,7 +29,6 @@ tags:
   - Holy Spirit
   - Jezebel
   - Mary Magdalene
-  - Pastoral Epistles
   - Paul
   - Sea of Galilee
   - Solomon

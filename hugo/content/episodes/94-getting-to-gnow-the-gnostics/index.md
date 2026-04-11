@@ -25,7 +25,6 @@ tags:
   - Marcion
   - Textus Receptus
   - Athanasius of Alexandria
-  - Egypt
   - Essenes
   - Galilee
   - Hell

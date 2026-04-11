@@ -7,6 +7,7 @@ aliases:
   - /episodes/134/
 tags:
   - King James Version
+  - Crucifixion
   - Judaism
   - Septuagint
   - Catholicism

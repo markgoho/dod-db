@@ -8,7 +8,6 @@ aliases:
 tags:
   - King Sennacherib
   - Hezekiah
-  - Ruth
   - Naomi
   - Boaz
   - Judah
@@ -23,7 +22,6 @@ tags:
   - Isaiah
   - King Josiah
   - Arad
-  - archaeology
   - Babylon
   - Jonah
   - King David

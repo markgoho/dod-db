@@ -6,7 +6,6 @@ videoId: HIgF6uy4H3U
 aliases:
   - /episodes/107/
 tags:
-  - apocalypse
   - Jerusalem
   - Paul
   - Eschatology

@@ -23,9 +23,7 @@ tags:
   - Masoretic Text
   - Moab
   - Septuagint
-  - Egypt
   - Garden of Eden
-  - Helen Bond
   - Jerusalem
   - Michael
   - Philistines

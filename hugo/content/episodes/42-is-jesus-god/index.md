@@ -28,7 +28,6 @@ tags:
   - King James Version
   - monotheism
   - provenance
-  - textual criticism
 books:
   - John
   - Isaiah

@@ -18,7 +18,6 @@ tags:
   - Codex Vaticanus
   - Hell
   - Latin Vulgate
-  - archaeology
   - Constantine
   - Council of Nicaea
   - Eusebius
@@ -31,7 +30,6 @@ tags:
   - Protestantism
   - Satan
   - Ten Commandments
-  - textual criticism
 books:
   - Mark
   - Matthew

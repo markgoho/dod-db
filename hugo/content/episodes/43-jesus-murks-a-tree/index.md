@@ -23,9 +23,7 @@ tags:
   - Flavius Josephus
   - Josephus
   - Romans
-  - Bernhard Duhm
   - Bethlehem
-  - El
   - Galilee
   - Gentiles
   - Gnostic

@@ -13,7 +13,6 @@ tags:
   - John
   - Book of Enoch
   - Satan
-  - apocalypse
   - Athanasius of Alexandria
   - Eschatology
   - Raphael
@@ -24,7 +23,6 @@ tags:
   - Justin Martyr
   - Abraham
   - Asael
-  - Bart Ehrman
   - Gaza
   - Holy Spirit
   - Jerusalem

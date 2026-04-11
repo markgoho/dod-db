@@ -18,7 +18,6 @@ tags:
   - Septuagint
   - Dead Sea Scrolls
   - Deuteronomy
-  - Egypt
   - James
   - Latin Vulgate
   - Moses

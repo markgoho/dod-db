@@ -22,7 +22,6 @@ tags:
   - Jephthah
   - Samson
   - Jerusalem
-  - El
   - King Jabin
   - Abraham
   - Canaan

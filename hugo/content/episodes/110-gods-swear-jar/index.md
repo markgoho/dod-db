@@ -17,9 +17,7 @@ tags:
   - Isaiah
   - King James Version
   - Solomon
-  - archaeology
   - Deuteronomy
-  - Egypt
   - Eusebius
   - Gentiles
   - Matthew

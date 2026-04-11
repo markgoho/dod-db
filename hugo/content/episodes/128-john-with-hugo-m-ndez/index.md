@@ -21,7 +21,6 @@ tags:
   - Aristobulus
   - Athanasius of Alexandria
   - baptism
-  - Bart Ehrman
   - Flavius Josephus
   - Gnostic
   - Gospel of Thomas
@@ -29,6 +28,7 @@ tags:
   - Polybius
   - Septuagint
   - Theosis
+  - Transfiguration
 books:
   - John
   - Psalms

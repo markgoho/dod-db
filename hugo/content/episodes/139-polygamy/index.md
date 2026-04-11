@@ -16,7 +16,6 @@ tags:
   - Judaism
   - Ammonites
   - Jacob
-  - Egypt
   - King Saul
   - Leah
   - Judah
@@ -24,8 +23,6 @@ tags:
   - Romans
   - Abraham
   - Adam
-  - Aesop
-  - archaeology
   - Dead Sea Scrolls
   - etiology
   - Eve

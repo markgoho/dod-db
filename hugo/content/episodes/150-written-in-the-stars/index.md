@@ -12,7 +12,6 @@ tags:
   - Stephen
   - Jacob
   - Molek
-  - Egypt
   - YHWH
   - Deuteronomy
   - Gnostic
@@ -32,7 +31,6 @@ tags:
   - Adam
   - Canaanites
   - Council of Jerusalem
-  - El
   - Herod Antipas
   - Jerusalem
   - Joshua

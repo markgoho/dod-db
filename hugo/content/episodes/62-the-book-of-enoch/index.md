@@ -26,7 +26,6 @@ tags:
   - Japheth
   - Lamech
   - Satan
-  - apocalypse
   - Isaac
   - Judeans
   - Septuagint
@@ -42,7 +41,6 @@ tags:
   - circumcision
   - Dead Sea
   - Deuteronomy
-  - Egypt
   - Esau
   - Eve
   - Judaism

@@ -13,9 +13,7 @@ tags:
   - Jerusalem
   - Moab
   - Assyria
-  - Egypt
   - Joshua
-  - Ruth
   - Deborah
   - Deuteronomy
   - Esau
@@ -31,7 +29,6 @@ tags:
   - Ammonites
   - Babylon
   - Daniel
-  - David Carr
   - Gideon
   - Goliath
   - Hezekiah

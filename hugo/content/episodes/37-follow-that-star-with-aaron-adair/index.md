@@ -18,7 +18,6 @@ tags:
   - Romans
   - Virgin Birth
   - Adam
-  - apocalypse
   - Babylon
   - Catholicism
   - Dead Sea Scrolls
@@ -26,7 +25,6 @@ tags:
   - Isaiah
   - Joseph
   - Joshua
-  - Ken Ham
   - King David
   - King James Version
   - Mary Magdalene

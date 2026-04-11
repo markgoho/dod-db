@@ -11,7 +11,6 @@ tags:
   - Judaism
   - Paul
   - Eschatology
-  - apocalypse
   - Capernaum
   - King David
   - King James Version
@@ -21,7 +20,6 @@ tags:
   - cognitive dissonance
   - Daniel
   - Masoretic Text
-  - Egypt
   - Leningrad Codex
   - Luke
   - Satan

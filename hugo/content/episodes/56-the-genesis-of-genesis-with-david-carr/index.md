@@ -18,9 +18,7 @@ tags:
   - Canaan
   - Eve
   - Abraham
-  - Egypt
   - forgery
-  - David Carr
   - Jerusalem
   - Moses
   - Shem

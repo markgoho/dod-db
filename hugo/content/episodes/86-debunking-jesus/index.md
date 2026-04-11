@@ -8,7 +8,6 @@ aliases:
 tags:
   - Flavius Josephus
   - Josephus
-  - Egypt
   - Romans
   - Testimonium Flavianum
   - Galilee
@@ -18,6 +17,7 @@ tags:
   - Pontius Pilate
   - Annunciation
   - baptism
+  - Crucifixion
   - forgery
   - Jerusalem
   - Judeans

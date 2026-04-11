@@ -9,7 +9,6 @@ tags:
   - Paul
   - Judaism
   - Babylon
-  - apocalypse
   - Baal
   - Philo of Alexandria
   - Flavius Josephus
@@ -21,7 +20,6 @@ tags:
   - Jerusalem
   - Judah
   - Nephilim
-  - Pastoral Epistles
   - Septuagint
   - Ugarit
   - Univocality

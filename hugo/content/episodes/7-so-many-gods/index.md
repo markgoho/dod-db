@@ -11,7 +11,6 @@ tags:
   - Moab
   - Deuteronomy
   - Asherah
-  - El
   - Judah
   - Baal
   - Hezekiah
@@ -29,7 +28,6 @@ tags:
   - King James Version
   - Ugarit
   - Dead Sea
-  - Egypt
   - Elijah
   - Jerusalem
   - Moabites
@@ -44,7 +42,6 @@ tags:
   - Persia
   - Sea of Galilee
   - Septuagint
-  - archaeology
   - Bethel
   - Daniel
   - Dead Sea Scrolls

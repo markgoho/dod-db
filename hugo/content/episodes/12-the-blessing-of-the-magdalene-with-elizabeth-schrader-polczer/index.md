@@ -13,16 +13,13 @@ tags:
   - Matthew
   - Galilee
   - Sea of Galilee
-  - textual criticism
   - Flavius Josephus
   - James
   - Joseph
   - Josephus
   - Paul
   - Eusebius
-  - archaeology
   - Tertullian
-  - El
   - King James Version
   - source criticism
   - Apocrypha
@@ -32,7 +29,6 @@ tags:
   - Judas Iscariot
   - Junia
   - Lydia
-  - Pastoral Epistles
   - Samaritans
   - Textus Receptus
 books:

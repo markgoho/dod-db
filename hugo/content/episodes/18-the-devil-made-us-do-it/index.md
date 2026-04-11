@@ -20,7 +20,6 @@ tags:
   - King David
   - Samuel
   - Adam
-  - Egypt
   - Eve
   - Isaiah
   - Septuagint
@@ -39,7 +38,6 @@ tags:
   - Apocrypha
   - Book of Enoch
   - Dead Sea Scrolls
-  - El
   - James
   - Jerome
   - Joseph

@@ -8,7 +8,6 @@ aliases:
 tags:
   - Canaanites
   - Canaan
-  - Egypt
   - Moabites
   - Adam
   - Egyptians
@@ -17,7 +16,6 @@ tags:
   - Eve
   - King David
   - Midianites
-  - archaeology
   - Edomites
   - Noah
   - Peter
@@ -33,7 +31,6 @@ tags:
   - Moses
   - Paul
   - Philistines
-  - Ruth
   - Samuel
 books:
   - Genesis

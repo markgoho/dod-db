@@ -15,7 +15,6 @@ tags:
   - Judaism
   - King James Version
   - Peter
-  - Egypt
   - King Saul
   - Luke
   - Mary Magdalene
@@ -24,7 +23,6 @@ tags:
   - Africa
   - Balaam
   - Deuteronomy
-  - El
   - etiology
   - Gabriel
   - Galilee

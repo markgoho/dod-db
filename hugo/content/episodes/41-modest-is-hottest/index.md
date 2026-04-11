@@ -25,7 +25,6 @@ tags:
   - Peter
   - Abigail
   - Adam
-  - Egypt
   - Egyptians
   - etiology
   - Eve

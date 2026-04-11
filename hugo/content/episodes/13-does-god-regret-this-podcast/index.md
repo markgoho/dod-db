@@ -14,7 +14,6 @@ tags:
   - Dead Sea
   - Judah
   - Arad
-  - archaeology
   - King David
   - Goliath
   - Nineveh
@@ -23,7 +22,6 @@ tags:
   - Baal
   - Babylon
   - Constantine
-  - David Burnett
   - Deuteronomy
   - Elhanan son of Jair
   - epigraphy
@@ -33,7 +31,6 @@ tags:
   - Isaac
   - James
   - Joshua
-  - Ken Ham
   - Moab
   - monotheism
   - Samuel

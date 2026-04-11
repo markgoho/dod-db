@@ -28,8 +28,6 @@ tags:
   - Nehemiah
   - Trinity
   - YHWH
-  - archaeology
-  - El
   - Enoch
   - Eschatology
   - Flavius Josephus
@@ -39,10 +37,7 @@ tags:
   - Romans
   - Ten Commandments
   - Torah
-  - apocalypse
   - Book of Enoch
-  - Candida Moss
-  - Egypt
   - Herod the Great
   - inerrancy
   - Judeans
@@ -51,7 +46,6 @@ tags:
   - Peter
   - Pliny the Younger
   - Second Temple period
-  - textual criticism
   - Ugarit
 books:
   - Deuteronomy

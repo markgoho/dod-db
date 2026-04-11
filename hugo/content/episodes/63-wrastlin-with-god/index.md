@@ -10,7 +10,6 @@ tags:
   - Samson
   - Isaac
   - Abraham
-  - El
   - Laban
   - Esau
   - Rachel
@@ -24,8 +23,6 @@ tags:
   - Jephthah
   - Judah
   - Leah
-  - apocalypse
-  - Egypt
   - King James Version
   - Tamar
   - Ugarit

@@ -20,7 +20,6 @@ tags:
   - King James Version
   - Samaria
   - Amorites
-  - archaeology
   - Babylon
   - Flood
   - inerrancy
@@ -34,7 +33,6 @@ tags:
   - Balaam
   - circumcision
   - Deutero-Isaiah
-  - Egypt
   - King David
   - King Josiah
   - Luke

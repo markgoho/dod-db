@@ -15,7 +15,6 @@ tags:
   - Catholicism
   - Baal
   - baptism
-  - Bart Ehrman
   - Capernaum
   - Desiderius Erasmus
   - Galilee

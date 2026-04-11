@@ -6,7 +6,6 @@ videoId: SHLLzroKzI0
 aliases:
   - /episodes/21/
 tags:
-  - Egypt
   - Moses
   - child sacrifice
   - Molek

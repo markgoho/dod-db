@@ -6,11 +6,9 @@ videoId: WidY7lIBiyY
 aliases:
   - /episodes/4/
 tags:
-  - Bart Ehrman
   - Rapture
   - John of Patmos
   - Athanasius of Alexandria
-  - apocalypse
   - Arius
   - Armageddon
   - Daniel
@@ -34,7 +32,6 @@ tags:
   - preterist interpretation
   - Protestantism
   - Romans
-  - textual criticism
   - The Reformation
   - Univocality
   - YHWH

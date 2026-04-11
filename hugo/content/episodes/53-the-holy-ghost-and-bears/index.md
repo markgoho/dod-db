@@ -22,7 +22,6 @@ tags:
   - inerrancy
   - Judah
   - Judaism
-  - Ken Ham
   - Philo of Alexandria
   - Samaria
 books:

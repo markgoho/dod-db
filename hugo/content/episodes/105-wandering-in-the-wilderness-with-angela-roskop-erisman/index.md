@@ -11,7 +11,6 @@ tags:
   - Aaron
   - Korach
   - Hezekiah
-  - Egypt
   - Isaiah
   - Judah
   - Torah
@@ -23,7 +22,6 @@ tags:
   - King Sennacherib
   - Philo of Alexandria
   - Babylon
-  - David Carr
   - YHWH
 books:
   - Exodus

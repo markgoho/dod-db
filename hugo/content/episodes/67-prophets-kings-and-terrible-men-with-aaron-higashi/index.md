@@ -13,7 +13,6 @@ tags:
   - Moses
   - Absalom
   - Philistines
-  - archaeology
   - Bathsheba
   - Abigail
   - Goliath

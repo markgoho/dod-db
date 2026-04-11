@@ -15,7 +15,6 @@ tags:
   - Samuel
   - Abraham
   - inerrancy
-  - Pastoral Epistles
   - Elhanan son of Jair
   - Romans
   - Isaiah

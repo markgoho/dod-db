@@ -14,9 +14,6 @@ tags:
   - YHWH
   - Egyptians
   - Acts of Paul and Thecla
-  - apocalypse
-  - Candida Moss
-  - Egypt
   - Holy Spirit
   - Ignatius
   - Jeremiah

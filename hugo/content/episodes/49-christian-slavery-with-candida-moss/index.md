@@ -13,14 +13,11 @@ tags:
   - Tertius
   - Luke
   - Nazareth
-  - Candida Moss
   - Clement of Alexandria
   - Clement of Rome
-  - Egypt
   - Pliny the Younger
-  - Aesop
   - Africa
-  - archaeology
+  - Crucifixion
   - First Clement
   - Martin Luther
   - Mary Magdalene

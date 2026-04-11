@@ -20,7 +20,6 @@ tags:
   - Judeans
   - Maccabees
   - Second Temple period
-  - Egypt
   - Essenes
   - Hanukkah
   - Jael
@@ -29,7 +28,6 @@ tags:
   - YHWH
   - Aaron
   - Antiochus IV Epiphanes
-  - apocalypse
   - Balaam
   - Beelzebul
   - Dead Sea Scrolls

@@ -10,7 +10,6 @@ tags:
   - Origen
   - inerrancy
   - Babylon
-  - Egypt
   - historical criticism
   - Judaism
   - The Reformation
@@ -30,7 +29,6 @@ tags:
   - Masoretic Text
   - Molek
   - Noah
-  - textual criticism
   - Ugarit
   - Univocality
 books:

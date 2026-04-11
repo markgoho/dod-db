@@ -30,7 +30,6 @@ tags:
   - Ishmael
   - The Reformation
   - Dead Sea Scrolls
-  - Egypt
   - Isaiah
   - James
   - Jeremiah
@@ -46,7 +45,6 @@ tags:
   - Codex Sinaiticus
   - Codex Vaticanus
   - Daniel
-  - David Carr
   - Didache
   - First Clement
   - Galilee
@@ -54,6 +52,7 @@ tags:
   - Midianites
   - Moses
   - Pseudepigrapha
+  - Susanna
   - YHWH
 books:
   - Genesis

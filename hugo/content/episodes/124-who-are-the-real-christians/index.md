@@ -12,7 +12,6 @@ tags:
   - Romans
   - Paul
   - divine council
-  - El
   - Book of Enoch
   - Protestantism
   - Asherah
@@ -21,7 +20,6 @@ tags:
   - Hell
   - Seth
   - Sodom
-  - Egypt
   - Enoch
   - Isaac
   - Isaiah

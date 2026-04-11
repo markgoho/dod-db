@@ -9,7 +9,6 @@ tags:
   - Abraham
   - Abimelech
   - Isaac
-  - Egypt
   - Philistines
   - King David
   - Rachel

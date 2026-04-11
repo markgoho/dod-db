@@ -10,7 +10,6 @@ tags:
   - Bethlehem
   - Mary Magdalene
   - Jerusalem
-  - Egypt
   - King David
   - Galilee
   - John the Baptist
@@ -29,6 +28,7 @@ tags:
   - Antiochus IV Epiphanes
   - baptism
   - Catholicism
+  - Crucifixion
   - Flavius Josephus
   - Hell
   - Holy Spirit

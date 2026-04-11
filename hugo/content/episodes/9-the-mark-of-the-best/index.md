@@ -11,8 +11,6 @@ tags:
   - Christian Nationalism
   - Isaiah
   - Judaism
-  - apocalypse
-  - Bart Ehrman
   - Deuteronomy
   - Euphrates
   - Garden of Eden

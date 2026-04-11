@@ -19,10 +19,8 @@ tags:
   - Catholicism
   - inerrancy
   - Luke
-  - Pastoral Epistles
   - Saint Titus
   - Southern Baptist Convention
-  - textual criticism
   - Textus Receptus
   - Univocality
 books:
