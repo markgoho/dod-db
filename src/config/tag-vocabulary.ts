@@ -167,13 +167,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [4, 9, 39, 99, 119],
   },
   {
-    canonical: "Bart Ehrman",
-    variations: ["Ehrman"],
-    category: "person",
-    status: "accepted",
-    episodes: [4, 8, 9, 11, 16, 26, 35, 39, 40, 50, 55, 98, 128],
-  },
-  {
     canonical: "Hagar",
     variations: [],
     category: "character",
@@ -343,19 +336,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [129],
   },
   {
-    canonical: "Egypt",
-    variations: ["Egyptian"],
-    category: "place",
-    status: "accepted",
-    episodes: [
-      1, 2, 5, 7, 10, 11, 14, 15, 18, 19, 20, 21, 22, 25, 28, 33, 34, 36, 38,
-      41, 45, 46, 47, 49, 55, 56, 57, 58, 59, 62, 63, 65, 66, 68, 69, 71, 73,
-      74, 75, 78, 80, 81, 84, 86, 87, 88, 92, 93, 94, 95, 99, 100, 104, 105,
-      109, 110, 111, 112, 113, 115, 116, 117, 118, 120, 121, 123, 124, 127, 129,
-      130, 132, 136, 137, 138, 139,
-    ],
-  },
-  {
     canonical: "Babylon",
     variations: ["Babylonian"],
     category: "place",
@@ -506,16 +486,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [1, 2, 7, 14, 33, 66, 73, 88, 117, 123, 124, 126, 127, 129, 133],
   },
   {
-    canonical: "El",
-    variations: ["El Shaddai"],
-    category: "character",
-    status: "accepted",
-    episodes: [
-      1, 2, 7, 12, 16, 18, 22, 28, 43, 45, 57, 59, 63, 64, 65, 66, 81, 84, 88,
-      104, 115, 117, 124, 129,
-    ],
-  },
-  {
     canonical: "Baal",
     variations: [],
     category: "character",
@@ -554,16 +524,6 @@ export const tagVocabulary: TagDefinition[] = [
     category: "theology",
     status: "accepted",
     episodes: [4, 119],
-  },
-  {
-    canonical: "apocalypse",
-    variations: ["apocalyptic"],
-    category: "theology",
-    status: "accepted",
-    episodes: [
-      3, 4, 5, 9, 11, 19, 26, 30, 33, 34, 37, 39, 45, 48, 59, 61, 62, 63, 70,
-      71, 74, 98, 100, 101, 107, 108, 119, 123, 132, 135,
-    ],
   },
   {
     canonical: "Molek",
@@ -640,13 +600,6 @@ export const tagVocabulary: TagDefinition[] = [
     ],
   },
   {
-    canonical: "textual criticism",
-    variations: [],
-    category: "scholarship",
-    status: "accepted",
-    episodes: [4, 12, 17, 39, 42, 45, 60, 104, 130],
-  },
-  {
     canonical: "redaction criticism",
     variations: [],
     category: "scholarship",
@@ -688,16 +641,6 @@ export const tagVocabulary: TagDefinition[] = [
     category: "scholarship",
     status: "accepted",
     episodes: [4, 78, 89, 91, 132],
-  },
-  {
-    canonical: "archaeology",
-    variations: ["archaeological"],
-    category: "scholarship",
-    status: "accepted",
-    episodes: [
-      2, 3, 7, 12, 13, 15, 17, 45, 46, 48, 49, 55, 65, 67, 72, 73, 75, 83, 88,
-      95, 97, 100, 110, 111, 116, 125, 138, 139,
-    ],
   },
   {
     canonical: "epigraphy",
@@ -1295,13 +1238,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [15, 16, 35, 48, 49, 69, 119],
   },
   {
-    canonical: "Pastoral Epistles",
-    variations: [],
-    category: "literature",
-    status: "accepted",
-    episodes: [6, 12, 26, 35, 48, 60, 99, 108, 122, 135, 138],
-  },
-  {
     canonical: "Irenaeus",
     variations: [],
     category: "person",
@@ -1645,25 +1581,11 @@ export const tagVocabulary: TagDefinition[] = [
     ],
   },
   {
-    canonical: "Bernhard Duhm",
-    variations: [],
-    category: "person",
-    status: "accepted",
-    episodes: [43],
-  },
-  {
     canonical: "Josephus",
     variations: [],
     category: "person",
     status: "accepted",
     episodes: [10, 12, 15, 33, 43, 45, 48, 61, 69, 73, 74, 85, 86, 87],
-  },
-  {
-    canonical: "Ken Ham",
-    variations: [],
-    category: "person",
-    status: "accepted",
-    episodes: [13, 37, 53, 115, 131],
   },
   {
     canonical: "Jennifer Bird",
@@ -1711,13 +1633,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [6, 11, 46, 62, 70, 89, 118, 130, 137, 149, 152, 154],
   },
   {
-    canonical: "Helen Bond",
-    variations: ["Dr. Helen Bond"],
-    category: "person",
-    status: "accepted",
-    episodes: [48, 50, 80],
-  },
-  {
     canonical: "historical Jesus",
     variations: ["quest for the historical Jesus"],
     category: "theology",
@@ -1744,25 +1659,11 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [61, 94, 128],
   },
   {
-    canonical: "Candida Moss",
-    variations: ["Dr. Candida Moss"],
-    category: "person",
-    status: "accepted",
-    episodes: [33, 45, 48, 49, 136],
-  },
-  {
     canonical: "Tertius",
     variations: [],
     category: "person",
     status: "accepted",
     episodes: [49],
-  },
-  {
-    canonical: "Aesop",
-    variations: [],
-    category: "person",
-    status: "accepted",
-    episodes: [10, 49, 81, 95, 112, 120, 139],
   },
   {
     canonical: "Pliny the Younger",
@@ -2078,16 +1979,6 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 55,
   },
   {
-    canonical: "David Carr",
-    variations: ["Carr"],
-    category: "person",
-    llmVerify: true,
-    description:
-      "Professor of Hebrew Bible at Union Theological Seminary, guest on the podcast",
-    status: "accepted",
-    episodes: [20, 36, 56, 57, 95, 105],
-  },
-  {
     canonical: "Tower of Babel",
     variations: ["Babel"],
     category: "character",
@@ -2269,16 +2160,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
   },
   {
-    canonical: "David Burnett",
-    variations: ["Burnett"],
-    category: "person",
-    llmVerify: true,
-    description:
-      "Guest on the podcast and presenter at the Meanings and Ends of Monotheism conference.",
-    status: "accepted",
-    episodes: [13, 19, 26, 59, 70, 75],
-  },
-  {
     canonical: "Meanings and Ends of Monotheism",
     variations: ["conference"],
     category: "event",
@@ -2323,16 +2204,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [
       10, 19, 26, 33, 42, 53, 59, 86, 92, 100, 105, 128, 130, 134, 135,
     ],
-  },
-  {
-    canonical: "Debra Scoggins Ballentine",
-    variations: ["Ballentine"],
-    category: "person",
-    llmVerify: true,
-    description:
-      "A scholar who presented a paper titled 'Translating Monotheism: How a Lens of Monotheism Impacts Translation'.",
-    status: "accepted",
-    episodes: [59],
   },
   {
     canonical: "Hypostasis",
@@ -2816,16 +2687,6 @@ export const tagVocabulary: TagDefinition[] = [
       "Inhabitant of Adullam, a town in the Shephelah region of Judah; Hirah, the friend of Judah, is identified as an Adullamite",
     status: "proposed",
     addedInEpisode: 68,
-  },
-  {
-    canonical: "Ruth",
-    variations: [],
-    category: "literature",
-    llmVerify: true,
-    description:
-      "Book in the Hebrew Bible that tells the story of Ruth, a Moabite woman, and her relationship with Boaz",
-    status: "accepted",
-    episodes: [36, 68, 72, 108, 116],
   },
   {
     canonical: "Boaz",
@@ -3799,11 +3660,12 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Susanna",
     variations: [],
     category: "character",
+    llmVerify: true,
     description:
       "Main character in the Book of Susanna, falsely accused of adultery by two elders",
-    status: "proposed",
-    caseSensitive: true,
+    status: "accepted",
     addedInEpisode: 92,
+    episodes: [20, 92],
   },
   {
     canonical: "Apocrypha",
@@ -3832,9 +3694,11 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Joachim",
     variations: [],
     category: "character",
+    llmVerify: true,
     description: "Husband of Susanna in the Book of Susanna.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 92,
+    episodes: [92],
   },
   {
     canonical: "Exodus 21",
@@ -3960,7 +3824,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "place",
     description:
       "A country in Eurasia, site of the Durupinar formation, which Ron Wyatt claimed was Noah's Ark.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 97,
   },
   {
@@ -3985,7 +3849,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "place",
     description:
       "A country in the Middle East, location of Jabal Maqla and Jebel al-Lawz, mountains proposed as Mount Sinai.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 97,
   },
   {
@@ -5012,13 +4876,15 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 134,
   },
   {
-    canonical: "crucifixion",
+    canonical: "Crucifixion",
     variations: [],
     category: "event",
+    llmVerify: true,
     description:
-      "A method of execution used by the Romans, involving binding or nailing a person to a cross or other wooden structure",
-    status: "proposed",
+      "A method of execution used by the Romans, specifically referring to the execution of Jesus on the cross",
+    status: "accepted",
     addedInEpisode: 134,
+    episodes: [5, 49, 50, 83, 86, 87, 90, 134, 140],
   },
   {
     canonical: "Greco-Roman",
@@ -5609,13 +5475,15 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [156],
   },
   {
-    canonical: "ziklag",
+    canonical: "Ziklag",
     variations: [],
     category: "place",
+    llmVerify: true,
     description:
       "Town given to David by the Philistine king Achish, later raided by the Amalekites",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 156,
+    episodes: [156],
   },
   {
     canonical: "benjamin netanyahu",
@@ -5653,6 +5521,34 @@ export const tagVocabulary: TagDefinition[] = [
     description: "An apostle of Jesus, mentioned in the New Testament",
     status: "accepted",
     episodes: [16, 156],
+  },
+  {
+    canonical: "Jesus",
+    variations: [],
+    category: "character",
+    description:
+      "Central figure in Christianity, believed to be the Messiah and Son of God.",
+    status: "rejected",
+    addedInEpisode: 143,
+  },
+  {
+    canonical: "Transfiguration",
+    variations: [],
+    category: "event",
+    llmVerify: true,
+    description:
+      "A miraculous event in the New Testament where Jesus is transfigured and appears in glory alongside Moses and Elijah.",
+    status: "accepted",
+    addedInEpisode: 143,
+    episodes: [128, 143],
+  },
+  {
+    canonical: "5000",
+    variations: [],
+    category: "miscellaneous",
+    description: "Reference to the feeding of the 5000 miracle narrative.",
+    status: "proposed",
+    addedInEpisode: 143,
   },
 ];
 
