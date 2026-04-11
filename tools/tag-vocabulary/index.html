@@ -10,23 +10,7 @@
     <div class="container">
       <header>
         <h1>Tag Vocabulary Management</h1>
-        <p class="subtitle">
-          Manage tag vocabulary and view episode data across the corpus
-        </p>
-        <div class="stats">
-          <div class="stat">
-            <span class="stat-value" id="total-episodes">-</span>
-            <div class="stat-label">Episodes</div>
-          </div>
-          <div class="stat">
-            <span class="stat-value" id="total-tags">-</span>
-            <div class="stat-label">Total Tags</div>
-          </div>
-          <div class="stat">
-            <span class="stat-value" id="avg-tags">-</span>
-            <div class="stat-label">Avg Tags/Episode</div>
-          </div>
-        </div>
+        <p class="subtitle">Manage tag vocabulary across the corpus</p>
       </header>
 
       <div class="section" id="proposed-section" style="display: none">
@@ -40,61 +24,6 @@
         </p>
         <div id="proposed-container">
           <div class="loading">Loading proposed tags...</div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Episodes</h2>
-        <div
-          style="display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap"
-        >
-          <input
-            type="text"
-            id="episode-search"
-            placeholder="Search episodes by title..."
-            style="
-              flex: 1;
-              min-width: 200px;
-              padding: 10px 16px;
-              border: 1px solid #e5e7eb;
-              border-radius: 8px;
-              font-size: 14px;
-            "
-            oninput="filterEpisodes()"
-          />
-          <select
-            id="tag-filter"
-            style="
-              padding: 10px 16px;
-              border: 1px solid #e5e7eb;
-              border-radius: 8px;
-              font-size: 14px;
-              min-width: 200px;
-            "
-            onchange="filterEpisodes()"
-          >
-            <option value="">All tags</option>
-          </select>
-          <select
-            id="sort-select"
-            style="
-              padding: 10px 16px;
-              border: 1px solid #e5e7eb;
-              border-radius: 8px;
-              font-size: 14px;
-            "
-            onchange="filterEpisodes()"
-          >
-            <option value="episode-desc">Episode # (newest)</option>
-            <option value="episode-asc">Episode # (oldest)</option>
-            <option value="date-desc">Date (newest)</option>
-            <option value="date-asc">Date (oldest)</option>
-            <option value="tags-desc">Tag count (high)</option>
-            <option value="tags-asc">Tag count (low)</option>
-          </select>
-        </div>
-        <div id="episodes-container">
-          <div class="loading">Loading episodes...</div>
         </div>
       </div>
 

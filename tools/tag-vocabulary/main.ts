@@ -9,7 +9,6 @@ import {
   API_BASE_URL,
   CATEGORY_LABELS,
   escapeHtml,
-  formatDate,
   getTagFormData,
   reprocessAllEpisodes,
   reprocessTag as reprocessTagShared,
@@ -19,231 +18,6 @@ import {
 
 // Available tag categories (loaded from API)
 let availableCategories: TagCategory[] = [];
-
-// Get tag category class
-function getTagCategoryClass(_tagName: string): string {
-  // For now, return default; will be enhanced in Phase 2 with vocabulary data
-  return "";
-}
-
-interface Episode {
-  videoId: string;
-  title: string;
-  publishedAt: string;
-  episodeNumber?: number;
-  tags?: Array<{ tag: string; mentions: number }>;
-}
-
-// Render episode card
-function renderEpisodeCard(episode: Episode): string {
-  const tagCount = episode.tags?.length || 0;
-  const tagsPreview = episode.tags?.slice(0, 5) || [];
-  const moreCount = tagCount > 5 ? tagCount - 5 : 0;
-
-  return `
-    <div class="episode-card" onclick="toggleEpisodeDetail('${episode.videoId}')">
-      <div class="episode-header">
-        <div class="episode-number">Episode ${episode.episodeNumber || "?"}</div>
-        <div class="episode-title">${episode.title}</div>
-      </div>
-      <div class="episode-meta">
-        <span>📅 ${formatDate(episode.publishedAt)}</span>
-        <span>🏷️ ${tagCount} tags</span>
-      </div>
-      <div class="episode-tags">
-        ${tagsPreview
-          .map(
-            tag => `
-          <span class="tag-badge ${getTagCategoryClass(tag.tag)}">
-            ${tag.tag} (${tag.mentions})
-          </span>
-        `,
-          )
-          .join("")}
-        ${moreCount > 0 ? `<span class="tag-badge">+${moreCount} more</span>` : ""}
-      </div>
-      <div class="episode-detail" id="detail-${episode.videoId}">
-        <div class="tag-list">
-          ${(episode.tags || [])
-            .map(
-              tag => `
-            <div class="tag-detail">
-              <span class="tag-name">${tag.tag}</span>
-              <span class="tag-mentions">${tag.mentions} mentions</span>
-            </div>
-          `,
-            )
-            .join("")}
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-// Toggle episode detail expansion
-function toggleEpisodeDetail(videoId: string): void {
-  const detail = document.querySelector(`#detail-${videoId}`);
-  if (detail) {
-    detail.classList.toggle("show");
-  }
-}
-
-// Store all episodes for filtering
-let allEpisodes: Episode[] = [];
-
-// Load and display episodes
-async function loadEpisodes(): Promise<void> {
-  try {
-    const response = await fetch(`${API_BASE_URL}/api/tag-vocabulary/episodes`);
-    if (!response.ok) {
-      throw new Error("Failed to load episodes");
-    }
-
-    allEpisodes = await response.json();
-
-    // Update stats
-    const totalEpisodes = allEpisodes.length;
-    const totalTags = allEpisodes.reduce(
-      (sum, ep) => sum + (ep.tags?.length || 0),
-      0,
-    );
-    const avgTags =
-      totalEpisodes > 0 ? (totalTags / totalEpisodes).toFixed(1) : "0";
-
-    const totalEpisodesElement = document.querySelector("#total-episodes");
-    const totalTagsElement = document.querySelector("#total-tags");
-    const avgTagsElement = document.querySelector("#avg-tags");
-
-    if (totalEpisodesElement)
-      totalEpisodesElement.textContent = totalEpisodes.toString();
-    if (totalTagsElement) totalTagsElement.textContent = totalTags.toString();
-    if (avgTagsElement) avgTagsElement.textContent = avgTags;
-
-    // Populate tag filter dropdown
-    populateTagFilter(allEpisodes);
-
-    // Render episodes with initial filter
-    filterEpisodes();
-  } catch (error) {
-    console.error("Error loading episodes:", error);
-    const container = document.querySelector("#episodes-container");
-    if (container) {
-      container.innerHTML = `
-        <div class="empty-state">
-          <div class="empty-state-icon">⚠️</div>
-          <div class="empty-state-text">Error loading episodes: ${error instanceof Error ? error.message : "Unknown error"}</div>
-        </div>
-      `;
-    }
-  }
-}
-
-// Populate tag filter dropdown with all unique tags
-function populateTagFilter(episodes: Episode[]): void {
-  const allTags = new Set<string>();
-  for (const episode of episodes) {
-    if (episode.tags) {
-      for (const tag of episode.tags) {
-        allTags.add(tag.tag);
-      }
-    }
-  }
-
-  const tagFilter = document.querySelector("#tag-filter") as HTMLSelectElement;
-  if (!tagFilter) return;
-
-  const sortedTags = [...allTags].sort();
-
-  // Keep "All tags" option and add all unique tags
-  tagFilter.innerHTML =
-    '<option value="">All tags</option>' +
-    sortedTags.map(tag => `<option value="${tag}">${tag}</option>`).join("");
-}
-
-// Filter and sort episodes based on user input
-function filterEpisodes(): void {
-  const searchInput = document.querySelector(
-    "#episode-search",
-  ) as HTMLInputElement;
-  const tagFilterElement = document.querySelector(
-    "#tag-filter",
-  ) as HTMLSelectElement;
-  const sortSelect = document.querySelector(
-    "#sort-select",
-  ) as HTMLSelectElement;
-
-  if (!searchInput || !tagFilterElement || !sortSelect) return;
-
-  const searchTerm = searchInput.value.toLowerCase();
-  const selectedTag = tagFilterElement.value;
-  const sortOption = sortSelect.value;
-
-  // Filter episodes
-  const filtered = allEpisodes.filter(episode => {
-    // Search filter
-    const matchesSearch =
-      !searchTerm || episode.title.toLowerCase().includes(searchTerm);
-
-    // Tag filter
-    const matchesTag =
-      !selectedTag ||
-      (episode.tags && episode.tags.some(t => t.tag === selectedTag));
-
-    return matchesSearch && matchesTag;
-  });
-
-  // Sort episodes
-  filtered.sort((a, b) => {
-    switch (sortOption) {
-      case "episode-desc": {
-        return (b.episodeNumber || 0) - (a.episodeNumber || 0);
-      }
-      case "episode-asc": {
-        return (a.episodeNumber || 0) - (b.episodeNumber || 0);
-      }
-      case "date-desc": {
-        return b.publishedAt.localeCompare(a.publishedAt);
-      }
-      case "date-asc": {
-        return a.publishedAt.localeCompare(b.publishedAt);
-      }
-      case "tags-desc": {
-        return (b.tags?.length || 0) - (a.tags?.length || 0);
-      }
-      case "tags-asc": {
-        return (a.tags?.length || 0) - (b.tags?.length || 0);
-      }
-      default: {
-        return 0;
-      }
-    }
-  });
-
-  // Render filtered episodes
-  renderEpisodesGrid(filtered);
-}
-
-// Render episodes grid
-function renderEpisodesGrid(episodes: Episode[]): void {
-  const container = document.querySelector("#episodes-container");
-  if (!container) return;
-
-  if (episodes.length === 0) {
-    container.innerHTML = `
-      <div class="empty-state">
-        <div class="empty-state-icon">📭</div>
-        <div class="empty-state-text">No episodes match your filters</div>
-      </div>
-    `;
-    return;
-  }
-
-  container.innerHTML = `
-    <div class="episodes-grid">
-      ${episodes.map(renderEpisodeCard).join("")}
-    </div>
-  `;
-}
 
 interface TagDefinition {
   canonical: string;
@@ -365,10 +139,10 @@ async function loadVocabulary(): Promise<void> {
       throw new Error("Failed to load vocabulary");
     }
 
-    // Filter out rejected tags
+    // Show only approved/accepted tags in the main vocabulary section.
     const vocab = await response.json();
     allVocabulary = vocab
-      .filter((tag: TagDefinition) => tag.status !== "rejected")
+      .filter((tag: TagDefinition) => tag.status === "accepted" || !tag.status)
       .sort(sortVocabularyNewestFirst);
     renderVocabulary(currentCategory);
   } catch (error) {
@@ -646,7 +420,6 @@ async function startMigration(): Promise<void> {
         button.textContent = "Run Migration";
         // Reload data
         setTimeout(() => {
-          loadEpisodes();
           loadAnalytics();
         }, 1000);
       },
@@ -729,7 +502,6 @@ async function addTag(event: Event): Promise<void> {
         successMessage.classList.add("show");
         // Reload all data
         setTimeout(() => {
-          loadEpisodes();
           loadVocabulary();
           loadAnalytics();
         }, 1000);
@@ -753,7 +525,6 @@ async function reprocessSingleTag(canonical: string): Promise<void> {
       onComplete: () => {
         // Reload all data
         setTimeout(() => {
-          loadEpisodes();
           loadVocabulary();
           loadAnalytics();
         }, 1000);
@@ -804,7 +575,6 @@ async function deleteTag(canonical: string): Promise<void> {
 
     // Reload all data
     setTimeout(() => {
-      loadEpisodes();
       loadVocabulary();
       loadAnalytics();
     }, 500);
@@ -1099,7 +869,6 @@ async function approveTag(index: number): Promise<void> {
         onComplete: () => {
           // Reload all data
           setTimeout(() => {
-            loadEpisodes();
             loadVocabulary();
             loadAnalytics();
           }, 1000);
@@ -1295,7 +1064,6 @@ async function rejectTag(index: number): Promise<void> {
 (async () => {
   await loadCategories(); // Load categories first
   loadProposedTags();
-  loadEpisodes();
   loadVocabulary();
   loadAnalytics();
 })();
@@ -1303,11 +1071,9 @@ async function rejectTag(index: number): Promise<void> {
 // Make functions available globally for onclick handlers
 declare global {
   interface Window {
-    toggleEpisodeDetail: typeof toggleEpisodeDetail;
     filterVocabulary: typeof filterVocabulary;
     reprocessSingleTag: typeof reprocessSingleTag;
     deleteTag: typeof deleteTag;
-    filterEpisodes: typeof filterEpisodes;
     startMigration: typeof startMigration;
     toggleDescription: typeof toggleDescription;
     validateForm: typeof validateForm;
@@ -1321,11 +1087,9 @@ declare global {
   }
 }
 
-(globalThis as unknown as Window).toggleEpisodeDetail = toggleEpisodeDetail;
 (globalThis as unknown as Window).filterVocabulary = filterVocabulary;
 (globalThis as unknown as Window).reprocessSingleTag = reprocessSingleTag;
 (globalThis as unknown as Window).deleteTag = deleteTag;
-(globalThis as unknown as Window).filterEpisodes = filterEpisodes;
 (globalThis as unknown as Window).startMigration = startMigration;
 (globalThis as unknown as Window).toggleDescription = toggleDescription;
 (globalThis as unknown as Window).validateForm = validateForm;
