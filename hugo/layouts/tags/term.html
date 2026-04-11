@@ -10,13 +10,13 @@
   {{ $rankedEpisodes := index $tagIndex .Title | default slice }}
   {{ $topEpisodesLimit := .Params.topEpisodesLimit | default 6 }}
   {{ $featuredEpisodes := first $topEpisodesLimit $rankedEpisodes }}
-  <section class="tag-page">
-    <header class="tag-hero{{ if .Params }}tag-hero--profile{{ end }}">
-      <a href="/tags/" class="button-brutalist tag-hero__back">← All Topics</a>
-      <div class="tag-hero__eyebrow panel panel--accent">
+  <section class="term-page tag-page">
+    <header class="page-hero{{ if .Params }}tag-hero--profile{{ end }}">
+      <a href="/tags/" class="button-brutalist page-hero__back">← All Topics</a>
+      <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow">Topic archive</span>
       </div>
-      <h1 class="tag-hero__title">{{ .Title }}</h1>
+      <h1 class="page-hero__title">{{ .Title }}</h1>
       {{ with .Params.definition }}
         <p class="tag-hero__dek">{{ . }}</p>
       {{ else }}
@@ -33,9 +33,9 @@
             <span class="tag-hero__classification-value">{{ . }}</span>
           </div>
         {{ end }}
-        <div class="tag-hero__meta panel">
-          <span class="tag-hero__stat-number">{{ len .Pages }}</span>
-          <span class="tag-hero__stat-label"
+        <div class="page-hero__meta panel">
+          <span class="page-hero__stat-number">{{ len .Pages }}</span>
+          <span class="page-hero__stat-label"
             >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
           >
         </div>
@@ -96,7 +96,7 @@
             </p>
           </div>
         </div>
-        <div class="episodes-grid term-page__episodes-grid">
+        <div class="episodes-grid">
           {{ range $featuredEpisodes }}
             {{ $episodePage := where $.Pages ".Params.episodeNumber" .ep }}
             {{ $episode := index $episodePage 0 }}
@@ -132,10 +132,10 @@
                       {{ $episode.Date.Format "January 2, 2006" }}
                     </time>
                     {{ if $episode.Params.tags }}
-                      <div class="episode-card__tags">
+                      <div class="episode-card__badges">
                         {{ $currentTag := $.Title }}
                         <span
-                          class="episode-card__tag episode-card__tag--current"
+                          class="episode-card__badge episode-card__tag--current"
                           >{{ $currentTag }}</span
                         >
                         {{ $otherTags := slice }}
@@ -145,11 +145,11 @@
                           {{ end }}
                         {{ end }}
                         {{ range first 2 $otherTags }}
-                          <span class="episode-card__tag">{{ . }}</span>
+                          <span class="episode-card__badge">{{ . }}</span>
                         {{ end }}
                         {{ $remaining := sub (len $otherTags) 2 }}
                         {{ if gt $remaining 0 }}
-                          <span class="episode-card__tag-more"
+                          <span class="episode-card__badge-more"
                             >+{{ $remaining }}</span
                           >
                         {{ end }}
@@ -175,7 +175,7 @@
             </p>
           </div>
         </div>
-        <div class="episodes-grid term-page__episodes-grid">
+        <div class="episodes-grid">
           {{ range sort .Pages ".Params.episodeNumber" "desc" }}
             {{ $guests := .Params.guests | default slice }}
             <article class="episode-card">
@@ -201,9 +201,10 @@
                     {{ .Date.Format "January 2, 2006" }}
                   </time>
                   {{ if .Params.tags }}
-                    <div class="episode-card__tags">
+                    <div class="episode-card__badges">
                       {{ $currentTag := $.Title }}
-                      <span class="episode-card__tag episode-card__tag--current"
+                      <span
+                        class="episode-card__badge episode-card__tag--current"
                         >{{ $currentTag }}</span
                       >
                       {{ $otherTags := slice }}
@@ -213,11 +214,11 @@
                         {{ end }}
                       {{ end }}
                       {{ range first 2 $otherTags }}
-                        <span class="episode-card__tag">{{ . }}</span>
+                        <span class="episode-card__badge">{{ . }}</span>
                       {{ end }}
                       {{ $remaining := sub (len $otherTags) 2 }}
                       {{ if gt $remaining 0 }}
-                        <span class="episode-card__tag-more"
+                        <span class="episode-card__badge-more"
                           >+{{ $remaining }}</span
                         >
                       {{ end }}

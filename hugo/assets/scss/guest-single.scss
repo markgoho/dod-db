@@ -1,18 +1,5 @@
-@use "episode-card";
-
 .guest-page {
-  display: grid;
-  gap: var(--space-2xl);
   margin-block-start: var(--space-xl);
-}
-
-.guest-hero,
-.page-hero {
-  align-items: center;
-  display: grid;
-  gap: var(--space-s);
-  justify-items: center;
-  text-align: center;
 }
 
 .guest-hero--profile {
@@ -22,24 +9,13 @@
   text-align: left;
 }
 
-.guest-hero__back,
-.term-page__back {
-  justify-self: start;
-}
-
 .guest-hero--profile > * {
   width: 100%;
 }
 
-.guest-hero__eyebrow,
-.page-hero__eyebrow {
-  padding-block: var(--space-2xs);
-  padding-inline: var(--space-s);
-}
-
-.guest-hero__title,
-.page-hero__title {
-  margin: 0;
+.guest-hero--profile .page-hero__back {
+  grid-column: 1 / -1;
+  width: max-content;
 }
 
 .guest-hero__role {
@@ -127,12 +103,7 @@
   justify-self: start;
 }
 
-.guest-hero__meta,
-.page-hero__meta {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: column;
-  gap: var(--space-4xs);
+.guest-hero__meta {
   grid-area: meta;
   margin-block-start: var(--space-xs);
   padding: var(--space-xs) var(--space-m);
@@ -141,25 +112,6 @@
 .guest-hero--profile .guest-hero__meta {
   justify-self: start;
   width: fit-content;
-}
-
-.guest-hero__stat-number,
-.page-hero__stat-number {
-  font-family: var(--font-family-display);
-  font-size: var(--step-4);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  letter-spacing: var(--letter-spacing-tight);
-  line-height: var(--line-height-tight);
-}
-
-.guest-hero__stat-label,
-.page-hero__stat-label {
-  color: var(--color-text-muted);
-  font-size: var(--step--1);
-  font-weight: var(--font-weight-semibold);
-  letter-spacing: var(--letter-spacing-wide);
-  text-transform: uppercase;
 }
 
 .guest-profile-grid {
@@ -224,16 +176,12 @@
   gap: var(--space-l);
 }
 
-.guest-episodes .episodes-grid,
-.term-page__episodes-grid {
-  display: grid;
-  gap: var(--space-l);
+.guest-episodes .episodes-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 @media (width <= 48rem) {
-  .guest-episodes .episodes-grid,
-  .term-page__episodes-grid {
+  .guest-episodes .episodes-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 }

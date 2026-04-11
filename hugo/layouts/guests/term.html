@@ -8,9 +8,11 @@
 {{ define "main" }}
   {{ $profiles := index hugo.Data "guest-profiles" }}
   {{ $profile := index $profiles .Title }}
-  <a href="/guests/" class="button-brutalist guest-hero__back">← All Guests</a>
-  <section class="guest-page">
-    <header class="guest-hero{{ if $profile }}guest-hero--profile{{ end }}">
+  <section class="term-page guest-page">
+    <header class="page-hero{{ if $profile }}guest-hero--profile{{ end }}">
+      <a href="/guests/" class="button-brutalist page-hero__back"
+        >← All Guests</a
+      >
       {{ if $profile.image }}
         <figure class="guest-hero__portrait panel">
           <img
@@ -29,9 +31,9 @@
         {{ if $profile.dek }}
           <p class="guest-hero__dek">{{ $profile.dek }}</p>
         {{ end }}
-        <div class="guest-hero__meta panel">
-          <span class="guest-hero__stat-number">{{ len .Pages }}</span>
-          <span class="guest-hero__stat-label"
+        <div class="page-hero__meta guest-hero__meta panel">
+          <span class="page-hero__stat-number">{{ len .Pages }}</span>
+          <span class="page-hero__stat-label"
             >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
           >
         </div>
@@ -127,12 +129,12 @@
                   {{ .Date.Format "January 2, 2006" }}
                 </time>
                 {{ if .Params.tags }}
-                  <div class="episode-card__tags">
+                  <div class="episode-card__badges">
                     {{ range first 3 .Params.tags }}
-                      <span class="episode-card__tag">{{ . }}</span>
+                      <span class="episode-card__badge">{{ . }}</span>
                     {{ end }}
                     {{ if gt (len .Params.tags) 3 }}
-                      <span class="episode-card__tag-more"
+                      <span class="episode-card__badge-more"
                         >+{{ sub (len .Params.tags) 3 }}</span
                       >
                     {{ end }}

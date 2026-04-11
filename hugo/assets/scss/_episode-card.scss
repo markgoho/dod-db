@@ -70,33 +70,6 @@
   text-transform: uppercase;
 }
 
-.episode-card__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3xs);
-}
-
-.episode-card__tag,
-.episode-card__tag-more {
-  align-items: center;
-  border: var(--border-width-sm) solid var(--tan-900);
-  display: inline-flex;
-  font-size: var(--step--2);
-  font-weight: var(--font-weight-bold);
-  min-block-size: calc(var(--space-s) + var(--space-2xs));
-  padding-inline: var(--space-2xs);
-  text-transform: uppercase;
-}
-
-.episode-card__tag {
-  background: var(--tan-000);
-}
-
-.episode-card__tag-more {
-  background: var(--tan-900);
-  color: var(--color-text-inverse);
-}
-
 .episode-card__arrow {
   color: var(--color-action);
   font-family: var(--font-family-display);

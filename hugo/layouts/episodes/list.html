@@ -1,23 +1,16 @@
-{{ define "head-styles" }}
-  {{ $pageCSS := "scss/episode-list.scss" }}
-  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
-  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
-  <style>{{ $inlineCSS.Content | safeCSS }}</style>
-{{ end }}
-
 {{ define "main" }}
-  <section class="episodes-page">
-    <header class="episodes-hero">
-      <div class="episodes-hero__eyebrow panel panel--accent">
+  <section class="term-page">
+    <header class="page-hero">
+      <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow">Episode archive</span>
       </div>
-      <h1 class="episodes-hero__title">{{ .Title }}</h1>
+      <h1 class="page-hero__title">{{ .Title }}</h1>
       {{ with .Content }}
-        <div class="episodes-hero__description panel panel--muted">{{ . }}</div>
+        <div class="page-hero__description panel panel--muted">{{ . }}</div>
       {{ end }}
-      <div class="episodes-hero__count panel">
-        <span class="episodes-hero__count-number">{{ len .Pages }}</span>
-        <span class="episodes-hero__count-label">Episodes</span>
+      <div class="page-hero__meta panel">
+        <span class="page-hero__stat-number">{{ len .Pages }}</span>
+        <span class="page-hero__stat-label">Episodes</span>
       </div>
     </header>
 
@@ -45,12 +38,12 @@
                 {{ .Date.Format "January 2, 2006" }}
               </time>
               {{ if .Params.tags }}
-                <div class="episode-card__tags">
+                <div class="episode-card__badges">
                   {{ range first 3 .Params.tags }}
-                    <span class="episode-card__tag">{{ . }}</span>
+                    <span class="episode-card__badge">{{ . }}</span>
                   {{ end }}
                   {{ if gt (len .Params.tags) 3 }}
-                    <span class="episode-card__tag-more"
+                    <span class="episode-card__badge-more"
                       >+{{ sub (len .Params.tags) 3 }}</span
                     >
                   {{ end }}

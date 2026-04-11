@@ -1,0 +1,10 @@
+.episodes-grid {
+  display: grid;
+  gap: var(--space-l);
+}
+
+@media (width > 70rem) {
+  .episodes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

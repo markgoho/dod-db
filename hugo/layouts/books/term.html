@@ -1,27 +1,20 @@
-{{ define "head-styles" }}
-  {{ $pageCSS := "scss/book-single.scss" }}
-  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
-  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
-  <style>{{ $inlineCSS.Content | safeCSS }}</style>
-{{ end }}
-
 {{ define "main" }}
-  <section class="book-page">
-    <header class="book-hero">
-      <a href="/books/" class="button-brutalist book-hero__back">← All Books</a>
-      <div class="book-hero__eyebrow panel panel--accent">
+  <section class="term-page">
+    <header class="page-hero">
+      <a href="/books/" class="button-brutalist page-hero__back">← All Books</a>
+      <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow">Scripture archive</span>
       </div>
-      <h1 class="book-hero__title">{{ .Title }}</h1>
-      <div class="book-hero__meta panel">
-        <span class="book-hero__stat-number">{{ len .Pages }}</span>
-        <span class="book-hero__stat-label"
+      <h1 class="page-hero__title">{{ .Title }}</h1>
+      <div class="page-hero__meta panel">
+        <span class="page-hero__stat-number">{{ len .Pages }}</span>
+        <span class="page-hero__stat-label"
           >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
         >
       </div>
     </header>
 
-    <section class="book-episodes">
+    <section>
       <div class="episodes-grid">
         {{ range sort .Pages ".Params.episodeNumber" "desc" }}
           {{ $guests := .Params.guests | default slice }}
@@ -48,9 +41,10 @@
                   {{ .Date.Format "January 2, 2006" }}
                 </time>
                 {{ if .Params.books }}
-                  <div class="episode-card__books">
+                  <div class="episode-card__badges">
                     {{ $currentBook := $.Title }}
-                    <span class="episode-card__book episode-card__book--current"
+                    <span
+                      class="episode-card__badge episode-card__badge--current"
                       >{{ $currentBook }}</span
                     >
                     {{ $otherBooks := slice }}
@@ -60,11 +54,11 @@
                       {{ end }}
                     {{ end }}
                     {{ range first 2 $otherBooks }}
-                      <span class="episode-card__book">{{ . }}</span>
+                      <span class="episode-card__badge">{{ . }}</span>
                     {{ end }}
                     {{ $remaining := sub (len $otherBooks) 2 }}
                     {{ if gt $remaining 0 }}
-                      <span class="episode-card__book-more"
+                      <span class="episode-card__badge-more"
                         >+{{ $remaining }}</span
                       >
                     {{ end }}

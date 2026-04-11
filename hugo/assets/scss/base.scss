@@ -216,21 +216,22 @@ textarea:not([rows]) {
   gap: var(--space-s);
   justify-items: center;
   text-align: center;
+  width: 100%;
 }
 
-.page-hero > :is(.term-page__back, [class$="__back"]) {
+.page-hero > .page-hero__back {
   justify-self: start;
   width: max-content;
 }
 
-.page-hero > :is(.page-hero__eyebrow, [class$="__eyebrow"]) {
+.page-hero > .page-hero__eyebrow {
   justify-self: start;
   padding-block: var(--space-2xs);
   padding-inline: var(--space-s);
   width: max-content;
 }
 
-.page-hero > :is(.page-hero__title, [class$="__title"]) {
+.page-hero > .page-hero__title {
   margin: 0;
 }
 
@@ -238,6 +239,14 @@ textarea:not([rows]) {
   margin: 0;
   max-width: var(--content-max-width-prose);
   padding: var(--space-s) var(--space-m);
+}
+
+.page-hero__description > :first-child {
+  margin-top: 0;
+}
+
+.page-hero__description > :last-child {
+  margin-bottom: 0;
 }
 
 .page-hero__meta {
@@ -270,24 +279,14 @@ textarea:not([rows]) {
   gap: var(--space-2xl);
 }
 
-.term-page__back {
-  justify-self: start;
-}
-
-.page-hero
-  > :is(.page-hero__eyebrow, [class$="__eyebrow"])
-  + :is(.page-hero__title, [class$="__title"]) {
+.page-hero > .page-hero__eyebrow + .page-hero__title {
   margin-block-start: var(--space-2xs);
-}
-
-.term-page__episodes-grid {
-  display: grid;
-  gap: var(--space-l);
 }
 
 .cloud-page {
   display: grid;
   gap: var(--space-2xl);
+  justify-items: center;
 }
 
 .cloud-section {
@@ -304,6 +303,7 @@ textarea:not([rows]) {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-s);
+  justify-content: center;
 }
 
 .token-pill {
@@ -347,8 +347,22 @@ textarea:not([rows]) {
   padding-inline: var(--space-2xs);
 }
 
-@media (width > 70rem) {
-  .term-page__episodes-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.token-pill--empty,
+.token-pill--empty:hover,
+.token-pill--empty:focus-visible {
+  background: var(--tan-200);
+  border-color: var(--tan-400);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
+    var(--tan-400);
+  color: var(--color-text-muted);
+  cursor: default;
+}
+
+.token-pill--empty .token-pill__count {
+  background: var(--tan-400);
+  color: var(--tan-000);
+}
+
+.token-pill--featured {
+  background: var(--tan-200);
 }

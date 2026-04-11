@@ -1,0 +1,27 @@
+.episode-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs);
+}
+
+.episode-card__badge,
+.episode-card__badge-more {
+  align-items: center;
+  border: var(--border-width-sm) solid var(--tan-900);
+  display: inline-flex;
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-bold);
+  min-block-size: calc(var(--space-s) + var(--space-2xs));
+  padding-inline: var(--space-2xs);
+  text-transform: uppercase;
+}
+
+.episode-card__badge {
+  background: var(--tan-000);
+}
+
+.episode-card__badge--current,
+.episode-card__badge-more {
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+}

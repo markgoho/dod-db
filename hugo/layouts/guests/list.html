@@ -1,18 +1,11 @@
-{{ define "head-styles" }}
-  {{ $pageCSS := "scss/guests-list.scss" }}
-  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
-  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
-  <style>{{ $inlineCSS.Content | safeCSS }}</style>
-{{ end }}
-
 {{ define "main" }}
-  <section class="guests-page">
-    <header class="guests-hero">
-      <div class="guests-hero__eyebrow panel panel--accent">
+  <section class="cloud-page">
+    <header class="page-hero">
+      <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow">Guest archive</span>
       </div>
-      <h1 class="guests-hero__title">Guests</h1>
-      <p class="guests-hero__description panel panel--muted">
+      <h1 class="page-hero__title">Guests</h1>
+      <p class="page-hero__description panel panel--muted">
         {{ len .Data.Terms }} guest speakers across all episodes
       </p>
     </header>
@@ -28,17 +21,15 @@
     {{ end }}
 
     {{ if $multipleAppearances }}
-      <section class="guests-section">
-        <h2 class="type-section-title guests-section__title">
-          Frequent Guests
-        </h2>
-        <div class="guests-cloud">
+      <section class="cloud-section">
+        <h2 class="type-section-title cloud-section__title">Frequent Guests</h2>
+        <div class="token-cloud">
           {{ range $multipleAppearances }}
             <a
               href="{{ .Page.RelPermalink }}"
-              class="guest-pill guest-pill--featured">
-              <span class="guest-pill__name">{{ .Page.Title }}</span>
-              <span class="guest-pill__count">{{ .Count }}</span>
+              class="token-pill token-pill--featured">
+              <span class="token-pill__name">{{ .Page.Title }}</span>
+              <span class="token-pill__count">{{ .Count }}</span>
             </a>
           {{ end }}
         </div>
@@ -46,15 +37,15 @@
     {{ end }}
 
     {{ if $singleAppearance }}
-      <section class="guests-section guests-section--secondary">
-        <h2 class="type-section-title guests-section__title">
+      <section class="cloud-section">
+        <h2 class="type-section-title cloud-section__title">
           Guest Appearances
         </h2>
-        <div class="guests-cloud">
+        <div class="token-cloud">
           {{ range $singleAppearance }}
-            <a href="{{ .Page.RelPermalink }}" class="guest-pill">
-              <span class="guest-pill__name">{{ .Page.Title }}</span>
-              <span class="guest-pill__count">{{ .Count }}</span>
+            <a href="{{ .Page.RelPermalink }}" class="token-pill">
+              <span class="token-pill__name">{{ .Page.Title }}</span>
+              <span class="token-pill__count">{{ .Count }}</span>
             </a>
           {{ end }}
         </div>

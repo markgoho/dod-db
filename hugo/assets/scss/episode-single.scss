@@ -8,24 +8,6 @@
   padding-inline: var(--space-s);
 }
 
-.episode-hero {
-  align-items: center;
-  display: grid;
-  gap: var(--space-s);
-  justify-items: center;
-  text-align: center;
-}
-
-.episode-hero__eyebrow {
-  padding-block: var(--space-2xs);
-  padding-inline: var(--space-s);
-}
-
-.episode-hero__title {
-  margin: 0;
-  text-wrap: pretty;
-}
-
 .episode-hero__guest {
   color: var(--color-text-muted);
   font-size: var(--step-0);

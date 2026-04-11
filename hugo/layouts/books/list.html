@@ -1,18 +1,11 @@
-{{ define "head-styles" }}
-  {{ $pageCSS := "scss/books-list.scss" }}
-  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
-  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
-  <style>{{ $inlineCSS.Content | safeCSS }}</style>
-{{ end }}
-
 {{ define "main" }}
-  <section class="books-page">
-    <header class="books-hero">
-      <div class="books-hero__eyebrow panel panel--accent">
+  <section class="cloud-page">
+    <header class="page-hero">
+      <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow">Scripture index</span>
       </div>
-      <h1 class="books-hero__title">Scripture References</h1>
-      <p class="books-hero__description panel panel--muted">
+      <h1 class="page-hero__title">Scripture References</h1>
+      <p class="page-hero__description panel panel--muted">
         {{ len .Data.Terms }} books referenced across all episodes
       </p>
     </header>
@@ -52,19 +45,19 @@
     {{ end }}
 
     {{ if gt (len $oldTestament) 0 }}
-      <section class="books-section">
-        <h2 class="type-section-title books-section__title">Old Testament</h2>
-        <div class="books-cloud">
+      <section class="cloud-section">
+        <h2 class="type-section-title cloud-section__title">Old Testament</h2>
+        <div class="token-cloud">
           {{ range $oldTestament }}
             {{ if gt .count 0 }}
-              <a href="{{ .relPermalink }}" class="book-pill">
-                <span class="book-pill__name">{{ .title }}</span>
-                <span class="book-pill__count">{{ .count }}</span>
+              <a href="{{ .relPermalink }}" class="token-pill">
+                <span class="token-pill__name">{{ .title }}</span>
+                <span class="token-pill__count">{{ .count }}</span>
               </a>
             {{ else }}
-              <span class="book-pill book-pill--empty">
-                <span class="book-pill__name">{{ .title }}</span>
-                <span class="book-pill__count">{{ .count }}</span>
+              <span class="token-pill token-pill--empty">
+                <span class="token-pill__name">{{ .title }}</span>
+                <span class="token-pill__count">{{ .count }}</span>
               </span>
             {{ end }}
           {{ end }}
@@ -73,19 +66,19 @@
     {{ end }}
 
     {{ if gt (len $newTestament) 0 }}
-      <section class="books-section">
-        <h2 class="type-section-title books-section__title">New Testament</h2>
-        <div class="books-cloud">
+      <section class="cloud-section">
+        <h2 class="type-section-title cloud-section__title">New Testament</h2>
+        <div class="token-cloud">
           {{ range $newTestament }}
             {{ if gt .count 0 }}
-              <a href="{{ .relPermalink }}" class="book-pill">
-                <span class="book-pill__name">{{ .title }}</span>
-                <span class="book-pill__count">{{ .count }}</span>
+              <a href="{{ .relPermalink }}" class="token-pill">
+                <span class="token-pill__name">{{ .title }}</span>
+                <span class="token-pill__count">{{ .count }}</span>
               </a>
             {{ else }}
-              <span class="book-pill book-pill--empty">
-                <span class="book-pill__name">{{ .title }}</span>
-                <span class="book-pill__count">{{ .count }}</span>
+              <span class="token-pill token-pill--empty">
+                <span class="token-pill__name">{{ .title }}</span>
+                <span class="token-pill__count">{{ .count }}</span>
               </span>
             {{ end }}
           {{ end }}

@@ -1,27 +1,20 @@
-{{ define "head-styles" }}
-  {{ $pageCSS := "scss/tags-list.scss" }}
-  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
-  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
-  <style>{{ $inlineCSS.Content | safeCSS }}</style>
-{{ end }}
-
 {{ define "main" }}
-  <section class="tags-page">
-    <header class="tags-hero">
-      <div class="tags-hero__eyebrow panel panel--accent">
+  <section class="cloud-page">
+    <header class="page-hero">
+      <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow">Topic index</span>
       </div>
-      <h1 class="tags-hero__title">Topics</h1>
-      <p class="tags-hero__description panel panel--muted">
+      <h1 class="page-hero__title">Topics</h1>
+      <p class="page-hero__description panel panel--muted">
         {{ len .Data.Terms }} topics across all episodes
       </p>
     </header>
 
-    <div class="tags-cloud">
+    <div class="token-cloud">
       {{ range .Data.Terms.Alphabetical }}
-        <a href="{{ .Page.RelPermalink }}" class="tag-pill">
-          <span class="tag-pill__name">{{ .Page.Title }}</span>
-          <span class="tag-pill__count">{{ .Count }}</span>
+        <a href="{{ .Page.RelPermalink }}" class="token-pill">
+          <span class="token-pill__name">{{ .Page.Title }}</span>
+          <span class="token-pill__count">{{ .Count }}</span>
         </a>
       {{ end }}
     </div>

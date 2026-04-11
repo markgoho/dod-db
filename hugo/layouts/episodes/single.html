@@ -10,15 +10,15 @@
 
 
   <article class="episode-page container--wide">
-    <header class="episode-hero">
-      <div class="episode-hero__eyebrow panel panel--accent">
+    <header class="page-hero">
+      <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow"
           >Episode {{ .Params.episodeNumber }} •
           {{ .Date.Format "Jan 2, 2006" }}</span
         >
       </div>
 
-      <h1 class="episode-hero__title">{{ .Title }}</h1>
+      <h1 class="page-hero__title">{{ .Title }}</h1>
 
       {{ if gt (len $guests) 0 }}
         <p class="episode-hero__guest">with {{ delimit $guests ", " }}</p>
