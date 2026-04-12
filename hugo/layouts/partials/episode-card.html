@@ -1,0 +1,88 @@
+{{- $episode := .episode -}}
+{{- $headingLevel := .headingLevel | default "h2" -}}
+{{- $badgeSource := .badgeSource | default "" -}}
+{{- $currentTerm := .currentTerm | default "" -}}
+{{- $ranked := .ranked | default false -}}
+{{- $mentionCount := .mentionCount | default 0 -}}
+{{- $guestMode := .guestMode | default "first" -}}
+{{- $overrides := .overrides | default dict -}}
+
+{{- $guests := $episode.Params.guests | default slice -}}
+{{- $link := index $overrides "link" | default $episode.RelPermalink -}}
+{{- $title := index $overrides "title" | default $episode.Title -}}
+{{- $eyebrow := index $overrides "eyebrow" | default (printf "Episode %v" $episode.Params.episodeNumber) -}}
+{{- $guestText := index $overrides "guestText" | default "" -}}
+{{- $hideDate := or (index $overrides "eyebrow") (index $overrides "guestText") -}}
+
+<article class="episode-card{{ if $ranked }} episode-card--ranked{{ end }}">
+  <a href="{{ $link }}" class="episode-card__link">
+    <div class="episode-card__content">
+      {{- if $ranked }}
+      <div class="episode-card__header-row">
+        <p class="episode-card__eyebrow type-eyebrow">{{ $eyebrow }}</p>
+        <span class="episode-card__mention-count"
+          >{{ $mentionCount }} mentions</span
+        >
+      </div>
+      {{- else }}
+      <p class="episode-card__eyebrow type-eyebrow">{{ $eyebrow }}</p>
+      {{- end }}
+      {{ if eq $headingLevel "h3" -}}
+      <h3 class="episode-card__title">{{ $title }}</h3>
+      {{- else -}}
+      <h2 class="episode-card__title">{{ $title }}</h2>
+      {{- end }}
+      {{- if $guestText }}
+      <div class="episode-card__guest">{{ $guestText }}</div>
+      {{- else if and (eq $guestMode "all") (gt (len $guests) 0) }}
+      <div class="episode-card__guest">
+        with
+        {{ delimit $guests ", " " & " }}
+      </div>
+      {{- else if and (eq $guestMode "first") (gt (len $guests) 0) }}
+      <div class="episode-card__guest">
+        with
+        {{ index $guests 0 }}
+      </div>
+      {{- end }}
+      {{- if not $hideDate }}
+      <time
+        class="episode-card__date"
+        datetime="{{ $episode.Date.Format "2006-01-02" }}">
+        {{ $episode.Date.Format "January 2, 2006" }}
+      </time>
+      {{- end }}
+      {{- if $badgeSource }}
+        {{- $badges := index $episode.Params $badgeSource -}}
+        {{- if $badges }}
+      <ul class="episode-card__badges" role="list">
+          {{- if $currentTerm }}
+        <li><span class="episode-card__badge episode-card__badge--current">{{ $currentTerm }}</span></li>
+            {{- $others := slice -}}
+            {{- range $badges -}}
+              {{- if ne . $currentTerm -}}
+                {{- $others = $others | append . -}}
+              {{- end -}}
+            {{- end }}
+            {{- range first 2 $others }}
+        <li><span class="episode-card__badge">{{ . }}</span></li>
+            {{- end }}
+            {{- $remaining := sub (len $others) 2 }}
+            {{- if gt $remaining 0 }}
+        <li><span class="episode-card__badge-more">+{{ $remaining }}</span></li>
+            {{- end }}
+          {{- else }}
+            {{- range first 3 $badges }}
+        <li><span class="episode-card__badge">{{ . }}</span></li>
+            {{- end }}
+            {{- if gt (len $badges) 3 }}
+        <li><span class="episode-card__badge-more">+{{ sub (len $badges) 3 }}</span></li>
+            {{- end }}
+          {{- end }}
+      </ul>
+        {{- end }}
+      {{- end }}
+    </div>
+    <div class="episode-card__arrow" aria-hidden="true">&rarr;</div>
+  </a>
+</article>

@@ -30,22 +30,26 @@
 
       <div class="home-hero__stats">
         <a href="/episodes/" class="stat-card panel">
-          <div class="stat-card__number">{{ len $episodes }}</div>
-          <div class="stat-card__label">Episodes</div>
+          <div class="stat-display__number">{{ len $episodes }}</div>
+          <div class="stat-display__label">Episodes</div>
         </a>
         <a href="/tags/" class="stat-card panel">
-          <div class="stat-card__number">{{ len .Site.Taxonomies.tags }}</div>
-          <div class="stat-card__label">Topics</div>
+          <div class="stat-display__number">
+            {{ len .Site.Taxonomies.tags }}
+          </div>
+          <div class="stat-display__label">Topics</div>
         </a>
         <a href="/segments/" class="stat-card panel">
-          <div class="stat-card__number">
+          <div class="stat-display__number">
             {{ len .Site.Taxonomies.segments }}
           </div>
-          <div class="stat-card__label">Segments</div>
+          <div class="stat-display__label">Segments</div>
         </a>
         <a href="/guests/" class="stat-card panel">
-          <div class="stat-card__number">{{ len .Site.Taxonomies.guests }}</div>
-          <div class="stat-card__label">Guests</div>
+          <div class="stat-display__number">
+            {{ len .Site.Taxonomies.guests }}
+          </div>
+          <div class="stat-display__label">Guests</div>
         </a>
       </div>
     </section>
@@ -117,33 +121,7 @@
         </div>
         <div class="recent-episodes__grid">
           {{ range $recentEpisodes }}
-            {{ $guests := .Params.guests | default slice }}
-            <article class="episode-card">
-              <a href="{{ .RelPermalink }}" class="episode-card__link">
-                <div class="episode-card__number">
-                  {{ .Params.episodeNumber }}
-                </div>
-                <div class="episode-card__content">
-                  <p class="episode-card__eyebrow type-eyebrow">
-                    Episode
-                    {{ .Params.episodeNumber }}
-                  </p>
-                  <h3 class="episode-card__title">{{ .Title }}</h3>
-                  {{ if gt (len $guests) 0 }}
-                    <div class="episode-card__guest">
-                      with
-                      {{ index $guests 0 }}
-                    </div>
-                  {{ end }}
-                  <time
-                    class="episode-card__date"
-                    datetime="{{ .Date.Format "2006-01-02" }}">
-                    {{ .Date.Format "January 2, 2006" }}
-                  </time>
-                </div>
-                <div class="episode-card__arrow">→</div>
-              </a>
-            </article>
+            {{ partial "episode-card" (dict "episode" . "headingLevel" "h3") }}
           {{ end }}
         </div>
       </section>

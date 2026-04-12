@@ -2,7 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3xs);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 .episode-card__badge,
 .episode-card__badge-more {

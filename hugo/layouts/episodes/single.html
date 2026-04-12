@@ -105,7 +105,9 @@
           </section>
 
           {{ if .Params.segmentData }}
-            <section class="episode-segments episode-segments--subtle">
+            <section
+              class="episode-segments episode-segments--subtle"
+              aria-label="Analysis segments">
               <h2 class="type-section-title">Analysis Segments</h2>
               <div class="episode-segments__grid">
                 {{ range .Params.segmentData }}
@@ -129,7 +131,7 @@
           {{ end }}
         </div>
 
-        <section class="episode-transcript">
+        <section class="episode-transcript" aria-label="Episode transcript">
           <div class="transcript-header">
             <h2 class="type-section-title transcript-header-title">
               The Transcript
@@ -156,22 +158,26 @@
           {{ if .Params.books }}
             <section class="episode-sidebar__section panel">
               <h2 class="episode-sidebar__title">Scripture Index</h2>
-              <div class="chip-list">
+              <ul class="chip-list" role="list">
                 {{ range .Params.books }}
-                  <a href="/books/{{ . | urlize }}/" class="chip">{{ . }}</a>
+                  <li>
+                    <a href="/books/{{ . | urlize }}/" class="chip">{{ . }}</a>
+                  </li>
                 {{ end }}
-              </div>
+              </ul>
             </section>
           {{ end }}
 
           {{ if .Params.tags }}
             <section class="episode-sidebar__section panel panel--muted">
               <h2 class="episode-sidebar__title">Terminology</h2>
-              <div class="chip-list">
+              <ul class="chip-list" role="list">
                 {{ range .Params.tags }}
-                  <a href="/tags/{{ . | urlize }}/" class="chip">{{ . }}</a>
+                  <li>
+                    <a href="/tags/{{ . | urlize }}/" class="chip">{{ . }}</a>
+                  </li>
                 {{ end }}
-              </div>
+              </ul>
             </section>
           {{ end }}
         </section>

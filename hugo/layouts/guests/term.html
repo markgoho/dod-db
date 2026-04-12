@@ -32,8 +32,8 @@
           <p class="guest-hero__dek">{{ $profile.dek }}</p>
         {{ end }}
         <div class="page-hero__meta guest-hero__meta panel">
-          <span class="page-hero__stat-number">{{ len .Pages }}</span>
-          <span class="page-hero__stat-label"
+          <span class="stat-display__number">{{ len .Pages }}</span>
+          <span class="stat-display__label"
             >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
           >
         </div>
@@ -72,7 +72,7 @@
             {{ with $profile.works }}
               <div class="guest-profile-list-block">
                 <p class="guest-profile-list-label type-eyebrow">Books</p>
-                <ul class="guest-profile-list" role="list">
+                <ul class="guest-profile-list">
                   {{ range . }}
                     <li>{{ . }}</li>
                   {{ end }}
@@ -84,7 +84,7 @@
                 <p class="guest-profile-list-label type-eyebrow">
                   Affiliations
                 </p>
-                <ul class="guest-profile-list" role="list">
+                <ul class="guest-profile-list">
                   {{ range . }}
                     <li>{{ . }}</li>
                   {{ end }}
@@ -97,7 +97,7 @@
     {{ end }}
 
 
-    <section class="guest-episodes">
+    <section class="guest-episodes" aria-label="Episode appearances">
       {{ if $profile }}
         <h2 class="type-section-title guest-episodes__title">
           Appearances on the show
@@ -105,45 +105,7 @@
       {{ end }}
       <div class="episodes-grid">
         {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-          {{ $guests := .Params.guests }}
-          <article class="episode-card">
-            <a href="{{ .RelPermalink }}" class="episode-card__link">
-              <div class="episode-card__number">
-                {{ .Params.episodeNumber }}
-              </div>
-              <div class="episode-card__content">
-                <p class="episode-card__eyebrow type-eyebrow">
-                  Episode
-                  {{ .Params.episodeNumber }}
-                </p>
-                <h2 class="episode-card__title">{{ .Title }}</h2>
-                {{ if gt (len $guests) 0 }}
-                  <div class="episode-card__guest">
-                    with
-                    {{ delimit $guests ", " " & " }}
-                  </div>
-                {{ end }}
-                <time
-                  class="episode-card__date"
-                  datetime="{{ .Date.Format "2006-01-02" }}">
-                  {{ .Date.Format "January 2, 2006" }}
-                </time>
-                {{ if .Params.tags }}
-                  <div class="episode-card__badges">
-                    {{ range first 3 .Params.tags }}
-                      <span class="episode-card__badge">{{ . }}</span>
-                    {{ end }}
-                    {{ if gt (len .Params.tags) 3 }}
-                      <span class="episode-card__badge-more"
-                        >+{{ sub (len .Params.tags) 3 }}</span
-                      >
-                    {{ end }}
-                  </div>
-                {{ end }}
-              </div>
-              <div class="episode-card__arrow">→</div>
-            </a>
-          </article>
+          {{ partial "episode-card" (dict "episode" . "guestMode" "all" "badgeSource" "tags") }}
         {{ end }}
       </div>
     </section>

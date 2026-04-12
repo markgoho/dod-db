@@ -9,50 +9,14 @@
         <div class="page-hero__description panel panel--muted">{{ . }}</div>
       {{ end }}
       <div class="page-hero__meta panel">
-        <span class="page-hero__stat-number">{{ len .Pages }}</span>
-        <span class="page-hero__stat-label">Episodes</span>
+        <span class="stat-display__number">{{ len .Pages }}</span>
+        <span class="stat-display__label">Episodes</span>
       </div>
     </header>
 
     <div class="episodes-grid">
       {{ range $index, $page := sort .Pages ".Params.episodeNumber" "desc" }}
-        {{ $guests := .Params.guests | default slice }}
-        <article class="episode-card">
-          <a href="{{ .RelPermalink }}" class="episode-card__link">
-            <div class="episode-card__number">{{ .Params.episodeNumber }}</div>
-            <div class="episode-card__content">
-              <p class="episode-card__eyebrow type-eyebrow">
-                Episode
-                {{ .Params.episodeNumber }}
-              </p>
-              <h2 class="episode-card__title">{{ .Title }}</h2>
-              {{ if gt (len $guests) 0 }}
-                <div class="episode-card__guest">
-                  with
-                  {{ index $guests 0 }}
-                </div>
-              {{ end }}
-              <time
-                class="episode-card__date"
-                datetime="{{ .Date.Format "2006-01-02" }}">
-                {{ .Date.Format "January 2, 2006" }}
-              </time>
-              {{ if .Params.tags }}
-                <div class="episode-card__badges">
-                  {{ range first 3 .Params.tags }}
-                    <span class="episode-card__badge">{{ . }}</span>
-                  {{ end }}
-                  {{ if gt (len .Params.tags) 3 }}
-                    <span class="episode-card__badge-more"
-                      >+{{ sub (len .Params.tags) 3 }}</span
-                    >
-                  {{ end }}
-                </div>
-              {{ end }}
-            </div>
-            <div class="episode-card__arrow">→</div>
-          </a>
-        </article>
+        {{ partial "episode-card" (dict "episode" . "badgeSource" "tags") }}
       {{ end }}
     </div>
   </section>

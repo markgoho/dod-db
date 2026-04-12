@@ -60,10 +60,10 @@
 }
 
 .guest-hero__portrait {
-  inline-size: min(100%, 18rem);
+  inline-size: min(100%, var(--content-min-width-sidebar));
   justify-self: start;
   margin: 0;
-  max-inline-size: min(100%, 18rem);
+  max-inline-size: min(100%, var(--content-min-width-sidebar));
   overflow: clip;
   padding: var(--space-2xs);
   position: relative;
@@ -134,7 +134,7 @@
 
 .guest-profile-panel__body {
   margin: 0;
-  max-width: var(--layout-copy-max);
+  max-width: var(--content-max-width-copy);
 }
 
 .guest-profile-chips {
@@ -167,7 +167,7 @@
 }
 
 .guest-page .guest-episodes {
-  border-top: var(--border-width-sm) solid var(--color-border-muted);
+  border-top: var(--border-width-sm) solid var(--tan-300);
   padding-top: var(--space-xl);
 }
 
@@ -176,29 +176,23 @@
   gap: var(--space-l);
 }
 
-.guest-episodes .episodes-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.guest-episodes__title {
+  margin: 0;
 }
 
-@media (width <= 48rem) {
-  .guest-episodes .episodes-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-@media (min-width: 48rem) {
+@media (width >= 48rem) {
   .guest-hero--profile {
     align-items: start;
     column-gap: var(--space-xl);
     grid-template-areas: "portrait content";
-    grid-template-columns: 18rem minmax(0, 1fr);
+    grid-template-columns: var(--content-min-width-sidebar) minmax(0, 1fr);
   }
 
   .guest-hero--profile .guest-hero__portrait {
     align-self: start;
     grid-area: portrait;
-    inline-size: 18rem;
-    max-inline-size: 18rem;
+    inline-size: var(--content-min-width-sidebar);
+    max-inline-size: var(--content-min-width-sidebar);
   }
 
   .guest-hero--profile .guest-hero__content {

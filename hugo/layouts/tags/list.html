@@ -10,13 +10,15 @@
       </p>
     </header>
 
-    <div class="token-cloud">
+    <ul class="token-cloud" role="list">
       {{ range .Data.Terms.Alphabetical }}
-        <a href="{{ .Page.RelPermalink }}" class="token-pill">
-          <span class="token-pill__name">{{ .Page.Title }}</span>
-          <span class="token-pill__count">{{ .Count }}</span>
-        </a>
+        <li>
+          <a href="{{ .Page.RelPermalink }}" class="token-pill">
+            <span class="token-pill__name">{{ .Page.Title }}</span>
+            <span class="token-pill__count">{{ .Count }}</span>
+          </a>
+        </li>
       {{ end }}
-    </div>
+    </ul>
   </section>
 {{ end }}

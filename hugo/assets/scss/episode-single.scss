@@ -134,7 +134,7 @@
   font-style: italic;
   font-weight: var(--font-weight-boldest);
   letter-spacing: var(--letter-spacing-heading);
-  line-height: 1;
+  line-height: var(--line-height-tight);
   text-transform: uppercase;
 }
 
@@ -548,7 +548,7 @@
 
 .speaker-name {
   align-items: center;
-  background: var(--color-action);
+  background: var(--speaker-color, var(--color-action));
   border: var(--border-width-sm) solid var(--tan-900);
   color: var(--color-text-inverse);
   display: inline-flex;
@@ -563,8 +563,17 @@
   text-transform: uppercase;
 }
 
+/* Speaker color map — add new speakers here */
+.speaker-name[data-speaker="dan-mcclellan"] {
+  --speaker-color: var(--color-action);
+}
+
 .speaker-name[data-speaker="dan-beecher"] {
-  background: var(--tan-900);
+  --speaker-color: var(--tan-900);
+}
+
+.speaker-name[data-speaker="grace-baldridge"] {
+  --speaker-color: var(--brown-450);
 }
 
 .timestamp {

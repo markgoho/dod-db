@@ -11,82 +11,31 @@
   {{ $topEpisodesLimit := .Params.topEpisodesLimit | default 6 }}
   {{ $featuredEpisodes := first $topEpisodesLimit $rankedEpisodes }}
   <section class="term-page tag-page">
-    <header class="page-hero page-hero--profile">
-      <a href="/tags/" class="button-brutalist page-hero__back">← All Topics</a>
-      <div class="page-hero__eyebrow panel panel--accent">
-        <span class="type-eyebrow">Topic archive</span>
-      </div>
-      <h1 class="page-hero__title">{{ .Title }}</h1>
-      {{ with .Params.definition }}
-        <p class="tag-hero__dek">{{ . }}</p>
-      {{ else }}
-        {{ with .Params.dek }}
-          <p class="tag-hero__dek">{{ . }}</p>
-        {{ end }}
-      {{ end }}
-      <div class="tag-hero__meta-row">
-        {{ with .Params.category }}
-          <div class="page-hero__meta panel panel--muted">
-            <span class="page-hero__stat-label type-eyebrow">Classification</span>
-            <span class="tag-hero__classification-value">{{ . }}</span>
-          </div>
-        {{ end }}
-        <div class="page-hero__meta panel">
-          <span class="page-hero__stat-number">{{ len .Pages }}</span>
-          <span class="page-hero__stat-label"
-            >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
-          >
-        </div>
-      </div>
-      {{ with .Params.featuredEpisode }}
-        {{ $featuredEpisodePage := index (where $.Pages ".Params.episodeNumber" .number) 0 }}
-        {{ if $featuredEpisodePage }}
-          <div class="tag-featured-callouts episodes-grid">
-            <article class="episode-card">
-              <a href="{{ $featuredEpisodePage.RelPermalink }}" class="episode-card__link">
-                <div class="episode-card__number">{{ .number }}</div>
-                <div class="episode-card__content">
-                  <p class="episode-card__eyebrow type-eyebrow">Featured episode</p>
-                  <h2 class="episode-card__title">
-                    {{ .label | default $featuredEpisodePage.Title }}
-                  </h2>
-                  <div class="episode-card__guest">Full episode discussion</div>
-                </div>
-                <div class="episode-card__arrow">→</div>
-              </a>
-            </article>
-            {{ with $.Params.featuredSegment }}
-              {{ if eq .episodeNumber $.Params.featuredEpisode.number }}
-                <article class="episode-card">
-                  <a
-                    href="{{ $featuredEpisodePage.RelPermalink }}#{{ .segmentType }}"
-                    class="episode-card__link">
-                    <div class="episode-card__number">{{ .episodeNumber }}</div>
-                    <div class="episode-card__content">
-                      <p class="episode-card__eyebrow type-eyebrow">Featured segment</p>
-                      <h2 class="episode-card__title">{{ .label }}</h2>
-                      <div class="episode-card__guest">
-                        Jump to the in-depth discussion
-                      </div>
-                    </div>
-                    <div class="episode-card__arrow">→</div>
-                  </a>
-                </article>
-              {{ end }}
+    {{ $def := .Params.definition | default .Params.dek | default "" }}
+    {{ partial "taxonomy-hero" (dict "page" . "backHref" "/tags/" "backLabel" "All Topics" "eyebrowText" "Topic archive" "heroClass" "page-hero--profile" "definition" $def "category" (.Params.category | default "")) }}
+
+    {{ with .Params.featuredEpisode }}
+      {{ $featuredEpisodePage := index (where $.Pages ".Params.episodeNumber" .number) 0 }}
+      {{ if $featuredEpisodePage }}
+        <div class="tag-featured-callouts episodes-grid">
+          {{ partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured episode" "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion")) }}
+          {{ with $.Params.featuredSegment }}
+            {{ if eq .episodeNumber $.Params.featuredEpisode.number }}
+              {{ partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured segment" "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentType))) }}
             {{ end }}
-          </div>
-        {{ end }}
+          {{ end }}
+        </div>
       {{ end }}
-    </header>
+    {{ end }}
 
     {{ with .Params.quotes }}
-      <section class="tag-quotes">
+      <section class="tag-quotes" aria-label="Quotes">
         <h2 class="type-section-title tag-section-title">Quotes from Data</h2>
         <div class="tag-quotes__grid">
           {{ range . }}
             {{ $episodePage := where $.Pages ".Params.episodeNumber" .episode }}
             {{ $episode := index $episodePage 0 }}
-            <article class="tag-quote">
+            <article class="tag-quote panel">
               <p class="tag-quote__text">“{{ .text }}”</p>
               <div class="tag-quote__meta">
                 <span class="tag-quote__speaker type-eyebrow"
@@ -138,64 +87,7 @@
             {{ $episodePage := where $.Pages ".Params.episodeNumber" .ep }}
             {{ $episode := index $episodePage 0 }}
             {{ if $episode }}
-              {{ $guests := $episode.Params.guests | default slice }}
-              <article class="episode-card episode-card--ranked">
-                <a
-                  href="{{ $episode.RelPermalink }}"
-                  class="episode-card__link">
-                  <div class="episode-card__number">
-                    {{ $episode.Params.episodeNumber }}
-                  </div>
-                  <div class="episode-card__content">
-                    <div class="episode-card__header-row">
-                      <p class="episode-card__eyebrow type-eyebrow">
-                        Episode
-                        {{ $episode.Params.episodeNumber }}
-                      </p>
-                      <span class="episode-card__mention-count"
-                        >{{ .m }} mentions</span
-                      >
-                    </div>
-                    <h2 class="episode-card__title">{{ $episode.Title }}</h2>
-                    {{ if gt (len $guests) 0 }}
-                      <div class="episode-card__guest">
-                        with
-                        {{ index $guests 0 }}
-                      </div>
-                    {{ end }}
-                    <time
-                      class="episode-card__date"
-                      datetime="{{ $episode.Date.Format "2006-01-02" }}">
-                      {{ $episode.Date.Format "January 2, 2006" }}
-                    </time>
-                    {{ if $episode.Params.tags }}
-                      <div class="episode-card__badges">
-                        {{ $currentTag := $.Title }}
-                        <span
-                          class="episode-card__badge episode-card__badge--current"
-                          >{{ $currentTag }}</span
-                        >
-                        {{ $otherTags := slice }}
-                        {{ range $episode.Params.tags }}
-                          {{ if ne . $currentTag }}
-                            {{ $otherTags = $otherTags | append . }}
-                          {{ end }}
-                        {{ end }}
-                        {{ range first 2 $otherTags }}
-                          <span class="episode-card__badge">{{ . }}</span>
-                        {{ end }}
-                        {{ $remaining := sub (len $otherTags) 2 }}
-                        {{ if gt $remaining 0 }}
-                          <span class="episode-card__badge-more"
-                            >+{{ $remaining }}</span
-                          >
-                        {{ end }}
-                      </div>
-                    {{ end }}
-                  </div>
-                  <div class="episode-card__arrow">→</div>
-                </a>
-              </article>
+              {{ partial "episode-card" (dict "episode" $episode "ranked" true "mentionCount" .m "badgeSource" "tags" "currentTerm" $.Title) }}
             {{ end }}
           {{ end }}
         </div>
@@ -214,57 +106,7 @@
         </div>
         <div class="episodes-grid">
           {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-            {{ $guests := .Params.guests | default slice }}
-            <article class="episode-card">
-              <a href="{{ .RelPermalink }}" class="episode-card__link">
-                <div class="episode-card__number">
-                  {{ .Params.episodeNumber }}
-                </div>
-                <div class="episode-card__content">
-                  <p class="episode-card__eyebrow type-eyebrow">
-                    Episode
-                    {{ .Params.episodeNumber }}
-                  </p>
-                  <h2 class="episode-card__title">{{ .Title }}</h2>
-                  {{ if gt (len $guests) 0 }}
-                    <div class="episode-card__guest">
-                      with
-                      {{ index $guests 0 }}
-                    </div>
-                  {{ end }}
-                  <time
-                    class="episode-card__date"
-                    datetime="{{ .Date.Format "2006-01-02" }}">
-                    {{ .Date.Format "January 2, 2006" }}
-                  </time>
-                  {{ if .Params.tags }}
-                    <div class="episode-card__badges">
-                      {{ $currentTag := $.Title }}
-                      <span
-                        class="episode-card__badge episode-card__badge--current"
-                        >{{ $currentTag }}</span
-                      >
-                      {{ $otherTags := slice }}
-                      {{ range .Params.tags }}
-                        {{ if ne . $currentTag }}
-                          {{ $otherTags = $otherTags | append . }}
-                        {{ end }}
-                      {{ end }}
-                      {{ range first 2 $otherTags }}
-                        <span class="episode-card__badge">{{ . }}</span>
-                      {{ end }}
-                      {{ $remaining := sub (len $otherTags) 2 }}
-                      {{ if gt $remaining 0 }}
-                        <span class="episode-card__badge-more"
-                          >+{{ $remaining }}</span
-                        >
-                      {{ end }}
-                    </div>
-                  {{ end }}
-                </div>
-                <div class="episode-card__arrow">→</div>
-              </a>
-            </article>
+            {{ partial "episode-card" (dict "episode" . "badgeSource" "tags" "currentTerm" $.Title) }}
           {{ end }}
         </div>
       </section>

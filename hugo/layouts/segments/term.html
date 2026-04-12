@@ -1,75 +1,11 @@
 {{ define "main" }}
   <section class="term-page">
-    <header class="page-hero">
-      <a href="/segments/" class="button-brutalist page-hero__back"
-        >← All Segments</a
-      >
-      <div class="page-hero__eyebrow panel panel--accent">
-        <span class="type-eyebrow">Segment archive</span>
-      </div>
-      <h1 class="page-hero__title">{{ .Title }}</h1>
-      <div class="page-hero__meta panel">
-        <span class="page-hero__stat-number">{{ len .Pages }}</span>
-        <span class="page-hero__stat-label"
-          >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
-        >
-      </div>
-    </header>
+    {{ partial "taxonomy-hero" (dict "page" . "backHref" "/segments/" "backLabel" "All Segments" "eyebrowText" "Segment archive") }}
 
     <section>
       <div class="episodes-grid">
         {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-          {{ $guests := .Params.guests | default slice }}
-          <article class="episode-card">
-            <a href="{{ .RelPermalink }}" class="episode-card__link">
-              <div class="episode-card__number">
-                {{ .Params.episodeNumber }}
-              </div>
-              <div class="episode-card__content">
-                <p class="episode-card__eyebrow type-eyebrow">
-                  Episode
-                  {{ .Params.episodeNumber }}
-                </p>
-                <h2 class="episode-card__title">{{ .Title }}</h2>
-                {{ if gt (len $guests) 0 }}
-                  <div class="episode-card__guest">
-                    with
-                    {{ index $guests 0 }}
-                  </div>
-                {{ end }}
-                <time
-                  class="episode-card__date"
-                  datetime="{{ .Date.Format "2006-01-02" }}">
-                  {{ .Date.Format "January 2, 2006" }}
-                </time>
-                {{ if .Params.segments }}
-                  <div class="episode-card__badges">
-                    {{ $currentSegment := $.Title }}
-                    <span
-                      class="episode-card__badge episode-card__badge--current"
-                      >{{ $currentSegment }}</span
-                    >
-                    {{ $otherSegments := slice }}
-                    {{ range .Params.segments }}
-                      {{ if ne . $currentSegment }}
-                        {{ $otherSegments = $otherSegments | append . }}
-                      {{ end }}
-                    {{ end }}
-                    {{ range first 2 $otherSegments }}
-                      <span class="episode-card__badge">{{ . }}</span>
-                    {{ end }}
-                    {{ $remaining := sub (len $otherSegments) 2 }}
-                    {{ if gt $remaining 0 }}
-                      <span class="episode-card__badge-more"
-                        >+{{ $remaining }}</span
-                      >
-                    {{ end }}
-                  </div>
-                {{ end }}
-              </div>
-              <div class="episode-card__arrow">→</div>
-            </a>
-          </article>
+          {{ partial "episode-card" (dict "episode" . "badgeSource" "segments" "currentTerm" $.Title) }}
         {{ end }}
       </div>
     </section>

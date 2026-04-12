@@ -23,16 +23,18 @@
     {{ if $multipleAppearances }}
       <section class="cloud-section">
         <h2 class="type-section-title cloud-section__title">Frequent Guests</h2>
-        <div class="token-cloud">
+        <ul class="token-cloud" role="list">
           {{ range $multipleAppearances }}
-            <a
-              href="{{ .Page.RelPermalink }}"
-              class="token-pill token-pill--featured">
-              <span class="token-pill__name">{{ .Page.Title }}</span>
-              <span class="token-pill__count">{{ .Count }}</span>
-            </a>
+            <li>
+              <a
+                href="{{ .Page.RelPermalink }}"
+                class="token-pill token-pill--featured">
+                <span class="token-pill__name">{{ .Page.Title }}</span>
+                <span class="token-pill__count">{{ .Count }}</span>
+              </a>
+            </li>
           {{ end }}
-        </div>
+        </ul>
       </section>
     {{ end }}
 
@@ -41,14 +43,16 @@
         <h2 class="type-section-title cloud-section__title">
           Guest Appearances
         </h2>
-        <div class="token-cloud">
+        <ul class="token-cloud" role="list">
           {{ range $singleAppearance }}
-            <a href="{{ .Page.RelPermalink }}" class="token-pill">
-              <span class="token-pill__name">{{ .Page.Title }}</span>
-              <span class="token-pill__count">{{ .Count }}</span>
-            </a>
+            <li>
+              <a href="{{ .Page.RelPermalink }}" class="token-pill">
+                <span class="token-pill__name">{{ .Page.Title }}</span>
+                <span class="token-pill__count">{{ .Count }}</span>
+              </a>
+            </li>
           {{ end }}
-        </div>
+        </ul>
       </section>
     {{ end }}
   </section>

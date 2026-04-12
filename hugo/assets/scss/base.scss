@@ -163,7 +163,11 @@ textarea:not([rows]) {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2xs);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 .chip {
   align-items: center;
@@ -268,7 +272,7 @@ textarea:not([rows]) {
   padding: var(--space-s) var(--space-l);
 }
 
-.page-hero__stat-number {
+.stat-display__number {
   font-family: var(--font-family-display);
   font-size: var(--step-4);
   font-style: italic;
@@ -277,7 +281,7 @@ textarea:not([rows]) {
   line-height: var(--line-height-tight);
 }
 
-.page-hero__stat-label {
+.stat-display__label {
   color: var(--color-text-muted);
   font-size: var(--step--1);
   font-weight: var(--font-weight-semibold);
@@ -315,7 +319,11 @@ textarea:not([rows]) {
   flex-wrap: wrap;
   gap: var(--space-s);
   justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 .token-pill {
   align-items: center;

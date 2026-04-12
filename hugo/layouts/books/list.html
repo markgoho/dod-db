@@ -47,42 +47,46 @@
     {{ if gt (len $oldTestament) 0 }}
       <section class="cloud-section">
         <h2 class="type-section-title cloud-section__title">Old Testament</h2>
-        <div class="token-cloud">
+        <ul class="token-cloud" role="list">
           {{ range $oldTestament }}
-            {{ if gt .count 0 }}
-              <a href="{{ .relPermalink }}" class="token-pill">
-                <span class="token-pill__name">{{ .title }}</span>
-                <span class="token-pill__count">{{ .count }}</span>
-              </a>
-            {{ else }}
-              <span class="token-pill token-pill--empty">
-                <span class="token-pill__name">{{ .title }}</span>
-                <span class="token-pill__count">{{ .count }}</span>
-              </span>
-            {{ end }}
+            <li>
+              {{ if gt .count 0 }}
+                <a href="{{ .relPermalink }}" class="token-pill">
+                  <span class="token-pill__name">{{ .title }}</span>
+                  <span class="token-pill__count">{{ .count }}</span>
+                </a>
+              {{ else }}
+                <span class="token-pill token-pill--empty">
+                  <span class="token-pill__name">{{ .title }}</span>
+                  <span class="token-pill__count">{{ .count }}</span>
+                </span>
+              {{ end }}
+            </li>
           {{ end }}
-        </div>
+        </ul>
       </section>
     {{ end }}
 
     {{ if gt (len $newTestament) 0 }}
       <section class="cloud-section">
         <h2 class="type-section-title cloud-section__title">New Testament</h2>
-        <div class="token-cloud">
+        <ul class="token-cloud" role="list">
           {{ range $newTestament }}
-            {{ if gt .count 0 }}
-              <a href="{{ .relPermalink }}" class="token-pill">
-                <span class="token-pill__name">{{ .title }}</span>
-                <span class="token-pill__count">{{ .count }}</span>
-              </a>
-            {{ else }}
-              <span class="token-pill token-pill--empty">
-                <span class="token-pill__name">{{ .title }}</span>
-                <span class="token-pill__count">{{ .count }}</span>
-              </span>
-            {{ end }}
+            <li>
+              {{ if gt .count 0 }}
+                <a href="{{ .relPermalink }}" class="token-pill">
+                  <span class="token-pill__name">{{ .title }}</span>
+                  <span class="token-pill__count">{{ .count }}</span>
+                </a>
+              {{ else }}
+                <span class="token-pill token-pill--empty">
+                  <span class="token-pill__name">{{ .title }}</span>
+                  <span class="token-pill__count">{{ .count }}</span>
+                </span>
+              {{ end }}
+            </li>
           {{ end }}
-        </div>
+        </ul>
       </section>
     {{ end }}
   </section>

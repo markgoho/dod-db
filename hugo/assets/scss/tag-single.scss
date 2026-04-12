@@ -53,11 +53,8 @@
 }
 
 .tag-quote {
-  background: var(--tan-000);
   border: var(--border-width-sm) solid var(--tan-900);
   border-radius: var(--border-radius-md);
-  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
-    var(--tan-900);
   display: grid;
   gap: var(--space-s);
   padding: var(--space-m);
@@ -94,10 +91,8 @@
   gap: var(--space-l);
 }
 
-
 @media (width >= 48rem) {
-  .tag-quotes__grid,
-  .tag-page .tag-episodes .episodes-grid {
+  .tag-quotes__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
