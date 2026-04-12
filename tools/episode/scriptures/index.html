@@ -54,7 +54,26 @@
 
         <div class="sidebar">
           <div class="sidebar-section">
-            <h3>Add Book</h3>
+            <h3>Rescan This Episode</h3>
+            <p class="sidebar-copy">
+              Re-extract all scripture references from the transcript and
+              regenerate the episode page. Manual overrides are preserved.
+            </p>
+            <button
+              id="rescan-scriptures-button"
+              class="btn btn-primary"
+              style="width: 100%"
+            >
+              Rescan Transcript for Scripture References
+            </button>
+            <div class="migration-status" id="rescan-status">
+              <div id="rescan-status-badge"></div>
+              <div class="migration-logs" id="rescan-logs"></div>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <h3>Manually Add Book</h3>
             <form id="add-scripture-form">
               <div class="form-group">
                 <label class="form-label" for="book-name">Book name *</label>
@@ -63,18 +82,22 @@
                   id="book-name"
                   class="form-input"
                   list="book-options"
-                  placeholder="e.g., Matthew, Matt, 1 Samuel"
+                  placeholder="e.g., Esther, Matthew, 1 Samuel"
                   required
                 />
                 <datalist id="book-options"></datalist>
                 <div class="form-hint">
-                  Uses deterministic matching first, then LLM verification for
-                  ambiguous book names.
+                  Use this only for editorial overrides when the transcript does
+                  not contain a detectable reference.
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%">
-                Add Book to Episode
+              <button
+                type="submit"
+                class="btn btn-secondary"
+                style="width: 100%"
+              >
+                Add as Discussed Book
               </button>
             </form>
           </div>
@@ -83,16 +106,13 @@
             <h3>How it works</h3>
             <ul class="notes-list">
               <li>
-                Reads the episode transcript and scans for references to the
-                selected canonical book.
+                Rescan re-extracts all detectable scripture references from the
+                transcript.
               </li>
+              <li>Manual adds are kept even after future rescans.</li>
               <li>
-                Uses LLM verification only when needed to distinguish a Bible
-                book from a person or common word.
-              </li>
-              <li>
-                Updates <code>data/processed-videos.json</code> and regenerates
-                the episode front matter.
+                Updates <code>data/processed-videos.json</code> and rewrites the
+                episode <code>index.md</code>.
               </li>
             </ul>
           </div>

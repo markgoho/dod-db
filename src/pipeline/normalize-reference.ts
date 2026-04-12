@@ -9,10 +9,14 @@ import type { BookDefinition } from "../config/scripture-books.js";
  */
 export function normalizeReference(
   book: BookDefinition,
-  chapter: string,
+  chapter?: string,
   verse?: string,
   endVerse?: string,
 ): string {
+  if (chapter === undefined) {
+    return book.canonical;
+  }
+
   let reference = `${book.canonical} ${chapter}`;
 
   if (verse !== undefined) {

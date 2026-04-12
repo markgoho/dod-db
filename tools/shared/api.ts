@@ -130,7 +130,10 @@ export async function addScriptureBook({
 }: {
   videoId: string;
   bookName: string;
-}): Promise<boolean> {
+}): Promise<{
+  success: boolean;
+  wasManual?: boolean;
+}> {
   try {
     const response = await fetch(
       `${API_BASE_URL}/api/episode/${videoId}/scriptures/add`,
@@ -146,11 +149,17 @@ export async function addScriptureBook({
       alreadyPresent?: boolean;
       error?: string;
       book?: string;
+      wasManual?: boolean;
     };
 
     if (response.ok && result.success) {
-      showToast(`Added ${result.book || bookName}`, "success");
-      return true;
+      showToast(
+        result.wasManual
+          ? `Added ${result.book || bookName} as a manual override`
+          : `Added ${result.book || bookName}`,
+        "success",
+      );
+      return { success: true, wasManual: result.wasManual };
     }
 
     if (response.ok && result.alreadyPresent) {
@@ -158,14 +167,47 @@ export async function addScriptureBook({
         `${result.book || bookName} is already on this episode`,
         "info",
       );
-      return false;
+      return { success: false };
     }
 
     showToast(result.error || "Failed to add scripture book", "error");
-    return false;
+    return { success: false };
   } catch (error) {
     console.error("Error adding scripture book:", error);
     showToast("Failed to add scripture book", "error");
-    return false;
+    return { success: false };
+  }
+}
+
+export async function rescanEpisodeScriptures({
+  videoId,
+}: {
+  videoId: string;
+}): Promise<string | undefined> {
+  try {
+    const response = await fetch(
+      `${API_BASE_URL}/api/episode/${videoId}/scriptures/rescan`,
+      {
+        method: "POST",
+      },
+    );
+
+    const result = (await response.json()) as {
+      success?: boolean;
+      jobId?: string;
+      error?: string;
+    };
+
+    if (!response.ok || !result.jobId) {
+      showToast(result.error || "Failed to start scripture rescan", "error");
+      return undefined;
+    }
+
+    showToast("Started scripture rescan", "success");
+    return result.jobId;
+  } catch (error) {
+    console.error("Error rescanning scripture references:", error);
+    showToast("Failed to start scripture rescan", "error");
+    return undefined;
   }
 }

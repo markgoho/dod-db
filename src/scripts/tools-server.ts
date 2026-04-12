@@ -27,7 +27,7 @@ import {
 import { approveCandidate } from "../pipeline/approve-candidate.js";
 import type { CorrectionCandidate } from "../pipeline/correction-tracker.js";
 import { deleteTagFromVocabulary } from "../pipeline/delete-tag-from-vocabulary.js";
-import { extractSingleBookScripture } from "../pipeline/extract-single-book-scripture.js";
+import { extractScripture } from "../pipeline/extract-scripture.js";
 import { findTag } from "../pipeline/find-tag.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
 import { generateTranscriptFilename } from "../pipeline/generate-transcript-filename.js";
@@ -401,6 +401,81 @@ async function runMigrationWithTagTracking(
       console.warn = originalWarn;
       // Invalidate stats cache
       statsCache.data = null;
+    }
+  })();
+
+  return { jobId, completion };
+}
+
+async function runEpisodeScriptureRescan(
+  videoId: string,
+): Promise<{ jobId: string; completion: Promise<void> }> {
+  const jobId = `scriptures-${Date.now()}`;
+  const job: MigrationJob = {
+    id: jobId,
+    status: "running",
+    logs: [],
+    startTime: Date.now(),
+  };
+  migrationJobs.set(jobId, job);
+
+  let resolveCompletion!: () => void;
+  let rejectCompletion!: (error: unknown) => void;
+  const completion = new Promise<void>((resolve, reject) => {
+    resolveCompletion = resolve;
+    rejectCompletion = reject;
+  });
+
+  (async () => {
+    try {
+      const video = await getVideoById(videoId);
+      if (!video) {
+        throw new Error("Episode not found");
+      }
+
+      job.logs.push(`Rescanning scripture references for ${video.title}\n`);
+      const transcript = await Bun.file(video.transcriptPath).text();
+      const rescannedScriptures = await extractScripture(transcript, {
+        enableLlmVerification: true,
+        episodeContext: {
+          videoId,
+          title: video.title,
+          episodeNumber: video.episodeNumber,
+        },
+      });
+
+      const manualScriptures = (video.scriptures ?? []).filter(
+        scripture => scripture.source === "manual",
+      );
+      const autoScriptures: EpisodeScripture[] = rescannedScriptures
+        .filter(
+          scripture =>
+            !manualScriptures.some(manual => manual.book === scripture.book),
+        )
+        .map(scripture => ({ ...scripture, source: "auto" }));
+      const nextScriptures = [...manualScriptures, ...autoScriptures].sort(
+        (a, b) => a.book.localeCompare(b.book),
+      );
+
+      await updateVideoScriptures(videoId, nextScriptures);
+      const updatedVideo = await getVideoById(videoId);
+      if (updatedVideo) {
+        await generateHugoEpisode(updatedVideo, { silent: true });
+      }
+
+      job.logs.push(
+        `✓ Found ${autoScriptures.length} auto-detected books and preserved ${manualScriptures.length} manual overrides\n`,
+      );
+      job.status = "completed";
+      job.exitCode = 0;
+      resolveCompletion();
+    } catch (error) {
+      job.logs.push(`\n[ERROR] Scripture rescan failed: ${error}\n`);
+      job.status = "failed";
+      job.exitCode = 1;
+      rejectCompletion(error);
+    } finally {
+      job.endTime = Date.now();
     }
   })();
 
@@ -799,12 +874,30 @@ const _server = Bun.serve({
       }
     }
 
-    // Tag Vocabulary API: Get migration status
+    // Shared migration job status API
     if (url.pathname.startsWith("/api/tag-vocabulary/migrate-status/")) {
       const jobId = url.pathname.replace(
         "/api/tag-vocabulary/migrate-status/",
         "",
       );
+      const job = migrationJobs.get(jobId);
+
+      if (!job) {
+        return jsonResponse({ error: "Job not found" }, 404);
+      }
+
+      return jsonResponse({
+        id: job.id,
+        status: job.status,
+        logs: job.logs.join(""),
+        startTime: job.startTime,
+        endTime: job.endTime,
+        exitCode: job.exitCode,
+      });
+    }
+
+    if (url.pathname.startsWith("/api/jobs/")) {
+      const jobId = url.pathname.replace("/api/jobs/", "");
       const job = migrationJobs.get(jobId);
 
       if (!job) {
@@ -1521,7 +1614,9 @@ const _server = Bun.serve({
       const videoId = url.pathname.split("/")[3] ?? "";
 
       try {
-        const body = (await request.json()) as { bookName?: string };
+        const body = (await request.json()) as {
+          bookName?: string;
+        };
         const bookName = body.bookName?.trim();
 
         if (!bookName) {
@@ -1552,31 +1647,16 @@ const _server = Bun.serve({
           });
         }
 
-        const transcript = await Bun.file(video.transcriptPath).text();
-        const extractedScripture = await extractSingleBookScripture(
-          transcript,
-          book.canonical,
-          {
-            enableLlmVerification: true,
-            episodeContext: {
-              videoId,
-              title: video.title,
-            },
-          },
-        );
-
-        if (!extractedScripture) {
-          return jsonResponse(
-            {
-              error: `No verified references found for ${book.canonical} in this transcript`,
-            },
-            400,
-          );
-        }
+        const scriptureToSave: EpisodeScripture = {
+          book: book.canonical,
+          references: [],
+          mentions: 0,
+          source: "manual",
+        };
 
         const nextScriptures: EpisodeScripture[] = [
           ...existingScriptures,
-          extractedScripture,
+          scriptureToSave,
         ].sort((a, b) => a.book.localeCompare(b.book));
 
         await updateVideoScriptures(videoId, nextScriptures);
@@ -1588,9 +1668,10 @@ const _server = Bun.serve({
 
         return jsonResponse({
           success: true,
-          book: extractedScripture.book,
-          mentions: extractedScripture.mentions,
-          references: extractedScripture.references,
+          book: scriptureToSave.book,
+          mentions: scriptureToSave.mentions,
+          references: scriptureToSave.references,
+          wasManual: true,
         });
       } catch (error) {
         return jsonResponse(
@@ -1599,6 +1680,29 @@ const _server = Bun.serve({
               error instanceof Error
                 ? error.message
                 : "Failed to add scripture book",
+          },
+          500,
+        );
+      }
+    }
+
+    // Episode API: Rescan all scripture references for an episode
+    if (
+      /^\/api\/episode\/[^/]+\/scriptures\/rescan$/.test(url.pathname) &&
+      request.method === "POST"
+    ) {
+      const videoId = url.pathname.split("/")[3] ?? "";
+
+      try {
+        const { jobId } = await runEpisodeScriptureRescan(videoId);
+        return jsonResponse({ success: true, jobId });
+      } catch (error) {
+        return jsonResponse(
+          {
+            error:
+              error instanceof Error
+                ? error.message
+                : "Failed to start scripture rescan",
           },
           500,
         );

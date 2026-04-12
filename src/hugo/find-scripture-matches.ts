@@ -3,17 +3,24 @@
  */
 
 import { scriptureBooks } from "../config/scripture-books.js";
-import { buildBookRegex } from "../pipeline/build-book-regex.js";
+import {
+  buildBookRegex,
+  buildBookWholeRegex,
+} from "../pipeline/build-book-regex.js";
 import { normalizeReference } from "../pipeline/normalize-reference.js";
 import { resolveOverlaps } from "../pipeline/resolve-overlaps.js";
 import type { ScriptureMatch } from "./wrap-scripture-references.js";
 
+function firstAlphabeticCharacter(text: string): string | undefined {
+  return [...text].find(character => /[A-Za-z]/.test(character));
+}
+
 /**
- * Check if the first character of the matched text is uppercase.
+ * Check if the first alphabetic character of the matched text is uppercase.
  * This helps filter out false positives like "is" matching Isaiah.
  */
 function startsWithUppercase(text: string): boolean {
-  const firstChar = text[0];
+  const firstChar = firstAlphabeticCharacter(text);
   return firstChar !== undefined && firstChar === firstChar.toUpperCase();
 }
 
@@ -54,6 +61,22 @@ export function findScriptureMatches(text: string): ScriptureMatch[] {
         end,
         originalText: match[0],
         normalizedReference,
+        book: book.canonical,
+      });
+    }
+
+    const wholeBookRegex = buildBookWholeRegex(book);
+    let wholeBookMatch;
+
+    while ((wholeBookMatch = wholeBookRegex.exec(text)) !== null) {
+      const start = wholeBookMatch.index;
+      const end = start + wholeBookMatch[0].length;
+
+      allMatches.push({
+        start,
+        end,
+        originalText: wholeBookMatch[0],
+        normalizedReference: normalizeReference(book),
         book: book.canonical,
       });
     }

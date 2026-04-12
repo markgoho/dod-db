@@ -43,6 +43,7 @@ export {
   getEpisode,
   getTranscript,
   parseTranscript,
+  rescanEpisodeScriptures,
   saveSegments,
 } from "./api.js";
 
@@ -148,6 +149,7 @@ import {
   getEpisode,
   getTranscript,
   parseTranscript,
+  rescanEpisodeScriptures,
   saveSegments,
 } from "./api.js";
 import { API_BASE_URL, CATEGORY_LABELS } from "./constants.js";
@@ -243,6 +245,7 @@ export const DoDTools = {
   fetchSegmentMetadata,
   saveSegments,
   addScriptureBook,
+  rescanEpisodeScriptures,
 
   // UI
   renderBreadcrumbs,

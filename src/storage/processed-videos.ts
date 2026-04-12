@@ -29,6 +29,7 @@ export interface EpisodeScripture {
   book: string; // Canonical book name: "Genesis", "1 Samuel"
   references: string[]; // Unique normalized references: ["Genesis 1:1", "Genesis 2:4"]
   mentions: number; // Total mention count across all references
+  source?: "auto" | "manual";
 }
 
 /**
@@ -37,7 +38,8 @@ export interface EpisodeScripture {
 export const EpisodeScriptureSchema = z.object({
   book: z.string(),
   references: z.array(z.string()),
-  mentions: z.number().int().positive(),
+  mentions: z.number().int().nonnegative(),
+  source: z.enum(["auto", "manual"]).optional(),
 });
 
 /**

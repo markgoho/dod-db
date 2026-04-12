@@ -20,7 +20,12 @@ export function wrapScriptureReferences(text: string): string {
   let result = text;
 
   for (const match of sortedMatches) {
-    const shortcode = `{{< scripture ref="${match.normalizedReference}" >}}`;
+    const isWholeBookReference = !/\d/.test(match.normalizedReference);
+    const displayAttribute =
+      isWholeBookReference && match.originalText !== match.normalizedReference
+        ? ` display="${match.originalText}"`
+        : "";
+    const shortcode = `{{< scripture ref="${match.normalizedReference}"${displayAttribute} >}}`;
 
     result = result.slice(0, match.start) + shortcode + result.slice(match.end);
   }

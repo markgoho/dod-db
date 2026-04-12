@@ -16,9 +16,7 @@ export async function pollJobStatus({
   onFailed,
 }: { jobId: string } & PollJobOptions): Promise<JobStatus | undefined> {
   try {
-    const response = await fetch(
-      `${API_BASE_URL}/api/tag-vocabulary/migrate-status/${jobId}`,
-    );
+    const response = await fetch(`${API_BASE_URL}/api/jobs/${jobId}`);
     if (!response.ok) {
       throw new Error("Failed to get job status");
     }

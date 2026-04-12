@@ -109,6 +109,18 @@ describe("findScriptureMatches", () => {
     expect(match?.book).toBe("1 Corinthians");
   });
 
+  test("finds whole-book reference", () => {
+    const text = "Book of Esther is what we're reading today.";
+    const matches = findScriptureMatches(text);
+
+    expect(matches).toHaveLength(1);
+    const match = matches[0];
+    expect(match).toBeDefined();
+    expect(match?.originalText).toBe("Book of Esther");
+    expect(match?.normalizedReference).toBe("Esther");
+    expect(match?.book).toBe("Esther");
+  });
+
   test("finds variant forms of numbered books", () => {
     const text = "See First Corinthians 13:1 for context.";
     const matches = findScriptureMatches(text);
@@ -283,6 +295,15 @@ describe("wrapScriptureReferences", () => {
 
     expect(result).toBe(
       '{{< scripture ref="1 Corinthians 13:4-7" >}} describes love.',
+    );
+  });
+
+  test("wraps whole-book reference with canonical book ref", () => {
+    const text = "Book of Esther is what we're reading today.";
+    const result = wrapScriptureReferences(text);
+
+    expect(result).toBe(
+      '{{< scripture ref="Esther" display="Book of Esther" >}} is what we\'re reading today.',
     );
   });
 });

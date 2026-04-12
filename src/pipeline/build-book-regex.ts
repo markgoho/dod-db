@@ -16,3 +16,15 @@ export function buildBookRegex(book: BookDefinition): RegExp {
   const pattern = String.raw`\b${namesGroup}\s+(\d{1,3})(?::(\d{1,3})(?:-(\d{1,3}))?)?\b`;
   return new RegExp(pattern, "gi");
 }
+
+export function buildBookWholeRegex(book: BookDefinition): RegExp {
+  const namePatterns = buildBookNamePatterns(book).map(
+    pattern => `(?:${pattern})`,
+  );
+  const prefixedNamePatterns = namePatterns.map(
+    pattern =>
+      String.raw`(?:[Tt]he\s+)?(?:[Bb]ook|[Gg]ospel)\s+of\s+${pattern}`,
+  );
+  const pattern = String.raw`\b(?:${prefixedNamePatterns.join("|")})\b(?!\s+\d)`;
+  return new RegExp(pattern, "gi");
+}

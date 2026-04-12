@@ -28,6 +28,7 @@ export interface EpisodeScripture {
   book: string;
   references: string[];
   mentions: number;
+  source?: "auto" | "manual";
 }
 
 export interface EpisodeSegment {

@@ -5,7 +5,7 @@
 
 import type { BookDefinition } from "../config/scripture-books.js";
 import { scriptureBooks } from "../config/scripture-books.js";
-import { buildBookRegex } from "./build-book-regex.js";
+import { buildBookRegex, buildBookWholeRegex } from "./build-book-regex.js";
 import type { EpisodeScripture } from "./extract-scripture.js";
 import { findSpeakerLabelRanges } from "./find-speaker-label-ranges.js";
 import { isInSpeakerLabel } from "./is-in-speaker-label.js";
@@ -89,6 +89,32 @@ export async function extractSingleBookScripture(
       start,
       end,
       rawText: match[0],
+    });
+
+    matchedRanges.push({ start, end });
+  }
+
+  const wholeBookRegex = buildBookWholeRegex(book);
+  let wholeBookMatch;
+
+  while ((wholeBookMatch = wholeBookRegex.exec(transcript)) !== null) {
+    const start = wholeBookMatch.index;
+    const end = start + wholeBookMatch[0].length;
+
+    if (isOverlapping(start, end, matchedRanges)) {
+      continue;
+    }
+
+    if (isInSpeakerLabel(start, end, speakerLabelRanges)) {
+      continue;
+    }
+
+    matches.push({
+      book,
+      reference: normalizeReference(book),
+      start,
+      end,
+      rawText: wholeBookMatch[0],
     });
 
     matchedRanges.push({ start, end });

@@ -5,6 +5,8 @@
 
 import type { BookDefinition } from "../config/scripture-books.js";
 import { scriptureBooks } from "../config/scripture-books.js";
+import { buildBookRegex, buildBookWholeRegex } from "./build-book-regex.js";
+import { normalizeReference } from "./normalize-reference.js";
 import { verifyScriptureMatches } from "./verify-scripture-matches.js";
 import type { EpisodeContext } from "./verify-tag-matches.js";
 
@@ -26,62 +28,6 @@ interface MatchInfo {
   start: number;
   end: number;
   rawText: string;
-}
-
-/**
- * Escape special regex characters in a string.
- */
-function escapeRegex(string_: string): string {
-  return string_.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
-}
-
-/**
- * Build all possible name patterns for a book (canonical, abbreviations, variants).
- */
-function buildBookNamePatterns(book: BookDefinition): string[] {
-  const patterns: string[] = [escapeRegex(book.canonical)];
-
-  for (const abbreviation of book.abbreviations) {
-    patterns.push(`${escapeRegex(abbreviation)}${String.raw`\.?`}`);
-  }
-
-  for (const variant of book.variants) {
-    patterns.push(escapeRegex(variant));
-  }
-
-  return patterns;
-}
-
-/**
- * Build regex pattern for detecting scripture references to a specific book.
- */
-function buildBookRegex(book: BookDefinition): RegExp {
-  const namePatterns = buildBookNamePatterns(book);
-  const namesGroup = `(?:${namePatterns.join("|")})`;
-  const pattern = String.raw`\b${namesGroup}\s+(\d{1,3})(?::(\d{1,3})(?:-(\d{1,3}))?)?\b`;
-  return new RegExp(pattern, "gi");
-}
-
-/**
- * Normalize a scripture reference to canonical format.
- */
-function normalizeReference(
-  book: BookDefinition,
-  chapter: string,
-  verse?: string,
-  endVerse?: string,
-): string {
-  let reference = `${book.canonical} ${chapter}`;
-
-  if (verse !== undefined) {
-    reference += `:${verse}`;
-
-    if (endVerse !== undefined) {
-      reference += `-${endVerse}`;
-    }
-  }
-
-  return reference;
 }
 
 /**
@@ -196,6 +142,26 @@ export async function extractScripture(
         rawText: match[0],
       });
     }
+
+    const wholeBookRegex = buildBookWholeRegex(book);
+    let wholeBookMatch;
+
+    while ((wholeBookMatch = wholeBookRegex.exec(transcript)) !== null) {
+      const start = wholeBookMatch.index;
+      const end = start + wholeBookMatch[0].length;
+
+      if (isInSpeakerLabel(start, end, speakerLabelRanges)) {
+        continue;
+      }
+
+      allMatches.push({
+        book,
+        reference: normalizeReference(book),
+        start,
+        end,
+        rawText: wholeBookMatch[0],
+      });
+    }
   }
 
   const resolvedMatches = resolveOverlaps(allMatches);
@@ -268,12 +234,14 @@ export async function extractScripture(
         ): { chapter: number; verse: number } => {
           const parts = reference.split(" ").slice(1).join(" ");
           const [chapterPart] = parts.split(":");
-          const chapter = Number.parseInt(chapterPart ?? "0", 10);
+          const rawChapter = Number.parseInt(chapterPart ?? "", 10);
+          const chapter = Number.isNaN(rawChapter) ? -1 : rawChapter;
           const versePart = parts.includes(":") ? parts.split(":")[1] : "0";
-          const verse = Number.parseInt(
+          const rawVerse = Number.parseInt(
             (versePart ?? "0").split("-")[0] ?? "0",
             10,
           );
+          const verse = Number.isNaN(rawVerse) ? 0 : rawVerse;
           return { chapter, verse };
         };
 

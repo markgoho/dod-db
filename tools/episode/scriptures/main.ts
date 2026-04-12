@@ -3,6 +3,8 @@ import {
   escapeHtml,
   getEpisode,
   getVideoIdFromUrl,
+  rescanEpisodeScriptures,
+  startJobPollingWithUI,
   type Episode,
 } from "../../shared/utilities.js";
 
@@ -187,7 +189,10 @@ function renderScriptures(): void {
       scripture => `
         <div class="scripture-card">
           <div class="scripture-card-header">
-            <div class="scripture-book">${escapeHtml(scripture.book)}</div>
+            <div>
+              <div class="scripture-book">${escapeHtml(scripture.book)}</div>
+              ${scripture.source === "manual" ? '<div class="scripture-source">manual</div>' : ""}
+            </div>
             <div class="scripture-mentions">${scripture.mentions}</div>
           </div>
           <div class="scripture-meta">${scripture.references.length} references</div>
@@ -208,6 +213,9 @@ function renderScriptures(): void {
 function setupEventListeners(): void {
   const form = document.querySelector("#add-scripture-form");
   form?.addEventListener("submit", addBook);
+
+  const rescanButton = document.querySelector("#rescan-scriptures-button");
+  rescanButton?.addEventListener("click", startRescan);
 }
 
 async function addBook(event: Event): Promise<void> {
@@ -219,14 +227,33 @@ async function addBook(event: Event): Promise<void> {
   const bookName = input?.value.trim();
   if (!bookName) return;
 
-  const added = await addScriptureBook({ videoId, bookName });
-  if (!added) return;
+  const result = await addScriptureBook({ videoId, bookName });
+  if (!result.success) return;
 
   if (input) {
     input.value = "";
   }
 
   await refreshEpisode();
+}
+
+async function startRescan(): Promise<void> {
+  if (!videoId) return;
+
+  const jobId = await rescanEpisodeScriptures({ videoId });
+  if (!jobId) return;
+
+  startJobPollingWithUI({
+    jobId,
+    initialMessage: "Rescanning episode...",
+    completedMessage: "✓ Scripture Rescan Complete",
+    statusContainerSelector: "#rescan-status",
+    statusBadgeSelector: "#rescan-status-badge",
+    logsContainerSelector: "#rescan-logs",
+    onComplete: async () => {
+      await refreshEpisode();
+    },
+  });
 }
 
 async function refreshEpisode(): Promise<void> {

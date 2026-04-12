@@ -144,6 +144,29 @@ describe("extractScripture", () => {
     });
   });
 
+  describe("whole-book references", () => {
+    test("detects Book of Esther as whole-book reference", async () => {
+      const transcript = "Today we're talking about the Book of Esther.";
+      const results = await extractScripture(transcript);
+
+      const esther = results.find(result => result.book === "Esther");
+      expect(esther).toBeDefined();
+      expect(esther?.references).toEqual(["Esther"]);
+      expect(esther?.mentions).toBe(1);
+    });
+
+    test("sorts whole-book reference before chapter references", async () => {
+      const transcript =
+        "Today we're talking about the Book of Esther and Esther 4:14.";
+      const results = await extractScripture(transcript);
+
+      const esther = results.find(result => result.book === "Esther");
+      expect(esther).toBeDefined();
+      expect(esther?.references).toEqual(["Esther", "Esther 4:14"]);
+      expect(esther?.mentions).toBe(2);
+    });
+  });
+
   describe("multiple references", () => {
     test("deduplicates same reference", async () => {
       const transcript = "Genesis 1:1 is important. Yes, Genesis 1:1 again.";

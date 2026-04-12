@@ -23056,9 +23056,22 @@
     "episodeNumber": 147,
     "scriptures": [
       {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 2,
+        "source": "auto"
+      },
+      {
+        "book": "Esther",
+        "references": ["Esther"],
+        "mentions": 6,
+        "source": "auto"
+      },
+      {
         "book": "Matthew",
-        "references": ["Matthew 6", "Matthew 28"],
-        "mentions": 2
+        "references": ["Matthew", "Matthew 6", "Matthew 28"],
+        "mentions": 3,
+        "source": "auto"
       }
     ]
   },
