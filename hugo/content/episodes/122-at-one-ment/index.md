@@ -38,7 +38,10 @@ segments:
   - What is That?
 segmentData:
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Atonement
+    summary: "Etymology, meaning, and translation of atonement are discussed."
     startSeconds: 169.39
 draft: false
 ---

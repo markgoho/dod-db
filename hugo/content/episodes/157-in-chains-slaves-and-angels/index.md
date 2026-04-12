@@ -51,10 +51,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: whos-that
+    anchor: whos-that-1
     label: "Who's That?"
+    topicLabel: Hagar
+    summary: "Hagar's story in Genesis 16: slave, wife, Ishmael's mother."
     startSeconds: 159.851
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Genesis 6
+    summary: "Angels and human women in Genesis fanfic, 1 Enoch."
     startSeconds: 1882.53
 draft: false
 ---

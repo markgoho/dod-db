@@ -48,10 +48,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Aristeas
+    summary: The Letter of Aristeas and the Septuagint origin story
     startSeconds: 156.18
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Exod 21:22-25
+    summary: Fetus as property and Septuagint textual criticism in Exodus
     startSeconds: 1890.079
 draft: false
 ---

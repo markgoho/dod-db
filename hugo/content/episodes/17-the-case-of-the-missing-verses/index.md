@@ -37,10 +37,16 @@ segments:
   - Know Your Bible
 segmentData:
   - type: thats-history
+    anchor: thats-history-1
     label: "That's History"
+    topicLabel: King James Version
+    summary: History and creation of the King James Version of Bible.
     startSeconds: 82
   - type: know-your-bible
+    anchor: know-your-bible-1
     label: Know Your Bible
+    topicLabel: Missing verses
+    summary: Verses missing from modern Bible translations and why.
     startSeconds: 2145
 draft: false
 ---

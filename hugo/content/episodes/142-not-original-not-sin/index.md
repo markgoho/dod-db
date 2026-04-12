@@ -42,10 +42,16 @@ segments:
   - What is That?
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Gen 2:4
+    summary: "Discussing creation accounts, the trees, and immortality questions."
     startSeconds: 192.621
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Original Sin
+    summary: "Original sin's biblical basis and historical development are examined."
     startSeconds: 2217.561
 draft: false
 ---

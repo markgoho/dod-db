@@ -38,10 +38,16 @@ segments:
   - What is That?
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Philemon 1
+    summary: "Paul's letter to Philemon and its historical context"
     startSeconds: 165.803
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Septuagint
+    summary: The ancient Greek translation of the Hebrew Bible is explained.
     startSeconds: 2039.967
 draft: false
 ---

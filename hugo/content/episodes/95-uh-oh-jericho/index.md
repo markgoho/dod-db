@@ -36,10 +36,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: bible-vs-bible
+    anchor: bible-vs-bible-1
     label: Bible vs Bible
+    topicLabel: Genealogies
+    summary: Genesis 4 and 5 genealogies compared; flood narrative issues.
     startSeconds: 280.834
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Josh 6
+    summary: "Joshua's conquest of Jericho and its historicity"
     startSeconds: 2114.291
 draft: false
 ---

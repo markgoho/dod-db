@@ -61,10 +61,16 @@ segments:
   - What is That?
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: 1 Sam 15
+    summary: God commands Saul to destroy the Amalekites completely.
     startSeconds: 232.757
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: "Apostles' Deaths"
+    summary: "Examining the biblical and apocryphal accounts of apostles' deaths."
     startSeconds: 2002
 draft: false
 ---

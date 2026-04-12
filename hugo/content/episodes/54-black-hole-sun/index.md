@@ -47,10 +47,16 @@ segments:
   - Conspiracy Watch
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Acts 15
+    summary: Council of Jerusalem pivots from Peter to Paul narrative.
     startSeconds: 240.085
   - type: conspiracy-watch
+    anchor: conspiracy-watch-1
     label: Conspiracy Watch
+    topicLabel: Eclipse
+    summary: Debunks conspiracy theories connecting eclipses to biblical prophecies.
     startSeconds: 2649.158
 draft: false
 ---

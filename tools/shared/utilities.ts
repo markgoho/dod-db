@@ -108,6 +108,7 @@ export {
 export {
   addTagWithPolling,
   reprocessAllEpisodes,
+  reprocessEpisodeTags,
   reprocessTag,
   startJobPollingWithUI,
   type JobPollingUIConfig,

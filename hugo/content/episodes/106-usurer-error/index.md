@@ -34,10 +34,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Usury
+    summary: "Biblical prohibitions against charging interest on loans, usury."
     startSeconds: 191.579
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Matt 25
+    summary: Parable of the talents and charging interest
     startSeconds: 1823.459
 draft: false
 ---

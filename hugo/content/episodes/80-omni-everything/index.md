@@ -37,10 +37,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Omni
+    summary: "Omnipotence, omniscience, omnipresence in the Bible and theology."
     startSeconds: 107.786
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Acts 15
+    summary: Acts 15 uses Greek Amos to include Gentiles.
     startSeconds: 2008.101
 draft: false
 ---

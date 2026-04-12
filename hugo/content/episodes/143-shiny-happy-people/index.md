@@ -45,6 +45,22 @@ books:
   - Deuteronomy
   - 2 Kings
   - John
+segments:
+  - What is That?
+  - Chapter and Verse
+segmentData:
+  - type: what-is-that
+    anchor: what-is-that-1
+    label: What is That?
+    topicLabel: Trans&shy;figuration
+    summary: "The Transfiguration story in Mark, Matthew, and Luke."
+    startSeconds: 122.311
+  - type: chapter-and-verse
+    anchor: chapter-and-verse-1
+    label: Chapter and Verse
+    topicLabel: Mark 6
+    summary: Feeding of 5000 differences between synoptics and John
+    startSeconds: 1843.408
 draft: false
 ---
 

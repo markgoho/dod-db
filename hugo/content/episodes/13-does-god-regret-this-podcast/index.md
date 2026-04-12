@@ -43,10 +43,16 @@ segments:
   - "All Right, Let's See It"
 segmentData:
   - type: archaeology-of-israel
+    anchor: archaeology-of-israel-1
     label: Archaeology of Israel
+    topicLabel: Arad
+    summary: Visiting Arad fortress and Judahite temple with cannabis altars
     startSeconds: 316
   - type: all-right-lets-see-it
+    anchor: all-right-lets-see-it-1
     label: "All Right, Let's See It"
+    topicLabel: Genesis 6
+    summary: "God's regret and reinterpreting scripture to fit dogma."
     startSeconds: 2224.59
 draft: false
 ---

@@ -19,10 +19,16 @@ segments:
   - What is That?
 segmentData:
   - type: what-is-that
-    label: What is That? (1)
+    anchor: what-is-that-1
+    label: What is That?
+    topicLabel: Religion
+    summary: Defining religion; its contested boundaries and historical etymology.
     startSeconds: 105.075
   - type: what-is-that
-    label: What is That? (2)
+    anchor: what-is-that-2
+    label: What is That?
+    topicLabel: Atheism
+    summary: "Defining atheism: historical usage, modern meanings, and implications."
     startSeconds: 2380.849
 draft: false
 ---

@@ -47,10 +47,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: all-right-lets-see-it
+    anchor: all-right-lets-see-it-1
     label: "All Right, Let's See It"
+    topicLabel: Hell
+    summary: Biblical and extra-biblical origins and evolution of hell
     startSeconds: 208.67
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Matt 27
+    summary: "Discrepancies in Judas's death between Matthew and Acts"
     startSeconds: 2170
 draft: false
 ---

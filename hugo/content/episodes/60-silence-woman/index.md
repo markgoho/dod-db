@@ -31,10 +31,16 @@ segments:
   - Textual Healing
 segmentData:
   - type: textual-healing
-    label: Textual Healing (1)
+    anchor: textual-healing-1
+    label: Textual Healing
+    topicLabel: John 7
+    summary: "Woman taken in adultery, Pericope Adulterae textual criticism"
     startSeconds: 76.547
   - type: textual-healing
-    label: Textual Healing (2)
+    anchor: textual-healing-2
+    label: Textual Healing
+    topicLabel: 1 Cor
+    summary: 1 Corinthians 14:34-35 is likely a later interpolation
     startSeconds: 1606
 draft: false
 ---

@@ -35,10 +35,16 @@ segments:
   - What is That?
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Dave Ramsey
+    summary: "Critique of Dave Ramsey's defense of owning multiple homes"
     startSeconds: 150.121
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Deuterono&shy;mistic History
+    summary: "Explaining the Deuteronomistic History's redactor and literary campaign."
     startSeconds: 2002.638
 draft: false
 ---

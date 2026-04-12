@@ -39,10 +39,16 @@ segments:
   - Segment No. 2
 segmentData:
   - type: here-we-go
+    anchor: here-we-go-1
     label: Here We Go!
+    topicLabel: Descent to Hell
+    summary: "Jesus's possible descent into hell and 1 Peter 3:18-20"
     startSeconds: 267.696
   - type: segment-no-2
+    anchor: segment-no-2-1
     label: Segment No. 2
+    topicLabel: Revelation
+    summary: Hades and Death in Revelation are discussed.
     startSeconds: 1989.959
 draft: false
 ---

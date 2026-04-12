@@ -55,10 +55,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: bible-vs-bible
+    anchor: bible-vs-bible-1
     label: Bible vs Bible
+    topicLabel: "Ahaziah's death"
+    summary: "Contradictory accounts of Ahaziah's death in Kings and Chronicles"
     startSeconds: 79
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Mark 2
+    summary: Jesus heals a paralytic and forgives his sins.
     startSeconds: 1431.483
 draft: false
 ---

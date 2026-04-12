@@ -33,10 +33,16 @@ segments:
   - Urban Legends
 segmentData:
   - type: all-right-lets-see-it
+    anchor: all-right-lets-see-it-1
     label: "All Right, Let's See It"
+    topicLabel: Easter
+    summary: "Origin of Easter, Ishtar, Eostre, and dying-rising god myths"
     startSeconds: 94
   - type: urban-legends
+    anchor: urban-legends-1
     label: Urban Legends
+    topicLabel: Council Nicaea
+    summary: "Council of Nicaea's actual purpose versus urban legends."
     startSeconds: 1674.76
 draft: false
 ---

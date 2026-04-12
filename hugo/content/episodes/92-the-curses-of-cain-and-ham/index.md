@@ -48,10 +48,16 @@ segments:
   - Biblicalish
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: "Cain's Mark"
+    summary: The mark of Cain and racist interpretations of it
     startSeconds: 101.53
   - type: biblicalish
+    anchor: biblicalish-1
     label: Biblicalish
+    topicLabel: Susanna
+    summary: "The Book of Susanna, and sexism in the Bible"
     startSeconds: 1898
 draft: false
 ---

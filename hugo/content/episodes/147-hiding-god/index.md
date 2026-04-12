@@ -36,10 +36,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Esther
+    summary: Discussion of the Book of Esther and its peculiarities
     startSeconds: 228.461
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Costly signaling
+    summary: Public displays of piety are costly signals of faith.
     startSeconds: 2842
 draft: false
 ---

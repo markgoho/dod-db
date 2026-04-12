@@ -13,10 +13,16 @@
 {{- $eyebrow := index $overrides "eyebrow" | default (printf "Episode %v" $episode.Params.episodeNumber) -}}
 {{- $guestText := index $overrides "guestText" | default "" -}}
 {{- $hideDate := or (index $overrides "eyebrow") (index $overrides "guestText") -}}
+{{- $arrow := index $overrides "arrow" | default "→" -}}
+{{- $arrowPosition := index $overrides "arrowPosition" | default "right" -}}
+{{- $compact := index $overrides "compact" | default false -}}
 
 
-<article class="episode-card{{ if $ranked }}episode-card--ranked{{ end }}">
-  <a href="{{ $link }}" class="episode-card__link">
+<article class="episode-card{{ if $ranked }}episode-card--ranked{{ end }}{{ if $compact }} episode-card--compact{{ end }}">
+  <a href="{{ $link }}" class="episode-card__link{{ if eq $arrowPosition "left" }} episode-card__link--arrow-left{{ end }}">
+    {{- if eq $arrowPosition "left" }}
+      <div class="episode-card__arrow" aria-hidden="true">{{ $arrow }}</div>
+    {{- end }}
     <div class="episode-card__content">
       {{- if $ranked }}
         <div class="episode-card__header-row">
@@ -96,6 +102,8 @@
         {{- end }}
       {{- end }}
     </div>
-    <div class="episode-card__arrow" aria-hidden="true">&rarr;</div>
+    {{- if ne $arrowPosition "left" }}
+      <div class="episode-card__arrow" aria-hidden="true">{{ $arrow }}</div>
+    {{- end }}
   </a>
 </article>

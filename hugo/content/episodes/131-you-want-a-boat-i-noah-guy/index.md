@@ -31,10 +31,16 @@ segments:
   - Terrible Parables
 segmentData:
   - type: textual-healing
+    anchor: textual-healing-1
     label: Textual Healing
+    topicLabel: Genesis 6
+    summary: "Textual issues: contradictions and additions in the Noah story"
     startSeconds: 139.735
   - type: terrible-parables
+    anchor: terrible-parables-1
     label: Terrible Parables
+    topicLabel: Luke 12
+    summary: Parable of the rich fool; possessions versus God.
     startSeconds: 2181.692
 draft: false
 ---

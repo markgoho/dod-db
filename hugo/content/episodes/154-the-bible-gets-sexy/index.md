@@ -39,10 +39,16 @@ segments:
   - "It's the Law"
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Song of Songs
+    summary: "Discussing authorship, dating, interpretations, and erotic nature of Song of Songs"
     startSeconds: 141.457
   - type: its-the-law
+    anchor: its-the-law-1
     label: "It's the Law"
+    topicLabel: Seeing God
+    summary: "Commandment to see God's face at the temple."
     startSeconds: 2177
 draft: false
 ---

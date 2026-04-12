@@ -57,10 +57,16 @@ segments:
   - Could it be Satan?
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Num 22
+    summary: "Balaam, Balak, and a talking donkey's confusing encounter with God"
     startSeconds: 132
   - type: could-it-be-satan
+    anchor: could-it-be-satan-1
     label: Could it be Satan?
+    topicLabel: Satan
+    summary: "Evolution of the term 'Satan' in the Hebrew Bible"
     startSeconds: 1592
 draft: false
 ---

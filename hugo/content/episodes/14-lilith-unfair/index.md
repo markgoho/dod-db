@@ -39,10 +39,16 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: whos-that
+    anchor: whos-that-1
     label: "Who's That?"
+    topicLabel: Lilith
+    summary: "Lilith's origins as a demon and feminist icon."
     startSeconds: 166
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Stele
+    summary: Standing stones anciently represented deities and deceased ancestors.
     startSeconds: 1640
 draft: false
 ---

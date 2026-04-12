@@ -48,10 +48,16 @@ segments:
   - What is That?
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: John 3:24
+    summary: "John's gospel downplays John the Baptist's importance."
     startSeconds: 167.358
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Pastor
+    summary: Meaning of pastor and related biblical org chart
     startSeconds: 1925.698
 draft: false
 ---

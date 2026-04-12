@@ -132,24 +132,19 @@ export const tagVocabulary: TagDefinition[] = [
     ],
   },
   {
-    canonical: "Lot",
-    variations: ["Lot's"],
-    category: "character",
-    status: "accepted",
-    caseSensitive: true,
-    episodes: [3, 28, 46, 93, 94, 113, 114, 121, 137],
-  },
-  {
     canonical: "Paul",
-    variations: ["Pauline"],
+    variations: [],
     category: "character",
+    llmVerify: true,
+    description:
+      "Author of new testament books, lived in the first century, is supposed to have seen Jesus on the road to Damascus",
     status: "accepted",
     episodes: [
-      1, 4, 5, 6, 8, 10, 12, 15, 16, 17, 19, 23, 26, 30, 32, 33, 35, 37, 39, 41,
-      42, 44, 48, 49, 50, 52, 54, 57, 59, 60, 64, 69, 70, 71, 72, 73, 76, 78,
-      80, 86, 87, 89, 91, 94, 96, 99, 100, 101, 104, 106, 107, 108, 110, 113,
-      114, 116, 120, 122, 123, 124, 125, 126, 128, 130, 132, 133, 134, 135, 136,
-      137, 138, 139,
+      1, 4, 6, 10, 12, 15, 16, 17, 19, 26, 30, 31, 32, 33, 35, 39, 41, 42, 44,
+      48, 49, 50, 52, 54, 57, 59, 60, 64, 69, 70, 71, 73, 76, 78, 80, 86, 87,
+      89, 91, 94, 96, 99, 100, 101, 104, 106, 107, 108, 110, 113, 114, 116, 120,
+      122, 123, 124, 126, 128, 130, 132, 133, 134, 135, 136, 137, 138, 139, 140,
+      141, 142, 144, 145, 146, 147, 148, 150, 151, 153, 156, 157,
     ],
   },
   {
@@ -393,13 +388,6 @@ export const tagVocabulary: TagDefinition[] = [
     category: "place",
     status: "accepted",
     episodes: [3, 45],
-  },
-  {
-    canonical: "Lachish",
-    variations: ["Tel Lachish"],
-    category: "place",
-    status: "accepted",
-    episodes: [3, 13, 14, 29, 72, 88, 118],
   },
   {
     canonical: "Torah",
@@ -1179,13 +1167,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [30, 34, 43, 70, 71, 99, 115, 130, 133],
   },
   {
-    canonical: "Nabonidus",
-    variations: [],
-    category: "person",
-    status: "accepted",
-    episodes: [34, 45],
-  },
-  {
     canonical: "Qumran",
     variations: [],
     category: "place",
@@ -1259,15 +1240,6 @@ export const tagVocabulary: TagDefinition[] = [
       "early Christian missionary and church leader, a companion and disciple of Paul the Apostle",
     status: "accepted",
     episodes: [6, 26, 29, 35, 48, 60, 99, 138],
-  },
-  {
-    canonical: "Julius Wellhausen",
-    variations: ["Wellhausen"],
-    category: "person",
-    llmVerify: true,
-    description: "German biblical scholar and orientalist",
-    status: "accepted",
-    episodes: [22, 36, 111],
   },
   {
     canonical: "King Josiah",
@@ -1356,16 +1328,6 @@ export const tagVocabulary: TagDefinition[] = [
       "a second-century infancy gospel telling of the miraculous conception of Mary, the mother of Jesus, her upbringing and marriage to Joseph, the journey of the couple to Bethlehem, the birth of Jesus, and events immediately following.",
     status: "accepted",
     episodes: [38, 87, 99, 136],
-  },
-  {
-    canonical: "Judeans",
-    variations: ["Judean"],
-    category: "people",
-    status: "accepted",
-    episodes: [
-      1, 8, 11, 29, 36, 38, 45, 62, 71, 74, 85, 86, 88, 99, 105, 110, 113, 116,
-      117, 120, 123,
-    ],
   },
   {
     canonical: "Persia",
@@ -1593,13 +1555,6 @@ export const tagVocabulary: TagDefinition[] = [
     category: "people",
     status: "accepted",
     episodes: [45, 61, 85, 86, 94, 123],
-  },
-  {
-    canonical: "Masada",
-    variations: [],
-    category: "place",
-    status: "accepted",
-    episodes: [45, 75],
   },
   {
     canonical: "Leningrad Codex",
@@ -1935,13 +1890,6 @@ export const tagVocabulary: TagDefinition[] = [
     variations: [],
     category: "literature",
     status: "rejected",
-  },
-  {
-    canonical: "Megiddo",
-    variations: [],
-    category: "place",
-    status: "accepted",
-    episodes: [46, 55, 127],
   },
   {
     canonical: "Capernaum",
@@ -2731,15 +2679,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [70],
   },
   {
-    canonical: "Darius",
-    variations: [],
-    category: "person",
-    description:
-      "Several Persian kings named Darius, one mentioned in the Book of Daniel",
-    status: "proposed",
-    addedInEpisode: 70,
-  },
-  {
     canonical: "Revelation 20",
     variations: ["Revelation"],
     category: "literature",
@@ -2940,16 +2879,6 @@ export const tagVocabulary: TagDefinition[] = [
       "Pope during the 14th century, mentioned in the context of a letter about the Shroud of Turin.",
     status: "proposed",
     addedInEpisode: 75,
-  },
-  {
-    canonical: "Turin",
-    variations: ["Torino"],
-    category: "place",
-    llmVerify: true,
-    description: "City in northern Italy where the Shroud of Turin is housed.",
-    status: "accepted",
-    addedInEpisode: 75,
-    episodes: [75],
   },
   {
     canonical: "Acts",
@@ -5312,10 +5241,12 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Beatitudes",
     variations: ["The Beatitudes"],
     category: "theology",
+    llmVerify: true,
     description:
       "A set of teachings by Jesus in the Sermon on the Mount (Matthew 5:3-12), expressing ideals of humility, compassion, and righteousness",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 151,
+    episodes: [19, 25, 91, 101, 110, 118, 146, 151],
   },
   {
     canonical: "Augustine",
@@ -5352,7 +5283,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "miscellaneous",
     description:
       "CE, also known as AD, this is a secular dating system that is used as an alternative to the BC/AD notation.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 154,
   },
   {
@@ -5368,10 +5299,12 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Letter of Aristeas",
     variations: ["Aristeas"],
     category: "literature",
+    llmVerify: true,
     description:
       "A pseudepigraphic letter that purports to be from Aristeas to his brother Philocrates, describing the translation of the Hebrew Bible into Greek, which is traditionally known as the Septuagint.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 155,
+    episodes: [11, 39, 100, 130, 142, 155],
   },
   {
     canonical: "Pentateuch",
@@ -5397,7 +5330,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "An Athenian statesman, orator, and philosopher who served as a librarian in Alexandria under Ptolemy I Soter.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 155,
   },
   {
@@ -5415,7 +5348,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "The (fictional) brother of Aristeas to whom the Letter of Aristeas is addressed.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 155,
   },
   {
@@ -5540,7 +5473,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: [],
     category: "miscellaneous",
     description: "Reference to the feeding of the 5000 miracle narrative.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 143,
   },
   {
@@ -5663,7 +5596,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "People who study human history and prehistory by excavating sites and analyzing artifacts.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Bart Ehrman",
@@ -5671,14 +5604,14 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "New Testament scholar and professor at UNC Chapel Hill, known for work on textual criticism and early Christianity",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Bruce Metzger",
     variations: [],
     category: "person",
     description: "A New Testament scholar and textual critic",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Inanna",
@@ -5710,7 +5643,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "An English monk and scholar who wrote about Eostre and the origins of Easter",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "chromicles",
@@ -6077,7 +6010,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "A former Pentecostal pastor who became known for his belief in universal reconciliation, the idea that hell does not exist and all people will ultimately be saved.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Simon",
@@ -6668,7 +6601,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "Scholar of early Christianity, specializing in martyrdom, disability studies, and the New Testament.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Rosemarie Garland-Thomson",
@@ -6716,7 +6649,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "Biblical scholar known for her work on the Book of Daniel and other Old Testament texts",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Hananiah",
@@ -6807,7 +6740,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "Research affiliate in physics education at MIT and author of 'The Star of Bethlehem: A Skeptical View'",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Christmas",
@@ -7093,7 +7026,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "event",
     description:
       "The Roman Senate was a political institution in the ancient Roman Republic and Empire",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Lindsay Graham",
@@ -7560,9 +7493,11 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Second Maccabees",
     variations: ["2 Maccabees"],
     category: "literature",
+    llmVerify: true,
     description:
       "Deuterocanonical book recounting the history of the Maccabean revolt",
-    status: "proposed",
+    status: "accepted",
+    episodes: [20, 50, 55, 70, 112, 123],
   },
   {
     canonical: "king cyrus of persia",
@@ -7650,12 +7585,14 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "shroud of turin",
-    variations: ["the shroud"],
+    canonical: "Shroud of Turin",
+    variations: ["shroud"],
     category: "miscellaneous",
+    llmVerify: true,
     description:
       "A linen cloth bearing an image that resembles a crucified man, believed by some to be the burial shroud of Jesus.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [75, 140],
   },
   {
     canonical: "Goshen",
@@ -7719,7 +7656,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "Co-host of the Lawful Assembly podcast, also a podcaster on Cognitive Dissonance and Citation Needed.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "refugees",
@@ -7758,7 +7695,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "British author and Christian apologist known for his works on theology and fantasy",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Rudolf Bultmann",
@@ -8079,7 +8016,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["porteus"],
     category: "person",
     description: "Bishop of London and abolitionist",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "the kingdom of heaven",
@@ -8117,7 +8054,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["seminaries"],
     category: "scholarship",
     description: "Educational institution for training religious leaders",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "community",
@@ -8283,7 +8220,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "Author of the Instruction of Amenemope, an Egyptian wisdom text that shares similarities with Proverbs.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Ethnicity",
@@ -8681,7 +8618,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["herod archelaus"],
     category: "person",
     description: "Son of Herod the Great, ruled Judea after his father's death",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Answers in Genesis",
@@ -8765,7 +8702,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "A citizen of Antioch who attempts to molest Thecla, but is humiliated and later tries to have her killed in the arena.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Theokleia",
@@ -8883,9 +8820,11 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Clement of Alexandria",
     variations: ["Clement"],
     category: "person",
+    llmVerify: true,
     description:
       "An early Christian theologian and head of the Catechetical School of Alexandria.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [50, 69, 99, 110, 153, 156],
   },
   {
     canonical: "Elect lady",
@@ -8972,6 +8911,40 @@ export const tagVocabulary: TagDefinition[] = [
     description:
       "One of the chief angels who descended to Earth and had intercourse with human women, according to the Book of Enoch.",
     status: "proposed",
+  },
+  {
+    canonical: "eric swalwell",
+    variations: ["representative swalwell", "swalwell"],
+    category: "person",
+    description:
+      "Democratic Representative from California's 14th district who was a guest on the podcast.",
+    status: "rejected",
+    addedInEpisode: 96,
+  },
+  {
+    canonical: "constitution",
+    variations: ["the constitution"],
+    category: "miscellaneous",
+    description: "The supreme law of the United States of America.",
+    status: "proposed",
+    addedInEpisode: 96,
+  },
+  {
+    canonical: "caesars",
+    variations: ["caesar"],
+    category: "miscellaneous",
+    description: "Title for Roman Emperors",
+    status: "proposed",
+    addedInEpisode: 96,
+  },
+  {
+    canonical: "lutheran",
+    variations: ["lutheran church"],
+    category: "religion",
+    description:
+      "A branch of Protestant Christianity that identifies with the teachings of Martin Luther.",
+    status: "proposed",
+    addedInEpisode: 96,
   },
 ];
 

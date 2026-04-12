@@ -34,12 +34,6 @@
               {{ if .Params.audioUrl }}
                 <div class="episode-media__details audio-player">
                   <div class="audio-player__shell">
-                    <div class="audio-player__header">
-                      <span class="audio-player__title"
-                        >Episode {{ .Params.episodeNumber }} •
-                        {{ .Date.Format "Jan 2, 2006" }}</span
-                      >
-                    </div>
                     <div class="audio-player__hero">
                       <button
                         class="audio-player__play"
@@ -110,17 +104,16 @@
               <div class="episode-segments__grid">
                 {{ range .Params.segmentData }}
                   <a
-                    class="episode-segment-card panel {{ if eq .type "what-is-that" }}
-                      panel--accent
-                    {{ end }}"
-                    id="{{ .type }}"
-                    href="#{{ .type }}"
+                    class="episode-segment-card panel"
+                    id="{{ .anchor }}"
+                    href="#{{ .anchor }}"
                     data-start="{{ .startSeconds }}">
                     <span class="episode-segment-card__label type-eyebrow"
-                      >{{ .type }}</span
-                    >
-                    <span class="episode-segment-card__title"
                       >{{ .label }}</span
+                    >
+                    {{ $cardTitle := or .topicLabel .label }}
+                    <span class="episode-segment-card__title"
+                      >{{ replace $cardTitle "&shy;" "&shy;" | safeHTML }}</span
                     >
                   </a>
                 {{ end }}
@@ -182,6 +175,8 @@
       {{ end }}
     </div>
   </article>
+
+  {{ partial "episode-nav.html" . }}
 {{ end }}
 
 {{ define "footer-scripts" }}

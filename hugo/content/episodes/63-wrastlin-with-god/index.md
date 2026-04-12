@@ -37,10 +37,16 @@ segments:
   - Bible Heroes?
 segmentData:
   - type: bible-heroes
-    label: Bible Heroes? (1)
+    anchor: bible-heroes-1
+    label: Bible Heroes?
+    topicLabel: Jacob
+    summary: "Jacob's story, name etymology, and possible independent origins"
     startSeconds: 130.475
   - type: bible-heroes
-    label: Bible Heroes? (2)
+    anchor: bible-heroes-2
+    label: Bible Heroes?
+    topicLabel: Samson
+    summary: "Samson's story, Nazirite vow, foxes, Philistines, and superhuman strength"
     startSeconds: 1921.431
 draft: false
 ---

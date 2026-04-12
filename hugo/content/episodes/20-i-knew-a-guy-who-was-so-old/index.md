@@ -61,10 +61,16 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: by-the-numbers
+    anchor: by-the-numbers-1
     label: By the Numbers
+    topicLabel: Patriarch Ages
+    summary: Genesis 5 patriarch ages compared to Sumerian king lists
     startSeconds: 78
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Apocrypha
+    summary: "Explains Apocrypha's meaning, history, canonization, and relation to scripture."
     startSeconds: 1592
 draft: false
 ---

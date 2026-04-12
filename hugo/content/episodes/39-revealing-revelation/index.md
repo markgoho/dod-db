@@ -51,7 +51,10 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Revelation
+    summary: "Discussing authorship, dating, manuscripts, and textual criticism of Revelation"
     startSeconds: 80
 draft: false
 ---

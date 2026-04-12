@@ -32,10 +32,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: historys-mysteries
+    anchor: historys-mysteries-1
     label: "History's Mysteries"
+    topicLabel: Crucifixion
+    summary: "History and symbolism of crucifixion, especially the cross shape."
     startSeconds: 321.208
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Ezekiel 37:9
+    summary: "Ezekiel's valley of dry bones compared to Ecclesiastes on ensoulment"
     startSeconds: 1873.551
 draft: false
 ---

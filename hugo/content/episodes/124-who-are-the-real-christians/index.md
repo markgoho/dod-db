@@ -49,10 +49,16 @@ segments:
   - What is That?
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Christians
+    summary: "Debating who counts as a Christian, identity markers."
     startSeconds: 130.393
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Nephilim
+    summary: Examining the Nephilim and their role in Genesis 6
     startSeconds: 2028.038
 draft: false
 ---

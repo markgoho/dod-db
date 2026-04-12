@@ -50,10 +50,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Preterism
+    summary: Explanation of preterism and its interpretations of Biblical prophecy
     startSeconds: 182.111
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Revelation
+    summary: Debate about including Revelation in the biblical canon
     startSeconds: 1647.033
 draft: false
 ---

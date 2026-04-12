@@ -27,10 +27,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Easter Dating
+    summary: History and differing calculations for the date of Easter
     startSeconds: 235.539
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Exod 4
+    summary: "God hardening Pharaoh's heart and its implications"
     startSeconds: 1528.414
 draft: false
 ---

@@ -39,10 +39,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Second Maccabees
+    summary: Second Maccabees chapter seven about martyrdom and resurrection
     startSeconds: 112.333
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Foot Washing
+    summary: "Interpretation of Jesus washing disciples' feet in John 13"
     startSeconds: 1575.461
 draft: false
 ---

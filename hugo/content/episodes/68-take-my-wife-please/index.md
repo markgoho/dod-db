@@ -31,7 +31,10 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Gen 38
+    summary: "Laws on adultery, sexual assault, and women's agency"
     startSeconds: 2267.944
 draft: false
 ---

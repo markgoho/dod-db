@@ -39,10 +39,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: twisted-scripture
+    anchor: twisted-scripture-1
     label: Twisted Scripture
+    topicLabel: Acts 17
+    summary: "Peter Thiel's ACTS 17 group and its manifesto."
     startSeconds: 118.506
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Star of Remphan
+    summary: "Star of David origins, antisemitic conspiracy theories, Remphan connection."
     startSeconds: 2221.732
 draft: false
 ---

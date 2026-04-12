@@ -29,10 +29,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Prov 13:24
+    summary: "Analysis of spare the rod, spoil the child proverb."
     startSeconds: 130.017
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: 1 Cor 5
+    summary: Handing a man over to Satan for salvation.
     startSeconds: 1514.942
 draft: false
 ---

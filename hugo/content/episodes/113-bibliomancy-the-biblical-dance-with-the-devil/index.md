@@ -40,10 +40,16 @@ segments:
   - What is That?
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Jer 29:7
+    summary: "Charlie Kirk's use of Jeremiah 29:7 and Christian nationalism"
     startSeconds: 154.709
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Bibliomancy
+    summary: Divination using the Bible; opening to random passages.
     startSeconds: 1956.884
 draft: false
 ---

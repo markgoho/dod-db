@@ -31,10 +31,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Pride
+    summary: "Mark Driscoll's tweet uses pride as anti-LGBTQ dogwhistle."
     startSeconds: 145.741
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Gen 19
+    summary: Sodom and Gomorrah story is not about homosexuality
     startSeconds: 1842.978
 draft: false
 ---

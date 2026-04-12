@@ -40,10 +40,16 @@ segments:
   - "Who's That?"
 segmentData:
   - type: historys-mysteries
+    anchor: historys-mysteries-1
     label: "History's Mysteries"
+    topicLabel: Copycat Gods
+    summary: Similarities between Jesus and other savior figures debunked.
     startSeconds: 181.819
   - type: whos-that
+    anchor: whos-that-1
     label: "Who's That?"
+    topicLabel: Josephus
+    summary: "Flavius Josephus, Jewish historian of the first century CE"
     startSeconds: 2289.967
 draft: false
 ---

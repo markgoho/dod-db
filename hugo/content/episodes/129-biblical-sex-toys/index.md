@@ -36,10 +36,16 @@ segments:
   - Twisted Scripture
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Judges 6
+    summary: Judges 6 and textual criticism with Qumran manuscript
     startSeconds: 151.163
   - type: twisted-scripture
+    anchor: twisted-scripture-1
     label: Twisted Scripture
+    topicLabel: Ezekiel 16
+    summary: "Ezekiel 16 may describe divine dildos, metaphorically."
     startSeconds: 2666.051
 draft: false
 ---

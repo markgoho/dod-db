@@ -35,10 +35,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Tithing
+    summary: "Meaning, history, and inconsistencies of tithing in the Bible."
     startSeconds: 232.202
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Acts 4-5
+    summary: "Communalism, Ananias, Sapphira, and historical interpretations of shared property."
     startSeconds: 1761.897
 draft: false
 ---

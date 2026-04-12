@@ -28,6 +28,7 @@ import { approveCandidate } from "../pipeline/approve-candidate.js";
 import type { CorrectionCandidate } from "../pipeline/correction-tracker.js";
 import { deleteTagFromVocabulary } from "../pipeline/delete-tag-from-vocabulary.js";
 import { extractScripture } from "../pipeline/extract-scripture.js";
+import { extractTags } from "../pipeline/extract-tags.js";
 import { findTag } from "../pipeline/find-tag.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
 import { generateTranscriptFilename } from "../pipeline/generate-transcript-filename.js";
@@ -53,6 +54,7 @@ import { updateVideoScriptures } from "../storage/update-video-scriptures.js";
 import { updateVideoSegments } from "../storage/update-video-segments.js";
 import { isScriptureTag } from "../utils/is-scripture-tag.js";
 import { removeTagFromEpisode } from "../utils/remove-tag-from-episode.js";
+import { sortTags } from "../utils/tag-utils.js";
 
 type TagVocabularyResponse = TagDefinition & {
   duplicateOf?: string;
@@ -401,6 +403,84 @@ async function runMigrationWithTagTracking(
       console.warn = originalWarn;
       // Invalidate stats cache
       statsCache.data = null;
+    }
+  })();
+
+  return { jobId, completion };
+}
+
+async function runEpisodeTagReprocess(
+  videoId: string,
+): Promise<{ jobId: string; completion: Promise<void> }> {
+  const jobId = `episode-tags-${Date.now()}`;
+  const job: MigrationJob = {
+    id: jobId,
+    status: "running",
+    logs: [],
+    startTime: Date.now(),
+  };
+  migrationJobs.set(jobId, job);
+
+  let resolveCompletion!: () => void;
+  let rejectCompletion!: (error: unknown) => void;
+  const completion = new Promise<void>((resolve, reject) => {
+    resolveCompletion = resolve;
+    rejectCompletion = reject;
+  });
+
+  (async () => {
+    try {
+      const video = await getVideoById(videoId);
+      if (!video) {
+        throw new Error("Episode not found");
+      }
+
+      job.logs.push(`Reprocessing tags for ${video.title}\n`);
+      const transcriptFile = Bun.file(video.transcriptPath);
+      if (!(await transcriptFile.exists())) {
+        throw new Error(`Transcript not found: ${video.transcriptPath}`);
+      }
+
+      const transcript = await transcriptFile.text();
+      const tags = await extractTags(transcript, {
+        enableLlmVerification: true,
+        episodeNumber: video.episodeNumber,
+      });
+
+      const videos = await loadProcessedVideos();
+      const videoToUpdate = videos.find(entry => entry.videoId === videoId);
+      if (!videoToUpdate) {
+        throw new Error("Episode not found in processed videos");
+      }
+
+      const extractedTagNames = new Set(tags.map(tag => tag.tag.toLowerCase()));
+      const preservedTags = (videoToUpdate.tags ?? []).filter(existingTag => {
+        const tagLower = existingTag.tag.toLowerCase();
+        if (extractedTagNames.has(tagLower)) {
+          return false;
+        }
+
+        const vocab = tagVocabulary.find(
+          entry => entry.canonical.toLowerCase() === tagLower,
+        );
+        return Boolean(vocab && "llmVerify" in vocab && vocab.llmVerify);
+      });
+
+      videoToUpdate.tags = sortTags([...tags, ...preservedTags]);
+      await saveProcessedVideos(videos);
+      await generateHugoEpisode(videoToUpdate, { silent: true });
+
+      job.logs.push(`✓ Extracted ${tags.length} tags\n`);
+      job.status = "completed";
+      job.exitCode = 0;
+      resolveCompletion();
+    } catch (error) {
+      job.logs.push(`\n[ERROR] Tag reprocess failed: ${error}\n`);
+      job.status = "failed";
+      job.exitCode = 1;
+      rejectCompletion(error);
+    } finally {
+      job.endTime = Date.now();
     }
   })();
 
@@ -1703,6 +1783,29 @@ const _server = Bun.serve({
               error instanceof Error
                 ? error.message
                 : "Failed to start scripture rescan",
+          },
+          500,
+        );
+      }
+    }
+
+    // Episode API: Reprocess all tags for an episode
+    if (
+      /^\/api\/episode\/[^/]+\/tags\/reprocess$/.test(url.pathname) &&
+      request.method === "POST"
+    ) {
+      const videoId = url.pathname.split("/")[3] ?? "";
+
+      try {
+        const { jobId } = await runEpisodeTagReprocess(videoId);
+        return jsonResponse({ success: true, jobId });
+      } catch (error) {
+        return jsonResponse(
+          {
+            error:
+              error instanceof Error
+                ? error.message
+                : "Failed to start tag reprocess",
           },
           500,
         );

@@ -61,10 +61,16 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: 1 Kings 16
+    summary: "Jehoram removes Baal pillar, Asherah pillar remains"
     startSeconds: 109.28
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Divine Council
+    summary: "Explaining the divine council, its origins, and Psalm 82"
     startSeconds: 2089
 draft: false
 ---

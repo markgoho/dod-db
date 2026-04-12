@@ -53,10 +53,16 @@ segments:
   - What is That?
 segmentData:
   - type: twisted-scripture
+    anchor: twisted-scripture-1
     label: Twisted Scripture
+    topicLabel: Jezebel spirit
+    summary: Misuse of Jezebel to attack women in modern contexts.
     startSeconds: 176
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: "Pharisees, Sadducees"
+    summary: Differences between Pharisees and Sadducees in Second Temple Judaism.
     startSeconds: 2229.531
 draft: false
 ---

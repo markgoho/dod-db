@@ -35,10 +35,16 @@ segments:
   - The Grail
 segmentData:
   - type: ark-of-the-covenant
+    anchor: ark-of-the-covenant-1
     label: The Ark of the Covenant
+    topicLabel: Ark description
+    summary: "Physical description of the Ark of the Covenant, Exodus 25"
     startSeconds: 138.901
   - type: grail
+    anchor: grail-1
     label: The Grail
+    topicLabel: Holy Grail
+    summary: "Grail's origins in legend, not Bible; Indiana Jones"
     startSeconds: 2293.178
 draft: false
 ---

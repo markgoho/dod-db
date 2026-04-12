@@ -32,10 +32,16 @@ segments:
   - "All Right, Let's See It"
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Matt 5:3
+    summary: "Meaning of poor in spirit in Matthew's Beatitudes."
     startSeconds: 81.81
   - type: all-right-lets-see-it
+    anchor: all-right-lets-see-it-1
     label: "All Right, Let's See It"
+    topicLabel: Jordan Peterson
+    summary: "Peterson's interpretation of meekness contrasted with biblical scholarship."
     startSeconds: 3020.18
 draft: false
 ---

@@ -23,12 +23,13 @@ import {
   SegmentIdentificationSchema,
   type SegmentContext,
 } from "../prompts/segment-identification.js";
+import { timestampToSeconds, type Segment } from "./detect-segments.js";
 import {
+  extractTranscriptLinesAround,
+  findClosestTranscriptLineIndex,
+  formatTranscriptContext,
   parseTranscript,
-  timestampToSeconds,
-  type Segment,
-  type TranscriptLine,
-} from "./detect-segments.js";
+} from "./parse-transcript.js";
 
 /**
  * Configuration for context extraction.
@@ -38,78 +39,6 @@ const CONTEXT_CONFIG = {
   linesAfter: 5, // Fewer lines after (occasionally repeated)
   timestampTolerance: 5, // Seconds tolerance when finding closest line
 };
-
-/**
- * Find the transcript line closest to a target timestamp.
- *
- * @param lines - Parsed transcript lines
- * @param targetSeconds - Target timestamp in seconds
- * @param tolerance - Maximum seconds difference to accept
- * @returns Index of closest line, or -1 if none within tolerance
- */
-function findClosestLineIndex(
-  lines: TranscriptLine[],
-  targetSeconds: number,
-  tolerance: number,
-): number {
-  let closestIndex = -1;
-  let closestDiff = Number.POSITIVE_INFINITY;
-
-  for (const [index, line] of lines.entries()) {
-    const lineSeconds = timestampToSeconds(line.timestamp);
-    const diff = Math.abs(lineSeconds - targetSeconds);
-
-    if (diff < closestDiff) {
-      closestDiff = diff;
-      closestIndex = index;
-    }
-  }
-
-  // Return -1 if closest line is beyond tolerance
-  if (closestDiff > tolerance) {
-    return -1;
-  }
-
-  return closestIndex;
-}
-
-/**
- * Extract transcript lines before and after a target index separately.
- *
- * @param lines - Parsed transcript lines
- * @param targetIndex - Index of the target line (closest to jingle timestamp)
- * @param linesBefore - Number of lines to include before
- * @param linesAfter - Number of lines to include after
- * @returns Object with before, after, and combined lines
- */
-function extractLinesAround(
-  lines: TranscriptLine[],
-  targetIndex: number,
-  linesBefore: number,
-  linesAfter: number,
-): {
-  before: TranscriptLine[];
-  after: TranscriptLine[];
-  all: TranscriptLine[];
-} {
-  const startIndex = Math.max(0, targetIndex - linesBefore);
-  const endIndex = Math.min(lines.length, targetIndex + linesAfter + 1);
-
-  return {
-    before: lines.slice(startIndex, targetIndex),
-    after: lines.slice(targetIndex, endIndex),
-    all: lines.slice(startIndex, endIndex),
-  };
-}
-
-/**
- * Format transcript lines as readable context text.
- */
-function formatContextText(lines: TranscriptLine[]): string {
-  return lines
-    .map(line => `${line.timestamp} ${line.speaker}: ${line.text}`)
-    .join("\n");
-}
 
 /**
  * Try to match segment type from context using deterministic patterns.
@@ -233,7 +162,7 @@ export async function identifySegmentTypes(
     const targetSeconds = timestampToSeconds(segment.startTimestamp);
 
     // Find closest transcript line
-    const closestLineIndex = findClosestLineIndex(
+    const closestLineIndex = findClosestTranscriptLineIndex(
       lines,
       targetSeconds,
       CONTEXT_CONFIG.timestampTolerance,
@@ -247,7 +176,7 @@ export async function identifySegmentTypes(
     }
 
     // Extract context lines (before and after the jingle separately)
-    const { before, after, all } = extractLinesAround(
+    const { before, after, all } = extractTranscriptLinesAround(
       lines,
       closestLineIndex,
       CONTEXT_CONFIG.linesBefore,
@@ -256,7 +185,7 @@ export async function identifySegmentTypes(
 
     // Try pattern matching AFTER the jingle first (higher priority)
     // The segment name is more likely to be announced right after the jingle plays
-    const afterContext = formatContextText(after);
+    const afterContext = formatTranscriptContext(after);
     const afterMatch = matchSegmentTypeFromContext(afterContext);
 
     if (afterMatch) {
@@ -272,7 +201,7 @@ export async function identifySegmentTypes(
     }
 
     // Fall back to checking BEFORE the jingle
-    const beforeContext = formatContextText(before);
+    const beforeContext = formatTranscriptContext(before);
     const beforeMatch = matchSegmentTypeFromContext(beforeContext);
 
     if (beforeMatch) {
@@ -288,7 +217,7 @@ export async function identifySegmentTypes(
     }
 
     // No pattern match - collect for LLM batch (send full context)
-    const fullContextText = formatContextText(all);
+    const fullContextText = formatTranscriptContext(all);
     llmContexts.push({
       index: segmentIndex,
       timestamp: segment.startTimestamp,

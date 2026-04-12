@@ -28,7 +28,10 @@ export const EXCLUDED_SEGMENT_TYPES = new Set<SegmentType>([
  */
 export interface SegmentData {
   type: string;
+  anchor: string;
   label: string;
+  topicLabel?: string;
+  summary?: string;
   startSeconds: number;
 }
 
@@ -49,4 +52,6 @@ export interface StoredSegment {
   endTimestamp?: string | null;
   confidence: "auto" | "verified";
   detectionMethod: string;
+  topicLabel?: string;
+  summary?: string;
 }

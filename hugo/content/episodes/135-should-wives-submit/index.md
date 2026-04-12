@@ -33,10 +33,16 @@ segments:
   - The X-Files
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Eph 5:22
+    summary: "Wives submit; translation, interpretation, misogyny, and Christian manosphere"
     startSeconds: 107.995
   - type: the-x-files
+    anchor: the-x-files-1
     label: The X-Files
+    topicLabel: Ezekiel
+    summary: "Ezekiel's vision interpreted as possible alien encounter."
     startSeconds: 1959.553
 draft: false
 ---

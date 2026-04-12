@@ -193,6 +193,57 @@ export async function reprocessTag({
   }
 }
 
+// Reprocess tags for a single episode
+export async function reprocessEpisodeTags({
+  videoId,
+  pollingConfig,
+  onComplete,
+  skipConfirmation = false,
+}: {
+  videoId: string;
+  pollingConfig: JobPollingUIConfig;
+  onComplete?: () => void;
+  skipConfirmation?: boolean;
+}): Promise<void> {
+  if (
+    !skipConfirmation &&
+    !confirm("Reprocess tags for this episode using the current vocabulary?")
+  ) {
+    return;
+  }
+
+  try {
+    const response = await fetch(
+      `${API_BASE_URL}/api/episode/${encodeURIComponent(videoId)}/tags/reprocess`,
+      {
+        method: "POST",
+      },
+    );
+
+    if (!response.ok) {
+      const error = await response.json();
+      throw new Error(error.error || "Failed to start episode reprocessing");
+    }
+
+    const data = await response.json();
+
+    showToast("Reprocessing episode tags...", "success");
+
+    startJobPollingWithUI({
+      jobId: data.jobId,
+      initialMessage: "Reprocessing this episode...",
+      completedMessage: "✓ Episode Reprocessed",
+      onComplete,
+      ...pollingConfig,
+    });
+  } catch (error) {
+    showToast(
+      `Error: ${error instanceof Error ? error.message : "Unknown error"}`,
+      "error",
+    );
+  }
+}
+
 // Reprocess all episodes (migrate)
 export async function reprocessAllEpisodes({
   pollingConfig,

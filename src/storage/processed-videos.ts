@@ -51,6 +51,8 @@ export interface EpisodeSegment {
   endTimestamp?: string | null; // undefined/null if segment extends to end
   confidence: "auto" | "verified";
   detectionMethod: DetectionMethod;
+  topicLabel?: string;
+  summary?: string;
 }
 
 /**
@@ -62,6 +64,8 @@ export const EpisodeSegmentSchema = z.object({
   endTimestamp: z.string().nullish(), // Allow null or undefined - data may have explicit null values
   confidence: z.enum(["auto", "verified"]),
   detectionMethod: z.enum(DETECTION_METHODS),
+  topicLabel: z.string().optional(),
+  summary: z.string().optional(),
 });
 
 /**

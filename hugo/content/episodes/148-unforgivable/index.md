@@ -37,10 +37,16 @@ segments:
   - What is That?
 segmentData:
   - type: apocryphilia
+    anchor: apocryphilia-1
     label: Apocryphilia
+    topicLabel: Acts of Paul
+    summary: Discussion of the non-canonical Acts of Paul and Thecla
     startSeconds: 125.608
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Unforgivable sin
+    summary: Blasphemy against the Holy Spirit and its interpretations
     startSeconds: 2444
 draft: false
 ---

@@ -41,10 +41,16 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Mark 11
+    summary: Fig tree cursing as metaphor for temple destruction
     startSeconds: 89.85
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Deutero-Isaiah
+    summary: Explains the theory of multiple authors of Isaiah.
     startSeconds: 1892
 draft: false
 ---

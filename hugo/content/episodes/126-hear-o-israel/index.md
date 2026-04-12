@@ -46,10 +46,16 @@ segments:
   - Is it Canon?
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Deut 6:4
+    summary: Translation and meaning of the Shema Yisrael passage.
     startSeconds: 292.68
   - type: is-it-canon
+    anchor: is-it-canon-1
     label: Is it Canon?
+    topicLabel: Letter of Jeremiah
+    summary: "Discussing the Letter of Jeremiah's authorship and themes."
     startSeconds: 1818.829
 draft: false
 ---

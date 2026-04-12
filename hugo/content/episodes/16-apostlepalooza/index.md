@@ -39,10 +39,16 @@ segments:
   - Women in the Bible
 segmentData:
   - type: mcclellan-911
+    anchor: mcclellan-911-1
     label: McClellan 911
+    topicLabel: Apostle Names
+    summary: The names and identities of the twelve apostles.
     startSeconds: 122
   - type: women-in-the-bible
+    anchor: women-in-the-bible-1
     label: Women in the Bible
+    topicLabel: Junia
+    summary: "Romans 16 discusses Junia, potentially a woman apostle."
     startSeconds: 2449
 draft: false
 ---

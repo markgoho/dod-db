@@ -36,10 +36,16 @@ segments:
   - Artifacts and Fiction
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Allie Beth Stuckey
+    summary: "Analysis of Stuckey's interpretation of Matthew 25."
     startSeconds: 198.127
   - type: artifacts-and-fiction
+    anchor: artifacts-and-fiction-1
     label: Artifacts and Fiction
+    topicLabel: Elephantine
+    summary: Temple in Elephantine and associated papyri evidence
     startSeconds: 2007.601
 draft: false
 ---

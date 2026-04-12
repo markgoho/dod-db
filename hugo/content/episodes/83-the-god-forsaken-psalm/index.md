@@ -30,10 +30,16 @@ segments:
   - Artifacts and Fiction
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Ps 22
+    summary: "Discussion of authorship, translation, and lament form of Ps 22"
     startSeconds: 310
   - type: artifacts-and-fiction
+    anchor: artifacts-and-fiction-1
     label: Artifacts and Fiction
+    topicLabel: Garden Tomb
+    summary: The Garden Tomb is not the tomb of Jesus.
     startSeconds: 2204.465
 draft: false
 ---

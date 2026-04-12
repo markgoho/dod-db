@@ -22,6 +22,18 @@
           These tags were discovered by the LLM and need your review. Edit the
           details and approve or reject each tag.
         </p>
+        <div class="proposed-toolbar">
+          <label class="proposed-toolbar-label" for="proposed-category-filter">
+            Category
+          </label>
+          <select
+            id="proposed-category-filter"
+            class="proposed-toolbar-select"
+            aria-label="Filter proposed tags by category"
+          >
+            <option value="all">All categories</option>
+          </select>
+        </div>
         <div id="proposed-container">
           <div class="loading">Loading proposed tags...</div>
         </div>

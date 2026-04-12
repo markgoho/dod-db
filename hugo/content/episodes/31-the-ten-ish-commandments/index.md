@@ -49,10 +49,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: its-the-law
+    anchor: its-the-law-1
     label: "It's the Law"
+    topicLabel: Decalogue
+    summary: Different versions and interpretations of the Ten Commandments are discussed.
     startSeconds: 57
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Exod 20
+    summary: Discussion of interpretations of the Ten Commandments in Exodus 20.
     startSeconds: 2118
 draft: false
 ---

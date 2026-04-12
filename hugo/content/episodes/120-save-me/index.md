@@ -44,10 +44,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Salvation
+    summary: Salvation concept differences between Hebrew Bible and Greco-Roman period
     startSeconds: 182.486
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Isaiah 6
+    summary: "Isaiah's vision: God's robe, seraphim, and possible divine genitals."
     startSeconds: 2087.389
 draft: false
 ---

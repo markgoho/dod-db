@@ -40,10 +40,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Biblical literalism
+    summary: "History of biblical interpretation; Origen, Augustine, Sola Scriptura"
     startSeconds: 151.342
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Hebrew alphabet
+    summary: "History and interpretation of the Hebrew alphabet's letters."
     startSeconds: 2132
 draft: false
 ---

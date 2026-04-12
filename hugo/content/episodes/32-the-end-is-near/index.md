@@ -36,10 +36,16 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: ex-eventu
+    anchor: ex-eventu-1
     label: Ex Eventu
+    topicLabel: Second Coming
+    summary: The Second Coming of Jesus and Christian eschatology.
     startSeconds: 104
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Rapture
+    summary: "Explains the Rapture concept, origin, and interpretations."
     startSeconds: 1828
 draft: false
 ---

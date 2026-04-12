@@ -56,10 +56,16 @@ segments:
   - What is That?
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Acts 7
+    summary: "Stephen's speech discrepancies versus Hebrew Bible accounts"
     startSeconds: 212.612
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Star of Remphan
+    summary: "Acts 7, Amos 5, and the star god Remphan."
     startSeconds: 1757.989
 draft: false
 ---

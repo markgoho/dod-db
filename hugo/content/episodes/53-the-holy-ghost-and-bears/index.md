@@ -34,10 +34,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Holy Spirit
+    summary: Explains the Holy Spirit using human concepts of spirit.
     startSeconds: 80.634
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: 2 Kings 2
+    summary: "Elisha, bears, and the cursing of some small boys"
     startSeconds: 2117.21
 draft: false
 ---

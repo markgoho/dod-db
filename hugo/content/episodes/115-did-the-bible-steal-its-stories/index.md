@@ -40,10 +40,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Leviathan
+    summary: "Biblical stories' origins: stolen, shared heritage, or verbatim accounts?"
     startSeconds: 236.957
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Haggai 1
+    summary: "Rebuild the temple or face famine, says Haggai 1."
     startSeconds: 2185.863
 draft: false
 ---

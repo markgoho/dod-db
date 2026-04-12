@@ -56,23 +56,20 @@ export function formatSegmentsForFrontmatter(
   for (const segment of sorted) {
     const segmentType = segment.type as SegmentType;
     const label = SEGMENT_LABELS[segmentType];
-    const totalInstances = typeCounts.get(segment.type) ?? 1;
     const instanceNumber = (typeInstanceCounts.get(segment.type) ?? 0) + 1;
     typeInstanceCounts.set(segment.type, instanceNumber);
-
-    // Add index only if multiple instances exist
-    const displayLabel =
-      totalInstances > 1 ? `${label} (${instanceNumber})` : label;
 
     const startSeconds = parseTimestampToSeconds(segment.startTimestamp);
 
     segmentData.push({
       type: segment.type,
-      label: displayLabel,
+      anchor: `${segment.type}-${instanceNumber}`,
+      label,
+      topicLabel: segment.topicLabel,
+      summary: segment.summary,
       startSeconds,
     });
 
-    // Track unique segment names for taxonomy (without instance numbers)
     uniqueSegmentNames.add(label);
   }
 

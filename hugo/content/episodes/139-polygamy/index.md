@@ -47,10 +47,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Polygyny
+    summary: Biblical arguments for and against polygyny are critically examined.
     startSeconds: 130.685
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: 1 Kings 11
+    summary: "Solomon's marriages and worship of other gods discussed."
     startSeconds: 2279.665
 draft: false
 ---

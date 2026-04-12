@@ -38,10 +38,16 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: all-right-lets-see-it
+    anchor: all-right-lets-see-it-1
     label: "All Right, Let's See It"
+    topicLabel: John 1:1
+    summary: Analysis of John 1:1 and translation nuances regarding deity.
     startSeconds: 120.42
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Trinity
+    summary: Explaining the historical development and philosophical basis of the Trinity
     startSeconds: 2371
 draft: false
 ---

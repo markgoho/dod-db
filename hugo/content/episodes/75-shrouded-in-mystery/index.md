@@ -26,10 +26,16 @@ segments:
   - Artifacts and Fiction
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Exod 7
+    summary: "Plagues of Egypt; God hardening Pharaoh's heart"
     startSeconds: 223.986
   - type: artifacts-and-fiction
+    anchor: artifacts-and-fiction-1
     label: Artifacts and Fiction
+    topicLabel: Shroud of Turin
+    summary: Examining claims of authenticity for the Shroud of Turin
     startSeconds: 2224.442
 draft: false
 ---

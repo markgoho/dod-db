@@ -55,10 +55,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: is-it-canon
+    anchor: is-it-canon-1
     label: Is it Canon?
+    topicLabel: Jubilees
+    summary: "Book of Jubilees: canon, influence, content, and traditions"
     startSeconds: 104.325
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Cross-Reference Visualization
+    summary: Critique of Bible cross-reference chart and its contradictions.
     startSeconds: 1785.046
 draft: false
 ---

@@ -52,10 +52,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Baptism
+    summary: "The baptism of Jesus by John, its origins, significance"
     startSeconds: 122.647
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Deut 18
+    summary: "Rules for warfare, genocide, and treatment of conquered peoples"
     startSeconds: 2146
 draft: false
 ---

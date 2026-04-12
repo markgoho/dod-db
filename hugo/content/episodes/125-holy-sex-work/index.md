@@ -47,10 +47,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Cult Prostitution
+    summary: "Doug Wilson's comments on homosexuality and temple prostitutes"
     startSeconds: 88.184
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Psalms 151
+    summary: "Authorship, origin, and content of Ps 151 are discussed."
     startSeconds: 1870.881
 draft: false
 ---

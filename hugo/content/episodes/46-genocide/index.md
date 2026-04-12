@@ -54,7 +54,10 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Matt 21
+    summary: "Jesus rides two animals, fulfilling prophecy in Matthew."
     startSeconds: 2999.95
 draft: false
 ---

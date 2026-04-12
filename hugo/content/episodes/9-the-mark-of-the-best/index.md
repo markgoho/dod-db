@@ -29,10 +29,16 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: conspiracy-watch
+    anchor: conspiracy-watch-1
     label: Conspiracy Watch
+    topicLabel: "666"
+    summary: "Mark of the Beast conspiracies, including Bill Gates microchips."
     startSeconds: 191
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Prototype theory
+    summary: Conceptual categories are based on proximity to a prototype.
     startSeconds: 2120
 draft: false
 ---

@@ -42,10 +42,16 @@ segments:
   - "History's Mysteries"
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Judges 4-5
+    summary: "Deborah and Barak's story in Judges and its context"
     startSeconds: 182.319
   - type: historys-mysteries
+    anchor: historys-mysteries-1
     label: "History's Mysteries"
+    topicLabel: David
+    summary: "Historicity of David, Jonathan, and the Davidic dynasty."
     startSeconds: 2107.909
 draft: false
 ---

@@ -37,10 +37,16 @@ segments:
   - Above the Law
 segmentData:
   - type: above-the-law
-    label: Above the Law (1)
+    anchor: above-the-law-1
+    label: Above the Law
+    topicLabel: Covenant Code
+    summary: Examining the Covenant Code and its laws on slavery
     startSeconds: 205.176
   - type: above-the-law
-    label: Above the Law (2)
+    anchor: above-the-law-2
+    label: Above the Law
+    topicLabel: Book Banning
+    summary: "Bible's violence and sex content could violate banning laws"
     startSeconds: 2595.647
 draft: false
 ---

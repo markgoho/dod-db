@@ -42,10 +42,16 @@ segments:
   - What is That?
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Matt 5
+    summary: "Interpreting Jesus's statement about fulfilling the law."
     startSeconds: 203.895
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Esarhaddon
+    summary: Vassal Treaty of Esarhaddon parallels with Deuteronomy.
     startSeconds: 1982
 draft: false
 ---

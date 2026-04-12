@@ -39,10 +39,16 @@ segments:
   - Sorry Apologetics
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Isaiah 7:14
+    summary: Analysis of Isaiah 7:14 and its use in Matthew
     startSeconds: 265.903
   - type: sorry-apologetics
+    anchor: sorry-apologetics-1
     label: Sorry Apologetics
+    topicLabel: Luke Contra&shy;dic&shy;tions
+    summary: "Luke's birth narrative contradicts Matthew and itself."
     startSeconds: 2417.427
 draft: false
 ---

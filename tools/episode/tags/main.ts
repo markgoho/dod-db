@@ -6,7 +6,7 @@ import {
   getTagCategory,
   getTagVocabEntry,
   getVideoIdFromUrl,
-  reprocessAllEpisodes,
+  reprocessEpisodeTags,
   reprocessTag as reprocessTagShared,
   toggleDescriptionField,
   type Episode,
@@ -253,7 +253,10 @@ async function addTag(event: Event): Promise<void> {
 
 (globalThis as typeof globalThis & Window).reprocessEpisode =
   async function (): Promise<void> {
-    await reprocessAllEpisodes({
+    if (!videoId) return;
+
+    await reprocessEpisodeTags({
+      videoId,
       pollingConfig: {
         statusContainerSelector: "#reprocess-status",
         statusBadgeSelector: "#reprocess-status-badge",

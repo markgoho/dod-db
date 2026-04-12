@@ -24,7 +24,10 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Mark 12
+    summary: Paying taxes to Caesar and the separation of church/state
     startSeconds: 1644.572
 draft: false
 ---

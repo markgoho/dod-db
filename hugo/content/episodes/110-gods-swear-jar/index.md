@@ -43,10 +43,16 @@ segments:
   - Watch Your Language
 segmentData:
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Didache
+    summary: "Discussion of the Didache, its history and contents"
     startSeconds: 107.203
   - type: watch-your-language
+    anchor: watch-your-language-1
     label: Watch Your Language
+    topicLabel: Vulgarities
+    summary: Biblical Hebrew terms for sexual body parts/acts as vulgarities
     startSeconds: 2037.548
 draft: false
 ---

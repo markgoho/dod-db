@@ -47,7 +47,10 @@ segments:
   - Is it Canon?
 segmentData:
   - type: is-it-canon
+    anchor: is-it-canon-1
     label: Is it Canon?
+    topicLabel: Baruch
+    summary: "Book of Baruch's canonicity, dating, and historical inaccuracies."
     startSeconds: 120.424
 draft: false
 ---

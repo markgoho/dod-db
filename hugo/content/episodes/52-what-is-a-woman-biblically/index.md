@@ -39,10 +39,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: bible-vs-bible
+    anchor: bible-vs-bible-1
     label: Bible vs Bible
+    topicLabel: Goliath
+    summary: "Contradictory accounts of who killed Goliath: David or Elhanan?"
     startSeconds: 105.2
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: What is a Woman?
+    summary: Biblical perspective on defining woman; critiques Matt Walsh.
     startSeconds: 1148.451
 draft: false
 ---

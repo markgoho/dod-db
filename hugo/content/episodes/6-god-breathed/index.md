@@ -48,10 +48,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Univocality
+    summary: "The Bible doesn't have a single, unified voice or perspective."
     startSeconds: 177.1
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: 2 Tim 3:16
+    summary: "Authorship, translation, and interpretation of 2 Timothy 3:16"
     startSeconds: 1770
 draft: false
 ---

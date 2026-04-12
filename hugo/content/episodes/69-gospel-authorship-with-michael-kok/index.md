@@ -36,6 +36,12 @@ tags:
   - Moses
   - Trinity
   - Virgin Birth
+books:
+  - Acts
+  - John
+  - Luke
+  - Mark
+  - Matthew
 guests:
   - Michael Kok
 draft: false

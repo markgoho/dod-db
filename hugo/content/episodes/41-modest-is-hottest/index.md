@@ -49,10 +49,16 @@ segments:
   - Your Patriarchy and You
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Genesis 9:18-27
+    summary: "Noah's curse of Canaan; interpretation and translation issues"
     startSeconds: 134
   - type: your-patriarchy-and-you
+    anchor: your-patriarchy-and-you-1
     label: Your Patriarchy and You
+    topicLabel: Modest dress
+    summary: "Conservative women's calendar and scriptural interpretations of modesty."
     startSeconds: 1782
 draft: false
 ---

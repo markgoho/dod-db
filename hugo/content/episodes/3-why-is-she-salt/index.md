@@ -50,7 +50,10 @@ segments:
   - What Does That Mean?
 segmentData:
   - type: what-does-that-mean
+    anchor: what-does-that-mean-1
     label: What Does That Mean?
+    topicLabel: Provenance
+    summary: "Meaning of provenance, its importance to scholars, archaeologists"
     startSeconds: 75
 draft: false
 ---

@@ -39,10 +39,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: artifacts-and-fiction
+    anchor: artifacts-and-fiction-1
     label: Artifacts and Fiction
+    topicLabel: Ron Wyatt
+    summary: "Ron Wyatt's dubious archaeological claims are examined and debunked."
     startSeconds: 110.039
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Lk 10
+    summary: The Good Samaritan parable and who is my neighbor
     startSeconds: 2237.164
 draft: false
 ---

@@ -48,10 +48,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: creation-stories
+    anchor: creation-stories-1
     label: Creation Stories
+    topicLabel: Ex nihilo
+    summary: "Creation ex nihilo concept's presence in the Bible is examined."
     startSeconds: 194.206
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Bel and the Dragon
+    summary: "Daniel exposes priests faking idol's consumption of offerings."
     startSeconds: 1787.214
 draft: false
 ---

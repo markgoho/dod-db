@@ -38,10 +38,16 @@ segments:
   - "Who's That?"
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Ruth
+    summary: "Discussing the characters, setting, and interpretations of Ruth."
     startSeconds: 116.67
   - type: whos-that
+    anchor: whos-that-1
     label: "Who's That?"
+    topicLabel: Sennacherib
+    summary: "Sennacherib's invasion of Judah and siege of Jerusalem"
     startSeconds: 2357.242
 draft: false
 ---

@@ -33,10 +33,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Bible
+    summary: "There is no such thing as 'The Bible'."
     startSeconds: 120.186
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: DHS video
+    summary: Critique of DHS video using Beatitudes and violence.
     startSeconds: 1939.587
 draft: false
 ---

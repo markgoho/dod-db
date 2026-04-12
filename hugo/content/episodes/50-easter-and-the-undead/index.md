@@ -46,7 +46,10 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: John 12
+    summary: John 12 and the anointing before the triumphal entry.
     startSeconds: 231
 draft: false
 ---

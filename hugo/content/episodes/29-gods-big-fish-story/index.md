@@ -43,10 +43,16 @@ segments:
   - Nature of God
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: 2 Kings 14:25
+    summary: "Jonah's historicity and the dating of the Jonah story"
     startSeconds: 134
   - type: nature-of-god
+    anchor: nature-of-god-1
     label: Nature of God
+    topicLabel: "God's lies"
+    summary: "Does God lie? Genesis 2:17 examined; death didn't happen."
     startSeconds: 1955
 draft: false
 ---

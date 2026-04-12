@@ -34,10 +34,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: who-dat
+    anchor: who-dat-1
     label: Who Dat??
+    topicLabel: Jephthah
+    summary: "Jephthah's background, his gang, and the Ammonite conflict."
     startSeconds: 154.625
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Circumcision
+    summary: Biblical passages about circumcision are analyzed and debated.
     startSeconds: 2102.321
 draft: false
 ---

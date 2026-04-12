@@ -42,10 +42,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: thats-history
+    anchor: thats-history-1
     label: "That's History"
+    topicLabel: Exodus
+    summary: Examining historical evidence for the Exodus narrative in Egypt.
     startSeconds: 126
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Exod 22
+    summary: Interpretation of Exodus 22:29 regarding sacrificing firstborn sons.
     startSeconds: 2010
 draft: false
 ---

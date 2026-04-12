@@ -32,10 +32,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Slave Bible
+    summary: "The Slave Bible: its contents and modern interpretations"
     startSeconds: 157.086
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Wealth
+    summary: "Critique of pastor's interpretation of blessed are the poor"
     startSeconds: 2221.023
 draft: false
 ---

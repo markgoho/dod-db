@@ -34,10 +34,16 @@ segments:
   - Opportunities for Growth
 segmentData:
   - type: conspiracy-watch
+    anchor: conspiracy-watch-1
     label: Conspiracy Watch
+    topicLabel: Flat Earth
+    summary: Biblical basis for flat Earth conspiracy theories debunked.
     startSeconds: 163.175
   - type: opportunities-for-growth
+    anchor: opportunities-for-growth-1
     label: Opportunities for Growth
+    topicLabel: Triumphal Entry
+    summary: "Dan revises his interpretation of Matthew's triumphal entry."
     startSeconds: 1990.792
 draft: false
 ---

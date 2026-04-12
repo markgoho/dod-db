@@ -60,10 +60,16 @@ segments:
   - Getting Demonic
 segmentData:
   - type: getting-angelic
+    anchor: getting-angelic-1
     label: Getting Angelic
+    topicLabel: Angels
+    summary: Origins and evolution of angels in the Hebrew Bible
     startSeconds: 77
   - type: getting-demonic
+    anchor: getting-demonic-1
     label: Getting Demonic
+    topicLabel: Demons
+    summary: Deuteronomy 32:17 and the evolution of demonology.
     startSeconds: 1900
 draft: false
 ---

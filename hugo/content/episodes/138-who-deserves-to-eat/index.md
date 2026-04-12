@@ -27,10 +27,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: 2 Thessalonians 3
+    summary: Interpreting the verse about work and the right to eat.
     startSeconds: 143.364
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Hyksos
+    summary: The Hyksos are not evidence for enslaved Hebrews.
     startSeconds: 2109.328
 draft: false
 ---

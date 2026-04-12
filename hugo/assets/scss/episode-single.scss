@@ -120,24 +120,6 @@
   padding: var(--space-s);
 }
 
-.audio-player__header {
-  align-items: center;
-  display: flex;
-  gap: var(--space-xs);
-  justify-content: space-between;
-}
-
-.audio-player__title {
-  color: var(--color-text-muted);
-  font-family: var(--font-family-display);
-  font-size: var(--step--1);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-tight);
-  text-transform: uppercase;
-}
-
 .audio-player__speed {
   background: var(--tan-900);
   border: var(--border-width-sm) solid var(--tan-900);
@@ -149,9 +131,8 @@
   font-style: italic;
   font-weight: var(--font-weight-boldest);
   letter-spacing: var(--letter-spacing-heading);
-  min-inline-size: calc(var(--space-xl) + var(--space-s));
-  padding-block: var(--space-2xs);
-  padding-inline: var(--space-s);
+  padding-block: var(--space-3xs);
+  padding-inline: var(--space-2xs);
   text-transform: uppercase;
 }
 
@@ -171,12 +152,9 @@
   color: var(--color-text-main);
   cursor: pointer;
   display: inline-flex;
-  flex-direction: column;
   gap: var(--space-3xs);
-  inline-size: 100%;
   justify-content: center;
-  min-block-size: calc(var(--space-2xl) + var(--space-s));
-  padding-block: var(--space-xs);
+  padding-block: var(--space-2xs);
   padding-inline: var(--space-s);
 }
 
@@ -245,9 +223,8 @@
   border: var(--border-width-sm) solid var(--tan-900);
   display: grid;
   gap: var(--space-xs);
-  inline-size: 100%;
   min-inline-size: 0;
-  padding: var(--space-s);
+  padding: var(--space-2xs);
 }
 
 .audio-player__meta-row {
@@ -412,6 +389,7 @@
   font-size: var(--step-1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
+  hyphens: manual;
   letter-spacing: var(--letter-spacing-heading);
   text-transform: uppercase;
 }

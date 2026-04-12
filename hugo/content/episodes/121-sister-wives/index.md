@@ -40,10 +40,16 @@ segments:
   - What is That?
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Gen 12
+    summary: Abram lies about Sarai; Pharaoh takes her anyway.
     startSeconds: 100.029
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Teraphim
+    summary: "Exploring teraphim: divine images, their uses, and varied sizes"
     startSeconds: 2336.263
 draft: false
 ---

@@ -56,7 +56,10 @@ segments:
   - Left Behind
 segmentData:
   - type: left-behind
+    anchor: left-behind-1
     label: Left Behind
+    topicLabel: First Enoch
+    summary: "Discussing First Enoch's origins, content, and canonicity."
     startSeconds: 84.388
 draft: false
 ---

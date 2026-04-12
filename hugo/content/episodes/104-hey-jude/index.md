@@ -62,10 +62,16 @@ segments:
   - Taking Issue
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Jude
+    summary: "Authorship, date, and pseudepigraphic nature of the Epistle of Jude."
     startSeconds: 158.17
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Monotheism
+    summary: Debating if the Bible is truly monotheistic using Isaiah
     startSeconds: 2519.404
 draft: false
 ---

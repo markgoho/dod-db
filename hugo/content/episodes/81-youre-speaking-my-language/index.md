@@ -42,10 +42,16 @@ segments:
   - Watch Your Language
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Gen 11
+    summary: Tower of Babel story explains language diversity.
     startSeconds: 141.362
   - type: watch-your-language
+    anchor: watch-your-language-1
     label: Watch Your Language
+    topicLabel: Jesus
+    summary: "Magical power of Jesus's name and Bible Tea"
     startSeconds: 1712.598
 draft: false
 ---

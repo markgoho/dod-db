@@ -41,10 +41,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Gen 12
+    summary: "Ted Cruz, Tucker Carlson, and Genesis 12 are discussed."
     startSeconds: 133.979
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Psalms 82
+    summary: Interpretation of vengeance against Babylonians dashing children against rocks
     startSeconds: 1876.887
 draft: false
 ---

@@ -39,10 +39,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: all-right-lets-see-it
+    anchor: all-right-lets-see-it-1
     label: "All Right, Let's See It"
+    topicLabel: Euphrates River
+    summary: TikTok video claims about Euphrates River debunked.
     startSeconds: 124.78
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Gen 6
+    summary: Sons of God and human women producing Nephilim.
     startSeconds: 1286
 draft: false
 ---

@@ -39,10 +39,16 @@ segments:
   - What is That?
 segmentData:
   - type: taking-issue
+    anchor: taking-issue-1
     label: Taking Issue
+    topicLabel: Manuscript Attestation
+    summary: Critique of manuscript attestation claims regarding the New Testament
     startSeconds: 206.677
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Immaculate Conception
+    summary: "The Immaculate Conception refers to Mary's conception, not Jesus'."
     startSeconds: 2398.95
 draft: false
 ---

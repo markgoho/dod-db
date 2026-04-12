@@ -29,10 +29,16 @@ segments:
   - Bible vs Bible
 segmentData:
   - type: conspiracy-watch
+    anchor: conspiracy-watch-1
     label: Conspiracy Watch
+    topicLabel: Shaatnez
+    summary: The prohibition against mixing linen and wool is examined.
     startSeconds: 109.037
   - type: bible-vs-bible
+    anchor: bible-vs-bible-1
     label: Bible vs Bible
+    topicLabel: Joseph
+    summary: "Genesis 37 inconsistencies regarding Joseph's enslavement"
     startSeconds: 1737.039
 draft: false
 ---

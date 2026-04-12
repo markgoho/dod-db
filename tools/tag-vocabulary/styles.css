@@ -246,6 +246,22 @@ h2 {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.vocab-summary {
+  display: grid;
+  gap: 8px;
+}
+.vocab-edit-panel {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+.vocab-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
 .vocab-canonical {
   font-size: 18px;
   font-weight: 700;
@@ -603,6 +619,32 @@ h2 {
   display: block;
 }
 /* Proposed tags review styles */
+.proposed-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.proposed-toolbar-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+.proposed-toolbar-select {
+  min-width: 220px;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  background: white;
+}
+.proposed-toolbar-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
 .proposed-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

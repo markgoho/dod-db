@@ -54,6 +54,7 @@ function sortVocabularyNewestFirst(a: TagDefinition, b: TagDefinition): number {
 // Load and display vocabulary
 let allVocabulary: TagDefinition[] = [];
 let currentCategory = "all";
+let proposedCategory = "all";
 
 // Load available categories from API
 async function loadCategories(): Promise<void> {
@@ -112,21 +113,35 @@ function renderCategoryTabs(): void {
 
 // Populate category select dropdowns
 function populateCategorySelects(): void {
-  const selects = [document.querySelector("#tag-category")];
+  const tagCategorySelect = document.querySelector("#tag-category");
+  if (tagCategorySelect) {
+    tagCategorySelect.innerHTML = `
+      <option value="">Select a category...</option>
+      ${availableCategories
+        .map(
+          cat => `
+        <option value="${cat}">${CATEGORY_LABELS[cat] || cat.charAt(0).toUpperCase() + cat.slice(1)}</option>
+      `,
+        )
+        .join("")}
+    `;
+  }
 
-  for (const select of selects) {
-    if (select) {
-      select.innerHTML = `
-        <option value="">Select a category...</option>
-        ${availableCategories
-          .map(
-            cat => `
-          <option value="${cat}">${CATEGORY_LABELS[cat] || cat.charAt(0).toUpperCase() + cat.slice(1)}</option>
-        `,
-          )
-          .join("")}
-      `;
-    }
+  const proposedCategorySelect = document.querySelector(
+    "#proposed-category-filter",
+  ) as HTMLSelectElement | null;
+  if (proposedCategorySelect) {
+    proposedCategorySelect.innerHTML = `
+      <option value="all">All categories</option>
+      ${availableCategories
+        .map(
+          cat => `
+        <option value="${cat}">${CATEGORY_LABELS[cat] || cat.charAt(0).toUpperCase() + cat.slice(1)}</option>
+      `,
+        )
+        .join("")}
+    `;
+    proposedCategorySelect.value = proposedCategory;
   }
 }
 
@@ -194,57 +209,7 @@ function renderVocabulary(category: string): void {
 
   container.innerHTML = `
     <div class="vocab-grid">
-      ${filtered
-        .map(
-          term => `
-        <div class="vocab-card">
-          <div class="vocab-canonical">
-            ${term.canonical}
-            ${term.llmVerify ? '<span class="llm-verify-badge" title="Uses LLM verification for context">🤖 LLM</span>' : ""}
-            ${term.caseSensitive ? '<span class="case-sensitive-badge" title="Case-sensitive matching">Aa</span>' : ""}
-          </div>
-          <div class="vocab-variations">
-            ${term.variations.length > 0 ? `Variations: ${term.variations.join(", ")}` : "No variations"}
-          </div>
-          <div class="vocab-suggested-episode">
-            ${formatSuggestedEpisode(term.addedInEpisode)}
-          </div>
-          ${
-            term.description
-              ? `
-            <div class="vocab-description">
-              <strong>Context:</strong> ${term.description}
-            </div>
-          `
-              : ""
-          }
-          <div style="display: flex; align-items: center; gap: 8px; margin-top: 8px; flex-wrap: wrap;">
-            <span class="vocab-category-badge ${term.category}">
-              ${formatCategoryName(term.category)}
-            </span>
-            ${
-              term.status === "accepted" || !term.status
-                ? `
-              <button
-                class="vocab-reprocess-btn"
-                onclick="reprocessSingleTag('${term.canonical.replaceAll("'", String.raw`\'`)}')"
-                title="Reprocess all episodes for this tag${term.llmVerify ? " (uses LLM verification)" : ""}">
-                🔄 Reprocess
-              </button>
-              <button
-                class="vocab-delete-btn"
-                onclick="deleteTag('${term.canonical.replaceAll("'", String.raw`\'`)}')"
-                title="Delete this tag from vocabulary">
-                🗑️ Delete
-              </button>
-            `
-                : ""
-            }
-          </div>
-        </div>
-      `,
-        )
-        .join("")}
+      ${filtered.map((term, index) => renderAcceptedCard(term, index)).join("")}
     </div>
   `;
 }
@@ -272,6 +237,133 @@ function getCategoryOptions(selectedCategory: string): string {
         </option>`,
     )
     .join("");
+}
+
+function renderAcceptedCard(term: TagDefinition, index: number): string {
+  const variationsString = term.variations.join(", ");
+  const escapedCanonical = escapeHtml(term.canonical);
+  const isLlmVerify = term.llmVerify === true;
+  const description = term.description || "";
+
+  return `
+    <div class="vocab-card" id="accepted-card-${index}" data-original="${escapedCanonical}">
+      <div class="vocab-summary">
+        <div class="vocab-canonical">
+          ${escapedCanonical}
+          ${term.llmVerify ? '<span class="llm-verify-badge" title="Uses LLM verification for context">🤖 LLM</span>' : ""}
+          ${term.caseSensitive ? '<span class="case-sensitive-badge" title="Case-sensitive matching">Aa</span>' : ""}
+        </div>
+        <div class="vocab-variations">
+          ${term.variations.length > 0 ? `Variations: ${term.variations.join(", ")}` : "No variations"}
+        </div>
+        <div class="vocab-suggested-episode">
+          ${formatSuggestedEpisode(term.addedInEpisode)}
+        </div>
+        ${
+          term.description
+            ? `
+          <div class="vocab-description">
+            <strong>Context:</strong> ${escapeHtml(term.description)}
+          </div>
+        `
+            : ""
+        }
+      </div>
+      <div class="vocab-edit-panel" id="accepted-edit-panel-${index}" hidden>
+        <div class="proposed-form">
+          <div class="proposed-row">
+            <label class="proposed-label">Canonical:</label>
+            <input type="text" class="proposed-input" id="accepted-canonical-${index}"
+                   value="${escapedCanonical}" />
+          </div>
+          <div class="proposed-row">
+            <label class="proposed-label">Variations:</label>
+            <input type="text" class="proposed-input" id="accepted-variations-${index}"
+                   value="${escapeHtml(variationsString)}"
+                   placeholder="Comma-separated variations" />
+          </div>
+          <div class="proposed-row">
+            <label class="proposed-label">Category:</label>
+            <select class="proposed-select" id="accepted-category-${index}">
+              ${getCategoryOptions(term.category)}
+            </select>
+          </div>
+          <div class="proposed-checkbox-row">
+            <input type="checkbox" class="proposed-checkbox" id="accepted-llmVerify-${index}"
+                   ${isLlmVerify ? "checked" : ""}
+                   onchange="toggleAcceptedDescription(${index})" />
+            <label class="proposed-checkbox-label" for="accepted-llmVerify-${index}">
+              Use LLM context verification
+            </label>
+          </div>
+          <div class="proposed-hint">
+            For ambiguous names (like "David" or "John"), use AI to verify each match based on context
+          </div>
+          <div class="proposed-checkbox-row">
+            <input type="checkbox" class="proposed-checkbox" id="accepted-caseSensitive-${index}"
+                   ${term.caseSensitive ? "checked" : ""} />
+            <label class="proposed-checkbox-label" for="accepted-caseSensitive-${index}">
+              Case-sensitive matching
+            </label>
+          </div>
+          <div class="proposed-hint">
+            Match only exact case (e.g., "Lot" won't match "lot"). Use for words that are also common English words.
+          </div>
+          <div class="proposed-description-group" id="accepted-description-group-${index}">
+            <div class="proposed-row">
+              <label class="proposed-label">Description<span class="proposed-required" id="accepted-required-${index}">${isLlmVerify ? " *" : ""}</span>:</label>
+              <textarea class="proposed-textarea" id="accepted-description-${index}" rows="3"
+                        placeholder="e.g., King David of Israel, second king, son of Jesse, defeated Goliath"
+              >${escapeHtml(description)}</textarea>
+            </div>
+            <div class="proposed-hint">
+              Brief description to help AI identify correct matches (required when using LLM verification)
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vocab-card-actions">
+        <span class="vocab-category-badge ${term.category}">
+          ${formatCategoryName(term.category)}
+        </span>
+        <button
+          class="vocab-reprocess-btn"
+          onclick="toggleAcceptedEdit(${index})"
+          id="accepted-edit-btn-${index}"
+          title="Edit this tag">
+          Edit
+        </button>
+        <button
+          class="vocab-reprocess-btn"
+          onclick="saveTag(${index})"
+          id="accepted-save-btn-${index}"
+          title="Save changes to this tag"
+          hidden>
+          Save
+        </button>
+        <button
+          class="vocab-reprocess-btn"
+          onclick="cancelTagEdit(${index})"
+          id="accepted-cancel-btn-${index}"
+          title="Hide tag editor"
+          hidden>
+          Cancel
+        </button>
+        <button
+          class="vocab-reprocess-btn"
+          onclick="reprocessSingleTag('${term.canonical.replaceAll("'", String.raw`\'`)}')"
+          title="Reprocess all episodes for this tag${term.llmVerify ? " (uses LLM verification)" : ""}">
+          🔄 Reprocess
+        </button>
+        <button
+          class="vocab-delete-btn"
+          onclick="deleteTag('${term.canonical.replaceAll("'", String.raw`\'`)}')"
+          title="Delete this tag from vocabulary">
+          🗑️ Delete
+        </button>
+      </div>
+    </div>
+  `;
 }
 
 interface TagStats {
@@ -637,9 +729,24 @@ function renderProposedTags(): void {
 
   section.style.display = "block";
 
+  const filteredTags =
+    proposedCategory === "all"
+      ? proposedTags
+      : proposedTags.filter(tag => tag.category === proposedCategory);
+
+  if (filteredTags.length === 0) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-state-icon">📭</div>
+        <div class="empty-state-text">No proposed tags in this category</div>
+      </div>
+    `;
+    return;
+  }
+
   container.innerHTML = `
     <div class="proposed-grid">
-      ${proposedTags.map((tag, index) => renderProposedCard(tag, index)).join("")}
+      ${filteredTags.map(tag => renderProposedCard(tag, proposedTags.indexOf(tag))).join("")}
     </div>
   `;
 }
@@ -761,6 +868,154 @@ function toggleProposedDescription(index: number): void {
   if (!requiredMarker) return;
 
   requiredMarker.textContent = llmVerify ? " *" : "";
+}
+
+function toggleAcceptedDescription(index: number): void {
+  const llmVerify = (
+    document.querySelector(`#accepted-llmVerify-${index}`) as HTMLInputElement
+  ).checked;
+  const requiredMarker = document.querySelector(`#accepted-required-${index}`);
+
+  if (!requiredMarker) return;
+
+  requiredMarker.textContent = llmVerify ? " *" : "";
+}
+
+function toggleAcceptedEdit(index: number): void {
+  const editPanel = document.querySelector(
+    `#accepted-edit-panel-${index}`,
+  ) as HTMLElement | null;
+  const editButton = document.querySelector(
+    `#accepted-edit-btn-${index}`,
+  ) as HTMLButtonElement | null;
+  const saveButton = document.querySelector(
+    `#accepted-save-btn-${index}`,
+  ) as HTMLButtonElement | null;
+  const cancelButton = document.querySelector(
+    `#accepted-cancel-btn-${index}`,
+  ) as HTMLButtonElement | null;
+
+  if (!editPanel || !editButton || !saveButton || !cancelButton) return;
+
+  const isOpen = !editPanel.hidden;
+  editPanel.hidden = isOpen;
+  editButton.hidden = !isOpen;
+  saveButton.hidden = isOpen;
+  cancelButton.hidden = isOpen;
+}
+
+function cancelTagEdit(index: number): void {
+  const editPanel = document.querySelector(
+    `#accepted-edit-panel-${index}`,
+  ) as HTMLElement | null;
+  const editButton = document.querySelector(
+    `#accepted-edit-btn-${index}`,
+  ) as HTMLButtonElement | null;
+  const saveButton = document.querySelector(
+    `#accepted-save-btn-${index}`,
+  ) as HTMLButtonElement | null;
+  const cancelButton = document.querySelector(
+    `#accepted-cancel-btn-${index}`,
+  ) as HTMLButtonElement | null;
+
+  if (!editPanel || !editButton || !saveButton || !cancelButton) return;
+
+  editPanel.hidden = true;
+  editButton.hidden = false;
+  saveButton.hidden = true;
+  cancelButton.hidden = true;
+}
+
+async function saveTag(index: number): Promise<void> {
+  const card = document.querySelector(`#accepted-card-${index}`) as HTMLElement;
+  if (!card) return;
+
+  const originalCanonical = card.dataset.original;
+  if (!originalCanonical) return;
+
+  const newCanonical = (
+    document.querySelector(`#accepted-canonical-${index}`) as HTMLInputElement
+  ).value.trim();
+  const variationsInput = (
+    document.querySelector(`#accepted-variations-${index}`) as HTMLInputElement
+  ).value.trim();
+  const category = (
+    document.querySelector(`#accepted-category-${index}`) as HTMLSelectElement
+  ).value;
+  const llmVerify = (
+    document.querySelector(`#accepted-llmVerify-${index}`) as HTMLInputElement
+  ).checked;
+  const caseSensitive = (
+    document.querySelector(
+      `#accepted-caseSensitive-${index}`,
+    ) as HTMLInputElement
+  ).checked;
+  const description = (
+    document.querySelector(
+      `#accepted-description-${index}`,
+    ) as HTMLTextAreaElement
+  ).value.trim();
+
+  if (llmVerify && !description) {
+    alert("Description is required when using LLM verification");
+    return;
+  }
+
+  const variations = variationsInput
+    ? variationsInput
+        .split(",")
+        .map(v => v.trim())
+        .filter(v => v.length > 0)
+    : [];
+
+  card.classList.add("saving");
+
+  try {
+    const response = await fetch(
+      `${API_BASE_URL}/api/tag-vocabulary/vocabulary/update/${encodeURIComponent(originalCanonical)}`,
+      {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          canonical: newCanonical,
+          variations,
+          category,
+          llmVerify,
+          caseSensitive,
+          description: description || undefined,
+        }),
+      },
+    );
+
+    if (!response.ok) {
+      const error = await response.json();
+      throw new Error(error.error || "Failed to save tag");
+    }
+
+    const statusContainer = document.querySelector("#migration-status");
+    const statusBadge = document.querySelector("#migration-status-badge");
+    const logsContainer = document.querySelector("#migration-logs");
+
+    if (statusContainer && statusBadge && logsContainer) {
+      statusContainer.classList.add("show");
+      statusBadge.textContent = "✓ Tag Saved";
+      statusBadge.className = "status-badge completed";
+      logsContainer.textContent = `Saved changes to "${newCanonical}".`;
+
+      setTimeout(() => {
+        statusContainer.classList.remove("show");
+      }, 3000);
+    }
+
+    cancelTagEdit(index);
+    loadVocabulary();
+    loadAnalytics();
+  } catch (error) {
+    alert(
+      `Error saving tag: ${error instanceof Error ? error.message : "Unknown error"}`,
+    );
+    card.classList.remove("saving");
+  }
 }
 
 // Approve a proposed tag
@@ -1060,6 +1315,14 @@ async function rejectTag(index: number): Promise<void> {
   }
 }
 
+const proposedCategoryFilter = document.querySelector(
+  "#proposed-category-filter",
+) as HTMLSelectElement | null;
+proposedCategoryFilter?.addEventListener("change", event => {
+  proposedCategory = (event.target as HTMLSelectElement).value;
+  renderProposedTags();
+});
+
 // Initialize on page load
 (async () => {
   await loadCategories(); // Load categories first
@@ -1079,6 +1342,10 @@ declare global {
     validateForm: typeof validateForm;
     addTag: typeof addTag;
     toggleProposedDescription: typeof toggleProposedDescription;
+    toggleAcceptedDescription: typeof toggleAcceptedDescription;
+    toggleAcceptedEdit: typeof toggleAcceptedEdit;
+    cancelTagEdit: typeof cancelTagEdit;
+    saveTag: typeof saveTag;
     approveTag: typeof approveTag;
     dismissTag: typeof dismissTag;
     mergeTag: typeof mergeTag;
@@ -1096,6 +1363,11 @@ declare global {
 (globalThis as unknown as Window).addTag = addTag;
 (globalThis as unknown as Window).toggleProposedDescription =
   toggleProposedDescription;
+(globalThis as unknown as Window).toggleAcceptedDescription =
+  toggleAcceptedDescription;
+(globalThis as unknown as Window).toggleAcceptedEdit = toggleAcceptedEdit;
+(globalThis as unknown as Window).cancelTagEdit = cancelTagEdit;
+(globalThis as unknown as Window).saveTag = saveTag;
 (globalThis as unknown as Window).approveTag = approveTag;
 (globalThis as unknown as Window).dismissTag = dismissTag;
 (globalThis as unknown as Window).mergeTag = mergeTag;

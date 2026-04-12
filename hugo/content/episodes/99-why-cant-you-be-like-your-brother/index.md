@@ -56,10 +56,16 @@ segments:
   - What is That?
 segmentData:
   - type: who-dat
+    anchor: who-dat-1
     label: Who Dat??
+    topicLabel: James
+    summary: "James, brother of Jesus; Mary's virginity; sibling disambiguation"
     startSeconds: 118.547
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Masoretic Text
+    summary: Explanation of the Masoretic Text and the Masoretes.
     startSeconds: 2010.98
 draft: false
 ---

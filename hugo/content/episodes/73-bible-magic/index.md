@@ -47,7 +47,10 @@ segments:
   - Magical Thinking
 segmentData:
   - type: magical-thinking
+    anchor: magical-thinking-1
     label: Magical Thinking
+    topicLabel: Urim and Thummim
+    summary: "Divination tools for discerning God's will: Urim and Thummim"
     startSeconds: 161.006
 draft: false
 ---

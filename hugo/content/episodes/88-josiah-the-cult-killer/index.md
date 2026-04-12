@@ -36,10 +36,16 @@ segments:
   - Artifacts and Fiction
 segmentData:
   - type: bible-heroes
+    anchor: bible-heroes-1
     label: Bible Heroes?
+    topicLabel: Josiah
+    summary: "King Josiah's reforms and their historical context"
     startSeconds: 103.574
   - type: artifacts-and-fiction
+    anchor: artifacts-and-fiction-1
     label: Artifacts and Fiction
+    topicLabel: Temples
+    summary: Discovery of temples predating and outside the Jerusalem Temple.
     startSeconds: 2286.38
 draft: false
 ---

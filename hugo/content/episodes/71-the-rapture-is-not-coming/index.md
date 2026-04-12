@@ -44,10 +44,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: eschatological
+    anchor: eschatological-1
     label: Eschatological
+    topicLabel: Rapture
+    summary: Discussing the concept of the Rapture and its origins
     startSeconds: 190.911
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Dan 7
+    summary: "Daniel's vision and the Prince of Persia angel"
     startSeconds: 2034.836
 draft: false
 ---

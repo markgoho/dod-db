@@ -25,7 +25,10 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Ezek 13
+    summary: Ezekiel 13 discusses women hunting dream souls for ransom.
     startSeconds: 2521.614
 draft: false
 ---

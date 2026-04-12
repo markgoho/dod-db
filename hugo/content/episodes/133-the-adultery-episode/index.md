@@ -57,10 +57,16 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: its-the-law
+    anchor: its-the-law-1
     label: "It's the Law"
+    topicLabel: Adultery
+    summary: Adultery as property rights violation; unequal treatment of women.
     startSeconds: 222.985
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
+    topicLabel: Hosea 1:2
+    summary: Hosea told to marry a wife of prostitution.
     startSeconds: 2069.079
 draft: false
 ---

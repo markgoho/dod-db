@@ -44,10 +44,16 @@ segments:
   - What is That?
 segmentData:
   - type: historys-heresies
+    anchor: historys-heresies-1
     label: "History's Heresies"
+    topicLabel: Gnosticism
+    summary: "History and beliefs of Gnosticism, various branches, Nag Hammadi"
     startSeconds: 113.626
   - type: what-is-that
+    anchor: what-is-that-1
     label: What is That?
+    topicLabel: Codex Sinaiticus
+    summary: Discussion of the codex form and Codex Sinaiticus.
     startSeconds: 2003.472
 draft: false
 ---

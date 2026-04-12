@@ -110,7 +110,7 @@ export const scriptureBooks: BookDefinition[] = [
   },
   {
     canonical: "2 Kings",
-    abbreviations: ["2 Kgs", "2Kgs", "2Ki", "2K"],
+    abbreviations: ["2 Kgs", "2Kgs", "2 Ki", "2Ki", "2K"],
     variants: ["2nd Kings", "Second Kings", "II Kings", "II Kgs"],
     testament: "old",
   },
