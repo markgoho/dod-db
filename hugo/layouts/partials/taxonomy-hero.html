@@ -6,6 +6,7 @@
 {{- $definition := .definition | default "" -}}
 {{- $category := .category | default "" -}}
 
+
 <header class="page-hero{{ with $heroClass }} {{ . }}{{ end }}">
   <a href="{{ $backHref }}" class="button-brutalist page-hero__back"
     >&larr; {{ $backLabel }}</a
@@ -15,27 +16,31 @@
   </div>
   <h1 class="page-hero__title">{{ $page.Title }}</h1>
   {{- with $definition }}
-  <p class="tag-hero__dek">{{ . }}</p>
+    <p class="tag-hero__dek">{{ . }}</p>
   {{- end }}
   {{- if $category }}
-  <div class="tag-hero__meta-row">
-    <div class="page-hero__meta panel panel--muted">
-      <span class="stat-display__label type-eyebrow">Classification</span>
-      <span class="tag-hero__classification-value">{{ $category }}</span>
+    <div class="tag-hero__meta-row">
+      <div class="page-hero__meta panel panel--muted">
+        <span class="stat-display__label type-eyebrow">Classification</span>
+        <span class="tag-hero__classification-value">{{ $category }}</span>
+      </div>
+      <div class="page-hero__meta panel">
+        <span class="stat-display__number">{{ len $page.Pages }}</span>
+        <span class="stat-display__label"
+          >{{ if eq (len $page.Pages) 1 }}
+            Episode
+          {{ else }}
+            Episodes
+          {{ end }}</span
+        >
+      </div>
     </div>
+  {{- else }}
     <div class="page-hero__meta panel">
       <span class="stat-display__number">{{ len $page.Pages }}</span>
       <span class="stat-display__label"
         >{{ if eq (len $page.Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
       >
     </div>
-  </div>
-  {{- else }}
-  <div class="page-hero__meta panel">
-    <span class="stat-display__number">{{ len $page.Pages }}</span>
-    <span class="stat-display__label"
-      >{{ if eq (len $page.Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
-    >
-  </div>
   {{- end }}
 </header>
