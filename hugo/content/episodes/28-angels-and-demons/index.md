@@ -19,7 +19,6 @@ tags:
   - Daniel
   - Michael
   - divine council
-  - Lot
   - Mary Magdalene
   - Moses
   - Persia

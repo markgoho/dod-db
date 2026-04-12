@@ -8,8 +8,6 @@ aliases:
 tags:
   - Judah
   - King David
-  - Judeans
-  - Julius Wellhausen
   - YHWH
   - Jacob
   - Jerusalem

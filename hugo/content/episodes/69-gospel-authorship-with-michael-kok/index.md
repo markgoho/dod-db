@@ -28,6 +28,7 @@ tags:
   - Tertullian
   - Theophilus
   - Abraham
+  - Clement of Alexandria
   - Easter
   - Gnostic
   - King David

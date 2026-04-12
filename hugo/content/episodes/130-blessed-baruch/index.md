@@ -8,7 +8,6 @@ aliases:
 tags:
   - Jeremiah
   - Baruch
-  - Paul
   - Septuagint
   - Judaism
   - Babylon
@@ -22,6 +21,7 @@ tags:
   - Daniel
   - Latin Vulgate
   - Jehoiakim
+  - Paul
   - Christian Nationalism
   - Flavius Josephus
   - Jacob

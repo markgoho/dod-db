@@ -9,6 +9,7 @@ tags:
   - Didache
   - Paul
   - Judaism
+  - Clement of Alexandria
   - Egyptians
   - Jeroboam
   - baptism
@@ -25,7 +26,6 @@ tags:
   - Clement of Rome
   - Flavius Josephus
   - John
-  - Judeans
   - King David
   - Ten Commandments
   - Univocality

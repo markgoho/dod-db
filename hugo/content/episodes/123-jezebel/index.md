@@ -17,7 +17,6 @@ tags:
   - Mary Magdalene
   - King Josiah
   - Daniel
-  - Judeans
   - Maccabees
   - Second Temple period
   - Essenes

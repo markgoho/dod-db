@@ -18,7 +18,6 @@ tags:
   - Cyrus the Great
   - Isaiah
   - Judaism
-  - Judeans
   - Latin Vulgate
   - Matthew
   - YHWH

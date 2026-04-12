@@ -37,7 +37,6 @@ tags:
   - Joshua
   - Judaism
   - Latin Vulgate
-  - Lot
   - Matthew
   - Moab
   - Samaria

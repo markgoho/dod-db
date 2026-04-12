@@ -17,7 +17,6 @@ tags:
   - Laban
   - Jacob
   - Judah
-  - Lot
   - Canaan
   - King Saul
   - Rebekah

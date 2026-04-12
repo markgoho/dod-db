@@ -23,7 +23,6 @@ tags:
   - Jennifer Bird
   - Jerusalem
   - King James Version
-  - Lot
   - Moab
   - Mount Sinai
   - Passover

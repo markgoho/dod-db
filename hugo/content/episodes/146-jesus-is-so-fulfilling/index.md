@@ -15,7 +15,6 @@ tags:
   - King Sennacherib
   - Ashurbanipal
   - Eschatology
-  - Lachish
   - Moses
   - circumcision
   - Essenes

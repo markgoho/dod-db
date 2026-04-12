@@ -27,7 +27,6 @@ tags:
   - Jericho
   - Jerusalem
   - Joshua
-  - Judeans
   - Moses
   - Paul
   - Philistines

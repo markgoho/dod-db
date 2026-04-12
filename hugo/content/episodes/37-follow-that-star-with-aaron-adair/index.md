@@ -29,7 +29,6 @@ tags:
   - King James Version
   - Mary Magdalene
   - Nephilim
-  - Paul
   - Peter
   - Satan
 books:

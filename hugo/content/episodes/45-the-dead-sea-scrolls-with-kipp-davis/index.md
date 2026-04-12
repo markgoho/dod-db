@@ -16,11 +16,9 @@ tags:
   - Masoretic Text
   - Nebuchadnezzar
   - Jeremiah
-  - Nabonidus
   - Dead Sea
   - Jerusalem
   - Leningrad Codex
-  - Masada
   - Essenes
   - Gilead
   - Moses
@@ -38,7 +36,6 @@ tags:
   - Esther
   - inerrancy
   - Jacob
-  - Judeans
   - King Saul
   - Mount Ebal
   - Peter

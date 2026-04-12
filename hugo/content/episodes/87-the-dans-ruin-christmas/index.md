@@ -12,10 +12,10 @@ tags:
   - Jerusalem
   - King David
   - John the Baptist
-  - Paul
   - Septuagint
   - Gabriel
   - Gospel of James
+  - Paul
   - Galilee
   - Elizabeth
   - Herod the Great

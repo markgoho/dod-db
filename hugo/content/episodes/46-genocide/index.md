@@ -13,7 +13,6 @@ tags:
   - Deuteronomy
   - Jericho
   - Judah
-  - Lot
   - Abraham
   - Canaan
   - Jerusalem
@@ -28,7 +27,6 @@ tags:
   - Gaza
   - Judaism
   - Judas Iscariot
-  - Megiddo
   - Moab
   - Origen
   - Balaam

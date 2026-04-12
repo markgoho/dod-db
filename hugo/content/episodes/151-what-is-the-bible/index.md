@@ -18,10 +18,10 @@ tags:
   - Luke
   - Martin Luther
   - Moses
-  - Paul
   - Bel and the Dragon
   - Leningrad Codex
   - Masoretic Text
+  - Paul
   - Romans
   - Samaritans
   - Univocality

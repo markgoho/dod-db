@@ -20,9 +20,7 @@ tags:
   - Deutero-Isaiah
   - inerrancy
   - Isaiah
-  - Judeans
   - King Saul
-  - Lot
   - Nebuchadnezzar
   - Peter
   - Romans

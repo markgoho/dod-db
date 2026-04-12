@@ -21,8 +21,6 @@ tags:
   - Assyria
   - Aaron
   - Arad
-  - Judeans
-  - Lachish
   - Babylon
   - Bethlehem
   - Christian Nationalism

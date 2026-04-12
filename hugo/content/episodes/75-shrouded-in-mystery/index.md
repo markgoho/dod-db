@@ -17,7 +17,6 @@ tags:
   - Ten Commandments
   - Canaan
   - Elephantine
-  - Masada
 books:
   - Exodus
   - Genesis

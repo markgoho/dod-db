@@ -12,7 +12,6 @@ tags:
   - Boaz
   - Judah
   - Jerusalem
-  - Lachish
   - Moab
   - Tamar
   - Assyria
@@ -29,7 +28,6 @@ tags:
   - King James Version
   - Leah
   - Mary Magdalene
-  - Paul
   - Peter
   - Rachel
 books:

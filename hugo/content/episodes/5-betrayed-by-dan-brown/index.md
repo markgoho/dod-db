@@ -24,7 +24,6 @@ tags:
   - Hypostasis
   - Justin Martyr
   - Monotheism
-  - Paul
   - Romans
   - Virgin Birth
 books:

@@ -29,7 +29,6 @@ tags:
   - Joshua
   - Judaism
   - King David
-  - Lachish
   - Nineveh
   - Terah
 books:

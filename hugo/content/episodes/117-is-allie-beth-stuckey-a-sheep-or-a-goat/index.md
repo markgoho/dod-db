@@ -23,7 +23,6 @@ tags:
   - Hell
   - inerrancy
   - Judaism
-  - Judeans
   - King Josiah
   - Monotheism
   - Moses

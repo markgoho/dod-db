@@ -21,7 +21,6 @@ tags:
   - Flood
   - Holy Spirit
   - Isaac
-  - Paul
   - Southern Baptist Convention
   - Univocality
 books:

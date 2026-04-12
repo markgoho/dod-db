@@ -11,9 +11,9 @@ tags:
   - Bethany
   - Sea of Galilee
   - Flavius Josephus
-  - Paul
   - Eusebius
   - Gospel of Thomas
+  - Paul
   - Tertullian
   - King James Version
   - source criticism

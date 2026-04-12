@@ -6,8 +6,8 @@ videoId: irflmh20e8Y
 aliases:
   - /episodes/60/
 tags:
-  - Paul
   - Priscilla
+  - Paul
   - Aquila
   - Moses
   - Eve

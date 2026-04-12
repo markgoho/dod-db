@@ -27,7 +27,6 @@ tags:
   - Satan
   - Isaac
   - Jacob
-  - Judeans
   - Septuagint
   - Seth
   - Antiochus IV Epiphanes

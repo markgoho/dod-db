@@ -17,9 +17,9 @@ tags:
   - Deutero-Isaiah
   - Deuteronomy
   - Moses
-  - Paul
   - Baal
   - Eschatology
+  - Paul
   - Adam
   - Judah
   - YHWH

@@ -20,6 +20,7 @@ tags:
   - Judas Iscariot
   - Matthew
   - Papias of Hierapolis
+  - Clement of Alexandria
   - James
   - King David
   - Philip
@@ -47,7 +48,6 @@ tags:
   - Irenaeus
   - John of Patmos
   - Judah
-  - Lachish
   - Nero
   - Tertullian
   - Thaddeus

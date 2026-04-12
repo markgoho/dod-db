@@ -28,7 +28,6 @@ tags:
   - Edom
   - Judaism
   - Ketef Hinnom
-  - Lachish
   - Mary Magdalene
   - Ten Commandments
 books:

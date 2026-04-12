@@ -18,7 +18,6 @@ tags:
   - Abraham
   - Hermeneia
   - Judaism
-  - Lot
   - Sukkot
   - Eve
   - Satan

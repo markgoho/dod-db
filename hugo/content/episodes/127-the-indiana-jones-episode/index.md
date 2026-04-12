@@ -16,7 +16,6 @@ tags:
   - Asherah
   - Jeremiah
   - Jericho
-  - Megiddo
   - Moses
   - Passover
   - Babylon

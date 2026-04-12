@@ -20,7 +20,6 @@ tags:
   - Essenes
   - Gentiles
   - Hell
-  - Judeans
   - Maccabees
   - Qumran
   - Talmud

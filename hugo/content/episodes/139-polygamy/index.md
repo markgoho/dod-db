@@ -9,8 +9,8 @@ tags:
   - Solomon
   - King David
   - Jeroboam
-  - Paul
   - Rehoboam
+  - Paul
   - Molek
   - Jerusalem
   - Judaism

@@ -6,7 +6,6 @@ videoId: ymMm0ICgBmc
 aliases:
   - /episodes/38/
 tags:
-  - Judeans
   - Bethlehem
   - Jerusalem
   - Persia

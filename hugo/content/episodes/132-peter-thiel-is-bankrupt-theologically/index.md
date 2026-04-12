@@ -9,8 +9,8 @@ tags:
   - Peter
   - Molek
   - Judaism
-  - Paul
   - Eschatology
+  - Paul
   - Capernaum
   - King David
   - King James Version

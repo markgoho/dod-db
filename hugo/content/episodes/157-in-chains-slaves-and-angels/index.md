@@ -21,7 +21,6 @@ tags:
   - YHWH
   - Gabriel
   - Garden of Eden
-  - Lot
   - Peter
   - Dead Sea Scrolls
   - Euphrates

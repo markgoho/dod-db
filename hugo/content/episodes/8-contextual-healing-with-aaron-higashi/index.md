@@ -6,12 +6,10 @@ videoId: YyN1w9PYjS4
 aliases:
   - /episodes/8/
 tags:
-  - Judeans
   - Africa
   - Hell
   - Jerusalem
   - Midianites
-  - Paul
   - Second Temple period
   - source criticism
   - Trinity

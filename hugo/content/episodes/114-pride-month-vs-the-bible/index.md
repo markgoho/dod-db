@@ -9,7 +9,6 @@ tags:
   - Sodom
   - Paul
   - Hell
-  - Lot
   - Romans
   - YHWH
   - Ammonites

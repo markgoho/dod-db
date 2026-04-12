@@ -16,12 +16,12 @@ tags:
   - Peter
   - Romans
   - Junia
-  - Paul
   - Univocality
   - Bethlehem
   - Hell
   - Judaism
   - Mary Magdalene
+  - Paul
 books:
   - Genesis
   - 2 Samuel

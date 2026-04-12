@@ -30,7 +30,6 @@ tags:
   - Gilead
   - Irenaeus
   - Jeremiah
-  - Judeans
   - Tertullian
   - theophany
 books:

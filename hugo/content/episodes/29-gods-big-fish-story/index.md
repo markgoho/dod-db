@@ -22,7 +22,6 @@ tags:
   - Hezekiah
   - Jacob
   - King James Version
-  - Lachish
   - Satan
   - Univocality
   - inerrancy
@@ -30,7 +29,6 @@ tags:
   - Sukkot
   - Abraham
   - Cherubim
-  - Judeans
   - Peter
   - Saint Titus
 books:

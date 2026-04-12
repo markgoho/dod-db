@@ -13,7 +13,6 @@ tags:
   - Judaism
   - Qumran
   - Jerome
-  - Judeans
   - Moses
   - YHWH
   - Deuteronomy

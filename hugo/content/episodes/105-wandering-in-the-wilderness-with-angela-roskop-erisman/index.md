@@ -18,7 +18,6 @@ tags:
   - divine council
   - Isaiah
   - Joshua
-  - Judeans
   - King Sennacherib
   - Philo of Alexandria
   - Babylon

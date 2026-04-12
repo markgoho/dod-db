@@ -11,7 +11,6 @@ tags:
   - Constantine
   - Mary Magdalene
   - Satan
-  - Paul
   - Arius
   - baptism
   - John the Baptist
@@ -23,6 +22,7 @@ tags:
   - Gospel of Thomas
   - James
   - Marcion
+  - Paul
   - Textus Receptus
   - Athanasius of Alexandria
   - Essenes
@@ -32,7 +32,6 @@ tags:
   - Jeremiah
   - Judaism
   - Latin Vulgate
-  - Lot
   - Mount Sinai
   - Qumran
   - Septuagint

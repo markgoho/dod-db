@@ -7,7 +7,6 @@ aliases:
   - /episodes/13/
 tags:
   - Jerusalem
-  - Lachish
   - King Sennacherib
   - Hezekiah
   - Dead Sea

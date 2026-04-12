@@ -29,7 +29,6 @@ tags:
   - King Josiah
   - Latin Vulgate
   - Martin Luther
-  - Paul
   - Samuel
   - Ugarit
 books:

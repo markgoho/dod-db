@@ -22,7 +22,6 @@ tags:
   - Judaism
   - Leningrad Codex
   - Codex Sinaiticus
-  - Judeans
   - Moses
   - Origen
   - Torah

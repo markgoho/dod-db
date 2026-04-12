@@ -8,7 +8,6 @@ aliases:
 tags:
   - Eschatology
   - King James Version
-  - Paul
   - Pliny the Younger
   - Ten Commandments
   - baptism
@@ -19,6 +18,7 @@ tags:
   - inerrancy
   - Jerusalem
   - Noah
+  - Paul
   - Samuel
   - Univocality
 books:

@@ -11,9 +11,9 @@ tags:
   - Canaan
   - Shem
   - Japheth
-  - Paul
   - Africans
   - Canaanites
+  - Paul
   - Deuteronomy
   - Joshua
   - King James Version

@@ -10,8 +10,8 @@ tags:
   - Flood
   - YHWH
   - Romans
-  - Paul
   - divine council
+  - Paul
   - Book of Enoch
   - Protestantism
   - Asherah

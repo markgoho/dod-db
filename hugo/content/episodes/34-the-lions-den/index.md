@@ -15,7 +15,6 @@ tags:
   - Persia
   - Median Kingdom
   - Eschatology
-  - Nabonidus
   - Cyrus the Great
   - Michael
   - Romans

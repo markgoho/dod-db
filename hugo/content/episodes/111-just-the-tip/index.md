@@ -19,7 +19,6 @@ tags:
   - King Saul
   - Samson
   - Edom
-  - Julius Wellhausen
   - Philistines
   - Africa
   - Amorites

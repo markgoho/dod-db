@@ -12,7 +12,6 @@ tags:
   - Judah
   - Deuteronomy
   - Torah
-  - Judeans
   - Flavius Josephus
   - Gilead
   - Hell

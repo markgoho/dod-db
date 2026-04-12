@@ -7,7 +7,6 @@ aliases:
   - /episodes/22/
 tags:
   - YHWH
-  - Julius Wellhausen
   - Moses
   - Deuteronomy
   - Flood

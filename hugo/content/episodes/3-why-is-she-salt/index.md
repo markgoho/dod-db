@@ -6,7 +6,6 @@ videoId: M-7Gql8NQBU
 aliases:
   - /episodes/3/
 tags:
-  - Lot
   - provenance
   - Sodom
   - Abraham
@@ -14,7 +13,6 @@ tags:
   - etiology
   - forgery
   - Dead Sea
-  - Lachish
   - Ammonites
   - Deuteronomy
   - Ishmael

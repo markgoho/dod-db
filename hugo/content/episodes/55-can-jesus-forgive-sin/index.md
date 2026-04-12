@@ -9,7 +9,6 @@ tags:
   - Jehu
   - Ahaziah
   - Joram
-  - Megiddo
   - Judah
   - Capernaum
   - Samaria

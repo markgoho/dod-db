@@ -18,7 +18,6 @@ tags:
   - forgery
   - James
   - Jerusalem
-  - Judeans
   - Matthew
   - Monotheism
   - Persia

@@ -8,10 +8,10 @@ aliases:
 tags:
   - James
   - Masoretic Text
-  - Paul
   - Flavius Josephus
   - Peter
   - Leningrad Codex
+  - Paul
   - Jerusalem
   - John
   - Mary Magdalene
@@ -25,6 +25,7 @@ tags:
   - Luke
   - Moses
   - Anatolia
+  - Clement of Alexandria
   - Constantine
   - Council of Jerusalem
   - Cyrus the Great
@@ -37,7 +38,6 @@ tags:
   - Hermeneia
   - Isaiah
   - John of Patmos
-  - Judeans
   - Latin Vulgate
   - Martin Luther
   - Nazareth
