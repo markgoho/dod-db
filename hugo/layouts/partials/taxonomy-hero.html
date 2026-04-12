@@ -7,7 +7,7 @@
 {{- $category := .category | default "" -}}
 
 
-<header class="page-hero{{ with $heroClass }} {{ . }}{{ end }}">
+<header class="page-hero{{ with $heroClass }}{{ . }}{{ end }}">
   <a href="{{ $backHref }}" class="button-brutalist page-hero__back"
     >&larr; {{ $backLabel }}</a
   >

@@ -15,7 +15,7 @@
 {{- $hideDate := or (index $overrides "eyebrow") (index $overrides "guestText") -}}
 
 
-<article class="episode-card{{ if $ranked }} episode-card--ranked{{ end }}">
+<article class="episode-card{{ if $ranked }}episode-card--ranked{{ end }}">
   <a href="{{ $link }}" class="episode-card__link">
     <div class="episode-card__content">
       {{- if $ranked }}

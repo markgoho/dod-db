@@ -105,10 +105,8 @@
           </section>
 
           {{ if .Params.segmentData }}
-            <section
-              class="episode-segments episode-segments--subtle"
-              aria-label="Analysis segments">
-              <h2 class="type-section-title">Analysis Segments</h2>
+            <section class="episode-segments episode-segments--subtle">
+              <h2 class="type-section-title">Segments</h2>
               <div class="episode-segments__grid">
                 {{ range .Params.segmentData }}
                   <a
