@@ -664,13 +664,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [101],
   },
   {
-    canonical: "preterist interpretation",
-    variations: ["preterism"],
-    category: "scholarship",
-    status: "accepted",
-    episodes: [4, 32, 39, 118, 119],
-  },
-  {
     canonical: "futurist interpretation",
     variations: ["futurism"],
     category: "scholarship",
@@ -5559,6 +5552,16 @@ export const tagVocabulary: TagDefinition[] = [
       "Jewish queen of Persia in the Book of Esther who hides her identity, becomes queen, and intercedes to save the Jews from Haman.",
     status: "accepted",
     episodes: [3, 6, 20, 34, 36, 40, 45, 63, 94, 136, 144, 147, 154],
+  },
+  {
+    canonical: "Preterism",
+    variations: ["preterist"],
+    category: "theology",
+    llmVerify: true,
+    description:
+      "Christian eschatological view or belief that interprets some (partial preterism) or all (full preterism) prophecies of the Bible as events which have already been fulfilled in history",
+    status: "accepted",
+    episodes: [4, 32, 39, 118, 119],
   },
 ];
 

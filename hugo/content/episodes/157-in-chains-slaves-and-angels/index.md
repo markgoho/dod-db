@@ -201,7 +201,7 @@ draft: false
 {{< line >}}[00:29:15.817] Dan Beecher: Got you a wife. So there you go, uh, and that is, that is where Arab people come from, I guess, uh, at least according to this. I think it's a fascinating story. I love the fact that, like you point out, this is the first person after Eden to talk to God directly face to face. Just a really interesting, though, like non-consequential to any story. Yeah, it's just sort of a side note story.{{< /line >}}
 {{< line >}}[00:29:52.075] Dan McClellan: And etiology. I think that's an awful lot of what Genesis is doing is saying, hey, "You know, though, this thing or these people, here's where it came from. Moving on." And, um, and they just cruise on past. Yeah, so trying to explain how the world got to be the way it is.{{< /line >}}
 {{< line >}}[00:30:07.697] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:30:08.161] Dan McClellan: Uh, and, and something interesting is some of the words that are used in here, um, in reference to like the way that Sarah treats— Sarai treats Hagar and, uh, and stuff like that, parallel to how it describes the Egyptians treating the Hebrews in the book of Exodus.{{< /line >}}
+{{< line >}}[00:30:08.161] Dan McClellan: Uh, and, and something interesting is some of the words that are used in here, um, in reference to like the way that Sarah treats— Sarai treats Hagar and, uh, and stuff like that, parallel to how it describes the Egyptians treating the Hebrews in {{< scripture ref="Exodus" display="the book of Exodus" >}}.{{< /line >}}
 {{< line >}}[00:30:27.227] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:30:27.468] Dan McClellan: And so some scholars would suggest that this was composed maybe after Exodus and in light of Exodus. So putting the two things parallel, an Egyptian who is enslaved to the Hebrews over and against the story where the Hebrews are enslaved to the Egyptians.{{< /line >}}
 {{< line >}}[00:30:46.903] Dan Beecher: Right.{{< /line >}}
@@ -209,7 +209,7 @@ draft: false
 {{< line >}}[00:31:11.285] Dan Beecher: Fair enough. Well, I think that is crazy fascinating. I really enjoy it. Let's move on though. To our chapter and verse. So angels getting chained up. What are we talking about? It's something that if you look for it in your standard, uh, non-Ethiopic Bible, you're gonna find a couple of very cryptic, weird, uh, mentions of it. Yeah, just the briefest things. You're not gonna find anything explaining anything.{{< /line >}}
 {{< line >}}[00:31:51.158] Dan McClellan: Yeah, you have the idea in Revelation of angels bound at the Euphrates River. People are always saying they're under the Euphrates River, but the preposition is epi, which literally means upon but can also mean at.{{< /line >}}
 {{< line >}}[00:32:06.878] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:32:07.615] Dan McClellan: So anyway, that's in the Book of Revelation.{{< /line >}}
+{{< line >}}[00:32:07.615] Dan McClellan: So anyway, that's in {{< scripture ref="Revelation" display="the Book of Revelation" >}}.{{< /line >}}
 {{< line >}}[00:32:09.842] Dan Beecher: I like the idea that they're floating.{{< /line >}}
 {{< line >}}[00:32:12.166] Dan McClellan: Yes.{{< /line >}}
 {{< line >}}[00:32:12.342] Dan Beecher: So if it's upon, then I want to think of them floating. That's—.{{< /line >}}
@@ -241,7 +241,7 @@ draft: false
 {{< line >}}[00:37:26.310] Dan Beecher: When was this written? What's the time period? What are we thinking?{{< /line >}}
 {{< line >}}[00:37:30.061] Dan McClellan: This is probably late 300s, more likely 200s BCE. So this is Greco-Roman period Judaism.{{< /line >}}
 {{< line >}}[00:37:39.212] Dan Beecher: Similar in timeframe to when Daniel was written?{{< /line >}}
-{{< line >}}[00:37:42.898] Dan McClellan: Probably a little before Daniel. Oh, okay. But you do have, notice you do have Michael listed as the chief prince in the book of Daniel. So the tradition is related. Okay. But yeah, I think this is probably slightly before, at least when Daniel reaches its final form, the apocalyptic chapters. There might be some parts of Daniel that are roughly contemporaneous with this.{{< /line >}}
+{{< line >}}[00:37:42.898] Dan McClellan: Probably a little before Daniel. Oh, okay. But you do have, notice you do have Michael listed as the chief prince in {{< scripture ref="Daniel" display="the book of Daniel" >}}. So the tradition is related. Okay. But yeah, I think this is probably slightly before, at least when Daniel reaches its final form, the apocalyptic chapters. There might be some parts of Daniel that are roughly contemporaneous with this.{{< /line >}}
 {{< line >}}[00:38:09.772] Dan Beecher: But most of the Hebrew Bible was written before this. This is very late literature in terms of Hebrew Bible.{{< /line >}}
 {{< line >}}[00:38:18.483] Dan McClellan: Yes, but there are scholars out there who think that at least parts of the Book of Enoch might actually predate what's going on in Genesis, or there might be traditions from before the finalization of the Pentateuch that, you know, were part of the text before they, for whatever reason, they fell out of favor but are preserved in 1 Enoch. So that's an ongoing debate.{{< /line >}}
 {{< line >}}[00:38:47.547] Dan Beecher: But interesting.{{< /line >}}

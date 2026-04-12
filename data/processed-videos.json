@@ -665,7 +665,7 @@
         "mentions": 1
       },
       {
-        "tag": "preterist interpretation",
+        "tag": "Preterism",
         "mentions": 1
       },
       {
@@ -5360,8 +5360,8 @@
         "mentions": 12
       },
       {
-        "tag": "preterist interpretation",
-        "mentions": 7
+        "tag": "Preterism",
+        "mentions": 9
       },
       {
         "tag": "Matthew",
@@ -6127,7 +6127,38 @@
       {
         "book": "Genesis",
         "references": ["Genesis 1", "Genesis 2"],
-        "mentions": 3
+        "mentions": 3,
+        "source": "auto"
+      },
+      {
+        "book": "Joshua",
+        "references": ["Joshua"],
+        "mentions": 2,
+        "source": "auto"
+      },
+      {
+        "book": "Lamentations",
+        "references": ["Lamentations"],
+        "mentions": 1,
+        "source": "auto"
+      },
+      {
+        "book": "Proverbs",
+        "references": ["Proverbs"],
+        "mentions": 3,
+        "source": "auto"
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms"],
+        "mentions": 1,
+        "source": "auto"
+      },
+      {
+        "book": "Ruth",
+        "references": ["Ruth"],
+        "mentions": 2,
+        "source": "auto"
       }
     ],
     "episodeNumber": 36
@@ -6485,6 +6516,10 @@
         "mentions": 2
       },
       {
+        "tag": "Preterism",
+        "mentions": 2
+      },
+      {
         "tag": "Theosis",
         "mentions": 2
       },
@@ -6522,10 +6557,6 @@
       },
       {
         "tag": "Pergamum",
-        "mentions": 1
-      },
-      {
-        "tag": "preterist interpretation",
         "mentions": 1
       },
       {
@@ -18450,6 +18481,10 @@
         "mentions": 2
       },
       {
+        "tag": "Preterism",
+        "mentions": 2
+      },
+      {
         "tag": "Univocality",
         "mentions": 2
       },
@@ -18487,10 +18522,6 @@
       },
       {
         "tag": "Nineveh",
-        "mentions": 1
-      },
-      {
-        "tag": "preterist interpretation",
         "mentions": 1
       },
       {
@@ -18554,8 +18585,8 @@
     "transcriptPath": "data/transcripts/2025-07-14-problematic-prophecy.txt",
     "tags": [
       {
-        "tag": "preterist interpretation",
-        "mentions": 24
+        "tag": "Preterism",
+        "mentions": 36
       },
       {
         "tag": "John",
@@ -18715,7 +18746,32 @@
       {
         "book": "Isaiah",
         "references": ["Isaiah 1"],
-        "mentions": 1
+        "mentions": 1,
+        "source": "auto"
+      },
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 8,
+        "source": "auto"
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark"],
+        "mentions": 1,
+        "source": "auto"
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew"],
+        "mentions": 1,
+        "source": "auto"
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 20,
+        "source": "auto"
       }
     ]
   },
@@ -19938,18 +19994,32 @@
     "scriptures": [
       {
         "book": "Deuteronomy",
-        "references": ["Deuteronomy 6", "Deuteronomy 6:1", "Deuteronomy 6:4"],
-        "mentions": 12
-      },
-      {
-        "book": "Song of Solomon",
-        "references": ["Song of Solomon 6:9"],
-        "mentions": 3
+        "references": [
+          "Deuteronomy",
+          "Deuteronomy 6",
+          "Deuteronomy 6:1",
+          "Deuteronomy 6:4"
+        ],
+        "mentions": 16,
+        "source": "auto"
       },
       {
         "book": "Isaiah",
         "references": ["Isaiah 4", "Isaiah 126"],
-        "mentions": 2
+        "mentions": 2,
+        "source": "auto"
+      },
+      {
+        "book": "Lamentations",
+        "references": ["Lamentations"],
+        "mentions": 1,
+        "source": "auto"
+      },
+      {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon 6:9"],
+        "mentions": 3,
+        "source": "auto"
       }
     ]
   },
@@ -20512,29 +20582,40 @@
     "episodeNumber": 130,
     "scriptures": [
       {
-        "book": "Isaiah",
-        "references": ["Isaiah 3:29", "Isaiah 45", "Isaiah 45:1"],
-        "mentions": 3
-      },
-      {
-        "book": "Jeremiah",
-        "references": ["Jeremiah 29", "Jeremiah 36"],
-        "mentions": 2
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 1,
+        "source": "auto"
       },
       {
         "book": "Exodus",
         "references": ["Exodus 24:10"],
-        "mentions": 1
+        "mentions": 1,
+        "source": "auto"
       },
       {
-        "book": "Proverbs",
-        "references": ["Proverbs 8"],
-        "mentions": 1
+        "book": "Isaiah",
+        "references": ["Isaiah 3:29", "Isaiah 45", "Isaiah 45:1"],
+        "mentions": 3,
+        "source": "auto"
+      },
+      {
+        "book": "Jeremiah",
+        "references": ["Jeremiah", "Jeremiah 29", "Jeremiah 36"],
+        "mentions": 5,
+        "source": "auto"
       },
       {
         "book": "Matthew",
         "references": ["Matthew 17:21"],
-        "mentions": 1
+        "mentions": 1,
+        "source": "auto"
+      },
+      {
+        "book": "Proverbs",
+        "references": ["Proverbs 8"],
+        "mentions": 1,
+        "source": "auto"
       }
     ]
   },

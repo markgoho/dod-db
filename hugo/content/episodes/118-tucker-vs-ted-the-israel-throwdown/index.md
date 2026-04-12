@@ -19,6 +19,7 @@ tags:
   - Edomites
   - inerrancy
   - Judah
+  - Preterism
   - Univocality
   - Christian Nationalism
   - Daniel
@@ -29,7 +30,6 @@ tags:
   - King David
   - Lachish
   - Nineveh
-  - preterist interpretation
   - Terah
 books:
   - Genesis
@@ -73,11 +73,11 @@ draft: false
 {{< line >}}[00:04:14.270] Dan Beecher: And then—{{< /line >}}
 {{< line >}}[00:04:14.710] Dan McClellan: —and immediately Tucker Carlson was like, "It's in Genesis."{{< /line >}}
 {{< line >}}[00:04:18.230] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:04:19.030] Dan McClellan: With like, as much venom as—as he could muster. It was like, "You child. It is in the book of Genesis."{{< /line >}}
+{{< line >}}[00:04:19.030] Dan McClellan: With like, as much venom as—as he could muster. It was like, "You child. It is in {{< scripture ref="Genesis" display="the book of Genesis" >}}."{{< /line >}}
 {{< line >}}[00:04:28.310] Dan Beecher: Well, and Tucker Carlson had clearly been planning his gotchas, so of course Tucker knew where it was because he was planning this gotcha from the beginning.{{< /line >}}
 {{< line >}}[00:04:36.840] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:04:37.320] Dan Beecher: But it is in Genesis, specifically {{< scripture ref="Genesis 12" >}}. Is that correct?{{< /line >}}
-{{< line >}}[00:04:42.440] Dan McClellan: That is correct. {{< scripture ref="Genesis 12" >}}, which is the beginning of the Abraham cycle. So this is—this is immediately after we—we have {{< scripture ref="Genesis 1" >}} through 11, the primeval history. So this is the—the second main set of narrative arcs of the entire book of Genesis. And here we basically have—and it's pretty early in {{< scripture ref="Genesis 12" >}} because you have in {{< scripture ref="Genesis 11" >}} that Terah was Abram's father. He dies. He was 205 years old. He died in Haran. And then {{< scripture ref="Genesis 12" >}} begins. "Now, the Lord said to Abram, go from your country and your kindred and your father's house to the land that I will show you."{{< /line >}}
+{{< line >}}[00:04:42.440] Dan McClellan: That is correct. {{< scripture ref="Genesis 12" >}}, which is the beginning of the Abraham cycle. So this is—this is immediately after we—we have {{< scripture ref="Genesis 1" >}} through 11, the primeval history. So this is the—the second main set of narrative arcs of the entire {{< scripture ref="Genesis" display="book of Genesis" >}}. And here we basically have—and it's pretty early in {{< scripture ref="Genesis 12" >}} because you have in {{< scripture ref="Genesis 11" >}} that Terah was Abram's father. He dies. He was 205 years old. He died in Haran. And then {{< scripture ref="Genesis 12" >}} begins. "Now, the Lord said to Abram, go from your country and your kindred and your father's house to the land that I will show you."{{< /line >}}
 {{< line >}}[00:05:44.690] Dan McClellan: By you, through you, as you know, the. The. You are the instrument of their, their blessing.{{< /line >}}
 {{< line >}}[00:05:51.490] Dan Beecher: Right.{{< /line >}}
 {{< line >}}[00:05:52.130] Dan McClellan: And so the idea is Abraham's offspring, which right off the bat, one thing to point out is that Abraham had a lot of offspring according to the Bible, which includes like Ishmael, who's supposed to be the father of the Arab people, and an awful lot of people beyond just the 12 sons of Israel. And so.{{< /line >}}
@@ -145,7 +145,7 @@ draft: false
 {{< line >}}[00:25:59.790] Dan Beecher: Do you want to know one of the, one of the biblical references that I saw made about Iran and, and Israel?{{< /line >}}
 {{< line >}}[00:26:08.310] Dan McClellan: Did it have something to do with Gog and Magog?{{< /line >}}
 {{< line >}}[00:26:11.790] Dan Beecher: Yes. {{< scripture ref="Ezekiel 38" >}}. Yeah, I don't, I don't know what that is. Like, I read it and then I went and checked out Ezekiel and was like, wait, that's not about now. But none of this is about now. That's the other thing is that like, one of the things that you and I have talked about a lot is that all of these people who are very into the idea that, you know, this is all the fulfillment of the prophecies of Revelation and Daniel and whatever. No, no, it was very clearly about a very specific time and that time was a long time ago.{{< /line >}}
-{{< line >}}[00:26:45.240] Dan McClellan: And, and we can, and when you look in Ezekiel, Gog and Magog are a place and a ruler of a place. As near as we can tell when we get into the Book of Revelation, they seem to be both rulers of places rather than one and, and the other. Like even the, the authors of the New Testament are at quite a distance from the composition of, of that quote unquote prophecy and so are interpreting it in, in different ways. And now people are like, oh, it's Iran, it's Russia, it's China, it's Turkey, it's all. And, and it's whoever.{{< /line >}}
+{{< line >}}[00:26:45.240] Dan McClellan: And, and we can, and when you look in Ezekiel, Gog and Magog are a place and a ruler of a place. As near as we can tell when we get into {{< scripture ref="Revelation" display="the Book of Revelation" >}}, they seem to be both rulers of places rather than one and, and the other. Like even the, the authors of the New Testament are at quite a distance from the composition of, of that quote unquote prophecy and so are interpreting it in, in different ways. And now people are like, oh, it's Iran, it's Russia, it's China, it's Turkey, it's all. And, and it's whoever.{{< /line >}}
 {{< line >}}[00:27:18.860] Dan Beecher: I don't like yeah.{{< /line >}}
 {{< line >}}[00:27:20.460] Dan McClellan: That's really all it is. It's. You're just looking at the world and through the lenses of this is coming, this is in the post. This is gonna happen. So I, I gotta be ready for it and which is literally understanding the Bible as kind of a Ouija board as a way to divine the future, which as we, we have talked about in, in the recent past, is something a lot of people kind of unwittingly use the Bible to try to do.{{< /line >}}
 {{< line >}}[00:28:06.640] Dan Beecher: Right.{{< /line >}}

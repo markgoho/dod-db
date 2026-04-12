@@ -177,7 +177,7 @@ draft: false
 {{< line >}}[00:59:47.620] David Congdon: Yeah, it does. It removes the boundary policing entirely. It's really a community of consent. Right. That's what it's about. And I think if we learn anything about evangelicalism today, it doesn't believe in consent.{{< /line >}}
 {{< line >}}[01:00:01.740] Dan McClellan: On so many different levels.{{< /line >}}
 {{< line >}}[01:00:03.740] David Congdon: Yes. Yeah.{{< /line >}}
-{{< line >}}[01:00:04.780] Dan McClellan: Back to the book of Acts and the folks who had no, no poor among them. But make sure you do what we say or else God might kill you. Is, is, you know how that story ends.{{< /line >}}
+{{< line >}}[01:00:04.780] Dan McClellan: Back to {{< scripture ref="Acts" display="the book of Acts" >}} and the folks who had no, no poor among them. But make sure you do what we say or else God might kill you. Is, is, you know how that story ends.{{< /line >}}
 {{< line >}}[01:00:18.670] David Congdon: Yes.{{< /line >}}
 {{< line >}}[01:00:19.230] Dan McClellan: And that didn't last for very long. So that, that need to, to police those boundaries is, is, is there even in what many people consider to be the purest manifestation of, of having no poor among us. And, and yeah, so that's, ah, that's, that's troubling to think about.{{< /line >}}
 {{< line >}}[01:00:39.360] David Congdon: It is troubling. I mean, it's there, it's, it's in some ways baked into the human condition to, to want to police those boundaries, to want to say somebody's in, somebody's out. And I get it, you know, I mean, it's, that's, that is a human tendency that we all have.{{< /line >}}
