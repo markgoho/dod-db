@@ -219,6 +219,17 @@ textarea:not([rows]) {
   width: 100%;
 }
 
+.page-hero--profile {
+  align-items: start;
+  gap: var(--space-l);
+  justify-items: stretch;
+  text-align: left;
+}
+
+.page-hero--profile > * {
+  width: fit-content;
+}
+
 .page-hero > .page-hero__back {
   justify-self: start;
   width: max-content;

@@ -11,7 +11,7 @@
   {{ $topEpisodesLimit := .Params.topEpisodesLimit | default 6 }}
   {{ $featuredEpisodes := first $topEpisodesLimit $rankedEpisodes }}
   <section class="term-page tag-page">
-    <header class="page-hero{{ if .Params }}tag-hero--profile{{ end }}">
+    <header class="page-hero page-hero--profile">
       <a href="/tags/" class="button-brutalist page-hero__back">← All Topics</a>
       <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow">Topic archive</span>
@@ -26,10 +26,8 @@
       {{ end }}
       <div class="tag-hero__meta-row">
         {{ with .Params.category }}
-          <div class="tag-hero__classification panel panel--muted">
-            <span class="tag-hero__classification-label type-eyebrow"
-              >Classification</span
-            >
+          <div class="page-hero__meta panel panel--muted">
+            <span class="page-hero__stat-label type-eyebrow">Classification</span>
             <span class="tag-hero__classification-value">{{ . }}</span>
           </div>
         {{ end }}
@@ -40,6 +38,45 @@
           >
         </div>
       </div>
+      {{ with .Params.featuredEpisode }}
+        {{ $featuredEpisodePage := index (where $.Pages ".Params.episodeNumber" .number) 0 }}
+        {{ if $featuredEpisodePage }}
+          <div class="tag-featured-callouts episodes-grid">
+            <article class="episode-card">
+              <a href="{{ $featuredEpisodePage.RelPermalink }}" class="episode-card__link">
+                <div class="episode-card__number">{{ .number }}</div>
+                <div class="episode-card__content">
+                  <p class="episode-card__eyebrow type-eyebrow">Featured episode</p>
+                  <h2 class="episode-card__title">
+                    {{ .label | default $featuredEpisodePage.Title }}
+                  </h2>
+                  <div class="episode-card__guest">Full episode discussion</div>
+                </div>
+                <div class="episode-card__arrow">→</div>
+              </a>
+            </article>
+            {{ with $.Params.featuredSegment }}
+              {{ if eq .episodeNumber $.Params.featuredEpisode.number }}
+                <article class="episode-card">
+                  <a
+                    href="{{ $featuredEpisodePage.RelPermalink }}#{{ .segmentType }}"
+                    class="episode-card__link">
+                    <div class="episode-card__number">{{ .episodeNumber }}</div>
+                    <div class="episode-card__content">
+                      <p class="episode-card__eyebrow type-eyebrow">Featured segment</p>
+                      <h2 class="episode-card__title">{{ .label }}</h2>
+                      <div class="episode-card__guest">
+                        Jump to the in-depth discussion
+                      </div>
+                    </div>
+                    <div class="episode-card__arrow">→</div>
+                  </a>
+                </article>
+              {{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
+      {{ end }}
     </header>
 
     {{ with .Params.quotes }}
@@ -135,7 +172,7 @@
                       <div class="episode-card__badges">
                         {{ $currentTag := $.Title }}
                         <span
-                          class="episode-card__badge episode-card__tag--current"
+                          class="episode-card__badge episode-card__badge--current"
                           >{{ $currentTag }}</span
                         >
                         {{ $otherTags := slice }}
@@ -204,7 +241,7 @@
                     <div class="episode-card__badges">
                       {{ $currentTag := $.Title }}
                       <span
-                        class="episode-card__badge episode-card__tag--current"
+                        class="episode-card__badge episode-card__badge--current"
                         >{{ $currentTag }}</span
                       >
                       {{ $otherTags := slice }}

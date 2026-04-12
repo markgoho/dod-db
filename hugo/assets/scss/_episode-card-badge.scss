@@ -20,7 +20,11 @@
   background: var(--tan-000);
 }
 
-.episode-card__badge--current,
+.episode-card__badge--current {
+  background: var(--color-action);
+  color: var(--color-text-inverse);
+}
+
 .episode-card__badge-more {
   background: var(--tan-900);
   color: var(--color-text-inverse);

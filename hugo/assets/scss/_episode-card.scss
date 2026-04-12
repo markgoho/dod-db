@@ -44,6 +44,14 @@
   min-width: 0;
 }
 
+.episode-card__header-row {
+  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  justify-content: space-between;
+}
+
 .episode-card__eyebrow {
   color: var(--color-text-muted);
   margin: 0 0 var(--space-4xs) 0;
@@ -67,6 +75,18 @@
   font-weight: var(--font-weight-semibold);
   letter-spacing: var(--letter-spacing-wide);
   margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+}
+
+.episode-card__mention-count {
+  background: var(--color-accent-muted);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text-main);
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  padding: var(--space-4xs) var(--space-2xs);
   text-transform: uppercase;
 }
 

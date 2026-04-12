@@ -12,8 +12,14 @@ function initTranscriptPreview(): void {
     transcriptRevealButton.addEventListener("click", revealTranscript);
   }
 
-  if (globalThis.location.hash.startsWith("#t-")) {
-    revealTranscript();
+  if (globalThis.location.hash) {
+    const hashTarget = document.querySelector(globalThis.location.hash);
+    if (
+      globalThis.location.hash.startsWith("#t-") ||
+      hashTarget?.classList.contains("episode-segment-card")
+    ) {
+      revealTranscript();
+    }
   }
 
   const mediaPlayer = document.querySelector("audio, .video-player");
