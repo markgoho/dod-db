@@ -41,6 +41,7 @@ tags:
   - Mary Magdalene
   - Nazareth
   - Sea of Galilee
+  - Second Maccabees
   - Solomon
   - YHWH
 books:

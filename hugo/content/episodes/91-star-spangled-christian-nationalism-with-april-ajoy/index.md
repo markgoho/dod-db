@@ -10,6 +10,7 @@ tags:
   - Satan
   - Hell
   - cognitive dissonance
+  - Beatitudes
   - Mary Magdalene
   - Paul
   - Rapture

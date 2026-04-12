@@ -23,6 +23,7 @@ tags:
   - Apocrypha
   - Augustine
   - Baruch
+  - Beatitudes
   - Book of Enoch
   - Catholicism
   - Daniel

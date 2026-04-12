@@ -22,6 +22,7 @@ tags:
   - Gospel of James
   - Justin Martyr
   - King James Version
+  - Letter of Aristeas
   - Noah
   - Saint Titus
   - Septuagint

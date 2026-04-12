@@ -34,6 +34,7 @@ tags:
   - James
   - Maccabees
   - Peter
+  - Second Maccabees
   - Tertullian
 books:
   - John

@@ -35,6 +35,7 @@ tags:
   - Jerome
   - Jerusalem
   - Judah
+  - Letter of Aristeas
   - Maccabees
   - Protestantism
   - Samuel

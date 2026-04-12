@@ -40,6 +40,7 @@ tags:
   - Matthew
   - Qumran
   - Samuel
+  - Second Maccabees
   - Solomon
   - Syria
   - Tamar

@@ -12,6 +12,7 @@ tags:
   - Bel and the Dragon
   - Maccabees
   - Cyrus the Great
+  - Second Maccabees
   - Babylon
   - Habakkuk
   - Monotheism

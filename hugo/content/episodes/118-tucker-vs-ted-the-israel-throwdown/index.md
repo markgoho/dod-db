@@ -16,6 +16,7 @@ tags:
   - Jonah
   - divine council
   - Septuagint
+  - Beatitudes
   - Edomites
   - inerrancy
   - Judah

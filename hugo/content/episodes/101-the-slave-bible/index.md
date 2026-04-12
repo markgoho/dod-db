@@ -12,6 +12,7 @@ tags:
   - Pliny the Younger
   - Ten Commandments
   - baptism
+  - Beatitudes
   - Galilee
   - Ham
   - historical criticism

@@ -11,7 +11,7 @@ tags:
   - Crucifixion
   - Catholicism
   - Jeremiah
-  - Turin
+  - Shroud of Turin
   - Pontius Pilate
   - inerrancy
   - Romans

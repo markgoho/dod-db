@@ -8,6 +8,7 @@ aliases:
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/153667245.mp3?sig=7WzlNxfx6689h5D2K-1dyjrFvSSWrc8nWUIGaTSkQl0%3D
 tags:
   - Septuagint
+  - Letter of Aristeas
   - Jerusalem
   - Judaism
   - Qumran

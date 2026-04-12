@@ -6,9 +6,9 @@ videoId: OLyMIgX2ueE
 aliases:
   - /episodes/75/
 tags:
+  - Shroud of Turin
   - Egyptians
   - Red Sea
-  - Turin
   - Moses
   - YHWH
   - Aaron

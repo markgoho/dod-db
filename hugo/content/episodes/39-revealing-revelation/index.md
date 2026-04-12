@@ -34,6 +34,7 @@ tags:
   - Jerusalem
   - John of Patmos
   - Justin Martyr
+  - Letter of Aristeas
   - Pergamum
   - Protestantism
   - Romans

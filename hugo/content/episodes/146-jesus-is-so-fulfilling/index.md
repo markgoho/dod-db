@@ -24,6 +24,7 @@ tags:
   - Ten Commandments
   - Torah
   - Univocality
+  - Beatitudes
   - cognitive dissonance
   - Hezekiah
   - inerrancy

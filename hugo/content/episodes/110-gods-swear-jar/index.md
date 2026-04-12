@@ -21,6 +21,7 @@ tags:
   - Eusebius
   - Gentiles
   - Talmud
+  - Beatitudes
   - Clement of Rome
   - Flavius Josephus
   - John

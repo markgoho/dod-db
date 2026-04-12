@@ -26,6 +26,7 @@ tags:
   - Flavius Josephus
   - Jacob
   - Jerome
+  - Letter of Aristeas
   - Martin Luther
   - Moses
   - Mount Sinai

@@ -6,6 +6,7 @@ videoId: Xtm9DX_0Rx0
 aliases:
   - /episodes/25/
 tags:
+  - Beatitudes
   - YHWH
   - Luke
   - Eschatology

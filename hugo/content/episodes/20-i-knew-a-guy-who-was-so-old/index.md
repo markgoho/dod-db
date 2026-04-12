@@ -29,6 +29,7 @@ tags:
   - Catholicism
   - Daniel
   - Ishmael
+  - Second Maccabees
   - The Reformation
   - Dead Sea Scrolls
   - Isaiah
