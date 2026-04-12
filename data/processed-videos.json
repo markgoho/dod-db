@@ -115,10 +115,6 @@
         "mentions": 1
       },
       {
-        "tag": "Judeans",
-        "mentions": 1
-      },
-      {
         "tag": "King James Version",
         "mentions": 1
       },
@@ -380,10 +376,6 @@
     "transcriptPath": "data/transcripts/2023-04-24-episode-3-april-23-2023-why-is-she-salt.txt",
     "tags": [
       {
-        "tag": "Lot",
-        "mentions": 42
-      },
-      {
         "tag": "provenance",
         "mentions": 28
       },
@@ -409,10 +401,6 @@
       },
       {
         "tag": "Dead Sea",
-        "mentions": 4
-      },
-      {
-        "tag": "Lachish",
         "mentions": 4
       },
       {
@@ -797,10 +785,6 @@
         "mentions": 1
       },
       {
-        "tag": "Paul",
-        "mentions": 1
-      },
-      {
         "tag": "Romans",
         "mentions": 1
       },
@@ -858,7 +842,7 @@
     "tags": [
       {
         "tag": "Paul",
-        "mentions": 38
+        "mentions": 32
       },
       {
         "tag": "Univocality",
@@ -986,7 +970,9 @@
         "startTimestamp": "[00:02:57.100]",
         "endTimestamp": "[00:28:45.000]",
         "confidence": "verified",
-        "detectionMethod": "pattern"
+        "detectionMethod": "pattern",
+        "topicLabel": "Univocality",
+        "summary": "The Bible's passages must share a single, unified voice."
       },
       {
         "type": "advertisement",
@@ -1308,10 +1294,6 @@
     "transcriptPath": "data/transcripts/2023-05-29-episode-8-may-29-2023-contextual-healing-with-aaron-higashi.txt",
     "tags": [
       {
-        "tag": "Judeans",
-        "mentions": 2
-      },
-      {
         "tag": "Africa",
         "mentions": 1
       },
@@ -1325,10 +1307,6 @@
       },
       {
         "tag": "Midianites",
-        "mentions": 1
-      },
-      {
-        "tag": "Paul",
         "mentions": 1
       },
       {
@@ -1720,10 +1698,6 @@
         "mentions": 3
       },
       {
-        "tag": "Judeans",
-        "mentions": 3
-      },
-      {
         "tag": "Moses",
         "mentions": 3
       },
@@ -1900,15 +1874,15 @@
         "mentions": 7
       },
       {
-        "tag": "Paul",
-        "mentions": 6
-      },
-      {
         "tag": "Eusebius",
         "mentions": 4
       },
       {
         "tag": "Gospel of Thomas",
+        "mentions": 4
+      },
+      {
+        "tag": "Paul",
         "mentions": 4
       },
       {
@@ -2023,10 +1997,6 @@
       {
         "tag": "Jerusalem",
         "mentions": 14
-      },
-      {
-        "tag": "Lachish",
-        "mentions": 12
       },
       {
         "tag": "King Sennacherib",
@@ -2281,10 +2251,6 @@
       },
       {
         "tag": "Ketef Hinnom",
-        "mentions": 1
-      },
-      {
-        "tag": "Lachish",
         "mentions": 1
       },
       {
@@ -2555,7 +2521,7 @@
       },
       {
         "tag": "Paul",
-        "mentions": 14
+        "mentions": 13
       },
       {
         "tag": "Joshua",
@@ -3075,7 +3041,7 @@
     "tags": [
       {
         "tag": "Paul",
-        "mentions": 45
+        "mentions": 43
       },
       {
         "tag": "Monotheism",
@@ -3706,10 +3672,6 @@
         "mentions": 6
       },
       {
-        "tag": "Julius Wellhausen",
-        "mentions": 4
-      },
-      {
         "tag": "Moses",
         "mentions": 4
       },
@@ -3893,10 +3855,6 @@
       },
       {
         "tag": "Isaac",
-        "mentions": 1
-      },
-      {
-        "tag": "Paul",
         "mentions": 1
       },
       {
@@ -4191,7 +4149,7 @@
     "tags": [
       {
         "tag": "Paul",
-        "mentions": 131
+        "mentions": 129
       },
       {
         "tag": "Judaism",
@@ -4536,10 +4494,6 @@
         "mentions": 3
       },
       {
-        "tag": "Lot",
-        "mentions": 3
-      },
-      {
         "tag": "Mary Magdalene",
         "mentions": 3
       },
@@ -4792,10 +4746,6 @@
         "mentions": 3
       },
       {
-        "tag": "Lachish",
-        "mentions": 3
-      },
-      {
         "tag": "Satan",
         "mentions": 3
       },
@@ -4821,10 +4771,6 @@
       },
       {
         "tag": "Cherubim",
-        "mentions": 1
-      },
-      {
-        "tag": "Judeans",
         "mentions": 1
       },
       {
@@ -4914,7 +4860,7 @@
       },
       {
         "tag": "Paul",
-        "mentions": 8
+        "mentions": 7
       },
       {
         "tag": "Romans",
@@ -5333,7 +5279,7 @@
     "tags": [
       {
         "tag": "Paul",
-        "mentions": 72
+        "mentions": 73
       },
       {
         "tag": "circumcision",
@@ -5499,10 +5445,6 @@
         "mentions": 5
       },
       {
-        "tag": "Nabonidus",
-        "mentions": 5
-      },
-      {
         "tag": "Cyrus the Great",
         "mentions": 4
       },
@@ -5643,7 +5585,7 @@
     "tags": [
       {
         "tag": "Paul",
-        "mentions": 86
+        "mentions": 58
       },
       {
         "tag": "Papias of Hierapolis",
@@ -5783,14 +5725,6 @@
       {
         "tag": "King David",
         "mentions": 12
-      },
-      {
-        "tag": "Judeans",
-        "mentions": 9
-      },
-      {
-        "tag": "Julius Wellhausen",
-        "mentions": 8
       },
       {
         "tag": "YHWH",
@@ -6085,10 +6019,6 @@
         "mentions": 1
       },
       {
-        "tag": "Paul",
-        "mentions": 1
-      },
-      {
         "tag": "Peter",
         "mentions": 1
       },
@@ -6142,10 +6072,6 @@
     "processedAt": "2026-01-13T20:59:32.936Z",
     "transcriptPath": "data/transcripts/2023-12-25-episode-38-december-25-2023-the-three-wise-men-with-eric-vanden-eykel.txt",
     "tags": [
-      {
-        "tag": "Judeans",
-        "mentions": 13
-      },
       {
         "tag": "Bethlehem",
         "mentions": 8
@@ -6614,15 +6540,15 @@
         "mentions": 11
       },
       {
-        "tag": "Paul",
-        "mentions": 6
-      },
-      {
         "tag": "Africans",
         "mentions": 5
       },
       {
         "tag": "Canaanites",
+        "mentions": 5
+      },
+      {
+        "tag": "Paul",
         "mentions": 5
       },
       {
@@ -7288,10 +7214,6 @@
         "mentions": 5
       },
       {
-        "tag": "Nabonidus",
-        "mentions": 5
-      },
-      {
         "tag": "Dead Sea",
         "mentions": 4
       },
@@ -7301,10 +7223,6 @@
       },
       {
         "tag": "Leningrad Codex",
-        "mentions": 4
-      },
-      {
-        "tag": "Masada",
         "mentions": 4
       },
       {
@@ -7373,10 +7291,6 @@
       },
       {
         "tag": "Jacob",
-        "mentions": 1
-      },
-      {
-        "tag": "Judeans",
         "mentions": 1
       },
       {
@@ -7483,10 +7397,6 @@
         "mentions": 5
       },
       {
-        "tag": "Lot",
-        "mentions": 5
-      },
-      {
         "tag": "Abraham",
         "mentions": 4
       },
@@ -7540,10 +7450,6 @@
       },
       {
         "tag": "Judas Iscariot",
-        "mentions": 2
-      },
-      {
-        "tag": "Megiddo",
         "mentions": 2
       },
       {
@@ -8064,6 +7970,10 @@
         "mentions": 1
       },
       {
+        "tag": "Clement of Alexandria",
+        "mentions": 1
+      },
+      {
         "tag": "Clement of Rome",
         "mentions": 1
       },
@@ -8247,10 +8157,6 @@
         "mentions": 2
       },
       {
-        "tag": "Paul",
-        "mentions": 2
-      },
-      {
         "tag": "Univocality",
         "mentions": 2
       },
@@ -8268,6 +8174,10 @@
       },
       {
         "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
         "mentions": 1
       }
     ],
@@ -8706,10 +8616,6 @@
       },
       {
         "tag": "Joram",
-        "mentions": 12
-      },
-      {
-        "tag": "Megiddo",
         "mentions": 12
       },
       {
@@ -9490,7 +9396,7 @@
       },
       {
         "tag": "Paul",
-        "mentions": 21
+        "mentions": 20
       },
       {
         "tag": "Hypostasis",
@@ -9645,12 +9551,12 @@
     "transcriptPath": "data/transcripts/2024-05-28-episode-60-may-27-2024-silence-woman.txt",
     "tags": [
       {
-        "tag": "Paul",
+        "tag": "Priscilla",
         "mentions": 11
       },
       {
-        "tag": "Priscilla",
-        "mentions": 11
+        "tag": "Paul",
+        "mentions": 10
       },
       {
         "tag": "Aquila",
@@ -10013,10 +9919,6 @@
       },
       {
         "tag": "Jacob",
-        "mentions": 3
-      },
-      {
-        "tag": "Judeans",
         "mentions": 3
       },
       {
@@ -11075,6 +10977,10 @@
         "mentions": 1
       },
       {
+        "tag": "Clement of Alexandria",
+        "mentions": 1
+      },
+      {
         "tag": "Easter",
         "mentions": 1
       },
@@ -11439,10 +11345,6 @@
         "mentions": 2
       },
       {
-        "tag": "Judeans",
-        "mentions": 2
-      },
-      {
         "tag": "Latin Vulgate",
         "mentions": 2
       },
@@ -11597,10 +11499,6 @@
         "mentions": 12
       },
       {
-        "tag": "Lachish",
-        "mentions": 12
-      },
-      {
         "tag": "Moab",
         "mentions": 12
       },
@@ -11662,10 +11560,6 @@
       },
       {
         "tag": "Mary Magdalene",
-        "mentions": 1
-      },
-      {
-        "tag": "Paul",
         "mentions": 1
       },
       {
@@ -11943,10 +11837,6 @@
         "mentions": 3
       },
       {
-        "tag": "Judeans",
-        "mentions": 2
-      },
-      {
         "tag": "Flavius Josephus",
         "mentions": 1
       },
@@ -12081,10 +11971,6 @@
       },
       {
         "tag": "Elephantine",
-        "mentions": 1
-      },
-      {
-        "tag": "Masada",
         "mentions": 1
       }
     ],
@@ -13267,10 +13153,6 @@
         "mentions": 1
       },
       {
-        "tag": "Judeans",
-        "mentions": 1
-      },
-      {
         "tag": "Maccabees",
         "mentions": 1
       },
@@ -13414,10 +13296,6 @@
         "mentions": 2
       },
       {
-        "tag": "Judeans",
-        "mentions": 2
-      },
-      {
         "tag": "Matthew",
         "mentions": 2
       },
@@ -13545,10 +13423,6 @@
         "mentions": 6
       },
       {
-        "tag": "Paul",
-        "mentions": 6
-      },
-      {
         "tag": "Septuagint",
         "mentions": 6
       },
@@ -13558,6 +13432,10 @@
       },
       {
         "tag": "Gospel of James",
+        "mentions": 5
+      },
+      {
+        "tag": "Paul",
         "mentions": 5
       },
       {
@@ -13741,14 +13619,6 @@
         "mentions": 2
       },
       {
-        "tag": "Judeans",
-        "mentions": 2
-      },
-      {
-        "tag": "Lachish",
-        "mentions": 2
-      },
-      {
         "tag": "Babylon",
         "mentions": 1
       },
@@ -13825,7 +13695,7 @@
     "tags": [
       {
         "tag": "Paul",
-        "mentions": 26
+        "mentions": 25
       },
       {
         "tag": "Satan",
@@ -14547,10 +14417,6 @@
         "mentions": 1
       },
       {
-        "tag": "Lot",
-        "mentions": 1
-      },
-      {
         "tag": "Moab",
         "mentions": 1
       },
@@ -14661,10 +14527,6 @@
         "mentions": 5
       },
       {
-        "tag": "Paul",
-        "mentions": 4
-      },
-      {
         "tag": "Arius",
         "mentions": 3
       },
@@ -14709,6 +14571,10 @@
         "mentions": 2
       },
       {
+        "tag": "Paul",
+        "mentions": 2
+      },
+      {
         "tag": "Textus Receptus",
         "mentions": 2
       },
@@ -14742,10 +14608,6 @@
       },
       {
         "tag": "Latin Vulgate",
-        "mentions": 1
-      },
-      {
-        "tag": "Lot",
         "mentions": 1
       },
       {
@@ -15381,10 +15243,6 @@
         "mentions": 14
       },
       {
-        "tag": "Paul",
-        "mentions": 11
-      },
-      {
         "tag": "Flavius Josephus",
         "mentions": 10
       },
@@ -15394,6 +15252,10 @@
       },
       {
         "tag": "Leningrad Codex",
+        "mentions": 9
+      },
+      {
+        "tag": "Paul",
         "mentions": 9
       },
       {
@@ -15449,6 +15311,10 @@
         "mentions": 1
       },
       {
+        "tag": "Clement of Alexandria",
+        "mentions": 1
+      },
+      {
         "tag": "Constantine",
         "mentions": 1
       },
@@ -15494,10 +15360,6 @@
       },
       {
         "tag": "John of Patmos",
-        "mentions": 1
-      },
-      {
-        "tag": "Judeans",
         "mentions": 1
       },
       {
@@ -15596,7 +15458,7 @@
     "tags": [
       {
         "tag": "Paul",
-        "mentions": 61
+        "mentions": 53
       },
       {
         "tag": "Septuagint",
@@ -15752,10 +15614,6 @@
         "mentions": 2
       },
       {
-        "tag": "Paul",
-        "mentions": 2
-      },
-      {
         "tag": "Pliny the Younger",
         "mentions": 2
       },
@@ -15793,6 +15651,10 @@
       },
       {
         "tag": "Noah",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
         "mentions": 1
       },
       {
@@ -16089,15 +15951,15 @@
         "mentions": 5
       },
       {
-        "tag": "Paul",
-        "mentions": 5
-      },
-      {
         "tag": "Baal",
         "mentions": 4
       },
       {
         "tag": "Eschatology",
+        "mentions": 4
+      },
+      {
+        "tag": "Paul",
         "mentions": 4
       },
       {
@@ -16336,10 +16198,6 @@
       },
       {
         "tag": "Joshua",
-        "mentions": 2
-      },
-      {
-        "tag": "Judeans",
         "mentions": 2
       },
       {
@@ -16881,6 +16739,10 @@
         "mentions": 5
       },
       {
+        "tag": "Clement of Alexandria",
+        "mentions": 4
+      },
+      {
         "tag": "Egyptians",
         "mentions": 4
       },
@@ -16942,10 +16804,6 @@
       },
       {
         "tag": "John",
-        "mentions": 1
-      },
-      {
-        "tag": "Judeans",
         "mentions": 1
       },
       {
@@ -17086,10 +16944,6 @@
       },
       {
         "tag": "Edom",
-        "mentions": 2
-      },
-      {
-        "tag": "Julius Wellhausen",
         "mentions": 2
       },
       {
@@ -17370,15 +17224,7 @@
         "mentions": 1
       },
       {
-        "tag": "Judeans",
-        "mentions": 1
-      },
-      {
         "tag": "King Saul",
-        "mentions": 1
-      },
-      {
-        "tag": "Lot",
         "mentions": 1
       },
       {
@@ -17493,10 +17339,6 @@
       {
         "tag": "Hell",
         "mentions": 5
-      },
-      {
-        "tag": "Lot",
-        "mentions": 2
       },
       {
         "tag": "Romans",
@@ -17848,10 +17690,6 @@
         "mentions": 1
       },
       {
-        "tag": "Judeans",
-        "mentions": 1
-      },
-      {
         "tag": "Moses",
         "mentions": 1
       },
@@ -18051,10 +17889,6 @@
       },
       {
         "tag": "Judaism",
-        "mentions": 1
-      },
-      {
-        "tag": "Judeans",
         "mentions": 1
       },
       {
@@ -18288,10 +18122,6 @@
       },
       {
         "tag": "King David",
-        "mentions": 1
-      },
-      {
-        "tag": "Lachish",
         "mentions": 1
       },
       {
@@ -18653,10 +18483,6 @@
         "mentions": 1
       },
       {
-        "tag": "Judeans",
-        "mentions": 1
-      },
-      {
         "tag": "Tertullian",
         "mentions": 1
       },
@@ -18772,10 +18598,6 @@
       },
       {
         "tag": "Judah",
-        "mentions": 4
-      },
-      {
-        "tag": "Lot",
         "mentions": 4
       },
       {
@@ -19056,7 +18878,7 @@
       },
       {
         "tag": "Paul",
-        "mentions": 11
+        "mentions": 9
       },
       {
         "tag": "Elijah",
@@ -19080,10 +18902,6 @@
       },
       {
         "tag": "Daniel",
-        "mentions": 3
-      },
-      {
-        "tag": "Judeans",
         "mentions": 3
       },
       {
@@ -19262,11 +19080,11 @@
         "mentions": 7
       },
       {
-        "tag": "Paul",
-        "mentions": 6
+        "tag": "divine council",
+        "mentions": 4
       },
       {
-        "tag": "divine council",
+        "tag": "Paul",
         "mentions": 4
       },
       {
@@ -19528,10 +19346,6 @@
       },
       {
         "tag": "Martin Luther",
-        "mentions": 1
-      },
-      {
-        "tag": "Paul",
         "mentions": 1
       },
       {
@@ -19851,10 +19665,6 @@
       },
       {
         "tag": "Jericho",
-        "mentions": 2
-      },
-      {
-        "tag": "Megiddo",
         "mentions": 2
       },
       {
@@ -20237,10 +20047,6 @@
         "mentions": 29
       },
       {
-        "tag": "Paul",
-        "mentions": 12
-      },
-      {
         "tag": "Septuagint",
         "mentions": 12
       },
@@ -20290,6 +20096,10 @@
       },
       {
         "tag": "Jehoiakim",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
         "mentions": 2
       },
       {
@@ -20546,12 +20356,12 @@
         "mentions": 6
       },
       {
-        "tag": "Paul",
-        "mentions": 6
-      },
-      {
         "tag": "Eschatology",
         "mentions": 5
+      },
+      {
+        "tag": "Paul",
+        "mentions": 4
       },
       {
         "tag": "Capernaum",
@@ -21028,7 +20838,7 @@
     "tags": [
       {
         "tag": "Paul",
-        "mentions": 12
+        "mentions": 11
       },
       {
         "tag": "Judaism",
@@ -21388,10 +21198,6 @@
         "mentions": 3
       },
       {
-        "tag": "Lot",
-        "mentions": 3
-      },
-      {
         "tag": "Sukkot",
         "mentions": 3
       },
@@ -21670,7 +21476,7 @@
       },
       {
         "tag": "Paul",
-        "mentions": 15
+        "mentions": 11
       },
       {
         "tag": "Eschatology",
@@ -21776,12 +21582,12 @@
         "mentions": 12
       },
       {
-        "tag": "Paul",
+        "tag": "Rehoboam",
         "mentions": 11
       },
       {
-        "tag": "Rehoboam",
-        "mentions": 11
+        "tag": "Paul",
+        "mentions": 10
       },
       {
         "tag": "Molek",
@@ -22936,10 +22742,6 @@
         "mentions": 4
       },
       {
-        "tag": "Lachish",
-        "mentions": 3
-      },
-      {
         "tag": "Moses",
         "mentions": 3
       },
@@ -23204,7 +23006,7 @@
     "tags": [
       {
         "tag": "Paul",
-        "mentions": 73
+        "mentions": 70
       },
       {
         "tag": "Holy Spirit",
@@ -23592,10 +23394,6 @@
         "mentions": 1
       },
       {
-        "tag": "Lot",
-        "mentions": 1
-      },
-      {
         "tag": "Matthew",
         "mentions": 1
       },
@@ -23754,10 +23552,6 @@
         "mentions": 2
       },
       {
-        "tag": "Paul",
-        "mentions": 2
-      },
-      {
         "tag": "Bel and the Dragon",
         "mentions": 1
       },
@@ -23767,6 +23561,10 @@
       },
       {
         "tag": "Masoretic Text",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
         "mentions": 1
       },
       {
@@ -23976,6 +23774,10 @@
     "processedAt": "2026-04-05T23:08:34.865Z",
     "transcriptPath": "data/transcripts/2026-03-08-everyone-is-wrong-about-2-john.txt",
     "tags": [
+      {
+        "tag": "Clement of Alexandria",
+        "mentions": 15
+      },
       {
         "tag": "Clement of Rome",
         "mentions": 6
@@ -24260,10 +24062,6 @@
         "mentions": 3
       },
       {
-        "tag": "Judeans",
-        "mentions": 3
-      },
-      {
         "tag": "Moses",
         "mentions": 3
       },
@@ -24480,6 +24278,10 @@
         "mentions": 5
       },
       {
+        "tag": "Clement of Alexandria",
+        "mentions": 4
+      },
+      {
         "tag": "James",
         "mentions": 4
       },
@@ -24585,10 +24387,6 @@
       },
       {
         "tag": "Judah",
-        "mentions": 1
-      },
-      {
-        "tag": "Lachish",
         "mentions": 1
       },
       {
@@ -24714,10 +24512,6 @@
       },
       {
         "tag": "Garden of Eden",
-        "mentions": 4
-      },
-      {
-        "tag": "Lot",
         "mentions": 4
       },
       {
