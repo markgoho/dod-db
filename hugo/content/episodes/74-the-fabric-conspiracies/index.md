@@ -9,17 +9,15 @@ tags:
   - Ishmael
   - Midianites
   - Joseph
-  - Reuben
   - Judah
   - Deuteronomy
   - Torah
   - Judeans
-  - YHWH
   - Flavius Josephus
   - Gilead
   - Hell
-  - Josephus
   - Univocality
+  - YHWH
 books:
   - Exodus
   - Deuteronomy

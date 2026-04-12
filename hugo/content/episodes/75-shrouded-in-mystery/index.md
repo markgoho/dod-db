@@ -6,15 +6,14 @@ videoId: OLyMIgX2ueE
 aliases:
   - /episodes/75/
 tags:
-  - YHWH
   - Egyptians
   - Red Sea
   - Turin
   - Moses
+  - YHWH
   - Aaron
   - Isaac
   - Passover
-  - Clement of Alexandria
   - Ten Commandments
   - Canaan
   - Elephantine

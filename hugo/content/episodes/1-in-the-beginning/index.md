@@ -12,18 +12,16 @@ tags:
   - Eve
   - Satan
   - Garden of Eden
+  - Jacob
   - Ugarit
   - Abraham
   - Babylon
   - Cherubim
   - divine council
-  - Isaiah
   - Moab
   - Asherah
-  - Daniel
   - Elijah
   - Isaac
-  - James
   - Moses
   - Paul
   - Beelzebul
@@ -37,14 +35,16 @@ tags:
   - Judaism
   - Judeans
   - King James Version
-  - monotheism
+  - Monotheism
   - source criticism
   - Syria
 books:
-  - Genesis
-  - Exodus
-  - Isaiah
+  - 2 Kings
   - Deuteronomy
+  - Exodus
+  - Genesis
+  - Isaiah
+  - Numbers
   - Psalms
 segments:
   - Chapter and Verse

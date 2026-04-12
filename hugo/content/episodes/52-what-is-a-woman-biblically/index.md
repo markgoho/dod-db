@@ -13,16 +13,15 @@ tags:
   - Philistines
   - Eve
   - King James Version
+  - Peter
   - Romans
   - Junia
   - Paul
   - Univocality
-  - YHWH
   - Bethlehem
   - Hell
   - Judaism
   - Mary Magdalene
-  - Peter
 books:
   - Genesis
   - 2 Samuel

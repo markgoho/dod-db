@@ -7,6 +7,7 @@ aliases:
   - /episodes/44/
 tags:
   - Paul
+  - Augustine
   - Jennifer Bird
   - Gentiles
   - Judaism
@@ -15,6 +16,7 @@ tags:
   - Baal
   - Daniel
   - etiology
+  - Jacob
   - Ten Commandments
   - YHWH
 books:

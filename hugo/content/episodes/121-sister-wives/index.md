@@ -9,18 +9,18 @@ tags:
   - Abraham
   - Abimelech
   - Isaac
+  - Sarah
   - Philistines
   - King David
   - Rachel
-  - Sarah
   - YHWH
   - Laban
   - Jacob
   - Judah
   - Lot
-  - Rebekah
   - Canaan
   - King Saul
+  - Rebekah
   - Samuel
   - Bethlehem
   - etiology
@@ -32,10 +32,10 @@ tags:
   - Melchizedek
   - Nineveh
 books:
-  - Genesis
-  - Judges
   - 1 Samuel
   - Exodus
+  - Genesis
+  - Judges
 segments:
   - Taking Issue
   - What is That?

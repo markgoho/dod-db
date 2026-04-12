@@ -9,18 +9,17 @@ tags:
   - Paul
   - Judaism
   - Abraham
-  - James
   - Romans
   - Gentiles
   - Protestantism
   - circumcision
-  - Matthew
   - Catholicism
   - Philo of Alexandria
   - Rapture
   - Trinity
   - forgery
   - Hermeneia
+  - Judas Iscariot
   - King David
   - Maccabees
   - Saint Titus

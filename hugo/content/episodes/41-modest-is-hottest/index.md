@@ -14,24 +14,25 @@ tags:
   - Paul
   - Africans
   - Canaanites
-  - YHWH
   - Deuteronomy
   - Joshua
   - King James Version
-  - Matthew
   - Africa
   - Flood
   - Hell
+  - Islam
+  - King David
   - Peter
   - Abigail
   - Adam
   - Egyptians
   - etiology
   - Eve
-  - Islam
   - Joseph
   - Judaism
   - Romans
+  - Satan
+  - YHWH
 books:
   - Genesis
   - 1 Corinthians

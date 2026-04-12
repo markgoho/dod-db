@@ -8,7 +8,6 @@ aliases:
 tags:
   - Paul
   - Univocality
-  - James
   - Goliath
   - King David
   - Peter
@@ -18,9 +17,7 @@ tags:
   - Elhanan son of Jair
   - Esther
   - Romans
-  - Isaiah
   - Council of Jerusalem
-  - Jerusalem
   - King Saul
   - Origen
   - Philistines
@@ -32,6 +29,7 @@ tags:
   - Book of Enoch
   - Catholicism
   - Dead Sea Scrolls
+  - Isaiah
   - Marcion
   - Martin Luther
   - Matthew

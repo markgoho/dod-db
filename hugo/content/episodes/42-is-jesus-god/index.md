@@ -7,26 +7,26 @@ aliases:
   - /episodes/42/
 tags:
   - Trinity
+  - John
   - Abraham
   - Arius
-  - YHWH
   - Holy Spirit
   - Judaism
   - Moses
+  - YHWH
   - Constantine
   - Council of Nicaea
   - Isaac
-  - Isaiah
+  - Jacob
   - Paul
   - Philo of Alexandria
   - Septuagint
-  - Daniel
   - Deutero-Isaiah
   - Deuteronomy
-  - Joseph
+  - Isaiah
   - Justin Martyr
   - King James Version
-  - monotheism
+  - Monotheism
   - provenance
 books:
   - John

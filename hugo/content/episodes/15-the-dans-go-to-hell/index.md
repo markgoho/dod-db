@@ -7,16 +7,13 @@ aliases:
   - /episodes/15/
 tags:
   - Hell
-  - Matthew
   - Judas Iscariot
   - Book of Enoch
   - Jerusalem
-  - YHWH
+  - Papias of Hierapolis
   - Sheol
   - Univocality
-  - Isaiah
   - King Saul
-  - Endor
   - etiology
   - Samuel
   - Witch of Endor
@@ -34,11 +31,11 @@ tags:
   - Enoch
   - Flavius Josephus
   - Flood
-  - Josephus
+  - King David
   - King James Version
-  - Papias of Hierapolis
   - Pseudepigrapha
   - Satan
+  - YHWH
 books:
   - Isaiah
   - Matthew

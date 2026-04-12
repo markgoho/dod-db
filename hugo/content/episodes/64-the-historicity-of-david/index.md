@@ -7,32 +7,30 @@ aliases:
   - /episodes/64/
 tags:
   - King David
-  - Deborah
-  - Sisera
-  - YHWH
   - King Saul
   - Jonathan
-  - Barak
-  - Judah
   - Philistines
+  - Judah
   - Bathsheba
   - Jael
   - Abigail
+  - YHWH
   - Solomon
   - Jephthah
   - Samson
+  - Canaanites
   - Jerusalem
+  - Jacob
   - King Jabin
   - Abraham
+  - Bethel
   - Canaan
-  - Canaanites
-  - Galilee
+  - Elhanan son of Jair
   - Gentiles
   - Goliath
   - Isaac
   - Jeroboam
   - King Josiah
-  - Nehemiah
   - Paul
   - Rehoboam
   - Sea of Galilee

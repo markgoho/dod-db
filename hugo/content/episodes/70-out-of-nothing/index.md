@@ -10,18 +10,18 @@ tags:
   - Apocrypha
   - Creation ex nihilo
   - Bel and the Dragon
-  - Cyrus the Great
   - Maccabees
+  - Cyrus the Great
   - Babylon
   - Habakkuk
   - Monotheism
-  - YHWH
   - Antiochus IV Epiphanes
   - Judaism
   - Martin Luther
   - Protestantism
   - Romans
   - Septuagint
+  - Augustine
   - Baal
   - Deism
   - Elijah

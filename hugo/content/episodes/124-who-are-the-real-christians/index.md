@@ -7,8 +7,8 @@ aliases:
   - /episodes/124/
 tags:
   - Nephilim
-  - YHWH
   - Flood
+  - YHWH
   - Romans
   - Paul
   - divine council

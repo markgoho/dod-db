@@ -9,7 +9,6 @@ tags:
   - Rapture
   - Daniel
   - Persia
-  - YHWH
   - Eschatology
   - Judah
   - Babylon
@@ -17,9 +16,12 @@ tags:
   - King James Version
   - Michael
   - Cyrus the Great
+  - Isaiah
   - Judaism
   - Judeans
   - Latin Vulgate
+  - Matthew
+  - YHWH
   - Antiochus IV Epiphanes
   - Assyria
   - Deuteronomy

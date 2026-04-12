@@ -9,6 +9,7 @@ audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/1
 tags:
   - Origen
   - inerrancy
+  - Augustine
   - Babylon
   - historical criticism
   - Judaism
@@ -16,7 +17,6 @@ tags:
   - Satan
   - Adam
   - Canaanites
-  - Chicago Statement on Inerrancy
   - Dead Sea
   - Dead Sea Scrolls
   - Eve

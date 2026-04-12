@@ -6,10 +6,29 @@ videoId: XC0oJyopPgo
 aliases:
   - /episodes/140/
 tags:
+  - Mary Magdalene
   - Flavius Josephus
   - Crucifixion
+  - Catholicism
+  - Jeremiah
+  - Turin
+  - Pontius Pilate
+  - inerrancy
+  - Romans
+  - Univocality
+  - Galilee
+  - James
+  - Adam
   - Annunciation
-  - Codex Vaticanus
+  - Augustine
+  - Eusebius
+  - Hell
+  - Passover
+  - Paul
+  - Philo of Alexandria
+  - Pliny the Younger
+  - Protestantism
+  - Septuagint
 books:
   - Matthew
   - John

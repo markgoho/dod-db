@@ -12,13 +12,13 @@ tags:
   - Jerusalem
   - Cherubim
   - King David
+  - Samuel
   - Asherah
   - Jeremiah
   - Jericho
   - Megiddo
   - Moses
   - Passover
-  - Samuel
   - Babylon
   - Egyptians
   - Joseph

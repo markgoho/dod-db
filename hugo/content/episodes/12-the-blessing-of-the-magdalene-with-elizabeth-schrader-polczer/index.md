@@ -7,24 +7,19 @@ aliases:
   - /episodes/12/
 tags:
   - Mary Magdalene
-  - Luke
   - Peter
   - Bethany
-  - Matthew
-  - Galilee
   - Sea of Galilee
   - Flavius Josephus
-  - James
-  - Joseph
-  - Josephus
   - Paul
   - Eusebius
+  - Gospel of Thomas
   - Tertullian
   - King James Version
   - source criticism
   - Apocrypha
   - Codex Sinaiticus
-  - Codex Vaticanus
+  - James
   - Jerusalem
   - Judas Iscariot
   - Junia

@@ -13,19 +13,17 @@ tags:
   - Judah
   - Capernaum
   - Samaria
-  - YHWH
   - Ahab
   - Jerusalem
   - Univocality
   - inerrancy
   - Joshua
-  - King David
   - Pontius Pilate
+  - King David
   - King James Version
   - Moses
   - Samuel
   - baptism
-  - Galilee
   - Peter
   - Abraham
   - Book of Enoch
@@ -33,9 +31,10 @@ tags:
   - Dead Sea Scrolls
   - Deuteronomy
   - Egyptians
+  - Galilee
   - Gideon
   - Hagar
-  - Jehoshaphat
+  - Isaiah
   - Judas Iscariot
   - King Saul
   - Maccabees
@@ -43,6 +42,7 @@ tags:
   - Nazareth
   - Sea of Galilee
   - Solomon
+  - YHWH
 books:
   - Mark
   - Joshua

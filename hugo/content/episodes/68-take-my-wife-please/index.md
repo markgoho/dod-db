@@ -10,15 +10,16 @@ tags:
   - Er
   - Onan
   - Tamar
-  - Deuteronomy
   - Shelah
+  - Deuteronomy
   - Boaz
   - Joseph
-  - YHWH
   - Canaan
+  - Jacob
   - Samson
   - Satan
   - Ten Commandments
+  - YHWH
 books:
   - Deuteronomy
   - Leviticus

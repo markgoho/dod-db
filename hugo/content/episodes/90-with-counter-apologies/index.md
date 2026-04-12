@@ -18,7 +18,6 @@ tags:
   - Enoch
   - Flood
   - inerrancy
-  - Isaiah
   - Lamech
   - Satan
   - Univocality
@@ -26,6 +25,7 @@ tags:
   - Ham
   - Hell
   - Holy Spirit
+  - Isaiah
   - Jerusalem
   - Moses
   - Red Sea

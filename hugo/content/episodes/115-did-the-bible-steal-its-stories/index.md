@@ -12,10 +12,10 @@ tags:
   - Baal
   - Babylon
   - Flood
+  - Canaanites
   - Jerusalem
   - Cyrus the Great
   - Abraham
-  - Enuma Elish
   - Eschatology
   - Isaiah
   - Second Temple period

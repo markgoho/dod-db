@@ -17,16 +17,16 @@ tags:
   - Apocrypha
   - Baal
   - Mary Magdalene
-  - Virgin Birth
   - Athanasius of Alexandria
   - baptism
   - Catholicism
   - Eusebius
   - Hypostasis
   - Justin Martyr
-  - monotheism
+  - Monotheism
   - Paul
   - Romans
+  - Virgin Birth
 books:
   - Isaiah
 segments:

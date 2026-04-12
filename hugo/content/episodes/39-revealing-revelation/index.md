@@ -7,22 +7,20 @@ aliases:
   - /episodes/39/
 tags:
   - Hell
+  - John
   - Paul
-  - YHWH
   - Athanasius of Alexandria
+  - Daniel
   - Eschatology
   - Moses
   - Satan
-  - Daniel
-  - Isaiah
   - Jezebel
+  - Garden of Eden
   - Anatolia
   - Balaam
   - Codex Sinaiticus
   - Dionysius of Alexandria
   - Domitian
-  - Garden of Eden
-  - Jerusalem
   - Judah
   - Nero
   - Preterism
@@ -33,6 +31,7 @@ tags:
   - Deuteronomy
   - Euphrates
   - Gnostic
+  - Jerusalem
   - John of Patmos
   - Justin Martyr
   - Pergamum
@@ -40,6 +39,7 @@ tags:
   - Romans
   - Septuagint
   - Ugarit
+  - YHWH
 books:
   - Isaiah
   - Revelation

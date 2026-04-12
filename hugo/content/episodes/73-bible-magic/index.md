@@ -12,12 +12,9 @@ tags:
   - Judaism
   - Dead Sea Scrolls
   - Flavius Josephus
-  - Josephus
   - Lilith
   - Asherah
   - Babylon
-  - Endor
-  - Galilee
   - Judah
   - Protestantism
   - Torah
@@ -27,16 +24,15 @@ tags:
   - Catholicism
   - Deuteronomy
   - etiology
+  - Galilee
   - Hell
   - Jerusalem
   - Jonathan
   - Judas Iscariot
   - Laban
   - Moab
-  - Nehemiah
   - Paul
   - Philistines
-  - Samuel
   - Satan
   - Sea of Galilee
 books:

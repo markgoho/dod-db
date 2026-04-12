@@ -11,12 +11,12 @@ tags:
   - Mary Magdalene
   - Jerusalem
   - King David
-  - Galilee
   - John the Baptist
   - Paul
   - Septuagint
   - Gabriel
   - Gospel of James
+  - Galilee
   - Elizabeth
   - Herod the Great
   - Sea of Galilee
@@ -33,7 +33,6 @@ tags:
   - Hell
   - Holy Spirit
   - Jacob
-  - Josephus
   - Maccabees
   - Romans
 books:

@@ -10,7 +10,6 @@ tags:
   - Philo of Alexandria
   - Jerusalem
   - Pseudepigrapha
-  - Galilee
   - Sea of Galilee
   - forgery
   - Judaism
@@ -22,6 +21,7 @@ tags:
   - Athanasius of Alexandria
   - baptism
   - Flavius Josephus
+  - Galilee
   - Gnostic
   - Gospel of Thomas
   - Mary Magdalene

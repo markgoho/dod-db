@@ -6,15 +6,17 @@ videoId: oKe-ukUfIKs
 aliases:
   - /episodes/66/
 tags:
-  - YHWH
   - Ten Commandments
+  - YHWH
   - Asherah
   - Baal
   - Judaism
   - Islam
+  - Jacob
   - Jehu
   - King James Version
   - Onan
+  - Satan
   - Ugarit
   - Catholicism
   - Cherubim
@@ -22,12 +24,12 @@ tags:
   - Elijah
   - Jerusalem
   - Joram
+  - King David
   - Mary Magdalene
   - Masoretic Text
   - Moses
   - Protestantism
   - Ritual Decalogue
-  - Satan
 books:
   - Exodus
   - Habakkuk

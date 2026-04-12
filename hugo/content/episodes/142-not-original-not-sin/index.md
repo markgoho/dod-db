@@ -6,6 +6,25 @@ videoId: d05D1TuJNHI
 aliases:
   - /episodes/142/
 tags:
+  - Adam
+  - Eve
+  - Paul
+  - Garden of Eden
+  - etiology
+  - Romans
+  - Satan
+  - Augustine
+  - Book of Enoch
+  - baptism
+  - Isaiah
+  - Abraham
+  - Cherubim
+  - Gospel of James
+  - Justin Martyr
+  - King James Version
+  - Noah
+  - Saint Titus
+  - Septuagint
   - Tertullian
   - The Reformation
 books:

@@ -11,16 +11,16 @@ tags:
   - Satan
   - Isaac
   - Gentiles
-  - YHWH
   - Egyptians
+  - King Saul
   - Acts of Paul and Thecla
+  - Apocrypha
   - Holy Spirit
   - Ignatius
+  - Islam
   - Jeremiah
   - Judaism
-  - King Saul
   - Romans
-  - Thecla
 books:
   - 2 Corinthians
   - Galatians

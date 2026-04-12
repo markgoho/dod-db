@@ -6,20 +6,22 @@ videoId: pXbbaMXd62k
 aliases:
   - /episodes/57/
 tags:
+  - Matthew
   - Book of Enoch
-  - King David
   - Enoch
   - Univocality
-  - YHWH
   - Athenagoras
   - Catholicism
   - divine council
   - Eve
+  - Flood
   - Jerusalem
+  - John
   - Judah
   - King James Version
   - Paul
   - Septuagint
+  - YHWH
 books:
   - Psalms
   - Genesis

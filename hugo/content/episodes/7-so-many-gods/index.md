@@ -15,11 +15,9 @@ tags:
   - Baal
   - Hezekiah
   - Joram
-  - Jehoshaphat
   - King Sennacherib
   - Samaria
   - Edom
-  - Elisha
   - Masoretic Text
   - Ahab
   - Assyria
@@ -32,20 +30,20 @@ tags:
   - Jerusalem
   - Moabites
   - Syria
-  - Galilee
+  - Daniel
   - Jeremiah
   - Jeroboam
   - King David
   - Leningrad Codex
-  - monotheism
+  - Monotheism
   - Moses
   - Persia
   - Sea of Galilee
   - Septuagint
   - Bethel
-  - Daniel
   - Dead Sea Scrolls
   - Edomites
+  - Jacob
   - Jephthah
   - Judaism
   - King Josiah

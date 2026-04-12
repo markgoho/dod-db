@@ -13,10 +13,9 @@ tags:
   - Tertius
   - Luke
   - Nazareth
-  - Clement of Alexandria
-  - Clement of Rome
   - Pliny the Younger
   - Africa
+  - Clement of Rome
   - Crucifixion
   - First Clement
   - Martin Luther

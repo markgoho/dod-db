@@ -11,6 +11,7 @@ tags:
   - Gnostic
   - King Josiah
   - Joshua
+  - Samuel
   - Judaism
   - Quran
   - YHWH

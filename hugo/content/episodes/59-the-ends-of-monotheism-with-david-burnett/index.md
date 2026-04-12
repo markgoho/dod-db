@@ -18,13 +18,12 @@ tags:
   - Second Temple period
   - YHWH
   - Creation ex nihilo
+  - Jacob
   - Septuagint
   - Baal
   - Deutero-Isaiah
   - divine council
   - Elephantine
-  - Herod Antipas
-  - Herod the Great
   - Isaac
   - Islam
   - King James Version

@@ -15,10 +15,11 @@ tags:
   - Isaiah
   - Jacob
   - Luke
+  - Philip
   - Stephen
   - Trinity
   - Abraham
-  - Chicago Statement on Inerrancy
+  - Augustine
   - Deuteronomy
   - Jeroboam
   - Joseph

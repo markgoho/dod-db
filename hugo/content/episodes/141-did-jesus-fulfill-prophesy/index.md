@@ -6,7 +6,28 @@ videoId: VEfI1TgWVHY
 aliases:
   - /episodes/141/
 tags:
+  - Bethlehem
   - Nazareth
+  - Mary Magdalene
+  - Galilee
+  - Matthew
+  - Jerusalem
+  - Paul
+  - Septuagint
+  - King David
+  - Syria
+  - Judah
+  - Romans
+  - Virgin Birth
+  - Herod the Great
+  - Isaiah
+  - baptism
+  - Jeremiah
+  - King James Version
+  - Luke
+  - Passover
+  - Peter
+  - Rachel
 books:
   - Luke
   - Isaiah

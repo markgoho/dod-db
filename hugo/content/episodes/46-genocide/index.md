@@ -7,8 +7,8 @@ aliases:
   - /episodes/46/
 tags:
   - Joshua
-  - YHWH
   - Canaanites
+  - Matthew
   - Moses
   - Deuteronomy
   - Jericho
@@ -24,6 +24,7 @@ tags:
   - Flood
   - inerrancy
   - Sodom
+  - YHWH
   - Gaza
   - Judaism
   - Judas Iscariot

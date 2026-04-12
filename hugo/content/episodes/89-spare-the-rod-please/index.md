@@ -15,6 +15,7 @@ tags:
   - Origen
   - Solomon
   - Univocality
+  - Augustine
   - cognitive dissonance
   - Hermeneia
   - inerrancy

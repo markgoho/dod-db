@@ -15,14 +15,15 @@ tags:
   - Lachish
   - Moab
   - Tamar
-  - YHWH
   - Assyria
   - Bethlehem
+  - YHWH
   - Nineveh
   - Isaiah
   - King Josiah
   - Arad
   - Babylon
+  - Hesed
   - Jonah
   - King David
   - King James Version

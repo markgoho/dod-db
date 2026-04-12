@@ -15,6 +15,7 @@ tags:
   - Passover
   - Sanhedrin
   - Easter
+  - Garden of Gethsemane
   - Galilee
   - Hell
   - Jonah
@@ -25,12 +26,12 @@ tags:
   - Antiochus IV Epiphanes
   - Athanasius of Alexandria
   - baptism
-  - Clement of Alexandria
+  - Clement of Rome
   - Crucifixion
   - Daniel
   - Elijah
   - Herod Antipas
-  - Herod the Great
+  - James
   - Maccabees
   - Peter
   - Tertullian

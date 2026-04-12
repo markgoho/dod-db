@@ -7,10 +7,8 @@ aliases:
   - /episodes/53/
 tags:
   - Holy Spirit
-  - Elisha
-  - King Saul
   - Trinity
-  - YHWH
+  - King Saul
   - Elijah
   - King James Version
   - Satan
@@ -20,10 +18,12 @@ tags:
   - Catholicism
   - Ham
   - inerrancy
+  - John
   - Judah
   - Judaism
   - Philo of Alexandria
   - Samaria
+  - YHWH
 books:
   - Genesis
   - Proverbs

@@ -22,13 +22,13 @@ tags:
   - Septuagint
   - Africa
   - Balaam
+  - Canaanites
   - Deuteronomy
   - etiology
   - Gabriel
-  - Galilee
   - Herod Antipas
-  - Isaiah
   - Jerusalem
+  - Lilith
   - Michael
   - Moses
   - Rapture
@@ -36,7 +36,6 @@ tags:
   - Sea of Galilee
   - Sheol
   - Ugarit
-  - Uriel
 books:
   - Luke
   - Matthew

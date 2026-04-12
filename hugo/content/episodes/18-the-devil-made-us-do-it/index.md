@@ -18,10 +18,8 @@ tags:
   - divine council
   - Judaism
   - King David
-  - Samuel
   - Adam
   - Eve
-  - Isaiah
   - Septuagint
   - Amorites
   - Dead Sea
@@ -38,13 +36,12 @@ tags:
   - Apocrypha
   - Book of Enoch
   - Dead Sea Scrolls
-  - James
   - Jerome
   - Joseph
   - Justin Martyr
   - King James Version
-  - Luke
   - Moabites
+  - Samuel
 books:
   - 2 Samuel
   - Numbers

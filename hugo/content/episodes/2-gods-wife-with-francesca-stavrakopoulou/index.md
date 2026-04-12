@@ -9,6 +9,7 @@ tags:
   - YHWH
   - child sacrifice
   - Molek
+  - Isaiah
   - Asherah
   - Jerusalem
   - Adam
@@ -21,7 +22,6 @@ tags:
   - Baal
   - Carthage
   - divine council
-  - Isaiah
   - Babylon
   - Deuteronomy
   - Elephantine

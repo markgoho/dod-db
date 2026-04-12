@@ -13,20 +13,18 @@ tags:
   - Peter
   - Leningrad Codex
   - Jerusalem
-  - Mary Magdalene
   - John
+  - Mary Magdalene
   - Matthew
   - Textus Receptus
   - Babylon
   - Catholicism
   - Judaism
-  - Galilee
   - Gospel of James
   - King James Version
   - Luke
   - Moses
   - Anatolia
-  - Clement of Alexandria
   - Constantine
   - Council of Jerusalem
   - Cyrus the Great
@@ -35,6 +33,7 @@ tags:
   - Deuteronomy
   - Elijah
   - Eusebius
+  - Galilee
   - Hermeneia
   - Isaiah
   - John of Patmos

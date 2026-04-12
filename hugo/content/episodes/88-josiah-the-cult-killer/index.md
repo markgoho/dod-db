@@ -15,6 +15,7 @@ tags:
   - Deuteronomy
   - Judah
   - Baal
+  - Samuel
   - Bethel
   - Moab
   - Assyria
@@ -22,12 +23,10 @@ tags:
   - Arad
   - Judeans
   - Lachish
-  - Sisera
   - Babylon
   - Bethlehem
   - Christian Nationalism
   - divine council
-  - King David
   - King James Version
   - Nineveh
 books:

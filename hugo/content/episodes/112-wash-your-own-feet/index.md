@@ -6,14 +6,14 @@ videoId: kiOlyxiorow
 aliases:
   - /episodes/112/
 tags:
-  - Peter
   - Maccabees
+  - Peter
   - Luke
   - Apocrypha
   - Creation ex nihilo
   - Flavius Josephus
+  - Judas Maccabeus
   - Matthew
-  - Moses
   - Adam
   - Antiochus IV Epiphanes
   - Assumption of Moses
@@ -23,10 +23,11 @@ tags:
   - Hanukkah
   - Hell
   - Jerusalem
-  - John
   - Judah
   - Judaism
   - Judas Iscariot
+  - Moses
+  - Passover
   - Romans
   - Syria
 books:

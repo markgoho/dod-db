@@ -7,23 +7,19 @@ aliases:
   - /episodes/17/
 tags:
   - King James Version
-  - James
   - William Tyndale
   - Apocrypha
   - Desiderius Erasmus
-  - Matthew
   - Textus Receptus
-  - YHWH
   - Martin Luther
-  - Codex Vaticanus
   - Hell
   - Latin Vulgate
   - Constantine
   - Council of Nicaea
   - Eusebius
   - Isaiah
+  - John
   - Jonah
-  - Luke
   - Moses
   - Mount Sinai
   - Paul

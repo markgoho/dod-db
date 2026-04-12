@@ -11,6 +11,7 @@ tags:
   - Islam
   - Deism
   - The Reformation
+  - Augustine
   - Gnostic
   - Monotheism
   - Peter

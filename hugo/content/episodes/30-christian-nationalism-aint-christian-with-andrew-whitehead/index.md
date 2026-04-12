@@ -13,7 +13,7 @@ tags:
   - Solomon
   - Cyrus the Great
   - Isaiah
-  - King David
+  - Islam
   - YHWH
 books:
   - Romans

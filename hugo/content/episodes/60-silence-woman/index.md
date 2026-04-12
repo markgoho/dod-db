@@ -8,7 +8,6 @@ aliases:
 tags:
   - Paul
   - Priscilla
-  - YHWH
   - Aquila
   - Moses
   - Eve
@@ -18,11 +17,11 @@ tags:
   - Romans
   - Catholicism
   - inerrancy
-  - Luke
   - Saint Titus
   - Southern Baptist Convention
   - Textus Receptus
   - Univocality
+  - YHWH
 books:
   - 1 Corinthians
   - John

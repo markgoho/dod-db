@@ -13,7 +13,7 @@ tags:
   - Medes
   - Antiochus IV Epiphanes
   - Persia
-  - YHWH
+  - Median Kingdom
   - Eschatology
   - Nabonidus
   - Cyrus the Great
@@ -23,7 +23,6 @@ tags:
   - Dead Sea Scrolls
   - Judaism
   - King James Version
-  - Median Kingdom
   - Second Temple period
   - Adam
   - Catholicism

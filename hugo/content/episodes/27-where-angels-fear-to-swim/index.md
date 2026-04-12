@@ -9,7 +9,6 @@ tags:
   - Euphrates
   - Book of Enoch
   - Nephilim
-  - YHWH
   - Flood
   - Judaism
   - Eschatology
@@ -19,16 +18,17 @@ tags:
   - Goliath
   - Noah
   - Rapture
+  - YHWH
   - Canaan
   - child sacrifice
   - Enoch
   - Islam
+  - Jacob
   - Jerusalem
   - King James Version
   - Peter
   - Satan
   - Septuagint
-  - Seth
   - Sodom
 books:
   - Genesis

@@ -17,7 +17,6 @@ tags:
   - Nebuchadnezzar
   - Jeremiah
   - Nabonidus
-  - Samuel
   - Dead Sea
   - Jerusalem
   - Leningrad Codex
@@ -25,13 +24,11 @@ tags:
   - Essenes
   - Gilead
   - Moses
-  - Nehemiah
   - Trinity
   - YHWH
   - Enoch
   - Eschatology
   - Flavius Josephus
-  - Josephus
   - Judaism
   - Mount Gerizim
   - Romans
@@ -39,8 +36,8 @@ tags:
   - Torah
   - Book of Enoch
   - Esther
-  - Herod the Great
   - inerrancy
+  - Jacob
   - Judeans
   - King Saul
   - Mount Ebal

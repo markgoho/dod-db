@@ -9,15 +9,14 @@ tags:
   - Enoch
   - Book of Enoch
   - Noah
-  - Eschatology
-  - Methuselah
-  - YHWH
-  - Daniel
-  - Adam
-  - Cain
-  - Asael
-  - Dead Sea Scrolls
   - Flood
+  - Eschatology
+  - Daniel
+  - Methuselah
+  - Adam
+  - Asael
+  - Cain
+  - Dead Sea Scrolls
   - Ham
   - Hermeneia
   - Qumran
@@ -27,6 +26,7 @@ tags:
   - Lamech
   - Satan
   - Isaac
+  - Jacob
   - Judeans
   - Septuagint
   - Seth
@@ -36,6 +36,7 @@ tags:
   - Origen
   - Pseudepigrapha
   - Shem
+  - YHWH
   - Africa
   - Apocrypha
   - circumcision
@@ -43,14 +44,13 @@ tags:
   - Deuteronomy
   - Esau
   - Eve
+  - Garden of Eden
   - Judaism
   - King James Version
   - Maccabees
   - Nephilim
-  - Raphael
   - Syria
   - Tertullian
-  - Uriel
 books:
   - Genesis
 segments:

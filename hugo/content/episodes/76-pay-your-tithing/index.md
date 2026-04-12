@@ -9,7 +9,6 @@ tags:
   - Deuteronomy
   - Peter
   - Sapphira
-  - YHWH
   - Abraham
   - Judah
   - Joshua
@@ -24,6 +23,7 @@ tags:
   - Romans
   - Satan
   - Ugarit
+  - YHWH
 books:
   - Deuteronomy
   - Malachi

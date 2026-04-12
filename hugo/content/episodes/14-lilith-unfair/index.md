@@ -8,16 +8,15 @@ aliases:
 tags:
   - Lilith
   - Adam
-  - YHWH
   - Asherah
+  - YHWH
   - Moses
   - Eve
-  - Sarah
   - etiology
   - Garden of Eden
-  - Isaiah
   - King James Version
   - Torah
+  - Jacob
   - Joshua
   - Judah
   - Philistines
@@ -31,7 +30,6 @@ tags:
   - Ketef Hinnom
   - Lachish
   - Mary Magdalene
-  - Samuel
   - Ten Commandments
 books:
   - Genesis

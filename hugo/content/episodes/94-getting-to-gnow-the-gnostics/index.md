@@ -15,10 +15,10 @@ tags:
   - Arius
   - baptism
   - John the Baptist
+  - Judas Iscariot
   - Peter
   - YHWH
   - Catholicism
-  - Codex Vaticanus
   - Eusebius
   - Gospel of Thomas
   - James

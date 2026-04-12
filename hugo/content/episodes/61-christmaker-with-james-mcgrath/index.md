@@ -11,7 +11,6 @@ tags:
   - Gnostic
   - Herod Antipas
   - Flavius Josephus
-  - Josephus
   - Essenes
   - Jerusalem
   - Qumran
@@ -21,15 +20,17 @@ tags:
   - Gospel of Thomas
   - Islam
   - Samson
+  - Samuel
   - Adam
   - Babylon
   - circumcision
-  - Elizabeth
   - Holy Spirit
   - inerrancy
   - Judah
+  - Judas Iscariot
+  - Luke
+  - Matthew
   - Protestantism
-  - Samuel
   - Talmud
   - Torah
 books:

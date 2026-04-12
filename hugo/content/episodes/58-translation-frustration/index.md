@@ -12,13 +12,13 @@ tags:
   - Dead Sea Scrolls
   - Desiderius Erasmus
   - Sir Thomas More
-  - YHWH
   - Catholicism
   - Deuteronomy
   - Monotheism
   - Textus Receptus
   - Abraham
   - Adam
+  - Daniel
   - Dead Sea
   - Garden of Eden
   - Latin Vulgate
@@ -27,11 +27,10 @@ tags:
   - Moses
   - Univocality
   - Creation ex nihilo
-  - Daniel
   - divine council
   - Elijah
-  - Endor
   - Irenaeus
+  - Jacob
   - Jerome
   - Judaism
   - Martin Luther

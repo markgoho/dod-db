@@ -8,11 +8,11 @@ aliases:
 tags:
   - Bethlehem
   - Jerusalem
-  - Matthew
   - Deism
   - Easter
   - Garden of Eden
   - Gentiles
+  - John
   - Judaism
   - Persia
   - Romans
@@ -23,7 +23,7 @@ tags:
   - Dead Sea Scrolls
   - Herod the Great
   - Isaiah
-  - Joseph
+  - Jacob
   - Joshua
   - King David
   - King James Version

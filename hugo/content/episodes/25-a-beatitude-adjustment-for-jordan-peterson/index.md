@@ -6,19 +6,16 @@ videoId: Xtm9DX_0Rx0
 aliases:
   - /episodes/25/
 tags:
-  - Matthew
-  - Luke
   - YHWH
+  - Luke
   - Eschatology
-  - Isaiah
-  - Galilee
   - Hell
   - Judaism
   - Sea of Galilee
   - Septuagint
   - Dead Sea Scrolls
   - Deuteronomy
-  - James
+  - Jacob
   - Latin Vulgate
   - Moses
 books:

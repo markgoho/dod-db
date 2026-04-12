@@ -30,7 +30,6 @@ tags:
   - Textus Receptus
   - Trinity
   - Abraham
-  - Codex Vaticanus
   - Dead Sea Scrolls
   - forgery
   - Hermeneia

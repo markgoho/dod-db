@@ -6,6 +6,7 @@ videoId: XO3fcbF6Jyc
 aliases:
   - /episodes/63/
 tags:
+  - Jacob
   - Philistines
   - Samson
   - Isaac
@@ -13,7 +14,6 @@ tags:
   - Laban
   - Esau
   - Rachel
-  - YHWH
   - Moses
   - John the Baptist
   - Samuel
@@ -23,7 +23,6 @@ tags:
   - Jephthah
   - Judah
   - Leah
-  - Esther
   - King James Version
   - Tamar
   - Ugarit

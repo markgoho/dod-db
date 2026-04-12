@@ -12,6 +12,7 @@ tags:
   - Stephen
   - Jacob
   - Molek
+  - Terah
   - YHWH
   - Deuteronomy
   - Gnostic

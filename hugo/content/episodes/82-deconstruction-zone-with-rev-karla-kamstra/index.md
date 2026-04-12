@@ -9,7 +9,6 @@ tags:
   - Southern Baptist Convention
   - Rapture
   - Christian Nationalism
-  - YHWH
 guests:
   - Rev Karla Kamstra
 draft: false

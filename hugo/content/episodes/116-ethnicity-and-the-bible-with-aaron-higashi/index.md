@@ -31,7 +31,6 @@ tags:
   - Moses
   - Paul
   - Philistines
-  - Samuel
 books:
   - Genesis
   - Exodus

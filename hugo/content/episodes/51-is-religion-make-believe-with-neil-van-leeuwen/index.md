@@ -9,7 +9,6 @@ tags:
   - Catholicism
   - Dead Sea Scrolls
   - Garden of Eden
-  - Justin Martyr
 guests:
   - Neil Van Leeuwen
 draft: false

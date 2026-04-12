@@ -1232,7 +1232,7 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Irenaeus",
-    variations: [],
+    variations: ["Irenaeus of Lyons"],
     category: "person",
     llmVerify: true,
     description:
@@ -5562,6 +5562,3416 @@ export const tagVocabulary: TagDefinition[] = [
       "Christian eschatological view or belief that interprets some (partial preterism) or all (full preterism) prophecies of the Bible as events which have already been fulfilled in history",
     status: "accepted",
     episodes: [4, 32, 39, 118, 119],
+  },
+  {
+    canonical: "Israel",
+    variations: ["Israelite", "Israelites"],
+    category: "people",
+    description:
+      "Ancient Israelite nation or people, often referring to the descendants of Jacob; name also used for the Northern Kingdom",
+    status: "proposed",
+  },
+  {
+    canonical: "Egypt",
+    variations: ["Egyptian", "Egyptians"],
+    category: "place",
+    description:
+      "Ancient civilization in North Africa, known for its pharaohs, pyramids, and complex religious beliefs",
+    status: "proposed",
+  },
+  {
+    canonical: "Serpent",
+    variations: ["serpent's"],
+    category: "character",
+    description:
+      "The talking snake in the Genesis story of the Garden of Eden, who tempts Eve to eat the forbidden fruit.",
+    status: "proposed",
+  },
+  {
+    canonical: "Francesca Stavrakopoulou",
+    variations: ["Professor Stavrakopoulou"],
+    category: "person",
+    description:
+      "Professor of Hebrew Bible and Ancient Religion at Exeter University. Guest on the podcast",
+    status: "proposed",
+  },
+  {
+    canonical: "academia",
+    variations: ["academic"],
+    category: "miscellaneous",
+    description: "The academic world, higher education system",
+    status: "proposed",
+  },
+  {
+    canonical: "atheism",
+    variations: ["atheist"],
+    category: "theology",
+    description:
+      "Disbelief in the existence of God or gods; the absence of religious belief",
+    status: "proposed",
+  },
+  {
+    canonical: "theology",
+    variations: ["theologian"],
+    category: "theology",
+    description:
+      "The study of God and religious beliefs, often from a confessional or faith-based perspective",
+    status: "proposed",
+  },
+  {
+    canonical: "el",
+    variations: ["Elohim"],
+    category: "character",
+    description:
+      "The high god in the Canaanite pantheon, often associated with wisdom and authority",
+    status: "proposed",
+  },
+  {
+    canonical: "anat",
+    variations: ["Anath"],
+    category: "character",
+    description:
+      "A prominent goddess in the Canaanite pantheon, known for her fierce and warlike nature",
+    status: "proposed",
+  },
+  {
+    canonical: "exeter",
+    variations: [],
+    category: "place",
+    description: "A city in England, location of Exeter University",
+    status: "proposed",
+  },
+  {
+    canonical: "angels",
+    variations: ["angel"],
+    category: "theology",
+    description:
+      "Divine messengers or supernatural beings who appear in biblical narratives, often serving as intermediaries between God and humans.",
+    status: "proposed",
+  },
+  {
+    canonical: "Museum of the Bible",
+    variations: ["the Museum of the Bible"],
+    category: "miscellaneous",
+    description:
+      "A museum in Washington D.C. dedicated to the history, narrative, and impact of the Bible.",
+    status: "proposed",
+  },
+  {
+    canonical: "archaeologists",
+    variations: ["archaeologist"],
+    category: "person",
+    description:
+      "People who study human history and prehistory by excavating sites and analyzing artifacts.",
+    status: "proposed",
+  },
+  {
+    canonical: "Bart Ehrman",
+    variations: ["Ehrman"],
+    category: "person",
+    description:
+      "New Testament scholar and professor at UNC Chapel Hill, known for work on textual criticism and early Christianity",
+    status: "proposed",
+  },
+  {
+    canonical: "Bruce Metzger",
+    variations: [],
+    category: "person",
+    description: "A New Testament scholar and textual critic",
+    status: "proposed",
+  },
+  {
+    canonical: "Inanna",
+    variations: [],
+    category: "character",
+    description:
+      "Sumerian goddess of love, war, and fertility, counterpart to the Akkadian goddess Ishtar",
+    status: "proposed",
+  },
+  {
+    canonical: "Ishtar",
+    variations: [],
+    category: "character",
+    description:
+      "Akkadian goddess of love, war, and fertility, associated with the planet Venus",
+    status: "proposed",
+  },
+  {
+    canonical: "Eostre",
+    variations: ["Ostara"],
+    category: "character",
+    description:
+      "Germanic goddess associated with spring and the origin of the name 'Easter'",
+    status: "proposed",
+  },
+  {
+    canonical: "Bede",
+    variations: ["Beda"],
+    category: "person",
+    description:
+      "An English monk and scholar who wrote about Eostre and the origins of Easter",
+    status: "proposed",
+  },
+  {
+    canonical: "chromicles",
+    variations: ["book of chronicles"],
+    category: "literature",
+    description: "Books of Chronicles in the Hebrew Bible/Old Testament",
+    status: "proposed",
+  },
+  {
+    canonical: "King Mesha",
+    variations: ["Mesha"],
+    category: "person",
+    description:
+      "King of Moab in the 9th century BCE, known for the Mesha Stele",
+    status: "proposed",
+  },
+  {
+    canonical: "Chemosh",
+    variations: [],
+    category: "character",
+    description:
+      "The national god of the Moabites, mentioned in the Hebrew Bible and the Mesha Stele",
+    status: "proposed",
+  },
+  {
+    canonical: "Elisha",
+    variations: [],
+    category: "character",
+    description:
+      "A prophet in the Northern Kingdom of Israel, successor to Elijah",
+    status: "proposed",
+  },
+  {
+    canonical: "King Jehoshaphat",
+    variations: ["Jehoshaphat"],
+    category: "person",
+    description:
+      "King of Judah in the 9th century BCE, mentioned in the Books of Kings and Chronicles",
+    status: "proposed",
+  },
+  {
+    canonical: "Dan McClellan",
+    variations: ["McClellan"],
+    category: "person",
+    description: "Co-host of Data Over Dogma podcast",
+    status: "proposed",
+  },
+  {
+    canonical: "Colorado Springs",
+    variations: ["Colorado"],
+    category: "place",
+    description: "City in Colorado where Aaron Higashi grew up",
+    status: "proposed",
+  },
+  {
+    canonical: "TikTok",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Social media platform used by the hosts and guest to share biblical content",
+    status: "proposed",
+  },
+  {
+    canonical: "Hermeneutics",
+    variations: ["hermeneutic"],
+    category: "scholarship",
+    description:
+      "The study of the principles of interpretation of texts, especially the Bible",
+    status: "proposed",
+  },
+  {
+    canonical: "mark of the beast",
+    variations: ["the mark of the beast"],
+    category: "theology",
+    description:
+      "A symbolic mark described in the Book of Revelation, often interpreted as a sign of allegiance to evil or opposition to God.",
+    status: "proposed",
+  },
+  {
+    canonical: "greco-roman world",
+    variations: ["Greco-Roman"],
+    category: "place",
+    description:
+      "The cultural and historical context of the ancient Mediterranean world, encompassing both Greek and Roman influences.",
+    status: "proposed",
+  },
+  {
+    canonical: "protoype theory",
+    variations: ["cognitive exemplar"],
+    category: "scholarship",
+    description:
+      "A cognitive theory of categorization that suggests people classify objects and concepts based on their similarity to a mental prototype or exemplar.",
+    status: "proposed",
+  },
+  {
+    canonical: "definitions",
+    variations: ["definition"],
+    category: "miscellaneous",
+    description:
+      "The act of precisely identifying or describing the nature, scope, or meaning of something.",
+    status: "proposed",
+  },
+  {
+    canonical: "sexuality",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "The expression of sexual receptivity or interest and/or behavior.",
+    status: "proposed",
+  },
+  {
+    canonical: "talmudic",
+    variations: ["Talmud"],
+    category: "literature",
+    description:
+      "Relating to the Talmud, a central text of Rabbinic Judaism comprising the Mishnah and the Gemara.",
+    status: "proposed",
+  },
+  {
+    canonical: "alphabet of ben sira",
+    variations: [],
+    category: "literature",
+    description:
+      "A medieval Jewish text known for its satirical and humorous content, including the story of Lilith",
+    status: "proposed",
+  },
+  {
+    canonical: "mesopotamia",
+    variations: [],
+    category: "place",
+    description:
+      "An ancient region in Western Asia located within the Tigris-Euphrates river system",
+    status: "proposed",
+  },
+  {
+    canonical: "ptolemies",
+    variations: [],
+    category: "people",
+    description:
+      "The dynasty that ruled Egypt from 305 to 30 BCE, founded by Ptolemy I Soter, a general of Alexander the Great.",
+    status: "proposed",
+  },
+  {
+    canonical: "theodotion",
+    variations: [],
+    category: "person",
+    description:
+      "A Jewish scholar of the 2nd century CE who created a recension (revision) of the Septuagint.",
+    status: "proposed",
+  },
+  {
+    canonical: "symmachus",
+    variations: [],
+    category: "person",
+    description:
+      "One of the three main figures who created recensions (revisions) of the Septuagint in the 2nd century CE.",
+    status: "proposed",
+  },
+  {
+    canonical: "elizabeth schrader polczer",
+    variations: [
+      "Elizabeth",
+      "Dr. Elizabeth Schrader Polczer",
+      "Schrader Polczer",
+    ],
+    category: "person",
+    description:
+      "Scholar specializing in New Testament and Mary Magdalene research.",
+    status: "proposed",
+  },
+  {
+    canonical: "manuscripts",
+    variations: ["manuscript"],
+    category: "miscellaneous",
+    description:
+      "Handwritten copies of ancient texts, particularly relevant to textual criticism.",
+    status: "proposed",
+  },
+  {
+    canonical: "textual criticism",
+    variations: ["text critic"],
+    category: "scholarship",
+    description:
+      "The study of ancient texts to determine their original wording, often dealing with textual variants.",
+    status: "proposed",
+  },
+  {
+    canonical: "mary of bethany",
+    variations: ["Bethany"],
+    category: "character",
+    description:
+      "A woman mentioned in the Gospels, particularly in John, as being a sister of Lazarus and Martha.",
+    status: "proposed",
+  },
+  {
+    canonical: "martha",
+    variations: ["Martha of Bethany"],
+    category: "character",
+    description:
+      "A woman mentioned in the Gospels, particularly in Luke and John, often associated with her sister Mary and their interactions with Jesus.",
+    status: "proposed",
+  },
+  {
+    canonical: "peter gurry",
+    variations: ["Gurry", "Peter"],
+    category: "person",
+    description:
+      "Scholar known for his work on textual criticism of the New Testament.",
+    status: "proposed",
+  },
+  {
+    canonical: "hippolytus of rome",
+    variations: ["Hippolytus"],
+    category: "person",
+    description:
+      "A third-century Christian theologian and martyr, known for his writings and commentaries.",
+    status: "proposed",
+  },
+  {
+    canonical: "the gospel of mary",
+    variations: ["gospel of mary"],
+    category: "literature",
+    description:
+      "A non-canonical Gnostic gospel that features Mary Magdalene as a prominent figure.",
+    status: "proposed",
+  },
+  {
+    canonical: "gospel of philip",
+    variations: ["gospel of philip"],
+    category: "literature",
+    description:
+      "A Gnostic gospel that presents a unique perspective on Jesus and his relationship with Mary Magdalene.",
+    status: "proposed",
+  },
+  {
+    canonical: "last supper",
+    variations: ["the Last Supper"],
+    category: "event",
+    description:
+      "The final meal Jesus shared with his apostles before his crucifixion.",
+    status: "proposed",
+  },
+  {
+    canonical: "papyrys 66",
+    variations: ["P66", "papyrus 66"],
+    category: "literature",
+    description: "Early manuscript containing portions of the Gospel of John.",
+    status: "proposed",
+  },
+  {
+    canonical: "David Burnett",
+    variations: ["Burnett"],
+    category: "person",
+    description:
+      "Friend of Dan McClellan, PhD student at Edinburgh, joined the tour in Israel/Palestine.",
+    status: "proposed",
+  },
+  {
+    canonical: "Palestine",
+    variations: [],
+    category: "place",
+    description:
+      "Geographic region in the Middle East, contested territory between Israel and Palestinian Arabs.",
+    status: "proposed",
+  },
+  {
+    canonical: "Valley of Elah",
+    variations: [],
+    category: "place",
+    description:
+      "A valley in the Shephelah region of Israel, traditionally the site of the battle between David and Goliath.",
+    status: "proposed",
+  },
+  {
+    canonical: "John Walton",
+    variations: ["Walton"],
+    category: "person",
+    description:
+      "Old Testament scholar known for his work on Genesis and the ancient Near Eastern context of the Bible.",
+    status: "proposed",
+  },
+  {
+    canonical: "The Holy Land",
+    variations: [],
+    category: "place",
+    description:
+      "A region of religious significance centered on Israel and Palestine, considered sacred in Judaism, Christianity, and Islam.",
+    status: "proposed",
+  },
+  {
+    canonical: "Anciently",
+    variations: [],
+    category: "miscellaneous",
+    description: "A archaic way of saying, 'In ancient times'",
+    status: "proposed",
+  },
+  {
+    canonical: "Qeiyafa",
+    variations: [],
+    category: "place",
+    description:
+      "Archaeological site in Israel, possibly identified as the biblical Shaaraim.",
+    status: "proposed",
+  },
+  {
+    canonical: "Azekah",
+    variations: [],
+    category: "place",
+    description:
+      "An ancient city in Judah, mentioned in connection with Lachish and the Babylonian invasion.",
+    status: "proposed",
+  },
+  {
+    canonical: "Byzantine",
+    variations: ["Byzantine period"],
+    category: "event",
+    description:
+      "Relating to Byzantium or the Byzantine Empire, also known as the Eastern Roman Empire.",
+    status: "proposed",
+  },
+  {
+    canonical: "Sarah McLachlan",
+    variations: ["McLachlan"],
+    category: "person",
+    description:
+      "A Canadian singer and songwriter who named a music festival after Lilith in the 1990s.",
+    status: "proposed",
+  },
+  {
+    canonical: "Akkadian",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "An ancient Semitic language spoken in Mesopotamia, related to Hebrew and Aramaic.",
+    status: "proposed",
+  },
+  {
+    canonical: "Sumerian",
+    variations: ["Sumerian word"],
+    category: "miscellaneous",
+    description:
+      "The language of ancient Sumer, a language isolate unrelated to Akkadian.",
+    status: "proposed",
+  },
+  {
+    canonical: "amulets",
+    variations: ["amulet"],
+    category: "miscellaneous",
+    description:
+      "Charms or objects believed to have protective powers, used in ancient times to ward off evil spirits or harm.",
+    status: "proposed",
+  },
+  {
+    canonical: "stele",
+    variations: ["stelae", "stela"],
+    category: "miscellaneous",
+    description:
+      "An upright stone slab or pillar, often inscribed or carved, used as a monument or marker.",
+    status: "proposed",
+  },
+  {
+    canonical: "Carlton Pearson",
+    variations: [],
+    category: "person",
+    description:
+      "A former Pentecostal pastor who became known for his belief in universal reconciliation, the idea that hell does not exist and all people will ultimately be saved.",
+    status: "proposed",
+  },
+  {
+    canonical: "Simon",
+    variations: [],
+    category: "character",
+    description:
+      "A common Hebrew name, the Greek form of Shimon; Several figures in the New Testament bear this name",
+    status: "proposed",
+    caseSensitive: true,
+  },
+  {
+    canonical: "Kephas",
+    variations: ["Cephas"],
+    category: "character",
+    description:
+      "The Aramaic name given to Simon Peter by Jesus, meaning 'rock'",
+    status: "proposed",
+  },
+  {
+    canonical: "Aramaic",
+    variations: ["Aramaic word"],
+    category: "miscellaneous",
+    description: "A Northwest Semitic language closely related to Hebrew",
+    status: "proposed",
+  },
+  {
+    canonical: "John Chrysostom",
+    variations: ["Chrysostom"],
+    category: "person",
+    llmVerify: true,
+    description:
+      "An early Church Father and Archbishop of Constantinople, known for his eloquence in preaching and denunciation of abuse of authority.",
+    status: "accepted",
+    episodes: [16],
+  },
+  {
+    canonical: "Geneva Bible",
+    variations: ["geneva bible"],
+    category: "literature",
+    description:
+      "English translation of the Bible published in 1560 in Geneva, Switzerland; known for its extensive annotations and its influence on Puritanism.",
+    status: "proposed",
+  },
+  {
+    canonical: "Bishops' Bible",
+    variations: ["bishops bible"],
+    category: "literature",
+    description:
+      "English translation of the Bible published in 1568 under the authority of the Church of England.",
+    status: "proposed",
+  },
+  {
+    canonical: "Church of England",
+    variations: ["Anglicans"],
+    category: "religion",
+    description:
+      "The established Christian church in England and the mother church of the Anglican Communion.",
+    status: "proposed",
+  },
+  {
+    canonical: "Puritans",
+    variations: ["Puritan"],
+    category: "people",
+    description:
+      "English Protestants in the 16th and 17th centuries who sought to purify the Church of England from what they considered to be remaining Catholic practices.",
+    status: "proposed",
+  },
+  {
+    canonical: "Malak Adonai",
+    variations: [],
+    category: "theology",
+    description:
+      "Hebrew term meaning 'angel of the Lord,' often interpreted as a manifestation of God or a high-ranking angel.",
+    status: "proposed",
+  },
+  {
+    canonical: "Balak",
+    variations: [],
+    category: "character",
+    description:
+      "King of Moab who hired Balaam to curse the Israelites in the Book of Numbers.",
+    status: "proposed",
+  },
+  {
+    canonical: "Belial",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "A term often used in Jewish and Christian texts to denote wickedness or a personification of evil.",
+    status: "proposed",
+  },
+  {
+    canonical: "Ahura Mazda",
+    variations: [],
+    category: "religion",
+    description:
+      "The supreme deity in Zoroastrianism, representing goodness, light, and truth.",
+    status: "proposed",
+  },
+  {
+    canonical: "Angra Mainyu",
+    variations: [],
+    category: "religion",
+    description: "The principal of darkness and evil in Zoroastrianism",
+    status: "proposed",
+  },
+  {
+    canonical: "Larry Hurtado",
+    variations: ["Hurtado"],
+    category: "person",
+    description:
+      "Scholar of early Christianity and New Testament, known for his work on early high Christology and the origins of Jesus devotion.",
+    status: "proposed",
+  },
+  {
+    canonical: "David A. Burnett",
+    variations: ["Burnett"],
+    category: "person",
+    description:
+      "PhD candidate at the University of Edinburgh, researching resurrection and the death of the gods in early Christian and Jewish contexts.",
+    status: "proposed",
+  },
+  {
+    canonical: "Early High Christology Club",
+    variations: ["EHCC"],
+    category: "scholarship",
+    description:
+      "Group of scholars who argue that the earliest Christians believed in the divinity of Jesus from the first generation.",
+    status: "proposed",
+  },
+  {
+    canonical: "Matthew Novinson",
+    variations: [],
+    category: "person",
+    description:
+      "Professor at the University of Edinburgh, specializing in New Testament and Christian Origins.",
+    status: "proposed",
+  },
+  {
+    canonical: "University of Edinburgh",
+    variations: [],
+    category: "place",
+    description:
+      "University in Scotland where David A. Burnett is pursuing his PhD.",
+    status: "proposed",
+  },
+  {
+    canonical: "Corinthians",
+    variations: [],
+    category: "people",
+    description:
+      "The people to whom Paul wrote his letters of First and Second Corinthians.",
+    status: "proposed",
+  },
+  {
+    canonical: "Paula Fredriksen",
+    variations: [],
+    category: "person",
+    description: "Historian of ancient Judaism and Christianity.",
+    status: "proposed",
+  },
+  {
+    canonical: "Patriarchs",
+    variations: [],
+    category: "people",
+    description:
+      "Refers to the early ancestral figures in Genesis, particularly those listed in the genealogies of Genesis 5 and 11, such as Adam, Seth, and Noah.",
+    status: "proposed",
+  },
+  {
+    canonical: "genealogies",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Lists of ancestors, lines of descent; in the Bible, these are often used to establish lineage and connections between figures or groups.",
+    status: "proposed",
+  },
+  {
+    canonical: "samaritan pentateuch",
+    variations: [],
+    category: "literature",
+    description:
+      "A version of the Pentateuch used by the Samaritans, differing in some readings from the Masoretic Text and Septuagint.",
+    status: "proposed",
+  },
+  {
+    canonical: "scrolls",
+    variations: [],
+    category: "literature",
+    description:
+      "Ancient form of writing material, often made of papyrus or parchment, used for texts before the codex.",
+    status: "proposed",
+  },
+  {
+    canonical: "codex",
+    variations: ["codices"],
+    category: "literature",
+    description:
+      "An early form of book consisting of bound pages, which replaced scrolls as the primary format for texts, especially in Christianity.",
+    status: "proposed",
+  },
+  {
+    canonical: "deuterocanon",
+    variations: [],
+    category: "literature",
+    description:
+      "A term used primarily by Catholics to refer to books and passages of the Christian Old Testament that are not part of the Hebrew Bible.",
+    status: "proposed",
+  },
+  {
+    canonical: "council of trent",
+    variations: [],
+    category: "event",
+    description:
+      "An ecumenical council of the Catholic Church held in the 16th century to address the challenges of the Protestant Reformation and define Catholic doctrine.",
+    status: "proposed",
+  },
+  {
+    canonical: "ben sira",
+    variations: [],
+    category: "literature",
+    description:
+      "Also known as Ecclesiasticus, a book of wisdom literature in the Septuagint and Christian Old Testament Apocrypha/Deuterocanon.",
+    status: "proposed",
+  },
+  {
+    canonical: "People of Israel",
+    variations: [],
+    category: "people",
+    description:
+      "A collective term for the descendants of Jacob/Israel, forming a nation in biblical narratives",
+    status: "proposed",
+  },
+  {
+    canonical: "Sinai",
+    variations: [],
+    category: "place",
+    description:
+      "A peninsula in Egypt, where Moses received the Ten Commandments.",
+    status: "proposed",
+  },
+  {
+    canonical: "Liane Feldman",
+    variations: ["Leanne Feldman"],
+    category: "person",
+    description:
+      "Assistant Professor of Religion at Princeton University, specializing in the Priestly Source and Pentateuchal composition.",
+    status: "proposed",
+  },
+  {
+    canonical: "neo-Documentarianism",
+    variations: ["Neo-Documentarianism", "neo-Documentary Hypothesis"],
+    category: "scholarship",
+    description:
+      "A modern iteration of the Documentary Hypothesis concerning the composition of the Pentateuch.",
+    status: "proposed",
+  },
+  {
+    canonical: "Enuma Elish",
+    variations: [],
+    category: "literature",
+    description:
+      "The Babylonian creation epic, featuring a battle between gods and the emergence of order from chaos.",
+    status: "proposed",
+  },
+  {
+    canonical: "Rebekah",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "Wife of Isaac and mother of Jacob and Esau in the Book of Genesis",
+    status: "accepted",
+    episodes: [23, 121],
+  },
+  {
+    canonical: "roman empire",
+    variations: ["rome", "romans"],
+    category: "event",
+    description:
+      "The empire that dominated the Mediterranean world and influenced the development of Christianity and Judaism.",
+    status: "proposed",
+  },
+  {
+    canonical: "mishnah",
+    variations: ["mishnah's"],
+    category: "literature",
+    description:
+      "The first major written collection of Jewish oral traditions, forming a core part of the Talmud.",
+    status: "proposed",
+  },
+  {
+    canonical: "tanakh",
+    variations: ["tanakh's"],
+    category: "literature",
+    description:
+      "The Hebrew Bible, consisting of the Torah, Nevi'im (Prophets), and Ketuvim (Writings).",
+    status: "proposed",
+  },
+  {
+    canonical: "gemara",
+    variations: ["gemara's"],
+    category: "literature",
+    description:
+      "The component of the Talmud comprising rabbinical analysis of and commentary on the Mishnah.",
+    status: "proposed",
+  },
+  {
+    canonical: "sages",
+    variations: ["sage"],
+    category: "miscellaneous",
+    description:
+      "Refers to the rabbis and scholars whose discussions and interpretations are recorded in the Talmud.",
+    status: "proposed",
+  },
+  {
+    canonical: "daf yomi",
+    variations: ["daf"],
+    category: "scholarship",
+    description:
+      "A practice of studying one folio page of the Babylonian Talmud each day, completing the entire Talmud in approximately seven and a half years.",
+    status: "proposed",
+  },
+  {
+    canonical: "babylonian talmud",
+    variations: ["the babylonian one"],
+    category: "literature",
+    description:
+      "One of the two versions of the Talmud, compiled in Babylonia (modern-day Iraq).",
+    status: "proposed",
+  },
+  {
+    canonical: "beit din",
+    variations: ["beit din's"],
+    category: "miscellaneous",
+    description: "A rabbinical court in Judaism.",
+    status: "proposed",
+  },
+  {
+    canonical: "shabbat",
+    variations: ["shabbos"],
+    category: "event",
+    description:
+      "The Jewish Sabbath, a day of rest and spiritual enrichment observed from Friday evening to Saturday evening.",
+    status: "proposed",
+  },
+  {
+    canonical: "kiddush",
+    variations: ["kiddish"],
+    category: "miscellaneous",
+    description:
+      "A blessing recited over wine or grape juice to sanctify the Sabbath and Jewish holidays.",
+    status: "proposed",
+  },
+  {
+    canonical: "kingdom of heaven",
+    variations: ["kingdom of God"],
+    category: "theology",
+    description:
+      "A concept in the Gospels, particularly Matthew, referring to the reign or rule of God",
+    status: "proposed",
+  },
+  {
+    canonical: "Sermon on the Mount",
+    variations: ["Sermon on the Plain"],
+    category: "literature",
+    description:
+      "A collection of sayings and teachings of Jesus in the Gospel of Matthew, including the Beatitudes",
+    status: "proposed",
+  },
+  {
+    canonical: "poor in spirit",
+    variations: ["anve ruach"],
+    category: "theology",
+    description:
+      "A phrase from the Beatitudes, interpreted as humility or recognition of spiritual need",
+    status: "proposed",
+  },
+  {
+    canonical: "justice",
+    variations: ["divine justice", "social justice", "cosmic justice"],
+    category: "theology",
+    description:
+      "Theological concept related to fairness, righteousness, and the upholding of moral principles",
+    status: "proposed",
+  },
+  {
+    canonical: "praus",
+    variations: ["praeis"],
+    category: "miscellaneous",
+    description:
+      "Greek word translated as meek, gentle, or humble, used in Matthew's Gospel in the Beatitudes",
+    status: "proposed",
+  },
+  {
+    canonical: "Jordan Peterson",
+    variations: ["JP", "Peterson"],
+    category: "person",
+    description:
+      "Canadian psychologist, cultural commentator, and author known for his interpretations of biblical stories and controversial views",
+    status: "proposed",
+  },
+  {
+    canonical: "prophets",
+    variations: ["prophet"],
+    category: "miscellaneous",
+    description:
+      "Individuals in the Hebrew Bible regarded as messengers or spokespersons of God",
+    status: "proposed",
+  },
+  {
+    canonical: "blessed",
+    variations: ["blessing", "blessings"],
+    category: "theology",
+    description:
+      "A state of being favored or fortunate, often associated with divine favor or approval",
+    status: "proposed",
+  },
+  {
+    canonical: "Matthew Thiessen",
+    variations: ["Thiessen", "Matt"],
+    category: "person",
+    description:
+      "Associate professor of religious studies at McMaster University, author of 'Jesus and the Forces of Death' and 'A Jewish Paul'",
+    status: "proposed",
+  },
+  {
+    canonical: "pneuma",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Greek word for 'spirit', often associated with breath or wind, used in philosophical and theological contexts",
+    status: "proposed",
+  },
+  {
+    canonical: "Anglican",
+    variations: [],
+    category: "religion",
+    description:
+      "Relating to the Church of England or churches in communion with it; often associated with a specific theological tradition",
+    status: "proposed",
+  },
+  {
+    canonical: "Tom Wright",
+    variations: ["N. T. Wright", "Wright"],
+    category: "person",
+    description:
+      "New Testament scholar, theologian, and Anglican bishop, known for his work on Paul and the historical Jesus",
+    status: "proposed",
+  },
+  {
+    canonical: "EP Sanders",
+    variations: ["Sanders"],
+    category: "person",
+    description:
+      "An influential New Testament scholar known for his work on Paul and Second Temple Judaism.",
+    status: "proposed",
+  },
+  {
+    canonical: "Pastoral Epistles",
+    variations: [],
+    category: "literature",
+    description:
+      "Group of three New Testament letters (1 Timothy, 2 Timothy, Titus) attributed to Paul but authorship is debated.",
+    status: "proposed",
+  },
+  {
+    canonical: "Tik Tok",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Social media platform featuring short-form videos, used to disseminate information (and misinformation) about biblical topics",
+    status: "proposed",
+  },
+  {
+    canonical: "Iraq",
+    variations: [],
+    category: "place",
+    description:
+      "A country in the Middle East, located in Mesopotamia, through which the Euphrates River flows.",
+    status: "proposed",
+  },
+  {
+    canonical: "malakh",
+    variations: ["malak", "malakhim"],
+    category: "miscellaneous",
+    description:
+      "Hebrew word for 'messenger' or 'angel,' used in the Hebrew Bible, often translated as 'angel of the Lord'",
+    status: "proposed",
+  },
+  {
+    canonical: "greek word",
+    variations: [],
+    category: "miscellaneous",
+    description: "The word 'angelos' transliterated and adopted to English.",
+    status: "proposed",
+  },
+  {
+    canonical: "manoah",
+    variations: ["Manoah's"],
+    category: "character",
+    description:
+      "The father of Samson in the Book of Judges, who encounters a messenger of the Lord",
+    status: "proposed",
+  },
+  {
+    canonical: "Joppa",
+    variations: [],
+    category: "place",
+    description:
+      "An ancient port city located on the Mediterranean coast of Israel, mentioned in the Hebrew Bible",
+    status: "proposed",
+  },
+  {
+    canonical: "republican",
+    variations: [],
+    category: "miscellaneous",
+    description: "Referring to the Republican Party in the United States.",
+    status: "proposed",
+  },
+  {
+    canonical: "Moral Majority",
+    variations: [],
+    category: "event",
+    description:
+      "A prominent American political organization associated with the Religious Right in the late 1970s and 1980s.",
+    status: "proposed",
+  },
+  {
+    canonical: "Religious Right",
+    variations: [],
+    category: "religion",
+    description:
+      "A politically conservative movement in the United States associated with evangelical Christianity.",
+    status: "proposed",
+  },
+  {
+    canonical: "American Idolatry",
+    variations: [],
+    category: "literature",
+    description:
+      "Book by Andrew Whitehead: 'American Idolatry: How Christian Nationalism Betrays the Gospel and Threatens the Church'",
+    status: "proposed",
+  },
+  {
+    canonical: "Peru",
+    variations: [],
+    category: "place",
+    description:
+      "A country in South America, mentioned in reference to Andrew Whitehead's personal experiences.",
+    status: "proposed",
+  },
+  {
+    canonical: "decalogue",
+    variations: ["Decalogues"],
+    category: "literature",
+    description:
+      "A set of ten divine commands or principles, especially those given to Moses on Mount Sinai.",
+    status: "proposed",
+  },
+  {
+    canonical: "Gog and Magog",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Figures or nations mentioned in Ezekiel and Revelation, often associated with end-time conflicts.",
+    status: "proposed",
+  },
+  {
+    canonical: "Palestinian",
+    variations: [],
+    category: "people",
+    description:
+      "Relating to the Palestinians, an Arab people inhabiting the region of Palestine.",
+    status: "proposed",
+  },
+  {
+    canonical: "Oxford University Press",
+    variations: ["OUP"],
+    category: "miscellaneous",
+    description:
+      "A university press that publishes a wide range of books, including academic works.",
+    status: "proposed",
+  },
+  {
+    canonical: "Candida Moss",
+    variations: [],
+    category: "person",
+    description:
+      "Scholar of early Christianity, specializing in martyrdom, disability studies, and the New Testament.",
+    status: "proposed",
+  },
+  {
+    canonical: "Rosemarie Garland-Thomson",
+    variations: [],
+    category: "person",
+    description:
+      "Professor of English and bioethics who specializes in disability studies, feminist theory, and American literature.",
+    status: "proposed",
+  },
+  {
+    canonical: "Grace Emmett",
+    variations: [],
+    category: "person",
+    description:
+      "Scholar whose work examines gender and the body in early Christian texts, especially Paul's letters.",
+    status: "proposed",
+  },
+  {
+    canonical: "Persian",
+    variations: ["Persians"],
+    category: "people",
+    description:
+      "People from Persia (modern-day Iran), who formed the Persian Empire",
+    status: "proposed",
+  },
+  {
+    canonical: "Ancient of Days",
+    variations: [],
+    category: "theology",
+    description:
+      "A figure in Daniel 7, often interpreted as a representation of God with characteristics of age and wisdom",
+    status: "proposed",
+  },
+  {
+    canonical: "Babylonian empire",
+    variations: ["Babylonian hegemony"],
+    category: "event",
+    description:
+      "Empire based in Babylon, known for its influence in the ancient Near East",
+    status: "proposed",
+  },
+  {
+    canonical: "Carol Newsom",
+    variations: [],
+    category: "person",
+    description:
+      "Biblical scholar known for her work on the Book of Daniel and other Old Testament texts",
+    status: "proposed",
+  },
+  {
+    canonical: "Hananiah",
+    variations: ["Shadrach"],
+    category: "character",
+    description: "The Hebrew name of Shadrach in the Book of Daniel",
+    status: "proposed",
+  },
+  {
+    canonical: "Mishael",
+    variations: ["Meshach"],
+    category: "character",
+    description: "The Hebrew name of Meshach in the Book of Daniel",
+    status: "proposed",
+  },
+  {
+    canonical: "Azariah",
+    variations: ["Abednego"],
+    category: "character",
+    description: "The Hebrew name of Abednego in the Book of Daniel",
+    status: "proposed",
+  },
+  {
+    canonical: "Beloved Disciple",
+    variations: ["the Beloved Disciple"],
+    category: "character",
+    description:
+      "A figure in the Gospel of John, often identified with John the Apostle, but whose actual identity is debated",
+    status: "proposed",
+  },
+  {
+    canonical: "Pauline epistles",
+    variations: ["the Pauline epistles"],
+    category: "literature",
+    description:
+      "The letters in the New Testament traditionally attributed to Paul the Apostle",
+    status: "proposed",
+  },
+  {
+    canonical: "Church History",
+    variations: ["the Church History"],
+    category: "literature",
+    description:
+      "A ten-volume history of the Christian Church written by Eusebius of Caesarea in the fourth century CE",
+    status: "proposed",
+  },
+  {
+    canonical: "Jacob Wright",
+    variations: ["Wright", "Jacob"],
+    category: "person",
+    description:
+      "Professor of Hebrew Bible at Candler School of Theology, Emory University; author of 'Why the Bible Began'",
+    status: "rejected",
+  },
+  {
+    canonical: "kingdom",
+    variations: [],
+    category: "miscellaneous",
+    description: "A state or territory ruled by a king or queen",
+    status: "proposed",
+  },
+  {
+    canonical: "peoplehood",
+    variations: ["people's"],
+    category: "miscellaneous",
+    description:
+      "The condition of being a people; a sense of shared identity and common purpose",
+    status: "proposed",
+  },
+  {
+    canonical: "Davidic",
+    variations: [],
+    category: "miscellaneous",
+    description: "Relating to King David or the dynasty descended from him",
+    status: "proposed",
+  },
+  {
+    canonical: "Mesha Stele",
+    variations: [],
+    category: "literature",
+    description:
+      "An inscription written in Moabite, commissioned by King Mesha of Moab in the 9th century BCE",
+    status: "proposed",
+  },
+  {
+    canonical: "Aaron Adair",
+    variations: ["Aaron"],
+    category: "person",
+    description:
+      "Research affiliate in physics education at MIT and author of 'The Star of Bethlehem: A Skeptical View'",
+    status: "proposed",
+  },
+  {
+    canonical: "Christmas",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Annual Christian festival celebrating Christ's birth, often associated with various traditions and beliefs",
+    status: "proposed",
+  },
+  {
+    canonical: "aliens",
+    variations: [],
+    category: "miscellaneous",
+    description: "Extraterrestrial life forms",
+    status: "proposed",
+    caseSensitive: true,
+  },
+  {
+    canonical: "Venus",
+    variations: [],
+    category: "miscellaneous",
+    description: "The planet Venus",
+    status: "proposed",
+  },
+  {
+    canonical: "Star of Bethlehem",
+    variations: ["Star"],
+    category: "miscellaneous",
+    description:
+      "The star that guided the Magi to Jesus in the Gospel of Matthew",
+    status: "proposed",
+  },
+  {
+    canonical: "Schweitzer",
+    variations: ["Albert Schweitzer"],
+    category: "person",
+    description:
+      "Albert Schweitzer, theologian known for 'The Quest of the Historical Jesus'",
+    status: "proposed",
+  },
+  {
+    canonical: "Lucan",
+    variations: ["Luke"],
+    category: "miscellaneous",
+    description: "Refers to the Gospel of Luke",
+    status: "proposed",
+  },
+  {
+    canonical: "Eric Vanden Eykel",
+    variations: ["Eric VandenEykel", "Vanden Eykel", "VandenEykel"],
+    category: "person",
+    description:
+      "Associate professor of religion and Forrest S. Williams Teaching Chair in the Humanities at Ferrum College; guest on the podcast",
+    status: "proposed",
+  },
+  {
+    canonical: "Greeks",
+    variations: ["Greek"],
+    category: "people",
+    description:
+      "People inhabiting ancient Greece or speaking the Greek language",
+    status: "proposed",
+  },
+  {
+    canonical: "catacombs",
+    variations: ["catacomb"],
+    category: "place",
+    description:
+      "Underground burial places, especially those used by early Christians in Rome",
+    status: "proposed",
+  },
+  {
+    canonical: "CE",
+    variations: ["Common Era"],
+    category: "miscellaneous",
+    description:
+      "Common Era, used as an alternative to AD in dating historical events",
+    status: "proposed",
+  },
+  {
+    canonical: "Elaine Pagels",
+    variations: ["Pagels"],
+    category: "person",
+    description:
+      "Scholar known for her work on the Gnostic Gospels and early Christian history",
+    status: "proposed",
+  },
+  {
+    canonical: "Joel McHale",
+    variations: [],
+    category: "person",
+    description: "American actor, comedian, and television host",
+    status: "rejected",
+  },
+  {
+    canonical: "Seattle",
+    variations: [],
+    category: "place",
+    description:
+      "A city in Washington state, mentioned in connection with Joel McHale's upbringing.",
+    status: "proposed",
+  },
+  {
+    canonical: "Vatican",
+    variations: [],
+    category: "place",
+    description:
+      "The city-state in Rome, the headquarters of the Roman Catholic Church.",
+    status: "proposed",
+  },
+  {
+    canonical: "Italy",
+    variations: [],
+    category: "place",
+    description:
+      "A country in Southern Europe where Joel McHale was born in Rome.",
+    status: "proposed",
+  },
+  {
+    canonical: "Heaven",
+    variations: [],
+    category: "theology",
+    description:
+      "The abode of God, angels, and the blessed dead in some religions.",
+    status: "proposed",
+  },
+  {
+    canonical: "Magic",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "The use of rituals, spells, or supernatural powers to influence events or outcomes.",
+    status: "proposed",
+  },
+  {
+    canonical: "Twitter",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Social media platform, now known as X, used for discussions and debates, including those related to biblical interpretation",
+    status: "proposed",
+  },
+  {
+    canonical: "Jews",
+    variations: ["Jewish"],
+    category: "people",
+    description:
+      "Ethnoreligious group and nation originating from the Israelites and Hebrews of the Ancient Near East.",
+    status: "proposed",
+  },
+  {
+    canonical: "Nicholas",
+    variations: ["St. Nicholas"],
+    category: "person",
+    description:
+      "Saint Nicholas of Myra, a 4th-century Christian bishop, known for his generosity.",
+    status: "proposed",
+  },
+  {
+    canonical: "chief priests",
+    variations: ["high priests"],
+    category: "people",
+    description:
+      "High-ranking religious officials in ancient Judaism, often associated with the Temple in Jerusalem",
+    status: "proposed",
+  },
+  {
+    canonical: "babylonians",
+    variations: [],
+    category: "people",
+    description:
+      "The inhabitants of Babylon, a major city in ancient Mesopotamia; also refers to the empire they established",
+    status: "proposed",
+  },
+  {
+    canonical: "marriage",
+    variations: ["marry", "married"],
+    category: "theology",
+    description:
+      "The socially recognized union or legal contract between people that creates rights and obligations, varying across cultures and time periods.",
+    status: "proposed",
+  },
+  {
+    canonical: "divorce",
+    variations: ["divorcing"],
+    category: "miscellaneous",
+    description:
+      "The legal dissolution of a marriage by a court or other body with legal authority.",
+    status: "proposed",
+  },
+  {
+    canonical: "sex",
+    variations: ["sexual", "sexuality"],
+    category: "miscellaneous",
+    description:
+      "Physical activity, often involving sexual intercourse, between individuals; also a biological characteristic distinguishing male and female.",
+    status: "proposed",
+  },
+  {
+    canonical: "celibacy",
+    variations: ["celibate"],
+    category: "miscellaneous",
+    description:
+      "The state of abstaining from marriage and sexual relations, often for religious reasons.",
+    status: "proposed",
+  },
+  {
+    canonical: "Kipp Davis",
+    variations: ["Davis"],
+    category: "person",
+    description:
+      "Public scholar of the Hebrew Bible with specializations in early Judaism and the Dead Sea Scrolls; guest on this podcast episode.",
+    status: "proposed",
+  },
+  {
+    canonical: "Joel Baden",
+    variations: [],
+    category: "person",
+    description:
+      'Professor of Hebrew Bible at Yale Divinity School, co-author of "Bible Nation: The United States of Hobby Lobby."',
+    status: "rejected",
+  },
+  {
+    canonical: "Cave 4",
+    variations: [],
+    category: "place",
+    description:
+      "Cave near the Qumran site, the most prominent of the Dead Sea Scroll caves, where the vast majority of the manuscripts were found.",
+    status: "proposed",
+  },
+  {
+    canonical: "Emanuel Tov",
+    variations: [],
+    category: "person",
+    description:
+      "Israeli biblical scholar and expert in textual criticism of the Hebrew Bible and the Dead Sea Scrolls.",
+    status: "proposed",
+  },
+  {
+    canonical: "Schoyen Collection",
+    variations: ["Schoyen's fragments"],
+    category: "miscellaneous",
+    description:
+      "Collection of manuscripts and artifacts assembled by Martin Schoyen, including controversial Dead Sea Scrolls fragments.",
+    status: "proposed",
+  },
+  {
+    canonical: "Israel Antiquities Authority",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Government organization responsible for managing and preserving archaeological sites and artifacts in Israel.",
+    status: "proposed",
+  },
+  {
+    canonical: "Rahab",
+    variations: [],
+    category: "character",
+    description:
+      "A prostitute in Jericho who helped the Israelite spies and was spared during the conquest",
+    status: "proposed",
+    caseSensitive: true,
+  },
+  {
+    canonical: "Julius Caesar",
+    variations: ["Caesar"],
+    category: "person",
+    description:
+      "Roman general and statesman who played a critical role in the events that led to the demise of the Roman Republic and the rise of the Roman Empire",
+    status: "proposed",
+  },
+  {
+    canonical: "Pompey",
+    variations: ["Gnaeus Pompeius Magnus"],
+    category: "person",
+    description:
+      "Gnaeus Pompeius Magnus, a Roman general and statesman who was a rival of Julius Caesar",
+    status: "proposed",
+  },
+  {
+    canonical: "Senate",
+    variations: ["senators"],
+    category: "event",
+    description:
+      "The Roman Senate was a political institution in the ancient Roman Republic and Empire",
+    status: "proposed",
+  },
+  {
+    canonical: "Lindsay Graham",
+    variations: [],
+    category: "person",
+    description: "The host of the History Daily podcast.",
+    status: "proposed",
+  },
+  {
+    canonical: "Republic",
+    variations: [],
+    category: "event",
+    description:
+      "Refers to the Roman Republic, the period of Roman civilization from the overthrow of the Roman Kingdom until the establishment of the Roman Empire.",
+    status: "proposed",
+  },
+  {
+    canonical: "Louis XVI",
+    variations: ["King Louis XVI"],
+    category: "person",
+    description: "The last King of France before the French Revolution",
+    status: "proposed",
+  },
+  {
+    canonical: "French Revolution",
+    variations: [],
+    category: "event",
+    description:
+      "A period of social and political upheaval in late 1700's France, ultimately toppling the monarchy",
+    status: "proposed",
+  },
+  {
+    canonical: "Gaul",
+    variations: [],
+    category: "place",
+    description:
+      "An ancient region of Europe inhabited by Celtic peoples, corresponding roughly to modern France and parts of surrounding countries",
+    status: "proposed",
+  },
+  {
+    canonical: "Empire",
+    variations: [],
+    category: "event",
+    description:
+      "Refers to the Roman Empire, the post-Republican period of ancient Rome, characterized by autocratic rule.",
+    status: "proposed",
+  },
+  {
+    canonical: "Helen Bond",
+    variations: ["Bond"],
+    category: "person",
+    description:
+      "Professor of Christian Origins at Edinburgh University and president of the British New Testament Society.",
+    status: "proposed",
+  },
+  {
+    canonical: "Tacitus",
+    variations: ["Tacitus'"],
+    category: "person",
+    description:
+      "A Roman historian and senator, known for his writings on the Roman Empire.",
+    status: "proposed",
+  },
+  {
+    canonical: "Lent",
+    variations: [],
+    category: "religion",
+    description:
+      "A period of fasting and penitence observed by many Christians in preparation for Easter.",
+    status: "proposed",
+  },
+  {
+    canonical: "Jesus of Nazareth",
+    variations: [],
+    category: "character",
+    description:
+      "The central figure in Christianity, believed by Christians to be the Son of God; historically from Nazareth.",
+    status: "rejected",
+  },
+  {
+    canonical: "Holy Week",
+    variations: ["holy week"],
+    category: "event",
+    description:
+      "The week leading up to Easter, commemorating the final events in the life of Jesus",
+    status: "proposed",
+  },
+  {
+    canonical: "Lazarus",
+    variations: [],
+    category: "character",
+    description:
+      "A man from Bethany whom Jesus raised from the dead in the Gospel of John",
+    status: "proposed",
+  },
+  {
+    canonical: "First Century CE",
+    variations: [],
+    category: "event",
+    description:
+      "The period from 1 to 100 CE, encompassing the life of Jesus and the early development of Christianity",
+    status: "proposed",
+  },
+  {
+    canonical: "Neil Van Leeuwen",
+    variations: ["Van Leeuwen", "Neil"],
+    category: "person",
+    description:
+      'Associate professor of philosophy and neuroscience at Georgia State University, author of "Religion as Make-Believe"',
+    status: "proposed",
+  },
+  {
+    canonical: "belief",
+    variations: ["beliefs", "believing", "believe"],
+    category: "theology",
+    description:
+      "Acceptance that a statement is true or that something exists; trust, faith, or confidence in someone or something",
+    status: "proposed",
+  },
+  {
+    canonical: "chistians",
+    variations: ["Christian"],
+    category: "religion",
+    description:
+      "Adherents of Christianity, a religion centered on the life and teachings of Jesus of Nazareth",
+    status: "proposed",
+  },
+  {
+    canonical: "cognitive attitude",
+    variations: ["cognitive attitudes"],
+    category: "scholarship",
+    description:
+      "A philosophical term for how one relates to or processes a given idea, encompassing different ways of thinking and reasoning about it",
+    status: "proposed",
+  },
+  {
+    canonical: "calvin college",
+    variations: ["Calvinist"],
+    category: "place",
+    description:
+      "A private Christian liberal arts college in Grand Rapids, Michigan, affiliated with the Christian Reformed Church",
+    status: "proposed",
+  },
+  {
+    canonical: "cognition",
+    variations: ["cognitive science", "cognitive"],
+    category: "scholarship",
+    description:
+      "The mental action or process of acquiring knowledge and understanding through thought, experience, and the senses",
+    status: "proposed",
+  },
+  {
+    canonical: "maarten boudry",
+    variations: ["Boudry"],
+    category: "person",
+    description:
+      "A Flemish philosopher known for his critiques of pseudoscience and religion",
+    status: "proposed",
+  },
+  {
+    canonical: "atheists",
+    variations: ["atheist"],
+    category: "religion",
+    description:
+      "Individuals who disbelieve or lack belief in the existence of God or gods",
+    status: "proposed",
+  },
+  {
+    canonical: "lahmi",
+    variations: ["beit lahm"],
+    category: "character",
+    description:
+      "Character identified in Chronicles as the brother of Goliath, though some scholars consider it a textual corruption",
+    status: "proposed",
+  },
+  {
+    canonical: "patriarchal",
+    variations: ["patriarchy", "patriarchalism"],
+    category: "miscellaneous",
+    description:
+      "Relating to a system of society or government controlled by men",
+    status: "proposed",
+  },
+  {
+    canonical: "apologists",
+    variations: ["apologetic"],
+    category: "religion",
+    description:
+      "Individuals who offer a rational defense of religious beliefs",
+    status: "proposed",
+  },
+  {
+    canonical: "ESV",
+    variations: ["ESV"],
+    category: "literature",
+    description:
+      "English Standard Version, a conservative evangelical translation of the Bible",
+    status: "proposed",
+  },
+  {
+    canonical: "perspicuity",
+    variations: [],
+    category: "theology",
+    description: "The quality of being easily understood; clarity",
+    status: "proposed",
+  },
+  {
+    canonical: "David Carr",
+    variations: ["Carr", "Professor David M. Carr"],
+    category: "person",
+    description:
+      "Professor of Hebrew Bible at Union Theological Seminary and Jewish Theological Seminary in New York",
+    status: "proposed",
+  },
+  {
+    canonical: "Cain and Abel",
+    variations: ["Cain Abel"],
+    category: "character",
+    description:
+      "The two sons of Adam and Eve, where Cain murders Abel out of jealousy (Genesis 4)",
+    status: "proposed",
+  },
+  {
+    canonical: "Non-P",
+    variations: ["non-Priestly"],
+    category: "literature",
+    description:
+      "Referring to the non-Priestly source in the Pentateuch according to the Documentary Hypothesis",
+    status: "proposed",
+  },
+  {
+    canonical: "Gilgamesh",
+    variations: [],
+    category: "literature",
+    description:
+      "An ancient Mesopotamian epic poem, one of the earliest known works of literature",
+    status: "proposed",
+  },
+  {
+    canonical: "NASA",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "The United States National Aeronautics and Space Administration, often a target of flat Earth conspiracy theories.",
+    status: "proposed",
+  },
+  {
+    canonical: "Reformation",
+    variations: ["Protestant Reformation"],
+    category: "event",
+    description:
+      "A major movement within Western Christianity in 16th-century Europe that posed a religious and political challenge to the Catholic Church",
+    status: "proposed",
+  },
+  {
+    canonical: "Ephesus",
+    variations: [],
+    category: "place",
+    description:
+      "An ancient Greek city on the coast of Ionia, now part of Turkey",
+    status: "proposed",
+  },
+  {
+    canonical: "Smith",
+    variations: [],
+    category: "person",
+    description:
+      "Wilfred Cantwell Smith, a scholar whose book 'The Meaning and End of Religion' influenced the critique of the category of religion in scholarly discourse.",
+    status: "proposed",
+  },
+  {
+    canonical: "Providence",
+    variations: [],
+    category: "place",
+    description:
+      "City in Rhode Island, location of Brown University and the Meanings and Ends of Monotheism conference.",
+    status: "proposed",
+  },
+  {
+    canonical: "Society of Biblical Literature",
+    variations: ["SBL"],
+    category: "scholarship",
+    description:
+      "An academic organization dedicated to the critical study of the Bible and related texts.",
+    status: "proposed",
+  },
+  {
+    canonical: "pantheon",
+    variations: ["pantheons"],
+    category: "theology",
+    description:
+      "A collection of deities belonging to a particular religion or mythology.",
+    status: "proposed",
+  },
+  {
+    canonical: "Debra Scoggins Ballentine",
+    variations: ["Scoggins Ballentine"],
+    category: "person",
+    description: "Scholar of the Hebrew Bible and translation theory.",
+    status: "proposed",
+  },
+  {
+    canonical: "Critical Text",
+    variations: [],
+    category: "literature",
+    description:
+      "A reconstructed version of a text based on critical assessment of available manuscripts.",
+    status: "proposed",
+  },
+  {
+    canonical: "James McGrath",
+    variations: ["McGrath", "James F. McGrath"],
+    category: "person",
+    description:
+      "Professor of New Testament at Butler University and author of 'Christmaker'.",
+    status: "proposed",
+  },
+  {
+    canonical: "Butler University",
+    variations: ["Butler"],
+    category: "place",
+    description: "A private university located in Indianapolis, Indiana.",
+    status: "proposed",
+  },
+  {
+    canonical: "Greco Roman",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Relating to the culture and civilization of ancient Greece and Rome",
+    status: "proposed",
+  },
+  {
+    canonical: "Book of Watchers",
+    variations: [],
+    category: "literature",
+    description:
+      "The first major section of the Book of Enoch, focusing on the story of the fallen angels",
+    status: "proposed",
+  },
+  {
+    canonical: "Ethiopia",
+    variations: ["Ethiopic", "Geez"],
+    category: "place",
+    description:
+      "A country in East Africa where the Book of Enoch is considered canonical in the Ethiopian Orthodox Tewahedo Church",
+    status: "proposed",
+  },
+  {
+    canonical: "Book of Parables",
+    variations: [],
+    category: "literature",
+    description:
+      "A section of the Book of Enoch containing parables and visions",
+    status: "proposed",
+  },
+  {
+    canonical: "Rachel",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "Jacob's favorite wife, daughter of Laban, and mother of Joseph and Benjamin.",
+    status: "accepted",
+    episodes: [63, 67, 72, 121, 133, 141, 155],
+  },
+  {
+    canonical: "Dagon",
+    variations: ["Dagon's"],
+    category: "theology",
+    description:
+      "A Northwest Semitic deity of grain and fertility, associated with the Philistines in the biblical text of Judges.",
+    status: "proposed",
+  },
+  {
+    canonical: "delilah",
+    variations: [],
+    category: "character",
+    description:
+      "The Philistine woman who betrayed Samson by cutting his hair, as told in the Book of Judges.",
+    status: "proposed",
+    caseSensitive: true,
+  },
+  {
+    canonical: "Deborah",
+    variations: [],
+    category: "character",
+    description:
+      "A prophetess and judge in the Book of Judges, who leads Israel to victory against the Canaanites.",
+    status: "proposed",
+  },
+  {
+    canonical: "Sisera",
+    variations: [],
+    category: "character",
+    description:
+      "The commander of King Jabin's army who is defeated by Deborah and Barak in the Book of Judges.",
+    status: "proposed",
+  },
+  {
+    canonical: "Barak",
+    variations: [],
+    category: "character",
+    description:
+      "An Israelite military leader who assists Deborah in defeating the Canaanites in the Book of Judges.",
+    status: "proposed",
+  },
+  {
+    canonical: "Shamash",
+    variations: [],
+    category: "theology",
+    description:
+      "Mesopotamian sun god, associated with justice and divination.",
+    status: "proposed",
+  },
+  {
+    canonical: "King James",
+    variations: ["king james", "king jamesian"],
+    category: "literature",
+    description:
+      "Relating to the King James Version of the Bible, a popular English translation.",
+    status: "proposed",
+  },
+  {
+    canonical: "Timnah",
+    variations: ["at Timnah"],
+    category: "place",
+    description: "A location associated with the biblical figure Samson",
+    status: "proposed",
+  },
+  {
+    canonical: "Levirate marriage",
+    variations: ["Levirate"],
+    category: "miscellaneous",
+    description:
+      "The custom in which a man is obligated to marry his deceased brother's widow to provide an heir for the deceased brother",
+    status: "proposed",
+  },
+  {
+    canonical: "Pater familias",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "The male head of a household in Roman society, possessing legal authority over his family members",
+    status: "proposed",
+  },
+  {
+    canonical: "Coitus interruptus",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "A method of birth control that involves withdrawing the penis from the vagina before ejaculation",
+    status: "proposed",
+  },
+  {
+    canonical: "Second Century",
+    variations: ["2nd century"],
+    category: "event",
+    description:
+      "Referring to the time period of 101-200 CE, important for the formation of the biblical canon and the development of early Christian theology.",
+    status: "proposed",
+  },
+  {
+    canonical: "Second Maccabees",
+    variations: ["2 Maccabees"],
+    category: "literature",
+    description:
+      "Deuterocanonical book recounting the history of the Maccabean revolt",
+    status: "proposed",
+  },
+  {
+    canonical: "king cyrus of persia",
+    variations: ["cyrus the great", "cyrus"],
+    category: "person",
+    description:
+      "Also known as Cyrus the Great, the founder of the Achaemenid Empire who allowed the Jewish people to return to their homeland",
+    status: "proposed",
+  },
+  {
+    canonical: "Elimelech",
+    variations: ["Elimelech's"],
+    category: "character",
+    description:
+      "Naomi's husband and father of Mahlon and Chilion in the Book of Ruth",
+    status: "proposed",
+  },
+  {
+    canonical: "ancient world",
+    variations: ["anciently"],
+    category: "place",
+    description:
+      "General term referring to the time period before the Middle Ages, encompassing various civilizations",
+    status: "proposed",
+  },
+  {
+    canonical: "urim and thummim",
+    variations: ["urim", "thummim"],
+    category: "miscellaneous",
+    description:
+      "Objects used in ancient Israel for divination, mentioned in the Hebrew Bible",
+    status: "proposed",
+  },
+  {
+    canonical: "high priest",
+    variations: [],
+    category: "miscellaneous",
+    description: "The chief religious official in ancient Israelite society",
+    status: "proposed",
+  },
+  {
+    canonical: "afterlife",
+    variations: [],
+    category: "theology",
+    description: "Existence after death",
+    status: "proposed",
+  },
+  {
+    canonical: "adonai's",
+    variations: [],
+    category: "theology",
+    description: "Possessive form of Adonai, a title for God in Judaism.",
+    status: "proposed",
+  },
+  {
+    canonical: "shaatnez",
+    variations: ["shatnez"],
+    category: "miscellaneous",
+    description:
+      "Hebrew term for fabric containing a mixture of wool and linen, prohibited by Jewish law.",
+    status: "proposed",
+  },
+  {
+    canonical: "ephod",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Linen garment worn by the high priest, sometimes containing precious stones.",
+    status: "proposed",
+  },
+  {
+    canonical: "Reuben",
+    variations: [],
+    category: "character",
+    description:
+      "Oldest son of Jacob in the Book of Genesis, sometimes portrayed as attempting to save Joseph.",
+    status: "proposed",
+  },
+  {
+    canonical: "Potiphar",
+    variations: [],
+    category: "person",
+    description:
+      "Egyptian official who purchased Joseph as a slave, mentioned in Genesis.",
+    status: "proposed",
+  },
+  {
+    canonical: "shroud of turin",
+    variations: ["the shroud"],
+    category: "miscellaneous",
+    description:
+      "A linen cloth bearing an image that resembles a crucified man, believed by some to be the burial shroud of Jesus.",
+    status: "proposed",
+  },
+  {
+    canonical: "Goshen",
+    variations: [],
+    category: "place",
+    description:
+      "Region in ancient Egypt where the Israelites resided during their time in slavery, mentioned in the Exodus narrative.",
+    status: "proposed",
+  },
+  {
+    canonical: "Nile",
+    variations: [],
+    category: "place",
+    description:
+      "Major river in Egypt, central to the country's geography and culture, featured prominently in the Exodus plagues narrative.",
+    status: "proposed",
+  },
+  {
+    canonical: "Tithing",
+    variations: [],
+    category: "theology",
+    description:
+      "The practice of donating a tenth of one's income or produce, often for religious purposes.",
+    status: "proposed",
+  },
+  {
+    canonical: "Ananias",
+    variations: [],
+    category: "character",
+    description:
+      "A member of the early Christian church in Jerusalem who, along with his wife Sapphira, was struck dead for lying about their contribution to the community.",
+    status: "proposed",
+  },
+  {
+    canonical: "Latin",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "The language of ancient Rome, influential in law, literature, and religion.",
+    status: "proposed",
+  },
+  {
+    canonical: "Lord Herbert of Cherbury",
+    variations: [],
+    category: "person",
+    description:
+      "Lord Herbert of Cherbury was an English soldier, diplomat, historian, poet, and religious philosopher of the late 16th and early 17th centuries.",
+    status: "proposed",
+  },
+  {
+    canonical: "Craig Mousin",
+    variations: ["Mousin"],
+    category: "person",
+    description:
+      "Reverend Craig Mousin, J.D., is a professor at the Grace School of Applied Diplomacy at DePaul University and associate minister for immigrant justice at the Wellington United Church of Christ.",
+    status: "proposed",
+  },
+  {
+    canonical: "Cecil Cicirello",
+    variations: [],
+    category: "person",
+    description:
+      "Co-host of the Lawful Assembly podcast, also a podcaster on Cognitive Dissonance and Citation Needed.",
+    status: "proposed",
+  },
+  {
+    canonical: "refugees",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "People who have been forced to leave their country in order to escape war, persecution, or natural disaster.",
+    status: "proposed",
+  },
+  {
+    canonical: "Chicago",
+    variations: [],
+    category: "place",
+    description: "City in Illinois.",
+    status: "proposed",
+  },
+  {
+    canonical: "David Congdon",
+    variations: ["Congdon"],
+    category: "person",
+    description:
+      "Author of 'Who Is a True Christian?' and senior editor at the University Press of Kansas",
+    status: "proposed",
+  },
+  {
+    canonical: "Modernity",
+    variations: ["modern"],
+    category: "miscellaneous",
+    description:
+      "The historical period characterized by the decline of traditional authority and the rise of individualism and reason.",
+    status: "proposed",
+  },
+  {
+    canonical: "C. S. Lewis",
+    variations: ["Lewis"],
+    category: "person",
+    description:
+      "British author and Christian apologist known for his works on theology and fantasy",
+    status: "proposed",
+  },
+  {
+    canonical: "Rudolf Bultmann",
+    variations: ["Bultmann"],
+    category: "person",
+    description:
+      "German Lutheran theologian known for his work on form criticism and existential interpretation of the New Testament",
+    status: "proposed",
+  },
+  {
+    canonical: "Republican Party",
+    variations: ["Republican"],
+    category: "miscellaneous",
+    description:
+      "One of the two major contemporary political parties in the United States.",
+    status: "proposed",
+  },
+  {
+    canonical: "Enlightenment",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "An intellectual and philosophical movement of the 18th century emphasizing reason and individualism.",
+    status: "proposed",
+  },
+  {
+    canonical: "language",
+    variations: [],
+    category: "miscellaneous",
+    description: "Generic term for human communication",
+    status: "proposed",
+  },
+  {
+    canonical: "church",
+    variations: ["churches"],
+    category: "religion",
+    description:
+      "A building used for public Christian worship or the body of all Christians",
+    status: "proposed",
+  },
+  {
+    canonical: "deconstructing",
+    variations: ["deconstruction"],
+    category: "miscellaneous",
+    description:
+      "The process of critically examining and often rejecting previously held beliefs, particularly religious ones",
+    status: "proposed",
+  },
+  {
+    canonical: "king henry viii",
+    variations: [],
+    category: "person",
+    description:
+      "King of England in the 16th century, known for his role in the English Reformation and establishing the Church of England",
+    status: "proposed",
+  },
+  {
+    canonical: "bible college",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "An educational institution that prepares students for Christian ministry",
+    status: "proposed",
+  },
+  {
+    canonical: "Golgotha",
+    variations: ["Gordon's Calvary"],
+    category: "place",
+    description:
+      "The site of Jesus' crucifixion, often referred to as the place of the skull.",
+    status: "proposed",
+  },
+  {
+    canonical: "excrement",
+    variations: [],
+    category: "miscellaneous",
+    description: "Bodily waste, specifically feces.",
+    status: "proposed",
+  },
+  {
+    canonical: "Christ",
+    variations: ["Christness"],
+    category: "theology",
+    description:
+      "Title given to Jesus, derived from the Greek word Christos, meaning 'anointed one'.",
+    status: "proposed",
+  },
+  {
+    canonical: "Jordan Maxwell",
+    variations: ["Maxwell"],
+    category: "person",
+    description:
+      "American conspiracy theorist known for his views on religion, symbolism, and secret societies.",
+    status: "proposed",
+  },
+  {
+    canonical: "Shepherds",
+    variations: [],
+    category: "character",
+    description:
+      "The humble workers who were among the first to hear the news of Jesus' birth, according to the Gospel of Luke",
+    status: "proposed",
+  },
+  {
+    canonical: "Huldah",
+    variations: [],
+    category: "character",
+    description:
+      "A prophetess during the reign of King Josiah, consulted about the Book of the Law",
+    status: "proposed",
+  },
+  {
+    canonical: "shevet",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Hebrew word meaning rod or staff, used in Proverbs and elsewhere",
+    status: "proposed",
+  },
+  {
+    canonical: "Donatello",
+    variations: [],
+    category: "miscellaneous",
+    description: "One of the Teenage Mutant Ninja Turtles",
+    status: "proposed",
+  },
+  {
+    canonical: "John Piper",
+    variations: [],
+    category: "person",
+    description: "An American pastor and theologian",
+    status: "proposed",
+  },
+  {
+    canonical: "Apologetics",
+    variations: ["apologetic"],
+    category: "theology",
+    description:
+      "The theological discipline of defending religious doctrines through systematic argumentation and discourse.",
+    status: "proposed",
+  },
+  {
+    canonical: "congitive dissonance",
+    variations: [],
+    category: "scholarship",
+    description:
+      "The mental discomfort experienced when holding conflicting beliefs, values, or attitudes.",
+    status: "proposed",
+  },
+  {
+    canonical: "star-spangled jesus",
+    variations: ["star spangled jesus"],
+    category: "literature",
+    description:
+      "Title of April Ajoy's book, which explores her journey of leaving Christian nationalism.",
+    status: "proposed",
+  },
+  {
+    canonical: "george washington",
+    variations: ["Washington"],
+    category: "person",
+    description:
+      "First president of the United States who was believed to be given the land by God.",
+    status: "proposed",
+  },
+  {
+    canonical: "Ethiopians",
+    variations: [],
+    category: "people",
+    description:
+      "An ancient African people from the region of Ethiopia, mentioned in the Bible.",
+    status: "proposed",
+  },
+  {
+    canonical: "Racism",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Prejudice, discrimination, or antagonism directed against a person or people on the basis of their membership in a particular racial or ethnic group.",
+    status: "proposed",
+  },
+  {
+    canonical: "Slavery",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "The state of being a slave; the practice or system of owning slaves.",
+    status: "proposed",
+  },
+  {
+    canonical: "Gospel of Judas",
+    variations: ["Judas"],
+    category: "literature",
+    description:
+      "Gnostic text depicting Judas Iscariot in a positive light, discovered in the 20th century.",
+    status: "proposed",
+  },
+  {
+    canonical: "ark",
+    variations: ["the ark"],
+    category: "miscellaneous",
+    description:
+      "The vessel built by Noah to save his family and animals from the flood. It is NOT the ark of the covenant. This is not a person, place, or literature.",
+    status: "proposed",
+  },
+  {
+    canonical: "ark of the covenant",
+    variations: ["the Ark of the Covenant"],
+    category: "miscellaneous",
+    description:
+      "The sacred chest containing the tablets of the Ten Commandments, a symbol of God's presence. This is not a person, place, or literature.",
+    status: "proposed",
+  },
+  {
+    canonical: "Freethought Caucus",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "A group of members of Congress who advocate for the separation of church and state and the rights of non-religious individuals.",
+    status: "proposed",
+  },
+  {
+    canonical: "Herodians",
+    variations: [],
+    category: "people",
+    description:
+      "A political faction in Judea during the time of Jesus, supporting the Herodian dynasty.",
+    status: "proposed",
+  },
+  {
+    canonical: "Archaeology",
+    variations: ["Archaeological"],
+    category: "scholarship",
+    description:
+      "The study of human history and prehistory through the excavation of sites and the analysis of artifacts and other physical remains.",
+    status: "proposed",
+  },
+  {
+    canonical: "Noah's Ark",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "The vessel in which Noah and his family survived the Great Flood in the Book of Genesis.",
+    status: "proposed",
+  },
+  {
+    canonical: "Apostles Creed",
+    variations: ["Apostle's Creed"],
+    category: "theology",
+    description:
+      "Early statement of Christian belief, widely used by various denominations.",
+    status: "proposed",
+  },
+  {
+    canonical: "Pauline epistle",
+    variations: ["Pauline epistles"],
+    category: "literature",
+    description:
+      "A letter traditionally attributed to the Apostle Paul in the New Testament",
+    status: "proposed",
+  },
+  {
+    canonical: "Timothy",
+    variations: [],
+    category: "character",
+    description:
+      "A companion of Paul the Apostle mentioned in the New Testament",
+    status: "proposed",
+  },
+  {
+    canonical: "Christ Jesus",
+    variations: [],
+    category: "theology",
+    description:
+      "A name used for Jesus Christ, emphasizing his role as the Messiah",
+    status: "proposed",
+  },
+  {
+    canonical: "Caesarea",
+    variations: [],
+    category: "place",
+    description:
+      "An ancient port city on the coast of Israel, known for its historical significance during Roman times",
+    status: "proposed",
+  },
+  {
+    canonical: "Codex Vaticanus",
+    variations: [],
+    category: "literature",
+    description:
+      "One of the oldest nearly complete manuscripts of the Bible, written in Greek",
+    status: "proposed",
+  },
+  {
+    canonical: "University of Oxford",
+    variations: ["Oxford"],
+    category: "place",
+    description: "A collegiate research university in Oxford, England",
+    status: "proposed",
+  },
+  {
+    canonical: "T. Michael Law",
+    variations: [],
+    category: "person",
+    description:
+      "Scholar of the Septuagint, specializing in the intersection of biblical translation and early Christian origins",
+    status: "proposed",
+  },
+  {
+    canonical: "bishop of london",
+    variations: ["bishop"],
+    category: "miscellaneous",
+    description: "A high-ranking cleric in the Church of England",
+    status: "proposed",
+  },
+  {
+    canonical: "beilby porteus",
+    variations: ["porteus"],
+    category: "person",
+    description: "Bishop of London and abolitionist",
+    status: "proposed",
+  },
+  {
+    canonical: "the kingdom of heaven",
+    variations: [],
+    category: "theology",
+    description:
+      "Concept in the synoptic gospels of a future reality characterized by God's rule",
+    status: "proposed",
+  },
+  {
+    canonical: "prosperity gospel",
+    variations: ["gospel of prosperity"],
+    category: "theology",
+    description:
+      "A religious belief that financial wealth is a sign of divine favor",
+    status: "proposed",
+  },
+  {
+    canonical: "experience",
+    variations: ["experiences", "experiential"],
+    category: "theology",
+    description:
+      "Subjective or objective perceptions, that influence worldview",
+    status: "proposed",
+  },
+  {
+    canonical: "pastor",
+    variations: ["pastoral", "pastorhood"],
+    category: "religion",
+    description: "Religious leader in a Christian church",
+    status: "proposed",
+  },
+  {
+    canonical: "seminary",
+    variations: ["seminaries"],
+    category: "scholarship",
+    description: "Educational institution for training religious leaders",
+    status: "proposed",
+  },
+  {
+    canonical: "community",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "A group of people living in the same place or having a particular characteristic in common",
+    status: "proposed",
+  },
+  {
+    canonical: "Jesus Christ",
+    variations: ["Christ"],
+    category: "theology",
+    description:
+      "Central figure in Christianity, believed to be the Son of God and the Messiah",
+    status: "rejected",
+  },
+  {
+    canonical: "Lord Jesus Christ",
+    variations: ["Jesus Christ"],
+    category: "theology",
+    description:
+      "A title used to refer to Jesus, affirming his divine status and role as savior",
+    status: "proposed",
+  },
+  {
+    canonical: "the wilderness narrative",
+    variations: [],
+    category: "literature",
+    description:
+      "Stories in Exodus and Numbers about the Israelites wandering in the wilderness after the Exodus from Egypt.",
+    status: "proposed",
+  },
+  {
+    canonical: "historicity",
+    variations: [],
+    category: "scholarship",
+    description:
+      "The question of whether events described in a text actually occurred in the past.",
+    status: "proposed",
+  },
+  {
+    canonical: "genre",
+    variations: [],
+    category: "scholarship",
+    description:
+      "A category of literary composition characterized by a particular style, form, or content; relevant for interpreting texts.",
+    status: "proposed",
+  },
+  {
+    canonical: "The Merchant of Venice",
+    variations: ["Merchant of Venice"],
+    category: "literature",
+    description:
+      "A play by William Shakespeare featuring Shylock, a Jewish moneylender, and dealing with themes of justice, mercy, and prejudice",
+    status: "proposed",
+  },
+  {
+    canonical: "Parable of the Talents",
+    variations: [],
+    category: "literature",
+    description:
+      "A parable told by Jesus in the Gospel of Matthew, concerning a master who entrusts his property to his servants before going on a journey",
+    status: "proposed",
+  },
+  {
+    canonical: "Yii-Jan Lin",
+    variations: ["Dr. Lin", "Lin"],
+    category: "person",
+    description:
+      "Associate Professor of New Testament at Yale Divinity School and author of 'Immigration and Apocalypse'",
+    status: "proposed",
+  },
+  {
+    canonical: "nicene creed",
+    variations: ["nicene"],
+    category: "event",
+    description:
+      "A statement of Christian belief formulated at the Council of Nicaea in 325 CE",
+    status: "proposed",
+  },
+  {
+    canonical: "constantinople",
+    variations: ["constantinople patriarch"],
+    category: "place",
+    description:
+      "Historical city, formerly the capital of the Roman, Byzantine, and Ottoman empires, now Istanbul.",
+    status: "proposed",
+  },
+  {
+    canonical: "sunday",
+    variations: ["Lord's Day"],
+    category: "miscellaneous",
+    description: "A day of the week often associated with Christian worship.",
+    status: "proposed",
+  },
+  {
+    canonical: "Epistle of Barnabas",
+    variations: ["Barnabas"],
+    category: "literature",
+    description:
+      "A non-canonical letter attributed to Barnabas, discussing the interpretation of the Hebrew Bible and early Christian practices",
+    status: "proposed",
+  },
+  {
+    canonical: "Golden Rule",
+    variations: [],
+    category: "theology",
+    description:
+      "Ethical principle stating 'Do unto others as you would have them do unto you'",
+    status: "proposed",
+  },
+  {
+    canonical: "Zipporah",
+    variations: [],
+    category: "character",
+    description: "The wife of Moses, daughter of Jethro, a priest of Midian",
+    status: "proposed",
+  },
+  {
+    canonical: "Hasmonean Kingdom",
+    variations: ["Hasmonean"],
+    category: "event",
+    description:
+      "An independent Jewish kingdom established by the Hasmonean dynasty following the Maccabean revolt",
+    status: "proposed",
+  },
+  {
+    canonical: "the exiles",
+    variations: ["exiles"],
+    category: "people",
+    description:
+      "The Israelites who were deported from Jerusalem to Babylon during the Babylonian exile",
+    status: "proposed",
+  },
+  {
+    canonical: "Pride Month",
+    variations: ["Gay Pride Month", "LGBTQ Pride month"],
+    category: "miscellaneous",
+    description:
+      "A month dedicated to celebrating and commemorating LGBTQ+ pride, typically held in June.",
+    status: "proposed",
+  },
+  {
+    canonical: "Oxford English Dictionary",
+    variations: ["OED"],
+    category: "literature",
+    description:
+      "A comprehensive dictionary of the English language, known for its detailed etymologies and historical usage examples.",
+    status: "proposed",
+  },
+  {
+    canonical: "Leviathan",
+    variations: ["Litan", "Loton"],
+    category: "character",
+    description:
+      "Sea monster or dragon, often associated with chaos, mentioned in the Hebrew Bible.",
+    status: "proposed",
+  },
+  {
+    canonical: "Amenemope",
+    variations: ["Instruction of Amenemope"],
+    category: "person",
+    description:
+      "Author of the Instruction of Amenemope, an Egyptian wisdom text that shares similarities with Proverbs.",
+    status: "proposed",
+  },
+  {
+    canonical: "Ethnicity",
+    variations: ["ethnic"],
+    category: "miscellaneous",
+    description:
+      "Shared cultural, ancestral, and social identity within a group, distinct from race",
+    status: "proposed",
+  },
+  {
+    canonical: "Phoenix",
+    variations: [],
+    category: "place",
+    description:
+      "City in Arizona mentioned in the context of weather comparison",
+    status: "proposed",
+  },
+  {
+    canonical: "Code of Hammurabi",
+    variations: [],
+    category: "literature",
+    description:
+      "A well-preserved Babylonian code of law of ancient Mesopotamia",
+    status: "proposed",
+  },
+  {
+    canonical: "Practicing Safer Texts",
+    variations: [],
+    category: "literature",
+    description:
+      "Book by Ken Stone exploring interpretations of the Bible related to food, sex, and ethnicity",
+    status: "proposed",
+  },
+  {
+    canonical: "Trump administration",
+    variations: ["Trump"],
+    category: "event",
+    description:
+      "The Executive branch of the U.S. federal government led by President Donald Trump (2017-2021).",
+    status: "proposed",
+  },
+  {
+    canonical: "law",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Rules established by authority or custom with legal consequences. Used in discussions about immigration policy.",
+    status: "proposed",
+    caseSensitive: true,
+  },
+  {
+    canonical: "Tucker Carlson",
+    variations: [],
+    category: "person",
+    description:
+      "Political commentator and media personality, known for his conservative viewpoints",
+    status: "proposed",
+  },
+  {
+    canonical: "Zion",
+    variations: [],
+    category: "place",
+    description:
+      "A term with multiple layers of meaning in the Hebrew Bible, often referring to Jerusalem or the promised land",
+    status: "proposed",
+  },
+  {
+    canonical: "Canon",
+    variations: ["Canonicity"],
+    category: "theology",
+    description:
+      "The list of books considered authoritative scripture in a particular religion. In Christianity, it refers to the collection of books considered to be the inspired word.",
+    status: "proposed",
+  },
+  {
+    canonical: "Tertullian",
+    variations: [],
+    category: "person",
+    llmVerify: true,
+    description:
+      "A prolific early Christian author from Carthage in the late 2nd and early 3rd centuries CE, known for his theological and apologetic writings in Latin.",
+    status: "accepted",
+    episodes: [12, 50, 62, 69, 70, 104, 120, 142, 148, 156],
+  },
+  {
+    canonical: "seraphim",
+    variations: ["seraph"],
+    category: "miscellaneous",
+    description:
+      "Celestial beings with six wings mentioned in Isaiah 6, often associated with the divine presence and purity.",
+    status: "proposed",
+  },
+  {
+    canonical: "king uzziah",
+    variations: ["Uzziah"],
+    category: "person",
+    description:
+      "King of Judah in the 8th century BCE, whose reign marked a period of prosperity and expansion.",
+    status: "proposed",
+  },
+  {
+    canonical: "Terah",
+    variations: ["Terach"],
+    category: "character",
+    llmVerify: true,
+    description:
+      "Abraham's father, who initially leads his family from Ur of the Chaldeans toward Canaan.",
+    status: "accepted",
+    episodes: [118, 121, 150],
+  },
+  {
+    canonical: "Ur of the Chaldeans",
+    variations: ["Ur"],
+    category: "place",
+    description:
+      "The ancestral homeland of Abraham and his family, from which they migrate to Haran.",
+    status: "proposed",
+  },
+  {
+    canonical: "Gerar",
+    variations: ["the region of Gerar"],
+    category: "place",
+    description:
+      "A Philistine city where Abraham and Sarah, and later Isaac and Rebekah, sojourn and encounter King Abimelech.",
+    status: "proposed",
+  },
+  {
+    canonical: "Teraphim",
+    variations: ["the teraphim", "household gods"],
+    category: "miscellaneous",
+    description:
+      "Household idols or divine images, often associated with divination and protection.",
+    status: "proposed",
+  },
+  {
+    canonical: "King Ahab",
+    variations: ["Ahab"],
+    category: "character",
+    description:
+      "King of Israel in the 9th century BCE, husband of Jezebel, criticized in the Hebrew Bible for promoting the worship of Baal",
+    status: "proposed",
+  },
+  {
+    canonical: "Threads",
+    variations: [],
+    category: "miscellaneous",
+    description: "Social media platform by Meta, launched in July 2023",
+    status: "proposed",
+  },
+  {
+    canonical: "bene elohim",
+    variations: ["sons of God", "bene elohim"],
+    category: "theology",
+    description:
+      'A Hebrew phrase meaning "sons of God," referring to divine beings or members of the divine council',
+    status: "proposed",
+  },
+  {
+    canonical: "mormon",
+    variations: ["Mormons"],
+    category: "religion",
+    description:
+      "A member of the Church of Jesus Christ of Latter-day Saints, a religious tradition founded by Joseph Smith",
+    status: "proposed",
+  },
+  {
+    canonical: "rogan",
+    variations: ["joe rogan"],
+    category: "miscellaneous",
+    description: "Reference to the Joe Rogan Experience podcast",
+    status: "proposed",
+  },
+  {
+    canonical: "james white",
+    variations: ["white"],
+    category: "person",
+    description:
+      "An American apologist, author, and director of Alpha and Omega Ministries known for his debates",
+    status: "rejected",
+  },
+  {
+    canonical: "texans",
+    variations: [],
+    category: "miscellaneous",
+    description: "Relating to the U.S. state of Texas",
+    status: "proposed",
+  },
+  {
+    canonical: "Doug Wilson",
+    variations: ["Wilson"],
+    category: "person",
+    description:
+      "American pastor, theologian, and author associated with the Christian Reconstructionist movement",
+    status: "proposed",
+  },
+  {
+    canonical: "Kedeshah",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Hebrew term, often translated as 'cult prostitute,' but debated in its meaning and association with sex work",
+    status: "proposed",
+  },
+  {
+    canonical: "Neo-Assyrian",
+    variations: [],
+    category: "event",
+    description: "Pertaining to the Neo-Assyrian Empire",
+    status: "proposed",
+  },
+  {
+    canonical: "Shemesh",
+    variations: ["Beit Shemesh"],
+    category: "place",
+    description:
+      "An ancient Biblical city on the border between the tribes of Judah and Dan",
+    status: "proposed",
+  },
+  {
+    canonical: "Holy Grail",
+    variations: ["the Grail", "Grail"],
+    category: "miscellaneous",
+    description:
+      "A legendary artifact, often depicted as a cup or dish, with significance in Christian and Arthurian traditions",
+    status: "proposed",
+  },
+  {
+    canonical: "CEB",
+    variations: ["Common English Bible"],
+    category: "literature",
+    description:
+      "The Common English Bible, a translation intended for a broad audience",
+    status: "proposed",
+  },
+  {
+    canonical: "John the son of Zebedee",
+    variations: ["John"],
+    category: "character",
+    description:
+      "One of the Twelve Apostles of Jesus, traditionally believed to be the author of the Gospel of John and other Johannine works.",
+    status: "proposed",
+  },
+  {
+    canonical: "Midian",
+    variations: ["Midianites"],
+    category: "place",
+    description:
+      "Territory south-southeast of Israel, east of the Gulf of Aqaba; associated with Jethro, Moses' father-in-law",
+    status: "proposed",
+  },
+  {
+    canonical: "angel of the Lord",
+    variations: [],
+    category: "theology",
+    description:
+      "In the Hebrew Bible, a messenger of God, sometimes considered a manifestation of God himself",
+    status: "proposed",
+  },
+  {
+    canonical: "amorite",
+    variations: ["Amorites"],
+    category: "people",
+    description: "An ancient Semitic-speaking people from ancient Syria",
+    status: "proposed",
+  },
+  {
+    canonical: "Shechem",
+    variations: [],
+    category: "place",
+    description: "An ancient city in Samaria, mentioned in the Hebrew Bible",
+    status: "proposed",
+  },
+  {
+    canonical: "shittim",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Type of wood mentioned in the Hebrew Bible, particularly in connection with the construction of the Tabernacle and Ark of the Covenant.",
+    status: "proposed",
+  },
+  {
+    canonical: "peace and safety",
+    variations: [],
+    category: "theology",
+    description:
+      "Phrase in 1 Thessalonians 5:3 often associated with end-times prophecies and the Antichrist",
+    status: "proposed",
+  },
+  {
+    canonical: " adultery",
+    variations: ["adulterous"],
+    category: "theology",
+    description:
+      "Sexual relations between a married person and someone other than their spouse; a violation of marital fidelity",
+    status: "proposed",
+  },
+  {
+    canonical: "Baals",
+    variations: ["the Baals"],
+    category: "character",
+    description:
+      "Plural form of Baal, referring to various local deities or idols worshiped instead of Yahweh in ancient Israel",
+    status: "proposed",
+  },
+  {
+    canonical: "Cross",
+    variations: ["crossbeam", "T-shaped cross"],
+    category: "miscellaneous",
+    description:
+      "A symbol representing the crucifixion of Jesus, central to Christianity",
+    status: "proposed",
+  },
+  {
+    canonical: "John Dominic Crossan",
+    variations: ["Dom Crossan", "Crossan"],
+    category: "person",
+    description:
+      "New Testament scholar known for his work on the historical Jesus.",
+    status: "proposed",
+  },
+  {
+    canonical: "angel of the presence",
+    variations: ["malak adonai", "messenger of Adonai"],
+    category: "theology",
+    description:
+      "An angel that mediates between God and Moses in the Book of Jubilees.",
+    status: "proposed",
+  },
+  {
+    canonical: "Polygamy",
+    variations: ["polygyny", "polygamous"],
+    category: "theology",
+    description:
+      "The practice of having more than one spouse at the same time, specifically polygyny (one man, multiple wives) in the biblical context discussed.",
+    status: "proposed",
+  },
+  {
+    canonical: "Nathan",
+    variations: [],
+    category: "character",
+    description: "A prophet in the Hebrew Bible who advised King David.",
+    status: "proposed",
+  },
+  {
+    canonical: "Rich Tidwell",
+    variations: ["Tidwell"],
+    category: "person",
+    description:
+      "A pastor who publicly came out as polygamist, sparking debate among evangelicals.",
+    status: "proposed",
+  },
+  {
+    canonical: "King Shishak",
+    variations: ["Shishak"],
+    category: "person",
+    description:
+      "Egyptian pharaoh mentioned in the Hebrew Bible who raided Jerusalem during the reign of Rehoboam.",
+    status: "proposed",
+  },
+  {
+    canonical: "Jeroboam",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "First king of the northern kingdom of Israel after the split from Judah.",
+    status: "accepted",
+    episodes: [7, 64, 110, 139, 149],
+  },
+  {
+    canonical: "Pope",
+    variations: [],
+    category: "person",
+    description: "The head of the Roman Catholic Church",
+    status: "proposed",
+  },
+  {
+    canonical: "Original sin",
+    variations: [],
+    category: "theology",
+    description:
+      "Christian doctrine that all humans are born with an inherited sinfulness originating from Adam's transgression in the Garden of Eden",
+    status: "proposed",
+  },
+  {
+    canonical: "Ken Ham",
+    variations: ["Ham"],
+    category: "person",
+    description:
+      "Christian apologist and creationist, founder of Answers in Genesis",
+    status: "proposed",
+  },
+  {
+    canonical: "Archelaus",
+    variations: ["herod archelaus"],
+    category: "person",
+    description: "Son of Herod the Great, ruled Judea after his father's death",
+    status: "proposed",
+  },
+  {
+    canonical: "Answers in Genesis",
+    variations: ["AiG"],
+    category: "religion",
+    description: "Young Earth creationist organization",
+    status: "proposed",
+  },
+  {
+    canonical: "Quirinius",
+    variations: ["cyrenius"],
+    category: "person",
+    description: "Roman governor of Syria during the time of Jesus's birth",
+    status: "proposed",
+  },
+  {
+    canonical: "eve's",
+    variations: [],
+    category: "character",
+    description:
+      "The first woman in the Bible; partner of Adam and tempted by the serpent",
+    status: "proposed",
+  },
+  {
+    canonical: "snake",
+    variations: [],
+    category: "character",
+    description:
+      "The talking snake in the Garden of Eden who tempts Eve to eat from the tree of knowledge",
+    status: "proposed",
+  },
+  {
+    canonical: "theologians",
+    variations: [],
+    category: "person",
+    description: "Scholars who study the nature of God and religious beliefs",
+    status: "proposed",
+  },
+  {
+    canonical: "the spirit",
+    variations: ["holy spirit"],
+    category: "theology",
+    description:
+      "Refers to the Holy Spirit in a Christian context, the third person of the Trinity",
+    status: "proposed",
+  },
+  {
+    canonical: "mikveh",
+    variations: [],
+    category: "miscellaneous",
+    description: "A ritual bath used for purification in Judaism",
+    status: "proposed",
+  },
+  {
+    canonical: "Law and the Prophets",
+    variations: ["Law or the Prophets"],
+    category: "literature",
+    description:
+      "A common division of the Hebrew Bible into two parts: the Law (Torah) and the Prophets (Nevi'im)",
+    status: "proposed",
+  },
+  {
+    canonical: "Xerxes",
+    variations: ["Ahasuerus"],
+    category: "person",
+    description:
+      "King of Persia during the events of the Book of Esther; also known as Ahasuerus.",
+    status: "proposed",
+  },
+  {
+    canonical: "Thecla",
+    variations: ["Thecla's"],
+    category: "character",
+    description:
+      "A central character in the apocryphal Acts of Paul and Thecla, known for her devotion to an ascetic life and her eventual role as a teacher",
+    status: "proposed",
+  },
+  {
+    canonical: "Alexander",
+    variations: ["alexamenos"],
+    category: "person",
+    description:
+      "A citizen of Antioch who attempts to molest Thecla, but is humiliated and later tries to have her killed in the arena.",
+    status: "proposed",
+  },
+  {
+    canonical: "Theokleia",
+    variations: ["Theocleia"],
+    category: "character",
+    description:
+      "The mother of Thecla in the Acts of Paul and Thecla, who initially opposes her daughter's embrace of asceticism.",
+    status: "proposed",
+  },
+  {
+    canonical: "interpretation",
+    variations: ["interpretations", "interpretive"],
+    category: "scholarship",
+    description:
+      "The process of explaining the meaning of a text; in biblical studies, it involves various methods and perspectives.",
+    status: "proposed",
+  },
+  {
+    canonical: "text",
+    variations: ["texts"],
+    category: "literature",
+    description:
+      "Referring to biblical or ancient near eastern documents and writings.",
+    status: "proposed",
+  },
+  {
+    canonical: "the bible for normal people",
+    variations: ["bible for normal people"],
+    category: "miscellaneous",
+    description:
+      "A podcast and organization focused on making biblical scholarship accessible to a general audience.",
+    status: "proposed",
+  },
+  {
+    canonical: "pete enns",
+    variations: ["enns"],
+    category: "person",
+    description:
+      "Biblical scholar and author known for his work on biblical interpretation and his engagement with a broad audience through 'The Bible for Normal People'.",
+    status: "proposed",
+  },
+  {
+    canonical: "liberation theology",
+    variations: ["white theology", "male theology"],
+    category: "theology",
+    description:
+      "A theological movement that emphasizes the liberation of the oppressed and marginalized.",
+    status: "proposed",
+  },
+  {
+    canonical: "origin",
+    variations: [],
+    category: "person",
+    description:
+      "An early Christian scholar and theologian known for his allegorical interpretation of Scripture.",
+    status: "proposed",
+    caseSensitive: true,
+  },
+  {
+    canonical: "Zoroastrian",
+    variations: [],
+    category: "religion",
+    description: "Ancient Persian religion, founded by the prophet Zoroaster",
+    status: "proposed",
+  },
+  {
+    canonical: "translation",
+    variations: ["translations"],
+    category: "scholarship",
+    description:
+      "The process of converting a text from one language to another, often involving interpretive choices",
+    status: "proposed",
+  },
+  {
+    canonical: "gematria",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "A method of interpreting texts by assigning numerical values to letters and words",
+    status: "proposed",
+  },
+  {
+    canonical: "Sola Scriptura",
+    variations: [],
+    category: "theology",
+    description:
+      "Protestant Christian doctrine that the Bible is the supreme authority in all matters of doctrine and practice",
+    status: "proposed",
+  },
+  {
+    canonical: "Renaissance",
+    variations: [],
+    category: "event",
+    description:
+      "A period in European history marking the transition from the Middle Ages to modernity",
+    status: "proposed",
+  },
+  {
+    canonical: "Lincoln Blumell",
+    variations: ["Lincoln"],
+    category: "person",
+    description:
+      "Professor in religious education at Brigham Young University, author of Lady Eclecte: The Lost Woman of the New Testament",
+    status: "proposed",
+  },
+  {
+    canonical: "Papyri",
+    variations: ["papyrus"],
+    category: "literature",
+    description:
+      "Ancient paper made from the papyrus plant, used for writing documents and letters.",
+    status: "proposed",
+  },
+  {
+    canonical: "Clement of Alexandria",
+    variations: ["Clement"],
+    category: "person",
+    description:
+      "An early Christian theologian and head of the Catechetical School of Alexandria.",
+    status: "proposed",
+  },
+  {
+    canonical: "Elect lady",
+    variations: ["Eklekte Kuria"],
+    category: "miscellaneous",
+    description:
+      "Traditional translation of 2 John 1, often interpreted metaphorically to represent a church or congregation.",
+    status: "proposed",
+  },
+  {
+    canonical: "Elder",
+    variations: ["the Elder"],
+    category: "miscellaneous",
+    description:
+      "Title used by the author of 2 John and 3 John, possibly referring to a leader in the early church",
+    status: "proposed",
+  },
+  {
+    canonical: "Lectio brevior",
+    variations: ["shorter reading"],
+    category: "scholarship",
+    description:
+      "Text-critical principle that the shorter reading is generally preferred as more likely to be original.",
+    status: "proposed",
+  },
+  {
+    canonical: "Lectio longior",
+    variations: ["longer reading"],
+    category: "scholarship",
+    description:
+      "Text-critical principle that the longer reading is generally preferred as more likely to be original.",
+    status: "proposed",
+  },
+  {
+    canonical: "Eklekte",
+    variations: ["Eclecte"],
+    category: "character",
+    description:
+      'A woman\'s name proposed as the addressee of 2 John, instead of the traditional "elect lady" interpretation.',
+    status: "proposed",
+  },
+  {
+    canonical: "2nd century CE",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Refers to the time period of 100-200 CE, the era when many early Christian and Rabbinic texts were written.",
+    status: "proposed",
+  },
+  {
+    canonical: "Acts of Andrew",
+    variations: ["Acts of Apostle Andrew"],
+    category: "literature",
+    description:
+      "An apocryphal text describing the ministry and martyrdom of the Apostle Andrew.",
+    status: "proposed",
+  },
+  {
+    canonical: "Acts of Peter",
+    variations: [],
+    category: "literature",
+    description:
+      "An apocryphal text from the 2nd century that describes the ministry and martyrdom of the Apostle Peter.",
+    status: "proposed",
+  },
+  {
+    canonical: "uriel",
+    variations: ["sariel"],
+    category: "character",
+    description: "Name of an angel.",
+    status: "proposed",
+  },
+  {
+    canonical: "raphael",
+    variations: [],
+    category: "character",
+    description: "Name of an archangel.",
+    status: "proposed",
+  },
+  {
+    canonical: "shemihazah",
+    variations: [],
+    category: "character",
+    description:
+      "One of the chief angels who descended to Earth and had intercourse with human women, according to the Book of Enoch.",
+    status: "proposed",
   },
 ];
 

@@ -20,12 +20,10 @@ tags:
   - Baal
   - Cherubim
   - Council of Jerusalem
-  - Jerusalem
   - Talmud
   - Catholicism
   - Ethical Decalogue
   - Flavius Josephus
-  - Josephus
   - Septuagint
   - Amorites
   - Arad
@@ -33,10 +31,9 @@ tags:
   - circumcision
   - Gentiles
   - Hell
-  - James
+  - Isaiah
   - Judah
   - Mount Gerizim
-  - Protestantism
   - Qumran
   - Samaritans
   - Second Temple period

@@ -9,7 +9,6 @@ tags:
   - James
   - Edom
   - Gentiles
-  - YHWH
   - Adam
   - King David
   - Council of Jerusalem

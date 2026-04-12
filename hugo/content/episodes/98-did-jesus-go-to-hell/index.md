@@ -12,10 +12,10 @@ tags:
   - Noah
   - John
   - Book of Enoch
+  - Augustine
   - Satan
   - Athanasius of Alexandria
   - Eschatology
-  - Raphael
   - Catholicism
   - Enoch
   - Flood
@@ -29,7 +29,6 @@ tags:
   - King James Version
   - Lamech
   - Pontius Pilate
-  - Uriel
 books:
   - Revelation
   - 1 Peter

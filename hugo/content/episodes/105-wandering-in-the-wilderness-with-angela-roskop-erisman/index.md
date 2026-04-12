@@ -11,17 +11,18 @@ tags:
   - Aaron
   - Korach
   - Hezekiah
-  - Isaiah
   - Judah
   - Torah
   - Assyria
   - Deutero-Isaiah
   - divine council
+  - Isaiah
   - Joshua
   - Judeans
   - King Sennacherib
   - Philo of Alexandria
   - Babylon
+  - King David
   - YHWH
 books:
   - Exodus

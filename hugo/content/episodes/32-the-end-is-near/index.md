@@ -10,20 +10,17 @@ tags:
   - Eschatology
   - Daniel
   - Preterism
-  - Matthew
   - Paul
-  - YHWH
   - Babylon
   - futurist interpretation
   - Jeremiah
   - Gaza
-  - Isaiah
   - Jerusalem
   - Antiochus IV Epiphanes
   - Baal
   - Hell
   - King James Version
-  - Luke
+  - Latin Vulgate
   - Satan
   - Univocality
 books:

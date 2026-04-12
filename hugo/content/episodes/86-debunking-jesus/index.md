@@ -7,11 +7,8 @@ aliases:
   - /episodes/86/
 tags:
   - Flavius Josephus
-  - Josephus
   - Romans
-  - Testimonium Flavianum
   - Galilee
-  - James
   - John
   - King David
   - Pontius Pilate
@@ -19,6 +16,7 @@ tags:
   - baptism
   - Crucifixion
   - forgery
+  - James
   - Jerusalem
   - Judeans
   - Matthew

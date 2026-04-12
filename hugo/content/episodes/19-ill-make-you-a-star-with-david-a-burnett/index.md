@@ -7,7 +7,7 @@ aliases:
   - /episodes/19/
 tags:
   - Paul
-  - monotheism
+  - Monotheism
   - Deuteronomy
   - Judaism
   - Abraham
@@ -19,19 +19,17 @@ tags:
   - YHWH
   - Second Temple period
   - Isaiah
-  - Matthew
   - Septuagint
-  - Sisera
   - Apocrypha
+  - Augustine
   - Baruch
   - Book of Enoch
   - Catholicism
   - Daniel
   - Dead Sea Scrolls
-  - Deborah
   - Gentiles
   - Hell
-  - King David
+  - Jacob
   - Luke
   - Pseudepigrapha
   - Sarah

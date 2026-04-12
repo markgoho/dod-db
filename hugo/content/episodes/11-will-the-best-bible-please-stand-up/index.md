@@ -13,20 +13,16 @@ tags:
   - William Tyndale
   - Masoretic Text
   - Dead Sea Scrolls
-  - James
   - Pseudepigrapha
   - Desiderius Erasmus
   - Martin Luther
   - Jeremiah
-  - YHWH
   - Book of Enoch
   - Catholicism
   - Judaism
   - Leningrad Codex
-  - Matthew
   - Codex Sinaiticus
   - Judeans
-  - Luke
   - Moses
   - Origen
   - Torah
@@ -43,12 +39,12 @@ tags:
   - Protestantism
   - Samuel
   - Textus Receptus
-  - Codex Vaticanus
   - Daniel
   - Galilee
   - Gnostic
   - Jonah
-  - Sarah
+  - Luke
+  - Matthew
   - Syria
   - The Reformation
 books:

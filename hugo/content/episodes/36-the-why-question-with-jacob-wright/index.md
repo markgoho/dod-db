@@ -7,33 +7,33 @@ aliases:
   - /episodes/36/
 tags:
   - Judah
+  - King David
   - Judeans
   - Julius Wellhausen
   - YHWH
+  - Jacob
   - Jerusalem
   - Moab
   - Assyria
   - Joshua
-  - Deborah
   - Deuteronomy
   - Esau
   - Esther
   - Garden of Eden
   - Jeremiah
   - King Saul
-  - monotheism
-  - Nehemiah
+  - Monotheism
   - Samaria
   - Samuel
   - Solomon
   - Abraham
   - Ammonites
   - Babylon
-  - Daniel
   - Gideon
   - Goliath
   - Hezekiah
   - Isaac
+  - Islam
   - Jephthah
   - King Josiah
   - Moses

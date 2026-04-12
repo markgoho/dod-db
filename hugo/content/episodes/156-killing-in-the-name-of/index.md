@@ -7,6 +7,7 @@ aliases:
   - /episodes/156/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/154250873.mp3?sig=B45_DXJXRNLoUndpzMe9Y4-NXFjV-ROE2b6Lol09Xwk%3D
 tags:
+  - Amalek
   - King Saul
   - Samuel
   - Peter
@@ -15,22 +16,19 @@ tags:
   - Apocrypha
   - Agag
   - Moses
-  - Matthew
   - Eusebius
   - Judas Iscariot
+  - Matthew
   - Papias of Hierapolis
-  - Clement of Alexandria
   - James
   - King David
-  - Acts of Andrew
+  - Philip
   - Cain
   - Gaza
   - Joshua
   - Persia
   - Ziklag
   - Aaron
-  - Acts of Peter
-  - Bartholomew
   - Constantine
   - Deuteronomy
   - First Clement
@@ -38,7 +36,6 @@ tags:
   - Jacob
   - Midianites
   - Paul
-  - Thaddeus
   - Torah
   - Univocality
   - Canaanites
@@ -53,7 +50,7 @@ tags:
   - Lachish
   - Nero
   - Tertullian
-  - Thecla
+  - Thaddeus
 books:
   - 1 Samuel
   - Exodus

@@ -10,28 +10,28 @@ tags:
   - Flood
   - Methuselah
   - Lamech
-  - Cain
   - Enoch
   - Noah
   - Adam
   - Seth
+  - Cain
   - Masoretic Text
   - Septuagint
   - Martin Luther
   - Book of Enoch
-  - Jared
   - Abraham
   - Judaism
   - Athanasius of Alexandria
+  - Jared
   - Maccabees
   - Protestantism
   - Baruch
   - Catholicism
+  - Daniel
   - Ishmael
   - The Reformation
   - Dead Sea Scrolls
   - Isaiah
-  - James
   - Jeremiah
   - Jerome
   - Joseph
@@ -39,12 +39,9 @@ tags:
   - Latin Vulgate
   - Abimelech
   - Babylon
+  - Barnabas
   - Bel and the Dragon
-  - Clement of Alexandria
-  - Clement of Rome
   - Codex Sinaiticus
-  - Codex Vaticanus
-  - Daniel
   - Didache
   - Esther
   - First Clement
@@ -54,7 +51,6 @@ tags:
   - Moses
   - Pseudepigrapha
   - Susanna
-  - YHWH
 books:
   - Genesis
   - Isaiah

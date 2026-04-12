@@ -7,14 +7,13 @@ aliases:
   - /episodes/54/
 tags:
   - Paul
-  - Gentiles
-  - Jerusalem
   - Jonah
   - James
-  - Edom
   - Barnabas
+  - Gentiles
+  - Edom
   - circumcision
-  - YHWH
+  - Jerusalem
   - Peter
   - Luke
   - Council of Jerusalem
@@ -31,13 +30,13 @@ tags:
   - King David
   - Melchizedek
   - Syria
-  - Herod the Great
   - Mary Magdalene
   - Nero
   - Pergamum
   - Samaria
   - Satan
   - Sodom
+  - YHWH
 books:
   - Acts
   - Galatians

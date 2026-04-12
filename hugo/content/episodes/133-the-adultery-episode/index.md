@@ -38,7 +38,6 @@ tags:
   - Jerusalem
   - Judaism
   - Leah
-  - Luke
   - Persia
   - Protestantism
   - Rachel

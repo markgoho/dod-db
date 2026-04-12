@@ -6,20 +6,20 @@ videoId: 1w8zmAKheQE
 aliases:
   - /episodes/69/
 tags:
-  - Luke
+  - Matthew
   - Papias of Hierapolis
   - Peter
   - Marcion
+  - John
   - Paul
   - Irenaeus
-  - YHWH
+  - Justin Martyr
   - baptism
   - Ignatius
   - Flavius Josephus
-  - Josephus
+  - Luke
   - Didache
   - Jerusalem
-  - Justin Martyr
   - Eusebius
   - Jerome
   - Capernaum
@@ -28,9 +28,9 @@ tags:
   - Tertullian
   - Theophilus
   - Abraham
-  - Clement of Alexandria
   - Easter
   - Gnostic
+  - King David
   - Latin Vulgate
   - Moses
   - Trinity

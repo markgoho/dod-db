@@ -8,16 +8,13 @@ aliases:
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/149672881.mp3?sig=l3i17hyBwZ_Y9EeiJf4Z2y2EGj7y7JnawFunXMINrFA%3D
 tags:
   - Paul
-  - Thecla
   - Holy Spirit
   - Satan
   - Beelzebul
   - baptism
-  - Onesiphorus
   - Acts of Paul and Thecla
   - Demas
   - Hermogenes
-  - Luke
   - Peter
   - Mary Magdalene
   - Apocrypha
@@ -27,6 +24,7 @@ tags:
   - Jerusalem
   - John
   - Junia
+  - Luke
   - Tertullian
   - Trinity
 books:

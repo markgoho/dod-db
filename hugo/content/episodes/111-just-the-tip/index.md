@@ -14,9 +14,8 @@ tags:
   - Isaac
   - Moses
   - Gilead
-  - King David
   - etiology
-  - Zipporah
+  - King David
   - King Saul
   - Samson
   - Edom

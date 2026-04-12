@@ -6,8 +6,8 @@ videoId: AUgdX7aH_hI
 aliases:
   - /episodes/28/
 tags:
-  - YHWH
   - Judaism
+  - YHWH
   - Baal
   - Satan
   - Beelzebul
@@ -19,17 +19,15 @@ tags:
   - Daniel
   - Michael
   - divine council
-  - King Saul
   - Lot
   - Mary Magdalene
   - Moses
   - Persia
   - Apocrypha
   - Babylon
-  - Galilee
   - Gideon
   - Hagar
-  - Isaiah
+  - King Saul
   - Pseudepigrapha
   - Sodom
   - Syria
@@ -37,20 +35,21 @@ tags:
   - Deuteronomy
   - Enoch
   - Euphrates
+  - Galilee
   - Garden of Eden
   - Isaac
+  - Isaiah
   - Islam
+  - Jacob
   - John the Baptist
   - Molek
   - Peter
-  - Raphael
   - Samson
   - Samuel
   - Sarah
   - Sea of Galilee
   - Septuagint
   - Seth
-  - Uriel
 books:
   - Genesis
   - Psalms

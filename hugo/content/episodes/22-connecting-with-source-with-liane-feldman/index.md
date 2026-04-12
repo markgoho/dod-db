@@ -7,14 +7,11 @@ aliases:
   - /episodes/22/
 tags:
   - YHWH
-  - Enuma Elish
   - Julius Wellhausen
   - Moses
   - Deuteronomy
   - Flood
   - Qumran
-  - Seth
-  - James
   - Joseph
   - Abel
   - Adam
@@ -22,6 +19,7 @@ tags:
   - Babylon
   - Cain
   - Eve
+  - Isaiah
   - Ishmael
   - King James Version
   - Latin Vulgate

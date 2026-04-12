@@ -11,7 +11,6 @@ tags:
   - Crucifixion
   - Jerusalem
   - Elijah
-  - Church of the Holy Sepulcher
   - King James Version
   - Protestantism
   - Qumran

@@ -7,15 +7,17 @@ aliases:
   - /episodes/65/
 tags:
   - King James Version
-  - YHWH
-  - Endor
+  - Samuel
   - Witch of Endor
   - Anatolia
   - Deuteronomy
+  - Isaiah
+  - Jacob
   - Jerusalem
   - Judah
   - Judaism
   - The Reformation
+  - YHWH
 books:
   - Ezekiel
   - Revelation

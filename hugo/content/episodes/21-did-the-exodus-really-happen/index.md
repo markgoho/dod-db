@@ -16,17 +16,16 @@ tags:
   - Judaism
   - Abraham
   - Samuel
-  - YHWH
   - Deuteronomy
   - Hezekiah
   - Isaac
   - King James Version
   - Syria
+  - YHWH
   - Africa
   - Ammonites
   - Amorites
   - Egyptians
-  - Flood
   - Jerusalem
   - Joshua
   - Masoretic Text

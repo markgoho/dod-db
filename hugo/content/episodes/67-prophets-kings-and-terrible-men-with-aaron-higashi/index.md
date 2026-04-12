@@ -8,15 +8,16 @@ aliases:
 tags:
   - King David
   - King Saul
-  - Samuel
   - Jonathan
   - Moses
+  - Samuel
   - Absalom
   - Philistines
   - Bathsheba
   - Abigail
   - Goliath
   - Septuagint
+  - Jacob
   - Jerusalem
   - Judah
   - Babylon
@@ -26,7 +27,6 @@ tags:
   - Rachel
   - Sheol
   - Talmud
-  - Zipporah
 books:
   - 1 Samuel
 guests:

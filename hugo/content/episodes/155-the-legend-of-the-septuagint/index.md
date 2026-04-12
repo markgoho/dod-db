@@ -19,6 +19,7 @@ tags:
   - King David
   - Masoretic Text
   - Philo of Alexandria
+  - Rachel
   - Asherah
   - Dead Sea Scrolls
   - Egyptians

@@ -10,30 +10,29 @@ tags:
   - Lachish
   - King Sennacherib
   - Hezekiah
-  - YHWH
   - Dead Sea
-  - Judah
   - Arad
+  - Judah
   - King David
+  - YHWH
   - Goliath
   - Nineveh
   - Peter
   - Assyria
   - Baal
   - Babylon
+  - Canaanites
   - Constantine
   - Deuteronomy
   - Elhanan son of Jair
   - epigraphy
   - Esau
-  - Galilee
-  - Ham
+  - Garden of Gethsemane
   - Isaac
-  - James
+  - Jacob
   - Joshua
   - Moab
-  - monotheism
-  - Samuel
+  - Monotheism
   - Sea of Galilee
 books:
   - Genesis

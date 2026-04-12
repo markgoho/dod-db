@@ -6,30 +6,27 @@ videoId: OsQMmt2QnPU
 aliases:
   - /episodes/43/
 tags:
-  - Matthew
+  - Isaiah
+  - Cyrus the Great
   - Deutero-Isaiah
   - Jerusalem
   - Luke
   - Babylon
-  - Isaiah
   - Judaism
   - Hezekiah
   - King Sennacherib
-  - Cyrus the Great
   - Judah
   - Bethany
   - Second Temple period
-  - YHWH
   - Flavius Josephus
-  - Josephus
   - Romans
   - Bethlehem
   - Galilee
   - Gentiles
   - Gnostic
+  - Gospel of Thomas
   - Hell
   - Herod the Great
-  - Joseph
   - Maccabees
   - Passover
   - Peter

@@ -31,13 +31,13 @@ tags:
   - Balaam
   - Beelzebul
   - Dead Sea Scrolls
-  - Deborah
   - Deuteronomy
   - Enoch
   - Flavius Josephus
   - Hell
   - Jericho
   - King David
+  - Matthew
   - Qumran
   - Samuel
   - Solomon

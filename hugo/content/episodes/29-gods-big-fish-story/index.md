@@ -7,11 +7,11 @@ aliases:
   - /episodes/29/
 tags:
   - Jonah
-  - YHWH
   - Nineveh
   - Assyria
   - Eve
   - Adam
+  - YHWH
   - King Sennacherib
   - Ahab
   - Jerusalem
@@ -20,6 +20,7 @@ tags:
   - Garden of Eden
   - Gilead
   - Hezekiah
+  - Jacob
   - King James Version
   - Lachish
   - Satan

@@ -6,7 +6,6 @@ videoId: Jz4YpDhPHEg
 aliases:
   - /episodes/78/
 tags:
-  - Nehemiah
   - Noah
   - Ten Commandments
   - cognitive dissonance

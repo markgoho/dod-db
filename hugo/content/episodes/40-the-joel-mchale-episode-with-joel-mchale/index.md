@@ -9,22 +9,21 @@ tags:
   - King Saul
   - Samuel
   - Philistines
-  - YHWH
-  - Endor
+  - King David
   - Witch of Endor
   - Catholicism
+  - YHWH
   - Baal
   - baptism
+  - King Josiah
+  - Amalek
   - Capernaum
   - Desiderius Erasmus
-  - Esther
-  - Galilee
   - Hell
   - Jerusalem
   - Judah
   - King James Version
   - Moab
-  - Sarah
   - Sea of Galilee
   - Ten Commandments
   - Textus Receptus

@@ -9,18 +9,17 @@ tags:
   - Didache
   - Paul
   - Judaism
-  - Clement of Alexandria
   - Egyptians
   - Jeroboam
   - baptism
   - Dead Sea Scrolls
   - Isaiah
   - King James Version
+  - Matthew
   - Solomon
   - Deuteronomy
   - Eusebius
   - Gentiles
-  - Matthew
   - Talmud
   - Clement of Rome
   - Flavius Josephus

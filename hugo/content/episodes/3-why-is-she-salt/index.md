@@ -10,7 +10,6 @@ tags:
   - provenance
   - Sodom
   - Abraham
-  - YHWH
   - Dead Sea Scrolls
   - etiology
   - forgery
@@ -22,7 +21,6 @@ tags:
   - Moabites
   - Samaritans
   - Adam
-  - Esther
   - Hagar
   - King David
   - King Sennacherib
@@ -31,8 +29,10 @@ tags:
   - Noah
   - Purim
   - Sarah
+  - YHWH
   - divine council
   - epigraphy
+  - Esther
   - Eve
   - Flood
   - Goliath

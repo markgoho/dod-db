@@ -11,14 +11,14 @@ tags:
   - Mary Magdalene
   - John the Baptist
   - Galilee
-  - Josephus
   - Papias of Hierapolis
   - Flavius Josephus
-  - Luke
+  - Gospel of Thomas
   - Peter
   - Romans
   - Athanasius of Alexandria
   - Holy Spirit
+  - Isaiah
   - Saint Titus
   - Easter
   - Eschatology

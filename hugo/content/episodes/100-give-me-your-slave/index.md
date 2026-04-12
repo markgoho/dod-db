@@ -10,13 +10,12 @@ tags:
   - Septuagint
   - Onesimus
   - Moses
-  - Codex Vaticanus
   - Luke
   - Dead Sea Scrolls
   - Jerusalem
-  - John
   - Pseudepigrapha
   - Aristobulus
+  - John
   - Torah
   - Apocrypha
   - Codex Sinaiticus

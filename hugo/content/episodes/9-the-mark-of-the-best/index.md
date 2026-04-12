@@ -7,7 +7,7 @@ aliases:
   - /episodes/9/
 tags:
   - Nero
-  - monotheism
+  - Monotheism
   - Christian Nationalism
   - Isaiah
   - Judaism
@@ -15,7 +15,6 @@ tags:
   - Euphrates
   - Garden of Eden
   - Hell
-  - James
   - John of Patmos
   - Quran
   - Satan

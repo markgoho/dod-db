@@ -6,8 +6,6 @@ videoId: ymMm0ICgBmc
 aliases:
   - /episodes/38/
 tags:
-  - Matthew
-  - Luke
   - Judeans
   - Bethlehem
   - Jerusalem
@@ -17,12 +15,10 @@ tags:
   - Gentiles
   - Judaism
   - Flood
-  - James
+  - Gospel of James
   - Enoch
   - etiology
-  - Joseph
   - Moses
-  - Gospel of James
   - Judah
   - Melchizedek
   - Second Temple period

@@ -7,23 +7,23 @@ aliases:
   - /episodes/35/
 tags:
   - Paul
-  - Matthew
   - Papias of Hierapolis
-  - Luke
+  - Matthew
   - Peter
+  - John
   - James
+  - Luke
   - Irenaeus
   - Saint Titus
   - Marcion
-  - Galilee
   - Romans
-  - YHWH
-  - Codex Vaticanus
   - Eusebius
+  - Galilee
   - Jerusalem
   - Judas Iscariot
   - Sea of Galilee
   - Catholicism
+  - Gospel of Thomas
   - Ishmael
   - King James Version
   - Septuagint

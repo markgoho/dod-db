@@ -6,14 +6,13 @@ videoId: ZWm7gjCL3uA
 aliases:
   - /episodes/56/
 tags:
-  - Garden of Eden
   - Flood
+  - Garden of Eden
   - Noah
   - Babylon
   - Cain
   - Tower of Babel
   - Abel
-  - Enuma Elish
   - Adam
   - Canaan
   - Eve
@@ -26,10 +25,12 @@ tags:
   - Assyria
   - Canaanites
   - Ham
+  - Isaiah
   - Jeremiah
   - Joseph
   - Joshua
   - Judah
+  - King David
   - Lamech
   - Nephilim
   - Syria

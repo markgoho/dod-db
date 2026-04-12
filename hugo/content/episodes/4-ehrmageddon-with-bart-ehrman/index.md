@@ -16,7 +16,6 @@ tags:
   - Abraham
   - cognitive dissonance
   - Council of Nicaea
-  - Matthew
   - Trinity
   - Apocrypha
   - Babylon
@@ -26,15 +25,14 @@ tags:
   - Euphrates
   - futurist interpretation
   - inerrancy
-  - James
   - Jerusalem
+  - Matthew
   - Paul
   - Preterism
   - Protestantism
   - Romans
   - The Reformation
   - Univocality
-  - YHWH
 books:
   - Psalms
 guests:

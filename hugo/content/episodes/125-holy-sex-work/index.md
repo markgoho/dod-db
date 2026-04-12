@@ -17,7 +17,6 @@ tags:
   - Judah
   - Satan
   - Dead Sea
-  - Jehoshaphat
   - Philistines
   - Adam
   - Apocrypha

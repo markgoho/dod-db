@@ -9,9 +9,9 @@ tags:
   - Ham
   - Daniel
   - Cain
+  - Susanna
   - Apocrypha
   - Canaan
-  - Susanna
   - Japheth
   - Noah
   - Shem
