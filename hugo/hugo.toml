@@ -50,8 +50,8 @@ enableGitInfo = true
   weight = 2
 
 [[menu.main]]
-  name = "Books"
-  url = "/books/"
+  name = "Segments"
+  url = "/segments/"
   weight = 3
 
 [[menu.main]]
