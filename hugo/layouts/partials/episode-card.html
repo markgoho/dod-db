@@ -16,6 +16,8 @@
 {{- $arrow := index $overrides "arrow" | default "→" -}}
 {{- $arrowPosition := index $overrides "arrowPosition" | default "right" -}}
 {{- $compact := index $overrides "compact" | default false -}}
+{{- $enableTitleTransition := and (not $ranked) (not $compact) (eq $link $episode.RelPermalink) (eq $title $episode.Title) (not $currentTerm) -}}
+{{- $titleTransitionName := cond $enableTitleTransition (printf "episode-title-%v" $episode.Params.episodeNumber) "none" -}}
 
 
 <article
@@ -42,9 +44,13 @@
         <p class="episode-card__eyebrow type-eyebrow">{{ $eyebrow }}</p>
       {{- end }}
       {{ if eq $headingLevel "h3" -}}
-        <h3 class="episode-card__title">{{ $title }}</h3>
+        <h3
+          class="episode-card__title"
+          style="view-transition-name: {{ $titleTransitionName }}">{{ $title }}</h3>
       {{- else -}}
-        <h2 class="episode-card__title">{{ $title }}</h2>
+        <h2
+          class="episode-card__title"
+          style="view-transition-name: {{ $titleTransitionName }}">{{ $title }}</h2>
       {{- end }}
       {{- if $guestText }}
         <div class="episode-card__guest">{{ $guestText }}</div>

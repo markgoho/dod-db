@@ -46,10 +46,15 @@
         <h2 class="type-section-title cloud-section__title">Old Testament</h2>
         <ul class="token-cloud" role="list">
           {{ range $oldTestament }}
+            {{ $titleTransitionName := printf "books-title-%s" (.title | urlize) }}
             <li>
               {{ if gt .count 0 }}
                 <a href="{{ .relPermalink }}" class="token-pill">
-                  <span class="token-pill__name">{{ .title }}</span>
+                  <span
+                    class="token-pill__name"
+                    style="view-transition-name: {{ $titleTransitionName }}"
+                    >{{ .title }}</span
+                  >
                   <span class="token-pill__count">{{ .count }}</span>
                 </a>
               {{ else }}
@@ -69,10 +74,15 @@
         <h2 class="type-section-title cloud-section__title">New Testament</h2>
         <ul class="token-cloud" role="list">
           {{ range $newTestament }}
+            {{ $titleTransitionName := printf "books-title-%s" (.title | urlize) }}
             <li>
               {{ if gt .count 0 }}
                 <a href="{{ .relPermalink }}" class="token-pill">
-                  <span class="token-pill__name">{{ .title }}</span>
+                  <span
+                    class="token-pill__name"
+                    style="view-transition-name: {{ $titleTransitionName }}"
+                    >{{ .title }}</span
+                  >
                   <span class="token-pill__count">{{ .count }}</span>
                 </a>
               {{ else }}

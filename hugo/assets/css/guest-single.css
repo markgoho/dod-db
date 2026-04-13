@@ -5,6 +5,10 @@
 .guest-hero--profile {
   align-items: start;
   gap: var(--space-l);
+  grid-template-areas:
+    "back"
+    "portrait"
+    "content";
   justify-items: stretch;
   text-align: left;
 }
@@ -14,8 +18,17 @@
 }
 
 .guest-hero--profile .page-hero__back {
-  grid-column: 1 / -1;
+  grid-area: back;
+  justify-self: start;
   width: max-content;
+}
+
+.guest-hero--profile .guest-hero__portrait {
+  grid-area: portrait;
+}
+
+.guest-hero--profile .guest-hero__content {
+  grid-area: content;
 }
 
 .guest-hero__role {
@@ -29,9 +42,9 @@
   gap: var(--space-s);
   grid-template-areas:
     "title"
+    "meta"
     "role"
-    "dek"
-    "meta";
+    "dek";
   justify-items: start;
 }
 
@@ -41,6 +54,7 @@
 
 .guest-hero__title {
   grid-area: title;
+  margin-block: 0;
 }
 
 .guest-hero__summary-role {
@@ -105,8 +119,7 @@
 
 .guest-hero__meta {
   grid-area: meta;
-  margin-block-start: var(--space-xs);
-  padding: var(--space-xs) var(--space-m);
+  margin: 0;
 }
 
 .guest-hero--profile .guest-hero__meta {
@@ -184,7 +197,9 @@
   .guest-hero--profile {
     align-items: start;
     column-gap: var(--space-xl);
-    grid-template-areas: "portrait content";
+    grid-template-areas:
+      "back back"
+      "portrait content";
     grid-template-columns: var(--content-min-width-sidebar) minmax(0, 1fr);
   }
 

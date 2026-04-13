@@ -1,19 +1,14 @@
-.page-hero--profile .page-hero__title,
-.page-hero--profile .tag-hero__dek,
-.page-hero--profile .tag-hero__meta-row,
-.page-hero--profile .tag-featured-callouts {
-  width: 100%;
-}
-
 .tag-hero__dek {
   color: var(--color-text-muted);
   font-size: var(--step-1);
   margin: 0;
 }
 
-.page-hero--profile .tag-hero__dek {
+.tag-hero__dek {
   border-inline-start: var(--border-width-md) solid var(--color-action);
+  max-width: var(--content-max-width-prose);
   padding-inline-start: var(--space-m);
+  text-align: left;
 }
 
 .tag-hero__meta-row {
@@ -22,10 +17,6 @@
   flex-wrap: wrap;
   gap: var(--space-s);
   justify-content: center;
-}
-
-.page-hero--profile .tag-hero__meta-row {
-  justify-content: start;
 }
 
 .tag-hero__classification-value {

@@ -1,17 +1,10 @@
 {{ define "main" }}
   <section class="term-page term-page--episodes-archive">
     <header class="page-hero">
-      <div class="page-hero__eyebrow panel panel--accent">
-        <span class="type-eyebrow">Episode archive</span>
-      </div>
       <h1 class="page-hero__title">{{ .Title }}</h1>
       {{ with .Content }}
         <div class="page-hero__description panel panel--muted">{{ . }}</div>
       {{ end }}
-      <div class="page-hero__meta panel">
-        <span class="stat-display__number">{{ len .Pages }}</span>
-        <span class="stat-display__label">Episodes</span>
-      </div>
     </header>
 
     <div class="episodes-grid">

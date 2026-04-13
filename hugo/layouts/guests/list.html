@@ -22,11 +22,14 @@
         <h2 class="type-section-title cloud-section__title">Frequent Guests</h2>
         <ul class="token-cloud" role="list">
           {{ range $multipleAppearances }}
+            {{ $titleTransitionName := printf "guests-title-%s" (.Page.Title | urlize) }}
             <li>
               <a
                 href="{{ .Page.RelPermalink }}"
                 class="token-pill token-pill--featured">
-                <span class="token-pill__name">{{ .Page.Title }}</span>
+                <span
+                  class="token-pill__name"
+                  style="view-transition-name: {{ $titleTransitionName }}">{{ .Page.Title }}</span>
                 <span class="token-pill__count">{{ .Count }}</span>
               </a>
             </li>
@@ -42,9 +45,12 @@
         </h2>
         <ul class="token-cloud" role="list">
           {{ range $singleAppearance }}
+            {{ $titleTransitionName := printf "guests-title-%s" (.Page.Title | urlize) }}
             <li>
               <a href="{{ .Page.RelPermalink }}" class="token-pill">
-                <span class="token-pill__name">{{ .Page.Title }}</span>
+                <span
+                  class="token-pill__name"
+                  style="view-transition-name: {{ $titleTransitionName }}">{{ .Page.Title }}</span>
                 <span class="token-pill__count">{{ .Count }}</span>
               </a>
             </li>

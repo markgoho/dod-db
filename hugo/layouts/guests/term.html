@@ -6,8 +6,14 @@
 {{ define "main" }}
   {{ $profiles := index hugo.Data "guest-profiles" }}
   {{ $profile := index $profiles .Title }}
+  {{ $titleTransitionName := printf "guests-title-%s" (.Title | urlize) }}
   <section class="term-page term-page--episodes-archive guest-page">
-    <header class="page-hero{{ if $profile }}guest-hero--profile{{ end }}">
+    <header
+      class="{{ if $profile }}
+        page-hero guest-hero--profile
+      {{ else }}
+        page-hero
+      {{ end }}">
       <a href="/guests/" class="button-brutalist page-hero__back"
         >← All Guests</a
       >
@@ -20,7 +26,18 @@
         </figure>
       {{ end }}
       <div class="guest-hero__content">
-        <h1 class="guest-hero__title">{{ .Title }}</h1>
+        <h1
+          class="guest-hero__title"
+          style="view-transition-name: {{ $titleTransitionName }}">
+          {{ .Title }}
+        </h1>
+        <div
+          class="page-hero__meta page-hero__meta--headline guest-hero__meta panel">
+          <span class="stat-display__number">{{ len .Pages }}</span>
+          <span class="stat-display__label"
+            >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
+          >
+        </div>
         {{ if $profile.shortRole }}
           <p class="guest-hero__summary-role panel panel--accent">
             {{ $profile.shortRole }}
@@ -29,12 +46,7 @@
         {{ if $profile.dek }}
           <p class="guest-hero__dek">{{ $profile.dek }}</p>
         {{ end }}
-        <div class="page-hero__meta guest-hero__meta panel">
-          <span class="stat-display__number">{{ len .Pages }}</span>
-          <span class="stat-display__label"
-            >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
-          >
-        </div>
+
       </div>
     </header>
 

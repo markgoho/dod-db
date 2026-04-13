@@ -6,6 +6,85 @@
   navigation: auto;
 }
 
+@keyframes view-transition-fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes view-transition-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes view-transition-title-out {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.96) translateY(calc(var(--space-4xs) * -1));
+  }
+}
+
+@keyframes view-transition-title-in {
+  from {
+    opacity: 0;
+    transform: scale(1.03) translateY(var(--space-2xs));
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+::view-transition-old(*) {
+  animation-duration: 180ms;
+  animation-name: view-transition-title-out;
+  animation-timing-function: ease-in;
+}
+
+::view-transition-new(*) {
+  animation-duration: 240ms;
+  animation-name: view-transition-title-in;
+  animation-timing-function: ease-out;
+}
+
+::view-transition-old(root) {
+  animation-duration: var(--duration-fast);
+  animation-name: view-transition-fade-out;
+  animation-timing-function: var(--ease-standard);
+}
+
+::view-transition-new(root) {
+  animation-duration: var(--duration-fast);
+  animation-name: view-transition-fade-in;
+  animation-timing-function: var(--ease-standard);
+}
+
+::view-transition-image-pair(*) {
+  isolation: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none;
+  }
+}
+
 :root {
   interpolate-size: allow-keywords;
 }
@@ -224,10 +303,9 @@ textarea:not([rows]) {
 }
 
 .page-hero--profile {
-  align-items: start;
-  gap: var(--space-l);
-  justify-items: stretch;
-  text-align: left;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 
 .page-hero--profile > * {
@@ -270,6 +348,30 @@ textarea:not([rows]) {
   flex-direction: column;
   gap: var(--space-4xs);
   padding: var(--space-s) var(--space-l);
+}
+
+.page-hero__meta--headline {
+  align-items: baseline;
+  flex-direction: row;
+  gap: var(--space-3xs);
+  margin-block-start: calc(var(--space-xs) * -1);
+  padding: var(--space-2xs) var(--space-s);
+  white-space: nowrap;
+}
+
+.page-hero__meta--headline .stat-display__number,
+.page-hero__meta--headline .stat-display__label {
+  font-size: var(--step--1);
+  line-height: 1;
+}
+
+.page-hero__meta--headline .stat-display__number {
+  letter-spacing: var(--letter-spacing-heading);
+  transform: translateY(0.03em);
+}
+
+.page-hero__meta--headline .stat-display__label {
+  color: inherit;
 }
 
 .stat-display__number {

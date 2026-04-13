@@ -9,9 +9,12 @@
 
     <ul class="token-cloud" role="list">
       {{ range .Data.Terms.Alphabetical }}
+        {{ $titleTransitionName := printf "tags-title-%s" (.Page.Title | urlize) }}
         <li>
           <a href="{{ .Page.RelPermalink }}" class="token-pill">
-            <span class="token-pill__name">{{ .Page.Title }}</span>
+            <span
+              class="token-pill__name"
+              style="view-transition-name: {{ $titleTransitionName }}">{{ .Page.Title }}</span>
             <span class="token-pill__count">{{ .Count }}</span>
           </a>
         </li>
