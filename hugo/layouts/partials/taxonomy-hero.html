@@ -1,7 +1,6 @@
 {{- $page := .page -}}
 {{- $backHref := .backHref -}}
 {{- $backLabel := .backLabel -}}
-{{- $eyebrowText := .eyebrowText -}}
 {{- $heroClass := .heroClass | default "" -}}
 {{- $definition := .definition | default "" -}}
 {{- $category := .category | default "" -}}
@@ -11,9 +10,6 @@
   <a href="{{ $backHref }}" class="button-brutalist page-hero__back"
     >&larr; {{ $backLabel }}</a
   >
-  <div class="page-hero__eyebrow panel panel--accent">
-    <span class="type-eyebrow">{{ $eyebrowText }}</span>
-  </div>
   <h1 class="page-hero__title">{{ $page.Title }}</h1>
   {{- with $definition }}
     <p class="tag-hero__dek">{{ . }}</p>

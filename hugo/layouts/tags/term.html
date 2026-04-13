@@ -10,7 +10,7 @@
   {{ $featuredEpisodes := first $topEpisodesLimit $rankedEpisodes }}
   <section class="term-page term-page--episodes-archive tag-page">
     {{ $def := .Params.definition | default .Params.dek | default "" }}
-    {{ partial "taxonomy-hero" (dict "page" . "backHref" "/tags/" "backLabel" "All Topics" "eyebrowText" "Topic archive" "heroClass" "page-hero--profile" "definition" $def "category" (.Params.category | default "")) }}
+    {{ partial "taxonomy-hero" (dict "page" . "backHref" "/tags/" "backLabel" "All Topics" "heroClass" "page-hero--profile" "definition" $def "category" (.Params.category | default "")) }}
 
     {{ with .Params.featuredEpisode }}
       {{ $featuredEpisodePage := index (where $.Pages ".Params.episodeNumber" .number) 0 }}

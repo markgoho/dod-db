@@ -240,7 +240,7 @@ textarea:not([rows]) {
 }
 
 .page-hero > .page-hero__eyebrow {
-  justify-self: start;
+  justify-self: center;
   padding-block: var(--space-2xs);
   padding-inline: var(--space-s);
   width: max-content;
