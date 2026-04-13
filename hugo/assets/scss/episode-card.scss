@@ -1,52 +1,39 @@
 .episode-card {
 }
 
-.episode-card:hover .episode-card__link {
-  background: var(--color-accent);
-  transform: translate(
-    calc(-1 * var(--space-4xs)),
-    calc(-1 * var(--space-4xs))
-  );
-}
-
-.episode-card:hover .episode-card__arrow {
-  transform: translateX(var(--space-3xs));
-}
-
-.episode-card:hover .episode-card__link--arrow-left .episode-card__arrow {
-  transform: translateX(calc(-1 * var(--space-3xs)));
-}
-
 .episode-card__link {
-  align-items: center;
-  background: var(--tan-000);
-  border: var(--border-width-md) solid var(--tan-900);
-  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
-    var(--tan-900);
   color: var(--color-text-main);
-  display: inline-grid;
-  gap: var(--space-s);
-  grid-template-columns: 1fr auto;
-  min-height: 100%;
+  display: block;
   padding: var(--space-s);
   text-decoration: none;
-  max-width: 100%;
-}
-
-.episode-card__link--arrow-left {
-  grid-template-columns: auto 1fr;
 }
 
 .episode-card__content {
   min-width: 0;
-  overflow-wrap: anywhere;
 }
 
 .episode-card--compact .episode-card__title {
   margin-bottom: 0;
 }
 
-.episode-card__header-row {
+.term-page--episodes-archive .episode-card__link {
+  align-items: center;
+  background: var(--tan-000);
+  border: var(--border-width-md) solid var(--tan-900);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
+    var(--tan-900);
+  display: inline-grid;
+  gap: var(--space-s);
+  grid-template-columns: 1fr auto;
+  min-height: 100%;
+  padding: var(--space-s);
+}
+
+.term-page--episodes-archive .episode-card:hover .episode-card__link {
+  background: var(--color-accent);
+}
+
+.term-page--episodes-archive .episode-card__header-row {
   align-items: start;
   display: flex;
   flex-wrap: wrap;
@@ -54,22 +41,23 @@
   justify-content: space-between;
 }
 
-.episode-card__eyebrow {
+.term-page--episodes-archive .episode-card__eyebrow {
   color: var(--color-text-muted);
   margin: 0 0 var(--space-4xs) 0;
 }
 
-.episode-card__guest {
+.term-page--episodes-archive .episode-card__guest {
   color: var(--color-text-muted);
   font-size: var(--step--1);
   margin-bottom: var(--space-3xs);
 }
 
-.episode-card__title {
+.term-page--episodes-archive .episode-card__title {
+  font-size: var(--step-1);
   margin: 0 0 var(--space-3xs) 0;
 }
 
-.episode-card__date {
+.term-page--episodes-archive .episode-card__date {
   color: var(--color-text-muted);
   display: block;
   font-size: var(--step--1);
@@ -79,32 +67,15 @@
   text-transform: uppercase;
 }
 
-.episode-card__mention-count {
-  background: var(--color-accent-muted);
-  border: var(--border-width-sm) solid var(--tan-900);
-  border-radius: var(--border-radius-sm);
-  color: var(--color-text-main);
-  font-size: var(--step--2);
-  font-weight: var(--font-weight-semibold);
-  letter-spacing: var(--letter-spacing-wide);
-  padding: var(--space-4xs) var(--space-2xs);
-  text-transform: uppercase;
-}
-
-.episode-card__arrow {
+.term-page--episodes-archive .episode-card__arrow {
   color: var(--color-action);
+  display: block;
   font-family: var(--font-family-display);
   font-size: var(--step-2);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
 }
 
-@container (inline-size < 20rem) {
-  .episode-card__link {
-    grid-template-columns: 1fr;
-  }
-
-  .episode-card__arrow {
-    justify-self: end;
-  }
+.term-page--episodes-archive .episode-card__mention-count {
+  display: none;
 }

@@ -27,6 +27,10 @@
   --step-6: 5.722rem;
 }
 
+.term-page--episodes-archive .episodes-grid {
+  gap: var(--space-s);
+}
+
 @media (width >= 48rem) {
   .episodes-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
