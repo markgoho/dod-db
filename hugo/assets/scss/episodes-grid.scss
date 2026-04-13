@@ -1,5 +1,40 @@
 .episodes-grid {
   display: grid;
   gap: var(--space-l);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.term-page--episodes-archive {
+  --space-4xs: 0.1875rem;
+  --space-3xs: 0.375rem;
+  --space-2xs: 0.75rem;
+  --space-xs: 1.125rem;
+  --space-s: 1.5rem;
+  --space-m: 2.25rem;
+  --space-l: 3rem;
+  --space-xl: 4.5rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  --step--2: 0.96rem;
+  --step--1: 1.2rem;
+  --step-0: 1.5rem;
+  --step-1: 1.875rem;
+  --step-2: 2.3438rem;
+  --step-3: 2.9297rem;
+  --step-4: 3.6621rem;
+  --step-5: 4.5776rem;
+  --step-6: 5.722rem;
+}
+
+@media (width >= 48rem) {
+  .episodes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (width >= 80rem) {
+  .episodes-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }

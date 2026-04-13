@@ -39,5 +39,22 @@ enableGitInfo = true
     [markup.goldmark.renderer]
       unsafe = true  # Allow HTML in markdown (needed for timestamp links)
 
+[[menu.main]]
+  name = "Episodes"
+  url = "/episodes/"
+  weight = 1
 
+[[menu.main]]
+  name = "Topics"
+  url = "/tags/"
+  weight = 2
 
+[[menu.main]]
+  name = "Books"
+  url = "/books/"
+  weight = 3
+
+[[menu.main]]
+  name = "Guests"
+  url = "/guests/"
+  weight = 4

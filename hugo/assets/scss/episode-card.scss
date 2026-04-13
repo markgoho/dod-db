@@ -1,5 +1,4 @@
 .episode-card {
-  container-type: inline-size;
 }
 
 .episode-card:hover .episode-card__link {
@@ -32,7 +31,6 @@
   padding: var(--space-s);
   text-decoration: none;
   max-width: 100%;
-  width: max-content;
 }
 
 .episode-card__link--arrow-left {
@@ -69,7 +67,6 @@
 
 .episode-card__title {
   margin: 0 0 var(--space-3xs) 0;
-  text-wrap: balance;
 }
 
 .episode-card__date {
