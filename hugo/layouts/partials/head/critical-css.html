@@ -1,5 +1,15 @@
 <!-- Load Critical CSS Inline -->
-{{ $applicationCSS := "scss/styles.scss" }}
-{{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
-{{ $appInlineCSS := resources.Get $applicationCSS | css.Sass $options }}
-<style>{{ $appInlineCSS.Content | safeCSS }}</style>
+{{ $criticalCSS := slice
+  (resources.Get "css/colors.css")
+  (resources.Get "css/spacing.css")
+  (resources.Get "css/base.css")
+  (resources.Get "css/typography.css")
+  (resources.Get "css/header.css")
+  (resources.Get "css/footer.css")
+  (resources.Get "css/episode-card.css")
+  (resources.Get "css/episodes-grid.css")
+  (resources.Get "css/episode-card-badge.css")
+  | resources.Concat "css/critical.css"
+  | resources.Minify
+}}
+<style>{{ $criticalCSS.Content | safeCSS }}</style>

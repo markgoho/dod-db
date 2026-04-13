@@ -1,7 +1,5 @@
 {{ define "head-styles" }}
-  {{ $pageCSS := "scss/episode-single.scss" }}
-  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
-  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  {{ $inlineCSS := resources.Get "css/episode-single.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 

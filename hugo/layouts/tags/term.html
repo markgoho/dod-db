@@ -1,7 +1,5 @@
 {{ define "head-styles" }}
-  {{ $pageCSS := "scss/tag-single.scss" }}
-  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
-  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  {{ $inlineCSS := resources.Get "css/tag-single.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
@@ -10,7 +8,7 @@
   {{ $rankedEpisodes := index $tagIndex .Title | default slice }}
   {{ $topEpisodesLimit := .Params.topEpisodesLimit | default 6 }}
   {{ $featuredEpisodes := first $topEpisodesLimit $rankedEpisodes }}
-  <section class="term-page tag-page">
+  <section class="term-page term-page--episodes-archive tag-page">
     {{ $def := .Params.definition | default .Params.dek | default "" }}
     {{ partial "taxonomy-hero" (dict "page" . "backHref" "/tags/" "backLabel" "All Topics" "eyebrowText" "Topic archive" "heroClass" "page-hero--profile" "definition" $def "category" (.Params.category | default "")) }}
 

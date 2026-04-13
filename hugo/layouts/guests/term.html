@@ -1,14 +1,12 @@
 {{ define "head-styles" }}
-  {{ $pageCSS := "scss/guest-single.scss" }}
-  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
-  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  {{ $inlineCSS := resources.Get "css/guest-single.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
 {{ define "main" }}
   {{ $profiles := index hugo.Data "guest-profiles" }}
   {{ $profile := index $profiles .Title }}
-  <section class="term-page guest-page">
+  <section class="term-page term-page--episodes-archive guest-page">
     <header class="page-hero{{ if $profile }}guest-hero--profile{{ end }}">
       <a href="/guests/" class="button-brutalist page-hero__back"
         >← All Guests</a

@@ -7,8 +7,6 @@
   font-variation-settings: "slnt" 0;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Work+Sans:wght@400;500;600;700&display=swap");
-
 :root {
   --font-family-main: "Work Sans", sans-serif;
   --font-family-display: "Epilogue", sans-serif;
