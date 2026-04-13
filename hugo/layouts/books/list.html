@@ -91,3 +91,8 @@
     {{ end }}
   </section>
 {{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/taxonomy-list.html" . }}
+  {{ partial "json-ld/breadcrumb.html" . }}
+{{ end }}

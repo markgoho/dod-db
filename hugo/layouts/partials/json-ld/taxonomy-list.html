@@ -1,0 +1,12 @@
+{{- $isPartOf := dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "CollectionPage"
+  "name" .Title
+  "url" .Permalink
+  "isPartOf" $isPartOf
+  "numberOfItems" (len .Pages)
+-}}
+<script type="application/ld+json">
+{{ $schema | jsonify (dict "indent" "  ") | safeJS }}
+</script>

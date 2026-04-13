@@ -18,8 +18,15 @@
 {{- $compact := index $overrides "compact" | default false -}}
 
 
-<article class="episode-card{{ if $ranked }}episode-card--ranked{{ end }}{{ if $compact }} episode-card--compact{{ end }}">
-  <a href="{{ $link }}" class="episode-card__link{{ if eq $arrowPosition "left" }} episode-card__link--arrow-left{{ end }}">
+<article
+  class="episode-card{{ if $ranked }}
+    episode-card--ranked
+  {{ end }}{{ if $compact }}episode-card--compact{{ end }}">
+  <a
+    href="{{ $link }}"
+    class="episode-card__link{{ if eq $arrowPosition "left" }}
+      episode-card__link--arrow-left
+    {{ end }}">
     {{- if eq $arrowPosition "left" }}
       <div class="episode-card__arrow" aria-hidden="true">{{ $arrow }}</div>
     {{- end }}

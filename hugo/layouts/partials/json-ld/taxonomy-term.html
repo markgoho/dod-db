@@ -1,0 +1,29 @@
+{{- $desc := "" -}}
+{{- with .Params.definition -}}
+  {{- $desc = . -}}
+{{- else -}}
+  {{- with .Params.dek -}}
+    {{- $desc = . -}}
+  {{- else -}}
+    {{- $desc = printf "Episodes tagged with \"%s\" on Metadata over Dogma." $.Title -}}
+  {{- end -}}
+{{- end -}}
+{{- $items := slice -}}
+{{- $pages := sort .Pages ".Params.episodeNumber" "desc" -}}
+{{- range $i, $p := first 20 $pages -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "url" $p.Permalink "name" $p.Title) -}}
+{{- end -}}
+{{- $itemList := dict "@type" "ItemList" "numberOfItems" (len .Pages) "itemListElement" $items -}}
+{{- $isPartOf := dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "CollectionPage"
+  "name" .Title
+  "url" .Permalink
+  "description" $desc
+  "isPartOf" $isPartOf
+  "mainEntity" $itemList
+-}}
+<script type="application/ld+json">
+{{ $schema | jsonify (dict "indent" "  ") | safeJS }}
+</script>

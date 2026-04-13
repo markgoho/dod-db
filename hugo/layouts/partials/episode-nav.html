@@ -14,20 +14,30 @@
   {{- if or $previousEpisode $nextEpisode -}}
     <nav class="episode-nav" aria-label="Episode navigation">
       {{- if $previousEpisode -}}
-        <a class="episode-nav__link episode-nav__link--previous" href="{{ $previousEpisode.RelPermalink }}">
+        <a
+          class="episode-nav__link episode-nav__link--previous"
+          href="{{ $previousEpisode.RelPermalink }}">
           <span class="episode-nav__arrow" aria-hidden="true">←</span>
           <span class="episode-nav__content">
-            <span class="episode-nav__eyebrow type-eyebrow">Previous episode</span>
-            <span class="episode-nav__title">Episode {{ $previousEpisode.Params.episodeNumber }}</span>
+            <span class="episode-nav__eyebrow type-eyebrow"
+              >Previous episode</span
+            >
+            <span class="episode-nav__title"
+              >Episode {{ $previousEpisode.Params.episodeNumber }}</span
+            >
           </span>
         </a>
       {{- end -}}
 
       {{- if $nextEpisode -}}
-        <a class="episode-nav__link episode-nav__link--next" href="{{ $nextEpisode.RelPermalink }}">
+        <a
+          class="episode-nav__link episode-nav__link--next"
+          href="{{ $nextEpisode.RelPermalink }}">
           <span class="episode-nav__content">
             <span class="episode-nav__eyebrow type-eyebrow">Next episode</span>
-            <span class="episode-nav__title">Episode {{ $nextEpisode.Params.episodeNumber }}</span>
+            <span class="episode-nav__title"
+              >Episode {{ $nextEpisode.Params.episodeNumber }}</span
+            >
           </span>
           <span class="episode-nav__arrow" aria-hidden="true">→</span>
         </a>

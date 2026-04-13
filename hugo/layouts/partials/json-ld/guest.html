@@ -1,0 +1,30 @@
+{{- $profiles := index hugo.Data "guest-profiles" -}}
+{{- $profile := index $profiles .Title -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" .Title
+  "url" .Permalink
+-}}
+{{- with $profile.image -}}
+  {{- $schema = merge $schema (dict "image" .) -}}
+{{- end -}}
+{{- with $profile.shortRole -}}
+  {{- $schema = merge $schema (dict "jobTitle" .) -}}
+{{- end -}}
+{{- with $profile.bio -}}
+  {{- $schema = merge $schema (dict "description" .) -}}
+{{- end -}}
+{{- with $profile.expertise -}}
+  {{- $schema = merge $schema (dict "knowsAbout" .) -}}
+{{- end -}}
+{{- with $profile.affiliations -}}
+  {{- $affiliations := slice -}}
+  {{- range . -}}
+    {{- $affiliations = $affiliations | append (dict "@type" "Organization" "name" .) -}}
+  {{- end -}}
+  {{- $schema = merge $schema (dict "affiliation" $affiliations) -}}
+{{- end -}}
+<script type="application/ld+json">
+{{ $schema | jsonify (dict "indent" "  ") | safeJS }}
+</script>

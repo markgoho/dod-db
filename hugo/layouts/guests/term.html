@@ -111,3 +111,8 @@
     </section>
   </section>
 {{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/guest.html" . }}
+  {{ partial "json-ld/breadcrumb.html" . }}
+{{ end }}

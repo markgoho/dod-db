@@ -1,0 +1,32 @@
+{{- $publisher := dict "@type" "Organization" "name" .Site.Title "url" .Site.BaseURL -}}
+{{- $mainEntity := dict "@type" "WebPage" "@id" .Permalink -}}
+{{- $podcastSeries := dict "@type" "PodcastSeries" "name" "Data Over Dogma" "url" "https://www.youtube.com/@dataoverdogma" -}}
+{{- $about := dict "@type" "PodcastEpisode" "name" .Title "episodeNumber" .Params.episodeNumber "partOfSeries" $podcastSeries -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Article"
+  "headline" .Title
+  "url" .Permalink
+  "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "author" $publisher
+  "publisher" $publisher
+  "mainEntityOfPage" $mainEntity
+  "about" $about
+-}}
+{{- with .Params.tags -}}
+  {{- $schema = merge $schema (dict "keywords" .) -}}
+{{- end -}}
+{{- with .Params.videoId -}}
+  {{- $thumb := printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" . -}}
+  {{- $schema = merge $schema (dict "image" $thumb) -}}
+  {{- $video := dict "@type" "VideoObject" "name" $.Title "thumbnailUrl" $thumb "embedUrl" (printf "https://www.youtube.com/embed/%s" .) "url" (printf "https://www.youtube.com/watch?v=%s" .) -}}
+  {{- $schema = merge $schema (dict "video" $video) -}}
+{{- end -}}
+{{- with .Params.audioUrl -}}
+  {{- $audio := dict "@type" "AudioObject" "contentUrl" . "encodingFormat" "audio/mpeg" -}}
+  {{- $schema = merge $schema (dict "audio" $audio) -}}
+{{- end -}}
+<script type="application/ld+json">
+{{ $schema | jsonify (dict "indent" "  ") | safeJS }}
+</script>

@@ -180,6 +180,8 @@
 {{ end }}
 
 {{ define "footer-scripts" }}
+  {{ partial "json-ld/episode.html" . }}
+  {{ partial "json-ld/breadcrumb.html" . }}
   {{ $videoOpts := dict "targetPath" "video-player.js" }}
   {{ $videoBuilt := resources.Get "ts/video-player.ts" | js.Build $videoOpts }}
   {{ $previewOpts := dict "targetPath" "transcript-preview.js" }}

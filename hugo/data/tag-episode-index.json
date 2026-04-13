@@ -244,6 +244,11 @@
       "title": "Hiding God"
     },
     {
+      "ep": 142,
+      "m": 1,
+      "title": "Not Original, Not Sin"
+    },
+    {
       "ep": 139,
       "m": 1,
       "title": "Polygamy!"
@@ -326,13 +331,6 @@
       "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi"
     }
   ],
-  "Acts of Andrew": [
-    {
-      "ep": 156,
-      "m": 3,
-      "title": "Killing in the Name Of"
-    }
-  ],
   "Acts of Paul and Thecla": [
     {
       "ep": 148,
@@ -345,14 +343,12 @@
       "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon"
     }
   ],
-  "Acts of Peter": [
-    {
-      "ep": 156,
-      "m": 2,
-      "title": "Killing in the Name Of"
-    }
-  ],
   "Adam": [
+    {
+      "ep": 142,
+      "m": 36,
+      "title": "Not Original, Not Sin"
+    },
     {
       "ep": 90,
       "m": 17,
@@ -482,6 +478,11 @@
       "ep": 150,
       "m": 1,
       "title": "Written in the Stars!"
+    },
+    {
+      "ep": 140,
+      "m": 1,
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 139,
@@ -655,8 +656,20 @@
   "Ahaziah": [
     {
       "ep": 55,
-      "m": 26,
+      "m": 27,
       "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
+    }
+  ],
+  "Amalek": [
+    {
+      "ep": 156,
+      "m": 26,
+      "title": "Killing in the Name Of"
+    },
+    {
+      "ep": 40,
+      "m": 1,
+      "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
     }
   ],
   "Ammonites": [
@@ -985,6 +998,11 @@
       "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
     },
     {
+      "ep": 33,
+      "m": 1,
+      "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon"
+    },
+    {
       "ep": 19,
       "m": 1,
       "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
@@ -1020,7 +1038,7 @@
   "Arad": [
     {
       "ep": 13,
-      "m": 5,
+      "m": 6,
       "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
     },
     {
@@ -1396,6 +1414,63 @@
       "ep": 57,
       "m": 1,
       "title": "Episode 57 (May 6, 2024), \"Does the Bible say the Earth is Flat?\""
+    }
+  ],
+  "Augustine": [
+    {
+      "ep": 44,
+      "m": 7,
+      "title": "Episode 44 (February 5, 2024), \"Biblical Marriage\" with Jennifer Bird"
+    },
+    {
+      "ep": 152,
+      "m": 5,
+      "title": "Literally Not Literal!"
+    },
+    {
+      "ep": 98,
+      "m": 4,
+      "title": "Episode 98 (February 17, 2025), \"Did Jesus Go to Hell?\""
+    },
+    {
+      "ep": 142,
+      "m": 3,
+      "title": "Not Original, Not Sin"
+    },
+    {
+      "ep": 120,
+      "m": 3,
+      "title": "Save Me!"
+    },
+    {
+      "ep": 77,
+      "m": 2,
+      "title": "Episode 77 (September 23, 2024), \"What is an Atheist?\""
+    },
+    {
+      "ep": 149,
+      "m": 1,
+      "title": "Order Up! With Jennifer Garcia Bashaw and Aaron Higashi"
+    },
+    {
+      "ep": 140,
+      "m": 1,
+      "title": "Immaculate Apologetics?"
+    },
+    {
+      "ep": 89,
+      "m": 1,
+      "title": "Episode 89 (December 16, 2024), \"Spare the Rod... Please!\""
+    },
+    {
+      "ep": 70,
+      "m": 1,
+      "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
+    },
+    {
+      "ep": 19,
+      "m": 1,
+      "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
     }
   ],
   "Baal": [
@@ -1866,6 +1941,11 @@
       "title": "Shiny Happy People!"
     },
     {
+      "ep": 142,
+      "m": 2,
+      "title": "Not Original, Not Sin"
+    },
+    {
       "ep": 86,
       "m": 2,
       "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
@@ -1879,6 +1959,11 @@
       "ep": 40,
       "m": 2,
       "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
+    },
+    {
+      "ep": 141,
+      "m": 1,
+      "title": "Did Jesus Fulfill Prophesy?"
     },
     {
       "ep": 128,
@@ -1906,17 +1991,10 @@
       "title": "Episode 5 (May 8, 2023), \"Betrayed by Dan Brown\""
     }
   ],
-  "Barak": [
-    {
-      "ep": 64,
-      "m": 12,
-      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
-    }
-  ],
   "Barnabas": [
     {
       "ep": 54,
-      "m": 10,
+      "m": 15,
       "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
     },
     {
@@ -1933,24 +2011,17 @@
       "ep": 23,
       "m": 1,
       "title": "Episode 23 (September 11, 2023), \"Abortion and the Bible\""
-    }
-  ],
-  "Bartholomew": [
-    {
-      "ep": 16,
-      "m": 6,
-      "title": "Apostlepalooza!"
     },
     {
-      "ep": 156,
-      "m": 2,
-      "title": "Killing in the Name Of"
+      "ep": 20,
+      "m": 1,
+      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
     }
   ],
   "Baruch": [
     {
       "ep": 130,
-      "m": 28,
+      "m": 29,
       "title": "Blessed Baruch!"
     },
     {
@@ -1994,6 +2065,48 @@
       "ep": 133,
       "m": 2,
       "title": "The Adult(ery) Episode"
+    }
+  ],
+  "Beatitudes": [
+    {
+      "ep": 25,
+      "m": 14,
+      "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
+    },
+    {
+      "ep": 151,
+      "m": 11,
+      "title": "What Is The Bible?"
+    },
+    {
+      "ep": 118,
+      "m": 2,
+      "title": "Tucker Vs Ted: The Israel Throwdown"
+    },
+    {
+      "ep": 146,
+      "m": 1,
+      "title": "Jesus is so Fulfilling!"
+    },
+    {
+      "ep": 110,
+      "m": 1,
+      "title": "Episode 110 (May 11, 2025), \"God's Swear Jar\""
+    },
+    {
+      "ep": 101,
+      "m": 1,
+      "title": "Episode 101 (March 10, 2025), \"The Slave Bible\""
+    },
+    {
+      "ep": 91,
+      "m": 1,
+      "title": "Episode 91 (December 30, 2024), \"Star Spangled Christian Nationalism\" With April Ajoy"
+    },
+    {
+      "ep": 19,
+      "m": 1,
+      "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
     }
   ],
   "Beelzebul": [
@@ -2070,7 +2183,7 @@
   "Bethany": [
     {
       "ep": 12,
-      "m": 24,
+      "m": 29,
       "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
     },
     {
@@ -2091,6 +2204,11 @@
       "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\""
     },
     {
+      "ep": 64,
+      "m": 1,
+      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
+    },
+    {
       "ep": 53,
       "m": 1,
       "title": "Episode 53 (April 8, 2024), \"The Holy Ghost (and Bears!)\""
@@ -2107,6 +2225,11 @@
     }
   ],
   "Bethlehem": [
+    {
+      "ep": 141,
+      "m": 46,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
     {
       "ep": 87,
       "m": 21,
@@ -2232,6 +2355,11 @@
       "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
     },
     {
+      "ep": 142,
+      "m": 3,
+      "title": "Not Original, Not Sin"
+    },
+    {
       "ep": 124,
       "m": 3,
       "title": "Who are the REAL Christians?"
@@ -2289,19 +2417,14 @@
   ],
   "Cain": [
     {
-      "ep": 92,
-      "m": 25,
-      "title": "Episode 92 (January 6, 2025), \"The Curses of Cain and Ham\""
-    },
-    {
       "ep": 90,
       "m": 23,
       "title": "Episode 90 (December 23, 2024), \"With Counter-Apologies\""
     },
     {
-      "ep": 20,
-      "m": 14,
-      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
+      "ep": 92,
+      "m": 17,
+      "title": "Episode 92 (January 6, 2025), \"The Curses of Cain and Ham\""
     },
     {
       "ep": 56,
@@ -2309,8 +2432,13 @@
       "title": "Episode 56 (April 29, 2024), \"The Genesis of Genesis\" with David Carr"
     },
     {
+      "ep": 20,
+      "m": 12,
+      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
+    },
+    {
       "ep": 62,
-      "m": 6,
+      "m": 5,
       "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
     },
     {
@@ -2404,12 +2532,12 @@
   "Canaanites": [
     {
       "ep": 116,
-      "m": 28,
+      "m": 37,
       "title": "Ethnicity and the Bible"
     },
     {
       "ep": 46,
-      "m": 13,
+      "m": 14,
       "title": "Episode 46 (February 19, 2024), \"GENOCIDE!\""
     },
     {
@@ -2423,14 +2551,29 @@
       "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
     },
     {
+      "ep": 115,
+      "m": 4,
+      "title": "Did the Bible Steal Its Stories?"
+    },
+    {
       "ep": 129,
       "m": 3,
       "title": "Biblical Sex Toys?!?"
     },
     {
+      "ep": 64,
+      "m": 3,
+      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
+    },
+    {
       "ep": 152,
       "m": 2,
       "title": "Literally Not Literal!"
+    },
+    {
+      "ep": 16,
+      "m": 2,
+      "title": "Apostlepalooza!"
     },
     {
       "ep": 156,
@@ -2448,9 +2591,9 @@
       "title": "The Holy Dunk"
     },
     {
-      "ep": 64,
+      "ep": 84,
       "m": 1,
-      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
+      "title": "Episode 84 (November 11, 2024), \"The Demon Haunted Bible\""
     },
     {
       "ep": 56,
@@ -2461,6 +2604,11 @@
       "ep": 31,
       "m": 1,
       "title": "Episode 31 (November 6, 2023), \"The Ten (ish) Commandments\""
+    },
+    {
+      "ep": 13,
+      "m": 1,
+      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
     }
   ],
   "Capernaum": [
@@ -2517,6 +2665,11 @@
       "ep": 136,
       "m": 48,
       "title": "Close Encounters of the Catholic Kind"
+    },
+    {
+      "ep": 140,
+      "m": 10,
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 77,
@@ -2721,6 +2874,11 @@
       "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
     },
     {
+      "ep": 142,
+      "m": 1,
+      "title": "Not Original, Not Sin"
+    },
+    {
       "ep": 120,
       "m": 1,
       "title": "Save Me!"
@@ -2734,18 +2892,6 @@
       "ep": 29,
       "m": 1,
       "title": "God's Big Fish Story"
-    }
-  ],
-  "Chicago Statement on Inerrancy": [
-    {
-      "ep": 152,
-      "m": 2,
-      "title": "Literally Not Literal!"
-    },
-    {
-      "ep": 149,
-      "m": 1,
-      "title": "Order Up! With Jennifer Garcia Bashaw and Aaron Higashi"
     }
   ],
   "child sacrifice": [
@@ -2857,13 +3003,6 @@
       "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
     }
   ],
-  "Church of the Holy Sepulcher": [
-    {
-      "ep": 83,
-      "m": 5,
-      "title": "Episode 83 (November 4, 2024), \"The God-Forsaken Psalm\""
-    }
-  ],
   "circumcision": [
     {
       "ep": 33,
@@ -2948,16 +3087,6 @@
       "title": "Episode 110 (May 11, 2025), \"God's Swear Jar\""
     },
     {
-      "ep": 75,
-      "m": 2,
-      "title": "Episode 75 (September 9, 2024), \"Shrouded in Mystery\""
-    },
-    {
-      "ep": 49,
-      "m": 2,
-      "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss"
-    },
-    {
       "ep": 99,
       "m": 1,
       "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
@@ -2971,23 +3100,13 @@
       "ep": 50,
       "m": 1,
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
-    },
-    {
-      "ep": 20,
-      "m": 1,
-      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
     }
   ],
   "Clement of Rome": [
     {
       "ep": 153,
-      "m": 2,
+      "m": 6,
       "title": "Everyone is Wrong About 2 John!"
-    },
-    {
-      "ep": 49,
-      "m": 2,
-      "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss"
     },
     {
       "ep": 156,
@@ -3000,9 +3119,14 @@
       "title": "Episode 110 (May 11, 2025), \"God's Swear Jar\""
     },
     {
-      "ep": 20,
+      "ep": 50,
       "m": 1,
-      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
+      "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
+    },
+    {
+      "ep": 49,
+      "m": 1,
+      "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss"
     }
   ],
   "Codex Sinaiticus": [
@@ -3042,58 +3166,6 @@
       "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
     }
   ],
-  "Codex Vaticanus": [
-    {
-      "ep": 100,
-      "m": 5,
-      "title": "Episode 100 (March 3, 2025), \"Give Me Your Slave!\""
-    },
-    {
-      "ep": 153,
-      "m": 3,
-      "title": "Everyone is Wrong About 2 John!"
-    },
-    {
-      "ep": 94,
-      "m": 2,
-      "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
-    },
-    {
-      "ep": 35,
-      "m": 2,
-      "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
-    },
-    {
-      "ep": 17,
-      "m": 2,
-      "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
-    },
-    {
-      "ep": 140,
-      "m": 1,
-      "title": "Immaculate Apologetics?"
-    },
-    {
-      "ep": 104,
-      "m": 1,
-      "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
-    },
-    {
-      "ep": 20,
-      "m": 1,
-      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
-    },
-    {
-      "ep": 12,
-      "m": 1,
-      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
-    },
-    {
-      "ep": 11,
-      "m": 1,
-      "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
-    }
-  ],
   "cognitive dissonance": [
     {
       "ep": 91,
@@ -3129,7 +3201,7 @@
   "Constantine": [
     {
       "ep": 5,
-      "m": 11,
+      "m": 9,
       "title": "Episode 5 (May 8, 2023), \"Betrayed by Dan Brown\""
     },
     {
@@ -3287,7 +3359,7 @@
   "Creation ex nihilo": [
     {
       "ep": 70,
-      "m": 17,
+      "m": 16,
       "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
     },
     {
@@ -3360,19 +3432,19 @@
   ],
   "Cyrus the Great": [
     {
+      "ep": 43,
+      "m": 11,
+      "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
+    },
+    {
       "ep": 70,
-      "m": 10,
+      "m": 9,
       "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
     },
     {
       "ep": 130,
       "m": 6,
       "title": "Blessed Baruch!"
-    },
-    {
-      "ep": 43,
-      "m": 4,
-      "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
     },
     {
       "ep": 34,
@@ -3408,12 +3480,12 @@
   "Daniel": [
     {
       "ep": 34,
-      "m": 57,
+      "m": 62,
       "title": "Episode 34 (November 27, 2023), \"The Lion's Den\""
     },
     {
       "ep": 70,
-      "m": 40,
+      "m": 52,
       "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
     },
     {
@@ -3423,12 +3495,12 @@
     },
     {
       "ep": 71,
-      "m": 25,
+      "m": 28,
       "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\""
     },
     {
       "ep": 32,
-      "m": 12,
+      "m": 13,
       "title": "Episode 32 (November 13, 2023), \"The End is Near?\""
     },
     {
@@ -3438,13 +3510,18 @@
     },
     {
       "ep": 62,
-      "m": 7,
+      "m": 8,
       "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
     },
     {
       "ep": 45,
       "m": 6,
       "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
+    },
+    {
+      "ep": 39,
+      "m": 6,
+      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
     },
     {
       "ep": 157,
@@ -3455,11 +3532,6 @@
       "ep": 147,
       "m": 5,
       "title": "Hiding God"
-    },
-    {
-      "ep": 39,
-      "m": 4,
-      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
     },
     {
       "ep": 28,
@@ -3477,6 +3549,11 @@
       "title": "Jezebel!"
     },
     {
+      "ep": 20,
+      "m": 3,
+      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
+    },
+    {
       "ep": 4,
       "m": 3,
       "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
@@ -3492,9 +3569,14 @@
       "title": "Peter Thiel is Bankrupt! (Theologically)"
     },
     {
-      "ep": 1,
+      "ep": 58,
       "m": 2,
-      "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
+      "title": "Episode 58 (May 13, 2024), \"Translation Frustration\""
+    },
+    {
+      "ep": 7,
+      "m": 2,
+      "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
     },
     {
       "ep": 152,
@@ -3532,11 +3614,6 @@
       "title": "Did the Bible Steal Its Stories?"
     },
     {
-      "ep": 58,
-      "m": 1,
-      "title": "Episode 58 (May 13, 2024), \"Translation Frustration\""
-    },
-    {
       "ep": 50,
       "m": 1,
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
@@ -3545,21 +3622,6 @@
       "ep": 44,
       "m": 1,
       "title": "Episode 44 (February 5, 2024), \"Biblical Marriage\" with Jennifer Bird"
-    },
-    {
-      "ep": 42,
-      "m": 1,
-      "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\""
-    },
-    {
-      "ep": 36,
-      "m": 1,
-      "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
-    },
-    {
-      "ep": 20,
-      "m": 1,
-      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
     },
     {
       "ep": 19,
@@ -3575,11 +3637,6 @@
       "ep": 11,
       "m": 1,
       "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
-    },
-    {
-      "ep": 7,
-      "m": 1,
-      "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
     }
   ],
   "Dead Sea": [
@@ -3844,28 +3901,6 @@
       "ep": 1,
       "m": 1,
       "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
-    }
-  ],
-  "Deborah": [
-    {
-      "ep": 64,
-      "m": 18,
-      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
-    },
-    {
-      "ep": 36,
-      "m": 2,
-      "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
-    },
-    {
-      "ep": 123,
-      "m": 1,
-      "title": "Jezebel!"
-    },
-    {
-      "ep": 19,
-      "m": 1,
-      "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
     }
   ],
   "Deism": [
@@ -4669,7 +4704,7 @@
   "Elephantine": [
     {
       "ep": 117,
-      "m": 18,
+      "m": 16,
       "title": "Is Allie Beth Stuckey a Sheep or a Goat?"
     },
     {
@@ -4703,6 +4738,11 @@
       "ep": 6,
       "m": 4,
       "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
+    },
+    {
+      "ep": 64,
+      "m": 1,
+      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
     },
     {
       "ep": 13,
@@ -4792,18 +4832,6 @@
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
     }
   ],
-  "Elisha": [
-    {
-      "ep": 53,
-      "m": 5,
-      "title": "Episode 53 (April 8, 2024), \"The Holy Ghost (and Bears!)\""
-    },
-    {
-      "ep": 7,
-      "m": 5,
-      "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
-    }
-  ],
   "Elizabeth": [
     {
       "ep": 23,
@@ -4814,38 +4842,6 @@
       "ep": 87,
       "m": 3,
       "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
-    },
-    {
-      "ep": 61,
-      "m": 1,
-      "title": "Episode 61 (June 3, 2024), \"Christmaker!\" with James McGrath"
-    }
-  ],
-  "Endor": [
-    {
-      "ep": 40,
-      "m": 7,
-      "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
-    },
-    {
-      "ep": 15,
-      "m": 3,
-      "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
-    },
-    {
-      "ep": 73,
-      "m": 2,
-      "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
-    },
-    {
-      "ep": 65,
-      "m": 2,
-      "title": "Episode 65 (July 1, 2024), \"I Got Soul, and I'm Super Bad\""
-    },
-    {
-      "ep": 58,
-      "m": 1,
-      "title": "Episode 58 (May 13, 2024), \"Translation Frustration\""
     }
   ],
   "Enoch": [
@@ -4933,23 +4929,6 @@
       "ep": 15,
       "m": 1,
       "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
-    }
-  ],
-  "Enuma Elish": [
-    {
-      "ep": 56,
-      "m": 5,
-      "title": "Episode 56 (April 29, 2024), \"The Genesis of Genesis\" with David Carr"
-    },
-    {
-      "ep": 22,
-      "m": 5,
-      "title": "Episode 22 (September 4, 2023), \"Connecting with Source\""
-    },
-    {
-      "ep": 115,
-      "m": 2,
-      "title": "Did the Bible Steal Its Stories?"
     }
   ],
   "epigraphy": [
@@ -5211,11 +5190,6 @@
       "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
     },
     {
-      "ep": 3,
-      "m": 2,
-      "title": "Episode 3 (April 23, 2023), \"Why Is She Salt?\""
-    },
-    {
       "ep": 136,
       "m": 1,
       "title": "Close Encounters of the Catholic Kind"
@@ -5226,19 +5200,9 @@
       "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
     },
     {
-      "ep": 63,
-      "m": 1,
-      "title": "Episode 63 (June 17, 2024), \"Wrastlin’ With God\""
-    },
-    {
       "ep": 45,
       "m": 1,
       "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
-    },
-    {
-      "ep": 40,
-      "m": 1,
-      "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
     },
     {
       "ep": 34,
@@ -5249,6 +5213,11 @@
       "ep": 20,
       "m": 1,
       "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
+    },
+    {
+      "ep": 3,
+      "m": 1,
+      "title": "Episode 3 (April 23, 2023), \"Why Is She Salt?\""
     }
   ],
   "Ethical Decalogue": [
@@ -5259,6 +5228,11 @@
     }
   ],
   "etiology": [
+    {
+      "ep": 142,
+      "m": 7,
+      "title": "Not Original, Not Sin"
+    },
     {
       "ep": 111,
       "m": 5,
@@ -5439,6 +5413,11 @@
       "title": "Everyone is Wrong About 2 John!"
     },
     {
+      "ep": 140,
+      "m": 1,
+      "title": "Immaculate Apologetics?"
+    },
+    {
       "ep": 100,
       "m": 1,
       "title": "Episode 100 (March 3, 2025), \"Give Me Your Slave!\""
@@ -5465,6 +5444,11 @@
     }
   ],
   "Eve": [
+    {
+      "ep": 142,
+      "m": 25,
+      "title": "Not Original, Not Sin"
+    },
     {
       "ep": 29,
       "m": 9,
@@ -5621,7 +5605,7 @@
   "Flavius Josephus": [
     {
       "ep": 86,
-      "m": 32,
+      "m": 30,
       "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
     },
     {
@@ -5767,19 +5751,24 @@
   ],
   "Flood": [
     {
+      "ep": 56,
+      "m": 35,
+      "title": "Episode 56 (April 29, 2024), \"The Genesis of Genesis\" with David Carr"
+    },
+    {
       "ep": 20,
       "m": 34,
       "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
     },
     {
-      "ep": 56,
-      "m": 21,
-      "title": "Episode 56 (April 29, 2024), \"The Genesis of Genesis\" with David Carr"
-    },
-    {
       "ep": 95,
       "m": 16,
       "title": "Episode 95 (January 27, 2025), \"Uh-Oh, Jericho\""
+    },
+    {
+      "ep": 62,
+      "m": 12,
+      "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
     },
     {
       "ep": 131,
@@ -5788,7 +5777,7 @@
     },
     {
       "ep": 124,
-      "m": 7,
+      "m": 8,
       "title": "Who are the REAL Christians?"
     },
     {
@@ -5800,11 +5789,6 @@
       "ep": 115,
       "m": 5,
       "title": "Did the Bible Steal Its Stories?"
-    },
-    {
-      "ep": 62,
-      "m": 5,
-      "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
     },
     {
       "ep": 92,
@@ -5857,9 +5841,14 @@
       "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
     },
     {
-      "ep": 21,
+      "ep": 57,
       "m": 1,
-      "title": "Episode 21 (August 28, 2023), \"Did the Exodus Really Happen?\""
+      "title": "Episode 57 (May 6, 2024), \"Does the Bible say the Earth is Flat?\""
+    },
+    {
+      "ep": 23,
+      "m": 1,
+      "title": "Episode 23 (September 11, 2023), \"Abortion and the Bible\""
     },
     {
       "ep": 15,
@@ -5965,14 +5954,9 @@
   ],
   "Galilee": [
     {
-      "ep": 12,
-      "m": 10,
-      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
-    },
-    {
-      "ep": 87,
-      "m": 7,
-      "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
+      "ep": 141,
+      "m": 9,
+      "title": "Did Jesus Fulfill Prophesy?"
     },
     {
       "ep": 48,
@@ -5985,19 +5969,14 @@
       "title": "Shiny Happy People!"
     },
     {
+      "ep": 87,
+      "m": 4,
+      "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
+    },
+    {
       "ep": 86,
-      "m": 5,
+      "m": 4,
       "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
-    },
-    {
-      "ep": 128,
-      "m": 4,
-      "title": "\"John!\" with Hugo Méndez"
-    },
-    {
-      "ep": 35,
-      "m": 4,
-      "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
     },
     {
       "ep": 145,
@@ -6015,14 +5994,9 @@
       "title": "Apostlepalooza!"
     },
     {
-      "ep": 99,
+      "ep": 140,
       "m": 2,
-      "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
-    },
-    {
-      "ep": 73,
-      "m": 2,
-      "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 69,
@@ -6030,29 +6004,19 @@
       "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
     },
     {
-      "ep": 55,
-      "m": 2,
-      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
-    },
-    {
       "ep": 50,
       "m": 2,
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
     },
     {
-      "ep": 28,
+      "ep": 35,
       "m": 2,
-      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
+      "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
     },
     {
-      "ep": 25,
-      "m": 2,
-      "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
-    },
-    {
-      "ep": 7,
-      "m": 2,
-      "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
+      "ep": 128,
+      "m": 1,
+      "title": "\"John!\" with Hugo Méndez"
     },
     {
       "ep": 101,
@@ -6060,14 +6024,14 @@
       "title": "Episode 101 (March 10, 2025), \"The Slave Bible\""
     },
     {
+      "ep": 99,
+      "m": 1,
+      "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
+    },
+    {
       "ep": 94,
       "m": 1,
       "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
-    },
-    {
-      "ep": 84,
-      "m": 1,
-      "title": "Episode 84 (November 11, 2024), \"The Demon Haunted Bible\""
     },
     {
       "ep": 81,
@@ -6075,9 +6039,14 @@
       "title": "Episode 81 (October 21, 2024), \"You're Speaking My Language!\""
     },
     {
-      "ep": 64,
+      "ep": 73,
       "m": 1,
-      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
+      "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
+    },
+    {
+      "ep": 55,
+      "m": 1,
+      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
     },
     {
       "ep": 43,
@@ -6085,19 +6054,14 @@
       "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
     },
     {
-      "ep": 40,
+      "ep": 28,
       "m": 1,
-      "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
+      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
     },
     {
       "ep": 20,
       "m": 1,
       "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
-    },
-    {
-      "ep": 13,
-      "m": 1,
-      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
     },
     {
       "ep": 11,
@@ -6110,6 +6074,11 @@
       "ep": 56,
       "m": 23,
       "title": "Episode 56 (April 29, 2024), \"The Genesis of Genesis\" with David Carr"
+    },
+    {
+      "ep": 142,
+      "m": 9,
+      "title": "Not Original, Not Sin"
     },
     {
       "ep": 90,
@@ -6135,6 +6104,11 @@
       "ep": 157,
       "m": 4,
       "title": "In Chains: Slaves and Angels"
+    },
+    {
+      "ep": 39,
+      "m": 3,
+      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
     },
     {
       "ep": 29,
@@ -6165,11 +6139,6 @@
       "ep": 58,
       "m": 2,
       "title": "Episode 58 (May 13, 2024), \"Translation Frustration\""
-    },
-    {
-      "ep": 39,
-      "m": 2,
-      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
     },
     {
       "ep": 37,
@@ -6207,6 +6176,11 @@
       "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\""
     },
     {
+      "ep": 62,
+      "m": 1,
+      "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
+    },
+    {
       "ep": 51,
       "m": 1,
       "title": "Episode 51 (March 25, 2024), \"Is Religion Make-Believe?\" with Neil Van Leeuwen"
@@ -6224,6 +6198,11 @@
   ],
   "Garden of Gethsemane": [
     {
+      "ep": 50,
+      "m": 4,
+      "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
+    },
+    {
       "ep": 143,
       "m": 2,
       "title": "Shiny Happy People!"
@@ -6237,6 +6216,11 @@
       "ep": 112,
       "m": 1,
       "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
+    },
+    {
+      "ep": 13,
+      "m": 1,
+      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
     }
   ],
   "Gaza": [
@@ -6425,12 +6409,12 @@
   "Gnostic": [
     {
       "ep": 94,
-      "m": 35,
+      "m": 37,
       "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
     },
     {
       "ep": 61,
-      "m": 11,
+      "m": 12,
       "title": "Episode 61 (June 3, 2024), \"Christmaker!\" with James McGrath"
     },
     {
@@ -6577,17 +6561,32 @@
       "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
     },
     {
+      "ep": 38,
+      "m": 3,
+      "title": "Episode 38 (December 25, 2023), \"The [Three] [Wise Men]\" With Eric Vanden Eykel"
+    },
+    {
       "ep": 99,
       "m": 2,
       "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
     },
     {
-      "ep": 38,
+      "ep": 142,
       "m": 1,
-      "title": "Episode 38 (December 25, 2023), \"The [Three] [Wise Men]\" With Eric Vanden Eykel"
+      "title": "Not Original, Not Sin"
     }
   ],
   "Gospel of Thomas": [
+    {
+      "ep": 12,
+      "m": 4,
+      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
+    },
+    {
+      "ep": 48,
+      "m": 3,
+      "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond"
+    },
     {
       "ep": 94,
       "m": 2,
@@ -6607,6 +6606,21 @@
       "ep": 128,
       "m": 1,
       "title": "\"John!\" with Hugo Méndez"
+    },
+    {
+      "ep": 43,
+      "m": 1,
+      "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
+    },
+    {
+      "ep": 35,
+      "m": 1,
+      "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
+    },
+    {
+      "ep": 16,
+      "m": 1,
+      "title": "Apostlepalooza!"
     }
   ],
   "Gregory of Nyssa": [
@@ -6673,7 +6687,7 @@
     },
     {
       "ep": 41,
-      "m": 33,
+      "m": 38,
       "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
     },
     {
@@ -6710,11 +6724,6 @@
       "ep": 53,
       "m": 1,
       "title": "Episode 53 (April 8, 2024), \"The Holy Ghost (and Bears!)\""
-    },
-    {
-      "ep": 13,
-      "m": 1,
-      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
     }
   ],
   "Haman": [
@@ -6871,6 +6880,11 @@
       "ep": 144,
       "m": 1,
       "title": "Bring Me the Head of John the Baptist!"
+    },
+    {
+      "ep": 140,
+      "m": 1,
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 137,
@@ -7104,11 +7118,6 @@
       "title": "Episode 84 (November 11, 2024), \"The Demon Haunted Bible\""
     },
     {
-      "ep": 59,
-      "m": 1,
-      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
-    },
-    {
       "ep": 50,
       "m": 1,
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
@@ -7126,6 +7135,11 @@
       "title": "Bring Me the Head of John the Baptist!"
     },
     {
+      "ep": 141,
+      "m": 2,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
+    {
       "ep": 106,
       "m": 1,
       "title": "Episode 106 (April 14, 2025), \"Usurer Error\""
@@ -7139,26 +7153,6 @@
       "ep": 86,
       "m": 1,
       "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
-    },
-    {
-      "ep": 59,
-      "m": 1,
-      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
-    },
-    {
-      "ep": 54,
-      "m": 1,
-      "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
-    },
-    {
-      "ep": 50,
-      "m": 1,
-      "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
-    },
-    {
-      "ep": 45,
-      "m": 1,
-      "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
     },
     {
       "ep": 43,
@@ -7186,6 +7180,13 @@
       "ep": 143,
       "m": 1,
       "title": "Shiny Happy People!"
+    }
+  ],
+  "Hesed": [
+    {
+      "ep": 72,
+      "m": 1,
+      "title": "Episode 72 (August 19, 2024), \"The Truth About Ruth\""
     }
   ],
   "Hezekiah": [
@@ -7362,7 +7363,7 @@
   "Hypostasis": [
     {
       "ep": 59,
-      "m": 14,
+      "m": 16,
       "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
     },
     {
@@ -7408,6 +7409,11 @@
       "ep": 55,
       "m": 4,
       "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
+    },
+    {
+      "ep": 140,
+      "m": 3,
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 46,
@@ -7657,28 +7663,18 @@
   "Isaiah": [
     {
       "ep": 120,
-      "m": 22,
+      "m": 26,
       "title": "Save Me!"
     },
     {
       "ep": 43,
-      "m": 9,
+      "m": 17,
       "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
     },
     {
-      "ep": 105,
-      "m": 4,
-      "title": "Episode 105 (April 7, 2025), \"Wandering in the Wilderness\" with Angela Roskop Erisman"
-    },
-    {
-      "ep": 39,
-      "m": 4,
-      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
-    },
-    {
-      "ep": 15,
-      "m": 4,
-      "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
+      "ep": 2,
+      "m": 9,
+      "title": "Episode 2 (April 17, 2023), \"God's Wife\" with Prof. Francesca Stavrakopoulou"
     },
     {
       "ep": 7,
@@ -7696,29 +7692,9 @@
       "title": "Episode 110 (May 11, 2025), \"God's Swear Jar\""
     },
     {
-      "ep": 25,
+      "ep": 71,
       "m": 3,
-      "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
-    },
-    {
-      "ep": 18,
-      "m": 3,
-      "title": "Episode 18 (August 7, 2023), \"The Devil Made Us Do It\""
-    },
-    {
-      "ep": 14,
-      "m": 3,
-      "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
-    },
-    {
-      "ep": 6,
-      "m": 3,
-      "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
-    },
-    {
-      "ep": 1,
-      "m": 3,
-      "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
+      "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\""
     },
     {
       "ep": 149,
@@ -7731,6 +7707,16 @@
       "title": "The Holy Dunk"
     },
     {
+      "ep": 142,
+      "m": 2,
+      "title": "Not Original, Not Sin"
+    },
+    {
+      "ep": 141,
+      "m": 2,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
+    {
       "ep": 126,
       "m": 2,
       "title": "Hear, O Israel!"
@@ -7741,14 +7727,14 @@
       "title": "Did the Bible Steal Its Stories?"
     },
     {
+      "ep": 105,
+      "m": 2,
+      "title": "Episode 105 (April 7, 2025), \"Wandering in the Wilderness\" with Angela Roskop Erisman"
+    },
+    {
       "ep": 104,
       "m": 2,
       "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
-    },
-    {
-      "ep": 90,
-      "m": 2,
-      "title": "Episode 90 (December 23, 2024), \"With Counter-Apologies\""
     },
     {
       "ep": 72,
@@ -7756,19 +7742,9 @@
       "title": "Episode 72 (August 19, 2024), \"The Truth About Ruth\""
     },
     {
-      "ep": 42,
+      "ep": 48,
       "m": 2,
-      "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\""
-    },
-    {
-      "ep": 32,
-      "m": 2,
-      "title": "Episode 32 (November 13, 2023), \"The End is Near?\""
-    },
-    {
-      "ep": 28,
-      "m": 2,
-      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
+      "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond"
     },
     {
       "ep": 20,
@@ -7784,11 +7760,6 @@
       "ep": 9,
       "m": 2,
       "title": "Episode 9 (June 5, 2023), \"The Mark of the Best\""
-    },
-    {
-      "ep": 2,
-      "m": 2,
-      "title": "Episode 2 (April 17, 2023), \"God's Wife\" with Prof. Francesca Stavrakopoulou"
     },
     {
       "ep": 133,
@@ -7836,14 +7807,34 @@
       "title": "Episode 97 (February 10, 2025), \"The Neighborhood of Make-Believe\""
     },
     {
-      "ep": 84,
+      "ep": 90,
       "m": 1,
-      "title": "Episode 84 (November 11, 2024), \"The Demon Haunted Bible\""
+      "title": "Episode 90 (December 23, 2024), \"With Counter-Apologies\""
     },
     {
       "ep": 76,
       "m": 1,
       "title": "Episode 76 S(September 16, 2024), \"Pay Your Tithing!\""
+    },
+    {
+      "ep": 65,
+      "m": 1,
+      "title": "Episode 65 (July 1, 2024), \"I Got Soul, and I'm Super Bad\""
+    },
+    {
+      "ep": 56,
+      "m": 1,
+      "title": "Episode 56 (April 29, 2024), \"The Genesis of Genesis\" with David Carr"
+    },
+    {
+      "ep": 55,
+      "m": 1,
+      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
+    },
+    {
+      "ep": 42,
+      "m": 1,
+      "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\""
     },
     {
       "ep": 37,
@@ -7856,14 +7847,34 @@
       "title": "Episode 34 (November 27, 2023), \"The Lion's Den\""
     },
     {
+      "ep": 31,
+      "m": 1,
+      "title": "Episode 31 (November 6, 2023), \"The Ten (ish) Commandments\""
+    },
+    {
       "ep": 30,
       "m": 1,
       "title": "Christian Nationalism Ain't Christian: With Andrew Whitehead"
     },
     {
+      "ep": 28,
+      "m": 1,
+      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
+    },
+    {
+      "ep": 22,
+      "m": 1,
+      "title": "Episode 22 (September 4, 2023), \"Connecting with Source\""
+    },
+    {
       "ep": 17,
       "m": 1,
       "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
+    },
+    {
+      "ep": 6,
+      "m": 1,
+      "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
     }
   ],
   "Ishmael": [
@@ -7940,6 +7951,11 @@
       "title": "Episode 61 (June 3, 2024), \"Christmaker!\" with James McGrath"
     },
     {
+      "ep": 41,
+      "m": 2,
+      "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
+    },
+    {
       "ep": 138,
       "m": 1,
       "title": "Who Deserves to Eat?"
@@ -7965,9 +7981,19 @@
       "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
     },
     {
-      "ep": 41,
+      "ep": 36,
       "m": 1,
-      "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
+      "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
+    },
+    {
+      "ep": 33,
+      "m": 1,
+      "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon"
+    },
+    {
+      "ep": 30,
+      "m": 1,
+      "title": "Christian Nationalism Ain't Christian: With Andrew Whitehead"
     },
     {
       "ep": 28,
@@ -7981,6 +8007,11 @@
     }
   ],
   "Jacob": [
+    {
+      "ep": 63,
+      "m": 64,
+      "title": "Episode 63 (June 17, 2024), \"Wrastlin’ With God\""
+    },
     {
       "ep": 150,
       "m": 12,
@@ -8002,9 +8033,34 @@
       "title": "Tucker Vs Ted: The Israel Throwdown"
     },
     {
+      "ep": 36,
+      "m": 5,
+      "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
+    },
+    {
+      "ep": 1,
+      "m": 4,
+      "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
+    },
+    {
       "ep": 154,
       "m": 3,
       "title": "The Bible Gets Sexy!"
+    },
+    {
+      "ep": 62,
+      "m": 3,
+      "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
+    },
+    {
+      "ep": 59,
+      "m": 3,
+      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
+    },
+    {
+      "ep": 29,
+      "m": 3,
+      "title": "God's Big Fish Story"
     },
     {
       "ep": 156,
@@ -8025,6 +8081,31 @@
       "ep": 104,
       "m": 2,
       "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
+    },
+    {
+      "ep": 67,
+      "m": 2,
+      "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi"
+    },
+    {
+      "ep": 66,
+      "m": 2,
+      "title": "Episode 66 (July 8, 2024), \"Thou Shalt Not\""
+    },
+    {
+      "ep": 64,
+      "m": 2,
+      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
+    },
+    {
+      "ep": 42,
+      "m": 2,
+      "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\""
+    },
+    {
+      "ep": 14,
+      "m": 2,
+      "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
     },
     {
       "ep": 155,
@@ -8055,6 +8136,71 @@
       "ep": 87,
       "m": 1,
       "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
+    },
+    {
+      "ep": 68,
+      "m": 1,
+      "title": "Episode 68 (July 22, 2024), \"Take My Wife... Please!\""
+    },
+    {
+      "ep": 65,
+      "m": 1,
+      "title": "Episode 65 (July 1, 2024), \"I Got Soul, and I'm Super Bad\""
+    },
+    {
+      "ep": 58,
+      "m": 1,
+      "title": "Episode 58 (May 13, 2024), \"Translation Frustration\""
+    },
+    {
+      "ep": 45,
+      "m": 1,
+      "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
+    },
+    {
+      "ep": 44,
+      "m": 1,
+      "title": "Episode 44 (February 5, 2024), \"Biblical Marriage\" with Jennifer Bird"
+    },
+    {
+      "ep": 37,
+      "m": 1,
+      "title": "Episode 37 (December 18, 2023), \"Follow That Star!\" with Aaron Adair"
+    },
+    {
+      "ep": 28,
+      "m": 1,
+      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
+    },
+    {
+      "ep": 27,
+      "m": 1,
+      "title": "Episode 27 (October 9), \"Where Angels Fear to Swim\""
+    },
+    {
+      "ep": 25,
+      "m": 1,
+      "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
+    },
+    {
+      "ep": 19,
+      "m": 1,
+      "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
+    },
+    {
+      "ep": 16,
+      "m": 1,
+      "title": "Apostlepalooza!"
+    },
+    {
+      "ep": 13,
+      "m": 1,
+      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
+    },
+    {
+      "ep": 7,
+      "m": 1,
+      "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
     }
   ],
   "Jael": [
@@ -8072,38 +8218,18 @@
   "James": [
     {
       "ep": 99,
-      "m": 24,
+      "m": 33,
       "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
     },
     {
-      "ep": 16,
-      "m": 22,
-      "title": "Apostlepalooza!"
-    },
-    {
-      "ep": 17,
-      "m": 21,
-      "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
-    },
-    {
-      "ep": 26,
-      "m": 17,
-      "title": "Episode 26 (October 1, 2023), \"A Jewish Paul\" with Matthew Thiessen"
-    },
-    {
-      "ep": 6,
-      "m": 17,
-      "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
+      "ep": 54,
+      "m": 16,
+      "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
     },
     {
       "ep": 80,
       "m": 15,
       "title": "Episode 80 (October 14, 2024), \"Omni Everything?\""
-    },
-    {
-      "ep": 54,
-      "m": 13,
-      "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
     },
     {
       "ep": 104,
@@ -8112,18 +8238,8 @@
     },
     {
       "ep": 35,
-      "m": 9,
+      "m": 8,
       "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
-    },
-    {
-      "ep": 11,
-      "m": 9,
-      "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
-    },
-    {
-      "ep": 12,
-      "m": 7,
-      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
     },
     {
       "ep": 143,
@@ -8136,19 +8252,14 @@
       "title": "Killing in the Name Of"
     },
     {
-      "ep": 86,
-      "m": 3,
-      "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
-    },
-    {
-      "ep": 38,
-      "m": 3,
-      "title": "Episode 38 (December 25, 2023), \"The [Three] [Wise Men]\" With Eric Vanden Eykel"
-    },
-    {
       "ep": 146,
       "m": 2,
       "title": "Jesus is so Fulfilling!"
+    },
+    {
+      "ep": 140,
+      "m": 2,
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 94,
@@ -8156,54 +8267,19 @@
       "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
     },
     {
-      "ep": 22,
+      "ep": 86,
       "m": 2,
-      "title": "Episode 22 (September 4, 2023), \"Connecting with Source\""
+      "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
     },
     {
-      "ep": 20,
-      "m": 2,
-      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
-    },
-    {
-      "ep": 1,
-      "m": 2,
-      "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
-    },
-    {
-      "ep": 31,
+      "ep": 50,
       "m": 1,
-      "title": "Episode 31 (November 6, 2023), \"The Ten (ish) Commandments\""
+      "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
     },
     {
-      "ep": 25,
+      "ep": 12,
       "m": 1,
-      "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
-    },
-    {
-      "ep": 18,
-      "m": 1,
-      "title": "Episode 18 (August 7, 2023), \"The Devil Made Us Do It\""
-    },
-    {
-      "ep": 13,
-      "m": 1,
-      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
-    },
-    {
-      "ep": 9,
-      "m": 1,
-      "title": "Episode 9 (June 5, 2023), \"The Mark of the Best\""
-    },
-    {
-      "ep": 8,
-      "m": 1,
-      "title": "Episode 8 (May 29, 2023), \"Contextual Healing\" with Aaron Higashi"
-    },
-    {
-      "ep": 4,
-      "m": 1,
-      "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
+      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
     }
   ],
   "James VanderKam": [
@@ -8253,7 +8329,7 @@
   "Jared": [
     {
       "ep": 20,
-      "m": 7,
+      "m": 4,
       "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
     },
     {
@@ -8272,23 +8348,6 @@
       "ep": 130,
       "m": 2,
       "title": "Blessed Baruch!"
-    }
-  ],
-  "Jehoshaphat": [
-    {
-      "ep": 7,
-      "m": 6,
-      "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
-    },
-    {
-      "ep": 125,
-      "m": 3,
-      "title": "Holy Sex Work?"
-    },
-    {
-      "ep": 55,
-      "m": 1,
-      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
     }
   ],
   "Jehu": [
@@ -8379,6 +8438,11 @@
       "title": "Episode 23 (September 11, 2023), \"Abortion and the Bible\""
     },
     {
+      "ep": 140,
+      "m": 8,
+      "title": "Immaculate Apologetics?"
+    },
+    {
       "ep": 45,
       "m": 5,
       "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
@@ -8422,6 +8486,11 @@
       "ep": 7,
       "m": 2,
       "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
+    },
+    {
+      "ep": 141,
+      "m": 1,
+      "title": "Did Jesus Fulfill Prophesy?"
     },
     {
       "ep": 133,
@@ -8514,7 +8583,7 @@
   "Jeroboam": [
     {
       "ep": 139,
-      "m": 13,
+      "m": 12,
       "title": "Polygamy!"
     },
     {
@@ -8602,11 +8671,6 @@
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
     },
     {
-      "ep": 54,
-      "m": 15,
-      "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
-    },
-    {
       "ep": 13,
       "m": 14,
       "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
@@ -8642,9 +8706,19 @@
       "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
     },
     {
+      "ep": 54,
+      "m": 9,
+      "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
+    },
+    {
       "ep": 48,
       "m": 9,
       "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond"
+    },
+    {
+      "ep": 141,
+      "m": 8,
+      "title": "Did Jesus Fulfill Prophesy?"
     },
     {
       "ep": 102,
@@ -8787,11 +8861,6 @@
       "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
     },
     {
-      "ep": 31,
-      "m": 3,
-      "title": "Episode 31 (November 6, 2023), \"The Ten (ish) Commandments\""
-    },
-    {
       "ep": 7,
       "m": 3,
       "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
@@ -8827,11 +8896,6 @@
       "title": "Episode 56 (April 29, 2024), \"The Genesis of Genesis\" with David Carr"
     },
     {
-      "ep": 39,
-      "m": 2,
-      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
-    },
-    {
       "ep": 35,
       "m": 2,
       "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
@@ -8845,11 +8909,6 @@
       "ep": 11,
       "m": 2,
       "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
-    },
-    {
-      "ep": 6,
-      "m": 2,
-      "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
     },
     {
       "ep": 157,
@@ -8962,6 +9021,11 @@
       "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
     },
     {
+      "ep": 39,
+      "m": 1,
+      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
+    },
+    {
       "ep": 34,
       "m": 1,
       "title": "Episode 34 (November 27, 2023), \"The Lion's Den\""
@@ -9030,9 +9094,29 @@
   ],
   "John": [
     {
+      "ep": 69,
+      "m": 21,
+      "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
+    },
+    {
       "ep": 119,
       "m": 20,
       "title": "Problematic Prophecy"
+    },
+    {
+      "ep": 42,
+      "m": 14,
+      "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\""
+    },
+    {
+      "ep": 128,
+      "m": 13,
+      "title": "\"John!\" with Hugo Méndez"
+    },
+    {
+      "ep": 39,
+      "m": 13,
+      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
     },
     {
       "ep": 156,
@@ -9040,9 +9124,9 @@
       "title": "Killing in the Name Of"
     },
     {
-      "ep": 128,
+      "ep": 35,
       "m": 12,
-      "title": "\"John!\" with Hugo Méndez"
+      "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
     },
     {
       "ep": 98,
@@ -9050,24 +9134,24 @@
       "title": "Episode 98 (February 17, 2025), \"Did Jesus Go to Hell?\""
     },
     {
+      "ep": 99,
+      "m": 6,
+      "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
+    },
+    {
       "ep": 143,
       "m": 5,
       "title": "Shiny Happy People!"
     },
     {
-      "ep": 99,
-      "m": 5,
-      "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
-    },
-    {
-      "ep": 100,
-      "m": 3,
-      "title": "Episode 100 (March 3, 2025), \"Give Me Your Slave!\""
-    },
-    {
       "ep": 86,
-      "m": 3,
+      "m": 4,
       "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
+    },
+    {
+      "ep": 16,
+      "m": 3,
+      "title": "Apostlepalooza!"
     },
     {
       "ep": 153,
@@ -9075,9 +9159,19 @@
       "title": "Everyone is Wrong About 2 John!"
     },
     {
+      "ep": 100,
+      "m": 2,
+      "title": "Episode 100 (March 3, 2025), \"Give Me Your Slave!\""
+    },
+    {
       "ep": 83,
       "m": 2,
       "title": "Episode 83 (November 4, 2024), \"The God-Forsaken Psalm\""
+    },
+    {
+      "ep": 37,
+      "m": 2,
+      "title": "Episode 37 (December 18, 2023), \"Follow That Star!\" with Aaron Adair"
     },
     {
       "ep": 148,
@@ -9088,11 +9182,6 @@
       "ep": 137,
       "m": 1,
       "title": "It's a Jubilee!"
-    },
-    {
-      "ep": 112,
-      "m": 1,
-      "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
     },
     {
       "ep": 110,
@@ -9108,6 +9197,28 @@
       "ep": 102,
       "m": 1,
       "title": "Episode 102 (March 17, 2025), \"The Dave Ramsey Takedown\""
+    },
+    {
+      "ep": 57,
+      "m": 1,
+      "title": "Episode 57 (May 6, 2024), \"Does the Bible say the Earth is Flat?\""
+    },
+    {
+      "ep": 53,
+      "m": 1,
+      "title": "Episode 53 (April 8, 2024), \"The Holy Ghost (and Bears!)\""
+    },
+    {
+      "ep": 17,
+      "m": 1,
+      "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
+    }
+  ],
+  "John Chrysostom": [
+    {
+      "ep": 16,
+      "m": 1,
+      "title": "Apostlepalooza!"
     }
   ],
   "John of Patmos": [
@@ -9207,12 +9318,12 @@
   "Jonah": [
     {
       "ep": 29,
-      "m": 48,
+      "m": 51,
       "title": "God's Big Fish Story"
     },
     {
       "ep": 54,
-      "m": 14,
+      "m": 18,
       "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
     },
     {
@@ -9302,11 +9413,6 @@
       "title": "Who Deserves to Eat?"
     },
     {
-      "ep": 12,
-      "m": 7,
-      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
-    },
-    {
       "ep": 150,
       "m": 5,
       "title": "Written in the Stars!"
@@ -9315,11 +9421,6 @@
       "ep": 68,
       "m": 3,
       "title": "Episode 68 (July 22, 2024), \"Take My Wife... Please!\""
-    },
-    {
-      "ep": 38,
-      "m": 2,
-      "title": "Episode 38 (December 25, 2023), \"The [Three] [Wise Men]\" With Eric Vanden Eykel"
     },
     {
       "ep": 22,
@@ -9367,24 +9468,9 @@
       "title": "Episode 56 (April 29, 2024), \"The Genesis of Genesis\" with David Carr"
     },
     {
-      "ep": 43,
-      "m": 1,
-      "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
-    },
-    {
-      "ep": 42,
-      "m": 1,
-      "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\""
-    },
-    {
       "ep": 41,
       "m": 1,
       "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
-    },
-    {
-      "ep": 37,
-      "m": 1,
-      "title": "Episode 37 (December 18, 2023), \"Follow That Star!\" with Aaron Adair"
     },
     {
       "ep": 18,
@@ -9395,78 +9481,6 @@
       "ep": 1,
       "m": 1,
       "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
-    }
-  ],
-  "Josephus": [
-    {
-      "ep": 86,
-      "m": 27,
-      "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
-    },
-    {
-      "ep": 61,
-      "m": 8,
-      "title": "Episode 61 (June 3, 2024), \"Christmaker!\" with James McGrath"
-    },
-    {
-      "ep": 12,
-      "m": 7,
-      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
-    },
-    {
-      "ep": 69,
-      "m": 5,
-      "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
-    },
-    {
-      "ep": 48,
-      "m": 4,
-      "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond"
-    },
-    {
-      "ep": 73,
-      "m": 3,
-      "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
-    },
-    {
-      "ep": 85,
-      "m": 2,
-      "title": "Episode 85 (November 18, 2024), \"Purify This!\" With Logan Williams"
-    },
-    {
-      "ep": 45,
-      "m": 2,
-      "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
-    },
-    {
-      "ep": 43,
-      "m": 2,
-      "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
-    },
-    {
-      "ep": 31,
-      "m": 2,
-      "title": "Episode 31 (November 6, 2023), \"The Ten (ish) Commandments\""
-    },
-    {
-      "ep": 87,
-      "m": 1,
-      "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
-    },
-    {
-      "ep": 74,
-      "m": 1,
-      "title": "Episode 74: The Fabric Conspiracies"
-    },
-    {
-      "ep": 15,
-      "m": 1,
-      "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
-    },
-    {
-      "ep": 10,
-      "m": 1,
-      "title": "Episode 10 (June 12, 2023): \"Adam and Steve (what the Bible says about homosexuality)\""
     }
   ],
   "Joshua": [
@@ -9751,6 +9765,11 @@
       "ep": 43,
       "m": 4,
       "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
+    },
+    {
+      "ep": 141,
+      "m": 3,
+      "title": "Did Jesus Fulfill Prophesy?"
     },
     {
       "ep": 105,
@@ -10392,6 +10411,16 @@
       "title": "It's a Jubilee!"
     },
     {
+      "ep": 94,
+      "m": 3,
+      "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
+    },
+    {
+      "ep": 16,
+      "m": 3,
+      "title": "Apostlepalooza!"
+    },
+    {
       "ep": 113,
       "m": 2,
       "title": "Bibliomancy! The Biblical Dance with the Devil?"
@@ -10405,11 +10434,6 @@
       "ep": 35,
       "m": 2,
       "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
-    },
-    {
-      "ep": 16,
-      "m": 2,
-      "title": "Apostlepalooza!"
     },
     {
       "ep": 145,
@@ -10432,9 +10456,19 @@
       "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
     },
     {
+      "ep": 61,
+      "m": 1,
+      "title": "Episode 61 (June 3, 2024), \"Christmaker!\" with James McGrath"
+    },
+    {
       "ep": 55,
       "m": 1,
       "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
+    },
+    {
+      "ep": 26,
+      "m": 1,
+      "title": "Episode 26 (October 1, 2023), \"A Jewish Paul\" with Matthew Thiessen"
     },
     {
       "ep": 12,
@@ -10442,133 +10476,11 @@
       "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
     }
   ],
-  "Judeans": [
+  "Judas Maccabeus": [
     {
-      "ep": 38,
-      "m": 13,
-      "title": "Episode 38 (December 25, 2023), \"The [Three] [Wise Men]\" With Eric Vanden Eykel"
-    },
-    {
-      "ep": 36,
-      "m": 9,
-      "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
-    },
-    {
-      "ep": 155,
-      "m": 3,
-      "title": "The Legend of the Septuagint"
-    },
-    {
-      "ep": 123,
-      "m": 3,
-      "title": "Jezebel!"
-    },
-    {
-      "ep": 62,
-      "m": 3,
-      "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
-    },
-    {
-      "ep": 11,
-      "m": 3,
-      "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
-    },
-    {
-      "ep": 105,
+      "ep": 112,
       "m": 2,
-      "title": "Episode 105 (April 7, 2025), \"Wandering in the Wilderness\" with Angela Roskop Erisman"
-    },
-    {
-      "ep": 88,
-      "m": 2,
-      "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\""
-    },
-    {
-      "ep": 86,
-      "m": 2,
-      "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
-    },
-    {
-      "ep": 74,
-      "m": 2,
-      "title": "Episode 74: The Fabric Conspiracies"
-    },
-    {
-      "ep": 71,
-      "m": 2,
-      "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\""
-    },
-    {
-      "ep": 8,
-      "m": 2,
-      "title": "Episode 8 (May 29, 2023), \"Contextual Healing\" with Aaron Higashi"
-    },
-    {
-      "ep": 120,
-      "m": 1,
-      "title": "Save Me!"
-    },
-    {
-      "ep": 117,
-      "m": 1,
-      "title": "Is Allie Beth Stuckey a Sheep or a Goat?"
-    },
-    {
-      "ep": 116,
-      "m": 1,
-      "title": "Ethnicity and the Bible"
-    },
-    {
-      "ep": 113,
-      "m": 1,
-      "title": "Bibliomancy! The Biblical Dance with the Devil?"
-    },
-    {
-      "ep": 110,
-      "m": 1,
-      "title": "Episode 110 (May 11, 2025), \"God's Swear Jar\""
-    },
-    {
-      "ep": 99,
-      "m": 1,
-      "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
-    },
-    {
-      "ep": 85,
-      "m": 1,
-      "title": "Episode 85 (November 18, 2024), \"Purify This!\" With Logan Williams"
-    },
-    {
-      "ep": 45,
-      "m": 1,
-      "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
-    },
-    {
-      "ep": 29,
-      "m": 1,
-      "title": "God's Big Fish Story"
-    },
-    {
-      "ep": 1,
-      "m": 1,
-      "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
-    }
-  ],
-  "Julius Wellhausen": [
-    {
-      "ep": 36,
-      "m": 8,
-      "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
-    },
-    {
-      "ep": 22,
-      "m": 4,
-      "title": "Episode 22 (September 4, 2023), \"Connecting with Source\""
-    },
-    {
-      "ep": 111,
-      "m": 2,
-      "title": "Episode 111 (May 19, 2025), \"Just the Tip?\""
+      "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
     }
   ],
   "Junia": [
@@ -10616,7 +10528,7 @@
   "Justin Martyr": [
     {
       "ep": 69,
-      "m": 4,
+      "m": 8,
       "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
     },
     {
@@ -10630,6 +10542,11 @@
       "title": "Episode 98 (February 17, 2025), \"Did Jesus Go to Hell?\""
     },
     {
+      "ep": 142,
+      "m": 1,
+      "title": "Not Original, Not Sin"
+    },
+    {
       "ep": 137,
       "m": 1,
       "title": "It's a Jubilee!"
@@ -10638,11 +10555,6 @@
       "ep": 70,
       "m": 1,
       "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
-    },
-    {
-      "ep": 51,
-      "m": 1,
-      "title": "Episode 51 (March 25, 2024), \"Is Religion Make-Believe?\" with Neil Van Leeuwen"
     },
     {
       "ep": 42,
@@ -10685,7 +10597,7 @@
   "King David": [
     {
       "ep": 67,
-      "m": 71,
+      "m": 83,
       "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi"
     },
     {
@@ -10714,6 +10626,11 @@
       "title": "Episode 52 (April 1, 2024), \"What is a Woman... Biblically?\""
     },
     {
+      "ep": 36,
+      "m": 12,
+      "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
+    },
+    {
       "ep": 121,
       "m": 10,
       "title": "Sister wives"
@@ -10724,14 +10641,14 @@
       "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
     },
     {
+      "ep": 40,
+      "m": 8,
+      "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
+    },
+    {
       "ep": 6,
       "m": 7,
       "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
-    },
-    {
-      "ep": 111,
-      "m": 6,
-      "title": "Episode 111 (May 19, 2025), \"Just the Tip?\""
     },
     {
       "ep": 80,
@@ -10739,9 +10656,24 @@
       "title": "Episode 80 (October 14, 2024), \"Omni Everything?\""
     },
     {
+      "ep": 13,
+      "m": 6,
+      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
+    },
+    {
+      "ep": 141,
+      "m": 5,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
+    {
       "ep": 133,
       "m": 5,
       "title": "The Adult(ery) Episode"
+    },
+    {
+      "ep": 111,
+      "m": 5,
+      "title": "Episode 111 (May 19, 2025), \"Just the Tip?\""
     },
     {
       "ep": 18,
@@ -10764,16 +10696,6 @@
       "title": "Episode 93 (January 13, 2025), \"Banning the Bible?\""
     },
     {
-      "ep": 55,
-      "m": 4,
-      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
-    },
-    {
-      "ep": 13,
-      "m": 4,
-      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
-    },
-    {
       "ep": 132,
       "m": 3,
       "title": "Peter Thiel is Bankrupt! (Theologically)"
@@ -10794,9 +10716,9 @@
       "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
     },
     {
-      "ep": 57,
+      "ep": 55,
       "m": 3,
-      "title": "Episode 57 (May 6, 2024), \"Does the Bible say the Earth is Flat?\""
+      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
     },
     {
       "ep": 155,
@@ -10817,6 +10739,11 @@
       "ep": 54,
       "m": 2,
       "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
+    },
+    {
+      "ep": 41,
+      "m": 2,
+      "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
     },
     {
       "ep": 7,
@@ -10849,14 +10776,14 @@
       "title": "Episode 110 (May 11, 2025), \"God's Swear Jar\""
     },
     {
+      "ep": 105,
+      "m": 1,
+      "title": "Episode 105 (April 7, 2025), \"Wandering in the Wilderness\" with Angela Roskop Erisman"
+    },
+    {
       "ep": 96,
       "m": 1,
       "title": "Episode 96 (February 3, 2025), \"Render Unto Caesar\" with Congressperson Eric Swalwell"
-    },
-    {
-      "ep": 88,
-      "m": 1,
-      "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\""
     },
     {
       "ep": 78,
@@ -10867,6 +10794,21 @@
       "ep": 72,
       "m": 1,
       "title": "Episode 72 (August 19, 2024), \"The Truth About Ruth\""
+    },
+    {
+      "ep": 69,
+      "m": 1,
+      "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
+    },
+    {
+      "ep": 66,
+      "m": 1,
+      "title": "Episode 66 (July 8, 2024), \"Thou Shalt Not\""
+    },
+    {
+      "ep": 56,
+      "m": 1,
+      "title": "Episode 56 (April 29, 2024), \"The Genesis of Genesis\" with David Carr"
     },
     {
       "ep": 48,
@@ -10884,19 +10826,14 @@
       "title": "Episode 37 (December 18, 2023), \"Follow That Star!\" with Aaron Adair"
     },
     {
-      "ep": 30,
-      "m": 1,
-      "title": "Christian Nationalism Ain't Christian: With Andrew Whitehead"
-    },
-    {
       "ep": 26,
       "m": 1,
       "title": "Episode 26 (October 1, 2023), \"A Jewish Paul\" with Matthew Thiessen"
     },
     {
-      "ep": 19,
+      "ep": 15,
       "m": 1,
-      "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
+      "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
     },
     {
       "ep": 10,
@@ -11148,6 +11085,16 @@
       "title": "Jesus is so Fulfilling!"
     },
     {
+      "ep": 142,
+      "m": 1,
+      "title": "Not Original, Not Sin"
+    },
+    {
+      "ep": 141,
+      "m": 1,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
+    {
       "ep": 127,
       "m": 1,
       "title": "The Indiana Jones Episode!"
@@ -11295,6 +11242,11 @@
       "title": "Episode 72 (August 19, 2024), \"The Truth About Ruth\""
     },
     {
+      "ep": 40,
+      "m": 2,
+      "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
+    },
+    {
       "ep": 155,
       "m": 1,
       "title": "The Legend of the Septuagint"
@@ -11343,7 +11295,7 @@
   "King Saul": [
     {
       "ep": 40,
-      "m": 34,
+      "m": 36,
       "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
     },
     {
@@ -11358,7 +11310,7 @@
     },
     {
       "ep": 64,
-      "m": 15,
+      "m": 23,
       "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
     },
     {
@@ -11373,7 +11325,7 @@
     },
     {
       "ep": 53,
-      "m": 5,
+      "m": 4,
       "title": "Episode 53 (April 8, 2024), \"The Holy Ghost (and Bears!)\""
     },
     {
@@ -11395,11 +11347,6 @@
       "ep": 93,
       "m": 3,
       "title": "Episode 93 (January 13, 2025), \"Banning the Bible?\""
-    },
-    {
-      "ep": 28,
-      "m": 3,
-      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
     },
     {
       "ep": 154,
@@ -11427,6 +11374,16 @@
       "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
     },
     {
+      "ep": 33,
+      "m": 2,
+      "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon"
+    },
+    {
+      "ep": 28,
+      "m": 2,
+      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
+    },
+    {
       "ep": 6,
       "m": 2,
       "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
@@ -11445,11 +11402,6 @@
       "ep": 45,
       "m": 1,
       "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
-    },
-    {
-      "ep": 33,
-      "m": 1,
-      "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon"
     }
   ],
   "King Sennacherib": [
@@ -11541,53 +11493,6 @@
       "ep": 59,
       "m": 1,
       "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
-    }
-  ],
-  "Lachish": [
-    {
-      "ep": 72,
-      "m": 12,
-      "title": "Episode 72 (August 19, 2024), \"The Truth About Ruth\""
-    },
-    {
-      "ep": 13,
-      "m": 12,
-      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
-    },
-    {
-      "ep": 3,
-      "m": 4,
-      "title": "Episode 3 (April 23, 2023), \"Why Is She Salt?\""
-    },
-    {
-      "ep": 146,
-      "m": 3,
-      "title": "Jesus is so Fulfilling!"
-    },
-    {
-      "ep": 29,
-      "m": 3,
-      "title": "God's Big Fish Story"
-    },
-    {
-      "ep": 88,
-      "m": 2,
-      "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\""
-    },
-    {
-      "ep": 156,
-      "m": 1,
-      "title": "Killing in the Name Of"
-    },
-    {
-      "ep": 118,
-      "m": 1,
-      "title": "Tucker Vs Ted: The Israel Throwdown"
-    },
-    {
-      "ep": 14,
-      "m": 1,
-      "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
     }
   ],
   "Lamech": [
@@ -11714,6 +11619,11 @@
       "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
     },
     {
+      "ep": 32,
+      "m": 1,
+      "title": "Episode 32 (November 13, 2023), \"The End is Near?\""
+    },
+    {
       "ep": 25,
       "m": 1,
       "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
@@ -11793,10 +11703,42 @@
       "title": "Episode 100 (March 3, 2025), \"Give Me Your Slave!\""
     }
   ],
+  "Letter of Aristeas": [
+    {
+      "ep": 155,
+      "m": 15,
+      "title": "The Legend of the Septuagint"
+    },
+    {
+      "ep": 100,
+      "m": 5,
+      "title": "Episode 100 (March 3, 2025), \"Give Me Your Slave!\""
+    },
+    {
+      "ep": 11,
+      "m": 2,
+      "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
+    },
+    {
+      "ep": 142,
+      "m": 1,
+      "title": "Not Original, Not Sin"
+    },
+    {
+      "ep": 130,
+      "m": 1,
+      "title": "Blessed Baruch!"
+    },
+    {
+      "ep": 39,
+      "m": 1,
+      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
+    }
+  ],
   "Lilith": [
     {
       "ep": 14,
-      "m": 24,
+      "m": 17,
       "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
     },
     {
@@ -11808,91 +11750,14 @@
       "ep": 73,
       "m": 3,
       "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
-    }
-  ],
-  "Lot": [
-    {
-      "ep": 3,
-      "m": 42,
-      "title": "Episode 3 (April 23, 2023), \"Why Is She Salt?\""
     },
     {
-      "ep": 46,
-      "m": 5,
-      "title": "Episode 46 (February 19, 2024), \"GENOCIDE!\""
-    },
-    {
-      "ep": 157,
-      "m": 4,
-      "title": "In Chains: Slaves and Angels"
-    },
-    {
-      "ep": 121,
-      "m": 4,
-      "title": "Sister wives"
-    },
-    {
-      "ep": 137,
-      "m": 3,
-      "title": "It's a Jubilee!"
-    },
-    {
-      "ep": 28,
-      "m": 3,
-      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
-    },
-    {
-      "ep": 114,
-      "m": 2,
-      "title": "Pride Month vs. the Bible!"
-    },
-    {
-      "ep": 150,
+      "ep": 84,
       "m": 1,
-      "title": "Written in the Stars!"
-    },
-    {
-      "ep": 113,
-      "m": 1,
-      "title": "Bibliomancy! The Biblical Dance with the Devil?"
-    },
-    {
-      "ep": 94,
-      "m": 1,
-      "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
-    },
-    {
-      "ep": 93,
-      "m": 1,
-      "title": "Episode 93 (January 13, 2025), \"Banning the Bible?\""
+      "title": "Episode 84 (November 11, 2024), \"The Demon Haunted Bible\""
     }
   ],
   "Luke": [
-    {
-      "ep": 69,
-      "m": 60,
-      "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
-    },
-    {
-      "ep": 12,
-      "m": 51,
-      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
-    },
-    {
-      "ep": 35,
-      "m": 23,
-      "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
-    },
-    {
-      "ep": 25,
-      "m": 17,
-      "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
-    },
-    {
-      "ep": 38,
-      "m": 15,
-      "title": "Episode 38 (December 25, 2023), \"The [Three] [Wise Men]\" With Eric Vanden Eykel"
-    },
     {
       "ep": 43,
       "m": 10,
@@ -11900,8 +11765,13 @@
     },
     {
       "ep": 145,
-      "m": 9,
+      "m": 8,
       "title": "The Holy Dunk"
+    },
+    {
+      "ep": 144,
+      "m": 8,
+      "title": "Bring Me the Head of John the Baptist!"
     },
     {
       "ep": 54,
@@ -11909,19 +11779,24 @@
       "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
     },
     {
+      "ep": 35,
+      "m": 8,
+      "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
+    },
+    {
+      "ep": 25,
+      "m": 6,
+      "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
+    },
+    {
       "ep": 100,
       "m": 5,
       "title": "Episode 100 (March 3, 2025), \"Give Me Your Slave!\""
     },
     {
-      "ep": 16,
+      "ep": 69,
       "m": 5,
-      "title": "Apostlepalooza!"
-    },
-    {
-      "ep": 144,
-      "m": 4,
-      "title": "Bring Me the Head of John the Baptist!"
+      "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
     },
     {
       "ep": 80,
@@ -11934,29 +11809,9 @@
       "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss"
     },
     {
-      "ep": 148,
-      "m": 3,
-      "title": "Unforgivable!"
-    },
-    {
       "ep": 112,
       "m": 3,
       "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
-    },
-    {
-      "ep": 48,
-      "m": 3,
-      "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond"
-    },
-    {
-      "ep": 23,
-      "m": 3,
-      "title": "Episode 23 (September 11, 2023), \"Abortion and the Bible\""
-    },
-    {
-      "ep": 11,
-      "m": 3,
-      "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
     },
     {
       "ep": 151,
@@ -11994,19 +11849,24 @@
       "title": "In Chains: Slaves and Angels"
     },
     {
+      "ep": 148,
+      "m": 1,
+      "title": "Unforgivable!"
+    },
+    {
       "ep": 146,
       "m": 1,
       "title": "Jesus is so Fulfilling!"
     },
     {
+      "ep": 141,
+      "m": 1,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
+    {
       "ep": 137,
       "m": 1,
       "title": "It's a Jubilee!"
-    },
-    {
-      "ep": 133,
-      "m": 1,
-      "title": "The Adult(ery) Episode"
     },
     {
       "ep": 132,
@@ -12019,9 +11879,9 @@
       "title": "Episode 97 (February 10, 2025), \"The Neighborhood of Make-Believe\""
     },
     {
-      "ep": 60,
+      "ep": 61,
       "m": 1,
-      "title": "Episode 60 (May 27, 2024), \"Silence, Woman!\""
+      "title": "Episode 61 (June 3, 2024), \"Christmaker!\" with James McGrath"
     },
     {
       "ep": 46,
@@ -12029,24 +11889,19 @@
       "title": "Episode 46 (February 19, 2024), \"GENOCIDE!\""
     },
     {
-      "ep": 32,
-      "m": 1,
-      "title": "Episode 32 (November 13, 2023), \"The End is Near?\""
-    },
-    {
       "ep": 19,
       "m": 1,
       "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
     },
     {
-      "ep": 18,
+      "ep": 16,
       "m": 1,
-      "title": "Episode 18 (August 7, 2023), \"The Devil Made Us Do It\""
+      "title": "Apostlepalooza!"
     },
     {
-      "ep": 17,
+      "ep": 11,
       "m": 1,
-      "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
+      "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
     },
     {
       "ep": 10,
@@ -12068,14 +11923,14 @@
   ],
   "Maccabees": [
     {
+      "ep": 112,
+      "m": 20,
+      "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
+    },
+    {
       "ep": 70,
       "m": 10,
       "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
-    },
-    {
-      "ep": 112,
-      "m": 7,
-      "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
     },
     {
       "ep": 125,
@@ -12289,6 +12144,11 @@
       "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
     },
     {
+      "ep": 140,
+      "m": 23,
+      "title": "Immaculate Apologetics?"
+    },
+    {
       "ep": 87,
       "m": 17,
       "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
@@ -12297,6 +12157,11 @@
       "ep": 50,
       "m": 14,
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
+    },
+    {
+      "ep": 141,
+      "m": 12,
+      "title": "Did Jesus Fulfill Prophesy?"
     },
     {
       "ep": 136,
@@ -12429,18 +12294,6 @@
       "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
     }
   ],
-  "Masada": [
-    {
-      "ep": 45,
-      "m": 4,
-      "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
-    },
-    {
-      "ep": 75,
-      "m": 1,
-      "title": "Episode 75 (September 9, 2024), \"Shrouded in Mystery\""
-    }
-  ],
   "Masoretic Text": [
     {
       "ep": 99,
@@ -12545,79 +12398,54 @@
   ],
   "Matthew": [
     {
-      "ep": 38,
-      "m": 45,
-      "title": "Episode 38 (December 25, 2023), \"The [Three] [Wise Men]\" With Eric Vanden Eykel"
+      "ep": 69,
+      "m": 61,
+      "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
     },
     {
       "ep": 35,
-      "m": 37,
+      "m": 22,
       "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
     },
     {
-      "ep": 15,
-      "m": 26,
-      "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
+      "ep": 57,
+      "m": 16,
+      "title": "Episode 57 (May 6, 2024), \"Does the Bible say the Earth is Flat?\""
     },
     {
       "ep": 16,
-      "m": 20,
+      "m": 14,
       "title": "Apostlepalooza!"
     },
     {
-      "ep": 25,
-      "m": 19,
-      "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
-    },
-    {
-      "ep": 12,
+      "ep": 46,
       "m": 13,
-      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
+      "title": "Episode 46 (February 19, 2024), \"GENOCIDE!\""
     },
     {
-      "ep": 43,
+      "ep": 145,
       "m": 11,
-      "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
+      "title": "The Holy Dunk"
     },
     {
-      "ep": 17,
+      "ep": 141,
       "m": 9,
-      "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
+      "title": "Did Jesus Fulfill Prophesy?"
     },
     {
       "ep": 156,
-      "m": 6,
+      "m": 5,
       "title": "Killing in the Name Of"
     },
     {
-      "ep": 37,
-      "m": 6,
-      "title": "Episode 37 (December 18, 2023), \"Follow That Star!\" with Aaron Adair"
-    },
-    {
       "ep": 99,
-      "m": 5,
+      "m": 4,
       "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
     },
     {
-      "ep": 32,
-      "m": 4,
-      "title": "Episode 32 (November 13, 2023), \"The End is Near?\""
-    },
-    {
-      "ep": 11,
-      "m": 4,
-      "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
-    },
-    {
-      "ep": 41,
+      "ep": 110,
       "m": 3,
-      "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
-    },
-    {
-      "ep": 26,
-      "m": 3,
-      "title": "Episode 26 (October 1, 2023), \"A Jewish Paul\" with Matthew Thiessen"
+      "title": "Episode 110 (May 11, 2025), \"God's Swear Jar\""
     },
     {
       "ep": 128,
@@ -12630,29 +12458,14 @@
       "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
     },
     {
-      "ep": 110,
-      "m": 2,
-      "title": "Episode 110 (May 11, 2025), \"God's Swear Jar\""
-    },
-    {
       "ep": 86,
       "m": 2,
       "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
     },
     {
-      "ep": 19,
+      "ep": 71,
       "m": 2,
-      "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
-    },
-    {
-      "ep": 10,
-      "m": 2,
-      "title": "Episode 10 (June 12, 2023): \"Adam and Steve (what the Bible says about homosexuality)\""
-    },
-    {
-      "ep": 4,
-      "m": 2,
-      "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
+      "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\""
     },
     {
       "ep": 150,
@@ -12660,14 +12473,34 @@
       "title": "Written in the Stars!"
     },
     {
+      "ep": 123,
+      "m": 1,
+      "title": "Jezebel!"
+    },
+    {
       "ep": 96,
       "m": 1,
       "title": "Episode 96 (February 3, 2025), \"Render Unto Caesar\" with Congressperson Eric Swalwell"
     },
     {
+      "ep": 61,
+      "m": 1,
+      "title": "Episode 61 (June 3, 2024), \"Christmaker!\" with James McGrath"
+    },
+    {
+      "ep": 11,
+      "m": 1,
+      "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
+    },
+    {
       "ep": 6,
       "m": 1,
       "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
+    },
+    {
+      "ep": 4,
+      "m": 1,
+      "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
     }
   ],
   "Medes": [
@@ -12680,30 +12513,13 @@
   "Median Kingdom": [
     {
       "ep": 34,
-      "m": 2,
+      "m": 6,
       "title": "Episode 34 (November 27, 2023), \"The Lion's Den\""
     },
     {
       "ep": 70,
       "m": 1,
       "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
-    }
-  ],
-  "Megiddo": [
-    {
-      "ep": 55,
-      "m": 12,
-      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
-    },
-    {
-      "ep": 127,
-      "m": 2,
-      "title": "The Indiana Jones Episode!"
-    },
-    {
-      "ep": 46,
-      "m": 2,
-      "title": "Episode 46 (February 19, 2024), \"GENOCIDE!\""
     }
   ],
   "Melchizedek": [
@@ -12795,11 +12611,6 @@
       "ep": 80,
       "m": 1,
       "title": "Episode 80 (October 14, 2024), \"Omni Everything?\""
-    },
-    {
-      "ep": 16,
-      "m": 1,
-      "title": "Apostlepalooza!"
     },
     {
       "ep": 7,
@@ -13045,16 +12856,46 @@
       "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
     }
   ],
-  "monotheism": [
+  "Monotheism": [
+    {
+      "ep": 59,
+      "m": 78,
+      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
+    },
     {
       "ep": 19,
       "m": 18,
       "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
     },
     {
+      "ep": 126,
+      "m": 7,
+      "title": "Hear, O Israel!"
+    },
+    {
+      "ep": 104,
+      "m": 6,
+      "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
+    },
+    {
+      "ep": 70,
+      "m": 5,
+      "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
+    },
+    {
       "ep": 9,
       "m": 5,
       "title": "Episode 9 (June 5, 2023), \"The Mark of the Best\""
+    },
+    {
+      "ep": 58,
+      "m": 3,
+      "title": "Episode 58 (May 13, 2024), \"Translation Frustration\""
+    },
+    {
+      "ep": 86,
+      "m": 2,
+      "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
     },
     {
       "ep": 36,
@@ -13065,6 +12906,21 @@
       "ep": 7,
       "m": 2,
       "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
+    },
+    {
+      "ep": 149,
+      "m": 1,
+      "title": "Order Up! With Jennifer Garcia Bashaw and Aaron Higashi"
+    },
+    {
+      "ep": 117,
+      "m": 1,
+      "title": "Is Allie Beth Stuckey a Sheep or a Goat?"
+    },
+    {
+      "ep": 77,
+      "m": 1,
+      "title": "Episode 77 (September 23, 2024), \"What is an Atheist?\""
     },
     {
       "ep": 42,
@@ -13085,53 +12941,6 @@
       "ep": 1,
       "m": 1,
       "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
-    }
-  ],
-  "Monotheism": [
-    {
-      "ep": 59,
-      "m": 78,
-      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
-    },
-    {
-      "ep": 126,
-      "m": 7,
-      "title": "Hear, O Israel!"
-    },
-    {
-      "ep": 104,
-      "m": 6,
-      "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
-    },
-    {
-      "ep": 70,
-      "m": 5,
-      "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
-    },
-    {
-      "ep": 58,
-      "m": 3,
-      "title": "Episode 58 (May 13, 2024), \"Translation Frustration\""
-    },
-    {
-      "ep": 86,
-      "m": 2,
-      "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
-    },
-    {
-      "ep": 149,
-      "m": 1,
-      "title": "Order Up! With Jennifer Garcia Bashaw and Aaron Higashi"
-    },
-    {
-      "ep": 117,
-      "m": 1,
-      "title": "Is Allie Beth Stuckey a Sheep or a Goat?"
-    },
-    {
-      "ep": 77,
-      "m": 1,
-      "title": "Episode 77 (September 23, 2024), \"What is an Atheist?\""
     }
   ],
   "Mordecai": [
@@ -13368,11 +13177,6 @@
       "title": "At-One-Ment"
     },
     {
-      "ep": 112,
-      "m": 2,
-      "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
-    },
-    {
       "ep": 99,
       "m": 2,
       "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
@@ -13441,6 +13245,11 @@
       "ep": 115,
       "m": 1,
       "title": "Did the Bible Steal Its Stories?"
+    },
+    {
+      "ep": 112,
+      "m": 1,
+      "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
     },
     {
       "ep": 90,
@@ -13544,18 +13353,6 @@
       "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
     }
   ],
-  "Nabonidus": [
-    {
-      "ep": 45,
-      "m": 5,
-      "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
-    },
-    {
-      "ep": 34,
-      "m": 5,
-      "title": "Episode 34 (November 27, 2023), \"The Lion's Den\""
-    }
-  ],
   "Naomi": [
     {
       "ep": 72,
@@ -13650,38 +13447,6 @@
       "ep": 92,
       "m": 1,
       "title": "Episode 92 (January 6, 2025), \"The Curses of Cain and Ham\""
-    }
-  ],
-  "Nehemiah": [
-    {
-      "ep": 78,
-      "m": 4,
-      "title": "Episode 78 (September 30, 2024), \"The Biblical View of Immigrants\""
-    },
-    {
-      "ep": 45,
-      "m": 3,
-      "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
-    },
-    {
-      "ep": 36,
-      "m": 2,
-      "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
-    },
-    {
-      "ep": 73,
-      "m": 1,
-      "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
-    },
-    {
-      "ep": 64,
-      "m": 1,
-      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
-    },
-    {
-      "ep": 8,
-      "m": 1,
-      "title": "Episode 8 (May 29, 2023), \"Contextual Healing\" with Aaron Higashi"
     }
   ],
   "Nephilim": [
@@ -13922,6 +13687,11 @@
       "title": "Literally Not Literal!"
     },
     {
+      "ep": 142,
+      "m": 1,
+      "title": "Not Original, Not Sin"
+    },
+    {
       "ep": 127,
       "m": 1,
       "title": "The Indiana Jones Episode!"
@@ -13974,13 +13744,6 @@
       "ep": 153,
       "m": 1,
       "title": "Everyone is Wrong About 2 John!"
-    }
-  ],
-  "Onesiphorus": [
-    {
-      "ep": 148,
-      "m": 9,
-      "title": "Unforgivable!"
     }
   ],
   "Origen": [
@@ -14062,6 +13825,11 @@
       "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss"
     },
     {
+      "ep": 15,
+      "m": 7,
+      "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
+    },
+    {
       "ep": 156,
       "m": 5,
       "title": "Killing in the Name Of"
@@ -14080,11 +13848,6 @@
       "ep": 119,
       "m": 1,
       "title": "Problematic Prophecy"
-    },
-    {
-      "ep": 15,
-      "m": 1,
-      "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
     }
   ],
   "Passover": [
@@ -14095,7 +13858,7 @@
     },
     {
       "ep": 5,
-      "m": 14,
+      "m": 15,
       "title": "Episode 5 (May 8, 2023), \"Betrayed by Dan Brown\""
     },
     {
@@ -14129,6 +13892,21 @@
       "title": "The Indiana Jones Episode!"
     },
     {
+      "ep": 141,
+      "m": 1,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
+    {
+      "ep": 140,
+      "m": 1,
+      "title": "Immaculate Apologetics?"
+    },
+    {
+      "ep": 112,
+      "m": 1,
+      "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
+    },
+    {
       "ep": 93,
       "m": 1,
       "title": "Episode 93 (January 13, 2025), \"Banning the Bible?\""
@@ -14152,18 +13930,8 @@
   "Paul": [
     {
       "ep": 26,
-      "m": 131,
+      "m": 129,
       "title": "Episode 26 (October 1, 2023), \"A Jewish Paul\" with Matthew Thiessen"
-    },
-    {
-      "ep": 35,
-      "m": 86,
-      "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
-    },
-    {
-      "ep": 148,
-      "m": 77,
-      "title": "Unforgivable!"
     },
     {
       "ep": 33,
@@ -14171,8 +13939,18 @@
       "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon"
     },
     {
+      "ep": 148,
+      "m": 70,
+      "title": "Unforgivable!"
+    },
+    {
+      "ep": 35,
+      "m": 58,
+      "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
+    },
+    {
       "ep": 100,
-      "m": 61,
+      "m": 53,
       "title": "Episode 100 (March 3, 2025), \"Give Me Your Slave!\""
     },
     {
@@ -14182,13 +13960,8 @@
     },
     {
       "ep": 19,
-      "m": 45,
+      "m": 43,
       "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
-    },
-    {
-      "ep": 6,
-      "m": 38,
-      "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
     },
     {
       "ep": 54,
@@ -14196,8 +13969,13 @@
       "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
     },
     {
+      "ep": 6,
+      "m": 32,
+      "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
+    },
+    {
       "ep": 89,
-      "m": 26,
+      "m": 25,
       "title": "Episode 89 (December 16, 2024), \"Spare the Rod... Please!\""
     },
     {
@@ -14206,14 +13984,14 @@
       "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
     },
     {
-      "ep": 59,
-      "m": 21,
-      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
-    },
-    {
       "ep": 44,
       "m": 21,
       "title": "Episode 44 (February 5, 2024), \"Biblical Marriage\" with Jennifer Bird"
+    },
+    {
+      "ep": 59,
+      "m": 20,
+      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
     },
     {
       "ep": 48,
@@ -14221,9 +13999,9 @@
       "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond"
     },
     {
-      "ep": 138,
-      "m": 15,
-      "title": "Who Deserves to Eat?"
+      "ep": 142,
+      "m": 14,
+      "title": "Not Original, Not Sin"
     },
     {
       "ep": 49,
@@ -14232,18 +14010,8 @@
     },
     {
       "ep": 16,
-      "m": 14,
+      "m": 13,
       "title": "Apostlepalooza!"
-    },
-    {
-      "ep": 135,
-      "m": 12,
-      "title": "Should Wives Submit?"
-    },
-    {
-      "ep": 130,
-      "m": 12,
-      "title": "Blessed Baruch!"
     },
     {
       "ep": 39,
@@ -14256,14 +14024,14 @@
       "title": "Jesus is so Fulfilling!"
     },
     {
-      "ep": 139,
+      "ep": 138,
       "m": 11,
-      "title": "Polygamy!"
+      "title": "Who Deserves to Eat?"
     },
     {
-      "ep": 123,
+      "ep": 135,
       "m": 11,
-      "title": "Jezebel!"
+      "title": "Should Wives Submit?"
     },
     {
       "ep": 107,
@@ -14271,14 +14039,19 @@
       "title": "Episode 107 (April 21, 2025), \"Immigrant Apocalypse\" with Yii-Jan Lin"
     },
     {
-      "ep": 99,
-      "m": 11,
-      "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
+      "ep": 139,
+      "m": 10,
+      "title": "Polygamy!"
     },
     {
       "ep": 60,
-      "m": 11,
+      "m": 10,
       "title": "Episode 60 (May 27, 2024), \"Silence, Woman!\""
+    },
+    {
+      "ep": 123,
+      "m": 9,
+      "title": "Jezebel!"
     },
     {
       "ep": 110,
@@ -14286,9 +14059,14 @@
       "title": "Episode 110 (May 11, 2025), \"God's Swear Jar\""
     },
     {
-      "ep": 30,
-      "m": 8,
-      "title": "Christian Nationalism Ain't Christian: With Andrew Whitehead"
+      "ep": 99,
+      "m": 9,
+      "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
+    },
+    {
+      "ep": 141,
+      "m": 7,
+      "title": "Did Jesus Fulfill Prophesy?"
     },
     {
       "ep": 122,
@@ -14301,14 +14079,9 @@
       "title": "Episode 96 (February 3, 2025), \"Render Unto Caesar\" with Congressperson Eric Swalwell"
     },
     {
-      "ep": 132,
-      "m": 6,
-      "title": "Peter Thiel is Bankrupt! (Theologically)"
-    },
-    {
-      "ep": 124,
-      "m": 6,
-      "title": "Who are the REAL Christians?"
+      "ep": 30,
+      "m": 7,
+      "title": "Christian Nationalism Ain't Christian: With Andrew Whitehead"
     },
     {
       "ep": 114,
@@ -14316,24 +14089,9 @@
       "title": "Pride Month vs. the Bible!"
     },
     {
-      "ep": 87,
-      "m": 6,
-      "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
-    },
-    {
-      "ep": 41,
-      "m": 6,
-      "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
-    },
-    {
       "ep": 31,
       "m": 6,
       "title": "Episode 31 (November 6, 2023), \"The Ten (ish) Commandments\""
-    },
-    {
-      "ep": 12,
-      "m": 6,
-      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
     },
     {
       "ep": 120,
@@ -14341,9 +14099,9 @@
       "title": "Save Me!"
     },
     {
-      "ep": 104,
+      "ep": 87,
       "m": 5,
-      "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
+      "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
     },
     {
       "ep": 80,
@@ -14356,19 +14114,39 @@
       "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\""
     },
     {
+      "ep": 41,
+      "m": 5,
+      "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
+    },
+    {
       "ep": 133,
       "m": 4,
       "title": "The Adult(ery) Episode"
     },
     {
-      "ep": 94,
+      "ep": 132,
       "m": 4,
-      "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
+      "title": "Peter Thiel is Bankrupt! (Theologically)"
+    },
+    {
+      "ep": 124,
+      "m": 4,
+      "title": "Who are the REAL Christians?"
+    },
+    {
+      "ep": 104,
+      "m": 4,
+      "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
     },
     {
       "ep": 32,
       "m": 4,
       "title": "Episode 32 (November 13, 2023), \"The End is Near?\""
+    },
+    {
+      "ep": 12,
+      "m": 4,
+      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
     },
     {
       "ep": 126,
@@ -14386,11 +14164,6 @@
       "title": "Killing in the Name Of"
     },
     {
-      "ep": 151,
-      "m": 2,
-      "title": "What Is The Bible?"
-    },
-    {
       "ep": 150,
       "m": 2,
       "title": "Written in the Stars!"
@@ -14404,6 +14177,11 @@
       "ep": 136,
       "m": 2,
       "title": "Close Encounters of the Catholic Kind"
+    },
+    {
+      "ep": 130,
+      "m": 2,
+      "title": "Blessed Baruch!"
     },
     {
       "ep": 128,
@@ -14426,19 +14204,14 @@
       "title": "Episode 106 (April 14, 2025), \"Usurer Error\""
     },
     {
-      "ep": 101,
+      "ep": 94,
       "m": 2,
-      "title": "Episode 101 (March 10, 2025), \"The Slave Bible\""
+      "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
     },
     {
       "ep": 76,
       "m": 2,
       "title": "Episode 76 S(September 16, 2024), \"Pay Your Tithing!\""
-    },
-    {
-      "ep": 52,
-      "m": 2,
-      "title": "Episode 52 (April 1, 2024), \"What is a Woman... Biblically?\""
     },
     {
       "ep": 50,
@@ -14466,6 +14239,11 @@
       "title": "Everyone is Wrong About 2 John!"
     },
     {
+      "ep": 151,
+      "m": 1,
+      "title": "What Is The Bible?"
+    },
+    {
       "ep": 147,
       "m": 1,
       "title": "Hiding God"
@@ -14474,6 +14252,11 @@
       "ep": 144,
       "m": 1,
       "title": "Bring Me the Head of John the Baptist!"
+    },
+    {
+      "ep": 140,
+      "m": 1,
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 137,
@@ -14486,14 +14269,14 @@
       "title": "Don't Get Cross With Me"
     },
     {
-      "ep": 125,
-      "m": 1,
-      "title": "Holy Sex Work?"
-    },
-    {
       "ep": 116,
       "m": 1,
       "title": "Ethnicity and the Bible"
+    },
+    {
+      "ep": 101,
+      "m": 1,
+      "title": "Episode 101 (March 10, 2025), \"The Slave Bible\""
     },
     {
       "ep": 91,
@@ -14516,11 +14299,6 @@
       "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
     },
     {
-      "ep": 72,
-      "m": 1,
-      "title": "Episode 72 (August 19, 2024), \"The Truth About Ruth\""
-    },
-    {
       "ep": 70,
       "m": 1,
       "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
@@ -14536,29 +14314,14 @@
       "title": "Episode 57 (May 6, 2024), \"Does the Bible say the Earth is Flat?\""
     },
     {
-      "ep": 37,
+      "ep": 52,
       "m": 1,
-      "title": "Episode 37 (December 18, 2023), \"Follow That Star!\" with Aaron Adair"
-    },
-    {
-      "ep": 23,
-      "m": 1,
-      "title": "Episode 23 (September 11, 2023), \"Abortion and the Bible\""
+      "title": "Episode 52 (April 1, 2024), \"What is a Woman... Biblically?\""
     },
     {
       "ep": 17,
       "m": 1,
       "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
-    },
-    {
-      "ep": 8,
-      "m": 1,
-      "title": "Episode 8 (May 29, 2023), \"Contextual Healing\" with Aaron Higashi"
-    },
-    {
-      "ep": 5,
-      "m": 1,
-      "title": "Episode 5 (May 8, 2023), \"Betrayed by Dan Brown\""
     },
     {
       "ep": 4,
@@ -14653,7 +14416,7 @@
     },
     {
       "ep": 69,
-      "m": 38,
+      "m": 39,
       "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
     },
     {
@@ -14747,6 +14510,11 @@
       "title": "Episode 84 (November 11, 2024), \"The Demon Haunted Bible\""
     },
     {
+      "ep": 52,
+      "m": 3,
+      "title": "Episode 52 (April 1, 2024), \"What is a Woman... Biblically?\""
+    },
+    {
       "ep": 48,
       "m": 3,
       "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond"
@@ -14785,6 +14553,11 @@
       "ep": 13,
       "m": 2,
       "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
+    },
+    {
+      "ep": 141,
+      "m": 1,
+      "title": "Did Jesus Fulfill Prophesy?"
     },
     {
       "ep": 136,
@@ -14842,11 +14615,6 @@
       "title": "Episode 72 (August 19, 2024), \"The Truth About Ruth\""
     },
     {
-      "ep": 52,
-      "m": 1,
-      "title": "Episode 52 (April 1, 2024), \"What is a Woman... Biblically?\""
-    },
-    {
       "ep": 50,
       "m": 1,
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
@@ -14887,6 +14655,21 @@
       "ep": 143,
       "m": 8,
       "title": "Shiny Happy People!"
+    },
+    {
+      "ep": 16,
+      "m": 7,
+      "title": "Apostlepalooza!"
+    },
+    {
+      "ep": 156,
+      "m": 4,
+      "title": "Killing in the Name Of"
+    },
+    {
+      "ep": 149,
+      "m": 2,
+      "title": "Order Up! With Jennifer Garcia Bashaw and Aaron Higashi"
     }
   ],
   "Philistines": [
@@ -14912,7 +14695,7 @@
     },
     {
       "ep": 64,
-      "m": 9,
+      "m": 12,
       "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
     },
     {
@@ -15048,6 +14831,11 @@
       "title": "Episode 26 (October 1, 2023), \"A Jewish Paul\" with Matthew Thiessen"
     },
     {
+      "ep": 140,
+      "m": 1,
+      "title": "Immaculate Apologetics?"
+    },
+    {
       "ep": 134,
       "m": 1,
       "title": "Don't Get Cross With Me"
@@ -15085,6 +14873,11 @@
       "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss"
     },
     {
+      "ep": 140,
+      "m": 1,
+      "title": "Immaculate Apologetics?"
+    },
+    {
       "ep": 48,
       "m": 1,
       "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond"
@@ -15107,6 +14900,11 @@
       "ep": 50,
       "m": 15,
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
+    },
+    {
+      "ep": 140,
+      "m": 4,
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 55,
@@ -15245,6 +15043,11 @@
       "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
     },
     {
+      "ep": 140,
+      "m": 1,
+      "title": "Immaculate Apologetics?"
+    },
+    {
       "ep": 133,
       "m": 1,
       "title": "The Adult(ery) Episode"
@@ -15293,11 +15096,6 @@
       "ep": 39,
       "m": 1,
       "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
-    },
-    {
-      "ep": 31,
-      "m": 1,
-      "title": "Episode 31 (November 6, 2023), \"The Ten (ish) Commandments\""
     },
     {
       "ep": 17,
@@ -15377,7 +15175,7 @@
   "Purim": [
     {
       "ep": 147,
-      "m": 9,
+      "m": 8,
       "title": "Hiding God"
     },
     {
@@ -15527,6 +15325,16 @@
       "title": "Episode 63 (June 17, 2024), \"Wrastlin’ With God\""
     },
     {
+      "ep": 155,
+      "m": 2,
+      "title": "The Legend of the Septuagint"
+    },
+    {
+      "ep": 141,
+      "m": 1,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
+    {
       "ep": 133,
       "m": 1,
       "title": "The Adult(ery) Episode"
@@ -15540,28 +15348,6 @@
       "ep": 67,
       "m": 1,
       "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi"
-    }
-  ],
-  "Raphael": [
-    {
-      "ep": 157,
-      "m": 8,
-      "title": "In Chains: Slaves and Angels"
-    },
-    {
-      "ep": 98,
-      "m": 3,
-      "title": "Episode 98 (February 17, 2025), \"Did Jesus Go to Hell?\""
-    },
-    {
-      "ep": 62,
-      "m": 1,
-      "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
-    },
-    {
-      "ep": 28,
-      "m": 1,
-      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
     }
   ],
   "Rapture": [
@@ -15624,7 +15410,7 @@
   "Rebekah": [
     {
       "ep": 121,
-      "m": 4,
+      "m": 3,
       "title": "Sister wives"
     },
     {
@@ -15670,13 +15456,6 @@
       "ep": 64,
       "m": 1,
       "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
-    }
-  ],
-  "Reuben": [
-    {
-      "ep": 74,
-      "m": 12,
-      "title": "Episode 74: The Fabric Conspiracies"
     }
   ],
   "Rezin": [
@@ -15745,6 +15524,11 @@
       "title": "Apostlepalooza!"
     },
     {
+      "ep": 142,
+      "m": 4,
+      "title": "Not Original, Not Sin"
+    },
+    {
       "ep": 23,
       "m": 4,
       "title": "Episode 23 (September 11, 2023), \"Abortion and the Bible\""
@@ -15753,6 +15537,16 @@
       "ep": 6,
       "m": 4,
       "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
+    },
+    {
+      "ep": 141,
+      "m": 3,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
+    {
+      "ep": 140,
+      "m": 3,
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 52,
@@ -15918,7 +15712,7 @@
   "Saint Titus": [
     {
       "ep": 35,
-      "m": 6,
+      "m": 7,
       "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
     },
     {
@@ -15930,6 +15724,11 @@
       "ep": 6,
       "m": 2,
       "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
+    },
+    {
+      "ep": 142,
+      "m": 1,
+      "title": "Not Original, Not Sin"
     },
     {
       "ep": 138,
@@ -16039,7 +15838,7 @@
   "Samson": [
     {
       "ep": 63,
-      "m": 20,
+      "m": 21,
       "title": "Episode 63 (June 17, 2024), \"Wrastlin’ With God\""
     },
     {
@@ -16091,17 +15890,17 @@
   "Samuel": [
     {
       "ep": 40,
-      "m": 27,
+      "m": 26,
       "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
     },
     {
       "ep": 156,
-      "m": 23,
+      "m": 22,
       "title": "Killing in the Name Of"
     },
     {
       "ep": 67,
-      "m": 10,
+      "m": 8,
       "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi"
     },
     {
@@ -16110,14 +15909,19 @@
       "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
     },
     {
-      "ep": 45,
+      "ep": 88,
       "m": 5,
-      "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
+      "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\""
     },
     {
-      "ep": 18,
+      "ep": 102,
       "m": 4,
-      "title": "Episode 18 (August 7, 2023), \"The Devil Made Us Do It\""
+      "title": "Episode 102 (March 17, 2025), \"The Dave Ramsey Takedown\""
+    },
+    {
+      "ep": 127,
+      "m": 3,
+      "title": "The Indiana Jones Episode!"
     },
     {
       "ep": 121,
@@ -16155,9 +15959,14 @@
       "title": "The Adult(ery) Episode"
     },
     {
-      "ep": 127,
+      "ep": 65,
       "m": 2,
-      "title": "The Indiana Jones Episode!"
+      "title": "Episode 65 (July 1, 2024), \"I Got Soul, and I'm Super Bad\""
+    },
+    {
+      "ep": 61,
+      "m": 2,
+      "title": "Episode 61 (June 3, 2024), \"Christmaker!\" with James McGrath"
     },
     {
       "ep": 53,
@@ -16205,11 +16014,6 @@
       "title": "Jezebel!"
     },
     {
-      "ep": 116,
-      "m": 1,
-      "title": "Ethnicity and the Bible"
-    },
-    {
       "ep": 101,
       "m": 1,
       "title": "Episode 101 (March 10, 2025), \"The Slave Bible\""
@@ -16218,16 +16022,6 @@
       "ep": 84,
       "m": 1,
       "title": "Episode 84 (November 11, 2024), \"The Demon Haunted Bible\""
-    },
-    {
-      "ep": 73,
-      "m": 1,
-      "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
-    },
-    {
-      "ep": 61,
-      "m": 1,
-      "title": "Episode 61 (June 3, 2024), \"Christmaker!\" with James McGrath"
     },
     {
       "ep": 46,
@@ -16240,14 +16034,9 @@
       "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
     },
     {
-      "ep": 14,
+      "ep": 18,
       "m": 1,
-      "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
-    },
-    {
-      "ep": 13,
-      "m": 1,
-      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
+      "title": "Episode 18 (August 7, 2023), \"The Devil Made Us Do It\""
     },
     {
       "ep": 3,
@@ -16297,13 +16086,8 @@
     },
     {
       "ep": 121,
-      "m": 10,
+      "m": 19,
       "title": "Sister wives"
-    },
-    {
-      "ep": 14,
-      "m": 4,
-      "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
     },
     {
       "ep": 3,
@@ -16316,11 +16100,6 @@
       "title": "Episode 108 (April 28, 2025), \"Biblical\" Marriage"
     },
     {
-      "ep": 40,
-      "m": 1,
-      "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
-    },
-    {
       "ep": 28,
       "m": 1,
       "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
@@ -16329,16 +16108,6 @@
       "ep": 19,
       "m": 1,
       "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
-    },
-    {
-      "ep": 16,
-      "m": 1,
-      "title": "Apostlepalooza!"
-    },
-    {
-      "ep": 11,
-      "m": 1,
-      "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
     }
   ],
   "Satan": [
@@ -16364,8 +16133,13 @@
     },
     {
       "ep": 33,
-      "m": 10,
+      "m": 11,
       "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon"
+    },
+    {
+      "ep": 91,
+      "m": 9,
+      "title": "Episode 91 (December 30, 2024), \"Star Spangled Christian Nationalism\" With April Ajoy"
     },
     {
       "ep": 28,
@@ -16376,11 +16150,6 @@
       "ep": 1,
       "m": 7,
       "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
-    },
-    {
-      "ep": 91,
-      "m": 6,
-      "title": "Episode 91 (December 30, 2024), \"Star Spangled Christian Nationalism\" With April Ajoy"
     },
     {
       "ep": 94,
@@ -16396,6 +16165,11 @@
       "ep": 39,
       "m": 5,
       "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
+    },
+    {
+      "ep": 142,
+      "m": 4,
+      "title": "Not Original, Not Sin"
     },
     {
       "ep": 125,
@@ -16448,6 +16222,11 @@
       "title": "Episode 90 (December 23, 2024), \"With Counter-Apologies\""
     },
     {
+      "ep": 66,
+      "m": 2,
+      "title": "Episode 66 (July 8, 2024), \"Thou Shalt Not\""
+    },
+    {
       "ep": 50,
       "m": 2,
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
@@ -16498,6 +16277,11 @@
       "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
     },
     {
+      "ep": 96,
+      "m": 1,
+      "title": "Episode 96 (February 3, 2025), \"Render Unto Caesar\" with Congressperson Eric Swalwell"
+    },
+    {
       "ep": 76,
       "m": 1,
       "title": "Episode 76 S(September 16, 2024), \"Pay Your Tithing!\""
@@ -16513,14 +16297,14 @@
       "title": "Episode 68 (July 22, 2024), \"Take My Wife... Please!\""
     },
     {
-      "ep": 66,
-      "m": 1,
-      "title": "Episode 66 (July 8, 2024), \"Thou Shalt Not\""
-    },
-    {
       "ep": 54,
       "m": 1,
       "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
+    },
+    {
+      "ep": 41,
+      "m": 1,
+      "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
     },
     {
       "ep": 37,
@@ -16638,6 +16422,38 @@
       "ep": 13,
       "m": 1,
       "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
+    }
+  ],
+  "Second Maccabees": [
+    {
+      "ep": 70,
+      "m": 9,
+      "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
+    },
+    {
+      "ep": 112,
+      "m": 8,
+      "title": "Episode 112 (May 26, 2025), \"Wash Your Own Feet!\""
+    },
+    {
+      "ep": 20,
+      "m": 3,
+      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
+    },
+    {
+      "ep": 123,
+      "m": 1,
+      "title": "Jezebel!"
+    },
+    {
+      "ep": 55,
+      "m": 1,
+      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
+    },
+    {
+      "ep": 50,
+      "m": 1,
+      "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
     }
   ],
   "Second Temple period": [
@@ -16779,6 +16595,11 @@
       "title": "What Is The Bible?"
     },
     {
+      "ep": 141,
+      "m": 7,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
+    {
       "ep": 87,
       "m": 6,
       "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
@@ -16887,6 +16708,16 @@
       "ep": 147,
       "m": 1,
       "title": "Hiding God"
+    },
+    {
+      "ep": 142,
+      "m": 1,
+      "title": "Not Original, Not Sin"
+    },
+    {
+      "ep": 140,
+      "m": 1,
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 139,
@@ -17011,11 +16842,6 @@
       "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
     },
     {
-      "ep": 22,
-      "m": 3,
-      "title": "Episode 22 (September 4, 2023), \"Connecting with Source\""
-    },
-    {
       "ep": 124,
       "m": 2,
       "title": "Who are the REAL Christians?"
@@ -17034,17 +16860,12 @@
       "ep": 28,
       "m": 1,
       "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
-    },
-    {
-      "ep": 27,
-      "m": 1,
-      "title": "Episode 27 (October 9), \"Where Angels Fear to Swim\""
     }
   ],
   "Shelah": [
     {
       "ep": 68,
-      "m": 8,
+      "m": 9,
       "title": "Episode 68 (July 22, 2024), \"Take My Wife... Please!\""
     }
   ],
@@ -17129,6 +16950,18 @@
       "title": "Polygamy!"
     }
   ],
+  "Shroud of Turin": [
+    {
+      "ep": 75,
+      "m": 31,
+      "title": "Episode 75 (September 9, 2024), \"Shrouded in Mystery\""
+    },
+    {
+      "ep": 140,
+      "m": 8,
+      "title": "Immaculate Apologetics?"
+    }
+  ],
   "Silas": [
     {
       "ep": 54,
@@ -17146,23 +16979,6 @@
       "ep": 58,
       "m": 4,
       "title": "Episode 58 (May 13, 2024), \"Translation Frustration\""
-    }
-  ],
-  "Sisera": [
-    {
-      "ep": 64,
-      "m": 18,
-      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
-    },
-    {
-      "ep": 88,
-      "m": 2,
-      "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\""
-    },
-    {
-      "ep": 19,
-      "m": 2,
-      "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
     }
   ],
   "Sodom": [
@@ -17430,7 +17246,7 @@
   "Susanna": [
     {
       "ep": 92,
-      "m": 9,
+      "m": 10,
       "title": "Episode 92 (January 6, 2025), \"The Curses of Cain and Ham\""
     },
     {
@@ -17440,6 +17256,11 @@
     }
   ],
   "Syria": [
+    {
+      "ep": 141,
+      "m": 5,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
     {
       "ep": 87,
       "m": 3,
@@ -17741,6 +17562,11 @@
   ],
   "Terah": [
     {
+      "ep": 150,
+      "m": 9,
+      "title": "Written in the Stars!"
+    },
+    {
       "ep": 121,
       "m": 2,
       "title": "Sister wives"
@@ -17808,13 +17634,6 @@
       "ep": 50,
       "m": 1,
       "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
-    }
-  ],
-  "Testimonium Flavianum": [
-    {
-      "ep": 86,
-      "m": 6,
-      "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
     }
   ],
   "Textus Receptus": [
@@ -17887,7 +17706,7 @@
     },
     {
       "ep": 156,
-      "m": 2,
+      "m": 1,
       "title": "Killing in the Name Of"
     }
   ],
@@ -17966,23 +17785,6 @@
       "ep": 4,
       "m": 1,
       "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
-    }
-  ],
-  "Thecla": [
-    {
-      "ep": 148,
-      "m": 34,
-      "title": "Unforgivable!"
-    },
-    {
-      "ep": 156,
-      "m": 1,
-      "title": "Killing in the Name Of"
-    },
-    {
-      "ep": 33,
-      "m": 1,
-      "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon"
     }
   ],
   "theophany": [
@@ -18284,13 +18086,6 @@
       "title": "Episode 2 (April 17, 2023), \"God's Wife\" with Prof. Francesca Stavrakopoulou"
     }
   ],
-  "Turin": [
-    {
-      "ep": 75,
-      "m": 10,
-      "title": "Episode 75 (September 9, 2024), \"Shrouded in Mystery\""
-    }
-  ],
   "Ugarit": [
     {
       "ep": 115,
@@ -18418,6 +18213,11 @@
       "ep": 144,
       "m": 4,
       "title": "Bring Me the Head of John the Baptist!"
+    },
+    {
+      "ep": 140,
+      "m": 3,
+      "title": "Immaculate Apologetics?"
     },
     {
       "ep": 29,
@@ -18590,48 +18390,26 @@
       "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
     }
   ],
-  "Uriel": [
-    {
-      "ep": 157,
-      "m": 5,
-      "title": "In Chains: Slaves and Angels"
-    },
-    {
-      "ep": 98,
-      "m": 1,
-      "title": "Episode 98 (February 17, 2025), \"Did Jesus Go to Hell?\""
-    },
-    {
-      "ep": 84,
-      "m": 1,
-      "title": "Episode 84 (November 11, 2024), \"The Demon Haunted Bible\""
-    },
-    {
-      "ep": 62,
-      "m": 1,
-      "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
-    },
-    {
-      "ep": 28,
-      "m": 1,
-      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
-    }
-  ],
   "Virgin Birth": [
+    {
+      "ep": 141,
+      "m": 3,
+      "title": "Did Jesus Fulfill Prophesy?"
+    },
     {
       "ep": 37,
       "m": 2,
       "title": "Episode 37 (December 18, 2023), \"Follow That Star!\" with Aaron Adair"
     },
     {
-      "ep": 5,
-      "m": 2,
-      "title": "Episode 5 (May 8, 2023), \"Betrayed by Dan Brown\""
-    },
-    {
       "ep": 69,
       "m": 1,
       "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
+    },
+    {
+      "ep": 5,
+      "m": 1,
+      "title": "Episode 5 (May 8, 2023), \"Betrayed by Dan Brown\""
     }
   ],
   "William Tyndale": [
@@ -18686,12 +18464,12 @@
   "YHWH": [
     {
       "ep": 1,
-      "m": 65,
+      "m": 61,
       "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
     },
     {
       "ep": 7,
-      "m": 62,
+      "m": 54,
       "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
     },
     {
@@ -18701,63 +18479,18 @@
     },
     {
       "ep": 66,
-      "m": 31,
+      "m": 22,
       "title": "Episode 66 (July 8, 2024), \"Thou Shalt Not\""
     },
     {
-      "ep": 18,
-      "m": 30,
-      "title": "Episode 18 (August 7, 2023), \"The Devil Made Us Do It\""
-    },
-    {
-      "ep": 29,
-      "m": 26,
-      "title": "God's Big Fish Story"
-    },
-    {
       "ep": 2,
-      "m": 24,
+      "m": 22,
       "title": "Episode 2 (April 17, 2023), \"God's Wife\" with Prof. Francesca Stavrakopoulou"
-    },
-    {
-      "ep": 31,
-      "m": 21,
-      "title": "Episode 31 (November 6, 2023), \"The Ten (ish) Commandments\""
-    },
-    {
-      "ep": 46,
-      "m": 20,
-      "title": "Episode 46 (February 19, 2024), \"GENOCIDE!\""
     },
     {
       "ep": 115,
       "m": 17,
       "title": "Did the Bible Steal Its Stories?"
-    },
-    {
-      "ep": 3,
-      "m": 17,
-      "title": "Episode 3 (April 23, 2023), \"Why Is She Salt?\""
-    },
-    {
-      "ep": 64,
-      "m": 16,
-      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
-    },
-    {
-      "ep": 28,
-      "m": 16,
-      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
-    },
-    {
-      "ep": 75,
-      "m": 15,
-      "title": "Episode 75 (September 9, 2024), \"Shrouded in Mystery\""
-    },
-    {
-      "ep": 73,
-      "m": 15,
-      "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
     },
     {
       "ep": 127,
@@ -18770,6 +18503,16 @@
       "title": "Episode 111 (May 19, 2025), \"Just the Tip?\""
     },
     {
+      "ep": 31,
+      "m": 13,
+      "title": "Episode 31 (November 6, 2023), \"The Ten (ish) Commandments\""
+    },
+    {
+      "ep": 28,
+      "m": 13,
+      "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
+    },
+    {
       "ep": 117,
       "m": 12,
       "title": "Is Allie Beth Stuckey a Sheep or a Goat?"
@@ -18780,24 +18523,19 @@
       "title": "Bibliomancy! The Biblical Dance with the Devil?"
     },
     {
-      "ep": 14,
+      "ep": 73,
       "m": 12,
+      "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
+    },
+    {
+      "ep": 18,
+      "m": 11,
+      "title": "Episode 18 (August 7, 2023), \"The Devil Made Us Do It\""
+    },
+    {
+      "ep": 14,
+      "m": 11,
       "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
-    },
-    {
-      "ep": 81,
-      "m": 11,
-      "title": "Episode 81 (October 21, 2024), \"You're Speaking My Language!\""
-    },
-    {
-      "ep": 40,
-      "m": 11,
-      "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
-    },
-    {
-      "ep": 39,
-      "m": 11,
-      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
     },
     {
       "ep": 121,
@@ -18810,39 +18548,14 @@
       "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\""
     },
     {
-      "ep": 69,
-      "m": 10,
-      "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
-    },
-    {
-      "ep": 54,
-      "m": 10,
-      "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
-    },
-    {
       "ep": 90,
       "m": 9,
       "title": "Episode 90 (December 23, 2024), \"With Counter-Apologies\""
     },
     {
-      "ep": 80,
+      "ep": 75,
       "m": 9,
-      "title": "Episode 80 (October 14, 2024), \"Omni Everything?\""
-    },
-    {
-      "ep": 71,
-      "m": 9,
-      "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\""
-    },
-    {
-      "ep": 60,
-      "m": 9,
-      "title": "Episode 60 (May 27, 2024), \"Silence, Woman!\""
-    },
-    {
-      "ep": 25,
-      "m": 9,
-      "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
+      "title": "Episode 75 (September 9, 2024), \"Shrouded in Mystery\""
     },
     {
       "ep": 124,
@@ -18850,14 +18563,14 @@
       "title": "Who are the REAL Christians?"
     },
     {
-      "ep": 62,
+      "ep": 81,
       "m": 8,
-      "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
+      "title": "Episode 81 (October 21, 2024), \"You're Speaking My Language!\""
     },
     {
-      "ep": 13,
+      "ep": 29,
       "m": 8,
-      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
+      "title": "God's Big Fish Story"
     },
     {
       "ep": 150,
@@ -18870,44 +18583,19 @@
       "title": "Tucker Vs Ted: The Israel Throwdown"
     },
     {
-      "ep": 72,
+      "ep": 25,
       "m": 7,
-      "title": "Episode 72 (August 19, 2024), \"The Truth About Ruth\""
+      "title": "Episode 25 (September 24, 2023), \"A Beatitude Adjustment for Jordan Peterson\""
     },
     {
-      "ep": 55,
-      "m": 7,
-      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
-    },
-    {
-      "ep": 42,
-      "m": 7,
-      "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\""
+      "ep": 64,
+      "m": 6,
+      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
     },
     {
       "ep": 36,
-      "m": 7,
+      "m": 6,
       "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
-    },
-    {
-      "ep": 27,
-      "m": 7,
-      "title": "Episode 27 (October 9), \"Where Angels Fear to Swim\""
-    },
-    {
-      "ep": 15,
-      "m": 7,
-      "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
-    },
-    {
-      "ep": 76,
-      "m": 6,
-      "title": "Episode 76 S(September 16, 2024), \"Pay Your Tithing!\""
-    },
-    {
-      "ep": 34,
-      "m": 6,
-      "title": "Episode 34 (November 27, 2023), \"The Lion's Den\""
     },
     {
       "ep": 22,
@@ -18925,24 +18613,14 @@
       "title": "Biblical Sex Toys?!?"
     },
     {
-      "ep": 63,
-      "m": 5,
-      "title": "Episode 63 (June 17, 2024), \"Wrastlin’ With God\""
-    },
-    {
       "ep": 19,
       "m": 5,
       "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
     },
     {
-      "ep": 17,
+      "ep": 13,
       "m": 5,
-      "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
-    },
-    {
-      "ep": 11,
-      "m": 5,
-      "title": "Episode 11 (June 19, 2023), \"Will the Best Bible Please Stand Up?\""
+      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
     },
     {
       "ep": 154,
@@ -18955,9 +18633,9 @@
       "title": "Save Me!"
     },
     {
-      "ep": 70,
+      "ep": 72,
       "m": 4,
-      "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
+      "title": "Episode 72 (August 19, 2024), \"The Truth About Ruth\""
     },
     {
       "ep": 59,
@@ -18965,29 +18643,14 @@
       "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
     },
     {
-      "ep": 58,
+      "ep": 42,
       "m": 4,
-      "title": "Episode 58 (May 13, 2024), \"Translation Frustration\""
+      "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\""
     },
     {
-      "ep": 53,
+      "ep": 40,
       "m": 4,
-      "title": "Episode 53 (April 8, 2024), \"The Holy Ghost (and Bears!)\""
-    },
-    {
-      "ep": 41,
-      "m": 4,
-      "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
-    },
-    {
-      "ep": 33,
-      "m": 4,
-      "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon"
-    },
-    {
-      "ep": 32,
-      "m": 4,
-      "title": "Episode 32 (November 13, 2023), \"The End is Near?\""
+      "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
     },
     {
       "ep": 155,
@@ -19005,34 +18668,14 @@
       "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
     },
     {
-      "ep": 68,
+      "ep": 46,
       "m": 3,
-      "title": "Episode 68 (July 22, 2024), \"Take My Wife... Please!\""
-    },
-    {
-      "ep": 65,
-      "m": 3,
-      "title": "Episode 65 (July 1, 2024), \"I Got Soul, and I'm Super Bad\""
+      "title": "Episode 46 (February 19, 2024), \"GENOCIDE!\""
     },
     {
       "ep": 45,
       "m": 3,
       "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
-    },
-    {
-      "ep": 43,
-      "m": 3,
-      "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
-    },
-    {
-      "ep": 35,
-      "m": 3,
-      "title": "Episode 35 (December 4, 2023), \"Who ACTUALLY Wrote the New Testament?\""
-    },
-    {
-      "ep": 21,
-      "m": 3,
-      "title": "Episode 21 (August 28, 2023), \"Did the Exodus Really Happen?\""
     },
     {
       "ep": 152,
@@ -19080,24 +18723,34 @@
       "title": "Episode 85 (November 18, 2024), \"Purify This!\" With Logan Williams"
     },
     {
-      "ep": 74,
+      "ep": 71,
       "m": 2,
-      "title": "Episode 74: The Fabric Conspiracies"
+      "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\""
     },
     {
-      "ep": 57,
+      "ep": 62,
       "m": 2,
-      "title": "Episode 57 (May 6, 2024), \"Does the Bible say the Earth is Flat?\""
+      "title": "Episode 62 (June 10, 2024), \"The Book of Enoch\""
     },
     {
-      "ep": 52,
+      "ep": 27,
       "m": 2,
-      "title": "Episode 52 (April 1, 2024), \"What is a Woman... Biblically?\""
+      "title": "Episode 27 (October 9), \"Where Angels Fear to Swim\""
+    },
+    {
+      "ep": 21,
+      "m": 2,
+      "title": "Episode 21 (August 28, 2023), \"Did the Exodus Really Happen?\""
     },
     {
       "ep": 16,
       "m": 2,
       "title": "Apostlepalooza!"
+    },
+    {
+      "ep": 3,
+      "m": 2,
+      "title": "Episode 3 (April 23, 2023), \"Why Is She Salt?\""
     },
     {
       "ep": 139,
@@ -19125,9 +18778,49 @@
       "title": "Episode 95 (January 27, 2025), \"Uh-Oh, Jericho\""
     },
     {
-      "ep": 82,
+      "ep": 76,
       "m": 1,
-      "title": "Episode 82 (October 27, 2024), \"Deconstruction Zone\" with Rev Karla Kamstra"
+      "title": "Episode 76 S(September 16, 2024), \"Pay Your Tithing!\""
+    },
+    {
+      "ep": 74,
+      "m": 1,
+      "title": "Episode 74: The Fabric Conspiracies"
+    },
+    {
+      "ep": 68,
+      "m": 1,
+      "title": "Episode 68 (July 22, 2024), \"Take My Wife... Please!\""
+    },
+    {
+      "ep": 65,
+      "m": 1,
+      "title": "Episode 65 (July 1, 2024), \"I Got Soul, and I'm Super Bad\""
+    },
+    {
+      "ep": 60,
+      "m": 1,
+      "title": "Episode 60 (May 27, 2024), \"Silence, Woman!\""
+    },
+    {
+      "ep": 57,
+      "m": 1,
+      "title": "Episode 57 (May 6, 2024), \"Does the Bible say the Earth is Flat?\""
+    },
+    {
+      "ep": 55,
+      "m": 1,
+      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
+    },
+    {
+      "ep": 54,
+      "m": 1,
+      "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
+    },
+    {
+      "ep": 53,
+      "m": 1,
+      "title": "Episode 53 (April 8, 2024), \"The Holy Ghost (and Bears!)\""
     },
     {
       "ep": 44,
@@ -19135,19 +18828,24 @@
       "title": "Episode 44 (February 5, 2024), \"Biblical Marriage\" with Jennifer Bird"
     },
     {
+      "ep": 41,
+      "m": 1,
+      "title": "Episode 41 (January 15, 2024), \"Modest is Hottest?\""
+    },
+    {
+      "ep": 39,
+      "m": 1,
+      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
+    },
+    {
       "ep": 30,
       "m": 1,
       "title": "Christian Nationalism Ain't Christian: With Andrew Whitehead"
     },
     {
-      "ep": 20,
+      "ep": 15,
       "m": 1,
-      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
-    },
-    {
-      "ep": 4,
-      "m": 1,
-      "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
+      "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
     }
   ],
   "Ziklag": [
@@ -19155,18 +18853,6 @@
       "ep": 156,
       "m": 3,
       "title": "Killing in the Name Of"
-    }
-  ],
-  "Zipporah": [
-    {
-      "ep": 111,
-      "m": 4,
-      "title": "Episode 111 (May 19, 2025), \"Just the Tip?\""
-    },
-    {
-      "ep": 67,
-      "m": 1,
-      "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi"
     }
   ]
 }
