@@ -1,9 +1,6 @@
 .episode-page {
   display: grid;
-  gap: var(--space-2xl);
-}
-
-.episode-page.container--wide {
+  gap: var(--space-xl);
   max-width: none;
 }
 
