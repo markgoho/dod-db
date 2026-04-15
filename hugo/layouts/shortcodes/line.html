@@ -41,7 +41,7 @@
     <span class="speaker-name" data-speaker="{{ $speakerSlug }}"
       >{{ $speaker }}</span
     >
-    <span class="timestamp" data-seconds="{{ $totalSeconds }}"
+    <span class="timestamp" data-seconds="{{ $totalSeconds }}" data-pagefind-ignore
       >{{ $hours }}:{{ $minutes }}:{{ $seconds }}</span
     >
     <p class="transcript-text">{{ $renderedText | safeHTML }}</p>

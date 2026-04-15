@@ -221,6 +221,7 @@ textarea:not([rows]) {
 .container--wide {
   max-width: var(--content-max-width-wide);
   margin-inline: auto;
+  padding-inline: var(--space-s);
 }
 
 .panel {

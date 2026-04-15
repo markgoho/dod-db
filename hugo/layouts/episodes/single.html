@@ -12,7 +12,11 @@
   {{ $titleTransitionName := printf "episode-title-%v" .Params.episodeNumber }}
 
 
-  <article class="episode-page container--wide">
+  <article
+    class="episode-page container--wide"
+    data-pagefind-meta="title:{{ .Title }}"
+    data-pagefind-meta="episode:Episode {{ .Params.episodeNumber }}"
+    >
     <header class="page-hero">
       <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow"
@@ -29,7 +33,8 @@
 
       {{ if gt (len $guestLinks) 0 }}
         <p class="episode-hero__guest">
-          with {{ delimit $guestLinks ", " | safeHTML }}
+          with
+          {{ delimit $guestLinks ", " | safeHTML }}
         </p>
       {{ end }}
     </header>
@@ -117,7 +122,8 @@
                     id="{{ .anchor }}"
                     href="#{{ .anchor }}"
                     data-start="{{ .startSeconds }}">
-                    <span class="episode-segment-card__label type-eyebrow"
+                    <span
+                      class="episode-segment-card__label type-eyebrow"
                       >{{ .label }}</span
                     >
                     {{ $cardTitle := or .topicLabel .label }}
@@ -143,7 +149,7 @@
             </label>
           </div>
           <div class="transcript-preview">
-            <div class="transcript-content panel">
+            <div class="transcript-content panel" data-pagefind-body>
               {{ .Content }}
             </div>
             <button class="transcript-reveal-button" type="button">
@@ -161,7 +167,11 @@
               <ul class="chip-list" role="list">
                 {{ range .Params.books }}
                   <li>
-                    <a href="/books/{{ . | urlize }}/" class="chip">{{ . }}</a>
+                    <a
+                      href="/books/{{ . | urlize }}/"
+                      class="chip"
+                      >{{ . }}</a
+                    >
                   </li>
                 {{ end }}
               </ul>
@@ -174,7 +184,11 @@
               <ul class="chip-list" role="list">
                 {{ range .Params.tags }}
                   <li>
-                    <a href="/tags/{{ . | urlize }}/" class="chip">{{ . }}</a>
+                    <a
+                      href="/tags/{{ . | urlize }}/"
+                      class="chip"
+                      >{{ . }}</a
+                    >
                   </li>
                 {{ end }}
               </ul>

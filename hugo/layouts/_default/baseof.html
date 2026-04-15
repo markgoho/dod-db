@@ -16,6 +16,10 @@
     {{ partial "opengraph.html" . }}
 
 
+    <link href="/pagefind/pagefind-component-ui.css" rel="stylesheet" />
+    {{ $searchCSS := resources.Get "css/search.css" | resources.Minify }}
+    <style>{{ $searchCSS.Content | safeCSS }}</style>
+
     <link rel="canonical" href="{{ .Permalink | absURL }}" />
   </head>
 
@@ -48,5 +52,9 @@
     </div>
 
     {{ block "footer-scripts" . }}{{ end }}
+
+
+    <pagefind-modal></pagefind-modal>
+    <script src="/pagefind/pagefind-component-ui.js" type="module"></script>
   </body>
 </html>

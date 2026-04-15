@@ -7,13 +7,20 @@
 {{- $titleTransitionName := printf "%s-title-%s" .taxonomy ($page.Title | urlize) -}}
 
 
-<header class="{{ with $heroClass }}page-hero {{ . }}{{ else }}page-hero{{ end }}">
+<header
+  class="{{ with $heroClass }}
+    page-hero {{ . }}
+  {{ else }}
+    page-hero
+  {{ end }}">
   <a href="{{ $backHref }}" class="button-brutalist page-hero__back"
     >&larr; {{ $backLabel }}</a
   >
   <h1
     class="page-hero__title"
-    style="view-transition-name: {{ $titleTransitionName }}">{{ $page.Title }}</h1>
+    style="view-transition-name: {{ $titleTransitionName }}">
+    {{ $page.Title }}
+  </h1>
   <div class="page-hero__meta page-hero__meta--headline panel">
     <span class="stat-display__number">{{ len $page.Pages }}</span>
     <span class="stat-display__label"

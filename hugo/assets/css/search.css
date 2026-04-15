@@ -1,0 +1,120 @@
+/* Pagefind Component UI — site design system overrides */
+
+:root {
+  --pf-text: var(--tan-900);
+  --pf-text-secondary: var(--tan-600);
+  --pf-text-muted: var(--tan-500);
+  --pf-background: var(--tan-000);
+  --pf-border: var(--tan-900);
+  --pf-border-focus: var(--tan-900);
+  --pf-skeleton: var(--tan-200);
+  --pf-skeleton-shine: var(--tan-300);
+  --pf-hover: var(--color-accent);
+  --pf-mark: var(--color-action);
+  --pf-scroll-shadow: color-mix(in srgb, var(--tan-900) 12%, transparent);
+
+  --pf-shadow-sm: none;
+  --pf-shadow-md: none;
+  --pf-shadow-lg:
+    var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
+
+  --pf-outline-focus: var(--color-action);
+  --pf-outline-width: var(--border-width-sm);
+
+  --pf-font: var(--font-family-main), sans-serif;
+  --pf-input-height: calc(var(--space-m) + var(--space-2xs));
+  --pf-input-font-size: var(--step-0);
+  --pf-result-title-font-size: var(--step-0);
+  --pf-result-excerpt-font-size: var(--step--1);
+  --pf-summary-font-size: var(--step--2);
+
+  --pf-border-radius: 0;
+  --pf-modal-backdrop: color-mix(in srgb, var(--tan-900) 72%, transparent);
+  --pf-modal-max-width: 640px;
+
+  --pf-results-gap: var(--space-2xs);
+}
+
+/* Modal dialog — brutalist panel treatment */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) dialog.pf-modal {
+  border: var(--border-width-md) solid var(--tan-900);
+  border-radius: 0;
+}
+
+/* Input field — thick border, no rounded corners */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-input {
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: 0;
+}
+
+/* Result cards — match .panel styling */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-card {
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: 0;
+  padding: var(--space-xs);
+  transition: none;
+}
+
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-card:hover {
+  background: var(--color-accent-muted);
+  box-shadow: none;
+}
+
+/* Result title — display font, uppercase */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-title {
+  font-family: var(--font-family-display), sans-serif;
+  font-weight: var(--font-weight-boldest);
+  font-style: italic;
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+  line-height: var(--line-height-heading);
+}
+
+/* Result link — action color on hover */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-link {
+  color: var(--tan-900);
+}
+
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-link:hover {
+  color: var(--color-action);
+}
+
+/* Excerpt text — relax truncation, show more context */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-excerpt {
+  white-space: normal;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Highlighted match text — amber underline instead of bold */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-excerpt mark,
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-heading-excerpt mark {
+  background: var(--color-accent-muted);
+  color: var(--tan-900);
+  font-weight: var(--font-weight-bold);
+  padding-inline: 0.1em;
+}
+
+/* Summary text — uppercase eyebrow style */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-summary {
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+/* Keyboard hint keys — brutalist treatment */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-modal-footer-key,
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-key {
+  border-radius: 0;
+  border: var(--border-width-sm) solid var(--tan-900);
+}
+
+/* Clear button — match site button conventions */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-input-clear {
+  border-radius: 0;
+}
+
+/* Result images — square, no radius */
+:is(*, #\#):is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-image {
+  border-radius: 0;
+}

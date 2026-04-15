@@ -14,7 +14,9 @@
     "check": "bun run typecheck && bun run lint && bun run format",
     "generate:tag-index": "bun run src/scripts/generate-tag-episode-index.ts",
     "hugo:dev": "bun run generate:tag-index && cd hugo && hugo server",
-    "build:hugo": "bun run generate:tag-index && cd hugo && hugo --minify"
+    "build:local": "bun run generate:tag-index && rm -rf hugo/public && cd hugo && hugo && bun run index",
+    "index": "bunx pagefind --site hugo/public",
+    "build:hugo": "bun run generate:tag-index && cd hugo && hugo --minify && bun run index"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",

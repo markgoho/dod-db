@@ -46,11 +46,15 @@
       {{ if eq $headingLevel "h3" -}}
         <h3
           class="episode-card__title"
-          style="view-transition-name: {{ $titleTransitionName }}">{{ $title }}</h3>
+          style="view-transition-name: {{ $titleTransitionName }}">
+          {{ $title }}
+        </h3>
       {{- else -}}
         <h2
           class="episode-card__title"
-          style="view-transition-name: {{ $titleTransitionName }}">{{ $title }}</h2>
+          style="view-transition-name: {{ $titleTransitionName }}">
+          {{ $title }}
+        </h2>
       {{- end }}
       {{- if $guestText }}
         <div class="episode-card__guest">{{ $guestText }}</div>
