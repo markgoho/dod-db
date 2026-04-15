@@ -5,7 +5,7 @@
 
 {{ define "main" }}
   {{ $episodes := where .Site.RegularPages "Type" "episodes" }}
-  {{ $recentEpisodes := first 3 $episodes }}
+  {{ $recentEpisodes := first 4 $episodes }}
 
 
   <section class="home-page">
@@ -114,7 +114,7 @@
         </div>
         <div class="recent-episodes__grid">
           {{ range $recentEpisodes }}
-            {{ partial "episode-card" (dict "episode" . "headingLevel" "h3") }}
+            {{ partial "episode-card" (dict "episode" . "headingLevel" "h3" "badgeSource" "tags") }}
           {{ end }}
         </div>
       </section>

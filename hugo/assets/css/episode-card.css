@@ -1,9 +1,17 @@
 .episode-card {
 }
 
+.episode-card:hover {
+  background: var(--color-accent);
+}
+
 .episode-card__link {
+  align-items: center;
   color: var(--color-text-main);
-  display: block;
+  display: inline-grid;
+  gap: var(--space-s);
+  grid-template-columns: 1fr auto;
+  min-height: 100%;
   padding: var(--space-s);
   text-decoration: none;
 }
@@ -16,24 +24,7 @@
   margin-bottom: 0;
 }
 
-.term-page--episodes-archive .episode-card__link {
-  align-items: center;
-  background: var(--tan-000);
-  border: var(--border-width-md) solid var(--tan-900);
-  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
-    var(--tan-900);
-  display: inline-grid;
-  gap: var(--space-s);
-  grid-template-columns: 1fr auto;
-  min-height: 100%;
-  padding: var(--space-s);
-}
-
-.term-page--episodes-archive .episode-card:hover .episode-card__link {
-  background: var(--color-accent);
-}
-
-.term-page--episodes-archive .episode-card__header-row {
+.episode-card__header-row {
   align-items: start;
   display: flex;
   flex-wrap: wrap;
@@ -41,23 +32,23 @@
   justify-content: space-between;
 }
 
-.term-page--episodes-archive .episode-card__eyebrow {
+.episode-card__eyebrow {
   color: var(--color-text-muted);
   margin: 0 0 var(--space-4xs) 0;
 }
 
-.term-page--episodes-archive .episode-card__guest {
+.episode-card__guest {
   color: var(--color-text-muted);
   font-size: var(--step--1);
   margin-bottom: var(--space-3xs);
 }
 
-.term-page--episodes-archive .episode-card__title {
+.episode-card__title {
   font-size: var(--step-1);
   margin: 0 0 var(--space-3xs) 0;
 }
 
-.term-page--episodes-archive .episode-card__date {
+.episode-card__date {
   color: var(--color-text-muted);
   display: block;
   font-size: var(--step--1);
@@ -67,7 +58,7 @@
   text-transform: uppercase;
 }
 
-.term-page--episodes-archive .episode-card__arrow {
+.episode-card__arrow {
   color: var(--color-action);
   display: block;
   font-family: var(--font-family-display);
@@ -76,6 +67,6 @@
   font-weight: var(--font-weight-boldest);
 }
 
-.term-page--episodes-archive .episode-card__mention-count {
+.episode-card__mention-count {
   display: none;
 }
