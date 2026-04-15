@@ -8474,7 +8474,31 @@
       "firstSeen": "2026-04-05T23:28:45.084Z",
       "lastSeen": "2026-04-05T23:28:45.084Z",
       "status": "pending"
+    },
+    "Levitt→Leavitt": {
+      "original": "Levitt",
+      "corrected": "Leavitt",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["155444963"],
+      "examples": [
+        "\"House's name? Levitt?\"",
+        "\"Yeah, Karine Levitt.\"",
+        "\"the Carolyn Levitt thing, you\""
+      ],
+      "correctedExamples": [
+        "\"House's name? Leavitt?\"",
+        "\"Yeah, Karine Leavitt.\"",
+        "\"the Karoline Leavitt thing, you\""
+      ],
+      "timestamps": ["00:44:14.639", "00:45:06.537", "00:54:13.383"],
+      "episodeIds": ["155444963", "155444963", "155444963"],
+      "confidence": 20,
+      "firstSeen": "2026-04-15T19:04:48.234Z",
+      "lastSeen": "2026-04-15T19:04:48.234Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-04-11T03:51:21.563Z"
+  "lastUpdated": "2026-04-15T19:04:48.234Z"
 }

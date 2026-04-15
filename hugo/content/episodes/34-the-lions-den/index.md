@@ -23,6 +23,7 @@ tags:
   - Judaism
   - King James Version
   - Second Temple period
+  - Seleucid Empire
   - Adam
   - Catholicism
   - Dead Sea

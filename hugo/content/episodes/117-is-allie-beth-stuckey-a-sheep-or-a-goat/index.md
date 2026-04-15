@@ -24,6 +24,7 @@ tags:
   - inerrancy
   - Judaism
   - King Josiah
+  - Maccabean Revolt
   - Monotheism
   - Moses
   - Univocality

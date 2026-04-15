@@ -15,8 +15,8 @@
 
   --pf-shadow-sm: none;
   --pf-shadow-md: none;
-  --pf-shadow-lg:
-    var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900);
+  --pf-shadow-lg: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
+    var(--tan-900);
 
   --pf-outline-focus: var(--color-action);
   --pf-outline-width: var(--border-width-sm);

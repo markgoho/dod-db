@@ -15,8 +15,7 @@
   <article
     class="episode-page"
     data-pagefind-meta="title:{{ .Title }}"
-    data-pagefind-meta="episode:Episode {{ .Params.episodeNumber }}"
-    >
+    data-pagefind-meta="episode:Episode {{ .Params.episodeNumber }}">
     <header class="page-hero">
       <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow"
@@ -122,8 +121,7 @@
                     id="{{ .anchor }}"
                     href="#{{ .anchor }}"
                     data-start="{{ .startSeconds }}">
-                    <span
-                      class="episode-segment-card__label type-eyebrow"
+                    <span class="episode-segment-card__label type-eyebrow"
                       >{{ .label }}</span
                     >
                     {{ $cardTitle := or .topicLabel .label }}
@@ -167,11 +165,7 @@
               <ul class="chip-list" role="list">
                 {{ range .Params.books }}
                   <li>
-                    <a
-                      href="/books/{{ . | urlize }}/"
-                      class="chip"
-                      >{{ . }}</a
-                    >
+                    <a href="/books/{{ . | urlize }}/" class="chip">{{ . }}</a>
                   </li>
                 {{ end }}
               </ul>
@@ -184,11 +178,7 @@
               <ul class="chip-list" role="list">
                 {{ range .Params.tags }}
                   <li>
-                    <a
-                      href="/tags/{{ . | urlize }}/"
-                      class="chip"
-                      >{{ . }}</a
-                    >
+                    <a href="/tags/{{ . | urlize }}/" class="chip">{{ . }}</a>
                   </li>
                 {{ end }}
               </ul>

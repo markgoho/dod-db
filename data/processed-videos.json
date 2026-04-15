@@ -677,6 +677,10 @@
         "mentions": 1
       },
       {
+        "tag": "Seleucid Empire",
+        "mentions": 1
+      },
+      {
         "tag": "The Reformation",
         "mentions": 1
       },
@@ -1810,6 +1814,10 @@
         "mentions": 1
       },
       {
+        "tag": "Seleucid Empire",
+        "mentions": 1
+      },
+      {
         "tag": "Syria",
         "mentions": 1
       },
@@ -2461,6 +2469,10 @@
       },
       {
         "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Seleucid Empire",
         "mentions": 1
       },
       {
@@ -3449,6 +3461,10 @@
       },
       {
         "tag": "Hanukkah",
+        "mentions": 1
+      },
+      {
+        "tag": "Maccabean Revolt",
         "mentions": 1
       },
       {
@@ -5268,6 +5284,10 @@
         "mentions": 1
       },
       {
+        "tag": "Seleucid Empire",
+        "mentions": 1
+      },
+      {
         "tag": "Univocality",
         "mentions": 1
       }
@@ -5550,6 +5570,10 @@
       },
       {
         "tag": "Second Temple period",
+        "mentions": 2
+      },
+      {
+        "tag": "Seleucid Empire",
         "mentions": 2
       },
       {
@@ -7063,6 +7087,10 @@
       },
       {
         "tag": "Quran",
+        "mentions": 1
+      },
+      {
+        "tag": "Seleucid Empire",
         "mentions": 1
       },
       {
@@ -9854,6 +9882,10 @@
         "mentions": 2
       },
       {
+        "tag": "Prophetic Critique",
+        "mentions": 2
+      },
+      {
         "tag": "Samson",
         "mentions": 2
       },
@@ -10121,6 +10153,10 @@
       },
       {
         "tag": "Nephilim",
+        "mentions": 1
+      },
+      {
+        "tag": "Seleucid Empire",
         "mentions": 1
       },
       {
@@ -11500,6 +11536,10 @@
         "mentions": 4
       },
       {
+        "tag": "Seleucid Empire",
+        "mentions": 4
+      },
+      {
         "tag": "Cyrus the Great",
         "mentions": 3
       },
@@ -11545,6 +11585,10 @@
       },
       {
         "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Maccabean Revolt",
         "mentions": 1
       },
       {
@@ -12237,6 +12281,10 @@
         "mentions": 3
       },
       {
+        "tag": "Prophetic Critique",
+        "mentions": 3
+      },
+      {
         "tag": "Joshua",
         "mentions": 2
       },
@@ -12473,6 +12521,10 @@
       },
       {
         "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Prophetic Critique",
         "mentions": 1
       },
       {
@@ -13721,6 +13773,10 @@
       },
       {
         "tag": "Romans",
+        "mentions": 1
+      },
+      {
+        "tag": "Seleucid Empire",
         "mentions": 1
       }
     ],
@@ -15188,6 +15244,10 @@
         "mentions": 2
       },
       {
+        "tag": "Prophetic Critique",
+        "mentions": 2
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 1
       },
@@ -16004,6 +16064,10 @@
       {
         "tag": "Samuel",
         "mentions": 4
+      },
+      {
+        "tag": "Prophetic Critique",
+        "mentions": 3
       },
       {
         "tag": "Judaism",
@@ -17317,6 +17381,10 @@
         "mentions": 8
       },
       {
+        "tag": "Seleucid Empire",
+        "mentions": 4
+      },
+      {
         "tag": "Luke",
         "mentions": 3
       },
@@ -18192,6 +18260,10 @@
       },
       {
         "tag": "King Josiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Maccabean Revolt",
         "mentions": 1
       },
       {
@@ -19219,6 +19291,10 @@
       },
       {
         "tag": "King Josiah",
+        "mentions": 5
+      },
+      {
+        "tag": "Seleucid Empire",
         "mentions": 5
       },
       {
@@ -23349,6 +23425,10 @@
         "mentions": 1
       },
       {
+        "tag": "Seleucid Empire",
+        "mentions": 1
+      },
+      {
         "tag": "Septuagint",
         "mentions": 1
       }
@@ -25290,6 +25370,208 @@
       {
         "book": "John",
         "references": ["John 6:1"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "155444963",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/155444963.mp3?sig=4YXxt4X_HW-mekzkwdPF1aBfoFx-Mlnx8mBaLnxdunA%3D",
+    "title": "I Will Have Mercy, Not Dogma",
+    "publishedAt": "2026-04-12T17:52:05.000Z",
+    "processedAt": "2026-04-15T19:04:10.617Z",
+    "transcriptPath": "data/transcripts/2026-04-12-i-will-have-mercy-not-dogma.txt",
+    "tags": [
+      {
+        "tag": "Maccabees",
+        "mentions": 21
+      },
+      {
+        "tag": "Second Maccabees",
+        "mentions": 15
+      },
+      {
+        "tag": "Seleucid Empire",
+        "mentions": 15
+      },
+      {
+        "tag": "Prophetic Critique",
+        "mentions": 14
+      },
+      {
+        "tag": "Judah",
+        "mentions": 7
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 7
+      },
+      {
+        "tag": "Maccabean Revolt",
+        "mentions": 7
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 6
+      },
+      {
+        "tag": "Apocrypha",
+        "mentions": 4
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 4
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 4
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 3
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 3
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 3
+      },
+      {
+        "tag": "Romans",
+        "mentions": 3
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 2
+      },
+      {
+        "tag": "Deutero-Isaiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Hanukkah",
+        "mentions": 2
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Essenes",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Judas Maccabeus",
+        "mentions": 1
+      },
+      {
+        "tag": "Letter of Aristeas",
+        "mentions": 1
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 1
+      },
+      {
+        "tag": "Mattathias",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Syria",
+        "mentions": 1
+      },
+      {
+        "tag": "Torah",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:58.202]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "historys-mysteries",
+        "startTimestamp": "[00:02:58.202]",
+        "endTimestamp": "[00:34:58.120]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Maccabean Revolt",
+        "summary": "History of the Maccabean Revolt and its context"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:34:58.120]",
+        "endTimestamp": "[01:00:48.876]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Prophetic critique",
+        "summary": "Eighth-century prophets critiquing wealthy's empty displays of piety"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 158,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah", "Isaiah 167"],
+        "mentions": 2
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 2
+      },
+      {
+        "book": "Amos",
+        "references": ["Amos 5:21-24"],
+        "mentions": 1
+      },
+      {
+        "book": "Hosea",
+        "references": ["Hosea 6:6"],
+        "mentions": 1
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew"],
         "mentions": 1
       }
     ]

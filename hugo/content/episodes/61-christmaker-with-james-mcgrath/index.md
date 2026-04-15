@@ -19,6 +19,7 @@ tags:
   - Judaism
   - Gospel of Thomas
   - Islam
+  - Prophetic Critique
   - Samson
   - Samuel
   - Adam

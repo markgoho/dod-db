@@ -35,6 +35,7 @@ tags:
   - King James Version
   - Pseudepigrapha
   - Satan
+  - Seleucid Empire
   - YHWH
 books:
   - Isaiah

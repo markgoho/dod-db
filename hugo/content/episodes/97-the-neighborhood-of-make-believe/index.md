@@ -15,6 +15,7 @@ tags:
   - Mount Sinai
   - Babylon
   - Dead Sea
+  - Prophetic Critique
   - Deuteronomy
   - forgery
   - Isaiah

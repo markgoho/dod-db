@@ -52,7 +52,7 @@ segmentData:
   - type: what-is-that
     anchor: what-is-that-1
     label: What is That?
-    topicLabel: Trans&shy;figuration
+    topicLabel: Transfiguration
     summary: "The Transfiguration story in Mark, Matthew, and Luke."
     startSeconds: 122.311
   - type: chapter-and-verse

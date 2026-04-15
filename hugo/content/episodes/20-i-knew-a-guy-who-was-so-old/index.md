@@ -48,6 +48,7 @@ tags:
   - First Clement
   - Galilee
   - Hanukkah
+  - Maccabean Revolt
   - Midianites
   - Moses
   - Pseudepigrapha

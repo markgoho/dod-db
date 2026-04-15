@@ -31,6 +31,7 @@ tags:
   - Passover
   - Peter
   - Quran
+  - Seleucid Empire
   - theophany
 books:
   - Isaiah

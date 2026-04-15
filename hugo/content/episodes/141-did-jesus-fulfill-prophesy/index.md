@@ -47,7 +47,7 @@ segmentData:
   - type: sorry-apologetics
     anchor: sorry-apologetics-1
     label: Sorry Apologetics
-    topicLabel: Luke Contra&shy;dic&shy;tions
+    topicLabel: Lk Contradictions
     summary: "Luke's birth narrative contradicts Matthew and itself."
     startSeconds: 2417.427
 draft: false

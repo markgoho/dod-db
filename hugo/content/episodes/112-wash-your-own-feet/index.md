@@ -9,6 +9,7 @@ tags:
   - Maccabees
   - Peter
   - Second Maccabees
+  - Seleucid Empire
   - Luke
   - Apocrypha
   - Creation ex nihilo

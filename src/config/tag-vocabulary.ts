@@ -4231,7 +4231,7 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Judas Maccabeus",
-    variations: ["Judas Maccabeus"],
+    variations: ["Judas Maccabeus", "Judah Maccabee"],
     category: "person",
     llmVerify: true,
     description:
@@ -8946,33 +8946,48 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
     addedInEpisode: 96,
   },
+  {
+    canonical: "Maccabean Revolt",
+    variations: ["Maccabean revolt"],
+    category: "event",
+    description:
+      "A Jewish rebellion against the Seleucid Empire in the 2nd century BCE, described in the Books of Maccabees",
+    status: "accepted",
+    addedInEpisode: 158,
+    episodes: [20, 71, 117, 158],
+  },
+  {
+    canonical: "Simone",
+    variations: [],
+    category: "person",
+    description:
+      "Patreon community member who critiqued Dan McClellan's use of the prophetic critique.",
+    status: "rejected",
+    addedInEpisode: 158,
+  },
+  {
+    canonical: "Seleucid Empire",
+    variations: ["Seleucids"],
+    category: "people",
+    llmVerify: true,
+    description:
+      "A Hellenistic empire that existed in the Middle East and parts of Asia after the death of Alexander the Great",
+    status: "accepted",
+    addedInEpisode: 158,
+    episodes: [4, 11, 15, 32, 34, 43, 62, 71, 87, 112, 123, 147, 158],
+  },
 ];
 
-/**
- * Build a lookup map from all searchable terms (canonical + variations) to their canonical forms.
- * This enables O(1) lookups during regex matching.
- * Case sensitivity is handled during regex creation based on the caseSensitive flag.
- *
- * @param vocab - Array of tag definitions
- * @returns Map where keys are searchable terms and values are canonical forms
- *
- * @example
- * const termMap = getAllSearchableTerms(tagVocabulary);
- * termMap.get('LXX') // Returns 'Septuagint'
- * termMap.get('Septuagint') // Returns 'Septuagint'
- */
 export function getAllSearchableTerms(
-  vocab: TagDefinition[],
-): Map<string, string> {
-  const termMap = new Map<string, string>();
+  vocabulary: TagDefinition[],
+): Set<string> {
+  const termMap = new Set<string>();
 
-  for (const def of vocab) {
-    // Map canonical to itself
-    termMap.set(def.canonical, def.canonical);
+  for (const tag of vocabulary) {
+    termMap.add(tag.canonical.toLowerCase());
 
-    // Map all variations to canonical
-    for (const variation of def.variations) {
-      termMap.set(variation, def.canonical);
+    for (const variation of tag.variations) {
+      termMap.add(variation.toLowerCase());
     }
   }
 

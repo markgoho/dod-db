@@ -16,6 +16,7 @@ tags:
   - Judaism
   - King David
   - Paul
+  - Prophetic Critique
   - Protestantism
 books:
   - Luke

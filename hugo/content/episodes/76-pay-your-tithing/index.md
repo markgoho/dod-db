@@ -11,6 +11,7 @@ tags:
   - Sapphira
   - Abraham
   - Judah
+  - Prophetic Critique
   - Joshua
   - Melchizedek
   - Paul

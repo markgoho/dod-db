@@ -15,6 +15,7 @@ tags:
   - Paul
   - King James Version
   - Michael
+  - Seleucid Empire
   - Cyrus the Great
   - Isaiah
   - Judaism
@@ -27,6 +28,7 @@ tags:
   - Elijah
   - Garden of Eden
   - Hell
+  - Maccabean Revolt
   - Maccabees
   - Syria
   - Torah

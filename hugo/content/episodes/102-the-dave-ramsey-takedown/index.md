@@ -12,6 +12,7 @@ tags:
   - King Josiah
   - Joshua
   - Samuel
+  - Prophetic Critique
   - Judaism
   - Quran
   - YHWH
@@ -43,7 +44,7 @@ segmentData:
   - type: what-is-that
     anchor: what-is-that-1
     label: What is That?
-    topicLabel: Deuterono&shy;mistic History
+    topicLabel: Deuteronomistic History
     summary: "Explaining the Deuteronomistic History's redactor and literary campaign."
     startSeconds: 2002.638
 draft: false

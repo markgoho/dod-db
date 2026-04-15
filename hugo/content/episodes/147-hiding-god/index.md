@@ -26,6 +26,7 @@ tags:
   - Paul
   - Samuel
   - Satan
+  - Seleucid Empire
   - Septuagint
 books:
   - Daniel

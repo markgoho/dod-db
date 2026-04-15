@@ -16,6 +16,7 @@ tags:
   - Judaism
   - Mary Magdalene
   - King Josiah
+  - Seleucid Empire
   - Daniel
   - Maccabees
   - Second Temple period

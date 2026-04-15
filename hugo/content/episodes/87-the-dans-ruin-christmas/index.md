@@ -35,6 +35,7 @@ tags:
   - Jacob
   - Maccabees
   - Romans
+  - Seleucid Empire
 books:
   - Isaiah
   - Deuteronomy

@@ -22,6 +22,7 @@ tags:
   - King James Version
   - Latin Vulgate
   - Satan
+  - Seleucid Empire
   - Univocality
 books:
   - Daniel
