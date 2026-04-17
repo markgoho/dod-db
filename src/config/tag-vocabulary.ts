@@ -563,13 +563,13 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Satan",
-    variations: ["the devil", "devil", "satanic"],
+    variations: ["devil"],
     category: "theology",
     status: "accepted",
     episodes: [
       1, 9, 15, 17, 18, 27, 28, 29, 32, 33, 37, 39, 50, 53, 54, 62, 66, 68, 73,
       76, 84, 89, 90, 91, 94, 98, 99, 113, 114, 120, 122, 124, 125, 130, 132,
-      133, 137,
+      133, 137, 142, 145, 147, 148, 150, 152, 158,
     ],
   },
   {
@@ -8795,7 +8795,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "Professor in religious education at Brigham Young University, author of Lady Eclecte: The Lost Woman of the New Testament",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Papyri",
@@ -8848,12 +8848,14 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "Eklekte",
-    variations: ["Eclecte"],
+    canonical: "Eclecte",
+    variations: ["Lady Eclecte", "Lady Eklekte"],
     category: "character",
+    llmVerify: true,
     description:
       'A woman\'s name proposed as the addressee of 2 John, instead of the traditional "elect lady" interpretation.',
-    status: "proposed",
+    status: "accepted",
+    episodes: [153],
   },
   {
     canonical: "2nd century CE",

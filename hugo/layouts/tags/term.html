@@ -32,7 +32,7 @@
       {{ else if eq .type "episode" }}
         {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" .number) 0 }}
         {{ if $featuredEpisodePage }}
-          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured episode" "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion"))) }}
+          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "ranked" true "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" "Featured episode" "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion"))) }}
         {{ end }}
       {{ end }}
     {{ end }}

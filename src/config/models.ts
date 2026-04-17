@@ -5,10 +5,10 @@
 export const correctionModel = "gemini-2.5-flash";
 
 /**
- * Model used for speaker identification.
- * 2.0 Flash is sufficient for this structured extraction task.
+ * Model used for speaker identification and segment/topic extraction.
+ * 2.5 Flash is the current broadly available fast structured-output model.
  */
-export const speakerIdModel = "gemini-2.0-flash";
+export const speakerIdModel = "gemini-2.5-flash";
 
 /**
  * Model used for Q&A over transcripts.

@@ -36,6 +36,7 @@ books:
   - Genesis
 guests:
   - Aaron Adair
+guestTopic: Star of Bethlehem
 draft: false
 ---
 

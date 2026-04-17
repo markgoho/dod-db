@@ -14,7 +14,11 @@ Given an episode number, analyze each verified non-structural segment and genera
 - `topicLabel` — a 1-2 word label for what that specific segment is about
 - `summary` — a short 5-10 word summary of the segment's discussion
 
-These are stored on each `EpisodeSegment` and projected into Hugo segment cards.
+If the episode has guest speakers but no analyzable non-structural segments, generate:
+
+- `guestTopic` — a short human-friendly topic label for the guest discussion's main subject
+
+Segment labels are stored on each `EpisodeSegment` and projected into Hugo segment cards. `guestTopic` is stored on the episode and projected into the guest topic card.
 
 ## Primary command
 
@@ -53,7 +57,7 @@ bun run src/scripts/analyze-segments.ts 6 --dry-run
 4. Uses transcript context plus segment-type-aware prompting to generate:
    - topic label
    - short summary
-5. Treats guest-speaker episodes with no identified segments as expected rather than suspicious
+5. If no analyzable non-structural segments remain and the episode has guests, generates a `guestTopic` label for the guest discussion
 6. Saves the results back to `data/processed-videos.json`
 7. Regenerates the Hugo episode page
 
@@ -68,7 +72,15 @@ The prompt includes segment-specific guidance. For example:
 
 ## Guest episodes
 
-If an episode has guests and no recurring segments were identified, that is often expected behavior rather than a failure. Treat a no-op result on guest episodes as normal unless there is other evidence the episode should contain recurring segments.
+If an episode has guests and no recurring segments were identified, that is often expected behavior rather than a failure. In those cases, generate a `guestTopic` label for the episode's main discussion subject.
+
+Prefer the full named concept when the transcript makes it clear, not an underspecified single word. Examples:
+
+- `Star of Bethlehem` over `Star`
+- `Divine Council` over `Council`
+- `Ancient Astronomy` over `Astronomy` when the fuller phrase is the real topic
+
+Treat a no-op result on guest episodes as normal unless there is other evidence the episode should contain recurring segments.
 
 ## Output expectations
 

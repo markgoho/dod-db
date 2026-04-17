@@ -9,11 +9,14 @@
 
 import type { SegmentType } from "../config/segment-patterns.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
+import { getGuestSpeakers } from "../hugo/get-guest-speakers.js";
+import { describeGuestTopic } from "../pipeline/describe-guest-topic.js";
 import { describeSegment } from "../pipeline/describe-segment.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
 import { getVideoByEpisodeNumber } from "../storage/get-video-by-episode-number.js";
 import type { EpisodeSegment } from "../storage/processed-videos.js";
 import { updateSegmentDescription } from "../storage/update-segment-description.js";
+import { updateVideoGuestTopic } from "../storage/update-video-guest-topic.js";
 
 const EXCLUDED_SEGMENT_TYPES = new Set<SegmentType>([
   "intro",
@@ -88,6 +91,38 @@ function printSegmentReviewSummary(
   }
 }
 
+const WEAK_GUEST_TOPIC_LABELS = new Set([
+  "star",
+  "council",
+  "astronomy",
+  "religion",
+  "history",
+  "biblical",
+  "bible",
+  "jesus",
+  "god",
+  "christianity",
+  "judaism",
+]);
+
+function shouldRegenerateGuestTopic(guestTopic: string | undefined): boolean {
+  if (!guestTopic) {
+    return true;
+  }
+
+  const trimmed = guestTopic.trim();
+  if (trimmed.length === 0) {
+    return true;
+  }
+
+  const normalized = trimmed.toLowerCase();
+  if (WEAK_GUEST_TOPIC_LABELS.has(normalized)) {
+    return true;
+  }
+
+  return false;
+}
+
 async function main(): Promise<void> {
   try {
     const args = parseArguments(process.argv.slice(2));
@@ -97,13 +132,12 @@ async function main(): Promise<void> {
       throw new Error(`Episode ${args.episodeNumber} not found`);
     }
 
-    if (!video.segments || video.segments.length === 0) {
-      throw new Error(`Episode ${args.episodeNumber} has no segments`);
-    }
-
     const transcript = await Bun.file(video.transcriptPath).text();
     const cleanTitle = extractCleanTitle(video.title);
-    const updatedSegments = [...(video.segments as EpisodeSegment[])];
+    const guestNames = getGuestSpeakers(video.speakers);
+    const updatedSegments = [
+      ...((video.segments as EpisodeSegment[] | undefined) ?? []),
+    ];
     const reviewSummaries: Array<{
       type: string;
       startTimestamp: string;
@@ -112,6 +146,43 @@ async function main(): Promise<void> {
       confidence: number;
     }> = [];
     let describedCount = 0;
+    const analyzableSegments = updatedSegments.filter(segment =>
+      shouldAnalyzeSegment(segment, args.force),
+    );
+
+    if (analyzableSegments.length === 0) {
+      if (
+        guestNames.length > 0 &&
+        shouldRegenerateGuestTopic(video.guestTopic)
+      ) {
+        const guestTopic = await describeGuestTopic({
+          episodeTitle: cleanTitle,
+          guestNames,
+          transcript,
+        });
+
+        console.log(`Guest topic: ${guestTopic.guestTopic}`);
+        console.log(`Confidence: ${guestTopic.confidence}`);
+
+        if (!args.dryRun) {
+          await updateVideoGuestTopic(video.videoId, guestTopic.guestTopic);
+          await generateHugoEpisode({
+            ...video,
+            guestTopic: guestTopic.guestTopic,
+          });
+        }
+
+        console.log(
+          args.dryRun
+            ? "\nDry run complete. Guest topic analyzed."
+            : "\nSaved guest topic and regenerated Hugo page.",
+        );
+        return;
+      }
+
+      console.log("No segments needed analysis.");
+      return;
+    }
 
     for (const [index, segment] of updatedSegments.entries()) {
       if (!shouldAnalyzeSegment(segment, args.force)) {

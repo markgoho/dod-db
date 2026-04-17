@@ -111,6 +111,22 @@
             </div>
           </section>
 
+          {{ if and .Params.guests .Params.guestTopic }}
+            <section class="episode-segments episode-segments--subtle">
+              <h2 class="type-section-title">Guest Topic</h2>
+              <div class="episode-segments__grid">
+                <div class="episode-segment-card panel">
+                  <span class="episode-segment-card__label type-eyebrow"
+                    >Guest Topic</span
+                  >
+                  <span class="episode-segment-card__title"
+                    >{{ .Params.guestTopic }}</span
+                  >
+                </div>
+              </div>
+            </section>
+          {{ end }}
+
           {{ if .Params.segmentData }}
             <section class="episode-segments episode-segments--subtle">
               <h2 class="type-section-title">Segments</h2>

@@ -16,7 +16,6 @@ tags:
   - Islam
   - King David
   - Matthew
-  - Satan
   - Southern Baptist Convention
 books:
   - Romans

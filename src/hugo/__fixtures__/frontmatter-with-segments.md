@@ -9,9 +9,11 @@ segments:
   - Chapter and Verse
 segmentData:
   - type: chapter-and-verse
+    anchor: chapter-and-verse-1
     label: Chapter and Verse
     startSeconds: 600
   - type: getting-academic
+    anchor: getting-academic-1
     startSeconds: 1500
 draft: false
 ---

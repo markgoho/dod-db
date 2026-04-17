@@ -14,13 +14,13 @@ tags:
   - historical criticism
   - Judaism
   - The Reformation
-  - Satan
   - Adam
   - Canaanites
   - Dead Sea
   - Dead Sea Scrolls
   - Eve
   - Flood
+  - Satan
   - YHWH
   - Creation ex nihilo
   - Daniel

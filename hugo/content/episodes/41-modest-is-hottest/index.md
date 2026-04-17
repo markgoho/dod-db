@@ -31,7 +31,6 @@ tags:
   - Joseph
   - Judaism
   - Romans
-  - Satan
   - YHWH
 books:
   - Genesis

@@ -47,6 +47,10 @@ export function generateFrontmatter(
     frontmatter.guests = guests;
   }
 
+  if (guests.length > 0 && video.guestTopic) {
+    frontmatter.guestTopic = video.guestTopic;
+  }
+
   if (segments.length > 0) {
     frontmatter.segments = segments;
   }

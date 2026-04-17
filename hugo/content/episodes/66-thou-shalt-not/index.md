@@ -17,7 +17,6 @@ tags:
   - Jehu
   - King James Bible
   - Onan
-  - Satan
   - Ugarit
   - Catholicism
   - Cherubim
@@ -31,6 +30,7 @@ tags:
   - Moses
   - Protestantism
   - Ritual Decalogue
+  - Satan
 books:
   - Exodus
   - Habakkuk

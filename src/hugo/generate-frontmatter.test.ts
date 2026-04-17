@@ -79,6 +79,27 @@ describe("generateFrontmatter", () => {
     expect(actual).toBe(expected);
   });
 
+  test("includes guest topic for guest episodes", async () => {
+    const video: ProcessedVideo = {
+      videoId: "guest-topic-456",
+      title: "Episode 99",
+      publishedAt: "2024-06-10T09:00:00Z",
+      processedAt: "2024-06-10T11:00:00Z",
+      transcriptPath: "data/transcripts/2024-06-10-episode-99.txt",
+      episodeNumber: 99,
+      speakers: ["Dan McClellan", "Andrew Whitehead", "Dan Beecher"],
+      guestTopic: "Monotheism",
+    };
+
+    const cleanTitle = "Guest Topic Episode";
+    const actual = generateFrontmatter(video, cleanTitle);
+
+    const expected = await readFixture(
+      "src/hugo/__fixtures__/frontmatter-with-guest-topic.md",
+    );
+    expect(actual).toBe(expected);
+  });
+
   test("canonicalizes guest aliases in frontmatter", async () => {
     const video: ProcessedVideo = {
       videoId: "guest789",
