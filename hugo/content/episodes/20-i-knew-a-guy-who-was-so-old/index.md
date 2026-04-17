@@ -36,7 +36,7 @@ tags:
   - Jeremiah
   - Jerome
   - Joseph
-  - King James Version
+  - King James Bible
   - Latin Vulgate
   - Abimelech
   - Babylon

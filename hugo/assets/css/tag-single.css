@@ -67,6 +67,11 @@
   justify-content: space-between;
 }
 
+.tag-featured-overview {
+  display: grid;
+  gap: var(--space-l);
+}
+
 .tag-featured-callouts {
   gap: var(--space-s);
 }

@@ -28,7 +28,7 @@ tags:
   - Hezekiah
   - inerrancy
   - Jonah
-  - King James Version
+  - King James Bible
   - King Josiah
   - Luke
   - Moab

@@ -33,7 +33,7 @@ tags:
   - Joseph
   - Judah
   - Judaism
-  - King James Version
+  - King James Bible
   - Monotheism
   - source criticism
   - Syria

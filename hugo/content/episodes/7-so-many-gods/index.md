@@ -19,11 +19,12 @@ tags:
   - Samaria
   - Edom
   - Masoretic Text
+  - Stele
   - Ahab
   - Assyria
   - Babylon
   - Isaiah
-  - King James Version
+  - King James Bible
   - Ugarit
   - Dead Sea
   - Elijah

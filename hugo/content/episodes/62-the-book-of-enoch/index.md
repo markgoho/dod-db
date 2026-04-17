@@ -45,7 +45,7 @@ tags:
   - Eve
   - Garden of Eden
   - Judaism
-  - King James Version
+  - King James Bible
   - Maccabees
   - Nephilim
   - Seleucid Empire

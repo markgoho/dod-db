@@ -6,7 +6,8 @@ videoId: Z6-5mEJYYQU
 aliases:
   - /episodes/65/
 tags:
-  - King James Version
+  - Stele
+  - King James Bible
   - Samuel
   - Witch of Endor
   - Anatolia

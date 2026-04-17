@@ -24,7 +24,7 @@ tags:
   - Peter
   - Dead Sea Scrolls
   - Euphrates
-  - King James Version
+  - King James Bible
   - Lamech
   - Methuselah
   - Ammonites

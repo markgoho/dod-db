@@ -26,7 +26,7 @@ tags:
   - Gaza
   - Holy Spirit
   - Jerusalem
-  - King James Version
+  - King James Bible
   - Lamech
   - Pontius Pilate
 books:

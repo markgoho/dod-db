@@ -13,7 +13,7 @@ tags:
   - Baal
   - Book of Enoch
   - Judaism
-  - King James Version
+  - King James Bible
   - Peter
   - King Saul
   - Luke

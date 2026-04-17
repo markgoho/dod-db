@@ -21,7 +21,7 @@ tags:
   - Gilead
   - Hezekiah
   - Jacob
-  - King James Version
+  - King James Bible
   - Satan
   - Univocality
   - inerrancy

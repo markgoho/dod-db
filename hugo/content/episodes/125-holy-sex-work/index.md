@@ -9,7 +9,7 @@ tags:
   - King David
   - Homosexuality
   - Goliath
-  - King James Version
+  - King James Bible
   - Septuagint
   - Dead Sea Scrolls
   - Garden of Eden

@@ -25,7 +25,7 @@ tags:
   - Catholicism
   - Gospel of Thomas
   - Ishmael
-  - King James Version
+  - King James Bible
   - Septuagint
 books:
   - 1 Corinthians

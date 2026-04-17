@@ -23,7 +23,7 @@ tags:
   - Jephthah
   - Judah
   - Leah
-  - King James Version
+  - King James Bible
   - Tamar
   - Ugarit
 books:

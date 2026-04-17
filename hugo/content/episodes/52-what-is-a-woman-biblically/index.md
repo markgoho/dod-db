@@ -12,7 +12,7 @@ tags:
   - Elhanan son of Jair
   - Philistines
   - Eve
-  - King James Version
+  - King James Bible
   - Peter
   - Romans
   - Junia

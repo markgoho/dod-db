@@ -22,7 +22,7 @@ tags:
   - Hell
   - Jerusalem
   - Judah
-  - King James Version
+  - King James Bible
   - Moab
   - Sea of Galilee
   - Ten Commandments

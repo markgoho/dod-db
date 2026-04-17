@@ -433,15 +433,16 @@ export const tagVocabulary: TagDefinition[] = [
     ],
   },
   {
-    canonical: "King James Version",
-    variations: ["KJV"],
+    canonical: "King James Bible",
+    variations: ["KJV", "King James Version"],
     category: "literature",
     status: "accepted",
     episodes: [
-      1, 7, 11, 12, 14, 15, 16, 17, 18, 20, 21, 22, 23, 27, 29, 32, 33, 34, 35,
+      1, 7, 11, 12, 14, 15, 16, 17, 18, 20, 21, 22, 23, 27, 29, 31, 32, 34, 35,
       37, 40, 41, 42, 46, 50, 52, 53, 55, 57, 58, 59, 60, 62, 63, 65, 66, 71,
-      72, 83, 84, 85, 88, 93, 95, 97, 98, 99, 101, 102, 104, 106, 110, 113, 114,
-      115, 117, 122, 125, 126, 127, 129, 131, 132, 133, 134,
+      72, 82, 83, 84, 85, 88, 93, 95, 97, 98, 99, 101, 102, 104, 106, 110, 113,
+      114, 115, 117, 122, 125, 126, 127, 129, 131, 132, 133, 134, 141, 142, 146,
+      151, 154, 155, 157,
     ],
   },
   {
@@ -543,13 +544,14 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Hell",
-    variations: ["Gehenna"],
+    variations: ["Gehenna", "Sheol"],
     category: "place",
     status: "accepted",
     episodes: [
-      8, 9, 15, 17, 19, 25, 27, 32, 33, 39, 40, 41, 43, 50, 52, 54, 62, 63, 71,
-      73, 74, 83, 84, 85, 86, 87, 89, 90, 91, 93, 94, 98, 103, 105, 106, 109,
-      112, 114, 117, 120, 122, 123, 124, 125, 126, 133, 136, 137,
+      8, 9, 15, 17, 19, 25, 27, 31, 32, 39, 40, 41, 43, 50, 52, 54, 62, 63, 67,
+      71, 73, 74, 83, 84, 85, 86, 87, 89, 90, 91, 93, 94, 98, 103, 105, 106,
+      108, 109, 112, 114, 117, 120, 122, 123, 124, 125, 126, 133, 136, 137, 140,
+      144, 147, 148, 154, 156, 157, 158,
     ],
   },
   {
@@ -5989,12 +5991,14 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "stele",
+    canonical: "Stele",
     variations: ["stelae", "stela"],
     category: "miscellaneous",
+    llmVerify: true,
     description:
       "An upright stone slab or pillar, often inscribed or carved, used as a monument or marker.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [2, 7, 14, 36, 46, 64, 65, 66, 86, 139],
   },
   {
     canonical: "Carlton Pearson",

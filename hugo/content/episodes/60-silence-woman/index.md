@@ -13,7 +13,7 @@ tags:
   - Eve
   - Adam
   - Jerusalem
-  - King James Version
+  - King James Bible
   - Romans
   - Catholicism
   - inerrancy

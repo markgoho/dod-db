@@ -34,6 +34,7 @@ tags:
   - Peter
   - Philo of Alexandria
   - Sea of Galilee
+  - Stele
   - Syria
 segments:
   - "History's Mysteries"

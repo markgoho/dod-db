@@ -6,7 +6,7 @@ videoId: FL5YxTKUioI
 aliases:
   - /episodes/134/
 tags:
-  - King James Version
+  - King James Bible
   - Crucifixion
   - Judaism
   - Septuagint

@@ -21,7 +21,7 @@ tags:
   - Trinity
   - Dead Sea Scrolls
   - Judaism
-  - King James Version
+  - King James Bible
   - Second Temple period
   - Seleucid Empire
   - Adam

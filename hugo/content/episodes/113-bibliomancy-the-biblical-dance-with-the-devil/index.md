@@ -15,7 +15,7 @@ tags:
   - Christian Nationalism
   - Joshua
   - Judas Iscariot
-  - King James Version
+  - King James Bible
   - Paul
   - Deutero-Isaiah
   - inerrancy

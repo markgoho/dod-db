@@ -6,7 +6,7 @@ videoId: KDkyHw3nE0w
 aliases:
   - /episodes/58/
 tags:
-  - King James Version
+  - King James Bible
   - William Tyndale
   - Septuagint
   - Dead Sea Scrolls

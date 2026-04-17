@@ -8,7 +8,7 @@ aliases:
 tags:
   - Septuagint
   - Apocrypha
-  - King James Version
+  - King James Bible
   - Latin Vulgate
   - William Tyndale
   - Masoretic Text

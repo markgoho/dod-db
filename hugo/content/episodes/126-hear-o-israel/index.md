@@ -19,7 +19,7 @@ tags:
   - King Josiah
   - Judaism
   - Apocrypha
-  - King James Version
+  - King James Bible
   - Paul
   - Isaac
   - Isaiah

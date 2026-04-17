@@ -14,6 +14,7 @@ tags:
   - Moab
   - Assyria
   - Joshua
+  - Stele
   - Deuteronomy
   - Esau
   - Esther

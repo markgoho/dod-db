@@ -25,7 +25,7 @@ tags:
   - Hesed
   - Jonah
   - King David
-  - King James Version
+  - King James Bible
   - Leah
   - Mary Magdalene
   - Peter

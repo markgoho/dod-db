@@ -11,7 +11,7 @@ tags:
   - Crucifixion
   - Jerusalem
   - Elijah
-  - King James Version
+  - King James Bible
   - Protestantism
   - Qumran
   - John

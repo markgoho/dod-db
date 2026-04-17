@@ -9,6 +9,7 @@ tags:
   - Southern Baptist Convention
   - Rapture
   - Christian Nationalism
+  - King James Bible
 guests:
   - Rev Karla Kamstra
 draft: false

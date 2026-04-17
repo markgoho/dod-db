@@ -28,6 +28,7 @@ tags:
   - Jeremiah
   - Masoretic Text
   - Solomon
+  - Stele
   - Syria
   - theophany
   - Trinity

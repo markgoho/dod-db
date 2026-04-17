@@ -8,7 +8,7 @@ aliases:
 tags:
   - Jeremiah
   - Elizabeth
-  - King James Version
+  - King James Bible
   - Romans
   - Judaism
   - John the Baptist

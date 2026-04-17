@@ -26,7 +26,7 @@ tags:
   - Essenes
   - Flavius Josephus
   - Jacob
-  - King James Version
+  - King James Bible
   - King Josiah
   - King Sennacherib
   - Laban

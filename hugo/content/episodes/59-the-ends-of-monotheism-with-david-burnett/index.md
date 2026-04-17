@@ -26,7 +26,7 @@ tags:
   - Elephantine
   - Isaac
   - Islam
-  - King James Version
+  - King James Bible
   - Laban
   - Latin Vulgate
   - Protestantism

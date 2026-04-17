@@ -19,7 +19,7 @@ tags:
   - Joshua
   - Pontius Pilate
   - King David
-  - King James Version
+  - King James Bible
   - Moses
   - Samuel
   - baptism

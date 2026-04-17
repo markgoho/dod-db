@@ -26,7 +26,7 @@ tags:
   - Jacob
   - Joshua
   - King David
-  - King James Version
+  - King James Bible
   - Mary Magdalene
   - Nephilim
   - Peter

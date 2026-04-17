@@ -25,7 +25,7 @@ tags:
   - Bethlehem
   - Christian Nationalism
   - divine council
-  - King James Version
+  - King James Bible
   - Nineveh
 books:
   - 2 Kings

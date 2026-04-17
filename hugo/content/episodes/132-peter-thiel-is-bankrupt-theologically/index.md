@@ -13,7 +13,7 @@ tags:
   - Paul
   - Capernaum
   - King David
-  - King James Version
+  - King James Bible
   - Solomon
   - Stephen
   - child sacrifice

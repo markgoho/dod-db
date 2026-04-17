@@ -16,7 +16,7 @@ tags:
   - Babylon
   - Gomer
   - Hezekiah
-  - King James Version
+  - King James Bible
   - Bathsheba
   - Jehu
   - King Saul

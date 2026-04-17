@@ -21,7 +21,7 @@ tags:
   - Isaiah
   - John
   - Judah
-  - King James Version
+  - King James Bible
   - Peter
   - Sapphira
   - Ten Commandments

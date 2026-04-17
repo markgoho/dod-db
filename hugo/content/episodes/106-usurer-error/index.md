@@ -10,7 +10,7 @@ tags:
   - Deuteronomy
   - Hermeneia
   - Islam
-  - King James Version
+  - King James Bible
   - Paul
   - Anselm of Canterbury
   - Arius

@@ -7,6 +7,7 @@ aliases:
   - /episodes/120/
 tags:
   - Isaiah
+  - Hell
   - Judah
   - Moses
   - Sheol
@@ -17,7 +18,6 @@ tags:
   - Augustine
   - Babylon
   - Book of Enoch
-  - Hell
   - etiology
   - Eve
   - Garden of Eden

@@ -25,7 +25,7 @@ tags:
   - Islam
   - Jacob
   - Jerusalem
-  - King James Version
+  - King James Bible
   - Peter
   - Satan
   - Septuagint

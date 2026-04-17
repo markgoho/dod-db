@@ -20,7 +20,7 @@ tags:
   - Hell
   - Jonah
   - Judaism
-  - King James Version
+  - King James Bible
   - Paul
   - Satan
   - Antiochus IV Epiphanes

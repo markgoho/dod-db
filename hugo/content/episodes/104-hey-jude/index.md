@@ -12,7 +12,7 @@ tags:
   - Book of Enoch
   - Sodom
   - Babylon
-  - King James Version
+  - King James Bible
   - Monotheism
   - Deutero-Isaiah
   - Deuteronomy

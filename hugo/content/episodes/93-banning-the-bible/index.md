@@ -22,7 +22,7 @@ tags:
   - Hell
   - Jennifer Bird
   - Jerusalem
-  - King James Version
+  - King James Bible
   - Moab
   - Mount Sinai
   - Passover

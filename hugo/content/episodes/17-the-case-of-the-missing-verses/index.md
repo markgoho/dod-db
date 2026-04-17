@@ -6,7 +6,7 @@ videoId: naI65ELNhRw
 aliases:
   - /episodes/17/
 tags:
-  - King James Version
+  - King James Bible
   - William Tyndale
   - Apocrypha
   - Desiderius Erasmus
@@ -40,7 +40,7 @@ segmentData:
   - type: thats-history
     anchor: thats-history-1
     label: "That's History"
-    topicLabel: King James Version
+    topicLabel: King James Bible
     summary: History and creation of the King James Version of Bible.
     startSeconds: 82
   - type: know-your-bible

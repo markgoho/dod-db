@@ -14,7 +14,7 @@ tags:
   - Shem
   - Cain
   - Enoch
-  - King James Version
+  - King James Bible
   - Lamech
   - Luke
   - Adam

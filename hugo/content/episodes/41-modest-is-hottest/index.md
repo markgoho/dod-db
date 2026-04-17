@@ -16,7 +16,7 @@ tags:
   - Paul
   - Deuteronomy
   - Joshua
-  - King James Version
+  - King James Bible
   - Africa
   - Flood
   - Hell

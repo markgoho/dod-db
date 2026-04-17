@@ -20,7 +20,7 @@ tags:
   - Eve
   - Isaiah
   - Ishmael
-  - King James Version
+  - King James Bible
   - Latin Vulgate
   - Midianites
   - Noah

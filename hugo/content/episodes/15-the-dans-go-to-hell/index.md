@@ -32,7 +32,7 @@ tags:
   - Flavius Josephus
   - Flood
   - King David
-  - King James Version
+  - King James Bible
   - Pseudepigrapha
   - Satan
   - Seleucid Empire

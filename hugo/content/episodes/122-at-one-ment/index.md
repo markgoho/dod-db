@@ -10,7 +10,7 @@ tags:
   - Septuagint
   - Leningrad Codex
   - Paul
-  - King James Version
+  - King James Bible
   - Anselm of Canterbury
   - Gregory of Nyssa
   - Masoretic Text

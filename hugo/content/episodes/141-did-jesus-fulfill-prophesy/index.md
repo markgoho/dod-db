@@ -23,7 +23,7 @@ tags:
   - Isaiah
   - baptism
   - Jeremiah
-  - King James Version
+  - King James Bible
   - Luke
   - Passover
   - Peter

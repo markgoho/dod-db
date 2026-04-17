@@ -18,7 +18,7 @@ tags:
   - Asherah
   - Deuteronomy
   - Gomorrah
-  - King James Version
+  - King James Bible
   - Abraham
   - Amorites
   - Dead Sea Scrolls

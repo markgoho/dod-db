@@ -39,7 +39,7 @@ tags:
   - Jerome
   - Joseph
   - Justin Martyr
-  - King James Version
+  - King James Bible
   - Moabites
   - Samuel
 books:

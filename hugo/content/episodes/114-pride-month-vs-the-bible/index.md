@@ -16,7 +16,7 @@ tags:
   - Gentiles
   - Isaiah
   - Judah
-  - King James Version
+  - King James Bible
   - Moabites
   - Satan
 books:

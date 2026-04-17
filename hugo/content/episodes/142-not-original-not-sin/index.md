@@ -21,7 +21,7 @@ tags:
   - Cherubim
   - Gospel of James
   - Justin Martyr
-  - King James Version
+  - King James Bible
   - Letter of Aristeas
   - Noah
   - Saint Titus

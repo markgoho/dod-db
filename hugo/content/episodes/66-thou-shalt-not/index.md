@@ -10,11 +10,12 @@ tags:
   - YHWH
   - Asherah
   - Baal
+  - Stele
   - Judaism
   - Islam
   - Jacob
   - Jehu
-  - King James Version
+  - King James Bible
   - Onan
   - Satan
   - Ugarit

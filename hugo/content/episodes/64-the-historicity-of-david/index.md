@@ -20,6 +20,7 @@ tags:
   - Samson
   - Canaanites
   - Jerusalem
+  - Stele
   - Jacob
   - King Jabin
   - Abraham

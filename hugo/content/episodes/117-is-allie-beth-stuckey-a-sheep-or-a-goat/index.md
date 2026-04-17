@@ -13,7 +13,7 @@ tags:
   - Asherah
   - Passover
   - Jerusalem
-  - King James Version
+  - King James Bible
   - Maccabees
   - Africa
   - Babylon

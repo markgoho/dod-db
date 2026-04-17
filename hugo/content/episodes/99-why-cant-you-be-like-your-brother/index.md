@@ -21,7 +21,7 @@ tags:
   - Catholicism
   - Judaism
   - Gospel of James
-  - King James Version
+  - King James Bible
   - Luke
   - Moses
   - Anatolia

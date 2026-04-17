@@ -19,7 +19,7 @@ tags:
   - Deuteronomy
   - Hezekiah
   - Isaac
-  - King James Version
+  - King James Bible
   - Syria
   - YHWH
   - Africa

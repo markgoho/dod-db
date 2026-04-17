@@ -22,7 +22,7 @@ tags:
   - Joshua
   - Judah
   - Judaism
-  - King James Version
+  - King James Bible
   - Luke
   - Protestantism
   - Samaritans

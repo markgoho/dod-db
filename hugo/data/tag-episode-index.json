@@ -6813,12 +6813,12 @@
   "Hell": [
     {
       "ep": 98,
-      "m": 56,
+      "m": 74,
       "title": "Episode 98 (February 17, 2025), \"Did Jesus Go to Hell?\""
     },
     {
       "ep": 15,
-      "m": 28,
+      "m": 33,
       "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
     },
     {
@@ -6827,18 +6827,23 @@
       "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
     },
     {
+      "ep": 89,
+      "m": 12,
+      "title": "Episode 89 (December 16, 2024), \"Spare the Rod... Please!\""
+    },
+    {
       "ep": 105,
       "m": 11,
       "title": "Episode 105 (April 7, 2025), \"Wandering in the Wilderness\" with Angela Roskop Erisman"
     },
     {
-      "ep": 89,
-      "m": 8,
-      "title": "Episode 89 (December 16, 2024), \"Spare the Rod... Please!\""
+      "ep": 120,
+      "m": 9,
+      "title": "Save Me!"
     },
     {
       "ep": 84,
-      "m": 8,
+      "m": 9,
       "title": "Episode 84 (November 11, 2024), \"The Demon Haunted Bible\""
     },
     {
@@ -6870,11 +6875,6 @@
       "ep": 54,
       "m": 4,
       "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
-    },
-    {
-      "ep": 120,
-      "m": 3,
-      "title": "Save Me!"
     },
     {
       "ep": 27,
@@ -6997,6 +6997,11 @@
       "title": "Episode 109 (May 5, 2025), \"The Heart of Pharaoh\""
     },
     {
+      "ep": 108,
+      "m": 1,
+      "title": "Episode 108 (April 28, 2025), \"Biblical\" Marriage"
+    },
+    {
       "ep": 106,
       "m": 1,
       "title": "Episode 106 (April 14, 2025), \"Usurer Error\""
@@ -7050,6 +7055,11 @@
       "ep": 71,
       "m": 1,
       "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\""
+    },
+    {
+      "ep": 67,
+      "m": 1,
+      "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi"
     },
     {
       "ep": 52,
@@ -7423,6 +7433,78 @@
       "ep": 23,
       "m": 1,
       "title": "Episode 23 (September 11, 2023), \"Abortion and the Bible\""
+    }
+  ],
+  "Homosexuality": [
+    {
+      "ep": 10,
+      "m": 38,
+      "title": "Episode 10 (June 12, 2023): \"Adam and Steve (what the Bible says about homosexuality)\""
+    },
+    {
+      "ep": 114,
+      "m": 16,
+      "title": "Pride Month vs. the Bible!"
+    },
+    {
+      "ep": 125,
+      "m": 10,
+      "title": "Holy Sex Work?"
+    },
+    {
+      "ep": 104,
+      "m": 5,
+      "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
+    },
+    {
+      "ep": 124,
+      "m": 2,
+      "title": "Who are the REAL Christians?"
+    },
+    {
+      "ep": 103,
+      "m": 2,
+      "title": "Episode 103 (March 24, 2025), \"The Pastor Skeptic\""
+    },
+    {
+      "ep": 91,
+      "m": 2,
+      "title": "Episode 91 (December 30, 2024), \"Star Spangled Christian Nationalism\" With April Ajoy"
+    },
+    {
+      "ep": 30,
+      "m": 2,
+      "title": "Christian Nationalism Ain't Christian: With Andrew Whitehead"
+    },
+    {
+      "ep": 17,
+      "m": 2,
+      "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
+    },
+    {
+      "ep": 3,
+      "m": 2,
+      "title": "Episode 3 (April 23, 2023), \"Why Is She Salt?\""
+    },
+    {
+      "ep": 139,
+      "m": 1,
+      "title": "Polygamy!"
+    },
+    {
+      "ep": 129,
+      "m": 1,
+      "title": "Biblical Sex Toys?!?"
+    },
+    {
+      "ep": 89,
+      "m": 1,
+      "title": "Episode 89 (December 16, 2024), \"Spare the Rod... Please!\""
+    },
+    {
+      "ep": 83,
+      "m": 1,
+      "title": "Episode 83 (November 4, 2024), \"The God-Forsaken Psalm\""
     }
   ],
   "Hypostasis": [
@@ -10943,15 +11025,15 @@
       "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
     }
   ],
-  "King James Version": [
+  "King James Bible": [
     {
       "ep": 17,
-      "m": 35,
+      "m": 37,
       "title": "Episode 17 (July 31, 2023), \"The Case of the Missing Verses\""
     },
     {
       "ep": 58,
-      "m": 30,
+      "m": 32,
       "title": "Episode 58 (May 13, 2024), \"Translation Frustration\""
     },
     {
@@ -11090,6 +11172,11 @@
       "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
     },
     {
+      "ep": 12,
+      "m": 3,
+      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
+    },
+    {
       "ep": 131,
       "m": 2,
       "title": "You Want a Boat? I Noah Guy"
@@ -11160,11 +11247,6 @@
       "title": "Apostlepalooza!"
     },
     {
-      "ep": 12,
-      "m": 2,
-      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
-    },
-    {
       "ep": 155,
       "m": 1,
       "title": "The Legend of the Septuagint"
@@ -11228,6 +11310,11 @@
       "ep": 88,
       "m": 1,
       "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\""
+    },
+    {
+      "ep": 82,
+      "m": 1,
+      "title": "Episode 82 (October 27, 2024), \"Deconstruction Zone\" with Rev Karla Kamstra"
     },
     {
       "ep": 72,
@@ -12170,6 +12257,28 @@
       "ep": 6,
       "m": 1,
       "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
+    }
+  ],
+  "Mark of the Beast": [
+    {
+      "ep": 9,
+      "m": 9,
+      "title": "Episode 9 (June 5, 2023), \"The Mark of the Best\""
+    },
+    {
+      "ep": 39,
+      "m": 3,
+      "title": "Episode 39 (January 1, 2024), \"Revealing Revelation\""
+    },
+    {
+      "ep": 54,
+      "m": 1,
+      "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
+    },
+    {
+      "ep": 4,
+      "m": 1,
+      "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
     }
   ],
   "Martin Luther": [
@@ -15284,6 +15393,28 @@
       "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
     }
   ],
+  "Prototype Theory": [
+    {
+      "ep": 9,
+      "m": 9,
+      "title": "Episode 9 (June 5, 2023), \"The Mark of the Best\""
+    },
+    {
+      "ep": 136,
+      "m": 1,
+      "title": "Close Encounters of the Catholic Kind"
+    },
+    {
+      "ep": 124,
+      "m": 1,
+      "title": "Who are the REAL Christians?"
+    },
+    {
+      "ep": 77,
+      "m": 1,
+      "title": "Episode 77 (September 23, 2024), \"What is an Atheist?\""
+    }
+  ],
   "provenance": [
     {
       "ep": 3,
@@ -17470,6 +17601,58 @@
       "ep": 23,
       "m": 1,
       "title": "Episode 23 (September 11, 2023), \"Abortion and the Bible\""
+    }
+  ],
+  "Stele": [
+    {
+      "ep": 14,
+      "m": 27,
+      "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
+    },
+    {
+      "ep": 65,
+      "m": 11,
+      "title": "Episode 65 (July 1, 2024), \"I Got Soul, and I'm Super Bad\""
+    },
+    {
+      "ep": 7,
+      "m": 5,
+      "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
+    },
+    {
+      "ep": 66,
+      "m": 4,
+      "title": "Episode 66 (July 8, 2024), \"Thou Shalt Not\""
+    },
+    {
+      "ep": 64,
+      "m": 3,
+      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
+    },
+    {
+      "ep": 46,
+      "m": 3,
+      "title": "Episode 46 (February 19, 2024), \"GENOCIDE!\""
+    },
+    {
+      "ep": 36,
+      "m": 3,
+      "title": "Episode 36 (December 11, 2023), \"The Why Question\" with Jacob Wright"
+    },
+    {
+      "ep": 139,
+      "m": 1,
+      "title": "Polygamy!"
+    },
+    {
+      "ep": 86,
+      "m": 1,
+      "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
+    },
+    {
+      "ep": 2,
+      "m": 1,
+      "title": "Episode 2 (April 17, 2023), \"God's Wife\" with Prof. Francesca Stavrakopoulou"
     }
   ],
   "Stephen": [

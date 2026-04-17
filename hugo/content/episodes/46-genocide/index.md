@@ -16,13 +16,14 @@ tags:
   - Abraham
   - Canaan
   - Jerusalem
-  - King James Version
+  - King James Bible
   - Samaria
   - Amorites
   - Babylon
   - Flood
   - inerrancy
   - Sodom
+  - Stele
   - YHWH
   - Gaza
   - Judaism

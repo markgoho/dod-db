@@ -25,7 +25,7 @@ tags:
   - Hell
   - Jerusalem
   - Ketef Hinnom
-  - King James Version
+  - King James Bible
   - Origen
   - Torah
 books:

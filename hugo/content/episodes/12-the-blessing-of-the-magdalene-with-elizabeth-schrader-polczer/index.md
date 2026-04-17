@@ -14,8 +14,8 @@ tags:
   - Eusebius
   - Gospel of Thomas
   - Paul
+  - King James Bible
   - Tertullian
-  - King James Version
   - source criticism
   - Apocrypha
   - Codex Sinaiticus

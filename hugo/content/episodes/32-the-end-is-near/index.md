@@ -19,7 +19,7 @@ tags:
   - Antiochus IV Epiphanes
   - Baal
   - Hell
-  - King James Version
+  - King James Bible
   - Latin Vulgate
   - Satan
   - Seleucid Empire

@@ -7,7 +7,7 @@ aliases:
   - /episodes/101/
 tags:
   - Eschatology
-  - King James Version
+  - King James Bible
   - Pliny the Younger
   - Ten Commandments
   - baptism

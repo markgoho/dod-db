@@ -31,44 +31,39 @@ If the user does not provide a tag name, ask for one before proceeding.
 - When you include an alias, write it as a Hugo path like `/tags/adonai/` in `aliases`, and include the display text like `Adonai` in `knownAs`.
 - Both `aliases` and `knownAs` are optional.
 
-### 2. Search for a featured segment
+### 2. Find featured items
 
+- Featured content may include multiple items, using `featuredItems`.
+- Prefer 1 to 2 featured items total.
+- Featured items should come from different episodes.
+- Do not include both a segment and its parent episode as separate featured items.
 - Read `data/processed-videos.json` for the top episodes.
-- Search each episode's `segments` array for a likely match in `topicLabel` or `summary`.
+- Search each episode's `segments` array for likely matches in `topicLabel` or `summary`.
+- Also read the top episodes' Hugo frontmatter from `hugo/content/episodes/*/index.md` and check `segmentData` directly, since it may be more specific than processed segment metadata.
 - Match fuzzily and case-insensitively.
 - Prefer verified segments when available.
 - Prefer substantive segment types in this order:
   1. `what-is-that`
   2. `taking-issue`
   3. `chapter-and-verse`
-- If you find a candidate segment, read that episode's Hugo frontmatter from `hugo/content/episodes/*/index.md`.
-- Use `segmentData` to find the exact `anchor` value for the chosen segment.
-- Record:
-  - `episodeNumber`
-  - `segmentAnchor`
-  - `label`
-
-Construct the label from the segment label and topic label, for example `What is That? — Preterism`.
+- When you choose a segment, use `segmentData` to find the exact `anchor` value.
+- Construct the label from the segment label and topic label, for example `What is That? — Preterism`.
+- If you need an additional featured item after choosing the best segment, prefer a distinct strong episode from another top episode, often a guest episode or another especially central discussion.
+- If no suitable segment is found, choose up to one strong `episode` item instead.
+- If nothing stands out, omit featured content.
 
 The frontmatter shape is:
 
 ```yaml
-featuredSegment:
-  episodeNumber: 119
-  segmentAnchor: what-is-that-1
-  label: "What is That? — Preterism"
+featuredItems:
+  - type: segment
+    episodeNumber: 119
+    segmentAnchor: what-is-that-1
+    label: "What is That? — Preterism"
+  - type: episode
+    number: 143
+    label: "Guest Episode Title"
 ```
-
-### 2b. Fallback to a featured episode
-
-If no suitable featured segment is found:
-
-- Check the top episodes' Hugo frontmatter for a `guests` field.
-- If a good guest episode exists, use it as `featuredEpisode`.
-- Include:
-  - `number`
-  - optional `label`
-- If neither a featured segment nor a guest episode is found, omit both fields.
 
 ### 3. Write the definition
 
@@ -105,7 +100,7 @@ Use frontmatter with:
 - `definition`
 - optional `aliases`
 - optional `knownAs`
-- optional `featuredSegment` or `featuredEpisode`
+- optional `featuredItems`
 - `quotes`
 - `showTopEpisodes: true`
 - `topEpisodesLimit: 6`
@@ -133,7 +128,9 @@ Then write 1 to 2 body paragraphs explaining why this topic matters on the show.
 
 ## Output Rules
 
-- Prefer `featuredSegment` over `featuredEpisode` when a good segment exists.
+- Use `featuredItems` when adding featured content.
+- Prefer a strong segment first, then optionally add one more featured item from a different episode.
+- Never include both a segment and its parent episode as separate featured items.
 - Always use `segmentAnchor`, not `segmentType`, when linking to a segment.
 - Do not include a `dek` field.
 - Keep the definition concise, concept-first, and aligned with the show's framing without mentioning the show itself.

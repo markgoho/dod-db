@@ -25,7 +25,7 @@ tags:
   - Deuteronomy
   - Isaiah
   - Justin Martyr
-  - King James Version
+  - King James Bible
   - Monotheism
   - provenance
 books:

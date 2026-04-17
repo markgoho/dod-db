@@ -31,6 +31,7 @@ tags:
   - Rezin
   - Septuagint
   - Shishak
+  - Stele
   - YHWH
 books:
   - 1 Timothy

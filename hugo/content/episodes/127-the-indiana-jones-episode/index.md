@@ -21,7 +21,7 @@ tags:
   - Babylon
   - Egyptians
   - Joseph
-  - King James Version
+  - King James Bible
   - Mary Magdalene
   - Noah
 books:

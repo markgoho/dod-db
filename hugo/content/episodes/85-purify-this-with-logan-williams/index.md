@@ -11,7 +11,7 @@ tags:
   - Judaism
   - Textus Receptus
   - Deuteronomy
-  - King James Version
+  - King James Bible
   - Septuagint
   - Flavius Josephus
   - Moses

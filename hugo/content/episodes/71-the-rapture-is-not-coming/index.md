@@ -13,7 +13,7 @@ tags:
   - Judah
   - Babylon
   - Paul
-  - King James Version
+  - King James Bible
   - Michael
   - Seleucid Empire
   - Cyrus the Great

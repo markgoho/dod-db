@@ -1,6 +1,7 @@
 import type { TagCategory, TagStatus } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
 import { removeTagFromAllEpisodes } from "../utils/remove-tag-from-episodes.js";
+import { renameTagInAllEpisodes } from "../utils/rename-tag-in-episodes.js";
 import {
   buildTagDefinition,
   formatTagEntry,
@@ -136,6 +137,18 @@ export async function updateTagInVocabulary(
     console.log(
       `✓ Updated tag "${originalCanonical}"${newCanonical === originalCanonical ? "" : ` → "${newCanonical}"`}`,
     );
+
+    if (newCanonical.toLowerCase() !== originalCanonical.toLowerCase()) {
+      const renamedCount = await renameTagInAllEpisodes(
+        originalCanonical,
+        newCanonical,
+      );
+      if (renamedCount > 0) {
+        console.log(
+          `  Renamed stored episode tags in ${renamedCount} episode(s)`,
+        );
+      }
+    }
 
     // If status changed to 'rejected', remove from all episodes
     if (updates.status === "rejected" && existingTag.status !== "rejected") {

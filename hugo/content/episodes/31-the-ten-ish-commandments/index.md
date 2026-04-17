@@ -16,7 +16,7 @@ tags:
   - Philo of Alexandria
   - Ritual Decalogue
   - Asherah
-  - King James Version
+  - King James Bible
   - Baal
   - Cherubim
   - Council of Jerusalem

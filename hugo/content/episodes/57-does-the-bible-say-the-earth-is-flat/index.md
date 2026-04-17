@@ -18,7 +18,7 @@ tags:
   - Jerusalem
   - John
   - Judah
-  - King James Version
+  - King James Bible
   - Paul
   - Septuagint
   - YHWH

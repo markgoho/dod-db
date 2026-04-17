@@ -10,7 +10,7 @@ tags:
   - Trinity
   - King Saul
   - Elijah
-  - King James Version
+  - King James Bible
   - Satan
   - Samuel
   - Baal

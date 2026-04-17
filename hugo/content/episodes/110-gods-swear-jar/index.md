@@ -15,7 +15,7 @@ tags:
   - baptism
   - Dead Sea Scrolls
   - Isaiah
-  - King James Version
+  - King James Bible
   - Matthew
   - Solomon
   - Deuteronomy

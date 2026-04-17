@@ -24,7 +24,7 @@ tags:
   - Deuteronomy
   - Joseph
   - Joshua
-  - King James Version
+  - King James Bible
   - Melchizedek
   - Moses
   - Persia

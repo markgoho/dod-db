@@ -6,26 +6,58 @@
 {{ define "main" }}
   {{ $tagIndex := index hugo.Data "tag-episode-index" }}
   {{ $rankedEpisodes := index $tagIndex .Title | default slice }}
+  {{ $topEpisode := index $rankedEpisodes 0 }}
   {{ $topEpisodesLimit := .Params.topEpisodesLimit | default 6 }}
-  {{ $featuredEpisodes := first $topEpisodesLimit $rankedEpisodes }}
+  {{ $featuredEpisodes := first $topEpisodesLimit (after 1 $rankedEpisodes) }}
   <section class="term-page term-page--episodes-archive tag-page">
     {{ $def := .Params.definition | default .Params.dek | default "" }}
     {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "tags" "backHref" "/tags/" "backLabel" "All Topics" "heroClass" "page-hero--profile" "definition" $def "category" (.Params.category | default "") "knownAs" (.Params.knownAs | default slice)) }}
 
-    {{ with .Params.featuredSegment }}
-      {{ $featuredEpisodePage := index (where $.Pages ".Params.episodeNumber" .episodeNumber) 0 }}
-      {{ if $featuredEpisodePage }}
-        <div class="tag-featured-callouts episodes-grid">
-          {{ partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured segment" "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentAnchor))) }}
-        </div>
-      {{ end }}
+    {{ $featuredItems := slice }}
+    {{ $allEpisodes := where site.RegularPages ".Section" "episodes" }}
+    {{ with .Params.featuredItems }}
+      {{ $featuredItems = . }}
+    {{ else with .Params.featuredSegment }}
+      {{ $featuredItems = slice (merge . (dict "type" "segment")) }}
     {{ else with .Params.featuredEpisode }}
-      {{ $featuredEpisodePage := index (where $.Pages ".Params.episodeNumber" .number) 0 }}
-      {{ if $featuredEpisodePage }}
-        <div class="tag-featured-callouts episodes-grid">
-          {{ partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured episode" "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion")) }}
-        </div>
+      {{ $featuredItems = slice (merge . (dict "type" "episode")) }}
+    {{ end }}
+    {{ $featuredMarkup := "" }}
+    {{ range $featuredItems }}
+      {{ if eq .type "segment" }}
+        {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" .episodeNumber) 0 }}
+        {{ if $featuredEpisodePage }}
+          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured segment" "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentAnchor)))) }}
+        {{ end }}
+      {{ else if eq .type "episode" }}
+        {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" .number) 0 }}
+        {{ if $featuredEpisodePage }}
+          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured episode" "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion"))) }}
+        {{ end }}
       {{ end }}
+    {{ end }}
+    {{ if or (ne $featuredMarkup "") $topEpisode }}
+      <section class="tag-featured-overview">
+        <div class="tag-section-heading">
+          <div>
+            <h2 class="type-section-title tag-section-title">Where to start</h2>
+            <p class="tag-section-copy">
+              Start here for the best in-depth listening on {{ .Title }}:
+              featured segments, featured episodes, and the episode with the
+              most mentions.
+            </p>
+          </div>
+        </div>
+        <div class="tag-featured-callouts episodes-grid">
+          {{ $featuredMarkup | safeHTML }}
+          {{ if $topEpisode }}
+            {{ $topEpisodePage := index (where $allEpisodes ".Params.episodeNumber" $topEpisode.ep) 0 }}
+            {{ if $topEpisodePage }}
+              {{ partial "episode-card" (dict "episode" $topEpisodePage "ranked" true "mentionCount" $topEpisode.m "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" "Top mention" "guestText" "The episode that talks about this topic the most")) }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </section>
     {{ end }}
 
     {{ with .Params.quotes }}
@@ -72,25 +104,28 @@
       </section>
     {{ end }}
 
-    {{ if and (.Params.showTopEpisodes | default true) (gt (len $featuredEpisodes) 0) }}
+    {{ if and (.Params.showTopEpisodes | default true) (gt (len $rankedEpisodes) 0) }}
       <section class="tag-episodes tag-episodes--featured">
         <div class="tag-section-heading">
           <div>
             <h2 class="type-section-title tag-section-title">Top episodes</h2>
             <p class="tag-section-copy">
-              Ranked by mentions of {{ .Title }} across the transcript.
+              Ranked by mentions of {{ .Title }} across the transcript. Start
+              with the top mention above, then keep going here.
             </p>
           </div>
         </div>
-        <div class="episodes-grid">
-          {{ range $featuredEpisodes }}
-            {{ $episodePage := where $.Pages ".Params.episodeNumber" .ep }}
-            {{ $episode := index $episodePage 0 }}
-            {{ if $episode }}
-              {{ partial "episode-card" (dict "episode" $episode "ranked" true "mentionCount" .m "badgeSource" "tags" "currentTerm" $.Title) }}
+        {{ if gt (len $featuredEpisodes) 0 }}
+          <div class="episodes-grid">
+            {{ range $featuredEpisodes }}
+              {{ $episodePage := where $.Pages ".Params.episodeNumber" .ep }}
+              {{ $episode := index $episodePage 0 }}
+              {{ if $episode }}
+                {{ partial "episode-card" (dict "episode" $episode "ranked" true "mentionCount" .m "badgeSource" "tags" "currentTerm" $.Title) }}
+              {{ end }}
             {{ end }}
-          {{ end }}
-        </div>
+          </div>
+        {{ end }}
       </section>
     {{ end }}
 

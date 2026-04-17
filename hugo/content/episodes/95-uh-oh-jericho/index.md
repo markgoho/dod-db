@@ -12,7 +12,7 @@ tags:
   - Joshua
   - Moses
   - Enoch
-  - King James Version
+  - King James Bible
   - Canaan
   - Jared
   - Lamech

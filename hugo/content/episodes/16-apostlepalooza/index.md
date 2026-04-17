@@ -22,7 +22,7 @@ tags:
   - Abraham
   - Canaanites
   - Gnostic
-  - King James Version
+  - King James Bible
   - Moses
   - YHWH
   - Catholicism

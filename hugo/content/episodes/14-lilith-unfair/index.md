@@ -6,6 +6,7 @@ videoId: xYDiFyXinfs
 aliases:
   - /episodes/14/
 tags:
+  - Stele
   - Lilith
   - Adam
   - Asherah
@@ -14,7 +15,7 @@ tags:
   - Eve
   - etiology
   - Garden of Eden
-  - King James Version
+  - King James Bible
   - Torah
   - Jacob
   - Joshua
