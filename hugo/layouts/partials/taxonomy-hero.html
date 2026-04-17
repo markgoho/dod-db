@@ -4,6 +4,7 @@
 {{- $heroClass := .heroClass | default "" -}}
 {{- $definition := .definition | default "" -}}
 {{- $category := .category | default "" -}}
+{{- $knownAs := .knownAs | default slice -}}
 {{- $titleTransitionName := printf "%s-title-%s" .taxonomy ($page.Title | urlize) -}}
 
 
@@ -38,5 +39,10 @@
         <span class="tag-hero__classification-value">{{ $category }}</span>
       </div>
     </div>
+  {{- end }}
+  {{- with $knownAs }}
+    <p class="tag-hero__alias-list type-eyebrow">
+      Redirected from: {{ delimit . ", " }}
+    </p>
   {{- end }}
 </header>

@@ -1,19 +1,10 @@
 ---
 title: Preterism
 definition: >-
-  The interpretive view that end-times prophecies in texts like Daniel, the
-  Olivet Discourse, and Revelation were fulfilled in the past rather than
-  awaiting future fulfillment.
-dek: >-
-  A recurring Data Over Dogma topic in conversations about eschatology,
-  apocalyptic literature, and how readers frame biblical prophecy.
-category: theology
-featuredEpisode:
-  number: 119
-  label: Problematic Prophecy
+  The interpretive view that end-times prophecies in texts like Daniel, the Olivet Discourse, and Revelation were fulfilled in the past rather than awaiting future fulfillment.
 featuredSegment:
   episodeNumber: 119
-  segmentType: what-is-that
+  segmentAnchor: what-is-that-1
   label: What is That? — Preterism
 quotes:
   - text: >-

@@ -7546,13 +7546,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "adonai's",
-    variations: [],
-    category: "theology",
-    description: "Possessive form of Adonai, a title for God in Judaism.",
-    status: "proposed",
-  },
-  {
     canonical: "shaatnez",
     variations: ["shatnez"],
     category: "miscellaneous",

@@ -10,18 +10,20 @@
   {{ $featuredEpisodes := first $topEpisodesLimit $rankedEpisodes }}
   <section class="term-page term-page--episodes-archive tag-page">
     {{ $def := .Params.definition | default .Params.dek | default "" }}
-    {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "tags" "backHref" "/tags/" "backLabel" "All Topics" "heroClass" "page-hero--profile" "definition" $def "category" (.Params.category | default "")) }}
+    {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "tags" "backHref" "/tags/" "backLabel" "All Topics" "heroClass" "page-hero--profile" "definition" $def "category" (.Params.category | default "") "knownAs" (.Params.knownAs | default slice)) }}
 
-    {{ with .Params.featuredEpisode }}
+    {{ with .Params.featuredSegment }}
+      {{ $featuredEpisodePage := index (where $.Pages ".Params.episodeNumber" .episodeNumber) 0 }}
+      {{ if $featuredEpisodePage }}
+        <div class="tag-featured-callouts episodes-grid">
+          {{ partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured segment" "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentAnchor))) }}
+        </div>
+      {{ end }}
+    {{ else with .Params.featuredEpisode }}
       {{ $featuredEpisodePage := index (where $.Pages ".Params.episodeNumber" .number) 0 }}
       {{ if $featuredEpisodePage }}
         <div class="tag-featured-callouts episodes-grid">
           {{ partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured episode" "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion")) }}
-          {{ with $.Params.featuredSegment }}
-            {{ if eq .episodeNumber $.Params.featuredEpisode.number }}
-              {{ partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured segment" "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentType))) }}
-            {{ end }}
-          {{ end }}
         </div>
       {{ end }}
     {{ end }}

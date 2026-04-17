@@ -1,15 +1,12 @@
 ---
 title: Univocality
 definition: >-
-  The assumption that the Bible speaks with a single voice, expresses a unified
-  perspective, and can therefore be harmonized into one coherent theological
-  position despite being a library of texts written by different authors in
-  different times and contexts.
+  The assumption that the Bible speaks with a single voice, expresses a unified perspective, and can therefore be harmonized into one coherent theological
+  position despite being a library of texts written by different authors in different times and contexts.
 dek: >-
   A recurring Data Over Dogma concept used to challenge harmonizing readings
   that flatten disagreement, contradiction, and development within biblical
   literature.
-category: scholarship
 quotes:
   - text: >-
       The voice of one of those biblical authors, ostensibly an inspired

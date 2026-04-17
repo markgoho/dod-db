@@ -6,7 +6,6 @@
 
 .tag-hero__dek {
   border-inline-start: var(--border-width-md) solid var(--color-action);
-  max-width: var(--content-max-width-prose);
   padding-inline-start: var(--space-m);
   text-align: left;
 }
@@ -26,6 +25,11 @@
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-tight);
   text-transform: capitalize;
+}
+
+.tag-hero__alias-list {
+  color: var(--color-text-muted);
+  margin: 0;
 }
 
 .tag-quotes {
