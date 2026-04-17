@@ -18,6 +18,7 @@ tags:
   - Catholicism
   - Deuteronomy
   - Hell
+  - Homosexuality
   - Seth
   - Sodom
   - Enoch
@@ -30,6 +31,7 @@ tags:
   - Martin Luther
   - Noah
   - Peter
+  - Prototype Theory
   - Satan
   - Septuagint
   - Trinity

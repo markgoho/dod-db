@@ -13,6 +13,7 @@ tags:
   - Textus Receptus
   - Martin Luther
   - Hell
+  - Homosexuality
   - Latin Vulgate
   - Constantine
   - Council of Nicaea

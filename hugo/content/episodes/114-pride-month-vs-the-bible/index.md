@@ -6,6 +6,7 @@ videoId: nWTu2bw1dQc
 aliases:
   - /episodes/114/
 tags:
+  - Homosexuality
   - Sodom
   - Paul
   - Hell

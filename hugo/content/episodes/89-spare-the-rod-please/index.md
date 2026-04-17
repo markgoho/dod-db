@@ -18,6 +18,7 @@ tags:
   - Augustine
   - cognitive dissonance
   - Hermeneia
+  - Homosexuality
   - inerrancy
   - Romans
 books:

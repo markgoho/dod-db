@@ -27,6 +27,7 @@ tags:
   - etiology
   - Eve
   - Flavius Josephus
+  - Homosexuality
   - Rezin
   - Septuagint
   - Shishak

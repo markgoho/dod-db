@@ -30,6 +30,7 @@ tags:
   - King David
   - Melchizedek
   - Syria
+  - Mark of the Beast
   - Mary Magdalene
   - Nero
   - Pergamum

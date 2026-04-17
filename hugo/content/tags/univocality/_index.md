@@ -1,46 +1,39 @@
 ---
 title: Univocality
-definition: >-
-  The assumption that the Bible speaks with a single voice, expresses a unified perspective, and can therefore be harmonized into one coherent theological
-  position despite being a library of texts written by different authors in different times and contexts.
-dek: >-
-  A recurring Data Over Dogma concept used to challenge harmonizing readings
-  that flatten disagreement, contradiction, and development within biblical
-  literature.
+definition: Univocality is the assumption that the Bible speaks with a single, unified voice and that its different authors ultimately agree with one another. In critical scholarship, the term usually names an interpretive imposition rather than a feature of the text itself, especially when harmonization suppresses genuine disagreement between authors, traditions, or theological positions.
+aliases:
+  - /tags/univocal/
+  - /tags/non-univocal/
+  - /tags/non-univocality/
+knownAs:
+  - Univocal
+  - Non-univocality
+featuredSegment:
+  episodeNumber: 6
+  segmentAnchor: what-does-that-mean-1
+  label: "What Does That Mean? — Univocality"
 quotes:
-  - text: >-
-      The voice of one of those biblical authors, ostensibly an inspired
-      author of the Bible, is silenced by those who impose this presupposition
-      of univocality from the outside.
+  - text: "Univocality, from the Latin, means one voice."
+    speaker: Dan McClellan
+    episode: 6
+    timestamp: "00:02:54.660"
+  - text: "The idea is basically that the Bible, all the different passages in the Bible, they all share the same perspective."
+    speaker: Dan McClellan
+    episode: 6
+    timestamp: "00:02:54.660"
+  - text: "The biggest problem I have with univocality is that it silences the biblical authors."
+    speaker: Dan McClellan
+    episode: 6
+    timestamp: "00:06:01.070"
+  - text: "The voice of one of those biblical authors is silenced by those who impose this presupposition of univocality from the outside."
     speaker: Dan McClellan
     episode: 6
     timestamp: "00:12:47.700"
-  - text: >-
-      The text is not univocal. I mean, just between Genesis 1:28 and 2:24,
-      you've got two entirely distinct creation accounts.
-    speaker: Dan McClellan
-    episode: 44
-    timestamp: "00:25:52.230"
-  - text: >-
-      Because the Bible's not univocal. I don't know if you've heard about this
-      yet, but what, what.
-    speaker: Dan McClellan
-    episode: 57
-    timestamp: "00:06:31.760"
-  - text: >-
-      We impose this unifying framework of inspiration, inerrancy,
-      univocality, historicity. And you have no choice but to just meddle with
-      and do violence to what the authors were trying to get across.
-    speaker: Dan McClellan
-    episode: 146
-    timestamp: "00:29:47.424"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Univocality is one of the core concepts the show returns to when discussing how
-later readers impose coherence across texts that were not written to say the
-same thing. The term is especially useful on episodes dealing with harmonizing
-readings, apologetics, and debates over contradiction, interpretation, and
-authority.
+Univocality matters in this project because it sits underneath a wide range of modern arguments about inspiration, inerrancy, contradiction, and doctrinal certainty. Once the Bible is treated as a single speaker rather than a library of competing texts, interpretation often shifts from listening to individual authors toward forcing agreement among them.
+
+That makes the tag especially useful for understanding how harmonization works. Discussions gathered here tend to surface the places where later readers smooth over conflict between Paul and James, Samuel and Chronicles, or other textual voices that are more illuminating when allowed to remain in tension.

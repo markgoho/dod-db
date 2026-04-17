@@ -11,6 +11,7 @@ tags:
   - Romans
   - Andrew Whitehead
   - Solomon
+  - Homosexuality
   - Cyrus the Great
   - Isaiah
   - Islam

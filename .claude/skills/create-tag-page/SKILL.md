@@ -75,7 +75,8 @@ If no suitable featured segment is found:
 - Read transcript excerpts from the top 2 to 3 episodes.
 - Find transcript paths via `transcriptPath` in `data/processed-videos.json`.
 - Search for substantive discussion of the term.
-- Write 1 to 3 sentences in plain language describing how the show frames the concept.
+- Write 1 to 3 sentences in plain language defining the concept itself in a way that aligns with the show's treatment of it.
+- Do not make the definition self-referential by mentioning the show, episode language, or what the hosts do.
 - Do not write a generic dictionary definition.
 - Do not add a `dek` field. If podcast-specific framing matters, put it in the body.
 
@@ -135,7 +136,7 @@ Then write 1 to 2 body paragraphs explaining why this topic matters on the show.
 - Prefer `featuredSegment` over `featuredEpisode` when a good segment exists.
 - Always use `segmentAnchor`, not `segmentType`, when linking to a segment.
 - Do not include a `dek` field.
-- Keep the definition concise and specific to the show's framing.
+- Keep the definition concise, concept-first, and aligned with the show's framing without mentioning the show itself.
 - Use full speaker names in quotes.
 
 ## Final Check

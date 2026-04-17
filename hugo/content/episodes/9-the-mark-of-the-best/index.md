@@ -7,6 +7,8 @@ aliases:
   - /episodes/9/
 tags:
   - Nero
+  - Mark of the Beast
+  - Prototype Theory
   - Monotheism
   - Christian Nationalism
   - Isaiah

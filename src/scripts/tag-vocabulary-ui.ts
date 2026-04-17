@@ -126,10 +126,7 @@ async function computeTagStats(): Promise<TagStats[]> {
 }
 
 // Run migration with tag-specific tracking (single tag mode)
-async function runMigrationWithTagTracking(
-  skipLlm = false,
-  trackTag?: string,
-): Promise<string> {
+async function runMigrationWithTagTracking(trackTag?: string): Promise<string> {
   const jobId = `migration-${Date.now()}`;
   const job: MigrationJob = {
     id: jobId,
@@ -165,7 +162,7 @@ async function runMigrationWithTagTracking(
         const result = await addTagToEpisodes({
           canonical: trackTag,
           enableLlmVerification: true,
-          verbose: false,
+          verbose: true,
         });
 
         // Show tag-specific results
@@ -183,7 +180,11 @@ async function runMigrationWithTagTracking(
         job.logs.push(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
       } else {
         // Full reprocessing of all tags
-        await reprocessEpisodes({ force: true, skipLlm, verbose: false });
+        await reprocessEpisodes({
+          force: true,
+          skipLlm: false,
+          verbose: false,
+        });
       }
 
       job.status = "completed";
@@ -374,8 +375,7 @@ const _server = Bun.serve({
 
         await addTagToVocabulary(tagParameters);
 
-        // Start reprocessing all episodes (skip LLM to save costs)
-        const jobId = await runMigrationWithTagTracking(true, canonical); // skipLlm = true, track this tag
+        const jobId = await runMigrationWithTagTracking(canonical);
 
         return Response.json({
           success: true,
@@ -581,8 +581,7 @@ const _server = Bun.serve({
           url.pathname.replace("/api/vocabulary/reprocess-tag/", ""),
         );
 
-        // Start reprocessing for this specific tag (with LLM verification enabled)
-        const jobId = await runMigrationWithTagTracking(false, canonical); // skipLlm = false, track this tag
+        const jobId = await runMigrationWithTagTracking(canonical);
 
         return Response.json({
           success: true,

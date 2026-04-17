@@ -7,6 +7,7 @@ aliases:
   - /episodes/10/
 tags:
   - Paul
+  - Homosexuality
   - Adam
   - Philo of Alexandria
   - Judaism

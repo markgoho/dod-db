@@ -7,6 +7,7 @@ aliases:
   - /episodes/125/
 tags:
   - King David
+  - Homosexuality
   - Goliath
   - King James Version
   - Septuagint

@@ -409,6 +409,29 @@ async function runMigrationWithTagTracking(
   return { jobId, completion };
 }
 
+async function startSingleTagMigration(
+  canonical: string,
+  llmVerify: boolean,
+): Promise<string> {
+  const { jobId, completion } = await runMigrationWithTagTracking(
+    !llmVerify,
+    canonical,
+  );
+  void completion
+    .then(async result => {
+      if (result.episodeNumbers) {
+        await updateTagInVocabulary(canonical, {
+          episodes: result.episodeNumbers,
+        });
+      }
+    })
+    .catch(error => {
+      console.error(`Error persisting episodes for tag "${canonical}":`, error);
+    });
+
+  return jobId;
+}
+
 async function runEpisodeTagReprocess(
   videoId: string,
 ): Promise<{ jobId: string; completion: Promise<void> }> {
@@ -897,25 +920,10 @@ const _server = Bun.serve({
 
         await addTagToVocabulary(tagParameters);
 
-        // Start reprocessing all episodes (skip LLM to save costs)
-        const { jobId, completion } = await runMigrationWithTagTracking(
-          true,
+        const jobId = await startSingleTagMigration(
           canonical,
-        ); // skipLlm = true, track this tag
-        void completion
-          .then(async result => {
-            if (result.episodeNumbers) {
-              await updateTagInVocabulary(canonical, {
-                episodes: result.episodeNumbers,
-              });
-            }
-          })
-          .catch(error => {
-            console.error(
-              `Error persisting episodes for tag "${canonical}":`,
-              error,
-            );
-          });
+          llmVerify === true,
+        );
 
         return jsonResponse({
           success: true,
@@ -1020,25 +1028,10 @@ const _server = Bun.serve({
         // If tag was proposed and is now being accepted, reprocess all episodes
         if (wasProposed && isBeingAccepted) {
           const canonical = body.canonical || originalCanonical;
-          const shouldSkipLlm = body.llmVerify !== true;
-          const { jobId, completion } = await runMigrationWithTagTracking(
-            shouldSkipLlm,
+          const jobId = await startSingleTagMigration(
             canonical,
+            body.llmVerify === true,
           );
-          void completion
-            .then(async result => {
-              if (result.episodeNumbers) {
-                await updateTagInVocabulary(canonical, {
-                  episodes: result.episodeNumbers,
-                });
-              }
-            })
-            .catch(error => {
-              console.error(
-                `Error persisting episodes for tag "${canonical}":`,
-                error,
-              );
-            });
 
           return jsonResponse({
             success: true,
@@ -1085,25 +1078,10 @@ const _server = Bun.serve({
 
         // Trigger reprocessing for this tag across all episodes (like manual add does)
         const updatedTag = findTag(canonical);
-        const shouldSkipLlm = updatedTag?.llmVerify !== true;
-        const { jobId, completion } = await runMigrationWithTagTracking(
-          shouldSkipLlm,
+        const jobId = await startSingleTagMigration(
           canonical,
+          updatedTag?.llmVerify === true,
         );
-        void completion
-          .then(async result => {
-            if (result.episodeNumbers) {
-              await updateTagInVocabulary(canonical, {
-                episodes: result.episodeNumbers,
-              });
-            }
-          })
-          .catch(error => {
-            console.error(
-              `Error persisting episodes for tag "${canonical}":`,
-              error,
-            );
-          });
 
         return jsonResponse({
           success: true,
@@ -1341,25 +1319,10 @@ const _server = Bun.serve({
           return jsonResponse({ error: `Tag "${canonical}" not found` }, 404);
         }
 
-        // Start reprocessing for this tag (with LLM verification enabled)
-        const { jobId, completion } = await runMigrationWithTagTracking(
-          false,
+        const jobId = await startSingleTagMigration(
           canonical,
-        ); // skipLlm = false, track this tag
-        void completion
-          .then(async result => {
-            if (result.episodeNumbers) {
-              await updateTagInVocabulary(canonical, {
-                episodes: result.episodeNumbers,
-              });
-            }
-          })
-          .catch(error => {
-            console.error(
-              `Error persisting episodes for tag "${canonical}":`,
-              error,
-            );
-          });
+          tag.llmVerify === true,
+        );
 
         return jsonResponse({
           success: true,

@@ -26,6 +26,7 @@ tags:
   - futurist interpretation
   - inerrancy
   - Jerusalem
+  - Mark of the Beast
   - Matthew
   - Paul
   - Preterism

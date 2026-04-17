@@ -5715,14 +5715,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "mark of the beast",
-    variations: ["the mark of the beast"],
-    category: "theology",
-    description:
-      "A symbolic mark described in the Book of Revelation, often interpreted as a sign of allegiance to evil or opposition to God.",
-    status: "proposed",
-  },
-  {
     canonical: "greco-roman world",
     variations: ["Greco-Roman"],
     category: "place",
@@ -8968,6 +8960,29 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     addedInEpisode: 158,
     episodes: [4, 11, 15, 32, 34, 43, 62, 71, 87, 112, 123, 147, 158],
+  },
+  {
+    canonical: "Prototype Theory",
+    variations: [],
+    category: "scholarship",
+    status: "accepted",
+    episodes: [9, 77, 124, 136],
+  },
+  {
+    canonical: "Mark of the Beast",
+    variations: [],
+    category: "theology",
+    status: "accepted",
+    episodes: [4, 9, 39, 54],
+  },
+  {
+    canonical: "Homosexuality",
+    variations: ["same sex", "same-sex"],
+    category: "miscellaneous",
+    llmVerify: true,
+    description: "same sex intercourse, sexual acts, or romantic attraction",
+    status: "accepted",
+    episodes: [3, 10, 17, 30, 83, 89, 91, 103, 104, 114, 124, 125, 129, 139],
   },
 ];
 

@@ -24,6 +24,7 @@ tags:
   - Hell
   - Martin Luther
   - Peter
+  - Prototype Theory
 books:
   - Psalms
   - Proverbs

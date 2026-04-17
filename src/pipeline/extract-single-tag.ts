@@ -30,8 +30,13 @@ export async function extractSingleTag(
     throw new Error(`Tag "${canonical}" not found in vocabulary`);
   }
 
-  // Build search terms (canonical + variations)
-  const searchTerms = [tagDef.canonical, ...tagDef.variations];
+  const needsVerification =
+    enableLlmVerification && "llmVerify" in tagDef && tagDef.llmVerify;
+
+  // Match canonical form directly; only variations need LLM verification.
+  const searchTerms = needsVerification
+    ? [...tagDef.variations]
+    : [tagDef.canonical, ...tagDef.variations];
 
   // Sort by length (longest first) to handle overlaps
   searchTerms.sort((a, b) => b.length - a.length);
@@ -60,6 +65,7 @@ export async function extractSingleTag(
   // Track matched positions to avoid double-counting
   const matchedRanges: Array<{ start: number; end: number }> = [];
   const matches: Array<{ start: number; end: number; text: string }> = [];
+  let canonicalCount = 0;
 
   const isOverlapping = (start: number, end: number): boolean => {
     return matchedRanges.some(
@@ -78,7 +84,27 @@ export async function extractSingleTag(
   const caseSensitive = tagDef.caseSensitive ?? false;
   const flags = caseSensitive ? "g" : "gi";
 
-  // Find all matches
+  if (needsVerification) {
+    const canonicalPattern = new RegExp(
+      String.raw`\b${escapeRegex(tagDef.canonical)}\b`,
+      flags,
+    );
+    let canonicalMatch;
+
+    while ((canonicalMatch = canonicalPattern.exec(transcript)) !== null) {
+      const start = canonicalMatch.index;
+      const end = start + canonicalMatch[0].length;
+
+      if (isOverlapping(start, end) || isInSpeakerLabel(start, end)) {
+        continue;
+      }
+
+      matchedRanges.push({ start, end });
+      canonicalCount++;
+    }
+  }
+
+  // Find all variation matches
   for (const searchTerm of searchTerms) {
     const pattern = new RegExp(
       String.raw`\b${escapeRegex(searchTerm)}\b`,
@@ -105,18 +131,13 @@ export async function extractSingleTag(
     }
   }
 
-  // If no matches found, return undefined
-  if (matches.length === 0) {
+  if (canonicalCount === 0 && matches.length === 0) {
     return undefined;
   }
 
-  // Check if LLM verification is needed
-  const needsVerification =
-    enableLlmVerification && "llmVerify" in tagDef && tagDef.llmVerify;
-
   let verifiedCount = matches.length;
 
-  if (needsVerification) {
+  if (needsVerification && matches.length > 0) {
     console.log(
       `    Verifying ${matches.length} matches for "${canonical}"...`,
     );
@@ -130,13 +151,15 @@ export async function extractSingleTag(
     console.log(`    ✓ ${verifiedIndices.length}/${matches.length} verified`);
   }
 
-  // Return undefined if no verified matches
-  if (verifiedCount === 0) {
+  const totalMentions =
+    canonicalCount + (needsVerification ? verifiedCount : matches.length);
+
+  if (totalMentions === 0) {
     return undefined;
   }
 
   return {
     tag: canonical,
-    mentions: verifiedCount,
+    mentions: totalMentions,
   };
 }

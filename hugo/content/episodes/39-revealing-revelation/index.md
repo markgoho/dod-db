@@ -16,6 +16,7 @@ tags:
   - Satan
   - Jezebel
   - Garden of Eden
+  - Mark of the Beast
   - Anatolia
   - Balaam
   - Codex Sinaiticus

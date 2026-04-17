@@ -20,6 +20,7 @@ tags:
   - Samaritans
   - Adam
   - Hagar
+  - Homosexuality
   - King David
   - King Sennacherib
   - Mount Ebal
