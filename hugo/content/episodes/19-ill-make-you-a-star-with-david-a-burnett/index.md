@@ -46,6 +46,7 @@ books:
   - Isaiah
 guests:
   - David A. Burnett
+episodeTopic: Death of the Gods
 draft: false
 ---
 

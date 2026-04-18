@@ -115,10 +115,12 @@ export const ProcessedVideoSchema = z.object({
     .array(EpisodeScriptureSchema)
     .optional()
     .describe("Detected scripture references with mention counts"),
-  guestTopic: z
+  episodeTopic: z
     .string()
     .optional()
-    .describe("Optional guest-topic label for guest episodes without segments"),
+    .describe(
+      "Optional episode-topic label for episodes without analyzable segments",
+    ),
 });
 
 export type ProcessedVideo = z.infer<typeof ProcessedVideoSchema>;

@@ -6,6 +6,7 @@ videoId: B1uE2cv8fP0
 aliases:
   - /episodes/22/
 tags:
+  - Priestly Source
   - YHWH
   - Moses
   - Deuteronomy
@@ -30,6 +31,7 @@ books:
   - Exodus
 guests:
   - Liane Feldman
+episodeTopic: Priestly Source
 draft: false
 ---
 

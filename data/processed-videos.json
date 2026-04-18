@@ -3322,7 +3322,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 19
+    "episodeNumber": 19,
+    "episodeTopic": "Death of the Gods"
   },
   {
     "videoId": "p8CjJR4yhfk",
@@ -3653,6 +3654,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abortion",
+        "mentions": 1
+      },
+      {
         "tag": "Africa",
         "mentions": 1
       },
@@ -3771,6 +3776,10 @@
     "processedAt": "2026-01-11T22:05:11.849Z",
     "transcriptPath": "data/transcripts/2023-09-04-episode-22-september-4-2023-connecting-with-source.txt",
     "tags": [
+      {
+        "tag": "Priestly Source",
+        "mentions": 13
+      },
       {
         "tag": "YHWH",
         "mentions": 6
@@ -3892,7 +3901,8 @@
         "mentions": 2
       }
     ],
-    "episodeNumber": 22
+    "episodeNumber": 22,
+    "episodeTopic": "Priestly Source"
   },
   {
     "videoId": "-I3W7CTX8Kw",
@@ -3901,6 +3911,10 @@
     "processedAt": "2026-01-11T22:20:51.303Z",
     "transcriptPath": "data/transcripts/2023-09-11-episode-23-september-11-2023-abortion-and-the-bible.txt",
     "tags": [
+      {
+        "tag": "Abortion",
+        "mentions": 38
+      },
       {
         "tag": "Jeremiah",
         "mentions": 9
@@ -4031,7 +4045,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 23
+    "episodeNumber": 23,
+    "episodeTopic": "Abortion"
   },
   {
     "videoId": "8OqwDYUzrIY",
@@ -4448,6 +4463,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abortion",
+        "mentions": 1
+      },
+      {
         "tag": "Canaan",
         "mentions": 1
       },
@@ -4648,6 +4667,10 @@
       {
         "tag": "Syria",
         "mentions": 2
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 1
       },
       {
         "tag": "Annunciation",
@@ -5442,6 +5465,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abortion",
+        "mentions": 1
+      },
+      {
         "tag": "Acts of Paul and Thecla",
         "mentions": 1
       },
@@ -6208,7 +6235,7 @@
       }
     ],
     "episodeNumber": 37,
-    "guestTopic": "Star of Bethlehem"
+    "episodeTopic": "Star of Bethlehem"
   },
   {
     "videoId": "ymMm0ICgBmc",
@@ -7657,6 +7684,10 @@
       },
       {
         "tag": "Philistines",
+        "mentions": 1
+      },
+      {
+        "tag": "Priestly Source",
         "mentions": 1
       },
       {
@@ -9780,6 +9811,10 @@
       {
         "tag": "Romans",
         "mentions": 2
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 1
       },
       {
         "tag": "Catholicism",
@@ -12651,6 +12686,10 @@
         "mentions": 4
       },
       {
+        "tag": "Abortion",
+        "mentions": 3
+      },
+      {
         "tag": "Christian Nationalism",
         "mentions": 3
       },
@@ -12761,6 +12800,10 @@
       {
         "tag": "Septuagint",
         "mentions": 2
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 1
       },
       {
         "tag": "Garden of Eden",
@@ -13176,6 +13219,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abortion",
+        "mentions": 1
+      },
+      {
         "tag": "Bel and the Dragon",
         "mentions": 1
       },
@@ -13290,6 +13337,10 @@
       {
         "tag": "Peter",
         "mentions": 3
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 2
       },
       {
         "tag": "King Saul",
@@ -13819,6 +13870,10 @@
       {
         "tag": "YHWH",
         "mentions": 2
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 1
       },
       {
         "tag": "Antiochus IV Epiphanes",
@@ -14415,6 +14470,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abortion",
+        "mentions": 1
+      },
+      {
         "tag": "Beatitudes",
         "mentions": 1
       },
@@ -14753,6 +14812,10 @@
       {
         "tag": "Noah",
         "mentions": 2
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 1
       },
       {
         "tag": "Abraham",
@@ -16022,6 +16085,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abortion",
+        "mentions": 1
+      },
+      {
         "tag": "baptism",
         "mentions": 1
       },
@@ -16196,6 +16263,10 @@
       },
       {
         "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Priestly Source",
         "mentions": 1
       },
       {
@@ -16720,6 +16791,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abortion",
+        "mentions": 1
+      },
+      {
         "tag": "Anselm of Canterbury",
         "mentions": 1
       },
@@ -17175,6 +17250,10 @@
         "mentions": 9
       },
       {
+        "tag": "Abortion",
+        "mentions": 5
+      },
+      {
         "tag": "Judaism",
         "mentions": 5
       },
@@ -17412,6 +17491,10 @@
       },
       {
         "tag": "Moab",
+        "mentions": 1
+      },
+      {
+        "tag": "Priestly Source",
         "mentions": 1
       }
     ],
@@ -18923,6 +19006,10 @@
         "mentions": 3
       },
       {
+        "tag": "Abortion",
+        "mentions": 2
+      },
+      {
         "tag": "etiology",
         "mentions": 2
       },
@@ -19572,6 +19659,10 @@
       {
         "tag": "Nephilim",
         "mentions": 17
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 8
       },
       {
         "tag": "Flood",
@@ -20645,6 +20736,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abortion",
+        "mentions": 1
+      },
+      {
         "tag": "Christian Nationalism",
         "mentions": 1
       },
@@ -20825,6 +20920,10 @@
       },
       {
         "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Priestly Source",
         "mentions": 1
       },
       {
@@ -21287,6 +21386,10 @@
       {
         "tag": "Septuagint",
         "mentions": 3
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 2
       },
       {
         "tag": "Catholicism",
@@ -22384,6 +22487,10 @@
         "mentions": 3
       },
       {
+        "tag": "Abortion",
+        "mentions": 2
+      },
+      {
         "tag": "Galilee",
         "mentions": 2
       },
@@ -23162,6 +23269,10 @@
         "mentions": 2
       },
       {
+        "tag": "Abortion",
+        "mentions": 1
+      },
+      {
         "tag": "Amorites",
         "mentions": 1
       },
@@ -23520,6 +23631,10 @@
       {
         "tag": "Deuteronomy",
         "mentions": 2
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 1
       },
       {
         "tag": "Abraham",
@@ -24522,7 +24637,7 @@
         "mentions": 1
       }
     ],
-    "guestTopic": "Lady Eclecte"
+    "episodeTopic": "Lady Eclecte"
   },
   {
     "videoId": "153101535",

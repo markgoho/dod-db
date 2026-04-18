@@ -7,6 +7,6 @@ aliases:
   - /episodes/99/
 guests:
   - Andrew Whitehead
-guestTopic: Monotheism
+episodeTopic: Monotheism
 draft: false
 ---

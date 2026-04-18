@@ -6,6 +6,7 @@ videoId: "-I3W7CTX8Kw"
 aliases:
   - /episodes/23/
 tags:
+  - Abortion
   - Jeremiah
   - Elizabeth
   - King James Bible
@@ -31,6 +32,7 @@ books:
   - Luke
   - Numbers
   - Romans
+episodeTopic: Abortion
 draft: false
 ---
 

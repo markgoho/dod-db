@@ -1,9 +1,9 @@
 import { loadProcessedVideos } from "./load-processed-videos.js";
 import { saveProcessedVideos } from "./save-processed-videos.js";
 
-export async function updateVideoGuestTopic(
+export async function updateVideoEpisodeTopic(
   videoId: string,
-  guestTopic: string,
+  episodeTopic: string,
 ): Promise<void> {
   const videos = await loadProcessedVideos();
 
@@ -17,6 +17,6 @@ export async function updateVideoGuestTopic(
     throw new Error(`Video ${videoId} not found in processed videos`);
   }
 
-  video.guestTopic = guestTopic;
+  video.episodeTopic = episodeTopic;
   await saveProcessedVideos(videos);
 }

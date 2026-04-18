@@ -30,7 +30,7 @@ books:
   - Galatians
 guests:
   - Lincoln Blumell
-guestTopic: Lady Eclecte
+episodeTopic: Lady Eclecte
 draft: false
 ---
 

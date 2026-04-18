@@ -105,12 +105,12 @@ const WEAK_GUEST_TOPIC_LABELS = new Set([
   "judaism",
 ]);
 
-function shouldRegenerateGuestTopic(guestTopic: string | undefined): boolean {
-  if (!guestTopic) {
+function shouldRegenerateGuestTopic(episodeTopic: string | undefined): boolean {
+  if (!episodeTopic) {
     return true;
   }
 
-  const trimmed = guestTopic.trim();
+  const trimmed = episodeTopic.trim();
   if (trimmed.length === 0) {
     return true;
   }
@@ -152,23 +152,23 @@ async function main(): Promise<void> {
 
     if (analyzableSegments.length === 0) {
       if (
-        guestNames.length > 0 &&
-        shouldRegenerateGuestTopic(video.guestTopic)
+        cleanTitle.length > 0 &&
+        shouldRegenerateGuestTopic(video.episodeTopic)
       ) {
-        const guestTopic = await describeGuestTopic({
+        const episodeTopic = await describeGuestTopic({
           episodeTitle: cleanTitle,
           guestNames,
           transcript,
         });
 
-        console.log(`Guest topic: ${guestTopic.guestTopic}`);
-        console.log(`Confidence: ${guestTopic.confidence}`);
+        console.log(`Guest topic: ${episodeTopic.episodeTopic}`);
+        console.log(`Confidence: ${episodeTopic.confidence}`);
 
         if (!args.dryRun) {
-          await updateVideoGuestTopic(video.videoId, guestTopic.guestTopic);
+          await updateVideoGuestTopic(video.videoId, episodeTopic.episodeTopic);
           await generateHugoEpisode({
             ...video,
-            guestTopic: guestTopic.guestTopic,
+            episodeTopic: episodeTopic.episodeTopic,
           });
         }
 

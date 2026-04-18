@@ -88,7 +88,7 @@ describe("generateFrontmatter", () => {
       transcriptPath: "data/transcripts/2024-06-10-episode-99.txt",
       episodeNumber: 99,
       speakers: ["Dan McClellan", "Andrew Whitehead", "Dan Beecher"],
-      guestTopic: "Monotheism",
+      episodeTopic: "Monotheism",
     };
 
     const cleanTitle = "Guest Topic Episode";

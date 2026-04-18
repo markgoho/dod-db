@@ -111,16 +111,16 @@
             </div>
           </section>
 
-          {{ if and .Params.guests .Params.guestTopic }}
+          {{ if .Params.episodeTopic }}
             <section class="episode-segments episode-segments--subtle">
-              <h2 class="type-section-title">Guest Topic</h2>
+              <h2 class="type-section-title">Episode Topic</h2>
               <div class="episode-segments__grid">
                 <div class="episode-segment-card panel">
                   <span class="episode-segment-card__label type-eyebrow"
-                    >Guest Topic</span
+                    >Episode Topic</span
                   >
                   <span class="episode-segment-card__title"
-                    >{{ .Params.guestTopic }}</span
+                    >{{ .Params.episodeTopic }}</span
                   >
                 </div>
               </div>
