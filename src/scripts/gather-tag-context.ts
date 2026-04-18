@@ -13,10 +13,15 @@ interface ParsedArguments {
   tagName: string;
 }
 
+interface CanonicalVariant {
+  name: string;
+  isAliasCandidate: boolean;
+}
+
 interface CanonicalTagContext {
   name: string;
   category: string;
-  variations: string[];
+  variations: CanonicalVariant[];
   status: string;
 }
 
@@ -90,13 +95,33 @@ function escapeRegExp(value: string): string {
 }
 
 function normalizeForMatching(value: string): string {
-  return value.toLowerCase();
+  return value.trim().toLowerCase();
+}
+
+function isAliasCandidate(canonical: string, variation: string): boolean {
+  const normalizedCanonical = normalizeForMatching(canonical);
+  const normalizedVariation = normalizeForMatching(variation);
+
+  if (normalizedCanonical === normalizedVariation) {
+    return false;
+  }
+
+  for (const suffix of ["'", "'s", "s"]) {
+    if (normalizedVariation === `${normalizedCanonical}${suffix}`) {
+      return false;
+    }
+  }
+
+  return true;
 }
 
 function buildSearchTerms(canonical: CanonicalTagContext): string[] {
-  return [...new Set([canonical.name, ...canonical.variations])].filter(
-    Boolean,
-  );
+  return [
+    ...new Set([
+      canonical.name,
+      ...canonical.variations.map(variation => variation.name),
+    ]),
+  ].filter(Boolean);
 }
 
 function buildSearchPattern(canonical: CanonicalTagContext): RegExp {
@@ -113,7 +138,10 @@ function toCanonicalTagContext(
   return {
     name: entry.canonical,
     category: entry.category,
-    variations: entry.variations,
+    variations: entry.variations.map(variation => ({
+      name: variation,
+      isAliasCandidate: isAliasCandidate(entry.canonical, variation),
+    })),
     status: entry.status,
   };
 }

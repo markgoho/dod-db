@@ -41,9 +41,10 @@ Use the gathered JSON to make the authorial decisions.
 #### Canonical naming and aliases
 
 - Use the canonical tag name for the page title and slug.
-- Use judgment when deciding whether any `variations` should become frontmatter `aliases` and visible `knownAs` entries.
-- Include names a reader might reasonably search as distinct names, titles, or transliterations.
-- Exclude capitalization variants, possessives, simple inflections, and other mechanical forms.
+- The gathered `variations` now include `name` and `isAliasCandidate`.
+- Treat `isAliasCandidate: true` as the default source for frontmatter `aliases` and visible `knownAs` entries.
+- Treat `isAliasCandidate: false` as mechanical forms that should normally stay out of `aliases` and `knownAs`.
+- You may still omit a `true` candidate if it would be a poor or misleading redirect target, but do not promote a `false` candidate unless the gathered evidence gives a specific reason.
 - When you include an alias, write it as a Hugo path like `/tags/adonai/` in `aliases`, and include the display text like `Adonai` in `knownAs`.
 - Both `aliases` and `knownAs` are optional.
 
