@@ -37,6 +37,7 @@ books:
   - 2 Kings
 guests:
   - Joel McHale
+episodeTopic: Witch of Endor
 draft: false
 ---
 
