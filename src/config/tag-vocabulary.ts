@@ -8974,6 +8974,78 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     episodes: [34, 37, 38, 86, 87, 150],
   },
+  {
+    canonical: "Religion as Make-Believe",
+    variations: [],
+    category: "literature",
+    description:
+      "A book by Neil Van Leeuwen exploring the psychological nature of religious beliefs as sacralized imaginings.",
+    status: "rejected",
+    addedInEpisode: 51,
+  },
+  {
+    canonical: "Psychology",
+    variations: ["psychological"],
+    category: "scholarship",
+    description:
+      "The scientific study of the mind and behavior, explored here in the context of religious and ideological beliefs.",
+    status: "rejected",
+    addedInEpisode: 51,
+  },
+  {
+    canonical: "Philosophy",
+    variations: ["philosophical"],
+    category: "scholarship",
+    description:
+      "The study of fundamental questions about existence, knowledge, values, reason, mind, and language, intersecting with psychology and religion in this discussion.",
+    status: "rejected",
+    addedInEpisode: 51,
+  },
+  {
+    canonical: "Factual belief",
+    variations: [],
+    category: "scholarship",
+    description:
+      "A cognitive attitude reflecting one's acceptance of something as true, characterized by being involuntary and vulnerable to evidence.",
+    status: "rejected",
+    addedInEpisode: 51,
+  },
+  {
+    canonical: "Imagining",
+    variations: ["imagination", "imaginative"],
+    category: "scholarship",
+    description:
+      "A cognitive attitude involving mental representation for the sake of make-believe or supposition, characterized by voluntary control and freedom from evidential constraint.",
+    status: "rejected",
+    addedInEpisode: 51,
+  },
+  {
+    canonical: "Religious credence",
+    variations: [],
+    category: "theology",
+    description:
+      "A term coined by Neil Van Leeuwen to describe religious beliefs as sacralized imaginings, differing from factual belief in voluntariness and evidential constraint.",
+    status: "proposed",
+    addedInEpisode: 51,
+  },
+  {
+    canonical: "Vineyard Church",
+    variations: [],
+    category: "religion",
+    description:
+      "A neocharismatic evangelical Christian denomination with an emphasis on worship, spiritual gifts, and social justice.",
+    status: "proposed",
+    addedInEpisode: 51,
+  },
+  {
+    canonical: "Group identity",
+    variations: [],
+    category: "scholarship",
+    description:
+      "A person's sense of who they are based on their membership in a group, often influencing beliefs and behaviors.",
+    status: "rejected",
+    addedInEpisode: 51,
+  },
 ];
 
 export function getAllSearchableTerms(

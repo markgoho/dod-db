@@ -9,8 +9,11 @@ tags:
   - Catholicism
   - Dead Sea Scrolls
   - Garden of Eden
+books:
+  - Isaiah
 guests:
   - Neil Van Leeuwen
+episodeTopic: Religion as Make-Believe
 draft: false
 ---
 

@@ -22,8 +22,11 @@ tags:
   - Mary Magdalene
   - Protestantism
   - Second Temple period
+books:
+  - Mark
 guests:
   - Candida Moss
+episodeTopic: Christian Slavery
 draft: false
 ---
 

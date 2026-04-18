@@ -41,6 +41,7 @@ books:
   - 1 Corinthians
 guests:
   - Helen Bond
+episodeTopic: Historical Jesus
 draft: false
 ---
 

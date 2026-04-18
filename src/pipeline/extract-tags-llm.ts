@@ -52,11 +52,11 @@ export async function extractTagsLlm(
     const startTime = Date.now();
     const transcriptLength = transcript.length;
     console.log(
-      `    → Sending ${transcriptLength.toLocaleString()} chars to Gemini 2.0 Flash...`,
+      `    → Sending ${transcriptLength.toLocaleString()} chars to ${speakerIdModel}...`,
     );
 
     const response = await ai.models.generateContent({
-      model: speakerIdModel, // gemini-2.0-flash (fast, cheap)
+      model: speakerIdModel,
       contents: tagExtractionPrompt(
         transcript,
         [...allKnownTerms],

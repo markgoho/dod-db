@@ -55,6 +55,8 @@ Use the gathered JSON to make the authorial decisions.
 - Featured items should come from different episodes.
 - Do not include both a segment and its parent episode as separate featured items.
 - Prefer verified segments when available.
+- If a verified segment's `topicLabel` directly matches the tag you are building, treat that as the default first featured item.
+- Only skip that direct-match segment if the evidence shows it is weak, incidental, or less central than another verified segment.
 - Prefer substantive segment types in this order:
   1. `what-is-that`
   2. `taking-issue`
@@ -168,6 +170,7 @@ Check for:
 - weak or filler quotes that do not clearly illuminate the topic
 - aliases that are mechanical or not actually useful search targets
 - featured items that are merely acceptable instead of the strongest available choices
+- any missed direct-match verified segment that should have been featured first
 - body or definition wording that feels vague, repetitive, or less sharp than existing strong tag pages
 
 If any of those are weak, tighten them before concluding.

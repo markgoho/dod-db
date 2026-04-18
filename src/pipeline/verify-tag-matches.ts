@@ -243,7 +243,7 @@ export async function verifyTagMatches(
 
   try {
     const response = await ai.models.generateContent({
-      model: speakerIdModel, // gemini-2.0-flash (fast, cheap)
+      model: speakerIdModel,
       contents: prompt,
       config: {
         responseMimeType: "application/json",

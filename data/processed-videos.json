@@ -8068,7 +8068,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 48
+    "episodeNumber": 48,
+    "episodeTopic": "Historical Jesus"
   },
   {
     "videoId": "GXyJILdNxUE",
@@ -8166,8 +8167,16 @@
       }
     ],
     "speakers": ["Candida Moss", "Dan McClellan", "Dan Beecher"],
-    "scriptures": [],
-    "episodeNumber": 49
+    "scriptures": [
+      {
+        "book": "Mark",
+        "references": ["Mark"],
+        "mentions": 12,
+        "source": "auto"
+      }
+    ],
+    "episodeNumber": 49,
+    "episodeTopic": "Christian Slavery"
   },
   {
     "videoId": "vHKXU5rmwyo",
@@ -8399,8 +8408,16 @@
       }
     ],
     "speakers": ["Neil Van Leeuwen", "Dan McClellan", "Dan Beecher"],
-    "scriptures": [],
-    "episodeNumber": 51
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah"],
+        "mentions": 2,
+        "source": "auto"
+      }
+    ],
+    "episodeNumber": 51,
+    "episodeTopic": "Religion as Make-Believe"
   },
   {
     "videoId": "_mO8E0em3KA",

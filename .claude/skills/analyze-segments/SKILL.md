@@ -119,6 +119,9 @@ Rules:
 - Pick the dominant topic, not a minor tangent.
 - Avoid vague single-word labels when a clearer multi-word concept is evident.
 - Never append `in the Bible` or `and the Bible`.
+- Only save an `episodeTopic` when it adds real value beyond the episode title.
+- If the best label would just restate or lightly normalize the episode title without improving searchability, canonical wording, or clarity, treat it as a no-op instead of saving it.
+- Save an `episodeTopic` when it meaningfully improves on the title by being shorter, more canonical, less rhetorical, or more discoverable.
 
 ## Save input shape
 
