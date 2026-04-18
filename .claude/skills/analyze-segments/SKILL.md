@@ -25,11 +25,18 @@ If the episode has no analyzable non-structural segments, generate:
    bun run src/scripts/gather-segment-context.ts <episode-number> [--force]
    ```
 2. Reason directly in the agent from the JSON output.
-3. Save results:
+3. Save results with stdin using a quoted heredoc:
    ```bash
-   bun run src/scripts/save-segment-results.ts
+   bun run src/scripts/save-segment-results.ts <<'EOF'
+   {
+     "mode": "episode-topic",
+     "episodeNumber": 6,
+     "videoId": "...",
+     "episodeTopic": "Divine Council"
+   }
+   EOF
    ```
-   Pipe the final JSON into stdin or pass it with `--input`.
+   Prefer stdin via a quoted heredoc. Avoid inline `printf` JSON because quotes and apostrophes inside the payload can break shell parsing. Do not create temporary JSON files unless stdin is genuinely unavailable.
 
 ## Gather output
 

@@ -135,13 +135,18 @@ Create a JSON object in this shape:
 }
 ```
 
-Then save it with:
+Then save it with stdin using a quoted heredoc:
 
 ```bash
-bun run src/scripts/save-tag-page.ts
+bun run src/scripts/save-tag-page.ts <<'EOF'
+{
+  "tagSlug": "eschatology",
+  "title": "Eschatology"
+}
+EOF
 ```
 
-Pipe the JSON into stdin or pass it with `--input`.
+Prefer stdin via a quoted heredoc for this skill. Avoid inline `printf` JSON because quotes and apostrophes inside the payload can break shell parsing. Do not create temporary JSON files unless stdin is genuinely unavailable.
 
 ### 4. Verify
 
