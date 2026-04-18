@@ -41,6 +41,7 @@ tags:
   - Priestly Source
   - Samuel
   - Septuagint
+  - Triumphal Entry
   - Univocality
 books:
   - Genesis

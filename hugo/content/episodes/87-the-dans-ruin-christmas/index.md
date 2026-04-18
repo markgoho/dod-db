@@ -39,6 +39,7 @@ tags:
   - Maccabees
   - Romans
   - Seleucid Empire
+  - Triumphal Entry
 books:
   - Isaiah
   - Deuteronomy

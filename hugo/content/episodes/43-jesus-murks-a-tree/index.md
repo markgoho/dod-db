@@ -34,6 +34,7 @@ tags:
   - Seleucid Empire
   - Star of Bethlehem
   - theophany
+  - Triumphal Entry
 books:
   - Isaiah
   - Mark

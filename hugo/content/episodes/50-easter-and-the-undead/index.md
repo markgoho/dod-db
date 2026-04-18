@@ -11,6 +11,7 @@ tags:
   - Mary Magdalene
   - Bethany
   - Romans
+  - Triumphal Entry
   - Judas Iscariot
   - Passover
   - Sanhedrin

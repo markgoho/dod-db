@@ -15,6 +15,7 @@ tags:
   - Judaism
   - Deuteronomy
   - Euphrates
+  - Flat Earth
   - Garden of Eden
   - Hell
   - John of Patmos

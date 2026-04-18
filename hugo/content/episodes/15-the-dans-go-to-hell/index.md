@@ -36,6 +36,7 @@ tags:
   - Pseudepigrapha
   - Satan
   - Seleucid Empire
+  - Triumphal Entry
   - YHWH
 books:
   - Isaiah

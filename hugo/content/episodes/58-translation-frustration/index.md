@@ -46,6 +46,7 @@ books:
   - Deuteronomy
   - Matthew
   - Isaiah
+episodeTopic: Bible Translation
 draft: false
 ---
 

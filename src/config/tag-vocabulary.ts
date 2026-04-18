@@ -1973,12 +1973,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
   },
   {
-    canonical: "earth",
-    variations: ["flat earth"],
-    category: "place",
-    status: "rejected",
-  },
-  {
     canonical: "genesis 1",
     variations: ["genesis"],
     category: "literature",
@@ -7107,7 +7101,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       'Associate professor of philosophy and neuroscience at Georgia State University, author of "Religion as Make-Believe"',
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "belief",
@@ -7242,7 +7236,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "miscellaneous",
     description:
       "The United States National Aeronautics and Space Administration, often a target of flat Earth conspiracy theories.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Reformation",
@@ -9040,6 +9034,20 @@ export const tagVocabulary: TagDefinition[] = [
       "A person's sense of who they are based on their membership in a group, often influencing beliefs and behaviors.",
     status: "rejected",
     addedInEpisode: 51,
+  },
+  {
+    canonical: "Triumphal Entry",
+    variations: [],
+    category: "event",
+    status: "accepted",
+    episodes: [15, 43, 46, 50, 57, 87],
+  },
+  {
+    canonical: "Flat Earth",
+    variations: [],
+    category: "miscellaneous",
+    status: "accepted",
+    episodes: [9, 57, 90],
   },
 ];
 
