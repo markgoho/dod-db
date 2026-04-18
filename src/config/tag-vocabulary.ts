@@ -3396,13 +3396,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [48, 49, 55, 81, 87, 99, 141],
   },
   {
-    canonical: "Magi",
-    variations: ["Magi's"],
-    category: "character",
-    status: "rejected",
-    addedInEpisode: 87,
-  },
-  {
     canonical: "Second Kings",
     variations: ["2 Kings", "Kings"],
     category: "literature",
@@ -6739,10 +6732,12 @@ export const tagVocabulary: TagDefinition[] = [
   {
     canonical: "Star of Bethlehem",
     variations: ["Star"],
-    category: "miscellaneous",
+    category: "event",
+    llmVerify: true,
     description:
       "The star that guided the Magi to Jesus in the Gospel of Matthew",
-    status: "proposed",
+    status: "accepted",
+    episodes: [37, 38, 43, 86, 87, 141, 150],
   },
   {
     canonical: "Schweitzer",
@@ -6844,7 +6839,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "miscellaneous",
     description:
       "The use of rituals, spells, or supernatural powers to influence events or outcomes.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Twitter",
@@ -8966,6 +8961,16 @@ export const tagVocabulary: TagDefinition[] = [
       21, 23, 27, 28, 33, 60, 79, 80, 83, 84, 87, 91, 93, 101, 106, 110, 120,
       124, 130, 134, 140, 145, 147,
     ],
+  },
+  {
+    canonical: "Magi",
+    variations: ["three kings", "three wise men"],
+    category: "character",
+    llmVerify: true,
+    description:
+      "led to Jesus by the star of Bethlehem in the Gospel of Matthew",
+    status: "accepted",
+    episodes: [34, 37, 38, 86, 87, 150],
   },
 ];
 

@@ -158,6 +158,19 @@ cd hugo && hugo
 
 Confirm the page builds without errors and matches the structure used by existing hand-authored tag pages.
 
+### 5. Editorial pass
+
+After the build succeeds, do one short editorial review of the generated page itself before finishing.
+
+Check for:
+
+- weak or filler quotes that do not clearly illuminate the topic
+- aliases that are mechanical or not actually useful search targets
+- featured items that are merely acceptable instead of the strongest available choices
+- body or definition wording that feels vague, repetitive, or less sharp than existing strong tag pages
+
+If any of those are weak, tighten them before concluding.
+
 ## Data Sources
 
 - `src/scripts/gather-tag-context.ts` for deterministic context gathering

@@ -20,6 +20,7 @@ tags:
   - Babylon
   - King David
   - Isaiah
+  - Magi
   - Moses
   - Hagar
   - King Saul
@@ -29,6 +30,7 @@ tags:
   - Philo of Alexandria
   - Satan
   - Second Temple period
+  - Star of Bethlehem
   - Adam
   - Canaanites
   - Council of Jerusalem

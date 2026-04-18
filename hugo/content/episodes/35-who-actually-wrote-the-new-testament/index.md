@@ -31,6 +31,7 @@ books:
   - 1 Corinthians
   - Matthew
   - 2 Timothy
+episodeTopic: New Testament Authorship
 draft: false
 ---
 

@@ -50,6 +50,7 @@ books:
   - Ruth
 guests:
   - Jacob Wright
+episodeTopic: Biblical Peoplehood
 draft: false
 ---
 

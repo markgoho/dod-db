@@ -28,6 +28,7 @@ tags:
   - Passover
   - Peter
   - Rachel
+  - Star of Bethlehem
 books:
   - Luke
   - Isaiah

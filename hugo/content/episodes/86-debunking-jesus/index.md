@@ -8,8 +8,10 @@ aliases:
 tags:
   - Flavius Josephus
   - Romans
+  - Star of Bethlehem
   - Galilee
   - John
+  - Magi
   - King David
   - Pontius Pilate
   - Annunciation

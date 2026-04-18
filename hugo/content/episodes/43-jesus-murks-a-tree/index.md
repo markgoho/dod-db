@@ -32,6 +32,7 @@ tags:
   - Peter
   - Quran
   - Seleucid Empire
+  - Star of Bethlehem
   - theophany
 books:
   - Isaiah

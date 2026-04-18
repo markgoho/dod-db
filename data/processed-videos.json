@@ -5668,6 +5668,10 @@
         "mentions": 2
       },
       {
+        "tag": "Magi",
+        "mentions": 2
+      },
+      {
         "tag": "Second Temple period",
         "mentions": 2
       },
@@ -5909,7 +5913,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 35
+    "episodeNumber": 35,
+    "episodeTopic": "New Testament Authorship"
   },
   {
     "videoId": "5ebvYxjXH2Y",
@@ -6121,7 +6126,8 @@
         "source": "auto"
       }
     ],
-    "episodeNumber": 36
+    "episodeNumber": 36,
+    "episodeTopic": "Biblical Peoplehood"
   },
   {
     "videoId": "UHN2ZPsFyoY",
@@ -6131,8 +6137,16 @@
     "transcriptPath": "data/transcripts/2023-12-18-episode-37-december-18-2023-follow-that-star-with-aaron-adair.txt",
     "tags": [
       {
+        "tag": "Star of Bethlehem",
+        "mentions": 36
+      },
+      {
         "tag": "Bethlehem",
         "mentions": 19
+      },
+      {
+        "tag": "Magi",
+        "mentions": 7
       },
       {
         "tag": "Jerusalem",
@@ -6282,6 +6296,14 @@
     "transcriptPath": "data/transcripts/2023-12-25-episode-38-december-25-2023-the-three-wise-men-with-eric-vanden-eykel.txt",
     "tags": [
       {
+        "tag": "Magi",
+        "mentions": 31
+      },
+      {
+        "tag": "Star of Bethlehem",
+        "mentions": 29
+      },
+      {
         "tag": "Bethlehem",
         "mentions": 8
       },
@@ -6371,7 +6393,8 @@
     ],
     "speakers": ["Dan Beecher", "Dan McClellan", "Eric Vanden Eykel"],
     "scriptures": [],
-    "episodeNumber": 38
+    "episodeNumber": 38,
+    "episodeTopic": "Magi"
   },
   {
     "videoId": "VTRccZ81UZs",
@@ -7200,6 +7223,10 @@
       },
       {
         "tag": "Seleucid Empire",
+        "mentions": 1
+      },
+      {
+        "tag": "Star of Bethlehem",
         "mentions": 1
       },
       {
@@ -13718,11 +13745,19 @@
         "mentions": 6
       },
       {
+        "tag": "Star of Bethlehem",
+        "mentions": 5
+      },
+      {
         "tag": "Galilee",
         "mentions": 4
       },
       {
         "tag": "John",
+        "mentions": 4
+      },
+      {
+        "tag": "Magi",
         "mentions": 4
       },
       {
@@ -13893,6 +13928,10 @@
         "mentions": 6
       },
       {
+        "tag": "Magi",
+        "mentions": 6
+      },
+      {
         "tag": "Septuagint",
         "mentions": 6
       },
@@ -13938,6 +13977,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Star of Bethlehem",
         "mentions": 2
       },
       {
@@ -22830,6 +22873,10 @@
       {
         "tag": "Rachel",
         "mentions": 1
+      },
+      {
+        "tag": "Star of Bethlehem",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -24210,6 +24257,10 @@
         "mentions": 3
       },
       {
+        "tag": "Magi",
+        "mentions": 3
+      },
+      {
         "tag": "Moses",
         "mentions": 3
       },
@@ -24243,6 +24294,10 @@
       },
       {
         "tag": "Second Temple period",
+        "mentions": 2
+      },
+      {
+        "tag": "Star of Bethlehem",
         "mentions": 2
       },
       {

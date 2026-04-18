@@ -6,6 +6,8 @@ videoId: ymMm0ICgBmc
 aliases:
   - /episodes/38/
 tags:
+  - Magi
+  - Star of Bethlehem
   - Bethlehem
   - Jerusalem
   - Persia
@@ -24,6 +26,7 @@ tags:
   - Septuagint
 guests:
   - Eric Vanden Eykel
+episodeTopic: Magi
 draft: false
 ---
 

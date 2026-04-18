@@ -6,7 +6,9 @@ videoId: UHN2ZPsFyoY
 aliases:
   - /episodes/37/
 tags:
+  - Star of Bethlehem
   - Bethlehem
+  - Magi
   - Jerusalem
   - Deism
   - Easter

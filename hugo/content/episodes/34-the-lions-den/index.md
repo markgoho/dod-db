@@ -22,6 +22,7 @@ tags:
   - Dead Sea Scrolls
   - Judaism
   - King James Bible
+  - Magi
   - Second Temple period
   - Seleucid Empire
   - Adam

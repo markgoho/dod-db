@@ -12,6 +12,7 @@ tags:
   - Jerusalem
   - King David
   - John the Baptist
+  - Magi
   - Septuagint
   - Gabriel
   - Gospel of James
@@ -24,6 +25,7 @@ tags:
   - Deuteronomy
   - Jericho
   - Judah
+  - Star of Bethlehem
   - YHWH
   - Abortion
   - Antiochus IV Epiphanes
