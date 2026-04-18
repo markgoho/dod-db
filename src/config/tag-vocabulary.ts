@@ -578,7 +578,9 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["monotheistic"],
     category: "theology",
     status: "accepted",
-    episodes: [58, 59, 70, 77, 86, 104, 117, 126],
+    episodes: [
+      1, 5, 7, 9, 13, 19, 36, 42, 58, 59, 70, 77, 86, 104, 117, 126, 149,
+    ],
   },
   {
     canonical: "Univocality",
@@ -1574,13 +1576,13 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "John the Baptist",
-    variations: ["the Baptist"],
+    variations: [],
     category: "character",
     llmVerify: true,
     description:
       "Jewish preacher who baptized Jesus, executed by Herod Antipas",
     status: "accepted",
-    episodes: [23, 28, 48, 61, 63, 69, 86, 87, 94],
+    episodes: [23, 28, 48, 61, 63, 69, 86, 87, 94, 143, 144, 145],
   },
   {
     canonical: "Gospel of Thomas",
