@@ -40,7 +40,7 @@ segmentData:
   - type: thats-history
     anchor: thats-history-1
     label: "That's History"
-    topicLabel: King James Version
+    topicLabel: King James Bible
     summary: History and creation of the King James Version of Bible.
     startSeconds: 82
   - type: know-your-bible

@@ -32,7 +32,7 @@
       {{ else if eq .type "episode" }}
         {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" .number) 0 }}
         {{ if $featuredEpisodePage }}
-          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "ranked" true "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" "Featured episode" "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion"))) }}
+          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "ranked" true "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" (printf "Featured · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion"))) }}
         {{ end }}
       {{ end }}
     {{ end }}
@@ -53,7 +53,7 @@
           {{ if $topEpisode }}
             {{ $topEpisodePage := index (where $allEpisodes ".Params.episodeNumber" $topEpisode.ep) 0 }}
             {{ if $topEpisodePage }}
-              {{ partial "episode-card" (dict "episode" $topEpisodePage "ranked" true "mentionCount" $topEpisode.m "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" "Top mention" "guestText" "The episode that talks about this topic the most")) }}
+              {{ partial "episode-card" (dict "episode" $topEpisodePage "ranked" true "mentionCount" $topEpisode.m "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" (printf "Top mention · Episode %v" $topEpisodePage.Params.episodeNumber) "guestText" "The episode that talks about this topic the most")) }}
             {{ end }}
           {{ end }}
         </div>
@@ -79,10 +79,10 @@
                     {{ $timestampParts := split . "." }}
                     {{ $timeParts := split (index $timestampParts 0) ":" }}
                     {{ if eq (len $timeParts) 3 }}
-                      {{ $hours := int (index $timeParts 0) }}
-                      {{ $minutes := int (index $timeParts 1) }}
-                      {{ $seconds := int (index $timeParts 2) }}
-                      {{ $milliseconds := cond (gt (len $timestampParts) 1) (int (index $timestampParts 1)) 0 }}
+                      {{ $hours := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 0)) }}
+                      {{ $minutes := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 1)) }}
+                      {{ $seconds := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 2)) }}
+                      {{ $milliseconds := cond (gt (len $timestampParts) 1) (int (replaceRE "^0+([0-9]+)$" "$1" (index $timestampParts 1))) 0 }}
                       {{ $totalSeconds := add (mul $hours 3600) (add (mul $minutes 60) $seconds) }}
                       {{ $quoteHref = printf "%s#t-%d-%03d" $episode.RelPermalink $totalSeconds $milliseconds }}
                     {{ end }}
