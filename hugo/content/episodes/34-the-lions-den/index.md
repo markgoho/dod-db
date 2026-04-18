@@ -42,6 +42,7 @@ books:
   - Daniel
   - Revelation
   - Isaiah
+episodeTopic: Book of Daniel
 draft: false
 ---
 

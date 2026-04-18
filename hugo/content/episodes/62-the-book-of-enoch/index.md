@@ -10,8 +10,8 @@ tags:
   - Book of Enoch
   - Noah
   - Flood
-  - Eschatology
   - Daniel
+  - Eschatology
   - Methuselah
   - Adam
   - Asael

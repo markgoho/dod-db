@@ -10,7 +10,6 @@ tags:
   - John
   - Paul
   - Athanasius of Alexandria
-  - Daniel
   - Eschatology
   - Moses
   - Satan

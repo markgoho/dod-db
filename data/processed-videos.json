@@ -5605,7 +5605,7 @@
     "tags": [
       {
         "tag": "Daniel",
-        "mentions": 62
+        "mentions": 33
       },
       {
         "tag": "Babylon",
@@ -5773,7 +5773,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 34
+    "episodeNumber": 34,
+    "episodeTopic": "Book of Daniel"
   },
   {
     "videoId": "_8in-xz4L8o",
@@ -6393,10 +6394,6 @@
       },
       {
         "tag": "Athanasius of Alexandria",
-        "mentions": 6
-      },
-      {
-        "tag": "Daniel",
         "mentions": 6
       },
       {
@@ -7416,6 +7413,10 @@
         "mentions": 26
       },
       {
+        "tag": "Daniel",
+        "mentions": 21
+      },
+      {
         "tag": "Qumran",
         "mentions": 15
       },
@@ -7429,10 +7430,6 @@
       },
       {
         "tag": "Babylon",
-        "mentions": 6
-      },
-      {
-        "tag": "Daniel",
         "mentions": 6
       },
       {
@@ -10152,12 +10149,12 @@
         "mentions": 12
       },
       {
-        "tag": "Eschatology",
+        "tag": "Daniel",
         "mentions": 9
       },
       {
-        "tag": "Daniel",
-        "mentions": 8
+        "tag": "Eschatology",
+        "mentions": 9
       },
       {
         "tag": "Methuselah",

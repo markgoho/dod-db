@@ -8,11 +8,11 @@ aliases:
 tags:
   - Dead Sea Scrolls
   - Deuteronomy
+  - Daniel
   - Qumran
   - Septuagint
   - Ammonites
   - Babylon
-  - Daniel
   - Masoretic Text
   - Nebuchadnezzar
   - Jeremiah
