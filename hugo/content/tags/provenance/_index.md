@@ -7,10 +7,11 @@ aliases:
 knownAs:
   - Provenience
   - Unprovenanced
-featuredSegment:
-  episodeNumber: 3
-  segmentAnchor: what-does-that-mean-1
-  label: "What Does That Mean? — Provenance"
+featuredItems:
+  - type: segment
+    episodeNumber: 3
+    segmentAnchor: what-does-that-mean-1
+    label: "What Does That Mean? — Provenance"
 quotes:
   - text: "Provenance fundamentally refers to the origins of something or when something began to be the way it is."
     speaker: Dan McClellan

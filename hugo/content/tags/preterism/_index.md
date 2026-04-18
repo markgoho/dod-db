@@ -2,10 +2,11 @@
 title: Preterism
 definition: >-
   The interpretive view that end-times prophecies in texts like Daniel, the Olivet Discourse, and Revelation were fulfilled in the past rather than awaiting future fulfillment.
-featuredSegment:
-  episodeNumber: 119
-  segmentAnchor: what-is-that-1
-  label: What is That? — Preterism
+featuredItems:
+  - type: segment
+    episodeNumber: 119
+    segmentAnchor: what-is-that-1
+    label: What is That? — Preterism
 quotes:
   - text: >-
       The basic idea of preterism is that the prophecies about the end times in

@@ -29,6 +29,7 @@ books:
   - Galatians
 guests:
   - Jennifer Bird
+episodeTopic: Biblical Marriage
 draft: false
 ---
 

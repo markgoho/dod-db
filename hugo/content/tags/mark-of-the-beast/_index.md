@@ -1,10 +1,11 @@
 ---
 title: Mark of the Beast
 definition: The Mark of the Beast is the sign described in Revelation 13 that authorizes buying and selling under the beast’s power and is tied to the number 666. In critical scholarship, it is usually read as coded first-century political symbolism—especially in relation to Nero, imperial imagery, and anti-Roman polemic—rather than as a prediction of modern technologies or future global conspiracies.
-featuredSegment:
-  episodeNumber: 9
-  segmentAnchor: conspiracy-watch-1
-  label: "Conspiracy Watch — 666"
+featuredItems:
+  - type: segment
+    episodeNumber: 9
+    segmentAnchor: conspiracy-watch-1
+    label: "Conspiracy Watch — 666"
 quotes:
   - text: "It is six hundred sixty-six. It is not six, comma, six, comma, six."
     speaker: Dan McClellan

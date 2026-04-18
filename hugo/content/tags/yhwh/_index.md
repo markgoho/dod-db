@@ -7,9 +7,10 @@ aliases:
 knownAs:
   - Adonai
   - Yahweh
-featuredEpisode:
-  number: 1
-  label: "What Does That Mean? — Adonai"
+featuredItems:
+  - type: episode
+    number: 1
+    label: "What Does That Mean? — Adonai"
 quotes:
   - text: "When you hear Adonai, that's the Hebrew word for Lord, that is a substitution for the divine name."
     speaker: Dan McClellan

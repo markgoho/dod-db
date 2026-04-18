@@ -394,7 +394,7 @@ textarea:not([rows]) {
 
 .term-page {
   display: grid;
-  gap: var(--space-2xl);
+  gap: var(--space-xl);
 }
 
 .page-hero > .page-hero__eyebrow + .page-hero__title {

@@ -32,6 +32,28 @@
   margin: 0;
 }
 
+.tag-intro {
+  padding: var(--space-s) var(--space-m);
+}
+
+.tag-intro__summary {
+  cursor: pointer;
+  font-size: var(--step--1);
+}
+
+.tag-intro__content {
+  color: var(--color-text);
+  margin-top: var(--space-s);
+}
+
+.tag-intro__content > :first-child {
+  margin-top: 0;
+}
+
+.tag-intro__content > :last-child {
+  margin-bottom: 0;
+}
+
 .tag-quotes {
   align-content: start;
   display: grid;

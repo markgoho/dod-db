@@ -849,7 +849,7 @@
         "endTimestamp": null,
         "confidence": "verified",
         "detectionMethod": "pattern",
-        "topicLabel": "Council Nicaea",
+        "topicLabel": "Council of Nicaea",
         "summary": "Council of Nicaea's actual purpose versus urban legends."
       }
     ],
@@ -7427,7 +7427,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 44
+    "episodeNumber": 44,
+    "episodeTopic": "Biblical Marriage"
   },
   {
     "videoId": "iO6mdYWPOyo",
@@ -7630,7 +7631,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 45
+    "episodeNumber": 45,
+    "episodeTopic": "Dead Sea Scrolls"
   },
   {
     "videoId": "QFyFMwQpSko",

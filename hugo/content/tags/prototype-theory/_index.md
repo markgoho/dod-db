@@ -1,10 +1,11 @@
 ---
 title: Prototype Theory
 definition: Prototype theory is an approach to categorization that treats concepts as organized around especially representative examples rather than around fixed definitions with necessary and sufficient features. In biblical interpretation, it is useful for explaining why terms like deity, monotheism, or race often operate through gradation, overlap, and contested boundaries instead of clean binaries.
-featuredSegment:
-  episodeNumber: 9
-  segmentAnchor: what-does-that-mean-1
-  label: "What Does That Mean? — Prototype theory"
+featuredItems:
+  - type: segment
+    episodeNumber: 9
+    segmentAnchor: what-does-that-mean-1
+    label: "What Does That Mean? — Prototype theory"
 quotes:
   - text: "The traditional approach to definition tries to reduce a category down to the shortest list of necessary and sufficient conditions or features."
     speaker: Dan McClellan

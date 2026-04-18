@@ -5,9 +5,10 @@ aliases:
   - /tags/athirat/
 knownAs:
   - Athirat
-featuredEpisode:
-  number: 2
-  label: "God's Wife"
+featuredItems:
+  - type: episode
+    number: 2
+    label: "God's Wife"
 quotes:
   - text: "Goddesses were absolutely part and parcel of ancient YHWH religion."
     speaker: Francesca Stavrakopoulou

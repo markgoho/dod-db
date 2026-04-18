@@ -5,10 +5,11 @@ aliases:
   - /tags/heavenly-household/
 knownAs:
   - Heavenly household
-featuredSegment:
-  episodeNumber: 7
-  segmentAnchor: what-does-that-mean-1
-  label: "What Does That Mean? — Divine Council"
+featuredItems:
+  - type: segment
+    episodeNumber: 7
+    segmentAnchor: what-does-that-mean-1
+    label: "What Does That Mean? — Divine Council"
 quotes:
   - text: "The different sovereign entities had their own patron deities."
     speaker: Dan McClellan

@@ -1,9 +1,10 @@
 ---
 title: Mary Magdalene
 definition: Mary Magdalene is a prominent follower of Jesus whose identity became a flashpoint for debates about resurrection witness, women’s authority, textual transmission, and later church memory. In these discussions, she is treated less as the repentant prostitute of later tradition than as a figure whose story was repeatedly merged, softened, or reinterpreted through manuscript variation and reception history.
-featuredEpisode:
-  number: 12
-  label: "The Blessing of the Magdalene"
+featuredItems:
+  - type: episode
+    number: 12
+    label: "The Blessing of the Magdalene"
 quotes:
   - text: "That means that the person who gets the central christological confession also gets the first appearance of the risen Jesus. That's a problem because it gives her a lot of authority."
     speaker: Elizabeth Schrader Polczer

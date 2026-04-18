@@ -8,10 +8,11 @@ aliases:
 knownAs:
   - Univocal
   - Non-univocality
-featuredSegment:
-  episodeNumber: 6
-  segmentAnchor: what-does-that-mean-1
-  label: "What Does That Mean? — Univocality"
+featuredItems:
+  - type: segment
+    episodeNumber: 6
+    segmentAnchor: what-does-that-mean-1
+    label: "What Does That Mean? — Univocality"
 quotes:
   - text: "Univocality, from the Latin, means one voice."
     speaker: Dan McClellan

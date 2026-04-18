@@ -50,6 +50,7 @@ books:
   - Isaiah
 guests:
   - Kipp Davis
+episodeTopic: Dead Sea Scrolls
 draft: false
 ---
 

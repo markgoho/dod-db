@@ -37,6 +37,17 @@
         {{ end }}
       {{ end }}
     {{ end }}
+    {{ with .Content }}
+      <details class="tag-intro panel">
+        <summary class="tag-intro__summary type-eyebrow">
+          Why this topic matters
+        </summary>
+        <div class="tag-intro__content prose">
+          {{ . }}
+        </div>
+      </details>
+    {{ end }}
+
     {{ if or (ne $featuredMarkup "") $topEpisode }}
       <section class="tag-featured-overview">
         <div class="tag-section-heading">
