@@ -700,7 +700,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["Euphrates River"],
     category: "place",
     status: "accepted",
-    episodes: [4, 9, 27, 28, 39, 107],
+    episodes: [4, 9, 27, 28, 39, 107, 157],
   },
   {
     canonical: "Euphrates River",

@@ -5,10 +5,15 @@
   {{ $href := printf "%s#%s" $episode.RelPermalink $segment.anchor }}
   <a class="segment-card__link" href="{{ $href }}">
     <div class="segment-card__content">
-      <p class="segment-card__eyebrow type-eyebrow">Episode {{ $episode.Params.episodeNumber }}</p>
+      <p class="segment-card__eyebrow type-eyebrow">
+        Episode
+        {{ $episode.Params.episodeNumber }}
+      </p>
       <h2 class="segment-card__topic">{{ $topic }}</h2>
       <p class="segment-card__title">{{ $episode.Title }}</p>
-      <p class="segment-card__date type-micro">{{ $episode.Date | time.Format ":date_long" }}</p>
+      <p class="segment-card__date type-micro">
+        {{ $episode.Date | time.Format ":date_long" }}
+      </p>
     </div>
     <span class="segment-card__arrow" aria-hidden="true">→</span>
   </a>

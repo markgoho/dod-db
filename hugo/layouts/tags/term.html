@@ -30,7 +30,8 @@
           {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured segment" "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentAnchor)))) }}
         {{ end }}
       {{ else if eq .type "episode" }}
-        {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" .number) 0 }}
+        {{ $featuredEpisodeNumber := int .number }}
+        {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" $featuredEpisodeNumber) 0 }}
         {{ if $featuredEpisodePage }}
           {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "ranked" true "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" (printf "Featured · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion"))) }}
         {{ end }}

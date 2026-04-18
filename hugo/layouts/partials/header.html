@@ -1,21 +1,33 @@
 <nav class="navbar" aria-label="Primary navigation">
   <div class="navbar__inner container container--wide">
     <a class="navbar__logo" href="/">
-    <span class="navbar__logo-mark">Metadata over Dogma</span>
-    <span class="navbar__logo-subtitle">Unofficial companion guide</span>
-  </a>
+      <span class="navbar__logo-mark">Metadata over Dogma</span>
+      <span class="navbar__logo-subtitle">Unofficial companion guide</span>
+    </a>
 
-  <ul class="navbar__nav">
-    {{ range .Site.Menus.main }}
-      <li{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>
-        <a href="{{ .URL }}" class="navbar__link"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
-      </li>
-    {{ end }}
-  </ul>
+    <ul class="navbar__nav">
+      {{ range .Site.Menus.main }}
+        {{ $isCurrent := $.IsMenuCurrent "main" . }}
+        {{ if $isCurrent }}
+          <li class="active">
+            <a href="{{ .URL }}" class="navbar__link" aria-current="page"
+              >{{ .Name }}</a
+            >
+          </li>
+        {{ else }}
+          <li>
+            <a href="{{ .URL }}" class="navbar__link">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
 
     <div class="navbar__tools" aria-label="Archive utilities">
       <pagefind-modal-trigger>
-        <button class="navbar__search-trigger" type="button" aria-label="Search transcripts">
+        <button
+          class="navbar__search-trigger"
+          type="button"
+          aria-label="Search transcripts">
           Search
         </button>
       </pagefind-modal-trigger>
