@@ -32,6 +32,7 @@ books:
   - Galatians
 guests:
   - Matthew Thiessen
+episodeTopic: Paul within Judaism
 draft: false
 ---
 
