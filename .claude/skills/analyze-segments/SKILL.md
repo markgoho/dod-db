@@ -11,104 +11,140 @@ Use this skill to generate instance-specific segment descriptions for a processe
 
 Given an episode number, analyze each verified non-structural segment and generate:
 
-- `topicLabel` — a 1-2 word label for what that specific segment is about
+- `topicLabel` — a 1-2 word label for what that specific segment instance is about
 - `summary` — a short 5-10 word summary of the segment's discussion
 
 If the episode has no analyzable non-structural segments, generate:
 
 - `episodeTopic` — a short human-friendly topic label for the episode's main discussion subject
 
-Segment labels are stored on each `EpisodeSegment` and projected into Hugo segment cards. `episodeTopic` is stored on the episode and projected into the episode topic card.
+## Workflow
 
-## Primary command
+1. Gather deterministic context:
+   ```bash
+   bun run src/scripts/gather-segment-context.ts <episode-number> [--force]
+   ```
+2. Reason directly in the agent from the JSON output.
+3. Save results:
+   ```bash
+   bun run src/scripts/save-segment-results.ts
+   ```
+   Pipe the final JSON into stdin or pass it with `--input`.
 
-```bash
-bun run src/scripts/analyze-segments.ts <episode-number>
+## Gather output
+
+The gather script returns one of these modes:
+
+- `segments` — includes a `segments` array with gathered transcript context
+- `episode-topic` — includes `guestNames` and `transcriptPath`
+- `no-op` — nothing needs updating
+
+For `segments`, each item includes:
+
+- `segmentType`
+- `startTimestamp`
+- `segmentLabel`
+- `segmentDescription`
+- `contextText`
+- `scriptureCandidates`
+- `primaryScriptureCandidate`
+- `forwardScriptureCandidate`
+- `fallbackScriptureCandidate`
+
+## Segment reasoning rules
+
+General rules:
+
+- Be specific to this segment instance, not the generic segment type.
+- Prefer concrete concepts or terms stated in the transcript.
+- Do not use quotation marks.
+- Do not repeat the generic segment label unless that is genuinely the topic.
+- Keep `topicLabel` to 1-2 words maximum.
+- Keep `summary` to 5-10 words maximum.
+- Return `confidence` from 0 to 100.
+- Include brief `reasoning`.
+
+Segment-specific rules:
+
+- `chapter-and-verse`
+  - Prefer the single most central scripture reference when one is clearly central.
+  - Treat `primaryScriptureCandidate` as definitive when present unless the transcript clearly introduces a different main passage.
+  - Next prefer references explicitly introduced as the verse or passage under discussion.
+  - Deprioritize examples, comparisons, and side mentions.
+  - If the topic label is a scripture reference, the summary should describe the interpretive issue or claim about that passage.
+- `what-does-that-mean`
+  - Prefer the key term or concept being defined.
+  - The summary should explain what the term means or why it matters.
+- `conspiracy-watch`
+  - Prefer a compact recognizable shorthand for the claim, symbol, or entity being debunked.
+  - Avoid vague labels and generic framing like `Conspiracy`.
+- `archaeology-of-israel`
+  - Prefer the most specific site, inscription, artifact, or excavation.
+  - Avoid generic labels like `Archaeology` or `Israel`.
+- `watch-your-language`
+  - Prefer the word, phrase, or language issue under discussion.
+- `what-is-that`
+  - Prefer the object, artifact, or item being explained.
+- `whos-that` / `who-dat`
+  - Prefer the person or figure's full name.
+- default
+  - Prefer the most concrete focal concept, term, text, figure, or artifact named in the transcript.
+
+## Episode-topic mode
+
+If gather returns `episode-topic`, read the transcript from `transcriptPath` and produce one short topic label for the central discussion.
+
+Rules:
+
+- Return a concise human-friendly label, usually 1-3 words.
+- Prefer the full named concept when the transcript makes it clear.
+- Prefer `Star of Bethlehem` over `Star`.
+- Prefer `Divine Council` over `Council`.
+- Prefer `Ancient Astronomy` over `Astronomy` when that is the real topic.
+- Prefer a broad topic area or named concept, not a sentence.
+- Do not return the guest's name.
+- Do not return a segment title like `Guest Topic`.
+- Pick the dominant topic, not a minor tangent.
+- Avoid vague single-word labels when a clearer multi-word concept is evident.
+- Never append `in the Bible` or `and the Bible`.
+
+## Save input shape
+
+For `segments` mode, send JSON like:
+
+```json
+{
+  "mode": "segments",
+  "episodeNumber": 6,
+  "videoId": "...",
+  "segmentResults": [
+    {
+      "startTimestamp": "00:05:23",
+      "segmentType": "chapter-and-verse",
+      "topicLabel": "Rom 1:26",
+      "summary": "Paul's rhetoric on same-sex relations in Romans",
+      "confidence": 90,
+      "reasoning": "The hosts center the discussion on Romans 1:26.",
+      "primaryScriptureCandidate": "Rom 1:26",
+      "forwardScriptureCandidate": "Rom 1:26",
+      "fallbackScriptureCandidate": "Rom 1:26"
+    }
+  ]
+}
 ```
 
-Example:
+For `episode-topic` mode, send JSON like:
 
-```bash
-bun run src/scripts/analyze-segments.ts 6
+```json
+{
+  "mode": "episode-topic",
+  "episodeNumber": 6,
+  "videoId": "...",
+  "episodeTopic": "Divine Council",
+  "episodeTopicConfidence": 0.9
+}
 ```
 
-## Options
+## Expected output
 
-- `--force` — re-analyze segments even if they already have `topicLabel` and `summary`
-- `--dry-run` — show generated results without saving or regenerating Hugo
-
-Examples:
-
-```bash
-bun run src/scripts/analyze-segments.ts 6 --force
-bun run src/scripts/analyze-segments.ts 6 --dry-run
-```
-
-## What the script does
-
-1. Loads the processed episode by episode number
-2. Finds verified segments only
-3. Skips structural/generic segments:
-   - `intro`
-   - `outro`
-   - `main-content`
-   - `advertisement`
-   - `segment`
-4. Uses transcript context plus segment-type-aware prompting to generate:
-   - topic label
-   - short summary
-5. If no analyzable non-structural segments remain and the episode has guests, generates a `episodeTopic` label for the guest discussion
-6. Saves the results back to `data/processed-videos.json`
-7. Regenerates the Hugo episode page
-
-## Segment-specific behavior
-
-The prompt includes segment-specific guidance. For example:
-
-- **Chapter and Verse**: prefer the main scripture reference as the topic label when one is clearly central (e.g. `2 Tim 3:16`)
-- **What Does That Mean?**: prefer the key term or concept being defined (e.g. `Univocality`)
-- **Who's That? / Who Dat?**: prefer the person or figure's name
-- **What is That?**: prefer the object or artifact being explained
-
-## Guest episodes
-
-If an episode has guests and no recurring segments were identified, that is often expected behavior rather than a failure. In those cases, generate a `episodeTopic` label for the episode's main discussion subject.
-
-Prefer the full named concept when the transcript makes it clear, not an underspecified single word. Examples:
-
-- `Star of Bethlehem` over `Star`
-- `Divine Council` over `Council`
-- `Ancient Astronomy` over `Astronomy` when the fuller phrase is the real topic
-- Never append `in the Bible` or `and the Bible` to a topic label; the site context already makes that clear
-
-Treat a no-op result on guest episodes as normal unless there is other evidence the episode should contain recurring segments.
-
-## Output expectations
-
-Every run should end with a reviewable text summary for each analyzed segment, including:
-
-- segment type
-- start timestamp
-- topic label
-- short summary
-- confidence
-
-This summary is part of the expected output even when the script also updates metadata and regenerates Hugo.
-
-## Verification
-
-After running:
-
-1. Confirm `topicLabel` / `summary` were added to the target episode in `data/processed-videos.json`
-2. Confirm the episode page in `hugo/content/episodes/.../index.md` has updated `segmentData`
-3. Confirm segment cards use the topic label when available
-4. Confirm the command output includes the per-segment review summary
-
-## Related files
-
-- `src/scripts/analyze-segments.ts`
-- `src/scripts/describe-segment.ts`
-- `src/pipeline/describe-segment.ts`
-- `src/prompts/segment-description-prompt.ts`
-- `src/storage/update-segment-description.ts`
-- `src/hugo/format-segments-for-frontmatter.ts`
+Every successful save prints a stable review summary for manual inspection. Treat guest-episode no-op outcomes as normal unless other evidence suggests recurring segments were missed.

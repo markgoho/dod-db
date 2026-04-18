@@ -2,17 +2,13 @@
  * Generate an instance-specific topic label and summary for a segment.
  */
 
-import { z } from "zod";
-import { ai } from "../ai.js";
-import { speakerIdModel } from "../config/models.js";
 import {
   SEGMENT_DESCRIPTIONS,
   SEGMENT_LABELS,
   type SegmentType,
 } from "../config/segment-patterns.js";
-import { segmentDescriptionPrompt } from "../prompts/segment-description-prompt.js";
 import {
-  SegmentDescriptionSchema,
+  type SegmentDescriptionContext,
   type SegmentDescriptionResult,
 } from "../prompts/segment-description.js";
 import type { TranscriptLine } from "./detect-segments-types.js";
@@ -40,7 +36,10 @@ const DESCRIPTION_CONTEXT_CONFIG = {
   linesBefore: 10,
   linesAfter: 40,
   timestampTolerance: 5,
-};
+} as const;
+
+const SCRIPTURE_INTRO_CUE_PATTERN =
+  /(we('re| are) (here )?in|we('re| are) looking at|let'?s look at|today('s)? (passage|text)|today we('re| are) (in|looking at)|the passage is|we('re| are) going to talk about|we('re| are) heading to|we finally made it to|we made it to)/i;
 
 function extractForwardTranscriptLines(
   lines: TranscriptLine[],
@@ -50,16 +49,26 @@ function extractForwardTranscriptLines(
   return lines.slice(startIndex, Math.min(lines.length, startIndex + count));
 }
 
-interface DescribeSegmentInput {
+export interface DescribeSegmentInput {
   episodeTitle: string;
   segmentType: SegmentType;
   startTimestamp: string;
   transcript: string;
 }
 
-export async function describeSegment(
+export interface GatheredSegmentContext extends SegmentDescriptionContext {
+  forwardScriptureCandidate?: string;
+  fallbackScriptureCandidate?: string;
+}
+
+export interface SegmentPostProcessContext {
+  primaryScriptureCandidate?: string;
+  fallbackScriptureCandidate?: string;
+}
+
+export function gatherSegmentContext(
   input: DescribeSegmentInput,
-): Promise<SegmentDescriptionResult> {
+): GatheredSegmentContext {
   const transcriptLines = parseTranscript(input.transcript);
   const targetSeconds = timestampToSeconds(input.startTimestamp);
   const closestIndex = findClosestTranscriptLineIndex(
@@ -100,10 +109,7 @@ export async function describeSegment(
   const explicitScriptureCandidate = contextLines.all
     .map((line, index) => {
       const trimmed = line.text.trim();
-      const hasIntroCue =
-        /(we('re| are) (here )?in|we('re| are) looking at|let'?s look at|today('s)? (passage|text)|today we('re| are) (in|looking at)|the passage is|we('re| are) going to talk about|we('re| are) heading to|we finally made it to|we made it to)/i.test(
-          trimmed,
-        );
+      const hasIntroCue = SCRIPTURE_INTRO_CUE_PATTERN.test(trimmed);
       if (!hasIntroCue) {
         return;
       }
@@ -124,8 +130,10 @@ export async function describeSegment(
     spokenScriptureCandidate ??
     extractPrimaryScriptureCandidateFromLines(contextLines.all) ??
     extractPrimaryScriptureCandidate(contextText);
+  const fallbackScriptureCandidate =
+    forwardScriptureCandidate ?? scriptureCandidates[0];
 
-  const prompt = segmentDescriptionPrompt({
+  return {
     episodeTitle: input.episodeTitle,
     segmentType: input.segmentType,
     segmentLabel: SEGMENT_LABELS[input.segmentType],
@@ -134,53 +142,43 @@ export async function describeSegment(
     contextText,
     scriptureCandidates,
     primaryScriptureCandidate,
-  });
+    forwardScriptureCandidate,
+    fallbackScriptureCandidate,
+  };
+}
 
-  const response = await ai.models.generateContent({
-    model: speakerIdModel,
-    contents: prompt,
-    config: {
-      responseMimeType: "application/json",
-      responseSchema: z.toJSONSchema(SegmentDescriptionSchema),
-    },
-  });
-
-  const responseText = response.text;
-  if (!responseText) {
-    throw new Error("LLM returned empty response for segment description");
-  }
-
-  const parsed = SegmentDescriptionSchema.parse(JSON.parse(responseText));
-
-  if (input.segmentType === "chapter-and-verse") {
-    const fallbackScriptureCandidate =
-      forwardScriptureCandidate ?? scriptureCandidates[0];
+export function postProcessSegmentDescription(
+  segmentType: SegmentType,
+  result: SegmentDescriptionResult,
+  gathered: SegmentPostProcessContext,
+): SegmentDescriptionResult {
+  if (segmentType === "chapter-and-verse") {
     const scriptureTopicLabel =
-      primaryScriptureCandidate ?? fallbackScriptureCandidate;
+      gathered.primaryScriptureCandidate ?? gathered.fallbackScriptureCandidate;
 
     if (scriptureTopicLabel) {
       const normalizedTopicLabel =
         shortenScriptureReference(scriptureTopicLabel);
       const looksLikeScriptureReference =
         /^[1-3]?\s?[A-Za-z]+(?:\s+[A-Za-z]+)?\s+\d+(?::\d+(?:-\d+)?)?$/.test(
-          parsed.description.topicLabel,
+          result.topicLabel,
         );
 
       return {
-        ...parsed.description,
+        ...result,
         topicLabel: normalizedTopicLabel,
         summary: looksLikeScriptureReference
-          ? parsed.description.summary.replaceAll(
+          ? result.summary.replaceAll(
               /\b(Psalm|Psalms|Genesis|Gen|Exodus|Exod|Joshua|Josh|Matthew|Matt|Mark|Luke|John|Acts|Romans|Rom|Corinthians|Cor|Timothy|Tim|Samuel|Sam|Kings|Chronicles|Chron)\s+\d+(?::\d+(?:-\d+)?)?/gi,
               normalizedTopicLabel,
             )
-          : parsed.description.summary,
+          : result.summary,
       };
     }
   }
 
   return {
-    ...parsed.description,
-    topicLabel: normalizeScriptureTopicLabel(parsed.description.topicLabel),
+    ...result,
+    topicLabel: normalizeScriptureTopicLabel(result.topicLabel),
   };
 }

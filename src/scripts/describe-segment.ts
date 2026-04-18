@@ -10,7 +10,10 @@
 import type { SegmentType } from "../config/segment-patterns.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { formatSegmentsForFrontmatter } from "../hugo/format-segments-for-frontmatter.js";
-import { describeSegment } from "../pipeline/describe-segment.js";
+import {
+  gatherSegmentContext,
+  postProcessSegmentDescription,
+} from "../pipeline/describe-segment.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
 import { getVideoByEpisodeNumber } from "../storage/get-video-by-episode-number.js";
 import type {
@@ -153,24 +156,35 @@ async function main(): Promise<void> {
       throw new Error(`Episode ${args.episodeNumber} has no segments`);
     }
 
-    const transcript = await Bun.file(video.transcriptPath).text();
     const segment = resolveSegment(video, args.segmentType, args.anchor);
+    const transcript = await Bun.file(video.transcriptPath).text();
     const cleanTitle = extractCleanTitle(video.title);
 
     console.log(
       `Describing ${segment.type} for episode ${args.episodeNumber}: ${cleanTitle}`,
     );
 
-    const description = await describeSegment({
+    const gathered = gatherSegmentContext({
       episodeTitle: cleanTitle,
       segmentType: segment.type,
       startTimestamp: segment.startTimestamp,
       transcript,
     });
 
-    console.log(`Topic label: ${description.topicLabel}`);
-    console.log(`Summary: ${description.summary}`);
-    console.log(`Confidence: ${description.confidence}`);
+    const description = postProcessSegmentDescription(
+      segment.type,
+      {
+        topicLabel: gathered.primaryScriptureCandidate ?? segment.type,
+        summary: gathered.segmentDescription,
+        confidence: 0,
+        reasoning: "Manual follow-up required in the agent-driven workflow.",
+      },
+      gathered,
+    );
+
+    console.log(`Context gathered for: ${segment.type}`);
+    console.log(`Suggested topic label: ${description.topicLabel}`);
+    console.log(`Context text:\n${gathered.contextText}`);
 
     if (args.dryRun) {
       console.log("Dry run complete. No changes saved.");
@@ -191,7 +205,6 @@ async function main(): Promise<void> {
 
         return {
           ...candidate,
-          type: candidate.type,
           topicLabel: description.topicLabel,
           summary: description.summary,
         };
@@ -199,7 +212,9 @@ async function main(): Promise<void> {
     };
 
     await generateHugoEpisode(updatedVideo);
-    console.log("Saved segment description and regenerated Hugo page.");
+    console.log(
+      "Saved placeholder segment description and regenerated Hugo page.",
+    );
   } catch (error) {
     console.error(error instanceof Error ? error.message : error);
     process.exit(1);
