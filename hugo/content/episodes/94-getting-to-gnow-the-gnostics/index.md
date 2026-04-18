@@ -35,7 +35,6 @@ tags:
   - Mount Sinai
   - Qumran
   - Septuagint
-  - Trinity
 books:
   - Matthew
   - Mark

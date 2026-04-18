@@ -15,7 +15,6 @@ tags:
   - Judaism
   - Matthew
   - Paul
-  - Trinity
   - Apocrypha
   - Aristobulus
   - Athanasius of Alexandria
@@ -29,6 +28,7 @@ tags:
   - Septuagint
   - Theosis
   - Transfiguration
+  - Trinity
 books:
   - John
   - Psalms

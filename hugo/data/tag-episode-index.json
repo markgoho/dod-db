@@ -18833,7 +18833,7 @@
   "Trinity": [
     {
       "ep": 42,
-      "m": 28,
+      "m": 26,
       "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\""
     },
     {
@@ -18867,24 +18867,9 @@
       "title": "Order Up! With Jennifer Garcia Bashaw and Aaron Higashi"
     },
     {
-      "ep": 128,
-      "m": 2,
-      "title": "\"John!\" with Hugo Méndez"
-    },
-    {
-      "ep": 104,
-      "m": 2,
-      "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
-    },
-    {
       "ep": 26,
       "m": 2,
       "title": "Episode 26 (October 1, 2023), \"A Jewish Paul\" with Matthew Thiessen"
-    },
-    {
-      "ep": 4,
-      "m": 2,
-      "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
     },
     {
       "ep": 148,
@@ -18892,14 +18877,19 @@
       "title": "Unforgivable!"
     },
     {
+      "ep": 128,
+      "m": 1,
+      "title": "\"John!\" with Hugo Méndez"
+    },
+    {
       "ep": 124,
       "m": 1,
       "title": "Who are the REAL Christians?"
     },
     {
-      "ep": 94,
+      "ep": 104,
       "m": 1,
-      "title": "Episode 94 (January 20, 2025), \"Getting to Gnow the Gnostics\""
+      "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
     },
     {
       "ep": 69,
@@ -18925,6 +18915,11 @@
       "ep": 6,
       "m": 1,
       "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
+    },
+    {
+      "ep": 4,
+      "m": 1,
+      "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
     },
     {
       "ep": 3,

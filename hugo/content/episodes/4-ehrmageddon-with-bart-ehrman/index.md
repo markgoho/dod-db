@@ -16,7 +16,6 @@ tags:
   - Abraham
   - cognitive dissonance
   - Council of Nicaea
-  - Trinity
   - Apocrypha
   - Babylon
   - Christian Nationalism
@@ -35,6 +34,7 @@ tags:
   - Second Coming
   - Seleucid Empire
   - The Reformation
+  - Trinity
   - Univocality
 books:
   - Psalms

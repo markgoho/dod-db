@@ -486,11 +486,12 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Trinity",
-    variations: ["Trinitarian"],
+    variations: [],
     category: "theology",
     status: "accepted",
     episodes: [
-      2, 3, 4, 5, 6, 8, 26, 34, 40, 42, 45, 53, 58, 69, 79, 94, 104, 124, 128,
+      2, 3, 4, 5, 6, 8, 26, 34, 40, 42, 45, 53, 58, 69, 79, 104, 124, 128, 148,
+      149,
     ],
   },
   {

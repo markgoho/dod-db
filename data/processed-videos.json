@@ -625,10 +625,6 @@
         "mentions": 2
       },
       {
-        "tag": "Trinity",
-        "mentions": 2
-      },
-      {
         "tag": "Apocrypha",
         "mentions": 1
       },
@@ -698,6 +694,10 @@
       },
       {
         "tag": "The Reformation",
+        "mentions": 1
+      },
+      {
+        "tag": "Trinity",
         "mentions": 1
       },
       {
@@ -6961,7 +6961,7 @@
     "tags": [
       {
         "tag": "Trinity",
-        "mentions": 28
+        "mentions": 26
       },
       {
         "tag": "John",
@@ -15179,10 +15179,6 @@
       {
         "tag": "Septuagint",
         "mentions": 1
-      },
-      {
-        "tag": "Trinity",
-        "mentions": 1
       }
     ],
     "segments": [
@@ -16623,10 +16619,6 @@
         "mentions": 2
       },
       {
-        "tag": "Trinity",
-        "mentions": 2
-      },
-      {
         "tag": "Abraham",
         "mentions": 1
       },
@@ -16696,6 +16688,10 @@
       },
       {
         "tag": "Tertullian",
+        "mentions": 1
+      },
+      {
+        "tag": "Trinity",
         "mentions": 1
       },
       {
@@ -20591,10 +20587,6 @@
         "mentions": 2
       },
       {
-        "tag": "Trinity",
-        "mentions": 2
-      },
-      {
         "tag": "Apocrypha",
         "mentions": 1
       },
@@ -20644,6 +20636,10 @@
       },
       {
         "tag": "Transfiguration",
+        "mentions": 1
+      },
+      {
+        "tag": "Trinity",
         "mentions": 1
       }
     ],

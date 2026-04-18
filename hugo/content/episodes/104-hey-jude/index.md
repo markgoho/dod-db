@@ -29,7 +29,6 @@ tags:
   - Jacob
   - provenance
   - Textus Receptus
-  - Trinity
   - Abraham
   - Dead Sea Scrolls
   - Decalogue
@@ -48,6 +47,7 @@ tags:
   - Septuagint
   - Ten Commandments
   - Tertullian
+  - Trinity
   - Univocality
 books:
   - Exodus
