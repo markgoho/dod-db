@@ -88,6 +88,7 @@ export { debounce } from "./debounce.js";
 
 // Re-export vocabulary utilities
 export {
+  fetchEpisodeProposedTags,
   fetchVocabulary,
   getTagCategory,
   getTagVocabEntry,
@@ -200,6 +201,7 @@ import {
 } from "./ui.js";
 import { getSubpageFromUrl, getVideoIdFromUrl } from "./url.js";
 import {
+  fetchEpisodeProposedTags,
   fetchVocabulary,
   getTagCategory,
   getTagVocabEntry,
@@ -288,6 +290,7 @@ export const DoDTools = {
   // Vocabulary
   getTagVocabEntry,
   getTagCategory,
+  fetchEpisodeProposedTags,
   fetchVocabulary,
 
   // Form utilities

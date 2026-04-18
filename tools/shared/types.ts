@@ -101,4 +101,6 @@ export interface TagVocabularyEntry {
   description?: string;
   status?: string;
   episodes?: number[];
+  addedInEpisode?: number;
+  duplicateOf?: string;
 }

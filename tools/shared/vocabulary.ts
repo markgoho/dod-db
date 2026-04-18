@@ -45,3 +45,20 @@ export async function fetchVocabulary(): Promise<TagVocabularyEntry[]> {
     return [];
   }
 }
+
+export async function fetchEpisodeProposedTags(
+  videoId: string,
+): Promise<TagVocabularyEntry[]> {
+  try {
+    const response = await fetch(
+      `${API_BASE_URL}/api/episode/${videoId}/proposed-tags`,
+    );
+    if (!response.ok) {
+      throw new Error("Failed to load proposed tags");
+    }
+    return await response.json();
+  } catch (error) {
+    console.error("Error loading proposed tags:", error);
+    return [];
+  }
+}

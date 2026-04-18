@@ -1,6 +1,8 @@
 import {
   addTagWithPolling,
+  API_BASE_URL,
   escapeHtml,
+  fetchEpisodeProposedTags,
   fetchVocabulary,
   getEpisode,
   getTagCategory,
@@ -8,6 +10,7 @@ import {
   getVideoIdFromUrl,
   reprocessEpisodeTags,
   reprocessTag as reprocessTagShared,
+  startJobPollingWithUI,
   toggleDescriptionField,
   type Episode,
   type TagVocabularyEntry,
@@ -16,6 +19,7 @@ import {
 const videoId = getVideoIdFromUrl();
 let episode: Episode | undefined;
 let vocabulary: TagVocabularyEntry[] = [];
+let proposedTags: TagVocabularyEntry[] = [];
 let currentCategory = "all";
 let selectedTag: string | undefined;
 
@@ -31,13 +35,15 @@ async function init(): Promise<void> {
   }
 
   try {
-    const [episodeData, vocabData] = await Promise.all([
+    const [episodeData, vocabData, proposedTagData] = await Promise.all([
       getEpisode(videoId),
       fetchVocabulary(),
+      fetchEpisodeProposedTags(videoId),
     ]);
 
     episode = episodeData;
     vocabulary = vocabData;
+    proposedTags = proposedTagData;
 
     if (!episode) {
       if (tagsContainer) {
@@ -63,6 +69,7 @@ async function init(): Promise<void> {
     document.title = `Tags - Episode ${episode.episodeNumber || "?"} - DoD Tools`;
 
     updateStats();
+    renderProposedTags();
     renderTags();
     setupEventListeners();
   } catch (error) {
@@ -110,6 +117,106 @@ function setupEventListeners(): void {
   // Add tag form
   const addTagForm = document.querySelector("#add-tag-form");
   addTagForm?.addEventListener("submit", addTag);
+}
+
+function getCategoryOptions(selectedCategory: string): string {
+  const categories = [
+    "character",
+    "person",
+    "place",
+    "people",
+    "literature",
+    "theology",
+    "scholarship",
+    "religion",
+    "event",
+    "other",
+  ];
+
+  return categories
+    .map(
+      category =>
+        `<option value="${category}" ${category === selectedCategory ? "selected" : ""}>${escapeHtml(category)}</option>`,
+    )
+    .join("");
+}
+
+function renderProposedTags(): void {
+  const section = document.querySelector("#proposed-tags-section");
+  const container = document.querySelector("#proposed-tags-container");
+  if (!section || !container) return;
+
+  if (proposedTags.length === 0) {
+    section.setAttribute("hidden", "");
+    container.innerHTML = "";
+    return;
+  }
+
+  section.removeAttribute("hidden");
+  container.innerHTML = proposedTags
+    .map((tag, index) => {
+      const category = tag.category || "other";
+      const variationsString = tag.variations.join(", ");
+      const description = tag.description || "";
+      const isLlmVerify = tag.llmVerify === true;
+      const duplicateHint = tag.duplicateOf
+        ? `
+            <div class="proposed-tag-duplicate">
+              Possible duplicate of <strong>${escapeHtml(tag.duplicateOf)}</strong>
+            </div>
+          `
+        : "";
+      const mergeButton = tag.duplicateOf
+        ? `<button class="btn btn-secondary" onclick="mergeEpisodeProposedTag(${index})">Merge into ${escapeHtml(tag.duplicateOf)}</button>`
+        : "";
+      const approveLabel = tag.duplicateOf ? "Approve Anyway" : "Approve";
+
+      return `
+        <div class="proposed-tag-card" id="episode-proposed-card-${index}" data-original="${escapeHtml(tag.canonical)}" data-duplicate-of="${tag.duplicateOf ? escapeHtml(tag.duplicateOf) : ""}">
+          <div class="proposed-tag-meta">
+            <div>
+              <div class="proposed-tag-name">${escapeHtml(tag.canonical)}</div>
+              <div class="proposed-tag-category">${escapeHtml(category)}</div>
+            </div>
+            <div class="proposed-tag-status">Proposed</div>
+          </div>
+          ${duplicateHint}
+          <div class="proposed-tag-form-row">
+            <label class="proposed-tag-field-label" for="episode-proposed-canonical-${index}">Canonical</label>
+            <input id="episode-proposed-canonical-${index}" class="form-input" value="${escapeHtml(tag.canonical)}" />
+          </div>
+          <div class="proposed-tag-form-row">
+            <label class="proposed-tag-field-label" for="episode-proposed-variations-${index}">Variations</label>
+            <input id="episode-proposed-variations-${index}" class="form-input" value="${escapeHtml(variationsString)}" placeholder="Comma-separated variations" />
+          </div>
+          <div class="proposed-tag-form-row">
+            <label class="proposed-tag-field-label" for="episode-proposed-category-${index}">Category</label>
+            <select id="episode-proposed-category-${index}" class="form-select">${getCategoryOptions(category)}</select>
+          </div>
+          <div class="checkbox-group proposed-tag-checkbox-row">
+            <input type="checkbox" id="episode-proposed-llmVerify-${index}" ${isLlmVerify ? "checked" : ""} onchange="toggleEpisodeProposedDescription(${index})" />
+            <label for="episode-proposed-llmVerify-${index}">Use LLM verification</label>
+          </div>
+          <div class="form-hint proposed-tag-hint">For ambiguous names like David or John.</div>
+          <div class="checkbox-group proposed-tag-checkbox-row">
+            <input type="checkbox" id="episode-proposed-caseSensitive-${index}" ${tag.caseSensitive ? "checked" : ""} />
+            <label for="episode-proposed-caseSensitive-${index}">Case-sensitive matching</label>
+          </div>
+          <div class="form-hint proposed-tag-hint">Use when capitalization distinguishes the tag from common words.</div>
+          <div class="proposed-tag-detail">
+            <label class="proposed-tag-field-label" for="episode-proposed-description-${index}">Description<span id="episode-proposed-required-${index}">${isLlmVerify ? " *" : ""}</span></label>
+            <textarea id="episode-proposed-description-${index}" class="form-input proposed-tag-textarea" rows="3" placeholder="Brief description for AI context">${escapeHtml(description)}</textarea>
+          </div>
+          <div class="proposed-tag-actions">
+            <button class="btn btn-primary" onclick="approveEpisodeProposedTag(${index})">${approveLabel}</button>
+            ${mergeButton}
+            <button class="btn btn-secondary" onclick="dismissEpisodeProposedTag(${index})">Dismiss</button>
+            <button class="btn btn-secondary" onclick="rejectEpisodeProposedTag(${index})">Reject</button>
+          </div>
+        </div>
+      `;
+    })
+    .join("");
 }
 
 function renderTags(): void {
@@ -268,11 +375,303 @@ async function addTag(event: Event): Promise<void> {
     });
   };
 
+function getEpisodeProposedTagFormData(index: number): {
+  originalCanonical: string;
+  duplicateOf?: string;
+  canonical: string;
+  variations: string[];
+  category: string;
+  llmVerify: boolean;
+  caseSensitive: boolean;
+  description?: string;
+} | null {
+  const card = document.querySelector(
+    `#episode-proposed-card-${index}`,
+  ) as HTMLElement | null;
+  if (!card) return null;
+
+  const originalCanonical = card.dataset.original;
+  if (!originalCanonical) return null;
+
+  const canonical = (
+    document.querySelector(
+      `#episode-proposed-canonical-${index}`,
+    ) as HTMLInputElement
+  ).value.trim();
+  const variationsInput = (
+    document.querySelector(
+      `#episode-proposed-variations-${index}`,
+    ) as HTMLInputElement
+  ).value.trim();
+  const category = (
+    document.querySelector(
+      `#episode-proposed-category-${index}`,
+    ) as HTMLSelectElement
+  ).value;
+  const llmVerify = (
+    document.querySelector(
+      `#episode-proposed-llmVerify-${index}`,
+    ) as HTMLInputElement
+  ).checked;
+  const caseSensitive = (
+    document.querySelector(
+      `#episode-proposed-caseSensitive-${index}`,
+    ) as HTMLInputElement
+  ).checked;
+  const description = (
+    document.querySelector(
+      `#episode-proposed-description-${index}`,
+    ) as HTMLTextAreaElement
+  ).value.trim();
+
+  if (llmVerify && !description) {
+    alert("Description is required when using LLM verification");
+    return null;
+  }
+
+  return {
+    originalCanonical,
+    duplicateOf: card.dataset.duplicateOf || undefined,
+    canonical,
+    variations: variationsInput
+      ? variationsInput
+          .split(",")
+          .map(variation => variation.trim())
+          .filter(variation => variation.length > 0)
+      : [],
+    category,
+    llmVerify,
+    caseSensitive,
+    description: description || undefined,
+  };
+}
+
+function showEpisodeProposalStatus(label: string, message: string): void {
+  const statusContainer = document.querySelector("#reprocess-status");
+  const statusBadge = document.querySelector("#reprocess-status-badge");
+  const logsContainer = document.querySelector("#reprocess-logs");
+
+  if (!statusContainer || !statusBadge || !logsContainer) {
+    return;
+  }
+
+  statusContainer.classList.add("show");
+  statusBadge.textContent = label;
+  statusBadge.className = "status-badge completed";
+  logsContainer.textContent = message;
+}
+
+(globalThis as typeof globalThis & Window).toggleEpisodeProposedDescription =
+  function (index: number): void {
+    const llmVerify = (
+      document.querySelector(
+        `#episode-proposed-llmVerify-${index}`,
+      ) as HTMLInputElement
+    ).checked;
+    const requiredMarker = document.querySelector(
+      `#episode-proposed-required-${index}`,
+    );
+
+    if (!requiredMarker) return;
+    requiredMarker.textContent = llmVerify ? " *" : "";
+  };
+
+(globalThis as typeof globalThis & Window).approveEpisodeProposedTag =
+  async function (index: number): Promise<void> {
+    const data = getEpisodeProposedTagFormData(index);
+    if (!data) return;
+
+    if (
+      data.duplicateOf &&
+      !confirm(
+        `"${data.originalCanonical}" was flagged as possibly duplicate of "${data.duplicateOf}".\n\nApprove anyway as a distinct tag?`,
+      )
+    ) {
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        `${API_BASE_URL}/api/tag-vocabulary/vocabulary/update/${encodeURIComponent(data.originalCanonical)}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            canonical: data.canonical,
+            variations: data.variations,
+            category: data.category,
+            status: "accepted",
+            llmVerify: data.llmVerify,
+            caseSensitive: data.caseSensitive,
+            description: data.description,
+          }),
+        },
+      );
+
+      const responseData = await response.json();
+      if (!response.ok) {
+        throw new Error(responseData.error || "Failed to approve tag");
+      }
+
+      await refreshEpisode();
+      vocabulary = await fetchVocabulary();
+      showEpisodeProposalStatus(
+        "✓ Tag Approved",
+        `Approved "${data.canonical}".`,
+      );
+
+      if (responseData.jobId) {
+        startJobPollingWithUI({
+          jobId: responseData.jobId,
+          statusContainerSelector: "#reprocess-status",
+          statusBadgeSelector: "#reprocess-status-badge",
+          logsContainerSelector: "#reprocess-logs",
+          initialMessage: `Reprocessing episodes for "${data.canonical}"...`,
+          completedMessage: "✓ Tag Approved & Episodes Reprocessed",
+          onComplete: async () => {
+            await refreshEpisode();
+            vocabulary = await fetchVocabulary();
+          },
+        });
+      }
+    } catch (error) {
+      alert(
+        `Error approving tag: ${error instanceof Error ? error.message : "Unknown error"}`,
+      );
+    }
+  };
+
+(globalThis as typeof globalThis & Window).dismissEpisodeProposedTag =
+  async function (index: number): Promise<void> {
+    const data = getEpisodeProposedTagFormData(index);
+    if (!data) return;
+
+    if (
+      !confirm(
+        `Dismiss tag "${data.originalCanonical}"? This removes it from the review queue only and allows future rediscovery.`,
+      )
+    ) {
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        `${API_BASE_URL}/api/tag-vocabulary/vocabulary/dismiss/${encodeURIComponent(data.originalCanonical)}`,
+        {
+          method: "POST",
+        },
+      );
+      const responseData = await response.json();
+      if (!response.ok) {
+        throw new Error(responseData.error || "Failed to dismiss tag");
+      }
+
+      await refreshEpisode();
+      vocabulary = await fetchVocabulary();
+      showEpisodeProposalStatus(
+        "✓ Tag Dismissed",
+        `Dismissed "${data.originalCanonical}" from the review queue.`,
+      );
+    } catch (error) {
+      alert(
+        `Error dismissing tag: ${error instanceof Error ? error.message : "Unknown error"}`,
+      );
+    }
+  };
+
+(globalThis as typeof globalThis & Window).rejectEpisodeProposedTag =
+  async function (index: number): Promise<void> {
+    const data = getEpisodeProposedTagFormData(index);
+    if (!data) return;
+
+    if (
+      !confirm(
+        `Reject tag "${data.originalCanonical}"? This blacklists it from future discovery. Use Dismiss instead to just remove it from the queue.`,
+      )
+    ) {
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        `${API_BASE_URL}/api/tag-vocabulary/vocabulary/reject/${encodeURIComponent(data.originalCanonical)}`,
+        {
+          method: "POST",
+        },
+      );
+      const responseData = await response.json();
+      if (!response.ok) {
+        throw new Error(responseData.error || "Failed to reject tag");
+      }
+
+      await refreshEpisode();
+      vocabulary = await fetchVocabulary();
+      showEpisodeProposalStatus(
+        "✓ Tag Rejected",
+        `Rejected "${data.originalCanonical}".`,
+      );
+    } catch (error) {
+      alert(
+        `Error rejecting tag: ${error instanceof Error ? error.message : "Unknown error"}`,
+      );
+    }
+  };
+
+(globalThis as typeof globalThis & Window).mergeEpisodeProposedTag =
+  async function (index: number): Promise<void> {
+    const data = getEpisodeProposedTagFormData(index);
+    if (!data?.duplicateOf) return;
+
+    if (
+      !confirm(
+        `Merge proposed tag "${data.originalCanonical}" into accepted tag "${data.duplicateOf}"? Useful variations will be added and the proposal will be removed.`,
+      )
+    ) {
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        `${API_BASE_URL}/api/tag-vocabulary/vocabulary/merge`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            proposedCanonical: data.originalCanonical,
+            acceptedCanonical: data.duplicateOf,
+          }),
+        },
+      );
+      const responseData = await response.json();
+      if (!response.ok) {
+        throw new Error(responseData.error || "Failed to merge tag");
+      }
+
+      await refreshEpisode();
+      vocabulary = await fetchVocabulary();
+      showEpisodeProposalStatus(
+        "✓ Tag Merged",
+        responseData.message ||
+          `Merged "${data.originalCanonical}" into "${data.duplicateOf}".`,
+      );
+    } catch (error) {
+      alert(
+        `Error merging tag: ${error instanceof Error ? error.message : "Unknown error"}`,
+      );
+    }
+  };
+
 async function refreshEpisode(): Promise<void> {
   if (!videoId) return;
   try {
-    episode = await getEpisode(videoId);
+    const [episodeData, proposedTagData] = await Promise.all([
+      getEpisode(videoId),
+      fetchEpisodeProposedTags(videoId),
+    ]);
+    episode = episodeData;
+    proposedTags = proposedTagData;
     updateStats();
+    renderProposedTags();
     renderTags();
   } catch (error) {
     console.error("Refresh error:", error);
@@ -310,6 +709,11 @@ declare global {
     showTagDetail: (tagName: string) => void;
     closeModal: () => void;
     toggleDescription: () => void;
+    toggleEpisodeProposedDescription: (index: number) => void;
+    approveEpisodeProposedTag: (index: number) => Promise<void>;
+    dismissEpisodeProposedTag: (index: number) => Promise<void>;
+    rejectEpisodeProposedTag: (index: number) => Promise<void>;
+    mergeEpisodeProposedTag: (index: number) => Promise<void>;
     reprocessTag: () => Promise<void>;
     reprocessEpisode: () => Promise<void>;
   }

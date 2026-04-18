@@ -103,6 +103,18 @@ function getVocabularyResponse(): TagVocabularyResponse[] {
     }));
 }
 
+function getEpisodeProposedTags(
+  episodeNumber: number | undefined,
+): TagVocabularyResponse[] {
+  if (!episodeNumber) {
+    return [];
+  }
+
+  return getVocabularyResponse().filter(
+    tag => tag.status === "proposed" && tag.addedInEpisode === episodeNumber,
+  );
+}
+
 function mergeVariationsCaseInsensitive(
   acceptedTag: TagDefinition,
   proposedTag: TagDefinition,
@@ -1647,6 +1659,22 @@ const _server = Bun.serve({
         ...video,
         hasAudio: !!audioPath,
       });
+    }
+
+    // Episode API: Get proposed tags for a single episode
+    if (
+      /^\/api\/episode\/[^/]+\/proposed-tags$/.test(url.pathname) &&
+      request.method === "GET"
+    ) {
+      const videoId = url.pathname.split("/")[3] ?? "";
+      const videos = await getProcessedVideosWithNumbers();
+      const video = videos.find(entry => entry.videoId === videoId);
+
+      if (!video) {
+        return jsonResponse({ error: "Episode not found" }, 404);
+      }
+
+      return jsonResponse(getEpisodeProposedTags(video.episodeNumber));
     }
 
     // Episode API: Add a scripture book to an episode

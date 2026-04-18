@@ -11,6 +11,18 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .proposed-tags-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .proposed-tags-header {
+    flex-direction: column;
+  }
+}
+
 .category-tabs {
   display: flex;
   gap: 8px;
@@ -311,6 +323,135 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   margin-bottom: 24px;
+}
+
+.proposed-tags-section {
+  margin-bottom: 24px;
+  padding: 20px;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, #fffbeb 0%, #ffffff 100%);
+}
+
+.proposed-tags-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 16px;
+}
+
+.proposed-tags-header h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.proposed-tags-header p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-gray-600);
+}
+
+.proposed-tags-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.proposed-tag-card {
+  padding: 20px;
+  border: 2px solid #fbbf24;
+  border-radius: 12px;
+  background: #fffbeb;
+}
+
+.proposed-tag-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 16px;
+}
+
+.proposed-tag-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-gray-800);
+}
+
+.proposed-tag-category {
+  font-size: 11px;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.proposed-tag-status {
+  flex-shrink: 0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.proposed-tag-detail {
+  margin-top: 10px;
+}
+
+.proposed-tag-detail-label,
+.proposed-tag-field-label {
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.proposed-tag-form-row {
+  margin-top: 12px;
+}
+
+.proposed-tag-checkbox-row {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.proposed-tag-hint {
+  margin-top: 4px;
+  margin-left: 26px;
+}
+
+.proposed-tag-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.proposed-tag-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #fcd34d;
+}
+
+.proposed-tag-actions > .btn {
+  flex: 1;
+}
+
+.proposed-tag-duplicate {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .summary-stat {
