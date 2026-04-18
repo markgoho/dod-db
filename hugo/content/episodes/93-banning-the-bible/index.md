@@ -6,6 +6,7 @@ videoId: 4JOQmZvWz3Q
 aliases:
   - /episodes/93/
 tags:
+  - Decalogue
   - Deuteronomy
   - Moses
   - Ten Commandments

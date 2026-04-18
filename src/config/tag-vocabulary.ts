@@ -907,26 +907,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
   },
   {
-    canonical: "Ritual Decalogue",
-    variations: ["ritual decalogue"],
-    category: "literature",
-    status: "accepted",
-    episodes: [33, 66],
-  },
-  {
-    canonical: "Ethical Decalogue",
-    variations: ["ethical decalogue"],
-    category: "literature",
-    status: "accepted",
-    episodes: [33],
-  },
-  {
-    canonical: "covenant code",
-    variations: [],
-    category: "literature",
-    status: "rejected",
-  },
-  {
     canonical: "Talmud",
     variations: [],
     category: "literature",
@@ -6546,12 +6526,17 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "decalogue",
-    variations: ["Decalogues"],
+    canonical: "Decalogue",
+    variations: ["Ten Commandments", "Biblical Decalogue"],
     category: "literature",
+    llmVerify: true,
     description:
       "A set of ten divine commands or principles, especially those given to Moses on Mount Sinai.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [
+      14, 17, 21, 23, 31, 40, 44, 45, 66, 68, 75, 78, 93, 96, 97, 101, 102, 104,
+      106, 110, 132, 133, 146,
+    ],
   },
   {
     canonical: "Gog and Magog",

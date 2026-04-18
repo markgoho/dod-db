@@ -32,6 +32,7 @@ tags:
   - Trinity
   - Abraham
   - Dead Sea Scrolls
+  - Decalogue
   - forgery
   - Hermeneia
   - Holy Spirit

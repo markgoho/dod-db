@@ -145,8 +145,8 @@
         "endTimestamp": "[00:40:43.020]",
         "confidence": "verified",
         "detectionMethod": "pattern",
-        "topicLabel": "Gen 1:1",
-        "summary": "Translation and interpretation of the phrase In the beginning"
+        "topicLabel": "Gen 1",
+        "summary": "Creation themes in the opening passage"
       },
       {
         "type": "what-does-that-mean",
@@ -2254,6 +2254,10 @@
         "mentions": 4
       },
       {
+        "tag": "Decalogue",
+        "mentions": 3
+      },
+      {
         "tag": "etiology",
         "mentions": 3
       },
@@ -2781,6 +2785,10 @@
       },
       {
         "tag": "Council of Nicaea",
+        "mentions": 1
+      },
+      {
+        "tag": "Decalogue",
         "mentions": 1
       },
       {
@@ -3606,6 +3614,10 @@
         "mentions": 7
       },
       {
+        "tag": "Decalogue",
+        "mentions": 6
+      },
+      {
         "tag": "Carthage",
         "mentions": 5
       },
@@ -3934,6 +3946,10 @@
       {
         "tag": "Judaism",
         "mentions": 3
+      },
+      {
+        "tag": "Decalogue",
+        "mentions": 2
       },
       {
         "tag": "John the Baptist",
@@ -5076,7 +5092,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 30
+    "episodeNumber": 30,
+    "episodeTopic": "Christian Nationalism"
   },
   {
     "videoId": "q5Yw6xPCS6U",
@@ -5085,6 +5102,10 @@
     "processedAt": "2026-01-13T04:52:20.106Z",
     "transcriptPath": "data/transcripts/2023-11-06-episode-31-november-6-2023-the-ten-ish-commandments.txt",
     "tags": [
+      {
+        "tag": "Decalogue",
+        "mentions": 33
+      },
       {
         "tag": "Ten Commandments",
         "mentions": 22
@@ -5118,10 +5139,6 @@
         "mentions": 6
       },
       {
-        "tag": "Ritual Decalogue",
-        "mentions": 5
-      },
-      {
         "tag": "Asherah",
         "mentions": 4
       },
@@ -5147,10 +5164,6 @@
       },
       {
         "tag": "Catholicism",
-        "mentions": 2
-      },
-      {
-        "tag": "Ethical Decalogue",
         "mentions": 2
       },
       {
@@ -5564,7 +5577,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 33
+    "episodeNumber": 33,
+    "episodeTopic": "Disability Studies"
   },
   {
     "videoId": "lHoBSsJoacQ",
@@ -6601,6 +6615,10 @@
         "mentions": 1
       },
       {
+        "tag": "Decalogue",
+        "mentions": 1
+      },
+      {
         "tag": "Desiderius Erasmus",
         "mentions": 1
       },
@@ -7277,6 +7295,10 @@
         "mentions": 1
       },
       {
+        "tag": "Decalogue",
+        "mentions": 1
+      },
+      {
         "tag": "etiology",
         "mentions": 1
       },
@@ -7436,6 +7458,10 @@
       {
         "tag": "YHWH",
         "mentions": 3
+      },
+      {
+        "tag": "Decalogue",
+        "mentions": 2
       },
       {
         "tag": "Enoch",
@@ -10737,6 +10763,10 @@
     "transcriptPath": "data/transcripts/2024-07-08-episode-66-july-8-2024-thou-shalt-not.txt",
     "tags": [
       {
+        "tag": "Decalogue",
+        "mentions": 26
+      },
+      {
         "tag": "Ten Commandments",
         "mentions": 26
       },
@@ -10826,10 +10856,6 @@
       },
       {
         "tag": "Protestantism",
-        "mentions": 1
-      },
-      {
-        "tag": "Ritual Decalogue",
         "mentions": 1
       },
       {
@@ -11065,6 +11091,10 @@
       },
       {
         "tag": "Canaan",
+        "mentions": 1
+      },
+      {
+        "tag": "Decalogue",
         "mentions": 1
       },
       {
@@ -12293,6 +12323,10 @@
         "mentions": 3
       },
       {
+        "tag": "Decalogue",
+        "mentions": 2
+      },
+      {
         "tag": "Ten Commandments",
         "mentions": 2
       },
@@ -12593,6 +12627,10 @@
     "processedAt": "2026-01-17T05:19:46.520Z",
     "transcriptPath": "data/transcripts/2024-09-30-episode-78-september-30-2024-the-biblical-view-of-immigrants.txt",
     "tags": [
+      {
+        "tag": "Decalogue",
+        "mentions": 3
+      },
       {
         "tag": "Noah",
         "mentions": 3
@@ -14780,6 +14818,10 @@
     "transcriptPath": "data/transcripts/2025-01-13-episode-93-january-13-2025-banning-the-bible.txt",
     "tags": [
       {
+        "tag": "Decalogue",
+        "mentions": 7
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 7
       },
@@ -15288,6 +15330,10 @@
         "mentions": 4
       },
       {
+        "tag": "Decalogue",
+        "mentions": 3
+      },
+      {
         "tag": "Nero",
         "mentions": 2
       },
@@ -15400,6 +15446,10 @@
       {
         "tag": "Prophetic Critique",
         "mentions": 2
+      },
+      {
+        "tag": "Decalogue",
+        "mentions": 1
       },
       {
         "tag": "Deuteronomy",
@@ -16071,6 +16121,10 @@
     "transcriptPath": "data/transcripts/2025-03-10-episode-101-march-10-2025-the-slave-bible.txt",
     "tags": [
       {
+        "tag": "Decalogue",
+        "mentions": 2
+      },
+      {
         "tag": "Eschatology",
         "mentions": 2
       },
@@ -16245,6 +16299,10 @@
       },
       {
         "tag": "Christian Nationalism",
+        "mentions": 1
+      },
+      {
+        "tag": "Decalogue",
         "mentions": 1
       },
       {
@@ -16497,6 +16555,10 @@
       },
       {
         "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Decalogue",
         "mentions": 1
       },
       {
@@ -16806,6 +16868,10 @@
       },
       {
         "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "Decalogue",
         "mentions": 1
       },
       {
@@ -17317,6 +17383,10 @@
       },
       {
         "tag": "Clement of Rome",
+        "mentions": 1
+      },
+      {
+        "tag": "Decalogue",
         "mentions": 1
       },
       {
@@ -21049,6 +21119,10 @@
         "mentions": 2
       },
       {
+        "tag": "Decalogue",
+        "mentions": 1
+      },
+      {
         "tag": "Leningrad Codex",
         "mentions": 1
       },
@@ -21158,6 +21232,10 @@
       {
         "tag": "Deuteronomy",
         "mentions": 6
+      },
+      {
+        "tag": "Decalogue",
+        "mentions": 5
       },
       {
         "tag": "King David",
@@ -23468,6 +23546,10 @@
       },
       {
         "tag": "circumcision",
+        "mentions": 2
+      },
+      {
+        "tag": "Decalogue",
         "mentions": 2
       },
       {

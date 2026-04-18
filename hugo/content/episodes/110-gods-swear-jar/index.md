@@ -25,6 +25,7 @@ tags:
   - Talmud
   - Beatitudes
   - Clement of Rome
+  - Decalogue
   - Flavius Josephus
   - John
   - King David

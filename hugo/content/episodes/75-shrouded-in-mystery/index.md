@@ -14,6 +14,7 @@ tags:
   - Aaron
   - Isaac
   - Passover
+  - Decalogue
   - Ten Commandments
   - Canaan
   - Elephantine

@@ -15,6 +15,7 @@ tags:
   - Boaz
   - Joseph
   - Canaan
+  - Decalogue
   - Jacob
   - Samson
   - Satan

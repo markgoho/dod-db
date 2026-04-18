@@ -24,6 +24,7 @@ tags:
   - Moses
   - Trinity
   - YHWH
+  - Decalogue
   - Enoch
   - Eschatology
   - Flavius Josephus

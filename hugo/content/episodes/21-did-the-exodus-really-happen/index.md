@@ -10,6 +10,7 @@ tags:
   - child sacrifice
   - Molek
   - Ten Commandments
+  - Decalogue
   - Carthage
   - Baal
   - Babylon

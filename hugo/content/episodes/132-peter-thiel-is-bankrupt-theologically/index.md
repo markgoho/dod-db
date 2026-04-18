@@ -20,6 +20,7 @@ tags:
   - cognitive dissonance
   - Daniel
   - Masoretic Text
+  - Decalogue
   - Leningrad Codex
   - Luke
   - Satan

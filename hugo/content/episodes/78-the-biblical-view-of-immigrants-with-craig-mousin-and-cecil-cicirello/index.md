@@ -6,6 +6,7 @@ videoId: Jz4YpDhPHEg
 aliases:
   - /episodes/78/
 tags:
+  - Decalogue
   - Noah
   - Ten Commandments
   - cognitive dissonance

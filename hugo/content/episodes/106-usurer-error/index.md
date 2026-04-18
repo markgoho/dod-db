@@ -16,6 +16,7 @@ tags:
   - Anselm of Canterbury
   - Arius
   - Catholicism
+  - Decalogue
   - Easter
   - Hell
   - Herod the Great

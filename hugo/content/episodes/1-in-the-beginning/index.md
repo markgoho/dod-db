@@ -52,8 +52,8 @@ segmentData:
   - type: chapter-and-verse
     anchor: chapter-and-verse-1
     label: Chapter and Verse
-    topicLabel: Gen 1:1
-    summary: Translation and interpretation of the phrase In the beginning
+    topicLabel: Gen 1
+    summary: Creation themes in the opening passage
     startSeconds: 89
   - type: what-does-that-mean
     anchor: what-does-that-mean-1

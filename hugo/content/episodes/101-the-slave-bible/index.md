@@ -6,6 +6,7 @@ videoId: KQlq_lmgBOk
 aliases:
   - /episodes/101/
 tags:
+  - Decalogue
   - Eschatology
   - King James Bible
   - Pliny the Younger

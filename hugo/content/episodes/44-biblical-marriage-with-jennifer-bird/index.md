@@ -15,6 +15,7 @@ tags:
   - Abraham
   - Baal
   - Daniel
+  - Decalogue
   - etiology
   - Jacob
   - Ten Commandments

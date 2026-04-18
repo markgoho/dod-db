@@ -16,6 +16,7 @@ tags:
   - Babylon
   - Dead Sea
   - Prophetic Critique
+  - Decalogue
   - Deuteronomy
   - forgery
   - Isaiah

@@ -6,6 +6,7 @@ videoId: oKe-ukUfIKs
 aliases:
   - /episodes/66/
 tags:
+  - Decalogue
   - Ten Commandments
   - YHWH
   - Asherah
@@ -29,7 +30,6 @@ tags:
   - Masoretic Text
   - Moses
   - Protestantism
-  - Ritual Decalogue
   - Satan
 books:
   - Exodus

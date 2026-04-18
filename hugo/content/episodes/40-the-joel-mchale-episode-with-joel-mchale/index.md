@@ -18,6 +18,7 @@ tags:
   - King Josiah
   - Amalek
   - Capernaum
+  - Decalogue
   - Desiderius Erasmus
   - Hell
   - Jerusalem

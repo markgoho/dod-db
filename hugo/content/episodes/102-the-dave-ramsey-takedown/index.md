@@ -18,6 +18,7 @@ tags:
   - YHWH
   - Arad
   - Christian Nationalism
+  - Decalogue
   - Isaiah
   - John
   - Judah

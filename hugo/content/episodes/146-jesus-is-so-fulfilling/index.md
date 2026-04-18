@@ -17,6 +17,7 @@ tags:
   - Eschatology
   - Moses
   - circumcision
+  - Decalogue
   - Essenes
   - James
   - Judaism

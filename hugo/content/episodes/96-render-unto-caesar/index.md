@@ -11,6 +11,7 @@ tags:
   - Christian Nationalism
   - Judaism
   - Ten Commandments
+  - Decalogue
   - Nero
   - Herod the Great
   - Islam

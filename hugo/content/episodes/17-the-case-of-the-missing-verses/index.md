@@ -17,6 +17,7 @@ tags:
   - Latin Vulgate
   - Constantine
   - Council of Nicaea
+  - Decalogue
   - Eusebius
   - Isaiah
   - John

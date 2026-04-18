@@ -31,6 +31,7 @@ books:
   - 1 Corinthians
 guests:
   - Isaac Soon
+episodeTopic: Disability Studies
 draft: false
 ---
 

@@ -13,6 +13,7 @@ tags:
   - YHWH
   - Moses
   - Eve
+  - Decalogue
   - etiology
   - Garden of Eden
   - King James Bible

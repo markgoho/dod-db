@@ -6,6 +6,7 @@ videoId: q5Yw6xPCS6U
 aliases:
   - /episodes/31/
 tags:
+  - Decalogue
   - Ten Commandments
   - YHWH
   - Deuteronomy
@@ -14,7 +15,6 @@ tags:
   - King Josiah
   - Paul
   - Philo of Alexandria
-  - Ritual Decalogue
   - Asherah
   - King James Bible
   - Baal
@@ -22,7 +22,6 @@ tags:
   - Council of Jerusalem
   - Talmud
   - Catholicism
-  - Ethical Decalogue
   - Flavius Josephus
   - Septuagint
   - Amorites

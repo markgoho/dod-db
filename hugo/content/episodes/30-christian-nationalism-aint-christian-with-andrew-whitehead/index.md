@@ -21,6 +21,7 @@ books:
   - 2 Chronicles
 guests:
   - Andrew Whitehead
+episodeTopic: Christian Nationalism
 draft: false
 ---
 

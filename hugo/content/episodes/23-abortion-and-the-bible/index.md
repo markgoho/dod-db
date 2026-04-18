@@ -12,6 +12,7 @@ tags:
   - King James Bible
   - Romans
   - Judaism
+  - Decalogue
   - John the Baptist
   - Mary Magdalene
   - Rebekah
