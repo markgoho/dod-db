@@ -33,10 +33,7 @@ export async function extractSingleTag(
   const needsVerification =
     enableLlmVerification && "llmVerify" in tagDef && tagDef.llmVerify;
 
-  // Match canonical form directly; only variations need LLM verification.
-  const searchTerms = needsVerification
-    ? [...tagDef.variations]
-    : [tagDef.canonical, ...tagDef.variations];
+  const searchTerms = [tagDef.canonical, ...tagDef.variations];
 
   // Sort by length (longest first) to handle overlaps
   searchTerms.sort((a, b) => b.length - a.length);
@@ -65,7 +62,6 @@ export async function extractSingleTag(
   // Track matched positions to avoid double-counting
   const matchedRanges: Array<{ start: number; end: number }> = [];
   const matches: Array<{ start: number; end: number; text: string }> = [];
-  let canonicalCount = 0;
 
   const isOverlapping = (start: number, end: number): boolean => {
     return matchedRanges.some(
@@ -84,27 +80,7 @@ export async function extractSingleTag(
   const caseSensitive = tagDef.caseSensitive ?? false;
   const flags = caseSensitive ? "g" : "gi";
 
-  if (needsVerification) {
-    const canonicalPattern = new RegExp(
-      String.raw`\b${escapeRegex(tagDef.canonical)}\b`,
-      flags,
-    );
-    let canonicalMatch;
-
-    while ((canonicalMatch = canonicalPattern.exec(transcript)) !== null) {
-      const start = canonicalMatch.index;
-      const end = start + canonicalMatch[0].length;
-
-      if (isOverlapping(start, end) || isInSpeakerLabel(start, end)) {
-        continue;
-      }
-
-      matchedRanges.push({ start, end });
-      canonicalCount++;
-    }
-  }
-
-  // Find all variation matches
+  // Find all matches (canonical + variations)
   for (const searchTerm of searchTerms) {
     const pattern = new RegExp(
       String.raw`\b${escapeRegex(searchTerm)}\b`,
@@ -116,13 +92,7 @@ export async function extractSingleTag(
       const start = match.index;
       const end = start + match[0].length;
 
-      // Skip if this match overlaps with an already-matched region
-      if (isOverlapping(start, end)) {
-        continue;
-      }
-
-      // Skip if this match falls within a speaker label
-      if (isInSpeakerLabel(start, end)) {
+      if (isOverlapping(start, end) || isInSpeakerLabel(start, end)) {
         continue;
       }
 
@@ -131,13 +101,13 @@ export async function extractSingleTag(
     }
   }
 
-  if (canonicalCount === 0 && matches.length === 0) {
+  if (matches.length === 0) {
     return undefined;
   }
 
-  let verifiedCount = matches.length;
+  let totalMentions = matches.length;
 
-  if (needsVerification && matches.length > 0) {
+  if (needsVerification) {
     console.log(
       `    Verifying ${matches.length} matches for "${canonical}"...`,
     );
@@ -147,12 +117,9 @@ export async function extractSingleTag(
       tagDef as TagDefinition & { llmVerify: true },
       episodeContext,
     );
-    verifiedCount = verifiedIndices.length;
+    totalMentions = verifiedIndices.length;
     console.log(`    ✓ ${verifiedIndices.length}/${matches.length} verified`);
   }
-
-  const totalMentions =
-    canonicalCount + (needsVerification ? verifiedCount : matches.length);
 
   if (totalMentions === 0) {
     return undefined;

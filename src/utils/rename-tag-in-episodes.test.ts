@@ -11,7 +11,7 @@ let temporaryDir: string;
 beforeEach(async () => {
   temporaryDir = await mkdtemp(join(tmpdir(), "rename-tag-test-"));
   await mkdir(join(temporaryDir, "data"), { recursive: true });
-  youtubeConfig.processedVideosFile = join(
+  (youtubeConfig as { processedVideosFile: string }).processedVideosFile = join(
     temporaryDir,
     "data",
     "processed-videos.json",
@@ -19,7 +19,8 @@ beforeEach(async () => {
 });
 
 afterEach(async () => {
-  youtubeConfig.processedVideosFile = originalProcessedVideosFile;
+  (youtubeConfig as { processedVideosFile: string }).processedVideosFile =
+    originalProcessedVideosFile;
   await rm(temporaryDir, { recursive: true, force: true });
 });
 
