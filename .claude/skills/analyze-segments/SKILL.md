@@ -18,6 +18,8 @@ If the episode has no analyzable non-structural segments, generate:
 
 - `episodeTopic` — a short human-friendly topic label for the episode's main discussion subject
 
+Never add or keep an `episodeTopic` when the episode already has analyzable non-structural segments. In that case, focus only on segment-level results.
+
 ## Workflow
 
 1. Gather deterministic context:
@@ -37,6 +39,7 @@ If the episode has no analyzable non-structural segments, generate:
    EOF
    ```
    Prefer stdin via a quoted heredoc. Avoid inline `printf` JSON because quotes and apostrophes inside the payload can break shell parsing. Do not create temporary JSON files unless stdin is genuinely unavailable.
+4. Check the stable review summary printed by the save script and make sure it matches the intended outcome before reporting completion. Do not assume the save did the right thing without verifying the output.
 
 ## Gather output
 
@@ -100,6 +103,8 @@ Segment-specific rules:
 ## Episode-topic mode
 
 If gather returns `episode-topic`, read the transcript from `transcriptPath` and produce one short topic label for the central discussion.
+
+Only use `episode-topic` mode when gather actually returns `episode-topic`. If `--force` reveals analyzable segments, do not save an episode topic; save segment results instead.
 
 Rules:
 
