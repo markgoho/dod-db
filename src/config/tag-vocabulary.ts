@@ -734,10 +734,13 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Book of Enoch",
     variations: ["1 Enoch", "First Enoch"],
     category: "literature",
+    llmVerify: true,
+    description:
+      "ancient Jewish apocalyptic religious text, ascribed by tradition to the patriarch Enoch",
     status: "accepted",
     episodes: [
       6, 10, 11, 15, 18, 19, 20, 27, 28, 45, 55, 57, 62, 84, 98, 104, 120, 124,
-      136, 137,
+      136, 137, 142, 157, 158,
     ],
   },
   {
