@@ -7,8 +7,8 @@ aliases:
   - /episodes/43/
 tags:
   - Isaiah
-  - Cyrus the Great
   - Deutero-Isaiah
+  - Cyrus the Great
   - Jerusalem
   - Luke
   - Babylon

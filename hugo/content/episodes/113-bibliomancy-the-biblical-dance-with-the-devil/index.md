@@ -13,11 +13,11 @@ tags:
   - Deuteronomy
   - Jerusalem
   - Christian Nationalism
+  - Deutero-Isaiah
   - Joshua
   - Judas Iscariot
   - King James Bible
   - Paul
-  - Deutero-Isaiah
   - inerrancy
   - Isaiah
   - King Saul

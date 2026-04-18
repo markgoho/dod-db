@@ -12,6 +12,7 @@ tags:
   - Philo of Alexandria
   - Judaism
   - Abraham
+  - Deutero-Isaiah
   - Athenagoras
   - Deuteronomy
   - Moses
@@ -21,7 +22,6 @@ tags:
   - Jacob
   - Septuagint
   - Baal
-  - Deutero-Isaiah
   - divine council
   - Elephantine
   - Isaac

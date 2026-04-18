@@ -3932,14 +3932,15 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Deutero-Isaiah",
-    variations: [],
+    variations: ["Deutero Isaiah", "Second Isaiah"],
     category: "literature",
-    llmVerify: true,
     description:
       "Chapters 40-55 of the Book of Isaiah, believed by many scholars to be written by a different author than the earlier chapters",
     status: "accepted",
     addedInEpisode: 104,
-    episodes: [42, 43, 46, 59, 104, 105, 113, 122, 126, 136],
+    episodes: [
+      7, 42, 43, 46, 59, 90, 104, 105, 113, 115, 122, 126, 136, 145, 158,
+    ],
   },
   {
     canonical: "Lord",

@@ -43,6 +43,7 @@ tags:
   - Septuagint
   - Bethel
   - Dead Sea Scrolls
+  - Deutero-Isaiah
   - Edomites
   - Jacob
   - Jephthah

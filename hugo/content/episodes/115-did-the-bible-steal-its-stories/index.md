@@ -21,6 +21,7 @@ tags:
   - Second Temple period
   - Solomon
   - Daniel
+  - Deutero-Isaiah
   - Deuteronomy
   - Joseph
   - Joshua

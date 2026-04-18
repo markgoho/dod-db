@@ -4226,13 +4226,18 @@
   "Deutero-Isaiah": [
     {
       "ep": 43,
-      "m": 10,
+      "m": 15,
       "title": "Episode 43 (January 29, 2024), \"Jesus Murks a Tree\""
     },
     {
       "ep": 104,
       "m": 5,
       "title": "Episode 104 (March 31, 2025), \"Hey Jude\""
+    },
+    {
+      "ep": 59,
+      "m": 5,
+      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
     },
     {
       "ep": 136,
@@ -4245,9 +4250,19 @@
       "title": "I Will Have Mercy, Not Dogma"
     },
     {
+      "ep": 113,
+      "m": 2,
+      "title": "Bibliomancy! The Biblical Dance with the Devil?"
+    },
+    {
       "ep": 105,
       "m": 2,
       "title": "Episode 105 (April 7, 2025), \"Wandering in the Wilderness\" with Angela Roskop Erisman"
+    },
+    {
+      "ep": 90,
+      "m": 2,
+      "title": "Episode 90 (December 23, 2024), \"With Counter-Apologies\""
     },
     {
       "ep": 145,
@@ -4265,14 +4280,9 @@
       "title": "At-One-Ment"
     },
     {
-      "ep": 113,
+      "ep": 115,
       "m": 1,
-      "title": "Bibliomancy! The Biblical Dance with the Devil?"
-    },
-    {
-      "ep": 59,
-      "m": 1,
-      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
+      "title": "Did the Bible Steal Its Stories?"
     },
     {
       "ep": 46,
@@ -4283,6 +4293,11 @@
       "ep": 42,
       "m": 1,
       "title": "Episode 42 (January 22, 2024), \"Is Jesus God?\""
+    },
+    {
+      "ep": 7,
+      "m": 1,
+      "title": "Episode 7 (May 22, 2023), \"So Many Gods!\""
     }
   ],
   "Deuteronomy": [
