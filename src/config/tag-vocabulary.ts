@@ -5720,7 +5720,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "miscellaneous",
     description:
       "The act of precisely identifying or describing the nature, scope, or meaning of something.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "sexuality",
@@ -6793,7 +6793,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "Scholar known for her work on the Gnostic Gospels and early Christian history",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Joel McHale",
@@ -7780,7 +7780,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: [],
     category: "miscellaneous",
     description: "One of the Teenage Mutant Ninja Turtles",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "John Piper",
@@ -8374,7 +8374,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "American pastor, theologian, and author associated with the Christian Reconstructionist movement",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Kedeshah",
@@ -8785,14 +8785,6 @@ export const tagVocabulary: TagDefinition[] = [
       "An early Christian theologian and head of the Catechetical School of Alexandria.",
     status: "accepted",
     episodes: [50, 69, 99, 110, 153, 156],
-  },
-  {
-    canonical: "Elect lady",
-    variations: ["Eklekte Kuria"],
-    category: "miscellaneous",
-    description:
-      "Traditional translation of 2 John 1, often interpreted metaphorically to represent a church or congregation.",
-    status: "proposed",
   },
   {
     canonical: "Elder",
