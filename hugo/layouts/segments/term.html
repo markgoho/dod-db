@@ -2,11 +2,16 @@
   <section class="term-page term-page--episodes-archive">
     {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "segments" "backHref" "/segments/" "backLabel" "All Segments") }}
 
-
+    {{ $termSlug := .Title | urlize }}
     <section>
       <div class="episodes-grid">
         {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-          {{ partial "episode-card" (dict "episode" . "badgeSource" "segments" "currentTerm" $.Title) }}
+          {{ $episode := . }}
+          {{ range .Params.segmentData }}
+            {{ if eq .type $termSlug }}
+              {{ partial "segment-card" (dict "episode" $episode "segment" .) }}
+            {{ end }}
+          {{ end }}
         {{ end }}
       </div>
     </section>
