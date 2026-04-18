@@ -19,6 +19,7 @@ tags:
   - Jacob
   - Latin Vulgate
   - Moses
+  - Second Coming
 books:
   - Matthew
   - Psalms

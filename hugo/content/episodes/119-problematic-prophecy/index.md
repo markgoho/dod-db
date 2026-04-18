@@ -13,6 +13,7 @@ tags:
   - Eschatology
   - Jerusalem
   - Dionysius of Alexandria
+  - Second Coming
   - Apocrypha
   - Eusebius
   - Nero

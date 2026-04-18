@@ -31,6 +31,7 @@ tags:
   - Judaism
   - Mount Gerizim
   - Romans
+  - Second Coming
   - Ten Commandments
   - Torah
   - Book of Enoch

@@ -18,6 +18,7 @@ tags:
   - Seleucid Empire
   - Cyrus the Great
   - Isaiah
+  - Second Coming
   - Judaism
   - Latin Vulgate
   - Matthew

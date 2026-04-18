@@ -31,6 +31,7 @@ tags:
   - Nephilim
   - Peter
   - Satan
+  - Second Coming
 books:
   - Numbers
   - Genesis

@@ -20,6 +20,7 @@ tags:
   - Holy Spirit
   - Isaiah
   - Saint Titus
+  - Second Coming
   - Easter
   - Eschatology
   - Eusebius

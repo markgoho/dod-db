@@ -10,6 +10,7 @@ tags:
   - Eschatology
   - Daniel
   - Preterism
+  - Second Coming
   - Paul
   - Babylon
   - futurist interpretation

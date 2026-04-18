@@ -19,6 +19,7 @@ tags:
   - James
   - John
   - Nazareth
+  - Second Coming
   - Eschatology
   - baptism
   - Capernaum

@@ -12,6 +12,7 @@ tags:
   - Junia
   - Catholicism
   - Protestantism
+  - Second Coming
   - Adam
   - epigraphy
   - Euphrates

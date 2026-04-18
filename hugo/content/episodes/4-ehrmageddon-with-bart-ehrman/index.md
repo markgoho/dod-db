@@ -32,6 +32,7 @@ tags:
   - Preterism
   - Protestantism
   - Romans
+  - Second Coming
   - Seleucid Empire
   - The Reformation
   - Univocality

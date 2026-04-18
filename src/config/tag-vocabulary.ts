@@ -2677,12 +2677,16 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Second Coming",
-    variations: ["second coming"],
+    variations: [],
     category: "theology",
+    llmVerify: true,
     description:
       "The Christian belief that Jesus Christ will return to Earth at some point in the future.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 71,
+    episodes: [
+      4, 25, 30, 32, 37, 45, 48, 50, 71, 104, 106, 107, 118, 119, 132, 138, 143,
+    ],
   },
   {
     canonical: "First Thessalonians 4:17",

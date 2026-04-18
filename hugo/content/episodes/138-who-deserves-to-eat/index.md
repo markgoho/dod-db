@@ -18,6 +18,7 @@ tags:
   - Islam
   - Jericho
   - Saint Titus
+  - Second Coming
 books:
   - Isaiah
   - Luke

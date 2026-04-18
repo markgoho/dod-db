@@ -23,6 +23,7 @@ tags:
   - King James Bible
   - Paul
   - Satan
+  - Second Coming
   - Antiochus IV Epiphanes
   - Athanasius of Alexandria
   - baptism

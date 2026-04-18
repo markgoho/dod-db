@@ -30,6 +30,7 @@ tags:
   - Judaism
   - King David
   - Nineveh
+  - Second Coming
   - Terah
 books:
   - Genesis

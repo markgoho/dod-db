@@ -12,6 +12,7 @@ tags:
   - Andrew Whitehead
   - Solomon
   - Homosexuality
+  - Second Coming
   - Cyrus the Great
   - Isaiah
   - Islam

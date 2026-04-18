@@ -24,6 +24,7 @@ tags:
   - Leningrad Codex
   - Luke
   - Satan
+  - Second Coming
   - Silas
   - Ten Commandments
   - Univocality

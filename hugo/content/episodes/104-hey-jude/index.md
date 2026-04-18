@@ -43,6 +43,7 @@ tags:
   - Masoretic Text
   - Nephilim
   - Nineveh
+  - Second Coming
   - Second Temple period
   - Septuagint
   - Ten Commandments
