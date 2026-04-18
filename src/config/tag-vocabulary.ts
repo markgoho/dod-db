@@ -133,7 +133,7 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Paul",
-    variations: [],
+    variations: ["Saul"],
     category: "character",
     llmVerify: true,
     description:

@@ -9,9 +9,9 @@ tags:
   - James
   - Masoretic Text
   - Flavius Josephus
+  - Paul
   - Peter
   - Leningrad Codex
-  - Paul
   - Jerusalem
   - John
   - Mary Magdalene

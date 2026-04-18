@@ -31,7 +31,6 @@ books:
   - Exodus
 guests:
   - Liane Feldman
-episodeTopic: Priestly Source
 draft: false
 ---
 

@@ -14312,7 +14312,7 @@
     },
     {
       "ep": 148,
-      "m": 70,
+      "m": 71,
       "title": "Unforgivable!"
     },
     {
@@ -14322,7 +14322,7 @@
     },
     {
       "ep": 100,
-      "m": 53,
+      "m": 54,
       "title": "Episode 100 (March 3, 2025), \"Give Me Your Slave!\""
     },
     {
@@ -14332,18 +14332,18 @@
     },
     {
       "ep": 19,
-      "m": 43,
+      "m": 44,
       "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
+    },
+    {
+      "ep": 6,
+      "m": 35,
+      "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
     },
     {
       "ep": 54,
       "m": 34,
       "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
-    },
-    {
-      "ep": 6,
-      "m": 32,
-      "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
     },
     {
       "ep": 89,
@@ -14352,7 +14352,7 @@
     },
     {
       "ep": 69,
-      "m": 21,
+      "m": 22,
       "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
     },
     {
@@ -14374,11 +14374,6 @@
       "ep": 142,
       "m": 14,
       "title": "Not Original, Not Sin"
-    },
-    {
-      "ep": 49,
-      "m": 14,
-      "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss"
     },
     {
       "ep": 16,
@@ -14411,9 +14406,29 @@
       "title": "Episode 107 (April 21, 2025), \"Immigrant Apocalypse\" with Yii-Jan Lin"
     },
     {
+      "ep": 49,
+      "m": 11,
+      "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss"
+    },
+    {
       "ep": 139,
       "m": 10,
       "title": "Polygamy!"
+    },
+    {
+      "ep": 130,
+      "m": 10,
+      "title": "Blessed Baruch!"
+    },
+    {
+      "ep": 123,
+      "m": 10,
+      "title": "Jezebel!"
+    },
+    {
+      "ep": 99,
+      "m": 10,
+      "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
     },
     {
       "ep": 60,
@@ -14421,19 +14436,9 @@
       "title": "Episode 60 (May 27, 2024), \"Silence, Woman!\""
     },
     {
-      "ep": 123,
-      "m": 9,
-      "title": "Jezebel!"
-    },
-    {
       "ep": 110,
       "m": 9,
       "title": "Episode 110 (May 11, 2025), \"God's Swear Jar\""
-    },
-    {
-      "ep": 99,
-      "m": 9,
-      "title": "Episode 99 (February 24, 2025), \"Why Can't You Be Like Your Brother?\""
     },
     {
       "ep": 141,
@@ -14464,6 +14469,11 @@
       "ep": 31,
       "m": 6,
       "title": "Episode 31 (November 6, 2023), \"The Ten (ish) Commandments\""
+    },
+    {
+      "ep": 12,
+      "m": 6,
+      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
     },
     {
       "ep": 120,
@@ -14516,11 +14526,6 @@
       "title": "Episode 32 (November 13, 2023), \"The End is Near?\""
     },
     {
-      "ep": 12,
-      "m": 4,
-      "title": "Episode 12 (June 26, 2023), \"The Blessing of the Magdalene\" w/ Elizabeth Schrader Polczer"
-    },
-    {
       "ep": 126,
       "m": 3,
       "title": "Hear, O Israel!"
@@ -14536,6 +14541,11 @@
       "title": "Killing in the Name Of"
     },
     {
+      "ep": 151,
+      "m": 2,
+      "title": "What Is The Bible?"
+    },
+    {
       "ep": 150,
       "m": 2,
       "title": "Written in the Stars!"
@@ -14549,11 +14559,6 @@
       "ep": 136,
       "m": 2,
       "title": "Close Encounters of the Catholic Kind"
-    },
-    {
-      "ep": 130,
-      "m": 2,
-      "title": "Blessed Baruch!"
     },
     {
       "ep": 128,
@@ -14609,11 +14614,6 @@
       "ep": 153,
       "m": 1,
       "title": "Everyone is Wrong About 2 John!"
-    },
-    {
-      "ep": 151,
-      "m": 1,
-      "title": "What Is The Bible?"
     },
     {
       "ep": 147,

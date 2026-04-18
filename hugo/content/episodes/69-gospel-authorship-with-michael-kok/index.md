@@ -10,8 +10,8 @@ tags:
   - Papias of Hierapolis
   - Peter
   - Marcion
-  - John
   - Paul
+  - John
   - Irenaeus
   - Justin Martyr
   - baptism

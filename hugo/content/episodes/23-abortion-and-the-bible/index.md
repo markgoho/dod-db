@@ -32,7 +32,6 @@ books:
   - Luke
   - Numbers
   - Romans
-episodeTopic: Abortion
 draft: false
 ---
 

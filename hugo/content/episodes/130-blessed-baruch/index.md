@@ -9,6 +9,7 @@ tags:
   - Jeremiah
   - Baruch
   - Septuagint
+  - Paul
   - Judaism
   - Babylon
   - Cyrus the Great
@@ -21,7 +22,6 @@ tags:
   - Daniel
   - Latin Vulgate
   - Jehoiakim
-  - Paul
   - Abortion
   - Christian Nationalism
   - Flavius Josephus

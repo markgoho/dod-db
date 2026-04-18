@@ -6,8 +6,8 @@ videoId: GXyJILdNxUE
 aliases:
   - /episodes/49/
 tags:
-  - Paul
   - Papias of Hierapolis
+  - Paul
   - Romans
   - Peter
   - Tertius
