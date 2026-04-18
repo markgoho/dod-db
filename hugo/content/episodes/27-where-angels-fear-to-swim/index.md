@@ -19,6 +19,7 @@ tags:
   - Noah
   - Rapture
   - YHWH
+  - Abortion
   - Canaan
   - child sacrifice
   - Enoch

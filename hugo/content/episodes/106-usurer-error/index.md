@@ -12,6 +12,7 @@ tags:
   - Islam
   - King James Bible
   - Paul
+  - Abortion
   - Anselm of Canterbury
   - Arius
   - Catholicism

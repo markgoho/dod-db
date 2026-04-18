@@ -11,6 +11,7 @@ tags:
   - Hell
   - cognitive dissonance
   - Homosexuality
+  - Abortion
   - Beatitudes
   - Mary Magdalene
   - Paul

@@ -2,26 +2,26 @@ import { z } from "zod";
 import { ai } from "../ai.js";
 import { speakerIdModel } from "../config/models.js";
 
-const GuestTopicSchema = z.object({
-  guestTopic: z.string().min(1).max(60),
+const EpisodeTopicSchema = z.object({
+  episodeTopic: z.string().min(1).max(60),
   confidence: z.number().min(0).max(1),
 });
 
-interface DescribeGuestTopicInput {
+interface DescribeEpisodeTopicInput {
   episodeTitle: string;
   guestNames: string[];
   transcript: string;
 }
 
-export async function describeGuestTopic(
-  input: DescribeGuestTopicInput,
-): Promise<z.infer<typeof GuestTopicSchema>> {
-  const prompt = `You are labeling the main guest-discussion topic for a podcast episode.
+export async function describeEpisodeTopic(
+  input: DescribeEpisodeTopicInput,
+): Promise<z.infer<typeof EpisodeTopicSchema>> {
+  const prompt = `You are labeling the main episode topic for a podcast episode.
 
 Episode title: ${input.episodeTitle}
 Guests: ${input.guestNames.join(", ")}
 
-Return one short topic label for the central subject of the guest interview.
+Return one short topic label for the central subject of the episode discussion.
 
 Rules:
 - Return a concise human-friendly label, usually 1-3 words
@@ -44,14 +44,14 @@ ${input.transcript}`;
     contents: prompt,
     config: {
       responseMimeType: "application/json",
-      responseSchema: z.toJSONSchema(GuestTopicSchema),
+      responseSchema: z.toJSONSchema(EpisodeTopicSchema),
     },
   });
 
   const responseText = response.text;
   if (!responseText) {
-    throw new Error("LLM returned empty response for guest topic");
+    throw new Error("LLM returned empty response for episode topic");
   }
 
-  return GuestTopicSchema.parse(JSON.parse(responseText));
+  return EpisodeTopicSchema.parse(JSON.parse(responseText));
 }

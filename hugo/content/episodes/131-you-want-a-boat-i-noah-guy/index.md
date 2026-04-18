@@ -21,6 +21,7 @@ tags:
   - Canaan
   - Garden of Eden
   - Peter
+  - Priestly Source
   - Qumran
   - Solomon
 books:

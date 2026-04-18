@@ -25,6 +25,7 @@ tags:
   - Judah
   - Judaism
   - Moab
+  - Priestly Source
 books:
   - Genesis
   - Exodus

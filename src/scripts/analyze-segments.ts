@@ -10,13 +10,13 @@
 import type { SegmentType } from "../config/segment-patterns.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { getGuestSpeakers } from "../hugo/get-guest-speakers.js";
-import { describeGuestTopic } from "../pipeline/describe-guest-topic.js";
+import { describeEpisodeTopic } from "../pipeline/describe-episode-topic.js";
 import { describeSegment } from "../pipeline/describe-segment.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
 import { getVideoByEpisodeNumber } from "../storage/get-video-by-episode-number.js";
 import type { EpisodeSegment } from "../storage/processed-videos.js";
 import { updateSegmentDescription } from "../storage/update-segment-description.js";
-import { updateVideoGuestTopic } from "../storage/update-video-guest-topic.js";
+import { updateVideoEpisodeTopic } from "../storage/update-video-episode-topic.js";
 
 const EXCLUDED_SEGMENT_TYPES = new Set<SegmentType>([
   "intro",
@@ -91,7 +91,7 @@ function printSegmentReviewSummary(
   }
 }
 
-const WEAK_GUEST_TOPIC_LABELS = new Set([
+const WEAK_EPISODE_TOPIC_LABELS = new Set([
   "star",
   "council",
   "astronomy",
@@ -105,7 +105,9 @@ const WEAK_GUEST_TOPIC_LABELS = new Set([
   "judaism",
 ]);
 
-function shouldRegenerateGuestTopic(episodeTopic: string | undefined): boolean {
+function shouldRegenerateEpisodeTopic(
+  episodeTopic: string | undefined,
+): boolean {
   if (!episodeTopic) {
     return true;
   }
@@ -116,7 +118,7 @@ function shouldRegenerateGuestTopic(episodeTopic: string | undefined): boolean {
   }
 
   const normalized = trimmed.toLowerCase();
-  if (WEAK_GUEST_TOPIC_LABELS.has(normalized)) {
+  if (WEAK_EPISODE_TOPIC_LABELS.has(normalized)) {
     return true;
   }
 
@@ -153,19 +155,22 @@ async function main(): Promise<void> {
     if (analyzableSegments.length === 0) {
       if (
         cleanTitle.length > 0 &&
-        shouldRegenerateGuestTopic(video.episodeTopic)
+        shouldRegenerateEpisodeTopic(video.episodeTopic)
       ) {
-        const episodeTopic = await describeGuestTopic({
+        const episodeTopic = await describeEpisodeTopic({
           episodeTitle: cleanTitle,
           guestNames,
           transcript,
         });
 
-        console.log(`Guest topic: ${episodeTopic.episodeTopic}`);
+        console.log(`Episode topic: ${episodeTopic.episodeTopic}`);
         console.log(`Confidence: ${episodeTopic.confidence}`);
 
         if (!args.dryRun) {
-          await updateVideoGuestTopic(video.videoId, episodeTopic.episodeTopic);
+          await updateVideoEpisodeTopic(
+            video.videoId,
+            episodeTopic.episodeTopic,
+          );
           await generateHugoEpisode({
             ...video,
             episodeTopic: episodeTopic.episodeTopic,
@@ -174,9 +179,15 @@ async function main(): Promise<void> {
 
         console.log(
           args.dryRun
-            ? "\nDry run complete. Guest topic analyzed."
-            : "\nSaved guest topic and regenerated Hugo page.",
+            ? "\nDry run complete. Episode topic analyzed."
+            : "\nSaved episode topic and regenerated Hugo page.",
         );
+        return;
+      }
+
+      if (!args.dryRun && video.episodeTopic) {
+        await generateHugoEpisode(video);
+        console.log("Regenerated Hugo page from existing episode topic.");
         return;
       }
 

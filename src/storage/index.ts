@@ -11,6 +11,7 @@ export * from "./load-processed-videos.js";
 export * from "./mark-video-as-processed.js";
 export * from "./processed-videos.js";
 export * from "./save-processed-videos.js";
+export * from "./update-video-episode-topic.js";
 export * from "./update-video-scriptures.js";
 export * from "./update-video-segments.js";
 export * from "./update-video-tags.js";

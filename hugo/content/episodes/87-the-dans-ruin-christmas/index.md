@@ -25,6 +25,7 @@ tags:
   - Jericho
   - Judah
   - YHWH
+  - Abortion
   - Antiochus IV Epiphanes
   - baptism
   - Catholicism

@@ -22,6 +22,7 @@ tags:
   - King James Bible
   - Syria
   - YHWH
+  - Abortion
   - Africa
   - Ammonites
   - Amorites

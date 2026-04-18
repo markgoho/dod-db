@@ -22,6 +22,7 @@ tags:
   - Masoretic Text
   - Moab
   - Septuagint
+  - Abortion
   - Garden of Eden
   - Jerusalem
   - Michael

@@ -38,6 +38,7 @@ tags:
   - Luke
   - Midianites
   - Philistines
+  - Priestly Source
   - Samuel
   - Septuagint
   - Univocality

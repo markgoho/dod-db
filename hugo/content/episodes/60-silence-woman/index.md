@@ -15,6 +15,7 @@ tags:
   - Jerusalem
   - King James Bible
   - Romans
+  - Abortion
   - Catholicism
   - inerrancy
   - Saint Titus

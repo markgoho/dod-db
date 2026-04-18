@@ -10,6 +10,7 @@ tags:
   - King James Bible
   - Pliny the Younger
   - Ten Commandments
+  - Abortion
   - baptism
   - Beatitudes
   - Galilee

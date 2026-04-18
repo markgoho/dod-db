@@ -21,6 +21,7 @@ tags:
   - King David
   - Moses
   - Paul
+  - Abortion
   - Amorites
   - Baal
   - Bethlehem

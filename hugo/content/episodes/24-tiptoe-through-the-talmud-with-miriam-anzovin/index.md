@@ -17,6 +17,7 @@ tags:
   - Romans
 guests:
   - Miriam Anzovin
+episodeTopic: Talmud
 draft: false
 ---
 

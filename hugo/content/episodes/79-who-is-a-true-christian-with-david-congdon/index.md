@@ -9,6 +9,7 @@ tags:
   - inerrancy
   - The Reformation
   - Trinity
+  - Abortion
   - Christian Nationalism
   - Protestantism
   - Eschatology

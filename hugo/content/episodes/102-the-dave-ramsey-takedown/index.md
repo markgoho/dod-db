@@ -23,6 +23,7 @@ tags:
   - Judah
   - King James Bible
   - Peter
+  - Priestly Source
   - Sapphira
   - Ten Commandments
 books:

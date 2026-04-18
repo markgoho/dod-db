@@ -15,6 +15,7 @@ tags:
   - Judaism
   - King James Bible
   - Peter
+  - Abortion
   - King Saul
   - Luke
   - Mary Magdalene

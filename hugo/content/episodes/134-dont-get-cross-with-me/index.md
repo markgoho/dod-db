@@ -10,6 +10,7 @@ tags:
   - Crucifixion
   - Judaism
   - Septuagint
+  - Abortion
   - Catholicism
   - Daniel
   - Romans

@@ -17,6 +17,7 @@ tags:
   - John
   - Luke
   - Masoretic Text
+  - Abortion
   - Bel and the Dragon
   - Constantine
   - Dead Sea Scrolls

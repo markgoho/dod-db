@@ -7,6 +7,7 @@ aliases:
   - /episodes/124/
 tags:
   - Nephilim
+  - Abortion
   - Flood
   - YHWH
   - Romans

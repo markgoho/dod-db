@@ -22,6 +22,7 @@ tags:
   - Latin Vulgate
   - Jehoiakim
   - Paul
+  - Abortion
   - Christian Nationalism
   - Flavius Josephus
   - Jacob

@@ -1942,13 +1942,15 @@ export const tagVocabulary: TagDefinition[] = [
     ],
   },
   {
-    canonical: "Priestly",
-    variations: ["P", "Priestly source"],
+    canonical: "Priestly Source",
+    variations: [],
     category: "scholarship",
+    llmVerify: true,
     description:
       "Referring to the Priestly Source (P), one of the hypothesized sources of the Pentateuch",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 56,
+    episodes: [22, 46, 102, 111, 131],
   },
   {
     canonical: "Flood",
@@ -5749,14 +5751,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "talmudic",
-    variations: ["Talmud"],
-    category: "literature",
-    description:
-      "Relating to the Talmud, a central text of Rabbinic Judaism comprising the Mishnah and the Gemara.",
-    status: "proposed",
-  },
-  {
     canonical: "alphabet of ben sira",
     variations: [],
     category: "literature",
@@ -6254,7 +6248,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "Assistant Professor of Religion at Princeton University, specializing in the Priestly Source and Pentateuchal composition.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "neo-Documentarianism",
@@ -6328,14 +6322,6 @@ export const tagVocabulary: TagDefinition[] = [
     category: "scholarship",
     description:
       "A practice of studying one folio page of the Babylonian Talmud each day, completing the entire Talmud in approximately seven and a half years.",
-    status: "proposed",
-  },
-  {
-    canonical: "babylonian talmud",
-    variations: ["the babylonian one"],
-    category: "literature",
-    description:
-      "One of the two versions of the Talmud, compiled in Babylonia (modern-day Iraq).",
     status: "proposed",
   },
   {
@@ -7251,7 +7237,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "literature",
     description:
       "Referring to the non-Priestly source in the Pentateuch according to the Documentary Hypothesis",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Gilgamesh",
@@ -8989,6 +8975,16 @@ export const tagVocabulary: TagDefinition[] = [
     description: "same sex intercourse, sexual acts, or romantic attraction",
     status: "accepted",
     episodes: [3, 10, 17, 30, 83, 89, 91, 103, 104, 114, 124, 125, 129, 139],
+  },
+  {
+    canonical: "Abortion",
+    variations: [],
+    category: "miscellaneous",
+    status: "accepted",
+    episodes: [
+      21, 23, 27, 28, 33, 60, 79, 80, 83, 84, 87, 91, 93, 101, 106, 110, 120,
+      124, 130, 134, 140, 145, 147,
+    ],
   },
 ];
 

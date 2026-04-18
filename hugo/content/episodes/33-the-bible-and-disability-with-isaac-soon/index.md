@@ -13,6 +13,7 @@ tags:
   - Gentiles
   - Egyptians
   - King Saul
+  - Abortion
   - Acts of Paul and Thecla
   - Apocrypha
   - Holy Spirit

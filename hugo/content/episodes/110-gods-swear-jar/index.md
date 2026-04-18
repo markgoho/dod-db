@@ -8,6 +8,7 @@ aliases:
 tags:
   - Didache
   - Paul
+  - Abortion
   - Judaism
   - Clement of Alexandria
   - Egyptians
