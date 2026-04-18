@@ -41,7 +41,7 @@ segmentData:
   - type: urban-legends
     anchor: urban-legends-1
     label: Urban Legends
-    topicLabel: Council Nicaea
+    topicLabel: Council of Nicaea
     summary: "Council of Nicaea's actual purpose versus urban legends."
     startSeconds: 1674.76
 draft: false

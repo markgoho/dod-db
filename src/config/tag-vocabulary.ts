@@ -1490,7 +1490,10 @@ export const tagVocabulary: TagDefinition[] = [
     variations: ["Holy Ghost"],
     category: "character",
     status: "accepted",
-    episodes: [23, 33, 42, 48, 53, 54, 61, 76, 79, 87, 90, 92, 98, 104, 119],
+    episodes: [
+      23, 33, 42, 48, 53, 54, 61, 76, 79, 87, 90, 92, 98, 104, 119, 144, 145,
+      148,
+    ],
   },
   {
     canonical: "logos",
@@ -8616,14 +8619,6 @@ export const tagVocabulary: TagDefinition[] = [
     variations: [],
     category: "person",
     description: "Scholars who study the nature of God and religious beliefs",
-    status: "proposed",
-  },
-  {
-    canonical: "the spirit",
-    variations: ["holy spirit"],
-    category: "theology",
-    description:
-      "Refers to the Holy Spirit in a Christian context, the third person of the Trinity",
     status: "proposed",
   },
   {

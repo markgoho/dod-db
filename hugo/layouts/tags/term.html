@@ -116,7 +116,7 @@
       </section>
     {{ end }}
 
-    {{ if and (.Params.showTopEpisodes | default true) (gt (len $rankedEpisodes) 0) }}
+    {{ if and (.Params.showTopEpisodes | default true) (gt (len $featuredEpisodes) 0) }}
       <section class="tag-episodes tag-episodes--featured">
         <div class="tag-section-heading">
           <div>
