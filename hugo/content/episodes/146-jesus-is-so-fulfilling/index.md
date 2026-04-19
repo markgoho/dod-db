@@ -32,7 +32,7 @@ tags:
   - inerrancy
   - Jonah
   - King James Bible
-  - King Josiah
+  - Josiah
   - Luke
   - Moab
   - Nineveh

@@ -34,7 +34,7 @@ tags:
   - Isaac
   - Islam
   - Jephthah
-  - King Josiah
+  - Josiah
   - Moses
   - Nineveh
   - Philistines

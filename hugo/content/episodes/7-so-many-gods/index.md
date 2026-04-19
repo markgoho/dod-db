@@ -49,7 +49,7 @@ tags:
   - Jacob
   - Jephthah
   - Judaism
-  - King Josiah
+  - Josiah
   - Michael
   - Philistines
 books:

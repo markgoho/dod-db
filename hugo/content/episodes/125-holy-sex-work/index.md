@@ -28,7 +28,7 @@ tags:
   - Tamar
   - circumcision
   - Hezekiah
-  - King Josiah
+  - Josiah
   - Latin Vulgate
   - Martin Luther
   - Samuel

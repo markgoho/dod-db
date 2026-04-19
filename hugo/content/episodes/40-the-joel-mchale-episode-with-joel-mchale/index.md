@@ -17,7 +17,7 @@ tags:
   - Atheism
   - Baal
   - baptism
-  - King Josiah
+  - Josiah
   - Amalek
   - Capernaum
   - Decalogue

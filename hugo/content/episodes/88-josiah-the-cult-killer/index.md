@@ -6,7 +6,7 @@ videoId: 4HiEJGpNAQU
 aliases:
   - /episodes/88/
 tags:
-  - King Josiah
+  - Josiah
   - Hezekiah
   - Jerusalem
   - Asherah

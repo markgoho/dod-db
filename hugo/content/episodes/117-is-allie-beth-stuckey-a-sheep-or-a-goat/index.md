@@ -24,7 +24,7 @@ tags:
   - Hell
   - inerrancy
   - Judaism
-  - King Josiah
+  - Josiah
   - Maccabean Revolt
   - Monotheism
   - Moses

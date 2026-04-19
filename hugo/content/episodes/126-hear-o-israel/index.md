@@ -16,7 +16,7 @@ tags:
   - Judah
   - Philistines
   - Baruch
-  - King Josiah
+  - Josiah
   - Judaism
   - Apocrypha
   - King James Bible

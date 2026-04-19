@@ -15,7 +15,7 @@ tags:
   - Judah
   - Judaism
   - Mary Magdalene
-  - King Josiah
+  - Josiah
   - Seleucid Empire
   - Daniel
   - Maccabees

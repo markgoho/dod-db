@@ -32,7 +32,7 @@ tags:
   - Goliath
   - Isaac
   - Jeroboam
-  - King Josiah
+  - Josiah
   - Paul
   - Rehoboam
   - Ritual Purity

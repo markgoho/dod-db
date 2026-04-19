@@ -9,7 +9,7 @@ tags:
   - Deuteronomy
   - Jerusalem
   - Gnostic
-  - King Josiah
+  - Josiah
   - Joshua
   - Samuel
   - Prophetic Critique

@@ -34,7 +34,7 @@ tags:
   - circumcision
   - David
   - Deutero-Isaiah
-  - King Josiah
+  - Josiah
   - Luke
   - Midianites
   - Philistines

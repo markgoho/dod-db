@@ -1214,14 +1214,16 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [6, 26, 29, 35, 48, 60, 99, 138],
   },
   {
-    canonical: "King Josiah",
-    variations: ["Josiah"],
+    canonical: "Josiah",
+    variations: [],
     category: "character",
     llmVerify: true,
     description:
       "the 16th king of Judah (c. 640-609 BCE). Described as one of Judah’s most important kings",
     status: "accepted",
-    episodes: [7, 33, 36, 46, 64, 72, 88, 102, 117, 123, 125, 126],
+    episodes: [
+      7, 31, 36, 40, 46, 64, 72, 88, 102, 117, 123, 125, 126, 145, 146, 155,
+    ],
   },
   {
     canonical: "scribes",

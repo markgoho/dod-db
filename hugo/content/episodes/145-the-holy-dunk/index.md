@@ -32,7 +32,7 @@ tags:
   - Garden of Gethsemane
   - Herod Antipas
   - Judas Iscariot
-  - King Josiah
+  - Josiah
   - Moabites
   - Qumran
   - Ritual Purity

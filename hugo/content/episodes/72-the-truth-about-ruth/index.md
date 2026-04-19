@@ -21,7 +21,7 @@ tags:
   - YHWH
   - Nineveh
   - Isaiah
-  - King Josiah
+  - Josiah
   - Arad
   - Babylon
   - David

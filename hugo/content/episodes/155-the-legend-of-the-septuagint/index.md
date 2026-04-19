@@ -28,7 +28,7 @@ tags:
   - Essenes
   - Jacob
   - King James Bible
-  - King Josiah
+  - Josiah
   - Laban
   - Latin Vulgate
   - Maccabees

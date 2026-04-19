@@ -11,7 +11,7 @@ tags:
   - Deuteronomy
   - Judaism
   - Moses
-  - King Josiah
+  - Josiah
   - Paul
   - Philo of Alexandria
   - Asherah
