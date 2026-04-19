@@ -12,6 +12,7 @@ tags:
   - Textus Receptus
   - Deuteronomy
   - King James Bible
+  - Ritual Purity
   - Septuagint
   - Flavius Josephus
   - Moses
@@ -33,6 +34,7 @@ books:
   - Acts
 guests:
   - Logan Williams
+episodeTopic: Ritual Purity
 draft: false
 ---
 

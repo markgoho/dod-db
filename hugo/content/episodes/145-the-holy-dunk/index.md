@@ -35,6 +35,7 @@ tags:
   - King Josiah
   - Moabites
   - Qumran
+  - Ritual Purity
   - Romans
   - Satan
   - Second Temple period

@@ -35,6 +35,7 @@ tags:
   - King Josiah
   - Paul
   - Rehoboam
+  - Ritual Purity
   - Sea of Galilee
 books:
   - Judges

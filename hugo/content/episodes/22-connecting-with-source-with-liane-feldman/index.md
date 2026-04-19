@@ -13,6 +13,7 @@ tags:
   - Flood
   - Qumran
   - Joseph
+  - Ritual Purity
   - Abel
   - Adam
   - Arad

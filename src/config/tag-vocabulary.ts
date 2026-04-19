@@ -3173,24 +3173,6 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 84,
   },
   {
-    canonical: "daimon",
-    variations: ["daimons"],
-    category: "theology",
-    description:
-      "A Greek term for a divine power or spirit, not necessarily evil, but influential",
-    status: "proposed",
-    addedInEpisode: 84,
-  },
-  {
-    canonical: "daimonia",
-    variations: ["daimoniois"],
-    category: "theology",
-    description:
-      "Plural form of 'daimonion' in Greek, referring to a multitude of divine powers or spirits",
-    status: "proposed",
-    addedInEpisode: 84,
-  },
-  {
     canonical: "jubilees",
     variations: [],
     category: "literature",
@@ -3243,28 +3225,20 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 85,
   },
   {
-    canonical: "purity laws",
-    variations: ["purity ideas"],
+    canonical: "Ritual Purity",
+    variations: ["purity ideas", "purity laws"],
     category: "theology",
     description:
       "Jewish regulations concerning ritual purity and impurity, involve practices of cleansing and separation",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 85,
+    episodes: [22, 26, 45, 54, 64, 67, 70, 85, 95, 115, 127, 145],
   },
   {
     canonical: "Matt Thiessen",
     variations: ["Thiessen"],
     category: "person",
     status: "rejected",
-    addedInEpisode: 85,
-  },
-  {
-    canonical: "ritual impurity",
-    variations: ["impurity"],
-    category: "theology",
-    description:
-      "Religious concept of uncleanness that can be transmitted and ameliorated through ritual actions",
-    status: "proposed",
     addedInEpisode: 85,
   },
   {
@@ -3300,7 +3274,7 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Flavius Josephus",
-    variations: ["Josephus", "Flavius"],
+    variations: ["Josephus"],
     category: "person",
     llmVerify: true,
     description:
@@ -3308,8 +3282,8 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     addedInEpisode: 86,
     episodes: [
-      10, 12, 15, 33, 43, 45, 48, 61, 69, 73, 74, 85, 86, 87, 99, 100, 110, 112,
-      123, 128, 130, 135, 137, 138, 139, 140,
+      10, 12, 15, 31, 43, 45, 48, 61, 69, 73, 74, 85, 86, 87, 99, 100, 110, 112,
+      117, 123, 128, 130, 135, 137, 138, 139, 140, 144, 155, 156,
     ],
   },
   {

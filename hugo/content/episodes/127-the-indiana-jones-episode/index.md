@@ -23,6 +23,7 @@ tags:
   - King James Bible
   - Mary Magdalene
   - Noah
+  - Ritual Purity
 books:
   - Numbers
   - Exodus

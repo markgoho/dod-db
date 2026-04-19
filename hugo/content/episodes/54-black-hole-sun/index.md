@@ -34,6 +34,7 @@ tags:
   - Mary Magdalene
   - Nero
   - Pergamum
+  - Ritual Purity
   - Samaria
   - Satan
   - Sodom

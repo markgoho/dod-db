@@ -40,6 +40,7 @@ tags:
   - Mount Ebal
   - Peter
   - Pliny the Younger
+  - Ritual Purity
   - Saul
   - Second Temple period
   - Ugarit

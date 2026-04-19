@@ -6616,7 +6616,7 @@
   "Flavius Josephus": [
     {
       "ep": 86,
-      "m": 30,
+      "m": 27,
       "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
     },
     {
@@ -6650,14 +6650,19 @@
       "title": "Episode 69 (July 29, 2024), \"Gospel Authorship\" with Michael Kok"
     },
     {
+      "ep": 48,
+      "m": 4,
+      "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond"
+    },
+    {
       "ep": 73,
       "m": 3,
       "title": "Episode 73 (August 26, 2024), \"Bible Magic!\""
     },
     {
-      "ep": 48,
-      "m": 3,
-      "title": "Episode 48 (March 4, 2024), \"Jesus in History\" with Helen Bond"
+      "ep": 155,
+      "m": 2,
+      "title": "The Legend of the Septuagint"
     },
     {
       "ep": 138,
@@ -6700,11 +6705,6 @@
       "title": "Killing in the Name Of"
     },
     {
-      "ep": 155,
-      "m": 1,
-      "title": "The Legend of the Septuagint"
-    },
-    {
       "ep": 139,
       "m": 1,
       "title": "Polygamy!"
@@ -6728,6 +6728,11 @@
       "ep": 123,
       "m": 1,
       "title": "Jezebel!"
+    },
+    {
+      "ep": 117,
+      "m": 1,
+      "title": "Is Allie Beth Stuckey a Sheep or a Goat?"
     },
     {
       "ep": 110,
@@ -16433,6 +16438,68 @@
       "ep": 139,
       "m": 1,
       "title": "Polygamy!"
+    }
+  ],
+  "Ritual Purity": [
+    {
+      "ep": 85,
+      "m": 5,
+      "title": "Episode 85 (November 18, 2024), \"Purify This!\" With Logan Williams"
+    },
+    {
+      "ep": 22,
+      "m": 2,
+      "title": "Episode 22 (September 4, 2023), \"Connecting with Source\""
+    },
+    {
+      "ep": 145,
+      "m": 1,
+      "title": "The Holy Dunk"
+    },
+    {
+      "ep": 127,
+      "m": 1,
+      "title": "The Indiana Jones Episode!"
+    },
+    {
+      "ep": 115,
+      "m": 1,
+      "title": "Did the Bible Steal Its Stories?"
+    },
+    {
+      "ep": 95,
+      "m": 1,
+      "title": "Episode 95 (January 27, 2025), \"Uh-Oh, Jericho\""
+    },
+    {
+      "ep": 70,
+      "m": 1,
+      "title": "Episode 70 (August 5, 2024), \"Out of Nothing\""
+    },
+    {
+      "ep": 67,
+      "m": 1,
+      "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi"
+    },
+    {
+      "ep": 64,
+      "m": 1,
+      "title": "Episode 64 (June 24, 2024), \"The Historicity of David\""
+    },
+    {
+      "ep": 54,
+      "m": 1,
+      "title": "Episode 54 (April 15, 2024), \"Black Hole Sun\""
+    },
+    {
+      "ep": 45,
+      "m": 1,
+      "title": "Episode 45 (February 12, 2024), \"The Dead Sea Scrolls\" With Kipp Davis"
+    },
+    {
+      "ep": 26,
+      "m": 1,
+      "title": "Episode 26 (October 1, 2023), \"A Jewish Paul\" with Matthew Thiessen"
     }
   ],
   "Romans": [

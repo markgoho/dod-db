@@ -22,6 +22,7 @@ tags:
   - Hermeneia
   - Judas Iscariot
   - Maccabees
+  - Ritual Purity
   - Saint Titus
   - Solomon
 books:

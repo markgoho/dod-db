@@ -30,6 +30,7 @@ tags:
   - Melchizedek
   - Moses
   - Persia
+  - Ritual Purity
   - Syria
 books:
   - Genesis

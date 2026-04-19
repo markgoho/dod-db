@@ -35,6 +35,7 @@ tags:
   - Median Kingdom
   - Origen
   - Paul
+  - Ritual Purity
   - Tertullian
 books:
   - Genesis

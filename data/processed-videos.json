@@ -3897,6 +3897,10 @@
         "mentions": 2
       },
       {
+        "tag": "Ritual Purity",
+        "mentions": 2
+      },
+      {
         "tag": "Abel",
         "mentions": 1
       },
@@ -4437,6 +4441,10 @@
       },
       {
         "tag": "Maccabees",
+        "mentions": 1
+      },
+      {
+        "tag": "Ritual Purity",
         "mentions": 1
       },
       {
@@ -7682,6 +7690,10 @@
         "mentions": 1
       },
       {
+        "tag": "Ritual Purity",
+        "mentions": 1
+      },
+      {
         "tag": "Saul",
         "mentions": 1
       },
@@ -8037,12 +8049,12 @@
         "mentions": 6
       },
       {
-        "tag": "Papias of Hierapolis",
+        "tag": "Flavius Josephus",
         "mentions": 4
       },
       {
-        "tag": "Flavius Josephus",
-        "mentions": 3
+        "tag": "Papias of Hierapolis",
+        "mentions": 4
       },
       {
         "tag": "Gospel of Thomas",
@@ -8979,6 +8991,10 @@
       },
       {
         "tag": "Pergamum",
+        "mentions": 1
+      },
+      {
+        "tag": "Ritual Purity",
         "mentions": 1
       },
       {
@@ -10875,6 +10891,10 @@
         "mentions": 1
       },
       {
+        "tag": "Ritual Purity",
+        "mentions": 1
+      },
+      {
         "tag": "Sea of Galilee",
         "mentions": 1
       }
@@ -11271,6 +11291,10 @@
       },
       {
         "tag": "Rachel",
+        "mentions": 1
+      },
+      {
+        "tag": "Ritual Purity",
         "mentions": 1
       },
       {
@@ -11821,6 +11845,10 @@
       },
       {
         "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Ritual Purity",
         "mentions": 1
       },
       {
@@ -13896,6 +13924,10 @@
         "mentions": 5
       },
       {
+        "tag": "Ritual Purity",
+        "mentions": 5
+      },
+      {
         "tag": "Septuagint",
         "mentions": 4
       },
@@ -14013,7 +14045,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 85
+    "episodeNumber": 85,
+    "episodeTopic": "Ritual Purity"
   },
   {
     "videoId": "Z-9XhhrGN6w",
@@ -14024,7 +14057,7 @@
     "tags": [
       {
         "tag": "Flavius Josephus",
-        "mentions": 30
+        "mentions": 27
       },
       {
         "tag": "Romans",
@@ -15640,6 +15673,10 @@
       },
       {
         "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Ritual Purity",
         "mentions": 1
       },
       {
@@ -18590,6 +18627,10 @@
         "mentions": 1
       },
       {
+        "tag": "Ritual Purity",
+        "mentions": 1
+      },
+      {
         "tag": "Syria",
         "mentions": 1
       }
@@ -18934,6 +18975,10 @@
       },
       {
         "tag": "Egyptians",
+        "mentions": 1
+      },
+      {
+        "tag": "Flavius Josephus",
         "mentions": 1
       },
       {
@@ -20852,6 +20897,10 @@
       },
       {
         "tag": "Noah",
+        "mentions": 1
+      },
+      {
+        "tag": "Ritual Purity",
         "mentions": 1
       }
     ],
@@ -23907,6 +23956,10 @@
         "mentions": 1
       },
       {
+        "tag": "Ritual Purity",
+        "mentions": 1
+      },
+      {
         "tag": "Romans",
         "mentions": 1
       },
@@ -25460,6 +25513,10 @@
         "mentions": 2
       },
       {
+        "tag": "Flavius Josephus",
+        "mentions": 2
+      },
+      {
         "tag": "Masoretic Text",
         "mentions": 2
       },
@@ -25485,10 +25542,6 @@
       },
       {
         "tag": "Essenes",
-        "mentions": 1
-      },
-      {
-        "tag": "Flavius Josephus",
         "mentions": 1
       },
       {
