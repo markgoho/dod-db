@@ -12,12 +12,13 @@ tags:
   - Onan
   - David
   - child sacrifice
-  - King Saul
+  - Saul
   - Eglon
   - Noah
   - Abortion
   - Abraham
   - Christian Nationalism
+  - Creatio ex nihilo
   - Egyptians
   - Goliath
   - Hell

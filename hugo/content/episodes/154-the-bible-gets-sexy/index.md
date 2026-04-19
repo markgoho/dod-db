@@ -15,8 +15,8 @@ tags:
   - Esther
   - Jacob
   - David
-  - King Saul
   - Samuel
+  - Saul
   - Sukkot
   - Arad
   - Asherah

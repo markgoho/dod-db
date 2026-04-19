@@ -18,9 +18,9 @@ tags:
   - Jacob
   - Judah
   - Canaan
-  - King Saul
   - Rebekah
   - Samuel
+  - Saul
   - Bethlehem
   - etiology
   - Terah

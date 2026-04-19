@@ -18,6 +18,7 @@ tags:
   - Moses
   - Second Temple period
   - YHWH
+  - Creatio ex nihilo
   - Creation ex nihilo
   - Jacob
   - Septuagint

@@ -6,7 +6,7 @@ videoId: MBA74-qj0Pw
 aliases:
   - /episodes/40/
 tags:
-  - King Saul
+  - Saul
   - Samuel
   - Philistines
   - David

@@ -6,7 +6,7 @@ videoId: 600Z95nVTxs
 aliases:
   - /episodes/72/
 tags:
-  - King Sennacherib
+  - Sennacherib
   - Hezekiah
   - Naomi
   - Boaz

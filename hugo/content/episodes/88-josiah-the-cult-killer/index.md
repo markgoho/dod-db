@@ -11,7 +11,7 @@ tags:
   - Jerusalem
   - Asherah
   - YHWH
-  - King Sennacherib
+  - Sennacherib
   - Deuteronomy
   - Judah
   - Baal

@@ -448,10 +448,6 @@
         "mentions": 2
       },
       {
-        "tag": "King Sennacherib",
-        "mentions": 2
-      },
-      {
         "tag": "Mount Ebal",
         "mentions": 2
       },
@@ -469,6 +465,10 @@
       },
       {
         "tag": "Sarah",
+        "mentions": 2
+      },
+      {
+        "tag": "Sennacherib",
         "mentions": 2
       },
       {
@@ -795,6 +795,10 @@
         "mentions": 1
       },
       {
+        "tag": "Creatio ex nihilo",
+        "mentions": 1
+      },
+      {
         "tag": "Eusebius",
         "mentions": 1
       },
@@ -919,10 +923,6 @@
         "mentions": 2
       },
       {
-        "tag": "King Saul",
-        "mentions": 2
-      },
-      {
         "tag": "Origen",
         "mentions": 2
       },
@@ -944,6 +944,10 @@
       },
       {
         "tag": "Saint Titus",
+        "mentions": 2
+      },
+      {
+        "tag": "Saul",
         "mentions": 2
       },
       {
@@ -1112,11 +1116,11 @@
         "mentions": 8
       },
       {
-        "tag": "King Sennacherib",
+        "tag": "Samaria",
         "mentions": 6
       },
       {
-        "tag": "Samaria",
+        "tag": "Sennacherib",
         "mentions": 6
       },
       {
@@ -2067,7 +2071,7 @@
         "mentions": 14
       },
       {
-        "tag": "King Sennacherib",
+        "tag": "Sennacherib",
         "mentions": 9
       },
       {
@@ -2428,7 +2432,7 @@
         "mentions": 5
       },
       {
-        "tag": "King Saul",
+        "tag": "Saul",
         "mentions": 4
       },
       {
@@ -4659,6 +4663,10 @@
         "mentions": 3
       },
       {
+        "tag": "Saul",
+        "mentions": 3
+      },
+      {
         "tag": "Apocrypha",
         "mentions": 2
       },
@@ -4672,10 +4680,6 @@
       },
       {
         "tag": "Hagar",
-        "mentions": 2
-      },
-      {
-        "tag": "King Saul",
         "mentions": 2
       },
       {
@@ -4867,7 +4871,7 @@
         "mentions": 8
       },
       {
-        "tag": "King Sennacherib",
+        "tag": "Sennacherib",
         "mentions": 7
       },
       {
@@ -5488,7 +5492,7 @@
         "mentions": 2
       },
       {
-        "tag": "King Saul",
+        "tag": "Saul",
         "mentions": 2
       },
       {
@@ -5976,10 +5980,6 @@
         "mentions": 2
       },
       {
-        "tag": "King Saul",
-        "mentions": 2
-      },
-      {
         "tag": "Monotheism",
         "mentions": 2
       },
@@ -5989,6 +5989,10 @@
       },
       {
         "tag": "Samuel",
+        "mentions": 2
+      },
+      {
+        "tag": "Saul",
         "mentions": 2
       },
       {
@@ -6603,7 +6607,7 @@
     "transcriptPath": "data/transcripts/2024-01-08-episode-40-january-8-2024-the-joel-mchale-episode.txt",
     "tags": [
       {
-        "tag": "King Saul",
+        "tag": "Saul",
         "mentions": 36
       },
       {
@@ -7147,7 +7151,7 @@
         "mentions": 7
       },
       {
-        "tag": "King Sennacherib",
+        "tag": "Sennacherib",
         "mentions": 6
       },
       {
@@ -7550,10 +7554,6 @@
         "mentions": 1
       },
       {
-        "tag": "King Saul",
-        "mentions": 1
-      },
-      {
         "tag": "Mount Ebal",
         "mentions": 1
       },
@@ -7563,6 +7563,10 @@
       },
       {
         "tag": "Pliny the Younger",
+        "mentions": 1
+      },
+      {
+        "tag": "Saul",
         "mentions": 1
       },
       {
@@ -8595,12 +8599,12 @@
         "mentions": 18
       },
       {
-        "tag": "Trinity",
+        "tag": "Saul",
         "mentions": 5
       },
       {
-        "tag": "King Saul",
-        "mentions": 4
+        "tag": "Trinity",
+        "mentions": 5
       },
       {
         "tag": "Elijah",
@@ -9041,10 +9045,6 @@
         "mentions": 1
       },
       {
-        "tag": "King Saul",
-        "mentions": 1
-      },
-      {
         "tag": "Maccabees",
         "mentions": 1
       },
@@ -9054,6 +9054,10 @@
       },
       {
         "tag": "Nazareth",
+        "mentions": 1
+      },
+      {
+        "tag": "Saul",
         "mentions": 1
       },
       {
@@ -9552,6 +9556,10 @@
         "mentions": 2
       },
       {
+        "tag": "Creatio ex nihilo",
+        "mentions": 1
+      },
+      {
         "tag": "Creation ex nihilo",
         "mentions": 1
       },
@@ -9585,6 +9593,10 @@
       },
       {
         "tag": "Persia",
+        "mentions": 1
+      },
+      {
+        "tag": "Saul",
         "mentions": 1
       },
       {
@@ -9772,6 +9784,10 @@
       {
         "tag": "YHWH",
         "mentions": 4
+      },
+      {
+        "tag": "Creatio ex nihilo",
+        "mentions": 3
       },
       {
         "tag": "Creation ex nihilo",
@@ -10575,7 +10591,7 @@
         "mentions": 71
       },
       {
-        "tag": "King Saul",
+        "tag": "Saul",
         "mentions": 23
       },
       {
@@ -11006,7 +11022,7 @@
         "mentions": 83
       },
       {
-        "tag": "King Saul",
+        "tag": "Saul",
         "mentions": 30
       },
       {
@@ -11516,6 +11532,10 @@
         "mentions": 52
       },
       {
+        "tag": "Creatio ex nihilo",
+        "mentions": 21
+      },
+      {
         "tag": "Apocrypha",
         "mentions": 20
       },
@@ -11905,7 +11925,7 @@
     "transcriptPath": "data/transcripts/2024-08-19-episode-72-august-19-2024-the-truth-about-ruth.txt",
     "tags": [
       {
-        "tag": "King Sennacherib",
+        "tag": "Sennacherib",
         "mentions": 44
       },
       {
@@ -12068,7 +12088,7 @@
         "mentions": 7
       },
       {
-        "tag": "King Saul",
+        "tag": "Saul",
         "mentions": 6
       },
       {
@@ -13454,10 +13474,6 @@
         "mentions": 2
       },
       {
-        "tag": "King Saul",
-        "mentions": 2
-      },
-      {
         "tag": "Luke",
         "mentions": 2
       },
@@ -13467,6 +13483,10 @@
       },
       {
         "tag": "Nephilim",
+        "mentions": 2
+      },
+      {
+        "tag": "Saul",
         "mentions": 2
       },
       {
@@ -14119,7 +14139,7 @@
         "mentions": 10
       },
       {
-        "tag": "King Sennacherib",
+        "tag": "Sennacherib",
         "mentions": 9
       },
       {
@@ -14949,7 +14969,7 @@
         "mentions": 3
       },
       {
-        "tag": "King Saul",
+        "tag": "Saul",
         "mentions": 3
       },
       {
@@ -14970,6 +14990,10 @@
       },
       {
         "tag": "Christian Nationalism",
+        "mentions": 1
+      },
+      {
+        "tag": "Creatio ex nihilo",
         "mentions": 1
       },
       {
@@ -16843,11 +16867,11 @@
         "mentions": 2
       },
       {
-        "tag": "King Sennacherib",
+        "tag": "Philo of Alexandria",
         "mentions": 2
       },
       {
-        "tag": "Philo of Alexandria",
+        "tag": "Sennacherib",
         "mentions": 2
       },
       {
@@ -17613,11 +17637,11 @@
         "mentions": 5
       },
       {
-        "tag": "King Saul",
+        "tag": "Samson",
         "mentions": 3
       },
       {
-        "tag": "Samson",
+        "tag": "Saul",
         "mentions": 3
       },
       {
@@ -17729,6 +17753,10 @@
       },
       {
         "tag": "Apocrypha",
+        "mentions": 2
+      },
+      {
+        "tag": "Creatio ex nihilo",
         "mentions": 2
       },
       {
@@ -17918,10 +17946,6 @@
         "mentions": 1
       },
       {
-        "tag": "King Saul",
-        "mentions": 1
-      },
-      {
         "tag": "Nebuchadnezzar",
         "mentions": 1
       },
@@ -17935,6 +17959,10 @@
       },
       {
         "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Saul",
         "mentions": 1
       },
       {
@@ -18213,6 +18241,10 @@
       {
         "tag": "Solomon",
         "mentions": 2
+      },
+      {
+        "tag": "Creatio ex nihilo",
+        "mentions": 1
       },
       {
         "tag": "Daniel",
@@ -19351,15 +19383,15 @@
         "mentions": 3
       },
       {
-        "tag": "King Saul",
-        "mentions": 3
-      },
-      {
         "tag": "Rebekah",
         "mentions": 3
       },
       {
         "tag": "Samuel",
+        "mentions": 3
+      },
+      {
+        "tag": "Saul",
         "mentions": 3
       },
       {
@@ -20327,10 +20359,6 @@
         "mentions": 1
       },
       {
-        "tag": "King Sennacherib",
-        "mentions": 1
-      },
-      {
         "tag": "Moab",
         "mentions": 1
       },
@@ -20340,6 +20368,10 @@
       },
       {
         "tag": "Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Sennacherib",
         "mentions": 1
       },
       {
@@ -21369,10 +21401,6 @@
         "mentions": 2
       },
       {
-        "tag": "King Saul",
-        "mentions": 2
-      },
-      {
         "tag": "Mary Magdalene",
         "mentions": 2
       },
@@ -21382,6 +21410,10 @@
       },
       {
         "tag": "Samuel",
+        "mentions": 2
+      },
+      {
+        "tag": "Saul",
         "mentions": 2
       },
       {
@@ -22464,7 +22496,7 @@
         "mentions": 6
       },
       {
-        "tag": "King Saul",
+        "tag": "Saul",
         "mentions": 5
       },
       {
@@ -23628,7 +23660,7 @@
         "mentions": 6
       },
       {
-        "tag": "King Sennacherib",
+        "tag": "Sennacherib",
         "mentions": 6
       },
       {
@@ -24260,10 +24292,6 @@
         "mentions": 2
       },
       {
-        "tag": "King Saul",
-        "mentions": 2
-      },
-      {
         "tag": "Masoretic Text",
         "mentions": 2
       },
@@ -24281,6 +24309,10 @@
       },
       {
         "tag": "Satan",
+        "mentions": 2
+      },
+      {
+        "tag": "Saul",
         "mentions": 2
       },
       {
@@ -24625,6 +24657,10 @@
         "mentions": 2
       },
       {
+        "tag": "Creatio ex nihilo",
+        "mentions": 1
+      },
+      {
         "tag": "Creation ex nihilo",
         "mentions": 1
       },
@@ -24871,11 +24907,11 @@
         "mentions": 2
       },
       {
-        "tag": "King Saul",
+        "tag": "Samuel",
         "mentions": 2
       },
       {
-        "tag": "Samuel",
+        "tag": "Saul",
         "mentions": 2
       },
       {
@@ -25073,10 +25109,6 @@
         "mentions": 1
       },
       {
-        "tag": "King Sennacherib",
-        "mentions": 1
-      },
-      {
         "tag": "Laban",
         "mentions": 1
       },
@@ -25094,6 +25126,10 @@
       },
       {
         "tag": "Nazareth",
+        "mentions": 1
+      },
+      {
+        "tag": "Sennacherib",
         "mentions": 1
       },
       {
@@ -25185,7 +25221,7 @@
         "mentions": 26
       },
       {
-        "tag": "King Saul",
+        "tag": "Saul",
         "mentions": 23
       },
       {
@@ -25314,6 +25350,10 @@
       },
       {
         "tag": "Clement of Rome",
+        "mentions": 1
+      },
+      {
+        "tag": "Creatio ex nihilo",
         "mentions": 1
       },
       {

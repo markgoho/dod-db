@@ -12,7 +12,7 @@ tags:
   - Paul
   - Assyria
   - Gentiles
-  - King Sennacherib
+  - Sennacherib
   - Ashurbanipal
   - Eschatology
   - Moses

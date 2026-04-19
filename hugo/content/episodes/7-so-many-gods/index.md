@@ -15,8 +15,8 @@ tags:
   - Baal
   - Hezekiah
   - Joram
-  - King Sennacherib
   - Samaria
+  - Sennacherib
   - Edom
   - Masoretic Text
   - Stele

@@ -16,10 +16,10 @@ tags:
   - King James Bible
   - Peter
   - Abortion
-  - King Saul
   - Luke
   - Mary Magdalene
   - Nephilim
+  - Saul
   - Septuagint
   - Africa
   - Balaam

@@ -18,13 +18,13 @@ tags:
   - Esther
   - Romans
   - Council of Jerusalem
-  - King Saul
   - Origen
   - Philistines
   - Protestantism
   - Qumran
   - Quran
   - Saint Titus
+  - Saul
   - Solomon
   - Book of Enoch
   - Catholicism

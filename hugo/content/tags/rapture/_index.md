@@ -1,6 +1,6 @@
 ---
 title: Rapture
-definition: "The Rapture is a modern Christian end-times doctrine about believers being caught up to meet Jesus, usually within a larger timetable of tribulation and millennial expectation. It is a relatively recent theological construction built by combining scattered apocalyptic texts into a single scenario rather than a clear, standalone biblical teaching."
+definition: "The Rapture is a modern Christian end-times doctrine that imagines believers being snatched up to meet Jesus, usually as part of a larger timetable involving tribulation and the millennium. Rather than a clear biblical teaching, it is a recent theological construction built by combining scattered apocalyptic passages into a single scenario."
 featuredItems:
   - type: segment
     episodeNumber: 32
@@ -11,27 +11,27 @@ featuredItems:
     segmentAnchor: eschatological-1
     label: "Eschatological — Rapture"
 quotes:
-  - text: "So this refers to the snatching up, the being carried away of believers, of followers of Jesus at some point near the end times."
-    speaker: Dan McClellan
+  - text: "The Rapture is, is something that some, some dudes made up that was then leveraged as a means of. Of trying to influence people to be good, to eat their vegetables, to not touch themselves. That's just a tool, a piece of leverage that people use to try to control behavior and incentivize or disincentivize certain behaviors. And it has been phenomenally harmful to entire generations."
+    speaker: "Dan McClellan"
     episode: 71
-    timestamp: "00:05:26.620"
+    timestamp: "00:00:01.120"
   - text: "No one talked about this thing called the Rapture until the second quarter of the 19th century. It started around like 1827-ish. And it really gets kind of the ball rolling by the 1830s."
-    speaker: Dan McClellan
+    speaker: "Dan McClellan"
     episode: 71
     timestamp: "00:08:18.210"
-  - text: "But the idea here is to just flip that orientation vertically and have everybody being lifted up into the air to meet the descending Jesus and then usher Jesus into his earthly kingdom. So based on the imagery, it makes more sense to understand this not as being raised up to be flown off to heaven, but being raised up so that you can meet Jesus and then usher Jesus into his earthly rule."
-    speaker: Dan McClellan
-    episode: 71
-    timestamp: "00:16:55.630"
-  - text: "This approach to the Rapture that is very common these days, this approach to understanding geopolitics and world events that is associated with the second coming and the Rapture is not supported by data, is not supported by much at all apart from a concern for structuring power and values."
-    speaker: Dan McClellan
+  - text: "The idea here is we're all going to rise up into the clouds to meet him, not to then take a trip in our big old rocket ship into the heavens, but to come back down with Jesus. So that Jesus can take up his rule on earth in his kingdom on earth."
+    speaker: "Dan McClellan"
     episode: 32
-    timestamp: "00:49:23.680"
+    timestamp: "00:33:06.110"
+  - text: "This rhetoric does a lot of damage not only to the psyches of new generations, people who are growing up in a time when their. Their brains are. Are formulating a concept of their identity and their position in the world around them."
+    speaker: "Dan McClellan"
+    episode: 32
+    timestamp: "00:45:34.350"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-The rapture sits at the intersection of biblical interpretation, modern theology, and lived religious harm. Episodes tagged here typically trace how a recent end-times framework was assembled from passages in Thessalonians, the Gospels, Daniel, and Revelation, then treated as if it were the Bible’s obvious and ancient teaching.
+The Rapture sits at the intersection of biblical interpretation, modern theology, and lived religious harm. Discussions of the topic keep returning to the same basic point: a recent end-times framework was assembled from passages in Thessalonians, the Gospels, Daniel, and Revelation, then retrojected back into Christian history as if it had always been there.
 
-The topic becomes a recurring case study in how inherited frameworks shape what readers think scripture says. The discussion often turns from the history of the doctrine itself to its effects: anxiety, fear, political fatalism, and the use of apocalyptic expectation to justify harmful ways of reading both the text and the world.
+The doctrine also becomes a case study in what happens when scattered apocalyptic images are treated like one seamless script. Instead of clarifying the Bible, that harmonizing move produces anxiety, exceptionalism, and political fatalism, turning world events and other people's suffering into signs to decode rather than realities to address.

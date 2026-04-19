@@ -1369,15 +1369,15 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [9, 39, 54, 96, 119],
   },
   {
-    canonical: "King Saul",
-    variations: ["Saul"],
+    canonical: "Saul",
+    variations: [],
     category: "character",
     llmVerify: true,
     description: "monarch of ancient Israel and Judah",
     status: "accepted",
     episodes: [
-      6, 15, 28, 33, 36, 40, 45, 53, 55, 64, 67, 73, 84, 93, 111, 113, 121, 133,
-      139,
+      6, 15, 28, 33, 36, 40, 45, 53, 55, 58, 64, 67, 73, 84, 93, 111, 113, 121,
+      133, 139, 150, 154, 156,
     ],
   },
   {
@@ -2744,14 +2744,14 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
   },
   {
-    canonical: "King Sennacherib",
-    variations: ["Sennacherib"],
+    canonical: "Sennacherib",
+    variations: [],
     category: "person",
     llmVerify: true,
     description:
       "King of Assyria from 705 to 681 BCE, known for his military campaigns and building projects",
     status: "accepted",
-    episodes: [3, 7, 13, 29, 43, 72, 88, 105, 126],
+    episodes: [3, 7, 13, 29, 43, 72, 88, 105, 126, 146, 155],
   },
   {
     canonical: "numbers",
@@ -9044,6 +9044,13 @@ export const tagVocabulary: TagDefinition[] = [
     category: "miscellaneous",
     status: "accepted",
     episodes: [9, 57, 90],
+  },
+  {
+    canonical: "Creatio ex nihilo",
+    variations: ["ex nihilo"],
+    category: "theology",
+    status: "accepted",
+    episodes: [5, 58, 59, 70, 93, 112, 115, 152, 156],
   },
 ];
 

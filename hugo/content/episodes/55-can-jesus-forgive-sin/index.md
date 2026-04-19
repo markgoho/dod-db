@@ -35,10 +35,10 @@ tags:
   - Hagar
   - Isaiah
   - Judas Iscariot
-  - King Saul
   - Maccabees
   - Mary Magdalene
   - Nazareth
+  - Saul
   - Sea of Galilee
   - Second Maccabees
   - Solomon

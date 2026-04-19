@@ -7,7 +7,7 @@ aliases:
   - /episodes/13/
 tags:
   - Jerusalem
-  - King Sennacherib
+  - Sennacherib
   - Hezekiah
   - Dead Sea
   - Arad

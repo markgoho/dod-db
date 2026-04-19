@@ -20,6 +20,7 @@ tags:
   - Athanasius of Alexandria
   - baptism
   - Catholicism
+  - Creatio ex nihilo
   - Eusebius
   - Hypostasis
   - Justin Martyr

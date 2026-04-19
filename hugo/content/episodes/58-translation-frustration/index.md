@@ -26,6 +26,7 @@ tags:
   - Michael
   - Moses
   - Univocality
+  - Creatio ex nihilo
   - Creation ex nihilo
   - divine council
   - Elijah
@@ -35,6 +36,7 @@ tags:
   - Judaism
   - Martin Luther
   - Persia
+  - Saul
   - The Reformation
   - Trinity
   - Witch of Endor

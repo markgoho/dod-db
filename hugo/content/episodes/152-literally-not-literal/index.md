@@ -22,6 +22,7 @@ tags:
   - Flood
   - Satan
   - YHWH
+  - Creatio ex nihilo
   - Creation ex nihilo
   - Daniel
   - Isaac

@@ -28,12 +28,12 @@ tags:
   - Jacob
   - King James Bible
   - King Josiah
-  - King Sennacherib
   - Laban
   - Latin Vulgate
   - Maccabees
   - Martin Luther
   - Nazareth
+  - Sennacherib
   - Seth
   - Sodom
 books:

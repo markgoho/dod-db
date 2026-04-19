@@ -23,12 +23,12 @@ tags:
   - Magi
   - Moses
   - Hagar
-  - King Saul
   - Masoretic Text
   - Paul
   - Peter
   - Philo of Alexandria
   - Satan
+  - Saul
   - Second Temple period
   - Star of Bethlehem
   - Adam

@@ -12,7 +12,7 @@ tags:
   - Eve
   - Adam
   - YHWH
-  - King Sennacherib
+  - Sennacherib
   - Ahab
   - Jerusalem
   - Tarshish

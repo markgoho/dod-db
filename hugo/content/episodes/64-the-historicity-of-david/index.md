@@ -7,7 +7,7 @@ aliases:
   - /episodes/64/
 tags:
   - David
-  - King Saul
+  - Saul
   - Jonathan
   - Philistines
   - Judah

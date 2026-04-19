@@ -13,7 +13,7 @@ tags:
   - Papias of Hierapolis
   - Sheol
   - Univocality
-  - King Saul
+  - Saul
   - etiology
   - Samuel
   - Witch of Endor

@@ -37,10 +37,10 @@ tags:
   - Esther
   - inerrancy
   - Jacob
-  - King Saul
   - Mount Ebal
   - Peter
   - Pliny the Younger
+  - Saul
   - Second Temple period
   - Ugarit
 books:

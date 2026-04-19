@@ -20,6 +20,7 @@ tags:
   - Isaiah
   - Second Temple period
   - Solomon
+  - Creatio ex nihilo
   - Daniel
   - Deutero-Isaiah
   - Deuteronomy

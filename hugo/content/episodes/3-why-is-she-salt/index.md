@@ -22,12 +22,12 @@ tags:
   - David
   - Hagar
   - Homosexuality
-  - King Sennacherib
   - Mount Ebal
   - Mount Gerizim
   - Noah
   - Purim
   - Sarah
+  - Sennacherib
   - YHWH
   - divine council
   - epigraphy

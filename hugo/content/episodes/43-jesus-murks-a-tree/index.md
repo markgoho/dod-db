@@ -14,7 +14,7 @@ tags:
   - Babylon
   - Judaism
   - Hezekiah
-  - King Sennacherib
+  - Sennacherib
   - Judah
   - Bethany
   - Second Temple period

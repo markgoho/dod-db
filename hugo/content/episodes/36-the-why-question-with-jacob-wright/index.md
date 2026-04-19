@@ -20,10 +20,10 @@ tags:
   - Esther
   - Garden of Eden
   - Jeremiah
-  - King Saul
   - Monotheism
   - Samaria
   - Samuel
+  - Saul
   - Solomon
   - Abraham
   - Ammonites

@@ -22,11 +22,11 @@ tags:
   - Mary Magdalene
   - Moses
   - Persia
+  - Saul
   - Apocrypha
   - Babylon
   - Gideon
   - Hagar
-  - King Saul
   - Pseudepigrapha
   - Sodom
   - Syria

@@ -31,10 +31,10 @@ tags:
   - Esarhaddon
   - Hell
   - Joshua
-  - King Sennacherib
   - Moab
   - Nebuchadnezzar
   - Samuel
+  - Sennacherib
   - Septuagint
 books:
   - Deuteronomy

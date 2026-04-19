@@ -12,7 +12,7 @@ tags:
   - Isaac
   - Gentiles
   - Egyptians
-  - King Saul
+  - Saul
   - Abortion
   - Acts of Paul and Thecla
   - Apocrypha

@@ -18,8 +18,8 @@ tags:
   - divine council
   - Isaiah
   - Joshua
-  - King Sennacherib
   - Philo of Alexandria
+  - Sennacherib
   - Babylon
   - David
   - YHWH

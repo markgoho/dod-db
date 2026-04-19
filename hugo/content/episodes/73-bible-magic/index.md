@@ -8,7 +8,7 @@ aliases:
 tags:
   - YHWH
   - Ketef Hinnom
-  - King Saul
+  - Saul
   - Judaism
   - Dead Sea Scrolls
   - Flavius Josephus

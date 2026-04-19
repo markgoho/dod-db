@@ -8,7 +8,7 @@ aliases:
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/154250873.mp3?sig=B45_DXJXRNLoUndpzMe9Y4-NXFjV-ROE2b6Lol09Xwk%3D
 tags:
   - Amalek
-  - King Saul
+  - Saul
   - Samuel
   - Peter
   - John
@@ -41,6 +41,7 @@ tags:
   - Univocality
   - Canaanites
   - Clement of Rome
+  - Creatio ex nihilo
   - Edom
   - Edomites
   - Flavius Josephus

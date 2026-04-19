@@ -20,11 +20,11 @@ tags:
   - Paul
   - inerrancy
   - Isaiah
-  - King Saul
   - Nebuchadnezzar
   - Peter
   - Romans
   - Satan
+  - Saul
   - Univocality
 books:
   - Jeremiah

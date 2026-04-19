@@ -16,7 +16,7 @@ tags:
   - Judaism
   - Ammonites
   - Jacob
-  - King Saul
+  - Saul
   - Leah
   - Judah
   - Moab

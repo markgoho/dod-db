@@ -19,10 +19,10 @@ tags:
   - King James Bible
   - Bathsheba
   - Jehu
-  - King Saul
   - Mary Magdalene
   - Moses
   - Samuel
+  - Saul
   - Abraham
   - Asherah
   - Assyria

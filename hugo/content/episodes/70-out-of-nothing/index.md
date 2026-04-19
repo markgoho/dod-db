@@ -7,6 +7,7 @@ aliases:
   - /episodes/70/
 tags:
   - Daniel
+  - Creatio ex nihilo
   - Apocrypha
   - Creation ex nihilo
   - Bel and the Dragon

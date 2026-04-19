@@ -16,8 +16,8 @@ tags:
   - David
   - Gilead
   - etiology
-  - King Saul
   - Samson
+  - Saul
   - Edom
   - Philistines
   - Africa

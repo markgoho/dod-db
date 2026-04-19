@@ -7,8 +7,8 @@ aliases:
   - /episodes/53/
 tags:
   - Holy Spirit
+  - Saul
   - Trinity
-  - King Saul
   - Elijah
   - King James Bible
   - Satan

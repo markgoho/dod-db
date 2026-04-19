@@ -12,6 +12,7 @@ tags:
   - Seleucid Empire
   - Luke
   - Apocrypha
+  - Creatio ex nihilo
   - Creation ex nihilo
   - Flavius Josephus
   - Judas Maccabeus
