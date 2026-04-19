@@ -6652,10 +6652,13 @@ export const tagVocabulary: TagDefinition[] = [
   {
     canonical: "Christmas",
     variations: [],
-    category: "miscellaneous",
+    category: "event",
     description:
       "Annual Christian festival celebrating Christ's birth, often associated with various traditions and beliefs",
-    status: "proposed",
+    status: "accepted",
+    episodes: [
+      37, 38, 42, 57, 69, 74, 87, 90, 91, 103, 140, 141, 143, 146, 155,
+    ],
   },
   {
     canonical: "aliens",

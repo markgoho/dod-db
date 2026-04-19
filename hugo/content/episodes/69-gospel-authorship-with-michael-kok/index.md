@@ -23,6 +23,7 @@ tags:
   - Eusebius
   - Jerome
   - Capernaum
+  - Christmas
   - Galilee
   - John the Baptist
   - Tertullian

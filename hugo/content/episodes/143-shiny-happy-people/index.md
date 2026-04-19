@@ -28,6 +28,7 @@ tags:
   - Jerusalem
   - Mount Sinai
   - Syria
+  - Christmas
   - Daniel
   - Deuteronomy
   - Herodias

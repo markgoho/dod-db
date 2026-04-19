@@ -15,6 +15,7 @@ tags:
   - Jerome
   - Moses
   - YHWH
+  - Christmas
   - David
   - Deuteronomy
   - Flavius Josephus

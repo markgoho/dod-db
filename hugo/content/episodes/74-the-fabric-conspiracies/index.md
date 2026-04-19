@@ -13,6 +13,7 @@ tags:
   - Judah
   - Deuteronomy
   - Torah
+  - Christmas
   - Flavius Josephus
   - Gilead
   - Hell

@@ -22,6 +22,7 @@ tags:
   - Paul
   - Philo of Alexandria
   - Septuagint
+  - Christmas
   - Deutero-Isaiah
   - Deuteronomy
   - Isaiah

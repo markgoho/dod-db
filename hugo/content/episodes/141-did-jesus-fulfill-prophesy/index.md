@@ -23,6 +23,7 @@ tags:
   - Herod the Great
   - Isaiah
   - baptism
+  - Christmas
   - Jeremiah
   - King James Bible
   - Luke

@@ -23,6 +23,7 @@ tags:
   - Angel
   - Annunciation
   - Augustine
+  - Christmas
   - Eusebius
   - Hell
   - Passover

@@ -15,6 +15,7 @@ tags:
   - Abortion
   - Angel
   - Beatitudes
+  - Christmas
   - Mary Magdalene
   - Omni Attributes
   - Paul

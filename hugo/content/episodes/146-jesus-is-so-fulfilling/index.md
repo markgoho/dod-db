@@ -26,6 +26,7 @@ tags:
   - Torah
   - Univocality
   - Beatitudes
+  - Christmas
   - cognitive dissonance
   - Hezekiah
   - inerrancy

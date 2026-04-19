@@ -11,6 +11,7 @@ tags:
   - Homosexuality
   - Judah
   - Atheism
+  - Christmas
   - Deconstruction
 guests:
   - Jeremy Steele

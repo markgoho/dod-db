@@ -8,6 +8,7 @@ aliases:
 tags:
   - Star of Bethlehem
   - Bethlehem
+  - Christmas
   - Magi
   - Jerusalem
   - Deism

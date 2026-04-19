@@ -10,6 +10,7 @@ tags:
   - Star of Bethlehem
   - Bethlehem
   - Jerusalem
+  - Christmas
   - Persia
   - Mary Magdalene
   - Apocrypha

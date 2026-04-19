@@ -10,6 +10,7 @@ tags:
   - Bethlehem
   - Mary Magdalene
   - Jerusalem
+  - Christmas
   - Angel
   - David
   - John the Baptist

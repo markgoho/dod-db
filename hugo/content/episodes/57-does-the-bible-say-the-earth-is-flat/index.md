@@ -14,6 +14,7 @@ tags:
   - Univocality
   - Athenagoras
   - Catholicism
+  - Christmas
   - divine council
   - Eve
   - Flood
