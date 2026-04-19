@@ -20,6 +20,7 @@ tags:
   - Judah
   - Judaism
   - Naomi
+  - Ruth
   - Sarah
   - Sheol
   - Univocality

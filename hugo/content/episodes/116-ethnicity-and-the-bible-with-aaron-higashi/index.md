@@ -30,6 +30,7 @@ tags:
   - Moses
   - Paul
   - Philistines
+  - Ruth
 books:
   - Genesis
   - Exodus

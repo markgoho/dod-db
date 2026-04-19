@@ -9,6 +9,7 @@ tags:
   - Sennacherib
   - Hezekiah
   - Naomi
+  - Ruth
   - Boaz
   - Judah
   - Jerusalem

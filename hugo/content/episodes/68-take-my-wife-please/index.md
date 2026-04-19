@@ -14,6 +14,7 @@ tags:
   - Deuteronomy
   - Boaz
   - Joseph
+  - Ruth
   - Canaan
   - Decalogue
   - Jacob

@@ -11185,6 +11185,10 @@
         "mentions": 3
       },
       {
+        "tag": "Ruth",
+        "mentions": 3
+      },
+      {
         "tag": "Canaan",
         "mentions": 1
       },
@@ -11934,6 +11938,10 @@
       },
       {
         "tag": "Naomi",
+        "mentions": 24
+      },
+      {
+        "tag": "Ruth",
         "mentions": 24
       },
       {
@@ -17242,6 +17250,10 @@
         "mentions": 1
       },
       {
+        "tag": "Ruth",
+        "mentions": 1
+      },
+      {
         "tag": "Sarah",
         "mentions": 1
       },
@@ -18445,6 +18457,10 @@
       },
       {
         "tag": "Philistines",
+        "mentions": 1
+      },
+      {
+        "tag": "Ruth",
         "mentions": 1
       }
     ],

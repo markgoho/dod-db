@@ -9052,6 +9052,16 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     episodes: [5, 58, 59, 70, 93, 112, 115, 152, 156],
   },
+  {
+    canonical: "Ruth",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "person after whom the Book of Ruth is named. She was a Moabite woman who married an Israelite, Mahlon, specifically not referring generally to the Book of Ruth",
+    status: "accepted",
+    episodes: [68, 72, 108, 116],
+  },
 ];
 
 export function getAllSearchableTerms(
