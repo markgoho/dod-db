@@ -12,9 +12,9 @@ tags:
   - Adam
   - Egyptians
   - Judah
+  - David
   - etiology
   - Eve
-  - King David
   - Midianites
   - Edomites
   - Noah

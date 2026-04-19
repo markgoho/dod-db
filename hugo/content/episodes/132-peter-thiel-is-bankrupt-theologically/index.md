@@ -8,11 +8,11 @@ aliases:
 tags:
   - Peter
   - Molek
+  - David
   - Judaism
   - Eschatology
   - Paul
   - Capernaum
-  - King David
   - King James Bible
   - Solomon
   - Stephen

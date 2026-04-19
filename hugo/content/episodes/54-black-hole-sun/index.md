@@ -26,8 +26,8 @@ tags:
   - Silas
   - Adam
   - Cornelius
+  - David
   - Holy Spirit
-  - King David
   - Melchizedek
   - Syria
   - Mark of the Beast

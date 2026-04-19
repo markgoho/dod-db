@@ -6,7 +6,7 @@ videoId: yXeCVNSmhYQ
 aliases:
   - /episodes/64/
 tags:
-  - King David
+  - David
   - King Saul
   - Jonathan
   - Philistines

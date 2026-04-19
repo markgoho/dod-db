@@ -24,6 +24,7 @@ tags:
   - Babylon
   - Bethlehem
   - Christian Nationalism
+  - David
   - divine council
   - King James Bible
   - Nineveh

@@ -9,7 +9,7 @@ tags:
   - Paul
   - Univocality
   - Goliath
-  - King David
+  - David
   - Peter
   - Samuel
   - Abraham

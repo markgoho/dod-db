@@ -15,9 +15,9 @@ tags:
   - Garden of Eden
   - Moab
   - Moses
+  - David
   - divine council
   - Judaism
-  - King David
   - Adam
   - Eve
   - Septuagint

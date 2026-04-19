@@ -11,7 +11,7 @@ tags:
   - Joshua
   - Jerusalem
   - Cherubim
-  - King David
+  - David
   - Samuel
   - Asherah
   - Jeremiah

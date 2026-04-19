@@ -25,10 +25,10 @@ tags:
   - Talmud
   - Beatitudes
   - Clement of Rome
+  - David
   - Decalogue
   - Flavius Josephus
   - John
-  - King David
   - Ten Commandments
   - Univocality
 books:

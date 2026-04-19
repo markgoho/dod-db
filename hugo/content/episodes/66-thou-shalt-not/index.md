@@ -21,11 +21,11 @@ tags:
   - Ugarit
   - Catholicism
   - Cherubim
+  - David
   - Elephantine
   - Elijah
   - Jerusalem
   - Joram
-  - King David
   - Mary Magdalene
   - Masoretic Text
   - Moses

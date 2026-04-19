@@ -13,9 +13,9 @@ tags:
   - Ammonites
   - Isaac
   - Moses
+  - David
   - Gilead
   - etiology
-  - King David
   - King Saul
   - Samson
   - Edom

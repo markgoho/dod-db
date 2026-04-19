@@ -18,7 +18,7 @@ tags:
   - inerrancy
   - Joshua
   - Pontius Pilate
-  - King David
+  - David
   - King James Bible
   - Moses
   - Samuel

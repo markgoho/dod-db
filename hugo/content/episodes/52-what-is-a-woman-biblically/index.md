@@ -7,7 +7,7 @@ aliases:
   - /episodes/52/
 tags:
   - Goliath
-  - King David
+  - David
   - Adam
   - Elhanan son of Jair
   - Philistines

@@ -686,16 +686,17 @@ export const tagVocabulary: TagDefinition[] = [
     ],
   },
   {
-    canonical: "King David",
-    variations: ["David"],
+    canonical: "David",
+    variations: ["King David"],
     category: "character",
     llmVerify: true,
     description: "King David of Israel",
     status: "accepted",
     episodes: [
-      3, 6, 7, 10, 13, 18, 19, 26, 30, 37, 46, 48, 52, 54, 55, 57, 64, 67, 72,
-      78, 80, 83, 86, 87, 88, 93, 96, 110, 111, 116, 118, 121, 123, 125, 127,
-      129, 132, 133, 139,
+      3, 6, 7, 10, 13, 15, 18, 26, 30, 36, 37, 40, 41, 46, 48, 52, 54, 55, 56,
+      64, 66, 67, 69, 72, 78, 80, 83, 84, 86, 87, 88, 93, 96, 105, 110, 111,
+      116, 118, 121, 123, 125, 127, 129, 132, 133, 139, 141, 145, 148, 150, 154,
+      155, 156,
     ],
   },
   {

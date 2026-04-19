@@ -21,7 +21,7 @@ tags:
   - King Sennacherib
   - Philo of Alexandria
   - Babylon
-  - King David
+  - David
   - YHWH
 books:
   - Exodus

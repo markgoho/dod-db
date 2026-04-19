@@ -32,9 +32,9 @@ tags:
   - Moabites
   - Syria
   - Daniel
+  - David
   - Jeremiah
   - Jeroboam
-  - King David
   - Leningrad Codex
   - Monotheism
   - Moses

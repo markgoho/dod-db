@@ -24,6 +24,7 @@ tags:
   - Africa
   - Balaam
   - Canaanites
+  - David
   - Deuteronomy
   - etiology
   - Gabriel

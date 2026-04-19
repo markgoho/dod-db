@@ -28,10 +28,10 @@ tags:
   - Abraham
   - Baruch
   - Daniel
+  - David
   - Enoch
   - Flavius Josephus
   - Flood
-  - King David
   - King James Bible
   - Pseudepigrapha
   - Satan

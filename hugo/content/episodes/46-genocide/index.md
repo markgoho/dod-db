@@ -32,8 +32,8 @@ tags:
   - Origen
   - Balaam
   - circumcision
+  - David
   - Deutero-Isaiah
-  - King David
   - King Josiah
   - Luke
   - Midianites

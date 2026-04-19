@@ -29,9 +29,9 @@ tags:
   - Theophilus
   - Abraham
   - Clement of Alexandria
+  - David
   - Easter
   - Gnostic
-  - King David
   - Latin Vulgate
   - Moses
   - Trinity

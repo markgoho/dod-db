@@ -21,10 +21,10 @@ tags:
   - King James Bible
   - Abraham
   - Amorites
+  - David
   - Dead Sea Scrolls
   - Hagar
   - Homosexuality
-  - King David
   - Qumran
   - Samson
   - Septuagint

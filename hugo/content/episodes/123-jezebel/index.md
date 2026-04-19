@@ -30,13 +30,13 @@ tags:
   - Antiochus IV Epiphanes
   - Balaam
   - Beelzebul
+  - David
   - Dead Sea Scrolls
   - Deuteronomy
   - Enoch
   - Flavius Josephus
   - Hell
   - Jericho
-  - King David
   - Matthew
   - Qumran
   - Samuel

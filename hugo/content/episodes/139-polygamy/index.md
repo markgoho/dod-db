@@ -7,7 +7,7 @@ aliases:
   - /episodes/139/
 tags:
   - Solomon
-  - King David
+  - David
   - Jeroboam
   - Rehoboam
   - Paul

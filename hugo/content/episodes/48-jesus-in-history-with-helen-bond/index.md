@@ -21,6 +21,7 @@ tags:
   - Isaiah
   - Saint Titus
   - Second Coming
+  - David
   - Easter
   - Eschatology
   - Eusebius
@@ -28,7 +29,6 @@ tags:
   - Gnostic
   - Judaism
   - Junia
-  - King David
   - Nazareth
   - Pliny the Younger
   - Septuagint

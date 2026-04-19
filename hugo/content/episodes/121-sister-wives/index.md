@@ -11,7 +11,7 @@ tags:
   - Isaac
   - Sarah
   - Philistines
-  - King David
+  - David
   - Rachel
   - YHWH
   - Laban

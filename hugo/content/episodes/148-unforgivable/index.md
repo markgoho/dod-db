@@ -19,6 +19,7 @@ tags:
   - Mary Magdalene
   - Apocrypha
   - Baal
+  - David
   - Gospel of Thomas
   - Hell
   - Jerusalem

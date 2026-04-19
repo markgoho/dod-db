@@ -436,15 +436,15 @@
         "mentions": 2
       },
       {
+        "tag": "David",
+        "mentions": 2
+      },
+      {
         "tag": "Hagar",
         "mentions": 2
       },
       {
         "tag": "Homosexuality",
-        "mentions": 2
-      },
-      {
-        "tag": "King David",
         "mentions": 2
       },
       {
@@ -883,7 +883,7 @@
         "mentions": 10
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 7
       },
       {
@@ -1180,15 +1180,15 @@
         "mentions": 2
       },
       {
+        "tag": "David",
+        "mentions": 2
+      },
+      {
         "tag": "Jeremiah",
         "mentions": 2
       },
       {
         "tag": "Jeroboam",
-        "mentions": 2
-      },
-      {
-        "tag": "King David",
         "mentions": 2
       },
       {
@@ -1597,15 +1597,15 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Flavius Josephus",
         "mentions": 1
       },
       {
         "tag": "Jerusalem",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -2083,11 +2083,11 @@
         "mentions": 6
       },
       {
-        "tag": "Judah",
+        "tag": "David",
         "mentions": 6
       },
       {
-        "tag": "King David",
+        "tag": "Judah",
         "mentions": 6
       },
       {
@@ -2492,6 +2492,10 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Enoch",
         "mentions": 1
       },
@@ -2501,10 +2505,6 @@
       },
       {
         "tag": "Flood",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -2956,15 +2956,15 @@
         "mentions": 6
       },
       {
+        "tag": "David",
+        "mentions": 5
+      },
+      {
         "tag": "divine council",
         "mentions": 5
       },
       {
         "tag": "Judaism",
-        "mentions": 5
-      },
-      {
-        "tag": "King David",
         "mentions": 5
       },
       {
@@ -4352,6 +4352,10 @@
         "mentions": 2
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "forgery",
         "mentions": 1
       },
@@ -4361,10 +4365,6 @@
       },
       {
         "tag": "Judas Iscariot",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -5065,6 +5065,10 @@
       },
       {
         "tag": "Cyrus the Great",
+        "mentions": 1
+      },
+      {
+        "tag": "David",
         "mentions": 1
       },
       {
@@ -5940,7 +5944,7 @@
         "mentions": 24
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 12
       },
       {
@@ -6213,6 +6217,10 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Dead Sea Scrolls",
         "mentions": 1
       },
@@ -6230,10 +6238,6 @@
       },
       {
         "tag": "Joshua",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -6631,7 +6635,7 @@
         "mentions": 14
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 8
       },
       {
@@ -6819,6 +6823,10 @@
         "mentions": 2
       },
       {
+        "tag": "David",
+        "mentions": 2
+      },
+      {
         "tag": "Flood",
         "mentions": 2
       },
@@ -6828,10 +6836,6 @@
       },
       {
         "tag": "Islam",
-        "mentions": 2
-      },
-      {
-        "tag": "King David",
         "mentions": 2
       },
       {
@@ -7758,11 +7762,11 @@
         "mentions": 1
       },
       {
-        "tag": "Deutero-Isaiah",
+        "tag": "David",
         "mentions": 1
       },
       {
-        "tag": "King David",
+        "tag": "Deutero-Isaiah",
         "mentions": 1
       },
       {
@@ -7985,6 +7989,10 @@
         "mentions": 2
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Easter",
         "mentions": 1
       },
@@ -8010,10 +8018,6 @@
       },
       {
         "tag": "Junia",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -8451,7 +8455,7 @@
         "mentions": 26
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 14
       },
       {
@@ -8838,11 +8842,11 @@
         "mentions": 2
       },
       {
-        "tag": "Holy Spirit",
+        "tag": "David",
         "mentions": 2
       },
       {
-        "tag": "King David",
+        "tag": "Holy Spirit",
         "mentions": 2
       },
       {
@@ -9001,7 +9005,7 @@
         "mentions": 4
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 3
       },
       {
@@ -9250,6 +9254,10 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Ham",
         "mentions": 1
       },
@@ -9271,10 +9279,6 @@
       },
       {
         "tag": "Judah",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -10599,7 +10603,7 @@
     "transcriptPath": "data/transcripts/2024-06-24-episode-64-june-24-2024-the-historicity-of-david.txt",
     "tags": [
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 71
       },
       {
@@ -10932,6 +10936,10 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Elephantine",
         "mentions": 1
       },
@@ -10945,10 +10953,6 @@
       },
       {
         "tag": "Joram",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -11033,7 +11037,7 @@
     "transcriptPath": "data/transcripts/2024-07-15-episode-67-july-15-2024-prophets-kings-and-terrible-men-with-aaron-higashi.txt",
     "tags": [
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 83
       },
       {
@@ -11394,15 +11398,15 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Easter",
         "mentions": 1
       },
       {
         "tag": "Gnostic",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -12003,15 +12007,15 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Hesed",
         "mentions": 1
       },
       {
         "tag": "Jonah",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -12761,6 +12765,10 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Eve",
         "mentions": 1
       },
@@ -12774,10 +12782,6 @@
       },
       {
         "tag": "Judaism",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -12907,7 +12911,7 @@
         "mentions": 8
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 6
       },
       {
@@ -13328,7 +13332,7 @@
     "transcriptPath": "data/transcripts/2024-11-04-episode-83-november-4-2024-the-god-forsaken-psalm.txt",
     "tags": [
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 17
       },
       {
@@ -13525,6 +13529,10 @@
       },
       {
         "tag": "Canaanites",
+        "mentions": 1
+      },
+      {
+        "tag": "David",
         "mentions": 1
       },
       {
@@ -13814,7 +13822,7 @@
         "mentions": 4
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 3
       },
       {
@@ -13973,7 +13981,7 @@
         "mentions": 12
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 8
       },
       {
@@ -14206,6 +14214,10 @@
       },
       {
         "tag": "Christian Nationalism",
+        "mentions": 1
+      },
+      {
+        "tag": "David",
         "mentions": 1
       },
       {
@@ -14979,7 +14991,7 @@
         "mentions": 6
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 4
       },
       {
@@ -15475,15 +15487,15 @@
         "mentions": 2
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Herod the Great",
         "mentions": 1
       },
       {
         "tag": "Islam",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -16913,7 +16925,7 @@
         "mentions": 1
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 1
       },
       {
@@ -17535,6 +17547,10 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Decalogue",
         "mentions": 1
       },
@@ -17544,10 +17560,6 @@
       },
       {
         "tag": "John",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -17667,15 +17679,15 @@
         "mentions": 8
       },
       {
+        "tag": "David",
+        "mentions": 6
+      },
+      {
         "tag": "Gilead",
         "mentions": 6
       },
       {
         "tag": "etiology",
-        "mentions": 5
-      },
-      {
-        "tag": "King David",
         "mentions": 5
       },
       {
@@ -18410,15 +18422,15 @@
         "mentions": 4
       },
       {
+        "tag": "David",
+        "mentions": 3
+      },
+      {
         "tag": "etiology",
         "mentions": 3
       },
       {
         "tag": "Eve",
-        "mentions": 3
-      },
-      {
-        "tag": "King David",
         "mentions": 3
       },
       {
@@ -18893,6 +18905,10 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Isaac",
         "mentions": 1
       },
@@ -18906,10 +18922,6 @@
       },
       {
         "tag": "Judaism",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -19389,7 +19401,7 @@
         "mentions": 14
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 10
       },
       {
@@ -19775,6 +19787,10 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Dead Sea Scrolls",
         "mentions": 1
       },
@@ -19796,10 +19812,6 @@
       },
       {
         "tag": "Jericho",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -20099,7 +20111,7 @@
     "transcriptPath": "data/transcripts/2025-08-25-holy-sex-work.txt",
     "tags": [
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 19
       },
       {
@@ -20502,7 +20514,7 @@
         "mentions": 5
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 3
       },
       {
@@ -20822,6 +20834,10 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Dead Sea Scrolls",
         "mentions": 1
       },
@@ -20831,10 +20847,6 @@
       },
       {
         "tag": "Homosexuality",
-        "mentions": 1
-      },
-      {
-        "tag": "King David",
         "mentions": 1
       },
       {
@@ -21232,6 +21244,10 @@
         "mentions": 10
       },
       {
+        "tag": "David",
+        "mentions": 6
+      },
+      {
         "tag": "Judaism",
         "mentions": 6
       },
@@ -21245,10 +21261,6 @@
       },
       {
         "tag": "Capernaum",
-        "mentions": 3
-      },
-      {
-        "tag": "King David",
         "mentions": 3
       },
       {
@@ -21399,11 +21411,11 @@
         "mentions": 6
       },
       {
-        "tag": "Decalogue",
+        "tag": "David",
         "mentions": 5
       },
       {
-        "tag": "King David",
+        "tag": "Decalogue",
         "mentions": 5
       },
       {
@@ -22502,7 +22514,7 @@
         "mentions": 23
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 18
       },
       {
@@ -22884,7 +22896,7 @@
         "mentions": 7
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 5
       },
       {
@@ -23502,15 +23514,15 @@
         "mentions": 2
       },
       {
+        "tag": "David",
+        "mentions": 2
+      },
+      {
         "tag": "Elijah",
         "mentions": 2
       },
       {
         "tag": "Isaiah",
-        "mentions": 2
-      },
-      {
-        "tag": "King David",
         "mentions": 2
       },
       {
@@ -24045,6 +24057,10 @@
         "mentions": 1
       },
       {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
         "tag": "Gospel of Thomas",
         "mentions": 1
       },
@@ -24314,7 +24330,7 @@
         "mentions": 4
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 4
       },
       {
@@ -24941,7 +24957,7 @@
         "mentions": 3
       },
       {
-        "tag": "King David",
+        "tag": "David",
         "mentions": 2
       },
       {
@@ -25095,11 +25111,11 @@
         "mentions": 3
       },
       {
-        "tag": "Deuteronomy",
+        "tag": "David",
         "mentions": 2
       },
       {
-        "tag": "King David",
+        "tag": "Deuteronomy",
         "mentions": 2
       },
       {
@@ -25311,11 +25327,11 @@
         "mentions": 4
       },
       {
-        "tag": "James",
+        "tag": "David",
         "mentions": 4
       },
       {
-        "tag": "King David",
+        "tag": "James",
         "mentions": 4
       },
       {

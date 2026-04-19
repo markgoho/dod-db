@@ -11,7 +11,7 @@ tags:
   - Moses
   - Ten Commandments
   - Onan
-  - King David
+  - David
   - child sacrifice
   - King Saul
   - Eglon

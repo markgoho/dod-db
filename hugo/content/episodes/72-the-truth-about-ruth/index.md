@@ -22,9 +22,9 @@ tags:
   - King Josiah
   - Arad
   - Babylon
+  - David
   - Hesed
   - Jonah
-  - King David
   - King James Bible
   - Leah
   - Mary Magdalene

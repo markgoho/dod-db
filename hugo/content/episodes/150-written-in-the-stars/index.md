@@ -18,7 +18,7 @@ tags:
   - Gnostic
   - Joseph
   - Babylon
-  - King David
+  - David
   - Isaiah
   - Magi
   - Moses

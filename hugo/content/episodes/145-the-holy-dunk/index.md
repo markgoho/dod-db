@@ -16,9 +16,9 @@ tags:
   - Nazareth
   - Galilee
   - Canaan
+  - David
   - Elijah
   - Isaiah
-  - King David
   - Moses
   - Paul
   - Abortion

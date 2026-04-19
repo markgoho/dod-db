@@ -21,8 +21,8 @@ tags:
   - Matthew
   - Papias of Hierapolis
   - Clement of Alexandria
+  - David
   - James
-  - King David
   - Philip
   - Cain
   - Gaza

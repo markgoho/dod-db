@@ -7,7 +7,7 @@ aliases:
   - /episodes/36/
 tags:
   - Judah
-  - King David
+  - David
   - YHWH
   - Jacob
   - Jerusalem

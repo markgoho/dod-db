@@ -13,9 +13,9 @@ tags:
   - Ten Commandments
   - Decalogue
   - Nero
+  - David
   - Herod the Great
   - Islam
-  - King David
   - Matthew
   - Southern Baptist Convention
 books:

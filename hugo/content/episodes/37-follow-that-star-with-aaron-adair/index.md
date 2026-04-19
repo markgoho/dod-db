@@ -22,12 +22,12 @@ tags:
   - Adam
   - Babylon
   - Catholicism
+  - David
   - Dead Sea Scrolls
   - Herod the Great
   - Isaiah
   - Jacob
   - Joshua
-  - King David
   - King James Bible
   - Mary Magdalene
   - Nephilim

@@ -6,7 +6,7 @@ videoId: vZqmxICxUh8
 aliases:
   - /episodes/83/
 tags:
-  - King David
+  - David
   - Septuagint
   - Crucifixion
   - Jerusalem

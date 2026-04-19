@@ -24,13 +24,13 @@ tags:
   - Torah
   - Assyria
   - Canaanites
+  - David
   - Ham
   - Isaiah
   - Jeremiah
   - Joseph
   - Joshua
   - Judah
-  - King David
   - Lamech
   - Nephilim
   - Syria

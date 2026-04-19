@@ -19,9 +19,9 @@ tags:
   - Moabites
   - Samaritans
   - Adam
+  - David
   - Hagar
   - Homosexuality
-  - King David
   - King Sennacherib
   - Mount Ebal
   - Mount Gerizim

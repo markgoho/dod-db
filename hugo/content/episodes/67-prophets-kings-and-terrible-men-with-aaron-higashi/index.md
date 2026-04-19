@@ -6,7 +6,7 @@ videoId: lKaNTTA4gWw
 aliases:
   - /episodes/67/
 tags:
-  - King David
+  - David
   - King Saul
   - Jonathan
   - Moses

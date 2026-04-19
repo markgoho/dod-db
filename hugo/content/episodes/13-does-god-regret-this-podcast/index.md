@@ -11,8 +11,8 @@ tags:
   - Hezekiah
   - Dead Sea
   - Arad
+  - David
   - Judah
-  - King David
   - YHWH
   - Goliath
   - Nineveh

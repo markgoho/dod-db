@@ -12,7 +12,7 @@ tags:
   - Galilee
   - John
   - Magi
-  - King David
+  - David
   - Pontius Pilate
   - Annunciation
   - baptism

@@ -14,7 +14,7 @@ tags:
   - YHWH
   - Esther
   - Jacob
-  - King David
+  - David
   - King Saul
   - Samuel
   - Sukkot

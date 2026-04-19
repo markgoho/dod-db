@@ -10,7 +10,7 @@ tags:
   - Bethlehem
   - Mary Magdalene
   - Jerusalem
-  - King David
+  - David
   - John the Baptist
   - Magi
   - Septuagint

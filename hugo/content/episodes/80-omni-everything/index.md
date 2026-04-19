@@ -10,7 +10,7 @@ tags:
   - Edom
   - Gentiles
   - Adam
-  - King David
+  - David
   - Council of Jerusalem
   - Paul
   - Judah

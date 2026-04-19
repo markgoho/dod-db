@@ -9,7 +9,7 @@ tags:
   - King Saul
   - Samuel
   - Philistines
-  - King David
+  - David
   - Witch of Endor
   - Catholicism
   - YHWH

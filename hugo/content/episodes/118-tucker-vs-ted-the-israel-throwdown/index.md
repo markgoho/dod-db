@@ -24,11 +24,11 @@ tags:
   - Univocality
   - Christian Nationalism
   - Daniel
+  - David
   - Isaac
   - Ishmael
   - Joshua
   - Judaism
-  - King David
   - Nineveh
   - Second Coming
   - Terah

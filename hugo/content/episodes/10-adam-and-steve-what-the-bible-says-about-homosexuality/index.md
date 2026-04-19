@@ -19,9 +19,9 @@ tags:
   - etiology
   - Eve
   - Book of Enoch
+  - David
   - Flavius Josephus
   - Jerusalem
-  - King David
   - Luke
   - Pseudepigrapha
   - Septuagint

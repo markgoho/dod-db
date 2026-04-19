@@ -14,6 +14,7 @@ tags:
   - Homosexuality
   - Second Coming
   - Cyrus the Great
+  - David
   - Isaiah
   - Islam
   - YHWH

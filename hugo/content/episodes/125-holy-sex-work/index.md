@@ -6,7 +6,7 @@ videoId: y60G2r7J8vw
 aliases:
   - /episodes/125/
 tags:
-  - King David
+  - David
   - Homosexuality
   - Goliath
   - King James Bible

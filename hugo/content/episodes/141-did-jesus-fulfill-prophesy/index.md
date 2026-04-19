@@ -14,7 +14,7 @@ tags:
   - Jerusalem
   - Paul
   - Septuagint
-  - King David
+  - David
   - Syria
   - Judah
   - Romans

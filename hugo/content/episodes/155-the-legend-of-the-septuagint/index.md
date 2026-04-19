@@ -15,8 +15,8 @@ tags:
   - Jerome
   - Moses
   - YHWH
+  - David
   - Deuteronomy
-  - King David
   - Masoretic Text
   - Philo of Alexandria
   - Rachel

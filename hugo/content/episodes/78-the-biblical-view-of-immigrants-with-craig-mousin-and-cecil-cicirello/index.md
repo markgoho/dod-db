@@ -11,11 +11,11 @@ tags:
   - Ten Commandments
   - cognitive dissonance
   - Adam
+  - David
   - Eve
   - Jerusalem
   - Joseph
   - Judaism
-  - King David
   - Paul
   - Prophetic Critique
   - Protestantism

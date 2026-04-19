@@ -9,8 +9,8 @@ tags:
   - Judah
   - Baal
   - Deuteronomy
+  - David
   - Decalogue
-  - King David
   - Samaria
   - Ten Commandments
   - Paul

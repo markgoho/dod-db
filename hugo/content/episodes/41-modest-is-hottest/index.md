@@ -18,10 +18,10 @@ tags:
   - Joshua
   - King James Bible
   - Africa
+  - David
   - Flood
   - Hell
   - Islam
-  - King David
   - Peter
   - Abigail
   - Adam

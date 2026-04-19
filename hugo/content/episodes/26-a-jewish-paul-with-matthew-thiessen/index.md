@@ -17,10 +17,10 @@ tags:
   - Philo of Alexandria
   - Rapture
   - Trinity
+  - David
   - forgery
   - Hermeneia
   - Judas Iscariot
-  - King David
   - Maccabees
   - Saint Titus
   - Solomon
