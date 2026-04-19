@@ -32,6 +32,7 @@ books:
   - 1 Samuel
 guests:
   - Aaron Higashi
+episodeTopic: 1 and 2 Samuel
 draft: false
 ---
 

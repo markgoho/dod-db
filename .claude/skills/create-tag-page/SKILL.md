@@ -94,7 +94,11 @@ featuredItems:
 
 - Select 4 substantive quotes, not passing mentions.
 - Prefer variety across episodes and angles.
+- Choose quotes that are shareable on social media: short enough to stand alone, vivid in wording, and easy to understand without long setup.
+- Each quote should reveal something specific, surprising, or especially clarifying about the topic itself, not merely mention it in passing or discuss a loosely related issue.
+- Avoid filler quotes, throat-clearing, or quotes whose relevance depends on too much surrounding context.
 - Use full speaker names.
+- For each chosen quote, provide a short written justification in your response explaining why it earned a spot: what it reveals about the topic, why it is notable, and why it is stronger than nearby alternatives.
 - Each quote must include:
   - `text`
   - `speaker`
@@ -174,7 +178,8 @@ After the build succeeds, do one short editorial review of the generated page it
 
 Check for:
 
-- weak or filler quotes that do not clearly illuminate the topic
+- weak, filler, or non-shareable quotes that do not clearly illuminate the topic
+- quotes that are relevant but not specific or noteworthy enough to justify featuring on the page
 - aliases that are mechanical or not actually useful search targets
 - featured items that are merely acceptable instead of the strongest available choices
 - any missed direct-match verified segment that should have been featured first

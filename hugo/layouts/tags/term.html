@@ -27,7 +27,7 @@
       {{ if eq .type "segment" }}
         {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" .episodeNumber) 0 }}
         {{ if $featuredEpisodePage }}
-          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "overrides" (dict "eyebrow" "Featured segment" "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentAnchor)))) }}
+          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" (printf "Segment · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentAnchor)))) }}
         {{ end }}
       {{ else if eq .type "episode" }}
         {{ $featuredEpisodeNumber := int .number }}
