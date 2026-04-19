@@ -47,10 +47,6 @@
         "mentions": 3
       },
       {
-        "tag": "Cherubim",
-        "mentions": 3
-      },
-      {
         "tag": "divine council",
         "mentions": 3
       },
@@ -424,6 +420,10 @@
         "mentions": 3
       },
       {
+        "tag": "Angel",
+        "mentions": 3
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 3
       },
@@ -607,6 +607,10 @@
       {
         "tag": "Athanasius of Alexandria",
         "mentions": 4
+      },
+      {
+        "tag": "Angel",
+        "mentions": 3
       },
       {
         "tag": "Arius",
@@ -797,6 +801,10 @@
       {
         "tag": "Mary Magdalene",
         "mentions": 2
+      },
+      {
+        "tag": "Angel",
+        "mentions": 1
       },
       {
         "tag": "Athanasius of Alexandria",
@@ -1178,6 +1186,10 @@
       {
         "tag": "Ugarit",
         "mentions": 4
+      },
+      {
+        "tag": "Angel",
+        "mentions": 3
       },
       {
         "tag": "Dead Sea",
@@ -1990,6 +2002,10 @@
         "mentions": 3
       },
       {
+        "tag": "Angel",
+        "mentions": 2
+      },
+      {
         "tag": "source criticism",
         "mentions": 2
       },
@@ -2316,6 +2332,10 @@
       {
         "tag": "Torah",
         "mentions": 3
+      },
+      {
+        "tag": "Demon",
+        "mentions": 2
       },
       {
         "tag": "Jacob",
@@ -2716,6 +2736,10 @@
         "mentions": 1
       },
       {
+        "tag": "Demon",
+        "mentions": 1
+      },
+      {
         "tag": "Gospel of Thomas",
         "mentions": 1
       },
@@ -2816,6 +2840,10 @@
         "mentions": 3
       },
       {
+        "tag": "Angel",
+        "mentions": 2
+      },
+      {
         "tag": "Hell",
         "mentions": 2
       },
@@ -2837,6 +2865,10 @@
       },
       {
         "tag": "Decalogue",
+        "mentions": 1
+      },
+      {
+        "tag": "Demon",
         "mentions": 1
       },
       {
@@ -2954,6 +2986,10 @@
       {
         "tag": "Balaam",
         "mentions": 49
+      },
+      {
+        "tag": "Angel",
+        "mentions": 28
       },
       {
         "tag": "YHWH",
@@ -3230,6 +3266,10 @@
       {
         "tag": "Second Temple period",
         "mentions": 3
+      },
+      {
+        "tag": "Angel",
+        "mentions": 2
       },
       {
         "tag": "Isaiah",
@@ -4136,6 +4176,10 @@
         "mentions": 2
       },
       {
+        "tag": "Demon",
+        "mentions": 1
+      },
+      {
         "tag": "Judah",
         "mentions": 1
       },
@@ -4505,6 +4549,10 @@
         "mentions": 2
       },
       {
+        "tag": "Angel",
+        "mentions": 2
+      },
+      {
         "tag": "etiology",
         "mentions": 2
       },
@@ -4635,6 +4683,10 @@
     "transcriptPath": "data/transcripts/2023-10-16-episode-28-october-16-2023-angels-and-demons.txt",
     "tags": [
       {
+        "tag": "Angel",
+        "mentions": 23
+      },
+      {
         "tag": "Judaism",
         "mentions": 14
       },
@@ -4651,11 +4703,11 @@
         "mentions": 8
       },
       {
-        "tag": "Beelzebul",
-        "mentions": 6
+        "tag": "Demon",
+        "mentions": 7
       },
       {
-        "tag": "Cherubim",
+        "tag": "Beelzebul",
         "mentions": 6
       },
       {
@@ -4975,10 +5027,6 @@
         "mentions": 1
       },
       {
-        "tag": "Cherubim",
-        "mentions": 1
-      },
-      {
         "tag": "Peter",
         "mentions": 1
       },
@@ -5200,10 +5248,6 @@
       },
       {
         "tag": "Baal",
-        "mentions": 3
-      },
-      {
-        "tag": "Cherubim",
         "mentions": 3
       },
       {
@@ -5520,12 +5564,20 @@
         "mentions": 10
       },
       {
+        "tag": "Angel",
+        "mentions": 7
+      },
+      {
         "tag": "Isaac",
         "mentions": 7
       },
       {
         "tag": "Gentiles",
         "mentions": 5
+      },
+      {
+        "tag": "Demon",
+        "mentions": 2
       },
       {
         "tag": "Egyptians",
@@ -6197,6 +6249,10 @@
         "mentions": 4
       },
       {
+        "tag": "Angel",
+        "mentions": 3
+      },
+      {
         "tag": "Easter",
         "mentions": 2
       },
@@ -6489,6 +6545,10 @@
       },
       {
         "tag": "Anatolia",
+        "mentions": 2
+      },
+      {
+        "tag": "Angel",
         "mentions": 2
       },
       {
@@ -7017,6 +7077,10 @@
       },
       {
         "tag": "Abraham",
+        "mentions": 10
+      },
+      {
+        "tag": "Angel",
         "mentions": 10
       },
       {
@@ -8266,6 +8330,10 @@
         "mentions": 5
       },
       {
+        "tag": "Demon",
+        "mentions": 4
+      },
+      {
         "tag": "Easter",
         "mentions": 4
       },
@@ -8667,6 +8735,10 @@
         "mentions": 5
       },
       {
+        "tag": "Demon",
+        "mentions": 3
+      },
+      {
         "tag": "Elijah",
         "mentions": 3
       },
@@ -9009,6 +9081,10 @@
         "mentions": 8
       },
       {
+        "tag": "Angel",
+        "mentions": 7
+      },
+      {
         "tag": "Capernaum",
         "mentions": 7
       },
@@ -9082,6 +9158,10 @@
       },
       {
         "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Demon",
         "mentions": 1
       },
       {
@@ -9589,6 +9669,10 @@
       },
       {
         "tag": "Adam",
+        "mentions": 2
+      },
+      {
+        "tag": "Angel",
         "mentions": 2
       },
       {
@@ -10187,6 +10271,10 @@
         "mentions": 1
       },
       {
+        "tag": "Angel",
+        "mentions": 1
+      },
+      {
         "tag": "Babylon",
         "mentions": 1
       },
@@ -10291,6 +10379,10 @@
       {
         "tag": "Flood",
         "mentions": 12
+      },
+      {
+        "tag": "Angel",
+        "mentions": 10
       },
       {
         "tag": "Daniel",
@@ -10522,6 +10614,10 @@
         "mentions": 19
       },
       {
+        "tag": "Angel",
+        "mentions": 12
+      },
+      {
         "tag": "Abraham",
         "mentions": 11
       },
@@ -10732,6 +10828,10 @@
       },
       {
         "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Angel",
         "mentions": 1
       },
       {
@@ -10989,10 +11089,6 @@
       },
       {
         "tag": "Catholicism",
-        "mentions": 1
-      },
-      {
-        "tag": "Cherubim",
         "mentions": 1
       },
       {
@@ -11648,6 +11744,10 @@
         "mentions": 8
       },
       {
+        "tag": "Angel",
+        "mentions": 7
+      },
+      {
         "tag": "Habakkuk",
         "mentions": 7
       },
@@ -11841,6 +11941,10 @@
       {
         "tag": "Paul",
         "mentions": 5
+      },
+      {
+        "tag": "Angel",
+        "mentions": 4
       },
       {
         "tag": "King James Bible",
@@ -12047,6 +12151,10 @@
       {
         "tag": "Tamar",
         "mentions": 7
+      },
+      {
+        "tag": "Angel",
+        "mentions": 6
       },
       {
         "tag": "Assyria",
@@ -13165,6 +13273,10 @@
         "mentions": 3
       },
       {
+        "tag": "Demon",
+        "mentions": 2
+      },
+      {
         "tag": "Flood",
         "mentions": 2
       },
@@ -13440,6 +13552,10 @@
         "mentions": 17
       },
       {
+        "tag": "Garden Tomb",
+        "mentions": 15
+      },
+      {
         "tag": "Septuagint",
         "mentions": 13
       },
@@ -13563,6 +13679,10 @@
     "processedAt": "2026-01-18T16:44:38.019Z",
     "transcriptPath": "data/transcripts/2024-11-11-episode-84-november-11-2024-the-demon-haunted-bible.txt",
     "tags": [
+      {
+        "tag": "Demon",
+        "mentions": 27
+      },
       {
         "tag": "Hell",
         "mentions": 9
@@ -13741,7 +13861,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 84
+    "episodeNumber": 84,
+    "episodeTopic": "Demonology"
   },
   {
     "videoId": "ueEDfCqjPYs",
@@ -14083,6 +14204,10 @@
       {
         "tag": "Jerusalem",
         "mentions": 12
+      },
+      {
+        "tag": "Angel",
+        "mentions": 9
       },
       {
         "tag": "David",
@@ -14775,6 +14900,10 @@
         "mentions": 1
       },
       {
+        "tag": "Angel",
+        "mentions": 1
+      },
+      {
         "tag": "Beatitudes",
         "mentions": 1
       },
@@ -14963,6 +15092,10 @@
       },
       {
         "tag": "Abraham",
+        "mentions": 2
+      },
+      {
+        "tag": "Angel",
         "mentions": 2
       },
       {
@@ -15487,6 +15620,10 @@
       },
       {
         "tag": "Ammonites",
+        "mentions": 1
+      },
+      {
+        "tag": "Angel",
         "mentions": 1
       },
       {
@@ -16707,6 +16844,10 @@
     "transcriptPath": "data/transcripts/2025-03-31-episode-104-march-31-2025-hey-jude.txt",
     "tags": [
       {
+        "tag": "Angel",
+        "mentions": 14
+      },
+      {
         "tag": "Enoch",
         "mentions": 12
       },
@@ -17785,6 +17926,10 @@
       {
         "tag": "etiology",
         "mentions": 5
+      },
+      {
+        "tag": "Demon",
+        "mentions": 3
       },
       {
         "tag": "Samson",
@@ -19363,6 +19508,10 @@
         "mentions": 4
       },
       {
+        "tag": "Angel",
+        "mentions": 3
+      },
+      {
         "tag": "Augustine",
         "mentions": 3
       },
@@ -19408,10 +19557,6 @@
       },
       {
         "tag": "Assyria",
-        "mentions": 1
-      },
-      {
-        "tag": "Cherubim",
         "mentions": 1
       },
       {
@@ -19923,6 +20068,10 @@
         "mentions": 1
       },
       {
+        "tag": "Demon",
+        "mentions": 1
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 1
       },
@@ -20068,6 +20217,10 @@
       {
         "tag": "Protestantism",
         "mentions": 3
+      },
+      {
+        "tag": "Angel",
+        "mentions": 2
       },
       {
         "tag": "Asherah",
@@ -20261,6 +20414,10 @@
       {
         "tag": "Septuagint",
         "mentions": 8
+      },
+      {
+        "tag": "Angel",
+        "mentions": 6
       },
       {
         "tag": "Dead Sea Scrolls",
@@ -20505,6 +20662,10 @@
         "mentions": 2
       },
       {
+        "tag": "Angel",
+        "mentions": 1
+      },
+      {
         "tag": "Arad",
         "mentions": 1
       },
@@ -20640,10 +20801,6 @@
       {
         "tag": "Jerusalem",
         "mentions": 7
-      },
-      {
-        "tag": "Cherubim",
-        "mentions": 5
       },
       {
         "tag": "David",
@@ -20908,6 +21065,10 @@
       {
         "tag": "Gideon",
         "mentions": 72
+      },
+      {
+        "tag": "Angel",
+        "mentions": 18
       },
       {
         "tag": "Baal",
@@ -21909,6 +22070,10 @@
         "mentions": 3
       },
       {
+        "tag": "Angel",
+        "mentions": 2
+      },
+      {
         "tag": "Flavius Josephus",
         "mentions": 2
       },
@@ -22131,6 +22296,10 @@
         "mentions": 2
       },
       {
+        "tag": "Angel",
+        "mentions": 1
+      },
+      {
         "tag": "Book of Enoch",
         "mentions": 1
       },
@@ -22212,6 +22381,10 @@
       {
         "tag": "Moses",
         "mentions": 21
+      },
+      {
+        "tag": "Angel",
+        "mentions": 17
       },
       {
         "tag": "Quran",
@@ -22900,6 +23073,10 @@
         "mentions": 1
       },
       {
+        "tag": "Angel",
+        "mentions": 1
+      },
+      {
         "tag": "Annunciation",
         "mentions": 1
       },
@@ -23038,6 +23215,10 @@
       {
         "tag": "Syria",
         "mentions": 5
+      },
+      {
+        "tag": "Angel",
+        "mentions": 4
       },
       {
         "tag": "Judah",
@@ -23205,7 +23386,7 @@
         "mentions": 1
       },
       {
-        "tag": "Cherubim",
+        "tag": "Angel",
         "mentions": 1
       },
       {
@@ -24185,6 +24366,10 @@
         "mentions": 3
       },
       {
+        "tag": "Demon",
+        "mentions": 2
+      },
+      {
         "tag": "Mary Magdalene",
         "mentions": 2
       },
@@ -24452,6 +24637,10 @@
       {
         "tag": "Molek",
         "mentions": 12
+      },
+      {
+        "tag": "Angel",
+        "mentions": 10
       },
       {
         "tag": "Terah",
@@ -25682,6 +25871,10 @@
       {
         "tag": "Ishmael",
         "mentions": 14
+      },
+      {
+        "tag": "Angel",
+        "mentions": 13
       },
       {
         "tag": "Book of Enoch",

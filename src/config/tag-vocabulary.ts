@@ -752,13 +752,6 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [27, 28, 41, 59, 61, 66, 77, 96, 106, 124, 135, 137, 138],
   },
   {
-    canonical: "Cherubim",
-    variations: [],
-    category: "character",
-    status: "accepted",
-    episodes: [1, 28, 29, 33, 66, 120, 127],
-  },
-  {
     canonical: "Syria",
     variations: [],
     category: "place",
@@ -1767,13 +1760,15 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [7, 14, 53, 88],
   },
   {
-    canonical: "demons",
-    variations: ["demon", "demon possession"],
+    canonical: "Demon",
+    variations: ["devils", "unclean spirit", "evil spirit"],
     category: "theology",
+    llmVerify: true,
     description:
-      "Malevolent spiritual entities or agents believed to cause harm and influence human behavior",
-    status: "proposed",
+      "Malevolent spiritual entities or agents believed to cause harm and influence human behavior, not referencing Satan or The Devil",
+    status: "accepted",
     addedInEpisode: 53,
+    episodes: [14, 16, 17, 24, 28, 33, 50, 53, 55, 81, 84, 111, 123, 148],
   },
   {
     canonical: "ecstatic prophecy",
@@ -3149,13 +3144,15 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 83,
   },
   {
-    canonical: "garden tomb",
-    variations: ["garden tomb association", "Gordon's Calvary"],
+    canonical: "Garden Tomb",
+    variations: [],
     category: "place",
+    llmVerify: true,
     description:
       "A rock-cut tomb in Jerusalem, proposed by some as the site of Jesus' burial and resurrection",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 83,
+    episodes: [83],
   },
   {
     canonical: "Constantine",
@@ -5522,12 +5519,18 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "angels",
-    variations: ["angel"],
+    canonical: "Angel",
+    variations: ["cherub", "seraph"],
     category: "theology",
+    llmVerify: true,
     description:
       "Divine messengers or supernatural beings who appear in biblical narratives, often serving as intermediaries between God and humans.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [
+      3, 4, 5, 7, 12, 17, 18, 19, 27, 28, 33, 37, 39, 42, 55, 58, 61, 62, 63,
+      64, 70, 71, 72, 87, 91, 92, 95, 104, 120, 124, 125, 126, 129, 135, 136,
+      137, 140, 141, 142, 150, 157,
+    ],
   },
   {
     canonical: "Museum of the Bible",
@@ -8226,14 +8229,6 @@ export const tagVocabulary: TagDefinition[] = [
       "A prolific early Christian author from Carthage in the late 2nd and early 3rd centuries CE, known for his theological and apologetic writings in Latin.",
     status: "accepted",
     episodes: [12, 50, 62, 69, 70, 104, 120, 142, 148, 156],
-  },
-  {
-    canonical: "seraphim",
-    variations: ["seraph"],
-    category: "miscellaneous",
-    description:
-      "Celestial beings with six wings mentioned in Isaiah 6, often associated with the divine presence and purity.",
-    status: "proposed",
   },
   {
     canonical: "king uzziah",
