@@ -99,7 +99,11 @@
                       {{ $quoteHref = printf "%s#t-%d-%03d" $episode.RelPermalink $totalSeconds $milliseconds }}
                     {{ end }}
                   {{ end }}
-                  <a href="{{ $quoteHref }}" class="tag-quote__episode chip">
+                  <a
+                    href="{{ $quoteHref }}"
+                    class="tag-quote__episode chip"
+                    data-episode="{{ .episode }}"
+                    data-share-url="{{ $quoteHref | absURL }}">
                     Episode
                     {{ .episode }}
                   </a>
@@ -164,4 +168,10 @@
 {{ define "footer-scripts" }}
   {{ partial "json-ld/taxonomy-term.html" . }}
   {{ partial "json-ld/breadcrumb.html" . }}
+  {{ $shareOpts := dict "targetPath" "quote-share.js" }}
+  {{ $shareBuilt := resources.Get "ts/quote-share.ts" | js.Build $shareOpts }}
+  {{ if hugo.IsProduction }}
+    {{ $shareBuilt = $shareBuilt | resources.Minify | resources.Fingerprint }}
+  {{ end }}
+  <script src="{{ $shareBuilt.RelPermalink }}"></script>
 {{ end }}
