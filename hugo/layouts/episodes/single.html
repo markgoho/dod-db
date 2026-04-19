@@ -120,7 +120,7 @@
                     >Episode Topic</span
                   >
                   <span class="episode-segment-card__title"
-                    >{{ .Params.episodeTopic }}</span
+                    >{{ replace .Params.episodeTopic "&shy;" "&shy;" | safeHTML }}</span
                   >
                 </div>
               </div>

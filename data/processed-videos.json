@@ -12937,6 +12937,10 @@
         "mentions": 3
       },
       {
+        "tag": "Deconstruction",
+        "mentions": 2
+      },
+      {
         "tag": "Protestantism",
         "mentions": 2
       },
@@ -13376,6 +13380,10 @@
     "transcriptPath": "data/transcripts/2024-10-28-episode-82-october-27-2024-deconstruction-zone-with-rev-karla-kamstra.txt",
     "tags": [
       {
+        "tag": "Deconstruction",
+        "mentions": 47
+      },
+      {
         "tag": "Southern Baptist Convention",
         "mentions": 7
       },
@@ -13417,7 +13425,8 @@
     ],
     "speakers": ["Rev Karla Kamstra", "Dan Beecher", "Dan McClellan"],
     "scriptures": [],
-    "episodeNumber": 82
+    "episodeNumber": 82,
+    "episodeTopic": "Decon&shy;struction"
   },
   {
     "videoId": "vZqmxICxUh8",
@@ -16657,6 +16666,10 @@
       {
         "tag": "Atheism",
         "mentions": 1
+      },
+      {
+        "tag": "Deconstruction",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -18081,6 +18094,10 @@
       {
         "tag": "Urim and Thummim",
         "mentions": 2
+      },
+      {
+        "tag": "Deconstruction",
+        "mentions": 1
       },
       {
         "tag": "inerrancy",
@@ -24294,6 +24311,10 @@
       },
       {
         "tag": "baptism",
+        "mentions": 2
+      },
+      {
+        "tag": "Deconstruction",
         "mentions": 2
       },
       {

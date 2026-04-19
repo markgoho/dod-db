@@ -6,12 +6,14 @@ videoId: iK9FSp6IiVo
 aliases:
   - /episodes/82/
 tags:
+  - Deconstruction
   - Southern Baptist Convention
   - Rapture
   - Christian Nationalism
   - King James Bible
 guests:
   - Rev Karla Kamstra
+episodeTopic: Decon&shy;struction
 draft: false
 ---
 

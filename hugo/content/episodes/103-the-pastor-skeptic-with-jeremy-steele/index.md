@@ -11,6 +11,7 @@ tags:
   - Homosexuality
   - Judah
   - Atheism
+  - Deconstruction
 guests:
   - Jeremy Steele
 draft: false

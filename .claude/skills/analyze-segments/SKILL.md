@@ -122,6 +122,8 @@ Rules:
 - Only save an `episodeTopic` when it adds real value beyond the episode title.
 - If the best label would just restate or lightly normalize the episode title without improving searchability, canonical wording, or clarity, treat it as a no-op instead of saving it.
 - Save an `episodeTopic` when it meaningfully improves on the title by being shorter, more canonical, less rhetorical, or more discoverable.
+- If an `episodeTopic` or `topicLabel` is a long single word that may overflow in the UI, insert `&shy;` at a natural syllable or morpheme boundary before saving it.
+- Prefer readable breaks like `Decon&shy;struction`, not arbitrary splits like `Decons&shy;truction`.
 
 ## Save input shape
 

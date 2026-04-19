@@ -7657,12 +7657,14 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "deconstructing",
-    variations: ["deconstruction"],
+    canonical: "Deconstruction",
+    variations: ["deconstruct", "deconstructing"],
     category: "miscellaneous",
+    llmVerify: true,
     description:
       "The process of critically examining and often rejecting previously held beliefs, particularly religious ones",
-    status: "proposed",
+    status: "accepted",
+    episodes: [79, 82, 103, 113, 149],
   },
   {
     canonical: "king henry viii",

@@ -20,6 +20,7 @@ tags:
   - King James Bible
   - Paul
   - Urim and Thummim
+  - Deconstruction
   - inerrancy
   - Isaiah
   - Nebuchadnezzar
