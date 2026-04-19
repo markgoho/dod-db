@@ -12,6 +12,9 @@ featuredItems:
     episodeNumber: 31
     segmentAnchor: its-the-law-1
     label: "It's the Law — Decalogue"
+  - type: episode
+    number: 66
+    label: Thou Shalt Not
 quotes:
   - text: "It's nowhere referred to as the Ten Commandments, and we get an almost identical list of laws in Deuteronomy 5. Again, nowhere referred to as the Ten Commandments. So where are we getting this Ten Commandments title from?"
     speaker: Dan McClellan
