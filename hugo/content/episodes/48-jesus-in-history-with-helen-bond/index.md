@@ -11,8 +11,8 @@ tags:
   - Mary Magdalene
   - John the Baptist
   - Galilee
-  - Papias of Hierapolis
   - Flavius Josephus
+  - Papias of Hierapolis
   - Gospel of Thomas
   - Peter
   - Romans

@@ -38,6 +38,8 @@ tags:
   - Sea of Galilee
   - Stele
   - Syria
+books:
+  - John
 segments:
   - "History's Mysteries"
   - "Who's That?"

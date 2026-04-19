@@ -14212,7 +14212,14 @@
       }
     ],
     "speakers": ["Dan McClellan", "Dan Beecher"],
-    "scriptures": [],
+    "scriptures": [
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 1,
+        "source": "auto"
+      }
+    ],
     "episodeNumber": 86
   },
   {

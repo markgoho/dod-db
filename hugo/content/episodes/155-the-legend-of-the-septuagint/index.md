@@ -17,6 +17,7 @@ tags:
   - YHWH
   - David
   - Deuteronomy
+  - Flavius Josephus
   - Masoretic Text
   - Philo of Alexandria
   - Rachel
@@ -24,7 +25,6 @@ tags:
   - Dead Sea Scrolls
   - Egyptians
   - Essenes
-  - Flavius Josephus
   - Jacob
   - King James Bible
   - King Josiah
