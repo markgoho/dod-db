@@ -10146,7 +10146,7 @@
     },
     {
       "ep": 138,
-      "m": 16,
+      "m": 17,
       "title": "Who Deserves to Eat?"
     },
     {
@@ -10180,6 +10180,11 @@
       "title": "Order Up! With Jennifer Garcia Bashaw and Aaron Higashi"
     },
     {
+      "ep": 139,
+      "m": 1,
+      "title": "Polygamy!"
+    },
+    {
       "ep": 127,
       "m": 1,
       "title": "The Indiana Jones Episode!"
@@ -10193,11 +10198,6 @@
       "ep": 109,
       "m": 1,
       "title": "Episode 109 (May 5, 2025), \"The Heart of Pharaoh\""
-    },
-    {
-      "ep": 78,
-      "m": 1,
-      "title": "Episode 78 (September 30, 2024), \"The Biblical View of Immigrants\""
     },
     {
       "ep": 56,
@@ -17738,6 +17738,13 @@
       "ep": 28,
       "m": 1,
       "title": "Episode 28 (October 16, 2023), \"Angels and Demons\""
+    }
+  ],
+  "Shatnez": [
+    {
+      "ep": 74,
+      "m": 6,
+      "title": "Episode 74: The Fabric Conspiracies"
     }
   ],
   "Shelah": [

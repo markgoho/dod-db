@@ -13,7 +13,6 @@ tags:
   - David
   - Eve
   - Jerusalem
-  - Joseph
   - Judaism
   - Paul
   - Prophetic Critique

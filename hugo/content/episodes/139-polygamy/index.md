@@ -28,6 +28,7 @@ tags:
   - Eve
   - Flavius Josephus
   - Homosexuality
+  - Joseph
   - Rezin
   - Septuagint
   - Shishak

@@ -960,7 +960,7 @@ export const tagVocabulary: TagDefinition[] = [
     description: "son of Jacob, sold into slavery in the Old Testament",
     status: "accepted",
     episodes: [
-      1, 12, 18, 20, 22, 37, 38, 41, 42, 43, 56, 68, 74, 78, 109, 115, 127, 138,
+      1, 18, 20, 22, 41, 56, 68, 74, 109, 115, 127, 138, 139, 149, 150, 157,
     ],
   },
   {
@@ -7508,12 +7508,13 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "shaatnez",
-    variations: ["shatnez"],
+    canonical: "Shatnez",
+    variations: ["shaatnez"],
     category: "miscellaneous",
     description:
       "Hebrew term for fabric containing a mixture of wool and linen, prohibited by Jewish law.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [74],
   },
   {
     canonical: "ephod",

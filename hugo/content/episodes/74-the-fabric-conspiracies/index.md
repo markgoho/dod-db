@@ -9,6 +9,7 @@ tags:
   - Ishmael
   - Midianites
   - Joseph
+  - Shatnez
   - Judah
   - Deuteronomy
   - Torah

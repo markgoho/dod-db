@@ -12297,6 +12297,10 @@
         "mentions": 25
       },
       {
+        "tag": "Shatnez",
+        "mentions": 6
+      },
+      {
         "tag": "Judah",
         "mentions": 5
       },
@@ -12768,10 +12772,6 @@
       },
       {
         "tag": "Jerusalem",
-        "mentions": 1
-      },
-      {
-        "tag": "Joseph",
         "mentions": 1
       },
       {
@@ -22386,7 +22386,7 @@
     "tags": [
       {
         "tag": "Joseph",
-        "mentions": 16
+        "mentions": 17
       },
       {
         "tag": "Paul",
@@ -22577,6 +22577,10 @@
       },
       {
         "tag": "Homosexuality",
+        "mentions": 1
+      },
+      {
+        "tag": "Joseph",
         "mentions": 1
       },
       {
