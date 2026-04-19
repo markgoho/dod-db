@@ -18,6 +18,7 @@ tags:
   - Romans
   - YHWH
   - Second Temple period
+  - Angel
   - Isaiah
   - Septuagint
   - Apocrypha

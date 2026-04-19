@@ -23,6 +23,7 @@ tags:
   - Samson
   - Samuel
   - Adam
+  - Angel
   - Babylon
   - circumcision
   - Holy Spirit

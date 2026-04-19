@@ -27,6 +27,7 @@ tags:
   - YHWH
   - Atheism
   - Catholicism
+  - Demon
   - Gospel of Thomas
   - Jacob
   - John Chrysostom

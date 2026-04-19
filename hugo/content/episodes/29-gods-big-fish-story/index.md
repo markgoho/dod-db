@@ -29,7 +29,6 @@ tags:
   - Omni Attributes
   - Sukkot
   - Abraham
-  - Cherubim
   - Peter
   - Saint Titus
 books:

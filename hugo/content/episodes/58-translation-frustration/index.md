@@ -18,6 +18,7 @@ tags:
   - Textus Receptus
   - Abraham
   - Adam
+  - Angel
   - Daniel
   - Dead Sea
   - Garden of Eden

@@ -18,6 +18,7 @@ tags:
   - Garden of Eden
   - King James Bible
   - Torah
+  - Demon
   - Jacob
   - Joshua
   - Judah

@@ -12,6 +12,7 @@ tags:
   - Hagar
   - Isaac
   - Ishmael
+  - Angel
   - Book of Enoch
   - Enoch
   - Asael

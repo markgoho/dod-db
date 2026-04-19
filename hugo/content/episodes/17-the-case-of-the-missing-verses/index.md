@@ -12,12 +12,14 @@ tags:
   - Desiderius Erasmus
   - Textus Receptus
   - Martin Luther
+  - Angel
   - Hell
   - Homosexuality
   - Latin Vulgate
   - Constantine
   - Council of Nicaea
   - Decalogue
+  - Demon
   - Eusebius
   - Isaiah
   - John

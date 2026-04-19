@@ -20,6 +20,7 @@ tags:
   - Galilee
   - James
   - Adam
+  - Angel
   - Annunciation
   - Augustine
   - Eusebius

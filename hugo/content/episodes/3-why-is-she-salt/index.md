@@ -14,6 +14,7 @@ tags:
   - forgery
   - Dead Sea
   - Ammonites
+  - Angel
   - Deuteronomy
   - Ishmael
   - Moabites

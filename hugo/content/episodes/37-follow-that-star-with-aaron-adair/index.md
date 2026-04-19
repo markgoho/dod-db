@@ -11,6 +11,7 @@ tags:
   - Magi
   - Jerusalem
   - Deism
+  - Angel
   - Easter
   - Garden of Eden
   - Gentiles

@@ -10,6 +10,7 @@ tags:
   - Ahaziah
   - Joram
   - Judah
+  - Angel
   - Capernaum
   - Samaria
   - Ahab
@@ -29,6 +30,7 @@ tags:
   - Book of Enoch
   - Dead Sea
   - Dead Sea Scrolls
+  - Demon
   - Deuteronomy
   - Egyptians
   - Galilee

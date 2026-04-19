@@ -17,6 +17,7 @@ tags:
   - Garden of Eden
   - Mark of the Beast
   - Anatolia
+  - Angel
   - Balaam
   - Codex Sinaiticus
   - Dionysius of Alexandria

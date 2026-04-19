@@ -6,6 +6,7 @@ videoId: "-C1AFxpKb2U"
 aliases:
   - /episodes/84/
 tags:
+  - Demon
   - Hell
   - Beelzebul
   - Enoch
@@ -45,6 +46,7 @@ books:
   - 2 Peter
   - Deuteronomy
   - Psalms
+episodeTopic: Demonology
 draft: false
 ---
 

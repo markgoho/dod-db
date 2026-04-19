@@ -18,7 +18,7 @@ tags:
   - baptism
   - Isaiah
   - Abraham
-  - Cherubim
+  - Angel
   - Gospel of James
   - Justin Martyr
   - King James Bible

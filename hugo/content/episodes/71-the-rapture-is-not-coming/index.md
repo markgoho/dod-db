@@ -13,6 +13,7 @@ tags:
   - Judah
   - Babylon
   - Paul
+  - Angel
   - King James Bible
   - Michael
   - Seleucid Empire

@@ -23,6 +23,7 @@ tags:
   - Paul
   - Isaac
   - Isaiah
+  - Angel
   - Arad
   - Asherah
   - Ashurbanipal

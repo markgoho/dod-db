@@ -24,6 +24,7 @@ tags:
   - Jacob
   - King Jabin
   - Abraham
+  - Angel
   - Bethel
   - Canaan
   - Elhanan son of Jair

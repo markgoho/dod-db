@@ -26,6 +26,7 @@ tags:
   - Isaiah
   - King James Bible
   - Ugarit
+  - Angel
   - Dead Sea
   - Elijah
   - Jerusalem

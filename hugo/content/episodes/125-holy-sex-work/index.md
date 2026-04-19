@@ -11,6 +11,7 @@ tags:
   - Goliath
   - King James Bible
   - Septuagint
+  - Angel
   - Dead Sea Scrolls
   - Garden of Eden
   - Maccabees

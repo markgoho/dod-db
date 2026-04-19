@@ -9,6 +9,7 @@ tags:
   - Rapture
   - John of Patmos
   - Athanasius of Alexandria
+  - Angel
   - Arius
   - Armageddon
   - Daniel

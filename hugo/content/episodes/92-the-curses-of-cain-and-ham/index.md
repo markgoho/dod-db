@@ -25,6 +25,7 @@ tags:
   - Joachim
   - Septuagint
   - Abraham
+  - Angel
   - Philo of Alexandria
   - Ugarit
   - Abel

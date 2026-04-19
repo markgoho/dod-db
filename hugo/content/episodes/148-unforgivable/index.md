@@ -16,6 +16,7 @@ tags:
   - Demas
   - Hermogenes
   - Peter
+  - Demon
   - Mary Magdalene
   - Apocrypha
   - Atheism

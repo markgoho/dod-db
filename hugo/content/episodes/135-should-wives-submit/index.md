@@ -11,6 +11,7 @@ tags:
   - Babylon
   - Baal
   - Philo of Alexandria
+  - Angel
   - Flavius Josephus
   - YHWH
   - Adam

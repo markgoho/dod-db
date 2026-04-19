@@ -12,6 +12,7 @@ tags:
   - Stephen
   - Jacob
   - Molek
+  - Angel
   - Terah
   - YHWH
   - Deuteronomy

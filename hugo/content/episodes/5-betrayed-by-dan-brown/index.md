@@ -17,6 +17,7 @@ tags:
   - Apocrypha
   - Baal
   - Mary Magdalene
+  - Angel
   - Athanasius of Alexandria
   - baptism
   - Catholicism

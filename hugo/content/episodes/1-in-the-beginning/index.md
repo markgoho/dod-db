@@ -16,7 +16,6 @@ tags:
   - Ugarit
   - Abraham
   - Babylon
-  - Cherubim
   - divine council
   - Moab
   - Asherah

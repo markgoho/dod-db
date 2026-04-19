@@ -9,6 +9,7 @@ tags:
   - Trinity
   - John
   - Abraham
+  - Angel
   - Arius
   - Holy Spirit
   - Judaism

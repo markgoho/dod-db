@@ -19,7 +19,6 @@ tags:
   - Onan
   - Ugarit
   - Catholicism
-  - Cherubim
   - David
   - Elephantine
   - Elijah

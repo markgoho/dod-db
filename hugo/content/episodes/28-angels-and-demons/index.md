@@ -6,12 +6,13 @@ videoId: AUgdX7aH_hI
 aliases:
   - /episodes/28/
 tags:
+  - Angel
   - Judaism
   - YHWH
   - Baal
   - Satan
+  - Demon
   - Beelzebul
-  - Cherubim
   - Ugarit
   - Gabriel
   - Abraham

@@ -7,6 +7,7 @@ aliases:
   - /episodes/83/
 tags:
   - David
+  - Garden Tomb
   - Septuagint
   - Crucifixion
   - Jerusalem

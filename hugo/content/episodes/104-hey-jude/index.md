@@ -6,6 +6,7 @@ videoId: h7SIkjdpCi4
 aliases:
   - /episodes/104/
 tags:
+  - Angel
   - Enoch
   - Peter
   - James

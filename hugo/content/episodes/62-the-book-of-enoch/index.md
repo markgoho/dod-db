@@ -10,6 +10,7 @@ tags:
   - Book of Enoch
   - Noah
   - Flood
+  - Angel
   - Daniel
   - Eschatology
   - Methuselah

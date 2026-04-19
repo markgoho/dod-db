@@ -13,6 +13,7 @@ tags:
   - Atheism
   - Homosexuality
   - Abortion
+  - Angel
   - Beatitudes
   - Mary Magdalene
   - Omni Attributes

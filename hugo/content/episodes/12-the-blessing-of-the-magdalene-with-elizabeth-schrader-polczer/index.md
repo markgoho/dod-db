@@ -16,6 +16,7 @@ tags:
   - Gospel of Thomas
   - King James Bible
   - Tertullian
+  - Angel
   - source criticism
   - Apocrypha
   - Codex Sinaiticus

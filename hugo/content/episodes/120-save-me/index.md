@@ -15,6 +15,7 @@ tags:
   - Paul
   - Adam
   - YHWH
+  - Angel
   - Augustine
   - Babylon
   - Book of Enoch
@@ -27,7 +28,6 @@ tags:
   - Satan
   - Ahab
   - Assyria
-  - Cherubim
   - Egyptians
   - Gilead
   - Irenaeus

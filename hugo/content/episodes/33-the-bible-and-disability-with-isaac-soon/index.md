@@ -9,8 +9,10 @@ tags:
   - Paul
   - circumcision
   - Satan
+  - Angel
   - Isaac
   - Gentiles
+  - Demon
   - Egyptians
   - Saul
   - Abortion

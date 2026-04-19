@@ -9,6 +9,7 @@ tags:
   - Holy Spirit
   - Saul
   - Trinity
+  - Demon
   - Elijah
   - King James Bible
   - Satan

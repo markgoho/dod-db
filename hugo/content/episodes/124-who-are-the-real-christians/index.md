@@ -16,6 +16,7 @@ tags:
   - Paul
   - Book of Enoch
   - Protestantism
+  - Angel
   - Asherah
   - Catholicism
   - Deuteronomy

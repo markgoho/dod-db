@@ -15,6 +15,7 @@ tags:
   - Jerusalem
   - Moab
   - Tamar
+  - Angel
   - Assyria
   - Bethlehem
   - YHWH

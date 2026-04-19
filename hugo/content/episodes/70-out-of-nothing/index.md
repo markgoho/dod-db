@@ -15,6 +15,7 @@ tags:
   - Cyrus the Great
   - Second Maccabees
   - Babylon
+  - Angel
   - Habakkuk
   - Monotheism
   - Antiochus IV Epiphanes

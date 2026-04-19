@@ -17,7 +17,6 @@ tags:
   - Asherah
   - King James Bible
   - Baal
-  - Cherubim
   - Council of Jerusalem
   - Talmud
   - Catholicism

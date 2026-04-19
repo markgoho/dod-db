@@ -15,6 +15,7 @@ tags:
   - Judas Iscariot
   - Passover
   - Sanhedrin
+  - Demon
   - Easter
   - Garden of Gethsemane
   - Galilee

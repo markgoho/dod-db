@@ -10,7 +10,6 @@ tags:
   - YHWH
   - Joshua
   - Jerusalem
-  - Cherubim
   - David
   - Samuel
   - Asherah

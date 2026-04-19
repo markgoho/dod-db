@@ -32,6 +32,7 @@ tags:
   - Beelzebul
   - David
   - Dead Sea Scrolls
+  - Demon
   - Deuteronomy
   - Enoch
   - Flavius Josephus

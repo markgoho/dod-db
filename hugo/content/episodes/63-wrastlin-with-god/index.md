@@ -10,6 +10,7 @@ tags:
   - Philistines
   - Samson
   - Isaac
+  - Angel
   - Abraham
   - Laban
   - Esau

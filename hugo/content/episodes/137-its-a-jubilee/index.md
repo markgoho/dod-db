@@ -7,6 +7,7 @@ aliases:
   - /episodes/137/
 tags:
   - Moses
+  - Angel
   - Quran
   - Sodom
   - Adam

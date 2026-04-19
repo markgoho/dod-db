@@ -16,6 +16,7 @@ tags:
   - Septuagint
   - David
   - Syria
+  - Angel
   - Judah
   - Romans
   - Virgin Birth
