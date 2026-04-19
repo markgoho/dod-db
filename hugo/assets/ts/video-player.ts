@@ -184,6 +184,24 @@ function scrollToLine(element: HTMLElement): void {
 }
 
 /**
+ * Briefly pulse the play button to draw attention when audio is cued but not playing.
+ */
+function pulsePlayButton(): void {
+  const playButton = document.querySelector<HTMLButtonElement>(
+    ".audio-player__play",
+  );
+  if (!playButton) {
+    return;
+  }
+
+  playButton.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  playButton.classList.add("pulse");
+  globalThis.setTimeout(() => {
+    playButton.classList.remove("pulse");
+  }, 3000);
+}
+
+/**
  * Show a temporary toast notification.
  */
 function showToast(message: string): void {
@@ -258,7 +276,7 @@ function handleInitialHash(): void {
     element.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
-  // Load the player at the timestamp (user can click play when ready)
+  // Load the player at the timestamp
   const videoContainer = document.querySelector(".video-player");
   if (videoContainer instanceof HTMLElement && !state.player) {
     const thumbnail = videoContainer.querySelector<HTMLAnchorElement>("a");
@@ -760,6 +778,7 @@ function init(): void {
     if (state.pendingSeekSeconds !== undefined) {
       audioElement.currentTime = state.pendingSeekSeconds;
       state.pendingSeekSeconds = undefined;
+      pulsePlayButton();
     }
   }
 

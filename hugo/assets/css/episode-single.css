@@ -302,6 +302,17 @@
   outline-offset: var(--space-4xs);
 }
 
+.audio-player__play.pulse {
+  animation: pulse-play 0.6s ease-in-out 4;
+}
+
+@keyframes pulse-play {
+  50% {
+    box-shadow: 0 0 0 var(--space-xs) color-mix(in srgb, var(--color-action) 50%, transparent);
+    scale: 1.08;
+  }
+}
+
 .copy-toast {
   background: var(--tan-900);
   border: var(--border-width-sm) solid var(--tan-000);
