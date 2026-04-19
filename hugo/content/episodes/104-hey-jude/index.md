@@ -45,7 +45,6 @@ tags:
   - Second Coming
   - Second Temple period
   - Septuagint
-  - Ten Commandments
   - Tertullian
   - Trinity
   - Univocality

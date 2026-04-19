@@ -26,7 +26,6 @@ tags:
   - Peter
   - Priestly Source
   - Sapphira
-  - Ten Commandments
 books:
   - Deuteronomy
   - Acts

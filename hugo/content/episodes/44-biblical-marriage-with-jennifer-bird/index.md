@@ -18,7 +18,6 @@ tags:
   - Decalogue
   - etiology
   - Jacob
-  - Ten Commandments
   - YHWH
 books:
   - Genesis

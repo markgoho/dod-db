@@ -19,7 +19,6 @@ tags:
   - Jacob
   - Samson
   - Satan
-  - Ten Commandments
   - YHWH
 books:
   - Deuteronomy

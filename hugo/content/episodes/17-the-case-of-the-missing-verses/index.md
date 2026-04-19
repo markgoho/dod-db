@@ -27,7 +27,6 @@ tags:
   - Paul
   - Protestantism
   - Satan
-  - Ten Commandments
 books:
   - Mark
   - Matthew

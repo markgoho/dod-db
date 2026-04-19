@@ -12,7 +12,6 @@ tags:
   - David
   - Decalogue
   - Samaria
-  - Ten Commandments
   - Paul
   - Babylon
   - Gomer

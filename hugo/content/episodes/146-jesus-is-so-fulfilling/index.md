@@ -21,7 +21,6 @@ tags:
   - Essenes
   - James
   - Judaism
-  - Ten Commandments
   - Torah
   - Univocality
   - Beatitudes

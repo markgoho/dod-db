@@ -29,7 +29,6 @@ tags:
   - Samaritans
   - Solomon
   - Syria
-  - Ten Commandments
 books:
   - Exodus
   - Luke

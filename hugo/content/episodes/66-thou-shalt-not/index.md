@@ -7,7 +7,6 @@ aliases:
   - /episodes/66/
 tags:
   - Decalogue
-  - Ten Commandments
   - YHWH
   - Asherah
   - Baal

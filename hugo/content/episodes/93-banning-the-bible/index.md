@@ -9,7 +9,6 @@ tags:
   - Decalogue
   - Deuteronomy
   - Moses
-  - Ten Commandments
   - Onan
   - David
   - child sacrifice

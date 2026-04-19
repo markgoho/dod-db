@@ -26,7 +26,6 @@ tags:
   - King James Bible
   - Moab
   - Sea of Galilee
-  - Ten Commandments
   - Textus Receptus
   - Torah
   - Trinity

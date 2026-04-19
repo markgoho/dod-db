@@ -31,7 +31,6 @@ tags:
   - Judaism
   - Ketef Hinnom
   - Mary Magdalene
-  - Ten Commandments
 books:
   - Genesis
   - Isaiah

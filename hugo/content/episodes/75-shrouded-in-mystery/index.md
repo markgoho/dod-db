@@ -15,7 +15,6 @@ tags:
   - Isaac
   - Passover
   - Decalogue
-  - Ten Commandments
   - Canaan
   - Elephantine
 books:

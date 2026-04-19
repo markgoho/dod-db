@@ -7,7 +7,6 @@ aliases:
   - /episodes/31/
 tags:
   - Decalogue
-  - Ten Commandments
   - YHWH
   - Deuteronomy
   - Judaism

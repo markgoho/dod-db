@@ -9,7 +9,6 @@ tags:
   - Moses
   - child sacrifice
   - Molek
-  - Ten Commandments
   - Decalogue
   - Carthage
   - Baal

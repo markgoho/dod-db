@@ -29,7 +29,6 @@ tags:
   - Decalogue
   - Flavius Josephus
   - John
-  - Ten Commandments
   - Univocality
 books:
   - Ezekiel

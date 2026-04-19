@@ -22,7 +22,6 @@ tags:
   - Herod the Great
   - Martin Luther
   - Second Coming
-  - Ten Commandments
   - The Reformation
   - YHWH
 books:

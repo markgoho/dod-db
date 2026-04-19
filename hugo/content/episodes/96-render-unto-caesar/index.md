@@ -10,7 +10,6 @@ tags:
   - Romans
   - Christian Nationalism
   - Judaism
-  - Ten Commandments
   - Decalogue
   - Nero
   - David

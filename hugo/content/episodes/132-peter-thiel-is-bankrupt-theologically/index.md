@@ -26,7 +26,6 @@ tags:
   - Satan
   - Second Coming
   - Silas
-  - Ten Commandments
   - Univocality
 books:
   - Acts

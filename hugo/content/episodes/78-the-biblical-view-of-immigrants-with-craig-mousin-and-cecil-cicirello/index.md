@@ -8,7 +8,6 @@ aliases:
 tags:
   - Decalogue
   - Noah
-  - Ten Commandments
   - cognitive dissonance
   - Adam
   - David
