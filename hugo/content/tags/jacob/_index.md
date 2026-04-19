@@ -14,7 +14,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 63
     timestamp: "00:07:32.030"
-  - text: "The name basically means \"El contends.\" But it's kind of squishy. You can interpret it a few different ways. And so the idea that Jacob has striven or contended with God and with humans is kind of the folk etymology."
+  - text: 'The name basically means "El contends." But it''s kind of squishy. You can interpret it a few different ways. And so the idea that Jacob has striven or contended with God and with humans is kind of the folk etymology.'
     speaker: "Dan McClellan"
     episode: 63
     timestamp: "00:18:33.460"

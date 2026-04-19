@@ -36,6 +36,7 @@ books:
   - Judges
   - Leviticus
   - Genesis
+episodeTopic: Ten Commandments
 draft: false
 ---
 
