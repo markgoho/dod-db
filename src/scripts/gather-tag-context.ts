@@ -153,7 +153,9 @@ function findCanonicalTag(tagName: string): CanonicalTagContext {
     if (normalizeForMatching(entry.canonical) === requested) {
       return toCanonicalTagContext(entry);
     }
+  }
 
+  for (const entry of tagVocabulary) {
     if (
       entry.variations.some(
         variation => normalizeForMatching(variation) === requested,

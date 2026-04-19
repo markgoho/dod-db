@@ -1,10 +1,6 @@
 ---
 title: Paul
 definition: Paul is a first-century Jewish apostle and letter writer whose surviving epistles became central to early Christian theology and later Christian identity. In these discussions, he matters as a historically situated Jewish thinker whose arguments to gentile audiences are often flattened into timeless doctrine or misused against Judaism.
-aliases:
-  - /tags/saul/
-knownAs:
-  - Saul
 featuredItems:
   - type: episode
     number: 26
