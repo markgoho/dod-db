@@ -35,6 +35,7 @@ tags:
   - Judaism
   - King James Bible
   - Monotheism
+  - Omni Attributes
   - source criticism
   - Syria
 books:

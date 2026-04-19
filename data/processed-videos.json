@@ -123,6 +123,10 @@
         "mentions": 1
       },
       {
+        "tag": "Omni Attributes",
+        "mentions": 1
+      },
+      {
         "tag": "source criticism",
         "mentions": 1
       },
@@ -258,6 +262,10 @@
       },
       {
         "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "Atheism",
         "mentions": 3
       },
       {
@@ -508,6 +516,10 @@
         "mentions": 1
       },
       {
+        "tag": "Omni Attributes",
+        "mentions": 1
+      },
+      {
         "tag": "Qumran",
         "mentions": 1
       },
@@ -614,6 +626,10 @@
       },
       {
         "tag": "Abraham",
+        "mentions": 2
+      },
+      {
+        "tag": "Atheism",
         "mentions": 2
       },
       {
@@ -953,6 +969,10 @@
       {
         "tag": "Solomon",
         "mentions": 2
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 1
       },
       {
         "tag": "Book of Enoch",
@@ -1343,6 +1363,10 @@
     "tags": [
       {
         "tag": "Africa",
+        "mentions": 1
+      },
+      {
+        "tag": "Atheism",
         "mentions": 1
       },
       {
@@ -2071,6 +2095,10 @@
         "mentions": 14
       },
       {
+        "tag": "Omni Attributes",
+        "mentions": 13
+      },
+      {
         "tag": "Sennacherib",
         "mentions": 9
       },
@@ -2678,6 +2706,10 @@
       {
         "tag": "YHWH",
         "mentions": 2
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 1
       },
       {
         "tag": "Catholicism",
@@ -4096,6 +4128,10 @@
         "mentions": 4
       },
       {
+        "tag": "Atheism",
+        "mentions": 2
+      },
+      {
         "tag": "Moses",
         "mentions": 2
       },
@@ -4924,6 +4960,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Omni Attributes",
         "mentions": 2
       },
       {
@@ -6193,6 +6233,10 @@
         "mentions": 1
       },
       {
+        "tag": "Atheism",
+        "mentions": 1
+      },
+      {
         "tag": "Babylon",
         "mentions": 1
       },
@@ -6637,6 +6681,10 @@
       {
         "tag": "YHWH",
         "mentions": 4
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 2
       },
       {
         "tag": "Baal",
@@ -8372,7 +8420,15 @@
     "transcriptPath": "data/transcripts/2024-03-25-episode-51-march-25-2024-is-religion-make-believe-with-neil-van-leeuwen.txt",
     "tags": [
       {
+        "tag": "Atheism",
+        "mentions": 3
+      },
+      {
         "tag": "Catholicism",
+        "mentions": 2
+      },
+      {
+        "tag": "Omni Attributes",
         "mentions": 2
       },
       {
@@ -8621,6 +8677,10 @@
       {
         "tag": "Satan",
         "mentions": 3
+      },
+      {
+        "tag": "Omni Attributes",
+        "mentions": 2
       },
       {
         "tag": "Samuel",
@@ -8998,6 +9058,10 @@
       },
       {
         "tag": "baptism",
+        "mentions": 2
+      },
+      {
+        "tag": "Omni Attributes",
         "mentions": 2
       },
       {
@@ -9802,8 +9866,16 @@
         "mentions": 3
       },
       {
+        "tag": "Omni Attributes",
+        "mentions": 3
+      },
+      {
         "tag": "Septuagint",
         "mentions": 2
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 1
       },
       {
         "tag": "Baal",
@@ -10770,6 +10842,10 @@
       {
         "tag": "King James Bible",
         "mentions": 5
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 3
       },
       {
         "tag": "Samuel",
@@ -11815,6 +11891,10 @@
         "mentions": 1
       },
       {
+        "tag": "Atheism",
+        "mentions": 1
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 1
       },
@@ -12415,7 +12495,7 @@
     "tags": [
       {
         "tag": "Shroud of Turin",
-        "mentions": 31
+        "mentions": 30
       },
       {
         "tag": "Egyptians",
@@ -12519,6 +12599,10 @@
     "processedAt": "2026-01-17T05:13:10.479Z",
     "transcriptPath": "data/transcripts/2024-09-16-episode-76-sseptember-16-2024-pay-your-tithing.txt",
     "tags": [
+      {
+        "tag": "Tithing",
+        "mentions": 48
+      },
       {
         "tag": "Deuteronomy",
         "mentions": 9
@@ -12668,6 +12752,10 @@
     "transcriptPath": "data/transcripts/2024-09-23-episode-77-september-23-2024-what-is-an-atheist.txt",
     "tags": [
       {
+        "tag": "Atheism",
+        "mentions": 33
+      },
+      {
         "tag": "Protestantism",
         "mentions": 14
       },
@@ -12746,6 +12834,10 @@
     "processedAt": "2026-01-17T05:19:46.520Z",
     "transcriptPath": "data/transcripts/2024-09-30-episode-78-september-30-2024-the-biblical-view-of-immigrants.txt",
     "tags": [
+      {
+        "tag": "Atheism",
+        "mentions": 3
+      },
       {
         "tag": "Decalogue",
         "mentions": 3
@@ -12859,6 +12951,10 @@
       {
         "tag": "Peter",
         "mentions": 1
+      },
+      {
+        "tag": "Tithing",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -12879,7 +12975,8 @@
     ],
     "speakers": ["Dan McClellan", "David Congdon", "Dan Beecher"],
     "scriptures": [],
-    "episodeNumber": 79
+    "episodeNumber": 79,
+    "episodeTopic": "Christian Identity"
   },
   {
     "videoId": "OoXQAfsPutQ",
@@ -12888,6 +12985,10 @@
     "processedAt": "2026-01-17T05:21:28.210Z",
     "transcriptPath": "data/transcripts/2024-10-14-episode-80-october-14-2024-omni-everything.txt",
     "tags": [
+      {
+        "tag": "Omni Attributes",
+        "mentions": 31
+      },
       {
         "tag": "James",
         "mentions": 15
@@ -14653,6 +14754,10 @@
         "mentions": 3
       },
       {
+        "tag": "Atheism",
+        "mentions": 2
+      },
+      {
         "tag": "Homosexuality",
         "mentions": 2
       },
@@ -14666,6 +14771,10 @@
       },
       {
         "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Omni Attributes",
         "mentions": 1
       },
       {
@@ -16544,6 +16653,10 @@
       {
         "tag": "Judah",
         "mentions": 2
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -17938,6 +18051,10 @@
         "mentions": 3
       },
       {
+        "tag": "Atheism",
+        "mentions": 2
+      },
+      {
         "tag": "Christian Nationalism",
         "mentions": 2
       },
@@ -19027,6 +19144,10 @@
         "mentions": 3
       },
       {
+        "tag": "Atheism",
+        "mentions": 2
+      },
+      {
         "tag": "Constantine",
         "mentions": 2
       },
@@ -19238,6 +19359,10 @@
       },
       {
         "tag": "Abortion",
+        "mentions": 2
+      },
+      {
+        "tag": "Atheism",
         "mentions": 2
       },
       {
@@ -19902,6 +20027,10 @@
       {
         "tag": "YHWH",
         "mentions": 8
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 7
       },
       {
         "tag": "Romans",
@@ -21248,6 +21377,10 @@
       {
         "tag": "Paul",
         "mentions": 4
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 3
       },
       {
         "tag": "Capernaum",
@@ -23712,8 +23845,16 @@
         "mentions": 4
       },
       {
+        "tag": "Tithing",
+        "mentions": 4
+      },
+      {
         "tag": "Moses",
         "mentions": 3
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 2
       },
       {
         "tag": "circumcision",
@@ -24032,6 +24173,10 @@
       },
       {
         "tag": "Apocrypha",
+        "mentions": 1
+      },
+      {
+        "tag": "Atheism",
         "mentions": 1
       },
       {
@@ -26040,6 +26185,10 @@
       },
       {
         "tag": "Syria",
+        "mentions": 1
+      },
+      {
+        "tag": "Tithing",
         "mentions": 1
       },
       {

@@ -6,6 +6,7 @@ videoId: OoXQAfsPutQ
 aliases:
   - /episodes/80/
 tags:
+  - Omni Attributes
   - James
   - Edom
   - Gentiles

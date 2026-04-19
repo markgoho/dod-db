@@ -6,6 +6,7 @@ videoId: 4u2tKZlUJUc
 aliases:
   - /episodes/77/
 tags:
+  - Atheism
   - Protestantism
   - Catholicism
   - Islam

@@ -6,6 +6,7 @@ videoId: KTw6aVIhMOk
 aliases:
   - /episodes/76/
 tags:
+  - Tithing
   - Deuteronomy
   - Peter
   - Sapphira

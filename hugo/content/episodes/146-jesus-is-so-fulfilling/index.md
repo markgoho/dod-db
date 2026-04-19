@@ -15,7 +15,9 @@ tags:
   - Sennacherib
   - Ashurbanipal
   - Eschatology
+  - Tithing
   - Moses
+  - Atheism
   - circumcision
   - Decalogue
   - Essenes

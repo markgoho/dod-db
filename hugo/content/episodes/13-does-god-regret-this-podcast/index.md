@@ -7,6 +7,7 @@ aliases:
   - /episodes/13/
 tags:
   - Jerusalem
+  - Omni Attributes
   - Sennacherib
   - Hezekiah
   - Dead Sea

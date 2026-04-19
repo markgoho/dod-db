@@ -12,6 +12,7 @@ tags:
   - Judah
   - Deuteronomy
   - Jerusalem
+  - Atheism
   - Christian Nationalism
   - Deutero-Isaiah
   - Joshua

@@ -37,6 +37,7 @@ tags:
   - Goliath
   - Hezekiah
   - Nineveh
+  - Omni Attributes
   - Qumran
   - Samuel
   - theophany

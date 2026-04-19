@@ -21,7 +21,9 @@ tags:
   - Creatio ex nihilo
   - Creation ex nihilo
   - Jacob
+  - Omni Attributes
   - Septuagint
+  - Atheism
   - Baal
   - divine council
   - Elephantine

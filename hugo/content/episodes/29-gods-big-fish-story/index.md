@@ -26,6 +26,7 @@ tags:
   - Univocality
   - inerrancy
   - Judah
+  - Omni Attributes
   - Sukkot
   - Abraham
   - Cherubim

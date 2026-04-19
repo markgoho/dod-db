@@ -1531,6 +1531,123 @@
       "title": "Episode 5 (May 8, 2023), \"Betrayed by Dan Brown\""
     }
   ],
+  "Atheism": [
+    {
+      "ep": 77,
+      "m": 33,
+      "title": "Episode 77 (September 23, 2024), \"What is an Atheist?\""
+    },
+    {
+      "ep": 124,
+      "m": 7,
+      "title": "Who are the REAL Christians?"
+    },
+    {
+      "ep": 132,
+      "m": 3,
+      "title": "Peter Thiel is Bankrupt! (Theologically)"
+    },
+    {
+      "ep": 78,
+      "m": 3,
+      "title": "Episode 78 (September 30, 2024), \"The Biblical View of Immigrants\""
+    },
+    {
+      "ep": 65,
+      "m": 3,
+      "title": "Episode 65 (July 1, 2024), \"I Got Soul, and I'm Super Bad\""
+    },
+    {
+      "ep": 51,
+      "m": 3,
+      "title": "Episode 51 (March 25, 2024), \"Is Religion Make-Believe?\" with Neil Van Leeuwen"
+    },
+    {
+      "ep": 2,
+      "m": 3,
+      "title": "Episode 2 (April 17, 2023), \"God's Wife\" with Prof. Francesca Stavrakopoulou"
+    },
+    {
+      "ep": 146,
+      "m": 2,
+      "title": "Jesus is so Fulfilling!"
+    },
+    {
+      "ep": 120,
+      "m": 2,
+      "title": "Save Me!"
+    },
+    {
+      "ep": 119,
+      "m": 2,
+      "title": "Problematic Prophecy"
+    },
+    {
+      "ep": 113,
+      "m": 2,
+      "title": "Bibliomancy! The Biblical Dance with the Devil?"
+    },
+    {
+      "ep": 91,
+      "m": 2,
+      "title": "Episode 91 (December 30, 2024), \"Star Spangled Christian Nationalism\" With April Ajoy"
+    },
+    {
+      "ep": 40,
+      "m": 2,
+      "title": "Episode 40 (January 8, 2024), \"The Joel McHale Episode!\""
+    },
+    {
+      "ep": 24,
+      "m": 2,
+      "title": "Episode 24 (September 18), \"Tiptoe Through the Talmud\" with Miriam Anzovin"
+    },
+    {
+      "ep": 4,
+      "m": 2,
+      "title": "Episode 4 (May 1, 2023), \"Ehrmageddon!\" with Bart Ehrman"
+    },
+    {
+      "ep": 148,
+      "m": 1,
+      "title": "Unforgivable!"
+    },
+    {
+      "ep": 103,
+      "m": 1,
+      "title": "Episode 103 (March 24, 2025), \"The Pastor Skeptic\""
+    },
+    {
+      "ep": 71,
+      "m": 1,
+      "title": "Episode 71 (August 12, 2024), \"The Rapture is not Coming!\""
+    },
+    {
+      "ep": 59,
+      "m": 1,
+      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
+    },
+    {
+      "ep": 37,
+      "m": 1,
+      "title": "Episode 37 (December 18, 2023), \"Follow That Star!\" with Aaron Adair"
+    },
+    {
+      "ep": 16,
+      "m": 1,
+      "title": "Apostlepalooza!"
+    },
+    {
+      "ep": 8,
+      "m": 1,
+      "title": "Episode 8 (May 29, 2023), \"Contextual Healing\" with Aaron Higashi"
+    },
+    {
+      "ep": 6,
+      "m": 1,
+      "title": "Episode 6 (May 15, 2023), \"God Breathed?\""
+    }
+  ],
   "Athenagoras": [
     {
       "ep": 59,
@@ -14151,6 +14268,58 @@
       "title": "Episode 22 (September 4, 2023), \"Connecting with Source\""
     }
   ],
+  "Omni Attributes": [
+    {
+      "ep": 80,
+      "m": 31,
+      "title": "Episode 80 (October 14, 2024), \"Omni Everything?\""
+    },
+    {
+      "ep": 13,
+      "m": 13,
+      "title": "Episode 13 (July 3, 2023), \"Does God Regret this Podcast?\""
+    },
+    {
+      "ep": 59,
+      "m": 3,
+      "title": "Episode 59 (May 20, 2024), \"The End(s) of Monotheism\" w/ David Burnett"
+    },
+    {
+      "ep": 55,
+      "m": 2,
+      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
+    },
+    {
+      "ep": 53,
+      "m": 2,
+      "title": "Episode 53 (April 8, 2024), \"The Holy Ghost (and Bears!)\""
+    },
+    {
+      "ep": 51,
+      "m": 2,
+      "title": "Episode 51 (March 25, 2024), \"Is Religion Make-Believe?\" with Neil Van Leeuwen"
+    },
+    {
+      "ep": 29,
+      "m": 2,
+      "title": "God's Big Fish Story"
+    },
+    {
+      "ep": 91,
+      "m": 1,
+      "title": "Episode 91 (December 30, 2024), \"Star Spangled Christian Nationalism\" With April Ajoy"
+    },
+    {
+      "ep": 3,
+      "m": 1,
+      "title": "Episode 3 (April 23, 2023), \"Why Is She Salt?\""
+    },
+    {
+      "ep": 1,
+      "m": 1,
+      "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
+    }
+  ],
   "Onan": [
     {
       "ep": 68,
@@ -17838,7 +18007,7 @@
   "Shroud of Turin": [
     {
       "ep": 75,
-      "m": 31,
+      "m": 30,
       "title": "Episode 75 (September 9, 2024), \"Shrouded in Mystery\""
     },
     {
@@ -18688,6 +18857,28 @@
       "ep": 128,
       "m": 1,
       "title": "\"John!\" with Hugo Méndez"
+    }
+  ],
+  "Tithing": [
+    {
+      "ep": 76,
+      "m": 48,
+      "title": "Episode 76 S(September 16, 2024), \"Pay Your Tithing!\""
+    },
+    {
+      "ep": 146,
+      "m": 4,
+      "title": "Jesus is so Fulfilling!"
+    },
+    {
+      "ep": 158,
+      "m": 1,
+      "title": "I Will Have Mercy, Not Dogma"
+    },
+    {
+      "ep": 79,
+      "m": 1,
+      "title": "Episode 79 (October 6, 2024), \"Who is a True Christian\" w/ David Congdon"
     }
   ],
   "Torah": [

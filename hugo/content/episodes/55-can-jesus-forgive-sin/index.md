@@ -23,6 +23,7 @@ tags:
   - Moses
   - Samuel
   - baptism
+  - Omni Attributes
   - Peter
   - Abraham
   - Book of Enoch

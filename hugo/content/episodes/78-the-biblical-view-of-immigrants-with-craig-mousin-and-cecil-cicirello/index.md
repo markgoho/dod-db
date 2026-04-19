@@ -6,6 +6,7 @@ videoId: Jz4YpDhPHEg
 aliases:
   - /episodes/78/
 tags:
+  - Atheism
   - Decalogue
   - Noah
   - cognitive dissonance

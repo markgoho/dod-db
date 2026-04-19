@@ -40,6 +40,7 @@ tags:
   - Satan
   - Septuagint
   - Syria
+  - Tithing
   - Torah
 books:
   - Isaiah

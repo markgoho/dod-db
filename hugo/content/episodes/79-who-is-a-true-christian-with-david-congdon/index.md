@@ -15,8 +15,10 @@ tags:
   - Eschatology
   - Holy Spirit
   - Peter
+  - Tithing
 guests:
   - David Congdon
+episodeTopic: Christian Identity
 draft: false
 ---
 

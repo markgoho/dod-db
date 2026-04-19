@@ -3115,39 +3115,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
   },
   {
-    canonical: "omniscience",
-    variations: [],
-    category: "theology",
-    description:
-      "The state of knowing everything; a characteristic often attributed to God",
-    status: "proposed",
-    addedInEpisode: 80,
-  },
-  {
-    canonical: "omnipotence",
-    variations: [],
-    category: "theology",
-    description:
-      "The state of being all-powerful; a characteristic often attributed to God",
-    status: "proposed",
-    addedInEpisode: 80,
-  },
-  {
-    canonical: "omnipresence",
-    variations: [],
-    category: "theology",
-    description:
-      "The state of being everywhere at once; a characteristic often attributed to God",
-    status: "proposed",
-    addedInEpisode: 80,
-  },
-  {
-    canonical: "acts 15",
-    variations: ["Acts, chapter 15"],
-    category: "literature",
-    status: "rejected",
-  },
-  {
     canonical: "amos",
     variations: ["Book of Amos"],
     category: "character",
@@ -5512,12 +5479,16 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "atheism",
+    canonical: "Atheism",
     variations: ["atheist"],
     category: "theology",
     description:
       "Disbelief in the existence of God or gods; the absence of religious belief",
-    status: "proposed",
+    status: "accepted",
+    episodes: [
+      2, 4, 6, 8, 16, 24, 37, 40, 51, 59, 65, 71, 77, 78, 91, 103, 113, 119,
+      120, 124, 132, 146, 148,
+    ],
   },
   {
     canonical: "theology",
@@ -7148,14 +7119,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "atheists",
-    variations: ["atheist"],
-    category: "religion",
-    description:
-      "Individuals who disbelieve or lack belief in the existence of God or gods",
-    status: "proposed",
-  },
-  {
     canonical: "lahmi",
     variations: ["beit lahm"],
     category: "character",
@@ -7568,11 +7531,12 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Tithing",
-    variations: [],
-    category: "theology",
+    variations: ["tithe"],
+    category: "miscellaneous",
     description:
       "The practice of donating a tenth of one's income or produce, often for religious purposes.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [76, 79, 146, 158],
   },
   {
     canonical: "Ananias",
@@ -9063,6 +9027,22 @@ export const tagVocabulary: TagDefinition[] = [
       "person after whom the Book of Ruth is named. She was a Moabite woman who married an Israelite, Mahlon, specifically not referring generally to the Book of Ruth",
     status: "accepted",
     episodes: [68, 72, 108, 116],
+  },
+  {
+    canonical: "Omni Attributes",
+    variations: [
+      "omnipotent",
+      "omnipotence",
+      "omniscient",
+      "omniscience",
+      "omnipresent",
+      "omnipresence",
+      "omnibenevolent",
+      "omnibenevolence",
+    ],
+    category: "theology",
+    status: "accepted",
+    episodes: [1, 3, 13, 29, 51, 53, 55, 59, 80, 91],
   },
 ];
 

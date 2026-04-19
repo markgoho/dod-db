@@ -12,6 +12,7 @@ tags:
   - Elijah
   - King James Bible
   - Satan
+  - Omni Attributes
   - Samuel
   - Baal
   - Bethel

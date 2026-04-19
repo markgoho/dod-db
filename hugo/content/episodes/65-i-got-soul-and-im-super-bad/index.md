@@ -8,6 +8,7 @@ aliases:
 tags:
   - Stele
   - King James Bible
+  - Atheism
   - Samuel
   - Witch of Endor
   - Anatolia

@@ -7,6 +7,7 @@ aliases:
   - /episodes/8/
 tags:
   - Africa
+  - Atheism
   - Hell
   - Jerusalem
   - Midianites

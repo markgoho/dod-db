@@ -6,7 +6,9 @@ videoId: qNROe-Slo8Y
 aliases:
   - /episodes/51/
 tags:
+  - Atheism
   - Catholicism
+  - Omni Attributes
   - Dead Sea Scrolls
   - Garden of Eden
 books:
