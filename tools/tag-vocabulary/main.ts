@@ -415,27 +415,28 @@ function renderAnalytics(stats: TagStats[]): void {
     return;
   }
 
-  // Top 15 most used tags (sort by episode count)
   const sortedByEpisodeCount = [...stats].sort(
     (a, b) => b.episodeCount - a.episodeCount,
   );
-  const topTags = sortedByEpisodeCount.slice(0, 15);
-  const maxEpisodeCount = Math.max(...topTags.map(t => t.episodeCount));
+  const topTagsByEpisodeCount = sortedByEpisodeCount.slice(0, 15);
+  const maxEpisodeCount = Math.max(
+    ...topTagsByEpisodeCount.map(t => t.episodeCount),
+  );
+
+  const sortedByMentions = [...stats].sort(
+    (a, b) => b.totalMentions - a.totalMentions,
+  );
+  const topTagsByMentions = sortedByMentions.slice(0, 15);
+  const maxMentions = Math.max(...topTagsByMentions.map(t => t.totalMentions));
 
   // Find underused vocabulary terms (in vocabulary but < 3 episodes)
   const underused = stats.filter(s => s.episodeCount < 3 && s.episodeCount > 0);
 
-  // Category distribution
-  const categoryCount: Record<string, number> = {};
-  for (const stat of stats) {
-    categoryCount[stat.category] = (categoryCount[stat.category] || 0) + 1;
-  }
-
   container.innerHTML = `
     <div class="analytics-grid">
       <div class="analytics-card">
-        <div class="analytics-title">Top 15 Most Used Tags</div>
-        ${topTags
+        <div class="analytics-title">Top 15 Tags by Episode Count</div>
+        ${topTagsByEpisodeCount
           .map(tag => {
             const percentage = (tag.episodeCount / maxEpisodeCount) * 100;
             return `
@@ -452,23 +453,23 @@ function renderAnalytics(stats: TagStats[]): void {
       </div>
 
       <div class="analytics-card">
-        <div class="analytics-title">Category Distribution</div>
-        ${Object.entries(categoryCount)
-          .sort((a, b) => b[1] - a[1])
-          .map(([category, count]) => {
-            const percentage = (count / stats.length) * 100;
+        <div class="analytics-title">Top 15 Tags by Total Mentions</div>
+        ${topTagsByMentions
+          .map(tag => {
+            const percentage = (tag.totalMentions / maxMentions) * 100;
             return `
-              <div class="chart-bar">
-                <div class="chart-label">${formatCategoryName(category)}</div>
-                <div class="chart-bar-container">
-                  <div class="chart-bar-fill" style="width: ${percentage}%"></div>
-                </div>
-                <div class="chart-value">${count}</div>
+            <div class="chart-bar">
+              <div class="chart-label">${tag.canonical}</div>
+              <div class="chart-bar-container">
+                <div class="chart-bar-fill" style="width: ${percentage}%"></div>
               </div>
-            `;
+              <div class="chart-value">${tag.totalMentions}</div>
+            </div>
+          `;
           })
           .join("")}
       </div>
+
     </div>
 
     ${
