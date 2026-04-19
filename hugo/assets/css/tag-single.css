@@ -141,7 +141,6 @@
 
 .tag-featured-overview {
   display: grid;
-  gap: var(--space-l);
 }
 
 .tag-featured-callouts {
@@ -150,7 +149,6 @@
 
 .tag-section-heading {
   display: grid;
-  gap: var(--space-2xs);
 }
 
 .tag-section-copy {
@@ -160,7 +158,6 @@
 
 .tag-episodes {
   display: grid;
-  gap: var(--space-l);
 }
 
 @media (width >= 48rem) {

@@ -50,16 +50,11 @@
 
     {{ if or (ne $featuredMarkup "") $topEpisode }}
       <section class="tag-featured-overview">
-        <div class="tag-section-heading">
-          <div>
-            <h2 class="type-section-title tag-section-title">Where to start</h2>
-            <p class="tag-section-copy">
-              Start here for the best in-depth listening on {{ .Title }}:
-              featured segments, featured episodes, and the episode with the
-              most mentions.
-            </p>
-          </div>
-        </div>
+        <h2 class="type-section-title tag-section-title">Where to start</h2>
+        <p class="tag-section-copy">
+          Start here for the best in-depth listening on {{ .Title }}: featured
+          segments, featured episodes, and the episode with the most mentions.
+        </p>
         <div class="tag-featured-callouts episodes-grid">
           {{ $featuredMarkup | safeHTML }}
           {{ if $topEpisode }}
@@ -74,7 +69,9 @@
 
     {{ with .Params.quotes }}
       <section class="tag-quotes" aria-label="Quotes">
-        <h2 class="type-section-title tag-section-title">Quotes from Data</h2>
+        <h2 class="type-section-title tag-section-title">
+          Quotes from the Data
+        </h2>
         <div class="tag-quotes__grid">
           {{ range . }}
             {{ $episodePage := where $.Pages ".Params.episodeNumber" .episode }}
@@ -122,14 +119,12 @@
 
     {{ if and (.Params.showTopEpisodes | default true) (gt (len $featuredEpisodes) 0) }}
       <section class="tag-episodes tag-episodes--featured">
-        <div class="tag-section-heading">
-          <div>
-            <h2 class="type-section-title tag-section-title">Top episodes</h2>
-            <p class="tag-section-copy">
-              Ranked by mentions of {{ .Title }} across the transcript. Start
-              with the top mention above, then keep going here.
-            </p>
-          </div>
+        <div>
+          <h2 class="type-section-title tag-section-title">Top episodes</h2>
+          <p class="tag-section-copy">
+            Ranked by mentions of {{ .Title }} across the transcript. Start with
+            the top mention above, then keep going here.
+          </p>
         </div>
         {{ if gt (len $featuredEpisodes) 0 }}
           <div class="episodes-grid">
@@ -147,14 +142,10 @@
 
     {{ if .Params.showAllEpisodes | default true }}
       <section class="tag-episodes">
-        <div class="tag-section-heading">
-          <div>
-            <h2 class="type-section-title tag-section-title">All episodes</h2>
-            <p class="tag-section-copy">
-              Every episode currently tagged with {{ .Title }}.
-            </p>
-          </div>
-        </div>
+        <h2 class="type-section-title tag-section-title">All episodes</h2>
+        <p class="tag-section-copy">
+          Every episode currently tagged with {{ .Title }}.
+        </p>
         <div class="episodes-grid">
           {{ range sort .Pages ".Params.episodeNumber" "desc" }}
             {{ partial "episode-card" (dict "episode" . "badgeSource" "tags" "currentTerm" $.Title) }}
