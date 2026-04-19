@@ -34,6 +34,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Decalogue matters on the show because it is one of the clearest examples of how familiar biblical categories can flatten a much messier textual reality. What many readers treat as a single, obvious list turns out to be a negotiated tradition with multiple versions, competing numbering systems, and different emphases.
+The Decalogue is one of the clearest examples of how familiar biblical categories can flatten a much messier textual reality. What many readers treat as a single, obvious list turns out to be a negotiated tradition with multiple versions, competing numbering systems, and different emphases.
 
-That makes the topic especially useful for conversations about translation, canon, and the history of interpretation. When the Decalogue comes up, the discussion usually broadens into how later religious and political communities selected one arrangement, called it self-evident, and treated that choice as if it were the only biblical option.
+The topic is especially useful for conversations about translation, canon, and the history of interpretation. When the Decalogue comes up, the discussion usually broadens into how later religious and political communities selected one arrangement, called it self-evident, and treated that choice as if it were the only biblical option.

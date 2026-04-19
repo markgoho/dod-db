@@ -37,6 +37,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-The King James Bible matters on the show because it sits at the intersection of translation, canon, manuscript history, and politics. Discussions under this tag return again and again to the way its prestige can make later readers mistake one influential English revision for a transparent window onto ancient Hebrew and Greek texts.
+The King James Bible sits at the intersection of translation, canon, manuscript history, and politics. Discussions under this topic return again and again to the way its prestige can make later readers mistake one influential English revision for a transparent window onto ancient Hebrew and Greek texts.
 
-That makes it useful as both a historical artifact and a case study in how Bible translation works. Episodes connected to this tag often use the KJV to show how inherited wording can preserve older traditions, flatten textual problems, or carry institutional priorities forward long after the world that produced the translation has changed.
+It is useful both as a historical artifact and as a case study in how Bible translation works. Episodes connected to this topic often use the KJV to show how inherited wording can preserve older traditions, flatten textual problems, or carry institutional priorities forward long after the world that produced the translation has changed.

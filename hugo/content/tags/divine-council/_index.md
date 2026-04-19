@@ -34,4 +34,4 @@ showAllEpisodes: true
 
 The divine council matters in this project because it opens up a very different map of biblical religion from the flattened monotheism many readers assume from the start. It ties together patron deities, Psalm 82, Deuteronomy 32, the host of heaven, and the long process by which older divine hierarchies are reworked rather than simply erased.
 
-That makes the tag especially useful for tracing continuity and change across the Hebrew Bible and beyond. Discussions gathered here often show how older ideas about many gods under a high god were adapted into later Jewish and Christian language about angels, demons, cosmic rulers, and the universal reign of Israel’s God.
+The topic is especially useful for tracing continuity and change across the Hebrew Bible and beyond. Discussions gathered here often show how older ideas about many gods under a high god were adapted into later Jewish and Christian language about angels, demons, cosmic rulers, and the universal reign of Israel’s God.

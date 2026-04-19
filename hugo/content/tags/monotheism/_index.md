@@ -35,6 +35,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Monotheism matters on the show because it is both a major theme in biblical interpretation and a case study in how inherited categories can distort ancient evidence. Conversations about the Hebrew Bible, early Judaism, Paul, and later Christianity keep returning to whether "monotheism" actually describes the texts and communities under discussion or whether it imports later expectations into much older material.
+Monotheism is both a major theme in biblical interpretation and a case study in how inherited categories can distort ancient evidence. Conversations about the Hebrew Bible, early Judaism, Paul, and later Christianity keep returning to whether "monotheism" actually describes the texts and communities under discussion or whether it imports later expectations into much older material.
 
-That makes the tag central to the show's larger method. Episodes tagged monotheism often focus less on defending or rejecting a doctrine in the abstract and more on asking how the term functions rhetorically: as a boundary marker, a claim of superiority, or a way of smoothing over divine multiplicity in the texts. In that sense, monotheism is one of the clearest examples of the show's data-over-dogma approach to biblical studies.
+For that reason, the topic is central to the show's larger method. Episodes tagged monotheism often focus less on defending or rejecting a doctrine in the abstract and more on asking how the term functions rhetorically: as a boundary marker, a claim of superiority, or a way of smoothing over divine multiplicity in the texts. In that sense, monotheism is one of the clearest examples of the show's data-over-dogma approach to biblical studies.

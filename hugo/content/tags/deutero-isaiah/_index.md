@@ -36,6 +36,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Deutero-Isaiah matters on the show because it is one of the clearest examples of how biblical books can preserve multiple historical layers rather than a single moment of authorship. Episodes under this tag return to the exile, the rise of Cyrus, shifts in language and perspective, and the methodological questions that lead scholars to distinguish Isaiah 40–55 from earlier material.
+Deutero-Isaiah is one of the clearest examples of how biblical books can preserve multiple historical layers rather than a single moment of authorship. Episodes under this topic return to the exile, the rise of Cyrus, shifts in language and perspective, and the methodological questions that lead scholars to distinguish Isaiah 40–55 from earlier material.
 
-It also becomes a recurring flashpoint in discussions about prophecy, authorship, and monotheism. The tag often gathers episodes where the hosts use Deutero-Isaiah to explain why historical context changes interpretation, and why later theological readings can obscure the compositional history of the text itself.
+It also becomes a recurring flashpoint in discussions about prophecy, authorship, and monotheism. The topic often gathers episodes where the hosts use Deutero-Isaiah to explain why historical context changes interpretation, and why later theological readings can obscure the compositional history of the text itself.

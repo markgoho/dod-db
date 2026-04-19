@@ -32,4 +32,4 @@ showAllEpisodes: true
 
 Second Coming comes up on the show as a way into larger debates about prophecy, apocalyptic expectation, and how readers stitch together Daniel, the Gospels, Paul, and Revelation into one future timetable. The recurring argument is that the doctrine people often treat as straightforward is actually produced by negotiation among texts that do not line up neatly, especially once failed first-century expectations are taken seriously.
 
-The topic also matters because it shapes present-day behavior. Episodes tied to this tag connect Second Coming belief to anxiety, speculative end-times culture, and political uses of scripture, including the tendency to interpret wars, pandemics, or nationalism as signs that history is reaching its climax.
+The topic also matters because it shapes present-day behavior. Episodes tied to this topic connect Second Coming belief to anxiety, speculative end-times culture, and political uses of scripture, including the tendency to interpret wars, pandemics, or nationalism as signs that history is reaching its climax.

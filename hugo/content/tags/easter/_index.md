@@ -30,4 +30,4 @@ showAllEpisodes: true
 
 Easter matters in this project because it gathers several recurring themes into one place: Christian origins, Jewish context, the use and misuse of comparative religion, and the persistence of internet myths dressed up as historical certainty. It is one of those topics where a familiar holiday becomes a compact lesson in how scholars weigh evidence, chronology, and analogy.
 
-That makes Easter especially useful for showing the difference between superficial resemblance and historical dependence. Discussions under this tag often move quickly from resurrection traditions to calendars, etymology, and medieval custom, all while testing whether a popular explanation actually fits the evidence.
+Easter is especially useful for showing the difference between superficial resemblance and historical dependence. Discussions under this topic often move quickly from resurrection traditions to calendars, etymology, and medieval custom, all while testing whether a popular explanation actually fits the evidence.

@@ -28,6 +28,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Junia matters on the show because she sits at the center of recurring arguments about women’s authority in early Christianity. When the hosts return to her, they are usually testing whether inherited church assumptions match the textual and historical evidence, or whether later readers reshaped the evidence to make a woman apostle disappear.
+Junia sits at the center of recurring arguments about women’s authority in early Christianity. When the hosts return to her, they are usually testing whether inherited church assumptions match the textual and historical evidence, or whether later readers reshaped the evidence to make a woman apostle disappear.
 
-That makes the tag useful well beyond one verse in Romans. Discussions of Junia often open into broader questions about translation ideology, canonized gender expectations, and the difference between what the texts say and what later traditions became comfortable allowing them to mean.
+The topic is useful well beyond one verse in Romans. Discussions of Junia often open into broader questions about translation ideology, canonized gender expectations, and the difference between what the texts say and what later traditions became comfortable allowing them to mean.

@@ -32,6 +32,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Euphrates matters on the show because it sits at the intersection of geography, empire, and apocalyptic imagination. Discussions tagged here usually move from the river’s role in the world behind the Bible to the way later texts use it as a charged symbol of threat, judgment, and mythic warfare.
+The Euphrates sits at the intersection of geography, empire, and apocalyptic imagination. Discussions tagged here usually move from the river’s role in the world behind the Bible to the way later texts use it as a charged symbol of threat, judgment, and mythic warfare.
 
-That makes it a recurring flashpoint for the podcast’s larger project of separating textual context from viral end-times speculation. When the Euphrates comes up, the point is usually not to decode current events but to show how ancient imagery gets pulled out of context and turned into modern misinformation.
+It also becomes a recurring flashpoint for the podcast’s larger project of separating textual context from viral end-times speculation. When the Euphrates comes up, the point is usually not to decode current events but to show how ancient imagery gets pulled out of context and turned into modern misinformation.

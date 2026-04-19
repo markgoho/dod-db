@@ -30,4 +30,4 @@ showAllEpisodes: true
 
 Prototype theory matters in this project because so many biblical arguments turn on categories that readers assume are stable, obvious, and definition-driven when they are often nothing of the kind. It gives a way to talk about meaning that fits how ancient texts actually sort people, practices, and divine beings: by proximity, overlap, and rhetorical negotiation.
 
-That makes the tag especially helpful for questions about deity, monotheism, race, gender, and interpretation. Discussions gathered here often show how much distortion enters the conversation once readers insist on hard edges for categories that the texts themselves use much more flexibly.
+The topic is especially helpful for questions about deity, monotheism, race, gender, and interpretation. Discussions gathered here often show how much distortion enters the conversation once readers insist on hard edges for categories that the texts themselves use much more flexibly.

@@ -31,6 +31,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-The Council of Nicaea matters on the show because it is one of the most mythologized events in Christian history. It gets invoked in arguments about the Trinity, the canon, Constantine, and the supposed invention of orthodoxy, so it becomes a useful case study in the gap between popular Christian lore and what fourth-century evidence actually shows.
+The Council of Nicaea is one of the most mythologized events in Christian history. It gets invoked in arguments about the Trinity, the canon, Constantine, and the supposed invention of orthodoxy, so it becomes a useful case study in the gap between popular Christian lore and what fourth-century evidence actually shows.
 
-It also matters because Nicaea was not only about one doctrine. Discussions gathered under this tag connect Christological debate, the Arian controversy, the Nicene Creed, Easter calculation, church discipline, and the long afterlife of imperial attempts to enforce theological unity.
+It also matters because Nicaea was not only about one doctrine. Discussions gathered under this topic connect Christological debate, the Arian controversy, the Nicene Creed, Easter calculation, church discipline, and the long afterlife of imperial attempts to enforce theological unity.

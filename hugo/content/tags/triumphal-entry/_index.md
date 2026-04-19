@@ -33,4 +33,4 @@ showAllEpisodes: true
 
 The triumphal entry matters in this project because it sits at the intersection of gospel comparison, scriptural interpretation, and the literary shaping of Jesus traditions. Discussions of the scene regularly turn on how different evangelists order Holy Week, how Matthew handles Zechariah’s poetic parallelism, and how narrative details become evidence for broader theological agendas.
 
-That makes this tag a useful entry point into one of the show’s recurring concerns: the gap between harmonized retellings and the distinct claims made by individual biblical authors. Episodes gathered here tend to treat the triumphal entry not as a flatly reported event but as a dense interpretive scene where kingship, prophecy, symbolism, and gospel redaction all come into view at once.
+This topic opens into one of the show’s recurring concerns: the gap between harmonized retellings and the distinct claims made by individual biblical authors. Episodes gathered here tend to treat the triumphal entry not as a flatly reported event but as a dense interpretive scene where kingship, prophecy, symbolism, and gospel redaction all come into view at once.

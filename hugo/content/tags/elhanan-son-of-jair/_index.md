@@ -32,6 +32,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Elhanan son of Jair matters on the show because he is one of the clearest examples of how later biblical writers and editors can reshape older traditions. When Dan and Dan discuss him, the issue is not just who killed Goliath, but how textual variants, scribal choices, and theological pressures can turn one remembered champion into another figure's accomplishment.
+Elhanan son of Jair is one of the clearest examples of how later biblical writers and editors can reshape older traditions. When Dan and Dan discuss him, the issue is not just who killed Goliath, but how textual variants, scribal choices, and theological pressures can turn one remembered champion into another figure's accomplishment.
 
-That makes Elhanan a recurring touchpoint in discussions about contradiction, harmonization, and the growth of the David story. He becomes a compact case study in how the Bible preserves competing memories of the past and how later texts sometimes smooth those tensions rather than leaving them unresolved.
+Elhanan becomes a recurring touchpoint in discussions about contradiction, harmonization, and the growth of the David story. He becomes a compact case study in how the Bible preserves competing memories of the past and how later texts sometimes smooth those tensions rather than leaving them unresolved.

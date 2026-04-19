@@ -34,6 +34,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Provenance matters on the show because it is one of the clearest examples of method shaping conclusions. A spectacular inscription or artifact can sound decisive in public, but without secure discovery context it may tell scholars very little and can even distort the field for years.
+Provenance is one of the clearest examples of method shaping conclusions. A spectacular inscription or artifact can sound decisive in public, but without secure discovery context it may tell scholars very little and can even distort the field for years.
 
-That makes provenance a recurring bridge between biblical studies and archaeology. When the hosts talk about it, they are usually also talking about forgery, looting, publication ethics, and the difference between exciting claims and evidence that can actually bear historical weight.
+Provenance becomes a recurring bridge between biblical studies and archaeology. When the hosts talk about it, they are usually also talking about forgery, looting, publication ethics, and the difference between exciting claims and evidence that can actually bear historical weight.

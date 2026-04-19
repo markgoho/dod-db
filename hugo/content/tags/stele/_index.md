@@ -34,6 +34,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Stele matters on the show because it ties together archaeology, ancient religion, and cognitive approaches to ritual in a single concrete object. Once the standing stone is understood as a site of presence rather than a neutral artifact, discussions of temples, offerings, ancestors, and divine images become much easier to connect.
+A stele ties together archaeology, ancient religion, and cognitive approaches to ritual in a single concrete object. Once the standing stone is understood as a site of presence rather than a neutral artifact, discussions of temples, offerings, ancestors, and divine images become much easier to connect.
 
-That makes the tag especially useful for episodes about how ancient Israelites and their neighbors imagined gods, the dead, and sacred space. Conversations about stelae often open outward into questions about headstones, ancestor care, the Ark, inscribed law, and the long transition from visible cult objects to textual forms of divine presence.
+The topic is especially useful for episodes about how ancient Israelites and their neighbors imagined gods, the dead, and sacred space. Conversations about stelae often open outward into questions about headstones, ancestor care, the Ark, inscribed law, and the long transition from visible cult objects to textual forms of divine presence.

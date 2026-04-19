@@ -30,6 +30,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-This topic matters on the show because abortion is where arguments about the Bible, personhood, and public ethics get forced into direct contact. Episodes under this tag tend to resist simple proof-texting, asking instead how ancient texts treated fetal life, how later Jewish and Christian interpreters argued about quickening and birth, and why modern readers keep demanding a single timeless answer.
+Abortion is where arguments about the Bible, personhood, and public ethics get forced into direct contact. Episodes under this topic tend to resist simple proof-texting, asking instead how ancient texts treated fetal life, how later Jewish and Christian interpreters argued about quickening and birth, and why modern readers keep demanding a single timeless answer.
 
 It also matters because abortion became a powerful identity marker in modern Christian politics. The conversations collected here often trace how a complex moral and legal issue gets recast as a boundary line for belonging, and how debates about scriptural authority, theological tradition, and bodily autonomy get folded into broader struggles over power and social control.

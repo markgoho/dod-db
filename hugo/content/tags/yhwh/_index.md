@@ -35,4 +35,4 @@ showAllEpisodes: true
 
 YHWH comes up on the show as more than a pronunciation debate. It is a window into how biblical texts mark divine identity, how Jewish and Christian traditions handled reverence for the name, and how English translations often smooth over distinctions that matter in context.
 
-That makes the topic especially useful for conversations about theology and interpretation. When the hosts focus on YHWH, they are often also talking about reception history, translation philosophy, and the gap between ancient textual practice and modern assumptions.
+The topic is especially useful for conversations about theology and interpretation. When the hosts focus on YHWH, they are often also talking about reception history, translation philosophy, and the gap between ancient textual practice and modern assumptions.

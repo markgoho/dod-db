@@ -35,6 +35,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Satan matters on the show because it is one of the clearest examples of a later religious synthesis being read backward into earlier texts. Episodes gathered here regularly distinguish between the Hebrew Bible’s use of satan as a role or title, later Jewish developments around hostile spiritual powers, and Christian traditions that collapse multiple figures into one cosmic opponent.
+Satan is one of the clearest examples of a later religious synthesis being read backward into earlier texts. Episodes gathered here regularly distinguish between the Hebrew Bible’s use of satan as a role or title, later Jewish developments around hostile spiritual powers, and Christian traditions that collapse multiple figures into one cosmic opponent.
 
-That makes the topic especially useful for conversations about historical development, translation, and theological system-building. When the hosts return to Satan, they are usually also tracing how terms like devil, accuser, Beelzebul, serpent, and Lucifer overlap, diverge, and eventually get treated as if they had always meant the same thing.
+The topic is especially useful for conversations about historical development, translation, and theological system-building. When the hosts return to Satan, they are usually also tracing how terms like devil, accuser, Beelzebul, serpent, and Lucifer overlap, diverge, and eventually get treated as if they had always meant the same thing.

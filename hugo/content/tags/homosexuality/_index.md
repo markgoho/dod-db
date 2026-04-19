@@ -35,6 +35,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-This topic matters on the show because it sits at the intersection of biblical interpretation, sexual ethics, translation, and modern identity. Episodes under this tag repeatedly argue that many familiar proof texts are really debates about violence, purity, patriarchy, procreation, or status, and only become statements about homosexuality when later readers map modern categories onto ancient material.
+This topic sits at the intersection of biblical interpretation, sexual ethics, translation, and modern identity. Episodes under this topic repeatedly argue that many familiar proof texts are really debates about violence, purity, patriarchy, procreation, or status, and only become statements about homosexuality when later readers map modern categories onto ancient material.
 
-That makes the tag a useful guide to one of the project’s recurring questions: what happens when contemporary culture-war arguments claim direct biblical backing. Discussions here often move from specific passages to the larger issue of how communities decide which inherited sexual norms remain binding, which ones have already been renegotiated, and why some are still used to police the lives of LGBTQ people.
+The topic is a useful guide to one of the project’s recurring questions: what happens when contemporary culture-war arguments claim direct biblical backing. Discussions here often move from specific passages to the larger issue of how communities decide which inherited sexual norms remain binding, which ones have already been renegotiated, and why some are still used to police the lives of LGBTQ people.

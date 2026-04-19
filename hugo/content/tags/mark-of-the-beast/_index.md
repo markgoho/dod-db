@@ -30,4 +30,4 @@ showAllEpisodes: true
 
 The Mark of the Beast matters in this project because it is one of the clearest examples of apocalyptic imagery being detached from its original context and repeatedly repurposed for modern fear. It draws together gematria, Roman imperial symbolism, Revelation’s coded language, and the long history of interpreters trying to make ancient polemic map neatly onto contemporary technology or politics.
 
-That makes the tag especially useful for showing how apocalyptic texts work. Discussions gathered here tend to highlight the gap between what Revelation was doing in a late first-century setting and the many later attempts to treat it as a running commentary on barcodes, implants, vaccines, or whatever panic happens to be current.
+The topic is especially useful for showing how apocalyptic texts work. Discussions gathered here tend to highlight the gap between what Revelation was doing in a late first-century setting and the many later attempts to treat it as a running commentary on barcodes, implants, vaccines, or whatever panic happens to be current.

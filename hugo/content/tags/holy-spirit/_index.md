@@ -35,6 +35,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-The Holy Spirit matters on the show because it is one of the clearest examples of a biblical idea that shifts meaning across time. Discussions return to it when the hosts want to distinguish older ideas about God's spirit from later Trinitarian theology, or when a passage assumes the Spirit is acting without clearly treating it as a separate divine person. That makes the topic useful for showing how ancient intuitions about agency, presence, and embodiment can evolve into formal doctrine.
+The Holy Spirit is one of the clearest examples of a biblical idea that shifts meaning across time. Discussions return to it when the hosts want to distinguish older ideas about God's spirit from later Trinitarian theology, or when a passage assumes the Spirit is acting without clearly treating it as a separate divine person. That makes the topic useful for showing how ancient intuitions about agency, presence, and embodiment can evolve into formal doctrine.
 
 It also surfaces in episodes about exorcism, baptism, Jesus' identity, and the unforgivable sin, where the Spirit becomes a flashpoint for competing interpretations. Those conversations let the show trace how different biblical authors frame the Spirit, how later readers harmonize those differences, and why modern believers often inherit a much more fixed concept than the texts themselves present.

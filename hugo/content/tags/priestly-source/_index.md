@@ -31,6 +31,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-The Priestly Source matters on the show because it opens up some of the Bible's most technical and most programmatic material. Discussions under this tag return to questions of authorship, source criticism, ritual theory, sacred space, and the way priestly writers imagine holiness, impurity, sacrifice, and divine presence working together.
+The Priestly Source opens up some of the Bible's most technical and most programmatic material. Discussions under this topic return to questions of authorship, source criticism, ritual theory, sacred space, and the way priestly writers imagine holiness, impurity, sacrifice, and divine presence working together.
 
 It also becomes a key test case for reading the Pentateuch as a composite text. Episodes linked here often use P to explain why stories like Genesis 1, the flood, or Genesis 17 look the way they do, and how later readers can mistake one literary layer for the whole voice of the Bible.

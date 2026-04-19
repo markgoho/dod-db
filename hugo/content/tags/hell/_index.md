@@ -34,6 +34,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Hell matters on the show because it is one of the clearest examples of how readers flatten multiple ancient ideas into a single familiar doctrine. Episodes tagged here often trace the movement from the shared grave of Sheol, through Gehenna and Enochic punishment traditions, into the more elaborate and inconsistent afterlife schemes found in the New Testament and later Christianity.
+Hell is one of the clearest examples of how readers flatten multiple ancient ideas into a single familiar doctrine. Episodes tagged here often trace the movement from the shared grave of Sheol, through Gehenna and Enochic punishment traditions, into the more elaborate and inconsistent afterlife schemes found in the New Testament and later Christianity.
 
-That makes the topic especially useful for conversations about translation, historical development, and theological negotiation. When the hosts talk about hell, they are usually also talking about how later traditions systematized material that the biblical texts themselves leave diverse, unstable, and often unresolved.
+The topic is especially useful for conversations about translation, historical development, and theological negotiation. When the hosts talk about hell, they are usually also talking about how later traditions systematized material that the biblical texts themselves leave diverse, unstable, and often unresolved.

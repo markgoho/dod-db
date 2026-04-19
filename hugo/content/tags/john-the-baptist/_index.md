@@ -30,6 +30,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-John the Baptist recurs on the show as more than a supporting character in Jesus's story. Discussions under this tag return to his independent movement, the historical credibility of his execution, and the way later gospel authors seem to reduce his prominence even while preserving evidence that he was a figure of enormous public influence.
+John the Baptist recurs on the show as more than a supporting character in Jesus's story. Discussions under this topic return to his independent movement, the historical credibility of his execution, and the way later gospel authors seem to reduce his prominence even while preserving evidence that he was a figure of enormous public influence.
 
-That makes him a useful window into several of the show's core interests: how competing early traditions get folded into scripture, how ritual practices like baptism evolve, and how historical memory can preserve traces of rivalry even when a text is trying to resolve it. Episodes here often use John to show how much early Christian origins still depend on a Jewish prophet whose own following did not simply disappear.
+He is therefore a useful window into several of the show's core interests: how competing early traditions get folded into scripture, how ritual practices like baptism evolve, and how historical memory can preserve traces of rivalry even when a text is trying to resolve it. Episodes here often use John to show how much early Christian origins still depend on a Jewish prophet whose own following did not simply disappear.

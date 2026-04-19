@@ -32,6 +32,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Arad matters on the show because it anchors big claims in a concrete archaeological site. When the hosts talk about temples, standing stones, divine images, or the slow consolidation of worship in Jerusalem, Arad is one of the places that lets them point to material remains instead of relying only on later literary memory.
+Arad anchors big claims in a concrete archaeological site. When the hosts talk about temples, standing stones, divine images, or the slow consolidation of worship in Jerusalem, Arad is one of the places that lets them point to material remains instead of relying only on later literary memory.
 
-That makes the tag especially useful for episodes about religious change in ancient Judah. Discussions of Arad often turn on the tension between the biblical ideal of one sanctioned temple and evidence that authorized worship, priestly administration, and even divine imagery could exist at other Judahite sites before those practices were suppressed, reinterpreted, or lost.
+The topic is especially useful for episodes about religious change in ancient Judah. Discussions of Arad often turn on the tension between the biblical ideal of one sanctioned temple and evidence that authorized worship, priestly administration, and even divine imagery could exist at other Judahite sites before those practices were suppressed, reinterpreted, or lost.

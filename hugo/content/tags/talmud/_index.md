@@ -27,6 +27,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-The Talmud matters here because it shows how scriptural interpretation becomes an extended argument rather than a static rulebook. Episodes under this tag return to the way rabbinic literature preserves disagreement, fills in legal gaps, and works out what fidelity to Torah looks like in practice.
+The Talmud matters here because it shows how scriptural interpretation becomes an extended argument rather than a static rulebook. Episodes under this topic return to the way rabbinic literature preserves disagreement, fills in legal gaps, and works out what fidelity to Torah looks like in practice.
 
 It also opens up questions about authority, tradition, and reception. Sometimes the focus is the Talmud itself; other times it appears as a later interpretive witness that helps explain how Jewish readers negotiated commandments, purity, oral tradition, and the practical problems left unresolved by the biblical text.

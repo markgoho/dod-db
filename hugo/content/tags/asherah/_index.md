@@ -1,6 +1,6 @@
 ---
 title: Asherah
-definition: Asherah is a goddess associated in the show’s framing with the older polytheistic world behind the Hebrew Bible, especially in discussions of inscriptions, divine families, and the gradual elevation of YHWH over other deities. On Data Over Dogma, the tag usually marks conversations about how biblical and archaeological evidence preserves traces of a goddess later marginalized by monotheizing traditions.
+definition: Asherah is a goddess associated in the show’s framing with the older polytheistic world behind the Hebrew Bible, especially in discussions of inscriptions, divine families, and the gradual elevation of YHWH over other deities. On Data Over Dogma, the topic usually marks conversations about how biblical and archaeological evidence preserves traces of a goddess later marginalized by monotheizing traditions.
 aliases:
   - /tags/athirat/
 knownAs:
@@ -31,6 +31,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Asherah matters on the show because she opens up a fuller picture of ancient Israelite religion than later confessional readings usually allow. Once her presence is taken seriously, familiar biblical debates about monotheism, idolatry, and reform look less like timeless theology and more like evidence of real competition within an evolving pantheon.
+Asherah opens up a fuller picture of ancient Israelite religion than later confessional readings usually allow. Once her presence is taken seriously, familiar biblical debates about monotheism, idolatry, and reform look less like timeless theology and more like evidence of real competition within an evolving pantheon.
 
-That makes the tag a recurring flashpoint for the podcast’s broader method. Discussions of Asherah often bring together textual criticism, archaeology, and the history of religion to show how later editors preserved clues about beliefs they were also trying to constrain or overwrite.
+As a result, the topic becomes a recurring flashpoint for the podcast’s broader method. Discussions of Asherah often bring together textual criticism, archaeology, and the history of religion to show how later editors preserved clues about beliefs they were also trying to constrain or overwrite.

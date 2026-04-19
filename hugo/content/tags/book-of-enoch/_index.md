@@ -38,6 +38,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-The Book of Enoch matters on the show because it opens a window onto the Second Temple Jewish world that shaped many later biblical and Christian ideas. Episodes gathered here return to it as a source for traditions about the Watchers, Genesis 6, demons, divine punishment, the Son of Man, and the afterlife that later readers often mistake for purely biblical developments.
+The Book of Enoch opens a window onto the Second Temple Jewish world that shaped many later biblical and Christian ideas. Episodes gathered here return to it as a source for traditions about the Watchers, Genesis 6, demons, divine punishment, the Son of Man, and the afterlife that later readers often mistake for purely biblical developments.
 
 It also matters because it exposes how unstable canon and authority could be in antiquity. The hosts regularly use Enoch to show that a text can be noncanonical for most communities and still be historically decisive for understanding Jude, 2 Peter, Revelation, early Christology, and the conceptual background of hell, angels, and evil.

@@ -32,6 +32,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Rapture matters on the show because it sits at the intersection of biblical interpretation, modern theology, and lived religious harm. Episodes tagged here typically trace how a recent end-times framework was assembled from passages in Thessalonians, the Gospels, Daniel, and Revelation, then treated as if it were the Bible’s obvious and ancient teaching.
+The rapture sits at the intersection of biblical interpretation, modern theology, and lived religious harm. Episodes tagged here typically trace how a recent end-times framework was assembled from passages in Thessalonians, the Gospels, Daniel, and Revelation, then treated as if it were the Bible’s obvious and ancient teaching.
 
-That makes the topic a recurring case study in how inherited frameworks shape what readers think scripture says. The discussion often turns from the history of the doctrine itself to its effects: anxiety, fear, political fatalism, and the use of apocalyptic expectation to justify harmful ways of reading both the text and the world.
+The topic becomes a recurring case study in how inherited frameworks shape what readers think scripture says. The discussion often turns from the history of the doctrine itself to its effects: anxiety, fear, political fatalism, and the use of apocalyptic expectation to justify harmful ways of reading both the text and the world.

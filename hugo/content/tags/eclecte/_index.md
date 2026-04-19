@@ -33,6 +33,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Eclecte matters on the show because the question is not just what one Greek phrase means, but how manuscript habits and grammatical expectations shape who becomes visible in the New Testament. The discussion treats the name as a test case for whether inherited translations have obscured a woman who may have stood at the center of 2 John's network of authority and hospitality.
+With Eclecte, the question is not just what one Greek phrase means, but how manuscript habits and grammatical expectations shape who becomes visible in the New Testament. The discussion treats the name as a test case for whether inherited translations have obscured a woman who may have stood at the center of 2 John's network of authority and hospitality.
 
-That makes the topic useful beyond a single textual crux. Conversations under this tag open into broader questions about women in early Christianity, the force of epistolary conventions, and how small scribal changes can have outsized effects on interpretation.
+The topic reaches well beyond a single textual crux. Conversations under this topic open into broader questions about women in early Christianity, the force of epistolary conventions, and how small scribal changes can have outsized effects on interpretation.

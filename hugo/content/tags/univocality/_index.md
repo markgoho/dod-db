@@ -37,4 +37,4 @@ showAllEpisodes: true
 
 Univocality matters in this project because it sits underneath a wide range of modern arguments about inspiration, inerrancy, contradiction, and doctrinal certainty. Once the Bible is treated as a single speaker rather than a library of competing texts, interpretation often shifts from listening to individual authors toward forcing agreement among them.
 
-That makes the tag especially useful for understanding how harmonization works. Discussions gathered here tend to surface the places where later readers smooth over conflict between Paul and James, Samuel and Chronicles, or other textual voices that are more illuminating when allowed to remain in tension.
+The topic is especially useful for understanding how harmonization works. Discussions gathered here tend to surface the places where later readers smooth over conflict between Paul and James, Samuel and Chronicles, or other textual voices that are more illuminating when allowed to remain in tension.

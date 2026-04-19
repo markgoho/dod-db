@@ -27,6 +27,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Mary Magdalene matters on the show because she sits at the crossroads of several recurring themes: how manuscripts differ, how later interpreters fuse separate women into a single character, and how struggles over authority shape which voices become central or suspicious. Conversations under this tag often use her as a case study in how reception history can harden speculation into supposed biblical fact.
+Mary Magdalene sits at the crossroads of several recurring themes: how manuscripts differ, how later interpreters fuse separate women into a single character, and how struggles over authority shape which voices become central or suspicious. Conversations under this topic often use her as a case study in how reception history can harden speculation into supposed biblical fact.
 
-That makes this page a useful guide to a broader argument about early Christianity. When the topic comes up, the discussion is often really about who gets to bear witness, who gets remembered as authoritative, and how later traditions can minimize a figure without fully erasing the traces she left behind.
+This page also serves as a useful guide to a broader argument about early Christianity. When the topic comes up, the discussion is often really about who gets to bear witness, who gets remembered as authoritative, and how later traditions can minimize a figure without fully erasing the traces she left behind.

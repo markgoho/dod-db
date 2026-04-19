@@ -1,17 +1,17 @@
 ---
 name: create-tag-page
-description: Create a rich Hugo tag landing page from existing transcript, segment, and tag index data. Use when the user asks to create a tag page, write a topic landing page, or generate a new hand-authored tag page.
+description: Create a rich Hugo topic landing page from existing transcript, segment, and topic index data. Use when the user asks to create a topic page, write a topic landing page, or generate a new hand-authored topic page.
 ---
 
 # Create Tag Page
 
-This skill guides you through creating a hand-authored tag landing page for the Hugo site using deterministic context gathering, Claude reasoning, and a save script.
+This skill guides you through creating a hand-authored topic landing page for the Hugo site using deterministic context gathering, Claude reasoning, and a save script.
 
 ## Input
 
-A tag name, such as `Eschatology` or `YHWH`.
+A topic name, such as `Eschatology` or `YHWH`.
 
-If the user does not provide a tag name, ask for one before proceeding.
+If the user does not provide a topic name, ask for one before proceeding.
 
 ## Workflow
 
@@ -20,17 +20,19 @@ If the user does not provide a tag name, ask for one before proceeding.
 Run:
 
 ```bash
-bun run src/scripts/gather-tag-context.ts <tag-name>
+bun run tag-page:gather -- <tag-name>
 ```
+
+If that script does not exist yet, stop and add or request a package.json script rather than hardcoding paths or relying on the current working directory.
 
 This returns structured JSON with:
 
-- the requested tag name
+- the requested topic name
 - the canonical vocabulary entry, including category, variations, and status
 - the top 6 episodes by mention count from `hugo/data/tag-episode-index.json`
 - matching segment candidates from processed video metadata and Hugo `segmentData`
 - transcript excerpts from the top 5 episodes
-- any existing tag page at `hugo/content/tags/{slug}/_index.md`
+- any existing topic page at `hugo/content/tags/{slug}/_index.md`
 
 If the script exits with an error, stop and tell the user.
 
@@ -40,7 +42,7 @@ Use the gathered JSON to make the authorial decisions.
 
 #### Canonical naming and aliases
 
-- Use the canonical tag name for the page title and slug.
+- Use the canonical topic name for the page title and slug.
 - The gathered `variations` now include `name` and `isAliasCandidate`.
 - Treat `isAliasCandidate: true` as the default source for frontmatter `aliases` and visible `knownAs` entries.
 - Treat `isAliasCandidate: false` as mechanical forms that should normally stay out of `aliases` and `knownAs`.
@@ -55,7 +57,7 @@ Use the gathered JSON to make the authorial decisions.
 - Featured items should come from different episodes.
 - Do not include both a segment and its parent episode as separate featured items.
 - Prefer verified segments when available.
-- If a verified segment's `topicLabel` directly matches the tag you are building, treat that as the default first featured item.
+- If a verified segment's `topicLabel` directly matches the topic you are building, treat that as the default first featured item.
 - Only skip that direct-match segment if the evidence shows it is weak, incidental, or less central than another verified segment.
 - Prefer substantive segment types in this order:
   1. `what-is-that`
@@ -102,6 +104,9 @@ featuredItems:
 #### Body
 
 - Write 1 to 2 body paragraphs explaining why this topic matters on the show.
+- Start with the explanation itself, not a framing clause like `X matters on the show because`.
+- Jump directly into the substantive claim, for example `Samson sits at...` rather than `Samson matters on the show because...`.
+- Prefer the topic itself as the grammatical subject of the opening sentence when that reads naturally.
 - Keep the body aligned with the evidence in the gathered context.
 
 ### 3. Save
@@ -141,13 +146,15 @@ Create a JSON object in this shape:
 Then save it with stdin using a quoted heredoc:
 
 ```bash
-bun run src/scripts/save-tag-page.ts <<'EOF'
+bun run tag-page:save <<'EOF'
 {
   "tagSlug": "eschatology",
   "title": "Eschatology"
 }
 EOF
 ```
+
+If that script does not exist yet, stop and add or request a package.json script rather than hardcoding paths or relying on the current working directory.
 
 Prefer stdin via a quoted heredoc for this skill. Avoid inline `printf` JSON because quotes and apostrophes inside the payload can break shell parsing. Do not create temporary JSON files unless stdin is genuinely unavailable.
 
@@ -156,10 +163,10 @@ Prefer stdin via a quoted heredoc for this skill. Avoid inline `printf` JSON bec
 Run:
 
 ```bash
-cd hugo && hugo
+bun run build:hugo
 ```
 
-Confirm the page builds without errors and matches the structure used by existing hand-authored tag pages.
+Confirm the page builds without errors and matches the structure used by existing hand-authored topic pages.
 
 ### 5. Editorial pass
 
@@ -171,14 +178,14 @@ Check for:
 - aliases that are mechanical or not actually useful search targets
 - featured items that are merely acceptable instead of the strongest available choices
 - any missed direct-match verified segment that should have been featured first
-- body or definition wording that feels vague, repetitive, or less sharp than existing strong tag pages
+- body or definition wording that feels vague, repetitive, or less sharp than existing strong topic pages
 
 If any of those are weak, tighten them before concluding.
 
 ## Data Sources
 
 - `src/scripts/gather-tag-context.ts` for deterministic context gathering
-- `hugo/data/tag-episode-index.json` for tag to episode rankings
+- `hugo/data/tag-episode-index.json` for topic to episode rankings
 - `data/processed-videos.json` for episode metadata, segments, and transcript paths
 - `data/transcripts/*.txt` for transcript quotes in `[HH:MM:SS.mmm] Speaker: text` format
 - `hugo/content/episodes/*/index.md` for `segmentData` anchors and guest info
@@ -197,4 +204,4 @@ If any of those are weak, tighten them before concluding.
 
 ## Final Check
 
-Before finishing, verify the generated page matches the structure used by existing hand-authored tag pages and that Hugo builds cleanly.
+Before finishing, verify the generated page matches the structure used by existing hand-authored topic pages and that Hugo builds cleanly.

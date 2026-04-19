@@ -30,4 +30,4 @@ showAllEpisodes: true
 
 Ahaziah matters on the show less as a major standalone character than as a test case for how biblical historiography works. The key discussion centers on the incompatible accounts of his death in Kings and Chronicles, making him a compact example of how later authors could reshape earlier narrative traditions to serve new rhetorical and theological goals.
 
-That makes the Ahaziah material useful whenever the show addresses contradiction, harmonization, and the difference between taking biblical texts seriously and forcing them into artificial agreement. Rather than treating the disagreement as a minor detail to smooth over, the discussion uses Ahaziah to show how much is lost when readers refuse to let each text speak in its own voice.
+The Ahaziah material is especially useful whenever the show addresses contradiction, harmonization, and the difference between taking biblical texts seriously and forcing them into artificial agreement. Rather than treating the disagreement as a minor detail to smooth over, the discussion uses Ahaziah to show how much is lost when readers refuse to let each text speak in its own voice.

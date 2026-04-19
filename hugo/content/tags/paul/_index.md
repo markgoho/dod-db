@@ -31,6 +31,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Paul matters on the show because he sits at the center of recurring debates about law, gentiles, resurrection, slavery, authorship, and the relationship between early Christianity and Judaism. Episodes under this tag often push back on readings that treat Paul as if he stepped outside Judaism and founded a universal religion detached from its Jewish context.
+Paul sits at the center of recurring debates about law, gentiles, resurrection, slavery, authorship, and the relationship between early Christianity and Judaism. Episodes under this topic often push back on readings that treat Paul as if he stepped outside Judaism and founded a universal religion detached from its Jewish context.
 
-That makes Paul a test case for one of the show's biggest themes: the distance between historically situated ancient discourse and the later theological systems built from it. Conversations about him regularly turn on audience, circumstance, and genre, asking what changes when Paul's letters are read as interventions aimed at specific gentile communities rather than as abstract doctrinal treatises.
+Paul becomes a test case for one of the show's biggest themes: the distance between historically situated ancient discourse and the later theological systems built from it. Conversations about him regularly turn on audience, circumstance, and genre, asking what changes when Paul's letters are read as interventions aimed at specific gentile communities rather than as abstract doctrinal treatises.

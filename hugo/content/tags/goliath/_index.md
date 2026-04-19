@@ -30,4 +30,4 @@ showAllEpisodes: true
 
 Goliath matters on the show less as a standalone villain than as a stress test for how biblical stories were transmitted and revised. Discussions of Goliath repeatedly turn into discussions of David's legend, the relationship between Samuel and Chronicles, and the scholarly case that later editors sometimes reshaped inherited material to protect a better-known tradition.
 
-That makes Goliath useful for broader conversations about contradiction, harmonization, and reception history. The topic also spills into later literature like Psalm 151, where David's victory over Goliath is retold in ways that suggest the tradition kept expanding as communities tried to clarify, defend, or embellish the story.
+Goliath is therefore useful for broader conversations about contradiction, harmonization, and reception history. The topic also spills into later literature like Psalm 151, where David's victory over Goliath is retold in ways that suggest the tradition kept expanding as communities tried to clarify, defend, or embellish the story.

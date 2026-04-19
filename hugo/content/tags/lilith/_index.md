@@ -28,6 +28,6 @@ topEpisodesLimit: 6
 showAllEpisodes: true
 ---
 
-Lilith matters on the show because she is a good example of how very small textual traces can accumulate huge later meanings. Conversations tagged here usually move from Isaiah and Mesopotamian demon traditions into later Jewish interpretation, showing how readers built a durable figure out of scattered older materials.
+Lilith is a good example of how very small textual traces can accumulate huge later meanings. Conversations tagged here usually move from Isaiah and Mesopotamian demon traditions into later Jewish interpretation, showing how readers built a durable figure out of scattered older materials.
 
 That also makes Lilith a useful case study in reception history. The topic repeatedly opens into questions about sexuality, gender hierarchy, apotropaic practice, and the way later traditions can become so culturally dominant that people mistake them for the Bible's original picture.
