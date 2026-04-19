@@ -4,6 +4,10 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
+p + .episodes-grid {
+  margin-block-start: var(--space-s);
+}
+
 .term-page--episodes-archive .episodes-grid {
   --space-4xs: 0.1875rem;
   --space-3xs: 0.375rem;

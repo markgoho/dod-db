@@ -119,13 +119,11 @@
 
     {{ if and (.Params.showTopEpisodes | default true) (gt (len $featuredEpisodes) 0) }}
       <section class="tag-episodes tag-episodes--featured">
-        <div>
-          <h2 class="type-section-title tag-section-title">Top episodes</h2>
-          <p class="tag-section-copy">
-            Ranked by mentions of {{ .Title }} across the transcript. Start with
-            the top mention above, then keep going here.
-          </p>
-        </div>
+        <h2 class="type-section-title tag-section-title">Top episodes</h2>
+        <p class="tag-section-copy">
+          Ranked by mentions of {{ .Title }} across the transcript. Start with
+          the top mention above, then keep going here.
+        </p>
         {{ if gt (len $featuredEpisodes) 0 }}
           <div class="episodes-grid">
             {{ range $featuredEpisodes }}
