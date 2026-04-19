@@ -880,16 +880,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
   },
   {
-    canonical: "Ten Commandments",
-    variations: [],
-    category: "literature",
-    status: "accepted",
-    episodes: [
-      14, 17, 21, 23, 33, 40, 44, 45, 66, 68, 75, 78, 93, 96, 97, 101, 102, 104,
-      106, 110, 132, 133,
-    ],
-  },
-  {
     canonical: "exodus 20",
     variations: [],
     category: "literature",
