@@ -4,7 +4,7 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
-.term-page--episodes-archive {
+.term-page--episodes-archive .episodes-grid {
   --space-4xs: 0.1875rem;
   --space-3xs: 0.375rem;
   --space-2xs: 0.75rem;
@@ -25,9 +25,7 @@
   --step-4: 3.6621rem;
   --step-5: 4.5776rem;
   --step-6: 5.722rem;
-}
 
-.term-page--episodes-archive .episodes-grid {
   gap: var(--space-s);
 }
 
