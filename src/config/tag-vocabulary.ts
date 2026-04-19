@@ -7485,12 +7485,13 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "urim and thummim",
+    canonical: "Urim and Thummim",
     variations: ["urim", "thummim"],
     category: "miscellaneous",
     description:
       "Objects used in ancient Israel for divination, mentioned in the Hebrew Bible",
-    status: "proposed",
+    status: "accepted",
+    episodes: [40, 73, 74, 113, 129],
   },
   {
     canonical: "high priest",

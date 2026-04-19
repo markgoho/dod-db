@@ -6631,6 +6631,10 @@
         "mentions": 5
       },
       {
+        "tag": "Urim and Thummim",
+        "mentions": 4
+      },
+      {
         "tag": "YHWH",
         "mentions": 4
       },
@@ -12088,6 +12092,10 @@
     "transcriptPath": "data/transcripts/2024-08-26-episode-73-august-26-2024-bible-magic.txt",
     "tags": [
       {
+        "tag": "Urim and Thummim",
+        "mentions": 23
+      },
+      {
         "tag": "YHWH",
         "mentions": 12
       },
@@ -12314,6 +12322,10 @@
       },
       {
         "tag": "Univocality",
+        "mentions": 1
+      },
+      {
+        "tag": "Urim and Thummim",
         "mentions": 1
       },
       {
@@ -17950,6 +17962,10 @@
         "mentions": 2
       },
       {
+        "tag": "Urim and Thummim",
+        "mentions": 2
+      },
+      {
         "tag": "inerrancy",
         "mentions": 1
       },
@@ -20829,6 +20845,10 @@
       },
       {
         "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Urim and Thummim",
         "mentions": 1
       }
     ],

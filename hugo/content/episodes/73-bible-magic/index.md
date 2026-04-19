@@ -6,6 +6,7 @@ videoId: MhGc3c7LlP0
 aliases:
   - /episodes/73/
 tags:
+  - Urim and Thummim
   - YHWH
   - Ketef Hinnom
   - Saul

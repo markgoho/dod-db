@@ -18,6 +18,7 @@ tags:
   - Judas Iscariot
   - King James Bible
   - Paul
+  - Urim and Thummim
   - inerrancy
   - Isaiah
   - Nebuchadnezzar

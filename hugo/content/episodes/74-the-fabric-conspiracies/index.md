@@ -16,6 +16,7 @@ tags:
   - Gilead
   - Hell
   - Univocality
+  - Urim and Thummim
   - YHWH
 books:
   - Exodus

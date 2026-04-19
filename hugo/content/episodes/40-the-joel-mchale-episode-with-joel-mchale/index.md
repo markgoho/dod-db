@@ -12,6 +12,7 @@ tags:
   - David
   - Witch of Endor
   - Catholicism
+  - Urim and Thummim
   - YHWH
   - Baal
   - baptism

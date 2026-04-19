@@ -28,6 +28,7 @@ tags:
   - Qumran
   - Samson
   - Septuagint
+  - Urim and Thummim
 books:
   - Ezekiel
   - Judges
