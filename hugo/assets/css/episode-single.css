@@ -308,7 +308,8 @@
 
 @keyframes pulse-play {
   50% {
-    box-shadow: 0 0 0 var(--space-xs) color-mix(in srgb, var(--color-action) 50%, transparent);
+    box-shadow: 0 0 0 var(--space-xs)
+      color-mix(in srgb, var(--color-action) 50%, transparent);
     scale: 1.08;
   }
 }
