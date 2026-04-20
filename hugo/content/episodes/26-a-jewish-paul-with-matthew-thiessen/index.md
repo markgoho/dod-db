@@ -5,8 +5,13 @@ episodeNumber: 26
 videoId: sVplhtKv9Jc
 aliases:
   - /episodes/26/
-tags:
+topics:
   - Paul
+  - Rapture
+  - Trinity
+  - David
+  - Ritual Purity
+tags:
   - Judaism
   - Abraham
   - Romans
@@ -15,14 +20,10 @@ tags:
   - circumcision
   - Catholicism
   - Philo of Alexandria
-  - Rapture
-  - Trinity
-  - David
   - forgery
   - Hermeneia
   - Judas Iscariot
   - Maccabees
-  - Ritual Purity
   - Saint Titus
   - Solomon
 books:

@@ -5,51 +5,52 @@ episodeNumber: 104
 videoId: h7SIkjdpCi4
 aliases:
   - /episodes/104/
-tags:
+topics:
   - Angel
-  - Enoch
-  - Peter
   - James
   - Book of Enoch
-  - Sodom
-  - Babylon
   - King James Bible
   - Monotheism
   - Deutero-Isaiah
-  - Deuteronomy
   - Homosexuality
-  - Moses
-  - Baal
-  - Eschatology
   - Paul
-  - Adam
-  - Judah
   - YHWH
-  - Flood
-  - Isaiah
   - Jacob
   - provenance
-  - Textus Receptus
-  - Abraham
   - Covenant Code
   - Dead Sea Scrolls
   - Decalogue
+  - Holy Spirit
+  - Masoretic Text
+  - Second Coming
+  - Septuagint
+  - Trinity
+  - Univocality
+tags:
+  - Enoch
+  - Peter
+  - Sodom
+  - Babylon
+  - Deuteronomy
+  - Moses
+  - Baal
+  - Eschatology
+  - Adam
+  - Judah
+  - Flood
+  - Isaiah
+  - Textus Receptus
+  - Abraham
   - forgery
   - Hermeneia
-  - Holy Spirit
   - inerrancy
   - Isaac
   - Joshua
   - Judas Iscariot
-  - Masoretic Text
   - Nephilim
   - Nineveh
-  - Second Coming
   - Second Temple period
-  - Septuagint
   - Tertullian
-  - Trinity
-  - Univocality
 books:
   - Exodus
   - Isaiah

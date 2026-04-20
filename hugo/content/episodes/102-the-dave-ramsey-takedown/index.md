@@ -5,26 +5,27 @@ episodeNumber: 102
 videoId: 57SveZa-w7g
 aliases:
   - /episodes/102/
+topics:
+  - Gnosticism
+  - Josiah
+  - YHWH
+  - Arad
+  - Christian Nationalism
+  - Decalogue
+  - King James Bible
+  - Priestly Source
 tags:
   - Deuteronomy
   - Jerusalem
-  - Gnosticism
-  - Josiah
   - Joshua
   - Samuel
   - Prophetic Critique
   - Judaism
   - Quran
-  - YHWH
-  - Arad
-  - Christian Nationalism
-  - Decalogue
   - Isaiah
   - John
   - Judah
-  - King James Bible
   - Peter
-  - Priestly Source
   - Sapphira
 books:
   - Deuteronomy

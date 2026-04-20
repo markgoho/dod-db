@@ -5,14 +5,24 @@ episodeNumber: 137
 videoId: lwvdqRsQF-c
 aliases:
   - /episodes/137/
+topics:
+  - Angel
+  - Book of Enoch
+  - Dead Sea Scrolls
+  - Satan
+  - YHWH
+  - Daniel
+  - Flavius Josephus
+  - Hell
+  - Paul
+  - Septuagint
+  - Talmud
+  - Univocality
 tags:
   - Moses
-  - Angel
   - Quran
   - Sodom
   - Adam
-  - Book of Enoch
-  - Dead Sea Scrolls
   - Islam
   - Jerusalem
   - Judas Iscariot
@@ -21,12 +31,7 @@ tags:
   - Judaism
   - Sukkot
   - Eve
-  - Satan
-  - YHWH
-  - Daniel
   - Dead Sea
-  - Flavius Josephus
-  - Hell
   - inerrancy
   - James VanderKam
   - John
@@ -36,12 +41,8 @@ tags:
   - Maccabees
   - Moab
   - Origen
-  - Paul
   - Qumran
   - Samuel
-  - Septuagint
-  - Talmud
-  - Univocality
 books:
   - Genesis
   - Isaiah

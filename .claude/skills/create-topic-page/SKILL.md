@@ -1,9 +1,9 @@
 ---
-name: create-tag-page
+name: create-topic-page
 description: Create a rich Hugo topic landing page from existing transcript, segment, and topic index data. Use when the user asks to create a topic page, write a topic landing page, or generate a new hand-authored topic page.
 ---
 
-# Create Tag Page
+# Create Topic Page
 
 This skill guides you through creating a hand-authored topic landing page for the Hugo site using deterministic context gathering, Claude reasoning, and a save script.
 
@@ -20,7 +20,7 @@ If the user does not provide a topic name, ask for one before proceeding.
 Run:
 
 ```bash
-bun run tag-page:gather -- <tag-name>
+bun run topic-page:gather -- <tag-name>
 ```
 
 If that script does not exist yet, stop and add or request a package.json script rather than hardcoding paths or relying on the current working directory.
@@ -32,7 +32,7 @@ This returns structured JSON with:
 - the top 6 episodes by mention count from `hugo/data/tag-episode-index.json`
 - matching segment candidates from processed video metadata and Hugo `segmentData`
 - transcript excerpts from the top 5 episodes
-- any existing topic page at `hugo/content/tags/{slug}/_index.md`
+- any existing topic page at `hugo/content/topics/{slug}/_index.md`
 
 If the script exits with an error, stop and tell the user.
 
@@ -131,7 +131,7 @@ Create a JSON object in this shape:
 
 ```json
 {
-  "tagSlug": "eschatology",
+  "topicSlug": "eschatology",
   "title": "Eschatology",
   "definition": "The study of end times and final things...",
   "aliases": ["/tags/end-times/"],
@@ -162,9 +162,9 @@ Create a JSON object in this shape:
 Then save it with stdin using a quoted heredoc:
 
 ```bash
-bun run tag-page:save <<'EOF'
+bun run topic-page:save <<'EOF'
 {
-  "tagSlug": "eschatology",
+  "topicSlug": "eschatology",
   "title": "Eschatology"
 }
 EOF
@@ -201,13 +201,13 @@ If any of those are weak, tighten them before concluding.
 
 ## Data Sources
 
-- `src/scripts/gather-tag-context.ts` for deterministic context gathering
+- `src/scripts/gather-topic-context.ts` for deterministic context gathering
 - `hugo/data/tag-episode-index.json` for topic to episode rankings
 - `data/processed-videos.json` for episode metadata, segments, and transcript paths
 - `data/transcripts/*.txt` for transcript quotes in `[HH:MM:SS.mmm] Speaker: text` format
 - `hugo/content/episodes/*/index.md` for `segmentData` anchors and guest info
-- `src/scripts/save-tag-page.ts` for writing the final page
-- `src/scripts/move-tag-page.ts` for renaming an existing page's slug
+- `src/scripts/save-topic-page.ts` for writing the final page
+- `src/scripts/move-topic-page.ts` for renaming an existing page's slug
 
 ## Disambiguation Mode
 
@@ -224,21 +224,21 @@ During the Gather step, `existingPage` will be populated if a page already exist
 1. **Move the existing page** to a qualified slug:
 
 ```bash
-bun run tag-page:move <bare-slug> <qualified-slug> --add-alias
+bun run topic-page:move <bare-slug> <qualified-slug> --add-alias
 ```
 
-For example: `bun run tag-page:move james james-brother-of-jesus --add-alias`
+For example: `bun run topic-page:move james james-brother-of-jesus --add-alias`
 
 Use `--add-alias` if the page was previously published so the old URL still resolves.
 
-2. **Create the new specific page** at its own qualified slug using the normal `tag-page:save` flow.
+2. **Create the new specific page** at its own qualified slug using the normal `topic-page:save` flow.
 
 3. **Create a disambiguation page** at the now-vacated bare slug:
 
 ```bash
-bun run tag-page:save <<'EOF'
+bun run topic-page:save <<'EOF'
 {
-  "tagSlug": "james",
+  "topicSlug": "james",
   "title": "James",
   "definition": "Several figures named James appear in the biblical texts.",
   "isDisambiguation": true,

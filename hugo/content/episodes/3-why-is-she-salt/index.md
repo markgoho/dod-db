@@ -5,45 +5,46 @@ episodeNumber: 3
 videoId: M-7Gql8NQBU
 aliases:
   - /episodes/3/
-tags:
+topics:
   - provenance
+  - Dead Sea Scrolls
+  - Angel
+  - David
+  - Homosexuality
+  - Sennacherib
+  - YHWH
+  - divine council
+  - Goliath
+  - Omni Attributes
+  - Trinity
+tags:
   - Sodom
   - Abraham
-  - Dead Sea Scrolls
   - etiology
   - forgery
   - Dead Sea
   - Ammonites
-  - Angel
   - Deuteronomy
   - Ishmael
   - Moabites
   - Samaritans
   - Adam
-  - David
   - Hagar
-  - Homosexuality
   - Mount Ebal
   - Mount Gerizim
   - Noah
   - Purim
   - Sarah
-  - Sennacherib
-  - YHWH
-  - divine council
   - epigraphy
   - Esther
   - Eve
   - Flood
-  - Goliath
   - Hezekiah
   - Nineveh
-  - Omni Attributes
   - Qumran
   - Samuel
   - theophany
   - Tower of Babel
-  - Trinity
 books:
   - Genesis
   - Deuteronomy

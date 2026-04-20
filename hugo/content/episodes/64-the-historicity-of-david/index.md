@@ -5,37 +5,38 @@ episodeNumber: 64
 videoId: yXeCVNSmhYQ
 aliases:
   - /episodes/64/
-tags:
+topics:
   - David
   - Saul
+  - YHWH
+  - Samson
+  - Stele
+  - Jacob
+  - Angel
+  - Elhanan son of Jair
+  - Goliath
+  - Josiah
+  - Paul
+  - Ritual Purity
+tags:
   - Jonathan
   - Philistines
   - Judah
   - Bathsheba
   - Jael
   - Abigail
-  - YHWH
   - Solomon
   - Jephthah
-  - Samson
   - Canaanites
   - Jerusalem
-  - Stele
-  - Jacob
   - King Jabin
   - Abraham
-  - Angel
   - Bethel
   - Canaan
-  - Elhanan son of Jair
   - Gentiles
-  - Goliath
   - Isaac
   - Jeroboam
-  - Josiah
-  - Paul
   - Rehoboam
-  - Ritual Purity
   - Sea of Galilee
 books:
   - Judges

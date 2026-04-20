@@ -5,8 +5,13 @@ episodeNumber: 76
 videoId: KTw6aVIhMOk
 aliases:
   - /episodes/76/
-tags:
+topics:
   - Tithing
+  - Paul
+  - Holy Spirit
+  - Satan
+  - YHWH
+tags:
   - Deuteronomy
   - Peter
   - Sapphira
@@ -15,17 +20,13 @@ tags:
   - Prophetic Critique
   - Joshua
   - Melchizedek
-  - Paul
   - Barnabas
-  - Holy Spirit
   - Isaiah
   - Jerusalem
   - Judaism
   - Persia
   - Romans
-  - Satan
   - Ugarit
-  - YHWH
 books:
   - Deuteronomy
   - Malachi

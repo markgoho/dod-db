@@ -5,18 +5,19 @@ episodeNumber: 109
 videoId: Zpp6qUqrins
 aliases:
   - /episodes/109/
-tags:
+topics:
   - Easter
+  - Council of Nicaea
+  - Hell
+  - Joseph
+tags:
   - Passover
   - Moses
-  - Council of Nicaea
   - Catholicism
   - Eve
   - Jonah
   - Martin Luther
   - Constantine
-  - Hell
-  - Joseph
   - Protestantism
   - Syria
 books:

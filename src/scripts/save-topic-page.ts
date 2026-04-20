@@ -24,8 +24,8 @@ interface RelatedPage {
   description?: string;
 }
 
-interface SaveTagPageInput {
-  tagSlug: string;
+interface SaveTopicPageInput {
+  topicSlug: string;
   title: string;
   topicName?: string;
   definition: string;
@@ -43,6 +43,18 @@ interface SaveTagPageInput {
 
 interface ParsedArguments {
   inputPath?: string;
+}
+
+async function runCommand(command: string[]): Promise<void> {
+  const child = Bun.spawn(command, {
+    cwd: process.cwd(),
+    stdout: "inherit",
+    stderr: "inherit",
+  });
+  const exitCode = await child.exited;
+  if (exitCode !== 0) {
+    throw new Error(`${command.join(" ")} failed with exit code ${exitCode}`);
+  }
 }
 
 function parseArguments(argv: string[]): ParsedArguments {
@@ -67,9 +79,9 @@ async function readInput(inputPath: string | undefined): Promise<string> {
   return new Response(Bun.stdin.stream()).text();
 }
 
-function validateInput(input: SaveTagPageInput): void {
-  if (!input.tagSlug.trim()) {
-    throw new Error("tagSlug is required");
+function validateInput(input: SaveTopicPageInput): void {
+  if (!input.topicSlug.trim()) {
+    throw new Error("topicSlug is required");
   }
 
   if (!input.title.trim()) {
@@ -199,7 +211,7 @@ function renderRelatedPages(pages: RelatedPage[]): string[] {
   ];
 }
 
-function buildFrontmatter(input: SaveTagPageInput): string {
+function buildFrontmatter(input: SaveTopicPageInput): string {
   if (input.isDisambiguation) {
     const lines = [
       "---",
@@ -253,14 +265,26 @@ async function main(): Promise<void> {
   try {
     const args = parseArguments(process.argv.slice(2));
     const rawInput = await readInput(args.inputPath);
-    const input = JSON.parse(rawInput) as SaveTagPageInput;
+    const input = JSON.parse(rawInput) as SaveTopicPageInput;
     validateInput(input);
 
-    const outputPath = `hugo/content/tags/${input.tagSlug}/_index.md`;
+    const outputPath = `hugo/content/topics/${input.topicSlug}/_index.md`;
     await Bun.write(
       outputPath,
       `${buildFrontmatter(input)}\n${input.body.trim()}\n`,
     );
+
+    await runCommand([
+      "bun",
+      "run",
+      "src/scripts/generate-hugo-episodes.ts",
+      "--all",
+    ]);
+    await runCommand([
+      "bun",
+      "run",
+      "src/scripts/generate-tag-episode-index.ts",
+    ]);
 
     console.log(outputPath);
   } catch (error) {

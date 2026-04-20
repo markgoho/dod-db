@@ -5,36 +5,37 @@ episodeNumber: 94
 videoId: d1E8IL2wMms
 aliases:
   - /episodes/94/
-tags:
+topics:
   - Gnosticism
   - Codex Sinaiticus
-  - Constantine
   - Mary Magdalene
   - Satan
+  - John the Baptist
+  - YHWH
+  - James
+  - Paul
+  - Hell
+  - Septuagint
+tags:
+  - Constantine
   - Arius
   - baptism
-  - John the Baptist
   - Judas Iscariot
   - Peter
-  - YHWH
   - Catholicism
   - Eusebius
   - Gospel of Thomas
-  - James
   - Marcion
-  - Paul
   - Textus Receptus
   - Athanasius of Alexandria
   - Essenes
   - Esther
   - Galilee
-  - Hell
   - Jeremiah
   - Judaism
   - Latin Vulgate
   - Mount Sinai
   - Qumran
-  - Septuagint
 books:
   - Matthew
   - Mark

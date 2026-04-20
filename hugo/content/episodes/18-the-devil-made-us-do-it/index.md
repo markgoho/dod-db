@@ -5,23 +5,28 @@ episodeNumber: 18
 videoId: 4PCkaPZMjTc
 aliases:
   - /episodes/18/
-tags:
+topics:
   - Satan
-  - Balaam
   - Angel
   - YHWH
+  - David
+  - divine council
+  - Septuagint
+  - Book of Enoch
+  - Dead Sea Scrolls
+  - Joseph
+  - King James Bible
+tags:
+  - Balaam
   - Beelzebul
   - Baal
   - Babylon
   - Garden of Eden
   - Moab
   - Moses
-  - David
-  - divine council
   - Judaism
   - Adam
   - Eve
-  - Septuagint
   - Amorites
   - Dead Sea
   - Ishmael
@@ -35,12 +40,8 @@ tags:
   - Ugarit
   - Ammonites
   - Apocrypha
-  - Book of Enoch
-  - Dead Sea Scrolls
   - Jerome
-  - Joseph
   - Justin Martyr
-  - King James Bible
   - Moabites
   - Samuel
 books:

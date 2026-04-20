@@ -5,25 +5,26 @@ episodeNumber: 127
 videoId: 45rDcaUMuso
 aliases:
   - /episodes/127/
+topics:
+  - YHWH
+  - David
+  - Asherah
+  - Joseph
+  - King James Bible
+  - Mary Magdalene
+  - Ritual Purity
 tags:
   - Philistines
-  - YHWH
   - Joshua
   - Jerusalem
-  - David
   - Samuel
-  - Asherah
   - Jeremiah
   - Jericho
   - Moses
   - Passover
   - Babylon
   - Egyptians
-  - Joseph
-  - King James Bible
-  - Mary Magdalene
   - Noah
-  - Ritual Purity
 books:
   - Numbers
   - Exodus

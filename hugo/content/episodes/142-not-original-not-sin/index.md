@@ -5,27 +5,28 @@ episodeNumber: 142
 videoId: d05D1TuJNHI
 aliases:
   - /episodes/142/
+topics:
+  - Paul
+  - Satan
+  - Book of Enoch
+  - Angel
+  - King James Bible
+  - Septuagint
 tags:
   - Adam
   - Eve
-  - Paul
   - Garden of Eden
   - etiology
   - Romans
-  - Satan
   - Augustine
-  - Book of Enoch
   - baptism
   - Isaiah
   - Abraham
-  - Angel
   - Gospel of James
   - Justin Martyr
-  - King James Bible
   - Letter of Aristeas
   - Noah
   - Saint Titus
-  - Septuagint
   - Tertullian
   - The Reformation
 books:

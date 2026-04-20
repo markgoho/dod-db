@@ -5,29 +5,30 @@ episodeNumber: 132
 videoId: 04EVQLvnAj8
 aliases:
   - /episodes/132/
+topics:
+  - David
+  - Paul
+  - Atheism
+  - King James Bible
+  - Daniel
+  - Masoretic Text
+  - Decalogue
+  - Satan
+  - Second Coming
+  - Univocality
 tags:
   - Peter
   - Molek
-  - David
   - Judaism
   - Eschatology
-  - Paul
-  - Atheism
   - Capernaum
-  - King James Bible
   - Solomon
   - Stephen
   - child sacrifice
   - cognitive dissonance
-  - Daniel
-  - Masoretic Text
-  - Decalogue
   - Leningrad Codex
   - Luke
-  - Satan
-  - Second Coming
   - Silas
-  - Univocality
 books:
   - Acts
   - Amos

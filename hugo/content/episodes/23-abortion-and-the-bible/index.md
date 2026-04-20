@@ -5,26 +5,27 @@ episodeNumber: 23
 videoId: "-I3W7CTX8Kw"
 aliases:
   - /episodes/23/
-tags:
+topics:
   - Abortion
-  - Jeremiah
-  - Elizabeth
   - Covenant Code
   - King James Bible
-  - Romans
-  - Judaism
   - Decalogue
   - John the Baptist
   - Mary Magdalene
+  - Holy Spirit
+  - Univocality
+tags:
+  - Jeremiah
+  - Elizabeth
+  - Romans
+  - Judaism
   - Rebekah
   - Barnabas
   - Catholicism
   - Didache
   - Flood
-  - Holy Spirit
   - Isaac
   - Southern Baptist Convention
-  - Univocality
 books:
   - Exodus
   - Jeremiah

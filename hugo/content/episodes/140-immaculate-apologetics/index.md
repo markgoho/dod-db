@@ -5,33 +5,34 @@ episodeNumber: 140
 videoId: XC0oJyopPgo
 aliases:
   - /episodes/140/
-tags:
+topics:
   - Mary Magdalene
   - Flavius Josephus
+  - Shroud of Turin
+  - Univocality
+  - Abortion
+  - James
+  - Angel
+  - Christmas
+  - Hell
+  - Paul
+  - Septuagint
+tags:
   - Crucifixion
   - Catholicism
   - Jeremiah
-  - Shroud of Turin
   - Pontius Pilate
   - inerrancy
   - Romans
-  - Univocality
-  - Abortion
   - Galilee
-  - James
   - Adam
-  - Angel
   - Annunciation
   - Augustine
-  - Christmas
   - Eusebius
-  - Hell
   - Passover
-  - Paul
   - Philo of Alexandria
   - Pliny the Younger
   - Protestantism
-  - Septuagint
 books:
   - Matthew
   - John

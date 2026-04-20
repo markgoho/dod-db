@@ -5,11 +5,18 @@ episodeNumber: 130
 videoId: Sfp8Vj-Ouxw
 aliases:
   - /episodes/130/
+topics:
+  - Septuagint
+  - Paul
+  - Daniel
+  - Abortion
+  - Christian Nationalism
+  - Flavius Josephus
+  - Jacob
+  - Satan
 tags:
   - Jeremiah
   - Baruch
-  - Septuagint
-  - Paul
   - Judaism
   - Babylon
   - Cyrus the Great
@@ -19,13 +26,8 @@ tags:
   - Nebuchadnezzar
   - Ugarit
   - Apocrypha
-  - Daniel
   - Latin Vulgate
   - Jehoiakim
-  - Abortion
-  - Christian Nationalism
-  - Flavius Josephus
-  - Jacob
   - Jerome
   - Letter of Aristeas
   - Martin Luther
@@ -34,7 +36,6 @@ tags:
   - Origen
   - Philo of Alexandria
   - Protestantism
-  - Satan
   - Second Temple period
   - Torah
 books:

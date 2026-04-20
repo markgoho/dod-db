@@ -5,27 +5,28 @@ episodeNumber: 120
 videoId: Zrw0LBtnjn8
 aliases:
   - /episodes/120/
-tags:
-  - Isaiah
+topics:
   - Hell
-  - Judah
-  - Moses
-  - Sheol
   - divine council
   - Paul
-  - Adam
   - YHWH
   - Angel
-  - Augustine
-  - Babylon
   - Book of Enoch
   - Abortion
   - Atheism
+  - Satan
+tags:
+  - Isaiah
+  - Judah
+  - Moses
+  - Sheol
+  - Adam
+  - Augustine
+  - Babylon
   - etiology
   - Eve
   - Garden of Eden
   - Judaism
-  - Satan
   - Ahab
   - Assyria
   - Egyptians

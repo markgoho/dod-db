@@ -5,9 +5,11 @@ episodeNumber: 49
 videoId: GXyJILdNxUE
 aliases:
   - /episodes/49/
+topics:
+  - Paul
+  - Mary Magdalene
 tags:
   - Papias of Hierapolis
-  - Paul
   - Romans
   - Peter
   - Tertius
@@ -19,7 +21,6 @@ tags:
   - Crucifixion
   - First Clement
   - Martin Luther
-  - Mary Magdalene
   - Protestantism
   - Second Temple period
 books:

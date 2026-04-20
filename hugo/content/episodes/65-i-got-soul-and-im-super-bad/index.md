@@ -5,21 +5,22 @@ episodeNumber: 65
 videoId: Z6-5mEJYYQU
 aliases:
   - /episodes/65/
-tags:
+topics:
   - Stele
   - King James Bible
   - Atheism
-  - Samuel
   - Witch of Endor
+  - Jacob
+  - YHWH
+tags:
+  - Samuel
   - Anatolia
   - Deuteronomy
   - Isaiah
-  - Jacob
   - Jerusalem
   - Judah
   - Judaism
   - The Reformation
-  - YHWH
 books:
   - Ezekiel
   - Revelation

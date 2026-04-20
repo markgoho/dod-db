@@ -6,9 +6,14 @@ videoId: "152538050"
 aliases:
   - /episodes/153/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/152538050.mp3?sig=N409Iknulh6bw-O2w_KN8MDG1mLLumswL6Rl-E2Qy8Y%3D
+topics:
+  - Eclecte
+  - Junia
+  - Mary Magdalene
+  - Paul
+  - Septuagint
 tags:
   - Clement of Alexandria
-  - Eclecte
   - Clement of Rome
   - John
   - Lydia
@@ -17,12 +22,8 @@ tags:
   - Aquila
   - Eusebius
   - Jerome
-  - Junia
-  - Mary Magdalene
   - Onesimus
-  - Paul
   - Priscilla
-  - Septuagint
 books:
   - 2 John
   - 3 John

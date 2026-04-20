@@ -5,14 +5,19 @@ episodeNumber: 92
 videoId: nocqzFi7bp0
 aliases:
   - /episodes/92/
+topics:
+  - Daniel
+  - Susanna
+  - Curse of Ham
+  - Curse of Cain
+  - Septuagint
+  - Angel
+  - Holy Spirit
 tags:
   - Ham
-  - Daniel
   - Cain
-  - Susanna
   - Apocrypha
   - Canaan
-  - Curse of Ham
   - Japheth
   - Noah
   - Shem
@@ -23,11 +28,8 @@ tags:
   - Flood
   - Protestantism
   - Babylon
-  - Curse of Cain
   - Joachim
-  - Septuagint
   - Abraham
-  - Angel
   - Philo of Alexandria
   - Ugarit
   - Abel
@@ -36,7 +38,6 @@ tags:
   - Deuteronomy
   - Egyptians
   - Eve
-  - Holy Spirit
   - Jeremiah
   - Jerome
   - Judah

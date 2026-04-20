@@ -5,36 +5,37 @@ episodeNumber: 84
 videoId: "-C1AFxpKb2U"
 aliases:
   - /episodes/84/
-tags:
+topics:
   - Demon
   - Hell
-  - Beelzebul
-  - Enoch
   - Satan
-  - Baal
   - Book of Enoch
-  - Judaism
   - King James Bible
-  - Peter
   - Abortion
-  - Luke
   - Mary Magdalene
-  - Nephilim
   - Saul
   - Septuagint
+  - David
+  - Lilith
+  - Rapture
+tags:
+  - Beelzebul
+  - Enoch
+  - Baal
+  - Judaism
+  - Peter
+  - Luke
+  - Nephilim
   - Africa
   - Balaam
   - Canaanites
-  - David
   - Deuteronomy
   - etiology
   - Gabriel
   - Herod Antipas
   - Jerusalem
-  - Lilith
   - Michael
   - Moses
-  - Rapture
   - Samuel
   - Sea of Galilee
   - Sheol

@@ -45,7 +45,7 @@ Body content.
       await Bun.write(filePath, original);
 
       const { frontmatter, content } = await parseHugoFile(filePath);
-      frontmatter.tags = frontmatter.tags.filter(
+      frontmatter.tags = (frontmatter.tags ?? []).filter(
         tag => tag !== "James McGrath",
       );
 

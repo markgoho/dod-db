@@ -20,6 +20,7 @@ enableGitInfo = true
 
 [taxonomies]
   tag = "tags"
+  topic = "topics"
   segment = "segments"
   guest = "guests"
   book = "books"
@@ -46,7 +47,7 @@ enableGitInfo = true
 
 [[menu.main]]
   name = "Topics"
-  url = "/tags/"
+  url = "/topics/"
   weight = 2
 
 [[menu.main]]

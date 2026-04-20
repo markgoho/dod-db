@@ -6,20 +6,24 @@ videoId: "146857778"
 aliases:
   - /episodes/143/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/146857778.mp3?sig=_2YryoffF4QnMIGZm40GrvRUaavew5qWMf3A05qGju0%3D
+topics:
+  - John the Baptist
+  - James
+  - Second Coming
+  - Christmas
+  - Daniel
+  - Samson
 tags:
   - Elijah
   - Moses
-  - John the Baptist
   - Peter
   - Sea of Galilee
   - Philip
   - Passover
   - Transfiguration
   - Galilee
-  - James
   - John
   - Nazareth
-  - Second Coming
   - Eschatology
   - baptism
   - Capernaum
@@ -28,12 +32,9 @@ tags:
   - Jerusalem
   - Mount Sinai
   - Syria
-  - Christmas
-  - Daniel
   - Deuteronomy
   - Herodias
   - Judaism
-  - Samson
   - Textus Receptus
 books:
   - Mark

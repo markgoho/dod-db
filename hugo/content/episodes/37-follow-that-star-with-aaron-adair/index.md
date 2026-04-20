@@ -5,15 +5,24 @@ episodeNumber: 37
 videoId: UHN2ZPsFyoY
 aliases:
   - /episodes/37/
-tags:
+topics:
   - Star of Bethlehem
-  - Bethlehem
   - Christmas
   - Magi
-  - Jerusalem
-  - Deism
   - Angel
   - Easter
+  - Atheism
+  - David
+  - Dead Sea Scrolls
+  - Jacob
+  - King James Bible
+  - Mary Magdalene
+  - Satan
+  - Second Coming
+tags:
+  - Bethlehem
+  - Jerusalem
+  - Deism
   - Garden of Eden
   - Gentiles
   - John
@@ -22,21 +31,13 @@ tags:
   - Romans
   - Virgin Birth
   - Adam
-  - Atheism
   - Babylon
   - Catholicism
-  - David
-  - Dead Sea Scrolls
   - Herod the Great
   - Isaiah
-  - Jacob
   - Joshua
-  - King James Bible
-  - Mary Magdalene
   - Nephilim
   - Peter
-  - Satan
-  - Second Coming
 books:
   - Numbers
   - Genesis

@@ -5,6 +5,13 @@ episodeNumber: 128
 videoId: 6LXqyB1ZeLE
 aliases:
   - /episodes/128/
+topics:
+  - Paul
+  - Flavius Josephus
+  - Gnosticism
+  - Mary Magdalene
+  - Septuagint
+  - Trinity
 tags:
   - John
   - Philo of Alexandria
@@ -14,21 +21,15 @@ tags:
   - forgery
   - Judaism
   - Matthew
-  - Paul
   - Apocrypha
   - Aristobulus
   - Athanasius of Alexandria
   - baptism
-  - Flavius Josephus
   - Galilee
-  - Gnosticism
   - Gospel of Thomas
-  - Mary Magdalene
   - Polybius
-  - Septuagint
   - Theosis
   - Transfiguration
-  - Trinity
 books:
   - John
   - Psalms

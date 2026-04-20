@@ -5,35 +5,39 @@ episodeNumber: 133
 videoId: 8nkm6_nzl8k
 aliases:
   - /episodes/133/
+topics:
+  - David
+  - Decalogue
+  - Paul
+  - King James Bible
+  - Mary Magdalene
+  - Saul
+  - Asherah
+  - Council of Nicaea
+  - Daniel
+  - Hell
+  - Jacob
+  - Satan
+  - Univocality
+  - YHWH
 tags:
   - Judah
   - Baal
   - Deuteronomy
-  - David
-  - Decalogue
   - Samaria
-  - Paul
   - Babylon
   - Gomer
   - Hezekiah
-  - King James Bible
   - Bathsheba
   - Jehu
-  - Mary Magdalene
   - Moses
   - Samuel
-  - Saul
   - Abraham
-  - Asherah
   - Assyria
-  - Council of Nicaea
   - Cyrus the Great
-  - Daniel
   - Elijah
   - Hagar
-  - Hell
   - Isaiah
-  - Jacob
   - Jeremiah
   - Jerusalem
   - Judaism
@@ -41,10 +45,7 @@ tags:
   - Persia
   - Protestantism
   - Rachel
-  - Satan
   - Solomon
-  - Univocality
-  - YHWH
 books:
   - Exodus
   - Deuteronomy

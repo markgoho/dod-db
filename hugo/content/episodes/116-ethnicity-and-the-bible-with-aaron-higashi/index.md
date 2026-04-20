@@ -5,6 +5,12 @@ episodeNumber: 116
 videoId: dr1_wxhIqMo
 aliases:
   - /episodes/116/
+topics:
+  - David
+  - YHWH
+  - Jacob
+  - Paul
+  - Ruth
 tags:
   - Canaanites
   - Canaan
@@ -12,25 +18,20 @@ tags:
   - Adam
   - Egyptians
   - Judah
-  - David
   - etiology
   - Eve
   - Midianites
   - Edomites
   - Noah
   - Peter
-  - YHWH
   - Deuteronomy
   - Garden of Eden
   - Gentiles
-  - Jacob
   - Jericho
   - Jerusalem
   - Joshua
   - Moses
-  - Paul
   - Philistines
-  - Ruth
 books:
   - Genesis
   - Exodus

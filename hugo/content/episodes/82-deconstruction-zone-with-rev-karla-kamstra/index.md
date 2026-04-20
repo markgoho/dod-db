@@ -5,12 +5,13 @@ episodeNumber: 82
 videoId: iK9FSp6IiVo
 aliases:
   - /episodes/82/
-tags:
+topics:
   - Deconstruction
-  - Southern Baptist Convention
   - Rapture
   - Christian Nationalism
   - King James Bible
+tags:
+  - Southern Baptist Convention
 guests:
   - Rev Karla Kamstra
 episodeTopic: Decon&shy;struction

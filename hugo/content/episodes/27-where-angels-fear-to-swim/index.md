@@ -5,32 +5,33 @@ episodeNumber: 27
 videoId: caKa7DTkSkQ
 aliases:
   - /episodes/27/
-tags:
+topics:
   - Euphrates
   - Book of Enoch
+  - Hell
+  - Angel
+  - Goliath
+  - Rapture
+  - YHWH
+  - Abortion
+  - Jacob
+  - King James Bible
+  - Satan
+  - Septuagint
+tags:
   - Nephilim
   - Flood
   - Judaism
   - Eschatology
-  - Hell
   - Adam
-  - Angel
   - etiology
-  - Goliath
   - Noah
-  - Rapture
-  - YHWH
-  - Abortion
   - Canaan
   - child sacrifice
   - Enoch
   - Islam
-  - Jacob
   - Jerusalem
-  - King James Bible
   - Peter
-  - Satan
-  - Septuagint
   - Sodom
 books:
   - Genesis

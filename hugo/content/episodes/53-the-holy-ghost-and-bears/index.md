@@ -5,15 +5,17 @@ episodeNumber: 53
 videoId: kLBgLbbZ9qw
 aliases:
   - /episodes/53/
-tags:
+topics:
   - Holy Spirit
   - Saul
   - Trinity
   - Demon
-  - Elijah
   - King James Bible
   - Satan
   - Omni Attributes
+  - YHWH
+tags:
+  - Elijah
   - Samuel
   - Baal
   - Bethel
@@ -25,7 +27,6 @@ tags:
   - Judaism
   - Philo of Alexandria
   - Samaria
-  - YHWH
 books:
   - Genesis
   - Proverbs

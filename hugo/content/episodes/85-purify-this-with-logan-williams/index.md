@@ -5,25 +5,26 @@ episodeNumber: 85
 videoId: ueEDfCqjPYs
 aliases:
   - /episodes/85/
+topics:
+  - King James Bible
+  - Ritual Purity
+  - Septuagint
+  - Flavius Josephus
+  - YHWH
+  - Hell
+  - Talmud
 tags:
   - Torah
   - Second Temple period
   - Judaism
   - Textus Receptus
   - Deuteronomy
-  - King James Bible
-  - Ritual Purity
-  - Septuagint
-  - Flavius Josephus
   - Moses
-  - YHWH
   - circumcision
   - Essenes
   - Gentiles
-  - Hell
   - Maccabees
   - Qumran
-  - Talmud
 books:
   - Leviticus
   - Mark

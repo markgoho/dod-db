@@ -5,32 +5,33 @@ episodeNumber: 21
 videoId: SHLLzroKzI0
 aliases:
   - /episodes/21/
+topics:
+  - Decalogue
+  - Covenant Code
+  - King James Bible
+  - YHWH
+  - Abortion
+  - Masoretic Text
 tags:
   - Moses
   - child sacrifice
   - Molek
-  - Decalogue
   - Carthage
   - Baal
   - Babylon
   - Judaism
   - Abraham
-  - Covenant Code
   - Samuel
   - Deuteronomy
   - Hezekiah
   - Isaac
-  - King James Bible
   - Syria
-  - YHWH
-  - Abortion
   - Africa
   - Ammonites
   - Amorites
   - Egyptians
   - Jerusalem
   - Joshua
-  - Masoretic Text
   - Midianites
   - Moabites
   - Red Sea

@@ -5,30 +5,31 @@ episodeNumber: 122
 videoId: G-bwyrQQI5g
 aliases:
   - /episodes/122/
-tags:
+topics:
   - Satan
   - Septuagint
-  - Leningrad Codex
   - Paul
   - King James Bible
+  - Masoretic Text
+  - Codex Sinaiticus
+  - Dead Sea Scrolls
+  - Deutero-Isaiah
+  - Hell
+  - Univocality
+tags:
+  - Leningrad Codex
   - Anselm of Canterbury
   - Gregory of Nyssa
-  - Masoretic Text
   - Moses
   - Noah
   - Romans
   - The Reformation
   - Athanasius of Alexandria
   - Catholicism
-  - Codex Sinaiticus
   - Dead Sea
-  - Dead Sea Scrolls
-  - Deutero-Isaiah
-  - Hell
   - Irenaeus
   - Isaiah
   - Judah
-  - Univocality
 books:
   - Romans
   - Hebrews

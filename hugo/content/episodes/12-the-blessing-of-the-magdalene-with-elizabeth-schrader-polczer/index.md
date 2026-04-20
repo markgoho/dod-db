@@ -5,25 +5,26 @@ episodeNumber: 12
 videoId: zhX-8K8WtMs
 aliases:
   - /episodes/12/
-tags:
+topics:
   - Mary Magdalene
+  - Flavius Josephus
+  - Paul
+  - King James Bible
+  - Angel
+  - Codex Sinaiticus
+  - James
+  - Junia
+tags:
   - Peter
   - Bethany
   - Sea of Galilee
-  - Flavius Josephus
-  - Paul
   - Eusebius
   - Gospel of Thomas
-  - King James Bible
   - Tertullian
-  - Angel
   - source criticism
   - Apocrypha
-  - Codex Sinaiticus
-  - James
   - Jerusalem
   - Judas Iscariot
-  - Junia
   - Lydia
   - Samaritans
   - Textus Receptus

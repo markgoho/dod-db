@@ -5,15 +5,25 @@ episodeNumber: 45
 videoId: iO6mdYWPOyo
 aliases:
   - /episodes/45/
-tags:
+topics:
   - Dead Sea Scrolls
-  - Deuteronomy
   - Daniel
-  - Qumran
   - Septuagint
+  - Masoretic Text
+  - Trinity
+  - YHWH
+  - Decalogue
+  - Flavius Josephus
+  - Second Coming
+  - Book of Enoch
+  - Jacob
+  - Ritual Purity
+  - Saul
+tags:
+  - Deuteronomy
+  - Qumran
   - Ammonites
   - Babylon
-  - Masoretic Text
   - Nebuchadnezzar
   - Jeremiah
   - Dead Sea
@@ -22,26 +32,17 @@ tags:
   - Essenes
   - Gilead
   - Moses
-  - Trinity
-  - YHWH
-  - Decalogue
   - Enoch
   - Eschatology
-  - Flavius Josephus
   - Judaism
   - Mount Gerizim
   - Romans
-  - Second Coming
   - Torah
-  - Book of Enoch
   - Esther
   - inerrancy
-  - Jacob
   - Mount Ebal
   - Peter
   - Pliny the Younger
-  - Ritual Purity
-  - Saul
   - Second Temple period
   - Ugarit
 books:

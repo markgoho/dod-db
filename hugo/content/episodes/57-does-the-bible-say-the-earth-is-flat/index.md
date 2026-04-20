@@ -5,26 +5,27 @@ episodeNumber: 57
 videoId: pXbbaMXd62k
 aliases:
   - /episodes/57/
-tags:
-  - Matthew
+topics:
   - Flat Earth
   - Book of Enoch
-  - Enoch
   - Triumphal Entry
   - Univocality
-  - Athenagoras
-  - Catholicism
   - Christmas
   - divine council
+  - King James Bible
+  - Paul
+  - Septuagint
+  - YHWH
+tags:
+  - Matthew
+  - Enoch
+  - Athenagoras
+  - Catholicism
   - Eve
   - Flood
   - Jerusalem
   - John
   - Judah
-  - King James Bible
-  - Paul
-  - Septuagint
-  - YHWH
 books:
   - Psalms
   - Genesis

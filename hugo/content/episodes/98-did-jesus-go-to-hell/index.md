@@ -5,15 +5,18 @@ episodeNumber: 98
 videoId: XEpwHuj_tQY
 aliases:
   - /episodes/98/
-tags:
+topics:
   - Hell
+  - Book of Enoch
+  - Satan
+  - Holy Spirit
+  - King James Bible
+tags:
   - Peter
   - Sheol
   - Noah
   - John
-  - Book of Enoch
   - Augustine
-  - Satan
   - Athanasius of Alexandria
   - Eschatology
   - Catholicism
@@ -24,9 +27,7 @@ tags:
   - Abraham
   - Asael
   - Gaza
-  - Holy Spirit
   - Jerusalem
-  - King James Bible
   - Lamech
   - Pontius Pilate
 books:

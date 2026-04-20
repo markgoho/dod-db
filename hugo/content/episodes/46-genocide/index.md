@@ -5,6 +5,17 @@ episodeNumber: 46
 videoId: QFyFMwQpSko
 aliases:
   - /episodes/46/
+topics:
+  - King James Bible
+  - Stele
+  - YHWH
+  - David
+  - Deutero-Isaiah
+  - Josiah
+  - Priestly Source
+  - Septuagint
+  - Triumphal Entry
+  - Univocality
 tags:
   - Joshua
   - Canaanites
@@ -16,15 +27,12 @@ tags:
   - Abraham
   - Canaan
   - Jerusalem
-  - King James Bible
   - Samaria
   - Amorites
   - Babylon
   - Flood
   - inerrancy
   - Sodom
-  - Stele
-  - YHWH
   - Gaza
   - Judaism
   - Judas Iscariot
@@ -32,17 +40,10 @@ tags:
   - Origen
   - Balaam
   - circumcision
-  - David
-  - Deutero-Isaiah
-  - Josiah
   - Luke
   - Midianites
   - Philistines
-  - Priestly Source
   - Samuel
-  - Septuagint
-  - Triumphal Entry
-  - Univocality
 books:
   - Genesis
   - Zechariah

@@ -5,31 +5,32 @@ episodeNumber: 110
 videoId: KmgcugRalZs
 aliases:
   - /episodes/110/
-tags:
-  - Didache
+topics:
   - Paul
   - Abortion
+  - Dead Sea Scrolls
+  - King James Bible
+  - Talmud
+  - David
+  - Decalogue
+  - Flavius Josephus
+  - Univocality
+tags:
+  - Didache
   - Judaism
   - Clement of Alexandria
   - Egyptians
   - Jeroboam
   - baptism
-  - Dead Sea Scrolls
   - Isaiah
-  - King James Bible
   - Matthew
   - Solomon
   - Deuteronomy
   - Eusebius
   - Gentiles
-  - Talmud
   - Beatitudes
   - Clement of Rome
-  - David
-  - Decalogue
-  - Flavius Josephus
   - John
-  - Univocality
 books:
   - Ezekiel
   - Isaiah

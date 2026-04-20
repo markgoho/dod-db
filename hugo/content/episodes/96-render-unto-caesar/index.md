@@ -5,14 +5,15 @@ episodeNumber: 96
 videoId: 1esLkNDbMNo
 aliases:
   - /episodes/96/
-tags:
+topics:
   - Paul
-  - Romans
   - Christian Nationalism
-  - Judaism
   - Decalogue
-  - Nero
   - David
+tags:
+  - Romans
+  - Judaism
+  - Nero
   - Herod the Great
   - Islam
   - Matthew

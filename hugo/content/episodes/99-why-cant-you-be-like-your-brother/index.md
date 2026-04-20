@@ -5,23 +5,27 @@ episodeNumber: 99
 videoId: xLE723NlGGU
 aliases:
   - /episodes/99/
-tags:
+topics:
   - James
   - Masoretic Text
   - Flavius Josephus
   - Paul
+  - Mary Magdalene
+  - King James Bible
+  - Dead Sea Scrolls
+  - Satan
+  - Septuagint
+tags:
   - Peter
   - Leningrad Codex
   - Jerusalem
   - John
-  - Mary Magdalene
   - Matthew
   - Textus Receptus
   - Babylon
   - Catholicism
   - Judaism
   - Gospel of James
-  - King James Bible
   - Luke
   - Moses
   - Anatolia
@@ -29,7 +33,6 @@ tags:
   - Constantine
   - Council of Jerusalem
   - Cyrus the Great
-  - Dead Sea Scrolls
   - Desiderius Erasmus
   - Deuteronomy
   - Elijah
@@ -43,9 +46,7 @@ tags:
   - Nazareth
   - Saint Titus
   - Sanhedrin
-  - Satan
   - Sea of Galilee
-  - Septuagint
   - Torah
 books:
   - Matthew

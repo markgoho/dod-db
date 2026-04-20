@@ -6,36 +6,37 @@ videoId: "153667245"
 aliases:
   - /episodes/155/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/153667245.mp3?sig=7WzlNxfx6689h5D2K-1dyjrFvSSWrc8nWUIGaTSkQl0%3D
-tags:
+topics:
   - Septuagint
+  - Covenant Code
+  - YHWH
+  - Christmas
+  - David
+  - Flavius Josephus
+  - Masoretic Text
+  - Asherah
+  - Dead Sea Scrolls
+  - Jacob
+  - Josiah
+  - King James Bible
+  - Sennacherib
+tags:
   - Letter of Aristeas
   - Jerusalem
   - Judaism
   - Qumran
-  - Covenant Code
   - Jerome
   - Moses
-  - YHWH
-  - Christmas
-  - David
   - Deuteronomy
-  - Flavius Josephus
-  - Masoretic Text
   - Philo of Alexandria
   - Rachel
-  - Asherah
-  - Dead Sea Scrolls
   - Egyptians
   - Essenes
-  - Jacob
-  - Josiah
-  - King James Bible
   - Laban
   - Latin Vulgate
   - Maccabees
   - Martin Luther
   - Nazareth
-  - Sennacherib
   - Seth
   - Sodom
 books:

@@ -6,33 +6,34 @@ videoId: "148539134"
 aliases:
   - /episodes/146/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/148539134.mp3?sig=4IcEQq8GZBhpLkJTqyTSaz_HmeeFAWxYkJZN5exlDfs%3D
+topics:
+  - Paul
+  - Sennacherib
+  - Tithing
+  - Atheism
+  - Decalogue
+  - James
+  - Univocality
+  - Christmas
+  - King James Bible
+  - Josiah
 tags:
   - Deuteronomy
   - Esarhaddon
-  - Paul
   - Assyria
   - Gentiles
-  - Sennacherib
   - Ashurbanipal
   - Eschatology
-  - Tithing
   - Moses
-  - Atheism
   - circumcision
-  - Decalogue
   - Essenes
-  - James
   - Judaism
   - Torah
-  - Univocality
   - Beatitudes
-  - Christmas
   - cognitive dissonance
   - Hezekiah
   - inerrancy
   - Jonah
-  - King James Bible
-  - Josiah
   - Luke
   - Moab
   - Nineveh

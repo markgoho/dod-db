@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <section class="cloud-page">
+    <header class="page-hero">
+      <h1 class="page-hero__title">Topics</h1>
+      <p class="page-hero__description panel panel--muted">
+        {{ len .Data.Terms }} topics across all episodes
+      </p>
+    </header>
+
+    <ul class="token-cloud" role="list">
+      {{ range .Data.Terms.Alphabetical }}
+        {{ $titleTransitionName := printf "topics-title-%s" (.Page.Title | urlize) }}
+        <li>
+          <a href="{{ .Page.RelPermalink }}" class="token-pill">
+            <span
+              class="token-pill__name"
+              style="view-transition-name: {{ $titleTransitionName }}"
+              >{{ .Page.Title }}</span
+            >
+            <span class="token-pill__count">{{ .Count }}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/taxonomy-list.html" . }}
+  {{ partial "json-ld/breadcrumb.html" . }}
+{{ end }}

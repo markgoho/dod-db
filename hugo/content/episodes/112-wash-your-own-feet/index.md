@@ -5,6 +5,10 @@ episodeNumber: 112
 videoId: kiOlyxiorow
 aliases:
   - /episodes/112/
+topics:
+  - Creatio ex nihilo
+  - Flavius Josephus
+  - Hell
 tags:
   - Maccabees
   - Peter
@@ -12,9 +16,7 @@ tags:
   - Seleucid Empire
   - Luke
   - Apocrypha
-  - Creatio ex nihilo
   - Creation ex nihilo
-  - Flavius Josephus
   - Judas Maccabeus
   - Matthew
   - Adam
@@ -24,7 +26,6 @@ tags:
   - circumcision
   - Garden of Gethsemane
   - Hanukkah
-  - Hell
   - Jerusalem
   - Judah
   - Judaism

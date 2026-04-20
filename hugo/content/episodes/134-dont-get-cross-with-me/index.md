@@ -5,22 +5,23 @@ episodeNumber: 134
 videoId: FL5YxTKUioI
 aliases:
   - /episodes/134/
-tags:
+topics:
   - King James Bible
-  - Crucifixion
-  - Judaism
   - Septuagint
   - Abortion
-  - Catholicism
   - Daniel
+  - Masoretic Text
+  - Paul
+tags:
+  - Crucifixion
+  - Judaism
+  - Catholicism
   - Romans
   - Solomon
   - Constantine
   - Deuteronomy
   - Irenaeus
-  - Masoretic Text
   - Moses
-  - Paul
   - Philo of Alexandria
   - Pontius Pilate
 books:

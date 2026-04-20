@@ -6,30 +6,31 @@ videoId: "149672881"
 aliases:
   - /episodes/148/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/149672881.mp3?sig=l3i17hyBwZ_Y9EeiJf4Z2y2EGj7y7JnawFunXMINrFA%3D
-tags:
+topics:
   - Paul
   - Holy Spirit
   - Satan
+  - Demon
+  - Mary Magdalene
+  - Atheism
+  - David
+  - Hell
+  - Junia
+  - Trinity
+tags:
   - Beelzebul
   - baptism
   - Acts of Paul and Thecla
   - Demas
   - Hermogenes
   - Peter
-  - Demon
-  - Mary Magdalene
   - Apocrypha
-  - Atheism
   - Baal
-  - David
   - Gospel of Thomas
-  - Hell
   - Jerusalem
   - John
-  - Junia
   - Luke
   - Tertullian
-  - Trinity
 books:
   - Mark
   - Luke

@@ -6,65 +6,73 @@
  *   bun run src/scripts/check-hugo-sync.ts
  */
 
+import { tagVocabulary } from "../config/tag-vocabulary.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { getEpisodeOutputPath } from "../hugo/get-episode-path.js";
 import { getProcessedVideosWithNumbers } from "../storage/get-processed-videos-with-numbers.js";
+import { parseHugoFile } from "../utils/parse-hugo-file.js";
+import { titleToSlug } from "../utils/title-to-slug.js";
 
-/**
- * Parse YAML frontmatter from Hugo content file.
- * Returns just the tags array for comparison.
- */
-function parseFrontmatterTags(content: string): string[] {
-  const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
-  if (!frontmatterMatch) {
-    return [];
+async function loadTopicSlugs(): Promise<Set<string>> {
+  const topicSlugs = new Set<string>();
+
+  for await (const path of new Bun.Glob("*/_index.md").scan({
+    cwd: new URL("../../hugo/content/topics/", import.meta.url).pathname,
+  })) {
+    const slug = path.split("/")[0];
+    if (slug) {
+      topicSlugs.add(slug);
+    }
   }
 
-  const frontmatter = frontmatterMatch[1];
-  if (!frontmatter) {
-    return [];
-  }
-
-  // Extract tags array (simple YAML parsing for tags only)
-  const tagsMatch = frontmatter.match(/tags:\s*\n((?:\s{2}- .+\n?)*)/);
-  if (!tagsMatch?.[1]) {
-    return [];
-  }
-
-  // Parse tags list
-  const tags = tagsMatch[1]
-    .split("\n")
-    .map(line => line.trim())
-    .filter(line => line.startsWith("- "))
-    .map(line => line.slice(2).trim())
-    .filter(tag => tag.length > 0);
-
-  return tags;
+  return topicSlugs;
 }
 
-/**
- * Compare tags between processed-videos.json and Hugo frontmatter.
- */
+function buildCanonicalNameBySlug(): Map<string, string> {
+  return new Map(
+    tagVocabulary.map(entry => [titleToSlug(entry.canonical), entry.canonical]),
+  );
+}
+
+function deriveExpectedTaxonomies(
+  rawTags: string[],
+  topicSlugs: Set<string>,
+  canonicalNameBySlug: Map<string, string>,
+): { topics: string[]; tags: string[] } {
+  const topics: string[] = [];
+  const tags: string[] = [];
+
+  for (const tag of rawTags) {
+    const slug = titleToSlug(tag);
+    if (topicSlugs.has(slug)) {
+      topics.push(canonicalNameBySlug.get(slug) ?? tag);
+    } else {
+      tags.push(tag);
+    }
+  }
+
+  return {
+    topics: topics.sort(),
+    tags: tags.sort(),
+  };
+}
+
 async function checkSync(): Promise<void> {
   console.log("🔍 Checking Hugo frontmatter sync...\n");
 
-  const videos = await getProcessedVideosWithNumbers();
+  const [videos, topicSlugs] = await Promise.all([
+    getProcessedVideosWithNumbers(),
+    loadTopicSlugs(),
+  ]);
+  const canonicalNameBySlug = buildCanonicalNameBySlug();
 
   let totalEpisodes = 0;
   let inSync = 0;
   let mismatched = 0;
   let missingTags = 0;
   let extraTags = 0;
-
-  const mismatchedEpisodes: Array<{
-    episodeNumber: number;
-    videoId: string;
-    title: string;
-    expectedTags: string[];
-    actualTags: string[];
-    missing: string[];
-    extra: string[];
-  }> = [];
+  let missingTopics = 0;
+  let extraTopics = 0;
 
   for (const video of videos) {
     if (video.episodeNumber === undefined) {
@@ -73,10 +81,13 @@ async function checkSync(): Promise<void> {
 
     totalEpisodes++;
 
-    // Get expected tags from processed-videos.json
-    const expectedTags = (video.tags || []).map(t => t.tag).sort();
+    const rawTags = (video.tags || []).map(t => t.tag);
+    const expected = deriveExpectedTaxonomies(
+      rawTags,
+      topicSlugs,
+      canonicalNameBySlug,
+    );
 
-    // Read Hugo frontmatter
     const cleanTitle = extractCleanTitle(video.title);
     const hugoPath = getEpisodeOutputPath(video, cleanTitle);
     const hugoFile = Bun.file(hugoPath);
@@ -87,49 +98,68 @@ async function checkSync(): Promise<void> {
       continue;
     }
 
-    const hugoContent = await hugoFile.text();
-    const actualTags = parseFrontmatterTags(hugoContent).sort();
+    const { frontmatter } = await parseHugoFile(hugoPath);
+    const actualTopics = [...(frontmatter.topics ?? [])].sort();
+    const actualTags = [...(frontmatter.tags ?? [])].sort();
 
-    // Compare tags
-    const expectedSet = new Set(expectedTags);
-    const actualSet = new Set(actualTags);
+    const expectedTopicSet = new Set(expected.topics);
+    const actualTopicSet = new Set(actualTopics);
+    const expectedTagSet = new Set(expected.tags);
+    const actualTagSet = new Set(actualTags);
 
-    const missing = expectedTags.filter(tag => !actualSet.has(tag));
-    const extra = actualTags.filter(tag => !expectedSet.has(tag));
+    const missingDerivedTopics = expected.topics.filter(
+      topic => !actualTopicSet.has(topic),
+    );
+    const extraDerivedTopics = actualTopics.filter(
+      topic => !expectedTopicSet.has(topic),
+    );
+    const missingDerivedTags = expected.tags.filter(
+      tag => !actualTagSet.has(tag),
+    );
+    const extraDerivedTags = actualTags.filter(tag => !expectedTagSet.has(tag));
 
-    if (missing.length === 0 && extra.length === 0) {
-      // In sync
+    if (
+      missingDerivedTopics.length === 0 &&
+      extraDerivedTopics.length === 0 &&
+      missingDerivedTags.length === 0 &&
+      extraDerivedTags.length === 0
+    ) {
       console.log(
-        `✓ Episode ${video.episodeNumber}: In sync (${expectedTags.length} tags)`,
+        `✓ Episode ${video.episodeNumber}: In sync (${expected.topics.length} topics, ${expected.tags.length} tags)`,
       );
       inSync++;
     } else {
-      // Mismatch
       console.log(`✗ Episode ${video.episodeNumber}: Mismatch`);
-      console.log(`  Expected: ${expectedTags.length} tags`);
-      console.log(`  Actual: ${actualTags.length} tags`);
+      console.log(
+        `  Expected: ${expected.topics.length} topics, ${expected.tags.length} tags`,
+      );
+      console.log(
+        `  Actual: ${actualTopics.length} topics, ${actualTags.length} tags`,
+      );
 
-      if (missing.length > 0) {
-        console.log(`  Missing in Hugo: ${missing.join(", ")}`);
-        missingTags += missing.length;
+      if (missingDerivedTopics.length > 0) {
+        console.log(
+          `  Missing topics in Hugo: ${missingDerivedTopics.join(", ")}`,
+        );
+        missingTopics += missingDerivedTopics.length;
       }
 
-      if (extra.length > 0) {
-        console.log(`  Extra in Hugo: ${extra.join(", ")}`);
-        extraTags += extra.length;
+      if (extraDerivedTopics.length > 0) {
+        console.log(`  Extra topics in Hugo: ${extraDerivedTopics.join(", ")}`);
+        extraTopics += extraDerivedTopics.length;
+      }
+
+      if (missingDerivedTags.length > 0) {
+        console.log(`  Missing tags in Hugo: ${missingDerivedTags.join(", ")}`);
+        missingTags += missingDerivedTags.length;
+      }
+
+      if (extraDerivedTags.length > 0) {
+        console.log(`  Extra tags in Hugo: ${extraDerivedTags.join(", ")}`);
+        extraTags += extraDerivedTags.length;
       }
 
       mismatched++;
-
-      mismatchedEpisodes.push({
-        episodeNumber: video.episodeNumber,
-        videoId: video.videoId,
-        title: video.title,
-        expectedTags,
-        actualTags,
-        missing,
-        extra,
-      });
     }
   }
 
@@ -141,6 +171,8 @@ async function checkSync(): Promise<void> {
   console.log(`  ✗ Mismatched: ${mismatched}`);
 
   if (mismatched > 0) {
+    console.log(`  Missing topics in Hugo: ${missingTopics}`);
+    console.log(`  Extra topics in Hugo: ${extraTopics}`);
     console.log(`  Missing tags in Hugo: ${missingTags}`);
     console.log(`  Extra tags in Hugo: ${extraTags}`);
 

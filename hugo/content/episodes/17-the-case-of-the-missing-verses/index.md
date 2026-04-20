@@ -5,30 +5,31 @@ episodeNumber: 17
 videoId: naI65ELNhRw
 aliases:
   - /episodes/17/
-tags:
+topics:
   - King James Bible
+  - Angel
+  - Hell
+  - Homosexuality
+  - Council of Nicaea
+  - Decalogue
+  - Demon
+  - Paul
+  - Satan
+tags:
   - William Tyndale
   - Apocrypha
   - Desiderius Erasmus
   - Textus Receptus
   - Martin Luther
-  - Angel
-  - Hell
-  - Homosexuality
   - Latin Vulgate
   - Constantine
-  - Council of Nicaea
-  - Decalogue
-  - Demon
   - Eusebius
   - Isaiah
   - John
   - Jonah
   - Moses
   - Mount Sinai
-  - Paul
   - Protestantism
-  - Satan
 books:
   - Mark
   - Matthew

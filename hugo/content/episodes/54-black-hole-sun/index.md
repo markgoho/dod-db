@@ -5,10 +5,21 @@ episodeNumber: 54
 videoId: cY_sI0kis0g
 aliases:
   - /episodes/54/
-tags:
+topics:
   - Paul
-  - Jonah
   - James
+  - Septuagint
+  - Hell
+  - Rapture
+  - David
+  - Holy Spirit
+  - Mark of the Beast
+  - Mary Magdalene
+  - Ritual Purity
+  - Satan
+  - YHWH
+tags:
+  - Jonah
   - Barnabas
   - Gentiles
   - Edom
@@ -20,25 +31,15 @@ tags:
   - Nineveh
   - Judaism
   - Moses
-  - Septuagint
-  - Hell
-  - Rapture
   - Silas
   - Adam
   - Cornelius
-  - David
-  - Holy Spirit
   - Melchizedek
   - Syria
-  - Mark of the Beast
-  - Mary Magdalene
   - Nero
   - Pergamum
-  - Ritual Purity
   - Samaria
-  - Satan
   - Sodom
-  - YHWH
 books:
   - Acts
   - Galatians

@@ -5,20 +5,22 @@ episodeNumber: 111
 videoId: 9WfRfzTRUVI
 aliases:
   - /episodes/111/
+topics:
+  - YHWH
+  - David
+  - Demon
+  - Samson
+  - Saul
+  - Priestly Source
 tags:
   - Jephthah
   - circumcision
   - Abraham
-  - YHWH
   - Ammonites
   - Isaac
   - Moses
-  - David
   - Gilead
   - etiology
-  - Demon
-  - Samson
-  - Saul
   - Edom
   - Philistines
   - Africa
@@ -26,7 +28,6 @@ tags:
   - Judah
   - Judaism
   - Moab
-  - Priestly Source
 books:
   - Genesis
   - Exodus

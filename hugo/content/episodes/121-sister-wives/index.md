@@ -5,22 +5,23 @@ episodeNumber: 121
 videoId: BXE7A6iiQD8
 aliases:
   - /episodes/121/
+topics:
+  - David
+  - YHWH
+  - Jacob
+  - Saul
 tags:
   - Abraham
   - Abimelech
   - Isaac
   - Sarah
   - Philistines
-  - David
   - Rachel
-  - YHWH
   - Laban
-  - Jacob
   - Judah
   - Canaan
   - Rebekah
   - Samuel
-  - Saul
   - Bethlehem
   - etiology
   - Terah

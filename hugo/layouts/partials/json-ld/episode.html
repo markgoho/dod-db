@@ -14,8 +14,15 @@
   "mainEntityOfPage" $mainEntity
   "about" $about
 -}}
+{{- $keywords := slice -}}
+{{- with .Params.topics -}}
+  {{- $keywords = $keywords | append . -}}
+{{- end -}}
 {{- with .Params.tags -}}
-  {{- $schema = merge $schema (dict "keywords" .) -}}
+  {{- $keywords = $keywords | append . -}}
+{{- end -}}
+{{- if gt (len $keywords) 0 -}}
+  {{- $schema = merge $schema (dict "keywords" $keywords) -}}
 {{- end -}}
 {{- with .Params.videoId -}}
   {{- $thumb := printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" . -}}

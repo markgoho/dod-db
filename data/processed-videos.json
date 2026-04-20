@@ -17345,6 +17345,10 @@
     "transcriptPath": "data/transcripts/2025-04-14-episode-106-april-14-2025-usurer-error.txt",
     "tags": [
       {
+        "tag": "Usury",
+        "mentions": 19
+      },
+      {
         "tag": "Council of Nicaea",
         "mentions": 4
       },
@@ -26627,6 +26631,188 @@
       {
         "book": "Matthew",
         "references": ["Matthew"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "156010202",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/156010202.mp3?sig=9S09JaXCHdscExAJFpGiNt6DWjBXR9FqfB5o2pNPEkI%3D",
+    "title": "Mysterious Texts",
+    "publishedAt": "2026-04-19T15:10:43.000Z",
+    "processedAt": "2026-04-20T20:33:48.423Z",
+    "transcriptPath": "data/transcripts/2026-04-19-mysterious-texts.txt",
+    "tags": [
+      {
+        "tag": "Jerusalem",
+        "mentions": 15
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 15
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 11
+      },
+      {
+        "tag": "Cyrus the Great",
+        "mentions": 8
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 6
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 6
+      },
+      {
+        "tag": "Leningrad Codex",
+        "mentions": 6
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 5
+      },
+      {
+        "tag": "Flavius Josephus",
+        "mentions": 4
+      },
+      {
+        "tag": "Apocrypha",
+        "mentions": 3
+      },
+      {
+        "tag": "Esther",
+        "mentions": 2
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "Persia",
+        "mentions": 2
+      },
+      {
+        "tag": "Sea of Galilee",
+        "mentions": 2
+      },
+      {
+        "tag": "Aaron",
+        "mentions": 1
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "etiology",
+        "mentions": 1
+      },
+      {
+        "tag": "Euphrates",
+        "mentions": 1
+      },
+      {
+        "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 1
+      },
+      {
+        "tag": "Josiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 1
+      },
+      {
+        "tag": "Median Kingdom",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "The Reformation",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:07.652]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:02:07.652]",
+        "endTimestamp": "[00:31:20.069]",
+        "confidence": "verified",
+        "detectionMethod": "llm",
+        "topicLabel": "2 Chron 36",
+        "summary": "Greek Ezra's additions and Persian-era setting"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:31:20.069]",
+        "endTimestamp": "[00:53:56.951]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Masoretes",
+        "summary": "Scribes who preserved and vocalized Hebrew scripture"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
+    "episodeNumber": 159,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah", "Isaiah 1", "Isaiah 45", "Isaiah 45:1"],
+        "mentions": 4
+      },
+      {
+        "book": "Ezra",
+        "references": ["Ezra"],
+        "mentions": 2
+      },
+      {
+        "book": "Nehemiah",
+        "references": ["Nehemiah"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 1
+      },
+      {
+        "book": "Jeremiah",
+        "references": ["Jeremiah"],
         "mentions": 1
       }
     ]

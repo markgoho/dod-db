@@ -5,33 +5,34 @@ episodeNumber: 48
 videoId: 5CCrRI2RX2s
 aliases:
   - /episodes/48/
-tags:
+topics:
   - Paul
-  - Jerusalem
   - Mary Magdalene
   - John the Baptist
-  - Galilee
   - Flavius Josephus
+  - Holy Spirit
+  - Second Coming
+  - David
+  - Easter
+  - Gnosticism
+  - Junia
+  - Septuagint
+tags:
+  - Jerusalem
+  - Galilee
   - Papias of Hierapolis
   - Gospel of Thomas
   - Peter
   - Romans
   - Athanasius of Alexandria
-  - Holy Spirit
   - Isaiah
   - Saint Titus
-  - Second Coming
-  - David
-  - Easter
   - Eschatology
   - Eusebius
   - Gabriel
-  - Gnosticism
   - Judaism
-  - Junia
   - Nazareth
   - Pliny the Younger
-  - Septuagint
   - Solomon
 books:
   - Isaiah

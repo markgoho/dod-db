@@ -5,38 +5,39 @@ episodeNumber: 126
 videoId: CixQHRJ4YFw
 aliases:
   - /episodes/126/
-tags:
+topics:
   - YHWH
+  - Monotheism
+  - Josiah
+  - King James Bible
+  - Paul
+  - Angel
+  - Arad
+  - Asherah
+  - Deutero-Isaiah
+  - Hell
+  - Sennacherib
+  - Septuagint
+tags:
   - Deuteronomy
   - Jeremiah
   - Jerusalem
   - Babylon
-  - Monotheism
   - Moses
   - Judah
   - Philistines
   - Baruch
-  - Josiah
   - Judaism
   - Apocrypha
-  - King James Bible
-  - Paul
   - Isaac
   - Isaiah
-  - Angel
-  - Arad
-  - Asherah
   - Ashurbanipal
   - Baal
-  - Deutero-Isaiah
   - Esarhaddon
-  - Hell
   - Joshua
   - Moab
   - Nebuchadnezzar
   - Samuel
-  - Sennacherib
-  - Septuagint
 books:
   - Deuteronomy
   - Isaiah

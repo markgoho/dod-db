@@ -5,37 +5,38 @@ episodeNumber: 50
 videoId: vHKXU5rmwyo
 aliases:
   - /episodes/50/
-tags:
-  - Jerusalem
-  - Pontius Pilate
+topics:
   - Mary Magdalene
-  - Bethany
-  - Romans
   - Triumphal Entry
-  - Judas Iscariot
-  - Passover
-  - Sanhedrin
   - Demon
   - Easter
-  - Garden of Gethsemane
-  - Galilee
   - Hell
-  - Jonah
-  - Judaism
   - King James Bible
   - Paul
   - Satan
   - Second Coming
+  - Daniel
+  - James
+tags:
+  - Jerusalem
+  - Pontius Pilate
+  - Bethany
+  - Romans
+  - Judas Iscariot
+  - Passover
+  - Sanhedrin
+  - Garden of Gethsemane
+  - Galilee
+  - Jonah
+  - Judaism
   - Antiochus IV Epiphanes
   - Athanasius of Alexandria
   - baptism
   - Clement of Alexandria
   - Clement of Rome
   - Crucifixion
-  - Daniel
   - Elijah
   - Herod Antipas
-  - James
   - Maccabees
   - Peter
   - Second Maccabees

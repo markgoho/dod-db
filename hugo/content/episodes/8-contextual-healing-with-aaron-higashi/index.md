@@ -5,15 +5,16 @@ episodeNumber: 8
 videoId: YyN1w9PYjS4
 aliases:
   - /episodes/8/
-tags:
-  - Africa
+topics:
   - Atheism
   - Hell
+  - Trinity
+tags:
+  - Africa
   - Jerusalem
   - Midianites
   - Second Temple period
   - source criticism
-  - Trinity
 books:
   - Ezra
 guests:

@@ -5,38 +5,39 @@ episodeNumber: 86
 videoId: Z-9XhhrGN6w
 aliases:
   - /episodes/86/
-tags:
+topics:
   - Flavius Josephus
-  - Romans
   - Star of Bethlehem
-  - Galilee
-  - John
   - Magi
   - David
+  - James
+  - Monotheism
+  - Hell
+  - John the Baptist
+  - Paul
+  - Stele
+tags:
+  - Romans
+  - Galilee
+  - John
   - Pontius Pilate
   - Annunciation
   - baptism
   - Crucifixion
   - forgery
-  - James
   - Jerusalem
   - Matthew
-  - Monotheism
   - Persia
   - Africa
   - Baal
   - Egyptians
   - Essenes
-  - Hell
   - Herod the Great
-  - John the Baptist
   - Judaism
   - Passover
-  - Paul
   - Peter
   - Philo of Alexandria
   - Sea of Galilee
-  - Stele
   - Syria
 books:
   - John

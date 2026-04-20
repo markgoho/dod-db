@@ -5,37 +5,38 @@ episodeNumber: 71
 videoId: AwhAN-LQ34Y
 aliases:
   - /episodes/71/
-tags:
+topics:
   - Rapture
   - Daniel
+  - Paul
+  - Angel
+  - King James Bible
+  - Second Coming
+  - YHWH
+  - Atheism
+  - Hell
+  - Univocality
+tags:
   - Persia
   - Eschatology
   - Judah
   - Babylon
-  - Paul
-  - Angel
-  - King James Bible
   - Michael
   - Seleucid Empire
   - Cyrus the Great
   - Isaiah
-  - Second Coming
   - Judaism
   - Latin Vulgate
   - Matthew
-  - YHWH
   - Antiochus IV Epiphanes
   - Assyria
-  - Atheism
   - Deuteronomy
   - Elijah
   - Garden of Eden
-  - Hell
   - Maccabean Revolt
   - Maccabees
   - Syria
   - Torah
-  - Univocality
 books:
   - Daniel
   - Revelation

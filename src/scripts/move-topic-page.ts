@@ -1,7 +1,7 @@
 import { rename } from "node:fs/promises";
 import { join } from "node:path";
 
-const TAGS_DIR = "hugo/content/tags";
+const TOPICS_DIR = "hugo/content/topics";
 
 interface MoveArguments {
   fromSlug: string;
@@ -22,7 +22,9 @@ function parseArguments(argv: string[]): MoveArguments {
   }
 
   if (positional.length !== 2) {
-    throw new Error("Usage: move-tag-page <from-slug> <to-slug> [--add-alias]");
+    throw new Error(
+      "Usage: move-topic-page <from-slug> <to-slug> [--add-alias]",
+    );
   }
 
   return {
@@ -35,8 +37,8 @@ function parseArguments(argv: string[]): MoveArguments {
 async function main(): Promise<void> {
   try {
     const args = parseArguments(process.argv.slice(2));
-    const fromDir = join(TAGS_DIR, args.fromSlug);
-    const toDir = join(TAGS_DIR, args.toSlug);
+    const fromDir = join(TOPICS_DIR, args.fromSlug);
+    const toDir = join(TOPICS_DIR, args.toSlug);
 
     const fromExists = await Bun.file(join(fromDir, "_index.md")).exists();
     if (!fromExists) {
@@ -53,7 +55,7 @@ async function main(): Promise<void> {
     if (args.addAlias) {
       const indexPath = join(toDir, "_index.md");
       const content = await Bun.file(indexPath).text();
-      const aliasPath = `/tags/${args.fromSlug}/`;
+      const aliasPath = `/topics/${args.fromSlug}/`;
 
       if (!content.includes(aliasPath)) {
         const aliasLine = `  - "${aliasPath}"`;

@@ -5,36 +5,37 @@ episodeNumber: 43
 videoId: OsQMmt2QnPU
 aliases:
   - /episodes/43/
+topics:
+  - Deutero-Isaiah
+  - Sennacherib
+  - Flavius Josephus
+  - Gnosticism
+  - Hell
+  - Star of Bethlehem
+  - Triumphal Entry
 tags:
   - Isaiah
-  - Deutero-Isaiah
   - Cyrus the Great
   - Jerusalem
   - Luke
   - Babylon
   - Judaism
   - Hezekiah
-  - Sennacherib
   - Judah
   - Bethany
   - Second Temple period
-  - Flavius Josephus
   - Romans
   - Bethlehem
   - Galilee
   - Gentiles
-  - Gnosticism
   - Gospel of Thomas
-  - Hell
   - Herod the Great
   - Maccabees
   - Passover
   - Peter
   - Quran
   - Seleucid Empire
-  - Star of Bethlehem
   - theophany
-  - Triumphal Entry
 books:
   - Isaiah
   - Mark

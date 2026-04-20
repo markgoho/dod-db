@@ -5,33 +5,34 @@ episodeNumber: 14
 videoId: xYDiFyXinfs
 aliases:
   - /episodes/14/
-tags:
+topics:
   - Stele
   - Lilith
-  - Adam
   - Asherah
   - YHWH
-  - Moses
-  - Eve
   - Decalogue
-  - etiology
-  - Garden of Eden
   - King James Bible
-  - Torah
   - Demon
   - Jacob
+  - Arad
+  - Dead Sea Scrolls
+  - Mary Magdalene
+tags:
+  - Adam
+  - Moses
+  - Eve
+  - etiology
+  - Garden of Eden
+  - Torah
   - Joshua
   - Judah
   - Philistines
   - Aaron
   - Anatolia
-  - Arad
   - Bethel
-  - Dead Sea Scrolls
   - Edom
   - Judaism
   - Ketef Hinnom
-  - Mary Magdalene
 books:
   - Genesis
   - Isaiah

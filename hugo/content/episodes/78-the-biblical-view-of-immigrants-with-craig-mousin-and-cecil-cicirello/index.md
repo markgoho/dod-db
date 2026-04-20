@@ -5,17 +5,18 @@ episodeNumber: 78
 videoId: Jz4YpDhPHEg
 aliases:
   - /episodes/78/
-tags:
+topics:
   - Atheism
   - Decalogue
+  - David
+  - Paul
+tags:
   - Noah
   - cognitive dissonance
   - Adam
-  - David
   - Eve
   - Jerusalem
   - Judaism
-  - Paul
   - Prophetic Critique
   - Protestantism
 books:

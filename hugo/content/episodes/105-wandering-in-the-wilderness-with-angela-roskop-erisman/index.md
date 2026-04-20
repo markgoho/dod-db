@@ -5,24 +5,25 @@ episodeNumber: 105
 videoId: eiszXKzofys
 aliases:
   - /episodes/105/
+topics:
+  - Hell
+  - Deutero-Isaiah
+  - divine council
+  - Sennacherib
+  - David
+  - YHWH
 tags:
   - Moses
-  - Hell
   - Aaron
   - Korach
   - Hezekiah
   - Judah
   - Torah
   - Assyria
-  - Deutero-Isaiah
-  - divine council
   - Isaiah
   - Joshua
   - Philo of Alexandria
-  - Sennacherib
   - Babylon
-  - David
-  - YHWH
 books:
   - Exodus
   - Isaiah

@@ -5,28 +5,29 @@ episodeNumber: 10
 videoId: gW6w-AOiKNM
 aliases:
   - /episodes/10/
-tags:
+topics:
   - Paul
   - Homosexuality
+  - Lilith
+  - Book of Enoch
+  - David
+  - Flavius Josephus
+  - Septuagint
+  - Univocality
+tags:
   - Adam
   - Philo of Alexandria
   - Judaism
-  - Lilith
   - Gentiles
   - Sodom
   - Garden of Eden
   - Romans
   - etiology
   - Eve
-  - Book of Enoch
-  - David
-  - Flavius Josephus
   - Jerusalem
   - Luke
   - Pseudepigrapha
-  - Septuagint
   - Solomon
-  - Univocality
 books:
   - Leviticus
   - Genesis

@@ -1,36 +1,7 @@
-{{ define "head-styles" }}
-  {{ $inlineCSS := resources.Get "css/tag-single.css" | resources.Minify }}
-  <style>{{ $inlineCSS.Content | safeCSS }}</style>
-{{ end }}
-
 {{ define "main" }}
-  <section class="term-page tag-page tag-page--disambiguation">
-    {{ $def := .Params.definition | default "" }}
-    {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "tags" "backHref" "/tags/" "backLabel" "All Topics" "heroClass" "page-hero--profile" "definition" $def "category" "" "knownAs" slice) }}
-
-    {{ with .Content }}
-      <div class="tag-intro panel">
-        <div class="tag-intro__content prose">
-          {{ . }}
-        </div>
-      </div>
-    {{ end }}
-
-    {{ with .Params.relatedPages }}
-      <section class="tag-disambiguation-links">
-        <h2 class="type-section-title tag-section-title">Specific topics</h2>
-        <div class="tag-disambiguation-links__grid">
-          {{ range . }}
-            {{ $href := printf "/tags/%s/" .slug }}
-            <a href="{{ $href }}" class="tag-disambiguation-card panel">
-              <h3 class="tag-disambiguation-card__title">{{ .title }}</h3>
-              {{ with .description }}
-                <p class="tag-disambiguation-card__description">{{ . }}</p>
-              {{ end }}
-            </a>
-          {{ end }}
-        </div>
-      </section>
-    {{ end }}
+  <section class="cloud-page">
+    <header class="page-hero">
+      <h1 class="page-hero__title">Tags</h1>
+    </header>
   </section>
 {{ end }}

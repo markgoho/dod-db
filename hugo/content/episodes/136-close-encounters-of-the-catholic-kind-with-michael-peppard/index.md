@@ -5,27 +5,28 @@ episodeNumber: 136
 videoId: H2pVUWUFUts
 aliases:
   - /episodes/136/
+topics:
+  - Mary Magdalene
+  - Deutero-Isaiah
+  - Junia
+  - Paul
+  - Angel
+  - Book of Enoch
+  - Hell
+  - Prototype Theory
 tags:
   - Catholicism
-  - Mary Magdalene
   - Protestantism
   - Annunciation
   - Gospel of James
   - The Reformation
-  - Deutero-Isaiah
   - Judaism
   - Marcion
-  - Junia
-  - Paul
   - Romans
-  - Angel
-  - Book of Enoch
   - Esther
   - Gabriel
-  - Hell
   - Martin Luther
   - Peter
-  - Prototype Theory
 books:
   - Psalms
   - Proverbs

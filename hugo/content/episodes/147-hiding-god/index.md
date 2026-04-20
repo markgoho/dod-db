@@ -6,29 +6,30 @@ videoId: "149083715"
 aliases:
   - /episodes/147/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/149083715.mp3?sig=ooy9_BMY5colGxQkH0jkPziz_0uOB_zBJ3Rq1UtYiQY%3D
+topics:
+  - Daniel
+  - Dead Sea Scrolls
+  - Abortion
+  - Hell
+  - Paul
+  - Satan
+  - Septuagint
 tags:
   - Esther
   - Mordecai
   - Haman
   - Purim
   - Anatolia
-  - Daniel
   - Persia
   - Qumran
-  - Dead Sea Scrolls
   - Deuteronomy
-  - Abortion
   - Abraham
   - Antiochus IV Epiphanes
   - Apocrypha
   - etiology
-  - Hell
   - Judah
-  - Paul
   - Samuel
-  - Satan
   - Seleucid Empire
-  - Septuagint
 books:
   - Daniel
   - Esther

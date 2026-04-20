@@ -5,14 +5,16 @@ episodeNumber: 38
 videoId: ymMm0ICgBmc
 aliases:
   - /episodes/38/
-tags:
+topics:
   - Magi
   - Star of Bethlehem
+  - Christmas
+  - Mary Magdalene
+  - Septuagint
+tags:
   - Bethlehem
   - Jerusalem
-  - Christmas
   - Persia
-  - Mary Magdalene
   - Apocrypha
   - Gentiles
   - Judaism
@@ -24,7 +26,6 @@ tags:
   - Judah
   - Melchizedek
   - Second Temple period
-  - Septuagint
 guests:
   - Eric Vanden Eykel
 episodeTopic: Magi

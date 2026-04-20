@@ -5,18 +5,19 @@ episodeNumber: 79
 videoId: HYzWpM_y_cI
 aliases:
   - /episodes/79/
-tags:
-  - inerrancy
-  - The Reformation
+topics:
   - Trinity
   - Abortion
   - Christian Nationalism
   - Deconstruction
+  - Holy Spirit
+  - Tithing
+tags:
+  - inerrancy
+  - The Reformation
   - Protestantism
   - Eschatology
-  - Holy Spirit
   - Peter
-  - Tithing
 guests:
   - David Congdon
 episodeTopic: Christian Identity

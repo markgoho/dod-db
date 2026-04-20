@@ -5,9 +5,17 @@ episodeNumber: 67
 videoId: lKaNTTA4gWw
 aliases:
   - /episodes/67/
-tags:
+topics:
   - David
   - Saul
+  - Goliath
+  - Septuagint
+  - Jacob
+  - Christian Nationalism
+  - Hell
+  - Ritual Purity
+  - Talmud
+tags:
   - Jonathan
   - Moses
   - Samuel
@@ -15,20 +23,13 @@ tags:
   - Philistines
   - Bathsheba
   - Abigail
-  - Goliath
-  - Septuagint
-  - Jacob
   - Jerusalem
   - Judah
   - Babylon
-  - Christian Nationalism
   - Gideon
-  - Hell
   - Joshua
   - Rachel
-  - Ritual Purity
   - Sheol
-  - Talmud
 books:
   - 1 Samuel
 guests:

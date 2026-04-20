@@ -5,33 +5,34 @@ episodeNumber: 40
 videoId: MBA74-qj0Pw
 aliases:
   - /episodes/40/
-tags:
+topics:
   - Saul
-  - Samuel
-  - Philistines
   - David
   - Witch of Endor
-  - Catholicism
   - Urim and Thummim
   - YHWH
   - Atheism
+  - Josiah
+  - Decalogue
+  - Hell
+  - King James Bible
+  - Trinity
+  - Univocality
+tags:
+  - Samuel
+  - Philistines
+  - Catholicism
   - Baal
   - baptism
-  - Josiah
   - Amalek
   - Capernaum
-  - Decalogue
   - Desiderius Erasmus
-  - Hell
   - Jerusalem
   - Judah
-  - King James Bible
   - Moab
   - Sea of Galilee
   - Textus Receptus
   - Torah
-  - Trinity
-  - Univocality
 books:
   - 1 Samuel
   - Exodus

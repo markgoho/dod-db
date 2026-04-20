@@ -5,37 +5,38 @@ episodeNumber: 69
 videoId: 1w8zmAKheQE
 aliases:
   - /episodes/69/
+topics:
+  - Paul
+  - Flavius Josephus
+  - Christmas
+  - John the Baptist
+  - David
+  - Easter
+  - Gnosticism
+  - Trinity
 tags:
   - Matthew
   - Papias of Hierapolis
   - Peter
   - Marcion
-  - Paul
   - John
   - Irenaeus
   - Justin Martyr
   - baptism
   - Ignatius
-  - Flavius Josephus
   - Luke
   - Didache
   - Jerusalem
   - Eusebius
   - Jerome
   - Capernaum
-  - Christmas
   - Galilee
-  - John the Baptist
   - Tertullian
   - Theophilus
   - Abraham
   - Clement of Alexandria
-  - David
-  - Easter
-  - Gnosticism
   - Latin Vulgate
   - Moses
-  - Trinity
   - Virgin Birth
 books:
   - Acts

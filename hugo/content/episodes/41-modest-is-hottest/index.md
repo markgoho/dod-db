@@ -5,6 +5,14 @@ episodeNumber: 41
 videoId: nu6jx8m14tI
 aliases:
   - /episodes/41/
+topics:
+  - Paul
+  - Curse of Ham
+  - King James Bible
+  - David
+  - Hell
+  - Joseph
+  - YHWH
 tags:
   - Ham
   - Noah
@@ -13,15 +21,10 @@ tags:
   - Japheth
   - Africans
   - Canaanites
-  - Paul
-  - Curse of Ham
   - Deuteronomy
   - Joshua
-  - King James Bible
   - Africa
-  - David
   - Flood
-  - Hell
   - Islam
   - Peter
   - Abigail
@@ -29,10 +32,8 @@ tags:
   - Egyptians
   - etiology
   - Eve
-  - Joseph
   - Judaism
   - Romans
-  - YHWH
 books:
   - Genesis
   - 1 Corinthians

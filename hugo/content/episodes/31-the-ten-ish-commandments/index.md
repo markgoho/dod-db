@@ -5,30 +5,32 @@ episodeNumber: 31
 videoId: q5Yw6xPCS6U
 aliases:
   - /episodes/31/
-tags:
+topics:
   - Decalogue
   - YHWH
+  - Josiah
+  - Paul
+  - Asherah
+  - King James Bible
+  - Covenant Code
+  - Talmud
+  - Flavius Josephus
+  - Septuagint
+  - Arad
+  - Hell
+  - Univocality
+tags:
   - Deuteronomy
   - Judaism
   - Moses
-  - Josiah
-  - Paul
   - Philo of Alexandria
-  - Asherah
-  - King James Bible
   - Baal
   - Council of Jerusalem
-  - Covenant Code
-  - Talmud
   - Catholicism
-  - Flavius Josephus
-  - Septuagint
   - Amorites
-  - Arad
   - Canaanites
   - circumcision
   - Gentiles
-  - Hell
   - Isaiah
   - Judah
   - Mount Gerizim
@@ -36,7 +38,6 @@ tags:
   - Samaritans
   - Second Temple period
   - Shem
-  - Univocality
 books:
   - Exodus
   - Deuteronomy

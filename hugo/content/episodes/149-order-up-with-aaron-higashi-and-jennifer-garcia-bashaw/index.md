@@ -6,25 +6,26 @@ videoId: "150225488"
 aliases:
   - /episodes/149/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/150225488.mp3?sig=ewG0TcZtqtq8f1vrSY5MfvHDBToOMo_TbdNce2RUl6s%3D
+topics:
+  - Deconstruction
+  - Jacob
+  - Trinity
+  - Joseph
+  - Monotheism
 tags:
   - Origen
   - inerrancy
   - Adam
   - baptism
-  - Deconstruction
   - Eve
   - Isaiah
-  - Jacob
   - Luke
   - Philip
   - Stephen
-  - Trinity
   - Abraham
   - Augustine
   - Deuteronomy
   - Jeroboam
-  - Joseph
-  - Monotheism
   - Rehoboam
   - Romans
   - Sanhedrin

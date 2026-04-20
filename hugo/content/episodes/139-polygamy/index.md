@@ -5,35 +5,36 @@ episodeNumber: 139
 videoId: _9yyHZkqA5c
 aliases:
   - /episodes/139/
+topics:
+  - David
+  - Paul
+  - Jacob
+  - Saul
+  - Dead Sea Scrolls
+  - Flavius Josephus
+  - Homosexuality
+  - Joseph
+  - Septuagint
+  - Stele
+  - YHWH
 tags:
   - Solomon
-  - David
   - Jeroboam
   - Rehoboam
-  - Paul
   - Molek
   - Jerusalem
   - Judaism
   - Ammonites
-  - Jacob
-  - Saul
   - Leah
   - Judah
   - Moab
   - Romans
   - Abraham
   - Adam
-  - Dead Sea Scrolls
   - etiology
   - Eve
-  - Flavius Josephus
-  - Homosexuality
-  - Joseph
   - Rezin
-  - Septuagint
   - Shishak
-  - Stele
-  - YHWH
 books:
   - 1 Timothy
   - Genesis

@@ -5,17 +5,18 @@ episodeNumber: 107
 videoId: HIgF6uy4H3U
 aliases:
   - /episodes/107/
+topics:
+  - Paul
+  - Junia
+  - Second Coming
+  - Euphrates
 tags:
   - Jerusalem
-  - Paul
   - Eschatology
-  - Junia
   - Catholicism
   - Protestantism
-  - Second Coming
   - Adam
   - epigraphy
-  - Euphrates
   - Garden of Eden
   - Gentiles
   - John

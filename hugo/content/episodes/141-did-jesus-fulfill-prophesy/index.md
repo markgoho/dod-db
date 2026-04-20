@@ -5,32 +5,33 @@ episodeNumber: 141
 videoId: VEfI1TgWVHY
 aliases:
   - /episodes/141/
-tags:
-  - Bethlehem
-  - Nazareth
+topics:
   - Mary Magdalene
-  - Galilee
-  - Matthew
-  - Jerusalem
   - Paul
   - Septuagint
   - David
-  - Syria
   - Angel
+  - Christmas
+  - King James Bible
+  - Star of Bethlehem
+tags:
+  - Bethlehem
+  - Nazareth
+  - Galilee
+  - Matthew
+  - Jerusalem
+  - Syria
   - Judah
   - Romans
   - Virgin Birth
   - Herod the Great
   - Isaiah
   - baptism
-  - Christmas
   - Jeremiah
-  - King James Bible
   - Luke
   - Passover
   - Peter
   - Rachel
-  - Star of Bethlehem
 books:
   - Luke
   - Isaiah

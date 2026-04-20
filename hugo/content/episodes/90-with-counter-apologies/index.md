@@ -5,30 +5,31 @@ episodeNumber: 90
 videoId: NbA7Ro-bZtI
 aliases:
   - /episodes/90/
+topics:
+  - YHWH
+  - Flat Earth
+  - Deutero-Isaiah
+  - Satan
+  - Univocality
+  - Christmas
+  - Curse of Ham
+  - Hell
+  - Holy Spirit
 tags:
   - Cain
   - Adam
   - Abel
   - Seth
-  - YHWH
   - Eve
   - Garden of Eden
   - Crucifixion
-  - Flat Earth
   - Passover
   - Enoch
-  - Deutero-Isaiah
   - Flood
   - inerrancy
   - Lamech
-  - Satan
-  - Univocality
-  - Christmas
-  - Curse of Ham
   - etiology
   - Ham
-  - Hell
-  - Holy Spirit
   - Isaiah
   - Jerusalem
   - Moses

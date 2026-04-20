@@ -5,25 +5,26 @@ episodeNumber: 108
 videoId: josnjFOYjrA
 aliases:
   - /episodes/108/
+topics:
+  - Paul
+  - Christian Nationalism
+  - Hell
+  - Ruth
+  - Univocality
 tags:
   - Deuteronomy
   - Moses
   - Onan
-  - Paul
   - Abraham
   - Boaz
   - Catholicism
-  - Christian Nationalism
   - Esarhaddon
   - Hagar
-  - Hell
   - Judah
   - Judaism
   - Naomi
-  - Ruth
   - Sarah
   - Sheol
-  - Univocality
 books:
   - Deuteronomy
   - Matthew

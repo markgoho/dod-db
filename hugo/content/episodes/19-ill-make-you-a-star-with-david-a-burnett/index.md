@@ -5,33 +5,34 @@ episodeNumber: 19
 videoId: fiptp1bU5qQ
 aliases:
   - /episodes/19/
-tags:
+topics:
   - Paul
   - Monotheism
+  - divine council
+  - YHWH
+  - Angel
+  - Septuagint
+  - Book of Enoch
+  - Daniel
+  - Dead Sea Scrolls
+  - Hell
+  - Jacob
+tags:
   - Deuteronomy
   - Judaism
   - Abraham
   - Melchizedek
   - Eschatology
-  - divine council
   - Philo of Alexandria
   - Romans
-  - YHWH
   - Second Temple period
-  - Angel
   - Isaiah
-  - Septuagint
   - Apocrypha
   - Augustine
   - Baruch
   - Beatitudes
-  - Book of Enoch
   - Catholicism
-  - Daniel
-  - Dead Sea Scrolls
   - Gentiles
-  - Hell
-  - Jacob
   - Luke
   - Pseudepigrapha
   - Sarah

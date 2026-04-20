@@ -5,26 +5,28 @@ episodeNumber: 106
 videoId: oJ9ifpprXjM
 aliases:
   - /episodes/106/
-tags:
+topics:
+  - Usury
   - Council of Nicaea
-  - Deuteronomy
-  - Hermeneia
-  - Islam
   - King James Bible
   - Paul
   - Abortion
-  - Anselm of Canterbury
-  - Arius
-  - Catholicism
   - Covenant Code
   - Decalogue
   - Easter
   - Hell
+  - Second Coming
+  - YHWH
+tags:
+  - Deuteronomy
+  - Hermeneia
+  - Islam
+  - Anselm of Canterbury
+  - Arius
+  - Catholicism
   - Herod the Great
   - Martin Luther
-  - Second Coming
   - The Reformation
-  - YHWH
 books:
   - Ezekiel
   - Luke

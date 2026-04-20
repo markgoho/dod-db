@@ -5,31 +5,32 @@ episodeNumber: 42
 videoId: K0kobJi-sLI
 aliases:
   - /episodes/42/
-tags:
+topics:
   - Trinity
-  - John
-  - Abraham
   - Angel
-  - Arius
   - Holy Spirit
-  - Judaism
-  - Moses
   - YHWH
-  - Constantine
   - Council of Nicaea
-  - Isaac
   - Jacob
   - Paul
-  - Philo of Alexandria
   - Septuagint
   - Christmas
   - Deutero-Isaiah
-  - Deuteronomy
-  - Isaiah
-  - Justin Martyr
   - King James Bible
   - Monotheism
   - provenance
+tags:
+  - John
+  - Abraham
+  - Arius
+  - Judaism
+  - Moses
+  - Constantine
+  - Isaac
+  - Philo of Alexandria
+  - Deuteronomy
+  - Isaiah
+  - Justin Martyr
 books:
   - John
   - Isaiah

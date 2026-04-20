@@ -5,20 +5,21 @@ episodeNumber: 138
 videoId: mMJ5mHoWrSM
 aliases:
   - /episodes/138/
-tags:
+topics:
   - Joseph
   - Paul
-  - Eschatology
-  - Egyptians
   - Flavius Josephus
   - Jacob
+  - Second Coming
+tags:
+  - Eschatology
+  - Egyptians
   - Moses
   - Syria
   - Ararat
   - Islam
   - Jericho
   - Saint Titus
-  - Second Coming
 books:
   - Isaiah
   - Luke

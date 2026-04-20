@@ -5,22 +5,23 @@ episodeNumber: 9
 videoId: Bs02oP4kQbM
 aliases:
   - /episodes/9/
-tags:
-  - Nero
+topics:
   - Mark of the Beast
   - Prototype Theory
   - Monotheism
   - Christian Nationalism
+  - Euphrates
+  - Flat Earth
+  - Hell
+  - Satan
+tags:
+  - Nero
   - Isaiah
   - Judaism
   - Deuteronomy
-  - Euphrates
-  - Flat Earth
   - Garden of Eden
-  - Hell
   - John of Patmos
   - Quran
-  - Satan
 books:
   - Isaiah
   - Mark

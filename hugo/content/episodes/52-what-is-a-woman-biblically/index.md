@@ -5,23 +5,24 @@ episodeNumber: 52
 videoId: _mO8E0em3KA
 aliases:
   - /episodes/52/
-tags:
+topics:
   - Goliath
   - David
-  - Adam
   - Elhanan son of Jair
-  - Philistines
-  - Eve
   - King James Bible
-  - Peter
-  - Romans
   - Junia
   - Univocality
-  - Bethlehem
   - Hell
-  - Judaism
   - Mary Magdalene
   - Paul
+tags:
+  - Adam
+  - Philistines
+  - Eve
+  - Peter
+  - Romans
+  - Bethlehem
+  - Judaism
 books:
   - Genesis
   - 2 Samuel

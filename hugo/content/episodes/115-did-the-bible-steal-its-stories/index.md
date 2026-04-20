@@ -5,8 +5,15 @@ episodeNumber: 115
 videoId: oHss4HKVMIs
 aliases:
   - /episodes/115/
-tags:
+topics:
   - YHWH
+  - Creatio ex nihilo
+  - Daniel
+  - Deutero-Isaiah
+  - Joseph
+  - King James Bible
+  - Ritual Purity
+tags:
   - Judah
   - Ugarit
   - Baal
@@ -20,17 +27,11 @@ tags:
   - Isaiah
   - Second Temple period
   - Solomon
-  - Creatio ex nihilo
-  - Daniel
-  - Deutero-Isaiah
   - Deuteronomy
-  - Joseph
   - Joshua
-  - King James Bible
   - Melchizedek
   - Moses
   - Persia
-  - Ritual Purity
   - Syria
 books:
   - Genesis

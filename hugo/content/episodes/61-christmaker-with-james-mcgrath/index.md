@@ -5,35 +5,36 @@ episodeNumber: 61
 videoId: DnsTYWOw5r0
 aliases:
   - /episodes/61/
-tags:
+topics:
   - John the Baptist
-  - baptism
   - Gnosticism
-  - Herod Antipas
   - Flavius Josephus
+  - Dead Sea Scrolls
+  - Samson
+  - Angel
+  - Holy Spirit
+  - Talmud
+tags:
+  - baptism
+  - Herod Antipas
   - Essenes
   - Jerusalem
   - Qumran
-  - Dead Sea Scrolls
   - Herodias
   - Judaism
   - Gospel of Thomas
   - Islam
   - Prophetic Critique
-  - Samson
   - Samuel
   - Adam
-  - Angel
   - Babylon
   - circumcision
-  - Holy Spirit
   - inerrancy
   - Judah
   - Judas Iscariot
   - Luke
   - Matthew
   - Protestantism
-  - Talmud
   - Torah
 books:
   - Isaiah

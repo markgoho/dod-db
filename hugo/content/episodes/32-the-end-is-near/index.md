@@ -5,13 +5,18 @@ episodeNumber: 32
 videoId: i8nHBWR-8CM
 aliases:
   - /episodes/32/
-tags:
+topics:
   - Rapture
-  - Eschatology
   - Daniel
   - Preterism
   - Second Coming
   - Paul
+  - Hell
+  - King James Bible
+  - Satan
+  - Univocality
+tags:
+  - Eschatology
   - Babylon
   - futurist interpretation
   - Jeremiah
@@ -19,12 +24,8 @@ tags:
   - Jerusalem
   - Antiochus IV Epiphanes
   - Baal
-  - Hell
-  - King James Bible
   - Latin Vulgate
-  - Satan
   - Seleucid Empire
-  - Univocality
 books:
   - Daniel
   - Mark

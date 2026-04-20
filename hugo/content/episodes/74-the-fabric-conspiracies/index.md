@@ -5,21 +5,22 @@ episodeNumber: 74
 videoId: 7v-E6j8Yf5U
 aliases:
   - /episodes/74/
-tags:
-  - Ishmael
-  - Midianites
+topics:
   - Joseph
   - Shatnez
-  - Judah
-  - Deuteronomy
-  - Torah
   - Christmas
   - Flavius Josephus
-  - Gilead
   - Hell
   - Univocality
   - Urim and Thummim
   - YHWH
+tags:
+  - Ishmael
+  - Midianites
+  - Judah
+  - Deuteronomy
+  - Torah
+  - Gilead
 books:
   - Exodus
   - Deuteronomy

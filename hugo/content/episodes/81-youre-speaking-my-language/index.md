@@ -5,14 +5,17 @@ episodeNumber: 81
 videoId: iFp-3_c6QWQ
 aliases:
   - /episodes/81/
+topics:
+  - YHWH
+  - Demon
+  - divine council
+  - Septuagint
 tags:
   - Babylon
   - Tower of Babel
-  - YHWH
   - etiology
   - Judah
   - Noah
-  - Demon
   - Flood
   - Garden of Eden
   - Ham
@@ -22,7 +25,6 @@ tags:
   - Abraham
   - Ammonites
   - Baal
-  - divine council
   - Edom
   - Edomites
   - Eve
@@ -33,7 +35,6 @@ tags:
   - Molek
   - Nazareth
   - Quran
-  - Septuagint
   - Syria
   - The Reformation
 books:

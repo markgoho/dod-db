@@ -5,6 +5,17 @@ episodeNumber: 20
 videoId: p8CjJR4yhfk
 aliases:
   - /episodes/20/
+topics:
+  - Masoretic Text
+  - Septuagint
+  - Book of Enoch
+  - Daniel
+  - Dead Sea Scrolls
+  - Joseph
+  - King James Bible
+  - Bel and the Dragon
+  - Codex Sinaiticus
+  - Susanna
 tags:
   - Apocrypha
   - Flood
@@ -15,10 +26,7 @@ tags:
   - Adam
   - Seth
   - Cain
-  - Masoretic Text
-  - Septuagint
   - Martin Luther
-  - Book of Enoch
   - Abraham
   - Judaism
   - Athanasius of Alexandria
@@ -27,22 +35,16 @@ tags:
   - Protestantism
   - Baruch
   - Catholicism
-  - Daniel
   - Ishmael
   - Second Maccabees
   - The Reformation
-  - Dead Sea Scrolls
   - Isaiah
   - Jeremiah
   - Jerome
-  - Joseph
-  - King James Bible
   - Latin Vulgate
   - Abimelech
   - Babylon
   - Barnabas
-  - Bel and the Dragon
-  - Codex Sinaiticus
   - Didache
   - Esther
   - First Clement
@@ -52,7 +54,6 @@ tags:
   - Midianites
   - Moses
   - Pseudepigrapha
-  - Susanna
 books:
   - Genesis
   - Isaiah

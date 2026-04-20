@@ -5,16 +5,22 @@ episodeNumber: 6
 videoId: _zou11pMRag
 aliases:
   - /episodes/6/
-tags:
+topics:
   - Paul
   - Univocality
   - Goliath
   - David
+  - Elhanan son of Jair
+  - Saul
+  - Atheism
+  - Book of Enoch
+  - Dead Sea Scrolls
+  - Trinity
+tags:
   - Peter
   - Samuel
   - Abraham
   - inerrancy
-  - Elhanan son of Jair
   - Esther
   - Romans
   - Council of Jerusalem
@@ -24,17 +30,12 @@ tags:
   - Qumran
   - Quran
   - Saint Titus
-  - Saul
   - Solomon
-  - Atheism
-  - Book of Enoch
   - Catholicism
-  - Dead Sea Scrolls
   - Isaiah
   - Marcion
   - Martin Luther
   - Matthew
-  - Trinity
   - William Tyndale
 books:
   - Romans

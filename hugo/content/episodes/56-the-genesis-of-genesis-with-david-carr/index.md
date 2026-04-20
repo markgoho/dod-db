@@ -5,6 +5,9 @@ episodeNumber: 56
 videoId: ZWm7gjCL3uA
 aliases:
   - /episodes/56/
+topics:
+  - David
+  - Joseph
 tags:
   - Flood
   - Garden of Eden
@@ -24,11 +27,9 @@ tags:
   - Torah
   - Assyria
   - Canaanites
-  - David
   - Ham
   - Isaiah
   - Jeremiah
-  - Joseph
   - Joshua
   - Judah
   - Lamech

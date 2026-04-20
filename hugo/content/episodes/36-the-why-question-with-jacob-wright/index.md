@@ -5,40 +5,41 @@ episodeNumber: 36
 videoId: 5ebvYxjXH2Y
 aliases:
   - /episodes/36/
-tags:
-  - Judah
+topics:
   - David
   - YHWH
   - Jacob
+  - Stele
+  - Monotheism
+  - Saul
+  - Goliath
+  - Josiah
+  - Samson
+tags:
+  - Judah
   - Jerusalem
   - Moab
   - Assyria
   - Joshua
-  - Stele
   - Deuteronomy
   - Esau
   - Esther
   - Garden of Eden
   - Jeremiah
-  - Monotheism
   - Samaria
   - Samuel
-  - Saul
   - Solomon
   - Abraham
   - Ammonites
   - Babylon
   - Gideon
-  - Goliath
   - Hezekiah
   - Isaac
   - Islam
   - Jephthah
-  - Josiah
   - Moses
   - Nineveh
   - Philistines
-  - Samson
   - The Reformation
   - Torah
 books:

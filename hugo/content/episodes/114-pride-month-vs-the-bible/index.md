@@ -5,20 +5,21 @@ episodeNumber: 114
 videoId: nWTu2bw1dQc
 aliases:
   - /episodes/114/
-tags:
+topics:
   - Homosexuality
-  - Sodom
   - Paul
   - Hell
-  - Romans
   - YHWH
+  - King James Bible
+  - Satan
+tags:
+  - Sodom
+  - Romans
   - Ammonites
   - Gentiles
   - Isaiah
   - Judah
-  - King James Bible
   - Moabites
-  - Satan
 books:
   - Leviticus
   - Genesis

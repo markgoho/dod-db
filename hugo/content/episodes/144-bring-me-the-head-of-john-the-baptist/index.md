@@ -6,14 +6,20 @@ videoId: "147400629"
 aliases:
   - /episodes/144/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/147400629.mp3?sig=AKfjhFXO_OUf9DUZ3Np83u8ytZVVydrV5NlGAgMQ3tA%3D
+topics:
+  - John the Baptist
+  - Flavius Josephus
+  - Univocality
+  - Septuagint
+  - Hell
+  - Holy Spirit
+  - Mary Magdalene
+  - Paul
 tags:
   - Herod Antipas
-  - John the Baptist
   - Herodias
-  - Flavius Josephus
   - Luke
   - Peter
-  - Univocality
   - Galilee
   - Judaism
   - Pontius Pilate
@@ -23,14 +29,9 @@ tags:
   - Elijah
   - Esther
   - Herod the Great
-  - Septuagint
   - Bethlehem
   - Edom
-  - Hell
-  - Holy Spirit
   - Jezebel
-  - Mary Magdalene
-  - Paul
   - Sea of Galilee
   - Solomon
 books:

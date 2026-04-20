@@ -5,8 +5,15 @@ episodeNumber: 34
 videoId: lHoBSsJoacQ
 aliases:
   - /episodes/34/
-tags:
+topics:
   - Daniel
+  - Trinity
+  - Dead Sea Scrolls
+  - King James Bible
+  - Magi
+  - Easter
+  - Rapture
+tags:
   - Babylon
   - Nebuchadnezzar
   - Belshazzar
@@ -18,17 +25,12 @@ tags:
   - Cyrus the Great
   - Michael
   - Romans
-  - Trinity
-  - Dead Sea Scrolls
   - Judaism
-  - King James Bible
-  - Magi
   - Second Temple period
   - Seleucid Empire
   - Adam
   - Catholicism
   - Dead Sea
-  - Easter
   - Esther
   - Hermeneia
   - inerrancy
@@ -37,7 +39,6 @@ tags:
   - Jerusalem
   - Maccabees
   - Qumran
-  - Rapture
   - Syria
 books:
   - Daniel

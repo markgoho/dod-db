@@ -602,6 +602,7 @@
   align-items: start;
   display: grid;
   gap: var(--space-l);
+  grid-template-columns: minmax(0, 1fr);
   margin-block-start: var(--space-xl);
 }
 
@@ -734,7 +735,7 @@
   }
 
   .episode-metadata-footer {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .episode-nav__link--next:last-child {

@@ -5,6 +5,9 @@ episodeNumber: 97
 videoId: CtROVUxwKyM
 aliases:
   - /episodes/97/
+topics:
+  - Decalogue
+  - King James Bible
 tags:
   - Noah
   - Moses
@@ -16,14 +19,12 @@ tags:
   - Babylon
   - Dead Sea
   - Prophetic Critique
-  - Decalogue
   - Deuteronomy
   - forgery
   - Isaiah
   - Joshua
   - Judah
   - Judaism
-  - King James Bible
   - Luke
   - Protestantism
   - Samaritans

@@ -5,34 +5,35 @@ episodeNumber: 2
 videoId: luJhJvFzpew
 aliases:
   - /episodes/2/
-tags:
+topics:
   - YHWH
+  - Asherah
+  - Atheism
+  - divine council
+  - Masoretic Text
+  - Stele
+  - Trinity
+tags:
   - child sacrifice
   - Molek
   - Isaiah
-  - Asherah
   - Jerusalem
   - Adam
   - circumcision
   - Isaac
   - Abraham
-  - Atheism
   - Jephthah
   - Judah
   - Ugarit
   - Baal
   - Carthage
-  - divine council
   - Babylon
   - Deuteronomy
   - Elephantine
   - Jeremiah
-  - Masoretic Text
   - Solomon
-  - Stele
   - Syria
   - theophany
-  - Trinity
 books:
   - Ezekiel
   - Isaiah

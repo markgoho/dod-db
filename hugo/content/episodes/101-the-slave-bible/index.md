@@ -5,13 +5,16 @@ episodeNumber: 101
 videoId: KQlq_lmgBOk
 aliases:
   - /episodes/101/
-tags:
+topics:
   - Slave Bible
   - Decalogue
-  - Eschatology
   - King James Bible
-  - Pliny the Younger
   - Abortion
+  - Paul
+  - Univocality
+tags:
+  - Eschatology
+  - Pliny the Younger
   - baptism
   - Beatitudes
   - Galilee
@@ -20,9 +23,7 @@ tags:
   - inerrancy
   - Jerusalem
   - Noah
-  - Paul
   - Samuel
-  - Univocality
 books:
   - Matthew
   - Luke

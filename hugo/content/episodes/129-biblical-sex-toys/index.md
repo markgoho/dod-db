@@ -5,31 +5,32 @@ episodeNumber: 129
 videoId: 2Znu-wgg2Hw
 aliases:
   - /episodes/129/
+topics:
+  - Angel
+  - YHWH
+  - Asherah
+  - King James Bible
+  - David
+  - Dead Sea Scrolls
+  - Homosexuality
+  - Samson
+  - Septuagint
+  - Urim and Thummim
 tags:
   - Gideon
-  - Angel
   - Baal
   - Midianites
   - Joash
   - Jerusalem
   - Sodom
-  - YHWH
   - Canaanites
   - Moses
-  - Asherah
   - Deuteronomy
   - Gomorrah
-  - King James Bible
   - Abraham
   - Amorites
-  - David
-  - Dead Sea Scrolls
   - Hagar
-  - Homosexuality
   - Qumran
-  - Samson
-  - Septuagint
-  - Urim and Thummim
 books:
   - Ezekiel
   - Judges

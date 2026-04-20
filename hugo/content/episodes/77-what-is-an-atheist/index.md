@@ -5,17 +5,18 @@ episodeNumber: 77
 videoId: 4u2tKZlUJUc
 aliases:
   - /episodes/77/
-tags:
+topics:
   - Atheism
+  - Monotheism
+  - Prototype Theory
+tags:
   - Protestantism
   - Catholicism
   - Islam
   - Deism
   - The Reformation
   - Augustine
-  - Monotheism
   - Peter
-  - Prototype Theory
 segments:
   - What is That?
 segmentData:

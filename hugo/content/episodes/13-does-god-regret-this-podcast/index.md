@@ -5,17 +5,21 @@ episodeNumber: 13
 videoId: 5bA0OigwXR4
 aliases:
   - /episodes/13/
-tags:
-  - Jerusalem
+topics:
   - Omni Attributes
   - Sennacherib
-  - Hezekiah
-  - Dead Sea
   - Arad
   - David
-  - Judah
   - YHWH
   - Goliath
+  - Elhanan son of Jair
+  - Jacob
+  - Monotheism
+tags:
+  - Jerusalem
+  - Hezekiah
+  - Dead Sea
+  - Judah
   - Nineveh
   - Peter
   - Assyria
@@ -24,15 +28,12 @@ tags:
   - Canaanites
   - Constantine
   - Deuteronomy
-  - Elhanan son of Jair
   - epigraphy
   - Esau
   - Garden of Gethsemane
   - Isaac
-  - Jacob
   - Joshua
   - Moab
-  - Monotheism
   - Sea of Galilee
 books:
   - Genesis

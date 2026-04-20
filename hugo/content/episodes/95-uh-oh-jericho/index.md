@@ -5,6 +5,11 @@ episodeNumber: 95
 videoId: 73-1JSS7w1Q
 aliases:
   - /episodes/95/
+topics:
+  - King James Bible
+  - Angel
+  - Ritual Purity
+  - YHWH
 tags:
   - Noah
   - Jericho
@@ -12,7 +17,6 @@ tags:
   - Joshua
   - Moses
   - Enoch
-  - King James Bible
   - Canaan
   - Jared
   - Lamech
@@ -22,14 +26,11 @@ tags:
   - Nephilim
   - Qumran
   - Ammonites
-  - Angel
   - Ararat
   - Cain
   - Eve
   - Jerusalem
-  - Ritual Purity
   - Seth
-  - YHWH
 books:
   - Genesis
   - Joshua

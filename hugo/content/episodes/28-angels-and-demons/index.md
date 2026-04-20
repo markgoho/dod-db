@@ -5,25 +5,32 @@ episodeNumber: 28
 videoId: AUgdX7aH_hI
 aliases:
   - /episodes/28/
-tags:
+topics:
   - Angel
-  - Judaism
   - YHWH
-  - Baal
   - Satan
   - Demon
+  - Book of Enoch
+  - Daniel
+  - divine council
+  - Mary Magdalene
+  - Saul
+  - Abortion
+  - Euphrates
+  - Jacob
+  - John the Baptist
+  - Samson
+  - Septuagint
+tags:
+  - Judaism
+  - Baal
   - Beelzebul
   - Ugarit
   - Gabriel
   - Abraham
-  - Book of Enoch
-  - Daniel
   - Michael
-  - divine council
-  - Mary Magdalene
   - Moses
   - Persia
-  - Saul
   - Apocrypha
   - Babylon
   - Gideon
@@ -31,25 +38,19 @@ tags:
   - Pseudepigrapha
   - Sodom
   - Syria
-  - Abortion
   - Annunciation
   - Deuteronomy
   - Enoch
-  - Euphrates
   - Galilee
   - Garden of Eden
   - Isaac
   - Isaiah
   - Islam
-  - Jacob
-  - John the Baptist
   - Molek
   - Peter
-  - Samson
   - Samuel
   - Sarah
   - Sea of Galilee
-  - Septuagint
   - Seth
 books:
   - Genesis

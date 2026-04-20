@@ -6,6 +6,14 @@ videoId: "151982360"
 aliases:
   - /episodes/152/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/151982360.mp3?sig=FDMoAtJgqGoHn0zBoavvAdtLH9-2h7WIqf4k9WwS_vQ%3D
+topics:
+  - Dead Sea Scrolls
+  - Satan
+  - YHWH
+  - Creatio ex nihilo
+  - Daniel
+  - Masoretic Text
+  - Univocality
 tags:
   - Origen
   - inerrancy
@@ -17,21 +25,14 @@ tags:
   - Adam
   - Canaanites
   - Dead Sea
-  - Dead Sea Scrolls
   - Eve
   - Flood
-  - Satan
-  - YHWH
-  - Creatio ex nihilo
   - Creation ex nihilo
-  - Daniel
   - Isaac
   - Martin Luther
-  - Masoretic Text
   - Molek
   - Noah
   - Ugarit
-  - Univocality
 books:
   - Genesis
   - Psalms

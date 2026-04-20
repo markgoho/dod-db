@@ -9,7 +9,7 @@
 
     <div class="episodes-grid">
       {{ range $index, $page := sort .Pages ".Params.episodeNumber" "desc" }}
-        {{ partial "episode-card" (dict "episode" . "badgeSource" "tags") }}
+        {{ partial "episode-card" (dict "episode" . "badgeSource" "topics") }}
       {{ end }}
     </div>
   </section>

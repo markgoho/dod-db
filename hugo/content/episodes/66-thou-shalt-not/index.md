@@ -5,30 +5,31 @@ episodeNumber: 66
 videoId: oKe-ukUfIKs
 aliases:
   - /episodes/66/
-tags:
+topics:
   - Decalogue
   - YHWH
   - Asherah
-  - Baal
   - Stele
+  - Jacob
+  - King James Bible
+  - David
+  - Mary Magdalene
+  - Masoretic Text
+  - Satan
+tags:
+  - Baal
   - Judaism
   - Islam
-  - Jacob
   - Jehu
-  - King James Bible
   - Onan
   - Ugarit
   - Catholicism
-  - David
   - Elephantine
   - Elijah
   - Jerusalem
   - Joram
-  - Mary Magdalene
-  - Masoretic Text
   - Moses
   - Protestantism
-  - Satan
 books:
   - Exodus
   - Habakkuk

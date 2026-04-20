@@ -5,27 +5,28 @@ episodeNumber: 5
 videoId: G2s8VvaAgHQ
 aliases:
   - /episodes/5/
-tags:
+topics:
   - Easter
+  - Council of Nicaea
+  - Trinity
+  - Mary Magdalene
+  - Angel
+  - Creatio ex nihilo
+  - Monotheism
+tags:
   - Arius
   - Passover
   - Constantine
-  - Council of Nicaea
-  - Trinity
   - Crucifixion
   - Judaism
   - Apocrypha
   - Baal
-  - Mary Magdalene
-  - Angel
   - Athanasius of Alexandria
   - baptism
   - Catholicism
-  - Creatio ex nihilo
   - Eusebius
   - Hypostasis
   - Justin Martyr
-  - Monotheism
   - Romans
   - Virgin Birth
 books:

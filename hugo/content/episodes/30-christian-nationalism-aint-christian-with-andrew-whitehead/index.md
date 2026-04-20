@@ -5,19 +5,20 @@ episodeNumber: 30
 videoId: 10fIBhgQYF8
 aliases:
   - /episodes/30/
-tags:
+topics:
   - Christian Nationalism
   - Paul
+  - Homosexuality
+  - Second Coming
+  - David
+  - YHWH
+tags:
   - Romans
   - Andrew Whitehead
   - Solomon
-  - Homosexuality
-  - Second Coming
   - Cyrus the Great
-  - David
   - Isaiah
   - Islam
-  - YHWH
 books:
   - Romans
   - 2 Chronicles

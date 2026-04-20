@@ -10,7 +10,7 @@ import { parseHugoFile } from "../utils/parse-hugo-file.js";
 import { titleToSlug } from "../utils/title-to-slug.js";
 
 interface ParsedArguments {
-  tagName: string;
+  topicName: string;
 }
 
 interface CanonicalVariant {
@@ -18,7 +18,7 @@ interface CanonicalVariant {
   isAliasCandidate: boolean;
 }
 
-interface CanonicalTagContext {
+interface CanonicalTopicContext {
   name: string;
   category: string;
   variations: CanonicalVariant[];
@@ -66,9 +66,9 @@ interface SegmentMatchable {
   summary?: string;
 }
 
-interface GatheredTagContext {
-  tagName: string;
-  canonical: CanonicalTagContext;
+interface GatheredTopicContext {
+  topicName: string;
+  canonical: CanonicalTopicContext;
   topEpisodes: TopEpisodeContext[];
   existingPage?: ExistingPage;
 }
@@ -79,15 +79,15 @@ const EXCERPT_RADIUS = 10;
 const MAX_EXCERPTS_PER_EPISODE = 8;
 
 function parseArguments(argv: string[]): ParsedArguments {
-  const tagName = argv.find(argument => !argument.startsWith("--"))?.trim();
+  const topicName = argv.find(argument => !argument.startsWith("--"))?.trim();
 
-  if (!tagName) {
+  if (!topicName) {
     throw new TypeError(
-      "Usage: bun run src/scripts/gather-tag-context.ts <tag-name>",
+      "Usage: bun run src/scripts/gather-topic-context.ts <tag-name>",
     );
   }
 
-  return { tagName };
+  return { topicName };
 }
 
 function escapeRegExp(value: string): string {
@@ -115,7 +115,7 @@ function isAliasCandidate(canonical: string, variation: string): boolean {
   return true;
 }
 
-function buildSearchTerms(canonical: CanonicalTagContext): string[] {
+function buildSearchTerms(canonical: CanonicalTopicContext): string[] {
   return [
     ...new Set([
       canonical.name,
@@ -124,7 +124,7 @@ function buildSearchTerms(canonical: CanonicalTagContext): string[] {
   ].filter(Boolean);
 }
 
-function buildSearchPattern(canonical: CanonicalTagContext): RegExp {
+function buildSearchPattern(canonical: CanonicalTopicContext): RegExp {
   const terms = buildSearchTerms(canonical)
     .map(escapeRegExp)
     .sort((left, right) => right.length - left.length);
@@ -132,9 +132,9 @@ function buildSearchPattern(canonical: CanonicalTagContext): RegExp {
   return new RegExp(String.raw`\b(?:${terms.join("|")})\b`, "i");
 }
 
-function toCanonicalTagContext(
+function toCanonicalTopicContext(
   entry: (typeof tagVocabulary)[number],
-): CanonicalTagContext {
+): CanonicalTopicContext {
   return {
     name: entry.canonical,
     category: entry.category,
@@ -146,12 +146,12 @@ function toCanonicalTagContext(
   };
 }
 
-function findCanonicalTag(tagName: string): CanonicalTagContext {
-  const requested = normalizeForMatching(tagName);
+function findCanonicalTopic(topicName: string): CanonicalTopicContext {
+  const requested = normalizeForMatching(topicName);
 
   for (const entry of tagVocabulary) {
     if (normalizeForMatching(entry.canonical) === requested) {
-      return toCanonicalTagContext(entry);
+      return toCanonicalTopicContext(entry);
     }
   }
 
@@ -161,11 +161,11 @@ function findCanonicalTag(tagName: string): CanonicalTagContext {
         variation => normalizeForMatching(variation) === requested,
       )
     ) {
-      return toCanonicalTagContext(entry);
+      return toCanonicalTopicContext(entry);
     }
   }
 
-  throw new Error(`Tag "${tagName}" not found in tag vocabulary`);
+  throw new Error(`Topic "${topicName}" not found in tag vocabulary`);
 }
 
 async function loadTagEpisodeIndex(): Promise<
@@ -178,8 +178,8 @@ function buildTagEpisodeLookup(
   index: Record<string, EpisodeIndexEntry[]>,
 ): Map<string, EpisodeIndexEntry[]> {
   return new Map(
-    Object.entries(index).map(([tagName, episodes]) => [
-      normalizeForMatching(tagName),
+    Object.entries(index).map(([topicName, episodes]) => [
+      normalizeForMatching(topicName),
       episodes,
     ]),
   );
@@ -187,12 +187,12 @@ function buildTagEpisodeLookup(
 
 function findTagEpisodes(
   index: Map<string, EpisodeIndexEntry[]>,
-  canonical: CanonicalTagContext,
+  canonical: CanonicalTopicContext,
 ): EpisodeIndexEntry[] {
   const entry = index.get(normalizeForMatching(canonical.name));
 
   if (!entry) {
-    throw new Error(`Tag "${canonical.name}" not found in tag episode index`);
+    throw new Error(`Topic "${canonical.name}" not found in tag episode index`);
   }
 
   return [...entry]
@@ -200,7 +200,7 @@ function findTagEpisodes(
     .slice(0, MAX_TOP_EPISODES);
 }
 
-function matchesTagContext(
+function matchesTopicContext(
   segment: SegmentMatchable,
   pattern: RegExp,
 ): boolean {
@@ -223,7 +223,7 @@ function mergeSegmentData(
   );
 
   const gathered = processedSegments
-    .filter(segment => matchesTagContext(segment, pattern))
+    .filter(segment => matchesTopicContext(segment, pattern))
     .map(segment => {
       const startSeconds = timestampToSeconds(segment.startTimestamp);
       const frontmatter = frontmatterByKey.get(
@@ -246,7 +246,7 @@ function mergeSegmentData(
   );
 
   const frontmatterOnly = frontmatterSegments
-    .filter(segment => matchesTagContext(segment, pattern))
+    .filter(segment => matchesTopicContext(segment, pattern))
     .filter(
       segment => !knownKeys.has(`${segment.type}:${segment.startSeconds}`),
     )
@@ -350,7 +350,7 @@ async function loadFrontmatterSegments(
 async function loadExistingPage(
   tagSlug: string,
 ): Promise<ExistingPage | undefined> {
-  const path = `hugo/content/tags/${tagSlug}/_index.md`;
+  const path = `hugo/content/topics/${tagSlug}/_index.md`;
 
   try {
     const { frontmatter } = await parseHugoFile(path);
@@ -411,7 +411,7 @@ async function buildEpisodeContext(
 async function main(): Promise<void> {
   try {
     const args = parseArguments(process.argv.slice(2));
-    const canonical = findCanonicalTag(args.tagName);
+    const canonical = findCanonicalTopic(args.topicName);
     const [tagIndex, videos] = await Promise.all([
       loadTagEpisodeIndex(),
       loadProcessedVideos(),
@@ -443,8 +443,8 @@ async function main(): Promise<void> {
       }),
     );
 
-    const result: GatheredTagContext = {
-      tagName: args.tagName,
+    const result: GatheredTopicContext = {
+      topicName: args.topicName,
       canonical,
       topEpisodes: episodeContexts,
       existingPage: await loadExistingPage(titleToSlug(canonical.name)),

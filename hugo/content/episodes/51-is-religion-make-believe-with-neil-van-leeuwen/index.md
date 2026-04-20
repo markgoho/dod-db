@@ -5,11 +5,12 @@ episodeNumber: 51
 videoId: qNROe-Slo8Y
 aliases:
   - /episodes/51/
-tags:
+topics:
   - Atheism
-  - Catholicism
   - Omni Attributes
   - Dead Sea Scrolls
+tags:
+  - Catholicism
   - Garden of Eden
 books:
   - Isaiah

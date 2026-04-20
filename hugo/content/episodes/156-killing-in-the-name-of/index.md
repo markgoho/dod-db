@@ -6,9 +6,18 @@ videoId: "154250873"
 aliases:
   - /episodes/156/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/154250873.mp3?sig=B45_DXJXRNLoUndpzMe9Y4-NXFjV-ROE2b6Lol09Xwk%3D
+topics:
+  - Saul
+  - David
+  - James
+  - Jacob
+  - Paul
+  - Univocality
+  - Creatio ex nihilo
+  - Flavius Josephus
+  - Hell
 tags:
   - Amalek
-  - Saul
   - Samuel
   - Peter
   - John
@@ -21,8 +30,6 @@ tags:
   - Matthew
   - Papias of Hierapolis
   - Clement of Alexandria
-  - David
-  - James
   - Philip
   - Cain
   - Gaza
@@ -34,18 +41,12 @@ tags:
   - Deuteronomy
   - First Clement
   - Islam
-  - Jacob
   - Midianites
-  - Paul
   - Torah
-  - Univocality
   - Canaanites
   - Clement of Rome
-  - Creatio ex nihilo
   - Edom
   - Edomites
-  - Flavius Josephus
-  - Hell
   - Irenaeus
   - John of Patmos
   - Judah

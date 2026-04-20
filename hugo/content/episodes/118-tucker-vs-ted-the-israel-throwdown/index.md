@@ -5,32 +5,33 @@ episodeNumber: 118
 videoId: OtxuR9K4PKA
 aliases:
   - /episodes/118/
-tags:
-  - Abraham
-  - Babylon
-  - Origen
+topics:
   - YHWH
-  - Eschatology
   - Jacob
-  - Jerusalem
-  - Jonah
   - divine council
   - Septuagint
-  - Beatitudes
-  - Edomites
-  - inerrancy
-  - Judah
   - Preterism
   - Univocality
   - Christian Nationalism
   - Daniel
   - David
+  - Second Coming
+tags:
+  - Abraham
+  - Babylon
+  - Origen
+  - Eschatology
+  - Jerusalem
+  - Jonah
+  - Beatitudes
+  - Edomites
+  - inerrancy
+  - Judah
   - Isaac
   - Ishmael
   - Joshua
   - Judaism
   - Nineveh
-  - Second Coming
   - Terah
 books:
   - Genesis

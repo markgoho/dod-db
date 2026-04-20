@@ -5,24 +5,25 @@ episodeNumber: 22
 videoId: B1uE2cv8fP0
 aliases:
   - /episodes/22/
-tags:
+topics:
   - Priestly Source
   - YHWH
+  - Joseph
+  - Ritual Purity
+  - Arad
+  - King James Bible
+tags:
   - Moses
   - Deuteronomy
   - Flood
   - Qumran
-  - Joseph
-  - Ritual Purity
   - Abel
   - Adam
-  - Arad
   - Babylon
   - Cain
   - Eve
   - Isaiah
   - Ishmael
-  - King James Bible
   - Latin Vulgate
   - Midianites
   - Noah

@@ -6,6 +6,15 @@ videoId: "155444963"
 aliases:
   - /episodes/158/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/155444963.mp3?sig=4YXxt4X_HW-mekzkwdPF1aBfoFx-Mlnx8mBaLnxdunA%3D
+topics:
+  - Daniel
+  - Book of Enoch
+  - Dead Sea Scrolls
+  - Deutero-Isaiah
+  - Hell
+  - Satan
+  - Septuagint
+  - Tithing
 tags:
   - Maccabees
   - Second Maccabees
@@ -16,31 +25,23 @@ tags:
   - Maccabean Revolt
   - Antiochus IV Epiphanes
   - Apocrypha
-  - Daniel
   - Jerusalem
   - Babylon
   - Eschatology
   - Qumran
   - Romans
-  - Book of Enoch
-  - Dead Sea Scrolls
-  - Deutero-Isaiah
   - Hanukkah
   - Jeremiah
   - Catholicism
   - Deuteronomy
   - Essenes
-  - Hell
   - Isaiah
   - Judas Maccabeus
   - Letter of Aristeas
   - Martin Luther
   - Mattathias
   - Peter
-  - Satan
-  - Septuagint
   - Syria
-  - Tithing
   - Torah
 books:
   - Isaiah

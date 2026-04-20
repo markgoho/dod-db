@@ -5,30 +5,31 @@ episodeNumber: 113
 videoId: 29tvdRjwlJI
 aliases:
   - /episodes/113/
-tags:
+topics:
   - YHWH
+  - Atheism
+  - Christian Nationalism
+  - Deutero-Isaiah
+  - King James Bible
+  - Paul
+  - Urim and Thummim
+  - Deconstruction
+  - Satan
+  - Saul
+  - Univocality
+tags:
   - Jeremiah
   - Babylon
   - Judah
   - Deuteronomy
   - Jerusalem
-  - Atheism
-  - Christian Nationalism
-  - Deutero-Isaiah
   - Joshua
   - Judas Iscariot
-  - King James Bible
-  - Paul
-  - Urim and Thummim
-  - Deconstruction
   - inerrancy
   - Isaiah
   - Nebuchadnezzar
   - Peter
   - Romans
-  - Satan
-  - Saul
-  - Univocality
 books:
   - Jeremiah
   - Galatians

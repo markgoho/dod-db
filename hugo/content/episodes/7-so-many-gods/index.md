@@ -5,50 +5,51 @@ episodeNumber: 7
 videoId: 35Jz3A7tBgU
 aliases:
   - /episodes/7/
-tags:
+topics:
   - YHWH
   - divine council
+  - Asherah
+  - Sennacherib
+  - Masoretic Text
+  - Stele
+  - King James Bible
+  - Angel
+  - Daniel
+  - David
+  - Monotheism
+  - Septuagint
+  - Dead Sea Scrolls
+  - Deutero-Isaiah
+  - Jacob
+  - Josiah
+tags:
   - Moab
   - Deuteronomy
-  - Asherah
   - Judah
   - Baal
   - Hezekiah
   - Joram
   - Samaria
-  - Sennacherib
   - Edom
-  - Masoretic Text
-  - Stele
   - Ahab
   - Assyria
   - Babylon
   - Isaiah
-  - King James Bible
   - Ugarit
-  - Angel
   - Dead Sea
   - Elijah
   - Jerusalem
   - Moabites
   - Syria
-  - Daniel
-  - David
   - Jeremiah
   - Jeroboam
   - Leningrad Codex
-  - Monotheism
   - Moses
   - Persia
   - Sea of Galilee
-  - Septuagint
   - Bethel
-  - Dead Sea Scrolls
-  - Deutero-Isaiah
   - Edomites
-  - Jacob
   - Jephthah
-  - Josiah
   - Judaism
   - Michael
   - Philistines

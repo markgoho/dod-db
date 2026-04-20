@@ -5,14 +5,15 @@ episodeNumber: 103
 videoId: tXvgcXtcgQc
 aliases:
   - /episodes/103/
-tags:
+topics:
   - Hell
-  - Moses
   - Homosexuality
-  - Judah
   - Atheism
   - Christmas
   - Deconstruction
+tags:
+  - Moses
+  - Judah
 guests:
   - Jeremy Steele
 draft: false

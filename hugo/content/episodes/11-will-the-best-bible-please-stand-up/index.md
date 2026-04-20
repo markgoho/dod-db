@@ -5,23 +5,27 @@ episodeNumber: 11
 videoId: DD7Kkzh2kzg
 aliases:
   - /episodes/11/
-tags:
+topics:
   - Septuagint
-  - Apocrypha
   - King James Bible
-  - Latin Vulgate
-  - William Tyndale
   - Masoretic Text
   - Dead Sea Scrolls
+  - Book of Enoch
+  - Codex Sinaiticus
+  - Easter
+  - Daniel
+  - Gnosticism
+tags:
+  - Apocrypha
+  - Latin Vulgate
+  - William Tyndale
   - Pseudepigrapha
   - Desiderius Erasmus
   - Martin Luther
   - Jeremiah
-  - Book of Enoch
   - Catholicism
   - Judaism
   - Leningrad Codex
-  - Codex Sinaiticus
   - Moses
   - Origen
   - Torah
@@ -29,7 +33,6 @@ tags:
   - Babylon
   - Bethlehem
   - Deuteronomy
-  - Easter
   - Elijah
   - Jerome
   - Jerusalem
@@ -39,9 +42,7 @@ tags:
   - Protestantism
   - Samuel
   - Textus Receptus
-  - Daniel
   - Galilee
-  - Gnosticism
   - Jonah
   - Luke
   - Matthew

@@ -5,36 +5,37 @@ episodeNumber: 73
 videoId: MhGc3c7LlP0
 aliases:
   - /episodes/73/
-tags:
+topics:
   - Urim and Thummim
   - YHWH
-  - Ketef Hinnom
   - Saul
-  - Judaism
   - Dead Sea Scrolls
   - Flavius Josephus
   - Lilith
   - Asherah
+  - Witch of Endor
+  - Hell
+  - Paul
+  - Satan
+tags:
+  - Ketef Hinnom
+  - Judaism
   - Babylon
   - Judah
   - Protestantism
   - Torah
-  - Witch of Endor
   - Aaron
   - Carthage
   - Catholicism
   - Deuteronomy
   - etiology
   - Galilee
-  - Hell
   - Jerusalem
   - Jonathan
   - Judas Iscariot
   - Laban
   - Moab
-  - Paul
   - Philistines
-  - Satan
   - Sea of Galilee
 books:
   - Numbers

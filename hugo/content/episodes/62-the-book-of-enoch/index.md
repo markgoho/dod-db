@@ -5,30 +5,33 @@ episodeNumber: 62
 videoId: zghJE1-ZCQw
 aliases:
   - /episodes/62/
-tags:
-  - Enoch
+topics:
   - Book of Enoch
-  - Noah
-  - Flood
   - Angel
   - Daniel
+  - Dead Sea Scrolls
+  - Hell
+  - Satan
+  - Jacob
+  - Septuagint
+  - YHWH
+  - King James Bible
+tags:
+  - Enoch
+  - Noah
+  - Flood
   - Eschatology
   - Methuselah
   - Adam
   - Asael
   - Cain
-  - Dead Sea Scrolls
   - Ham
   - Hermeneia
   - Qumran
-  - Hell
   - James VanderKam
   - Japheth
   - Lamech
-  - Satan
   - Isaac
-  - Jacob
-  - Septuagint
   - Seth
   - Antiochus IV Epiphanes
   - Gentiles
@@ -36,7 +39,6 @@ tags:
   - Origen
   - Pseudepigrapha
   - Shem
-  - YHWH
   - Africa
   - Apocrypha
   - circumcision
@@ -46,7 +48,6 @@ tags:
   - Eve
   - Garden of Eden
   - Judaism
-  - King James Bible
   - Maccabees
   - Nephilim
   - Seleucid Empire

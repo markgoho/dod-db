@@ -26,9 +26,9 @@
           <div class="stat-display__number">{{ len $episodes }}</div>
           <div class="stat-display__label">Episodes</div>
         </a>
-        <a href="/tags/" class="stat-card panel">
+        <a href="/topics/" class="stat-card panel">
           <div class="stat-display__number">
-            {{ len .Site.Taxonomies.tags }}
+            {{ len .Site.Taxonomies.topics }}
           </div>
           <div class="stat-display__label">Topics</div>
         </a>
@@ -69,7 +69,7 @@
           </div>
         </a>
 
-        <a href="/tags/" class="feature-card panel">
+        <a href="/topics/" class="feature-card panel">
           <div class="feature-card__content">
             <h2 class="feature-card__title">Browse by Topic</h2>
             <p class="feature-card__description">
@@ -114,7 +114,7 @@
         </div>
         <div class="recent-episodes__grid">
           {{ range $recentEpisodes }}
-            {{ partial "episode-card" (dict "episode" . "headingLevel" "h3" "badgeSource" "tags") }}
+            {{ partial "episode-card" (dict "episode" . "headingLevel" "h3" "badgeSource" "topics") }}
           {{ end }}
         </div>
       </section>

@@ -5,15 +5,16 @@ episodeNumber: 24
 videoId: 8OqwDYUzrIY
 aliases:
   - /episodes/24/
-tags:
+topics:
   - Talmud
+  - Atheism
+  - Demon
+tags:
   - Torah
   - Judaism
   - Jerusalem
   - Babylon
-  - Atheism
   - Moses
-  - Demon
   - Judah
   - Passover
   - Romans

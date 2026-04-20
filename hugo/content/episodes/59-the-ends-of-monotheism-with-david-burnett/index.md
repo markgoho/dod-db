@@ -5,31 +5,32 @@ episodeNumber: 59
 videoId: BdJ_8a4ospk
 aliases:
   - /episodes/59/
-tags:
+topics:
   - Monotheism
   - Paul
-  - Hypostasis
-  - Philo of Alexandria
-  - Judaism
-  - Abraham
   - Deutero-Isaiah
-  - Athenagoras
-  - Deuteronomy
-  - Moses
-  - Second Temple period
   - YHWH
   - Creatio ex nihilo
-  - Creation ex nihilo
   - Jacob
   - Omni Attributes
   - Septuagint
   - Atheism
-  - Baal
   - divine council
+  - King James Bible
+tags:
+  - Hypostasis
+  - Philo of Alexandria
+  - Judaism
+  - Abraham
+  - Athenagoras
+  - Deuteronomy
+  - Moses
+  - Second Temple period
+  - Creation ex nihilo
+  - Baal
   - Elephantine
   - Isaac
   - Islam
-  - King James Bible
   - Laban
   - Latin Vulgate
   - Protestantism

@@ -5,21 +5,22 @@ episodeNumber: 25
 videoId: Xtm9DX_0Rx0
 aliases:
   - /episodes/25/
-tags:
-  - Beatitudes
+topics:
   - YHWH
-  - Luke
-  - Eschatology
   - Hell
-  - Judaism
-  - Sea of Galilee
   - Septuagint
   - Dead Sea Scrolls
-  - Deuteronomy
   - Jacob
+  - Second Coming
+tags:
+  - Beatitudes
+  - Luke
+  - Eschatology
+  - Judaism
+  - Sea of Galilee
+  - Deuteronomy
   - Latin Vulgate
   - Moses
-  - Second Coming
 books:
   - Matthew
   - Psalms

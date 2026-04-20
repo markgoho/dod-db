@@ -5,11 +5,20 @@ episodeNumber: 16
 videoId: V7PSCjcLFco
 aliases:
   - /episodes/16/
+topics:
+  - Junia
+  - Paul
+  - Mary Magdalene
+  - Gnosticism
+  - King James Bible
+  - YHWH
+  - Atheism
+  - Demon
+  - Jacob
+  - Septuagint
 tags:
   - Peter
-  - Junia
   - Matthew
-  - Paul
   - Joshua
   - Thaddeus
   - Philip
@@ -18,21 +27,13 @@ tags:
   - Galilee
   - John
   - Judas Iscariot
-  - Mary Magdalene
   - Abraham
   - Canaanites
-  - Gnosticism
-  - King James Bible
   - Moses
-  - YHWH
-  - Atheism
   - Catholicism
-  - Demon
   - Gospel of Thomas
-  - Jacob
   - John Chrysostom
   - Luke
-  - Septuagint
   - Syria
 books:
   - Romans

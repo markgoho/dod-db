@@ -5,36 +5,37 @@ episodeNumber: 1
 videoId: 833s6y6kW2k
 aliases:
   - /episodes/1/
-tags:
+topics:
   - YHWH
+  - Satan
+  - Jacob
+  - divine council
+  - Asherah
+  - Paul
+  - Dead Sea Scrolls
+  - Joseph
+  - King James Bible
+  - Monotheism
+  - Omni Attributes
+tags:
   - Baal
   - Adam
   - Eve
-  - Satan
   - Garden of Eden
-  - Jacob
   - Ugarit
   - Abraham
   - Babylon
-  - divine council
   - Moab
-  - Asherah
   - Elijah
   - Isaac
   - Moses
-  - Paul
   - Beelzebul
-  - Dead Sea Scrolls
   - Deuteronomy
   - Egyptians
   - Esau
   - Flood
-  - Joseph
   - Judah
   - Judaism
-  - King James Bible
-  - Monotheism
-  - Omni Attributes
   - source criticism
   - Syria
 books:

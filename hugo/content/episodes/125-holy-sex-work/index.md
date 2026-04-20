@@ -5,7 +5,7 @@ episodeNumber: 125
 videoId: y60G2r7J8vw
 aliases:
   - /episodes/125/
-tags:
+topics:
   - David
   - Homosexuality
   - Goliath
@@ -13,22 +13,23 @@ tags:
   - Septuagint
   - Angel
   - Dead Sea Scrolls
+  - Satan
+  - Hell
+  - Masoretic Text
+  - Josiah
+tags:
   - Garden of Eden
   - Maccabees
   - Asa
   - Judah
-  - Satan
   - Dead Sea
   - Philistines
   - Adam
   - Apocrypha
   - Deuteronomy
-  - Hell
-  - Masoretic Text
   - Tamar
   - circumcision
   - Hezekiah
-  - Josiah
   - Latin Vulgate
   - Martin Luther
   - Samuel

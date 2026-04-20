@@ -5,6 +5,14 @@ episodeNumber: 68
 videoId: ZwJai1EPbw4
 aliases:
   - /episodes/68/
+topics:
+  - Joseph
+  - Ruth
+  - Decalogue
+  - Jacob
+  - Samson
+  - Satan
+  - YHWH
 tags:
   - Judah
   - Er
@@ -13,14 +21,7 @@ tags:
   - Shelah
   - Deuteronomy
   - Boaz
-  - Joseph
-  - Ruth
   - Canaan
-  - Decalogue
-  - Jacob
-  - Samson
-  - Satan
-  - YHWH
 books:
   - Deuteronomy
   - Leviticus

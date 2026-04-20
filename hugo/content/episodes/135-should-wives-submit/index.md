@@ -5,25 +5,26 @@ episodeNumber: 135
 videoId: efYng6wT4YY
 aliases:
   - /episodes/135/
-tags:
+topics:
   - Paul
+  - Angel
+  - Flavius Josephus
+  - YHWH
+  - Daniel
+  - Septuagint
+  - Univocality
+tags:
   - Judaism
   - Babylon
   - Baal
   - Philo of Alexandria
-  - Angel
-  - Flavius Josephus
-  - YHWH
   - Adam
-  - Daniel
   - Eve
   - Islam
   - Jerusalem
   - Judah
   - Nephilim
-  - Septuagint
   - Ugarit
-  - Univocality
 books:
   - Ephesians
   - 1 Corinthians

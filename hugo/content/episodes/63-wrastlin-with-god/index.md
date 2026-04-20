@@ -5,26 +5,27 @@ episodeNumber: 63
 videoId: XO3fcbF6Jyc
 aliases:
   - /episodes/63/
-tags:
+topics:
   - Jacob
-  - Philistines
   - Samson
-  - Isaac
   - Angel
+  - John the Baptist
+  - Hell
+  - King James Bible
+tags:
+  - Philistines
+  - Isaac
   - Abraham
   - Laban
   - Esau
   - Rachel
   - Moses
-  - John the Baptist
   - Samuel
   - Abimelech
   - Gaza
-  - Hell
   - Jephthah
   - Judah
   - Leah
-  - King James Bible
   - Tamar
   - Ugarit
 books:

@@ -5,33 +5,36 @@ episodeNumber: 39
 videoId: VTRccZ81UZs
 aliases:
   - /episodes/39/
-tags:
+topics:
   - Hell
-  - John
   - Paul
+  - Satan
+  - Mark of the Beast
+  - Angel
+  - Codex Sinaiticus
+  - Preterism
+  - Council of Nicaea
+  - Euphrates
+  - Gnosticism
+  - Septuagint
+  - YHWH
+tags:
+  - John
   - Athanasius of Alexandria
   - Eschatology
   - Moses
-  - Satan
   - Jezebel
   - Garden of Eden
-  - Mark of the Beast
   - Anatolia
-  - Angel
   - Balaam
-  - Codex Sinaiticus
   - Dionysius of Alexandria
   - Domitian
   - Judah
   - Nero
-  - Preterism
   - Theosis
   - Constantine
   - Council of Jerusalem
-  - Council of Nicaea
   - Deuteronomy
-  - Euphrates
-  - Gnosticism
   - Jerusalem
   - John of Patmos
   - Justin Martyr
@@ -39,9 +42,7 @@ tags:
   - Pergamum
   - Protestantism
   - Romans
-  - Septuagint
   - Ugarit
-  - YHWH
 books:
   - Isaiah
   - Revelation

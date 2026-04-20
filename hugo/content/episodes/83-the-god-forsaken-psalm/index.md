@@ -5,25 +5,26 @@ episodeNumber: 83
 videoId: vZqmxICxUh8
 aliases:
   - /episodes/83/
-tags:
+topics:
   - David
   - Garden Tomb
   - Septuagint
+  - King James Bible
+  - Masoretic Text
+  - Abortion
+  - Bel and the Dragon
+  - Dead Sea Scrolls
+  - Hell
+  - Homosexuality
+tags:
   - Crucifixion
   - Jerusalem
   - Elijah
-  - King James Bible
   - Protestantism
   - Qumran
   - John
   - Luke
-  - Masoretic Text
-  - Abortion
-  - Bel and the Dragon
   - Constantine
-  - Dead Sea Scrolls
-  - Hell
-  - Homosexuality
   - Judaism
   - Peter
 books:

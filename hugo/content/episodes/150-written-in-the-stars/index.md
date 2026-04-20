@@ -6,32 +6,33 @@ videoId: "150842642"
 aliases:
   - /episodes/150/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/150842642.mp3?sig=dWuUy6D8p5qxK4BEdIgpDbhTqpuzXQOJ9LJwwRSIh2g%3D
-tags:
-  - Abraham
+topics:
   - Septuagint
-  - Stephen
   - Jacob
-  - Molek
   - Angel
-  - Terah
   - YHWH
-  - Deuteronomy
   - Gnosticism
   - Joseph
-  - Babylon
   - David
-  - Isaiah
   - Magi
-  - Moses
-  - Hagar
   - Masoretic Text
   - Paul
-  - Peter
-  - Philo of Alexandria
   - Satan
   - Saul
-  - Second Temple period
   - Star of Bethlehem
+tags:
+  - Abraham
+  - Stephen
+  - Molek
+  - Terah
+  - Deuteronomy
+  - Babylon
+  - Isaiah
+  - Moses
+  - Hagar
+  - Peter
+  - Philo of Alexandria
+  - Second Temple period
   - Adam
   - Canaanites
   - Council of Jerusalem

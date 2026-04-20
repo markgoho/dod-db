@@ -5,37 +5,38 @@ episodeNumber: 70
 videoId: wFcJAbbNOpk
 aliases:
   - /episodes/70/
-tags:
+topics:
   - Daniel
   - Creatio ex nihilo
+  - Bel and the Dragon
+  - Angel
+  - Monotheism
+  - Septuagint
+  - Gnosticism
+  - Paul
+  - Ritual Purity
+tags:
   - Apocrypha
   - Creation ex nihilo
-  - Bel and the Dragon
   - Maccabees
   - Cyrus the Great
   - Second Maccabees
   - Babylon
-  - Angel
   - Habakkuk
-  - Monotheism
   - Antiochus IV Epiphanes
   - Judaism
   - Martin Luther
   - Protestantism
   - Romans
-  - Septuagint
   - Augustine
   - Baal
   - Deism
   - Elijah
-  - Gnosticism
   - Jerome
   - Justin Martyr
   - Latin Vulgate
   - Median Kingdom
   - Origen
-  - Paul
-  - Ritual Purity
   - Tertullian
 books:
   - Genesis

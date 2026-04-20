@@ -6,40 +6,41 @@ videoId: "154855073"
 aliases:
   - /episodes/157/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/154855073.mp3?sig=4Pjyi_JkdNrz82x8zbZbUq_ZtdDO7VyDI4-Cx4AFQ2k%3D
+topics:
+  - Angel
+  - Book of Enoch
+  - Hell
+  - Daniel
+  - YHWH
+  - Dead Sea Scrolls
+  - Euphrates
+  - King James Bible
+  - Paul
+  - Joseph
 tags:
   - Sarah
   - Abraham
   - Hagar
   - Isaac
   - Ishmael
-  - Angel
-  - Book of Enoch
   - Enoch
   - Asael
   - Michael
-  - Hell
-  - Daniel
-  - YHWH
   - Gabriel
   - Garden of Eden
   - Peter
-  - Dead Sea Scrolls
-  - Euphrates
-  - King James Bible
   - Lamech
   - Methuselah
   - Ammonites
   - Egyptians
   - etiology
   - Noah
-  - Paul
   - Adam
   - Deuteronomy
   - Edomites
   - Hermeneia
   - James VanderKam
   - Jerusalem
-  - Joseph
   - Judaism
   - Luke
   - Moabites

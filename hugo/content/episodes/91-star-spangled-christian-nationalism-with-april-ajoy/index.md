@@ -5,21 +5,22 @@ episodeNumber: 91
 videoId: i0PTK1YOQuE
 aliases:
   - /episodes/91/
-tags:
+topics:
   - Christian Nationalism
   - Satan
   - Hell
-  - cognitive dissonance
   - Atheism
   - Homosexuality
   - Abortion
   - Angel
-  - Beatitudes
   - Christmas
   - Mary Magdalene
   - Omni Attributes
   - Paul
   - Rapture
+tags:
+  - cognitive dissonance
+  - Beatitudes
 books:
   - John
 guests:

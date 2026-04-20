@@ -5,13 +5,19 @@ episodeNumber: 88
 videoId: 4HiEJGpNAQU
 aliases:
   - /episodes/88/
-tags:
+topics:
   - Josiah
-  - Hezekiah
-  - Jerusalem
   - Asherah
   - YHWH
   - Sennacherib
+  - Arad
+  - Christian Nationalism
+  - David
+  - divine council
+  - King James Bible
+tags:
+  - Hezekiah
+  - Jerusalem
   - Deuteronomy
   - Judah
   - Baal
@@ -20,13 +26,8 @@ tags:
   - Moab
   - Assyria
   - Aaron
-  - Arad
   - Babylon
   - Bethlehem
-  - Christian Nationalism
-  - David
-  - divine council
-  - King James Bible
   - Nineveh
 books:
   - 2 Kings

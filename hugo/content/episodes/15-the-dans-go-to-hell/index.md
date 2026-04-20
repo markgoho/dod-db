@@ -5,18 +5,27 @@ episodeNumber: 15
 videoId: 7oB6UrrFn6c
 aliases:
   - /episodes/15/
-tags:
+topics:
   - Hell
-  - Judas Iscariot
   - Book of Enoch
+  - Univocality
+  - Saul
+  - Witch of Endor
+  - Paul
+  - Daniel
+  - David
+  - Flavius Josephus
+  - King James Bible
+  - Satan
+  - Triumphal Entry
+  - YHWH
+tags:
+  - Judas Iscariot
   - Jerusalem
   - Papias of Hierapolis
   - Sheol
-  - Univocality
-  - Saul
   - etiology
   - Samuel
-  - Witch of Endor
   - Apocrypha
   - child sacrifice
   - Eusebius
@@ -24,20 +33,12 @@ tags:
   - Jeremiah
   - Judaism
   - Nephilim
-  - Paul
   - Abraham
   - Baruch
-  - Daniel
-  - David
   - Enoch
-  - Flavius Josephus
   - Flood
-  - King James Bible
   - Pseudepigrapha
-  - Satan
   - Seleucid Empire
-  - Triumphal Entry
-  - YHWH
 books:
   - Isaiah
   - Matthew

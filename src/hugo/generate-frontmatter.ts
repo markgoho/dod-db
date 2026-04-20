@@ -2,18 +2,42 @@
  * Generate YAML frontmatter for Hugo episode pages.
  */
 
+import { tagVocabulary } from "../config/tag-vocabulary.js";
 import type { ProcessedVideo } from "../storage/processed-videos.js";
+import { titleToSlug } from "../utils/title-to-slug.js";
 import { formatSegmentsForFrontmatter } from "./format-segments-for-frontmatter.js";
 import { getGuestSpeakers } from "./get-guest-speakers.js";
 
 /**
  * Generate YAML frontmatter for an episode using Bun.YAML.
  */
+const topicSlugs = new Set(
+  [
+    ...new Bun.Glob("*/_index.md").scanSync({
+      cwd: new URL("../../hugo/content/topics/", import.meta.url).pathname,
+    }),
+  ]
+    .map(path => path.split("/")[0])
+    .filter(Boolean),
+);
+
+const canonicalNameBySlug = new Map(
+  tagVocabulary.map(entry => [titleToSlug(entry.canonical), entry.canonical]),
+);
+
 export function generateFrontmatter(
   video: ProcessedVideo,
   cleanTitle: string,
 ): string {
-  const tags = video.tags?.map(t => t.tag) ?? [];
+  const extractedTags = video.tags?.map(t => t.tag) ?? [];
+  const topics = extractedTags.flatMap(tag => {
+    const slug = titleToSlug(tag);
+    if (!topicSlugs.has(slug)) {
+      return [];
+    }
+    return [canonicalNameBySlug.get(slug) ?? tag];
+  });
+  const tags = extractedTags.filter(tag => !topicSlugs.has(titleToSlug(tag)));
   const books = video.scriptures?.map(s => s.book) ?? [];
   const guests = getGuestSpeakers(video.speakers);
   const { segments, segmentData } = formatSegmentsForFrontmatter(
@@ -35,6 +59,10 @@ export function generateFrontmatter(
   }
 
   // Add optional fields only if they have values
+  if (topics.length > 0) {
+    frontmatter.topics = topics;
+  }
+
   if (tags.length > 0) {
     frontmatter.tags = tags;
   }

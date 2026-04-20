@@ -5,42 +5,43 @@ episodeNumber: 58
 videoId: KDkyHw3nE0w
 aliases:
   - /episodes/58/
-tags:
+topics:
   - King James Bible
-  - William Tyndale
   - Septuagint
   - Dead Sea Scrolls
+  - Monotheism
+  - Angel
+  - Daniel
+  - Masoretic Text
+  - Univocality
+  - Creatio ex nihilo
+  - divine council
+  - Jacob
+  - Saul
+  - Trinity
+  - Witch of Endor
+tags:
+  - William Tyndale
   - Desiderius Erasmus
   - Sir Thomas More
   - Catholicism
   - Deuteronomy
-  - Monotheism
   - Textus Receptus
   - Abraham
   - Adam
-  - Angel
-  - Daniel
   - Dead Sea
   - Garden of Eden
   - Latin Vulgate
-  - Masoretic Text
   - Michael
   - Moses
-  - Univocality
-  - Creatio ex nihilo
   - Creation ex nihilo
-  - divine council
   - Elijah
   - Irenaeus
-  - Jacob
   - Jerome
   - Judaism
   - Martin Luther
   - Persia
-  - Saul
   - The Reformation
-  - Trinity
-  - Witch of Endor
 books:
   - Genesis
   - Exodus

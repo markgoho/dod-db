@@ -6,26 +6,27 @@ videoId: "153101535"
 aliases:
   - /episodes/154/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/153101535.mp3?sig=aK9dVD7ljiK_WIL5vW1KW2w-34867QQKw6XQUspTiJ4%3D
+topics:
+  - YHWH
+  - Jacob
+  - David
+  - Saul
+  - Arad
+  - Asherah
+  - Hell
+  - King James Bible
 tags:
   - Solomon
   - Deuteronomy
   - Judah
   - Moses
-  - YHWH
   - Esther
-  - Jacob
-  - David
   - Samuel
-  - Saul
   - Sukkot
-  - Arad
-  - Asherah
   - Baal
   - Babylon
-  - Hell
   - Jerusalem
   - Ketef Hinnom
-  - King James Bible
   - Origen
   - Torah
 books:

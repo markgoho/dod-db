@@ -115,7 +115,7 @@
       {{ end }}
       <div class="episodes-grid">
         {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-          {{ partial "episode-card" (dict "episode" . "guestMode" "all" "badgeSource" "tags") }}
+          {{ partial "episode-card" (dict "episode" . "guestMode" "all" "badgeSource" "topics") }}
         {{ end }}
       </div>
     </section>

@@ -5,32 +5,33 @@ episodeNumber: 93
 videoId: 4JOQmZvWz3Q
 aliases:
   - /episodes/93/
-tags:
+topics:
   - Covenant Code
   - Decalogue
+  - David
+  - Saul
+  - Abortion
+  - Christian Nationalism
+  - Creatio ex nihilo
+  - Goliath
+  - Hell
+  - King James Bible
+  - Samson
+tags:
   - Deuteronomy
   - Moses
   - Onan
-  - David
   - child sacrifice
-  - Saul
   - Eglon
   - Noah
-  - Abortion
   - Abraham
-  - Christian Nationalism
-  - Creatio ex nihilo
   - Egyptians
-  - Goliath
-  - Hell
   - Jennifer Bird
   - Jerusalem
-  - King James Bible
   - Moab
   - Mount Sinai
   - Passover
   - Philistines
-  - Samson
   - Sodom
 books:
   - Exodus

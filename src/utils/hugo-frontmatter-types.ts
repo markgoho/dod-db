@@ -10,7 +10,8 @@ export interface HugoEpisodeFrontmatter {
   videoId: string;
   audioUrl?: string;
   youtubeUrl: string;
-  tags: string[];
-  speakers: string[];
+  topics?: string[];
+  tags?: string[];
+  speakers?: string[];
   draft?: boolean;
 }

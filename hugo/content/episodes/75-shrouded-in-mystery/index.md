@@ -5,16 +5,17 @@ episodeNumber: 75
 videoId: OLyMIgX2ueE
 aliases:
   - /episodes/75/
-tags:
+topics:
   - Shroud of Turin
+  - YHWH
+  - Decalogue
+tags:
   - Egyptians
   - Red Sea
   - Moses
-  - YHWH
   - Aaron
   - Isaac
   - Passover
-  - Decalogue
   - Canaan
   - Elephantine
 books:

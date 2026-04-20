@@ -5,20 +5,21 @@ episodeNumber: 44
 videoId: BQOMbZtGs6E
 aliases:
   - /episodes/44/
-tags:
+topics:
   - Paul
+  - Univocality
+  - Daniel
+  - Decalogue
+  - Jacob
+  - YHWH
+tags:
   - Augustine
   - Jennifer Bird
   - Gentiles
   - Judaism
-  - Univocality
   - Abraham
   - Baal
-  - Daniel
-  - Decalogue
   - etiology
-  - Jacob
-  - YHWH
 books:
   - Genesis
   - Matthew

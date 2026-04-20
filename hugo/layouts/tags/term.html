@@ -1,167 +1,23 @@
-{{ define "head-styles" }}
-  {{ $inlineCSS := resources.Get "css/tag-single.css" | resources.Minify }}
-  <style>{{ $inlineCSS.Content | safeCSS }}</style>
-{{ end }}
-
 {{ define "main" }}
-  {{ $tagIndex := index hugo.Data "tag-episode-index" }}
-  {{ $rankedEpisodes := index $tagIndex .Title | default slice }}
-  {{ $topEpisode := index $rankedEpisodes 0 }}
-  {{ $topEpisodesLimit := .Params.topEpisodesLimit | default 6 }}
-  {{ $featuredEpisodes := first $topEpisodesLimit (after 1 $rankedEpisodes) }}
-  <section class="term-page term-page--episodes-archive tag-page">
-    {{ $def := .Params.definition | default .Params.dek | default "" }}
-    {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "tags" "backHref" "/tags/" "backLabel" "All Topics" "heroClass" "page-hero--profile" "definition" $def "category" (.Params.category | default "") "knownAs" (.Params.knownAs | default slice)) }}
+  <section class="cloud-page">
+    <header class="page-hero">
+      <h1 class="page-hero__title">Tags</h1>
+      <p class="page-hero__description panel panel--muted">
+        {{ .Data.Term }} appears in
+        {{ len .Pages }}
+        episode{{ if ne (len .Pages) 1 }}s{{ end }}
+      </p>
+    </header>
 
-    {{ $featuredItems := slice }}
-    {{ $currentTopicName := .Params.topicName | default .Title }}
-    {{ $allEpisodes := where site.RegularPages ".Section" "episodes" }}
-    {{ with .Params.featuredItems }}
-      {{ $featuredItems = . }}
-    {{ else with .Params.featuredSegment }}
-      {{ $featuredItems = slice (merge . (dict "type" "segment")) }}
-    {{ else with .Params.featuredEpisode }}
-      {{ $featuredItems = slice (merge . (dict "type" "episode")) }}
-    {{ end }}
-    {{ $featuredMarkup := "" }}
-    {{ range $featuredItems }}
-      {{ if eq .type "segment" }}
-        {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" .episodeNumber) 0 }}
-        {{ if $featuredEpisodePage }}
-          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "badgeSource" "tags" "currentTerm" $currentTopicName "overrides" (dict "eyebrow" (printf "Segment · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentAnchor)))) }}
-        {{ end }}
-      {{ else if eq .type "episode" }}
-        {{ $featuredEpisodeNumber := int .number }}
-        {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" $featuredEpisodeNumber) 0 }}
-        {{ if $featuredEpisodePage }}
-          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "ranked" true "badgeSource" "tags" "currentTerm" $currentTopicName "overrides" (dict "eyebrow" (printf "Featured · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion"))) }}
-        {{ end }}
+    <div class="episodes-grid">
+      {{ range sort .Pages ".Params.episodeNumber" "desc" }}
+        {{ partial "episode-card" (dict "episode" . "badgeSource" "tags" "currentTerm" $.Title) }}
       {{ end }}
-    {{ end }}
-    {{ with .Content }}
-      <details class="tag-intro panel">
-        <summary class="tag-intro__summary type-eyebrow">
-          Why this topic matters
-        </summary>
-        <div class="tag-intro__content prose">
-          {{ . }}
-        </div>
-      </details>
-    {{ end }}
-
-    {{ if or (ne $featuredMarkup "") $topEpisode }}
-      <section class="tag-featured-overview">
-        <h2 class="type-section-title tag-section-title">Where to start</h2>
-        <p class="tag-section-copy">
-          Start here for the best in-depth listening on {{ .Title }}: featured
-          segments, featured episodes, and the episode with the most mentions.
-        </p>
-        <div class="tag-featured-callouts episodes-grid">
-          {{ $featuredMarkup | safeHTML }}
-          {{ if $topEpisode }}
-            {{ $topEpisodePage := index (where $allEpisodes ".Params.episodeNumber" $topEpisode.ep) 0 }}
-            {{ if $topEpisodePage }}
-              {{ partial "episode-card" (dict "episode" $topEpisodePage "ranked" true "mentionCount" $topEpisode.m "badgeSource" "tags" "currentTerm" $currentTopicName "overrides" (dict "eyebrow" (printf "Top mention · Episode %v" $topEpisodePage.Params.episodeNumber) "guestText" "The episode that talks about this topic the most")) }}
-            {{ end }}
-          {{ end }}
-        </div>
-      </section>
-    {{ end }}
-
-    {{ with .Params.quotes }}
-      <section class="tag-quotes" aria-label="Quotes">
-        <h2 class="type-section-title tag-section-title">
-          Quotes from the Data
-        </h2>
-        <div class="tag-quotes__grid">
-          {{ range . }}
-            {{ $episodePage := where $.Pages ".Params.episodeNumber" .episode }}
-            {{ $episode := index $episodePage 0 }}
-            <article class="tag-quote panel">
-              <p class="tag-quote__text">“{{ .text }}”</p>
-              <div class="tag-quote__meta">
-                <span class="tag-quote__speaker type-eyebrow"
-                  >{{ .speaker }}</span
-                >
-                {{ if $episode }}
-                  {{ $quoteHref := $episode.RelPermalink }}
-                  {{ with .timestamp }}
-                    {{ $timestampParts := split . "." }}
-                    {{ $timeParts := split (index $timestampParts 0) ":" }}
-                    {{ if eq (len $timeParts) 3 }}
-                      {{ $hours := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 0)) }}
-                      {{ $minutes := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 1)) }}
-                      {{ $seconds := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 2)) }}
-                      {{ $milliseconds := cond (gt (len $timestampParts) 1) (int (replaceRE "^0+([0-9]+)$" "$1" (index $timestampParts 1))) 0 }}
-                      {{ $totalSeconds := add (mul $hours 3600) (add (mul $minutes 60) $seconds) }}
-                      {{ $quoteHref = printf "%s#t-%d-%03d" $episode.RelPermalink $totalSeconds $milliseconds }}
-                    {{ end }}
-                  {{ end }}
-                  <a
-                    href="{{ $quoteHref }}"
-                    class="tag-quote__episode chip"
-                    data-episode="{{ .episode }}"
-                    data-share-url="{{ $quoteHref | absURL }}">
-                    Episode
-                    {{ .episode }}
-                  </a>
-                {{ else }}
-                  <span class="tag-quote__episode chip">
-                    Episode
-                    {{ .episode }}{{ with .timestamp }}· {{ . }}{{ end }}
-                  </span>
-                {{ end }}
-              </div>
-            </article>
-          {{ end }}
-        </div>
-      </section>
-    {{ end }}
-
-    {{ if and (.Params.showTopEpisodes | default true) (gt (len $featuredEpisodes) 0) }}
-      <section class="tag-episodes tag-episodes--featured">
-        <h2 class="type-section-title tag-section-title">Top episodes</h2>
-        <p class="tag-section-copy">
-          Ranked by mentions of {{ .Title }} across the transcript. Start with
-          the top mention above, then keep going here.
-        </p>
-        {{ if gt (len $featuredEpisodes) 0 }}
-          <div class="episodes-grid">
-            {{ range $featuredEpisodes }}
-              {{ $episodePage := where $.Pages ".Params.episodeNumber" .ep }}
-              {{ $episode := index $episodePage 0 }}
-              {{ if $episode }}
-                {{ partial "episode-card" (dict "episode" $episode "ranked" true "mentionCount" .m "badgeSource" "tags" "currentTerm" $currentTopicName) }}
-              {{ end }}
-            {{ end }}
-          </div>
-        {{ end }}
-      </section>
-    {{ end }}
-
-    {{ if .Params.showAllEpisodes | default true }}
-      <section class="tag-episodes">
-        <h2 class="type-section-title tag-section-title">All episodes</h2>
-        <p class="tag-section-copy">
-          Every episode currently tagged with {{ .Title }}.
-        </p>
-        <div class="episodes-grid">
-          {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-            {{ partial "episode-card" (dict "episode" . "badgeSource" "tags" "currentTerm" $currentTopicName) }}
-          {{ end }}
-        </div>
-      </section>
-    {{ end }}
+    </div>
   </section>
 {{ end }}
 
 {{ define "footer-scripts" }}
   {{ partial "json-ld/taxonomy-term.html" . }}
   {{ partial "json-ld/breadcrumb.html" . }}
-  {{ $shareOpts := dict "targetPath" "quote-share.js" }}
-  {{ $shareBuilt := resources.Get "ts/quote-share.ts" | js.Build $shareOpts }}
-  {{ if hugo.IsProduction }}
-    {{ $shareBuilt = $shareBuilt | resources.Minify | resources.Fingerprint }}
-  {{ end }}
-  <script src="{{ $shareBuilt.RelPermalink }}"></script>
 {{ end }}

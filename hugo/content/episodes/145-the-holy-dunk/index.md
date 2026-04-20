@@ -6,38 +6,39 @@ videoId: "147973619"
 aliases:
   - /episodes/145/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/147973619.mp3?sig=KtLy2HJCzmQJuE8fSUtbqzSCBNED6QN6tmEWMyAbuwg%3D
+topics:
+  - John the Baptist
+  - Holy Spirit
+  - David
+  - Paul
+  - Abortion
+  - Deutero-Isaiah
+  - Josiah
+  - Ritual Purity
+  - Satan
 tags:
   - baptism
-  - John the Baptist
   - Matthew
   - Deuteronomy
   - Luke
-  - Holy Spirit
   - Nazareth
   - Galilee
   - Canaan
-  - David
   - Elijah
   - Isaiah
   - Moses
-  - Paul
-  - Abortion
   - Amorites
   - Baal
   - Bethlehem
   - Canaanites
   - Dead Sea
-  - Deutero-Isaiah
   - Esarhaddon
   - Garden of Gethsemane
   - Herod Antipas
   - Judas Iscariot
-  - Josiah
   - Moabites
   - Qumran
-  - Ritual Purity
   - Romans
-  - Satan
   - Second Temple period
 books:
   - Isaiah

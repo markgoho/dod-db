@@ -5,20 +5,29 @@ episodeNumber: 87
 videoId: UNTBSfnu4Rs
 aliases:
   - /episodes/87/
-tags:
-  - Nazareth
-  - Bethlehem
+topics:
   - Mary Magdalene
-  - Jerusalem
   - Christmas
   - Angel
   - David
   - John the Baptist
   - Magi
   - Septuagint
+  - Paul
+  - Star of Bethlehem
+  - YHWH
+  - Abortion
+  - Flavius Josephus
+  - Hell
+  - Holy Spirit
+  - Jacob
+  - Triumphal Entry
+tags:
+  - Nazareth
+  - Bethlehem
+  - Jerusalem
   - Gabriel
   - Gospel of James
-  - Paul
   - Galilee
   - Elizabeth
   - Herod the Great
@@ -27,21 +36,13 @@ tags:
   - Deuteronomy
   - Jericho
   - Judah
-  - Star of Bethlehem
-  - YHWH
-  - Abortion
   - Antiochus IV Epiphanes
   - baptism
   - Catholicism
   - Crucifixion
-  - Flavius Josephus
-  - Hell
-  - Holy Spirit
-  - Jacob
   - Maccabees
   - Romans
   - Seleucid Empire
-  - Triumphal Entry
 books:
   - Isaiah
   - Deuteronomy

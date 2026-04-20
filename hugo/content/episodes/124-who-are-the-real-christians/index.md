@@ -5,39 +5,40 @@ episodeNumber: 124
 videoId: yviFHESG_HA
 aliases:
   - /episodes/124/
-tags:
-  - Nephilim
+topics:
   - Abortion
-  - Flood
   - YHWH
   - Atheism
-  - Romans
   - divine council
   - Paul
   - Book of Enoch
-  - Protestantism
   - Angel
   - Asherah
-  - Catholicism
-  - Deuteronomy
   - Hell
   - Homosexuality
+  - Jacob
+  - Prototype Theory
+  - Satan
+  - Septuagint
+  - Trinity
+tags:
+  - Nephilim
+  - Flood
+  - Romans
+  - Protestantism
+  - Catholicism
+  - Deuteronomy
   - Seth
   - Sodom
   - Enoch
   - Isaac
   - Isaiah
   - Islam
-  - Jacob
   - Joshua
   - Judaism
   - Martin Luther
   - Noah
   - Peter
-  - Prototype Theory
-  - Satan
-  - Septuagint
-  - Trinity
   - Ugarit
 books:
   - Genesis

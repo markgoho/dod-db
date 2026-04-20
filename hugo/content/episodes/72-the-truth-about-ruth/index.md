@@ -5,31 +5,32 @@ episodeNumber: 72
 videoId: 600Z95nVTxs
 aliases:
   - /episodes/72/
-tags:
+topics:
   - Sennacherib
+  - Ruth
+  - Angel
+  - YHWH
+  - Josiah
+  - Arad
+  - David
+  - King James Bible
+  - Mary Magdalene
+tags:
   - Hezekiah
   - Naomi
-  - Ruth
   - Boaz
   - Judah
   - Jerusalem
   - Moab
   - Tamar
-  - Angel
   - Assyria
   - Bethlehem
-  - YHWH
   - Nineveh
   - Isaiah
-  - Josiah
-  - Arad
   - Babylon
-  - David
   - Hesed
   - Jonah
-  - King James Bible
   - Leah
-  - Mary Magdalene
   - Peter
   - Rachel
 books:

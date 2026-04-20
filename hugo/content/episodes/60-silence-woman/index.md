@@ -5,24 +5,25 @@ episodeNumber: 60
 videoId: irflmh20e8Y
 aliases:
   - /episodes/60/
+topics:
+  - Paul
+  - King James Bible
+  - Abortion
+  - Univocality
+  - YHWH
 tags:
   - Priscilla
-  - Paul
   - Aquila
   - Moses
   - Eve
   - Adam
   - Jerusalem
-  - King James Bible
   - Romans
-  - Abortion
   - Catholicism
   - inerrancy
   - Saint Titus
   - Southern Baptist Convention
   - Textus Receptus
-  - Univocality
-  - YHWH
 books:
   - 1 Corinthians
   - John

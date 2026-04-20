@@ -5,37 +5,38 @@ episodeNumber: 119
 videoId: _vuCVVcOsHg
 aliases:
   - /episodes/119/
-tags:
+topics:
   - Preterism
+  - Daniel
+  - Second Coming
+  - Atheism
+  - Rapture
+  - Bel and the Dragon
+  - Council of Nicaea
+  - Easter
+  - Gnosticism
+  - Holy Spirit
+tags:
   - John
   - Athanasius of Alexandria
-  - Daniel
   - Eschatology
   - Jerusalem
   - Dionysius of Alexandria
-  - Second Coming
   - Apocrypha
   - Eusebius
   - Nero
-  - Atheism
   - Constantine
   - Jeremiah
   - Justin Martyr
   - Marcion
-  - Rapture
   - Antiochus IV Epiphanes
   - Arius
   - Armageddon
   - Baruch
-  - Bel and the Dragon
   - Carthage
   - Catholicism
-  - Council of Nicaea
   - Deuteronomy
-  - Easter
   - futurist interpretation
-  - Gnosticism
-  - Holy Spirit
   - inerrancy
   - John of Patmos
   - Judaism

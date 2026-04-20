@@ -3965,12 +3965,13 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Usury",
-    variations: ["interest"],
-    category: "theology",
+    variations: [],
+    category: "miscellaneous",
     description:
       "The practice of lending money at interest, historically condemned in many religious traditions",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 106,
+    episodes: [106],
   },
   {
     canonical: "Oxford",
@@ -9031,6 +9032,33 @@ export const tagVocabulary: TagDefinition[] = [
     category: "miscellaneous",
     status: "accepted",
     episodes: [21, 23, 31, 93, 104, 106, 155],
+  },
+  {
+    canonical: "1 Esdras",
+    variations: ["First Esdras", "Greek Ezra"],
+    category: "literature",
+    description:
+      "An Old Testament apocryphal book found in Greek and Slavonic Orthodox traditions, primarily a Greek translation of Ezra-Nehemiah with some additional material.",
+    status: "proposed",
+    addedInEpisode: 159,
+  },
+  {
+    canonical: "Darius",
+    variations: ["King Darius"],
+    category: "person",
+    description:
+      "A Persian king mentioned in biblical texts, notably in the Book of Daniel and Ezra-Nehemiah, often associated with the post-exilic period.",
+    status: "proposed",
+    addedInEpisode: 159,
+  },
+  {
+    canonical: "Masoretes",
+    variations: [],
+    category: "scholarship",
+    description:
+      "A group of Jewish scribes and scholars active from roughly 500 to 1000 CE, responsible for standardizing the Hebrew Bible text, including vocalization and annotation.",
+    status: "proposed",
+    addedInEpisode: 159,
   },
 ];
 

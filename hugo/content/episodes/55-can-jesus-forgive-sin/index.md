@@ -5,32 +5,36 @@ episodeNumber: 55
 videoId: 9pKuCIMUV4s
 aliases:
   - /episodes/55/
+topics:
+  - Ahaziah
+  - Angel
+  - Univocality
+  - David
+  - King James Bible
+  - Omni Attributes
+  - Book of Enoch
+  - Dead Sea Scrolls
+  - Demon
+  - Mary Magdalene
+  - Saul
+  - YHWH
 tags:
   - Jehu
-  - Ahaziah
   - Joram
   - Judah
-  - Angel
   - Capernaum
   - Samaria
   - Ahab
   - Jerusalem
-  - Univocality
   - inerrancy
   - Joshua
   - Pontius Pilate
-  - David
-  - King James Bible
   - Moses
   - Samuel
   - baptism
-  - Omni Attributes
   - Peter
   - Abraham
-  - Book of Enoch
   - Dead Sea
-  - Dead Sea Scrolls
-  - Demon
   - Deuteronomy
   - Egyptians
   - Galilee
@@ -39,13 +43,10 @@ tags:
   - Isaiah
   - Judas Iscariot
   - Maccabees
-  - Mary Magdalene
   - Nazareth
-  - Saul
   - Sea of Galilee
   - Second Maccabees
   - Solomon
-  - YHWH
 books:
   - Mark
   - Joshua

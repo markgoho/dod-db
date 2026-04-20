@@ -5,19 +5,26 @@ episodeNumber: 123
 videoId: fkLem2cllv4
 aliases:
   - /episodes/123/
+topics:
+  - Asherah
+  - Paul
+  - Mary Magdalene
+  - Josiah
+  - Daniel
+  - YHWH
+  - David
+  - Dead Sea Scrolls
+  - Demon
+  - Flavius Josephus
+  - Hell
 tags:
   - Jezebel
   - Ahab
   - Baal
-  - Asherah
-  - Paul
   - Elijah
   - Judah
   - Judaism
-  - Mary Magdalene
-  - Josiah
   - Seleucid Empire
-  - Daniel
   - Maccabees
   - Second Temple period
   - Essenes
@@ -25,18 +32,12 @@ tags:
   - Jael
   - Moses
   - Samaria
-  - YHWH
   - Aaron
   - Antiochus IV Epiphanes
   - Balaam
   - Beelzebul
-  - David
-  - Dead Sea Scrolls
-  - Demon
   - Deuteronomy
   - Enoch
-  - Flavius Josephus
-  - Hell
   - Jericho
   - Matthew
   - Qumran

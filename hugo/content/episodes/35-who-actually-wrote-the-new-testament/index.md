@@ -5,13 +5,16 @@ episodeNumber: 35
 videoId: _8in-xz4L8o
 aliases:
   - /episodes/35/
-tags:
+topics:
   - Paul
+  - James
+  - King James Bible
+  - Septuagint
+tags:
   - Papias of Hierapolis
   - Matthew
   - Peter
   - John
-  - James
   - Luke
   - Irenaeus
   - Saint Titus
@@ -25,8 +28,6 @@ tags:
   - Catholicism
   - Gospel of Thomas
   - Ishmael
-  - King James Bible
-  - Septuagint
 books:
   - 1 Corinthians
   - Matthew

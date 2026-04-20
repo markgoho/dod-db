@@ -1,15 +1,15 @@
 {{ define "main" }}
   <section class="cloud-page">
     <header class="page-hero">
-      <h1 class="page-hero__title">Topics</h1>
+      <h1 class="page-hero__title">Tags</h1>
       <p class="page-hero__description panel panel--muted">
-        {{ len .Data.Terms }} topics across all episodes
+        {{ len .Data.Terms }} lightweight tags across all episodes
       </p>
     </header>
 
     <ul class="token-cloud" role="list">
       {{ range .Data.Terms.Alphabetical }}
-        {{ $titleTransitionName := printf "tags-title-%s" (.Page.Title | urlize) }}
+        {{ $titleTransitionName := printf "tag-cloud-title-%s" (.Page.Title | urlize) }}
         <li>
           <a href="{{ .Page.RelPermalink }}" class="token-pill">
             <span

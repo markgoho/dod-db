@@ -5,39 +5,40 @@ episodeNumber: 4
 videoId: WidY7lIBiyY
 aliases:
   - /episodes/4/
-tags:
+topics:
   - Rapture
+  - Angel
+  - Daniel
+  - Atheism
+  - Council of Nicaea
+  - Christian Nationalism
+  - Euphrates
+  - Mark of the Beast
+  - Paul
+  - Preterism
+  - Second Coming
+  - Trinity
+  - Univocality
+tags:
   - John of Patmos
   - Athanasius of Alexandria
-  - Angel
   - Arius
   - Armageddon
-  - Daniel
   - Peter
   - Abraham
-  - Atheism
   - cognitive dissonance
-  - Council of Nicaea
   - Apocrypha
   - Babylon
-  - Christian Nationalism
   - Dionysius of Alexandria
   - Domitian
-  - Euphrates
   - futurist interpretation
   - inerrancy
   - Jerusalem
-  - Mark of the Beast
   - Matthew
-  - Paul
-  - Preterism
   - Protestantism
   - Romans
-  - Second Coming
   - Seleucid Empire
   - The Reformation
-  - Trinity
-  - Univocality
 books:
   - Psalms
 guests:

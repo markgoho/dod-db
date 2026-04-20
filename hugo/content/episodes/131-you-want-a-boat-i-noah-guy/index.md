@@ -5,6 +5,9 @@ episodeNumber: 131
 videoId: ro4MNHH7T5k
 aliases:
   - /episodes/131/
+topics:
+  - King James Bible
+  - Priestly Source
 tags:
   - Noah
   - Flood
@@ -14,14 +17,12 @@ tags:
   - Shem
   - Cain
   - Enoch
-  - King James Bible
   - Lamech
   - Luke
   - Adam
   - Canaan
   - Garden of Eden
   - Peter
-  - Priestly Source
   - Qumran
   - Solomon
 books:

@@ -5,26 +5,27 @@ episodeNumber: 100
 videoId: aMOdy4N6U4M
 aliases:
   - /episodes/100/
-tags:
+topics:
   - Paul
   - Septuagint
+  - Dead Sea Scrolls
+  - Codex Sinaiticus
+  - Flavius Josephus
+tags:
   - Onesimus
   - Moses
   - Letter of Aristeas
   - Luke
-  - Dead Sea Scrolls
   - Jerusalem
   - Pseudepigrapha
   - Aristobulus
   - John
   - Torah
   - Apocrypha
-  - Codex Sinaiticus
   - Constantine
   - Demas
   - Egyptians
   - Eusebius
-  - Flavius Josephus
   - Herod Antipas
   - Isaiah
   - Leningrad Codex

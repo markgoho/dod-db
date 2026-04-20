@@ -6,25 +6,26 @@ videoId: "151389925"
 aliases:
   - /episodes/151/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/151389925.mp3?sig=cmlAHPDVc9BpalU8WRhGadf6uyCNGqD5xdZ-vb7JSSI%3D
+topics:
+  - King James Bible
+  - Septuagint
+  - Dead Sea Scrolls
+  - Paul
+  - Bel and the Dragon
+  - Masoretic Text
+  - Univocality
 tags:
   - Beatitudes
-  - King James Bible
   - Protestantism
-  - Septuagint
   - Catholicism
   - Apocrypha
   - Textus Receptus
-  - Dead Sea Scrolls
   - Luke
   - Martin Luther
   - Moses
-  - Paul
-  - Bel and the Dragon
   - Leningrad Codex
-  - Masoretic Text
   - Romans
   - Samaritans
-  - Univocality
 books:
   - Genesis
   - James

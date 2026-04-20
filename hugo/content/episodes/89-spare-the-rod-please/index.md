@@ -5,20 +5,21 @@ episodeNumber: 89
 videoId: t40eXH29l-8
 aliases:
   - /episodes/89/
-tags:
+topics:
   - Paul
   - Satan
   - Hell
+  - Gnosticism
+  - Univocality
+  - Homosexuality
+tags:
   - Sheol
   - Gentiles
-  - Gnosticism
   - Origen
   - Solomon
-  - Univocality
   - Augustine
   - cognitive dissonance
   - Hermeneia
-  - Homosexuality
   - inerrancy
   - Romans
 books:

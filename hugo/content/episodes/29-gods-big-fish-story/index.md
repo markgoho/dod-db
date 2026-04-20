@@ -5,14 +5,20 @@ episodeNumber: 29
 videoId: yveP4tc5OSo
 aliases:
   - /episodes/29/
+topics:
+  - YHWH
+  - Sennacherib
+  - Jacob
+  - King James Bible
+  - Satan
+  - Univocality
+  - Omni Attributes
 tags:
   - Jonah
   - Nineveh
   - Assyria
   - Eve
   - Adam
-  - YHWH
-  - Sennacherib
   - Ahab
   - Jerusalem
   - Tarshish
@@ -20,13 +26,8 @@ tags:
   - Garden of Eden
   - Gilead
   - Hezekiah
-  - Jacob
-  - King James Bible
-  - Satan
-  - Univocality
   - inerrancy
   - Judah
-  - Omni Attributes
   - Sukkot
   - Abraham
   - Peter

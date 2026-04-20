@@ -5,31 +5,32 @@ episodeNumber: 80
 videoId: OoXQAfsPutQ
 aliases:
   - /episodes/80/
-tags:
+topics:
   - Omni Attributes
   - James
+  - David
+  - Paul
+  - Masoretic Text
+  - Septuagint
+  - Abortion
+  - Univocality
+tags:
   - Edom
   - Gentiles
   - Adam
-  - David
   - Council of Jerusalem
-  - Paul
   - Judah
   - Judaism
   - Luke
   - Barnabas
   - Eve
   - Joshua
-  - Masoretic Text
   - Moab
-  - Septuagint
-  - Abortion
   - Garden of Eden
   - Jerusalem
   - Michael
   - Philistines
   - The Reformation
-  - Univocality
 books:
   - Amos
   - Acts

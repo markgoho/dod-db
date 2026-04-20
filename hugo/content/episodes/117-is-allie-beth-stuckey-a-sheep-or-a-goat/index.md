@@ -5,30 +5,31 @@ episodeNumber: 117
 videoId: 9umlMF6WWX4
 aliases:
   - /episodes/117/
+topics:
+  - YHWH
+  - Asherah
+  - King James Bible
+  - Flavius Josephus
+  - Hell
+  - Josiah
+  - Monotheism
+  - Univocality
 tags:
   - Elephantine
-  - YHWH
   - Judah
   - Torah
-  - Asherah
   - Passover
   - Jerusalem
-  - King James Bible
   - Maccabees
   - Africa
   - Babylon
   - Catholicism
   - Deuteronomy
   - Egyptians
-  - Flavius Josephus
-  - Hell
   - inerrancy
   - Judaism
-  - Josiah
   - Maccabean Revolt
-  - Monotheism
   - Moses
-  - Univocality
 books:
   - Matthew
   - Leviticus

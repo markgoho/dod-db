@@ -5,20 +5,21 @@ episodeNumber: 33
 videoId: 1qbh8bFGfvg
 aliases:
   - /episodes/33/
-tags:
+topics:
   - Paul
-  - circumcision
   - Satan
   - Angel
-  - Isaac
-  - Gentiles
   - Demon
-  - Egyptians
   - Saul
   - Abortion
+  - Holy Spirit
+tags:
+  - circumcision
+  - Isaac
+  - Gentiles
+  - Egyptians
   - Acts of Paul and Thecla
   - Apocrypha
-  - Holy Spirit
   - Ignatius
   - Islam
   - Jeremiah
