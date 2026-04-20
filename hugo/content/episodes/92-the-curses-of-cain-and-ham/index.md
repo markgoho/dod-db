@@ -12,6 +12,7 @@ tags:
   - Susanna
   - Apocrypha
   - Canaan
+  - Curse of Ham
   - Japheth
   - Noah
   - Shem
@@ -22,6 +23,7 @@ tags:
   - Flood
   - Protestantism
   - Babylon
+  - Curse of Cain
   - Joachim
   - Septuagint
   - Abraham
@@ -51,7 +53,7 @@ segmentData:
   - type: taking-issue
     anchor: taking-issue-1
     label: Taking Issue
-    topicLabel: "Cain's Mark"
+    topicLabel: Curses
     summary: The mark of Cain and racist interpretations of it
     startSeconds: 101.53
   - type: biblicalish

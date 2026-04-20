@@ -14,6 +14,7 @@ tags:
   - Africans
   - Canaanites
   - Paul
+  - Curse of Ham
   - Deuteronomy
   - Joshua
   - King James Bible

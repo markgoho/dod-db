@@ -3490,8 +3490,9 @@ export const tagVocabulary: TagDefinition[] = [
     category: "theology",
     description:
       "The mark or curse placed on Cain after he murdered Abel, often misinterpreted as dark skin",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 92,
+    episodes: [92],
   },
   {
     canonical: "Susanna",
@@ -3524,8 +3525,9 @@ export const tagVocabulary: TagDefinition[] = [
     category: "theology",
     description:
       "Misinterpretation of the curse placed on Canaan, son of Ham, used to justify slavery",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 92,
+    episodes: [41, 90, 92],
   },
   {
     canonical: "Joachim",
@@ -9019,6 +9021,13 @@ export const tagVocabulary: TagDefinition[] = [
     category: "theology",
     status: "accepted",
     episodes: [1, 3, 13, 29, 51, 53, 55, 59, 80, 91],
+  },
+  {
+    canonical: "Covenant Code",
+    variations: [],
+    category: "miscellaneous",
+    status: "accepted",
+    episodes: [21, 23, 31, 93, 104, 106, 155],
   },
 ];
 

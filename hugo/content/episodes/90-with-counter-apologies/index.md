@@ -24,6 +24,7 @@ tags:
   - Satan
   - Univocality
   - Christmas
+  - Curse of Ham
   - etiology
   - Ham
   - Hell

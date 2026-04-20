@@ -3718,6 +3718,10 @@
         "mentions": 3
       },
       {
+        "tag": "Covenant Code",
+        "mentions": 3
+      },
+      {
         "tag": "Samuel",
         "mentions": 3
       },
@@ -4018,6 +4022,10 @@
       {
         "tag": "Elizabeth",
         "mentions": 5
+      },
+      {
+        "tag": "Covenant Code",
+        "mentions": 4
       },
       {
         "tag": "King James Bible",
@@ -5260,6 +5268,10 @@
       },
       {
         "tag": "Council of Jerusalem",
+        "mentions": 3
+      },
+      {
+        "tag": "Covenant Code",
         "mentions": 3
       },
       {
@@ -6913,6 +6925,10 @@
       {
         "tag": "Paul",
         "mentions": 5
+      },
+      {
+        "tag": "Curse of Ham",
+        "mentions": 3
       },
       {
         "tag": "Deuteronomy",
@@ -14780,6 +14796,10 @@
         "mentions": 1
       },
       {
+        "tag": "Curse of Ham",
+        "mentions": 1
+      },
+      {
         "tag": "etiology",
         "mentions": 1
       },
@@ -15119,6 +15139,10 @@
         "mentions": 9
       },
       {
+        "tag": "Curse of Ham",
+        "mentions": 7
+      },
+      {
         "tag": "Japheth",
         "mentions": 7
       },
@@ -15156,6 +15180,10 @@
       },
       {
         "tag": "Babylon",
+        "mentions": 3
+      },
+      {
+        "tag": "Curse of Cain",
         "mentions": 3
       },
       {
@@ -15249,7 +15277,7 @@
         "endTimestamp": "[00:31:38.000]",
         "confidence": "verified",
         "detectionMethod": "audio",
-        "topicLabel": "Cain's Mark",
+        "topicLabel": "Curses",
         "summary": "The mark of Cain and racist interpretations of it"
       },
       {
@@ -15291,6 +15319,10 @@
     "processedAt": "2026-03-15T06:08:18.238Z",
     "transcriptPath": "data/transcripts/2025-01-13-episode-93-january-13-2025-banning-the-bible.txt",
     "tags": [
+      {
+        "tag": "Covenant Code",
+        "mentions": 17
+      },
       {
         "tag": "Decalogue",
         "mentions": 7
@@ -17028,6 +17060,10 @@
         "mentions": 1
       },
       {
+        "tag": "Covenant Code",
+        "mentions": 1
+      },
+      {
         "tag": "Dead Sea Scrolls",
         "mentions": 1
       },
@@ -17346,6 +17382,10 @@
       },
       {
         "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "Covenant Code",
         "mentions": 1
       },
       {
@@ -25552,6 +25592,10 @@
         "mentions": 4
       },
       {
+        "tag": "Covenant Code",
+        "mentions": 3
+      },
+      {
         "tag": "Jerome",
         "mentions": 3
       },
@@ -25612,11 +25656,11 @@
         "mentions": 1
       },
       {
-        "tag": "King James Bible",
+        "tag": "Josiah",
         "mentions": 1
       },
       {
-        "tag": "Josiah",
+        "tag": "King James Bible",
         "mentions": 1
       },
       {
