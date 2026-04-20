@@ -14,6 +14,7 @@
     {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "tags" "backHref" "/tags/" "backLabel" "All Topics" "heroClass" "page-hero--profile" "definition" $def "category" (.Params.category | default "") "knownAs" (.Params.knownAs | default slice)) }}
 
     {{ $featuredItems := slice }}
+    {{ $currentTopicName := .Params.topicName | default .Title }}
     {{ $allEpisodes := where site.RegularPages ".Section" "episodes" }}
     {{ with .Params.featuredItems }}
       {{ $featuredItems = . }}
@@ -27,13 +28,13 @@
       {{ if eq .type "segment" }}
         {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" .episodeNumber) 0 }}
         {{ if $featuredEpisodePage }}
-          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" (printf "Segment · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentAnchor)))) }}
+          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "badgeSource" "tags" "currentTerm" $currentTopicName "overrides" (dict "eyebrow" (printf "Segment · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentAnchor)))) }}
         {{ end }}
       {{ else if eq .type "episode" }}
         {{ $featuredEpisodeNumber := int .number }}
         {{ $featuredEpisodePage := index (where $allEpisodes ".Params.episodeNumber" $featuredEpisodeNumber) 0 }}
         {{ if $featuredEpisodePage }}
-          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "ranked" true "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" (printf "Featured · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion"))) }}
+          {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "ranked" true "badgeSource" "tags" "currentTerm" $currentTopicName "overrides" (dict "eyebrow" (printf "Featured · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion"))) }}
         {{ end }}
       {{ end }}
     {{ end }}
@@ -60,7 +61,7 @@
           {{ if $topEpisode }}
             {{ $topEpisodePage := index (where $allEpisodes ".Params.episodeNumber" $topEpisode.ep) 0 }}
             {{ if $topEpisodePage }}
-              {{ partial "episode-card" (dict "episode" $topEpisodePage "ranked" true "mentionCount" $topEpisode.m "badgeSource" "tags" "currentTerm" $.Title "overrides" (dict "eyebrow" (printf "Top mention · Episode %v" $topEpisodePage.Params.episodeNumber) "guestText" "The episode that talks about this topic the most")) }}
+              {{ partial "episode-card" (dict "episode" $topEpisodePage "ranked" true "mentionCount" $topEpisode.m "badgeSource" "tags" "currentTerm" $currentTopicName "overrides" (dict "eyebrow" (printf "Top mention · Episode %v" $topEpisodePage.Params.episodeNumber) "guestText" "The episode that talks about this topic the most")) }}
             {{ end }}
           {{ end }}
         </div>
@@ -130,7 +131,7 @@
               {{ $episodePage := where $.Pages ".Params.episodeNumber" .ep }}
               {{ $episode := index $episodePage 0 }}
               {{ if $episode }}
-                {{ partial "episode-card" (dict "episode" $episode "ranked" true "mentionCount" .m "badgeSource" "tags" "currentTerm" $.Title) }}
+                {{ partial "episode-card" (dict "episode" $episode "ranked" true "mentionCount" .m "badgeSource" "tags" "currentTerm" $currentTopicName) }}
               {{ end }}
             {{ end }}
           </div>
@@ -146,7 +147,7 @@
         </p>
         <div class="episodes-grid">
           {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-            {{ partial "episode-card" (dict "episode" . "badgeSource" "tags" "currentTerm" $.Title) }}
+            {{ partial "episode-card" (dict "episode" . "badgeSource" "tags" "currentTerm" $currentTopicName) }}
           {{ end }}
         </div>
       </section>

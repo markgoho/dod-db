@@ -44,10 +44,11 @@ Use the gathered JSON to make the authorial decisions.
 
 - Use the canonical topic name for the page title.
 - By default, use the canonical topic name for the slug too.
-- If the canonical name is ambiguous and could reasonably refer to multiple distinct people, texts, or concepts, prefer a qualified slug for the specific page rather than the bare canonical slug.
-- For person topics, prefer concise identity qualifiers in the slug, such as `/tags/james-brother-of-jesus/` or `/tags/james-son-of-zebedee/`.
-- In those ambiguous-name cases, reserve the bare slug, such as `/tags/james/`, for a future disambiguation page rather than using it as an alias to one specific page.
-- Do not create a disambiguation page as part of this skill unless the user explicitly asks for one; this skill still creates one specific topic page at a time.
+- If this is the first page being created for an ambiguous canonical name, still use the bare canonical slug.
+- Only switch to qualified slugs for ambiguous names after a second distinct entity creates a real collision at the bare slug.
+- For person topics that need qualified slugs after such a collision, prefer concise identity qualifiers such as `/tags/james-brother-of-jesus/` or `/tags/james-son-of-zebedee/`.
+- Do not reserve the bare ambiguous slug in advance; it should belong to the first page until a later collision requires converting it into a disambiguation page.
+- Do not create a disambiguation page as part of this skill unless a real second colliding page is being created or the user explicitly asks for one.
 - The gathered `variations` now include `name` and `isAliasCandidate`.
 - Treat `isAliasCandidate: true` as the default source for frontmatter `aliases` and visible `knownAs` entries.
 - Treat `isAliasCandidate: false` as mechanical forms that should normally stay out of `aliases` and `knownAs`.

@@ -27,6 +27,7 @@ interface RelatedPage {
 interface SaveTagPageInput {
   tagSlug: string;
   title: string;
+  topicName?: string;
   definition: string;
   aliases?: string[];
   knownAs?: string[];
@@ -220,6 +221,11 @@ function buildFrontmatter(input: SaveTagPageInput): string {
     `title: ${quoteScalar(input.title)}`,
     `definition: ${quoteYaml(input.definition)}`,
   ];
+
+  const topicName = input.topicName?.trim();
+  if (topicName) {
+    lines.push(`topicName: ${quoteScalar(topicName)}`);
+  }
 
   if (input.aliases && input.aliases.length > 0) {
     lines.push(...renderStringList("aliases:", input.aliases));
