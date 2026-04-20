@@ -16017,7 +16017,7 @@
         "confidence": "verified",
         "detectionMethod": "pattern",
         "topicLabel": "Ron Wyatt",
-        "summary": "Ron Wyatt's dubious archaeological claims are examined and debunked."
+        "summary": "Debunking Wyatt's fake Exodus archaeology claims"
       },
       {
         "type": "chapter-and-verse",
@@ -16025,8 +16025,8 @@
         "endTimestamp": "[00:54:43.000]",
         "confidence": "verified",
         "detectionMethod": "llm",
-        "topicLabel": "Lk 10",
-        "summary": "The Good Samaritan parable and who is my neighbor"
+        "topicLabel": "Luke 10",
+        "summary": "Good Samaritan expands neighbor love to everyone"
       },
       {
         "type": "outro",

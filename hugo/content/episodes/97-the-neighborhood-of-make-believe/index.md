@@ -43,13 +43,13 @@ segmentData:
     anchor: artifacts-and-fiction-1
     label: Artifacts and Fiction
     topicLabel: Ron Wyatt
-    summary: "Ron Wyatt's dubious archaeological claims are examined and debunked."
+    summary: "Debunking Wyatt's fake Exodus archaeology claims"
     startSeconds: 110.039
   - type: chapter-and-verse
     anchor: chapter-and-verse-1
     label: Chapter and Verse
-    topicLabel: Lk 10
-    summary: The Good Samaritan parable and who is my neighbor
+    topicLabel: Luke 10
+    summary: Good Samaritan expands neighbor love to everyone
     startSeconds: 2237.164
 draft: false
 ---
