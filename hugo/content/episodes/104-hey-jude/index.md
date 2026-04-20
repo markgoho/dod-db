@@ -31,6 +31,7 @@ tags:
   - provenance
   - Textus Receptus
   - Abraham
+  - Covenant Code
   - Dead Sea Scrolls
   - Decalogue
   - forgery

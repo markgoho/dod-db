@@ -15,6 +15,7 @@ tags:
   - Babylon
   - Judaism
   - Abraham
+  - Covenant Code
   - Samuel
   - Deuteronomy
   - Hezekiah

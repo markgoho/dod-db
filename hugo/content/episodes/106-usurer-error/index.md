@@ -16,6 +16,7 @@ tags:
   - Anselm of Canterbury
   - Arius
   - Catholicism
+  - Covenant Code
   - Decalogue
   - Easter
   - Hell

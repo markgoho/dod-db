@@ -12,6 +12,7 @@ tags:
   - Jerusalem
   - Judaism
   - Qumran
+  - Covenant Code
   - Jerome
   - Moses
   - YHWH
@@ -27,8 +28,8 @@ tags:
   - Egyptians
   - Essenes
   - Jacob
-  - King James Bible
   - Josiah
+  - King James Bible
   - Laban
   - Latin Vulgate
   - Maccabees

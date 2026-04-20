@@ -2230,9 +2230,9 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 61,
   },
   {
-    canonical: "Gnostic",
-    variations: ["Gnosticism"],
-    category: "religion",
+    canonical: "Gnosticism",
+    variations: ["Gnostic"],
+    category: "theology",
     llmVerify: true,
     description:
       "A religious movement emphasizing personal spiritual knowledge and a dualistic worldview",

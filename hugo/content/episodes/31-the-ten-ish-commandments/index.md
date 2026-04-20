@@ -18,6 +18,7 @@ tags:
   - King James Bible
   - Baal
   - Council of Jerusalem
+  - Covenant Code
   - Talmud
   - Catholicism
   - Flavius Josephus
