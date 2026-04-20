@@ -93,6 +93,8 @@ featuredItems:
 
 - Use the transcript excerpts from the strongest episodes.
 - Write 1 to 3 sentences in plain language defining the concept itself as a concept.
+- Make the definition substantial enough to stand on its own: include what the thing is, and when helpful, what it refers to, how it developed, or what distinguishes it from nearby concepts.
+- Keep the definition concept-only. Do not use it to explain why the topic matters on the show, how often it comes up, or why it is important for the hosts' larger conversations.
 - Do not make the definition self-referential by mentioning the show, episode language, what the hosts do, or phrases like `in the show's treatment`.
 - Do not write a generic dictionary definition.
 - Do not add a `dek` field. If podcast-specific framing matters, put it in the body.
@@ -117,6 +119,7 @@ featuredItems:
 #### Body
 
 - Write 1 to 2 body paragraphs explaining why this topic matters on the show.
+- Use the body for the podcast-specific significance that does not belong in the definition: recurring debates, interpretive stakes, textual importance, or why the topic keeps resurfacing in the show's broader conversations.
 - Start with the explanation itself, not a framing clause like `X matters on the show because`.
 - Jump directly into the substantive claim, for example `Samson sits at...` rather than `Samson matters on the show because...`.
 - Prefer the topic itself as the grammatical subject of the opening sentence when that reads naturally.
