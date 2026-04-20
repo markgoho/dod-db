@@ -451,7 +451,8 @@ export const tagVocabulary: TagDefinition[] = [
     category: "literature",
     status: "accepted",
     episodes: [
-      2, 7, 11, 20, 21, 45, 58, 66, 80, 83, 99, 104, 122, 125, 132, 134,
+      2, 7, 11, 20, 21, 45, 58, 66, 80, 83, 99, 104, 122, 125, 132, 134, 150,
+      151, 152, 155,
     ],
   },
   {

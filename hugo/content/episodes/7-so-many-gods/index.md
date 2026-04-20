@@ -48,8 +48,8 @@ tags:
   - Edomites
   - Jacob
   - Jephthah
-  - Judaism
   - Josiah
+  - Judaism
   - Michael
   - Philistines
 books:
