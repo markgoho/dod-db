@@ -1,5 +1,5 @@
 /**
- * Scripture book definitions for the 66-book Protestant canon.
+ * Scripture book definitions for the Protestant canon plus 1 Esdras.
  * Used for detecting Bible references in podcast transcripts.
  */
 
@@ -25,12 +25,12 @@ export type BookDefinition =
     };
 
 /**
- * The 66 books of the Protestant canon.
- * Organized by Old Testament (39 books) and New Testament (27 books).
+ * The 67 books in this list: 66-book Protestant canon plus 1 Esdras.
+ * Organized by Old Testament (40 books) and New Testament (27 books).
  */
 export const scriptureBooks: BookDefinition[] = [
   // ============================================
-  // OLD TESTAMENT - 39 books
+  // OLD TESTAMENT - 40 books (39 canonical + 1 Esdras)
   // ============================================
 
   // Pentateuch (Torah)
@@ -141,6 +141,12 @@ export const scriptureBooks: BookDefinition[] = [
     canonical: "Nehemiah",
     abbreviations: ["Neh", "Ne"],
     variants: [],
+    testament: "old",
+  },
+  {
+    canonical: "1 Esdras",
+    abbreviations: ["1 Esd", "1Esd"],
+    variants: ["First Esdras", "1st Esdras", "Greek Ezra"],
     testament: "old",
   },
   {

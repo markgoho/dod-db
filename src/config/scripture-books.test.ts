@@ -8,13 +8,13 @@ import { scriptureBooks } from "./scripture-books.js";
 
 describe("scripture-books", () => {
   describe("canonical book count", () => {
-    test("contains exactly 66 books", () => {
-      expect(scriptureBooks.length).toBe(66);
+    test("contains exactly 67 books", () => {
+      expect(scriptureBooks.length).toBe(67);
     });
 
-    test("contains 39 Old Testament books", () => {
+    test("contains 40 Old Testament books", () => {
       const otBooks = getOldTestamentBooks();
-      expect(otBooks.length).toBe(39);
+      expect(otBooks.length).toBe(40);
     });
 
     test("contains 27 New Testament books", () => {
@@ -85,6 +85,12 @@ describe("scripture-books", () => {
       expect(book4?.canonical).toBe("1 Samuel");
     });
 
+    test("finds 1 Esdras by canonical name and variants", () => {
+      expect(getBookByAnyName("1 Esdras")?.canonical).toBe("1 Esdras");
+      expect(getBookByAnyName("First Esdras")?.canonical).toBe("1 Esdras");
+      expect(getBookByAnyName("Greek Ezra")?.canonical).toBe("1 Esdras");
+    });
+
     test("is case-insensitive", () => {
       const book = getBookByAnyName("gen");
       expect(book?.canonical).toBe("Genesis");
@@ -144,10 +150,8 @@ describe("scripture-books", () => {
     test("all ambiguous books have descriptions", () => {
       const ambiguousBooks = getAmbiguousBooks();
       for (const book of ambiguousBooks) {
-        if ("llmVerify" in book && book.llmVerify) {
-          expect(book.description).toBeDefined();
-          expect(book.description.length).toBeGreaterThan(0);
-        }
+        expect(book.description).toBeDefined();
+        expect(book.description.length).toBeGreaterThan(0);
       }
     });
   });

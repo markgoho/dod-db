@@ -1284,6 +1284,10 @@
         "mentions": 1
       },
       {
+        "tag": "Masoretes",
+        "mentions": 1
+      },
+      {
         "tag": "Michael",
         "mentions": 1
       },
@@ -1887,6 +1891,10 @@
       },
       {
         "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Masoretes",
         "mentions": 1
       },
       {
@@ -3594,6 +3602,10 @@
       },
       {
         "tag": "Maccabean Revolt",
+        "mentions": 1
+      },
+      {
+        "tag": "Masoretes",
         "mentions": 1
       },
       {
@@ -16276,6 +16288,10 @@
         "mentions": 6
       },
       {
+        "tag": "Masoretes",
+        "mentions": 6
+      },
+      {
         "tag": "Matthew",
         "mentions": 4
       },
@@ -25458,6 +25474,10 @@
         "mentions": 2
       },
       {
+        "tag": "Masoretes",
+        "mentions": 2
+      },
+      {
         "tag": "Samuel",
         "mentions": 2
       },
@@ -26644,6 +26664,10 @@
     "transcriptPath": "data/transcripts/2026-04-19-mysterious-texts.txt",
     "tags": [
       {
+        "tag": "Masoretes",
+        "mentions": 18
+      },
+      {
         "tag": "Jerusalem",
         "mentions": 15
       },
@@ -26774,7 +26798,7 @@
         "endTimestamp": "[00:31:20.069]",
         "confidence": "verified",
         "detectionMethod": "llm",
-        "topicLabel": "2 Chron 36",
+        "topicLabel": "1 Esdras",
         "summary": "Greek Ezra's additions and Persian-era setting"
       },
       {

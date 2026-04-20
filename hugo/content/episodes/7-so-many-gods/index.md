@@ -22,6 +22,7 @@ topics:
   - Deutero-Isaiah
   - Jacob
   - Josiah
+  - Masoretes
 tags:
   - Moab
   - Deuteronomy

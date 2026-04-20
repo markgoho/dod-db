@@ -18,7 +18,6 @@ import {
   extractPrimaryScriptureCandidateFromLines,
   extractScriptureCandidates,
   normalizeScriptureTopicLabel,
-  shortenScriptureReference,
 } from "./extract-scripture-candidates.js";
 import {
   parseExplicitScriptureReference,
@@ -158,7 +157,7 @@ export function postProcessSegmentDescription(
 
     if (scriptureTopicLabel) {
       const normalizedTopicLabel =
-        shortenScriptureReference(scriptureTopicLabel);
+        normalizeScriptureTopicLabel(scriptureTopicLabel);
       const looksLikeScriptureReference =
         /^[1-3]?\s?[A-Za-z]+(?:\s+[A-Za-z]+)?\s+\d+(?::\d+(?:-\d+)?)?$/.test(
           result.topicLabel,

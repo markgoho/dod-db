@@ -7,6 +7,7 @@ aliases:
   - /episodes/159/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/156010202.mp3?sig=9S09JaXCHdscExAJFpGiNt6DWjBXR9FqfB5o2pNPEkI%3D
 topics:
+  - Masoretes
   - Septuagint
   - Masoretic Text
   - Daniel
@@ -50,7 +51,7 @@ segmentData:
   - type: chapter-and-verse
     anchor: chapter-and-verse-1
     label: Chapter and Verse
-    topicLabel: 2 Chron 36
+    topicLabel: 1 Esdras
     summary: "Greek Ezra's additions and Persian-era setting"
     startSeconds: 127.652
   - type: what-is-that

@@ -9039,7 +9039,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "literature",
     description:
       "An Old Testament apocryphal book found in Greek and Slavonic Orthodox traditions, primarily a Greek translation of Ezra-Nehemiah with some additional material.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 159,
   },
   {
@@ -9054,11 +9054,12 @@ export const tagVocabulary: TagDefinition[] = [
   {
     canonical: "Masoretes",
     variations: [],
-    category: "scholarship",
+    category: "people",
     description:
       "A group of Jewish scribes and scholars active from roughly 500 to 1000 CE, responsible for standardizing the Hebrew Bible text, including vocalization and annotation.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 159,
+    episodes: [7, 11, 20, 99, 154, 159],
   },
 ];
 

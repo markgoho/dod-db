@@ -103,7 +103,8 @@ export function shortenScriptureReference(reference: string): string {
 }
 
 export function normalizeScriptureTopicLabel(topicLabel: string): string {
-  const bookOfMatch = /^Book of (.+)$/i.exec(topicLabel.trim());
+  const trimmedTopicLabel = topicLabel.trim();
+  const bookOfMatch = /^Book of (.+)$/i.exec(trimmedTopicLabel);
   if (bookOfMatch?.[1]) {
     const bareBook = bookOfMatch[1].trim();
     const canonicalBook = scriptureBooks.find(
@@ -111,11 +112,21 @@ export function normalizeScriptureTopicLabel(topicLabel: string): string {
     )?.canonical;
 
     if (canonicalBook) {
-      return shortenScriptureReference(canonicalBook);
+      return canonicalBook;
     }
   }
 
-  return shortenScriptureReference(topicLabel);
+  const matchingBook = scriptureBooks.find(
+    book =>
+      trimmedTopicLabel === book.canonical ||
+      trimmedTopicLabel.startsWith(`${book.canonical} `),
+  );
+
+  if (matchingBook) {
+    return trimmedTopicLabel;
+  }
+
+  return shortenScriptureReference(trimmedTopicLabel);
 }
 
 function countMatches(haystack: string, needle: string): number {

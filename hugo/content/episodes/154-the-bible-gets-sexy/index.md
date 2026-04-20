@@ -10,6 +10,7 @@ topics:
   - YHWH
   - Jacob
   - David
+  - Masoretes
   - Saul
   - Arad
   - Asherah

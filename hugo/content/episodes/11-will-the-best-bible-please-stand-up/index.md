@@ -15,6 +15,7 @@ topics:
   - Easter
   - Daniel
   - Gnosticism
+  - Masoretes
 tags:
   - Apocrypha
   - Latin Vulgate

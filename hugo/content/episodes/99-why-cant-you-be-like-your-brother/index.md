@@ -11,6 +11,7 @@ topics:
   - Flavius Josephus
   - Paul
   - Mary Magdalene
+  - Masoretes
   - King James Bible
   - Dead Sea Scrolls
   - Satan

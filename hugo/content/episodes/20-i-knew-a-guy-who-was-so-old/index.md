@@ -15,6 +15,7 @@ topics:
   - King James Bible
   - Bel and the Dragon
   - Codex Sinaiticus
+  - Masoretes
   - Susanna
 tags:
   - Apocrypha
