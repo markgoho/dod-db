@@ -7251,7 +7251,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "person",
     description:
       "Professor of New Testament at Butler University and author of 'Christmaker'.",
-    status: "proposed",
+    status: "rejected",
   },
   {
     canonical: "Butler University",
