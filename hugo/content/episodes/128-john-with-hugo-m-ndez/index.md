@@ -21,7 +21,7 @@ tags:
   - baptism
   - Flavius Josephus
   - Galilee
-  - Gnostic
+  - Gnosticism
   - Gospel of Thomas
   - Mary Magdalene
   - Polybius

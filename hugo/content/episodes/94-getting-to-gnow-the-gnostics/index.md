@@ -6,7 +6,7 @@ videoId: d1E8IL2wMms
 aliases:
   - /episodes/94/
 tags:
-  - Gnostic
+  - Gnosticism
   - Codex Sinaiticus
   - Constantine
   - Mary Magdalene

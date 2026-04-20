@@ -28,7 +28,7 @@ tags:
   - Baal
   - Deism
   - Elijah
-  - Gnostic
+  - Gnosticism
   - Jerome
   - Justin Martyr
   - Latin Vulgate

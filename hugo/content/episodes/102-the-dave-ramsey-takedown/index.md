@@ -8,7 +8,7 @@ aliases:
 tags:
   - Deuteronomy
   - Jerusalem
-  - Gnostic
+  - Gnosticism
   - Josiah
   - Joshua
   - Samuel

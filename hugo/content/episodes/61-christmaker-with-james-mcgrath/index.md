@@ -8,7 +8,7 @@ aliases:
 tags:
   - John the Baptist
   - baptism
-  - Gnostic
+  - Gnosticism
   - Herod Antipas
   - Flavius Josephus
   - Essenes

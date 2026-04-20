@@ -11,7 +11,7 @@ tags:
   - Hell
   - Sheol
   - Gentiles
-  - Gnostic
+  - Gnosticism
   - Origen
   - Solomon
   - Univocality

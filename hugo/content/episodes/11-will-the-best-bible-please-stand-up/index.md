@@ -41,7 +41,7 @@ tags:
   - Textus Receptus
   - Daniel
   - Galilee
-  - Gnostic
+  - Gnosticism
   - Jonah
   - Luke
   - Matthew

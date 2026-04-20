@@ -34,7 +34,7 @@ tags:
   - Deuteronomy
   - Easter
   - futurist interpretation
-  - Gnostic
+  - Gnosticism
   - Holy Spirit
   - inerrancy
   - John of Patmos

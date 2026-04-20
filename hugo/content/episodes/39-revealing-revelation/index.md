@@ -31,7 +31,7 @@ tags:
   - Council of Nicaea
   - Deuteronomy
   - Euphrates
-  - Gnostic
+  - Gnosticism
   - Jerusalem
   - John of Patmos
   - Justin Martyr

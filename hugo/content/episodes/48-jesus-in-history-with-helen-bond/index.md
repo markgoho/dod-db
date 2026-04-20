@@ -26,7 +26,7 @@ tags:
   - Eschatology
   - Eusebius
   - Gabriel
-  - Gnostic
+  - Gnosticism
   - Judaism
   - Junia
   - Nazareth

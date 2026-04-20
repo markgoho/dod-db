@@ -2237,7 +2237,7 @@ export const tagVocabulary: TagDefinition[] = [
     description:
       "A religious movement emphasizing personal spiritual knowledge and a dualistic worldview",
     status: "accepted",
-    episodes: [11, 16, 39, 43, 48, 61, 69, 70, 77, 89, 94, 102, 119, 128],
+    episodes: [11, 16, 39, 43, 48, 61, 69, 70, 89, 94, 102, 119, 128, 150],
   },
   {
     canonical: "Herod Antipas",

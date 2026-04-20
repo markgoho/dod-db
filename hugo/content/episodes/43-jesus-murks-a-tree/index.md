@@ -23,7 +23,7 @@ tags:
   - Bethlehem
   - Galilee
   - Gentiles
-  - Gnostic
+  - Gnosticism
   - Gospel of Thomas
   - Hell
   - Herod the Great

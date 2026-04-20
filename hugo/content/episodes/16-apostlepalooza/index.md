@@ -21,7 +21,7 @@ tags:
   - Mary Magdalene
   - Abraham
   - Canaanites
-  - Gnostic
+  - Gnosticism
   - King James Bible
   - Moses
   - YHWH

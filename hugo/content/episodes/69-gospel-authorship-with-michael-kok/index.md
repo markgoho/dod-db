@@ -32,7 +32,7 @@ tags:
   - Clement of Alexandria
   - David
   - Easter
-  - Gnostic
+  - Gnosticism
   - Latin Vulgate
   - Moses
   - Trinity

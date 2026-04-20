@@ -16,7 +16,7 @@ tags:
   - Terah
   - YHWH
   - Deuteronomy
-  - Gnostic
+  - Gnosticism
   - Joseph
   - Babylon
   - David

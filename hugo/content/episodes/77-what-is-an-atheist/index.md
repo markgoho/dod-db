@@ -13,7 +13,6 @@ tags:
   - Deism
   - The Reformation
   - Augustine
-  - Gnostic
   - Monotheism
   - Peter
   - Prototype Theory
