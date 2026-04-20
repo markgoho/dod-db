@@ -3771,11 +3771,12 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 101,
   },
   {
-    canonical: "slave bible",
-    variations: ["the slave bible"],
+    canonical: "Slave Bible",
+    variations: [],
     category: "literature",
-    status: "rejected",
+    status: "accepted",
     addedInEpisode: 101,
+    episodes: [101],
   },
   {
     canonical: "Dave Ramsey",

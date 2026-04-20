@@ -16619,6 +16619,10 @@
     "transcriptPath": "data/transcripts/2025-03-10-episode-101-march-10-2025-the-slave-bible.txt",
     "tags": [
       {
+        "tag": "Slave Bible",
+        "mentions": 10
+      },
+      {
         "tag": "Decalogue",
         "mentions": 2
       },

@@ -6,6 +6,7 @@ videoId: KQlq_lmgBOk
 aliases:
   - /episodes/101/
 tags:
+  - Slave Bible
   - Decalogue
   - Eschatology
   - King James Bible
