@@ -18,6 +18,12 @@ interface QuoteInput {
   timestamp: string;
 }
 
+interface RelatedPage {
+  slug: string;
+  title: string;
+  description?: string;
+}
+
 interface SaveTagPageInput {
   tagSlug: string;
   title: string;
@@ -30,6 +36,8 @@ interface SaveTagPageInput {
   topEpisodesLimit?: number;
   showAllEpisodes?: boolean;
   body: string;
+  isDisambiguation?: boolean;
+  relatedPages?: RelatedPage[];
 }
 
 interface ParsedArguments {
@@ -73,6 +81,25 @@ function validateInput(input: SaveTagPageInput): void {
 
   if (!input.body.trim()) {
     throw new Error("body is required");
+  }
+
+  if (input.isDisambiguation) {
+    if (!input.relatedPages || input.relatedPages.length < 2) {
+      throw new Error(
+        "disambiguation pages require at least 2 relatedPages entries",
+      );
+    }
+
+    for (const page of input.relatedPages) {
+      if (!page.slug.trim()) {
+        throw new Error("relatedPages slug is required");
+      }
+      if (!page.title.trim()) {
+        throw new Error("relatedPages title is required");
+      }
+    }
+
+    return;
   }
 
   if (input.quotes.length !== 4) {
@@ -155,7 +182,39 @@ function renderQuotes(quotes: QuoteInput[]): string[] {
   ];
 }
 
+function renderRelatedPages(pages: RelatedPage[]): string[] {
+  return [
+    "relatedPages:",
+    ...pages.flatMap(page => {
+      const lines = [
+        `  - slug: ${quoteScalar(page.slug)}`,
+        `    title: ${quoteScalar(page.title)}`,
+      ];
+      if (page.description) {
+        lines.push(`    description: ${quoteYaml(page.description)}`);
+      }
+      return lines;
+    }),
+  ];
+}
+
 function buildFrontmatter(input: SaveTagPageInput): string {
+  if (input.isDisambiguation) {
+    const lines = [
+      "---",
+      "layout: disambiguation",
+      `title: ${quoteScalar(input.title)}`,
+      `definition: ${quoteYaml(input.definition)}`,
+    ];
+
+    if (input.relatedPages) {
+      lines.push(...renderRelatedPages(input.relatedPages));
+    }
+
+    lines.push("---");
+    return `${lines.join("\n")}\n`;
+  }
+
   const lines = [
     "---",
     `title: ${quoteScalar(input.title)}`,

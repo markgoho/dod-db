@@ -15,6 +15,7 @@
     "generate:tag-index": "bun run src/scripts/generate-tag-episode-index.ts",
     "tag-page:gather": "bun run src/scripts/gather-tag-context.ts",
     "tag-page:save": "bun run src/scripts/save-tag-page.ts",
+    "tag-page:move": "bun run src/scripts/move-tag-page.ts",
     "hugo:dev": "bun run generate:tag-index && cd hugo && hugo server",
     "build:local": "bun run generate:tag-index && rm -rf hugo/public && cd hugo && hugo && bun run index",
     "index": "bunx pagefind --site hugo/public",

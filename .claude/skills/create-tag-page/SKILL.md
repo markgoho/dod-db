@@ -42,12 +42,18 @@ Use the gathered JSON to make the authorial decisions.
 
 #### Canonical naming and aliases
 
-- Use the canonical topic name for the page title and slug.
+- Use the canonical topic name for the page title.
+- By default, use the canonical topic name for the slug too.
+- If the canonical name is ambiguous and could reasonably refer to multiple distinct people, texts, or concepts, prefer a qualified slug for the specific page rather than the bare canonical slug.
+- For person topics, prefer concise identity qualifiers in the slug, such as `/tags/james-brother-of-jesus/` or `/tags/james-son-of-zebedee/`.
+- In those ambiguous-name cases, reserve the bare slug, such as `/tags/james/`, for a future disambiguation page rather than using it as an alias to one specific page.
+- Do not create a disambiguation page as part of this skill unless the user explicitly asks for one; this skill still creates one specific topic page at a time.
 - The gathered `variations` now include `name` and `isAliasCandidate`.
 - Treat `isAliasCandidate: true` as the default source for frontmatter `aliases` and visible `knownAs` entries.
 - Treat `isAliasCandidate: false` as mechanical forms that should normally stay out of `aliases` and `knownAs`.
 - You may still omit a `true` candidate if it would be a poor or misleading redirect target, but do not promote a `false` candidate unless the gathered evidence gives a specific reason.
 - When you include an alias, write it as a Hugo path like `/tags/adonai/` in `aliases`, and include the display text like `Adonai` in `knownAs`.
+- Do not add the bare ambiguous slug as an alias when that slug should remain available for a disambiguation page.
 - Both `aliases` and `knownAs` are optional.
 
 #### Featured items
@@ -197,6 +203,72 @@ If any of those are weak, tighten them before concluding.
 - `data/transcripts/*.txt` for transcript quotes in `[HH:MM:SS.mmm] Speaker: text` format
 - `hugo/content/episodes/*/index.md` for `segmentData` anchors and guest info
 - `src/scripts/save-tag-page.ts` for writing the final page
+- `src/scripts/move-tag-page.ts` for renaming an existing page's slug
+
+## Disambiguation Mode
+
+Disambiguation is triggered when creating a topic page for a name that already has a page at the bare slug for a **different** entity. For example, creating "James, Son of Zebedee" when `/tags/james/` already exists for "James, Brother of Jesus."
+
+If the existing page is for the **same** entity (just an update), this mode does not apply — update the existing page instead.
+
+### Collision detection
+
+During the Gather step, `existingPage` will be populated if a page already exists at the bare slug. If the existing page's title refers to a different entity than the one being created, enter disambiguation mode.
+
+### Disambiguation steps
+
+1. **Move the existing page** to a qualified slug:
+
+```bash
+bun run tag-page:move <bare-slug> <qualified-slug> --add-alias
+```
+
+For example: `bun run tag-page:move james james-brother-of-jesus --add-alias`
+
+Use `--add-alias` if the page was previously published so the old URL still resolves.
+
+2. **Create the new specific page** at its own qualified slug using the normal `tag-page:save` flow.
+
+3. **Create a disambiguation page** at the now-vacated bare slug:
+
+```bash
+bun run tag-page:save <<'EOF'
+{
+  "tagSlug": "james",
+  "title": "James",
+  "definition": "Several figures named James appear in the biblical texts.",
+  "isDisambiguation": true,
+  "relatedPages": [
+    {
+      "slug": "james-brother-of-jesus",
+      "title": "James, Brother of Jesus",
+      "description": "Leader of the Jerusalem church and traditional author of the Epistle of James."
+    },
+    {
+      "slug": "james-son-of-zebedee",
+      "title": "James, Son of Zebedee",
+      "description": "One of the twelve apostles, brother of John."
+    }
+  ],
+  "body": "The name James refers to several distinct figures in the biblical texts. Select a specific topic below.",
+  "quotes": []
+}
+EOF
+```
+
+### Disambiguation page shape
+
+- `isDisambiguation: true` — switches the save script to disambiguation mode (no quotes required, no featured items)
+- `relatedPages` — at least 2 entries, each with `slug`, `title`, and optionally `description`
+- `definition` — a short sentence explaining the ambiguity
+- `body` — a brief paragraph directing readers to the specific pages
+- The page uses `layout: disambiguation` in its Hugo frontmatter (set automatically by the save script)
+
+### When NOT to disambiguate
+
+- The existing page is for the same entity — just update it
+- There is only one known entity with this name in the show's coverage — use the bare slug directly
+- The user has not asked to create a second page for a name that collides
 
 ## Output Rules
 

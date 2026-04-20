@@ -160,8 +160,41 @@
   display: grid;
 }
 
+.tag-disambiguation-links__grid {
+  display: grid;
+  gap: var(--space-m);
+}
+
+.tag-disambiguation-card {
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: var(--border-radius-md);
+  color: var(--color-text);
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-m);
+  text-decoration: none;
+}
+
+.tag-disambiguation-card:hover {
+  border-color: var(--color-action);
+}
+
+.tag-disambiguation-card__title {
+  font-size: var(--step-1);
+  margin: 0;
+}
+
+.tag-disambiguation-card__description {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
 @media (width >= 48rem) {
   .tag-quotes__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tag-disambiguation-links__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
