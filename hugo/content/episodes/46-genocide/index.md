@@ -39,7 +39,6 @@ tags:
   - Moab
   - Origen
   - Balaam
-  - circumcision
   - Luke
   - Midianites
   - Philistines

@@ -17,6 +17,7 @@ topics:
   - Flavius Josephus
   - Septuagint
   - Arad
+  - Circumcision
   - Hell
   - Univocality
 tags:
@@ -29,7 +30,6 @@ tags:
   - Catholicism
   - Amorites
   - Canaanites
-  - circumcision
   - Gentiles
   - Isaiah
   - Judah

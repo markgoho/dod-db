@@ -20,7 +20,6 @@ tags:
   - Isaiah
   - Jerusalem
   - Adam
-  - circumcision
   - Isaac
   - Abraham
   - Judah

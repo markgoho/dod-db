@@ -12,6 +12,7 @@ topics:
   - Dead Sea Scrolls
   - Samson
   - Angel
+  - Circumcision
   - Holy Spirit
   - Marriage
   - Talmud
@@ -29,7 +30,6 @@ tags:
   - Samuel
   - Adam
   - Babylon
-  - circumcision
   - inerrancy
   - Judah
   - Judas Iscariot

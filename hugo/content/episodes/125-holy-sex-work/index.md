@@ -16,6 +16,7 @@ topics:
   - Satan
   - Hell
   - Masoretic Text
+  - Circumcision
   - Josiah
 tags:
   - Garden of Eden
@@ -28,7 +29,6 @@ tags:
   - Apocrypha
   - Deuteronomy
   - Tamar
-  - circumcision
   - Hezekiah
   - Latin Vulgate
   - Martin Luther

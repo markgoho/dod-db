@@ -15,6 +15,7 @@ topics:
   - Jacob
   - Septuagint
   - YHWH
+  - Circumcision
   - King James Bible
 tags:
   - Enoch
@@ -41,7 +42,6 @@ tags:
   - Shem
   - Africa
   - Apocrypha
-  - circumcision
   - Dead Sea
   - Deuteronomy
   - Esau

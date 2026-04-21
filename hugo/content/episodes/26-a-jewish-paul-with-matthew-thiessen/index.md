@@ -7,6 +7,7 @@ aliases:
   - /episodes/26/
 topics:
   - Paul
+  - Circumcision
   - Rapture
   - Trinity
   - David
@@ -17,7 +18,6 @@ tags:
   - Romans
   - Gentiles
   - Protestantism
-  - circumcision
   - Catholicism
   - Philo of Alexandria
   - forgery

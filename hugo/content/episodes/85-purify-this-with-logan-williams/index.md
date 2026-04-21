@@ -9,6 +9,7 @@ topics:
   - King James Bible
   - Ritual Purity
   - Septuagint
+  - Circumcision
   - Flavius Josephus
   - YHWH
   - Hell
@@ -20,7 +21,6 @@ tags:
   - Textus Receptus
   - Deuteronomy
   - Moses
-  - circumcision
   - Essenes
   - Gentiles
   - Maccabees

@@ -249,10 +249,6 @@
         "mentions": 6
       },
       {
-        "tag": "circumcision",
-        "mentions": 5
-      },
-      {
         "tag": "Isaac",
         "mentions": 4
       },
@@ -4440,8 +4436,8 @@
         "mentions": 8
       },
       {
-        "tag": "circumcision",
-        "mentions": 6
+        "tag": "Circumcision",
+        "mentions": 4
       },
       {
         "tag": "Catholicism",
@@ -5339,7 +5335,7 @@
         "mentions": 1
       },
       {
-        "tag": "circumcision",
+        "tag": "Circumcision",
         "mentions": 1
       },
       {
@@ -5616,8 +5612,8 @@
         "mentions": 73
       },
       {
-        "tag": "circumcision",
-        "mentions": 35
+        "tag": "Circumcision",
+        "mentions": 34
       },
       {
         "tag": "Satan",
@@ -7930,10 +7926,6 @@
         "mentions": 1
       },
       {
-        "tag": "circumcision",
-        "mentions": 1
-      },
-      {
         "tag": "David",
         "mentions": 1
       },
@@ -8983,10 +8975,6 @@
         "mentions": 11
       },
       {
-        "tag": "circumcision",
-        "mentions": 10
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 9
       },
@@ -9017,6 +9005,10 @@
       {
         "tag": "Septuagint",
         "mentions": 5
+      },
+      {
+        "tag": "Circumcision",
+        "mentions": 4
       },
       {
         "tag": "Hell",
@@ -10384,7 +10376,7 @@
         "mentions": 1
       },
       {
-        "tag": "circumcision",
+        "tag": "Circumcision",
         "mentions": 1
       },
       {
@@ -10606,7 +10598,7 @@
         "mentions": 1
       },
       {
-        "tag": "circumcision",
+        "tag": "Circumcision",
         "mentions": 1
       },
       {
@@ -14057,6 +14049,10 @@
         "mentions": 4
       },
       {
+        "tag": "Circumcision",
+        "mentions": 2
+      },
+      {
         "tag": "Flavius Josephus",
         "mentions": 2
       },
@@ -14067,10 +14063,6 @@
       {
         "tag": "YHWH",
         "mentions": 2
-      },
-      {
-        "tag": "circumcision",
-        "mentions": 1
       },
       {
         "tag": "Essenes",
@@ -18146,12 +18138,12 @@
         "mentions": 27
       },
       {
-        "tag": "circumcision",
-        "mentions": 18
-      },
-      {
         "tag": "Abraham",
         "mentions": 17
+      },
+      {
+        "tag": "Circumcision",
+        "mentions": 15
       },
       {
         "tag": "YHWH",
@@ -18345,7 +18337,7 @@
         "mentions": 1
       },
       {
-        "tag": "circumcision",
+        "tag": "Circumcision",
         "mentions": 1
       },
       {
@@ -20754,7 +20746,7 @@
         "mentions": 2
       },
       {
-        "tag": "circumcision",
+        "tag": "Circumcision",
         "mentions": 1
       },
       {
@@ -24369,10 +24361,6 @@
         "mentions": 2
       },
       {
-        "tag": "circumcision",
-        "mentions": 2
-      },
-      {
         "tag": "Decalogue",
         "mentions": 2
       },
@@ -24405,6 +24393,10 @@
         "mentions": 1
       },
       {
+        "tag": "Circumcision",
+        "mentions": 1
+      },
+      {
         "tag": "cognitive dissonance",
         "mentions": 1
       },
@@ -24421,11 +24413,11 @@
         "mentions": 1
       },
       {
-        "tag": "King James Bible",
+        "tag": "Josiah",
         "mentions": 1
       },
       {
-        "tag": "Josiah",
+        "tag": "King James Bible",
         "mentions": 1
       },
       {

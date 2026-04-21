@@ -532,11 +532,11 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [2, 15, 21, 27, 93, 132],
   },
   {
-    canonical: "circumcision",
-    variations: ["circumcised"],
+    canonical: "Circumcision",
+    variations: ["circumcise"],
     category: "theology",
     status: "accepted",
-    episodes: [2, 26, 33, 46, 54, 61, 62, 85, 111, 112, 125],
+    episodes: [26, 31, 33, 54, 61, 62, 85, 111, 112, 125, 146],
   },
   {
     canonical: "Easter",

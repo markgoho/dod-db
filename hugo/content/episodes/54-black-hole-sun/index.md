@@ -9,6 +9,7 @@ topics:
   - Paul
   - James
   - Septuagint
+  - Circumcision
   - Hell
   - Rapture
   - David
@@ -24,7 +25,6 @@ tags:
   - Barnabas
   - Gentiles
   - Edom
-  - circumcision
   - Jerusalem
   - Peter
   - Luke

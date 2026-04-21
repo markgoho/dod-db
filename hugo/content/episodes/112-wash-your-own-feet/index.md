@@ -8,6 +8,7 @@ aliases:
 topics:
   - Creatio ex nihilo
   - Flavius Josephus
+  - Circumcision
   - Hell
 tags:
   - Maccabees
@@ -23,7 +24,6 @@ tags:
   - Antiochus IV Epiphanes
   - Assumption of Moses
   - Babylon
-  - circumcision
   - Garden of Gethsemane
   - Hanukkah
   - Jerusalem

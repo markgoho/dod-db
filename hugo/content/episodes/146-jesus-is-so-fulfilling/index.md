@@ -15,8 +15,9 @@ topics:
   - James
   - Univocality
   - Christmas
-  - King James Bible
+  - Circumcision
   - Josiah
+  - King James Bible
 tags:
   - Deuteronomy
   - Esarhaddon
@@ -25,7 +26,6 @@ tags:
   - Ashurbanipal
   - Eschatology
   - Moses
-  - circumcision
   - Essenes
   - Judaism
   - Torah

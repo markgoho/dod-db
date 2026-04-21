@@ -7,6 +7,7 @@ aliases:
   - /episodes/111/
 topics:
   - Jephthah
+  - Circumcision
   - YHWH
   - David
   - Demon
@@ -15,7 +16,6 @@ topics:
   - Marriage
   - Priestly Source
 tags:
-  - circumcision
   - Abraham
   - Ammonites
   - Isaac

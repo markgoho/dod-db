@@ -7,6 +7,7 @@ aliases:
   - /episodes/33/
 topics:
   - Paul
+  - Circumcision
   - Satan
   - Angel
   - Demon
@@ -14,7 +15,6 @@ topics:
   - Abortion
   - Holy Spirit
 tags:
-  - circumcision
   - Isaac
   - Gentiles
   - Egyptians
