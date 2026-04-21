@@ -82,6 +82,8 @@ Segment-specific rules:
   - Treat `primaryScriptureCandidate` as definitive when present unless the transcript clearly introduces a different main passage.
   - Next prefer references explicitly introduced as the verse or passage under discussion.
   - Deprioritize examples, comparisons, and side mentions.
+  - Treat deuterocanonical and other supported non-Protestant books the same as canonical books when a clear reference is present.
+  - If the topic label is a scripture reference, preserve the chapter when that is the clearest focal passage, even for books outside the usual canon.
   - If the topic label is a scripture reference, the summary should describe the interpretive issue or claim about that passage.
 - `what-does-that-mean`
   - Prefer the key term or concept being defined.

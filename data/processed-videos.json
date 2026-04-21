@@ -18399,8 +18399,8 @@
         "endTimestamp": "[00:26:15.461]",
         "confidence": "verified",
         "detectionMethod": "pattern",
-        "topicLabel": "Second Maccabees",
-        "summary": "Second Maccabees chapter seven about martyrdom and resurrection"
+        "topicLabel": "2 Macc 7",
+        "summary": "Martyrdom and resurrection in 2 Macc 7"
       },
       {
         "type": "taking-issue",
@@ -18409,7 +18409,7 @@
         "confidence": "verified",
         "detectionMethod": "audio",
         "topicLabel": "Foot Washing",
-        "summary": "Interpretation of Jesus washing disciples' feet in John 13"
+        "summary": "John 13 and foot-washing symbolism"
       }
     ],
     "speakers": ["Dan Beecher", "Dan McClellan"],

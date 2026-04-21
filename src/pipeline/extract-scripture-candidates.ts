@@ -56,6 +56,8 @@ const DISPLAY_SCRIPTURE_ABBREVIATIONS = new Map<string, string>([
   ["2 Corinthians", "2 Cor"],
   ["1 Timothy", "1 Tim"],
   ["2 Timothy", "2 Tim"],
+  ["1 Maccabees", "1 Macc"],
+  ["2 Maccabees", "2 Macc"],
 ]);
 
 function getPreferredDisplayAbbreviation(bookCanonical: string): string {

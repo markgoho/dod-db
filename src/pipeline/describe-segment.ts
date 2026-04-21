@@ -18,6 +18,7 @@ import {
   extractPrimaryScriptureCandidateFromLines,
   extractScriptureCandidates,
   normalizeScriptureTopicLabel,
+  shortenScriptureReference,
 } from "./extract-scripture-candidates.js";
 import {
   parseExplicitScriptureReference,
@@ -156,8 +157,9 @@ export function postProcessSegmentDescription(
       gathered.primaryScriptureCandidate ?? gathered.fallbackScriptureCandidate;
 
     if (scriptureTopicLabel) {
-      const normalizedTopicLabel =
-        normalizeScriptureTopicLabel(scriptureTopicLabel);
+      const normalizedTopicLabel = shortenScriptureReference(
+        normalizeScriptureTopicLabel(scriptureTopicLabel),
+      );
       const looksLikeScriptureReference =
         /^[1-3]?\s?[A-Za-z]+(?:\s+[A-Za-z]+)?\s+\d+(?::\d+(?:-\d+)?)?$/.test(
           result.topicLabel,
@@ -168,7 +170,7 @@ export function postProcessSegmentDescription(
         topicLabel: normalizedTopicLabel,
         summary: looksLikeScriptureReference
           ? result.summary.replaceAll(
-              /\b(Psalm|Psalms|Genesis|Gen|Exodus|Exod|Joshua|Josh|Matthew|Matt|Mark|Luke|John|Acts|Romans|Rom|Corinthians|Cor|Timothy|Tim|Samuel|Sam|Kings|Chronicles|Chron)\s+\d+(?::\d+(?:-\d+)?)?/gi,
+              /\b(?:[1-3]\s+)?(Psalm|Psalms|Genesis|Gen|Exodus|Exod|Joshua|Josh|Matthew|Matt|Mark|Luke|John|Acts|Romans|Rom|Corinthians|Cor|Timothy|Tim|Samuel|Sam|Kings|Chronicles|Chron|Maccabees|Macc)\s+\d+(?::\d+(?:-\d+)?)?/gi,
               normalizedTopicLabel,
             )
           : result.summary,

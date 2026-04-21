@@ -44,14 +44,14 @@ segmentData:
   - type: chapter-and-verse
     anchor: chapter-and-verse-1
     label: Chapter and Verse
-    topicLabel: Second Maccabees
-    summary: Second Maccabees chapter seven about martyrdom and resurrection
+    topicLabel: 2 Macc 7
+    summary: Martyrdom and resurrection in 2 Macc 7
     startSeconds: 112.333
   - type: taking-issue
     anchor: taking-issue-1
     label: Taking Issue
     topicLabel: Foot Washing
-    summary: "Interpretation of Jesus washing disciples' feet in John 13"
+    summary: John 13 and foot-washing symbolism
     startSeconds: 1575.461
 draft: false
 ---
@@ -75,7 +75,7 @@ draft: false
 {{< line >}}[00:03:12.030] Dan Beecher: And the Seleucids were. Is that related to Babylon? I don't know who the Seleucids were.{{< /line >}}
 {{< line >}}[00:03:18.030] Dan McClellan: So this is one of the groups that arose after Alexander the Great's death and his kingdom was fractured. And there were a bunch of different regions that were ruled over by regional powers. And so the Ptolemies, for instance, were, were in Egypt and the Seleucids were around Syria, Palestine area. And so these were Hellenistic rulers. And so Second Maccabees talks about actually a few different rulers. Seleucus the fourth, Antiochus the fourth Epiphanes, Antiochus the fifth, Demetrius the First. So there are a few different Seleucid rulers that are discussed, but they're the ones who are trying to maintain their, their control over this territory while the Maccabees are, are fighting back and trying to gain independence.{{< /line >}}
 {{< line >}}[00:04:13.420] Dan Beecher: Okay, and who are the Maccabees?{{< /line >}}
-{{< line >}}[00:04:16.060] Dan McClellan: The Maccabees, this is a nickname that is given to some, a family that kind of becomes the, the, the head of this resistance movement. So Judas Maccabeus, for instance, is how one of the generals is known. And we've talked in the past a little bit about how there might be a hint at some kind of notion of purgatory in Second Maccabees 12, where Judas Maccabeus and his forces come upon some fallen comrades and they have, they have contraband, they have idols on their persons. And so he passes the hat around to gather up a collection to send off to the Jerusalem Temple so that sacrifices can be made in the names of the deceased so that maybe they can have a better resurrection.{{< /line >}}
+{{< line >}}[00:04:16.060] Dan McClellan: The Maccabees, this is a nickname that is given to some, a family that kind of becomes the, the, the head of this resistance movement. So Judas Maccabeus, for instance, is how one of the generals is known. And we've talked in the past a little bit about how there might be a hint at some kind of notion of purgatory in {{< scripture ref="2 Maccabees 12" >}}, where Judas Maccabeus and his forces come upon some fallen comrades and they have, they have contraband, they have idols on their persons. And so he passes the hat around to gather up a collection to send off to the Jerusalem Temple so that sacrifices can be made in the names of the deceased so that maybe they can have a better resurrection.{{< /line >}}
 {{< line >}}[00:05:11.500] Dan Beecher: I do remember talking about that. That's. That's really interesting. And the, the, the chapter in Second Maccabees that we are going to talk about is actually also just jam packed with theologically interesting little moments which you could, which you could totally miss if you're not looking for them. Yeah, but they, I mean, as a guy who, like, is peripherally associated with biblical scholarship, they jumped out at me. Quite a few of them did.{{< /line >}}
 {{< line >}}[00:05:53.890] Dan McClellan: Yes.{{< /line >}}
 {{< line >}}[00:05:54.610] Dan Beecher: And Their Mommy and Their Mother.{{< /line >}}

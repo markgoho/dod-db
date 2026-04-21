@@ -150,6 +150,18 @@ export const scriptureBooks: BookDefinition[] = [
     testament: "old",
   },
   {
+    canonical: "1 Maccabees",
+    abbreviations: ["1 Macc", "1Macc"],
+    variants: ["First Maccabees", "1st Maccabees", "I Maccabees"],
+    testament: "old",
+  },
+  {
+    canonical: "2 Maccabees",
+    abbreviations: ["2 Macc", "2Macc"],
+    variants: ["Second Maccabees", "2nd Maccabees", "II Maccabees"],
+    testament: "old",
+  },
+  {
     canonical: "Esther",
     abbreviations: ["Esth", "Est", "Es"],
     variants: [],
