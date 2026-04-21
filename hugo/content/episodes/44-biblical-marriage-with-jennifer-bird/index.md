@@ -6,6 +6,7 @@ videoId: BQOMbZtGs6E
 aliases:
   - /episodes/44/
 topics:
+  - Marriage
   - Paul
   - Univocality
   - Daniel

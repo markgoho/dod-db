@@ -7,6 +7,7 @@ aliases:
   - /episodes/101/
 topics:
   - Slave Bible
+  - Marriage
   - Decalogue
   - King James Bible
   - Abortion

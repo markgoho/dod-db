@@ -7,6 +7,7 @@ aliases:
   - /episodes/139/
 topics:
   - David
+  - Marriage
   - Paul
   - Jacob
   - Saul

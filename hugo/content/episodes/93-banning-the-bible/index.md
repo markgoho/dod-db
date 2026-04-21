@@ -16,6 +16,7 @@ topics:
   - Goliath
   - Hell
   - King James Bible
+  - Marriage
   - Samson
 tags:
   - Deuteronomy

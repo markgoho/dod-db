@@ -30,6 +30,7 @@ books:
   - Psalms
 guests:
   - Angela Roskop Erisman
+episodeTopic: Political Allegory
 draft: false
 ---
 

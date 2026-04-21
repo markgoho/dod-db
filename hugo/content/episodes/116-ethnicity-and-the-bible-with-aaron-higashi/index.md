@@ -6,6 +6,7 @@ videoId: dr1_wxhIqMo
 aliases:
   - /episodes/116/
 topics:
+  - Marriage
   - David
   - YHWH
   - Jacob

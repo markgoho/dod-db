@@ -6,6 +6,7 @@ videoId: josnjFOYjrA
 aliases:
   - /episodes/108/
 topics:
+  - Marriage
   - Paul
   - Christian Nationalism
   - Hell
@@ -37,14 +38,14 @@ segmentData:
   - type: taking-issue
     anchor: taking-issue-1
     label: Taking Issue
-    topicLabel: Biblical Marriage
-    summary: Critique of biblical marriage and covenant marriage initiatives
+    topicLabel: Marriage
+    summary: Critique of biblical marriage and covenant marriage
     startSeconds: 95.983
   - type: chapter-and-verse
     anchor: chapter-and-verse-1
     label: Chapter and Verse
-    topicLabel: Deut 24
-    summary: Divorce is discussed in the Sermon on the Mount.
+    topicLabel: Deut 24:1
+    summary: Jesus and Deuteronomy on divorce and remarriage
     startSeconds: 2010.729
 draft: false
 ---

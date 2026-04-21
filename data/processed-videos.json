@@ -456,6 +456,10 @@
         "mentions": 2
       },
       {
+        "tag": "Marriage",
+        "mentions": 2
+      },
+      {
         "tag": "Mount Ebal",
         "mentions": 2
       },
@@ -1394,6 +1398,10 @@
         "mentions": 1
       },
       {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
         "tag": "Midianites",
         "mentions": 1
       },
@@ -1614,6 +1622,10 @@
       },
       {
         "tag": "Gentiles",
+        "mentions": 5
+      },
+      {
+        "tag": "Marriage",
         "mentions": 5
       },
       {
@@ -4188,6 +4200,10 @@
         "mentions": 6
       },
       {
+        "tag": "Marriage",
+        "mentions": 5
+      },
+      {
         "tag": "Babylon",
         "mentions": 4
       },
@@ -4630,6 +4646,10 @@
       },
       {
         "tag": "King James Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
         "mentions": 1
       },
       {
@@ -5184,6 +5204,10 @@
         "mentions": 1
       },
       {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
         "tag": "YHWH",
         "mentions": 1
       }
@@ -5487,6 +5511,10 @@
       },
       {
         "tag": "Latin Vulgate",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
         "mentions": 1
       },
       {
@@ -7468,6 +7496,10 @@
     "transcriptPath": "data/transcripts/2024-02-05-episode-44-february-5-2024-biblical-marriage-with-jennifer-bird.txt",
     "tags": [
       {
+        "tag": "Marriage",
+        "mentions": 39
+      },
+      {
         "tag": "Paul",
         "mentions": 21
       },
@@ -8034,7 +8066,12 @@
     "publishedAt": "2024-02-26T00:00:00Z",
     "processedAt": "2026-01-14T02:02:56.270Z",
     "transcriptPath": "data/transcripts/2024-02-26-episode-47-introducing-history-daily.txt",
-    "tags": [],
+    "tags": [
+      {
+        "tag": "Marriage",
+        "mentions": 1
+      }
+    ],
     "segments": [
       {
         "type": "intro",
@@ -9022,6 +9059,10 @@
         "mentions": 1
       },
       {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
         "tag": "Mary Magdalene",
         "mentions": 1
       },
@@ -9407,6 +9448,10 @@
       },
       {
         "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "Marriage",
         "mentions": 2
       },
       {
@@ -10363,6 +10408,10 @@
         "mentions": 1
       },
       {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
         "tag": "Matthew",
         "mentions": 1
       },
@@ -10734,6 +10783,10 @@
         "mentions": 1
       },
       {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
         "tag": "Tamar",
         "mentions": 1
       },
@@ -10924,6 +10977,10 @@
       },
       {
         "tag": "Josiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
         "mentions": 1
       },
       {
@@ -11334,6 +11391,10 @@
         "mentions": 1
       },
       {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
         "tag": "Rachel",
         "mentions": 1
       },
@@ -11399,6 +11460,10 @@
       {
         "tag": "Judah",
         "mentions": 51
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 20
       },
       {
         "tag": "Er",
@@ -12223,6 +12288,10 @@
       {
         "tag": "Moab",
         "mentions": 12
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 9
       },
       {
         "tag": "Tamar",
@@ -13121,6 +13190,10 @@
         "mentions": 3
       },
       {
+        "tag": "Marriage",
+        "mentions": 3
+      },
+      {
         "tag": "Deconstruction",
         "mentions": 2
       },
@@ -13251,6 +13324,10 @@
       },
       {
         "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
         "mentions": 1
       },
       {
@@ -14342,6 +14419,10 @@
         "mentions": 3
       },
       {
+        "tag": "Marriage",
+        "mentions": 3
+      },
+      {
         "tag": "Sea of Galilee",
         "mentions": 3
       },
@@ -14550,6 +14631,10 @@
         "mentions": 1
       },
       {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
         "tag": "Nineveh",
         "mentions": 1
       }
@@ -14623,6 +14708,10 @@
       {
         "tag": "Sheol",
         "mentions": 4
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 3
       },
       {
         "tag": "Gentiles",
@@ -15009,6 +15098,10 @@
       },
       {
         "tag": "Christmas",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
         "mentions": 1
       },
       {
@@ -15405,6 +15498,10 @@
       },
       {
         "tag": "King James Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
         "mentions": 1
       },
       {
@@ -16312,6 +16409,10 @@
         "mentions": 3
       },
       {
+        "tag": "Marriage",
+        "mentions": 3
+      },
+      {
         "tag": "Gospel of James",
         "mentions": 2
       },
@@ -16637,6 +16738,10 @@
       {
         "tag": "Slave Bible",
         "mentions": 10
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 3
       },
       {
         "tag": "Decalogue",
@@ -17351,7 +17456,8 @@
         "mentions": 1
       }
     ],
-    "episodeNumber": 105
+    "episodeNumber": 105,
+    "episodeTopic": "Political Allegory"
   },
   {
     "videoId": "oJ9ifpprXjM",
@@ -17617,6 +17723,10 @@
     "transcriptPath": "data/transcripts/2025-04-28-episode-108-april-28-2025-biblical-marriage.txt",
     "tags": [
       {
+        "tag": "Marriage",
+        "mentions": 61
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 10
       },
@@ -17703,8 +17813,8 @@
         "endTimestamp": "[00:33:30.729]",
         "confidence": "verified",
         "detectionMethod": "audio",
-        "topicLabel": "Biblical Marriage",
-        "summary": "Critique of biblical marriage and covenant marriage initiatives"
+        "topicLabel": "Marriage",
+        "summary": "Critique of biblical marriage and covenant marriage"
       },
       {
         "type": "chapter-and-verse",
@@ -17712,8 +17822,8 @@
         "endTimestamp": "[01:00:57.301]",
         "confidence": "verified",
         "detectionMethod": "llm",
-        "topicLabel": "Deut 24",
-        "summary": "Divorce is discussed in the Sermon on the Mount."
+        "topicLabel": "Deut 24:1",
+        "summary": "Jesus and Deuteronomy on divorce and remarriage"
       }
     ],
     "speakers": ["Dan McClellan", "Dan Beecher"],
@@ -18088,6 +18198,10 @@
         "mentions": 2
       },
       {
+        "tag": "Marriage",
+        "mentions": 2
+      },
+      {
         "tag": "Philistines",
         "mentions": 2
       },
@@ -18397,6 +18511,10 @@
         "mentions": 1
       },
       {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
         "tag": "Nebuchadnezzar",
         "mentions": 1
       },
@@ -18512,6 +18630,10 @@
       {
         "tag": "Sodom",
         "mentions": 15
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 6
       },
       {
         "tag": "Paul",
@@ -18813,6 +18935,10 @@
       {
         "tag": "Canaan",
         "mentions": 18
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 7
       },
       {
         "tag": "Moabites",
@@ -21860,6 +21986,10 @@
         "mentions": 8
       },
       {
+        "tag": "Marriage",
+        "mentions": 8
+      },
+      {
         "tag": "Deuteronomy",
         "mentions": 6
       },
@@ -22126,6 +22256,10 @@
         "mentions": 1
       },
       {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
         "tag": "Masoretic Text",
         "mentions": 1
       },
@@ -22259,6 +22393,10 @@
       },
       {
         "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
         "mentions": 1
       },
       {
@@ -22977,6 +23115,10 @@
       {
         "tag": "David",
         "mentions": 18
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 13
       },
       {
         "tag": "Jeroboam",
@@ -23857,6 +23999,10 @@
         "mentions": 1
       },
       {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
         "tag": "Mary Magdalene",
         "mentions": 1
       },
@@ -24583,6 +24729,10 @@
       },
       {
         "tag": "Luke",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
         "mentions": 1
       },
       {

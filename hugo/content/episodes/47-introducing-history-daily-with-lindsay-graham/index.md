@@ -5,6 +5,8 @@ episodeNumber: 47
 videoId: 2p2chxLz3eo
 aliases:
   - /episodes/47/
+topics:
+  - Marriage
 books:
   - Isaiah
 guests:

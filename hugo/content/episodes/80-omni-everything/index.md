@@ -13,6 +13,7 @@ topics:
   - Masoretic Text
   - Septuagint
   - Abortion
+  - Marriage
   - Univocality
 tags:
   - Edom

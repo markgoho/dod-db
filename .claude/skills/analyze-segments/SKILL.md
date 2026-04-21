@@ -67,6 +67,7 @@ General rules:
 
 - Be specific to this segment instance, not the generic segment type.
 - Prefer concrete concepts or terms stated in the transcript.
+- Drop generic framing words like `Biblical` when the underlying concept stands on its own.
 - Do not use quotation marks.
 - Do not repeat the generic segment label unless that is genuinely the topic.
 - Keep `topicLabel` to 1-2 words maximum.
@@ -119,6 +120,7 @@ Rules:
 - Pick the dominant topic, not a minor tangent.
 - Avoid vague single-word labels when a clearer multi-word concept is evident.
 - Never append `in the Bible` or `and the Bible`.
+- Avoid leading generic framing like `Biblical` when the clearer topic is the underlying concept itself, such as `Marriage` instead of `Biblical Marriage`.
 - Only save an `episodeTopic` when it adds real value beyond the episode title.
 - If the best label would just restate or lightly normalize the episode title without improving searchability, canonical wording, or clarity, treat it as a no-op instead of saving it.
 - Save an `episodeTopic` when it meaningfully improves on the title by being shorter, more canonical, less rhetorical, or more discoverable.

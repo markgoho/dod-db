@@ -6,6 +6,7 @@ videoId: ZWm7gjCL3uA
 aliases:
   - /episodes/56/
 topics:
+  - Marriage
   - David
   - Joseph
 tags:

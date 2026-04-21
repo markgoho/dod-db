@@ -6,6 +6,7 @@ videoId: ZwJai1EPbw4
 aliases:
   - /episodes/68/
 topics:
+  - Marriage
   - Joseph
   - Ruth
   - Decalogue

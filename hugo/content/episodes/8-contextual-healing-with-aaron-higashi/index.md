@@ -8,6 +8,7 @@ aliases:
 topics:
   - Atheism
   - Hell
+  - Marriage
   - Trinity
 tags:
   - Africa

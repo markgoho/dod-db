@@ -11,6 +11,7 @@ topics:
   - Homosexuality
   - Second Coming
   - David
+  - Marriage
   - YHWH
 tags:
   - Romans

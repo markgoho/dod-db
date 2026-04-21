@@ -9,6 +9,7 @@ topics:
   - Trinity
   - Abortion
   - Christian Nationalism
+  - Marriage
   - Deconstruction
   - Holy Spirit
   - Tithing

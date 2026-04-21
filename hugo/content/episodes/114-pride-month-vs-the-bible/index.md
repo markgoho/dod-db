@@ -7,6 +7,7 @@ aliases:
   - /episodes/114/
 topics:
   - Homosexuality
+  - Marriage
   - Paul
   - Hell
   - YHWH

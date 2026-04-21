@@ -15,6 +15,7 @@ topics:
   - David
   - divine council
   - King James Bible
+  - Marriage
 tags:
   - Hezekiah
   - Jerusalem

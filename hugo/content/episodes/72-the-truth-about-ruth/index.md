@@ -8,6 +8,7 @@ aliases:
 topics:
   - Sennacherib
   - Ruth
+  - Marriage
   - Angel
   - YHWH
   - Josiah

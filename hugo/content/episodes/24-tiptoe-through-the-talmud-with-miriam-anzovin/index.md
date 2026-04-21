@@ -7,6 +7,7 @@ aliases:
   - /episodes/24/
 topics:
   - Talmud
+  - Marriage
   - Atheism
   - Demon
 tags:

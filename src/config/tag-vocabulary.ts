@@ -6836,12 +6836,17 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "marriage",
-    variations: ["marry", "married"],
-    category: "theology",
+    canonical: "Marriage",
+    variations: [],
+    category: "miscellaneous",
     description:
       "The socially recognized union or legal contract between people that creates rights and obligations, varying across cultures and time periods.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [
+      3, 8, 10, 24, 27, 30, 32, 44, 47, 54, 56, 61, 63, 64, 67, 68, 72, 79, 80,
+      87, 88, 89, 91, 93, 99, 101, 108, 111, 113, 114, 116, 133, 134, 135, 139,
+      144, 148,
+    ],
   },
   {
     canonical: "divorce",
