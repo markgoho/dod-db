@@ -1,19 +1,101 @@
+{{ define "head-styles" }}
+  {{ $inlineCSS := resources.Get "css/tag-single.css" | resources.Minify }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
 {{ define "main" }}
-  <section class="term-page term-page--episodes-archive">
-    {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "books" "backHref" "/books/" "backLabel" "All Books") }}
+  {{ $bookName := .Params.bookName | default .Title }}
+  {{ $allEpisodes := sort .Pages ".Params.episodeNumber" "desc" }}
+  {{ $episodesByNumber := dict }}
+  {{ range $allEpisodes }}
+    {{ $episodesByNumber = merge $episodesByNumber (dict (string .Params.episodeNumber) .) }}
+  {{ end }}
+  {{ $featuredItems := .Params.featuredItems | default slice }}
+  {{ $featuredMarkup := "" }}
+
+  {{ range $featuredItems }}
+    {{ if eq .type "segment" }}
+      {{ $featuredEpisodePage := index $episodesByNumber (string .episodeNumber) }}
+      {{ if $featuredEpisodePage }}
+        {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "badgeSource" "books" "currentTerm" $bookName "overrides" (dict "eyebrow" (printf "Segment · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" .label "guestText" "Jump to the in-depth discussion" "link" (printf "%s#%s" $featuredEpisodePage.RelPermalink .segmentAnchor)))) }}
+      {{ end }}
+    {{ else if eq .type "episode" }}
+      {{ $featuredEpisodePage := index $episodesByNumber (string (int .number)) }}
+      {{ if $featuredEpisodePage }}
+        {{ $featuredMarkup = printf "%s%s" $featuredMarkup (partial "episode-card" (dict "episode" $featuredEpisodePage "ranked" true "badgeSource" "books" "currentTerm" $bookName "overrides" (dict "eyebrow" (printf "Featured · Episode %v" $featuredEpisodePage.Params.episodeNumber) "title" (.label | default $featuredEpisodePage.Title) "guestText" "Full episode discussion"))) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
 
 
-    <section>
-      <div class="episodes-grid">
-        {{ range sort .Pages ".Params.episodeNumber" "desc" }}
-          {{ partial "episode-card" (dict "episode" . "badgeSource" "books" "currentTerm" $.Title) }}
-        {{ end }}
+  <section class="term-page term-page--episodes-archive tag-page">
+    {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "books" "backHref" "/books/" "backLabel" "All Books" "heroClass" "page-hero--profile" "definition" (.Params.definition | default "")) }}
+
+    {{ with .Params.nrsvueUrl }}
+      <div class="tag-section-copy">
+        <a href="{{ . }}" class="button button--secondary">Read in NRSVUE</a>
       </div>
-    </section>
+    {{ end }}
+
+    {{ with .Content }}
+      <details class="tag-intro panel">
+        <summary class="tag-intro__summary type-eyebrow">
+          Why this book matters
+        </summary>
+        <div class="tag-intro__content prose">
+          {{ . }}
+        </div>
+      </details>
+    {{ end }}
+
+    {{ if ne $featuredMarkup "" }}
+      <section class="tag-featured-overview">
+        <h2 class="type-section-title tag-section-title">Where to start</h2>
+        <p class="tag-section-copy">
+          Start here for the strongest listening on {{ $bookName }}.
+        </p>
+        <div class="tag-featured-callouts episodes-grid">
+          {{ $featuredMarkup | safeHTML }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ with .Params.quotes }}
+      <section class="tag-quotes" aria-label="Quotes">
+        <h2 class="type-section-title tag-section-title">
+          Quotes from the Data
+        </h2>
+        <div class="tag-quotes__grid">
+          {{ range . }}
+            {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ if .Params.showAllEpisodes | default true }}
+      <section class="tag-episodes">
+        <h2 class="type-section-title tag-section-title">All episodes</h2>
+        <p class="tag-section-copy">
+          Every episode currently tagged with {{ $bookName }}.
+        </p>
+        <div class="episodes-grid">
+          {{ range $allEpisodes }}
+            {{ partial "episode-card" (dict "episode" . "badgeSource" "books" "currentTerm" $bookName) }}
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
   </section>
 {{ end }}
 
 {{ define "footer-scripts" }}
   {{ partial "json-ld/taxonomy-term.html" . }}
   {{ partial "json-ld/breadcrumb.html" . }}
+  {{ $shareOpts := dict "targetPath" "quote-share.js" }}
+  {{ $shareBuilt := resources.Get "ts/quote-share.ts" | js.Build $shareOpts }}
+  {{ if hugo.IsProduction }}
+    {{ $shareBuilt = $shareBuilt | resources.Minify | resources.Fingerprint }}
+  {{ end }}
+  <script src="{{ $shareBuilt.RelPermalink }}"></script>
 {{ end }}

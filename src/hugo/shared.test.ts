@@ -3,6 +3,7 @@
  */
 
 import { describe, expect, test } from "bun:test";
+import { getEpisodeOutputPath } from "./get-episode-path.js";
 import { getGuestSpeakers, getRawGuestSpeakers } from "./get-guest-speakers.js";
 import { parseTranscriptLine } from "./parse-transcript-line.js";
 import { slugifyTitle } from "./slugify-title.js";
@@ -65,6 +66,29 @@ describe("getRawGuestSpeakers", () => {
   test("preserves original guest names for path generation", () => {
     const speakers = ["Dan McClellan", "David Burnett", "Dan Beecher"];
     expect(getRawGuestSpeakers(speakers)).toEqual(["David Burnett"]);
+  });
+
+  test("preserves guest honorifics in display names", () => {
+    const speakers = ["Dan McClellan", "Rev Karla Kamstra", "Dan Beecher"];
+    expect(getRawGuestSpeakers(speakers)).toEqual(["Rev Karla Kamstra"]);
+  });
+});
+
+describe("getEpisodeOutputPath", () => {
+  test("strips guest honorifics from episode path slugs", () => {
+    const video = {
+      videoId: "abc123",
+      title: "Test Episode",
+      publishedAt: "2024-01-15T10:00:00Z",
+      processedAt: "2024-01-15T12:00:00Z",
+      transcriptPath: "data/transcripts/2024-01-15-test-episode.txt",
+      episodeNumber: 1,
+      speakers: ["Dan McClellan", "Rev Karla Kamstra", "Dan Beecher"],
+    };
+
+    expect(getEpisodeOutputPath(video, "Test Episode")).toBe(
+      "hugo/content/episodes/1-test-episode-with-karla-kamstra/index.md",
+    );
   });
 });
 

@@ -79,43 +79,7 @@
         </h2>
         <div class="tag-quotes__grid">
           {{ range . }}
-            {{ $episode := index $episodesByNumber (string .episode) }}
-            <article class="tag-quote panel">
-              <p class="tag-quote__text">“{{ .text }}”</p>
-              <div class="tag-quote__meta">
-                <span class="tag-quote__speaker type-eyebrow"
-                  >{{ .speaker }}</span
-                >
-                {{ if $episode }}
-                  {{ $quoteHref := $episode.RelPermalink }}
-                  {{ with .timestamp }}
-                    {{ $timestampParts := split . "." }}
-                    {{ $timeParts := split (index $timestampParts 0) ":" }}
-                    {{ if eq (len $timeParts) 3 }}
-                      {{ $hours := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 0)) }}
-                      {{ $minutes := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 1)) }}
-                      {{ $seconds := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 2)) }}
-                      {{ $milliseconds := cond (gt (len $timestampParts) 1) (int (replaceRE "^0+([0-9]+)$" "$1" (index $timestampParts 1))) 0 }}
-                      {{ $totalSeconds := add (mul $hours 3600) (add (mul $minutes 60) $seconds) }}
-                      {{ $quoteHref = printf "%s#t-%d-%03d" $episode.RelPermalink $totalSeconds $milliseconds }}
-                    {{ end }}
-                  {{ end }}
-                  <a
-                    href="{{ $quoteHref }}"
-                    class="tag-quote__episode chip"
-                    data-episode="{{ .episode }}"
-                    data-share-url="{{ $quoteHref | absURL }}">
-                    Episode
-                    {{ .episode }}
-                  </a>
-                {{ else }}
-                  <span class="tag-quote__episode chip">
-                    Episode
-                    {{ .episode }}{{ with .timestamp }}· {{ . }}{{ end }}
-                  </span>
-                {{ end }}
-              </div>
-            </article>
+            {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
           {{ end }}
         </div>
       </section>

@@ -16,6 +16,8 @@
     "topic-page:gather": "bun run src/scripts/gather-topic-context.ts",
     "topic-page:save": "bun run src/scripts/save-topic-page.ts",
     "topic-page:move": "bun run src/scripts/move-topic-page.ts",
+    "book-page:gather": "bun run src/scripts/gather-book-context.ts",
+    "book-page:save": "bun run src/scripts/save-book-page.ts",
     "hugo:dev": "bun run generate:tag-index && cd hugo && hugo server",
     "build:local": "bun run generate:tag-index && rm -rf hugo/public && cd hugo && hugo && bun run index",
     "index": "bunx pagefind --site hugo/public",

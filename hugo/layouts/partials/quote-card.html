@@ -1,0 +1,37 @@
+{{- $quote := .quote -}}
+{{- $episodesByNumber := .episodesByNumber -}}
+{{- $episode := index $episodesByNumber (string $quote.episode) -}}
+{{- $quoteHref := "" -}}
+{{- if $episode -}}
+  {{- $quoteHref = $episode.RelPermalink -}}
+  {{- with $quote.timestamp -}}
+    {{- $timestampParts := split . "." -}}
+    {{- $timeParts := split (index $timestampParts 0) ":" -}}
+    {{- if eq (len $timeParts) 3 -}}
+      {{- $hours := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 0)) -}}
+      {{- $minutes := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 1)) -}}
+      {{- $seconds := int (replaceRE "^0+([0-9]+)$" "$1" (index $timeParts 2)) -}}
+      {{- $milliseconds := cond (gt (len $timestampParts) 1) (int (replaceRE "^0+([0-9]+)$" "$1" (index $timestampParts 1))) 0 -}}
+      {{- $totalSeconds := add (mul $hours 3600) (add (mul $minutes 60) $seconds) -}}
+      {{- $quoteHref = printf "%s#t-%d-%03d" $episode.RelPermalink $totalSeconds $milliseconds -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<article class="tag-quote panel">
+  <p class="tag-quote__text">“{{ $quote.text }}”</p>
+  <div class="tag-quote__meta">
+    <span class="tag-quote__speaker type-eyebrow">{{ $quote.speaker }}</span>
+    {{- if $episode -}}
+      <a
+        href="{{ $quoteHref }}"
+        class="tag-quote__episode chip"
+        data-episode="{{ $quote.episode }}"
+        data-share-url="{{ $quoteHref | absURL }}">
+        Episode {{ $quote.episode }}
+      </a>
+    {{- else -}}
+      <span class="tag-quote__episode chip">Episode {{ $quote.episode }}</span>
+    {{- end -}}
+  </div>
+</article>
