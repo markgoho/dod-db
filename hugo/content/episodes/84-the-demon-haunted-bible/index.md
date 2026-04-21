@@ -41,10 +41,11 @@ tags:
   - Sheol
   - Ugarit
 books:
+  - 2 Peter
   - Luke
   - Matthew
   - Genesis
-  - 2 Peter
+  - Jude
   - Deuteronomy
   - Psalms
 episodeTopic: Demonology
@@ -90,7 +91,7 @@ draft: false
 {{< line >}}[00:12:26.090] Dan McClellan: And they have these children who are the giants, and the giants have children who are the Nephilim and the, the spirits of the deceased Nephilim are the evil spirits that then become the demons. And so.{{< /line >}}
 {{< line >}}[00:12:40.330] Dan Beecher: Interesting. Okay.{{< /line >}}
 {{< line >}}[00:12:42.130] Dan McClellan: According to one narrative, there are a bunch of different narratives, but that's.{{< /line >}}
-{{< line >}}[00:12:46.910] Dan Beecher: Yeah, and that doesn't seem to match up with the narrative that I got from multiple sources in my research about sort of the origin story of the demons. Okay, but I, I don't know. We. I guess we can just talk about that. I, you know, I, I found in a few places where it would say that demons are. And, you know, this one uses Second Peter as its reference point for this. But it, it says demons are angels that, that sinned.{{< /line >}}
+{{< line >}}[00:12:46.910] Dan Beecher: Yeah, and that doesn't seem to match up with the narrative that I got from multiple sources in my research about sort of the origin story of the demons. Okay, but I, I don't know. We. I guess we can just talk about that. I, you know, I, I found in a few places where it would say that demons are. And, you know, this one uses {{< scripture ref="2 Peter" >}} as its reference point for this. But it, it says demons are angels that, that sinned.{{< /line >}}
 {{< line >}}[00:13:15.280] Dan McClellan: Yes.{{< /line >}}
 {{< line >}}[00:13:16.160] Dan Beecher: And rebelled against God. And so they are destined for hell and they're going to torment as many of us as they can before they have to go there. Or something along those lines.{{< /line >}}
 {{< line >}}[00:13:26.720] Dan McClellan: Yeah. So. So there we have, we have the idea of these, these angels. So in the Enochic tradition, and we see this primarily in Jubilees, the, the angels, they're created on the first day and they watch the rest of creation. And you know, they're, they're the, the Muppet babies, just kind of like, hey, everything's great. And. But then when you get the story of them descending because, you know, they're just way too horny, that then leads to all this bad stuff. So they fall and then you've got these named angels who are, are doing all this bad stuff. And then in, in Enoch, God is, is like, tells the other angels, like Gabriel and Michael and, and these others is like, go bind them under the earth for, you know, for 70 year, you know, whatever, years of years. And.{{< /line >}}
@@ -102,7 +103,7 @@ draft: false
 {{< line >}}[00:14:57.700] Dan McClellan: Christianity is also descended from the Book of Enoch.{{< /line >}}
 {{< line >}}[00:15:00.740] Dan Beecher: That's what I'm saying. Like, it's so clear how powerful the influence of that book has been. When you look at, you know, the stuff that makes it into the New Testament, it is like all of it references it all the time.{{< /line >}}
 {{< line >}}[00:15:17.120] Dan McClellan: Yeah, yeah. It's concepts of the devil, concepts of hell, concepts of heaven. The. It's all there.{{< /line >}}
-{{< line >}}[00:15:29.930] Dan Beecher: So the Second Peter verse that I was talking about that was referenced in that article that I was reading is 2nd Peter 2, verse 4, which says, for if God did not spare the angels when they sinned, but cast them into the. Into hell and committed them to chains of deepest darkness to be kept until the judgment. And I didn't know where that came from, but I guess it's an Enoch thing.{{< /line >}}
+{{< line >}}[00:15:29.930] Dan Beecher: So the {{< scripture ref="2 Peter" >}} verse that I was talking about that was referenced in that article that I was reading is 2nd Peter 2, verse 4, which says, for if God did not spare the angels when they sinned, but cast them into the. Into hell and committed them to chains of deepest darkness to be kept until the judgment. And I didn't know where that came from, but I guess it's an Enoch thing.{{< /line >}}
 {{< line >}}[00:15:58.260] Dan McClellan: Yeah. And. And you have. So that's a reference to Enoch in, like, {{< scripture ref="Jude" display="the Book of Jude" >}}. You have a direct quotation from.{{< /line >}}
 {{< line >}}[00:16:06.220] Dan Beecher: Oh, yeah, yeah.{{< /line >}}
 {{< line >}}[00:16:07.380] Dan McClellan: And here in Enoch, chapter 19. And Uriel said to me, there stand the angels who mingled with the women, and their spirits, having assumed many forms, bring destruction on men and lead them astray to sacrifice to demons as to gods until the day of the great judgment in which they will be judged with fire.{{< /line >}}

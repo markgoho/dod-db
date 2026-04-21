@@ -33,11 +33,13 @@ tags:
   - Romans
 books:
   - Jeremiah
+  - Revelation
   - Galatians
   - Genesis
   - Isaiah
   - Romans
   - Psalms
+  - 2 Peter
   - Deuteronomy
   - Acts
 segments:
@@ -220,7 +222,7 @@ draft: false
 {{< line >}}[00:39:09.330] Dan Beecher: Okay.{{< /line >}}
 {{< line >}}[00:39:11.570] Dan McClellan: Okay. It just fell down and the cover closed.{{< /line >}}
 {{< line >}}[00:39:16.850] Dan Beecher: So your verse is "Holy Bible."{{< /line >}}
-{{< line >}}[00:39:18.850] Dan McClellan: Yeah, the Holy SBL Bible. Okay. Oh, I think I got—I got one. Okay. Second Peter, chapter three, verse 14. "Therefore, beloved, while you are waiting for these things, strive to be found by him at peace, without spot or blemish."{{< /line >}}
+{{< line >}}[00:39:18.850] Dan McClellan: Yeah, the Holy SBL Bible. Okay. Oh, I think I got—I got one. Okay. {{< scripture ref="2 Peter" >}}, chapter three, verse 14. "Therefore, beloved, while you are waiting for these things, strive to be found by him at peace, without spot or blemish."{{< /line >}}
 {{< line >}}[00:39:34.750] Dan Beecher: Hey, that's a good one. That wasn't even a curated one. You got a—you got a good one. Yeah, I got all crap anyway.{{< /line >}}
 {{< line >}}[00:39:40.990] Dan McClellan: Seven tries.{{< /line >}}
 {{< line >}}[00:39:41.870] Dan Beecher: But, you know, here's the thing. It makes sense because I'm just a dirty, dirty atheist, and you're the Lord's beloved, Dan McClellan.{{< /line >}}

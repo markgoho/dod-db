@@ -155,6 +155,27 @@ describe("extractScripture", () => {
       expect(esther?.mentions).toBe(1);
     });
 
+    test("detects standalone 1 Esdras mention as whole-book reference", async () => {
+      const transcript =
+        "And that's going to be 1 Esdras. So we'll figure out what that is.";
+      const results = await extractScripture(transcript);
+
+      const firstEsdras = results.find(result => result.book === "1 Esdras");
+      expect(firstEsdras).toBeDefined();
+      expect(firstEsdras?.references).toEqual(["1 Esdras"]);
+      expect(firstEsdras?.mentions).toBe(1);
+    });
+
+    test("detects standalone Bel and the Dragon mention as whole-book reference", async () => {
+      const transcript = "We're doing Bel and the Dragon. It's a fun one.";
+      const results = await extractScripture(transcript);
+
+      const bel = results.find(result => result.book === "Bel and the Dragon");
+      expect(bel).toBeDefined();
+      expect(bel?.references).toEqual(["Bel and the Dragon"]);
+      expect(bel?.mentions).toBe(1);
+    });
+
     test("sorts whole-book reference before chapter references", async () => {
       const transcript =
         "Today we're talking about the Book of Esther and Esther 4:14.";

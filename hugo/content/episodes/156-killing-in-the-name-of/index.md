@@ -55,9 +55,14 @@ tags:
   - Thaddeus
 books:
   - 1 Samuel
-  - Exodus
-  - Deuteronomy
   - Acts
+  - John
+  - Revelation
+  - Genesis
+  - Exodus
+  - Matthew
+  - Deuteronomy
+  - Joshua
 segments:
   - Chapter and Verse
   - What is That?
@@ -86,7 +91,7 @@ draft: false
 {{< line >}}[00:00:28.102] Dan McClellan: And this is Data Over Dogma, where we increase public access to the academic study of the Bible and religion, and we combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}
 {{< line >}}[00:00:38.514] Dan Beecher: Things are good, things are good. How are you?{{< /line >}}
 {{< line >}}[00:00:42.364] Dan McClellan: I'm getting used to a new speech pattern. I've got a bunch of plastic covering the inside of my mouth, mainly on my teeth, but some are embedded in my gums. I have invisible aligners on my teeth, so my tongue is trying to figure out how to make the sounds it is used to making while navigating around all this plastic. So if I sound a little odd or suddenly choke on my own spit or something like that, that's gonna be the reason why.{{< /line >}}
-{{< line >}}[00:01:12.138] Dan Beecher: We'll all attempt to be forgiving, but frankly, it's probably not gonna work. Anyway, we got a fun show coming up. This one, I think we're gonna get some emails about. I think we might get in trouble. We'll see. But the first part of our show, the first segment of our show, we're going to call it a chapter and verse. And we're going to be in 1 Samuel. And it's, you know, if you don't know what's happening in current events or whatever, it may just sound like an everyday sort of thing that we're going to talk about Amalek. But when I say that we will be invoking the name Netanyahu, I think people might know— I think the hairs on a few necks might have stood up just now. So we'll get to that. And then the second half of our show is a what's that? I don't know. Is it a what's that? Is it a— I don't know what it is.{{< /line >}}
+{{< line >}}[00:01:12.138] Dan Beecher: We'll all attempt to be forgiving, but frankly, it's probably not gonna work. Anyway, we got a fun show coming up. This one, I think we're gonna get some emails about. I think we might get in trouble. We'll see. But the first part of our show, the first segment of our show, we're going to call it a chapter and verse. And we're going to be in {{< scripture ref="1 Samuel" >}}. And it's, you know, if you don't know what's happening in current events or whatever, it may just sound like an everyday sort of thing that we're going to talk about Amalek. But when I say that we will be invoking the name Netanyahu, I think people might know— I think the hairs on a few necks might have stood up just now. So we'll get to that. And then the second half of our show is a what's that? I don't know. Is it a what's that? Is it a— I don't know what it is.{{< /line >}}
 {{< line >}}[00:02:13.565] Dan Beecher: Yeah, we'll call it a what's that? We're going to talk about the deaths of the apostles.{{< /line >}}
 {{< line >}}[00:02:19.406] Dan McClellan: Yes, we hear about this all the time, that the nobody dies for a lie. All the apostles went to all kinds of excruciating and fantastical deaths. Yeah. And we're actually going to talk about why people think that the apostles died in certain ways, and very little of it has to do with anything verifiable.{{< /line >}}
 {{< line >}}[00:02:40.907] Dan Beecher: So, and also, can we just get rid of this nobody dies for a lie thing? Like, unless you're—.{{< /line >}}
@@ -149,7 +154,7 @@ draft: false
 {{< line >}}[00:20:45.116] Dan Beecher: Yeah, right.{{< /line >}}
 {{< line >}}[00:20:46.256] Dan McClellan: So if you ever wondered why was Saul rejected as king, why did David take his place? It's because he was given the command to commit genocide and didn't do it well enough.{{< /line >}}
 {{< line >}}[00:20:55.969] Dan Beecher: Didn't go all the way. He kept one guy and a bunch of livestock, and that was his undoing.{{< /line >}}
-{{< line >}}[00:21:07.029] Dan McClellan: And oddly enough though, by the end of the story, all of the Amalekites are dead because they killed everybody but the king. And it's really the cattle and the livestock that are at issue, that are the problem. Yeah, and the king doesn't survive. Samuel hacks him up. So technically, the genocide worked. Yeah, until you get to the end of {{< scripture ref="1 Samuel" >}}. Okay, because, uh, in 1 Samuel chapter 30, we have David now who's in charge. David and his men come to Ziklag on the third day.{{< /line >}}
+{{< line >}}[00:21:07.029] Dan McClellan: And oddly enough though, by the end of the story, all of the Amalekites are dead because they killed everybody but the king. And it's really the cattle and the livestock that are at issue, that are the problem. Yeah, and the king doesn't survive. Samuel hacks him up. So technically, the genocide worked. Yeah, until you get to the end of {{< scripture ref="1 Samuel" >}}. Okay, because, uh, in {{< scripture ref="1 Samuel" >}} chapter 30, we have David now who's in charge. David and his men come to Ziklag on the third day.{{< /line >}}
 {{< line >}}[00:21:43.505] Dan Beecher: Good name.{{< /line >}}
 {{< line >}}[00:21:44.482] Dan McClellan: The Amalekites had made a raid on the Negev and on Ziklag. They had attacked Ziklag and burned it down and taken captive the women and all who were in it.{{< /line >}}
 {{< line >}}[00:21:54.479] Dan Beecher: Okay, so I see a problem.{{< /line >}}
@@ -201,7 +206,7 @@ draft: false
 {{< line >}}[00:36:17.508] Dan McClellan: And the implication is that he went on to eternity as a result of the things he endured. So a lot of people understand that as a reference to some kind of martyrdom, some sort of, some sort of unpleasantness that led to his death. Yes. Now whether or not this was a martyrdom, that could have been stopped by Peter denying his testimony of the risen Savior is really not clear. So that's another thing to bring up. Maybe they did say, "You know what? I made it all up. I'm not sure that that actually happened." And they were like, "Too late, you gotta die." So it's not clear that that is actually evidence that he was convinced. But I think Peter, of all the people from the New Testament who claim to have seen the risen Savior, I think Peter has probably the most solid testimony because Paul even talks about having visited Peter, and Paul refers to Peter's vision of the risen Jesus.{{< /line >}}
 {{< line >}}[00:37:17.892] Dan McClellan: So Peter probably did make the claim that he had seen the risen Jesus.{{< /line >}}
 {{< line >}}[00:37:23.673] Dan Beecher: Okay, and he was— the story is that he was crucified in Rome, right?{{< /line >}}
-{{< line >}}[00:37:30.336] Dan McClellan: Yeah, upside down. And here's the thing, that tradition, yeah, that comes from an apocryphal text, okay, called the Acts of Peter. And we're going to see that most of these traditions actually come from a genre of literature called the Acts of the Apostles, which are New Testament apocryphal texts usually written between the 2nd and 6th centuries CE. And they're filled with all kinds of fantastical tales of magic and derring-do and all those kinds of stuff.{{< /line >}}
+{{< line >}}[00:37:30.336] Dan McClellan: Yeah, upside down. And here's the thing, that tradition, yeah, that comes from an apocryphal text, okay, called the Acts of Peter. And we're going to see that most of these traditions actually come from a genre of literature called the {{< scripture ref="Acts" display="Acts of the Apostles" >}}, which are New Testament apocryphal texts usually written between the 2nd and 6th centuries CE. And they're filled with all kinds of fantastical tales of magic and derring-do and all those kinds of stuff.{{< /line >}}
 {{< line >}}[00:38:01.638] Dan Beecher: We've met Thecla, so we know some of the derring-do that can happen in an Acts of book.{{< /line >}}
 {{< line >}}[00:38:08.597] Dan McClellan: Right. So the account of his being crucified upside down in Rome under Nero comes from a text that was probably written in the second half of the second century. So probably 100 or more years after he was actually dead is when someone writes that account. Okay. So the actual nature of his martyrdom—I would say we've got decent evidence for his martyrdom, but the actual nature of it is apocryphal.{{< /line >}}
 {{< line >}}[00:38:36.895] Dan Beecher: Okay.{{< /line >}}
@@ -241,7 +246,7 @@ draft: false
 {{< line >}}[00:45:20.443] Dan Beecher: Okay.{{< /line >}}
 {{< line >}}[00:45:21.117] Dan McClellan: So most of the people who say, "Here's how the apostles all died," they probably just Googled this or some source was like, "Here's how he died and here's how he died and here's how he died." And they just rattle it off as if it is all sober history.{{< /line >}}
 {{< line >}}[00:45:38.510] Dan Beecher: Or biblical.{{< /line >}}
-{{< line >}}[00:45:40.353] Dan McClellan: Yeah, or biblical. And really it's just these traditions that are being collated from these late Acts of the Apostles, which are apocryphal texts that talk about these magical duels that they had with other magicians and things like that.{{< /line >}}
+{{< line >}}[00:45:40.353] Dan McClellan: Yeah, or biblical. And really it's just these traditions that are being collated from these late {{< scripture ref="Acts" display="Acts of the Apostles" >}}, which are apocryphal texts that talk about these magical duels that they had with other magicians and things like that.{{< /line >}}
 {{< line >}}[00:45:57.401] Dan Beecher: And which were probably written not in conjunction with each other. Far from it. Like, these were—oh yeah, yeah, just, uh, this is just fanfic that was written by various and sundry people.{{< /line >}}
 {{< line >}}[00:46:09.592] Dan McClellan: And, and it may be, um, there's a, there's a text called the Golden Legend, which is, uh, compiled around 1260. A dude named, uh, I think Jacobus, uh, I, and I don't know how to pronounce his last name, but, um, he seems to have—I think it was like a Lives of the Saints, basically. And I think he may have been one of the main collators of a lot of these legends.{{< /line >}}
 {{< line >}}[00:46:37.042] Dan Beecher: Sure, sure, sure.{{< /line >}}
@@ -273,7 +278,7 @@ draft: false
 {{< line >}}[00:50:09.608] Dan Beecher: Yeah, I think, I think he lost his, uh, he lost his chance to be a martyr. He doesn't, he doesn't get to be that.{{< /line >}}
 {{< line >}}[00:50:16.962] Dan McClellan: Yeah. And, uh, if you go by {{< scripture ref="Matthew" display="the Gospel of Matthew" >}}, uh, it was a simple hanging after throwing his 30 pieces of silver into the temple and repenting of his wicked deed.{{< /line >}}
 {{< line >}}[00:50:28.740] Dan Beecher: Specifically hanging himself. He was not hanged, but hanged himself.{{< /line >}}
-{{< line >}}[00:50:32.906] Dan McClellan: Yes, yes. And the Acts of the Apostles chapter 1, verses 18 and 19 offer the account where he buys a field with the money, right? And then is out in his field, just like, this is a nice field, and falls and explodes.{{< /line >}}
+{{< line >}}[00:50:32.906] Dan McClellan: Yes, yes. And the {{< scripture ref="Acts" display="Acts of the Apostles" >}} chapter 1, verses 18 and 19 offer the account where he buys a field with the money, right? And then is out in his field, just like, this is a nice field, and falls and explodes.{{< /line >}}
 {{< line >}}[00:50:51.533] Dan Beecher: And that's, that's maybe my favorite biblical death. I think of all of the biblical deaths, that's the one you gotta, you gotta love.{{< /line >}}
 {{< line >}}[00:51:00.702] Dan McClellan: Yeah, stubs his toe and blows up.{{< /line >}}
 {{< line >}}[00:51:02.946] Dan Beecher: Just—.{{< /line >}}

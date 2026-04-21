@@ -31,8 +31,9 @@ books:
   - Deuteronomy
   - Acts
   - Isaiah
-  - Genesis
   - Mark
+  - Genesis
+  - John
 segments:
   - Taking Issue
   - What is That?

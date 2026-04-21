@@ -45,11 +45,12 @@ books:
   - Deuteronomy
   - Matthew
   - Mark
+  - 2 Kings
   - Psalms
   - Luke
   - Romans
   - Galatians
-  - 2 Kings
+  - John
 segments:
   - What is That?
   - Chapter and Verse
@@ -248,7 +249,7 @@ draft: false
 {{< line >}}[00:53:20.046] Dan Beecher: So it is an odd little attempt to try to qualify the genocidal instructions that are going on here. But I think it demonstrates just the complexity of what's going on in {{< scripture ref="Deuteronomy" display="the book of Deuteronomy" >}}. This is something that was handed down for centuries with people adding to it from time to time. And I think we probably have three very different segments where you initially have, okay, here are the rules, and then somebody else coming in, no, just the rules for those people over there, these people, we got to kill them all. And then somebody coming in later and be like, hey, we can be humane about this. We can be civilized about this. Just don't cut down the fruit trees.{{< /line >}}
 {{< line >}}[00:54:03.140] Dan McClellan: Okay, be cool with the trees, man.{{< /line >}}
 {{< line >}}[00:54:05.127] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:54:05.608] Dan McClellan: So I mean, I do remember, I do remember, uh, is it in Kings, 2 Kings, I think, when we talked about the campaign against the Moabites?{{< /line >}}
+{{< line >}}[00:54:05.608] Dan McClellan: So I mean, I do remember, I do remember, uh, is it in Kings, {{< scripture ref="2 Kings" >}}, I think, when we talked about the campaign against the Moabites?{{< /line >}}
 {{< line >}}[00:54:14.887] Dan Beecher: Yeah, yeah, they—and it says cut down every good tree.{{< /line >}}
 {{< line >}}[00:54:17.484] Dan McClellan: They cut down all of the trees when they're doing it. Yeah. So it's not like the Israelites never did that, or—{{< /line >}}
 {{< line >}}[00:54:23.638] Dan Beecher: Right. And one of the arguments that scholars have made is, hey, maybe this is looking at {{< scripture ref="2 Kings 3" >}}, ultimately that campaign failed. And we know that it's because Chemosh rode the lightning into town and chased the invading force off. But maybe they were like, well, maybe it was because they cut down the trees.{{< /line >}}

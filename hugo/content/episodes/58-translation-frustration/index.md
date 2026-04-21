@@ -50,6 +50,7 @@ books:
   - Deuteronomy
   - Matthew
   - Isaiah
+  - Daniel
 episodeTopic: Bible Translation
 draft: false
 ---

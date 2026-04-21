@@ -34,9 +34,12 @@ tags:
   - Noah
   - Ugarit
 books:
+  - Song of Solomon
   - Genesis
   - Psalms
   - 2 Kings
+  - Exodus
+  - Daniel
 segments:
   - What is That?
   - Taking Issue
@@ -56,7 +59,7 @@ segmentData:
 draft: false
 ---
 
-{{< line >}}[00:00:01.556] Dan McClellan: You know, you go to the Song of Songs and it's like, why is this erotic poetry in Scripture? And it's like, oh, this is Jesus and the church. You know, Jesus is just like, I love your breasts, church. They look like some deer. Hey, everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:01.556] Dan McClellan: You know, you go to the {{< scripture ref="Song of Solomon" display="Song of Songs" >}} and it's like, why is this erotic poetry in Scripture? And it's like, oh, this is Jesus and the church. You know, Jesus is just like, I love your breasts, church. They look like some deer. Hey, everybody, I'm Dan McClellan.{{< /line >}}
 {{< line >}}[00:00:22.660] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
 {{< line >}}[00:00:23.944] Dan McClellan: And this is Data Over Dogma, where we increase public access to the academic study of the Bible and religion. And we combat the spread of misinformation about the same. How are things today, Dan?{{< /line >}}
 {{< line >}}[00:00:35.189] Dan Beecher: Things are good. We actually got snow in the Salt Lake Valley for the first time.{{< /line >}}
@@ -89,16 +92,16 @@ draft: false
 {{< line >}}[00:07:52.010] Dan McClellan: And the idea there being that what the author is trying to communicate, or at least what God is trying to communicate through this, is something more moral, is something more spiritual. Yeah. And so that is the sense that we should be looking out for, and we shouldn't worry about not not just the parts that are immoral, but we shouldn't be taking literally the notion that there was evening and morning, day and night, before the creation of the sun. So like Origen was like, yeah, the, the whole 6 days of creation, those aren't literal 24-hour periods. We're not— we don't need to think of it like that. Um, and, and he also acknowledged, hey, you know, sometimes the gospels didn't agree with each other on certain things, and you need to just relax, right? Just chill, don't worry about it. Yeah, enhance your calm. Uh, see if anybody gets that one. Um, and, and Augustine was kind of the same.{{< /line >}}
 {{< line >}}[00:08:54.694] Dan McClellan: He, he took a, a more of a hardline stance on some things, like creation. He insisted was, was a little more historical, that's how creation happened. You know, he, um, he wasn't, you know, I can imagine Origen being kind of like, "Yeah, man, take it easy.{{< /line >}}
 {{< line >}}[00:09:12.655] Dan Beecher: You don't gotta—{{< /line >}}
-{{< line >}}[00:09:13.153] Dan McClellan: It's not like that. It's all good, man." Augustine was more like, "It'd be like that." But he did warn people about, you know, asserting things that were just scientifically dumb. He was more educated, philosophically— well, they were both very, very philosophically erudite and educated, but Augustine wore that philosophical erudition closer to the surface and was so like, don't assert the literalism of things that are just going to make us look stupid, that we know just aren't true. And so there was a brand of literalism, if you want to call it that, only to the degree that they understood there was truth in the scriptures, but it might not be resting on the surface. Might be a little under the surface. We might have to dig down a little bit, look for a moral sense, an anagogical sense, something like that. And so, you know, the Song of Songs, you don't want to take that too literally.{{< /line >}}
+{{< line >}}[00:09:13.153] Dan McClellan: It's not like that. It's all good, man." Augustine was more like, "It'd be like that." But he did warn people about, you know, asserting things that were just scientifically dumb. He was more educated, philosophically— well, they were both very, very philosophically erudite and educated, but Augustine wore that philosophical erudition closer to the surface and was so like, don't assert the literalism of things that are just going to make us look stupid, that we know just aren't true. And so there was a brand of literalism, if you want to call it that, only to the degree that they understood there was truth in the scriptures, but it might not be resting on the surface. Might be a little under the surface. We might have to dig down a little bit, look for a moral sense, an anagogical sense, something like that. And so, you know, the {{< scripture ref="Song of Solomon" display="Song of Songs" >}}, you don't want to take that too literally.{{< /line >}}
 {{< line >}}[00:10:13.679] Dan McClellan: It's erotic poetry. And so, you know, folks like Origen, who some people think Origen castrated himself in order to facilitate a more easy celibate life, and so he was not going to be the kind of—{{< /line >}}
 {{< line >}}[00:10:28.596] Dan Beecher: That's one way to do it.{{< /line >}}
 {{< line >}}[00:10:29.766] Dan McClellan: It is one way to do it.{{< /line >}}
 {{< line >}}[00:10:30.840] Dan Beecher: It'll be effective.{{< /line >}}
 {{< line >}}[00:10:32.108] Dan McClellan: It's probably the more expensive way to do it, depending on what quality of guy he went to. Right. I don't know what they called them in that time period, but—{{< /line >}}
 {{< line >}}[00:10:43.721] Dan Beecher: I got a guy.{{< /line >}}
-{{< line >}}[00:10:44.860] Dan McClellan: But you go to the Song of Songs and it's like, why is this erotic poetry in Scripture? And it's like, "Oh, this is Jesus and the church." Jesus is just like, "I love your breasts, Church. They look like some deer." So we are not—.{{< /line >}}
-{{< line >}}[00:11:03.880] Dan Beecher: Have we done the Song of Songs? We need to do that.{{< /line >}}
-{{< line >}}[00:11:06.428] Dan McClellan: We need to do the Song of Songs. Yeah, there's—.{{< /line >}}
+{{< line >}}[00:10:44.860] Dan McClellan: But you go to the {{< scripture ref="Song of Solomon" display="Song of Songs" >}} and it's like, why is this erotic poetry in Scripture? And it's like, "Oh, this is Jesus and the church." Jesus is just like, "I love your breasts, Church. They look like some deer." So we are not—.{{< /line >}}
+{{< line >}}[00:11:03.880] Dan Beecher: Have we done the {{< scripture ref="Song of Solomon" display="Song of Songs" >}}? We need to do that.{{< /line >}}
+{{< line >}}[00:11:06.428] Dan McClellan: We need to do the {{< scripture ref="Song of Solomon" display="Song of Songs" >}}. Yeah, there's—.{{< /line >}}
 {{< line >}}[00:11:08.593] Dan Beecher: I hope someone's—I hope someone's listening right now who can write that down for us. That would be great.{{< /line >}}
 {{< line >}}[00:11:15.085] Dan McClellan: So the last thing they were going to do is champion the plain sense of this erotic poetry, right? And what was most important was the Christological sense. This was how you find Christ in the Scriptures. And I'm sure you recall from growing up among the Mormons as one of them for a time, the whole "everything is about Christ." And, you know, that's kind of—that's the Where's Waldo project of Latter-day Saint engagement with Scripture is find Christ in the Scriptures. And it's like, "Oh, there's the—it talks about a rock over here. Oh, the rock is Christ. You found Christ in the Scriptures. Congratulations." And so if there were problematic parts of it, you just had to find a way to read Christ into it, and you were like, "See, the Christological sense overrules any other sense. I have won the day. Huzzah!" And this gives way in the medieval period to your literal, your allegorical, your moral, and your anagogical.{{< /line >}}
 {{< line >}}[00:12:19.593] Dan McClellan: And the, you know, whatever is salvific, whatever is about salvation, whatever is about Christ, that's the most important.{{< /line >}}

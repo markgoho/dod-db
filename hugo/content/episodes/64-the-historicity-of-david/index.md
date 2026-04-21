@@ -41,6 +41,7 @@ tags:
   - Sea of Galilee
 books:
   - Judges
+  - 1 Timothy
   - 1 Corinthians
 segments:
   - Chapter and Verse
@@ -146,7 +147,7 @@ draft: false
 {{< line >}}[00:13:56.260] Dan Beecher: But I mean, either no matter what it is, I. I find it remarkable that it is that. That it's treated as unremarkable.{{< /line >}}
 {{< line >}}[00:14:07.220] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:14:07.620] Dan Beecher: That the fact, you know, that the fact that this. This woman was given all of this power and authority and that people. There's no. No ink spilled to question her authority or her power or. Or her ability as a prophet or anything like that. It is just. It's as. As assumed to be true as any of the men.{{< /line >}}
-{{< line >}}[00:14:29.300] Dan McClellan: Yeah. And we don't really get much questioning until we get to the pseudo-Paul in First Timothy and—and our interpolation in {{< scripture ref="1 Corinthians 14" >}}. That's when the—the claws come out. But so they—they're gonna go hang out around Mount Tabor and they're gonna try to draw Sisera and the enemy out to meet them there. And we've got this weird—this weird thing where Deborah summons Barak and he shows up and—and she tells him what the plan's gonna be.{{< /line >}}
+{{< line >}}[00:14:29.300] Dan McClellan: Yeah. And we don't really get much questioning until we get to the pseudo-Paul in {{< scripture ref="1 Timothy" >}} and—and our interpolation in {{< scripture ref="1 Corinthians 14" >}}. That's when the—the claws come out. But so they—they're gonna go hang out around Mount Tabor and they're gonna try to draw Sisera and the enemy out to meet them there. And we've got this weird—this weird thing where Deborah summons Barak and he shows up and—and she tells him what the plan's gonna be.{{< /line >}}
 {{< line >}}[00:15:04.430] Dan Beecher: And Barak is just a leader of—he's just an army general of some sort or something.{{< /line >}}
 {{< line >}}[00:15:10.070] Dan McClellan: Yeah. And—and he says in verse eight, "If you will go with me, I will go, but if you will not go with me, I will not go."{{< /line >}}
 {{< line >}}[00:15:16.430] Dan Beecher: Yeah.{{< /line >}}

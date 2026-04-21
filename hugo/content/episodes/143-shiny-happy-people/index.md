@@ -38,16 +38,18 @@ tags:
   - Textus Receptus
 books:
   - Mark
+  - John
   - Psalms
-  - Exodus
   - Judges
+  - Exodus
   - Matthew
   - Luke
   - Daniel
   - Ezekiel
+  - Revelation
+  - Malachi
   - Deuteronomy
   - 2 Kings
-  - John
 segments:
   - What is That?
   - Chapter and Verse

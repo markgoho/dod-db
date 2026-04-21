@@ -31,8 +31,9 @@ tags:
   - Solomon
   - Syria
 books:
-  - Exodus
   - Luke
+  - Matthew
+  - Exodus
   - Deuteronomy
   - Leviticus
   - Hosea

@@ -44,11 +44,12 @@ tags:
   - Romans
   - Ugarit
 books:
-  - Isaiah
   - Revelation
   - Daniel
-  - Psalms
+  - Isaiah
   - John
+  - Acts
+  - Psalms
 segments:
   - Chapter and Verse
 segmentData:

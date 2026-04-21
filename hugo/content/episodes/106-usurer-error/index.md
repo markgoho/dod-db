@@ -28,9 +28,9 @@ tags:
   - Martin Luther
   - The Reformation
 books:
-  - Ezekiel
   - Luke
   - Matthew
+  - Ezekiel
   - Exodus
   - Leviticus
   - Deuteronomy

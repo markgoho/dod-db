@@ -42,9 +42,10 @@ tags:
 books:
   - Exodus
   - Genesis
-  - Psalms
   - Job
+  - Psalms
   - Deuteronomy
+  - Revelation
   - John
 segments:
   - What is That?

@@ -55,12 +55,14 @@ tags:
   - Michael
   - Philistines
 books:
-  - Psalms
   - Deuteronomy
+  - Psalms
   - 2 Kings
   - 1 Kings
   - Isaiah
+  - Judges
   - Jeremiah
+  - Daniel
 segments:
   - Chapter and Verse
   - What Does That Mean?

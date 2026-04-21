@@ -44,7 +44,11 @@ tags:
 books:
   - Acts
   - Galatians
+  - Jonah
+  - Luke
   - Amos
+  - Matthew
+  - Revelation
   - Isaiah
 segments:
   - Chapter and Verse
@@ -103,7 +107,7 @@ draft: false
 {{< line >}}[00:04:02.920] Dan Beecher: This Chapter and Verse, we... We're going to Acts. You had suggested to me that we could do the Council at Jerusalem. And I said to you, "What's...?" I don't know what that is. And you said, oh, you probably rolled your eyes. We were texting. So I, I didn't get to hear the exasperation in your voice, but you very kindly pointed me in the direction of {{< scripture ref="Acts 15" >}}.{{< /line >}}
 {{< line >}}[00:04:30.650] Dan McClellan: Yes, {{< scripture ref="Acts 15" >}}, the... The dead center of {{< scripture ref="Acts" display="the Book of Acts" >}} and yeah, the Ides of the...{{< /line >}}
 {{< line >}}[00:04:37.250] Dan Beecher: {{< scripture ref="Acts" display="Book of Acts" >}}, if you will.{{< /line >}}
-{{< line >}}[00:04:39.920] Dan McClellan: And Peter's got to beware the Ides of {{< scripture ref="Acts" display="the Book of Acts" >}} because he's mentioned in {{< scripture ref="Acts 15" >}}. And then he drops out of the Acts of the Apostles entirely. Peter is not mentioned again after the Jerusalem Council. Paul then takes over as the main character. Paul's main character syndrome is fed by the Jerusalem Council and then he takes over. And then additionally the... The apostles and the elders at Jerusalem who are mentioned a handful of times, and particularly in {{< scripture ref="Acts 15" >}}, they're mentioned once again in like, {{< scripture ref="Acts 16:4" >}}. And then they too disappear from the narrative, just as we... We shift from a Jerusalem-focused ministry to the broader Gentile-focused ministry in Acts. So a lot of scholars would suggest this is intentional craftsmanship on the part of the author of Acts, who is traditionally labeled Luke.{{< /line >}}
+{{< line >}}[00:04:39.920] Dan McClellan: And Peter's got to beware the Ides of {{< scripture ref="Acts" display="the Book of Acts" >}} because he's mentioned in {{< scripture ref="Acts 15" >}}. And then he drops out of the {{< scripture ref="Acts" display="Acts of the Apostles" >}} entirely. Peter is not mentioned again after the Jerusalem Council. Paul then takes over as the main character. Paul's main character syndrome is fed by the Jerusalem Council and then he takes over. And then additionally the... The apostles and the elders at Jerusalem who are mentioned a handful of times, and particularly in {{< scripture ref="Acts 15" >}}, they're mentioned once again in like, {{< scripture ref="Acts 16:4" >}}. And then they too disappear from the narrative, just as we... We shift from a Jerusalem-focused ministry to the broader Gentile-focused ministry in Acts. So a lot of scholars would suggest this is intentional craftsmanship on the part of the author of Acts, who is traditionally labeled Luke.{{< /line >}}
 {{< line >}}[00:05:40.210] Dan McClellan: But I'm not a fan of that theory, so I will just continue to refer to the author of Acts that they were... They wanted to set this up as, as kind of two acts.{{< /line >}}
 {{< line >}}[00:05:50.050] Dan Beecher: Get it? Act one and act two.{{< /line >}}
 {{< line >}}[00:05:54.210] Dan McClellan: Ta-da. And... Yeah.{{< /line >}}

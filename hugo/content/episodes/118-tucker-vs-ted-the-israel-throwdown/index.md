@@ -37,6 +37,7 @@ books:
   - Genesis
   - Psalms
   - Ezekiel
+  - Revelation
   - Joshua
 segments:
   - Taking Issue

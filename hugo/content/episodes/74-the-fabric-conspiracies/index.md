@@ -26,8 +26,8 @@ books:
   - Deuteronomy
   - Ezekiel
   - Genesis
-  - Leviticus
   - Judges
+  - Leviticus
 segments:
   - Conspiracy Watch
   - Bible vs Bible

@@ -8,13 +8,13 @@ import { scriptureBooks } from "./scripture-books.js";
 
 describe("scripture-books", () => {
   describe("canonical book count", () => {
-    test("contains exactly 67 books", () => {
-      expect(scriptureBooks.length).toBe(67);
+    test("contains exactly 82 books", () => {
+      expect(scriptureBooks.length).toBe(82);
     });
 
-    test("contains 40 Old Testament books", () => {
+    test("contains 55 Old Testament books", () => {
       const otBooks = getOldTestamentBooks();
-      expect(otBooks.length).toBe(40);
+      expect(otBooks.length).toBe(55);
     });
 
     test("contains 27 New Testament books", () => {
@@ -91,6 +91,21 @@ describe("scripture-books", () => {
       expect(getBookByAnyName("Greek Ezra")?.canonical).toBe("1 Esdras");
     });
 
+    test("finds new apocryphal books by canonical names, abbreviations, and variants", () => {
+      expect(getBookByAnyName("Tob")?.canonical).toBe("Tobit");
+      expect(getBookByAnyName("Book of Wisdom")?.canonical).toBe(
+        "Wisdom of Solomon",
+      );
+      expect(getBookByAnyName("Ecclesiasticus")?.canonical).toBe("Sirach");
+      expect(getBookByAnyName("Book of Baruch")?.canonical).toBe("Baruch");
+      expect(getBookByAnyName("Epistle of Jeremiah")?.canonical).toBe(
+        "Letter of Jeremiah",
+      );
+      expect(getBookByAnyName("Pr Man")?.canonical).toBe("Prayer of Manasseh");
+      expect(getBookByAnyName("4 Ezra")?.canonical).toBe("2 Esdras");
+      expect(getBookByAnyName("III Maccabees")?.canonical).toBe("3 Maccabees");
+    });
+
     test("is case-insensitive", () => {
       const book = getBookByAnyName("gen");
       expect(book?.canonical).toBe("Genesis");
@@ -134,9 +149,33 @@ describe("scripture-books", () => {
       expect("llmVerify" in book! && book.llmVerify).toBe(true);
     });
 
+    test("marks Judith as requiring LLM verification", () => {
+      const book = getBookByCanonical("Judith");
+      expect(book).toBeDefined();
+      expect("llmVerify" in book! && book.llmVerify).toBe(true);
+    });
+
+    test("marks Sirach as requiring LLM verification", () => {
+      const book = getBookByCanonical("Sirach");
+      expect(book).toBeDefined();
+      expect("llmVerify" in book! && book.llmVerify).toBe(true);
+    });
+
+    test("marks Baruch as requiring LLM verification", () => {
+      const book = getBookByCanonical("Baruch");
+      expect(book).toBeDefined();
+      expect("llmVerify" in book! && book.llmVerify).toBe(true);
+    });
+
+    test("marks Susanna as requiring LLM verification", () => {
+      const book = getBookByCanonical("Susanna");
+      expect(book).toBeDefined();
+      expect("llmVerify" in book! && book.llmVerify).toBe(true);
+    });
+
     test("getAmbiguousBooks returns all books with llmVerify", () => {
       const ambiguousBooks = getAmbiguousBooks();
-      expect(ambiguousBooks.length).toBeGreaterThanOrEqual(6);
+      expect(ambiguousBooks.length).toBeGreaterThanOrEqual(10);
 
       const canonicalNames = ambiguousBooks.map(book => book.canonical);
       expect(canonicalNames).toContain("Job");
@@ -145,6 +184,10 @@ describe("scripture-books", () => {
       expect(canonicalNames).toContain("Ruth");
       expect(canonicalNames).toContain("James");
       expect(canonicalNames).toContain("Judges");
+      expect(canonicalNames).toContain("Judith");
+      expect(canonicalNames).toContain("Sirach");
+      expect(canonicalNames).toContain("Baruch");
+      expect(canonicalNames).toContain("Susanna");
     });
 
     test("all ambiguous books have descriptions", () => {

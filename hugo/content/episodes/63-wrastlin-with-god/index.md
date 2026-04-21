@@ -30,9 +30,9 @@ tags:
   - Tamar
   - Ugarit
 books:
-  - Judges
   - Hosea
   - Genesis
+  - Judges
   - Exodus
   - Ezekiel
   - Numbers

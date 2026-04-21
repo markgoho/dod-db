@@ -32,13 +32,15 @@ tags:
   - Clement of Rome
   - John
 books:
-  - Ezekiel
-  - Isaiah
   - Song of Solomon
-  - Deuteronomy
-  - 1 Kings
-  - Ephesians
   - Matthew
+  - Ezekiel
+  - 1 Kings
+  - John
+  - Revelation
+  - Isaiah
+  - Deuteronomy
+  - Ephesians
   - Colossians
 segments:
   - What is That?
@@ -211,7 +213,7 @@ draft: false
 {{< line >}}[00:34:00.160] Dan McClellan: All right. I... not that kind of talking dirty. No.{{< /line >}}
 {{< line >}}[00:34:03.840] Dan Beecher: Well, but why not?{{< /line >}}
 {{< line >}}[00:34:04.800] Dan McClellan: Well, well, I was gonna say we can do that. We can do that.{{< /line >}}
-{{< line >}}[00:34:08.260] Dan Beecher: There's a little bit of that. There's, there's, you know, I've, I've seen Song of Solomon. You can't trick me. There's plenty of talking dirty.{{< /line >}}
+{{< line >}}[00:34:08.260] Dan Beecher: There's a little bit of that. There's, there's, you know, I've, I've seen {{< scripture ref="Song of Solomon" >}}. You can't trick me. There's plenty of talking dirty.{{< /line >}}
 {{< line >}}[00:34:14.860] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:34:15.580] Dan Beecher: So what are we talking about here? We're talking about profanity.{{< /line >}}
 {{< line >}}[00:34:19.340] Dan McClellan: Yeah. I, I get asked frequently, is there any swearing or profanity in the Bible?{{< /line >}}
@@ -237,7 +239,7 @@ draft: false
 {{< line >}}[00:38:43.860] Dan McClellan: Yeah, well, you and, and something that my doctoral supervisor and very good friend Francesca Stavrakopoulou wrote about in her book God: An Anatomy is that the, the same might be said of God. Isaiah... the word in {{< scripture ref="Isaiah 6" >}}, so this is, this is Isaiah's calling, his prophetic call. He's, he has a vision, he's in the temple and it says God's train filled the temple. But the word for train there is... I believe the word is shul, but it is used fundamentally it means hang-downers and it is used... it can be used to refer to either the butt or the genitals.{{< /line >}}
 {{< line >}}[00:39:34.460] Dan Beecher: Sure.{{< /line >}}
 {{< line >}}[00:39:34.860] Dan McClellan: And so there's a way to approach this text as saying, "and God's hanging dong is filling the temple." And the, the seraphim who are sitting there, they're covering... they have six wings and they're covering their eyes and they're covering themselves. And it says they're covering their feet. And feet can be a euphemism for genitals. And so it might be embarrassing the seraphim, where they're like, "oh, geez." So, yeah, you have that. So, so God, the God of Israel might also be talked about in, in the same ways.{{< /line >}}
-{{< line >}}[00:40:14.140] Dan Beecher: Yeah. And. And this is not the only case where euphemistically large genitals are referred to. I know. In Song of Solomon. I think it's {{< scripture ref="Song of Solomon 5" >}}. There is a thing about that is. I read this. You can correct me on this. I think it's 5:4. Yeah, I've got it here. It's 5:14. That is. That is translated as his body is polished ivory or something along those lines. But this says that. That it is comparing the. The body to an elephant tusk.{{< /line >}}
+{{< line >}}[00:40:14.140] Dan Beecher: Yeah. And. And this is not the only case where euphemistically large genitals are referred to. I know. In {{< scripture ref="Song of Solomon" >}}. I think it's {{< scripture ref="Song of Solomon 5" >}}. There is a thing about that is. I read this. You can correct me on this. I think it's 5:4. Yeah, I've got it here. It's 5:14. That is. That is translated as his body is polished ivory or something along those lines. But this says that. That it is comparing the. The body to an elephant tusk.{{< /line >}}
 {{< line >}}[00:40:55.000] Dan McClellan: He's tusky.{{< /line >}}
 {{< line >}}[00:40:56.280] Dan Beecher: He's got. He's got a tusk. He's swinging tusk.{{< /line >}}
 {{< line >}}[00:41:02.140] Dan McClellan: And. And the description of behemoth in Job, by the way, a lot of people think it's talking about as a tail like a tree branch or something like that. That's probably a euphemism as well. A lot of scholars suggest that. That, that is talking about something else being like a. The trunk of a tree.{{< /line >}}
@@ -260,7 +262,7 @@ draft: false
 {{< line >}}[00:45:46.280] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:45:46.680] Dan McClellan: And one of the—one of the ones that I really like that always I laughed at the first time I read this. This was in the—in the time period between getting baptized as a Mormon and leaving on my mission. I read the entire Bible word cover to cover.{{< /line >}}
 {{< line >}}[00:46:02.120] Dan Beecher: Right.{{< /line >}}
-{{< line >}}[00:46:02.320] Dan McClellan: And I got to this part in First Kings, and there are a few examples of it, but it's {{< scripture ref="1 Kings 14" >}}, I think, is the first example where somebody is threatening and it says, therefore. And this is the NRSVue, therefore I will bring evil upon the house of Jeroboam. I will cut off from Jeroboam every male, both bond and free in Israel. However, it does not say male. It doesn't say zakar in the text. It says mashtin baqir, which means urinator against the wall, which—which in the King James Version, which was what I was reading this first time, it says, and will cut off from Jeroboam him that pisseth against the wall. So I—I think it's hilarious that the King James Version preserves this. Like, it's supposed to be kind of a euphemism, but kind of not, because piss was—was kind of in that gray area when I was growing up and a young adult.{{< /line >}}
+{{< line >}}[00:46:02.320] Dan McClellan: And I got to this part in {{< scripture ref="1 Kings" >}}, and there are a few examples of it, but it's {{< scripture ref="1 Kings 14" >}}, I think, is the first example where somebody is threatening and it says, therefore. And this is the NRSVue, therefore I will bring evil upon the house of Jeroboam. I will cut off from Jeroboam every male, both bond and free in Israel. However, it does not say male. It doesn't say zakar in the text. It says mashtin baqir, which means urinator against the wall, which—which in the King James Version, which was what I was reading this first time, it says, and will cut off from Jeroboam him that pisseth against the wall. So I—I think it's hilarious that the King James Version preserves this. Like, it's supposed to be kind of a euphemism, but kind of not, because piss was—was kind of in that gray area when I was growing up and a young adult.{{< /line >}}
 {{< line >}}[00:47:07.750] Dan McClellan: Yeah. In fact, I—I can still recall my science teacher yelling at a student because the student, like, was—had an assignment to write some kind of poem about some biological process or something. And he ended it by saying, you should do that or you'll be pissed. And the science teacher just went off on him about using the word pissed. And I was like, relax, man.{{< /line >}}
 {{< line >}}[00:47:30.120] Dan Beecher: Yeah, this.{{< /line >}}
 {{< line >}}[00:47:30.760] Dan McClellan: Just use the word.{{< /line >}}

@@ -34,6 +34,7 @@ tags:
   - Tertullian
 books:
   - Mark
+  - Acts
   - Luke
   - 1 Corinthians
   - Matthew
@@ -76,13 +77,13 @@ draft: false
 {{< line >}}[00:02:33.525] Dan Beecher: But I had never heard of an Acts that got the axe.{{< /line >}}
 {{< line >}}[00:02:37.853] Dan McClellan: Yep, also cut.{{< /line >}}
 {{< line >}}[00:02:41.716] Dan Beecher: So talk to me about, before we dive into sort of what's in it, talk to me about the history and the the, what we know of the Acts of Paul and Thecla.{{< /line >}}
-{{< line >}}[00:02:52.946] Dan McClellan: So it's a text that probably comes from somewhere in the 2nd century CE. There's a dude named Tertullian, we've talked about him before on the show, around by the time of about 200 CE, he's talking about this text as a well-meaning but spurious document. And it's part of kind of the broader Acts of Paul. There would've been a lot of stories and texts circulating about the further exploits of Paul beyond what we have in the Pauline epistles, in the Acts of the Apostles. And some people think maybe this is early 2nd century, mid-2nd century, late 2nd century. We don't really have a way of knowing. Some people think that some of these stories circulated independently about Thecla prior to being worked into the manuscript as we have it now.{{< /line >}}
+{{< line >}}[00:02:52.946] Dan McClellan: So it's a text that probably comes from somewhere in the 2nd century CE. There's a dude named Tertullian, we've talked about him before on the show, around by the time of about 200 CE, he's talking about this text as a well-meaning but spurious document. And it's part of kind of the broader Acts of Paul. There would've been a lot of stories and texts circulating about the further exploits of Paul beyond what we have in the Pauline epistles, in the {{< scripture ref="Acts" display="Acts of the Apostles" >}}. And some people think maybe this is early 2nd century, mid-2nd century, late 2nd century. We don't really have a way of knowing. Some people think that some of these stories circulated independently about Thecla prior to being worked into the manuscript as we have it now.{{< /line >}}
 {{< line >}}[00:03:44.226] Dan Beecher: Okay.{{< /line >}}
 {{< line >}}[00:03:44.916] Dan McClellan: But this is—.{{< /line >}}
 {{< line >}}[00:03:46.779] Dan Beecher: Oh, so one of the theories is that maybe Thecla was already sort of out in the world and someone just stapled it onto Paul to give it a little more oomph.{{< /line >}}
 {{< line >}}[00:03:58.266] Dan McClellan: Something like that. Thecla was probably associated with Paul early on in the life cycle of these traditions, but there might have been just kind of stray stories about Thecla and Paul. But as we go through, Paul kind of is mostly on the sidelines of the narrative, but there are large chunks where Paul's not in the narrative at all. And so these stories could very well have circulated prior to the involvement of Paul. So yeah, who's to say which of those situations is most accurate? Maybe they're accurate in different ways to different parts of the narrative.{{< /line >}}
 {{< line >}}[00:04:37.101] Dan Beecher: And as we know, like, I don't know, was the author of this trying to attribute it to Paul? Or I guess not, because it doesn't. But all of— I don't know how attribution ends up working, because half the time when a work is attributed to that person, it means that that person is talking about themselves in the third person. And it's so weird, and it doesn't make any sense.{{< /line >}}
-{{< line >}}[00:05:07.717] Dan McClellan: Well, the Acts usually are not. They're usually third-person narratives. The Acts of the Apostles is supposed to have been written by Luke, is the name that we've assigned to it, but it's about Paul and Peter and the others. And so, you know, Paul's not around for a lot of what's going on here. So it doesn't seem to be a first-person narrative.{{< /line >}}
+{{< line >}}[00:05:07.717] Dan McClellan: Well, the Acts usually are not. They're usually third-person narratives. The {{< scripture ref="Acts" display="Acts of the Apostles" >}} is supposed to have been written by Luke, is the name that we've assigned to it, but it's about Paul and Peter and the others. And so, you know, Paul's not around for a lot of what's going on here. So it doesn't seem to be a first-person narrative.{{< /line >}}
 {{< line >}}[00:05:43.127] Dan Beecher: I guess I've never asked—.{{< /line >}}
 {{< line >}}[00:05:43.978] Dan McClellan: Spreading the gospel.{{< /line >}}
 {{< line >}}[00:05:45.037] Dan Beecher: When it says the Acts, That just means like the doings, the things that they did.{{< /line >}}

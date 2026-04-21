@@ -35,11 +35,16 @@ tags:
   - Philistines
 books:
   - Genesis
+  - 2 Chronicles
   - Exodus
   - Numbers
+  - 2 Samuel
   - Ezekiel
   - Deuteronomy
   - Leviticus
+  - Joshua
+  - 1 Samuel
+  - Ruth
   - Mark
   - Acts
 guests:
@@ -57,12 +62,12 @@ draft: false
 {{< line >}}[00:01:27.560] Aaron Higashi: Right? Yeah, but.{{< /line >}}
 {{< line >}}[00:01:28.680] Dan Beecher: And—and the least amount of pants of all of the meetings.{{< /line >}}
 {{< line >}}[00:01:31.880] Aaron Higashi: That's true. Especially in Phoenix where it's 110 degrees.{{< /line >}}
-{{< line >}}[00:01:35.850] Dan Beecher: Good. Is it—it is hot here. But I can't imagine what it's like in Phoenix. I'm very glad not to be there, though. I—I would—I would love to hang out with you. But you are also the—the author—we had you on before, but to talk about your book, First and Second Samuel for Normal People.{{< /line >}}
+{{< line >}}[00:01:35.850] Dan Beecher: Good. Is it—it is hot here. But I can't imagine what it's like in Phoenix. I'm very glad not to be there, though. I—I would—I would love to hang out with you. But you are also the—the author—we had you on before, but to talk about your book, First and {{< scripture ref="2 Samuel" >}} for Normal People.{{< /line >}}
 {{< line >}}[00:01:58.330] Aaron Higashi: That's right.{{< /line >}}
-{{< line >}}[00:01:59.610] Dan Beecher: Which you did for The Bible for Normal People. And you've got another—another volume for them coming out about First and Second Chronicles.{{< /line >}}
-{{< line >}}[00:02:08.260] Aaron Higashi: That's right. Hopefully by the end of the summer. First and Second Chronicles for Normal People.{{< /line >}}
+{{< line >}}[00:01:59.610] Dan Beecher: Which you did for The Bible for Normal People. And you've got another—another volume for them coming out about First and {{< scripture ref="2 Chronicles" >}}.{{< /line >}}
+{{< line >}}[00:02:08.260] Aaron Higashi: That's right. Hopefully by the end of the summer. First and {{< scripture ref="2 Chronicles" >}} for Normal People.{{< /line >}}
 {{< line >}}[00:02:12.660] Dan Beecher: That's exciting.{{< /line >}}
-{{< line >}}[00:02:13.700] Aaron Higashi: First and Second Chronicles. Some of the most boring books in the Bible, but I try to make them fun and interesting and maybe even relevant to your life somehow through the magic of scholarly interpretation.{{< /line >}}
+{{< line >}}[00:02:13.700] Aaron Higashi: First and {{< scripture ref="2 Chronicles" >}}. Some of the most boring books in the Bible, but I try to make them fun and interesting and maybe even relevant to your life somehow through the magic of scholarly interpretation.{{< /line >}}
 {{< line >}}[00:02:25.540] Dan Beecher: Amazing. Amazing. No, no, no. I don't know if you know this. No interpretation is required with the Bible. Oh man. I've heard it said—I've heard it said many times that it just says what it says. And you don't interpret it.{{< /line >}}
 {{< line >}}[00:02:39.040] Aaron Higashi: That's the common wisdom of the YouTube comment section.{{< /line >}}
 {{< line >}}[00:02:41.680] Dan Beecher: Yes, exactly.{{< /line >}}
@@ -161,7 +166,7 @@ draft: false
 {{< line >}}[00:35:15.970] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:35:16.370] Aaron Higashi: And so there, there's, there's a lot more writing on this than just, you know, preferences of religious practice. There's a lot more writing on this, it would seem to them at least than just who you happen to marry.{{< /line >}}
 {{< line >}}[00:35:43.490] Dan Beecher: It gets violent. I mean, like, you know, even though, as you say, there's, there's lots of examples of the interethnic marriage. Like there's also prohibitions that, that involve like death or involve, you know, that, that have pretty, pretty horrific consequences. Theoretically. Yeah.{{< /line >}}
-{{< line >}}[00:36:07.010] Aaron Higashi: Yeah, theoretically. Yeah. So I mean, you see a lot of those in {{< scripture ref="Joshua" display="the book of Joshua" >}}, for example, in these conquest stories where you have, you know, the wholesale slaughter of populations like Jericho and Ai and it comes up later in First Samuel when the slaughter of the Amalekites, it comes up in Numbers with the slaughter of first the Moabites in, in, in {{< scripture ref="Numbers 25" >}} and, and then it sort of becomes the Midianites in {{< scripture ref="Numbers 31" >}}. So yeah, there are a lot of.{{< /line >}}
+{{< line >}}[00:36:07.010] Aaron Higashi: Yeah, theoretically. Yeah. So I mean, you see a lot of those in {{< scripture ref="Joshua" display="the book of Joshua" >}}, for example, in these conquest stories where you have, you know, the wholesale slaughter of populations like Jericho and Ai and it comes up later in {{< scripture ref="1 Samuel" >}} when the slaughter of the Amalekites, it comes up in Numbers with the slaughter of first the Moabites in, in, in {{< scripture ref="Numbers 25" >}} and, and then it sort of becomes the Midianites in {{< scripture ref="Numbers 31" >}}. So yeah, there are a lot of.{{< /line >}}
 {{< line >}}[00:36:34.010] Dan Beecher: These are, sorry, are all of these groups, the, the Moabites, the Midianites, blah, blah, blah. Are all of them considered Canaanites? Is that, is, is that an umbrella term?{{< /line >}}
 {{< line >}}[00:36:43.520] Aaron Higashi: Or they could be. Strictly speaking, the Moabites are a little bit southeast of Canaan. But I mean, a lot of the thinking about Canaanites still ends up applying to the Midianites regardless. So there's, again, the boundaries between here are very thin. I mean, there'll even be places, you know, in {{< scripture ref="Ruth" display="the book of Ruth" >}}, for example, where Moabites are incorporated into the line of David. So some of David's ancestors are Moabites. So is that, you know, we're crossing these boundaries all the time. But I think technically the Moabites and the Edomites and some of these other groups would, they're outside Canaan proper.{{< /line >}}
 {{< line >}}[00:37:30.260] Dan Beecher: Okay.{{< /line >}}

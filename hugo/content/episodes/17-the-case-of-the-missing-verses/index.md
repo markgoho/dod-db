@@ -34,6 +34,7 @@ books:
   - Mark
   - Matthew
   - John
+  - Revelation
   - Isaiah
   - Numbers
 segments:

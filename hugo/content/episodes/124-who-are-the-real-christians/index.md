@@ -43,9 +43,9 @@ tags:
 books:
   - Genesis
   - Romans
+  - Job
   - Psalms
   - Exodus
-  - Job
   - Isaiah
   - Deuteronomy
   - Numbers

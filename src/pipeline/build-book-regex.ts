@@ -25,6 +25,8 @@ export function buildBookWholeRegex(book: BookDefinition): RegExp {
     pattern =>
       String.raw`(?:[Tt]he\s+)?(?:[Bb]ook|[Gg]ospel)\s+of\s+${pattern}`,
   );
-  const pattern = String.raw`\b(?:${prefixedNamePatterns.join("|")})\b(?!\s+\d)`;
+  const standalonePatterns = namePatterns.filter(pattern => /\s/.test(pattern));
+  const allPatterns = [...prefixedNamePatterns, ...standalonePatterns];
+  const pattern = String.raw`\b(?:${allPatterns.join("|")})\b(?!\s+\d)`;
   return new RegExp(pattern, "gi");
 }

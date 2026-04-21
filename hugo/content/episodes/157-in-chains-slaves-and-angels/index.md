@@ -48,6 +48,9 @@ tags:
 books:
   - Genesis
   - 2 Peter
+  - Exodus
+  - Revelation
+  - Daniel
 segments:
   - "Who's That?"
   - Chapter and Verse
@@ -294,12 +297,12 @@ draft: false
 {{< line >}}[00:53:13.863] Dan Beecher: Okay. Yes, this is the origin story of animals. Everything starts with cows and moves on from there.{{< /line >}}
 {{< line >}}[00:53:22.519] Dan McClellan: And all the bulls feared them and were terrified before them, and they began to bite with their teeth and devour and gore with their horns, and they began to devour those bulls. And look, all the sons of the earth began to tremble and quake before them and to flee.{{< /line >}}
 {{< line >}}[00:54:30.997] Dan McClellan: No, it's not. This is the Animal Apocalypse. This is Enoch who sees the star fall to Earth. Um, so, so the—this story has a lot more influence on what's going on, the traditions of the New Testament, than a lot of people are willing to give it credit for. Uh, and so when we look in Revelation, when we look in Jude, when we look elsewhere, and we see these weird—this weird imagery and all this stuff going on with angels, and sex always has something to do with it.{{< /line >}}
-{{< line >}}[00:55:03.782] Dan Beecher: There's a quotation in 2 Peter about the angels in judgment, which is—.{{< /line >}}
+{{< line >}}[00:55:03.782] Dan Beecher: There's a quotation in {{< scripture ref="2 Peter" >}} about the angels in judgment, which is—.{{< /line >}}
 {{< line >}}[00:55:14.820] Dan McClellan: Oh, yeah. {{< scripture ref="2 Peter 2" >}}. Uh-huh.{{< /line >}}
 {{< line >}}[00:55:17.960] Dan Beecher: I've got it.{{< /line >}}
 {{< line >}}[00:55:18.921] Dan McClellan: Is it 18? No.{{< /line >}}
 {{< line >}}[00:55:20.523] Dan Beecher: Verse 4, where it says, for if God did not spare the angels when they sinned, but for God If God did not spare the angels when they sinned, but cast them into hell and committed them to chains of deepest darkness to be kept until judgment. Yeah, so like that, without this story in Enoch, that makes no sense. That's just like, wait, what? What are we talking about? Yeah. Who did what now?{{< /line >}}
-{{< line >}}[00:55:49.777] Dan McClellan: Yeah. And then Second Peter chapter 2 even brings up Sodom and Gomorrah again. Yeah, um, just like Jude does. Yeah, so yeah, there's, there's, uh, so much of the—and you know, if, if this idea of the punishment in these, in these valleys of the earth and everything like that, if, if that's really the origin of the concept of, of hell and Gehenna, like a lot of Revelation, Second Peter, Jude, Luke, the concept of hell, like all—a lot of this seems to descend from the traditions that are—that we find in the Book of First Enoch, which—and, you know, I think once you get to Paul, Paul kind of pivots back to the fall of Eden as kind of the origin of evil. But I think there's probably—there were probably competing traditions about where evil came from. Did angels teach evil?{{< /line >}}
+{{< line >}}[00:55:49.777] Dan McClellan: Yeah. And then {{< scripture ref="2 Peter" >}} chapter 2 even brings up Sodom and Gomorrah again. Yeah, um, just like Jude does. Yeah, so yeah, there's, there's, uh, so much of the—and you know, if, if this idea of the punishment in these, in these valleys of the earth and everything like that, if, if that's really the origin of the concept of, of hell and Gehenna, like a lot of Revelation, {{< scripture ref="2 Peter" >}}, Jude, Luke, the concept of hell, like all—a lot of this seems to descend from the traditions that are—that we find in the Book of First Enoch, which—and, you know, I think once you get to Paul, Paul kind of pivots back to the fall of Eden as kind of the origin of evil. But I think there's probably—there were probably competing traditions about where evil came from. Did angels teach evil?{{< /line >}}
 {{< line >}}[00:56:49.959] Dan McClellan: Or did a piece of fruit cause evil to happen? I know which tradition I would have gone with. Sexy angels, like, 10 times out of 10.{{< /line >}}
 {{< line >}}[00:57:01.419] Dan Beecher: I love it. I think it's so interesting to realize that so, like, big important ideas that shaped how a lot of the authors of the New Testament think are all from a book that is largely excluded from the biblical canon. I think that's fascinating. They're quoting it, they're talking about it, and yet it doesn't—and, you know, they're taking ideas from it, but didn't make the cut.{{< /line >}}
 {{< line >}}[00:57:39.574] Dan McClellan: Yeah. Well, except in Jude, because Jude directly quotes from it and calls—it says Enoch the seventh from Adam prophesied, and then quotes Enoch chapter 1, verse 9.{{< /line >}}

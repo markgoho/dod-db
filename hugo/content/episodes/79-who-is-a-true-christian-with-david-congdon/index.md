@@ -19,6 +19,8 @@ tags:
   - Protestantism
   - Eschatology
   - Peter
+books:
+  - Acts
 guests:
   - David Congdon
 episodeTopic: Christian Identity

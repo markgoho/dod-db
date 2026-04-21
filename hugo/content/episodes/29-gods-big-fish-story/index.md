@@ -37,6 +37,7 @@ books:
   - Genesis
   - 2 Kings
   - Isaiah
+  - Numbers
   - Titus
   - Hebrews
 segments:

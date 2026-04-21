@@ -31,8 +31,8 @@ tags:
   - Moab
 books:
   - Genesis
-  - Exodus
   - Judges
+  - Exodus
 segments:
   - Who Dat??
   - Taking Issue

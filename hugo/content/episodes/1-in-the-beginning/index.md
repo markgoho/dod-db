@@ -39,12 +39,12 @@ tags:
   - source criticism
   - Syria
 books:
-  - 2 Kings
-  - Deuteronomy
-  - Exodus
   - Genesis
+  - Exodus
   - Isaiah
   - Numbers
+  - 2 Kings
+  - Deuteronomy
   - Psalms
 segments:
   - Chapter and Verse

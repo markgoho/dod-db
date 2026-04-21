@@ -29,6 +29,7 @@ books:
   - Ezekiel
   - Genesis
   - Ecclesiastes
+  - Numbers
   - Exodus
 segments:
   - "History's Mysteries"

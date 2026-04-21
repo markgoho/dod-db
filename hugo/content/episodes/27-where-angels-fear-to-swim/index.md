@@ -35,7 +35,9 @@ tags:
   - Peter
   - Sodom
 books:
+  - Revelation
   - Genesis
+  - Jude
   - Psalms
   - Isaiah
 segments:

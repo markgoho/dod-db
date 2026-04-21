@@ -39,6 +39,7 @@ tags:
   - Ugarit
 books:
   - Genesis
+  - Joshua
   - Psalms
 guests:
   - David Carr

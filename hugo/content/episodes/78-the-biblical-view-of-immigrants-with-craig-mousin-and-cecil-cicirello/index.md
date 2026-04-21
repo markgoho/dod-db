@@ -21,6 +21,7 @@ tags:
   - Protestantism
 books:
   - Luke
+  - Revelation
 guests:
   - Craig Mousin
   - Cecil Cicirello

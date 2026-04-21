@@ -32,10 +32,10 @@ tags:
   - Melchizedek
   - Nineveh
 books:
-  - 1 Samuel
-  - Exodus
   - Genesis
+  - 1 Samuel
   - Judges
+  - Exodus
 segments:
   - Taking Issue
   - What is That?
@@ -272,7 +272,7 @@ draft: false
 {{< line >}}[00:39:43.700] Dan Beecher: But that's not what we're talking about today. No, what we're talking about today is a word that your autocorrect had you send me a wrong text about it, which was your autocorrect thought you were trying to say seraphim.{{< /line >}}
 {{< line >}}[00:39:58.660] Dan McClellan: Yes, yes, I get the autocorrect. I don't know how many times people are like, "What do you mean? What the duck?" when they get texts from me. The autocorrect is—is mostly a curse, very rarely a blessing. But yeah, here it changed—I don't know how many times I've turned in a paper. When I was an undergrad, when people were like, "You have periscope here. I think you probably wrote pericope," which is just a fancy way to say a story, but then autocorrect changed it. So it was teraphim or teraphim, which is a fancy word that is sometimes translated—sometimes people transliterate it. You'll find teraphim in the—in the texts, usually they will translate it like idol or something like that, or maybe household idol or image or something like that. It is—it is basically a divine image which—and we're not sure exactly where the word comes from. Some people think it derives from the root rapha, which means to heal.{{< /line >}}
 {{< line >}}[00:41:04.300] Dan McClellan: And so it would be a divine image that was used to facilitate healing or something like that. So if somebody was sick, you would set these up and—and these would have been probably anthropomorphic-ish. So they would have looked kind of human—statuettes that looked kind of human. And you would set them up to facilitate the transmission of some kind of divine agency or power that would—and heal the individual. And I mean, when we have this...{{< /line >}}
-{{< line >}}[00:41:36.720] Dan Beecher: Kind of thing today, we have, you know, a lot of Catholics have candles that have the image of a saint on them or something like that. So I mean, I—yeah, and that's a little, a little humanoid sort of doll or—or—or statuary or something. Makes sense. They—they appear in several stories. The—the David story in—why don't we just quickly cover the 1 Samuel David story? Yeah, because it's a—it's a—it's an interesting trick and it kind of...{{< /line >}}
+{{< line >}}[00:41:36.720] Dan Beecher: Kind of thing today, we have, you know, a lot of Catholics have candles that have the image of a saint on them or something like that. So I mean, I—yeah, and that's a little, a little humanoid sort of doll or—or—or statuary or something. Makes sense. They—they appear in several stories. The—the David story in—why don't we just quickly cover the {{< scripture ref="1 Samuel" >}} David story? Yeah, because it's a—it's a—it's an interesting trick and it kind of...{{< /line >}}
 {{< line >}}[00:42:13.560] Dan McClellan: Indicates that this might have been a pretty big one.{{< /line >}}
 {{< line >}}[00:42:16.320] Dan Beecher: Yeah, that's. The other thing is that like the different stories have very clearly different sized teraphim.{{< /line >}}
 {{< line >}}[00:42:23.370] Dan McClellan: Yeah, we're gonna get to one where they're very clearly small. Yeah. And—but this one, Michal is the—is the wife of David and Saul's henchmen are after David and he's got to escape. And so {{< scripture ref="1 Samuel 19:13" >}}, "And Michal took a teraphim, an idol, and laid it on the bed. She put a net of goat's hair on its head and covered it with the clothes." And so we've got a Ferris Bueller's Day Off situation, right? Yeah, yeah. With a teraphim that is close to life size and gets a wig thrown on it. And they—they throw the clothes over it and everything. And the—the messengers came in and the—the idol or teraphim was in the bed with the covering of goat's hair on its head. And, and you know, Michal is like, "He's sleeping and he was sick."{{< /line >}}

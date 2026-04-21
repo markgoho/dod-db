@@ -30,7 +30,10 @@ tags:
 books:
   - Psalms
   - Proverbs
+  - John
+  - Luke
   - Genesis
+  - Mark
 guests:
   - Michael Peppard
 draft: false

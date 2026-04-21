@@ -34,10 +34,13 @@ tags:
   - Rachel
 books:
   - Luke
-  - Isaiah
   - Matthew
+  - Isaiah
   - Micah
+  - Mark
+  - John
   - Jeremiah
+  - Hosea
 segments:
   - Taking Issue
   - Sorry Apologetics

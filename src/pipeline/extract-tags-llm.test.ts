@@ -23,9 +23,9 @@ mock.module("./tag-exists.js", () => ({
 const { extractTagsLlm } = await import("./extract-tags-llm.js");
 
 beforeEach(() => {
-  generateContentMock.mockClear();
-  addTagToVocabularyMock.mockClear();
-  tagExistsMock.mockClear();
+  generateContentMock.mockReset();
+  addTagToVocabularyMock.mockReset();
+  tagExistsMock.mockReset();
 });
 
 describe("extractTagsLlm", () => {
@@ -34,12 +34,12 @@ describe("extractTagsLlm", () => {
       text: JSON.stringify({
         tags: [
           {
-            tag: "Holy Grail",
+            tag: "Crystal Skull",
             mentions: 4,
             category: "miscellaneous",
             description:
-              "A legendary Christian relic discussed in the episode.",
-            variations: ["holy grail"],
+              "A recurring pop-culture artifact discussed in the episode.",
+            variations: ["crystal skull"],
           },
         ],
       }),
@@ -49,19 +49,19 @@ describe("extractTagsLlm", () => {
     const logSpy = spyOn(console, "log").mockImplementation(mock(() => {}));
 
     const result = await extractTagsLlm(
-      "holy grail holy grail holy grail holy grail",
+      "crystal skull crystal skull crystal skull crystal skull",
       [],
-      undefined,
+      ["miscellaneous"],
       127,
     );
 
-    expect(result).toEqual([{ tag: "Holy Grail", mentions: 4 }]);
+    expect(result).toEqual([{ tag: "Crystal Skull", mentions: 4 }]);
     expect(addTagToVocabularyMock).toHaveBeenCalledWith({
-      canonical: "Holy Grail",
-      variations: ["holy grail"],
+      canonical: "Crystal Skull",
+      variations: ["crystal skull"],
       category: "miscellaneous",
       status: "proposed",
-      description: "A legendary Christian relic discussed in the episode.",
+      description: "A recurring pop-culture artifact discussed in the episode.",
       caseSensitive: undefined,
       addedInEpisode: 127,
     });
@@ -77,11 +77,12 @@ describe("extractTagsLlm", () => {
       text: JSON.stringify({
         tags: [
           {
-            tag: "Holy Grail",
+            tag: "Crystal Skull",
             mentions: 4,
             category: "miscellaneous",
             description:
-              "A legendary Christian relic discussed in the episode.",
+              "A recurring pop-culture artifact discussed in the episode.",
+            variations: ["crystal skull"],
           },
         ],
       }),
@@ -91,14 +92,15 @@ describe("extractTagsLlm", () => {
     const logSpy = spyOn(console, "log").mockImplementation(mock(() => {}));
 
     const result = await extractTagsLlm(
-      "holy grail holy grail holy grail holy grail",
+      "crystal skull crystal skull crystal skull crystal skull",
       [],
+      ["miscellaneous"],
     );
 
-    expect(result).toEqual([{ tag: "Holy Grail", mentions: 4 }]);
+    expect(result).toEqual([{ tag: "Crystal Skull", mentions: 4 }]);
     expect(addTagToVocabularyMock).not.toHaveBeenCalled();
     expect(logSpy).toHaveBeenCalledWith(
-      '    "Holy Grail" already exists in vocabulary',
+      '    "Crystal Skull" already exists in vocabulary',
     );
 
     logSpy.mockRestore();
@@ -109,11 +111,11 @@ describe("extractTagsLlm", () => {
       text: JSON.stringify({
         tags: [
           {
-            tag: "Holy Grail",
+            tag: "Crystal Skull",
             mentions: 2,
             category: "miscellaneous",
             description:
-              "A legendary Christian relic discussed in the episode.",
+              "A recurring pop-culture artifact discussed in the episode.",
           },
         ],
       }),
@@ -122,7 +124,11 @@ describe("extractTagsLlm", () => {
     tagExistsMock.mockImplementation(() => false);
     const logSpy = spyOn(console, "log").mockImplementation(mock(() => {}));
 
-    const result = await extractTagsLlm("holy grail holy grail", []);
+    const result = await extractTagsLlm(
+      "crystal skull crystal skull",
+      [],
+      ["miscellaneous"],
+    );
 
     expect(result).toEqual([]);
     expect(addTagToVocabularyMock).not.toHaveBeenCalled();

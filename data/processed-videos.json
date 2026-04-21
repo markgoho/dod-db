@@ -161,24 +161,6 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
-        "book": "2 Kings",
-        "references": ["2 Kings"],
-        "mentions": 1,
-        "source": "auto"
-      },
-      {
-        "book": "Deuteronomy",
-        "references": ["Deuteronomy 32"],
-        "mentions": 1,
-        "source": "auto"
-      },
-      {
-        "book": "Exodus",
-        "references": ["Exodus", "Exodus 6:3"],
-        "mentions": 5,
-        "source": "auto"
-      },
-      {
         "book": "Genesis",
         "references": [
           "Genesis",
@@ -189,26 +171,37 @@
           "Genesis 2:4",
           "Genesis 3"
         ],
-        "mentions": 29,
-        "source": "auto"
+        "mentions": 29
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus", "Exodus 6:3"],
+        "mentions": 5
       },
       {
         "book": "Isaiah",
         "references": ["Isaiah 2", "Isaiah 27:1"],
-        "mentions": 3,
-        "source": "auto"
+        "mentions": 3
       },
       {
         "book": "Numbers",
         "references": ["Numbers"],
-        "mentions": 1,
-        "source": "auto"
+        "mentions": 1
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings"],
+        "mentions": 1
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 32"],
+        "mentions": 1
       },
       {
         "book": "Psalms",
         "references": ["Psalms 29"],
-        "mentions": 1,
-        "source": "auto"
+        "mentions": 1
       }
     ],
     "episodeNumber": 1
@@ -357,6 +350,11 @@
         "book": "Genesis",
         "references": ["Genesis 22", "Genesis 49"],
         "mentions": 3
+      },
+      {
+        "book": "Job",
+        "references": ["Job"],
+        "mentions": 2
       },
       {
         "book": "Deuteronomy",
@@ -563,13 +561,14 @@
       {
         "book": "Genesis",
         "references": [
+          "Genesis",
           "Genesis 11",
           "Genesis 13",
           "Genesis 16",
           "Genesis 18",
           "Genesis 19"
         ],
-        "mentions": 5
+        "mentions": 6
       },
       {
         "book": "Deuteronomy",
@@ -744,8 +743,28 @@
     "speakers": ["Dan Beecher", "Dan McClellan", "Bart Ehrman"],
     "scriptures": [
       {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 19
+      },
+      {
+        "book": "2 Peter",
+        "references": ["2 Peter"],
+        "mentions": 3
+      },
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 2
+      },
+      {
         "book": "Psalms",
         "references": ["Psalms 90"],
+        "mentions": 1
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew"],
         "mentions": 1
       }
     ],
@@ -1063,13 +1082,18 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
-        "book": "Romans",
-        "references": ["Romans 3", "Romans 3:28", "Romans 4:3"],
-        "mentions": 3
+        "book": "2 Timothy",
+        "references": ["2 Timothy", "2 Timothy 3:16"],
+        "mentions": 12
       },
       {
-        "book": "2 Timothy",
-        "references": ["2 Timothy 3:16"],
+        "book": "2 Samuel",
+        "references": ["2 Samuel", "2 Samuel 21:19"],
+        "mentions": 4
+      },
+      {
+        "book": "Romans",
+        "references": ["Romans 3", "Romans 3:28", "Romans 4:3"],
         "mentions": 3
       },
       {
@@ -1088,8 +1112,33 @@
         "mentions": 2
       },
       {
-        "book": "2 Samuel",
-        "references": ["2 Samuel 21:19"],
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Peter",
+        "references": ["2 Peter"],
+        "mentions": 2
+      },
+      {
+        "book": "1 Chronicles",
+        "references": ["1 Chronicles"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Timothy",
+        "references": ["1 Timothy"],
+        "mentions": 1
+      },
+      {
+        "book": "Esther",
+        "references": ["Esther"],
+        "mentions": 1
+      },
+      {
+        "book": "Sirach",
+        "references": ["Sirach"],
         "mentions": 1
       },
       {
@@ -1333,24 +1382,25 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
-        "book": "Psalms",
-        "references": ["Psalms 76", "Psalms 82", "Psalms 83"],
-        "mentions": 11
-      },
-      {
         "book": "Deuteronomy",
         "references": [
+          "Deuteronomy",
           "Deuteronomy 4:19",
           "Deuteronomy 32",
           "Deuteronomy 32:8",
           "Deuteronomy 32:8-9"
         ],
-        "mentions": 10
+        "mentions": 14
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 76", "Psalms 82", "Psalms 83"],
+        "mentions": 11
       },
       {
         "book": "2 Kings",
-        "references": ["2 Kings 18", "2 Kings 3:27", "2 Kings 3"],
-        "mentions": 6
+        "references": ["2 Kings", "2 Kings 18", "2 Kings 3", "2 Kings 3:27"],
+        "mentions": 7
       },
       {
         "book": "1 Kings",
@@ -1363,8 +1413,18 @@
         "mentions": 2
       },
       {
+        "book": "Judges",
+        "references": ["Judges"],
+        "mentions": 1
+      },
+      {
         "book": "Jeremiah",
         "references": ["Jeremiah 23:18"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
         "mentions": 1
       }
     ],
@@ -1552,6 +1612,11 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 6
+      },
+      {
         "book": "Isaiah",
         "references": [
           "Isaiah 1",
@@ -1715,6 +1780,16 @@
         "mentions": 4
       },
       {
+        "book": "1 Timothy",
+        "references": ["1 Timothy"],
+        "mentions": 4
+      },
+      {
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians", "1 Corinthians 6"],
+        "mentions": 3
+      },
+      {
         "book": "Romans",
         "references": ["Romans 1"],
         "mentions": 3
@@ -1725,13 +1800,18 @@
         "mentions": 2
       },
       {
+        "book": "Sirach",
+        "references": ["Sirach"],
+        "mentions": 1
+      },
+      {
         "book": "Matthew",
         "references": ["Matthew 19"],
         "mentions": 1
       },
       {
-        "book": "1 Corinthians",
-        "references": ["1 Corinthians 6"],
+        "book": "1 Thessalonians",
+        "references": ["1 Thessalonians"],
         "mentions": 1
       },
       {
@@ -1949,17 +2029,32 @@
     "scriptures": [
       {
         "book": "John",
-        "references": ["John 7", "John 8"],
-        "mentions": 3
+        "references": ["John", "John 7", "John 8"],
+        "mentions": 6
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark", "Mark 16"],
+        "mentions": 4
+      },
+      {
+        "book": "Jeremiah",
+        "references": ["Jeremiah"],
+        "mentions": 2
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Chronicles",
+        "references": ["2 Chronicles"],
+        "mentions": 1
       },
       {
         "book": "Matthew",
         "references": ["Matthew 17"],
-        "mentions": 1
-      },
-      {
-        "book": "Mark",
-        "references": ["Mark 16"],
         "mentions": 1
       },
       {
@@ -2090,6 +2185,7 @@
       {
         "book": "John",
         "references": [
+          "John",
           "John 1:18",
           "John 5",
           "John 11",
@@ -2100,7 +2196,7 @@
           "John 20",
           "John 21"
         ],
-        "mentions": 32
+        "mentions": 34
       },
       {
         "book": "Luke",
@@ -2273,8 +2369,8 @@
     "scriptures": [
       {
         "book": "Genesis",
-        "references": ["Genesis 6", "Genesis 24", "Genesis 27"],
-        "mentions": 7
+        "references": ["Genesis", "Genesis 6", "Genesis 24", "Genesis 27"],
+        "mentions": 8
       },
       {
         "book": "1 Samuel",
@@ -2443,6 +2539,11 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "Sirach",
+        "references": ["Sirach"],
+        "mentions": 5
+      },
+      {
         "book": "Genesis",
         "references": ["Genesis 1", "Genesis 2"],
         "mentions": 3
@@ -2455,6 +2556,11 @@
       {
         "book": "1 Samuel",
         "references": ["1 Samuel 4"],
+        "mentions": 1
+      },
+      {
+        "book": "Numbers",
+        "references": ["Numbers"],
         "mentions": 1
       }
     ],
@@ -2633,13 +2739,18 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
-        "book": "Isaiah",
-        "references": ["Isaiah 66", "Isaiah 66:24"],
-        "mentions": 2
+        "book": "Matthew",
+        "references": ["Matthew", "Matthew 27"],
+        "mentions": 4
       },
       {
-        "book": "Matthew",
-        "references": ["Matthew 27"],
+        "book": "Isaiah",
+        "references": ["Isaiah", "Isaiah 66", "Isaiah 66:24"],
+        "mentions": 3
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
         "mentions": 2
       },
       {
@@ -2655,6 +2766,11 @@
       {
         "book": "Genesis",
         "references": ["Genesis 6"],
+        "mentions": 1
+      },
+      {
+        "book": "Judith",
+        "references": ["Judith"],
         "mentions": 1
       }
     ],
@@ -2817,9 +2933,29 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "Matthew",
+        "references": ["Matthew"],
+        "mentions": 5
+      },
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 4
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts"],
+        "mentions": 3
+      },
+      {
         "book": "Romans",
         "references": ["Romans 16", "Romans 16:7"],
         "mentions": 3
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
       }
     ],
     "episodeNumber": 16
@@ -2962,8 +3098,8 @@
     "scriptures": [
       {
         "book": "Mark",
-        "references": ["Mark 9", "Mark 16"],
-        "mentions": 4
+        "references": ["Mark", "Mark 9", "Mark 16"],
+        "mentions": 6
       },
       {
         "book": "Matthew",
@@ -2972,8 +3108,13 @@
       },
       {
         "book": "John",
-        "references": ["John 7", "John 8"],
-        "mentions": 2
+        "references": ["John", "John 7", "John 8"],
+        "mentions": 3
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
       },
       {
         "book": "Isaiah",
@@ -3182,13 +3323,18 @@
     "scriptures": [
       {
         "book": "2 Samuel",
-        "references": ["2 Samuel 19:22", "2 Samuel 24:1", "2 Samuel 24"],
+        "references": ["2 Samuel 24", "2 Samuel 24:1", "2 Samuel 19:22"],
         "mentions": 5
       },
       {
         "book": "Numbers",
         "references": ["Numbers 22", "Numbers 22:21"],
         "mentions": 4
+      },
+      {
+        "book": "1 Chronicles",
+        "references": ["1 Chronicles", "1 Chronicles 21:1"],
+        "mentions": 3
       },
       {
         "book": "Genesis",
@@ -3206,11 +3352,6 @@
         "mentions": 2
       },
       {
-        "book": "1 Chronicles",
-        "references": ["1 Chronicles 21:1"],
-        "mentions": 1
-      },
-      {
         "book": "Zechariah",
         "references": ["Zechariah 3"],
         "mentions": 1
@@ -3223,6 +3364,16 @@
       {
         "book": "Hosea",
         "references": ["Hosea 9:8"],
+        "mentions": 1
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
+      },
+      {
+        "book": "Wisdom of Solomon",
+        "references": ["Wisdom of Solomon"],
         "mentions": 1
       }
     ],
@@ -3394,10 +3545,11 @@
         "book": "1 Corinthians",
         "references": [
           "1 Corinthians 15",
+          "1 Corinthians",
           "1 Corinthians 15:20-28",
           "1 Corinthians 15:39-42"
         ],
-        "mentions": 8
+        "mentions": 9
       },
       {
         "book": "Deuteronomy",
@@ -3420,8 +3572,18 @@
         "mentions": 4
       },
       {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 1
+      },
+      {
         "book": "Judges",
         "references": ["Judges 5"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Esdras",
+        "references": ["2 Esdras"],
         "mentions": 1
       },
       {
@@ -3682,13 +3844,68 @@
         "mentions": 26
       },
       {
+        "book": "Wisdom of Solomon",
+        "references": ["Wisdom of Solomon"],
+        "mentions": 3
+      },
+      {
+        "book": "2 Maccabees",
+        "references": ["2 Maccabees"],
+        "mentions": 3
+      },
+      {
+        "book": "Sirach",
+        "references": ["Sirach"],
+        "mentions": 3
+      },
+      {
         "book": "Isaiah",
         "references": ["Isaiah 100", "Isaiah 130"],
         "mentions": 2
       },
       {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 2
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 2
+      },
+      {
         "book": "2 Timothy",
         "references": ["2 Timothy 3:16"],
+        "mentions": 1
+      },
+      {
+        "book": "Prayer of Manasseh",
+        "references": ["Prayer of Manasseh"],
+        "mentions": 1
+      },
+      {
+        "book": "Bel and the Dragon",
+        "references": ["Bel and the Dragon"],
+        "mentions": 1
+      },
+      {
+        "book": "Letter of Jeremiah",
+        "references": ["Letter of Jeremiah"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Esdras",
+        "references": ["2 Esdras"],
+        "mentions": 1
+      },
+      {
+        "book": "Jude",
+        "references": ["Jude"],
+        "mentions": 1
+      },
+      {
+        "book": "Hebrews",
+        "references": ["Hebrews"],
         "mentions": 1
       }
     ],
@@ -3864,13 +4081,19 @@
       {
         "book": "Exodus",
         "references": [
+          "Exodus",
           "Exodus 13",
           "Exodus 20",
           "Exodus 22",
           "Exodus 22:29",
           "Exodus 34"
         ],
-        "mentions": 12
+        "mentions": 20
+      },
+      {
+        "book": "Ezekiel",
+        "references": ["Ezekiel"],
+        "mentions": 1
       },
       {
         "book": "Psalms",
@@ -4001,6 +4224,7 @@
       {
         "book": "Genesis",
         "references": [
+          "Genesis",
           "Genesis 1",
           "Genesis 1:1",
           "Genesis 2",
@@ -4008,7 +4232,7 @@
           "Genesis 6",
           "Genesis 37"
         ],
-        "mentions": 22
+        "mentions": 23
       },
       {
         "book": "Leviticus",
@@ -4017,8 +4241,8 @@
       },
       {
         "book": "Exodus",
-        "references": ["Exodus 1", "Exodus 6"],
-        "mentions": 2
+        "references": ["Exodus", "Exodus 1", "Exodus 6"],
+        "mentions": 3
       }
     ],
     "episodeNumber": 22,
@@ -4359,12 +4583,13 @@
       {
         "book": "Matthew",
         "references": [
+          "Matthew",
           "Matthew 5:3",
           "Matthew 5:11",
           "Matthew 5:12",
           "Matthew 6"
         ],
-        "mentions": 4
+        "mentions": 5
       },
       {
         "book": "Psalms",
@@ -4399,6 +4624,11 @@
       {
         "book": "Genesis",
         "references": ["Genesis 6"],
+        "mentions": 1
+      },
+      {
+        "book": "John",
+        "references": ["John"],
         "mentions": 1
       }
     ],
@@ -4527,13 +4757,28 @@
       },
       {
         "book": "1 Corinthians",
-        "references": ["1 Corinthians 15"],
-        "mentions": 5
+        "references": ["1 Corinthians 15", "1 Corinthians"],
+        "mentions": 6
       },
       {
         "book": "Genesis",
         "references": ["Genesis 15", "Genesis 17"],
         "mentions": 2
+      },
+      {
+        "book": "2 Timothy",
+        "references": ["2 Timothy"],
+        "mentions": 1
+      },
+      {
+        "book": "Wisdom of Solomon",
+        "references": ["Wisdom of Solomon"],
+        "mentions": 1
+      },
+      {
+        "book": "4 Maccabees",
+        "references": ["4 Maccabees"],
+        "mentions": 1
       },
       {
         "book": "James",
@@ -4702,8 +4947,18 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 6
+      },
+      {
         "book": "Genesis",
-        "references": ["Genesis 6"],
+        "references": ["Genesis", "Genesis 6"],
+        "mentions": 4
+      },
+      {
+        "book": "Jude",
+        "references": ["Jude"],
         "mentions": 3
       },
       {
@@ -4964,6 +5219,16 @@
         "mentions": 2
       },
       {
+        "book": "Jude",
+        "references": ["Jude"],
+        "mentions": 2
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges"],
+        "mentions": 1
+      },
+      {
         "book": "Deuteronomy",
         "references": ["Deuteronomy 32:17"],
         "mentions": 1
@@ -5117,22 +5382,27 @@
     "scriptures": [
       {
         "book": "Jonah",
-        "references": ["Jonah 2", "Jonah 3"],
-        "mentions": 3
+        "references": ["Jonah", "Jonah 2", "Jonah 3"],
+        "mentions": 6
       },
       {
         "book": "Genesis",
-        "references": ["Genesis 2", "Genesis 2:17"],
-        "mentions": 2
+        "references": ["Genesis", "Genesis 2", "Genesis 2:17"],
+        "mentions": 3
       },
       {
         "book": "2 Kings",
-        "references": ["2 Kings 14:25"],
-        "mentions": 1
+        "references": ["2 Kings", "2 Kings 14:25"],
+        "mentions": 2
       },
       {
         "book": "Isaiah",
         "references": ["Isaiah 40"],
+        "mentions": 1
+      },
+      {
+        "book": "Numbers",
+        "references": ["Numbers"],
         "mentions": 1
       },
       {
@@ -5240,7 +5510,12 @@
       },
       {
         "book": "2 Chronicles",
-        "references": ["2 Chronicles 7:14"],
+        "references": ["2 Chronicles", "2 Chronicles 7:14"],
+        "mentions": 2
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus"],
         "mentions": 1
       }
     ],
@@ -5432,8 +5707,8 @@
       },
       {
         "book": "Acts",
-        "references": ["Acts 15"],
-        "mentions": 1
+        "references": ["Acts", "Acts 15"],
+        "mentions": 2
       }
     ],
     "episodeNumber": 31
@@ -5564,8 +5839,8 @@
     "scriptures": [
       {
         "book": "Daniel",
-        "references": ["Daniel 7", "Daniel 9", "Daniel 9:25"],
-        "mentions": 6
+        "references": ["Daniel", "Daniel 7", "Daniel 9", "Daniel 9:25"],
+        "mentions": 7
       },
       {
         "book": "Mark",
@@ -5573,13 +5848,17 @@
         "mentions": 4
       },
       {
-        "book": "Matthew",
-        "references": ["Matthew 16", "Matthew 24"],
-        "mentions": 2
+        "book": "1 Thessalonians",
+        "references": [
+          "1 Thessalonians 4",
+          "1 Thessalonians",
+          "1 Thessalonians 4:17"
+        ],
+        "mentions": 4
       },
       {
-        "book": "1 Thessalonians",
-        "references": ["1 Thessalonians 4", "1 Thessalonians 4:17"],
+        "book": "Matthew",
+        "references": ["Matthew 16", "Matthew 24"],
         "mentions": 2
       },
       {
@@ -5709,11 +5988,17 @@
         "book": "2 Corinthians",
         "references": [
           "2 Corinthians 12",
+          "2 Corinthians",
           "2 Corinthians 4",
           "2 Corinthians 11",
           "2 Corinthians 2"
         ],
-        "mentions": 8
+        "mentions": 11
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation", "Revelation 12"],
+        "mentions": 3
       },
       {
         "book": "Galatians",
@@ -5723,11 +6008,6 @@
       {
         "book": "Jeremiah",
         "references": ["Jeremiah 31"],
-        "mentions": 1
-      },
-      {
-        "book": "Revelation",
-        "references": ["Revelation 12"],
         "mentions": 1
       },
       {
@@ -5911,8 +6191,8 @@
     "scriptures": [
       {
         "book": "Daniel",
-        "references": ["Daniel 1:1", "Daniel 2", "Daniel 7"],
-        "mentions": 4
+        "references": ["Daniel", "Daniel 1:1", "Daniel 2", "Daniel 7"],
+        "mentions": 9
       },
       {
         "book": "Revelation",
@@ -6046,19 +6326,54 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
-        "book": "1 Corinthians",
-        "references": ["1 Corinthians 14"],
-        "mentions": 2
-      },
-      {
-        "book": "Matthew",
-        "references": ["Matthew 1"],
-        "mentions": 1
+        "book": "John",
+        "references": ["John"],
+        "mentions": 7
       },
       {
         "book": "2 Timothy",
-        "references": ["2 Timothy 3:16"],
-        "mentions": 1
+        "references": ["2 Timothy", "2 Timothy 3:16"],
+        "mentions": 7
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew", "Matthew 1"],
+        "mentions": 6
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts"],
+        "mentions": 5
+      },
+      {
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians", "1 Corinthians 14"],
+        "mentions": 5
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark"],
+        "mentions": 3
+      },
+      {
+        "book": "1 Thessalonians",
+        "references": ["1 Thessalonians"],
+        "mentions": 3
+      },
+      {
+        "book": "2 Corinthians",
+        "references": ["2 Corinthians"],
+        "mentions": 2
+      },
+      {
+        "book": "1 Timothy",
+        "references": ["1 Timothy"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Thessalonians",
+        "references": ["2 Thessalonians"],
+        "mentions": 2
       }
     ],
     "episodeNumber": 35,
@@ -6238,40 +6553,39 @@
     "speakers": ["Jacob Wright", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
-        "book": "Genesis",
-        "references": ["Genesis 1", "Genesis 2"],
-        "mentions": 3,
-        "source": "auto"
-      },
-      {
-        "book": "Joshua",
-        "references": ["Joshua"],
-        "mentions": 2,
-        "source": "auto"
-      },
-      {
-        "book": "Lamentations",
-        "references": ["Lamentations"],
-        "mentions": 1,
-        "source": "auto"
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon"],
+        "mentions": 4
       },
       {
         "book": "Proverbs",
         "references": ["Proverbs"],
-        "mentions": 3,
-        "source": "auto"
+        "mentions": 3
       },
       {
-        "book": "Psalms",
-        "references": ["Psalms"],
-        "mentions": 1,
-        "source": "auto"
+        "book": "Genesis",
+        "references": ["Genesis 1", "Genesis 2"],
+        "mentions": 3
+      },
+      {
+        "book": "Joshua",
+        "references": ["Joshua"],
+        "mentions": 2
       },
       {
         "book": "Ruth",
         "references": ["Ruth"],
-        "mentions": 2,
-        "source": "auto"
+        "mentions": 2
+      },
+      {
+        "book": "Lamentations",
+        "references": ["Lamentations"],
+        "mentions": 1
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms"],
+        "mentions": 1
       }
     ],
     "episodeNumber": 36,
@@ -6435,9 +6749,19 @@
     "speakers": ["Dan Beecher", "Aaron Adair", "Dan McClellan"],
     "scriptures": [
       {
+        "book": "Matthew",
+        "references": ["Matthew"],
+        "mentions": 2
+      },
+      {
         "book": "Numbers",
         "references": ["Numbers 24", "Numbers 24:17"],
         "mentions": 2
+      },
+      {
+        "book": "2 Peter",
+        "references": ["2 Peter"],
+        "mentions": 1
       },
       {
         "book": "Genesis",
@@ -6556,7 +6880,28 @@
       }
     ],
     "speakers": ["Dan Beecher", "Dan McClellan", "Eric Vanden Eykel"],
-    "scriptures": [],
+    "scriptures": [
+      {
+        "book": "Luke",
+        "references": ["Luke"],
+        "mentions": 4
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew"],
+        "mentions": 1
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts"],
+        "mentions": 1
+      },
+      {
+        "book": "James",
+        "references": ["James"],
+        "mentions": 1
+      }
+    ],
     "episodeNumber": 38,
     "episodeTopic": "Magi"
   },
@@ -6740,28 +7085,38 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "Revelation",
+        "references": [
+          "Revelation",
+          "Revelation 3",
+          "Revelation 20",
+          "Revelation 21:5"
+        ],
+        "mentions": 21
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel", "Daniel 7:9", "Daniel 7:13"],
+        "mentions": 4
+      },
+      {
         "book": "Isaiah",
         "references": ["Isaiah 27:1", "Isaiah 100"],
         "mentions": 4
       },
       {
-        "book": "Revelation",
-        "references": ["Revelation 3", "Revelation 20", "Revelation 21:5"],
-        "mentions": 3
+        "book": "John",
+        "references": ["John", "John 17"],
+        "mentions": 2
       },
       {
-        "book": "Daniel",
-        "references": ["Daniel 7:9", "Daniel 7:13"],
-        "mentions": 2
+        "book": "Acts",
+        "references": ["Acts"],
+        "mentions": 1
       },
       {
         "book": "Psalms",
         "references": ["Psalms 74"],
-        "mentions": 1
-      },
-      {
-        "book": "John",
-        "references": ["John 17"],
         "mentions": 1
       }
     ],
@@ -6906,8 +7261,8 @@
     "scriptures": [
       {
         "book": "1 Samuel",
-        "references": ["1 Samuel 28"],
-        "mentions": 2
+        "references": ["1 Samuel", "1 Samuel 28"],
+        "mentions": 6
       },
       {
         "book": "Exodus",
@@ -7076,14 +7431,23 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
+        "book": "1 Timothy",
+        "references": ["1 Timothy", "1 Timothy 2"],
+        "mentions": 4
+      },
+      {
         "book": "Genesis",
-        "references": ["Genesis 9:19", "Genesis 10"],
-        "mentions": 2
+        "references": ["Genesis", "Genesis 9:19", "Genesis 10"],
+        "mentions": 3
       },
       {
         "book": "1 Corinthians",
-        "references": ["1 Corinthians 11", "1 Corinthians 12:23"],
-        "mentions": 2
+        "references": [
+          "1 Corinthians 11",
+          "1 Corinthians",
+          "1 Corinthians 12:23"
+        ],
+        "mentions": 3
       },
       {
         "book": "Deuteronomy",
@@ -7093,11 +7457,6 @@
       {
         "book": "Zephaniah",
         "references": ["Zephaniah 1"],
-        "mentions": 2
-      },
-      {
-        "book": "1 Timothy",
-        "references": ["1 Timothy 2"],
         "mentions": 2
       },
       {
@@ -7271,6 +7630,7 @@
       {
         "book": "John",
         "references": [
+          "John",
           "John 1:1",
           "John 1:18",
           "John 10",
@@ -7279,7 +7639,7 @@
           "John 10:38",
           "John 17"
         ],
-        "mentions": 8
+        "mentions": 20
       },
       {
         "book": "Isaiah",
@@ -7294,6 +7654,11 @@
       {
         "book": "Psalms",
         "references": ["Psalms 82"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark"],
         "mentions": 1
       }
     ],
@@ -7462,6 +7827,7 @@
       {
         "book": "Isaiah",
         "references": [
+          "Isaiah",
           "Isaiah 1",
           "Isaiah 37",
           "Isaiah 38",
@@ -7469,16 +7835,21 @@
           "Isaiah 40",
           "Isaiah 45"
         ],
-        "mentions": 16
+        "mentions": 19
       },
       {
         "book": "Mark",
-        "references": ["Mark 11"],
-        "mentions": 2
+        "references": ["Mark", "Mark 11"],
+        "mentions": 5
       },
       {
         "book": "Matthew",
         "references": ["Matthew 21"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings"],
         "mentions": 1
       }
     ],
@@ -7587,13 +7958,18 @@
       },
       {
         "book": "Matthew",
-        "references": ["Matthew 19", "Matthew 19:4", "Matthew 19:12"],
-        "mentions": 8
+        "references": [
+          "Matthew",
+          "Matthew 19",
+          "Matthew 19:4",
+          "Matthew 19:12"
+        ],
+        "mentions": 9
       },
       {
         "book": "1 Corinthians",
-        "references": ["1 Corinthians 7"],
-        "mentions": 3
+        "references": ["1 Corinthians 7", "1 Corinthians"],
+        "mentions": 6
       },
       {
         "book": "Ephesians",
@@ -7604,6 +7980,11 @@
         "book": "Leviticus",
         "references": ["Leviticus 18:22", "Leviticus 20:13"],
         "mentions": 2
+      },
+      {
+        "book": "1 Thessalonians",
+        "references": ["1 Thessalonians"],
+        "mentions": 1
       },
       {
         "book": "Galatians",
@@ -7801,8 +8182,33 @@
     "scriptures": [
       {
         "book": "Deuteronomy",
-        "references": ["Deuteronomy 27", "Deuteronomy 32", "Deuteronomy 32:8"],
-        "mentions": 8
+        "references": [
+          "Deuteronomy",
+          "Deuteronomy 27",
+          "Deuteronomy 32",
+          "Deuteronomy 32:8"
+        ],
+        "mentions": 16
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 15
+      },
+      {
+        "book": "Jeremiah",
+        "references": ["Jeremiah"],
+        "mentions": 4
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah", "Isaiah 13"],
+        "mentions": 2
+      },
+      {
+        "book": "1 Samuel",
+        "references": ["1 Samuel"],
+        "mentions": 2
       },
       {
         "book": "Psalms",
@@ -7810,8 +8216,23 @@
         "mentions": 2
       },
       {
-        "book": "Isaiah",
-        "references": ["Isaiah 13"],
+        "book": "Exodus",
+        "references": ["Exodus"],
+        "mentions": 1
+      },
+      {
+        "book": "Esther",
+        "references": ["Esther"],
+        "mentions": 1
+      },
+      {
+        "book": "Nehemiah",
+        "references": ["Nehemiah"],
+        "mentions": 1
+      },
+      {
+        "book": "Numbers",
+        "references": ["Numbers"],
         "mentions": 1
       }
     ],
@@ -8242,6 +8663,11 @@
         "mentions": 2
       },
       {
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians", "1 Corinthians 11:34"],
+        "mentions": 2
+      },
+      {
         "book": "Matthew",
         "references": ["Matthew 19"],
         "mentions": 1
@@ -8252,8 +8678,8 @@
         "mentions": 1
       },
       {
-        "book": "1 Corinthians",
-        "references": ["1 Corinthians 11:34"],
+        "book": "Mark",
+        "references": ["Mark"],
         "mentions": 1
       }
     ],
@@ -8360,8 +8786,7 @@
       {
         "book": "Mark",
         "references": ["Mark"],
-        "mentions": 12,
-        "source": "auto"
+        "mentions": 12
       }
     ],
     "episodeNumber": 49,
@@ -8557,6 +8982,11 @@
         "book": "Isaiah",
         "references": ["Isaiah 3"],
         "mentions": 1
+      },
+      {
+        "book": "2 Maccabees",
+        "references": ["2 Maccabees 7"],
+        "mentions": 1
       }
     ],
     "episodeNumber": 50
@@ -8617,8 +9047,7 @@
       {
         "book": "Isaiah",
         "references": ["Isaiah"],
-        "mentions": 2,
-        "source": "auto"
+        "mentions": 2
       }
     ],
     "episodeNumber": 51,
@@ -8745,18 +9174,18 @@
       },
       {
         "book": "2 Samuel",
-        "references": ["2 Samuel 21"],
-        "mentions": 11
+        "references": ["2 Samuel 21", "2 Samuel"],
+        "mentions": 16
       },
       {
         "book": "1 Chronicles",
-        "references": ["1 Chronicles 20"],
-        "mentions": 8
+        "references": ["1 Chronicles", "1 Chronicles 20"],
+        "mentions": 12
       },
       {
         "book": "1 Samuel",
-        "references": ["1 Samuel 17"],
-        "mentions": 4
+        "references": ["1 Samuel", "1 Samuel 17"],
+        "mentions": 10
       },
       {
         "book": "Romans",
@@ -8774,6 +9203,16 @@
         "mentions": 2
       },
       {
+        "book": "1 Peter",
+        "references": ["1 Peter", "1 Peter 3:1"],
+        "mentions": 2
+      },
+      {
+        "book": "1 Timothy",
+        "references": ["1 Timothy"],
+        "mentions": 2
+      },
+      {
         "book": "Proverbs",
         "references": ["Proverbs 31"],
         "mentions": 1
@@ -8781,11 +9220,6 @@
       {
         "book": "Ephesians",
         "references": ["Ephesians 5:22"],
-        "mentions": 1
-      },
-      {
-        "book": "1 Peter",
-        "references": ["1 Peter 3:1"],
         "mentions": 1
       },
       {
@@ -8921,8 +9355,23 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
+        "book": "2 Kings",
+        "references": ["2 Kings"],
+        "mentions": 4
+      },
+      {
+        "book": "John",
+        "references": ["John", "John 15:26"],
+        "mentions": 2
+      },
+      {
         "book": "Genesis",
         "references": ["Genesis 1"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Samuel",
+        "references": ["1 Samuel"],
         "mentions": 1
       },
       {
@@ -8933,11 +9382,6 @@
       {
         "book": "1 Kings",
         "references": ["1 Kings 22"],
-        "mentions": 1
-      },
-      {
-        "book": "John",
-        "references": ["John 15:26"],
         "mentions": 1
       }
     ],
@@ -9125,8 +9569,8 @@
     "scriptures": [
       {
         "book": "Acts",
-        "references": ["Acts 10", "Acts 15", "Acts 16:4"],
-        "mentions": 11
+        "references": ["Acts", "Acts 10", "Acts 15", "Acts 16:4"],
+        "mentions": 20
       },
       {
         "book": "Galatians",
@@ -9134,8 +9578,28 @@
         "mentions": 2
       },
       {
+        "book": "Jonah",
+        "references": ["Jonah"],
+        "mentions": 2
+      },
+      {
+        "book": "Luke",
+        "references": ["Luke"],
+        "mentions": 1
+      },
+      {
         "book": "Amos",
         "references": ["Amos 9"],
+        "mentions": 1
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew"],
+        "mentions": 1
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
         "mentions": 1
       },
       {
@@ -9351,9 +9815,19 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
+        "book": "2 Kings",
+        "references": ["2 Kings", "2 Kings 9"],
+        "mentions": 6
+      },
+      {
+        "book": "2 Chronicles",
+        "references": ["2 Chronicles", "2 Chronicles 22"],
+        "mentions": 6
+      },
+      {
         "book": "Mark",
-        "references": ["Mark 1", "Mark 2"],
-        "mentions": 3
+        "references": ["Mark", "Mark 1", "Mark 2"],
+        "mentions": 4
       },
       {
         "book": "Joshua",
@@ -9366,13 +9840,8 @@
         "mentions": 2
       },
       {
-        "book": "2 Kings",
-        "references": ["2 Kings 9"],
-        "mentions": 1
-      },
-      {
-        "book": "2 Chronicles",
-        "references": ["2 Chronicles 22"],
+        "book": "2 Maccabees",
+        "references": ["2 Maccabees"],
         "mentions": 1
       },
       {
@@ -9539,6 +10008,7 @@
       {
         "book": "Genesis",
         "references": [
+          "Genesis",
           "Genesis 1",
           "Genesis 1:1",
           "Genesis 2",
@@ -9550,7 +10020,12 @@
           "Genesis 6",
           "Genesis 12"
         ],
-        "mentions": 34
+        "mentions": 35
+      },
+      {
+        "book": "Joshua",
+        "references": ["Joshua"],
+        "mentions": 1
       },
       {
         "book": "Psalms",
@@ -9704,6 +10179,11 @@
         "book": "Zechariah",
         "references": ["Zechariah 9:9"],
         "mentions": 2
+      },
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 1
       },
       {
         "book": "Proverbs",
@@ -9973,6 +10453,11 @@
       {
         "book": "Isaiah",
         "references": ["Isaiah 1"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
         "mentions": 1
       }
     ],
@@ -10266,13 +10751,19 @@
       {
         "book": "1 Corinthians",
         "references": [
+          "1 Corinthians",
           "1 Corinthians 14",
           "1 Corinthians 11",
-          "1 Corinthians 14:34",
           "1 Corinthians 16:19",
+          "1 Corinthians 14:34",
           "1 Corinthians 14:34-35"
         ],
-        "mentions": 9
+        "mentions": 10
+      },
+      {
+        "book": "1 Timothy",
+        "references": ["1 Timothy 2", "1 Timothy", "1 Timothy 2:11"],
+        "mentions": 5
       },
       {
         "book": "John",
@@ -10280,13 +10771,13 @@
         "mentions": 2
       },
       {
-        "book": "1 Timothy",
-        "references": ["1 Timothy 2", "1 Timothy 2:11"],
-        "mentions": 2
-      },
-      {
         "book": "Numbers",
         "references": ["Numbers 5"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Timothy",
+        "references": ["2 Timothy"],
         "mentions": 1
       }
     ],
@@ -10445,6 +10936,11 @@
     ],
     "speakers": ["Dan McClellan", "James McGrath", "Dan Beecher"],
     "scriptures": [
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 4
+      },
       {
         "book": "Isaiah",
         "references": ["Isaiah 1"],
@@ -10680,13 +11176,39 @@
       {
         "book": "Genesis",
         "references": [
+          "Genesis",
           "Genesis 4",
           "Genesis 4:15",
           "Genesis 5",
           "Genesis 5:22",
           "Genesis 6"
         ],
-        "mentions": 9
+        "mentions": 10
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah"],
+        "mentions": 2
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Corinthians",
+        "references": ["2 Corinthians"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Samuel",
+        "references": ["2 Samuel"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 1
       }
     ],
     "episodeNumber": 62
@@ -10824,19 +11346,19 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
-        "book": "Judges",
-        "references": ["Judges 5", "Judges 9", "Judges 13"],
-        "mentions": 3
-      },
-      {
         "book": "Hosea",
-        "references": ["Hosea 12", "Hosea 12:4"],
-        "mentions": 2
+        "references": ["Hosea", "Hosea 12", "Hosea 12:4"],
+        "mentions": 4
       },
       {
         "book": "Genesis",
-        "references": ["Genesis 3", "Genesis 18"],
-        "mentions": 2
+        "references": ["Genesis", "Genesis 3", "Genesis 18"],
+        "mentions": 3
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges 5", "Judges 9", "Judges 13"],
+        "mentions": 3
       },
       {
         "book": "Exodus",
@@ -11030,8 +11552,13 @@
     "scriptures": [
       {
         "book": "Judges",
-        "references": ["Judges 5", "Judges 11"],
-        "mentions": 2
+        "references": ["Judges", "Judges 5", "Judges 11"],
+        "mentions": 6
+      },
+      {
+        "book": "1 Timothy",
+        "references": ["1 Timothy"],
+        "mentions": 1
       },
       {
         "book": "1 Corinthians",
@@ -11429,14 +11956,35 @@
     "speakers": ["Aaron Higashi", "Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "2 Samuel",
+        "references": ["2 Samuel"],
+        "mentions": 30
+      },
+      {
         "book": "1 Samuel",
         "references": [
+          "1 Samuel",
           "1 Samuel 9",
           "1 Samuel 10",
           "1 Samuel 11",
           "1 Samuel 8"
         ],
-        "mentions": 7
+        "mentions": 11
+      },
+      {
+        "book": "2 Chronicles",
+        "references": ["2 Chronicles"],
+        "mentions": 4
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges"],
+        "mentions": 1
+      },
+      {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon"],
+        "mentions": 1
       }
     ],
     "episodeNumber": 67,
@@ -11797,34 +12345,44 @@
     ],
     "scriptures": [
       {
-        "book": "Acts",
-        "references": ["Acts"],
-        "mentions": 4,
-        "source": "auto"
-      },
-      {
-        "book": "John",
-        "references": ["John"],
-        "mentions": 2,
-        "source": "auto"
-      },
-      {
-        "book": "Luke",
-        "references": ["Luke"],
-        "mentions": 3,
-        "source": "auto"
+        "book": "Matthew",
+        "references": ["Matthew"],
+        "mentions": 13
       },
       {
         "book": "Mark",
         "references": ["Mark"],
-        "mentions": 5,
-        "source": "auto"
+        "mentions": 5
       },
       {
-        "book": "Matthew",
-        "references": ["Matthew"],
-        "mentions": 13,
-        "source": "auto"
+        "book": "Acts",
+        "references": ["Acts"],
+        "mentions": 4
+      },
+      {
+        "book": "2 Timothy",
+        "references": ["2 Timothy"],
+        "mentions": 4
+      },
+      {
+        "book": "Luke",
+        "references": ["Luke"],
+        "mentions": 3
+      },
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 2
+      },
+      {
+        "book": "1 Timothy",
+        "references": ["1 Timothy"],
+        "mentions": 2
+      },
+      {
+        "book": "1 Peter",
+        "references": ["1 Peter"],
+        "mentions": 1
       }
     ],
     "episodeNumber": 69
@@ -11998,6 +12556,21 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 12
+      },
+      {
+        "book": "2 Maccabees",
+        "references": ["2 Maccabees", "2 Maccabees 7:28"],
+        "mentions": 9
+      },
+      {
+        "book": "Bel and the Dragon",
+        "references": ["Bel and the Dragon"],
+        "mentions": 6
+      },
+      {
         "book": "Genesis",
         "references": ["Genesis 1", "Genesis 1:1", "Genesis 2"],
         "mentions": 4
@@ -12035,6 +12608,11 @@
       {
         "book": "Psalms",
         "references": ["Psalms 74"],
+        "mentions": 1
+      },
+      {
+        "book": "Job",
+        "references": ["Job"],
         "mentions": 1
       }
     ],
@@ -12206,13 +12784,19 @@
     "scriptures": [
       {
         "book": "Daniel",
-        "references": ["Daniel 7", "Daniel 7:13", "Daniel 10", "Daniel 10:21"],
-        "mentions": 6
+        "references": [
+          "Daniel",
+          "Daniel 7",
+          "Daniel 7:13",
+          "Daniel 10",
+          "Daniel 10:21"
+        ],
+        "mentions": 9
       },
       {
         "book": "Revelation",
-        "references": ["Revelation 20"],
-        "mentions": 3
+        "references": ["Revelation", "Revelation 20"],
+        "mentions": 6
       },
       {
         "book": "1 Thessalonians",
@@ -12222,6 +12806,11 @@
       {
         "book": "2 Corinthians",
         "references": ["2 Corinthians 12:2"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Thessalonians",
+        "references": ["2 Thessalonians"],
         "mentions": 1
       },
       {
@@ -12396,15 +12985,13 @@
     "scriptures": [
       {
         "book": "2 Kings",
-        "references": ["2 Kings 18", "2 Kings 19", "2 Kings 18:7"],
-        "mentions": 3,
-        "source": "auto"
+        "references": ["2 Kings", "2 Kings 18", "2 Kings 19", "2 Kings 18:7"],
+        "mentions": 4
       },
       {
         "book": "Ruth",
         "references": ["Ruth"],
-        "mentions": 1,
-        "source": "auto"
+        "mentions": 1
       }
     ],
     "episodeNumber": 72
@@ -12566,8 +13153,8 @@
     "scriptures": [
       {
         "book": "Numbers",
-        "references": ["Numbers 6", "Numbers 6:27", "Numbers 27:21"],
-        "mentions": 3
+        "references": ["Numbers", "Numbers 6", "Numbers 6:27", "Numbers 27:21"],
+        "mentions": 6
       },
       {
         "book": "1 Samuel",
@@ -12723,13 +13310,13 @@
         "mentions": 2
       },
       {
-        "book": "Leviticus",
-        "references": ["Leviticus 19:19"],
-        "mentions": 1
+        "book": "Judges",
+        "references": ["Judges", "Judges 19"],
+        "mentions": 2
       },
       {
-        "book": "Judges",
-        "references": ["Judges 19"],
+        "book": "Leviticus",
+        "references": ["Leviticus 19:19"],
         "mentions": 1
       }
     ],
@@ -12966,6 +13553,11 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "Numbers",
+        "references": ["Numbers", "Numbers 18"],
+        "mentions": 2
+      },
+      {
         "book": "Deuteronomy",
         "references": ["Deuteronomy 14:22-23", "Deuteronomy 15"],
         "mentions": 2
@@ -12981,13 +13573,13 @@
         "mentions": 2
       },
       {
-        "book": "Numbers",
-        "references": ["Numbers 18"],
+        "book": "Leviticus",
+        "references": ["Leviticus 27"],
         "mentions": 1
       },
       {
-        "book": "Leviticus",
-        "references": ["Leviticus 27"],
+        "book": "1 John",
+        "references": ["1 John"],
         "mentions": 1
       }
     ],
@@ -13150,6 +13742,11 @@
         "book": "Luke",
         "references": ["Luke 10"],
         "mentions": 1
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
       }
     ],
     "episodeNumber": 78
@@ -13227,7 +13824,13 @@
       }
     ],
     "speakers": ["Dan McClellan", "David Congdon", "Dan Beecher"],
-    "scriptures": [],
+    "scriptures": [
+      {
+        "book": "Acts",
+        "references": ["Acts"],
+        "mentions": 1
+      }
+    ],
     "episodeNumber": 79,
     "episodeTopic": "Christian Identity"
   },
@@ -13369,14 +13972,34 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "Acts",
+        "references": ["Acts", "Acts 15"],
+        "mentions": 5
+      },
+      {
         "book": "Amos",
         "references": ["Amos 9:11", "Amos 9:12"],
         "mentions": 3
       },
       {
-        "book": "Acts",
-        "references": ["Acts 15"],
+        "book": "Luke",
+        "references": ["Luke"],
         "mentions": 2
+      },
+      {
+        "book": "Joshua",
+        "references": ["Joshua"],
+        "mentions": 1
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings"],
+        "mentions": 1
       },
       {
         "book": "1 John",
@@ -13813,6 +14436,11 @@
         "book": "Psalms",
         "references": ["Psalms 21", "Psalms 22", "Psalms 82"],
         "mentions": 16
+      },
+      {
+        "book": "Bel and the Dragon",
+        "references": ["Bel and the Dragon"],
+        "mentions": 1
       }
     ],
     "episodeNumber": 83
@@ -13976,6 +14604,11 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
+        "book": "2 Peter",
+        "references": ["2 Peter", "2 Peter 2"],
+        "mentions": 3
+      },
+      {
         "book": "Luke",
         "references": ["Luke 8"],
         "mentions": 2
@@ -13991,8 +14624,8 @@
         "mentions": 1
       },
       {
-        "book": "2 Peter",
-        "references": ["2 Peter 2"],
+        "book": "Jude",
+        "references": ["Jude"],
         "mentions": 1
       },
       {
@@ -14333,8 +14966,7 @@
       {
         "book": "John",
         "references": ["John"],
-        "mentions": 1,
-        "source": "auto"
+        "mentions": 1
       }
     ],
     "episodeNumber": 86
@@ -14514,6 +15146,11 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "James",
+        "references": ["James"],
+        "mentions": 3
+      },
+      {
         "book": "Isaiah",
         "references": ["Isaiah 7:14", "Isaiah 11:1"],
         "mentions": 3
@@ -14524,8 +15161,18 @@
         "mentions": 2
       },
       {
+        "book": "Matthew",
+        "references": ["Matthew"],
+        "mentions": 1
+      },
+      {
         "book": "Luke",
         "references": ["Luke 1"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark"],
         "mentions": 1
       }
     ],
@@ -14662,13 +15309,13 @@
     "scriptures": [
       {
         "book": "2 Kings",
-        "references": ["2 Kings 22"],
-        "mentions": 1
+        "references": ["2 Kings", "2 Kings 22"],
+        "mentions": 5
       },
       {
         "book": "Deuteronomy",
-        "references": ["Deuteronomy 4:19"],
-        "mentions": 1
+        "references": ["Deuteronomy", "Deuteronomy 4:19"],
+        "mentions": 3
       },
       {
         "book": "Judges",
@@ -14782,6 +15429,7 @@
       {
         "book": "Proverbs",
         "references": [
+          "Proverbs",
           "Proverbs 10:13",
           "Proverbs 13:24",
           "Proverbs 22:8",
@@ -14790,7 +15438,12 @@
           "Proverbs 26:3",
           "Proverbs 29:15"
         ],
-        "mentions": 8
+        "mentions": 9
+      },
+      {
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians", "1 Corinthians 5"],
+        "mentions": 3
       },
       {
         "book": "Leviticus",
@@ -14798,8 +15451,18 @@
         "mentions": 2
       },
       {
-        "book": "1 Corinthians",
-        "references": ["1 Corinthians 5"],
+        "book": "2 Corinthians",
+        "references": ["2 Corinthians"],
+        "mentions": 1
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Thessalonians",
+        "references": ["2 Thessalonians"],
         "mentions": 1
       }
     ],
@@ -15029,13 +15692,18 @@
       },
       {
         "book": "Isaiah",
-        "references": ["Isaiah 40", "Isaiah 40:22"],
-        "mentions": 3
+        "references": ["Isaiah", "Isaiah 40", "Isaiah 40:22"],
+        "mentions": 4
       },
       {
         "book": "Proverbs",
         "references": ["Proverbs 8:27"],
         "mentions": 3
+      },
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 1
       },
       {
         "book": "Job",
@@ -15394,8 +16062,19 @@
     "scriptures": [
       {
         "book": "Genesis",
-        "references": ["Genesis 1", "Genesis 4", "Genesis 4:1", "Genesis 10"],
-        "mentions": 5
+        "references": [
+          "Genesis",
+          "Genesis 1",
+          "Genesis 4",
+          "Genesis 4:1",
+          "Genesis 10"
+        ],
+        "mentions": 6
+      },
+      {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon"],
+        "mentions": 1
       },
       {
         "book": "Deuteronomy",
@@ -15571,6 +16250,11 @@
         "mentions": 12
       },
       {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 2
+      },
+      {
         "book": "Genesis",
         "references": ["Genesis 19", "Genesis 38"],
         "mentions": 2
@@ -15578,6 +16262,16 @@
       {
         "book": "Deuteronomy",
         "references": ["Deuteronomy 15"],
+        "mentions": 1
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges"],
+        "mentions": 1
+      },
+      {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon"],
         "mentions": 1
       }
     ],
@@ -15745,12 +16439,22 @@
     "scriptures": [
       {
         "book": "Matthew",
-        "references": ["Matthew 17:21"],
-        "mentions": 3
+        "references": ["Matthew", "Matthew 17:21"],
+        "mentions": 4
       },
       {
         "book": "Mark",
         "references": ["Mark 8"],
+        "mentions": 1
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Chronicles",
+        "references": ["1 Chronicles"],
         "mentions": 1
       }
     ],
@@ -15898,8 +16602,14 @@
     "scriptures": [
       {
         "book": "Genesis",
-        "references": ["Genesis 1", "Genesis 4", "Genesis 5", "Genesis 6"],
-        "mentions": 9
+        "references": [
+          "Genesis",
+          "Genesis 1",
+          "Genesis 4",
+          "Genesis 5",
+          "Genesis 6"
+        ],
+        "mentions": 10
       },
       {
         "book": "Joshua",
@@ -15995,6 +16705,11 @@
     ],
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 3
+      },
       {
         "book": "Romans",
         "references": ["Romans 13", "Romans 13:1"],
@@ -16140,13 +16855,18 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
-        "book": "Exodus",
-        "references": ["Exodus 3"],
-        "mentions": 1
+        "book": "Luke",
+        "references": ["Luke", "Luke 10"],
+        "mentions": 4
       },
       {
-        "book": "Luke",
-        "references": ["Luke 10"],
+        "book": "Matthew",
+        "references": ["Matthew"],
+        "mentions": 2
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 3"],
         "mentions": 1
       },
       {
@@ -16306,6 +17026,7 @@
       {
         "book": "Revelation",
         "references": [
+          "Revelation",
           "Revelation 1:18",
           "Revelation 6:8",
           "Revelation 20",
@@ -16313,12 +17034,17 @@
           "Revelation 20:13",
           "Revelation 20:14"
         ],
-        "mentions": 11
+        "mentions": 19
       },
       {
         "book": "1 Peter",
-        "references": ["1 Peter 3:18", "1 Peter 3:18-20", "1 Peter 3"],
-        "mentions": 4
+        "references": [
+          "1 Peter",
+          "1 Peter 3",
+          "1 Peter 3:18",
+          "1 Peter 3:18-20"
+        ],
+        "mentions": 10
       },
       {
         "book": "Luke",
@@ -16326,8 +17052,18 @@
         "mentions": 2
       },
       {
+        "book": "2 Peter",
+        "references": ["2 Peter"],
+        "mentions": 1
+      },
+      {
         "book": "Genesis",
         "references": ["Genesis 6"],
+        "mentions": 1
+      },
+      {
+        "book": "John",
+        "references": ["John"],
         "mentions": 1
       }
     ],
@@ -16550,8 +17286,18 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "James",
+        "references": ["James"],
+        "mentions": 2
+      },
+      {
         "book": "Matthew",
         "references": ["Matthew 13:55"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark 6:3"],
         "mentions": 1
       },
       {
@@ -16560,8 +17306,23 @@
         "mentions": 1
       },
       {
-        "book": "Mark",
-        "references": ["Mark 6:3"],
+        "book": "Acts",
+        "references": ["Acts"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Peter",
+        "references": ["2 Peter"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Timothy",
+        "references": ["2 Timothy"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Chronicles",
+        "references": ["2 Chronicles"],
         "mentions": 1
       }
     ],
@@ -16709,7 +17470,17 @@
     "scriptures": [
       {
         "book": "Philemon",
-        "references": ["Philemon 1"],
+        "references": ["Philemon", "Philemon 1"],
+        "mentions": 3
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 2
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts"],
         "mentions": 2
       },
       {
@@ -16850,8 +17621,23 @@
         "mentions": 1
       },
       {
+        "book": "1 Samuel",
+        "references": ["1 Samuel"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Kings",
+        "references": ["1 Kings"],
+        "mentions": 1
+      },
+      {
         "book": "Genesis",
         "references": ["Genesis 9"],
+        "mentions": 1
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
         "mentions": 1
       }
     ],
@@ -16976,8 +17762,8 @@
     "scriptures": [
       {
         "book": "Deuteronomy",
-        "references": ["Deuteronomy 12"],
-        "mentions": 2
+        "references": ["Deuteronomy", "Deuteronomy 12"],
+        "mentions": 5
       },
       {
         "book": "Acts",
@@ -16990,13 +17776,18 @@
         "mentions": 1
       },
       {
+        "book": "Mark",
+        "references": ["Mark 7"],
+        "mentions": 1
+      },
+      {
         "book": "Genesis",
         "references": ["Genesis 19"],
         "mentions": 1
       },
       {
-        "book": "Mark",
-        "references": ["Mark 7"],
+        "book": "John",
+        "references": ["John"],
         "mentions": 1
       }
     ],
@@ -17279,9 +18070,14 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "2 Peter",
+        "references": ["2 Peter", "2 Peter 2:1"],
+        "mentions": 11
+      },
+      {
         "book": "Exodus",
-        "references": ["Exodus 3", "Exodus 23"],
-        "mentions": 4
+        "references": ["Exodus", "Exodus 3", "Exodus 23"],
+        "mentions": 5
       },
       {
         "book": "Isaiah",
@@ -17292,6 +18088,11 @@
         "book": "Deuteronomy",
         "references": ["Deuteronomy 32"],
         "mentions": 3
+      },
+      {
+        "book": "Jude",
+        "references": ["Jude", "Jude 5"],
+        "mentions": 2
       },
       {
         "book": "Genesis",
@@ -17309,16 +18110,6 @@
         "mentions": 2
       },
       {
-        "book": "2 Peter",
-        "references": ["2 Peter 2:1"],
-        "mentions": 1
-      },
-      {
-        "book": "Jude",
-        "references": ["Jude 5"],
-        "mentions": 1
-      },
-      {
         "book": "Philippians",
         "references": ["Philippians 2:6-10"],
         "mentions": 1
@@ -17326,6 +18117,11 @@
       {
         "book": "Ezekiel",
         "references": ["Ezekiel 16:49"],
+        "mentions": 1
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts"],
         "mentions": 1
       }
     ],
@@ -17436,6 +18232,11 @@
         "book": "Exodus",
         "references": ["Exodus 2", "Exodus 7:1", "Exodus 14", "Exodus 17"],
         "mentions": 5
+      },
+      {
+        "book": "Numbers",
+        "references": ["Numbers"],
+        "mentions": 1
       },
       {
         "book": "Isaiah",
@@ -17569,19 +18370,19 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
-        "book": "Ezekiel",
-        "references": ["Ezekiel 18", "Ezekiel 22"],
-        "mentions": 5
-      },
-      {
         "book": "Luke",
-        "references": ["Luke 6", "Luke 6:34-36", "Luke 19"],
-        "mentions": 5
+        "references": ["Luke", "Luke 6", "Luke 6:34-36", "Luke 19"],
+        "mentions": 6
       },
       {
         "book": "Matthew",
-        "references": ["Matthew 25"],
-        "mentions": 2
+        "references": ["Matthew", "Matthew 25"],
+        "mentions": 6
+      },
+      {
+        "book": "Ezekiel",
+        "references": ["Ezekiel 18", "Ezekiel 22"],
+        "mentions": 5
       },
       {
         "book": "Exodus",
@@ -17696,8 +18497,8 @@
     "scriptures": [
       {
         "book": "Revelation",
-        "references": ["Revelation 21"],
-        "mentions": 1
+        "references": ["Revelation", "Revelation 21"],
+        "mentions": 9
       },
       {
         "book": "Romans",
@@ -17834,6 +18635,11 @@
         "book": "Matthew",
         "references": ["Matthew 5", "Matthew 19"],
         "mentions": 4
+      },
+      {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon"],
+        "mentions": 1
       },
       {
         "book": "Isaiah",
@@ -18084,18 +18890,38 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "scriptures": [
       {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon", "Song of Solomon 5"],
+        "mentions": 3
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew", "Matthew 5"],
+        "mentions": 2
+      },
+      {
         "book": "Ezekiel",
         "references": ["Ezekiel 16:26", "Ezekiel 23:20"],
         "mentions": 2
       },
       {
-        "book": "Isaiah",
-        "references": ["Isaiah 6"],
+        "book": "1 Kings",
+        "references": ["1 Kings", "1 Kings 14"],
+        "mentions": 2
+      },
+      {
+        "book": "John",
+        "references": ["John"],
         "mentions": 1
       },
       {
-        "book": "Song of Solomon",
-        "references": ["Song of Solomon 5"],
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 6"],
         "mentions": 1
       },
       {
@@ -18104,18 +18930,8 @@
         "mentions": 1
       },
       {
-        "book": "1 Kings",
-        "references": ["1 Kings 14"],
-        "mentions": 1
-      },
-      {
         "book": "Ephesians",
         "references": ["Ephesians 5"],
-        "mentions": 1
-      },
-      {
-        "book": "Matthew",
-        "references": ["Matthew 5"],
         "mentions": 1
       },
       {
@@ -18257,14 +19073,14 @@
         "mentions": 3
       },
       {
-        "book": "Exodus",
-        "references": ["Exodus 4", "Exodus 4:24"],
+        "book": "Judges",
+        "references": ["Judges", "Judges 11"],
         "mentions": 2
       },
       {
-        "book": "Judges",
-        "references": ["Judges 11"],
-        "mentions": 1
+        "book": "Exodus",
+        "references": ["Exodus 4", "Exodus 4:24"],
+        "mentions": 2
       }
     ],
     "episodeNumber": 111
@@ -18415,13 +19231,33 @@
     "speakers": ["Dan Beecher", "Dan McClellan"],
     "scriptures": [
       {
+        "book": "John",
+        "references": ["John", "John 13"],
+        "mentions": 8
+      },
+      {
+        "book": "2 Maccabees",
+        "references": ["2 Maccabees", "2 Maccabees 12"],
+        "mentions": 8
+      },
+      {
+        "book": "3 Maccabees",
+        "references": ["3 Maccabees"],
+        "mentions": 1
+      },
+      {
+        "book": "4 Maccabees",
+        "references": ["4 Maccabees"],
+        "mentions": 1
+      },
+      {
         "book": "Genesis",
         "references": ["Genesis 2"],
         "mentions": 1
       },
       {
-        "book": "John",
-        "references": ["John 13"],
+        "book": "1 Maccabees",
+        "references": ["1 Maccabees"],
         "mentions": 1
       }
     ],
@@ -18571,6 +19407,11 @@
         "mentions": 6
       },
       {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 2
+      },
+      {
         "book": "Galatians",
         "references": ["Galatians 3:28"],
         "mentions": 1
@@ -18593,6 +19434,11 @@
       {
         "book": "Psalms",
         "references": ["Psalms 34:17-20"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Peter",
+        "references": ["2 Peter"],
         "mentions": 1
       },
       {
@@ -18887,8 +19733,8 @@
     "scriptures": [
       {
         "book": "Genesis",
-        "references": ["Genesis 1", "Genesis 6"],
-        "mentions": 5
+        "references": ["Genesis", "Genesis 1", "Genesis 6"],
+        "mentions": 6
       },
       {
         "book": "Psalms",
@@ -18896,18 +19742,23 @@
         "mentions": 4
       },
       {
+        "book": "Haggai",
+        "references": ["Haggai", "Haggai 1", "Haggai 2"],
+        "mentions": 3
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah", "Isaiah 27:1"],
+        "mentions": 2
+      },
+      {
         "book": "Proverbs",
         "references": ["Proverbs 22"],
         "mentions": 2
       },
       {
-        "book": "Haggai",
-        "references": ["Haggai 1", "Haggai 2"],
-        "mentions": 2
-      },
-      {
-        "book": "Isaiah",
-        "references": ["Isaiah 27:1"],
+        "book": "Daniel",
+        "references": ["Daniel"],
         "mentions": 1
       }
     ],
@@ -19102,6 +19953,11 @@
         "mentions": 6
       },
       {
+        "book": "2 Chronicles",
+        "references": ["2 Chronicles"],
+        "mentions": 3
+      },
+      {
         "book": "Exodus",
         "references": ["Exodus 15", "Exodus 23:24"],
         "mentions": 3
@@ -19110,6 +19966,11 @@
         "book": "Numbers",
         "references": ["Numbers 25", "Numbers 31"],
         "mentions": 2
+      },
+      {
+        "book": "2 Samuel",
+        "references": ["2 Samuel"],
+        "mentions": 1
       },
       {
         "book": "Ezekiel",
@@ -19124,6 +19985,21 @@
       {
         "book": "Leviticus",
         "references": ["Leviticus 18"],
+        "mentions": 1
+      },
+      {
+        "book": "Joshua",
+        "references": ["Joshua"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Samuel",
+        "references": ["1 Samuel"],
+        "mentions": 1
+      },
+      {
+        "book": "Ruth",
+        "references": ["Ruth"],
         "mentions": 1
       },
       {
@@ -19345,8 +20221,8 @@
     "scriptures": [
       {
         "book": "Matthew",
-        "references": ["Matthew 25"],
-        "mentions": 5
+        "references": ["Matthew", "Matthew 25"],
+        "mentions": 8
       },
       {
         "book": "Leviticus",
@@ -19356,6 +20232,11 @@
       {
         "book": "Hosea",
         "references": ["Hosea 6:6"],
+        "mentions": 1
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus"],
         "mentions": 1
       }
     ]
@@ -19504,8 +20385,8 @@
     "scriptures": [
       {
         "book": "Genesis",
-        "references": ["Genesis 1", "Genesis 11", "Genesis 12"],
-        "mentions": 9
+        "references": ["Genesis", "Genesis 1", "Genesis 11", "Genesis 12"],
+        "mentions": 11
       },
       {
         "book": "Psalms",
@@ -19515,6 +20396,11 @@
       {
         "book": "Ezekiel",
         "references": ["Ezekiel 38"],
+        "mentions": 1
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
         "mentions": 1
       },
       {
@@ -19703,34 +20589,44 @@
     "episodeNumber": 119,
     "scriptures": [
       {
-        "book": "Isaiah",
-        "references": ["Isaiah 1"],
-        "mentions": 1,
-        "source": "auto"
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 20
       },
       {
         "book": "John",
         "references": ["John"],
-        "mentions": 8,
-        "source": "auto"
-      },
-      {
-        "book": "Mark",
-        "references": ["Mark"],
-        "mentions": 1,
-        "source": "auto"
+        "mentions": 8
       },
       {
         "book": "Matthew",
         "references": ["Matthew"],
-        "mentions": 1,
-        "source": "auto"
+        "mentions": 1
       },
       {
-        "book": "Revelation",
-        "references": ["Revelation"],
-        "mentions": 20,
-        "source": "auto"
+        "book": "1 Peter",
+        "references": ["1 Peter"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark"],
+        "mentions": 1
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 1"],
+        "mentions": 1
+      },
+      {
+        "book": "Letter of Jeremiah",
+        "references": ["Letter of Jeremiah"],
+        "mentions": 1
+      },
+      {
+        "book": "Bel and the Dragon",
+        "references": ["Bel and the Dragon"],
+        "mentions": 1
       }
     ]
   },
@@ -19886,17 +20782,17 @@
     "scriptures": [
       {
         "book": "Genesis",
-        "references": ["Genesis 2", "Genesis 3"],
-        "mentions": 4
+        "references": ["Genesis", "Genesis 2", "Genesis 3"],
+        "mentions": 5
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah", "Isaiah 1", "Isaiah 6"],
+        "mentions": 5
       },
       {
         "book": "Exodus",
         "references": ["Exodus 2:17", "Exodus 33"],
-        "mentions": 3
-      },
-      {
-        "book": "Isaiah",
-        "references": ["Isaiah 1", "Isaiah 6"],
         "mentions": 3
       },
       {
@@ -19907,6 +20803,11 @@
       {
         "book": "Matthew",
         "references": ["Matthew 1:21"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Chronicles",
+        "references": ["1 Chronicles"],
         "mentions": 1
       },
       {
@@ -20051,18 +20952,6 @@
     "episodeNumber": 121,
     "scriptures": [
       {
-        "book": "1 Samuel",
-        "references": ["1 Samuel 19", "1 Samuel 19:13"],
-        "mentions": 2,
-        "source": "auto"
-      },
-      {
-        "book": "Exodus",
-        "references": ["Exodus 21", "Exodus 22"],
-        "mentions": 2,
-        "source": "auto"
-      },
-      {
         "book": "Genesis",
         "references": [
           "Genesis",
@@ -20072,14 +20961,22 @@
           "Genesis 31",
           "Genesis 31:19"
         ],
-        "mentions": 7,
-        "source": "auto"
+        "mentions": 7
+      },
+      {
+        "book": "1 Samuel",
+        "references": ["1 Samuel 19", "1 Samuel", "1 Samuel 19:13"],
+        "mentions": 3
       },
       {
         "book": "Judges",
         "references": ["Judges 17", "Judges 18:3"],
-        "mentions": 3,
-        "source": "auto"
+        "mentions": 3
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 21", "Exodus 22"],
+        "mentions": 2
       }
     ]
   },
@@ -20217,6 +21114,11 @@
       {
         "book": "Isaiah",
         "references": ["Isaiah 53"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Thessalonians",
+        "references": ["2 Thessalonians"],
         "mentions": 1
       },
       {
@@ -20426,8 +21328,8 @@
     "scriptures": [
       {
         "book": "1 Kings",
-        "references": ["1 Kings 16", "1 Kings 21:25", "1 Kings 18"],
-        "mentions": 4
+        "references": ["1 Kings 16", "1 Kings", "1 Kings 18", "1 Kings 21:25"],
+        "mentions": 7
       },
       {
         "book": "Revelation",
@@ -20437,6 +21339,21 @@
       {
         "book": "Judges",
         "references": ["Judges 5"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Maccabees",
+        "references": ["2 Maccabees"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 1
+      },
+      {
+        "book": "John",
+        "references": ["John"],
         "mentions": 1
       }
     ]
@@ -20622,6 +21539,11 @@
         "mentions": 5
       },
       {
+        "book": "Job",
+        "references": ["Job 1:6", "Job 2", "Job 7:5"],
+        "mentions": 3
+      },
+      {
         "book": "Psalms",
         "references": ["Psalms 29", "Psalms 82", "Psalms 104:4"],
         "mentions": 3
@@ -20629,11 +21551,6 @@
       {
         "book": "Exodus",
         "references": ["Exodus 21", "Exodus 22"],
-        "mentions": 3
-      },
-      {
-        "book": "Job",
-        "references": ["Job 1:6", "Job 2", "Job 7:5"],
         "mentions": 3
       },
       {
@@ -20806,13 +21723,28 @@
     "scriptures": [
       {
         "book": "Psalms",
-        "references": ["Psalms 151", "Psalms 152"],
-        "mentions": 13
+        "references": ["Psalms", "Psalms 151", "Psalms 152"],
+        "mentions": 14
       },
       {
         "book": "1 Kings",
-        "references": ["1 Kings 15:12", "1 Kings 14:24", "1 Kings 15"],
-        "mentions": 5
+        "references": [
+          "1 Kings",
+          "1 Kings 15",
+          "1 Kings 15:12",
+          "1 Kings 14:24"
+        ],
+        "mentions": 6
+      },
+      {
+        "book": "2 Samuel",
+        "references": ["2 Samuel", "2 Samuel 21:19"],
+        "mentions": 3
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings", "2 Kings 23:7"],
+        "mentions": 2
       },
       {
         "book": "Genesis",
@@ -20825,13 +21757,13 @@
         "mentions": 2
       },
       {
-        "book": "Deuteronomy",
-        "references": ["Deuteronomy 23:17"],
-        "mentions": 1
+        "book": "3 Maccabees",
+        "references": ["3 Maccabees"],
+        "mentions": 2
       },
       {
-        "book": "2 Kings",
-        "references": ["2 Kings 23:7"],
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 23:17"],
         "mentions": 1
       },
       {
@@ -20840,8 +21772,8 @@
         "mentions": 1
       },
       {
-        "book": "2 Samuel",
-        "references": ["2 Samuel 21:19"],
+        "book": "Job",
+        "references": ["Job 36:14"],
         "mentions": 1
       },
       {
@@ -20850,8 +21782,13 @@
         "mentions": 1
       },
       {
-        "book": "Job",
-        "references": ["Job 36:14"],
+        "book": "Prayer of Manasseh",
+        "references": ["Prayer of Manasseh"],
+        "mentions": 1
+      },
+      {
+        "book": "4 Maccabees",
+        "references": ["4 Maccabees"],
         "mentions": 1
       }
     ]
@@ -21026,26 +21963,42 @@
           "Deuteronomy 6:1",
           "Deuteronomy 6:4"
         ],
-        "mentions": 16,
-        "source": "auto"
+        "mentions": 16
+      },
+      {
+        "book": "Letter of Jeremiah",
+        "references": ["Letter of Jeremiah"],
+        "mentions": 7
+      },
+      {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon", "Song of Solomon 6:9"],
+        "mentions": 6
       },
       {
         "book": "Isaiah",
         "references": ["Isaiah 4", "Isaiah 126"],
-        "mentions": 2,
-        "source": "auto"
+        "mentions": 2
+      },
+      {
+        "book": "Baruch",
+        "references": ["Baruch"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians"],
+        "mentions": 1
       },
       {
         "book": "Lamentations",
         "references": ["Lamentations"],
-        "mentions": 1,
-        "source": "auto"
-      },
-      {
-        "book": "Song of Solomon",
-        "references": ["Song of Solomon 6:9"],
-        "mentions": 3,
-        "source": "auto"
+        "mentions": 1
       }
     ]
   },
@@ -21160,6 +22113,11 @@
     "episodeNumber": 127,
     "scriptures": [
       {
+        "book": "1 Samuel",
+        "references": ["1 Samuel 3", "1 Samuel", "1 Samuel 4:1"],
+        "mentions": 7
+      },
+      {
         "book": "Numbers",
         "references": ["Numbers 10"],
         "mentions": 3
@@ -21175,8 +22133,8 @@
         "mentions": 2
       },
       {
-        "book": "1 Samuel",
-        "references": ["1 Samuel 3", "1 Samuel 4:1"],
+        "book": "Letter of Jeremiah",
+        "references": ["Letter of Jeremiah"],
         "mentions": 2
       },
       {
@@ -21314,13 +22272,40 @@
     "scriptures": [
       {
         "book": "John",
-        "references": ["John 1", "John 1:1", "John 1:12", "John 10", "John 21"],
-        "mentions": 7
+        "references": [
+          "John",
+          "John 1",
+          "John 1:1",
+          "John 1:12",
+          "John 10",
+          "John 21"
+        ],
+        "mentions": 46
+      },
+      {
+        "book": "3 John",
+        "references": ["3 John"],
+        "mentions": 5
+      },
+      {
+        "book": "1 John",
+        "references": ["1 John"],
+        "mentions": 2
       },
       {
         "book": "Psalms",
         "references": ["Psalms 82"],
         "mentions": 2
+      },
+      {
+        "book": "2 John",
+        "references": ["2 John"],
+        "mentions": 1
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
       },
       {
         "book": "Isaiah",
@@ -21464,13 +22449,13 @@
     "episodeNumber": 129,
     "scriptures": [
       {
-        "book": "Ezekiel",
-        "references": ["Ezekiel 16", "Ezekiel 16:17"],
+        "book": "Judges",
+        "references": ["Judges 6", "Judges 13"],
         "mentions": 2
       },
       {
-        "book": "Judges",
-        "references": ["Judges 6", "Judges 13"],
+        "book": "Ezekiel",
+        "references": ["Ezekiel 16", "Ezekiel 16:17"],
         "mentions": 2
       },
       {
@@ -21634,40 +22619,44 @@
     "episodeNumber": 130,
     "scriptures": [
       {
-        "book": "Daniel",
-        "references": ["Daniel"],
-        "mentions": 1,
-        "source": "auto"
-      },
-      {
-        "book": "Exodus",
-        "references": ["Exodus 24:10"],
-        "mentions": 1,
-        "source": "auto"
-      },
-      {
-        "book": "Isaiah",
-        "references": ["Isaiah 3:29", "Isaiah 45", "Isaiah 45:1"],
-        "mentions": 3,
-        "source": "auto"
+        "book": "Letter of Jeremiah",
+        "references": ["Letter of Jeremiah"],
+        "mentions": 7
       },
       {
         "book": "Jeremiah",
         "references": ["Jeremiah", "Jeremiah 29", "Jeremiah 36"],
-        "mentions": 5,
-        "source": "auto"
+        "mentions": 5
       },
       {
-        "book": "Matthew",
-        "references": ["Matthew 17:21"],
-        "mentions": 1,
-        "source": "auto"
+        "book": "Baruch",
+        "references": ["Baruch", "Baruch 3:8", "Baruch 5", "Baruch 6"],
+        "mentions": 4
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 3:29", "Isaiah 45", "Isaiah 45:1"],
+        "mentions": 3
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 24:10"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 1
       },
       {
         "book": "Proverbs",
         "references": ["Proverbs 8"],
-        "mentions": 1,
-        "source": "auto"
+        "mentions": 1
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew 17:21"],
+        "mentions": 1
       }
     ]
   },
@@ -21793,8 +22782,18 @@
         "mentions": 11
       },
       {
+        "book": "2 Peter",
+        "references": ["2 Peter"],
+        "mentions": 1
+      },
+      {
         "book": "Luke",
         "references": ["Luke 12:33"],
+        "mentions": 1
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts"],
         "mentions": 1
       }
     ]
@@ -21927,8 +22926,8 @@
     "scriptures": [
       {
         "book": "Acts",
-        "references": ["Acts 4", "Acts 7:43"],
-        "mentions": 5
+        "references": ["Acts 4", "Acts 7:43", "Acts 17"],
+        "mentions": 10
       },
       {
         "book": "Amos",
@@ -21936,13 +22935,23 @@
         "mentions": 3
       },
       {
+        "book": "1 Thessalonians",
+        "references": ["1 Thessalonians", "1 Thessalonians 5:3"],
+        "mentions": 2
+      },
+      {
         "book": "Luke",
         "references": ["Luke 12", "Luke 18"],
         "mentions": 2
       },
       {
-        "book": "1 Thessalonians",
-        "references": ["1 Thessalonians 5:3"],
+        "book": "1 John",
+        "references": ["1 John"],
+        "mentions": 1
+      },
+      {
+        "book": "2 John",
+        "references": ["2 John"],
         "mentions": 1
       },
       {
@@ -22171,19 +23180,29 @@
         "mentions": 5
       },
       {
-        "book": "1 Corinthians",
-        "references": ["1 Corinthians 7:1-5"],
+        "book": "Hosea",
+        "references": ["Hosea", "Hosea 1:2", "Hosea 6:6", "Hosea 14:9"],
+        "mentions": 4
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew"],
         "mentions": 3
       },
       {
-        "book": "Hosea",
-        "references": ["Hosea 1:2", "Hosea 6:6", "Hosea 14:9"],
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians 7:1-5"],
         "mentions": 3
       },
       {
         "book": "Isaiah",
         "references": ["Isaiah 15", "Isaiah 20"],
         "mentions": 2
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
       },
       {
         "book": "2 Chronicles",
@@ -22316,6 +23335,11 @@
         "book": "Ecclesiastes",
         "references": ["Ecclesiastes 5", "Ecclesiastes 11:5"],
         "mentions": 2
+      },
+      {
+        "book": "Numbers",
+        "references": ["Numbers"],
+        "mentions": 1
       },
       {
         "book": "Exodus",
@@ -22510,6 +23534,11 @@
         "mentions": 5
       },
       {
+        "book": "2 Thessalonians",
+        "references": ["2 Thessalonians"],
+        "mentions": 2
+      },
+      {
         "book": "1 Corinthians",
         "references": ["1 Corinthians 11", "1 Corinthians 7"],
         "mentions": 2
@@ -22518,6 +23547,11 @@
         "book": "Ezekiel",
         "references": ["Ezekiel 1", "Ezekiel 1:4"],
         "mentions": 2
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
       },
       {
         "book": "Zechariah",
@@ -22651,8 +23685,23 @@
         "mentions": 1
       },
       {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 1
+      },
+      {
+        "book": "Luke",
+        "references": ["Luke"],
+        "mentions": 1
+      },
+      {
         "book": "Genesis",
         "references": ["Genesis 6:2-4"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark"],
         "mentions": 1
       }
     ]
@@ -22940,6 +23989,7 @@
       {
         "book": "Genesis",
         "references": [
+          "Genesis",
           "Genesis 1",
           "Genesis 1:1",
           "Genesis 2:17",
@@ -22947,7 +23997,7 @@
           "Genesis 19",
           "Genesis 50"
         ],
-        "mentions": 13
+        "mentions": 19
       },
       {
         "book": "Isaiah",
@@ -23077,18 +24127,28 @@
     "episodeNumber": 138,
     "scriptures": [
       {
+        "book": "2 Thessalonians",
+        "references": ["2 Thessalonians", "2 Thessalonians 3:10"],
+        "mentions": 5
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis"],
+        "mentions": 2
+      },
+      {
         "book": "Isaiah",
         "references": ["Isaiah 2"],
         "mentions": 1
       },
       {
-        "book": "Luke",
-        "references": ["Luke 12"],
+        "book": "2 Timothy",
+        "references": ["2 Timothy"],
         "mentions": 1
       },
       {
-        "book": "2 Thessalonians",
-        "references": ["2 Thessalonians 3:10"],
+        "book": "Luke",
+        "references": ["Luke 12"],
         "mentions": 1
       }
     ]
@@ -23249,8 +24309,8 @@
     "scriptures": [
       {
         "book": "1 Timothy",
-        "references": ["1 Timothy 3:2", "1 Timothy 5:9"],
-        "mentions": 8
+        "references": ["1 Timothy", "1 Timothy 3:2", "1 Timothy 5:9"],
+        "mentions": 9
       },
       {
         "book": "Genesis",
@@ -23268,6 +24328,16 @@
         "mentions": 2
       },
       {
+        "book": "1 Kings",
+        "references": ["1 Kings", "1 Kings 11"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Samuel",
+        "references": ["2 Samuel"],
+        "mentions": 1
+      },
+      {
         "book": "Isaiah",
         "references": ["Isaiah 2"],
         "mentions": 1
@@ -23283,6 +24353,11 @@
         "mentions": 1
       },
       {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 1
+      },
+      {
         "book": "Malachi",
         "references": ["Malachi 2:15-16"],
         "mentions": 1
@@ -23290,11 +24365,6 @@
       {
         "book": "Romans",
         "references": ["Romans 11:29"],
-        "mentions": 1
-      },
-      {
-        "book": "1 Kings",
-        "references": ["1 Kings 11"],
         "mentions": 1
       }
     ]
@@ -23442,14 +24512,14 @@
     "episodeNumber": 140,
     "scriptures": [
       {
+        "book": "John",
+        "references": ["John", "John 5:4"],
+        "mentions": 4
+      },
+      {
         "book": "Matthew",
         "references": ["Matthew 17:21"],
         "mentions": 2
-      },
-      {
-        "book": "John",
-        "references": ["John 5:4"],
-        "mentions": 1
       },
       {
         "book": "1 Kings",
@@ -23603,18 +24673,30 @@
     "scriptures": [
       {
         "book": "Luke",
-        "references": ["Luke 1", "Luke 2", "Luke 2:2", "Luke 2:3", "Luke 2:39"],
-        "mentions": 10
-      },
-      {
-        "book": "Isaiah",
-        "references": ["Isaiah 7:14", "Isaiah 11:1"],
-        "mentions": 9
+        "references": [
+          "Luke",
+          "Luke 1",
+          "Luke 2",
+          "Luke 2:2",
+          "Luke 2:3",
+          "Luke 2:39"
+        ],
+        "mentions": 15
       },
       {
         "book": "Matthew",
-        "references": ["Matthew 1:23", "Matthew 2:6", "Matthew 2:18"],
-        "mentions": 5
+        "references": [
+          "Matthew",
+          "Matthew 1:23",
+          "Matthew 2:6",
+          "Matthew 2:18"
+        ],
+        "mentions": 11
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah", "Isaiah 7:14", "Isaiah 11:1"],
+        "mentions": 10
       },
       {
         "book": "Micah",
@@ -23622,8 +24704,23 @@
         "mentions": 2
       },
       {
+        "book": "Mark",
+        "references": ["Mark"],
+        "mentions": 2
+      },
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 1
+      },
+      {
         "book": "Jeremiah",
         "references": ["Jeremiah 31"],
+        "mentions": 1
+      },
+      {
+        "book": "Hosea",
+        "references": ["Hosea"],
         "mentions": 1
       }
     ]
@@ -23883,8 +24980,18 @@
         "mentions": 1
       },
       {
+        "book": "1 Chronicles",
+        "references": ["1 Chronicles"],
+        "mentions": 1
+      },
+      {
         "book": "1 Timothy",
         "references": ["1 Timothy 2:14"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Timothy",
+        "references": ["2 Timothy"],
         "mentions": 1
       },
       {
@@ -24043,12 +25150,22 @@
     "scriptures": [
       {
         "book": "John",
-        "references": ["John 3:24", "John 21"],
-        "mentions": 4
+        "references": ["John", "John 3:24", "John 21"],
+        "mentions": 6
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark", "Mark 6", "Mark 6:16"],
+        "mentions": 3
       },
       {
         "book": "Matthew",
         "references": ["Matthew 2:6", "Matthew 14"],
+        "mentions": 3
+      },
+      {
+        "book": "Luke",
+        "references": ["Luke", "Luke 9:7", "Luke 17:7"],
         "mentions": 3
       },
       {
@@ -24057,8 +25174,8 @@
         "mentions": 3
       },
       {
-        "book": "Luke",
-        "references": ["Luke 9:7", "Luke 17:7"],
+        "book": "Acts",
+        "references": ["Acts 20", "Acts 20:28"],
         "mentions": 2
       },
       {
@@ -24069,16 +25186,6 @@
       {
         "book": "Psalms",
         "references": ["Psalms 2", "Psalms 2:9"],
-        "mentions": 2
-      },
-      {
-        "book": "Mark",
-        "references": ["Mark 6", "Mark 6:16"],
-        "mentions": 2
-      },
-      {
-        "book": "Acts",
-        "references": ["Acts 20", "Acts 20:28"],
         "mentions": 2
       },
       {
@@ -24268,8 +25375,13 @@
       },
       {
         "book": "Deuteronomy",
-        "references": ["Deuteronomy 18", "Deuteronomy 20", "Deuteronomy 22"],
-        "mentions": 5
+        "references": [
+          "Deuteronomy",
+          "Deuteronomy 18",
+          "Deuteronomy 20",
+          "Deuteronomy 22"
+        ],
+        "mentions": 6
       },
       {
         "book": "Matthew",
@@ -24279,6 +25391,11 @@
       {
         "book": "Mark",
         "references": ["Mark 1", "Mark 1:9"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings", "2 Kings 3"],
         "mentions": 2
       },
       {
@@ -24302,8 +25419,8 @@
         "mentions": 1
       },
       {
-        "book": "2 Kings",
-        "references": ["2 Kings 3"],
+        "book": "John",
+        "references": ["John"],
         "mentions": 1
       }
     ]
@@ -24470,17 +25587,33 @@
       {
         "book": "Deuteronomy",
         "references": [
+          "Deuteronomy",
           "Deuteronomy 5:7",
           "Deuteronomy 6:4",
           "Deuteronomy 28",
           "Deuteronomy 30"
         ],
-        "mentions": 6
+        "mentions": 10
       },
       {
         "book": "Matthew",
-        "references": ["Matthew 5"],
-        "mentions": 3
+        "references": ["Matthew", "Matthew 5"],
+        "mentions": 7
+      },
+      {
+        "book": "2 Samuel",
+        "references": ["2 Samuel"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings"],
+        "mentions": 1
+      },
+      {
+        "book": "Jonah",
+        "references": ["Jonah"],
+        "mentions": 1
       }
     ]
   },
@@ -24612,22 +25745,19 @@
     "episodeNumber": 147,
     "scriptures": [
       {
-        "book": "Daniel",
-        "references": ["Daniel"],
-        "mentions": 2,
-        "source": "auto"
-      },
-      {
         "book": "Esther",
         "references": ["Esther"],
-        "mentions": 6,
-        "source": "auto"
+        "mentions": 6
       },
       {
         "book": "Matthew",
         "references": ["Matthew", "Matthew 6", "Matthew 28"],
-        "mentions": 3,
-        "source": "auto"
+        "mentions": 3
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 2
       }
     ]
   },
@@ -24768,8 +25898,13 @@
     "scriptures": [
       {
         "book": "Mark",
-        "references": ["Mark 3"],
-        "mentions": 3
+        "references": ["Mark", "Mark 3"],
+        "mentions": 4
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts"],
+        "mentions": 2
       },
       {
         "book": "Luke",
@@ -24913,13 +26048,18 @@
         "mentions": 5
       },
       {
-        "book": "1 Timothy",
-        "references": ["1 Timothy 2"],
+        "book": "2 Samuel",
+        "references": ["2 Samuel"],
         "mentions": 1
       },
       {
         "book": "Acts",
         "references": ["Acts 7:16"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Timothy",
+        "references": ["1 Timothy 2"],
         "mentions": 1
       }
     ]
@@ -25133,8 +26273,8 @@
       },
       {
         "book": "Acts",
-        "references": ["Acts 7", "Acts 7:53", "Acts 15"],
-        "mentions": 7
+        "references": ["Acts", "Acts 7", "Acts 7:53", "Acts 15"],
+        "mentions": 12
       },
       {
         "book": "Exodus",
@@ -25164,12 +26304,27 @@
       },
       {
         "book": "Amos",
-        "references": ["Amos 5", "Amos 5:25"],
-        "mentions": 3
+        "references": ["Amos", "Amos 5", "Amos 5:25"],
+        "mentions": 4
+      },
+      {
+        "book": "Job",
+        "references": ["Job"],
+        "mentions": 2
       },
       {
         "book": "Joshua",
         "references": ["Joshua 24:32"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Peter",
+        "references": ["1 Peter"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Peter",
+        "references": ["2 Peter"],
         "mentions": 1
       }
     ]
@@ -25289,6 +26444,11 @@
         "book": "Genesis",
         "references": ["Genesis 1", "Genesis 2", "Genesis 2:19"],
         "mentions": 5
+      },
+      {
+        "book": "Bel and the Dragon",
+        "references": ["Bel and the Dragon"],
+        "mentions": 1
       },
       {
         "book": "James",
@@ -25437,6 +26597,11 @@
     "episodeNumber": 152,
     "scriptures": [
       {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon"],
+        "mentions": 5
+      },
+      {
         "book": "Genesis",
         "references": ["Genesis 1", "Genesis 1:1", "Genesis 5", "Genesis 5:1"],
         "mentions": 4
@@ -25449,6 +26614,16 @@
       {
         "book": "2 Kings",
         "references": ["2 Kings 3"],
+        "mentions": 1
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
         "mentions": 1
       }
     ]
@@ -25554,13 +26729,13 @@
     "scriptures": [
       {
         "book": "2 John",
-        "references": ["2 John 1", "2 John 12"],
-        "mentions": 6
+        "references": ["2 John 1", "2 John", "2 John 12"],
+        "mentions": 21
       },
       {
         "book": "3 John",
-        "references": ["3 John 1"],
-        "mentions": 5
+        "references": ["3 John", "3 John 1"],
+        "mentions": 14
       },
       {
         "book": "Isaiah",
@@ -25703,6 +26878,11 @@
     "episodeNumber": 154,
     "scriptures": [
       {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon", "Song of Solomon 6:9"],
+        "mentions": 14
+      },
+      {
         "book": "Deuteronomy",
         "references": ["Deuteronomy 16:16"],
         "mentions": 6
@@ -25718,13 +26898,18 @@
         "mentions": 4
       },
       {
-        "book": "Song of Solomon",
-        "references": ["Song of Solomon 6:9"],
+        "book": "Wisdom of Solomon",
+        "references": ["Wisdom of Solomon"],
         "mentions": 1
       },
       {
         "book": "Psalms",
         "references": ["Psalms 42:2"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Samuel",
+        "references": ["1 Samuel"],
         "mentions": 1
       }
     ]
@@ -25908,18 +27093,23 @@
         "mentions": 3
       },
       {
-        "book": "Psalms",
-        "references": ["Psalms 82"],
-        "mentions": 2
-      },
-      {
         "book": "Job",
         "references": ["Job 1", "Job 2"],
         "mentions": 2
       },
       {
+        "book": "Psalms",
+        "references": ["Psalms 82"],
+        "mentions": 2
+      },
+      {
         "book": "Deuteronomy",
         "references": ["Deuteronomy 4"],
+        "mentions": 1
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
         "mentions": 1
       },
       {
@@ -26150,12 +27340,37 @@
     "scriptures": [
       {
         "book": "1 Samuel",
-        "references": ["1 Samuel 15"],
+        "references": ["1 Samuel", "1 Samuel 15"],
+        "mentions": 6
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts", "Acts 12:2"],
+        "mentions": 4
+      },
+      {
+        "book": "John",
+        "references": ["John"],
         "mentions": 3
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 3
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis"],
+        "mentions": 2
       },
       {
         "book": "Exodus",
         "references": ["Exodus 17", "Exodus 17:14"],
+        "mentions": 2
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew"],
         "mentions": 2
       },
       {
@@ -26164,8 +27379,8 @@
         "mentions": 1
       },
       {
-        "book": "Acts",
-        "references": ["Acts 12:2"],
+        "book": "Joshua",
+        "references": ["Joshua"],
         "mentions": 1
       }
     ]
@@ -26371,7 +27586,22 @@
       },
       {
         "book": "2 Peter",
-        "references": ["2 Peter 2"],
+        "references": ["2 Peter", "2 Peter 2"],
+        "mentions": 4
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus"],
+        "mentions": 1
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
         "mentions": 1
       }
     ]
@@ -26530,6 +27760,7 @@
       {
         "book": "Mark",
         "references": [
+          "Mark",
           "Mark 1:11",
           "Mark 3:20",
           "Mark 6",
@@ -26537,7 +27768,12 @@
           "Mark 8",
           "Mark 9"
         ],
-        "mentions": 11
+        "mentions": 15
+      },
+      {
+        "book": "John",
+        "references": ["John", "John 6:1"],
+        "mentions": 5
       },
       {
         "book": "Psalms",
@@ -26545,13 +27781,13 @@
         "mentions": 3
       },
       {
-        "book": "Exodus",
-        "references": ["Exodus 34"],
+        "book": "Judges",
+        "references": ["Judges 4", "Judges 5"],
         "mentions": 2
       },
       {
-        "book": "Judges",
-        "references": ["Judges 4", "Judges 5"],
+        "book": "Exodus",
+        "references": ["Exodus 34"],
         "mentions": 2
       },
       {
@@ -26575,6 +27811,16 @@
         "mentions": 1
       },
       {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
+      },
+      {
+        "book": "Malachi",
+        "references": ["Malachi"],
+        "mentions": 1
+      },
+      {
         "book": "Deuteronomy",
         "references": ["Deuteronomy 18"],
         "mentions": 1
@@ -26582,11 +27828,6 @@
       {
         "book": "2 Kings",
         "references": ["2 Kings 4"],
-        "mentions": 1
-      },
-      {
-        "book": "John",
-        "references": ["John 6:1"],
         "mentions": 1
       }
     ]
@@ -26770,6 +28011,16 @@
     "speakers": ["Dan McClellan", "Dan Beecher"],
     "episodeNumber": 158,
     "scriptures": [
+      {
+        "book": "2 Maccabees",
+        "references": ["2 Maccabees"],
+        "mentions": 15
+      },
+      {
+        "book": "1 Maccabees",
+        "references": ["1 Maccabees"],
+        "mentions": 5
+      },
       {
         "book": "Isaiah",
         "references": ["Isaiah", "Isaiah 167"],
@@ -26957,6 +28208,16 @@
     "episodeNumber": 159,
     "scriptures": [
       {
+        "book": "1 Esdras",
+        "references": ["1 Esdras"],
+        "mentions": 20
+      },
+      {
+        "book": "2 Chronicles",
+        "references": ["2 Chronicles"],
+        "mentions": 4
+      },
+      {
         "book": "Isaiah",
         "references": ["Isaiah", "Isaiah 1", "Isaiah 45", "Isaiah 45:1"],
         "mentions": 4
@@ -26974,6 +28235,11 @@
       {
         "book": "Daniel",
         "references": ["Daniel"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Esdras",
+        "references": ["2 Esdras"],
         "mentions": 1
       },
       {

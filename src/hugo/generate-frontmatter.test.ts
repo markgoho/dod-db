@@ -192,6 +192,49 @@ describe("generateFrontmatter", () => {
     expect(actual).toBe(expected);
   });
 
+  test("adds scripture books from verified segment topic labels", () => {
+    const video: ProcessedVideo = {
+      videoId: "segment-books-123",
+      title: "Episode 159",
+      publishedAt: "2026-04-19T15:10:43Z",
+      processedAt: "2026-04-19T16:00:00Z",
+      transcriptPath: "data/transcripts/2026-04-19-mysterious-texts.txt",
+      episodeNumber: 159,
+      speakers: ["Dan McClellan", "Dan Beecher"],
+      scriptures: [
+        {
+          book: "Ezra",
+          references: ["Ezra"],
+          mentions: 1,
+        },
+      ],
+      segments: [
+        {
+          type: "chapter-and-verse",
+          startTimestamp: "[00:01:22.772]",
+          confidence: "verified",
+          detectionMethod: "manual",
+          topicLabel: "1 Esdras",
+          summary: "Greek Ezra's additions and Persian-era setting",
+        },
+        {
+          type: "chapter-and-verse",
+          startTimestamp: "[00:29:47.000]",
+          confidence: "verified",
+          detectionMethod: "manual",
+          topicLabel: "Bel and the Dragon",
+          summary: "Daniel addition discussed as a standalone work",
+        },
+      ],
+    };
+
+    const actual = generateFrontmatter(video, "Mysterious Texts");
+
+    expect(actual).toContain(
+      "books:\n  - Ezra\n  - 1 Esdras\n  - Bel and the Dragon",
+    );
+  });
+
   test("includes audioUrl when present", async () => {
     const video: ProcessedVideo = {
       videoId: "audio123",

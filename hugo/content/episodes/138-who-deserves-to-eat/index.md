@@ -21,9 +21,11 @@ tags:
   - Jericho
   - Saint Titus
 books:
-  - Isaiah
-  - Luke
   - 2 Thessalonians
+  - Genesis
+  - Isaiah
+  - 2 Timothy
+  - Luke
 segments:
   - Chapter and Verse
   - Taking Issue
@@ -50,7 +52,7 @@ draft: false
 {{< line >}}[00:00:37.360] Dan McClellan: All things considered. Yeah. Yeah.{{< /line >}}
 {{< line >}}[00:00:39.865] Dan Beecher: Weighing one thing against another. We're coasting on it. We're going just fine.{{< /line >}}
 {{< line >}}[00:00:45.147] Dan McClellan: In this economy, with a man in the White House, what else can you expect?{{< /line >}}
-{{< line >}}[00:00:50.301] Dan Beecher: Well, yeah. What can one do? We're doing okay. Today we're going to be talking about some interesting stuff. I'm actually fascinated by a few of the things we're going to be talking about. First, we're going to do a chapter and verse. We're going to hit some 2 Thessalonians.{{< /line >}}
+{{< line >}}[00:00:50.301] Dan Beecher: Well, yeah. What can one do? We're doing okay. Today we're going to be talking about some interesting stuff. I'm actually fascinated by a few of the things we're going to be talking about. First, we're going to do a chapter and verse. We're going to hit some {{< scripture ref="2 Thessalonians" >}}.{{< /line >}}
 {{< line >}}[00:01:08.257] Dan McClellan: Love Thessalonians.{{< /line >}}
 {{< line >}}[00:01:09.701] Dan Beecher: Yeah, yeah. Well, one, one, you know, I like to write an epistle to a Thessalonian if I can every now and then. This is chapter 3. And the way that it is used to be a jerk.{{< /line >}}
 {{< line >}}[00:01:23.657] Dan McClellan: Yes, yes, very jerky.{{< /line >}}
@@ -62,18 +64,18 @@ draft: false
 {{< line >}}[00:02:00.685] Dan McClellan: Of Arimathea? Or no, not that Joseph. That's much later.{{< /line >}}
 {{< line >}}[00:02:04.626] Dan Beecher: No, Joseph Fiennes. Just pick a Joseph. Pick a Joseph.{{< /line >}}
 {{< line >}}[00:02:13.662] Dan McClellan: Joseph Smith. You can't mess with a Joseph.{{< /line >}}
-{{< line >}}[00:02:15.681] Dan Beecher: Right. That one, we'll leave that one to lie. And we'll go on with our first thing, chapter and verse. And as we said, this chapter and verse is 2 Thessalonians chapter 3. We're gonna do sort of a whole paragraph, basically.{{< /line >}}
+{{< line >}}[00:02:15.681] Dan Beecher: Right. That one, we'll leave that one to lie. And we'll go on with our first thing, chapter and verse. And as we said, this chapter and verse is {{< scripture ref="2 Thessalonians" >}} chapter 3. We're gonna do sort of a whole paragraph, basically.{{< /line >}}
 {{< line >}}[00:02:35.580] Dan McClellan: Yeah, a sense unit, if you will.{{< /line >}}
 {{< line >}}[00:02:37.666] Dan Beecher: A sense unit.{{< /line >}}
 {{< line >}}[00:02:38.758] Dan McClellan: Yes.{{< /line >}}
 {{< line >}}[00:02:39.191] Dan Beecher: 6 Chapters, or verses 6 through 13.{{< /line >}}
 {{< line >}}[00:02:42.786] Dan McClellan: There you go. We're going to really land on one verse though, because this is the jerk verse. This is where if you bring this up, like, jerk automatically.{{< /line >}}
-{{< line >}}[00:02:53.948] Dan Beecher: If someone says 2 Thessalonians chapter 3, verse 10, you know you're about to get a really a jerk argument. Somebody's, somebody's about to be a real piece of work for you. But let's dive in.{{< /line >}}
+{{< line >}}[00:02:53.948] Dan Beecher: If someone says {{< scripture ref="2 Thessalonians" >}} chapter 3, verse 10, you know you're about to get a really a jerk argument. Somebody's, somebody's about to be a real piece of work for you. But let's dive in.{{< /line >}}
 {{< line >}}[00:03:17.228] Dan McClellan: Uh, we'll read through the thing, okay? And then I want to talk a little bit about context. I want to talk about what scholars think is going on here, and before we get into how people are leveraging this, um, since you mentioned context, this is an epistle from Paul.{{< /line >}}
 {{< line >}}[00:03:35.773] Dan Beecher: Is this one of the actual epistles, Pauline epistles?{{< /line >}}
 {{< line >}}[00:03:39.046] Dan McClellan: No, this is, this is one of the disputed Pauline epistles. So I think it's more common among your critical scholars than among your apologists and your, uh, and your theologians to acknowledge this. It's not unheard of among the conservatives and the theologians, but, uh, most critical scholars would say that this was likely written by somebody pretending to be Paul after Paul's death.{{< /line >}}
 {{< line >}}[00:04:05.592] Dan Beecher: This isn't the ones, one of the ones that we're pretty sure?{{< /line >}}
-{{< line >}}[00:04:09.022] Dan McClellan: No, the— so we, you've got the spurious, which is generally just the Pastoral Epistles. So that would be 1 and 2 Timothy and Titus. And these are the disputed. So we don't have as much of a consensus as we do with the Pastoral Epistles. But, and these would be Ephesians, Colossians, 2 Thessalonians, probably not written by Paul, but we're not going to put as big a punctuation mark on it as we are with the Pastoral Epistles.{{< /line >}}
+{{< line >}}[00:04:09.022] Dan McClellan: No, the— so we, you've got the spurious, which is generally just the Pastoral Epistles. So that would be 1 and {{< scripture ref="2 Timothy" >}} and Titus. And these are the disputed. So we don't have as much of a consensus as we do with the Pastoral Epistles. But, and these would be Ephesians, Colossians, {{< scripture ref="2 Thessalonians" >}}, probably not written by Paul, but we're not going to put as big a punctuation mark on it as we are with the Pastoral Epistles.{{< /line >}}
 {{< line >}}[00:04:40.732] Dan Beecher: Was it actually sent to Thessalonians?{{< /line >}}
 {{< line >}}[00:04:44.745] Dan McClellan: Yeah, it probably was sent to, or at least was circulated among the inhabitants of what we now refer to, at least when I was there, as Thessaloniki. So up in the top portion of Greece, of the Aegean. Nice little port city. Last time I was there, there was a TGI Fridays there.{{< /line >}}
 {{< line >}}[00:05:09.785] Dan Beecher: Don't know if it's still there, but that is, that is an interesting marker of civilization. I will say that. I'm not sure. I'm not sure what it portends. I don't think it's good.{{< /line >}}
@@ -85,7 +87,7 @@ draft: false
 {{< line >}}[00:06:13.194] Dan Beecher: And I was like, kilometers per liter. Kilometers per liter. I can't— what am I like? I was mystified. And then to try and figure out how the gas prices— yeah, like Canadian dollars per liter versus American dollars per gallon. I was just like, I give up.{{< /line >}}
 {{< line >}}[00:06:31.548] Dan McClellan: I'm not doing this. That math is beyond me. Yeah. I tried to do it in my head driving by a gas station and I was like, I give up. I don't know.{{< /line >}}
 {{< line >}}[00:06:36.999] Dan Beecher: There's literally no amount of math that can possibly figure that out. Yeah, it doesn't exist.{{< /line >}}
-{{< line >}}[00:06:41.332] Dan McClellan: We have not cracked the code yet. Um, anyway, so 2 Thessalonians, we got chapter 3 here now, and, and this is NRSV-UE, as we are wont to, uh, to default to.{{< /line >}}
+{{< line >}}[00:06:41.332] Dan McClellan: We have not cracked the code yet. Um, anyway, so {{< scripture ref="2 Thessalonians" >}}, we got chapter 3 here now, and, and this is NRSV-UE, as we are wont to, uh, to default to.{{< /line >}}
 {{< line >}}[00:06:52.957] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:06:53.454] Dan McClellan: Now we command you, brothers and sisters, in the name of our Lord Jesus Christ, to keep away from every brother or sister living irresponsibly and not according to the tradition that they received from us. So they're getting a little bit of a tongue-lashing.{{< /line >}}
 {{< line >}}[00:07:07.882] Dan Beecher: Or who's the we? It's not I, it's we.{{< /line >}}

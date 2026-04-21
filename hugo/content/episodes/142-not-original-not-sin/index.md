@@ -36,7 +36,9 @@ books:
   - Amos
   - Isaiah
   - Revelation
+  - 1 Chronicles
   - 1 Timothy
+  - 2 Timothy
   - Psalms
 segments:
   - Chapter and Verse
@@ -223,14 +225,14 @@ draft: false
 {{< line >}}[00:42:15.138] Dan Beecher: But just not those guys.{{< /line >}}
 {{< line >}}[00:42:16.598] Dan McClellan: Yeah. Like, it's the kind of story where the kid's like, well, that's a dumb story for why snakes don't have legs. And the parent's like, yeah, what are you going to do? And they go on. And that story does not become an incredibly popular story. You have a mention of Eden in {{< scripture ref="Ezekiel 28" >}}, and the story is entirely different. Yeah, because there's some guardian cherub that is in Eden that's supposed to be the Adam, the human. There are precious stones everywhere. It's a mountain.{{< /line >}}
 {{< line >}}[00:42:50.872] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:42:51.900] Dan McClellan: None of that is in {{< scripture ref="Genesis 2" >}} and 3, right? It's— and then you have a genealogy in {{< scripture ref="Genesis 5" >}} and then in 1 Chronicles where it mentions Adam. That's it. There's no other telling of the story of the Garden of Eden. And then we get to Paul and {{< scripture ref="Romans 5" >}}. {{< scripture ref="Romans 5:12-21" >}} has this kind of meditation on, on the significance of, of sin. And Paul says, as by one man sin entered into the world and death by sin, and so death passed upon all men, for that all have sinned. For until the law, sin was in the world, but sin is not imputed when there is no law. And this seems to be suggesting that there was no death in the world until Adam and Eve's transgression. And he blames it on the man.{{< /line >}}
+{{< line >}}[00:42:51.900] Dan McClellan: None of that is in {{< scripture ref="Genesis 2" >}} and 3, right? It's— and then you have a genealogy in {{< scripture ref="Genesis 5" >}} and then in {{< scripture ref="1 Chronicles" >}} where it mentions Adam. That's it. There's no other telling of the story of the Garden of Eden. And then we get to Paul and {{< scripture ref="Romans 5" >}}. {{< scripture ref="Romans 5:12-21" >}} has this kind of meditation on, on the significance of, of sin. And Paul says, as by one man sin entered into the world and death by sin, and so death passed upon all men, for that all have sinned. For until the law, sin was in the world, but sin is not imputed when there is no law. And this seems to be suggesting that there was no death in the world until Adam and Eve's transgression. And he blames it on the man.{{< /line >}}
 {{< line >}}[00:43:54.317] Dan McClellan: Because of one man, sin entered the world. He ignores Eve. And I think probably because he's trying to draw this parallel. What? By one man sin entered the world. By one man sin is, you know, resolved. Jesus is the second man. And so you want it to be nice and symmetrical.{{< /line >}}
 {{< line >}}[00:44:18.278] Dan Beecher: I guess so.{{< /line >}}
 {{< line >}}[00:44:20.152] Dan McClellan: So you say, yes, this is one dude. And or you can do what the person who was pretending to be Paul in {{< scripture ref="1 Timothy 2:14" >}} did, where you can say Adam was not deceived, but the woman was deceived and became a transgressor.{{< /line >}}
 {{< line >}}[00:44:38.085] Dan Beecher: So yeah, it does seem like that is a retrojection of an ideology back in, like trying to make Paul a little bit more misogynistic than even Paul was willing to be.{{< /line >}}
 {{< line >}}[00:44:56.187] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:44:57.005] Dan Beecher: Or that it occurred to Paul to be.{{< /line >}}
-{{< line >}}[00:44:59.636] Dan McClellan: Yeah. And as misogynistic as Paul could get, yeah, the authors of like Ephesians and 1 and 2 Timothy and Titus, whether they were one author or different authors, they are incredibly more misogynistic.{{< /line >}}
+{{< line >}}[00:44:59.636] Dan McClellan: Yeah. And as misogynistic as Paul could get, yeah, the authors of like Ephesians and 1 and {{< scripture ref="2 Timothy" >}} and Titus, whether they were one author or different authors, they are incredibly more misogynistic.{{< /line >}}
 {{< line >}}[00:45:15.774] Dan Beecher: But well, although I will say this, Paul in {{< scripture ref="Romans 5" >}}, it's a form of misogyny. To be like, the woman couldn't have been a thing.{{< /line >}}
 {{< line >}}[00:45:25.718] Dan McClellan: Yeah, we're just going to ignore the woman.{{< /line >}}
 {{< line >}}[00:45:28.362] Dan Beecher: There's no way what she did could have affected all of humanity. But, but homeboy over there, he definitely rocked the world.{{< /line >}}

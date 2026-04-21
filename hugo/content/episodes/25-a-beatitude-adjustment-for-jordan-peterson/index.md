@@ -29,6 +29,7 @@ books:
   - Deuteronomy
   - Exodus
   - Genesis
+  - John
 segments:
   - Chapter and Verse
   - "All Right, Let's See It"

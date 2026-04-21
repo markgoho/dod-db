@@ -47,8 +47,15 @@ tags:
   - Ugarit
 books:
   - Deuteronomy
-  - Psalms
+  - Daniel
+  - Jeremiah
   - Isaiah
+  - 1 Samuel
+  - Psalms
+  - Exodus
+  - Esther
+  - Nehemiah
+  - Numbers
 guests:
   - Kipp Davis
 episodeTopic: Dead Sea Scrolls
@@ -172,11 +179,11 @@ draft: false
 {{< line >}}[00:34:04.050] Dan McClellan: And we have, we have a lot of differences even in the arrangement in Samuel and Kings as well. In fact, I think some of the most significant differences are in some of the witnesses to Samuel and the Dead Sea Scrolls, which suggest quite a bit of textual fluidity, but tolerated textual fluidity. They, they didn't seem to have an issue the way.{{< /line >}}
 {{< line >}}[00:34:26.929] Kipp Davis: No, it just doesn't seem to be a question that, that was raised on a regular basis. And we have other, like. No, go ahead, Dan.{{< /line >}}
 {{< line >}}[00:34:35.529] Dan Beecher: I was just going to say, can you talk a little bit about some of the difference? Like what kinds of differences are we talking about? Like, what are the, Talk to me about some of the, the most significant things that, that surprise you about. You know, first of all, as you're talking about differences between scrolls from that era and then now differences between that and what we're used to reading in our translations or, or whatever.{{< /line >}}
-{{< line >}}[00:35:03.870] Kipp Davis: Okay. I, yeah, so, I mean, I think in terms of specific examples, probably the most prominent one would be in one of the copies of Samuel. I believe it's in 1st Samuel, chapter 11. There is a large expansion in one of the manuscripts found at Qumran in the story of Nahash the king. It's the, it's the Ammonites, isn't it, Dan? King of the Ammonites.{{< /line >}}
+{{< line >}}[00:35:03.870] Kipp Davis: Okay. I, yeah, so, I mean, I think in terms of specific examples, probably the most prominent one would be in one of the copies of Samuel. I believe it's in {{< scripture ref="1 Samuel" >}}, chapter 11. There is a large expansion in one of the manuscripts found at Qumran in the story of Nahash the king. It's the, it's the Ammonites, isn't it, Dan? King of the Ammonites.{{< /line >}}
 {{< line >}}[00:35:40.810] Dan McClellan: Yeah, yeah. Where we, we've got this weird story where, where something has happened and suddenly a demand is being made.{{< /line >}}
 {{< line >}}[00:35:48.410] Kipp Davis: Yes, something has happened. The king of the Ammonites Nahash has showed up at Jabesh Gilead and, and basically threatening the city and threatening to, to put out the eye of, of every man in the city. And, and it is, it's a bit of a jarring interruption into, into the narrative there. And prior to the discovery of this manuscript, I believe it's 4Q Samuel A, there was no information from any of the other manuscripts nor from the Septuagint about, about what's going on here. And lo and behold, we find this text which has literally an entire paragraph of material of explanatory information about, you know, what was going on. And do you have the text there, Dan?{{< /line >}}
 {{< line >}}[00:36:45.790] Dan McClellan: I'm, I'm pulling it up right now. Yeah. So I'm looking at if, if anybody would like to see you. You can find English translations of the biblical and the non biblical Dead Sea Scrolls. There's also a book called The Biblical Qumran Scrolls: Transcriptions and textual variants with where, if you're really interested in this kind of stuff, this presents the Hebrew text and then there's a critical apparatus that presents all of the, of the differences between the text and the Samaritan Pentateuch and the Septuagint and the Masoretic Text and all that kind of stuff.{{< /line >}}
-{{< line >}}[00:37:23.280] Kipp Davis: Oh, here it is. All right, so it's, it's, it's 1st Samuel, chapter 10, verse 27. I'll just read. This is the NRSV. I'll start here in, in verse 26 it says Saul also went to his home in Gibeah and with him went warriors whose hearts God had touched. But some worthless fellows said, how can this man save us? They despised him and brought him no present, but he held his peace. And then the text goes on to say about a month later Nachash the Ammonite went up and besieged Jabesh Gilead. And all the men of Jabesh said to Nachash, make a treaty with us and we will serve you. But Nachash the Ammonite said to them, on this condition I'll make the treaty with you, namely that I gouge out everyone's right eye and thus put to disgrace upon all of Israel. And you're kind of looking at that and going, wow, this guy is triggered.{{< /line >}}
+{{< line >}}[00:37:23.280] Kipp Davis: Oh, here it is. All right, so it's, it's, it's {{< scripture ref="1 Samuel" >}}, chapter 10, verse 27. I'll just read. This is the NRSV. I'll start here in, in verse 26 it says Saul also went to his home in Gibeah and with him went warriors whose hearts God had touched. But some worthless fellows said, how can this man save us? They despised him and brought him no present, but he held his peace. And then the text goes on to say about a month later Nachash the Ammonite went up and besieged Jabesh Gilead. And all the men of Jabesh said to Nachash, make a treaty with us and we will serve you. But Nachash the Ammonite said to them, on this condition I'll make the treaty with you, namely that I gouge out everyone's right eye and thus put to disgrace upon all of Israel. And you're kind of looking at that and going, wow, this guy is triggered.{{< /line >}}
 {{< line >}}[00:38:14.630] Dan Beecher: Yeah, that's extreme.{{< /line >}}
 {{< line >}}[00:38:16.470] Kipp Davis: Yeah, right.{{< /line >}}
 {{< line >}}[00:38:17.270] Dan Beecher: That's not a good deal. He's not making a good deal.{{< /line >}}

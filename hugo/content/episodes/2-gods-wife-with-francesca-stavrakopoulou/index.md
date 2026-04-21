@@ -37,6 +37,7 @@ books:
   - Ezekiel
   - Isaiah
   - Genesis
+  - Job
   - Deuteronomy
   - Exodus
   - Judges

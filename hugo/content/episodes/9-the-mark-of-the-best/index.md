@@ -23,6 +23,7 @@ tags:
   - John of Patmos
   - Quran
 books:
+  - Revelation
   - Isaiah
   - Mark
   - Genesis

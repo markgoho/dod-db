@@ -32,6 +32,7 @@ books:
   - Isaiah
   - Job
   - Zechariah
+  - John
   - Proverbs
 segments:
   - Conspiracy Watch

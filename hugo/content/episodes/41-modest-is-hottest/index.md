@@ -35,11 +35,11 @@ tags:
   - Judaism
   - Romans
 books:
+  - 1 Timothy
   - Genesis
   - 1 Corinthians
   - Deuteronomy
   - Zephaniah
-  - 1 Timothy
   - Leviticus
   - 1 Peter
   - Romans
@@ -225,7 +225,7 @@ draft: false
 {{< line >}}[00:33:17.950] Dan McClellan: Right.{{< /line >}}
 {{< line >}}[00:33:18.910] Dan Beecher: And they did. They. They should. I just rattle off a few of the, the scriptures that we've. That, that have been given to support the idea that. That women need to dress modestly. And we'll get to what modesty might mean.{{< /line >}}
 {{< line >}}[00:33:36.560] Dan McClellan: Yeah. Well, as the, as the mediocre poet once said. All right, let's see it.{{< /line >}}
-{{< line >}}[00:33:42.640] Dan Beecher: Indeed. I'm going to start with First Timothy, chapter two.{{< /line >}}
+{{< line >}}[00:33:42.640] Dan Beecher: Indeed. I'm going to start with {{< scripture ref="1 Timothy" >}}, chapter two.{{< /line >}}
 {{< line >}}[00:33:46.960] Dan McClellan: Okay.{{< /line >}}
 {{< line >}}[00:33:47.400] Dan Beecher: Which I. Which I saw a lot of. And that starts on. On verse nine. It says also that the women should dress themselves in moderate clothing with reverence and self-control. Not with their hair braided or with gold, pearls or expensive clothes, but with good works as is proper for women who profess reverence for God.{{< /line >}}
 {{< line >}}[00:34:12.570] Dan McClellan: Yes.{{< /line >}}
@@ -240,7 +240,7 @@ draft: false
 {{< line >}}[00:36:18.850] Dan McClellan: Yeah, well, and in this time period, early Christians, Greco-Roman period, Jewish folks, pretty conservative socially, probably dressing pretty conservative as well, there wouldn't have been too much of a. There wouldn't have been a, A very large standard deviation from how most folks were dressing. And so, yeah, brilliant. Braiding your hair, wearing gold, wearing, you know, fancy stuff probably would have been considered, you know, trying to stand out.{{< /line >}}
 {{< line >}}[00:36:46.840] Dan Beecher: Right.{{< /line >}}
 {{< line >}}[00:36:47.200] Dan McClellan: And. And the idea here is don't stand out. Don't show people up, do good things, look respectable, bring honor to the, to the household. And so, yeah, the, the admonition here is very clearly to not try to display wealth or status.{{< /line >}}
-{{< line >}}[00:37:05.780] Dan Beecher: Are you saying that showing that a woman showing her shoulders is not what second or what First Timothy is all about?{{< /line >}}
+{{< line >}}[00:37:05.780] Dan Beecher: Are you saying that showing that a woman showing her shoulders is not what second or what {{< scripture ref="1 Timothy" >}} is all about?{{< /line >}}
 {{< line >}}[00:37:13.940] Dan McClellan: Nobody is saying anything about shoulders at all.{{< /line >}}
 {{< line >}}[00:37:16.580] Dan Beecher: Nobody mentioned skin.{{< /line >}}
 {{< line >}}[00:37:18.580] Dan McClellan: No. There's no part of. There's only one part of the entire Bible that has anything to do with identifying a body part that a woman must cover. And that's in {{< scripture ref="1 Corinthians 11" >}}. And that's where Paul says, when you're praying or prophesying, please, for the sake of all that is good and holy, put a cover on your head.{{< /line >}}
@@ -335,7 +335,7 @@ draft: false
 {{< line >}}[00:55:47.210] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:55:48.570] Dan McClellan: But he doesn't know his Hebrew because that word for discretion does not refer to modesty in dress. The word is taam in Hebrew, and this refers to good sense or judgment. And it's used elsewhere. Abigail gives David some— some advice, and David considers it and then goes, "Blessed be your— your judgment," not your dressing modestly. So, yeah, yeah, you go ahead, tear the Bible apart. Try and find a place where it explicitly tells women they need to cover up so that they don't cause men to lust after them. You will be looking for an awfully long time.{{< /line >}}
 {{< line >}}[00:56:23.640] Dan Beecher: That is so crazy to me. I— because it has become such a whipping boy for the— the Christian right in this country. It is such an important thing to them that— that the fact that it's just not there. Yeah, it actually did take me by surprise.{{< /line >}}
-{{< line >}}[00:56:43.270] Dan McClellan: Oh, I do want to bring up one passage. First Corinthians—{{< /line >}}
+{{< line >}}[00:56:43.270] Dan McClellan: Oh, I do want to bring up one passage. {{< scripture ref="1 Corinthians" >}}—{{< /line >}}
 {{< line >}}[00:56:47.070] Dan Beecher: Do.{{< /line >}}
 {{< line >}}[00:56:47.590] Dan McClellan: {{< scripture ref="1 Corinthians 12:23" >}}. Okay, let me pull this up. So this is right— So here we have Paul is talking about the body of Christ, as in the— the congregation, the membership, how we all have different roles and we make up different parts of the body. And in 12:23 says—and this is the— the NRSV: "And those members of the body that we think less honorable, we clothe with greater honor, and our less respectable members are treated with greater respect." And this word that the NRSV translates greater respect is euschemosyne. And this word refers to the state of being appropriate for display, propriety, decorum, presentability. They have a word that refers to what we could plausibly argue means modest in dress, covering up what is considered shameful or private.{{< /line >}}
 {{< line >}}[00:57:48.940] Dan McClellan: And it is only ever used to talk about everybody who is a Christian as a member of the body of Christ. It is not used— and, or actually, let me verify that. I—I don't think I found anything. Yeah. This is the only passage in all the New Testament where this word occurs. So they have the means to refer to women dressing in a way that is modest in dress, covering up. And they never use it to—{{< /line >}}

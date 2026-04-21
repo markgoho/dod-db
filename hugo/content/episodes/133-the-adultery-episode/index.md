@@ -50,9 +50,11 @@ tags:
 books:
   - Exodus
   - Deuteronomy
-  - 1 Corinthians
   - Hosea
+  - Matthew
+  - 1 Corinthians
   - Isaiah
+  - Revelation
   - 2 Chronicles
 segments:
   - "It's the Law"

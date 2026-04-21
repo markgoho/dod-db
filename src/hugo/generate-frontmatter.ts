@@ -2,6 +2,7 @@
  * Generate YAML frontmatter for Hugo episode pages.
  */
 
+import { getBookByAnyName } from "../config/get-book-by-any-name.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
 import type { ProcessedVideo } from "../storage/processed-videos.js";
 import { titleToSlug } from "../utils/title-to-slug.js";
@@ -13,15 +14,15 @@ const canonicalNameBySlug = new Map(
 );
 
 function loadTopicSlugs(): Set<string> {
-  return new Set(
-    [
-      ...new Bun.Glob("*/_index.md").scanSync({
-        cwd: new URL("../../hugo/content/topics/", import.meta.url).pathname,
-      }),
-    ]
-      .map(path => path.split("/")[0])
-      .filter(Boolean),
-  );
+  const topicSlugs = [
+    ...new Bun.Glob("*/_index.md").scanSync({
+      cwd: new URL("../../hugo/content/topics/", import.meta.url).pathname,
+    }),
+  ]
+    .map(path => path.split("/")[0])
+    .filter(Boolean) as string[];
+
+  return new Set(topicSlugs);
 }
 
 export function generateFrontmatter(
@@ -38,11 +39,21 @@ export function generateFrontmatter(
     return [canonicalNameBySlug.get(slug) ?? tag];
   });
   const tags = extractedTags.filter(tag => !topicSlugs.has(titleToSlug(tag)));
-  const books = video.scriptures?.map(s => s.book) ?? [];
   const guests = getGuestSpeakers(video.speakers);
   const { segments, segmentData } = formatSegmentsForFrontmatter(
     video.segments,
   );
+  const books = [
+    ...(video.scriptures?.map(s => s.book) ?? []),
+    ...segmentData.flatMap(segment => {
+      if (!segment.topicLabel) {
+        return [];
+      }
+
+      const book = getBookByAnyName(segment.topicLabel);
+      return book ? [book.canonical] : [];
+    }),
+  ].filter((book, index, list) => list.indexOf(book) === index);
 
   // Build frontmatter object
   // Convert date string to ISO format for consistent YAML output

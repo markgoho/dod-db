@@ -57,6 +57,8 @@ books:
   - Psalms
   - Exodus
   - Isaiah
+  - Jude
+  - Judges
   - Deuteronomy
 segments:
   - Getting Angelic

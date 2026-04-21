@@ -31,8 +31,9 @@ tags:
   - Sanhedrin
 books:
   - Genesis
-  - 1 Timothy
+  - 2 Samuel
   - Acts
+  - 1 Timothy
 guests:
   - Aaron Higashi
   - Jennifer Garcia Bashaw
@@ -41,7 +42,7 @@ draft: false
 
 {{< line >}}[00:00:01.538] Aaron Higashi: I think a certain amount of biblical literacy and a certain amount of empowering people to interpret the Bible for themselves is just a critical part of building up a society that can stand up to bullies, people who are going to use the Bible to bully people. And so I think this is like a defense against the dark arts book. This is, this is to help people protect themselves against a very real evil out there.{{< /line >}}
 {{< line >}}[00:00:31.900] Dan McClellan: Hey everybody, I'm Dan McClellan, and today we do not have Dan Beecher, but this is still Data Over Dogma, where we increase public access to the academic study of the Bible and religion, and we combat the spread of misinformation about the same. This is normally where I would ask how Dan is doing, and Dan is traveling right now—he is not near, he is afar, and he wishes he could be here, but we are having me fly solo. So if your audio catches on fire, that's why, because I don't have the first clue what I'm doing. But luckily, I am here with two special guests, the authors of a new book from Broadleaf Books, and I assume in association with The Bible for Normal People, but I will get clarification on that in a moment. But our guests today are Jennifer Garcia-Bashaw. She's a professor at Campbell University and an ordained Baptist minister. And her PhD is in New Testament from Fuller Seminary, and she's published two books already, Scapegoats and John for Normal People.{{< /line >}}
-{{< line >}}[00:01:39.605] Dan McClellan: And then returning to the show for, I think, the third time—we've got to get jackets—for Aaron Higashi, who is a public Bible scholar, much like myself, with a PhD in biblical interpretation from Chicago Theological Seminary, and he is the author of 1 and 2 Samuel for Normal People. Thank you so much for being here, Jen and Aaron. And I'm sorry you had to be a part of our little let Dan fly the plane experiment, but hopefully nobody's phone catches on fire. How have you all been?{{< /line >}}
+{{< line >}}[00:01:39.605] Dan McClellan: And then returning to the show for, I think, the third time—we've got to get jackets—for Aaron Higashi, who is a public Bible scholar, much like myself, with a PhD in biblical interpretation from Chicago Theological Seminary, and he is the author of 1 and {{< scripture ref="2 Samuel" >}} for Normal People. Thank you so much for being here, Jen and Aaron. And I'm sorry you had to be a part of our little let Dan fly the plane experiment, but hopefully nobody's phone catches on fire. How have you all been?{{< /line >}}
 {{< line >}}[00:02:11.755] Jennifer Garcia-Bashaw: Pretty good. Cold, but—.{{< /line >}}
 {{< line >}}[00:02:14.963] Dan McClellan: Are you on the East Coast? East Coast. Okay. So it's Hoth right now for you. I was— I I watched the, I mourned the Denver Broncos game the other day, and it was like halfway through the third quarter, it just suddenly started snowing, and it was a whiteout by the time the game was over. And we got nothing where I am. And are you still, you're not in Arizona, are you, Aaron? Yes, yeah. Still in Arizona, okay.{{< /line >}}
 {{< line >}}[00:02:47.826] Aaron Higashi: It is brutally cold, 62 degrees. Shut your mouth. It's been very difficult.{{< /line >}}

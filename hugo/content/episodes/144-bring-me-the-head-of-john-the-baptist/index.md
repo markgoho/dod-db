@@ -37,13 +37,13 @@ tags:
   - Solomon
 books:
   - John
+  - Mark
   - Matthew
-  - Ephesians
   - Luke
+  - Ephesians
+  - Acts
   - Micah
   - Psalms
-  - Mark
-  - Acts
   - Revelation
 segments:
   - Chapter and Verse

@@ -9,35 +9,44 @@
 
     {{ $oldTestament := slice }}
     {{ $newTestament := slice }}
+    {{ $apocrypha := slice }}
+    {{ $booksBySlug := dict }}
+
+    {{ range $.Data.Terms.Alphabetical }}
+      {{ $booksBySlug = merge $booksBySlug (dict (.Page.Title | urlize) (dict "title" .Page.Title "count" .Count "relPermalink" .Page.RelPermalink)) }}
+    {{ end }}
 
     {{ $otBooks := slice "Genesis" "Exodus" "Leviticus" "Numbers" "Deuteronomy" "Joshua" "Judges" "Ruth" "1 Samuel" "2 Samuel" "1 Kings" "2 Kings" "1 Chronicles" "2 Chronicles" "Ezra" "Nehemiah" "Esther" "Job" "Psalms" "Proverbs" "Ecclesiastes" "Song of Solomon" "Isaiah" "Jeremiah" "Lamentations" "Ezekiel" "Daniel" "Hosea" "Joel" "Amos" "Obadiah" "Jonah" "Micah" "Nahum" "Habakkuk" "Zephaniah" "Haggai" "Zechariah" "Malachi" }}
     {{ $ntBooks := slice "Matthew" "Mark" "Luke" "John" "Acts" "Romans" "1 Corinthians" "2 Corinthians" "Galatians" "Ephesians" "Philippians" "Colossians" "1 Thessalonians" "2 Thessalonians" "1 Timothy" "2 Timothy" "Titus" "Philemon" "Hebrews" "James" "1 Peter" "2 Peter" "1 John" "2 John" "3 John" "Jude" "Revelation" }}
+    {{ $apocryphaBooks := slice "Tobit" "Judith" "1 Esdras" "2 Esdras" "1 Maccabees" "2 Maccabees" "3 Maccabees" "4 Maccabees" "Wisdom of Solomon" "Sirach" "Baruch" "Letter of Jeremiah" "Prayer of Azariah" "Susanna" "Bel and the Dragon" "Prayer of Manasseh" }}
 
     {{ range $otBooks }}
       {{ $bookName := . }}
-      {{ $matched := false }}
-      {{ range $.Data.Terms.Alphabetical }}
-        {{ if eq .Page.Title $bookName }}
-          {{ $oldTestament = $oldTestament | append (dict "title" .Page.Title "count" .Count "relPermalink" .Page.RelPermalink) }}
-          {{ $matched = true }}
-        {{ end }}
-      {{ end }}
-      {{ if not $matched }}
+      {{ $book := index $booksBySlug ($bookName | urlize) }}
+      {{ if $book }}
+        {{ $oldTestament = $oldTestament | append $book }}
+      {{ else }}
         {{ $oldTestament = $oldTestament | append (dict "title" $bookName "count" 0 "relPermalink" "") }}
       {{ end }}
     {{ end }}
 
     {{ range $ntBooks }}
       {{ $bookName := . }}
-      {{ $matched := false }}
-      {{ range $.Data.Terms.Alphabetical }}
-        {{ if eq .Page.Title $bookName }}
-          {{ $newTestament = $newTestament | append (dict "title" .Page.Title "count" .Count "relPermalink" .Page.RelPermalink) }}
-          {{ $matched = true }}
-        {{ end }}
-      {{ end }}
-      {{ if not $matched }}
+      {{ $book := index $booksBySlug ($bookName | urlize) }}
+      {{ if $book }}
+        {{ $newTestament = $newTestament | append $book }}
+      {{ else }}
         {{ $newTestament = $newTestament | append (dict "title" $bookName "count" 0 "relPermalink" "") }}
+      {{ end }}
+    {{ end }}
+
+    {{ range $apocryphaBooks }}
+      {{ $bookName := . }}
+      {{ $book := index $booksBySlug ($bookName | urlize) }}
+      {{ if $book }}
+        {{ $apocrypha = $apocrypha | append $book }}
+      {{ else }}
+        {{ $apocrypha = $apocrypha | append (dict "title" $bookName "count" 0 "relPermalink" "") }}
       {{ end }}
     {{ end }}
 
@@ -74,6 +83,34 @@
         <h2 class="type-section-title cloud-section__title">New Testament</h2>
         <ul class="token-cloud" role="list">
           {{ range $newTestament }}
+            {{ $titleTransitionName := printf "books-title-%s" (.title | urlize) }}
+            <li>
+              {{ if gt .count 0 }}
+                <a href="{{ .relPermalink }}" class="token-pill">
+                  <span
+                    class="token-pill__name"
+                    style="view-transition-name: {{ $titleTransitionName }}"
+                    >{{ .title }}</span
+                  >
+                  <span class="token-pill__count">{{ .count }}</span>
+                </a>
+              {{ else }}
+                <span class="token-pill token-pill--empty">
+                  <span class="token-pill__name">{{ .title }}</span>
+                  <span class="token-pill__count">{{ .count }}</span>
+                </span>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
+
+    {{ if gt (len $apocrypha) 0 }}
+      <section class="cloud-section">
+        <h2 class="type-section-title cloud-section__title">Apocrypha</h2>
+        <ul class="token-cloud" role="list">
+          {{ range $apocrypha }}
             {{ $titleTransitionName := printf "books-title-%s" (.title | urlize) }}
             <li>
               {{ if gt .count 0 }}

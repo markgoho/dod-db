@@ -31,9 +31,9 @@ tags:
   - Samuel
   - Seleucid Empire
 books:
-  - Daniel
   - Esther
   - Matthew
+  - Daniel
 segments:
   - Chapter and Verse
   - Taking Issue

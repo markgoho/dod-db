@@ -27,7 +27,9 @@ tags:
   - Solomon
 books:
   - Genesis
+  - 2 Peter
   - Luke
+  - Acts
 segments:
   - Textual Healing
   - Terrible Parables
@@ -77,7 +79,7 @@ draft: false
 {{< line >}}[00:05:59.573] Dan Beecher: This is never gonna happen anyway, so you guys are fine. Um, but, but yeah, you pointed out that there's, there's a lot of like, there's this misunderstanding that, uh, that Noah tried to preach to the people and say repent and all this stuff. Yeah, that ain't in here.{{< /line >}}
 {{< line >}}[00:06:18.466] Dan McClellan: No, no, not to be found. And the whole idea that the people mocked Noah and they were like, "Stupid boat!" Also not in here.{{< /line >}}
 {{< line >}}[00:06:27.373] Dan Beecher: Yeah, I was surprised by that.{{< /line >}}
-{{< line >}}[00:06:29.620] Dan McClellan: As I was reading, I was like, "Hey, that's a part of the story that seems important, but it's not there." Yeah, I think the Sibylline Oracles are the first place where it talks about Noah preaching. And then we have in the New Testament, 2 Peter somewhere, I think it calls him a preacher of righteousness. And so traditions just kind of grew up around that. But, but today we, we're going to talk about the way the story seems to kind of repeat itself, but in slightly different ways.{{< /line >}}
+{{< line >}}[00:06:29.620] Dan McClellan: As I was reading, I was like, "Hey, that's a part of the story that seems important, but it's not there." Yeah, I think the Sibylline Oracles are the first place where it talks about Noah preaching. And then we have in the New Testament, {{< scripture ref="2 Peter" >}} somewhere, I think it calls him a preacher of righteousness. And so traditions just kind of grew up around that. But, but today we, we're going to talk about the way the story seems to kind of repeat itself, but in slightly different ways.{{< /line >}}
 {{< line >}}[00:07:04.920] Dan Beecher: Yeah, it's confusing. If you, if you're— if you pay too much attention, it's a head-scratcher.{{< /line >}}
 {{< line >}}[00:07:11.091] Dan McClellan: If you just go back and forth and—.{{< /line >}}
 {{< line >}}[00:07:13.720] Dan Beecher: Yeah, you'll be— you'll, you'll feel you, you'll feel like you've, uh, circled around a bit, uh, but, but you— it's fine. But yeah, if you pay a lot of attention, or if you do as I did and try to like catalog how long, like get the timeline down— oh no, you can't do that. No, you're gonna get confused. Yeah, which I learned the hard way. Yeah.{{< /line >}}

@@ -32,8 +32,8 @@ tags:
   - Hagar
   - Qumran
 books:
-  - Ezekiel
   - Judges
+  - Ezekiel
   - Exodus
 segments:
   - Chapter and Verse

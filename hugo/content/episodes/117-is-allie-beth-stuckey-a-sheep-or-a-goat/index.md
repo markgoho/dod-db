@@ -34,6 +34,7 @@ books:
   - Matthew
   - Leviticus
   - Hosea
+  - Exodus
 segments:
   - Taking Issue
   - Artifacts and Fiction

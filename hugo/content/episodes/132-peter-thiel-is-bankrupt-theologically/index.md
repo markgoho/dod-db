@@ -32,8 +32,10 @@ tags:
 books:
   - Acts
   - Amos
-  - Luke
   - 1 Thessalonians
+  - Luke
+  - 1 John
+  - 2 John
   - Daniel
   - Matthew
   - Mark
@@ -115,8 +117,8 @@ draft: false
 {{< line >}}[00:11:44.662] Dan Beecher: No, that is true. So what he has been talking about is he's been talking about the Antichrist, or an antichrist, an entity that is antichrist, and he's not particularly clear on what or who that might be.{{< /line >}}
 {{< line >}}[00:12:07.853] Dan McClellan: He's doing a 4-part lecture series on the Antichrist, and from what I have heard, nobody is quite sure what he's talking about.{{< /line >}}
 {{< line >}}[00:12:16.509] Dan Beecher: Yeah, yeah, it seems like, uh, it might be, uh, the one world government might be the Antichrist or whatever. He definitely believes that a one world government is a bad thing and it's coming.{{< /line >}}
-{{< line >}}[00:12:29.357] Dan McClellan: And I, like, I first heard about this, I was telling you before we, uh, hit record I started getting a flood of requests to respond to this interview that he did when I was in Italy with my family and was like, "I can't do this right now, man. I don't know what this dude is talking about, but I can't do this. " And it was an interview where he's talking about transhumanism and then goes into Antichrist stuff, and he appealed to a scripture. This is what stuck out for me. He said that the Antichrist's slogan will be peace and safety. Yes. And I was like, that is nowhere in the Bible, but I need to stop and look this up. And what on earth is he talking about? And, um, he's talking about 1 Thessalonians, uh, 5, I think the 5:3. And it— to begin, the word Antichrist occurs, I think, 4 total times in all of the Bible, 4 or 5 total times in all of the Bible.{{< /line >}}
-{{< line >}}[00:13:29.867] Dan McClellan: All of them in 1 John or 2 John.{{< /line >}}
+{{< line >}}[00:12:29.357] Dan McClellan: And I, like, I first heard about this, I was telling you before we, uh, hit record I started getting a flood of requests to respond to this interview that he did when I was in Italy with my family and was like, "I can't do this right now, man. I don't know what this dude is talking about, but I can't do this. " And it was an interview where he's talking about transhumanism and then goes into Antichrist stuff, and he appealed to a scripture. This is what stuck out for me. He said that the Antichrist's slogan will be peace and safety. Yes. And I was like, that is nowhere in the Bible, but I need to stop and look this up. And what on earth is he talking about? And, um, he's talking about {{< scripture ref="1 Thessalonians" >}}, uh, 5, I think the 5:3. And it— to begin, the word Antichrist occurs, I think, 4 total times in all of the Bible, 4 or 5 total times in all of the Bible.{{< /line >}}
+{{< line >}}[00:13:29.867] Dan McClellan: All of them in {{< scripture ref="1 John" >}} or {{< scripture ref="2 John" >}}.{{< /line >}}
 {{< line >}}[00:13:32.595] Dan Beecher: Oh, okay.{{< /line >}}
 {{< line >}}[00:13:33.637] Dan McClellan: And they are used to describe anyone who is opposed to Christ. It is mainly an adjective. That person is antichrist or, you know, anti-Christian. There's one use that could suggest that it is referring to a specific individual.{{< /line >}}
 {{< line >}}[00:13:51.125] Dan Beecher: Okay.{{< /line >}}

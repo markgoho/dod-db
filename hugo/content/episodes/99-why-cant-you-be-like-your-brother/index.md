@@ -51,9 +51,14 @@ tags:
   - Sea of Galilee
   - Torah
 books:
+  - James
   - Matthew
-  - Galatians
   - Mark
+  - Galatians
+  - Acts
+  - 2 Peter
+  - 2 Timothy
+  - 2 Chronicles
 segments:
   - Who Dat??
   - What is That?
@@ -184,7 +189,7 @@ draft: false
 {{< line >}}[00:27:15.940] Dan Beecher: Okay, interesting.{{< /line >}}
 {{< line >}}[00:27:17.540] Dan McClellan: Yeah, I, I think the, I think overall the what they call the Catholic epistles—Peter, James, John, Jude—I think those are overwhelmingly probably second century.{{< /line >}}
 {{< line >}}[00:27:31.070] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:27:31.870] Dan McClellan: And, and I think Second Peter is probably considered the last one written, which would be somewhere between 120 and 150 CE. And I wouldn't be surprised. And, and also for the pastoral epistles, First and Second Timothy and Titus, those are probably also maybe first quarter of the second century. But the Johannine epistles, the Petrine epistles, the Jacobian epistle.{{< /line >}}
+{{< line >}}[00:27:31.870] Dan McClellan: And, and I think {{< scripture ref="2 Peter" >}} is probably considered the last one written, which would be somewhere between 120 and 150 CE. And I wouldn't be surprised. And, and also for the pastoral epistles, First and {{< scripture ref="2 Timothy" >}} and Titus, those are probably also maybe first quarter of the second century. But the Johannine epistles, the Petrine epistles, the Jacobian epistle.{{< /line >}}
 {{< line >}}[00:28:01.250] Dan Beecher: That's this one. That's the James.{{< /line >}}
 {{< line >}}[00:28:03.250] Dan McClellan: Yes.{{< /line >}}
 {{< line >}}[00:28:03.690] Dan Beecher: Don't stop, stop confusing us with, with names. Well, if you look, that's, that's because it's Iakobos. Am I right?{{< /line >}}
@@ -286,7 +291,7 @@ draft: false
 {{< line >}}[00:51:45.440] Dan Beecher: Now the, the, the Masoretic Text, it's, it's the Tanakh, right? It's the, the Hebrew Bible.{{< /line >}}
 {{< line >}}[00:51:52.520] Dan McClellan: It's the full Hebrew Bible Tanakh, which is a, an acronym that has Torah, Neviim, Ketuvim. So the law, the prophets and the writings.{{< /line >}}
 {{< line >}}[00:52:03.680] Dan Beecher: Right. It. Does it differ from what we see in like, you know, a modern Christian Bible in terms of. I, I know we've talked some about how some. Sometimes the Jewish text puts the, the books in a different order.{{< /line >}}
-{{< line >}}[00:52:21.690] Dan McClellan: So yeah, there, there will be a different order in Christian versions because the, the Christian order of the, the canon, like, puts Malachi last because that's the, the most convenient segue into the New Testament because you've got this, you know, you've got Elijah and then you've got the coming of the great and dreadful day of the Lord, and then you've got Matthew, which goes into the birth of the Messiah. So it's this convenient transition. And then the. I'm pretty sure the Leningrad Codex follows the traditional Jewish order, which ends with Second Chronicles, which is a passage about how King Cyrus sends everybody back and there's hope for restoration. And so the Jewish canonical order kind of ends with this hope for restoration and the return of the Jewish people in the Jewish nation.{{< /line >}}
+{{< line >}}[00:52:21.690] Dan McClellan: So yeah, there, there will be a different order in Christian versions because the, the Christian order of the, the canon, like, puts Malachi last because that's the, the most convenient segue into the New Testament because you've got this, you know, you've got Elijah and then you've got the coming of the great and dreadful day of the Lord, and then you've got Matthew, which goes into the birth of the Messiah. So it's this convenient transition. And then the. I'm pretty sure the Leningrad Codex follows the traditional Jewish order, which ends with {{< scripture ref="2 Chronicles" >}}, which is a passage about how King Cyrus sends everybody back and there's hope for restoration. And so the Jewish canonical order kind of ends with this hope for restoration and the return of the Jewish people in the Jewish nation.{{< /line >}}
 {{< line >}}[00:53:23.090] Dan McClellan: And so, yeah, there's, there are differences in that regard. And usually translations that you see of the Hebrew Bible, if you've got a Christian translation, it's going to more regularly fill in gaps in our understanding or replace things using like the Septuagint, the Ancient Greek translation. Whereas if you look in a JPS translation of the Tanakh, they're a lot more strictly going to stick to the Masoretic Text.{{< /line >}}
 {{< line >}}[00:53:52.360] Dan Beecher: What's JPS? I don't know.{{< /line >}}
 {{< line >}}[00:53:53.840] Dan McClellan: Oh, sorry. The Jewish Publication Society. Okay. That I talked about earlier, that publishes the, the Tanakh. They're, they're going to programmatically stick with the, with the Masoretic Text. And so they're not going to d. They're not going to diverge from it unless they absolutely have to. Right. So. So they're a little more faithful to it in, in that regard. And, you know, they won't, they'll say like, you know, we got some Dead Sea Scrolls that say something else here, but a Christian translation is usually going to fiddle with the text with a lot more liberty and so make changes, make a lot more changes here and there, although that, it's more of a spectrum. It depends on what kind of publication you're looking at, what kind of translation you're looking at.{{< /line >}}

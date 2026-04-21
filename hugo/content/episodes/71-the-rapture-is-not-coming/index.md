@@ -42,6 +42,7 @@ books:
   - Revelation
   - 1 Thessalonians
   - 2 Corinthians
+  - 2 Thessalonians
   - Deuteronomy
   - Psalms
   - Isaiah
@@ -160,7 +161,7 @@ draft: false
 {{< line >}}[00:24:15.280] Dan Beecher: So when Scofield put that note into {{< scripture ref="Revelation" display="the Book of Revelation" >}}, was that just, was he just sort of making that up? Like, was he.{{< /line >}}
 {{< line >}}[00:24:26.170] Dan McClellan: No.{{< /line >}}
 {{< line >}}[00:24:26.970] Dan Beecher: Was he drawing on a tradition that. That existed or was he. Well, like, where did that come from?{{< /line >}}
-{{< line >}}[00:24:32.170] Dan McClellan: {{< scripture ref="Revelation 20" >}} is one of the passages that was critical to the development of the idea of, of the Rapture and for Darby and, and those who, who kind of curated that tradition afterwards. And he's got a, he's got a cross reference to {{< scripture ref="1 Thessalonians 4:17" >}}. Okay. In, in the note. And then he's referring to a bunch of other verses along the way. Most of them in, oddly enough, they're in Malachi, Revelation, Matthew, Acts, and First and Second Thessalonians. That's. Most of the, those references are, are to those passages. So, so it's not really, it's not altering it too much. It's taking up this, this reading, but what it's doing is it's getting it out to an awful lot of people who, it's broadening its reach to a lot more people. But also because that, that Bible was so popular for so long, the Rapture was always there, right?{{< /line >}}
+{{< line >}}[00:24:32.170] Dan McClellan: {{< scripture ref="Revelation 20" >}} is one of the passages that was critical to the development of the idea of, of the Rapture and for Darby and, and those who, who kind of curated that tradition afterwards. And he's got a, he's got a cross reference to {{< scripture ref="1 Thessalonians 4:17" >}}. Okay. In, in the note. And then he's referring to a bunch of other verses along the way. Most of them in, oddly enough, they're in Malachi, Revelation, Matthew, Acts, and First and {{< scripture ref="2 Thessalonians" >}}. That's. Most of the, those references are, are to those passages. So, so it's not really, it's not altering it too much. It's taking up this, this reading, but what it's doing is it's getting it out to an awful lot of people who, it's broadening its reach to a lot more people. But also because that, that Bible was so popular for so long, the Rapture was always there, right?{{< /line >}}
 {{< line >}}[00:25:33.500] Dan McClellan: It was. Whereas in places where, you know, you did not have the Scofield Reference Bible, pretty much all non-English speaking Christian communities, you didn't have as you didn't have that anchorage there holding the Rapture in place.{{< /line >}}
 {{< line >}}[00:25:49.800] Dan Beecher: Right.{{< /line >}}
 {{< line >}}[00:25:50.360] Dan McClellan: And so I, I think they were able to outgrow it in other parts of the world.{{< /line >}}

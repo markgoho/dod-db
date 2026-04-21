@@ -34,6 +34,7 @@ books:
   - Romans
   - Hebrews
   - Isaiah
+  - 2 Thessalonians
   - John
 segments:
   - What is That?
@@ -172,7 +173,7 @@ draft: false
 {{< line >}}[00:33:23.040] Dan Beecher: So like the oldest child who doesn't let dad beat his younger siblings or something.{{< /line >}}
 {{< line >}}[00:33:30.640] Dan McClellan: Something like that. Yes. And they have... We talked about {{< scripture ref="Romans 3:25" >}}. God presented Christ as a propitiation, which could be the idea of the substitute for the target of God's wrath. "He was pierced for our transgressions" is {{< scripture ref="Isaiah 53" >}}, according to a Christological interpretation of that passage that originally had nothing to do with any future Messiah.{{< /line >}}
 {{< line >}}[00:34:31.200] Dan Beecher: They'd be Calvinists. And.{{< /line >}}
-{{< line >}}[00:34:36.630] Dan McClellan: No, because, because ultimately what folks like Calvin were doing is looking at the whole of the text and trying to, trying to unify it all. And of course, you have to give priority and preference to certain passages and you have to subordinate others. But ultimately, like, Paul, Paul was—didn't really care about any of the other things that, that folks were saying. Paul was going to be Paul. And you know, the Pastoral Epistles and Colossians and Ephesians and maybe Second Thessalonians, they weren't even Paul. So.{{< /line >}}
+{{< line >}}[00:34:36.630] Dan McClellan: No, because, because ultimately what folks like Calvin were doing is looking at the whole of the text and trying to, trying to unify it all. And of course, you have to give priority and preference to certain passages and you have to subordinate others. But ultimately, like, Paul, Paul was—didn't really care about any of the other things that, that folks were saying. Paul was going to be Paul. And you know, the Pastoral Epistles and Colossians and Ephesians and maybe {{< scripture ref="2 Thessalonians" >}}, they weren't even Paul. So.{{< /line >}}
 {{< line >}}[00:35:10.470] Dan Beecher: Right.{{< /line >}}
 {{< line >}}[00:35:11.910] Dan McClellan: But, but yeah, it would be interesting to, to be able to talk to those folks and be like, if you could just break it down.{{< /line >}}
 {{< line >}}[00:35:18.710] Dan Beecher: Yeah, just settle a bet for me.{{< /line >}}

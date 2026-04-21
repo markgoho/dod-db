@@ -36,9 +36,10 @@ tags:
 books:
   - Genesis
   - Psalms
-  - Proverbs
   - Haggai
   - Isaiah
+  - Proverbs
+  - Daniel
 segments:
   - Taking Issue
   - Chapter and Verse

@@ -39,6 +39,7 @@ books:
   - Genesis
   - Isaiah
   - Proverbs
+  - John
   - Job
 draft: false
 ---

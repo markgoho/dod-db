@@ -1,5 +1,5 @@
 /**
- * Scripture book definitions for the Protestant canon plus 1 Esdras.
+ * Scripture book definitions for the Protestant canon plus deuterocanonical and Orthodox additions.
  * Used for detecting Bible references in podcast transcripts.
  */
 
@@ -25,12 +25,12 @@ export type BookDefinition =
     };
 
 /**
- * The 67 books in this list: 66-book Protestant canon plus 1 Esdras.
- * Organized by Old Testament (40 books) and New Testament (27 books).
+ * The 82 books in this list: 55 Old Testament books and 27 New Testament books.
+ * Includes the Protestant canon plus deuterocanonical and Orthodox additions.
  */
 export const scriptureBooks: BookDefinition[] = [
   // ============================================
-  // OLD TESTAMENT - 40 books (39 canonical + 1 Esdras)
+  // OLD TESTAMENT - 55 books
   // ============================================
 
   // Pentateuch (Torah)
@@ -144,9 +144,36 @@ export const scriptureBooks: BookDefinition[] = [
     testament: "old",
   },
   {
+    canonical: "Tobit",
+    abbreviations: ["Tob", "Tb"],
+    variants: ["Book of Tobit"],
+    testament: "old",
+  },
+  {
+    canonical: "Judith",
+    abbreviations: ["Jdt", "Jth"],
+    variants: ["Book of Judith"],
+    testament: "old",
+    llmVerify: true,
+    description:
+      "The Book of Judith in the deuterocanon, about Judith and the defeat of Holofernes",
+  },
+  {
     canonical: "1 Esdras",
     abbreviations: ["1 Esd", "1Esd"],
-    variants: ["First Esdras", "1st Esdras", "Greek Ezra"],
+    variants: ["First Esdras", "1st Esdras", "Greek Ezra", "Book of 1 Esdras"],
+    testament: "old",
+  },
+  {
+    canonical: "2 Esdras",
+    abbreviations: ["2 Esd", "2Esd"],
+    variants: [
+      "Second Esdras",
+      "2nd Esdras",
+      "II Esdras",
+      "Latin Esdras",
+      "4 Ezra",
+    ],
     testament: "old",
   },
   {
@@ -159,6 +186,18 @@ export const scriptureBooks: BookDefinition[] = [
     canonical: "2 Maccabees",
     abbreviations: ["2 Macc", "2Macc"],
     variants: ["Second Maccabees", "2nd Maccabees", "II Maccabees"],
+    testament: "old",
+  },
+  {
+    canonical: "3 Maccabees",
+    abbreviations: ["3 Macc", "3Macc"],
+    variants: ["Third Maccabees", "3rd Maccabees", "III Maccabees"],
+    testament: "old",
+  },
+  {
+    canonical: "4 Maccabees",
+    abbreviations: ["4 Macc", "4Macc"],
+    variants: ["Fourth Maccabees", "4th Maccabees", "IV Maccabees"],
     testament: "old",
   },
   {
@@ -202,6 +241,26 @@ export const scriptureBooks: BookDefinition[] = [
     variants: ["Song of Songs", "Canticles", "Canticle of Canticles"],
     testament: "old",
   },
+  {
+    canonical: "Wisdom of Solomon",
+    abbreviations: ["Wis", "Ws"],
+    variants: ["Wisdom", "Book of Wisdom"],
+    testament: "old",
+  },
+  {
+    canonical: "Sirach",
+    abbreviations: ["Sir"],
+    variants: [
+      "Ecclesiasticus",
+      "Ben Sira",
+      "Wisdom of Sirach",
+      "Book of Sirach",
+    ],
+    testament: "old",
+    llmVerify: true,
+    description:
+      "The Book of Sirach (Ecclesiasticus) in the deuterocanon, a wisdom text associated with Ben Sira",
+  },
 
   // Major Prophets
   {
@@ -223,6 +282,21 @@ export const scriptureBooks: BookDefinition[] = [
     testament: "old",
   },
   {
+    canonical: "Baruch",
+    abbreviations: ["Bar"],
+    variants: ["Book of Baruch"],
+    testament: "old",
+    llmVerify: true,
+    description:
+      "The Book of Baruch in the deuterocanon, associated with Jeremiah's scribe Baruch",
+  },
+  {
+    canonical: "Letter of Jeremiah",
+    abbreviations: ["Let Jer", "EpJer"],
+    variants: ["Epistle of Jeremiah"],
+    testament: "old",
+  },
+  {
     canonical: "Ezekiel",
     abbreviations: ["Ezek", "Eze", "Ezk"],
     variants: [],
@@ -232,6 +306,31 @@ export const scriptureBooks: BookDefinition[] = [
     canonical: "Daniel",
     abbreviations: ["Dan", "Da", "Dn"],
     variants: [],
+    testament: "old",
+  },
+  {
+    canonical: "Prayer of Azariah",
+    abbreviations: [],
+    variants: [
+      "Song of the Three Young Men",
+      "Song of the Three Holy Children",
+      "Book of the Prayer of Azariah",
+    ],
+    testament: "old",
+  },
+  {
+    canonical: "Susanna",
+    abbreviations: ["Sus"],
+    variants: ["Book of Susanna"],
+    testament: "old",
+    llmVerify: true,
+    description:
+      "The Book of Susanna in the Greek additions to Daniel, about Susanna and the two elders",
+  },
+  {
+    canonical: "Bel and the Dragon",
+    abbreviations: ["Bel"],
+    variants: ["Book of Bel and the Dragon"],
     testament: "old",
   },
 
@@ -306,6 +405,12 @@ export const scriptureBooks: BookDefinition[] = [
     canonical: "Malachi",
     abbreviations: ["Mal", "Ml"],
     variants: [],
+    testament: "old",
+  },
+  {
+    canonical: "Prayer of Manasseh",
+    abbreviations: ["Pr Man", "PrMan"],
+    variants: ["Book of the Prayer of Manasseh"],
     testament: "old",
   },
 

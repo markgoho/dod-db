@@ -36,6 +36,7 @@ books:
   - Isaiah
   - Exodus
   - Psalms
+  - Mark
 segments:
   - "All Right, Let's See It"
   - What Does That Mean?

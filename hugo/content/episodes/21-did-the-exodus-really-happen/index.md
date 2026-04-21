@@ -38,6 +38,7 @@ tags:
   - Ugarit
 books:
   - Exodus
+  - Ezekiel
   - Psalms
   - Numbers
 segments:

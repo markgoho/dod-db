@@ -29,6 +29,7 @@ tags:
   - Peter
 books:
   - Psalms
+  - Bel and the Dragon
 segments:
   - Chapter and Verse
   - Artifacts and Fiction
@@ -172,7 +173,7 @@ draft: false
 {{< line >}}[00:34:16.830] Dan Beecher: Yeah, we should ask them.{{< /line >}}
 {{< line >}}[00:34:19.790] Dan McClellan: Yeah, one day.{{< /line >}}
 {{< line >}}[00:34:22.670] Dan Beecher: You know, it's funny that they were working so hard to try and get Elijah to show up, because I can verify that he—he's actually pretty easy to summon, because I went to the Jewish Community Center for preschool, and there was one day every year when they would leave the door open, an empty chair, pour—pour a glass of wine for Elijah, and then we would all go out and play in the playground. And when we came back, he had been there and drank that glass of wine, so. And our teacher was a little happier. So I think—I think it's pretty easy to summon if you're.{{< /line >}}
-{{< line >}}[00:35:03.789] Dan McClellan: I'm getting some—some hints of Bel and the Dragon there. Well, that's a—that's a good way to make kids feel bad about wanting to play. Be like, oh, you just missed him. You know, he was just here. You would have seen Elijah that we've been waiting for thousands of years to come back.{{< /line >}}
+{{< line >}}[00:35:03.789] Dan McClellan: I'm getting some—some hints of {{< scripture ref="Bel and the Dragon" >}} there. Well, that's a—that's a good way to make kids feel bad about wanting to play. Be like, oh, you just missed him. You know, he was just here. You would have seen Elijah that we've been waiting for thousands of years to come back.{{< /line >}}
 {{< line >}}[00:35:23.990] Dan Beecher: I mean, I guess I—you know what? As someone who—who had believed in both the tooth fairy and Santa Claus, I was used to magical beings showing up when I wasn't looking.{{< /line >}}
 {{< line >}}[00:35:34.870] Dan McClellan: I think it was fine. So your parents said, "Get used to disappointment." And you said, "Hey, that's a quote. I know what you're doing."{{< /line >}}
 {{< line >}}[00:35:46.230] Dan Beecher: I—wait, what is that from? "Get used to disappointment."{{< /line >}}

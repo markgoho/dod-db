@@ -26,6 +26,11 @@ tags:
   - Judah
   - Melchizedek
   - Second Temple period
+books:
+  - Luke
+  - Matthew
+  - Acts
+  - James
 guests:
   - Eric Vanden Eykel
 episodeTopic: Magi

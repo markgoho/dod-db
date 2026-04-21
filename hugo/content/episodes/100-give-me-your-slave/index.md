@@ -33,6 +33,8 @@ tags:
   - Romans
 books:
   - Philemon
+  - Revelation
+  - Acts
   - Isaiah
 segments:
   - Chapter and Verse
@@ -242,7 +244,7 @@ draft: false
 {{< line >}}[00:41:02.210] Dan McClellan: But they're all kept on their own. And they all translate the Torah, so just the first five books of Moses. And this is gonna be a point later on, but they're all alone.{{< /line >}}
 {{< line >}}[00:42:11.250] Dan McClellan: But this time actually word for word identical, at least according to the tradition.{{< /line >}}
 {{< line >}}[00:42:15.570] Dan Beecher: Okay, and, and this sounds unlikely or, or rather it sounds like one guy just started, started dictating and everybody else just wrote what they heard.{{< /line >}}
-{{< line >}}[00:42:25.890] Dan McClellan: Well, if you, if you historicize it. But this is, this is the stuff of legends. Right? Right. And they take this as, as a sign of divine approbation. And then they have this grand party and pronounce blessings on, on everything. And then pronounce curses on anybody who should take anything away from, add to or take anything away from this text in a very Deuteronomistic style and a very Apocalypse of John style.{{< /line >}}
+{{< line >}}[00:42:25.890] Dan McClellan: Well, if you, if you historicize it. But this is, this is the stuff of legends. Right? Right. And they take this as, as a sign of divine approbation. And then they have this grand party and pronounce blessings on, on everything. And then pronounce curses on anybody who should take anything away from, add to or take anything away from this text in a very Deuteronomistic style and a very {{< scripture ref="Revelation" display="Apocalypse of John" >}} style.{{< /line >}}
 {{< line >}}[00:42:54.680] Dan Beecher: Right.{{< /line >}}
 {{< line >}}[00:42:55.920] Dan McClellan: Which is basically a way to say this has God's sign-off. Yes, this was all miraculous and so this is a good thing and don't nobody change it. And, and one of the things this does is this is a way to make Greek-speaking Jewish folks feel like their translation, their non-Hebrew scriptures are actually A-OK. That they've been given the divine stamp of approval. And so it, in some sense the Letter of Aristeas is functioning as an apologetic not only for the quality of the translation but also for the use of the translation, the existence of the translation. This is still scripture. This is still the inspired word of God, no matter what you, you know, anti-Greekites are, are saying. Right. About the anti-dentites and, and the rest.{{< /line >}}
 {{< line >}}[00:43:49.730] Dan Beecher: But it's, it's basically a, a reproof against the, the Robert Frost quote. That poetry is what's lost in translation. They're saying this is scripture is not what's lost in translation when it's this translation.{{< /line >}}

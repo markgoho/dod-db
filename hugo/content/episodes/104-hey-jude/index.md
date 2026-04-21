@@ -52,16 +52,17 @@ tags:
   - Second Temple period
   - Tertullian
 books:
+  - 2 Peter
   - Exodus
   - Isaiah
   - Deuteronomy
+  - Jude
   - Genesis
   - Hosea
   - Psalms
-  - 2 Peter
-  - Jude
   - Philippians
   - Ezekiel
+  - Acts
 segments:
   - Chapter and Verse
   - Taking Issue
@@ -123,9 +124,9 @@ draft: false
 {{< line >}}[00:06:23.850] Dan Beecher: Oh.{{< /line >}}
 {{< line >}}[00:06:25.130] Dan McClellan: Because this letter was probably written closer to the end of the first century CE or the beginning of the second century CE. It was probably not written contemporaneous with the life of James, the brother of Jesus. And, and so is probably pseudepigraphic, meaning that the person was probably writing in someone else's name, falsely arrogating their identity and thus their authority. And there have even been debates about this. Obviously folks who are committed to the inerrancy of and the inspiration of the entire Bible are going to want to defend traditional authorship. Yeah, there's not.{{< /line >}}
 {{< line >}}[00:07:05.900] Dan Beecher: I would see. I could see that.{{< /line >}}
-{{< line >}}[00:07:08.620] Dan McClellan: Yeah. There's not an incredibly strong argument to make. And there are some peculiarities about this that we're going to get into that make it seem like maybe this is. This is somebody who's a little outside of, you know, the central hierarchy of the followers of Jesus. And so I personally think we're probably looking at the 90s or maybe the, the 100s, the aughts of the, the second century CE. There are parts of this that seem to be referred to in the Epistle of Second Peter. And so most scholars think that Second Peter is probably referencing parts of Jude, and so it has to have come before Second Peter. However, Second Peter is agreed by the majority of scholars to have been written like between 120 and 150 CE.{{< /line >}}
+{{< line >}}[00:07:08.620] Dan McClellan: Yeah. There's not an incredibly strong argument to make. And there are some peculiarities about this that we're going to get into that make it seem like maybe this is. This is somebody who's a little outside of, you know, the central hierarchy of the followers of Jesus. And so I personally think we're probably looking at the 90s or maybe the, the 100s, the aughts of the, the second century CE. There are parts of this that seem to be referred to in the Epistle of {{< scripture ref="2 Peter" >}}. And so most scholars think that {{< scripture ref="2 Peter" >}} is probably referencing parts of Jude, and so it has to have come before {{< scripture ref="2 Peter" >}}. However, {{< scripture ref="2 Peter" >}} is agreed by the majority of scholars to have been written like between 120 and 150 CE.{{< /line >}}
 {{< line >}}[00:08:05.380] Dan Beecher: Oh.{{< /line >}}
-{{< line >}}[00:08:05.780] Dan McClellan: So that. That was probably the last text that was written in the whole New Testament. So Jude is. Is probably later than the majority of the Gospels, probably much later than Paul, but not quite as late as Second Peter. So sorry, I just thought the, the table needed to be set a little bit regarding.{{< /line >}}
+{{< line >}}[00:08:05.780] Dan McClellan: So that. That was probably the last text that was written in the whole New Testament. So Jude is. Is probably later than the majority of the Gospels, probably much later than Paul, but not quite as late as {{< scripture ref="2 Peter" >}}. So sorry, I just thought the, the table needed to be set a little bit regarding.{{< /line >}}
 {{< line >}}[00:08:24.260] Dan Beecher: No, no, no. Totally, totally. So what you're saying is that this whole thing should be ignored as, as, as bunk as baloney as well, at.{{< /line >}}
 {{< line >}}[00:08:34.710] Dan McClellan: Least in terms of it's. It's probably a forgery or pseudepigraphic. Now there is it probably was an actual letter that was sent to a group.{{< /line >}}
 {{< line >}}[00:08:48.670] Dan Beecher: Yeah, that makes sense.{{< /line >}}
@@ -241,7 +242,7 @@ draft: false
 {{< line >}}[00:39:23.259] Dan Beecher: So it does seem like he's.{{< /line >}}
 {{< line >}}[00:39:24.460] Dan McClellan: He's.{{< /line >}}
 {{< line >}}[00:39:24.900] Dan Beecher: He's claiming that that is the end time, that they are living in the end times. Right.{{< /line >}}
-{{< line >}}[00:39:30.300] Dan McClellan: Yeah. And this, and this seems to be. And this is where we, we have an overlap with Second Peter. We have Second Peter. I think it's three. Yeah. Second Peter Three, Three. And so some folks say that this is quoting Second Peter. And then others would suggest maybe Second Peter is actually turning around and quoting this. So the, the relative chronology there is, is a little tricky. But yeah, this is, this is The. The last days. I. I think this. And this seems to me to harmonize with what we have in. In some other pseudepigraphic literature where they're talking about how, oh, we're gonna have the falling away, The. The man of lawlessness, the man of sin will be revealed. And these are ways to kind of rationalize why Jesus does not seem to have been on time for his own second coming.{{< /line >}}
+{{< line >}}[00:39:30.300] Dan McClellan: Yeah. And this, and this seems to be. And this is where we, we have an overlap with {{< scripture ref="2 Peter" >}}. We have {{< scripture ref="2 Peter" >}}. I think it's three. Yeah. {{< scripture ref="2 Peter" >}} Three, Three. And so some folks say that this is quoting {{< scripture ref="2 Peter" >}}. And then others would suggest maybe {{< scripture ref="2 Peter" >}} is actually turning around and quoting this. So the, the relative chronology there is, is a little tricky. But yeah, this is, this is The. The last days. I. I think this. And this seems to me to harmonize with what we have in. In some other pseudepigraphic literature where they're talking about how, oh, we're gonna have the falling away, The. The man of lawlessness, the man of sin will be revealed. And these are ways to kind of rationalize why Jesus does not seem to have been on time for his own second coming.{{< /line >}}
 {{< line >}}[00:40:18.450] Dan Beecher: Right, right. Which was supposed to be like, this generation will not pass away before he returns. Right.{{< /line >}}
 {{< line >}}[00:40:23.730] Dan McClellan: So. Right.{{< /line >}}
 {{< line >}}[00:40:24.250] Dan Beecher: So it was supposed to have happened, like, in a generation or two.{{< /line >}}

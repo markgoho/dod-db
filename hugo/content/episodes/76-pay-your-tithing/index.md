@@ -28,11 +28,12 @@ tags:
   - Romans
   - Ugarit
 books:
+  - Numbers
   - Deuteronomy
   - Malachi
   - Matthew
-  - Numbers
   - Leviticus
+  - 1 John
 segments:
   - What Does That Mean?
   - Chapter and Verse
@@ -245,7 +246,7 @@ draft: false
 {{< line >}}[00:48:04.100] Dan McClellan: And churches can't do it on their own. They're trying and they don't even do, they don't even do a fraction of a percent of, of the, the spending that is required every year.{{< /line >}}
 {{< line >}}[00:48:13.850] Dan Beecher: Right. And the thing is that, like, the most, the, the places in the world that do the best at this are the ones that, you know, entirely ceded to government agencies that will, that will take care of people and reenfranchise them into society and all this other stuff. So. Yeah, I just think it's very, I think the stinginess of people is very weird. It's understandable. I get it. We're all kind of stingy. We all like money and want to have as much of it as we can have.{{< /line >}}
 {{< line >}}[00:48:46.350] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:48:46.790] Dan Beecher: But it does seem to me like it's not enough to pay your tithes if, if, if you want to feel like you're obeying as a... Like that. I guess that's what I'm getting at is like, you know, in 1 John chapter 3, it says, "But if anyone has the world's goods and sees his brother in need, yet closes his heart against him, how does God's love abide in him?" I think if you're, you know, if, if you want to show your Christianity, it's, it's not by doing the tithing thing. It's, you know, that's, that's, it's, it's by opening your heart in, in other, bigger, broader ways.{{< /line >}}
+{{< line >}}[00:48:46.790] Dan Beecher: But it does seem to me like it's not enough to pay your tithes if, if, if you want to feel like you're obeying as a... Like that. I guess that's what I'm getting at is like, you know, in {{< scripture ref="1 John" >}} chapter 3, it says, "But if anyone has the world's goods and sees his brother in need, yet closes his heart against him, how does God's love abide in him?" I think if you're, you know, if, if you want to show your Christianity, it's, it's not by doing the tithing thing. It's, you know, that's, that's, it's, it's by opening your heart in, in other, bigger, broader ways.{{< /line >}}
 {{< line >}}[00:49:33.910] Dan McClellan: And, and I think that reveals the motivations as well, because that's something that you find all over the, the Bible is that, for instance, in {{< scripture ref="Deuteronomy 15" >}}, you have this idea that, that you're, you're going to forgive debts in the Jubilee year and you're going to do all this, and it says, "And you have to do it with a happy heart." So it's not just saying this is required behavior. It's also saying these are required motivations for the behavior as well. And if, yeah, if, if you see this, if you try to reinterpret {{< scripture ref="Matthew 19" >}}, and I see this all the time. "Oh, that's situational. That's Jesus giving specific guidance to one individual person. That's not generalizable. That's not universalizable." I kind of think it is.{{< /line >}}
 {{< line >}}[00:50:23.930] Dan Beecher: Why would it be in there if it weren't?{{< /line >}}
 {{< line >}}[00:50:26.250] Dan McClellan: Yeah. Jesus didn't, like, watch him walk away and then was like, "That wasn't for any of y'all. That was just for him."{{< /line >}}

@@ -26,6 +26,7 @@ tags:
   - Babylon
 books:
   - Exodus
+  - Numbers
   - Isaiah
   - Psalms
 guests:

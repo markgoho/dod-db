@@ -46,7 +46,9 @@ tags:
   - Nebuchadnezzar
 books:
   - Genesis
+  - Song of Solomon
   - Deuteronomy
+  - Susanna
 segments:
   - Taking Issue
   - Biblicalish
@@ -106,7 +108,7 @@ draft: false
 {{< line >}}[00:11:29.970] Dan Beecher: is glowing, you're glistening, you're positively glowing.{{< /line >}}
 {{< line >}}[00:11:34.880] Dan McClellan: And then the only time it ever talks about black skin is when it's talking about certain diseases that create necrosis and things like that.{{< /line >}}
 {{< line >}}[00:11:42.400] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:11:43.120] Dan McClellan: And then, you know, you have in the Song of Songs, the woman says, I am blackened and beautiful. The idea being that she is working class. She gets made fun of for being working class because her skin has been darkened by the sun. And but she doesn't understand that as a harsh value judgment. But yeah, there's no part of the Bible that says anything about skin color as a moral barometer.{{< /line >}}
+{{< line >}}[00:11:43.120] Dan McClellan: And then, you know, you have in the {{< scripture ref="Song of Solomon" display="Song of Songs" >}}, the woman says, I am blackened and beautiful. The idea being that she is working class. She gets made fun of for being working class because her skin has been darkened by the sun. And but she doesn't understand that as a harsh value judgment. But yeah, there's no part of the Bible that says anything about skin color as a moral barometer.{{< /line >}}
 {{< line >}}[00:12:12.390] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:12:13.030] Dan McClellan: So that's read back in by folks who want to feel like, oh, yeah, white skin good, dark skin bad. But that's something that postdates the development of the concept of race as a question of skin color. So it's like 16th through the early 20th centuries is when that's a thing. And really most prominently in the 19th century when the debates about slavery are leading to civil war.{{< /line >}}
 {{< line >}}[00:12:40.030] Dan Beecher: Okay. Yeah. There is one, what feels like glaring problem to me with the idea of the mark of Cain being the origin of skin-based racial divides. Wouldn't that have{{< /line >}}

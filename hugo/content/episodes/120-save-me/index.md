@@ -37,10 +37,11 @@ tags:
   - theophany
 books:
   - Genesis
-  - Exodus
   - Isaiah
+  - Exodus
   - Ezekiel
   - Matthew
+  - 1 Chronicles
   - 1 Kings
 segments:
   - What is That?
@@ -141,7 +142,7 @@ draft: false
 {{< line >}}[00:13:46.210] Dan Beecher: Yeah. Not much is made of it other than like, you know, oh, you, you, you ate the, the fruit. You're, it looks like you're going to have pain bearing children for the rest of your life, for the rest of eternity or whatever. And then, and then it doesn't, it doesn't make a big deal about like this has implications forever or whatever. It's just kind of. This is, this is what happened to you.{{< /line >}}
 {{< line >}}[00:14:09.950] Dan McClellan: Yeah, it's, it's like an Aesop's fable. It's like, why, why is it that that pregnancy, which seems like it's such a good thing, hurts so much. Well, there were, there was this lady.{{< /line >}}
 {{< line >}}[00:14:20.870] Dan Beecher: Yeah. And you know, she wouldn't believe what she ate.{{< /line >}}
-{{< line >}}[00:14:25.350] Dan McClellan: And then there's the, you know, the. He will bruise your. No, what is it? You will bruise his heel and he will crush your head. This is the Protevangelium. This is the, the proto-Gospel, which is understood as, as this grand, significant prophecy about how Jesus will destroy Satan. In reality, it's why do snakes hate us so much? And why do we hate snakes? Well, see, there was this lady, right? And it, it's the same thing. It's an etiology for why we hate snakes. Right, but. And, and you know, you look throughout the rest of the Hebrew Bible, the name Adam is mentioned once in a genealogy in First Chronicles somewhere the reference to Eden. I think Eden is mentioned in {{< scripture ref="Ezekiel 28" >}}. And the story is completely different from what we have in {{< scripture ref="Genesis 2" >}} and 3. It's, it's like you were the, you know, the covering cherub and you walked among the stones of fire and you had the covering and in the mountain of God.{{< /line >}}
+{{< line >}}[00:14:25.350] Dan McClellan: And then there's the, you know, the. He will bruise your. No, what is it? You will bruise his heel and he will crush your head. This is the Protevangelium. This is the, the proto-Gospel, which is understood as, as this grand, significant prophecy about how Jesus will destroy Satan. In reality, it's why do snakes hate us so much? And why do we hate snakes? Well, see, there was this lady, right? And it, it's the same thing. It's an etiology for why we hate snakes. Right, but. And, and you know, you look throughout the rest of the Hebrew Bible, the name Adam is mentioned once in a genealogy in {{< scripture ref="1 Chronicles" >}} somewhere the reference to Eden. I think Eden is mentioned in {{< scripture ref="Ezekiel 28" >}}. And the story is completely different from what we have in {{< scripture ref="Genesis 2" >}} and 3. It's, it's like you were the, you know, the covering cherub and you walked among the stones of fire and you had the covering and in the mountain of God.{{< /line >}}
 {{< line >}}[00:15:28.830] Dan McClellan: And {{< scripture ref="Genesis 2" >}} and 3 never mention a mountain anywhere. Like the story as understood by the author of {{< scripture ref="Ezekiel 28" >}} does not seem to come directly from what we have in {{< scripture ref="Genesis 2" >}} and 3. It's some other tradition, but you never have anybody else referring to, oh, you know, when I shake my fist at Adam for eating the fruit and causing all of this trouble. None of that happens till the New Testament.{{< /line >}}
 {{< line >}}[00:15:55.530] Dan Beecher: Right. We should do that Ezekiel story, by the way.{{< /line >}}
 {{< line >}}[00:15:58.490] Dan McClellan: Oh, yeah, yeah, we definitely have to do that because it is.{{< /line >}}

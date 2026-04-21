@@ -36,7 +36,11 @@ tags:
   - Luke
   - Syria
 books:
+  - Matthew
+  - John
+  - Acts
   - Romans
+  - Revelation
 segments:
   - McClellan 911
   - Women in the Bible

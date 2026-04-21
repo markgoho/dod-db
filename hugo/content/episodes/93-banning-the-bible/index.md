@@ -36,8 +36,11 @@ tags:
   - Sodom
 books:
   - Exodus
+  - Revelation
   - Genesis
   - Deuteronomy
+  - Judges
+  - Song of Solomon
 segments:
   - Above the Law
 segmentData:
@@ -313,7 +316,7 @@ draft: false
 {{< line >}}[00:56:00.320] Dan Beecher: Yeah. Anyway, I—I think—{{< /line >}}
 {{< line >}}[00:56:04.200] Dan McClellan: I think we can safely say that, Dan.{{< /line >}}
 {{< line >}}[00:56:07.320] Dan Beecher: Right. Well, no, I'm just saying we can safely say this runs afoul of these laws. Like this is—{{< /line >}}
-{{< line >}}[00:56:14.120] Dan McClellan: We haven't even gotten to the Song of Songs.{{< /line >}}
+{{< line >}}[00:56:14.120] Dan McClellan: We haven't even gotten to the {{< scripture ref="Song of Solomon" display="Song of Songs" >}}.{{< /line >}}
 {{< line >}}[00:56:18.440] Dan Beecher: Right, right. That is all about it. I know. I noted that in—in the Iowa law which went into effect in 2023, it says no sexual acts can be depicted in—in any book from—for all of K through 12, that's kindergarten, 5-year-olds through 12th grade—{{< /line >}}
 {{< line >}}[00:56:39.170] Dan McClellan: For seniors in high school, 17-year-olds, sometimes 18-year-olds in some places.{{< /line >}}
 {{< line >}}[00:56:44.050] Dan Beecher: Right. So they can't. So—so we're protecting them all the way up to 12th grade from sexual acts except for religious texts. Because they thought, "We—we see them coming. We're going to make sure that the Bible's safe." Yeah, but that exception is a dangerous one considering the fact that the Kama Sutra, for crying out loud, could very easily be considered a religious text.{{< /line >}}

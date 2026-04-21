@@ -34,8 +34,8 @@ tags:
   - Pliny the Younger
   - Protestantism
 books:
-  - Matthew
   - John
+  - Matthew
   - 1 Kings
   - Romans
 segments:

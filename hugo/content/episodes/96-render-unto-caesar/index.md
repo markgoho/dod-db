@@ -19,6 +19,7 @@ tags:
   - Matthew
   - Southern Baptist Convention
 books:
+  - Revelation
   - Romans
 segments:
   - Chapter and Verse
