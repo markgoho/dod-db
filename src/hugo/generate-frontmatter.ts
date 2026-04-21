@@ -8,27 +8,27 @@ import { titleToSlug } from "../utils/title-to-slug.js";
 import { formatSegmentsForFrontmatter } from "./format-segments-for-frontmatter.js";
 import { getGuestSpeakers } from "./get-guest-speakers.js";
 
-/**
- * Generate YAML frontmatter for an episode using Bun.YAML.
- */
-const topicSlugs = new Set(
-  [
-    ...new Bun.Glob("*/_index.md").scanSync({
-      cwd: new URL("../../hugo/content/topics/", import.meta.url).pathname,
-    }),
-  ]
-    .map(path => path.split("/")[0])
-    .filter(Boolean),
-);
-
 const canonicalNameBySlug = new Map(
   tagVocabulary.map(entry => [titleToSlug(entry.canonical), entry.canonical]),
 );
+
+function loadTopicSlugs(): Set<string> {
+  return new Set(
+    [
+      ...new Bun.Glob("*/_index.md").scanSync({
+        cwd: new URL("../../hugo/content/topics/", import.meta.url).pathname,
+      }),
+    ]
+      .map(path => path.split("/")[0])
+      .filter(Boolean),
+  );
+}
 
 export function generateFrontmatter(
   video: ProcessedVideo,
   cleanTitle: string,
 ): string {
+  const topicSlugs = loadTopicSlugs();
   const extractedTags = video.tags?.map(t => t.tag) ?? [];
   const topics = extractedTags.flatMap(tag => {
     const slug = titleToSlug(tag);

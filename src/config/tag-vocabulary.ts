@@ -2382,9 +2382,8 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Didache",
-    variations: ["The Didache"],
+    variations: [],
     category: "literature",
-    llmVerify: true,
     description:
       "An early Christian treatise containing instructions for Christian communities",
     status: "accepted",
