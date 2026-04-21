@@ -15,6 +15,7 @@ topics:
   - King James Bible
   - Bel and the Dragon
   - Codex Sinaiticus
+  - Didache
   - Masoretes
   - Susanna
 tags:
@@ -46,7 +47,6 @@ tags:
   - Abimelech
   - Babylon
   - Barnabas
-  - Didache
   - Esther
   - First Clement
   - Galilee

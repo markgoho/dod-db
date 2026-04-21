@@ -8,6 +8,7 @@ aliases:
 topics:
   - Paul
   - Flavius Josephus
+  - Didache
   - Christmas
   - John the Baptist
   - David
@@ -25,7 +26,6 @@ tags:
   - baptism
   - Ignatius
   - Luke
-  - Didache
   - Jerusalem
   - Eusebius
   - Jerome

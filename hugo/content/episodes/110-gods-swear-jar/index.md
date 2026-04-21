@@ -6,6 +6,7 @@ videoId: KmgcugRalZs
 aliases:
   - /episodes/110/
 topics:
+  - Didache
   - Paul
   - Abortion
   - Dead Sea Scrolls
@@ -16,7 +17,6 @@ topics:
   - Flavius Josephus
   - Univocality
 tags:
-  - Didache
   - Judaism
   - Clement of Alexandria
   - Egyptians

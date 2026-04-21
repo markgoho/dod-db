@@ -12,6 +12,7 @@ topics:
   - Decalogue
   - John the Baptist
   - Mary Magdalene
+  - Didache
   - Holy Spirit
   - Univocality
 tags:
@@ -22,7 +23,6 @@ tags:
   - Rebekah
   - Barnabas
   - Catholicism
-  - Didache
   - Flood
   - Isaac
   - Southern Baptist Convention
