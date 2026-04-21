@@ -10,6 +10,7 @@ topics:
   - YHWH
   - Jacob
   - Saul
+  - Jephthah
 tags:
   - Abraham
   - Abimelech
@@ -26,7 +27,6 @@ tags:
   - etiology
   - Terah
   - Egyptians
-  - Jephthah
   - Jonah
   - Leah
   - Melchizedek

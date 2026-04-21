@@ -9,6 +9,7 @@ topics:
   - David
   - Saul
   - YHWH
+  - Jephthah
   - Samson
   - Stele
   - Jacob
@@ -27,7 +28,6 @@ tags:
   - Jael
   - Abigail
   - Solomon
-  - Jephthah
   - Canaanites
   - Jerusalem
   - King Jabin

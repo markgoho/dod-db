@@ -6,6 +6,7 @@ videoId: 9WfRfzTRUVI
 aliases:
   - /episodes/111/
 topics:
+  - Jephthah
   - YHWH
   - David
   - Demon
@@ -14,7 +15,6 @@ topics:
   - Marriage
   - Priestly Source
 tags:
-  - Jephthah
   - circumcision
   - Abraham
   - Ammonites

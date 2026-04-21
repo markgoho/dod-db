@@ -11,6 +11,7 @@ topics:
   - Angel
   - John the Baptist
   - Hell
+  - Jephthah
   - King James Bible
   - Marriage
 tags:
@@ -24,7 +25,6 @@ tags:
   - Samuel
   - Abimelech
   - Gaza
-  - Jephthah
   - Judah
   - Leah
   - Tamar

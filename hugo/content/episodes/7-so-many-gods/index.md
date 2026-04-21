@@ -21,6 +21,7 @@ topics:
   - Dead Sea Scrolls
   - Deutero-Isaiah
   - Jacob
+  - Jephthah
   - Josiah
   - Masoretes
 tags:
@@ -50,7 +51,6 @@ tags:
   - Sea of Galilee
   - Bethel
   - Edomites
-  - Jephthah
   - Judaism
   - Michael
   - Philistines

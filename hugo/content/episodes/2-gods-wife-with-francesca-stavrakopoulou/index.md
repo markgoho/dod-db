@@ -9,6 +9,7 @@ topics:
   - YHWH
   - Asherah
   - Atheism
+  - Jephthah
   - divine council
   - Masoretic Text
   - Stele
@@ -22,7 +23,6 @@ tags:
   - circumcision
   - Isaac
   - Abraham
-  - Jephthah
   - Judah
   - Ugarit
   - Baal

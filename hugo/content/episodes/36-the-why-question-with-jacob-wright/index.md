@@ -13,6 +13,7 @@ topics:
   - Monotheism
   - Saul
   - Goliath
+  - Jephthah
   - Josiah
   - Samson
 tags:
@@ -36,7 +37,6 @@ tags:
   - Hezekiah
   - Isaac
   - Islam
-  - Jephthah
   - Moses
   - Nineveh
   - Philistines
