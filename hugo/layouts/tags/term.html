@@ -1,3 +1,8 @@
+{{ define "head-styles" }}
+  {{ $inlineCSS := slice (resources.Get "css/_prev-next-nav.css") (resources.Get "css/tag-single.css") | resources.Concat "css/tags-term.css" | resources.Minify }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
 {{ define "main" }}
   <section class="cloud-page">
     <header class="page-hero">
@@ -8,6 +13,7 @@
         episode{{ if ne (len .Pages) 1 }}s{{ end }}
       </p>
     </header>
+
 
     <div class="episodes-grid">
       {{ range sort .Pages ".Params.episodeNumber" "desc" }}

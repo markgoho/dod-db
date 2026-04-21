@@ -1,5 +1,5 @@
 {{ define "head-styles" }}
-  {{ $inlineCSS := resources.Get "css/episode-single.css" | resources.Minify }}
+  {{ $inlineCSS := slice (resources.Get "css/_prev-next-nav.css") (resources.Get "css/episode-single.css") | resources.Concat "css/episode-single-page.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
@@ -15,13 +15,30 @@
     {{ $guestLinks = $guestLinks | append (printf `<a href="%s">%s</a>` $guestLink .) }}
   {{ end }}
   {{ $titleTransitionName := printf "episode-title-%v" .Params.episodeNumber }}
-
+  {{ $episodes := sort (where .Site.RegularPages "Section" "episodes") ".Params.episodeNumber" "asc" }}
+  {{ $currentIndex := -1 }}
+  {{ range $index, $episode := $episodes }}
+    {{ if eq $episode.RelPermalink $.RelPermalink }}
+      {{ $currentIndex = $index }}
+    {{ end }}
+  {{ end }}
+  {{ $previousEpisode := cond (gt $currentIndex 0) (index $episodes (sub $currentIndex 1)) nil }}
+  {{ $nextEpisode := cond (lt $currentIndex (sub (len $episodes) 1)) (index $episodes (add $currentIndex 1)) nil }}
 
   <article
     class="episode-page"
     data-pagefind-meta="title:{{ .Title }}"
     data-pagefind-meta="episode:Episode {{ .Params.episodeNumber }}">
-    <header class="page-hero">
+    <header class="page-hero page-hero--profile">
+      {{ partial "taxonomy-nav-links" (dict
+        "ariaLabel" "Episode navigation"
+        "allHref" "/episodes/"
+        "allLabel" "All Episodes"
+        "previousHref" (cond $previousEpisode $previousEpisode.RelPermalink nil)
+        "previousLabel" (cond $previousEpisode (printf "← Episode %v" $previousEpisode.Params.episodeNumber) nil)
+        "nextHref" (cond $nextEpisode $nextEpisode.RelPermalink nil)
+        "nextLabel" (cond $nextEpisode (printf "Episode %v →" $nextEpisode.Params.episodeNumber) nil)
+      ) }}
       <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow"
           >Episode {{ .Params.episodeNumber }} •
@@ -222,8 +239,6 @@
       {{ end }}
     </div>
   </article>
-
-  {{ partial "episode-nav.html" . }}
 {{ end }}
 
 {{ define "footer-scripts" }}

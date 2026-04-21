@@ -1,0 +1,37 @@
+{{- $previousPage := .prev -}}
+{{- $nextPage := .next -}}
+{{- if or $previousPage $nextPage -}}
+  <nav class="prev-next-nav" aria-label="{{ .ariaLabel }}">
+    {{- if $previousPage -}}
+      <a
+        class="prev-next-nav__link prev-next-nav__link--previous"
+        href="{{ $previousPage.RelPermalink }}">
+        <span class="prev-next-nav__arrow" aria-hidden="true">←</span>
+        <span class="prev-next-nav__content">
+          <span class="prev-next-nav__eyebrow type-eyebrow"
+            >{{ .prevEyebrow }}</span
+          >
+          <span class="prev-next-nav__title"
+            >{{ .prevTitle | default $previousPage.Title }}</span
+          >
+        </span>
+      </a>
+    {{- end -}}
+
+    {{- if $nextPage -}}
+      <a
+        class="prev-next-nav__link prev-next-nav__link--next"
+        href="{{ $nextPage.RelPermalink }}">
+        <span class="prev-next-nav__content">
+          <span class="prev-next-nav__eyebrow type-eyebrow"
+            >{{ .nextEyebrow }}</span
+          >
+          <span class="prev-next-nav__title"
+            >{{ .nextTitle | default $nextPage.Title }}</span
+          >
+        </span>
+        <span class="prev-next-nav__arrow" aria-hidden="true">→</span>
+      </a>
+    {{- end -}}
+  </nav>
+{{- end -}}

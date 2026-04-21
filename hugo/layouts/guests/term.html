@@ -1,5 +1,5 @@
 {{ define "head-styles" }}
-  {{ $inlineCSS := resources.Get "css/guest-single.css" | resources.Minify }}
+  {{ $inlineCSS := slice (resources.Get "css/_prev-next-nav.css") (resources.Get "css/guest-single.css") | resources.Concat "css/guests-term.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 

@@ -1,5 +1,5 @@
 {{ define "head-styles" }}
-  {{ $inlineCSS := resources.Get "css/tag-single.css" | resources.Minify }}
+  {{ $inlineCSS := slice (resources.Get "css/_prev-next-nav.css") (resources.Get "css/tag-single.css") | resources.Concat "css/topics-term.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
@@ -119,6 +119,7 @@
         </div>
       </section>
     {{ end }}
+
   </section>
 {{ end }}
 

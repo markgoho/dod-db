@@ -63,6 +63,8 @@ Use the gathered JSON to make the authorial decisions.
 - Keep featured items in different episodes.
 - Do not include both a segment and its parent episode as separate featured items.
 - If no suitable segment stands out, use up to one strong episode instead.
+- Treat the section as a reference list for the book, not just a minimal shortlist: include all specifically called-out book references surfaced by gather, especially chapter-and-verse segments and other direct book-labeled segments.
+- When multiple featured items are included, order them by ascending episode number.
 
 The frontmatter shape is:
 
@@ -81,7 +83,10 @@ featuredItems:
 
 - Select exactly 4 quotes.
 - Weight choices toward historicity, authorship, composition history, redaction, canon formation, and other strong `data over dogma` angles.
+- Prefer quotes that directly answer some mix of: when was this written, how was it composed, how historical is it, and what larger scholarly frame best explains it.
+- Check `.claude/skills/create-book-page/quote-bank.md` first for reusable high-value quotes and quote-selection heuristics.
 - Avoid plot-summary quotes unless they make a sharp historical point.
+- Avoid merely adjacent quotes that mention an artifact or motif from the book without illuminating the book's dating, authorship, composition, or historicity.
 - Prefer variety across episodes and angles.
 - Use full speaker names.
 - Each quote must include:
@@ -89,6 +94,9 @@ featuredItems:
   - `speaker`
   - `episode` as an integer
   - `timestamp` as a quoted string like `"HH:MM:SS.mmm"`
+- You may add short bracketed clarifications inside `text` when needed to preserve readability, such as replacing vague references like `that period` with `[the period of the judges]`.
+- Keep clarifications minimal and purely editorial. Do not change the quote's substantive meaning, tone, or claim.
+- Prefer clarifying pronouns, ellipsed referents, or period labels rather than rewriting syntax.
 
 #### Body
 

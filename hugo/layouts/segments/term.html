@@ -1,3 +1,8 @@
+{{ define "head-styles" }}
+  {{ $inlineCSS := slice (resources.Get "css/_prev-next-nav.css") (resources.Get "css/tag-single.css") | resources.Concat "css/segments-term.css" | resources.Minify }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
 {{ define "main" }}
   <section class="term-page term-page--episodes-archive">
     {{ partial "taxonomy-hero" (dict "page" . "taxonomy" "segments" "backHref" "/segments/" "backLabel" "All Segments") }}

@@ -120,10 +120,19 @@ function quoteYaml(value: string): string {
   return JSON.stringify(value);
 }
 
+function getFeaturedItemEpisodeNumber(item: FeaturedItem): number {
+  return item.type === "segment" ? item.episodeNumber : item.number;
+}
+
 function renderFeaturedItems(items: FeaturedItem[]): string[] {
+  const sortedItems = [...items].sort(
+    (left, right) =>
+      getFeaturedItemEpisodeNumber(left) - getFeaturedItemEpisodeNumber(right),
+  );
+
   return [
     "featuredItems:",
-    ...items.flatMap(item => {
+    ...sortedItems.flatMap(item => {
       if (item.type === "segment") {
         return [
           `  - type: ${item.type}`,
