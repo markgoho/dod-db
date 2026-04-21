@@ -51,11 +51,16 @@ enableGitInfo = true
   weight = 2
 
 [[menu.main]]
+  name = "Books"
+  url = "/books/"
+  weight = 3
+
+[[menu.main]]
   name = "Segments"
   url = "/segments/"
-  weight = 3
+  weight = 4
 
 [[menu.main]]
   name = "Guests"
   url = "/guests/"
-  weight = 4
+  weight = 5
