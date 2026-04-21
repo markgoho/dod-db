@@ -18,6 +18,7 @@
   {{- end -}}
 {{- end -}}
 
+
 <article class="tag-quote panel">
   <p class="tag-quote__text">“{{ $quote.text }}”</p>
   <div class="tag-quote__meta">
@@ -28,7 +29,8 @@
         class="tag-quote__episode chip"
         data-episode="{{ $quote.episode }}"
         data-share-url="{{ $quoteHref | absURL }}">
-        Episode {{ $quote.episode }}
+        Episode
+        {{ $quote.episode }}
       </a>
     {{- else -}}
       <span class="tag-quote__episode chip">Episode {{ $quote.episode }}</span>
