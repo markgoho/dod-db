@@ -68,9 +68,14 @@ describe("getRawGuestSpeakers", () => {
     expect(getRawGuestSpeakers(speakers)).toEqual(["David Burnett"]);
   });
 
-  test("preserves guest honorifics in display names", () => {
+  test("preserves guest honorifics in raw names", () => {
     const speakers = ["Dan McClellan", "Rev Karla Kamstra", "Dan Beecher"];
     expect(getRawGuestSpeakers(speakers)).toEqual(["Rev Karla Kamstra"]);
+  });
+
+  test("strips leading honorifics from taxonomy guest names", () => {
+    const speakers = ["Dan McClellan", "Rev Karla Kamstra", "Dan Beecher"];
+    expect(getGuestSpeakers(speakers)).toEqual(["Karla Kamstra"]);
   });
 });
 

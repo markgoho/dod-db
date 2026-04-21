@@ -5,8 +5,9 @@
 
 {{ define "main" }}
   {{ $profiles := index hugo.Data "guest-profiles" }}
-  {{ $profile := index $profiles .Title }}
-  {{ $titleTransitionName := printf "guests-title-%s" (.Title | urlize) }}
+  {{ $displayTitle := .Params.title | default .Title }}
+  {{ $profile := index $profiles $displayTitle }}
+  {{ $titleTransitionName := printf "guests-title-%s" ($displayTitle | urlize) }}
   <section class="term-page term-page--episodes-archive guest-page">
     <header
       class="{{ if $profile }}
@@ -29,7 +30,7 @@
         <h1
           class="guest-hero__title"
           style="view-transition-name: {{ $titleTransitionName }}">
-          {{ .Title }}
+          {{ $displayTitle }}
         </h1>
         <div
           class="page-hero__meta page-hero__meta--headline guest-hero__meta panel">

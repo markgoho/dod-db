@@ -6,8 +6,13 @@
 {{ define "main" }}
   {{ $guests := .Params.guests | default slice }}
   {{ $guestLinks := slice }}
+  {{ $guestPagesByTitle := dict }}
+  {{ range site.Taxonomies.guests }}
+    {{ $guestPagesByTitle = merge $guestPagesByTitle (dict .Page.Title .Page.RelPermalink) }}
+  {{ end }}
   {{ range $guests }}
-    {{ $guestLinks = $guestLinks | append (printf `<a href="/guests/%s/">%s</a>` (. | urlize) .) }}
+    {{ $guestLink := index $guestPagesByTitle . | default (printf "/guests/%s/" (. | urlize)) }}
+    {{ $guestLinks = $guestLinks | append (printf `<a href="%s">%s</a>` $guestLink .) }}
   {{ end }}
   {{ $titleTransitionName := printf "episode-title-%v" .Params.episodeNumber }}
 

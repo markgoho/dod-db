@@ -79,6 +79,22 @@ describe("generateFrontmatter", () => {
     expect(actual).toBe(expected);
   });
 
+  test("strips guest honorifics in frontmatter taxonomy values", () => {
+    const video: ProcessedVideo = {
+      videoId: "guest-honorific-456",
+      title: "Episode 82",
+      publishedAt: "2024-06-10T09:00:00Z",
+      processedAt: "2024-06-10T11:00:00Z",
+      transcriptPath: "data/transcripts/2024-06-10-episode-82.txt",
+      episodeNumber: 82,
+      speakers: ["Dan McClellan", "Rev Karla Kamstra", "Dan Beecher"],
+    };
+
+    const actual = generateFrontmatter(video, "Deconstruction Zone");
+
+    expect(actual).toContain("guests:\n  - Karla Kamstra");
+  });
+
   test("includes guest topic for guest episodes", async () => {
     const video: ProcessedVideo = {
       videoId: "guest-topic-456",
