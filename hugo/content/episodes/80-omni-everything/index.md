@@ -75,7 +75,7 @@ draft: false
 {{< line >}}[00:01:01.930] Dan Beecher: Presence, omnibenevolence, omni-everything. As many omnis as you can come up with. We're going to talk about them. And, and are they—and is the God of the Bible those things?{{< /line >}}
 {{< line >}}[00:01:14.490] Dan McClellan: Omni all those things.{{< /line >}}
 {{< line >}}[00:01:15.930] Dan Beecher: Omni, omni those. We don't know. We'll, we'll get to that. And then for our Chapter and Verse, we're gonna dive into {{< scripture ref="Acts 15" >}} and you're gonna explain something that I didn't understand when I tried to read it.{{< /line >}}
-{{< line >}}[00:01:29.350] Dan McClellan: And just two verses: Acts, {{< scripture ref="Acts 15" >}}, verse 16 and verse 17. But yeah, okay, and we'll—{{< /line >}}
+{{< line >}}[00:01:29.350] Dan McClellan: And just two verses: Acts, {{< scripture ref="Acts 15:16" >}} and verse 17. But yeah, okay, and we'll—{{< /line >}}
 {{< line >}}[00:01:35.670] Dan Beecher: Well, then why did I read the whole chapter, Dan?{{< /line >}}
 {{< line >}}[00:01:38.509] Dan McClellan: Because you're a go-getter. You need the context. But yeah, we'll—and we'll talk more about that when we get there.{{< /line >}}
 {{< line >}}[00:01:45.150] Dan Beecher: But for now, let's dive into "What is that?"{{< /line >}}

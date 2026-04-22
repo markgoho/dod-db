@@ -189,7 +189,7 @@ draft: false
 {{< line >}}[00:25:24.650] Dan Beecher: Yeah. Let's move on to our chapter and verse.{{< /line >}}
 {{< line >}}[00:25:27.450] Dan McClellan: Let's do it.{{< /line >}}
 {{< line >}}[00:25:31.050] Dan Beecher: And I'm excited about this one. As I said earlier, as I teased in the opening of the show, because when I read Exodus, there's this thing that keeps happening over and over again in chapter four and chapter seven and chapter 10 and chapter 14. And if I read it, you know, the way I see it on the page, it's mystifying. It's infuriating is what it is. So let's talk a little bit about. About. Okay, so what we've got, We've got Moses, we've got Pharaoh, we can read.{{< /line >}}
-{{< line >}}[00:26:12.770] Dan McClellan: {{< scripture ref="Exodus 4" >}}, verse 21.{{< /line >}}
+{{< line >}}[00:26:12.770] Dan McClellan: {{< scripture ref="Exodus 4:21" >}}.{{< /line >}}
 {{< line >}}[00:26:15.090] Dan Beecher: Yes.{{< /line >}}
 {{< line >}}[00:26:15.970] Dan McClellan: I think that kind of introduces what we're talking about.{{< /line >}}
 {{< line >}}[00:26:19.090] Dan Beecher: So this is. This is Moses. He has left Egypt. And he. And. And God is sending him back into Egypt to go and free his people from bondage under the pharaoh.{{< /line >}}
@@ -225,7 +225,7 @@ draft: false
 {{< line >}}[00:30:47.350] Dan Beecher: Please let them go.{{< /line >}}
 {{< line >}}[00:30:48.710] Dan McClellan: Okay, there you go.{{< /line >}}
 {{< line >}}[00:30:49.350] Dan Beecher: Yeah. Yeah.{{< /line >}}
-{{< line >}}[00:30:50.320] Dan McClellan: I knew that was going to happen. And then again in. In {{< scripture ref="Exodus 7" >}}, verse 3, and I love {{< scripture ref="Exodus 7" >}}, verse 1, God tells Moses, I will make you a God to Pharaoh.{{< /line >}}
+{{< line >}}[00:30:50.320] Dan McClellan: I knew that was going to happen. And then again in. In {{< scripture ref="Exodus 7:3" >}}, and I love {{< scripture ref="Exodus 7:1" >}}, God tells Moses, I will make you a God to Pharaoh.{{< /line >}}
 {{< line >}}[00:31:02.240] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:31:03.040] Dan McClellan: But I'm not gonna let Pharaoh let your people go.{{< /line >}}
 {{< line >}}[00:31:06.560] Dan Beecher: And it's not very much of, I will make you a God. Because what he's about to do is these. The rod into a snake trick, which is a good trick. That's really awesome. But then like, Pharaoh's guys can do the same trick.{{< /line >}}

@@ -219,7 +219,7 @@ draft: false
 {{< line >}}[00:41:52.430] Dan Beecher: You're the JV. Yeah, it's. It's a cute god.{{< /line >}}
 {{< line >}}[00:41:57.250] Dan McClellan: The JV squad. But you have translations like the New American Standard Bible, the NASB, which says according to the number of the sons of Israel, and then they'll just include a footnote that says the Dead Sea Scrolls say sons of God. The Septuagint says "angels of God." We don't care, though. New English Translation has... Oh, we already went over that one, but they've got copious notes there. Which reminds me, let's look at another one from the... From the NET, specifically, because it annoys me. A translation.{{< /line >}}
 {{< line >}}[00:42:33.790] Dan Beecher: Okay.{{< /line >}}
-{{< line >}}[00:42:35.470] Dan McClellan: And this is {{< scripture ref="Exodus 22" >}}, verse 8, and {{< scripture ref="Exodus 21" >}}, verse 6 is very similar, but I think the... The problem is more clearly outlined in {{< scripture ref="Exodus 22" >}}, verse 8. So... But first, let me share the... The King James Version. And then do you have the... Do you have the NRSV in front of you?{{< /line >}}
+{{< line >}}[00:42:35.470] Dan McClellan: And this is {{< scripture ref="Exodus 22:8" >}}, and {{< scripture ref="Exodus 21:6" >}} is very similar, but I think the... The problem is more clearly outlined in {{< scripture ref="Exodus 22:8" >}}. So... But first, let me share the... The King James Version. And then do you have the... Do you have the NRSV in front of you?{{< /line >}}
 {{< line >}}[00:42:58.700] Dan Beecher: I can.{{< /line >}}
 {{< line >}}[00:42:59.660] Dan McClellan: Okay, pull it up and follow along.{{< /line >}}
 {{< line >}}[00:43:02.460] Dan Beecher: We're in {{< scripture ref="Exodus 22" >}}. Is that what you said?{{< /line >}}
@@ -259,7 +259,7 @@ draft: false
 {{< line >}}[00:48:54.160] Dan Beecher: Feel free to, like, you know, quote us and quote— I mean, don't quote me. I'm not. I'm pretty worthless to you. But feel free to quote Dan. But, like, at least say what he said. Like, if you're going to refute him, get it right. Make sure you say what he actually said.{{< /line >}}
 {{< line >}}[00:49:11.120] Dan McClellan: Yeah. I feel like we haven't spent much time in the New Testament.{{< /line >}}
 {{< line >}}[00:49:16.000] Dan Beecher: Let's get in there, man.{{< /line >}}
-{{< line >}}[00:49:16.960] Dan McClellan: Yeah, we're running out of real estate. So an interesting one, kind of a simple one, is {{< scripture ref="Mark 1" >}}, verse 1. So this is the first— the first sentence of any gospel that we have. Mark's the earliest gospel. This is the first chapter, the very first verse.{{< /line >}}
+{{< line >}}[00:49:16.960] Dan McClellan: Yeah, we're running out of real estate. So an interesting one, kind of a simple one, is {{< scripture ref="Mark 1:1" >}}. So this is the first— the first sentence of any gospel that we have. Mark's the earliest gospel. This is the first chapter, the very first verse.{{< /line >}}
 {{< line >}}[00:49:31.950] Dan Beecher: You're saying chronologically?{{< /line >}}
 {{< line >}}[00:49:33.470] Dan McClellan: Chronologically, yeah.{{< /line >}}
 {{< line >}}[00:49:34.749] Dan Beecher: Not— not as they appear in most Bibles, but chronologically.{{< /line >}}
@@ -310,7 +310,7 @@ draft: false
 {{< line >}}[00:58:43.710] Dan Beecher: Gosh, I hope they mention that in other places in the Bible.{{< /line >}}
 {{< line >}}[00:58:47.230] Dan McClellan: And, and they do because this was taken from another book. This was taken from {{< scripture ref="Mark 9" >}}. And, and it's altered a little bit. But what people are like, they're trying to remove fasting. They're trying to make it so we can't fast anymore. It's like. No, it still says this in {{< scripture ref="Mark 9" >}}, where Jesus says, this kind doesn't come out except by much fast. Fasting. Right. But I want to do. We're getting close here. But I want to do one more that I think is interesting, if that's okay with you. Okay.{{< /line >}}
 {{< line >}}[00:59:13.950] Dan Beecher: Yeah. I love it.{{< /line >}}
-{{< line >}}[00:59:15.030] Dan McClellan: {{< scripture ref="John 1" >}}, verse 18. We'll skip over the {{< scripture ref="John 1:1" >}} controversy. We, we already discussed that a little bit.{{< /line >}}
+{{< line >}}[00:59:15.030] Dan McClellan: {{< scripture ref="John 1:18" >}}. We'll skip over the {{< scripture ref="John 1:1" >}} controversy. We, we already discussed that a little bit.{{< /line >}}
 {{< line >}}[00:59:21.870] Dan Beecher: You know what we're going to do? We're g. Well, oh, we've already discussed that.{{< /line >}}
 {{< line >}}[00:59:24.950] Dan McClellan: Yeah. {{< scripture ref="John 1:1" >}}. We've already discussed.{{< /line >}}
 {{< line >}}[00:59:26.870] Dan Beecher: Oh, okay.{{< /line >}}

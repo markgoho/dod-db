@@ -300,7 +300,7 @@ draft: false
 {{< line >}}[00:40:54.960] Dan McClellan: It's like I'm taking some with me literally.{{< /line >}}
 {{< line >}}[00:40:57.680] Dan Beecher: Like that's the way. I, I did hear someone say an explanation about how they used to think that bees. I don't know if I buy it that bees liked carcasses of animals. I, I don't think that that's true. I think there are some wasps that, that like the carcass. I did a whole. I went down a rabbit hole. But the, the bee honey, the, the lion honey thing is crazy. I think there's a. A brand of syrup, of golden syrup in the UK that has a picture of a lion and some bees around it of like a dead lion and bees around it on as their logo. Which is weird. But we should get to the. The part of the. Of the Samson story that everybody kind of thinks they know.{{< /line >}}
 {{< line >}}[00:41:49.550] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:41:50.750] Dan Beecher: Which is that he, he. We're, we're going to Judges chapter 16. Judges chapter 16.{{< /line >}}
+{{< line >}}[00:41:50.750] Dan Beecher: Which is that he, he. We're, we're going to {{< scripture ref="Judges 16" >}}. {{< scripture ref="Judges 16" >}}.{{< /line >}}
 {{< line >}}[00:41:58.250] Dan McClellan: So Samson went to Gaza where he saw a sex worker and went into her.{{< /line >}}
 {{< line >}}[00:42:04.410] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:42:04.850] Dan McClellan: So patronized her business.{{< /line >}}

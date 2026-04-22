@@ -216,7 +216,7 @@ draft: false
 {{< line >}}[00:30:26.520] Dan Beecher: Yeah, exactly.{{< /line >}}
 {{< line >}}[00:30:28.160] Dan McClellan: But we're talking about Joseph being sold into enslavement or slavery.{{< /line >}}
 {{< line >}}[00:30:34.000] Dan Beecher: Yeah.{{< /line >}}
-{{< line >}}[00:30:34.960] Dan McClellan: Because we've got a problem in the story. And, and I want to look at a chunk of text. {{< scripture ref="Genesis 37" >}}, verses 18 through 30. And this is the story of Joseph being sold into slavery. But I want to just highlight a few parts of it that raise questions.{{< /line >}}
+{{< line >}}[00:30:34.960] Dan McClellan: Because we've got a problem in the story. And, and I want to look at a chunk of text. {{< scripture ref="Genesis 37:18-30" >}}. And this is the story of Joseph being sold into slavery. But I want to just highlight a few parts of it that raise questions.{{< /line >}}
 {{< line >}}[00:30:52.040] Dan Beecher: Okay.{{< /line >}}
 {{< line >}}[00:30:52.840] Dan McClellan: Because we. We seem to have a convoluted narrative here. So they see the brothers, they see Joseph, and they conspire to kill him. And they said, yeah, we're gonna kill him. We're gonna throw him into a pit, and we'll just tell dad that some evil beast hath devoured him.{{< /line >}}
 {{< line >}}[00:31:11.690] Dan Beecher: Right?{{< /line >}}

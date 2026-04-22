@@ -211,6 +211,40 @@ describe("findScriptureMatches", () => {
     expect(matches[0]?.book).toBe("Isaiah");
     expect(matches[0]?.normalizedReference).toBe("Isaiah 1:1");
   });
+
+  test("finds spoken 'Book chapter N' form", () => {
+    const text = "Open your books to Acts chapter 7.";
+    const matches = findScriptureMatches(text);
+
+    expect(matches).toHaveLength(1);
+    expect(matches[0]?.originalText).toBe("Acts chapter 7");
+    expect(matches[0]?.normalizedReference).toBe("Acts 7");
+  });
+
+  test("finds spoken 'Book chapter N verse V' form", () => {
+    const text = "We're looking at Acts chapter 7 verse 43.";
+    const matches = findScriptureMatches(text);
+
+    expect(matches).toHaveLength(1);
+    expect(matches[0]?.originalText).toBe("Acts chapter 7 verse 43");
+    expect(matches[0]?.normalizedReference).toBe("Acts 7:43");
+  });
+
+  test("finds spoken 'Book chapter N, verses M-N' form", () => {
+    const text = "Turn to Acts chapter 7, verses 42-43 please.";
+    const matches = findScriptureMatches(text);
+
+    expect(matches).toHaveLength(1);
+    expect(matches[0]?.normalizedReference).toBe("Acts 7:42-43");
+  });
+
+  test("finds spoken range with 'to'", () => {
+    const text = "Read Genesis chapter 1 verses 1 to 10.";
+    const matches = findScriptureMatches(text);
+
+    expect(matches).toHaveLength(1);
+    expect(matches[0]?.normalizedReference).toBe("Genesis 1:1-10");
+  });
 });
 
 describe("wrapScriptureReferences", () => {

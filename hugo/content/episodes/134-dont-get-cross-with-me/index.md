@@ -169,7 +169,7 @@ draft: false
 {{< line >}}[00:30:53.809] Dan McClellan: Well, and there are books and books and books more that could be written on the history and the usage of that symbol. But hopefully that was a good cursory overview of—.{{< /line >}}
 {{< line >}}[00:31:04.250] Dan Beecher: Yes, exactly.{{< /line >}}
 {{< line >}}[00:31:05.921] Dan McClellan: Why we think it looked the way it did and how it's been used.{{< /line >}}
-{{< line >}}[00:31:09.455] Dan Beecher: All right, let's move on to our chapter and verse. And This week's lesson is from Ecclesiastes chapter 11.{{< /line >}}
+{{< line >}}[00:31:09.455] Dan Beecher: All right, let's move on to our chapter and verse. And This week's lesson is from {{< scripture ref="Ecclesiastes 11" >}}.{{< /line >}}
 {{< line >}}[00:31:23.507] Dan McClellan: Chapter 11. Yeah, this is an odd one. This is not one that people are going to be like, oh yeah, we— my pastor preached about that last week. Nobody's pastor has ever preached about this passage.{{< /line >}}
 {{< line >}}[00:31:34.281] Dan Beecher: About this?{{< /line >}}
 {{< line >}}[00:31:35.389] Dan McClellan: Yeah.{{< /line >}}

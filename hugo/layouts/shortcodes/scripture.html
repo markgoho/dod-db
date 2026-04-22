@@ -10,4 +10,4 @@ Corinthians 13:4-7") */ -}}
 {{- $display := .Get "display" | default $ref -}}
 {{- $encodedRef := $ref | urlquery -}}
 {{- $url := printf "https://www.biblegateway.com/passage/?search=%s&version=NRSVUE" $encodedRef -}}
-<a href="{{ $url }}" class="scripture-reference" target="_blank" rel="noopener noreferrer" title="Read {{ $ref }} (NRSVUE)">{{ $display }}</a>
+<a href="{{ $url }}" class="scripture-reference" target="_blank" rel="noopener noreferrer" title="Read {{ $ref }} (NRSVUE)">{{ $display }}</a>{{- "" -}}

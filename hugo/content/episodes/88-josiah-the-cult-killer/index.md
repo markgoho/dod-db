@@ -73,7 +73,7 @@ draft: false
 {{< line >}}[00:02:11.940] Dan McClellan: They're—they're very different. However, Chronicles is basically taking Samuel and Kings and then some other stuff that we don't have and rewriting it to tell most of the same stories but in a different way.{{< /line >}}
 {{< line >}}[00:02:25.140] Dan Beecher: Yeah, that's weird.{{< /line >}}
 {{< line >}}[00:02:26.260] Dan McClellan: Yes, because it's coming much later, right? Yeah.{{< /line >}}
-{{< line >}}[00:02:29.460] Dan Beecher: Okay, well, we're going to start. I mean, my main focus was on {{< scripture ref="2 Kings" >}} chapter 23.{{< /line >}}
+{{< line >}}[00:02:29.460] Dan Beecher: Okay, well, we're going to start. I mean, my main focus was on {{< scripture ref="2 Kings 23" >}}.{{< /line >}}
 {{< line >}}[00:02:38.246] Dan McClellan: 22 and 23.{{< /line >}}
 {{< line >}}[00:02:40.108] Dan Beecher: 22 and 23, sure.{{< /line >}}
 {{< line >}}[00:02:41.340] Dan McClellan: Okay.{{< /line >}}

@@ -317,7 +317,7 @@ draft: false
 {{< line >}}[00:58:12.430] Dan Beecher: Was he just... maybe he was speaking in pig Latin.{{< /line >}}
 {{< line >}}[00:58:15.470] Dan McClellan: Well, I wonder. I'm curious if... I don't remember when exactly it is, but there were two years during which Isaiah was nude. Oh, he was in... when he was doing his itinerant prophesying.{{< /line >}}
 {{< line >}}[00:58:30.910] Dan Beecher: Well, if it's good enough for the Lord in the temple, it's good enough for him.{{< /line >}}
-{{< line >}}[00:58:36.350] Dan McClellan: Looks like it's Isaiah... Isaiah chapter 20. At that time the Lord spoke to... yeah, 20, verse 2. At that time, the Lord had spoken to Isaiah son of Amoz, saying, "Go and loose the sackcloth from your loins and take your sandals off your feet." And he had done so, walking naked and barefoot.{{< /line >}}
+{{< line >}}[00:58:36.350] Dan McClellan: Looks like it's Isaiah... {{< scripture ref="Isaiah 20" >}}. At that time the Lord spoke to... yeah, 20, verse 2. At that time, the Lord had spoken to Isaiah son of Amoz, saying, "Go and loose the sackcloth from your loins and take your sandals off your feet." And he had done so, walking naked and barefoot.{{< /line >}}
 {{< line >}}[00:58:56.280] Dan Beecher: Wow.{{< /line >}}
 {{< line >}}[00:58:57.160] Dan McClellan: Then the Lord said, "Just as my servant Isaiah has walked naked and barefoot for three years as a sign and a portent against Egypt and Cush, so shall the king of Assyria lead away the Egyptians as captives and the Cushites as exiles." So God was like, "I need you to be naked for the next three years."{{< /line >}}
 {{< line >}}[00:59:13.470] Dan Beecher: I need you...{{< /line >}}

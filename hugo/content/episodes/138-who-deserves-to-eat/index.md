@@ -66,13 +66,13 @@ draft: false
 {{< line >}}[00:02:00.685] Dan McClellan: Of Arimathea? Or no, not that Joseph. That's much later.{{< /line >}}
 {{< line >}}[00:02:04.626] Dan Beecher: No, Joseph Fiennes. Just pick a Joseph. Pick a Joseph.{{< /line >}}
 {{< line >}}[00:02:13.662] Dan McClellan: Joseph Smith. You can't mess with a Joseph.{{< /line >}}
-{{< line >}}[00:02:15.681] Dan Beecher: Right. That one, we'll leave that one to lie. And we'll go on with our first thing, chapter and verse. And as we said, this chapter and verse is {{< scripture ref="2 Thessalonians" >}} chapter 3. We're gonna do sort of a whole paragraph, basically.{{< /line >}}
+{{< line >}}[00:02:15.681] Dan Beecher: Right. That one, we'll leave that one to lie. And we'll go on with our first thing, chapter and verse. And as we said, this chapter and verse is {{< scripture ref="2 Thessalonians 3" >}}. We're gonna do sort of a whole paragraph, basically.{{< /line >}}
 {{< line >}}[00:02:35.580] Dan McClellan: Yeah, a sense unit, if you will.{{< /line >}}
 {{< line >}}[00:02:37.666] Dan Beecher: A sense unit.{{< /line >}}
 {{< line >}}[00:02:38.758] Dan McClellan: Yes.{{< /line >}}
 {{< line >}}[00:02:39.191] Dan Beecher: 6 Chapters, or verses 6 through 13.{{< /line >}}
 {{< line >}}[00:02:42.786] Dan McClellan: There you go. We're going to really land on one verse though, because this is the jerk verse. This is where if you bring this up, like, jerk automatically.{{< /line >}}
-{{< line >}}[00:02:53.948] Dan Beecher: If someone says {{< scripture ref="2 Thessalonians" >}} chapter 3, verse 10, you know you're about to get a really a jerk argument. Somebody's, somebody's about to be a real piece of work for you. But let's dive in.{{< /line >}}
+{{< line >}}[00:02:53.948] Dan Beecher: If someone says {{< scripture ref="2 Thessalonians 3:10" >}}, you know you're about to get a really a jerk argument. Somebody's, somebody's about to be a real piece of work for you. But let's dive in.{{< /line >}}
 {{< line >}}[00:03:17.228] Dan McClellan: Uh, we'll read through the thing, okay? And then I want to talk a little bit about context. I want to talk about what scholars think is going on here, and before we get into how people are leveraging this, um, since you mentioned context, this is an epistle from Paul.{{< /line >}}
 {{< line >}}[00:03:35.773] Dan Beecher: Is this one of the actual epistles, Pauline epistles?{{< /line >}}
 {{< line >}}[00:03:39.046] Dan McClellan: No, this is, this is one of the disputed Pauline epistles. So I think it's more common among your critical scholars than among your apologists and your, uh, and your theologians to acknowledge this. It's not unheard of among the conservatives and the theologians, but, uh, most critical scholars would say that this was likely written by somebody pretending to be Paul after Paul's death.{{< /line >}}
@@ -163,7 +163,7 @@ draft: false
 {{< line >}}[00:27:28.383] Dan Beecher: Yeah, that is a funny question. Like, yeah, if someone's like, that should be—that should be up to the individual. Okay, well, are you doing it?{{< /line >}}
 {{< line >}}[00:27:36.410] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:27:36.987] Dan Beecher: If not, then shut up.{{< /line >}}
-{{< line >}}[00:27:39.460] Dan McClellan: Yeah, because what did Jesus say in Luke chapter 12? The commandment: sell your possessions, give the money to the poor.{{< /line >}}
+{{< line >}}[00:27:39.460] Dan McClellan: Yeah, because what did Jesus say in {{< scripture ref="Luke 12" >}}? The commandment: sell your possessions, give the money to the poor.{{< /line >}}
 {{< line >}}[00:27:48.610] Dan Beecher: That's right.{{< /line >}}
 {{< line >}}[00:27:48.947] Dan McClellan: Like, you can—you can dismiss the rich young ruler as like, oh, that was just his—that was just the sidebar where he is like, "this is just for you. This is what I'm going to tell you and nobody else. Don't write this down. This is just for you." But {{< scripture ref="Luke 12" >}}, you don't really have that option. Jesus is like, all y'all, all y'all.{{< /line >}}
 {{< line >}}[00:28:07.792] Dan Beecher: "Whoever has two coats must share one, must share with another who has none." Slightly different context there, but I don't know, it just seems like a thing, right? I don't know. I have two coats. I should probably give one away.{{< /line >}}

@@ -117,7 +117,7 @@ draft: false
 {{< line >}}[00:04:01.375] Dan Beecher: You can't do the— you can't beavis?{{< /line >}}
 {{< line >}}[00:04:04.069] Dan McClellan: No, not as much as I used to be able to. When I was younger, I could do that. Yeah, I can't.{{< /line >}}
 {{< line >}}[00:04:11.654] Dan Beecher: All right. So here's the thing we're talking about. I don't even know which of the Ten Commandments it is.{{< /line >}}
-{{< line >}}[00:04:18.870] Dan McClellan: I guess this is verse— it's {{< scripture ref="Exodus 20" >}}, verse 14. Right. And there's a Just depends on how you count. Yeah, this is a little inside baseball, but I have taught primary multiple times in my—.{{< /line >}}
+{{< line >}}[00:04:18.870] Dan McClellan: I guess this is verse— it's {{< scripture ref="Exodus 20:14" >}}. Right. And there's a Just depends on how you count. Yeah, this is a little inside baseball, but I have taught primary multiple times in my—.{{< /line >}}
 {{< line >}}[00:04:35.477] Dan Beecher: That's the child classes in Mormondom. Yeah.{{< /line >}}
 {{< line >}}[00:04:39.908] Dan McClellan: Yes. And my students come out of there knowing more than their parents do about the Bible.{{< /line >}}
 {{< line >}}[00:04:47.035] Dan Beecher: No one's surprised to hear that.{{< /line >}}

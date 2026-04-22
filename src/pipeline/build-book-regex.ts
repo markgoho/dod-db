@@ -9,11 +9,17 @@ import { buildBookNamePatterns } from "./build-book-name-patterns.js";
  * - "Genesis 1:1-10" (verse range)
  * - "Gen 1:25" (abbreviation)
  * - "Gen. 1:25" (abbreviation with period)
+ * - "Acts chapter 7" (spoken chapter form)
+ * - "Acts chapter 7 verse 43" (spoken chapter + verse)
+ * - "Acts chapter 7, verses 42-43" (spoken chapter + verse range)
  */
 export function buildBookRegex(book: BookDefinition): RegExp {
   const namePatterns = buildBookNamePatterns(book);
   const namesGroup = `(?:${namePatterns.join("|")})`;
-  const pattern = String.raw`\b${namesGroup}\s+(\d{1,3})(?::(\d{1,3})(?:-(\d{1,3}))?)?\b`;
+  const chapterWord = String.raw`(?:\s+chapter)?`;
+  const verseSeparator = String.raw`(?::|,?\s+verses?\s+)`;
+  const rangeSeparator = String.raw`(?:\s*-\s*|\s+(?:to|through)\s+)`;
+  const pattern = String.raw`\b${namesGroup}${chapterWord}\s+(\d{1,3})(?:${verseSeparator}(\d{1,3})(?:${rangeSeparator}(\d{1,3}))?)?\b`;
   return new RegExp(pattern, "gi");
 }
 
