@@ -37,6 +37,7 @@ books:
 guests:
   - Aaron Higashi
   - Jennifer Garcia Bashaw
+episodeTopic: Biblical Interpre&shy;tation
 draft: false
 ---
 
