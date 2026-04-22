@@ -7,6 +7,7 @@ aliases:
   - /episodes/61/
 topics:
   - John the Baptist
+  - Baptism
   - Gnosticism
   - Flavius Josephus
   - Dead Sea Scrolls
@@ -17,7 +18,6 @@ topics:
   - Marriage
   - Talmud
 tags:
-  - baptism
   - Herod Antipas
   - Essenes
   - Jerusalem

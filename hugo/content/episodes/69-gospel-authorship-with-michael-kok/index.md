@@ -9,6 +9,7 @@ topics:
   - Paul
   - Flavius Josephus
   - Didache
+  - Baptism
   - Christmas
   - John the Baptist
   - David
@@ -23,7 +24,6 @@ tags:
   - John
   - Irenaeus
   - Justin Martyr
-  - baptism
   - Ignatius
   - Luke
   - Jerusalem

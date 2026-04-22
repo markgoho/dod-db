@@ -2207,14 +2207,14 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
   },
   {
-    canonical: "baptism",
+    canonical: "Baptism",
     variations: ["baptize"],
     category: "theology",
     llmVerify: true,
     description:
       "A religious ritual involving immersion in water, symbolizing purification or initiation",
     status: "accepted",
-    episodes: [5, 40, 50, 55, 61, 69, 86, 87, 94, 101, 110, 128],
+    episodes: [5, 61, 69, 87, 94, 110, 128, 141, 142, 143, 144, 145, 148, 149],
   },
   {
     canonical: "Elizabeth",

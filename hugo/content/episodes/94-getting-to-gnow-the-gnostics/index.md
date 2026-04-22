@@ -10,6 +10,7 @@ topics:
   - Codex Sinaiticus
   - Mary Magdalene
   - Satan
+  - Baptism
   - John the Baptist
   - YHWH
   - Adultery
@@ -21,7 +22,6 @@ topics:
 tags:
   - Constantine
   - Arius
-  - baptism
   - Judas Iscariot
   - Peter
   - Catholicism

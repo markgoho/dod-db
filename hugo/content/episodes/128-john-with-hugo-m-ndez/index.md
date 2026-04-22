@@ -8,6 +8,7 @@ aliases:
 topics:
   - Paul
   - Adultery
+  - Baptism
   - Flavius Josephus
   - Gnosticism
   - Mary Magdalene
@@ -26,7 +27,6 @@ tags:
   - Apocrypha
   - Aristobulus
   - Athanasius of Alexandria
-  - baptism
   - Galilee
   - Gospel of Thomas
   - Polybius

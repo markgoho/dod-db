@@ -13,6 +13,7 @@ topics:
   - Dead Sea Scrolls
   - King James Bible
   - Talmud
+  - Baptism
   - David
   - Decalogue
   - Flavius Josephus
@@ -22,7 +23,6 @@ tags:
   - Clement of Alexandria
   - Egyptians
   - Jeroboam
-  - baptism
   - Isaiah
   - Matthew
   - Solomon

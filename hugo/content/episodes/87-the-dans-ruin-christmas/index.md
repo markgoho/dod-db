@@ -20,6 +20,7 @@ topics:
   - YHWH
   - Abortion
   - Adultery
+  - Baptism
   - Crucifixion
   - Flavius Josephus
   - Hell
@@ -41,7 +42,6 @@ tags:
   - Jericho
   - Judah
   - Antiochus IV Epiphanes
-  - baptism
   - Catholicism
   - Maccabees
   - Romans

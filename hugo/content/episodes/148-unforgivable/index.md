@@ -10,6 +10,7 @@ topics:
   - Paul
   - Holy Spirit
   - Satan
+  - Baptism
   - Pharisees
   - Demon
   - Mary Magdalene
@@ -21,7 +22,6 @@ topics:
   - Trinity
 tags:
   - Beelzebul
-  - baptism
   - Acts of Paul and Thecla
   - Demas
   - Hermogenes

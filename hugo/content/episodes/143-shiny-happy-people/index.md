@@ -11,6 +11,7 @@ topics:
   - Transfiguration
   - James
   - Second Coming
+  - Baptism
   - Christmas
   - Daniel
   - Samson
@@ -25,7 +26,6 @@ tags:
   - John
   - Nazareth
   - Eschatology
-  - baptism
   - Capernaum
   - Garden of Gethsemane
   - Herod Antipas

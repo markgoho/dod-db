@@ -32,7 +32,6 @@ tags:
   - Pontius Pilate
   - Moses
   - Samuel
-  - baptism
   - Peter
   - Abraham
   - Dead Sea

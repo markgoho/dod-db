@@ -19,7 +19,6 @@ topics:
 tags:
   - Eschatology
   - Pliny the Younger
-  - baptism
   - Beatitudes
   - Galilee
   - Ham

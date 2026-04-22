@@ -11,6 +11,7 @@ topics:
   - Septuagint
   - David
   - Angel
+  - Baptism
   - Christmas
   - Immaculate Conception
   - King James Bible
@@ -27,7 +28,6 @@ tags:
   - Virgin Birth
   - Herod the Great
   - Isaiah
-  - baptism
   - Jeremiah
   - Luke
   - Passover

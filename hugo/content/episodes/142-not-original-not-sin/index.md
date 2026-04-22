@@ -11,6 +11,7 @@ topics:
   - Satan
   - atonement
   - Book of Enoch
+  - Baptism
   - Polygamy
   - Angel
   - Jubilees
@@ -23,7 +24,6 @@ tags:
   - etiology
   - Romans
   - Augustine
-  - baptism
   - Isaiah
   - Abraham
   - Gospel of James

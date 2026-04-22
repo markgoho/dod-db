@@ -834,7 +834,7 @@
         "mentions": 1
       },
       {
-        "tag": "baptism",
+        "tag": "Baptism",
         "mentions": 1
       },
       {
@@ -7266,10 +7266,6 @@
         "mentions": 2
       },
       {
-        "tag": "baptism",
-        "mentions": 2
-      },
-      {
         "tag": "Josiah",
         "mentions": 2
       },
@@ -9020,10 +9016,6 @@
         "mentions": 1
       },
       {
-        "tag": "baptism",
-        "mentions": 1
-      },
-      {
         "tag": "Clement of Alexandria",
         "mentions": 1
       },
@@ -9832,10 +9824,6 @@
       {
         "tag": "Samuel",
         "mentions": 3
-      },
-      {
-        "tag": "baptism",
-        "mentions": 2
       },
       {
         "tag": "Omni Attributes",
@@ -10963,8 +10951,8 @@
         "mentions": 22
       },
       {
-        "tag": "baptism",
-        "mentions": 14
+        "tag": "Baptism",
+        "mentions": 12
       },
       {
         "tag": "Gnosticism",
@@ -12357,10 +12345,6 @@
         "mentions": 8
       },
       {
-        "tag": "baptism",
-        "mentions": 7
-      },
-      {
         "tag": "Ignatius",
         "mentions": 6
       },
@@ -12379,6 +12363,10 @@
       {
         "tag": "Jerusalem",
         "mentions": 4
+      },
+      {
+        "tag": "Baptism",
+        "mentions": 3
       },
       {
         "tag": "Eusebius",
@@ -15090,10 +15078,6 @@
         "mentions": 2
       },
       {
-        "tag": "baptism",
-        "mentions": 2
-      },
-      {
         "tag": "forgery",
         "mentions": 2
       },
@@ -15343,7 +15327,7 @@
         "mentions": 1
       },
       {
-        "tag": "baptism",
+        "tag": "Baptism",
         "mentions": 1
       },
       {
@@ -16585,7 +16569,7 @@
         "mentions": 3
       },
       {
-        "tag": "baptism",
+        "tag": "Baptism",
         "mentions": 3
       },
       {
@@ -17844,10 +17828,6 @@
       },
       {
         "tag": "Adultery",
-        "mentions": 1
-      },
-      {
-        "tag": "baptism",
         "mentions": 1
       },
       {
@@ -19140,10 +19120,6 @@
         "mentions": 3
       },
       {
-        "tag": "baptism",
-        "mentions": 3
-      },
-      {
         "tag": "Dead Sea Scrolls",
         "mentions": 3
       },
@@ -19178,6 +19154,10 @@
       {
         "tag": "Talmud",
         "mentions": 2
+      },
+      {
+        "tag": "Baptism",
+        "mentions": 1
       },
       {
         "tag": "Beatitudes",
@@ -22620,7 +22600,7 @@
         "mentions": 1
       },
       {
-        "tag": "baptism",
+        "tag": "Baptism",
         "mentions": 1
       },
       {
@@ -25090,7 +25070,7 @@
         "mentions": 2
       },
       {
-        "tag": "baptism",
+        "tag": "Baptism",
         "mentions": 1
       },
       {
@@ -25266,7 +25246,7 @@
         "mentions": 3
       },
       {
-        "tag": "baptism",
+        "tag": "Baptism",
         "mentions": 2
       },
       {
@@ -25563,7 +25543,7 @@
         "mentions": 2
       },
       {
-        "tag": "baptism",
+        "tag": "Baptism",
         "mentions": 2
       },
       {
@@ -25721,8 +25701,8 @@
     "transcriptPath": "data/transcripts/2026-01-11-the-holy-dunk.txt",
     "tags": [
       {
-        "tag": "baptism",
-        "mentions": 51
+        "tag": "Baptism",
+        "mentions": 31
       },
       {
         "tag": "John the Baptist",
@@ -25817,11 +25797,11 @@
         "mentions": 1
       },
       {
-        "tag": "Judas Iscariot",
+        "tag": "Josiah",
         "mentions": 1
       },
       {
-        "tag": "Josiah",
+        "tag": "Judas Iscariot",
         "mentions": 1
       },
       {
@@ -26319,8 +26299,8 @@
         "mentions": 12
       },
       {
-        "tag": "baptism",
-        "mentions": 9
+        "tag": "Baptism",
+        "mentions": 5
       },
       {
         "tag": "Acts of Paul and Thecla",
@@ -26481,10 +26461,6 @@
         "mentions": 2
       },
       {
-        "tag": "baptism",
-        "mentions": 2
-      },
-      {
         "tag": "Deconstruction",
         "mentions": 2
       },
@@ -26522,6 +26498,10 @@
       },
       {
         "tag": "Augustine",
+        "mentions": 1
+      },
+      {
+        "tag": "Baptism",
         "mentions": 1
       },
       {
@@ -28236,7 +28216,7 @@
         "mentions": 3
       },
       {
-        "tag": "baptism",
+        "tag": "Baptism",
         "mentions": 2
       },
       {

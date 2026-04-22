@@ -23,7 +23,6 @@ tags:
   - Philistines
   - Catholicism
   - Baal
-  - baptism
   - Amalek
   - Capernaum
   - Desiderius Erasmus

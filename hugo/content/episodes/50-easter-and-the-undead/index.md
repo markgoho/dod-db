@@ -34,7 +34,6 @@ tags:
   - Judaism
   - Antiochus IV Epiphanes
   - Athanasius of Alexandria
-  - baptism
   - Clement of Alexandria
   - Clement of Rome
   - Elijah

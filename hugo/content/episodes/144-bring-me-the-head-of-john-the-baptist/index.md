@@ -11,6 +11,7 @@ topics:
   - Pastor
   - Flavius Josephus
   - Univocality
+  - Baptism
   - Septuagint
   - Crucifixion
   - Hell
@@ -28,7 +29,6 @@ tags:
   - Judaism
   - Pontius Pilate
   - Ahab
-  - baptism
   - Dead Sea
   - Elijah
   - Esther

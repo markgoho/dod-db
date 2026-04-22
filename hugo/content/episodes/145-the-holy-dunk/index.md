@@ -7,6 +7,7 @@ aliases:
   - /episodes/145/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/147973619.mp3?sig=KtLy2HJCzmQJuE8fSUtbqzSCBNED6QN6tmEWMyAbuwg%3D
 topics:
+  - Baptism
   - John the Baptist
   - Holy Spirit
   - David
@@ -17,7 +18,6 @@ topics:
   - Ritual Purity
   - Satan
 tags:
-  - baptism
   - Matthew
   - Deuteronomy
   - Luke

@@ -12,6 +12,7 @@ topics:
   - Crucifixion
   - Mary Magdalene
   - Angel
+  - Baptism
   - Creatio ex nihilo
   - Monotheism
 tags:
@@ -22,7 +23,6 @@ tags:
   - Apocrypha
   - Baal
   - Athanasius of Alexandria
-  - baptism
   - Catholicism
   - Eusebius
   - Hypostasis

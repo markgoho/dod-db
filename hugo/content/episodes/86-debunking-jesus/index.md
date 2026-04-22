@@ -25,7 +25,6 @@ tags:
   - John
   - Pontius Pilate
   - Annunciation
-  - baptism
   - forgery
   - Jerusalem
   - Matthew

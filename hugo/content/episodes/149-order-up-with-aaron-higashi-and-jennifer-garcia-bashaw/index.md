@@ -10,13 +10,13 @@ topics:
   - Deconstruction
   - Jacob
   - Trinity
+  - Baptism
   - Joseph
   - Monotheism
 tags:
   - Origen
   - inerrancy
   - Adam
-  - baptism
   - Eve
   - Isaiah
   - Luke
