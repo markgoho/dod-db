@@ -8,6 +8,7 @@ aliases:
 topics:
   - Marriage
   - Paul
+  - Pharisees
   - Univocality
   - Daniel
   - Decalogue

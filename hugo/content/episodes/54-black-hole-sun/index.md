@@ -14,6 +14,8 @@ topics:
   - Rapture
   - David
   - Holy Spirit
+  - Pharisees
+  - Salvation
   - Mark of the Beast
   - Marriage
   - Mary Magdalene

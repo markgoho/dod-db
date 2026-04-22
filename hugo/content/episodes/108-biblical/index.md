@@ -8,6 +8,7 @@ aliases:
 topics:
   - Marriage
   - Paul
+  - Pharisees
   - Christian Nationalism
   - Hell
   - Ruth

@@ -9,6 +9,7 @@ topics:
   - Marriage
   - David
   - Joseph
+  - Nephilim
 tags:
   - Flood
   - Garden of Eden
@@ -34,7 +35,6 @@ tags:
   - Joshua
   - Judah
   - Lamech
-  - Nephilim
   - Syria
   - Ugarit
 books:

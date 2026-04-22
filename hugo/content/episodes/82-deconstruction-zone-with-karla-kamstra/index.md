@@ -8,6 +8,7 @@ aliases:
 topics:
   - Deconstruction
   - Rapture
+  - Salvation
   - Christian Nationalism
   - King James Bible
 tags:

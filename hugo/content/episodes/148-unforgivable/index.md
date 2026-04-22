@@ -10,6 +10,7 @@ topics:
   - Paul
   - Holy Spirit
   - Satan
+  - Pharisees
   - Demon
   - Mary Magdalene
   - Atheism

@@ -9,6 +9,7 @@ topics:
   - David
   - YHWH
   - Jacob
+  - Salvation
   - Stele
   - Monotheism
   - Saul

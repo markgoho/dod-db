@@ -16,7 +16,9 @@ topics:
   - Septuagint
   - Atheism
   - divine council
+  - Elephantine
   - King James Bible
+  - Pharisees
 tags:
   - Hypostasis
   - Philo of Alexandria
@@ -28,7 +30,6 @@ tags:
   - Second Temple period
   - Creation ex nihilo
   - Baal
-  - Elephantine
   - Isaac
   - Islam
   - Laban

@@ -6,6 +6,7 @@ videoId: yviFHESG_HA
 aliases:
   - /episodes/124/
 topics:
+  - Nephilim
   - Abortion
   - YHWH
   - Atheism
@@ -18,11 +19,11 @@ topics:
   - Homosexuality
   - Jacob
   - Prototype Theory
+  - Salvation
   - Satan
   - Septuagint
   - Trinity
 tags:
-  - Nephilim
   - Flood
   - Romans
   - Protestantism

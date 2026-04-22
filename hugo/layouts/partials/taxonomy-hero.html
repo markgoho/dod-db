@@ -6,52 +6,8 @@
 {{- $definition := .definition | default "" -}}
 {{- $category := .category | default "" -}}
 {{- $knownAs := .knownAs | default slice -}}
-{{- $titleTransitionName := printf "%s-title-%s" $taxonomyName ($page.Title | urlize) -}}
-{{- $termPages := slice -}}
-
-{{- if eq $taxonomyName "books" -}}
-  {{- $otBooks := slice "Genesis" "Exodus" "Leviticus" "Numbers" "Deuteronomy" "Joshua" "Judges" "Ruth" "1 Samuel" "2 Samuel" "1 Kings" "2 Kings" "1 Chronicles" "2 Chronicles" "Ezra" "Nehemiah" "Esther" "Job" "Psalms" "Proverbs" "Ecclesiastes" "Song of Solomon" "Isaiah" "Jeremiah" "Lamentations" "Ezekiel" "Daniel" "Hosea" "Joel" "Amos" "Obadiah" "Jonah" "Micah" "Nahum" "Habakkuk" "Zephaniah" "Haggai" "Zechariah" "Malachi" -}}
-  {{- $ntBooks := slice "Matthew" "Mark" "Luke" "John" "Acts" "Romans" "1 Corinthians" "2 Corinthians" "Galatians" "Ephesians" "Philippians" "Colossians" "1 Thessalonians" "2 Thessalonians" "1 Timothy" "2 Timothy" "Titus" "Philemon" "Hebrews" "James" "1 Peter" "2 Peter" "1 John" "2 John" "3 John" "Jude" "Revelation" -}}
-  {{- $apocryphaBooks := slice "Tobit" "Judith" "1 Esdras" "2 Esdras" "1 Maccabees" "2 Maccabees" "3 Maccabees" "4 Maccabees" "Wisdom of Solomon" "Sirach" "Baruch" "Letter of Jeremiah" "Prayer of Azariah" "Susanna" "Bel and the Dragon" "Prayer of Manasseh" -}}
-  {{- range $bookName := $otBooks | append $ntBooks | append $apocryphaBooks -}}
-    {{- with site.GetPage (printf "/books/%s" ($bookName | urlize)) -}}
-      {{- $termPages = $termPages | append . -}}
-    {{- end -}}
-  {{- end -}}
-{{- else if eq $taxonomyName "topics" -}}
-  {{- range site.Taxonomies.topics.Alphabetical -}}
-    {{- $termPages = $termPages | append .Page -}}
-  {{- end -}}
-{{- else if eq $taxonomyName "tags" -}}
-  {{- range site.Taxonomies.tags.Alphabetical -}}
-    {{- $termPages = $termPages | append .Page -}}
-  {{- end -}}
-{{- else if eq $taxonomyName "guests" -}}
-  {{- $multipleAppearances := slice -}}
-  {{- $singleAppearance := slice -}}
-  {{- range site.Taxonomies.guests.Alphabetical -}}
-    {{- if gt .Count 1 -}}
-      {{- $multipleAppearances = $multipleAppearances | append .Page -}}
-    {{- else -}}
-      {{- $singleAppearance = $singleAppearance | append .Page -}}
-    {{- end -}}
-  {{- end -}}
-  {{- $termPages = $multipleAppearances | append $singleAppearance -}}
-{{- else if eq $taxonomyName "segments" -}}
-  {{- range site.Taxonomies.segments.ByCount -}}
-    {{- $termPages = $termPages | append .Page -}}
-  {{- end -}}
-{{- end -}}
-
-{{- $currentIndex := -1 -}}
-{{- range $index, $termPage := $termPages -}}
-  {{- if eq $termPage.RelPermalink $page.RelPermalink -}}
-    {{- $currentIndex = $index -}}
-  {{- end -}}
-{{- end -}}
-
-{{- $previousPage := cond (gt $currentIndex 0) (index $termPages (sub $currentIndex 1)) nil -}}
-{{- $nextPage := cond (and (ge $currentIndex 0) (lt $currentIndex (sub (len $termPages) 1))) (index $termPages (add $currentIndex 1)) nil -}}
+{{- $titleTransitionName := partial "transition-name" (dict "prefix" (printf "%s-title" $taxonomyName) "source" $page.Title) -}}
+{{- $nav := partial "taxonomy-prev-next" (dict "page" $page "taxonomy" $taxonomyName) -}}
 
 
 <header
@@ -63,8 +19,8 @@
   {{ end }}">
   {{ partial "prev-next-nav" (dict
     "ariaLabel" (printf "%s navigation" (title (singularize $taxonomyName)))
-    "prev" $previousPage
-    "next" $nextPage
+    "prev" $nav.prev
+    "next" $nav.next
     "allHref" (printf "/%s/" $taxonomyName)
     "allLabel" (printf "All %s" (title $taxonomyName))
     "taxonomyName" $taxonomyName

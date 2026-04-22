@@ -17,7 +17,7 @@
 {{- $arrowPosition := index $overrides "arrowPosition" | default "right" -}}
 {{- $compact := index $overrides "compact" | default false -}}
 {{- $enableTitleTransition := and (not $ranked) (not $compact) (eq $link $episode.RelPermalink) (eq $title $episode.Title) (not $currentTerm) -}}
-{{- $titleTransitionName := cond $enableTitleTransition (printf "episode-title-%v" $episode.Params.episodeNumber) "none" -}}
+{{- $titleTransitionName := cond $enableTitleTransition (partial "transition-name" (dict "prefix" "episode-title" "source" $episode.Params.episodeNumber)) "none" -}}
 
 
 <article

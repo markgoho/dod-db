@@ -6,12 +6,15 @@ videoId: ueEDfCqjPYs
 aliases:
   - /episodes/85/
 topics:
+  - Pharisees
   - King James Bible
   - Ritual Purity
   - Septuagint
   - Circumcision
   - Flavius Josephus
+  - Sadducees
   - YHWH
+  - atonement
   - Hell
   - Talmud
 tags:

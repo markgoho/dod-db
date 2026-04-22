@@ -13,6 +13,7 @@ topics:
   - Preterism
   - Univocality
   - Christian Nationalism
+  - Christian Zionism
   - Daniel
   - David
   - Second Coming
@@ -46,8 +47,8 @@ segmentData:
   - type: taking-issue
     anchor: taking-issue-1
     label: Taking Issue
-    topicLabel: Gen 12
-    summary: "Ted Cruz, Tucker Carlson, and Genesis 12 are discussed."
+    topicLabel: Christian Zionism
+    summary: "Ted Cruz and Tucker Carlson's debate over Genesis 12 becomes a discussion of Christian Zionism and its modern political uses."
     startSeconds: 133.979
   - type: chapter-and-verse
     anchor: chapter-and-verse-1

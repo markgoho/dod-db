@@ -14,9 +14,11 @@ topics:
   - Satan
   - Jacob
   - Septuagint
+  - Salvation
   - YHWH
   - Circumcision
   - King James Bible
+  - Nephilim
 tags:
   - Enoch
   - Noah
@@ -49,7 +51,6 @@ tags:
   - Garden of Eden
   - Judaism
   - Maccabees
-  - Nephilim
   - Seleucid Empire
   - Syria
   - Tertullian

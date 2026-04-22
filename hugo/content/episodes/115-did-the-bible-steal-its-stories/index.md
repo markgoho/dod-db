@@ -47,8 +47,8 @@ segmentData:
   - type: taking-issue
     anchor: taking-issue-1
     label: Taking Issue
-    topicLabel: Leviathan
-    summary: "Biblical stories' origins: stolen, shared heritage, or verbatim accounts?"
+    topicLabel: Borrowed Myths
+    summary: "Did Israelite scribes inherit, borrow, or steal mythology?"
     startSeconds: 236.957
   - type: chapter-and-verse
     anchor: chapter-and-verse-1

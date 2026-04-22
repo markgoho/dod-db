@@ -6,6 +6,7 @@ videoId: 9umlMF6WWX4
 aliases:
   - /episodes/117/
 topics:
+  - Elephantine
   - YHWH
   - Asherah
   - King James Bible
@@ -15,7 +16,6 @@ topics:
   - Monotheism
   - Univocality
 tags:
-  - Elephantine
   - Judah
   - Torah
   - Passover

@@ -13,6 +13,7 @@ topics:
   - Jacob
   - King James Bible
   - David
+  - Elephantine
   - Mary Magdalene
   - Masoretic Text
   - Satan
@@ -24,7 +25,6 @@ tags:
   - Onan
   - Ugarit
   - Catholicism
-  - Elephantine
   - Elijah
   - Jerusalem
   - Joram

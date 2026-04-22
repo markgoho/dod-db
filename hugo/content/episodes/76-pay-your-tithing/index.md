@@ -9,6 +9,7 @@ topics:
   - Tithing
   - Paul
   - Holy Spirit
+  - Pharisees
   - Satan
   - YHWH
 tags:

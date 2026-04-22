@@ -12,6 +12,7 @@ topics:
   - David
   - divine council
   - Septuagint
+  - Nephilim
   - Book of Enoch
   - Dead Sea Scrolls
   - Joseph
@@ -35,7 +36,6 @@ tags:
   - Judah
   - Latin Vulgate
   - Midianites
-  - Nephilim
   - Solomon
   - Ugarit
   - Ammonites

@@ -15,6 +15,8 @@ topics:
   - Hell
   - John the Baptist
   - Paul
+  - Pharisees
+  - Sadducees
   - Stele
 tags:
   - Romans

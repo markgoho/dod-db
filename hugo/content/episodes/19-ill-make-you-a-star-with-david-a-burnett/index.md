@@ -10,6 +10,7 @@ topics:
   - Monotheism
   - divine council
   - YHWH
+  - Pharisees
   - Angel
   - Septuagint
   - Book of Enoch

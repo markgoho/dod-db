@@ -7,7 +7,8 @@
   {{ $profiles := index hugo.Data "guest-profiles" }}
   {{ $displayTitle := .Params.title | default .Title }}
   {{ $profile := index $profiles $displayTitle }}
-  {{ $titleTransitionName := printf "guests-title-%s" ($displayTitle | urlize) }}
+  {{ $titleTransitionName := partial "transition-name" (dict "prefix" "guests-title" "source" .Title) }}
+  {{ $nav := partial "taxonomy-prev-next" (dict "page" . "taxonomy" "guests") }}
   <section class="term-page term-page--episodes-archive guest-page">
     <header
       class="{{ if $profile }}
@@ -15,9 +16,15 @@
       {{ else }}
         page-hero
       {{ end }}">
-      <a href="/guests/" class="button-brutalist page-hero__back"
-        >← All Guests</a
-      >
+      {{ partial "prev-next-nav" (dict
+        "ariaLabel" "Guest navigation"
+        "prev" $nav.prev
+        "next" $nav.next
+        "allHref" "/guests/"
+        "allLabel" "All Guests"
+        "taxonomyName" "guests"
+        )
+      }}
       {{ if $profile.image }}
         <figure class="guest-hero__portrait panel">
           <img

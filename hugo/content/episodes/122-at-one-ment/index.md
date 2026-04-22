@@ -6,6 +6,7 @@ videoId: G-bwyrQQI5g
 aliases:
   - /episodes/122/
 topics:
+  - atonement
   - Satan
   - Septuagint
   - Paul
@@ -15,6 +16,7 @@ topics:
   - Dead Sea Scrolls
   - Deutero-Isaiah
   - Hell
+  - Sadducees
   - Univocality
 tags:
   - Leningrad Codex

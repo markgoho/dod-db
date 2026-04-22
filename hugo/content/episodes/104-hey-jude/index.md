@@ -14,6 +14,7 @@ topics:
   - Deutero-Isaiah
   - Homosexuality
   - Paul
+  - Salvation
   - YHWH
   - Jacob
   - provenance
@@ -22,6 +23,7 @@ topics:
   - Decalogue
   - Holy Spirit
   - Masoretic Text
+  - Nephilim
   - Second Coming
   - Septuagint
   - Trinity
@@ -47,7 +49,6 @@ tags:
   - Isaac
   - Joshua
   - Judas Iscariot
-  - Nephilim
   - Nineveh
   - Second Temple period
   - Tertullian

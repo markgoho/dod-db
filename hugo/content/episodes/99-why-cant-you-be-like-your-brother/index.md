@@ -14,6 +14,7 @@ topics:
   - Masoretes
   - Marriage
   - King James Bible
+  - Sadducees
   - Dead Sea Scrolls
   - Satan
   - Septuagint

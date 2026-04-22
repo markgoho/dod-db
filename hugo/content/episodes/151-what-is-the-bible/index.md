@@ -13,6 +13,7 @@ topics:
   - Paul
   - Bel and the Dragon
   - Masoretic Text
+  - Sadducees
   - Univocality
 tags:
   - Beatitudes

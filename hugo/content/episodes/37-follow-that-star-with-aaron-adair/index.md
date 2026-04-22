@@ -11,12 +11,14 @@ topics:
   - Magi
   - Angel
   - Easter
+  - Pharisees
   - Atheism
   - David
   - Dead Sea Scrolls
   - Jacob
   - King James Bible
   - Mary Magdalene
+  - Nephilim
   - Satan
   - Second Coming
 tags:
@@ -36,7 +38,6 @@ tags:
   - Herod the Great
   - Isaiah
   - Joshua
-  - Nephilim
   - Peter
 books:
   - Matthew

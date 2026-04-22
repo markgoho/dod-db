@@ -8,6 +8,7 @@ aliases:
 topics:
   - YHWH
   - Hell
+  - Salvation
   - Septuagint
   - Dead Sea Scrolls
   - Jacob

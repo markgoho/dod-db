@@ -9,6 +9,7 @@ topics:
   - Paul
   - King James Bible
   - Abortion
+  - Pharisees
   - Univocality
   - YHWH
 tags:

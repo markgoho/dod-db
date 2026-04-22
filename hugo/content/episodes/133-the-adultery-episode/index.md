@@ -18,6 +18,7 @@ topics:
   - Daniel
   - Hell
   - Jacob
+  - Pharisees
   - Satan
   - Univocality
   - YHWH

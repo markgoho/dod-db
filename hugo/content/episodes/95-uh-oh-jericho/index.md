@@ -7,6 +7,7 @@ aliases:
   - /episodes/95/
 topics:
   - King James Bible
+  - Nephilim
   - Angel
   - Ritual Purity
   - YHWH
@@ -23,7 +24,6 @@ tags:
   - Abraham
   - Dead Sea
   - Methuselah
-  - Nephilim
   - Qumran
   - Ammonites
   - Ararat

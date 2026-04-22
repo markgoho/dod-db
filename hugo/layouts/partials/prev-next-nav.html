@@ -7,7 +7,7 @@
 {{- if or $previousPage $allHref $nextPage -}}
   <nav class="taxonomy-nav" aria-label="{{ .ariaLabel }}">
     {{- if $previousPage -}}
-      {{- $previousTransitionName := cond (ne $transitionNamePrefix "") (printf "%s%v" $transitionNamePrefix $previousPage.Params.episodeNumber) (printf "%s-title-%s" $taxonomyName ($previousPage.Title | urlize)) -}}
+      {{- $previousTransitionName := cond (ne $transitionNamePrefix "") (partial "transition-name" (dict "prefix" (strings.TrimRight "-" $transitionNamePrefix) "source" $previousPage.Params.episodeNumber)) (partial "transition-name" (dict "prefix" (printf "%s-title" $taxonomyName) "source" $previousPage.Title)) -}}
       <a
         class="button-brutalist taxonomy-nav__link"
         href="{{ $previousPage.RelPermalink }}">
@@ -27,7 +27,7 @@
     {{- end -}}
 
     {{- if $nextPage -}}
-      {{- $nextTransitionName := cond (ne $transitionNamePrefix "") (printf "%s%v" $transitionNamePrefix $nextPage.Params.episodeNumber) (printf "%s-title-%s" $taxonomyName ($nextPage.Title | urlize)) -}}
+      {{- $nextTransitionName := cond (ne $transitionNamePrefix "") (partial "transition-name" (dict "prefix" (strings.TrimRight "-" $transitionNamePrefix) "source" $nextPage.Params.episodeNumber)) (partial "transition-name" (dict "prefix" (printf "%s-title" $taxonomyName) "source" $nextPage.Title)) -}}
       <a
         class="button-brutalist taxonomy-nav__link"
         href="{{ $nextPage.RelPermalink }}">

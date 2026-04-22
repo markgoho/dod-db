@@ -12,6 +12,7 @@ topics:
   - Abortion
   - Hell
   - Paul
+  - Pharisees
   - Satan
   - Septuagint
 tags:

@@ -11,6 +11,7 @@ topics:
   - Atheism
   - Jephthah
   - divine council
+  - Elephantine
   - Masoretic Text
   - Stele
   - Trinity
@@ -28,7 +29,6 @@ tags:
   - Carthage
   - Babylon
   - Deuteronomy
-  - Elephantine
   - Jeremiah
   - Solomon
   - Syria

@@ -6,6 +6,7 @@ videoId: Zrw0LBtnjn8
 aliases:
   - /episodes/120/
 topics:
+  - Salvation
   - Hell
   - divine council
   - Paul
@@ -15,6 +16,7 @@ topics:
   - Abortion
   - Atheism
   - Satan
+  - atonement
 tags:
   - Isaiah
   - Judah

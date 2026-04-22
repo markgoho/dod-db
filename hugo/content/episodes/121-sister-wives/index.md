@@ -6,6 +6,7 @@ videoId: BXE7A6iiQD8
 aliases:
   - /episodes/121/
 topics:
+  - Teraphim
   - David
   - YHWH
   - Jacob

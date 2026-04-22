@@ -4,11 +4,15 @@
 {{ end }}
 
 {{ define "main" }}
+  {{ $titleTransitionName := partial "transition-name" (dict "prefix" "tags-title" "source" .Title) }}
   <section class="cloud-page">
     <header class="page-hero">
       <h1 class="page-hero__title">Tags</h1>
       <p class="page-hero__description panel panel--muted">
-        {{ .Data.Term }} appears in
+        <span style="view-transition-name: {{ $titleTransitionName }}"
+          >{{ .Data.Term }}</span
+        >
+        appears in
         {{ len .Pages }}
         episode{{ if ne (len .Pages) 1 }}s{{ end }}
       </p>

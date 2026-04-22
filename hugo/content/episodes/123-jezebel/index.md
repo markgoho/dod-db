@@ -6,6 +6,8 @@ videoId: fkLem2cllv4
 aliases:
   - /episodes/123/
 topics:
+  - Pharisees
+  - Sadducees
   - Asherah
   - Paul
   - Mary Magdalene

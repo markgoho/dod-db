@@ -8,6 +8,7 @@ aliases:
 topics:
   - Priestly Source
   - YHWH
+  - atonement
   - Joseph
   - Ritual Purity
   - Arad

@@ -7,6 +7,7 @@ aliases:
   - /episodes/152/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/151982360.mp3?sig=FDMoAtJgqGoHn0zBoavvAdtLH9-2h7WIqf4k9WwS_vQ%3D
 topics:
+  - Salvation
   - Dead Sea Scrolls
   - Satan
   - YHWH

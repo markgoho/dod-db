@@ -17,6 +17,7 @@ topics:
   - Second Coming
   - Daniel
   - James
+  - Pharisees
 tags:
   - Jerusalem
   - Pontius Pilate

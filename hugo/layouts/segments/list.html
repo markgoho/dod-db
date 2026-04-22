@@ -9,7 +9,7 @@
 
     <ul class="token-cloud" role="list">
       {{ range .Data.Terms.ByCount }}
-        {{ $titleTransitionName := printf "segments-title-%s" (.Page.Title | urlize) }}
+        {{ $titleTransitionName := partial "transition-name" (dict "prefix" "segments-title" "source" .Page.Title) }}
         <li>
           <a href="{{ .Page.RelPermalink }}" class="token-pill">
             <span

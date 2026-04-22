@@ -11,6 +11,8 @@ topics:
   - Christian Nationalism
   - Marriage
   - Deconstruction
+  - Salvation
+  - atonement
   - Holy Spirit
   - Tithing
 tags:

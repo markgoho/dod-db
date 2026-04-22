@@ -9,6 +9,7 @@ topics:
   - YHWH
   - Demon
   - divine council
+  - Salvation
   - Septuagint
 tags:
   - Babylon

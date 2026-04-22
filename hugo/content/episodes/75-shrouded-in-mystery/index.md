@@ -9,6 +9,7 @@ topics:
   - Shroud of Turin
   - YHWH
   - Decalogue
+  - Elephantine
 tags:
   - Egyptians
   - Red Sea
@@ -17,7 +18,6 @@ tags:
   - Isaac
   - Passover
   - Canaan
-  - Elephantine
 books:
   - Exodus
   - Genesis

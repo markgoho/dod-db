@@ -8,6 +8,7 @@ aliases:
 topics:
   - Paul
   - Mary Magdalene
+  - Salvation
 tags:
   - Papias of Hierapolis
   - Romans

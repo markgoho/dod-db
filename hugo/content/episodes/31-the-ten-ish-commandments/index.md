@@ -19,6 +19,7 @@ topics:
   - Arad
   - Circumcision
   - Hell
+  - Teraphim
   - Univocality
 tags:
   - Deuteronomy

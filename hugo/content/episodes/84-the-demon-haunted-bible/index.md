@@ -13,10 +13,12 @@ topics:
   - King James Bible
   - Abortion
   - Mary Magdalene
+  - Nephilim
   - Saul
   - Septuagint
   - David
   - Lilith
+  - Pharisees
   - Rapture
 tags:
   - Beelzebul
@@ -25,7 +27,6 @@ tags:
   - Judaism
   - Peter
   - Luke
-  - Nephilim
   - Africa
   - Balaam
   - Canaanites

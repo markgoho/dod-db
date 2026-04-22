@@ -11,6 +11,7 @@ topics:
   - Univocality
   - Saul
   - Witch of Endor
+  - Nephilim
   - Paul
   - Daniel
   - David
@@ -32,7 +33,6 @@ tags:
   - inerrancy
   - Jeremiah
   - Judaism
-  - Nephilim
   - Abraham
   - Baruch
   - Enoch

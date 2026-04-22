@@ -6,9 +6,11 @@ videoId: 1esLkNDbMNo
 aliases:
   - /episodes/96/
 topics:
+  - Pharisees
   - Paul
   - Christian Nationalism
   - Decalogue
+  - Sadducees
   - David
 tags:
   - Romans

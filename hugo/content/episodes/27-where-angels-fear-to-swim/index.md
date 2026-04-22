@@ -8,6 +8,7 @@ aliases:
 topics:
   - Euphrates
   - Book of Enoch
+  - Nephilim
   - Hell
   - Angel
   - Goliath
@@ -20,7 +21,6 @@ topics:
   - Satan
   - Septuagint
 tags:
-  - Nephilim
   - Flood
   - Judaism
   - Eschatology

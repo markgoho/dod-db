@@ -12,6 +12,7 @@ topics:
   - YHWH
   - Daniel
   - Marriage
+  - Nephilim
   - Septuagint
   - Univocality
 tags:
@@ -24,7 +25,6 @@ tags:
   - Islam
   - Jerusalem
   - Judah
-  - Nephilim
   - Ugarit
 books:
   - Ephesians

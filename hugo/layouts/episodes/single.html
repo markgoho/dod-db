@@ -14,7 +14,7 @@
     {{ $guestLink := index $guestPagesByTitle . | default (printf "/guests/%s/" (. | urlize)) }}
     {{ $guestLinks = $guestLinks | append (printf `<a href="%s">%s</a>` $guestLink .) }}
   {{ end }}
-  {{ $titleTransitionName := printf "episode-title-%v" .Params.episodeNumber }}
+  {{ $titleTransitionName := partial "transition-name" (dict "prefix" "episode-title" "source" .Params.episodeNumber) }}
   {{ $episodes := sort (where .Site.RegularPages "Section" "episodes") ".Params.episodeNumber" "asc" }}
   {{ $currentIndex := -1 }}
   {{ range $index, $episode := $episodes }}

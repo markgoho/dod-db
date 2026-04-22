@@ -22,7 +22,7 @@
         <h2 class="type-section-title cloud-section__title">Frequent Guests</h2>
         <ul class="token-cloud" role="list">
           {{ range $multipleAppearances }}
-            {{ $titleTransitionName := printf "guests-title-%s" (.Page.Title | urlize) }}
+            {{ $titleTransitionName := partial "transition-name" (dict "prefix" "guests-title" "source" .Page.Title) }}
             <li>
               <a
                 href="{{ .Page.RelPermalink }}"
@@ -47,7 +47,7 @@
         </h2>
         <ul class="token-cloud" role="list">
           {{ range $singleAppearance }}
-            {{ $titleTransitionName := printf "guests-title-%s" (.Page.Title | urlize) }}
+            {{ $titleTransitionName := partial "transition-name" (dict "prefix" "guests-title" "source" .Page.Title) }}
             <li>
               <a href="{{ .Page.RelPermalink }}" class="token-pill">
                 <span

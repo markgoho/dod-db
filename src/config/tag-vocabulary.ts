@@ -2144,12 +2144,16 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Pharisees",
-    variations: [],
-    category: "people",
+    variations: ["Pharisee"],
+    category: "religion",
     description:
       "A Jewish religious and political party in ancient Judea, known for their strict adherence to religious law",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 60,
+    episodes: [
+      19, 37, 44, 50, 54, 59, 60, 76, 84, 85, 86, 96, 108, 123, 133, 146, 147,
+      148,
+    ],
   },
   {
     canonical: "textual",
@@ -3641,13 +3645,14 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 96,
   },
   {
-    canonical: "sadducees",
-    variations: [],
-    category: "people",
+    canonical: "Sadducees",
+    variations: ["Sadducee"],
+    category: "religion",
     description:
       "A Jewish sect during the Second Temple period, associated with the priestly aristocracy and Temple administration.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 96,
+    episodes: [85, 86, 96, 99, 122, 123, 151],
   },
   {
     canonical: "romans 13",
@@ -4281,11 +4286,12 @@ export const tagVocabulary: TagDefinition[] = [
   {
     canonical: "Christian Zionism",
     variations: [],
-    category: "theology",
+    category: "miscellaneous",
     description:
       "A theological perspective that supports the modern state of Israel based on interpretations of biblical prophecy.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 118,
+    episodes: [118],
   },
   {
     canonical: "Christian Nationalists",
@@ -4334,13 +4340,18 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 119,
   },
   {
-    canonical: "salvation",
+    canonical: "Salvation",
     variations: [],
     category: "theology",
+    llmVerify: true,
     description:
       "The concept of being saved from sin and its consequences, often associated with faith or divine intervention.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 120,
+    episodes: [
+      6, 25, 26, 33, 36, 39, 43, 49, 54, 62, 70, 79, 81, 82, 87, 89, 91, 94, 98,
+      101, 104, 119, 120, 124, 146, 152,
+    ],
   },
   {
     canonical: "Abimelech",
@@ -4355,12 +4366,14 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "atonement",
-    variations: ["at-one-ment"],
+    variations: [],
     category: "theology",
+    llmVerify: true,
     description:
       "The concept of reconciliation between humanity and the divine, often involving reparation for wrongdoing",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 122,
+    episodes: [22, 26, 79, 83, 85, 120, 122, 140, 142, 146],
   },
   {
     canonical: "hilasterion",
@@ -8255,11 +8268,12 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Teraphim",
-    variations: ["the teraphim", "household gods"],
+    variations: [],
     category: "miscellaneous",
     description:
       "Household idols or divine images, often associated with divination and protection.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [31, 121, 155],
   },
   {
     canonical: "King Ahab",
