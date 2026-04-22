@@ -12,6 +12,7 @@ topics:
   - Satan
   - Blasphemy
   - Baptism
+  - Acts of Paul and Thecla
   - Pharisees
   - Demon
   - Mary Magdalene
@@ -23,7 +24,6 @@ topics:
   - Trinity
 tags:
   - Beelzebul
-  - Acts of Paul and Thecla
   - Demas
   - Hermogenes
   - Peter

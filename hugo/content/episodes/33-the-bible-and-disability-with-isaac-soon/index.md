@@ -13,6 +13,7 @@ topics:
   - Demon
   - Saul
   - Abortion
+  - Acts of Paul and Thecla
   - Crucifixion
   - Holy Spirit
   - Salvation
@@ -20,7 +21,6 @@ tags:
   - Isaac
   - Gentiles
   - Egyptians
-  - Acts of Paul and Thecla
   - Apocrypha
   - Ignatius
   - Islam
