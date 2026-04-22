@@ -1,36 +1,42 @@
 {{- $previousPage := .prev -}}
 {{- $nextPage := .next -}}
-{{- if or $previousPage $nextPage -}}
-  <nav class="prev-next-nav" aria-label="{{ .ariaLabel }}">
+{{- $allHref := .allHref | default "" -}}
+{{- $allLabel := .allLabel | default "" -}}
+{{- $taxonomyName := .taxonomyName | default "" -}}
+{{- $transitionNamePrefix := .transitionNamePrefix | default "" -}}
+{{- if or $previousPage $allHref $nextPage -}}
+  <nav class="taxonomy-nav" aria-label="{{ .ariaLabel }}">
     {{- if $previousPage -}}
+      {{- $previousTransitionName := cond (ne $transitionNamePrefix "") (printf "%s%v" $transitionNamePrefix $previousPage.Params.episodeNumber) (printf "%s-title-%s" $taxonomyName ($previousPage.Title | urlize)) -}}
       <a
-        class="prev-next-nav__link prev-next-nav__link--previous"
+        class="button-brutalist taxonomy-nav__link"
         href="{{ $previousPage.RelPermalink }}">
-        <span class="prev-next-nav__arrow" aria-hidden="true">←</span>
-        <span class="prev-next-nav__content">
-          <span class="prev-next-nav__eyebrow type-eyebrow"
-            >{{ .prevEyebrow }}</span
-          >
-          <span class="prev-next-nav__title"
-            >{{ .prevTitle | default $previousPage.Title }}</span
-          >
-        </span>
+        <span aria-hidden="true">←</span>
+        <span
+          class="taxonomy-nav__link-title"
+          style="view-transition-name: {{ $previousTransitionName }}"
+          >{{ $previousPage.Title }}</span
+        >
       </a>
     {{- end -}}
 
+    {{- with $allHref -}}
+      <a class="button-brutalist taxonomy-nav__link" href="{{ . }}"
+        >{{ $allLabel }}</a
+      >
+    {{- end -}}
+
     {{- if $nextPage -}}
+      {{- $nextTransitionName := cond (ne $transitionNamePrefix "") (printf "%s%v" $transitionNamePrefix $nextPage.Params.episodeNumber) (printf "%s-title-%s" $taxonomyName ($nextPage.Title | urlize)) -}}
       <a
-        class="prev-next-nav__link prev-next-nav__link--next"
+        class="button-brutalist taxonomy-nav__link"
         href="{{ $nextPage.RelPermalink }}">
-        <span class="prev-next-nav__content">
-          <span class="prev-next-nav__eyebrow type-eyebrow"
-            >{{ .nextEyebrow }}</span
-          >
-          <span class="prev-next-nav__title"
-            >{{ .nextTitle | default $nextPage.Title }}</span
-          >
-        </span>
-        <span class="prev-next-nav__arrow" aria-hidden="true">→</span>
+        <span
+          class="taxonomy-nav__link-title"
+          style="view-transition-name: {{ $nextTransitionName }}"
+          >{{ $nextPage.Title }}</span
+        >
+        <span aria-hidden="true">→</span>
       </a>
     {{- end -}}
   </nav>

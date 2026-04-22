@@ -25,20 +25,21 @@
   {{ $previousEpisode := cond (gt $currentIndex 0) (index $episodes (sub $currentIndex 1)) nil }}
   {{ $nextEpisode := cond (lt $currentIndex (sub (len $episodes) 1)) (index $episodes (add $currentIndex 1)) nil }}
 
+
   <article
     class="episode-page"
     data-pagefind-meta="title:{{ .Title }}"
     data-pagefind-meta="episode:Episode {{ .Params.episodeNumber }}">
     <header class="page-hero page-hero--profile">
-      {{ partial "taxonomy-nav-links" (dict
+      {{ partial "prev-next-nav" (dict
         "ariaLabel" "Episode navigation"
+        "prev" $previousEpisode
+        "next" $nextEpisode
         "allHref" "/episodes/"
         "allLabel" "All Episodes"
-        "previousHref" (cond $previousEpisode $previousEpisode.RelPermalink nil)
-        "previousLabel" (cond $previousEpisode (printf "← Episode %v" $previousEpisode.Params.episodeNumber) nil)
-        "nextHref" (cond $nextEpisode $nextEpisode.RelPermalink nil)
-        "nextLabel" (cond $nextEpisode (printf "Episode %v →" $nextEpisode.Params.episodeNumber) nil)
-      ) }}
+        "transitionNamePrefix" "episode-title-"
+        )
+      }}
       <div class="page-hero__eyebrow panel panel--accent">
         <span class="type-eyebrow"
           >Episode {{ .Params.episodeNumber }} •
