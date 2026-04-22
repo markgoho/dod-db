@@ -1,7 +1,9 @@
 ---
 title: Preterism
 definition: >-
-  The interpretive view that end-times prophecies in texts like Daniel, the Olivet Discourse, and Revelation were fulfilled in the past rather than awaiting future fulfillment.
+  The theological view that biblical end-times prophecies were fulfilled in the
+  past, usually in events surrounding the destruction of Jerusalem and the
+  temple in 70 CE, rather than awaiting future fulfillment.
 featuredItems:
   - type: segment
     episodeNumber: 119
@@ -15,6 +17,12 @@ quotes:
     speaker: Dan McClellan
     episode: 119
     timestamp: "00:03:47.450"
+  - text: >-
+      The idea is that these things are actual inspired prophecies and that the
+      pivot took place in 70 CE when everything went down with Roman Jerusalem.
+    speaker: Dan McClellan
+    episode: 119
+    timestamp: "00:16:13.420"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true

@@ -1,11 +1,13 @@
 ---
 name: refresh-topic-page
-description: Refresh an existing Hugo topic landing page by auditing featured items only and proposing stronger direct-match additions. Use when the user asks to refresh, re-audit, or update featured items on an existing topic page.
+description: Refresh an existing Hugo topic landing page with a conservative full-page second pass, re-auditing definition, quotes, and featured items while preserving existing content unless a closer review justifies changes. Use when the user asks to refresh, re-audit, or update an existing topic page.
 ---
 
 # Refresh Topic Page
 
-This skill guides you through a lightweight second pass on an existing hand-authored topic landing page using the existing topic-page gather and save scripts.
+This skill guides you through a conservative full-page second pass on an existing hand-authored topic landing page using the existing topic-page gather and save scripts.
+
+Assume the current page is probably good. Only change something when a closer look finds an inconsistency, a weaker editorial choice, or stronger new material from newly gathered episodes.
 
 ## Input
 
@@ -31,15 +33,38 @@ If `existingPage` is missing, stop and tell the user to run `/create-topic-page`
 
 Read `existingPage.path` with the same frontmatter-and-body split used by `src/utils/parse-hugo-file.ts`.
 
-Capture and preserve:
+Capture and review:
 
+- current `definition`
 - current `featuredItems`
-- the rest of the current frontmatter
+- current `quotes`
+- aliases / knownAs and the rest of the frontmatter
 - body content
 
-Do not rewrite non-featured editorial fields unless the user explicitly asks.
+Preserve all existing material by default. Only propose changes when the gathered evidence supports a clearly better wording, a stronger quote set, or a better featured-item mix.
 
-### 3. Audit featured items
+### 3. Re-audit the page
+
+Use the gathered JSON to re-check the page holistically.
+
+#### Definition review
+
+Review the current definition against the strongest gathered transcript evidence.
+
+- Keep the existing definition if it is already accurate, clear, and proportionate.
+- Propose a revision only if the current wording is inconsistent with the gathered evidence, misses a clearer core distinction, or can be materially improved without expanding into body copy.
+- Keep the definition focused on what the topic is, not why it matters.
+
+#### Quote review
+
+Review existing quotes against the gathered transcript evidence.
+
+- Preserve the current quotes if they are already strong, direct, and non-redundant.
+- Consider additions or swaps when newly gathered episodes provide clearer, more directly on-topic lines.
+- Prefer quotes that explicitly name the topic or a defining distinction within it.
+- Avoid padding the quote list with adjacent but weaker material.
+
+#### Featured-item review
 
 Use `topEpisodes[*].segments` from the gathered JSON.
 
@@ -53,19 +78,21 @@ Use the same featured-item conventions as `create-topic-page`, then apply these 
 - Construct labels as `<Segment Label> — <Topic Label>`.
 - Cap total featured items at 2.
 
-If the audit finds no addition worth making, report that no changes are needed and exit without writing.
+If the re-audit finds no justified changes, report that no changes are needed and exit without writing.
 
 ### 4. Propose before saving
 
 Before saving, show the user:
 
-- current `featuredItems`
-- proposed additions, including episode number, anchor, segment label, topicLabel, and confidence
-- any suggested quote swap when a proposed addition introduces a new featured episode not currently represented in `quotes`; prefer the strongest direct-match quote from that episode, ideally one that names the topic or the specific subtopic clearly, and replace the weakest or most redundant existing quote
-- reasoning for each proposed addition:
-  - direct topicLabel match
-  - segment-type priority
-  - different episode than currently featured items
+- current `definition`, `featuredItems`, and `quotes`
+- proposed definition changes, if any, with a short reason
+- proposed featured-item additions, removals, or replacements, including episode number, anchor, segment label, topicLabel, and confidence
+- proposed quote additions or swaps, including the exact quote text, speaker, episode, and timestamp
+- reasoning for each proposed change:
+  - direct evidence from gathered transcript material
+  - clearer definition or stronger direct-match quote
+  - different episode than currently featured items, when relevant
+  - reduction of redundancy or correction of inconsistency, when relevant
 
 Ask the user to confirm before saving. Keep a human in the loop for editorial choices.
 
@@ -77,7 +104,6 @@ Preserve the current values for:
 
 - `title`
 - `topicName`
-- `definition`
 - `aliases`
 - `knownAs`
 - `showTopEpisodes`
@@ -85,9 +111,15 @@ Preserve the current values for:
 - `showAllEpisodes`
 - `body`
 
-Preserve current `quotes` by default, but when adding a featured item from a new episode, consider proposing a single quote swap so the quotes better represent the refreshed featured set. Prefer the strongest direct-match quote from the new featured episode, ideally one that explicitly names the topic or the narrower subtopic, and swap out the weakest or most redundant existing quote.
+Update only the editorial fields you explicitly proposed and the user approved, typically from this set:
 
-Update `featuredItems` and only the minimal `quotes` change you explicitly proposed and the user approved, then save with stdin using a quoted heredoc:
+- `definition`
+- `featuredItems`
+- `quotes`
+
+Use the smallest justified edit set. If only quotes change, leave the definition and featured items untouched. If only the definition improves, leave quotes and featured items untouched.
+
+Save with stdin using a quoted heredoc:
 
 ```bash
 bun run topic-page:save <<'EOF'
@@ -117,9 +149,9 @@ http://localhost:1313/topics/easter/
 ## What this skill does not do
 
 - It does not create a new page. If `existingPage` is missing, direct the user to `/create-topic-page`.
-- It does not rewrite the definition, body, or aliases unless the user explicitly asks.
-- It does not rewrite quotes wholesale; at most, it may propose a single quote swap when a newly added featured episode is otherwise unrepresented.
+- It does not rewrite the body wholesale or expand into a from-scratch page rewrite unless the user explicitly asks.
 - It does not re-rank the top-episodes block rendered from Hugo data.
+- It does not make speculative edits just to make the page different; every change should be grounded in a closer review.
 
 ## Data sources
 
@@ -130,15 +162,16 @@ http://localhost:1313/topics/easter/
 
 ## Output rules
 
-- Preserve the existing page body and non-featured editorial fields.
+- Preserve the existing page body unless the user explicitly asks for body edits.
+- Preserve existing editorial choices by default; only change what a closer review clearly improves.
 - Prefer 1 to 2 featured items total.
 - Never include both a segment and its parent episode as separate featured items.
 - Always use `segmentAnchor`, not `segmentType`, when linking to a segment.
-- If a new featured item comes from an episode not represented in `quotes`, consider proposing one quote from that episode as a swap, not an expansion.
-- Prefer a replacement quote that directly matches the topic or subtopic named by the new featured item, rather than a looser adjacent observation.
-- Prefer replacing the weakest or most redundant existing quote, especially one that repeats a point already covered elsewhere on the page.
-- If there is no strong new featured item to add, do not write the page.
+- Keep definitions concise and concept-focused.
+- Prefer direct-match quotes over adjacent thematic quotes when making additions or swaps.
+- Prefer reducing redundancy when selecting multiple quotes.
+- If no clear improvement emerges from the re-audit, do not write the page.
 
 ## Final check
 
-Before finishing, confirm the page still builds cleanly and that the proposed featured items actually improve the page rather than merely changing it.
+Before finishing, confirm the page still builds cleanly and that any proposed definition, quote, or featured-item changes genuinely improve the page rather than merely changing it.
