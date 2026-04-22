@@ -8,9 +8,10 @@
   safe name on both ends of a navigation.
 
   Args:
-    prefix  – required, e.g. "guests-title"
-    source  – required, raw value to slugify (usually .Title or an ID)
-*/ -}}
+  prefix  – required, e.g. "guests-title"
+  source  – required, raw value to slugify (usually .Title or an ID)
+  */
+-}}
 {{- $prefix := .prefix -}}
 {{- $source := .source -}}
 {{- $raw := printf "%s-%s" $prefix (printf "%v" $source | urlize) -}}

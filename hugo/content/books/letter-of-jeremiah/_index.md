@@ -17,7 +17,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 126
     timestamp: "00:33:23.420"
-  - text: "Yeah. But the Letter of Jeremiah is kind of your classical idol polemic, which starts with Jeremiah, with Deuteronomy, Isaiah, and others who are basically just saying, \"Those aren't real gods, you dumb-dumbs. Those are just idols of stone and wood and gold, and they can neither eat nor drink nor breathe nor see nor speak nor hear nor any of that kind of stuff.\""
+  - text: 'Yeah. But the Letter of Jeremiah is kind of your classical idol polemic, which starts with Jeremiah, with Deuteronomy, Isaiah, and others who are basically just saying, "Those aren''t real gods, you dumb-dumbs. Those are just idols of stone and wood and gold, and they can neither eat nor drink nor breathe nor see nor speak nor hear nor any of that kind of stuff."'
     speaker: "Dan McClellan"
     episode: 126
     timestamp: "00:50:30.266"

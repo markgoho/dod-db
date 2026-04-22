@@ -23038,6 +23038,10 @@
     "transcriptPath": "data/transcripts/2025-10-13-peter-thiel-is-bankrupt-theologically.txt",
     "tags": [
       {
+        "tag": "Star of Remphan",
+        "mentions": 18
+      },
+      {
         "tag": "Peter",
         "mentions": 11
       },
@@ -26378,6 +26382,10 @@
       },
       {
         "tag": "Joseph",
+        "mentions": 5
+      },
+      {
+        "tag": "Star of Remphan",
         "mentions": 5
       },
       {

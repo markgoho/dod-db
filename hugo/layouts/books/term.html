@@ -5,6 +5,8 @@
 
 {{ define "main" }}
   {{ $bookName := .Params.bookName | default .Title }}
+  {{ $bookIndex := index hugo.Data "book-episode-index" }}
+  {{ $rankedEntries := index $bookIndex $bookName | default slice }}
   {{ $allEpisodes := sort .Pages ".Params.episodeNumber" "desc" }}
   {{ $episodesByNumber := dict }}
   {{ range $allEpisodes }}
@@ -80,8 +82,17 @@
           Every episode currently tagged with {{ $bookName }}.
         </p>
         <div class="episodes-grid">
-          {{ range $allEpisodes }}
-            {{ partial "episode-card" (dict "episode" . "badgeSource" "books" "currentTerm" $bookName) }}
+          {{ if gt (len $rankedEntries) 0 }}
+            {{ range $rankedEntries }}
+              {{ $episodePage := index $episodesByNumber (string .ep) }}
+              {{ if $episodePage }}
+                {{ partial "episode-card" (dict "episode" $episodePage "badgeSource" "books" "currentTerm" $bookName) }}
+              {{ end }}
+            {{ end }}
+          {{ else }}
+            {{ range $allEpisodes }}
+              {{ partial "episode-card" (dict "episode" . "badgeSource" "books" "currentTerm" $bookName) }}
+            {{ end }}
           {{ end }}
         </div>
       </section>

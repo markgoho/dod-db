@@ -1,6 +1,6 @@
 ---
 title: "Nephilim"
-definition: "The Nephilim are a mysterious group mentioned in Genesis 6 and Numbers 13, where they are associated with ancient warriors, renown, and later traditions about oversized or otherworldly beings. In the Hebrew Bible the term does not clearly mean \"giants,\" and the texts leave their exact identity unresolved, which helped generate later interpretations that linked them to fallen warriors, angelic unions, or the giant lore developed in Enochic literature."
+definition: 'The Nephilim are a mysterious group mentioned in Genesis 6 and Numbers 13, where they are associated with ancient warriors, renown, and later traditions about oversized or otherworldly beings. In the Hebrew Bible the term does not clearly mean "giants," and the texts leave their exact identity unresolved, which helped generate later interpretations that linked them to fallen warriors, angelic unions, or the giant lore developed in Enochic literature.'
 featuredItems:
   - type: segment
     episodeNumber: 124

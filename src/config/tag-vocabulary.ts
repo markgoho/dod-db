@@ -4653,13 +4653,14 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 132,
   },
   {
-    canonical: "star of remphan",
+    canonical: "Star of Remphan",
     variations: ["Remphan"],
     category: "miscellaneous",
     description:
       "A deity mentioned in Acts 7:43, possibly associated with Saturn, and linked by some conspiracy theorists to the Star of David.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 132,
+    episodes: [132, 150],
   },
   {
     canonical: "sex work",
