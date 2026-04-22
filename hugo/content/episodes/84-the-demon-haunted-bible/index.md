@@ -10,6 +10,7 @@ topics:
   - Hell
   - Satan
   - Book of Enoch
+  - Jubilees
   - King James Bible
   - Abortion
   - Mary Magdalene

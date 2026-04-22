@@ -16,6 +16,7 @@ topics:
   - Adultery
   - Daniel
   - Gnosticism
+  - Jubilees
   - Masoretes
 tags:
   - Apocrypha

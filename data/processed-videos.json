@@ -1022,6 +1022,10 @@
         "mentions": 1
       },
       {
+        "tag": "Jubilees",
+        "mentions": 1
+      },
+      {
         "tag": "Marcion",
         "mentions": 1
       },
@@ -1987,6 +1991,10 @@
       },
       {
         "tag": "Jonah",
+        "mentions": 1
+      },
+      {
+        "tag": "Jubilees",
         "mentions": 1
       },
       {
@@ -3282,6 +3290,10 @@
       },
       {
         "tag": "Joseph",
+        "mentions": 1
+      },
+      {
+        "tag": "Jubilees",
         "mentions": 1
       },
       {
@@ -5365,6 +5377,10 @@
       },
       {
         "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Jubilees",
         "mentions": 1
       },
       {
@@ -11246,6 +11262,10 @@
         "mentions": 1
       },
       {
+        "tag": "Jubilees",
+        "mentions": 1
+      },
+      {
         "tag": "Judaism",
         "mentions": 1
       },
@@ -14653,6 +14673,10 @@
         "mentions": 3
       },
       {
+        "tag": "Jubilees",
+        "mentions": 3
+      },
+      {
         "tag": "Judaism",
         "mentions": 3
       },
@@ -17224,6 +17248,10 @@
       },
       {
         "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Jubilees",
         "mentions": 1
       },
       {
@@ -24083,6 +24111,10 @@
     "transcriptPath": "data/transcripts/2025-11-17-its-a-jubilee.txt",
     "tags": [
       {
+        "tag": "Jubilees",
+        "mentions": 39
+      },
+      {
         "tag": "Moses",
         "mentions": 21
       },
@@ -25171,6 +25203,10 @@
       },
       {
         "tag": "Gospel of James",
+        "mentions": 1
+      },
+      {
+        "tag": "Jubilees",
         "mentions": 1
       },
       {

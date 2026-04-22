@@ -3180,13 +3180,15 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 84,
   },
   {
-    canonical: "jubilees",
+    canonical: "Jubilees",
     variations: [],
     category: "literature",
+    llmVerify: true,
     description:
       "An ancient Jewish religious work of 50 chapters, considered canonical by Ethiopian Orthodox Church",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 84,
+    episodes: [6, 11, 18, 29, 62, 84, 98, 137, 142],
   },
   {
     canonical: "Beelzebul",

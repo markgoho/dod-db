@@ -11,6 +11,7 @@ topics:
   - atonement
   - Book of Enoch
   - Angel
+  - Jubilees
   - King James Bible
   - Septuagint
 tags:

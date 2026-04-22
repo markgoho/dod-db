@@ -16,6 +16,7 @@ topics:
   - Book of Enoch
   - Dead Sea Scrolls
   - Joseph
+  - Jubilees
   - King James Bible
 tags:
   - Balaam

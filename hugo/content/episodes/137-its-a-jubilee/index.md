@@ -6,6 +6,7 @@ videoId: lwvdqRsQF-c
 aliases:
   - /episodes/137/
 topics:
+  - Jubilees
   - Angel
   - Book of Enoch
   - Dead Sea Scrolls
