@@ -24541,6 +24541,10 @@
         "mentions": 1
       },
       {
+        "tag": "Pastor",
+        "mentions": 1
+      },
+      {
         "tag": "Saint Titus",
         "mentions": 1
       },
@@ -24660,6 +24664,10 @@
       {
         "tag": "Jacob",
         "mentions": 6
+      },
+      {
+        "tag": "Pastor",
+        "mentions": 5
       },
       {
         "tag": "Saul",
@@ -25513,6 +25521,10 @@
       {
         "tag": "John the Baptist",
         "mentions": 29
+      },
+      {
+        "tag": "Pastor",
+        "mentions": 27
       },
       {
         "tag": "Herodias",
@@ -28192,11 +28204,11 @@
         "mentions": 8
       },
       {
-        "tag": "Passover",
-        "mentions": 7
+        "tag": "Transfiguration",
+        "mentions": 8
       },
       {
-        "tag": "Transfiguration",
+        "tag": "Passover",
         "mentions": 7
       },
       {
@@ -28294,7 +28306,7 @@
         "endTimestamp": "[00:30:43.408]",
         "confidence": "verified",
         "detectionMethod": "audio",
-        "topicLabel": "Transfiguration",
+        "topicLabel": "Transfigura&shy;tion",
         "summary": "The Transfiguration story in Mark, Matthew, and Luke."
       },
       {

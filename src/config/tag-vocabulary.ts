@@ -2208,7 +2208,7 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "baptism",
-    variations: ["baptized", "baptize"],
+    variations: ["baptize"],
     category: "theology",
     llmVerify: true,
     description:
@@ -5389,7 +5389,7 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Transfiguration",
-    variations: [],
+    variations: ["transfigure"],
     category: "event",
     llmVerify: true,
     description:
@@ -7967,11 +7967,13 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "pastor",
-    variations: ["pastoral", "pastorhood"],
-    category: "religion",
+    canonical: "Pastor",
+    variations: [],
+    category: "miscellaneous",
+    llmVerify: true,
     description: "Religious leader in a Christian church",
-    status: "proposed",
+    status: "accepted",
+    episodes: [138, 139, 144],
   },
   {
     canonical: "seminary",

@@ -8,6 +8,7 @@ aliases:
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/146857778.mp3?sig=_2YryoffF4QnMIGZm40GrvRUaavew5qWMf3A05qGju0%3D
 topics:
   - John the Baptist
+  - Transfiguration
   - James
   - Second Coming
   - Christmas
@@ -20,7 +21,6 @@ tags:
   - Sea of Galilee
   - Philip
   - Passover
-  - Transfiguration
   - Galilee
   - John
   - Nazareth
@@ -57,7 +57,7 @@ segmentData:
   - type: what-is-that
     anchor: what-is-that-1
     label: What is That?
-    topicLabel: Transfiguration
+    topicLabel: Transfigura&shy;tion
     summary: "The Transfiguration story in Mark, Matthew, and Luke."
     startSeconds: 122.311
   - type: chapter-and-verse

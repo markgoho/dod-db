@@ -12,6 +12,7 @@ topics:
   - Gnosticism
   - Mary Magdalene
   - Septuagint
+  - Transfiguration
   - Trinity
 tags:
   - John
@@ -30,7 +31,6 @@ tags:
   - Gospel of Thomas
   - Polybius
   - Theosis
-  - Transfiguration
 books:
   - John
   - 3 John
