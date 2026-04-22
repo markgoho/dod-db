@@ -215,7 +215,7 @@
             <section class="episode-sidebar__section panel panel--muted">
               <h2 class="episode-sidebar__title">Topics</h2>
               <ul class="chip-list" role="list">
-                {{ range .Params.topics }}
+                {{ range sort .Params.topics }}
                   <li>
                     <a href="/topics/{{ . | urlize }}/" class="chip">{{ . }}</a>
                   </li>
