@@ -3,15 +3,37 @@
  */
 
 import { getBookByAnyName } from "../config/get-book-by-any-name.js";
+import type { TagDefinition } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
 import type { ProcessedVideo } from "../storage/processed-videos.js";
 import { titleToSlug } from "../utils/title-to-slug.js";
 import { formatSegmentsForFrontmatter } from "./format-segments-for-frontmatter.js";
 import { getGuestSpeakers } from "./get-guest-speakers.js";
 
-function buildCanonicalNameBySlug(): Map<string, string> {
+/**
+ * Reload the vocabulary module from disk. The tools-server runs long enough
+ * that out-of-band edits (topic-creation skills, git pulls, manual edits)
+ * can leave the statically-imported `tagVocabulary` stale — so we re-import
+ * with a cache-busting query each time frontmatter is generated.
+ */
+async function loadFreshTagVocabulary(): Promise<readonly TagDefinition[]> {
+  try {
+    const url = new URL("../config/tag-vocabulary.ts", import.meta.url);
+    url.searchParams.set("t", Date.now().toString());
+    const module_ = (await import(url.href)) as {
+      tagVocabulary: readonly TagDefinition[];
+    };
+    return module_.tagVocabulary;
+  } catch {
+    return tagVocabulary;
+  }
+}
+
+function buildCanonicalNameBySlug(
+  vocabulary: readonly TagDefinition[],
+): Map<string, string> {
   return new Map(
-    tagVocabulary.map(entry => [titleToSlug(entry.canonical), entry.canonical]),
+    vocabulary.map(entry => [titleToSlug(entry.canonical), entry.canonical]),
   );
 }
 
@@ -27,12 +49,13 @@ function loadTopicSlugs(): Set<string> {
   return new Set(topicSlugs);
 }
 
-export function generateFrontmatter(
+export async function generateFrontmatter(
   video: ProcessedVideo,
   cleanTitle: string,
-): string {
+): Promise<string> {
   const topicSlugs = loadTopicSlugs();
-  const canonicalNameBySlug = buildCanonicalNameBySlug();
+  const vocabulary = await loadFreshTagVocabulary();
+  const canonicalNameBySlug = buildCanonicalNameBySlug(vocabulary);
   const extractedTags = video.tags?.map(t => t.tag) ?? [];
   const topics = extractedTags.flatMap(tag => {
     const slug = titleToSlug(tag);

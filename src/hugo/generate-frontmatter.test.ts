@@ -30,7 +30,7 @@ describe("generateFrontmatter", () => {
     };
 
     const cleanTitle = "Test Episode";
-    const actual = generateFrontmatter(video, cleanTitle);
+    const actual = await generateFrontmatter(video, cleanTitle);
 
     const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-complete.md",
@@ -51,7 +51,7 @@ describe("generateFrontmatter", () => {
     };
 
     const cleanTitle = "Solo Episode";
-    const actual = generateFrontmatter(video, cleanTitle);
+    const actual = await generateFrontmatter(video, cleanTitle);
 
     const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-minimal.md",
@@ -71,7 +71,7 @@ describe("generateFrontmatter", () => {
     };
 
     const cleanTitle = "Guest Episode";
-    const actual = generateFrontmatter(video, cleanTitle);
+    const actual = await generateFrontmatter(video, cleanTitle);
 
     const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-with-guests.md",
@@ -79,7 +79,7 @@ describe("generateFrontmatter", () => {
     expect(actual).toBe(expected);
   });
 
-  test("strips guest honorifics in frontmatter taxonomy values", () => {
+  test("strips guest honorifics in frontmatter taxonomy values", async () => {
     const video: ProcessedVideo = {
       videoId: "guest-honorific-456",
       title: "Episode 82",
@@ -90,7 +90,7 @@ describe("generateFrontmatter", () => {
       speakers: ["Dan McClellan", "Rev Karla Kamstra", "Dan Beecher"],
     };
 
-    const actual = generateFrontmatter(video, "Deconstruction Zone");
+    const actual = await generateFrontmatter(video, "Deconstruction Zone");
 
     expect(actual).toContain("guests:\n  - Karla Kamstra");
   });
@@ -108,7 +108,7 @@ describe("generateFrontmatter", () => {
     };
 
     const cleanTitle = "Guest Topic Episode";
-    const actual = generateFrontmatter(video, cleanTitle);
+    const actual = await generateFrontmatter(video, cleanTitle);
 
     const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-with-guest-topic.md",
@@ -128,7 +128,7 @@ describe("generateFrontmatter", () => {
     };
 
     const cleanTitle = "Canonical Guest Episode";
-    const actual = generateFrontmatter(video, cleanTitle);
+    const actual = await generateFrontmatter(video, cleanTitle);
 
     const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-with-canonical-guest.md",
@@ -162,7 +162,7 @@ describe("generateFrontmatter", () => {
     };
 
     const cleanTitle = "Segmented Episode";
-    const actual = generateFrontmatter(video, cleanTitle);
+    const actual = await generateFrontmatter(video, cleanTitle);
 
     const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-with-segments.md",
@@ -200,7 +200,7 @@ describe("generateFrontmatter", () => {
     };
 
     const cleanTitle = "Scripture Episode";
-    const actual = generateFrontmatter(video, cleanTitle);
+    const actual = await generateFrontmatter(video, cleanTitle);
 
     const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-with-books.md",
@@ -208,7 +208,7 @@ describe("generateFrontmatter", () => {
     expect(actual).toBe(expected);
   });
 
-  test("adds scripture books from verified segment topic labels", () => {
+  test("adds scripture books from verified segment topic labels", async () => {
     const video: ProcessedVideo = {
       videoId: "segment-books-123",
       title: "Episode 159",
@@ -244,7 +244,7 @@ describe("generateFrontmatter", () => {
       ],
     };
 
-    const actual = generateFrontmatter(video, "Mysterious Texts");
+    const actual = await generateFrontmatter(video, "Mysterious Texts");
 
     expect(actual).toContain(
       "books:\n  - Ezra\n  - 1 Esdras\n  - Bel and the Dragon",
@@ -264,7 +264,7 @@ describe("generateFrontmatter", () => {
     };
 
     const cleanTitle = "Audio Episode";
-    const actual = generateFrontmatter(video, cleanTitle);
+    const actual = await generateFrontmatter(video, cleanTitle);
 
     const expected = await readFixture(
       "src/hugo/__fixtures__/frontmatter-with-audio.md",

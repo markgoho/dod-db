@@ -43,7 +43,7 @@ async function generateEpisodeContent(video: ProcessedVideo): Promise<boolean> {
 
   // Generate frontmatter
   const cleanTitle = extractCleanTitle(video.title);
-  const frontmatter = generateFrontmatter(video, cleanTitle);
+  const frontmatter = await generateFrontmatter(video, cleanTitle);
 
   // Combine frontmatter and transcript
   const content = transcriptWithShortcodes.endsWith("\n")
