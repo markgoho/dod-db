@@ -118,22 +118,22 @@ featuredItems:
 
 #### Body
 
-- Write 1 to 2 body paragraphs explaining why this topic matters on the show.
-- Use the body for the podcast-specific significance that does not belong in the definition: recurring debates, interpretive stakes, textual importance, or why the topic keeps resurfacing in the show's broader conversations.
-- Start with the explanation itself, not a framing clause like `X matters on the show because`.
-- Jump directly into the substantive claim rather than relying on stock openings.
-- Avoid overusing templates like `sits at the intersection of`, `serves as a lens for`, or other repeated scaffolds that can make topic pages sound interchangeable.
-- Vary the opening move based on the evidence: name the recurring dispute, the interpretive pressure point, the textual problem, the historical uncertainty, the doctrinal stakes, or the reason the topic keeps resurfacing.
-- Prefer the topic itself as the grammatical subject of the opening sentence when that reads naturally, but do not force the same sentence shape on every page.
-- Useful opening patterns include:
-  - `X keeps resurfacing because...`
-  - `Questions about X expose...`
-  - `Debates over X turn on...`
-  - `X becomes a flashpoint for...`
-  - `X anchors larger arguments about...`
-  - `Uncertainty about X opens onto...`
-  - `X matters less as an isolated detail than as a window into...`
-- Keep the body aligned with the evidence in the gathered context.
+Write 1 to 2 body paragraphs that convey why this topic matters on the show, drawn tightly from the gathered evidence.
+
+**What the paragraph should do, not how it should sound.** The body's job is to surface the actual reason a listener should care about this topic *on this show*: a specific dispute the hosts return to, a text-critical problem that keeps forcing the question back open, a gap between popular assumption and what the evidence shows, a methodological lever this topic exposes, stakes for how people read scripture or practice faith, or a historical uncertainty that the hosts keep probing. Whichever of these the evidence actually supports is the content of the paragraph.
+
+**Ban the scaffolds.** Do not use any of these opening or structural moves, even in paraphrased form:
+
+- `X keeps resurfacing...`, `recurs...`, `comes up again and again...`, or any "this topic appears often" framing. The page itself already signals frequency via the episode list; do not restate it.
+- `sits at the intersection of...`, `serves as a lens for...`, `becomes a flashpoint for...`, `anchors larger arguments about...`, `opens onto...`, `matters less as X than as Y...`
+- Any sentence whose backbone is "X [verb] because [list of abstractions]."
+- Meta-framing about the show's mission, the hosts' interests, or what the show "does with" the topic.
+
+**Lead with something concrete.** The strongest opening is usually a specific claim, contrast, or fact the hosts have established — something a reader learns in the first sentence, not a thesis sentence promising they'll learn it later. A named dispute, a surprising textual detail, a commonly-held belief the evidence undercuts, a scholarly debate with actual sides. If you cannot write a concrete opening from the evidence, the paragraph is not ready.
+
+**Vary the shape.** Before finalizing, check the two or three most recently created topic pages in `hugo/content/topics/` and make sure your opening sentence does not share its grammatical backbone or rhetorical move with theirs. If it does, rewrite.
+
+Keep the body aligned with the evidence in the gathered context. Do not invent stakes the transcripts do not support.
 
 ### 3. Save
 
@@ -206,6 +206,8 @@ Check for:
 - featured items that are merely acceptable instead of the strongest available choices
 - any missed direct-match verified segment that should have been featured first
 - body or definition wording that feels vague, repetitive, or less sharp than existing strong topic pages
+- body openings that use banned scaffolds (`keeps resurfacing`, `sits at the intersection`, `serves as a lens`, `becomes a flashpoint`, `opens onto`, or any "recurs/comes up often" framing) — rewrite with a concrete specific claim instead
+- body openings whose grammatical backbone matches recent topic pages — vary the shape
 
 If any of those are weak, tighten them before concluding.
 
