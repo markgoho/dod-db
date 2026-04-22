@@ -24445,6 +24445,10 @@
     "transcriptPath": "data/transcripts/2025-11-24-who-deserves-to-eat.txt",
     "tags": [
       {
+        "tag": "Hyksos",
+        "mentions": 17
+      },
+      {
         "tag": "Joseph",
         "mentions": 17
       },
@@ -24511,7 +24515,7 @@
         "endTimestamp": "[00:35:09.328]",
         "confidence": "verified",
         "detectionMethod": "audio",
-        "topicLabel": "2 Thessalonians 3",
+        "topicLabel": "2 Thess 3",
         "summary": "Interpreting the verse about work and the right to eat."
       },
       {

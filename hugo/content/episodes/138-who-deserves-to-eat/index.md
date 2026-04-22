@@ -6,6 +6,7 @@ videoId: mMJ5mHoWrSM
 aliases:
   - /episodes/138/
 topics:
+  - Hyksos
   - Joseph
   - Paul
   - Flavius Josephus
@@ -33,7 +34,7 @@ segmentData:
   - type: chapter-and-verse
     anchor: chapter-and-verse-1
     label: Chapter and Verse
-    topicLabel: 2 Thessalonians 3
+    topicLabel: 2 Thess 3
     summary: Interpreting the verse about work and the right to eat.
     startSeconds: 143.364
   - type: taking-issue

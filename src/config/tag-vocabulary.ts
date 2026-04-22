@@ -4875,12 +4875,13 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Hyksos",
-    variations: ["Hyksoses"],
+    variations: [],
     category: "people",
     description:
       "A group of West Asian rulers who took over a portion of Egypt during the Second Intermediate Period (c. 1650-1550 BCE)",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 138,
+    episodes: [138],
   },
   {
     canonical: "thessalonians",
