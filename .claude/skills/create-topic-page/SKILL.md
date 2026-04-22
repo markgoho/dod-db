@@ -121,8 +121,18 @@ featuredItems:
 - Write 1 to 2 body paragraphs explaining why this topic matters on the show.
 - Use the body for the podcast-specific significance that does not belong in the definition: recurring debates, interpretive stakes, textual importance, or why the topic keeps resurfacing in the show's broader conversations.
 - Start with the explanation itself, not a framing clause like `X matters on the show because`.
-- Jump directly into the substantive claim, for example `Samson sits at...` rather than `Samson matters on the show because...`.
-- Prefer the topic itself as the grammatical subject of the opening sentence when that reads naturally.
+- Jump directly into the substantive claim rather than relying on stock openings.
+- Avoid overusing templates like `sits at the intersection of`, `serves as a lens for`, or other repeated scaffolds that can make topic pages sound interchangeable.
+- Vary the opening move based on the evidence: name the recurring dispute, the interpretive pressure point, the textual problem, the historical uncertainty, the doctrinal stakes, or the reason the topic keeps resurfacing.
+- Prefer the topic itself as the grammatical subject of the opening sentence when that reads naturally, but do not force the same sentence shape on every page.
+- Useful opening patterns include:
+  - `X keeps resurfacing because...`
+  - `Questions about X expose...`
+  - `Debates over X turn on...`
+  - `X becomes a flashpoint for...`
+  - `X anchors larger arguments about...`
+  - `Uncertainty about X opens onto...`
+  - `X matters less as an isolated detail than as a window into...`
 - Keep the body aligned with the evidence in the gathered context.
 
 ### 3. Save
