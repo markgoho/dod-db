@@ -7,6 +7,7 @@ aliases:
   - /episodes/60/
 topics:
   - Paul
+  - Adultery
   - King James Bible
   - Abortion
   - Pharisees
@@ -14,7 +15,6 @@ topics:
   - YHWH
 tags:
   - Priscilla
-  - Adultery
   - Aquila
   - Moses
   - Eve

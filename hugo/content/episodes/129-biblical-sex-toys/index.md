@@ -10,6 +10,7 @@ topics:
   - YHWH
   - Asherah
   - King James Bible
+  - Adultery
   - David
   - Dead Sea Scrolls
   - Homosexuality
@@ -28,7 +29,6 @@ tags:
   - Deuteronomy
   - Gomorrah
   - Abraham
-  - Adultery
   - Amorites
   - Hagar
   - Qumran

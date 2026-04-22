@@ -7,6 +7,7 @@ aliases:
   - /episodes/108/
 topics:
   - Marriage
+  - Adultery
   - Paul
   - Pharisees
   - Christian Nationalism
@@ -14,7 +15,6 @@ topics:
   - Ruth
   - Univocality
 tags:
-  - Adultery
   - Deuteronomy
   - Moses
   - Onan

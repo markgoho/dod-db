@@ -10,6 +10,7 @@ topics:
   - Angel
   - Flavius Josephus
   - YHWH
+  - Adultery
   - Daniel
   - Marriage
   - Nephilim
@@ -21,7 +22,6 @@ tags:
   - Baal
   - Philo of Alexandria
   - Adam
-  - Adultery
   - Eve
   - Islam
   - Jerusalem

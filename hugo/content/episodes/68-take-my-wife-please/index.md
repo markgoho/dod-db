@@ -7,6 +7,7 @@ aliases:
   - /episodes/68/
 topics:
   - Marriage
+  - Adultery
   - Joseph
   - Ruth
   - Decalogue
@@ -21,7 +22,6 @@ tags:
   - Tamar
   - Shelah
   - Deuteronomy
-  - Adultery
   - Boaz
   - Canaan
 books:

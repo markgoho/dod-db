@@ -11,6 +11,7 @@ topics:
   - Paul
   - Jacob
   - Saul
+  - Adultery
   - Dead Sea Scrolls
   - Flavius Josephus
   - Homosexuality
@@ -27,7 +28,6 @@ tags:
   - Judaism
   - Ammonites
   - Leah
-  - Adultery
   - Judah
   - Moab
   - Romans

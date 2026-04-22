@@ -9,6 +9,7 @@ topics:
   - Didache
   - Paul
   - Abortion
+  - Adultery
   - Dead Sea Scrolls
   - King James Bible
   - Talmud
@@ -21,7 +22,6 @@ tags:
   - Clement of Alexandria
   - Egyptians
   - Jeroboam
-  - Adultery
   - baptism
   - Isaiah
   - Matthew

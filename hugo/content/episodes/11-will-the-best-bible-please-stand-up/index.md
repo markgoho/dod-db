@@ -13,6 +13,7 @@ topics:
   - Book of Enoch
   - Codex Sinaiticus
   - Easter
+  - Adultery
   - Daniel
   - Gnosticism
   - Masoretes
@@ -43,7 +44,6 @@ tags:
   - Protestantism
   - Samuel
   - Textus Receptus
-  - Adultery
   - Galilee
   - Jonah
   - Luke

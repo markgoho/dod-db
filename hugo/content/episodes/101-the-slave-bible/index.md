@@ -11,13 +11,13 @@ topics:
   - Decalogue
   - King James Bible
   - Abortion
+  - Adultery
   - Paul
   - Salvation
   - Univocality
 tags:
   - Eschatology
   - Pliny the Younger
-  - Adultery
   - baptism
   - Beatitudes
   - Galilee

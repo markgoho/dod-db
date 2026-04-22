@@ -11,6 +11,7 @@ topics:
   - King James Bible
   - David
   - Hell
+  - Adultery
   - Joseph
   - YHWH
 tags:
@@ -29,7 +30,6 @@ tags:
   - Peter
   - Abigail
   - Adam
-  - Adultery
   - Egyptians
   - etiology
   - Eve

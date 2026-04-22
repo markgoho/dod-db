@@ -7,6 +7,7 @@ aliases:
   - /episodes/17/
 topics:
   - King James Bible
+  - Adultery
   - Angel
   - Hell
   - Homosexuality
@@ -19,7 +20,6 @@ tags:
   - William Tyndale
   - Apocrypha
   - Desiderius Erasmus
-  - Adultery
   - Textus Receptus
   - Martin Luther
   - Latin Vulgate

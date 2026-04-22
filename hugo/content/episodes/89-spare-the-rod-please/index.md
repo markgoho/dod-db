@@ -13,13 +13,13 @@ topics:
   - Gnosticism
   - Salvation
   - Univocality
+  - Adultery
   - Homosexuality
 tags:
   - Sheol
   - Gentiles
   - Origen
   - Solomon
-  - Adultery
   - Augustine
   - cognitive dissonance
   - Hermeneia

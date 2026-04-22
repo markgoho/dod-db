@@ -9,6 +9,7 @@ audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/1
 topics:
   - King James Bible
   - Septuagint
+  - Adultery
   - Dead Sea Scrolls
   - Paul
   - Bel and the Dragon
@@ -21,7 +22,6 @@ tags:
   - Catholicism
   - Apocrypha
   - Textus Receptus
-  - Adultery
   - Luke
   - Martin Luther
   - Moses

@@ -19,6 +19,7 @@ topics:
   - Star of Bethlehem
   - YHWH
   - Abortion
+  - Adultery
   - Flavius Josephus
   - Hell
   - Holy Spirit
@@ -38,7 +39,6 @@ tags:
   - Deuteronomy
   - Jericho
   - Judah
-  - Adultery
   - Antiochus IV Epiphanes
   - baptism
   - Catholicism

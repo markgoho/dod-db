@@ -6,6 +6,7 @@ videoId: kiOlyxiorow
 aliases:
   - /episodes/112/
 topics:
+  - Adultery
   - Creatio ex nihilo
   - Flavius Josephus
   - Circumcision
@@ -16,7 +17,6 @@ tags:
   - Second Maccabees
   - Seleucid Empire
   - Luke
-  - Adultery
   - Apocrypha
   - Creation ex nihilo
   - Judas Maccabeus

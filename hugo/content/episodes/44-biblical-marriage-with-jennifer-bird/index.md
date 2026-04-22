@@ -8,6 +8,7 @@ aliases:
 topics:
   - Marriage
   - Paul
+  - Adultery
   - Pharisees
   - Univocality
   - Daniel
@@ -16,7 +17,6 @@ topics:
   - YHWH
 tags:
   - Augustine
-  - Adultery
   - Jennifer Bird
   - Gentiles
   - Judaism

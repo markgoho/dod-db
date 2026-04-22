@@ -9,6 +9,7 @@ topics:
   - Mary Magdalene
   - Flavius Josephus
   - Shroud of Turin
+  - Adultery
   - Univocality
   - Abortion
   - atonement
@@ -22,7 +23,6 @@ tags:
   - Crucifixion
   - Catholicism
   - Jeremiah
-  - Adultery
   - Pontius Pilate
   - inerrancy
   - Romans

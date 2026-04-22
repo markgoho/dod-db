@@ -12,6 +12,7 @@ topics:
   - Satan
   - John the Baptist
   - YHWH
+  - Adultery
   - James
   - Paul
   - Salvation
@@ -23,7 +24,6 @@ tags:
   - baptism
   - Judas Iscariot
   - Peter
-  - Adultery
   - Catholicism
   - Eusebius
   - Gospel of Thomas

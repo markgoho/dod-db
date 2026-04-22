@@ -13,6 +13,7 @@ topics:
   - Angel
   - Codex Sinaiticus
   - Preterism
+  - Adultery
   - Council of Nicaea
   - Euphrates
   - Gnosticism
@@ -33,7 +34,6 @@ tags:
   - Judah
   - Nero
   - Theosis
-  - Adultery
   - Constantine
   - Council of Jerusalem
   - Deuteronomy

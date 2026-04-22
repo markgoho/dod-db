@@ -10,6 +10,7 @@ topics:
   - YHWH
   - Asherah
   - Stele
+  - Adultery
   - Jacob
   - King James Bible
   - David
@@ -20,7 +21,6 @@ topics:
 tags:
   - Baal
   - Judaism
-  - Adultery
   - Islam
   - Jehu
   - Onan

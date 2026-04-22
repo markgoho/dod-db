@@ -7,6 +7,7 @@ aliases:
   - /episodes/128/
 topics:
   - Paul
+  - Adultery
   - Flavius Josephus
   - Gnosticism
   - Mary Magdalene
@@ -21,7 +22,6 @@ tags:
   - forgery
   - Judaism
   - Matthew
-  - Adultery
   - Apocrypha
   - Aristobulus
   - Athanasius of Alexandria

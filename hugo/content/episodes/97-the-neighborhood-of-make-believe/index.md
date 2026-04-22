@@ -6,11 +6,11 @@ videoId: CtROVUxwKyM
 aliases:
   - /episodes/97/
 topics:
+  - Adultery
   - Decalogue
   - King James Bible
 tags:
   - Noah
-  - Adultery
   - Moses
   - Red Sea
   - Jericho

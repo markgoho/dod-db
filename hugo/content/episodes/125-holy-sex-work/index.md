@@ -16,6 +16,7 @@ topics:
   - Satan
   - Hell
   - Masoretic Text
+  - Adultery
   - Circumcision
   - Josiah
 tags:
@@ -29,7 +30,6 @@ tags:
   - Apocrypha
   - Deuteronomy
   - Tamar
-  - Adultery
   - Hezekiah
   - Latin Vulgate
   - Martin Luther

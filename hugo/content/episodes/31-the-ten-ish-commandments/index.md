@@ -10,6 +10,7 @@ topics:
   - YHWH
   - Josiah
   - Paul
+  - Adultery
   - Asherah
   - King James Bible
   - Covenant Code
@@ -26,7 +27,6 @@ tags:
   - Judaism
   - Moses
   - Philo of Alexandria
-  - Adultery
   - Baal
   - Council of Jerusalem
   - Catholicism

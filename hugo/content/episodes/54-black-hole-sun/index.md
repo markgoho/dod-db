@@ -12,6 +12,7 @@ topics:
   - Circumcision
   - Hell
   - Rapture
+  - Adultery
   - David
   - Holy Spirit
   - Pharisees
@@ -35,7 +36,6 @@ tags:
   - Judaism
   - Moses
   - Silas
-  - Adultery
   - Adam
   - Cornelius
   - Melchizedek

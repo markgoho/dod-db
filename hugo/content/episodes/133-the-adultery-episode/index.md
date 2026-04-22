@@ -6,6 +6,7 @@ videoId: 8nkm6_nzl8k
 aliases:
   - /episodes/133/
 topics:
+  - Adultery
   - Marriage
   - David
   - Decalogue
@@ -23,7 +24,6 @@ topics:
   - Univocality
   - YHWH
 tags:
-  - Adultery
   - Judah
   - Baal
   - Deuteronomy

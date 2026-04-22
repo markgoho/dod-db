@@ -11,6 +11,7 @@ topics:
   - King James Bible
   - YHWH
   - Abortion
+  - Adultery
   - Masoretic Text
 tags:
   - Moses
@@ -26,7 +27,6 @@ tags:
   - Hezekiah
   - Isaac
   - Syria
-  - Adultery
   - Africa
   - Ammonites
   - Amorites
