@@ -14,7 +14,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 148
     timestamp: "00:45:46.985"
-  - text: "It is a bit ambiguous. It's not clear, which I think supports the notion that it's not like a specific word or sentence or statement. It's not like, \"I declare blasphemy against the Holy Spirit,\" and then it's like, \"Okay, well, you've done it.\""
+  - text: 'It is a bit ambiguous. It''s not clear, which I think supports the notion that it''s not like a specific word or sentence or statement. It''s not like, "I declare blasphemy against the Holy Spirit," and then it''s like, "Okay, well, you''ve done it."'
     speaker: "Dan McClellan"
     episode: 148
     timestamp: "00:53:22.253"
