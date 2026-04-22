@@ -20,15 +20,15 @@ quotes:
     timestamp: "00:35:33.080"
   - text: "What God is basically saying here in Deutero-Isaiah is, 'Don't you go attributing your salvation and your well-being to other gods. There's no one else but me.'"
     speaker: "Dan McClellan"
-    episode: 34
+    episode: 104
     timestamp: "00:48:52.490"
   - text: "[Isaiah 43 and 45 are] always God lecturing Israel about giving credit to other gods for saving them and warning them against giving credit to other gods for saving them."
     speaker: "Dan McClellan"
-    episode: 34
+    episode: 104
     timestamp: "00:48:52.490"
   - text: "I'm going to talk about some passages from mainly Deutero-Isaiah... and I'm going to talk about what those passages are saying in the view of, I would say maybe not the majority, but an increasing number of scholars."
     speaker: "Dan McClellan"
-    episode: 34
+    episode: 104
     timestamp: "00:01:35.020"
 showAllEpisodes: true
 ---

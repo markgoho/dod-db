@@ -104,7 +104,21 @@ featuredItems:
 - Focus on why the hosts return to it: interpretive disputes, authorship questions, historicity, textual issues, canon debates, or recurring misconceptions.
 - Keep the body aligned with the gathered evidence.
 
-### 3. Save
+### 3. Review
+
+Before saving, review every selected quote against the source episode content.
+
+For each of the 4 quotes:
+
+- confirm the cited `episode` exists and is the episode you actually sourced the quote from
+- confirm the `timestamp` exists in that episode transcript or episode page
+- confirm the quoted wording matches the source at that timestamp
+- if you added bracketed clarification, confirm the unbracketed source text still matches and the clarification is minimal
+- if the quote cannot be verified quickly and directly, replace it rather than guessing
+
+This review is required because quote links are generated from `episode` plus `timestamp`, so a correct quote with the wrong episode number still produces a broken link.
+
+### 4. Save
 
 Create a JSON object in this shape:
 
@@ -152,7 +166,7 @@ If that script does not exist yet, stop and add or request a package.json script
 
 Prefer stdin via a quoted heredoc for this skill. Avoid inline `printf` JSON because quotes and apostrophes inside the payload can break shell parsing. Do not create temporary JSON files unless stdin is genuinely unavailable.
 
-### 4. Verify
+### 5. Verify
 
 Run:
 
@@ -190,6 +204,7 @@ If `existingPage` is populated:
 - Never include both a segment and its parent episode as separate featured items.
 - Always use `segmentAnchor`, not `segmentType`, when linking to a segment.
 - Ensure exactly 4 quotes are provided to the save script.
+- Before saving, verify each quote's episode number and timestamp against the source episode so generated quote links resolve correctly.
 
 ## Final Check
 
