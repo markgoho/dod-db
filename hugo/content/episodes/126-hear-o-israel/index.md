@@ -9,6 +9,7 @@ topics:
   - YHWH
   - Monotheism
   - Josiah
+  - Ark of the Covenant
   - King James Bible
   - Paul
   - Angel
@@ -26,7 +27,6 @@ tags:
   - Moses
   - Judah
   - Philistines
-  - Baruch
   - Judaism
   - Apocrypha
   - Isaac

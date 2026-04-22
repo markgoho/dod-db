@@ -13,6 +13,7 @@ topics:
   - Masoretes
   - Saul
   - Arad
+  - Ark of the Covenant
   - Asherah
   - Hell
   - King James Bible

@@ -7,6 +7,7 @@ aliases:
   - /episodes/95/
 topics:
   - King James Bible
+  - Ark of the Covenant
   - Nephilim
   - Angel
   - Ritual Purity

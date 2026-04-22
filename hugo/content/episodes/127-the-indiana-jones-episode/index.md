@@ -6,6 +6,8 @@ videoId: 45rDcaUMuso
 aliases:
   - /episodes/127/
 topics:
+  - Holy Grail
+  - Ark of the Covenant
   - YHWH
   - David
   - Asherah

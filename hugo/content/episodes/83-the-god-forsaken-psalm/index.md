@@ -10,6 +10,7 @@ topics:
   - Garden Tomb
   - Septuagint
   - King James Bible
+  - Ark of the Covenant
   - Masoretic Text
   - Abortion
   - atonement

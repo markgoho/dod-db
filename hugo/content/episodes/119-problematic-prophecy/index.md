@@ -33,7 +33,6 @@ tags:
   - Antiochus IV Epiphanes
   - Arius
   - Armageddon
-  - Baruch
   - Carthage
   - Catholicism
   - Deuteronomy

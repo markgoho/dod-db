@@ -11,6 +11,7 @@ topics:
   - Goliath
   - Septuagint
   - Jacob
+  - Ark of the Covenant
   - Christian Nationalism
   - Hell
   - Marriage

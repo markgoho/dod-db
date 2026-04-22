@@ -75,6 +75,10 @@
         "mentions": 2
       },
       {
+        "tag": "Ark of the Covenant",
+        "mentions": 1
+      },
+      {
         "tag": "Beelzebul",
         "mentions": 1
       },
@@ -2422,6 +2426,10 @@
         "mentions": 11
       },
       {
+        "tag": "Ark of the Covenant",
+        "mentions": 8
+      },
+      {
         "tag": "Moses",
         "mentions": 5
       },
@@ -2655,10 +2663,6 @@
       },
       {
         "tag": "Abraham",
-        "mentions": 1
-      },
-      {
-        "tag": "Baruch",
         "mentions": 1
       },
       {
@@ -3463,10 +3467,6 @@
         "mentions": 1
       },
       {
-        "tag": "Baruch",
-        "mentions": 1
-      },
-      {
         "tag": "Beatitudes",
         "mentions": 1
       },
@@ -3685,10 +3685,6 @@
       {
         "tag": "Protestantism",
         "mentions": 4
-      },
-      {
-        "tag": "Baruch",
-        "mentions": 3
       },
       {
         "tag": "Catholicism",
@@ -11970,6 +11966,10 @@
         "mentions": 2
       },
       {
+        "tag": "Ark of the Covenant",
+        "mentions": 1
+      },
+      {
         "tag": "Babylon",
         "mentions": 1
       },
@@ -14448,6 +14448,10 @@
         "mentions": 5
       },
       {
+        "tag": "Ark of the Covenant",
+        "mentions": 4
+      },
+      {
         "tag": "Protestantism",
         "mentions": 3
       },
@@ -15379,6 +15383,10 @@
       },
       {
         "tag": "Arad",
+        "mentions": 2
+      },
+      {
+        "tag": "Ark of the Covenant",
         "mentions": 2
       },
       {
@@ -16642,6 +16650,10 @@
       {
         "tag": "King James Bible",
         "mentions": 4
+      },
+      {
+        "tag": "Ark of the Covenant",
+        "mentions": 3
       },
       {
         "tag": "Canaan",
@@ -20678,10 +20690,6 @@
         "mentions": 1
       },
       {
-        "tag": "Baruch",
-        "mentions": 1
-      },
-      {
         "tag": "Bel and the Dragon",
         "mentions": 1
       },
@@ -20907,6 +20915,10 @@
       },
       {
         "tag": "Ahab",
+        "mentions": 1
+      },
+      {
+        "tag": "Ark of the Covenant",
         "mentions": 1
       },
       {
@@ -22053,10 +22065,6 @@
         "mentions": 6
       },
       {
-        "tag": "Baruch",
-        "mentions": 5
-      },
-      {
         "tag": "Josiah",
         "mentions": 5
       },
@@ -22066,6 +22074,10 @@
       },
       {
         "tag": "Apocrypha",
+        "mentions": 3
+      },
+      {
+        "tag": "Ark of the Covenant",
         "mentions": 3
       },
       {
@@ -22228,6 +22240,14 @@
       {
         "tag": "Philistines",
         "mentions": 17
+      },
+      {
+        "tag": "Holy Grail",
+        "mentions": 15
+      },
+      {
+        "tag": "Ark of the Covenant",
+        "mentions": 13
       },
       {
         "tag": "YHWH",
@@ -22691,10 +22711,6 @@
       {
         "tag": "Jeremiah",
         "mentions": 36
-      },
-      {
-        "tag": "Baruch",
-        "mentions": 29
       },
       {
         "tag": "Septuagint",
@@ -27064,6 +27080,10 @@
       },
       {
         "tag": "Arad",
+        "mentions": 1
+      },
+      {
+        "tag": "Ark of the Covenant",
         "mentions": 1
       },
       {

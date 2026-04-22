@@ -12,6 +12,7 @@ topics:
   - divine council
   - Asherah
   - Paul
+  - Ark of the Covenant
   - Dead Sea Scrolls
   - Joseph
   - King James Bible

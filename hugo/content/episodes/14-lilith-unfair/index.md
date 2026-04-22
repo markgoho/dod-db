@@ -10,6 +10,7 @@ topics:
   - Lilith
   - Asherah
   - YHWH
+  - Ark of the Covenant
   - Decalogue
   - King James Bible
   - Demon

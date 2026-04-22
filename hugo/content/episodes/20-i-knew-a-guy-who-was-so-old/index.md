@@ -35,7 +35,6 @@ tags:
   - Jared
   - Maccabees
   - Protestantism
-  - Baruch
   - Catholicism
   - Ishmael
   - Second Maccabees

@@ -377,6 +377,58 @@
       "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
     }
   ],
+  "Ark of the Covenant": [
+    {
+      "ep": 127,
+      "m": 13,
+      "title": "The Indiana Jones Episode!"
+    },
+    {
+      "ep": 14,
+      "m": 8,
+      "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
+    },
+    {
+      "ep": 83,
+      "m": 4,
+      "title": "Episode 83 (November 4, 2024), \"The God-Forsaken Psalm\""
+    },
+    {
+      "ep": 126,
+      "m": 3,
+      "title": "Hear, O Israel!"
+    },
+    {
+      "ep": 95,
+      "m": 3,
+      "title": "Episode 95 (January 27, 2025), \"Uh-Oh, Jericho\""
+    },
+    {
+      "ep": 88,
+      "m": 2,
+      "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\""
+    },
+    {
+      "ep": 154,
+      "m": 1,
+      "title": "The Bible Gets Sexy!"
+    },
+    {
+      "ep": 120,
+      "m": 1,
+      "title": "Save Me!"
+    },
+    {
+      "ep": 67,
+      "m": 1,
+      "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi"
+    },
+    {
+      "ep": 1,
+      "m": 1,
+      "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
+    }
+  ],
   "Asherah": [
     {
       "ep": 88,
@@ -2955,6 +3007,13 @@
       "ep": 8,
       "m": 1,
       "title": "Episode 8 (May 29, 2023), \"Contextual Healing\" with Aaron Higashi"
+    }
+  ],
+  "Holy Grail": [
+    {
+      "ep": 127,
+      "m": 15,
+      "title": "The Indiana Jones Episode!"
     }
   ],
   "Holy Spirit": [

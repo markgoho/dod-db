@@ -11,6 +11,7 @@ topics:
   - YHWH
   - Sennacherib
   - Arad
+  - Ark of the Covenant
   - Christian Nationalism
   - David
   - divine council

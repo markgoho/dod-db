@@ -4585,17 +4585,6 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 129,
   },
   {
-    canonical: "Baruch",
-    variations: ["Book of Baruch"],
-    category: "literature",
-    llmVerify: true,
-    description:
-      "Deutero-canonical book in the Septuagint and Vulgate, attributed to Jeremiah's scribe, Baruch ben Neriah",
-    status: "accepted",
-    addedInEpisode: 130,
-    episodes: [15, 19, 20, 119, 126, 130],
-  },
-  {
     canonical: "Hebrew",
     variations: ["Hebrew Bible"],
     category: "miscellaneous",
@@ -7829,12 +7818,13 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "ark of the covenant",
-    variations: ["the Ark of the Covenant"],
+    canonical: "Ark of the Covenant",
+    variations: [],
     category: "miscellaneous",
     description:
       "The sacred chest containing the tablets of the Ten Commandments, a symbol of God's presence. This is not a person, place, or literature.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [1, 14, 67, 83, 88, 95, 120, 126, 127, 154],
   },
   {
     canonical: "Freethought Caucus",
@@ -8363,9 +8353,11 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Holy Grail",
     variations: ["the Grail", "Grail"],
     category: "miscellaneous",
+    llmVerify: true,
     description:
       "A legendary artifact, often depicted as a cup or dish, with significance in Christian and Arthurian traditions",
-    status: "proposed",
+    status: "accepted",
+    episodes: [127],
   },
   {
     canonical: "CEB",

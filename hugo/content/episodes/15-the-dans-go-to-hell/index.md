@@ -34,7 +34,6 @@ tags:
   - Jeremiah
   - Judaism
   - Abraham
-  - Baruch
   - Enoch
   - Flood
   - Pseudepigrapha

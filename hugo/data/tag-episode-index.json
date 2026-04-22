@@ -1487,6 +1487,58 @@
       "title": "Episode 106 (April 14, 2025), \"Usurer Error\""
     }
   ],
+  "Ark of the Covenant": [
+    {
+      "ep": 127,
+      "m": 13,
+      "title": "The Indiana Jones Episode!"
+    },
+    {
+      "ep": 14,
+      "m": 8,
+      "title": "Episode 14 (July 10, 2023), \"Lilith Unfair\""
+    },
+    {
+      "ep": 83,
+      "m": 4,
+      "title": "Episode 83 (November 4, 2024), \"The God-Forsaken Psalm\""
+    },
+    {
+      "ep": 126,
+      "m": 3,
+      "title": "Hear, O Israel!"
+    },
+    {
+      "ep": 95,
+      "m": 3,
+      "title": "Episode 95 (January 27, 2025), \"Uh-Oh, Jericho\""
+    },
+    {
+      "ep": 88,
+      "m": 2,
+      "title": "Episode 88 (December 9, 2024), \"Josiah the Cult Killer\""
+    },
+    {
+      "ep": 154,
+      "m": 1,
+      "title": "The Bible Gets Sexy!"
+    },
+    {
+      "ep": 120,
+      "m": 1,
+      "title": "Save Me!"
+    },
+    {
+      "ep": 67,
+      "m": 1,
+      "title": "Episode 67 (July 15, 2024), \"Prophets, Kings, and Terrible Men\" with Aaron Higashi"
+    },
+    {
+      "ep": 1,
+      "m": 1,
+      "title": "Episode 1 (April 8, 2023), \"In the Beginning\""
+    }
+  ],
   "Armageddon": [
     {
       "ep": 4,
@@ -2539,38 +2591,6 @@
       "ep": 20,
       "m": 1,
       "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
-    }
-  ],
-  "Baruch": [
-    {
-      "ep": 130,
-      "m": 29,
-      "title": "Blessed Baruch!"
-    },
-    {
-      "ep": 126,
-      "m": 5,
-      "title": "Hear, O Israel!"
-    },
-    {
-      "ep": 20,
-      "m": 3,
-      "title": "Episode 20 (August 21, 2023), \"I Knew a Guy Who Was SO OLD...\""
-    },
-    {
-      "ep": 119,
-      "m": 1,
-      "title": "Problematic Prophecy"
-    },
-    {
-      "ep": 19,
-      "m": 1,
-      "title": "Episode 19 (August 14, 2023), \"I'll make you a STAR!\" with David A. Burnett"
-    },
-    {
-      "ep": 15,
-      "m": 1,
-      "title": "Episode 15 (July 17, 2023), \"The Dans Go to Hell\""
     }
   ],
   "Bathsheba": [
@@ -8551,6 +8571,13 @@
       "ep": 101,
       "m": 1,
       "title": "Episode 101 (March 10, 2025), \"The Slave Bible\""
+    }
+  ],
+  "Holy Grail": [
+    {
+      "ep": 127,
+      "m": 15,
+      "title": "The Indiana Jones Episode!"
     }
   ],
   "Holy Spirit": [

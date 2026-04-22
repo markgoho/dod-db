@@ -16,7 +16,6 @@ topics:
   - Satan
 tags:
   - Jeremiah
-  - Baruch
   - Judaism
   - Babylon
   - Cyrus the Great

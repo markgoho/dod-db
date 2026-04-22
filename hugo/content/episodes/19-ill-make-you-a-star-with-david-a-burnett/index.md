@@ -30,7 +30,6 @@ tags:
   - Isaiah
   - Apocrypha
   - Augustine
-  - Baruch
   - Beatitudes
   - Catholicism
   - Gentiles
