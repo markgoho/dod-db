@@ -7,6 +7,7 @@ aliases:
   - /episodes/146/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/148539134.mp3?sig=4IcEQq8GZBhpLkJTqyTSaz_HmeeFAWxYkJZN5exlDfs%3D
 topics:
+  - Esarhaddon
   - Pharisees
   - Paul
   - Sennacherib
@@ -23,7 +24,6 @@ topics:
   - Salvation
 tags:
   - Deuteronomy
-  - Esarhaddon
   - Assyria
   - Gentiles
   - Ashurbanipal

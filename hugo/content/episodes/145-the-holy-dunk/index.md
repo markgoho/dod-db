@@ -14,6 +14,7 @@ topics:
   - Paul
   - Abortion
   - Deutero-Isaiah
+  - Esarhaddon
   - Josiah
   - Ritual Purity
   - Satan
@@ -32,7 +33,6 @@ tags:
   - Bethlehem
   - Canaanites
   - Dead Sea
-  - Esarhaddon
   - Garden of Gethsemane
   - Herod Antipas
   - Judas Iscariot

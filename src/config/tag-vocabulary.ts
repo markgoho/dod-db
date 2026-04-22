@@ -4989,7 +4989,6 @@ export const tagVocabulary: TagDefinition[] = [
     canonical: "Esarhaddon",
     variations: [],
     category: "person",
-    llmVerify: true,
     description:
       "King of Assyria in the early 7th century BCE, successor to Sennacherib, known for the Vassal Treaty of Esarhaddon",
     status: "accepted",

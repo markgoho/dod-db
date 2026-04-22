@@ -16,6 +16,7 @@ topics:
   - Arad
   - Asherah
   - Deutero-Isaiah
+  - Esarhaddon
   - Hell
   - Sennacherib
   - Septuagint
@@ -33,7 +34,6 @@ tags:
   - Isaiah
   - Ashurbanipal
   - Baal
-  - Esarhaddon
   - Joshua
   - Moab
   - Nebuchadnezzar

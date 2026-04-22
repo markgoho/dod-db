@@ -12,6 +12,7 @@ topics:
   - Paul
   - Pharisees
   - Christian Nationalism
+  - Esarhaddon
   - Hell
   - Ruth
   - Univocality
@@ -22,7 +23,6 @@ tags:
   - Abraham
   - Boaz
   - Catholicism
-  - Esarhaddon
   - Hagar
   - Judah
   - Judaism
