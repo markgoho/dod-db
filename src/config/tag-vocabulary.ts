@@ -9083,6 +9083,16 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 159,
     episodes: [7, 11, 20, 99, 154, 159],
   },
+  {
+    canonical: "Immaculate Conception",
+    variations: ["immaculate", "conception"],
+    category: "theology",
+    llmVerify: true,
+    description:
+      "the doctrine that the Virgin Mary was free of original sin from the moment of her conception",
+    status: "accepted",
+    episodes: [140, 141],
+  },
 ];
 
 export function getAllSearchableTerms(
