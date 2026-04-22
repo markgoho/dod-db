@@ -6,6 +6,7 @@ videoId: FL5YxTKUioI
 aliases:
   - /episodes/134/
 topics:
+  - Crucifixion
   - King James Bible
   - Septuagint
   - Abortion
@@ -14,7 +15,6 @@ topics:
   - Masoretic Text
   - Paul
 tags:
-  - Crucifixion
   - Judaism
   - Catholicism
   - Romans

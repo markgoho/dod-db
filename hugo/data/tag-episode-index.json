@@ -4201,24 +4201,39 @@
   ],
   "Crucifixion": [
     {
-      "ep": 140,
-      "m": 11,
-      "title": "Immaculate Apologetics?"
-    },
-    {
       "ep": 83,
-      "m": 11,
+      "m": 14,
       "title": "Episode 83 (November 4, 2024), \"The God-Forsaken Psalm\""
     },
     {
+      "ep": 140,
+      "m": 13,
+      "title": "Immaculate Apologetics?"
+    },
+    {
       "ep": 134,
-      "m": 4,
+      "m": 12,
       "title": "Don't Get Cross With Me"
     },
     {
       "ep": 90,
-      "m": 4,
+      "m": 7,
       "title": "Episode 90 (December 23, 2024), \"With Counter-Apologies\""
+    },
+    {
+      "ep": 50,
+      "m": 7,
+      "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
+    },
+    {
+      "ep": 86,
+      "m": 6,
+      "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
+    },
+    {
+      "ep": 49,
+      "m": 3,
+      "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss"
     },
     {
       "ep": 5,
@@ -4226,9 +4241,34 @@
       "title": "Episode 5 (May 8, 2023), \"Betrayed by Dan Brown\""
     },
     {
-      "ep": 86,
+      "ep": 98,
       "m": 2,
-      "title": "Episode 86 (November 25, 2024), \"Debunking Jesus?\""
+      "title": "Episode 98 (February 17, 2025), \"Did Jesus Go to Hell?\""
+    },
+    {
+      "ep": 156,
+      "m": 1,
+      "title": "Killing in the Name Of"
+    },
+    {
+      "ep": 144,
+      "m": 1,
+      "title": "Bring Me the Head of John the Baptist!"
+    },
+    {
+      "ep": 136,
+      "m": 1,
+      "title": "Close Encounters of the Catholic Kind"
+    },
+    {
+      "ep": 132,
+      "m": 1,
+      "title": "Peter Thiel is Bankrupt! (Theologically)"
+    },
+    {
+      "ep": 101,
+      "m": 1,
+      "title": "Episode 101 (March 10, 2025), \"The Slave Bible\""
     },
     {
       "ep": 87,
@@ -4236,14 +4276,19 @@
       "title": "Episode 87 (December 2, 2024), \"The Dans Ruin Christmas\""
     },
     {
-      "ep": 50,
+      "ep": 55,
       "m": 1,
-      "title": "Episode 50 (March 18, 2024), \"Easter and the Undead\""
+      "title": "Episode 55 (April 22, 2024), \"Can Jesus Forgive Sin?\""
     },
     {
-      "ep": 49,
+      "ep": 38,
       "m": 1,
-      "title": "Episode 49 (March 11, 2024), \"Christian Slavery\" with Candida Moss"
+      "title": "Episode 38 (December 25, 2023), \"The [Three] [Wise Men]\" With Eric Vanden Eykel"
+    },
+    {
+      "ep": 33,
+      "m": 1,
+      "title": "Episode 33 (November 20, 2023), \"The Bible and Disability\" with Isaac Soon"
     }
   ],
   "Curse of Cain": [

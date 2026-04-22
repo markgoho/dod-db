@@ -8,6 +8,7 @@ aliases:
 topics:
   - Mary Magdalene
   - Triumphal Entry
+  - Crucifixion
   - Demon
   - Easter
   - Hell
@@ -36,7 +37,6 @@ tags:
   - baptism
   - Clement of Alexandria
   - Clement of Rome
-  - Crucifixion
   - Elijah
   - Herod Antipas
   - Maccabees

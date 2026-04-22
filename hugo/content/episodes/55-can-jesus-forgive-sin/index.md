@@ -13,6 +13,7 @@ topics:
   - King James Bible
   - Omni Attributes
   - Book of Enoch
+  - Crucifixion
   - Dead Sea Scrolls
   - Demon
   - Mary Magdalene

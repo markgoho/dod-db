@@ -13,6 +13,7 @@ topics:
   - King James Bible
   - Daniel
   - Masoretic Text
+  - Crucifixion
   - Decalogue
   - Satan
   - Second Coming

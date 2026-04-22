@@ -8,6 +8,7 @@ aliases:
 topics:
   - David
   - Garden Tomb
+  - Crucifixion
   - Septuagint
   - King James Bible
   - Ark of the Covenant
@@ -19,7 +20,6 @@ topics:
   - Hell
   - Homosexuality
 tags:
-  - Crucifixion
   - Jerusalem
   - Elijah
   - Protestantism

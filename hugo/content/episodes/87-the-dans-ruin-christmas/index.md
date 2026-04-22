@@ -20,6 +20,7 @@ topics:
   - YHWH
   - Abortion
   - Adultery
+  - Crucifixion
   - Flavius Josephus
   - Hell
   - Holy Spirit
@@ -42,7 +43,6 @@ tags:
   - Antiochus IV Epiphanes
   - baptism
   - Catholicism
-  - Crucifixion
   - Maccabees
   - Romans
   - Seleucid Empire

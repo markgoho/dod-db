@@ -7,6 +7,7 @@ aliases:
   - /episodes/49/
 topics:
   - Paul
+  - Crucifixion
   - Mary Magdalene
   - Salvation
 tags:
@@ -19,7 +20,6 @@ tags:
   - Pliny the Younger
   - Africa
   - Clement of Rome
-  - Crucifixion
   - First Clement
   - Martin Luther
   - Protestantism

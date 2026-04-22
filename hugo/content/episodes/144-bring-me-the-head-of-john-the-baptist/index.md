@@ -11,6 +11,7 @@ topics:
   - Flavius Josephus
   - Univocality
   - Septuagint
+  - Crucifixion
   - Hell
   - Holy Spirit
   - Marriage

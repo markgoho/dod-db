@@ -10,6 +10,7 @@ topics:
   - Star of Bethlehem
   - Christmas
   - Mary Magdalene
+  - Crucifixion
   - Septuagint
 tags:
   - Bethlehem

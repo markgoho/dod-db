@@ -7,6 +7,7 @@ aliases:
   - /episodes/90/
 topics:
   - YHWH
+  - Crucifixion
   - Flat Earth
   - Deutero-Isaiah
   - Satan
@@ -22,7 +23,6 @@ tags:
   - Seth
   - Eve
   - Garden of Eden
-  - Crucifixion
   - Passover
   - Enoch
   - Flood

@@ -8,6 +8,7 @@ aliases:
 topics:
   - Mary Magdalene
   - Flavius Josephus
+  - Crucifixion
   - Shroud of Turin
   - Adultery
   - Univocality
@@ -20,7 +21,6 @@ topics:
   - Paul
   - Septuagint
 tags:
-  - Crucifixion
   - Catholicism
   - Jeremiah
   - Pontius Pilate

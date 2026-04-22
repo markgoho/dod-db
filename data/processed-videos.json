@@ -5975,6 +5975,10 @@
         "mentions": 1
       },
       {
+        "tag": "Crucifixion",
+        "mentions": 1
+      },
+      {
         "tag": "Holy Spirit",
         "mentions": 1
       },
@@ -6890,6 +6894,10 @@
       {
         "tag": "Moses",
         "mentions": 2
+      },
+      {
+        "tag": "Crucifixion",
+        "mentions": 1
       },
       {
         "tag": "Judah",
@@ -8794,6 +8802,10 @@
         "mentions": 4
       },
       {
+        "tag": "Crucifixion",
+        "mentions": 3
+      },
+      {
         "tag": "Nazareth",
         "mentions": 3
       },
@@ -8807,10 +8819,6 @@
       },
       {
         "tag": "Clement of Rome",
-        "mentions": 1
-      },
-      {
-        "tag": "Crucifixion",
         "mentions": 1
       },
       {
@@ -8912,6 +8920,10 @@
         "mentions": 8
       },
       {
+        "tag": "Crucifixion",
+        "mentions": 7
+      },
+      {
         "tag": "Sanhedrin",
         "mentions": 5
       },
@@ -8981,10 +8993,6 @@
       },
       {
         "tag": "Clement of Rome",
-        "mentions": 1
-      },
-      {
-        "tag": "Crucifixion",
         "mentions": 1
       },
       {
@@ -9803,6 +9811,10 @@
       },
       {
         "tag": "Book of Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Crucifixion",
         "mentions": 1
       },
       {
@@ -14476,12 +14488,12 @@
         "mentions": 15
       },
       {
-        "tag": "Septuagint",
-        "mentions": 13
+        "tag": "Crucifixion",
+        "mentions": 14
       },
       {
-        "tag": "Crucifixion",
-        "mentions": 11
+        "tag": "Septuagint",
+        "mentions": 13
       },
       {
         "tag": "Jerusalem",
@@ -14986,6 +14998,10 @@
         "mentions": 27
       },
       {
+        "tag": "Crucifixion",
+        "mentions": 6
+      },
+      {
         "tag": "Romans",
         "mentions": 6
       },
@@ -15019,10 +15035,6 @@
       },
       {
         "tag": "baptism",
-        "mentions": 2
-      },
-      {
-        "tag": "Crucifixion",
         "mentions": 2
       },
       {
@@ -15704,12 +15716,12 @@
         "mentions": 8
       },
       {
-        "tag": "Garden of Eden",
-        "mentions": 6
+        "tag": "Crucifixion",
+        "mentions": 7
       },
       {
-        "tag": "Crucifixion",
-        "mentions": 4
+        "tag": "Garden of Eden",
+        "mentions": 6
       },
       {
         "tag": "Flat Earth",
@@ -17171,6 +17183,10 @@
         "mentions": 2
       },
       {
+        "tag": "Crucifixion",
+        "mentions": 2
+      },
+      {
         "tag": "Enoch",
         "mentions": 2
       },
@@ -17776,6 +17792,10 @@
       },
       {
         "tag": "Beatitudes",
+        "mentions": 1
+      },
+      {
+        "tag": "Crucifixion",
         "mentions": 1
       },
       {
@@ -23194,6 +23214,10 @@
         "mentions": 2
       },
       {
+        "tag": "Crucifixion",
+        "mentions": 1
+      },
+      {
         "tag": "Decalogue",
         "mentions": 1
       },
@@ -23555,12 +23579,12 @@
     "transcriptPath": "data/transcripts/2025-10-27-dont-get-cross-with-me.txt",
     "tags": [
       {
-        "tag": "King James Bible",
-        "mentions": 6
+        "tag": "Crucifixion",
+        "mentions": 12
       },
       {
-        "tag": "Crucifixion",
-        "mentions": 4
+        "tag": "King James Bible",
+        "mentions": 6
       },
       {
         "tag": "Judaism",
@@ -23961,6 +23985,10 @@
       },
       {
         "tag": "Book of Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Crucifixion",
         "mentions": 1
       },
       {
@@ -24730,7 +24758,7 @@
       },
       {
         "tag": "Crucifixion",
-        "mentions": 11
+        "mentions": 13
       },
       {
         "tag": "Catholicism",
@@ -25435,6 +25463,10 @@
       },
       {
         "tag": "Bethlehem",
+        "mentions": 1
+      },
+      {
+        "tag": "Crucifixion",
         "mentions": 1
       },
       {
@@ -27665,6 +27697,10 @@
       },
       {
         "tag": "Creatio ex nihilo",
+        "mentions": 1
+      },
+      {
+        "tag": "Crucifixion",
         "mentions": 1
       },
       {

@@ -7,6 +7,7 @@ aliases:
   - /episodes/86/
 topics:
   - Flavius Josephus
+  - Crucifixion
   - Star of Bethlehem
   - Magi
   - David
@@ -25,7 +26,6 @@ tags:
   - Pontius Pilate
   - Annunciation
   - baptism
-  - Crucifixion
   - forgery
   - Jerusalem
   - Matthew

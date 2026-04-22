@@ -9,6 +9,7 @@ topics:
   - Easter
   - Council of Nicaea
   - Trinity
+  - Crucifixion
   - Mary Magdalene
   - Angel
   - Creatio ex nihilo
@@ -17,7 +18,6 @@ tags:
   - Arius
   - Passover
   - Constantine
-  - Crucifixion
   - Judaism
   - Apocrypha
   - Baal

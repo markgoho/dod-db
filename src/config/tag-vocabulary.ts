@@ -4723,14 +4723,17 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Crucifixion",
-    variations: [],
+    variations: ["crucify", "crucified"],
     category: "event",
     llmVerify: true,
     description:
       "A method of execution used by the Romans, specifically referring to the execution of Jesus on the cross",
     status: "accepted",
     addedInEpisode: 134,
-    episodes: [5, 49, 50, 83, 86, 87, 90, 134, 140],
+    episodes: [
+      5, 33, 38, 49, 50, 55, 83, 86, 87, 90, 98, 101, 132, 134, 136, 140, 144,
+      156,
+    ],
   },
   {
     canonical: "Greco-Roman",
