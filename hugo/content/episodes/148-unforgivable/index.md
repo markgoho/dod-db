@@ -10,6 +10,7 @@ topics:
   - Paul
   - Holy Spirit
   - Satan
+  - Blasphemy
   - Baptism
   - Pharisees
   - Demon
@@ -46,7 +47,7 @@ segmentData:
   - type: apocryphilia
     anchor: apocryphilia-1
     label: Apocryphilia
-    topicLabel: Acts of Paul
+    topicLabel: Acts of Paul and Thecla
     summary: Discussion of the non-canonical Acts of Paul and Thecla
     startSeconds: 125.608
   - type: what-is-that

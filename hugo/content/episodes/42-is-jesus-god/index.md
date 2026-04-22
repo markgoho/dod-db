@@ -8,6 +8,7 @@ aliases:
 topics:
   - Trinity
   - Angel
+  - Blasphemy
   - Holy Spirit
   - YHWH
   - Council of Nicaea

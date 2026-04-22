@@ -12,6 +12,7 @@ topics:
   - David
   - King James Bible
   - Omni Attributes
+  - Blasphemy
   - Book of Enoch
   - Crucifixion
   - Dead Sea Scrolls

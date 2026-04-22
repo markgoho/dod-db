@@ -3475,6 +3475,10 @@
         "mentions": 2
       },
       {
+        "tag": "Blasphemy",
+        "mentions": 2
+      },
+      {
         "tag": "Isaiah",
         "mentions": 2
       },
@@ -7611,6 +7615,10 @@
         "mentions": 8
       },
       {
+        "tag": "Blasphemy",
+        "mentions": 7
+      },
+      {
         "tag": "Holy Spirit",
         "mentions": 6
       },
@@ -9838,6 +9846,10 @@
         "mentions": 1
       },
       {
+        "tag": "Blasphemy",
+        "mentions": 1
+      },
+      {
         "tag": "Book of Enoch",
         "mentions": 1
       },
@@ -11251,6 +11263,10 @@
       },
       {
         "tag": "Apocrypha",
+        "mentions": 1
+      },
+      {
+        "tag": "Blasphemy",
         "mentions": 1
       },
       {
@@ -23671,6 +23687,10 @@
         "mentions": 2
       },
       {
+        "tag": "Blasphemy",
+        "mentions": 1
+      },
+      {
         "tag": "Constantine",
         "mentions": 1
       },
@@ -26299,6 +26319,10 @@
         "mentions": 12
       },
       {
+        "tag": "Blasphemy",
+        "mentions": 8
+      },
+      {
         "tag": "Baptism",
         "mentions": 5
       },
@@ -26397,7 +26421,7 @@
         "endTimestamp": "[00:40:44.000]",
         "confidence": "verified",
         "detectionMethod": "audio",
-        "topicLabel": "Acts of Paul",
+        "topicLabel": "Acts of Paul and Thecla",
         "summary": "Discussion of the non-canonical Acts of Paul and Thecla"
       },
       {

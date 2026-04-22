@@ -9095,6 +9095,16 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     episodes: [140, 141],
   },
+  {
+    canonical: "Blasphemy",
+    variations: ["blaspheme"],
+    category: "theology",
+    llmVerify: true,
+    description:
+      "an insult that shows contempt, disrespect or lack of reverence concerning a deity, an object considered sacred, or something that is considered inviolable",
+    status: "accepted",
+    episodes: [19, 42, 55, 62, 134, 148],
+  },
 ];
 
 export function getAllSearchableTerms(

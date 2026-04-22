@@ -11,6 +11,7 @@ topics:
   - Septuagint
   - Abortion
   - Daniel
+  - Blasphemy
   - Marriage
   - Masoretic Text
   - Paul

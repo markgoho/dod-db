@@ -16,6 +16,7 @@ topics:
   - Septuagint
   - Salvation
   - YHWH
+  - Blasphemy
   - Circumcision
   - Jubilees
   - King James Bible

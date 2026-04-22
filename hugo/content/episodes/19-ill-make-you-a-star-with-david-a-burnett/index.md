@@ -12,6 +12,7 @@ topics:
   - YHWH
   - Pharisees
   - Angel
+  - Blasphemy
   - Septuagint
   - Book of Enoch
   - Daniel
