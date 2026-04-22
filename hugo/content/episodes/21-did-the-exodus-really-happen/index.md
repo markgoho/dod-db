@@ -13,6 +13,7 @@ topics:
   - Abortion
   - Adultery
   - Masoretic Text
+  - Polygamy
 tags:
   - Moses
   - child sacrifice

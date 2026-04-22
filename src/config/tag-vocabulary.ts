@@ -8475,10 +8475,11 @@ export const tagVocabulary: TagDefinition[] = [
   {
     canonical: "Polygamy",
     variations: ["polygyny", "polygamous"],
-    category: "theology",
+    category: "miscellaneous",
     description:
       "The practice of having more than one spouse at the same time, specifically polygyny (one man, multiple wives) in the biblical context discussed.",
-    status: "proposed",
+    status: "accepted",
+    episodes: [10, 21, 29, 44, 108, 114, 121, 139, 142, 144],
   },
   {
     canonical: "Nathan",

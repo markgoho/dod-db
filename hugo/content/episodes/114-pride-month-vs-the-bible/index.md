@@ -12,6 +12,7 @@ topics:
   - Hell
   - YHWH
   - King James Bible
+  - Polygamy
   - Satan
 tags:
   - Sodom

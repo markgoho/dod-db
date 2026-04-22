@@ -8,6 +8,7 @@ aliases:
 topics:
   - Marriage
   - Adultery
+  - Polygamy
   - Paul
   - Pharisees
   - Christian Nationalism

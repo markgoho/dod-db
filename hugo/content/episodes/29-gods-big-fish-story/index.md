@@ -14,6 +14,7 @@ topics:
   - Univocality
   - Omni Attributes
   - Jubilees
+  - Polygamy
 tags:
   - Jonah
   - Nineveh

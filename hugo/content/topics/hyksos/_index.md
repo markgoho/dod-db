@@ -1,6 +1,6 @@
 ---
 title: "Hyksos"
-definition: "The Hyksos were rulers of part of northern Egypt during the Second Intermediate Period, roughly the seventeenth to sixteenth centuries BCE. The name comes through Greek from an Egyptian phrase meaning something like \"foreign rulers,\" and it refers to West Asian or Levantine peoples who came to govern the Nile Delta rather than to a vanished biblical nation. Earlier accounts often cast them as violent invaders, but current archaeological understanding points instead to a longer, more gradual process of migration, settlement, and political ascent."
+definition: 'The Hyksos were rulers of part of northern Egypt during the Second Intermediate Period, roughly the seventeenth to sixteenth centuries BCE. The name comes through Greek from an Egyptian phrase meaning something like "foreign rulers," and it refers to West Asian or Levantine peoples who came to govern the Nile Delta rather than to a vanished biblical nation. Earlier accounts often cast them as violent invaders, but current archaeological understanding points instead to a longer, more gradual process of migration, settlement, and political ascent.'
 featuredItems:
   - type: segment
     episodeNumber: 138

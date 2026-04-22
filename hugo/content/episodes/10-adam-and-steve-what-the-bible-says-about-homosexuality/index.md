@@ -10,6 +10,7 @@ topics:
   - Homosexuality
   - Lilith
   - Marriage
+  - Polygamy
   - Book of Enoch
   - David
   - Flavius Josephus

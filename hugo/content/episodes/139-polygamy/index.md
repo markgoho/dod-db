@@ -6,6 +6,7 @@ videoId: _9yyHZkqA5c
 aliases:
   - /episodes/139/
 topics:
+  - Polygamy
   - David
   - Marriage
   - Paul

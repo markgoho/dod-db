@@ -10,6 +10,7 @@ topics:
   - Paul
   - Adultery
   - Pharisees
+  - Polygamy
   - Univocality
   - Daniel
   - Decalogue

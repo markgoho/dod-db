@@ -12,6 +12,7 @@ topics:
   - Jacob
   - Saul
   - Jephthah
+  - Polygamy
 tags:
   - Abraham
   - Abimelech

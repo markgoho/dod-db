@@ -10,6 +10,7 @@ topics:
   - Satan
   - atonement
   - Book of Enoch
+  - Polygamy
   - Angel
   - Jubilees
   - King James Bible

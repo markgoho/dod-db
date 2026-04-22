@@ -17,6 +17,7 @@ topics:
   - Marriage
   - Mary Magdalene
   - Paul
+  - Polygamy
 tags:
   - Herod Antipas
   - Herodias

@@ -1710,6 +1710,10 @@
         "mentions": 3
       },
       {
+        "tag": "Polygamy",
+        "mentions": 3
+      },
+      {
         "tag": "Romans",
         "mentions": 3
       },
@@ -4055,6 +4059,10 @@
         "mentions": 1
       },
       {
+        "tag": "Polygamy",
+        "mentions": 1
+      },
+      {
         "tag": "Red Sea",
         "mentions": 1
       },
@@ -5385,6 +5393,10 @@
       },
       {
         "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Polygamy",
         "mentions": 1
       },
       {
@@ -7984,6 +7996,10 @@
       },
       {
         "tag": "Pharisees",
+        "mentions": 2
+      },
+      {
+        "tag": "Polygamy",
         "mentions": 2
       },
       {
@@ -18828,6 +18844,10 @@
         "mentions": 10
       },
       {
+        "tag": "Polygamy",
+        "mentions": 9
+      },
+      {
         "tag": "Moses",
         "mentions": 4
       },
@@ -19827,6 +19847,10 @@
       },
       {
         "tag": "Moabites",
+        "mentions": 1
+      },
+      {
+        "tag": "Polygamy",
         "mentions": 1
       },
       {
@@ -21254,6 +21278,10 @@
       },
       {
         "tag": "Nineveh",
+        "mentions": 1
+      },
+      {
+        "tag": "Polygamy",
         "mentions": 1
       }
     ],
@@ -24566,6 +24594,10 @@
     "transcriptPath": "data/transcripts/2025-12-01-polygamy.txt",
     "tags": [
       {
+        "tag": "Polygamy",
+        "mentions": 53
+      },
+      {
         "tag": "Solomon",
         "mentions": 23
       },
@@ -25198,6 +25230,10 @@
         "mentions": 2
       },
       {
+        "tag": "Polygamy",
+        "mentions": 2
+      },
+      {
         "tag": "Abraham",
         "mentions": 1
       },
@@ -25536,6 +25572,10 @@
       },
       {
         "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Polygamy",
         "mentions": 1
       },
       {
