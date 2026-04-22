@@ -9,9 +9,11 @@ import { titleToSlug } from "../utils/title-to-slug.js";
 import { formatSegmentsForFrontmatter } from "./format-segments-for-frontmatter.js";
 import { getGuestSpeakers } from "./get-guest-speakers.js";
 
-const canonicalNameBySlug = new Map(
-  tagVocabulary.map(entry => [titleToSlug(entry.canonical), entry.canonical]),
-);
+function buildCanonicalNameBySlug(): Map<string, string> {
+  return new Map(
+    tagVocabulary.map(entry => [titleToSlug(entry.canonical), entry.canonical]),
+  );
+}
 
 function loadTopicSlugs(): Set<string> {
   const topicSlugs = [
@@ -30,6 +32,7 @@ export function generateFrontmatter(
   cleanTitle: string,
 ): string {
   const topicSlugs = loadTopicSlugs();
+  const canonicalNameBySlug = buildCanonicalNameBySlug();
   const extractedTags = video.tags?.map(t => t.tag) ?? [];
   const topics = extractedTags.flatMap(tag => {
     const slug = titleToSlug(tag);
