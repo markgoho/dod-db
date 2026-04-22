@@ -8,6 +8,7 @@ aliases:
 topics:
   - Atheism
   - Omni Attributes
+  - Original sin
   - Dead Sea Scrolls
 tags:
   - Catholicism

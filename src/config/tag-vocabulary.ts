@@ -8527,7 +8527,8 @@ export const tagVocabulary: TagDefinition[] = [
     category: "theology",
     description:
       "Christian doctrine that all humans are born with an inherited sinfulness originating from Adam's transgression in the Garden of Eden",
-    status: "proposed",
+    status: "accepted",
+    episodes: [44, 51, 56, 71, 120, 140, 142],
   },
   {
     canonical: "Ken Ham",

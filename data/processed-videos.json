@@ -8031,6 +8031,10 @@
         "mentions": 1
       },
       {
+        "tag": "Original sin",
+        "mentions": 1
+      },
+      {
         "tag": "YHWH",
         "mentions": 1
       }
@@ -9139,6 +9143,10 @@
         "mentions": 2
       },
       {
+        "tag": "Original sin",
+        "mentions": 2
+      },
+      {
         "tag": "Dead Sea Scrolls",
         "mentions": 1
       },
@@ -10113,6 +10121,10 @@
       },
       {
         "tag": "Nephilim",
+        "mentions": 1
+      },
+      {
+        "tag": "Original sin",
         "mentions": 1
       },
       {
@@ -12911,6 +12923,10 @@
       },
       {
         "tag": "Maccabees",
+        "mentions": 1
+      },
+      {
+        "tag": "Original sin",
         "mentions": 1
       },
       {
@@ -21098,6 +21114,10 @@
         "mentions": 1
       },
       {
+        "tag": "Original sin",
+        "mentions": 1
+      },
+      {
         "tag": "Tertullian",
         "mentions": 1
       },
@@ -24838,6 +24858,10 @@
         "mentions": 9
       },
       {
+        "tag": "Original sin",
+        "mentions": 9
+      },
+      {
         "tag": "Jeremiah",
         "mentions": 8
       },
@@ -25121,7 +25145,7 @@
         "endTimestamp": "[01:08:14.941]",
         "confidence": "verified",
         "detectionMethod": "audio",
-        "topicLabel": "Lk Contradictions",
+        "topicLabel": "Luke Birth Contra&shy;dictions",
         "summary": "Luke's birth narrative contradicts Matthew and itself."
       }
     ],
@@ -25196,6 +25220,10 @@
       {
         "tag": "Eve",
         "mentions": 25
+      },
+      {
+        "tag": "Original sin",
+        "mentions": 18
       },
       {
         "tag": "Paul",
