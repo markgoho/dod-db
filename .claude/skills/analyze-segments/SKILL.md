@@ -14,19 +14,21 @@ Given an episode number, analyze each verified non-structural segment and genera
 - `topicLabel` — a 1-2 word label for what that specific segment instance is about
 - `summary` — a short 5-10 word summary of the segment's discussion
 
-If the episode has no analyzable non-structural segments, generate:
+If — and only if — the episode has **no named non-structural segments at all**, generate:
 
 - `episodeTopic` — a short human-friendly topic label for the episode's main discussion subject
 
-Never add or keep an `episodeTopic` when the episode already has analyzable non-structural segments. In that case, focus only on segment-level results.
+**Hard rule: never save an `episodeTopic` for an episode that has any named non-structural segments**, even if those segments are already labeled and gather returns `episode-topic` mode by default. Named segments always take precedence — episode topics are a fallback only for segmentless episodes (typically guest/interview shows).
+
+Before saving an episode topic, always re-run gather with `--force` to confirm there are no named non-structural segments. If `--force` surfaces any, the correct action is either to improve those segment labels or to do nothing — never to add an episode topic.
 
 ## Workflow
 
-1. Gather deterministic context:
+1. Gather deterministic context. **Always pass `--force`** so existing labels are surfaced and re-analyzed — every invocation of this skill is a request for a fresh take, including on segments and episode topics that already have labels:
    ```bash
-   bun run src/scripts/gather-segment-context.ts <episode-number> [--force]
+   bun run src/scripts/gather-segment-context.ts <episode-number> --force
    ```
-2. Reason directly in the agent from the JSON output.
+2. Reason directly in the agent from the JSON output. Treat any pre-existing labels you happen to see as prior art only — do not anchor to them. Independently pick the best label from the transcript context and only keep the prior label if it is genuinely the best choice.
 3. Save results with stdin using a quoted heredoc:
    ```bash
    bun run src/scripts/save-segment-results.ts <<'EOF'
@@ -105,9 +107,14 @@ Segment-specific rules:
 
 ## Episode-topic mode
 
-If gather returns `episode-topic`, read the transcript from `transcriptPath` and produce one short topic label for the central discussion.
+Episode-topic mode is a fallback only for episodes with **no named non-structural segments** (typically guest interviews). If the episode has any named non-structural segments — even fully labeled ones — do not save an `episodeTopic`.
 
-Only use `episode-topic` mode when gather actually returns `episode-topic`. If `--force` reveals analyzable segments, do not save an episode topic; save segment results instead.
+Because step 1 always runs gather with `--force`, the mode it returns is authoritative:
+
+- If gather returns `segments`, the episode has named segments. Do not save an episode topic. Either improve a segment's label or do nothing.
+- If gather returns `episode-topic`, the episode is genuinely segmentless and you may proceed.
+
+When proceeding, read the transcript from `transcriptPath` and produce one short topic label for the central discussion.
 
 Rules:
 
