@@ -120,7 +120,7 @@ featuredItems:
 
 Write 1 to 2 body paragraphs that convey why this topic matters on the show, drawn tightly from the gathered evidence.
 
-**What the paragraph should do, not how it should sound.** The body's job is to surface the actual reason a listener should care about this topic *on this show*: a specific dispute the hosts return to, a text-critical problem that keeps forcing the question back open, a gap between popular assumption and what the evidence shows, a methodological lever this topic exposes, stakes for how people read scripture or practice faith, or a historical uncertainty that the hosts keep probing. Whichever of these the evidence actually supports is the content of the paragraph.
+**What the paragraph should do, not how it should sound.** The body's job is to surface the actual reason a listener should care about this topic _on this show_: a specific dispute the hosts return to, a text-critical problem that keeps forcing the question back open, a gap between popular assumption and what the evidence shows, a methodological lever this topic exposes, stakes for how people read scripture or practice faith, or a historical uncertainty that the hosts keep probing. Whichever of these the evidence actually supports is the content of the paragraph.
 
 **Ban the scaffolds.** Do not use any of these opening or structural moves, even in paraphrased form:
 
