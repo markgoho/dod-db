@@ -13,6 +13,7 @@ topics:
   - YHWH
   - Gnosticism
   - Joseph
+  - Star of Remphan
   - David
   - Magi
   - Masoretic Text

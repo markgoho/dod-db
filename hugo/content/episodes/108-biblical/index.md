@@ -14,6 +14,7 @@ topics:
   - Ruth
   - Univocality
 tags:
+  - Adultery
   - Deuteronomy
   - Moses
   - Onan

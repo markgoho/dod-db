@@ -43,6 +43,7 @@ tags:
   - Protestantism
   - Samuel
   - Textus Receptus
+  - Adultery
   - Galilee
   - Jonah
   - Luke

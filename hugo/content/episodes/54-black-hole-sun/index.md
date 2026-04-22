@@ -35,6 +35,7 @@ tags:
   - Judaism
   - Moses
   - Silas
+  - Adultery
   - Adam
   - Cornelius
   - Melchizedek

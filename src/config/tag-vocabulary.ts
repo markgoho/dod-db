@@ -8423,12 +8423,16 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: " adultery",
+    canonical: "Adultery",
     variations: ["adulterous"],
     category: "theology",
     description:
       "Sexual relations between a married person and someone other than their spouse; a violation of marital fidelity",
-    status: "proposed",
+    status: "accepted",
+    episodes: [
+      11, 17, 21, 31, 39, 41, 44, 50, 54, 60, 66, 68, 87, 89, 94, 97, 101, 108,
+      110, 112, 125, 128, 129, 133, 135, 139, 140, 151,
+    ],
   },
   {
     canonical: "Baals",

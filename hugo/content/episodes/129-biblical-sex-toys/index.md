@@ -28,6 +28,7 @@ tags:
   - Deuteronomy
   - Gomorrah
   - Abraham
+  - Adultery
   - Amorites
   - Hagar
   - Qumran

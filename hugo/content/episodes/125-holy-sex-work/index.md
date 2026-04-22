@@ -29,6 +29,7 @@ tags:
   - Apocrypha
   - Deuteronomy
   - Tamar
+  - Adultery
   - Hezekiah
   - Latin Vulgate
   - Martin Luther

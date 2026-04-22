@@ -20,6 +20,7 @@ topics:
 tags:
   - Baal
   - Judaism
+  - Adultery
   - Islam
   - Jehu
   - Onan

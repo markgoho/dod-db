@@ -16,6 +16,7 @@ topics:
   - YHWH
 tags:
   - Augustine
+  - Adultery
   - Jennifer Bird
   - Gentiles
   - Judaism

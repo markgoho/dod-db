@@ -23,6 +23,7 @@ tags:
   - baptism
   - Judas Iscariot
   - Peter
+  - Adultery
   - Catholicism
   - Eusebius
   - Gospel of Thomas

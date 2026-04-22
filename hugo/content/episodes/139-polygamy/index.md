@@ -27,6 +27,7 @@ tags:
   - Judaism
   - Ammonites
   - Leah
+  - Adultery
   - Judah
   - Moab
   - Romans

@@ -6,6 +6,7 @@ videoId: 04EVQLvnAj8
 aliases:
   - /episodes/132/
 topics:
+  - Star of Remphan
   - David
   - Paul
   - Atheism

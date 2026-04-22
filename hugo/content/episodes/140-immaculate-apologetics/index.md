@@ -22,6 +22,7 @@ tags:
   - Crucifixion
   - Catholicism
   - Jeremiah
+  - Adultery
   - Pontius Pilate
   - inerrancy
   - Romans

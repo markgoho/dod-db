@@ -19,6 +19,7 @@ tags:
   - William Tyndale
   - Apocrypha
   - Desiderius Erasmus
+  - Adultery
   - Textus Receptus
   - Martin Luther
   - Latin Vulgate

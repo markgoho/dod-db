@@ -21,6 +21,7 @@ tags:
   - Catholicism
   - Apocrypha
   - Textus Receptus
+  - Adultery
   - Luke
   - Martin Luther
   - Moses

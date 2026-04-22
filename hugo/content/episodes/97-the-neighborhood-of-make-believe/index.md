@@ -10,6 +10,7 @@ topics:
   - King James Bible
 tags:
   - Noah
+  - Adultery
   - Moses
   - Red Sea
   - Jericho

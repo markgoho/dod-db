@@ -26,6 +26,7 @@ tags:
   - Hezekiah
   - Isaac
   - Syria
+  - Adultery
   - Africa
   - Ammonites
   - Amorites

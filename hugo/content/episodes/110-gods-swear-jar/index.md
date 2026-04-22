@@ -21,6 +21,7 @@ tags:
   - Clement of Alexandria
   - Egyptians
   - Jeroboam
+  - Adultery
   - baptism
   - Isaiah
   - Matthew

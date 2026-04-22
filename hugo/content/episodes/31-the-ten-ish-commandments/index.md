@@ -26,6 +26,7 @@ tags:
   - Judaism
   - Moses
   - Philo of Alexandria
+  - Adultery
   - Baal
   - Council of Jerusalem
   - Catholicism

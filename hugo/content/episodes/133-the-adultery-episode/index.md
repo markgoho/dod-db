@@ -23,6 +23,7 @@ topics:
   - Univocality
   - YHWH
 tags:
+  - Adultery
   - Judah
   - Baal
   - Deuteronomy

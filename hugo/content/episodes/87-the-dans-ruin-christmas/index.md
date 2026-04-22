@@ -38,6 +38,7 @@ tags:
   - Deuteronomy
   - Jericho
   - Judah
+  - Adultery
   - Antiochus IV Epiphanes
   - baptism
   - Catholicism

@@ -14,6 +14,7 @@ topics:
   - YHWH
 tags:
   - Priscilla
+  - Adultery
   - Aquila
   - Moses
   - Eve

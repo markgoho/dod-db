@@ -21,6 +21,7 @@ tags:
   - Baal
   - Philo of Alexandria
   - Adam
+  - Adultery
   - Eve
   - Islam
   - Jerusalem

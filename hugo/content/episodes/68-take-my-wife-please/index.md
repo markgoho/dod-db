@@ -21,6 +21,7 @@ tags:
   - Tamar
   - Shelah
   - Deuteronomy
+  - Adultery
   - Boaz
   - Canaan
 books:
