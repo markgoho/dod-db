@@ -5,17 +5,28 @@
 
 {{ define "main" }}
   {{ $titleTransitionName := partial "transition-name" (dict "prefix" "tags-title" "source" .Title) }}
+  {{ $nav := partial "taxonomy-prev-next" (dict "page" . "taxonomy" "tags") }}
   <section class="cloud-page">
     <header class="page-hero">
-      <h1 class="page-hero__title">Tags</h1>
-      <p class="page-hero__description panel panel--muted">
-        <span style="view-transition-name: {{ $titleTransitionName }}"
-          >{{ .Data.Term }}</span
+      {{ partial "prev-next-nav" (dict
+        "ariaLabel" "Tag navigation"
+        "prev" $nav.prev
+        "next" $nav.next
+        "allHref" "/tags/"
+        "allLabel" "All Tags"
+        "taxonomyName" "tags")
+      }}
+      <h1
+        class="page-hero__title"
+        style="view-transition-name: {{ $titleTransitionName }}">
+        {{ .Data.Term }}
+      </h1>
+      <div class="page-hero__meta page-hero__meta--headline panel">
+        <span class="stat-display__number">{{ len .Pages }}</span>
+        <span class="stat-display__label"
+          >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
         >
-        appears in
-        {{ len .Pages }}
-        episode{{ if ne (len .Pages) 1 }}s{{ end }}
-      </p>
+      </div>
     </header>
 
     <div class="episodes-grid">

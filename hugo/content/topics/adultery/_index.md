@@ -8,7 +8,7 @@ featuredItems:
     label: "It's the Law — Adultery"
   - type: episode
     number: 108
-    label: "\"Biblical\" Marriage"
+    label: '"Biblical" Marriage'
 quotes:
   - text: "Adultery comes down to property rights. It is not a moral—it is not a fundamentally moral question. It's a question of property rights."
     speaker: "Dan McClellan"

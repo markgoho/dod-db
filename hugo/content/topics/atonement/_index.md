@@ -1,5 +1,6 @@
 ---
 title: "Atonement"
+topicName: "atonement"
 definition: "Atonement is a framework for repairing a breach between humans and a deity, often through ritual acts, sacrifice, or some other mechanism of reconciliation. In the Hebrew Bible it is tied especially to the language of covering over or cleansing contamination, while later Christian theology develops multiple competing explanations for how Jesus' death reconciles humanity to God."
 featuredItems:
   - type: segment

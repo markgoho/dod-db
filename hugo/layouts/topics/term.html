@@ -4,8 +4,9 @@
 {{ end }}
 
 {{ define "main" }}
-  {{ $topicIndex := index hugo.Data "topic-episode-index" }}
-  {{ $rankedEpisodes := index $topicIndex .Title | default slice }}
+  {{ $tagIndex := index hugo.Data "tag-episode-index" }}
+  {{ $lookupKey := .Params.topicName | default .Title }}
+  {{ $rankedEpisodes := index $tagIndex $lookupKey | default slice }}
   {{ $topEpisode := index $rankedEpisodes 0 }}
   {{ $topEpisodesLimit := .Params.topEpisodesLimit | default 6 }}
   {{ $featuredEpisodes := first $topEpisodesLimit (after 1 $rankedEpisodes) }}
