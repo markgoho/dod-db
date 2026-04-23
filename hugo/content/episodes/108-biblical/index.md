@@ -13,6 +13,7 @@ topics:
   - Pharisees
   - Christian Nationalism
   - Esarhaddon
+  - Hagar
   - Hell
   - Ruth
   - Univocality
@@ -23,7 +24,6 @@ tags:
   - Abraham
   - Boaz
   - Catholicism
-  - Hagar
   - Judah
   - Judaism
   - Naomi

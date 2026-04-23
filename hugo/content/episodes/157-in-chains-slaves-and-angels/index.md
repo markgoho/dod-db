@@ -7,6 +7,7 @@ aliases:
   - /episodes/157/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/154855073.mp3?sig=4Pjyi_JkdNrz82x8zbZbUq_ZtdDO7VyDI4-Cx4AFQ2k%3D
 topics:
+  - Hagar
   - Angel
   - Book of Enoch
   - Hell
@@ -20,7 +21,6 @@ topics:
 tags:
   - Sarah
   - Abraham
-  - Hagar
   - Isaac
   - Ishmael
   - Enoch

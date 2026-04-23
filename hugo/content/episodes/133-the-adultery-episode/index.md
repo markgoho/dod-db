@@ -17,6 +17,7 @@ topics:
   - Asherah
   - Council of Nicaea
   - Daniel
+  - Hagar
   - Hell
   - Jacob
   - Pharisees
@@ -39,7 +40,6 @@ tags:
   - Assyria
   - Cyrus the Great
   - Elijah
-  - Hagar
   - Isaiah
   - Jeremiah
   - Jerusalem

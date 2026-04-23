@@ -17,6 +17,7 @@ topics:
   - Crucifixion
   - Dead Sea Scrolls
   - Demon
+  - Hagar
   - Mary Magdalene
   - Saul
   - YHWH
@@ -40,7 +41,6 @@ tags:
   - Egyptians
   - Galilee
   - Gideon
-  - Hagar
   - Isaiah
   - Judas Iscariot
   - Maccabees

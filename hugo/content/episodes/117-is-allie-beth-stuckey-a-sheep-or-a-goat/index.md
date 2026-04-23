@@ -13,6 +13,7 @@ topics:
   - Flavius Josephus
   - Hell
   - Josiah
+  - Maccabean Revolt
   - Monotheism
   - Univocality
 tags:
@@ -28,7 +29,6 @@ tags:
   - Egyptians
   - inerrancy
   - Judaism
-  - Maccabean Revolt
   - Moses
 books:
   - Matthew

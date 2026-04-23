@@ -16,6 +16,7 @@ topics:
   - Star of Remphan
   - David
   - Magi
+  - Hagar
   - Masoretic Text
   - Paul
   - Satan
@@ -30,7 +31,6 @@ tags:
   - Babylon
   - Isaiah
   - Moses
-  - Hagar
   - Peter
   - Philo of Alexandria
   - Second Temple period

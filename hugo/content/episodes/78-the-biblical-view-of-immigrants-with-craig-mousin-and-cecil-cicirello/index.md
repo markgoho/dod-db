@@ -10,6 +10,7 @@ topics:
   - Decalogue
   - David
   - Paul
+  - Prophetic Critique
 tags:
   - Noah
   - cognitive dissonance
@@ -17,7 +18,6 @@ tags:
   - Eve
   - Jerusalem
   - Judaism
-  - Prophetic Critique
   - Protestantism
 books:
   - Luke

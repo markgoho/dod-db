@@ -16,6 +16,7 @@ topics:
   - Bel and the Dragon
   - Codex Sinaiticus
   - Didache
+  - Maccabean Revolt
   - Masoretes
   - Susanna
 tags:
@@ -50,7 +51,6 @@ tags:
   - First Clement
   - Galilee
   - Hanukkah
-  - Maccabean Revolt
   - Midianites
   - Moses
   - Pseudepigrapha

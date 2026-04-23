@@ -8,6 +8,7 @@ aliases:
 topics:
   - Gnosticism
   - Josiah
+  - Prophetic Critique
   - YHWH
   - Arad
   - Christian Nationalism
@@ -19,7 +20,6 @@ tags:
   - Jerusalem
   - Joshua
   - Samuel
-  - Prophetic Critique
   - Judaism
   - Quran
   - Isaiah

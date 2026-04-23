@@ -13,6 +13,7 @@ topics:
   - Adultery
   - David
   - Dead Sea Scrolls
+  - Hagar
   - Homosexuality
   - Samson
   - Septuagint
@@ -30,7 +31,6 @@ tags:
   - Gomorrah
   - Abraham
   - Amorites
-  - Hagar
   - Qumran
 books:
   - Judges

@@ -15,6 +15,7 @@ topics:
   - divine council
   - Mary Magdalene
   - Saul
+  - Hagar
   - Abortion
   - Euphrates
   - Jacob
@@ -34,7 +35,6 @@ tags:
   - Apocrypha
   - Babylon
   - Gideon
-  - Hagar
   - Pseudepigrapha
   - Sodom
   - Syria

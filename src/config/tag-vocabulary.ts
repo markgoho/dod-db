@@ -166,7 +166,7 @@ export const tagVocabulary: TagDefinition[] = [
     variations: [],
     category: "character",
     status: "accepted",
-    episodes: [3, 28, 55, 108, 129, 133],
+    episodes: [3, 28, 55, 108, 129, 133, 150, 157],
   },
   {
     canonical: "Ishmael",
@@ -8859,7 +8859,7 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Maccabean Revolt",
-    variations: ["Maccabean revolt"],
+    variations: [],
     category: "event",
     description:
       "A Jewish rebellion against the Seleucid Empire in the 2nd century BCE, described in the Books of Maccabees",
@@ -9103,6 +9103,13 @@ export const tagVocabulary: TagDefinition[] = [
       "an insult that shows contempt, disrespect or lack of reverence concerning a deity, an object considered sacred, or something that is considered inviolable",
     status: "accepted",
     episodes: [19, 42, 55, 62, 134, 148],
+  },
+  {
+    canonical: "Prophetic Critique",
+    variations: [],
+    category: "miscellaneous",
+    status: "accepted",
+    episodes: [61, 76, 78, 97, 102, 158],
   },
 ];
 

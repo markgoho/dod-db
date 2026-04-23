@@ -7,6 +7,7 @@ aliases:
   - /episodes/76/
 topics:
   - Tithing
+  - Prophetic Critique
   - Paul
   - Holy Spirit
   - Pharisees
@@ -18,7 +19,6 @@ tags:
   - Sapphira
   - Abraham
   - Judah
-  - Prophetic Critique
   - Joshua
   - Melchizedek
   - Barnabas

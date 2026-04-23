@@ -11,6 +11,7 @@ topics:
   - Gnosticism
   - Flavius Josephus
   - Dead Sea Scrolls
+  - Prophetic Critique
   - Samson
   - Angel
   - Circumcision
@@ -26,7 +27,6 @@ tags:
   - Judaism
   - Gospel of Thomas
   - Islam
-  - Prophetic Critique
   - Samuel
   - Adam
   - Babylon

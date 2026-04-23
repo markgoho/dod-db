@@ -7,6 +7,7 @@ aliases:
   - /episodes/97/
 topics:
   - Adultery
+  - Prophetic Critique
   - Decalogue
   - King James Bible
 tags:
@@ -19,7 +20,6 @@ tags:
   - Mount Sinai
   - Babylon
   - Dead Sea
-  - Prophetic Critique
   - Deuteronomy
   - forgery
   - Isaiah

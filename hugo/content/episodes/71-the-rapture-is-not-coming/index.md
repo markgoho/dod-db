@@ -15,6 +15,7 @@ topics:
   - YHWH
   - Atheism
   - Hell
+  - Maccabean Revolt
   - Original sin
   - Univocality
 tags:
@@ -34,7 +35,6 @@ tags:
   - Deuteronomy
   - Elijah
   - Garden of Eden
-  - Maccabean Revolt
   - Maccabees
   - Syria
   - Torah

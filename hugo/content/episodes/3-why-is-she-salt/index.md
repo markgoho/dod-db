@@ -10,6 +10,7 @@ topics:
   - Dead Sea Scrolls
   - Angel
   - David
+  - Hagar
   - Homosexuality
   - Marriage
   - Sennacherib
@@ -30,7 +31,6 @@ tags:
   - Moabites
   - Samaritans
   - Adam
-  - Hagar
   - Mount Ebal
   - Mount Gerizim
   - Noah

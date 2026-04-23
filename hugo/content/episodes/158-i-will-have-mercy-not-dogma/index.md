@@ -7,6 +7,8 @@ aliases:
   - /episodes/158/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/155444963.mp3?sig=4YXxt4X_HW-mekzkwdPF1aBfoFx-Mlnx8mBaLnxdunA%3D
 topics:
+  - Prophetic Critique
+  - Maccabean Revolt
   - Daniel
   - Book of Enoch
   - Dead Sea Scrolls
@@ -19,10 +21,8 @@ tags:
   - Maccabees
   - Second Maccabees
   - Seleucid Empire
-  - Prophetic Critique
   - Judah
   - Judaism
-  - Maccabean Revolt
   - Antiochus IV Epiphanes
   - Apocrypha
   - Jerusalem
