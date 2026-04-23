@@ -30,7 +30,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 141
     timestamp: "00:16:42.459"
-  - text: "The whole point of the census is, \"Who's living and working where so we can tell the people who are governing that place, this is how much we want from you in taxes.\" So the notion that you would just go wherever you were from to register is just bafflingly, just asinine, just ahistorical. That would not have happened."
+  - text: 'The whole point of the census is, "Who''s living and working where so we can tell the people who are governing that place, this is how much we want from you in taxes." So the notion that you would just go wherever you were from to register is just bafflingly, just asinine, just ahistorical. That would not have happened.'
     speaker: "Dan McClellan"
     episode: 141
     timestamp: "00:52:41.538"

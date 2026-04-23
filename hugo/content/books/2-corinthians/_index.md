@@ -27,7 +27,7 @@ quotes:
     speaker: "Isaac Soon"
     episode: 33
     timestamp: "00:14:41.050"
-  - text: "Weakness is an important topic for Paul, and it's very wide-ranging. ... People are saying, you know, \"This guy writes really angry letters, but when he's with us in person, he has such a weak body. Why should we listen to him?\" And Paul, rather than saying, \"Well, actually, I'm really strong,\" he actually doubles down on the weakness."
+  - text: 'Weakness is an important topic for Paul, and it''s very wide-ranging. ... People are saying, you know, "This guy writes really angry letters, but when he''s with us in person, he has such a weak body. Why should we listen to him?" And Paul, rather than saying, "Well, actually, I''m really strong," he actually doubles down on the weakness.'
     speaker: "Isaac Soon"
     episode: 33
     timestamp: "00:20:09.830"
