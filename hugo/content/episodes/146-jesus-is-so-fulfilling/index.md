@@ -17,6 +17,7 @@ topics:
   - James
   - Univocality
   - atonement
+  - Beatitudes
   - Christmas
   - Circumcision
   - Josiah
@@ -32,7 +33,6 @@ tags:
   - Essenes
   - Judaism
   - Torah
-  - Beatitudes
   - cognitive dissonance
   - Hezekiah
   - inerrancy

@@ -6,6 +6,7 @@ videoId: Xtm9DX_0Rx0
 aliases:
   - /episodes/25/
 topics:
+  - Beatitudes
   - YHWH
   - Hell
   - Salvation
@@ -14,7 +15,6 @@ topics:
   - Jacob
   - Second Coming
 tags:
-  - Beatitudes
   - Luke
   - Eschatology
   - Judaism

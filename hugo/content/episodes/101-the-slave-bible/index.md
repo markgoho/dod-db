@@ -12,6 +12,7 @@ topics:
   - King James Bible
   - Abortion
   - Adultery
+  - Beatitudes
   - Crucifixion
   - Paul
   - Salvation
@@ -19,7 +20,6 @@ topics:
 tags:
   - Eschatology
   - Pliny the Younger
-  - Beatitudes
   - Galilee
   - Ham
   - historical criticism

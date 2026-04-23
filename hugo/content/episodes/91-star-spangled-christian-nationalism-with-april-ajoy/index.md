@@ -14,6 +14,7 @@ topics:
   - Salvation
   - Abortion
   - Angel
+  - Beatitudes
   - Christmas
   - Marriage
   - Mary Magdalene
@@ -22,7 +23,6 @@ topics:
   - Rapture
 tags:
   - cognitive dissonance
-  - Beatitudes
 books:
   - John
 guests:

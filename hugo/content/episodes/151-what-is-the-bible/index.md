@@ -7,6 +7,7 @@ aliases:
   - /episodes/151/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/151389925.mp3?sig=cmlAHPDVc9BpalU8WRhGadf6uyCNGqD5xdZ-vb7JSSI%3D
 topics:
+  - Beatitudes
   - King James Bible
   - Septuagint
   - Adultery
@@ -17,7 +18,6 @@ topics:
   - Sadducees
   - Univocality
 tags:
-  - Beatitudes
   - Protestantism
   - Catholicism
   - Apocrypha
@@ -40,13 +40,13 @@ segmentData:
     anchor: what-is-that-1
     label: What is That?
     topicLabel: Bible
-    summary: "There is no such thing as 'The Bible'."
+    summary: "Contested canon, manuscripts, and translation choices"
     startSeconds: 120.186
   - type: taking-issue
     anchor: taking-issue-1
     label: Taking Issue
-    topicLabel: DHS video
-    summary: Critique of DHS video using Beatitudes and violence.
+    topicLabel: Beatitudes
+    summary: Peacemaking rejects coercive state violence
     startSeconds: 1939.587
 draft: false
 ---

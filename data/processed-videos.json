@@ -26979,7 +26979,7 @@
         "confidence": "verified",
         "detectionMethod": "audio",
         "topicLabel": "Bible",
-        "summary": "There is no such thing as 'The Bible'."
+        "summary": "Contested canon, manuscripts, and translation choices"
       },
       {
         "type": "taking-issue",
@@ -26987,8 +26987,8 @@
         "endTimestamp": "[00:58:42.835]",
         "confidence": "verified",
         "detectionMethod": "audio",
-        "topicLabel": "DHS video",
-        "summary": "Critique of DHS video using Beatitudes and violence."
+        "topicLabel": "Beatitudes",
+        "summary": "Peacemaking rejects coercive state violence"
       }
     ],
     "speakers": ["Dan McClellan", "Dan Beecher"],

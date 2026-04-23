@@ -14,6 +14,7 @@ topics:
   - King James Bible
   - Talmud
   - Baptism
+  - Beatitudes
   - David
   - Decalogue
   - Flavius Josephus
@@ -29,7 +30,6 @@ tags:
   - Deuteronomy
   - Eusebius
   - Gentiles
-  - Beatitudes
   - Clement of Rome
   - John
 books:

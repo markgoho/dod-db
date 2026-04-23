@@ -10,6 +10,7 @@ topics:
   - Jacob
   - divine council
   - Septuagint
+  - Beatitudes
   - Preterism
   - Univocality
   - Christian Nationalism
@@ -24,7 +25,6 @@ tags:
   - Eschatology
   - Jerusalem
   - Jonah
-  - Beatitudes
   - Edomites
   - inerrancy
   - Judah

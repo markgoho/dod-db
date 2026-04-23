@@ -14,6 +14,7 @@ topics:
   - Angel
   - Blasphemy
   - Septuagint
+  - Beatitudes
   - Book of Enoch
   - Daniel
   - Dead Sea Scrolls
@@ -31,7 +32,6 @@ tags:
   - Isaiah
   - Apocrypha
   - Augustine
-  - Beatitudes
   - Catholicism
   - Gentiles
   - Luke

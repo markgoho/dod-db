@@ -5168,9 +5168,8 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Beatitudes",
-    variations: ["The Beatitudes"],
+    variations: [],
     category: "theology",
-    llmVerify: true,
     description:
       "A set of teachings by Jesus in the Sermon on the Mount (Matthew 5:3-12), expressing ideals of humility, compassion, and righteousness",
     status: "accepted",
