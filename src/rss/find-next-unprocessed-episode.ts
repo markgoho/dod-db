@@ -31,7 +31,7 @@ export async function findNextUnprocessedEpisode(
 
   const canonicalItems = parsePodcastRss(rssXml)
     .filter(item => !isAfterPartyItem(item))
-    .sort(
+    .toSorted(
       (a, b) => new Date(a.pubDate).getTime() - new Date(b.pubDate).getTime(),
     );
 

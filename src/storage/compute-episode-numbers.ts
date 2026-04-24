@@ -29,7 +29,7 @@ export function computeEpisodeNumbers(
   videos: ProcessedVideo[],
 ): ProcessedVideo[] {
   // Sort by publishedAt (ascending), then videoId for determinism
-  const sorted = [...videos].sort((a, b) => {
+  const sorted = [...videos].toSorted((a, b) => {
     const dateCompare = a.publishedAt.localeCompare(b.publishedAt);
     if (dateCompare !== 0) return dateCompare;
     return a.videoId.localeCompare(b.videoId); // Tiebreaker

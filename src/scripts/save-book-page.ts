@@ -125,7 +125,7 @@ function getFeaturedItemEpisodeNumber(item: FeaturedItem): number {
 }
 
 function renderFeaturedItems(items: FeaturedItem[]): string[] {
-  const sortedItems = [...items].sort(
+  const sortedItems = [...items].toSorted(
     (left, right) =>
       getFeaturedItemEpisodeNumber(left) - getFeaturedItemEpisodeNumber(right),
   );

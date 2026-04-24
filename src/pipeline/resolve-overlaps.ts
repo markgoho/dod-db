@@ -10,7 +10,7 @@ interface Match {
 export function resolveOverlaps<T extends Match>(matches: T[]): T[] {
   if (matches.length === 0) return [];
 
-  const sorted = [...matches].sort((a, b) => {
+  const sorted = [...matches].toSorted((a, b) => {
     if (a.start !== b.start) return a.start - b.start;
     return b.end - b.start - (a.end - a.start);
   });

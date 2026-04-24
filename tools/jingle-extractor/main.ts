@@ -156,8 +156,8 @@ function updateTimeline(): void {
   }
 
   if (startMarker !== null && endMarker !== null) {
-    const duration = Math.abs(endMarker - startMarker);
-    html += ` | <span class="marker">Duration: ${duration.toFixed(3)}s</span>`;
+    const markerDuration = Math.abs(endMarker - startMarker);
+    html += ` | <span class="marker">Duration: ${markerDuration.toFixed(3)}s</span>`;
   }
 
   const timelineElement = document.querySelector("#timeline");

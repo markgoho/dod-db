@@ -124,7 +124,7 @@ const _server = Bun.serve({
     if (url.pathname === "/api/episodes") {
       const videos = await loadProcessedVideos();
       // Sort by episode number
-      const sorted = [...videos].sort(
+      const sorted = [...videos].toSorted(
         (a, b) => (a.episodeNumber || 0) - (b.episodeNumber || 0),
       );
       return Response.json(sorted);

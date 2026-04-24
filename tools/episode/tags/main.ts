@@ -239,7 +239,7 @@ function renderTags(): void {
   }
 
   // Sort by mentions
-  tags = [...tags].sort((a, b) => b.mentions - a.mentions);
+  tags = [...tags].toSorted((a, b) => b.mentions - a.mentions);
 
   container.innerHTML = tags
     .map(tag => {

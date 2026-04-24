@@ -43,7 +43,7 @@ function findSegmentMatches(lines: TranscriptLine[]): SegmentMatch[] {
   }
 
   // Sort by timestamp
-  return matches.sort(
+  return matches.toSorted(
     (a, b) => timestampToSeconds(a.timestamp) - timestampToSeconds(b.timestamp),
   );
 }

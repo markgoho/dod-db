@@ -68,7 +68,7 @@ export async function extractTags(
     if (discoveredTags.length > 0) {
       console.log("\n📋 NEW TAG SUGGESTIONS (not in vocabulary):");
       console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
-      for (const tag of discoveredTags.sort(
+      for (const tag of discoveredTags.toSorted(
         (a, b) => b.mentions - a.mentions,
       )) {
         console.log(`  • ${tag.tag} (${tag.mentions} mentions)`);

@@ -38,7 +38,7 @@ async function main(): Promise<void> {
     entries.sort((left, right) => right.m - left.m || right.ep - left.ep);
   }
 
-  const orderedTagNames = Object.keys(tagEpisodeIndex).sort((left, right) =>
+  const orderedTagNames = Object.keys(tagEpisodeIndex).toSorted((left, right) =>
     left.localeCompare(right),
   );
   const orderedTagIndex: TagEpisodeIndex = {};

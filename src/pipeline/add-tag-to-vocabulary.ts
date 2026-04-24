@@ -49,7 +49,7 @@ function formatTagEntry(tag: TagDefinition): string {
 
 function normalizeEpisodes(episodes?: number[]): number[] | undefined {
   const normalized = episodes
-    ? [...new Set(episodes)].sort((a, b) => a - b)
+    ? [...new Set(episodes)].toSorted((a, b) => a - b)
     : undefined;
   return normalized && normalized.length > 0 ? normalized : undefined;
 }

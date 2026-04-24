@@ -33,7 +33,7 @@ export function formatSegmentsForFrontmatter(
   }
 
   // Sort by timestamp (chronological order)
-  const sorted = [...filtered].sort((a, b) => {
+  const sorted = [...filtered].toSorted((a, b) => {
     const aSeconds = parseTimestampToSeconds(a.startTimestamp);
     const bSeconds = parseTimestampToSeconds(b.startTimestamp);
     return aSeconds - bSeconds;

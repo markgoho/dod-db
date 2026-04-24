@@ -171,7 +171,7 @@ export async function addTagToEpisodes(
     .filter(
       (episodeNumber): episodeNumber is number => episodeNumber !== undefined,
     )
-    .sort((a, b) => a - b);
+    .toSorted((a, b) => a - b);
 
   console.log("\n\nSaving updated processed-videos.json...");
   await saveProcessedVideos(videos);

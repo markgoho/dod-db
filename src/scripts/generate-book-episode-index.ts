@@ -37,8 +37,8 @@ async function main(): Promise<void> {
     entries.sort((left, right) => right.m - left.m || right.ep - left.ep);
   }
 
-  const orderedBookNames = Object.keys(bookEpisodeIndex).sort((left, right) =>
-    left.localeCompare(right),
+  const orderedBookNames = Object.keys(bookEpisodeIndex).toSorted(
+    (left, right) => left.localeCompare(right),
   );
   const orderedBookIndex: BookEpisodeIndex = {};
 

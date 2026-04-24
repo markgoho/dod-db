@@ -83,7 +83,7 @@ export async function detectSegmentsFromAudio({
   // Filter for >80% confidence and sort by timestamp
   const highConfidenceMatches = matches
     .filter(match => match.confidence >= 80)
-    .sort((a, b) => a.timestamp - b.timestamp);
+    .toSorted((a, b) => a.timestamp - b.timestamp);
 
   const segments: Segment[] = [];
 

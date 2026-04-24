@@ -15,7 +15,7 @@ export function wrapScriptureReferences(text: string): string {
   }
 
   // Sort matches by position descending (process from end to preserve indices)
-  const sortedMatches = [...matches].sort((a, b) => b.start - a.start);
+  const sortedMatches = [...matches].toSorted((a, b) => b.start - a.start);
 
   let result = text;
 

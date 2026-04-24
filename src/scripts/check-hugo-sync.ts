@@ -52,8 +52,8 @@ function deriveExpectedTaxonomies(
   }
 
   return {
-    topics: topics.sort(),
-    tags: tags.sort(),
+    topics: topics.toSorted(),
+    tags: tags.toSorted(),
   };
 }
 
@@ -99,8 +99,8 @@ async function checkSync(): Promise<void> {
     }
 
     const { frontmatter } = await parseHugoFile(hugoPath);
-    const actualTopics = [...(frontmatter.topics ?? [])].sort();
-    const actualTags = [...(frontmatter.tags ?? [])].sort();
+    const actualTopics = [...(frontmatter.topics ?? [])].toSorted();
+    const actualTags = [...(frontmatter.tags ?? [])].toSorted();
 
     const expectedTopicSet = new Set(expected.topics);
     const actualTopicSet = new Set(actualTopics);

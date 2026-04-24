@@ -244,7 +244,7 @@ function findLatestBaseline(
 ): ExperimentRun<BaselineResult> | undefined {
   const baselineRuns = [...runs.entries()]
     .filter(([_, run]) => run.experimentType === "baseline")
-    .sort(([_, a], [__, b]) => b.timestamp.localeCompare(a.timestamp));
+    .toSorted(([_, a], [__, b]) => b.timestamp.localeCompare(a.timestamp));
 
   return baselineRuns[0]?.[1] as ExperimentRun<BaselineResult> | undefined;
 }

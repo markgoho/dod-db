@@ -568,7 +568,7 @@ async function runEpisodeScriptureRescan(
             !manualScriptures.some(manual => manual.book === scripture.book),
         )
         .map(scripture => ({ ...scripture, source: "auto" }));
-      const nextScriptures = [...manualScriptures, ...autoScriptures].sort(
+      const nextScriptures = [...manualScriptures, ...autoScriptures].toSorted(
         (a, b) => a.book.localeCompare(b.book),
       );
 
@@ -1444,7 +1444,7 @@ const _server = Bun.serve({
       );
 
       // Sort by episode number
-      const sorted = [...videosWithAudio].sort(
+      const sorted = [...videosWithAudio].toSorted(
         (a, b) => (a.episodeNumber || 0) - (b.episodeNumber || 0),
       );
       return jsonResponse(sorted);
@@ -1728,7 +1728,7 @@ const _server = Bun.serve({
         const nextScriptures: EpisodeScripture[] = [
           ...existingScriptures,
           scriptureToSave,
-        ].sort((a, b) => a.book.localeCompare(b.book));
+        ].toSorted((a, b) => a.book.localeCompare(b.book));
 
         await updateVideoScriptures(videoId, nextScriptures);
 

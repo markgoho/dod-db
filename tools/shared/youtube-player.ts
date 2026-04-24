@@ -16,14 +16,14 @@ let apiLoadPromise: Promise<void> | undefined;
 
 /** Get the YouTube API global */
 function getYT(): YTGlobal | undefined {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Access dynamic YouTube API
-  return (globalThis as any).YT as YTGlobal | undefined;
+  return (globalThis as YTGlobal & typeof globalThis).YT;
 }
 
 /** Set the YouTube API ready callback */
 function setYouTubeReadyCallback(callback: () => void): void {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Set dynamic YouTube API callback
-  (globalThis as any).onYouTubeIframeAPIReady = callback;
+  (
+    globalThis as typeof globalThis & { onYouTubeIframeAPIReady?: () => void }
+  ).onYouTubeIframeAPIReady = callback;
 }
 
 /**
@@ -96,7 +96,7 @@ export async function createYouTubePlayer(
 
   return new Promise<YTPlayer>((resolve, reject) => {
     try {
-      new YT.Player(containerId, {
+      const player = new YT.Player(containerId, {
         width: "100%",
         height: "100%",
         videoId,
@@ -114,10 +114,10 @@ export async function createYouTubePlayer(
           onStateChange,
           onError: (event: YTPlayerEvent): void => {
             onError?.(event);
-            // Don't reject here - player may still be usable
           },
         },
       });
+      void player;
     } catch (error) {
       reject(error);
     }

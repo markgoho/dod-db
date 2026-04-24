@@ -11,5 +11,5 @@ export function getPendingCandidates(
 ): CorrectionCandidate[] {
   return Object.values(tracker.candidates)
     .filter(c => c.status === "pending")
-    .sort((a, b) => b.confidence - a.confidence);
+    .toSorted((a, b) => b.confidence - a.confidence);
 }

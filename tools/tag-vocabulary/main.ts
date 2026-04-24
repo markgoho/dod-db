@@ -158,7 +158,7 @@ async function loadVocabulary(): Promise<void> {
     const vocab = await response.json();
     allVocabulary = vocab
       .filter((tag: TagDefinition) => tag.status === "accepted" || !tag.status)
-      .sort(sortVocabularyNewestFirst);
+      .toSorted(sortVocabularyNewestFirst);
     renderVocabulary(currentCategory);
   } catch (error) {
     console.error("Error loading vocabulary:", error);
@@ -415,7 +415,7 @@ function renderAnalytics(stats: TagStats[]): void {
     return;
   }
 
-  const sortedByEpisodeCount = [...stats].sort(
+  const sortedByEpisodeCount = [...stats].toSorted(
     (a, b) => b.episodeCount - a.episodeCount,
   );
   const topTagsByEpisodeCount = sortedByEpisodeCount.slice(0, 15);
@@ -423,7 +423,7 @@ function renderAnalytics(stats: TagStats[]): void {
     ...topTagsByEpisodeCount.map(t => t.episodeCount),
   );
 
-  const sortedByMentions = [...stats].sort(
+  const sortedByMentions = [...stats].toSorted(
     (a, b) => b.totalMentions - a.totalMentions,
   );
   const topTagsByMentions = sortedByMentions.slice(0, 15);
@@ -697,7 +697,7 @@ async function loadProposedTags(): Promise<void> {
     const vocabulary: TagDefinition[] = await response.json();
     proposedTags = vocabulary
       .filter(tag => tag.status === "proposed")
-      .sort(sortVocabularyNewestFirst);
+      .toSorted(sortVocabularyNewestFirst);
 
     renderProposedTags();
   } catch (error) {

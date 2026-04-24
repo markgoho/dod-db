@@ -112,7 +112,7 @@ function findCanonicalBook(bookName: string): BookDefinition {
 }
 
 function buildBookSearchPattern(book: BookDefinition): RegExp {
-  const patterns = buildBookNamePatterns(book).sort(
+  const patterns = buildBookNamePatterns(book).toSorted(
     (left, right) => right.length - left.length,
   );
   return new RegExp(String.raw`\b(?:${patterns.join("|")})\b`, "i");
@@ -127,7 +127,7 @@ function mergeWindows(
   lineCount: number,
 ): Array<{ start: number; end: number }> {
   const windows = indexes
-    .sort((left, right) => left - right)
+    .toSorted((left, right) => left - right)
     .map(index => ({
       start: Math.max(0, index - EXCERPT_RADIUS),
       end: Math.min(lineCount - 1, index + EXCERPT_RADIUS),
@@ -241,7 +241,7 @@ function mergeSegmentData(
       confidence: "verified" as const,
     }));
 
-  return [...processed, ...frontmatterOnly].sort((left, right) => {
+  return [...processed, ...frontmatterOnly].toSorted((left, right) => {
     if (left.confidence !== right.confidence) {
       return left.confidence === "verified" ? -1 : 1;
     }
@@ -339,7 +339,7 @@ async function buildEpisodeContexts(
     });
   }
 
-  return episodes.sort(
+  return episodes.toSorted(
     (left, right) => right.episodeNumber - left.episodeNumber,
   );
 }
@@ -389,7 +389,7 @@ async function main(): Promise<void> {
     }
 
     const transcriptEpisodes = [...episodes]
-      .sort((left, right) => {
+      .toSorted((left, right) => {
         const leftCount = segmentCounts.get(left.episodeNumber) ?? 0;
         const rightCount = segmentCounts.get(right.episodeNumber) ?? 0;
         if (leftCount !== rightCount) {

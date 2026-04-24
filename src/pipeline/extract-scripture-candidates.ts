@@ -162,7 +162,7 @@ function collectScriptureMatches(transcript: string): ScriptureMatch[] {
     }
   }
 
-  return matches.sort((a, b) => a.start - b.start);
+  return matches.toSorted((a, b) => a.start - b.start);
 }
 
 export function extractScriptureCandidates(transcript: string): string[] {
@@ -177,7 +177,7 @@ export function extractScriptureCandidates(transcript: string): string[] {
   }
 
   return [...tallies.entries()]
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .toSorted((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .map(([reference]) => reference);
 }
 

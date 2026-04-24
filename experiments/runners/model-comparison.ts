@@ -213,19 +213,19 @@ async function runFullComparison(): Promise<void> {
   }
 
   // Find best options
-  const bestAccuracy = [...allResults.entries()].sort(
+  const bestAccuracy = [...allResults.entries()].toSorted(
     (a, b) =>
       b[1].reduce((s, r) => s + r.accuracy.levenshteinSimilarity, 0) -
       a[1].reduce((s, r) => s + r.accuracy.levenshteinSimilarity, 0),
   )[0]?.[0];
 
-  const cheapest = [...allResults.entries()].sort(
+  const cheapest = [...allResults.entries()].toSorted(
     (a, b) =>
       a[1].reduce((s, r) => s + r.cost.totalCost, 0) -
       b[1].reduce((s, r) => s + r.cost.totalCost, 0),
   )[0]?.[0];
 
-  const fastest = [...allResults.entries()].sort(
+  const fastest = [...allResults.entries()].toSorted(
     (a, b) =>
       a[1].reduce((s, r) => s + r.timing.wallClockMs, 0) -
       b[1].reduce((s, r) => s + r.timing.wallClockMs, 0),

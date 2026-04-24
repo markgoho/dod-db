@@ -155,7 +155,7 @@ export function markAllSegmentsVerified(
 export function sortSegmentsByTime(
   segments: EpisodeSegment[],
 ): EpisodeSegment[] {
-  return [...segments].sort(
+  return [...segments].toSorted(
     (a, b) =>
       timestampToSeconds(a.startTimestamp) -
       timestampToSeconds(b.startTimestamp),

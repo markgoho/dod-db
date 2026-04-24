@@ -12,7 +12,7 @@ import type { EpisodeTag } from "../storage/processed-videos.js";
  * @returns The sorted array (same reference)
  */
 export function sortTags(tags: EpisodeTag[]): EpisodeTag[] {
-  return tags.sort((a, b) => {
+  return tags.toSorted((a, b) => {
     // Primary sort: mentions descending (highest first)
     if (b.mentions !== a.mentions) {
       return b.mentions - a.mentions;

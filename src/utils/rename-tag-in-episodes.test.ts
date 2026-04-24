@@ -1,33 +1,48 @@
-import { afterEach, beforeEach, describe, expect, test } from "bun:test";
+import { afterEach, beforeEach, describe, expect, mock, test } from "bun:test";
 import { mkdir, mkdtemp, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { youtubeConfig } from "../config/youtube.js";
-import { renameTagInAllEpisodes } from "./rename-tag-in-episodes.js";
 
-const originalProcessedVideosFile = youtubeConfig.processedVideosFile;
 let temporaryDir: string;
+let processedVideosFile: string;
+
+const loadProcessedVideosMock = mock(async () => {
+  const file = Bun.file(processedVideosFile);
+  const exists = await file.exists();
+  if (!exists) {
+    return [];
+  }
+  return (await file.json()) as unknown[];
+});
+
+const saveProcessedVideosMock = mock(async (videos: unknown[]) => {
+  await Bun.write(processedVideosFile, JSON.stringify(videos, undefined, 2));
+});
+
+mock.module("../storage/load-processed-videos.js", () => ({
+  loadProcessedVideos: loadProcessedVideosMock,
+}));
+
+mock.module("../storage/save-processed-videos.js", () => ({
+  saveProcessedVideos: saveProcessedVideosMock,
+}));
 
 beforeEach(async () => {
   temporaryDir = await mkdtemp(join(tmpdir(), "rename-tag-test-"));
   await mkdir(join(temporaryDir, "data"), { recursive: true });
-  (youtubeConfig as { processedVideosFile: string }).processedVideosFile = join(
-    temporaryDir,
-    "data",
-    "processed-videos.json",
-  );
+  processedVideosFile = join(temporaryDir, "data", "processed-videos.json");
+  loadProcessedVideosMock.mockClear();
+  saveProcessedVideosMock.mockClear();
 });
 
 afterEach(async () => {
-  (youtubeConfig as { processedVideosFile: string }).processedVideosFile =
-    originalProcessedVideosFile;
   await rm(temporaryDir, { recursive: true, force: true });
 });
 
 describe("renameTagInAllEpisodes", () => {
   test("renames matching tags across stored episodes", async () => {
     await Bun.write(
-      youtubeConfig.processedVideosFile,
+      processedVideosFile,
       JSON.stringify(
         [
           {
@@ -48,14 +63,14 @@ describe("renameTagInAllEpisodes", () => {
       ),
     );
 
+    const { renameTagInAllEpisodes } =
+      await import("./rename-tag-in-episodes.js");
     const affected = await renameTagInAllEpisodes(
       "King James Version",
       "King James Bible",
     );
 
-    const saved = JSON.parse(
-      await readFile(youtubeConfig.processedVideosFile, "utf8"),
-    );
+    const saved = JSON.parse(await readFile(processedVideosFile, "utf8"));
 
     expect(affected).toBe(1);
     expect(saved).toEqual([
@@ -76,7 +91,7 @@ describe("renameTagInAllEpisodes", () => {
 
   test("drops the old tag when the canonical tag already exists", async () => {
     await Bun.write(
-      youtubeConfig.processedVideosFile,
+      processedVideosFile,
       JSON.stringify(
         [
           {
@@ -98,14 +113,14 @@ describe("renameTagInAllEpisodes", () => {
       ),
     );
 
+    const { renameTagInAllEpisodes } =
+      await import("./rename-tag-in-episodes.js");
     const affected = await renameTagInAllEpisodes(
       "King James Version",
       "King James Bible",
     );
 
-    const saved = JSON.parse(
-      await readFile(youtubeConfig.processedVideosFile, "utf8"),
-    );
+    const saved = JSON.parse(await readFile(processedVideosFile, "utf8"));
 
     expect(affected).toBe(1);
     expect(saved).toEqual([
@@ -126,7 +141,7 @@ describe("renameTagInAllEpisodes", () => {
 
   test("does nothing when only letter case changes", async () => {
     await Bun.write(
-      youtubeConfig.processedVideosFile,
+      processedVideosFile,
       JSON.stringify(
         [
           {
@@ -144,11 +159,11 @@ describe("renameTagInAllEpisodes", () => {
       ),
     );
 
+    const { renameTagInAllEpisodes } =
+      await import("./rename-tag-in-episodes.js");
     const affected = await renameTagInAllEpisodes("Torah", "torah");
 
-    const saved = JSON.parse(
-      await readFile(youtubeConfig.processedVideosFile, "utf8"),
-    );
+    const saved = JSON.parse(await readFile(processedVideosFile, "utf8"));
 
     expect(affected).toBe(0);
     expect(saved).toEqual([

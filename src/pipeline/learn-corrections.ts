@@ -449,19 +449,19 @@ export async function analyzeCorrections(
   // Separate by category
   const capitalizations = [...corrections.values()]
     .filter(c => c.category === "capitalization")
-    .sort((a, b) => b.count - a.count);
+    .toSorted((a, b) => b.count - a.count);
 
   const biblicalTerms = [...corrections.values()]
     .filter(c => c.category === "biblical-term")
-    .sort((a, b) => b.count - a.count);
+    .toSorted((a, b) => b.count - a.count);
 
   const properNouns = [...corrections.values()]
     .filter(c => c.category === "proper-noun")
-    .sort((a, b) => b.count - a.count);
+    .toSorted((a, b) => b.count - a.count);
 
   const spellingCorrections = [...corrections.values()]
     .filter(c => c.category === "spelling")
-    .sort((a, b) => b.count - a.count);
+    .toSorted((a, b) => b.count - a.count);
 
   console.log("\n📚 Learning Report: LLM Corrections Analysis");
   console.log("==============================================\n");

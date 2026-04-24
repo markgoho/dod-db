@@ -127,7 +127,7 @@ function buildSearchTerms(canonical: CanonicalTopicContext): string[] {
 function buildSearchPattern(canonical: CanonicalTopicContext): RegExp {
   const terms = buildSearchTerms(canonical)
     .map(escapeRegExp)
-    .sort((left, right) => right.length - left.length);
+    .toSorted((left, right) => right.length - left.length);
 
   return new RegExp(String.raw`\b(?:${terms.join("|")})\b`, "i");
 }
@@ -196,7 +196,7 @@ function findTagEpisodes(
   }
 
   return [...entry]
-    .sort((left, right) => right.m - left.m)
+    .toSorted((left, right) => right.m - left.m)
     .slice(0, MAX_TOP_EPISODES);
 }
 
@@ -260,7 +260,7 @@ function mergeSegmentData(
       confidence: "verified" as const,
     }));
 
-  return [...gathered, ...frontmatterOnly].sort((left, right) => {
+  return [...gathered, ...frontmatterOnly].toSorted((left, right) => {
     if (left.confidence !== right.confidence) {
       return left.confidence === "verified" ? -1 : 1;
     }
@@ -273,7 +273,7 @@ function mergeWindows(
   lineCount: number,
 ): Array<{ start: number; end: number }> {
   const windows = indexes
-    .sort((left, right) => left - right)
+    .toSorted((left, right) => left - right)
     .map(index => ({
       start: Math.max(0, index - EXCERPT_RADIUS),
       end: Math.min(lineCount - 1, index + EXCERPT_RADIUS),

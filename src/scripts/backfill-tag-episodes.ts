@@ -32,7 +32,7 @@ async function main(): Promise<void> {
   for (const tag of tagVocabulary) {
     const episodeNumbers = [
       ...(episodesByTag.get(tag.canonical.toLowerCase()) ?? new Set<number>()),
-    ].sort((a, b) => a - b);
+    ].toSorted((a, b) => a - b);
 
     try {
       await updateTagInVocabulary(tag.canonical, { episodes: episodeNumbers });

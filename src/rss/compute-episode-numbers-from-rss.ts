@@ -117,7 +117,7 @@ export function computeEpisodeNumbersFromRss(
 
   const canonicalItems = rssItems
     .filter(item => !isAfterPartyItem(item))
-    .sort(
+    .toSorted(
       (a, b) => new Date(a.pubDate).getTime() - new Date(b.pubDate).getTime(),
     );
 

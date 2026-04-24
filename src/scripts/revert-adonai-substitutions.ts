@@ -60,9 +60,9 @@ async function main() {
     const reversions: Reversion[] = [];
     const newFinalLines: string[] = [];
 
-    // eslint-disable-next-line prefer-const -- index can't be const when line needs let in destructuring
-    for (let [index, line] of finalLines.entries()) {
-      if (line === undefined) continue;
+    for (const [index, originalLine] of finalLines.entries()) {
+      if (originalLine === undefined) continue;
+      let line = originalLine;
       const match = line.match(/^\[(\d{2}:\d{2}:\d{2}\.\d{3})\]/);
 
       if (match?.[1] && line.toLowerCase().includes("adonai")) {

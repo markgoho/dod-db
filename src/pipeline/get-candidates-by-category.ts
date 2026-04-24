@@ -12,5 +12,5 @@ export function getCandidatesByCategory(
 ): CorrectionCandidate[] {
   return Object.values(tracker.candidates)
     .filter(c => c.category === category)
-    .sort((a, b) => b.confidence - a.confidence);
+    .toSorted((a, b) => b.confidence - a.confidence);
 }

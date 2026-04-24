@@ -159,7 +159,7 @@ export async function loadPreviousRuns<T>(
       }
     }
 
-    return runs.sort((a, b) => b.timestamp.localeCompare(a.timestamp));
+    return runs.toSorted((a, b) => b.timestamp.localeCompare(a.timestamp));
   } catch {
     return [];
   }

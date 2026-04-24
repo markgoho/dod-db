@@ -30,6 +30,17 @@ interface MatchInfo {
   rawText: string;
 }
 
+function parseReference(reference: string): { chapter: number; verse: number } {
+  const parts = reference.split(" ").slice(1).join(" ");
+  const [chapterPart] = parts.split(":");
+  const rawChapter = Number.parseInt(chapterPart ?? "", 10);
+  const chapter = Number.isNaN(rawChapter) ? -1 : rawChapter;
+  const versePart = parts.includes(":") ? parts.split(":")[1] : "0";
+  const rawVerse = Number.parseInt((versePart ?? "0").split("-")[0] ?? "0", 10);
+  const verse = Number.isNaN(rawVerse) ? 0 : rawVerse;
+  return { chapter, verse };
+}
+
 /**
  * Find all speaker label regions to exclude from matching.
  */
@@ -73,7 +84,7 @@ function isInSpeakerLabel(
 function resolveOverlaps(matches: MatchInfo[]): MatchInfo[] {
   if (matches.length === 0) return [];
 
-  const sorted = [...matches].sort((a, b) => {
+  const sorted = [...matches].toSorted((a, b) => {
     if (a.start !== b.start) return a.start - b.start;
     return b.end - b.start - (a.end - a.start);
   });
@@ -227,33 +238,17 @@ export async function extractScripture(
   const results: EpisodeScripture[] = [];
 
   for (const [canonical, matches] of bookMatches) {
-    const uniqueReferences = [...new Set(matches.map(m => m.reference))].sort(
-      (a, b) => {
-        const parseReference = (
-          reference: string,
-        ): { chapter: number; verse: number } => {
-          const parts = reference.split(" ").slice(1).join(" ");
-          const [chapterPart] = parts.split(":");
-          const rawChapter = Number.parseInt(chapterPart ?? "", 10);
-          const chapter = Number.isNaN(rawChapter) ? -1 : rawChapter;
-          const versePart = parts.includes(":") ? parts.split(":")[1] : "0";
-          const rawVerse = Number.parseInt(
-            (versePart ?? "0").split("-")[0] ?? "0",
-            10,
-          );
-          const verse = Number.isNaN(rawVerse) ? 0 : rawVerse;
-          return { chapter, verse };
-        };
+    const uniqueReferences = [
+      ...new Set(matches.map(m => m.reference)),
+    ].toSorted((a, b) => {
+      const referenceA = parseReference(a);
+      const referenceB = parseReference(b);
 
-        const referenceA = parseReference(a);
-        const referenceB = parseReference(b);
-
-        if (referenceA.chapter !== referenceB.chapter) {
-          return referenceA.chapter - referenceB.chapter;
-        }
-        return referenceA.verse - referenceB.verse;
-      },
-    );
+      if (referenceA.chapter !== referenceB.chapter) {
+        return referenceA.chapter - referenceB.chapter;
+      }
+      return referenceA.verse - referenceB.verse;
+    });
 
     results.push({
       book: canonical,

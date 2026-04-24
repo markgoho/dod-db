@@ -8,7 +8,7 @@ if [ -z "$STAGED_FILES" ]; then
   exit 0
 fi
 
-echo "Running Prettier and ESLint on staged files..."
+echo "Running Prettier and Oxlint on staged files..."
 
 # Run Prettier to format files
 echo "$STAGED_FILES" | xargs bunx prettier --write --ignore-unknown
@@ -19,18 +19,24 @@ if [ $PRETTIER_EXIT -eq 0 ]; then
   echo "$STAGED_FILES" | xargs git add
 fi
 
-# Run ESLint
-echo "$STAGED_FILES" | xargs bunx eslint
-ESLINT_EXIT=$?
+# Run Oxlint on staged root files, leaving functions/ on its separate lint setup
+ROOT_STAGED_FILES=$(echo "$STAGED_FILES" | grep -v '^functions/' || true)
+if [ -n "$ROOT_STAGED_FILES" ]; then
+  echo "$ROOT_STAGED_FILES" | xargs bunx oxlint
+  OXLINT_EXIT=$?
+else
+  OXLINT_EXIT=0
+fi
 
 # Exit with error if either tool failed
-if [ $PRETTIER_EXIT -ne 0 ] || [ $ESLINT_EXIT -ne 0 ]; then
+if [ $PRETTIER_EXIT -ne 0 ] || [ $OXLINT_EXIT -ne 0 ]; then
   echo ""
   echo "❌ Pre-commit checks failed!"
   echo "Fix the issues above and try again."
   echo ""
   echo "To format files: bun run format"
-  echo "To fix ESLint issues: bunx eslint --fix"
+  echo "To run root lint: bun run lint"
+  echo "To apply targeted safe fixes: bunx oxlint --fix <paths>"
   exit 1
 fi
 

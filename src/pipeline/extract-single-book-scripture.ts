@@ -147,7 +147,7 @@ export async function extractSingleBookScripture(
 
   const uniqueReferences = [
     ...new Set(verifiedMatches.map(m => m.reference)),
-  ].sort();
+  ].toSorted();
 
   return {
     book: book.canonical,

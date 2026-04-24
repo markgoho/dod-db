@@ -174,7 +174,7 @@ function renderScriptures(): void {
   const container = document.querySelector("#scriptures-container");
   if (!container || !episode) return;
 
-  const scriptures = [...(episode.scriptures || [])].sort(
+  const scriptures = [...(episode.scriptures || [])].toSorted(
     (a, b) => b.mentions - a.mentions || a.book.localeCompare(b.book),
   );
 

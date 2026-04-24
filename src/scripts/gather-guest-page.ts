@@ -97,7 +97,7 @@ async function main(): Promise<void> {
     const episodes = videos
       .filter(video => video.episodeNumber !== undefined)
       .filter(video => matchesGuest(video, normalizedGuestName))
-      .sort((left, right) => {
+      .toSorted((left, right) => {
         const leftNumber = left.episodeNumber ?? 0;
         const rightNumber = right.episodeNumber ?? 0;
         return rightNumber - leftNumber;

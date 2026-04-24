@@ -158,8 +158,7 @@ async function loadCandidates(): Promise<void> {
     const data = await response.json();
 
     // API returns array of candidates, create keys from original->corrected
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    allCandidates = data.map((candidate: any) => ({
+    allCandidates = (data as CorrectionCandidate[]).map(candidate => ({
       key: `${candidate.original}→${candidate.corrected}`,
       ...candidate,
     }));

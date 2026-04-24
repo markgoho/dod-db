@@ -66,7 +66,7 @@ export async function extractTagsDeterministic(
         pattern: new RegExp(String.raw`\b${escapeRegex(searchTerm)}\b`, flags),
       };
     })
-    .sort((a, b) => b.searchTerm.length - a.searchTerm.length);
+    .toSorted((a, b) => b.searchTerm.length - a.searchTerm.length);
 
   // Track matched positions to avoid double-counting overlaps
   const matchedRanges: Array<{ start: number; end: number }> = [];

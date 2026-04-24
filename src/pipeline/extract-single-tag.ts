@@ -8,6 +8,10 @@ import { tagVocabulary } from "../config/tag-vocabulary.js";
 import type { EpisodeTag } from "../storage/processed-videos.js";
 import { verifyTagMatches, type EpisodeContext } from "./verify-tag-matches.js";
 
+function escapeRegex(string_: string): string {
+  return string_.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
+}
+
 /**
  * Extract mentions of a single tag from transcript.
  * More efficient than full extraction when you only need one tag.
@@ -37,11 +41,6 @@ export async function extractSingleTag(
 
   // Sort by length (longest first) to handle overlaps
   searchTerms.sort((a, b) => b.length - a.length);
-
-  // Escape special regex characters
-  const escapeRegex = (string_: string): string => {
-    return string_.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
-  };
 
   // Find all speaker label regions to exclude from matching
   // Pattern: [HH:MM:SS.mmm] Speaker Name:

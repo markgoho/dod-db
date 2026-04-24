@@ -1,9 +1,7 @@
 import { youtubeConfig } from "../config/youtube.js";
-import {
-  computeEpisodeNumbersFromRss,
-  fetchPodcastRss,
-  parsePodcastRss,
-} from "../rss/index.js";
+import { computeEpisodeNumbersFromRss } from "../rss/compute-episode-numbers-from-rss.js";
+import { fetchPodcastRss } from "../rss/fetch-patreon-rss.js";
+import { parsePodcastRss } from "../rss/parse-patreon-rss.js";
 import { computeEpisodeNumbers } from "../storage/compute-episode-numbers.js";
 import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 import type { ProcessedVideo } from "../storage/processed-videos.js";

@@ -6,12 +6,6 @@ const fetchPodcastRssMock = mock(
 );
 const loadProcessedVideosMock = mock(async (): Promise<ProcessedVideo[]> => []);
 
-mock.module("../config/youtube.js", () => ({
-  youtubeConfig: {
-    canonicalRssUrl: "https://example.com/canonical.xml",
-  },
-}));
-
 mock.module("../storage/load-processed-videos.js", () => ({
   loadProcessedVideos: loadProcessedVideosMock,
 }));
@@ -24,8 +18,14 @@ const { findNextUnprocessedEpisode } =
   await import("./find-next-unprocessed-episode.js");
 
 beforeEach(() => {
-  fetchPodcastRssMock.mockClear();
-  loadProcessedVideosMock.mockClear();
+  fetchPodcastRssMock.mockReset();
+  loadProcessedVideosMock.mockReset();
+  fetchPodcastRssMock.mockImplementation(
+    async (_url: string | undefined): Promise<string | undefined> => undefined,
+  );
+  loadProcessedVideosMock.mockImplementation(
+    async (): Promise<ProcessedVideo[]> => [],
+  );
 });
 
 const baseVideo = {
@@ -71,7 +71,9 @@ describe("findNextUnprocessedEpisode", () => {
       },
     ]);
 
-    const result = await findNextUnprocessedEpisode();
+    const result = await findNextUnprocessedEpisode(
+      "https://example.com/canonical.xml",
+    );
 
     expect(fetchPodcastRssMock).toHaveBeenCalledWith(
       "https://example.com/canonical.xml",
@@ -112,7 +114,9 @@ describe("findNextUnprocessedEpisode", () => {
       },
     ]);
 
-    await expect(findNextUnprocessedEpisode()).resolves.toBeUndefined();
+    await expect(
+      findNextUnprocessedEpisode("https://example.com/canonical.xml"),
+    ).resolves.toBeUndefined();
   });
 
   test("throws when the next unmatched canonical item has no enclosure URL", async () => {
@@ -131,7 +135,9 @@ describe("findNextUnprocessedEpisode", () => {
     );
     loadProcessedVideosMock.mockImplementation(async () => []);
 
-    await expect(findNextUnprocessedEpisode()).rejects.toThrow(
+    await expect(
+      findNextUnprocessedEpisode("https://example.com/canonical.xml"),
+    ).rejects.toThrow(
       "Next unprocessed RSS episode is missing enclosure URL: Bring Me the Head of John the Baptist!",
     );
   });

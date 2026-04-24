@@ -31,6 +31,12 @@ interface DetectionResult {
   error?: string;
 }
 
+function hasVerifiedSegments(video: { segments?: EpisodeSegment[] }): boolean {
+  return (
+    video.segments?.some(segment => segment.confidence === "verified") ?? false
+  );
+}
+
 async function main() {
   console.log("🎬 Segment Detection Script\n");
 
@@ -59,10 +65,6 @@ async function main() {
   // Load all processed videos
   const videos = await loadProcessedVideos();
   console.log(`Found ${videos.length} processed episodes\n`);
-
-  // Helper to check if an episode has any verified segments
-  const hasVerifiedSegments = (v: (typeof videos)[0]) =>
-    v.segments?.some(s => s.confidence === "verified") ?? false;
 
   // Filter videos to process
   let toProcess: typeof videos;
@@ -213,7 +215,9 @@ async function main() {
 
   // Segment type breakdown
   console.log("\nSegments by type:");
-  const sortedTypes = Object.entries(globalStats).sort(([, a], [, b]) => b - a);
+  const sortedTypes = Object.entries(globalStats).toSorted(
+    ([, a], [, b]) => b - a,
+  );
   for (const [type, count] of sortedTypes) {
     console.log(`  ${SEGMENT_LABELS[type as SegmentType]}: ${count}`);
   }
