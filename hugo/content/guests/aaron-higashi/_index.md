@@ -13,4 +13,3 @@ works:
   - "1 and 2 Samuel for Normal People"
 imageAlt: "Portrait of Aaron Higashi"
 ---
-

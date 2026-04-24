@@ -52,7 +52,11 @@
           class="page-hero__meta page-hero__meta--headline guest-hero__meta panel">
           <span class="stat-display__number">{{ len $episodePages }}</span>
           <span class="stat-display__label"
-            >{{ if eq (len $episodePages) 1 }}Episode{{ else }}Episodes{{ end }}</span
+            >{{ if eq (len $episodePages) 1 }}
+              Episode
+            {{ else }}
+              Episodes
+            {{ end }}</span
           >
         </div>
       </div>
@@ -90,6 +94,7 @@
         </div>
       </section>
     {{ end }}
+
 
     <section class="guest-episodes" aria-label="Episode appearances">
       <h2 class="type-section-title guest-episodes__title">

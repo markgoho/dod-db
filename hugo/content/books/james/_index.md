@@ -24,7 +24,7 @@ quotes:
     speaker: "Dan McClellan"
     episode: 99
     timestamp: "00:27:13.220"
-  - text: "He also cut out Hebrews and James and Revelation. And it wasn't just the Apocrypha that he said, \"We're gonna put these in a separate section.\" That's what ultimately stuck, but not initially."
+  - text: 'He also cut out Hebrews and James and Revelation. And it wasn''t just the Apocrypha that he said, "We''re gonna put these in a separate section." That''s what ultimately stuck, but not initially.'
     speaker: "Dan McClellan"
     episode: 151
     timestamp: "00:07:14.721"

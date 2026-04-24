@@ -27,21 +27,19 @@
     "build:hugo": "bun run generate:tag-index && bun run generate:book-index && cd hugo && hugo --minify && bun run index"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.4",
+    "@eslint/js": "^10.0.1",
     "@types/bun": "latest",
-    "eslint": "^9.39.4",
+    "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-unicorn": "^62.0.0",
+    "eslint-plugin-unicorn": "^64.0.0",
     "firebase-tools": "^15.15.0",
     "globals": "^17.5.0",
     "jiti": "^2.6.1",
     "prettier": "^3.8.3",
     "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-organize-imports": "^4.3.0",
-    "typescript-eslint": "^8.58.2"
-  },
-  "peerDependencies": {
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.0"
   },
   "dependencies": {
     "@google/genai": "^1.50.1",
