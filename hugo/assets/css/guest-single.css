@@ -74,7 +74,13 @@
   filter: grayscale(1) contrast(1.1);
   height: 100%;
   object-fit: cover;
+  transition: filter 180ms ease;
   width: 100%;
+}
+
+.guest-profile-panel--portrait:hover .guest-hero__portrait-image,
+.guest-profile-panel--portrait:focus-within .guest-hero__portrait-image {
+  filter: grayscale(0) contrast(1);
 }
 
 .guest-profile-panel--works {
