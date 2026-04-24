@@ -47,11 +47,9 @@
   {{- end }}
 {{- else if and (eq .Type "guests") (eq .Kind "term") -}}
   <meta property="og:type" content="profile" />
-  {{- $profiles := index hugo.Data "guest-profiles" -}}
-  {{- $profile := index $profiles .Title -}}
-  {{- with $profile.image }}
-    <meta property="og:image" content="{{ . }}" />
-    <meta name="twitter:image" content="{{ . }}" />
+  {{- with .Resources.GetMatch "headshot.*" }}
+    <meta property="og:image" content="{{ urls.AbsURL .RelPermalink }}" />
+    <meta name="twitter:image" content="{{ urls.AbsURL .RelPermalink }}" />
   {{- end }}
 {{- else -}}
   <meta property="og:type" content="website" />

@@ -4,18 +4,32 @@
 {{ end }}
 
 {{ define "main" }}
-  {{ $profiles := index hugo.Data "guest-profiles" }}
   {{ $displayTitle := .Params.title | default .Title }}
-  {{ $profile := index $profiles $displayTitle }}
   {{ $titleTransitionName := partial "transition-name" (dict "prefix" "guests-title" "source" .Title) }}
   {{ $nav := partial "taxonomy-prev-next" (dict "page" . "taxonomy" "guests") }}
+  {{ $headshot := .Resources.GetMatch "headshot.*" }}
+  {{ $guestSlug := .Params.slug | default .Data.Term | default (urlize .Title) }}
+  {{ $normalizedTitle := replaceRE "[^A-Za-z0-9]+" "-" $displayTitle | lower | strings.TrimPrefix "-" | strings.TrimSuffix "-" }}
+  {{ $matchingNames := slice $displayTitle .Title }}
+  {{ if not (in $matchingNames $guestSlug) }}
+    {{ $matchingNames = $matchingNames | append $guestSlug }}
+  {{ end }}
+  {{ if not (in $matchingNames $normalizedTitle) }}
+    {{ $matchingNames = $matchingNames | append $normalizedTitle }}
+  {{ end }}
+  {{ $episodePages := slice }}
+  {{ range where site.RegularPages ".Section" "episodes" }}
+    {{ $guestNames := .Params.guests | default slice }}
+    {{ $guestSlugs := slice }}
+    {{ range $guestNames }}
+      {{ $guestSlugs = $guestSlugs | append (replaceRE "[^A-Za-z0-9]+" "-" . | lower | strings.TrimPrefix "-" | strings.TrimSuffix "-") }}
+    {{ end }}
+    {{ if or (gt (len (intersect $guestNames $matchingNames)) 0) (gt (len (intersect $guestSlugs $matchingNames)) 0) }}
+      {{ $episodePages = $episodePages | append . }}
+    {{ end }}
+  {{ end }}
   <section class="term-page term-page--episodes-archive guest-page">
-    <header
-      class="{{ if $profile }}
-        page-hero guest-hero--profile
-      {{ else }}
-        page-hero
-      {{ end }}">
+    <header class="page-hero guest-hero--profile">
       {{ partial "prev-next-nav" (dict
         "ariaLabel" "Guest navigation"
         "prev" $nav.prev
@@ -25,104 +39,64 @@
         "taxonomyName" "guests"
         )
       }}
-      {{ if $profile.image }}
-        <figure class="guest-hero__portrait panel">
-          <img
-            src="{{ $profile.image }}"
-            alt="{{ $profile.imageAlt }}"
-            class="guest-hero__portrait-image" />
-        </figure>
-      {{ end }}
       <div class="guest-hero__content">
         <h1
           class="guest-hero__title"
           style="view-transition-name: {{ $titleTransitionName }}">
           {{ $displayTitle }}
         </h1>
+        {{ with .Params.credentials }}
+          <p class="guest-hero__credentials">{{ . }}</p>
+        {{ end }}
         <div
           class="page-hero__meta page-hero__meta--headline guest-hero__meta panel">
-          <span class="stat-display__number">{{ len .Pages }}</span>
+          <span class="stat-display__number">{{ len $episodePages }}</span>
           <span class="stat-display__label"
-            >{{ if eq (len .Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
+            >{{ if eq (len $episodePages) 1 }}Episode{{ else }}Episodes{{ end }}</span
           >
         </div>
-        {{ if $profile.shortRole }}
-          <p class="guest-hero__summary-role panel panel--accent">
-            {{ $profile.shortRole }}
-          </p>
-        {{ end }}
-        {{ if $profile.dek }}
-          <p class="guest-hero__dek">{{ $profile.dek }}</p>
-        {{ end }}
-
       </div>
     </header>
 
-    {{ if $profile }}
-      <div class="guest-profile-grid">
-        {{ with $profile.bio }}
-          <section class="guest-profile-panel panel">
-            <h2 class="type-section-title guest-profile-panel__title">
-              Profile
-            </h2>
-            <p class="guest-profile-panel__body">{{ . }}</p>
-          </section>
-        {{ end }}
+    <div class="guest-profile-grid">
+      {{ with $headshot }}
+        <figure class="guest-profile-panel guest-profile-panel--portrait panel">
+          <img
+            src="{{ .RelPermalink }}"
+            alt="{{ $.Params.imageAlt | default (printf "Portrait of %s" $displayTitle) }}"
+            class="guest-hero__portrait-image" />
+        </figure>
+      {{ end }}
 
-        {{ if $profile.expertise }}
-          <section class="guest-profile-panel panel panel--muted">
-            <h2 class="type-section-title guest-profile-panel__title">
-              Focus Areas
-            </h2>
-            <ul class="guest-profile-chips" role="list">
-              {{ range $profile.expertise }}
-                <li class="chip guest-profile-chip">{{ . }}</li>
-              {{ end }}
-            </ul>
-          </section>
-        {{ end }}
+      {{ with .Params.summary }}
+        <section class="guest-profile-panel panel">
+          <h2 class="type-section-title guest-profile-panel__title">Summary</h2>
+          <p class="guest-profile-panel__body">{{ . }}</p>
+        </section>
+      {{ end }}
+    </div>
 
-        {{ if or $profile.works $profile.affiliations }}
-          <section class="guest-profile-panel panel">
-            <h2 class="type-section-title guest-profile-panel__title">
-              Selected Work
-            </h2>
-            {{ with $profile.works }}
-              <div class="guest-profile-list-block">
-                <p class="guest-profile-list-label type-eyebrow">Books</p>
-                <ul class="guest-profile-list">
-                  {{ range . }}
-                    <li>{{ . }}</li>
-                  {{ end }}
-                </ul>
-              </div>
+    {{ with .Params.works }}
+      <section class="guest-profile-panel guest-profile-panel--works panel">
+        <h2 class="type-section-title guest-profile-panel__title">
+          Selected Work
+        </h2>
+        <div class="guest-profile-list-block">
+          <ul class="guest-profile-list">
+            {{ range . }}
+              <li>{{ . }}</li>
             {{ end }}
-            {{ with $profile.affiliations }}
-              <div class="guest-profile-list-block">
-                <p class="guest-profile-list-label type-eyebrow">
-                  Affiliations
-                </p>
-                <ul class="guest-profile-list">
-                  {{ range . }}
-                    <li>{{ . }}</li>
-                  {{ end }}
-                </ul>
-              </div>
-            {{ end }}
-          </section>
-        {{ end }}
-      </div>
+          </ul>
+        </div>
+      </section>
     {{ end }}
 
-
     <section class="guest-episodes" aria-label="Episode appearances">
-      {{ if $profile }}
-        <h2 class="type-section-title guest-episodes__title">
-          Appearances on the show
-        </h2>
-      {{ end }}
+      <h2 class="type-section-title guest-episodes__title">
+        Appearances on the show
+      </h2>
       <div class="episodes-grid">
-        {{ range sort .Pages ".Params.episodeNumber" "desc" }}
+        {{ range sort $episodePages ".Params.episodeNumber" "desc" }}
           {{ partial "episode-card" (dict "episode" . "guestMode" "all" "badgeSource" "topics") }}
         {{ end }}
       </div>

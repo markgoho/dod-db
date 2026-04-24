@@ -1,29 +1,21 @@
-{{- $profiles := index hugo.Data "guest-profiles" -}}
-{{- $profile := index $profiles .Title -}}
+{{- $headshot := .Resources.GetMatch "headshot.*" -}}
 {{- $schema := dict
   "@context" "https://schema.org"
   "@type" "Person"
-  "name" .Title
+  "name" (.Params.title | default .Title)
   "url" .Permalink
 -}}
-{{- with $profile.image -}}
-  {{- $schema = merge $schema (dict "image" .) -}}
+{{- with $headshot -}}
+  {{- $schema = merge $schema (dict "image" (urls.AbsURL .RelPermalink)) -}}
 {{- end -}}
-{{- with $profile.shortRole -}}
+{{- with .Params.shortRole -}}
   {{- $schema = merge $schema (dict "jobTitle" .) -}}
 {{- end -}}
-{{- with $profile.bio -}}
+{{- with .Params.summary -}}
   {{- $schema = merge $schema (dict "description" .) -}}
 {{- end -}}
-{{- with $profile.expertise -}}
+{{- with .Params.expertise -}}
   {{- $schema = merge $schema (dict "knowsAbout" .) -}}
-{{- end -}}
-{{- with $profile.affiliations -}}
-  {{- $affiliations := slice -}}
-  {{- range . -}}
-    {{- $affiliations = $affiliations | append (dict "@type" "Organization" "name" .) -}}
-  {{- end -}}
-  {{- $schema = merge $schema (dict "affiliation" $affiliations) -}}
 {{- end -}}
 <script type="application/ld+json">
 {{ $schema | jsonify (dict "indent" "  ") | safeJS }}
