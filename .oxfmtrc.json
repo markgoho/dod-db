@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": ["hugo/**/*.html"],
+  "semi": true,
+  "trailingComma": "all",
+  "singleQuote": false,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "endOfLine": "lf",
+  "sortImports": {
+    "groups": [
+      ["builtin", "external", "type-builtin", "type-external"],
+      ["internal", "subpath", "type-internal"],
+      [
+        "parent",
+        "sibling",
+        "index",
+        "type-parent",
+        "type-sibling",
+        "type-index"
+      ],
+      ["style", "unknown"]
+    ],
+    "newlinesBetween": false,
+    "partitionByComment": false,
+    "sortSideEffects": false
+  }
+}

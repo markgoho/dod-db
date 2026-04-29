@@ -1,35 +1,48 @@
 #!/bin/bash
 
-# Get list of staged TypeScript/JavaScript files
-STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(ts|js|tsx|jsx|mts|cts)$')
+PRETTIER_EXIT=0
+OXFMT_EXIT=0
+OXLINT_EXIT=0
+HAS_FORMAT_TARGETS=false
 
-if [ -z "$STAGED_FILES" ]; then
-  # No TypeScript/JavaScript files staged, exit successfully
+run_with_paths() {
+  local command=("$@")
+  shift $#
+}
+
+while IFS= read -r -d '' staged_file; do
+  case "$staged_file" in
+    hugo/layouts/shortcodes/*.html)
+      ;;
+    hugo/*.html|hugo/**/*.html)
+      HAS_FORMAT_TARGETS=true
+      bunx prettier --write "$staged_file" || PRETTIER_EXIT=$?
+      if [ $PRETTIER_EXIT -eq 0 ]; then
+        git add "$staged_file"
+      fi
+      ;;
+    *.ts|*.js|*.tsx|*.jsx|*.mts|*.cts|*.json|*.md|*.css|*.scss|*.yml|*.yaml)
+      HAS_FORMAT_TARGETS=true
+      bunx oxfmt "$staged_file" || OXFMT_EXIT=$?
+      if [ $OXFMT_EXIT -eq 0 ]; then
+        git add "$staged_file"
+      fi
+      if [[ "$staged_file" != functions/* ]] && [[ "$staged_file" =~ \.(ts|js|tsx|jsx|mts|cts)$ ]]; then
+        bunx oxlint "$staged_file" || OXLINT_EXIT=$?
+      fi
+      ;;
+    *)
+      ;;
+  esac
+done < <(git diff --cached --name-only --diff-filter=ACM -z)
+
+if [ "$HAS_FORMAT_TARGETS" = false ] && [ $OXLINT_EXIT -eq 0 ]; then
   exit 0
 fi
 
-echo "Running Prettier and Oxlint on staged files..."
+echo "Running oxfmt, Prettier, and Oxlint on staged files..."
 
-# Run Prettier to format files
-echo "$STAGED_FILES" | xargs bunx prettier --write --ignore-unknown
-PRETTIER_EXIT=$?
-
-# Re-add formatted files to staging so the formatted versions are committed
-if [ $PRETTIER_EXIT -eq 0 ]; then
-  echo "$STAGED_FILES" | xargs git add
-fi
-
-# Run Oxlint on staged root files, leaving functions/ on its separate lint setup
-ROOT_STAGED_FILES=$(echo "$STAGED_FILES" | grep -v '^functions/' || true)
-if [ -n "$ROOT_STAGED_FILES" ]; then
-  echo "$ROOT_STAGED_FILES" | xargs bunx oxlint
-  OXLINT_EXIT=$?
-else
-  OXLINT_EXIT=0
-fi
-
-# Exit with error if either tool failed
-if [ $PRETTIER_EXIT -ne 0 ] || [ $OXLINT_EXIT -ne 0 ]; then
+if [ $PRETTIER_EXIT -ne 0 ] || [ $OXFMT_EXIT -ne 0 ] || [ $OXLINT_EXIT -ne 0 ]; then
   echo ""
   echo "❌ Pre-commit checks failed!"
   echo "Fix the issues above and try again."

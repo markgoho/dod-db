@@ -112,7 +112,9 @@ const _server = Bun.serve({
       if (!exists) {
         return new Response(
           "UI file not found. Please create tools/segment-verification.html",
-          { status: 404 },
+          {
+            status: 404,
+          },
         );
       }
       return new Response(file, {

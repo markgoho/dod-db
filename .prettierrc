@@ -10,13 +10,10 @@
   "bracketSpacing": true,
   "jsxSingleQuote": false,
   "quoteProps": "as-needed",
-  "plugins": [
-    "prettier-plugin-organize-imports",
-    "prettier-plugin-go-template"
-  ],
+  "plugins": ["prettier-plugin-go-template"],
   "overrides": [
     {
-      "files": "hugo/layouts/**/*.html",
+      "files": "hugo/**/*.html",
       "options": {
         "parser": "go-template",
         "goTemplateBracketSpacing": true,

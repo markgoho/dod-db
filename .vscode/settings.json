@@ -82,5 +82,8 @@
     "Vaticanus",
     "Wellhausen",
     "YHWH"
-  ]
+  ],
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": true,
+  "oxc.enable.oxfmt": true
 }

@@ -4,63 +4,63 @@ title = 'Metadata over Dogma'
 enableGitInfo = true
 
 [params]
-  description = "Increasing public access to the metadata, transcripts, references, and scholarly context surrounding the academic study of the Bible and religion"
+description = "Increasing public access to the metadata, transcripts, references, and scholarly context surrounding the academic study of the Bible and religion"
 
 [frontmatter]
-  lastmod = [':git', 'lastmod', ':fileModTime', 'date', 'publishDate']
+lastmod = [':git', 'lastmod', ':fileModTime', 'date', 'publishDate']
 
 [build]
-  [build.buildStats]
-    enable = false
+[build.buildStats]
+enable = false
 
 [module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.129.0"
+[module.hugoVersion]
+extended = true
+min = "0.129.0"
 
 [taxonomies]
-  tag = "tags"
-  topic = "topics"
-  segment = "segments"
-  guest = "guests"
-  book = "books"
+tag = "tags"
+topic = "topics"
+segment = "segments"
+guest = "guests"
+book = "books"
 
 # Disable RSS entirely
 [outputs]
-  home = ["html"]
-  section = ["html"]
-  taxonomy = ["html"]
-  term = ["html"]
+home = ["html"]
+section = ["html"]
+taxonomy = ["html"]
+term = ["html"]
 
 [permalinks]
-  episodes = "/episodes/:contentbasename/"
+episodes = "/episodes/:contentbasename/"
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true  # Allow HTML in markdown (needed for timestamp links)
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true # Allow HTML in markdown (needed for timestamp links)
 
 [[menu.main]]
-  name = "Episodes"
-  url = "/episodes/"
-  weight = 1
+name = "Episodes"
+url = "/episodes/"
+weight = 1
 
 [[menu.main]]
-  name = "Topics"
-  url = "/topics/"
-  weight = 2
+name = "Topics"
+url = "/topics/"
+weight = 2
 
 [[menu.main]]
-  name = "Books"
-  url = "/books/"
-  weight = 3
+name = "Books"
+url = "/books/"
+weight = 3
 
 [[menu.main]]
-  name = "Segments"
-  url = "/segments/"
-  weight = 4
+name = "Segments"
+url = "/segments/"
+weight = 4
 
 [[menu.main]]
-  name = "Guests"
-  url = "/guests/"
-  weight = 5
+name = "Guests"
+url = "/guests/"
+weight = 5

@@ -1,8 +1,8 @@
 {
   "name": "dod-db",
-  "module": "index.ts",
-  "type": "module",
   "private": true,
+  "type": "module",
+  "module": "index.ts",
   "scripts": {
     "prepare": "git config core.hooksPath .githooks",
     "emulators:start": "firebase emulators:start --only auth,firestore",
@@ -10,8 +10,13 @@
     "tools:api": "bun run src/scripts/tools-server.ts",
     "typecheck": "tsc --noEmit --project tsconfig.json",
     "lint": "oxlint .",
-    "format": "prettier --write . --ignore-unknown",
-    "check": "bun run lint && bun run format",
+    "format:oxfmt": "oxfmt .",
+    "format:prettier": "prettier --write \"hugo/**/*.html\"",
+    "format": "bun run format:oxfmt && bun run format:prettier",
+    "format:check:oxfmt": "oxfmt --check .",
+    "format:check:prettier": "prettier --check \"hugo/**/*.html\"",
+    "format:check": "bun run format:check:oxfmt && bun run format:check:prettier",
+    "check": "bun run lint && bun run typecheck && bun run format:check",
     "generate:tag-index": "bun run src/scripts/generate-tag-episode-index.ts",
     "generate:book-index": "bun run src/scripts/generate-book-episode-index.ts",
     "topic-page:gather": "bun run src/scripts/gather-topic-context.ts",
@@ -26,6 +31,14 @@
     "index": "bunx pagefind --site hugo/public",
     "build:hugo": "bun run generate:tag-index && bun run generate:book-index && cd hugo && hugo --minify && bun run index"
   },
+  "dependencies": {
+    "@google/genai": "^1.50.1",
+    "assemblyai": "^4.30.0",
+    "firebase-admin": "^13.8.0",
+    "llm-chunk": "^0.0.1",
+    "slugify": "^1.6.9",
+    "zod": "^4.3.6"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "firebase-tools": "^15.15.0",
@@ -35,15 +48,6 @@
     "oxlint-tsgolint": "^0.21.1",
     "prettier": "^3.8.3",
     "prettier-plugin-go-template": "^0.0.15",
-    "prettier-plugin-organize-imports": "^4.3.0",
     "typescript": "^6.0.3"
-  },
-  "dependencies": {
-    "@google/genai": "^1.50.1",
-    "assemblyai": "^4.30.0",
-    "firebase-admin": "^13.8.0",
-    "llm-chunk": "^0.0.1",
-    "slugify": "^1.6.9",
-    "zod": "^4.3.6"
   }
 }
