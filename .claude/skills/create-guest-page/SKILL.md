@@ -72,9 +72,11 @@ Prefer biographical sources in this order:
 4. conference or society pages
 5. other public professional pages
 
-For selected work destination links, start from works named in the episode transcript before branching out to public profiles, CVs, publisher pages, catalogs, or retailers. Be critical of search results for common names: do not add a work unless the source connects it to the same guest identity, not merely the same name. Confirm authorship using at least one strong signal such as the guest's institutional/profile page, CV, publisher author bio, episode discussion, OR a product/catalog page whose author details match the guest's known field, credentials, or biography. If attribution is ambiguous, omit the work or ask the user instead of guessing.
+For selected work destination links, start from works named in the episode transcript before branching out to public profiles, CVs, publisher pages, catalogs, or retailers. Use Playwriter as the default way to find these links in a normal browser, especially for books and other retailer pages that are difficult to verify with fetch-only tooling. Search by exact title plus author when possible, and use the browser results to navigate to a stable detail page rather than guessing URLs. Be critical of search results for common names: do not add a work unless the source connects it to the same guest identity, not merely the same name. Confirm authorship using at least one strong signal such as the guest's institutional/profile page, CV, publisher author bio, episode discussion, OR a product/catalog page whose author details match the guest's known field, credentials, or biography. If attribution is ambiguous, omit the work or ask the user instead of guessing.
 
-Once authorship is confirmed, look for a stable Amazon product page first. When using Amazon, include the approved Associates tag `elelohim0a-20` in the URL by adding `tag=elelohim0a-20` to the product page query string. If Amazon does not have the work, or a publisher/institutional/niche page is clearly more appropriate, use a reputable direct destination such as a publisher page, university press page, author page, journal page, or other legitimate bookseller. Prefer product/detail pages over search result pages. Do not use pirate sources, low-trust aggregators, redirect spam, or broken links.
+Once authorship is confirmed, use Playwriter to look for a stable Amazon product page first. When using Amazon, include the approved Associates tag `elelohim0a-20` in the URL by adding `tag=elelohim0a-20` to the product page query string. If Amazon does not have the work, or a publisher/institutional/niche page is clearly more appropriate, use a reputable direct destination such as a publisher page, university press page, author page, journal page, or other legitimate bookseller. Prefer product/detail pages over search result pages. Do not use pirate sources, low-trust aggregators, redirect spam, or broken links.
+
+Before saving, validate every selected-work URL you plan to include, using Playwriter when needed to confirm the destination in a real browser. Confirm that each link resolves to a live destination for the specific work rather than a 404, generic storefront/search page, CAPTCHA/interstitial, or unrelated product. If an Amazon product page is broken or unavailable, replace it with another stable destination instead of keeping the bad link.
 
 Use public sources to infer:
 
@@ -160,6 +162,8 @@ The save script will:
 Prefer stdin via a quoted heredoc. Do not create temporary JSON files unless stdin is genuinely unavailable.
 
 ### 6. Verify
+
+Before building, validate the selected-work links in the saved frontmatter. Use Playwriter as the default review path for this link check so you confirm the destinations in a normal browser. Open each destination and confirm it lands on the intended work page. If any link is broken, redirected to an unrelated item, or only points to a search/results page when a stable product/detail page should exist, fix the frontmatter first.
 
 Run:
 

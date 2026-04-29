@@ -1,7 +1,3 @@
-.guest-page {
-  margin-block-start: var(--space-xl);
-}
-
 .guest-hero__content {
   align-content: start;
   display: grid;

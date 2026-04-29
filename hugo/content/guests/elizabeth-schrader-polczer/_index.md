@@ -8,7 +8,6 @@ works:
     url: "https://doi.org/10.1017/S0017816021000173"
   - title: "Can We Locate the Magdalena? Considerations on Literary Geography in John 12 and 19"
     url: "https://doi.org/10.15699/jbl.1402.2021.910"
-  - title: "The Magdalene"
-    url: "https://www.elizabethschrader.com/music"
+  - "The Magdalene"
 imageAlt: "Portrait of Elizabeth Schrader Polczer"
 ---
