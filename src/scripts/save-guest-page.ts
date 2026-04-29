@@ -1,5 +1,13 @@
 import { titleToSlug } from "../utils/title-to-slug.js";
 
+type LinkedWorkInput = {
+  title?: unknown;
+  url?: unknown;
+};
+
+type WorkInput = string | LinkedWorkInput;
+type NormalizedWork = string | { title: string; url: string };
+
 interface SaveGuestPageInput {
   guestName: string;
   guestSlug?: string;
@@ -8,7 +16,7 @@ interface SaveGuestPageInput {
   credentials: string;
   summary: string;
   expertise?: string[];
-  works?: string[];
+  works?: WorkInput[];
   imageAlt?: string;
   headshotUrl: string;
 }
@@ -43,6 +51,59 @@ function renderStringList(fieldName: string, values: string[]): string[] {
   return [fieldName, ...values.map(value => `  - ${quote(value)}`)];
 }
 
+function isHttpUrl(value: string): boolean {
+  try {
+    const url = new URL(value);
+    return url.protocol === "http:" || url.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
+function normalizeWorks(values: WorkInput[]): NormalizedWork[] {
+  return values.flatMap((value, index) => {
+    if (typeof value === "string") {
+      const title = value.trim();
+      return title ? [title] : [];
+    }
+
+    if (!value || typeof value !== "object" || Array.isArray(value)) {
+      throw new Error(`works[${index}] must be a string or linked work object`);
+    }
+
+    if (typeof value.title !== "string" || typeof value.url !== "string") {
+      throw new Error(
+        `works[${index}] must include string title and url fields`,
+      );
+    }
+
+    const title = value.title.trim();
+    const url = value.url.trim();
+    if (!title || !url) {
+      throw new Error(
+        `works[${index}] must include non-empty title and url fields`,
+      );
+    }
+
+    if (!isHttpUrl(url)) {
+      throw new Error(`works[${index}].url must be an HTTP or HTTPS URL`);
+    }
+
+    return [{ title, url }];
+  });
+}
+
+function renderWorkList(values: NormalizedWork[]): string[] {
+  return [
+    "works:",
+    ...values.flatMap(value =>
+      typeof value === "string"
+        ? [`  - ${quote(value)}`]
+        : [`  - title: ${quote(value.title)}`, `    url: ${quote(value.url)}`],
+    ),
+  ];
+}
+
 function buildFrontmatter(
   input: SaveGuestPageInput,
   guestSlug: string,
@@ -66,9 +127,9 @@ function buildFrontmatter(
     lines.push(...renderStringList("expertise:", expertise));
   }
 
-  const works = (input.works ?? []).map(value => value.trim()).filter(Boolean);
+  const works = normalizeWorks(input.works ?? []);
   if (works.length > 0) {
-    lines.push(...renderStringList("works:", works));
+    lines.push(...renderWorkList(works));
   }
 
   if (input.imageAlt?.trim()) {

@@ -83,12 +83,27 @@
     {{ with .Params.works }}
       <section class="guest-profile-panel guest-profile-panel--works panel">
         <h2 class="type-section-title guest-profile-panel__title">
-          Selected Work
+          Selected Works
         </h2>
         <div class="guest-profile-list-block">
           <ul class="guest-profile-list">
             {{ range . }}
-              <li>{{ . }}</li>
+              {{ if reflect.IsMap . }}
+                {{ $title := .title | default .Title }}
+                {{ with .url }}
+                  <li>
+                    <a href="{{ . }}" target="_blank" rel="noopener noreferrer"
+                      >{{ $title }}</a
+                    >
+                  </li>
+                {{ else }}
+                  {{ with $title }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                {{ end }}
+              {{ else }}
+                <li>{{ . }}</li>
+              {{ end }}
             {{ end }}
           </ul>
         </div>

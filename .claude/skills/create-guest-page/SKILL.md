@@ -42,8 +42,11 @@ Use the gathered episodes to inspect how the hosts introduce the guest and what 
 At minimum:
 
 - read the opening introduction from the guest's first appearance
-- if needed, read the opening of additional appearances to confirm titles, institutional affiliations, or research areas
+- inspect every gathered appearance for titles, institutional affiliations, research areas, and works discussed on the show
+- search each transcript for work cues such as `book`, `article`, `essay`, `chapter`, `volume`, `commentary`, `author`, `wrote`, `written`, `published`, `forthcoming`, and known publisher/series names
 - use that evidence to draft the 1 to 2 sentence summary
+- start the selected works list with works explicitly named in the episode when the hosts or guest discuss a specific book, article, project, or publication
+- do not stop after finding one good work; continue through every appearance before deciding the selected works list is complete
 
 Prefer the show's own introduction language for:
 
@@ -58,10 +61,10 @@ Search public sources on the web for:
 
 - credentials
 - current institutional affiliation, if relevant for understanding the credential line
-- selected works
+- selected works with destination links
 - headshot image URL
 
-Prefer sources in this order:
+Prefer biographical sources in this order:
 
 1. university or institutional profile pages
 2. faculty or scholar CV pages
@@ -69,11 +72,15 @@ Prefer sources in this order:
 4. conference or society pages
 5. other public professional pages
 
+For selected work destination links, start from works named in the episode transcript before branching out to public profiles, CVs, publisher pages, catalogs, or retailers. Be critical of search results for common names: do not add a work unless the source connects it to the same guest identity, not merely the same name. Confirm authorship using at least one strong signal such as the guest's institutional/profile page, CV, publisher author bio, episode discussion, OR a product/catalog page whose author details match the guest's known field, credentials, or biography. If attribution is ambiguous, omit the work or ask the user instead of guessing.
+
+Once authorship is confirmed, look for a stable Amazon product page first. When using Amazon, include the approved Associates tag `elelohim0a-20` in the URL by adding `tag=elelohim0a-20` to the product page query string. If Amazon does not have the work, or a publisher/institutional/niche page is clearly more appropriate, use a reputable direct destination such as a publisher page, university press page, author page, journal page, or other legitimate bookseller. Prefer product/detail pages over search result pages. Do not use pirate sources, low-trust aggregators, redirect spam, or broken links.
+
 Use public sources to infer:
 
 - `credentials` — keep this short and traditional, such as `PhD candidate`, `PhD`, `M.Div.`, `M.Ed.`, or similar. Do not overload this line with affiliations or biography prose.
-- `works` — a short non-exhaustive list, usually 3 to 5 items max, strongest or most relevant first
-- `headshotUrl` — use a stable public image URL when available
+- `works` — a short non-exhaustive list, usually 3 to 5 items max, strongest or most relevant first; use linked objects with `title` and `url` when a trustworthy destination is available
+- `headshotUrl` — use a stable public image URL only after confirming it is a real portrait or profile photo of the guest. Prefer the guest's own About/profile page image, page `og:image`, faculty profile image, or author headshot over homepage hero images, decorative art, manuscript images, book covers, logos, lecture slides, or other topical illustrations.
 - `imageAlt` — plain literal alt text, usually `Portrait of <Name>`
 
 If the available public evidence is weak or conflicting, ask the user instead of guessing. Do not ask the user to provide information that can be found confidently from a public institutional profile, CV, publisher page, or the guest's episode introductions.
@@ -97,7 +104,8 @@ Authoring rules:
 - `guestSlug` should normally be the gathered slug unless project slug policy requires a different normalized form
 - `credentials` must be short and readable
 - `summary` must be 1 to 2 sentences and should describe the guest's area of work, not just restate their name
-- `works` should be a short non-exhaustive list, usually 3 to 5 items max
+- `works` should be a short non-exhaustive list, usually 3 to 5 items max; prefer episode-discussed works first, verify every work belongs to the same guest before adding it, prefer `{ "title": "...", "url": "..." }` objects, and use plain strings only when no trustworthy destination link can be found
+- before saving, do a final selected-works audit: list every gathered appearance mentally, confirm each was checked for work mentions, confirm every included work has same-author evidence, and confirm any omitted candidate was skipped because it is forthcoming/unavailable, weakly attributed, less relevant, or lacks a trustworthy destination
 - `expertise` is optional and should only be used if it adds clear value
 - `imageAlt` should be plain, literal alt text
 
@@ -112,7 +120,12 @@ Create a JSON object in this shape:
   "title": "Aaron Higashi",
   "credentials": "PhD candidate",
   "summary": "Aaron Higashi is a public-facing Bible scholar whose work helps readers approach scripture with historical awareness and contextual sensitivity.",
-  "works": ["1 and 2 Samuel for Normal People"],
+  "works": [
+    {
+      "title": "1 and 2 Samuel for Normal People",
+      "url": "https://www.amazon.com/dp/example?tag=elelohim0a-20"
+    }
+  ],
   "imageAlt": "Portrait of Aaron Higashi",
   "headshotUrl": "https://example.com/headshot.jpg"
 }
@@ -164,6 +177,8 @@ The Hugo server is already running in this project, so do not start it.
 
 If aliases are present, do not use them for localhost QA if they redirect to the deployed site. Prefer the canonical localhost URL only.
 
+Before considering the page complete, visually inspect the downloaded `headshot.*` file or rendered page image. Confirm it shows the guest's face as a suitable profile photo, not a manuscript, book cover, logo, decorative artwork, placeholder, cropped body part, or unrelated contextual image. If you cannot visually confirm the photo is an appropriate portrait, do not use it; find a better source or ask the user for help.
+
 ### 7. Editorial pass
 
 Check that:
@@ -172,7 +187,7 @@ Check that:
 - the credentials line is concise and credential-like rather than biographical
 - the summary is concise, specific, and supported by episode introductions and public profile evidence
 - the episode count matches the gathered context
-- the selected works list is clean and non-exhaustive
+- the selected works list is clean, non-exhaustive, and uses trustworthy destination links where available
 - the episode grid shows the guest's appearances
 
 If any of those are weak, tighten them before finishing.

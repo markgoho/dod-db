@@ -53,7 +53,6 @@
 
 .guest-profile-panel__body {
   margin: 0;
-  max-width: var(--content-max-width-copy);
 }
 
 .guest-profile-list-block {
