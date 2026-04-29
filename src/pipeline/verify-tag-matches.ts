@@ -52,7 +52,7 @@ const CONTEXT_MAX_WIDTH = 64; // Max width for wrapped context text
  * @returns Text with ANSI codes removed
  */
 function stripAnsiCodes(text: string): string {
-  // eslint-disable-next-line no-control-regex -- ANSI escape sequences contain control characters
+  // oxlint-disable-next-line no-control-regex -- ANSI escape sequences contain control characters.
   return text.replaceAll(/\u001B\[\d+m/g, "");
 }
 
