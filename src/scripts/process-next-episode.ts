@@ -9,27 +9,27 @@
 import { processRssEpisode } from "../pipeline/rss-audio-processor.js";
 import { findNextUnprocessedEpisode } from "../rss/index.js";
 
-const arguments_ = process.argv.slice(2);
-const force = arguments_.includes("--force");
+const args = process.argv.slice(2);
+const force = args.includes("--force");
 
-const rssUrlIndex = arguments_.findIndex(argument =>
+const rssUrlIndex = args.findIndex(argument =>
   argument.startsWith("--rss-url"),
 );
 const rssUrl =
   rssUrlIndex === -1
     ? undefined
-    : arguments_[rssUrlIndex]?.includes("=")
-      ? arguments_[rssUrlIndex]?.split("=")[1]
-      : arguments_[rssUrlIndex + 1];
+    : args[rssUrlIndex]?.includes("=")
+      ? args[rssUrlIndex]?.split("=")[1]
+      : args[rssUrlIndex + 1];
 
-const startFromIndex = arguments_.findIndex(argument =>
+const startFromIndex = args.findIndex(argument =>
   argument.startsWith("--start-from"),
 );
 let startFrom: "correct" | "segment-detection" | "extract-tags" | undefined;
 if (startFromIndex !== -1) {
-  const value = arguments_[startFromIndex]?.includes("=")
-    ? arguments_[startFromIndex]?.split("=")[1]
-    : arguments_[startFromIndex + 1];
+  const value = args[startFromIndex]?.includes("=")
+    ? args[startFromIndex]?.split("=")[1]
+    : args[startFromIndex + 1];
   if (
     value !== "correct" &&
     value !== "segment-detection" &&
@@ -67,18 +67,18 @@ function printUsage(): void {
 const consumedIndexes = new Set<number>();
 if (rssUrlIndex !== -1) {
   consumedIndexes.add(rssUrlIndex);
-  if (!arguments_[rssUrlIndex]?.includes("=")) {
+  if (!args[rssUrlIndex]?.includes("=")) {
     consumedIndexes.add(rssUrlIndex + 1);
   }
 }
 if (startFromIndex !== -1) {
   consumedIndexes.add(startFromIndex);
-  if (!arguments_[startFromIndex]?.includes("=")) {
+  if (!args[startFromIndex]?.includes("=")) {
     consumedIndexes.add(startFromIndex + 1);
   }
 }
 
-const unexpectedArguments = arguments_.filter(
+const unexpectedArguments = args.filter(
   (argument, index) =>
     !consumedIndexes.has(index) &&
     !argument.startsWith("--") &&

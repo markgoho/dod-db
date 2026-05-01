@@ -3,18 +3,18 @@ import { fetchPodcastRss, parsePodcastRss } from "../rss/index.js";
 import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 
-const arguments_ = process.argv.slice(2);
-const episodeArgumentIndex = arguments_.indexOf("--episode");
-const titleArgumentIndex = arguments_.indexOf("--title");
-const rssUrlArgumentIndex = arguments_.indexOf("--rss-url");
-const replaceExisting = arguments_.includes("--replace-existing");
+const args = process.argv.slice(2);
+const episodeArgumentIndex = args.indexOf("--episode");
+const titleArgumentIndex = args.indexOf("--title");
+const rssUrlArgumentIndex = args.indexOf("--rss-url");
+const replaceExisting = args.includes("--replace-existing");
 
 function getArgumentValue(index: number): string | undefined {
   if (index === -1) {
     return undefined;
   }
 
-  return arguments_[index + 1];
+  return args[index + 1];
 }
 
 function printUsage(): void {

@@ -10,29 +10,29 @@
 
 import { processYouTubeVideo } from "../pipeline/youtube-processor.js";
 
-const arguments_ = process.argv.slice(2);
-const videoUrl = arguments_[0];
-const force = arguments_.includes("--force");
+const args = process.argv.slice(2);
+const videoUrl = args[0];
+const force = args.includes("--force");
 
-const audioUrlIndex = arguments_.findIndex(argument =>
+const audioUrlIndex = args.findIndex(argument =>
   argument.startsWith("--audio-url"),
 );
 const audioUrl =
   audioUrlIndex === -1
     ? undefined
-    : arguments_[audioUrlIndex]?.includes("=")
-      ? arguments_[audioUrlIndex]?.split("=")[1]
-      : arguments_[audioUrlIndex + 1];
+    : args[audioUrlIndex]?.includes("=")
+      ? args[audioUrlIndex]?.split("=")[1]
+      : args[audioUrlIndex + 1];
 
 // Parse --start-from flag
-const startFromIndex = arguments_.findIndex(argument =>
+const startFromIndex = args.findIndex(argument =>
   argument.startsWith("--start-from"),
 );
 let startFrom: "correct" | "segment-detection" | "extract-tags" | undefined;
 if (startFromIndex !== -1) {
-  const value = arguments_[startFromIndex]?.includes("=")
-    ? arguments_[startFromIndex]?.split("=")[1]
-    : arguments_[startFromIndex + 1];
+  const value = args[startFromIndex]?.includes("=")
+    ? args[startFromIndex]?.split("=")[1]
+    : args[startFromIndex + 1];
   if (
     value !== "correct" &&
     value !== "segment-detection" &&

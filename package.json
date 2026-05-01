@@ -32,20 +32,20 @@
     "build:hugo": "bun run generate:tag-index && bun run generate:book-index && cd hugo && hugo --minify && bun run index"
   },
   "dependencies": {
-    "@google/genai": "^1.50.1",
-    "assemblyai": "^4.30.0",
+    "@google/genai": "^1.51.0",
+    "assemblyai": "^4.32.1",
     "firebase-admin": "^13.8.0",
     "llm-chunk": "^0.0.1",
     "slugify": "^1.6.9",
-    "zod": "^4.3.6"
+    "zod": "^4.4.1"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "firebase-tools": "^15.15.0",
+    "firebase-tools": "^15.16.0",
     "globals": "^17.5.0",
     "jiti": "^2.6.1",
-    "oxlint": "^1.20.0",
-    "oxlint-tsgolint": "^0.21.1",
+    "oxlint": "^1.62.0",
+    "oxlint-tsgolint": "^0.22.1",
     "prettier": "^3.8.3",
     "prettier-plugin-go-template": "^0.0.15",
     "typescript": "^6.0.3"

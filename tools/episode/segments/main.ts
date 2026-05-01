@@ -105,10 +105,10 @@ async function init(): Promise<void> {
 }
 
 function setupAudio(): void {
-  const audioElement_ = document.querySelector("#audio") as HTMLAudioElement;
-  if (!audioElement_) return;
+  const audioElementNode = document.querySelector("#audio") as HTMLAudioElement;
+  if (!audioElementNode) return;
 
-  audioElement = audioElement_;
+  audioElement = audioElementNode;
 
   if (episodeHasAudio && videoId) {
     audioElement.src = `/api/audio/${videoId}`;

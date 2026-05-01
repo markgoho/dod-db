@@ -96,12 +96,12 @@ function displayCandidates(candidates: CorrectionCandidate[]) {
 }
 
 // Parse command line args
-const arguments_ = process.argv.slice(2);
+const args = process.argv.slice(2);
 let minConfidence = 50;
 
-for (let index = 0; index < arguments_.length; index++) {
-  const nextArgument = arguments_[index + 1];
-  if (arguments_[index] === "--min-confidence" && nextArgument) {
+for (let index = 0; index < args.length; index++) {
+  const nextArgument = args[index + 1];
+  if (args[index] === "--min-confidence" && nextArgument) {
     minConfidence = Number.parseInt(nextArgument, 10);
     if (
       Number.isNaN(minConfidence) ||

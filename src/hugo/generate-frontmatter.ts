@@ -20,10 +20,10 @@ async function loadFreshTagVocabulary(): Promise<readonly TagDefinition[]> {
   try {
     const url = new URL("../config/tag-vocabulary.ts", import.meta.url);
     url.searchParams.set("t", Date.now().toString());
-    const module_ = (await import(url.href)) as {
+    const module = (await import(url.href)) as {
       tagVocabulary: readonly TagDefinition[];
     };
-    return module_.tagVocabulary;
+    return module.tagVocabulary;
   } catch {
     return tagVocabulary;
   }

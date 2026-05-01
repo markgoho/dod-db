@@ -35,19 +35,19 @@ function levenshteinDistance(string1: string, string2: string): number {
   }
 
   for (let index = 1; index <= m; index++) {
-    for (let index_ = 1; index_ <= n; index_++) {
+    for (let columnIndex = 1; columnIndex <= n; columnIndex++) {
       const currentRow = dp[index];
       const previousRow = dp[index - 1];
       if (!currentRow || !previousRow) continue;
 
-      if (string1[index - 1] === string2[index_ - 1]) {
-        const value = previousRow[index_ - 1];
-        currentRow[index_] = value ?? 0;
+      if (string1[index - 1] === string2[columnIndex - 1]) {
+        const value = previousRow[columnIndex - 1];
+        currentRow[columnIndex] = value ?? 0;
       } else {
-        const deletion = previousRow[index_] ?? 0;
-        const insertion = currentRow[index_ - 1] ?? 0;
-        const substitution = previousRow[index_ - 1] ?? 0;
-        currentRow[index_] = Math.min(
+        const deletion = previousRow[columnIndex] ?? 0;
+        const insertion = currentRow[columnIndex - 1] ?? 0;
+        const substitution = previousRow[columnIndex - 1] ?? 0;
+        currentRow[columnIndex] = Math.min(
           deletion + 1,
           insertion + 1,
           substitution + 1,
