@@ -21,6 +21,7 @@ export type SegmentType =
   | "ex-eventu"
   | "getting-angelic"
   | "getting-demonic"
+  | "get-topical"
   | "grail"
   | "here-we-go"
   | "historys-heresies"
@@ -77,6 +78,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "ex-eventu": "Ex Eventu",
   "getting-angelic": "Getting Angelic",
   "getting-demonic": "Getting Demonic",
+  "get-topical": "Get Topical",
   grail: "The Grail",
   "here-we-go": "Here We Go!",
   "historys-heresies": "History's Heresies",
@@ -134,6 +136,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "ex-eventu": "#6366f1", // indigo-500 (scholarly/prophecy)
   "getting-angelic": "#fbbf24", // amber-400 (golden/heavenly)
   "getting-demonic": "#b91c1c", // red-700 (dark red)
+  "get-topical": "#22c55e", // green-500 (topical focus)
   grail: "#eab308", // yellow-500 (legendary golden relic)
   "here-we-go": "#f97316", // orange-500 (energetic/exclamatory)
   "historys-heresies": "#dc2626", // red-600 (fiery/condemned)
@@ -342,6 +345,7 @@ export const SEGMENT_PATTERNS: Record<
   "by-the-numbers": [/by the numbers/i, /welcome to.*by the numbers/i],
   "getting-angelic": [/getting angelic/i, /welcome to.*getting angelic/i],
   "getting-demonic": [/getting demonic/i, /welcome to.*getting demonic/i],
+  "get-topical": [/get topical/i, /welcome to.*get topical/i, /let'?s.*get topical/i],
   grail: [/the grail/i, /welcome to.*the grail/i, /let'?s do.*the grail/i],
   "here-we-go": [
     /here we go!?/i,
@@ -437,6 +441,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Exploring angels, heavenly beings, and divine messengers in scripture",
   "getting-demonic":
     "Exploring demons, evil spirits, and malevolent beings in scripture",
+  "get-topical":
+    "Discussing a focused topical issue, theme, or concept related to biblical studies and religion",
   grail:
     "Discussion of the Grail as relic, legend, literary tradition, or symbol, including holy grail narratives and interpretations",
   "here-we-go":
