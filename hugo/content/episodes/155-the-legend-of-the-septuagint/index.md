@@ -21,6 +21,7 @@ topics:
   - Josiah
   - King James Bible
   - Sennacherib
+  - Philo of Alexandria
 tags:
   - Letter of Aristeas
   - Jerusalem
@@ -29,7 +30,6 @@ tags:
   - Jerome
   - Moses
   - Deuteronomy
-  - Philo of Alexandria
   - Rachel
   - Egyptians
   - Essenes

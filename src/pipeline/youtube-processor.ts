@@ -24,7 +24,7 @@ import { generateTranscriptFilename } from "./generate-transcript-filename.js";
 import { identifySegmentTypes } from "./identify-segment-types.js";
 import { identifySpeakers } from "./identify-speakers.js";
 import { analyzeCorrections } from "./learn-corrections.js";
-import { transcribeAudio } from "./transcribe.js";
+import { transcribeAudio, type TranscriptGranularity } from "./transcribe.js";
 import type { VideoMetadata } from "./youtube.js";
 
 export interface ProcessYouTubeVideoResult {
@@ -38,6 +38,7 @@ export interface ProcessYouTubeVideoOptions {
   force?: boolean;
   startFrom?: "correct" | "segment-detection" | "extract-tags";
   audioUrl?: string;
+  transcriptGranularity?: TranscriptGranularity;
 }
 
 /**
@@ -293,7 +294,9 @@ export async function processYouTubeVideo(
     console.log(`Audio downloaded to: ${audioPath}`);
 
     console.log("Transcribing audio...");
-    const transcription = await transcribeAudio(audioPath);
+    const transcription = await transcribeAudio(audioPath, {
+      granularity: options.transcriptGranularity,
+    });
 
     console.log("Identifying speakers...");
     const { transcript: identified } = await identifySpeakers(transcription, {

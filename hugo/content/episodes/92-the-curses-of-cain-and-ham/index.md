@@ -13,6 +13,7 @@ topics:
   - Septuagint
   - Angel
   - Holy Spirit
+  - Philo of Alexandria
 tags:
   - Ham
   - Cain
@@ -30,7 +31,6 @@ tags:
   - Babylon
   - Joachim
   - Abraham
-  - Philo of Alexandria
   - Ugarit
   - Abel
   - Adam

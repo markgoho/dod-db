@@ -61,10 +61,15 @@ function isHttpUrl(value: string): boolean {
 }
 
 function normalizeWorks(values: WorkInput[]): NormalizedWork[] {
-  return values.flatMap((value, index) => {
+  const works: NormalizedWork[] = [];
+
+  for (const [index, value] of values.entries()) {
     if (typeof value === "string") {
       const title = value.trim();
-      return title ? [title] : [];
+      if (title) {
+        works.push(title);
+      }
+      continue;
     }
 
     if (!value || typeof value !== "object" || Array.isArray(value)) {
@@ -89,8 +94,10 @@ function normalizeWorks(values: WorkInput[]): NormalizedWork[] {
       throw new Error(`works[${index}].url must be an HTTP or HTTPS URL`);
     }
 
-    return [{ title, url }];
-  });
+    works.push({ title, url });
+  }
+
+  return works;
 }
 
 function renderWorkList(values: NormalizedWork[]): string[] {

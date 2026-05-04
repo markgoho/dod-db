@@ -14,6 +14,7 @@ topics:
   - Satan
   - Omni Attributes
   - YHWH
+  - Philo of Alexandria
 tags:
   - Elijah
   - Samuel
@@ -25,7 +26,6 @@ tags:
   - John
   - Judah
   - Judaism
-  - Philo of Alexandria
   - Samaria
 books:
   - 2 Kings

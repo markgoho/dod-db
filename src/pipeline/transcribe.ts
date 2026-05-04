@@ -5,6 +5,8 @@ const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY!,
 });
 
+export type TranscriptGranularity = "speaker" | "sentence";
+
 /**
  * Format milliseconds into [HH:MM:SS.mmm] timestamp format
  */
@@ -27,7 +29,10 @@ function formatTimestamp(milliseconds: number): string {
  * @param audioFilePath - Path to local audio file (MP3, M4A, WAV, etc.)
  * @returns Formatted transcript with sentence-level timestamps
  */
-export async function transcribeAudio(audioFilePath: string): Promise<string> {
+export async function transcribeAudio(
+  audioFilePath: string,
+  options: { granularity?: TranscriptGranularity } = {},
+): Promise<string> {
   // Upload local audio file to AssemblyAI
   console.log("  Uploading audio to AssemblyAI...");
   const uploadedUrl = await client.files.upload(audioFilePath);
@@ -50,8 +55,20 @@ export async function transcribeAudio(audioFilePath: string): Promise<string> {
     const sentencesResponse = await client.transcripts.sentences(transcript.id);
 
     if (sentencesResponse.sentences && sentencesResponse.sentences.length > 0) {
-      // Group consecutive sentences by speaker to reduce line count
-      // Only emit a timestamp when the speaker changes
+      const sentenceLines = sentencesResponse.sentences.map(sentence => {
+        const firstWord = sentence.words?.[0];
+        const timestamp = firstWord?.start ?? sentence.start;
+        const formattedTime = formatTimestamp(timestamp);
+        const speakerLabel = sentence.speaker
+          ? `Speaker ${sentence.speaker}`
+          : "Unknown";
+        return `${formattedTime} ${speakerLabel}: ${sentence.text}`;
+      });
+
+      if (options.granularity === "sentence") {
+        return sentenceLines.join("\n");
+      }
+
       const groups: Array<{
         timestamp: number;
         speaker: string;

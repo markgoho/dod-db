@@ -1682,10 +1682,6 @@
         "mentions": 7
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 7
-      },
-      {
         "tag": "Judaism",
         "mentions": 6
       },
@@ -1760,6 +1756,10 @@
       {
         "tag": "Univocality",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 7
       }
     ],
     "segments": [
@@ -3451,10 +3451,6 @@
         "mentions": 5
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 5
-      },
-      {
         "tag": "Romans",
         "mentions": 5
       },
@@ -3545,6 +3541,10 @@
       {
         "tag": "Tower of Babel",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 5
       }
     ],
     "segments": [
@@ -4722,10 +4722,6 @@
         "mentions": 2
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 2
-      },
-      {
         "tag": "Rapture",
         "mentions": 2
       },
@@ -4772,6 +4768,10 @@
       {
         "tag": "Solomon",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -5622,10 +5622,6 @@
         "mentions": 6
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 6
-      },
-      {
         "tag": "Adultery",
         "mentions": 4
       },
@@ -5724,6 +5720,10 @@
       {
         "tag": "Univocality",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 6
       }
     ],
     "segments": [
@@ -7655,10 +7655,6 @@
         "mentions": 2
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 2
-      },
-      {
         "tag": "Septuagint",
         "mentions": 2
       },
@@ -7693,6 +7689,10 @@
       {
         "tag": "provenance",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -9442,15 +9442,15 @@
         "mentions": 1
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 1
-      },
-      {
         "tag": "Samaria",
         "mentions": 1
       },
       {
         "tag": "YHWH",
+        "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
         "mentions": 1
       }
     ],
@@ -10640,10 +10640,6 @@
         "mentions": 16
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 10
-      },
-      {
         "tag": "Judaism",
         "mentions": 6
       },
@@ -10746,6 +10742,10 @@
       {
         "tag": "Tower of Babel",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 10
       }
     ],
     "segments": [
@@ -15166,10 +15166,6 @@
         "mentions": 1
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 1
-      },
-      {
         "tag": "Sadducees",
         "mentions": 1
       },
@@ -15183,6 +15179,10 @@
       },
       {
         "tag": "Syria",
+        "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
         "mentions": 1
       }
     ],
@@ -16240,10 +16240,6 @@
         "mentions": 2
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 2
-      },
-      {
         "tag": "Ugarit",
         "mentions": 2
       },
@@ -16298,6 +16294,10 @@
       {
         "tag": "Nebuchadnezzar",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -17740,11 +17740,11 @@
         "mentions": 1
       },
       {
-        "tag": "Philo of Alexandria",
+        "tag": "Romans",
         "mentions": 1
       },
       {
-        "tag": "Romans",
+        "tag": "Philo of Alexandria",
         "mentions": 1
       }
     ],
@@ -18511,10 +18511,6 @@
         "mentions": 2
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 2
-      },
-      {
         "tag": "Sennacherib",
         "mentions": 2
       },
@@ -18529,6 +18525,10 @@
       {
         "tag": "YHWH",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -21690,6 +21690,10 @@
       {
         "tag": "Torah",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -22568,10 +22572,6 @@
         "mentions": 13
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 7
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 6
       },
@@ -22658,6 +22658,10 @@
       {
         "tag": "Trinity",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 7
       }
     ],
     "segments": [
@@ -22993,10 +22997,6 @@
         "mentions": 1
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 1
-      },
-      {
         "tag": "Protestantism",
         "mentions": 1
       },
@@ -23010,6 +23010,10 @@
       },
       {
         "tag": "Torah",
+        "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
         "mentions": 1
       }
     ],
@@ -23719,11 +23723,11 @@
         "mentions": 1
       },
       {
-        "tag": "Philo of Alexandria",
+        "tag": "Pontius Pilate",
         "mentions": 1
       },
       {
-        "tag": "Pontius Pilate",
+        "tag": "Philo of Alexandria",
         "mentions": 1
       }
     ],
@@ -23808,10 +23812,6 @@
         "mentions": 3
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 3
-      },
-      {
         "tag": "Angel",
         "mentions": 2
       },
@@ -23870,6 +23870,10 @@
       {
         "tag": "Univocality",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -24950,10 +24954,6 @@
         "mentions": 1
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 1
-      },
-      {
         "tag": "Pliny the Younger",
         "mentions": 1
       },
@@ -24963,6 +24963,10 @@
       },
       {
         "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
         "mentions": 1
       }
     ],
@@ -26699,10 +26703,6 @@
         "mentions": 2
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 2
-      },
-      {
         "tag": "Satan",
         "mentions": 2
       },
@@ -26769,6 +26769,10 @@
       {
         "tag": "Sukkot",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -27545,10 +27549,6 @@
         "mentions": 2
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 2
-      },
-      {
         "tag": "Rachel",
         "mentions": 2
       },
@@ -27611,6 +27611,10 @@
       {
         "tag": "Sodom",
         "mentions": 1
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -28815,6 +28819,226 @@
       {
         "book": "Jeremiah",
         "references": ["Jeremiah"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "156624001",
+    "audioUrl": "/audio/episodes/160-is-the-kjv-crap.mp3",
+    "title": "Is the KJV Crap?",
+    "publishedAt": "2026-04-26T23:05:50.000Z",
+    "processedAt": "2026-05-01T15:40:08.784Z",
+    "transcriptPath": "data/transcripts/2026-04-26-is-the-kjv-crap.txt",
+    "tags": [
+      {
+        "tag": "King James Bible",
+        "mentions": 36
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Codex Sinaiticus",
+        "mentions": 1
+      },
+      {
+        "tag": "child sacrifice",
+        "mentions": 1
+      },
+      {
+        "tag": "Leningrad Codex",
+        "mentions": 1
+      },
+      {
+        "tag": "William Tyndale",
+        "mentions": 6
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 4
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 2
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 5
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 4
+      },
+      {
+        "tag": "Hell",
+        "mentions": 11
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "Persia",
+        "mentions": 1
+      },
+      {
+        "tag": "Origen",
+        "mentions": 7
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Sheol",
+        "mentions": 3
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Desiderius Erasmus",
+        "mentions": 6
+      },
+      {
+        "tag": "Textus Receptus",
+        "mentions": 6
+      },
+      {
+        "tag": "Latin Vulgate",
+        "mentions": 6
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 1
+      },
+      {
+        "tag": "Justin Martyr",
+        "mentions": 10
+      },
+      {
+        "tag": "Bethel",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerome",
+        "mentions": 1
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 3
+      },
+      {
+        "tag": "Angel",
+        "mentions": 4
+      },
+      {
+        "tag": "John",
+        "mentions": 11
+      },
+      {
+        "tag": "Unicorn",
+        "mentions": 11
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 25
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:17.328]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "twisted-scripture",
+        "startTimestamp": "[00:02:17.328]",
+        "endTimestamp": "[00:36:36.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "King James",
+        "summary": "Questioning KJV-only claims and problematic translations"
+      },
+      {
+        "type": "historys-mysteries",
+        "startTimestamp": "[00:36:36.000]",
+        "endTimestamp": "[00:59:11.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual",
+        "topicLabel": "John 1:1",
+        "summary": "Rereading the Word as divine, not identical"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 160,
+    "scriptures": [
+      {
+        "book": "John",
+        "references": ["John", "John 1:1", "John 5:7-8", "John 10"],
+        "mentions": 16
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation", "Revelation 22:19"],
+        "mentions": 6
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 33:17"],
+        "mentions": 4
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 46"],
+        "mentions": 2
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 18", "Genesis 31:13"],
+        "mentions": 2
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 1"],
+        "mentions": 1
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 22:18"],
         "mentions": 1
       }
     ]

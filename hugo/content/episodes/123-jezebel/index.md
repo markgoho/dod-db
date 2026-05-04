@@ -19,6 +19,7 @@ topics:
   - Demon
   - Flavius Josephus
   - Hell
+  - Philo of Alexandria
 tags:
   - Jezebel
   - Ahab

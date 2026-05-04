@@ -8498,7 +8498,51 @@
       "firstSeen": "2026-04-15T19:04:48.234Z",
       "lastSeen": "2026-04-15T19:04:48.234Z",
       "status": "pending"
+    },
+    "Johannaeum→Johanneum": {
+      "original": "Johannaeum",
+      "corrected": "Johanneum",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["156624001"],
+      "examples": [
+        "\"the Comma Johannaeum. Are you\"",
+        "\"the comma, \"Johannaeum,\" and it\""
+      ],
+      "correctedExamples": [
+        "\"the Comma Johanneum. Are you\"",
+        "\"the Comma Johanneum, and it\""
+      ],
+      "timestamps": ["00:09:13.359", "00:12:17.026"],
+      "episodeIds": ["156624001", "156624001"],
+      "confidence": 15,
+      "firstSeen": "2026-05-01T15:42:11.724Z",
+      "lastSeen": "2026-05-01T15:42:11.724Z",
+      "status": "pending"
+    },
+    "re'em→reem": {
+      "original": "re'em",
+      "corrected": "reem",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["156624001"],
+      "examples": [
+        "\"the Hebrew re'em would have\"",
+        "\"of the re'em in Hebrew.\""
+      ],
+      "correctedExamples": [
+        "\"the Hebrew reem would have\"",
+        "\"of the reem in Hebrew.\""
+      ],
+      "timestamps": ["00:22:39.702", "00:22:39.702"],
+      "episodeIds": ["156624001", "156624001"],
+      "confidence": 5,
+      "firstSeen": "2026-05-01T15:42:11.724Z",
+      "lastSeen": "2026-05-01T15:42:11.724Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-04-20T20:35:18.537Z"
+  "lastUpdated": "2026-05-01T15:42:11.724Z"
 }

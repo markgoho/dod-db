@@ -19,9 +19,9 @@ topics:
   - Elephantine
   - King James Bible
   - Pharisees
+  - Philo of Alexandria
 tags:
   - Hypostasis
-  - Philo of Alexandria
   - Judaism
   - Abraham
   - Athenagoras

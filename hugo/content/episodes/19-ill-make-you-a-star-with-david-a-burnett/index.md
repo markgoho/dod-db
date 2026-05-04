@@ -20,13 +20,13 @@ topics:
   - Dead Sea Scrolls
   - Hell
   - Jacob
+  - Philo of Alexandria
 tags:
   - Deuteronomy
   - Judaism
   - Abraham
   - Melchizedek
   - Eschatology
-  - Philo of Alexandria
   - Romans
   - Second Temple period
   - Isaiah

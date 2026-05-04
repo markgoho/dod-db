@@ -64,8 +64,52 @@ type TagMigrationResult = {
   episodeNumbers?: number[];
 };
 
+type ByteRange = {
+  start: number;
+  end: number;
+};
+
 function getTagTerms(tag: TagDefinition): string[] {
   return [tag.canonical, ...tag.variations];
+}
+
+function parseRangeHeader(
+  rangeHeader: string,
+  fileSize: number,
+): ByteRange | undefined {
+  const match = /^bytes=(\d*)-(\d*)$/.exec(rangeHeader);
+  if (!match) {
+    return undefined;
+  }
+
+  const startText = match[1] ?? "";
+  const endText = match[2] ?? "";
+  if (!startText && !endText) {
+    return undefined;
+  }
+
+  if (!startText) {
+    const suffixLength = Number.parseInt(endText, 10);
+    if (Number.isNaN(suffixLength) || suffixLength <= 0) {
+      return undefined;
+    }
+    const start = Math.max(fileSize - suffixLength, 0);
+    return { start, end: fileSize - 1 };
+  }
+
+  const start = Number.parseInt(startText, 10);
+  const end = endText ? Number.parseInt(endText, 10) : fileSize - 1;
+  if (
+    Number.isNaN(start) ||
+    Number.isNaN(end) ||
+    start < 0 ||
+    end < start ||
+    start >= fileSize
+  ) {
+    return undefined;
+  }
+
+  return { start, end: Math.min(end, fileSize - 1) };
 }
 
 function findAcceptedDuplicate(tag: TagDefinition): string | undefined {
@@ -654,7 +698,10 @@ async function addPatternToConfig(
 }
 
 // Get audio file path for a processed record
-async function getAudioFilePath(videoId: string): Promise<string | null> {
+async function getAudioFilePath(
+  videoId: string,
+  variant?: string,
+): Promise<string | null> {
   const audioDir = youtubeConfig.audioDirectory;
 
   // Try common extensions for legacy YouTube-backed episodes
@@ -676,10 +723,21 @@ async function getAudioFilePath(videoId: string): Promise<string | null> {
   }
 
   const filename = generateTranscriptFilename(video.title, video.publishedAt);
-  const rssAudioPath = path.join(
-    audioDir,
-    `rss-${filename.replace(/\.txt$/, "")}.mp3`,
-  );
+  const audioStem = `rss-${filename.replace(/\.txt$/, "")}`;
+
+  if (variant) {
+    const variantPath = path.join(audioDir, `${audioStem}-${variant}.mp3`);
+    if (await Bun.file(variantPath).exists()) {
+      return variantPath;
+    }
+  }
+
+  const seekableAudioPath = path.join(audioDir, `${audioStem}-seekable.mp3`);
+  if (await Bun.file(seekableAudioPath).exists()) {
+    return seekableAudioPath;
+  }
+
+  const rssAudioPath = path.join(audioDir, `${audioStem}.mp3`);
 
   if (await Bun.file(rssAudioPath).exists()) {
     return rssAudioPath;
@@ -1472,14 +1530,18 @@ Bun.serve({
         return jsonResponse({ error: "Video not found" }, 404);
       }
 
-      const file = Bun.file(video.transcriptPath);
+      const transcriptPath =
+        url.searchParams.get("granularity") === "sentence"
+          ? video.transcriptPath.replace(/\.txt$/, "-sentences.txt")
+          : video.transcriptPath;
+      const file = Bun.file(transcriptPath);
       const exists = await file.exists();
       if (!exists) {
         return jsonResponse({ error: "Transcript file not found" }, 404);
       }
 
       const transcript = await file.text();
-      return jsonResponse({ transcript });
+      return jsonResponse({ transcript, transcriptPath });
     }
 
     // Segment Verification API: Update segments for an episode
@@ -1610,7 +1672,10 @@ Bun.serve({
     // Serve audio files (used by multiple tools)
     if (url.pathname.startsWith("/api/audio/")) {
       const videoId = url.pathname.replace("/api/audio/", "");
-      const audioPath = await getAudioFilePath(videoId);
+      const audioPath = await getAudioFilePath(
+        videoId,
+        url.searchParams.get("variant") ?? undefined,
+      );
 
       if (!audioPath) {
         return jsonResponse({ error: "Audio not found" }, 404);
@@ -1618,18 +1683,45 @@ Bun.serve({
 
       const file = Bun.file(audioPath);
       const extension = path.extname(audioPath).toLowerCase();
+      const fileSize = file.size;
 
-      // Determine content type
       const contentTypes: Record<string, string> = {
         ".webm": "audio/webm",
         ".m4a": "audio/mp4",
         ".mp3": "audio/mpeg",
         ".wav": "audio/wav",
       };
+      const contentType = contentTypes[extension] || "audio/webm";
+      const rangeHeader = request.headers.get("range");
+
+      if (rangeHeader) {
+        const range = parseRangeHeader(rangeHeader, fileSize);
+        if (!range) {
+          return new Response(null, {
+            status: 416,
+            headers: {
+              "Accept-Ranges": "bytes",
+              "Content-Range": `bytes */${fileSize}`,
+            },
+          });
+        }
+
+        const chunk = file.slice(range.start, range.end + 1);
+        return new Response(chunk, {
+          status: 206,
+          headers: {
+            "Content-Type": contentType,
+            "Content-Length": String(range.end - range.start + 1),
+            "Content-Range": `bytes ${range.start}-${range.end}/${fileSize}`,
+            "Accept-Ranges": "bytes",
+          },
+        });
+      }
 
       return new Response(file, {
         headers: {
-          "Content-Type": contentTypes[extension] || "audio/webm",
+          "Content-Type": contentType,
+          "Content-Length": String(fileSize),
           "Accept-Ranges": "bytes",
         },
       });

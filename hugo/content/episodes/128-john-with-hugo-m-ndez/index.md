@@ -15,9 +15,9 @@ topics:
   - Septuagint
   - Transfiguration
   - Trinity
+  - Philo of Alexandria
 tags:
   - John
-  - Philo of Alexandria
   - Jerusalem
   - Pseudepigrapha
   - Sea of Galilee

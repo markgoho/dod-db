@@ -11,6 +11,7 @@ topics:
   - Dead Sea Scrolls
   - Codex Sinaiticus
   - Flavius Josephus
+  - Philo of Alexandria
 tags:
   - Onesimus
   - Moses
@@ -29,7 +30,6 @@ tags:
   - Herod Antipas
   - Isaiah
   - Leningrad Codex
-  - Philo of Alexandria
   - Romans
 books:
   - Philemon

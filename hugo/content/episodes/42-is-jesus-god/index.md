@@ -20,6 +20,7 @@ topics:
   - King James Bible
   - Monotheism
   - provenance
+  - Philo of Alexandria
 tags:
   - John
   - Abraham
@@ -28,7 +29,6 @@ tags:
   - Moses
   - Constantine
   - Isaac
-  - Philo of Alexandria
   - Deuteronomy
   - Isaiah
   - Justin Martyr

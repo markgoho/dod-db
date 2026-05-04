@@ -16,7 +16,7 @@ let apiLoadPromise: Promise<void> | undefined;
 
 /** Get the YouTube API global */
 function getYT(): YTGlobal | undefined {
-  return (globalThis as YTGlobal & typeof globalThis).YT;
+  return (globalThis as typeof globalThis & { YT?: YTGlobal }).YT;
 }
 
 /** Set the YouTube API ready callback */

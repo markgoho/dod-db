@@ -19,6 +19,7 @@ topics:
   - Pharisees
   - Sadducees
   - Stele
+  - Philo of Alexandria
 tags:
   - Romans
   - Galilee
@@ -37,7 +38,6 @@ tags:
   - Judaism
   - Passover
   - Peter
-  - Philo of Alexandria
   - Sea of Galilee
   - Syria
 books:

@@ -8,11 +8,17 @@
  *   bun run src/scripts/process-youtube.ts 833s6y6kW2k --start-from=correct
  */
 
+import type { TranscriptGranularity } from "../pipeline/transcribe.js";
 import { processYouTubeVideo } from "../pipeline/youtube-processor.js";
 
 const args = process.argv.slice(2);
 const videoUrl = args[0];
 const force = args.includes("--force");
+
+const granularityIndex = args.findIndex(argument =>
+  argument.startsWith("--transcript-granularity"),
+);
+const transcriptGranularity = parseTranscriptGranularity(granularityIndex);
 
 const audioUrlIndex = args.findIndex(argument =>
   argument.startsWith("--audio-url"),
@@ -23,6 +29,27 @@ const audioUrl =
     : args[audioUrlIndex]?.includes("=")
       ? args[audioUrlIndex]?.split("=")[1]
       : args[audioUrlIndex + 1];
+
+function parseTranscriptGranularity(
+  index: number,
+): TranscriptGranularity | undefined {
+  if (index === -1) {
+    return undefined;
+  }
+
+  const value = args[index]?.includes("=")
+    ? args[index]?.split("=")[1]
+    : args[index + 1];
+  if (value !== "speaker" && value !== "sentence") {
+    console.error(
+      'Error: --transcript-granularity only supports "speaker" or "sentence"',
+    );
+    console.error("");
+    process.exit(1);
+  }
+
+  return value;
+}
 
 // Parse --start-from flag
 const startFromIndex = args.findIndex(argument =>
@@ -65,6 +92,7 @@ if (!videoUrl) {
   console.error(
     "  --start-from=STAGE   Resume from a specific stage (saves API costs)",
   );
+  console.error("  --transcript-granularity=speaker|sentence");
   console.error(
     "                       Supported stages: correct, segment-detection",
   );
@@ -84,6 +112,7 @@ try {
   const result = await processYouTubeVideo(videoUrl, {
     force,
     startFrom,
+    transcriptGranularity,
     ...(audioUrl !== undefined && { audioUrl }),
   });
 

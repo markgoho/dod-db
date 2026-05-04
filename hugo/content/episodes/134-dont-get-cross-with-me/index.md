@@ -15,6 +15,7 @@ topics:
   - Marriage
   - Masoretic Text
   - Paul
+  - Philo of Alexandria
 tags:
   - Judaism
   - Catholicism
@@ -24,7 +25,6 @@ tags:
   - Deuteronomy
   - Irenaeus
   - Moses
-  - Philo of Alexandria
   - Pontius Pilate
 books:
   - Ezekiel

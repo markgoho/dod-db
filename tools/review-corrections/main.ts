@@ -158,9 +158,9 @@ async function loadCandidates(): Promise<void> {
     const data = await response.json();
 
     // API returns array of candidates, create keys from original->corrected
-    allCandidates = (data as CorrectionCandidate[]).map(candidate => ({
-      key: `${candidate.original}→${candidate.corrected}`,
+    allCandidates = (data as Candidate[]).map(candidate => ({
       ...candidate,
+      key: `${candidate.original}→${candidate.corrected}`,
     }));
 
     // Show pending candidates with 20%+ confidence

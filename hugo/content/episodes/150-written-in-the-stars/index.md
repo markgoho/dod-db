@@ -22,6 +22,7 @@ topics:
   - Satan
   - Saul
   - Star of Bethlehem
+  - Philo of Alexandria
 tags:
   - Abraham
   - Stephen
@@ -32,7 +33,6 @@ tags:
   - Isaiah
   - Moses
   - Peter
-  - Philo of Alexandria
   - Second Temple period
   - Adam
   - Canaanites

@@ -1,5 +1,6 @@
 import { mkdir } from "node:fs/promises";
 import * as path from "node:path";
+import { ensureSeekableAudio } from "./ensure-seekable-audio.js";
 
 /**
  * Download audio from a canonical RSS enclosure URL.
@@ -21,5 +22,13 @@ export async function downloadRssAudio(
 
   const audioBytes = await response.arrayBuffer();
   await Bun.write(outputPath, new Uint8Array(audioBytes));
-  return outputPath;
+
+  const seekInspection = await ensureSeekableAudio(outputPath);
+  if (seekInspection.reencoded) {
+    console.log(
+      `Re-encoded RSS audio for browser seeking: ${seekInspection.reasons.join(", ")}`,
+    );
+  }
+
+  return seekInspection.outputPath;
 }

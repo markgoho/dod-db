@@ -406,8 +406,13 @@ async function initializeYouTubePlayer(): Promise<void> {
 async function loadTranscript(): Promise<void> {
   if (!selectedEpisode) return;
 
+  const granularityElement = document.querySelector(
+    "#transcript-granularity",
+  ) as HTMLSelectElement | null;
+  const granularity =
+    granularityElement?.value === "sentence" ? "sentence" : "speaker";
   const response = await fetch(
-    `${API_BASE_URL}/api/segment-verification/transcript/${selectedEpisode.videoId}`,
+    `${API_BASE_URL}/api/segment-verification/transcript/${selectedEpisode.videoId}?granularity=${granularity}`,
   );
   const data = await response.json();
 
@@ -824,6 +829,7 @@ interface GlobalFunctions {
   addSegment: typeof addSegment;
   markAllVerified: typeof markAllVerified;
   saveSegments: typeof saveSegments;
+  loadTranscript: typeof loadTranscript;
 }
 
 (globalThis as typeof globalThis & GlobalFunctions).selectEpisode =
@@ -844,6 +850,8 @@ interface GlobalFunctions {
 (globalThis as typeof globalThis & GlobalFunctions).markAllVerified =
   markAllVerified;
 (globalThis as typeof globalThis & GlobalFunctions).saveSegments = saveSegments;
+(globalThis as typeof globalThis & GlobalFunctions).loadTranscript =
+  loadTranscript;
 
 // Event listeners
 const statusFilter = document.querySelector("#status-filter");

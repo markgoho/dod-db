@@ -16,9 +16,9 @@ topics:
   - Flavius Josephus
   - Septuagint
   - Univocality
+  - Philo of Alexandria
 tags:
   - Adam
-  - Philo of Alexandria
   - Judaism
   - Gentiles
   - Sodom

@@ -12,6 +12,7 @@ topics:
   - Sennacherib
   - David
   - YHWH
+  - Philo of Alexandria
 tags:
   - Moses
   - Aaron
@@ -22,7 +23,6 @@ tags:
   - Assyria
   - Isaiah
   - Joshua
-  - Philo of Alexandria
   - Babylon
 books:
   - Exodus

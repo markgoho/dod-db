@@ -14,6 +14,7 @@ topics:
   - atonement
   - David
   - Ritual Purity
+  - Philo of Alexandria
 tags:
   - Judaism
   - Abraham
@@ -21,7 +22,6 @@ tags:
   - Gentiles
   - Protestantism
   - Catholicism
-  - Philo of Alexandria
   - forgery
   - Hermeneia
   - Judas Iscariot

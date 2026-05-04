@@ -22,11 +22,11 @@ topics:
   - Hell
   - Teraphim
   - Univocality
+  - Philo of Alexandria
 tags:
   - Deuteronomy
   - Judaism
   - Moses
-  - Philo of Alexandria
   - Baal
   - Council of Jerusalem
   - Catholicism

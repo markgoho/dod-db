@@ -1,38 +1,39 @@
 ---
-title: King James Bible
-definition: The King James Bible is an early modern English revision that became one of the most influential forms of the Bible in the English-speaking world. It matters because its wording, manuscript base, and institutional politics have shaped how generations of readers imagine what the Bible says and what counts as faithful translation.
+title: "King James Bible"
+definition: "The King James Bible is an early modern English revision of earlier English translations that became one of the most influential Bible versions in the English-speaking world, shaping translation traditions, manuscript debates, and popular ideas about biblical wording."
 aliases:
   - "/tags/king-james-bible/"
-  - /tags/kjv/
-  - /tags/king-james-version/
+  - "/tags/kjv/"
+  - "/tags/king-james-version/"
 knownAs:
-  - KJV
-  - King James Version
+  - "KJV"
+  - "King James Version"
 featuredItems:
   - type: segment
     episodeNumber: 17
     segmentAnchor: thats-history-1
     label: "That's History — King James Version"
-  - type: episode
-    number: 58
-    label: "Translation Frustration"
+  - type: segment
+    episodeNumber: 160
+    segmentAnchor: twisted-scripture-1
+    label: "Twisted Scripture — King James"
 quotes:
   - text: "One of the most, probably the single most influential English translation of the Bible or perhaps any translation of the Bible that exists, the King James Version."
-    speaker: Dan McClellan
+    speaker: "Dan McClellan"
     episode: 17
     timestamp: "00:01:26.150"
   - text: "To begin, it was not really a translation in its own right; it was a revision of a 1602 edition of the Bishops' Bible."
-    speaker: Dan McClellan
+    speaker: "Dan McClellan"
     episode: 17
     timestamp: "00:15:09.470"
   - text: "And the King James Version has become, through historical accident, embedded in the foundations of not only the English language, particularly for Americans, but within the, the foundations of English Bible translation."
-    speaker: Dan McClellan
+    speaker: "Dan McClellan"
     episode: 58
     timestamp: "00:15:09.830"
-  - text: "A lot of the translations that we're gonna see kind of follow after the King James Version, because if you're trying to pump out a translation and you got a publisher breathing down your neck, you're gonna punt a lot."
-    speaker: Dan McClellan
-    episode: 58
-    timestamp: "00:16:33.120"
+  - text: "The degree of KJV-onlyism out there puts Poe's Law to the test time after time after time, because I'm like, you cannot, cannot possibly be serious."
+    speaker: "Dan McClellan"
+    episode: 160
+    timestamp: "00:03:01.025"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true

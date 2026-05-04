@@ -2120,7 +2120,8 @@ export const tagVocabulary: TagDefinition[] = [
       "A Hellenistic Jewish philosopher who lived in Alexandria, Egypt.",
     status: "accepted",
     episodes: [
-      10, 19, 26, 33, 42, 53, 59, 86, 92, 100, 105, 128, 130, 134, 135,
+      10, 19, 26, 31, 42, 53, 59, 86, 92, 100, 105, 123, 128, 130, 134, 135,
+      140, 150, 155, 160,
     ],
   },
   {
@@ -9110,6 +9111,52 @@ export const tagVocabulary: TagDefinition[] = [
     category: "miscellaneous",
     status: "accepted",
     episodes: [61, 76, 78, 97, 102, 158],
+  },
+  {
+    canonical: "Unicorn",
+    variations: ["unicorns"],
+    category: "miscellaneous",
+    description:
+      "A mythical creature often depicted as a horse-like animal with a single horn; its appearance in the King James Version is discussed as a mistranslation of the Hebrew 'reem' (aurochs).",
+    status: "accepted",
+    addedInEpisode: 160,
+    episodes: [160],
+  },
+  {
+    canonical: "Comma Johanneum",
+    variations: ["Johannine comma"],
+    category: "theology",
+    description:
+      "A controversial phrase found in some Latin manuscripts of 1 John 5:7-8, which explicitly states the Trinity, but is not present in early Greek manuscripts.",
+    status: "proposed",
+    addedInEpisode: 160,
+  },
+  {
+    canonical: "Rhinoceros",
+    variations: ["rhinoceroses", "rhinoceri"],
+    category: "miscellaneous",
+    description:
+      "A large, heavy mammal with one or two horns on its snout, discussed as a possible intended translation for the Hebrew 'reem' in the Latin Vulgate.",
+    status: "proposed",
+    addedInEpisode: 160,
+  },
+  {
+    canonical: "Hyrax",
+    variations: ["hyraxes"],
+    category: "miscellaneous",
+    description:
+      "A small, rodent-like mammal found in Africa and the Middle East, used as an example of an animal whose knowledge could be lost over time.",
+    status: "proposed",
+    addedInEpisode: 160,
+  },
+  {
+    canonical: "God of Israel",
+    variations: [],
+    category: "theology",
+    description:
+      "A specific theological designation referring to the singular supreme deity worshipped by the Israelites, as distinct from lesser divine beings or other gods.",
+    status: "proposed",
+    addedInEpisode: 160,
   },
 ];
 

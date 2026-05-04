@@ -22,7 +22,7 @@ import { generateTranscriptFilename } from "./generate-transcript-filename.js";
 import { identifySegmentTypes } from "./identify-segment-types.js";
 import { identifySpeakers } from "./identify-speakers.js";
 import { analyzeCorrections } from "./learn-corrections.js";
-import { transcribeAudio } from "./transcribe.js";
+import { transcribeAudio, type TranscriptGranularity } from "./transcribe.js";
 
 export interface ProcessRssEpisodeResult {
   videoId: string;
@@ -40,6 +40,7 @@ export interface ProcessRssEpisodeResult {
 export interface ProcessRssEpisodeOptions {
   force?: boolean;
   startFrom?: "correct" | "segment-detection" | "extract-tags";
+  transcriptGranularity?: TranscriptGranularity;
 }
 
 export async function processRssEpisode(
@@ -110,7 +111,9 @@ export async function processRssEpisode(
     console.log(`Audio downloaded to: ${downloadedAudioPath}`);
 
     console.log("Transcribing audio...");
-    const transcription = await transcribeAudio(downloadedAudioPath);
+    const transcription = await transcribeAudio(downloadedAudioPath, {
+      granularity: options.transcriptGranularity,
+    });
 
     console.log("Identifying speakers...");
     const { transcript: identified } = await identifySpeakers(transcription, {

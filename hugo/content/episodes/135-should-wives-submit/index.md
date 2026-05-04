@@ -16,11 +16,11 @@ topics:
   - Nephilim
   - Septuagint
   - Univocality
+  - Philo of Alexandria
 tags:
   - Judaism
   - Babylon
   - Baal
-  - Philo of Alexandria
   - Adam
   - Eve
   - Islam

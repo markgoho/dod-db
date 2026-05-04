@@ -31,7 +31,9 @@ interface DetectionResult {
   error?: string;
 }
 
-function hasVerifiedSegments(video: { segments?: EpisodeSegment[] }): boolean {
+function hasVerifiedSegments(
+  video: Awaited<ReturnType<typeof loadProcessedVideos>>[number],
+): boolean {
   return (
     video.segments?.some(segment => segment.confidence === "verified") ?? false
   );

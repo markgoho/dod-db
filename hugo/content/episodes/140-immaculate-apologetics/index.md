@@ -22,6 +22,7 @@ topics:
   - Hell
   - Paul
   - Septuagint
+  - Philo of Alexandria
 tags:
   - Catholicism
   - Jeremiah
@@ -34,7 +35,6 @@ tags:
   - Augustine
   - Eusebius
   - Passover
-  - Philo of Alexandria
   - Pliny the Younger
   - Protestantism
 books:

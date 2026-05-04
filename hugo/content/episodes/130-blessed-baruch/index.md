@@ -14,6 +14,7 @@ topics:
   - Flavius Josephus
   - Jacob
   - Satan
+  - Philo of Alexandria
 tags:
   - Jeremiah
   - Judaism
@@ -33,7 +34,6 @@ tags:
   - Moses
   - Mount Sinai
   - Origen
-  - Philo of Alexandria
   - Protestantism
   - Second Temple period
   - Torah

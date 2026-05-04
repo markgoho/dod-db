@@ -7,10 +7,16 @@
  */
 
 import { processRssEpisode } from "../pipeline/rss-audio-processor.js";
+import type { TranscriptGranularity } from "../pipeline/transcribe.js";
 import { findNextUnprocessedEpisode } from "../rss/index.js";
 
 const args = process.argv.slice(2);
 const force = args.includes("--force");
+
+const granularityIndex = args.findIndex(argument =>
+  argument.startsWith("--transcript-granularity"),
+);
+const transcriptGranularity = parseTranscriptGranularity(granularityIndex);
 
 const rssUrlIndex = args.findIndex(argument =>
   argument.startsWith("--rss-url"),
@@ -45,6 +51,28 @@ if (startFromIndex !== -1) {
   startFrom = value as "correct" | "segment-detection" | "extract-tags";
 }
 
+function parseTranscriptGranularity(
+  index: number,
+): TranscriptGranularity | undefined {
+  if (index === -1) {
+    return undefined;
+  }
+
+  const value = args[index]?.includes("=")
+    ? args[index]?.split("=")[1]
+    : args[index + 1];
+  if (value !== "speaker" && value !== "sentence") {
+    console.error(
+      'Error: --transcript-granularity only supports "speaker" or "sentence"',
+    );
+    console.error("");
+    printUsage();
+    process.exit(1);
+  }
+
+  return value;
+}
+
 function printUsage(): void {
   console.error("Usage:");
   console.error("  bun run src/scripts/process-next-episode.ts [options]");
@@ -59,6 +87,7 @@ function printUsage(): void {
   console.error(
     "  --start-from=STAGE   Resume from a specific stage (saves API costs)",
   );
+  console.error("  --transcript-granularity=speaker|sentence");
   console.error(
     "                       Supported stages: correct, segment-detection, extract-tags",
   );
@@ -75,6 +104,12 @@ if (startFromIndex !== -1) {
   consumedIndexes.add(startFromIndex);
   if (!args[startFromIndex]?.includes("=")) {
     consumedIndexes.add(startFromIndex + 1);
+  }
+}
+if (granularityIndex !== -1) {
+  consumedIndexes.add(granularityIndex);
+  if (!args[granularityIndex]?.includes("=")) {
+    consumedIndexes.add(granularityIndex + 1);
   }
 }
 
@@ -111,6 +146,7 @@ try {
   const result = await processRssEpisode(nextEpisode.rssItem, {
     force,
     startFrom,
+    transcriptGranularity,
   });
 
   if (result.skipped) {

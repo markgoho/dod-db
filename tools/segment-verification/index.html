@@ -49,6 +49,13 @@
 
         <div class="transcript-panel" id="transcript-panel">
           <h3>Transcript</h3>
+          <label>
+            View
+            <select id="transcript-granularity" onchange="loadTranscript()">
+              <option value="speaker">Speaker grouped</option>
+              <option value="sentence">Sentence split</option>
+            </select>
+          </label>
           <div class="transcript-lines-wrapper" id="transcript-lines">
             <p style="color: #666; text-align: center; padding: 40px">
               Select an episode to view transcript
