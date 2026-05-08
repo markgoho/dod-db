@@ -5,6 +5,7 @@ import {
   DETECTION_METHODS,
   type DetectionMethod,
 } from "../pipeline/detect-segments.js";
+import { computeEpisodeNumbers } from "../rss/compute-episode-numbers.js";
 import {
   computeEpisodeNumbersFromRss,
   fetchPodcastRss,
@@ -82,9 +83,7 @@ export const EpisodeSchema = z.object({
 
 export type Episode = z.infer<typeof EpisodeSchema>;
 
-// Legacy alias retained because the on-disk filename is still
-// processed-videos.json and the type is referenced under both names across
-// the codebase during migration.
+// Legacy alias retained because the on-disk filename is still processed-videos.json.
 export type ProcessedVideo = Episode;
 export const ProcessedVideoSchema = EpisodeSchema;
 
@@ -134,48 +133,6 @@ export function resetCatalogCache(): void {
 // Episode-number recomputation
 // =============================================================================
 
-function extractEpisodeNumberFromTitle(title: string): number | undefined {
-  const match = title.match(/Episode\s+(\d+)/i);
-  return match?.[1] ? Number.parseInt(match[1], 10) : undefined;
-}
-
-/**
- * Title-based episode-number assignment used by RSS fallback and as the
- * legacy ordering for episodes 1–142.
- */
-function computeEpisodeNumbersFromTitles(episodes: Episode[]): Episode[] {
-  const sorted = [...episodes].toSorted((a, b) => {
-    const dateCompare = a.publishedAt.localeCompare(b.publishedAt);
-    if (dateCompare !== 0) return dateCompare;
-    return a.videoId.localeCompare(b.videoId);
-  });
-
-  const withTitleNumbers = sorted.map(episode => {
-    if (episode.episodeNumber !== undefined) return episode;
-    const titleNumber = extractEpisodeNumberFromTitle(episode.title);
-    if (titleNumber !== undefined) {
-      return { ...episode, episodeNumber: titleNumber };
-    }
-    return episode;
-  });
-
-  const taken = new Set(
-    withTitleNumbers
-      .map(v => v.episodeNumber)
-      .filter((n): n is number => n !== undefined),
-  );
-
-  let nextSequential = 1;
-  return withTitleNumbers.map(episode => {
-    if (episode.episodeNumber !== undefined) return episode;
-    while (taken.has(nextSequential)) nextSequential++;
-    const assigned = nextSequential;
-    taken.add(assigned);
-    nextSequential++;
-    return { ...episode, episodeNumber: assigned };
-  });
-}
-
 async function applyRssNumbers(episodes: Episode[]): Promise<Episode[]> {
   try {
     const rssXml = await fetchPodcastRss(youtubeConfig.canonicalRssUrl);
@@ -186,7 +143,7 @@ async function applyRssNumbers(episodes: Episode[]): Promise<Episode[]> {
       "Failed to compute episode numbers from canonical RSS:",
       error,
     );
-    return computeEpisodeNumbersFromTitles(episodes);
+    return computeEpisodeNumbers(episodes);
   }
 }
 

@@ -20,7 +20,7 @@ Domain operations on the catalog (not generic updates) name the events in an epi
 
 - **Reads**: `getEpisodeById`, `getEpisodeByNumber`, `isProcessed`, `listEpisodes`, `listEpisodesWithNumbers`.
 - **Per-episode writes**: `registerEpisode` (returns the assigned episode number; this is the only operation that triggers renumbering), `recordTags`, `recordScriptures`, `recordSegments`, `setEpisodeTopic`, `updateSegmentDescription`. All per-episode writes throw on missing id.
-- **Bulk writes**: `addTagToAllEpisodes`, `removeTagFromAllEpisodes`, `renameTagAcrossEpisodes`.
+- **Bulk writes**: `removeTagFromAllEpisodes`, `renameTagInAllEpisodes`; tag re-extraction lives in `addTagToEpisodes`.
 - **Generic primitive**: `transact(mutator)` — the bulk methods are implemented on top of it; reserved for the few callers that legitimately need it (e.g. `reprocess-episodes`).
 
 The catalog assumes a single writer at any moment in real time. See [ADR 0001](docs/adr/0001-episode-catalog-serial-writers.md).

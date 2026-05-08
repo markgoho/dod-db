@@ -50,9 +50,9 @@ export async function reprocessEpisodes(
   // If skipLlm is true, also disable LLM verification (no API calls at all)
   const finalEnableLlmVerification = skipLlm ? false : enableLlmVerification;
 
-  console.log("Loading processed videos...");
+  console.log("Loading episodes...");
   const videos = await listEpisodes();
-  console.log(`Found ${videos.length} processed videos\n`);
+  console.log(`Found ${videos.length} episodes\n`);
 
   // Safety check: don't proceed if no videos loaded (likely validation error)
   if (videos.length === 0) {

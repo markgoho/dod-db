@@ -1312,7 +1312,7 @@ Bun.serve({
 
         await updateTagInVocabulary(canonical, { status: "rejected" });
 
-        // Remove tag from all episodes in processed-videos.json
+        // Remove tag from all episodes in the catalog
         console.log(`Removing "${canonical}" from all episodes...`);
         const videos = await listEpisodes();
         const affectedVideos: typeof videos = [];
@@ -1330,7 +1330,7 @@ Bun.serve({
           }
         }
 
-        // Save updated videos
+        // Save updated episodes
         await transact(() => videos);
         console.log(
           `✓ Removed "${canonical}" from ${affectedVideos.length} episodes`,
@@ -1426,7 +1426,7 @@ Bun.serve({
         // Delete from vocabulary file
         await deleteTagFromVocabulary(canonical);
 
-        // Remove tag from all episodes in processed-videos.json
+        // Remove tag from all episodes in the catalog
         console.log(`Removing "${canonical}" from all episodes...`);
         const videos = await listEpisodes();
         const affectedVideos: typeof videos = [];
@@ -1444,7 +1444,7 @@ Bun.serve({
           }
         }
 
-        // Save updated videos
+        // Save updated episodes
         await transact(() => videos);
         console.log(
           `✓ Removed "${canonical}" from ${affectedVideos.length} episodes`,
