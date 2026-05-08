@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { findEpisodeNumberMismatches } from "./repair-episode-numbers.js";
 
 const baseVideo = {

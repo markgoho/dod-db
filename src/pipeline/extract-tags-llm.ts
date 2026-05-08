@@ -5,6 +5,7 @@
 
 import { z } from "zod";
 import { ai } from "../ai.js";
+import type { EpisodeTag } from "../catalog/episode-catalog.js";
 import { speakerIdModel } from "../config/models.js";
 import type { TagCategory } from "../config/tag-vocabulary.js";
 import {
@@ -15,7 +16,6 @@ import {
   TagDiscoverySchema,
   tagExtractionPrompt,
 } from "../prompts/tag-extraction.js";
-import type { EpisodeTag } from "../storage/processed-videos.js";
 import { isScriptureTag } from "../utils/is-scripture-tag.js";
 import { addTagToVocabulary } from "./add-tag-to-vocabulary.js";
 import { tagExists } from "./tag-exists.js";

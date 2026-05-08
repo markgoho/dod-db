@@ -7,13 +7,13 @@
  *   bun run src/scripts/generate-hugo-episodes.ts --episode 42       # Generate specific episode
  */
 
+import { listEpisodesWithNumbers } from "../catalog/episode-catalog.js";
+import { getEpisodeByNumber } from "../catalog/episode-catalog.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { generateFrontmatter } from "../hugo/generate-frontmatter.js";
 import { getEpisodeOutputPath } from "../hugo/get-episode-path.js";
 import { transformToShortcodes } from "../hugo/transform-shortcodes.js";
-import { getProcessedVideosWithNumbers } from "../storage/get-processed-videos-with-numbers.js";
-import { getVideoByEpisodeNumber } from "../storage/get-video-by-episode-number.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
 
 /**
  * Generate Hugo content file for a single episode.
@@ -65,7 +65,7 @@ async function generateAllEpisodes(): Promise<{
   success: number;
   failed: number;
 }> {
-  const videos = await getProcessedVideosWithNumbers();
+  const videos = await listEpisodesWithNumbers();
   let success = 0;
   let failed = 0;
 
@@ -87,7 +87,7 @@ async function generateAllEpisodes(): Promise<{
  * Generate content for the newest episode (highest episode number).
  */
 async function generateNewestEpisode(): Promise<boolean> {
-  const videos = await getProcessedVideosWithNumbers();
+  const videos = await listEpisodesWithNumbers();
 
   if (videos.length === 0) {
     console.error("❌ No processed videos found");
@@ -125,7 +125,7 @@ async function generateNewestEpisode(): Promise<boolean> {
 async function generateSpecificEpisode(
   episodeNumber: number,
 ): Promise<boolean> {
-  const video = await getVideoByEpisodeNumber(episodeNumber);
+  const video = await getEpisodeByNumber(episodeNumber);
 
   if (!video) {
     console.error(`❌ Episode ${episodeNumber} not found`);

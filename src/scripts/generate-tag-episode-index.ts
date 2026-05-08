@@ -1,4 +1,4 @@
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
+import { listEpisodes } from "../catalog/episode-catalog.js";
 
 type TagEpisodeEntry = {
   ep: number;
@@ -14,7 +14,7 @@ const tagOutputPath = new URL(
 );
 
 async function main(): Promise<void> {
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
   const tagEpisodeIndex: TagEpisodeIndex = {};
 
   for (const video of videos) {

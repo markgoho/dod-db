@@ -6,8 +6,8 @@
  *   bun run src/scripts/check-new-episodes.ts
  */
 
+import { isProcessed } from "../catalog/episode-catalog.js";
 import { processYouTubeVideo } from "../pipeline/youtube-processor.js";
-import { isVideoProcessed } from "../storage/is-video-processed.js";
 
 // Data over Dogma channel URL
 const CHANNEL_URL = "https://www.youtube.com/@DataOverDogma/videos";
@@ -67,7 +67,7 @@ async function main() {
   const errors: Array<{ videoId: string; error: string }> = [];
 
   for (const videoId of videoIds) {
-    const alreadyProcessed = await isVideoProcessed(videoId);
+    const alreadyProcessed = await isProcessed(videoId);
 
     if (alreadyProcessed) {
       console.log(`⊘ Skipping ${videoId} (already processed)`);

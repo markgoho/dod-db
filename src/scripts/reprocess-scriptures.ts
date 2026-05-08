@@ -9,11 +9,11 @@
  *   bun run src/scripts/reprocess-scriptures.ts --force --verbose  # Show detailed per-episode logs
  */
 
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
+import { recordScriptures } from "../catalog/episode-catalog.js";
 import { extractScripture } from "../pipeline/extract-scripture.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
-import { getProcessedVideos } from "../storage/get-processed-videos.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
-import { updateVideoScriptures } from "../storage/update-video-scriptures.js";
 
 interface ReprocessResult {
   total: number;
@@ -29,7 +29,7 @@ async function reprocessScriptures(options: {
 }): Promise<ReprocessResult> {
   const { force = false, skipLlm = false, verbose = false } = options;
 
-  const videos = await getProcessedVideos();
+  const videos = await listEpisodes();
 
   // Filter to episodes that need processing
   const toProcess = force
@@ -81,7 +81,7 @@ async function reprocessScriptures(options: {
       });
 
       // Update processed-videos.json
-      await updateVideoScriptures(video.videoId, scriptures);
+      await recordScriptures(video.videoId, scriptures);
 
       // Regenerate Hugo episode page
       const updatedVideo: ProcessedVideo = {

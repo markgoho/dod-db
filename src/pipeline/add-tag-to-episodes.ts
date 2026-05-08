@@ -3,8 +3,8 @@
  * More efficient than full reprocessing when you only need to add one new tag.
  */
 
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import { saveProcessedVideos } from "../storage/save-processed-videos.js";
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import { transact } from "../catalog/episode-catalog.js";
 import { sortTags } from "../utils/tag-utils.js";
 import { extractSingleTag } from "./extract-single-tag.js";
 
@@ -41,7 +41,7 @@ export async function addTagToEpisodes(
   const { canonical, enableLlmVerification = true, verbose = false } = options;
 
   console.log(`Loading episodes for tag "${canonical}"...`);
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
 
   if (videos.length === 0) {
     throw new Error("No videos loaded");
@@ -174,7 +174,7 @@ export async function addTagToEpisodes(
     .toSorted((a, b) => a - b);
 
   console.log("\n\nSaving updated processed-videos.json...");
-  await saveProcessedVideos(videos);
+  await transact(() => videos);
 
   console.log("\n✅ Tag addition complete!");
   console.log(`\nSummary:`);

@@ -1,7 +1,7 @@
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import { transact } from "../catalog/episode-catalog.js";
 import { processRssEpisode } from "../pipeline/rss-audio-processor.js";
 import { fetchPodcastRss, parsePodcastRss } from "../rss/index.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 
 const args = process.argv.slice(2);
 const episodeArgumentIndex = args.indexOf("--episode");
@@ -67,7 +67,7 @@ if (!rssItem) {
 }
 
 if (replaceExisting) {
-  const processedVideos = await loadProcessedVideos();
+  const processedVideos = await listEpisodes();
   const filteredVideos = processedVideos.filter(video => {
     if (titleValue) {
       return video.title !== rssItem.title;
@@ -75,7 +75,7 @@ if (replaceExisting) {
 
     return video.episodeNumber !== episodeNumber;
   });
-  await saveProcessedVideos(filteredVideos);
+  await transact(() => filteredVideos);
 }
 
 await processRssEpisode(rssItem);

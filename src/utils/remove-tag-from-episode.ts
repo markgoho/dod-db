@@ -1,4 +1,4 @@
-import type { ProcessedVideo } from "../storage/processed-videos.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { getHugoEpisodePath } from "./get-hugo-episode-path.js";
 import { parseHugoFile } from "./parse-hugo-file.js";
 import { writeHugoFile } from "./write-hugo-file.js";

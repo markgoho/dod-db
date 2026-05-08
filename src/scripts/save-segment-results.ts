@@ -1,10 +1,10 @@
+import { getEpisodeByNumber } from "../catalog/episode-catalog.js";
+import { updateSegmentDescription } from "../catalog/episode-catalog.js";
+import { setEpisodeTopic } from "../catalog/episode-catalog.js";
 import type { SegmentType } from "../config/segment-patterns.js";
 import { postProcessSegmentDescription } from "../pipeline/describe-segment.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
 import type { SegmentDescriptionResult } from "../prompts/segment-description.js";
-import { getVideoByEpisodeNumber } from "../storage/get-video-by-episode-number.js";
-import { updateSegmentDescription } from "../storage/update-segment-description.js";
-import { updateVideoEpisodeTopic } from "../storage/update-video-episode-topic.js";
 
 interface SegmentResultInput extends SegmentDescriptionResult {
   startTimestamp: string;
@@ -69,7 +69,7 @@ async function main(): Promise<void> {
     const args = parseArguments(process.argv.slice(2));
     const rawInput = await readInput(args.inputPath);
     const input = JSON.parse(rawInput) as SaveInput;
-    const video = await getVideoByEpisodeNumber(input.episodeNumber);
+    const video = await getEpisodeByNumber(input.episodeNumber);
 
     if (!video) {
       throw new Error(`Episode ${input.episodeNumber} not found`);
@@ -136,8 +136,8 @@ async function main(): Promise<void> {
       throw new Error("episodeTopic is required for episode-topic mode");
     }
 
-    await updateVideoEpisodeTopic(input.videoId, input.episodeTopic);
-    const updatedVideo = await getVideoByEpisodeNumber(input.episodeNumber);
+    await setEpisodeTopic(input.videoId, input.episodeTopic);
+    const updatedVideo = await getEpisodeByNumber(input.episodeNumber);
     if (!updatedVideo) {
       throw new Error(`Episode ${input.episodeNumber} not found after update`);
     }

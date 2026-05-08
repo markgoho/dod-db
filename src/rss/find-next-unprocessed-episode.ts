@@ -1,5 +1,5 @@
+import { listEpisodes } from "../catalog/episode-catalog.js";
 import { youtubeConfig } from "../config/youtube.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 import { fetchPodcastRss } from "./fetch-patreon-rss.js";
 import { isAfterPartyItem } from "./is-after-party-item.js";
 import { matchRssItemToVideo } from "./match-rss-to-video.js";
@@ -22,7 +22,7 @@ export async function findNextUnprocessedEpisode(
 
   const [rssXml, processedVideos] = await Promise.all([
     fetchPodcastRss(canonicalRssUrl),
-    loadProcessedVideos(),
+    listEpisodes(),
   ]);
 
   if (!rssXml) {

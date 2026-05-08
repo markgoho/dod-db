@@ -1,6 +1,6 @@
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { slugifyTitle } from "../hugo/slugify-title.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
 import type { PodcastRssItem } from "./patreon-rss-item.js";
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;

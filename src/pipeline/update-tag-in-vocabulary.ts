@@ -1,7 +1,9 @@
+import {
+  removeTagFromAllEpisodes,
+  renameTagInAllEpisodes,
+} from "../catalog/episode-catalog.js";
 import type { TagCategory, TagStatus } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
-import { removeTagFromAllEpisodes } from "../utils/remove-tag-from-episodes.js";
-import { renameTagInAllEpisodes } from "../utils/rename-tag-in-episodes.js";
 import {
   buildTagDefinition,
   formatTagEntry,

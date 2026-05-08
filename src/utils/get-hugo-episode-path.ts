@@ -1,7 +1,7 @@
 import * as path from "node:path";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { getEpisodeOutputPath } from "../hugo/get-episode-path.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
 
 /**
  * Get the Hugo episode file path for a processed video.

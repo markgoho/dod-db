@@ -10,6 +10,16 @@
  */
 
 import * as path from "node:path";
+import { listEpisodesWithNumbers } from "../catalog/episode-catalog.js";
+import { getEpisodeById } from "../catalog/episode-catalog.js";
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import type {
+  EpisodeScripture,
+  EpisodeSegment,
+} from "../catalog/episode-catalog.js";
+import { transact } from "../catalog/episode-catalog.js";
+import { recordScriptures } from "../catalog/episode-catalog.js";
+import { recordSegments } from "../catalog/episode-catalog.js";
 import { getBookByAnyName } from "../config/get-book-by-any-name.js";
 import {
   SEGMENT_COLORS,
@@ -42,16 +52,6 @@ import {
   updateTagInVocabulary,
   type UpdateTagParams as UpdateTagParameters,
 } from "../pipeline/update-tag-in-vocabulary.js";
-import { getProcessedVideosWithNumbers } from "../storage/get-processed-videos-with-numbers.js";
-import { getVideoById } from "../storage/get-video-by-id.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import type {
-  EpisodeScripture,
-  EpisodeSegment,
-} from "../storage/processed-videos.js";
-import { saveProcessedVideos } from "../storage/save-processed-videos.js";
-import { updateVideoScriptures } from "../storage/update-video-scriptures.js";
-import { updateVideoSegments } from "../storage/update-video-segments.js";
 import { isScriptureTag } from "../utils/is-scripture-tag.js";
 import { removeTagFromEpisode } from "../utils/remove-tag-from-episode.js";
 import { sortTags } from "../utils/tag-utils.js";
@@ -300,7 +300,7 @@ async function computeTagStats(): Promise<TagStats[]> {
     return statsCache.data;
   }
 
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
 
   // Build a map of canonical tag names to vocabulary definitions
   const vocabMap = new Map<string, TagDefinition>();
@@ -437,7 +437,7 @@ async function runMigrationWithTagTracking(
       // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
       // Regenerate all Hugo episode pages (silent, fast, idempotent)
       // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-      const allVideos = await getProcessedVideosWithNumbers();
+      const allVideos = await listEpisodesWithNumbers();
       for (const video of allVideos) {
         await generateHugoEpisode(video, { silent: true });
       }
@@ -509,7 +509,7 @@ async function runEpisodeTagReprocess(
 
   (async () => {
     try {
-      const video = await getVideoById(videoId);
+      const video = await getEpisodeById(videoId);
       if (!video) {
         throw new Error("Episode not found");
       }
@@ -526,7 +526,7 @@ async function runEpisodeTagReprocess(
         episodeNumber: video.episodeNumber,
       });
 
-      const videos = await loadProcessedVideos();
+      const videos = await listEpisodes();
       const videoToUpdate = videos.find(entry => entry.videoId === videoId);
       if (!videoToUpdate) {
         throw new Error("Episode not found in processed videos");
@@ -546,7 +546,7 @@ async function runEpisodeTagReprocess(
       });
 
       videoToUpdate.tags = sortTags([...tags, ...preservedTags]);
-      await saveProcessedVideos(videos);
+      await transact(() => videos);
       await generateHugoEpisode(videoToUpdate, { silent: true });
 
       job.logs.push(`✓ Extracted ${tags.length} tags\n`);
@@ -587,7 +587,7 @@ async function runEpisodeScriptureRescan(
 
   (async () => {
     try {
-      const video = await getVideoById(videoId);
+      const video = await getEpisodeById(videoId);
       if (!video) {
         throw new Error("Episode not found");
       }
@@ -616,8 +616,8 @@ async function runEpisodeScriptureRescan(
         (a, b) => a.book.localeCompare(b.book),
       );
 
-      await updateVideoScriptures(videoId, nextScriptures);
-      const updatedVideo = await getVideoById(videoId);
+      await recordScriptures(videoId, nextScriptures);
+      const updatedVideo = await getEpisodeById(videoId);
       if (updatedVideo) {
         await generateHugoEpisode(updatedVideo, { silent: true });
       }
@@ -716,7 +716,7 @@ async function getAudioFilePath(
   }
 
   // RSS-backed episodes store audio using the generated transcript filename stem
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
   const video = videos.find(item => item.videoId === videoId);
   if (!video) {
     return null;
@@ -884,7 +884,7 @@ Bun.serve({
 
     // Tag Vocabulary API: Get all processed episodes with tags
     if (url.pathname === "/api/tag-vocabulary/episodes") {
-      const videos = await getProcessedVideosWithNumbers();
+      const videos = await listEpisodesWithNumbers();
       return jsonResponse(videos);
     }
 
@@ -1312,9 +1312,9 @@ Bun.serve({
 
         await updateTagInVocabulary(canonical, { status: "rejected" });
 
-        // Remove tag from all episodes in processed-videos.json
+        // Remove tag from all episodes in the catalog
         console.log(`Removing "${canonical}" from all episodes...`);
-        const videos = await loadProcessedVideos();
+        const videos = await listEpisodes();
         const affectedVideos: typeof videos = [];
 
         for (const video of videos) {
@@ -1330,8 +1330,8 @@ Bun.serve({
           }
         }
 
-        // Save updated videos
-        await saveProcessedVideos(videos);
+        // Save updated episodes
+        await transact(() => videos);
         console.log(
           `✓ Removed "${canonical}" from ${affectedVideos.length} episodes`,
         );
@@ -1426,9 +1426,9 @@ Bun.serve({
         // Delete from vocabulary file
         await deleteTagFromVocabulary(canonical);
 
-        // Remove tag from all episodes in processed-videos.json
+        // Remove tag from all episodes in the catalog
         console.log(`Removing "${canonical}" from all episodes...`);
-        const videos = await loadProcessedVideos();
+        const videos = await listEpisodes();
         const affectedVideos: typeof videos = [];
 
         for (const video of videos) {
@@ -1444,8 +1444,8 @@ Bun.serve({
           }
         }
 
-        // Save updated videos
-        await saveProcessedVideos(videos);
+        // Save updated episodes
+        await transact(() => videos);
         console.log(
           `✓ Removed "${canonical}" from ${affectedVideos.length} episodes`,
         );
@@ -1493,7 +1493,7 @@ Bun.serve({
 
     // Segment Verification API: Get all episodes with segments
     if (url.pathname === "/api/segment-verification/episodes") {
-      const videos = await getProcessedVideosWithNumbers();
+      const videos = await listEpisodesWithNumbers();
       const videosWithAudio = await Promise.all(
         videos.map(async video => ({
           ...video,
@@ -1523,7 +1523,7 @@ Bun.serve({
         "/api/segment-verification/transcript/",
         "",
       );
-      const videos = await loadProcessedVideos();
+      const videos = await listEpisodes();
       const video = videos.find(v => v.videoId === videoId);
 
       if (!video) {
@@ -1561,10 +1561,10 @@ Bun.serve({
           return jsonResponse({ error: "segments must be an array" }, 400);
         }
 
-        await updateVideoSegments(videoId, body.segments);
+        await recordSegments(videoId, body.segments);
 
         // Regenerate Hugo episode page with updated segments
-        const video = await getVideoById(videoId);
+        const video = await getEpisodeById(videoId);
         if (video) {
           await generateHugoEpisode(video);
         }
@@ -1585,7 +1585,7 @@ Bun.serve({
 
     // Segment Verification API: Get segment statistics
     if (url.pathname === "/api/segment-verification/stats") {
-      const videos = await loadProcessedVideos();
+      const videos = await listEpisodes();
 
       const stats = {
         totalEpisodes: videos.length,
@@ -1737,7 +1737,7 @@ Bun.serve({
       request.method === "GET"
     ) {
       const videoId = url.pathname.replace("/api/episode/", "");
-      const videos = await getProcessedVideosWithNumbers();
+      const videos = await listEpisodesWithNumbers();
       const video = videos.find(v => v.videoId === videoId);
 
       if (!video) {
@@ -1759,7 +1759,7 @@ Bun.serve({
       request.method === "GET"
     ) {
       const videoId = url.pathname.split("/")[3] ?? "";
-      const videos = await getProcessedVideosWithNumbers();
+      const videos = await listEpisodesWithNumbers();
       const video = videos.find(entry => entry.videoId === videoId);
 
       if (!video) {
@@ -1791,7 +1791,7 @@ Bun.serve({
           return jsonResponse({ error: `Unknown book: "${bookName}"` }, 400);
         }
 
-        const video = await getVideoById(videoId);
+        const video = await getEpisodeById(videoId);
         if (!video) {
           return jsonResponse({ error: "Episode not found" }, 404);
         }
@@ -1822,9 +1822,9 @@ Bun.serve({
           scriptureToSave,
         ].toSorted((a, b) => a.book.localeCompare(b.book));
 
-        await updateVideoScriptures(videoId, nextScriptures);
+        await recordScriptures(videoId, nextScriptures);
 
-        const updatedVideo = await getVideoById(videoId);
+        const updatedVideo = await getEpisodeById(videoId);
         if (updatedVideo) {
           await generateHugoEpisode(updatedVideo, { silent: true });
         }

@@ -3,4 +3,4 @@ export * from "./ai.js";
 export * from "./config/index.js";
 export * from "./pipeline/index.js";
 export * from "./prompts/index.js";
-export * from "./storage/index.js";
+export * from "./catalog/episode-catalog.js";

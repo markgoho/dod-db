@@ -9,6 +9,9 @@
  *   bun run src/scripts/detect-all-segments.ts --dry-run    # Show what would be detected without saving
  */
 
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import type { EpisodeSegment } from "../catalog/episode-catalog.js";
+import { recordSegments } from "../catalog/episode-catalog.js";
 import {
   SEGMENT_LABELS,
   type SegmentType,
@@ -18,9 +21,6 @@ import {
   formatTimestamp,
   getAudioDuration,
 } from "../pipeline/detect-segments.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import type { EpisodeSegment } from "../storage/processed-videos.js";
-import { updateVideoSegments } from "../storage/update-video-segments.js";
 
 interface DetectionResult {
   videoId: string;
@@ -32,7 +32,7 @@ interface DetectionResult {
 }
 
 function hasVerifiedSegments(
-  video: Awaited<ReturnType<typeof loadProcessedVideos>>[number],
+  video: Awaited<ReturnType<typeof listEpisodes>>[number],
 ): boolean {
   return (
     video.segments?.some(segment => segment.confidence === "verified") ?? false
@@ -65,7 +65,7 @@ async function main() {
   }
 
   // Load all processed videos
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
   console.log(`Found ${videos.length} processed episodes\n`);
 
   // Filter videos to process
@@ -169,7 +169,7 @@ async function main() {
 
       // Save if not dry run
       if (!dryRun) {
-        await updateVideoSegments(video.videoId, episodeSegments);
+        await recordSegments(video.videoId, episodeSegments);
       }
 
       // Log result

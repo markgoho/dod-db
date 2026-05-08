@@ -9157,30 +9157,34 @@ export const tagVocabulary: TagDefinition[] = [
       "A specific theological designation referring to the singular supreme deity worshipped by the Israelites, as distinct from lesser divine beings or other gods.",
     status: "proposed",
     addedInEpisode: 160,
-  },	{
-		canonical: 'Lord\'s anointed',
-		variations: [],
-		category: 'theology',
-		description: 'A biblical designation for an individual chosen and consecrated by God, particularly a king (such as Saul or David), signifying divine selection and protection.',
-		status: 'proposed',
-		addedInEpisode: 161,
-	},
-	{
-		canonical: 'Jabesh-gilead',
-		variations: ['Jabesh'],
-		category: 'place',
-		description: 'An ancient city located in the Transjordan region, known for its loyalty to King Saul and for recovering the bodies of Saul and his sons after their defeat by the Philistines.',
-		status: 'proposed',
-		addedInEpisode: 161,
-	},
-	{
-		canonical: 'suicide',
-		variations: [],
-		category: 'theology',
-		description: 'The act of intentionally ending one\'s own life, discussed in the podcast in the context of biblical narratives and their subsequent theological and ethical interpretations.',
-		status: 'proposed',
-		addedInEpisode: 161,
-	},
+  },
+  {
+    canonical: "Lord's anointed",
+    variations: [],
+    category: "theology",
+    description:
+      "A biblical designation for an individual chosen and consecrated by God, particularly a king (such as Saul or David), signifying divine selection and protection.",
+    status: "proposed",
+    addedInEpisode: 161,
+  },
+  {
+    canonical: "Jabesh-gilead",
+    variations: ["Jabesh"],
+    category: "place",
+    description:
+      "An ancient city located in the Transjordan region, known for its loyalty to King Saul and for recovering the bodies of Saul and his sons after their defeat by the Philistines.",
+    status: "proposed",
+    addedInEpisode: 161,
+  },
+  {
+    canonical: "suicide",
+    variations: [],
+    category: "theology",
+    description:
+      "The act of intentionally ending one's own life, discussed in the podcast in the context of biblical narratives and their subsequent theological and ethical interpretations.",
+    status: "proposed",
+    addedInEpisode: 161,
+  },
 ];
 
 export function getAllSearchableTerms(

@@ -3,7 +3,7 @@
  */
 
 import * as path from "node:path";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { getRawGuestSpeakers } from "./get-guest-speakers.js";
 import { HUGO_CONTENT_DIR } from "./shared.js";
 import { slugifyTitle } from "./slugify-title.js";

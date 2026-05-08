@@ -1,13 +1,13 @@
 import { beforeEach, describe, expect, mock, test } from "bun:test";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 
 const fetchPodcastRssMock = mock(
   async (_url: string | undefined): Promise<string | undefined> => undefined,
 );
-const loadProcessedVideosMock = mock(async (): Promise<ProcessedVideo[]> => []);
+const listEpisodesMock = mock(async (): Promise<ProcessedVideo[]> => []);
 
-mock.module("../storage/load-processed-videos.js", () => ({
-  loadProcessedVideos: loadProcessedVideosMock,
+mock.module("../catalog/episode-catalog.js", () => ({
+  listEpisodes: listEpisodesMock,
 }));
 
 mock.module("./fetch-patreon-rss.js", () => ({
@@ -19,11 +19,11 @@ const { findNextUnprocessedEpisode } =
 
 beforeEach(() => {
   fetchPodcastRssMock.mockReset();
-  loadProcessedVideosMock.mockReset();
+  listEpisodesMock.mockReset();
   fetchPodcastRssMock.mockImplementation(
     async (_url: string | undefined): Promise<string | undefined> => undefined,
   );
-  loadProcessedVideosMock.mockImplementation(
+  listEpisodesMock.mockImplementation(
     async (): Promise<ProcessedVideo[]> => [],
   );
 });
@@ -62,7 +62,7 @@ describe("findNextUnprocessedEpisode", () => {
         </channel>
       </rss>`,
     );
-    loadProcessedVideosMock.mockImplementation(async () => [
+    listEpisodesMock.mockImplementation(async () => [
       {
         ...baseVideo,
         videoId: "processed-143",
@@ -105,7 +105,7 @@ describe("findNextUnprocessedEpisode", () => {
         </channel>
       </rss>`,
     );
-    loadProcessedVideosMock.mockImplementation(async () => [
+    listEpisodesMock.mockImplementation(async () => [
       {
         ...baseVideo,
         videoId: "processed-143",
@@ -133,7 +133,7 @@ describe("findNextUnprocessedEpisode", () => {
         </channel>
       </rss>`,
     );
-    loadProcessedVideosMock.mockImplementation(async () => []);
+    listEpisodesMock.mockImplementation(async () => []);
 
     await expect(
       findNextUnprocessedEpisode("https://example.com/canonical.xml"),

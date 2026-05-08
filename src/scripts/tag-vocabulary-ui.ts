@@ -7,6 +7,7 @@
  */
 
 import * as path from "node:path";
+import { listEpisodes } from "../catalog/episode-catalog.js";
 import type { TagCategory, TagDefinition } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
 import { addTagToEpisodes } from "../pipeline/add-tag-to-episodes.js";
@@ -22,7 +23,6 @@ import {
   updateTagInVocabulary,
   type UpdateTagParams as UpdateTagParameters,
 } from "../pipeline/update-tag-in-vocabulary.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 
 const PORT = 3001;
 
@@ -62,7 +62,7 @@ async function computeTagStats(): Promise<TagStats[]> {
     return statsCache.data;
   }
 
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
 
   // Build a map of canonical tag names to vocabulary definitions
   const vocabMap = new Map<string, TagDefinition>();
@@ -277,7 +277,7 @@ Bun.serve({
 
     // API: Get all processed episodes with tags
     if (url.pathname === "/api/episodes") {
-      const videos = await loadProcessedVideos();
+      const videos = await listEpisodes();
       return Response.json(videos);
     }
 

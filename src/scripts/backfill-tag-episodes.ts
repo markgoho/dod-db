@@ -1,11 +1,11 @@
+import { listEpisodes } from "../catalog/episode-catalog.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
 import { updateTagInVocabulary } from "../pipeline/update-tag-in-vocabulary.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 
 async function main(): Promise<void> {
   console.log("🏷️  Backfilling tag episode metadata\n");
 
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
   const episodesByTag = new Map<string, Set<number>>();
 
   for (const tag of tagVocabulary) {

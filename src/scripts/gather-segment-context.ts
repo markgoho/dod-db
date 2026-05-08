@@ -1,3 +1,5 @@
+import { getEpisodeByNumber } from "../catalog/episode-catalog.js";
+import type { EpisodeSegment } from "../catalog/episode-catalog.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { getGuestSpeakers } from "../hugo/get-guest-speakers.js";
 import { EXCLUDED_SEGMENT_TYPES } from "../hugo/shared.js";
@@ -5,8 +7,6 @@ import {
   gatherSegmentContext,
   type GatheredSegmentContext,
 } from "../pipeline/describe-segment.js";
-import { getVideoByEpisodeNumber } from "../storage/get-video-by-episode-number.js";
-import type { EpisodeSegment } from "../storage/processed-videos.js";
 
 const WEAK_EPISODE_TOPIC_LABELS = new Set([
   "star",
@@ -86,7 +86,7 @@ function shouldRegenerateEpisodeTopic(
 async function main(): Promise<void> {
   try {
     const args = parseArguments(process.argv.slice(2));
-    const video = await getVideoByEpisodeNumber(args.episodeNumber);
+    const video = await getEpisodeByNumber(args.episodeNumber);
 
     if (!video) {
       throw new Error(`Episode ${args.episodeNumber} not found`);

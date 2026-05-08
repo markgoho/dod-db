@@ -3,11 +3,11 @@
  * Called automatically by the YouTube processing pipeline.
  */
 
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { generateFrontmatter } from "../hugo/generate-frontmatter.js";
 import { getEpisodeOutputPath } from "../hugo/get-episode-path.js";
 import { transformToShortcodes } from "../hugo/transform-shortcodes.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
 
 /**
  * Generate Hugo content file for a single episode.

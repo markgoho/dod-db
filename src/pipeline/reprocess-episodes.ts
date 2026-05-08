@@ -3,9 +3,9 @@
  * Can be called from CLI scripts, UI servers, or tests.
  */
 
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import { transact } from "../catalog/episode-catalog.js";
 import { tagVocabulary, type TagCategory } from "../config/tag-vocabulary.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 import { sortTags } from "../utils/tag-utils.js";
 import { extractTags } from "./extract-tags.js";
 
@@ -50,9 +50,9 @@ export async function reprocessEpisodes(
   // If skipLlm is true, also disable LLM verification (no API calls at all)
   const finalEnableLlmVerification = skipLlm ? false : enableLlmVerification;
 
-  console.log("Loading processed videos...");
-  const videos = await loadProcessedVideos();
-  console.log(`Found ${videos.length} processed videos\n`);
+  console.log("Loading episodes...");
+  const videos = await listEpisodes();
+  console.log(`Found ${videos.length} episodes\n`);
 
   // Safety check: don't proceed if no videos loaded (likely validation error)
   if (videos.length === 0) {
@@ -191,7 +191,7 @@ export async function reprocessEpisodes(
   }
 
   console.log("\n\nSaving updated processed-videos.json...");
-  await saveProcessedVideos(videos);
+  await transact(() => videos);
 
   console.log("\n✅ Reprocessing complete!");
   console.log(`\nSummary:`);

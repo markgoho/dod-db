@@ -1,8 +1,8 @@
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { EPISODE_NUMBER_OVERRIDES } from "../config/episode-overrides.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { slugifyTitle } from "../hugo/slugify-title.js";
-import { computeEpisodeNumbers } from "../storage/compute-episode-numbers.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
+import { computeEpisodeNumbers } from "./compute-episode-numbers.js";
 import { isAfterPartyItem } from "./is-after-party-item.js";
 import { matchRssItemToVideo } from "./match-rss-to-video.js";
 import type { PodcastRssItem } from "./patreon-rss-item.js";

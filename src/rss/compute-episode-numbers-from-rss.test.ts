@@ -1,5 +1,5 @@
 import { describe, expect, mock, spyOn, test } from "bun:test";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { computeEpisodeNumbersFromRss } from "./compute-episode-numbers-from-rss.js";
 
 const baseVideo = {

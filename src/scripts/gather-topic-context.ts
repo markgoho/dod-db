@@ -1,11 +1,11 @@
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
 import { getGuestSpeakers } from "../hugo/get-guest-speakers.js";
 import type { SegmentData, StoredSegment } from "../hugo/shared.js";
 import type { TranscriptLine } from "../pipeline/detect-segments-types.js";
 import { parseTranscript } from "../pipeline/parse-transcript.js";
 import { timestampToSeconds } from "../pipeline/timestamp-to-seconds.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
 import { parseHugoFile } from "../utils/parse-hugo-file.js";
 import { titleToSlug } from "../utils/title-to-slug.js";
 
@@ -414,7 +414,7 @@ async function main(): Promise<void> {
     const canonical = findCanonicalTopic(args.topicName);
     const [tagIndex, videos] = await Promise.all([
       loadTagEpisodeIndex(),
-      loadProcessedVideos(),
+      listEpisodes(),
     ]);
     const tagLookup = buildTagEpisodeLookup(tagIndex);
     const pattern = buildSearchPattern(canonical);
