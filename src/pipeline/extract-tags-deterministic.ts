@@ -4,9 +4,9 @@
  * Supports optional LLM verification for ambiguous matches.
  */
 
+import type { EpisodeTag } from "../catalog/episode-catalog.js";
 import type { TagDefinition } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
-import type { EpisodeTag } from "../storage/processed-videos.js";
 import { verifyTagMatches, type EpisodeContext } from "./verify-tag-matches.js";
 
 /**

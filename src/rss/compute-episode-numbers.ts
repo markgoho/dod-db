@@ -1,4 +1,4 @@
-import type { ProcessedVideo } from "./processed-videos.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 
 /**
  * Extract episode number from video title if present.

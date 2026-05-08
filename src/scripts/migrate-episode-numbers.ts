@@ -5,13 +5,13 @@
  * Usage: bun run src/scripts/migrate-episode-numbers.ts
  */
 
-import { computeEpisodeNumbers } from "../storage/compute-episode-numbers.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import { saveProcessedVideos } from "../storage/save-processed-videos.js";
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import { transact } from "../catalog/episode-catalog.js";
+import { computeEpisodeNumbers } from "../rss/compute-episode-numbers.js";
 
 async function migrate() {
   console.log("Loading processed videos...");
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
 
   console.log(`Found ${videos.length} processed videos`);
 
@@ -35,7 +35,7 @@ async function migrate() {
   }
 
   console.log("\nSaving updated processed-videos.json...");
-  await saveProcessedVideos(withNumbers);
+  await transact(() => withNumbers);
 
   console.log(`✅ Migration complete! Updated ${missing} videos.`);
 }

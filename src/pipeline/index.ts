@@ -1,4 +1,3 @@
-import { writeToFile } from "../storage/file.js";
 import { correctTranscript } from "./correct.js";
 import { identifySpeakers } from "./identify-speakers.js";
 import { transcribeAudio } from "./transcribe.js";
@@ -28,7 +27,7 @@ export async function processTranscript({
   );
 
   console.log("Writing to file");
-  await writeToFile("corrected_transcript.txt", transcriptWithNames);
+  await Bun.write("corrected_transcript.txt", transcriptWithNames);
 
   console.log("Done!");
 }

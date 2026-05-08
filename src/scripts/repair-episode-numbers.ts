@@ -1,11 +1,11 @@
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
+import { transact } from "../catalog/episode-catalog.js";
 import { youtubeConfig } from "../config/youtube.js";
 import { computeEpisodeNumbersFromRss } from "../rss/compute-episode-numbers-from-rss.js";
+import { computeEpisodeNumbers } from "../rss/compute-episode-numbers.js";
 import { fetchPodcastRss } from "../rss/fetch-patreon-rss.js";
 import { parsePodcastRss } from "../rss/parse-patreon-rss.js";
-import { computeEpisodeNumbers } from "../storage/compute-episode-numbers.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
-import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 
 export interface EpisodeNumberMismatch {
   videoId: string;
@@ -56,7 +56,7 @@ async function computeCanonicalEpisodeNumbers(
 }
 
 export async function repairEpisodeNumbers(): Promise<void> {
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
   const canonicalVideos = await computeCanonicalEpisodeNumbers(videos);
   const mismatches = findEpisodeNumberMismatches(videos, canonicalVideos);
 
@@ -73,7 +73,7 @@ export async function repairEpisodeNumbers(): Promise<void> {
   }
 
   console.log("\nSaving corrected processed-videos.json...");
-  await saveProcessedVideos(canonicalVideos);
+  await transact(() => canonicalVideos);
   console.log("✅ Episode numbers repaired");
 }
 

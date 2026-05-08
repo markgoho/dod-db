@@ -2,7 +2,7 @@
  * Utility functions for tag operations.
  */
 
-import type { EpisodeTag } from "../storage/processed-videos.js";
+import type { EpisodeTag } from "../catalog/episode-catalog.js";
 
 /**
  * Sort tags by mention count (descending), then alphabetically.

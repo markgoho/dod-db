@@ -3,9 +3,9 @@
  * Used when adding a new tag to vocabulary - only processes that one tag.
  */
 
+import type { EpisodeTag } from "../catalog/episode-catalog.js";
 import type { TagDefinition } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
-import type { EpisodeTag } from "../storage/processed-videos.js";
 import { verifyTagMatches, type EpisodeContext } from "./verify-tag-matches.js";
 
 function escapeRegex(string_: string): string {

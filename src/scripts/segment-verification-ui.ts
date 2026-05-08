@@ -7,15 +7,15 @@
  */
 
 import * as path from "node:path";
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import type { EpisodeSegment } from "../catalog/episode-catalog.js";
+import { recordSegments } from "../catalog/episode-catalog.js";
 import {
   SEGMENT_COLORS,
   SEGMENT_LABELS,
   type SegmentType,
 } from "../config/segment-patterns.js";
 import { youtubeConfig } from "../config/youtube.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import type { EpisodeSegment } from "../storage/processed-videos.js";
-import { updateVideoSegments } from "../storage/update-video-segments.js";
 
 // Add a new pattern to segment-patterns.ts
 async function addPatternToConfig(
@@ -124,7 +124,7 @@ Bun.serve({
 
     // API: Get all episodes with segments
     if (url.pathname === "/api/episodes") {
-      const videos = await loadProcessedVideos();
+      const videos = await listEpisodes();
       // Sort by episode number
       const sorted = [...videos].toSorted(
         (a, b) => (a.episodeNumber || 0) - (b.episodeNumber || 0),
@@ -144,7 +144,7 @@ Bun.serve({
     // API: Get transcript for an episode
     if (url.pathname.startsWith("/api/transcript/")) {
       const videoId = url.pathname.replace("/api/transcript/", "");
-      const videos = await loadProcessedVideos();
+      const videos = await listEpisodes();
       const video = videos.find(v => v.videoId === videoId);
 
       if (!video) {
@@ -206,7 +206,7 @@ Bun.serve({
           );
         }
 
-        await updateVideoSegments(videoId, body.segments);
+        await recordSegments(videoId, body.segments);
         return Response.json({ success: true });
       } catch (error) {
         return Response.json(
@@ -223,7 +223,7 @@ Bun.serve({
 
     // API: Get segment statistics
     if (url.pathname === "/api/stats") {
-      const videos = await loadProcessedVideos();
+      const videos = await listEpisodes();
 
       const stats = {
         totalEpisodes: videos.length,

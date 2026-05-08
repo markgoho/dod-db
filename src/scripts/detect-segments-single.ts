@@ -7,15 +7,15 @@
  *   bun run src/scripts/detect-segments-single.ts <video-id> --dry-run
  */
 
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import type { EpisodeSegment } from "../catalog/episode-catalog.js";
+import { recordSegments } from "../catalog/episode-catalog.js";
 import { SEGMENT_LABELS } from "../config/segment-patterns.js";
 import {
   detectSegmentsFromAudio,
   formatTimestamp,
   getAudioDuration,
 } from "../pipeline/detect-segments.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import type { EpisodeSegment } from "../storage/processed-videos.js";
-import { updateVideoSegments } from "../storage/update-video-segments.js";
 
 async function main(): Promise<void> {
   const videoId = process.argv[2];
@@ -39,7 +39,7 @@ async function main(): Promise<void> {
   }
 
   // Load video metadata
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
   const video = videos.find(v => v.videoId === videoId);
 
   if (!video) {
@@ -105,7 +105,7 @@ async function main(): Promise<void> {
       detectionMethod: s.detectionMethod,
     }));
 
-    await updateVideoSegments(video.videoId, episodeSegments);
+    await recordSegments(video.videoId, episodeSegments);
     console.log("✅ Segments saved to processed-videos.json");
   }
 }

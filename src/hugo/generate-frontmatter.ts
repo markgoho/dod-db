@@ -2,10 +2,10 @@
  * Generate YAML frontmatter for Hugo episode pages.
  */
 
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { getBookByAnyName } from "../config/get-book-by-any-name.js";
 import type { TagDefinition } from "../config/tag-vocabulary.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
 import { titleToSlug } from "../utils/title-to-slug.js";
 import { formatSegmentsForFrontmatter } from "./format-segments-for-frontmatter.js";
 import { getGuestSpeakers } from "./get-guest-speakers.js";

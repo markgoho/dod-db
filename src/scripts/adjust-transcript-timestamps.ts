@@ -1,5 +1,5 @@
+import { getEpisodeByNumber } from "../catalog/episode-catalog.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
-import { getVideoByEpisodeNumber } from "../storage/get-video-by-episode-number.js";
 
 interface Options {
   file?: string;
@@ -173,13 +173,13 @@ function parseOptions(args: string[]): Options {
 
 async function resolveTranscriptPath(options: Options): Promise<{
   path: string;
-  episodeVideo?: Awaited<ReturnType<typeof getVideoByEpisodeNumber>>;
+  episodeVideo?: Awaited<ReturnType<typeof getEpisodeByNumber>>;
 }> {
   if (options.file) {
     return { path: options.file };
   }
 
-  const episodeVideo = await getVideoByEpisodeNumber(options.episode!);
+  const episodeVideo = await getEpisodeByNumber(options.episode!);
   if (!episodeVideo) {
     throw new Error(`Episode ${options.episode} not found`);
   }

@@ -6,13 +6,13 @@
  * Usage: bun run src/scripts/migrate-speakers.ts
  */
 
-import { extractSpeakersFromTranscript } from "../storage/extract-speakers-from-transcript.js";
-import { getProcessedVideos } from "../storage/get-processed-videos.js";
-import { saveProcessedVideos } from "../storage/save-processed-videos.js";
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import { transact } from "../catalog/episode-catalog.js";
+import { extractSpeakersFromTranscript } from "../pipeline/extract-speakers-from-transcript.js";
 
 async function migrate(): Promise<void> {
   console.log("Loading processed videos...");
-  const videos = await getProcessedVideos();
+  const videos = await listEpisodes();
 
   console.log(`Found ${videos.length} videos to process\n`);
 
@@ -46,7 +46,7 @@ async function migrate(): Promise<void> {
   }
 
   console.log("\nSaving updated metadata...");
-  await saveProcessedVideos(videos);
+  await transact(() => videos);
 
   console.log("\n✨ Migration complete:");
   console.log(`   Updated: ${updated} videos`);

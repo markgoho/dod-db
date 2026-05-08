@@ -3,10 +3,10 @@
  * Removes tags that are 'rejected' or not in vocabulary.
  */
 
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
+import { transact } from "../catalog/episode-catalog.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
-import { saveProcessedVideos } from "../storage/save-processed-videos.js";
 
 // Build set of accepted canonical tags
 const acceptedTags = new Set<string>();
@@ -19,7 +19,7 @@ for (const def of tagVocabulary) {
 console.log(`Found ${acceptedTags.size} accepted tags in vocabulary\n`);
 
 async function cleanInvalidTags() {
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
 
   let totalRemoved = 0;
   const updatedVideos: ProcessedVideo[] = [];
@@ -60,7 +60,7 @@ async function cleanInvalidTags() {
 
   // Save updated videos back to file
   if (totalRemoved > 0) {
-    await saveProcessedVideos(updatedVideos);
+    await transact(() => updatedVideos);
     console.log(
       `✓ Removed ${totalRemoved} invalid tag(s) across ${videos.length} episodes`,
     );

@@ -1,6 +1,6 @@
+import { listEpisodes } from "../catalog/episode-catalog.js";
+import type { ProcessedVideo } from "../catalog/episode-catalog.js";
 import { getGuestSpeakers } from "../hugo/get-guest-speakers.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
-import type { ProcessedVideo } from "../storage/processed-videos.js";
 import { parseHugoFile } from "../utils/parse-hugo-file.js";
 import { titleToSlug } from "../utils/title-to-slug.js";
 
@@ -93,7 +93,7 @@ async function main(): Promise<void> {
     const args = parseArguments(process.argv.slice(2));
     const guestSlug = titleToSlug(args.guestName);
     const normalizedGuestName = normalizeName(args.guestName);
-    const videos = await loadProcessedVideos();
+    const videos = await listEpisodes();
     const episodes = videos
       .filter(video => video.episodeNumber !== undefined)
       .filter(video => matchesGuest(video, normalizedGuestName))

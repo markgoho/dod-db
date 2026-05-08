@@ -1,14 +1,13 @@
 import * as path from "node:path";
+import { getEpisodeById } from "../catalog/episode-catalog.js";
+import { isProcessed } from "../catalog/episode-catalog.js";
+import { registerEpisode } from "../catalog/episode-catalog.js";
+import type { EpisodeSegment } from "../catalog/episode-catalog.js";
+import { recordScriptures } from "../catalog/episode-catalog.js";
+import { recordSegments } from "../catalog/episode-catalog.js";
+import { recordTags } from "../catalog/episode-catalog.js";
 import { youtubeConfig } from "../config/youtube.js";
-import { extractSpeakersFromTranscript } from "../storage/extract-speakers-from-transcript.js";
-import { writeToFile } from "../storage/file.js";
-import { getVideoById } from "../storage/get-video-by-id.js";
-import { isVideoProcessed } from "../storage/is-video-processed.js";
-import { markVideoAsProcessed } from "../storage/mark-video-as-processed.js";
-import type { EpisodeSegment } from "../storage/processed-videos.js";
-import { updateVideoScriptures } from "../storage/update-video-scriptures.js";
-import { updateVideoSegments } from "../storage/update-video-segments.js";
-import { updateVideoTags } from "../storage/update-video-tags.js";
+import { extractSpeakersFromTranscript } from "../pipeline/extract-speakers-from-transcript.js";
 import { correctTranscript } from "./correct.js";
 import {
   detectSegmentsFromAudio,
@@ -64,7 +63,7 @@ export async function processYouTubeVideo(
 
   // Check if already processed (unless force=true or startFrom is specified)
   if (!options.force && !options.startFrom) {
-    const alreadyProcessed = await isVideoProcessed(videoId);
+    const alreadyProcessed = await isProcessed(videoId);
     if (alreadyProcessed) {
       console.log(
         `⊘ Video ${videoId} already processed. Use --force to reprocess.`,
@@ -90,7 +89,7 @@ export async function processYouTubeVideo(
   if (options.startFrom === "segment-detection") {
     console.log("Starting from segment detection stage...");
 
-    const existingVideo = await getVideoById(videoId);
+    const existingVideo = await getEpisodeById(videoId);
     if (!existingVideo) {
       throw new Error(
         `Cannot start from segment-detection stage: video ${videoId} not found in processed-videos.json\n` +
@@ -175,7 +174,7 @@ export async function processYouTubeVideo(
         : newSegments;
 
     // Update only segments
-    await updateVideoSegments(videoId, segments);
+    await recordSegments(videoId, segments);
     console.log("Done!");
 
     return {
@@ -195,7 +194,7 @@ export async function processYouTubeVideo(
   if (options.startFrom === "extract-tags") {
     console.log("Starting from tag extraction stage...");
 
-    const existingVideo = await getVideoById(videoId);
+    const existingVideo = await getEpisodeById(videoId);
     if (!existingVideo) {
       throw new Error(
         `Cannot start from extract-tags stage: video ${videoId} not found in processed-videos.json\n` +
@@ -224,7 +223,7 @@ export async function processYouTubeVideo(
     console.log(`✓ Extracted ${tags.length} tags`);
 
     // Update video with extracted tags
-    await updateVideoTags(videoId, tags);
+    await recordTags(videoId, tags);
 
     // Extract scripture references
     console.log("Extracting scripture references...");
@@ -239,7 +238,7 @@ export async function processYouTubeVideo(
     console.log(`✓ Extracted ${scriptures.length} scripture books`);
 
     // Update video with extracted scriptures
-    await updateVideoScriptures(videoId, scriptures);
+    await recordScriptures(videoId, scriptures);
 
     console.log("Done!");
 
@@ -306,7 +305,7 @@ export async function processYouTubeVideo(
     transcriptWithNames = identified;
 
     console.log("Saving raw transcript...");
-    await writeToFile(rawPath, transcriptWithNames);
+    await Bun.write(rawPath, transcriptWithNames);
     console.log(`Raw transcript saved to: ${rawPath}`);
   }
 
@@ -321,7 +320,7 @@ export async function processYouTubeVideo(
 
   // Write final transcript (this is the one we commit)
   console.log("Writing final transcript...");
-  await writeToFile(transcriptPath, correctedTranscript);
+  await Bun.write(transcriptPath, correctedTranscript);
   console.log(`Final transcript saved to: ${transcriptPath}`);
 
   // Detect segments using audio jingle
@@ -363,7 +362,7 @@ export async function processYouTubeVideo(
 
   // Mark as processed FIRST to get episode number assigned
   console.log("Marking video as processed...");
-  const episodeNumber = await markVideoAsProcessed({
+  const episodeNumber = await registerEpisode({
     videoId,
     ...(options.audioUrl !== undefined && { audioUrl: options.audioUrl }),
     title: metadata.title,
@@ -385,7 +384,7 @@ export async function processYouTubeVideo(
   console.log(`✓ Extracted ${tags.length} tags`);
 
   // Update video with extracted tags
-  await updateVideoTags(videoId, tags);
+  await recordTags(videoId, tags);
 
   // Extract scripture references from corrected transcript
   console.log("Extracting scripture references...");
@@ -400,14 +399,14 @@ export async function processYouTubeVideo(
   console.log(`✓ Extracted ${scriptures.length} scripture books`);
 
   // Update video with extracted scriptures
-  await updateVideoScriptures(videoId, scriptures);
+  await recordScriptures(videoId, scriptures);
 
   // Analyze corrections for learning (compare raw vs corrected)
   await analyzeCorrections(transcriptWithNames, correctedTranscript, videoId);
 
   // Generate Hugo episode page
   console.log("Generating Hugo episode page...");
-  const updatedVideo = await getVideoById(videoId);
+  const updatedVideo = await getEpisodeById(videoId);
   if (updatedVideo) {
     await generateHugoEpisode(updatedVideo);
   }

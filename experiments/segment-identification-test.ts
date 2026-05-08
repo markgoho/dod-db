@@ -13,12 +13,12 @@
  */
 
 import { join } from "node:path";
+import { listEpisodes } from "../src/catalog/episode-catalog.js";
 import {
   detectSegmentsFromAudio,
   getAudioDuration,
 } from "../src/pipeline/detect-segments.js";
 import { identifySegmentTypes } from "../src/pipeline/identify-segment-types.js";
-import { loadProcessedVideos } from "../src/storage/load-processed-videos.js";
 
 interface SegmentComparison {
   timestamp: string;
@@ -149,7 +149,7 @@ async function main(): Promise<void> {
   console.log("🧪 Segment Identification Experiment\n");
 
   // Load all processed videos
-  const videos = await loadProcessedVideos();
+  const videos = await listEpisodes();
 
   // Filter to videos with segments and transcripts
   let episodesToTest = videos.filter(

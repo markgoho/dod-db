@@ -1,3 +1,4 @@
+import { listEpisodes } from "../catalog/episode-catalog.js";
 import {
   scriptureBooks,
   type BookDefinition,
@@ -9,7 +10,6 @@ import type { TranscriptLine } from "../pipeline/detect-segments-types.js";
 import { parseSpokenScriptureReference } from "../pipeline/parse-spoken-scripture-reference.js";
 import { parseTranscript } from "../pipeline/parse-transcript.js";
 import { timestampToSeconds } from "../pipeline/timestamp-to-seconds.js";
-import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 import { parseHugoFile } from "../utils/parse-hugo-file.js";
 import { titleToSlug } from "../utils/title-to-slug.js";
 
@@ -351,7 +351,7 @@ async function main(): Promise<void> {
     const bookSlug = titleToSlug(book.canonical);
     const pattern = buildBookSearchPattern(book);
     const [videos, episodes] = await Promise.all([
-      loadProcessedVideos(),
+      listEpisodes(),
       buildEpisodeContexts(book.canonical),
     ]);
 

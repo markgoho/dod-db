@@ -7,6 +7,12 @@
  *   bun run src/scripts/describe-segment.ts --episode 6 --segment what-does-that-mean --dry-run
  */
 
+import { getEpisodeByNumber } from "../catalog/episode-catalog.js";
+import type {
+  EpisodeSegment,
+  ProcessedVideo,
+} from "../catalog/episode-catalog.js";
+import { updateSegmentDescription } from "../catalog/episode-catalog.js";
 import type { SegmentType } from "../config/segment-patterns.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { formatSegmentsForFrontmatter } from "../hugo/format-segments-for-frontmatter.js";
@@ -15,12 +21,6 @@ import {
   postProcessSegmentDescription,
 } from "../pipeline/describe-segment.js";
 import { generateHugoEpisode } from "../pipeline/generate-hugo-episode.js";
-import { getVideoByEpisodeNumber } from "../storage/get-video-by-episode-number.js";
-import type {
-  EpisodeSegment,
-  ProcessedVideo,
-} from "../storage/processed-videos.js";
-import { updateSegmentDescription } from "../storage/update-segment-description.js";
 
 interface ParsedArguments {
   episodeNumber: number;
@@ -146,7 +146,7 @@ function resolveSegment(
 async function main(): Promise<void> {
   try {
     const args = parseArguments(process.argv.slice(2));
-    const video = await getVideoByEpisodeNumber(args.episodeNumber);
+    const video = await getEpisodeByNumber(args.episodeNumber);
 
     if (!video) {
       throw new Error(`Episode ${args.episodeNumber} not found`);

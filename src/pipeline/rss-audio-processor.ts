@@ -1,14 +1,13 @@
 import * as path from "node:path";
+import { getEpisodeById } from "../catalog/episode-catalog.js";
+import { isProcessed } from "../catalog/episode-catalog.js";
+import { registerEpisode } from "../catalog/episode-catalog.js";
+import type { EpisodeSegment } from "../catalog/episode-catalog.js";
+import { recordScriptures } from "../catalog/episode-catalog.js";
+import { recordTags } from "../catalog/episode-catalog.js";
 import { youtubeConfig } from "../config/youtube.js";
+import { extractSpeakersFromTranscript } from "../pipeline/extract-speakers-from-transcript.js";
 import type { PodcastRssItem } from "../rss/patreon-rss-item.js";
-import { extractSpeakersFromTranscript } from "../storage/extract-speakers-from-transcript.js";
-import { writeToFile } from "../storage/file.js";
-import { getVideoById } from "../storage/get-video-by-id.js";
-import { isVideoProcessed } from "../storage/is-video-processed.js";
-import { markVideoAsProcessed } from "../storage/mark-video-as-processed.js";
-import type { EpisodeSegment } from "../storage/processed-videos.js";
-import { updateVideoScriptures } from "../storage/update-video-scriptures.js";
-import { updateVideoTags } from "../storage/update-video-tags.js";
 import { correctTranscript } from "./correct.js";
 import {
   detectSegmentsFromAudio,
@@ -59,7 +58,7 @@ export async function processRssEpisode(
   console.log(`Record ID: ${recordId}`);
 
   if (!options.force && !options.startFrom) {
-    const alreadyProcessed = await isVideoProcessed(recordId);
+    const alreadyProcessed = await isProcessed(recordId);
     if (alreadyProcessed) {
       console.log(
         `⊘ Episode ${rssItem.itunesEpisode} already processed. Use --force to reprocess.`,
@@ -122,7 +121,7 @@ export async function processRssEpisode(
     transcriptWithNames = identified;
 
     console.log("Saving raw transcript...");
-    await writeToFile(rawPath, transcriptWithNames);
+    await Bun.write(rawPath, transcriptWithNames);
     console.log(`Raw transcript saved to: ${rawPath}`);
   }
 
@@ -134,7 +133,7 @@ export async function processRssEpisode(
   const correctedTranscript = await correctTranscript(transcriptWithNames);
 
   console.log("Writing final transcript...");
-  await writeToFile(transcriptPath, correctedTranscript);
+  await Bun.write(transcriptPath, correctedTranscript);
   console.log(`Final transcript saved to: ${transcriptPath}`);
 
   console.log("Detecting segments with audio jingle...");
@@ -170,7 +169,7 @@ export async function processRssEpisode(
   }
 
   console.log("Marking episode as processed...");
-  const episodeNumber = await markVideoAsProcessed({
+  const episodeNumber = await registerEpisode({
     videoId: recordId,
     audioUrl: rssItem.enclosureUrl,
     title: rssItem.title,
@@ -188,7 +187,7 @@ export async function processRssEpisode(
     episodeNumber,
   });
   console.log(`✓ Extracted ${tags.length} tags`);
-  await updateVideoTags(recordId, tags);
+  await recordTags(recordId, tags);
 
   console.log("Extracting scripture references...");
   const scriptures = await extractScripture(correctedTranscript, {
@@ -200,12 +199,12 @@ export async function processRssEpisode(
     },
   });
   console.log(`✓ Extracted ${scriptures.length} scripture books`);
-  await updateVideoScriptures(recordId, scriptures);
+  await recordScriptures(recordId, scriptures);
 
   await analyzeCorrections(transcriptWithNames, correctedTranscript, recordId);
 
   console.log("Generating Hugo episode page...");
-  const updatedVideo = await getVideoById(recordId);
+  const updatedVideo = await getEpisodeById(recordId);
   if (updatedVideo) {
     await generateHugoEpisode(updatedVideo);
   }

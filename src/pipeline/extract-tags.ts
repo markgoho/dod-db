@@ -6,8 +6,8 @@
  * Tier 3: Manual learning loop (promote discoveries to vocabulary)
  */
 
+import type { EpisodeTag } from "../catalog/episode-catalog.js";
 import type { TagCategory } from "../config/tag-vocabulary.js";
-import type { EpisodeTag } from "../storage/processed-videos.js";
 import { sortTags } from "../utils/tag-utils.js";
 import { extractTagsDeterministic } from "./extract-tags-deterministic.js";
 import { extractTagsLlm } from "./extract-tags-llm.js";

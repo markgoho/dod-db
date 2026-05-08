@@ -6,10 +6,10 @@
  *   bun run src/scripts/check-hugo-sync.ts
  */
 
+import { listEpisodesWithNumbers } from "../catalog/episode-catalog.js";
 import { tagVocabulary } from "../config/tag-vocabulary.js";
 import { extractCleanTitle } from "../hugo/extract-clean-title.js";
 import { getEpisodeOutputPath } from "../hugo/get-episode-path.js";
-import { getProcessedVideosWithNumbers } from "../storage/get-processed-videos-with-numbers.js";
 import { parseHugoFile } from "../utils/parse-hugo-file.js";
 import { titleToSlug } from "../utils/title-to-slug.js";
 
@@ -61,7 +61,7 @@ async function checkSync(): Promise<void> {
   console.log("🔍 Checking Hugo frontmatter sync...\n");
 
   const [videos, topicSlugs] = await Promise.all([
-    getProcessedVideosWithNumbers(),
+    listEpisodesWithNumbers(),
     loadTopicSlugs(),
   ]);
   const canonicalNameBySlug = buildCanonicalNameBySlug();
