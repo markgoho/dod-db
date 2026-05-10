@@ -74,3 +74,17 @@ Pipeline orchestrated by `src/pipeline/youtube-processor.ts`:
 - `ASSEMBLYAI_API_KEY` - Audio transcription
 - `GEMINI_API_KEY` - Gemini models
 - `FIREBASE_PROJECT_ID` - (Optional) Experimental Firestore features
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in GitHub Issues for `markgoho/dod-db`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Triage uses default five-role label vocabulary. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Domain docs use a single-context layout. See `docs/agents/domain.md`.
