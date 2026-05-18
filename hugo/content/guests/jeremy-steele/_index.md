@@ -6,8 +6,9 @@ summary: "Jeremy Steele is a public-facing pastor and spiritual communicator who
 works:
   - title: "How to Not Suck as a Christian"
     url: "https://www.amazon.com/How-Not-Suck-as-Christian/dp/1964252342?tag=elelohim0a-20"
-  - title: "Unbelief"
-    url: "https://jeremy-steele.com/"
+  - title: "Rituals for Heretics"
+    url: "https://www.amazon.com/Rituals-Heretics-Jeremy-Steele-ebook/dp/B0GKXJQNGF?tag=elelohim0a-20"
+  - "Unbelief"
   - "Holy Love"
 imageAlt: "Portrait of Jeremy Steele"
 ---

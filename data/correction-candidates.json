@@ -12155,7 +12155,37 @@
       "firstSeen": "2026-05-04T15:26:11.984Z",
       "lastSeen": "2026-05-04T15:26:11.984Z",
       "status": "pending"
+    },
+    "Día→Dia": {
+      "original": "Día",
+      "corrected": "Dia",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": [
+        "157908981"
+      ],
+      "examples": [
+        "\"de muertos. Día de los\"",
+        "\"States. And Día de los\""
+      ],
+      "correctedExamples": [
+        "\"de muertos. Dia de los\"",
+        "\"States. And Dia de los\""
+      ],
+      "timestamps": [
+        "00:14:11.713",
+        "00:35:08.672"
+      ],
+      "episodeIds": [
+        "157908981",
+        "157908981"
+      ],
+      "confidence": 5,
+      "firstSeen": "2026-05-18T02:10:29.309Z",
+      "lastSeen": "2026-05-18T02:10:29.309Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-05-04T15:26:11.984Z"
+  "lastUpdated": "2026-05-18T02:14:39.914Z"
 }

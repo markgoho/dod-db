@@ -29219,5 +29219,160 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "157908981",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/157908981.mp3?sig=PSrwmotVf6VeAGHoQLu1mC-EwT2ID28B2R20EcRMUms%3D",
+    "title": "Even Heretics Deserve Rituals with Jeremy Steele",
+    "publishedAt": "2026-05-10T20:27:31.000Z",
+    "processedAt": "2026-05-18T02:09:53.811Z",
+    "transcriptPath": "data/transcripts/2026-05-10-even-heretics-deserve-rituals-with-jeremy-steele.txt",
+    "tags": [
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 5
+      },
+      {
+        "tag": "Deconstruction",
+        "mentions": 3
+      }
+    ],
+    "segments": [
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:54:35.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": ["Jeremy Steele", "Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 162,
+    "scriptures": [],
+    "episodeTopic": "Secular Ritual"
+  },
+  {
+    "videoId": "158527217",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/158527217.mp3?sig=HlHseo-g5UOcwMkFkjYpk2UbIttDFhgiqpcpKDwsrHc%3D",
+    "title": "The Queen of Heaven?",
+    "publishedAt": "2026-05-17T20:09:34.000Z",
+    "processedAt": "2026-05-18T02:13:49.641Z",
+    "transcriptPath": "data/transcripts/2026-05-17-the-queen-of-heaven.txt",
+    "tags": [
+      {
+        "tag": "Deuteronomy",
+        "mentions": 5
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 4
+      },
+      {
+        "tag": "Judah",
+        "mentions": 6
+      },
+      {
+        "tag": "Egyptians",
+        "mentions": 1
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 27
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 16
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 5
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 3
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 2
+      },
+      {
+        "tag": "Salvation",
+        "mentions": 2
+      },
+      {
+        "tag": "Moab",
+        "mentions": 2
+      },
+      {
+        "tag": "Josiah",
+        "mentions": 15
+      },
+      {
+        "tag": "Deism",
+        "mentions": 3
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:09.445]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:02:09.445]",
+        "endTimestamp": "[00:31:33.624]",
+        "confidence": "verified",
+        "detectionMethod": "pattern",
+        "topicLabel": "Queen of Heaven",
+        "summary": "Jeremiah's goddess title and Marian confusion"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:31:33.624]",
+        "endTimestamp": "[00:54:56.928]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Founding Citations",
+        "summary": "Lutz paper misused to claim Christian founding"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 163,
+    "scriptures": [
+      {
+        "book": "Jeremiah",
+        "references": ["Jeremiah", "Jeremiah 4", "Jeremiah 7", "Jeremiah 44"],
+        "mentions": 10
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings 22", "2 Kings"],
+        "mentions": 2
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 2"],
+        "mentions": 1
+      }
+    ]
   }
 ]
