@@ -1,12 +1,21 @@
 {{- $description := .Site.Params.description -}}
-{{- if .IsPage -}}
-  {{- with .Description -}}
-    {{- $description = . -}}
+{{- if .Description -}}
+  {{- $description = .Description -}}
+{{- else if .IsHome -}}
+  {{- $description = .Site.Params.description -}}
+{{- else if and (or (eq .Kind "section") (eq .Kind "taxonomy")) (gt (len .Pages) 0) -}}
+  {{- $description = printf "Browse %s in the %s archive from Data Over Dogma companion pages." (lang.FormatNumberCustom 0 (len .Pages)) .Title -}}
+{{- else if and (eq .Kind "term") (gt (len .Pages) 0) -}}
+  {{- $taxonomyLabel := .Data.Plural | humanize -}}
+  {{- $description = printf "Browse %s Data Over Dogma pages tagged with %s in %s." (lang.FormatNumberCustom 0 (len .Pages)) .Title $taxonomyLabel -}}
+{{- else if .IsPage -}}
+  {{- $summary := .Summary | plainify | strings.TrimSpace -}}
+  {{- if $summary -}}
+    {{- $description = $summary -}}
   {{- else -}}
-    {{- $description = .Summary -}}
+    {{- $description = .Site.Params.description -}}
   {{- end -}}
 {{- end -}}
-
 
 <meta name="description" content="{{ $description | plainify }}" />
 
