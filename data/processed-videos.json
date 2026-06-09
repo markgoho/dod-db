@@ -3825,6 +3825,10 @@
       {
         "tag": "Susanna",
         "mentions": 1
+      },
+      {
+        "tag": "Shepherd of Hermas",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -12717,6 +12721,10 @@
       {
         "tag": "Tertullian",
         "mentions": 1
+      },
+      {
+        "tag": "Shepherd of Hermas",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -29511,6 +29519,212 @@
       {
         "book": "Mark",
         "references": ["Mark 1:1"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "159749719",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/159749719.mp3?sig=bRvMqA1qlWYfJq2-uCRH7Tq7NxO3IJZz-p0DImjUVpc%3D",
+    "title": "Let's Get Weird!",
+    "publishedAt": "2026-05-31T18:46:04.000Z",
+    "processedAt": "2026-06-09T15:34:11.669Z",
+    "transcriptPath": "data/transcripts/2026-05-31-lets-get-weird.txt",
+    "tags": [
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Codex Sinaiticus",
+        "mentions": 1
+      },
+      {
+        "tag": "John of Patmos",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 4
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 9
+      },
+      {
+        "tag": "Adultery",
+        "mentions": 7
+      },
+      {
+        "tag": "Sanhedrin",
+        "mentions": 1
+      },
+      {
+        "tag": "Christmas",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 4
+      },
+      {
+        "tag": "Didache",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 11
+      },
+      {
+        "tag": "Origen",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 3
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Clement of Alexandria",
+        "mentions": 1
+      },
+      {
+        "tag": "Creation ex nihilo",
+        "mentions": 1
+      },
+      {
+        "tag": "Melchizedek",
+        "mentions": 1
+      },
+      {
+        "tag": "Apocrypha",
+        "mentions": 2
+      },
+      {
+        "tag": "Tertullian",
+        "mentions": 1
+      },
+      {
+        "tag": "Priscilla",
+        "mentions": 1
+      },
+      {
+        "tag": "Salvation",
+        "mentions": 1
+      },
+      {
+        "tag": "Eusebius",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Aquila",
+        "mentions": 1
+      },
+      {
+        "tag": "David",
+        "mentions": 7
+      },
+      {
+        "tag": "Angel",
+        "mentions": 5
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Shepherd of Hermas",
+        "mentions": 10
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:39.999]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:01:39.999]",
+        "endTimestamp": "[00:37:49.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Hebrews 1",
+        "summary": "Jesus elevated over angels via misread OT passages"
+      },
+      {
+        "type": "is-it-canon",
+        "startTimestamp": "[00:37:49.000]",
+        "endTimestamp": "[01:03:48.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual",
+        "topicLabel": "Shepherd of Hermas",
+        "summary": "Near-canonical early Christian text nearly included"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
+    "episodeNumber": 165,
+    "scriptures": [
+      {
+        "book": "Psalms",
+        "references": [
+          "Psalms 2",
+          "Psalms 2:7",
+          "Psalms 82",
+          "Psalms 97:7",
+          "Psalms 101:25",
+          "Psalms 102",
+          "Psalms 104",
+          "Psalms 110"
+        ],
+        "mentions": 11
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 32:43"],
+        "mentions": 4
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 7:1", "Exodus 23:21", "Exodus 24"],
+        "mentions": 3
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark", "Mark 1:1"],
+        "mentions": 3
+      },
+      {
+        "book": "Hebrews",
+        "references": ["Hebrews 1", "Hebrews 1:1"],
+        "mentions": 2
+      },
+      {
+        "book": "John",
+        "references": ["John", "John 10"],
+        "mentions": 2
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew"],
+        "mentions": 1
+      },
+      {
+        "book": "Philippians",
+        "references": ["Philippians 2"],
         "mentions": 1
       }
     ]

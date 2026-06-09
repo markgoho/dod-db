@@ -9486,6 +9486,98 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     episodes: [79, 114, 164],
   },
+  {
+    canonical: "Shepherd of Hermas",
+    variations: ["Hermas"],
+    category: "literature",
+    llmVerify: true,
+    description:
+      "An influential early Christian apocalyptic and pastoral work, not included in the biblical canon but considered inspired by some early church figures.",
+    status: "accepted",
+    addedInEpisode: 165,
+    episodes: [20, 70, 165],
+  },
+  {
+    canonical: "Angels",
+    variations: ["angel"],
+    category: "theology",
+    description:
+      "Celestial beings who serve as messengers or intermediaries between God and humanity, often appearing in hierarchies in ancient Jewish and Christian thought.",
+    status: "proposed",
+    addedInEpisode: 165,
+  },
+  {
+    canonical: "Davidic king",
+    variations: [],
+    category: "character",
+    description:
+      "A king descended from David, whose enthronement was sometimes seen as an adoption by God, reflecting a concept of divine kingship.",
+    status: "proposed",
+    addedInEpisode: 165,
+  },
+  {
+    canonical: "Tiber",
+    variations: [],
+    category: "place",
+    description:
+      "A river in central Italy, flowing through Rome, mentioned in the Shepherd of Hermas as where Rhoda is seen emerging.",
+    status: "proposed",
+    addedInEpisode: 165,
+  },
+  {
+    canonical: "Rhoda",
+    variations: [],
+    category: "character",
+    description:
+      "A woman in Rome who was Hermas's former owner, later loved by him 'as a sister,' who appears in a vision in the Shepherd of Hermas.",
+    status: "proposed",
+    addedInEpisode: 165,
+  },
+  {
+    canonical: "Slave",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "A person who is the legal property of another and is forced to obey them, as Hermas was in the Shepherd of Hermas.",
+    status: "proposed",
+    addedInEpisode: 165,
+  },
+  {
+    canonical: "Divine name",
+    variations: [],
+    category: "theology",
+    description:
+      "Refers to the proper name of God (YHWH), sometimes understood to be imparted to certain celestial beings or to Jesus in early Christian thought.",
+    status: "proposed",
+    addedInEpisode: 165,
+  },
+  {
+    canonical: "Canonical",
+    variations: ["canon"],
+    category: "scholarship",
+    description:
+      "Pertaining to the status of a text being officially accepted as part of a religious canon, particularly the biblical canon.",
+    status: "proposed",
+    addedInEpisode: 165,
+  },
+  {
+    canonical: "Early Christianity",
+    variations: [],
+    category: "religion",
+    description:
+      "The historical period spanning from the origins of the Christian movement in the 1st century CE through its initial development and spread.",
+    status: "proposed",
+    addedInEpisode: 165,
+  },
+  {
+    canonical: "Similitudes",
+    variations: [],
+    category: "literature",
+    description:
+      "The third section of the Shepherd of Hermas, consisting of parables or allegories delivered by the Shepherd to convey moral and theological lessons.",
+    status: "proposed",
+    addedInEpisode: 165,
+  },
 ];
 
 export function getAllSearchableTerms(

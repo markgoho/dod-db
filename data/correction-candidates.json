@@ -8648,7 +8648,77 @@
       "firstSeen": "2026-06-09T13:55:11.252Z",
       "lastSeen": "2026-06-09T13:55:11.252Z",
       "status": "pending"
+    },
+    "sun→Son": {
+      "original": "sun",
+      "corrected": "Son",
+      "category": "proper-noun",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": ["159749719"],
+      "examples": [
+        "\"worship the sun, and that's\"",
+        "\"of the sun,\" he says,\"",
+        "\"of the sun. So he\""
+      ],
+      "correctedExamples": [
+        "\"worship the Son, and that's\"",
+        "\"of the Son,\" he says,\"",
+        "\"of the Son. So he\""
+      ],
+      "timestamps": ["00:20:00.630", "00:21:28.740", "00:27:56.290"],
+      "episodeIds": ["159749719", "159749719", "159749719"],
+      "confidence": 20,
+      "firstSeen": "2026-06-09T15:35:49.211Z",
+      "lastSeen": "2026-06-09T15:35:49.211Z",
+      "status": "pending"
+    },
+    "Hermes→Hermas": {
+      "original": "Hermes",
+      "corrected": "Hermas",
+      "category": "spelling",
+      "totalOccurrences": 7,
+      "episodeCount": 1,
+      "episodes": ["159749719"],
+      "examples": [
+        "\"the name Hermes drops off\"",
+        "\"hear about Hermes after that,\"",
+        "\"that, but Hermes is narrating\""
+      ],
+      "correctedExamples": [
+        "\"the name Hermas drops off\"",
+        "\"hear about Hermas after that,\"",
+        "\"that, but Hermas is narrating\""
+      ],
+      "timestamps": ["00:42:59.590", "00:42:59.590", "00:42:59.590"],
+      "episodeIds": ["159749719", "159749719", "159749719"],
+      "confidence": 25,
+      "firstSeen": "2026-06-09T15:35:49.211Z",
+      "lastSeen": "2026-06-09T15:35:49.211Z",
+      "status": "pending"
+    },
+    "Hermes's→Hermas's": {
+      "original": "Hermes's",
+      "corrected": "Hermas's",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["159749719"],
+      "examples": [
+        "\"yourself in Hermes's shoes. Surely\"",
+        "\"yourself into Hermes's shoes. Um,\""
+      ],
+      "correctedExamples": [
+        "\"yourself in Hermas's shoes. Surely\"",
+        "\"yourself into Hermas's shoes. Um,\""
+      ],
+      "timestamps": ["00:51:18.669", "00:51:18.669"],
+      "episodeIds": ["159749719", "159749719"],
+      "confidence": 15,
+      "firstSeen": "2026-06-09T15:35:49.211Z",
+      "lastSeen": "2026-06-09T15:35:49.211Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-06-09T13:55:11.252Z"
+  "lastUpdated": "2026-06-09T15:35:49.211Z"
 }

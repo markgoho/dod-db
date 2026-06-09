@@ -37,8 +37,14 @@ function buildCanonicalNameBySlug(
   );
 }
 
-function loadTopicSlugs(): Set<string> {
-  const topicSlugs = [
+/**
+ * Build a map from normalized slug (as titleToSlug would produce) to the
+ * actual filesystem directory name. Topic page directories may preserve
+ * characters (e.g. dots in "c.-s.-lewis") that titleToSlug strips, so we
+ * normalize both sides before comparing.
+ */
+function loadTopicSlugMap(): Map<string, string> {
+  const dirs = [
     ...new Bun.Glob("*/_index.md").scanSync({
       cwd: new URL("../../hugo/content/topics/", import.meta.url).pathname,
     }),
@@ -46,25 +52,25 @@ function loadTopicSlugs(): Set<string> {
     .map(path => path.split("/")[0])
     .filter(Boolean) as string[];
 
-  return new Set(topicSlugs);
+  return new Map(dirs.map(dir => [titleToSlug(dir), dir]));
 }
 
 export async function generateFrontmatter(
   video: ProcessedVideo,
   cleanTitle: string,
 ): Promise<string> {
-  const topicSlugs = loadTopicSlugs();
+  const topicSlugMap = loadTopicSlugMap();
   const vocabulary = await loadFreshTagVocabulary();
   const canonicalNameBySlug = buildCanonicalNameBySlug(vocabulary);
   const extractedTags = video.tags?.map(t => t.tag) ?? [];
   const topics = extractedTags.flatMap(tag => {
     const slug = titleToSlug(tag);
-    if (!topicSlugs.has(slug)) {
+    if (!topicSlugMap.has(slug)) {
       return [];
     }
     return [canonicalNameBySlug.get(slug) ?? tag];
   });
-  const tags = extractedTags.filter(tag => !topicSlugs.has(titleToSlug(tag)));
+  const tags = extractedTags.filter(tag => !topicSlugMap.has(titleToSlug(tag)));
   const guests = getGuestSpeakers(video.speakers);
   const { segments, segmentData } = formatSegmentsForFrontmatter(
     video.segments,

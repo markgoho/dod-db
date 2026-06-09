@@ -19,6 +19,7 @@ topics:
   - Maccabean Revolt
   - Masoretes
   - Susanna
+  - Shepherd of Hermas
 tags:
   - Apocrypha
   - Flood

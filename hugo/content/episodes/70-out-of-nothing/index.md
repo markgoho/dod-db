@@ -16,6 +16,7 @@ topics:
   - Paul
   - Ritual Purity
   - Salvation
+  - Shepherd of Hermas
 tags:
   - Apocrypha
   - Creation ex nihilo

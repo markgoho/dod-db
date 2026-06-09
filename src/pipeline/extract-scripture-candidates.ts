@@ -43,6 +43,7 @@ interface ScriptureMatch {
 
 const DISPLAY_SCRIPTURE_ABBREVIATIONS = new Map<string, string>([
   ["Acts", "Acts"],
+  ["Hebrews", "Hebrews"],
   ["John", "John"],
   ["Mark", "Mark"],
   ["Ruth", "Ruth"],
