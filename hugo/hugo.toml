@@ -1,7 +1,9 @@
 baseURL = 'https://metadataoverdogma.fyi/'
-languageCode = 'en-us'
 title = 'Metadata over Dogma'
 enableGitInfo = true
+
+[languages.en]
+locale = 'en-US'
 
 [params]
 description = "Increasing public access to the metadata, transcripts, references, and scholarly context surrounding the academic study of the Bible and religion"
