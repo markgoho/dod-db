@@ -4,8 +4,8 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Set versions for our tools as arguments
-ARG HUGO_VERSION=0.160.1
-ARG BUN_VERSION=1.3.11
+ARG HUGO_VERSION=0.163.0
+ARG BUN_VERSION=1.3.14
 ARG PLAYWRIGHT_VERSION=1.57.0
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
