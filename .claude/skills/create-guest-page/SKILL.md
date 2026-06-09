@@ -64,6 +64,7 @@ Search public sources on the web for:
 - selected works with destination links
 - headshot image URL
 
+Use Playwriter early for headshot discovery when a public profile page is likely to have a portrait. Prefer opening the institutional or author profile in a browser, locating the profile image visually, and confirming that it is a real headshot before saving anything.
 Prefer biographical sources in this order:
 
 1. university or institutional profile pages
@@ -82,8 +83,7 @@ Use public sources to infer:
 
 - `credentials` — keep this short and traditional, such as `PhD candidate`, `PhD`, `M.Div.`, `M.Ed.`, or similar. Do not overload this line with affiliations or biography prose.
 - `works` — a short non-exhaustive list, usually 3 to 5 items max, strongest or most relevant first; use linked objects with `title` and `url` when a trustworthy destination is available
-- `headshotUrl` — use a stable public image URL only after confirming it is a real portrait or profile photo of the guest. Prefer the guest's own About/profile page image, page `og:image`, faculty profile image, or author headshot over homepage hero images, decorative art, manuscript images, book covers, logos, lecture slides, or other topical illustrations.
-- `imageAlt` — plain literal alt text, usually `Portrait of <Name>`
+- `headshotUrl` — use a stable public image URL only after confirming it is a real portrait or profile photo of the guest. Prefer the guest's own About/profile page image, page `og:image`, faculty profile image, or author headshot, and inspect the page in Playwriter if needed to verify the image visually. Avoid homepage hero images, decorative art, manuscript images, book covers, logos, lecture slides, and other topical illustrations.- `imageAlt` — plain literal alt text, usually `Portrait of <Name>`
 
 If the available public evidence is weak or conflicting, ask the user instead of guessing. Do not ask the user to provide information that can be found confidently from a public institutional profile, CV, publisher page, or the guest's episode introductions.
 
@@ -181,7 +181,7 @@ The Hugo server is already running in this project, so do not start it.
 
 If aliases are present, do not use them for localhost QA if they redirect to the deployed site. Prefer the canonical localhost URL only.
 
-Before considering the page complete, visually inspect the downloaded `headshot.*` file or rendered page image. Confirm it shows the guest's face as a suitable profile photo, not a manuscript, book cover, logo, decorative artwork, placeholder, cropped body part, or unrelated contextual image. If you cannot visually confirm the photo is an appropriate portrait, do not use it; find a better source or ask the user for help.
+Before considering the page complete, visually inspect the downloaded `headshot.*` file, the source page in Playwriter, or the rendered page image. Confirm it shows the guest's face as a suitable profile photo, not a manuscript, book cover, logo, decorative artwork, placeholder, cropped body part, or unrelated contextual image. If you cannot visually confirm the photo is an appropriate portrait, do not use it; find a better source or ask the user for help.
 
 ### 7. Editorial pass
 

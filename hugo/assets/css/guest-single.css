@@ -78,10 +78,6 @@
   filter: grayscale(0) contrast(1);
 }
 
-.guest-profile-panel--works {
-  margin-top: var(--space-l);
-}
-
 .guest-page .guest-episodes {
   border-top: var(--border-width-sm) solid var(--tan-300);
   margin-top: var(--space-xl);

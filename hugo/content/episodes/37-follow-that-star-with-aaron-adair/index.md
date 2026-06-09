@@ -39,6 +39,7 @@ tags:
   - Isaiah
   - Joshua
   - Peter
+  - J.R.R. Tolkien
 books:
   - Matthew
   - Numbers

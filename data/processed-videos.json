@@ -6809,6 +6809,10 @@
       {
         "tag": "Second Coming",
         "mentions": 1
+      },
+      {
+        "tag": "J.R.R. Tolkien",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -14017,6 +14021,10 @@
       {
         "tag": "Tithing",
         "mentions": 1
+      },
+      {
+        "tag": "C. S. Lewis",
+        "mentions": 12
       }
     ],
     "segments": [
@@ -19867,6 +19875,10 @@
       },
       {
         "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "C. S. Lewis",
         "mentions": 1
       }
     ],
@@ -29371,6 +29383,134 @@
       {
         "book": "Isaiah",
         "references": ["Isaiah 2"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "159133274",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/159133274.mp3?sig=vNi8QJPHsLAHwRlmh4xtBSXDzIlt0FnO9i0L9_6Fnw0%3D",
+    "title": "C. S. Lewis and the Bible with Leslie Baynes",
+    "publishedAt": "2026-05-24T20:01:49.000Z",
+    "processedAt": "2026-06-09T13:53:47.289Z",
+    "transcriptPath": "data/transcripts/2026-05-24-c-s-lewis-and-the-bible-with-leslie-baynes.txt",
+    "tags": [
+      {
+        "tag": "source criticism",
+        "mentions": 1
+      },
+      {
+        "tag": "Univocality",
+        "mentions": 2
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 8
+      },
+      {
+        "tag": "Christmas",
+        "mentions": 3
+      },
+      {
+        "tag": "Pharisees",
+        "mentions": 2
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 6
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Decalogue",
+        "mentions": 1
+      },
+      {
+        "tag": "Second Temple period",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 1
+      },
+      {
+        "tag": "atonement",
+        "mentions": 4
+      },
+      {
+        "tag": "Jonah",
+        "mentions": 1
+      },
+      {
+        "tag": "Judas Iscariot",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "J.R.R. Tolkien",
+        "mentions": 4
+      },
+      {
+        "tag": "C. S. Lewis",
+        "mentions": 72
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:05.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:01:05.000]",
+        "endTimestamp": "[01:07:26.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Leslie Baynes", "Dan McClellan"],
+    "episodeNumber": 164,
+    "scriptures": [
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark 1:1"],
         "mentions": 1
       }
     ]
