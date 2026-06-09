@@ -44,9 +44,10 @@ At minimum:
 - read the opening introduction from the guest's first appearance
 - inspect every gathered appearance for titles, institutional affiliations, research areas, and works discussed on the show
 - search each transcript for work cues such as `book`, `article`, `essay`, `chapter`, `volume`, `commentary`, `author`, `wrote`, `written`, `published`, `forthcoming`, and known publisher/series names
+- also note any social media handles, websites, class links, Patreon, newsletter, or other public-facing resources the guest or hosts mention
 - use that evidence to draft the 1 to 2 sentence summary
-- start the selected works list with works explicitly named in the episode when the hosts or guest discuss a specific book, article, project, or publication
-- do not stop after finding one good work; continue through every appearance before deciding the selected works list is complete
+- start the helpful links list with published works explicitly named in the episode; supplement with social media profiles, personal websites, class links, or other public resources when the guest has few or no publications
+- do not stop after finding one good link; continue through every appearance before deciding the helpful links list is complete
 
 Prefer the show's own introduction language for:
 
@@ -61,7 +62,7 @@ Search public sources on the web for:
 
 - credentials
 - current institutional affiliation, if relevant for understanding the credential line
-- selected works with destination links
+- helpful links — published works, social media profiles, personal website, Linktree, newsletter, free classes, or other public-facing resources
 - headshot image URL
 
 Use Playwriter early for headshot discovery when a public profile page is likely to have a portrait. Prefer opening the institutional or author profile in a browser, locating the profile image visually, and confirming that it is a real headshot before saving anything.
@@ -73,16 +74,21 @@ Prefer biographical sources in this order:
 4. conference or society pages
 5. other public professional pages
 
-For selected work destination links, start from works named in the episode transcript before branching out to public profiles, CVs, publisher pages, catalogs, or retailers. Use Playwriter as the default way to find these links in a normal browser, especially for books and other retailer pages that are difficult to verify with fetch-only tooling. Search by exact title plus author when possible, and use the browser results to navigate to a stable detail page rather than guessing URLs. Be critical of search results for common names: do not add a work unless the source connects it to the same guest identity, not merely the same name. Confirm authorship using at least one strong signal such as the guest's institutional/profile page, CV, publisher author bio, episode discussion, OR a product/catalog page whose author details match the guest's known field, credentials, or biography. If attribution is ambiguous, omit the work or ask the user instead of guessing.
+For helpful links, use this priority order:
 
-Once authorship is confirmed, use Playwriter to look for a stable Amazon product page first. When using Amazon, include the approved Associates tag `elelohim0a-20` in the URL by adding `tag=elelohim0a-20` to the product page query string. If Amazon does not have the work, or a publisher/institutional/niche page is clearly more appropriate, use a reputable direct destination such as a publisher page, university press page, author page, journal page, or other legitimate bookseller. Prefer product/detail pages over search result pages. Do not use pirate sources, low-trust aggregators, redirect spam, or broken links.
+1. **Published works** named in the episode — books, articles, essays, courses. Confirm authorship using at least one strong signal (institutional/profile page, CV, publisher bio, episode discussion, or product page whose author details match the guest's known field). If attribution is ambiguous, omit or ask the user. For books, use Playwriter to find a stable Amazon product page and include the Associates tag `elelohim0a-20` (`?tag=elelohim0a-20`). If Amazon lacks the work or a publisher/university press page is more appropriate, use that instead. Prefer product/detail pages over search results.
+2. **Social media profiles** — Instagram, TikTok, YouTube, Twitter/X, Threads. Use the handle mentioned in the episode or confirmed on the guest's Linktree/website. Prefer the platform where the guest is most active or best known.
+3. **Personal website or Linktree** — include when it serves as a useful hub for the guest's work and resources.
+4. **Free classes, newsletters, Patreon, or other public resources** mentioned in the episode — especially valuable when the guest offers free educational content.
 
-Before saving, validate every selected-work URL you plan to include, using Playwriter when needed to confirm the destination in a real browser. Confirm that each link resolves to a live destination for the specific work rather than a 404, generic storefront/search page, CAPTCHA/interstitial, or unrelated product. If an Amazon product page is broken or unavailable, replace it with another stable destination instead of keeping the bad link.
+For guests who primarily work in social media or education rather than publishing, social profiles and class links are the most useful helpful links and should not be omitted just because there are no books.
+
+Before saving, validate every URL using Playwriter when needed. Confirm each link resolves to the intended destination and not a 404, search results page, or unrelated profile. If an Amazon product page is broken, replace it with another stable destination.
 
 Use public sources to infer:
 
-- `credentials` — keep this short and traditional, such as `PhD candidate`, `PhD`, `M.Div.`, `M.Ed.`, or similar. Do not overload this line with affiliations or biography prose.
-- `works` — a short non-exhaustive list, usually 3 to 5 items max, strongest or most relevant first; use linked objects with `title` and `url` when a trustworthy destination is available
+- `credentials` — keep this short and traditional, such as `PhD candidate`, `PhD`, `M.Div.`, `M.Ed.`, or similar. For non-academic guests, a short role description like `Content creator & educator` is acceptable. Do not overload this line with affiliations or biography prose.
+- `works` — the frontmatter field name is `works` but it renders as **Helpful Links**. A short non-exhaustive list, usually 2 to 5 items, most useful first. For academic guests prefer published works; for social media or educator guests prefer social profiles, class links, and website. Use linked objects `{ "title": "...", "url": "..." }` whenever a trustworthy destination is available. Always populate this for any guest who has a meaningful public presence — do not leave it empty just because there are no books.
 - `headshotUrl` — use a stable public image URL only after confirming it is a real portrait or profile photo of the guest. Prefer the guest's own About/profile page image, page `og:image`, faculty profile image, or author headshot, and inspect the page in Playwriter if needed to verify the image visually. Avoid homepage hero images, decorative art, manuscript images, book covers, logos, lecture slides, and other topical illustrations.- `imageAlt` — plain literal alt text, usually `Portrait of <Name>`
 
 If the available public evidence is weak or conflicting, ask the user instead of guessing. Do not ask the user to provide information that can be found confidently from a public institutional profile, CV, publisher page, or the guest's episode introductions.
@@ -97,7 +103,7 @@ The target page structure is:
 2. name + credentials
 3. episode count
 4. summary of specialty or expertise
-5. selected works
+5. helpful links (published works, social profiles, website, classes, etc.)
 6. episodes they appear in
 
 Authoring rules:
@@ -106,8 +112,8 @@ Authoring rules:
 - `guestSlug` should normally be the gathered slug unless project slug policy requires a different normalized form
 - `credentials` must be short and readable
 - `summary` must be 1 to 2 sentences and should describe the guest's area of work, not just restate their name
-- `works` should be a short non-exhaustive list, usually 3 to 5 items max; prefer episode-discussed works first, verify every work belongs to the same guest before adding it, prefer `{ "title": "...", "url": "..." }` objects, and use plain strings only when no trustworthy destination link can be found
-- before saving, do a final selected-works audit: list every gathered appearance mentally, confirm each was checked for work mentions, confirm every included work has same-author evidence, and confirm any omitted candidate was skipped because it is forthcoming/unavailable, weakly attributed, less relevant, or lacks a trustworthy destination
+- `works` (renders as **Helpful Links**) should be 2 to 5 items, most useful first; for academic guests prefer published works, for social media/educator guests prefer social profiles and class links; prefer `{ "title": "...", "url": "..." }` objects; use plain strings only when no destination link can be found; do not leave empty for guests with a meaningful public presence
+- before saving, do a final helpful-links audit: confirm every appearance was checked for mentioned works and resources, confirm every included work has same-author evidence, confirm social/class links match the correct guest identity, and confirm any omitted candidate was skipped for a clear reason (unavailable, weakly attributed, less relevant, or no trustworthy destination)
 - `expertise` is optional and should only be used if it adds clear value
 - `imageAlt` should be plain, literal alt text
 
@@ -163,7 +169,7 @@ Prefer stdin via a quoted heredoc. Do not create temporary JSON files unless std
 
 ### 6. Verify
 
-Before building, validate the selected-work links in the saved frontmatter. Use Playwriter as the default review path for this link check so you confirm the destinations in a normal browser. Open each destination and confirm it lands on the intended work page. If any link is broken, redirected to an unrelated item, or only points to a search/results page when a stable product/detail page should exist, fix the frontmatter first.
+Before building, validate every helpful link in the saved frontmatter. Use Playwriter as the default review path so you confirm the destinations in a normal browser. Open each destination and confirm it lands on the intended page — the correct social profile, work detail page, or resource. If any link is broken, redirected to an unrelated item, or points to a search/results page when a stable detail page should exist, fix the frontmatter first.
 
 Run:
 
@@ -191,7 +197,7 @@ Check that:
 - the credentials line is concise and credential-like rather than biographical
 - the summary is concise, specific, and supported by episode introductions and public profile evidence
 - the episode count matches the gathered context
-- the selected works list is clean, non-exhaustive, and uses trustworthy destination links where available
+- the helpful links section is present and populated for any guest with a meaningful public presence; links are clean and resolve correctly
 - the episode grid shows the guest's appearances
 
 If any of those are weak, tighten them before finishing.

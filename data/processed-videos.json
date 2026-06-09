@@ -29728,5 +29728,74 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "160380722",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/160380722.mp3?sig=UUazEadLEr_wqzZa3cvyEmFHSRJn14oX6g9SjC1O9kg%3D",
+    "title": "Unpacking Purity Culture with Monte Mader",
+    "publishedAt": "2026-06-07T06:00:05.000Z",
+    "processedAt": "2026-06-09T22:30:22.359Z",
+    "transcriptPath": "data/transcripts/2026-06-07-unpacking-purity-culture-with-monte-mader.txt",
+    "tags": [
+      {
+        "tag": "Christian Nationalism",
+        "mentions": 6
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Bethlehem",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 4
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 1
+      },
+      {
+        "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "Gaza",
+        "mentions": 1
+      },
+      {
+        "tag": "Eve",
+        "mentions": 1
+      },
+      {
+        "tag": "Augustine",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 3
+      }
+    ],
+    "segments": [],
+    "speakers": ["Monte Mader", "Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 166,
+    "scriptures": [
+      {
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians 7"],
+        "mentions": 1
+      },
+      {
+        "book": "Ephesians",
+        "references": ["Ephesians 5"],
+        "mentions": 1
+      }
+    ]
   }
 ]

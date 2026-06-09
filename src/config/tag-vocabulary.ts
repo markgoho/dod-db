@@ -9578,6 +9578,96 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
     addedInEpisode: 165,
   },
+  {
+    canonical: "Monte Mader",
+    variations: [],
+    category: "person",
+    description:
+      'A social media personality and rock musician known for her critical discussions on Christian nationalism, purity culture, and biblical scholarship. She co-hosts the "Data Over Dogma" podcast.',
+    status: "proposed",
+    addedInEpisode: 166,
+  },
+  {
+    canonical: "social media",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Online platforms and technologies that enable users to create and share content or to participate in social networking.",
+    status: "proposed",
+    addedInEpisode: 166,
+  },
+  {
+    canonical: "Wyoming",
+    variations: [],
+    category: "place",
+    description:
+      "A state in the western United States where Monte Mader grew up in a very rural and Christian nationalist environment.",
+    status: "proposed",
+    addedInEpisode: 166,
+  },
+  {
+    canonical: "Columbine",
+    variations: [],
+    category: "event",
+    description:
+      "Refers to the Columbine High School massacre in 1999, which significantly escalated rhetoric around persecution and the need to defend faith in Monte Mader's upbringing.",
+    status: "proposed",
+    addedInEpisode: 166,
+  },
+  {
+    canonical: "Democrats",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "A political party in the United States, mentioned in the context of Christian nationalist rhetoric about government threats.",
+    status: "proposed",
+    addedInEpisode: 166,
+  },
+  {
+    canonical: "Matthew Shepard",
+    variations: ["Shepard"],
+    category: "person",
+    description:
+      "A gay student who was brutally murdered in Wyoming in 1998, mentioned in the context of the region's ultraconservative sentiment.",
+    status: "proposed",
+    addedInEpisode: 166,
+  },
+  {
+    canonical: "Liberty University",
+    variations: ["Liberty"],
+    category: "place",
+    description:
+      "A private evangelical Christian university in Lynchburg, Virginia, where Monte Mader was forced to attend for her college education.",
+    status: "proposed",
+    addedInEpisode: 166,
+  },
+  {
+    canonical: "purity culture",
+    variations: [],
+    category: "theology",
+    description:
+      "A social and religious movement promoting sexual abstinence before marriage, often emphasizing female virginity and modesty, and frequently criticized for its harmful effects on self-worth and consent.",
+    status: "proposed",
+    addedInEpisode: 166,
+  },
+  {
+    canonical: "sexual assault",
+    variations: [],
+    category: "event",
+    description:
+      "An act of violence where a person is forced or coerced into unwanted sexual contact, discussed in the context of purity culture and victim-blaming.",
+    status: "proposed",
+    addedInEpisode: 166,
+  },
+  {
+    canonical: "sexual violence",
+    variations: [],
+    category: "event",
+    description:
+      "Any sexual act, attempt to obtain a sexual act, unwanted sexual comments or advances, or acts to traffic or otherwise directed against a person's sexuality using coercion, by any person regardless of their relationship to the victim. Discussed in the context of the Bible and purity culture.",
+    status: "proposed",
+    addedInEpisode: 166,
+  },
 ];
 
 export function getAllSearchableTerms(

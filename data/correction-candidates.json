@@ -8718,7 +8718,31 @@
       "firstSeen": "2026-06-09T15:35:49.211Z",
       "lastSeen": "2026-06-09T15:35:49.211Z",
       "status": "pending"
+    },
+    "Monty→Monte": {
+      "original": "Monty",
+      "corrected": "Monte",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": ["160380722"],
+      "examples": [
+        "\"out to Monty. I think\"",
+        "\"content. But Monty, I think\"",
+        "\"you are Monty. And that\""
+      ],
+      "correctedExamples": [
+        "\"out to Monte. I think\"",
+        "\"content. But Monte, I think\"",
+        "\"you are Monte. And that\""
+      ],
+      "timestamps": ["00:01:13.350", "00:46:56.559", "00:47:24.590"],
+      "episodeIds": ["160380722", "160380722", "160380722"],
+      "confidence": 20,
+      "firstSeen": "2026-06-09T22:31:17.688Z",
+      "lastSeen": "2026-06-09T22:31:17.688Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-06-09T15:35:49.211Z"
+  "lastUpdated": "2026-06-09T22:31:17.688Z"
 }
