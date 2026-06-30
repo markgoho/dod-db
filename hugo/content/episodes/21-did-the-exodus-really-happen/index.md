@@ -14,10 +14,10 @@ topics:
   - Adultery
   - Masoretic Text
   - Polygamy
+  - Moloch
 tags:
   - Moses
   - child sacrifice
-  - Molek
   - Carthage
   - Baal
   - Babylon

@@ -19,14 +19,14 @@ topics:
   - Hagar
   - Masoretic Text
   - Paul
+  - Philo of Alexandria
   - Satan
   - Saul
   - Star of Bethlehem
-  - Philo of Alexandria
+  - Moloch
 tags:
   - Abraham
   - Stephen
-  - Molek
   - Terah
   - Deuteronomy
   - Babylon

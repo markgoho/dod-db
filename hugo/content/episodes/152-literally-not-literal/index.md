@@ -15,6 +15,7 @@ topics:
   - Daniel
   - Masoretic Text
   - Univocality
+  - Moloch
 tags:
   - Origen
   - inerrancy
@@ -31,7 +32,6 @@ tags:
   - Creation ex nihilo
   - Isaac
   - Martin Luther
-  - Molek
   - Noah
   - Ugarit
 books:

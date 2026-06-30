@@ -11,6 +11,7 @@ topics:
   - divine council
   - Salvation
   - Septuagint
+  - Moloch
 tags:
   - Babylon
   - Tower of Babel
@@ -33,7 +34,6 @@ tags:
   - Judaism
   - Moab
   - Moabites
-  - Molek
   - Nazareth
   - Quran
   - Syria

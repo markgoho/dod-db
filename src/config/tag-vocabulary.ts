@@ -518,11 +518,11 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [4, 119],
   },
   {
-    canonical: "Molek",
-    variations: ["Molech", "Moloch", "mulk"],
+    canonical: "Moloch",
+    variations: ["Molech", "Molek", "mulk"],
     category: "character",
     status: "accepted",
-    episodes: [2, 21, 28, 81, 132, 139],
+    episodes: [2, 21, 28, 81, 132, 139, 150, 152, 168],
   },
   {
     canonical: "child sacrifice",
@@ -5686,14 +5686,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "alphabet of ben sira",
-    variations: [],
-    category: "literature",
-    description:
-      "A medieval Jewish text known for its satirical and humorous content, including the story of Lilith",
-    status: "proposed",
-  },
-  {
     canonical: "mesopotamia",
     variations: [],
     category: "place",
@@ -8392,13 +8384,6 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
   },
   {
-    canonical: "amorite",
-    variations: ["Amorites"],
-    category: "people",
-    description: "An ancient Semitic-speaking people from ancient Syria",
-    status: "proposed",
-  },
-  {
     canonical: "Shechem",
     variations: [],
     category: "place",
@@ -9498,21 +9483,12 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [20, 70, 165],
   },
   {
-    canonical: "Angels",
-    variations: ["angel"],
-    category: "theology",
-    description:
-      "Celestial beings who serve as messengers or intermediaries between God and humanity, often appearing in hierarchies in ancient Jewish and Christian thought.",
-    status: "proposed",
-    addedInEpisode: 165,
-  },
-  {
     canonical: "Davidic king",
     variations: [],
     category: "character",
     description:
       "A king descended from David, whose enthronement was sometimes seen as an adoption by God, reflecting a concept of divine kingship.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 165,
   },
   {
@@ -9539,134 +9515,55 @@ export const tagVocabulary: TagDefinition[] = [
     category: "miscellaneous",
     description:
       "A person who is the legal property of another and is forced to obey them, as Hermas was in the Shepherd of Hermas.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 165,
   },
   {
-    canonical: "Divine name",
+    canonical: "Naboth's vineyard",
     variations: [],
-    category: "theology",
+    category: "place",
     description:
-      "Refers to the proper name of God (YHWH), sometimes understood to be imparted to certain celestial beings or to Jesus in early Christian thought.",
+      "The vineyard in Jezreel belonging to Naboth, which King Ahab coveted and unjustly seized, leading to a divine curse against Ahab and his family.",
     status: "proposed",
-    addedInEpisode: 165,
+    addedInEpisode: 167,
   },
   {
-    canonical: "Canonical",
-    variations: ["canon"],
+    canonical: "Naboth",
+    variations: [],
+    category: "character",
+    llmVerify: true,
+    description:
+      "An Israelite landowner in Jezreel who refused to sell his vineyard to King Ahab and was subsequently framed and executed by Queen Jezebel.",
+    status: "accepted",
+    addedInEpisode: 167,
+    episodes: [55, 123, 144, 167],
+  },
+  {
+    canonical: "Hebrew manuscripts",
+    variations: [],
     category: "scholarship",
     description:
-      "Pertaining to the status of a text being officially accepted as part of a religious canon, particularly the biblical canon.",
-    status: "proposed",
-    addedInEpisode: 165,
+      "Ancient or medieval hand-written copies of texts in the Hebrew language, particularly those related to biblical literature or other religious works.",
+    status: "rejected",
+    addedInEpisode: 167,
   },
   {
-    canonical: "Early Christianity",
-    variations: [],
+    canonical: "Latter-day Saints",
+    variations: ["LDS", "Church of Jesus Christ of Latter-day Saints"],
     category: "religion",
     description:
-      "The historical period spanning from the origins of the Christian movement in the 1st century CE through its initial development and spread.",
+      "Members of The Church of Jesus Christ of Latter-day Saints, a global religious movement with a distinct theological framework.",
     status: "proposed",
-    addedInEpisode: 165,
+    addedInEpisode: 168,
   },
   {
-    canonical: "Similitudes",
-    variations: [],
-    category: "literature",
+    canonical: "Unitarian Universalists",
+    variations: ["UUs"],
+    category: "religion",
     description:
-      "The third section of the Shepherd of Hermas, consisting of parables or allegories delivered by the Shepherd to convey moral and theological lessons.",
+      "A liberal religious movement characterized by its embrace of diverse beliefs and a focus on human values and reason.",
     status: "proposed",
-    addedInEpisode: 165,
-  },
-  {
-    canonical: "Monte Mader",
-    variations: [],
-    category: "person",
-    description:
-      'A social media personality and rock musician known for her critical discussions on Christian nationalism, purity culture, and biblical scholarship. She co-hosts the "Data Over Dogma" podcast.',
-    status: "proposed",
-    addedInEpisode: 166,
-  },
-  {
-    canonical: "social media",
-    variations: [],
-    category: "miscellaneous",
-    description:
-      "Online platforms and technologies that enable users to create and share content or to participate in social networking.",
-    status: "proposed",
-    addedInEpisode: 166,
-  },
-  {
-    canonical: "Wyoming",
-    variations: [],
-    category: "place",
-    description:
-      "A state in the western United States where Monte Mader grew up in a very rural and Christian nationalist environment.",
-    status: "proposed",
-    addedInEpisode: 166,
-  },
-  {
-    canonical: "Columbine",
-    variations: [],
-    category: "event",
-    description:
-      "Refers to the Columbine High School massacre in 1999, which significantly escalated rhetoric around persecution and the need to defend faith in Monte Mader's upbringing.",
-    status: "proposed",
-    addedInEpisode: 166,
-  },
-  {
-    canonical: "Democrats",
-    variations: [],
-    category: "miscellaneous",
-    description:
-      "A political party in the United States, mentioned in the context of Christian nationalist rhetoric about government threats.",
-    status: "proposed",
-    addedInEpisode: 166,
-  },
-  {
-    canonical: "Matthew Shepard",
-    variations: ["Shepard"],
-    category: "person",
-    description:
-      "A gay student who was brutally murdered in Wyoming in 1998, mentioned in the context of the region's ultraconservative sentiment.",
-    status: "proposed",
-    addedInEpisode: 166,
-  },
-  {
-    canonical: "Liberty University",
-    variations: ["Liberty"],
-    category: "place",
-    description:
-      "A private evangelical Christian university in Lynchburg, Virginia, where Monte Mader was forced to attend for her college education.",
-    status: "proposed",
-    addedInEpisode: 166,
-  },
-  {
-    canonical: "purity culture",
-    variations: [],
-    category: "theology",
-    description:
-      "A social and religious movement promoting sexual abstinence before marriage, often emphasizing female virginity and modesty, and frequently criticized for its harmful effects on self-worth and consent.",
-    status: "proposed",
-    addedInEpisode: 166,
-  },
-  {
-    canonical: "sexual assault",
-    variations: [],
-    category: "event",
-    description:
-      "An act of violence where a person is forced or coerced into unwanted sexual contact, discussed in the context of purity culture and victim-blaming.",
-    status: "proposed",
-    addedInEpisode: 166,
-  },
-  {
-    canonical: "sexual violence",
-    variations: [],
-    category: "event",
-    description:
-      "Any sexual act, attempt to obtain a sexual act, unwanted sexual comments or advances, or acts to traffic or otherwise directed against a person's sexuality using coercion, by any person regardless of their relationship to the victim. Discussed in the context of the Bible and purity culture.",
-    status: "proposed",
-    addedInEpisode: 166,
+    addedInEpisode: 168,
   },
 ];
 

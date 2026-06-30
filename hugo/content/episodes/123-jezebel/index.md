@@ -50,6 +50,7 @@ tags:
   - Syria
   - Tamar
   - Torah
+  - Naboth
 books:
   - 1 Kings
   - Revelation

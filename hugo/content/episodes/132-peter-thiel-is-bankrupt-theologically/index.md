@@ -18,9 +18,9 @@ topics:
   - Satan
   - Second Coming
   - Univocality
+  - Moloch
 tags:
   - Peter
-  - Molek
   - Judaism
   - Eschatology
   - Capernaum

@@ -8391,22 +8391,24 @@
       "original": "covenant code",
       "corrected": "Covenant Code",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["153667245"],
+      "totalOccurrences": 4,
+      "episodeCount": 2,
+      "episodes": ["153667245", "161658662"],
       "examples": [
         "\"of the covenant code?\"",
-        "\"of the covenant code. You are\""
+        "\"of the covenant code. You are\"",
+        "\"gives the covenant code to Israel,\""
       ],
       "correctedExamples": [
         "\"of the Covenant Code?\"",
-        "\"of the Covenant Code. You are\""
+        "\"of the Covenant Code. You are\"",
+        "\"gives the Covenant Code to Israel,\""
       ],
-      "timestamps": ["00:31:20.044", "00:31:42.330"],
-      "episodeIds": ["153667245", "153667245"],
-      "confidence": 10,
+      "timestamps": ["00:31:20.044", "00:31:42.330", "00:27:54.092"],
+      "episodeIds": ["153667245", "153667245", "161658662"],
+      "confidence": 40,
       "firstSeen": "2026-04-05T23:17:11.197Z",
-      "lastSeen": "2026-04-05T23:17:11.197Z",
+      "lastSeen": "2026-06-29T15:21:43.553Z",
       "status": "pending"
     },
     "we'll→we'll—": {
@@ -8742,7 +8744,74 @@
       "firstSeen": "2026-06-09T22:31:17.688Z",
       "lastSeen": "2026-06-09T22:31:17.688Z",
       "status": "pending"
+    },
+    "'Even→Even": {
+      "original": "'Even",
+      "corrected": "Even",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["161030282"],
+      "examples": [
+        "\"Ezekiel 18, 'Even Ezekiel thinks\"",
+        "\"my book. 'Even Ezekiel thinks\"",
+        "\"you're like, 'Even Ezekiel thinks—'\""
+      ],
+      "correctedExamples": [
+        "\"Ezekiel 18, \"Even Ezekiel thinks\"",
+        "\"my book. \"Even Ezekiel thinks\"",
+        "\"you're like, \"Even Ezekiel thinks—\"\""
+      ],
+      "timestamps": ["00:09:43.542", "00:09:43.542", "00:10:18.999"],
+      "episodeIds": ["161030282", "161030282", "161030282"],
+      "confidence": 15,
+      "firstSeen": "2026-06-29T14:52:19.806Z",
+      "lastSeen": "2026-06-29T14:52:19.806Z",
+      "status": "pending"
+    },
+    "gone'→gone": {
+      "original": "gone'",
+      "corrected": "gone",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["161030282"],
+      "examples": ["\"mind is gone.' I— did\"", "\"mind is gone.' I don't\""],
+      "correctedExamples": [
+        "\"mind is gone.\" I— did\"",
+        "\"mind is gone.\" I don't\""
+      ],
+      "timestamps": ["00:09:43.542", "00:09:43.542"],
+      "episodeIds": ["161030282", "161030282"],
+      "confidence": 5,
+      "firstSeen": "2026-06-29T14:52:19.806Z",
+      "lastSeen": "2026-06-29T14:52:19.806Z",
+      "status": "pending"
+    },
+    "Tallarico→Talarico": {
+      "original": "Tallarico",
+      "corrected": "Talarico",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["161658662"],
+      "examples": [
+        "\"picture of Tallarico and they\"",
+        "\"Texas: James Tallarico is the\"",
+        "\"is, James Tallarico will put\""
+      ],
+      "correctedExamples": [
+        "\"picture of Talarico and they\"",
+        "\"Texas: James Talarico is the\"",
+        "\"is, James Talarico will put\""
+      ],
+      "timestamps": ["00:05:43.172", "00:05:43.172", "00:06:09.183"],
+      "episodeIds": ["161658662", "161658662", "161658662"],
+      "confidence": 25,
+      "firstSeen": "2026-06-29T15:21:43.553Z",
+      "lastSeen": "2026-06-29T15:21:43.553Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-06-09T22:31:17.688Z"
+  "lastUpdated": "2026-06-29T16:24:29.366Z"
 }

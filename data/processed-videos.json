@@ -226,10 +226,6 @@
         "mentions": 16
       },
       {
-        "tag": "Molek",
-        "mentions": 12
-      },
-      {
         "tag": "Isaiah",
         "mentions": 9
       },
@@ -320,6 +316,10 @@
       {
         "tag": "Trinity",
         "mentions": 1
+      },
+      {
+        "tag": "Moloch",
+        "mentions": 12
       }
     ],
     "segments": [
@@ -3963,10 +3963,6 @@
         "mentions": 12
       },
       {
-        "tag": "Molek",
-        "mentions": 7
-      },
-      {
         "tag": "Decalogue",
         "mentions": 6
       },
@@ -4077,6 +4073,10 @@
       {
         "tag": "Ugarit",
         "mentions": 1
+      },
+      {
+        "tag": "Moloch",
+        "mentions": 7
       }
     ],
     "segments": [
@@ -5190,10 +5190,6 @@
         "mentions": 1
       },
       {
-        "tag": "Molek",
-        "mentions": 1
-      },
-      {
         "tag": "Peter",
         "mentions": 1
       },
@@ -5219,6 +5215,10 @@
       },
       {
         "tag": "Seth",
+        "mentions": 1
+      },
+      {
+        "tag": "Moloch",
         "mentions": 1
       }
     ],
@@ -9936,6 +9936,10 @@
       {
         "tag": "YHWH",
         "mentions": 1
+      },
+      {
+        "tag": "Naboth",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -14341,10 +14345,6 @@
         "mentions": 1
       },
       {
-        "tag": "Molek",
-        "mentions": 1
-      },
-      {
         "tag": "Nazareth",
         "mentions": 1
       },
@@ -14366,6 +14366,10 @@
       },
       {
         "tag": "The Reformation",
+        "mentions": 1
+      },
+      {
+        "tag": "Moloch",
         "mentions": 1
       }
     ],
@@ -21714,6 +21718,10 @@
       {
         "tag": "Philo of Alexandria",
         "mentions": 1
+      },
+      {
+        "tag": "Naboth",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -23254,10 +23262,6 @@
         "mentions": 11
       },
       {
-        "tag": "Molek",
-        "mentions": 10
-      },
-      {
         "tag": "David",
         "mentions": 6
       },
@@ -23340,6 +23344,10 @@
       {
         "tag": "Univocality",
         "mentions": 1
+      },
+      {
+        "tag": "Moloch",
+        "mentions": 10
       }
     ],
     "segments": [
@@ -24670,10 +24678,6 @@
         "mentions": 10
       },
       {
-        "tag": "Molek",
-        "mentions": 8
-      },
-      {
         "tag": "Jerusalem",
         "mentions": 7
       },
@@ -24768,6 +24772,10 @@
       {
         "tag": "YHWH",
         "mentions": 1
+      },
+      {
+        "tag": "Moloch",
+        "mentions": 8
       }
     ],
     "segments": [
@@ -25656,6 +25664,10 @@
       },
       {
         "tag": "Solomon",
+        "mentions": 1
+      },
+      {
+        "tag": "Naboth",
         "mentions": 1
       }
     ],
@@ -26655,10 +26667,6 @@
         "mentions": 12
       },
       {
-        "tag": "Molek",
-        "mentions": 12
-      },
-      {
         "tag": "Angel",
         "mentions": 10
       },
@@ -26720,6 +26728,10 @@
       },
       {
         "tag": "Peter",
+        "mentions": 2
+      },
+      {
+        "tag": "Philo of Alexandria",
         "mentions": 2
       },
       {
@@ -26791,8 +26803,8 @@
         "mentions": 1
       },
       {
-        "tag": "Philo of Alexandria",
-        "mentions": 2
+        "tag": "Moloch",
+        "mentions": 12
       }
     ],
     "segments": [
@@ -27132,10 +27144,6 @@
         "mentions": 1
       },
       {
-        "tag": "Molek",
-        "mentions": 1
-      },
-      {
         "tag": "Noah",
         "mentions": 1
       },
@@ -27145,6 +27153,10 @@
       },
       {
         "tag": "Univocality",
+        "mentions": 1
+      },
+      {
+        "tag": "Moloch",
         "mentions": 1
       }
     ],
@@ -29782,13 +29794,636 @@
         "mentions": 3
       }
     ],
-    "segments": [],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:00:56.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:56.000]",
+        "endTimestamp": "[00:59:16.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
     "speakers": ["Monte Mader", "Dan McClellan", "Dan Beecher"],
     "episodeNumber": 166,
     "scriptures": [
       {
         "book": "1 Corinthians",
         "references": ["1 Corinthians 7"],
+        "mentions": 1
+      },
+      {
+        "book": "Ephesians",
+        "references": ["Ephesians 5"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "161030282",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/161030282.mp3?sig=UldbrOK-zcSTUZQUGB5Wy6VstRpM-z_Uz_apsfcnxUI%3D",
+    "title": "Sins of the (Grand)father",
+    "publishedAt": "2026-06-14T06:00:07.000Z",
+    "processedAt": "2026-06-29T14:49:41.657Z",
+    "transcriptPath": "data/transcripts/2026-06-14-sins-of-the-grandfather.txt",
+    "tags": [
+      {
+        "tag": "Curse of Cain",
+        "mentions": 2
+      },
+      {
+        "tag": "Curse of Ham",
+        "mentions": 4
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 19
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 5
+      },
+      {
+        "tag": "Samaria",
+        "mentions": 4
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 3
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 3
+      },
+      {
+        "tag": "Enoch",
+        "mentions": 2
+      },
+      {
+        "tag": "Torah",
+        "mentions": 5
+      },
+      {
+        "tag": "Sheol",
+        "mentions": 3
+      },
+      {
+        "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Noah",
+        "mentions": 2
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Shem",
+        "mentions": 1
+      },
+      {
+        "tag": "Jehu",
+        "mentions": 3
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 1
+      },
+      {
+        "tag": "Second Temple period",
+        "mentions": 2
+      },
+      {
+        "tag": "Decalogue",
+        "mentions": 10
+      },
+      {
+        "tag": "Apocrypha",
+        "mentions": 4
+      },
+      {
+        "tag": "Bathsheba",
+        "mentions": 3
+      },
+      {
+        "tag": "Jeroboam",
+        "mentions": 4
+      },
+      {
+        "tag": "Joram",
+        "mentions": 4
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 3
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 1
+      },
+      {
+        "tag": "Josiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Elijah",
+        "mentions": 3
+      },
+      {
+        "tag": "David",
+        "mentions": 8
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 2
+      },
+      {
+        "tag": "Aaron",
+        "mentions": 1
+      },
+      {
+        "tag": "Seth",
+        "mentions": 1
+      },
+      {
+        "tag": "Ahab",
+        "mentions": 11
+      },
+      {
+        "tag": "Ham",
+        "mentions": 1
+      },
+      {
+        "tag": "Naboth",
+        "mentions": 12
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:33.970]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "bible-vs-bible",
+        "startTimestamp": "[00:02:33.970]",
+        "endTimestamp": "[00:34:00.313]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Generational Curses",
+        "summary": "Exodus texts contradict Ezekiel on punishing children for sins"
+      },
+      {
+        "type": "is-it-canon",
+        "startTimestamp": "[00:34:00.313]",
+        "endTimestamp": "[00:59:27.661]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Sirach",
+        "summary": "Why Ben Sira nearly made the Jewish canon"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 167,
+    "scriptures": [
+      {
+        "book": "Sirach",
+        "references": ["Sirach"],
+        "mentions": 11
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 5", "Deuteronomy 5:9", "Deuteronomy 7"],
+        "mentions": 7
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 20", "Exodus 20:5", "Exodus 34"],
+        "mentions": 5
+      },
+      {
+        "book": "Numbers",
+        "references": ["Numbers 14:18", "Numbers 16"],
+        "mentions": 3
+      },
+      {
+        "book": "Ezekiel",
+        "references": ["Ezekiel 18"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings 9"],
+        "mentions": 2
+      },
+      {
+        "book": "1 Kings",
+        "references": ["1 Kings 21"],
+        "mentions": 1
+      },
+      {
+        "book": "Joshua",
+        "references": ["Joshua 7"],
+        "mentions": 1
+      },
+      {
+        "book": "Proverbs",
+        "references": ["Proverbs 8"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 1
+      },
+      {
+        "book": "Zechariah",
+        "references": ["Zechariah 2:10"],
+        "mentions": 1
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 49"],
+        "mentions": 1
+      },
+      {
+        "book": "Job",
+        "references": ["Job"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "161658662",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/161658662.mp3?sig=DJke7q_b9p1hRhqc_F_1pbRADAshwRRQfcoI-IAnB10%3D",
+    "title": "Moloch, Mormons, and Mike Lee",
+    "publishedAt": "2026-06-21T06:20:01.000Z",
+    "processedAt": "2026-06-29T15:20:56.739Z",
+    "transcriptPath": "data/transcripts/2026-06-21-moloch-mormons-and-mike-lee.txt",
+    "tags": [
+      {
+        "tag": "Abortion",
+        "mentions": 24
+      },
+      {
+        "tag": "child sacrifice",
+        "mentions": 13
+      },
+      {
+        "tag": "Ammonites",
+        "mentions": 5
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 5
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 4
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 3
+      },
+      {
+        "tag": "Covenant Code",
+        "mentions": 3
+      },
+      {
+        "tag": "Satan",
+        "mentions": 3
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "Solomon",
+        "mentions": 2
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 2
+      },
+      {
+        "tag": "Baal",
+        "mentions": 1
+      },
+      {
+        "tag": "Carthage",
+        "mentions": 1
+      },
+      {
+        "tag": "Decalogue",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 1
+      },
+      {
+        "tag": "Moab",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Polygamy",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 1
+      },
+      {
+        "tag": "Moloch",
+        "mentions": 37
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:56.886]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "twisted-scripture",
+        "startTimestamp": "[00:03:56.886]",
+        "endTimestamp": "[00:33:56.100]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Moloch",
+        "summary": "Moloch imagery misused to frame abortion as sacrifice"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:33:56.100]",
+        "endTimestamp": "[00:56:49.255]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Mormon Christianity",
+        "summary": "Pentagon list sparks debate on LDS Christian identity"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 168,
+    "scriptures": [
+      {
+        "book": "Exodus",
+        "references": [
+          "Exodus 13",
+          "Exodus 20",
+          "Exodus 21",
+          "Exodus 22",
+          "Exodus 34"
+        ],
+        "mentions": 5
+      },
+      {
+        "book": "1 Kings",
+        "references": ["1 Kings 11:5", "1 Kings 11:7"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings"],
+        "mentions": 1
+      },
+      {
+        "book": "Leviticus",
+        "references": ["Leviticus 18"],
+        "mentions": 1
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark 9"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "162283862",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/162283862.mp3?sig=g4DSaC39kLL9s6SxCN04NGDtU4umFYsMGmEMFtIU8hc%3D",
+    "title": "The Twelve Tribes of Israel (Give or Take)",
+    "publishedAt": "2026-06-28T06:40:01.000Z",
+    "processedAt": "2026-06-29T16:18:16.076Z",
+    "transcriptPath": "data/transcripts/2026-06-28-the-twelve-tribes-of-israel-give-or-take.txt",
+    "tags": [
+      {
+        "tag": "King James Bible",
+        "mentions": 7
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 2
+      },
+      {
+        "tag": "Leningrad Codex",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 4
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 4
+      },
+      {
+        "tag": "Samaritans",
+        "mentions": 4
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 4
+      },
+      {
+        "tag": "Judah",
+        "mentions": 16
+      },
+      {
+        "tag": "Masoretes",
+        "mentions": 3
+      },
+      {
+        "tag": "etiology",
+        "mentions": 1
+      },
+      {
+        "tag": "Assyria",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 3
+      },
+      {
+        "tag": "William Tyndale",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 2
+      },
+      {
+        "tag": "Torah",
+        "mentions": 3
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "Second Temple period",
+        "mentions": 2
+      },
+      {
+        "tag": "Desiderius Erasmus",
+        "mentions": 2
+      },
+      {
+        "tag": "Textus Receptus",
+        "mentions": 3
+      },
+      {
+        "tag": "Latin Vulgate",
+        "mentions": 3
+      },
+      {
+        "tag": "Elephantine",
+        "mentions": 1
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 1
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 17
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 19
+      },
+      {
+        "tag": "Papias of Hierapolis",
+        "mentions": 1
+      },
+      {
+        "tag": "Gilead",
+        "mentions": 2
+      },
+      {
+        "tag": "Rachel",
+        "mentions": 9
+      },
+      {
+        "tag": "Angel",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:46.506]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:01:46.506]",
+        "endTimestamp": "[00:30:29.310]",
+        "confidence": "verified",
+        "detectionMethod": "pattern",
+        "topicLabel": "Twelve Tribes",
+        "summary": "The complex historical origins of Israel's tribes"
+      },
+      {
+        "type": "historys-mysteries",
+        "startTimestamp": "[00:30:29.310]",
+        "endTimestamp": "[00:55:40.527]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Versification",
+        "summary": "How chapters and verses were added to scripture"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 169,
+    "scriptures": [
+      {
+        "book": "Genesis",
+        "references": ["Genesis 1", "Genesis 2", "Genesis 49"],
+        "mentions": 6
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges 4", "Judges 5"],
+        "mentions": 4
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings"],
         "mentions": 1
       },
       {

@@ -38,6 +38,7 @@ tags:
   - Jezebel
   - Sea of Galilee
   - Solomon
+  - Naboth
 books:
   - John
   - Mark

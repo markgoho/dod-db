@@ -21,11 +21,11 @@ topics:
   - Septuagint
   - Stele
   - YHWH
+  - Moloch
 tags:
   - Solomon
   - Jeroboam
   - Rehoboam
-  - Molek
   - Jerusalem
   - Judaism
   - Ammonites

@@ -15,9 +15,9 @@ topics:
   - Masoretic Text
   - Stele
   - Trinity
+  - Moloch
 tags:
   - child sacrifice
-  - Molek
   - Isaiah
   - Jerusalem
   - Adam

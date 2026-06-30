@@ -48,6 +48,7 @@ tags:
   - Sea of Galilee
   - Second Maccabees
   - Solomon
+  - Naboth
 books:
   - 2 Kings
   - 2 Chronicles

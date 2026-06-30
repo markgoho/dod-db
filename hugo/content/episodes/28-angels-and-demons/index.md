@@ -22,6 +22,7 @@ topics:
   - John the Baptist
   - Samson
   - Septuagint
+  - Moloch
 tags:
   - Judaism
   - Baal
@@ -46,7 +47,6 @@ tags:
   - Isaac
   - Isaiah
   - Islam
-  - Molek
   - Peter
   - Samuel
   - Sarah
