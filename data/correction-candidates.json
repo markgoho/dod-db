@@ -8855,7 +8855,95 @@
       "firstSeen": "2026-07-14T12:43:35.290Z",
       "lastSeen": "2026-07-14T12:43:35.290Z",
       "status": "pending"
+    },
+    "Cliché→cliche": {
+      "original": "Cliché",
+      "corrected": "cliche",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": ["163573331"],
+      "examples": [
+        "\"this conversation-ending Cliché.\"",
+        "\"Thought-stopping cliché. Yeah. Which\"",
+        "\"a thought-stopping cliché. It's, \"I'm\""
+      ],
+      "correctedExamples": [
+        "\"this conversation-ending cliche.\"",
+        "\"Thought-stopping cliche. Yeah. Which\"",
+        "\"a thought-stopping cliche. It's, \"I'm\""
+      ],
+      "timestamps": ["00:25:56.310", "00:26:03.119", "00:26:03.119"],
+      "episodeIds": ["163573331", "163573331", "163573331"],
+      "confidence": 20,
+      "firstSeen": "2026-07-14T13:10:04.103Z",
+      "lastSeen": "2026-07-14T13:10:04.103Z",
+      "status": "pending"
+    },
+    "hey→Heh": {
+      "original": "hey",
+      "corrected": "Heh",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["163573331"],
+      "examples": ["\"yod or hey?\"", "\"and then hey is like\""],
+      "correctedExamples": ["\"Yod or Heh?\"", "\"and then Heh is like\""],
+      "timestamps": ["00:38:13.924", "00:38:31.343"],
+      "episodeIds": ["163573331", "163573331"],
+      "confidence": 10,
+      "firstSeen": "2026-07-14T13:10:04.103Z",
+      "lastSeen": "2026-07-14T13:10:04.103Z",
+      "status": "pending"
+    },
+    "Etz→Eth": {
+      "original": "Etz",
+      "corrected": "Eth",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": ["163573331"],
+      "examples": [
+        "\"called the Etz Sefer. Bible,\"",
+        "\"for the Etz Chifer Bible,\"",
+        "\"get your Etz Sefer Bible\""
+      ],
+      "correctedExamples": [
+        "\"called the Eth Cepher Bible,\"",
+        "\"for the Eth Cepher Bible,\"",
+        "\"get your Eth Cepher Bible\""
+      ],
+      "timestamps": ["00:45:27.156", "00:50:25.877", "00:50:36.480"],
+      "episodeIds": ["163573331", "163573331", "163573331"],
+      "confidence": 15,
+      "firstSeen": "2026-07-14T13:10:04.103Z",
+      "lastSeen": "2026-07-14T13:10:04.103Z",
+      "status": "pending"
+    },
+    "Sefer→Cepher": {
+      "original": "Sefer",
+      "corrected": "Cepher",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["163573331"],
+      "examples": [
+        "\"the Etz Sefer. Bible, and\"",
+        "\"your Etz Sefer Bible in\"",
+        "\"an Etz Sefer Bible. Uh,\""
+      ],
+      "correctedExamples": [
+        "\"the Eth Cepher Bible, and\"",
+        "\"your Eth Cepher Bible in\"",
+        "\"an Eth Cepher Bible. Uh,\""
+      ],
+      "timestamps": ["00:45:27.156", "00:50:36.480", "00:50:36.480"],
+      "episodeIds": ["163573331", "163573331", "163573331"],
+      "confidence": 20,
+      "firstSeen": "2026-07-14T13:10:04.103Z",
+      "lastSeen": "2026-07-14T13:10:04.103Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-07-14T12:43:35.290Z"
+  "lastUpdated": "2026-07-14T13:10:04.103Z"
 }

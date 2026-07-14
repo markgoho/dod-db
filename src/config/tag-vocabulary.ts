@@ -9583,6 +9583,168 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
     addedInEpisode: 170,
   },
+  {
+    canonical: "Bereshit",
+    variations: [],
+    category: "theology",
+    description:
+      'The first word of the Hebrew Bible, meaning "In the beginning," often subject to special interpretative claims in some religious traditions.',
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "John Lennox",
+    variations: ["Lennox"],
+    category: "person",
+    description:
+      "A British mathematician, philosopher of science, and Christian apologist known for his debates and writings on science and religion.",
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Stephen Bartlett",
+    variations: ["Bartlett"],
+    category: "person",
+    description:
+      'A British entrepreneur, author, and podcaster, known for hosting "The Diary of a CEO" podcast.',
+    status: "rejected",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "ancient Hebrew",
+    variations: [],
+    category: "scholarship",
+    description:
+      "The archaic form of the Hebrew language, primarily used in the Hebrew Bible, preceding later forms like Mishnaic Hebrew.",
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Hebrew alphabet",
+    variations: [],
+    category: "scholarship",
+    description:
+      "The abjad used for writing the Hebrew language, historically and currently, consisting of 22 consonants.",
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Yod",
+    variations: [],
+    category: "scholarship",
+    description:
+      "The tenth letter of the Hebrew alphabet, sometimes depicted as a hand or forearm in early pictographic scripts.",
+    status: "rejected",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Heh",
+    variations: [],
+    category: "scholarship",
+    description:
+      "The fifth letter of the Hebrew alphabet, historically associated with an exclamation or interjection.",
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Vav",
+    variations: [],
+    category: "scholarship",
+    description:
+      "The sixth letter of the Hebrew alphabet, historically associated with a hook.",
+    status: "rejected",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "DNA",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Deoxyribonucleic acid, a molecule carrying the genetic instructions used in the growth, development, functioning, and reproduction of all known living organisms. Mentioned in the context of alleged divine inscriptions.",
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Yod Heh Vav Heh",
+    variations: [],
+    category: "theology",
+    description:
+      "A sequence of Hebrew letters (YHWH) discussed in the context of alleged divine inscription in DNA, corresponding to the Tetragrammaton.",
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Alpha and Omega",
+    variations: [],
+    category: "theology",
+    description:
+      "The first and last letters of the Greek alphabet, used as a title for God and Christ in the Book of Revelation to signify his eternal nature.",
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Aleph Tav",
+    variations: ["Aleph and Tav"],
+    category: "theology",
+    description:
+      'The first and last letters of the Hebrew alphabet, used in some interpretations to refer to the "first and last" concept, akin to the Greek Alpha and Omega.',
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Et",
+    variations: [],
+    category: "scholarship",
+    description:
+      'A Hebrew particle (את) that serves as a definite direct object marker or a preposition meaning "with."',
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Eth Cepher Bible",
+    variations: [],
+    category: "literature",
+    description:
+      'A modern edition of the Bible that transliterates certain Hebrew names and includes the Hebrew "Aleph Tav" particle in the text, based on specific theological interpretations.',
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Yahuwah",
+    variations: [],
+    category: "theology",
+    description:
+      "A proposed pronunciation of the Tetragrammaton (YHWH), used in some modern religious movements, though not supported by mainstream biblical scholarship.",
+    status: "rejected",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Brown-Driver-Briggs",
+    variations: [],
+    category: "scholarship",
+    description:
+      "A comprehensive lexicon of the Hebrew and Aramaic languages, primarily for the Hebrew Bible, often abbreviated as BDB.",
+    status: "proposed",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "Strong's",
+    variations: ["Strong's number", "Strong's Dictionary"],
+    category: "scholarship",
+    description:
+      "Refers to Strong's Exhaustive Concordance of the Bible, a comprehensive index of every word in the King James Version, with numerical references to original Hebrew and Greek words.",
+    status: "rejected",
+    addedInEpisode: 171,
+  },
+  {
+    canonical: "concordance",
+    variations: [],
+    category: "scholarship",
+    description:
+      "An alphabetical index of the principal words in a book or the works of an author, with references to the passages in which they occur.",
+    status: "proposed",
+    addedInEpisode: 171,
+  },
 ];
 
 export function getAllSearchableTerms(

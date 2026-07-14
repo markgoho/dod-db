@@ -30671,5 +30671,125 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "163573331",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/163573331.mp3?sig=YexZ_XhSBMYDOiXpOUGHJq4kWy1VqP5ro-_HgQ4Puhc%3D",
+    "title": "Lean Not on Your Own Understanding (and Other Conversation-Enders)",
+    "publishedAt": "2026-07-12T06:00:06.000Z",
+    "processedAt": "2026-07-14T13:08:26.892Z",
+    "transcriptPath": "data/transcripts/2026-07-12-lean-not-on-your-own-understanding-and-other-conversation-enders.txt",
+    "tags": [
+      {
+        "tag": "King James Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "Original sin",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 4
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 3
+      },
+      {
+        "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 3
+      },
+      {
+        "tag": "Crucifixion",
+        "mentions": 3
+      },
+      {
+        "tag": "Hermeneia",
+        "mentions": 1
+      },
+      {
+        "tag": "Angel",
+        "mentions": 1
+      },
+      {
+        "tag": "Garden of Eden",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:54.717]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "twisted-scripture",
+        "startTimestamp": "[00:03:54.717]",
+        "endTimestamp": "[00:32:57.959]",
+        "confidence": "verified",
+        "detectionMethod": "pattern",
+        "topicLabel": "Proverbs 3:5",
+        "summary": "Rhetorical misuse of Proverbs 3:5 to dismiss scholarship"
+      },
+      {
+        "type": "watch-your-language",
+        "startTimestamp": "[00:32:57.959]",
+        "endTimestamp": "[00:59:20.870]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Hebrew Letters",
+        "summary": "Debunking secret pictographic meanings assigned to Hebrew letters"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
+    "episodeNumber": 171,
+    "scriptures": [
+      {
+        "book": "Proverbs",
+        "references": ["Proverbs 3", "Proverbs 3:5", "Proverbs 3:5-6"],
+        "mentions": 5
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 1:1", "Genesis 5"],
+        "mentions": 3
+      },
+      {
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians 2", "1 Corinthians 2:14"],
+        "mentions": 2
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew 11"],
+        "mentions": 1
+      },
+      {
+        "book": "Luke",
+        "references": ["Luke 10"],
+        "mentions": 1
+      },
+      {
+        "book": "1 John",
+        "references": ["1 John 2"],
+        "mentions": 1
+      },
+      {
+        "book": "Job",
+        "references": ["Job"],
+        "mentions": 1
+      }
+    ]
   }
 ]
