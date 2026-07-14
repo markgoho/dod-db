@@ -9524,7 +9524,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "place",
     description:
       "The vineyard in Jezreel belonging to Naboth, which King Ahab coveted and unjustly seized, leading to a divine curse against Ahab and his family.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 167,
   },
   {
@@ -9553,7 +9553,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "religion",
     description:
       "Members of The Church of Jesus Christ of Latter-day Saints, a global religious movement with a distinct theological framework.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 168,
   },
   {
@@ -9562,8 +9562,26 @@ export const tagVocabulary: TagDefinition[] = [
     category: "religion",
     description:
       "A liberal religious movement characterized by its embrace of diverse beliefs and a focus on human values and reason.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 168,
+  },
+  {
+    canonical: "Behemoth",
+    variations: [],
+    category: "character",
+    description:
+      "A colossal primordial creature described in the Book of Job, often considered a mythical beast symbolizing raw power and the untamed forces of creation.",
+    status: "proposed",
+    addedInEpisode: 170,
+  },
+  {
+    canonical: "Baal Cycle",
+    variations: [],
+    category: "literature",
+    description:
+      "A collection of Ugaritic mythological texts describing the conflicts and triumphs of the storm god Baal, including his battles with chaos monsters like Lotan (Leviathan).",
+    status: "proposed",
+    addedInEpisode: 170,
   },
 ];
 

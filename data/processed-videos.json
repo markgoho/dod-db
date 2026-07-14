@@ -30432,5 +30432,244 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "162908583",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/162908583.mp3?sig=BOqOq_k1kyCyWylgRGOoghBXj8tjhYDmVw83mzlGBms%3D",
+    "title": "Faith vs. Works vs. Chaos Monsters",
+    "publishedAt": "2026-07-05T06:00:06.000Z",
+    "processedAt": "2026-07-14T12:40:08.598Z",
+    "transcriptPath": "data/transcripts/2026-07-05-faith-vs-works-vs-chaos-monsters.txt",
+    "tags": [
+      {
+        "tag": "King James Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 6
+      },
+      {
+        "tag": "Adultery",
+        "mentions": 2
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 5
+      },
+      {
+        "tag": "Romans",
+        "mentions": 6
+      },
+      {
+        "tag": "Origen",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 4
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 5
+      },
+      {
+        "tag": "Hesed",
+        "mentions": 4
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 4
+      },
+      {
+        "tag": "Baal",
+        "mentions": 11
+      },
+      {
+        "tag": "Clement of Alexandria",
+        "mentions": 1
+      },
+      {
+        "tag": "Shepherd of Hermas",
+        "mentions": 2
+      },
+      {
+        "tag": "Jericho",
+        "mentions": 4
+      },
+      {
+        "tag": "Judas Iscariot",
+        "mentions": 1
+      },
+      {
+        "tag": "Garden of Eden",
+        "mentions": 3
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 4
+      },
+      {
+        "tag": "First Clement",
+        "mentions": 1
+      },
+      {
+        "tag": "Apocrypha",
+        "mentions": 2
+      },
+      {
+        "tag": "Salvation",
+        "mentions": 11
+      },
+      {
+        "tag": "Decalogue",
+        "mentions": 1
+      },
+      {
+        "tag": "Blasphemy",
+        "mentions": 1
+      },
+      {
+        "tag": "Irenaeus",
+        "mentions": 1
+      },
+      {
+        "tag": "Red Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "Solomon",
+        "mentions": 1
+      },
+      {
+        "tag": "J.R.R. Tolkien",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaiah",
+        "mentions": 3
+      },
+      {
+        "tag": "James",
+        "mentions": 32
+      },
+      {
+        "tag": "Naomi",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 25
+      },
+      {
+        "tag": "Boaz",
+        "mentions": 1
+      },
+      {
+        "tag": "Ruth",
+        "mentions": 2
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:28.464]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:02:28.464]",
+        "endTimestamp": "[00:36:23.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "James",
+        "summary": "Authorship, dating, and the faith versus works debate in James."
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:36:23.000]",
+        "endTimestamp": "[01:02:49.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual",
+        "topicLabel": "Chaos Monsters",
+        "summary": "Exploring the biblical chaos monsters Leviathan, Rahab, and Behemoth."
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 170,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 2", "Isaiah 27", "Isaiah 27:1", "Isaiah 51:9"],
+        "mentions": 9
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 74"],
+        "mentions": 5
+      },
+      {
+        "book": "Romans",
+        "references": ["Romans 4"],
+        "mentions": 3
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew", "Matthew 5:19"],
+        "mentions": 2
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 1", "Genesis 2"],
+        "mentions": 2
+      },
+      {
+        "book": "Job",
+        "references": ["Job", "Job 40:15"],
+        "mentions": 2
+      },
+      {
+        "book": "Wisdom of Solomon",
+        "references": ["Wisdom of Solomon"],
+        "mentions": 1
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
+      },
+      {
+        "book": "Ruth",
+        "references": ["Ruth"],
+        "mentions": 1
+      },
+      {
+        "book": "James",
+        "references": ["James 1:27"],
+        "mentions": 1
+      }
+    ]
   }
 ]

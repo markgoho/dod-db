@@ -345,7 +345,11 @@ export const SEGMENT_PATTERNS: Record<
   "by-the-numbers": [/by the numbers/i, /welcome to.*by the numbers/i],
   "getting-angelic": [/getting angelic/i, /welcome to.*getting angelic/i],
   "getting-demonic": [/getting demonic/i, /welcome to.*getting demonic/i],
-  "get-topical": [/get topical/i, /welcome to.*get topical/i, /let'?s.*get topical/i],
+  "get-topical": [
+    /get topical/i,
+    /welcome to.*get topical/i,
+    /let'?s.*get topical/i,
+  ],
   grail: [/the grail/i, /welcome to.*the grail/i, /let'?s do.*the grail/i],
   "here-we-go": [
     /here we go!?/i,

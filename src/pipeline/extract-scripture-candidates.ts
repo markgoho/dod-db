@@ -94,13 +94,13 @@ export function shortenScriptureReference(reference: string): string {
     return reference;
   }
 
+  if (reference === matchingBook.canonical) {
+    return matchingBook.canonical;
+  }
+
   const preferredAbbreviation = getPreferredDisplayAbbreviation(
     matchingBook.canonical,
   );
-
-  if (reference === matchingBook.canonical) {
-    return preferredAbbreviation;
-  }
 
   return reference.replace(matchingBook.canonical, preferredAbbreviation);
 }

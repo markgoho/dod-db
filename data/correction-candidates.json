@@ -8811,7 +8811,51 @@
       "firstSeen": "2026-06-29T15:21:43.553Z",
       "lastSeen": "2026-06-29T15:21:43.553Z",
       "status": "pending"
+    },
+    "thriskia→threskeia": {
+      "original": "thriskia",
+      "corrected": "threskeia",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["162908583"],
+      "examples": [
+        "\"NRSV-UE translates \"thriskia,\" as religion.\"",
+        "\"then. Uh, thriskia should be\""
+      ],
+      "correctedExamples": [
+        "\"NRSV-UE translates \"threskeia\" as religion.\"",
+        "\"then. Uh, threskeia should be\""
+      ],
+      "timestamps": ["00:34:19.282", "00:34:19.282"],
+      "episodeIds": ["162908583", "162908583"],
+      "confidence": 15,
+      "firstSeen": "2026-07-14T12:43:35.290Z",
+      "lastSeen": "2026-07-14T12:43:35.290Z",
+      "status": "pending"
+    },
+    "Ugarits→Ugarites": {
+      "original": "Ugarits",
+      "corrected": "Ugarites",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["162908583"],
+      "examples": [
+        "\"to the Ugarits. The Ugarits.\"",
+        "\"Ugarits. The Ugarits.\""
+      ],
+      "correctedExamples": [
+        "\"to the Ugarites. The Ugarites.\"",
+        "\"Ugarites. The Ugarites.\""
+      ],
+      "timestamps": ["00:40:35.106", "00:40:35.106"],
+      "episodeIds": ["162908583", "162908583"],
+      "confidence": 10,
+      "firstSeen": "2026-07-14T12:43:35.290Z",
+      "lastSeen": "2026-07-14T12:43:35.290Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-06-29T16:24:29.366Z"
+  "lastUpdated": "2026-07-14T12:43:35.290Z"
 }
