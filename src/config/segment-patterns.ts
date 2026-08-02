@@ -17,6 +17,7 @@ export type SegmentType =
   | "conspiracy-watch"
   | "could-it-be-satan"
   | "creation-stories"
+  | "data-after-dark"
   | "eschatological"
   | "ex-eventu"
   | "getting-angelic"
@@ -74,6 +75,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "conspiracy-watch": "Conspiracy Watch",
   "could-it-be-satan": "Could it be Satan?",
   "creation-stories": "Creation Stories",
+  "data-after-dark": "Data After Dark",
   eschatological: "Eschatological",
   "ex-eventu": "Ex Eventu",
   "getting-angelic": "Getting Angelic",
@@ -132,6 +134,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "conspiracy-watch": "#dc2626", // red-600 (darker red)
   "could-it-be-satan": "#7c3aed", // violet-600 (deep purple)
   "creation-stories": "#2dd4bf", // teal-400 (bright teal for origins/creation)
+  "data-after-dark": "#3730a3", // indigo-900 (dark/nighttime theme)
   eschatological: "#5b21b6", // violet-800 (apocalyptic/end times)
   "ex-eventu": "#6366f1", // indigo-500 (scholarly/prophecy)
   "getting-angelic": "#fbbf24", // amber-400 (golden/heavenly)
@@ -332,6 +335,11 @@ export const SEGMENT_PATTERNS: Record<
     /could it be satan\??/i,
     /welcome to.*could it be satan/i,
   ],
+  "data-after-dark": [
+    /data after dark/i,
+    /welcome to.*data after dark/i,
+    /let'?s (do|dive into).*data after dark/i,
+  ],
   "creation-stories": [
     /creation stories/i,
     /welcome to.*creation stories/i,
@@ -437,6 +445,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Exploring Satan, demons, and evil in biblical and religious contexts",
   "creation-stories":
     "Examining ancient creation narratives from the Bible and other cultures, comparing cosmologies and origin myths",
+  "data-after-dark":
+    "An after-hours discussion segment exploring deeper dives, tangential thoughts, or late-night reflections on biblical and religious topics",
   eschatological:
     "Discussing end times theology, apocalyptic literature, prophecy about the end of the world, and eschatological beliefs",
   "ex-eventu":
