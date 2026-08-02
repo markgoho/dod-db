@@ -11,6 +11,7 @@ topics:
   - David
   - Paul
   - Prophetic Critique
+  - Great Commission
 tags:
   - Noah
   - cognitive dissonance

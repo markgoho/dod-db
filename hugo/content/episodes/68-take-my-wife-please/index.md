@@ -15,6 +15,7 @@ topics:
   - Samson
   - Satan
   - YHWH
+  - Masturbation
 tags:
   - Judah
   - Er

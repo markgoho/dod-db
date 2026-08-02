@@ -15,6 +15,7 @@ topics:
   - Pharisees
   - Satan
   - Septuagint
+  - Great Commission
 tags:
   - Esther
   - Mordecai

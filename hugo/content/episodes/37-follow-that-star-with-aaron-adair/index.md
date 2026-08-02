@@ -21,6 +21,7 @@ topics:
   - Nephilim
   - Satan
   - Second Coming
+  - Great Commission
 tags:
   - Bethlehem
   - Jerusalem

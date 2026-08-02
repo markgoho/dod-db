@@ -6817,6 +6817,10 @@
       {
         "tag": "J.R.R. Tolkien",
         "mentions": 1
+      },
+      {
+        "tag": "Great Commission",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -9685,6 +9689,10 @@
       {
         "tag": "YHWH",
         "mentions": 1
+      },
+      {
+        "tag": "Masturbation",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -12264,6 +12272,10 @@
       {
         "tag": "YHWH",
         "mentions": 1
+      },
+      {
+        "tag": "Masturbation",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -12462,6 +12474,10 @@
       },
       {
         "tag": "Virgin Birth",
+        "mentions": 1
+      },
+      {
+        "tag": "Great Commission",
         "mentions": 1
       }
     ],
@@ -13937,6 +13953,10 @@
       },
       {
         "tag": "Protestantism",
+        "mentions": 1
+      },
+      {
+        "tag": "Great Commission",
         "mentions": 1
       }
     ],
@@ -26281,6 +26301,10 @@
       {
         "tag": "Septuagint",
         "mentions": 1
+      },
+      {
+        "tag": "Great Commission",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -30939,6 +30963,153 @@
       {
         "book": "Matthew",
         "references": ["Matthew 22"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "164852788",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/164852788.mp3?sig=s4NLuCKTKLiX5kOzQ72L-med7rhKNvSHqiBQVgpXUQc%3D",
+    "title": "Don't be a jerk...off?",
+    "publishedAt": "2026-07-26T06:00:07.000Z",
+    "processedAt": "2026-08-02T19:32:54.120Z",
+    "transcriptPath": "data/transcripts/2026-07-26-dont-be-a-jerkoff.txt",
+    "tags": [
+      {
+        "tag": "Monotheism",
+        "mentions": 4
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 4
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 2
+      },
+      {
+        "tag": "Adultery",
+        "mentions": 1
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 4
+      },
+      {
+        "tag": "Samaria",
+        "mentions": 1
+      },
+      {
+        "tag": "Atheism",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 5
+      },
+      {
+        "tag": "Crucifixion",
+        "mentions": 1
+      },
+      {
+        "tag": "Homosexuality",
+        "mentions": 5
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 5
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 4
+      },
+      {
+        "tag": "Onan",
+        "mentions": 5
+      },
+      {
+        "tag": "Masturbation",
+        "mentions": 24
+      },
+      {
+        "tag": "Great Commission",
+        "mentions": 7
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:49.258]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:01:49.258]",
+        "endTimestamp": "[00:32:28.387]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Great Commission",
+        "summary": "Whether Matthew 28 justifies public evangelizing strangers"
+      },
+      {
+        "type": "data-after-dark",
+        "startTimestamp": "[00:32:28.387]",
+        "endTimestamp": "[00:56:58.006]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Masturbation",
+        "summary": "Bible never addresses masturbation despite Onan misreadings"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
+    "episodeNumber": 173,
+    "scriptures": [
+      {
+        "book": "Matthew",
+        "references": ["Matthew", "Matthew 5:30", "Matthew 28"],
+        "mentions": 8
+      },
+      {
+        "book": "Leviticus",
+        "references": ["Leviticus 15", "Leviticus 18:22"],
+        "mentions": 2
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel 7"],
+        "mentions": 1
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 38"],
+        "mentions": 1
+      },
+      {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon"],
+        "mentions": 1
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts 1"],
         "mentions": 1
       }
     ]

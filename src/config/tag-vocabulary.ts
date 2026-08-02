@@ -518,6 +518,16 @@ export const tagVocabulary: TagDefinition[] = [
     episodes: [4, 119],
   },
   {
+    canonical: "Great Commission",
+    variations: ["great commission", "matthew 28:19"],
+    category: "theology",
+    llmVerify: true,
+    description:
+      "Jesus's instruction to his disciples in Matthew 28:16-20 to make disciples of all nations, often cited as the biblical basis for Christian missionary and evangelistic activity.",
+    status: "accepted",
+    episodes: [37, 69, 78, 147, 173],
+  },
+  {
     canonical: "Moloch",
     variations: ["Molech", "Molek", "mulk"],
     category: "character",
@@ -9762,6 +9772,17 @@ export const tagVocabulary: TagDefinition[] = [
       "Co-host of Joel Webbon's podcast, aligning with Christian nationalist views and advocating for the forceful implementation of their agenda.",
     status: "rejected",
     addedInEpisode: 172,
+  },
+  {
+    canonical: "Masturbation",
+    variations: ["Onanism", "self-pleasure"],
+    category: "theology",
+    llmVerify: true,
+    description:
+      "The act of sexually stimulating oneself. Often historically linked to the biblical story of Onan through misinterpretation of Levirate marriage duties.",
+    status: "accepted",
+    addedInEpisode: 173,
+    episodes: [54, 68, 173],
   },
 ];
 

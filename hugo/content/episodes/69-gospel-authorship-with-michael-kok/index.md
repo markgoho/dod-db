@@ -16,6 +16,7 @@ topics:
   - Easter
   - Gnosticism
   - Trinity
+  - Great Commission
 tags:
   - Matthew
   - Papias of Hierapolis

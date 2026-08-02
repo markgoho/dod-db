@@ -8990,7 +8990,51 @@
       "firstSeen": "2026-08-02T18:23:09.648Z",
       "lastSeen": "2026-08-02T18:23:09.648Z",
       "status": "pending"
+    },
+    "Data over→Data Over": {
+      "original": "Data over",
+      "corrected": "Data Over",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["164852788"],
+      "examples": [
+        "\"Data over dogma is\"",
+        "\"production of data over dogma media,\""
+      ],
+      "correctedExamples": [
+        "\"Data Over Dogma is\"",
+        "\"production of Data Over Dogma Media,\""
+      ],
+      "timestamps": ["00:56:48.790", "00:56:48.790"],
+      "episodeIds": ["164852788", "164852788"],
+      "confidence": 10,
+      "firstSeen": "2026-08-02T19:33:45.769Z",
+      "lastSeen": "2026-08-02T19:33:45.769Z",
+      "status": "pending"
+    },
+    "over dogma→Over Dogma": {
+      "original": "over dogma",
+      "corrected": "Over Dogma",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["164852788"],
+      "examples": [
+        "\"Data over dogma is a\"",
+        "\"of data over dogma media, llc.\""
+      ],
+      "correctedExamples": [
+        "\"Data Over Dogma is a\"",
+        "\"of Data Over Dogma Media, LLC.\""
+      ],
+      "timestamps": ["00:56:48.790", "00:56:48.790"],
+      "episodeIds": ["164852788", "164852788"],
+      "confidence": 10,
+      "firstSeen": "2026-08-02T19:33:45.769Z",
+      "lastSeen": "2026-08-02T19:33:45.769Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-08-02T18:23:09.648Z"
+  "lastUpdated": "2026-08-02T19:33:45.769Z"
 }
