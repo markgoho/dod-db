@@ -30791,5 +30791,156 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "164229960",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/164229960.mp3?sig=Nnm95TnZ67LewtBsx4aUPAzC4yK9ojogs9ANnn9T02I%3D",
+    "title": "A Trickster God and the Worst Wedding Ever",
+    "publishedAt": "2026-07-19T06:15:01.000Z",
+    "processedAt": "2026-08-02T18:21:37.123Z",
+    "transcriptPath": "data/transcripts/2026-07-19-a-trickster-god-and-the-worst-wedding-ever.txt",
+    "tags": [
+      {
+        "tag": "Christian Nationalism",
+        "mentions": 3
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 5
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 2
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 1
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 1
+      },
+      {
+        "tag": "Romans",
+        "mentions": 6
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Baal",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 2
+      },
+      {
+        "tag": "Gospel of Thomas",
+        "mentions": 5
+      },
+      {
+        "tag": "Salvation",
+        "mentions": 1
+      },
+      {
+        "tag": "Gnosticism",
+        "mentions": 2
+      },
+      {
+        "tag": "Josiah",
+        "mentions": 6
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 4
+      },
+      {
+        "tag": "Laban",
+        "mentions": 4
+      },
+      {
+        "tag": "Paul",
+        "mentions": 3
+      },
+      {
+        "tag": "Luke",
+        "mentions": 6
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:24.710]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:02:24.710]",
+        "endTimestamp": "[00:32:05.114]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Lying for the Lord",
+        "summary": "Joel Webbon cites 2 Kings 23 to justify political deception"
+      },
+      {
+        "type": "terrible-parables",
+        "startTimestamp": "[00:32:05.114]",
+        "endTimestamp": "[00:56:14.016]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Wedding Robe",
+        "summary": "Guest thrown into darkness for lacking a wedding robe"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
+    "episodeNumber": 172,
+    "scriptures": [
+      {
+        "book": "Romans",
+        "references": ["Romans 13"],
+        "mentions": 6
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings 23", "2 Kings"],
+        "mentions": 4
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 2:17", "Genesis 6"],
+        "mentions": 2
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 100"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Samuel",
+        "references": ["1 Samuel 15"],
+        "mentions": 1
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew 22"],
+        "mentions": 1
+      }
+    ]
   }
 ]

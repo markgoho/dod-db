@@ -9745,6 +9745,24 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
     addedInEpisode: 171,
   },
+  {
+    canonical: "Joel Webbon",
+    variations: [],
+    category: "person",
+    description:
+      "President and founder of Right Response Ministries and senior pastor of Covenant Bible Church, known for his promotion of Christian nationalist views.",
+    status: "rejected",
+    addedInEpisode: 172,
+  },
+  {
+    canonical: "Wesley Todd",
+    variations: [],
+    category: "person",
+    description:
+      "Co-host of Joel Webbon's podcast, aligning with Christian nationalist views and advocating for the forceful implementation of their agenda.",
+    status: "rejected",
+    addedInEpisode: 172,
+  },
 ];
 
 export function getAllSearchableTerms(

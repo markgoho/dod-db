@@ -5958,14 +5958,15 @@
       "original": "taking issue",
       "corrected": "Taking Issue",
       "category": "capitalization",
-      "totalOccurrences": 13,
-      "episodeCount": 5,
+      "totalOccurrences": 15,
+      "episodeCount": 6,
       "episodes": [
         "t40eXH29l-8",
         "Zpp6qUqrins",
         "yviFHESG_HA",
         "VEfI1TgWVHY",
-        "151982360"
+        "151982360",
+        "164229960"
       ],
       "examples": [
         "\"our segment taking issue. We're going\"",
@@ -5981,7 +5982,7 @@
       "episodeIds": ["t40eXH29l-8", "t40eXH29l-8", "Zpp6qUqrins"],
       "confidence": 85,
       "firstSeen": "2026-01-18T17:02:51.228Z",
-      "lastSeen": "2026-04-05T22:57:31.968Z",
+      "lastSeen": "2026-08-02T18:23:09.648Z",
       "status": "approved",
       "reviewedAt": "2026-04-03T01:40:37.949Z",
       "reviewedBy": "UI Review"
@@ -8943,7 +8944,53 @@
       "firstSeen": "2026-07-14T13:10:04.103Z",
       "lastSeen": "2026-07-14T13:10:04.103Z",
       "status": "pending"
+    },
+    "Webben→Webbon": {
+      "original": "Webben",
+      "corrected": "Webbon",
+      "category": "spelling",
+      "totalOccurrences": 6,
+      "episodeCount": 1,
+      "episodes": ["164229960"],
+      "examples": [
+        "\"about Joel Webben, who is\"",
+        "\"is Joel Webben?\"",
+        "\"so Joel Webben is like\""
+      ],
+      "correctedExamples": [
+        "\"about Joel Webbon, who is\"",
+        "\"is Joel Webbon?\"",
+        "\"so Joel Webbon is like\""
+      ],
+      "timestamps": ["00:01:33.975", "00:02:01.332", "00:02:32.911"],
+      "episodeIds": ["164229960", "164229960", "164229960"],
+      "confidence": 25,
+      "firstSeen": "2026-08-02T18:23:09.648Z",
+      "lastSeen": "2026-08-02T18:23:09.648Z",
+      "status": "pending"
+    },
+    "Webben's→Webbon's": {
+      "original": "Webben's",
+      "corrected": "Webbon's",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["164229960"],
+      "examples": [
+        "\"argument. But Webben's not big\"",
+        "\"making arguments. Webben's big on\""
+      ],
+      "correctedExamples": [
+        "\"argument. But Webbon's not big\"",
+        "\"making arguments. Webbon's big on\""
+      ],
+      "timestamps": ["00:18:28.994", "00:18:28.994"],
+      "episodeIds": ["164229960", "164229960"],
+      "confidence": 15,
+      "firstSeen": "2026-08-02T18:23:09.648Z",
+      "lastSeen": "2026-08-02T18:23:09.648Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-07-14T13:10:04.103Z"
+  "lastUpdated": "2026-08-02T18:23:09.648Z"
 }
