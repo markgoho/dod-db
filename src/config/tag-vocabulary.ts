@@ -9784,6 +9784,106 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 173,
     episodes: [54, 68, 173],
   },
+  {
+    canonical: "Urtext",
+    variations: [],
+    category: "scholarship",
+    description:
+      "A hypothesized original text or archetype from which all extant copies or versions of a work are derived, a concept less emphasized in modern textual criticism.",
+    status: "proposed",
+    addedInEpisode: 174,
+  },
+  {
+    canonical: "Autographs",
+    variations: [],
+    category: "scholarship",
+    description:
+      "The original manuscripts written by the authors themselves; none of these are extant for biblical texts.",
+    status: "proposed",
+    addedInEpisode: 174,
+  },
+  {
+    canonical: "Hexapla",
+    variations: [],
+    category: "literature",
+    description:
+      "A six-column edition of the Old Testament compiled by Origen, comparing different Greek and Hebrew versions, a significant early work of textual criticism.",
+    status: "proposed",
+    addedInEpisode: 174,
+  },
+  {
+    canonical: "Karl Lachmann",
+    variations: ["Lachmann"],
+    category: "person",
+    description:
+      "A 19th-century German classical philologist and textual critic, noted for pioneering a new methodology for New Testament textual criticism independent of the Textus Receptus.",
+    status: "proposed",
+    addedInEpisode: 174,
+  },
+  {
+    canonical: "Revised Version",
+    variations: ["RV"],
+    category: "literature",
+    description:
+      "An English translation of the Bible, published in the late 19th century, notable as the first (and only authorized) revision of the King James Version based on a critical text.",
+    status: "proposed",
+    addedInEpisode: 174,
+  },
+  {
+    canonical: "Woman taken in adultery",
+    variations: [],
+    category: "literature",
+    description:
+      "A pericope (John 7:53-8:11) that is absent from the earliest manuscripts of the Gospel of John, often considered a later addition to the text and a prominent example in textual criticism.",
+    status: "proposed",
+    addedInEpisode: 174,
+  },
+  {
+    canonical: "Long ending of Mark",
+    variations: [],
+    category: "literature",
+    description:
+      "Refers to Mark 16:9-20, a section of the Gospel of Mark not found in the earliest and most reliable manuscripts, widely regarded as a later addition and a prominent example in textual criticism.",
+    status: "proposed",
+    addedInEpisode: 174,
+  },
+  {
+    canonical: "Haplography",
+    variations: [],
+    category: "scholarship",
+    description:
+      "A scribal error in which a letter, word, or passage is omitted because the same or similar sequence of letters or words occurred twice in close succession.",
+    status: "accepted",
+    addedInEpisode: 174,
+    episodes: [60, 94, 129, 153, 157, 174],
+  },
+  {
+    canonical: "Conjectural Emendations",
+    variations: [],
+    category: "scholarship",
+    description:
+      "Proposed textual changes by scholars to correct a text when no manuscript evidence directly supports the change, based on scholarly judgment of what the original author likely wrote, a controversial aspect of textual criticism.",
+    status: "proposed",
+    addedInEpisode: 174,
+  },
+  {
+    canonical: "Day of the Lord",
+    variations: [],
+    category: "theology",
+    description:
+      "A biblical concept referring to a future time when God will intervene directly in human history, often associated with judgment and salvation.",
+    status: "proposed",
+    addedInEpisode: 174,
+  },
+  {
+    canonical: "Minor Prophets",
+    variations: ["The Twelve Minor Prophets"],
+    category: "literature",
+    description:
+      "A collection of twelve shorter prophetic books in the Hebrew Bible, distinct from the longer 'Major Prophets', often compiled together on a single scroll.",
+    status: "proposed",
+    addedInEpisode: 174,
+  },
 ];
 
 export function getAllSearchableTerms(

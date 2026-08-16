@@ -24,6 +24,7 @@ tags:
   - Jerome
   - Onesimus
   - Priscilla
+  - Haplography
 books:
   - 2 John
   - 3 John

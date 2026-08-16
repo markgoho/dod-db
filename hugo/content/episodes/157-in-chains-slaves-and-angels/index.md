@@ -45,6 +45,7 @@ tags:
   - Luke
   - Moabites
   - Sodom
+  - Haplography
 books:
   - Genesis
   - 2 Peter

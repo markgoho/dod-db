@@ -32,6 +32,7 @@ tags:
   - Abraham
   - Amorites
   - Qumran
+  - Haplography
 books:
   - Judges
   - Ezekiel

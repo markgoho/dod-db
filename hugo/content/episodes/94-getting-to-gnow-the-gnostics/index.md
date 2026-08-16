@@ -38,6 +38,8 @@ tags:
   - Latin Vulgate
   - Mount Sinai
   - Qumran
+  - Dittography
+  - Haplography
 books:
   - Matthew
   - Mark

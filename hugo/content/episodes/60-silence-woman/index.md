@@ -26,6 +26,8 @@ tags:
   - Saint Titus
   - Southern Baptist Convention
   - Textus Receptus
+  - Dittography
+  - Haplography
 books:
   - 1 Corinthians
   - 1 Timothy

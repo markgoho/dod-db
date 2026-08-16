@@ -10898,6 +10898,14 @@
       {
         "tag": "YHWH",
         "mentions": 1
+      },
+      {
+        "tag": "Dittography",
+        "mentions": 1
+      },
+      {
+        "tag": "Haplography",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -16722,6 +16730,14 @@
       },
       {
         "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Dittography",
+        "mentions": 1
+      },
+      {
+        "tag": "Haplography",
         "mentions": 1
       }
     ],
@@ -22888,6 +22904,10 @@
       {
         "tag": "Urim and Thummim",
         "mentions": 1
+      },
+      {
+        "tag": "Haplography",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -27317,6 +27337,10 @@
       {
         "tag": "Septuagint",
         "mentions": 1
+      },
+      {
+        "tag": "Haplography",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -28169,6 +28193,10 @@
       },
       {
         "tag": "Sodom",
+        "mentions": 1
+      },
+      {
+        "tag": "Haplography",
         "mentions": 1
       }
     ],
@@ -31110,6 +31138,253 @@
       {
         "book": "Acts",
         "references": ["Acts 1"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "165517147",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/165517147.mp3?sig=gaDLNROuVZ2dBLo7ckbrtzgdfznu4jK_AakzycWrego%3D",
+    "title": "No Originals, No Mercy",
+    "publishedAt": "2026-08-02T06:00:10.000Z",
+    "processedAt": "2026-08-16T19:22:10.522Z",
+    "transcriptPath": "data/transcripts/2026-08-02-no-originals-no-mercy.txt",
+    "tags": [
+      {
+        "tag": "King James Bible",
+        "mentions": 12
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 5
+      },
+      {
+        "tag": "Codex Sinaiticus",
+        "mentions": 1
+      },
+      {
+        "tag": "Leningrad Codex",
+        "mentions": 2
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 2
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 4
+      },
+      {
+        "tag": "Deutero-Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 2
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 3
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 3
+      },
+      {
+        "tag": "Monotheism",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 11
+      },
+      {
+        "tag": "Ammonites",
+        "mentions": 3
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Gomorrah",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 2
+      },
+      {
+        "tag": "etiology",
+        "mentions": 1
+      },
+      {
+        "tag": "Hezekiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Moabites",
+        "mentions": 1
+      },
+      {
+        "tag": "Edomites",
+        "mentions": 1
+      },
+      {
+        "tag": "Adultery",
+        "mentions": 2
+      },
+      {
+        "tag": "Nineveh",
+        "mentions": 2
+      },
+      {
+        "tag": "Assyria",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 4
+      },
+      {
+        "tag": "Qumran",
+        "mentions": 2
+      },
+      {
+        "tag": "Origen",
+        "mentions": 1
+      },
+      {
+        "tag": "Sodom",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 3
+      },
+      {
+        "tag": "Baal",
+        "mentions": 2
+      },
+      {
+        "tag": "Gaza",
+        "mentions": 1
+      },
+      {
+        "tag": "Desiderius Erasmus",
+        "mentions": 3
+      },
+      {
+        "tag": "Textus Receptus",
+        "mentions": 9
+      },
+      {
+        "tag": "The Reformation",
+        "mentions": 1
+      },
+      {
+        "tag": "Latin Vulgate",
+        "mentions": 1
+      },
+      {
+        "tag": "Philistines",
+        "mentions": 1
+      },
+      {
+        "tag": "Moab",
+        "mentions": 4
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Josiah",
+        "mentions": 6
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 2
+      },
+      {
+        "tag": "Edom",
+        "mentions": 1
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 1
+      },
+      {
+        "tag": "Dittography",
+        "mentions": 3
+      },
+      {
+        "tag": "Haplography",
+        "mentions": 4
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:48.234]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:02:48.234]",
+        "endTimestamp": "[00:35:19.308]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Textual Criticism",
+        "summary": "How scholars reconstruct the earliest recoverable biblical text"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:35:19.308]",
+        "endTimestamp": "[01:06:09.216]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Zephaniah",
+        "summary": "Dating and authorship of Zephaniah, written near Judah's fall"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 174,
+    "scriptures": [
+      {
+        "book": "John",
+        "references": ["John", "John 1:18"],
+        "mentions": 6
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah"],
+        "mentions": 3
+      },
+      {
+        "book": "Zephaniah",
+        "references": ["Zephaniah"],
+        "mentions": 2
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew 17:21"],
+        "mentions": 1
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 32:8"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark 16"],
         "mentions": 1
       }
     ]
