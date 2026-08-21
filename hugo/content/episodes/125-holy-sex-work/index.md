@@ -35,6 +35,7 @@ tags:
   - Martin Luther
   - Samuel
   - Ugarit
+  - Ugaritic literature
 books:
   - Psalms
   - 1 Kings

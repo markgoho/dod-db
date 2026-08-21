@@ -13,6 +13,7 @@ topics:
   - Joseph
   - King James Bible
   - Ritual Purity
+  - Baal Cycle
 tags:
   - Judah
   - Ugarit
@@ -33,6 +34,7 @@ tags:
   - Moses
   - Persia
   - Syria
+  - Ugaritic literature
 books:
   - Genesis
   - Psalms

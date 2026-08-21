@@ -54,6 +54,7 @@ tags:
   - Judaism
   - Michael
   - Philistines
+  - Ugaritic literature
 books:
   - Deuteronomy
   - Psalms

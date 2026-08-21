@@ -1511,9 +1511,9 @@
       "original": "won't",
       "corrected": "wont",
       "category": "spelling",
-      "totalOccurrences": 6,
-      "episodeCount": 3,
-      "episodes": ["naI65ELNhRw", "nu6jx8m14tI", "BXE7A6iiQD8"],
+      "totalOccurrences": 9,
+      "episodeCount": 4,
+      "episodes": ["naI65ELNhRw", "nu6jx8m14tI", "BXE7A6iiQD8", "166804734"],
       "examples": [
         "\"is our won't.\"",
         "\"is our won't.\"",
@@ -1526,9 +1526,9 @@
       ],
       "timestamps": ["00:01:12.150", "00:01:13.350", "00:29:56.110"],
       "episodeIds": ["naI65ELNhRw", "naI65ELNhRw", "nu6jx8m14tI"],
-      "confidence": 60,
+      "confidence": 75,
       "firstSeen": "2026-01-11T20:29:33.102Z",
-      "lastSeen": "2026-04-03T00:42:23.597Z",
+      "lastSeen": "2026-08-21T18:22:31.992Z",
       "status": "rejected",
       "reviewedAt": "2026-01-13T22:22:26.131Z",
       "reviewedBy": "UI Review"
@@ -2773,9 +2773,9 @@
       "original": "ball",
       "corrected": "Baal",
       "category": "proper-noun",
-      "totalOccurrences": 3,
-      "episodeCount": 1,
-      "episodes": ["AUgdX7aH_hI"],
+      "totalOccurrences": 12,
+      "episodeCount": 2,
+      "episodes": ["AUgdX7aH_hI", "166804734"],
       "examples": [
         "\"bring in ball, and they'll\"",
         "\"or Zavu Ball, which is\"",
@@ -2788,9 +2788,9 @@
       ],
       "timestamps": ["00:36:19.870", "00:37:36.630", "00:38:17.980"],
       "episodeIds": ["AUgdX7aH_hI", "AUgdX7aH_hI", "AUgdX7aH_hI"],
-      "confidence": 20,
+      "confidence": 50,
       "firstSeen": "2026-01-13T03:14:41.804Z",
-      "lastSeen": "2026-01-13T03:14:41.804Z",
+      "lastSeen": "2026-08-21T18:22:31.992Z",
       "status": "rejected",
       "reviewedAt": "2026-01-13T03:38:01.584Z",
       "reviewedBy": "UI Review"
@@ -9059,7 +9059,53 @@
       "firstSeen": "2026-08-21T18:15:03.666Z",
       "lastSeen": "2026-08-21T18:15:03.666Z",
       "status": "pending"
+    },
+    "moat→Mot": {
+      "original": "moat",
+      "corrected": "Mot",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["166804734"],
+      "examples": [
+        "\"also have moat and literally\"",
+        "\"So anyway, Moat is characterized\""
+      ],
+      "correctedExamples": [
+        "\"also have Mot and literally\"",
+        "\"So anyway, Mot is characterized\""
+      ],
+      "timestamps": ["00:12:37.970", "00:26:50.700"],
+      "episodeIds": ["166804734", "166804734"],
+      "confidence": 10,
+      "firstSeen": "2026-08-21T18:22:31.992Z",
+      "lastSeen": "2026-08-21T18:22:31.992Z",
+      "status": "pending"
+    },
+    "Mote→Mot": {
+      "original": "Mote",
+      "corrected": "Mot",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["166804734"],
+      "examples": [
+        "\"deity named Mote. And then\"",
+        "\"shows up. Mote, the death,\"",
+        "\"invitation from Mote, that means\""
+      ],
+      "correctedExamples": [
+        "\"deity named Mot. And then\"",
+        "\"shows up. Mot, the death,\"",
+        "\"invitation from Mot, that means\""
+      ],
+      "timestamps": ["00:12:37.970", "00:25:37.050", "00:25:37.050"],
+      "episodeIds": ["166804734", "166804734", "166804734"],
+      "confidence": 15,
+      "firstSeen": "2026-08-21T18:22:31.992Z",
+      "lastSeen": "2026-08-21T18:22:31.992Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-08-21T18:15:03.666Z"
+  "lastUpdated": "2026-08-21T18:22:31.992Z"
 }

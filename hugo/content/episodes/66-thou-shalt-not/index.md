@@ -31,6 +31,7 @@ tags:
   - Joram
   - Moses
   - Protestantism
+  - Ugaritic literature
 books:
   - Exodus
   - Habakkuk

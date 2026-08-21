@@ -18,6 +18,7 @@ topics:
   - Joseph
   - Jubilees
   - King James Bible
+  - Baal Cycle
 tags:
   - Balaam
   - Beelzebul
@@ -45,6 +46,7 @@ tags:
   - Justin Martyr
   - Moabites
   - Samuel
+  - Ugaritic literature
 books:
   - 2 Samuel
   - Numbers

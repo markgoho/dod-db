@@ -27,6 +27,7 @@ tags:
   - Jerusalem
   - Judah
   - Ugarit
+  - Ugaritic literature
 books:
   - Ephesians
   - 2 Thessalonians

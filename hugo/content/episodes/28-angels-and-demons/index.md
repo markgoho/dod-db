@@ -52,6 +52,7 @@ tags:
   - Sarah
   - Sea of Galilee
   - Seth
+  - Ugaritic literature
 books:
   - Genesis
   - Psalms

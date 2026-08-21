@@ -133,6 +133,10 @@
       {
         "tag": "Syria",
         "mentions": 1
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -1355,6 +1359,10 @@
       {
         "tag": "Philistines",
         "mentions": 1
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -3315,6 +3323,14 @@
       {
         "tag": "Samuel",
         "mentions": 1
+      },
+      {
+        "tag": "Baal Cycle",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -5220,6 +5236,10 @@
       {
         "tag": "Moloch",
         "mentions": 1
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -11982,6 +12002,10 @@
       {
         "tag": "Satan",
         "mentions": 1
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -13758,6 +13782,10 @@
       {
         "tag": "YHWH",
         "mentions": 1
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -14866,6 +14894,10 @@
       },
       {
         "tag": "Ugarit",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugaritic literature",
         "mentions": 1
       }
     ],
@@ -20112,6 +20144,14 @@
       {
         "tag": "Syria",
         "mentions": 1
+      },
+      {
+        "tag": "Baal Cycle",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -21964,6 +22004,10 @@
       {
         "tag": "Ugarit",
         "mentions": 1
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -22160,6 +22204,10 @@
       },
       {
         "tag": "Ugarit",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugaritic literature",
         "mentions": 1
       }
     ],
@@ -23942,6 +23990,10 @@
       {
         "tag": "Philo of Alexandria",
         "mentions": 3
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -30640,6 +30692,14 @@
       {
         "tag": "Ruth",
         "mentions": 2
+      },
+      {
+        "tag": "Baal Cycle",
+        "mentions": 3
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -31619,6 +31679,179 @@
       {
         "book": "Mark",
         "references": ["Mark 10"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "166804734",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/166804734.mp3?sig=9EMjEE4IwlcvlS9DEoDF-zBiWZi5T84XVIcZ4SUyc-k%3D",
+    "title": "The Grandfather of the Hebrew Bible (and What Is Zion?)",
+    "publishedAt": "2026-08-16T06:00:06.000Z",
+    "processedAt": "2026-08-21T18:21:37.184Z",
+    "transcriptPath": "data/transcripts/2026-08-16-the-grandfather-of-the-hebrew-bible-and-what-is-zion.txt",
+    "tags": [
+      {
+        "tag": "Christian Zionism",
+        "mentions": 3
+      },
+      {
+        "tag": "divine council",
+        "mentions": 3
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 18
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 2
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 28
+      },
+      {
+        "tag": "Judah",
+        "mentions": 2
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 6
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 10
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "Peter",
+        "mentions": 3
+      },
+      {
+        "tag": "Syria",
+        "mentions": 1
+      },
+      {
+        "tag": "Baal",
+        "mentions": 46
+      },
+      {
+        "tag": "Second Temple period",
+        "mentions": 1
+      },
+      {
+        "tag": "Elephantine",
+        "mentions": 1
+      },
+      {
+        "tag": "Solomon",
+        "mentions": 1
+      },
+      {
+        "tag": "David",
+        "mentions": 11
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 1
+      },
+      {
+        "tag": "Baal Cycle",
+        "mentions": 8
+      },
+      {
+        "tag": "Zion theology",
+        "mentions": 3
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 7
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:28.881]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:02:28.881]",
+        "endTimestamp": "[00:34:35.139]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Baal Cycle",
+        "summary": "Ugaritic myth cycle paralleling deities and kingship in Hebrew Bible"
+      },
+      {
+        "type": "historys-mysteries",
+        "startTimestamp": "[00:34:35.139]",
+        "endTimestamp": "[00:58:48.034]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Zion Theology",
+        "summary": "Zion's etymology as a stronghold and theology of divine invincibility"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 176,
+    "scriptures": [
+      {
+        "book": "Romans",
+        "references": ["Romans 9:33", "Romans 11:26"],
+        "mentions": 2
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 82"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Samuel",
+        "references": ["2 Samuel 5"],
+        "mentions": 1
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew 21:5"],
+        "mentions": 1
+      },
+      {
+        "book": "John",
+        "references": ["John 12:15"],
+        "mentions": 1
+      },
+      {
+        "book": "Hebrews",
+        "references": ["Hebrews 12:22"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Peter",
+        "references": ["1 Peter"],
+        "mentions": 1
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation 14:1"],
         "mentions": 1
       }
     ]

@@ -39,6 +39,7 @@ tags:
   - Judaism
   - source criticism
   - Syria
+  - Ugaritic literature
 books:
   - Genesis
   - Exodus

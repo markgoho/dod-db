@@ -9590,8 +9590,9 @@ export const tagVocabulary: TagDefinition[] = [
     category: "literature",
     description:
       "A collection of Ugaritic mythological texts describing the conflicts and triumphs of the storm god Baal, including his battles with chaos monsters like Lotan (Leviathan).",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 170,
+    episodes: [18, 115, 170, 176],
   },
   {
     canonical: "Bereshit",
@@ -9901,6 +9902,44 @@ export const tagVocabulary: TagDefinition[] = [
       "An individual mentioned in the podcast for sharing claims about the Bible's composition, often associated with views expressed through 'Peterson Academy'.",
     status: "rejected",
     addedInEpisode: 175,
+  },
+  {
+    canonical: "Ugaritic literature",
+    variations: [],
+    category: "literature",
+    description:
+      "Ancient texts discovered at Ugarit, written in Ugaritic, providing significant insight into ancient Northwest Semitic languages and the cultural context of the Hebrew Bible.",
+    status: "accepted",
+    addedInEpisode: 176,
+    episodes: [1, 7, 18, 28, 66, 76, 84, 115, 124, 125, 135, 170, 176],
+  },
+  {
+    canonical: "Kothar wa-Hasis",
+    variations: ["Kothar-and-Hasis", "Kothar"],
+    category: "character",
+    description:
+      "The craftsman deity in Ugaritic mythology, responsible for building weapons and palaces for other gods, most notably Baal.",
+    status: "proposed",
+    addedInEpisode: 176,
+  },
+  {
+    canonical: "Zion theology",
+    variations: [],
+    category: "theology",
+    description:
+      "A theological concept, particularly from the Hebrew Bible, which asserts that Jerusalem (Zion) is protected and special because of God's dwelling presence there.",
+    status: "accepted",
+    addedInEpisode: 176,
+    episodes: [176],
+  },
+  {
+    canonical: "Zionism",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "A political ideology concerning the relationship of the nation of Israel to other nations, discussed in the context of its evolving meaning and potential for problematic interpretations.",
+    status: "proposed",
+    addedInEpisode: 176,
   },
 ];
 

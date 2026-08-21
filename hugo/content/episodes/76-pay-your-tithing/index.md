@@ -28,6 +28,7 @@ tags:
   - Persia
   - Romans
   - Ugarit
+  - Ugaritic literature
 books:
   - Numbers
   - Deuteronomy

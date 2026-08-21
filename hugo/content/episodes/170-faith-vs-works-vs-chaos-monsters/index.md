@@ -18,6 +18,7 @@ topics:
   - James
   - Paul
   - Ruth
+  - Baal Cycle
 tags:
   - Eschatology
   - Jerusalem
@@ -45,6 +46,7 @@ tags:
   - Isaiah
   - Naomi
   - Boaz
+  - Ugaritic literature
 books:
   - Isaiah
   - Psalms

@@ -41,6 +41,7 @@ tags:
   - Noah
   - Peter
   - Ugarit
+  - Ugaritic literature
 books:
   - Genesis
   - Romans

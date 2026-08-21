@@ -42,6 +42,7 @@ tags:
   - Sea of Galilee
   - Sheol
   - Ugarit
+  - Ugaritic literature
 books:
   - 2 Peter
   - Luke
