@@ -5564,22 +5564,24 @@
       "original": "millennium bce",
       "corrected": "millennium BCE",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["iFp-3_c6QWQ"],
+      "totalOccurrences": 5,
+      "episodeCount": 2,
+      "episodes": ["iFp-3_c6QWQ", "166129945"],
       "examples": [
         "\"the second millennium bce, beginning of\"",
-        "\"the first millennium bce You've got\""
+        "\"the first millennium bce You've got\"",
+        "\"the second millennium bce. There are\""
       ],
       "correctedExamples": [
         "\"the second millennium BCE, beginning of\"",
-        "\"the first millennium BCE you've got\""
+        "\"the first millennium BCE you've got\"",
+        "\"the second millennium BCE. There are\""
       ],
-      "timestamps": ["00:05:18.910", "00:05:18.910"],
-      "episodeIds": ["iFp-3_c6QWQ", "iFp-3_c6QWQ"],
-      "confidence": 10,
+      "timestamps": ["00:05:18.910", "00:05:18.910", "00:11:08.900"],
+      "episodeIds": ["iFp-3_c6QWQ", "iFp-3_c6QWQ", "166129945"],
+      "confidence": 40,
       "firstSeen": "2026-01-18T14:29:15.493Z",
-      "lastSeen": "2026-01-18T14:29:15.493Z",
+      "lastSeen": "2026-08-21T18:15:03.666Z",
       "status": "pending"
     },
     "hell→Hail": {
@@ -5958,15 +5960,16 @@
       "original": "taking issue",
       "corrected": "Taking Issue",
       "category": "capitalization",
-      "totalOccurrences": 15,
-      "episodeCount": 6,
+      "totalOccurrences": 18,
+      "episodeCount": 7,
       "episodes": [
         "t40eXH29l-8",
         "Zpp6qUqrins",
         "yviFHESG_HA",
         "VEfI1TgWVHY",
         "151982360",
-        "164229960"
+        "164229960",
+        "166129945"
       ],
       "examples": [
         "\"our segment taking issue. We're going\"",
@@ -5982,7 +5985,7 @@
       "episodeIds": ["t40eXH29l-8", "t40eXH29l-8", "Zpp6qUqrins"],
       "confidence": 85,
       "firstSeen": "2026-01-18T17:02:51.228Z",
-      "lastSeen": "2026-08-02T18:23:09.648Z",
+      "lastSeen": "2026-08-21T18:15:03.666Z",
       "status": "approved",
       "reviewedAt": "2026-04-03T01:40:37.949Z",
       "reviewedBy": "UI Review"
@@ -8995,9 +8998,9 @@
       "original": "Data over",
       "corrected": "Data Over",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["164852788"],
+      "totalOccurrences": 4,
+      "episodeCount": 2,
+      "episodes": ["164852788", "166129945"],
       "examples": [
         "\"Data over dogma is\"",
         "\"production of data over dogma media,\""
@@ -9008,18 +9011,18 @@
       ],
       "timestamps": ["00:56:48.790", "00:56:48.790"],
       "episodeIds": ["164852788", "164852788"],
-      "confidence": 10,
+      "confidence": 40,
       "firstSeen": "2026-08-02T19:33:45.769Z",
-      "lastSeen": "2026-08-02T19:33:45.769Z",
+      "lastSeen": "2026-08-21T18:15:03.666Z",
       "status": "pending"
     },
     "over dogma→Over Dogma": {
       "original": "over dogma",
       "corrected": "Over Dogma",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["164852788"],
+      "totalOccurrences": 4,
+      "episodeCount": 2,
+      "episodes": ["164852788", "166129945"],
       "examples": [
         "\"Data over dogma is a\"",
         "\"of data over dogma media, llc.\""
@@ -9030,11 +9033,33 @@
       ],
       "timestamps": ["00:56:48.790", "00:56:48.790"],
       "episodeIds": ["164852788", "164852788"],
-      "confidence": 10,
+      "confidence": 40,
       "firstSeen": "2026-08-02T19:33:45.769Z",
-      "lastSeen": "2026-08-02T19:33:45.769Z",
+      "lastSeen": "2026-08-21T18:15:03.666Z",
+      "status": "pending"
+    },
+    "adherence→adherents": {
+      "original": "adherence",
+      "corrected": "adherents",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["166129945"],
+      "examples": [
+        "\"have more adherence that say\"",
+        "\"have fewer adherence to, say,\""
+      ],
+      "correctedExamples": [
+        "\"have more adherents that say\"",
+        "\"have fewer adherents to, say,\""
+      ],
+      "timestamps": ["00:03:57.110", "00:03:57.110"],
+      "episodeIds": ["166129945", "166129945"],
+      "confidence": 15,
+      "firstSeen": "2026-08-21T18:15:03.666Z",
+      "lastSeen": "2026-08-21T18:15:03.666Z",
       "status": "pending"
     }
   },
-  "lastUpdated": "2026-08-16T19:24:02.709Z"
+  "lastUpdated": "2026-08-21T18:15:03.666Z"
 }

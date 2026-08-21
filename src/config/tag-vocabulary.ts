@@ -9799,7 +9799,7 @@ export const tagVocabulary: TagDefinition[] = [
     category: "scholarship",
     description:
       "The original manuscripts written by the authors themselves; none of these are extant for biblical texts.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 174,
   },
   {
@@ -9883,6 +9883,24 @@ export const tagVocabulary: TagDefinition[] = [
       "A collection of twelve shorter prophetic books in the Hebrew Bible, distinct from the longer 'Major Prophets', often compiled together on a single scroll.",
     status: "proposed",
     addedInEpisode: 174,
+  },
+  {
+    canonical: "socialism",
+    variations: ["socialist"],
+    category: "miscellaneous",
+    description:
+      "A political and economic theory of social organization advocating that the means of production, distribution, and exchange should be owned or regulated by the community as a whole. Discussed in the context of biblical principles and capitalism.",
+    status: "rejected",
+    addedInEpisode: 175,
+  },
+  {
+    canonical: "Wes Huff",
+    variations: [],
+    category: "person",
+    description:
+      "An individual mentioned in the podcast for sharing claims about the Bible's composition, often associated with views expressed through 'Peterson Academy'.",
+    status: "rejected",
+    addedInEpisode: 175,
   },
 ];
 

@@ -31388,5 +31388,239 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "166129945",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/166129945.mp3?sig=wkUqPY1JEL7W8J5-BGaO3hDrll49m68kuKk-o4qx0QQ%3D",
+    "title": "66 Books, 40 Authors, Zero Contradictions?",
+    "publishedAt": "2026-08-09T06:00:07.000Z",
+    "processedAt": "2026-08-21T18:13:24.073Z",
+    "transcriptPath": "data/transcripts/2026-08-09-66-books-40-authors-zero-contradictions.txt",
+    "tags": [
+      {
+        "tag": "King James Bible",
+        "mentions": 1
+      },
+      {
+        "tag": "source criticism",
+        "mentions": 1
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 2
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 4
+      },
+      {
+        "tag": "Samaritans",
+        "mentions": 1
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Africa",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 28
+      },
+      {
+        "tag": "Peter",
+        "mentions": 2
+      },
+      {
+        "tag": "Torah",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Decalogue",
+        "mentions": 6
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 3
+      },
+      {
+        "tag": "Mordecai",
+        "mentions": 1
+      },
+      {
+        "tag": "Solomon",
+        "mentions": 2
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Esther",
+        "mentions": 2
+      },
+      {
+        "tag": "David",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:06.651]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:02:06.651]",
+        "endTimestamp": "[00:30:51.416]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Canon Claim",
+        "summary": "Debunking the 66-book, 40-author, zero-contradictions Bible claim"
+      },
+      {
+        "type": "twisted-scripture",
+        "startTimestamp": "[00:30:51.416]",
+        "endTimestamp": "[00:59:35.132]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Driscoll Capitalism",
+        "summary": "Mark Driscoll's claim that the Bible mandates capitalism over socialism"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 175,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 15", "Isaiah 40", "Isaiah 66"],
+        "mentions": 3
+      },
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 3
+      },
+      {
+        "book": "3 John",
+        "references": ["3 John"],
+        "mentions": 3
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis", "Genesis 49"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Peter",
+        "references": ["2 Peter"],
+        "mentions": 2
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy", "Deuteronomy 32"],
+        "mentions": 2
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts 4"],
+        "mentions": 2
+      },
+      {
+        "book": "Joshua",
+        "references": ["Joshua"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Samuel",
+        "references": ["2 Samuel"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Chronicles",
+        "references": ["2 Chronicles"],
+        "mentions": 1
+      },
+      {
+        "book": "Ezra",
+        "references": ["Ezra"],
+        "mentions": 1
+      },
+      {
+        "book": "Nehemiah",
+        "references": ["Nehemiah"],
+        "mentions": 1
+      },
+      {
+        "book": "Esther",
+        "references": ["Esther"],
+        "mentions": 1
+      },
+      {
+        "book": "Song of Solomon",
+        "references": ["Song of Solomon"],
+        "mentions": 1
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 15"],
+        "mentions": 1
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 68"],
+        "mentions": 1
+      },
+      {
+        "book": "1 John",
+        "references": ["1 John"],
+        "mentions": 1
+      },
+      {
+        "book": "2 John",
+        "references": ["2 John"],
+        "mentions": 1
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges 5"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark 10"],
+        "mentions": 1
+      }
+    ]
   }
 ]
