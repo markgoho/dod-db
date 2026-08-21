@@ -66,6 +66,22 @@ describe("isAfterPartyItem", () => {
         guid: "8",
       }),
     ).toBe(true);
+
+    expect(
+      isAfterPartyItem({
+        title: "Pre-Game 174",
+        pubDate: "Sun, 02 Aug 2026 06:01:02 GMT",
+        guid: "9",
+      }),
+    ).toBe(true);
+
+    expect(
+      isAfterPartyItem({
+        title: "Episode 174 Pregame",
+        pubDate: "Sun, 02 Aug 2026 06:01:02 GMT",
+        guid: "10",
+      }),
+    ).toBe(true);
   });
 
   test("does not match main episodes", () => {
