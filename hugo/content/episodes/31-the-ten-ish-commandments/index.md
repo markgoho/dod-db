@@ -23,6 +23,7 @@ topics:
   - Teraphim
   - Univocality
   - Philo of Alexandria
+  - Asherah Pole
 tags:
   - Deuteronomy
   - Judaism

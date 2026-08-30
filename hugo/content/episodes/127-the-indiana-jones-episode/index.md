@@ -15,6 +15,7 @@ topics:
   - King James Bible
   - Mary Magdalene
   - Ritual Purity
+  - Asherah Pole
 tags:
   - Philistines
   - Joshua

@@ -1,0 +1,324 @@
+---
+title: Rod Almighty!
+date: 2026-08-23T06:00:08.000Z
+episodeNumber: 177
+videoId: "167406950"
+aliases:
+  - /episodes/177/
+audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/167406950.mp3?sig=YLglRcXzz04D-EKk6aIGq39ipwVnO-NABEf16cnUV6U%3D
+topics:
+  - Ark of the Covenant
+  - Circumcision
+  - Christmas
+  - Marriage
+  - Asherah
+  - YHWH
+  - Bel and the Dragon
+  - Salvation
+  - Daniel
+  - Josiah
+  - Paul
+  - Asherah Pole
+  - "Aaron's Rod"
+tags:
+  - Ugaritic literature
+  - Judah
+  - Hezekiah
+  - Abraham
+  - Moses
+  - Judaism
+  - Romans
+  - Isaac
+  - Antiochus IV Epiphanes
+  - Second Maccabees
+  - Apocrypha
+  - Maccabees
+  - Aaron
+books:
+  - Numbers
+  - 2 Maccabees
+  - Exodus
+  - Bel and the Dragon
+  - Daniel
+segments:
+  - What is That?
+  - Chapter and Verse
+segmentData:
+  - type: what-is-that
+    anchor: what-is-that-1
+    label: What is That?
+    topicLabel: "Aaron's Rod"
+    summary: "Budding staff proves Aaron's priestly authority"
+    startSeconds: 139.163
+  - type: chapter-and-verse
+    anchor: chapter-and-verse-1
+    label: Chapter and Verse
+    topicLabel: 2 Macc 6
+    summary: Eleazar dies rather than eat pig meat
+    startSeconds: 1719.117
+draft: false
+---
+
+{{< line >}}[00:00:02.320] Dan McClellan: Everybody's done terrible stuff. Like even Aaron created a divine image and told all of Israel to worship it. Aaron's fine. Like Aaron's never threatened with death. But Moses slaps a rock with a stick and suddenly he's not allowed to enter the promised land. So {{< scripture ref="Numbers" display="the Book of Numbers" >}} is bonkers is what we're trying to say here. Hey, everybody, I'm Dan McClellan.{{< /line >}}
+{{< line >}}[00:00:28.800] Dan Beecher: And I'm Dan Beecher.{{< /line >}}
+{{< line >}}[00:00:30.300] Dan McClellan: And this is Data Over Dogma, where we increase public access to the academic study of the Bible and religion and we combat the spread of misinformation. I'm doing fine. How are things today, Dan?{{< /line >}}
+{{< line >}}[00:00:41.340] Dan Beecher: Things are great. I'm having a good time. We're living our best lives out here in the world. We got a good show coming up and I'm stoked.{{< /line >}}
+{{< line >}}[00:00:50.940] Dan McClellan: And you've got a—you've got a fancy new miter on your shelf behind you.{{< /line >}}
+{{< line >}}[00:00:55.930] Dan Beecher: I do. I have—{{< /line >}}
+{{< line >}}[00:00:56.850] Dan McClellan: Only slightly sacrilegious.{{< /line >}}
+{{< line >}}[00:00:58.410] Dan Beecher: I have a pope's hat. I am assured it is not sacrilegious. This was blessed by many a—not literally blessed, but blessed. The—the—the—yeah.{{< /line >}}
+{{< line >}}[00:01:09.130] Dan McClellan: Anyway, it was condoned by many.{{< /line >}}
+{{< line >}}[00:01:11.050] Dan Beecher: Condoned by—by the church, apparently. And—and yeah. Given away at the baseball game. That was fun.{{< /line >}}
+{{< line >}}[00:01:17.370] Dan McClellan: All right, awesome.{{< /line >}}
+{{< line >}}[00:01:19.610] Dan Beecher: Today, coming up on the show, where we got a couple of good ones. It's a humdinger. I think we got—we—we got a—What's That? where we're going to be talking about Aaron's rod. Keep your mind out of the gutter, everybody.{{< /line >}}
+{{< line >}}[00:01:35.970] Dan McClellan: Not the 1974 movie. This is—this is different. Yeah, don't ask.{{< /line >}}
+{{< line >}}[00:01:41.890] Dan Beecher: And we're gonna be—we're gonna be saying stuff about budding rods and stuff, so everybody just calm down. And then in the latter half of the show, we'll be—{{< /line >}}
+{{< line >}}[00:01:51.490] Dan McClellan: We'll—{{< /line >}}
+{{< line >}}[00:01:51.850] Dan Beecher: We'll be returning to {{< scripture ref="2 Maccabees" >}}. We've—we've hung out there a few times, but we're going to be getting—getting some—some chapter and verse action for {{< scripture ref="2 Maccabees 6" >}}, where Eleazar is going to show us how it's done.{{< /line >}}
+{{< line >}}[00:02:10.330] Dan McClellan: Yeah. Old man Eleazar.{{< /line >}}
+{{< line >}}[00:02:12.570] Dan Beecher: Yeah. So that's going to be some fun, but let's launch it off. Let's start it off with a What's That? Okay, so the What's That? is Aaron's rod. Aaron, let's remind ourselves a little bit. Aaron is the brother of Moses, brother—{{< /line >}}
+{{< line >}}[00:02:31.760] Dan McClellan: Of Moses, Moses's spokesperson. So when we have—in {{< scripture ref="Exodus 7" >}}, when God tells Moses, I will make you a God to Pharaoh goes on to say, and Aaron will be your prophet. And so it's actually usually Aaron doing the talking. Right, right.{{< /line >}}
+{{< line >}}[00:02:50.630] Dan Beecher: Moses was slow of speech or had some sort of speech impediment or something.{{< /line >}}
+{{< line >}}[00:02:54.670] Dan McClellan: Yeah. So he was—he was mainly there to—Aaron would be like, and now behold. And—and Moses would probably step forward and slam his rod on the ground and then frogs or something like that. So—{{< /line >}}
+{{< line >}}[00:03:07.270] Dan Beecher: Or the—or the stick turns into snakes or whatever.{{< /line >}}
+{{< line >}}[00:03:09.910] Dan McClellan: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:03:10.630] Dan Beecher: So we have no way of knowing if this is the same rod that turned into a snake.{{< /line >}}
+{{< line >}}[00:03:18.300] Dan McClellan: Probably a very different one. We're actually going to be in {{< scripture ref="Numbers" display="the Book of Numbers" >}}.{{< /line >}}
+{{< line >}}[00:03:21.260] Dan Beecher: Yeah, we're—we're—we're way outside of Exodus. We're—{{< /line >}}
+{{< line >}}[00:03:24.180] Dan McClellan: Yes, we're—{{< /line >}}
+{{< line >}}[00:03:25.500] Dan Beecher: We're all the way to Numbers. So—{{< /line >}}
+{{< line >}}[00:03:27.500] Dan McClellan: Yeah. And we have this—there's controversy and this—you know, if you've read the Pentateuch, you are familiar with the fact that the Israelites were always mumbling and grumbling.{{< /line >}}
+{{< line >}}[00:03:41.020] Dan Beecher: They were a mumbling, grumbling group.{{< /line >}}
+{{< line >}}[00:03:43.690] Dan McClellan: Yeah. They were always challenging Moses's authority. And we have these dudes named Korah and I forget the name of the other—Dathan and Abiram.{{< /line >}}
+{{< line >}}[00:03:56.570] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:03:56.970] Dan McClellan: Are kind of like, hey, we want to be in charge. And things didn't go great for them. We'll discuss the Korah episode in another episode.{{< /line >}}
+{{< line >}}[00:04:06.970] Dan Beecher: Yeah, we might do that next—next week. We'll see. We'll see when we do that. But—but yeah, that is—that is a whole bunch of stuff. And I'm actually excited to talk to you about it because, you know, this rebellion, as you say, all through the Exodus, there were all of these little, like, what gives you the right. Who are you? And then, like, you know, everybody starts starving for a while and then God—{{< /line >}}
+{{< line >}}[00:04:33.820] Dan McClellan: Yeah. And the earth opens up and swallows a bunch of people. Or there's a plague that suddenly—{{< /line >}}
+{{< line >}}[00:04:39.740] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:04:41.160] Dan McClellan: 14,700 people. And then, you know, it's kind of like a sitcom where you roll credits and then you get the title sequence. And now we're back to... So anyway, so everybody was mumbling. And so in... in your English translation, this starts in {{< scripture ref="Numbers 17:1" >}}. And oddly enough, though, if you are in your Hebrew Bible, then it's not 17:1. It's actually 17:16, because... oh, yes, in the Hebrew, chapter 17 of {{< scripture ref="Numbers" display="the Book of Numbers" >}} begins at {{< scripture ref="Numbers 16:36" >}} in the English. Okay, so we have these... the whole plague story...{{< /line >}}
+{{< line >}}[00:05:23.760] Dan Beecher: Which... which we're not going to do any more spoiling of.{{< /line >}}
+{{< line >}}[00:05:27.360] Dan McClellan: No, no more spoilage. Yes. So we get into chapter 17 in the English, the... the... the latter part of chapter 17 in the Hebrew. And the Lord is basically like, look, we've had enough of this. They're challenging your authority. So we're going to make it clear who has the authority and we're going to... it's kind of like a reality show challenge.{{< /line >}}
+{{< line >}}[00:05:50.350] Dan Beecher: It is, it's very much who gets the rose at the end of this one.{{< /line >}}
+{{< line >}}[00:05:55.710] Dan McClellan: Or almond bud. Yeah, it is quite literally what it is. But God says, speak to the Israelites and get 12 staffs from them, one for each ancestral house from all the leaders of their ancestral houses. Write each man's name on his staff and write Aaron's name on the staff of Levi. For there shall be one staff for the head of each ancestral house. Place them in the tent of meeting before the covenant where I meet with you. And this reference to the covenant is the... basically the Ark of the Covenant and the tablets of the covenant.{{< /line >}}
+{{< line >}}[00:06:35.920] Dan Beecher: Okay, thank you. Because I read that and I was like, I don't... okay. I don't know what that is. Before the covenant.{{< /line >}}
+{{< line >}}[00:06:41.840] Dan McClellan: Yeah. And... and this is an important phrase. We're going to come back to this phrase.{{< /line >}}
+{{< line >}}[00:06:45.720] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:06:46.240] Dan McClellan: Lifne ha-edut. That is "before," "in front of the presence of" the edut. And not berit. Berit is the normal Hebrew noun for covenant. Edut is more like the testimony.{{< /line >}}
+{{< line >}}[00:07:06.440] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:07:07.400] Dan McClellan: And as I have argued in print, the testimony is a stand-in for God. Like to be before the testimony is kind of like being before God. But when we're thinking about the temple, it means in front of the Ark of the Covenant. So keep that in mind. In front of the Ark of the Covenant. So the rods are all placed in front of the Ark of the Covenant.{{< /line >}}
+{{< line >}}[00:07:33.170] Dan Beecher: Yeah. Everybody brings their stick. All of the... all the 12.{{< /line >}}
+{{< line >}}[00:07:36.890] Dan McClellan: You got to pick out a nice stick.{{< /line >}}
+{{< line >}}[00:07:38.410] Dan Beecher: Gotta get a good stick.{{< /line >}}
+{{< line >}}[00:07:39.850] Dan McClellan: Yeah. We see videos on TikTok of guys who are like, look at the stick I found. And you can just imagine they were like, we gotta get the best stick in our tribe. So they get all the sticks and God says, the staff of the man whom I choose shall sprout. Thus I will put a stop to the complaints of the Israelites that they continually make against you. So Moses, go ahead.{{< /line >}}
+{{< line >}}[00:08:07.470] Dan Beecher: As I was imagining this story, it's Moses who's sort of God's saying this to Moses and then Moses is repeating it to these people.{{< /line >}}
+{{< line >}}[00:08:18.750] Dan McClellan: Right, right.{{< /line >}}
+{{< line >}}[00:08:19.710] Dan Beecher: I think that that is funny to me that these guys are all like, who made you the... the mouthpiece of God, why do we have to listen to you? And then he's like, well here's what God says about how that's going to work.{{< /line >}}
+{{< line >}}[00:08:32.680] Dan McClellan: Yeah. You can, you can imagine a lot of them being like, this kind of feels like a self-fulfilling prophecy.{{< /line >}}
+{{< line >}}[00:08:38.280] Dan Beecher: Right? Like, so this is... so you tell us what the game is and how the rules work and then we just go, we just pick...{{< /line >}}
+{{< line >}}[00:08:45.800] Dan McClellan: A card from you. You're the one holding the deck. And he's like, and I will prove to everybody, right, that God has chosen me when you tell me what card you chose.{{< /line >}}
+{{< line >}}[00:08:59.940] Dan Beecher: Like, what's up your sleeve? The Lord has told me that there is nothing up my sleeve.{{< /line >}}
+{{< line >}}[00:09:05.860] Dan McClellan: So they, they, they bring their sticks, they go out and they find their prettiest sticks. They, they bring it back. Moses places the staffs before the Lord and... what did I just say? Before the testimony or before the covenant, right now they're being placed before the Lord. So this is where we've got this synonymous kind of one is standing in for the other. And as I argue in my book, Adonai's Divine Images, the Ark of the Covenant, the tablets of the law, are divine images which manifest the presence of God. Same, same.{{< /line >}}
+{{< line >}}[00:09:34.720] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:09:35.080] Dan McClellan: It's same difference.{{< /line >}}
+{{< line >}}[00:09:36.400] Dan Beecher: Yeah. They don't make a distinction between the Ark of the Covenant and before the Lord.{{< /line >}}
+{{< line >}}[00:09:41.910] Dan McClellan: ark of the Covenant and before the Lord. Yeah. And so Moses goes into the tent of the covenant on the next day, and the staff of Aaron for the house of Levi had sprouted. It put forth buds, produced blossoms and bore ripe almonds.{{< /line >}}
+{{< line >}}[00:09:56.550] Dan Beecher: That's.{{< /line >}}
+{{< line >}}[00:09:57.070] Dan McClellan: And Moses had something to put in his oatmeal.{{< /line >}}
+{{< line >}}[00:10:00.390] Dan Beecher: That's impressive. That is, that's, that's a lot of, of stuff to happen overnight.{{< /line >}}
+{{< line >}}[00:10:06.470] Dan McClellan: Yeah. And then Moses brought out all the staffs from before the Lord to all the Israelites. And they looked and, and each man took his staff and the Lord said to Moses, put back the staff of Aaron before the covenant to be kept as a warning to rebels so that you may make an end of their complaints against me, or else they will die. Moses did so.{{< /line >}}
+{{< line >}}[00:10:31.230] Dan Beecher: Which, what, which is funny like that. Like to me, seeing a sprouting rod with almonds on it does not immediately make me think, oh, I have to follow this guy or I'll die. Like, it feels like a much nicer image than just a skull and crossbones style message.{{< /line >}}
+{{< line >}}[00:10:52.460] Dan McClellan: Yeah, but, but it's also like, so the place that only you are allowed to go in, right. You went into and you brought out this stick with all these leaves on it. And that's supposed to be the sign to us that you're in charge.{{< /line >}}
+{{< line >}}[00:11:09.650] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:11:10.770] Dan McClellan: He's like, I. Well, I promise, it was all that was in it.{{< /line >}}
+{{< line >}}[00:11:14.770] Dan Beecher: Yeah. Yeah.{{< /line >}}
+{{< line >}}[00:11:15.650] Dan McClellan: And this is you. You'll recall the story of {{< scripture ref="Bel and the Dragon" >}} where they put the. They put the food in the temple for. For the God. And then when they go in to check and see what happened to the. The food, they. They use the sand, right. And they can see the footprints of the priests who have come out from behind and taken and all that kind of stuff. Like, it's. It's suspicious.{{< /line >}}
+{{< line >}}[00:11:38.870] Dan Beecher: It does feel like the rest of the tribes, the leaders of the rest of the tribes could have been a little. If they're like that bent about Moses's leadership, they could be a little less credulous about this whole thing.{{< /line >}}
+{{< line >}}[00:11:54.870] Dan McClellan: Well, they do seem to be a little less credulous. There's less credulity than God seems to think there would have been. Because the very next verse says the Israelites said to Moses, we are perishing. We are lost. All of us are lost. Everyone who approaches the Tabernacle of the Lord will die. Die. Are we all to perish?{{< /line >}}
+{{< line >}}[00:12:11.890] Dan Beecher: Right. Because, like, an overreaction. Yeah.{{< /line >}}
+{{< line >}}[00:12:15.250] Dan McClellan: Moses goes in, puts the sticks down, comes back out, and is like, this is the stick that had the thing on it. And now you can't go in, though, because you'll die if you go in there.{{< /line >}}
+{{< line >}}[00:12:26.530] Dan Beecher: I say it's an overreaction, but I have read the previous chapter, so I guess nothing's an overreaction. We'll get to that next week. But, like, yeah, nothing's an overreaction to Holy cow.{{< /line >}}
+{{< line >}}[00:12:40.040] Dan McClellan: In a world of overreactions, this is the least overreaction. Yeah, but. But here's the cool thing that I love about all of this. We have basically. And. And so the. Aaron's budding rod was put back in the temple. They were like, here, get your stick out of here. But Aaron's, they. They put back before the testimony in front of the Ark of the Covenant. Now, in later traditions, it's in the Ark of the Covenant. Oh, but in this story, it's not. It's before the testimony, which means it's in front of or next to the Ark of the Covenant. Now, I want to talk about. There's a. There's another story in Numbers where we have the bronze or the brazen serpent. You remember the story, the Nehushtan?{{< /line >}}
+{{< line >}}[00:13:31.390] Dan Beecher: No, I don't know this one.{{< /line >}}
+{{< line >}}[00:13:32.870] Dan McClellan: You don't remember this? Okay, so this is where they have the. The serpents the fiery serpents bite the Israelites and they're. They're gonna die. But then God tells Moses to put a bronze serpent on the end of a pole.{{< /line >}}
+{{< line >}}[00:13:45.550] Dan Beecher: Okay. Yeah, yeah.{{< /line >}}
+{{< line >}}[00:13:46.350] Dan McClellan: They look at the serpent and they live.{{< /line >}}
+{{< line >}}[00:13:48.270] Dan Beecher: Yes.{{< /line >}}
+{{< line >}}[00:13:48.790] Dan McClellan: And then that gets put in the temple. And then later on, they have to. Hezekiah has to take it out and smash it to dust because they're worshiping it as an idol, as a divine image.{{< /line >}}
+{{< line >}}[00:14:02.150] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:14:03.670] Dan McClellan: Now in Josiah's day, they bring some things out of the temple and smash them to dust because they were being worshiped. And one of those things was an Asherah pole.{{< /line >}}
+{{< line >}}[00:14:16.150] Dan Beecher: Oh, wait, I think I see where you're going with this.{{< /line >}}
+{{< line >}}[00:14:19.750] Dan McClellan: Yeah. Where some dots are slowly beginning to connect. Yes.{{< /line >}}
+{{< line >}}[00:14:23.510] Dan Beecher: The.{{< /line >}}
+{{< line >}}[00:14:25.140] Dan McClellan: So according to the Deuteronomistic authors who are telling the stories about what was going on with the worship of Adonai, there was an Asherah pole in the temple in the days of Josiah.{{< /line >}}
+{{< line >}}[00:14:36.900] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:14:38.020] Dan McClellan: Now, this is. What we're reading here is not from the Deuteronomistic layer. It's from the priestly layer. And the priestly layer never condemns Asherah or Asherah poles. But an Asherah pole would have been a stick, maybe a stylized tree. And one of the. We've talked about the Kuntillet Ajrud drawings and inscriptions in the past on the show, the big pithos A that has the drawing of Adonai and his Asherah and the inscription. The other side of that pithos has a stylized tree with ibexes feeding on either side of it. And what's interesting is a lot of people have suggested that the particular tree that is being depicted is an almond tree.{{< /line >}}
+{{< line >}}[00:15:25.950] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:15:26.670] Dan McClellan: Because it has some buds, some flowers, and what look like almonds. And so.{{< /line >}}
+{{< line >}}[00:15:34.190] Dan Beecher: Hmm.{{< /line >}}
+{{< line >}}[00:15:35.310] Dan McClellan: Isn't it peculiar that we have a story where we have this narrative that accounts for why there is a stylized tree not in the Ark of the Covenant, but in the temple next to the Ark of the Covenant.{{< /line >}}
+{{< line >}}[00:15:56.990] Dan Beecher: And. Sorry, I just realized that one thing we should probably do is remind people that Asherah was another divine being and potentially the consort of Adonai, the wife of God.{{< /line >}}
+{{< line >}}[00:16:10.910] Dan McClellan: Yes. Asherah, Athirat in the Ugaritic literature was a goddess who was in charge of a variety of different things. Warfare, motherhood, fertility, things like that. And Asherah is demonized within the Deuteronomistic literature and later literature, but pre-Deuteronomistic texts never have anything nasty to say about Asherah. And so there's an argument, and there's been a paper that was published on this in 2019 by Raanan Eichler called the Priestly Asherah, which makes the case that the story is actually an attempt to account for why there was an Asherah pole in the Holy of Holies.{{< /line >}}
+{{< line >}}[00:16:58.770] Dan Beecher: And we have an account so, so like, as opposed to the idea of Asherah worship having been condoned, you're saying that this, the, the theory is that this would have been a retcon of why that pole was in there. That doesn't involve Asherah.{{< /line >}}
+{{< line >}}[00:17:21.010] Dan McClellan: Yeah, yeah. This is a way, this sanitizes the presence of this pole in there. Now it depends on when this was written. It depends on a lot of different things. But this is a fascinating way to account for because later on, again, when they talk about Aaron's budding rod, it's always, always like, oh, they stuck it in the Ark of the Covenant. They were like, put it in the garage in the big box.{{< /line >}}
+{{< line >}}[00:17:50.590] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:17:51.230] Dan McClellan: Remember we have the two tablets of the law. We have the, the manna that we put in there. Throw the rod in there as well. Even though it seems to me I've always been confused by this. I picture the Ark of the Covenant as yay big. A walking staff would not fit inside the way I have always understood the dimensions of the Ark of the Covenant unless it was a very, very small.{{< /line >}}
+{{< line >}}[00:18:16.800] Dan Beecher: The Bible does spell out the dimensions of the Ark.{{< /line >}}
+{{< line >}}[00:18:19.600] Dan McClellan: Yeah. Like, unless it's bottom corner to opposite top corner being wedged in there.{{< /line >}}
+{{< line >}}[00:18:26.239] Dan Beecher: I'm.{{< /line >}}
+{{< line >}}[00:18:26.760] Dan McClellan: It just doesn't seem to me like it would fit. But the story doesn't say it went in the Ark of the Covenant. The story said it went lifnei ha-edut. It went before in front of the. The Covenant or the Testimony, which, and there's. There's a book called Biblical Ambiguities by another scholar named David Aaron that talks a little bit about why things go in front of divine images and rather than inside or whatever. But. And this happens with, with a few different things. The Testimony. There's a. The. The two tablets of the Law. At one point they are to be before the Ark of the Covenant rather than in. It's only later stories where they go in. So like there are a bunch of different ways that the, the story is suggestive of something, something peculiar here. But it also, it also raises an interesting question related to the.{{< /line >}}
+{{< line >}}[00:19:28.900] Dan McClellan: What goes on in {{< scripture ref="Numbers 20" >}}? {{< scripture ref="Numbers 20" >}} is the entire reason that Moses did not get to enter the Promised Land. Do you recall anything about that story.{{< /line >}}
+{{< line >}}[00:19:38.670] Dan Beecher: That he did not get to go into the Promised Land?{{< /line >}}
+{{< line >}}[00:19:41.870] Dan McClellan: That's what you recall?{{< /line >}}
+{{< line >}}[00:19:42.630] Dan Beecher: That is what I recall.{{< /line >}}
+{{< line >}}[00:19:43.790] Dan McClellan: That is accurate. So the purpose was they have no water for the congregation. Everybody gathers together against Moses and Aaron. They're all mad again. Even though God said this would stop them from being mad at you. And they're all whining. And God tells Moses, he tells him something to do. He says, take the staff. Okay, what staff?{{< /line >}}
+{{< line >}}[00:20:09.080] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:20:09.400] Dan McClellan: It just says the staff. I believe it's hamatteh. But he take the staff, assemble the congregation, and then command the rock before their eyes to yield its water. {{< scripture ref="Numbers 20" >}}. So Moses took the staff. Hamate, not matteh. I don't know why I did that. Hamate from before the Lord. No, wait, it doesn't say the Lord. The presence and... oh, okay, yeah. From before the Lord. So this is a staff that's sitting before the Lord. So this is not like, hey, that staff that's in your hand, right? Do it with that. No, God says, take the staff from before the Lord. What staff is before is lifne adonai. It's Aaron's budding rod.{{< /line >}}
+{{< line >}}[00:21:05.400] Dan Beecher: There you go. That's... that's only two chapters earlier. So, yeah, that makes like... yeah, if this were in a different book, then... then there would be much more question. But this is the same book. This is just two chapters separated. So it feels like... yeah, it's very safe to assume that we're talking about that rod.{{< /line >}}
+{{< line >}}[00:21:22.350] Dan McClellan: Yeah. So, yeah, vayikach Moshe et hamate millifne adonai as he commanded him. So we've got what seems to be Aaron's budding rod or an Asherah pole. And God tells Moses, take the Asherah pole and then command the rock and it will bring forth water. And Moses goes and basically just smacks the rock with the budding rod, which may be the Asherah pole. And now God is like, that's it. You lost. That was your last chance. No more going into the promised land for you, buddy. And it's always struck me and most readers of the Bible, most critical readers of the Bible, as another overreaction for God to be like, I told you to just command the rock and you hit it and that... so that's it.{{< /line >}}
+{{< line >}}[00:22:23.020] Dan McClellan: You don't get to go into the promised land. We've been wandering for 40 years.{{< /line >}}
+{{< line >}}[00:22:27.180] Dan Beecher: Yeah, right.{{< /line >}}
+{{< line >}}[00:22:27.740] Dan McClellan: And it was all... and... and you gave it all up just because you wanted to slap that rock with a stick.{{< /line >}}
+{{< line >}}[00:22:33.340] Dan Beecher: It does... it does seem like an overreaction. It... yeah, it seems like that... that could just be a misunderstanding.{{< /line >}}
+{{< line >}}[00:22:40.790] Dan McClellan: Yeah. But if there is more significance to the rod, particularly as an Asherah pole. It's not Moses's own staff. It's the flowering rod of Aaron, which is supposed to represent the authority that Moses and Aaron have. This is God's sign to the people that this is... this is the person in whom I am placing this authority. It takes on new significance. And there... there are different ways that one could understand this. It's like, hey, that's my wife.{{< /line >}}
+{{< line >}}[00:23:17.200] Dan Beecher: You're.{{< /line >}}
+{{< line >}}[00:23:17.680] Dan McClellan: You're doing that too.{{< /line >}}
+{{< line >}}[00:23:19.040] Dan Beecher: Right, Right.{{< /line >}}
+{{< line >}}[00:23:19.760] Dan McClellan: If we understand this as you could have broken that.{{< /line >}}
+{{< line >}}[00:23:22.640] Dan Beecher: She was. She worked very hard on that.{{< /line >}}
+{{< line >}}[00:23:26.080] Dan McClellan: Yeah. Then, yeah, it's... it kind of changes the story a little bit. Yeah, it is. And, you know, it's a... it's a source of blessing. The one who is God's authorized spokesperson is the source of blessing. And what is the Asherah if not a source of blessing? Now, blessing related to things like conception and childbirth and breastfeeding and fertility and things like that in ancient Israelite worship practices, but it's still a source of blessing. And it is associated with water as well as, you know, it's a staff that's budding. It represents a tree. It can represent the tree of life.{{< /line >}}
+{{< line >}}[00:24:09.230] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:24:09.790] Dan McClellan: And so here. Yeah, it is the means of bringing water so that everybody can survive. So there's.{{< /line >}}
+{{< line >}}[00:24:19.950] Dan Beecher: Nice. You like to survive. Surviving is good.{{< /line >}}
+{{< line >}}[00:24:25.150] Dan McClellan: Yeah. So there's... yeah, there's... there's a lot of interesting stuff in understanding Aaron's budding rod as... as an Asherah pole. And, you know, if we're understanding the... the Nehushtan, which is the bronze serpent that Moses put on the end of a pole, as another divine image that was in the temple. And I... I have argued that the tablets of the law were a divine image that were put into the temple. Like they... they were just collecting all kinds of divine images there in that temple. And that's why Hezekiah and later Josiah, at least from the perspective of the southern Judahite authors who are telling these stories, that was all big time no-no. And they... those things had to be brought out. They had to be crushed to dust. And the people who were responsible for facilitating that worship were... were killed and their bones were ground to dust, and all kinds of... of bizarre stuff happen. But there's... and the connection with the tree of life is interesting.{{< /line >}}
+{{< line >}}[00:25:26.700] Dan McClellan: We've talked about the Menorah on the show in the past, haven't we? Maybe.{{< /line >}}
+{{< line >}}[00:25:31.940] Dan Beecher: I don't know. How do I know what we've talked about?{{< /line >}}
+{{< line >}}[00:25:34.820] Dan McClellan: Because the Menorah is another connection here. Because even if we, you know, Aaron's budding rod is not always in the picture.{{< /line >}}
+{{< line >}}[00:25:44.100] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:25:44.580] Dan McClellan: We have a story about it here later on. It's in the Ark of the Covenant. But there is something else that is always in front of, or lifne ha-edut, the... the Ark of the Covenant. And that is the menorah, the lampstand.{{< /line >}}
+{{< line >}}[00:25:58.830] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:25:59.430] Dan McClellan: Which is, early drawings of it, kind of crude drawings, represent a central branch and then three half circles pointed up crossing that central branch.{{< /line >}}
+{{< line >}}[00:26:14.110] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:26:14.770] Dan McClellan: And that's a menorah. But there's an interesting artifact known as the Lachish ewer from a place that is called Lachish. That it has a painting. Well, it has a few drawings and an inscription. And one of the drawings is a tree with ibexes feeding on either side of it. But the tree is a central branch and then three upturned half circles representing the other branches.{{< /line >}}
+{{< line >}}[00:26:42.610] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:26:43.730] Dan McClellan: And so there are a number of scholars who have argued that the menorah, in its own way, represents Asherah or Asherat.{{< /line >}}
+{{< line >}}[00:26:53.250] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:26:53.890] Dan McClellan: And that... that Lachish ewer has an inscription that says "for the goddess" on it.{{< /line >}}
+{{< line >}}[00:26:59.210] Dan Beecher: All right, so.{{< /line >}}
+{{< line >}}[00:27:00.210] Dan McClellan: So we've got... we've got a number of connections between things that are in the temple and Asherah. And Aaron's budding rod is just another connection that I... I think is fascinating. It's... it's an interesting story in its own right, in the kind of cycle of murmuring. God publicly kills thousands of people. Murmuring. God publicly kills thousands of people. Murmuring. And they... then God says, "Well, this will stop the murmuring."{{< /line >}}
+{{< line >}}[00:27:27.970] Dan Beecher: This will do it for sure.{{< /line >}}
+{{< line >}}[00:27:29.570] Dan McClellan: Yeah. And then it doesn't. And then God kills a bunch of people. So we've got... and then Moses, you know that everybody's done terrible stuff, but Moses, like, even Aaron created a divine image and told all of Israel to worship it while Moses was above getting the tablets of the law that say, "Don't worship divine images." Aaron's fine. Like, Aaron's never threatened with death. But Moses slaps a rock with a stick, and suddenly he's not allowed to enter the promised land.{{< /line >}}
+{{< line >}}[00:27:58.350] Dan Beecher: So, you know, mysterious ways.{{< /line >}}
+{{< line >}}[00:28:02.510] Dan McClellan: I think {{< scripture ref="Numbers" display="the Book of Numbers" >}} is bonkers. It's wild is what we're trying to say.{{< /line >}}
+{{< line >}}[00:28:07.270] Dan Beecher: It's wild. Absolutely. All right. Well, I think that's fascinating, fun stuff. And I'd love... I love the connection to Asherah. I think that that is... that's always exciting stuff. I love... I'm a big Asherah fan. I'm a... I'm a huge... a huge stan for Asherah. All right, well, let's move on then to our... to this week's chapter and verse. So {{< scripture ref="2 Maccabees 6" >}}. Yeah, it's... it's a good time. We... I...{{< /line >}}
+{{< line >}}[00:28:53.130] Dan McClellan: It's not a good time for the Jews.{{< /line >}}
+{{< line >}}[00:28:54.690] Dan Beecher: It's not a good time for the... dude, here's what... here's what I was sort of... my brain got a little wacky with, was that when I first started to read this, I was like, "Oh, crap, I think we've done this one." And then I realized that as I read on, and then as I went on to the next chapter, I was like, "Oh, we haven't done this one. We did the next one." So we... so, yeah, remind us where we are, what's happening, what's going on in Maccabees, and... and just sort of set the stage for this.{{< /line >}}
+{{< line >}}[00:29:29.030] Dan McClellan: Yeah. Let us lay our scene in the not-so-fair period of the reign of Antiochus IV Epiphanes, who was put in charge of Judea and the surrounding area and decides to... for... to try to achieve some unity is basically going to impose just Hellenistic cultural mores and norms and conventions. Everybody's Hellenized now.{{< /line >}}
+{{< line >}}[00:29:54.580] Dan Beecher: You're all Greeks.{{< /line >}}
+{{< line >}}[00:29:55.940] Dan McClellan: Yes. And... and so Antiochus goes into the temple, profanes the temple, does some bad stuff, is suppressing the practice of Judaism. And the main things are like, circumcision is a no-no. But the main tool, the main way to get people to demonstrate their abandonment basically of Jewish ideals is to get them to eat pork.{{< /line >}}
+{{< line >}}[00:30:24.800] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:30:25.280] Dan McClellan: So they're just given... just handing out free ham left and right.{{< /line >}}
+{{< line >}}[00:30:28.800] Dan Beecher: And I don't feel like "handing out" is... is the characterization that I would go with.{{< /line >}}
+{{< line >}}[00:30:36.160] Dan McClellan: No, it's... it's being forced. Shoved down people's throats, basically.{{< /line >}}
+{{< line >}}[00:30:39.880] Dan Beecher: Yeah, yeah.{{< /line >}}
+{{< line >}}[00:30:41.400] Dan McClellan: As a way to... to try to basically just defile their laws.{{< /line >}}
+{{< line >}}[00:30:48.080] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:30:48.600] Dan McClellan: And we've already talked about {{< scripture ref="2 Maccabees 7" >}}, the famous story of the mother and the seven sons. And I'm sure we talked about how there are, like, multiple different iterations of that story.{{< /line >}}
+{{< line >}}[00:31:02.220] Dan Beecher: We probably did. You guys can go and verify that with, like, find... find the episode where we talk about that.{{< /line >}}
+{{< line >}}[00:31:07.540] Dan McClellan: Yeah. There's another version where it's a father named Taxo and he's... and he, like, kills his seven sons one by one rather than give them up to the... to the Romans. Like, it's a... it's a bizarre story, but there's... there's actually a martyrdom that precedes that. And... and this is the end of chapter 6, says, "Let this be enough then, about the eating of sacrifices and the extreme tortures." Like, we shared two main stories. And then the author's like, we've had enough of hearing about this.{{< /line >}}
+{{< line >}}[00:31:38.080] Dan Beecher: You get it? You get it?{{< /line >}}
+{{< line >}}[00:31:39.600] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:31:40.040] Dan Beecher: The whole sacrifice thing.{{< /line >}}
+{{< line >}}[00:31:41.680] Dan McClellan: So, so what's the opposite of women and children? Well, it would be an old man.{{< /line >}}
+{{< line >}}[00:31:47.440] Dan Beecher: An old man.{{< /line >}}
+{{< line >}}[00:31:48.200] Dan McClellan: And... and that's what we get in the story of the martyrdom of Eleazar, which runs from chapter 6, verse 18, through to the end, verse 31. And I thought we could just read through it and pause and talk every now and then about what's going on here. And so Eleazar, one of the scribes in high position, a man now advanced in age and of noble presence, was being forced to open his mouth to eat pig's flesh. So, old guy. And, and in... in this time period, age, seniority, had a lot of honor that was associated with it.{{< /line >}}
+{{< line >}}[00:32:25.300] Dan Beecher: Yeah. And that's made clear, like, throughout this whole thing. It's... it's, it... it's like this guy was amazing. From his whole birth, his whole life, he's been amazing. But now he's like the most honorable man. Yeah.{{< /line >}}
+{{< line >}}[00:32:38.060] Dan McClellan: And it says, "But he, welcoming death with honor rather than life with pollution, went up to the rack of his own accord, spitting it out as all ought to go who have the courage to refuse things that it is not right to taste, even for the natural love of life." And so the idea is, you know, honor and purity, you should love more than you should love your own life.{{< /line >}}
+{{< line >}}[00:33:02.610] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:33:03.490] Dan McClellan: So we're getting a story of basically the ultimate costly signal, because that's the... that's kind of the ideal that is... that is being explicitly repeated here.{{< /line >}}
+{{< line >}}[00:33:15.580] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:33:16.020] Dan McClellan: Love the law, love purity, love honor, more than even your own life. And as... as I'm reading this, I'm reminded of stories that... that we've lamented within my own tradition. But... but this is something we find in a lot of different traditions where people will talk about chastity being more important than your own life. You ought to fight to the death rather than be forced to lose your virginity, your chastity or something like that, which is obviously biologically meaningless. That is just...{{< /line >}}
+{{< line >}}[00:33:53.190] Dan Beecher: It's... it's a... it's a weird thing just to tell a young... I mean, and there's always young women that are getting that messaging.{{< /line >}}
+{{< line >}}[00:34:01.030] Dan McClellan: Well, and there's a reason for that. It's really just a vestige of the treatment of a woman's body as a commodity to be bought and sold.{{< /line >}}
+{{< line >}}[00:34:09.660] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:34:10.940] Dan McClellan: That's what's going on with marriage in the Bible. And we're still kind of building on that foundation of "Oh, that's for her husband to utilize and make use of." So it's got to be shiny and new and have that new car smell right when he purchases it because that's his property now. So, so that's... that's really the origin of the perception that there's anything special about this thing known as virginity that we made up. Anyway, that's... that's neither here nor there. But what we've got is... is this costly signal. And being very explicit about it.{{< /line >}}
+{{< line >}}[00:34:45.610] Dan Beecher: Well, and being very explicit about I, you know what... what it reminded me of and the thing that I thought you were about to bring up is stories that we were told by April Ajoy and... and by Mandi Matney of being told their whole lives that they were going to be... they were likely going to encounter a moment where they were... their faith was challenged in the way that this... that Eleazar's faith is challenged and that they were going to have to make a decision and that they would... they should lay down their lives rather than ever deny Christ or whatever. And, and you know, that doesn't ever happen. But the, but that story is prominent in a lot of like evangelical or very, very conservative Christian circles here in the US. I don't know how prominent it is in other parts of the world, but.{{< /line >}}
+{{< line >}}[00:35:48.900] Dan Beecher: So how do they even know that stuff? Anyway, let's go on with the story.{{< /line >}}
+{{< line >}}[00:35:52.740] Dan McClellan: But that's. Well to riff off of that, too, I'm reminded of a story that I always thought was fascinating. In Nazi Germany there was a Jewish family that was trying to get out and the father was a photographer and he was surrounded by Christians. And so one advertisement that he put together was a way to promote his business. He had his family pose as if they were celebrating Christmas and he took photos of his family celebrating Christmas. They were Jewish, they were not Christians. He used that as evidence at the border.{{< /line >}}
+{{< line >}}[00:36:32.620] Dan Beecher: Oh wow.{{< /line >}}
+{{< line >}}[00:36:33.300] Dan McClellan: That they were not Jewish and got out, escaped Nazi Germany. And I've always thought wow, what a. Well one just awful, awful circumstances. How fortunate for this man and his family that he had that promotional work available to use in that way. But also. And then I thought if I were one of these Christians who was like you will die before you will, you know, abandon the faith or something like that. I would have. That would be represented as a violation of, of your, your expectations, your duties as a Christian. You're, you're quite explicitly saying, nope, I want to live. And, and I. So the, the value there. I just find that fascinating to think about how certain people will hold up certain things as, as identity markers that you need to place before your own life. And I'm of. Of the opinion that, that there's not really a good reason for that kind of thing.{{< /line >}}
+{{< line >}}[00:37:33.890] Dan McClellan: And so anyway, yeah, it, it has.{{< /line >}}
+{{< line >}}[00:37:37.810] Dan Beecher: To be better than. To my mind, there are, there may be very rare circumstances where, you know, you take a principled stand that costs you your life. Yeah, but it's not pork. Can we just, can we just agree that it's not, it's not food?{{< /line >}}
+{{< line >}}[00:37:57.230] Dan McClellan: Yeah, well, and, and, and there are a variety of things that it shouldn't be. I mean, you know, the lives of other people. Yeah, obviously there, there, there are things that I think are, are bigger than us that, that, yeah, are, are, are valid. Right, but usually when people are, are trying to identify, trying to leverage these identity markers, it's not actual important stuff.{{< /line >}}
+{{< line >}}[00:38:20.230] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:38:24.909] Dan McClellan: Anyway, verse 21. Those who were in charge of that unlawful sacrifice took the man aside because of their long acquaintance with him and privately urged him to bring meat of his own, providing proper for him to use and to pretend that he was eating the flesh of the sacrifice, official meal that had been commanded by the king. So basically they were like, Eleazar, dude, we know you. Yeah, just go home and, and get some.{{< /line >}}
+{{< line >}}[00:38:47.820] Dan Beecher: Listen, sneak in some, some chicken and we'll all just say it's pork and it'll be cool.{{< /line >}}
+{{< line >}}[00:38:54.500] Dan McClellan: Yeah. So that by doing this he might be saved from death and be treated kindly on account of his old friendship with them, but making a high resolve worthy of his years and the dignity of his old age. And the gray hairs that he had reached with distinction and his excellent life, even from childhood. And moreover, according to the holy, God-given law, he declared himself quickly telling them to send him to Hades. So, yeah, he, he's not having it. And I love that the. He's earned these gray hairs. I think it's an interesting ideal that people with gray hair ought to be honored like you. I see that in texts and I hear that a lot. I don't know anybody who's actually feels like, like gray hair is, is something that, that merits praise as an, as.{{< /line >}}
+{{< line >}}[00:39:47.580] Dan Beecher: An increasingly gray person. I would like us to bring that back. I would like us to revive the revering of older folks.{{< /line >}}
+{{< line >}}[00:39:56.660] Dan McClellan: So I, I, as. As you know, I have had to shave for the better part of my adult life.{{< /line >}}
+{{< line >}}[00:40:02.580] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:40:02.940] Dan McClellan: As a Latter-day Saint, whether I was a missionary or working for the LDS Church or whatever. When I was able to let my beard grow back in. And this actually wasn't when I left my old job. It was during COVID because they sent us to work from home and the no beard policy was kind of the status of that was up in the air and I let my beard grow out and I was like, it's gray. I was like, this is awesome because it's gray in the corners. It's like I look like, like freaking Doctor Strange. This is awesome. So I was, I was excited to have to have gray hair. But.{{< /line >}}
+{{< line >}}[00:40:43.080] Dan Beecher: Yeah, but.{{< /line >}}
+{{< line >}}[00:40:44.040] Dan McClellan: Yeah, but anyway, so such. And. And then Eleazar makes his own little speech. And this is funny, at the end, it's going to be like with his dying breath he made this long speech. And it's like, people don't make long speeches punctuated by a bunch of grammatical flourishes.{{< /line >}}
+{{< line >}}[00:41:01.320] Dan Beecher: No.{{< /line >}}
+{{< line >}}[00:41:01.640] Dan McClellan: And with their dying breath.{{< /line >}}
+{{< line >}}[00:41:03.460] Dan Beecher: Yeah. This isn't the dying breath speech. Right? You're on. You're on. Verse 24. When we get to the dying breath speech, I will make my complaint about the dying breath speech.{{< /line >}}
+{{< line >}}[00:41:11.540] Dan McClellan: Yeah. Such pretense is not worthy of our time of life, he said, for many of the young might suppose that Eleazar—now he's speaking in the third person, right?—in his 90th year, had gone over to a foreign way of life. And through my pretense for the sake of living a brief moment longer, they would be led astray because of me while I defile and disgrace my old age. Even if for the present I would avoid the punishment of mortals. Yet whether I live or die, I will not escape the hands of the Almighty. Therefore. Therefore, by bravely giving up my life now, I will show myself worthy of my old age and leave to the young a noble example of how to die a good death willingly and nobly for the revered and holy laws. Like you couldn't get a more like, perfect message for the youth. He's even talking to you.{{< /line >}}
+{{< line >}}[00:42:03.300] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:42:04.100] Dan McClellan: And for the sake of any youth who might hear this story in the coming months and years.{{< /line >}}
+{{< line >}}[00:42:11.220] Dan Beecher: It is. It is a bit much. And calling yourself brave, this stance of mine. Yes, it does seem. It does seem a little less brave to be 90 and doing like, you're on your way out. You're already there. You're like, if you, you know, if this.{{< /line >}}
+{{< line >}}[00:42:29.180] Dan McClellan: You're walking off the green. You need to.{{< /line >}}
+{{< line >}}[00:42:31.220] Dan Beecher: Yeah, yeah. In the next chapter, when. When the kids do it, when the, when the young people do it, that's. That's a different story. But yeah, 90 year old was like, you may take my life. It's like, okay, you didn't have much going.{{< /line >}}
+{{< line >}}[00:42:44.940] Dan McClellan: Like, which is. Which is already. I haven't had my pills, so, you.{{< /line >}}
+{{< line >}}[00:42:48.300] Dan Beecher: know, I'm one step out the door anyway.{{< /line >}}
+{{< line >}}[00:42:51.660] Dan McClellan: But I think this, this is interesting because the two stories are so different in that way and in other ways.{{< /line >}}
+{{< line >}}[00:42:59.500] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:42:59.940] Dan McClellan: That it strikes me, I have argued in a paper from a long time ago, I don't really fully stand by anymore because I was in undergrad, but I argued that these are actually redactions that somebody has put these stories in here in the process of putting together the version of {{< scripture ref="2 Maccabees" >}} that we have, and that these stories are from different authors. Because this story quite explicitly is like, this is to be a lesson to all the youth out there. But in the next story, it's explicitly framed as a proxy sacrifice, as expiatory, where he says, through me and my brothers, to bring to an end the wrath of the Almighty that has justly fallen on our whole nation. So the message is entirely different for the two as well, because Eleazar is not like, our nation has sinned, and I'm doing this so that my death will expiate the sins of.{{< /line >}}
+{{< line >}}[00:44:02.320] Dan McClellan: Like, it's not that at all. He's just saying, I'm setting an example for others that we must, you know, follow the. The revered and holy laws.{{< /line >}}
+{{< line >}}[00:44:12.400] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:44:13.360] Dan McClellan: So the, The. It's. It's an entirely different conceptualization of the meaning and the significance of the death, as well as being an example of a death. It's like, well, that was coming. That was in the post. You know, that was. Whereas then they're like, fine, we'll do one with young kids.{{< /line >}}
+{{< line >}}[00:44:29.180] Dan Beecher: Right? So the kids that he was talking to have heard him and are. And are now ready to. The youth. The Eleazar's example has been set. And yes. And he.{{< /line >}}
+{{< line >}}[00:44:43.180] Dan McClellan: What is the. What is the Eleazar's Junior. What's Lebowski's Little somethings?{{< /line >}}
+{{< line >}}[00:44:52.220] Dan Beecher: Little Urban Achievers.{{< /line >}}
+{{< line >}}[00:44:54.060] Dan McClellan: Yeah, yeah, we've got Eleazar's little, Little, Little law followers.{{< /line >}}
+{{< line >}}[00:44:58.500] Dan Beecher: Little, Little urban martyrs.{{< /line >}}
+{{< line >}}[00:45:03.300] Dan McClellan: When he said. When he had said this, he was dragged at once to the rack. Those who a little before had acted toward him with goodwill now changed to ill will because the words he had uttered were, in their opinion, sheer madness. When he was about to die under the blows. He groaned aloud and said, it is clear to the Lord in his holy knowledge that though I might have been saved from death, I am enduring terrible sufferings in my body under this beating, but in my soul I am glad to suffer these things because I fear him. We got multiple clauses being strung together here.{{< /line >}}
+{{< line >}}[00:45:48.730] Dan Beecher: It's truly an elegant thing to have proclaimed while you're on the rack.{{< /line >}}
+{{< line >}}[00:45:54.240] Dan McClellan: Yes. Groaning in like your agony, your bones.{{< /line >}}
+{{< line >}}[00:45:58.360] Dan Beecher: Are being broken while you're. And he had. But he had some serious wherewithal to get that one out.{{< /line >}}
+{{< line >}}[00:46:06.960] Dan McClellan: Yeah. And then verse 31, the end of the story. So in this way he died, leaving in his death an example of nobility and a memorial of courage not only to the young, but to the great body of this nation. So like multiple times the author is like, in case you haven't gotten it yet, this is the point of this story. It is quite on the nose.{{< /line >}}
+{{< line >}}[00:46:30.630] Dan Beecher: Yeah. It feels. And it's reiterated multiple times. It does feel like if ever there was a story that was written not, not based on anything true, but like written as a parable, as a, as a. As a specific illustration of a specific concept, this feels like it's this.{{< /line >}}
+{{< line >}}[00:46:51.760] Dan McClellan: What is the. There's a joke about how like TV execs these days are like, because of the attention span of the TikTok generation, you have to like explicitly lay out the plot over and over and over again. Like, I think I heard somebody complain that TV executives are like, there's. You can't be subtle. You have to be explicit about the plot. And then they, they made fun of it by, by like imagine. Here's the plot of some famous story where everybody's like. And just to be sure, this symbol represents this thing over here. And like, I'm sure there are people out there who could rattle off the names of like directors or producers or something who are like that. I, I can't. But so imagine that I'm like, so. So basically this was written by so and so who's famous industry person who always makes sure everything is explicitly clear about all the symbolism and everything. But. Yeah. Not subtle.{{< /line >}}
+{{< line >}}[00:47:48.790] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:47:49.430] Dan McClellan: About what the significance of Eleazar's death was. But in, you know, this was. This is 2000 some odd years ago.{{< /line >}}
+{{< line >}}[00:47:56.310] Dan Beecher: Yeah.{{< /line >}}
+{{< line >}}[00:47:57.190] Dan McClellan: They, they hadn't. They were still a ways off from TikTok. So their attention spans were, were a little different. But that. And then that leads right into the story of the Mother and the seven sons, which is an even more tragic tale where these are not men in their 90th year. These are young boys who have a lot of life ahead of them, but cherish rather the love of God over their. Their life. And they know they're going to get resurrected. That's another thing. These stories kind of have the intersection of a bunch of ideologies that really develop more fully later, like resurrection, like atoning sacrifice, all of this stuff. So it sounds.{{< /line >}}
+{{< line >}}[00:48:46.370] Dan Beecher: Is it resurrection or is it just. Is it just a nice life in the next phase? I guess I don't really appreciate the difference between resurrection as in sort of the reanimation of. Or the reapportionment of one's body.{{< /line >}}
+{{< line >}}[00:49:09.550] Dan McClellan: Yes. The. The reanimation of dead tissue as. As they say in Young Frankenstein. I'm. I'm pretty sure it says that we. We will be raised to life.{{< /line >}}
+{{< line >}}[00:49:21.550] Dan Beecher: Okay, is that. Is that a fairly new concept here? Because. Because Eleazar has it and they have it.{{< /line >}}
+{{< line >}}[00:49:29.950] Dan McClellan: Well, Eleazar doesn't have it.{{< /line >}}
+{{< line >}}[00:49:32.110] Dan Beecher: Well, he says. He said. What does he say? I thought he had something, though. I might be saved from my. From death. Oh, no, I'm. I mean, I was talking about that thing. Okay, so Eleazar doesn't have it.{{< /line >}}
+{{< line >}}[00:49:47.980] Dan McClellan: Yeah. No, Eleazar. And that's.{{< /line >}}
+{{< line >}}[00:49:49.620] Dan Beecher: And.{{< /line >}}
+{{< line >}}[00:49:49.860] Dan McClellan: And that's another way the story is different, right? Is the. And here it is in. In chapter seven, we have verse nine. And when he was at his last breath, again, the final groan soliloquy. You accursed wretch, you dismiss us from this present life, but the king of the universe will raise us up to a renewal of everlasting life because we have died for his laws. Right. And then they say, you, we will be. I thought he said the word resurrected. But let me, let me. Because I thought they said we. We will be resurrected to life, but you will not. Or something like that.{{< /line >}}
+{{< line >}}[00:50:37.340] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:50:38.620] Dan McClellan: I don't remember where it is. And I'm not going to waste.{{< /line >}}
+{{< line >}}[00:50:40.780] Dan Beecher: Well, everyone can go back and. And listen to our episode about the mother and the and the sons if they want to, but. Yeah, that is. That is interesting that that's sort of starting to rattle around here.{{< /line >}}
+{{< line >}}[00:50:56.560] Dan McClellan: Yeah.{{< /line >}}
+{{< line >}}[00:50:57.760] Dan Beecher: But I think. Significant that Eleazar doesn't mention that.{{< /line >}}
+{{< line >}}[00:51:02.000] Dan McClellan: I believe it is significant. Yeah. And another interesting thing is when we. In {{< scripture ref="Daniel" display="the Book of Daniel" >}}, you've got Shadrach, Meshach, and Abednego, who they're told to violate the laws, their ancestral laws, and they said they will trust in God.{{< /line >}}
+{{< line >}}[00:51:32.050] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:51:32.530] Dan McClellan: In {{< scripture ref="2 Maccabees" >}}, we have two examples of people who are willing to die for their faith, but they are not saved. They end up dying.{{< /line >}}
+{{< line >}}[00:51:40.370] Dan Beecher: Right.{{< /line >}}
+{{< line >}}[00:51:40.730] Dan McClellan: For, for their faith. And so it's, it's a development in this ideology where when you look in the earlier stories, in the, particularly in the, in the canonical Hebrew Bible stories, when people are willing to die, God swoops in and saves them. Not so for Eleazar and for the mother and the seven sons, which suggests that there's a pivot towards kind of a more realist perspective.{{< /line >}}
+{{< line >}}[00:52:06.910] Dan Beecher: Daniel, we assume, was written after Maccabees.{{< /line >}}
+{{< line >}}[00:52:09.910] Dan McClellan: It was written probably close to the same time period, but I think probably a...{{< /line >}}
+{{< line >}}[00:52:14.830] Dan Beecher: Just before, you know, you... we have talked a lot about a category of writing that is apocalyptic writing. Is there... do scholars talk about there being a category for martyrdom stories?{{< /line >}}
+{{< line >}}[00:52:33.440] Dan McClellan: Oh, yeah. Martyrdom tales are a part of... they're frequently incorporated into apocalyptic literature. But yeah, these are, these are martyrdom tales and, but they require that the martyrdom actually take place. And I think right around this time period is when you get the pivot from the miraculous salvation of the person who was willing to die to the death of the person who was willing to die. And because when you get into, you know, and, and later in Judaism, you have fewer miraculous savings and, and when we get into Christianity, there are a lot more martyrdom tales where they do die.{{< /line >}}
+{{< line >}}[00:53:12.990] Dan Beecher: Okay.{{< /line >}}
+{{< line >}}[00:53:13.710] Dan McClellan: Until, you know, we, we talked about Thecla and stuff like that, where there are miraculous savings and things like that with Paul and others. But, but yeah, it's, it's certainly martyrdom tales certainly become kind of a genre, particularly within early Judaism and then even more so within early Christianity.{{< /line >}}
+{{< line >}}[00:53:35.310] Dan Beecher: Well, there you have it. I, I find that, yeah, now my mind's thinking about, like, Abraham and Isaac and like that. That's almost a miraculous saving of a martyrdom. Not a martyrdom, though. I don't know, a sacrifice. It gets confusing. It gets confusing how it all works. Anyway, just more fascinating stuff from this wacky book we call the Bible.{{< /line >}}
+{{< line >}}[00:54:03.550] Dan McClellan: Yep.{{< /line >}}
+{{< line >}}[00:54:05.430] Dan Beecher: Or at least it's from some Bibles. This particular thing, it's apocryphal, but yeah, I love it. All right, well, that's it for today. If you would like to become a part of keeping this show going and healthy and happy, you can, you can do it either on YouTube if you're if you're watching this on YouTube, YouTube, there should be a little thing just below the video that's like "join." And then you can join and be one of the members of our channel. And that and that gives you access to an early version of the show, just like our patrons over on Patreon. We'll get to that and you get little icons that, that are exclusive to you that you can use in our comment section. And Dan and I will, will start to do some members-exclusive lives coming up soon. We're not sure exactly when because it's a very busy time for us right now.{{< /line >}}
+{{< line >}}[00:55:07.720] Dan Beecher: But we want to squeeze it in for you guys. So start signing up now if you can. Otherwise go to patreon.com/dataoverdogma where you can get early and ad-free access to every episode as well as access to our patrons-only content that we do every single week. And we're certainly grateful for all of our patrons there, as are we grateful for the editing work of Roger Gowdy and the right-hand-man-ness of Sam Holden. And we thank you all... oh, we're grateful to all of you for joining us and we'll talk to you again next time.{{< /line >}}
+{{< line >}}[00:55:50.400] Dan McClellan: Bye everybody.{{< /line >}}
+{{< line >}}[00:55:56.160] Dan Beecher: Data Over Dogma is a member of the Airwave Media Network. It is a production of Data Over Dogma Media, LLC. Copyright 2024. All rights reserved.{{< /line >}}

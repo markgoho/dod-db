@@ -17,6 +17,8 @@ topics:
   - divine council
   - King James Bible
   - Marriage
+  - Asherah Pole
+  - "Aaron's Rod"
 tags:
   - Hezekiah
   - Jerusalem

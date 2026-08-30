@@ -20,6 +20,7 @@ topics:
   - Flavius Josephus
   - Hell
   - Philo of Alexandria
+  - Asherah Pole
 tags:
   - Jezebel
   - Ahab

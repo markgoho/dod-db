@@ -7,6 +7,7 @@ import {
   formatTagEntry,
   normalizeEpisodes,
 } from "./add-tag-to-vocabulary.js";
+import { escapeForTsString } from "./escape-for-ts-string.js";
 import { findTag } from "./find-tag.js";
 import { tagExists } from "./tag-exists.js";
 import { withTagVocabularyWriteLock } from "./tag-vocabulary-write-lock.js";
@@ -55,8 +56,11 @@ export async function updateTagInVocabulary(
     const file = Bun.file(filePath);
     const content = await file.text();
 
-    // Build regex to find the existing tag entry
-    const escapedCanonical = originalCanonical.replaceAll(
+    // Build regex to find the existing tag entry. The file stores the
+    // canonical name as a TS string literal (escapeForTsString escapes
+    // backslashes and apostrophes), so match against that escaped form
+    // rather than the raw canonical name.
+    const escapedCanonical = escapeForTsString(originalCanonical).replaceAll(
       /[.*+?^${}()|[\]\\]/g,
       String.raw`\$&`,
     );

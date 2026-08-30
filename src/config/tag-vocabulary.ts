@@ -9941,6 +9941,71 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
     addedInEpisode: 176,
   },
+  {
+    canonical: "Eleazar",
+    variations: [],
+    category: "character",
+    description:
+      "An elderly Jewish scribe martyred for refusing to eat pork under the persecution of Antiochus IV Epiphanes, as recounted in Second Maccabees 6.",
+    status: "proposed",
+    addedInEpisode: 177,
+  },
+  {
+    canonical: "Divine Images",
+    variations: [],
+    category: "theology",
+    description:
+      "Representations or manifestations of a deity, which in ancient Israelite religion could include cultic objects, statues, or sacred texts.",
+    status: "proposed",
+    addedInEpisode: 177,
+  },
+  {
+    canonical: "Asherah Pole",
+    variations: ["Asherah poles"],
+    category: "religion",
+    description:
+      "A sacred pole or stylized tree representing the Canaanite goddess Asherah, often associated with fertility and worshiped by some ancient Israelites alongside Yahweh.",
+    status: "accepted",
+    addedInEpisode: 177,
+    episodes: [14, 31, 88, 123, 127, 163, 177],
+  },
+  {
+    canonical: "Promised Land",
+    variations: [],
+    category: "place",
+    description:
+      "The land of Canaan that God promised to Abraham and his descendants, which the Israelites sought to enter after their exodus from Egypt.",
+    status: "proposed",
+    addedInEpisode: 177,
+  },
+  {
+    canonical: "Menorah",
+    variations: [],
+    category: "religion",
+    description:
+      "A seven-branched candelabrum, an ancient symbol of Judaism and an emblem of the Jewish Temple, often associated with the Tree of Life.",
+    status: "proposed",
+    addedInEpisode: 177,
+  },
+  {
+    canonical: "Shadrach, Meshach, and Abednego",
+    variations: [],
+    category: "character",
+    description:
+      "Three young Jewish men from the Book of Daniel who refused to worship King Nebuchadnezzar's idol and were miraculously saved from a fiery furnace.",
+    status: "proposed",
+    addedInEpisode: 177,
+  },
+  {
+    canonical: "Aaron's Rod",
+    variations: ["Aaron's budding rod", "Aaron's budding staff", "budding rod"],
+    category: "miscellaneous",
+    description:
+      "Aaron's budding almond staff, placed before the Ark in Numbers 17 to settle a priestly authority dispute.",
+    status: "accepted",
+    addedInEpisode: 177,
+    episodes: [14, 88, 105, 177],
+  },
 ];
 
 export function getAllSearchableTerms(

@@ -18,6 +18,8 @@ topics:
   - Arad
   - Dead Sea Scrolls
   - Mary Magdalene
+  - Asherah Pole
+  - "Aaron's Rod"
 tags:
   - Adam
   - Moses

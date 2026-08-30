@@ -2536,6 +2536,14 @@
       {
         "tag": "Mary Magdalene",
         "mentions": 1
+      },
+      {
+        "tag": "Asherah Pole",
+        "mentions": 5
+      },
+      {
+        "tag": "Aaron's Rod",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -5748,6 +5756,10 @@
       {
         "tag": "Philo of Alexandria",
         "mentions": 6
+      },
+      {
+        "tag": "Asherah Pole",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -15620,6 +15632,14 @@
       {
         "tag": "Nineveh",
         "mentions": 1
+      },
+      {
+        "tag": "Asherah Pole",
+        "mentions": 1
+      },
+      {
+        "tag": "Aaron's Rod",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -18616,6 +18636,10 @@
       },
       {
         "tag": "Philo of Alexandria",
+        "mentions": 2
+      },
+      {
+        "tag": "Aaron's Rod",
         "mentions": 2
       }
     ],
@@ -21798,6 +21822,10 @@
       {
         "tag": "Naboth",
         "mentions": 3
+      },
+      {
+        "tag": "Asherah Pole",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -22607,6 +22635,10 @@
       },
       {
         "tag": "Ritual Purity",
+        "mentions": 1
+      },
+      {
+        "tag": "Asherah Pole",
         "mentions": 1
       }
     ],
@@ -29462,6 +29494,10 @@
       {
         "tag": "Deism",
         "mentions": 3
+      },
+      {
+        "tag": "Asherah Pole",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -31852,6 +31888,181 @@
       {
         "book": "Revelation",
         "references": ["Revelation 14:1"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "167406950",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/167406950.mp3?sig=YLglRcXzz04D-EKk6aIGq39ipwVnO-NABEf16cnUV6U%3D",
+    "title": "Rod Almighty!",
+    "publishedAt": "2026-08-23T06:00:08.000Z",
+    "processedAt": "2026-08-30T15:13:52.656Z",
+    "transcriptPath": "data/transcripts/2026-08-23-rod-almighty.txt",
+    "tags": [
+      {
+        "tag": "Ark of the Covenant",
+        "mentions": 19
+      },
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 1
+      },
+      {
+        "tag": "Circumcision",
+        "mentions": 1
+      },
+      {
+        "tag": "Christmas",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 1
+      },
+      {
+        "tag": "Hezekiah",
+        "mentions": 2
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 36
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 26
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 3
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 6
+      },
+      {
+        "tag": "Romans",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 1
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 1
+      },
+      {
+        "tag": "Bel and the Dragon",
+        "mentions": 1
+      },
+      {
+        "tag": "Second Maccabees",
+        "mentions": 6
+      },
+      {
+        "tag": "Apocrypha",
+        "mentions": 1
+      },
+      {
+        "tag": "Maccabees",
+        "mentions": 2
+      },
+      {
+        "tag": "Salvation",
+        "mentions": 1
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 2
+      },
+      {
+        "tag": "Josiah",
+        "mentions": 3
+      },
+      {
+        "tag": "Aaron",
+        "mentions": 27
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      },
+      {
+        "tag": "Asherah Pole",
+        "mentions": 10
+      },
+      {
+        "tag": "Aaron's Rod",
+        "mentions": 2
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:19.163]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:02:19.163]",
+        "endTimestamp": "[00:28:39.117]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Aaron's Rod",
+        "summary": "Budding staff proves Aaron's priestly authority"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:28:39.117]",
+        "endTimestamp": "[00:56:05.239]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "2 Macc 6",
+        "summary": "Eleazar dies rather than eat pig meat"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 177,
+    "scriptures": [
+      {
+        "book": "Numbers",
+        "references": [
+          "Numbers",
+          "Numbers 16:36",
+          "Numbers 17:1",
+          "Numbers 20"
+        ],
+        "mentions": 9
+      },
+      {
+        "book": "2 Maccabees",
+        "references": ["2 Maccabees", "2 Maccabees 7"],
+        "mentions": 6
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 7"],
+        "mentions": 1
+      },
+      {
+        "book": "Bel and the Dragon",
+        "references": ["Bel and the Dragon"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
         "mentions": 1
       }
     ]

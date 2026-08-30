@@ -13,6 +13,7 @@ topics:
   - Hell
   - Salvation
   - Josiah
+  - Asherah Pole
 tags:
   - Deuteronomy
   - Babylon

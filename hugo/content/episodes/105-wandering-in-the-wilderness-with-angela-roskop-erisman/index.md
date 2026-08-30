@@ -13,6 +13,7 @@ topics:
   - David
   - YHWH
   - Philo of Alexandria
+  - "Aaron's Rod"
 tags:
   - Moses
   - Aaron

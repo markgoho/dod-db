@@ -4815,22 +4815,24 @@
       "original": "like oh",
       "corrected": "like Oh",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["yXeCVNSmhYQ"],
+      "totalOccurrences": 4,
+      "episodeCount": 2,
+      "episodes": ["yXeCVNSmhYQ", "167406950"],
       "examples": [
         "\"And they're like, oh, well, there's\"",
-        "\"And she's like, oh, I'm going\""
+        "\"And she's like, oh, I'm going\"",
+        "\"I was like, oh, crap, I\""
       ],
       "correctedExamples": [
         "\"And they're like, \"Oh, well, there's\"",
-        "\"And she's like, \"Oh, I'm going\""
+        "\"And she's like, \"Oh, I'm going\"",
+        "\"I was like, \"Oh, crap, I\""
       ],
-      "timestamps": ["00:07:34.590", "00:15:16.910"],
-      "episodeIds": ["yXeCVNSmhYQ", "yXeCVNSmhYQ"],
-      "confidence": 5,
+      "timestamps": ["00:07:34.590", "00:15:16.910", "00:28:54.690"],
+      "episodeIds": ["yXeCVNSmhYQ", "yXeCVNSmhYQ", "167406950"],
+      "confidence": 35,
       "firstSeen": "2026-01-16T19:41:09.560Z",
-      "lastSeen": "2026-01-16T19:41:09.560Z",
+      "lastSeen": "2026-08-30T15:15:11.839Z",
       "status": "pending"
     },
     "Cicera's→Sisera's": {
@@ -5043,9 +5045,9 @@
       "original": "It's It's",
       "corrected": "It's it's",
       "category": "capitalization",
-      "totalOccurrences": 4,
-      "episodeCount": 1,
-      "episodes": ["ZwJai1EPbw4"],
+      "totalOccurrences": 6,
+      "episodeCount": 2,
+      "episodes": ["ZwJai1EPbw4", "167406950"],
       "examples": [
         "\"It's. It's not easy\"",
         "\"weird today. It's. It's. It's a\"",
@@ -5058,9 +5060,9 @@
       ],
       "timestamps": ["00:00:49.820", "00:01:06.470", "00:01:06.470"],
       "episodeIds": ["ZwJai1EPbw4", "ZwJai1EPbw4", "ZwJai1EPbw4"],
-      "confidence": 20,
+      "confidence": 45,
       "firstSeen": "2026-01-16T19:57:20.100Z",
-      "lastSeen": "2026-01-16T19:57:20.100Z",
+      "lastSeen": "2026-08-30T15:15:11.839Z",
       "status": "pending"
     },
     "Shalah→Shelah": {
@@ -9105,7 +9107,53 @@
       "firstSeen": "2026-08-21T18:22:31.992Z",
       "lastSeen": "2026-08-21T18:22:31.992Z",
       "status": "pending"
+    },
+    "like Yeah→like yeah": {
+      "original": "like Yeah",
+      "corrected": "like yeah",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["167406950"],
+      "examples": [
+        "\"that makes like. Yeah, if this\"",
+        "\"it feels like. Yeah, it's very\""
+      ],
+      "correctedExamples": [
+        "\"that makes like... yeah, if this\"",
+        "\"it feels like... yeah, it's very\""
+      ],
+      "timestamps": ["00:21:05.400", "00:21:05.400"],
+      "episodeIds": ["167406950", "167406950"],
+      "confidence": 10,
+      "firstSeen": "2026-08-30T15:15:11.839Z",
+      "lastSeen": "2026-08-30T15:15:11.839Z",
+      "status": "pending"
+    },
+    "mumbling→murmuring": {
+      "original": "mumbling",
+      "corrected": "murmuring",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": ["167406950"],
+      "examples": [
+        "\"cycle of mumbling. God publicly\"",
+        "\"of people. Mumbling. God publicly\"",
+        "\"of people mumbling. And they.\""
+      ],
+      "correctedExamples": [
+        "\"cycle of murmuring. God publicly\"",
+        "\"of people. Murmuring. God publicly\"",
+        "\"of people. Murmuring. And they...\""
+      ],
+      "timestamps": ["00:27:00.210", "00:27:00.210", "00:27:00.210"],
+      "episodeIds": ["167406950", "167406950", "167406950"],
+      "confidence": 25,
+      "firstSeen": "2026-08-30T15:15:11.839Z",
+      "lastSeen": "2026-08-30T15:15:11.839Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-08-21T18:22:31.992Z"
+  "lastUpdated": "2026-08-30T15:15:11.839Z"
 }
