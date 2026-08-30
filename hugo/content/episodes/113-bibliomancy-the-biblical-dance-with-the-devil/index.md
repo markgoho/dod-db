@@ -203,7 +203,7 @@ draft: false
 {{< line >}}[00:36:29.670] Dan McClellan: Nothing helpful anyway.{{< /line >}}
 {{< line >}}[00:36:30.870] Dan Beecher: Nothing helpful anyway. Yeah. And—and what's funny is that I, you know, I—like in high school, me and all my Mormon friends, we would gather around and do it, and then it was always disappointing.{{< /line >}}
 {{< line >}}[00:36:42.810] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:36:43.250] Dan Beecher: Because—because the really—the really meaningful scriptures are kind of few and far between. Yeah. There's a lot of begats in between—all between the good stuff. You know what I mean? I'm gonna do it again. Hang on. Judges, chapter one. Oh, no, wait. What? What? Oh, no, I'm in the end of Joshua. "After these things, Joshua the son of Nun, the servant of the Lord, died, being 110 years old." Okay, this is not good. This is not helpful for me, Bible.{{< /line >}}
+{{< line >}}[00:36:43.250] Dan Beecher: Because—because the really—the really meaningful scriptures are kind of few and far between. Yeah. There's a lot of begats in between—all between the good stuff. You know what I mean? I'm gonna do it again. Hang on. {{< scripture ref="Judges 1" >}}. Oh, no, wait. What? What? Oh, no, I'm in the end of Joshua. "After these things, Joshua the son of Nun, the servant of the Lord, died, being 110 years old." Okay, this is not good. This is not helpful for me, Bible.{{< /line >}}
 {{< line >}}[00:37:13.520] Dan McClellan: Hold on a second.{{< /line >}}
 {{< line >}}[00:37:15.840] Dan Beecher: Oh, are you gonna do one?{{< /line >}}
 {{< line >}}[00:37:17.040] Dan McClellan: I'm gonna do one too. Yeah. And like, I—this would be better with a—something digital where you could just say, "Just give me a random verse." In fact, I'm gonna do that because, like, if I'm flipping through, I know more or less kind of in general where I've stopped. Like, I can stop closer to the end and be like, "I want a New Testament verse this time."{{< /line >}}
@@ -222,7 +222,7 @@ draft: false
 {{< line >}}[00:39:09.330] Dan Beecher: Okay.{{< /line >}}
 {{< line >}}[00:39:11.570] Dan McClellan: Okay. It just fell down and the cover closed.{{< /line >}}
 {{< line >}}[00:39:16.850] Dan Beecher: So your verse is "Holy Bible."{{< /line >}}
-{{< line >}}[00:39:18.850] Dan McClellan: Yeah, the Holy SBL Bible. Okay. Oh, I think I got—I got one. Okay. {{< scripture ref="2 Peter" >}}, chapter three, verse 14. "Therefore, beloved, while you are waiting for these things, strive to be found by him at peace, without spot or blemish."{{< /line >}}
+{{< line >}}[00:39:18.850] Dan McClellan: Yeah, the Holy SBL Bible. Okay. Oh, I think I got—I got one. Okay. {{< scripture ref="2 Peter 3:14" >}}. "Therefore, beloved, while you are waiting for these things, strive to be found by him at peace, without spot or blemish."{{< /line >}}
 {{< line >}}[00:39:34.750] Dan Beecher: Hey, that's a good one. That wasn't even a curated one. You got a—you got a good one. Yeah, I got all crap anyway.{{< /line >}}
 {{< line >}}[00:39:40.990] Dan McClellan: Seven tries.{{< /line >}}
 {{< line >}}[00:39:41.870] Dan Beecher: But, you know, here's the thing. It makes sense because I'm just a dirty, dirty atheist, and you're the Lord's beloved, Dan McClellan.{{< /line >}}

@@ -94,7 +94,7 @@ draft: false
 {{< line >}}[00:03:16.050] Dan Beecher: Which are both sort of the same thing, but in different form.{{< /line >}}
 {{< line >}}[00:03:21.730] Dan McClellan: Yeah. We've got a bit of a historical narrative going on with, with our judge. Well, it's actually about Deborah and Barak.{{< /line >}}
 {{< line >}}[00:03:28.930] Dan Beecher: Yes.{{< /line >}}
-{{< line >}}[00:03:29.570] Dan McClellan: And then. And then we've got the famous Song of Deborah in Judges, chapter five, which is some poetry that some scholars think may be among the oldest poetry in all the Bible. This might be really, really old.{{< /line >}}
+{{< line >}}[00:03:29.570] Dan McClellan: And then. And then we've got the famous Song of Deborah in {{< scripture ref="Judges 5" >}}, which is some poetry that some scholars think may be among the oldest poetry in all the Bible. This might be really, really old.{{< /line >}}
 {{< line >}}[00:03:45.130] Dan Beecher: Wow. Okay.{{< /line >}}
 {{< line >}}[00:03:46.810] Dan McClellan: There is disagreement about that, but isn't there disagreement about.{{< /line >}}
 {{< line >}}[00:03:51.610] Dan Beecher: I think our listeners have gotten to the point where they understand that, like, basically everything that we say, there's disagreement about it.{{< /line >}}

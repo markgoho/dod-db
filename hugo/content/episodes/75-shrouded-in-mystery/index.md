@@ -193,7 +193,7 @@ draft: false
 {{< line >}}[00:25:38.370] Dan McClellan: Because. Oh, I probably can't sing that.{{< /line >}}
 {{< line >}}[00:25:41.890] Dan Beecher: You're not Thundercats. Thunder hail.{{< /line >}}
 {{< line >}}[00:25:44.130] Dan McClellan: Thunder hail.{{< /line >}}
-{{< line >}}[00:25:45.650] Dan Beecher: And it. I'm just gonna quote. This is chapter nine, Exodus, chapter nine. This is verses 15 and 16.{{< /line >}}
+{{< line >}}[00:25:45.650] Dan Beecher: And it. I'm just gonna quote. This is chapter nine, {{< scripture ref="Exodus 9" >}}. This is verses 15 and 16.{{< /line >}}
 {{< line >}}[00:25:51.490] Dan McClellan: Okay.{{< /line >}}
 {{< line >}}[00:25:51.890] Dan Beecher: It says, indeed by now I could have stretched out my hand. I could have stretched out my hand and struck your people or struck you and your people with pestilence. And you would. And you would have been cut off from the earth. But this is why I have let you live. To show you my power and to make my name resound through all the earth. Which again, like, what. When we were talking about.{{< /line >}}
 {{< line >}}[00:26:19.499] Dan McClellan: Even though you're not supposed to say God's name.{{< /line >}}

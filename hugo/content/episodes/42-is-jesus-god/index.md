@@ -80,7 +80,7 @@ draft: false
 {{< line >}}[00:03:24.000] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:03:24.640] Dan Beecher: Telling us how Jesus isn't God in {{< scripture ref="John" display="the Book of John" >}}.{{< /line >}}
 {{< line >}}[00:03:29.920] Dan McClellan: Yeah, it is. It's gonna be. It's gonna be a ride.{{< /line >}}
-{{< line >}}[00:03:34.480] Dan Beecher: It's gonna be a ride. Let's start off with John, Chapter one, verse one. We're starting right at the top of John as.{{< /line >}}
+{{< line >}}[00:03:34.480] Dan Beecher: It's gonna be a ride. Let's start off with {{< scripture ref="John 1" >}}, verse one. We're starting right at the top of John as.{{< /line >}}
 {{< line >}}[00:03:43.280] Dan McClellan: As the great poet once said, en arche, or in the beginning. Let's start with the beginning, {{< scripture ref="John 1:1" >}}, which in Greek is en arche. En arche en ho logos, in the beginning was the word kai ho logos en pros ton theon. And the word was pros ton. Theon means next to with beside God. And the word theon there has the definite article ton, which means the God. In Greek, you normally. If you're referring to a specific person or thing or place, you have to include a definite article. In English, we just have the. In Greek, you had a few different ones. But anyway, that is God the Father, that is the God of Israel. And then you have the third clause in {{< scripture ref="John 1:1" >}}, kai theos en ho logos, which is translated in the KJV and most translations. And the word was God. It doesn't say that.{{< /line >}}
 {{< line >}}[00:04:41.410] Dan Beecher: What?{{< /line >}}
 {{< line >}}[00:04:42.130] Dan McClellan: It doesn't say that. And it is.{{< /line >}}

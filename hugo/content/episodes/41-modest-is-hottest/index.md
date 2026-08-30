@@ -226,7 +226,7 @@ draft: false
 {{< line >}}[00:33:17.950] Dan McClellan: Right.{{< /line >}}
 {{< line >}}[00:33:18.910] Dan Beecher: And they did. They. They should. I just rattle off a few of the, the scriptures that we've. That, that have been given to support the idea that. That women need to dress modestly. And we'll get to what modesty might mean.{{< /line >}}
 {{< line >}}[00:33:36.560] Dan McClellan: Yeah. Well, as the, as the mediocre poet once said. All right, let's see it.{{< /line >}}
-{{< line >}}[00:33:42.640] Dan Beecher: Indeed. I'm going to start with {{< scripture ref="1 Timothy" >}}, chapter two.{{< /line >}}
+{{< line >}}[00:33:42.640] Dan Beecher: Indeed. I'm going to start with {{< scripture ref="1 Timothy 2" >}}.{{< /line >}}
 {{< line >}}[00:33:46.960] Dan McClellan: Okay.{{< /line >}}
 {{< line >}}[00:33:47.400] Dan Beecher: Which I. Which I saw a lot of. And that starts on. On verse nine. It says also that the women should dress themselves in moderate clothing with reverence and self-control. Not with their hair braided or with gold, pearls or expensive clothes, but with good works as is proper for women who profess reverence for God.{{< /line >}}
 {{< line >}}[00:34:12.570] Dan McClellan: Yes.{{< /line >}}

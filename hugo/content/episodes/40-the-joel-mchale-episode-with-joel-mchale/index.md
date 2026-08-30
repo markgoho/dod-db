@@ -65,7 +65,7 @@ draft: false
 {{< line >}}[00:02:52.490] Dan Beecher: Well, no, Star Trek. That's right. The second episode of...{{< /line >}}
 {{< line >}}[00:02:55.290] Joel McHale: Right.{{< /line >}}
 {{< line >}}[00:02:56.170] Dan Beecher: I... You just blew a lot of people's brains out of...{{< /line >}}
-{{< line >}}[00:02:58.770] Dan McClellan: I was, I'm playing. I'm... I'm totally playing. But yeah, we, we're going to talk about {{< scripture ref="1 Samuel" >}}, Chapter 28 and the Necromancer of Endor and go on a deep dive about what's going on in that chapter because it's so fascinating.{{< /line >}}
+{{< line >}}[00:02:58.770] Dan McClellan: I was, I'm playing. I'm... I'm totally playing. But yeah, we, we're going to talk about {{< scripture ref="1 Samuel 28" >}} and the Necromancer of Endor and go on a deep dive about what's going on in that chapter because it's so fascinating.{{< /line >}}
 {{< line >}}[00:03:13.130] Dan Beecher: Yeah, it's a really, really interesting story.{{< /line >}}
 {{< line >}}[00:03:16.330] Dan McClellan: Yeah.{{< /line >}}
 {{< line >}}[00:03:17.130] Dan Beecher: And Joel's in it. This is going to be a fun episode. I think we should just launch into the. To the interview.{{< /line >}}

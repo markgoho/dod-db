@@ -178,7 +178,7 @@ draft: false
 {{< line >}}[00:24:42.830] Dan McClellan: Hitting a little crook. Yeah, a little shepherd's crook. Teach him how to. How to. How to raise some sheep, by the way. You do not swaddle them and put them in a manger.{{< /line >}}
 {{< line >}}[00:24:55.190] Dan Beecher: I'm gonna swaddle a sheep, damn it. I'm gonna do it, despite what you hear.{{< /line >}}
 {{< line >}}[00:24:59.830] Dan McClellan: And don't anoint them with oil, because that's not gonna help either.{{< /line >}}
-{{< line >}}[00:25:04.470] Dan Beecher: Well, all right. That was. That was a little depressing, that. That whole thing, beating children is not a fun topic. So let's move on to a really interesting chapter and verse. So we're starting this ch. Chapter and verse in {{< scripture ref="1 Corinthians" >}}, chapter 5. Am I right about that?{{< /line >}}
+{{< line >}}[00:25:04.470] Dan Beecher: Well, all right. That was. That was a little depressing, that. That whole thing, beating children is not a fun topic. So let's move on to a really interesting chapter and verse. So we're starting this ch. Chapter and verse in {{< scripture ref="1 Corinthians 5" >}}. Am I right about that?{{< /line >}}
 {{< line >}}[00:25:25.800] Dan McClellan: Yep. Johnny 5 still alive. Drive 55 arrive alive.{{< /line >}}
 {{< line >}}[00:25:32.520] Dan Beecher: Just. Just. Just nonsense. 90s references pour out of you in. In amazing ways. Actually, Johnny 5 is probably 80s. Huh?{{< /line >}}
 {{< line >}}[00:25:40.600] Dan McClellan: Is it? That's probably. That's probably 80s. I don't know. There was a sequel, wasn't there?{{< /line >}}

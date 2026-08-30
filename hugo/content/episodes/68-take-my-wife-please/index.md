@@ -59,7 +59,7 @@ draft: false
 {{< line >}}[00:01:41.140] Dan McClellan: Precisely.{{< /line >}}
 {{< line >}}[00:01:42.340] Dan Beecher: Yeah. So should we dive into this?{{< /line >}}
 {{< line >}}[00:01:44.900] Dan McClellan: I don't think we have any other choice.{{< /line >}}
-{{< line >}}[00:01:47.380] Dan Beecher: We must do it. It is our job. After all, we're... we're starting off in Genesis, chapter 38. And what's weird about chapter 38 in Genesis is that chapter 37 starts off the Joseph being sold into slavery story. It's the whole Joseph story, then chapter 38—nothing about that at all. It's about his brother. And then chapter 39, back to Joseph. So it's like this weird, like, sort of interruption of the narrative, kind of.{{< /line >}}
+{{< line >}}[00:01:47.380] Dan Beecher: We must do it. It is our job. After all, we're... we're starting off in {{< scripture ref="Genesis 38" >}}. And what's weird about chapter 38 in Genesis is that chapter 37 starts off the Joseph being sold into slavery story. It's the whole Joseph story, then chapter 38—nothing about that at all. It's about his brother. And then chapter 39, back to Joseph. So it's like this weird, like, sort of interruption of the narrative, kind of.{{< /line >}}
 {{< line >}}[00:02:23.140] Dan McClellan: Kind of an A-B kind of sitcom thing. Right, right. Like this...{{< /line >}}
 {{< line >}}[00:02:28.460] Dan Beecher: This is the Kramer plot.{{< /line >}}
 {{< line >}}[00:02:29.940] Dan McClellan: Yeah, you gotta... you gotta think about He-Man, where they went and shot over to the other... the other scene. And we're dealing with Judah and Tamar now.{{< /line >}}
