@@ -7,7 +7,7 @@ import { timestampToSeconds } from "../pipeline/timestamp-to-seconds.js";
 import { loadProcessedVideos } from "../storage/load-processed-videos.js";
 import type { ProcessedVideo } from "../storage/processed-videos.js";
 import { parseHugoFile } from "../utils/parse-hugo-file.js";
-import { titleToSlug } from "../utils/title-to-slug.js";
+import { taxonomyFolderSlug, titleToSlug } from "../utils/title-to-slug.js";
 
 interface ParsedArguments {
   topicName: string;
@@ -347,7 +347,7 @@ async function loadFrontmatterSegments(
   return segmentData ?? [];
 }
 
-async function loadExistingPage(
+async function loadExistingPageAtSlug(
   tagSlug: string,
 ): Promise<ExistingPage | undefined> {
   const path = `hugo/content/topics/${tagSlug}/_index.md`;
@@ -365,6 +365,25 @@ async function loadExistingPage(
 
     return { path };
   }
+}
+
+async function loadExistingPage(
+  canonicalName: string,
+): Promise<ExistingPage | undefined> {
+  const folderSlug = taxonomyFolderSlug(canonicalName);
+  const found = await loadExistingPageAtSlug(folderSlug);
+  if (found) {
+    return found;
+  }
+
+  // Fall back to the legacy punctuation-stripped slug in case the page was
+  // authored before folder names were required to match Hugo's taxonomy key.
+  const legacySlug = titleToSlug(canonicalName);
+  if (legacySlug === folderSlug) {
+    return undefined;
+  }
+
+  return loadExistingPageAtSlug(legacySlug);
 }
 
 function getTopEpisodeContextBase(
@@ -447,7 +466,7 @@ async function main(): Promise<void> {
       topicName: args.topicName,
       canonical,
       topEpisodes: episodeContexts,
-      existingPage: await loadExistingPage(titleToSlug(canonical.name)),
+      existingPage: await loadExistingPage(canonical.name),
     };
 
     console.log(JSON.stringify(result, undefined, 2));

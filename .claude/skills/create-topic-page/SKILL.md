@@ -44,6 +44,7 @@ Use the gathered JSON to make the authorial decisions.
 
 - Use the canonical topic name for the page title.
 - By default, use the canonical topic name for the slug too.
+- If the canonical name contains an apostrophe (e.g. `Aaron's Rod`), keep the apostrophe in the `topicSlug` folder name (lowercase, spaces to hyphens, apostrophe kept: `aaron's-rod`) rather than stripping it. Hugo's auto-generated taxonomy term page for that value is keyed on the raw term with only whitespace collapsed, so a folder name with the apostrophe stripped never fuses with it and the page silently shows 0 episodes even though the published URL (which does strip the apostrophe) looks identical either way. `gather-topic-context.ts` reports `existingPage` from this same apostrophe-preserving slug, so trust that lookup rather than re-deriving a stripped one.
 - If this is the first page being created for an ambiguous canonical name, still use the bare canonical slug.
 - Only switch to qualified slugs for ambiguous names after a second distinct entity creates a real collision at the bare slug.
 - For person topics that need qualified slugs after such a collision, prefer concise identity qualifiers such as `/tags/james-brother-of-jesus/` or `/tags/james-son-of-zebedee/`.
