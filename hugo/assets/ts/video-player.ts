@@ -239,12 +239,13 @@ function showToast(message: string): void {
  * Supports both transcript line hashes (#t-123-456) and segment hashes (#chapter-and-verse).
  */
 function handleInitialHash(): void {
-  const hash = globalThis.location.hash.slice(1); // Remove #
+  // Remove # and any trailing junk from copy-pasted URLs (e.g. a stray closing paren)
+  const hash = globalThis.location.hash.slice(1).replace(/[^a-z0-9-]+$/i, "");
   if (!hash) {
     return;
   }
 
-  const element = document.querySelector<HTMLElement>(`#${hash}`);
+  const element = document.getElementById(hash);
   if (!element) {
     return;
   }

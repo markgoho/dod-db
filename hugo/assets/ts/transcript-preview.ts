@@ -13,7 +13,8 @@ function initTranscriptPreview(): void {
   }
 
   if (globalThis.location.hash) {
-    const hashTarget = document.querySelector(globalThis.location.hash);
+    const hash = globalThis.location.hash.slice(1).replace(/[^a-z0-9-]+$/i, "");
+    const hashTarget = document.getElementById(hash);
     if (
       globalThis.location.hash.startsWith("#t-") ||
       hashTarget?.classList.contains("episode-segment-card")
