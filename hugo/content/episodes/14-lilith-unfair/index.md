@@ -36,6 +36,7 @@ tags:
   - Edom
   - Judaism
   - Ketef Hinnom
+  - Menorah
 books:
   - Sirach
   - Genesis

@@ -9984,8 +9984,9 @@ export const tagVocabulary: TagDefinition[] = [
     category: "religion",
     description:
       "A seven-branched candelabrum, an ancient symbol of Judaism and an emblem of the Jewish Temple, often associated with the Tree of Life.",
-    status: "proposed",
+    status: "accepted",
     addedInEpisode: 177,
+    episodes: [14, 24, 102, 177],
   },
   {
     canonical: "Shadrach, Meshach, and Abednego",
@@ -10005,6 +10006,72 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     addedInEpisode: 177,
     episodes: [14, 88, 105, 177],
+  },
+  {
+    canonical: "Korah",
+    variations: ["Korah's"],
+    category: "character",
+    llmVerify: true,
+    description:
+      "A Levite who, along with Dathan and Abiram, rebelled against the authority of Moses and Aaron in the wilderness.",
+    status: "accepted",
+    addedInEpisode: 178,
+    episodes: [167, 177, 178],
+  },
+  {
+    canonical: "Dathan",
+    variations: [],
+    category: "character",
+    description:
+      "A Reubenite who participated in Korah's rebellion against Moses and Aaron.",
+    status: "proposed",
+    addedInEpisode: 178,
+  },
+  {
+    canonical: "Abiram",
+    variations: [],
+    category: "character",
+    description:
+      "A Reubenite who joined Korah's rebellion against Moses and Aaron in the wilderness.",
+    status: "proposed",
+    addedInEpisode: 178,
+  },
+  {
+    canonical: "On",
+    variations: [],
+    category: "character",
+    description:
+      "A Reubenite mentioned in Numbers 16 as participating in Korah's rebellion, but who disappears early from the narrative.",
+    status: "proposed",
+    caseSensitive: true,
+    addedInEpisode: 178,
+  },
+  {
+    canonical: "Game of Thrones",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "A popular fantasy television series, referenced in the transcript for its dramatic and often violent plot elements.",
+    status: "proposed",
+    addedInEpisode: 178,
+  },
+  {
+    canonical: "Aaronide",
+    variations: ["Aaronide clan"],
+    category: "people",
+    description:
+      "A priestly lineage descended from Aaron, holding exclusive rights to perform priestly duties in the Israelite cult.",
+    status: "proposed",
+    addedInEpisode: 178,
+  },
+  {
+    canonical: "Korahite",
+    variations: ["Korahites"],
+    category: "people",
+    description:
+      "A family of Levites descended from Korah, known for their role as temple singers and gatekeepers, despite Korah's rebellion.",
+    status: "proposed",
+    addedInEpisode: 178,
   },
 ];
 

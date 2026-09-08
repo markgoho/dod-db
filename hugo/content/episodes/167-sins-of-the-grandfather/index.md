@@ -46,6 +46,7 @@ tags:
   - Ahab
   - Ham
   - Naboth
+  - Korah
 books:
   - Sirach
   - Deuteronomy

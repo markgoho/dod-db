@@ -19,6 +19,7 @@ tags:
   - Judah
   - Passover
   - Romans
+  - Menorah
 guests:
   - Miriam Anzovin
 episodeTopic: Talmud

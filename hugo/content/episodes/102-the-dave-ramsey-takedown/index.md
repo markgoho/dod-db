@@ -27,6 +27,7 @@ tags:
   - Judah
   - Peter
   - Sapphira
+  - Menorah
 books:
   - Deuteronomy
   - Acts

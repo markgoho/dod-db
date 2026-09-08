@@ -34,6 +34,8 @@ tags:
   - Apocrypha
   - Maccabees
   - Aaron
+  - Menorah
+  - Korah
 books:
   - Numbers
   - 2 Maccabees

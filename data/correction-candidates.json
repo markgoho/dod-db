@@ -9153,7 +9153,299 @@
       "firstSeen": "2026-08-30T15:15:11.839Z",
       "lastSeen": "2026-08-30T15:15:11.839Z",
       "status": "pending"
+    },
+    "number→Numbers": {
+      "original": "number",
+      "corrected": "Numbers",
+      "category": "biblical-term",
+      "totalOccurrences": 7,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"what about number 16? Because\"",
+        "\"start with number 16. That's\"",
+        "\"we're in number 16 now.\""
+      ],
+      "correctedExamples": [
+        "\"what about Numbers 16? Because\"",
+        "\"start with Numbers 16. That's\"",
+        "\"we're in Numbers 16 now.\""
+      ],
+      "timestamps": ["00:01:29.170", "00:01:29.170", "00:02:19.410"],
+      "episodeIds": ["168059414", "168059414", "168059414"],
+      "confidence": 35,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "Webbin→Webbon": {
+      "original": "Webbin",
+      "corrected": "Webbon",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"one Joel Webbin, who is\"",
+        "\"young Joel Webbin is. He's\"",
+        "\"with Joel Webbin.\""
+      ],
+      "correctedExamples": [
+        "\"one Joel Webbon, who is\"",
+        "\"young Joel Webbon is. He's\"",
+        "\"with Joel Webbon.\""
+      ],
+      "timestamps": ["00:01:29.170", "00:37:35.050", "00:44:36.620"],
+      "episodeIds": ["168059414", "168059414", "168059414"],
+      "confidence": 20,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "Korra→Korah": {
+      "original": "Korra",
+      "corrected": "Korah",
+      "category": "spelling",
+      "totalOccurrences": 10,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"about who Korra is. We.\"",
+        "\"we've got Korra. That's K\"",
+        "\"said to Korra, as for\""
+      ],
+      "correctedExamples": [
+        "\"about who Korah is. We.\"",
+        "\"we've got Korah. That's K\"",
+        "\"said to Korah, as for\""
+      ],
+      "timestamps": ["00:03:39.170", "00:03:39.170", "00:14:36.700"],
+      "episodeIds": ["168059414", "168059414", "168059414"],
+      "confidence": 30,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "Kora→Korah": {
+      "original": "Kora",
+      "corrected": "Korah",
+      "category": "spelling",
+      "totalOccurrences": 6,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"R a Kora, Dathan and\"",
+        "\"talking to Kora.\"",
+        "\"dwellings of Kora Daan and\""
+      ],
+      "correctedExamples": [
+        "\"R A. Korah, Dathan and\"",
+        "\"talking to Korah.\"",
+        "\"dwellings of Korah, Dathan, and\""
+      ],
+      "timestamps": ["00:03:51.970", "00:10:50.200", "00:17:39.480"],
+      "episodeIds": ["168059414", "168059414", "168059414"],
+      "confidence": 20,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "sensors→censers": {
+      "original": "sensors",
+      "corrected": "censers",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"do. Take sensors. Not. Not\"",
+        "\"get their sensors or whatever.\"",
+        "\"the. The sensors and they\""
+      ],
+      "correctedExamples": [
+        "\"do. Take censers. Not. Not\"",
+        "\"get their censers or whatever.\"",
+        "\"the. The censers and they\""
+      ],
+      "timestamps": ["00:08:52.450", "00:11:07.920", "00:26:49.920"],
+      "episodeIds": ["168059414", "168059414", "168059414"],
+      "confidence": 20,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "sensor→censer": {
+      "original": "sensor",
+      "corrected": "censer",
+      "category": "spelling",
+      "totalOccurrences": 6,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"quick. My sensor. This is\"",
+        "\"my good sensor. Why did\"",
+        "\"bring this sensor? What am\""
+      ],
+      "correctedExamples": [
+        "\"quick. My censer. This is\"",
+        "\"my good censer. Why did\"",
+        "\"bring this censer? What am\""
+      ],
+      "timestamps": ["00:16:02.630", "00:16:02.630", "00:16:02.630"],
+      "episodeIds": ["168059414", "168059414", "168059414"],
+      "confidence": 25,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "Dan→Dathan": {
+      "original": "Dan",
+      "corrected": "Dathan",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"Abiram and Dan and Abiram\"",
+        "\"we have Dan and Abiram,\""
+      ],
+      "correctedExamples": [
+        "\"Abiram and Dathan and Abiram\"",
+        "\"we have Dathan and Abiram,\""
+      ],
+      "timestamps": ["00:17:39.480", "00:19:56.280"],
+      "episodeIds": ["168059414", "168059414"],
+      "confidence": 5,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "Shaol→Sheol": {
+      "original": "Shaol",
+      "corrected": "Sheol",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": ["\"me. I. Shaol. Did I\"", "\"I hear Shaol? I'm not.\""],
+      "correctedExamples": [
+        "\"me. I. Sheol. Did I\"",
+        "\"I hear Sheol? I'm not.\""
+      ],
+      "timestamps": ["00:18:47.530", "00:18:47.530"],
+      "episodeIds": ["168059414", "168059414"],
+      "confidence": 10,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "Abhiram→Abiram": {
+      "original": "Abhiram",
+      "corrected": "Abiram",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"Dathan and Abhiram come out\"",
+        "\"Dathan and Abhiram.\""
+      ],
+      "correctedExamples": [
+        "\"Dathan and Abiram come out\"",
+        "\"Dathan and Abiram.\""
+      ],
+      "timestamps": ["00:19:04.820", "00:19:47.920"],
+      "episodeIds": ["168059414", "168059414"],
+      "confidence": 10,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "Cora→Korah": {
+      "original": "Cora",
+      "corrected": "Korah",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": ["\"belonged to Cora and all\"", "\"be the Cora from this\""],
+      "correctedExamples": [
+        "\"belonged to Korah and all\"",
+        "\"be the Korah from this\""
+      ],
+      "timestamps": ["00:20:11.400", "00:25:18.040"],
+      "episodeIds": ["168059414", "168059414"],
+      "confidence": 5,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "Korra's→Korah's": {
+      "original": "Korra's",
+      "corrected": "Korah's",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"all of Korra's stuff into\"",
+        "\"all of Korra's sons did\""
+      ],
+      "correctedExamples": [
+        "\"all of Korah's stuff into\"",
+        "\"all of Korah's sons did\""
+      ],
+      "timestamps": ["00:20:11.400", "00:24:03.170"],
+      "episodeIds": ["168059414", "168059414"],
+      "confidence": 10,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "Koras→Korahs": {
+      "original": "Koras",
+      "corrected": "Korahs",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"be two Koras. That's too\"",
+        "\"out. Two Koras is right\""
+      ],
+      "correctedExamples": [
+        "\"be two Korahs. That's too\"",
+        "\"out. Two Korahs is right\""
+      ],
+      "timestamps": ["00:25:45.380", "00:25:49.220"],
+      "episodeIds": ["168059414", "168059414"],
+      "confidence": 10,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
+    },
+    "Webbins→Webbon's": {
+      "original": "Webbins",
+      "corrected": "Webbon's",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["168059414"],
+      "examples": [
+        "\"in Joel Webbins world.\"",
+        "\"and Joel Webbins. Like, I\""
+      ],
+      "correctedExamples": [
+        "\"in Joel Webbon's world.\"",
+        "\"and Joel Webbon's. Like, I\""
+      ],
+      "timestamps": ["00:39:41.990", "00:42:39.960"],
+      "episodeIds": ["168059414", "168059414"],
+      "confidence": 10,
+      "firstSeen": "2026-09-08T18:59:51.104Z",
+      "lastSeen": "2026-09-08T18:59:51.104Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-08-30T15:15:11.839Z"
+  "lastUpdated": "2026-09-08T18:59:51.105Z"
 }

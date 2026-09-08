@@ -2544,6 +2544,10 @@
       {
         "tag": "Aaron's Rod",
         "mentions": 1
+      },
+      {
+        "tag": "Menorah",
+        "mentions": 4
       }
     ],
     "segments": [
@@ -4522,6 +4526,10 @@
       {
         "tag": "Romans",
         "mentions": 1
+      },
+      {
+        "tag": "Menorah",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -18161,6 +18169,10 @@
       {
         "tag": "Sapphira",
         "mentions": 1
+      },
+      {
+        "tag": "Menorah",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -30124,6 +30136,10 @@
       {
         "tag": "Naboth",
         "mentions": 12
+      },
+      {
+        "tag": "Korah",
+        "mentions": 9
       }
     ],
     "segments": [
@@ -32003,6 +32019,14 @@
       {
         "tag": "Aaron's Rod",
         "mentions": 2
+      },
+      {
+        "tag": "Menorah",
+        "mentions": 5
+      },
+      {
+        "tag": "Korah",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -32063,6 +32087,144 @@
       {
         "book": "Daniel",
         "references": ["Daniel"],
+        "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "168059414",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/168059414.mp3?sig=h5kMKkHcHhzK7nPQNWGdYDkDgAMFN3ve0CKz2Xp1N88%3D",
+    "title": "You Starve ... Glory Be To God?",
+    "publishedAt": "2026-08-30T06:00:07.000Z",
+    "processedAt": "2026-09-08T18:58:48.888Z",
+    "transcriptPath": "data/transcripts/2026-08-30-you-starve-glory-be-to-god.txt",
+    "tags": [
+      {
+        "tag": "Christian Nationalism",
+        "mentions": 1
+      },
+      {
+        "tag": "Aaron's Rod",
+        "mentions": 1
+      },
+      {
+        "tag": "Prophetic Critique",
+        "mentions": 3
+      },
+      {
+        "tag": "Samaritans",
+        "mentions": 1
+      },
+      {
+        "tag": "etiology",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 1
+      },
+      {
+        "tag": "Tithing",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 39
+      },
+      {
+        "tag": "Sheol",
+        "mentions": 5
+      },
+      {
+        "tag": "atonement",
+        "mentions": 2
+      },
+      {
+        "tag": "Korach",
+        "mentions": 1
+      },
+      {
+        "tag": "Aaron",
+        "mentions": 23
+      },
+      {
+        "tag": "John",
+        "mentions": 1
+      },
+      {
+        "tag": "Korah",
+        "mentions": 53
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:37.932]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:02:37.932]",
+        "endTimestamp": "[00:33:21.107]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Num 16",
+        "summary": "Korah's rebellion challenges Moses and Aaron's priestly authority"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:33:21.107]",
+        "endTimestamp": "[01:00:31.505]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Joel Webbon",
+        "summary": "Christian nationalist argues the church should let poor women starve"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 178,
+    "scriptures": [
+      {
+        "book": "Numbers",
+        "references": [
+          "Numbers 16",
+          "Numbers 16:1",
+          "Numbers 17",
+          "Numbers 26",
+          "Numbers 26:9",
+          "Numbers 26:10"
+        ],
+        "mentions": 13
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms", "Psalms 42"],
+        "mentions": 3
+      },
+      {
+        "book": "1 Timothy",
+        "references": ["1 Timothy 5", "1 Timothy 5:8", "1 Timothy 3:10"],
+        "mentions": 3
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
+      },
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 1
+      },
+      {
+        "book": "Galatians",
+        "references": ["Galatians 6:10"],
         "mentions": 1
       }
     ]
