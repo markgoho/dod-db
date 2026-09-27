@@ -2,7 +2,7 @@
  * Tag extraction orchestrator using hybrid deterministic + LLM approach.
  *
  * Tier 1: Deterministic matching of known vocabulary (instant, free)
- * Tier 2: LLM discovery of new high-value tags (5+ mentions)
+ * Tier 2: LLM discovery of subjects the episode discusses that aren't accepted tags yet
  * Tier 3: Manual learning loop (promote discoveries to vocabulary)
  */
 
@@ -44,7 +44,7 @@ export async function extractTags(
   );
   console.log(`  ✓ Found ${deterministicTags.length} known tags`);
 
-  // Tier 2: LLM discovery (new terms with 5+ mentions) - optional
+  // Tier 2: LLM discovery (subjects of discussion not yet accepted) - optional
   // NOTE: Discovered tags are NOT included in final results (only reported as suggestions)
   // They must be reviewed and marked as 'accepted' before being used in future processing
   if (options.skipLlm) {
@@ -53,9 +53,7 @@ export async function extractTags(
     const categoryInfo = options.categories
       ? ` [${options.categories.join(", ")} only]`
       : "";
-    console.log(
-      `  Phase 2: LLM discovery of new tags (5+ mentions)${categoryInfo}...`,
-    );
+    console.log(`  Phase 2: LLM discovery of new tags${categoryInfo}...`);
     const discoveredTags = await extractTagsLlm(
       correctedTranscript,
       deterministicTags,

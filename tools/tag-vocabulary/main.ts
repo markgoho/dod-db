@@ -40,6 +40,22 @@ function formatSuggestedEpisode(addedInEpisode?: number): string {
   return `Source episode: ${addedInEpisode}`;
 }
 
+function recurrenceCount(tag: TagDefinition): number {
+  const episodes = new Set(tag.episodes ?? []);
+  if (tag.addedInEpisode !== undefined) episodes.add(tag.addedInEpisode);
+  return episodes.size;
+}
+
+function formatRecurrence(tag: TagDefinition): string {
+  const count = recurrenceCount(tag);
+  return count > 1 ? ` · Seen in ${count} episodes` : "";
+}
+
+function sortProposedByRecurrence(a: TagDefinition, b: TagDefinition): number {
+  const difference = recurrenceCount(b) - recurrenceCount(a);
+  return difference === 0 ? sortVocabularyNewestFirst(a, b) : difference;
+}
+
 function sortVocabularyNewestFirst(a: TagDefinition, b: TagDefinition): number {
   const aEpisode = a.addedInEpisode ?? -1;
   const bEpisode = b.addedInEpisode ?? -1;
@@ -697,7 +713,7 @@ async function loadProposedTags(): Promise<void> {
     const vocabulary: TagDefinition[] = await response.json();
     proposedTags = vocabulary
       .filter(tag => tag.status === "proposed")
-      .toSorted(sortVocabularyNewestFirst);
+      .toSorted(sortProposedByRecurrence);
 
     renderProposedTags();
   } catch (error) {
@@ -798,7 +814,7 @@ function renderProposedCard(tag: TagDefinition, index: number): string {
     <div class="proposed-card" id="proposed-card-${index}" data-original="${escapedCanonical}" data-duplicate-of="${duplicateOf ? escapeHtml(duplicateOf) : ""}">
       <div class="proposed-header">
         <span class="proposed-status">Proposed</span>
-        <span class="proposed-source-episode">${formatSuggestedEpisode(tag.addedInEpisode)}</span>
+        <span class="proposed-source-episode">${formatSuggestedEpisode(tag.addedInEpisode)}${formatRecurrence(tag)}</span>
       </div>
       <div class="proposed-form">
         ${duplicateNotice}

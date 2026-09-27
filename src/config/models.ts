@@ -11,6 +11,11 @@ export const correctionModel = "gemini-2.5-flash";
 export const speakerIdModel = "gemini-2.5-flash";
 
 /**
+ * Model used for LLM tag discovery (proposing new vocabulary terms).
+ */
+export const tagDiscoveryModel = "gemini-3.8-flash";
+
+/**
  * Model used for Q&A over transcripts.
  */
 export const qaModel = "gemini-2.5-flash";
