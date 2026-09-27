@@ -24,6 +24,10 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo "✅ Both servers running!"
 echo "   • API: http://localhost:3001"
 echo "   • UI:  http://localhost:3000"
+NETWORK_IP=$(ipconfig getifaddr en0 2>/dev/null || true)
+if [ -n "$NETWORK_IP" ]; then
+  echo "   • Network UI: http://$NETWORK_IP:3000"
+fi
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
 
@@ -37,7 +41,8 @@ cd tools && bun \
   episode/index/index.html \
   episode/segments/index.html \
   episode/tags/index.html \
-  episode/scriptures/index.html
+  episode/scriptures/index.html \
+  --host=0.0.0.0
 
 # Cleanup on exit
 trap "kill $API_PID 2>/dev/null" EXIT
