@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": ["hugo/**/*.html"],
+  "ignorePatterns": ["hugo/**/*.html", ".claude/settings.local.json"],
   "semi": true,
   "trailingComma": "all",
   "singleQuote": false,

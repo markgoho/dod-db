@@ -34,7 +34,7 @@
   <div class="page-hero__meta page-hero__meta--headline panel">
     <span class="stat-display__number">{{ len $page.Pages }}</span>
     <span class="stat-display__label"
-      >{{ if eq (len $page.Pages) 1 }}Episode{{ else }}Episodes{{ end }}</span
+      >{{ cond (eq (len $page.Pages) 1) "Episode" "Episodes" }}</span
     >
   </div>
   {{- with $definition }}
