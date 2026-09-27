@@ -250,7 +250,7 @@ draft: false
 {{< line >}}[00:40:09.350] Dan McClellan: It doesn't have a note there.{{< /line >}}
 {{< line >}}[00:40:10.550] Dan Beecher: A note about this particular thing. So just for the sake of argument, imagine that the Lord's garment or the Lord's something is filling the temple. Yes, it's full. The temple's full. We'll just say that.{{< /line >}}
 {{< line >}}[00:40:24.490] Dan McClellan: Yeah.{{< /line >}}
-{{< line >}}[00:40:25.530] Dan Beecher: This is where the seraphs come in. It says, this is verse two: "Seraphs were in attendance above him. Each had six wings. With two they covered their faces, and with two they covered their feet, and with two they flew." Why do their faces and feet need to be covered?{{< /line >}}
+{{< line >}}[00:40:25.530] Dan Beecher: This is where the seraphs come in. It says, this is verse two: "Seraphs were in attendance above him. Each had six wings. With two they covered their faces, and with two they covered their feet, and with two they flew." Why do their faces and feet need to be covered? That's. That's nobody's business but the Turks.{{< /line >}}
 {{< line >}}[00:40:46.330] Dan McClellan: Well, and there's a, at the beginning of the verse, the, the first two words are seraphim omdim, which the NRSVUE has rendered "were in attendance above him." But that's, that's the verbal root for "to stand."{{< /line >}}
 {{< line >}}[00:41:01.970] Dan Beecher: Oh.{{< /line >}}
 {{< line >}}[00:41:02.850] Dan McClellan: So it, it would better be translated the seraphim were standing above him.{{< /line >}}

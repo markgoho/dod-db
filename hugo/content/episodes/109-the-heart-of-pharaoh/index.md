@@ -290,7 +290,7 @@ draft: false
 {{< line >}}[00:39:29.010] Dan McClellan: Yeah. I.{{< /line >}}
 {{< line >}}[00:39:30.210] Dan Beecher: Over and over and over.{{< /line >}}
 {{< line >}}[00:39:34.210] Dan McClellan: I want to say it's a different. If it's a different Pharaoh, because if it's the Pharaoh that Moses split from, then one, the. The pharaoh should know him. But two, he's. I don't know how harsh that that pharaoh was, but probably wasn't very nice.{{< /line >}}
-{{< line >}}[00:39:52.370] Dan Beecher: Well, Cecil B. DeMille had it be the guy that was raised as his brother. Oh. Because it's. It's Yul Brynner. And so. But it is like he ascended to the throne while I think, while Moses was in the wilderness.{{< /line >}}
+{{< line >}}[00:39:52.370] Dan Beecher: Well, Cecil B. DeMille had it be the guy that was raised as his brother. Oh. Because it's. It's Yul Brynner. And so. But it is like he ascended to the throne while I think, while Moses was in the wilderness. So, yeah, I. Who knows?{{< /line >}}
 {{< line >}}[00:40:11.580] Dan McClellan: Yeah. So I, I have not read through the entire story of the Exodus for a bit. So Exodus specialists are going to be ashamed of me.{{< /line >}}
 {{< line >}}[00:40:23.030] Dan Beecher: Yes, I'm ashamed of you.{{< /line >}}
 {{< line >}}[00:40:25.870] Dan McClellan: I'm pretty sure it's different. It's a different pharaoh. By the way I looked it up, it was actually Cecil B. DeMille who voiced.{{< /line >}}
@@ -318,7 +318,7 @@ draft: false
 {{< line >}}[00:44:38.810] Dan Beecher: So. So they got to come up with a way to make it believable that Pharaoh is still not letting these people go, even though, like, seriously insane stuff is happening.{{< /line >}}
 {{< line >}}[00:44:51.210] Dan McClellan: Yeah. And I'm. I'm sure that's. That plays into it.{{< /line >}}
 {{< line >}}[00:44:55.890] Dan Beecher: I'm.{{< /line >}}
-{{< line >}}[00:44:56.250] Dan McClellan: I'm sure there's. There's a lesson about obstinacy and a lesson about obedience where Moses is doing everything God says to do, and. And Pharaoh is the one who. Who is not. Even though sometimes, you know, it's. It's someone else pulling the strings, namely God. So. But it. But it is troubling for a contemporary reader of this text, someone who thinks of God a certain way as a respecter of agency and as someone who would not toy with people's lives and just arbitrarily destroy them just for the sake of showing off or showing off the.{{< /line >}}
+{{< line >}}[00:44:56.250] Dan McClellan: I'm sure there's. There's a lesson about obstinacy and a lesson about obedience where Moses is doing everything God says to do, and. And Pharaoh is the one who. Who is not. Even though sometimes, you know, it's. It's someone else pulling the strings, namely God. So. But it. But it is troubling for a contemporary reader of this text, someone who thinks of God a certain way as a respecter of agency and as someone who would not toy with people's lives and just arbitrarily destroy them just for the sake of showing off or showing off the. You know, the actual taking of. Of the lives. Because the signs and wonders are all the things I'm destroying. And.{{< /line >}}
 {{< line >}}[00:45:50.440] Dan Beecher: Yeah.{{< /line >}}
 {{< line >}}[00:45:51.240] Dan McClellan: And the firstborn children.{{< /line >}}
 {{< line >}}[00:45:53.000] Dan Beecher: Yeah, that. Culminating in that firstborn, firstborn children thing. Like, that's horrific.{{< /line >}}
