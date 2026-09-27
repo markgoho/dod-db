@@ -311,9 +311,9 @@
       "original": "pastoral epistles",
       "corrected": "Pastoral Epistles",
       "category": "capitalization",
-      "totalOccurrences": 8,
-      "episodeCount": 2,
-      "episodes": ["_zou11pMRag", "mMJ5mHoWrSM"],
+      "totalOccurrences": 11,
+      "episodeCount": 3,
+      "episodes": ["_zou11pMRag", "mMJ5mHoWrSM", "169390253"],
       "examples": [
         "\"as the pastoral epistles.\"",
         "\"in the Pastoral epistles.\"",
@@ -326,9 +326,9 @@
       ],
       "timestamps": ["00:35:43.610", "00:37:07.870", "00:37:15.550"],
       "episodeIds": ["_zou11pMRag", "_zou11pMRag", "_zou11pMRag"],
-      "confidence": 45,
+      "confidence": 70,
       "firstSeen": "2026-01-11T17:59:30.300Z",
-      "lastSeen": "2026-04-05T02:48:48.713Z",
+      "lastSeen": "2026-09-27T21:58:33.374Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:05:59.474Z",
       "reviewedBy": "UI Review"
@@ -2648,9 +2648,9 @@
       "original": "Euphrates river",
       "corrected": "Euphrates River",
       "category": "capitalization",
-      "totalOccurrences": 6,
-      "episodeCount": 1,
-      "episodes": ["caKa7DTkSkQ"],
+      "totalOccurrences": 8,
+      "episodeCount": 2,
+      "episodes": ["caKa7DTkSkQ", "169390253"],
       "examples": [
         "\"at the Euphrates river.\"",
         "\"about the Euphrates river.\"",
@@ -2663,9 +2663,9 @@
       ],
       "timestamps": ["00:00:07.440", "00:02:20.010", "00:02:55.740"],
       "episodeIds": ["caKa7DTkSkQ", "caKa7DTkSkQ", "caKa7DTkSkQ"],
-      "confidence": 25,
+      "confidence": 45,
       "firstSeen": "2026-01-13T02:10:06.917Z",
-      "lastSeen": "2026-01-13T02:10:06.917Z",
+      "lastSeen": "2026-09-27T21:58:33.374Z",
       "status": "approved",
       "reviewedAt": "2026-01-13T03:14:35.481Z",
       "reviewedBy": "UI Review"
@@ -5963,8 +5963,8 @@
       "original": "taking issue",
       "corrected": "Taking Issue",
       "category": "capitalization",
-      "totalOccurrences": 18,
-      "episodeCount": 7,
+      "totalOccurrences": 20,
+      "episodeCount": 8,
       "episodes": [
         "t40eXH29l-8",
         "Zpp6qUqrins",
@@ -5972,7 +5972,8 @@
         "VEfI1TgWVHY",
         "151982360",
         "164229960",
-        "166129945"
+        "166129945",
+        "169390253"
       ],
       "examples": [
         "\"our segment taking issue. We're going\"",
@@ -5988,7 +5989,7 @@
       "episodeIds": ["t40eXH29l-8", "t40eXH29l-8", "Zpp6qUqrins"],
       "confidence": 85,
       "firstSeen": "2026-01-18T17:02:51.228Z",
-      "lastSeen": "2026-08-21T18:15:03.666Z",
+      "lastSeen": "2026-09-27T21:58:33.374Z",
       "status": "approved",
       "reviewedAt": "2026-04-03T01:40:37.949Z",
       "reviewedBy": "UI Review"
@@ -9448,5 +9449,5 @@
       "status": "pending"
     }
   },
-  "lastUpdated": "2026-09-27T19:11:50.723Z"
+  "lastUpdated": "2026-09-27T21:58:33.374Z"
 }

@@ -32422,5 +32422,140 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "169390253",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/169390253.mp3?sig=excpqyxsChnSoBIdwSzaxV_IFzblKI8aurLHTSW_zrs%3D",
+    "title": "Vancepocalypse Now (and Paul's Spiritual Gifts)",
+    "publishedAt": "2026-09-13T06:00:07.000Z",
+    "processedAt": "2026-09-27T21:57:57.132Z",
+    "transcriptPath": "data/transcripts/2026-09-13-vancepocalypse-now-and-pauls-spiritual-gifts.txt",
+    "tags": [
+      {
+        "tag": "Christian Nationalism",
+        "mentions": 3
+      },
+      {
+        "tag": "Euphrates",
+        "mentions": 2
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 21
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 8
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "Peter",
+        "mentions": 2
+      },
+      {
+        "tag": "Second Coming",
+        "mentions": 4
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
+        "mentions": 15
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:49.420]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:03:49.420]",
+        "endTimestamp": "[00:26:57.098]",
+        "confidence": "verified",
+        "detectionMethod": "pattern",
+        "topicLabel": "End Times",
+        "summary": "JD Vance's cavalier fascination with end-times prophecy"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:26:57.098]",
+        "endTimestamp": "[00:50:39.936]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Spiritual Gifts",
+        "summary": "Paul's gifts of the Spirit as unity, not hierarchy"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
+    "episodeNumber": 180,
+    "scriptures": [
+      {
+        "book": "1 Corinthians",
+        "references": [
+          "1 Corinthians 12",
+          "1 Corinthians",
+          "1 Corinthians 7",
+          "1 Corinthians 12:1"
+        ],
+        "mentions": 9
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew", "Matthew 24"],
+        "mentions": 3
+      },
+      {
+        "book": "Romans",
+        "references": ["Romans 12"],
+        "mentions": 2
+      },
+      {
+        "book": "Ephesians",
+        "references": ["Ephesians 4", "Ephesians 4:11"],
+        "mentions": 2
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts 2"],
+        "mentions": 2
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 3"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Peter",
+        "references": ["1 Peter 4"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Timothy",
+        "references": ["1 Timothy"],
+        "mentions": 1
+      }
+    ]
   }
 ]

@@ -10137,6 +10137,22 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 179,
     episodes: [179],
   },
+  {
+    canonical: "Gifts of the Spirit",
+    variations: [
+      "gift of the Spirit",
+      "spiritual gifts",
+      "spiritual gift",
+      "charismata",
+      "charisma",
+    ],
+    category: "theology",
+    description:
+      "Abilities or endowments believed in early Christianity to be imparted by the Holy Spirit for the building up of the community.",
+    status: "proposed",
+    addedInEpisode: 180,
+    episodes: [180],
+  },
 ];
 
 export function getAllSearchableTerms(
