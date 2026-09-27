@@ -1,5 +1,7 @@
 import * as path from "node:path";
 import { youtubeConfig } from "../config/youtube.js";
+import { generateBookEpisodeIndex } from "../hugo/generate-book-episode-index.js";
+import { generateTagEpisodeIndex } from "../hugo/generate-tag-episode-index.js";
 import type { PodcastRssItem } from "../rss/patreon-rss-item.js";
 import { extractSpeakersFromTranscript } from "../storage/extract-speakers-from-transcript.js";
 import { writeToFile } from "../storage/file.js";
@@ -209,6 +211,10 @@ export async function processRssEpisode(
   if (updatedVideo) {
     await generateHugoEpisode(updatedVideo);
   }
+
+  // Keep the committed topic and book indexes in step with each new episode
+  await generateTagEpisodeIndex();
+  await generateBookEpisodeIndex();
 
   console.log("Done!");
 

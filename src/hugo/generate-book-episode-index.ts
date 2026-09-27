@@ -13,7 +13,7 @@ const outputPath = new URL(
   import.meta.url,
 );
 
-async function main(): Promise<void> {
+export async function generateBookEpisodeIndex(): Promise<void> {
   const videos = await loadProcessedVideos();
   const bookEpisodeIndex: BookEpisodeIndex = {};
 
@@ -55,4 +55,6 @@ async function main(): Promise<void> {
   );
 }
 
-await main();
+if (import.meta.main) {
+  await generateBookEpisodeIndex();
+}

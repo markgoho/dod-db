@@ -13,7 +13,7 @@ const tagOutputPath = new URL(
   import.meta.url,
 );
 
-async function main(): Promise<void> {
+export async function generateTagEpisodeIndex(): Promise<void> {
   const videos = await loadProcessedVideos();
   const tagEpisodeIndex: TagEpisodeIndex = {};
 
@@ -56,4 +56,6 @@ async function main(): Promise<void> {
   );
 }
 
-await main();
+if (import.meta.main) {
+  await generateTagEpisodeIndex();
+}

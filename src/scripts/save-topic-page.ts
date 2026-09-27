@@ -280,11 +280,7 @@ async function main(): Promise<void> {
       "src/scripts/generate-hugo-episodes.ts",
       "--all",
     ]);
-    await runCommand([
-      "bun",
-      "run",
-      "src/scripts/generate-tag-episode-index.ts",
-    ]);
+    await runCommand(["bun", "run", "src/hugo/generate-tag-episode-index.ts"]);
 
     console.log(outputPath);
   } catch (error) {
