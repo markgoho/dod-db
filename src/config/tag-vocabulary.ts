@@ -7398,6 +7398,7 @@ export const tagVocabulary: TagDefinition[] = [
     description:
       "The male head of a household in Roman society, possessing legal authority over his family members",
     status: "proposed",
+    episodes: [179],
   },
   {
     canonical: "Coitus interruptus",
@@ -10088,8 +10089,53 @@ export const tagVocabulary: TagDefinition[] = [
     category: "miscellaneous",
     description:
       "Supporters of the 'Data Over Dogma' podcast who contribute financially, often receiving exclusive content.",
+    status: "rejected",
+    addedInEpisode: 179,
+  },
+  {
+    canonical: "Accommodationism",
+    variations: ["accommodationism", "accommodates"],
+    category: "theology",
+    description:
+      "The theological framework asserting that divine revelation adapts to the cultural, linguistic, and intellectual capacities of its original human recipients.",
     status: "proposed",
     addedInEpisode: 179,
+    episodes: [179],
+  },
+  {
+    canonical: "Ezer kenegdo",
+    variations: ["ezer kenegdo", "kenegdo", "ezer", "help meet"],
+    category: "theology",
+    description:
+      "The Hebrew expression in Genesis 2:18 traditionally rendered 'help meet', designating an equal or corresponding partner.",
+    status: "proposed",
+    addedInEpisode: 179,
+    episodes: [179],
+  },
+  {
+    canonical: "El Shaddai",
+    variations: ["El Shaddai"],
+    category: "theology",
+    description:
+      "A divine name or epithet in the Hebrew Bible frequently translated as 'God Almighty', characteristic of the patriarchal narratives in Genesis.",
+    status: "proposed",
+    addedInEpisode: 179,
+    episodes: [179],
+  },
+  {
+    canonical: "Church Fathers",
+    variations: [
+      "Church fathers",
+      "church fathers",
+      "patristic authors",
+      "patristic",
+    ],
+    category: "people",
+    description:
+      "Influential early Christian theologians, bishops, and writers whose works helped define historic orthodoxy and manuscript transmission.",
+    status: "proposed",
+    addedInEpisode: 179,
+    episodes: [179],
   },
 ];
 

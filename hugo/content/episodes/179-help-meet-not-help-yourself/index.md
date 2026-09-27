@@ -7,34 +7,34 @@ aliases:
   - /episodes/179/
 audioUrl: https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/168709095.mp3?sig=3moNH4Vra3o_r9MYl6RGjNPbF37FduvoeQwwHTHCWjY%3D
 topics:
-  - King James Bible
-  - Dead Sea Scrolls
-  - Masoretic Text
-  - Deutero-Isaiah
-  - Septuagint
   - Marriage
-  - Adultery
   - YHWH
-  - Hell
+  - Septuagint
+  - Dead Sea Scrolls
   - Jacob
+  - King James Bible
+  - Masoretic Text
+  - Adultery
+  - Deutero-Isaiah
+  - Hell
   - Paul
 tags:
-  - cognitive dissonance
-  - source criticism
-  - William Tyndale
-  - Deuteronomy
   - Jeremiah
-  - Catholicism
   - Abraham
-  - Origen
+  - Desiderius Erasmus
+  - Deuteronomy
   - Isaac
   - Moses
-  - Desiderius Erasmus
+  - Catholicism
+  - cognitive dissonance
+  - Justin Martyr
   - Latin Vulgate
   - Martin Luther
-  - Justin Martyr
+  - Origen
   - Protestantism
+  - source criticism
   - Tertullian
+  - William Tyndale
 books:
   - 1 Corinthians
   - Exodus

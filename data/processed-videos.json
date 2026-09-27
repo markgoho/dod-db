@@ -32238,71 +32238,51 @@
     "transcriptPath": "data/transcripts/2026-09-06-help-meet-not-help-yourself.txt",
     "tags": [
       {
-        "tag": "cognitive dissonance",
-        "mentions": 1
-      },
-      {
-        "tag": "King James Bible",
-        "mentions": 2
-      },
-      {
-        "tag": "Dead Sea Scrolls",
-        "mentions": 2
-      },
-      {
-        "tag": "source criticism",
-        "mentions": 1
-      },
-      {
-        "tag": "William Tyndale",
-        "mentions": 1
-      },
-      {
-        "tag": "Masoretic Text",
-        "mentions": 2
-      },
-      {
-        "tag": "Deutero-Isaiah",
-        "mentions": 1
-      },
-      {
-        "tag": "Deuteronomy",
-        "mentions": 2
-      },
-      {
-        "tag": "Septuagint",
-        "mentions": 3
+        "tag": "Marriage",
+        "mentions": 9
       },
       {
         "tag": "Jeremiah",
         "mentions": 6
       },
       {
-        "tag": "Catholicism",
-        "mentions": 1
-      },
-      {
-        "tag": "Marriage",
-        "mentions": 9
-      },
-      {
-        "tag": "Adultery",
-        "mentions": 1
+        "tag": "YHWH",
+        "mentions": 6
       },
       {
         "tag": "Abraham",
         "mentions": 4
       },
       {
-        "tag": "YHWH",
-        "mentions": 6
+        "tag": "Desiderius Erasmus",
+        "mentions": 3
       },
       {
-        "tag": "Origen",
-        "mentions": 1
+        "tag": "Septuagint",
+        "mentions": 3
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 2
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 2
       },
       {
         "tag": "Isaac",
+        "mentions": 2
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 2
+      },
+      {
+        "tag": "King James Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "Masoretic Text",
         "mentions": 2
       },
       {
@@ -32310,12 +32290,28 @@
         "mentions": 2
       },
       {
+        "tag": "Adultery",
+        "mentions": 1
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "cognitive dissonance",
+        "mentions": 1
+      },
+      {
+        "tag": "Deutero-Isaiah",
+        "mentions": 1
+      },
+      {
         "tag": "Hell",
         "mentions": 1
       },
       {
-        "tag": "Desiderius Erasmus",
-        "mentions": 3
+        "tag": "Justin Martyr",
+        "mentions": 1
       },
       {
         "tag": "Latin Vulgate",
@@ -32326,7 +32322,11 @@
         "mentions": 1
       },
       {
-        "tag": "Justin Martyr",
+        "tag": "Origen",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
         "mentions": 1
       },
       {
@@ -32334,15 +32334,15 @@
         "mentions": 1
       },
       {
+        "tag": "source criticism",
+        "mentions": 1
+      },
+      {
         "tag": "Tertullian",
         "mentions": 1
       },
       {
-        "tag": "Jacob",
-        "mentions": 2
-      },
-      {
-        "tag": "Paul",
+        "tag": "William Tyndale",
         "mentions": 1
       }
     ],
