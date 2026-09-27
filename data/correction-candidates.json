@@ -337,15 +337,16 @@
       "original": "century ce",
       "corrected": "century CE",
       "category": "capitalization",
-      "totalOccurrences": 16,
-      "episodeCount": 6,
+      "totalOccurrences": 18,
+      "episodeCount": 7,
       "episodes": [
         "_zou11pMRag",
         "gW6w-AOiKNM",
         "5bA0OigwXR4",
         "_8in-xz4L8o",
         "K0kobJi-sLI",
-        "OsQMmt2QnPU"
+        "OsQMmt2QnPU",
+        "168709095"
       ],
       "examples": [
         "\"the second century ce, and Paul\"",
@@ -361,7 +362,7 @@
       "episodeIds": ["_zou11pMRag", "_zou11pMRag", "_zou11pMRag"],
       "confidence": 85,
       "firstSeen": "2026-01-11T17:59:30.300Z",
-      "lastSeen": "2026-01-13T22:24:48.362Z",
+      "lastSeen": "2026-09-27T19:11:50.723Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:05:33.332Z",
       "reviewedBy": "UI Review"
@@ -9000,9 +9001,9 @@
       "original": "Data over",
       "corrected": "Data Over",
       "category": "capitalization",
-      "totalOccurrences": 4,
-      "episodeCount": 2,
-      "episodes": ["164852788", "166129945"],
+      "totalOccurrences": 6,
+      "episodeCount": 3,
+      "episodes": ["164852788", "166129945", "168709095"],
       "examples": [
         "\"Data over dogma is\"",
         "\"production of data over dogma media,\""
@@ -9013,18 +9014,18 @@
       ],
       "timestamps": ["00:56:48.790", "00:56:48.790"],
       "episodeIds": ["164852788", "164852788"],
-      "confidence": 40,
+      "confidence": 65,
       "firstSeen": "2026-08-02T19:33:45.769Z",
-      "lastSeen": "2026-08-21T18:15:03.666Z",
+      "lastSeen": "2026-09-27T19:11:50.723Z",
       "status": "pending"
     },
     "over dogma→Over Dogma": {
       "original": "over dogma",
       "corrected": "Over Dogma",
       "category": "capitalization",
-      "totalOccurrences": 4,
-      "episodeCount": 2,
-      "episodes": ["164852788", "166129945"],
+      "totalOccurrences": 6,
+      "episodeCount": 3,
+      "episodes": ["164852788", "166129945", "168709095"],
       "examples": [
         "\"Data over dogma is a\"",
         "\"of data over dogma media, llc.\""
@@ -9035,9 +9036,9 @@
       ],
       "timestamps": ["00:56:48.790", "00:56:48.790"],
       "episodeIds": ["164852788", "164852788"],
-      "confidence": 40,
+      "confidence": 65,
       "firstSeen": "2026-08-02T19:33:45.769Z",
-      "lastSeen": "2026-08-21T18:15:03.666Z",
+      "lastSeen": "2026-09-27T19:11:50.723Z",
       "status": "pending"
     },
     "adherence→adherents": {
@@ -9447,5 +9448,5 @@
       "status": "pending"
     }
   },
-  "lastUpdated": "2026-09-08T18:59:51.105Z"
+  "lastUpdated": "2026-09-27T19:11:50.723Z"
 }

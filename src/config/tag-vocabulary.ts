@@ -10073,6 +10073,24 @@ export const tagVocabulary: TagDefinition[] = [
     status: "proposed",
     addedInEpisode: 178,
   },
+  {
+    canonical: "Oral tradition",
+    variations: ["Oral cultures", "Oral transmission", "Oral traditions"],
+    category: "scholarship",
+    description:
+      "The process of transmitting stories, knowledge, and cultural material by word of mouth, a significant aspect of ancient societies and biblical transmission studies.",
+    status: "proposed",
+    addedInEpisode: 179,
+  },
+  {
+    canonical: "Patrons",
+    variations: [],
+    category: "miscellaneous",
+    description:
+      "Supporters of the 'Data Over Dogma' podcast who contribute financially, often receiving exclusive content.",
+    status: "proposed",
+    addedInEpisode: 179,
+  },
 ];
 
 export function getAllSearchableTerms(

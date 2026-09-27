@@ -32228,5 +32228,199 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "168709095",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/168709095.mp3?sig=3moNH4Vra3o_r9MYl6RGjNPbF37FduvoeQwwHTHCWjY%3D",
+    "title": "Help Meet, Not Help Yourself",
+    "publishedAt": "2026-09-06T06:00:07.000Z",
+    "processedAt": "2026-09-27T19:10:59.201Z",
+    "transcriptPath": "data/transcripts/2026-09-06-help-meet-not-help-yourself.txt",
+    "tags": [
+      {
+        "tag": "cognitive dissonance",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Bible",
+        "mentions": 2
+      },
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 2
+      },
+      {
+        "tag": "source criticism",
+        "mentions": 1
+      },
+      {
+        "tag": "William Tyndale",
+        "mentions": 1
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 2
+      },
+      {
+        "tag": "Deutero-Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 2
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 3
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 6
+      },
+      {
+        "tag": "Catholicism",
+        "mentions": 1
+      },
+      {
+        "tag": "Marriage",
+        "mentions": 9
+      },
+      {
+        "tag": "Adultery",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 4
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 6
+      },
+      {
+        "tag": "Origen",
+        "mentions": 1
+      },
+      {
+        "tag": "Isaac",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Desiderius Erasmus",
+        "mentions": 3
+      },
+      {
+        "tag": "Latin Vulgate",
+        "mentions": 1
+      },
+      {
+        "tag": "Martin Luther",
+        "mentions": 1
+      },
+      {
+        "tag": "Justin Martyr",
+        "mentions": 1
+      },
+      {
+        "tag": "Protestantism",
+        "mentions": 1
+      },
+      {
+        "tag": "Tertullian",
+        "mentions": 1
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 2
+      },
+      {
+        "tag": "Paul",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:09.445]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:02:09.445]",
+        "endTimestamp": "[00:28:15.635]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Women as Property",
+        "summary": "Mark Driscoll's garden analogy treats wives as property"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:28:15.635]",
+        "endTimestamp": "[00:54:59.384]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Textual Transmission",
+        "summary": "Translations are reliable, but copying changed biblical texts"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 179,
+    "scriptures": [
+      {
+        "book": "1 Corinthians",
+        "references": ["1 Corinthians 11", "1 Corinthians", "1 Corinthians 7"],
+        "mentions": 4
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 3", "Exodus 6", "Exodus 6:3"],
+        "mentions": 4
+      },
+      {
+        "book": "Jeremiah",
+        "references": ["Jeremiah"],
+        "mentions": 3
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah", "Isaiah 1", "Isaiah 56"],
+        "mentions": 3
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 3", "Genesis 15:7"],
+        "mentions": 2
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 22"],
+        "mentions": 1
+      },
+      {
+        "book": "John",
+        "references": ["John"],
+        "mentions": 1
+      },
+      {
+        "book": "Luke",
+        "references": ["Luke 1"],
+        "mentions": 1
+      },
+      {
+        "book": "2 Corinthians",
+        "references": ["2 Corinthians"],
+        "mentions": 1
+      }
+    ]
   }
 ]
