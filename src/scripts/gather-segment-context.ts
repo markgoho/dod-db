@@ -94,6 +94,37 @@ async function main(): Promise<void> {
 
     const episodeTitle = extractCleanTitle(video.title);
     const segments = (video.segments as EpisodeSegment[] | undefined) ?? [];
+    const unverifiedSegments = segments.filter(
+      segment => segment.confidence !== "verified",
+    );
+
+    // Unverified segments must be resolved first; otherwise a segmented
+    // episode would fall through to episode-topic mode.
+    if (unverifiedSegments.length > 0) {
+      console.log(
+        JSON.stringify(
+          {
+            mode: "unverified-segments",
+            episodeNumber: args.episodeNumber,
+            videoId: video.videoId,
+            episodeTitle,
+            transcriptPath: video.transcriptPath,
+            segments: unverifiedSegments.map(
+              ({ type, startTimestamp, endTimestamp, detectionMethod }) => ({
+                type,
+                startTimestamp,
+                endTimestamp,
+                detectionMethod,
+              }),
+            ),
+          },
+          undefined,
+          2,
+        ),
+      );
+      return;
+    }
+
     const analyzableSegments = segments.filter(segment =>
       shouldAnalyzeSegment(segment, args.force),
     );

@@ -28,8 +28,9 @@ Before saving an episode topic, always re-run gather with `--force` to confirm t
    ```bash
    bun run src/scripts/gather-segment-context.ts <episode-number> --force
    ```
-2. Reason directly in the agent from the JSON output. Treat any pre-existing labels you happen to see as prior art only — do not anchor to them. Independently pick the best label from the transcript context and only keep the prior label if it is genuinely the best choice.
-3. Save results with stdin using a quoted heredoc:
+2. If gather returns `unverified-segments`, resolve those segments first (see "Unverified segments" below), then re-run gather with `--force`.
+3. Reason directly in the agent from the JSON output. Treat any pre-existing labels you happen to see as prior art only — do not anchor to them. Independently pick the best label from the transcript context and only keep the prior label if it is genuinely the best choice.
+4. Save results with stdin using a quoted heredoc:
    ```bash
    bun run src/scripts/save-segment-results.ts <<'EOF'
    {
@@ -41,7 +42,7 @@ Before saving an episode topic, always re-run gather with `--force` to confirm t
    EOF
    ```
    Prefer stdin via a quoted heredoc. Avoid inline `printf` JSON because quotes and apostrophes inside the payload can break shell parsing. Do not create temporary JSON files unless stdin is genuinely unavailable.
-4. Check the stable review summary printed by the save script and make sure it matches the intended outcome before reporting completion. Do not assume the save did the right thing without verifying the output.
+5. Check the stable review summary printed by the save script and make sure it matches the intended outcome before reporting completion. Do not assume the save did the right thing without verifying the output.
 
 ## Gather output
 
@@ -50,6 +51,37 @@ The gather script returns one of these modes:
 - `segments` — includes a `segments` array with gathered transcript context
 - `episode-topic` — includes `guestNames` and `transcriptPath`
 - `no-op` — nothing needs updating
+- `unverified-segments` — some segments are still `auto`; includes `transcriptPath` and the unverified `segments` (`type`, `startTimestamp`, `endTimestamp`, `detectionMethod`)
+
+## Unverified segments
+
+New episodes usually arrive with every segment still `auto`. Normally the user verifies them in the tool server (`bun run tools`) before running this skill. When gather returns `unverified-segments`, verify them yourself only when the transcript makes each one unambiguous:
+
+- Read the transcript near each `startTimestamp`. The hosts usually preview the segments in the intro and announce each one when it starts, for example "let's just dive in here with Taking Issue" or "move on to our... What's that?"
+- Treat the `intro` and `outro` as structural. Verify them when their boundaries look right.
+- A generic `segment` type from audio detection needs its real type (for example `what-is-that`). Use the announced name.
+- Verify with stdin:
+  ```bash
+  bun run src/scripts/verify-segments.ts <<'EOF'
+  {
+    "episodeNumber": 180,
+    "segments": [
+      { "startTimestamp": "[00:00:00.000]", "type": "intro" },
+      { "startTimestamp": "[00:03:49.420]", "type": "taking-issue" },
+      { "startTimestamp": "[00:26:57.098]", "type": "what-is-that" }
+    ]
+  }
+  EOF
+  ```
+- In the final report, list each verified segment and the transcript line that confirms it.
+
+Stop and ask the user to verify in the tool server when any of these is true:
+
+- A segment's type is unclear, or no announcement in the transcript supports it.
+- A segment boundary looks wrong, for example the start is far from the announcement.
+- The transcript announces a segment that detection missed, or detection found a segment that the transcript does not support.
+
+Do not save labels or an episode topic while any segment is still `auto`.
 
 For `segments`, each item includes:
 
