@@ -9,6 +9,8 @@ export type ChunkingConfig = {
 /**
  * Chunking config for LLM correction passes.
  * Larger chunks to maintain context during correction.
+ * The pipeline chunks on line boundaries and uses only maxLength; the other
+ * fields are kept for the llm-chunk runners in experiments/.
  */
 export const correctionChunking: ChunkingConfig = {
   minLength: 5000,

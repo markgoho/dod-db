@@ -1,4 +1,12 @@
-import { beforeEach, describe, expect, mock, spyOn, test } from "bun:test";
+import {
+  afterEach,
+  beforeEach,
+  describe,
+  expect,
+  mock,
+  spyOn,
+  test,
+} from "bun:test";
 import type { TagDefinition } from "../config/tag-vocabulary.js";
 
 const generateContentMock = mock(async () => ({ text: "" }));
@@ -65,13 +73,19 @@ const bridePrice = {
   variations: ["mohar"],
 };
 
+let logSpy: ReturnType<typeof spyOn>;
+
 beforeEach(() => {
   generateContentMock.mockReset();
   addTagToVocabularyMock.mockReset();
   updateTagInVocabularyMock.mockReset();
   tagExistsMock.mockReset();
   tagExistsMock.mockImplementation(() => false);
-  spyOn(console, "log").mockImplementation(mock(() => {}));
+  logSpy = spyOn(console, "log").mockImplementation(mock(() => {}));
+});
+
+afterEach(() => {
+  logSpy.mockRestore();
 });
 
 describe("countMentions", () => {

@@ -10,6 +10,7 @@ CORRECTION GUIDELINES:
    - Do NOT change "Adonai" to "Yahweh" or "YHWH"
    - Do NOT change "God" to "Elohim" or vice versa
    - The transcript must reflect the speaker's actual words, not scholarly substitutions
+   - Do NOT change numbers, years, dates, or people's names unless the transcribed form is clearly a mishearing (keep "Copyright 2026" as 2026)
 5. CRITICAL: Preserve exact formatting with timestamp at START of each line: [HH:MM:SS.mmm] Speaker Name: text
    - Timestamps MUST remain at the beginning of the line, never at the end
    - Each line must start with [HH:MM:SS.mmm] followed by speaker name and colon

@@ -1,11 +1,16 @@
-import { chunk } from "llm-chunk";
 import { ai } from "../ai.js";
 import { correctionChunking } from "../config/chunking.js";
 import { globalCorrections } from "../config/corrections.js";
 import { reviewModel } from "../config/models.js";
 import { correctionPrompt } from "../prompts/correction.js";
 import { applyDeterministicCorrections } from "./apply-deterministic-corrections.js";
-import { deduplicateChunks } from "./deduplicate-chunks.js";
+import { chunkTranscriptLines } from "./chunk-transcript-lines.js";
+
+const timestampPattern = /^\[[\d:.]+\]/gm;
+
+function lineTimestamps(text: string): string {
+  return (text.match(timestampPattern) ?? []).join("|");
+}
 
 /**
  * Process a single chunk with the LLM.
@@ -28,11 +33,18 @@ async function processChunk(
     `    Chunk ${index + 1}/${total}: Done in ${(durationMs / 1000).toFixed(1)}s`,
   );
 
-  return {
-    index,
-    text: response.text ?? "",
-    durationMs,
-  };
+  // Never lose lines: if the model dropped, merged, or altered any timestamped
+  // line, keep this chunk uncorrected rather than risk missing text.
+  const trailing = textChunk.endsWith("\n") ? "\n" : "";
+  const corrected = (response.text ?? "").trim() + trailing;
+  if (lineTimestamps(corrected) !== lineTimestamps(textChunk)) {
+    console.warn(
+      `    ⚠ Chunk ${index + 1}/${total}: timestamps changed, keeping uncorrected text`,
+    );
+    return { index, text: textChunk, durationMs };
+  }
+
+  return { index, text: corrected, durationMs };
 }
 
 /**
@@ -44,9 +56,9 @@ async function processChunk(
  *
  * Steps:
  * 1. Apply deterministic find/replace corrections (instant, free)
- * 2. Chunk the transcript (5K-10K chars, 200 char overlap)
+ * 2. Chunk the transcript on line boundaries (up to maxLength chars, no overlap)
  * 3. Process all chunks in parallel via Promise.all (network I/O parallelism)
- * 4. Deduplicate overlaps using timestamp-aware joining
+ * 4. Join the corrected chunks with newlines
  *
  * Performance (Episode 5, 13 chunks):
  * - Sequential: 815s (~13.6 min)
@@ -54,9 +66,13 @@ async function processChunk(
  * - Speedup: 7.36x
  *
  * @param transcript - Raw or speaker-labeled transcript
+ * @param maxLength - Maximum chunk length in characters
  * @returns Corrected transcript
  */
-export async function correctTranscript(transcript: string): Promise<string> {
+export async function correctTranscript(
+  transcript: string,
+  maxLength = correctionChunking.maxLength,
+): Promise<string> {
   // 1. Apply deterministic corrections first
   console.log("  Applying deterministic corrections...");
   const { correctedText: afterDeterministic, count: deterministicCount } =
@@ -64,7 +80,7 @@ export async function correctTranscript(transcript: string): Promise<string> {
   console.log(`  ✓ Applied ${deterministicCount} deterministic corrections`);
 
   // 2. Chunk the transcript
-  const chunks = chunk(afterDeterministic, correctionChunking);
+  const chunks = chunkTranscriptLines(afterDeterministic, maxLength);
   console.log(`  Processing ${chunks.length} chunks with LLM (parallel)...`);
 
   // 3. Process all chunks in parallel (I/O-bound, not CPU-bound)
@@ -76,18 +92,14 @@ export async function correctTranscript(transcript: string): Promise<string> {
   );
   const totalTime = performance.now() - startTime;
 
-  // Sort by index to maintain correct order for deduplication
+  // Sort by index to keep chunks in transcript order
   results.sort((a, b) => a.index - b.index);
   const correctedChunks = results.map(r => r.text);
 
   console.log(`  ✓ All chunks completed in ${(totalTime / 1000).toFixed(1)}s`);
 
-  // 4. Deduplicate overlaps
-  console.log("  Deduplicating overlaps...");
-  const correctedText = deduplicateChunks(
-    correctedChunks,
-    correctionChunking.overlap,
-  );
+  // 4. Join chunks (line-aligned, so no overlap to remove)
+  const correctedText = correctedChunks.join("\n");
 
   console.log("✓ Correction complete");
 
