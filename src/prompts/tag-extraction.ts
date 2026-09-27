@@ -26,7 +26,7 @@ export const TagDiscoverySchema = z.object({
         "miscellaneous",
       ]),
       description: z.string(), // Brief context for disambiguation (1-2 sentences)
-      reason: z.string(), // Why this is a subject of this episode (1 sentence)
+      reason: z.string(), // Which segment focuses on it and why it will recur (1 sentence)
       variations: z.array(z.string()).optional(), // Alternative names, spellings, or abbreviations
       caseSensitive: z.boolean().optional(), // True for short words that match common English (Lot, Job, Mark)
     }),
@@ -67,17 +67,21 @@ export function tagExtractionPrompt(
 
 <podcast-context>
 This is "Data Over Dogma", a biblical scholarship podcast with hosts Dan McClellan and Dan Beecher.
-Listeners browse topic pages to find every episode that discusses a concept, text, figure, place, or event.
+Each tag gets a topic page. A listener who is interested in what the show says about a thing opens that thing's page to find the other episodes that talk about it.
 </podcast-context>
 
 <what-makes-a-good-tag>
-A tag is a SUBJECT OF DISCUSSION, not a word that happens to repeat.
+A tag names a thing that a segment or episode is ABOUT, and that the archive will keep coming back to.
 
-Include a term when the hosts explain, analyze, argue about, or build a point on it. A listener interested in that term would want this episode on its topic page.
-- One mention can be enough. A term named once and then discussed for minutes is a strong tag (for example, "hesed" introduced once, then unpacked as covenant loyalty).
-- Many mentions are NOT enough. A term repeated in an ad read, a joke, or a passing aside is not a tag.
+Apply both tests to every candidate. Return it only if it passes both.
+1. Focus test: Is this thing the focus of a segment or of the episode? Would a listener who wants to hear what the show says about it be glad to find THIS episode on its page?
+   - FAIL: evidence, examples, or definitions the hosts use on the way to a different point. A Hebrew term cited to rebut a claim, a divine name cited as one sign of Pentateuch sources, a word defined in an aside, or an apologetic move dismissed in a tangent fails, even when it gets a minute of explanation.
+   - PASS: the thing the segment sets out to discuss. A segment about the Letter of Aristeas, the Baal Cycle, or haplography passes.
+2. Archive test: Will this thing plausibly be the focus of other episodes too, so that its page collects several episodes? Named things (people, texts, manuscripts, places, artifacts, events, groups) pass more often than technical terms. A specific named thing can pass even when a related tag exists (Asherah Pole alongside Asherah, Baal Cycle alongside Baal); only synonyms of existing tags fail.
 
-A typical episode discusses 3-8 subjects the index does not cover yet, including Hebrew and Greek terms the hosts define. Check every segment of the episode, not only the longest one. Do not pad the list with terms that fail the test above.
+Mention counts do not matter. A thing named once can pass. A thing repeated in an ad read or a running joke fails.
+
+Most episodes introduce 0-2 new tags. Returning an empty list is normal when the already-indexed tags cover what the episode is about.
 </what-makes-a-good-tag>
 
 <ignore-these-parts-of-the-transcript>
@@ -112,7 +116,7 @@ A typical episode discusses 3-8 subjects the index does not cover yet, including
 - Use the canonical form with proper capitalization: "Septuagint" not "LXX", "John the Baptist" not "john the baptist".
 - Correct transcription errors in ancient names: "Origen" not "Origin", "Pontius Pilate" not "Pilot".
 - description: 1-2 sentences saying what the term is in general, for disambiguation. Do not describe how this episode uses it (that goes in reason).
-- reason: 1 sentence saying how THIS episode discusses it.
+- reason: 1 sentence naming the segment that focuses on it and why other episodes will return to it.
 - variations: every form that appears in the transcript, plus common alternative names, spellings, abbreviations, and derived forms. The canonical name or a variation MUST appear verbatim in the transcript, because future episodes are matched by exact text. Matching ignores case, so do not repeat the canonical name in another case. Every variation must refer ONLY to this subject: never include ordinary English words or inflections that also have everyday meanings (for "Accommodationism", "accommodates" is wrong).
 - caseSensitive: true only for short names that are also common English words ("Lot", "Job", "Mark").
 </formatting>${listSection(
@@ -136,14 +140,14 @@ A typical episode discusses 3-8 subjects the index does not cover yet, including
       "tag": "Hesed",
       "category": "theology",
       "description": "Hebrew term for covenant loyalty or steadfast love, often translated 'lovingkindness'.",
-      "reason": "The hosts unpack the term to show that Ruth's loyalty is framed as covenant obligation.",
+      "reason": "The whole segment is about what hesed means, and it is a core term the show returns to in covenant discussions.",
       "variations": ["chesed", "lovingkindness"]
     },
     {
       "tag": "Codex Sinaiticus",
       "category": "literature",
       "description": "Fourth-century Greek manuscript containing the earliest complete New Testament.",
-      "reason": "The hosts use it to show that the longer ending of Mark is missing from early manuscripts.",
+      "reason": "The segment is about this manuscript and its history, and the show cites it in many textual criticism discussions.",
       "variations": ["Sinaiticus"]
     }
   ]
