@@ -10153,6 +10153,17 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 180,
     episodes: [180],
   },
+  {
+    canonical: "Tel Dan Stele",
+    variations: ["Tel Dan"],
+    category: "literature",
+    llmVerify: true,
+    description:
+      "A fragmentary 9th-century BCE basalt inscription discovered in northern Israel containing the earliest known extrabiblical reference to the 'House of David'.",
+    status: "accepted",
+    addedInEpisode: 181,
+    episodes: [1, 7, 64, 66, 67, 139, 181],
+  },
 ];
 
 export function getAllSearchableTerms(

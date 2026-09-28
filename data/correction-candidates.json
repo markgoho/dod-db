@@ -9002,9 +9002,9 @@
       "original": "Data over",
       "corrected": "Data Over",
       "category": "capitalization",
-      "totalOccurrences": 6,
-      "episodeCount": 3,
-      "episodes": ["164852788", "166129945", "168709095"],
+      "totalOccurrences": 8,
+      "episodeCount": 4,
+      "episodes": ["164852788", "166129945", "168709095", "170040765"],
       "examples": [
         "\"Data over dogma is\"",
         "\"production of data over dogma media,\""
@@ -9015,18 +9015,18 @@
       ],
       "timestamps": ["00:56:48.790", "00:56:48.790"],
       "episodeIds": ["164852788", "164852788"],
-      "confidence": 65,
+      "confidence": 80,
       "firstSeen": "2026-08-02T19:33:45.769Z",
-      "lastSeen": "2026-09-27T19:11:50.723Z",
+      "lastSeen": "2026-09-27T23:43:09.644Z",
       "status": "pending"
     },
     "over dogma→Over Dogma": {
       "original": "over dogma",
       "corrected": "Over Dogma",
       "category": "capitalization",
-      "totalOccurrences": 6,
-      "episodeCount": 3,
-      "episodes": ["164852788", "166129945", "168709095"],
+      "totalOccurrences": 8,
+      "episodeCount": 4,
+      "episodes": ["164852788", "166129945", "168709095", "170040765"],
       "examples": [
         "\"Data over dogma is a\"",
         "\"of data over dogma media, llc.\""
@@ -9037,9 +9037,9 @@
       ],
       "timestamps": ["00:56:48.790", "00:56:48.790"],
       "episodeIds": ["164852788", "164852788"],
-      "confidence": 65,
+      "confidence": 80,
       "firstSeen": "2026-08-02T19:33:45.769Z",
-      "lastSeen": "2026-09-27T19:11:50.723Z",
+      "lastSeen": "2026-09-27T23:43:09.644Z",
       "status": "pending"
     },
     "adherence→adherents": {
@@ -9447,7 +9447,53 @@
       "firstSeen": "2026-09-08T18:59:51.104Z",
       "lastSeen": "2026-09-08T18:59:51.104Z",
       "status": "pending"
+    },
+    "Steely→Stele": {
+      "original": "Steely",
+      "corrected": "Stele",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": ["170040765"],
+      "examples": [
+        "\"Tell Dan Steely. So that\"",
+        "\"Tell Dan Steely, it was\"",
+        "\"Tel Dan Steely is going\""
+      ],
+      "correctedExamples": [
+        "\"Tel Dan Stele. So that\"",
+        "\"Tel Dan Stele, it was\"",
+        "\"Tel Dan Stele is going\""
+      ],
+      "timestamps": ["00:01:05.190", "00:47:48.160", "00:48:54.760"],
+      "episodeIds": ["170040765", "170040765", "170040765"],
+      "confidence": 20,
+      "firstSeen": "2026-09-27T23:43:09.644Z",
+      "lastSeen": "2026-09-27T23:43:09.644Z",
+      "status": "pending"
+    },
+    "Johoram→Jehoram": {
+      "original": "Johoram",
+      "corrected": "Jehoram",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["170040765"],
+      "examples": [
+        "\"the name Johoram and we\"",
+        "\"a different Johoram, king of\""
+      ],
+      "correctedExamples": [
+        "\"the name Jehoram and we\"",
+        "\"a different Jehoram, king of\""
+      ],
+      "timestamps": ["00:39:54.920", "00:40:57.540"],
+      "episodeIds": ["170040765", "170040765"],
+      "confidence": 10,
+      "firstSeen": "2026-09-27T23:43:09.644Z",
+      "lastSeen": "2026-09-27T23:43:09.644Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-09-27T21:58:33.374Z"
+  "lastUpdated": "2026-09-27T23:43:09.644Z"
 }

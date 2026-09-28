@@ -22,6 +22,7 @@ topics:
   - Stele
   - YHWH
   - Moloch
+  - Tel Dan Stele
 tags:
   - Solomon
   - Jeroboam

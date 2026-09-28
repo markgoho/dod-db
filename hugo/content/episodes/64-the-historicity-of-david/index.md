@@ -20,6 +20,7 @@ topics:
   - Marriage
   - Paul
   - Ritual Purity
+  - Tel Dan Stele
 tags:
   - Jonathan
   - Philistines

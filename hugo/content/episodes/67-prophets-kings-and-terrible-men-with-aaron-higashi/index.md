@@ -17,6 +17,7 @@ topics:
   - Marriage
   - Ritual Purity
   - Talmud
+  - Tel Dan Stele
 tags:
   - Jonathan
   - Moses

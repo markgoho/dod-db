@@ -18,6 +18,7 @@ topics:
   - Mary Magdalene
   - Masoretic Text
   - Satan
+  - Tel Dan Stele
 tags:
   - Baal
   - Judaism

@@ -137,6 +137,10 @@
       {
         "tag": "Ugaritic literature",
         "mentions": 1
+      },
+      {
+        "tag": "Tel Dan Stele",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -1363,6 +1367,10 @@
       {
         "tag": "Ugaritic literature",
         "mentions": 3
+      },
+      {
+        "tag": "Tel Dan Stele",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -11760,6 +11768,10 @@
       {
         "tag": "Sea of Galilee",
         "mentions": 1
+      },
+      {
+        "tag": "Tel Dan Stele",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -12026,6 +12038,10 @@
       {
         "tag": "Ugaritic literature",
         "mentions": 1
+      },
+      {
+        "tag": "Tel Dan Stele",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -12187,6 +12203,10 @@
       },
       {
         "tag": "Talmud",
+        "mentions": 1
+      },
+      {
+        "tag": "Tel Dan Stele",
         "mentions": 1
       }
     ],
@@ -24912,6 +24932,10 @@
       {
         "tag": "Moloch",
         "mentions": 8
+      },
+      {
+        "tag": "Tel Dan Stele",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -32555,6 +32579,199 @@
         "book": "1 Timothy",
         "references": ["1 Timothy"],
         "mentions": 1
+      }
+    ]
+  },
+  {
+    "videoId": "170040765",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/170040765.mp3?sig=_Ww7V3lIZ-rDzeyd4ob0-6Xbcuvkav5XCJDO32jXymM%3D",
+    "title": "Dan Tells Dan About Tel Dan",
+    "publishedAt": "2026-09-20T06:10:00.000Z",
+    "processedAt": "2026-09-27T23:41:41.049Z",
+    "transcriptPath": "data/transcripts/2026-09-20-dan-tells-dan-about-tel-dan.txt",
+    "tags": [
+      {
+        "tag": "Sanhedrin",
+        "mentions": 8
+      },
+      {
+        "tag": "Omni Attributes",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 9
+      },
+      {
+        "tag": "Pharisees",
+        "mentions": 10
+      },
+      {
+        "tag": "Sadducees",
+        "mentions": 5
+      },
+      {
+        "tag": "Nazareth",
+        "mentions": 1
+      },
+      {
+        "tag": "Goliath",
+        "mentions": 2
+      },
+      {
+        "tag": "Samaria",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Hagar",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 2
+      },
+      {
+        "tag": "Torah",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 4
+      },
+      {
+        "tag": "Baal",
+        "mentions": 2
+      },
+      {
+        "tag": "Jehu",
+        "mentions": 17
+      },
+      {
+        "tag": "Herod the Great",
+        "mentions": 2
+      },
+      {
+        "tag": "Elhanan son of Jair",
+        "mentions": 1
+      },
+      {
+        "tag": "Ahaziah",
+        "mentions": 16
+      },
+      {
+        "tag": "Joram",
+        "mentions": 10
+      },
+      {
+        "tag": "Moab",
+        "mentions": 3
+      },
+      {
+        "tag": "Naboth",
+        "mentions": 1
+      },
+      {
+        "tag": "David",
+        "mentions": 22
+      },
+      {
+        "tag": "Angel",
+        "mentions": 1
+      },
+      {
+        "tag": "Stele",
+        "mentions": 8
+      },
+      {
+        "tag": "Paul",
+        "mentions": 40
+      },
+      {
+        "tag": "Ahab",
+        "mentions": 4
+      },
+      {
+        "tag": "Tel Dan Stele",
+        "mentions": 7
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:52.553]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:01:52.553]",
+        "endTimestamp": "[00:32:49.325]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Acts 23-26",
+        "summary": "Paul's trials and imprisonment before his journey to Rome"
+      },
+      {
+        "type": "artifacts-and-fiction",
+        "startTimestamp": "[00:32:49.325]",
+        "endTimestamp": "[00:57:22.953]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Tel Dan",
+        "summary": "Aramean victory stele with the earliest House of David reference"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 181,
+    "scriptures": [
+      {
+        "book": "2 Kings",
+        "references": ["2 Kings", "2 Kings 9", "2 Kings 12:17-18"],
+        "mentions": 5
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges 4", "Judges 5"],
+        "mentions": 5
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts 23", "Acts 23:1", "Acts 25:10", "Acts 26"],
+        "mentions": 4
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation 2"],
+        "mentions": 2
+      },
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 2"],
+        "mentions": 2
+      },
+      {
+        "book": "1 Chronicles",
+        "references": ["1 Chronicles"],
+        "mentions": 2
+      },
+      {
+        "book": "Exodus",
+        "references": ["Exodus 15"],
+        "mentions": 2
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 1", "Genesis 2"],
+        "mentions": 2
       }
     ]
   }

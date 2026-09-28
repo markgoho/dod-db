@@ -24,6 +24,7 @@ topics:
   - Jephthah
   - Josiah
   - Masoretes
+  - Tel Dan Stele
 tags:
   - Moab
   - Deuteronomy

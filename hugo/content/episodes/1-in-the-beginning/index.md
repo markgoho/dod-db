@@ -18,6 +18,7 @@ topics:
   - King James Bible
   - Monotheism
   - Omni Attributes
+  - Tel Dan Stele
 tags:
   - Baal
   - Adam
