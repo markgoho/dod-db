@@ -12,6 +12,7 @@ topics:
   - Witch of Endor
   - Jacob
   - YHWH
+  - Elohim
 tags:
   - Samuel
   - Anatolia

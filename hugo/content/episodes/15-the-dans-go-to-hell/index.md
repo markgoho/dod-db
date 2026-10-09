@@ -20,6 +20,7 @@ topics:
   - Satan
   - Triumphal Entry
   - YHWH
+  - Elohim
 tags:
   - Judas Iscariot
   - Jerusalem

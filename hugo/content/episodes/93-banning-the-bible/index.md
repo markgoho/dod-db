@@ -18,6 +18,7 @@ topics:
   - King James Bible
   - Marriage
   - Samson
+  - Elohim
 tags:
   - Deuteronomy
   - Moses

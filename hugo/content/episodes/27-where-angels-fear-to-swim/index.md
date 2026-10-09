@@ -20,6 +20,7 @@ topics:
   - Marriage
   - Satan
   - Septuagint
+  - Elohim
 tags:
   - Flood
   - Judaism

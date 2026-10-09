@@ -20,6 +20,7 @@ topics:
   - King James Bible
   - Pharisees
   - Philo of Alexandria
+  - Elohim
 tags:
   - Hypostasis
   - Judaism

@@ -20,6 +20,7 @@ topics:
   - Angel
   - Paul
   - Shepherd of Hermas
+  - Elohim
 tags:
   - John of Patmos
   - Deuteronomy

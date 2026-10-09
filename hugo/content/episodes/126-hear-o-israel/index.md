@@ -20,6 +20,7 @@ topics:
   - Hell
   - Sennacherib
   - Septuagint
+  - Elohim
 tags:
   - Deuteronomy
   - Jeremiah

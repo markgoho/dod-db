@@ -16,6 +16,7 @@ topics:
   - Masoretic Text
   - Paul
   - Philo of Alexandria
+  - Elohim
 tags:
   - Judaism
   - Catholicism

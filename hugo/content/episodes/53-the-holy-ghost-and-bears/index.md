@@ -15,6 +15,7 @@ topics:
   - Omni Attributes
   - YHWH
   - Philo of Alexandria
+  - Elohim
 tags:
   - Elijah
   - Samuel

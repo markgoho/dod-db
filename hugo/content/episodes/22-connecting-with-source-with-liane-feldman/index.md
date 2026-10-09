@@ -13,6 +13,7 @@ topics:
   - Ritual Purity
   - Arad
   - King James Bible
+  - Elohim
 tags:
   - Moses
   - Deuteronomy

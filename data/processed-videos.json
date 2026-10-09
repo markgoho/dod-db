@@ -141,6 +141,10 @@
       {
         "tag": "Tel Dan Stele",
         "mentions": 3
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 8
       }
     ],
     "segments": [
@@ -1371,6 +1375,10 @@
       {
         "tag": "Tel Dan Stele",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 5
       }
     ],
     "segments": [
@@ -2752,6 +2760,10 @@
       {
         "tag": "YHWH",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -3351,6 +3363,10 @@
       {
         "tag": "Ugaritic literature",
         "mentions": 2
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 7
       }
     ],
     "segments": [
@@ -3581,6 +3597,10 @@
       {
         "tag": "Philo of Alexandria",
         "mentions": 5
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -4278,6 +4298,10 @@
       {
         "tag": "Noah",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 5
       }
     ],
     "segments": [
@@ -5008,6 +5032,10 @@
       {
         "tag": "Sodom",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 4
       }
     ],
     "segments": [
@@ -5264,6 +5292,10 @@
       {
         "tag": "Ugaritic literature",
         "mentions": 3
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -5776,6 +5808,10 @@
       {
         "tag": "Asherah Pole",
         "mentions": 2
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -7387,6 +7423,10 @@
       },
       {
         "tag": "Univocality",
+        "mentions": 1
+      },
+      {
+        "tag": "Elohim",
         "mentions": 1
       }
     ],
@@ -9512,6 +9552,10 @@
       {
         "tag": "Philo of Alexandria",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -10563,6 +10607,10 @@
       {
         "tag": "Witch of Endor",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 16
       }
     ],
     "segments": [
@@ -10814,6 +10862,10 @@
       {
         "tag": "Philo of Alexandria",
         "mentions": 10
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -11563,6 +11615,10 @@
       {
         "tag": "Ugarit",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -11889,6 +11945,10 @@
       },
       {
         "tag": "YHWH",
+        "mentions": 1
+      },
+      {
+        "tag": "Elohim",
         "mentions": 1
       }
     ],
@@ -14467,6 +14527,10 @@
       {
         "tag": "Moloch",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -16602,6 +16666,10 @@
       {
         "tag": "Sodom",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -20208,6 +20276,10 @@
       {
         "tag": "Ugaritic literature",
         "mentions": 2
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -21455,6 +21527,10 @@
       {
         "tag": "Polygamy",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 6
       }
     ],
     "segments": [
@@ -22068,6 +22144,10 @@
       {
         "tag": "Ugaritic literature",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 5
       }
     ],
     "segments": [
@@ -22503,6 +22583,10 @@
       {
         "tag": "Septuagint",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -23338,6 +23422,10 @@
       {
         "tag": "Solomon",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -23909,6 +23997,10 @@
       {
         "tag": "Philo of Alexandria",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -24057,6 +24149,10 @@
       },
       {
         "tag": "Ugaritic literature",
+        "mentions": 1
+      },
+      {
+        "tag": "Elohim",
         "mentions": 1
       }
     ],
@@ -27322,6 +27418,10 @@
       {
         "tag": "Moloch",
         "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -27815,6 +27915,10 @@
       {
         "tag": "Philo of Alexandria",
         "mentions": 2
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 19
       }
     ],
     "segments": [
@@ -29834,6 +29938,10 @@
       {
         "tag": "Shepherd of Hermas",
         "mentions": 10
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -31461,6 +31569,10 @@
       {
         "tag": "Haplography",
         "mentions": 4
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -32772,6 +32884,212 @@
         "book": "Genesis",
         "references": ["Genesis 1", "Genesis 2"],
         "mentions": 2
+      }
+    ]
+  },
+  {
+    "videoId": "170666872",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/170666872.mp3?sig=9QTOnO6M7xJB1jBrz-11JYNNjG2DVW_Pqok7zqrG6Hw%3D",
+    "title": "Old Testament God Bad, New Testament God Good?",
+    "publishedAt": "2026-09-27T06:00:06.000Z",
+    "processedAt": "2026-10-09T02:32:00.837Z",
+    "transcriptPath": "data/transcripts/2026-09-27-old-testament-god-bad-new-testament-god-good.txt",
+    "tags": [
+      {
+        "tag": "Deutero-Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Monotheism",
+        "mentions": 4
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 12
+      },
+      {
+        "tag": "Ammonites",
+        "mentions": 1
+      },
+      {
+        "tag": "Christmas",
+        "mentions": 1
+      },
+      {
+        "tag": "Jeremiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 5
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 4
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 7
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 29
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 1
+      },
+      {
+        "tag": "Islam",
+        "mentions": 1
+      },
+      {
+        "tag": "Baal",
+        "mentions": 2
+      },
+      {
+        "tag": "Jehu",
+        "mentions": 1
+      },
+      {
+        "tag": "Tel Dan Stele",
+        "mentions": 1
+      },
+      {
+        "tag": "Gnosticism",
+        "mentions": 2
+      },
+      {
+        "tag": "Flood",
+        "mentions": 1
+      },
+      {
+        "tag": "Abimelech",
+        "mentions": 3
+      },
+      {
+        "tag": "Ahaziah",
+        "mentions": 1
+      },
+      {
+        "tag": "Joram",
+        "mentions": 1
+      },
+      {
+        "tag": "Marcion",
+        "mentions": 9
+      },
+      {
+        "tag": "Daniel",
+        "mentions": 1
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 1
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 1
+      },
+      {
+        "tag": "Endor",
+        "mentions": 1
+      },
+      {
+        "tag": "Stele",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
+      },
+      {
+        "tag": "Saul",
+        "mentions": 3
+      },
+      {
+        "tag": "Moab",
+        "mentions": 1
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 25
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:19.640]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "watch-your-language",
+        "startTimestamp": "[00:03:19.640]",
+        "endTimestamp": "[00:33:54.557]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Elohim",
+        "summary": "Hebrew words El, Eloah, Elohim, and pejoratives for gods"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:33:54.557]",
+        "endTimestamp": "[00:58:13.369]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Super&shy;sessionism",
+        "summary": "Why Old Testament bad, New Testament good is anti-Semitic"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 182,
+    "scriptures": [
+      {
+        "book": "Deuteronomy",
+        "references": [
+          "Deuteronomy 4:19",
+          "Deuteronomy 6:4",
+          "Deuteronomy 32",
+          "Deuteronomy 365"
+        ],
+        "mentions": 4
+      },
+      {
+        "book": "1 Samuel",
+        "references": ["1 Samuel 28"],
+        "mentions": 2
+      },
+      {
+        "book": "2 Chronicles",
+        "references": ["2 Chronicles", "2 Chronicles 321"],
+        "mentions": 2
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 2
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 20:13"],
+        "mentions": 1
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 219"],
+        "mentions": 1
+      },
+      {
+        "book": "1 Kings",
+        "references": ["1 Kings 11"],
+        "mentions": 1
+      },
+      {
+        "book": "Luke",
+        "references": ["Luke"],
+        "mentions": 1
       }
     ]
   }

@@ -22,6 +22,7 @@ topics:
   - King James Bible
   - Sennacherib
   - Philo of Alexandria
+  - Elohim
 tags:
   - Letter of Aristeas
   - Jerusalem

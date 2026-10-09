@@ -1401,10 +1401,17 @@ export const tagVocabulary: TagDefinition[] = [
     ],
   },
   {
-    canonical: "elohim",
-    variations: [],
+    canonical: "Elohim",
+    variations: ["HaElohim", "Elohei"],
     category: "theology",
-    status: "rejected",
+    llmVerify: true,
+    description:
+      "The Hebrew word Elohim itself as a subject: its grammatically plural form, whether it means God or gods in context, and its translation as God, gods, angels, or judges",
+    status: "accepted",
+    episodes: [
+      1, 7, 15, 18, 19, 22, 27, 28, 31, 40, 53, 58, 59, 63, 65, 81, 93, 115,
+      121, 124, 126, 131, 134, 135, 152, 155, 165, 174, 182,
+    ],
   },
   {
     canonical: "Ham",
@@ -5496,11 +5503,12 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "el",
-    variations: ["Elohim"],
+    variations: [],
     category: "character",
     description:
       "The high god in the Canaanite pantheon, often associated with wisdom and authority",
     status: "proposed",
+    episodes: [182],
   },
   {
     canonical: "anat",
@@ -10163,6 +10171,16 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     addedInEpisode: 181,
     episodes: [1, 7, 64, 66, 67, 139, 181],
+  },
+  {
+    canonical: "Supersessionism",
+    variations: ["supersessionist"],
+    category: "theology",
+    description:
+      "The theological doctrine that the Christian Church has replaced or superseded Israel and Judaism in God's covenant relationship.",
+    status: "proposed",
+    addedInEpisode: 182,
+    episodes: [182],
   },
 ];
 

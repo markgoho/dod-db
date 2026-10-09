@@ -18,6 +18,7 @@ topics:
   - King James Bible
   - Trinity
   - Univocality
+  - Elohim
 tags:
   - Samuel
   - Philistines

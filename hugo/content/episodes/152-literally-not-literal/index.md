@@ -16,6 +16,7 @@ topics:
   - Masoretic Text
   - Univocality
   - Moloch
+  - Elohim
 tags:
   - Origen
   - inerrancy

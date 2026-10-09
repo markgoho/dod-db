@@ -4252,22 +4252,24 @@
       "original": "noon",
       "corrected": "nun",
       "category": "spelling",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["pXbbaMXd62k"],
+      "totalOccurrences": 6,
+      "episodeCount": 2,
+      "episodes": ["pXbbaMXd62k", "170666872"],
       "examples": [
         "\"with the noon and the\"",
-        "\"means the noon gets assimilated\""
+        "\"means the noon gets assimilated\"",
+        "\"But the noon in Hebrew,\""
       ],
       "correctedExamples": [
         "\"with the nun and the\"",
-        "\"means the nun gets assimilated\""
+        "\"means the nun gets assimilated\"",
+        "\"But the nun in Hebrew,\""
       ],
-      "timestamps": ["00:10:37.370", "00:10:37.370"],
-      "episodeIds": ["pXbbaMXd62k", "pXbbaMXd62k"],
-      "confidence": 5,
+      "timestamps": ["00:10:37.370", "00:10:37.370", "00:30:08.640"],
+      "episodeIds": ["pXbbaMXd62k", "pXbbaMXd62k", "170666872"],
+      "confidence": 40,
       "firstSeen": "2026-01-15T04:25:26.712Z",
-      "lastSeen": "2026-01-15T04:25:26.712Z",
+      "lastSeen": "2026-10-09T02:33:57.948Z",
       "status": "pending"
     },
     "Jenny's→jennies": {
@@ -9493,7 +9495,129 @@
       "firstSeen": "2026-09-27T23:43:09.644Z",
       "lastSeen": "2026-09-27T23:43:09.644Z",
       "status": "pending"
+    },
+    "eam→-im": {
+      "original": "eam",
+      "corrected": "-im",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["170666872"],
+      "examples": ["\"got an eam on the\"", "\"do an eam on the.\""],
+      "correctedExamples": ["\"got an -im on the\"", "\"do an -im on the.\""],
+      "timestamps": ["00:10:44.840", "00:10:44.840"],
+      "episodeIds": ["170666872", "170666872"],
+      "confidence": 10,
+      "firstSeen": "2026-10-09T02:33:57.948Z",
+      "lastSeen": "2026-10-09T02:33:57.948Z",
+      "status": "pending"
+    },
+    "dute→Deut": {
+      "original": "dute",
+      "corrected": "Deut",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["170666872"],
+      "examples": ["\"it's the dute. Why is\"", "\"it the dute?\""],
+      "correctedExamples": ["\"it's the Deut. Why is\"", "\"it the Deut?\""],
+      "timestamps": ["00:14:19.260", "00:14:19.260"],
+      "episodeIds": ["170666872", "170666872"],
+      "confidence": 10,
+      "firstSeen": "2026-10-09T02:33:57.948Z",
+      "lastSeen": "2026-10-09T02:33:57.948Z",
+      "status": "pending"
+    },
+    "tetragramma→Tetragrammaton": {
+      "original": "tetragramma",
+      "corrected": "Tetragrammaton",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["170666872"],
+      "examples": [
+        "\"with the tetragramma grammaton has\"",
+        "\"for the tetragramma, for the\""
+      ],
+      "correctedExamples": [
+        "\"with the Tetragrammaton has the\"",
+        "\"for the Tetragrammaton, for the\""
+      ],
+      "timestamps": ["00:25:12.250", "00:26:41.110"],
+      "episodeIds": ["170666872", "170666872"],
+      "confidence": 20,
+      "firstSeen": "2026-10-09T02:33:57.948Z",
+      "lastSeen": "2026-10-09T02:33:57.948Z",
+      "status": "pending"
+    },
+    "Shakuts→shikkuts": {
+      "original": "Shakuts",
+      "corrected": "shikkuts",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["170666872"],
+      "examples": [
+        "\"Milcom the Shakuts of the\"",
+        "\"Chemosh, the Shakuts of Moab.\""
+      ],
+      "correctedExamples": [
+        "\"Milcom the shikkuts of the\"",
+        "\"Chemosh, the shikkuts of Moab.\""
+      ],
+      "timestamps": ["00:27:54.740", "00:27:54.740"],
+      "episodeIds": ["170666872", "170666872"],
+      "confidence": 10,
+      "firstSeen": "2026-10-09T02:33:57.948Z",
+      "lastSeen": "2026-10-09T02:33:57.948Z",
+      "status": "pending"
+    },
+    "Elim→elilim": {
+      "original": "Elim",
+      "corrected": "elilim",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["170666872"],
+      "examples": [
+        "\"other is Elim. Now gilulim\"",
+        "\"one is Elim, which is\"",
+        "\"illegal. So Elim could be\""
+      ],
+      "correctedExamples": [
+        "\"other is elilim. Now gilulim\"",
+        "\"one is elilim, which is\"",
+        "\"illegal. So elilim could be\""
+      ],
+      "timestamps": ["00:28:24.730", "00:30:08.640", "00:31:13.340"],
+      "episodeIds": ["170666872", "170666872", "170666872"],
+      "confidence": 20,
+      "firstSeen": "2026-10-09T02:33:57.948Z",
+      "lastSeen": "2026-10-09T02:33:57.948Z",
+      "status": "pending"
+    },
+    "your→you're": {
+      "original": "your",
+      "corrected": "you're",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["170666872"],
+      "examples": [
+        "\"little enlilites, your. Your little\"",
+        "\"enlilites, your. Your little worthless\""
+      ],
+      "correctedExamples": [
+        "\"little Enlilites, you're. You're little\"",
+        "\"Enlilites, you're. You're little worthless\""
+      ],
+      "timestamps": ["00:31:13.340", "00:31:13.340"],
+      "episodeIds": ["170666872", "170666872"],
+      "confidence": 10,
+      "firstSeen": "2026-10-09T02:33:57.948Z",
+      "lastSeen": "2026-10-09T02:33:57.948Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-09-27T23:43:09.644Z"
+  "lastUpdated": "2026-10-09T02:33:57.948Z"
 }

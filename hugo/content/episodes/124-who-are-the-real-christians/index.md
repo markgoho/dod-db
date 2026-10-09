@@ -23,6 +23,7 @@ topics:
   - Satan
   - Septuagint
   - Trinity
+  - Elohim
 tags:
   - Flood
   - Romans

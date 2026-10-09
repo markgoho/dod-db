@@ -17,6 +17,7 @@ topics:
   - Septuagint
   - Univocality
   - Philo of Alexandria
+  - Elohim
 tags:
   - Judaism
   - Babylon

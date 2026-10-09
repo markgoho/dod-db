@@ -19,6 +19,7 @@ topics:
   - Monotheism
   - Omni Attributes
   - Tel Dan Stele
+  - Elohim
 tags:
   - Baal
   - Adam

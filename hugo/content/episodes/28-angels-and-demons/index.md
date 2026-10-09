@@ -23,6 +23,7 @@ topics:
   - Samson
   - Septuagint
   - Moloch
+  - Elohim
 tags:
   - Judaism
   - Baal

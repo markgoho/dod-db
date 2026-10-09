@@ -8,6 +8,7 @@ aliases:
 topics:
   - King James Bible
   - Priestly Source
+  - Elohim
 tags:
   - Noah
   - Flood

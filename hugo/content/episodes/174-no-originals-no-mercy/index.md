@@ -20,6 +20,7 @@ topics:
   - Daniel
   - Josiah
   - Jacob
+  - Elohim
 tags:
   - Leningrad Codex
   - Eschatology

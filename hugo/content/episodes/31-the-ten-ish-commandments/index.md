@@ -24,6 +24,7 @@ topics:
   - Univocality
   - Philo of Alexandria
   - Asherah Pole
+  - Elohim
 tags:
   - Deuteronomy
   - Judaism

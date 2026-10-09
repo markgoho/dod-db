@@ -13,6 +13,7 @@ topics:
   - Saul
   - Jephthah
   - Polygamy
+  - Elohim
 tags:
   - Abraham
   - Abimelech

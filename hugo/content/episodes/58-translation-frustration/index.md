@@ -20,6 +20,7 @@ topics:
   - Saul
   - Trinity
   - Witch of Endor
+  - Elohim
 tags:
   - William Tyndale
   - Desiderius Erasmus

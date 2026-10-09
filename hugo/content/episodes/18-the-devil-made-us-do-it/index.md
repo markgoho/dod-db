@@ -19,6 +19,7 @@ topics:
   - Jubilees
   - King James Bible
   - Baal Cycle
+  - Elohim
 tags:
   - Balaam
   - Beelzebul

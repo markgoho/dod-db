@@ -25,6 +25,7 @@ topics:
   - Josiah
   - Masoretes
   - Tel Dan Stele
+  - Elohim
 tags:
   - Moab
   - Deuteronomy

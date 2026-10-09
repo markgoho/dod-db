@@ -21,6 +21,7 @@ topics:
   - Hell
   - Jacob
   - Philo of Alexandria
+  - Elohim
 tags:
   - Deuteronomy
   - Judaism

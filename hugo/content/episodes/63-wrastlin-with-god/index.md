@@ -14,6 +14,7 @@ topics:
   - Jephthah
   - King James Bible
   - Marriage
+  - Elohim
 tags:
   - Philistines
   - Isaac

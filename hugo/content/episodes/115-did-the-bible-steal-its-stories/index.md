@@ -14,6 +14,7 @@ topics:
   - King James Bible
   - Ritual Purity
   - Baal Cycle
+  - Elohim
 tags:
   - Judah
   - Ugarit

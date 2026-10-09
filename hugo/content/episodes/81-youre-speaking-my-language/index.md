@@ -12,6 +12,7 @@ topics:
   - Salvation
   - Septuagint
   - Moloch
+  - Elohim
 tags:
   - Babylon
   - Tower of Babel
