@@ -30,6 +30,7 @@ tags:
   - Jonah
   - Judas Iscariot
   - J.R.R. Tolkien
+  - Supersessionism
 books:
   - Revelation
   - Mark

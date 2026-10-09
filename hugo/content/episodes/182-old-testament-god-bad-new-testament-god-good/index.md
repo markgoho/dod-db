@@ -38,6 +38,7 @@ tags:
   - Samuel
   - Endor
   - Moab
+  - Supersessionism
 books:
   - Deuteronomy
   - 1 Samuel

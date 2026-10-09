@@ -4840,6 +4840,10 @@
       {
         "tag": "Philo of Alexandria",
         "mentions": 2
+      },
+      {
+        "tag": "Supersessionism",
+        "mentions": 2
       }
     ],
     "segments": [
@@ -7041,6 +7045,10 @@
       },
       {
         "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Supersessionism",
         "mentions": 1
       }
     ],
@@ -23841,6 +23849,10 @@
       {
         "tag": "YHWH",
         "mentions": 1
+      },
+      {
+        "tag": "Supersessionism",
+        "mentions": 1
       }
     ],
     "segments": [
@@ -29782,6 +29794,10 @@
       {
         "tag": "C. S. Lewis",
         "mentions": 72
+      },
+      {
+        "tag": "Supersessionism",
+        "mentions": 3
       }
     ],
     "segments": [
@@ -33014,6 +33030,10 @@
       {
         "tag": "Elohim",
         "mentions": 25
+      },
+      {
+        "tag": "Supersessionism",
+        "mentions": 5
       }
     ],
     "segments": [

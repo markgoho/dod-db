@@ -49,6 +49,7 @@ tags:
   - Protestantism
   - Rachel
   - Solomon
+  - Supersessionism
 books:
   - Exodus
   - Deuteronomy

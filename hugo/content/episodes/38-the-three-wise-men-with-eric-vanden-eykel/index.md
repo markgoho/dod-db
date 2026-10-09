@@ -27,6 +27,7 @@ tags:
   - Judah
   - Melchizedek
   - Second Temple period
+  - Supersessionism
 books:
   - Luke
   - Matthew

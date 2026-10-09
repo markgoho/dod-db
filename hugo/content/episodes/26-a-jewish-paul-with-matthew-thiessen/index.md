@@ -28,6 +28,7 @@ tags:
   - Maccabees
   - Saint Titus
   - Solomon
+  - Supersessionism
 books:
   - Romans
   - 1 Corinthians
