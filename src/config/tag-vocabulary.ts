@@ -10174,14 +10174,14 @@ export const tagVocabulary: TagDefinition[] = [
   },
   {
     canonical: "Supersessionism",
-    variations: ["supersessionist"],
+    variations: ["supersessionist", "supersessionistic"],
     category: "theology",
     llmVerify: true,
     description:
-      "The claim that Christianity or the church has replaced or superseded Judaism and Israel in God's covenant, including the idea that the God of the Hebrew Bible is inferior to the God of the New Testament",
+      "The claim that a group has replaced or superseded an earlier covenant people, most often Christianity or the church replacing Judaism and Israel, including the idea that the God of the Hebrew Bible is inferior to the God of the New Testament; also earlier cases such as Judah claiming to be the new Israel",
     status: "accepted",
     addedInEpisode: 182,
-    episodes: [26, 38, 133, 164, 182],
+    episodes: [26, 36, 38, 59, 133, 164, 182],
   },
 ];
 

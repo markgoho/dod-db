@@ -38,6 +38,7 @@ tags:
   - Protestantism
   - Romans
   - Tower of Babel
+  - Supersessionism
 books:
   - 1 Corinthians
   - Proverbs

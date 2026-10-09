@@ -43,6 +43,7 @@ tags:
   - Philistines
   - The Reformation
   - Torah
+  - Supersessionism
 books:
   - Song of Solomon
   - Proverbs
