@@ -6111,19 +6111,24 @@
       "original": "seen",
       "corrected": "scene",
       "category": "spelling",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["nocqzFi7bp0"],
-      "examples": ["\"And so seen and seen.\"", "\"seen and seen.\""],
+      "totalOccurrences": 4,
+      "episodeCount": 2,
+      "episodes": ["nocqzFi7bp0", "172032091"],
+      "examples": [
+        "\"And so seen and seen.\"",
+        "\"seen and seen.\"",
+        "\"world. And seen.\""
+      ],
       "correctedExamples": [
         "\"And so, scene and scene.\"",
-        "\"scene and scene.\""
+        "\"scene and scene.\"",
+        "\"world. And scene.\""
       ],
-      "timestamps": ["00:49:54.080", "00:49:54.080"],
-      "episodeIds": ["nocqzFi7bp0", "nocqzFi7bp0"],
-      "confidence": 5,
+      "timestamps": ["00:49:54.080", "00:49:54.080", "00:55:17.450"],
+      "episodeIds": ["nocqzFi7bp0", "nocqzFi7bp0", "172032091"],
+      "confidence": 35,
       "firstSeen": "2026-03-15T06:03:52.058Z",
-      "lastSeen": "2026-03-15T06:03:52.058Z",
+      "lastSeen": "2026-10-14T13:18:45.377Z",
       "status": "pending"
     },
     "it's It's→it's it's": {
@@ -9641,7 +9646,75 @@
       "firstSeen": "2026-10-14T01:51:43.043Z",
       "lastSeen": "2026-10-14T01:51:43.043Z",
       "status": "pending"
+    },
+    "machashefim→mechashefim": {
+      "original": "machashefim",
+      "corrected": "mechashefim",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["172032091"],
+      "examples": [
+        "\"have the machashefim in Exodus,\"",
+        "\"magicians. That's machashefim in Hebrew.\""
+      ],
+      "correctedExamples": [
+        "\"have the mechashefim in Exodus,\"",
+        "\"magicians. That's mechashefim in Hebrew.\""
+      ],
+      "timestamps": ["00:11:21.070", "00:12:09.710"],
+      "episodeIds": ["172032091", "172032091"],
+      "confidence": 15,
+      "firstSeen": "2026-10-14T13:18:45.377Z",
+      "lastSeen": "2026-10-14T13:18:45.377Z",
+      "status": "pending"
+    },
+    "ain'tor→Endor": {
+      "original": "ain'tor",
+      "corrected": "Endor",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["172032091"],
+      "examples": [
+        "\"necromancer of ain'tor. Saul shows\"",
+        "\"necromancer of ain'tor.\""
+      ],
+      "correctedExamples": [
+        "\"necromancer of Endor. Saul shows\"",
+        "\"necromancer of Endor.\""
+      ],
+      "timestamps": ["00:19:48.550", "00:20:49.760"],
+      "episodeIds": ["172032091", "172032091"],
+      "confidence": 15,
+      "firstSeen": "2026-10-14T13:18:45.377Z",
+      "lastSeen": "2026-10-14T13:18:45.377Z",
+      "status": "pending"
+    },
+    "Hulda→Huldah": {
+      "original": "Hulda",
+      "corrected": "Huldah",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": ["172032091"],
+      "examples": [
+        "\"chapter on Hulda. You remember\"",
+        "\"You remember Hulda?\"",
+        "\"Hulda is the\""
+      ],
+      "correctedExamples": [
+        "\"chapter on Huldah. You remember\"",
+        "\"You remember Huldah?\"",
+        "\"Huldah is the\""
+      ],
+      "timestamps": ["00:21:27.780", "00:21:27.780", "00:21:41.570"],
+      "episodeIds": ["172032091", "172032091", "172032091"],
+      "confidence": 20,
+      "firstSeen": "2026-10-14T13:18:45.377Z",
+      "lastSeen": "2026-10-14T13:18:45.377Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-10-14T01:51:43.043Z"
+  "lastUpdated": "2026-10-14T13:18:45.377Z"
 }

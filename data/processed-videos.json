@@ -33264,5 +33264,226 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "172032091",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/172032091.mp3?sig=9Er-b_VvD3Ivbx0pBeYWlmfQqjnNgVNw-YmuIu6y7C4%3D",
+    "title": "Hexegesis and Sexist Jesus?",
+    "publishedAt": "2026-10-11T06:15:00.000Z",
+    "processedAt": "2026-10-14T13:15:12.450Z",
+    "transcriptPath": "data/transcripts/2026-10-11-hexegesis-and-sexist-jesus.txt",
+    "tags": [
+      {
+        "tag": "King James Bible",
+        "mentions": 4
+      },
+      {
+        "tag": "Urim and Thummim",
+        "mentions": 1
+      },
+      {
+        "tag": "Nebuchadnezzar",
+        "mentions": 1
+      },
+      {
+        "tag": "Covenant Code",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 5
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Samaritans",
+        "mentions": 9
+      },
+      {
+        "tag": "Canaanites",
+        "mentions": 8
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 2
+      },
+      {
+        "tag": "Pharisees",
+        "mentions": 1
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 1
+      },
+      {
+        "tag": "Teraphim",
+        "mentions": 1
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 2
+      },
+      {
+        "tag": "Mount Gerizim",
+        "mentions": 1
+      },
+      {
+        "tag": "Galilee",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 3
+      },
+      {
+        "tag": "Samaria",
+        "mentions": 5
+      },
+      {
+        "tag": "William Tyndale",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 15
+      },
+      {
+        "tag": "Witch of Endor",
+        "mentions": 3
+      },
+      {
+        "tag": "John the Baptist",
+        "mentions": 3
+      },
+      {
+        "tag": "Demon",
+        "mentions": 5
+      },
+      {
+        "tag": "Salvation",
+        "mentions": 1
+      },
+      {
+        "tag": "Matthew",
+        "mentions": 2
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 8
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 1
+      },
+      {
+        "tag": "Josiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Samuel",
+        "mentions": 4
+      },
+      {
+        "tag": "Elohim",
+        "mentions": 1
+      },
+      {
+        "tag": "David",
+        "mentions": 1
+      },
+      {
+        "tag": "Laban",
+        "mentions": 5
+      },
+      {
+        "tag": "Aaron",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
+      },
+      {
+        "tag": "Saul",
+        "mentions": 3
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:08.236]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "hexegesis",
+        "startTimestamp": "[00:02:08.236]",
+        "endTimestamp": "[00:31:10.518]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Witchcraft",
+        "summary": "Misogyny behind biblical bans on witches and divination"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:31:10.518]",
+        "endTimestamp": "[00:59:49.474]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Non-Israelite Women",
+        "summary": "Jesus's harsh treatment of Syrophoenician and Samaritan women"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 184,
+    "scriptures": [
+      {
+        "book": "Exodus",
+        "references": ["Exodus", "Exodus 22", "Exodus 22:17", "Exodus 22:18"],
+        "mentions": 6
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 18", "Deuteronomy 18:10"],
+        "mentions": 4
+      },
+      {
+        "book": "John",
+        "references": ["John", "John 4"],
+        "mentions": 4
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 3
+      },
+      {
+        "book": "Judges",
+        "references": ["Judges", "Judges 18"],
+        "mentions": 2
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
+      },
+      {
+        "book": "Malachi",
+        "references": ["Malachi 3"],
+        "mentions": 1
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark 7"],
+        "mentions": 1
+      }
+    ]
   }
 ]

@@ -25,6 +25,7 @@ export type SegmentType =
   | "get-topical"
   | "grail"
   | "here-we-go"
+  | "hexegesis"
   | "historys-heresies"
   | "historys-mysteries"
   | "intro"
@@ -83,6 +84,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "get-topical": "Get Topical",
   grail: "The Grail",
   "here-we-go": "Here We Go!",
+  hexegesis: "Hexegesis",
   "historys-heresies": "History's Heresies",
   "historys-mysteries": "History's Mysteries",
   "is-it-canon": "Is it Canon?",
@@ -142,6 +144,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "get-topical": "#22c55e", // green-500 (topical focus)
   grail: "#eab308", // yellow-500 (legendary golden relic)
   "here-we-go": "#f97316", // orange-500 (energetic/exclamatory)
+  hexegesis: "#65a30d", // lime-600 (witchy green, Halloween theme)
   "historys-heresies": "#dc2626", // red-600 (fiery/condemned)
   "historys-mysteries": "#818cf8", // indigo-400 (mysterious/historical)
   "is-it-canon": "#14b8a6", // teal
@@ -364,6 +367,11 @@ export const SEGMENT_PATTERNS: Record<
     /welcome to.*here we go/i,
     /segment.*here we go/i,
   ],
+  hexegesis: [
+    /hexegesis/i,
+    /dive into hexegesis/i,
+    /it's going to be a hexegesis/i,
+  ],
   "historys-heresies": [
     /history'?s heresies/i,
     /welcome to.*history'?s heresies/i,
@@ -461,6 +469,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
     "Discussion of the Grail as relic, legend, literary tradition, or symbol, including holy grail narratives and interpretations",
   "here-we-go":
     "An energetic kick-off segment diving into a topic or discussion with enthusiasm",
+  hexegesis:
+    "A Halloween-themed segment examining witches, witchcraft, sorcery, and magic in the Bible and in its translation and interpretation",
   "historys-heresies":
     "Examining historical heresies, condemned beliefs, and movements the church declared heterodox throughout Christian history",
   "historys-mysteries":

@@ -2941,6 +2941,7 @@ export const tagVocabulary: TagDefinition[] = [
       "The practice of seeking knowledge of the future or the divine will through supernatural means.",
     status: "proposed",
     addedInEpisode: 73,
+    episodes: [73, 184],
   },
   {
     canonical: "Apotropaic",
@@ -10183,6 +10184,26 @@ export const tagVocabulary: TagDefinition[] = [
     status: "accepted",
     addedInEpisode: 182,
     episodes: [26, 36, 38, 59, 133, 164, 182],
+  },
+  {
+    canonical: "Syrophoenician woman",
+    variations: ["Canaanite woman", "Syrophoenician"],
+    category: "character",
+    description:
+      "An unnamed Gentile woman in the Gospels who persuades Jesus to heal her demon-possessed daughter despite his initial refusal.",
+    status: "rejected",
+    addedInEpisode: 184,
+    episodes: [184],
+  },
+  {
+    canonical: "Samaritan woman",
+    variations: ["woman of Samaria", "Samaritan woman at the well"],
+    category: "character",
+    description:
+      "An unnamed woman from Sychar in the Gospel of John who converses with Jesus about living water and worship at Jacob's well.",
+    status: "rejected",
+    addedInEpisode: 184,
+    episodes: [184],
   },
 ];
 
