@@ -3707,6 +3707,7 @@ export const tagVocabulary: TagDefinition[] = [
       "A geological formation in Turkey that some claim is the remains of Noah's Ark.",
     status: "proposed",
     addedInEpisode: 97,
+    episodes: [97, 183],
   },
   {
     canonical: "Saudi Arabia",

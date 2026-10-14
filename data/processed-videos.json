@@ -33120,5 +33120,149 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "171360225",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/171360225.mp3?sig=in1JIIDB2B404f_ALkQZJgT5lrhm1vC-hJhyVrwC1aA%3D",
+    "title": "Noah's Ark: 100% Unconfirmed",
+    "publishedAt": "2026-10-04T06:10:00.000Z",
+    "processedAt": "2026-10-14T01:49:32.183Z",
+    "transcriptPath": "data/transcripts/2026-10-04-noahs-ark-100percent-unconfirmed.txt",
+    "tags": [
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 2
+      },
+      {
+        "tag": "Eschatology",
+        "mentions": 6
+      },
+      {
+        "tag": "Deutero-Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "inerrancy",
+        "mentions": 1
+      },
+      {
+        "tag": "Nazareth",
+        "mentions": 1
+      },
+      {
+        "tag": "Rapture",
+        "mentions": 1
+      },
+      {
+        "tag": "Noah",
+        "mentions": 25
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Syria",
+        "mentions": 1
+      },
+      {
+        "tag": "Hell",
+        "mentions": 2
+      },
+      {
+        "tag": "Antiochus IV Epiphanes",
+        "mentions": 2
+      },
+      {
+        "tag": "Ararat",
+        "mentions": 8
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "David",
+        "mentions": 12
+      },
+      {
+        "tag": "Salvation",
+        "mentions": 4
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 3
+      },
+      {
+        "tag": "Cyrus the Great",
+        "mentions": 5
+      },
+      {
+        "tag": "Saul",
+        "mentions": 2
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:01:55.098]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "artifacts-and-fiction",
+        "startTimestamp": "[00:01:55.098]",
+        "endTimestamp": "[00:36:25.000]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Noah's Ark",
+        "summary": "Durupinar boat-shaped formation claims still lack evidence"
+      },
+      {
+        "type": "what-is-that",
+        "startTimestamp": "[00:36:25.000]",
+        "endTimestamp": "[00:59:56.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual",
+        "topicLabel": "Messiah",
+        "summary": "Anointed one, reinvented as spiritual savior after Jesus"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
+    "episodeNumber": 183,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 45:1", "Isaiah 53", "Isaiah 100"],
+        "mentions": 4
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 2"],
+        "mentions": 1
+      },
+      {
+        "book": "Daniel",
+        "references": ["Daniel"],
+        "mentions": 1
+      }
+    ]
   }
 ]

@@ -9617,7 +9617,31 @@
       "firstSeen": "2026-10-09T02:33:57.948Z",
       "lastSeen": "2026-10-09T02:33:57.948Z",
       "status": "pending"
+    },
+    "Baumgartner→Baumgardner": {
+      "original": "Baumgartner",
+      "corrected": "Baumgardner",
+      "category": "spelling",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["171360225"],
+      "examples": [
+        "\"named John Baumgartner went and\"",
+        "\"And, and Baumgartner had to,\"",
+        "\"saw with Baumgartner, just being\""
+      ],
+      "correctedExamples": [
+        "\"named John Baumgardner went and\"",
+        "\"And, and Baumgardner had to,\"",
+        "\"saw with Baumgardner, just being\""
+      ],
+      "timestamps": ["00:10:26.980", "00:11:15.490", "00:32:33.910"],
+      "episodeIds": ["171360225", "171360225", "171360225"],
+      "confidence": 25,
+      "firstSeen": "2026-10-14T01:51:43.043Z",
+      "lastSeen": "2026-10-14T01:51:43.043Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-10-09T02:33:57.948Z"
+  "lastUpdated": "2026-10-14T01:51:43.043Z"
 }
