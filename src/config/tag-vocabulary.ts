@@ -10205,6 +10205,26 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 184,
     episodes: [184],
   },
+  {
+    canonical: "Christology",
+    variations: ["Christologies", "christological"],
+    category: "theology",
+    description:
+      "The branch of Christian theology and biblical scholarship concerned with the nature, identity, and person of Jesus Christ.",
+    status: "proposed",
+    addedInEpisode: 185,
+    episodes: [185],
+  },
+  {
+    canonical: "Wisdom Christology",
+    variations: [],
+    category: "theology",
+    description:
+      "A christological framework in early Christian literature that portrays Jesus as the embodiment or incarnation of God's personified wisdom.",
+    status: "accepted",
+    addedInEpisode: 185,
+    episodes: [185],
+  },
 ];
 
 export function getAllSearchableTerms(

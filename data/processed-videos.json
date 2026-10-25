@@ -33485,5 +33485,226 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "172683056",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/172683056.mp3?sig=9R0W-tu5f4q40L6m6nkun--w76AfI0kSn1G6hdm7l_s%3D",
+    "title": "How Lady Wisdom Became Flesh with Dustin Smith",
+    "publishedAt": "2026-10-18T06:00:08.000Z",
+    "processedAt": "2026-10-25T12:46:24.784Z",
+    "transcriptPath": "data/transcripts/2026-10-18-how-lady-wisdom-became-flesh-with-dustin-smith.txt",
+    "tags": [
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 3
+      },
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 7
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 6
+      },
+      {
+        "tag": "Monotheism",
+        "mentions": 3
+      },
+      {
+        "tag": "Omni Attributes",
+        "mentions": 1
+      },
+      {
+        "tag": "Christmas",
+        "mentions": 1
+      },
+      {
+        "tag": "Nazareth",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 9
+      },
+      {
+        "tag": "Theosis",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 4
+      },
+      {
+        "tag": "Peter",
+        "mentions": 1
+      },
+      {
+        "tag": "Torah",
+        "mentions": 2
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Second Temple period",
+        "mentions": 2
+      },
+      {
+        "tag": "Philo of Alexandria",
+        "mentions": 11
+      },
+      {
+        "tag": "John the Baptist",
+        "mentions": 4
+      },
+      {
+        "tag": "Blasphemy",
+        "mentions": 1
+      },
+      {
+        "tag": "Baptism",
+        "mentions": 8
+      },
+      {
+        "tag": "Sarah",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
+      },
+      {
+        "tag": "John",
+        "mentions": 1
+      },
+      {
+        "tag": "Wisdom Christology",
+        "mentions": 10
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:05.000]",
+        "endTimestamp": "[00:00:35.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "main-content",
+        "startTimestamp": "[00:00:35.000]",
+        "endTimestamp": "[01:01:02.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      },
+      {
+        "type": "outro",
+        "startTimestamp": "[01:01:02.000]",
+        "endTimestamp": "[01:03:22.000]",
+        "confidence": "verified",
+        "detectionMethod": "manual"
+      }
+    ],
+    "speakers": ["Dustin Smith", "Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 185,
+    "scriptures": [
+      {
+        "book": "John",
+        "references": [
+          "John",
+          "John 1",
+          "John 1:1",
+          "John 1:3",
+          "John 1:4",
+          "John 1:12",
+          "John 1:14",
+          "John 8:40",
+          "John 10",
+          "John 10:30",
+          "John 10:34-36",
+          "John 17",
+          "John 17:3",
+          "John 20:31"
+        ],
+        "mentions": 75
+      },
+      {
+        "book": "Proverbs",
+        "references": [
+          "Proverbs",
+          "Proverbs 1",
+          "Proverbs 3",
+          "Proverbs 3:16",
+          "Proverbs 8",
+          "Proverbs 8:18",
+          "Proverbs 8:22-23",
+          "Proverbs 8:22",
+          "Proverbs 8:23",
+          "Proverbs 8:30",
+          "Proverbs 9",
+          "Proverbs 9:3",
+          "Proverbs 31"
+        ],
+        "mentions": 30
+      },
+      {
+        "book": "Genesis",
+        "references": ["Genesis 1", "Genesis 1:1", "Genesis 1:3"],
+        "mentions": 8
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 2:7", "Psalms 33", "Psalms 82", "Psalms 104:24"],
+        "mentions": 5
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew"],
+        "mentions": 2
+      },
+      {
+        "book": "Sirach",
+        "references": ["Sirach 24"],
+        "mentions": 2
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark", "Mark 2"],
+        "mentions": 2
+      },
+      {
+        "book": "Wisdom of Solomon",
+        "references": ["Wisdom of Solomon 7"],
+        "mentions": 1
+      },
+      {
+        "book": "Hebrews",
+        "references": ["Hebrews 1"],
+        "mentions": 1
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 18:15-18"],
+        "mentions": 1
+      },
+      {
+        "book": "Colossians",
+        "references": ["Colossians 1:15"],
+        "mentions": 1
+      }
+    ]
   }
 ]

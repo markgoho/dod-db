@@ -9714,7 +9714,29 @@
       "firstSeen": "2026-10-14T13:18:45.377Z",
       "lastSeen": "2026-10-14T13:18:45.377Z",
       "status": "pending"
+    },
+    "wisdom→God's": {
+      "original": "wisdom",
+      "corrected": "God's",
+      "category": "proper-noun",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["172683056"],
+      "examples": [
+        "\"about God's wisdom in Jewish\"",
+        "\"about God's wisdom, because In\""
+      ],
+      "correctedExamples": [
+        "\"said about God's wisdom in\"",
+        "\"said about God's wisdom, because\""
+      ],
+      "timestamps": ["00:13:47.090", "00:13:47.090"],
+      "episodeIds": ["172683056", "172683056"],
+      "confidence": 15,
+      "firstSeen": "2026-10-25T12:50:41.981Z",
+      "lastSeen": "2026-10-25T12:50:41.981Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-10-14T13:18:45.377Z"
+  "lastUpdated": "2026-10-25T12:50:41.981Z"
 }
