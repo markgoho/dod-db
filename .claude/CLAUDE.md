@@ -31,7 +31,7 @@ bun run src/scripts/process-youtube.ts <youtube-url-or-id> [options]
 
 **Output files:**
 
-- `data/transcripts/YYYY-MM-DD-episode-title-raw.txt` - Raw with speaker names (not committed)
+- `data/transcripts/YYYY-MM-DD-episode-title-raw.txt` - Raw with speaker names (committed for raw-vs-final comparisons)
 - `data/transcripts/YYYY-MM-DD-episode-title.txt` - Final corrected (committed)
 
 **Other pipeline scripts:**

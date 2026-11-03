@@ -2,7 +2,7 @@
  * Recover missing raw transcripts (data/transcripts/*-raw.txt) from the
  * transcripts AssemblyAI still stores, matched to episodes by timestamps.
  *
- * Only writes gitignored raw files; committed transcripts are not touched.
+ * Only writes missing raw files; final transcripts are not touched.
  *
  * Usage:
  *   bun run src/scripts/recover-raw-transcripts.ts
