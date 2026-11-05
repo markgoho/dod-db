@@ -4956,9 +4956,9 @@
       "original": "steely",
       "corrected": "stele",
       "category": "spelling",
-      "totalOccurrences": 3,
-      "episodeCount": 1,
-      "episodes": ["Z6-5mEJYYQU"],
+      "totalOccurrences": 5,
+      "episodeCount": 2,
+      "episodes": ["Z6-5mEJYYQU", "173332743"],
       "examples": [
         "\"of the steely and not\"",
         "\"tell, Dan, steely people are\"",
@@ -4971,9 +4971,9 @@
       ],
       "timestamps": ["00:16:21.360", "00:16:21.360", "00:23:00.280"],
       "episodeIds": ["Z6-5mEJYYQU", "Z6-5mEJYYQU", "Z6-5mEJYYQU"],
-      "confidence": 20,
+      "confidence": 40,
       "firstSeen": "2026-01-16T19:45:42.090Z",
-      "lastSeen": "2026-01-16T19:45:42.090Z",
+      "lastSeen": "2026-11-05T04:54:41.540Z",
       "status": "rejected",
       "reviewedAt": "2026-04-05T03:06:51.709Z",
       "reviewedBy": "UI Review"
@@ -9736,7 +9736,29 @@
       "firstSeen": "2026-10-25T12:50:41.981Z",
       "lastSeen": "2026-10-25T12:50:41.981Z",
       "status": "pending"
+    },
+    "Choose your→choose your": {
+      "original": "Choose your",
+      "corrected": "choose your",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["173332743"],
+      "examples": [
+        "\"It's a. Choose your own adventure.\"",
+        "\"it's a Choose your own adventure.\""
+      ],
+      "correctedExamples": [
+        "\"It's a choose your own adventure.\"",
+        "\"it's a Choose Your Own Adventure.\""
+      ],
+      "timestamps": ["00:26:09.150", "00:28:57.650"],
+      "episodeIds": ["173332743", "173332743"],
+      "confidence": 10,
+      "firstSeen": "2026-11-05T04:54:41.540Z",
+      "lastSeen": "2026-11-05T04:54:41.540Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-10-25T12:50:41.981Z"
+  "lastUpdated": "2026-11-05T04:54:41.541Z"
 }

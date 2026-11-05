@@ -10225,6 +10225,26 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 185,
     episodes: [185],
   },
+  {
+    canonical: "Capital punishment",
+    variations: ["death penalty", "death sentence"],
+    category: "theology",
+    description:
+      "The state-sanctioned execution of a person as punishment for a crime, prescribed for numerous offenses in biblical law.",
+    status: "proposed",
+    addedInEpisode: 186,
+    episodes: [186],
+  },
+  {
+    canonical: "Animal sacrifice",
+    variations: ["animal sacrifices", "blood sacrifice", "blood sacrifices"],
+    category: "theology",
+    description:
+      "The ritual slaughter and offering of animals to a deity, central to ancient Israelite worship and Levitical law.",
+    status: "proposed",
+    addedInEpisode: 186,
+    episodes: [186],
+  },
 ];
 
 export function getAllSearchableTerms(

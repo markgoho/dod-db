@@ -47,6 +47,7 @@ export type SegmentType =
   | "textual-healing"
   | "the-x-files"
   | "thats-history"
+  | "thicker-than-water"
   | "twisted-scripture"
   | "urban-legends"
   | "watch-your-language"
@@ -104,6 +105,7 @@ export const SEGMENT_LABELS: Record<SegmentType, string> = {
   "textual-healing": "Textual Healing",
   "the-x-files": "The X-Files",
   "thats-history": "That's History",
+  "thicker-than-water": "Thicker Than Water",
   "twisted-scripture": "Twisted Scripture",
   "urban-legends": "Urban Legends",
   "watch-your-language": "Watch Your Language",
@@ -164,6 +166,7 @@ export const SEGMENT_COLORS: Record<SegmentType, string> = {
   "textual-healing": "#0891b2", // cyan-600 (textual analysis/manuscripts)
   "the-x-files": "#0f766e", // teal-700 (mysterious/paranormal)
   "thats-history": "#84cc16", // lime-500 (lime green)
+  "thicker-than-water": "#9f1239", // rose-800 (blood red, sacrifice)
   "twisted-scripture": "#7c2d12", // orange-900 (distortion/misuse warning)
   "urban-legends": "#8b5cf6", // violet
   "watch-your-language": "#16a34a", // green-600 (scholarly/linguistic)
@@ -314,6 +317,11 @@ export const SEGMENT_PATTERNS: Record<
     /looks like x-files/i,
   ],
   "thats-history": [/that'?s history/i, /welcome to.*that'?s history/i],
+  "thicker-than-water": [
+    /thicker than water/i,
+    /segment.*calling thicker than water/i,
+    /back in to our thicker than water/i,
+  ],
   "twisted-scripture": [
     /twisted scripture/i,
     /welcome to.*twisted scripture/i,
@@ -503,6 +511,8 @@ export const SEGMENT_DESCRIPTIONS: Record<SegmentType, string> = {
   "the-x-files":
     "Exploring aliens, extraterrestrials, UFO claims, and speculative connections between religion, the Bible, and paranormal or cosmic phenomena",
   "thats-history": "Historical context and background for biblical events",
+  "thicker-than-water":
+    "Examining blood, sacrifice, and ritual offerings in the Bible and the ancient world",
   "twisted-scripture":
     "Examining scripture that is distorted, decontextualized, or rhetorically misused in argumentation or teaching",
   "urban-legends": "Examining popular myths and misconceptions about the Bible",

@@ -33706,5 +33706,139 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "173332743",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/173332743.mp3?sig=v58rM5jhj1KZ-P6BJZMKRgEAROyPNvVkURuVhMqESDo%3D",
+    "title": "You Can't Out-Bible the Pope",
+    "publishedAt": "2026-10-25T06:00:07.000Z",
+    "processedAt": "2026-11-05T04:53:24.705Z",
+    "transcriptPath": "data/transcripts/2026-10-25-you-cant-out-bible-the-pope.txt",
+    "tags": [
+      {
+        "tag": "Covenant Code",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Pharisees",
+        "mentions": 1
+      },
+      {
+        "tag": "Christmas",
+        "mentions": 1
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 2
+      },
+      {
+        "tag": "Gentiles",
+        "mentions": 1
+      },
+      {
+        "tag": "Adultery",
+        "mentions": 2
+      },
+      {
+        "tag": "Romans",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 3
+      },
+      {
+        "tag": "Hell",
+        "mentions": 1
+      },
+      {
+        "tag": "Council of Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Supersessionism",
+        "mentions": 1
+      },
+      {
+        "tag": "atonement",
+        "mentions": 1
+      },
+      {
+        "tag": "Jericho",
+        "mentions": 1
+      },
+      {
+        "tag": "Stele",
+        "mentions": 5
+      },
+      {
+        "tag": "Paul",
+        "mentions": 2
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:03.981]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "get-topical",
+        "startTimestamp": "[00:02:03.981]",
+        "endTimestamp": "[00:29:28.291]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Capital Punishment",
+        "summary": "Pope's death penalty stance versus biblical arguments for it"
+      },
+      {
+        "type": "thicker-than-water",
+        "startTimestamp": "[00:29:28.291]",
+        "endTimestamp": "[00:58:58.875]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Animal Sacrifice",
+        "summary": "Origins, purity logic, and social functions of animal sacrifice"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 186,
+    "scriptures": [
+      {
+        "book": "Genesis",
+        "references": ["Genesis 1:27", "Genesis 9:6"],
+        "mentions": 5
+      },
+      {
+        "book": "Matthew",
+        "references": ["Matthew", "Matthew 5:38", "Matthew 15"],
+        "mentions": 5
+      },
+      {
+        "book": "Leviticus",
+        "references": ["Leviticus 4", "Leviticus 18"],
+        "mentions": 4
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts", "Acts 15"],
+        "mentions": 2
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark"],
+        "mentions": 1
+      }
+    ]
   }
 ]
