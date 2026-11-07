@@ -43,8 +43,7 @@ function calculateConfidence(candidate: CorrectionCandidate): number {
   // Word specificity (longer words are more specific)
   const avgLength =
     (candidate.original.length + candidate.corrected.length) / 2;
-  if (avgLength >= 8)
-    score += 10; // Long words (e.g., "Septuagint")
+  if (avgLength >= 8) score += 10; // Long words (e.g., "Septuagint")
   else if (avgLength >= 5) score += 5; // Medium words
 
   return Math.min(100, score);
