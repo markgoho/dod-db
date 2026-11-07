@@ -33840,5 +33840,240 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "174036223",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/174036223.mp3?sig=iCybqxbkc8BUywJySbC9l8ZNWJ6dVlQuaWgY97seYco%3D",
+    "title": "No One Can See God and Live… Except These 74 Guys",
+    "publishedAt": "2026-11-01T06:30:01.000Z",
+    "processedAt": "2026-11-07T02:38:20.293Z",
+    "transcriptPath": "data/transcripts/2026-11-01-no-one-can-see-god-and-live-except-these-74-guys.txt",
+    "tags": [
+      {
+        "tag": "Ugaritic literature",
+        "mentions": 1
+      },
+      {
+        "tag": "Covenant Code",
+        "mentions": 3
+      },
+      {
+        "tag": "Circumcision",
+        "mentions": 1
+      },
+      {
+        "tag": "Deuteronomy",
+        "mentions": 3
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 19
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Judah",
+        "mentions": 8
+      },
+      {
+        "tag": "Ammonites",
+        "mentions": 4
+      },
+      {
+        "tag": "Canaanites",
+        "mentions": 1
+      },
+      {
+        "tag": "Sanhedrin",
+        "mentions": 1
+      },
+      {
+        "tag": "Ugarit",
+        "mentions": 1
+      },
+      {
+        "tag": "Hezekiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Moabites",
+        "mentions": 2
+      },
+      {
+        "tag": "Abraham",
+        "mentions": 2
+      },
+      {
+        "tag": "Moses",
+        "mentions": 48
+      },
+      {
+        "tag": "Asherah",
+        "mentions": 1
+      },
+      {
+        "tag": "Assyria",
+        "mentions": 2
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 8
+      },
+      {
+        "tag": "Persia",
+        "mentions": 1
+      },
+      {
+        "tag": "Joshua",
+        "mentions": 2
+      },
+      {
+        "tag": "Torah",
+        "mentions": 1
+      },
+      {
+        "tag": "Satan",
+        "mentions": 1
+      },
+      {
+        "tag": "Syria",
+        "mentions": 4
+      },
+      {
+        "tag": "Adam",
+        "mentions": 3
+      },
+      {
+        "tag": "Noah",
+        "mentions": 4
+      },
+      {
+        "tag": "Baal",
+        "mentions": 1
+      },
+      {
+        "tag": "Second Temple period",
+        "mentions": 5
+      },
+      {
+        "tag": "Decalogue",
+        "mentions": 8
+      },
+      {
+        "tag": "Cyrus the Great",
+        "mentions": 3
+      },
+      {
+        "tag": "Priestly Source",
+        "mentions": 1
+      },
+      {
+        "tag": "Book of Enoch",
+        "mentions": 1
+      },
+      {
+        "tag": "Mount Sinai",
+        "mentions": 9
+      },
+      {
+        "tag": "Maccabees",
+        "mentions": 1
+      },
+      {
+        "tag": "Seleucid Empire",
+        "mentions": 2
+      },
+      {
+        "tag": "Anatolia",
+        "mentions": 1
+      },
+      {
+        "tag": "Moab",
+        "mentions": 2
+      },
+      {
+        "tag": "Red Sea",
+        "mentions": 1
+      },
+      {
+        "tag": "Josiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Amalek",
+        "mentions": 1
+      },
+      {
+        "tag": "Aaron",
+        "mentions": 11
+      },
+      {
+        "tag": "Angel",
+        "mentions": 2
+      },
+      {
+        "tag": "Stele",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:03:17.096]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:03:17.096]",
+        "endTimestamp": "[00:34:19.165]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Exod 24",
+        "summary": "Layered sources behind elders seeing God on Sinai"
+      },
+      {
+        "type": "lay-of-the-land",
+        "startTimestamp": "[00:34:19.165]",
+        "endTimestamp": "[01:03:57.689]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Historical Periods",
+        "summary": "Timeline from Bronze Age through Roman period"
+      }
+    ],
+    "speakers": ["Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 187,
+    "scriptures": [
+      {
+        "book": "Exodus",
+        "references": [
+          "Exodus",
+          "Exodus 3",
+          "Exodus 13",
+          "Exodus 20",
+          "Exodus 21",
+          "Exodus 23:20",
+          "Exodus 24",
+          "Exodus 24:1",
+          "Exodus 33:11",
+          "Exodus 33:20",
+          "Exodus 34"
+        ],
+        "mentions": 13
+      },
+      {
+        "book": "Deuteronomy",
+        "references": ["Deuteronomy 4", "Deuteronomy 5"],
+        "mentions": 2
+      }
+    ]
   }
 ]

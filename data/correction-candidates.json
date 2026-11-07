@@ -2700,9 +2700,9 @@
       "original": "him",
       "corrected": "them",
       "category": "spelling",
-      "totalOccurrences": 4,
-      "episodeCount": 2,
-      "episodes": ["caKa7DTkSkQ", "UNTBSfnu4Rs"],
+      "totalOccurrences": 6,
+      "episodeCount": 3,
+      "episodes": ["caKa7DTkSkQ", "UNTBSfnu4Rs", "174036223"],
       "examples": [
         "\"They teach him.\"",
         "\"They teach him how to\"",
@@ -2715,9 +2715,9 @@
       ],
       "timestamps": ["00:37:56.060", "00:37:59.860", "00:43:06.690"],
       "episodeIds": ["caKa7DTkSkQ", "caKa7DTkSkQ", "UNTBSfnu4Rs"],
-      "confidence": 35,
+      "confidence": 60,
       "firstSeen": "2026-01-13T02:10:06.917Z",
-      "lastSeen": "2026-01-18T16:56:17.799Z",
+      "lastSeen": "2026-11-07T02:40:23.771Z",
       "status": "rejected",
       "reviewedAt": "2026-04-04T20:49:32.042Z",
       "reviewedBy": "UI Review"
@@ -3496,22 +3496,24 @@
       "original": "second temple",
       "corrected": "Second Temple",
       "category": "capitalization",
-      "totalOccurrences": 2,
-      "episodeCount": 1,
-      "episodes": ["OsQMmt2QnPU"],
+      "totalOccurrences": 4,
+      "episodeCount": 2,
+      "episodes": ["OsQMmt2QnPU", "174036223"],
       "examples": [
         "\"have the second temple.\"",
-        "\"so the second temple, also referred\""
+        "\"so the second temple, also referred\"",
+        "\"about the second temple period from\""
       ],
       "correctedExamples": [
         "\"have the Second Temple.\"",
-        "\"so the Second Temple, also referred\""
+        "\"so the Second Temple, also referred\"",
+        "\"about the Second Temple period from\""
       ],
-      "timestamps": ["00:13:58.230", "00:14:30.940"],
-      "episodeIds": ["OsQMmt2QnPU", "OsQMmt2QnPU"],
-      "confidence": 10,
+      "timestamps": ["00:13:58.230", "00:14:30.940", "00:55:30.270"],
+      "episodeIds": ["OsQMmt2QnPU", "OsQMmt2QnPU", "174036223"],
+      "confidence": 40,
       "firstSeen": "2026-01-13T22:24:48.362Z",
-      "lastSeen": "2026-01-13T22:24:48.362Z",
+      "lastSeen": "2026-11-07T02:40:23.771Z",
       "status": "pending"
     },
     "dirty gentiles→dirty Gentiles": {
@@ -9009,9 +9011,15 @@
       "original": "Data over",
       "corrected": "Data Over",
       "category": "capitalization",
-      "totalOccurrences": 8,
-      "episodeCount": 4,
-      "episodes": ["164852788", "166129945", "168709095", "170040765"],
+      "totalOccurrences": 10,
+      "episodeCount": 5,
+      "episodes": [
+        "164852788",
+        "166129945",
+        "168709095",
+        "170040765",
+        "174036223"
+      ],
       "examples": [
         "\"Data over dogma is\"",
         "\"production of data over dogma media,\""
@@ -9022,18 +9030,24 @@
       ],
       "timestamps": ["00:56:48.790", "00:56:48.790"],
       "episodeIds": ["164852788", "164852788"],
-      "confidence": 80,
+      "confidence": 85,
       "firstSeen": "2026-08-02T19:33:45.769Z",
-      "lastSeen": "2026-09-27T23:43:09.644Z",
+      "lastSeen": "2026-11-07T02:40:23.771Z",
       "status": "pending"
     },
     "over dogma→Over Dogma": {
       "original": "over dogma",
       "corrected": "Over Dogma",
       "category": "capitalization",
-      "totalOccurrences": 8,
-      "episodeCount": 4,
-      "episodes": ["164852788", "166129945", "168709095", "170040765"],
+      "totalOccurrences": 10,
+      "episodeCount": 5,
+      "episodes": [
+        "164852788",
+        "166129945",
+        "168709095",
+        "170040765",
+        "174036223"
+      ],
       "examples": [
         "\"Data over dogma is a\"",
         "\"of data over dogma media, llc.\""
@@ -9044,9 +9058,9 @@
       ],
       "timestamps": ["00:56:48.790", "00:56:48.790"],
       "episodeIds": ["164852788", "164852788"],
-      "confidence": 80,
+      "confidence": 85,
       "firstSeen": "2026-08-02T19:33:45.769Z",
-      "lastSeen": "2026-09-27T23:43:09.644Z",
+      "lastSeen": "2026-11-07T02:40:23.771Z",
       "status": "pending"
     },
     "adherence→adherents": {
@@ -9758,7 +9772,116 @@
       "firstSeen": "2026-11-05T04:54:41.540Z",
       "lastSeen": "2026-11-05T04:54:41.540Z",
       "status": "pending"
+    },
+    "covenant Code→Covenant Code": {
+      "original": "covenant Code",
+      "corrected": "Covenant Code",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["174036223"],
+      "examples": [
+        "\"that's the covenant Code. And a\"",
+        "\"with the Covenant code and God's\""
+      ],
+      "correctedExamples": [
+        "\"that's the Covenant Code. And a\"",
+        "\"with the Covenant Code and God's\""
+      ],
+      "timestamps": ["00:06:34.210", "00:08:22.370"],
+      "episodeIds": ["174036223", "174036223"],
+      "confidence": 10,
+      "firstSeen": "2026-11-07T02:40:23.771Z",
+      "lastSeen": "2026-11-07T02:40:23.771Z",
+      "status": "pending"
+    },
+    "malamu→melammu": {
+      "original": "malamu",
+      "corrected": "melammu",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["174036223"],
+      "examples": [
+        "\"they called malamu, which was\"",
+        "\"you saw malamu, you knew\""
+      ],
+      "correctedExamples": [
+        "\"they called melammu, which was\"",
+        "\"you saw melammu, you knew\""
+      ],
+      "timestamps": ["00:20:31.480", "00:20:31.480"],
+      "episodeIds": ["174036223", "174036223"],
+      "confidence": 10,
+      "firstSeen": "2026-11-07T02:40:23.771Z",
+      "lastSeen": "2026-11-07T02:40:23.771Z",
+      "status": "pending"
+    },
+    "her→Hur": {
+      "original": "her",
+      "corrected": "Hur",
+      "category": "proper-noun",
+      "totalOccurrences": 3,
+      "episodeCount": 1,
+      "episodes": ["174036223"],
+      "examples": [
+        "\"Aaron and her are with\"",
+        "\"Aaron and her.\"",
+        "\"Her is H\""
+      ],
+      "correctedExamples": [
+        "\"Aaron and Hur are with\"",
+        "\"Aaron and Hur.\"",
+        "\"Hur is H\""
+      ],
+      "timestamps": ["00:27:51.370", "00:27:51.370", "00:28:28.870"],
+      "episodeIds": ["174036223", "174036223", "174036223"],
+      "confidence": 20,
+      "firstSeen": "2026-11-07T02:40:23.771Z",
+      "lastSeen": "2026-11-07T02:40:23.771Z",
+      "status": "pending"
+    },
+    "talking p→talking P": {
+      "original": "talking p",
+      "corrected": "talking P",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["174036223"],
+      "examples": ["\"We're talking p.\"", "\"We're talking p. Yes, the\""],
+      "correctedExamples": [
+        "\"We're talking P.\"",
+        "\"We're talking P. Yes, the\""
+      ],
+      "timestamps": ["00:29:07.810", "00:29:09.170"],
+      "episodeIds": ["174036223", "174036223"],
+      "confidence": 10,
+      "firstSeen": "2026-11-07T02:40:23.771Z",
+      "lastSeen": "2026-11-07T02:40:23.771Z",
+      "status": "pending"
+    },
+    "temple period→Temple period": {
+      "original": "temple period",
+      "corrected": "Temple period",
+      "category": "capitalization",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["174036223"],
+      "examples": [
+        "\"the second temple period from 519\"",
+        "\"the second temple period.\""
+      ],
+      "correctedExamples": [
+        "\"the Second Temple period from 519\"",
+        "\"the Second Temple period.\""
+      ],
+      "timestamps": ["00:55:30.270", "00:55:30.270"],
+      "episodeIds": ["174036223", "174036223"],
+      "confidence": 10,
+      "firstSeen": "2026-11-07T02:40:23.771Z",
+      "lastSeen": "2026-11-07T02:40:23.771Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-11-05T04:54:41.541Z"
+  "lastUpdated": "2026-11-07T02:40:23.771Z"
 }

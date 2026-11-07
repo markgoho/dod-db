@@ -10245,6 +10245,16 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 186,
     episodes: [186],
   },
+  {
+    canonical: "Late Bronze Age collapse",
+    variations: ["Bronze Age collapse"],
+    category: "event",
+    description:
+      "The widespread societal breakdown and transition across the Eastern Mediterranean, Aegean, and Near East around 1200 BCE that brought an end to the Late Bronze Age.",
+    status: "proposed",
+    addedInEpisode: 187,
+    episodes: [187],
+  },
 ];
 
 export function getAllSearchableTerms(
