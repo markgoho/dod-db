@@ -60,6 +60,7 @@ New episodes usually arrive with every segment still `auto`. Normally the user v
 - Read the transcript near each `startTimestamp`. The hosts usually preview the segments in the intro and announce each one when it starts, for example "let's just dive in here with Taking Issue" or "move on to our... What's that?"
 - Treat the `intro` and `outro` as structural. Verify them when their boundaries look right.
 - A generic `segment` type from audio detection needs its real type (for example `what-is-that`). Use the announced name.
+- Check types the pipeline already assigned too. Pattern detection can match a segment name the hosts say in the intro preview instead of the announcement at the segment start. Correct the type when the announcement near `startTimestamp` names a different segment.
 - Verify with stdin:
   ```bash
   bun run src/scripts/verify-segments.ts <<'EOF'

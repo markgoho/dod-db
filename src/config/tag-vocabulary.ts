@@ -10255,6 +10255,16 @@ export const tagVocabulary: TagDefinition[] = [
     addedInEpisode: 187,
     episodes: [187],
   },
+  {
+    canonical: "Servant Songs",
+    variations: [],
+    category: "literature",
+    description:
+      "A series of poems within Deutero-Isaiah (Isaiah 40–55) that depict an idealized servant of God who suffers and fulfills a divine mission.",
+    status: "rejected",
+    addedInEpisode: 188,
+    episodes: [188],
+  },
 ];
 
 export function getAllSearchableTerms(

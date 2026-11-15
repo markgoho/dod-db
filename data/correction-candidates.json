@@ -761,14 +761,15 @@
       "original": "Masoretic text",
       "corrected": "Masoretic Text",
       "category": "capitalization",
-      "totalOccurrences": 24,
-      "episodeCount": 5,
+      "totalOccurrences": 28,
+      "episodeCount": 6,
       "episodes": [
         "DD7Kkzh2kzg",
         "p8CjJR4yhfk",
         "iO6mdYWPOyo",
         "KDkyHw3nE0w",
-        "G-bwyrQQI5g"
+        "G-bwyrQQI5g",
+        "174720548"
       ],
       "examples": [
         "\"of the Masoretic text.\"",
@@ -784,7 +785,7 @@
       "episodeIds": ["DD7Kkzh2kzg", "DD7Kkzh2kzg", "DD7Kkzh2kzg"],
       "confidence": 85,
       "firstSeen": "2026-01-11T17:59:30.418Z",
-      "lastSeen": "2026-04-03T00:47:04.717Z",
+      "lastSeen": "2026-11-15T13:49:55.514Z",
       "status": "approved",
       "reviewedAt": "2026-01-11T18:05:54.102Z",
       "reviewedBy": "UI Review"
@@ -5185,9 +5186,9 @@
       "original": "Bell",
       "corrected": "Bel",
       "category": "spelling",
-      "totalOccurrences": 8,
-      "episodeCount": 1,
-      "episodes": ["wFcJAbbNOpk"],
+      "totalOccurrences": 11,
+      "episodeCount": 2,
+      "episodes": ["wFcJAbbNOpk", "174720548"],
       "examples": [
         "\"we're doing Bell and the\"",
         "\"I mean, Bell and the\"",
@@ -5200,9 +5201,9 @@
       ],
       "timestamps": ["00:02:30.000", "00:29:57.760", "00:29:57.760"],
       "episodeIds": ["wFcJAbbNOpk", "wFcJAbbNOpk", "wFcJAbbNOpk"],
-      "confidence": 20,
+      "confidence": 45,
       "firstSeen": "2026-01-17T03:03:41.501Z",
-      "lastSeen": "2026-01-17T03:03:41.501Z",
+      "lastSeen": "2026-11-15T13:49:55.514Z",
       "status": "rejected",
       "reviewedAt": "2026-04-04T20:51:06.369Z",
       "reviewedBy": "UI Review"
@@ -5967,8 +5968,8 @@
       "original": "taking issue",
       "corrected": "Taking Issue",
       "category": "capitalization",
-      "totalOccurrences": 20,
-      "episodeCount": 8,
+      "totalOccurrences": 23,
+      "episodeCount": 9,
       "episodes": [
         "t40eXH29l-8",
         "Zpp6qUqrins",
@@ -5977,7 +5978,8 @@
         "151982360",
         "164229960",
         "166129945",
-        "169390253"
+        "169390253",
+        "174720548"
       ],
       "examples": [
         "\"our segment taking issue. We're going\"",
@@ -5993,7 +5995,7 @@
       "episodeIds": ["t40eXH29l-8", "t40eXH29l-8", "Zpp6qUqrins"],
       "confidence": 85,
       "firstSeen": "2026-01-18T17:02:51.228Z",
-      "lastSeen": "2026-09-27T21:58:33.374Z",
+      "lastSeen": "2026-11-15T13:49:55.514Z",
       "status": "approved",
       "reviewedAt": "2026-04-03T01:40:37.949Z",
       "reviewedBy": "UI Review"
@@ -9883,5 +9885,5 @@
       "status": "pending"
     }
   },
-  "lastUpdated": "2026-11-07T02:40:23.771Z"
+  "lastUpdated": "2026-11-15T13:49:55.515Z"
 }

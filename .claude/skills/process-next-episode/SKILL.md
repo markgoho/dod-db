@@ -1,6 +1,6 @@
 ---
 name: process-next-episode
-description: Find the next unprocessed canonical RSS episode and, when an audio URL is available, run the RSS audio processing pipeline automatically without asking for confirmation.
+description: Find the next unprocessed canonical RSS episode and, when an audio URL is available, run the RSS audio processing pipeline automatically without asking for confirmation, then verify and analyze the new episode's segments.
 ---
 
 # Process Next Episode
@@ -17,6 +17,7 @@ to:
 
 - the next unprocessed canonical RSS episode
 - a confirmed processing run through the RSS audio pipeline
+- verified segments with topic labels and summaries
 
 ## Workflow
 
@@ -64,19 +65,33 @@ If the user explicitly wants a different RSS feed for this run, pass:
 
 - `--rss-url=URL`
 
-### 4. Report the result
+### 4. Analyze the segments
 
-After running the pipeline:
+If the pipeline succeeded, follow the `analyze-segments` skill (`.claude/skills/analyze-segments/SKILL.md`) for the new episode. Take the episode number from the pipeline output line `✓ Assigned episode number: N`. If the pipeline failed, skip this step.
+
+Do not ask before starting. Gather will return `unverified-segments`, because new episodes arrive with every segment set to `auto`. Follow that skill's "Unverified segments" rules. Check every segment type against the transcript, including types the pipeline already assigned. Detection goes wrong in two known ways:
+
+- Pattern detection can match a segment name the hosts say in the intro preview instead of the announcement at the segment start. In episode 188 it labeled Chapter and Verse as `taking-issue` this way.
+- Audio detection can leave a generic `segment` type, or log `No transcript line found within tolerance`.
+
+Correct wrong types in the `verify-segments.ts` payload. Do not hand-edit `data/processed-videos.json`.
+
+If any of that skill's stop conditions applies, stop after verification. Report what blocked you and do not save labels.
+
+### 5. Report the result
 
 - report whether processing succeeded or failed
 - include the processed episode title and transcript path when available
 - if it fails, show the real error output rather than summarizing it away
+- list each verified segment, the transcript line that confirms it, and any type you corrected
+- include the save script's review summary of labels and summaries, or the reason you stopped
 
 ## Important constraints
 
 - This workflow is RSS-audio-only
 - Reuse the existing RSS pipeline entrypoint in `src/scripts/process-next-episode.ts`
 - Do not implement a separate processing path
+- Segment analysis reuses the `analyze-segments` skill and its scripts. Do not write a separate labeling path.
 
 ## Useful files
 
@@ -84,3 +99,7 @@ After running the pipeline:
 - `src/scripts/process-next-episode.ts`
 - `src/pipeline/rss-audio-processor.ts`
 - `src/rss/find-next-unprocessed-episode.ts`
+- `.claude/skills/analyze-segments/SKILL.md`
+- `src/scripts/gather-segment-context.ts`
+- `src/scripts/verify-segments.ts`
+- `src/scripts/save-segment-results.ts`

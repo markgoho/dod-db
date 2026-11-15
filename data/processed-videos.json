@@ -34075,5 +34075,183 @@
         "mentions": 2
       }
     ]
+  },
+  {
+    "videoId": "174720548",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/174720548.mp3?sig=1sdK7V_zQsqaiZoWSd_tcw8NVge0LbigvK7o7aJzosA%3D",
+    "title": "Dem Dry Bones (and Pierced Hands?)",
+    "publishedAt": "2026-11-08T07:00:10.000Z",
+    "processedAt": "2026-11-15T13:46:05.677Z",
+    "transcriptPath": "data/transcripts/2026-11-08-dem-dry-bones-and-pierced-hands.txt",
+    "tags": [
+      {
+        "tag": "Dead Sea Scrolls",
+        "mentions": 1
+      },
+      {
+        "tag": "Masoretic Text",
+        "mentions": 5
+      },
+      {
+        "tag": "Deutero-Isaiah",
+        "mentions": 1
+      },
+      {
+        "tag": "Septuagint",
+        "mentions": 2
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 15
+      },
+      {
+        "tag": "Dead Sea",
+        "mentions": 2
+      },
+      {
+        "tag": "Judah",
+        "mentions": 11
+      },
+      {
+        "tag": "Abortion",
+        "mentions": 3
+      },
+      {
+        "tag": "Babylon",
+        "mentions": 3
+      },
+      {
+        "tag": "Trinity",
+        "mentions": 1
+      },
+      {
+        "tag": "YHWH",
+        "mentions": 1
+      },
+      {
+        "tag": "Easter",
+        "mentions": 1
+      },
+      {
+        "tag": "Adam",
+        "mentions": 1
+      },
+      {
+        "tag": "King James Bible",
+        "mentions": 7
+      },
+      {
+        "tag": "Bel and the Dragon",
+        "mentions": 1
+      },
+      {
+        "tag": "Justin Martyr",
+        "mentions": 2
+      },
+      {
+        "tag": "Crucifixion",
+        "mentions": 4
+      },
+      {
+        "tag": "Joseph",
+        "mentions": 2
+      },
+      {
+        "tag": "Pontius Pilate",
+        "mentions": 1
+      },
+      {
+        "tag": "David",
+        "mentions": 14
+      },
+      {
+        "tag": "Jonah",
+        "mentions": 1
+      },
+      {
+        "tag": "Jacob",
+        "mentions": 1
+      },
+      {
+        "tag": "John",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 1
+      }
+    ],
+    "segments": [
+      {
+        "type": "intro",
+        "startTimestamp": "[00:00:00.000]",
+        "endTimestamp": "[00:02:36.681]",
+        "confidence": "verified",
+        "detectionMethod": "audio"
+      },
+      {
+        "type": "chapter-and-verse",
+        "startTimestamp": "[00:02:36.681]",
+        "endTimestamp": "[00:32:56.165]",
+        "confidence": "verified",
+        "detectionMethod": "pattern",
+        "topicLabel": "Ezek 37",
+        "summary": "Dry bones and two sticks as Israel's national restoration"
+      },
+      {
+        "type": "taking-issue",
+        "startTimestamp": "[00:32:56.165]",
+        "endTimestamp": "[01:07:12.921]",
+        "confidence": "verified",
+        "detectionMethod": "audio",
+        "topicLabel": "Piercing Prophecies",
+        "summary": "Zechariah 12, Psalm 22, Isaiah 53 aren't crucifixion prophecies"
+      }
+    ],
+    "speakers": ["Dan Beecher", "Dan McClellan"],
+    "episodeNumber": 188,
+    "scriptures": [
+      {
+        "book": "Isaiah",
+        "references": ["Isaiah 38:13", "Isaiah 51:9", "Isaiah 53"],
+        "mentions": 8
+      },
+      {
+        "book": "Zechariah",
+        "references": ["Zechariah 2", "Zechariah 12:10"],
+        "mentions": 7
+      },
+      {
+        "book": "Ezekiel",
+        "references": [
+          "Ezekiel",
+          "Ezekiel 1:1",
+          "Ezekiel 22:25",
+          "Ezekiel 30",
+          "Ezekiel 37"
+        ],
+        "mentions": 6
+      },
+      {
+        "book": "John",
+        "references": ["John", "John 19"],
+        "mentions": 6
+      },
+      {
+        "book": "Psalms",
+        "references": ["Psalms 22", "Psalms 22:16"],
+        "mentions": 4
+      },
+      {
+        "book": "Bel and the Dragon",
+        "references": ["Bel and the Dragon"],
+        "mentions": 1
+      },
+      {
+        "book": "Numbers",
+        "references": ["Numbers 24"],
+        "mentions": 1
+      }
+    ]
   }
 ]
