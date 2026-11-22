@@ -11,6 +11,6 @@ works:
   - title: "American Idolatry: How Christian Nationalism Betrays the Gospel and Threatens the Church"
     url: "https://bookshop.org/p/books/american-idolatry-how-christian-nationalism-betrays-the-gospel-and-threatens-the-church-andrew-l-whitehead/cec9a4e2c9b03a8f?ean=9781587437182&next=t"
   - title: "Taking America Back for God: Christian Nationalism in the United States"
-    url: "https://www.amazon.com/Taking-America-Back-God-Nationalism/dp/0197652573?tag=elelohim0a-20"
+    url: "https://www.amazon.com/Taking-America-Back-God-Nationalism/dp/0197652573"
 imageAlt: "Portrait of Andrew Whitehead"
 ---

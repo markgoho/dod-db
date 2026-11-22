@@ -76,7 +76,7 @@ Prefer biographical sources in this order:
 
 For helpful links, use this priority order:
 
-1. **Published works** named in the episode — books, articles, essays, courses. Confirm authorship using at least one strong signal (institutional/profile page, CV, publisher bio, episode discussion, or product page whose author details match the guest's known field). If attribution is ambiguous, omit or ask the user. For books, use Playwriter to find a stable Amazon product page and include the Associates tag `elelohim0a-20` (`?tag=elelohim0a-20`). If Amazon lacks the work or a publisher/university press page is more appropriate, use that instead. Prefer product/detail pages over search results.
+1. **Published works** named in the episode — books, articles, essays, courses. Confirm authorship using at least one strong signal (institutional/profile page, CV, publisher bio, episode discussion, or product page whose author details match the guest's known field). If attribution is ambiguous, omit or ask the user. For books, use Playwriter to find a stable Amazon product page. Do not add an affiliate or Associates tag (`tag=`) to any link. If Amazon lacks the work or a publisher/university press page is more appropriate, use that instead. Prefer product/detail pages over search results.
 2. **Social media profiles** — Instagram, TikTok, YouTube, Twitter/X, Threads. Use the handle mentioned in the episode or confirmed on the guest's Linktree/website. Prefer the platform where the guest is most active or best known.
 3. **Personal website or Linktree** — include when it serves as a useful hub for the guest's work and resources.
 4. **Free classes, newsletters, Patreon, or other public resources** mentioned in the episode — especially valuable when the guest offers free educational content.
@@ -131,7 +131,7 @@ Create a JSON object in this shape:
   "works": [
     {
       "title": "1 and 2 Samuel for Normal People",
-      "url": "https://www.amazon.com/dp/example?tag=elelohim0a-20"
+      "url": "https://www.amazon.com/dp/example"
     }
   ],
   "imageAlt": "Portrait of Aaron Higashi",

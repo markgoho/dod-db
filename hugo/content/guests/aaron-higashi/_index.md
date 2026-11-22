@@ -11,7 +11,7 @@ expertise:
   - "Public scholarship"
 works:
   - title: "Serving Up Scripture: How to Interpret the Bible for Yourself and Others"
-    url: "https://www.amazon.com/Serving-Up-Scripture-Interpret-Yourself/dp/B0FCCC54T4?tag=elelohim0a-20"
+    url: "https://www.amazon.com/Serving-Up-Scripture-Interpret-Yourself/dp/B0FCCC54T4"
   - title: "1 and 2 Samuel for Normal People"
     url: "https://thebiblefornormalpeople.com/books-for-normal-people/1-and-2-samuel-for-normal-people"
 imageAlt: "Portrait of Aaron Higashi"

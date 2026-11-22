@@ -9883,7 +9883,53 @@
       "firstSeen": "2026-11-07T02:40:23.771Z",
       "lastSeen": "2026-11-07T02:40:23.771Z",
       "status": "pending"
+    },
+    "Shailey→Shaily": {
+      "original": "Shailey",
+      "corrected": "Shaily",
+      "category": "spelling",
+      "totalOccurrences": 4,
+      "episodeCount": 1,
+      "episodes": ["175375604"],
+      "examples": [
+        "\"This is Shailey Patel. Thank\"",
+        "\"joining us, Shailey.\"",
+        "\"And Shailey is associate\""
+      ],
+      "correctedExamples": [
+        "\"This is Shaily Patel. Thank\"",
+        "\"joining us, Shaily.\"",
+        "\"And Shaily is associate\""
+      ],
+      "timestamps": ["00:00:45.020", "00:00:45.020", "00:00:58.150"],
+      "episodeIds": ["175375604", "175375604", "175375604"],
+      "confidence": 20,
+      "firstSeen": "2026-11-22T14:18:11.299Z",
+      "lastSeen": "2026-11-22T14:18:11.299Z",
+      "status": "pending"
+    },
+    "Shaylee→Shaily": {
+      "original": "Shaylee",
+      "corrected": "Shaily",
+      "category": "spelling",
+      "totalOccurrences": 2,
+      "episodeCount": 1,
+      "episodes": ["175375604"],
+      "examples": [
+        "\"people like Shaylee on to\"",
+        "\"can hear Shaylee tell us\""
+      ],
+      "correctedExamples": [
+        "\"people like Shaily on to\"",
+        "\"can hear Shaily tell us\""
+      ],
+      "timestamps": ["00:56:03.180", "00:56:03.180"],
+      "episodeIds": ["175375604", "175375604"],
+      "confidence": 10,
+      "firstSeen": "2026-11-22T14:18:11.299Z",
+      "lastSeen": "2026-11-22T14:18:11.299Z",
+      "status": "pending"
     }
   },
-  "lastUpdated": "2026-11-15T13:49:55.515Z"
+  "lastUpdated": "2026-11-22T14:18:11.299Z"
 }

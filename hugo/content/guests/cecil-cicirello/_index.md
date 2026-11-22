@@ -19,6 +19,6 @@ works:
   - title: "The Know Rogan Experience"
     url: "https://www.knowrogan.com/"
   - title: "The Grand Unified Theory of Bullshit"
-    url: "https://www.amazon.com/Grand-Unified-Theory-Bullshit/dp/B09TDW7RSR?tag=elelohim0a-20"
+    url: "https://www.amazon.com/Grand-Unified-Theory-Bullshit/dp/B09TDW7RSR"
 imageAlt: "Portrait of Cecil Cicirello"
 ---

@@ -9405,8 +9405,9 @@ export const tagVocabulary: TagDefinition[] = [
     category: "theology",
     description:
       "Supernatural events attributed to divine intervention, a concept central to Christian faith and C.S. Lewis's theological writings.",
-    status: "proposed",
+    status: "rejected",
     addedInEpisode: 164,
+    episodes: [164, 189],
   },
   {
     canonical: "Mythology",
@@ -10264,6 +10265,22 @@ export const tagVocabulary: TagDefinition[] = [
     status: "rejected",
     addedInEpisode: 188,
     episodes: [188],
+  },
+  {
+    canonical: "Heresy",
+    variations: [
+      "heretic",
+      "heretics",
+      "heretical",
+      "heresiology",
+      "heresiological",
+    ],
+    category: "theology",
+    description:
+      "Religious beliefs or practices deemed by an authoritative group to deviate from accepted orthodoxy.",
+    status: "rejected",
+    addedInEpisode: 189,
+    episodes: [189],
   },
 ];
 

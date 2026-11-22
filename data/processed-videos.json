@@ -34253,5 +34253,137 @@
         "mentions": 1
       }
     ]
+  },
+  {
+    "videoId": "175375604",
+    "audioUrl": "https://www.patreon.com/api/rss/u/7jEISTZJGt74MZiCm1DWXkobEEQlIAZ7/e/175375604.mp3?sig=vyufUBgWZuKr0s4bnMZQcbl5_Gxeb7tgwdyMaqZP_V4%3D",
+    "title": "Magic or Miracle? Shaily Patel on Policing Divine Power",
+    "publishedAt": "2026-11-15T07:20:01.000Z",
+    "processedAt": "2026-11-22T14:16:05.913Z",
+    "transcriptPath": "data/transcripts/2026-11-15-magic-or-miracle-shaily-patel-on-policing-divine-power.txt",
+    "tags": [
+      {
+        "tag": "Mary Magdalene",
+        "mentions": 2
+      },
+      {
+        "tag": "Monotheism",
+        "mentions": 2
+      },
+      {
+        "tag": "Holy Spirit",
+        "mentions": 1
+      },
+      {
+        "tag": "Jerusalem",
+        "mentions": 1
+      },
+      {
+        "tag": "Judaism",
+        "mentions": 6
+      },
+      {
+        "tag": "Romans",
+        "mentions": 2
+      },
+      {
+        "tag": "Origen",
+        "mentions": 1
+      },
+      {
+        "tag": "Moses",
+        "mentions": 1
+      },
+      {
+        "tag": "Peter",
+        "mentions": 14
+      },
+      {
+        "tag": "Satan",
+        "mentions": 2
+      },
+      {
+        "tag": "Hell",
+        "mentions": 3
+      },
+      {
+        "tag": "Witch of Endor",
+        "mentions": 1
+      },
+      {
+        "tag": "Beelzebul",
+        "mentions": 1
+      },
+      {
+        "tag": "Salvation",
+        "mentions": 1
+      },
+      {
+        "tag": "Irenaeus",
+        "mentions": 1
+      },
+      {
+        "tag": "Flavius Josephus",
+        "mentions": 10
+      },
+      {
+        "tag": "Marcion",
+        "mentions": 10
+      },
+      {
+        "tag": "Judas Iscariot",
+        "mentions": 1
+      },
+      {
+        "tag": "Demon",
+        "mentions": 2
+      },
+      {
+        "tag": "Aaron",
+        "mentions": 1
+      },
+      {
+        "tag": "Paul",
+        "mentions": 12
+      },
+      {
+        "tag": "John",
+        "mentions": 1
+      },
+      {
+        "tag": "Luke",
+        "mentions": 8
+      },
+      {
+        "tag": "Nero",
+        "mentions": 1
+      }
+    ],
+    "segments": [],
+    "speakers": ["Shaily Patel", "Dan McClellan", "Dan Beecher"],
+    "episodeNumber": 189,
+    "scriptures": [
+      {
+        "book": "Luke",
+        "references": ["Luke", "Luke 1", "Luke 10", "Luke 14"],
+        "mentions": 11
+      },
+      {
+        "book": "Mark",
+        "references": ["Mark 13"],
+        "mentions": 4
+      },
+      {
+        "book": "Acts",
+        "references": ["Acts", "Acts 5", "Acts 8"],
+        "mentions": 3
+      },
+      {
+        "book": "Revelation",
+        "references": ["Revelation"],
+        "mentions": 1
+      }
+    ],
+    "episodeTopic": "Magic in Luke-Acts"
   }
 ]

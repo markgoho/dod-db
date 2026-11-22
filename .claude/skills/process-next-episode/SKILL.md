@@ -1,6 +1,6 @@
 ---
 name: process-next-episode
-description: Find the next unprocessed canonical RSS episode and, when an audio URL is available, run the RSS audio processing pipeline automatically without asking for confirmation, then verify and analyze the new episode's segments.
+description: Find the next unprocessed canonical RSS episode and, when an audio URL is available, run the RSS audio processing pipeline automatically without asking for confirmation, then verify and analyze the new episode's segments and create a guest page for any new guest.
 ---
 
 # Process Next Episode
@@ -18,6 +18,7 @@ to:
 - the next unprocessed canonical RSS episode
 - a confirmed processing run through the RSS audio pipeline
 - verified segments with topic labels and summaries
+- a guest page for any new guest
 
 ## Workflow
 
@@ -78,13 +79,24 @@ Correct wrong types in the `verify-segments.ts` payload. Do not hand-edit `data/
 
 If any of that skill's stop conditions applies, stop after verification. Report what blocked you and do not save labels.
 
-### 5. Report the result
+### 5. Create guest pages
+
+If the pipeline succeeded and the episode has a guest, follow the `create-guest-page` skill (`.claude/skills/create-guest-page/SKILL.md`) for each guest. Do not ask before starting.
+
+Guests are the episode's `speakers` in `data/processed-videos.json`, minus the hosts Dan McClellan and Dan Beecher. The pipeline log line `Guest episode detected` and the `guestNames` array from gather (in `episode-topic` mode) are other signals.
+
+Before you create a page, run `bun run guest-page:gather -- "<name>"`. If the output includes `existingPage`, the guest is returning. Skip creating the page, because the episode grid picks up the new appearance on its own. Only create a page when the guest has none.
+
+Do this step even when Step 4 stopped early. The guest page does not depend on segment labels.
+
+### 6. Report the result
 
 - report whether processing succeeded or failed
 - include the processed episode title and transcript path when available
 - if it fails, show the real error output rather than summarizing it away
 - list each verified segment, the transcript line that confirms it, and any type you corrected
 - include the save script's review summary of labels and summaries, or the reason you stopped
+- for each guest, report the guest page you created, or that one already existed
 
 ## Important constraints
 
@@ -103,3 +115,4 @@ If any of that skill's stop conditions applies, stop after verification. Report 
 - `src/scripts/gather-segment-context.ts`
 - `src/scripts/verify-segments.ts`
 - `src/scripts/save-segment-results.ts`
+- `.claude/skills/create-guest-page/SKILL.md`
