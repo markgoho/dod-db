@@ -1,0 +1,295 @@
+{{/*
+  PROTOTYPE for issue #83. Throwaway; never merge to trunk.
+  Three variants of one Synthesis Page on /prototype/moses-and-the-exodus/, switchable via ?variant=a|b|c.
+  All variants render; client JS shows one. Nothing renders in production builds.
+*/}}
+{{ define "head-styles" }}
+  {{ $inlineCSS := resources.Get "css/tag-single.css" | resources.Minify }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+  <style>
+    .syn { display: grid; gap: var(--space-m); }
+    .syn [hidden] { display: none; }
+    .syn-variant { display: none; gap: var(--space-m); }
+    body[data-variant="a"] .syn-variant[data-variant="a"],
+    body[data-variant="b"] .syn-variant[data-variant="b"],
+    body[data-variant="c"] .syn-variant[data-variant="c"] { display: grid; }
+    body[data-strict] [data-pending],
+    body[data-strict] [data-dead] { display: none; }
+
+    .syn-notice { padding: var(--space-xs) var(--space-s); }
+    .syn-notice p { margin: 0; }
+    .syn-block { padding: var(--space-s); display: grid; gap: var(--space-xs); }
+    .syn-block > * { margin: 0; }
+    .syn-prose { max-width: var(--content-max-width-prose); display: grid; gap: var(--space-s); }
+    .syn-prose p { margin: 0; font-size: var(--step-0); }
+    .syn-prose sup a { font-weight: var(--font-weight-bold); text-decoration: none; }
+    .syn-triggers { display: grid; gap: var(--space-xs); grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+    .syn-notes { display: grid; gap: var(--space-xs); padding-inline-start: var(--space-s); }
+    .syn-notes li > * { margin: 0; }
+    .syn-quote { border-inline-start: var(--border-width-md) solid var(--tan-900); margin: 0; padding-inline-start: var(--space-xs); }
+    .syn-meta { color: var(--color-text-muted); font-size: var(--step--1); overflow-wrap: anywhere; }
+    .syn-flag { background: var(--color-accent); }
+    .syn-statement { font-family: var(--font-family-display); font-size: var(--step-1); font-weight: var(--font-weight-bold); }
+    .syn-cites { display: grid; gap: var(--space-xs); list-style: none; padding: 0; }
+    .syn-cites li { display: grid; gap: var(--space-3xs); }
+    .syn-q summary { cursor: pointer; display: grid; gap: var(--space-3xs); }
+    .syn-q[open] summary { margin-block-end: var(--space-xs); }
+    .syn-table { border-collapse: collapse; width: 100%; }
+    .syn-table th, .syn-table td { border-block-end: var(--border-width-sm) solid var(--tan-900); padding: var(--space-2xs); text-align: start; vertical-align: top; font-size: var(--step--1); }
+    .syn-scroll { overflow-x: auto; }
+
+    .proto-ledger { border: var(--border-width-md) dashed var(--tan-900); padding: var(--space-s); display: grid; gap: var(--space-s); margin-block-start: var(--space-xl); }
+    .proto-ledger > * { margin: 0; }
+    .proto-bar { position: fixed; inset-block-end: var(--space-xs); inset-inline: 0; margin-inline: auto; width: fit-content; max-width: calc(100% - var(--space-m)); z-index: var(--z-index-sticky); display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-2xs); padding: var(--space-3xs) var(--space-xs); background: var(--tan-900); color: var(--tan-000); border-radius: var(--space-m); font-size: var(--step--1); }
+    .proto-bar button { background: var(--tan-000); color: var(--tan-900); border: 0; border-radius: var(--space-m); cursor: pointer; font: inherit; font-weight: var(--font-weight-bold); padding: var(--space-4xs) var(--space-xs); }
+    .proto-bar label { display: inline-flex; gap: var(--space-3xs); align-items: center; }
+  </style>
+{{ end }}
+
+{{ define "main" }}
+  {{ if not hugo.IsProduction }}
+    {{ $p := .Params }}
+    {{ $sources := $p.sources }}
+    {{ $episodesByNumber := dict }}
+    {{ range where site.RegularPages ".Section" "episodes" }}
+      {{ $episodesByNumber = merge $episodesByNumber (dict (string .Params.episodeNumber) .) }}
+    {{ end }}
+    {{ $triggerEpisodes := slice }}
+    {{ range $p.triggers }}{{ $triggerEpisodes = $triggerEpisodes | append .episode }}{{ end }}
+    {{ $triggerEpisodes = $triggerEpisodes | uniq }}
+    {{ $notice := "This page is the archive's own work. It was not written, reviewed or endorsed by Data Over Dogma or its hosts. Its statements rest on the outside sources cited, not on the show." }}
+
+    <section class="syn">
+      <header class="page-hero">
+        <p class="page-hero__eyebrow type-eyebrow">Synthesis</p>
+        <h1 class="page-hero__title">{{ .Title }}</h1>
+        <div class="page-hero__description"><p>{{ $p.dek }}</p></div>
+      </header>
+
+      {{/* ============ VARIANT A: essay with footnotes. Trigger block first, prose body, numbered notes last. ============ */}}
+      <div class="syn-variant" data-variant="a">
+        <aside class="syn-notice panel panel--muted"><p>{{ $notice }}</p></aside>
+
+        <section class="syn-block panel">
+          <h2 class="type-eyebrow">What prompted this page</h2>
+          <p class="syn-meta">Things said on the show. They are why this page exists; they are not its evidence.</p>
+          <div class="syn-triggers">
+            {{ range $p.triggers }}
+              {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
+            {{ end }}
+          </div>
+        </section>
+
+        <article class="syn-prose">
+          {{ $n := 0 }}
+          {{ $group := "" }}
+          {{ range $p.statements }}
+            {{ if ne .group $group }}
+              {{ if ne $group "" }}</p>{{ end }}
+              {{ $group = .group }}
+              <h2 class="type-section-title">{{ .group }}</h2>
+              <p>
+            {{ end }}
+            {{ $dead := true }}
+            {{ range .cites }}{{ if not (index $sources .source).pending }}{{ $dead = false }}{{ end }}{{ end }}
+            <span {{ if $dead }}data-dead{{ end }}>
+              {{ .text }}{{ range .cites }}{{ $n = add $n 1 }}<sup {{ if (index $sources .source).pending }}data-pending{{ end }}><a href="#note-{{ $n }}">[{{ $n }}]</a></sup>{{ end }}
+            </span>
+          {{ end }}
+          </p>
+        </article>
+
+        <section>
+          <h2 class="type-section-title">Sources</h2>
+          <ol class="syn-notes">
+            {{ $n := 0 }}
+            {{ range $p.statements }}
+              {{ range .cites }}
+                {{ $n = add $n 1 }}
+                {{ $s := index $sources .source }}
+                <li id="note-{{ $n }}" value="{{ $n }}" {{ if $s.pending }}data-pending{{ end }}>
+                  <p>{{ $s.full }}, {{ .locator }}.</p>
+                  <blockquote class="syn-quote">“{{ .quote }}”</blockquote>
+                  <p class="syn-meta">
+                    {{ $s.class }} · {{ $s.access }} · read {{ $p.readDate }} ·
+                    <a href="{{ $s.url }}" rel="noopener">{{ $s.url }}</a>
+                  </p>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ol>
+        </section>
+      </div>
+
+      {{/* ============ VARIANT B: claim ledger. One panel per statement, source quotes always visible. Triggers last. ============ */}}
+      <div class="syn-variant" data-variant="b">
+        {{ range $p.statements }}
+          {{ $dead := true }}
+          {{ range .cites }}{{ if not (index $sources .source).pending }}{{ $dead = false }}{{ end }}{{ end }}
+          <article class="syn-block panel" {{ if $dead }}data-dead{{ end }}>
+            <p class="type-eyebrow">{{ .group }}</p>
+            <p class="syn-statement">{{ .text }}</p>
+            <ul class="syn-cites">
+              {{ range .cites }}
+                {{ $s := index $sources .source }}
+                <li {{ if $s.pending }}data-pending{{ end }}>
+                  <blockquote class="syn-quote">“{{ .quote }}”</blockquote>
+                  <p class="syn-meta">
+                    <span class="chip {{ if $s.pending }}syn-flag{{ end }}">{{ $s.class }}</span>
+                    <a href="{{ $s.url }}" rel="noopener">{{ $s.short }}</a>, {{ .locator }} · {{ $s.access }} · read {{ $p.readDate }}
+                  </p>
+                </li>
+              {{ end }}
+            </ul>
+          </article>
+        {{ end }}
+
+        <section class="syn-block panel panel--muted">
+          <h2 class="type-eyebrow">What prompted this page</h2>
+          <p>{{ $notice }}</p>
+          <p class="syn-meta">The statements above rest on the sources quoted under them. These remarks from the show are only the reason the page was written.</p>
+          <div class="syn-triggers">
+            {{ range $p.triggers }}
+              {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
+            {{ end }}
+          </div>
+        </section>
+      </div>
+
+      {{/* ============ VARIANT C: question index. Short answers up front, sources on demand, triggers folded away, source table. ============ */}}
+      <div class="syn-variant" data-variant="c">
+        <details class="syn-block panel panel--muted">
+          <summary class="type-eyebrow">Prompted by {{ len $triggerEpisodes }} Episodes · not the show's work</summary>
+          <p>{{ $notice }}</p>
+          <div class="syn-triggers">
+            {{ range $p.triggers }}
+              {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
+            {{ end }}
+          </div>
+        </details>
+
+        {{ range $p.statements }}
+          {{ $dead := true }}
+          {{ range .cites }}{{ if not (index $sources .source).pending }}{{ $dead = false }}{{ end }}{{ end }}
+          <details class="syn-q syn-block panel" {{ if $dead }}data-dead{{ end }}>
+            <summary>
+              <span class="type-eyebrow">{{ .question }}</span>
+              <span class="syn-statement">{{ .short }}</span>
+            </summary>
+            <p>{{ .text }}</p>
+            <ul class="syn-cites">
+              {{ range .cites }}
+                {{ $s := index $sources .source }}
+                <li {{ if $s.pending }}data-pending{{ end }}>
+                  <blockquote class="syn-quote">“{{ .quote }}”</blockquote>
+                  <p class="syn-meta"><a href="{{ $s.url }}" rel="noopener">{{ $s.short }}</a>, {{ .locator }}</p>
+                </li>
+              {{ end }}
+            </ul>
+          </details>
+        {{ end }}
+
+        <section>
+          <h2 class="type-section-title">Sources used</h2>
+          <div class="syn-scroll">
+            <table class="syn-table">
+              <thead><tr><th>Source</th><th>Kind</th><th>Where read</th><th>Read</th></tr></thead>
+              <tbody>
+                {{ range $key, $s := $sources }}
+                  <tr {{ if $s.pending }}data-pending{{ end }}>
+                    <td><a href="{{ $s.url }}" rel="noopener">{{ $s.full }}</a></td>
+                    <td>{{ $s.class }}</td>
+                    <td>{{ $s.access }}</td>
+                    <td>{{ $p.readDate }}</td>
+                  </tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      {{/* ============ Prototype-only notes: cost and what the policy cut. Not part of any variant. ============ */}}
+      {{ $citeCount := 0 }}
+      {{ $pendingCites := 0 }}
+      {{ $deadCount := 0 }}
+      {{ range $p.statements }}
+        {{ $dead := true }}
+        {{ range .cites }}
+          {{ $citeCount = add $citeCount 1 }}
+          {{ if (index $sources .source).pending }}{{ $pendingCites = add $pendingCites 1 }}{{ else }}{{ $dead = false }}{{ end }}
+        {{ end }}
+        {{ if $dead }}{{ $deadCount = add $deadCount 1 }}{{ end }}
+      {{ end }}
+      <aside class="proto-ledger">
+        <h2 class="type-eyebrow">Prototype notes · not part of the page</h2>
+        <ul>
+          <li>{{ len $p.statements }} statements, {{ $citeCount }} citations, {{ len $sources }} sources. {{ len $p.triggers }} Trigger Claims from {{ len $triggerEpisodes }} Episodes.</li>
+          <li>Owner review for this page: open {{ $citeCount }} quotes at {{ len $sources }} URLs, and check {{ len $p.triggers }} Trigger Claims against their Episodes.</li>
+          <li>{{ $pendingCites }} of {{ $citeCount }} citations use a source type the policy has not ruled on. Tick “Settled sources only” in the bar: {{ $deadCount }} of {{ len $p.statements }} statements disappear, and the rest stand on one book excerpt (Meyers 2005, pp. 4–6).</li>
+          <li>The core claim (no evidence outside the Bible) survives either way.</li>
+        </ul>
+        <h3 class="type-eyebrow">The show's wording against the page's</h3>
+        <div class="syn-scroll">
+          <table class="syn-table">
+            <thead><tr><th>Said on the show</th><th>What the page can say</th><th>Result</th><th>Why</th></tr></thead>
+            <tbody>
+              {{ range $p.ledger }}
+                <tr><td>{{ .show }}</td><td>{{ .page }}</td><td>{{ .result }}</td><td>{{ .why }}</td></tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+        <h3 class="type-eyebrow">Left off the page</h3>
+        <ul>{{ range $p.cut }}<li>{{ . }}</li>{{ end }}</ul>
+        <h3 class="type-eyebrow">Found while checking Trigger Claims against the Transcripts</h3>
+        <ul>
+          <li>Ep 116: the inventory recorded “this is where that scholarly consensus comes in. That did not happen.” as a consensus that the Exodus did not happen. In the Transcript the consensus named is the next sentence, on Israelites emerging gradually from Canaanites. The Trigger Claim shown here is the Speaker's earlier, plain sentence instead.</li>
+          <li>Ep 105: “Sargon II” is not a slip. The Speaker goes on to say the Sargon text was written under the Neo-Assyrian Sargon about Sargon the Great. The sources read name only Sargon of Akkad, so the page does too, and the Trigger Claim's “Sargon II” sits next to it unexplained.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <div class="proto-bar" role="group" aria-label="Prototype variant switcher">
+      <button type="button" data-step="-1" aria-label="Previous variant">←</button>
+      <span data-label></span>
+      <button type="button" data-step="1" aria-label="Next variant">→</button>
+      <label><input type="checkbox" data-strict-toggle /> Settled sources only</label>
+    </div>
+    <script>
+      (() => {
+        const names = { a: "Essay with footnotes", b: "Claim ledger", c: "Question index" };
+        const keys = Object.keys(names);
+        const label = document.querySelector("[data-label]");
+        const strict = document.querySelector("[data-strict-toggle]");
+        const params = () => new URLSearchParams(location.search);
+        const render = () => {
+          const p = params();
+          const v = keys.includes(p.get("variant")) ? p.get("variant") : "a";
+          document.body.dataset.variant = v;
+          label.textContent = `${v.toUpperCase()} (${names[v]})`;
+          strict.checked = p.get("strict") === "1";
+          document.body.toggleAttribute("data-strict", strict.checked);
+        };
+        const set = (key, value) => {
+          const p = params();
+          if (value === null) p.delete(key); else p.set(key, value);
+          history.replaceState(null, "", `${location.pathname}?${p}`);
+          render();
+        };
+        const step = (d) => {
+          const i = keys.indexOf(document.body.dataset.variant);
+          set("variant", keys[(i + d + keys.length) % keys.length]);
+        };
+        document.querySelectorAll("[data-step]").forEach((b) => b.addEventListener("click", () => step(Number(b.dataset.step))));
+        strict.addEventListener("change", () => set("strict", strict.checked ? "1" : null));
+        document.addEventListener("keydown", (e) => {
+          if (e.target.closest("input, textarea, [contenteditable]")) return;
+          if (e.key === "ArrowLeft") step(-1);
+          if (e.key === "ArrowRight") step(1);
+        });
+        render();
+      })();
+    </script>
+  {{ end }}
+{{ end }}
