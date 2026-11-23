@@ -192,7 +192,7 @@ entries:
         - { source: hayes12, locator: "transcript", quote: "So the work was probably concluded shortly after that date" }
         - { source: nabreJudges, locator: "introduction", quote: "The principal contribution of the Deuteronomistic historian to the Book of Judges is the thematic introduction to—and theological evaluation of—the period of the Judges in 2:1–3:6" }
     triggers:
-      - { episode: 64, speaker: "Dan McClellan", timestamp: "00:26:06.370", text: "But the reality is that these, most of these stories probably come from the 9th or the 8th century BCE, but this poem, the Song of Deborah, could come from before that, you know, possibly as early as around a thousand BCE." }
+      - { episode: 64, speaker: "Dan McClellan", timestamp: "00:26:06.370", text: "the reality is that these, most of these stories probably come from the 9th or the 8th century BCE, but this poem, the Song of Deborah, could come from before that, you know, possibly as early as around a thousand BCE." }
 
   - id: priestly-genesis-1
     kind: composition
