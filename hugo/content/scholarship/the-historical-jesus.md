@@ -22,7 +22,7 @@ statements:
   - id: existence
     group: "Did Jesus exist?"
     question: "Do scholars doubt that Jesus existed?"
-    short: "Virtually none in the field do."
+    short: "Virtually none working in the field do."
     text: "Virtually no scholar working in New Testament studies or early Christian history doubts that Jesus of Nazareth existed."
     cites:
       - source: meggitt-2019-non-historical-jesus
@@ -35,9 +35,9 @@ statements:
         read: 2026-11-23
   - id: deniers
     group: "Did Jesus exist?"
-    question: "Does any scholar argue that Jesus did not exist?"
-    short: "Some do, including New Testament scholars."
-    text: "It is not the case that none do. In the nineteenth century the German scholar Bruno Bauer denied that Jesus ever existed. Before 2000 G. A. Wells was almost a lone voice for the view, but that is no longer the case, even among those qualified within the field: the New Testament scholars Robert M. Price and Thomas L. Brodie have published works arguing that Jesus was not historical, as has the classicist Richard Carrier."
+    question: "Then who argues that Jesus did not exist?"
+    short: "Rare exceptions, among them two New Testament scholars."
+    text: "Virtually none is not none. In the nineteenth century the German scholar Bruno Bauer denied that Jesus ever existed. Before 2000 G. A. Wells was almost a lone voice for the view, but that is no longer the case, even among those qualified within the field: the New Testament scholars Robert M. Price and Thomas L. Brodie have published works arguing that Jesus was not historical, as has the classicist Richard Carrier."
     cites:
       - source: meggitt-2019-non-historical-jesus
         locator: "manuscript p. 1, note 1"
@@ -57,8 +57,8 @@ statements:
         read: 2026-11-23
   - id: judgement
     group: "Did Jesus exist?"
-    question: "How do scholars judge the arguments that he did not exist?"
-    short: "Most in the discipline usually judge them very weak."
+    question: "How does the field treat those arguments?"
+    short: "Usually as too weak or bizarre for more than a footnote, if that."
     text: "The arguments of those who deny Jesus's historicity are usually judged by most working professionally in the discipline to be so weak or bizarre that they relegate them to footnotes or often ignore them completely. Justin Meggitt, who reports this, argues that the question should nonetheless get far more attention from the field than it now does."
     cites:
       - source: meggitt-2019-non-historical-jesus

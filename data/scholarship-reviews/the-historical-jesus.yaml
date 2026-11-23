@@ -19,7 +19,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Meggitt manuscript p. 1, note 1. The page gives no count of deniers (“a few” was dropped); short answer “Some do” rests on the named deniers in deniers/2–4.",
+      note: "Meggitt manuscript p. 1, note 1. The page gives no count of deniers (“a few” was dropped); short answer rests on the named deniers in deniers/2–4. Reworded 2026-11-23 (owner asked that Q1–3 read as one sequence): question “Then who argues that Jesus did not exist?”, short “Rare exceptions, among them two New Testament scholars.” (“rare” from Meggitt's “virtually no”; “two” = Price and Brodie in deniers/4), statement opens “Virtually none is not none.” in place of note 1's “It is not the case that none do.”",
     }
   deniers/2:
     {
@@ -43,7 +43,7 @@ citations:
     {
       agent: flag,
       owner: "",
-      note: "Meggitt manuscript pp. 1–2; sentence crosses the page break and footnote 1 sits between its halves; each half matched verbatim on its own page (p. 1 “Indeed… deny his”, p. 2 “historicity are usually judged… completely.'”). Footnote marker 2 follows. The inner quotation is Meggitt citing Van Voorst (2000); the statement keeps the wording but not the inner quote marks.",
+      note: "Meggitt manuscript pp. 1–2; sentence crosses the page break and footnote 1 sits between its halves; each half matched verbatim on its own page (p. 1 “Indeed… deny his”, p. 2 “historicity are usually judged… completely.'”). Footnote marker 2 follows. The inner quotation is Meggitt citing Van Voorst (2000); the statement keeps the wording but not the inner quote marks. Reworded 2026-11-23: question “How does the field treat those arguments?”, short “Usually as too weak or bizarre for more than a footnote, if that.” (source: “relegate them to footnotes or often ignore them completely”).",
     }
   judgement/2:
     {
