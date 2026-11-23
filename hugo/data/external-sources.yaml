@@ -55,3 +55,45 @@ hayes-rlst145-l8:
   url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-8"
   hostAuthored: false
   tradition: null
+
+meggitt-2019-non-historical-jesus:
+  author: "Justin J. Meggitt"
+  title: "‘More Ingenious than Learned’? Examining the Quest for the Non-Historical Jesus"
+  series: "New Testament Studies 65"
+  publisher: "Cambridge University Press"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Author's accepted manuscript, Apollo repository (University of Cambridge), open"
+  url: "https://www.repository.cam.ac.uk/handle/1810/289048"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l13:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 13 transcript: The Historical Jesus"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-13"
+  hostAuthored: false
+  tradition: null
+
+ehrman-brief-5e-ch9-summary:
+  author: null
+  title: "Student chapter 9 summary for Bart D. Ehrman, A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-9-summary"
+  hostAuthored: false
+  tradition: null

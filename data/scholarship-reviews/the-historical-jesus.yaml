@@ -1,0 +1,190 @@
+# Review record for /scholarship/the-historical-jesus/ (#93 shape). Not rendered.
+# agent: results of the agent's first pass (#95, 2026-11-23). That pass does not count toward publish.
+# owner: empty ("") until the owner's publish review sets pass or fail.
+review: ""
+citations:
+  existence/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meggitt manuscript p. 1, opening sentence of section 1. His note 1 qualifies it (“It is not the case that none do”), so the page says “virtually no”, never “no” or “all”.",
+    }
+  existence/2:
+    {
+      agent: flag,
+      owner: "",
+      note: "Martin l13 ch. 2 [00:13:25]. Martin says “all admit”, stronger than Meggitt's “virtually no” and his note 1. The statement uses Meggitt's weaker wording and scope (New Testament studies, early Christian history); Martin's scope is “reputable historical scholars”. Supports the statement at its own strength, but owner confirms the mismatch is acceptable. Independent of existence/1 (distinct author, #92).",
+    }
+  deniers/1:
+    { agent: pass, owner: "", note: "Meggitt manuscript p. 1, note 1." }
+  deniers/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l13 ch. 2 [00:13:25]. Same passage goes on to “some crazy blog”; not used.",
+    }
+  deniers/3:
+    {
+      agent: flag,
+      owner: "",
+      note: "Meggitt manuscript p. 2. Footnote markers 5 and 6 removed from the quote (after “voice'” and “thesis”). “almost a lone voice” is Meggitt quoting Van Voorst (2000); the statement gives it unquoted as Meggitt's framing.",
+    }
+  deniers/4:
+    {
+      agent: flag,
+      owner: "",
+      note: "Meggitt manuscript pp. 2–3; sentence crosses the page break around footnotes. Footnote markers 8, 9 and 10 removed. Statement says “arguing that Jesus was not historical” for the source's “arguing for the non-historicity of Jesus”.",
+    }
+  judgement/1:
+    {
+      agent: flag,
+      owner: "",
+      note: "Meggitt manuscript pp. 1–2; sentence crosses the page break and footnote 1 sits between its halves. Footnote marker 2 follows. The inner quotation is Meggitt citing Van Voorst (2000); the statement keeps the wording but not the inner quote marks.",
+    }
+  judgement/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meggitt manuscript p. 4. Meggitt's own argument, attributed to him by name in the statement.",
+    }
+  apocalyptic/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Ehrman ch. 9 summary, section “Jesus in His Apocalyptic Context”.",
+    }
+  apocalyptic/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same section; sentence continues “which would entail the judgment of the world by the Son of Man…”.",
+    }
+  apocalyptic/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same section. “Most scholars” comes from the summary itself; the preceding “much scholarly debate” sentence is kept in the statement and the quote.",
+    }
+  apocalyptic/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same section; reasons per #86. The summary adds that these sources are independent and pass dissimilarity and contextual credibility; not carried.",
+    }
+  apocalyptic/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Section “The Beginning and End as Keys to the Middle”; reasons per #86.",
+    }
+  outside/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Ehrman ch. 9 summary, section “Problems with Sources”.",
+    }
+  outside/2:
+    { agent: pass, owner: "", note: "Same section; two consecutive sentences." }
+  outside/3:
+    {
+      agent: flag,
+      owner: "",
+      note: "Same section. The next sentence reports what Josephus says of Jesus; left off the page because it is the Testimonium, whose authenticity no readable source on this page addresses (see leads). Statement only says Josephus mentions him.",
+    }
+  details/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l13 ch. 3 [00:26:27]. The sign's wording varies by Gospel (Martin reads Mark, Luke, John); statement says “calling Jesus King of the Jews”.",
+    }
+  details/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l13 ch. 3 [00:26:27]. Hedge kept: “often say may well be”.",
+    }
+  details/3:
+    {
+      agent: flag,
+      owner: "",
+      note: "Martin l13 ch. 3 [00:26:27]. Short answer compresses two hedges (“most say” for the sign, “often… may well be” for the baptism); check it reads no stronger than the source.",
+    }
+triggers:
+  5@00:06:55:
+    { agent: pass, owner: "", note: "Context: dying-and-rising god template." }
+  5@00:08:03:
+    {
+      agent: flag,
+      owner: "",
+      note: "Transcript ends the sentence with the artefact “scholars.rs.”; quote stops at “scholars”. Next sentence: “It is in the overwhelming minority, the folks who think that this was all created from scratch.”",
+    }
+  48@00:05:30:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hedge “I would say” kept. At 00:06:15 she names Carrier and Brodie and says there is “a handful”, “very much the minority”. The page uses no percentage, “fringe” or “minority”: no readable source says so (#86 gap left unexplained).",
+    }
+  86@00:54:57:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hedge “maybe one or two other scholars” kept. At 00:54:14 he says Price is the only trained mythicist; Meggitt names Price and Brodie. The page follows Meggitt and does not comment on the gap (#80).",
+    }
+  86@00:56:01:
+    {
+      agent: pass,
+      owner: "",
+      note: "Full hedge kept (“we cannot know for sure… right now I would say”).",
+    }
+  145@00:05:46:
+    {
+      agent: flag,
+      owner: "",
+      note: "“this” = Jesus's baptism by John. Speaker labels in this Transcript look swapped near here (two consecutive Dan Beecher turns at 00:06:50 and 00:06:52; the ward/primary lines at 00:08:16–00:08:23). Speaker kept as the Transcript gives it; owner checks against the audio.",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "6 statements; core (existence) has Meggitt 2019 (Scholarly) and Martin RLST 152 l13 (Reference): two distinct authors. Fails if existence/2 fails review.",
+    }
+  consensus-wording:
+    {
+      agent: flag,
+      owner: "",
+      note: "“most scholars” (apocalyptic, details) and “virtually no scholar” (existence) each come from the cited source. Martin's “all” is not used (see existence/2). No “consensus”, “fringe” or “minority” on the page.",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "Bauer, Wells, Price, Brodie, Carrier named from Meggitt and Martin.",
+    }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition sources cited." }
+sources:
+  meggitt-2019-non-historical-jesus:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Accepted version; repository record gives New Testament Studies 65, Cambridge University Press, DOI 10.1017/s0028688519000213. Issue and page range not shown; published version not seen.",
+    }
+  martin-rlst152-l13:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 152, recorded Spring 2009 (course page). Introductory course, Yale-hosted transcript: Reference per #86.",
+    }
+  ehrman-brief-5e-ch9-summary:
+    {
+      agent: pass,
+      owner: "",
+      edition: "5th ed., 01 October 2020, OUP catalogue (browser), print ISBN 9780190089528",
+    }
+leads:
+  - "Bart D. Ehrman, Did Jesus Exist? (HarperOne, 2012), Google Books page id PT9: “virtually every scholar of antiquity, of biblical studies, of classics, and of Christian origins in this country and, in fact, in the Western world agrees.” Snippet only; full sentence not read (#86). A trade-press book would count as Reference."
+  - "Chrissy M. E. Hansen, “Reception of the Testimonium Flavianum”, New England Classical Journal 51.2 (2024), abstract only: “Recent studies have largely ruled it partially authentic”. PDF not read. Could back a Testimonium statement."
+  - "T. C. Schmidt, Josephus and Jesus: New Evidence for the One Called Christ (Oxford University Press, 2025), open access; Oxford Academic and OAPEN refused automated requests in earlier research. Not read."
+  - "Martin l13 ch. 1: “basically most scholars will say that we don't really know what happened at the trial of Jesus.” Read; not used. Could back a further statement."
+  - "Ehrman ch. 9 summary, section “The Apocalyptic Death of Jesus”: “Pontius Pilate, not Jewish authorities, sentenced him to crucifixion.” Read; not used."
