@@ -1,0 +1,10 @@
+{{/* PROTOTYPE for #101. Citation list: verbatim quote, source, locator. */}}
+<ul class="tl-cites">
+  {{ range .cites }}
+    {{ $s := index $.sources .source }}
+    <li>
+      <blockquote class="tl-quote">“{{ .quote }}”</blockquote>
+      <p class="tl-meta">{{ $s.full }}, {{ .locator }} · {{ $s.class }} · <a href="{{ $s.url }}" rel="noopener">where read</a></p>
+    </li>
+  {{ end }}
+</ul>

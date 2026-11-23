@@ -1,0 +1,230 @@
+{{/*
+  PROTOTYPE for issue #101, "What does a Timeline row look like?". Throwaway; never merge to trunk.
+  Three variants of the Timeline on /prototype/timeline/, switchable via ?variant=a|b|c.
+  Years are signed integers: BCE negative, CE positive. Nothing renders in production builds.
+*/}}
+{{ define "head-styles" }}
+  {{ $inlineCSS := resources.Get "css/tag-single.css" | resources.Minify }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+  <style>
+    .tl { display: grid; gap: var(--space-m); }
+    .tl [hidden] { display: none; }
+    .tl-variant { display: none; gap: var(--space-m); }
+    body[data-variant="a"] .tl-variant[data-variant="a"],
+    body[data-variant="b"] .tl-variant[data-variant="b"],
+    body[data-variant="c"] .tl-variant[data-variant="c"] { display: grid; }
+
+    .tl-notice { padding: var(--space-xs) var(--space-s); }
+    .tl-notice > * { margin: 0; }
+    .tl-meta { color: var(--color-text-muted); font-size: var(--step--1); overflow-wrap: anywhere; margin: 0; }
+    .tl-quote { border-inline-start: var(--border-width-md) solid var(--tan-900); margin: 0; padding-inline-start: var(--space-xs); }
+    .tl-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-s); }
+    .tl-entry { padding: var(--space-s); display: grid; gap: var(--space-2xs); }
+    .tl-entry > * { margin: 0; }
+    .tl-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-3xs) var(--space-s); }
+    .tl-head > * { margin: 0; }
+    .tl-title { font-family: var(--font-family-display); font-size: var(--step-1); font-weight: var(--font-weight-bold); }
+    .tl-kind { font-size: var(--step--1); text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted); }
+    .tl-date { font-family: var(--font-family-display); font-size: var(--step-2); font-weight: var(--font-weight-bold); line-height: 1.1; }
+    .tl-pair { display: grid; gap: var(--space-2xs); grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+    .tl-side { display: grid; gap: var(--space-4xs); align-content: start; }
+    .tl-side > * { margin: 0; }
+    .tl-side--trad { border-inline-start: var(--border-width-sm) dashed var(--tan-500); padding-inline-start: var(--space-2xs); }
+    .tl-label { font-size: var(--step--1); font-weight: var(--font-weight-bold); }
+    .tl-more summary { cursor: pointer; font-size: var(--step--1); font-weight: var(--font-weight-bold); }
+    .tl-more[open] summary { margin-block-end: var(--space-2xs); }
+    .tl-cites { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2xs); }
+    .tl-cites li { display: grid; gap: var(--space-4xs); }
+    .tl-cites li > * { margin: 0; }
+    .tl-triggers { display: grid; gap: var(--space-2xs); }
+
+    /* Variant B track: one full-width scale per entry. */
+    .tl-track { position: relative; block-size: var(--space-m); border-block-end: var(--border-width-sm) solid var(--tan-400); }
+    .tl-tick { position: absolute; inset-block-end: calc(-1 * var(--space-s)); transform: translateX(-50%); font-size: var(--step--2); color: var(--color-text-muted); white-space: nowrap; }
+    .tl-tick::before { content: ""; position: absolute; inset-block-start: calc(-1 * var(--space-3xs)); inset-inline-start: 50%; block-size: var(--space-3xs); border-inline-start: 1px solid var(--tan-400); }
+    .tl-bar { position: absolute; inset-block: var(--space-3xs); min-inline-size: var(--space-3xs); background: var(--color-action); border-radius: var(--border-radius-sm); }
+    .tl-bar--open::after { content: ""; position: absolute; inset-block: 0; inset-inline-end: calc(-1 * var(--space-s)); inline-size: var(--space-s); background: linear-gradient(to right, var(--color-action), transparent); }
+    .tl-bar--trad { background: transparent; border: var(--border-width-sm) dashed var(--tan-600); }
+    .tl-gap { position: absolute; inset-block-start: 50%; block-size: 0; border-block-start: 1px dotted var(--tan-600); }
+    .tl-track-wrap { padding-block-end: var(--space-s); }
+    .tl-legend { display: flex; flex-wrap: wrap; gap: var(--space-3xs) var(--space-s); font-size: var(--step--1); margin: 0; }
+    .tl-swatch { display: inline-block; inline-size: var(--space-s); block-size: var(--space-3xs); vertical-align: middle; margin-inline-end: var(--space-4xs); background: var(--color-action); }
+    .tl-swatch--trad { background: transparent; border: var(--border-width-sm) dashed var(--tan-600); }
+
+    .tl-table { border-collapse: collapse; width: 100%; }
+    .tl-table th, .tl-table td { border-block-end: var(--border-width-sm) solid var(--tan-900); padding: var(--space-2xs); text-align: start; vertical-align: top; font-size: var(--step--1); }
+    .tl-scroll { overflow-x: auto; }
+
+    .proto-ledger { border: var(--border-width-md) dashed var(--tan-900); padding: var(--space-s); display: grid; gap: var(--space-s); margin-block-start: var(--space-xl); }
+    .proto-ledger > * { margin: 0; }
+    .proto-bar { position: fixed; inset-block-end: var(--space-xs); inset-inline: 0; margin-inline: auto; width: fit-content; max-width: calc(100% - var(--space-m)); z-index: var(--z-index-sticky); display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-2xs); padding: var(--space-3xs) var(--space-xs); background: var(--tan-900); color: var(--tan-000); border-radius: var(--space-m); font-size: var(--step--1); }
+    .proto-bar button { background: var(--tan-000); color: var(--tan-900); border: 0; border-radius: var(--space-m); cursor: pointer; font: inherit; font-weight: var(--font-weight-bold); padding: var(--space-4xs) var(--space-xs); }
+  </style>
+{{ end }}
+
+{{ define "main" }}
+  {{ if not hugo.IsProduction }}
+    {{ $p := .Params }}
+    {{ $sources := $p.sources }}
+    {{ $min := $p.scale.from }}
+    {{ $max := $p.scale.to }}
+    {{ $span := float (sub $max $min) }}
+    {{ $episodesByNumber := dict }}
+    {{ range where site.RegularPages ".Section" "episodes" }}
+      {{ $episodesByNumber = merge $episodesByNumber (dict (string .Params.episodeNumber) .) }}
+    {{ end }}
+
+    {{/* Spine: entries with a Critical Date, sorted by its start. Undated entries are kept apart (#97). */}}
+    {{ $dated := slice }}
+    {{ $undated := slice }}
+    {{ range $p.entries }}
+      {{ if .critical }}{{ $dated = $dated | append . }}{{ else }}{{ $undated = $undated | append . }}{{ end }}
+    {{ end }}
+    {{ $dated = sort $dated "critical.sort" }}
+    {{ $byId := dict }}
+    {{ range $p.entries }}{{ $byId = merge $byId (dict .id .) }}{{ end }}
+
+    {{ $notice := "This timeline is the archive's own work. It was not written, reviewed or endorsed by Data Over Dogma or its hosts. Its dates rest on the outside sources cited, not on the show." }}
+    {{ $ctx := dict "sources" $sources "episodesByNumber" $episodesByNumber "byId" $byId "min" $min "span" $span "ticks" $p.scale.ticks }}
+
+    <section class="tl">
+      <header class="page-hero">
+        <p class="page-hero__eyebrow type-eyebrow">Synthesis</p>
+        <h1 class="page-hero__title">{{ .Title }}</h1>
+        <div class="page-hero__description"><p>{{ $p.dek }}</p></div>
+      </header>
+      <aside class="tl-notice panel panel--muted">
+        <p>{{ $notice }}</p>
+        <p class="tl-meta">Sources read {{ dateFormat "2 January 2006" $p.readDate }}. Newer scholarship is not tracked.</p>
+      </aside>
+
+      {{/* ============ VARIANT A: entry cards; Critical Date leads, Tradition Date paired beside it in text. ============ */}}
+      <div class="tl-variant" data-variant="a">
+        <ol class="tl-list">
+          {{ range $dated }}{{ partial "prototype/timeline-entry" (merge $ctx (dict "e" . "track" false)) }}{{ end }}
+        </ol>
+        {{ if $undated }}
+          <section class="tl">
+            <h2 class="type-section-title">Not dated by the sources</h2>
+            <p class="tl-meta">Events the sources cited here give no date for. They sit outside the timeline, and are never placed by a tradition's date.</p>
+            <ul class="tl-list">
+              {{ range $undated }}{{ partial "prototype/timeline-entry" (merge $ctx (dict "e" . "track" false)) }}{{ end }}
+            </ul>
+          </section>
+        {{ end }}
+      </div>
+
+      {{/* ============ VARIANT B: same cards plus a full-width scale per entry; a tradition's date is a dashed marker on it. ============ */}}
+      <div class="tl-variant" data-variant="b">
+        <p class="tl-legend">
+          <span><span class="tl-swatch"></span>Date given by scholarly or reference sources</span>
+          <span><span class="tl-swatch tl-swatch--trad"></span>Date a named tradition holds</span>
+        </p>
+        <ol class="tl-list">
+          {{ range $dated }}{{ partial "prototype/timeline-entry" (merge $ctx (dict "e" . "track" true)) }}{{ end }}
+        </ol>
+        {{ if $undated }}
+          <section class="tl">
+            <h2 class="type-section-title">Not dated by the sources</h2>
+            <p class="tl-meta">Events the sources cited here give no date for. They sit outside the timeline, and are never placed by a tradition's date.</p>
+            <ul class="tl-list">
+              {{ range $undated }}{{ partial "prototype/timeline-entry" (merge $ctx (dict "e" . "track" false)) }}{{ end }}
+            </ul>
+          </section>
+        {{ end }}
+      </div>
+
+      {{/* ============ VARIANT C: one table; citations open from each cell. ============ */}}
+      <div class="tl-variant" data-variant="c">
+        <div class="tl-scroll">
+          <table class="tl-table">
+            <thead><tr><th>Subject</th><th>Kind</th><th>Date in the sources</th><th>Date a tradition holds</th><th>Prompted by</th></tr></thead>
+            <tbody>
+              {{ range ($dated | append $undated) }}
+                <tr>
+                  <td><strong>{{ .title }}</strong></td>
+                  <td>{{ .kind }}</td>
+                  <td>
+                    {{ with .critical }}{{ .display }}{{ else }}No date. {{ .undated.statement }}{{ end }}
+                    <details class="tl-more"><summary>{{ len (or .critical.cites .undated.cites) }} source(s)</summary>
+                      {{ partial "prototype/timeline-cites" (dict "cites" (or .critical.cites .undated.cites) "sources" $sources) }}
+                    </details>
+                  </td>
+                  <td>
+                    {{ with .tradition }}
+                      {{ .display }}, as {{ .holder }} holds
+                      <details class="tl-more"><summary>Source</summary>{{ partial "prototype/timeline-cites" (dict "cites" .cites "sources" $sources) }}</details>
+                    {{ else }}<span class="tl-meta">—</span>{{ end }}
+                  </td>
+                  <td>{{ range $i, $t := .triggers }}{{ if $i }}, {{ end }}Ep {{ $t.episode }}{{ end }}</td>
+                </tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <section>
+        <h2 class="type-section-title">Sources used</h2>
+        <div class="tl-scroll">
+          <table class="tl-table">
+            <thead><tr><th>Source</th><th>Class</th><th>Where read</th></tr></thead>
+            <tbody>
+              {{ range $id, $s := $sources }}
+                <tr><td><a href="{{ $s.url }}" rel="noopener">{{ $s.full }}</a></td><td>{{ $s.class }}</td><td>{{ $s.access }}</td></tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {{/* ============ Prototype-only notes. Not part of any variant. ============ */}}
+      {{ $citeCount := 0 }}{{ $trigCount := 0 }}
+      {{ range $p.entries }}
+        {{ $citeCount = add $citeCount (len (or .critical.cites .undated.cites)) }}
+        {{ with .tradition }}{{ $citeCount = add $citeCount (len .cites) }}{{ end }}
+        {{ $trigCount = add $trigCount (len .triggers) }}
+      {{ end }}
+      <aside class="proto-ledger">
+        <h2 class="type-eyebrow">Prototype notes · not part of the page</h2>
+        <ul>
+          <li>{{ len $p.entries }} entries ({{ len $dated }} dated, {{ len $undated }} not dated), {{ $citeCount }} citations, {{ len $sources }} sources, {{ $trigCount }} Trigger Claims.</li>
+          {{ range $p.ledger }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </aside>
+    </section>
+
+    <div class="proto-bar" role="group" aria-label="Prototype variant switcher">
+      <button type="button" data-step="-1" aria-label="Previous variant">←</button>
+      <span data-label></span>
+      <button type="button" data-step="1" aria-label="Next variant">→</button>
+    </div>
+    <script>
+      (() => {
+        const names = { a: "Entry cards", b: "Cards with scale", c: "Table" };
+        const keys = Object.keys(names);
+        const label = document.querySelector("[data-label]");
+        const render = () => {
+          const v = new URLSearchParams(location.search).get("variant");
+          const k = keys.includes(v) ? v : "a";
+          document.body.dataset.variant = k;
+          label.textContent = `${k.toUpperCase()} (${names[k]})`;
+        };
+        const step = (d) => {
+          const i = keys.indexOf(document.body.dataset.variant);
+          const p = new URLSearchParams(location.search);
+          p.set("variant", keys[(i + d + keys.length) % keys.length]);
+          history.replaceState(null, "", `${location.pathname}?${p}`);
+          render();
+        };
+        document.querySelectorAll("[data-step]").forEach((b) => b.addEventListener("click", () => step(Number(b.dataset.step))));
+        document.addEventListener("keydown", (e) => {
+          if (e.target.closest("input, textarea, [contenteditable]")) return;
+          if (e.key === "ArrowLeft") step(-1);
+          if (e.key === "ArrowRight") step(1);
+        });
+        render();
+      })();
+    </script>
+  {{ end }}
+{{ end }}

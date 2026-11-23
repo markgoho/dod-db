@@ -1,0 +1,62 @@
+{{/* PROTOTYPE for #101. One Timeline Entry card. Critical Date leads; Tradition Date paired beside it; Trigger Claims folded. */}}
+{{ $e := .e }}
+<li class="tl-entry panel" id="{{ $e.id }}">
+  <div class="tl-head">
+    <p class="tl-title">{{ $e.title }}</p>
+    <p class="tl-kind">{{ cond (eq $e.kind "event") "Event" "Composition" }}</p>
+  </div>
+
+  {{ if and .track $e.critical }}
+    {{ $c := $e.critical }}
+    {{ $l := div (mul (sub $c.from .min) 100.0) .span }}
+    {{ $w := div (mul (sub (or $c.to $c.from) $c.from) 100.0) .span }}
+    <div class="tl-track-wrap">
+      <div class="tl-track" role="img" aria-label="{{ $c.display }}{{ with $e.tradition }}; {{ .holder }}: {{ .display }}{{ end }}">
+        {{ range .ticks }}<span class="tl-tick" style="inset-inline-start: {{ div (mul (sub .year $.min) 100.0) $.span }}%">{{ .label }}</span>{{ end }}
+        {{ with $e.tradition }}
+          {{ $tl := div (mul (sub .from $.min) 100.0) $.span }}
+          {{ $tw := div (mul (sub (or .to .from) .from) 100.0) $.span }}
+          {{ $gapFrom := math.Min (add $tl $tw) $l }}
+          {{ $gapTo := math.Max (add $tl $tw) $l }}
+          <span class="tl-gap" style="inset-inline-start: {{ $gapFrom }}%; inline-size: {{ sub $gapTo $gapFrom }}%"></span>
+          <span class="tl-bar tl-bar--trad" style="inset-inline-start: {{ $tl }}%; inline-size: {{ $tw }}%"></span>
+        {{ end }}
+        <span class="tl-bar{{ if $c.open }} tl-bar--open{{ end }}" style="inset-inline-start: {{ $l }}%; inline-size: {{ $w }}%"></span>
+      </div>
+    </div>
+  {{ end }}
+
+  <div class="tl-pair">
+    <div class="tl-side">
+      {{ with $e.critical }}
+        <p class="tl-date">{{ .display }}</p>
+        {{ with .note }}<p class="tl-meta">{{ . }}</p>{{ end }}
+      {{ else }}
+        <p class="tl-label">No date in the sources</p>
+        <p>{{ $e.undated.statement }}</p>
+      {{ end }}
+      {{ with $e.seeAlso }}{{ $t := index $.byId . }}<p class="tl-meta">For when the account was written, see <a href="#{{ . }}">{{ $t.title }}</a>.</p>{{ end }}
+    </div>
+    {{ with $e.tradition }}
+      <div class="tl-side tl-side--trad">
+        <p class="tl-label">{{ .holder | strings.FirstUpper }} holds</p>
+        <p class="tl-date">{{ .display }}</p>
+      </div>
+    {{ end }}
+  </div>
+
+  <details class="tl-more">
+    <summary>Sources{{ with $e.triggers }} and what prompted this entry{{ end }}</summary>
+    {{ partial "prototype/timeline-cites" (dict "cites" (or $e.critical.cites $e.undated.cites) "sources" .sources) }}
+    {{ with $e.tradition }}
+      <p class="tl-label">Tradition</p>
+      {{ partial "prototype/timeline-cites" (dict "cites" .cites "sources" $.sources) }}
+    {{ end }}
+    {{ with $e.triggers }}
+      <p class="tl-label">Prompted by · said on the show, not the entry's evidence</p>
+      <div class="tl-triggers">
+        {{ range . }}{{ partial "quote-card" (dict "quote" . "episodesByNumber" $.episodesByNumber) }}{{ end }}
+      </div>
+    {{ end }}
+  </details>
+</li>
