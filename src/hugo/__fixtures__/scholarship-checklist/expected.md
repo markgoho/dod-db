@@ -27,21 +27,21 @@ Draft preview: `cd hugo && hugo server -D`, then http://localhost:1313/scholarsh
 
 **`core`** (core claim): Q "Is there evidence?" · short "None recovered." · statement "Nothing has been recovered."
 
-- [ ] `core/1`, `scholarly-book` at **p. 5**: "nothing has been recovered"
+- [ ] `core/1`, [`scholarly-book`](https://example.org/commentary.pdf) at **p. 5**: "nothing has been recovered"
   - Agent: pass. Author p. 5
-- [ ] `core/2`, `reference-lecture` at **ch. 3 [00:10:06]**: "there isn't any direct evidence"
+- [ ] `core/2`, [`reference-lecture`](https://example.org/lecture-7) at **ch. 3 [00:10:06]**: "there isn't any direct evidence"
   - Agent: pass.
-- [ ] `core/3` ⚑, `textbook-summary` at **section “History”**: "no corroboration has been found"
+- [ ] `core/3` ⚑, [`textbook-summary`](https://example.org/summary) at **section “History”**: "no corroboration has been found"
   - Agent: flag, see flags.
 
 **`entry`**: Q "What does the entry say?" · short "Not certain." · statement "The location is not certain."
 
-- [ ] `entry/1`, `scholarly-book` at **entry “Sea”** ([citation URL](https://example.org/commentary/sea)): "the location is not certain"
+- [ ] `entry/1`, [`scholarly-book`](https://example.org/commentary/sea) at **entry “Sea”**: "the location is not certain"
   - Agent: pass.
 
 **`tradition`**: Q "How does the tradition read it?" · short "As history." · statement "The Example Church reads the account as history."
 
-- [ ] `tradition/1`, `tradition-guide` at **p. 1**: "the account is history"
+- [ ] `tradition/1`, [`tradition-guide`](https://example.org/guide) at **p. 1**: "the account is history"
   - Agent: no review entry.
 
 ### Trigger Claims (2)

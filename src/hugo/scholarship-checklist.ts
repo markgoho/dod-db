@@ -61,6 +61,11 @@ function sourceLabel(source: Source): string {
   return label;
 }
 
+/** End `text` with exactly one full stop. */
+function sentence(text: string): string {
+  return text.endsWith(".") ? text : `${text}.`;
+}
+
 function flagMark(item: ReviewItem | undefined): string {
   return item?.agent === "flag" ? " ⚑" : "";
 }
@@ -209,7 +214,7 @@ export async function buildChecklist(
         : source.class;
     const edition = item?.edition ?? source.edition ?? "not in the review file";
     out.push(
-      `- [ ] \`${id}\`${flagMark(item)}: ${sourceLabel(source)}. ${sourceClass}. [${source.access}](${source.url}). Edition: ${edition}.`,
+      `- [ ] \`${id}\`${flagMark(item)}: ${sourceLabel(source)}. ${sourceClass}. [${source.access}](${source.url}). Edition: ${sentence(edition)}`,
       agentLine(item),
     );
   }
@@ -225,9 +230,12 @@ export async function buildChecklist(
     for (const [index, cite] of statement.cites.entries()) {
       const key = `${statement.id}/${index + 1}`;
       const item = review.citations[key];
-      const url = cite.url ? ` ([citation URL](${cite.url}))` : "";
+      const url = cite.url ?? registry[cite.source]?.url;
+      const source = url
+        ? `[\`${cite.source}\`](${url})`
+        : `\`${cite.source}\``;
       out.push(
-        `- [ ] \`${key}\`${flagMark(item)}, \`${cite.source}\` at **${cite.locator}**${url}: "${cite.quote}"`,
+        `- [ ] \`${key}\`${flagMark(item)}, ${source} at **${cite.locator}**: "${cite.quote}"`,
         agentLine(item),
       );
     }

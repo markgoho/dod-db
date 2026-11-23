@@ -15,7 +15,7 @@ rules:
 sources:
   scholarly-book:
     { agent: pass, owner: "", edition: "2005, University Press catalogue" }
-  reference-lecture: { agent: pass, owner: "", edition: "recorded Fall 2006" }
+  reference-lecture: { agent: pass, owner: "", edition: "recorded Fall 2006." }
   textbook-summary:
     {
       agent: flag,
