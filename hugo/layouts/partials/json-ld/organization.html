@@ -1,4 +1,4 @@
-{{- $publisher := dict "@type" "Organization" "name" .Site.Title -}}
+{{- $publisher := partial "json-ld/publisher.html" . -}}
 {{- $schema := dict
   "@context" "https://schema.org"
   "@type" "WebSite"

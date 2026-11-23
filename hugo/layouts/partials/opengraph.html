@@ -1,5 +1,8 @@
 {{- $description := .Site.Params.description -}}
-{{- if .Description -}}
+{{- $isScholarshipPage := and (eq .Section "scholarship") .IsPage -}}
+{{- if and $isScholarshipPage .Params.dek -}}
+  {{- $description = .Params.dek -}}
+{{- else if .Description -}}
   {{- $description = .Description -}}
 {{- else if .IsHome -}}
   {{- $description = .Site.Params.description -}}
@@ -55,6 +58,8 @@
       name="twitter:image"
       content="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg" />
   {{- end }}
+{{- else if $isScholarshipPage -}}
+  <meta property="og:type" content="article" />
 {{- else if and (eq .Type "guests") (eq .Kind "term") -}}
   <meta property="og:type" content="profile" />
   {{- with .Resources.GetMatch "headshot.*" }}

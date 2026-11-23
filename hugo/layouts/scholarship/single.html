@@ -166,3 +166,8 @@
     {{ end }}
   </article>
 {{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/scholarship.html" . }}
+  {{ partial "json-ld/breadcrumb.html" . }}
+{{ end }}

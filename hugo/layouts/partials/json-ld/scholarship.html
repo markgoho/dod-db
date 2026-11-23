@@ -1,0 +1,52 @@
+{{- $registry := index hugo.Data "external-sources" -}}
+{{- $sourceIds := slice -}}
+{{- range .Params.statements -}}
+  {{- range .cites -}}
+    {{- $sourceIds = $sourceIds | append .source -}}
+  {{- end -}}
+{{- end -}}
+{{- $citations := slice -}}
+{{- range $sourceIds | uniq -}}
+  {{- with index $registry . -}}
+    {{- $work := dict "@type" "CreativeWork" "name" .title -}}
+    {{- with .url -}}
+      {{- $work = merge $work (dict "url" .) -}}
+    {{- end -}}
+    {{- with .author -}}
+      {{- $work = merge $work (dict "author" (dict "@type" "Person" "name" .)) -}}
+    {{- end -}}
+    {{- with .publisher -}}
+      {{- $work = merge $work (dict "publisher" (dict "@type" "Organization" "name" .)) -}}
+    {{- end -}}
+    {{- with .year -}}
+      {{- $work = merge $work (dict "datePublished" (string .)) -}}
+    {{- end -}}
+    {{- with .series -}}
+      {{- $work = merge $work (dict "isPartOf" (dict "@type" "CreativeWorkSeries" "name" .)) -}}
+    {{- end -}}
+    {{- with .edition -}}
+      {{- $work = merge $work (dict "bookEdition" .) -}}
+    {{- end -}}
+    {{- $citations = $citations | append $work -}}
+  {{- end -}}
+{{- end -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Article"
+  "headline" .Title
+  "url" .Permalink
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "publisher" (partial "json-ld/publisher.html" .)
+-}}
+{{- with .Params.dek -}}
+  {{- $schema = merge $schema (dict "description" .) -}}
+{{- end -}}
+{{- with .Params.sourcesRead -}}
+  {{- $schema = merge $schema (dict "dateModified" (time.Format "2006-01-02" .)) -}}
+{{- end -}}
+{{- with $citations -}}
+  {{- $schema = merge $schema (dict "citation" .) -}}
+{{- end -}}
+<script type="application/ld+json">
+{{ $schema | jsonify (dict "indent" "  ") | safeJS }}
+</script>
