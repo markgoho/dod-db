@@ -1,5 +1,7 @@
 {{- $description := .Site.Params.description -}}
 {{- $isScholarshipPage := and (eq .Section "scholarship") .IsPage -}}
+{{- /* Scholarship Pages have no image, so they take the small card. */ -}}
+{{- $twitterCard := cond $isScholarshipPage "summary" "summary_large_image" -}}
 {{- if and $isScholarshipPage .Params.dek -}}
   {{- $description = .Params.dek -}}
 {{- else if .Description -}}
@@ -28,7 +30,7 @@
 <meta property="og:description" content="{{ $description | plainify }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:card" content="{{ $twitterCard }}" />
 <meta property="twitter:url" content="{{ .Permalink }}" />
 <meta
   property="twitter:domain"
