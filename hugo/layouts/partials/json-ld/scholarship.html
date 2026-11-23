@@ -8,7 +8,7 @@
     {{- end -}}
     {{- with .author -}}
       {{- $people := slice -}}
-      {{- range split . " and " -}}
+      {{- range split (replaceRE `\s*\(eds?\.\)$` "" .) " and " -}}
         {{- $people = $people | append (dict "@type" "Person" "name" .) -}}
       {{- end -}}
       {{- if eq (len $people) 1 -}}
