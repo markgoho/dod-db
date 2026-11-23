@@ -6,32 +6,34 @@ All passages were read on 2026-11-22.
 
 ## Answer in short
 
-- **Critical side: yes for 5 of 5 rows.** Each row has at least one openly readable Reference or Scholarly sentence. Two of them do not say what the show says.
+- **Critical side: yes for 5 of 5 rows.** Each row has at least one openly readable Reference or Scholarly sentence. Two match the show's wording (Daniel; Jerusalem as a split). Three are sourced only in different wording (Deuteronomy, Exodus, Jericho).
   - **Daniel** is clean: 167-164 BCE, from three sources.
   - **Deuteronomy** has the Josiah link (c. 622) in two sources. Only the Yale lecture dates the core to the late seventh century. NABRE and Coogan start composition in the eighth century, a century earlier than the show.
   - **Exodus**: the critical sources do give a date, but only conditionally. Coogan and Hayes both say the thirteenth century _if_ the event is historical. Meyers says dating it from the Bible is "an exercise in futility". None says flatly that it "did not happen".
-  - **Jericho**: a 2023 field report from the current Italian-Palestinian excavation gives 1550-1520 cal BC from radiocarbon. The "Kenyon, c. 1550" wording appears only on the Tradition side (ABR and AiG, both by Bryant Wood). The same field report says a Late Bronze town with a mud-brick wall existed afterwards. That cuts against the Yale lecture's "there weren't even any walls in Jericho at the time of Joshua".
+  - **Jericho**: a 2023 field report from the current Italian-Palestinian excavation gives 1550-1520 cal BC from radiocarbon. The "Kenyon, c. 1550" attribution appears only on the Tradition side (ABR and AiG, both by Bryant Wood), so under #80 it is a lead, not a citation. The same report describes a walled Late Bronze town (1500-1300 BC) that was then abandoned. That fits the Reference sources' "no walls" at a thirteenth-century Joshua, but overlaps Wood's c. 1400; Nigro reports no destruction then.
   - **Fall of Jerusalem**: the sources split, as the show does. NABRE (Jeremiah) says 587. The Coogan summaries say 587 in one chapter and 586 in four. Hayes says "587 or 586". No Reference source counts the exile from 605/604. Hayes dates Judah's vassalage to 605.
-- **Tradition side: yes for 5 of 5, and not only from GotQuestions.**
+- **Tradition side: yes for 5 of 5, and not only from GotQuestions.** GotQuestions gives the date for 4 rows (Jericho not tested there); ABR gives Jericho.
   - The ESV Global Study Bible introductions on esv.org (Crossway) carry dated traditional positions for Daniel (sixth century; Daniel's exile in 605), the Exodus (c. 1446) and the Deuteronomy and Joshua settings (c. 1406).
   - The Associates for Biblical Research (ABR) carries Jericho (c. 1400) and the Exodus (1446). Both ABR pages are signed by Bryant Wood.
   - Answers in Genesis carries Jericho, but in a Wood article again, so it is not an independent voice.
 - **The church body tested gives the critical dates.** The USCCB's own Bible introductions (NABRE) are Reference under #86 and give the critical dates for Daniel and Deuteronomy. A Catholic apologetics ministry (Catholic Answers) also argues for the thirteenth-century Exodus, not 1446. On this evidence, no Catholic source supplies a traditional early date for these rows.
-- **Quote checks: 69 of 69 source quotes passed** by script against saved text, each in the source it is attributed to. Four of the 69 (NABRE Deuteronomy ×2, Jeremiah, Joshua) were matched against a transcription of browser output, not fetched bytes; see Method. The 10 "Show:" wordings were also checked against the dating inventory: 9 exact, and 1 that joins two exact parts with "...".
+- **Quote checks: 70 of 70 source quotes passed** by script against saved text, each in the source it is attributed to. Four of the 70 (NABRE Deuteronomy ×2, Jeremiah, Joshua) were matched against a transcription of browser output, not fetched bytes; see Method. The 10 "Show:" wordings were also checked against the dating inventory: 9 exact, and 1 that joins two exact parts with "...".
 
 ## Method
 
 - Rows and show positions come from the dating inventory (`research/dating-claims-inventory`, "A two-sided contrast" table and Table 1/2).
 - Each source was fetched and saved (HTML converted to text; PDF converted with `pdftotext`), one directory per source, outside the repo.
-- Every line labelled "Quote" below was extracted from this file by script and checked as an exact substring of the saved text of the source it is attributed to. Normalisation, which applies to both sides:
+- Every line labelled "Quote" below was extracted from this file by script and checked as an exact substring of saved text. The script searches all saved sources and reports which file matched; I confirmed by eye that each match is the cited source (all 70 were). Normalisation, which applies to both sides:
   - whitespace collapsed;
   - curly quotes and apostrophes straightened;
   - dash variants unified;
   - spaces removed before `. , ) ] ;` and after `(`, because tag stripping left them ("BCE .");
   - PDF ligatures expanded.
+- Locators: page numbers where the source has them (Meyers, Nigro), a section name where noted, otherwise the URL plus the quote. Section headings for the Coogan, Hayes and GotQuestions pages were not recorded; that field is incomplete.
 - Search-engine summaries were used as leads only. No quote comes from them or from memory.
 - Each row was time-boxed to about four candidate sources per side.
-- Rulings applied: publisher chapter summaries are Reference, cited as the publisher's companion summary; Yale RLST 145 transcripts are Reference; NABRE Old Testament introductions (2011) are Reference and inside the 30-year window; GotQuestions is Tradition; a Tradition source is named in its own words.
+- Classes follow #80: Scholarly = "academic publishers or peer-reviewed journals"; Reference = "academic study Bibles, Bible dictionaries, introductory textbooks"; Tradition = "confessional and apologetic sources".
+- Rulings applied (#86): publisher chapter summaries are Reference, cited as the publisher's companion summary; Yale RLST 145 transcripts are Reference; NABRE Old Testament introductions (2011) are Reference and inside the 30-year window; GotQuestions is Tradition; a Tradition source is named in its own words.
 
 ### What was not done
 
@@ -58,9 +60,9 @@ Every citation below is open or open (browser). No snippets or abstracts are use
 - **Coogan summaries**: OUP Learning Link, student chapter summaries for Michael D. Coogan and Cynthia R. Chapman, _A Brief Introduction to the Old Testament_, 4th ed. Reference (publisher's companion summary). Year 2019 per retail listings, not confirmed in the OUP catalogue. Open. URL pattern: `https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-N-summary`.
 - **Hayes**: Christine Hayes, Open Yale Courses RLST 145, "Introduction to the Old Testament (Hebrew Bible)", lecture transcripts (recorded Fall 2006 per #86). Reference (introductory course, professional scholar, university-hosted). Open. URL pattern: `https://oyc.yale.edu/religious-studies/rlst-145/lecture-N`. Recency: 20 years, inside the window.
 - **NABRE**: _New American Bible, Revised Edition_ Old Testament book introductions, bible.usccb.org. Reference (2011 OT revision; inside the window). Daniel: open. Others: open (browser).
-- **ESV Global Study Bible (ESV GSB)**: book introductions on esv.org, published by Crossway. Tradition. These are the _Global_ Study Bible's short introductions, not the ESV Study Bible's. The page footer reads "© 2001 – 2026 Crossway"; the edition year is not on the page. Open.
+- **ESV Global Study Bible (ESV GSB)**: book introductions on esv.org, published by Crossway. Tradition: a confessional study Bible from a publisher that calls itself a "Christian ministry" and has a statement of faith, not an "academic study Bible" (#80). NABRE, also church-published, was ruled Reference in #86; see Decisions. These are the _Global_ Study Bible's short introductions, not the ESV Study Bible's. The page footer reads "© 2001 – 2026 Crossway"; the edition year is not on the page. Open.
 - **GotQuestions**: Got Questions Ministries pages. Tradition (ruled in #86). Unsigned, undated. Open.
-- **ABR**: Associates for Biblical Research, biblearchaeology.org. Tradition. Open.
+- **ABR**: Associates for Biblical Research, biblearchaeology.org. Tradition (it calls itself an apologetics ministry; statement of faith on its About page). Open.
 
 ## Row 1: Daniel (composition)
 
@@ -95,7 +97,7 @@ Show: traditional "written by Daniel in Babylon in the 6th century BCE"; critica
 - **Rabbinic tradition does not support the show's "traditional" view here.** Babylonian Talmud, Bava Batra 15a, William Davidson English (Sefaria). Tradition (rabbinic). Open.
   - URL: https://www.sefaria.org/Bava_Batra.15a
   - Quote: "The members of the Great Assembly wrote the following" (the list that follows names Ezekiel, the Twelve, Daniel and Esther).
-  - So the "Daniel wrote Daniel" position is a Christian tradition. A page should name it that way, not as "the traditional view".
+  - The passage assigns the writing of Daniel to the Great Assembly and gives no date. It does not name Daniel as author. My inference, not the source's: "Daniel wrote Daniel in the sixth century" is not shared by this rabbinic text, so a page cannot call it simply "the traditional view" (#86 already requires naming the tradition).
 
 ### Notes
 
@@ -200,15 +202,16 @@ Show: traditional "Jericho's walls fell c. 1400 BCE (Bryant Wood)"; critical "wa
 
 ### Critical
 
-- **Lorenzo Nigro, "Jericho. From the Neolithic to the Bronze and Iron Ages: The Urban Diversity"**, in N. Marchetti et al. (eds.), _Proceedings of the 12th International Congress on the Archaeology of the Ancient Near East_ (Bologna, 6-9 April 2021), vol. 2 (Harrassowitz, Wiesbaden; DOI 10.13173/9783447119030.399; the PDF was created May 2023). Scholarly (field director of the Sapienza University of Rome / Palestinian MoTA-DACH expedition). Open (offprint on Sapienza's IRIS repository).
+- **Lorenzo Nigro, "Jericho. From the Neolithic to the Bronze and Iron Ages: The Urban Diversity"**, in N. Marchetti et al. (eds.), _Proceedings of the 12th International Congress on the Archaeology of the Ancient Near East_ (Bologna, 6-9 April 2021), vol. 2 (Harrassowitz Verlag, 2023), pp. 399-414, DOI 10.13173/9783447119030.399. Publisher, year and pages from the DOI's registered metadata; the repository filename says 2022. Scholarly by venue (academic publisher, #80). Author affiliation on the page: Sapienza University of Rome; the paper reports the Sapienza and Palestinian MoTA-DACH excavations (1997-2022). Open (offprint on Sapienza's IRIS repository).
   - URL: https://iris.uniroma1.it/retrieve/a09e0ba5-0e23-4a5e-8c89-db58e6d2ba80/Nigro_Jericho_2022.pdf
   - Locator: p. 402, on the scarab naming the city (Ruha = Jericho).
   - Quote: "the latter was the ancient Canaanite name of the city"
   - Locator: p. 403.
   - Quote: "In the second half of the 16th century BC, Ruha was completely destroyed by an enemy attack"
   - Quote: "Radiocarbon dates fix the event between 1550 and 1520 cal BC"
-  - Locator: p. 403-404, the next period.
+  - Locator: p. 403-404, section "Late Bronze Age (Sultan V, 1500-1300 BC)".
   - Quote: "During the Late Bronze Age the city gradually recovered (Bienkowski 1986), becoming again a town, with weaker fortifications consisting of a mud-brick wall erected on top of the Cyclopean Wall"
+  - Quote: "In the last century of the Late Bronze Age, Jericho shows a dramatic draught of archaeological evidence, which has been interpreted in a definitive abandonment of the city"
 - **Hayes, lecture 12**. Reference. Open.
   - URL: https://oyc.yale.edu/religious-studies/rlst-145/lecture-12
   - Quote: "Excavations at Jericho and Ai indicate that both of these towns were laid waste at least 200 years before the probable time of Joshua; so there weren't even any walls in Jericho at the time of Joshua."
@@ -239,10 +242,10 @@ Show: traditional "Jericho's walls fell c. 1400 BCE (Bryant Wood)"; critical "wa
 
 ### Notes
 
-- **The critical date is sourced, but not to Kenyon.** Nigro gives 1550-1520 cal BC from radiocarbon (citing Bruins and van der Plicht 1995). It is the current excavator's date, not Kenyon's. The only pages that attribute "c. 1550" to Kenyon are the Tradition pages (Wood). A row can say "destroyed c. 1550-1520 BCE (radiocarbon)", citing Nigro. It should not say "Kenyon dated it" on this sourcing unless the owner accepts a Tradition page as the source for a report of what Kenyon concluded.
-- **Contradiction inside the critical side.** Nigro's Late Bronze town with "a mud-brick wall" sits against Hayes's "there weren't even any walls in Jericho at the time of Joshua". Under the policy the page follows the newer, more specific source and drops "no walls".
-- **Class doubt.** Nigro's chapter is in conference proceedings. Whether those proceedings are peer-reviewed was not checked.
-- **Exact subject.** Nigro dates the Middle Bronze destruction of the city, which is what the show calls the walls falling. Wood and Nigro date the same stratum: Wood's "City IV" and Kenyon's Middle Bronze city.
+- **The critical date is sourced, but not to Kenyon.** Nigro gives 1550-1520 cal BC from radiocarbon (citing Bruins and van der Plicht 1995). It is a radiocarbon date reported by the current expedition, not Kenyon's. The only pages that attribute "c. 1550" to Kenyon are Wood's. #80 settles this: "A quote found in another work is a lead only." A row can say "destroyed c. 1550-1520 BCE (radiocarbon)", citing Nigro. "Kenyon dated it" needs Kenyon's own work, which was not opened.
+- **No contradiction with Hayes, but a point for Wood.** Nigro's walled Late Bronze town spans 1500-1300 BC and is followed by abandonment. Hayes's "no walls" and Coogan's "uninhabited" refer to a thirteenth-century Joshua, which falls in that abandonment. Wood's c. 1400 falls inside Nigro's walled-town period. Nigro reports no destruction at that date, so his report does not support Wood. A row should not say "no walls" without tying it to the thirteenth century.
+- **Class.** Conference proceedings from an academic publisher meet #80's "academic publishers" test. Peer review was not checked, and #80 does not require it for that route.
+- **Exact subject.** Nigro dates the Middle Bronze destruction of the city, which is what the show calls the walls falling. My inference, not stated by Nigro: Wood and Nigro are dating the same destruction (Wood's "City IV", Kenyon's Middle Bronze city).
 
 ## Row 5: Fall of Jerusalem and the start of the exile (event)
 
@@ -294,7 +297,7 @@ Show: critical "Temple destroyed 587 or 586 BCE (both figures used)"; traditiona
 
 ### Notes
 
-- **587 vs 586 splits within sources, not between them.** The one source that commits to a single year is NABRE (587). Coogan's companion uses both; Hayes says "587 or 586"; GotQuestions says both on different pages. The show's use of both years matches its sources. A row would need a rule: either "587/586 BCE" or one year with a source.
+- **587 vs 586 splits within sources, not between them.** The one source that commits to a single year is NABRE (587). Coogan's companion uses both; Hayes says "587 or 586"; GotQuestions says both on different pages. The show's use of both years matches its sources. #80 settles the display: "Where sources show a split, the page shows the split", so "587/586 BCE" (or "587 or 586", Hayes's own words).
 - **605 is a Tradition count.** Only GotQuestions states the 605-536 count of Jeremiah's 70 years. ESV GSB gives 605 for Daniel's exile. The critical sources date 605 only as the start of vassalage.
 
 ## Results
@@ -310,7 +313,7 @@ Show: critical "Temple destroyed 587 or 586 BCE (both figures used)"; traditiona
 Counts:
 
 - Critical date sourced at the show's wording: Daniel; Jerusalem (as a split). Sourced with different wording: Deuteronomy (8th century start), Jericho (radiocarbon, not Kenyon), Exodus (conditional date; no "did not happen").
-- Traditional date: 5 of 5, from GotQuestions. Four of five also from a non-GotQuestions Tradition source with a date (Daniel, Exodus, Jericho, start of exile). Deuteronomy's alternative has only a setting date.
+- Traditional date: 5 of 5. GotQuestions for 4 (not tested for Jericho); ABR for Jericho. A non-GotQuestions Tradition source with a date exists for 4 (Daniel, Exodus, Jericho, start of exile). For Deuteronomy the only non-GotQuestions date is a setting date.
 
 ## Tradition sources other than GotQuestions
 
@@ -336,19 +339,25 @@ Self-description quotes (checked):
 Findings:
 
 - **Yes, a non-GotQuestions Tradition source can supply a date.** The most useful is the ESV GSB: a confessional study Bible from a named publisher, with short "Author and Date" or "Setting" lines on four of the five rows. ABR is the named apologist the show itself cites (Wood).
-- **Naming problem.** Crossway's own words are "Christian ministry". The introductions do not say "evangelical" or "conservative", although ABR's do. Under #86 a page would have to write "a Christian publishing ministry's study Bible dates..." unless the owner rules that a study Bible can be named by its Bible ("the ESV Global Study Bible dates...").
-- **Independence problem.** Wood is the author on both ABR pages and the AiG page. Three URLs, one voice.
+- **Naming.** #86 settles it: name the tradition in the source's own words. Crossway's are "nonprofit Christian ministry", so "a Christian publishing ministry's study Bible dates...". The introductions themselves do not say "evangelical" or "conservative"; ABR's About page does.
+- **Independence.** Wood is the author on both ABR pages and the AiG page: three URLs, one voice. #86 says one Tradition source per statement is enough, so this does not block a row.
 - **A church body is not the same as a tradition.** The USCCB's Bible gives the critical dates, and a Catholic apologist argues for the late Exodus. On these rows "the traditional date" is an evangelical position, which supports #86's rule against unlabelled "traditional".
 
 ## Decisions the policy needs
 
-1. **Can a study Bible be named by its own title?** The ESV GSB introductions carry no tradition label, and Crossway calls itself a "Christian ministry". Options: name it by the Bible ("the ESV Global Study Bible"), by the publisher's words ("a Christian publishing ministry"), or require a label the source gives itself.
-2. **Is a setting date a composition date?** The ESV GSB "Setting of Deuteronomy c. 1406 B.C." plus Mosaic authorship implies a writing date but does not state one. The same applies to the Joshua setting and Jericho.
-3. **One voice, several URLs.** Should Wood on ABR and Wood on AiG count as one Tradition source? The #86 rule "one such source per statement is enough" makes this matter only if independence is ever required.
-4. **A row whose critical date is conditional (Exodus).** The timeline needs a way to show "13th century BCE, if historical" against 1446. Alternatively, the critical side can show no date, with Meyers's "no consensus" sentence.
-5. **A year that the sources themselves split (587/586).** The options are a slash form, or one year with a named source.
-6. **Reporting a scholar's conclusion via a Tradition page.** "Kenyon dated the destruction to c. 1550" is attested here only on Wood's pages. Can a Tradition source carry a factual report of what a critical scholar concluded, or must Kenyon's own 1957 or 1981 work be read? It is outside the 30-year window, but this is a finding, not a state-of-the-field statement.
-7. **Conference proceedings as Scholarly.** Nigro's report is in ICAANE proceedings (Harrassowitz). Peer review was not checked.
+Audit of candidate questions against #80 and #86:
+
+- Naming a study Bible: settled by #86 (own words). Answered above.
+- Setting date as composition date: settled by #80 ("No statement is worded more strongly than its External Source"). The ESV GSB supports only "sets Moses's speeches c. 1406", not "written c. 1406".
+- One voice, several URLs: settled by #86 (one Tradition source is enough).
+- 587/586: settled by #80 (show the split).
+- Kenyon via Wood: settled by #80 (a quote found in another work is a lead only).
+- Conference proceedings: settled by #80's venue test (academic publisher).
+
+Left open:
+
+1. **Is a confessional study Bible Reference or Tradition?** This contradicts a recorded decision by analogy. #80 puts "academic study Bibles" in Reference, and #86 ruled the church-published NABRE introductions Reference. The ESV GSB is also a study Bible, from a publisher with a statement of faith. I classed it Tradition because it is confessional and not academic, but no ruling covers it. If it is Reference, its dates become state-of-the-field statements. Its Exodus introduction then says "There is no consensus among scholars", and its Daniel date conflicts with NABRE. The non-GotQuestions answer above depends on this ruling.
+2. **How does the timeline show a conditional critical date (Exodus)?** #80 fixes the wording: the source's "if" must stay. How a timeline row displays "13th century BCE, if historical", or no date with Meyers's "no consensus", is a design question for map #88, not a policy question.
 
 ## Sources
 
