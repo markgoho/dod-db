@@ -192,22 +192,66 @@ subjects:
 
   - slug: univocality
     subject: "Univocality: does the Bible speak with one voice?"
-    status: held
-    missing: "Trigger Claim. The inventory's keyword pass found no consensus-framed claim. Read the Episodes tagged Univocality (41)."
+    status: candidate
+    core: "The Bible's texts do not speak with one voice; univocality is imposed on the collection by its readers, not asserted by the texts."
     basis: "#84: the dropped advisory guide becomes three held candidates."
     watch: [univocal]
+    triggers:
+      - episode: 6
+        speaker: "Dan McClellan"
+        timestamp: "00:02:54.660"
+        text: "And this is something that developed long ago as early Jewish readers of the Jewish Scriptures and early Christian readers of the Christian and the Jewish Scriptures were wrestling with how to make sense of the different passages that seem to be saying a lot of different things."
+      - episode: 6
+        speaker: "Dan McClellan"
+        timestamp: "00:04:54.650"
+        text: "And I have a big concern with univocality because nowhere in the text, nowhere in the text of the Bible is it asserted or promoted. This is something that must be imposed upon the Bible from outside the Bible and really is only a possibility once the Bible comes together as a single collection of texts."
+      - episode: 15
+        speaker: "Dan McClellan"
+        timestamp: "00:30:52.000"
+        text: "So even the concept of hell is not presented univocally in any single Gospel, much less in all the Gospels, much less across the entire New Testament. It is entirely inconsistent."
+      - episode: 31
+        speaker: "Dan McClellan"
+        timestamp: "00:21:55.870"
+        text: "The Bible is— is not a consistent, unified, univocal text."
+      - episode: 44
+        speaker: "Dan McClellan"
+        timestamp: "00:25:52.230"
+        text: "The text is not univocal. I mean, just between Genesis 1:28 and 2:24, you've got two entirely distinct creation accounts."
+    notes: '#125 gate-1 read (2026-11-23): every `univocal` hit line in the 41 Episodes tagged Univocality, plus about two minutes either side of each recorded claim. Most hits are passing ("presupposing univocality") or polemic; the five above are the strongest descriptive claims. Core is the show''s thesis, not yet sourced. Ep 135 and Ep 144 hits are attributed to Dan Beecher but read like Dan McClellan; not used.'
 
   - slug: inerrancy
     subject: "Inerrancy"
-    status: held
-    missing: "Trigger Claim. The inventory's keyword pass found no consensus-framed claim. Read the Episodes tagged inerrancy (29)."
+    status: candidate
+    core: "Inerrancy as a formal doctrine is a modern development, firmed up in reaction to critical scholarship, not a view Christians always held."
     basis: "#84: the dropped advisory guide becomes three held candidates."
     watch: [inerran, infallib]
+    triggers:
+      - episode: 6
+        speaker: "Dan McClellan"
+        timestamp: "00:04:54.650"
+        text: "Yeah, and there are different. There are variations on inerrancy. Like, some people say it's anything. Everything is exactly accurate. Other people say, well, no, it's just matters of doctrine or even central matters of doctrine. Other people say doctrine or history. Some people say it's limited to the autographs. So only those original texts that were physically written on by the actual authors themselves. Other people say it's, you know, any version of the Bible. It's. There are a lot of variations on it, but yeah, the idea is basically that it cannot be an error."
+      - episode: 79
+        speaker: "David Congdon"
+        timestamp: "00:27:45.070"
+        text: "Lewis is, I mean, part of a British tradition. Of course, it never had an interest in inerrancy and still doesn't."
+      - episode: 79
+        speaker: "David Congdon"
+        timestamp: "00:28:07.380"
+        text: "I mean, the thing with scripture is fascinating too, because I do think the inerrancy debates are, I mean, while they still happen, it is largely a thing of the past, in my opinion. I mean, we do. I mean, the inerrancy wars were big in the 70s, 80s, and then especially into, you know, 90s."
+      - episode: 140
+        speaker: "Dan McClellan"
+        timestamp: "00:50:19.206"
+        text: "Again, it's all presupposing inspiration, not inerrancy as we understand it today, because that's another thing that has really only come up in the last couple hundred years, but as a formal doctrine."
+      - episode: 152
+        speaker: "Dan McClellan"
+        timestamp: "00:21:57.756"
+        text: "So this is what I think is kind of the main pivot towards what we might call fundamentalist Christianity. Right, because this is a series of publications basically arguing, lashing out against the historical-critical method, against critical scholarship, to draw the line in the sand and say, these are the fundamentals of being a Christian, and you have to accept these in order to be on our side of things. And it was doubling down on some concept of a literal approach to scripture where it's no longer just kind of, you know, your hippie-dippy Origen, you know, hit the blunt and then say, you know, just relax about these contradictions and stuff. They developed the notion of the inerrancy, the historicity, the univocality, all these things of the scriptures as more firm identity markers as a way to object to rising critical scholarship."
+    notes: '#125 gate-1 read (2026-11-23): every `inerran`/`infallib` hit line in the 29 Episodes tagged inerrancy, plus about two minutes either side of each recorded claim. Ep 152 at 00:21:57 is about The Fundamentals (1910-1917, per 00:20:50); Ep 152 at 00:26:08 adds the 1978 Chicago Statement. Ep 164 at 00:14:17 (Leslie Baynes: Gore, 1889, "says that the Bible is not inerrant") is a further lead. Ep 149 at 00:25:47 is a question, not used. Core is the show''s thesis, not yet sourced.'
 
   - slug: inspiration
     subject: "Inspiration of scripture"
-    status: held
-    missing: "Trigger Claim. No Tag; read the 11 Transcripts that match the watch terms."
+    status: candidate
+    core: "In 2 Timothy 3:16, 'all scripture' meant the Jewish scriptures, and the reading of theopneustos as 'inspired' was popularized by Origen in the third century."
     basis: "#84: the dropped advisory guide becomes three held candidates."
     watch:
       [
@@ -217,5 +261,27 @@ subjects:
         God breathed,
         inspired word,
       ]
+    triggers:
+      - episode: 6
+        speaker: "Dan McClellan"
+        timestamp: "00:42:55.230"
+        text: "Well, actually, independently of when you think this text was written, this word was used exclusively to refer to Jewish scriptures in this time period. So the author here is without a doubt referring to the texts that were in circulation, that were considered authoritative, inspired, that were considered scripture by the Jewish community."
+      - episode: 6
+        speaker: "Dan McClellan"
+        timestamp: "00:51:49.310"
+        text: "The overwhelming consensus among believing readers of the text is that God-breathed means inspired, that the scriptures were breathed out by God or they were in some sense composed under God's breathing authority or influence. God is breathing down the author's neck in some way. And that's been a very, very common reading for a long, long time, but not the entire time. We can roughly pinpoint when that reading started."
+      - episode: 6
+        speaker: "Dan McClellan"
+        timestamp: "00:52:52.050"
+        text: "It was around the third century with the writer Origen who kind of popularized and promulgated that reading, understanding theopneustos to mean inspired."
+      - episode: 6
+        speaker: "Dan McClellan"
+        timestamp: "00:53:55.170"
+        text: "And in pretty much everywhere that Dr. Poirier found this word in Greco-Roman, Jewish or Christian literature prior to Origen, that's the meaning. And I think he makes a very strong case that this text was intended to function that way, that it should be understood to mean all Scripture is life-giving and is profitable for teaching, for reproof, for correction, for training in righteousness."
+      - episode: 164
+        speaker: "Leslie Baynes"
+        timestamp: "00:36:42.209"
+        text: "Well, Moffatt also said it in the preface to his New Testament that you had to reject the idea of, uh, plenary verbal inspiration, mechanical inspiration, uh, however you want to phrase the thing."
+    notes: '#125 gate-1 read (2026-11-23): every watch-term hit line in the 11 matching Transcripts, plus about two minutes either side of each recorded claim; the Ep 164 claim came from the inerrancy read. Substantive claims are almost all Ep 6 on 2 Timothy 3:16; the rest are passing mentions. The "overwhelming consensus" at 00:51:49 is among believing readers, not scholars. The life-giving reading rests on one scholar (John C. Poirier, The Invention of the Inspired, 2021), so the core may narrow to what theopneustos means in 2 Timothy 3:16. Core is the show''s thesis, not yet sourced.'
 
 statements: []
