@@ -1,0 +1,221 @@
+# Scholarship Page candidates (#96). Committed, not rendered.
+#
+# subjects: the queue. File order is the order; the next page is the first
+#   `passed` entry, else the first `candidate` (the owner's pick overrides).
+#   status: candidate  untested, or unblocked
+#           passed     sourcing test passed; waits for a draft slot
+#           held       fell short; `missing` says what unblocks it
+#           dropped    not a page subject; `reason` says why
+#   core: the candidate core claim. Until a test, the show's thesis as the
+#     inventory states it; a test rewords it to its sources' strength.
+#   basis: where the entry came from (inventory counts, Episode, #93 cut).
+#   watch: terms process-next-episode greps in each new Transcript (held for
+#     a Trigger Claim only).
+#   triggers: Trigger Claim pointers (episode, speaker, timestamp, text).
+#     Unchecked until the sourcing test reads the Transcript around them.
+#   tested: date of the last sourcing test.
+#   found: passages read in the source itself (registry id or full citation,
+#     locator, URL, quote). leads: passages not read in the source (CONTEXT.md).
+#   An entry leaves the file when its draft page is created; a page cut below
+#   the publish rule (#93) returns as `held` under its page slug.
+#
+# statements: proposed new statements for an existing page, from a new
+#   Episode. Picked up only by a re-review the owner chooses (#93).
+#
+# Seed (2026-11-23): the consensus-claims inventory (#77, branch
+# research/consensus-claims-inventory) ranked items 4-10, then its "short
+# page" tier, then the remaining clusters with a statable thesis, then the
+# three held subjects from #84. Counts are the inventory's core-thesis counts
+# where it gives them, else whole-cluster counts. Nothing below has been
+# sourcing-tested; #85 tested only the three built subjects.
+
+subjects:
+  - slug: yahweh-origins
+    subject: "Yahweh's origins and early Israelite religion"
+    status: candidate
+    core: "Yahweh was originally a deity from the south (Shasu of Yhw), distinct from El."
+    basis: "Inventory rank 4: 8 Episodes, 18 claims, all Hosts. The show marks several points as under discussion; a page must carry that hedging."
+
+  - slug: new-testament-later-additions
+    subject: "Later additions to the New Testament text"
+    status: candidate
+    core: "Some passages in modern Bibles are not original, among them the longer ending of Mark and the woman caught in adultery."
+    basis: "Inventory rank 5: 8 Episodes, 10 claims."
+    notes: "Also 1 Corinthians 14:34-35; the show's count of about 16 verses needs a source that counts them, never the page's own count (#80)."
+
+  - slug: gospels-dating-and-order
+    subject: "When the Gospels were written, and in what order"
+    status: candidate
+    core: "Mark is the earliest Gospel, written around 70 CE."
+    basis: "Inventory rank 6: 8 Episodes, 14 claims, 10 majority strength, 5 from Guest Speakers."
+    notes: "Inventory: mostly dating claims, so it may feed the Timeline (#108) more than a page. Gospel authorship and Q are a thinner separate set (6 Episodes, 10 claims, no consensus-strength wording)."
+
+  - slug: pentateuch-authorship
+    subject: "Who wrote the Pentateuch"
+    status: candidate
+    core: "Moses did not write the Pentateuch; it has more than one author and took shape in the mid-first millennium BCE."
+    basis: "Inventory rank 7: 7 Episodes, 15 claims; 5 asserted without a marker, 5 from Guest Speakers."
+    notes: "The show flags the source model itself as contested (Ep 22, Ep 187)."
+
+  - slug: israelite-origins-and-the-conquest
+    subject: "Israel's origins and the conquest of Canaan"
+    status: candidate
+    core: "Israel emerged within Canaan; archaeology does not support a conquest."
+    basis: "Inventory rank 8: 5 Episodes, 9 claims, 3 consensus, 3 no evidence. Explicit consensus wording in Ep 116."
+    notes: "Inventory suggests merging with Moses and the Exodus. Moses already has a Merneptah question. Decide at the test: own page, or new statements for moses-and-the-exodus (then move to `statements`)."
+
+  - slug: david-and-the-united-monarchy
+    subject: "David, Saul and the united monarchy"
+    status: candidate
+    core: "Scholars are divided on whether a historical David ruled a united monarchy."
+    basis: "Inventory rank 9: 6 Episodes, 11 claims."
+    notes: "The show's claims conflict (Ep 154 'split', Ep 181 'probably a historical David'). A page states a divided field only if a source says the field is divided (#80)."
+
+  - slug: child-sacrifice-and-molech
+    subject: "Child sacrifice and Molech"
+    status: candidate
+    core: "Exodus 22:29 originally commanded the sacrifice of the firstborn."
+    basis: "Inventory rank 10: 6 Episodes, 10 claims."
+    notes: "Second stable claim: no material evidence it was practiced. Molech as a sacrifice type drifts from 'shifting consensus' (Ep 21) to flat assertion (Ep 132, Ep 139)."
+
+  - slug: revelation
+    subject: "Revelation: date, author and 666"
+    status: candidate
+    core: "Revelation was written in the 90s CE, not by the author of John's Gospel, and 666 refers to Nero."
+    basis: "Inventory short-page tier: 4 Episodes, 9 claims, 4 consensus."
+
+  - slug: catholic-epistles-authorship
+    subject: "Who wrote James, Peter and Jude"
+    status: candidate
+    core: "James, Jude and 1 and 2 Peter were not written by the figures they name."
+    basis: "Inventory short-page tier: 4 Episodes, 9 claims."
+    notes: "Partner to pauline-authorship; may share its pseudepigraphy sources."
+
+  - slug: isaiah-authorship
+    subject: "Who wrote Isaiah"
+    status: candidate
+    core: "Isaiah 40-66 was not written in the eighth century BCE."
+    basis: "Inventory short-page tier: 2 Episodes, 8 claims, 4 consensus; mostly Ep 43."
+
+  - slug: birth-of-jesus
+    subject: "The birth of Jesus"
+    status: candidate
+    core: "Jesus came from Nazareth, not Bethlehem; the virgin birth is a later tradition."
+    basis: "Inventory short-page tier: 3 Episodes, 8 claims; mostly Ep 141."
+    notes: "Includes Isaiah 7:14."
+
+  - slug: asherah
+    subject: "Asherah and Yahweh's consort"
+    status: candidate
+    core: "Asherah was worshipped as Yahweh's consort in ancient Israel."
+    basis: "Inventory short-page tier: 5 Episodes, 6 claims, no consensus-strength wording."
+
+  - slug: flood-narrative
+    subject: "The flood narrative"
+    status: candidate
+    core: "The flood story combines two sources and is secondary to the Primeval History."
+    basis: "Inventory short-page tier: 5 Episodes, 6 claims, no consensus-strength wording."
+
+  - slug: deuteronomy-and-josiah
+    subject: "Deuteronomy and Josiah's reform"
+    status: candidate
+    core: "Deuteronomy dates to the seventh century BCE and draws on the Vassal Treaty of Esarhaddon."
+    basis: "Inventory short-page tier: 4 Episodes, 6 claims."
+
+  - slug: covenant-code
+    subject: "The Covenant Code"
+    status: candidate
+    core: "The Covenant Code is the earliest legislation in the Hebrew Bible."
+    basis: "Inventory short-page tier: 4 Episodes, the same claim each time."
+    notes: "One claim; three statements may be hard."
+
+  - slug: genesis-creation-accounts
+    subject: "The creation accounts in Genesis"
+    status: candidate
+    core: "Genesis 1 and Genesis 2-3 are two creation accounts from different sources."
+    basis: "Inventory short-page tier: 2 Episodes on the core thesis (Ep 1, Ep 22); the cluster spans 8."
+
+  - slug: creation-ex-nihilo
+    subject: "Creation out of nothing"
+    status: candidate
+    core: "The doctrine of creation out of nothing appears only in the last decades of the second century CE."
+    basis: "Inventory short-page tier: 2 Episodes, 5 claims; the most explicit wording in the corpus ('the academic consensus is')."
+
+  - slug: daniel-date
+    subject: "When Daniel was written"
+    status: candidate
+    core: "Daniel was written in 167-164 BCE."
+    basis: "Inventory short-page tier: 2 Episodes; the consensus date is stated once (Ep 34)."
+    notes: "Dating claim; may belong on the Timeline (#108)."
+
+  - slug: gospel-of-john-composition
+    subject: "How the Gospel of John was composed"
+    status: candidate
+    core: "" # the cluster mixes composition claims with John 1:1 grammar; the test states one thesis or drops it as not-a-subject
+    basis: "Inventory short-page tier: 3 Episodes, 7 claims, 5 from Guest Speakers."
+
+  - slug: patriarchs
+    subject: "Abraham, Isaac and Jacob"
+    status: candidate
+    core: "Abraham, Isaac and Jacob come from separate traditions woven together."
+    basis: "Inventory cluster: 3 Episodes, 6 claims, 3 contested."
+
+  - slug: psalms-authorship
+    subject: "Who wrote the Psalms"
+    status: candidate
+    core: "Scholars do not consider David the author of the psalms."
+    basis: "Inventory cluster: 3 Episodes, 4 claims, 3 asserted without a marker. Song of Songs authorship is in the same cluster."
+
+  - slug: religion-as-a-modern-category
+    subject: "Religion as a modern category"
+    status: candidate
+    core: "'Religion' as a separate sphere of life is a modern category, not an ancient one."
+    basis: "Inventory cluster: 3 Episodes, 3 claims."
+
+  - slug: cult-prostitution
+    subject: "Cult prostitution"
+    status: candidate
+    core: "There is no evidence of sacred prostitution in the ancient Near East."
+    basis: "Inventory cluster: 2 Episodes (Ep 125, Ep 126), 3 claims."
+
+  - slug: junia
+    subject: "Junia"
+    status: candidate
+    core: "Junia in Romans 16:7 was a woman called an apostle."
+    basis: "Inventory cluster: 1 Episode (Ep 16), 3 claims, 2 consensus."
+
+  - slug: easter-origins
+    subject: "The origins of Easter"
+    status: candidate
+    core: "There is no evidence that Easter derives from a goddess Ishtar or Eostre festival."
+    basis: "Inventory cluster: 1 Episode (Ep 5), 5 claims."
+
+  - slug: univocality
+    subject: "Univocality: does the Bible speak with one voice?"
+    status: held
+    missing: "Trigger Claim. The inventory's keyword pass found no consensus-framed claim. Read the Episodes tagged Univocality (41)."
+    basis: "#84: the dropped advisory guide becomes three held candidates."
+    watch: [univocal]
+
+  - slug: inerrancy
+    subject: "Inerrancy"
+    status: held
+    missing: "Trigger Claim. The inventory's keyword pass found no consensus-framed claim. Read the Episodes tagged inerrancy (29)."
+    basis: "#84: the dropped advisory guide becomes three held candidates."
+    watch: [inerran, infallib]
+
+  - slug: inspiration
+    subject: "Inspiration of scripture"
+    status: held
+    missing: "Trigger Claim. No Tag; read the Transcripts that match the watch terms (about 15)."
+    basis: "#84: the dropped advisory guide becomes three held candidates."
+    watch:
+      [
+        inspired by God,
+        inspiration of,
+        God-breathed,
+        God breathed,
+        inspired word,
+      ]
+
+statements: []

@@ -1,0 +1,26 @@
+subjects:
+  - slug: held-subject
+    subject: "Held with nothing missing"
+    status: held
+    basis: "seed"
+  - slug: held-subject
+    subject: "Dropped with no reason"
+    status: dropped
+    basis: "seed"
+  - slug: test-page
+    subject: "Already a page"
+    status: candidate
+    basis: "seed"
+    triggers:
+      - episode: 999
+        speaker: "Dan McClellan"
+        timestamp: "00:01:00.000"
+        text: "A claim."
+statements:
+  - page: no-such-page
+    question: "A question?"
+    triggers:
+      - episode: 21
+        speaker: "Dan McClellan"
+        timestamp: "00:01:00.000"
+        text: "A claim."

@@ -1,0 +1,23 @@
+subjects:
+  - slug: new-subject
+    subject: "A new subject"
+    status: candidate
+    basis: "Episode 21"
+    triggers:
+      - episode: 21
+        speaker: "Dan McClellan"
+        timestamp: "00:25:18.080"
+        text: "A claim."
+  - slug: test-page
+    subject: "A page cut below the publish rule"
+    status: held
+    missing: "A second independent author for the core claim."
+    basis: "#93 cut"
+statements:
+  - page: test-page
+    question: "A new question?"
+    triggers:
+      - episode: 21
+        speaker: "Dan McClellan"
+        timestamp: "00:30:00.000"
+        text: "Another claim."

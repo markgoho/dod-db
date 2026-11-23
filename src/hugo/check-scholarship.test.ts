@@ -127,6 +127,22 @@ describe("checkScholarship", () => {
     ]);
   });
 
+  test("a candidate file with a new subject, a returned page and a proposed statement passes", async () => {
+    expect(await check("candidates-valid")).toEqual([]);
+  });
+
+  test("fails candidate entries that break the #96 rules", async () => {
+    const at = "data/scholarship-candidates.yaml";
+    expect(await check("candidates-invalid")).toEqual([
+      `${at}: subject "held-subject" is held with no missing`,
+      `${at}: subject "held-subject" is listed twice`,
+      `${at}: subject "held-subject" is dropped with no reason`,
+      `${at}: subject "test-page" is already a page; only a page cut below the publish rule returns, as held`,
+      `${at}: statements.0 names page "no-such-page", not in hugo/content/scholarship`,
+      `${at}: Trigger Claim 999@00:01:00 names Episode 999, not in data/processed-videos.json`,
+    ]);
+  });
+
   test("fails when an uncited entry is not a string", async () => {
     expect(await check("uncited-not-strings")).toEqual([
       "data/scholarship-reviews/test-page.yaml: uncited.0: Invalid input: expected string, received object",

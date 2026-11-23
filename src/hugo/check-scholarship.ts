@@ -1,5 +1,6 @@
 /**
- * Validate Scholarship Pages and their data against the #92 rules.
+ * Validate Scholarship Pages and their data against the #92 rules, and the
+ * #96 candidate file.
  *
  * Usage: bun run check:scholarship
  */
@@ -94,6 +95,42 @@ export const ReviewSchema = z.object({
   leads: z.array(z.string()).default([]),
   uncited: z.array(z.string()).default([]),
 });
+
+const CandidateSubjectSchema = z
+  .object({
+    slug: z.string(),
+    subject: z.string(),
+    status: z.enum(["candidate", "passed", "held", "dropped"]),
+    core: z.string().optional(),
+    basis: z.string(),
+    missing: z.string().optional(),
+    reason: z.string().optional(),
+    watch: z.array(z.string()).optional(),
+    triggers: z.array(TriggerSchema).optional(),
+    tested: dateValue.optional(),
+    found: z.array(z.string()).optional(),
+    leads: z.array(z.string()).optional(),
+    notes: z.string().optional(),
+  })
+  .strict();
+
+const CandidateStatementSchema = z
+  .object({
+    page: z.string(),
+    question: z.string(),
+    triggers: z.array(TriggerSchema).min(1),
+    notes: z.string().optional(),
+  })
+  .strict();
+
+export const CandidatesSchema = z
+  .object({
+    subjects: z.array(CandidateSubjectSchema).default([]),
+    statements: z.array(CandidateStatementSchema).default([]),
+  })
+  .strict();
+
+export type Candidates = z.infer<typeof CandidatesSchema>;
 
 const EpisodesSchema = z.array(
   z.object({ episodeNumber: z.number().int().optional() }),
@@ -376,6 +413,57 @@ function checkOwnerPass(
 }
 
 /**
+ * #96 candidate file: unique slugs; `held` says what is missing and
+ * `dropped` why; a slug that is already a page is only a page returned by a
+ * #93 cut (`held`); proposed statements name a page; Trigger Claim pointers
+ * name real Episodes.
+ */
+export function checkCandidates(
+  candidates: Candidates,
+  pages: Set<string>,
+  episodes: Set<number>,
+): string[] {
+  const errors: string[] = [];
+  const at = "data/scholarship-candidates.yaml";
+  const seen = new Set<string>();
+  for (const subject of candidates.subjects) {
+    const entry = `${at}: subject "${subject.slug}"`;
+    if (seen.has(subject.slug)) errors.push(`${entry} is listed twice`);
+    seen.add(subject.slug);
+    if (subject.status === "held" && !subject.missing?.trim()) {
+      errors.push(`${entry} is held with no missing`);
+    }
+    if (subject.status === "dropped" && !subject.reason?.trim()) {
+      errors.push(`${entry} is dropped with no reason`);
+    }
+    if (pages.has(subject.slug) && subject.status !== "held") {
+      errors.push(
+        `${entry} is already a page; only a page cut below the publish rule returns, as held`,
+      );
+    }
+  }
+  for (const [index, statement] of candidates.statements.entries()) {
+    if (!pages.has(statement.page)) {
+      errors.push(
+        `${at}: statements.${index} names page "${statement.page}", not in hugo/content/scholarship`,
+      );
+    }
+  }
+  const triggers = [
+    ...candidates.subjects.flatMap(s => s.triggers ?? []),
+    ...candidates.statements.flatMap(s => s.triggers),
+  ];
+  for (const trigger of triggers) {
+    if (!episodes.has(trigger.episode)) {
+      errors.push(
+        `${at}: Trigger Claim ${triggerKey(trigger)} names Episode ${trigger.episode}, not in data/processed-videos.json`,
+      );
+    }
+  }
+  return errors;
+}
+
+/**
  * Check every Scholarship Page under `root` (a repo checkout).
  * Returns one message per problem; empty means the check passes.
  */
@@ -417,10 +505,28 @@ export async function checkScholarship(root: string): Promise<string[]> {
 
   const terms = await loadTerms(root, errors);
 
-  const pageFiles = await Array.fromAsync(
-    new Glob("*.md").scan({ cwd: contentDir }),
-  );
-  for (const file of pageFiles.filter(f => f !== "_index.md").toSorted()) {
+  const pageFiles = (
+    await Array.fromAsync(new Glob("*.md").scan({ cwd: contentDir }))
+  )
+    .filter(f => f !== "_index.md")
+    .toSorted();
+
+  // Optional: a checkout without candidates has nothing to check.
+  const candidatesPath = path.join(root, "data/scholarship-candidates.yaml");
+  if (await Bun.file(candidatesPath).exists()) {
+    const candidates = parseWith(
+      CandidatesSchema,
+      await loadOptional(candidatesPath, root, errors, readYaml),
+      rel(root, candidatesPath),
+      errors,
+    );
+    if (candidates) {
+      const pages = new Set(pageFiles.map(f => f.replace(/\.md$/, "")));
+      errors.push(...checkCandidates(candidates, pages, episodes));
+    }
+  }
+
+  for (const file of pageFiles) {
     const slug = file.replace(/\.md$/, "");
     const pagePath = path.join(contentDir, file);
     const triggersPath = path.join(
