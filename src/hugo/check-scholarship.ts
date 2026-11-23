@@ -223,7 +223,11 @@ function checkPage(
   return errors;
 }
 
-/** #84: ≥3 statements; core claim on ≥2 distinct sources, one Scholarly or Reference, not only Host-authored. */
+/**
+ * #84: ≥3 statements; core claim on ≥2 independent sources, one Scholarly or
+ * Reference, not only Host-authored. Sources sharing an author count once; a
+ * source with no author counts on its own.
+ */
 function checkPublishRule(
   at: string,
   page: Page,
@@ -241,10 +245,16 @@ function checkPublishRule(
   const ids = [...new Set(core.cites.map(c => c.source))];
   const sources = ids.flatMap(id => (registry[id] ? [registry[id]] : []));
   const rule = `${at}: publish rule: core claim "${core.id}"`;
-  if (ids.length < 2) {
-    const noun = ids.length === 1 ? "source" : "sources";
+  const independent = new Set(
+    ids.map(id => {
+      const author = registry[id]?.author;
+      return author ? `author:${author}` : `source:${id}`;
+    }),
+  ).size;
+  if (independent < 2) {
+    const noun = independent === 1 ? "source" : "sources";
     errors.push(
-      `${rule} cites ${ids.length} distinct ${noun}; needs at least 2`,
+      `${rule} cites ${independent} independent ${noun} (sources sharing an author count once); needs at least 2`,
     );
   }
   if (!sources.some(s => s.class === "Scholarly" || s.class === "Reference")) {

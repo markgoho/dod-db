@@ -56,9 +56,15 @@ describe("checkScholarship", () => {
     ]);
   });
 
-  test("fails a non-draft page whose core claim has one distinct source", async () => {
+  test("fails a non-draft page whose core claim has one source", async () => {
     expect(await check("core-one-source")).toEqual([
-      `${page}: publish rule: core claim "core" cites 1 distinct source; needs at least 2`,
+      `${page}: publish rule: core claim "core" cites 1 independent source (sources sharing an author count once); needs at least 2`,
+    ]);
+  });
+
+  test("fails a non-draft page whose core claim rests on two sources by one author", async () => {
+    expect(await check("core-same-author")).toEqual([
+      `${page}: publish rule: core claim "core" cites 1 independent source (sources sharing an author count once); needs at least 2`,
     ]);
   });
 
