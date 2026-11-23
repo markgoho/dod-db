@@ -28,7 +28,7 @@ const StatementSchema = z.object({
   cites: z.array(CiteSchema),
 });
 
-const PageSchema = z.object({
+export const PageSchema = z.object({
   title: z.string(),
   dek: z.string(),
   draft: z.boolean().default(false),
@@ -65,7 +65,7 @@ const SourceSchema = z.object({
   tradition: z.string().nullable(),
 });
 
-const RegistrySchema = z.record(z.string(), SourceSchema);
+export const RegistrySchema = z.record(z.string(), SourceSchema);
 
 const TriggerSchema = z.object({
   episode: z.number().int(),
@@ -74,7 +74,7 @@ const TriggerSchema = z.object({
   text: z.string(),
 });
 
-const TriggersSchema = z.array(TriggerSchema);
+export const TriggersSchema = z.array(TriggerSchema);
 
 const ReviewItemSchema = z.object({
   agent: z.string().optional(),
@@ -85,7 +85,7 @@ const ReviewItemSchema = z.object({
 
 const ReviewSectionSchema = z.record(z.string(), ReviewItemSchema).default({});
 
-const ReviewSchema = z.object({
+export const ReviewSchema = z.object({
   review: dateValue.nullish(),
   citations: ReviewSectionSchema,
   triggers: ReviewSectionSchema,
@@ -109,18 +109,18 @@ const EpisodeTermsSchema = z.object({
   topics: z.array(z.string()).nullish(),
 });
 
-type Page = z.infer<typeof PageSchema>;
-type Registry = z.infer<typeof RegistrySchema>;
-type Trigger = z.infer<typeof TriggerSchema>;
-type Review = z.infer<typeof ReviewSchema>;
+export type Page = z.infer<typeof PageSchema>;
+export type Registry = z.infer<typeof RegistrySchema>;
+export type Trigger = z.infer<typeof TriggerSchema>;
+export type Review = z.infer<typeof ReviewSchema>;
 
 const FRONTMATTER = /^---\n([\s\S]*?)\n---\n/;
 
-async function readYaml(filePath: string): Promise<unknown> {
+export async function readYaml(filePath: string): Promise<unknown> {
   return Bun.YAML.parse(await Bun.file(filePath).text());
 }
 
-async function readFrontmatter(filePath: string): Promise<unknown> {
+export async function readFrontmatter(filePath: string): Promise<unknown> {
   const match = FRONTMATTER.exec(await Bun.file(filePath).text());
   if (!match?.[1]) throw new Error("no front matter");
   return Bun.YAML.parse(match[1]);
@@ -201,7 +201,7 @@ async function loadTerms(root: string, errors: string[]): Promise<Terms> {
 }
 
 /** Page rules the review checks (#93 order of work). */
-const PAGE_RULES = [
+export const PAGE_RULES = [
   "publish-rule",
   "consensus-wording",
   "dissent-attributed",
@@ -209,7 +209,7 @@ const PAGE_RULES = [
 ];
 
 /** Review key for a Trigger Claim: `<episode>@HH:MM:SS`. */
-function triggerKey(trigger: Trigger): string {
+export function triggerKey(trigger: Trigger): string {
   return `${trigger.episode}@${trigger.timestamp.slice(0, 8)}`;
 }
 
@@ -281,6 +281,17 @@ function checkPage(
 }
 
 /**
+ * The independent sources among `ids`, one entry per distinct author: the
+ * author's name, or the source id for a source with no author.
+ */
+export function independentSources(
+  ids: string[],
+  registry: Registry,
+): string[] {
+  return [...new Set(ids.map(id => registry[id]?.author ?? id))];
+}
+
+/**
  * #84: ≥3 statements; core claim on ≥2 independent sources, one Scholarly or
  * Reference, not only Host-authored. Sources sharing an author count once; a
  * source with no author counts on its own.
@@ -302,12 +313,7 @@ function checkPublishRule(
   const ids = [...new Set(core.cites.map(c => c.source))];
   const sources = ids.flatMap(id => (registry[id] ? [registry[id]] : []));
   const rule = `${at}: publish rule: core claim "${core.id}"`;
-  const independent = new Set(
-    ids.map(id => {
-      const author = registry[id]?.author;
-      return author ? `author:${author}` : `source:${id}`;
-    }),
-  ).size;
+  const independent = independentSources(ids, registry).length;
   if (independent < 2) {
     const noun = independent === 1 ? "source" : "sources";
     errors.push(

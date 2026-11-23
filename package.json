@@ -16,6 +16,7 @@
     "format:check": "bun fmt --check && bun run format:check:prettier",
     "check": "bun run lint && bun run typecheck && bun run format:check",
     "check:scholarship": "bun run src/hugo/check-scholarship.ts",
+    "scholarship:checklist": "bun run src/hugo/scholarship-checklist.ts",
     "generate:tag-index": "bun run src/hugo/generate-tag-episode-index.ts",
     "generate:book-index": "bun run src/hugo/generate-book-episode-index.ts",
     "topic-page:gather": "bun run src/scripts/gather-topic-context.ts",

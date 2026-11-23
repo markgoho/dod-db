@@ -1,0 +1,27 @@
+review: ""
+citations:
+  core/1: { agent: pass, owner: "", note: "Author p. 5" }
+  core/2: { agent: pass, owner: "", note: "" }
+  core/3: { agent: flag, owner: "", note: "Summary never names the figure." }
+  entry/1: { agent: pass, owner: "" }
+triggers:
+  21@00:25:18: { agent: pass, owner: "", note: "Context: the sea." }
+  22@01:02:03: { agent: flag, owner: "", note: "Names a different king." }
+rules:
+  publish-rule:
+    { agent: pass, owner: "", note: "3 statements; core on 3 authors." }
+  consensus-wording: { agent: pass, owner: "", note: "" }
+  dissent-attributed: { agent: pass, owner: "", note: "" }
+sources:
+  scholarly-book:
+    { agent: pass, owner: "", edition: "2005, University Press catalogue" }
+  reference-lecture: { agent: pass, owner: "", edition: "recorded Fall 2006" }
+  textbook-summary:
+    {
+      agent: flag,
+      owner: "",
+      edition: "4th ed., 31 May 2019",
+      note: "Edition from a search snippet.",
+    }
+leads:
+  - "Another Book, p. 9: a snippet not read in the source."
