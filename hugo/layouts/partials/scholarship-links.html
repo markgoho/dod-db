@@ -1,0 +1,20 @@
+{{- /*
+  A block of inbound links to Scholarship Pages. Takes a dict:
+  pages        Scholarship Pages to list; renders nothing when empty
+  heading      the block heading
+  headingClass optional; defaults to type-eyebrow
+  Each item is the shared link line (scholarship-link.html).
+  */
+-}}
+{{- with .pages -}}
+  <section class="scholarship-links panel panel--muted">
+    <h2 class="{{ $.headingClass | default "type-eyebrow" }}">
+      {{ $.heading }}
+    </h2>
+    <ul class="scholarship-links__list" role="list">
+      {{ range . }}
+        <li>{{ partial "scholarship-link.html" . }}</li>
+      {{ end }}
+    </ul>
+  </section>
+{{- end -}}

@@ -1,0 +1,22 @@
+{{- /*
+  Returns the built Scholarship Pages whose `related` names a term. Takes a
+  dict:
+  page      the Book, Tag or Topic term page
+  taxonomy  "books", "tags" or "topics" (the `related` key)
+  A term matches by its URL slug. Draft pages are not built without -D.
+  */
+-}}
+{{- $slug := path.Base .page.RelPermalink -}}
+{{- $taxonomy := .taxonomy -}}
+{{- $pages := slice -}}
+{{- with site.GetPage "/scholarship" -}}
+  {{- range .RegularPages.ByTitle -}}
+    {{- $page := . -}}
+    {{- range index (.Params.related | default dict) $taxonomy -}}
+      {{- if eq (urlize .) $slug -}}
+        {{- $pages = $pages | append $page -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $pages -}}

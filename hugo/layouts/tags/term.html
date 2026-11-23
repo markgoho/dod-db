@@ -29,6 +29,12 @@
       </div>
     </header>
 
+    {{ partial "scholarship-links.html" (dict
+      "pages" (partial "scholarship-pages-for-term.html" (dict "page" . "taxonomy" "tags"))
+      "heading" "Scholarship Pages")
+    }}
+
+
     <div class="episodes-grid">
       {{ range sort .Pages ".Params.episodeNumber" "desc" }}
         {{ partial "episode-card" (dict "episode" . "badgeSource" "tags" "currentTerm" $.Title) }}

@@ -50,6 +50,11 @@
       </details>
     {{ end }}
 
+    {{ partial "scholarship-links.html" (dict
+      "pages" (partial "scholarship-pages-for-term.html" (dict "page" . "taxonomy" "books"))
+      "heading" "Scholarship Pages")
+    }}
+
     {{ if ne $featuredMarkup "" }}
       <section class="tag-featured-overview">
         <h2 class="type-section-title tag-section-title">Where to start</h2>

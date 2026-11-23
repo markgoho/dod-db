@@ -196,7 +196,11 @@
         </section>
       </section>
 
-      {{ if or .Params.books .Params.topics .Params.tags }}
+      {{ $scholarshipPages := partial "scholarship-pages-for-episode.html" (dict
+        "episode" .Params.episodeNumber
+        "sources" (slice (dict "base" "/scholarship" "triggers" hugo.Data.scholarship.triggers)))
+      }}
+      {{ if or .Params.books .Params.topics .Params.tags $scholarshipPages }}
         <section class="episode-metadata-footer">
           {{ if .Params.books }}
             <section class="episode-sidebar__section panel panel--muted">
@@ -236,6 +240,12 @@
               </ul>
             </section>
           {{ end }}
+
+          {{ partial "scholarship-links.html" (dict
+            "pages" $scholarshipPages
+            "heading" "Scholarship Pages prompted by this Episode"
+            "headingClass" "episode-sidebar__title")
+          }}
         </section>
       {{ end }}
     </div>
