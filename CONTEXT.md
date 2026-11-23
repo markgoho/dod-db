@@ -140,6 +140,22 @@ _Avoid_: Taxonomy Page
 A **Synthesis Page** on one subject that lists questions about it, each answered from **External Sources**.
 _Avoid_: Consensus page
 
+**Timeline**:
+The **Synthesis Page** that places events and the composition of **Scriptural Books** by the dates **External Sources** give, as **Timeline Entries**.
+_Avoid_: Chronology, dating page
+
+**Timeline Entry**:
+One subject on the **Timeline**, either an event or the composition of a text, with its **Critical Date** or a sourced statement that it has none.
+_Avoid_: Row, dated claim
+
+**Critical Date**:
+The date, range or relative date a Scholarly or Reference **External Source** gives for a **Timeline Entry**'s subject.
+_Avoid_: Real date, scholarly date
+
+**Tradition Date**:
+The date a named tradition holds for a **Timeline Entry**'s subject, from a Tradition **External Source** and attributed in its own words.
+_Avoid_: Traditional date, apologetic date
+
 **Trigger Claim**:
 A **Speaker**'s assertion in a **Transcript** that prompts a **Synthesis Page** and sets its subject.
 _Avoid_: Consensus claim, source
@@ -184,7 +200,11 @@ _Avoid_: Link
 - A **Synthesis Page** reports what **External Sources** say; it gives no advice and addresses no particular reader.
 - A **Synthesis Page** is the archive's own work, not the show's; a **Trigger Claim** is shown apart from the page's statements, and a **Host** is never its authority.
 - A **Host**'s published work can be an **External Source**, but never the only one behind a **Synthesis Page**'s core claim.
-- **Synthesis Pages** come in two kinds: **Scholarship Pages** and the timeline.
+- **Synthesis Pages** come in two kinds: **Scholarship Pages** and the **Timeline**.
+- A **Timeline Entry** needs at least one **Trigger Claim** and one Scholarly or Reference **External Source** for its **Critical Date**, or for a statement that the sources give it none.
+- **Critical Dates** are the **Timeline**'s spine; a **Timeline Entry** with no **Critical Date** is never placed by its **Tradition Date**.
+- A **Timeline Entry** shows a **Tradition Date** only when the show itself states both sides for its subject.
+- A **Timeline Entry** is worded for what its sources date, even when that is narrower than the **Trigger Claim**.
 - A **Scholarship Page** is published only when two or more independent **External Sources**, at least one Scholarly or Reference, back its core claim and it makes three or more statements.
 - A new **Episode** can add a **Trigger Claim** to a **Synthesis Page** or suggest a new subject; it never changes a statement.
 - A **Synthesis Page** shows the date its **External Sources** were read; its statements change only when the owner re-reviews it.
