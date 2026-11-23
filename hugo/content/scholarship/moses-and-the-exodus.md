@@ -175,7 +175,7 @@ statements:
     group: "Dates, numbers and places"
     question: "Did 600,000 men leave Egypt?"
     short: "The count is inflated; the census figures in Numbers are unrealistically high."
-    text: "The chapter summaries for Coogan and Chapman's introductory textbook treat the count of men leaving Egypt in Exodus 12:37 as an example of how the biblical writers often inflated census statistics, and call the population statistics in the censuses of Numbers likewise unrealistically high. The summary of the Numbers chapter says no reasonable interpretation for this inflation has ever been presented, though P, the Priestly writer, may have incorporated numbers from a variety of sources to show that the divine promise of descendants had been fulfilled. The summary of the Exodus chapter describes the Exodus as a migration not of thousands or millions of people but of a few hundred."
+    text: "The Numbers chapter summary for Coogan and Chapman's introductory textbook treats the count of men leaving Egypt in Exodus 12:37 as an example of how the biblical writers often inflated census statistics, and calls the population statistics in the censuses of Numbers likewise unrealistically high. It says no reasonable interpretation for this inflation has ever been presented, though P, the Priestly writer, may have incorporated numbers from a variety of sources to show that the divine promise of descendants had been fulfilled. The summary of the Exodus chapter describes the Exodus as a migration not of thousands or millions of people but of a few hundred."
     cites:
       - source: coogan-brief-4e-summary-ch9
         locator: "section “Census and Arrangement of the Camp”"

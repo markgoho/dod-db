@@ -134,7 +134,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Coogan ch. 9 summary, section “Census and Arrangement of the Camp”, read 2026-11-23. Names Exodus 12.37 as an inflated count; “often” kept. Short answer and statement attribute to the chapter summaries, not the textbook. The summary gives no figure; 600,000 appears only in the question.",
+      note: "Coogan ch. 9 summary, section “Census and Arrangement of the Camp”, read 2026-11-23. Names Exodus 12.37 as an inflated count; “often” kept. The statement attributes it to the Numbers chapter summary, not the textbook. Flag: the short answer states it in the page's voice, unattributed, as other short answers on the page do. The summary gives no figure; 600,000 appears only in the question.",
     }
   numbers/2:
     {
@@ -251,7 +251,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "11 statements (6 + 5 added 2026-11-23). Core (evidence) unchanged: Meyers (Scholarly), Coogan summary (Reference), Hayes l7 (Reference). Fallbacks if Bible Odyssey or Krajewski is ruled out: merneptah keeps Meyers p. 5 and Hayes l7, but loses “a group of people rather than a place” and “how long they had been there” (Kaltner only). numbers rests on the two Coogan summaries (ch. 9 and ch. 6, one author pair, Reference); if they are ruled out it has no citation and is cut. sea loses “no clear answer” and “cannot mean ‘red’” (Yoo only) and would fall back to Hayes l8, HarperCollins (“not certain”) and Meyers p. 6, with the short answer reworded. moses keeps moses/1–2. date and band use no new source.",
+      note: "11 statements (6 + 5 added 2026-11-23). Core (evidence) unchanged: Meyers (Scholarly), Coogan summary (Reference), Hayes l7 (Reference). Fallbacks if Bible Odyssey is ruled out: merneptah keeps Meyers p. 5 and Hayes l7, but loses “a group of people rather than a place” and “how long they had been there” (Kaltner only). sea loses “no clear answer” and “cannot mean ‘red’” (Yoo only) and would fall back to Hayes l8, HarperCollins (“not certain”) and Meyers p. 6, with the short answer reworded. moses keeps moses/1–2. date and band use no new source. numbers (reworked 2026-11-23) rests only on the two Coogan summaries (ch. 9 and ch. 6, one author pair, Reference); Krajewski is no longer cited.",
     }
   consensus-wording:
     {
@@ -317,8 +317,8 @@ leads:
   - "Collins and Eerdmans retried 2026-11-23 in a browser: Google Books showed the book's landing page, not p. 122 or p. 441. Still leads."
   - "HarperCollins Bible Dictionary (Bible Odyssey), “Other Unnamed Egyptian Kings”: the pharaoh of the exodus is “often identified by biblical scholars as Rameses II … or, somewhat less likely, his son and successor, Merenptah”. Could back the date statement; left off to keep it lean."
   - "Aaron Adair, “Counting on the Census Numbers”, HIPHIL Novum 10 (2025): the census numbers are “most likely artificial” (abstract). Author's affiliation is MIT Physics; venue not confirmed as peer-reviewed. Not cited."
-  - "Ben Zion Katz, “Recounting the Census: A Military Force of 5500”, TheTorah.com: title and search snippets only; author is a physician. Not read."
-  - "Colin J. Humphreys, “How Many People Were in the Exodus from Egypt?”, Science and Christian Belief 12.1, PDF on cis.org.uk: reads ’elep as a troop, about 20,000 people. Physicist; search snippet only. Not read."
+  - "Ben Zion Katz, “Recounting the Census: A Military Force of 5500”, TheTorah.com: title and search snippets only; author's field not checked. Not read."
+  - "Colin J. Humphreys, “How Many People Were in the Exodus from Egypt?”, Science and Christian Belief 12.1, PDF on cis.org.uk: reads ’elep as a troop, about 20,000 people. Search snippet only; author's field not checked. Not read."
 uncited:
   - "Jeffrey Stackert, “Moses”, Bible Odyssey (2016): “there is no external evidence from antiquity confirming that Moses was a real, historical person”. Read in full; not cited, because it is broader than the moses statement. Would back a reworded statement (and fits 21@00:28:28) if the owner wants one."
   - "John Huddlestun, “Was Moses' Name Egyptian?”, Bible Odyssey (2016): a 13th-century Moses in Egypt is a figure “many scholars are increasingly less inclined to accept”. Same author, “The Plagues of Egypt” (2022): naturalistic correlations “lack any support in ancient Egyptian records”. Read in full; no plagues statement on the page."
