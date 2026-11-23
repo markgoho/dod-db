@@ -270,6 +270,65 @@ textarea:not([rows]) {
   background: var(--color-accent);
 }
 
+/*
+  A <summary> with a drawn plus/minus toggle at the end, for folded blocks whose
+  summary is more than one line. Children stack in the first column; set
+  row-gap and padding on the component.
+*/
+.disclosure-summary {
+  --disclosure-bar: var(--border-width-sm);
+
+  align-items: start;
+  column-gap: var(--space-s);
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  list-style: none;
+}
+
+.disclosure-summary::-webkit-details-marker {
+  display: none;
+}
+
+.disclosure-summary > * {
+  grid-column: 1;
+}
+
+.disclosure-summary::after {
+  background-color: var(--tan-000);
+  background-image:
+    linear-gradient(currentColor, currentColor),
+    linear-gradient(currentColor, currentColor);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:
+    50% var(--disclosure-bar),
+    var(--disclosure-bar) 50%;
+  block-size: var(--space-m);
+  border: var(--border-width-sm) solid var(--tan-900);
+  color: var(--tan-900);
+  content: "";
+  grid-column: 2;
+  grid-row: 1;
+  inline-size: var(--space-m);
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+details[open] > .disclosure-summary::after {
+  background-size:
+    50% var(--disclosure-bar),
+    0 0;
+}
+
+.disclosure-summary:hover::after {
+  background-color: var(--color-accent);
+}
+
+.disclosure-summary:focus-visible {
+  outline: var(--border-width-sm) solid var(--color-action);
+  outline-offset: calc(var(--border-width-sm) * -2);
+}
+
 .button-brutalist {
   align-items: center;
   background: var(--tan-900);

@@ -42,18 +42,18 @@
         Scholarship Page
       </p>
       <h1 class="page-hero__title">{{ .Title }}</h1>
-      <div class="page-hero__description panel panel--muted">
+      <div class="scholarship-dek tag-hero__dek">
         <p>{{ $p.dek }}</p>
         {{ partial "scholarship-date-line.html" . }}
       </div>
     </header>
 
+    {{ $promptedBy := printf "Prompted by %d %s" (len $triggerEpisodes) (cond (eq (len $triggerEpisodes) 1) "Episode" "Episodes") }}
     <details class="scholarship-block panel panel--muted">
-      <summary class="type-eyebrow">
-        Prompted by
-        {{ len $triggerEpisodes }}
-        {{ cond (eq (len $triggerEpisodes) 1) "Episode" "Episodes" }} · not the
-        show’s work
+      <summary class="disclosure-summary">
+        <span class="type-eyebrow"
+          >{{ printf `%s · <mark class="scholarship-block__flag">not the show’s work</mark>` $promptedBy | safeHTML }}</span
+        >
       </summary>
       <div class="scholarship-block__body">
         {{ partial "scholarship-notice.html" . }}
@@ -68,35 +68,37 @@
     {{ range $group := $groups }}
       <section class="cloud-section">
         <h2 class="type-section-title cloud-section__title">{{ $group }}</h2>
-        {{ range where $p.statements "group" $group }}
-          <details class="scholarship-question panel" id="{{ .id }}">
-            <summary>
-              <span class="scholarship-question__question type-eyebrow"
-                >{{ .question }}</span
-              >
-              <span class="scholarship-question__short">{{ .short }}</span>
-            </summary>
-            <div class="scholarship-question__body">
-              <p>{{ .text }}</p>
-              <ul class="scholarship-cites" role="list">
-                {{ range .cites }}
-                  {{ $s := index $registry .source }}
-                  <li class="scholarship-cite">
-                    <blockquote class="scholarship-cite__quote">
-                      “{{ .quote }}”
-                    </blockquote>
-                    <p class="scholarship-meta">
-                      <a href="{{ .url | default $s.url }}" rel="noopener"
-                        >{{ partial "external-source-label.html" $s }}</a
-                      >,
-                      {{ .locator }}
-                    </p>
-                  </li>
-                {{ end }}
-              </ul>
-            </div>
-          </details>
-        {{ end }}
+        <div class="scholarship-questions panel">
+          {{ range where $p.statements "group" $group }}
+            <details class="scholarship-question" id="{{ .id }}">
+              <summary class="disclosure-summary">
+                <span class="scholarship-question__question type-eyebrow"
+                  >{{ .question }}</span
+                >
+                <span class="scholarship-question__short">{{ .short }}</span>
+              </summary>
+              <div class="scholarship-question__body">
+                <p>{{ .text }}</p>
+                <ul class="scholarship-cites" role="list">
+                  {{ range .cites }}
+                    {{ $s := index $registry .source }}
+                    <li class="scholarship-cite">
+                      <blockquote class="scholarship-cite__quote">
+                        “{{ .quote }}”
+                      </blockquote>
+                      <p class="scholarship-meta">
+                        <a href="{{ .url | default $s.url }}" rel="noopener"
+                          >{{ partial "external-source-label.html" $s }}</a
+                        >,
+                        {{ .locator }}
+                      </p>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </details>
+          {{ end }}
+        </div>
       </section>
     {{ end }}
 
