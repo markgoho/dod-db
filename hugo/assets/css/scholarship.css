@@ -1,12 +1,13 @@
 /*
   Scholarship section. Composes panel, chip, type-eyebrow, type-section-title,
-  cloud-section, page-hero, disclosure-summary, tag-hero__dek and quote-card
-  (tag-quote); only what those lack lives here.
+  stat-display, cloud-section, page-hero, disclosure-summary, tag-hero__dek and
+  quote-card (tag-quote); only what those lack lives here.
 
   A Scholarship Page is read, not browsed: one column at a 70ch measure, so
   the statements and citation quotes keep a comfortable line length.
 */
 .scholarship-page {
+  counter-reset: scholarship-question;
   display: grid;
   gap: var(--space-xl);
   margin-inline: auto;
@@ -39,21 +40,54 @@
   font-size: var(--step--1);
 }
 
+/* Hero stats: the page's scope as small stat tokens, like a Topic page's episode count. */
+.scholarship-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.scholarship-stat {
+  align-items: baseline;
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--tan-900);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--tan-900);
+  display: inline-flex;
+  gap: var(--space-3xs);
+  padding: var(--space-3xs) var(--space-xs);
+}
+
+.scholarship-stat .stat-display__number {
+  font-size: var(--step-1);
+  line-height: 1;
+}
+
+.scholarship-stat .stat-display__label {
+  color: var(--color-text-main);
+  font-size: var(--step--2);
+}
+
 /*
   Provenance: the notice stays visible above the folded Trigger Claim block,
   both in one panel.
 */
 .scholarship-notice {
+  font-size: var(--step--1);
   font-weight: var(--font-weight-semibold);
   padding: var(--space-s);
 }
 
 .scholarship-block {
+  container: trigger-claims / inline-size;
   border-block-start: var(--border-width-sm) solid var(--tan-400);
 }
 
 .scholarship-block > summary {
   padding: var(--space-s);
+  row-gap: var(--space-2xs);
 }
 
 .scholarship-block__flag {
@@ -63,6 +97,30 @@
   padding-inline: var(--space-4xs);
 }
 
+/* A preview of the Episodes inside, as the site's dark count tokens. */
+.scholarship-block__episodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4xs);
+}
+
+.scholarship-block__episode {
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+  font-family: var(--font-family-display);
+  font-size: var(--step--2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  min-inline-size: calc(var(--space-s) + var(--space-2xs));
+  padding-inline: var(--space-3xs);
+  text-align: center;
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+.scholarship-block > summary:hover .scholarship-block__episode {
+  background: var(--color-action);
+}
+
 .scholarship-block__body {
   padding: 0 var(--space-s) var(--space-s);
 }
@@ -70,48 +128,117 @@
 /* Trigger Claim cards sit inside the block: one border level, no second shadow. */
 .scholarship-block .tag-quote {
   box-shadow: none;
+  break-inside: avoid;
   gap: var(--space-xs);
-  padding: var(--space-s);
+  margin-block-end: var(--space-xs);
+  padding: var(--space-xs) var(--space-s);
 }
 
-/* One quote per row: two columns are too narrow inside the copy-width column. */
+.scholarship-block .tag-quote__text {
+  font-size: var(--step--1);
+}
+
+/*
+  Many short quotes: flow them in columns, so unequal heights leave no row
+  gaps, once the block is wide enough for two readable columns.
+*/
 .scholarship-block__body.tag-quotes__grid {
-  gap: var(--space-s);
-  grid-template-columns: minmax(0, 1fr);
+  display: block;
 }
 
-/* Questions: one panel per group, rows divided by a hairline, not a box each. */
+/* Literal length: container conditions cannot read custom properties. */
+@container trigger-claims (width >= 40rem) {
+  .scholarship-block__body.tag-quotes__grid {
+    column-count: 2;
+    column-gap: var(--space-xs);
+  }
+}
+
+/* Questions: one panel per group, rows divided by a hairline, numbered across the page. */
+.scholarship-question {
+  counter-increment: scholarship-question;
+}
+
 .scholarship-question + .scholarship-question {
   border-block-start: var(--border-width-sm) solid var(--tan-300);
 }
 
 .scholarship-question > summary {
+  grid-template-columns: auto minmax(0, 1fr) auto;
   padding: var(--space-s);
   row-gap: var(--space-3xs);
+  transition: background-color var(--duration-fast) var(--ease-standard);
 }
 
-.scholarship-question > summary:hover .scholarship-question__short {
-  color: var(--color-action);
+.scholarship-question > summary > * {
+  grid-column: 2;
 }
 
-/* Question first, short answer under it; both wrap. */
+.scholarship-question > summary::before {
+  align-items: center;
+  background: var(--tan-900);
+  block-size: var(--space-m);
+  color: var(--color-text-inverse);
+  content: counter(scholarship-question);
+  display: inline-flex;
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  justify-content: center;
+  min-inline-size: var(--space-m);
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+.scholarship-question > summary::after {
+  grid-column: 3;
+}
+
+.scholarship-question > summary:hover {
+  background: var(--tan-100);
+}
+
+.scholarship-question > summary:hover::before,
+.scholarship-question[open] > summary::before {
+  background: var(--color-action);
+}
+
+/* The question is the hook; the short answer sits under it. Both wrap. */
 .scholarship-question__question {
-  color: var(--color-action);
-}
-
-.scholarship-question__short {
   font-family: var(--font-family-display);
   font-size: var(--step-1);
-  font-weight: var(--font-weight-bold);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-heading);
   text-wrap: pretty;
   transition: color var(--duration-fast) var(--ease-standard);
 }
 
+.scholarship-question > summary:hover .scholarship-question__question {
+  color: var(--color-action);
+}
+
+.scholarship-question__short {
+  font-weight: var(--font-weight-semibold);
+  text-wrap: pretty;
+}
+
+/* The opened answer lines up with the question text, past the number. */
 .scholarship-question__body {
   display: grid;
-  gap: var(--space-m);
-  padding: 0 var(--space-s) var(--space-m);
+  gap: var(--space-s);
+  padding: 0 var(--space-s) var(--space-m)
+    calc(var(--space-s) + var(--space-m) + var(--space-s));
+}
+
+/* On a phone the number's indent costs too much measure. */
+@media (width < 48rem) {
+  .scholarship-question__body {
+    padding-inline-start: var(--space-s);
+  }
 }
 
 .scholarship-cites {
@@ -121,14 +248,20 @@
   padding: 0;
 }
 
+/* Evidence: the source's own words, set apart from the summary by size and a rust rule. */
 .scholarship-cite {
-  border-inline-start: var(--border-width-md) solid var(--color-action);
+  border-inline-start: var(--border-width-sm) solid var(--color-action);
   display: grid;
-  gap: var(--space-3xs);
-  padding-inline-start: var(--space-s);
+  gap: var(--space-4xs);
+  padding-inline-start: var(--space-xs);
+}
+
+.scholarship-cite__quote {
+  font-size: var(--step--1);
 }
 
 .scholarship-meta {
+  font-size: var(--step--2);
   overflow-wrap: break-word;
 }
 
@@ -144,14 +277,32 @@
   text-decoration-color: currentColor;
 }
 
-/* Sources used: a table that becomes one stacked card per source in a narrow container. */
+/* Source class as a token: outlined by default, Scholarly filled. */
+.scholarship-class {
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--tan-900);
+  color: var(--color-text-main);
+  display: inline-block;
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
+  line-height: var(--line-height-heading);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-transform: uppercase;
+}
+
+.scholarship-class[data-class="scholarly"] {
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+}
+
+/* Sources used: a ruled table that becomes one stacked card per source in a narrow container. */
 .scholarship-sources {
   container: scholarship-sources / inline-size;
 }
 
 .scholarship-sources__table {
-  background: var(--tan-000);
-  border: var(--border-width-sm) solid var(--tan-900);
+  border-block: var(--border-width-md) solid var(--tan-900);
   border-collapse: collapse;
   width: 100%;
 }
@@ -160,14 +311,18 @@
 .scholarship-sources__table td {
   font-size: var(--step--1);
   overflow-wrap: break-word;
-  padding: var(--space-2xs) var(--space-xs);
+  padding: var(--space-xs) var(--space-2xs);
   text-align: start;
   vertical-align: top;
 }
 
+.scholarship-sources__table td {
+  background: var(--tan-000);
+}
+
 .scholarship-sources__table th {
-  background: var(--tan-200);
   border-block-end: var(--border-width-sm) solid var(--tan-900);
+  font-size: var(--step--2);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-wide);
   line-height: var(--line-height-heading);
@@ -175,12 +330,16 @@
   white-space: nowrap;
 }
 
+.scholarship-sources__table th:first-child {
+  inline-size: 50%;
+}
+
 .scholarship-source + .scholarship-source td {
   border-block-start: var(--border-width-sm) solid var(--tan-300);
 }
 
-/* Class and date are single tokens: never split them mid-word. */
-.scholarship-source td:is([data-label="Class"], [data-label="Date read"]) {
+.scholarship-source td[data-label="Date read"] {
+  color: var(--color-text-muted);
   white-space: nowrap;
 }
 
@@ -194,7 +353,6 @@
   }
 
   .scholarship-sources__table {
-    background: none;
     border: 0;
   }
 
@@ -211,6 +369,7 @@
   .scholarship-source {
     background: var(--tan-000);
     border: var(--border-width-sm) solid var(--tan-900);
+    box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--tan-900);
     display: grid;
     gap: var(--space-2xs);
     padding: var(--space-xs) var(--space-s);
@@ -218,6 +377,7 @@
 
   .scholarship-source + .scholarship-source td,
   .scholarship-sources__table td {
+    background: none;
     border: 0;
     padding: 0;
   }
@@ -233,6 +393,7 @@
   }
 }
 
+/* List page: each card is one link (stretched from the title), with its scope as a kicker. */
 .scholarship-cards {
   display: grid;
   gap: var(--space-m);
@@ -241,25 +402,82 @@
 }
 
 .scholarship-card {
+  column-gap: var(--space-s);
   display: grid;
-  gap: var(--space-2xs);
+  grid-template-columns: minmax(0, 1fr) auto;
   padding: var(--space-s) var(--space-m);
+  position: relative;
+  row-gap: var(--space-2xs);
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+.scholarship-card > * {
+  grid-column: 1;
+}
+
+.scholarship-card:hover,
+.scholarship-card:focus-within {
+  background: var(--color-accent);
+}
+
+.scholarship-card__kicker {
+  color: var(--color-action);
 }
 
 .scholarship-card__title {
-  font-size: var(--step-2);
+  font-size: var(--step-3);
   margin: 0;
 }
 
-.scholarship-card__title a {
+.scholarship-card__link {
   color: var(--color-text-main);
-  text-decoration-thickness: var(--border-width-sm);
-  text-underline-offset: var(--space-4xs);
+  text-decoration: none;
 }
 
-.scholarship-card__title a:hover,
-.scholarship-card__title a:focus-visible {
+.scholarship-card__link::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.scholarship-card__link:focus-visible {
+  outline: none;
+}
+
+.scholarship-card:has(.scholarship-card__link:focus-visible) {
+  outline: var(--border-width-sm) solid var(--color-action);
+  outline-offset: var(--space-4xs);
+}
+
+.scholarship-card__teaser {
+  border-inline-start: var(--border-width-sm) solid var(--color-action);
+  font-family: var(--font-family-display);
+  font-style: italic;
+  font-weight: var(--font-weight-bold);
+  padding-inline-start: var(--space-xs);
+}
+
+.scholarship-card__arrow {
+  align-self: center;
   color: var(--color-action);
+  font-family: var(--font-family-display);
+  font-size: var(--step-3);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  grid-column: 2;
+  grid-row: 1 / span 5;
+}
+
+/* On a phone the whole card is the target; the arrow column only costs measure. */
+@media (width < 48rem) {
+  .scholarship-card {
+    grid-template-columns: minmax(0, 1fr);
+    padding-inline: var(--space-s);
+  }
+
+  .scholarship-card__arrow {
+    display: none;
+  }
 }
 
 .scholarship-empty {

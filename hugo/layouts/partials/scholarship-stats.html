@@ -1,0 +1,17 @@
+{{- /*
+  Counts for a Scholarship Page, shared by the page hero and the list cards.
+  Takes the page. Returns a dict:
+  questions  number of statements
+  sources    distinct External Sources cited (scholarship-source-ids.html)
+  episodes   distinct Episodes quoted as Trigger Claims
+  */
+-}}
+{{- $episodes := slice -}}
+{{- range index hugo.Data.scholarship.triggers .File.ContentBaseName -}}
+  {{- $episodes = $episodes | append .episode -}}
+{{- end -}}
+{{- return dict
+  "questions" (len .Params.statements)
+  "sources" (len (partial "scholarship-source-ids.html" .))
+  "episodes" (len ($episodes | uniq))
+-}}

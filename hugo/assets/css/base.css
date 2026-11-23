@@ -320,6 +320,27 @@ details[open] > .disclosure-summary::after {
     0 0;
 }
 
+/* Opening and closing slide; :root allows interpolating to block-size: auto. */
+@media (prefers-reduced-motion: no-preference) {
+  details:has(> .disclosure-summary)::details-content {
+    block-size: 0;
+    overflow-y: clip;
+    transition:
+      block-size var(--duration-fast) var(--ease-standard),
+      content-visibility var(--duration-fast) allow-discrete;
+  }
+
+  details[open]:has(> .disclosure-summary)::details-content {
+    block-size: auto;
+  }
+
+  .disclosure-summary::after {
+    transition:
+      background-color var(--duration-fast) var(--ease-standard),
+      background-size var(--duration-fast) var(--ease-standard);
+  }
+}
+
 .disclosure-summary:hover::after {
   background-color: var(--color-accent);
 }
