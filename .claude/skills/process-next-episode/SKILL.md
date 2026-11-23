@@ -1,6 +1,6 @@
 ---
 name: process-next-episode
-description: Find the next unprocessed canonical RSS episode and, when an audio URL is available, run the RSS audio processing pipeline automatically without asking for confirmation, then verify and analyze the new episode's segments and create a guest page for any new guest.
+description: Find the next unprocessed canonical RSS episode and, when an audio URL is available, run the RSS audio processing pipeline automatically without asking for confirmation, then verify and analyze the new episode's segments, create a guest page for any new guest, and report candidate Trigger Claims for Scholarship Pages.
 ---
 
 # Process Next Episode
@@ -19,6 +19,7 @@ to:
 - a confirmed processing run through the RSS audio pipeline
 - verified segments with topic labels and summaries
 - a guest page for any new guest
+- candidate Trigger Claims for Scholarship Pages, reported for the owner to accept
 
 ## Workflow
 
@@ -79,7 +80,28 @@ Correct wrong types in the `verify-segments.ts` payload. Do not hand-edit `data/
 
 If any of that skill's stop conditions applies, stop after verification. Report what blocked you and do not save labels.
 
-### 5. Create guest pages
+### 5. Find candidate Trigger Claims
+
+If the pipeline succeeded, search the new final Transcript (`data/transcripts/<date>-<slug>.txt`, not `-raw`) once per Scholarship Page (`hugo/content/scholarship/<slug>.md`, drafts included). Do this even when Step 4 stopped early.
+
+1. Read the page's front-matter `watch` terms and its statements.
+2. `grep -n -i` the Transcript for each term.
+3. For each hit, read about two minutes either side. A candidate is a Speaker's assertion about the page's subject, quoted verbatim with any hedge from the next sentence kept. A passing mention is not a candidate.
+
+Done when every `watch` term of every page has been searched and each hit is a candidate or dismissed. Write nothing: candidates go only in the run summary.
+
+A candidate that suggests a statement the page lacks, or a new subject, is a #96 candidate. List it separately; it never goes onto the page or its triggers file.
+
+**Accept flow.** Only after the owner accepts a candidate, in a later turn:
+
+1. Append it to `hugo/data/scholarship/triggers/<slug>.yaml`, a plain top-level list: `episode`, `speaker`, `timestamp` (`"HH:MM:SS.mmm"` from the Transcript line), `text`.
+2. Record it under `triggers` in `data/scholarship-reviews/<slug>.yaml`, keyed `<episode>@HH:MM:SS`, as `{ agent: pass|flag, owner: "", note: "" }`.
+3. Run the Trigger-Claim-only check (#93): confirm Speaker, text, subject and any dropped hedge against the Transcript; set `agent` and explain any `flag` in `note`. The owner sets `owner`. No statement, `read` date or `sourcesRead` changes.
+4. Run `bun run check:scholarship`.
+
+An accepted #96 candidate becomes a comment on #96 with the quote, Speaker, Episode and timestamp.
+
+### 6. Create guest pages
 
 If the pipeline succeeded and the episode has a guest, follow the `create-guest-page` skill (`.claude/skills/create-guest-page/SKILL.md`) for each guest. Do not ask before starting.
 
@@ -89,7 +111,7 @@ Before you create a page, run `bun run guest-page:gather -- "<name>"`. If the ou
 
 Do this step even when Step 4 stopped early. The guest page does not depend on segment labels.
 
-### 6. Report the result
+### 7. Report the result
 
 - report whether processing succeeded or failed
 - include the processed episode title and transcript path when available
@@ -97,6 +119,7 @@ Do this step even when Step 4 stopped early. The guest page does not depend on s
 - list each verified segment, the transcript line that confirms it, and any type you corrected
 - include the save script's review summary of labels and summaries, or the reason you stopped
 - for each guest, report the guest page you created, or that one already existed
+- per Scholarship Page, each candidate Trigger Claim (quote, Speaker, timestamp) with the `watch` term that found it, or "no candidates"; #96 candidates under their own heading
 
 ## Important constraints
 
@@ -116,3 +139,4 @@ Do this step even when Step 4 stopped early. The guest page does not depend on s
 - `src/scripts/verify-segments.ts`
 - `src/scripts/save-segment-results.ts`
 - `.claude/skills/create-guest-page/SKILL.md`
+- `hugo/content/scholarship/`, `hugo/data/scholarship/triggers/`, `data/scholarship-reviews/`
