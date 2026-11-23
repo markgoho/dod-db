@@ -8,7 +8,22 @@ related:
   books: [exodus]
   tags: [moses]
   topics: []
-watch: [Moses, Exodus, Sargon, Song of the Sea]
+watch:
+  [
+    Moses,
+    Exodus,
+    Sargon,
+    Song of the Sea,
+    Merneptah,
+    Hyksos,
+    Red Sea,
+    Reed Sea,
+    yam suph,
+    "600,000",
+    2 million,
+    Pithom,
+    Rameses,
+  ]
 statements:
   - id: evidence
     group: "The evidence outside the Bible"
@@ -50,6 +65,40 @@ statements:
         locator: "section “Exodus and History”"
         quote: "the abundant Egyptian historical records recount no mention of these events or figures."
         read: 2026-11-22
+      - source: kaltner-2017-egypt
+        locator: "section “Is Israel mentioned in Egyptian sources?”"
+        quote: "in all of their annals there is not one reference to the exodus or the events and individuals associated with it in the Bible. That includes Moses"
+        read: 2026-11-23
+  - id: merneptah
+    group: "The evidence outside the Bible"
+    question: "What is the earliest mention of Israel outside the Bible?"
+    short: "An Egyptian stela of Pharaoh Merneptah, from the late 13th century BCE."
+    text: "The earliest reference to Israel outside the Bible is the Merneptah Stela, an Egyptian inscription from the late thirteenth century BCE. It names Israel as a group of people rather than a place, and suggests that a people known as Israel was in Canaan by the end of that century. It does not say whether they arrived there after an exodus from Egypt, or how long they had been there."
+    cites:
+      - source: meyers-2005-exodus
+        locator: "p. 5"
+        quote: "Beginning with the Merneptah Stela, a late thirteenth-century bce Egyptian inscription that contains the earliest extrabiblical reference to ancient Israel"
+        read: 2026-11-23
+      - source: hayes-rlst145-l7
+        locator: "ch. 3 [00:10:06]"
+        quote: "Now, this is a fabulously important inscription, because it's the earliest known reference outside the Bible to any person or entity that is mentioned in the Bible, and it suggests that a people known as Israel was indeed in the land of Canaan by the end of the thirteenth century BCE."
+        read: 2026-11-23
+      - source: kaltner-2017-egypt
+        locator: "section “Is Israel mentioned in Egyptian sources?”"
+        quote: "This stela dates to approximately 1208 B.C.E., and it is important because it contains the earliest reference to Israel outside the Bible."
+        read: 2026-11-23
+      - source: kaltner-2017-egypt
+        locator: "section “Is Israel mentioned in Egyptian sources?”"
+        quote: "the name is identified as a group of people and not, as the others on the list, a place."
+        read: 2026-11-23
+      - source: hayes-rlst145-l7
+        locator: "ch. 3 [00:10:06]"
+        quote: "Whether they arrived there after an exodus from Egypt is not of course indicated."
+        read: 2026-11-23
+      - source: kaltner-2017-egypt
+        locator: "section “Is Israel mentioned in Egyptian sources?”"
+        quote: "It sheds no light on how they got there or how long they had been there"
+        read: 2026-11-23
   - id: history
     group: "How scholars read the account"
     question: "Do scholars read biblical narratives like Exodus as straightforward history?"
@@ -74,6 +123,132 @@ statements:
         locator: "section “Implications for Our Study”"
         quote: "Although the accounts of the Exodus may not preserve the historical details of this event accurately, it certainly appears that some sort of exodus occurred in Israel’s history."
         read: 2026-11-22
+  - id: core
+    group: "How scholars read the account"
+    question: "What might lie behind the story?"
+    short: "Some scholars suggest a much smaller escape by a small group."
+    text: "Some scholars think the story may have grown from a much smaller event. The chapter summary for Coogan and Chapman's introductory textbook suggests that at the heart of the traditions may lie a less grand story of a small band of escapees under Moses, who lost the pursuing Egyptian chariots in the mud of the “Reed Sea”. Christine Hayes reports that some scholars think the circumstantial evidence from Egypt lends plausibility to a story of slaves working on building projects who escaped. Carol Meyers judges that such analogues suggest a core of reality, although there is no specific historical grounding for the biblical account."
+    cites:
+      - source: coogan-brief-4e-summary
+        locator: "section “Events at the Sea”"
+        quote: "what may lie at the heart of these traditions is a less grand story that features a small band of escapees under Moses who lost the pursuing Egyptian chariots in the mud of the “Reed Sea.”"
+        read: 2026-11-23
+      - source: hayes-rlst145-l7
+        locator: "ch. 3 [00:10:06]"
+        quote: "There is a lot of circumstantial evidence, and some scholars think that that lends plausibility to a story of slaves working on building projects who escape from Egypt at this time"
+        read: 2026-11-23
+      - source: meyers-2005-exodus
+        locator: "p. 10"
+        quote: "Although there is no specific historical grounding for the biblical account of descent, sojourn, and departure, these analogues suggest a core of reality."
+        read: 2026-11-23
+  - id: date
+    group: "Dates, numbers and places"
+    question: "When did the Exodus happen, if it happened?"
+    short: "There is no consensus; proposals run from the 16th to the early 12th century BCE."
+    text: "Proposed dates range from the sixteenth to the early twelfth centuries BCE, with strong proponents but no consensus or prospect of resolution. The Bible's own chronology puts the Exodus in the mid-fifteenth century BCE, but that date seems to rest on literary and numerical artistry: the 480 years from the Exodus to Solomon's Temple is an ideal number. A theory going back to the first-century historian Josephus ties the Exodus to the expulsion of the Semitic Hyksos rulers of Egypt in the mid-sixteenth century BCE, but there is no trace of Israel in Canaan in that period. If the Exodus is accepted as historical, the chapter summary for Coogan and Chapman's introductory textbook judges the thirteenth century BCE the most reasonable date, partly because the Merneptah Stela mentions Israel then. Christine Hayes's Yale lecture likewise gives the thirteenth century as the most plausible backdrop if there is any historical basis to the Exodus."
+    cites:
+      - source: meyers-2005-exodus
+        locator: "p. 8"
+        quote: "there are strong proponents, with no consensus or prospects for resolution, of dates ranging from the sixteenth to the early twelfth centuries bce."
+        read: 2026-11-23
+      - source: coogan-brief-4e-summary
+        locator: "section “Exodus and History”"
+        quote: "Internally, the Bible dates the Exodus to the mid-fifteenth century BCE. However, this date is problematic, as it seems to be based on literary and numerical artistry."
+        read: 2026-11-23
+      - source: hayes-rlst145-l7
+        locator: "ch. 3 [00:10:06]"
+        quote: "It places the Exodus 480 years before Solomon's building of the Temple: 480 is a multiple of 12, and the Bible really likes multiples of 12, so it is an ideal number."
+        read: 2026-11-23
+      - source: coogan-brief-4e-summary
+        locator: "section “Exodus and History”"
+        quote: "Another theory goes back as far as the first-century CE historian Josephus, who suggested that the Exodus coincided with the expulsion of the Semitic Hyksos rulers of Egypt in the mid-sixteenth century BCE. There are also problems with this chronology, including the fact that there is no trace of Israel in Canaan during this period."
+        read: 2026-11-23
+      - source: coogan-brief-4e-summary
+        locator: "section “Exodus and History”"
+        quote: "If we accept the Exodus as a historical event, then it is necessary to establish some sort of plausible date."
+        read: 2026-11-23
+      - source: coogan-brief-4e-summary
+        locator: "section “Exodus and History”"
+        quote: "The most reasonable date is the thirteenth century BCE, both because it fits the historical record most suitably and because Israel is mentioned in the thirteenth-century Egyptian Merneptah stela as a nation in Canaan."
+        read: 2026-11-23
+      - source: hayes-rlst145-l7
+        locator: "ch. 3 [00:10:06]"
+        quote: "if there's any historical basis to the Exodus, then the most plausible time, the most plausible backdrop would be the thirteenth century BCE."
+        read: 2026-11-23
+  - id: numbers
+    group: "Dates, numbers and places"
+    question: "Did 600,000 men leave Egypt?"
+    short: "Outside fundamentalist readings, the figure is widely regarded as highly implausible."
+    text: "Exodus 12:37 counts about 600,000 men on foot, not counting children, and the census in Numbers 1:46 gives 603,550, figures that imply a population of well over two million. Outside fundamentalist readings of the Torah, the figure is widely regarded as highly implausible. Its improbability, together with the absence of corroborating evidence in Egyptian sources, has led many biblical scholars who no longer accept the traditional view either to treat the narrative as fictional or the numbers as later projections or exaggerations, or to reinterpret the figures, for example by reading the Hebrew elef (“thousand”) as a clan, family or military unit. The chapter summary for Coogan and Chapman's introductory textbook describes the Exodus as a migration not of thousands or millions of people but of a few hundred."
+    cites:
+      - source: krajewski-2026-israelites-number
+        locator: "Abstract"
+        quote: "The traditionally accepted figure of 600,000 men departing Egypt during the Exodus is widely regarded as highly implausible by non-fundamentalist readers of the Torah."
+        read: 2026-11-23
+      - source: krajewski-2026-israelites-number
+        locator: "§ 1, “Presenting the Problem”"
+        quote: "These figures imply a total Israelite population well exceeding two million."
+        read: 2026-11-23
+      - source: krajewski-2026-israelites-number
+        locator: "§ 1, “Presenting the Problem”"
+        quote: "The striking improbability of such numbers, together with the absence of corroborating evidence in Egyptian sources, has led many biblical scholars who no longer accept the traditional view to adopt one of two positions. Some treat the Exodus narrative as fictional or at least regard the numerical data contained in the Torah as later projections or rhetorical “Eastern” exaggerations intended to magnify the significance of the event."
+        read: 2026-11-23
+      - source: krajewski-2026-israelites-number
+        locator: "§ 1, “Presenting the Problem”"
+        quote: "Others seek to reinterpret the figures."
+        read: 2026-11-23
+      - source: krajewski-2026-israelites-number
+        locator: "§ 1, “Presenting the Problem”"
+        quote: "Elef may refer to a clan, family, or military unit"
+        read: 2026-11-23
+      - source: coogan-brief-4e-summary
+        locator: "section “Exodus and History”"
+        quote: "Here we find that the Exodus was a migration not of thousands (if not millions) of people but of a few hundred"
+        read: 2026-11-23
+  - id: sea
+    group: "Dates, numbers and places"
+    question: "Was the sea of the Exodus the Red Sea?"
+    short: "There is no clear answer, and its Hebrew name does not mean “Red Sea”."
+    text: "The sea's Hebrew name, yam suph, is not accurately translated “Red Sea”: suph may mean “reed”, and the name is often rendered “Sea of Reeds”. The English name goes back to a name that ancient Greek geographers used. It is not certain which body of water the Exodus story means. Some biblical writers placed the crossing at or near the Red Sea and others at a different sea, real or imagined, and like virtually all the place names in the Exodus account, the sea escapes positive identification."
+    cites:
+      - source: yoo-2021-red-sea
+        locator: "opening section, before the heading “Red, Reed, or End Sea?”"
+        quote: "Red Sea, however, is not an accurate translation for Hebrew yam suph."
+        read: 2026-11-23
+      - source: hayes-rlst145-l8
+        locator: "ch. 2 [00:06:51]"
+        quote: "It isn't the Red Sea. That's a mistranslation that occurred very, very early on"
+        read: 2026-11-23
+      - source: yoo-2021-red-sea
+        locator: "opening section, before the heading “Red, Reed, or End Sea?”"
+        quote: "While yam means “sea,” suph may mean “reed”"
+        read: 2026-11-23
+      - source: harpercollins-2009-dictionary
+        locator: "entry “Red Sea”"
+        quote: "The Hebrew term that is often translated “Red Sea” in English Bibles is yam suph, literally “Sea of Reeds.”"
+        url: "https://www.bibleodyssey.org/dictionary/red-sea/"
+        read: 2026-11-23
+      - source: yoo-2021-red-sea
+        locator: "opening section, before the heading “Red, Reed, or End Sea?”"
+        quote: "The name Red Sea can be traced to a name that ancient Greek geographers gave to a vast sea that runs from both northern inlets of the Red Sea to the Indian Ocean"
+        read: 2026-11-23
+      - source: harpercollins-2009-dictionary
+        locator: "entry “Red Sea”"
+        quote: "It is not certain whether this or some other body of water is meant by references in the exodus story."
+        url: "https://www.bibleodyssey.org/dictionary/red-sea/"
+        read: 2026-11-23
+      - source: yoo-2021-red-sea
+        locator: "section “Red, Reed, or End Sea?”, last paragraph"
+        quote: "Some biblical writers believed that the Israelites crossed at or near the Red Sea, but others placed this important event at a completely different sea, either real or imagined."
+        read: 2026-11-23
+      - source: yoo-2021-red-sea
+        locator: "section “Red, Reed, or End Sea?”, last paragraph"
+        quote: "There is no clear answer to the question on whether or not the Red Sea is the sea of the exodus."
+        read: 2026-11-23
+      - source: meyers-2005-exodus
+        locator: "p. 6"
+        quote: "virtually all of the toponyms (place names) mentioned in the exodus account, including the land of Goshen, the store cities of Pithom and Rameses, the Red (or Reed) Sea, and even Sinai itself (for which as many as sixteen different possibilities have been proposed) escape positive identification despite the best efforts of generations of explorers."
+        read: 2026-11-23
   - id: sargon
     group: "The story's literary background"
     question: "Does the story of Moses's birth have an ancient parallel?"

@@ -195,3 +195,59 @@ martin-rlst152-l24:
   url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-24"
   hostAuthored: false
   tradition: null
+
+kaltner-2017-egypt:
+  author: "John Kaltner"
+  title: "Egypt"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/egypt/"
+  hostAuthored: false
+  tradition: null
+
+yoo-2021-red-sea:
+  author: "Philip Y. Yoo"
+  title: "Red Sea"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2021
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/red-sea/"
+  hostAuthored: false
+  tradition: null
+
+harpercollins-2009-dictionary:
+  author: "Mark Allan Powell (ed.)"
+  title: "HarperCollins Bible Dictionary"
+  series: null
+  publisher: "HarperOne"
+  year: 2009
+  edition: "Abridged ed."
+  class: Reference
+  kind: book
+  access: "Entries reproduced on the Society of Biblical Literature's Bible Odyssey, open"
+  url: "https://www.bibleodyssey.org/dictionary/"
+  hostAuthored: false
+  tradition: null
+
+krajewski-2026-israelites-number:
+  author: "Stanisław Krajewski"
+  title: "On Some Arguments Regarding the Number of Israelites During the Exodus and Their Relevance"
+  series: "Religions 17, no. 6: 737"
+  publisher: "MDPI"
+  year: 2026
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article; opens in a browser, refuses scripted requests"
+  url: "https://www.mdpi.com/2077-1444/17/6/737"
+  hostAuthored: false
+  tradition: null
