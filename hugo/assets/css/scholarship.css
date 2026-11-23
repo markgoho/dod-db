@@ -180,9 +180,9 @@
 
 /* Literal length: container conditions cannot read custom properties. */
 @container scholarship-sources (width < 40rem) {
+  /* Rows (.scholarship-source) become grids below; everything else blocks. */
   .scholarship-sources__table,
   .scholarship-sources__table tbody,
-  .scholarship-sources__table tr,
   .scholarship-sources__table td {
     display: block;
   }
