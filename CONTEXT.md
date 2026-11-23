@@ -132,6 +132,22 @@ _Avoid_: Featured episode, featured segment
 An excerpt from a **Transcript** used as evidence on a **Topic Page**.
 _Avoid_: Quote
 
+**Synthesis Page**:
+A public page that states conclusions about a subject across **Episodes**, prompted by **Trigger Claims** and backed by **External Sources**.
+_Avoid_: Taxonomy Page
+
+**Scholarship Page**:
+A **Synthesis Page** on one subject that lists questions about it, each answered from **External Sources**.
+_Avoid_: Consensus page
+
+**Trigger Claim**:
+A **Speaker**'s assertion in a **Transcript** that prompts a **Synthesis Page** and sets its subject.
+_Avoid_: Consensus claim, source
+
+**External Source**:
+A work outside the show cited by a **Synthesis Page**, classed as Scholarly, Reference, or Tradition.
+_Avoid_: Link
+
 ## Relationships
 
 - The **Canonical Feed** defines which main episodes count as **Episodes** and their **Episode Numbers**; see [ADR 0001](docs/adr/0001-rss-feed-defines-episode-identity.md).
@@ -161,6 +177,17 @@ _Avoid_: Quote
 - A **Topic Page** can include **Transcript Quotes** as evidence.
 - A **Tag** can become a **Topic** when it becomes central to a **Segment**.
 - **Topics**, **Tags**, **Segments**, and **Scripture References** should be grounded in **Transcript** evidence.
+- A **Synthesis Page** exists only for a subject with at least one **Trigger Claim**; its statements are backed by **External Sources**, never by a **Transcript** alone.
+- A **Trigger Claim** gates a **Synthesis Page** and its subject, not each statement on it.
+- A Tradition **External Source** supports only what a tradition holds, never what scholars think.
+- A **Synthesis Page** names the tradition a Tradition **External Source** speaks for in that source's own words, never as "the traditional view".
+- A **Synthesis Page** reports what **External Sources** say; it gives no advice and addresses no particular reader.
+- A **Synthesis Page** is the archive's own work, not the show's; a **Trigger Claim** is shown apart from the page's statements, and a **Host** is never its authority.
+- A **Host**'s published work can be an **External Source**, but never the only one behind a **Synthesis Page**'s core claim.
+- **Synthesis Pages** come in two kinds: **Scholarship Pages** and the timeline.
+- A **Scholarship Page** is published only when two or more independent **External Sources**, at least one Scholarly or Reference, back its core claim and it makes three or more statements.
+- A new **Episode** can add a **Trigger Claim** to a **Synthesis Page** or suggest a new subject; it never changes a statement.
+- A **Synthesis Page** shows the date its **External Sources** were read; its statements change only when the owner re-reviews it.
 - **Guest Speaker** names should be normalized consistently across **Episodes** and **Taxonomy Pages**.
 
 ## Example dialogue
