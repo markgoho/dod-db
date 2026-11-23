@@ -1,12 +1,6 @@
 {{- $registry := index hugo.Data "external-sources" -}}
-{{- $sourceIds := slice -}}
-{{- range .Params.statements -}}
-  {{- range .cites -}}
-    {{- $sourceIds = $sourceIds | append .source -}}
-  {{- end -}}
-{{- end -}}
 {{- $citations := slice -}}
-{{- range $sourceIds | uniq -}}
+{{- range partial "scholarship-source-ids.html" . -}}
   {{- with index $registry . -}}
     {{- $work := dict "@type" "CreativeWork" "name" .title -}}
     {{- with .url -}}

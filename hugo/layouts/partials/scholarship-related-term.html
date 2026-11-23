@@ -1,0 +1,9 @@
+{{- /*
+  The one rule matching a Scholarship Page's `related` entry to a term page.
+  Takes a dict:
+  taxonomy  "books", "tags" or "topics" (the `related` key)
+  term      one entry from that list
+  Returns the term page, or nil when the site has none.
+  */
+-}}
+{{- return site.GetPage (printf "/%s/%s" .taxonomy (urlize .term)) -}}

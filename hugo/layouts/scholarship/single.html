@@ -18,13 +18,12 @@
   {{ end }}
   {{ $triggerEpisodes = $triggerEpisodes | uniq }}
 
+  {{ $sourceIds := partial "scholarship-source-ids.html" . }}
   {{ $groups := slice }}
-  {{ $sourceIds := slice }}
   {{ $sourceRead := dict }}
   {{ range $p.statements }}
     {{ $groups = $groups | append .group }}
     {{ range $cite := .cites }}
-      {{ $sourceIds = $sourceIds | append $cite.source }}
       {{ with $cite.read }}
         {{ $read := time.Format "2006-01-02" . }}
         {{ $prev := index $sourceRead $cite.source | default "" }}
@@ -35,7 +34,6 @@
     {{ end }}
   {{ end }}
   {{ $groups = $groups | uniq }}
-  {{ $sourceIds = $sourceIds | uniq }}
 
 
   <article class="scholarship-page">
@@ -139,19 +137,11 @@
     </section>
 
     {{ $archive := slice }}
-    {{ range $p.related.books }}
-      {{ with site.GetPage (printf "/books/%s" .) }}
-        {{ $archive = $archive | append . }}
-      {{ end }}
-    {{ end }}
-    {{ range $p.related.tags }}
-      {{ with site.GetPage (printf "/tags/%s" .) }}
-        {{ $archive = $archive | append . }}
-      {{ end }}
-    {{ end }}
-    {{ range $p.related.topics }}
-      {{ with site.GetPage (printf "/topics/%s" .) }}
-        {{ $archive = $archive | append . }}
+    {{ range $taxonomy := slice "books" "tags" "topics" }}
+      {{ range index ($p.related | default dict) $taxonomy }}
+        {{ with partial "scholarship-related-term.html" (dict "taxonomy" $taxonomy "term" .) }}
+          {{ $archive = $archive | append . }}
+        {{ end }}
       {{ end }}
     {{ end }}
     {{ with $archive }}

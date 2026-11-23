@@ -4,9 +4,9 @@
   */
 -}}
 {{- $s := . -}}
-{{- $lead := "" -}}
+{{- $authorPrefix := "" -}}
 {{- with $s.author -}}
-  {{- $lead = printf "%s, " . -}}
+  {{- $authorPrefix = printf "%s, " . -}}
 {{- end -}}
 {{- $tail := slice -}}
 {{- with $s.series }}{{ $tail = $tail | append . }}{{ end -}}
@@ -21,4 +21,4 @@
 {{- with $imprint -}}
   {{- $after = printf "%s (%s)" $after (delimit . ", ") -}}
 {{- end -}}
-{{- $lead -}}<cite>{{ $s.title }}</cite>{{- $after -}}
+{{- $authorPrefix -}}<cite>{{ $s.title }}</cite>{{- $after -}}

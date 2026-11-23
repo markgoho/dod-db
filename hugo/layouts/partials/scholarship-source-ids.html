@@ -1,0 +1,20 @@
+{{- /*
+  Returns a Scholarship Page's cited External Source ids, unique, in first-cited
+  order. Takes the page. Fails the build on an id missing from
+  hugo/data/external-sources.yaml, so no consumer renders an empty source.
+  */
+-}}
+{{- $registry := index hugo.Data "external-sources" -}}
+{{- $ids := slice -}}
+{{- range .Params.statements -}}
+  {{- range .cites -}}
+    {{- $ids = $ids | append .source -}}
+  {{- end -}}
+{{- end -}}
+{{- $ids = $ids | uniq -}}
+{{- range $ids -}}
+  {{- if not (index $registry .) -}}
+    {{- errorf "%s: unknown External Source %q (not in hugo/data/external-sources.yaml)" $.File.Path . -}}
+  {{- end -}}
+{{- end -}}
+{{- return $ids -}}

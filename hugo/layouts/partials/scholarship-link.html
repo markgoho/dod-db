@@ -1,7 +1,8 @@
 {{- /*
   The only copy of the #91 inbound link line. Takes a Scholarship Page. Every
   inbound link to a Scholarship Page renders through this partial, so the
-  not-the-show line is always beside the title (#90).
+  not-the-show line (scholarship-not-the-show.html) is always beside the
+  title (#90).
   */
 -}}
-{{- printf `<a href="%s"><strong>%s</strong></a> · Scholarship Page: the site’s summary of outside scholarship, not the show’s work.` .RelPermalink (.Title | htmlEscape) | safeHTML -}}
+{{- printf `<a href="%s"><strong>%s</strong></a> · Scholarship Page: %s.` (.RelPermalink | htmlEscape) (.Title | htmlEscape) (partial "scholarship-not-the-show.html" .) | safeHTML -}}

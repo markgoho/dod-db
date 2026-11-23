@@ -3,18 +3,21 @@
   dict:
   page      the Book, Tag or Topic term page
   taxonomy  "books", "tags" or "topics" (the `related` key)
-  A term matches by its URL slug. Draft pages are not built without -D.
+  A term matches by scholarship-related-term.html. Draft pages are not built
+  without -D.
   */
 -}}
-{{- $slug := path.Base .page.RelPermalink -}}
+{{- $term := .page -}}
 {{- $taxonomy := .taxonomy -}}
 {{- $pages := slice -}}
 {{- with site.GetPage "/scholarship" -}}
   {{- range .RegularPages.ByTitle -}}
     {{- $page := . -}}
     {{- range index (.Params.related | default dict) $taxonomy -}}
-      {{- if eq (urlize .) $slug -}}
-        {{- $pages = $pages | append $page -}}
+      {{- with partial "scholarship-related-term.html" (dict "taxonomy" $taxonomy "term" .) -}}
+        {{- if eq .RelPermalink $term.RelPermalink -}}
+          {{- $pages = $pages | append $page -}}
+        {{- end -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}

@@ -11,8 +11,7 @@
         <p>{{ .Params.intro }}</p>
         <p>
           <strong
-            >Each Scholarship Page is the site’s summary of outside scholarship,
-            not the show’s work.</strong
+            >{{ printf "Each Scholarship Page is %s." (partial "scholarship-not-the-show.html" .) }}</strong
           >
           <a href="/about/#scholarship-pages">How Scholarship Pages are made</a>
         </p>
