@@ -1,2 +1,5 @@
 # Hugo shortcodes - prevent Prettier from breaking template syntax
 hugo/layouts/shortcodes/**/*.html
+
+# Agent worktrees are separate checkouts with their own configs
+.claude/worktrees/

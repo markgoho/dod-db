@@ -9,7 +9,7 @@
     "tools": "bash src/scripts/start-tools.sh",
     "tools:api": "bun run src/scripts/tools-server.ts",
     "typecheck": "tsc --noEmit --project tsconfig.json",
-    "lint": "oxlint . '!functions/**'",
+    "lint": "oxlint src tools experiments hugo",
     "format:prettier": "prettier --write \"hugo/**/*.html\"",
     "format": "bun fmt && bun run format:prettier",
     "format:check:prettier": "prettier --check \"hugo/**/*.html\"",
