@@ -132,25 +132,21 @@ citations:
     }
   numbers/1:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Krajewski 2026, abstract. Scope is “non-fundamentalist readers of the Torah”, not scholars; short answer and statement keep it (“outside fundamentalist readings”). Flag: source class (see sources).",
+      note: "Coogan ch. 9 summary, section “Census and Arrangement of the Camp”, read 2026-11-23. Names Exodus 12.37 as an inflated count; “often” kept. Short answer and statement attribute to the chapter summaries, not the textbook. The summary gives no figure; 600,000 appears only in the question.",
     }
-  numbers/2: { agent: flag, owner: "", note: "Krajewski § 1; source class." }
-  numbers/3:
-    {
-      agent: flag,
-      owner: "",
-      note: "Krajewski § 1; “many biblical scholars who no longer accept the traditional view” kept with its qualifier. Source class.",
-    }
-  numbers/4: { agent: flag, owner: "", note: "Krajewski § 1; source class." }
-  numbers/5: { agent: flag, owner: "", note: "Krajewski § 1; source class." }
-  numbers/7: { agent: flag, owner: "", note: "Krajewski § 1; source class." }
-  numbers/6:
+  numbers/2:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary, section “Exodus and History”, paragraph after the dating paragraph. Attributed to the summary in the statement.",
+      note: "Coogan ch. 9 summary, same paragraph, next sentence. “no reasonable interpretation … has ever been presented” and “it is possible” both kept. “P, the Priestly writer” glosses the summary's bare “P” (its Documentary Hypothesis source).",
+    }
+  numbers/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan ch. 6 summary, section “Exodus and History”, paragraph after the dating paragraph. Was numbers/6.",
     }
   sea/1:
     {
@@ -241,7 +237,7 @@ triggers:
     {
       agent: flag,
       owner: "",
-      note: "Extended 2026-11-23 by two sentences (“more than 2 million … impossible numbers”) for the numbers statement; same turn, so a second card would collide on this key. The show says “impossible”, the page “highly implausible” (#86: gap left unexplained).",
+      note: "Extended 2026-11-23 by two sentences (“more than 2 million … impossible numbers”) for the numbers statement; same turn, so a second card would collide on this key. The show says “impossible”, the page “inflated” and “unrealistically high” (#86: gap left unexplained). The show's “more than 2 million” has no cited counterpart since Krajewski was dropped.",
     }
   116@00:21:02: { agent: pass, owner: "", note: "" }
   187@00:41:56:
@@ -255,13 +251,13 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "11 statements (6 + 5 added 2026-11-23). Core (evidence) unchanged: Meyers (Scholarly), Coogan summary (Reference), Hayes l7 (Reference). Fallbacks if Bible Odyssey or Krajewski is ruled out: merneptah keeps Meyers p. 5 and Hayes l7, but loses “a group of people rather than a place” and “how long they had been there” (Kaltner only). numbers loses its question's answer: the short answer and all but the Coogan sentence rest on Krajewski, so it would need rewording or cutting. sea loses “no clear answer” and “cannot mean ‘red’” (Yoo only) and would fall back to Hayes l8, HarperCollins (“not certain”) and Meyers p. 6, with the short answer reworded. moses keeps moses/1–2. date and band use no new source.",
+      note: "11 statements (6 + 5 added 2026-11-23). Core (evidence) unchanged: Meyers (Scholarly), Coogan summary (Reference), Hayes l7 (Reference). Fallbacks if Bible Odyssey or Krajewski is ruled out: merneptah keeps Meyers p. 5 and Hayes l7, but loses “a group of people rather than a place” and “how long they had been there” (Kaltner only). numbers rests on the two Coogan summaries (ch. 9 and ch. 6, one author pair, Reference); if they are ruled out it has no citation and is cut. sea loses “no clear answer” and “cannot mean ‘red’” (Yoo only) and would fall back to Hayes l8, HarperCollins (“not certain”) and Meyers p. 6, with the short answer reworded. moses keeps moses/1–2. date and band use no new source.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "“no consensus” in date is Meyers's own; “widely regarded” in numbers is Krajewski's, with his scope; “many biblical scholars” keeps his qualifier.",
+      note: "“no consensus” in date is Meyers's own; numbers makes no field-state claim (“widely regarded”, “many biblical scholars” went with Krajewski).",
     }
   dissent-attributed: { agent: pass, owner: "", note: "" }
   tradition-named:
@@ -308,12 +304,12 @@ sources:
       edition: "Abridged ed., HarperOne 2009 (as cited on each Bible Odyssey entry)",
       note: "Bible dictionary, so Reference by #80. Flag: read on SBL's reproduction, not the book, and the edition is from Bible Odyssey's credit line, not the publisher's catalogue (#93). Each citation's url points at its entry.",
     }
-  krajewski-2026-israelites-number:
+  coogan-brief-4e-summary-ch9:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      edition: "Religions 17(6): 737, published online 19 June 2026, doi 10.3390/rel17060737",
-      note: "Scholarly by venue (peer-reviewed open-access journal). Flags: MDPI's standing; the author is a philosopher, not a biblical scholar; the paper argues a theological position in its later sections (only the abstract and § 1 are cited). Read in a browser; MDPI refuses scripted requests.",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+      note: "Same textbook and edition as coogan-brief-4e-summary; chapter 9 (“In the Wilderness”) page. Same authors, so it adds no independent source.",
     }
 leads:
   - "Eerdmans Dictionary of the Bible, ed. David Noel Freedman (Eerdmans, 2000), p. 441: “In fact, there is no contemporary reference or description in any extrabiblical source.” Google Books snippet; not read in the source itself (#86). Was evidence/5 in the prototype."
@@ -321,8 +317,12 @@ leads:
   - "Collins and Eerdmans retried 2026-11-23 in a browser: Google Books showed the book's landing page, not p. 122 or p. 441. Still leads."
   - "HarperCollins Bible Dictionary (Bible Odyssey), “Other Unnamed Egyptian Kings”: the pharaoh of the exodus is “often identified by biblical scholars as Rameses II … or, somewhat less likely, his son and successor, Merenptah”. Could back the date statement; left off to keep it lean."
   - "Aaron Adair, “Counting on the Census Numbers”, HIPHIL Novum 10 (2025): the census numbers are “most likely artificial” (abstract). Author's affiliation is MIT Physics; venue not confirmed as peer-reviewed. Not cited."
+  - "Ben Zion Katz, “Recounting the Census: A Military Force of 5500”, TheTorah.com: title and search snippets only; author is a physician. Not read."
+  - "Colin J. Humphreys, “How Many People Were in the Exodus from Egypt?”, Science and Christian Belief 12.1, PDF on cis.org.uk: reads ’elep as a troop, about 20,000 people. Physicist; search snippet only. Not read."
 uncited:
   - "Jeffrey Stackert, “Moses”, Bible Odyssey (2016): “there is no external evidence from antiquity confirming that Moses was a real, historical person”. Read in full; not cited, because it is broader than the moses statement. Would back a reworded statement (and fits 21@00:28:28) if the owner wants one."
   - "John Huddlestun, “Was Moses' Name Egyptian?”, Bible Odyssey (2016): a 13th-century Moses in Egypt is a figure “many scholars are increasingly less inclined to accept”. Same author, “The Plagues of Egypt” (2022): naturalistic correlations “lack any support in ancient Egyptian records”. Read in full; no plagues statement on the page."
   - "Pithom and Rameses: Meyers p. 6 says they “escape positive identification”; Yoo and Hayes l7 identify Rameses with Pi-Ramesses, rebuilt in the 13th century. A statement would have to show the split, attributed."
   - "Hyksos: the Coogan summary (Josephus's exodus-as-expulsion) and Hayes l7 (the Hyksos era as the setting for Joseph and the descent; “really not well supported”) describe different theories. Only Coogan's is on the page, inside date. Ep 138 has a Taking Issue segment on the Hyksos (00:35:03–00:50:08; 00:48:06: “attempts to find Joseph, Jacob, the enslaved Hebrews, Moses, those folks in the Hyksos is misguided at best”) for a Hyksos statement."
+  - "Stanislaw Krajewski, “On Some Arguments Regarding the Number of Israelites During the Exodus and Their Relevance”, Religions 17(6): 737 (MDPI, 2026), abstract and § 1, read 2026-11-23 in a browser: the 600,000 figure is “widely regarded as highly implausible by non-fundamentalist readers of the Torah”; Numbers 1:46's 603,550; a population “well exceeding two million”; scholars treat the numbers as fiction or exaggeration or reread elef as a clan, family or military unit. Was numbers/1–5 and 7. Dropped 2026-11-23 for the Coogan ch. 9 summary: the author is a philosopher, not a biblical scholar, MDPI's standing is in question and the paper later argues a theological case. The page loses “widely regarded”, the two-million figure and the elef reading. An elef sentence would also sit beside Coogan's “no reasonable interpretation … has ever been presented”, so it would need attributing to Krajewski by name."
+  - "Zev Farber, “The Torah's Exodus”, TheTorah.com (2015, updated 2026), section “The Number of Israelites”, read in full 2026-11-23: “All historians agree that such a number could not have been supported in ancient Egypt”; rejects the eleph-as-clan reading because Exod 38:26 gives 603,550; reports Friedman's view that the numbers are an exaggeration, perhaps a few hundred. Author holds a PhD in Hebrew Bible (Emory). Not cited: TheTorah.com is a source type #86 didn't rule on (an edited online magazine of the Academic Torah Institute, close to the excluded blog class), and the essay ends in a religious argument. Would give numbers a second, independent author if the owner rules the site Reference."

@@ -174,36 +174,20 @@ statements:
   - id: numbers
     group: "Dates, numbers and places"
     question: "Did 600,000 men leave Egypt?"
-    short: "Outside fundamentalist readings, the figure is widely regarded as highly implausible."
-    text: "Exodus counts about 600,000 men leaving Egypt, and the census in Numbers 1:46 gives 603,550 men over twenty, figures that imply a population of well over two million. Outside fundamentalist readings of the Torah, the figure is widely regarded as highly implausible. Its improbability, together with the absence of corroborating evidence in Egyptian sources, has led many biblical scholars who no longer accept the traditional view either to treat the narrative as fictional or the numbers as later projections or exaggerations, or to reinterpret the figures, for example by reading the Hebrew elef (“thousand”) as a clan, family or military unit. The chapter summary for Coogan and Chapman's introductory textbook describes the Exodus as a migration not of thousands or millions of people but of a few hundred."
+    short: "The count is inflated; the census figures in Numbers are unrealistically high."
+    text: "The chapter summaries for Coogan and Chapman's introductory textbook treat the count of men leaving Egypt in Exodus 12:37 as an example of how the biblical writers often inflated census statistics, and call the population statistics in the censuses of Numbers likewise unrealistically high. The summary of the Numbers chapter says no reasonable interpretation for this inflation has ever been presented, though P, the Priestly writer, may have incorporated numbers from a variety of sources to show that the divine promise of descendants had been fulfilled. The summary of the Exodus chapter describes the Exodus as a migration not of thousands or millions of people but of a few hundred."
     cites:
-      - source: krajewski-2026-israelites-number
-        locator: "Abstract"
-        quote: "The traditionally accepted figure of 600,000 men departing Egypt during the Exodus is widely regarded as highly implausible by non-fundamentalist readers of the Torah."
+      - source: coogan-brief-4e-summary-ch9
+        locator: "section “Census and Arrangement of the Camp”"
+        quote: "As we have already seen in Exodus 12.37, the biblical writers often inflated census statistics; therefore it is not surprising that the population statistics found in Numbers are also unrealistically high."
         read: 2026-11-23
-      - source: krajewski-2026-israelites-number
-        locator: "§ 1, “Presenting the Problem”"
-        quote: "These figures imply a total Israelite population well exceeding two million."
-        read: 2026-11-23
-      - source: krajewski-2026-israelites-number
-        locator: "§ 1, “Presenting the Problem”"
-        quote: "The striking improbability of such numbers, together with the absence of corroborating evidence in Egyptian sources, has led many biblical scholars who no longer accept the traditional view to adopt one of two positions. Some treat the Exodus narrative as fictional or at least regard the numerical data contained in the Torah as later projections or rhetorical “Eastern” exaggerations intended to magnify the significance of the event."
-        read: 2026-11-23
-      - source: krajewski-2026-israelites-number
-        locator: "§ 1, “Presenting the Problem”"
-        quote: "Others seek to reinterpret the figures."
-        read: 2026-11-23
-      - source: krajewski-2026-israelites-number
-        locator: "§ 1, “Presenting the Problem”"
-        quote: "Elef may refer to a clan, family, or military unit"
+      - source: coogan-brief-4e-summary-ch9
+        locator: "section “Census and Arrangement of the Camp”"
+        quote: "Although no reasonable interpretation for this inflation has ever been presented, it is possible that P is incorporating numbers from a variety of sources in order to demonstrate that the divine promise of descendants had been fulfilled."
         read: 2026-11-23
       - source: coogan-brief-4e-summary
         locator: "section “Exodus and History”"
         quote: "Here we find that the Exodus was a migration not of thousands (if not millions) of people but of a few hundred"
-        read: 2026-11-23
-      - source: krajewski-2026-israelites-number
-        locator: "§ 1, “Presenting the Problem”"
-        quote: "In the Book of Numbers (1:46), the total number of males over twenty years of age—those “able to go forth to war” (1:20)—among those who left Egypt is given as 603,550."
         read: 2026-11-23
   - id: sea
     group: "Dates, numbers and places"
