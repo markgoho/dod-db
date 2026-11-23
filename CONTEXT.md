@@ -164,6 +164,10 @@ _Avoid_: Consensus claim, source
 A work outside the show cited by a **Synthesis Page**, classed as Scholarly, Reference, or Tradition.
 _Avoid_: Link
 
+**Lead**:
+A pointer to a passage in an **External Source** that has not been read in the source itself, such as a snippet or a quote found in another work. A Lead is never cited.
+_Avoid_: Citation, snippet source
+
 ## Relationships
 
 - The **Canonical Feed** defines which main episodes count as **Episodes** and their **Episode Numbers**; see [ADR 0001](docs/adr/0001-rss-feed-defines-episode-identity.md).
@@ -209,6 +213,8 @@ _Avoid_: Link
 - A **Scholarship Page** is published only when two or more independent **External Sources**, at least one Scholarly or Reference, back its core claim and it makes three or more statements.
 - A new **Episode** can add a **Trigger Claim** to a **Synthesis Page** or suggest a new subject; it never changes a statement.
 - A **Synthesis Page** shows the date its **External Sources** were read; its statements change only when the owner re-reviews it.
+- An **External Source** is described once and shared by every **Synthesis Page** that cites it.
+- A **Scholarship Page** is published only after the owner has opened every citation and checked every **Trigger Claim**; the agent's checks never stand in for that review.
 - **Guest Speaker** names should be normalized consistently across **Episodes** and **Taxonomy Pages**.
 
 ## Example dialogue
