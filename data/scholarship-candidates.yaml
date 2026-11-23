@@ -33,7 +33,7 @@ subjects:
   - slug: yahweh-origins
     subject: "Yahweh's origins and early Israelite religion"
     status: candidate
-    core: "Yahweh was originally a deity from the south (Shasu of Yhw), distinct from El."
+    core: "Yahweh and El were originally distinct deities."
     basis: "Inventory rank 4: 8 Episodes, 18 claims, all Hosts. The show marks several points as under discussion; a page must carry that hedging."
 
   - slug: new-testament-later-additions
@@ -107,7 +107,7 @@ subjects:
   - slug: asherah
     subject: "Asherah and Yahweh's consort"
     status: candidate
-    core: "Asherah was worshipped as Yahweh's consort in ancient Israel."
+    core: "Yahweh and Asherah were understood as a divine pair."
     basis: "Inventory short-page tier: 5 Episodes, 6 claims, no consensus-strength wording."
 
   - slug: flood-narrative
@@ -132,7 +132,7 @@ subjects:
   - slug: genesis-creation-accounts
     subject: "The creation accounts in Genesis"
     status: candidate
-    core: "Genesis 1 and Genesis 2-3 are two creation accounts from different sources."
+    core: "The first three chapters of Genesis hold two different creation stories."
     basis: "Inventory short-page tier: 2 Episodes on the core thesis (Ep 1, Ep 22); the cluster spans 8."
 
   - slug: creation-ex-nihilo
@@ -169,25 +169,25 @@ subjects:
   - slug: religion-as-a-modern-category
     subject: "Religion as a modern category"
     status: candidate
-    core: "'Religion' as a separate sphere of life is a modern category, not an ancient one."
+    core: "Religion as a distinct category did not exist in the ancient world."
     basis: "Inventory cluster: 3 Episodes, 3 claims."
 
   - slug: cult-prostitution
     subject: "Cult prostitution"
     status: candidate
-    core: "There is no evidence of sacred prostitution in the ancient Near East."
+    core: "There is no evidence that cult or sacred sex work took place."
     basis: "Inventory cluster: 2 Episodes (Ep 125, Ep 126), 3 claims."
 
   - slug: junia
     subject: "Junia"
     status: candidate
-    core: "Junia in Romans 16:7 was a woman called an apostle."
+    core: "The name Junia is feminine."
     basis: "Inventory cluster: 1 Episode (Ep 16), 3 claims, 2 consensus."
 
   - slug: easter-origins
     subject: "The origins of Easter"
     status: candidate
-    core: "There is no evidence that Easter derives from a goddess Ishtar or Eostre festival."
+    core: "No data support any relationship between Easter and Ishtar."
     basis: "Inventory cluster: 1 Episode (Ep 5), 5 claims."
 
   - slug: univocality
@@ -207,7 +207,7 @@ subjects:
   - slug: inspiration
     subject: "Inspiration of scripture"
     status: held
-    missing: "Trigger Claim. No Tag; read the Transcripts that match the watch terms (about 15)."
+    missing: "Trigger Claim. No Tag; read the 11 Transcripts that match the watch terms."
     basis: "#84: the dropped advisory guide becomes three held candidates."
     watch:
       [
