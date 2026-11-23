@@ -1,0 +1,18 @@
+review: 2026-12-03
+citations:
+  core/1: { agent: pass, owner: pass, note: "" }
+  core/2: { agent: pass, owner: pass, note: "" }
+  second/1: { agent: pass, owner: pass, note: "" }
+  tradition/1: { agent: pass, owner: "", note: "" }
+triggers:
+  21@00:25:18: { agent: pass, owner: pass, note: "" }
+rules:
+  publish-rule: { agent: pass, owner: pass, note: "" }
+  consensus-wording: { agent: pass, owner: pass, note: "" }
+  dissent-attributed: { agent: pass, owner: pass, note: "" }
+  tradition-named: { agent: pass, owner: pass, note: "" }
+sources:
+  scholarly-book: { agent: pass, owner: pass, edition: "2005" }
+  reference-lecture: { agent: pass, owner: pass, edition: "Fall 2006" }
+  tradition-guide: { agent: pass, owner: pass, edition: "2010" }
+leads: []

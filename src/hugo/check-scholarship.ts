@@ -1,0 +1,369 @@
+/**
+ * Validate Scholarship Pages and their data against the #92 rules.
+ *
+ * Usage: bun run check:scholarship
+ */
+
+import { Glob } from "bun";
+import path from "node:path";
+import { z } from "zod";
+
+const dateValue = z.union([z.string(), z.date()]);
+
+const CiteSchema = z.object({
+  source: z.string(),
+  locator: z.string(),
+  quote: z.string(),
+  url: z.string().optional(),
+  read: dateValue,
+});
+
+const StatementSchema = z.object({
+  id: z.string(),
+  group: z.string(),
+  question: z.string(),
+  short: z.string(),
+  text: z.string(),
+  cites: z.array(CiteSchema),
+});
+
+const PageSchema = z.object({
+  title: z.string(),
+  dek: z.string(),
+  draft: z.boolean().default(false),
+  core: z.string(),
+  sourcesRead: dateValue.nullish(),
+  related: z.object({
+    books: z.array(z.string()),
+    tags: z.array(z.string()),
+    topics: z.array(z.string()),
+  }),
+  watch: z.array(z.string()).optional(),
+  statements: z.array(StatementSchema),
+});
+
+const SourceSchema = z.object({
+  author: z.string().nullable(),
+  title: z.string(),
+  series: z.string().nullable(),
+  publisher: z.string().nullable(),
+  year: z.number().nullable(),
+  edition: z.string().nullable(),
+  class: z.enum(["Scholarly", "Reference", "Tradition"]),
+  kind: z.enum([
+    "book",
+    "article",
+    "publisher-summary",
+    "lecture",
+    "study-bible",
+    "trade-book",
+  ]),
+  access: z.string(),
+  url: z.string(),
+  hostAuthored: z.boolean(),
+  tradition: z.string().nullable(),
+});
+
+const RegistrySchema = z.record(z.string(), SourceSchema);
+
+const TriggerSchema = z.object({
+  episode: z.number().int(),
+  speaker: z.string(),
+  timestamp: z.string().regex(/^\d{2}:\d{2}:\d{2}(\.\d+)?$/),
+  text: z.string(),
+});
+
+const TriggersSchema = z.array(TriggerSchema);
+
+const ReviewItemSchema = z.object({
+  agent: z.string().optional(),
+  owner: z.string(),
+  note: z.string().optional(),
+  edition: z.string().optional(),
+});
+
+const ReviewSectionSchema = z.record(z.string(), ReviewItemSchema).default({});
+
+const ReviewSchema = z.object({
+  review: dateValue.nullish(),
+  citations: ReviewSectionSchema,
+  triggers: ReviewSectionSchema,
+  rules: ReviewSectionSchema,
+  sources: ReviewSectionSchema,
+  leads: z.array(z.string()).default([]),
+});
+
+const EpisodesSchema = z.array(
+  z.object({ episodeNumber: z.number().int().optional() }),
+);
+
+type Page = z.infer<typeof PageSchema>;
+type Registry = z.infer<typeof RegistrySchema>;
+type Trigger = z.infer<typeof TriggerSchema>;
+type Review = z.infer<typeof ReviewSchema>;
+
+const FRONTMATTER = /^---\n([\s\S]*?)\n---\n/;
+
+async function readYaml(filePath: string): Promise<unknown> {
+  return Bun.YAML.parse(await Bun.file(filePath).text());
+}
+
+async function readFrontmatter(filePath: string): Promise<unknown> {
+  const match = FRONTMATTER.exec(await Bun.file(filePath).text());
+  if (!match?.[1]) throw new Error("no front matter");
+  return Bun.YAML.parse(match[1]);
+}
+
+function rel(root: string, filePath: string): string {
+  return path.relative(root, filePath);
+}
+
+/** Parse with a schema; on failure, push one error per issue and return undefined. */
+function parseWith<T>(
+  schema: z.ZodType<T>,
+  value: unknown,
+  label: string,
+  errors: string[],
+): T | undefined {
+  const result = schema.safeParse(value);
+  if (result.success) return result.data;
+  for (const issue of result.error.issues) {
+    errors.push(
+      `${label}: ${issue.path.join(".") || "(root)"}: ${issue.message}`,
+    );
+  }
+  return undefined;
+}
+
+async function loadOptional(
+  filePath: string,
+  root: string,
+  errors: string[],
+  read: (p: string) => Promise<unknown>,
+): Promise<unknown> {
+  if (!(await Bun.file(filePath).exists())) {
+    errors.push(`${rel(root, filePath)}: file not found`);
+    return undefined;
+  }
+  try {
+    return await read(filePath);
+  } catch (error) {
+    errors.push(`${rel(root, filePath)}: ${(error as Error).message}`);
+    return undefined;
+  }
+}
+
+/** Review key for a Trigger Claim: `<episode>@HH:MM:SS`. */
+function triggerKey(trigger: Trigger): string {
+  return `${trigger.episode}@${trigger.timestamp.slice(0, 8)}`;
+}
+
+function checkPage(
+  slug: string,
+  page: Page,
+  registry: Registry,
+  triggers: Trigger[] | undefined,
+  review: Review | undefined,
+  episodes: Set<number>,
+): string[] {
+  const errors: string[] = [];
+  const at = `scholarship/${slug}`;
+
+  for (const statement of page.statements) {
+    for (const [index, cite] of statement.cites.entries()) {
+      if (!registry[cite.source]) {
+        errors.push(
+          `${at}: citation ${statement.id}/${index + 1} names unknown source "${cite.source}"`,
+        );
+      }
+    }
+  }
+
+  for (const trigger of triggers ?? []) {
+    if (!episodes.has(trigger.episode)) {
+      errors.push(
+        `${at}: Trigger Claim ${triggerKey(trigger)} names Episode ${trigger.episode}, not in data/processed-videos.json`,
+      );
+    }
+  }
+
+  const core = page.statements.find(s => s.id === page.core);
+  if (!core) errors.push(`${at}: core "${page.core}" names no statement`);
+
+  if (!page.draft) {
+    errors.push(...checkPublishRule(at, page, core, registry));
+  }
+
+  for (const statement of page.statements) {
+    const cited = new Set(statement.cites.map(c => c.source));
+    for (const id of cited) {
+      const source = registry[id];
+      if (source?.class !== "Tradition") continue;
+      const name = source.tradition ?? "";
+      if (!name || !statement.text.includes(name)) {
+        errors.push(
+          `${at}: statement "${statement.id}" cites Tradition source "${id}" but doesn't name "${name}"`,
+        );
+      }
+    }
+  }
+
+  if (!page.draft && review) {
+    errors.push(...checkOwnerPass(at, page, triggers ?? [], review));
+  }
+
+  return errors;
+}
+
+/** #84: ≥3 statements; core claim on ≥2 distinct sources, one Scholarly or Reference, not only Host-authored. */
+function checkPublishRule(
+  at: string,
+  page: Page,
+  core: Page["statements"][number] | undefined,
+  registry: Registry,
+): string[] {
+  const errors: string[] = [];
+  if (page.statements.length < 3) {
+    errors.push(
+      `${at}: publish rule: ${page.statements.length} statements; needs at least 3`,
+    );
+  }
+  if (!core) return errors;
+
+  const ids = [...new Set(core.cites.map(c => c.source))];
+  const sources = ids.flatMap(id => (registry[id] ? [registry[id]] : []));
+  const rule = `${at}: publish rule: core claim "${core.id}"`;
+  if (ids.length < 2) {
+    const noun = ids.length === 1 ? "source" : "sources";
+    errors.push(
+      `${rule} cites ${ids.length} distinct ${noun}; needs at least 2`,
+    );
+  }
+  if (!sources.some(s => s.class === "Scholarly" || s.class === "Reference")) {
+    errors.push(`${rule} cites no Scholarly or Reference source`);
+  }
+  if (sources.length > 0 && sources.every(s => s.hostAuthored)) {
+    errors.push(`${rule} cites only Host-authored sources`);
+  }
+  return errors;
+}
+
+/** #93: every citation, Trigger Claim, cited source and rule has `owner: pass`. */
+function checkOwnerPass(
+  at: string,
+  page: Page,
+  triggers: Trigger[],
+  review: Review,
+): string[] {
+  const errors: string[] = [];
+  const required: Record<"citations" | "triggers" | "sources", string[]> = {
+    citations: page.statements.flatMap(s =>
+      s.cites.map((_, index) => `${s.id}/${index + 1}`),
+    ),
+    triggers: triggers.map(triggerKey),
+    sources: [
+      ...new Set(page.statements.flatMap(s => s.cites.map(c => c.source))),
+    ],
+  };
+  for (const [section, keys] of Object.entries(required)) {
+    const entries = review[section as keyof typeof required];
+    for (const key of keys) {
+      if (!entries[key])
+        errors.push(`${at}: review has no ${section}.${key} entry`);
+    }
+  }
+  for (const section of [
+    "citations",
+    "triggers",
+    "rules",
+    "sources",
+  ] as const) {
+    for (const [key, item] of Object.entries(review[section])) {
+      if (item.owner !== "pass") {
+        errors.push(
+          `${at}: review ${section}.${key} has owner "${item.owner}", not pass`,
+        );
+      }
+    }
+  }
+  return errors;
+}
+
+/**
+ * Check every Scholarship Page under `root` (a repo checkout).
+ * Returns one message per problem; empty means the check passes.
+ */
+export async function checkScholarship(root: string): Promise<string[]> {
+  const errors: string[] = [];
+  const contentDir = path.join(root, "hugo/content/scholarship");
+  const registryPath = path.join(root, "hugo/data/external-sources.yaml");
+  const episodesPath = path.join(root, "data/processed-videos.json");
+
+  const registry =
+    parseWith(
+      RegistrySchema,
+      await loadOptional(registryPath, root, errors, readYaml),
+      rel(root, registryPath),
+      errors,
+    ) ?? {};
+
+  const episodeData = parseWith(
+    EpisodesSchema,
+    await loadOptional(episodesPath, root, errors, p => Bun.file(p).json()),
+    rel(root, episodesPath),
+    errors,
+  );
+  const episodes = new Set(
+    (episodeData ?? []).flatMap(e =>
+      e.episodeNumber === undefined ? [] : [e.episodeNumber],
+    ),
+  );
+
+  const pageFiles = await Array.fromAsync(
+    new Glob("*.md").scan({ cwd: contentDir }),
+  );
+  for (const file of pageFiles.filter(f => f !== "_index.md").toSorted()) {
+    const slug = file.replace(/\.md$/, "");
+    const pagePath = path.join(contentDir, file);
+    const triggersPath = path.join(
+      root,
+      `hugo/data/scholarship/triggers/${slug}.yaml`,
+    );
+    const reviewPath = path.join(root, `data/scholarship-reviews/${slug}.yaml`);
+
+    const page = parseWith(
+      PageSchema,
+      await loadOptional(pagePath, root, errors, readFrontmatter),
+      rel(root, pagePath),
+      errors,
+    );
+    const triggers = parseWith(
+      TriggersSchema,
+      await loadOptional(triggersPath, root, errors, readYaml),
+      rel(root, triggersPath),
+      errors,
+    );
+    const review = parseWith(
+      ReviewSchema,
+      await loadOptional(reviewPath, root, errors, readYaml),
+      rel(root, reviewPath),
+      errors,
+    );
+    if (!page) continue;
+
+    errors.push(...checkPage(slug, page, registry, triggers, review, episodes));
+  }
+
+  return errors;
+}
+
+if (import.meta.main) {
+  const root = path.resolve(import.meta.dir, "../..");
+  const errors = await checkScholarship(root);
+  if (errors.length > 0) {
+    for (const error of errors) console.error(`✗ ${error}`);
+    console.error(`\ncheck:scholarship failed: ${errors.length} problem(s)`);
+    process.exit(1);
+  }
+  console.log("✓ check:scholarship passed");
+}
