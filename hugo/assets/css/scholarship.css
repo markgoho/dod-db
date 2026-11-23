@@ -3,14 +3,14 @@
   cloud-section, page-hero, disclosure-summary, tag-hero__dek and quote-card
   (tag-quote); only what those lack lives here.
 
-  A Scholarship Page is read, not browsed: one column at copy width, so the
-  statements and citation quotes keep a comfortable measure.
+  A Scholarship Page is read, not browsed: one column at a 70ch measure, so
+  the statements and citation quotes keep a comfortable line length.
 */
 .scholarship-page {
   display: grid;
   gap: var(--space-xl);
   margin-inline: auto;
-  max-width: var(--content-max-width-copy);
+  max-width: var(--content-max-width-measure);
 }
 
 .scholarship-page p,
