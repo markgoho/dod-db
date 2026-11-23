@@ -37,6 +37,8 @@ export interface ProcessRssEpisodeResult {
     channelTitle: string;
   };
   skipped?: boolean;
+  /** Host-mapping guard notes from speaker ID; empty when nothing was off. */
+  speakerIdFlags?: string[];
 }
 
 export interface ProcessRssEpisodeOptions {
@@ -91,6 +93,7 @@ export async function processRssEpisode(
   const audioPath = path.join(youtubeConfig.audioDirectory, `${audioStem}.mp3`);
 
   let transcriptWithNames: string;
+  let speakerIdFlags: string[] = [];
 
   if (options.startFrom === "correct") {
     console.log("Starting from correction stage...");
@@ -118,10 +121,11 @@ export async function processRssEpisode(
     });
 
     console.log("Identifying speakers...");
-    const { transcript: identified } = await identifySpeakers(transcription, {
+    const identification = await identifySpeakers(transcription, {
       title: rssItem.title,
     });
-    transcriptWithNames = identified;
+    transcriptWithNames = identification.transcript;
+    speakerIdFlags = identification.speakerIdFlags;
 
     console.log("Saving raw transcript...");
     await writeToFile(rawPath, transcriptWithNames);
@@ -228,5 +232,6 @@ export async function processRssEpisode(
       publishedAt,
       channelTitle: "",
     },
+    speakerIdFlags,
   };
 }

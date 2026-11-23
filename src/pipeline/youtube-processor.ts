@@ -32,6 +32,8 @@ export interface ProcessYouTubeVideoResult {
   transcriptPath: string;
   metadata: VideoMetadata;
   skipped?: boolean;
+  /** Host-mapping guard notes from speaker ID; empty when nothing was off. */
+  speakerIdFlags?: string[];
 }
 
 export interface ProcessYouTubeVideoOptions {
@@ -271,6 +273,7 @@ export async function processYouTubeVideo(
   const rawPath = transcriptPath.replace(".txt", "-raw.txt");
 
   let transcriptWithNames: string;
+  let speakerIdFlags: string[] = [];
 
   if (options.startFrom === "correct") {
     // Resume from correction stage - load existing raw transcript
@@ -299,11 +302,12 @@ export async function processYouTubeVideo(
     });
 
     console.log("Identifying speakers...");
-    const { transcript: identified } = await identifySpeakers(transcription, {
+    const identification = await identifySpeakers(transcription, {
       title: metadata.title,
       description: metadata.description,
     });
-    transcriptWithNames = identified;
+    transcriptWithNames = identification.transcript;
+    speakerIdFlags = identification.speakerIdFlags;
 
     console.log("Saving raw transcript...");
     await writeToFile(rawPath, transcriptWithNames);
@@ -418,5 +422,6 @@ export async function processYouTubeVideo(
     videoId,
     transcriptPath,
     metadata,
+    speakerIdFlags,
   };
 }

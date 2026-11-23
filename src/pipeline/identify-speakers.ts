@@ -7,11 +7,17 @@ import {
   SpeakerLabelsSchema,
   type SpeakerLabels,
 } from "../prompts/speaker-labels.js";
+import { checkHostMapping } from "./check-host-mapping.js";
 
 export async function identifySpeakers(
   transcript: string,
   metadata?: { title?: string; description?: string },
-): Promise<{ transcript: string; speakers: Record<string, string> }> {
+): Promise<{
+  transcript: string;
+  speakers: SpeakerLabels;
+  /** Swaps and suspicions from the host-mapping guard, for the run output. */
+  speakerIdFlags: string[];
+}> {
   const response = await ai.models.generateContent({
     model: speakerIdModel,
     contents: speakerLabelPrompt(transcript, metadata),
@@ -26,13 +32,15 @@ export async function identifySpeakers(
     throw new Error("Speaker identification response was null or empty");
   }
 
-  const output = SpeakerLabelsSchema.parse(
-    JSON.parse(responseText),
-  ) as SpeakerLabels;
-  const transcriptWithNames = addSpeakerLabels(output, transcript);
+  const output = SpeakerLabelsSchema.parse(JSON.parse(responseText));
+  const { speakers, flags } = checkHostMapping(transcript, output);
+  for (const flag of flags) {
+    console.warn(`⚠️ Speaker ID: ${flag}`);
+  }
 
   return {
-    transcript: transcriptWithNames,
-    speakers: output,
+    transcript: addSpeakerLabels(speakers, transcript),
+    speakers,
+    speakerIdFlags: flags,
   };
 }

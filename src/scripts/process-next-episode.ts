@@ -6,6 +6,7 @@
  *   bun run src/scripts/process-next-episode.ts --rss-url=https://feeds.megaphone.fm/ARML8571494714
  */
 
+import { printSpeakerIdFlags } from "../pipeline/check-host-mapping.js";
 import { processRssEpisode } from "../pipeline/rss-audio-processor.js";
 import type { TranscriptGranularity } from "../pipeline/transcribe.js";
 import { findNextUnprocessedEpisode } from "../rss/index.js";
@@ -161,6 +162,7 @@ try {
   console.log(`  Title: ${result.metadata.title}`);
   console.log(`  Transcript: ${result.transcriptPath}`);
   console.log("  Embed: canonical audio");
+  printSpeakerIdFlags(result.speakerIdFlags);
   process.exit(0);
 } catch (error) {
   console.error("");

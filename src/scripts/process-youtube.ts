@@ -8,6 +8,7 @@
  *   bun run src/scripts/process-youtube.ts 833s6y6kW2k --start-from=correct
  */
 
+import { printSpeakerIdFlags } from "../pipeline/check-host-mapping.js";
 import type { TranscriptGranularity } from "../pipeline/transcribe.js";
 import { processYouTubeVideo } from "../pipeline/youtube-processor.js";
 
@@ -127,6 +128,7 @@ try {
   console.log(`  Video ID: ${result.videoId}`);
   console.log(`  Title: ${result.metadata.title}`);
   console.log(`  Transcript: ${result.transcriptPath}`);
+  printSpeakerIdFlags(result.speakerIdFlags);
 } catch (error) {
   console.error("");
   console.error("✗ Error processing video:");
