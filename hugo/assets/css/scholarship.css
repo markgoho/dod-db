@@ -338,6 +338,17 @@
   border-block-start: var(--border-width-sm) solid var(--tan-300);
 }
 
+/* The short cite the quotes use, so a reader can match "Hayes 2006a" to its row. */
+.scholarship-source__key {
+  display: block;
+  font-weight: var(--font-weight-bold);
+}
+
+/* Arrived at from a short cite: mark the row so the eye lands on it. */
+.scholarship-source:target td {
+  background: var(--tan-200);
+}
+
 .scholarship-source td[data-label="Date read"] {
   color: var(--color-text-muted);
   white-space: nowrap;
@@ -373,6 +384,10 @@
     display: grid;
     gap: var(--space-2xs);
     padding: var(--space-xs) var(--space-s);
+  }
+
+  .scholarship-source:target {
+    background: var(--tan-200);
   }
 
   .scholarship-source + .scholarship-source td,

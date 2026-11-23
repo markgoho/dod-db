@@ -20,6 +20,7 @@
   {{ $stats := partial "scholarship-stats.html" . }}
 
   {{ $sourceIds := partial "scholarship-source-ids.html" . }}
+  {{ $shortCites := partial "scholarship-short-cite.html" . }}
   {{ $groups := slice }}
   {{ $sourceRead := dict }}
   {{ range $p.statements }}
@@ -118,11 +119,9 @@
                       <blockquote class="scholarship-cite__quote">
                         “{{ .quote }}”
                       </blockquote>
+                      {{/* Author-date goes to the Sources used row; the locator opens the passage. */}}
                       <p class="scholarship-meta">
-                        <a href="{{ .url | default $s.url }}" rel="noopener"
-                          >{{ partial "external-source-label.html" $s }}</a
-                        >,
-                        {{ .locator }}
+                        {{ printf `<a href="#source-%s">%s</a>, <a href="%s" rel="noopener">%s</a>` (htmlEscape .source) (htmlEscape (index $shortCites .source)) (htmlEscape (.url | default $s.url)) (htmlEscape (.locator | default "source")) | safeHTML }}
                       </p>
                     </li>
                   {{ end }}
@@ -150,8 +149,11 @@
           <tbody>
             {{ range $sourceIds }}
               {{ $s := index $registry . }}
-              <tr class="scholarship-source">
+              <tr class="scholarship-source" id="source-{{ . }}">
                 <td data-label="Source">
+                  <span class="scholarship-source__key"
+                    >{{ index $shortCites . }}</span
+                  >
                   {{ partial "external-source-label.html" $s }}
                 </td>
                 <td data-label="Class">
