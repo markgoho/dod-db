@@ -7,6 +7,7 @@
 import { Glob } from "bun";
 import path from "node:path";
 import { z } from "zod";
+import { taxonomyFolderSlug } from "../utils/title-to-slug.js";
 
 const dateValue = z.union([z.string(), z.date()]);
 
@@ -97,6 +98,17 @@ const EpisodesSchema = z.array(
   z.object({ episodeNumber: z.number().int().optional() }),
 );
 
+const TAXONOMIES = ["books", "tags", "topics"] as const;
+type Taxonomy = (typeof TAXONOMIES)[number];
+/** Term keys per taxonomy, as Hugo keys term pages (taxonomyFolderSlug). */
+type Terms = Record<Taxonomy, Set<string>>;
+
+const EpisodeTermsSchema = z.object({
+  books: z.array(z.string()).nullish(),
+  tags: z.array(z.string()).nullish(),
+  topics: z.array(z.string()).nullish(),
+});
+
 type Page = z.infer<typeof PageSchema>;
 type Registry = z.infer<typeof RegistrySchema>;
 type Trigger = z.infer<typeof TriggerSchema>;
@@ -153,6 +165,41 @@ async function loadOptional(
   }
 }
 
+/**
+ * The term pages Hugo builds: one per value in an Episode's books/tags/topics
+ * front matter, plus each hand-authored hugo/content/<taxonomy>/<key>/_index.md.
+ */
+async function loadTerms(root: string, errors: string[]): Promise<Terms> {
+  const terms: Terms = { books: new Set(), tags: new Set(), topics: new Set() };
+  const content = path.join(root, "hugo/content");
+  const episodeFiles = await Array.fromAsync(
+    new Glob("episodes/*/index.md").scan({ cwd: content }),
+  );
+  for (const file of episodeFiles) {
+    const filePath = path.join(content, file);
+    const episode = parseWith(
+      EpisodeTermsSchema,
+      await loadOptional(filePath, root, errors, readFrontmatter),
+      rel(root, filePath),
+      errors,
+    );
+    for (const taxonomy of TAXONOMIES) {
+      for (const term of episode?.[taxonomy] ?? []) {
+        terms[taxonomy].add(taxonomyFolderSlug(term));
+      }
+    }
+  }
+  for (const taxonomy of TAXONOMIES) {
+    const bundles = await Array.fromAsync(
+      new Glob(`${taxonomy}/*/_index.md`).scan({ cwd: content }),
+    );
+    for (const bundle of bundles) {
+      terms[taxonomy].add(path.basename(path.dirname(bundle)));
+    }
+  }
+  return terms;
+}
+
 /** Page rules the review checks (#93 order of work). */
 const PAGE_RULES = [
   "publish-rule",
@@ -173,9 +220,19 @@ function checkPage(
   triggers: Trigger[] | undefined,
   review: Review | undefined,
   episodes: Set<number>,
+  terms: Terms,
 ): string[] {
   const errors: string[] = [];
   const at = `scholarship/${slug}`;
+
+  // Same rule as hugo/layouts/partials/scholarship-related-term.html.
+  for (const taxonomy of TAXONOMIES) {
+    for (const entry of page.related[taxonomy]) {
+      if (!terms[taxonomy].has(taxonomyFolderSlug(entry))) {
+        errors.push(`${at}: related ${taxonomy} "${entry}" names no term page`);
+      }
+    }
+  }
 
   for (const statement of page.statements) {
     for (const [index, cite] of statement.cites.entries()) {
@@ -341,6 +398,8 @@ export async function checkScholarship(root: string): Promise<string[]> {
     ),
   );
 
+  const terms = await loadTerms(root, errors);
+
   const pageFiles = await Array.fromAsync(
     new Glob("*.md").scan({ cwd: contentDir }),
   );
@@ -373,7 +432,9 @@ export async function checkScholarship(root: string): Promise<string[]> {
     );
     if (!page) continue;
 
-    errors.push(...checkPage(slug, page, registry, triggers, review, episodes));
+    errors.push(
+      ...checkPage(slug, page, registry, triggers, review, episodes, terms),
+    );
   }
 
   return errors;

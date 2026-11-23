@@ -4,6 +4,11 @@
   taxonomy  "books", "tags" or "topics" (the `related` key)
   term      one entry from that list
   Returns the term page, or nil when the site has none.
+  Hugo keys a term page by its raw name, lowercased with whitespace as
+  hyphens; punctuation such as apostrophes stays (taxonomyFolderSlug in
+  src/utils/title-to-slug.ts). urlize strips apostrophes, so it misses
+  "Aaron's Rod" (/topics/aaron's-rod, published at /topics/aarons-rod/).
   */
 -}}
-{{- return site.GetPage (printf "/%s/%s" .taxonomy (urlize .term)) -}}
+{{- $key := .term | strings.TrimSpace | lower | replaceRE `\s+` "-" -}}
+{{- return site.GetPage (printf "/%s/%s" .taxonomy $key) -}}

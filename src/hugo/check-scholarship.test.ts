@@ -50,6 +50,12 @@ describe("checkScholarship", () => {
     ]);
   });
 
+  test("fails when a related entry names no term page", async () => {
+    expect(await check("related-unknown-term")).toEqual([
+      `${page}: related tags "Aaron's Budding Rod" names no term page`,
+    ]);
+  });
+
   test("fails when core names no statement", async () => {
     expect(await check("core-unresolved")).toEqual([
       `${page}: core "nope" names no statement`,
