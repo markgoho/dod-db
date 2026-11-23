@@ -97,3 +97,101 @@ ehrman-brief-5e-ch9-summary:
   url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-9-summary"
   hostAuthored: false
   tradition: null
+
+ehrman-brief-5e-ch11-summary:
+  author: null
+  title: "Student chapter 11 summary for Bart D. Ehrman, A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-11-summary"
+  hostAuthored: false
+  tradition: null
+
+ehrman-brief-5e-ch16-summary:
+  author: null
+  title: "Student chapter 16 summary for Bart D. Ehrman, A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-16-summary"
+  hostAuthored: false
+  tradition: null
+
+bulundwe-2019-ethics-pseudepigraphy:
+  author: "Kampotela Luc Bulundwe"
+  title: "Ethics and Pseudepigraphy: Do the Ends Always Justify the Means?"
+  series: "Athens Journal of Humanities and Arts 6, no. 4, pp. 323–344"
+  publisher: "Athens Institute"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University of Geneva repository, published version (PDF), open"
+  url: "https://access.archive-ouverte.unige.ch/access/metadata/c1ba0d2c-8c2c-4ccb-8ac4-e501ddb7676e/download"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l17:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 17 transcript: Paul's Disciples"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-17"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l19:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 19 transcript: The “Household” Paul: the Pastorals"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-19"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l21:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 21 transcript: Interpreting Scripture: Hebrews"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-21"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l24:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 24 transcript: Apocalyptic and Accommodation"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-24"
+  hostAuthored: false
+  tradition: null
