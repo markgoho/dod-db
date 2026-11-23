@@ -30,6 +30,9 @@
           </li>
         {{ end }}
       </ul>
+    {{ else }}
+      {{- /* Owner-editable copy: shown only while no page is published. */ -}}
+      <p class="scholarship-empty">The first Scholarship Page is in review.</p>
     {{ end }}
   </section>
 {{ end }}

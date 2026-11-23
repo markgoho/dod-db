@@ -49,21 +49,21 @@
     </header>
 
     {{ $promptedBy := printf "Prompted by %d %s" (len $triggerEpisodes) (cond (eq (len $triggerEpisodes) 1) "Episode" "Episodes") }}
-    <details class="scholarship-block panel panel--muted">
-      <summary class="disclosure-summary">
-        <span class="type-eyebrow"
-          >{{ printf `%s · <mark class="scholarship-block__flag">not the show’s work</mark>` $promptedBy | safeHTML }}</span
-        >
-      </summary>
-      <div class="scholarship-block__body">
-        {{ partial "scholarship-notice.html" . }}
-        <div class="tag-quotes__grid">
+    <div class="scholarship-provenance panel panel--muted">
+      {{ partial "scholarship-notice.html" . }}
+      <details class="scholarship-block">
+        <summary class="disclosure-summary">
+          <span class="type-eyebrow"
+            >{{ printf `%s · <mark class="scholarship-block__flag">not the show’s work</mark>` $promptedBy | safeHTML }}</span
+          >
+        </summary>
+        <div class="scholarship-block__body tag-quotes__grid">
           {{ range $triggers }}
             {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
           {{ end }}
         </div>
-      </div>
-    </details>
+      </details>
+    </div>
 
     {{ range $group := $groups }}
       <section class="cloud-section">

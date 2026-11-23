@@ -39,7 +39,19 @@
   font-size: var(--step--1);
 }
 
-/* Folded provenance block: the summary carries the not-the-show line. */
+/*
+  Provenance: the notice stays visible above the folded Trigger Claim block,
+  both in one panel.
+*/
+.scholarship-notice {
+  font-weight: var(--font-weight-semibold);
+  padding: var(--space-s);
+}
+
+.scholarship-block {
+  border-block-start: var(--border-width-sm) solid var(--tan-400);
+}
+
 .scholarship-block > summary {
   padding: var(--space-s);
 }
@@ -52,13 +64,7 @@
 }
 
 .scholarship-block__body {
-  display: grid;
-  gap: var(--space-m);
   padding: 0 var(--space-s) var(--space-s);
-}
-
-.scholarship-notice {
-  font-weight: var(--font-weight-semibold);
 }
 
 /* Trigger Claim cards sit inside the block: one border level, no second shadow. */
@@ -69,7 +75,7 @@
 }
 
 /* One quote per row: two columns are too narrow inside the copy-width column. */
-.scholarship-block .tag-quotes__grid {
+.scholarship-block__body.tag-quotes__grid {
   gap: var(--space-s);
   grid-template-columns: minmax(0, 1fr);
 }
@@ -254,4 +260,12 @@
 .scholarship-card__title a:hover,
 .scholarship-card__title a:focus-visible {
   color: var(--color-action);
+}
+
+.scholarship-empty {
+  color: var(--color-text-muted);
+  font-family: var(--font-family-display);
+  font-style: italic;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
 }
