@@ -13,10 +13,14 @@ citations:
     {
       agent: flag,
       owner: "",
-      note: "Martin l13 ch. 2 [00:13:25]. Martin says “all admit”, stronger than Meggitt's “virtually no” and his note 1. The statement uses Meggitt's weaker wording and scope (New Testament studies, early Christian history); Martin's scope is “reputable historical scholars”. Supports the statement at its own strength, but owner confirms the mismatch is acceptable. Independent of existence/1 (distinct author, #92).",
+      note: "Martin l13 ch. 2 [00:13:25]. Quote starts mid-sentence, after “You'll find every once in a while somebody on the web… in some crazy blog, saying that Jesus never existed, but”. Martin says “all admit”, stronger than Meggitt's “virtually no” and his note 1. The statement uses Meggitt's weaker wording and scope (New Testament studies, early Christian history); Martin's scope is “reputable historical scholars”. Supports the statement at its own strength, but owner confirms the mismatch is acceptable. Independent of existence/1 (distinct author, #92).",
     }
   deniers/1:
-    { agent: pass, owner: "", note: "Meggitt manuscript p. 1, note 1." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Meggitt manuscript p. 1, note 1. The page gives no count of deniers (“a few” was dropped); short answer “Some do” rests on the named deniers in deniers/2–4.",
+    }
   deniers/2:
     {
       agent: pass,
@@ -33,13 +37,13 @@ citations:
     {
       agent: flag,
       owner: "",
-      note: "Meggitt manuscript pp. 2–3; sentence crosses the page break around footnotes. Footnote markers 8, 9 and 10 removed. Statement says “arguing that Jesus was not historical” for the source's “arguing for the non-historicity of Jesus”.",
+      note: "Meggitt manuscript pp. 2–3; sentence crosses the page break around footnotes; each half matched verbatim on its own page (p. 2 “In more recent years… established and active”, p. 3 “New Testament scholars… a classicist.”). Footnote markers 8, 9 and 10 removed. Statement says “arguing that Jesus was not historical” for the source's “arguing for the non-historicity of Jesus”.",
     }
   judgement/1:
     {
       agent: flag,
       owner: "",
-      note: "Meggitt manuscript pp. 1–2; sentence crosses the page break and footnote 1 sits between its halves. Footnote marker 2 follows. The inner quotation is Meggitt citing Van Voorst (2000); the statement keeps the wording but not the inner quote marks.",
+      note: "Meggitt manuscript pp. 1–2; sentence crosses the page break and footnote 1 sits between its halves; each half matched verbatim on its own page (p. 1 “Indeed… deny his”, p. 2 “historicity are usually judged… completely.'”). Footnote marker 2 follows. The inner quotation is Meggitt citing Van Voorst (2000); the statement keeps the wording but not the inner quote marks.",
     }
   judgement/2:
     {
@@ -107,7 +111,7 @@ citations:
     {
       agent: flag,
       owner: "",
-      note: "Martin l13 ch. 3 [00:26:27]. Short answer compresses two hedges (“most say” for the sign, “often… may well be” for the baptism); check it reads no stronger than the source.",
+      note: "Martin l13 ch. 3 [00:26:27]. Martin gives the sign and the baptism as two worked examples of method, not a list; question reworded to “Do scholars count any details…”. Short answer compresses two hedges (“most say” for the sign, “often… may well be” for the baptism); check it reads no stronger than the source.",
     }
 triggers:
   5@00:06:55:
@@ -134,7 +138,7 @@ triggers:
     {
       agent: pass,
       owner: "",
-      note: "Full hedge kept (“we cannot know for sure… right now I would say”).",
+      note: "Full hedge kept (“we cannot know for sure… right now I would say”). At 00:57:09 he adds that he leaves open “the possibility, maybe even the plausibility that there was no historical Jesus” while calling it “incredibly unlikely”.",
     }
   145@00:05:46:
     {
@@ -168,7 +172,7 @@ sources:
     {
       agent: pass,
       owner: "",
-      edition: "Accepted version; repository record gives New Testament Studies 65, Cambridge University Press, DOI 10.1017/s0028688519000213. Issue and page range not shown; published version not seen.",
+      edition: "Accepted version; repository record gives New Testament Studies 65, Cambridge University Press, DOI 10.1017/s0028688519000213. Year 2019 inferred from the DOI and volume, not shown on the record. Issue and page range not shown; published version not seen.",
     }
   martin-rlst152-l13:
     {

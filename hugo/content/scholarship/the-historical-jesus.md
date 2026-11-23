@@ -36,8 +36,8 @@ statements:
   - id: deniers
     group: "Did Jesus exist?"
     question: "Does any scholar argue that Jesus did not exist?"
-    short: "A few do, including some trained in the field."
-    text: "A few do. In the nineteenth century the German scholar Bruno Bauer denied that Jesus ever existed. Before 2000 G. A. Wells was almost a lone voice for the view, but that is no longer the case, even among those qualified within the field: the New Testament scholars Robert M. Price and Thomas L. Brodie have published works arguing that Jesus was not historical, as has the classicist Richard Carrier."
+    short: "Some do, including New Testament scholars."
+    text: "It is not the case that none do. In the nineteenth century the German scholar Bruno Bauer denied that Jesus ever existed. Before 2000 G. A. Wells was almost a lone voice for the view, but that is no longer the case, even among those qualified within the field: the New Testament scholars Robert M. Price and Thomas L. Brodie have published works arguing that Jesus was not historical, as has the classicist Richard Carrier."
     cites:
       - source: meggitt-2019-non-historical-jesus
         locator: "manuscript p. 1, note 1"
@@ -73,7 +73,7 @@ statements:
     group: "What can be known about him"
     question: "What kind of figure do most scholars think Jesus was?"
     short: "Most agree he was an apocalyptic prophet."
-    text: "Many of the earliest sources depict Jesus as a Jewish apocalypticist who proclaimed the imminent end of the present age. Whether they portray him accurately is the subject of much scholarly debate, but most scholars agree that Jesus was an apocalyptic prophet. The reasons given are that the earliest sources for his life, teachings and death (Mark, Q, M and L) all show him this way, and that both John the Baptist, with whom he associated, and the earliest Christian churches were apocalyptic."
+    text: "Many of the earliest sources depict Jesus as a Jewish apocalypticist who proclaimed the imminent end of the present age. Whether they portray him accurately is the subject of much scholarly debate, but most scholars agree that Jesus was an apocalyptic prophet. The reasons given are that the earliest sources for his life, teachings and death (Mark, Q, M and L) show him this way, and that both John the Baptist, with whom he associated, and the earliest Christian churches were apocalyptic."
     cites:
       - source: ehrman-brief-5e-ch9-summary
         locator: "section “Jesus in His Apocalyptic Context”"
@@ -115,7 +115,7 @@ statements:
         read: 2026-11-23
   - id: details
     group: "What can be known about him"
-    question: "Which details of his life do scholars count as historical?"
+    question: "Do scholars count any details of his life as historical?"
     short: "Most say the sign on the cross is, and often that his baptism may well be."
     text: "Most scholars say that the sign on the cross calling Jesus King of the Jews is historical, and scholars often say that his baptism by John the Baptist may well be historical. A lot of scholars say both details are probably historical because they seem to be witnessed by more than one source and to go against the theological tendency of the documents in which they are found."
     cites:
