@@ -1,0 +1,11 @@
+{{- /*
+  The #91 date line. Takes a Scholarship Page. Renders nothing until the
+  owner's review sets sourcesRead (#93).
+  */
+-}}
+{{- with .Params.sourcesRead -}}
+  <p class="scholarship-date-line">
+    Sources read {{ time.Format "2 January 2006" . }}. Newer scholarship is not
+    tracked.
+  </p>
+{{- end -}}

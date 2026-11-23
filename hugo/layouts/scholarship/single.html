@@ -1,0 +1,168 @@
+{{ define "head-styles" }}
+  {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") | resources.Concat "css/scholarship-single.css" | resources.Minify }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+  {{ $p := .Params }}
+  {{ $registry := index hugo.Data "external-sources" }}
+  {{ $triggers := index hugo.Data.scholarship.triggers .File.ContentBaseName }}
+
+  {{ $episodesByNumber := dict }}
+  {{ range where site.RegularPages "Section" "episodes" }}
+    {{ $episodesByNumber = merge $episodesByNumber (dict (string .Params.episodeNumber) .) }}
+  {{ end }}
+  {{ $triggerEpisodes := slice }}
+  {{ range $triggers }}
+    {{ $triggerEpisodes = $triggerEpisodes | append .episode }}
+  {{ end }}
+  {{ $triggerEpisodes = $triggerEpisodes | uniq }}
+
+  {{ $groups := slice }}
+  {{ $sourceIds := slice }}
+  {{ $sourceRead := dict }}
+  {{ range $p.statements }}
+    {{ $groups = $groups | append .group }}
+    {{ range $cite := .cites }}
+      {{ $sourceIds = $sourceIds | append $cite.source }}
+      {{ with $cite.read }}
+        {{ $read := time.Format "2006-01-02" . }}
+        {{ $prev := index $sourceRead $cite.source | default "" }}
+        {{ if gt $read $prev }}
+          {{ $sourceRead = merge $sourceRead (dict $cite.source $read) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $groups = $groups | uniq }}
+  {{ $sourceIds = $sourceIds | uniq }}
+
+
+  <article class="scholarship-page">
+    <header class="page-hero">
+      <p class="page-hero__eyebrow type-eyebrow panel panel--accent">
+        Scholarship Page
+      </p>
+      <h1 class="page-hero__title">{{ .Title }}</h1>
+      <div class="page-hero__description panel panel--muted">
+        <p>{{ $p.dek }}</p>
+        {{ partial "scholarship-date-line.html" . }}
+      </div>
+    </header>
+
+    <details class="scholarship-block panel panel--muted">
+      <summary class="type-eyebrow">
+        Prompted by
+        {{ len $triggerEpisodes }}
+        {{ cond (eq (len $triggerEpisodes) 1) "Episode" "Episodes" }} · not the
+        show’s work
+      </summary>
+      <div class="scholarship-block__body">
+        {{ partial "scholarship-notice.html" . }}
+        <div class="tag-quotes__grid">
+          {{ range $triggers }}
+            {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
+          {{ end }}
+        </div>
+      </div>
+    </details>
+
+    {{ range $group := $groups }}
+      <section class="cloud-section">
+        <h2 class="type-section-title cloud-section__title">{{ $group }}</h2>
+        {{ range where $p.statements "group" $group }}
+          <details class="scholarship-question panel" id="{{ .id }}">
+            <summary>
+              <span class="scholarship-question__question type-eyebrow"
+                >{{ .question }}</span
+              >
+              <span class="scholarship-question__short">{{ .short }}</span>
+            </summary>
+            <div class="scholarship-question__body">
+              <p>{{ .text }}</p>
+              <ul class="scholarship-cites" role="list">
+                {{ range .cites }}
+                  {{ $s := index $registry .source }}
+                  <li class="scholarship-cite">
+                    <blockquote class="scholarship-cite__quote">
+                      “{{ .quote }}”
+                    </blockquote>
+                    <p class="scholarship-meta">
+                      <a href="{{ .url | default $s.url }}" rel="noopener"
+                        >{{ partial "external-source-label.html" $s }}</a
+                      >,
+                      {{ .locator }}
+                    </p>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+          </details>
+        {{ end }}
+      </section>
+    {{ end }}
+
+
+    <section class="cloud-section">
+      <h2 class="type-section-title cloud-section__title">Sources used</h2>
+      <div class="scholarship-sources">
+        <table class="scholarship-sources__table">
+          <thead>
+            <tr>
+              <th scope="col">Source</th>
+              <th scope="col">Class</th>
+              <th scope="col">Where read</th>
+              <th scope="col">Date read</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $sourceIds }}
+              {{ $s := index $registry . }}
+              <tr class="scholarship-source">
+                <td data-label="Source">
+                  {{ partial "external-source-label.html" $s }}
+                </td>
+                <td data-label="Class">{{ $s.class }}</td>
+                <td data-label="Where read">
+                  <a href="{{ $s.url }}" rel="noopener">{{ $s.access }}</a>
+                </td>
+                <td data-label="Date read">
+                  {{ with index $sourceRead . }}
+                    {{ time.Format "2 Jan 2006" (time.AsTime .) }}
+                  {{ end }}
+                </td>
+              </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {{ $archive := slice }}
+    {{ range $p.related.books }}
+      {{ with site.GetPage (printf "/books/%s" .) }}
+        {{ $archive = $archive | append . }}
+      {{ end }}
+    {{ end }}
+    {{ range $p.related.tags }}
+      {{ with site.GetPage (printf "/tags/%s" .) }}
+        {{ $archive = $archive | append . }}
+      {{ end }}
+    {{ end }}
+    {{ range $p.related.topics }}
+      {{ with site.GetPage (printf "/topics/%s" .) }}
+        {{ $archive = $archive | append . }}
+      {{ end }}
+    {{ end }}
+    {{ with $archive }}
+      <section class="cloud-section">
+        <h2 class="type-section-title cloud-section__title">In the archive</h2>
+        <ul class="chip-list" role="list">
+          {{ range . }}
+            <li><a class="chip" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
+  </article>
+{{ end }}

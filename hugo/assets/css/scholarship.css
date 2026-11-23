@@ -1,0 +1,157 @@
+/*
+  Scholarship section. Composes panel, chip, type-eyebrow, type-section-title,
+  cloud-section, page-hero and quote-card (tag-quote); only what those lack
+  lives here.
+*/
+.scholarship-page {
+  display: grid;
+  gap: var(--space-l);
+}
+
+.scholarship-page p,
+.scholarship-page blockquote {
+  margin: 0;
+}
+
+.scholarship-page .page-hero__description {
+  display: grid;
+  gap: var(--space-2xs);
+  text-align: start;
+}
+
+.scholarship-date-line,
+.scholarship-meta {
+  color: var(--color-text-muted);
+  font-size: var(--step--1);
+}
+
+.scholarship-meta {
+  overflow-wrap: anywhere;
+}
+
+.scholarship-block,
+.scholarship-question {
+  padding: var(--space-s) var(--space-m);
+}
+
+.scholarship-block > summary,
+.scholarship-question > summary {
+  cursor: pointer;
+}
+
+.scholarship-block__body,
+.scholarship-question__body {
+  display: grid;
+  gap: var(--space-s);
+  margin-block-start: var(--space-s);
+}
+
+/* Question first, short answer under it; both wrap. */
+.scholarship-question > summary {
+  display: grid;
+  gap: var(--space-3xs);
+}
+
+.scholarship-question__short {
+  font-family: var(--font-family-display);
+  font-size: var(--step-1);
+  font-weight: var(--font-weight-bold);
+}
+
+.scholarship-cites {
+  display: grid;
+  gap: var(--space-s);
+  margin: 0;
+  padding: 0;
+}
+
+.scholarship-cite {
+  display: grid;
+  gap: var(--space-3xs);
+}
+
+.scholarship-cite__quote {
+  border-inline-start: var(--border-width-md) solid var(--tan-900);
+  padding-inline-start: var(--space-xs);
+}
+
+/* Sources used: a table that becomes one stacked card per source in a narrow container. */
+.scholarship-sources {
+  container: scholarship-sources / inline-size;
+}
+
+.scholarship-sources__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.scholarship-sources__table th,
+.scholarship-sources__table td {
+  border-block-end: var(--border-width-sm) solid var(--tan-900);
+  font-size: var(--step--1);
+  overflow-wrap: anywhere;
+  padding: var(--space-2xs);
+  text-align: start;
+  vertical-align: top;
+}
+
+/* Literal length: container conditions cannot read custom properties. */
+@container scholarship-sources (width < 40rem) {
+  .scholarship-sources__table,
+  .scholarship-sources__table tbody,
+  .scholarship-sources__table tr,
+  .scholarship-sources__table td {
+    display: block;
+  }
+
+  .scholarship-sources__table thead {
+    block-size: 1px;
+    clip-path: inset(50%);
+    inline-size: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  .scholarship-sources__table tbody {
+    display: grid;
+    gap: var(--space-xs);
+  }
+
+  .scholarship-source {
+    background: var(--tan-000);
+    border: var(--border-width-sm) solid var(--tan-900);
+    padding: var(--space-2xs) var(--space-xs);
+  }
+
+  .scholarship-sources__table td {
+    border: 0;
+    padding: var(--space-3xs) 0;
+  }
+
+  .scholarship-sources__table td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
+  }
+}
+
+.scholarship-cards {
+  display: grid;
+  gap: var(--space-m);
+  margin: 0;
+  padding: 0;
+}
+
+.scholarship-card {
+  display: grid;
+  gap: var(--space-2xs);
+  padding: var(--space-s) var(--space-m);
+}
+
+.scholarship-card__title {
+  font-size: var(--step-1);
+  margin: 0;
+}

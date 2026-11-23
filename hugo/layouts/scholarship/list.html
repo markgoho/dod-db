@@ -1,0 +1,36 @@
+{{ define "head-styles" }}
+  {{ $inlineCSS := resources.Get "css/scholarship.css" | resources.Minify }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+  <section class="scholarship-page">
+    <header class="page-hero">
+      <h1 class="page-hero__title">{{ .Title }}</h1>
+      <div class="page-hero__description panel panel--muted">
+        <p>{{ .Params.intro }}</p>
+        <p>
+          <strong
+            >Each Scholarship Page is the site’s summary of outside scholarship,
+            not the show’s work.</strong
+          >
+          <a href="/about/#scholarship-pages">How Scholarship Pages are made</a>
+        </p>
+      </div>
+    </header>
+
+    {{ with .Pages.ByTitle }}
+      <ul class="scholarship-cards" role="list">
+        {{ range . }}
+          <li class="scholarship-card panel">
+            <h2 class="scholarship-card__title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <p>{{ .Params.dek }}</p>
+            {{ partial "scholarship-date-line.html" . }}
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </section>
+{{ end }}

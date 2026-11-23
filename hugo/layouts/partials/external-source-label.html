@@ -1,0 +1,24 @@
+{{- /*
+  One External Source from hugo/data/external-sources.yaml, as a citation label:
+  Author, Title, Series, Edition (Publisher, Year). Null fields are skipped.
+  */
+-}}
+{{- $s := . -}}
+{{- $lead := "" -}}
+{{- with $s.author -}}
+  {{- $lead = printf "%s, " . -}}
+{{- end -}}
+{{- $tail := slice -}}
+{{- with $s.series }}{{ $tail = $tail | append . }}{{ end -}}
+{{- with $s.edition }}{{ $tail = $tail | append . }}{{ end -}}
+{{- $imprint := slice -}}
+{{- with $s.publisher }}{{ $imprint = $imprint | append . }}{{ end -}}
+{{- with $s.year }}{{ $imprint = $imprint | append (string .) }}{{ end -}}
+{{- $after := "" -}}
+{{- with $tail -}}
+  {{- $after = printf ", %s" (delimit . ", ") -}}
+{{- end -}}
+{{- with $imprint -}}
+  {{- $after = printf "%s (%s)" $after (delimit . ", ") -}}
+{{- end -}}
+{{- $lead -}}<cite>{{ $s.title }}</cite>{{- $after -}}
