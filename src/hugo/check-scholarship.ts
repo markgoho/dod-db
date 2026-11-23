@@ -153,6 +153,14 @@ async function loadOptional(
   }
 }
 
+/** Page rules the review checks (#93 order of work). */
+const PAGE_RULES = [
+  "publish-rule",
+  "consensus-wording",
+  "dissent-attributed",
+  "tradition-named",
+];
+
 /** Review key for a Trigger Claim: `<episode>@HH:MM:SS`. */
 function triggerKey(trigger: Trigger): string {
   return `${trigger.episode}@${trigger.timestamp.slice(0, 8)}`;
@@ -256,11 +264,15 @@ function checkOwnerPass(
   review: Review,
 ): string[] {
   const errors: string[] = [];
-  const required: Record<"citations" | "triggers" | "sources", string[]> = {
+  const required: Record<
+    "citations" | "triggers" | "rules" | "sources",
+    string[]
+  > = {
     citations: page.statements.flatMap(s =>
       s.cites.map((_, index) => `${s.id}/${index + 1}`),
     ),
     triggers: triggers.map(triggerKey),
+    rules: PAGE_RULES,
     sources: [
       ...new Set(page.statements.flatMap(s => s.cites.map(c => c.source))),
     ],

@@ -102,4 +102,10 @@ describe("checkScholarship", () => {
       `${page}: review has no citations.second/1 entry`,
     ]);
   });
+
+  test("fails a non-draft page whose review omits a page rule", async () => {
+    expect(await check("missing-rule")).toEqual([
+      `${page}: review has no rules.publish-rule entry`,
+    ]);
+  });
 });
