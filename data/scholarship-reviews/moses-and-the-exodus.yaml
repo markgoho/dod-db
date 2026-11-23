@@ -1,0 +1,116 @@
+# Review record for /scholarship/moses-and-the-exodus/ (#93 shape). Not rendered.
+# agent: results of the agent's first pass (#89, 2026-11-22). That pass does not count toward publish.
+# owner: empty ("") until the owner's publish review (#104) sets pass or fail.
+review: ""
+citations:
+  evidence/1: { agent: pass, owner: "", note: "Meyers p. 5" }
+  evidence/2: { agent: pass, owner: "", note: "Meyers p. 6" }
+  evidence/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary, section “Exodus and History”",
+    }
+  evidence/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 3 [00:10:06]; sentence continues “but let's start at the beginning” (Merneptah), no hedge",
+    }
+  moses/1: { agent: pass, owner: "", note: "Meyers p. 6" }
+  moses/2: { agent: pass, owner: "", note: "Hayes l7 ch. 3 [00:10:06]" }
+  moses/3:
+    {
+      agent: flag,
+      owner: "",
+      note: "Coogan summary: “these events or figures” follows a sentence about unnamed pharaohs and never names Moses. Statement stands on moses/1 and moses/2. Owner decides keep or drop (#104).",
+    }
+  history/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meyers p. 4; source scope is biblical narratives, so the question was reworded per #89. No source read gives the reasons after “most biblical scholars”; stands without reasons per #86.",
+    }
+  kernel/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary, section “Exodus and History”",
+    }
+  kernel/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary, section “Implications for Our Study”",
+    }
+  sargon/1:
+    {
+      agent: flag,
+      owner: "",
+      note: "Hayes l7 ch. 4 [00:21:14]. Question and short answer reworded per #89 (source says “paralleled”, not derived). Statement's basket clause now uses Hayes's “basket lined with tar, put in the river” in place of the Collins lead's wording; that clause is outside the quoted sentence, so check it at the locator.",
+    }
+  song/1:
+    {
+      agent: flag,
+      owner: "",
+      note: "Hayes l8 ch. 2 [00:06:51]. Short answer reworded per #89 to keep “most agree”; statement keeps “widely agreed”.",
+    }
+triggers:
+  21@00:25:18:
+    {
+      agent: pass,
+      owner: "",
+      note: "Extended to the next sentence (“It is plausible that there's a historical core…”) so the card doesn't overstate the show.",
+    }
+  21@00:28:28: { agent: pass, owner: "", note: "" }
+  75@00:22:05:
+    {
+      agent: pass,
+      owner: "",
+      note: "“any of this” = the Exodus story; quote starts mid-turn after “Or just made up from whole cloth.”",
+    }
+  97@00:35:22: { agent: pass, owner: "", note: "Context: Ron Wyatt's claims." }
+  105@00:15:41:
+    {
+      agent: flag,
+      owner: "",
+      note: "Names Sargon II; the page names Sargon of Akkad (Hayes). Agent reads both as the same legend from two angles (00:15:41–00:17:51). Owner decides keep or drop (#104).",
+    }
+  116@00:19:01: { agent: pass, owner: "", note: "" }
+  116@00:21:02: { agent: pass, owner: "", note: "" }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "6 statements; core (evidence) has Meyers (Scholarly), Coogan summary (Reference), Hayes l7 (Reference).",
+    }
+  consensus-wording: { agent: pass, owner: "", note: "" }
+  dissent-attributed: { agent: pass, owner: "", note: "" }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition sources cited." }
+sources:
+  meyers-2005-exodus:
+    { agent: pass, owner: "", edition: "2005, Cambridge University Press" }
+  coogan-brief-4e-summary:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+    }
+  hayes-rlst145-l7:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+    }
+  hayes-rlst145-l8:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+    }
+leads:
+  - "Eerdmans Dictionary of the Bible, ed. David Noel Freedman (Eerdmans, 2000), p. 441: “In fact, there is no contemporary reference or description in any extrabiblical source.” Google Books snippet; not read in the source itself (#86). Was evidence/5 in the prototype."
+  - "John J. Collins, Introduction to the Hebrew Bible, 3rd ed. (Fortress Press, 2019), p. 122: “Sargon of Akkad (c. 2300 b.c.e.), whose mother also placed him in a vessel of reeds in a river.” Google Books snippet; not read in the source itself (#86). Was sargon/2 in the prototype."
+  - "Coogan summary, just before “Exodus and History”: “what may lie at the heart of these traditions is a less grand story that features a small band of escapees under Moses”. May reopen the cut “small group of escaped slaves” statement (Ep 21); a new statement needs the full review (#89)."

@@ -1,0 +1,57 @@
+# External Sources: one registry shared by every Synthesis Page (ADR 0002, #92).
+# Keyed by source id. Citations hold only what varies per citation.
+meyers-2005-exodus:
+  author: "Carol Meyers"
+  title: "Exodus"
+  series: "New Cambridge Bible Commentary"
+  publisher: "Cambridge University Press"
+  year: 2005
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher excerpt PDF, open"
+  url: "https://assets.cambridge.org/97805210/02912/excerpt/9780521002912_excerpt.pdf"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary:
+  author: null
+  title: "Student chapter 6 summary for Michael D. Coogan and Cynthia R. Chapman, A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-6-summary"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l7:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 7 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-7"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l8:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 8 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-8"
+  hostAuthored: false
+  tradition: null
