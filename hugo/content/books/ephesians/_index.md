@@ -25,7 +25,7 @@ quotes:
     episode: 135
     timestamp: "00:12:20.525"
   - text: "Christianity leaned heavily into the influence of Greco-Roman social conventions. And Ephesians, you have it elsewhere, the Pastoral Epistles as well, appeal to these household code ideas. And really what it is, is it is the authors saying, we like this social convention, we're taking it, this is ours now, and we're going to come up with a gospel rationalization for it."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 135
     timestamp: "00:21:23.144"
   - text: "Pastor is only mentioned once in all of the New Testament, and that is in Ephesians 4. ... Ephesians, also probably not Paul. That's not one of the, uh, outright spurious epistles, but one of the disputed epistles."

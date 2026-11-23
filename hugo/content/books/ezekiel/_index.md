@@ -23,7 +23,7 @@ featuredItems:
     label: "The X-Files — Ezekiel"
 quotes:
   - text: "The idea—Ezekiel's sitting on the river in Babylon. They're exiled. They cannot access their God. That is way back in the temple in Jerusalem... And suddenly they hear the rumbling of God's new ride."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 135
     timestamp: "00:47:56.727"
   - text: "[Ezekiel 1] is allusion here... to theophanies from the Hebrew Bible, where you're seeing God and God is so brilliant and shiny that it's... intimidatingly, even deadly so."

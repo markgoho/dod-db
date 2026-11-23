@@ -28,7 +28,7 @@ quotes:
     episode: 42
     timestamp: "00:43:54.830"
   - text: "Maybe this, the whole baptism story, is intended to reflect or kind of resonate with people who have understood their own reception of the Spirit as their own adoption into the family of God, and now they are joint heirs with Jesus."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 145
     timestamp: "00:24:22.516"
 showTopEpisodes: true

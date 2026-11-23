@@ -3,10 +3,8 @@
 # owner: empty ("") until the owner's publish review sets pass or fail.
 # Every quote was script-checked as a substring of the fetched source text (whitespace, quote marks
 # and dashes normalised), and every Yale locator against the transcript's chapter headings.
-# Dropped in the first pass (not on the page): Ep 144 [00:37:57] "Ephesians was not written by Paul".
-# The Transcript labels that turn Dan Beecher, but the speaker labels in 00:33–00:38 look swapped
-# (the "Dan McClellan" turns ask what the Greek is; the "Dan Beecher" turns parse it). Add it only
-# after the audio confirms the Speaker.
+# Ep 144 [00:37:57] "Ephesians was not written by Paul" was dropped in the first pass because the
+# Transcript's speaker labels were swapped. #120 fixed them (audio-checked); it is now a Trigger Claim.
 review: ""
 citations:
   undisputed/1:
@@ -291,6 +289,12 @@ triggers:
   138@00:03:39: { agent: pass, owner: "", note: "2 Thessalonians" }
   138@00:04:09:
     { agent: pass, owner: "", note: "Show's own comparison of strengths." }
+  144@00:37:57:
+    {
+      agent: pass,
+      owner: "",
+      note: "Ephesians, stated flatly (“was not written by Paul, right?”), firmer than the page's “disputed”; keeps “probably” on the date. Speaker fixed in #120 (labels were swapped; audio-checked). Context 00:35:56–00:39:00: Acts 20:28 and univocality, after Beecher's point that the books come from different times and places.",
+    }
   166@00:47:48:
     { agent: pass, owner: "", note: "Guest Speaker; “the Timothys”." }
   180@00:46:06:

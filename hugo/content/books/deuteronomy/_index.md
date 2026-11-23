@@ -31,7 +31,7 @@ quotes:
     episode: 146
     timestamp: "00:42:49.223"
   - text: "So it's talking about a time period that is several hundred years before these texts are being written. So it's basically inventing a golden age in the past."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 145
     timestamp: "00:37:40.032"
   - text: "The concept of covenants that we find in the Bible is actually derived from Neo Assyrian vassal treaties."

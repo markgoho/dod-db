@@ -21,11 +21,11 @@ quotes:
     episode: 141
     timestamp: "00:23:48.661"
   - text: "The Good Shepherd is an idea that goes all the way back to Hammurabi, right? And is in a few different places in the Hebrew Bible... Micah 5:2, 'will shepherd the people.'"
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 144
     timestamp: "00:41:52.952"
   - text: "A lot of these have deep, deep roots, but they weren't formal, official, org-charted offices."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 144
     timestamp: "00:41:52.952"
 showAllEpisodes: true

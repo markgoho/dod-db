@@ -25,11 +25,11 @@ quotes:
     episode: 142
     timestamp: "00:42:51.900"
   - text: "And an interesting thing to note here as well, these— the gospels are all coming well after like the, the letters of Paul. And we have some interesting things in the letters of Paul that suggest to some scholars that the story is being crafted with, uh, with this notion of, uh, baptism being an adoption, uh, because you got, uh, let's see, Romans 8:14: For all who are led by the Spirit of God are children of God. For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 145
     timestamp: "00:23:03.618"
   - text: "So we, in the baptism, we got the same thing— Spirit sent, 'You are my son.' And so maybe this, the, the whole baptism story, is intended to reflect or, or kind of resonate with people who have understood their own reception of the Spirit as their own adoption into the family of God, and now they are joint heirs with Jesus. Oh, and now the story of Jesus being baptized says the same thing. So it might be an attempt on the Gospel authors to try to appeal to that conceptualization of adoption into the family of God."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 145
     timestamp: "00:24:22.516"
 showAllEpisodes: true

@@ -142,9 +142,9 @@ triggers:
     }
   145@00:05:46:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "“this” = Jesus's baptism by John. Speaker labels in this Transcript look swapped near here (two consecutive Dan Beecher turns at 00:06:50 and 00:06:52; the ward/primary lines at 00:08:16–00:08:23). Speaker kept as the Transcript gives it; owner checks against the audio.",
+      note: "“this” = Jesus's baptism by John. Speaker was Dan Beecher because the Transcript's labels were swapped; #120 fixed them (audio-checked) and the Speaker is now Dan McClellan.",
     }
 rules:
   publish-rule:

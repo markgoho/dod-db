@@ -24,11 +24,11 @@ quotes:
     episode: 113
     timestamp: "00:20:08.670"
   - text: "And then also in Galatians 4, uh, doo-doo-doo-doo, but when the fullness of time had come, God sent his Son, born of a woman, born under the law, and in order to redeem those who were under the law, so that we might receive adoption as children. And because you are children, God has sent the Spirit of his Son into our hearts, crying, 'Abba, Father!' So you are no longer a slave but a child, and if a child, then also an heir through God."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 145
     timestamp: "00:24:22.516"
   - text: "So we, in the baptism, we got the same thing— Spirit sent, 'You are my son.' And so maybe this, the, the whole baptism story, is intended to reflect or, or kind of resonate with people who have understood their own reception of the Spirit as their own adoption into the family of God, and now they are joint heirs with Jesus. Oh, and now the story of Jesus being baptized says the same thing. So it might be an attempt on the Gospel authors to try to appeal to that conceptualization of adoption into the family of God."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 145
     timestamp: "00:24:22.516"
 showAllEpisodes: true

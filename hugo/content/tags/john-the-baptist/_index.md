@@ -10,7 +10,7 @@ featuredItems:
     label: "Christmaker!"
 quotes:
   - text: "John the Baptist was the bigger deal in the timeframe, in the time period. He was a huge deal prophet of that era. And so somehow, these books need to find a way to supplant his fame and his importance with Jesus's fame and Jesus's importance."
-    speaker: "Dan McClellan"
+    speaker: "Dan Beecher"
     episode: 144
     timestamp: "00:05:31.260"
   - text: "Jesus being baptized by John, which seems to indicate, at the very least, it indicates Jesus' acceptance of John, his teaching, his movement, right, in some way, shape or form."
@@ -22,7 +22,7 @@ quotes:
     episode: 61
     timestamp: "00:11:15.740"
   - text: "Herod, who feared lest the great influence John had over the people might put it into his power and inclination to raise a rebellion, for they seemed ready to do anything he should advise, thought it best by putting him to death to prevent any mischief he might cause."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 144
     timestamp: "00:27:41.846"
 showTopEpisodes: true

@@ -11,15 +11,15 @@ featuredItems:
     label: "Polygamy!"
 quotes:
   - text: "We see a lot of arguments about who is and is not allowed to be a pastor and what the Bible says about the requirements for being a pastor. And the problem is the word pastor only occurs one time in the entire New Testament."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 144
     timestamp: "00:32:39.506"
   - text: "The big problem is that that isn't in Ephesians 4, and that's somewhere else where they're actually talking about an overseer, a word in Greek that is frequently translated bishop. That's what they're talking about in those other passages. And in Ephesians 4:11, we just said he himself granted that some are apostles, prophets, evangelists, pastors, and teachers to equip the saints for the work of ministry, for building up the body of Christ. That's the only reference to pastors anywhere in the New Testament."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 144
     timestamp: "00:34:09.743"
   - text: "In other words, an overseer is not a pastor according to the New Testament, right?"
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 144
     timestamp: "00:49:51.079"
   - text: "A lot of people try to insist that when it says overseer or bishop, that means pastor, but it doesn't. Pastor is only mentioned once in all of the New Testament, and that is in Ephesians 4."

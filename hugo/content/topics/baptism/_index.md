@@ -11,11 +11,11 @@ featuredItems:
     label: "Christmaker! with James McGrath"
 quotes:
   - text: "Jesus being baptized by John the Baptist is a little bit of an embarrassment."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 145
     timestamp: "00:02:48.292"
   - text: "Baptism seems to have been kind of an incremental elaboration on the mikveh, which was a purification bath. ... it was not so much a matter of ritual purification so much as a means of receiving forgiveness for sins."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 145
     timestamp: "00:04:21.676"
   - text: "Jesus being baptized by John ... at the very least, it indicates Jesus' acceptance of John, his teaching, his movement, right, in some way, shape or form."

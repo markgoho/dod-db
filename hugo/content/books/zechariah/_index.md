@@ -19,11 +19,11 @@ featuredItems:
     label: "Should Wives Submit?"
 quotes:
   - text: "This is more apocalyptic imagery, but you can— this is where people are like, it's a basket and there's somebody in the basket riding in the basket and it has a leaden roof. This is obviously an airplane or a UFO or something like that. Obviously, because you can't imagine the apocalyptic imagination of ancient Judaism having any actual validity or legitimacy to it."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 135
     timestamp: "00:54:37.082"
   - text: "I think probably the most plausible thing is that we can just say they were using metaphors. They were coming up with visual metaphors."
-    speaker: "Dan McClellan"
+    speaker: "Dan Beecher"
     episode: 135
     timestamp: "00:55:51.857"
   - text: "So it's kind of like the prosecutor for the divine council for God."
