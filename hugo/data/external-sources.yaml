@@ -15,8 +15,8 @@ meyers-2005-exodus:
   tradition: null
 
 coogan-brief-4e-summary:
-  author: null
-  title: "Student chapter 6 summary for Michael D. Coogan and Cynthia R. Chapman, A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 6 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
   series: "OUP Learning Link"
   publisher: "Oxford University Press"
   year: 2019
@@ -85,8 +85,8 @@ martin-rlst152-l13:
   tradition: null
 
 ehrman-brief-5e-ch9-summary:
-  author: null
-  title: "Student chapter 9 summary for Bart D. Ehrman, A Brief Introduction to the New Testament"
+  author: "Bart D. Ehrman"
+  title: "Student chapter 9 summary of A Brief Introduction to the New Testament"
   series: "OUP Learning Link"
   publisher: "Oxford University Press"
   year: 2020
@@ -99,8 +99,8 @@ ehrman-brief-5e-ch9-summary:
   tradition: null
 
 ehrman-brief-5e-ch11-summary:
-  author: null
-  title: "Student chapter 11 summary for Bart D. Ehrman, A Brief Introduction to the New Testament"
+  author: "Bart D. Ehrman"
+  title: "Student chapter 11 summary of A Brief Introduction to the New Testament"
   series: "OUP Learning Link"
   publisher: "Oxford University Press"
   year: 2020
@@ -113,8 +113,8 @@ ehrman-brief-5e-ch11-summary:
   tradition: null
 
 ehrman-brief-5e-ch16-summary:
-  author: null
-  title: "Student chapter 16 summary for Bart D. Ehrman, A Brief Introduction to the New Testament"
+  author: "Bart D. Ehrman"
+  title: "Student chapter 16 summary of A Brief Introduction to the New Testament"
   series: "OUP Learning Link"
   publisher: "Oxford University Press"
   year: 2020

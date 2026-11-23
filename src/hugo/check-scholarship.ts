@@ -386,6 +386,16 @@ export async function checkScholarship(root: string): Promise<string[]> {
       errors,
     ) ?? {};
 
+  // The publish rule counts sources by author; an authorless summary would
+  // count as independent of the book it summarises.
+  for (const [id, source] of Object.entries(registry)) {
+    if (source.kind === "publisher-summary" && !source.author) {
+      errors.push(
+        `${rel(root, registryPath)}: source "${id}" is a publisher-summary with no author; give it the summarised book's author`,
+      );
+    }
+  }
+
   const episodeData = parseWith(
     EpisodesSchema,
     await loadOptional(episodesPath, root, errors, p => Bun.file(p).json()),

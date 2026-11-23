@@ -74,6 +74,12 @@ describe("checkScholarship", () => {
     ]);
   });
 
+  test("fails when a publisher summary has no author", async () => {
+    expect(await check("summary-no-author")).toEqual([
+      `hugo/data/external-sources.yaml: source "textbook-summary" is a publisher-summary with no author; give it the summarised book's author`,
+    ]);
+  });
+
   test("fails a non-draft page with fewer than 3 statements", async () => {
     expect(await check("two-statements")).toEqual([
       `${page}: publish rule: 2 statements; needs at least 3`,

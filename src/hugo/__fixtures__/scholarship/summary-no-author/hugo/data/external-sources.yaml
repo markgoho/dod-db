@@ -1,0 +1,55 @@
+scholarly-book:
+  author: "Ann Author"
+  title: "A Commentary"
+  series: null
+  publisher: "University Press"
+  year: 2005
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher excerpt PDF, open"
+  url: "https://example.org/commentary.pdf"
+  hostAuthored: false
+  tradition: null
+
+reference-lecture:
+  author: "Leo Lecturer"
+  title: "Lecture 7 transcript"
+  series: "Open Courses"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://example.org/lecture-7"
+  hostAuthored: false
+  tradition: null
+
+tradition-guide:
+  author: null
+  title: "A Study Guide"
+  series: null
+  publisher: "Example Church Press"
+  year: 2010
+  edition: null
+  class: Tradition
+  kind: study-bible
+  access: "Publisher page, open"
+  url: "https://example.org/guide"
+  hostAuthored: false
+  tradition: "Example Church"
+
+textbook-summary:
+  author: null
+  title: "Student chapter 6 summary of A Textbook"
+  series: "Companion Site"
+  publisher: "University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://example.org/summary"
+  hostAuthored: false
+  tradition: null

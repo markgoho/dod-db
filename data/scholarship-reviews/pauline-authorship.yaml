@@ -304,7 +304,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "11 statements. Core (pastorals) cites the Ehrman ch. 16 summary (Reference), Martin l17 and l19 (Reference; one author, counted once) and Bulundwe (Scholarly). That is 3 independent sources by author, or 2 at full scope, since Bulundwe's sentence covers 2 Timothy only (pastorals/4–5). The rule holds on Ehrman ch. 16 + Martin alone. If the Ehrman edition fails, it holds on Martin + Bulundwe only if the owner accepts Bulundwe's class and scope. The ch. 11 summary is a separate null-author registry entry (as ch. 9 is for #95) but isn't cited under the core. Martin's course assigns Ehrman's full NT textbook (4th ed., 2007): independent by author, but related.",
+      note: "11 statements. Core (pastorals) cites the Ehrman ch. 16 summary (Reference), Martin l17 and l19 (Reference; one author, counted once) and Bulundwe (Scholarly). That is 3 independent sources by author, or 2 at full scope, since Bulundwe's sentence covers 2 Timothy only (pastorals/4–5). The rule holds on Ehrman ch. 16 + Martin alone. If the Ehrman edition fails, it holds on Martin + Bulundwe only if the owner accepts Bulundwe's class and scope. The ch. 11 summary isn't cited under the core; if it were, it would count once with ch. 16, since every Ehrman summary (ch. 9, 11, 16) now carries author Bart D. Ehrman. Count unchanged by that author change. Martin's course assigns Ehrman's full NT textbook (4th ed., 2007): independent by author, but related.",
     }
   consensus-wording:
     {
