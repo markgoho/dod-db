@@ -104,13 +104,9 @@
     display: block;
   }
 
+  /* Stacked cells carry their own headings (td::before); the column header row has no job. */
   .scholarship-sources__table thead {
-    block-size: 1px;
-    clip-path: inset(50%);
-    inline-size: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
+    display: none;
   }
 
   .scholarship-sources__table tbody {
