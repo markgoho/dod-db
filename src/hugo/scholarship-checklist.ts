@@ -306,6 +306,12 @@ export async function buildChecklist(
       ? review.leads.map(lead => `- [ ] ${lead}`)
       : ["None."]),
     "",
+    "### Uncited (read, not on the page)",
+    "",
+    ...(review.uncited.length > 0
+      ? review.uncited.map(entry => `- [ ] ${entry}`)
+      : ["None."]),
+    "",
     "---",
     "",
     "When you're done, I record each result in the review file, apply any failures, and recompute the publish rule (#93 step 4). If the rule holds, I set `review` and `sourcesRead` to your review date, remove `draft`, and push.",

@@ -25,3 +25,5 @@ sources:
     }
 leads:
   - "Another Book, p. 9: a snippet not read in the source."
+uncited:
+  - "Scholarly Book, p. 7: read in full; broader than any statement."

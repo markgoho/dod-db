@@ -80,6 +80,10 @@ Check the Speaker and the text, and read about two minutes either side for any h
 
 - [ ] Another Book, p. 9: a snippet not read in the source.
 
+### Uncited (read, not on the page)
+
+- [ ] Scholarly Book, p. 7: read in full; broader than any statement.
+
 ---
 
 When you're done, I record each result in the review file, apply any failures, and recompute the publish rule (#93 step 4). If the rule holds, I set `review` and `sourcesRead` to your review date, remove `draft`, and push.

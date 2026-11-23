@@ -7,7 +7,15 @@
       {{- $work = merge $work (dict "url" .) -}}
     {{- end -}}
     {{- with .author -}}
-      {{- $work = merge $work (dict "author" (dict "@type" "Person" "name" .)) -}}
+      {{- $people := slice -}}
+      {{- range split . " and " -}}
+        {{- $people = $people | append (dict "@type" "Person" "name" .) -}}
+      {{- end -}}
+      {{- if eq (len $people) 1 -}}
+        {{- $work = merge $work (dict "author" (index $people 0)) -}}
+      {{- else -}}
+        {{- $work = merge $work (dict "author" $people) -}}
+      {{- end -}}
     {{- end -}}
     {{- with .publisher -}}
       {{- $work = merge $work (dict "publisher" (dict "@type" "Organization" "name" .)) -}}

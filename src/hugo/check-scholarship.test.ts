@@ -126,4 +126,10 @@ describe("checkScholarship", () => {
       `${page}: review has no rules.publish-rule entry`,
     ]);
   });
+
+  test("fails when an uncited entry is not a string", async () => {
+    expect(await check("uncited-not-strings")).toEqual([
+      "data/scholarship-reviews/test-page.yaml: uncited.0: Invalid input: expected string, received object",
+    ]);
+  });
 });

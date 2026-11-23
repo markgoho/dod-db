@@ -165,7 +165,7 @@ A work outside the show cited by a **Synthesis Page**, classed as Scholarly, Ref
 _Avoid_: Link
 
 **Lead**:
-A pointer to a passage in an **External Source** that has not been read in the source itself, such as a snippet or a quote found in another work. A Lead is never cited.
+A pointer to a passage in an **External Source** that has not been read in the source itself, such as a snippet or a quote found in another work. A Lead is never cited. A passage read in the source itself but not cited is recorded as `uncited`, not as a Lead.
 _Avoid_: Citation, snippet source
 
 ## Relationships

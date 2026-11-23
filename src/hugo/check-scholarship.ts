@@ -92,6 +92,7 @@ export const ReviewSchema = z.object({
   rules: ReviewSectionSchema,
   sources: ReviewSectionSchema,
   leads: z.array(z.string()).default([]),
+  uncited: z.array(z.string()).default([]),
 });
 
 const EpisodesSchema = z.array(
