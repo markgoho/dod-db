@@ -105,8 +105,8 @@
         </ol>
         {{ if $undated }}
           <section class="tl">
-            <h2 class="type-section-title">Not dated by the sources</h2>
-            <p class="tl-meta">Events the sources cited here give no date for. They sit outside the timeline, and are never placed by a tradition's date.</p>
+            <h2 class="type-section-title">Not placed on the timeline</h2>
+            <p class="tl-meta">Events the sources date only conditionally, or not at all. They sit outside the timeline, and are never placed by a tradition's date.</p>
             <ul class="tl-list">
               {{ range $undated }}{{ partial "prototype/timeline-entry" (merge $ctx (dict "e" . "track" false)) }}{{ end }}
             </ul>
@@ -125,8 +125,8 @@
         </ol>
         {{ if $undated }}
           <section class="tl">
-            <h2 class="type-section-title">Not dated by the sources</h2>
-            <p class="tl-meta">Events the sources cited here give no date for. They sit outside the timeline, and are never placed by a tradition's date.</p>
+            <h2 class="type-section-title">Not placed on the timeline</h2>
+            <p class="tl-meta">Events the sources date only conditionally, or not at all. They sit outside the timeline, and are never placed by a tradition's date.</p>
             <ul class="tl-list">
               {{ range $undated }}{{ partial "prototype/timeline-entry" (merge $ctx (dict "e" . "track" false)) }}{{ end }}
             </ul>

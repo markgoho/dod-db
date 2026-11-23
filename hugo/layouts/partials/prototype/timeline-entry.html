@@ -32,7 +32,7 @@
         <p class="tl-date">{{ .display }}</p>
         {{ with .note }}<p class="tl-meta">{{ . }}</p>{{ end }}
       {{ else }}
-        <p class="tl-label">No date in the sources</p>
+        <p class="tl-label">No firm date in the sources</p>
         <p>{{ $e.undated.statement }}</p>
       {{ end }}
       {{ with $e.seeAlso }}{{ $t := index $.byId . }}<p class="tl-meta">For when the account was written, see <a href="#{{ . }}">{{ $t.title }}</a>.</p>{{ end }}

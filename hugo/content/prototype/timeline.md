@@ -136,11 +136,11 @@ sources:
     class: "Tradition"
     access: "Ministry website, open"
     url: "https://www.gotquestions.org/Book-of-Deuteronomy.html"
-  gqExodus:
-    full: "Got Questions Ministries, “What was the date of the exodus from Egypt?”"
+  abrExodus:
+    full: "Bryant G. Wood, “The Biblical Date for the Exodus Is 1446 BC: A Response to James Hoffmeier”, Associates for Biblical Research (2009)"
     class: "Tradition"
     access: "Ministry website, open"
-    url: "https://www.gotquestions.org/date-of-the-exodus.html"
+    url: "https://biblearchaeology.org/the-biblical-date-for-the-exodus-is-1446-bc-a-response-to-james-hoffmeier/"
   abrJericho:
     full: "Bryant G. Wood, “Did the Israelites Conquer Jericho? A New Look at the Archaeological Evidence”, Associates for Biblical Research (2008; reprinted from Biblical Archaeology Review 16.2, 1990)"
     class: "Tradition"
@@ -152,7 +152,7 @@ entries:
     kind: event
     title: "Fall of Samaria and the northern kingdom"
     critical:
-      display: "722 or 721 BCE"
+      display: "722/721 BCE"
       from: -722
       to: -721
       sort: -722
@@ -182,13 +182,14 @@ entries:
     kind: composition
     title: "Judges, as edited into the Deuteronomistic History"
     critical:
-      display: "After 622 BCE; finished soon after 562 BCE"
+      display: "After 622 BCE; probably finished soon after 562 BCE"
       note: "The date is for the edited history from Joshua to 2 Kings, of which Judges is part. The sources read give no date for the older stories inside it."
       from: -622
       to: -560
       sort: -622
       cites:
         - { source: hayes12, locator: "transcript", quote: "The whole unit, as a whole, was redacted after 622: that's clear." }
+        - { source: hayes12, locator: "transcript", quote: "That was when King Jehoiachin was released from prison in Babylon, in 562." }
         - { source: hayes12, locator: "transcript", quote: "So the work was probably concluded shortly after that date" }
         - { source: nabreJudges, locator: "introduction", quote: "The principal contribution of the Deuteronomistic historian to the Book of Judges is the thematic introduction to—and theological evaluation of—the period of the Judges in 2:1–3:6" }
     triggers:
@@ -199,7 +200,7 @@ entries:
     title: "The Priestly source, including Genesis 1"
     critical:
       display: "Exilic or post-exilic period"
-      note: "Placed from the fall of Jerusalem onward. Genesis 1 is assigned to the Priestly source; the date is for the Priestly material as a whole, in its final form."
+      note: "Placed from the fall of Jerusalem onward. Genesis 1 is assigned to the Priestly source; the date is for the Priestly material as a whole, in its final form. The same source calls this dating still debated."
       anchor: fall-of-jerusalem
       from: -587
       open: true
@@ -207,6 +208,7 @@ entries:
       cites:
         - { source: hayes5, locator: "transcript", quote: "Genesis 1, the first creation account, is attributed to P." }
         - { source: hayes9, locator: "transcript", quote: "They reached their final form in the exilic or post-exilic period." }
+        - { source: hayes5, locator: "transcript", quote: "this is one of Wellhausen's most controversial points that's still hotly debated today" }
     triggers:
       - { episode: 1, speaker: "Dan McClellan", timestamp: "00:05:36.230", text: "So the first creation account, probably 8th-7th century BCE, somewhere around there; Genesis 1, the later creation account, probably 6th, maybe even 5th century BCE." }
 
@@ -268,14 +270,14 @@ entries:
       from: -1406
       holder: "Got Questions Ministries, an evangelical ministry,"
       cites:
-        - { source: gqDeuteronomy, locator: "summary", quote: "These sermons were given during the 40-day period prior to Israel’s entering the Promised Land." }
-        - { source: gqDeuteronomy, locator: "summary", quote: "The year was 1406 B.C." }
+        - { source: gqDeuteronomy, locator: "Date of Writing", quote: "These sermons were given during the 40-day period prior to Israel’s entering the Promised Land." }
+        - { source: gqDeuteronomy, locator: "Date of Writing", quote: "The year was 1406 B.C." }
     triggers:
       - { episode: 146, speaker: "Dan McClellan", timestamp: "00:41:37.928", text: "it's supposed to date to or after the Exodus, uh, the, the 40 years wandering before everybody enters into Israel. So 1200 BCE, 1400 BCE, depending on where you imagine this, uh, what time period you imagine this happened in. The reality is that it was probably brought together under King Josiah toward the end of the 600s BCE." }
 
   - id: jericho
     kind: event
-    title: "Destruction of Jericho's walled Middle Bronze Age city"
+    title: "Destruction of Canaanite Jericho"
     critical:
       display: "1550–1520 BCE"
       note: "Radiocarbon dates for an enemy attack that destroyed the city completely."
@@ -315,7 +317,7 @@ entries:
     kind: event
     title: "The Exodus"
     undated:
-      statement: "The sources give it no date. Dating it from the Bible's own chronology is called “an exercise in futility”, and proposed dates run from the sixteenth to the early twelfth century BCE, with no consensus. Two introductions say that if it has a historical basis, the thirteenth century BCE is the most plausible setting."
+      statement: "The sources give it no firm date. Dating it from the Bible's own chronology is called “an exercise in futility”, and proposed dates run from the sixteenth to the early twelfth century BCE, with no consensus. Two introductions say that if it has a historical basis, the thirteenth century BCE is the most plausible setting."
       cites:
         - { source: meyers, locator: "p. 8", quote: "Attempts to use the Bible’s own chronology to “date” the exodus is an exercise in futility." }
         - { source: meyers, locator: "p. 8", quote: "there are strong proponents, with no consensus or prospects for resolution, of dates ranging from the sixteenth to the early twelfth centuries bce" }
@@ -325,9 +327,9 @@ entries:
     tradition:
       display: "1446 BCE"
       from: -1446
-      holder: "Got Questions Ministries, an evangelical ministry,"
+      holder: "Associates for Biblical Research, an evangelical apologetics ministry,"
       cites:
-        - { source: gqExodus, locator: "article", quote: "The early date, 1446 BC, is the most common date applied in conservative interpretations of Scripture." }
+        - { source: abrExodus, locator: "article", quote: "1 Kgs 6:1 and 1 Chr 6:33–37 converge on a date of 1446 BC for the exodus" }
     triggers:
       - { episode: 21, speaker: "Dan McClellan", timestamp: "00:25:18.080", text: "And so on balance, I and most scholars, the overwhelming majority of critical scholars, would say the Exodus, as it is told in the book of Exodus, is entirely implausible. It is plausible that there's a historical core, some kind of little kernel of history that just grew and grew and grew" }
       - { episode: 138, speaker: "Dan McClellan", timestamp: "00:44:09.004", text: "So the— if you date the Exodus to the 1400s BCE, which is what a lot of folks do, they'll say, oh, this is Amenhotep II, that was the Pharaoh. 1440 to 1420, somewhere around there is the date of the Exodus." }
