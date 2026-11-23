@@ -27,9 +27,9 @@ citations:
     }
   moses/4:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Kaltner, Bible Odyssey “Egypt” (2017), section “Is Israel mentioned in Egyptian sources?”. Names Moses, so it does what moses/3 can't. Flag is the source class only: Bible Odyssey not yet ruled on (#86).",
+      note: "Kaltner, Bible Odyssey “Egypt” (2017), section “Is Israel mentioned in Egyptian sources?”. Names Moses, so it does what moses/3 can't. Flag is the source class only: Bible Odyssey not yet ruled on (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
     }
   merneptah/1: { agent: pass, owner: "", note: "Meyers p. 5" }
   merneptah/2:
@@ -40,18 +40,23 @@ citations:
     }
   merneptah/3:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Kaltner, Bible Odyssey “Egypt”; source class (#86).",
+      note: "Kaltner, Bible Odyssey “Egypt”; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
     }
   merneptah/4:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Kaltner: “a group of people and not … a place”. The Coogan summary says “as a nation”, so the statement follows Kaltner and doesn't cite Coogan here. Source class (#86).",
+      note: "Kaltner: “a group of people and not … a place”. The Coogan summary says “as a nation”, so the statement follows Kaltner and doesn't cite Coogan here. Source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
     }
   merneptah/5: { agent: pass, owner: "", note: "Hayes l7 ch. 3 [00:10:06]" }
-  merneptah/6: { agent: flag, owner: "", note: "Kaltner; source class (#86)." }
+  merneptah/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Kaltner; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+    }
   history/1:
     {
       agent: pass,
@@ -150,9 +155,9 @@ citations:
     }
   sea/1:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Yoo, Bible Odyssey “Red Sea” (2021); source class (#86).",
+      note: "Yoo, Bible Odyssey “Red Sea” (2021); source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
     }
   sea/2:
     {
@@ -160,22 +165,42 @@ citations:
       owner: "",
       note: "Hayes l8 ch. 2 [00:06:51]. Hayes is flat (“mistranslation”); the statement uses Yoo's weaker “not accurately translated” and “may mean”.",
     }
-  sea/3: { agent: flag, owner: "", note: "Yoo; source class (#86)." }
+  sea/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+    }
   sea/4:
     {
       agent: flag,
       owner: "",
       note: "HarperCollins Bible Dictionary, entry “Red Sea”, read on Bible Odyssey (citation url). Flag: see sources.harpercollins-2009-dictionary.",
     }
-  sea/5: { agent: flag, owner: "", note: "Yoo; source class (#86)." }
+  sea/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+    }
   sea/6:
     {
       agent: flag,
       owner: "",
       note: "HarperCollins Bible Dictionary, entry “Red Sea”. Flag: see sources.harpercollins-2009-dictionary.",
     }
-  sea/7: { agent: flag, owner: "", note: "Yoo; source class (#86)." }
-  sea/8: { agent: flag, owner: "", note: "Yoo; source class (#86)." }
+  sea/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+    }
+  sea/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+    }
   sea/9:
     {
       agent: pass,
@@ -184,9 +209,9 @@ citations:
     }
   sea/10:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Yoo; backs the short answer's “does not mean ‘Red Sea’”. Source class (#86).",
+      note: "Yoo; backs the short answer's “does not mean ‘Red Sea’”. Source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
     }
   sargon/1:
     {
@@ -285,17 +310,17 @@ sources:
     }
   kaltner-2017-egypt:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
       edition: "Bible Odyssey (Society of Biblical Literature), article dated 20 June 2017; John Kaltner, Rhodes College",
-      note: "Bible Odyssey articles are a source type #86 didn't rule on. Agent's proposal: Reference (signed articles by professional scholars on SBL's own public reference site), judged per author, since some contributors are students. Owner decides.",
+      note: "Bible Odyssey articles are a source type #86 didn't rule on. Agent's proposal: Reference (signed articles by professional scholars on SBL's own public reference site), judged per author, since some contributors are students. Owner decides. Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
     }
   yoo-2021-red-sea:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
       edition: "Bible Odyssey (Society of Biblical Literature), article dated 2 September 2021; Philip Y. Yoo, University of British Columbia",
-      note: "Same class question as kaltner-2017-egypt.",
+      note: "Same class question as kaltner-2017-egypt. Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
     }
   harpercollins-2009-dictionary:
     {
@@ -325,4 +350,4 @@ uncited:
   - "Pithom and Rameses: Meyers p. 6 says they “escape positive identification”; Yoo and Hayes l7 identify Rameses with Pi-Ramesses, rebuilt in the 13th century. A statement would have to show the split, attributed."
   - "Hyksos: the Coogan summary (Josephus's exodus-as-expulsion) and Hayes l7 (the Hyksos era as the setting for Joseph and the descent; “really not well supported”) describe different theories. Only Coogan's is on the page, inside date. Ep 138 has a Taking Issue segment on the Hyksos (00:35:03–00:50:08; 00:48:06: “attempts to find Joseph, Jacob, the enslaved Hebrews, Moses, those folks in the Hyksos is misguided at best”) for a Hyksos statement."
   - "Stanislaw Krajewski, “On Some Arguments Regarding the Number of Israelites During the Exodus and Their Relevance”, Religions 17(6): 737 (MDPI, 2026), abstract and § 1, read 2026-11-23 in a browser: the 600,000 figure is “widely regarded as highly implausible by non-fundamentalist readers of the Torah”; Numbers 1:46's 603,550; a population “well exceeding two million”; scholars treat the numbers as fiction or exaggeration or reread elef as a clan, family or military unit. Was numbers/1–5 and 7. Dropped 2026-11-23 for the Coogan ch. 9 summary: the author is a philosopher, not a biblical scholar, MDPI's standing is in question and the paper later argues a theological case. The page loses “widely regarded”, the two-million figure and the elef reading. An elef sentence would also sit beside Coogan's “no reasonable interpretation … has ever been presented”, so it would need attributing to Krajewski by name."
-  - "Zev Farber, “The Torah's Exodus”, TheTorah.com (2015, updated 2026), section “The Number of Israelites”, read in full 2026-11-23: “All historians agree that such a number could not have been supported in ancient Egypt”; rejects the eleph-as-clan reading because Exod 38:26 gives 603,550; reports Friedman's view that the numbers are an exaggeration, perhaps a few hundred. Author holds a PhD in Hebrew Bible (Emory). Not cited: TheTorah.com is a source type #86 didn't rule on (an edited online magazine of the Academic Torah Institute, close to the excluded blog class), and the essay ends in a religious argument. Would give numbers a second, independent author if the owner rules the site Reference."
+  - "Zev Farber, “The Torah's Exodus”, TheTorah.com (2015, updated 2026), section “The Number of Israelites”, read in full 2026-11-23: “All historians agree that such a number could not have been supported in ancient Egypt”; rejects the eleph-as-clan reading because Exod 38:26 gives 603,550; reports Friedman's view that the numbers are an exaggeration, perhaps a few hundred. Author holds a PhD in Hebrew Bible (Emory). Not cited: TheTorah.com is a source type #86 didn't rule on (an edited online magazine of the Academic Torah Institute, close to the excluded blog class), and the essay ends in a religious argument. Ruled 2026-11-23 (#86): TheTorah.com is not an External Source class, so this stays uncited."

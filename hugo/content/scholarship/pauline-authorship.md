@@ -1,6 +1,6 @@
 ---
 title: "Pauline Authorship"
-dek: "What publicly readable scholarship says about which of the letters in Paul's name he wrote."
+dek: "Which letters in Paul's name scholars think he wrote, which they doubt, and why."
 draft: true
 core: pastorals
 sourcesRead:

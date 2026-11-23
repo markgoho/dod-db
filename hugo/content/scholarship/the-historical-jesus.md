@@ -1,6 +1,6 @@
 ---
 title: "The Historical Jesus"
-dek: "What publicly readable scholarship says about whether Jesus existed and what can be known about him."
+dek: "Whether Jesus existed, who argues otherwise, and what scholars think can be known about his life."
 draft: true
 core: existence
 sourcesRead:

@@ -1,6 +1,6 @@
 ---
 title: "Moses and the Exodus"
-dek: "What publicly readable scholarship says about the evidence for the Exodus and for Moses."
+dek: "What archaeology, Egyptian records and the text itself tell scholars about the Exodus and Moses."
 draft: true
 core: evidence
 sourcesRead:
