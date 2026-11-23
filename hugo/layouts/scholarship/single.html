@@ -1,5 +1,5 @@
 {{ define "head-styles" }}
-  {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") | resources.Concat "css/scholarship-single.css" | resources.Minify }}
+  {{ $inlineCSS := slice (resources.Get "css/_prev-next-nav.css") (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") | resources.Concat "css/scholarship-single.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
@@ -36,13 +36,29 @@
   {{ end }}
   {{ $groups = $groups | uniq }}
 
+  {{ $nav := partial "taxonomy-prev-next" (dict "page" . "taxonomy" "scholarship") }}
+  {{ $titleTransitionName := partial "transition-name" (dict "prefix" "scholarship-title" "source" .Title) }}
 
+  {{/* Outside the reading column so it gets the full width, as on term pages. */}}
+  {{ partial "prev-next-nav" (dict
+    "ariaLabel" "Scholarship Page navigation"
+    "prev" $nav.prev
+    "next" $nav.next
+    "allHref" "/scholarship/"
+    "allLabel" "All Scholarship Pages"
+    "taxonomyName" "scholarship"
+    )
+  }}
   <article class="scholarship-page">
     <header class="page-hero">
       <p class="page-hero__eyebrow type-eyebrow panel panel--accent">
         Scholarship Page
       </p>
-      <h1 class="page-hero__title">{{ .Title }}</h1>
+      <h1
+        class="page-hero__title"
+        style="view-transition-name: {{ $titleTransitionName }}">
+        {{ .Title }}
+      </h1>
       <div class="scholarship-dek tag-hero__dek">
         <p>{{ $p.dek }}</p>
         {{ partial "scholarship-date-line.html" . }}

@@ -3,7 +3,8 @@
   conventions each taxonomy expects. Returns a dict: { prev, next }.
 
   Args:
-  taxonomy – taxonomy name ("guests", "topics", "tags", "books", "segments")
+  taxonomy – taxonomy name ("guests", "topics", "tags", "books", "segments"),
+  or "scholarship" for the Scholarship section
   page     – the current term page
   */
 -}}
@@ -42,6 +43,11 @@
 {{- else if eq $taxonomyName "segments" -}}
   {{- range site.Taxonomies.segments.ByCount -}}
     {{- $termPages = $termPages | append .Page -}}
+  {{- end -}}
+{{- else if eq $taxonomyName "scholarship" -}}
+  {{- /* A section, not a taxonomy. Drafts appear only when Hugo builds them. */ -}}
+  {{- with site.GetPage "/scholarship" -}}
+    {{- $termPages = .Pages.ByTitle -}}
   {{- end -}}
 {{- end -}}
 
