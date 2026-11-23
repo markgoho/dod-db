@@ -1,0 +1,20 @@
+{{- /*
+  Scholarship Page hero meta, for the metaPartial slot of taxonomy-hero:
+  the dek with its date line, then question / source / Episode counts.
+  */
+-}}
+{{- $stats := partial "scholarship-stats.html" . -}}
+<div class="scholarship-dek tag-hero__dek">
+  <p>{{ .Params.dek }}</p>
+  {{ partial "scholarship-date-line.html" . }}
+</div>
+<ul class="scholarship-stats" role="list">
+  {{ range slice (slice $stats.questions "Question" "Questions") (slice $stats.sources "Source" "Sources") (slice $stats.episodes "Episode" "Episodes") }}
+    <li class="scholarship-stat">
+      <span class="stat-display__number">{{ index . 0 }}</span>
+      <span class="stat-display__label"
+        >{{ cond (eq (index . 0) 1) (index . 1) (index . 2) }}</span
+      >
+    </li>
+  {{ end }}
+</ul>

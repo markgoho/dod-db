@@ -17,7 +17,6 @@
     {{ $triggerEpisodes = $triggerEpisodes | append .episode }}
   {{ end }}
   {{ $triggerEpisodes = $triggerEpisodes | uniq | sort }}
-  {{ $stats := partial "scholarship-stats.html" . }}
 
   {{ $sourceIds := partial "scholarship-source-ids.html" . }}
   {{ $shortCites := partial "scholarship-short-cite.html" . }}
@@ -37,166 +36,146 @@
   {{ end }}
   {{ $groups = $groups | uniq }}
 
-  {{ $nav := partial "taxonomy-prev-next" (dict "page" . "taxonomy" "scholarship") }}
-  {{ $titleTransitionName := partial "transition-name" (dict "prefix" "scholarship-title" "source" .Title) }}
 
-  {{/* Outside the reading column so it gets the full width, as on term pages. */}}
-  {{ partial "prev-next-nav" (dict
-    "ariaLabel" "Scholarship Page navigation"
-    "prev" $nav.prev
-    "next" $nav.next
-    "allHref" "/scholarship/"
-    "allLabel" "All Scholarship Pages"
-    "taxonomyName" "scholarship"
-    )
-  }}
-  <article class="scholarship-page">
-    <header class="page-hero">
-      <p class="page-hero__eyebrow type-eyebrow panel panel--accent">
-        Scholarship Page
-      </p>
-      <h1
-        class="page-hero__title"
-        style="view-transition-name: {{ $titleTransitionName }}">
-        {{ .Title }}
-      </h1>
-      <div class="scholarship-dek tag-hero__dek">
-        <p>{{ $p.dek }}</p>
-        {{ partial "scholarship-date-line.html" . }}
-      </div>
-      <ul class="scholarship-stats" role="list">
-        {{ range slice (slice $stats.questions "Question" "Questions") (slice $stats.sources "Source" "Sources") (slice $stats.episodes "Episode" "Episodes") }}
-          <li class="scholarship-stat">
-            <span class="stat-display__number">{{ index . 0 }}</span>
-            <span class="stat-display__label"
-              >{{ cond (eq (index . 0) 1) (index . 1) (index . 2) }}</span
+  <section class="term-page">
+    {{/* The shared page hero, full width as on term pages; the body reads in the column below. */}}
+    {{ partial "taxonomy-hero" (dict
+      "page" .
+      "taxonomy" "scholarship"
+      "eyebrow" "Scholarship Page"
+      "allLabel" "All Scholarship Pages"
+      "metaPartial" "scholarship-hero-meta.html"
+      )
+    }}
+
+
+    <article class="scholarship-page">
+      {{ $promptedBy := printf "Prompted by %d %s" (len $triggerEpisodes) (cond (eq (len $triggerEpisodes) 1) "Episode" "Episodes") }}
+      <div class="scholarship-provenance panel panel--muted">
+        {{ partial "scholarship-notice.html" . }}
+        <details class="scholarship-block">
+          <summary class="disclosure-summary">
+            <span class="type-eyebrow"
+              >{{ printf `%s · <mark class="scholarship-block__flag">not the show’s work</mark>` $promptedBy | safeHTML }}</span
             >
-          </li>
-        {{ end }}
-      </ul>
-    </header>
-
-    {{ $promptedBy := printf "Prompted by %d %s" (len $triggerEpisodes) (cond (eq (len $triggerEpisodes) 1) "Episode" "Episodes") }}
-    <div class="scholarship-provenance panel panel--muted">
-      {{ partial "scholarship-notice.html" . }}
-      <details class="scholarship-block">
-        <summary class="disclosure-summary">
-          <span class="type-eyebrow"
-            >{{ printf `%s · <mark class="scholarship-block__flag">not the show’s work</mark>` $promptedBy | safeHTML }}</span
-          >
-          <span class="scholarship-block__episodes" aria-hidden="true">
-            {{ range $triggerEpisodes }}
-              <span class="scholarship-block__episode">{{ . }}</span>
+            <span class="scholarship-block__episodes" aria-hidden="true">
+              {{ range $triggerEpisodes }}
+                <span class="scholarship-block__episode">{{ . }}</span>
+              {{ end }}
+            </span>
+          </summary>
+          <div class="scholarship-block__body tag-quotes__grid">
+            {{ range $triggers }}
+              {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
             {{ end }}
-          </span>
-        </summary>
-        <div class="scholarship-block__body tag-quotes__grid">
-          {{ range $triggers }}
-            {{ partial "quote-card" (dict "quote" . "episodesByNumber" $episodesByNumber) }}
-          {{ end }}
-        </div>
-      </details>
-    </div>
+          </div>
+        </details>
+      </div>
 
-    {{ range $group := $groups }}
+      {{ range $group := $groups }}
+        <section class="cloud-section">
+          <h2 class="type-section-title cloud-section__title">{{ $group }}</h2>
+          <div class="scholarship-questions panel">
+            {{ range where $p.statements "group" $group }}
+              <details class="scholarship-question" id="{{ .id }}">
+                <summary class="disclosure-summary">
+                  <span class="scholarship-question__question"
+                    >{{ .question }}</span
+                  >
+                  <span class="scholarship-question__short">{{ .short }}</span>
+                </summary>
+                <div class="scholarship-question__body">
+                  <p>{{ .text }}</p>
+                  <ul class="scholarship-cites" role="list">
+                    {{ range .cites }}
+                      {{ $s := index $registry .source }}
+                      <li class="scholarship-cite">
+                        <blockquote class="scholarship-cite__quote">
+                          “{{ .quote }}”
+                        </blockquote>
+                        {{/* Author-date goes to the Sources used row; the locator opens the passage. */}}
+                        <p class="scholarship-meta">
+                          {{ printf `<a href="#source-%s">%s</a>, <a href="%s" rel="noopener">%s</a>` (htmlEscape .source) (htmlEscape (index $shortCites .source)) (htmlEscape (.url | default $s.url)) (htmlEscape (.locator | default "source")) | safeHTML }}
+                        </p>
+                      </li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </details>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+
+
       <section class="cloud-section">
-        <h2 class="type-section-title cloud-section__title">{{ $group }}</h2>
-        <div class="scholarship-questions panel">
-          {{ range where $p.statements "group" $group }}
-            <details class="scholarship-question" id="{{ .id }}">
-              <summary class="disclosure-summary">
-                <span class="scholarship-question__question"
-                  >{{ .question }}</span
-                >
-                <span class="scholarship-question__short">{{ .short }}</span>
-              </summary>
-              <div class="scholarship-question__body">
-                <p>{{ .text }}</p>
-                <ul class="scholarship-cites" role="list">
-                  {{ range .cites }}
-                    {{ $s := index $registry .source }}
-                    <li class="scholarship-cite">
-                      <blockquote class="scholarship-cite__quote">
-                        “{{ .quote }}”
-                      </blockquote>
-                      {{/* Author-date goes to the Sources used row; the locator opens the passage. */}}
-                      <p class="scholarship-meta">
-                        {{ printf `<a href="#source-%s">%s</a>, <a href="%s" rel="noopener">%s</a>` (htmlEscape .source) (htmlEscape (index $shortCites .source)) (htmlEscape (.url | default $s.url)) (htmlEscape (.locator | default "source")) | safeHTML }}
-                      </p>
-                    </li>
-                  {{ end }}
-                </ul>
-              </div>
-            </details>
-          {{ end }}
+        <h2 class="type-section-title cloud-section__title">Sources used</h2>
+        <div class="scholarship-sources">
+          <table class="scholarship-sources__table">
+            <thead>
+              <tr>
+                <th scope="col">Source</th>
+                <th scope="col">Class</th>
+                <th scope="col">Where read</th>
+                <th scope="col">Date read</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{ range $sourceIds }}
+                {{ $s := index $registry . }}
+                <tr class="scholarship-source" id="source-{{ . }}">
+                  <td data-label="Source">
+                    <span class="scholarship-source__key"
+                      >{{ index $shortCites . }}</span
+                    >
+                    {{ partial "external-source-label.html" $s }}
+                  </td>
+                  <td data-label="Class">
+                    <span
+                      class="scholarship-class"
+                      data-class="{{ lower $s.class }}"
+                      >{{ $s.class }}</span
+                    >
+                  </td>
+                  <td data-label="Where read">
+                    <a href="{{ $s.url }}" rel="noopener">{{ $s.access }}</a>
+                  </td>
+                  <td data-label="Date read">
+                    {{ with index $sourceRead . }}
+                      {{ time.Format "2 Jan 2006" (time.AsTime .) }}
+                    {{ end }}
+                  </td>
+                </tr>
+              {{ end }}
+            </tbody>
+          </table>
         </div>
       </section>
-    {{ end }}
 
-
-    <section class="cloud-section">
-      <h2 class="type-section-title cloud-section__title">Sources used</h2>
-      <div class="scholarship-sources">
-        <table class="scholarship-sources__table">
-          <thead>
-            <tr>
-              <th scope="col">Source</th>
-              <th scope="col">Class</th>
-              <th scope="col">Where read</th>
-              <th scope="col">Date read</th>
-            </tr>
-          </thead>
-          <tbody>
-            {{ range $sourceIds }}
-              {{ $s := index $registry . }}
-              <tr class="scholarship-source" id="source-{{ . }}">
-                <td data-label="Source">
-                  <span class="scholarship-source__key"
-                    >{{ index $shortCites . }}</span
-                  >
-                  {{ partial "external-source-label.html" $s }}
-                </td>
-                <td data-label="Class">
-                  <span
-                    class="scholarship-class"
-                    data-class="{{ lower $s.class }}"
-                    >{{ $s.class }}</span
-                  >
-                </td>
-                <td data-label="Where read">
-                  <a href="{{ $s.url }}" rel="noopener">{{ $s.access }}</a>
-                </td>
-                <td data-label="Date read">
-                  {{ with index $sourceRead . }}
-                    {{ time.Format "2 Jan 2006" (time.AsTime .) }}
-                  {{ end }}
-                </td>
-              </tr>
-            {{ end }}
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    {{ $archive := slice }}
-    {{ range $taxonomy := slice "books" "tags" "topics" }}
-      {{ range index ($p.related | default dict) $taxonomy }}
-        {{ with partial "scholarship-related-term.html" (dict "taxonomy" $taxonomy "term" .) }}
-          {{ $archive = $archive | append . }}
+      {{ $archive := slice }}
+      {{ range $taxonomy := slice "books" "tags" "topics" }}
+        {{ range index ($p.related | default dict) $taxonomy }}
+          {{ with partial "scholarship-related-term.html" (dict "taxonomy" $taxonomy "term" .) }}
+            {{ $archive = $archive | append . }}
+          {{ end }}
         {{ end }}
       {{ end }}
-    {{ end }}
-    {{ with $archive }}
-      <section class="cloud-section">
-        <h2 class="type-section-title cloud-section__title">In the archive</h2>
-        <ul class="chip-list" role="list">
-          {{ range . }}
-            <li><a class="chip" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-          {{ end }}
-        </ul>
-      </section>
-    {{ end }}
-  </article>
+      {{ with $archive }}
+        <section class="cloud-section">
+          <h2 class="type-section-title cloud-section__title">
+            In the archive
+          </h2>
+          <ul class="chip-list" role="list">
+            {{ range . }}
+              <li>
+                <a class="chip" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
+    </article>
+  </section>
 {{ end }}
 
 {{ define "footer-scripts" }}

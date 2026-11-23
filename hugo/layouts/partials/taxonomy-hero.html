@@ -6,6 +6,11 @@
 {{- $definition := .definition | default "" -}}
 {{- $category := .category | default "" -}}
 {{- $knownAs := .knownAs | default slice -}}
+{{- /* Optional slots for pages built on this hero outside a taxonomy. */ -}}
+{{- $eyebrow := .eyebrow | default "" -}}
+{{- $allHref := .allHref | default (printf "/%s/" $taxonomyName) -}}
+{{- $allLabel := .allLabel | default (printf "All %s" (title $taxonomyName)) -}}
+{{- $metaPartial := .metaPartial | default "" -}}
 {{- $titleTransitionName := partial "transition-name" (dict "prefix" (printf "%s-title" $taxonomyName) "source" $page.Title) -}}
 {{- $nav := partial "taxonomy-prev-next" (dict "page" $page "taxonomy" $taxonomyName) -}}
 
@@ -21,22 +26,29 @@
     "ariaLabel" (printf "%s navigation" (title (singularize $taxonomyName)))
     "prev" $nav.prev
     "next" $nav.next
-    "allHref" (printf "/%s/" $taxonomyName)
-    "allLabel" (printf "All %s" (title $taxonomyName))
+    "allHref" $allHref
+    "allLabel" $allLabel
     "taxonomyName" $taxonomyName
     )
   }}
+  {{- with $eyebrow }}
+    <p class="page-hero__eyebrow type-eyebrow panel panel--accent">{{ . }}</p>
+  {{- end }}
   <h1
     class="page-hero__title"
     style="view-transition-name: {{ $titleTransitionName }}">
     {{ $page.Title }}
   </h1>
-  <div class="page-hero__meta page-hero__meta--headline panel">
-    <span class="stat-display__number">{{ len $page.Pages }}</span>
-    <span class="stat-display__label"
-      >{{ cond (eq (len $page.Pages) 1) "Episode" "Episodes" }}</span
-    >
-  </div>
+  {{- if $metaPartial }}
+    {{ partial $metaPartial $page }}
+  {{- else }}
+    <div class="page-hero__meta page-hero__meta--headline panel">
+      <span class="stat-display__number">{{ len $page.Pages }}</span>
+      <span class="stat-display__label"
+        >{{ cond (eq (len $page.Pages) 1) "Episode" "Episodes" }}</span
+      >
+    </div>
+  {{- end }}
   {{- with $definition }}
     <p class="tag-hero__dek">{{ . }}</p>
   {{- end }}

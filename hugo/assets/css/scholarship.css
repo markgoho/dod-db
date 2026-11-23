@@ -28,10 +28,18 @@
   text-align: start;
 }
 
+/* The hero runs full width; the dek keeps the body's reading measure. */
 .scholarship-dek {
   display: grid;
   gap: var(--space-2xs);
-  justify-self: stretch;
+  /* ch resolves against this font size, so measure at body size, as the column does. */
+  font-size: var(--step-0);
+  max-width: var(--content-max-width-measure);
+  width: 100%;
+}
+
+.scholarship-dek > p:first-child {
+  font-size: var(--step-1);
 }
 
 .scholarship-date-line,
