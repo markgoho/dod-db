@@ -70,23 +70,23 @@ citations:
       owner: "",
       note: "Coogan summary, section “Implications for Our Study”",
     }
-  core/1:
+  band/1:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary, section “Events at the Sea”. Was a lead. “May lie at the heart” kept as “may lie”; the short answer's “some scholars suggest” rests on core/2.",
+      note: "Coogan summary, section “Events at the Sea”. Was a lead. “May lie at the heart” kept as “may lie”; the size (“small band”) is the summary's own suggestion, so question, short answer and statement attribute it to the summary. No source read gives a small group as “some scholars” think.",
     }
-  core/2:
+  band/2:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 3 [00:10:06]; “some scholars think”. The statement says “escaped” for her “escape … at this time”.",
+      note: "Hayes l7 ch. 3 [00:10:06]; “some scholars think”, about plausibility, not size. The statement says “escaped” for her “escape … at this time”.",
     }
-  core/3:
+  band/3:
     {
       agent: flag,
       owner: "",
-      note: "Meyers p. 10. Same page: historicity perhaps “ceases to be an issue”. On p. 7 she reports the widely accepted Canaanite-origins hypothesis, under which the account “appears to be little more than a tale”. Not on the page; owner decides whether core should show that side.",
+      note: "Meyers p. 10. Same page: historicity perhaps “ceases to be an issue”. On p. 7 she reports the widely accepted Canaanite-origins hypothesis, under which the account “appears to be little more than a tale”. Not on the page; owner decides whether band should show that side.",
     }
   date/1:
     {
@@ -145,6 +145,7 @@ citations:
     }
   numbers/4: { agent: flag, owner: "", note: "Krajewski § 1; source class." }
   numbers/5: { agent: flag, owner: "", note: "Krajewski § 1; source class." }
+  numbers/7: { agent: flag, owner: "", note: "Krajewski § 1; source class." }
   numbers/6:
     {
       agent: pass,
@@ -166,16 +167,16 @@ citations:
   sea/3: { agent: flag, owner: "", note: "Yoo; source class (#86)." }
   sea/4:
     {
-      agent: pass,
+      agent: flag,
       owner: "",
-      note: "HarperCollins Bible Dictionary, entry “Red Sea”, read on Bible Odyssey (citation url).",
+      note: "HarperCollins Bible Dictionary, entry “Red Sea”, read on Bible Odyssey (citation url). Flag: see sources.harpercollins-2009-dictionary.",
     }
   sea/5: { agent: flag, owner: "", note: "Yoo; source class (#86)." }
   sea/6:
     {
-      agent: pass,
+      agent: flag,
       owner: "",
-      note: "HarperCollins Bible Dictionary, entry “Red Sea”",
+      note: "HarperCollins Bible Dictionary, entry “Red Sea”. Flag: see sources.harpercollins-2009-dictionary.",
     }
   sea/7: { agent: flag, owner: "", note: "Yoo; source class (#86)." }
   sea/8: { agent: flag, owner: "", note: "Yoo; source class (#86)." }
@@ -184,6 +185,12 @@ citations:
       agent: pass,
       owner: "",
       note: "Meyers p. 6; “virtually all” kept. The statement doesn't name Pithom and Rameses: Yoo and Hayes identify Rameses with Pi-Ramesses, against Meyers.",
+    }
+  sea/10:
+    {
+      agent: flag,
+      owner: "",
+      note: "Yoo; backs the short answer's “does not mean ‘Red Sea’”. Source class (#86).",
     }
   sargon/1:
     {
@@ -248,7 +255,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "11 statements (6 + 5 added 2026-11-23). Core (evidence) unchanged: Meyers (Scholarly), Coogan summary (Reference), Hayes l7 (Reference). Every new statement has at least one cite from an already-ruled source, so it survives a ruling against Bible Odyssey or Krajewski.",
+      note: "11 statements (6 + 5 added 2026-11-23). Core (evidence) unchanged: Meyers (Scholarly), Coogan summary (Reference), Hayes l7 (Reference). Fallbacks if Bible Odyssey or Krajewski is ruled out: merneptah keeps Meyers p. 5 and Hayes l7, but loses “a group of people rather than a place” and “how long they had been there” (Kaltner only). numbers loses its question's answer: the short answer and all but the Coogan sentence rest on Krajewski, so it would need rewording or cutting. sea loses “no clear answer” and “cannot mean ‘red’” (Yoo only) and would fall back to Hayes l8, HarperCollins (“not certain”) and Meyers p. 6, with the short answer reworded. moses keeps moses/1–2. date and band use no new source.",
     }
   consensus-wording:
     {
@@ -296,10 +303,10 @@ sources:
     }
   harpercollins-2009-dictionary:
     {
-      agent: pass,
+      agent: flag,
       owner: "",
       edition: "Abridged ed., HarperOne 2009 (as cited on each Bible Odyssey entry)",
-      note: "Bible dictionary, Reference. Read on Bible Odyssey, which reproduces the entries; each citation's url points at its entry.",
+      note: "Bible dictionary, so Reference by #80. Flag: read on SBL's reproduction, not the book, and the edition is from Bible Odyssey's credit line, not the publisher's catalogue (#93). Each citation's url points at its entry.",
     }
   krajewski-2026-israelites-number:
     {

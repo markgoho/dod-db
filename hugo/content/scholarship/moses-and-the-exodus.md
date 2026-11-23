@@ -19,10 +19,6 @@ watch:
     Red Sea,
     Reed Sea,
     yam suph,
-    "600,000",
-    2 million,
-    Pithom,
-    Rameses,
   ]
 statements:
   - id: evidence
@@ -123,11 +119,11 @@ statements:
         locator: "section “Implications for Our Study”"
         quote: "Although the accounts of the Exodus may not preserve the historical details of this event accurately, it certainly appears that some sort of exodus occurred in Israel’s history."
         read: 2026-11-22
-  - id: core
+  - id: band
     group: "How scholars read the account"
     question: "What might lie behind the story?"
-    short: "Some scholars suggest a much smaller escape by a small group."
-    text: "Some scholars think the story may have grown from a much smaller event. The chapter summary for Coogan and Chapman's introductory textbook suggests that at the heart of the traditions may lie a less grand story of a small band of escapees under Moses, who lost the pursuing Egyptian chariots in the mud of the “Reed Sea”. Christine Hayes reports that some scholars think the circumstantial evidence from Egypt lends plausibility to a story of slaves working on building projects who escaped. Carol Meyers judges that such analogues suggest a core of reality, although there is no specific historical grounding for the biblical account."
+    short: "One textbook summary suggests a small band of escapees under Moses."
+    text: "The chapter summary for Coogan and Chapman's introductory textbook suggests that at the heart of the traditions may lie a less grand story of a small band of escapees under Moses, who lost the pursuing Egyptian chariots in the mud of the “Reed Sea”. Christine Hayes reports that some scholars think the circumstantial evidence from Egypt lends plausibility to a story of slaves working on building projects who escaped. Carol Meyers judges that such analogues suggest a core of reality, although there is no specific historical grounding for the biblical account."
     cites:
       - source: coogan-brief-4e-summary
         locator: "section “Events at the Sea”"
@@ -179,7 +175,7 @@ statements:
     group: "Dates, numbers and places"
     question: "Did 600,000 men leave Egypt?"
     short: "Outside fundamentalist readings, the figure is widely regarded as highly implausible."
-    text: "Exodus 12:37 counts about 600,000 men on foot, not counting children, and the census in Numbers 1:46 gives 603,550, figures that imply a population of well over two million. Outside fundamentalist readings of the Torah, the figure is widely regarded as highly implausible. Its improbability, together with the absence of corroborating evidence in Egyptian sources, has led many biblical scholars who no longer accept the traditional view either to treat the narrative as fictional or the numbers as later projections or exaggerations, or to reinterpret the figures, for example by reading the Hebrew elef (“thousand”) as a clan, family or military unit. The chapter summary for Coogan and Chapman's introductory textbook describes the Exodus as a migration not of thousands or millions of people but of a few hundred."
+    text: "Exodus counts about 600,000 men leaving Egypt, and the census in Numbers 1:46 gives 603,550 men over twenty, figures that imply a population of well over two million. Outside fundamentalist readings of the Torah, the figure is widely regarded as highly implausible. Its improbability, together with the absence of corroborating evidence in Egyptian sources, has led many biblical scholars who no longer accept the traditional view either to treat the narrative as fictional or the numbers as later projections or exaggerations, or to reinterpret the figures, for example by reading the Hebrew elef (“thousand”) as a clan, family or military unit. The chapter summary for Coogan and Chapman's introductory textbook describes the Exodus as a migration not of thousands or millions of people but of a few hundred."
     cites:
       - source: krajewski-2026-israelites-number
         locator: "Abstract"
@@ -205,14 +201,18 @@ statements:
         locator: "section “Exodus and History”"
         quote: "Here we find that the Exodus was a migration not of thousands (if not millions) of people but of a few hundred"
         read: 2026-11-23
+      - source: krajewski-2026-israelites-number
+        locator: "§ 1, “Presenting the Problem”"
+        quote: "In the Book of Numbers (1:46), the total number of males over twenty years of age—those “able to go forth to war” (1:20)—among those who left Egypt is given as 603,550."
+        read: 2026-11-23
   - id: sea
     group: "Dates, numbers and places"
     question: "Was the sea of the Exodus the Red Sea?"
     short: "There is no clear answer, and its Hebrew name does not mean “Red Sea”."
-    text: "The sea's Hebrew name, yam suph, is not accurately translated “Red Sea”: suph may mean “reed”, and the name is often rendered “Sea of Reeds”. The English name goes back to a name that ancient Greek geographers used. It is not certain which body of water the Exodus story means. Some biblical writers placed the crossing at or near the Red Sea and others at a different sea, real or imagined, and like virtually all the place names in the Exodus account, the sea escapes positive identification."
+    text: "The sea's Hebrew name, yam suph, is often translated “Red Sea” in English Bibles, but that is not an accurate translation: suph may mean “reed” and cannot mean “red”, and the name is literally “Sea of Reeds”. The English name goes back to a name that ancient Greek geographers used. It is not certain which body of water the Exodus story means. Some biblical writers placed the crossing at or near the Red Sea and others at a different sea, real or imagined, and like virtually all the place names in the Exodus account, the sea escapes positive identification."
     cites:
       - source: yoo-2021-red-sea
-        locator: "opening section, before the heading “Red, Reed, or End Sea?”"
+        locator: "section “Did the Israelites cross at the Red Sea?”"
         quote: "Red Sea, however, is not an accurate translation for Hebrew yam suph."
         read: 2026-11-23
       - source: hayes-rlst145-l8
@@ -220,7 +220,7 @@ statements:
         quote: "It isn't the Red Sea. That's a mistranslation that occurred very, very early on"
         read: 2026-11-23
       - source: yoo-2021-red-sea
-        locator: "opening section, before the heading “Red, Reed, or End Sea?”"
+        locator: "section “Did the Israelites cross at the Red Sea?”"
         quote: "While yam means “sea,” suph may mean “reed”"
         read: 2026-11-23
       - source: harpercollins-2009-dictionary
@@ -229,7 +229,7 @@ statements:
         url: "https://www.bibleodyssey.org/dictionary/red-sea/"
         read: 2026-11-23
       - source: yoo-2021-red-sea
-        locator: "opening section, before the heading “Red, Reed, or End Sea?”"
+        locator: "section “Did the Israelites cross at the Red Sea?”"
         quote: "The name Red Sea can be traced to a name that ancient Greek geographers gave to a vast sea that runs from both northern inlets of the Red Sea to the Indian Ocean"
         read: 2026-11-23
       - source: harpercollins-2009-dictionary
@@ -248,6 +248,10 @@ statements:
       - source: meyers-2005-exodus
         locator: "p. 6"
         quote: "virtually all of the toponyms (place names) mentioned in the exodus account, including the land of Goshen, the store cities of Pithom and Rameses, the Red (or Reed) Sea, and even Sinai itself (for which as many as sixteen different possibilities have been proposed) escape positive identification despite the best efforts of generations of explorers."
+        read: 2026-11-23
+      - source: yoo-2021-red-sea
+        locator: "section “Did the Israelites cross at the Red Sea?”"
+        quote: "In any case, suph cannot mean “red.”"
         read: 2026-11-23
   - id: sargon
     group: "The story's literary background"
