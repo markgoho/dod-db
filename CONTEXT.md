@@ -145,7 +145,7 @@ The **Synthesis Page** that places events and the composition of **Scriptural Bo
 _Avoid_: Chronology, dating page
 
 **Timeline Entry**:
-One subject on the **Timeline**, either an event or the composition of a text, with its **Critical Date** or a sourced statement that it has none.
+One subject on the **Timeline**, either an event or the composition of a text, with its **Critical Date** or a sourced statement that the sources give it no firm date.
 _Avoid_: Row, dated claim
 
 **Critical Date**:
@@ -201,7 +201,8 @@ _Avoid_: Link
 - A **Synthesis Page** is the archive's own work, not the show's; a **Trigger Claim** is shown apart from the page's statements, and a **Host** is never its authority.
 - A **Host**'s published work can be an **External Source**, but never the only one behind a **Synthesis Page**'s core claim.
 - **Synthesis Pages** come in two kinds: **Scholarship Pages** and the **Timeline**.
-- A **Timeline Entry** needs at least one **Trigger Claim** and one Scholarly or Reference **External Source** for its **Critical Date**, or for a statement that the sources give it none.
+- A **Timeline Entry** needs at least one **Trigger Claim** and one Scholarly or Reference **External Source** for its **Critical Date**, or for a statement that the sources date it only conditionally or not at all.
+- A date a source gives only on a condition ("if it is historical") is not a **Critical Date**.
 - **Critical Dates** are the **Timeline**'s spine; a **Timeline Entry** with no **Critical Date** is never placed by its **Tradition Date**.
 - A **Timeline Entry** shows a **Tradition Date** only when the show itself states both sides for its subject.
 - A **Timeline Entry** is worded for what its sources date, even when that is narrower than the **Trigger Claim**.
