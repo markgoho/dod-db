@@ -22,7 +22,12 @@ mock.module("../ai.js", () => ({
   },
 }));
 
+// mock.module replaces the module for the whole test run, so keep the real
+// exports other test files import (e.g. buildTagDefinition).
+const actualAddTagToVocabulary = await import("./add-tag-to-vocabulary.js");
+
 mock.module("./add-tag-to-vocabulary.js", () => ({
+  ...actualAddTagToVocabulary,
   addTagToVocabulary: addTagToVocabularyMock,
 }));
 
