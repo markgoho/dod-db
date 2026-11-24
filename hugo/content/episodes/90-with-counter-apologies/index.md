@@ -177,7 +177,7 @@ draft: false
 {{< line >}}[00:33:00.110] Dan McClellan: Fair enough, fair enough.{{< /line >}}
 {{< line >}}[00:33:01.390] Dan Beecher: But we're not doing that just yet.{{< /line >}}
 {{< line >}}[00:33:03.390] Dan McClellan: Okay.{{< /line >}}
-{{< line >}}[00:33:03.950] Dan Beecher: Right now we're just going to focus on a few other things. Okay, let's go to Isaiah, {{< scripture ref="Isaiah" display="the book of Isaiah" >}}, chapter 40. Here's the thing. For a long time in the world, it's been a while since this was the case, but for a long time in the world, the Earth was assumed to be a plane, a flat plane.{{< /line >}}
+{{< line >}}[00:33:03.950] Dan Beecher: Right now we're just going to focus on a few other things. Okay, let's go to Isaiah, the book of {{< scripture ref="Isaiah 40" >}}. Here's the thing. For a long time in the world, it's been a while since this was the case, but for a long time in the world, the Earth was assumed to be a plane, a flat plane.{{< /line >}}
 {{< line >}}[00:33:28.510] Dan McClellan: Yes. Now, the idea, at least that was the conventional wisdom. We have evidence of awareness that things are of a spherical nature going back to probably the middle of the first millennium BCE, but not widespread knowledge of this.{{< /line >}}
 {{< line >}}[00:33:48.440] Dan Beecher: Right. Yeah. And that was Greece. That's its own... Right. We're talking... I mean, that was the first...{{< /line >}}
 {{< line >}}[00:33:55.200] Dan McClellan: Yeah, yeah. These are philosophers, the original, the OGs of the natural sciences who were measuring things and being like, well, that's peculiar. Yeah. And coming up with a round Earth. But yeah, that's not widespread knowledge.{{< /line >}}

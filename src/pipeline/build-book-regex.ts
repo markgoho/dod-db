@@ -40,6 +40,8 @@ export function buildBookWholeRegex(book: BookDefinition): RegExp {
   );
   const standalonePatterns = namePatterns.filter(pattern => /\s/.test(pattern));
   const allPatterns = [...prefixedNamePatterns, ...standalonePatterns];
-  const pattern = String.raw`\b(?:${allPatterns.join("|")})\b(?!\s+\d)`;
+  // Not a whole-book mention when a chapter follows ("the Gospel of John,
+  // chapter 19"): leave it to the chapter regex.
+  const pattern = String.raw`\b(?:${allPatterns.join("|")})\b(?!\s+\d|,?\s+chapter\b)`;
   return new RegExp(pattern, "gi");
 }

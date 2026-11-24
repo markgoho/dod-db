@@ -11,6 +11,8 @@ import { normalizeReference } from "../pipeline/normalize-reference.js";
 import { resolveOverlaps } from "../pipeline/resolve-overlaps.js";
 import type { ScriptureMatch } from "./wrap-scripture-references.js";
 
+const LEADING_BOOK_PHRASE = /^(?:the\s+)?(?:book|gospel)\s+of\s+/i;
+
 function firstAlphabeticCharacter(text: string): string | undefined {
   return [...text].find(character => /[A-Za-z]/.test(character));
 }
@@ -20,7 +22,11 @@ function firstAlphabeticCharacter(text: string): string | undefined {
  * This helps filter out false positives like "is" matching Isaiah.
  */
 function startsWithUppercase(text: string): boolean {
-  const firstChar = firstAlphabeticCharacter(text);
+  // Skip an ordinal prefix ("1st", "2nd") so its suffix isn't read as the
+  // book name's first letter.
+  const firstChar = firstAlphabeticCharacter(
+    text.replace(/^\d+(?:st|nd|rd|th)\s+/i, ""),
+  );
   return firstChar !== undefined && firstChar === firstChar.toUpperCase();
 }
 
@@ -36,10 +42,14 @@ export function findScriptureMatches(text: string): ScriptureMatch[] {
     let match;
 
     while ((match = regex.exec(text)) !== null) {
-      const start = match.index;
-      const end = start + match[0].length;
+      // "Gospel of John, chapter 19": link "John, chapter 19" and leave the
+      // "Gospel of" wording as spoken, since the link displays "John 19".
+      const prefix = LEADING_BOOK_PHRASE.exec(match[0])?.[0] ?? "";
+      const start = match.index + prefix.length;
+      const end = match.index + match[0].length;
+      const matchedText = match[0].slice(prefix.length);
 
-      if (!startsWithUppercase(match[0])) {
+      if (!startsWithUppercase(matchedText)) {
         continue;
       }
 
@@ -59,7 +69,7 @@ export function findScriptureMatches(text: string): ScriptureMatch[] {
       allMatches.push({
         start,
         end,
-        originalText: match[0],
+        originalText: matchedText,
         normalizedReference,
         book: book.canonical,
       });

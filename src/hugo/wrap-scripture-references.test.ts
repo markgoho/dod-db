@@ -340,4 +340,36 @@ describe("wrapScriptureReferences", () => {
       '{{< scripture ref="Esther" display="Book of Esther" >}} is what we\'re reading today.',
     );
   });
+  test("wraps ordinal numbered book with spoken chapter", () => {
+    const text = "The other side is 1st Chronicles chapter 20 from Ball.";
+    const result = wrapScriptureReferences(text);
+
+    expect(result).toBe(
+      'The other side is {{< scripture ref="1 Chronicles 20" >}} from Ball.',
+    );
+  });
+
+  test("wraps ordinal numbered book with chapter", () => {
+    const text = "One side of this is 2nd Samuel 21 Missouri State.";
+    const result = wrapScriptureReferences(text);
+
+    expect(result).toBe(
+      'One side of this is {{< scripture ref="2 Samuel 21" >}} Missouri State.',
+    );
+  });
+
+  test("still skips lowercase ordinal book matches", () => {
+    const text = "the 2nd samuel 21 times";
+    const result = wrapScriptureReferences(text);
+
+    expect(result).toBe(text);
+  });
+  test("links the chapter when a whole-book phrase is followed by a spoken chapter", () => {
+    const text = "In the Gospel of John, chapter 19, Jesus dies.";
+    const result = wrapScriptureReferences(text);
+
+    expect(result).toBe(
+      'In the Gospel of {{< scripture ref="John 19" >}}, Jesus dies.',
+    );
+  });
 });
