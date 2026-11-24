@@ -2,7 +2,7 @@
 title: "Moses and the Exodus"
 dek: "What archaeology, Egyptian records and the text itself tell scholars about the Exodus and Moses."
 core: evidence
-sourcesRead: 2026-11-23
+sourcesRead: 2026-11-24
 related:
   books: [exodus]
   tags: [moses]
@@ -190,7 +190,7 @@ statements:
   - id: numbers
     group: "Dates, numbers and places"
     question: "Did 600,000 men leave Egypt?"
-    short: "The figure is treated as inflated or schematic, not a real count."
+    short: "Both sources read treat the figure as inflated or schematic."
     text: "The Numbers chapter summary for Coogan and Chapman's introductory textbook treats the count of men leaving Egypt in Exodus 12:37 as an example of how the biblical writers often inflated census statistics, and calls the population statistics in the censuses of Numbers likewise unrealistically high. It says no reasonable interpretation for this inflation has ever been presented, though P, the Priestly writer, may have incorporated numbers from a variety of sources to show that the divine promise of descendants had been fulfilled. The summary of the Exodus chapter describes the Exodus as a migration not of thousands or millions of people but of a few hundred. The Encyclopaedia Judaica's article on Numbers calls 600,000 a schematic number, which the census lists clothe with the details of a tribal breakdown."
     cites:
       - source: coogan-brief-4e-summary-ch9
@@ -269,8 +269,8 @@ statements:
         read: 2026-11-22
   - id: song
     group: "The story's literary background"
-    question: "What is the oldest account of the event?"
-    short: "Many scholars think it is the poem in Exodus 15."
+    question: "How old is the Song of the Sea in Exodus 15?"
+    short: "Many scholars think it is very old."
     text: "Christine Hayes reports that most agree the oldest account of the event at the sea is a poetic fragment in Exodus 15:1–12. The notes of the New American Bible say that many scholars regard the poem (15:1–21) as one of the oldest compositions in the Bible, once an independent work. The Encyclopaedia Judaica's article on Exodus finds several early features in its language, but judges that its mentions of Philistia, cavalry and the sanctuary on God's mountain put the present form of the song no earlier than the tenth century BCE."
     cites:
       - source: hayes-rlst145-l8
