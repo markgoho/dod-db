@@ -2,7 +2,12 @@
 # agent: results of the agent's first pass (#131, 2026-11-23). That pass does not count toward publish. Independent second agent pass 2026-11-23 re-fetched every source, re-matched every quote and re-read every Trigger Claim; its results are appended to each note.
 # owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # First pass: every quote was re-fetched 2026-11-23 and matched verbatim after normalising whitespace, quotes, dashes and PDF ligatures; each locator was checked by eye against the fetched text.
-review: ""
+review: 2026-11-23
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-23
 citations:
   el/1:
     {

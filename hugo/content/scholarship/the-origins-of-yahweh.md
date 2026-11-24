@@ -1,9 +1,8 @@
 ---
 title: "The Origins of Yahweh"
 dek: "How Yahweh relates to the Canaanite gods El and Baal, what the earliest inscriptions show, and where scholars think he came from."
-draft: true
 core: el
-sourcesRead:
+sourcesRead: 2026-11-23
 related:
   books: [genesis, exodus]
   tags: [baal, ugarit]
