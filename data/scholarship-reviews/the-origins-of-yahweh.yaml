@@ -1,310 +1,340 @@
 # Review record for /scholarship/the-origins-of-yahweh/ (#93 shape). Not rendered.
-# agent: results of the agent's first pass (#131, 2026-11-23). That pass does not count toward publish.
+# agent: results of the agent's first pass (#131, 2026-11-23). That pass does not count toward publish. Independent second agent pass 2026-11-23 re-fetched every source, re-matched every quote and re-read every Trigger Claim; its results are appended to each note.
 # owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
-# Every quote was re-fetched 2026-11-23 and matched verbatim after normalising whitespace, quotes, dashes and PDF ligatures; each locator was checked by eye against the fetched text.
+# First pass: every quote was re-fetched 2026-11-23 and matched verbatim after normalising whitespace, quotes, dashes and PDF ligatures; each locator was checked by eye against the fetched text.
 review: ""
 citations:
   el/1:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 5 [00:26:43]. “many scholars have suggested”: #86 reasons rule met by el/2 (Exod 6:2–4, the passage Hayes gives in the same paragraph) and by resemblance/1–6 (her list of El traits and El names that follows). Statement says “suggested”, never “think” or “agree”.",
+      note: "Hayes l7 ch. 5 [00:26:43]. “many scholars have suggested”: #86 reasons rule met by el/2 (Exod 6:2–4, the passage Hayes gives in the same paragraph) and by resemblance/1–6 (her list of El traits and El names that follows). Statement says “suggested”, never “think” or “agree”. Second pass 2026-11-23: verified.",
     }
   el/2:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 5, same paragraph, sentence just before el/1. Brackets [Yahweh] are the transcript's own. Statement paraphrases the verse, it does not quote it.",
+      note: "Hayes l7 ch. 5, same paragraph, sentence just before el/1. Brackets [Yahweh] are the transcript's own. Statement paraphrases the verse, it does not quote it. Second pass 2026-11-23: verified.",
     }
   el/3:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 5, same paragraph. Added for scope: J's counter-tradition, which the core sentence would otherwise hide.",
+      note: "Hayes l7 ch. 5, same paragraph. Added for scope: J's counter-tradition, which the core sentence would otherwise hide. Second pass 2026-11-23: verified.",
     }
   el/4:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 6 [00:38:39], first paragraph. “seem to have” kept as “seem to have”.",
+      note: "Hayes l7 ch. 6 [00:38:39], first paragraph. “seem to have” kept as “seem to have”. Second pass 2026-11-23: verified.",
     }
   el/5:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 6, closing paragraph. Statement keeps it as what P and E insist, not as history.",
+      note: "Hayes l7 ch. 6, closing paragraph. Statement keeps it as what P and E insist, not as history. Second pass 2026-11-23: verified.",
     }
   el/6:
     {
       agent: pass,
       owner: "",
-      note: "Coogan and Chapman ch. 5 summary, section “Ancestors as History?”, last sentence. “appears to preserve” kept. Core claim, author 2 (independent of Hayes by distinct author, #92).",
+      note: "Coogan and Chapman ch. 5 summary, section “Ancestors as History?”, last sentence. “appears to preserve” kept. Core claim, author 2 (independent of Hayes by distinct author, #92). Second pass 2026-11-23: verified.",
     }
   el/7:
     {
       agent: pass,
       owner: "",
-      note: "Coogan and Chapman ch. 6 summary, section “The Hegemony of Storm-gods”. Names neither El nor Yahweh as sky god and storm-god; the statement doesn't equate them either, and sets it after the ch. 5 summary's El sentence. Continuity clause kept (“the sources all present … as continuous”).",
+      note: "Coogan and Chapman ch. 6 summary, section “The Hegemony of Storm-gods”. Names neither El nor Yahweh as sky god and storm-god; the statement doesn't equate them either, and sets it after the ch. 5 summary's El sentence. Continuity clause kept (“the sources all present … as continuous”). Second pass 2026-11-23: verified.",
     }
   resemblance/1:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 5. Hayes says the patriarchal-traditions list is from “Genesis primarily”; statement says “patriarchal traditions of Genesis”. Flag (not a cut): Hayes says this handout list is “based on information that's supplied by many scholars. I've relied very much on Michael Coogan”; the statement attributes it to Hayes's lecture only.",
+      note: "Hayes l7 ch. 5. Hayes says the patriarchal-traditions list is from “Genesis primarily”; statement says “patriarchal traditions of Genesis”. First-pass flag resolved (pass): Hayes says this handout list is “based on information that's supplied by many scholars. I've relied very much on Michael Coogan”. The statement says only what Hayes's lecture lists, which is true; it claims no independent corroboration, and resemblance is not the core. Second pass 2026-11-23: verified.",
     }
-  resemblance/2: { agent: pass, owner: "", note: "Hayes l7 ch. 5." }
+  resemblance/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5. Second pass 2026-11-23: verified.",
+    }
   resemblance/3:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 5, next paragraph (Ras Shamra discovery). Backs “texts from ancient Ugarit”.",
+      note: "Hayes l7 ch. 5, next paragraph (Ras Shamra discovery). Backs “texts from ancient Ugarit”. Second pass 2026-11-23: verified.",
     }
   resemblance/4:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 5. The beard detail is in the quote but not the statement.",
+      note: "Hayes l7 ch. 5. The beard detail is in the quote but not the statement. Second pass 2026-11-23: verified.",
     }
   resemblance/5:
-    { agent: pass, owner: "", note: "Hayes l7 ch. 5, same paragraph." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5, same paragraph. Second pass 2026-11-23: verified.",
+    }
   resemblance/6:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 5, end of the same paragraph. Statement's “from the name Yahweh” is her “as part of the name Yahweh”.",
+      note: "Hayes l7 ch. 5, end of the same paragraph. Statement's “from the name Yahweh” is her “as part of the name Yahweh”. Second pass 2026-11-23: verified.",
     }
   storm/1:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 5, paragraph after the El list.",
+      note: "Hayes l7 ch. 5, paragraph after the El list. Second pass 2026-11-23: verified.",
     }
-  storm/2: { agent: pass, owner: "", note: "Hayes l7 ch. 5, same paragraph." }
+  storm/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5, same paragraph. Second pass 2026-11-23: verified.",
+    }
   storm/3:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l8 ch. 2 [00:06:51], Song of the Sea paragraph.",
+      note: "Hayes l8 ch. 2 [00:06:51], Song of the Sea paragraph. Second pass 2026-11-23: verified.",
     }
   storm/4:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l8 ch. 2. Hayes relaying Coogan (2006, pp. 101–3); the statement attributes it to Coogan through Hayes (“Hayes reports Michael Coogan's observation”).",
+      note: "Hayes l8 ch. 2. Hayes relaying Coogan (2006, pp. 101–3); the statement attributes it to Coogan through Hayes (“Hayes reports Michael Coogan's observation”). Second pass 2026-11-23: verified.",
     }
   storm/5:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l8 ch. 2, next paragraph (“Coogan notes…”).",
+      note: "Hayes l8 ch. 2, next paragraph (“Coogan notes…”). Second pass 2026-11-23: verified.",
     }
   storm/6:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l8 ch. 2, same paragraph. Hedge “there seems to be” kept in the statement. Not independent of storm/7: Hayes is relaying Coogan, so storm/7 is not presented as corroboration (no “likewise”).",
+      note: "Hayes l8 ch. 2, same paragraph. Hedge “there seems to be” kept in the statement. Not independent of storm/7: Hayes is relaying Coogan, so storm/7 is not presented as corroboration (no “likewise”). Second pass 2026-11-23: verified.",
     }
   storm/7:
     {
       agent: pass,
       owner: "",
-      note: "Coogan and Chapman ch. 6 summary, section “The Hegemony of Storm-gods”, opening sentences.",
+      note: "Coogan and Chapman ch. 6 summary, section “The Hegemony of Storm-gods”, opening sentences. Second pass 2026-11-23: verified.",
     }
   convergence/1:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 6. “some biblical scholars — Mark S. Smith is among them, and Steven Geller”; statement says “one of the biblical scholars who…”. Smith's own text is a lead.",
+      note: "Hayes l7 ch. 6. “some biblical scholars — Mark S. Smith is among them, and Steven Geller”; statement says “one of the biblical scholars who…”. Smith's own text is a lead. Second pass 2026-11-23: verified.",
     }
   convergence/2:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 6, Smith paragraph. “that we think originally came from … further south” rendered “a god thought to have come originally from a region further south”, attributed to the model as Hayes describes it.",
+      note: "Hayes l7 ch. 6, Smith paragraph. “that we think originally came from … further south” rendered “a god thought to have come originally from a region further south”, attributed to the model as Hayes describes it. Second pass 2026-11-23: verified.",
     }
   convergence/3:
-    { agent: pass, owner: "", note: "Hayes l7 ch. 6, same paragraph." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 6, same paragraph. Second pass 2026-11-23: verified.",
+    }
   convergence/4:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 6, same paragraph. Hayes's own judgement, attributed to her by name.",
+      note: "Hayes l7 ch. 6, same paragraph. Hayes's own judgement, attributed to her by name. Second pass 2026-11-23: verified.",
     }
   convergence/5:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 6, closing paragraph. Statement drops “pure Yahwists” / “pure polytheists”; “On this reading” marks it as Hayes's account.",
+      note: "Hayes l7 ch. 6, closing paragraph. Statement drops “pure Yahwists” / “pure polytheists”; “On this reading” marks it as Hayes's account. Second pass 2026-11-23: verified.",
     }
   attestation/1:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 3. Footnote marker 4 after “840” omitted. Statement adds “BCE” (Fleming's note 1: all dates BCE).",
+      note: "Fleming excerpt p. 3. Footnote marker 4 after “840” omitted. Statement adds “BCE” (Fleming's note 1: all dates BCE). Second pass 2026-11-23: verified.",
     }
   attestation/2:
-    { agent: pass, owner: "", note: "Fleming excerpt p. 1, third sentence." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 1, third sentence. Second pass 2026-11-23: verified.",
+    }
   attestation/3:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 5. Footnote marker 5 after “Judah” omitted.",
+      note: "Fleming excerpt p. 5. Footnote marker 5 after “Judah” omitted. Second pass 2026-11-23: verified.",
     }
   attestation/4:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 5. Statement keeps “mysterious and open to debate” beside “demands explanation”.",
+      note: "Fleming excerpt p. 5. Statement keeps “mysterious and open to debate” beside “demands explanation”. Second pass 2026-11-23: verified.",
     }
   attestation/5:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt pp. 1–2: the sentence crosses the page break, with footnote 1 and the page header between “New Kingdom” and “Egyptian texts”, so the normalised match fails; both halves checked by eye. Locator says pp. 1–2. Kept: verbatim once the break is removed.",
+      note: "Fleming excerpt pp. 1–2: the sentence crosses the page break, with footnote 1 and the page header between “New Kingdom” and “Egyptian texts”, so the normalised match fails; both halves checked by eye. Locator says pp. 1–2. Kept: verbatim once the break is removed. Halves re-matched separately: p. 1 “Reference to Yhwȝ of Shasu-land in New Kingdom”, p. 2 “Egyptian texts predates any evidence for the name Israel”. Second pass 2026-11-23: verified.",
     }
   south/1:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 5. Footnote marker 6 omitted. “Midianite Hypothesis” is Fleming's name (p. 3, p. 9), attributed to him.",
+      note: "Fleming excerpt p. 5. Footnote marker 6 omitted. “Midianite Hypothesis” is Fleming's name (p. 3, p. 9), attributed to him. Second pass 2026-11-23: verified.",
     }
   south/2:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 3. Backs “going back to the late nineteenth century” in text and short answer.",
+      note: "Fleming excerpt p. 3. Backs “going back to the late nineteenth century” in text and short answer. Second pass 2026-11-23: verified.",
     }
   south/3:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 5. The reasons the hypothesis rests on, as Fleming states them (#86 reasons rule applied though the page makes no consensus claim). Blenkinsopp's four lines of evidence (p. 8) not used: Fleming relaying Blenkinsopp.",
+      note: "Fleming excerpt p. 5. The reasons the hypothesis rests on, as Fleming states them (#86 reasons rule applied though the page makes no consensus claim). Blenkinsopp's four lines of evidence (p. 8) not used: Fleming relaying Blenkinsopp. Second pass 2026-11-23: verified.",
     }
   south/4:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 6, Smith paragraph; attributed to Hayes's account of Smith's model.",
+      note: "Hayes l7 ch. 6, Smith paragraph; attributed to Hayes's account of Smith's model. Second pass 2026-11-23: verified.",
     }
   south/5:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 4. First person; attributed by name.",
+      note: "Fleming excerpt p. 4. First person; attributed by name. Second pass 2026-11-23: verified.",
     }
   south/6:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 4. Added so the page doesn't present Fleming as a plain supporter of the hypothesis.",
+      note: "Fleming excerpt p. 4. Added so the page doesn't present Fleming as a plain supporter of the hypothesis. Second pass 2026-11-23: verified.",
     }
   south/7:
-    { agent: pass, owner: "", note: "Fleming excerpt p. 4, end of paragraph." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 4, end of paragraph. Second pass 2026-11-23: verified.",
+    }
   south/8:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 3, last lines (“There have always been serious outliers…” runs on to p. 4). Source of “no consensus”, Fleming's own words, attributed by name in short answer and statement.",
+      note: "Fleming excerpt p. 3, last lines (“There have always been serious outliers…” runs on to p. 4). Source of “no consensus”, Fleming's own words, attributed by name in short answer and statement. Second pass 2026-11-23: verified.",
     }
   south/9:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 6. Statement keeps “doubt of southern origins” and doesn't claim the Berlin view puts Yahweh's origin in Israel (that sentence on p. 6 is a conditional; left uncited).",
+      note: "Fleming excerpt p. 6. Statement keeps “doubt of southern origins” and doesn't claim the Berlin view puts Yahweh's origin in Israel (that sentence on p. 6 is a conditional; left uncited). Second pass 2026-11-23: verified.",
     }
   not-el/1:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 4. First person, attributed by name in short answer and statement. The excerpt names no one who holds that Yahweh began as El; the question stands because Fleming frames his view against it. A second sentence citing Hayes l7 ch. 6 (“first El”) was cut in the first pass: Smith's model as Hayes gives it doesn't address whether Yahweh began as El, so “too” was the page's inference.",
+      note: "Fleming excerpt p. 4. First person, attributed by name in short answer and statement. The excerpt names no one who holds that Yahweh began as El; the question stands because Fleming frames his view against it. A second sentence citing Hayes l7 ch. 6 (“first El”) was cut in the first pass: Smith's model as Hayes gives it doesn't address whether Yahweh began as El, so “too” was the page's inference. Second pass 2026-11-23: verified.",
     }
 triggers:
   7@00:48:15:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:43:12–00:51:45. Speaker Dan McClellan after #120's label fix: 00:44:42–00:48:15 is his divine-council piece; 00:47:42 is Beecher's question, so “they” = El and Adonai. Hedges kept (“I think”, “probably”). The page gives no date for a merger (no source read gives one).",
+      note: "Read 00:43:12–00:51:45. Speaker Dan McClellan after #120's label fix (#130's Ep 7 swap fix, 6d1ec30, touched only 00:11:45–00:31:42, not this stretch; second pass re-read 00:45:50–00:57:00 and the turns are coherent: Beecher asks, McClellan answers and cites his own 2018 JBL paper on Psalm 82): 00:44:42–00:48:15 is his divine-council piece; 00:47:42 is Beecher's question, so “they” = El and Adonai. Hedges kept (“I think”, “probably”). The page gives no date for a merger (no source read gives one). Second pass 2026-11-23: verified.",
     }
   7@00:53:48:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:51:45–00:56:10. Extended back to the turn's start so “this” = Psalm 82. Reports others' view: at 00:54:46 McClellan himself dates Psalm 82 after the conflation of Adonai and El. Subject (an El–Yahweh conflation) is the page's; the card reports that view as “a lot of scholars”, not as his.",
+      note: "Read 00:51:45–00:56:10. Extended back to the turn's start so “this” = Psalm 82. Reports others' view: at 00:54:46 McClellan himself dates Psalm 82 after the conflation of Adonai and El. Subject (an El–Yahweh conflation) is the page's; the card reports that view as “a lot of scholars”, not as his. Kept: a substantive assertion about the subject (#80); a Trigger Claim only sets the subject and never corroborates, so his own contrary dating doesn't disqualify it, and the trimmed text claims nothing he didn't say. Second pass 2026-11-23: verified.",
     }
   66@00:46:10:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:44:33–00:48:05. Quote starts mid-turn after “Most scholars think this has some kind of relationship to the divine name. And so the question is, what's the exact relationship?”; hedge “if there is a relationship” kept. The Shasu reference is the Egyptian Yhwȝ of the attestation statement.",
+      note: "Read 00:44:33–00:48:05. Quote starts mid-turn after “Most scholars think this has some kind of relationship to the divine name. And so the question is, what's the exact relationship?”; hedge “if there is a relationship” kept. The Shasu reference is the Egyptian Yhwȝ of the attestation statement. Second pass 2026-11-23: verified.",
     }
   66@00:47:29:
     {
       agent: pass,
       owner: "",
-      note: "Read through 00:51:58. The hedge at 00:50:55 (“in my opinion, and in the opinion of some scholars, certainly not all scholars”) governs his ancestral-deity claim, not this second-tier claim. No statement on the page covers a second-tier Yahweh; gap left unexplained (#86).",
+      note: "Read through 00:51:58. The hedge at 00:50:55 (“in my opinion, and in the opinion of some scholars, certainly not all scholars”) governs his ancestral-deity claim, not this second-tier claim. No statement on the page covers a second-tier Yahweh; gap left unexplained (#86). Second pass 2026-11-23: verified.",
     }
   124@00:47:29:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:46:10–00:49:23. Quote starts mid-sentence after “Now, their use in the Hebrew Bible probably does not, but”. No source read gives the Deut 32:8–9 reading, so the page has no statement on it; gap left unexplained (#86).",
+      note: "Read 00:46:10–00:49:23. Quote starts mid-sentence after “Now, their use in the Hebrew Bible probably does not, but”. No source read gives the Deut 32:8–9 reading, so the page has no statement on it; gap left unexplained (#86). Second pass 2026-11-23: verified.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "7 statements (minimum 3). Core (el) backed by two independent authors (#92, counted by distinct author): Christine Hayes (hayes-rlst145-l7, Reference, Yale 2006; el/1–5) and Coogan and Chapman (coogan-brief-4e-summary-ch5 and coogan-brief-4e-summary, Reference, OUP 2019; el/6–7, counting once). None Host-authored. Fleming (Scholarly) does not back the core and isn't cited on it. Flag for the second pass: Hayes says her El handout relies “very much on Michael Coogan” (l7 ch. 5), and l8's storm passage relays Coogan. The core still rests on Hayes's own “many scholars have suggested” report (el/1) and the Coogan and Chapman summary (el/6), so it passes by distinct author, but the two aren't wholly independent in substance.",
+      note: "7 statements (minimum 3). Core (el) backed by two independent authors (#92, counted by distinct author): Christine Hayes (hayes-rlst145-l7, Reference, Yale 2006; el/1–5) and Coogan and Chapman (coogan-brief-4e-summary-ch5 and coogan-brief-4e-summary, Reference, OUP 2019; el/6–7, counting once). None Host-authored. Fleming (Scholarly) does not back the core and isn't cited on it. First-pass flag, resolved by the second pass below: Hayes says her El handout relies “very much on Michael Coogan” (l7 ch. 5), and l8's storm passage relays Coogan. The core still rests on Hayes's own “many scholars have suggested” report (el/1) and the Coogan and Chapman summary (el/6), so it passes by distinct author, but the two aren't wholly independent in substance. Second pass 2026-11-23, owner's core-independence decision: checked whether Fleming (CUP 2021, open excerpt pp. 1–10, all read) backs `el`. He does not: the excerpt never says Israel's ancestors worshipped El; the nearest is p. 6, “El could have been part of the religious landscape before Israel”, which is hedged and about the region, not Israel's ancestors. Fleming does back a different framing (p. 4, “I do not think Yahweh began as any form of ‘The God’ El”), so rewording the core to that common ground was tested: it needs a Hayes or Coogan sentence that says alone that Yahweh did not begin as El. None does. Hayes l7 ch. 6 (Smith's model: Yahweh “originally came from a region further south … began to take on the characteristics of other deities, first El”) implies it only by inference (the first pass already cut it from not-el for that reason); Hayes l8 ch. 2 (“in place of El”) relays Coogan, bringing the dependence back; the Coogan and Chapman summaries never name Yahweh and El as separate gods. Not reworded to fit (#84). `el` left as is; it holds by distinct author only. Substance note: el/1 (“many scholars have suggested…”) comes before Hayes mentions the Coogan-based handout, and el/4–5 are her own ch. 6 summary in the Smith section, so none of her `el` sentences is presented as Coogan's; the dependence she states covers the handout list (resemblance) and the l8 storm passage. 7 statements; publish rule met. Second pass 2026-11-23: verified.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "“Many scholars have suggested” (el) is Hayes's own wording, quoted in el/1, with her reasons (Exod 6:2–4, El titles, traits and names) on the page per #86. “no consensus” (south) is Fleming's own, quoted in south/8 and attributed. No other field-state wording; the page never counts scholars.",
+      note: "“Many scholars have suggested” (el) is Hayes's own wording, quoted in el/1, with her reasons (Exod 6:2–4, El titles, traits and names) on the page per #86. “no consensus” (south) is Fleming's own, quoted in south/8 and attributed. No other field-state wording; the page never counts scholars. Second pass 2026-11-23: verified.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "Fleming's first-person views (not-el, south) and his account of the Levin challenge are attributed by name; Smith's model is attributed to Smith as Hayes describes it, Hayes's judgement to Hayes, Coogan's observation to Coogan through Hayes.",
+      note: "Fleming's first-person views (not-el, south) and his account of the Levin challenge are attributed by name; Smith's model is attributed to Smith as Hayes describes it, Hayes's judgement to Hayes, Coogan's observation to Coogan through Hayes. Second pass 2026-11-23: verified.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. Second pass 2026-11-23: verified.",
+    }
 sources:
   hayes-rlst145-l7:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
-      note: "Reused registry entry (checked in the Moses review). Reference (introductory course, university-hosted transcript, #86).",
+      note: "Reused registry entry (checked in the Moses review). Reference (introductory course, university-hosted transcript, #86). Course page (oyc.yale.edu/religious-studies/rlst-145) re-fetched: “Fall 2006”, Christine Hayes, Robert F. and Patricia Ross Weis Professor of Religious Studies at Yale. Second pass 2026-11-23: verified.",
     }
   hayes-rlst145-l8:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
-      note: "Reused registry entry. Same author as l7: counts once.",
+      note: "Reused registry entry. Same author as l7: counts once. Same course page as l7: Fall 2006. Second pass 2026-11-23: verified.",
     }
   coogan-brief-4e-summary:
     {
       agent: pass,
       owner: "",
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
-      note: "Reused registry entry (chapter 6 summary); edition confirmed in the Moses review. Reference (publisher summary, #86).",
+      note: "Reused registry entry (chapter 6 summary); edition confirmed in the Moses review. Reference (publisher summary, #86). OUP catalogue re-read in a browser: Fourth Edition, Published 31 May 2019, ISBN 9780190903756. Second pass 2026-11-23: verified.",
     }
   coogan-brief-4e-summary-ch5:
     {
       agent: pass,
       owner: "",
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
-      note: "New entry; same textbook and edition as coogan-brief-4e-summary, chapter 5 (“The Ancestors of Israel”) page. Same authors, so it adds no independent source. Reference (publisher summary, #86).",
+      note: "New entry; same textbook and edition as coogan-brief-4e-summary, chapter 5 (“The Ancestors of Israel”) page. Same authors, so it adds no independent source. Reference (publisher summary, #86). Same OUP catalogue check as the ch. 6 entry. Second pass 2026-11-23: verified.",
     }
   fleming-2021-yahweh-before-israel:
     {
       agent: pass,
       owner: "",
       edition: "First published 2021, Cambridge University Press (copyright page, assets.cambridge.org); ISBN 9781108835077",
-      note: "New entry. Read in the publisher's open excerpt PDF (pp. 1–10). Scholarly (academic publisher, professional scholar, NYU); inside the 30-year window. Cambridge Core lists online chapters from November 2020; the copyright page says first published 2021. The catalogue page returned 503 on 2026-11-23.",
+      note: "New entry. Read in the publisher's open excerpt PDF (pp. 1–10). Scholarly (academic publisher, professional scholar, NYU); inside the 30-year window. Cambridge Core lists online chapters from November 2020; the copyright page says first published 2021. The catalogue page returned 503 on 2026-11-23. Second pass: front-matter PDF (assets.cambridge.org) re-fetched, “First published 2021”; catalogue (cambridge.org/9781108835077, browser) shows Hardback ISBN 9781108835077, “Published: December 2020”, Fleming at NYU. 2021 kept as the copyright-page year. Second pass 2026-11-23: verified.",
     }
 leads:
   - "Mark S. Smith, The Early History of God, 2nd ed. (Eerdmans, 2002), pp. 7–8: “Convergence involved the coalescence of various deities, and/or some of their features into the figure of Yahweh.” Quoted by Hayes in l7 ch. 6; Smith's own text not read."
