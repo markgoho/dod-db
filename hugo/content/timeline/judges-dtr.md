@@ -29,4 +29,11 @@ critical:
       locator: "Introduction, ¶ 5"
       quote: "The principal contribution of the Deuteronomistic historian to the Book of Judges is the thematic introduction to—and theological evaluation of—the period of the Judges in 2:1–3:6"
       read: 2026-11-22
+setting:
+  display: "the time from the end of the conquest of Canaan to the beginning of the monarchy"
+  cites:
+    - source: nabre-judges-intro
+      locator: "Introduction, ¶ 1"
+      quote: "According to the biblical narrative these judges led Israel from the end of the conquest of Canaan until the beginning of the monarchy."
+      read: 2026-11-23
 ---

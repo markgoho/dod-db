@@ -25,6 +25,19 @@ critical:
       locator: "ch. 5 [00:35:21]"
       quote: "So the book, we know, was written quite late, perhaps the end of the third century, those first six chapters."
       read: 2026-11-22
+setting:
+  display: "the Babylonian exile, in the sixth century BCE"
+  from: -600
+  to: -501
+  cites:
+    - source: nabre-daniel-intro
+      locator: "Introduction, ¶ 1"
+      quote: "This book takes its name not from the author, who is actually unknown, but from its hero, who was allegedly among the first Jews deported to Babylon, where he lived at least until 538 B.C."
+      read: 2026-11-24
+    - source: hayes-rlst145-l23
+      locator: "ch. 5 [00:35:21]"
+      quote: "In chapters 1 through 6, Daniel is represented as a loyal Jew who's living in the exile in Babylonia, sixth-century exilic period among idol worshippers."
+      read: 2026-11-24
 tradition:
   display: "540–530 BCE"
   from: -540

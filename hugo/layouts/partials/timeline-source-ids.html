@@ -1,7 +1,7 @@
 {{- /*
   Returns the External Source ids the given Timeline Entries cite, unique, in
   first-cited order: each entry's Critical Date (or undated statement) cites,
-  then its Tradition Date cites. Fails the build on an id missing from
+  then its setting cites, then its Tradition Date cites. Fails the build on an id missing from
   hugo/data/external-sources.yaml, so no consumer renders an empty source.
   */
 -}}
@@ -10,6 +10,9 @@
 {{- range $entry := . -}}
   {{- $p := $entry.Params -}}
   {{- range (or $p.critical $p.undated | default dict).cites | default slice -}}
+    {{- $ids = $ids | append .source -}}
+  {{- end -}}
+  {{- range ($p.setting | default dict).cites | default slice -}}
     {{- $ids = $ids | append .source -}}
   {{- end -}}
   {{- range ($p.tradition | default dict).cites | default slice -}}

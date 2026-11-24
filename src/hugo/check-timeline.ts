@@ -62,6 +62,17 @@ const TraditionSchema = z.object({
   cites: z.array(CiteSchema),
 });
 
+/**
+ * A narrated setting (#167 §4): the period a composition's text narrates, its
+ * own internal date, not a historical claim. It never places the entry.
+ */
+const SettingSchema = z.object({
+  display: z.string(),
+  from: year.optional(),
+  to: year.optional(),
+  cites: z.array(CiteSchema),
+});
+
 export const EntrySchema = z.object({
   title: z.string(),
   entryKind: z.enum(["event", "composition"]),
@@ -76,6 +87,7 @@ export const EntrySchema = z.object({
   critical: CriticalSchema.optional(),
   undated: UndatedSchema.optional(),
   seeAlso: z.string().nullish(),
+  setting: SettingSchema.optional(),
   tradition: TraditionSchema.optional(),
 });
 
@@ -98,13 +110,17 @@ export const TIMELINE_RULES = [
 
 const TRIGGERS_PATH = "hugo/data/timeline/triggers.yaml";
 
-/** Each cite with its review key: `critical/<n>`, `undated/<n>`, `tradition/<n>`. */
+/**
+ * Each cite with its review key: `critical/<n>`, `undated/<n>`, `setting/<n>`,
+ * `tradition/<n>`.
+ */
 function keyedCites(entry: Entry): { key: string; source: string }[] {
-  return (["critical", "undated", "tradition"] as const).flatMap(part =>
-    (entry[part]?.cites ?? []).map((cite, index) => ({
-      key: `${part}/${index + 1}`,
-      source: cite.source,
-    })),
+  return (["critical", "undated", "setting", "tradition"] as const).flatMap(
+    part =>
+      (entry[part]?.cites ?? []).map((cite, index) => ({
+        key: `${part}/${index + 1}`,
+        source: cite.source,
+      })),
   );
 }
 
@@ -167,6 +183,30 @@ function checkEntry(
       if (!name || !entry.tradition.holder.includes(name)) {
         errors.push(
           `${at}: holder "${entry.tradition.holder}" doesn't contain "${name}", the tradition of "${cite.source}"`,
+        );
+      }
+    }
+  }
+
+  if (entry.setting) {
+    if (entry.entryKind !== "composition") {
+      errors.push(
+        `${at}: has a setting but entryKind ${entry.entryKind}; a setting is for composition entries only`,
+      );
+    }
+    if (entry.setting.cites.length === 0) {
+      errors.push(
+        `${at}: setting cites no source; cite a Scholarly or Reference source`,
+      );
+    }
+    if (entry.setting.to !== undefined && entry.setting.from === undefined) {
+      errors.push(`${at}: setting has to but no from; give from with to`);
+    }
+    for (const [index, cite] of entry.setting.cites.entries()) {
+      const source = registry[cite.source];
+      if (source && source.class === "Tradition") {
+        errors.push(
+          `${at}: citation setting/${index + 1} cites "${cite.source}", a ${source.class} source; a setting cites Scholarly or Reference sources only`,
         );
       }
     }

@@ -26,7 +26,7 @@
   {{ $registry := index hugo.Data "external-sources" }}
   {{ $sourceRead := dict }}
   {{ range $ordered }}
-    {{ range $part := (slice .Params.critical .Params.undated .Params.tradition) }}
+    {{ range $part := (slice .Params.critical .Params.undated .Params.setting .Params.tradition) }}
       {{ range $cite := ($part | default dict).cites }}
         {{ with $cite.read }}
           {{ $read := time.Format "2006-01-02" . }}

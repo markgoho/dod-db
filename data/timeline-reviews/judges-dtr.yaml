@@ -29,6 +29,12 @@ citations:
       owner: "",
       note: "NABRE Judges introduction, ¶ 5. The HTML page refused the script (403); its markdown alternate (/bible/judges/0.md, same site) was served and matched 2026-11-23. Names the Deuteronomistic editor of Judges; no date. The paragraph goes on to say the historian drew the stories “from older sources”.",
     }
+  setting/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#169 (2026-11-24): NABRE Judges introduction, ¶ 1, matched verbatim in the 2026-11-23 saved .md copy (today's request got 403). “According to the biblical narrative” frames it as the text's own setting. No year, so no `from`.",
+    }
 triggers:
   64@00:26:06:
     {

@@ -44,6 +44,52 @@ describe("checkTimeline", () => {
     ]);
   });
 
+  test("fails when a setting citation names a source missing from the registry", async () => {
+    expect(await check("setting-unknown-source")).toEqual([
+      `timeline/book: citation setting/1 names unknown source "no-such-source"`,
+    ]);
+  });
+
+  test("fails a published setting whose citations and sources the review omits", async () => {
+    expect(await check("setting-unreviewed")).toEqual([
+      `timeline/book: review has no citations.setting/1 entry`,
+      `timeline/book: review has no sources.scholarly-book entry`,
+    ]);
+  });
+
+  test("a published setting the review covers passes", async () => {
+    expect(await check("setting-reviewed")).toEqual([]);
+  });
+
+  test("a setting with no years (display and cites only) passes", async () => {
+    expect(await check("setting-no-from")).toEqual([]);
+  });
+
+  test("fails a setting cite that isn't a Scholarly or Reference source", async () => {
+    expect(await check("setting-tradition-cite")).toEqual([
+      `timeline/book: citation setting/2 cites "tradition-page", a Tradition source; a setting cites Scholarly or Reference sources only`,
+    ]);
+  });
+
+  test("fails a setting with to but no from", async () => {
+    expect(await check("setting-to-without-from")).toEqual([
+      `timeline/book: setting has to but no from; give from with to`,
+    ]);
+  });
+
+  test("fails a setting on an event entry", async () => {
+    expect(await check("setting-on-event")).toEqual([
+      `timeline/fall: has a setting but entryKind event; a setting is for composition entries only`,
+      `timeline/fall: review has no citations.setting/1 entry`,
+    ]);
+  });
+
+  test("fails a setting with no citations", async () => {
+    expect(await check("setting-no-cites")).toEqual([
+      `timeline/book: setting cites no source; cite a Scholarly or Reference source`,
+    ]);
+  });
+
   test("fails when a Trigger Claim names no entry", async () => {
     expect(await check("trigger-unknown-entry")).toEqual([
       `${triggers}: Trigger Claim 32@00:01:00 names entry "no-such-entry", not in hugo/content/timeline`,

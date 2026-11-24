@@ -26,6 +26,17 @@ critical:
       locator: "ch. 3 [00:22:16]"
       quote: "This reform has long been noticed and provides scholars with a basis for dating the core materials of Deuteronomy, dating them to the late seventh century."
       read: 2026-11-22
+setting:
+  display: "the plains of Moab, as Israel stands poised to enter Canaan"
+  cites:
+    - source: hayes-rlst145-l11
+      locator: "ch. 1 [00:00:00]"
+      quote: "So Israel's wanderings in the wilderness end on the Plains of Moab, which is on the east bank of the Jordan River, and it's there that the book of Deuteronomy opens."
+      read: 2026-11-24
+    - source: nabre-deuteronomy-intro
+      locator: "Introduction, ¶ 1"
+      quote: "It brings to a close the five books of the Torah or Pentateuch with a retrospective account of Israel’s past—the exodus, the Sinai covenant, and the wilderness wanderings—and a look into Israel’s future as they stand poised to enter the land of Canaan and begin their life as a people there."
+      read: 2026-11-24
 tradition:
   display: "1406 BCE, as sermons by Moses"
   from: -1406
