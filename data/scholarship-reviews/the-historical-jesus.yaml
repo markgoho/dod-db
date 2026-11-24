@@ -2,13 +2,15 @@
 # agent: results of the agent's first pass (#95, 2026-11-23) and the independent second agent pass (2026-11-23, #93 rule change).
 # #133 second pass 2026-11-23 (independent agent): shorts audited against the state-of-scholarship rule; apocalyptic gains a Martin cite (apocalyptic/6); judgement and details flagged (consensus-wording). Review dates stay 2026-11-23.
 # #133 verify/133b 2026-11-23 (third independent agent): apocalyptic/6 Martin l13 ch. 4 [00:47:53] re-fetched and matched verbatim; accepted under the report-plus-holder ruling (see moses-and-the-exodus review). No field-level “most scholars … apocalyptic” sentence found in l13; Martin's “very controversial” hedge is kept in the statement. Other statements not reviewed in this pass.
+# #145 first pass 2026-11-24 (agent): judgement cut (no second read author; Van Voorst not readable); details short narrowed to the baptism, which gains Bond (details/4). Review date and sourcesRead move to 2026-11-24, the date Bond was read.
+# #145 second pass 2026-11-24 (independent agent): Bond (details/4) re-fetched and matched verbatim; judgement cut accepted (Van Voorst still unread). details short narrowed again, from “His baptism by John the Baptist is widely accepted as historical.” to “Many scholars count his baptism by John the Baptist as historical.”: Martin says only “may well be” and “probably”, so “widely accepted” leaned on Bond alone. secondPass 2026-11-24.
 # owner: empty ("") until the owner's publish review sets pass or fail.
-review: 2026-11-23
+review: 2026-11-24
 delegation:
   by: owner
   date: 2026-11-23
   issue: "#93"
-  secondPass: 2026-11-23
+  secondPass: 2026-11-24
 citations:
   existence/1:
     {
@@ -45,18 +47,6 @@ citations:
       agent: pass,
       owner: "",
       note: "Meggitt manuscript pp. 2–3; sentence crosses the page break around footnotes; each half matched verbatim on its own page (p. 2 “In more recent years… established and active”, p. 3 “New Testament scholars… a classicist.”). Footnote markers 8, 9 and 10 removed (owner decision 2026-11-23: acceptable). Statement says “arguing that Jesus was not historical” for the source's “arguing for the non-historicity of Jesus”. Second pass 2026-11-23: verified.",
-    }
-  judgement/1:
-    {
-      agent: pass,
-      owner: "",
-      note: "Meggitt manuscript pp. 1–2; sentence crosses the page break and footnote 1 sits between its halves; each half matched verbatim on its own page (p. 1 “Indeed… deny his”, p. 2 “historicity are usually judged… completely.'”). Footnote marker 2 follows. The inner quotation is Meggitt citing Van Voorst (2000); the statement keeps the wording but not the inner quote marks. Reworded 2026-11-23: question “How does the field treat those arguments?”, short “Usually as too weak or bizarre for more than a footnote, if that.” (source: “relegate them to footnotes or often ignore them completely”). Second pass 2026-11-23: verified. The sentence is Meggitt's own report of the field and the statement names him as its reporter; short answer no stronger than “usually… or often ignore them completely”.",
-    }
-  judgement/2:
-    {
-      agent: pass,
-      owner: "",
-      note: "Meggitt manuscript p. 4. Meggitt's own argument, attributed to him by name in the statement. Second pass 2026-11-23: verified.",
     }
   apocalyptic/1:
     {
@@ -116,19 +106,25 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Martin l13 ch. 3 [00:26:27]. The sign's wording varies by Gospel (Martin reads Mark, Luke, John); statement says “calling Jesus King of the Jews”. Second pass 2026-11-23: verified.",
+      note: "Martin l13 ch. 3 [00:26:27]. The sign's wording varies by Gospel (Martin reads Mark, Luke, John); statement says “calling Jesus King of the Jews”. Second pass 2026-11-23: verified. #145 2026-11-24: the sign on the cross is now out of the short (Martin alone); it stays in the statement, attributed to Martin. #145 second pass 2026-11-24 (independent agent): verified.",
     }
   details/2:
     {
       agent: pass,
       owner: "",
-      note: "Martin l13 ch. 3 [00:26:27]. Hedge kept: “often say may well be”. Second pass 2026-11-23: verified.",
+      note: "Martin l13 ch. 3 [00:26:27]. Hedge kept: “often say may well be”. Second pass 2026-11-23: verified. #145 2026-11-24: short was “Most say the sign on the cross is; scholars often say his baptism may well be.”; now “His baptism by John the Baptist is widely accepted as historical.”: Martin reports scholars often hold it (this cite), Bond (details/4) holds it in her own voice and reports that no scholar doubts it. “Widely accepted” sits between Martin's hedge and Bond's “No scholar doubts”; each keeps its own wording in the statement. #145 second pass 2026-11-24 (independent agent): Bond and Martin quotes accepted, but “widely accepted” is not; short changed again to “Many scholars count his baptism by John the Baptist as historical.” “Many” is the ground Martin’s “a lot of scholars would say probably are historical” (details/3) and Bond’s “No scholar doubts this event” (details/4) share; “widely accepted” was stronger than Martin’s hedges. The word “count” echoes the question. Written by this pass; no further independent pass.",
     }
   details/3:
     {
       agent: pass,
       owner: "",
       note: "Martin l13 ch. 3 [00:26:27]. Martin gives the sign and the baptism as two worked examples of method, not a list; question reworded to “Do scholars count any details…”. Owner decision 2026-11-23: the short answer “Most say the sign on the cross is, and often that his baptism may well be.” compressed two hedges; reworded to “Most say the sign on the cross is; scholars often say his baptism may well be.” so each detail keeps its own hedge (“most scholars say” for the sign, details/1; “scholars often say may well be” for the baptism, details/2). Second pass 2026-11-23: verified.",
+    }
+  details/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#145 2026-11-24: new. Helen K. Bond, Bible Odyssey, second paragraph (the article has no section headings), read in a browser and matched verbatim (curly apostrophe in “Jesus’”; “Matt 3:14-15” has a hyphen on the page). Her two reasons (Mark and John both have it; the evangelists' embarrassment) match Martin's (details/3: more than one source; against the documents' tendency). Statement paraphrases her reasons and names her. Rodríguez's Bible Odyssey article questions the embarrassment criterion (see uncited); it doesn't address the baptism's historicity. #145 second pass 2026-11-24 (independent agent): verified. Second pass: re-fetched from bibleodyssey.org (plain request succeeded this time), matched verbatim in the article’s second paragraph (“At a very basic level …”); date “September 25, 2014” and Bond’s credit line checked.",
     }
 triggers:
   5@00:06:55:
@@ -172,19 +168,19 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "6 statements; core (existence) has Meggitt 2019 (Scholarly) and Martin RLST 152 l13 (Reference): two distinct authors. Second pass 2026-11-23: verified; no citation cut, rule holds.",
+      note: "6 statements; core (existence) has Meggitt 2019 (Scholarly) and Martin RLST 152 l13 (Reference): two distinct authors. Second pass 2026-11-23: verified; no citation cut, rule holds. #145 2026-11-24: judgement cut, so 5 statements; core existence unchanged (Meggitt, Martin). New source: bond-2014-john-mentor-rival (Reference). #145 second pass 2026-11-24 (independent agent): verified.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "“most scholars” (apocalyptic, details) and “virtually no scholar” (existence) each come from the cited source. Martin's “all” is not used (see existence/2). No “consensus”, “fringe” or “minority” on the page. Second pass 2026-11-23: verified. Each wording is quoted in its citation from a Reference or Scholarly source inside the 30-year window, keeps the source's scope, and is followed by the reasons where the source gives them (apocalyptic/4–5, details/3). The deniers short answer no longer characterises the dissenters (“rare” removed). #133 second pass 2026-11-23: every short audited against the rule (2+ distinct read authors; relayed unread authors don't count). Pass: existence (Meggitt, Martin), deniers (who has published what: fact, Meggitt and Martin), outside (dated facts about which ancient writers mention Jesus, exempt), apocalyptic (Ehrman reports “most scholars”; Martin holds it, apocalyptic/6 added). FLAGS: judgement (“Usually as too weak or bizarre…”: Meggitt alone; the inner quote is Van Voorst, Jesus Outside the New Testament, relayed in Meggitt's note 2 and not read) and details (“Most say the sign on the cross is; scholars often say his baptism may well be.”: Martin alone; the Ehrman ch. 9 summary mentions the charge “king of the Jews” but not the sign's historicity, and not the baptism). Each needs a second read author, a reframe or a cut; owner or delegate decides.",
+      note: "“most scholars” (apocalyptic, details) and “virtually no scholar” (existence) each come from the cited source. Martin's “all” is not used (see existence/2). No “consensus”, “fringe” or “minority” on the page. Second pass 2026-11-23: verified. Each wording is quoted in its citation from a Reference or Scholarly source inside the 30-year window, keeps the source's scope, and is followed by the reasons where the source gives them (apocalyptic/4–5, details/3). The deniers short answer no longer characterises the dissenters (“rare” removed). #133 second pass 2026-11-23: every short audited against the rule (2+ distinct read authors; relayed unread authors don't count). Pass: existence (Meggitt, Martin), deniers (who has published what: fact, Meggitt and Martin), outside (dated facts about which ancient writers mention Jesus, exempt), apocalyptic (Ehrman reports “most scholars”; Martin holds it, apocalyptic/6 added). FLAGS: judgement (“Usually as too weak or bizarre…”: Meggitt alone; the inner quote is Van Voorst, Jesus Outside the New Testament, relayed in Meggitt's note 2 and not read) and details (“Most say the sign on the cross is; scholars often say his baptism may well be.”: Martin alone; the Ehrman ch. 9 summary mentions the charge “king of the Jews” but not the sign's historicity, and not the baptism). Each needs a second read author, a reframe or a cut; owner or delegate decides. #145 2026-11-24: FLAGS resolved. judgement cut: no second read author (Van Voorst's own book not readable: the Google Books search shows his sentence only quoted in other books; Martin l13's “some crazy blog” line is about internet deniers, not how the field treats the published arguments). details: short narrowed to the baptism (Martin plus Bond, details/4); the sign on the cross stays in the statement, attributed to Martin. #145 second pass 2026-11-24 (independent agent): judgement cut accepted; details short narrowed to “Many scholars count …” (see details/2).",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "Bauer, Wells, Price, Brodie, Carrier named from Meggitt and Martin. Second pass 2026-11-23: verified.",
+      note: "Bauer, Wells, Price, Brodie, Carrier named from Meggitt and Martin. Second pass 2026-11-23: verified. #145 2026-11-24: judgement, which attributed the field's treatment to Meggitt, is cut; Meggitt still named in deniers. #145 second pass 2026-11-24 (independent agent): verified.",
     }
   tradition-named:
     {
@@ -214,12 +210,21 @@ sources:
       edition: "5th ed., 01 October 2020, OUP catalogue (browser), print ISBN 9780190089528",
       note: "Reference (publisher companion summary, #86). Page title reads “A Brief Introduction to the New Testament, 5e Student Resources”; OUP catalogue shows Fifth Edition, published 01 October 2020, ISBN 9780190089528. Inside the 30-year window. Second pass 2026-11-23: verified.",
     }
+  bond-2014-john-mentor-rival:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey (Society of Biblical Literature), article dated 25 September 2014; Helen K. Bond, University of Edinburgh",
+      note: "Class settled for Bible Odyssey (#86): Reference, judged per author. Credit line: “Professor of Christian Origins and Head of the School of Divinity at the University of Edinburgh”; article dated September 25, 2014 (page; article:modified_time 2024-01-16). Inside the 30-year window. Independent of Martin. #145 second pass 2026-11-24 (independent agent): verified.",
+    }
 leads:
-  - "R. E. Van Voorst, Jesus Outside the New Testament: An Introduction to the Ancient Evidence (Grand Rapids, MI: Eerdmans, 2000), p. 6: source of the “so weak or bizarre that they relegate them to footnotes” words Meggitt quotes (his note 2). Not read. Would give judgement (#133 flag) a second author if it says this in its own voice."
-  - "#133 flag (second pass 2026-11-23): details (“Most say the sign on the cross is…”) rests on Martin l13 alone; the Ehrman ch. 9 summary mentions neither the sign's historicity nor the baptism. No candidate source named in the sources read."
+  - "R. E. Van Voorst, Jesus Outside the New Testament: An Introduction to the Ancient Evidence (Grand Rapids, MI: Eerdmans, 2000), p. 6: source of the “so weak or bizarre that they relegate them to footnotes” words Meggitt quotes (his note 2). Not read. #145 2026-11-24: a Google Books search for the phrase returns only other books quoting it (Licona, Bass and others: “Contemporary New Testament scholars have typically viewed their arguments as so weak or bizarre…”), not Van Voorst's own page. If read in the source itself, it could restore judgement (see uncited) with two authors."
+  - "#133 flag on details resolved in #145 (2026-11-24) by narrowing the short to the baptism. A second read author for the sign on the cross would let it back the short again; John Granger Cook, “Crucifixion in the Roman World” (Bible Odyssey), read 2026-11-24, treats the titulus as showing the charge of sedition but never says it is historical, so it isn't one."
   - "Bart D. Ehrman, Did Jesus Exist? (HarperOne, 2012), Google Books page id PT9: “virtually every scholar of antiquity, of biblical studies, of classics, and of Christian origins in this country and, in fact, in the Western world agrees.” Snippet only; full sentence not read (#86). A trade-press book would count as Reference."
   - "Chrissy M. E. Hansen, “Reception of the Testimonium Flavianum”, New England Classical Journal 51.2 (2024), abstract only: “Recent studies have largely ruled it partially authentic”. PDF not read. Could back a Testimonium statement."
   - "T. C. Schmidt, Josephus and Jesus: New Evidence for the One Called Christ (Oxford University Press, 2025), open access; Oxford Academic and OAPEN refused automated requests in earlier research. Not read."
 uncited:
+  - "#145 2026-11-24: statement judgement cut (question “How does the field treat those arguments?”, short “Usually as too weak or bizarre for more than a footnote, if that.”). Was judgement/1, Meggitt manuscript pp. 1–2: “Indeed, the arguments of those that deny his historicity are usually judged by most working professionally in the discipline to be 'so weak or bizarre that they relegate them to footnotes or often ignore them completely.'” and judgement/2, p. 4: “it is clear that the subject should merit far greater attention from those working professionally in the field than is now the case.” Both verified in the second pass 2026-11-23. Cut because the short was Meggitt's report alone and the inner words are Van Voorst's, relayed (see leads)."
+  - "#145 2026-11-24: Rafael Rodríguez, “Criterion of Embarrassment”, Bible Odyssey, read in full in a browser: “Recently, however, a number of historians have questioned the logic of the criterion of embarrassment (as well as of the other criteria of authenticity).” Not cited: it questions the method behind details/3 and details/4 rather than the baptism itself. A statement on how the criteria are now judged would need it."
   - "Martin l13 ch. 1: “basically most scholars will say that we don't really know what happened at the trial of Jesus.” Read; not used. Could back a further statement."
   - "Ehrman ch. 9 summary, section “The Apocalyptic Death of Jesus”: “Pontius Pilate, not Jewish authorities, sentenced him to crucifixion.” Read; not used."

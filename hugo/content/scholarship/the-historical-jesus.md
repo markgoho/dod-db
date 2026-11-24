@@ -2,7 +2,7 @@
 title: "The Historical Jesus"
 dek: "Whether Jesus existed, who argues otherwise, and what scholars think can be known about his life."
 core: existence
-sourcesRead: 2026-11-23
+sourcesRead: 2026-11-24
 related:
   books: []
   tags: [pontius-pilate]
@@ -53,20 +53,6 @@ statements:
       - source: meggitt-2019-non-historical-jesus
         locator: "manuscript pp. 2–3"
         quote: "In more recent years, Robert M. Price and Thomas L. Brodie, both established and active New Testament scholars – the latter a notable figure in the field of Johannine studies – have published works arguing for the non-historicity of Jesus, as has Richard Carrier, a classicist."
-        read: 2026-11-23
-  - id: judgement
-    group: "Did Jesus exist?"
-    question: "How does the field treat those arguments?"
-    short: "Usually as too weak or bizarre for more than a footnote, if that."
-    text: "The arguments of those who deny Jesus's historicity are usually judged by most working professionally in the discipline to be so weak or bizarre that they relegate them to footnotes or often ignore them completely. Justin Meggitt, who reports this, argues that the question should nonetheless get far more attention from the field than it now does."
-    cites:
-      - source: meggitt-2019-non-historical-jesus
-        locator: "manuscript pp. 1–2, section 1"
-        quote: "Indeed, the arguments of those that deny his historicity are usually judged by most working professionally in the discipline to be 'so weak or bizarre that they relegate them to footnotes or often ignore them completely.'"
-        read: 2026-11-23
-      - source: meggitt-2019-non-historical-jesus
-        locator: "manuscript p. 4, section 1"
-        quote: "it is clear that the subject should merit far greater attention from those working professionally in the field than is now the case."
         read: 2026-11-23
   - id: apocalyptic
     group: "What can be known about him"
@@ -119,8 +105,8 @@ statements:
   - id: details
     group: "What can be known about him"
     question: "Do scholars count any details of his life as historical?"
-    short: "Most say the sign on the cross is; scholars often say his baptism may well be."
-    text: "Most scholars say that the sign on the cross calling Jesus King of the Jews is historical, and scholars often say that his baptism by John the Baptist may well be historical. A lot of scholars say both details are probably historical because they seem to be witnessed by more than one source and to go against the theological tendency of the documents in which they are found."
+    short: "Many scholars count his baptism by John the Baptist as historical."
+    text: "Helen Bond writes that no scholar doubts that John the Baptist baptized Jesus: the story is found in both Mark and John, and the Gospel writers’ embarrassment at a sinless Jesus being baptized for the forgiveness of sin suggests a long-established tradition. Dale Martin's Yale lectures say scholars often hold that the baptism may well be historical, and that most scholars say the sign on the cross calling Jesus King of the Jews is historical too. Martin says a lot of scholars count both details probably historical because they seem to be witnessed by more than one source and to go against the theological tendency of the documents in which they are found."
     cites:
       - source: martin-rlst152-l13
         locator: "ch. 3 [00:26:27]"
@@ -134,4 +120,8 @@ statements:
         locator: "ch. 3 [00:26:27]"
         quote: "We've got two very small details that a lot of scholars would say probably are historical because they seemed to be witnessed by more than one source and they also seem to go against the theological tendency of the documents in which they're found."
         read: 2026-11-23
+      - source: bond-2014-john-mentor-rival
+        locator: "paragraph 2"
+        quote: "No scholar doubts this event: not only is the story found in both Mark and John but the embarrassment felt by the Gospel writers regarding the obvious conundrum of a sinless Jesus’ baptism for the forgiveness of sin (see especially Matt 3:14-15) suggests a long-established tradition."
+        read: 2026-11-24
 ---
