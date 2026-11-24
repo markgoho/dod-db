@@ -1,6 +1,7 @@
 # Review record for /scholarship/the-origins-of-yahweh/ (#93 shape). Not rendered.
 # agent: results of the agent's first pass (#131, 2026-11-23). That pass does not count toward publish. Independent second agent pass 2026-11-23 re-fetched every source, re-matched every quote and re-read every Trigger Claim; its results are appended to each note.
 # owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# #133 (2026-11-23): short answers must report the state of scholarship on two or more authors. convergence reframed (question and short answer), south's short answer reworked with a new source (Sperling), not-el cut and Fleming's sentence moved into south. New citations carry first-pass notes only; the second pass on changed statements is pending (#133) and will update review dates.
 # First pass: every quote was re-fetched 2026-11-23 and matched verbatim after normalising whitespace, quotes, dashes and PDF ligatures; each locator was checked by eye against the fetched text.
 review: 2026-11-23
 delegation:
@@ -151,7 +152,13 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 6, same paragraph. Hayes's own judgement, attributed to her by name. Second pass 2026-11-23: verified.",
+      note: "Hayes l7 ch. 6, same paragraph. Hayes's own judgement, attributed to her by name. Second pass 2026-11-23: verified. #133 first pass: question reframed from “How did Yahweh come to share traits with El and Baal?” to “What is the convergence model?”, so the short answer reports what one named model says, with Hayes's assessment attributed (“finds it has great explanatory power”, her words). No second author read gives convergence as the field's answer; reporting a model's content is a fact about the model, not a state-of-the-field claim. Second pass on #133 change pending.",
+    }
+  convergence/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "#133 first pass. Sperling, Encyclopedia of Religion entry on Encyclopedia.com, section “Biblical Terminology of the Divine”, re-fetched 2026-11-23 and matched verbatim (the second “el” is italic on the page). Second author beside Hayes that Yahweh took over something of El's (his name). Statement paraphrases; “Yahveh” spelling kept only in the quote and in the attributed phrase “the Yahveh cult”. Not used to say Yahweh began as El.",
     }
   convergence/5:
     {
@@ -243,11 +250,29 @@ citations:
       owner: "",
       note: "Fleming excerpt p. 6. Statement keeps “doubt of southern origins” and doesn't claim the Berlin view puts Yahweh's origin in Israel (that sentence on p. 6 is a conditional; left uncited). Second pass 2026-11-23: verified.",
     }
-  not-el/1:
+  south/10:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 4. First person, attributed by name in short answer and statement. The excerpt names no one who holds that Yahweh began as El; the question stands because Fleming frames his view against it. A second sentence citing Hayes l7 ch. 6 (“first El”) was cut in the first pass: Smith's model as Hayes gives it doesn't address whether Yahweh began as El, so “too” was the page's inference. Second pass 2026-11-23: verified.",
+      note: "#133 first pass. Sperling, section “Biblical View of the Origins of the Worship of YHVH”, re-fetched 2026-11-23 and matched verbatim. Second independent author for the short answer's “There is no consensus” (Fleming's “no consensus and never was”, south/8). Statement says “where the worship of Yahweh began” for “the origin of Yahveh worship”.",
+    }
+  south/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "#133 first pass. Sperling, same section, two sentences, matched verbatim; “bce” is small caps on the page; the second sentence is cut before “that makes much of…”. Backs the short answer's “Egyptian texts lend it some support”, beside Fleming's “The Egyptian references suit such a requirement” (south/3). Statement gives Sperling's order of centuries as fourteenth and thirteenth (his “thirteenth and fourteenth”), no change of sense. Sperling's “Yhv'” is his transliteration, kept.",
+    }
+  south/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "#133 first pass. Cambridge Core page for Fleming ch. 7, “Summary” paragraph, re-fetched 2026-11-23 and matched verbatim. The summary is taken to be Fleming's own text (it reads as the chapter's opening paragraph); the full chapter was not read. Same author as the excerpt: counts once. Gives, in Fleming's report, the side Fleming argues against; it does not make a debate the short answer, because no second author read states or reports the El-origin view. Statement attributes the list to Fleming and gives van der Toorn's objection as stated, not as a general rejection.",
+    }
+  south/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "Was not-el/1 (Fleming excerpt p. 4, first person, attributed by name; verified by the second pass 2026-11-23). #133 first pass: not-el cut because its short answer (“Daniel Fleming thinks not.”) was one scholar's view as the answer and no open source read gives the other side in its own words; the sentence moved into south's statement, attributed.",
     }
 triggers:
   7@00:48:15:
@@ -285,19 +310,19 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "7 statements (minimum 3). Core (el) backed by two independent authors (#92, counted by distinct author): Christine Hayes (hayes-rlst145-l7, Reference, Yale 2006; el/1–5) and Coogan and Chapman (coogan-brief-4e-summary-ch5 and coogan-brief-4e-summary, Reference, OUP 2019; el/6–7, counting once). None Host-authored. Fleming (Scholarly) does not back the core and isn't cited on it. First-pass flag, resolved by the second pass below: Hayes says her El handout relies “very much on Michael Coogan” (l7 ch. 5), and l8's storm passage relays Coogan. The core still rests on Hayes's own “many scholars have suggested” report (el/1) and the Coogan and Chapman summary (el/6), so it passes by distinct author, but the two aren't wholly independent in substance. Second pass 2026-11-23, owner's core-independence decision: checked whether Fleming (CUP 2021, open excerpt pp. 1–10, all read) backs `el`. He does not: the excerpt never says Israel's ancestors worshipped El; the nearest is p. 6, “El could have been part of the religious landscape before Israel”, which is hedged and about the region, not Israel's ancestors. Fleming does back a different framing (p. 4, “I do not think Yahweh began as any form of ‘The God’ El”), so rewording the core to that common ground was tested: it needs a Hayes or Coogan sentence that says alone that Yahweh did not begin as El. None does. Hayes l7 ch. 6 (Smith's model: Yahweh “originally came from a region further south … began to take on the characteristics of other deities, first El”) implies it only by inference (the first pass already cut it from not-el for that reason); Hayes l8 ch. 2 (“in place of El”) relays Coogan, bringing the dependence back; the Coogan and Chapman summaries never name Yahweh and El as separate gods. Not reworded to fit (#84). `el` left as is; it holds by distinct author only. Substance note: el/1 (“many scholars have suggested…”) comes before Hayes mentions the Coogan-based handout, and el/4–5 are her own ch. 6 summary in the Smith section, so none of her `el` sentences is presented as Coogan's; the dependence she states covers the handout list (resemblance) and the l8 storm passage. 7 statements; publish rule met. Second pass 2026-11-23: verified.",
+      note: "7 statements (minimum 3). Core (el) backed by two independent authors (#92, counted by distinct author): Christine Hayes (hayes-rlst145-l7, Reference, Yale 2006; el/1–5) and Coogan and Chapman (coogan-brief-4e-summary-ch5 and coogan-brief-4e-summary, Reference, OUP 2019; el/6–7, counting once). None Host-authored. Fleming (Scholarly) does not back the core and isn't cited on it. First-pass flag, resolved by the second pass below: Hayes says her El handout relies “very much on Michael Coogan” (l7 ch. 5), and l8's storm passage relays Coogan. The core still rests on Hayes's own “many scholars have suggested” report (el/1) and the Coogan and Chapman summary (el/6), so it passes by distinct author, but the two aren't wholly independent in substance. Second pass 2026-11-23, owner's core-independence decision: checked whether Fleming (CUP 2021, open excerpt pp. 1–10, all read) backs `el`. He does not: the excerpt never says Israel's ancestors worshipped El; the nearest is p. 6, “El could have been part of the religious landscape before Israel”, which is hedged and about the region, not Israel's ancestors. Fleming does back a different framing (p. 4, “I do not think Yahweh began as any form of ‘The God’ El”), so rewording the core to that common ground was tested: it needs a Hayes or Coogan sentence that says alone that Yahweh did not begin as El. None does. Hayes l7 ch. 6 (Smith's model: Yahweh “originally came from a region further south … began to take on the characteristics of other deities, first El”) implies it only by inference (the first pass already cut it from not-el for that reason); Hayes l8 ch. 2 (“in place of El”) relays Coogan, bringing the dependence back; the Coogan and Chapman summaries never name Yahweh and El as separate gods. Not reworded to fit (#84). `el` left as is; it holds by distinct author only. Substance note: el/1 (“many scholars have suggested…”) comes before Hayes mentions the Coogan-based handout, and el/4–5 are her own ch. 6 summary in the Smith section, so none of her `el` sentences is presented as Coogan's; the dependence she states covers the handout list (resemblance) and the l8 storm passage. 7 statements; publish rule met. Second pass 2026-11-23: verified. #133 first pass: not-el cut, 6 statements (minimum 3); core el unchanged. Second pass on #133 change pending.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "“Many scholars have suggested” (el) is Hayes's own wording, quoted in el/1, with her reasons (Exod 6:2–4, El titles, traits and names) on the page per #86. “no consensus” (south) is Fleming's own, quoted in south/8 and attributed. No other field-state wording; the page never counts scholars. Second pass 2026-11-23: verified.",
+      note: "“Many scholars have suggested” (el) is Hayes's own wording, quoted in el/1, with her reasons (Exod 6:2–4, El titles, traits and names) on the page per #86. “no consensus” (south) is Fleming's own, quoted in south/8 and attributed. No other field-state wording; the page never counts scholars. Second pass 2026-11-23: verified. #133 first pass (short answers report the state of scholarship on two or more authors): el (Hayes, Coogan and Chapman), south (“There is no consensus”: Fleming south/8, Sperling south/10; “some support” from Egyptian texts: Sperling south/11, Fleming south/3). convergence reframed to report one named model's content, Hayes's assessment attributed. resemblance (what Hayes's lecture lists), storm (“Some biblical descriptions recall…”, a description of biblical texts from Hayes l7 ch. 5; storm/6 relays Coogan, so it is not a second author for it) and attestation (dated inscription; the Egyptian name “is debated”, Fleming's “open to debate”) checked: all three treated as exempt facts about texts; second pass to confirm storm. not-el cut. Second pass on #133 change pending.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "Fleming's first-person views (not-el, south) and his account of the Levin challenge are attributed by name; Smith's model is attributed to Smith as Hayes describes it, Hayes's judgement to Hayes, Coogan's observation to Coogan through Hayes. Second pass 2026-11-23: verified.",
+      note: "Fleming's first-person views (south; not-el before #133) and his account of the Levin challenge are attributed by name; Smith's model is attributed to Smith as Hayes describes it, Hayes's judgement to Hayes, Coogan's observation to Coogan through Hayes. Second pass 2026-11-23: verified.",
     }
   tradition-named:
     {
@@ -341,12 +366,32 @@ sources:
       edition: "First published 2021, Cambridge University Press (copyright page, assets.cambridge.org); ISBN 9781108835077",
       note: "New entry. Read in the publisher's open excerpt PDF (pp. 1–10). Scholarly (academic publisher, professional scholar, NYU); inside the 30-year window. Cambridge Core lists online chapters from November 2020; the copyright page says first published 2021. The catalogue page returned 503 on 2026-11-23. Second pass: front-matter PDF (assets.cambridge.org) re-fetched, “First published 2021”; catalogue (cambridge.org/9781108835077, browser) shows Hardback ISBN 9781108835077, “Published: December 2020”, Fleming at NYU. 2021 kept as the copyright-page year. Second pass 2026-11-23: verified.",
     }
+  fleming-2021-yahweh-before-israel-ch7:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Same book as fleming-2021-yahweh-before-israel; Cambridge Core chapter page",
+      note: "New entry (#133). Only the chapter page's open “Summary” paragraph was read; the chapter itself needs access. Same author as the excerpt entry: adds no independent source. Year kept at 2021 to match the excerpt entry (copyright page). Second pass on #133 change pending.",
+    }
+  sperling-2005-god-hebrew-scriptures:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Encyclopedia of Religion entry, dated “(1987 and 2005)” on Encyclopedia.com",
+      note: "New entry (#133). Reference (signed entry in a reference encyclopedia). Read in full on Encyclopedia.com 2026-11-23. The page names the work only as Encyclopedia of Religion and dates the entry 1987 and 2005; publisher and edition are not on the page, so left null (the Encyclopaedia Judaica entry “God, Names of” on Encyclopedia.com cites Sperling in “Encyclopedia of Religion (2004²), 3537–43”, so 2nd ed. is likely; not confirmed). Independent of Fleming and Hayes by distinct author. Second pass on #133 change pending.",
+    }
 leads:
+  - "Frank Moore Cross, “Yahweh and the God of the Patriarchs”, Harvard Theological Review 55 (1962), pp. 225–59, and Canaanite Myth and Hebrew Epic (1973), ch. “Yahweh and ʾEl”: the classic case that Yahweh began as a cultic name of El. Named in Fleming ch. 7 summary (south/12); HTR is paywalled (Cambridge Core, checked 2026-11-23), the only full-text copy of the book found online is on a third-party site of unclear licence; not read. Both older than the 30-year window the source notes use."
+  - "Karel van der Toorn, “Yahweh”, Dictionary of Deities and Demons in the Bible, 2nd ed. (1999), pp. 910–19 (Fleming ch. 7 summary cites p. 915 for the objection to an El-epithet origin); not read."
+  - "Marlene E. Mondriaan, “Yahweh and the origin of Yahwism: A critical evaluation”, Old Testament Essays 17/4 (2004), pp. 580–94: reported by a search summary as calling the Yahweh–El equation a view with reasonable consensus and arguing it is too simple. Only a Scribd upload found; not read."
+  - "Nissim Amzallag, “YHWH and El”, ch. 6 of Yahweh and the Origins of Ancient Israel (CUP, 2023), pp. 178–96: Cambridge Core summary says the chapter argues the Bible identifies YHWH with El. Paywalled; summary read only in a fetch tool's paraphrase, not verbatim; not read."
   - "Mark S. Smith, The Early History of God, 2nd ed. (Eerdmans, 2002), pp. 7–8: “Convergence involved the coalescence of various deities, and/or some of their features into the figure of Yahweh.” Quoted by Hayes in l7 ch. 6; Smith's own text not read."
   - "Michael D. Coogan, The Old Testament: A Historical and Literary Introduction to the Hebrew Scriptures (OUP, 2006), pp. 101–3: the storm-god shift, relayed by Hayes in l8 ch. 2; not read."
   - "Theodore J. Lewis, The Origin and Character of God (OUP, 2020), ch. 6 “The Origins of Yahweh”, cited in Fleming 2021, p. 3 n. 4 as a systematic review of the inscriptional evidence; not read."
   - "Joseph Blenkinsopp (2008), four lines of evidence for the Midianite Hypothesis, known only through Fleming 2021, p. 8; not read."
 uncited:
+  - "Neal H. Walls, “El”, Encyclopedia of Religion (2005), on Encyclopedia.com (https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/el): “Yahweh and El share many common features.” and “Historically, El is probably identified with Yahweh in ancient Israel”. Read 2026-11-23 for #133 as a possible other side for not-el; not cited, because it is about El and Yahweh being identified in Israel, not about Yahweh beginning as El, and Fleming's view and Smith's model are both compatible with it."
+  - "Fleming ch. 7 summary (Cambridge Core): “More deeply, with two different divine names in play and contrasting associations, the very notion of an original identification raises doubt.” Fleming's own view, already given by south/13."
   - "Hayes l7 ch. 6 [00:38:39]: “The Canaanite god El was, from the biblical text, the God of Israel's earliest ancestors.” The candidate's core-claim passage (#124). Not cited: it opens Hayes's account of Smith's convergence model, so el cites Hayes's own ch. 5 and ch. 6 statements (el/1, el/4, el/5) instead."
   - "Hayes l8 ch. 2 [00:06:51]: “The older god El, the sky god, was replaced by the younger storm god, Baal”. Hayes relaying Coogan (2006). (Second pass correction: not the only passage read naming El as the sky god; l7 ch. 5 also says “the sky god, El”, in Hayes's own account of the Ugarit texts.) Not cited, so el doesn't equate the Coogan ch. 6 summary's sky god with El."
   - "Fleming 2021, p. 4: “The Egyptian evidence is decisive to my analysis: the name Yhwȝ designates a Shasu group, a Yhwȝ-people.” Fleming's own reading of the Egyptian name; not cited, since the page states only that the texts name a Yhwȝ in Shasu-land."

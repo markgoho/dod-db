@@ -2,7 +2,7 @@
 
 Generated from `hugo/content/scholarship/test-page.md`, `data/scholarship-reviews/test-page.yaml`, `hugo/data/scholarship/triggers/test-page.yaml` and `hugo/data/external-sources.yaml` at abc1234.
 
-Open every URL. For each item, reply **pass** or **fail**, with a note if needed, using its key (e.g. `core/1: pass`). A citation passes when the quote is present, the locator finds it, and the question, short answer and statement are no stronger than the source.
+Open every URL. For each item, reply **pass** or **fail**, with a note if needed, using its key (e.g. `core/1: pass`). A citation passes when the quote is present, the locator finds it, and the question, short answer and statement are no stronger than the source. A short answer reports where scholarship stands on two or more authors; one author's view appears only in the statement, attributed (#133).
 
 Draft preview: `cd hugo && hugo server -D`, then http://localhost:1313/scholarship/test-page/
 
@@ -57,7 +57,7 @@ Check the Speaker and the text, and read about two minutes either side for any h
 
 - [ ] `publish-rule`: at least 3 statements, and the core claim on at least 2 independent sources (counted by author), one Scholarly or Reference, not only Host-authored. Now: 3 statements; core `core` cites 3 independent sources (Ann Author; Leo Lecturer; Tess Textbook).
   - Agent: pass. 3 statements; core on 3 authors.
-- [ ] `consensus-wording`: no statement says "consensus" or "most scholars" more strongly than its source does.
+- [ ] `consensus-wording`: no statement says "consensus" or "most scholars" more strongly than its source does, and each short answer reports where scholarship stands on two or more authors, never one author's view (uncontested facts exempt, #133).
   - Agent: pass.
 - [ ] `dissent-attributed`: any dissent is attributed to the person who holds it.
   - Agent: pass.

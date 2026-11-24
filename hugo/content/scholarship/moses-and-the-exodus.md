@@ -125,7 +125,7 @@ statements:
   - id: band
     group: "How scholars read the account"
     question: "What might lie behind the story?"
-    short: "One textbook summary suggests a small band of escapees under Moses."
+    short: "Some scholars find it plausible that a real escape from Egypt lies at its core."
     text: "The chapter summary for Coogan and Chapman's introductory textbook suggests that at the heart of the traditions may lie a less grand story of a small band of escapees under Moses, who lost the pursuing Egyptian chariots in the mud of the “Reed Sea”. Christine Hayes reports that some scholars think the circumstantial evidence from Egypt lends plausibility to a story of slaves working on building projects who escaped. Carol Meyers judges that such analogues suggest a core of reality, although there is no specific historical grounding for the biblical account."
     cites:
       - source: coogan-brief-4e-summary
