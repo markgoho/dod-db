@@ -110,11 +110,12 @@
 /*
   The minimap's three stacked rows (caption, strip, legend), as a popover or
   as the rail. A tick is a dot (--tick-dot) and --tick-pitch is one dot's
-  place in a column, both whole pixels. timeline-minimap.html's $pitchShare
+  place in a row, both whole pixels. timeline-minimap.html's $pitchShare
   is the largest pitch as a share of its strip.
 */
 .timeline-minimap__map {
-  --tick-dot: round(var(--space-2xs), 1px);
+  /* Even, so a dot centred on a whole pixel has whole-pixel edges. */
+  --tick-dot: round(var(--space-2xs), 2px);
   --tick-pitch: calc(var(--tick-dot) + round(var(--space-3xs), 1px));
 
   gap: round(var(--space-3xs), 1px);
@@ -407,6 +408,7 @@
 .timeline-minimap__strip {
   --tick-track-width: var(--space-s);
 
+  anchor-name: --timeline-minimap-strip;
   background: var(--tan-000);
   border: var(--border-width-sm) solid var(--tan-900);
   display: grid;
@@ -420,18 +422,22 @@
 }
 
 .timeline-minimap__eras {
-  display: flex;
-  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
-/* Basis 0 and no border, so each band's share is exactly its span. */
+/*
+  Each band is placed by its era's years, rounded the way a tick's centre is
+  (whole pixels, down), so a tick always falls in its own band.
+*/
 .timeline-minimap__band {
   background: transparent;
-  flex: var(--era-years) 1 0;
-  min-block-size: 0;
+  inset-block: round(down, var(--era-start) * 100%, 1px)
+    calc(100% - round(down, var(--era-end) * 100%, 1px));
+  inset-inline: 0;
+  position: absolute;
 }
 
 .timeline-minimap__band + .timeline-minimap__band {
@@ -537,33 +543,41 @@
 }
 
 /*
-  A tick sits at its year, centred in the tick track. A run of close ticks
-  is a column (--tick-stack, from timeline-minimap.html), held up off the
-  strip's foot by a pitch per tick below it (--tick-after). --tick-top is the
-  dot's top edge in whole pixels, worked out on the tick and on its setting
-  alike, so the setting's arc meets the dot where it is drawn. The current
-  one: see the end.
+  A tick is centred on its year (--tick-top, its top edge), always: no dot
+  leaves its year, so none leaves its era. Ticks that would overlap share a
+  row: slot 0 is centred in the tick track and each slot (--tick-slot, from
+  timeline-minimap.html) sits a pitch further in (--tick-x, from the strip's
+  inline end). A row longer than the strip is wide stops at the last whole
+  slot and its dots overlap there. Whole pixels. Worked out on the tick and
+  on its setting alike, so the setting's arc meets the dot. The current one:
+  see the end.
 */
 .timeline-minimap__tick,
 .timeline-minimap__setting {
-  --tick-top: round(
+  --tick-track-inset: round(
     down,
-    min(
-        var(--tick-stack),
-        100% - var(--tick-dot) / 2 - var(--tick-after) * var(--tick-pitch)
-      ) -
-      var(--tick-dot) / 2,
+    (var(--tick-track-width) - var(--tick-dot)) / 2,
     1px
+  );
+  --tick-top: calc(
+    round(down, var(--tick-at) * 100%, 1px) - var(--tick-dot) / 2
+  );
+  --tick-x: calc(
+    var(--tick-track-inset) +
+      min(
+        var(--tick-slot) * var(--tick-pitch),
+        round(
+          down,
+          100% - var(--tick-track-inset) - var(--tick-pitch),
+          var(--tick-pitch)
+        )
+      )
   );
 }
 
 .timeline-minimap__tick {
   inset-block-start: var(--tick-top);
-  inset-inline-end: round(
-    down,
-    (var(--tick-track-width) - var(--tick-dot)) / 2,
-    1px
-  );
+  inset-inline-end: var(--tick-x);
   pointer-events: auto;
   position: absolute;
 }
@@ -583,8 +597,10 @@
 
 /*
   The tick's name and date (popover="hint", opened by interestfor on hover or
-  focus), beside the tick on the side with room. Hoverable (WCAG 1.4.13):
-  the ticks layer passes clicks through, so the hint takes them back.
+  focus): level with its tick (the implicit anchor) but out beside the strip,
+  so it never covers the rest of the tick's row. Where there is no room
+  beside the strip (the narrow popover), under the tick. Hoverable (WCAG
+  1.4.13): the ticks layer passes clicks through, so the hint takes them back.
 */
 .timeline-minimap__tip {
   background: var(--tan-000);
@@ -594,13 +610,25 @@
   color: var(--color-text-main);
   font-size: var(--step--2);
   inset: auto;
+  /* Within the area beside the tick, from the strip's edge. */
+  inset-inline-start: calc(
+    anchor(--timeline-minimap-strip end) + var(--space-2xs)
+  );
   line-height: var(--line-height-heading);
-  margin: 0 var(--space-2xs);
+  margin: 0;
   max-inline-size: var(--content-max-width-sidebar);
   padding: var(--space-4xs) var(--space-2xs);
   pointer-events: auto;
   position-area: inline-end;
-  position-try-fallbacks: flip-inline, flip-block;
+  position-try-fallbacks: --timeline-minimap-tip-below;
+}
+
+@position-try --timeline-minimap-tip-below {
+  align-self: auto;
+  inset: auto;
+  justify-self: anchor-center;
+  margin: var(--space-2xs) 0 0;
+  position-area: block-end;
 }
 
 /* Moving from one tick's hint to the next opens it at once. */
@@ -641,8 +669,8 @@
 /*
   The current entry's narrated setting (#170): a faint hatched span at its
   years, beside the tick track, and a dotted arc from the span's middle to
-  the tick's dot, where it is drawn (--tick-top). Shown only while its entry
-  is current.
+  the tick's dot (--tick-top, --tick-x). Shown only while its entry is
+  current.
 */
 .timeline-minimap__setting {
   /* display, not visibility: a visible child would show through the hidden rail. */
@@ -680,7 +708,7 @@
   inset-inline: calc(
       100% - var(--tick-track-width) - var(--space-xs) - var(--space-3xs)
     )
-    calc(var(--tick-track-width) - var(--space-3xs));
+    calc(var(--tick-x) + var(--tick-dot));
 }
 
 /* ---------- The current-state look: what --is-current: 1 shows ---------- */

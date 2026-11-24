@@ -140,76 +140,62 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       );
   });
 
-  test("ticks closer than a dot apart form a column: each sits a pitch per tick below an earlier one, or at its own year if lower", () => {
-    // A pitch is under 0.04 of any strip, 200 years: Creation and Adam
+  test("ticks closer than a dot apart share a row: each stays at its year and takes the lowest slot inward none of them has", () => {
+    // A dot's pitch is under 0.04 of any strip, 200 years: Creation and Adam
     // (4004, 4000 BCE) once drew as one tick, and three entries share 587 BCE.
     const ticks = select(page, ".timeline-minimap__tick");
-    /** The earlier ticks that can set this one's place, and how many pitches below each it sits. */
-    const stack = (id: string) => {
-      const k = ticks.findIndex(t => t.attrs["data-tick"] === id);
-      const expr =
-        /--tick-stack: max\((.*)\)/.exec(ticks[k]?.attrs.style ?? "")?.[1] ??
-        "";
-      return [
-        ...expr.matchAll(/([\d.]+) \* 100% \+ (\d+) \* var\(--tick-pitch\)/g),
-      ].map(m => {
-        const earlier = ticks[k - Number(m[2])];
-        // Each term is that earlier tick's own year.
-        expect(Number(m[1])).toBe(vars(earlier)["tick-at"]!);
-        return [earlier?.attrs["data-tick"], Number(m[2])];
-      });
-    };
-    expect(stack("creation")).toEqual([["creation", 0]]);
-    expect(stack("adam")).toEqual([
-      ["creation", 1],
-      ["adam", 0],
+    expect(
+      ticks.map(t => [t.attrs["data-tick"], vars(t)["tick-slot"]]),
+    ).toEqual([
+      ["creation", 0],
+      ["adam", 1],
+      ["flood", 0],
+      ["jericho", 0],
+      ["exodus", 1],
+      ["deuteronomy", 0],
+      ["fall-of-samaria", 1],
+      ["judges-dtr", 2],
+      // 0.0426 of the strip after Deuteronomy: clear of it, so slot 0 again.
+      ["fall-of-jerusalem", 0],
+      ["lamentations", 3],
+      ["priestly-genesis-1", 4],
+      ["isaiah-56-66", 1],
+      ["daniel", 0],
     ]);
-    expect(stack("flood")).toEqual([["flood", 0]]);
-    expect(stack("exodus")).toEqual([
-      ["jericho", 1],
-      ["exodus", 0],
-    ]);
-    // The 587 BCE column: on the shortest strip Isaiah 56–66 (539 BCE) can
-    // sit under any of the eight before it back to Jericho, 300 years and
-    // eight pitches earlier, but not under the Flood.
-    expect(stack("isaiah-56-66")).toEqual([
-      ["jericho", 8],
-      ["exodus", 7],
-      ["deuteronomy", 6],
-      ["fall-of-samaria", 5],
-      ["judges-dtr", 4],
-      ["fall-of-jerusalem", 3],
-      ["lamentations", 2],
-      ["priestly-genesis-1", 1],
-      ["isaiah-56-66", 0],
-    ]);
-    // Daniel (167 BCE) is clear of its neighbour but not of the whole column
-    // on the shortest strip: Jericho (1550 BCE) plus 9 pitches (1800 years) is past it.
-    expect(stack("daniel").map(([id]) => id)).toEqual([
-      "jericho",
-      "exodus",
-      "deuteronomy",
-      "fall-of-samaria",
-      "judges-dtr",
-      "fall-of-jerusalem",
-      "lamentations",
-      "daniel",
-    ]);
-    // Counted from the end, so the column never runs off the strip's foot.
-    expect(ticks.map(t => vars(t)["tick-after"])).toEqual(
-      ticks.map((_, i) => ticks.length - 1 - i),
-    );
+    // Nothing moves a dot off its year.
+    for (const t of ticks) expect(t.attrs.style).not.toContain("--tick-stack");
   });
 
-  test("under the strip, a two-item legend names the two dots in the main legend's words", () => {
+  test("each band is placed by its era's years on the same scale as the ticks, so every tick falls in its own band", () => {
+    const bands = select(page, ".timeline-minimap__band");
+    // The strip runs 5000 BCE to 0 in 1000- and 500-year eras.
+    expect(bands.map(b => [vars(b)["era-start"], vars(b)["era-end"]])).toEqual([
+      [0, 0.2],
+      [0.2, 0.4],
+      [0.4, 0.6],
+      [0.6, 0.7],
+      [0.7, 0.8],
+      [0.8, 0.9],
+      [0.9, 1],
+    ]);
+    const byEra = new Map(bands.map(b => [b.attrs["data-era"], vars(b)]));
+    for (const a of select(page, ".timeline-minimap__spy a")) {
+      const band = byEra.get(a.attrs["data-entry-era"])!;
+      const at = vars(
+        select(page, `[data-tick="${a.attrs.href?.slice(1)}"]`)[0],
+      )["tick-at"]!;
+      expect(at).toBeGreaterThanOrEqual(band["era-start"]!);
+      expect(at).toBeLessThan(band["era-end"]!);
+    }
+  });
+
+  test("under the strip, a two-item legend names the two dots, in the Timeline's own labels", () => {
     const items = select(page, ".timeline-minimap__legend > li");
     expect(items.map(i => squash(i.text))).toEqual([
-      "What scholarly and reference sources say",
+      "Placed by a scholarly date",
       "Placed by a tradition’s date",
     ]);
-    // The same words as the main legend's scholarly item and placed heading.
-    const main = select(page, ".timeline-spine > .timeline-legend > li");
-    expect(squash(main[0]?.text)).toBe(squash(items[0]?.text));
+    // The hollow dot's words are the main legend's placed heading.
     expect(squash(select(page, ".timeline-legend strong")[0]?.text)).toBe(
       `${squash(items[1]?.text)}:`,
     );
@@ -319,20 +305,17 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(span["setting-start"]).toBeCloseTo(4400 / 5000, 4);
     expect(span["setting-end"]).toBeCloseTo(4499 / 5000, 4);
 
-    // The arc joins the span's middle to Daniel's dot where it is drawn,
-    // which a column may have moved off its year: the setting carries the
-    // tick's own place.
+    // The arc joins the span's middle to Daniel's dot: at its year, and in
+    // its slot, which the setting carries too.
     const arc = vars(
       select(page, '[data-setting="daniel"] .timeline-minimap__setting-arc')[0],
     );
+    const tick = vars(select(page, '[data-tick="daniel"]')[0]);
     expect(arc["arc-mid"]).toBeCloseTo((4400 + 4499) / 2 / 5000, 4);
-    const settingPlace = /--tick-after: .*$/.exec(
-      settings[0]?.attrs.style ?? "",
-    )?.[0];
-    expect(settingPlace).toBeDefined();
-    expect(select(page, '[data-tick="daniel"]')[0]?.attrs.style).toEndWith(
-      settingPlace!,
-    );
+    expect(vars(settings[0])).toEqual({
+      "tick-at": tick["tick-at"]!,
+      "tick-slot": tick["tick-slot"]!,
+    });
   });
 
   test("the minimap script loads once, from the footer scripts, not inside the minimap", () => {
