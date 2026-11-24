@@ -1,0 +1,594 @@
+# Review record for /scholarship/noahs-ark-and-the-flood/ (#93 shape). Not rendered.
+# agent: results of the agent's first pass (#142, 2026-11-24). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# First pass: every quote was fetched 2026-11-24 and script-matched verbatim against the fetched page or PDF text after normalising whitespace only (no quote or dash normalisation needed); each locator was checked by eye against the fetched text.
+review: ""
+citations:
+  sources/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Geoghegan (Bible Odyssey), opening paragraph.",
+    }
+  sources/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Geoghegan (Bible Odyssey), section “How do scholars interpret these differences?”. Source of “most scholars” in the short answer; Geoghegan's own wording. Reasons (#86) given in the same statement: sources/7–13.",
+    }
+  sources/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Literary Character of Gen 6:5–9:19”. Second state-of-field sentence (“scholars have recognized”). NCE prints “(Y)” for the Yahwist; statement says J, as the same entry does in the next sentences.",
+    }
+  sources/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l4, ch. 5 [00:35:32]. Hayes's own reading (“we seem to have”), kept as “finds”.",
+    }
+  sources/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 4 summary, section “The Flood”. Core claim author (Coogan and Chapman). Summary says almost all scholars see distinct Pentateuch sources (History of Scholarship), but that sentence is about the Pentateuch, not the flood, so not cited.",
+    }
+  sources/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”, last paragraph. Core claim author (Young and Sperling). Sentence before it (“While it is clear …”) is borrowing/4.",
+    }
+  sources/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l4, ch. 5 [00:35:32]. Hayes's student Q&A. Her animal-count sentence just before says “God tells Moses” (a slip for Noah), so the animal counts are cited from Geoghegan (sources/9) instead.",
+    }
+  sources/8: { agent: pass, owner: "", note: "Hayes l4, ch. 5 [00:35:32]." }
+  sources/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Geoghegan (Bible Odyssey), section “Why are there so many duplicate stories in the Bible?”. Backs the animal counts, the 40/150 days and the raven/dove.",
+    }
+  sources/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Literary Character of Gen 6:5–9:19”.",
+    }
+  sources/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 4 summary, section “The Flood”.",
+    }
+  sources/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "Geoghegan (Bible Odyssey), section “How do scholars interpret these differences?”. Kept for balance: Geoghegan allows harmonisation “may be”; statement says so.",
+    }
+  sources/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "Geoghegan (Bible Odyssey), section “How do scholars interpret these differences?”. Reason for seven clean pairs. NCE gives the same reason in its J paragraph (not cited, uncited list).",
+    }
+  sources/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Literary Character of Gen 6:5–9:19”.",
+    }
+  parallels/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “Extra-Biblical Accounts”.",
+    }
+  parallels/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 4 summary, section “Near Eastern Parallels”.",
+    }
+  parallels/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l4, ch. 4 [00:24:02]. Quote stops before “on the eleventh tablet ofThe Epic of Gilgamesh” (missing space in the transcript). Hayes's next paragraph gives the Sumerian Ziusudra story the mountain, bird and altar; not used, because EJ says only the lower third of the Ziusudra tablet survives. The shared outline is cited from EJ and Callender (Gilgamesh) instead.",
+    }
+  parallels/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “Extra-Biblical Accounts”. Atrahasis date ~1700 BCE: uncontested fact (date).",
+    }
+  parallels/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “Extra-Biblical Accounts”. Sentence fragment from the long Tablet XI sentence; the subject is “Tablet xi”. Statement says “tablet XI … most complete version in cuneiform”.",
+    }
+  parallels/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 4 summary, section “Near Eastern Parallels”. Backs “older”; also borrowing/2.",
+    }
+  parallels/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”.",
+    }
+  parallels/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”.",
+    }
+  parallels/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Callender (Bible Odyssey video), video transcript.",
+    }
+  parallels/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "Callender (Bible Odyssey video), video transcript.",
+    }
+  borrowing/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 4 summary, opening paragraph.",
+    }
+  borrowing/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 4 summary, section “Near Eastern Parallels”.",
+    }
+  borrowing/3: { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
+  borrowing/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”. EJ “clear … dependent”, plus its two routes (reworking or intermediary recension). Short's “differ on how directly” rests on this and borrowing/6.",
+    }
+  borrowing/5:
+    { agent: pass, owner: "", note: "Jensen, NCE “Flood”, opening paragraph." }
+  borrowing/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Other Flood Traditions”. The divergent view: NCE says the parallels do not suggest direct literary dependence. Attributed in the text; short reports the split, not either side.",
+    }
+  borrowing/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Callender (Bible Odyssey video), video transcript.",
+    }
+  borrowing/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Callender (Bible Odyssey video), video transcript.",
+    }
+  borrowing/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Callender (Bible Odyssey video), video transcript. Callender's “perhaps”; text says “suggests to Callender”. Bird order checked against EJ's Tablet XI summary (dove, swallow, raven).",
+    }
+  differences/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”.",
+    }
+  differences/2: { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
+  differences/3: { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
+  differences/4: { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
+  differences/5: { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
+  differences/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”. Includes EJ's own qualification (implicit in Ea's criticism); Hayes l4 quotes the same Ea line, statement says so.",
+    }
+  differences/7: { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
+  differences/8: { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
+  differences/9: { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
+  differences/10:
+    { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
+  differences/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Other Flood Traditions”.",
+    }
+  geology/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Montgomery, GSA Today 2012, p. 4, abstract. Short answer author 1. Montgomery: geologist (University of Washington Earth and Space Sciences), GSA Today, inside window.",
+    }
+  geology/2:
+    { agent: pass, owner: "", note: "Montgomery, GSA Today 2012, p. 6." }
+  geology/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Montgomery, GSA Today 2012, p. 6. Buckland's 1836 recantation as Montgomery reports it.",
+    }
+  geology/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Montgomery, GSA Today 2012, p. 6. Quote begins mid-sentence; subject is Louis Agassiz. Statement says “persuaded”.",
+    }
+  geology/5:
+    { agent: pass, owner: "", note: "Montgomery, GSA Today 2012, p. 6." }
+  geology/6:
+    { agent: pass, owner: "", note: "Montgomery, GSA Today 2012, p. 4." }
+  geology/7:
+    { agent: pass, owner: "", note: "Montgomery, GSA Today 2012, p. 7." }
+  geology/8:
+    { agent: pass, owner: "", note: "Montgomery, GSA Today 2012, p. 7." }
+  geology/9:
+    {
+      agent: flag,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Historical and Scientific Issues”. Short answer author 2. Flag for second pass: Jensen writes a biblical-studies entry in a religious reference work, and the page gives no geological credentials; the geology half of the short (“no geological evidence suggests one”) rests on Jensen plus Montgomery's history.",
+    }
+  local/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “Extra-Biblical Accounts”. EJ's “Most of them” refers to the worldwide flood legends in the same paragraph, not only Mesopotamia; statement says “most flood legends”.",
+    }
+  local/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “Extra-Biblical Accounts”.",
+    }
+  local/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “Extra-Biblical Accounts”.",
+    }
+  local/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Historical and Scientific Issues”.",
+    }
+  local/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Historical and Scientific Issues”.",
+    }
+  local/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Montgomery, GSA Today 2012, p. 6. Lyell 1833 as reported by Montgomery: history of scholarship, not a current view.",
+    }
+  local/7: { agent: pass, owner: "", note: "Montgomery, GSA Today 2012, p. 6." }
+  black-sea/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Yanko-Hombach et al., EGU 2006 abstract, p. 1. Conference abstract. Gives Ryan et al. 1997 and the 2003 modification; Ryan et al. 2003 itself not read (lead). The modification is reported as a fact about the literature, not as Ryan's current view.",
+    }
+  black-sea/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Yanko-Hombach et al., EGU 2006 abstract, p. 1.",
+    }
+  black-sea/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Yanko-Hombach et al., EGU 2006 abstract, p. 2.",
+    }
+  black-sea/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Yanko-Hombach et al., EGU 2006 abstract, p. 2.",
+    }
+  black-sea/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Yanko-Hombach et al., EGU 2006 abstract, p. 2.",
+    }
+  black-sea/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Yanko-Hombach et al., EGU 2006 abstract, p. 2. Only the abstract (pp. 1–2 of the author manuscript) is cited: pdftotext output of the body is garbled (font encoding), so nothing past the abstract was read. Title says the outflow evidence “still contradicts the Noah's Flood Hypothesis”.",
+    }
+  black-sea/7:
+    { agent: pass, owner: "", note: "Aksu and Hiscott 2022, Abstract." }
+  black-sea/8:
+    { agent: pass, owner: "", note: "Aksu and Hiscott 2022, Abstract." }
+  ark/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Other Flood Traditions”. Dimensions in feet at NCE's 1.5-foot cubit; the page gives no cubit figures (300 × 50 × 30) because no source read states them.",
+    }
+  ark/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Literary Character of Gen 6:5–9:19”.",
+    }
+  ark/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Geoghegan (Bible Odyssey), section “Why are there so many duplicate stories in the Bible?”. Short's “measurements belong to P”, author 2 (with ark/2). “this source” = the Elohim tradition, which Geoghegan associates with priestly interests in his next section.",
+    }
+  ark/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “Extra-Biblical Accounts”.",
+    }
+  ark/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Other Flood Traditions”.",
+    }
+  ark/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”. EJ's interpretation (ark vs ship) attributed in the text as EJ's reading.",
+    }
+  ararat/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”.",
+    }
+  ararat/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Cline (Bible Odyssey video), video transcript. Cline's own claims (naming “a couple of centuries ago”, “tourism”) attributed. Ep 131 and 183 Trigger Claims say medieval / a few hundred years; page doesn't adjudicate.",
+    }
+  found/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Cline (Bible Odyssey video), video transcript. Short answer author 1.",
+    }
+  found/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Cline (Bible Odyssey video), video transcript.",
+    }
+  found/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Cline (Bible Odyssey video), video transcript.",
+    }
+  found/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Cline (Bible Odyssey video), video transcript.",
+    }
+  found/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Cline (Bible Odyssey video), video transcript.",
+    }
+  found/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jensen, NCE “Flood”, section “Historical and Scientific Issues”. Short answer author 2 (claimed ark wood on modern Mt. Ararat).",
+    }
+  found/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Collins, PSCF 2016, p. 218. Collins reporting earlier investigators. Durupınar name not on page: Collins says only “near Dogubayazit”; McClellan's Bible Odyssey video names it but is uncited (Host).",
+    }
+  found/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Collins, PSCF 2016, p. 218, abstract. Short answer author 3. Collins's caveat (could be found elsewhere) kept in text.",
+    }
+  found/9:
+    { agent: pass, owner: "", note: "Collins, PSCF 2016, p. 227, “In Sum”." }
+triggers:
+  95@00:23:07:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:22:03–00:24:30. Speaker Dan McClellan; 00:23:05 is Beecher's aside. Quote is the turn's first two sentences, up to “doublets”. “most scholars” matches Geoghegan's wording (sources/2). Strongest core trigger.",
+    }
+  131@00:31:00:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:29:59–00:35:32. Speaker Dan McClellan. Quote stops at “direct contradictions sometimes.”: the rest of the turn duplicates 00:31:52 and 00:31:54 (transcript artefact). 00:32:00 has his own P/non-P view (“I am among those scholars who think…”), not quoted.",
+    }
+  56@00:51:18:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:51:00–00:53:06. Speaker David Carr (Guest Speaker) answering McClellan's 00:51:00 question about the P and non-P strands. First two sentences only. Not a Host.",
+    }
+  95@00:27:44:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:27:21–00:28:56. Speaker Dan McClellan answering Beecher's 00:27:30 Gilgamesh remark. Opening clause (“inspired by like, the … hill countries of Israel”) is garbled and dropped; quote starts at “It is the plains of Mesopotamia”. Bears on local and borrowing. The show's “borrowed from Mesopotamia” is stronger than NCE's “do not suggest direct literary dependence”; the page reports the split and doesn't adjudicate the trigger.",
+    }
+  183@00:31:09:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:30:48–00:31:43. Speaker Dan Beecher (Host). Quote stops before the incomplete last sentence. Prompts geology.",
+    }
+  131@00:14:23:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:13:49–00:14:58. Speaker Dan Beecher. Prompts the ark statement. Seaworthiness is not answered on the page: no source read addresses it (cut, see uncited/leads).",
+    }
+  183@00:15:59:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:15:21–00:17:43. Speaker Dan McClellan. Quote drops his opening hedge (“Medieval period, I think, is when …”) and the later dating inference. Prompts ararat.",
+    }
+  183@00:34:04:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:31:43–00:35:04. Speaker Dan McClellan. He cites Collins and Fasold 1996 (spelled “Lawrence Collins and David Fassold” in the Transcript). The page cites Collins's 2016 PSCF article instead (1996 is outside the 30-year window, and its open copy is an author-hosted preprint); the 1996 conclusion sentence he quotes was read in that copy and matches (uncited list).",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "10 statements (minimum 3). Core (sources) backed by five distinct authors: Geoghegan (Bible Odyssey 2021, Reference), Jensen (New Catholic Encyclopedia, Reference), Hayes (Yale RLST 145 l4, Reference), Coogan and Chapman (OUP 2019 summary, Reference) and Young and Sperling (Encyclopaedia Judaica 2nd ed., Reference). None Host-authored. The candidate core's second half (“secondary to the Primeval History”) was dropped: only David Carr says it, in a Transcript (Ep 56 00:45:55, 00:47:26), and no source read states it (lead).",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "Only sources uses “most scholars”, from Geoghegan's own “led most scholars to conclude” (sources/2), with NCE's “scholars have recognized” (sources/3) and three more authors agreeing. Other shorts: parallels (EJ, Hayes, Coogan, Callender), borrowing (reports the split: Coogan/EJ/Hayes vs NCE on directness; “sources read”), differences (Hayes, EJ), geology (Montgomery, Jensen; flag on Jensen, geology/9), local (EJ, NCE; “perhaps”, “sources read”), black-sea (Yanko-Hombach et al., Aksu and Hiscott; “the later reviews read”), ark (dimensions NCE; P attribution NCE and Geoghegan), ararat (EJ, Cline), found (Cline, Jensen, Collins). No short gives one scholar's view (#133).",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "NCE's “do not suggest direct literary dependence” attributed (borrowing). Geoghegan's concession to harmonisers attributed (sources). Cline's Mount Ararat naming claim attributed (ararat). Ryan et al.'s Black Sea hypothesis reported as proposed, not as a view the page rejects on its own (black-sea). Collins's caveat that the ark could be found elsewhere kept (found).",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition source cited. Jensen (New Catholic Encyclopedia) classed Reference, not Tradition: signed entry in a general reference encyclopedia, not a ministry with a statement of faith (by analogy with the NABRE ruling, #86, CONTEXT.md); flag for second pass. PSCF (American Scientific Affiliation, a fellowship of Christians in science) classed Scholarly as a peer-reviewed journal with a geologist author; flag for second pass.",
+    }
+sources:
+  hayes-rlst145-l4:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "New entry; same course as hayes-rlst145-l5/l7/l8 (Reference, introductory course, university-hosted transcript, #86). Lecture 4 title: “Doublets and Contradictions, Seams and Sources: Genesis 5-11 and the Historical-Critical Method”. Read in full ch. 4 [00:24:02] and ch. 5 [00:35:32].",
+    }
+  coogan-brief-4e-summary-ch4:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 2019 (same textbook as coogan-brief-4e-summary; catalogue confirmed in earlier reviews)",
+      note: "New entry; chapter 4 summary page, “The Formation of the Pentateuch and the Primeval History Genesis 4–11”, read in full. Same authors as other Coogan summaries; only one Coogan page cited here. Reference (publisher summary, #86).",
+    }
+  geoghegan-2021-two-flood-narratives:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey article dated November 11, 2021",
+      note: "New entry. Reference (Bible Odyssey, judged per author, #86): PhD in History (UCSD), taught history and religion at UCSD, Boston College and University of San Diego; now teaches at a secondary school (The Bishop's School) per his bio. Flag for second pass: author check passes on PhD and university teaching record, but current post is not a university.",
+    }
+  callender-noah-and-gilgamesh:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey video page; datePublished 2022-12-12 looks like a site import (shared with the Cline video to the minute), so year null",
+      note: "New entry. Reference (Bible Odyssey, judged per author): associate professor of religion, University of Miami. Cited from the page's own transcript of the video. Kind “article” (the enum has no video kind).",
+    }
+  cline-noahs-ark:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey video page; datePublished 2022-12-12 (import), year null. Bio names 1177 BC (2014) as his most recent book and the video says he wrote From Eden to Exile “a couple of years ago”, so likely inside the 30-year window either way",
+      note: "New entry. Reference (Bible Odyssey, judged per author): professor of classics and anthropology, George Washington University, archaeologist (Megiddo Expedition). Cited from the page's own transcript. Kind “article”.",
+    }
+  jensen-nce-flood:
+    {
+      agent: flag,
+      owner: "",
+      edition: "Encyclopedia.com names the work as New Catholic Encyclopedia only; edition and year not stated on the page (bibliography cites works up to 1999, so likely the 2nd ed., 2003; not confirmed), so null",
+      note: "New entry. Signed “[j. e. jensen]”. Class Reference (signed entry in a reference encyclopedia); not Tradition (see tradition-named). Read in full at its own Encyclopedia.com URL.",
+    }
+  young-sperling-ej-flood:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Encyclopaedia Judaica, signed “Dwight Young / S. David Sperling (2nd ed.)”; publisher and year not on the page, so null (2nd ed. is 2007; not confirmed on the page)",
+      note: "New entry. Reference. Read in full at its own Encyclopedia.com URL (flood-0); the Aggadah section is by Louis Isaac Rabinowitz and isn't cited. OCR damage avoided: no quote includes “ab?bu”, “likes flies”, “lt most” or the asterisk cross-reference marks. S. David Sperling is also author of sperling-2005-god-hebrew-scriptures (not cited here).",
+    }
+  montgomery-2012-evolution-of-creationism:
+    {
+      agent: pass,
+      owner: "",
+      edition: "GSA Today v. 22, no. 11 (November 2012), pp. 4–9",
+      note: "New entry. Scholarly (Geological Society of America journal; author at the Quaternary Research Center and Dept. of Earth and Space Sciences, University of Washington, per the PDF). Pages from the PDF: PDF p. 1 = journal p. 4. Read in full.",
+    }
+  collins-2016-noahs-ark-dogubayazit:
+    {
+      agent: flag,
+      owner: "",
+      edition: "Perspectives on Science and Christian Faith 68, no. 4 (December 2016), pp. 218–227",
+      note: "New entry. Read in full. Scholarly, flagged (see tradition-named): peer-reviewed (acknowledges two reviewers), author a retired professor of geology (CSUN). The article says it extends Collins and Fasold 1996 (J. Geoscience Education 44: 439–44).",
+    }
+  yanko-hombach-2006-black-sea:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Geophysical Research Abstracts 8, 00359, EGU General Assembly 2006",
+      note: "New entry. A conference abstract (2 pp.), not a full paper; read in full. Authors at the Avalon Institute, Fordham and Newcastle. Class Scholarly, flagged: a conference abstract is lighter than a peer-reviewed paper; the black-sea short does not rest on it alone (Aksu and Hiscott 2022).",
+    }
+  aksu-hiscott-2022-black-sea-outflow:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Earth-Science Reviews 227 (April 2022), 103960; author's accepted manuscript on Archimer",
+      note: "New entry. Scholarly (peer-reviewed review, Memorial University of Newfoundland). Only the abstract was read: the body's extracted text is garbled. Cited with locator “Abstract”.",
+    }
+leads:
+  - "William B. F. Ryan et al., “Catastrophic flooding of the Black Sea”, Annual Review of Earth and Planetary Sciences 31 (2003): 525–54 — the proponents' defence; a web-search summary (not the source) reports its abstract as saying the flood hypothesis best fits the full set of observations. Publisher page blocked by a bot check 2026-11-24; a full copy found only on a third-party course page of unclear licence; not read."
+  - "Irving Finkel's Ark Tablet (British Museum; The Ark Before Noah, 2014): a round ark in an Old Babylonian Atrahasis-type text. No open source read; cut."
+  - "Ark seaworthiness (Ep 131 00:14:23 trigger): no source read addresses whether a wooden vessel of the ark's size could float; cut."
+  - "Date the flood story was written: McClellan's Bible Odyssey video says most scholars place it in the 700s or 800s BCE; Host-authored and no other source read gives a date; cut."
+  - "David Carr (Ep 56 00:45:55, 00:47:26, 00:50:19): the flood as a later insertion into an older non-flood primeval story, and the “two Noahs”. The candidate's second core half; only in a Transcript, no source read; see Carr, The Formation of Genesis 1–11 (OUP, 2020), not read."
+  - "Collins and Fasold, “Bogus ‘Noah's Ark’ from Turkey Exposed as a Common Geologic Structure”, Journal of Geoscience Education 44 (1996): 439–44 — the paper Ep 183 cites. Only the author-hosted copy (csun.edu/~vcgeo005/bogus.html) was read; whether it is the published text is unconfirmed, and 1996 is outside the 30-year window. See uncited."
+  - "V. Yanko-Hombach, A. S. Gilbert, N. Panin and P. M. Dolukhanov (eds.), The Black Sea Flood Question (Springer, 2007): named in the EGU abstract; not read."
+uncited:
+  - "Dan McClellan, “Have scholars found Noah’s ark?”, Bible Odyssey video (https://www.bibleodyssey.org/video-gallery/have-scholars-found-noahs-ark), read 2026-11-24: “And the same was discovered when a group in the 1980s was convinced it was Noah’s Ark and did surveys with ground penetrating radar and drilled core samples, and every test they conducted showed this was naturally occurring geologic stuff”; also “most scholars agree refers to the mountains inside the kingdom of Urtu [sic]”. Host-authored and the same claims as the Ep 183 Trigger Claims, so not cited."
+  - "Collins and Fasold 1996, author-hosted copy (csun.edu/~vcgeo005/bogus.html), Conclusion: “Evidence from microscopic studies and photo analyses demonstrates that the supposed Ark near Dogubayazit is a completely natural rock formation. It cannot have been Noah's Ark nor even a man-made model.” Matches the sentence McClellan reads in Ep 183 00:34:04. Not cited (see leads)."
+  - "Jean Rudhardt, “Flood, The”, Encyclopedia of Religion (1987), Encyclopedia.com (environment/…/flood-0), Conclusion: “In order to account for this, some authors have supposed that everywhere people preserve the memory of distant prehistoric catastrophes that destroyed the universe or vast regions of the earth. Such an explanation strikes this writer as misguided.” Outside the 30-year window; about worldwide myths, not Genesis; not cited."
+  - "Jenna Kemp, “Noah”, Bible Odyssey (2023): literary reading of Noah's character; nothing on sources or parallels; not cited."
+  - "Jensen, NCE, J paragraph: “Noah's sacrifice of some of every clean animal and bird explains why in J it was necessary for Noah to bring more than one pair of each clean creature onto the ark.” Same reason as Geoghegan (sources/13); could be added in a later pass."
+  - "Hayes l4 ch. 5 [00:35:32]: “either to bring two of each sort of living thing, animals and birds and creeping things, or in another passage God tells Moses to bring on seven pairs of pure animals …” Not cited: slip (Moses for Noah)."
+  - "Coogan and Chapman ch. 4 summary, “History of Scholarship”: “almost all biblical scholars recognize that the repetitions, inconsistencies, and contradictions in the Pentateuch are best explained by the existence of distinct sources dating to different historical periods.” About the Pentateuch as a whole, not the flood; not cited on the core."
