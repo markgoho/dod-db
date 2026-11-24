@@ -2,7 +2,7 @@
 # agent: results of the agent's first pass (#142, 2026-11-24). That pass does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass.
 # First pass: every quote was fetched 2026-11-24 and script-matched verbatim against the fetched page or PDF text after normalising whitespace only (no quote or dash normalisation needed); each locator was checked by eye against the fetched text.
-# Second agent pass 2026-11-24 (verify/142, independent; owner's delegate decisions applied): all eleven sources re-fetched (Aksu and Hiscott from the Archimer PDF 91658.pdf), every quote script-matched against the fetched text; six misses were inline-markup splits (italics, superscript “th”, “6:15 – 16”) and were re-matched verbatim against the raw HTML with inline tags removed. Every locator re-checked (section headings, Hayes chapter markers, PDF page = journal page: Montgomery PDF p. 1 = p. 4, Collins PDF p. 1 = p. 218). Every Trigger Claim re-read in the final Transcript at its timestamp and speaker. Each text and short re-read clause by clause against its own quotes; where a clause went past its quote, the quote was extended to the adjacent sentence or the clause trimmed (notes below). #133 test applied to every short: count distinct read authors among the statement's cites who back it; one author reporting the field plus a second holding the view counts as two.
+# Second agent pass 2026-11-24 (verify/142, independent; owner's delegate decisions applied): all eleven sources re-fetched (Aksu and Hiscott from the Archimer PDF 91658.pdf), every quote script-matched against the fetched text; the misses (parallels/3, parallels/6, borrowing/2, ark/1, ark/3, ararat/1) were inline-markup splits (italics, superscript “th”, “6:15 – 16”) and were re-matched verbatim by script against the raw HTML with inline tags removed, as were all quotes added or extended in this pass. Every locator re-checked (section headings, Hayes chapter markers, PDF page = journal page: Montgomery PDF p. 1 = p. 4, Collins PDF p. 1 = p. 218). Every Trigger Claim re-read in the final Transcript at its timestamp and speaker. Each text and short re-read clause by clause against its own quotes; where a clause went past its quote, the quote was extended to the adjacent sentence or the clause trimmed (notes below). #133 test applied to every short: count distinct read authors among the statement's cites who back it; one author reporting the field plus a second holding the view counts as two.
 # Second pass changes: borrowing loses its Callender sentence and cites (old borrowing/7–9; raven and dove counts conflict with EJ, delegate decision); differences short drops “in control throughout” (Hayes alone), differences gains two Hayes quotes (differences/5, /9; keys renumbered); geology gains Montgomery's own-voice conclusion (geology/9; Jensen is now geology/10); parallels short attaches “same outline” to Gilgamesh only; black-sea short narrowed to what both abstracts say; ark short drops “the measurements belong to the Priestly source” (Geoghegan's “seem to”, by a chain of reference); ararat text drops Cline's “named a couple of centuries ago … for tourism” (one author, at odds with Ep 183's “medieval” and not checked), ararat/2 split into ararat/2–3; sources short “usually called” → “often called” (NCE's “often referred to”).
 review: 2026-11-24
 delegation:
@@ -135,7 +135,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”. Second pass 2026-11-24: verified. EJ's “both accounts” are Utanapishtim's (Gilgamesh) and Genesis; so the short now ties “the same outline” to Gilgamesh only (EJ and Callender), not to Atrahasis.",
+      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”. Second pass 2026-11-24: verified. EJ's “both accounts” are Utanapishtim's (Gilgamesh) and Genesis; so the short ties “the same outline” to Gilgamesh only (EJ and Callender), not to Atrahasis, and the text now says “The outline Gilgamesh shares with Genesis is set out by the Encyclopaedia Judaica and by Dexter Callender”.",
     }
   parallels/8:
     {
@@ -207,7 +207,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l4, ch. 4 [00:24:02]. Second pass 2026-11-24: verified. The quote does not name Atrahasis; it follows directly on Hayes's “In the Epic of Atrahasis we do in fact read of a reason” and her quotation of the text, so the text's “in Atrahasis” is her context, not an addition.",
+      note: "Hayes l4, ch. 4 [00:24:02]. Second pass 2026-11-24: verified. The quote does not name Atrahasis; it follows directly on Hayes's “In the Epic of Atrahasis we do in fact read of a reason” and her quotation of the text, so the text's “in Atrahasis” was her context, not in the quote. A quote of that clause can't be verbatim (the transcript runs “Atrahasiswe” together), so the text now says “in another Mesopotamian account”.",
     }
   differences/4:
     {
@@ -291,7 +291,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Montgomery, GSA Today 2012, p. 6. Statement says “persuaded”. Second pass 2026-11-24: quote extended back to the start of the sentence (“Shortly after Buckland’s recantation, Louis Agassiz invoked …”) so the subject is in the quote; verified.",
+      note: "Montgomery, GSA Today 2012, p. 6. Second pass 2026-11-24: text's “persuaded” changed to “argued to” (Montgomery: “invoked … to convince”); quote extended back to the start of the sentence (“Shortly after Buckland’s recantation, Louis Agassiz invoked …”) so the subject is in the quote; verified.",
     }
   geology/5:
     {
@@ -393,7 +393,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Yanko-Hombach et al., EGU 2006 abstract, p. 2. Second pass 2026-11-24: verified. Scope: “do not sustain any catastrophic flooding … in the Early Holocene”; the same abstract calls the late-glacial (16–13 ky BP) rise rapid and “probably more intense”. So the short was narrowed from “find no catastrophic flood” to the reconnection with the Mediterranean being gradual, which both abstracts say (black-sea/3, /8).",
+      note: "Yanko-Hombach et al., EGU 2006 abstract, p. 2. Second pass 2026-11-24: verified. The text's “contemporary legend” sentence now keeps black-sea/6's “Early Holocene”. Scope: “do not sustain any catastrophic flooding … in the Early Holocene”; the same abstract calls the late-glacial (16–13 ky BP) rise rapid and “probably more intense”. So the short was narrowed from “find no catastrophic flood” to the reconnection with the Mediterranean being gradual, which both abstracts say (black-sea/3, /8).",
     }
   black-sea/5:
     {
@@ -435,7 +435,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Geoghegan (Bible Odyssey), section “Why are there so many duplicate stories in the Bible?”. Second pass 2026-11-24: quote extended back one sentence (passages employing “God” (‘elohim)), since “this source” has no referent otherwise. Geoghegan says the measurements “seem to derive” from the ‘elohim passages and only in his next section calls that tradition “often associated with priestly interests” (sources/13). That chain plus “seem to” is too thin for the short's “belong to the Priestly source”, so it was cut from the short; the text says what each author says. Verified.",
+      note: "Geoghegan (Bible Odyssey), section “Why are there so many duplicate stories in the Bible?”. Second pass 2026-11-24: quote extended back one sentence (passages employing “God” (‘elohim)), since “this source” has no referent otherwise. Geoghegan says the measurements “seem to derive” from the ‘elohim passages and only in his next section calls that tradition “often associated with priestly interests” (sources/13). That chain plus “seem to” is too thin for the short's “belong to the Priestly source”, so it was cut from the short, and the text ends Geoghegan's clause at “the passages that call God Elohim” (the priestly-interests link is only in sources/13). Verified.",
     }
   ark/4:
     {
@@ -587,7 +587,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "Only sources uses “most scholars”, from Geoghegan's own “led most scholars to conclude” (sources/2), with NCE's “scholars have recognized” (sources/3) and three more authors agreeing. Other shorts: parallels (EJ, Hayes, Coogan, Callender), borrowing (reports the split: Coogan/EJ/Hayes vs NCE on directness; “sources read”), differences (Hayes, EJ), geology (Montgomery, Jensen; flag on Jensen, geology/9), local (EJ, NCE; “perhaps”), black-sea (Yanko-Hombach et al., Aksu and Hiscott; “the later reviews read”), ark (dimensions NCE; P attribution NCE and Geoghegan), ararat (EJ, Cline), found (Cline, Jensen, Collins). No short gives one scholar's view (#133). Second pass 2026-11-24 (#133 test, distinct read authors per clause): sources passes (Geoghegan reports the field, four more authors hold it; “often called” for NCE's “often referred to”). parallels: “older” EJ (date) and Coogan and Chapman; “same outline” now tied to Gilgamesh only (EJ, Callender). borrowing passes (see borrowing/4). differences: “in control throughout” cut (Hayes alone); punishment and righteousness Hayes and EJ; “one God” exempt. geology: Montgomery's own-voice conclusion added (geology/9) beside Jensen (geology/10); the 19th-century dismissal is Montgomery's history (fact about the field). local passes (EJ, Jensen). black-sea narrowed to the gradual reconnection, which both abstracts state; “two later overviews” names what was read rather than claiming a field consensus (doubt kept: both are by critics of the hypothesis; the proponents' 2003 defence is an unread lead). ark: P attribution cut, dimensions exempt. ararat exempt (what Genesis says) plus EJ. found passes (Cline, Jensen, Collins; Collins not sole).",
+      note: "Only sources uses “most scholars”, from Geoghegan's own “led most scholars to conclude” (sources/2), with NCE's “scholars have recognized” (sources/3) and three more authors agreeing. Other shorts: parallels (EJ, Hayes, Coogan, Callender), borrowing (reports the split: Coogan/EJ/Hayes vs NCE on directness; “sources read”), differences (Hayes, EJ), geology (Montgomery, Jensen; flag on Jensen, first-pass key geology/9, now geology/10), local (EJ, NCE; “perhaps”), black-sea (Yanko-Hombach et al., Aksu and Hiscott; “the later reviews read”), ark (dimensions NCE; P attribution NCE and Geoghegan), ararat (EJ, Cline), found (Cline, Jensen, Collins). No short gives one scholar's view (#133). Second pass 2026-11-24 (#133 test, distinct read authors per clause): sources passes (Geoghegan reports the field, four more authors hold it; “often called” for NCE's “often referred to”). parallels: “older” EJ (date) and Coogan and Chapman; “same outline” now tied to Gilgamesh only (EJ, Callender). borrowing passes (see borrowing/4). differences: “in control throughout” cut (Hayes alone); punishment and righteousness Hayes and EJ; “one God” exempt. geology: Montgomery's own-voice conclusion added (geology/9) beside Jensen (geology/10); the 19th-century dismissal is Montgomery's history (fact about the field). local passes (EJ, Jensen). black-sea narrowed to the gradual reconnection, which both abstracts state; “two later overviews” names what was read rather than claiming a field consensus (doubt kept: both are by critics of the hypothesis; the proponents' 2003 defence is an unread lead). ark: P attribution cut, dimensions exempt. ararat exempt (what Genesis says) plus EJ. found passes (Cline, Jensen, Collins; Collins not sole).",
     }
   dissent-attributed:
     {
@@ -656,7 +656,7 @@ sources:
       agent: pass,
       owner: "",
       edition: "GSA Today v. 22, no. 11 (November 2012), pp. 4–9",
-      note: "New entry. Scholarly (Geological Society of America journal; author at the Quaternary Research Center and Dept. of Earth and Space Sciences, University of Washington, per the PDF). Pages from the PDF: PDF p. 1 = journal p. 4. Read in full. Second pass 2026-11-24: re-fetched and read in full; page mapping confirmed from the printed page numbers; verified.",
+      note: "New entry. Scholarly (Geological Society of America journal; author at the Quaternary Research Center and Dept. of Earth and Space Sciences, University of Washington, per the PDF). Pages from the PDF: PDF p. 1 = journal p. 4. Read in full. Second pass 2026-11-24: re-fetched; full text extracted and searched, pp. 4 and 6–8 (abstract, “Testimony of the Rocks”, “The Roots of Creationism”, “Creationism Today”) read; page mapping confirmed from the printed page numbers; verified.",
     }
   collins-2016-noahs-ark-dogubayazit:
     {
