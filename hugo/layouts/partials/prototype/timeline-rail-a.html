@@ -14,7 +14,7 @@
     <ol class="rail-a__eras" role="list">
       {{ range . }}
         {{ $era := . }}
-        <li class="rail-a__era{{ if not .items }}is-empty{{ end }}">
+        <li class="rail-a__era {{ if not .items }}is-empty{{ end }}">
           <a
             class="rail-a__era-link"
             href="#{{ .id }}"
@@ -27,9 +27,9 @@
               {{ range . }}
                 <li>
                   <a
-                    class="rail-a__entry{{ if eq .by "tradition" }}
+                    class="rail-a__entry {{ if eq .by "tradition" }}
                       is-placed
-                    {{ end }}{{ if .standin }}is-standin{{ end }}"
+                    {{ end }} {{ if .standin }}is-standin{{ end }}"
                     href="#{{ .id }}"
                     data-era-label="{{ $era.label }}"
                     >{{ .title }}</a

@@ -15,7 +15,7 @@
       {{ range . }}
         {{ $era := . }}
         <li
-          class="rail-c__era{{ if not .items }}is-empty{{ end }}"
+          class="rail-c__era {{ if not .items }}is-empty{{ end }}"
           style="--tl: {{ .tl | safeCSS }}">
           <a
             class="rail-c__era-link"
@@ -32,7 +32,7 @@
               {{ range . }}
                 <li>
                   <a
-                    class="rail-c__entry{{ if eq .by "tradition" }}
+                    class="rail-c__entry {{ if eq .by "tradition" }}
                       is-placed
                     {{ end }}"
                     href="#{{ .id }}"

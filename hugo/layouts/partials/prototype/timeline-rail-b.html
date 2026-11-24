@@ -17,7 +17,7 @@
         {{ $era := . }}
         {{ $n := len .items }}
         <div
-          class="rail-b__band{{ if not .items }}is-empty{{ end }}"
+          class="rail-b__band {{ if not .items }}is-empty{{ end }}"
           data-band="{{ .id }}"
           style="--weight: {{ add $n 1 }}">
           <a
@@ -28,7 +28,7 @@
           >
           {{ range $j, $it := .items }}
             <a
-              class="rail-b__tick{{ if eq .by "tradition" }}is-placed{{ end }}"
+              class="rail-b__tick {{ if eq .by "tradition" }}is-placed{{ end }}"
               href="#{{ .id }}"
               data-era-label="{{ $era.label }}"
               data-tick="{{ .id }}"
