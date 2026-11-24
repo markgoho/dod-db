@@ -1,7 +1,12 @@
 # Review record for /scholarship/the-historical-jesus/ (#93 shape). Not rendered.
 # agent: results of the agent's first pass (#95, 2026-11-23) and the independent second agent pass (2026-11-23, #93 rule change).
 # owner: empty ("") until the owner's publish review sets pass or fail.
-review: ""
+review: 2026-11-23
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-23
 citations:
   existence/1:
     {

@@ -1,9 +1,8 @@
 ---
 title: "The Historical Jesus"
 dek: "Whether Jesus existed, who argues otherwise, and what scholars think can be known about his life."
-draft: true
 core: existence
-sourcesRead:
+sourcesRead: 2026-11-23
 related:
   books: []
   tags: [pontius-pilate]
