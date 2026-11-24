@@ -31,7 +31,7 @@
   display: none;
 }
 
-/* The rail is the sticky element and the scroll-state container. */
+/* The rail is the scroll-state container. Sticky here (the narrow bar); wide screens fix it in the gutter. */
 .proto-rail {
   container: proto-rail / scroll-state;
   inline-size: 100%;
@@ -160,20 +160,59 @@
     grid-area: 1 / 1;
   }
 
+  /*
+    Chrome (and any engine with scroll-driven animations): a fixed rail on
+    whole CSS pixels. A sticky rail trembled: its painted position follows the
+    scroll offset, and at fractional device pixel ratios (Windows scaling
+    125%/150%, browser zoom) the compositor snapped its edges to different
+    device pixels from frame to frame. A fixed layer never moves with scroll.
+  */
   .proto-rail {
     --rail-gap: var(--space-xs);
-    /* 100% is the axis column; (100dvw - 100%) / 2 is the gutter left of it. */
-    --rail-w: clamp(8rem, (100dvw - 100%) / 2 - 2 * var(--rail-gap), 11rem);
+    /* The gutter left of the axis: the axis column is the content width less the page's inline padding. */
+    --rail-w: clamp(
+      8rem,
+      (100dvw - var(--content-max-width) + 2 * var(--space-s)) / 2 - 2 *
+        var(--rail-gap),
+      11rem
+    );
 
     align-self: start;
     /* Fits the viewport: the site header is not sticky, so only the top and bottom inset come off. */
-    block-size: calc(100dvh - 2 * var(--space-s));
-    inline-size: var(--rail-w);
-    inset-block-start: var(--space-s);
+    block-size: round(down, 100dvh - 2 * var(--space-s), 1px);
+    inline-size: round(down, var(--rail-w), 1px);
+    inset-block-start: round(var(--space-s), 1px);
     justify-self: start;
-    /* Pull the rail out to the viewport's inline-start edge (one gap in). */
-    margin-inline-start: calc(var(--rail-gap) - (100dvw - 100%) / 2);
     max-width: none;
+  }
+
+  @supports (animation-timeline: view()) {
+    /* Shown only while the axis fills the viewport (its view timeline's contain range). */
+    .proto-rail {
+      animation: proto-rail-show linear;
+      animation-range: contain;
+      animation-timeline: --tl-axis;
+      inset-inline-start: round(var(--rail-gap), 1px);
+      margin: 0;
+      opacity: 0;
+      position: fixed;
+      visibility: hidden;
+    }
+
+    @keyframes proto-rail-show {
+      from,
+      to {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  /* Basic fallback (no scroll-driven animations): the sticky rail, pulled out to the viewport's inline-start edge. */
+  @supports not (animation-timeline: view()) {
+    .proto-rail {
+      margin-inline-start: calc(var(--rail-gap) - (100dvw - 100%) / 2);
+    }
   }
 
   .proto-rail__bar {
@@ -871,54 +910,12 @@
 
 /*
   ---------- Diagnostics (?dbg=, prototype only) ----------
-  The B2 strip trembles by one device pixel at fractional device pixel ratios
-  (1.25, 1.5): see the timeline-rail-dbg partial for the toggle list.
+  Bisecting the B2 tremble (since fixed by the fixed rail above): see the
+  timeline-rail-dbg partial for the toggle list.
 */
 
-/* fixed: a fixed rail on whole CSS pixels, shown only while the axis fills the viewport. */
-@media (width >= 108rem) {
-  @supports (animation-timeline: view()) {
-    .dbg-fixed .proto-rail {
-      --rail-w: clamp(
-        8rem,
-        (100dvw - var(--content-max-width)) / 2 - 2 * var(--rail-gap),
-        11rem
-      );
-
-      animation: dbg-rail-show linear;
-      animation-range: contain;
-      animation-timeline: --tl-axis;
-      block-size: round(down, 100dvh - 2 * var(--space-s), 1px);
-      inline-size: round(down, var(--rail-w), 1px);
-      inset-block-start: round(var(--space-s), 1px);
-      inset-inline-start: round(var(--rail-gap), 1px);
-      margin: 0;
-      opacity: 0;
-      position: fixed;
-      visibility: hidden;
-    }
-
-    @keyframes dbg-rail-show {
-      from,
-      to {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
-
-  /* round: sticky, with every offset and size on whole CSS pixels and its own layer. */
-  .dbg-round .proto-rail {
-    block-size: round(down, 100dvh - 2 * var(--space-s), 1px);
-    inline-size: round(down, var(--rail-w), 1px);
-    inset-block-start: round(var(--space-s), 1px);
-    margin-inline-start: round(var(--rail-gap) - (100dvw - 100%) / 2, 1px);
-    will-change: transform;
-  }
-}
-
-.dbg-fixed .rail-m__caption,
-.dbg-round .rail-m__caption {
+/* Whole CSS pixels inside the rail too, so the caption slot and ticks land on the same pixel grid. */
+.rail-m__caption {
   block-size: round(
     up,
     (1 + var(--caption-lines)) * var(--line-height-heading) * 1em,
@@ -926,8 +923,7 @@
   );
 }
 
-.dbg-fixed .rail-m__tick,
-.dbg-round .rail-m__tick {
+[data-mode="time"] .rail-m__tick {
   inset-block-start: round(var(--pos) * 100%, 1px);
 }
 
@@ -957,4 +953,10 @@
 
 .dbg-noanim .proto-rail-layout {
   timeline-scope: none !important;
+}
+
+/* noanim also removes the show/hide animation: keep the rail visible. */
+.dbg-noanim .proto-rail {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
