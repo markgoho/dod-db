@@ -2,13 +2,14 @@
 # agent: the first pass from #100 (sourcing, 2026-11-22), #101 (layout) and the #134 build (2026-11-23). It does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #134 re-match, 2026-11-23: quotes re-fetched by script and matched verbatim after normalising whitespace, quotes and dashes; Trigger Claims matched against the final Transcript line.
+# #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading). NABRE Daniel checked against the 2026-11-23 saved copy (403 today).
 review: ""
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "NABRE Daniel introduction, ¶ 2. Script-fetched in #100; re-fetched and matched 2026-11-23 (USCCB answered this one request).",
+      note: "NABRE Daniel introduction, ¶ 2. Script-fetched in #100; re-fetched and matched 2026-11-23 (USCCB answered this one request). #137 (2026-11-24): ¶ 2 re-checked by script against that saved 2026-11-23 copy; today's .md and HTML requests got 403.",
     }
   critical/2:
     {

@@ -2,13 +2,14 @@
 # agent: the first pass from #100 (sourcing, 2026-11-22), #101 (layout) and the #134 build (2026-11-23). It does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #134 re-match, 2026-11-23: online quotes (all but Meyers, matched in #100) re-fetched by script and matched verbatim after normalising whitespace, quotes and dashes; Trigger Claims matched against the final Transcript line.
+# #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading).
 review: ""
 citations:
   undated/1:
     {
       agent: pass,
       owner: "",
-      note: "Meyers p. 8. Script-matched in #100 against the Cambridge excerpt PDF; not re-fetched in #134. Source of “an exercise in futility”.",
+      note: "Meyers p. 8. Script-matched in #100 against the Cambridge excerpt PDF; not re-fetched in #134; re-fetched and matched on printed p. 8 in #137 (2026-11-24). Source of “an exercise in futility”.",
     }
   undated/2:
     {
@@ -104,7 +105,7 @@ sources:
       agent: pass,
       owner: "",
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
-      note: "Chapter 6 summary. Edition confirmed in the OUP catalogue for moses-and-the-exodus (2026-11-23).",
+      note: "Chapter 6 summary. Edition confirmed in the OUP catalogue for moses-and-the-exodus (2026-11-23). Per-chapter check (#137, 2026-11-24): the page, fetched by script, is titled “Chapter 6 Summary - A Brief Introduction to the Old Testament 4e Student Resources”. The date and ISBN rest on the OUP catalogue read in a browser for moses-and-the-exodus; a scripted catalogue fetch got 202 with an empty body.",
     }
   abr-wood-2009-exodus:
     {

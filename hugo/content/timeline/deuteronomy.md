@@ -15,7 +15,7 @@ critical:
   note: "Built up over two to three centuries. Its core is linked to King Josiah's reform around 622 BCE, and one source dates that core to the late seventh century."
   cites:
     - source: nabre-deuteronomy-intro
-      locator: "Introduction"
+      locator: "Introduction, ¶ 4"
       quote: "The book was probably composed over the course of three centuries, from the eighth century to the exile and beyond."
       read: 2026-11-22
     - source: coogan-brief-4e-summary-ch10

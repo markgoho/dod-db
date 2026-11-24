@@ -2,6 +2,7 @@
 # agent: the first pass from #100 (sourcing, 2026-11-22), #101 (layout) and the #136 build (2026-11-23). It does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #136 re-match, 2026-11-23: quotes re-fetched by script and matched verbatim after normalising whitespace, quotes, dashes and inline markup; Trigger Claims matched against the final Transcript line.
+# #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading). Nigro checked against the 2026-11-23 PDF text.
 review: ""
 citations:
   critical/1:
