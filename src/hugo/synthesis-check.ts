@@ -1,11 +1,14 @@
 /**
  * What check:scholarship and check:timeline share: the External Source
  * registry, Trigger Claim and review-file schemas, file loading, Episode
- * loading and the #93 publish gate (with its delegation rule).
+ * loading, term pages for `related`, and the #93 publish gate (with its
+ * delegation rule).
  */
 
+import { Glob } from "bun";
 import path from "node:path";
 import { z } from "zod";
+import { taxonomyFolderSlug } from "../utils/title-to-slug.js";
 
 export const dateValue = z.union([z.string(), z.date()]);
 
@@ -188,6 +191,72 @@ export async function loadEpisodes(
     (episodeData ?? []).flatMap(e =>
       e.episodeNumber === undefined ? [] : [e.episodeNumber],
     ),
+  );
+}
+
+export const TAXONOMIES = ["books", "tags", "topics"] as const;
+export type Taxonomy = (typeof TAXONOMIES)[number];
+/** Term keys per taxonomy, as Hugo keys term pages (taxonomyFolderSlug). */
+export type Terms = Record<Taxonomy, Set<string>>;
+
+const EpisodeTermsSchema = z.object({
+  books: z.array(z.string()).nullish(),
+  tags: z.array(z.string()).nullish(),
+  topics: z.array(z.string()).nullish(),
+});
+
+/**
+ * The term pages Hugo builds: one per value in an Episode's books/tags/topics
+ * front matter, plus each hand-authored hugo/content/<taxonomy>/<key>/_index.md.
+ */
+export async function loadTerms(
+  root: string,
+  errors: string[],
+): Promise<Terms> {
+  const terms: Terms = { books: new Set(), tags: new Set(), topics: new Set() };
+  const content = path.join(root, "hugo/content");
+  const episodeFiles = await Array.fromAsync(
+    new Glob("episodes/*/index.md").scan({ cwd: content }),
+  );
+  for (const file of episodeFiles) {
+    const filePath = path.join(content, file);
+    const episode = await loadParsed(
+      EpisodeTermsSchema,
+      filePath,
+      root,
+      errors,
+      readFrontmatter,
+    );
+    for (const taxonomy of TAXONOMIES) {
+      for (const term of episode?.[taxonomy] ?? []) {
+        terms[taxonomy].add(taxonomyFolderSlug(term));
+      }
+    }
+  }
+  for (const taxonomy of TAXONOMIES) {
+    const bundles = await Array.fromAsync(
+      new Glob(`${taxonomy}/*/_index.md`).scan({ cwd: content }),
+    );
+    for (const bundle of bundles) {
+      terms[taxonomy].add(path.basename(path.dirname(bundle)));
+    }
+  }
+  return terms;
+}
+
+/**
+ * One error per `related` entry that names no term page. Same rule as
+ * hugo/layouts/partials/scholarship-related-term.html.
+ */
+export function unknownRelated(
+  at: string,
+  related: Record<Taxonomy, string[]>,
+  terms: Terms,
+): string[] {
+  return TAXONOMIES.flatMap(taxonomy =>
+    related[taxonomy]
+      .filter(entry => !terms[taxonomy].has(taxonomyFolderSlug(entry)))
+      .map(entry => `${at}: related ${taxonomy} "${entry}" names no term page`),
   );
 }
 

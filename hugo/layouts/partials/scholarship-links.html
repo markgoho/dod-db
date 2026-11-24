@@ -1,19 +1,30 @@
 {{- /*
-  A block of inbound links to Scholarship Pages. Takes a dict:
-  pages        Scholarship Pages to list; renders nothing when empty
-  heading      the block heading
+  A block of inbound links to Scholarship Pages and Timeline Entries. Takes a
+  dict:
+  pages        Scholarship Pages to list
+  entries      optional; Timeline Entries to list after the pages
+  headingTail  optional; follows the heading's names, e.g. " prompted by this
+  Episode". The heading names what the block lists: "Scholarship Pages",
+  "Timeline Entries" or both.
   headingClass optional; defaults to type-eyebrow
-  Each item is the shared link line (scholarship-link.html).
+  Renders nothing when both lists are empty. Each item is its shared link
+  line (scholarship-link.html, timeline-link.html).
   */
 -}}
-{{- with .pages -}}
+{{- if or .pages .entries -}}
+  {{- $names := slice -}}
+  {{- if .pages }}{{ $names = $names | append "Scholarship Pages" }}{{ end -}}
+  {{- if .entries }}{{ $names = $names | append "Timeline Entries" }}{{ end -}}
   <section class="scholarship-links panel panel--muted">
     <h2 class="{{ $.headingClass | default "type-eyebrow" }}">
-      {{ $.heading }}
+      {{ delimit $names " and " }}{{ $.headingTail }}
     </h2>
     <ul class="scholarship-links__list" role="list">
-      {{ range . }}
+      {{ range .pages }}
         <li>{{ partial "scholarship-link.html" . }}</li>
+      {{ end }}
+      {{ range .entries }}
+        <li>{{ partial "timeline-link.html" . }}</li>
       {{ end }}
     </ul>
   </section>

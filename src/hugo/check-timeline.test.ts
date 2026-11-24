@@ -56,6 +56,12 @@ describe("checkTimeline", () => {
     ]);
   });
 
+  test("fails when a related term has no term page", async () => {
+    expect(await check("related-unknown-term")).toEqual([
+      `timeline/book: related books "no-such-book" names no term page`,
+    ]);
+  });
+
   test("fails an entry with both critical and undated", async () => {
     expect(await check("critical-and-undated")).toEqual([
       `timeline/book: has both critical and undated; give one`,

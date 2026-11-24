@@ -31,7 +31,7 @@
 
     {{ partial "scholarship-links.html" (dict
       "pages" (partial "scholarship-pages-for-term.html" (dict "page" . "taxonomy" "tags"))
-      "heading" "Scholarship Pages")
+      "entries" (partial "timeline-entries-for-term.html" (dict "page" . "taxonomy" "tags")))
     }}
 
 

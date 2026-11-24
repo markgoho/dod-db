@@ -477,7 +477,7 @@ details[open] > .disclosure-summary::after {
   gap: var(--space-xl);
 }
 
-/* Inbound links to Scholarship Pages (scholarship-links.html), on Episode and term pages. */
+/* Inbound links to Scholarship Pages and Timeline Entries (scholarship-links.html), on Episode and term pages. */
 .scholarship-links {
   display: grid;
   gap: var(--space-s);

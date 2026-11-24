@@ -56,7 +56,7 @@
 
     {{ partial "scholarship-links.html" (dict
       "pages" (partial "scholarship-pages-for-term.html" (dict "page" . "taxonomy" "topics"))
-      "heading" "Scholarship Pages")
+      "entries" (partial "timeline-entries-for-term.html" (dict "page" . "taxonomy" "topics")))
     }}
 
     {{ if or (ne $featuredMarkup "") $topEpisode }}

@@ -4,7 +4,7 @@ kind: composition
 draft: true
 build: { render: never, list: always }
 sourcesRead:
-related: { books: [deuteronomy], tags: [josiah], topics: [] }
+related: { books: [deuteronomy], tags: [josiah], topics: [josiah] }
 watch: [Deuteronomy, Josiah, book of the law, Esarhaddon]
 critical:
   display: "8th century BCE to after the exile"

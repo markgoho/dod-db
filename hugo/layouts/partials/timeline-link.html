@@ -1,0 +1,12 @@
+{{- /*
+  The only copy of the #109 §4 inbound link line. Takes a Timeline Entry.
+  Entries have no page of their own (render: never), so the link goes to the
+  entry's card on the Timeline. An undated entry (Exodus) has no display date,
+  so the line drops it.
+  */
+-}}
+{{- $date := "" -}}
+{{- with .Params.critical -}}
+  {{- $date = printf ", %s" (.display | htmlEscape) -}}
+{{- end -}}
+{{- printf `<a href="%s#%s"><strong>%s</strong></a>%s · on the Timeline: %s.` (site.GetPage "/timeline").RelPermalink .File.ContentBaseName (.Title | htmlEscape) $date (partial "scholarship-not-the-show.html" .) | safeHTML -}}
