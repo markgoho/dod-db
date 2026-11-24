@@ -1,30 +1,43 @@
 {{- /*
-  Custom block for /scholarship/univocality/: the four Gospels read one by
-  one, then woven into one. A view of the page's reviewed statements
-  (`gospels`, `canon`, `harmonizing`); it makes no claim they don't. Reword a
-  line only when the statement it comes from is re-reviewed.
+  Custom block for /scholarship/univocality/: biblical texts that say
+  different things about the same matter, drawn as scrolls speaking in comic
+  speech bubbles with a ≠ between them. A view of the page's reviewed
+  statements (`one-voice`, `hebrew-bible`, `the-end`) and their cited quotes;
+  it makes no claim they don't. Reword a bubble only when the statement it
+  comes from is re-reviewed.
 
-  Many narrowing to one: four identical scrolls in four equal columns, a
-  strand dropping from each, the strands braiding into one wider scroll. The
-  strands' start points sit at the column centres (12.5%, 37.5%, 62.5%,
-  87.5%), so the drawing stays joined at any width. A bracket marks the two
-  Gospels with a birth story; the ≠ on it says the two stories differ.
+  Two sides, three times: every speaker is the same scroll, so the only
+  difference inside a pair is what the bubbles say. Bubbles restate what the
+  cited scholars say each text says; they are not Bible quotations, so they
+  carry no quotation marks, and the references link to the verses.
   */
 -}}
-{{- $gospels := slice
-  (dict "name" "Matthew" "birth" true)
-  (dict "name" "Mark" "birth" false)
-  (dict "name" "Luke" "birth" true)
-  (dict "name" "John" "birth" false)
+{{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
+{{- $pairs := slice
+  (dict
+  "key" "goliath"
+  "topic" "Who kills Goliath?"
+  "a" (dict "who" "1 Samuel 17:50" "ref" "1 Samuel 17:50" "says" "David kills Goliath.")
+  "b" (dict "who" "2 Samuel 21:19" "ref" "2 Samuel 21:19" "says" "Elhanan kills Goliath."))
+  (dict
+  "key" "conquest"
+  "topic" "Was the whole land conquered?"
+  "a" (dict "who" "Joshua 10:40" "ref" "Joshua 10:40" "says" "The Israelites conquered the whole land.")
+  "b" (dict "who" "Judges" "ref" "" "says" "Many Canaanites survived."))
+  (dict
+  "key" "end"
+  "topic" "When will the end come?"
+  "a" (dict "who" "Paul" "ref" "" "says" "The end is near.")
+  "b" (dict "who" "2 Peter" "ref" "" "says" "It could be a thousand years."))
 -}}
-<section class="cloud-section univ-weave">
+<section class="cloud-section univ-voices">
   <h2
     class="type-section-title cloud-section__title"
     id="at-a-glance"
     data-share-hide>
     At a glance
   </h2>
-  {{/* Drawn once, reused: the scroll, a long one, and the birth-story badge. */}}
+  {{/* Drawn once, reused six times: the speaking scroll. */}}
   <svg class="univ-defs" aria-hidden="true" focusable="false">
     <defs>
       <g id="univ-scroll">
@@ -52,159 +65,62 @@
           rx="9" />
         <path class="univ-scroll__shine" d="M16 11h44M16 107h44" />
       </g>
-      {{/* The same scroll, long enough to hold four. */}}
-      <g id="univ-scroll-wide">
-        <rect
-          class="univ-scroll__shadow"
-          x="21"
-          y="22"
-          width="152"
-          height="92" />
-        <rect
-          class="univ-scroll__paper"
-          x="14"
-          y="15"
-          width="152"
-          height="92" />
-        <path
-          class="univ-scroll__writing"
-          d="M26 34h128M26 43h128M26 52h128M26 61h128M26 70h80" />
-        <rect
-          class="univ-scroll__roll"
-          x="4"
-          y="4"
-          width="172"
-          height="18"
-          rx="9" />
-        <rect
-          class="univ-scroll__roll"
-          x="4"
-          y="100"
-          width="172"
-          height="18"
-          rx="9" />
-        <path class="univ-scroll__shine" d="M16 11h84M16 107h84" />
-      </g>
-      {{/* A swaddled infant: this Gospel tells a birth story. */}}
-      <g id="univ-birth" transform="rotate(-24 50 80)">
-        <path
-          class="univ-birth__swaddle"
-          d="M36 70h28c9 0 14 4 14 10s-5 10-14 10H36z" />
-        <path class="univ-birth__wrap" d="M50 71q3 9 0 18M61 71q3 9 0 18" />
-        <circle class="univ-birth__head" cx="33" cy="80" r="12" />
-        <path class="univ-birth__face" d="M27 79q2.5 2 5 0M35 79q2.5 2 5 0" />
-        <path class="univ-birth__face" d="M30 70q3-5 7-1" />
-      </g>
       <path
         id="univ-burst"
         d="M50.0 1.0L58.7 12.0L71.3 5.9L74.3 19.5L88.3 19.4L85.1 33.1L97.8 39.1L89.0 50.0L97.8 60.9L85.1 66.9L88.3 80.6L74.3 80.5L71.3 94.1L58.7 88.0L50.0 99.0L41.3 88.0L28.7 94.1L25.7 80.5L11.7 80.6L14.9 66.9L2.2 60.9L11.0 50.0L2.2 39.1L14.9 33.1L11.7 19.4L25.7 19.5L28.7 5.9L41.3 12.0z" />
     </defs>
   </svg>
-  <div class="univ-weave__panel panel">
-    <p class="univ-weave__claim">
-      <span class="univ-weave__badge">
-        <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+  <div class="univ-voices__panel panel">
+    <p class="univ-voices__claim">
+      <span class="univ-voices__badge" aria-hidden="true">
+        <svg viewBox="0 0 100 100" focusable="false">
           <use href="#univ-burst" />
         </svg>
-        <span>4</span>
+        <span>≠</span>
       </span>
-      <span>Gospels: read one by one, or woven into&nbsp;one?</span>
+      <span>One voice? Scholars hear many, and at times they conflict.</span>
     </p>
-
-    <div class="univ-weave__groups">
-      <section class="univ-weave__group univ-weave__group--apart">
-        <div class="univ-weave__head">
-          <h3 class="univ-weave__name">One by one</h3>
-          <p class="univ-weave__verdict">
-            Read on its own, each Gospel’s differences stand out.
-          </p>
-        </div>
-        <div class="univ-weave__four">
-          <p class="univ-weave__differ">
-            Matthew and Luke tell different stories of Jesus’ birth
-          </p>
-          <svg
-            class="univ-weave__bracket"
-            viewBox="0 0 400 40"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-            focusable="false">
-            <path d="M50 38V14H250V38" />
-          </svg>
-          <span class="univ-weave__ne" aria-hidden="true">≠</span>
-          <ul class="univ-weave__list">
-            {{- range $gospels }}
-              <li>
+    <div class="univ-voices__pairs">
+      {{- range $pairs }}
+        <section class="univ-voices__pair">
+          <h3 class="univ-voices__topic">{{ .topic }}</h3>
+          <ul class="univ-voices__speakers">
+            {{- range $i, $side := slice .a .b }}
+              {{- if eq $i 1 }}
+                <li class="univ-voices__ne" aria-hidden="true">≠</li>
+              {{- end }}
+              <li class="univ-voices__speaker">
+                <p class="univ-voices__bubble">{{ $side.says }}</p>
                 <svg
                   class="univ-scroll"
                   viewBox="0 0 100 122"
                   aria-hidden="true"
                   focusable="false">
                   <use href="#univ-scroll" />
-                  {{- if .birth }}<use href="#univ-birth" />{{ end }}
                 </svg>
-                <span>{{ .name }}</span>
+                <p class="univ-voices__who">
+                  {{- with $side.ref }}
+                    <a href="{{ $bg }}{{ . | urlquery }}" rel="noopener"
+                      >{{ replace $side.who " " "&nbsp;" | safeHTML }}</a
+                    >
+                  {{- else }}
+                    {{ replace $side.who " " "&nbsp;" | safeHTML }}
+                  {{- end }}
+                </p>
               </li>
             {{- end }}
           </ul>
-          {{/* Four strands, one from under each scroll, braided into one. Ink first, then the strands, so each crossing reads as over or under. */}}
-          <svg
-            class="univ-weave__strands"
-            viewBox="0 0 400 140"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-            focusable="false">
-            <g class="univ-strand__ink">
-              <path d="M50 0C50 60 230 70 196 140" />
-              <path d="M150 0C150 50 170 90 204 140" />
-              <path d="M250 0C250 50 230 90 196 140" />
-              <path d="M350 0C350 60 170 70 204 140" />
-            </g>
-            <g class="univ-strand">
-              <path d="M50 0C50 60 230 70 196 140" />
-              <path d="M250 0C250 50 230 90 196 140" />
-            </g>
-            <g class="univ-strand univ-strand--over">
-              <path d="M150 0C150 50 170 90 204 140" />
-              <path d="M350 0C350 60 170 70 204 140" />
-            </g>
-          </svg>
-        </div>
-      </section>
-
-      <section class="univ-weave__group univ-weave__group--woven">
-        <ul class="univ-weave__list univ-weave__list--one">
-          <li>
-            <svg
-              class="univ-scroll univ-scroll--wide"
-              viewBox="0 0 180 122"
-              aria-hidden="true"
-              focusable="false">
-              <use href="#univ-scroll-wide" />
-            </svg>
-            <span>Diatessaron</span>
-          </li>
-        </ul>
-        <div class="univ-weave__head">
-          <h3 class="univ-weave__name">Woven into one</h3>
-          <p class="univ-weave__verdict">
-            In the second century Tatian wove the four Gospels into a single
-            account, resolving their conflicts.
-          </p>
-        </div>
-      </section>
+        </section>
+      {{- end }}
     </div>
-
-    <p class="univ-weave__note" data-card-hide>
-      Scholars warn that a unified reading can smooth over differences that
-      stand out when each book is read on its own.
+    <p class="univ-voices__note" data-card-hide>
+      Each bubble restates what a cited scholar says the text says.
     </p>
-    <p class="univ-weave__more scholarship-meta" data-share-hide>
+    <p class="univ-voices__more scholarship-meta" data-share-hide>
       Every line here comes from the cited answers below:
-      <a href="#gospels">how the Gospels differ</a>,
-      <a href="#canon">reading the books as one</a> and
-      <a href="#harmonizing">how early readers reconciled them</a>. The rest of
-      the page covers the Hebrew Bible, Paul and James, and the end times.
+      <a href="#one-voice">does the Bible speak with one voice</a>,
+      <a href="#hebrew-bible">where the Hebrew Bible differs</a> and
+      <a href="#the-end">when the end will come</a>.
     </p>
   </div>
 </section>
