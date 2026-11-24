@@ -111,8 +111,8 @@ statements:
   - id: pastorals-reasons
     group: "1 and 2 Timothy and Titus"
     question: "Why do scholars doubt that Paul wrote them?"
-    short: "Their writing style differs from Paul's undisputed letters, and much of their vocabulary is not found in his letters."
-    text: "Scholars generally agree that the three letters share one author. The chapter summary for Ehrman's textbook calls their style and vocabulary not Pauline: over one-third of their vocabulary appears in none of the other letters in Paul's name. It adds that the letters presuppose a church organized under bishops and deacons, a structure that developed well after Paul's death. Dale Martin's Yale lectures also name writing style as “a big issue”."
+    short: "Their writing style differs from Paul's undisputed letters, and they presuppose a later church structure."
+    text: "Scholars generally agree that the three letters share one author. The chapter summary for Ehrman's textbook calls their style and vocabulary not Pauline: over one-third of their vocabulary appears in none of the other letters in Paul's name. It adds that the letters presuppose a church organized under bishops and deacons, a structure that developed well after Paul's death. Dale Martin's Yale lectures also name writing style as “a big issue” and say the letters presuppose a later stage of early Christianity, with a different theology and church structure."
     cites:
       - source: ehrman-brief-5e-ch16-summary
         locator: "section “The Historical Situation and Authorship of the Pastoral Epistles”"
@@ -129,6 +129,10 @@ statements:
       - source: martin-rlst152-l19
         locator: "ch. 1 [00:00:00]"
         quote: "the writing style in these letters is very different from the seven letters that scholars all agree Paul actually wrote, so the writing style is a big issue."
+        read: 2026-11-23
+      - source: martin-rlst152-l19
+        locator: "ch. 1 [00:00:00]"
+        quote: "these letters simply presuppose a different stage in early Christianity. They don't look like they're from the more primitive sort of time of when Paul was actually founding churches. The theology looks different, the church structure looks different"
         read: 2026-11-23
   - id: pastorals-date
     group: "1 and 2 Timothy and Titus"

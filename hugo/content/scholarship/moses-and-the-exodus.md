@@ -108,7 +108,7 @@ statements:
     group: "How scholars read the account"
     question: "Did some kind of exodus happen?"
     short: "Many scholars think some history is preserved."
-    text: "Many scholars still think that some genuine history is preserved in Exodus. The summary gives two reasons: Moses appears consistently as the deliverer from slavery in Egypt throughout Israel’s literature and legal traditions, which suggests a common historical source, and Egyptian themes, including proper names, are common enough to make a historical origin likely. The chapter summary for Coogan and Chapman's introductory textbook holds that the accounts may not preserve the details accurately, but that some sort of exodus occurred in Israel's history. Carol Meyers likewise judges that Egyptian analogues suggest a core of reality, although there is no specific historical grounding for the biblical account."
+    text: "Many scholars still think that some genuine history is preserved in Exodus. The summary gives two reasons: Moses appears consistently as the deliverer from slavery in Egypt throughout Israel’s literature and legal traditions, which suggests a common historical source, and Egyptian themes, including proper names, are common enough to make a historical origin likely. The chapter summary for Coogan and Chapman's introductory textbook holds that the accounts may not preserve the details accurately, but that some sort of exodus occurred in Israel's history. Carol Meyers likewise judges that Egyptian analogues suggest a core of reality, although there is no specific historical grounding for the biblical account. Christine Hayes also reports that some scholars assume a historical memory lies behind the story."
     cites:
       - source: coogan-brief-4e-summary
         locator: "section “Exodus and History”"
@@ -125,6 +125,10 @@ statements:
       - source: meyers-2005-exodus
         locator: "p. 10"
         quote: "Although there is no specific historical grounding for the biblical account of descent, sojourn, and departure, these analogues suggest a core of reality."
+        read: 2026-11-23
+      - source: hayes-rlst145-l7
+        locator: "ch. 3 [00:10:06]"
+        quote: "Some scholars assume there's a historical memory behind the elaborate and dramatic story of a miraculous redemption by God."
         read: 2026-11-23
   - id: band
     group: "How scholars read the account"

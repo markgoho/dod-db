@@ -10,6 +10,7 @@
 # #133 second pass 2026-11-23 (independent agent): shorts audited against the state-of-scholarship rule. pseudepigraphy and
 # second-thessalonians gain a second-author cite (pseudepigraphy/3, second-thessalonians/7); pastorals-reasons and
 # pastorals-date shorts narrowed; pastorals-dissent flagged (consensus-wording). Review dates stay 2026-11-23.
+# #133 verify/133b 2026-11-23 (third independent agent): pseudepigraphy/3 (Martin l17 ch. 2 [00:10:42]) and second-thessalonians/7 (Ehrman ch. 16 summary, bold heading “The Deutero-Pauline Epistles”) re-fetched and matched verbatim; both pass. pastorals-reasons short changed again (see pastorals-reasons/5); pastorals-date passes (Ehrman and Martin both put them after Paul; “Uncertain” rightly dropped as Martin alone). Other statements not reviewed in this pass.
 review: 2026-11-23
 delegation:
   by: owner
@@ -118,6 +119,12 @@ citations:
       agent: pass,
       owner: "",
       note: "Martin l19 ch. 1 [00:00:00]. His “scholars all agree” about the seven isn't used for any statement's strength. Second pass 2026-11-23: verified.",
+    }
+  pastorals-reasons/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "#133 verify/133b 2026-11-23: added. Martin l19 ch. 1 [00:00:00] (quote falls before the ch. 2 heading), re-fetched from oyc.yale.edu and matched verbatim; same passage as pastorals-reasons/4, answering “Why do we think they're pseudonymous?”. The second pass's short (“… and much of their vocabulary is not found in his letters”) put the vocabulary clause on the Ehrman summary alone; Martin l19 never mentions vocabulary. Martin does say the church structure looks different, so church structure has two authors (this and pastorals-reasons/2–3). Short now “Their writing style differs from Paul's undisputed letters, and they presuppose a later church structure.”; statement adds Martin's point. Vocabulary stays in the statement, attributed to the Ehrman summary. Changed by the third agent; no further independent pass.",
     }
   pastorals-date/1:
     {

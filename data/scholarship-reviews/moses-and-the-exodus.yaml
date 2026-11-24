@@ -4,6 +4,7 @@
 # Second agent pass 2026-11-23 (#93 delegation): independent re-fetch and verbatim re-match of every citation and Trigger Claim; results appended to each note.
 # #133 (2026-11-23): band's short answer changed to report what its three authors share; band cites unchanged.
 # #133 second pass 2026-11-23 (independent agent): band verified; every short re-audited against the rule. kernel gains Meyers p. 10 (kernel/4, the band/3 quote) as a second author; sargon's short reworded to the parallel itself (a fact about two texts); song's statement attributes “most agree” to Hayes. history, date, numbers and song shorts each rest on one author's report and are flagged (consensus-wording), not reworded. Review dates stay 2026-11-23.
+# #133 verify/133b 2026-11-23 (third independent agent): kernel/4 Meyers p. 10 re-fetched and matched verbatim (page header “10”); kernel also gains Hayes l7 ch. 3 (kernel/5), a second field-level report beside Coogan and Chapman. Ruling applied here and on the-historical-jesus: one author reporting the field plus a second read author who holds the view in their own voice meets the 2+ rule; where a second report exists in a read source it is added. sargon short accepted as an exempt fact about two texts (what each birth story says), one author. song text sentence verified (Hayes l8 ch. 2 “most people do in fact agree”); song short stays flagged. history, date, numbers not reviewed in this pass.
 review: 2026-11-23
 delegation:
   by: owner
@@ -124,6 +125,12 @@ citations:
       agent: pass,
       owner: "",
       note: "#133 second pass 2026-11-23: added. Same quote as band/3 (Meyers p. 10; excerpt PDF re-fetched from assets.cambridge.org 2026-11-23 for #133 and matched verbatim). kernel's “Many scholars think” is the Coogan and Chapman summary's report alone (kernel/1–3, one author pair); Meyers holding in her own voice that the analogues suggest a core of reality is the second author. Statement attributes it to Meyers by name. Added by the verifier, so this cite and its sentence have had no further independent pass.",
+    }
+  kernel/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "#133 verify/133b 2026-11-23: added. Hayes l7 ch. 3 [00:10:06] (chapter heading checked against the transcript), re-fetched from oyc.yale.edu and matched verbatim. Second author reporting the field (“Some scholars assume”), beside Coogan and Chapman's “many scholars” (kernel/1); “Many” in the short stays Coogan and Chapman's word, Hayes's weaker “some” is attributed in the statement. Added by the third agent; no further independent pass.",
     }
   band/1:
     {
