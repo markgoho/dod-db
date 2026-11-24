@@ -951,3 +951,59 @@ aig-bible-timeline:
   url: "https://answersingenesis.org/bible-timeline/"
   hostAuthored: false
   tradition: "Answers in Genesis, an apologetics ministry"
+
+hayes-rlst145-l2:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 2 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-2"
+  hostAuthored: false
+  tradition: null
+
+klamm-2020-enuma-elish:
+  author: "Kacie Klamm"
+  title: "The Enuma Elish and the Bible"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2020
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-enuma-elish-and-the-bible/"
+  hostAuthored: false
+  tradition: null
+
+paul-ej-creation-cosmogony:
+  author: "Shalom M. Paul"
+  title: "Creation and Cosmogony in the Bible"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/creation-and-cosmogony-bible"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-1-notes:
+  author: null
+  title: "Notes on Genesis 1"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/genesis/1"
+  hostAuthored: false
+  tradition: null
