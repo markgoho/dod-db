@@ -13,6 +13,45 @@
   <h2 class="type-section-title cloud-section__title" id="side-by-side">
     Side by side
   </h2>
+  {{/* One set of flat ink glyphs, drawn once and reused, so the same thing looks the same in both accounts. */}}
+  <svg class="creation-icons" aria-hidden="true" focusable="false">
+    <symbol id="creation-plant" viewBox="0 0 32 32">
+      <path d="M14.5 30V15h3v15z" />
+      <path d="M16 19C8 19 4 13 4 8c7 0 12 4 12 11z" />
+      <path d="M16 14c0-7 5-11 12-11 0 6-4 11-12 11z" />
+    </symbol>
+    <symbol id="creation-animal" viewBox="0 0 32 32">
+      <rect x="5" y="13" width="18" height="8" rx="3" />
+      <path d="M6 19h3.5v10H6zM18 19h3.5v10H18z" />
+      <path d="M19 15l5-9 6 2v4l-4 1.5-3 5.5z" />
+      <path d="M24.5 6.5l.5-4 3 4.5z" />
+      <path d="M6.5 15.5L2 11l1.5-1.5 5 4z" />
+    </symbol>
+    <symbol id="creation-human" viewBox="0 0 32 32">
+      <circle cx="16" cy="7.5" r="5" />
+      <path d="M8 30V21a8 8 0 0 1 16 0v9z" />
+    </symbol>
+    <symbol id="creation-humans" viewBox="0 0 32 32">
+      <circle cx="9.5" cy="9" r="4" />
+      <path d="M3.5 30v-9.5a6 6 0 0 1 12 0V30z" />
+      <circle cx="22.5" cy="9" r="4" />
+      <path d="M16.5 30v-9.5a6 6 0 0 1 12 0V30z" />
+    </symbol>
+    {{/* Six days in two matching sets of three, and a seventh apart. */}}
+    <symbol id="creation-days" viewBox="0 0 32 32">
+      <path
+        d="M2 3h7v7H2zM2 12.5h7v7H2zM2 22h7v7H2zM11.5 3h7v7h-7zM11.5 12.5h7v7h-7zM11.5 22h7v7h-7z" />
+      <circle cx="26" cy="16" r="4.5" />
+    </symbol>
+    {{/* The garden God plants. */}}
+    <symbol id="creation-garden" viewBox="0 0 32 32">
+      <circle cx="16" cy="11" r="9" />
+      <circle cx="9" cy="15" r="5.5" />
+      <circle cx="23" cy="15" r="5.5" />
+      <path d="M14 17h4v11h-4z" />
+      <path d="M5 27.5h22V30H5z" />
+    </symbol>
+  </svg>
   <div class="creation-compare__panel panel">
     <table
       class="creation-compare__table"
@@ -24,6 +63,12 @@
             class="creation-compare__account creation-compare__account--first"
             role="columnheader"
             scope="col">
+            <svg
+              class="creation-icon creation-icon--emblem"
+              aria-hidden="true"
+              focusable="false">
+              <use href="#creation-days" />
+            </svg>
             <span class="creation-compare__ordinal">First account</span>
             <span class="creation-compare__name">Genesis 1</span>
             <span class="creation-compare__range">Genesis 1:1–2:4a</span>
@@ -35,6 +80,12 @@
             class="creation-compare__account creation-compare__account--second"
             role="columnheader"
             scope="col">
+            <svg
+              class="creation-icon creation-icon--emblem"
+              aria-hidden="true"
+              focusable="false">
+              <use href="#creation-garden" />
+            </svg>
             <span class="creation-compare__ordinal">Second account</span>
             <span class="creation-compare__name">Genesis 2</span>
             <span class="creation-compare__range">Begins at Genesis 2:4b</span>
@@ -55,6 +106,12 @@
             <ol class="creation-order creation-order--first">
               <li>
                 <span class="creation-order__item">
+                  <svg
+                    class="creation-icon"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="#creation-plant" />
+                  </svg>
                   <span class="creation-order__what">Plants</span>
                   <span class="creation-order__note"
                     >Third day <span class="creation-order__dot">·</span>
@@ -66,6 +123,12 @@
               </li>
               <li>
                 <span class="creation-order__item">
+                  <svg
+                    class="creation-icon"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="#creation-animal" />
+                  </svg>
                   <span class="creation-order__what">Animals</span>
                   <span class="creation-order__note"
                     >Before humans <span class="creation-order__dot">·</span>
@@ -77,6 +140,12 @@
               </li>
               <li class="creation-order__human">
                 <span class="creation-order__item">
+                  <svg
+                    class="creation-icon"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="#creation-humans" />
+                  </svg>
                   <span class="creation-order__what">Humans</span>
                   <span class="creation-order__note"
                     >Male and female together
@@ -115,6 +184,12 @@
             <ol class="creation-order creation-order--second">
               <li class="creation-order__human">
                 <span class="creation-order__item">
+                  <svg
+                    class="creation-icon"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="#creation-human" />
+                  </svg>
                   <span class="creation-order__what">The man</span>
                   <span class="creation-order__note"
                     >Formed from the dust of the earth
@@ -127,6 +202,12 @@
               </li>
               <li>
                 <span class="creation-order__item">
+                  <svg
+                    class="creation-icon"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="#creation-plant" />
+                  </svg>
                   <span class="creation-order__what">Plants</span>
                   <span class="creation-order__note"
                     >None before the man
@@ -139,6 +220,12 @@
               </li>
               <li>
                 <span class="creation-order__item">
+                  <svg
+                    class="creation-icon"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="#creation-animal" />
+                  </svg>
                   <span class="creation-order__what">Animals</span>
                   <span class="creation-order__note"
                     >After the man <span class="creation-order__dot">·</span>
@@ -150,6 +237,12 @@
               </li>
               <li class="creation-order__human">
                 <span class="creation-order__item">
+                  <svg
+                    class="creation-icon"
+                    aria-hidden="true"
+                    focusable="false">
+                    <use href="#creation-human" />
+                  </svg>
                   <span class="creation-order__what">The woman</span>
                   <span class="creation-order__note"
                     >Formed from his rib

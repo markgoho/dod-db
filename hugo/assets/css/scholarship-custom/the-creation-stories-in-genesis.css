@@ -90,6 +90,27 @@
   font-size: var(--step--2);
 }
 
+/*
+  Glyphs: flat ink shapes in the text colour. They sit on the outer edge of
+  their box, away from the spine, and above the text in a narrow column.
+*/
+.creation-icons {
+  block-size: 0;
+  inline-size: 0;
+  position: absolute;
+}
+
+.creation-icon {
+  block-size: var(--space-s);
+  fill: currentColor;
+  inline-size: var(--space-s);
+}
+
+.creation-icon--emblem {
+  block-size: var(--space-m);
+  inline-size: var(--space-m);
+}
+
 /* What is being compared sits on a rule across both accounts. */
 .creation-compare__table .creation-compare__aspect {
   align-items: center;
@@ -287,6 +308,46 @@
 
   .creation-order__what {
     font-size: var(--step-0);
+  }
+
+  .creation-compare__table .creation-compare__account,
+  .creation-order__item {
+    column-gap: var(--space-xs);
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .creation-compare__table .creation-compare__account--second,
+  .creation-order--second .creation-order__item {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .creation-compare__account > span,
+  .creation-order__item > span {
+    grid-column: 2;
+  }
+
+  .creation-compare__account--second > span,
+  .creation-order--second .creation-order__item > span {
+    grid-column: 1;
+  }
+
+  .creation-icon {
+    align-self: center;
+    block-size: var(--space-l);
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    inline-size: var(--space-l);
+  }
+
+  .creation-compare__account--second > .creation-icon,
+  .creation-order--second .creation-icon {
+    grid-column: 2;
+  }
+
+  .creation-icon--emblem {
+    block-size: var(--space-xl);
+    grid-row: 1 / span 4;
+    inline-size: var(--space-xl);
   }
 
   .creation-order__dot,
