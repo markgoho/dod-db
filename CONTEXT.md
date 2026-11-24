@@ -158,7 +158,7 @@ _Avoid_: Traditional date, apologetic date
 
 **Setting**:
 The period a composition **Timeline Entry**'s text narrates: the text's own internal date, never a historical claim. It never places a **Timeline Entry**.
-_Avoid_: Narrative date, internal date, date of events
+_Avoid_: Narrative date, date of events
 
 **Trigger Claim**:
 A **Speaker**'s assertion in a **Transcript** that prompts a **Synthesis Page** and sets its subject.

@@ -146,9 +146,7 @@
           </li>
         {{- end }}
       </ol>
-      <div
-        class="timeline-minimap__ticks"
-        style="--tick-hit-share: {{ $hitShare }}">
+      <div class="timeline-minimap__ticks">
         {{- range $ticks }}
           <a
             class="timeline-minimap__tick{{ if .placed }}

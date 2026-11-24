@@ -114,36 +114,28 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(at).toEqual(at.toSorted((a, b) => a - b));
   });
 
-  test("ticks closer than a hit apart take different sideways steps, the lowest free one", () => {
-    // --tick-hit-share: one hit as a share of the shortest strip.
-    const hit = vars(select(page, ".timeline-minimap__ticks")[0])[
-      "tick-hit-share"
-    ]!;
-    expect(hit).toBeGreaterThan(0);
-    const ticks = select(page, ".timeline-minimap__tick").map(t => ({
-      at: vars(t)["tick-at"]!,
-      id: t.attrs["data-tick"]!,
-      step: vars(t)["tick-step"]!,
-    }));
-    for (const [i, t] of ticks.entries()) {
-      const near = ticks
-        .slice(0, i)
-        .filter(u => t.at - u.at < hit)
-        .map(u => u.step);
-      expect(near).not.toContain(t.step);
-    }
-
-    const step = Object.fromEntries(ticks.map(t => [t.id, t.step]));
-    // Creation (4004 BCE) and Adam (4000 BCE) once drew as one tick.
-    expect([step.creation, step.adam]).toEqual([0, 1]);
-    // Three entries at 587 BCE.
-    expect([
-      step["fall-of-jerusalem"],
-      step.lamentations,
-      step["priestly-genesis-1"],
-    ]).toEqual([1, 2, 3]);
-    // Far from any other tick.
-    expect(step.flood).toBe(0);
+  test("ticks closer than a hit apart take the lowest sideways step none of them has", () => {
+    // A hit is 0.026 of the strip, 130 years: Creation and Adam (4004, 4000
+    // BCE) once drew as one tick, and three entries share 587 BCE.
+    const steps = select(page, ".timeline-minimap__tick").map(t => [
+      t.attrs["data-tick"],
+      vars(t)["tick-step"],
+    ]);
+    expect(steps).toEqual([
+      ["creation", 0],
+      ["adam", 1],
+      ["flood", 0],
+      ["jericho", 0],
+      ["exodus", 1],
+      ["deuteronomy", 0],
+      ["fall-of-samaria", 1],
+      ["judges-dtr", 0],
+      ["fall-of-jerusalem", 1],
+      ["lamentations", 2],
+      ["priestly-genesis-1", 3],
+      ["isaiah-56-66", 4],
+      ["daniel", 0],
+    ]);
   });
 
   test("a tick placed by a tradition's date is marked as one", () => {
