@@ -43,7 +43,10 @@ function select(html: string, selector: string): El[] {
     .on(selector, {
       element(e) {
         const el: El = {
-          attrs: Object.fromEntries(e.attributes),
+          // Hugo escapes "+" in a style attribute; the browser reads it back as "+".
+          attrs: Object.fromEntries(
+            [...e.attributes].map(([k, v]) => [k, v.replaceAll("&#43;", "+")]),
+          ),
           tag: e.tagName,
           text: "",
         };
@@ -60,6 +63,7 @@ function select(html: string, selector: string): El[] {
 }
 
 const ids = (els: El[]) => els.map(e => e.attrs.id ?? "");
+const squash = (t: string | undefined) => t?.replaceAll(/\s+/g, " ").trim();
 const hrefs = (els: El[]) => els.map(e => e.attrs.href?.replace(/^#/, ""));
 /** The numeric custom properties in an element's style attribute. */
 const vars = (el: El | undefined): Record<string, number> =>
@@ -114,27 +118,108 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(at).toEqual(at.toSorted((a, b) => a - b));
   });
 
-  test("ticks closer than a hit apart take the lowest sideways step none of them has", () => {
-    // A hit is 0.026 of the strip, 130 years: Creation and Adam (4004, 4000
-    // BCE) once drew as one tick, and three entries share 587 BCE.
-    const steps = select(page, ".timeline-minimap__tick").map(t => [
-      t.attrs["data-tick"],
-      vars(t)["tick-step"],
+  test("each tick shows its entry's title and date in a hint popover on interest, and the hint holds nothing to Tab to", () => {
+    const ticks = select(page, ".timeline-minimap__tick");
+    const tips = select(page, ".timeline-minimap__tip");
+    expect(tips.map(t => t.attrs.popover)).toEqual(ticks.map(() => "hint"));
+    expect(ticks.map(t => t.attrs.interestfor)).toEqual(ids(tips));
+    expect(ids(tips)).toEqual(
+      ticks.map(t => `timeline-minimap-tip-${t.attrs["data-tick"]}`),
+    );
+    const text = (id: string) =>
+      select(page, `[id="timeline-minimap-tip-${id}"]`)[0]
+        ?.text.replaceAll(/\s+/g, " ")
+        .trim();
+    expect(text("daniel")).toBe("Daniel 167–164 BCE");
+    expect(text("creation")).toMatch(
+      /^Creation .+ \(placed by a tradition’s date\)$/,
+    );
+    for (const focusable of ["a", "button", "[tabindex]"])
+      expect(select(page, `.timeline-minimap__tip ${focusable}`)).toHaveLength(
+        0,
+      );
+  });
+
+  test("ticks closer than a dot apart form a column: each sits a pitch per tick below an earlier one, or at its own year if lower", () => {
+    // A pitch is under 0.04 of any strip, 200 years: Creation and Adam
+    // (4004, 4000 BCE) once drew as one tick, and three entries share 587 BCE.
+    const ticks = select(page, ".timeline-minimap__tick");
+    /** The earlier ticks that can set this one's place, and how many pitches below each it sits. */
+    const stack = (id: string) => {
+      const k = ticks.findIndex(t => t.attrs["data-tick"] === id);
+      const expr =
+        /--tick-stack: max\((.*)\)/.exec(ticks[k]?.attrs.style ?? "")?.[1] ??
+        "";
+      return [
+        ...expr.matchAll(/([\d.]+) \* 100% \+ (\d+) \* var\(--tick-pitch\)/g),
+      ].map(m => {
+        const earlier = ticks[k - Number(m[2])];
+        // Each term is that earlier tick's own year.
+        expect(Number(m[1])).toBe(vars(earlier)["tick-at"]!);
+        return [earlier?.attrs["data-tick"], Number(m[2])];
+      });
+    };
+    expect(stack("creation")).toEqual([["creation", 0]]);
+    expect(stack("adam")).toEqual([
+      ["creation", 1],
+      ["adam", 0],
     ]);
-    expect(steps).toEqual([
-      ["creation", 0],
-      ["adam", 1],
-      ["flood", 0],
-      ["jericho", 0],
-      ["exodus", 1],
-      ["deuteronomy", 0],
-      ["fall-of-samaria", 1],
-      ["judges-dtr", 0],
-      ["fall-of-jerusalem", 1],
+    expect(stack("flood")).toEqual([["flood", 0]]);
+    expect(stack("exodus")).toEqual([
+      ["jericho", 1],
+      ["exodus", 0],
+    ]);
+    // The 587 BCE column: on the shortest strip Isaiah 56–66 (539 BCE) can
+    // sit under any of the eight before it back to Jericho, 300 years and
+    // eight pitches earlier, but not under the Flood.
+    expect(stack("isaiah-56-66")).toEqual([
+      ["jericho", 8],
+      ["exodus", 7],
+      ["deuteronomy", 6],
+      ["fall-of-samaria", 5],
+      ["judges-dtr", 4],
+      ["fall-of-jerusalem", 3],
       ["lamentations", 2],
-      ["priestly-genesis-1", 3],
-      ["isaiah-56-66", 4],
-      ["daniel", 0],
+      ["priestly-genesis-1", 1],
+      ["isaiah-56-66", 0],
+    ]);
+    // Daniel (167 BCE) is clear of its neighbour but not of the whole column
+    // on the shortest strip: Jericho (1550 BCE) plus 9 pitches (1800 years) is past it.
+    expect(stack("daniel").map(([id]) => id)).toEqual([
+      "jericho",
+      "exodus",
+      "deuteronomy",
+      "fall-of-samaria",
+      "judges-dtr",
+      "fall-of-jerusalem",
+      "lamentations",
+      "daniel",
+    ]);
+    // Counted from the end, so the column never runs off the strip's foot.
+    expect(ticks.map(t => vars(t)["tick-after"])).toEqual(
+      ticks.map((_, i) => ticks.length - 1 - i),
+    );
+  });
+
+  test("under the strip, a two-item legend names the two dots in the main legend's words", () => {
+    const items = select(page, ".timeline-minimap__legend > li");
+    expect(items.map(i => squash(i.text))).toEqual([
+      "What scholarly and reference sources say",
+      "Placed by a tradition’s date",
+    ]);
+    // The same words as the main legend's scholarly item and placed heading.
+    const main = select(page, ".timeline-spine > .timeline-legend > li");
+    expect(squash(main[0]?.text)).toBe(squash(items[0]?.text));
+    expect(squash(select(page, ".timeline-legend strong")[0]?.text)).toBe(
+      `${squash(items[1]?.text)}:`,
+    );
+    const dots = select(
+      page,
+      ".timeline-minimap__legend .timeline-minimap__dot",
+    );
+    expect(dots.map(d => [d.attrs.class, d.attrs["aria-hidden"]])).toEqual([
+      ["timeline-minimap__dot", "true"],
+      ["timeline-minimap__dot timeline-minimap__dot--placed", "true"],
     ]);
   });
 

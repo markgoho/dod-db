@@ -107,10 +107,18 @@
   }
 }
 
-/* The minimap's two stacked rows (caption, strip), as a popover or as the rail. */
+/*
+  The minimap's three stacked rows (caption, strip, legend), as a popover or
+  as the rail. A tick is a dot (--tick-dot) and --tick-pitch is one dot's
+  place in a column, both whole pixels. timeline-minimap.html's $pitchShare
+  is the largest pitch as a share of its strip.
+*/
 .timeline-minimap__map {
+  --tick-dot: round(var(--space-2xs), 1px);
+  --tick-pitch: calc(var(--tick-dot) + round(var(--space-3xs), 1px));
+
   gap: round(var(--space-3xs), 1px);
-  grid-template: auto minmax(0, 1fr) / minmax(0, 1fr);
+  grid-template: auto minmax(0, 1fr) auto / minmax(0, 1fr);
 }
 
 /*
@@ -473,51 +481,154 @@
 }
 
 .timeline-minimap__ticks {
-  /* timeline-minimap.html's $hitShare is this hit as a share of the shortest strip. */
-  --tick-hit: calc(2 * var(--space-3xs) + var(--border-width-sm));
-
   pointer-events: none;
   position: relative;
 }
 
 /*
-  A tick sits at its year (--tick-at). Ticks closer than a hit take sideways
-  steps (--tick-step): each step sits one --space-3xs further in and on top,
-  so every tick keeps a clickable end. The current one: see the end.
+  The axis node's look (timeline.css), small: a filled dot for an entry placed
+  by its Critical Date, a dashed hollow one for one placed by a tradition's
+  date. The legend's swatches are the same dots.
 */
+.timeline-minimap__dot,
 .timeline-minimap__tick {
   background: var(--tan-900);
-  block-size: var(--border-width-sm);
-  inset-block-start: round(down, var(--tick-at) * 100%, 1px);
-  inset-inline-end: calc(
-    var(--space-4xs) + var(--tick-step) * var(--space-3xs)
+  block-size: var(--tick-dot);
+  border: var(--border-width-sm) solid var(--tan-900);
+  /* 50% makes a circle; the radius tokens are fixed lengths, so not one. */
+  border-radius: 50%;
+  inline-size: var(--tick-dot);
+}
+
+/*
+  A dashed border on a dot this small draws two or three broken arcs, so the
+  dashed ring is drawn: six dashes of --dot-ink, twice as long as their
+  gaps, a conic gradient cut to a ring, on ::before so the mask leaves the
+  dot's own outline (the current and hover ring) alone. Inside, the band
+  shows through: hollow.
+*/
+.timeline-minimap__dot--placed,
+.timeline-minimap__tick--placed {
+  --dot-ink: var(--tan-900);
+
+  background: none;
+  border: 0;
+}
+
+.timeline-minimap__dot--placed {
+  position: relative;
+}
+
+.timeline-minimap__dot--placed::before,
+.timeline-minimap__tick--placed::before {
+  background: repeating-conic-gradient(
+    var(--dot-ink) 0 40deg,
+    transparent 0 60deg
   );
-  inset-inline-start: calc(
-    100% - var(--tick-track-width) + var(--space-3xs) - var(--tick-step) *
-      var(--space-3xs)
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  mask: radial-gradient(
+    closest-side,
+    transparent calc(100% - var(--border-width-sm)),
+    #000 0
+  );
+  position: absolute;
+}
+
+/*
+  A tick sits at its year, centred in the tick track. A run of close ticks
+  is a column (--tick-stack, from timeline-minimap.html), held up off the
+  strip's foot by a pitch per tick below it (--tick-after). Whole pixels.
+  The current one: see the end.
+*/
+.timeline-minimap__tick {
+  inset-block-start: round(
+    down,
+    min(
+        var(--tick-stack),
+        100% - var(--tick-dot) / 2 - var(--tick-after) * var(--tick-pitch)
+      ) -
+      var(--tick-dot) / 2,
+    1px
+  );
+  inset-inline-end: round(
+    down,
+    (var(--tick-track-width) - var(--tick-dot)) / 2,
+    1px
   );
   pointer-events: auto;
   position: absolute;
-  z-index: var(--tick-step);
 }
 
-/* The tick's hit: an invisible --tick-hit tall area centred on the thin mark. */
+/* The tick's hit: an invisible --tick-pitch square centred on the dot. */
 .timeline-minimap__tick::after {
   content: "";
-  inset: calc((var(--border-width-sm) - var(--tick-hit)) / 2) 0;
+  inset: calc((var(--tick-dot) - var(--tick-pitch)) / 2);
   position: absolute;
 }
 
-/* Placed by a tradition's date: hollow and dashed, as on the axis node. */
-.timeline-minimap__tick--placed {
-  background: none;
-  block-size: var(--space-3xs);
-  border: var(--border-width-sm) dashed var(--tan-900);
+/* A hovered tick is ringed too; a current one keeps its own ring (see the end). */
+.timeline-minimap__tick:hover {
+  outline: var(--border-width-sm) solid var(--tan-500);
+  outline-offset: var(--border-width-sm);
 }
 
-.timeline-minimap__tick:hover {
-  outline: var(--border-width-sm) solid var(--color-action);
-  outline-offset: var(--border-width-sm);
+/*
+  The tick's name and date (popover="hint", opened by interestfor on hover or
+  focus), beside the tick on the side with room. Hoverable (WCAG 1.4.13):
+  the ticks layer passes clicks through, so the hint takes them back.
+*/
+.timeline-minimap__tip {
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--tan-900);
+  color: var(--color-text-main);
+  font-size: var(--step--2);
+  inset: auto;
+  line-height: var(--line-height-heading);
+  margin: 0 var(--space-2xs);
+  max-inline-size: var(--content-max-width-sidebar);
+  padding: var(--space-4xs) var(--space-2xs);
+  pointer-events: auto;
+  position-area: inline-end;
+  position-try-fallbacks: flip-inline, flip-block;
+}
+
+/* Moving from one tick's hint to the next opens it at once. */
+.timeline-minimap__ticks:has(:is(:interest-source, .interest-source))
+  .timeline-minimap__tick {
+  interest-delay-start: 0s;
+}
+
+/* ---------- Legend: the two dots, under the strip ---------- */
+
+/* Whole pixels tall, so the strip above it ends on a whole pixel too (see the rail). */
+.timeline-minimap__legend {
+  block-size: calc-size(auto, round(up, size, 1px));
+  display: grid;
+  font-size: var(--step--2);
+  gap: var(--space-4xs);
+  line-height: var(--line-height-heading);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-minimap__legend > li {
+  align-items: start;
+  display: grid;
+  /* typography.css sizes every li; the legend's size is set on the list. */
+  font-size: inherit;
+  gap: var(--space-3xs);
+  grid-template-columns: var(--tick-dot) minmax(0, 1fr);
+  line-height: inherit;
+}
+
+/* Level with the first line of a wrapped label. */
+.timeline-minimap__legend .timeline-minimap__dot {
+  margin-block-start: calc((1lh - var(--tick-dot)) / 2);
 }
 
 /*
@@ -578,12 +689,21 @@
     );
   }
 
-  /* The current tick takes the action colour and reaches out over the band. */
+  /*
+    The current tick: ringed, never colour alone, and in the action colour,
+    filled or (placed by a tradition's date) outlined, so it stays hollow.
+  */
   .timeline-minimap__tick {
-    inset-inline-start: calc(
-      100% - var(--tick-track-width) + var(--space-3xs) - var(--tick-step) *
-        var(--space-3xs) - var(--space-xs) *
-        if(style(--is-current: 1): 1; else: 0)
+    outline: if(
+      style(--is-current: 1): var(--border-width-sm) solid var(--color-action);
+        else: none
+    );
+    outline-offset: var(--border-width-sm);
+  }
+
+  .timeline-minimap__tick:hover {
+    outline-color: if(
+      style(--is-current: 1): var(--color-action); else: var(--tan-500)
     );
   }
 
@@ -593,8 +713,14 @@
     );
   }
 
-  .timeline-minimap__tick--placed {
+  .timeline-minimap__tick {
     border-color: if(
+      style(--is-current: 1): var(--color-action); else: var(--tan-900)
+    );
+  }
+
+  .timeline-minimap__tick--placed {
+    --dot-ink: if(
       style(--is-current: 1): var(--color-action); else: var(--tan-900)
     );
   }
