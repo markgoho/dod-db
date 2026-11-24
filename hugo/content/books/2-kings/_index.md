@@ -22,7 +22,7 @@ quotes:
     episode: 29
     timestamp: "00:04:11.650"
   - text: "What most critical scholars agree on, and I think is the only rational reading of the text, is that the author is kind of furtively suggesting, well, their god beat us and we ran out."
-    speaker: "Dan Beecher"
+    speaker: "Dan McClellan"
     episode: 7
     timestamp: "00:30:16.820"
   - text: "This is probably, um, coming from the Deuteronomistic historian."
