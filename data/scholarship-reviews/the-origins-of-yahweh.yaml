@@ -1,0 +1,322 @@
+# Review record for /scholarship/the-origins-of-yahweh/ (#93 shape). Not rendered.
+# agent: results of the agent's first pass (#131, 2026-11-23). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Every quote was re-fetched 2026-11-23 and matched verbatim after normalising whitespace, quotes, dashes and PDF ligatures; each locator was checked by eye against the fetched text.
+review: ""
+citations:
+  el/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5 [00:26:43]. “many scholars have suggested”: #86 reasons rule met by el/2 (Exod 6:2–4, the passage Hayes gives in the same paragraph) and by resemblance/1–6 (her list of El traits and El names that follows). Statement says “suggested”, never “think” or “agree”.",
+    }
+  el/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5, same paragraph, sentence just before el/1. Brackets [Yahweh] are the transcript's own. Statement paraphrases the verse, it does not quote it.",
+    }
+  el/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5, same paragraph. Added for scope: J's counter-tradition, which the core sentence would otherwise hide.",
+    }
+  el/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 6 [00:38:39], first paragraph. “seem to have” kept as “seem to have”.",
+    }
+  el/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 6, closing paragraph. Statement keeps it as what P and E insist, not as history.",
+    }
+  el/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 5 summary, section “Ancestors as History?”, last sentence. “appears to preserve” kept. Core claim, author 2 (independent of Hayes by distinct author, #92).",
+    }
+  el/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 6 summary, section “The Hegemony of Storm-gods”. Names neither El nor Yahweh as sky god and storm-god; the statement doesn't equate them either, and sets it after the ch. 5 summary's El sentence. Continuity clause kept (“the sources all present … as continuous”).",
+    }
+  resemblance/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5. Hayes says the patriarchal-traditions list is from “Genesis primarily”; statement says “patriarchal traditions of Genesis”. Flag (not a cut): Hayes says this handout list is “based on information that's supplied by many scholars. I've relied very much on Michael Coogan”; the statement attributes it to Hayes's lecture only.",
+    }
+  resemblance/2: { agent: pass, owner: "", note: "Hayes l7 ch. 5." }
+  resemblance/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5, next paragraph (Ras Shamra discovery). Backs “texts from ancient Ugarit”.",
+    }
+  resemblance/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5. The beard detail is in the quote but not the statement.",
+    }
+  resemblance/5:
+    { agent: pass, owner: "", note: "Hayes l7 ch. 5, same paragraph." }
+  resemblance/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5, end of the same paragraph. Statement's “from the name Yahweh” is her “as part of the name Yahweh”.",
+    }
+  storm/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 5, paragraph after the El list.",
+    }
+  storm/2: { agent: pass, owner: "", note: "Hayes l7 ch. 5, same paragraph." }
+  storm/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l8 ch. 2 [00:06:51], Song of the Sea paragraph.",
+    }
+  storm/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l8 ch. 2. Hayes relaying Coogan (2006, pp. 101–3); the statement attributes it to Coogan through Hayes (“Hayes reports Michael Coogan's observation”).",
+    }
+  storm/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l8 ch. 2, next paragraph (“Coogan notes…”).",
+    }
+  storm/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l8 ch. 2, same paragraph. Hedge “there seems to be” kept in the statement. Not independent of storm/7: Hayes is relaying Coogan, so storm/7 is not presented as corroboration (no “likewise”).",
+    }
+  storm/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 6 summary, section “The Hegemony of Storm-gods”, opening sentences.",
+    }
+  convergence/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 6. “some biblical scholars — Mark S. Smith is among them, and Steven Geller”; statement says “one of the biblical scholars who…”. Smith's own text is a lead.",
+    }
+  convergence/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 6, Smith paragraph. “that we think originally came from … further south” rendered “a god thought to have come originally from a region further south”, attributed to the model as Hayes describes it.",
+    }
+  convergence/3:
+    { agent: pass, owner: "", note: "Hayes l7 ch. 6, same paragraph." }
+  convergence/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 6, same paragraph. Hayes's own judgement, attributed to her by name.",
+    }
+  convergence/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 6, closing paragraph. Statement drops “pure Yahwists” / “pure polytheists”; “On this reading” marks it as Hayes's account.",
+    }
+  attestation/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 3. Footnote marker 4 after “840” omitted. Statement adds “BCE” (Fleming's note 1: all dates BCE).",
+    }
+  attestation/2:
+    { agent: pass, owner: "", note: "Fleming excerpt p. 1, third sentence." }
+  attestation/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 5. Footnote marker 5 after “Judah” omitted.",
+    }
+  attestation/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 5. Statement keeps “mysterious and open to debate” beside “demands explanation”.",
+    }
+  attestation/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt pp. 1–2: the sentence crosses the page break, with footnote 1 and the page header between “New Kingdom” and “Egyptian texts”, so the normalised match fails; both halves checked by eye. Locator says pp. 1–2. Kept: verbatim once the break is removed.",
+    }
+  south/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 5. Footnote marker 6 omitted. “Midianite Hypothesis” is Fleming's name (p. 3, p. 9), attributed to him.",
+    }
+  south/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 3. Backs “going back to the late nineteenth century” in text and short answer.",
+    }
+  south/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 5. The reasons the hypothesis rests on, as Fleming states them (#86 reasons rule applied though the page makes no consensus claim). Blenkinsopp's four lines of evidence (p. 8) not used: Fleming relaying Blenkinsopp.",
+    }
+  south/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 6, Smith paragraph; attributed to Hayes's account of Smith's model.",
+    }
+  south/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 4. First person; attributed by name.",
+    }
+  south/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 4. Added so the page doesn't present Fleming as a plain supporter of the hypothesis.",
+    }
+  south/7:
+    { agent: pass, owner: "", note: "Fleming excerpt p. 4, end of paragraph." }
+  south/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 3, last lines (“There have always been serious outliers…” runs on to p. 4). Source of “no consensus”, Fleming's own words, attributed by name in short answer and statement.",
+    }
+  south/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 6. Statement keeps “doubt of southern origins” and doesn't claim the Berlin view puts Yahweh's origin in Israel (that sentence on p. 6 is a conditional; left uncited).",
+    }
+  not-el/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming excerpt p. 4. First person, attributed by name in short answer and statement. The excerpt names no one who holds that Yahweh began as El; the question stands because Fleming frames his view against it. A second sentence citing Hayes l7 ch. 6 (“first El”) was cut in the first pass: Smith's model as Hayes gives it doesn't address whether Yahweh began as El, so “too” was the page's inference.",
+    }
+triggers:
+  7@00:48:15:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:43:12–00:51:45. Speaker Dan McClellan after #120's label fix: 00:44:42–00:48:15 is his divine-council piece; 00:47:42 is Beecher's question, so “they” = El and Adonai. Hedges kept (“I think”, “probably”). The page gives no date for a merger (no source read gives one).",
+    }
+  7@00:53:48:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:51:45–00:56:10. Extended back to the turn's start so “this” = Psalm 82. Reports others' view: at 00:54:46 McClellan himself dates Psalm 82 after the conflation of Adonai and El. Subject (an El–Yahweh conflation) is the page's; the card reports that view as “a lot of scholars”, not as his.",
+    }
+  66@00:46:10:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:44:33–00:48:05. Quote starts mid-turn after “Most scholars think this has some kind of relationship to the divine name. And so the question is, what's the exact relationship?”; hedge “if there is a relationship” kept. The Shasu reference is the Egyptian Yhwȝ of the attestation statement.",
+    }
+  66@00:47:29:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read through 00:51:58. The hedge at 00:50:55 (“in my opinion, and in the opinion of some scholars, certainly not all scholars”) governs his ancestral-deity claim, not this second-tier claim. No statement on the page covers a second-tier Yahweh; gap left unexplained (#86).",
+    }
+  124@00:47:29:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:46:10–00:49:23. Quote starts mid-sentence after “Now, their use in the Hebrew Bible probably does not, but”. No source read gives the Deut 32:8–9 reading, so the page has no statement on it; gap left unexplained (#86).",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "7 statements (minimum 3). Core (el) backed by two independent authors (#92, counted by distinct author): Christine Hayes (hayes-rlst145-l7, Reference, Yale 2006; el/1–5) and Coogan and Chapman (coogan-brief-4e-summary-ch5 and coogan-brief-4e-summary, Reference, OUP 2019; el/6–7, counting once). None Host-authored. Fleming (Scholarly) does not back the core and isn't cited on it. Flag for the second pass: Hayes says her El handout relies “very much on Michael Coogan” (l7 ch. 5), and l8's storm passage relays Coogan. The core still rests on Hayes's own “many scholars have suggested” report (el/1) and the Coogan and Chapman summary (el/6), so it passes by distinct author, but the two aren't wholly independent in substance.",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "“Many scholars have suggested” (el) is Hayes's own wording, quoted in el/1, with her reasons (Exod 6:2–4, El titles, traits and names) on the page per #86. “no consensus” (south) is Fleming's own, quoted in south/8 and attributed. No other field-state wording; the page never counts scholars.",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fleming's first-person views (not-el, south) and his account of the Levin challenge are attributed by name; Smith's model is attributed to Smith as Hayes describes it, Hayes's judgement to Hayes, Coogan's observation to Coogan through Hayes.",
+    }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition sources cited." }
+sources:
+  hayes-rlst145-l7:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reused registry entry (checked in the Moses review). Reference (introductory course, university-hosted transcript, #86).",
+    }
+  hayes-rlst145-l8:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reused registry entry. Same author as l7: counts once.",
+    }
+  coogan-brief-4e-summary:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+      note: "Reused registry entry (chapter 6 summary); edition confirmed in the Moses review. Reference (publisher summary, #86).",
+    }
+  coogan-brief-4e-summary-ch5:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+      note: "New entry; same textbook and edition as coogan-brief-4e-summary, chapter 5 (“The Ancestors of Israel”) page. Same authors, so it adds no independent source. Reference (publisher summary, #86).",
+    }
+  fleming-2021-yahweh-before-israel:
+    {
+      agent: pass,
+      owner: "",
+      edition: "First published 2021, Cambridge University Press (copyright page, assets.cambridge.org); ISBN 9781108835077",
+      note: "New entry. Read in the publisher's open excerpt PDF (pp. 1–10). Scholarly (academic publisher, professional scholar, NYU); inside the 30-year window. Cambridge Core lists online chapters from November 2020; the copyright page says first published 2021. The catalogue page returned 503 on 2026-11-23.",
+    }
+leads:
+  - "Mark S. Smith, The Early History of God, 2nd ed. (Eerdmans, 2002), pp. 7–8: “Convergence involved the coalescence of various deities, and/or some of their features into the figure of Yahweh.” Quoted by Hayes in l7 ch. 6; Smith's own text not read."
+  - "Michael D. Coogan, The Old Testament: A Historical and Literary Introduction to the Hebrew Scriptures (OUP, 2006), pp. 101–3: the storm-god shift, relayed by Hayes in l8 ch. 2; not read."
+  - "Theodore J. Lewis, The Origin and Character of God (OUP, 2020), ch. 6 “The Origins of Yahweh”, cited in Fleming 2021, p. 3 n. 4 as a systematic review of the inscriptional evidence; not read."
+  - "Joseph Blenkinsopp (2008), four lines of evidence for the Midianite Hypothesis, known only through Fleming 2021, p. 8; not read."
+uncited:
+  - "Hayes l7 ch. 6 [00:38:39]: “The Canaanite god El was, from the biblical text, the God of Israel's earliest ancestors.” The candidate's core-claim passage (#124). Not cited: it opens Hayes's account of Smith's convergence model, so el cites Hayes's own ch. 5 and ch. 6 statements (el/1, el/4, el/5) instead."
+  - "Hayes l8 ch. 2 [00:06:51]: “The older god El, the sky god, was replaced by the younger storm god, Baal”. Hayes relaying Coogan (2006); the only passage read that names El as the sky god. Not cited, so el doesn't equate the Coogan ch. 6 summary's sky god with El."
+  - "Fleming 2021, p. 4: “The Egyptian evidence is decisive to my analysis: the name Yhwȝ designates a Shasu group, a Yhwȝ-people.” Fleming's own reading of the Egyptian name; not cited, since the page states only that the texts name a Yhwȝ in Shasu-land."
+  - "Fleming 2021, p. 6: “If the Bible’s recollection of Yahweh in the southern wilderness must be explained by early Jewish ruminations that offer no threads of real religious history, there is no reason to seek the god’s origins anywhere but the land of Israel itself, even if no evidence survives.” Conditional; would back a statement of the Berlin hypothesis only if worded as a conditional and attributed."
+  - "Fleming 2021, p. 8: Blenkinsopp's four lines of evidence (Moses and Midian in Exod 2 and 18; Yahweh from the south in old poetry such as Judges 5; Egyptian Yhwȝ texts; Cain as Kenite ancestor). Fleming relaying another scholar; south/3 gives Fleming's own reasons instead."
+  - "Hayes l7 ch. 5 [00:26:43]: “he reveals to Moses a new name, Yahweh, so that Yahwism, and the Yahweh cult, can be said to begin only with Moses.” The Bible's own portrayal; el/5 carries the point."
+  - "Hayes l7 ch. 6: Joshua 24:14–15 (“Put away the gods that your forefathers served beyond the Euphrates and in Egypt”). Not on the page."
+  - "Coogan and Chapman ch. 5 summary, “Ancestors as History?”: “a secure date for these events is impossible to pinpoint, and some scholars have dismissed these narratives as a historical fiction from late in the biblical period.” Bears on the patriarchs' historicity, not on El; not on the page."

@@ -265,3 +265,31 @@ coogan-brief-4e-summary-ch9:
   url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-9-summary"
   hostAuthored: false
   tradition: null
+
+coogan-brief-4e-summary-ch5:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 5 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-5-summary"
+  hostAuthored: false
+  tradition: null
+
+fleming-2021-yahweh-before-israel:
+  author: "Daniel E. Fleming"
+  title: "Yahweh before Israel: Glimpses of History in a Divine Name"
+  series: null
+  publisher: "Cambridge University Press"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher excerpt PDF, open"
+  url: "https://assets.cambridge.org/97811088/35077/excerpt/9781108835077_excerpt.pdf"
+  hostAuthored: false
+  tradition: null
