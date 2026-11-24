@@ -1,0 +1,100 @@
+# Review record for the Timeline Entry `deuteronomy` (/timeline/#deuteronomy; #93 shape). Not rendered.
+# agent: the first pass from #100 (sourcing, 2026-11-22), #101 (layout) and the #136 build (2026-11-23). It does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# #136 re-match, 2026-11-23: online quotes re-fetched by script and matched verbatim after normalising whitespace, quotes, dashes and inline markup; USCCB refused the script (403, twice); Trigger Claims matched against the final Transcript line.
+review: ""
+citations:
+  critical/1:
+    {
+      agent: flag,
+      owner: "",
+      note: "NABRE Deuteronomy introduction. Matched in #100 only against a hand transcription of Chrome output (USCCB refuses scripts); re-fetch 2026-11-23 got 403 for both the page and its .md alternate. Needs a browser check of the sentence and its paragraph number (#110).",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary ch. 10, section “Genre, Style, and Contents”. Backs the 8th-century start. Re-matched 2026-11-23.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l11 ch. 3 [00:22:16] “Updated and Revised Laws According to New Ideas”. Backs the note's “late seventh century” core; the sentence before ties it to Josiah “around 622”. Re-matched 2026-11-23.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "GotQuestions “Summary of the Book of Deuteronomy”, under “Date of Writing:”. Backs “as sermons by Moses”. Re-matched 2026-11-23.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same section, the 1406 date. Re-matched 2026-11-23.",
+    }
+triggers:
+  146@00:41:37:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: both. Substring of the 00:41:37 turn, starting mid-sentence after “In fact, the last chapter narrates his death, but”. It goes on to the Esarhaddon treaty; no hedge cut. The show's “1200 BCE, 1400 BCE” is the traditional side (the Tradition Date has 1406 only; no Tradition source for 1200 was found, #100); “under King Josiah toward the end of the 600s BCE” is the critical side and agrees with Hayes.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Dates the book's growth as NABRE and Coogan give it (8th century onward), with the Josiah-era core in the note. precision: century; the end is open (“to the exile and beyond”), drawn to -500.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes dates the core to the late seventh century; NABRE and Coogan start the book in the eighth. The span covers both and the note says one source dates the core later. The show's critical date follows Hayes (#100).",
+    }
+  tradition-both-sides:
+    { agent: pass, owner: "", note: "Trigger 146@00:41:37 has states: both." }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Got Questions Ministries, an evangelical ministry” equals the registry `tradition:` (#110 wording).",
+    }
+  conditional-not-critical:
+    { agent: pass, owner: "", note: "No conditional date." }
+sources:
+  nabre-deuteronomy-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
+      note: "Reference (#86; CONTEXT.md). The page refuses scripted requests; see critical/1.",
+    }
+  coogan-brief-4e-summary-ch10:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+      note: "Same textbook and edition as coogan-brief-4e-summary (confirmed in the OUP catalogue for moses-and-the-exodus); chapter 10 page. #137 confirms or flags the edition record per chapter.",
+    }
+  hayes-rlst145-l11:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reference (introductory course, university-hosted transcript, #86). Lecture 11 “On the Steps of Moab: Deuteronomy”.",
+    }
+  gotquestions-book-of-deuteronomy:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Unsigned, undated web page",
+      note: "Tradition (ruled in #86). Holder wording from #110.",
+    }
+leads: []
+uncited:
+  - "Coogan ch. 10 summary: “Scholars have established a hypothetical reconstruction that demonstrates how Deuteronomy evolved over the span of two centuries.” (#100; re-matched 2026-11-23). The source of the note's “two”; not cited, as critical/2 carries Coogan's date."
+  - "NABRE Deuteronomy: “It bears some relation to “the Book of the Law” discovered in the Jerusalem Temple around 622 B.C. during the reign of King Josiah (2 Kgs 22:8–13).” (#100, hand copy). Not cited; Hayes carries the Josiah link."
+  - "Hayes l11: “but even more so in the seventh century by King Josiah, around 622” (#100). Not cited; the sentence before critical/3."

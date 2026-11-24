@@ -26,6 +26,18 @@
   timestamp: "00:35:26.900"
   states: critical
   text: "The book of Lamentations, which is like the most graphic description of the devastation, some of it goes back to the early days, but some of it goes back, you know, late. It's been. It continued to be written for centuries."
+- entry: isaiah-56-66
+  episode: 43
+  speaker: "Dan McClellan"
+  timestamp: "00:45:20.710"
+  states: critical
+  text: "Most scholars would say somewhere around 520 BCE. So after the return, right around the time that the second temple is being rebuilt, is probably when you have the first layers of Deutero-Isaiah being produced, and then Trito or third Isaiah is coming even later than that, probably in the Persian period."
+- entry: judges-dtr
+  episode: 64
+  speaker: "Dan McClellan"
+  timestamp: "00:26:06.370"
+  states: critical
+  text: "the reality is that these, most of these stories probably come from the 9th or the 8th century BCE, but this poem, the Song of Deborah, could come from before that, you know, possibly as early as around a thousand BCE."
 - entry: daniel
   episode: 119
   speaker: "Dan McClellan"
@@ -44,3 +56,21 @@
   timestamp: "00:44:09.004"
   states: tradition
   text: "So the— if you date the Exodus to the 1400s BCE, which is what a lot of folks do, they'll say, oh, this is Amenhotep II, that was the Pharaoh. 1440 to 1420, somewhere around there is the date of the Exodus."
+- entry: jericho
+  episode: 138
+  speaker: "Dan McClellan"
+  timestamp: "00:45:06.633"
+  states: both
+  text: "And even actual archaeologists like Bryant Wood, who is somebody who gets appealed to a lot when it comes to Jericho. He's one of the ones who provided this argument against Kenyon and the consensus view that the big walls fell down around 1550 BCE. He was like, no, it's closer to 1400 BCE."
+- entry: deuteronomy
+  episode: 146
+  speaker: "Dan McClellan"
+  timestamp: "00:41:37.928"
+  states: both
+  text: "it's supposed to date to or after the Exodus, uh, the, the 40 years wandering before everybody enters into Israel. So 1200 BCE, 1400 BCE, depending on where you imagine this, uh, what time period you imagine this happened in. The reality is that it was probably brought together under King Josiah toward the end of the 600s BCE."
+- entry: fall-of-samaria
+  episode: 187
+  speaker: "Dan McClellan"
+  timestamp: "00:52:15.840"
+  states: critical
+  text: "In 722 BCE, you had Assyrians come in and basically exile the northern kingdom."

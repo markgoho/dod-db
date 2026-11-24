@@ -1,0 +1,82 @@
+# Review record for the Timeline Entry `judges-dtr` (/timeline/#judges-dtr; #93 shape). Not rendered.
+# agent: the first pass from #85 (sourcing, 2026-11-22), #101 (layout) and the #136 build (2026-11-23). It does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# #136 re-match, 2026-11-23: quotes re-fetched by script and matched verbatim after normalising whitespace, quotes, dashes and inline markup; Trigger Claims matched against the final Transcript line.
+review: ""
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l12 ch. 3 [00:13:26] “Introduction to the Former Prophets”. The 622 start, for the whole Deuteronomistic History. Re-matched 2026-11-23.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l12 ch. 3 [00:13:26], two sentences after critical/1. Unverified in #85; re-fetched and matched verbatim 2026-11-23. The sentence before: “The last dated event that is mentioned in 2 Kings is something that occurred in 562.”",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l12 ch. 3 [00:13:26], the next sentence; it goes on “: so in exile or towards the end of the exilic period”. Backs “probably finished soon after 562”; `to: -562` is the source's year, not the prototype's -560. Re-matched 2026-11-23.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE Judges introduction, ¶ 5. The HTML page refused the script (403); its markdown alternate (/bible/judges/0.md, same site) was served and matched 2026-11-23. Names the Deuteronomistic editor of Judges; no date. The paragraph goes on to say the historian drew the stories “from older sources”.",
+    }
+triggers:
+  64@00:26:06:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:26:06 turn, after “Okay. And, but”. The show dates the stories (9th–8th century, the Song of Deborah perhaps around 1000); the entry dates the Deuteronomistic editing. See critical-scope.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "The entry dates the editing, as its title and note say, because the sources read date only that: Hayes for the history from Joshua to 2 Kings, NABRE naming the editor without a date. The show's 9th–8th century for the stories has no source here (#85); the note says so.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No split: Hayes is the only source that dates the editing.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no trigger has states: tradition.",
+    }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition sources cited." }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "“probably” is Hayes's hedge, kept in the display; not a conditional date.",
+    }
+sources:
+  hayes-rlst145-l12:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reference (introductory course, university-hosted transcript, #86). Lecture 12 “The Deuteronomistic History: Life in the Land (Joshua and Judges)”.",
+    }
+  nabre-judges-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
+      note: "Reference (#86; CONTEXT.md). See critical/4 for the fetch route.",
+    }
+leads: []
+uncited:
+  - "GotQuestions “Summary of the Book of Judges”: “The Book of Judges was likely written between 1045 and 1000 B.C.” (#85). Not cited: no Trigger Claim states the traditional side, so no Tradition Date."

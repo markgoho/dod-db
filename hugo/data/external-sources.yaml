@@ -447,3 +447,157 @@ abr-wood-2009-exodus:
   url: "https://biblearchaeology.org/the-biblical-date-for-the-exodus-is-1446-bc-a-response-to-james-hoffmeier/"
   hostAuthored: false
   tradition: "Associates for Biblical Research, an evangelical apologetics ministry"
+
+hayes-rlst145-l11:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 11 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-11"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l12:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 12 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-12"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch10:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 10 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-10-summary"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch17:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 17 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-17-summary"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch22:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 22 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-22-summary"
+  hostAuthored: false
+  tradition: null
+
+nabre-isaiah-intro:
+  author: null
+  title: "Introduction to Isaiah"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/isaiah/0"
+  hostAuthored: false
+  tradition: null
+
+nabre-judges-intro:
+  author: null
+  title: "Introduction to Judges"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/judges/0"
+  hostAuthored: false
+  tradition: null
+
+nabre-deuteronomy-intro:
+  author: null
+  title: "Introduction to Deuteronomy"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/deuteronomy/0"
+  hostAuthored: false
+  tradition: null
+
+nigro-2023-jericho:
+  author: "Lorenzo Nigro"
+  title: "Jericho. From the Neolithic to the Bronze and Iron Ages: The Urban Diversity"
+  series: "Proceedings of the 12th International Congress on the Archaeology of the Ancient Near East, vol. 2, pp. 399–414"
+  publisher: "Harrassowitz"
+  year: 2023
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Author's offprint, Sapienza University repository (PDF), open"
+  url: "https://iris.uniroma1.it/retrieve/a09e0ba5-0e23-4a5e-8c89-db58e6d2ba80/Nigro_Jericho_2022.pdf"
+  hostAuthored: false
+  tradition: null
+
+gotquestions-book-of-deuteronomy:
+  author: null
+  title: "Summary of the Book of Deuteronomy"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/Book-of-Deuteronomy.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
+
+abr-wood-1990-jericho:
+  author: "Bryant G. Wood"
+  title: "Did the Israelites Conquer Jericho? A New Look at the Archaeological Evidence"
+  series: "Biblical Archaeology Review 16, no. 2 (March/April 1990), pp. 44–58"
+  publisher: "Associates for Biblical Research"
+  year: 1990
+  edition: "Web reprint, 1 May 2008"
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://biblearchaeology.org/research-articles/did-the-israelites-conquer-jericho-a-new-look-at-the-archaeological-evidence/"
+  hostAuthored: false
+  tradition: "Associates for Biblical Research, an evangelical apologetics ministry"
