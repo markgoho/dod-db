@@ -1,9 +1,9 @@
 ---
 title: "Adam, the first human"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-24
 related: { books: [genesis], tags: [adam], topics: [] }
 watch: [Adam, Eve, Eden, historical Adam, first human]
 undated:

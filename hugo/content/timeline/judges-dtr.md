@@ -1,9 +1,9 @@
 ---
 title: "Judges, as edited into the Deuteronomistic History"
 entryKind: composition
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-22
 related: { books: [judges], tags: [], topics: [] }
 watch: [Judges, Deuteronomistic, Song of Deborah]
 critical:

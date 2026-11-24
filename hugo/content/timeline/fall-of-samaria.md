@@ -1,9 +1,9 @@
 ---
 title: "Fall of Samaria and the northern kingdom"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-22
 related: { books: [2-kings], tags: [], topics: [] }
 watch: [Samaria, northern kingdom, Assyria, Assyrian exile]
 critical:

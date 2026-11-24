@@ -1,9 +1,9 @@
 ---
 title: "Noah's Flood"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-24
 related: { books: [genesis], tags: [flood, noah], topics: [] }
 watch: [Flood, Noah, ark, global flood, Ararat, Atrahasis, Gilgamesh]
 undated:

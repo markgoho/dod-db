@@ -1,76 +1,77 @@
 # Review record for the Timeline Entry `jericho` (/timeline/#jericho; #93 shape). Not rendered.
+# Owner publish, 2026-11-24: the owner published every pilot entry on the agent passes recorded here, without the #110 independent second pass ("let's just publish now"). owner: pass records that decision, not a per-item owner check.
 # agent: the first pass from #100 (sourcing, 2026-11-22), #101 (layout) and the #136 build (2026-11-23). It does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #136 re-match, 2026-11-23: quotes re-fetched by script and matched verbatim after normalising whitespace, quotes, dashes and inline markup; Trigger Claims matched against the final Transcript line.
 # #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading). Nigro checked against the 2026-11-23 PDF text.
-review: ""
+review: 2026-11-24
 citations:
   critical/1:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Nigro offprint p. 403 (PDF page 5, under the 403 running head). Re-matched 2026-11-23 from the PDF text.",
     }
   critical/2:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Nigro p. 403, two sentences after critical/1. Nigro credits the radiocarbon dates to Bruins and van der Plicht 1995; the entry cites Nigro, who reports them. Re-matched 2026-11-23.",
     }
   critical/3:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Nigro p. 403, not p. 402 as #100 and the prototype had it: the sentence is on PDF page 5 under the 403 running head. It ties Ruha (the city destroyed in critical/1) to Jericho. Re-matched 2026-11-23.",
     }
   tradition/1:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "ABR web reprint (dated 1 May 2008) of Wood, BAR 16, no. 2 (1990); the page has no section headings, so the locator names the paragraph. Re-matched 2026-11-23.",
     }
 triggers:
   138@00:45:06:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "states: both. Substring of the 00:45:06 turn, after “Ron Wyatt's a favorite of the podcast. Yes, yes.” It goes on to “it could have been when Joseph showed up”; no hedge on the dates cut. The show credits 1550 BCE to Kenyon and “the consensus view”; the entry cites Nigro's radiocarbon 1550–1520, not Kenyon, whose own work was not read (#100, #110). Wood's 1400 matches the Tradition Date.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Dates the Middle Bronze destruction of the city, the event the show calls the walls falling. That Wood and Nigro date the same destruction is #100's inference, not Nigro's words; Nigro reports no destruction around 1400.",
     }
   split-shown:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "No split among the Scholarly or Reference sources read; Nigro is the only one that dates the destruction.",
     }
   tradition-both-sides:
-    { agent: pass, owner: "", note: "Trigger 138@00:45:06 has states: both." }
+    { agent: pass, owner: pass, note: "Trigger 138@00:45:06 has states: both." }
   tradition-named:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Holder “Associates for Biblical Research, an evangelical apologetics ministry” equals the registry `tradition:` (#110 wording).",
     }
   conditional-not-critical:
-    { agent: pass, owner: "", note: "No conditional date; Nigro's is flat." }
+    { agent: pass, owner: pass, note: "No conditional date; Nigro's is flat." }
 sources:
   nigro-2023-jericho:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       edition: "Proceedings of the 12th ICAANE, vol. 2 (Harrassowitz, 2023), pp. 399–414; DOI 10.13173/9783447119030.399; repository file named 2022",
       note: "Scholarly by venue (academic publisher, #80). Author's offprint on Sapienza's IRIS repository.",
     }
   abr-wood-1990-jericho:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       edition: "Web reprint dated 1 May 2008 of Biblical Archaeology Review 16, no. 2 (March/April 1990): 44–58",
       note: "Tradition: ABR, an evangelical apologetics ministry (#110 wording). The BAR line is printed at the foot of the page.",
     }

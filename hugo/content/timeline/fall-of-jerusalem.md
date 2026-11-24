@@ -1,9 +1,9 @@
 ---
 title: "Fall of Jerusalem to Babylon"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-22
 related: { books: [jeremiah, 2-kings], tags: [], topics: [] }
 watch: [Nebuchadnezzar, Nebuchadrezzar, fall of Jerusalem, Babylonian exile]
 critical:

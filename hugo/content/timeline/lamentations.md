@@ -1,9 +1,9 @@
 ---
 title: "Lamentations"
 entryKind: composition
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-22
 related: { books: [lamentations], tags: [], topics: [] }
 watch: [Lamentations]
 critical:

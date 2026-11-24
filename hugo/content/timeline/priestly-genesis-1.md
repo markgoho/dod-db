@@ -1,9 +1,9 @@
 ---
 title: "The Priestly source, including Genesis 1"
 entryKind: composition
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-22
 related:
   { books: [genesis], tags: [priestly-source], topics: [priestly-source] }
 watch: [Priestly source, Genesis 1, first creation account, Wellhausen]

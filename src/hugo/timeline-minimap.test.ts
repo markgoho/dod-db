@@ -345,10 +345,10 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect([...linked].filter(id => !rows.includes(id))).toEqual([]);
   });
 
-  test("without drafts, the page shows the notice and no minimap or its script", () => {
-    expect(select(published, ".timeline-minimap")).toHaveLength(0);
+  test("without drafts, the published entries get the notice, the minimap and its script", () => {
+    expect(select(published, ".timeline-minimap")).toHaveLength(1);
     expect(select(published, 'script[src*="timeline-minimap"]')).toHaveLength(
-      0,
+      1,
     );
     expect(select(published, ".scholarship-notice")).toHaveLength(1);
   });

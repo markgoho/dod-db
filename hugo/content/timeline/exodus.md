@@ -1,9 +1,9 @@
 ---
 title: "The Exodus"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-22
 related: { books: [exodus], tags: [moses], topics: [] }
 watch: [Exodus, Amenhotep, Ramesses, Merneptah]
 undated:

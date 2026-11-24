@@ -1,108 +1,109 @@
 # Review record for the Timeline Entry `deuteronomy` (/timeline/#deuteronomy; #93 shape). Not rendered.
+# Owner publish, 2026-11-24: the owner published every pilot entry on the agent passes recorded here, without the #110 independent second pass ("let's just publish now"). owner: pass records that decision, not a per-item owner check.
 # agent: the first pass from #100 (sourcing, 2026-11-22), #101 (layout) and the #136 build (2026-11-23). It does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #136 re-match, 2026-11-23: online quotes re-fetched by script and matched verbatim after normalising whitespace, quotes, dashes and inline markup; USCCB refused the script (403, twice); Trigger Claims matched against the final Transcript line.
 # #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading).
-review: ""
+review: 2026-11-24
 citations:
   critical/1:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "NABRE Deuteronomy introduction, ¶ 4. #100 matched it only against a hand transcription of Chrome output; #136 got 403 for the page and its .md alternate. #137 (2026-11-24): the markdown alternate (/bible/deuteronomy/0.md, same site) was served on a later retry and the quote matched verbatim in ¶ 4, counted from that copy as for Judges.",
     }
   critical/2:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Coogan summary ch. 10, section “Genre, Style, and Contents”. Backs the 8th-century start. Re-matched 2026-11-23.",
     }
   critical/3:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Hayes l11 ch. 3 [00:22:16] “Updated and Revised Laws According to New Ideas”. Backs the note's “late seventh century” core; the sentence before ties it to Josiah “around 622”. Re-matched 2026-11-23.",
     }
   setting/1:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "#169 (2026-11-24): Hayes l11 ch. 1 [00:00:00] “Moses as the Paradigmatic Leader of Biblical Tradition”, re-fetched today and matched verbatim. Where the book opens; gives no year, so the setting has no `from` and is never placed at the tradition's 1406.",
     }
   setting/2:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "#169 (2026-11-24): NABRE Deuteronomy introduction, ¶ 1, matched verbatim in the #137 saved .md copy (2026-11-24; today's request got 403). Backs “poised to enter Canaan”. No year.",
     }
   tradition/1:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "GotQuestions “Summary of the Book of Deuteronomy”, under “Date of Writing:”. Backs “as sermons by Moses”. Re-matched 2026-11-23.",
     }
   tradition/2:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Same section, the 1406 date. Re-matched 2026-11-23.",
     }
 triggers:
   146@00:41:37:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "states: both. Substring of the 00:41:37 turn, starting mid-sentence after “In fact, the last chapter narrates his death, but”. It goes on to the Esarhaddon treaty; no hedge cut. The show's “1200 BCE, 1400 BCE” is the traditional side (the Tradition Date has 1406 only; no Tradition source for 1200 was found, #100); “under King Josiah toward the end of the 600s BCE” is the critical side and agrees with Hayes.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Dates the book's growth as NABRE and Coogan give it (8th century onward), with the Josiah-era core in the note. precision: century; the end is open (“to the exile and beyond”), drawn to -500.",
     }
   split-shown:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Hayes dates the core to the late seventh century; NABRE and Coogan start the book in the eighth. The span covers both and the note says one source dates the core later. The show's critical date follows Hayes (#100).",
     }
   tradition-both-sides:
-    { agent: pass, owner: "", note: "Trigger 146@00:41:37 has states: both." }
+    { agent: pass, owner: pass, note: "Trigger 146@00:41:37 has states: both." }
   tradition-named:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Holder “Got Questions Ministries, an evangelical ministry” equals the registry `tradition:` (#110 wording).",
     }
   conditional-not-critical:
-    { agent: pass, owner: "", note: "No conditional date." }
+    { agent: pass, owner: pass, note: "No conditional date." }
 sources:
   nabre-deuteronomy-intro:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
       note: "Reference (#86; CONTEXT.md). The HTML page refuses scripted requests; the .md alternate was served in #137 (see critical/1).",
     }
   coogan-brief-4e-summary-ch10:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
       note: "Same textbook and edition as coogan-brief-4e-summary (confirmed in the OUP catalogue for moses-and-the-exodus); chapter 10 page. Edition confirmed for this chapter (#137, 2026-11-24): the page, fetched by script, is titled “Chapter 10 Summary - A Brief Introduction to the Old Testament 4e Student Resources”. The date and ISBN rest on the OUP catalogue read in a browser for moses-and-the-exodus; a scripted catalogue fetch got 202 with an empty body.",
     }
   hayes-rlst145-l11:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       edition: "Open Yale RLST 145, recorded Fall 2006",
       note: "Reference (introductory course, university-hosted transcript, #86). Lecture 11 “On the Steps of Moab: Deuteronomy”.",
     }
   gotquestions-book-of-deuteronomy:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       edition: "Unsigned, undated web page",
       note: "Tradition (ruled in #86). Holder wording from #110.",
     }

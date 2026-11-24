@@ -1,69 +1,70 @@
 # Review record for the Timeline Entry `lamentations` (/timeline/#lamentations; #93 shape). Not rendered.
+# Owner publish, 2026-11-24: the owner published every pilot entry on the agent passes recorded here, without the #110 independent second pass ("let's just publish now"). owner: pass records that decision, not a per-item owner check.
 # agent: the first pass from #85 (sourcing, 2026-11-22), #101 (layout) and the #134 build (2026-11-23). It does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #134 re-match, 2026-11-23: online quotes re-fetched by script and matched verbatim after normalising whitespace, quotes and dashes; USCCB refused the script (403); Trigger Claims matched against the final Transcript line.
 # #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading).
-review: ""
+review: 2026-11-24
 citations:
   critical/1:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "NABRE Lamentations introduction, ¶ 1. #85 read it through an automated Chrome session, then script-matched; #134 got 403. #137 (2026-11-24): the markdown alternate (/bible/lamentations/0.md, same site) was served on a retry and the quote matched verbatim in ¶ 1, counted from that copy as for Judges.",
     }
   critical/2:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "NABRE Lamentations introduction, ¶ 1, earlier in the same paragraph as critical/1. Backs the note's authorship sentence. Matched verbatim in the .md alternate (#137, 2026-11-24).",
     }
   critical/3:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Coogan summary ch. 20, section “Lamentations”. Quote ends without the sentence's full stop (“… not the author”), as matched. Re-matched 2026-11-23.",
     }
 triggers:
   36@00:35:26:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "states: critical. Jacob Wright (Guest Speaker). Substring of the 00:35:26 turn, from “The book of Lamentations”; the turn's earlier sentences are about denying defeat. “It continued to be written for centuries” is wider than the entry's “After 587”; left unexplained (#86).",
     }
 rules:
   critical-scope:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "“After 587 BCE” is worded from NABRE's “survivors of the catastrophe of 587 B.C.”; no end year, so open. Authorship note follows both sources.",
     }
-  split-shown: { agent: pass, owner: "", note: "No split." }
+  split-shown: { agent: pass, owner: pass, note: "No split." }
   tradition-both-sides:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "No Tradition Date; no trigger has states: tradition.",
     }
   tradition-named:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "No Tradition sources cited. The note's “traditionally ascribed to Jeremiah” is the Reference sources' own wording about authorship, not a Tradition Date.",
     }
   conditional-not-critical:
-    { agent: pass, owner: "", note: "No conditional date." }
+    { agent: pass, owner: pass, note: "No conditional date." }
 sources:
   nabre-lamentations-intro:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
       note: "Reference (#86; CONTEXT.md).",
     }
   coogan-brief-4e-summary-ch20:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
       note: "Same textbook and edition as coogan-brief-4e-summary (confirmed in the OUP catalogue for moses-and-the-exodus); chapter 20 page. Edition confirmed for this chapter (#137, 2026-11-24): the page, fetched by script, is titled “Chapter 20 Summary - A Brief Introduction to the Old Testament 4e Student Resources”. The date and ISBN rest on the OUP catalogue read in a browser for moses-and-the-exodus; a scripted catalogue fetch got 202 with an empty body.",
     }

@@ -1,68 +1,69 @@
 # Review record for the Timeline Entry `isaiah-56-66` (/timeline/#isaiah-56-66; #93 shape). Not rendered.
+# Owner publish, 2026-11-24: the owner published every pilot entry on the agent passes recorded here, without the #110 independent second pass ("let's just publish now"). owner: pass records that decision, not a per-item owner check.
 # agent: the first pass from #85 (sourcing, 2026-11-22), #101 (layout) and the #136 build (2026-11-23). It does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #136 re-match, 2026-11-23: quotes re-fetched by script and matched verbatim after normalising whitespace, quotes, dashes and inline markup (USCCB answered the Isaiah request); Trigger Claims matched against the final Transcript line.
 # #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading). NABRE Isaiah checked against the 2026-11-23 saved copy (403 today).
-review: ""
+review: 2026-11-24
 citations:
   critical/1:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Coogan summary ch. 22, section “Third Isaiah”. The sentence starts “No specific historical facts are presented in the text to aid with dating, so”; the quote starts after “so”. Re-matched 2026-11-23.",
     }
   critical/2:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "NABRE Isaiah introduction, ¶ 8. Script-fetched and matched 2026-11-23. Backs “Postexilic” in the note.",
     }
 triggers:
   43@00:45:20:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "states: critical. End of the 00:45:20 turn, after “were probably composed after the Babylonian exile.” The show's 520 is for Second Isaiah; for Third Isaiah it says “even later than that, probably in the Persian period”, consistent with after 515.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "Dates chapters 56–66 only, as both sources do.",
     }
   split-shown:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "No split: Coogan says after 515, NABRE postexilic.",
     }
   tradition-both-sides:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "No Tradition Date; no trigger has states: tradition.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    { agent: pass, owner: pass, note: "No Tradition sources cited." }
   conditional-not-critical:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       note: "No conditional date; Coogan's “most likely” is kept in the note.",
     }
 sources:
   coogan-brief-4e-summary-ch22:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
       note: "Same textbook and edition as coogan-brief-4e-summary (confirmed in the OUP catalogue for moses-and-the-exodus); chapter 22 page. Edition confirmed for this chapter (#137, 2026-11-24): the page, fetched by script, is titled “Chapter 22 Summary - A Brief Introduction to the Old Testament 4e Student Resources”. The date and ISBN rest on the OUP catalogue read in a browser for moses-and-the-exodus; a scripted catalogue fetch got 202 with an empty body.",
     }
   nabre-isaiah-intro:
     {
       agent: pass,
-      owner: "",
+      owner: pass,
       edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
       note: "Reference (#86; CONTEXT.md).",
     }

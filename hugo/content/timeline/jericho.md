@@ -1,9 +1,9 @@
 ---
 title: "Destruction of Canaanite Jericho"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-22
 related: { books: [joshua], tags: [], topics: [] }
 watch: [Jericho, walls of Jericho, Kenyon, Bryant Wood]
 critical:
