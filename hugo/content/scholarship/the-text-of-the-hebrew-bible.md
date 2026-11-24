@@ -1,7 +1,6 @@
 ---
 title: "The Text of the Hebrew Bible"
 dek: "What the Masoretic Text, the Septuagint and the Dead Sea Scrolls are, how they differ, and which text modern translations follow."
-draft: true
 core: forms
 sourcesRead: 2026-11-24
 related:
