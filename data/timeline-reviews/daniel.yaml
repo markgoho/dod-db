@@ -23,6 +23,18 @@ citations:
       owner: "",
       note: "Hayes l23 ch. 5 [00:35:21], the sentence before critical/2. Backs the note's “perhaps the end of the third century” for chapters 1–6. Re-matched 2026-11-23.",
     }
+  setting/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#169 (2026-11-24): NABRE Daniel introduction, ¶ 1, re-fetched by script today (the .md alternate answered) and matched verbatim at ¶ 1. Backs the exile and the end year 538 for the hero; NABRE's “allegedly” keeps it the narrative's claim, which is what a setting is. Gives no start year.",
+    }
+  setting/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "#169 (2026-11-24): Hayes l23 ch. 5 [00:35:21], re-fetched today and matched verbatim. Source of “sixth century”, so from -600 / to -501 are the century's bounds, not dates the text gives. Hayes scopes this to chapters 1–6; NABRE ¶ 1 (setting/1) places the hero, the whole book's narrator, in the same exile.",
+    }
   tradition/1:
     {
       agent: pass,

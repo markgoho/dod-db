@@ -61,6 +61,10 @@
         {{- $verdict -}}
       </p>
     {{ end }}
+    {{ with $p.setting }}
+      {{- /* The period the text narrates (#167 §4); it never places the entry. */ -}}
+      <p class="timeline-entry__setting">Set in {{ .display }}</p>
+    {{ end }}
     {{ with $p.seeAlso }}
       {{ with index $.byId . }}
         <p class="timeline-entry__note">
@@ -78,6 +82,10 @@
       <div class="scholarship-block__body timeline-entry__body">
         {{ with $p.undated }}<p>{{ .statement }}</p>{{ end }}
         {{ partial "timeline-cites.html" (dict "cites" (or $c $p.undated).cites "shortCites" .shortCites) }}
+        {{ with $p.setting }}
+          <p class="timeline-entry__label">Set in {{ .display }}</p>
+          {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites) }}
+        {{ end }}
         {{ with $t }}
           <p class="timeline-entry__label">{{ $holds }}</p>
           {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites) }}

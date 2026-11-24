@@ -23,6 +23,18 @@ citations:
       owner: "",
       note: "Hayes l11 ch. 3 [00:22:16] “Updated and Revised Laws According to New Ideas”. Backs the note's “late seventh century” core; the sentence before ties it to Josiah “around 622”. Re-matched 2026-11-23.",
     }
+  setting/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "#169 (2026-11-24): Hayes l11 ch. 1 [00:00:00] “Moses as the Paradigmatic Leader of Biblical Tradition”, re-fetched today and matched verbatim. Where the book opens; gives no year, so the setting has no `from` and is never placed at the tradition's 1406.",
+    }
+  setting/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "#169 (2026-11-24): NABRE Deuteronomy introduction, ¶ 1, matched verbatim in the #137 saved .md copy (2026-11-24; today's request got 403). Backs “poised to enter Canaan”. No year.",
+    }
   tradition/1:
     {
       agent: pass,
