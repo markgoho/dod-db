@@ -25,7 +25,7 @@
   {{ $placed := slice }}
   {{ $unplaced := slice }}
   {{ $years := slice }}
-  {{ range $entries }}
+  {{ range $entry := $entries }}
     {{ $c := .Params.critical }}
     {{ with .Params.tradition }}
       {{ $years = $years | append .from (.to | default .from) }}
@@ -36,7 +36,7 @@
       {{ with $c.anchor }}
         {{ $a := index $byId . }}
         {{ if not $a }}
-          {{ errorf "Timeline: %s anchors to %q, which is not a published entry" $.File.Path . }}
+          {{ errorf "Timeline: %s anchors to %q, which is not a published entry" $entry.File.Path . }}
         {{ end }}
         {{ $from = $a.Params.critical.from }}
         {{ $to = $a.Params.critical.to }}

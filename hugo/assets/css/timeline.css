@@ -18,6 +18,11 @@
   gap: var(--space-s);
 }
 
+/* The date line sits under the notice in the provenance panel, on the notice's inset. */
+.scholarship-provenance > .scholarship-date-line {
+  padding: 0 var(--space-s) var(--space-s);
+}
+
 .timeline-section-intro {
   color: var(--color-text-muted);
   font-size: var(--step--1);
@@ -182,6 +187,7 @@
   mask-image: linear-gradient(
     to right,
     var(--tan-900) var(--space-3xs),
+    var(--tan-900) calc(100% - var(--space-xl)),
     transparent
   );
 }
@@ -204,6 +210,7 @@
     to right,
     transparent,
     var(--tan-900) var(--space-2xs),
+    var(--tan-900) calc(100% - var(--space-xl)),
     transparent
   );
 }
