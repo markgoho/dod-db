@@ -8,7 +8,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 5 [00:26:43]. “many scholars have suggested”: #86 reasons rule met by el/2 (Exod 6:2–4, the passage Hayes gives in the same paragraph) and by resemblance/1–6 (her list of El traits and El names that follows). Statement says “suggested”, never “think” or “agree”. Second pass 2026-11-23: verified.",
+      note: "Hayes l7 ch. 5 [00:26:43]. “many scholars have suggested”: #86 reasons rule met by el/2 (Exod 6:2–4, the passage Hayes gives in the same paragraph) and by resemblance/1–6 (her list of El traits and El names that follows). Statement says “suggested”, never “think” or “agree”. Second pass: short answer narrowed from “Many scholars suggest the Bible preserves a memory…” to “…two of the Bible's sources preserve a memory…”, because Hayes's “many scholars” sentence is about P and E only and the same paragraph says J contradicts them. Second pass 2026-11-23: verified.",
     }
   el/2:
     {
@@ -140,7 +140,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 6, same paragraph. Second pass 2026-11-23: verified.",
+      note: "Hayes l7 ch. 6, same paragraph. The statement's “labeling them Canaanite” rests also on Hayes's later ch. 6 sentence “these elements would be labeled Canaanite”, not on this quote alone. Second pass 2026-11-23: verified.",
     }
   convergence/4:
     {
@@ -273,7 +273,7 @@ triggers:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:46:10–00:49:23. Quote starts mid-sentence after “Now, their use in the Hebrew Bible probably does not, but”. No source read gives the Deut 32:8–9 reading, so the page has no statement on it; gap left unexplained (#86). Second pass 2026-11-23: verified.",
+      note: "Read 00:46:10–00:49:23. Quote starts mid-sentence after “Now, their use in the Hebrew Bible probably does not, but”. No source read gives the Deut 32:8–9 reading, so the page has no statement on it; gap left unexplained (#86). Second pass re-read 00:44:35–00:49:23 (Bene Elohim discussion; Beecher's question at 00:47:09 sets the subject as Yahweh's relation to El). Second pass 2026-11-23: verified.",
     }
 rules:
   publish-rule:
@@ -343,7 +343,7 @@ leads:
   - "Joseph Blenkinsopp (2008), four lines of evidence for the Midianite Hypothesis, known only through Fleming 2021, p. 8; not read."
 uncited:
   - "Hayes l7 ch. 6 [00:38:39]: “The Canaanite god El was, from the biblical text, the God of Israel's earliest ancestors.” The candidate's core-claim passage (#124). Not cited: it opens Hayes's account of Smith's convergence model, so el cites Hayes's own ch. 5 and ch. 6 statements (el/1, el/4, el/5) instead."
-  - "Hayes l8 ch. 2 [00:06:51]: “The older god El, the sky god, was replaced by the younger storm god, Baal”. Hayes relaying Coogan (2006); the only passage read that names El as the sky god. Not cited, so el doesn't equate the Coogan ch. 6 summary's sky god with El."
+  - "Hayes l8 ch. 2 [00:06:51]: “The older god El, the sky god, was replaced by the younger storm god, Baal”. Hayes relaying Coogan (2006). (Second pass correction: not the only passage read naming El as the sky god; l7 ch. 5 also says “the sky god, El”, in Hayes's own account of the Ugarit texts.) Not cited, so el doesn't equate the Coogan ch. 6 summary's sky god with El."
   - "Fleming 2021, p. 4: “The Egyptian evidence is decisive to my analysis: the name Yhwȝ designates a Shasu group, a Yhwȝ-people.” Fleming's own reading of the Egyptian name; not cited, since the page states only that the texts name a Yhwȝ in Shasu-land."
   - "Fleming 2021, p. 6: “If the Bible’s recollection of Yahweh in the southern wilderness must be explained by early Jewish ruminations that offer no threads of real religious history, there is no reason to seek the god’s origins anywhere but the land of Israel itself, even if no evidence survives.” Conditional; would back a statement of the Berlin hypothesis only if worded as a conditional and attributed."
   - "Fleming 2021, p. 8: Blenkinsopp's four lines of evidence (Moses and Midian in Exod 2 and 18; Yahweh from the south in old poetry such as Judges 5; Egyptian Yhwȝ texts; Cain as Kenite ancestor). Fleming relaying another scholar; south/3 gives Fleming's own reasons instead."

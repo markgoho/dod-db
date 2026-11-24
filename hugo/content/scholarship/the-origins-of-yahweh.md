@@ -29,7 +29,7 @@ statements:
   - id: el
     group: "El and Israel's ancestors"
     question: "Did Israel's ancestors worship El before Yahweh?"
-    short: "Many scholars suggest the Bible preserves a memory of a time when they did."
+    short: "Many scholars have suggested that two of the Bible's sources preserve a memory of a time when they did."
     text: "Many scholars have suggested that two of the Pentateuch's sources, P and E, preserve a memory of a time when Israel worshipped the Canaanite god El. Christine Hayes's Yale lecture points to Exodus 6:2–4, assigned to P, where God tells Moses that he appeared to Abraham, Isaac and Jacob as El Shaddai but did not make himself known to them by his name Yahweh. The J source, by contrast, has the earliest humans worship Yahweh by name from Genesis 4:26. The patriarchs, Hayes says, seem to have worshipped El, and P and E insist that they worshipped God as El and that God revealed himself as Yahweh at the time of the Exodus. The chapter summary for Coogan and Chapman's introductory textbook likewise says Genesis appears to preserve a tradition from the period when Israel's ancestors prayed to El, the Canaanite god worshipped by Israel's neighbors. Its summary of the Exodus chapter notes that the sources all present the God of the ancestors and the God of the Exodus as continuous, but reads God's first revealing himself as Yahweh in Exodus as an echo of change, recalling a time when the Israelites switched their loyalties from the worship of the sky god to the worship of the storm-god."
     cites:
       - source: hayes-rlst145-l7
