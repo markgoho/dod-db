@@ -1,0 +1,70 @@
+{{- /*
+  PROTOTYPE switcher bar (#173 item 3). Unlike prototype/timeline-vertical's
+  switcher, which toggled sibling [data-variant] copies, this renders the
+  Timeline once and sets data-lanes on the target: three copies would repeat
+  every #entry id and the minimap's view-timeline. Keeps ?variant= in the URL
+  via replaceState and cycles with ← / →. Callers gate it on hugo.IsServer.
+  Takes dict:
+  target    CSS selector of the element that gets data-lanes
+  variants  slice of (slice key name)
+  */
+-}}
+<nav
+  class="proto-switcher"
+  aria-label="Prototype variant switcher"
+  data-target="{{ .target }}"
+  data-variants="{{ jsonify .variants }}">
+  <button
+    type="button"
+    class="proto-switcher__btn"
+    data-step="-1"
+    aria-label="Previous variant">
+    ←
+  </button>
+  <span class="proto-switcher__label" aria-live="polite"></span>
+  <button
+    type="button"
+    class="proto-switcher__btn"
+    data-step="1"
+    aria-label="Next variant">
+    →
+  </button>
+</nav>
+<script>
+  (() => {
+    const nav = document.querySelector(".proto-switcher");
+    const target = document.querySelector(nav.dataset.target);
+    const variants = JSON.parse(nav.dataset.variants);
+    const keys = variants.map(([k]) => k);
+    const label = nav.querySelector(".proto-switcher__label");
+    let current = new URL(location.href).searchParams.get("variant");
+    if (!keys.includes(current)) current = keys[0];
+    const show = key => {
+      current = key;
+      const i = keys.indexOf(key);
+      target.dataset.lanes = key;
+      label.textContent = `${key} (${variants[i][1]}) · ${i + 1}/${keys.length}`;
+      const url = new URL(location.href);
+      url.searchParams.set("variant", key);
+      history.replaceState(null, "", url);
+    };
+    const step = n =>
+      show(keys[(keys.indexOf(current) + n + keys.length) % keys.length]);
+    for (const b of nav.querySelectorAll(".proto-switcher__btn")) {
+      b.addEventListener("click", () => step(Number(b.dataset.step)));
+    }
+    document.addEventListener("keydown", e => {
+      if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+      if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+      const t = e.target;
+      if (
+        t instanceof Element &&
+        t.closest("input, textarea, select, [contenteditable], pagefind-modal")
+      )
+        return;
+      e.preventDefault();
+      step(e.key === "ArrowLeft" ? -1 : 1);
+    });
+    show(current);
+  })();
+</script>

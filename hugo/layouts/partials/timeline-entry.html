@@ -55,27 +55,32 @@
       {{ cond (eq $p.entryKind "event") "Event" "Composition" }}
     </p>
     <h3 class="timeline-entry__title">{{ $e.Title }}</h3>
-    {{ with $c }}
-      <p class="timeline-entry__date">{{ .display }}</p>
-      {{ with .note }}<p class="timeline-entry__note">{{ . }}</p>{{ end }}
-    {{ else }}
-      <p class="timeline-entry__date timeline-entry__date--verdict">
-        {{- $verdict -}}
-      </p>
-    {{ end }}
-    {{ with $p.setting }}
-      {{- /* The period the text narrates (#167 §4); it never places the entry. */ -}}
-      <p class="timeline-entry__setting">{{ $labels.setIn }} {{ .display }}</p>
-    {{ end }}
-    {{ with $p.seeAlso }}
-      {{ with index $.byId . }}
-        <p class="timeline-entry__note">
-          For when the account was written, see
-          <a href="#{{ .File.ContentBaseName }}">{{ .Title }}</a>.
+    {{- /* PROTOTYPE (#173 item 3): a display: contents wrapper, so variant B can move the date and notes across the axis. */}}
+    <div class="timeline-entry__more">
+      {{ with $c }}
+        <p class="timeline-entry__date">{{ .display }}</p>
+        {{ with .note }}<p class="timeline-entry__note">{{ . }}</p>{{ end }}
+      {{ else }}
+        <p class="timeline-entry__date timeline-entry__date--verdict">
+          {{- $verdict -}}
         </p>
       {{ end }}
-    {{ end }}
-
+      {{ with $p.setting }}
+        {{- /* The period the text narrates (#167 §4); it never places the entry. */ -}}
+        <p class="timeline-entry__setting">
+          {{ $labels.setIn }}
+          {{ .display }}
+        </p>
+      {{ end }}
+      {{ with $p.seeAlso }}
+        {{ with index $.byId . }}
+          <p class="timeline-entry__note">
+            For when the account was written, see
+            <a href="#{{ .File.ContentBaseName }}">{{ .Title }}</a>.
+          </p>
+        {{ end }}
+      {{ end }}
+    </div>
 
     <details class="scholarship-block timeline-entry__sources">
       <summary class="disclosure-summary">

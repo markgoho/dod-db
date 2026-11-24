@@ -1,0 +1,238 @@
+/*
+  PROTOTYPE (#173 item 3), dev server only: three answers to the mostly empty
+  tradition lane, on the real /timeline/, switched by ?variant= (the switcher
+  sets data-lanes on .timeline-minimap-layout). "now" is trunk unchanged.
+
+  Every variant rule sits inside the wide container condition: a container
+  query adds no specificity, so an unguarded [data-lanes] rule would beat
+  timeline.css's narrow (< 44rem) rules. Below 44rem every variant is the
+  trunk's stacked layout. Without :has() or subgrid a browser keeps the
+  trunk's two lanes (basic fallback; Chrome is the target).
+*/
+
+/* Trunk: a wrapper the prototype added round the date and notes; it is not a box. */
+.timeline-entry__more {
+  display: contents;
+}
+
+@container timeline (width >= 44rem) {
+  /* ---------- A: asymmetric lanes, the axis off-centre (5 : 2) ---------- */
+
+  [data-lanes="A"] .timeline-lanes {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 2fr);
+  }
+
+  [data-lanes="A"] .timeline-entry {
+    grid-template-columns: minmax(0, 5fr) var(--space-xl) minmax(0, 2fr);
+  }
+
+  [data-lanes="A"] .timeline-axis {
+    --axis-at: calc((100% - var(--space-xl)) * 5 / 7 + var(--space-xl) / 2);
+  }
+
+  /* The era pill follows the axis instead of the centre. */
+  [data-lanes="A"] .timeline-era__label {
+    justify-self: start;
+    margin-inline-start: var(--axis-at);
+    translate: -50% 0;
+  }
+
+  [data-lanes="A"] .timeline-entry__tradition {
+    max-inline-size: none;
+  }
+
+  /*
+    ---------- B: a row with no tradition drops the lane ----------
+    The scholarly card spans both lanes and the axis; its columns are the
+    row's (subgrid), so the axis column is a gutter inside the card and the
+    node stays on it. Title left of the axis, date and notes right of it.
+  */
+
+  [data-lanes="B"]
+    .timeline-axis
+    .timeline-entry:not(:has(> .timeline-entry__tradition))
+    > .timeline-entry__card {
+    column-gap: 0;
+    grid-column: 1 / -1;
+    /* Same-cascade fallback, then subgrid. */
+    grid-template-columns: minmax(0, 1fr) var(--space-xl) minmax(0, 1fr);
+    grid-template-columns: subgrid;
+    grid-template-rows: auto 1fr auto;
+    /* Positioned, so it paints over the axis line; the node, later in tree order, paints over it. */
+    position: relative;
+  }
+
+  [data-lanes="B"]
+    .timeline-axis
+    .timeline-entry:not(:has(> .timeline-entry__tradition))
+    > .timeline-entry__card
+    > :is(.timeline-entry__kind, .timeline-entry__title) {
+    grid-column: 1;
+  }
+
+  [data-lanes="B"]
+    .timeline-axis
+    .timeline-entry:not(:has(> .timeline-entry__tradition))
+    .timeline-entry__title {
+    align-self: start;
+  }
+
+  [data-lanes="B"]
+    .timeline-axis
+    .timeline-entry:not(:has(> .timeline-entry__tradition))
+    .timeline-entry__more {
+    align-content: start;
+    display: grid;
+    gap: var(--space-4xs);
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+
+  [data-lanes="B"]
+    .timeline-axis
+    .timeline-entry:not(:has(> .timeline-entry__tradition))
+    .timeline-entry__sources {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  /* No connector: the node sits inside the card's gutter. */
+  [data-lanes="B"]
+    .timeline-axis
+    .timeline-entry:not(:has(> .timeline-entry__tradition))
+    > .timeline-entry__node::before {
+    display: none;
+  }
+
+  /*
+    ---------- C: margin note ----------
+    No tradition lane. The axis runs down the left of one scholarly column
+    at the prose measure; a tradition is a narrow hatched note in the margin,
+    tied by a dashed line to its card. The column and margin are centred
+    in the content width; rows without a tradition leave only page margin.
+  */
+
+  [data-lanes="C"] .timeline-axis,
+  [data-lanes="C"] .timeline-lanes {
+    --c-columns: var(--space-l) minmax(0, var(--content-max-width-prose))
+      var(--space-s) minmax(0, var(--content-max-width-sidebar));
+
+    inline-size: 100%;
+    justify-self: center;
+    max-inline-size: calc(
+      var(--space-l) + var(--content-max-width-prose) + var(--space-s) +
+        var(--content-max-width-sidebar)
+    );
+  }
+
+  [data-lanes="C"] .timeline-axis {
+    --axis-at: calc(var(--space-l) / 2);
+  }
+
+  [data-lanes="C"] .timeline-lanes {
+    gap: 0;
+    grid-template-columns: var(--c-columns);
+  }
+
+  [data-lanes="C"] .timeline-lanes > :first-child {
+    grid-column: 2;
+    text-align: start;
+  }
+
+  [data-lanes="C"] .timeline-lanes > :last-child {
+    color: var(--color-text-muted);
+    grid-column: 4;
+  }
+
+  [data-lanes="C"] .timeline-era__label {
+    justify-self: start;
+    margin-inline-start: var(--axis-at);
+    translate: -50% 0;
+  }
+
+  [data-lanes="C"] .timeline-entry {
+    grid-template-columns: var(--c-columns);
+  }
+
+  [data-lanes="C"] .timeline-entry__node {
+    grid-column: 1;
+  }
+
+  [data-lanes="C"] .timeline-entry__card {
+    grid-column: 2;
+  }
+
+  [data-lanes="C"] .timeline-entry__node::before {
+    inline-size: calc((var(--space-l) - var(--node-size)) / 2);
+    inset-inline: 100% auto;
+  }
+
+  [data-lanes="C"] .timeline-entry--paired > .timeline-entry__node::after {
+    display: none;
+  }
+
+  [data-lanes="C"] .timeline-entry__tradition {
+    grid-column: 4;
+    justify-self: stretch;
+    max-inline-size: none;
+    position: relative;
+  }
+
+  /* A note, not a card: one step smaller than the trunk's tradition card. */
+  [data-lanes="C"] .timeline-entry__tradition .timeline-entry__label {
+    font-size: var(--step--2);
+  }
+
+  [data-lanes="C"] .timeline-entry__date--tradition {
+    font-size: var(--step-0);
+  }
+
+  /* The tie from the card's edge to the note, level with the node. */
+  [data-lanes="C"] .timeline-entry__tradition::before {
+    border-block-start: var(--border-width-sm) dashed var(--tan-500);
+    content: "";
+    inline-size: var(--space-s);
+    inset-block-start: calc(var(--space-xs) + var(--node-size) / 2);
+    inset-inline-end: 100%;
+    position: absolute;
+  }
+}
+
+/* ---------- Prototype switcher (not part of any design) ---------- */
+
+.proto-switcher {
+  align-items: center;
+  background: var(--tan-900);
+  border: var(--border-width-sm) solid var(--color-accent);
+  border-radius: var(--space-l);
+  box-shadow: 0 var(--space-3xs) var(--space-s)
+    color-mix(in srgb, var(--tan-900) 40%, transparent);
+  color: var(--color-accent);
+  display: flex;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  gap: var(--space-2xs);
+  inset-block-end: var(--space-s);
+  inset-inline-start: 50%;
+  max-inline-size: calc(100% - 2 * var(--space-s));
+  padding: var(--space-4xs) var(--space-2xs);
+  position: fixed;
+  translate: -50% 0;
+  z-index: var(--z-index-toast);
+}
+
+.proto-switcher__btn {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: var(--space-4xs) var(--space-2xs);
+}
+
+.proto-switcher__label {
+  min-inline-size: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

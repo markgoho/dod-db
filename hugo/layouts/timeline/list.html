@@ -1,5 +1,9 @@
 {{ define "head-styles" }}
   {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") (resources.Get "css/timeline-minimap.css") | resources.Concat "css/timeline-list.css" | resources.Minify }}
+  {{/* PROTOTYPE (#173 item 3): lane variants, dev server only. */}}
+  {{ if hugo.IsServer }}
+    {{ $inlineCSS = slice $inlineCSS (resources.Get "css/prototype-timeline-lanes.css") | resources.Concat "css/timeline-list-proto.css" }}
+  {{ end }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
@@ -117,6 +121,17 @@
           </ol>
         </section>
       </div>
+      {{ if hugo.IsServer }}
+        {{ partial "prototype/variant-switcher.html" (dict
+          "target" ".timeline-minimap-layout"
+          "variants" (slice
+          (slice "A" "Asymmetric lanes")
+          (slice "B" "Lane collapses when empty")
+          (slice "C" "Margin note")
+          (slice "now" "Current trunk")
+          ))
+        }}
+      {{ end }}
     {{ end }}
 
     {{ with $unplaced }}
