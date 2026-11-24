@@ -345,7 +345,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Burnette-Bletsch para. 10. Statement says “is missing about two hundred of its pages”; the controversy over how the codex was obtained is not on the page. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Davidson's c. 925 for the Aleppo Codex (old oldest/10) cut; Aleppo dates are now Burnette-Bletsch c. 920 (here) and Breed 10th century (oldest/7). Renumbered from oldest/7.",
+      note: "Burnette-Bletsch para. 10. Statement says “is missing about two hundred of its pages”; the controversy over how the codex was obtained is not on the page. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Davidson's c. 925 for the Aleppo Codex (old oldest/10) cut; Aleppo dates are now Burnette-Bletsch c. 920 (oldest/5) and Breed 10th century (oldest/7). Renumbered from oldest/7.",
     }
   oldest/7:
     {
@@ -363,7 +363,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Burnette-Bletsch para. 10. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Quote extended to the full sentence (same as oldest/5); statement now calls Leningrad the oldest complete Masoretic manuscript. Short cut from “…which the Catholic Church and most Protestant churches use as their source text; many translations are based on its Leningrad Codex.” to “Mainly the Masoretic Text, in Jewish Bibles and in most Protestant and Catholic translations.”: the Leningrad clause was Burnette-Bletsch alone once Davidson was dropped (stays in the statement, attributed). Mainly the MT: Breed (translations/2), Burnette-Bletsch (here) and Thomas (translations/4); Jewish Bibles: Burnette-Bletsch, with Breed's “authoritative … in most synagogues” (mt/5). Renumbered from translations/3.",
+      note: "Burnette-Bletsch para. 10. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Quote extended to the full sentence (same as oldest/5); statement now calls Leningrad the oldest complete Masoretic manuscript. Short cut from “…which the Catholic Church and most Protestant churches use as their source text; many translations are based on its Leningrad Codex.” to “Mainly the Masoretic Text, the source for many Catholic and Protestant translations.”: the Leningrad clause was Burnette-Bletsch alone once Davidson was dropped (stays in the statement, attributed); “Jewish Bibles” (Burnette-Bletsch alone) and “most … Catholic” (Breed's “most” is Protestant churches; Thomas “at times, Catholic”) also left out. Carried by Breed (translations/2, Catholic Church and most Protestant churches), Burnette-Bletsch (here, many Christian Old Testaments) and Thomas (translations/4, Protestant and at times Catholic). Renumbered from translations/3.",
     }
   translations/2:
     {
@@ -469,21 +469,21 @@ sources:
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
-      note: "New entry, same course and author as the existing Hayes entries (counts once with them). Reference (introductory course, university-hosted transcript, #86). Page title “Lecture 1 - The Parts of the Whole”. Second pass 2026-11-24: re-fetched; class, author and edition verified.",
+      note: "New entry, same course and author as the existing Hayes entries (counts once with them). Reference (introductory course, university-hosted transcript, #86). Page title “Lecture 1 - The Parts of the Whole”. Second pass 2026-11-24: re-fetched; author, page title and ch. 3 heading [00:29:33] verified; class per #86, as the existing Hayes entries. “Fall 2006” is not on the lecture page and was not re-checked (course page not fetched).",
     }
   hayes-rlst145-l18:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
-      note: "New entry. Page title “Lecture 18 - Literary Prophecy: Micah, Zephaniah, Nahum and Habbakuk”; ch. 6 is on Jeremiah. Same author as l1. Second pass 2026-11-24: re-fetched; class, author and edition verified.",
+      note: "New entry. Page title “Lecture 18 - Literary Prophecy: Micah, Zephaniah, Nahum and Habbakuk”; ch. 6 is on Jeremiah. Same author as l1. Second pass 2026-11-24: re-fetched; author, page title and ch. 6 heading [00:24:52] verified; “Fall 2006” not re-checked (course page not fetched).",
     }
   coogan-brief-4e-summary-ch1:
     {
       agent: pass,
       owner: "",
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756 (as for the other Coogan summaries)",
-      note: "New entry; chapter 1 page of the same companion site. Reference (publisher summary, #86). Second pass 2026-11-24: re-fetched; class, author and edition verified.",
+      note: "New entry; chapter 1 page of the same companion site. Reference (publisher summary, #86). Second pass 2026-11-24: re-fetched; section headings verified. Edition, date and ISBN come from the OUP catalogue, which this pass did not fetch.",
     }
   breed-bo-earliest-versions:
     {
@@ -497,35 +497,35 @@ sources:
       agent: pass,
       owner: "",
       edition: "Bible Odyssey; page datePublished 2022-12-14 (year left null, see breed-bo-earliest-versions)",
-      note: "New entry. Reference. Author is professor of biblical studies at Eastern University (page bio). Second pass 2026-11-24: re-fetched; class, author and edition verified.",
+      note: "New entry. Reference. Author is professor of biblical studies at Eastern University (page bio). Second pass 2026-11-24: re-fetched; byline and bio verified; page shows December 14, 2022.",
     }
   thomas-bo-translation-septuagint:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey; page datePublished 2022-12-14 (year left null)",
-      note: "New entry. Reference. Question-and-answer article; author is associate professor of religion at California Lutheran University (page bio). Second pass 2026-11-24: re-fetched; class, author and edition verified.",
+      note: "New entry. Reference. Question-and-answer article; author is associate professor of religion at California Lutheran University (page bio). Second pass 2026-11-24: re-fetched; byline and bio verified; page shows December 14, 2022.",
     }
   tzoref-bo-dss-hebrew-bible:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey; page datePublished 2017-06-20, matching the date shown on the page",
-      note: "New entry. Reference. Author led the research team for the IAA Leon Levy Dead Sea Scrolls Digital Library (page bio). Cited once, as an example. Second pass 2026-11-24: re-fetched; class, author and edition verified.",
+      note: "New entry. Reference. Author led the research team for the IAA Leon Levy Dead Sea Scrolls Digital Library (page bio). Cited once, as an example. Second pass 2026-11-24: re-fetched; byline, bio and June 20, 2017 verified.",
     }
   davies-ej-dead-sea-scrolls:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica, sections signed “[Philip Davies (2nd ed.)]”; the 2nd ed. is the 2007 edition, year not on the page so left null",
-      note: "New entry. Reference (signed entry in a reference encyclopedia). The Encyclopedia.com page carries three signatures: Jacob Licht (1st ed.) after “The Qumran Discoveries”, Philip Davies (2nd ed.) after “The Scrolls and Khirbat Qumran” and after “The Copper Scroll”, and F. F. Bruce after “Khirbat Mird”. Every cited passage is in “Biblical Manuscripts” and its subsections, between the two Davies signatures, so it is Davies's whichever way the signatures attach. Only Davies registered. Second pass 2026-11-24: re-fetched; class, author and edition verified.",
+      note: "New entry. Reference (signed entry in a reference encyclopedia). The Encyclopedia.com page carries three signatures: Jacob Licht (1st ed.) after “The Qumran Discoveries”, Philip Davies (2nd ed.) after “The Scrolls and Khirbat Qumran” and after “The Copper Scroll”, and F. F. Bruce after “Khirbat Mird”. Every cited passage is in “Biblical Manuscripts” and its subsections, between the two Davies signatures, so it is Davies's whichever way the signatures attach. Only Davies registered. Second pass 2026-11-24: re-fetched; the four signatures and the placement of every cited passage between the two Davies signatures verified.",
     }
   dotan-ej-masorah:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica, entry signed “[Aron Dotan (2nd ed.)]” at its end; year left null",
-      note: "New entry. Reference. Long entry; only §2.2.2, §6.1.3 and §6.2.3 cited. Hebrew script renders as “?” on Encyclopedia.com; no cited sentence contains it. Second pass 2026-11-24: re-fetched; class, author and edition verified.",
+      note: "New entry. Reference. Long entry; only §2.2.2, §6.1.3 and §6.2.3 cited. Hebrew script renders as “?” on Encyclopedia.com; no cited sentence contains it. Second pass 2026-11-24: re-fetched; “[Aron Dotan (2nd ed.)]” signature and the three cited section headings verified.",
     }
 leads:
   - "Jeremiah's Septuagint text “almost one eighth shorter”: from a web-search summary of an unnamed page, not read in any source. The show says one-sixth (Ep 11, 159) and 13% (Ep 45). None is on the page."

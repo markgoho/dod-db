@@ -313,7 +313,7 @@ statements:
   - id: translations
     group: "Manuscripts and translations"
     question: "Which text do modern translations follow?"
-    short: "Mainly the Masoretic Text, in Jewish Bibles and in most Protestant and Catholic translations."
+    short: "Mainly the Masoretic Text, the source for many Catholic and Protestant translations."
     text: "Breed writes that the Catholic Church since Jerome and most Protestant churches use the Masoretic Text as their source text for modern translations, while the Septuagint is still used by Eastern Orthodox churches. Burnette-Bletsch writes that the Leningrad Codex, the oldest complete manuscript of a Masoretic Text, serves as the textual basis of modern Jewish Bibles and of many Christian Old Testaments. Thomas, discussing a verse of Proverbs, writes of a long-standing Protestant (and, at times, Catholic) effort to produce translations that take the Hebrew text as more original. The Coogan and Chapman summary calls the Septuagint an important source of evidence for reconstructing the original Hebrew text."
     cites:
       - source: burnette-bletsch-bo-bible-look
