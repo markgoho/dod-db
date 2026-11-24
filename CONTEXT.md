@@ -200,6 +200,7 @@ _Avoid_: Citation, snippet source
 - A **Synthesis Page** exists only for a subject with at least one **Trigger Claim**; its statements are backed by **External Sources**, never by a **Transcript** alone.
 - A **Trigger Claim** gates a **Synthesis Page** and its subject, not each statement on it.
 - A Tradition **External Source** supports only what a tradition holds, never what scholars think.
+- A study Bible from a publisher that describes itself as a ministry with a statement of faith is a Tradition **External Source**, unless its notes are written by a scholarly association, as the NABRE's are.
 - A **Synthesis Page** names the tradition a Tradition **External Source** speaks for in that source's own words, never as "the traditional view".
 - A **Synthesis Page** reports what **External Sources** say; it gives no advice and addresses no particular reader.
 - A **Synthesis Page** is the archive's own work, not the show's; a **Trigger Claim** is shown apart from the page's statements, and a **Host** is never its authority.
