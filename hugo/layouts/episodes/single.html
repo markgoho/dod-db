@@ -200,7 +200,8 @@
         "episode" .Params.episodeNumber
         "sources" (slice (dict "base" "/scholarship" "triggers" hugo.Data.scholarship.triggers)))
       }}
-      {{ if or .Params.books .Params.topics .Params.tags $scholarshipPages }}
+      {{ $timelineEntries := partial "timeline-entries-for-episode.html" .Params.episodeNumber }}
+      {{ if or .Params.books .Params.topics .Params.tags $scholarshipPages $timelineEntries }}
         <section class="episode-metadata-footer">
           {{ if .Params.books }}
             <section class="episode-sidebar__section panel panel--muted">
@@ -243,7 +244,8 @@
 
           {{ partial "scholarship-links.html" (dict
             "pages" $scholarshipPages
-            "heading" "Scholarship Pages prompted by this Episode"
+            "entries" $timelineEntries
+            "headingTail" " prompted by this Episode"
             "headingClass" "episode-sidebar__title")
           }}
         </section>

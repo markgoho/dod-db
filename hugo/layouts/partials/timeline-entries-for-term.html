@@ -1,0 +1,25 @@
+{{- /*
+  Returns the published Timeline Entries whose `related` names a term. Takes
+  a dict:
+  page      the Book, Tag or Topic term page
+  taxonomy  "books", "tags" or "topics" (the `related` key)
+  Same matching rule as Scholarship Pages (scholarship-related-term.html);
+  check:timeline fails on a `related` entry that names no term page.
+  */
+-}}
+{{- $term := .page -}}
+{{- $taxonomy := .taxonomy -}}
+{{- $entries := slice -}}
+{{- with site.GetPage "/timeline" -}}
+  {{- range .RegularPages.ByTitle -}}
+    {{- $entry := . -}}
+    {{- range index (.Params.related | default dict) $taxonomy -}}
+      {{- with partial "scholarship-related-term.html" (dict "taxonomy" $taxonomy "term" .) -}}
+        {{- if eq .RelPermalink $term.RelPermalink -}}
+          {{- $entries = $entries | append $entry -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $entries -}}

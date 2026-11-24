@@ -15,13 +15,16 @@ import {
   loadEpisodes,
   loadParsed,
   loadRegistry,
+  loadTerms,
   readFrontmatter,
   ReviewSchema,
   TriggerSchema,
   triggerKey,
   unknownEpisode,
+  unknownRelated,
   type Registry,
   type Review,
+  type Terms,
 } from "./synthesis-check.js";
 
 const year = z.number().int();
@@ -104,9 +107,12 @@ function checkEntry(
   triggers: TimelineTrigger[],
   review: Review | undefined,
   entries: Map<string, Entry | undefined>,
+  terms: Terms,
 ): string[] {
   const errors: string[] = [];
   const at = `timeline/${id}`;
+
+  errors.push(...unknownRelated(at, entry.related, terms));
 
   for (const { key, source } of keyedCites(entry)) {
     if (!registry[source]) {
@@ -206,6 +212,7 @@ export async function checkTimeline(root: string): Promise<string[]> {
 
   const registry = await loadRegistry(root, errors);
   const episodes = await loadEpisodes(root, errors);
+  const terms = await loadTerms(root, errors);
   const triggers =
     (await loadParsed(
       z.array(TimelineTriggerSchema),
@@ -266,6 +273,7 @@ export async function checkTimeline(root: string): Promise<string[]> {
         triggers.filter(t => t.entry === id),
         reviews.get(id),
         entries,
+        terms,
       ),
     );
   }

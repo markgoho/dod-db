@@ -1,0 +1,21 @@
+{{- /*
+  Returns the published Timeline Entries whose Trigger Claims
+  (hugo.Data.timeline.triggers, a flat list keyed by `entry:`) name an Episode.
+  Takes the Episode Number. Draft entries are not built without -D, so the
+  Timeline's RegularPages leave them out.
+  */
+-}}
+{{- $episode := int . -}}
+{{- $ids := slice -}}
+{{- range where (hugo.Data.timeline.triggers | default slice) "episode" $episode -}}
+  {{- $ids = $ids | append .entry -}}
+{{- end -}}
+{{- $entries := slice -}}
+{{- with site.GetPage "/timeline" -}}
+  {{- range .RegularPages.ByTitle -}}
+    {{- if in $ids .File.ContentBaseName -}}
+      {{- $entries = $entries | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $entries -}}
