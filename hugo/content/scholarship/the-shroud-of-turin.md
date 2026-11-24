@@ -1,7 +1,6 @@
 ---
 title: "The Shroud of Turin"
 dek: "When the shroud first appears in the record, what the 1988 radiocarbon test found and how the challenges to it have fared, what is known about how the image was made, and what the Church says."
-draft: true
 core: radiocarbon
 sourcesRead: 2026-11-24
 related:
@@ -230,7 +229,7 @@ statements:
   - id: repair
     group: "The radiocarbon date"
     question: "Was the dated sample a later repair?"
-    short: "That is disputed: some researchers argue the sampled strip was a later repair, others find no evidence of one."
+    short: "That is disputed: some researchers argue the sampled strip was a later repair, while the Arizona laboratory found no evidence of one in its own sample."
     text: "Karapanagiotis's review reports a strong disagreement over whether the strip cut for the samples was part of the original cloth; if it was a later repair, the date would not reflect the shroud's true age. He summarises the case Raymond Rogers made in 2005: that the radiocarbon samples contained cotton fibres, unlike the main cloth, that they carried a gum, dye and mordant coating, and that they came from a repair dyed to match the original. Freer-Waters and Jull examined a fragment of the Arizona sample and found no evidence of coatings or dyes, only minor contaminants, and nothing to contradict its having come from the main part of the shroud; the few cotton fibres they saw, they suggest, may come from wrapping the cloth in cotton. Karapanagiotis calls Rogers's reading of his mass spectra rather incomplete. Di Lazzaro and colleagues suggest that the sampling site possibly included a patch added in later centuries, though they note that a textile expert found no mending visible to the naked eye beside it."
     cites:
       - source: karapanagiotis-2025-shroud-overview
