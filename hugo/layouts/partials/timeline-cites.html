@@ -8,10 +8,15 @@
 <ul class="scholarship-cites" role="list">
   {{ range .cites }}
     {{ $s := index $registry .source }}
+    {{ $key := index $.shortCites .source }}
+    {{ $url := .url | default $s.url }}
+    {{ $locator := .locator | default "source" }}
     <li class="scholarship-cite">
       <blockquote class="scholarship-cite__quote">“{{ .quote }}”</blockquote>
       <p class="scholarship-meta">
-        {{ printf `<a href="#source-%s">%s</a>, <a href="%s" rel="noopener">%s</a> · %s` (htmlEscape .source) (htmlEscape (index $.shortCites .source)) (htmlEscape (.url | default $s.url)) (htmlEscape (.locator | default "source")) (htmlEscape $s.class) | safeHTML }}
+        <a href="#source-{{ .source }}">{{ $key }}</a>,
+        <a href="{{ $url }}" rel="noopener">{{ $locator }}</a> ·
+        {{ $s.class }}
       </p>
     </li>
   {{ end }}

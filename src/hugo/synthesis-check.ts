@@ -276,7 +276,7 @@ export function unknownEpisode(
 }
 
 /** A YAML date as `YYYY-MM-DD`, whether it parsed as a string or a Date. */
-function isoDate(value: string | Date): string {
+export function isoDate(value: string | Date): string {
   return value instanceof Date ? value.toISOString().slice(0, 10) : value;
 }
 

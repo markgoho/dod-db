@@ -1,0 +1,13 @@
+{{- /*
+  Years to positions on a Timeline scale. Takes dict: scale {min, span},
+  from, and optionally to (default from). Returns dict {start, size}, each a
+  percent of the scale's span.
+  */
+-}}
+{{- $s := .scale -}}
+{{- $from := .from -}}
+{{- $to := .to | default $from -}}
+{{- return dict
+  "start" (div (mul (sub $from $s.min) 100.0) $s.span)
+  "size" (div (mul (sub $to $from) 100.0) $s.span)
+-}}

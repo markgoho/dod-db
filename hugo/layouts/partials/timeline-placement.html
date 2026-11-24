@@ -4,7 +4,9 @@
   byId      entry id → entry page
   placed    spine entries in date order, each dict {key, page, from, to}
   unplaced  entries with no Critical Date, by title
-  years     every Critical and Tradition Date year, for the scale
+  ordered   every entry page: placed, then unplaced
+  years     the spine entries' Critical and Tradition Date years, for the
+  scale; an unplaced entry's Tradition Date never widens it
   Shared by the page body and its JSON-LD so both list entries in one order.
   */
 -}}
@@ -24,10 +26,10 @@
 {{- $years := slice -}}
 {{- range $entry := $entries -}}
   {{- $c := .Params.critical -}}
-  {{- with .Params.tradition -}}
-    {{- $years = $years | append .from (.to | default .from) -}}
-  {{- end -}}
   {{- if $c -}}
+    {{- with .Params.tradition -}}
+      {{- $years = $years | append .from (.to | default .from) -}}
+    {{- end -}}
     {{- $from := $c.from -}}
     {{- $to := $c.to -}}
     {{- with $c.anchor -}}
@@ -49,4 +51,11 @@
 {{- end -}}
 {{- $placed = sort $placed "key" -}}
 {{- $unplaced = sort $unplaced "Title" -}}
-{{- return dict "byId" $byId "placed" $placed "unplaced" $unplaced "years" $years -}}
+{{- $ordered := slice -}}
+{{- range $placed -}}
+  {{- $ordered = $ordered | append .page -}}
+{{- end -}}
+{{- range $unplaced -}}
+  {{- $ordered = $ordered | append . -}}
+{{- end -}}
+{{- return dict "byId" $byId "placed" $placed "unplaced" $unplaced "ordered" $ordered "years" $years -}}

@@ -1,16 +1,8 @@
 {{- /* Takes the Timeline section page. One ListItem per published entry, in page order. */ -}}
-{{- $placement := partial "timeline-placement.html" .RegularPages -}}
-{{- $ordered := slice -}}
-{{- range $placement.placed -}}
-  {{- $ordered = $ordered | append .page -}}
-{{- end -}}
-{{- range $placement.unplaced -}}
-  {{- $ordered = $ordered | append . -}}
-{{- end -}}
 {{- $items := slice -}}
-{{- range $i, $e := $ordered -}}
+{{- range $i, $e := (partial "timeline-placement.html" .RegularPages).ordered -}}
   {{- /* Same wording as the card: an undated entry shows this label in place of a date. */ -}}
-  {{- $display := "No firm date in the sources" -}}
+  {{- $display := partial "timeline-undated-label.html" -}}
   {{- with $e.Params.critical -}}
     {{- $display = .display -}}
   {{- end -}}

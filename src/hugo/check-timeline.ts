@@ -12,6 +12,7 @@ import {
   CiteSchema,
   checkPublishGate,
   dateValue,
+  isoDate,
   loadEpisodes,
   loadParsed,
   loadRegistry,
@@ -100,15 +101,22 @@ function keyedCites(entry: Entry): { key: string; source: string }[] {
   );
 }
 
+/** What every entry is checked against: the parsed Timeline and its inputs. */
+interface TimelineContext {
+  registry: Registry;
+  terms: Terms;
+  triggers: TimelineTrigger[];
+  reviews: Map<string, Review | undefined>;
+  entries: Map<string, Entry | undefined>;
+}
+
 function checkEntry(
   id: string,
   entry: Entry,
-  registry: Registry,
-  triggers: TimelineTrigger[],
-  review: Review | undefined,
-  entries: Map<string, Entry | undefined>,
-  terms: Terms,
+  { registry, terms, entries, ...context }: TimelineContext,
 ): string[] {
+  const triggers = context.triggers.filter(t => t.entry === id);
+  const review = context.reviews.get(id);
   const errors: string[] = [];
   const at = `timeline/${id}`;
 
@@ -189,6 +197,16 @@ function checkEntry(
       sources: [...new Set(keyedCites(entry).map(c => c.source))],
     };
     errors.push(...checkPublishGate(at, entry.sourcesRead, required, review));
+    // #135: for a Timeline Entry the second pass, too, must match sourcesRead.
+    const secondPass = review.delegation?.secondPass;
+    if (secondPass) {
+      const read = entry.sourcesRead ? isoDate(entry.sourcesRead) : "";
+      if (read !== isoDate(secondPass)) {
+        errors.push(
+          `${at}: sourcesRead "${read}" doesn't match review delegation secondPass ${isoDate(secondPass)}`,
+        );
+      }
+    }
   }
 
   return errors;
@@ -263,19 +281,15 @@ export async function checkTimeline(root: string): Promise<string[]> {
     );
   }
 
+  const context: TimelineContext = {
+    registry,
+    terms,
+    triggers,
+    reviews,
+    entries,
+  };
   for (const [id, entry] of entries) {
-    if (!entry) continue;
-    errors.push(
-      ...checkEntry(
-        id,
-        entry,
-        registry,
-        triggers.filter(t => t.entry === id),
-        reviews.get(id),
-        entries,
-        terms,
-      ),
-    );
+    if (entry) errors.push(...checkEntry(id, entry, context));
   }
 
   return errors;

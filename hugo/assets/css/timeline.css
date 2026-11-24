@@ -49,11 +49,6 @@
   inline-size: var(--space-m);
 }
 
-.timeline-legend__swatch--tradition {
-  background: transparent;
-  border: var(--border-width-sm) dashed var(--tan-600);
-}
-
 /* Entry card: title and kind, scale, the two dates, then one folded sources block. */
 .timeline-entry {
   display: grid;
@@ -181,40 +176,46 @@
   background: var(--color-action);
 }
 
-/* "After X": the bar runs on past its last year and fades out to the right. */
-.timeline-scale__critical--open {
-  inline-size: calc(var(--size) + var(--space-xl));
+/*
+  Faded bar ends: --fade-in-from is the left edge's opacity (solid or
+  transparent), --fade-in and --fade-out the widths of the left and right fades.
+*/
+.timeline-scale__critical--open,
+.timeline-scale__critical--soft {
   mask-image: linear-gradient(
     to right,
-    var(--tan-900) var(--space-3xs),
-    var(--tan-900) calc(100% - var(--space-xl)),
+    var(--fade-in-from),
+    var(--tan-900) var(--fade-in),
+    var(--tan-900) calc(100% - var(--fade-out)),
     transparent
   );
+}
+
+/* "After X": the bar runs on past its last year and fades out to the right. */
+.timeline-scale__critical--open {
+  --fade-in-from: var(--tan-900);
+  --fade-in: var(--space-3xs);
+  --fade-out: var(--space-xl);
+
+  inline-size: calc(var(--size) + var(--fade-out));
 }
 
 /* Century and period dates: soft edges at both ends, wide enough to show them. */
 .timeline-scale__critical--soft {
+  --fade-in-from: transparent;
+  --fade-in: var(--space-2xs);
+  --fade-out: var(--space-2xs);
+
   min-inline-size: var(--space-m);
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    var(--tan-900) var(--space-2xs),
-    var(--tan-900) calc(100% - var(--space-2xs)),
-    transparent
-  );
-  translate: calc(-1 * var(--space-2xs)) 0;
+  translate: calc(-1 * var(--fade-in)) 0;
 }
 
 .timeline-scale__critical--soft.timeline-scale__critical--open {
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    var(--tan-900) var(--space-2xs),
-    var(--tan-900) calc(100% - var(--space-xl)),
-    transparent
-  );
+  --fade-out: var(--space-xl);
 }
 
+/* A Tradition Date's bar, and its legend swatch: dashed outline, no fill. */
+.timeline-legend__swatch--tradition,
 .timeline-scale__tradition {
   background: transparent;
   border: var(--border-width-sm) dashed var(--tan-600);

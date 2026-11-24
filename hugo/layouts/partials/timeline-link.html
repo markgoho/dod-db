@@ -1,12 +1,15 @@
 {{- /*
   The only copy of the #109 §4 inbound link line. Takes a Timeline Entry.
   Entries have no page of their own (render: never), so the link goes to the
-  entry's card on the Timeline. An undated entry (Exodus) has no display date,
-  so the line drops it.
+  entry's card on the Timeline. An undated entry (Exodus) shows the undated
+  wording where the display date goes, as its card and the JSON-LD do.
   */
 -}}
-{{- $date := "" -}}
+{{- $href := printf "%s#%s" (site.GetPage "/timeline").RelPermalink .File.ContentBaseName -}}
+{{- $date := partial "timeline-undated-label.html" -}}
 {{- with .Params.critical -}}
-  {{- $date = printf ", %s" (.display | htmlEscape) -}}
+  {{- $date = .display -}}
 {{- end -}}
-{{- printf `<a href="%s#%s"><strong>%s</strong></a>%s · on the Timeline: %s.` (site.GetPage "/timeline").RelPermalink .File.ContentBaseName (.Title | htmlEscape) $date (partial "scholarship-not-the-show.html" .) | safeHTML -}}
+{{- $notShow := partial "scholarship-not-the-show.html" . -}}
+<a href="{{ $href }}"><strong>{{ .Title }}</strong></a>
+{{- "," }} {{ $date }} · on the Timeline: {{ $notShow }}{{- "." -}}

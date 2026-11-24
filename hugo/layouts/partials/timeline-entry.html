@@ -31,8 +31,9 @@
 
   {{ with .scale }}
     {{ $s := . }}
-    {{ $start := div (mul (sub $s.from $s.min) 100.0) $s.span }}
-    {{ $size := div (mul (sub $s.to $s.from) 100.0) $s.span }}
+    {{ $bar := partial "timeline-scale-percent.html" (dict "scale" $s "from" $s.from "to" $s.to) }}
+    {{ $start := $bar.start }}
+    {{ $size := $bar.size }}
     {{ $label := printf "Date in the sources: %s." $c.display }}
     {{ with $t }}
       {{ $label = printf "%s %s: %s." $label $holds .display }}
@@ -57,8 +58,9 @@
         {{ with $t }}
           {{ $tFrom := .from }}
           {{ $tTo := .to | default .from }}
-          {{ $tStart := div (mul (sub $tFrom $s.min) 100.0) $s.span }}
-          {{ $tSize := div (mul (sub $tTo $tFrom) 100.0) $s.span }}
+          {{ $tBar := partial "timeline-scale-percent.html" (dict "scale" $s "from" $tFrom "to" $tTo) }}
+          {{ $tStart := $tBar.start }}
+          {{ $tSize := $tBar.size }}
           {{/* The dotted line joins the nearer ends of the two dates, whichever comes first. */}}
           {{ $gapFrom := 0.0 }}
           {{ $gapTo := 0.0 }}
@@ -101,7 +103,9 @@
         <p class="timeline-entry__date">{{ .display }}</p>
         {{ with .note }}<p class="timeline-entry__note">{{ . }}</p>{{ end }}
       {{ else }}
-        <p class="timeline-entry__label">No firm date in the sources</p>
+        <p class="timeline-entry__label">
+          {{- partial "timeline-undated-label.html" -}}
+        </p>
         <p>{{ $p.undated.statement }}</p>
       {{ end }}
       {{ with $p.seeAlso }}

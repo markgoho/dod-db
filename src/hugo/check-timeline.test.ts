@@ -143,6 +143,12 @@ describe("checkTimeline", () => {
     ]);
   });
 
+  test("fails a delegated review whose secondPass doesn't match the entry's sourcesRead", async () => {
+    expect(await check("delegated-second-pass-mismatch")).toEqual([
+      `timeline/fall: sourcesRead "2026-11-23" doesn't match review delegation secondPass 2026-11-25`,
+    ]);
+  });
+
   test("fails a non-draft entry anchored to, or seeing also, a draft entry", async () => {
     expect(await check("links-to-draft")).toEqual([
       `timeline/book: anchor "fall" names a draft entry; an entry can't publish before the entries it links to`,

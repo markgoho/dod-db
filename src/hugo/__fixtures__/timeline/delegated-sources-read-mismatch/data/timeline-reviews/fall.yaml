@@ -3,7 +3,7 @@ delegation:
   by: markgoho
   date: 2026-11-23
   issue: "#110"
-  secondPass: 2026-12-03
+  secondPass: 2026-11-23
 citations:
   critical/1: { agent: pass, owner: "" }
 triggers:

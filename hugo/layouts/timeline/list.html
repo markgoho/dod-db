@@ -17,31 +17,26 @@
   {{ $byId := $placement.byId }}
   {{ $placed := $placement.placed }}
   {{ $unplaced := $placement.unplaced }}
-  {{ $years := $placement.years }}
+  {{ $ordered := $placement.ordered }}
 
-  {{/* Scale: every published Critical and Tradition Date, padded out to whole 500-year eras. */}}
+  {{/* Scale: the spine entries' Critical and Tradition Dates, padded out to whole eras. */}}
+  {{ $era := 500 }}
   {{ $scale := dict }}
-  {{ with $years }}
-    {{ $min := mul (math.Floor (div (float (math.Min .)) 500)) 500 }}
-    {{ $max := mul (math.Ceil (div (float (math.Max .)) 500)) 500 }}
+  {{ with $placement.years }}
+    {{ $min := mul (math.Floor (div (float (math.Min .)) $era)) $era }}
+    {{ $max := mul (math.Ceil (div (float (math.Max .)) $era)) $era }}
     {{ if eq $min $max }}
-      {{ $max = add $max 500 }}
+      {{ $max = add $max $era }}
     {{ end }}
-    {{ $span := sub $max $min }}
+    {{ $scale = dict "min" $min "span" (sub $max $min) }}
     {{ $ticks := slice }}
-    {{ range seq (int $min) 500 (int $max) }}
-      {{ $ticks = $ticks | append (dict "at" (div (mul (sub . $min) 100.0) $span) "label" (partial "timeline-year-label.html" .)) }}
+    {{ range seq (int $min) $era (int $max) }}
+      {{ $at := (partial "timeline-scale-percent.html" (dict "scale" $scale "from" .)).start }}
+      {{ $ticks = $ticks | append (dict "at" $at "label" (partial "timeline-year-label.html" .)) }}
     {{ end }}
-    {{ $scale = dict "min" $min "span" $span "ticks" $ticks }}
+    {{ $scale = merge $scale (dict "ticks" $ticks) }}
   {{ end }}
 
-  {{ $ordered := slice }}
-  {{ range $placed }}
-    {{ $ordered = $ordered | append .page }}
-  {{ end }}
-  {{ range $unplaced }}
-    {{ $ordered = $ordered | append . }}
-  {{ end }}
   {{ $sourceIds := partial "timeline-source-ids.html" $ordered }}
   {{ $shortCites := partial "source-short-cites.html" $sourceIds }}
   {{ $registry := index hugo.Data "external-sources" }}
