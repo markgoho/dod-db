@@ -70,5 +70,15 @@
   "the-text-of-the-hebrew-bible/mt": "0240fe493493d26c",
   "the-text-of-the-hebrew-bible/oldest": "1015f21bb3f14ca0",
   "the-text-of-the-hebrew-bible/original": "b91e83d573837700",
-  "the-text-of-the-hebrew-bible/translations": "c0bf5dba2c19ab2c"
+  "the-text-of-the-hebrew-bible/translations": "c0bf5dba2c19ab2c",
+  "univocality/anthology": "4bb1e3c6d5e474bf",
+  "univocality/canon": "ab935ee727b9de0b",
+  "univocality/gospels": "33c9439240c797cd",
+  "univocality/harmonizing": "913400fbb5f1570a",
+  "univocality/hebrew-bible": "0d9c8f28dd8f9f52",
+  "univocality/methods": "dcc8d91f81493335",
+  "univocality/one-voice": "ea1d86273291ba57",
+  "univocality/paul-and-james": "a75704ea5fc9219f",
+  "univocality/the-end": "c62db6dd95bf8ecf",
+  "univocality/tradition": "e55f4195486bbd84"
 }

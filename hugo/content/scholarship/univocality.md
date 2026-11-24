@@ -1,7 +1,6 @@
 ---
 title: "Univocality"
 dek: "Whether the books of the Bible speak with one voice, where scholars find them differing, and how readers have reconciled or kept the differences."
-draft: true
 core: one-voice
 sourcesRead: 2026-11-24
 related:
@@ -169,7 +168,7 @@ statements:
   - id: paul-and-james
     group: "Where the texts differ"
     question: "Do James and Paul disagree about faith and works?"
-    short: "Scholars differ. James argues against a teaching like Paul's, but whether it targets Paul himself or a distortion of his message is debated."
+    short: "Scholars differ. James argues against a teaching like Paul's, but the sources read part ways on whether he targets Paul himself or a distortion of his message."
     text: "Dale Martin's Yale lectures describe a debate among scholars. In his reading, James clearly thinks he is disagreeing with a version of Christianity that looks a lot like Paul's letters, and may even think he is disagreeing with Paul, though it is hard to say; but some scholars answer that the two do not really disagree, because they work with different definitions of faith and of works. Martin leaves it open: “Maybe yes, maybe no, maybe it's a little bit of both.” The chapter summary for Ehrman's textbook says James argued against Christians who had distorted Paul's message of justification by faith. John Painter's Bible Odyssey article says the letter, which does not name Paul, confronts the challenge he presents, and that the evidence suggests the historical James and Paul were not enemies, though their relationship involved tensions."
     cites:
       - source: martin-rlst152-l18
