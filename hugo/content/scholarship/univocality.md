@@ -92,7 +92,7 @@ statements:
     group: "Where the texts differ"
     question: "Where do the books of the Hebrew Bible differ?"
     short: "In many places: repeated stories that contradict each other, and later books that retell earlier ones differently."
-    text: "Carol Meyers's Bible Odyssey article says close study revealed biblical narratives to be replete with inconsistencies and even outright contradictions: in 1 Samuel 17:50 David kills Goliath, but in 2 Samuel 21:19 Elhanan does, and Joshua says the Israelites conquered the whole land while Judges describes the survival of many Canaanites. Hayes's lectures say the Bible contains a lot of repetition and contradiction, and that its legal materials contradict one another. The chapter summary for Coogan and Chapman's textbook says almost all biblical scholars explain the Pentateuch's repetitions, inconsistencies and contradictions by distinct sources from different historical periods. Chronicles retells Samuel and Kings: Hayes calls it the Bible interpreting itself, the textbook summary says its David has several substantive differences from the earlier account, and Jesse Ainslie and Joseph Lam's Bible Odyssey article says Kings and Chronicles tell two very different stories about King Manasseh."
+    text: "Carol Meyers's Bible Odyssey article says close study revealed biblical narratives to be replete with inconsistencies and even outright contradictions: in 1 Samuel 17:50 David kills Goliath, but in 2 Samuel 21:19 Elhanan does, and Joshua says the Israelites conquered the whole land while Judges describes the survival of many Canaanites; Hayes's lecture on Joshua adds that Judges 1 gives a long list of the places from which the Canaanites were not expelled. Hayes's lectures say the Bible contains a lot of repetition and contradiction, and that its legal materials contradict one another. The chapter summary for Coogan and Chapman's textbook says almost all biblical scholars explain the Pentateuch's repetitions, inconsistencies and contradictions by distinct sources from different historical periods. Chronicles retells Samuel and Kings: Hayes calls it the Bible interpreting itself, the textbook summary says its David has several substantive differences from the earlier account, and Jesse Ainslie and Joseph Lam's Bible Odyssey article says Kings and Chronicles tell two very different stories about King Manasseh."
     cites:
       - source: meyers-bo-hebrew-bible-history
         locator: "paragraph beginning “Other problems emerged”"
@@ -129,6 +129,10 @@ statements:
       - source: ainslie-lam-2021-manasseh
         locator: "paragraph 1"
         quote: "The book of Kings and the book of Chronicles tell two very different stories about King Manasseh of Judah."
+        read: 2026-11-24
+      - source: hayes-rlst145-l12
+        locator: "ch. 5 [00:27:39]"
+        quote: "Judges 1 gives a long list of the places from which the Canaanites were not expelled."
         read: 2026-11-24
   - id: gospels
     group: "Where the texts differ"
