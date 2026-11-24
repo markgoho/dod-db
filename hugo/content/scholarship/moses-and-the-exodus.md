@@ -93,8 +93,8 @@ statements:
   - id: history
     group: "How scholars read the account"
     question: "Do scholars read biblical narratives like Exodus as straightforward history?"
-    short: "Most have not read biblical narrative as straightforward history for over a century."
-    text: "For more than a century most biblical scholars have recognized that biblical narratives cannot be read as straightforward history. Meyers puts this down to generations of source criticism and redaction criticism, which have shown that the Hebrew Bible is hardly a straightforward and factual telling of Israel’s past."
+    short: "Most do not read them as straightforward history."
+    text: "Carol Meyers writes that for more than a century most biblical scholars have recognized that biblical narratives cannot be read as straightforward history. She puts this down to generations of source criticism and redaction criticism, which have shown that the Hebrew Bible is hardly a straightforward and factual telling of Israel’s past. Christine Hayes's Yale lectures likewise hold that it is a mistake to read the Bible as a historical record."
     cites:
       - source: meyers-2005-exodus
         locator: "p. 4"
@@ -104,6 +104,10 @@ statements:
         locator: "p. 4"
         quote: "have shown that the Hebrew Bible is hardly a straightforward and factual telling of Israel’s past"
         read: 2026-11-23
+      - source: hayes-rlst145-l6
+        locator: "ch. 1 [00:00:00]"
+        quote: "But ultimately, it is a mistake, I think, to read the Bible as a historical record."
+        read: 2026-11-24
   - id: kernel
     group: "How scholars read the account"
     question: "Did some kind of exodus happen?"
@@ -151,8 +155,8 @@ statements:
   - id: date
     group: "Dates, numbers and places"
     question: "When did the Exodus happen, if it happened?"
-    short: "There is no consensus; proposals run from the 16th to the early 12th century BCE."
-    text: "Proposed dates range from the sixteenth to the early twelfth centuries BCE, with strong proponents but no consensus or prospect of resolution. The Bible's own chronology puts the Exodus in the mid-fifteenth century BCE, but that date seems to rest on literary and numerical artistry. A theory going back to the first-century historian Josephus ties the Exodus to the expulsion of the Semitic Hyksos rulers of Egypt in the mid-sixteenth century BCE, but there is no trace of Israel in Canaan in that period. If the Exodus is accepted as historical, the chapter summary for Coogan and Chapman's introductory textbook judges the thirteenth century BCE the most reasonable date, partly because the Merneptah Stela mentions Israel then. Christine Hayes's Yale lecture likewise gives the thirteenth century as the most plausible backdrop if there is any historical basis to the Exodus."
+    short: "If it happened, scholars often place it in the 13th century BCE."
+    text: "Carol Meyers notes proposed dates ranging from the sixteenth to the early twelfth centuries BCE, with strong proponents but no consensus or prospect of resolution. The Bible's own chronology puts the Exodus in the mid-fifteenth century BCE, but that date seems to rest on literary and numerical artistry. A theory going back to the first-century historian Josephus ties the Exodus to the expulsion of the Semitic Hyksos rulers of Egypt in the mid-sixteenth century BCE, but there is no trace of Israel in Canaan in that period. If the Exodus is accepted as historical, the chapter summary for Coogan and Chapman's introductory textbook judges the thirteenth century BCE the most reasonable date, partly because the Merneptah Stela mentions Israel then. Christine Hayes's Yale lecture likewise gives the thirteenth century as the most plausible backdrop if there is any historical basis to the Exodus. The HarperCollins Bible Dictionary notes that biblical scholars often identify the pharaoh of the exodus as Rameses II (1279–1212 BCE) or, somewhat less likely, his son and successor Merenptah (1212–1202 BCE)."
     cites:
       - source: meyers-2005-exodus
         locator: "p. 8"
@@ -178,11 +182,16 @@ statements:
         locator: "ch. 3 [00:10:06]"
         quote: "if there's any historical basis to the Exodus, then the most plausible time, the most plausible backdrop would be the thirteenth century BCE."
         read: 2026-11-23
+      - source: harpercollins-2009-dictionary
+        locator: "entry “Other, unnamed Egyptian kings”, item 9"
+        quote: "The “pharaoh of the exodus” (Exod 5-12), often identified by biblical scholars as Rameses II (1279–1212 BCE) or, somewhat less likely, his son and successor, Merenptah (1212–1202 BCE)."
+        url: "https://www.bibleodyssey.org/dictionary/other-unnamed-egyptian-kings/"
+        read: 2026-11-24
   - id: numbers
     group: "Dates, numbers and places"
     question: "Did 600,000 men leave Egypt?"
-    short: "The count is inflated; the census figures in Numbers are unrealistically high."
-    text: "The Numbers chapter summary for Coogan and Chapman's introductory textbook treats the count of men leaving Egypt in Exodus 12:37 as an example of how the biblical writers often inflated census statistics, and calls the population statistics in the censuses of Numbers likewise unrealistically high. It says no reasonable interpretation for this inflation has ever been presented, though P, the Priestly writer, may have incorporated numbers from a variety of sources to show that the divine promise of descendants had been fulfilled. The summary of the Exodus chapter describes the Exodus as a migration not of thousands or millions of people but of a few hundred."
+    short: "The figure is treated as inflated or schematic, not a real count."
+    text: "The Numbers chapter summary for Coogan and Chapman's introductory textbook treats the count of men leaving Egypt in Exodus 12:37 as an example of how the biblical writers often inflated census statistics, and calls the population statistics in the censuses of Numbers likewise unrealistically high. It says no reasonable interpretation for this inflation has ever been presented, though P, the Priestly writer, may have incorporated numbers from a variety of sources to show that the divine promise of descendants had been fulfilled. The summary of the Exodus chapter describes the Exodus as a migration not of thousands or millions of people but of a few hundred. The Encyclopaedia Judaica's article on Numbers calls 600,000 a schematic number, which the census lists clothe with the details of a tribal breakdown."
     cites:
       - source: coogan-brief-4e-summary-ch9
         locator: "section “Census and Arrangement of the Camp”"
@@ -196,6 +205,10 @@ statements:
         locator: "section “Exodus and History”"
         quote: "Here we find that the Exodus was a migration not of thousands (if not millions) of people but of a few hundred"
         read: 2026-11-23
+      - source: caine-fox-ej-numbers
+        locator: "section “(1) Final Encampment at Sinai (1:1–10:10)”"
+        quote: "The numbers are not easy to interpret in detail, but they reflect an effort to clothe the schematic number 600,000"
+        read: 2026-11-24
   - id: sea
     group: "Dates, numbers and places"
     question: "Was the sea of the Exodus the Red Sea?"
@@ -257,11 +270,23 @@ statements:
   - id: song
     group: "The story's literary background"
     question: "What is the oldest account of the event?"
-    short: "Most agree it is a poetic fragment in Exodus 15:1–12."
-    text: "Christine Hayes reports that most agree the oldest account of the event at the sea is a poetic fragment in Exodus 15:1–12."
+    short: "Many scholars think it is the poem in Exodus 15."
+    text: "Christine Hayes reports that most agree the oldest account of the event at the sea is a poetic fragment in Exodus 15:1–12. The notes of the New American Bible say that many scholars regard the poem (15:1–21) as one of the oldest compositions in the Bible, once an independent work. The Encyclopaedia Judaica's article on Exodus finds several early features in its language, but judges that its mentions of Philistia, cavalry and the sanctuary on God's mountain put the present form of the song no earlier than the tenth century BCE."
     cites:
       - source: hayes-rlst145-l8
         locator: "ch. 2 [00:06:51]"
         quote: "One thing that most people do in fact agree on is that the oldest account of the event is a poetic fragment that's found in Exodus 15, verses one to 12, in particular."
         read: 2026-11-22
+      - source: nabre-exodus-15-notes
+        locator: "note on 15:1–21"
+        quote: "This poem, regarded by many scholars as one of the oldest compositions in the Bible, was once an independent work."
+        read: 2026-11-24
+      - source: greenberg-sperling-ej-exodus
+        locator: "section e, “The Miracle at the Sea (13:17–15:21)”"
+        quote: "The language displays several early features"
+        read: 2026-11-24
+      - source: greenberg-sperling-ej-exodus
+        locator: "section e, “The Miracle at the Sea (13:17–15:21)”"
+        quote: "the mention of Philistia, the references to cavalry, and the sanctuary on God's mountain, however, indicate a date no earlier than the tenth century for the present form of the song."
+        read: 2026-11-24
 ---

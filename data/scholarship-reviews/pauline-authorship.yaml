@@ -11,6 +11,7 @@
 # second-thessalonians gain a second-author cite (pseudepigraphy/3, second-thessalonians/7); pastorals-reasons and
 # pastorals-date shorts narrowed; pastorals-dissent flagged (consensus-wording). Review dates stay 2026-11-23.
 # #133 verify/133b 2026-11-23 (third independent agent): pseudepigraphy/3 (Martin l17 ch. 2 [00:10:42]) and second-thessalonians/7 (Ehrman ch. 16 summary, bold heading “The Deutero-Pauline Epistles”) re-fetched and matched verbatim; both pass. pastorals-reasons short changed again (see pastorals-reasons/5); pastorals-date passes (Ehrman and Martin both put them after Paul; “Uncertain” rightly dropped as Martin alone). Other statements not reviewed in this pass.
+# #145 first pass 2026-11-24 (agent): pastorals-dissent cut (no second read author naming a defender in a ruled source class). Review dates stay 2026-11-23. Second pass pending #145.
 review: 2026-11-23
 delegation:
   by: owner
@@ -88,7 +89,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Martin l19 ch. 1 [00:00:00], about 2 minutes in. Next sentence reports recent questions about 2 Timothy (used in pastorals-dissent). Second pass 2026-11-23: verified.",
+      note: "Martin l19 ch. 1 [00:00:00], about 2 minutes in. Next sentence reports recent questions about 2 Timothy (used in pastorals-dissent). Second pass 2026-11-23: verified. #145 2026-11-24: pastorals-dissent, which used the next sentence, is cut (see uncited). Second pass pending #145.",
     }
   pastorals/3:
     {
@@ -137,18 +138,6 @@ citations:
       agent: pass,
       owner: "",
       note: "Martin l19 ch. 1 [00:00:00], about 4–5 minutes in. “It's everybody guess” is the transcript's wording. The second-century date is Martin's own view, attributed to him, with his note that it's later than many scholars would put them. Second pass 2026-11-23: verified.",
-    }
-  pastorals-dissent/1:
-    {
-      agent: pass,
-      owner: "",
-      note: "Martin l19 ch. 1 [00:00:00]. Second pass 2026-11-23: verified. Quote extended to Martin's next sentence (“But I don't tend to buy that.”), which backs the statement's last sentence. “in the last several years” is relative to the 2009 recording, so the statement says “in the years before the lectures”, not “recent”.",
-    }
-  pastorals-dissent/2:
-    {
-      agent: pass,
-      owner: "",
-      note: "Martin l19 ch. 3 [00:26:50], near the end of the chapter. “these letters” are the Pastorals (the lecture's subject). Second pass 2026-11-23: verified. With Bulundwe dropped, the statement rests on Martin alone and names no dissenter; it reports only what Martin reports. #133 second pass 2026-11-23: FLAG: the short “Some do.” is Martin's report alone. Ehrman's ch. 16 “Most scholars agree that Paul did not write” (pastorals/1) only implies that some disagree; not counted. Needs a second read author naming a defender (Bulundwe's Johnson and Herzer were dropped with that source), a reframe or a cut; owner or delegate decides.",
     }
   disputed/1:
     {
@@ -354,13 +343,13 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "Second pass 2026-11-23: verified. 10 statements (accepted cut). Core (pastorals) cites the Ehrman ch. 16 summary (Reference; publisher summary, 5th ed. 2020) and Martin l17 and l19 (Reference; one author, counted once): 2 independent authors, both Reference, each at the statement's own strength (“Most scholars agree”; “Most of us scholars believe”). Bulundwe no longer cited (owner decision). The rule holds with no margin: losing either author drops the page below it. Martin's course assigns Ehrman's full NT textbook (4th ed., 2007): independent by author, but related.",
+      note: "Second pass 2026-11-23: verified. 10 statements (accepted cut). Core (pastorals) cites the Ehrman ch. 16 summary (Reference; publisher summary, 5th ed. 2020) and Martin l17 and l19 (Reference; one author, counted once): 2 independent authors, both Reference, each at the statement's own strength (“Most scholars agree”; “Most of us scholars believe”). Bulundwe no longer cited (owner decision). The rule holds with no margin: losing either author drops the page below it. Martin's course assigns Ehrman's full NT textbook (4th ed., 2007): independent by author, but related. #145 2026-11-24: pastorals-dissent cut, so 9 statements; core pastorals unchanged (Ehrman ch. 16 summary, Martin l17 and l19). Second pass pending #145.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "Second pass 2026-11-23: verified. No statement says “consensus”. Every “most scholars” rests on a Reference source saying “most” or stronger itself (Ehrman summaries; Martin's “almost all scholars” and “Most of us scholars”). #133 second pass 2026-11-23: every short audited (2+ distinct read authors back it, or it is an exempt fact). Pass: undisputed (Ehrman, Martin), hebrews (Ehrman, Martin), pastorals (Ehrman, Martin), disputed (Ehrman, Martin), ephesians-colossians (Ehrman, Martin). Fixed: pseudepigraphy (pseudepigraphy/3), second-thessalonians (second-thessalonians/7), pastorals-reasons and pastorals-date (narrowed). FLAG: pastorals-dissent (“Some do.”, Martin alone).",
+      note: "Second pass 2026-11-23: verified. No statement says “consensus”. Every “most scholars” rests on a Reference source saying “most” or stronger itself (Ehrman summaries; Martin's “almost all scholars” and “Most of us scholars”). #133 second pass 2026-11-23: every short audited (2+ distinct read authors back it, or it is an exempt fact). Pass: undisputed (Ehrman, Martin), hebrews (Ehrman, Martin), pastorals (Ehrman, Martin), disputed (Ehrman, Martin), ephesians-colossians (Ehrman, Martin). Fixed: pseudepigraphy (pseudepigraphy/3), second-thessalonians (second-thessalonians/7), pastorals-reasons and pastorals-date (narrowed). FLAG: pastorals-dissent (“Some do.”, Martin alone). #145 2026-11-24: FLAG resolved by cutting pastorals-dissent. Searched Bible Odyssey (HarperCollins entry on 2 Timothy: “Many scholars think”; Concannon, “Paul and Authorship”: “Few question”) and Encyclopedia.com; each only implies dissent, the standard the #133 second pass rejected. The one explicit report found, Collins in the New Catholic Encyclopedia, is about a fragment hypothesis for 2 Timothy, not a defence of authorship, and its source class is unruled (see uncited). Second pass pending #145.",
     }
   dissent-attributed:
     {
@@ -412,7 +401,7 @@ sources:
       edition: "Open Yale RLST 152, recorded Spring 2009 (course page). Second pass 2026-11-23: verified.",
     }
 leads:
-  - "#133 flag (second pass 2026-11-23): pastorals-dissent (“Some do.”) rests on Martin l19 alone. Bulundwe (dropped; see uncited) named Johnson (all three Pastorals authentic) and Herzer (only 1 Timothy pseudonymous) as dissenters; reading either in their own work would give a second author, or the short could be reframed or cut."
+  - "#145 2026-11-24: pastorals-dissent cut (see uncited). Bulundwe (dropped) named Johnson (all three Pastorals authentic) and Herzer (only 1 Timothy pseudonymous) as dissenters; reading either in their own work, beside Martin l19, would let a dissent statement return."
   - "Ehrman, A Brief Introduction to the New Testament, 5th ed.: a web-search summary (not the catalogue page) gives 1 Oct 2020 for the US listing but 13 Dec 2021 for the UK listing, ISBN 9780190089528. Both years are inside the window. Settled in the second pass: the US catalogue page gives 01 October 2020 (see sources)."
   - "NABRE introduction to 1 Timothy (https://bible.usccb.org/bible/1timothy/0): “Most scholars are convinced that Paul could not have been responsible for the vocabulary and style, the concept of church organization, or the theological expressions found in these letters.” Not re-read in this pass. The NABRE New Testament preface (https://bible.usccb.org/bible/newtestament/0, read 2026-11-23) is dated September 30, 1986 and says “In most cases the introductions and notes have been entirely rewritten and expanded”, so the NT introductions fall outside the 30-year window for state-of-the-field statements (#86)."
   - "NABRE introduction to Ephesians (https://bible.usccb.org/bible/ephesians/0): “much of critical scholarship has considered the letter’s style …”. Same 1986 window problem."
@@ -422,5 +411,7 @@ leads:
   - "Luke T. Johnson, The First and Second Letters to Timothy (Doubleday, 2001), and Jens Herzer, “Abschied vom Konsens?”, ThLZ 129 (2004): the dissenting works Bulundwe cites (Bulundwe no longer cited). Not opened."
   - "Raymond E. Brown, An Introduction to the New Testament (1997): widely cited for per-letter estimates. Not readable (print-disabled scans, no Google preview)."
 uncited:
+  - "#145 2026-11-24: statement pastorals-dissent cut (question “Does any scholar defend Paul's authorship?”, short “Some do.”). Was pastorals-dissent/1, Martin l19 ch. 1 [00:00:00]: “There has been some question in the last several years that maybe the actual historical Paul wrote II Timothy because II Timothy looks sort of like a last will and testament of Paul that he may have written in prison. But I don't tend to buy that.” and pastorals-dissent/2, ch. 3 [00:26:50]: “So there are scholars who would defend these letters being by Paul and that's what they would say.” Both verified in the second pass 2026-11-23. Cut because “Some do.” was Martin's report alone."
+  - "#145 2026-11-24: R. F. Collins, “Pastoral Epistles”, New Catholic Encyclopedia, on Encyclopedia.com (bibliography to 2001, so the 2nd-edition text), read in full: “by the end of the twentieth century biblical scholarship reached almost universal consensus that these texts had not been written by Paul. A small number of scholars continue to hold that some of Paul's personal notes have been incorporated into 2 Timothy (the so-called fragment hypothesis).” Not cited: the New Catholic Encyclopedia's class is unruled (#86), and the fragment hypothesis is not a defence of Paul's authorship. If the owner rules it Reference, it and Martin l19 could back a reworded statement (“Does any scholar think Paul had a hand in them?” / “A small number do, at least for 2 Timothy.”), and its “almost universal consensus” could join pastorals."
   - "Kampotela Luc Bulundwe, “Ethics and Pseudepigraphy: Do the Ends Always Justify the Means?”, Athens Journal of Humanities and Arts 6.4 (2019), pp. 323–344 (University of Geneva repository PDF). Was undisputed/3 (p. 323, “most commentators distinguish seven authentic epistles”), pseudepigraphy/2 (p. 323, “up to six pseudepigraphical epistles”), accepted/2–5 (pp. 324, 326: the indifference idea, Amsler, forgery “so widespread” since Ehrman 2013, Aune and Burnet), pastorals/4–5 (p. 336 and note 74: 2 Timothy's pseudonymity “the majority but not unanimous position”; the consensus questioned by Johnson and Herzer) and pastorals-dissent/1–2 (note 74: Herzer, only 1 Timothy pseudonymous; Johnson, all three authentic). Dropped 2026-11-23 by the owner's decision: the publisher (ATINER) has a weak reputation and the article's scope on the Pastorals is narrow. Quotes not re-matched in the second pass, since the source is not cited. The page loses Johnson and Herzer by name and “not unanimous”."
   - "Ehrman ch. 16 summary, section “Pseudonymity in the Ancient World”: “This is not to say, however, that this behavior was condoned in antiquity. On the contrary, ancient authors almost universally condemned the practice.” Verified verbatim in the second pass 2026-11-23. Was accepted/1. The accepted statement (“Was writing in someone else's name accepted in antiquity?” / “Views differ …”) is cut: “Views differ” and “has spread since 2013” rested only on Bulundwe. This sentence alone would answer the question one way while the first pass's reading found the matter disputed, so it is not used to rebuild the statement (when in doubt, cut)."

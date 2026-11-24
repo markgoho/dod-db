@@ -148,20 +148,6 @@ statements:
         locator: "ch. 1 [00:00:00]"
         quote: "When did these letters come about? It's everybody guess. I actually tend to think that the Pastoral Epistles were probably written sometime in the second century, and maybe even toward the middle of the second century. That's a bit later than a lot of scholars would put them, and we're just guessing anyway."
         read: 2026-11-23
-  - id: pastorals-dissent
-    group: "1 and 2 Timothy and Titus"
-    question: "Does any scholar defend Paul's authorship?"
-    short: "Some do."
-    text: "Some do. Dale Martin's Yale lectures, recorded in 2009, say there are scholars who would defend Paul's authorship of these letters, and that in the years before the lectures some had asked whether Paul himself wrote 2 Timothy, since it looks somewhat like his last will and testament. Martin says he does not tend to accept that."
-    cites:
-      - source: martin-rlst152-l19
-        locator: "ch. 1 [00:00:00]"
-        quote: "There has been some question in the last several years that maybe the actual historical Paul wrote II Timothy because II Timothy looks sort of like a last will and testament of Paul that he may have written in prison. But I don't tend to buy that."
-        read: 2026-11-23
-      - source: martin-rlst152-l19
-        locator: "ch. 3 [00:26:50]"
-        quote: "So there are scholars who would defend these letters being by Paul and that's what they would say."
-        read: 2026-11-23
   - id: disputed
     group: "Ephesians, Colossians and 2 Thessalonians"
     question: "What about Ephesians, Colossians and 2 Thessalonians?"
