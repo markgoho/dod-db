@@ -11,6 +11,12 @@
 
 const LINK_SELECTOR = 'a[href*="biblegateway.com/passage"]';
 
+/** A chapter or verse, not a whole book: whole books are too long to read in the window. */
+function isPassageLink(link: HTMLAnchorElement): boolean {
+  const search = new URL(link.href).searchParams.get("search") ?? "";
+  return /\s\d+(?:[:.\-–]\d+)*$/.test(search.trim());
+}
+
 function framedUrl(href: string): string {
   const url = new URL(href);
   url.searchParams.set("interface", "print");
@@ -99,7 +105,7 @@ function init(): void {
     const link = (event.target as Element).closest<HTMLAnchorElement>(
       LINK_SELECTOR,
     );
-    if (!link) return;
+    if (!link || !isPassageLink(link)) return;
     event.preventDefault();
     reader ??= buildReader();
     reader.open(link);

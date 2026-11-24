@@ -479,6 +479,9 @@ function seekTo(seconds: number): void {
  * Handle click on transcript line.
  */
 function handleLineClick(event: Event): void {
+  // A link inside the line (a scripture reference) does its own thing; don't
+  // also seek, rewrite the hash and copy the line link.
+  if ((event.target as Element).closest("a")) return;
   const line = event.currentTarget as HTMLElement;
   const seconds = Number.parseFloat(line.dataset["start"] ?? "0");
   const lineId = line.id;

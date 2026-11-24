@@ -1,0 +1,13 @@
+{{- /*
+  Floating passage window for BibleGateway scripture links, site-wide. The
+  script builds the window on first click, so pages without scripture links
+  only pay for the small file.
+  */
+-}}
+{{ $css := resources.Get "css/scripture-reader.css" | resources.Minify }}
+<style>{{ $css.Content | safeCSS }}</style>
+{{ $js := resources.Get "ts/scripture-reader.ts" | js.Build (dict "targetPath" "scripture-reader.js") }}
+{{ if hugo.IsProduction }}
+  {{ $js = $js | resources.Minify | resources.Fingerprint }}
+{{ end }}
+<script src="{{ $js.RelPermalink }}" defer></script>
