@@ -227,6 +227,26 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(select(page, `body > script${script}`)).toHaveLength(1);
   });
 
+  test("Sources used is a closed disclosure whose summary counts its rows, and every source link lands on a row inside it", () => {
+    const sources = select(page, "details.timeline-sources");
+    expect(sources).toHaveLength(1);
+    expect(sources[0]?.attrs.open).toBeUndefined();
+
+    const rows = ids(
+      select(page, "details.timeline-sources .scholarship-source"),
+    );
+    const summary = select(page, "details.timeline-sources > summary")[0];
+    expect(summary?.text.replaceAll(/\s+/g, " ").trim()).toBe(
+      `Sources used ${rows.length} sources`,
+    );
+
+    const linked = new Set(
+      select(page, 'a[href^="#source-"]').map(a => a.attrs.href!.slice(1)),
+    );
+    expect(linked.size).toBeGreaterThan(0);
+    expect([...linked].filter(id => !rows.includes(id))).toEqual([]);
+  });
+
   test("without drafts, the page shows the notice and no minimap or its script", () => {
     expect(select(published, ".timeline-minimap")).toHaveLength(0);
     expect(select(published, 'script[src*="timeline-minimap"]')).toHaveLength(

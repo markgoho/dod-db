@@ -350,3 +350,33 @@
     display: none;
   }
 }
+
+/* ---------- Sources used: a closed disclosure (#173) ---------- */
+
+/* Closed, the hidden table must leave no gap under the summary, so the space sits inside it. */
+.timeline-sources {
+  gap: 0;
+}
+
+.timeline-sources > .scholarship-sources {
+  padding-block-start: var(--space-s);
+}
+
+.timeline-sources__summary {
+  align-items: center;
+  row-gap: var(--space-3xs);
+}
+
+.timeline-sources__summary > .cloud-section__title {
+  margin-block-end: 0;
+}
+
+/*
+  A #source-<id> link opens the disclosure (Chrome reveals a fragment target
+  inside a closed <details>), but the slide would start it at block-size 0,
+  so the scroll to the row would land short. Opened for a target, it opens
+  at once.
+*/
+.timeline-sources:has(:target)::details-content {
+  transition: none;
+}

@@ -8,6 +8,9 @@
  * One deliberate addition to "only the scrollend sync": a jump from the open
  * Contents popover closes it, so the popover never covers the target it just
  * scrolled to (WCAG 2.4.11).
+ *
+ * And a fallback for Sources used (#173), a closed <details>: Chrome opens it
+ * for a #source-<id> link to a row inside; elsewhere this does.
  */
 
 function syncAriaCurrent(minimap: Element): void {
@@ -53,4 +56,21 @@ if (minimap && CSS.supports("scroll-target-group", "auto")) {
     );
   syncSoon();
   document.addEventListener("scrollend", syncSoon);
+}
+
+// Browsers without beforematch do not reveal a fragment target inside a
+// closed <details> either (Safari): open it, then go to the target.
+function revealTarget(): void {
+  const target = document.getElementById(
+    decodeURIComponent(location.hash.slice(1)),
+  );
+  const closed = target?.closest("details:not([open])");
+  if (!target || !(closed instanceof HTMLDetailsElement)) return;
+  closed.open = true;
+  target.scrollIntoView();
+}
+
+if (!("onbeforematch" in HTMLElement.prototype)) {
+  revealTarget();
+  addEventListener("hashchange", revealTarget);
 }

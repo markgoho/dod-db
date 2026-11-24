@@ -142,8 +142,12 @@
     {{ end }}
 
     {{ with $sourceIds }}
-      <section class="cloud-section timeline-measure">
-        <h2 class="type-section-title cloud-section__title">Sources used</h2>
+      {{/* Closed by default (#173). Chrome opens it for find-in-page and for a #source-<id> link to a row inside. */}}
+      <details class="cloud-section timeline-measure timeline-sources">
+        <summary class="disclosure-summary timeline-sources__summary">
+          <h2 class="type-section-title cloud-section__title">Sources used</h2>
+          <span class="timeline-section-intro">{{ len . }} sources</span>
+        </summary>
         <div class="scholarship-sources">
           <table class="scholarship-sources__table">
             <thead>
@@ -184,7 +188,7 @@
             </tbody>
           </table>
         </div>
-      </section>
+      </details>
     {{ end }}
   </section>
 {{ end }}
