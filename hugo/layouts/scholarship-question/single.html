@@ -1,0 +1,77 @@
+{{ define "head-styles" }}
+  {{ $styles := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") }}
+  {{ $inlineCSS := $styles | resources.Concat "css/scholarship-question.css" | resources.Minify }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+  {{/* Question Page: one Scholarship Page statement at its own URL
+    (/scholarship/<slug>/<id>/), made by content/scholarship/_content.gotmpl.
+    It exists to be shared: its link preview carries the question, the short
+    answer and the question's card image. The statement is read from the parent
+    page, never copied.
+
+    At #card the card alone fills a fixed 1200 by 630 image, which
+    `bun run scholarship:question-cards <slug>` photographs.
+  */}}
+  {{ $q := partial "scholarship-question-lookup.html" . }}
+  {{ $parent := $q.parent }}
+  {{ $s := $q.statement }}
+  <section class="term-page">
+    <header class="page-hero">
+      <p class="page-hero__eyebrow type-eyebrow panel panel--accent">
+        Scholarship Page ·
+        <a href="{{ $parent.RelPermalink }}">{{ $parent.Title }}</a>
+      </p>
+      <h1 class="page-hero__title">{{ $s.question }}</h1>
+      <p class="tag-hero__dek scholarship-question-page__short">
+        {{ $s.short }}
+      </p>
+    </header>
+
+    <article class="scholarship-page">
+      <p class="scholarship-notice panel panel--muted">
+        {{ printf "This is one question from %s’s summary of published scholarship on %s. It is not the show’s work and has not been reviewed by the Hosts." site.Title $parent.Title }}
+      </p>
+
+      <div class="scholarship-question-page panel">
+        {{ partial "scholarship-statement-body.html" (dict "statement" $s "parent" $parent "sourceHref" $parent.RelPermalink "onQuestionPage" true) }}
+      </div>
+
+      <p>
+        <a class="chip" href="{{ $parent.RelPermalink }}#{{ $s.id }}"
+          >{{ printf "All %d questions on %s" (len $parent.Params.statements) $parent.Title }}</a
+        >
+      </p>
+    </article>
+
+    {{/* The card image, shown only at #card. */}}
+    <div class="question-card" id="card" aria-hidden="true">
+      <p class="question-card__eyebrow">
+        <span>{{ $parent.Title }}</span>
+        <span class="question-card__flag">What the scholarship says</span>
+      </p>
+      <div class="question-card__main">
+        <p class="question-card__question">{{ $s.question }}</p>
+        <p class="question-card__short">{{ $s.short }}</p>
+      </div>
+      <div class="question-card__credit">
+        <p class="question-card__site">
+          {{ site.Title }}
+          <span
+            >{{ printf "%s%s" site.Params.canonicalHost (.RelPermalink | strings.TrimSuffix "/") }}</span
+          >
+        </p>
+        <p>
+          A summary of published scholarship, with every source cited on the
+          page. Not the show’s work.
+        </p>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/breadcrumb.html" . }}
+  {{ partial "scholarship-question-links-script.html" . }}
+{{ end }}

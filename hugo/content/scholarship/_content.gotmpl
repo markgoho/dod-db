@@ -1,0 +1,37 @@
+{{- /*
+  One Question Page per Scholarship Page statement, at
+  /scholarship/<slug>/<statement id>/: the shareable URL for one question,
+  whose link preview shows the question, its short answer and its card image.
+
+  The statements live in the sibling pages' front matter, which a content
+  adapter can't reach through site.GetPage, so it reads the files. A Question
+  Page carries only the parent slug and statement id; its layout looks the
+  statement up on the parent, so nothing is copied.
+
+  `list: never` keeps Question Pages out of .Pages, RegularPages and the
+  sitemap: every list of Scholarship Pages stays as it was. In an adapter the
+  build map needs `render` set too, or the page is not rendered at all.
+*/ -}}
+{{- range os.ReadDir "content/scholarship" -}}
+  {{- if and (strings.HasSuffix .Name ".md") (ne .Name "_index.md") -}}
+    {{- $slug := strings.TrimSuffix ".md" .Name -}}
+    {{- $raw := os.ReadFile (printf "content/scholarship/%s" .Name) -}}
+    {{- with findRESubmatch `(?s)\A---\r?\n(.*?)\r?\n---` $raw 1 -}}
+      {{- $fm := index (index . 0) 1 -}}
+      {{- $data := resources.FromString (printf "scholarship-front-matter/%s.yaml" $slug) $fm | transform.Unmarshal -}}
+      {{- if not $data.draft -}}
+        {{- range $data.statements -}}
+          {{- $.AddPage (dict
+            "path" (printf "%s/%s" $slug .id)
+            "title" .question
+            "kind" "page"
+            "type" "scholarship-question"
+            "build" (dict "list" "never" "render" "always" "publishResources" true)
+            "params" (dict "parent" $slug "statement" .id)
+            )
+          -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

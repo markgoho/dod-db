@@ -15,8 +15,32 @@
     {{- $infographicCard = $card | absURL -}}
   {{- end -}}
 {{- end -}}
+{{- /*
+  Question Page: the question is the title, the short answer the
+  description, and its own card the image (else the parent's card).
+  */
+-}}
+{{- $isQuestion := eq .Type "scholarship-question" -}}
+{{- $questionCard := "" -}}
+{{- $questionCardSize := slice -}}
+{{- if $isQuestion -}}
+  {{- $q := partial "scholarship-question-lookup.html" . -}}
+  {{- if fileExists (printf "static/%s" $q.card) -}}
+    {{- $questionCard = $q.card | absURL -}}
+    {{- $questionCardSize = slice 1200 630 -}}
+  {{- else -}}
+    {{- $parentCard := printf "assets/scholarship/%s-card.png" .Params.parent -}}
+    {{- if fileExists (printf "static/%s" $parentCard) -}}
+      {{- $questionCard = $parentCard | absURL -}}
+      {{- $questionCardSize = slice 2400 1260 -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- $twitterCard := cond (and $isSynthesis (not $infographicCard)) "summary" "summary_large_image" -}}
-{{- if and $isSynthesis .Params.dek -}}
+{{- if $isQuestion -}}
+  {{- $description = (partial "scholarship-question-lookup.html" .).statement.short -}}
+  {{- $twitterCard = cond (ne $questionCard "") "summary_large_image" "summary" -}}
+{{- else if and $isSynthesis .Params.dek -}}
   {{- $description = .Params.dek -}}
 {{- else if .Description -}}
   {{- $description = .Description -}}
@@ -73,6 +97,19 @@
     <meta
       name="twitter:image"
       content="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg" />
+  {{- end }}
+{{- else if $isQuestion -}}
+  <meta property="og:type" content="article" />
+  {{- with $questionCard }}
+    <meta property="og:image" content="{{ . }}" />
+    <meta property="og:image:width" content="{{ index $questionCardSize 0 }}" />
+    <meta
+      property="og:image:height"
+      content="{{ index $questionCardSize 1 }}" />
+    <meta
+      property="og:image:alt"
+      content="{{ printf "%s %s" $.Title $description }}" />
+    <meta name="twitter:image" content="{{ . }}" />
   {{- end }}
 {{- else if $isSynthesis -}}
   <meta property="og:type" content="article" />

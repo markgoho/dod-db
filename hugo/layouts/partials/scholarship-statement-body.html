@@ -1,0 +1,66 @@
+{{- /*
+  One statement's answer: the link actions first (where they are seen), then
+  its text and its cited passages.
+  Shared by the Scholarship Page (inside the question's <details>) and the
+  Question Page, so the two can't drift.
+
+  Takes: statement, parent (the Scholarship Page), and sourceHref, the prefix
+  for the Sources used row links ("" on the Scholarship Page itself, the
+  parent's URL elsewhere), and onQuestionPage, which drops the link to the
+  page the reader is already on.
+  */
+-}}
+{{- $s := .statement -}}
+{{- $parent := .parent -}}
+{{- $sourceHref := .sourceHref | default "" -}}
+{{- $onQuestionPage := .onQuestionPage | default false -}}
+{{- $registry := index hugo.Data "external-sources" -}}
+{{- $shortCites := partial "scholarship-short-cite.html" $parent -}}
+{{- $questionURL := printf "%s%s/" $parent.Permalink $s.id -}}
+<div class="scholarship-question__body">
+  {{/* The link to share is the Question Page: a #fragment never reaches a
+    link-preview crawler, so only its own URL can carry this question's card.
+    scholarship-question-links.ts wires the buttons; without JS the link
+    itself still works.
+  */}}
+  <div class="scholarship-question__actions" id="{{ $s.id }}-links">
+    {{ if not $onQuestionPage }}
+      <a class="chip scholarship-question__link" href="{{ $questionURL }}"
+        >Link to this question</a
+      >
+    {{ end }}
+    <span class="scholarship-question__copy">
+      <button
+        type="button"
+        class="chip scholarship-question__copy-button"
+        command="--copy-link"
+        commandfor="{{ $s.id }}-links"
+        data-url="{{ $questionURL }}"
+        hidden>
+        Copy link
+      </button>
+      <span class="scholarship-question__copy-tip" role="status"></span>
+    </span>
+    <button
+      type="button"
+      class="chip scholarship-question__share-button"
+      data-url="{{ $questionURL }}"
+      data-title="{{ $s.question }}"
+      hidden>
+      Share
+    </button>
+  </div>
+  <p>{{ $s.text }}</p>
+  <ul class="scholarship-cites" role="list">
+    {{ range $s.cites }}
+      {{ $src := index $registry .source }}
+      <li class="scholarship-cite">
+        <blockquote class="scholarship-cite__quote">“{{ .quote }}”</blockquote>
+        {{/* Author-date goes to the Sources used row; the locator opens the passage. */}}
+        <p class="scholarship-meta">
+          {{ printf `<a href="%s#source-%s">%s</a>, <a href="%s" rel="noopener">%s</a>` (htmlEscape $sourceHref) (htmlEscape .source) (htmlEscape (index $shortCites .source)) (htmlEscape (.url | default $src.url)) (htmlEscape (.locator | default "source")) | safeHTML }}
+        </p>
+      </li>
+    {{ end }}
+  </ul>
+</div>

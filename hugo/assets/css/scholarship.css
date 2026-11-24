@@ -615,3 +615,157 @@
   font-weight: var(--font-weight-bold);
   text-align: center;
 }
+
+/*
+  Statement links: open the Question Page, copy its URL, or share it. The
+  buttons start [hidden] and the script reveals them where they work; .chip's
+  display would otherwise override [hidden].
+*/
+.scholarship-question__actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+}
+
+.scholarship-question__actions [hidden] {
+  display: none;
+}
+
+.scholarship-question__actions button.chip {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.scholarship-question__copy {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--space-2xs);
+}
+
+/* The tip is the live region: hidden with opacity so it stays announced. */
+.scholarship-question__copy-tip {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--ease-standard);
+}
+
+.scholarship-question__copy-button:is([data-copied], [data-failed])
+  + .scholarship-question__copy-tip {
+  opacity: 1;
+}
+
+.scholarship-question__copy-button[data-failed]
+  + .scholarship-question__copy-tip {
+  color: var(--color-action);
+}
+
+/* Question Page: the answer in one panel, without the details' number indent. */
+.scholarship-question-page .scholarship-question__body {
+  padding: var(--space-m) var(--space-s);
+}
+
+.scholarship-question-page__short {
+  font-weight: var(--font-weight-semibold);
+}
+
+/*
+  Question card: hidden on the page; at #card it alone fills the 1200 by 630
+  link-preview image (a literal image size, not a layout measure).
+*/
+.question-card {
+  display: none;
+}
+
+.question-card:target {
+  background: var(--tan-100);
+  block-size: 630px;
+  display: grid;
+  gap: var(--space-s);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  inline-size: 1200px;
+  inset: 0 auto auto 0;
+  overflow: hidden;
+  /* The same safe area as the page cards: link previews crop the edges. */
+  padding: 40px 90px;
+  position: fixed;
+  z-index: calc(var(--z-index-sticky) + 1);
+}
+
+.question-card p {
+  margin: 0;
+}
+
+.question-card__main {
+  align-content: center;
+  display: grid;
+  gap: var(--space-m);
+}
+
+.question-card__eyebrow {
+  align-items: center;
+  display: flex;
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  gap: var(--space-s);
+  text-transform: uppercase;
+}
+
+.question-card__flag {
+  background: var(--color-accent);
+  font-family: var(--font-family-main);
+  font-size: var(--step--1);
+  font-style: normal;
+  padding: var(--space-4xs) var(--space-2xs);
+}
+
+.question-card__question {
+  font-family: var(--font-family-display);
+  font-size: var(--step-5);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
+  text-wrap: balance;
+}
+
+.question-card__short {
+  border-inline-start: var(--border-width-md) solid var(--color-action);
+  font-size: var(--step-1);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-heading);
+  padding-inline-start: var(--space-s);
+  text-wrap: pretty;
+}
+
+.question-card__credit {
+  border-block-start: var(--border-width-md) solid var(--tan-900);
+  column-gap: var(--space-m);
+  display: grid;
+  font-size: var(--step--2);
+  grid-template-columns: auto minmax(0, 1fr);
+  padding-block-start: var(--space-xs);
+}
+
+.question-card__credit p {
+  font-size: inherit;
+}
+
+.question-card__site {
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+}
+
+.question-card__site > span {
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+}

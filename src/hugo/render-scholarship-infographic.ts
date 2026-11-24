@@ -11,29 +11,13 @@
  */
 
 import path from "node:path";
+import { screenshot } from "./chrome.js";
 
 /** The poster, for posting as an image; the card, for link previews (og:image). */
 const IMAGES = [
   { target: "share", suffix: "", width: 1080, height: 1350 },
   { target: "share-card", suffix: "-card", width: 1200, height: 630 },
 ];
-const CHROME_NAMES = [
-  "google-chrome",
-  "google-chrome-stable",
-  "chromium",
-  "chromium-browser",
-];
-
-function findChrome(): string {
-  const chrome =
-    process.env["CHROME_BIN"] ??
-    CHROME_NAMES.map(name => Bun.which(name)).find(Boolean);
-  if (!chrome) {
-    throw new Error("No Chrome found. Set CHROME_BIN to a Chrome binary.");
-  }
-  return chrome;
-}
-
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const slug = args.find(arg => !arg.startsWith("--"));
@@ -60,24 +44,11 @@ async function main(): Promise<void> {
       "hugo/static/assets/scholarship",
       `${slug}${image.suffix}.png`,
     );
-    const chrome = Bun.spawn(
-      [
-        findChrome(),
-        "--headless=new",
-        "--hide-scrollbars",
-        "--force-device-scale-factor=2",
-        `--window-size=${image.width},${image.height}`,
-        "--virtual-time-budget=5000",
-        `--screenshot=${path.resolve(out)}`,
-        `${url}#${image.target}`,
-      ],
-      { stdout: "ignore", stderr: "pipe" },
-    );
-    if ((await chrome.exited) !== 0 || !(await Bun.file(out).exists())) {
-      throw new Error(
-        `Chrome did not write ${out}:\n${await new Response(chrome.stderr).text()}`,
-      );
-    }
+    await screenshot(`${url}#${image.target}`, path.resolve(out), {
+      width: image.width,
+      height: image.height,
+      scale: 2,
+    });
     console.log(`✓ ${out} (${image.width}×${image.height} at 2x)`);
   }
 }

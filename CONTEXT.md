@@ -140,6 +140,10 @@ _Avoid_: Taxonomy Page
 A **Synthesis Page** on one subject that lists questions about it, each answered from **External Sources**.
 _Avoid_: Consensus page
 
+**Question Page**:
+One **Scholarship Page** statement at its own URL (`/scholarship/<slug>/<id>/`), generated from the page and made to be shared: its link preview shows the question, the short answer and the question's card image.
+_Avoid_: Permalink, share page
+
 **Timeline**:
 The **Synthesis Page** that places events and the composition of **Scriptural Books** by the dates **External Sources** give, as **Timeline Entries**.
 _Avoid_: Chronology, dating page
@@ -221,6 +225,8 @@ _Avoid_: Citation, snippet source
 - A **Scholarship Page** is published only when two or more independent **External Sources**, at least one Scholarly or Reference, back its core claim and it makes three or more statements.
 - A new **Episode** can add a **Trigger Claim** to a **Synthesis Page** or suggest a new subject; it never changes a statement.
 - A **Synthesis Page** shows the date its **External Sources** were read; its statements change only when the owner re-reviews it.
+- A **Scholarship Page** statement's id is a public URL once published (its **Question Page** and the page's `#<id>` link): it never changes.
+- Every statement of a published **Scholarship Page** has a **Question Page** card rendered from its current question and short answer; `check:scholarship` fails a missing or stale card (`bun run scholarship:question-cards <slug>`).
 - An **External Source** is described once and shared by every **Synthesis Page** that cites it.
 - A **Synthesis Page**, and each **Timeline Entry**, is published only after an independent second agent pass has re-checked every citation, **Trigger Claim** and **External Source**; the owner delegated the per-citation review to that pass (#93, 2026-11-23; extended to the **Timeline**, #110, 2026-11-23).
 - **Guest Speaker** names should be normalized consistently across **Episodes** and **Taxonomy Pages**.

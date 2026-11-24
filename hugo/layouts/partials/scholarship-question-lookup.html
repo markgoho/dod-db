@@ -1,0 +1,10 @@
+{{- /*
+  Returns a Question Page's parent Scholarship Page, its statement, and the
+  card image path (relative to static/, under assets/scholarship/<slug>/).
+  Takes the Question Page.
+  */
+-}}
+{{- $parent := site.GetPage (printf "/scholarship/%s" .Params.parent) -}}
+{{- $statement := index (where $parent.Params.statements "id" .Params.statement) 0 -}}
+{{- $card := printf "assets/scholarship/%s/%s.png" .Params.parent .Params.statement -}}
+{{- return dict "parent" $parent "statement" $statement "card" $card -}}

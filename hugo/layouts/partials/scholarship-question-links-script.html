@@ -1,0 +1,6 @@
+{{- /* Copy-link and share buttons on a statement, and the deep-link fallback. */ -}}
+{{- $js := resources.Get "ts/scholarship-question-links.ts" | js.Build (dict "targetPath" "scholarship-question-links.js") -}}
+{{- if hugo.IsProduction -}}
+  {{- $js = $js | resources.Minify | resources.Fingerprint -}}
+{{- end -}}
+<script src="{{ $js.RelPermalink }}" type="module"></script>

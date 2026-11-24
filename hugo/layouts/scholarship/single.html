@@ -127,23 +127,7 @@
                   >
                   <span class="scholarship-question__short">{{ .short }}</span>
                 </summary>
-                <div class="scholarship-question__body">
-                  <p>{{ .text }}</p>
-                  <ul class="scholarship-cites" role="list">
-                    {{ range .cites }}
-                      {{ $s := index $registry .source }}
-                      <li class="scholarship-cite">
-                        <blockquote class="scholarship-cite__quote">
-                          “{{ .quote }}”
-                        </blockquote>
-                        {{/* Author-date goes to the Sources used row; the locator opens the passage. */}}
-                        <p class="scholarship-meta">
-                          {{ printf `<a href="#source-%s">%s</a>, <a href="%s" rel="noopener">%s</a>` (htmlEscape .source) (htmlEscape (index $shortCites .source)) (htmlEscape (.url | default $s.url)) (htmlEscape (.locator | default "source")) | safeHTML }}
-                        </p>
-                      </li>
-                    {{ end }}
-                  </ul>
-                </div>
+                {{ partial "scholarship-statement-body.html" (dict "statement" . "parent" $) }}
               </details>
             {{ end }}
           </div>
@@ -224,4 +208,5 @@
 {{ define "footer-scripts" }}
   {{ partial "json-ld/scholarship.html" . }}
   {{ partial "json-ld/breadcrumb.html" . }}
+  {{ partial "scholarship-question-links-script.html" . }}
 {{ end }}

@@ -4,6 +4,7 @@ import { mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { checkScholarship } from "./check-scholarship.js";
+import { checkStatementIds } from "./question-cards.js";
 
 const repoRoot = path.resolve(import.meta.dir, "../..");
 const fixtures = path.join(import.meta.dir, "__fixtures__", "scholarship");
@@ -17,16 +18,55 @@ afterAll(async () => {
  * Build a repo root from the `published` fixture (a non-draft page that
  * meets every rule) with the named fixture's files laid over it.
  */
-async function check(name: string): Promise<string[]> {
+async function check(
+  name: string,
+  { cards = false }: { cards?: boolean } = {},
+): Promise<string[]> {
   const root = path.join(scratch, name);
   await $`cp -R ${path.join(fixtures, "published")} ${root}`.quiet();
   if (name !== "published") {
     await $`cp -R ${path.join(fixtures, name)}/. ${root}`.quiet();
   }
-  return checkScholarship(root);
+  return checkScholarship(root, { cards });
 }
 
 const page = "scholarship/test-page";
+
+describe("statement ids and question cards", () => {
+  test("fails statement ids that are not unique slugs clear of the page's own ids", () => {
+    const ids = [
+      "core",
+      "Second",
+      "two--hyphens",
+      "share",
+      "source-x",
+      "core-links",
+      "core",
+    ];
+    const statements = ids.map(id => ({ id, question: "", short: "" }));
+    expect(checkStatementIds(page, statements)).toEqual([
+      `${page}: statement id "Second" is not a lower-case slug (a-z, 0-9, single hyphens)`,
+      `${page}: statement id "two--hyphens" is not a lower-case slug (a-z, 0-9, single hyphens)`,
+      `${page}: statement id "share" collides with an id the page already uses`,
+      `${page}: statement id "source-x" collides with an id the page already uses`,
+      `${page}: statement id "core-links" collides with an id the page already uses`,
+      `${page}: statement id "core" is used twice`,
+    ]);
+  });
+
+  test("a published page whose cards match its statements passes", async () => {
+    expect(await check("cards-current", { cards: true })).toEqual([]);
+  });
+
+  test("fails a published page with a missing card and a stale card", async () => {
+    const fix = "run bun run scholarship:question-cards test-page";
+    expect(await check("cards-stale", { cards: true })).toEqual([
+      `${page}/core: card image is stale (question or short answer changed); ${fix}`,
+      `${page}/second: no card image; ${fix}`,
+      `${page}/tradition: no card image; ${fix}`,
+    ]);
+  });
+});
 
 describe("checkScholarship", () => {
   test("the repo's Scholarship Pages pass", async () => {

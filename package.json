@@ -20,6 +20,7 @@
     "check:timeline": "bun run src/hugo/check-timeline.ts",
     "scholarship:checklist": "bun run src/hugo/scholarship-checklist.ts",
     "scholarship:infographic": "bun run src/hugo/render-scholarship-infographic.ts",
+    "scholarship:question-cards": "bun run src/hugo/render-question-cards.ts",
     "generate:tag-index": "bun run src/hugo/generate-tag-episode-index.ts",
     "generate:book-index": "bun run src/hugo/generate-book-episode-index.ts",
     "topic-page:gather": "bun run src/scripts/gather-topic-context.ts",

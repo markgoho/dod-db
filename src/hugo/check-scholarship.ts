@@ -9,6 +9,11 @@ import { Glob } from "bun";
 import path from "node:path";
 import { z } from "zod";
 import {
+  checkCards,
+  checkStatementIds,
+  readCardManifest,
+} from "./question-cards.js";
+import {
   CiteSchema,
   checkPublishGate,
   dateValue,
@@ -125,6 +130,7 @@ function checkPage(
   const at = `scholarship/${slug}`;
 
   errors.push(...unknownRelated(at, page.related, terms));
+  errors.push(...checkStatementIds(at, page.statements));
 
   for (const statement of page.statements) {
     for (const [index, cite] of statement.cites.entries()) {
@@ -280,7 +286,10 @@ export function checkCandidates(
  * Check every Scholarship Page under `root` (a repo checkout).
  * Returns one message per problem; empty means the check passes.
  */
-export async function checkScholarship(root: string): Promise<string[]> {
+export async function checkScholarship(
+  root: string,
+  { cards = true }: { cards?: boolean } = {},
+): Promise<string[]> {
   const errors: string[] = [];
   const contentDir = path.join(root, "hugo/content/scholarship");
   const registryPath = "hugo/data/external-sources.yaml";
@@ -322,6 +331,8 @@ export async function checkScholarship(root: string): Promise<string[]> {
     }
   }
 
+  const manifest = await readCardManifest(root);
+
   for (const file of pageFiles) {
     const slug = file.replace(/\.md$/, "");
     const pagePath = path.join(contentDir, file);
@@ -350,6 +361,10 @@ export async function checkScholarship(root: string): Promise<string[]> {
     errors.push(
       ...checkPage(slug, page, registry, triggers, review, episodes, terms),
     );
+    // A published page's Question Pages need their link-preview cards.
+    if (cards && !page.draft) {
+      errors.push(...(await checkCards(root, slug, page, manifest)));
+    }
   }
 
   return errors;
