@@ -14,10 +14,6 @@ quotes:
     speaker: "Dan McClellan"
     episode: 134
     timestamp: "00:06:02.079"
-  - text: "The only reason that it's, it's a little more secure than almost anything else from Jesus's life is because the Romans really did crucify people like that. That's the kind of thing they did."
-    speaker: "Dan McClellan"
-    episode: 140
-    timestamp: "00:31:15.018"
   - text: "It's meant to be a spectacle. It's meant to be conspicuous as well."
     speaker: "Dan McClellan"
     episode: 134

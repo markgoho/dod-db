@@ -26,10 +26,6 @@ quotes:
     speaker: "Dan McClellan"
     episode: 157
     timestamp: "00:55:49.777"
-  - text: "The Book of Revelation, traditionally ascribed to the apostle John, this tradition is ancient, but there are many reasons to doubt it."
-    speaker: "Dan McClellan"
-    episode: 39
-    timestamp: "00:02:12.750"
 showAllEpisodes: true
 ---
 
