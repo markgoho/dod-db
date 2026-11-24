@@ -119,6 +119,16 @@
     color-mix(in srgb, var(--tan-900) 14%, transparent);
 }
 
+/*
+  Between the stacked layout and wide screens, the menu and the tools don't
+  share one row. The CTA repeats the Episodes menu link, so it gives way first.
+*/
+@container header (60rem < width < 90rem) {
+  .navbar__cta {
+    display: none;
+  }
+}
+
 @container header (width > 60rem) {
   .navbar__inner {
     grid-template-columns: max-content 1fr max-content;

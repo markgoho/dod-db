@@ -66,3 +66,8 @@ weight = 4
 name = "Guests"
 url = "/guests/"
 weight = 5
+
+[[menu.main]]
+name = "Scholarship"
+url = "/scholarship/"
+weight = 6
