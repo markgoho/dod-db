@@ -5,6 +5,17 @@
   multiplied by spacing tokens.
 */
 
+/* Full width for the variants only; the rest of the page keeps its measure. */
+.timeline-page.scholarship-page {
+  max-width: none;
+}
+
+.timeline-page > :not([data-variant]) {
+  inline-size: 100%;
+  justify-self: center;
+  max-width: var(--content-max-width-measure);
+}
+
 [data-variant] {
   container: tlv / inline-size;
   margin-block-start: var(--space-l);
