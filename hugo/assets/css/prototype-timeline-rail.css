@@ -400,13 +400,107 @@
   view-timeline: --tl-axis;
 }
 
-/* B2: time-proportional; the script sets the bracket from the first to the last entry in view. */
+/*
+  B2: time-proportional. The script maps the viewport's top and bottom to
+  years (piecewise-linear between entries) and moves two caps and a side
+  rule with transforms only, so the bracket glides instead of snapping.
+*/
+.rail-m__here-cap,
+.rail-m__here-side {
+  display: none;
+}
+
 [data-mode="time"] .rail-m__here {
-  block-size: max(var(--space-3xs), calc(var(--size, 0) * 100%));
-  inset-block-start: calc(var(--top, 0) * 100%);
+  block-size: auto;
+  border: 0;
+  inset-block: 0;
 }
 
 [data-mode="time"] .rail-m__here:not(.is-set) {
+  display: none;
+}
+
+[data-mode="time"] .rail-m__here-cap {
+  background: var(--color-action);
+  block-size: var(--border-width-sm);
+  display: block;
+  inset-block-start: calc(-0.5 * var(--border-width-sm));
+  inset-inline: 0;
+  position: absolute;
+  will-change: transform;
+}
+
+[data-mode="time"] .rail-m__here-side {
+  background: var(--color-action);
+  block-size: 100%;
+  display: block;
+  inline-size: var(--border-width-sm);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  position: absolute;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+/*
+  PROTOTYPE (narrated setting), B2: the period a text narrates as a faint
+  hatched span left of the ticks, joined by a dotted arc to the composition
+  tick. Hugo places them by year fraction; the script refines to pixels.
+*/
+.rail-m__setting,
+.rail-m__setting-link,
+.rail-m__setting-trad {
+  pointer-events: none;
+  position: absolute;
+}
+
+.rail-m__setting {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--tan-500) 0 var(--border-width-sm),
+    transparent var(--border-width-sm) calc(2 * var(--border-width-sm))
+  );
+  block-size: calc((var(--b) - var(--a)) * 100%);
+  inline-size: var(--space-3xs);
+  inset-block-start: calc(var(--a) * 100%);
+  inset-inline-start: calc(100% - var(--track) - var(--space-2xs));
+  opacity: 0.75;
+}
+
+/* No year of its own: a short dashed mark at the anchoring tradition date. */
+.rail-m__setting.is-anchored {
+  background: none;
+  block-size: var(--space-2xs);
+  border: var(--border-width-sm) dashed var(--tan-500);
+  min-block-size: var(--space-2xs);
+  translate: 0 -50%;
+}
+
+.rail-m__setting-link {
+  block-size: calc((var(--b) - var(--a)) * 100%);
+  border: var(--border-width-sm) dotted var(--tan-500);
+  border-end-start-radius: var(--space-2xs);
+  border-inline-end: 0;
+  border-start-start-radius: var(--space-2xs);
+  inset-block-start: calc(var(--a) * 100%);
+  inset-inline: calc(100% - var(--track) - var(--space-xs))
+    calc(var(--track) - var(--space-3xs));
+  opacity: 0.8;
+}
+
+/* The tradition's composition date, inside the narrated span. */
+.rail-m__setting-trad {
+  block-size: var(--space-2xs);
+  border: var(--border-width-sm) dashed var(--tan-900);
+  border-radius: 50%;
+  inline-size: var(--space-2xs);
+  inset-block-start: calc(var(--a) * 100%);
+  inset-inline-start: calc(100% - var(--track) - var(--space-2xs));
+  translate: calc(-0.5 * var(--space-2xs) + var(--space-3xs) / 2) -50%;
+}
+
+[data-mode="page"]
+  :is(.rail-m__setting, .rail-m__setting-link, .rail-m__setting-trad) {
   display: none;
 }
 
@@ -677,6 +771,27 @@
   [popover]:not(.\:popover-open) {
     display: none;
   }
+}
+
+/* ---------- Narrated setting on the axis card ---------- */
+
+.timeline-entry__setting {
+  border-inline-start: var(--border-width-sm) dotted var(--tan-500);
+  font-size: var(--step--1);
+  margin: 0;
+  padding-inline-start: var(--space-2xs);
+}
+
+.timeline-entry__setting .type-eyebrow {
+  color: var(--color-text-muted);
+  display: block;
+  font-size: var(--step--2);
+}
+
+.timeline-entry__setting-anchor,
+.timeline-entry__setting-note {
+  color: var(--color-text-muted);
+  font-size: var(--step--1);
 }
 
 /* ---------- Stand-ins and switcher ---------- */

@@ -1,0 +1,22 @@
+{{- /*
+  PROTOTYPE (narrated setting): an entry's setting, normalised. Takes the entry
+  page. Returns dict {display, from, to, anchored, anchorDisplay,
+  traditionWithin} or nil. traditionWithin: the entry's tradition date falls in
+  the setting span, i.e. the tradition holds it was written as narrated.
+  */
+-}}
+{{- $p := .Params -}}
+{{- $s := $p.setting | default (index (index hugo.Data "prototype-timeline-settings") .File.ContentBaseName) -}}
+{{- $out := false -}}
+{{- with $s -}}
+  {{- $from := int (.from | default .anchor.from) -}}
+  {{- $to := int (.to | default $from) -}}
+  {{- $within := false -}}
+  {{- with $p.tradition -}}
+    {{- $tf := int .from -}}
+    {{- $tt := int (.to | default .from) -}}
+    {{- $within = and (le $tf $to) (ge $tt $from) -}}
+  {{- end -}}
+  {{- $out = dict "display" .display "from" $from "to" $to "anchored" (isset . "anchor") "anchorDisplay" (.anchor | default dict).display "traditionWithin" $within -}}
+{{- end -}}
+{{- return $out -}}

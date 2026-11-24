@@ -1,0 +1,22 @@
+# PROTOTYPE (timeline rail, "narrated setting"), throwaway: lives only on
+# branch prototype/timeline-rail. Proposed model: a composition entry may carry
+#   setting: { display, from, to, cites }
+# = the period the text itself narrates (its internal date, not a historical
+# claim), cited to a Reference source. Kept here, keyed by entry id, so real
+# entry front matter stays untouched; the templates read `.Params.setting`
+# first and fall back to this file. Every value is a STAND-IN.
+daniel:
+  display: "STAND-IN: the Babylonian exile into the reign of Cyrus, about 605–536 BCE"
+  from: -605
+  to: -536
+  cites:
+    - { source: STAND-IN, locator: "Dan 1:1; 10:1" }
+deuteronomy:
+  display: "STAND-IN: Moses on the plains of Moab, before the conquest"
+  # The narrative carries no year of its own; it is anchored by a tradition's date, labelled as such.
+  anchor:
+    by: tradition
+    from: -1406
+    display: "no year of its own; shown at the tradition’s 1406 BCE"
+  cites:
+    - { source: STAND-IN, locator: "Deut 1:1–5" }

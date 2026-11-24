@@ -37,6 +37,8 @@
         <div
           class="{{ delimit $bandClasses " " }}"
           data-band="{{ .id }}"
+          data-from="{{ .from }}"
+          data-to="{{ .to }}"
           style="--weight: {{ cond $time .span (add $n 1) }}">
           {{ $parts := split .label " " }}
           <a
@@ -63,6 +65,7 @@
               data-index="{{ .index }}"
               data-title="{{ .title }}"
               data-era-label="{{ $era.label }}"
+              data-year="{{ .year }}"
               style="--pos: {{ cond $time .t (div (add (float $j) 0.5) $n) }}; --col: {{ .col }}"></span>
           {{ end }}
         </div>
@@ -79,7 +82,47 @@
         hidden>
         <span class="rail-m__cursor"></span>
       </div>
-      <div class="rail-m__here" aria-hidden="true"></div>
+      <div class="rail-m__here" aria-hidden="true">
+        <span class="rail-m__here-cap"></span>
+        <span class="rail-m__here-cap"></span>
+        <span class="rail-m__here-side"></span>
+      </div>
+      {{- /* PROTOTYPE (narrated setting), B2 only: the narrated period as a faint hatched span, joined to the composition mark. Hugo places it by year; the script refines to pixels. */ -}}
+      {{ if $time }}
+        {{ $start := float .rail.start }}
+        {{ $span := sub (float .rail.end) $start }}
+        {{ range .rail.eras }}
+          {{ range .items }}
+            {{ $it := . }}
+            {{ with .setting }}
+              {{ $settingClasses := slice "rail-m__setting" }}
+              {{ if .anchored }}
+                {{ $settingClasses = $settingClasses | append "is-anchored" }}
+              {{ end }}
+              <span
+                class="{{ delimit $settingClasses " " }}"
+                aria-hidden="true"
+                data-from="{{ .from }}"
+                data-to="{{ .to }}"
+                style="--a: {{ div (sub (float .from) $start) $span }}; --b: {{ div (sub (float .to) $start) $span }}"></span>
+              <span
+                class="rail-m__setting-link"
+                aria-hidden="true"
+                data-from="{{ div (add (float .from) .to) 2 }}"
+                data-to="{{ $it.year }}"
+                style="--a: {{ div (sub (div (add (float .from) .to) 2) $start) $span }}; --b: {{ div (sub (float $it.year) $start) $span }}"></span>
+              {{ if and .traditionWithin $it.tradFrom }}
+                {{ $ty := div (add (float $it.tradFrom) $it.tradTo) 2 }}
+                <span
+                  class="rail-m__setting-trad"
+                  aria-hidden="true"
+                  data-year="{{ $ty }}"
+                  style="--a: {{ div (sub $ty $start) $span }}"></span>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
     </div>
     <div
       id="rail-tip-{{ $key }}"

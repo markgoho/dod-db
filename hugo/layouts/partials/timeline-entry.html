@@ -17,6 +17,8 @@
 {{- $c := $p.critical -}}
 {{- $t := $p.tradition -}}
 {{- $byTradition := eq .by "tradition" -}}
+{{- /* PROTOTYPE (narrated setting): the period the text narrates, if any. */ -}}
+{{- $setting := partial "prototype/timeline-setting.html" $e -}}
 {{- $placedLabel := "Placed by a tradition’s date" -}}
 {{- $verdict := partial "timeline-undated-label.html" $e -}}
 {{- $holds := "" -}}
@@ -61,6 +63,15 @@
         {{- $verdict -}}
       </p>
       <p class="timeline-entry__note">{{ $p.undated.statement }}</p>
+    {{ end }}
+    {{ with $setting }}
+      <p class="timeline-entry__setting">
+        <span class="type-eyebrow">Set in</span>
+        {{ .display }}
+        {{ with .anchorDisplay }}
+          <span class="timeline-entry__setting-anchor">({{ . }})</span>
+        {{ end }}
+      </p>
     {{ end }}
     {{ with $p.seeAlso }}
       {{ with index $.byId . }}
@@ -118,6 +129,11 @@
       <p class="timeline-entry__date timeline-entry__date--tradition">
         {{- .display -}}
       </p>
+      {{ if and $setting $setting.traditionWithin }}
+        <p class="timeline-entry__note timeline-entry__setting-note">
+          This tradition holds the text was written at the time it narrates.
+        </p>
+      {{ end }}
     </div>
   {{ end }}
 </li>

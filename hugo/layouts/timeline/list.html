@@ -48,6 +48,13 @@
       {{ if .standin }}
         {{ $items = $items | append (merge $base (dict "id" .standin.id "title" (strings.TrimPrefix "STAND-IN: " .standin.title) "standin" true)) }}
       {{ else }}
+        {{/* PROTOTYPE (narrated setting): the setting span and the tradition's composition date. */}}
+        {{ with partial "prototype/timeline-setting.html" .page }}
+          {{ $base = merge $base (dict "setting" .) }}
+        {{ end }}
+        {{ with .page.Params.tradition }}
+          {{ $base = merge $base (dict "tradFrom" (int .from) "tradTo" (int (.to | default .from))) }}
+        {{ end }}
         {{ $items = $items | append (merge $base (dict "id" .page.File.ContentBaseName "title" .page.Title "standin" false)) }}
       {{ end }}
       {{ $n = add $n 1 }}
@@ -55,7 +62,7 @@
     {{ $railEras = $railEras | append (dict "id" (printf "era-%d" $i) "tl" (printf "--tl-era-%d" $i) "label" .label "from" .from "to" .to "span" (sub .to .from) "items" $items) }}
     {{ $scope = $scope | append (printf "--tl-era-%d" $i) }}
   {{ end }}
-  {{ $rail := dict "eras" $railEras "count" $n }}
+  {{ $rail := dict "eras" $railEras "count" $n "start" (index $eras 0).from "end" (index $eras (sub (len $eras) 1)).to }}
 
   {{ $sourceIds := partial "timeline-source-ids.html" $ordered }}
   {{ $shortCites := partial "source-short-cites.html" $sourceIds }}
@@ -134,6 +141,8 @@
             {{ range $i, $era := . }}
               <li
                 id="era-{{ $i }}"
+                data-from="{{ .from }}"
+                data-to="{{ .to }}"
                 tabindex="-1"
                 style="view-timeline: --tl-era-{{ $i }}"
                 class="timeline-era{{ if not .items }}
