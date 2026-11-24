@@ -1,0 +1,52 @@
+{{- /*
+  Where each published Timeline Entry sits (#109 §3). Takes the entry pages;
+  returns dict:
+  byId      entry id → entry page
+  placed    spine entries in date order, each dict {key, page, from, to}
+  unplaced  entries with no Critical Date, by title
+  years     every Critical and Tradition Date year, for the scale
+  Shared by the page body and its JSON-LD so both list entries in one order.
+  */
+-}}
+{{- $entries := . -}}
+{{- $byId := dict -}}
+{{- range $entries -}}
+  {{- $byId = merge $byId (dict .File.ContentBaseName .) -}}
+{{- end -}}
+
+{{- /* Spine: entries with a Critical Date. An anchored entry ("exilic") takes its
+  years from its anchor's sourced date; placement never invents a year.
+  Sort by critical.sort (default from); ties go events first, then title.
+  */
+-}}
+{{- $placed := slice -}}
+{{- $unplaced := slice -}}
+{{- $years := slice -}}
+{{- range $entry := $entries -}}
+  {{- $c := .Params.critical -}}
+  {{- with .Params.tradition -}}
+    {{- $years = $years | append .from (.to | default .from) -}}
+  {{- end -}}
+  {{- if $c -}}
+    {{- $from := $c.from -}}
+    {{- $to := $c.to -}}
+    {{- with $c.anchor -}}
+      {{- $a := index $byId . -}}
+      {{- if not $a -}}
+        {{- errorf "Timeline: %s anchors to %q, which is not a published entry" $entry.File.Path . -}}
+      {{- end -}}
+      {{- $from = $a.Params.critical.from -}}
+      {{- $to = $a.Params.critical.to -}}
+    {{- end -}}
+    {{- $to = $to | default $from -}}
+    {{- $sort := $c.sort | default $from -}}
+    {{- $years = $years | append $from $to -}}
+    {{- $key := printf "%07d|%d|%s" (add (int $sort) 1000000) (cond (eq .Params.kind "event") 0 1) (lower .Title) -}}
+    {{- $placed = $placed | append (dict "key" $key "page" . "from" $from "to" $to) -}}
+  {{- else -}}
+    {{- $unplaced = $unplaced | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $placed = sort $placed "key" -}}
+{{- $unplaced = sort $unplaced "Title" -}}
+{{- return dict "byId" $byId "placed" $placed "unplaced" $unplaced "years" $years -}}
