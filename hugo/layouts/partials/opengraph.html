@@ -1,8 +1,10 @@
 {{- $description := .Site.Params.description -}}
 {{- $isScholarshipPage := and (eq .Section "scholarship") .IsPage -}}
-{{- /* Scholarship Pages have no image, so they take the small card. */ -}}
-{{- $twitterCard := cond $isScholarshipPage "summary" "summary_large_image" -}}
-{{- if and $isScholarshipPage .Params.dek -}}
+{{- $isTimeline := and (eq .Section "timeline") (eq .Kind "section") -}}
+{{- /* Synthesis pages: dek as description, no Host name or image, so the small card. */ -}}
+{{- $isSynthesis := or $isScholarshipPage $isTimeline -}}
+{{- $twitterCard := cond $isSynthesis "summary" "summary_large_image" -}}
+{{- if and $isSynthesis .Params.dek -}}
   {{- $description = .Params.dek -}}
 {{- else if .Description -}}
   {{- $description = .Description -}}
@@ -60,7 +62,7 @@
       name="twitter:image"
       content="https://img.youtube.com/vi/{{ . }}/maxresdefault.jpg" />
   {{- end }}
-{{- else if $isScholarshipPage -}}
+{{- else if $isSynthesis -}}
   <meta property="og:type" content="article" />
 {{- else if and (eq .Type "guests") (eq .Kind "term") -}}
   <meta property="og:type" content="profile" />

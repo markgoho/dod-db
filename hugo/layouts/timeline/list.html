@@ -13,45 +13,11 @@
     {{ $episodesByNumber = merge $episodesByNumber (dict (string .Params.episodeNumber) .) }}
   {{ end }}
 
-  {{ $byId := dict }}
-  {{ range $entries }}
-    {{ $byId = merge $byId (dict .File.ContentBaseName .) }}
-  {{ end }}
-
-  {{/* Spine: entries with a Critical Date. An anchored entry ("exilic") takes its
-    years from its anchor's sourced date; placement never invents a year.
-    Sort by critical.sort (default from); ties go events first, then title.
-  */}}
-  {{ $placed := slice }}
-  {{ $unplaced := slice }}
-  {{ $years := slice }}
-  {{ range $entry := $entries }}
-    {{ $c := .Params.critical }}
-    {{ with .Params.tradition }}
-      {{ $years = $years | append .from (.to | default .from) }}
-    {{ end }}
-    {{ if $c }}
-      {{ $from := $c.from }}
-      {{ $to := $c.to }}
-      {{ with $c.anchor }}
-        {{ $a := index $byId . }}
-        {{ if not $a }}
-          {{ errorf "Timeline: %s anchors to %q, which is not a published entry" $entry.File.Path . }}
-        {{ end }}
-        {{ $from = $a.Params.critical.from }}
-        {{ $to = $a.Params.critical.to }}
-      {{ end }}
-      {{ $to = $to | default $from }}
-      {{ $sort := $c.sort | default $from }}
-      {{ $years = $years | append $from $to }}
-      {{ $key := printf "%07d|%d|%s" (add (int $sort) 1000000) (cond (eq .Params.kind "event") 0 1) (lower .Title) }}
-      {{ $placed = $placed | append (dict "key" $key "page" . "from" $from "to" $to) }}
-    {{ else }}
-      {{ $unplaced = $unplaced | append . }}
-    {{ end }}
-  {{ end }}
-  {{ $placed = sort $placed "key" }}
-  {{ $unplaced = sort $unplaced "Title" }}
+  {{ $placement := partial "timeline-placement.html" $entries }}
+  {{ $byId := $placement.byId }}
+  {{ $placed := $placement.placed }}
+  {{ $unplaced := $placement.unplaced }}
+  {{ $years := $placement.years }}
 
   {{/* Scale: every published Critical and Tradition Date, padded out to whole 500-year eras. */}}
   {{ $scale := dict }}
@@ -211,4 +177,9 @@
       </section>
     {{ end }}
   </section>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/timeline.html" . }}
+  {{ partial "json-ld/breadcrumb.html" . }}
 {{ end }}

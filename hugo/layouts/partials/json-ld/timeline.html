@@ -1,0 +1,38 @@
+{{- /* Takes the Timeline section page. One ListItem per published entry, in page order. */ -}}
+{{- $placement := partial "timeline-placement.html" .RegularPages -}}
+{{- $ordered := slice -}}
+{{- range $placement.placed -}}
+  {{- $ordered = $ordered | append .page -}}
+{{- end -}}
+{{- range $placement.unplaced -}}
+  {{- $ordered = $ordered | append . -}}
+{{- end -}}
+{{- $items := slice -}}
+{{- range $i, $e := $ordered -}}
+  {{- /* Same wording as the card: an undated entry shows this label in place of a date. */ -}}
+  {{- $display := "No firm date in the sources" -}}
+  {{- with $e.Params.critical -}}
+    {{- $display = .display -}}
+  {{- end -}}
+  {{- $items = $items | append (dict
+    "@type" "ListItem"
+    "position" (add $i 1)
+    "name" $e.Title
+    "description" $display
+    "url" (printf "%s#%s" $.Permalink $e.File.ContentBaseName))
+  -}}
+{{- end -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "ItemList"
+  "name" .Title
+  "url" .Permalink
+  "numberOfItems" (len $items)
+  "itemListElement" $items
+-}}
+{{- with .Params.dek -}}
+  {{- $schema = merge $schema (dict "description" .) -}}
+{{- end -}}
+<script type="application/ld+json">
+{{ $schema | jsonify (dict "indent" "  ") | safeJS }}
+</script>
