@@ -1,0 +1,14 @@
+{{- /*
+  The id of one Timeline era band, shared by the axis and the minimap's era
+  links (#167 §1). Takes an era from timeline-eras.html; returns its start as
+  a year: "era-1500-bce", "era-1-ce".
+  */
+-}}
+{{- $from := int .from -}}
+{{- $id := "" -}}
+{{- if lt $from 0 -}}
+  {{- $id = printf "era-%d-bce" (sub 0 $from) -}}
+{{- else -}}
+  {{- $id = printf "era-%d-ce" (cond (eq $from 0) 1 $from) -}}
+{{- end -}}
+{{- return $id -}}

@@ -1,0 +1,381 @@
+/*
+  Timeline minimap (#167 §1–§3). Composes button-brutalist and type-eyebrow;
+  the generated rules in timeline-minimap.html set the current-state custom
+  properties (--band-current, --band-weight, --tick-current, --tick-reach)
+  and show the current label in each fixed slot.
+
+  Breakpoint, 108rem: the axis column starts (100dvw - --content-max-width) / 2
+  + --space-s in from the viewport edge. A one-line era label needs about 8rem
+  of rail plus a --space-xs gap either side, so the gutter holds the rail from
+  108rem (1728px). Media queries cannot read custom properties, hence the
+  literal.
+*/
+
+.timeline-minimap-layout {
+  display: grid;
+  gap: var(--space-s);
+  grid-template-columns: minmax(0, 1fr);
+  timeline-scope: --timeline-axis;
+}
+
+.timeline-axis {
+  view-timeline: --timeline-axis block;
+}
+
+/* ---------- The scrollspy: rendered so it always tracks, never seen ---------- */
+
+.timeline-minimap__spy {
+  block-size: 0;
+  inline-size: 0;
+  overflow: hidden;
+  position: absolute;
+  scroll-target-group: auto;
+  visibility: hidden;
+}
+
+/* ---------- Narrow (default): a sticky bar above the axis ---------- */
+
+.timeline-minimap {
+  container: timeline-minimap / scroll-state;
+  inset-block-start: 0;
+  position: sticky;
+  z-index: var(--z-index-sticky);
+}
+
+:root:has(.timeline-minimap) {
+  /* The bar fits the Contents button with a --space-3xs inset. */
+  --timeline-minimap-bar: calc(
+    var(--space-m) + var(--space-2xs) + 2 * var(--space-3xs)
+  );
+}
+
+.timeline-minimap__bar {
+  align-items: center;
+  anchor-name: --timeline-minimap-bar;
+  background: var(--tan-000);
+  block-size: var(--timeline-minimap-bar);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  gap: var(--space-2xs);
+  justify-content: space-between;
+  padding-inline: var(--space-2xs) var(--space-3xs);
+}
+
+/* Paint only: a stuck bar that changed size would shift the content under it. */
+@container timeline-minimap scroll-state(stuck: top) {
+  .timeline-minimap__bar {
+    background: var(--tan-100);
+    box-shadow: 0 var(--space-4xs) 0 var(--tan-300);
+  }
+}
+
+.timeline-minimap__status {
+  --lines: 1;
+
+  display: grid;
+  font-size: var(--step--1);
+  line-height: var(--line-height-heading);
+  margin: 0;
+  min-inline-size: 0;
+}
+
+.timeline-minimap__status .type-eyebrow {
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
+}
+
+.timeline-minimap__status .timeline-minimap__now {
+  font-weight: var(--font-weight-bold);
+}
+
+.timeline-minimap__open {
+  cursor: pointer;
+  flex: none;
+}
+
+/* WCAG 2.4.11: a jumped-to or focused target lands below the bar. */
+@media (width < 108rem) {
+  :root:has(.timeline-minimap) {
+    scroll-padding-block-start: calc(
+      var(--timeline-minimap-bar) + var(--space-xs)
+    );
+  }
+}
+
+/* The open popover drops from the bar, as tall as the viewport below it allows. */
+.timeline-minimap__map:popover-open {
+  background: var(--tan-000);
+  block-size: calc(100% - var(--space-s));
+  border: var(--border-width-md) solid var(--tan-900);
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
+    var(--tan-900);
+  color: var(--color-text-main);
+  display: grid;
+  gap: var(--space-3xs);
+  grid-template: auto minmax(0, 1fr) / minmax(0, 1fr);
+  inline-size: min(
+    100dvw - 2 * var(--space-s),
+    var(--content-min-width-sidebar)
+  );
+  inset: auto;
+  margin: var(--space-3xs) 0 0;
+  padding: var(--space-xs);
+  position: fixed;
+  position-anchor: --timeline-minimap-bar;
+  position-area: block-end span-inline-end;
+}
+
+/* No anchor positioning: a panel at the viewport's top inline-start corner. */
+@supports not (position-area: block-end) {
+  .timeline-minimap__map:popover-open {
+    block-size: calc(100dvh - 2 * var(--space-s));
+    inset: var(--space-s) auto auto var(--space-s);
+    margin: 0;
+  }
+}
+
+/* ---------- Wide: a fixed rail in the inline-start gutter ---------- */
+
+@media (width >= 108rem) {
+  /* Rail and spine share one cell, so the spine is laid out as without the rail. */
+  .timeline-minimap-layout > * {
+    grid-area: 1 / 1;
+  }
+
+  /*
+    Whole CSS pixels, never sticky: a sticky layer at a fractional device
+    pixel ratio (Windows 125% or 150%) is re-snapped to device pixels as the
+    scroll offset changes, and trembles by a pixel. A fixed layer never moves.
+  */
+  .timeline-minimap {
+    --rail-gap: var(--space-xs);
+
+    align-self: start;
+    block-size: round(down, 100dvh - 2 * var(--space-s), 1px);
+    display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+    inline-size: round(
+      down,
+      min(
+        (100dvw - var(--content-max-width)) / 2 + var(--space-s) - 2 *
+          var(--rail-gap),
+        var(--content-max-width-sidebar)
+      ),
+      1px
+    );
+    inset-block-start: round(var(--space-s), 1px);
+    justify-self: start;
+  }
+
+  /* Shown only while the axis fills the viewport: its view timeline's contain range. */
+  @supports ((animation-timeline: view()) and (animation-range: 0% 100%)) {
+    .timeline-minimap {
+      animation: timeline-minimap-show linear;
+      animation-range: contain;
+      animation-timeline: --timeline-axis;
+      inset-inline-start: round(var(--rail-gap), 1px);
+      margin: 0;
+      position: fixed;
+      visibility: hidden;
+    }
+
+    @keyframes timeline-minimap-show {
+      from,
+      to {
+        visibility: visible;
+      }
+    }
+  }
+
+  /* Fallback without scroll-driven animations: a plain sticky rail at the viewport's edge. */
+  @supports not ((animation-timeline: view()) and (animation-range: 0% 100%)) {
+    .timeline-minimap {
+      inset-block-start: var(--space-s);
+      margin-inline-start: calc(var(--rail-gap) - (100dvw - 100%) / 2);
+    }
+  }
+
+  .timeline-minimap__bar {
+    display: none;
+  }
+
+  .timeline-minimap__map[popover] {
+    background: none;
+    block-size: 100%;
+    border: 0;
+    color: inherit;
+    display: grid;
+    gap: round(var(--space-3xs), 1px);
+    grid-template: auto minmax(0, 1fr) / minmax(0, 1fr);
+    inline-size: auto;
+    inset: auto;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: static;
+  }
+}
+
+/* ---------- Caption: a fixed slot, so a long label never moves the strip ---------- */
+
+.timeline-minimap__caption {
+  --lines: 3;
+
+  block-size: round(
+    up,
+    (1 + var(--lines)) * var(--line-height-heading) * 1em,
+    1px
+  );
+  display: grid;
+  font-size: var(--step--2);
+  grid-template: auto minmax(0, 1fr) / minmax(0, 1fr);
+  line-height: var(--line-height-heading);
+  margin: 0;
+}
+
+.timeline-minimap__caption .type-eyebrow {
+  color: var(--color-text-muted);
+  font-size: inherit;
+}
+
+/* Every label shares one cell; a generated rule shows the current one (display: -webkit-box, for the clamp). */
+.timeline-minimap__slot {
+  display: grid;
+  min-block-size: 0;
+  min-inline-size: 0;
+}
+
+.timeline-minimap__now {
+  -webkit-box-orient: vertical;
+  display: none;
+  grid-area: 1 / 1;
+  -webkit-line-clamp: var(--lines);
+  line-clamp: var(--lines);
+  overflow: hidden;
+}
+
+/* No scrollspy: nothing to say where the reader is, so say nothing. */
+@supports not (scroll-target-group: auto) {
+  .timeline-minimap__caption,
+  .timeline-minimap__status {
+    visibility: hidden;
+  }
+}
+
+/* ---------- Strip: era bands by year span, a tick per entry at its year ---------- */
+
+.timeline-minimap__strip {
+  --track: var(--space-s);
+
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--tan-900);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-block-size: 0;
+}
+
+.timeline-minimap__strip > * {
+  grid-area: 1 / 1;
+  min-block-size: 0;
+}
+
+.timeline-minimap__eras {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basis 0 and no border, so each band's share is exactly its span. */
+.timeline-minimap__band {
+  background: var(--band-current, transparent);
+  flex: var(--span) 1 0;
+  min-block-size: 0;
+}
+
+.timeline-minimap__band + .timeline-minimap__band {
+  box-shadow: inset 0 var(--border-width-sm) 0 var(--tan-300);
+}
+
+/* The whole band is its era's link; the tick track sits over its end. */
+.timeline-minimap__era {
+  block-size: 100%;
+  color: var(--color-text-main);
+  display: block;
+  font-size: var(--step--2);
+  font-weight: var(--band-weight, normal);
+  line-height: var(--line-height-heading);
+  overflow: hidden;
+  padding: var(--space-4xs) calc(var(--track) + var(--space-3xs))
+    var(--space-4xs) var(--space-3xs);
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*
+  A rail narrower than a full era label drops the BCE/CE suffix (the link's
+  name keeps it). A media query, not a container query: the spacing tokens
+  are cqi-based and would shrink inside a container this narrow. Literal:
+  media queries cannot read custom properties.
+*/
+@media (108rem <= width < 112rem) {
+  .timeline-minimap__suffix {
+    display: none;
+  }
+}
+
+.timeline-minimap__band--empty .timeline-minimap__era {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.timeline-minimap__era:hover {
+  text-decoration: underline;
+}
+
+.timeline-minimap__era:focus-visible {
+  outline: var(--border-width-sm) solid var(--color-action);
+  outline-offset: calc(-1 * var(--border-width-sm));
+}
+
+.timeline-minimap__ticks {
+  pointer-events: none;
+  position: relative;
+}
+
+/* Same-year ticks step inward (--col); the current one reaches out over the band. */
+.timeline-minimap__tick {
+  background: var(--tick-current, var(--tan-900));
+  block-size: var(--border-width-sm);
+  inset-block-start: round(down, var(--pos) * 100%, 1px);
+  inset-inline: calc(
+      100% - var(--track) + var(--space-3xs) + var(--col) * var(--space-3xs) -
+        var(--tick-reach, 0rem)
+    )
+    var(--space-4xs);
+  pointer-events: auto;
+  position: absolute;
+}
+
+/* A larger, invisible hit area around the thin mark. */
+.timeline-minimap__tick::after {
+  content: "";
+  inset: calc(-1 * var(--space-3xs)) 0;
+  position: absolute;
+}
+
+/* Placed by a tradition's date: hollow and dashed, as on the axis node. */
+.timeline-minimap__tick--placed {
+  background: none;
+  block-size: var(--space-3xs);
+  border: var(--border-width-sm) dashed var(--tick-current, var(--tan-900));
+}
+
+.timeline-minimap__tick:hover {
+  outline: var(--border-width-sm) solid var(--color-action);
+  outline-offset: var(--border-width-sm);
+}

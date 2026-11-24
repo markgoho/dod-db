@@ -1,0 +1,170 @@
+{{- /*
+  The Timeline minimap (#167 §1–§3): the whole Timeline drawn to time, a fixed
+  rail in the inline-start gutter on wide screens, and on narrow screens a
+  sticky "You are in" bar whose Contents button opens the same minimap as a
+  popover. Era bands are sized by their year span and each placed entry is a
+  tick at its year, so Hugo lays it all out; nothing is measured in the page.
+  Takes the eras from timeline-eras.html.
+
+  "You are here" is CSS. One hidden list of entry links is the only scrollspy
+  (scroll-target-group); it stays rendered while the popover is closed, so the
+  bar tracks the era with no geometry. The generated :has() rules below key
+  every current-state style on its :target-current link: the caption label,
+  the bar's era, the shaded band and the extended tick. Only entries are
+  scroll targets, so the highlight never alternates between eras and entries.
+  timeline-minimap.ts mirrors the current tick into aria-current on scrollend.
+  */
+-}}
+{{- $eras := . -}}
+{{- $placedLabel := (partial "timeline-labels.html").placed -}}
+{{- $start := float (index $eras 0).from -}}
+{{- $span := sub (float (index $eras (sub (len $eras) 1)).to) $start -}}
+
+{{- /* One flat model: eras with their ids, entries with their era, strip position and caption date. */ -}}
+{{- $bands := slice -}}
+{{- $ticks := slice -}}
+{{- range $eras -}}
+  {{- $eraId := partial "timeline-era-id.html" . -}}
+  {{- $bands = $bands | append (dict "id" $eraId "label" .label "span" (sub .to .from) "empty" (not .items)) -}}
+  {{- $prevYear := "" -}}
+  {{- $col := 0 -}}
+  {{- range .items -}}
+    {{- $p := .page.Params -}}
+    {{- $year := int .year -}}
+    {{- /* Same-year entries step sideways, so each tick stays visible and clickable. */ -}}
+    {{- $col = cond (eq (string $year) $prevYear) (add $col 1) 0 -}}
+    {{- $prevYear = string $year -}}
+    {{- $date := "" -}}
+    {{- if eq .by "tradition" -}}
+      {{- $date = printf "%s (%s)" $p.tradition.display (lower $placedLabel) -}}
+    {{- else -}}
+      {{- $date = $p.critical.display -}}
+    {{- end -}}
+    {{- $ticks = $ticks | append (dict
+      "id" .page.File.ContentBaseName
+      "era" $eraId
+      "title" .page.Title
+      "date" $date
+      "placed" (eq .by "tradition")
+      "pos" (div (sub (float $year) $start) $span)
+      "col" $col)
+    -}}
+  {{- end -}}
+{{- end -}}
+
+
+<aside class="timeline-minimap" aria-label="Timeline overview">
+  {{- /* The scrollspy: rendered, never shown, never focused. */}}
+  <div class="timeline-minimap__spy" aria-hidden="true">
+    {{- range $ticks }}
+      <a href="#{{ .id }}" data-in="{{ .era }}" tabindex="-1"></a>
+    {{- end }}
+  </div>
+
+  <div class="timeline-minimap__bar">
+    <p class="timeline-minimap__status">
+      <span class="type-eyebrow">You are in</span>
+      <span class="timeline-minimap__slot">
+        {{- range $bands }}
+          <span class="timeline-minimap__now" data-now="{{ .id }}"
+            >{{ .label }}</span
+          >
+        {{- end }}
+      </span>
+    </p>
+    <button
+      type="button"
+      class="timeline-minimap__open button-brutalist"
+      commandfor="timeline-minimap"
+      command="toggle-popover">
+      Contents
+    </button>
+  </div>
+
+  <nav
+    id="timeline-minimap"
+    class="timeline-minimap__map"
+    popover
+    aria-label="Timeline minimap">
+    <p class="timeline-minimap__caption">
+      <span class="type-eyebrow">You are here</span>
+      <span class="timeline-minimap__slot">
+        {{- range $ticks }}
+          <span class="timeline-minimap__now" data-now="{{ .id }}"
+            ><strong>{{ .title }}</strong> {{ .date }}</span
+          >
+        {{- end }}
+      </span>
+    </p>
+    <div class="timeline-minimap__strip">
+      <ol class="timeline-minimap__eras" role="list">
+        {{- range $bands }}
+          <li
+            class="timeline-minimap__band{{ if .empty }}
+              timeline-minimap__band--empty
+            {{ end }}"
+            data-era="{{ .id }}"
+            style="--span: {{ .span }}">
+            {{- /* "1500–1000 BCE": the BCE/CE suffix can drop on a narrow rail; the link's name keeps it. */}}
+            {{- $range := index (split .label " ") 0 }}
+            <a
+              class="timeline-minimap__era"
+              href="#{{ .id }}"
+              aria-label="{{ .label }}"
+              >{{ $range }}<span class="timeline-minimap__suffix">
+                {{ strings.TrimPrefix (printf "%s " $range) .label }}</span
+              ></a
+            >
+          </li>
+        {{- end }}
+      </ol>
+      <div class="timeline-minimap__ticks">
+        {{- range $ticks }}
+          <a
+            class="timeline-minimap__tick{{ if .placed }}
+              timeline-minimap__tick--placed
+            {{ end }}"
+            href="#{{ .id }}"
+            tabindex="-1"
+            data-tick="{{ .id }}"
+            aria-label="{{ .title }}: {{ replace .date "–" " to " }}"
+            style="--pos: {{ .pos }}; --col: {{ .col }}"></a>
+        {{- end }}
+      </div>
+    </div>
+  </nav>
+
+  {{- /* The current-state rules: one selector per scrollspy target. */}}
+  {{- $current := `:is(:target-current, .target-current)` }}
+  {{- $labels := slice }}
+  {{- $marks := slice }}
+  {{- $eraLabels := slice }}
+  {{- $eraBands := slice }}
+  {{- range $ticks }}
+    {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [href="#%s"]%s)` .id $current }}
+    {{- $labels = $labels | append (printf `%s [data-now="%s"]` $on .id) }}
+    {{- $marks = $marks | append (printf `%s [data-tick="%s"]` $on .id) }}
+  {{- end }}
+  {{- range $bands }}
+    {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [data-in="%s"]%s)` .id $current }}
+    {{- $eraLabels = $eraLabels | append (printf `%s [data-now="%s"]` $on .id) }}
+    {{- $eraBands = $eraBands | append (printf `%s [data-era="%s"]` $on .id) }}
+  {{- end }}
+  <style>
+    {{ delimit ($labels | append $eraLabels) ",\n" | safeCSS }} {
+      display: -webkit-box;
+    }
+    {{ delimit $eraBands ",\n" | safeCSS }} {
+      --band-current: var(--tan-100);
+      --band-weight: var(--font-weight-bold);
+    }
+    {{ delimit $marks ",\n" | safeCSS }} {
+      --tick-current: var(--color-action);
+      --tick-reach: var(--space-xs);
+    }
+  </style> {{- $js := resources.Get "ts/timeline-minimap.ts" | js.Build (dict "targetPath" "timeline-minimap.js") }}
+  {{- if hugo.IsProduction }}
+    {{- $js = $js | resources.Minify | resources.Fingerprint }}
+  {{- end }}
+  <script src="{{ $js.RelPermalink }}" type="module"></script>
+</aside>

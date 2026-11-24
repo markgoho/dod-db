@@ -4,7 +4,7 @@
   earliest placement year rounded down to $wide and ends after the latest,
   rounded up to $narrow. Bands before $split (2000 BCE) are $wide (1000)
   years, after it $narrow (500).
-  Returns a slice of dict {label, items}, oldest first; items keep placement
+  Returns a slice of dict {label, from, to, items}, oldest first; items keep placement
   order. Empty when nothing is placed.
   */
 -}}
@@ -49,7 +49,7 @@
         {{- $items = $items | append . -}}
       {{- end -}}
     {{- end -}}
-    {{- $eras = $eras | append (dict "label" $label "items" $items) -}}
+    {{- $eras = $eras | append (dict "label" $label "from" $from "to" $to "items" $items) -}}
   {{- end -}}
 {{- end -}}
 {{- return $eras -}}

@@ -68,6 +68,7 @@ Pipeline orchestrated by `src/pipeline/youtube-processor.ts`:
 - **Linting**: ESLint + TypeScript ESLint + Unicorn plugin
 - **Google AI SDK**: `@google/genai` for all Gemini calls
 - Use `bunx` to run local dependency scripts
+- **Browser support:** Chrome only. Firefox and Safari need a working fallback, not parity: feature-detect newer CSS and JS (`@supports`, `CSS.supports`), and let the page work without them.
 
 ## Environment Variables
 
