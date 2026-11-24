@@ -15,6 +15,7 @@
     "format:check:prettier": "prettier --check \"hugo/**/*.html\"",
     "format:check": "bun fmt --check && bun run format:check:prettier",
     "check": "bun run lint && bun run typecheck && bun run format:check",
+    "check:quotes": "bun run src/hugo/check-quote-citations.ts",
     "check:scholarship": "bun run src/hugo/check-scholarship.ts",
     "scholarship:checklist": "bun run src/hugo/scholarship-checklist.ts",
     "generate:tag-index": "bun run src/hugo/generate-tag-episode-index.ts",

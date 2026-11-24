@@ -1,0 +1,14 @@
+[
+  {
+    "episodeNumber": 1,
+    "transcriptPath": "data/transcripts/2023-01-01-episode-1.txt"
+  },
+  {
+    "episodeNumber": 2,
+    "transcriptPath": "data/transcripts/2023-01-08-episode-2.txt"
+  },
+  {
+    "episodeNumber": 3,
+    "transcriptPath": "data/transcripts/2023-01-15-episode-3.txt"
+  }
+]

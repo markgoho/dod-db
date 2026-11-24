@@ -1,0 +1,3 @@
+[00:00:02] Dan Beecher: Older Transcripts have no milliseconds.
+[00:00:09] Dan McClellan: And the Episode Page renders them as dot zero zero zero.
+[00:00:20] Dan McClellan: So, uh, a lot of people, a lot of scholars will suggest that the reference is, um, a late addition to the text.
