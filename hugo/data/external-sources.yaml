@@ -1133,3 +1133,199 @@ aksu-hiscott-2022-black-sea-outflow:
   url: "https://archimer.ifremer.fr/doc/00751/86342/"
   hostAuthored: false
   tradition: null
+
+damon-1989-radiocarbon-shroud:
+  author: "P. E. Damon et al."
+  title: "Radiocarbon dating of the Shroud of Turin"
+  series: "Nature 337 (6208): 611–615"
+  publisher: "Nature"
+  year: 1989
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher abstract, open; full text paywalled"
+  url: "https://www.nature.com/articles/337611a0"
+  hostAuthored: false
+  tradition: null
+
+currie-2004-radiocarbon-metrology:
+  author: "Lloyd A. Currie"
+  title: "The Remarkable Metrological History of Radiocarbon Dating [II]"
+  series: "Journal of Research of the National Institute of Standards and Technology 109 (2): 185–217"
+  publisher: "National Institute of Standards and Technology"
+  year: 2004
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher PDF, open"
+  url: "https://nvlpubs.nist.gov/nistpubs/jres/109/2/j92cur.pdf"
+  hostAuthored: false
+  tradition: null
+
+karapanagiotis-2025-shroud-overview:
+  author: "Ioannis Karapanagiotis"
+  title: "The Shroud of Turin: An Overview of the Archaeological Scientific Studies"
+  series: "Textiles 5 (1): 8"
+  publisher: "MDPI"
+  year: 2025
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal; opens in a browser, refuses scripted requests"
+  url: "https://www.mdpi.com/2673-7248/5/1/8"
+  hostAuthored: false
+  tradition: null
+
+dilazzaro-2020-radiocarbon-shroud:
+  author: "Paolo Di Lazzaro, Anthony C. Atkinson, Paola Iacomussi, Marco Riani, Marco Ricci and Peter Wadhams"
+  title: "Statistical and Proactive Analysis of an Inter-Laboratory Comparison: The Radiocarbon Dating of the Shroud of Turin"
+  series: "Entropy 22 (9): 926"
+  publisher: "MDPI"
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Published version, LSE research repository (PDF), open"
+  url: "https://researchonline.lse.ac.uk/id/eprint/106293/1/Atkinson_statistical_proactive_analysis_of_inter_laboratory_comparison_published.pdf"
+  hostAuthored: false
+  tradition: null
+
+casabianca-2019-raw-data:
+  author: "Tristan Casabianca, Emanuela Marinelli, Giuseppe Pernagallo and Benedetto Torrisi"
+  title: "Radiocarbon Dating of the Turin Shroud: New Evidence from Raw Data"
+  series: "Archaeometry 61 (5): 1223–1231"
+  publisher: "Wiley"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher abstract, open in a browser; full text paywalled"
+  url: "https://onlinelibrary.wiley.com/doi/10.1111/arcm.12467"
+  hostAuthored: false
+  tradition: null
+
+freer-waters-jull-2010-dated-piece:
+  author: "Rachel A. Freer-Waters and A. J. Timothy Jull"
+  title: "Investigating a Dated Piece of the Shroud of Turin"
+  series: "Radiocarbon 52 (4): 1521–1527"
+  publisher: "Cambridge University Press"
+  year: 2010
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher PDF, open"
+  url: "https://www.cambridge.org/core/journals/radiocarbon/article/investigating-a-dated-piece-of-the-shroud-of-turin/8CC26C322198300E051C49A0BA5B96D9"
+  hostAuthored: false
+  tradition: null
+
+de-caro-2022-xray-dating:
+  author: "Liberato De Caro, Teresa Sibillano, Rocco Lassandro, Cinzia Giannini and Giulio Fanti"
+  title: "X-ray Dating of a Turin Shroud's Linen Sample"
+  series: "Heritage 5 (2): 860–870"
+  publisher: "MDPI"
+  year: 2022
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher PDF hosted by the authors' institute (CNR), open"
+  url: "https://dsctm.cnr.it/images/Highlights/Sindone/DeCaro_Heritage_2022.pdf"
+  hostAuthored: false
+  tradition: null
+
+borrini-garlaschelli-2019-bpa:
+  author: "Matteo Borrini and Luigi Garlaschelli"
+  title: "A BPA Approach to the Shroud of Turin"
+  series: "Journal of Forensic Sciences 64 (1): 137–143"
+  publisher: "Wiley"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Publisher abstract, open in a browser; full text paywalled"
+  url: "https://onlinelibrary.wiley.com/doi/10.1111/1556-4029.13867"
+  hostAuthored: false
+  tradition: null
+
+wild-nce-shroud-of-turin:
+  author: "R. A. Wild"
+  title: "Shroud of Turin"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/shroud-turin"
+  hostAuthored: false
+  tradition: null
+
+britannica-shroud-of-turin:
+  author: null
+  title: "Shroud of Turin"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, revised by René Ostberg"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/topic/Shroud-of-Turin"
+  hostAuthored: false
+  tradition: null
+
+nicolotti-2019-acquisition-savoy:
+  author: "Andrea Nicolotti"
+  title: "The Acquisition of the Shroud by the House of Savoy: Documentary Evidence"
+  series: "In Paolo Cozzo, Andrea Merlotti and Andrea Nicolotti (eds.), The Shroud at Court: History, Usages, Places and Images of a Dynastic Relic, 20–56"
+  publisher: "Brill"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Author's copy, University of Turin repository (PDF), open"
+  url: "https://iris.unito.it/bitstream/2318/1695320/5/Nicolotti%2c%20The%20Acquisition%20of%20the%20Shroud%20by%20the%20House%20of%20Savoy.pdf"
+  hostAuthored: false
+  tradition: null
+
+nicolotti-2024-response-wilson:
+  author: "Andrea Nicolotti"
+  title: "Letter to the Editor: “The Shroud of Turin: A Response to Ian Wilson”"
+  series: "The Catholic Historical Review 110 (1): 102–110"
+  publisher: "Catholic University of America Press"
+  year: 2024
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Author's copy, University of Turin repository (PDF), open"
+  url: "https://iris.unito.it/bitstream/2318/1965455/1/Nicolotti%2c%20Letter%20to%20the%20Editor.%20The%20Shroud%20of%20Turin.%20A%20Response%20to%20Ian%20Wilson.pdf"
+  hostAuthored: false
+  tradition: null
+
+russakoff-2015-review-nicolotti:
+  author: "Anna Russakoff"
+  title: "Review of Andrea Nicolotti, From the Mandylion of Edessa to the Shroud of Turin"
+  series: "The Medieval Review 15.10.33"
+  publisher: "Indiana University"
+  year: 2015
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access review journal"
+  url: "https://scholarworks.iu.edu/journals/index.php/tmr/article/view/20176"
+  hostAuthored: false
+  tradition: null
+
+john-paul-ii-1998-turin-address:
+  author: "John Paul II"
+  title: "Address of His Holiness Pope John Paul II [before the Shroud, Cathedral of Turin]"
+  series: null
+  publisher: "Holy See"
+  year: 1998
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va, open"
+  url: "https://www.vatican.va/content/john-paul-ii/en/speeches/1998/may/documents/hf_jp-ii_spe_19980524_sudario.html"
+  hostAuthored: false
+  tradition: "the Church"
