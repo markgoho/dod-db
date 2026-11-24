@@ -64,14 +64,14 @@
       {{- end -}}
     {{- end -}}
     {{- $terms = $terms | append (printf "%v * 100%% + 0 * var(--tick-pitch)" $at) -}}
-    {{- /* A narrated setting with years: a span at its years and an arc from its middle to the tick. */ -}}
+    {{- /* A narrated setting with years: a span at its years and an arc from its middle to the tick's dot. */ -}}
     {{- $setting := dict -}}
     {{- with $p.setting -}}
       {{- if isset . "from" -}}
         {{- $settingStart := div (sub (float .from) $start) $years -}}
         {{- $settingEnd := div (sub (float (.to | default .from)) $start) $years -}}
         {{- $mid := div (add $settingStart $settingEnd) 2 -}}
-        {{- $setting = dict "start" $settingStart "end" $settingEnd "arcStart" (math.Min $mid $at) "arcEnd" (math.Max $mid $at) -}}
+        {{- $setting = dict "start" $settingStart "end" $settingEnd "mid" $mid -}}
       {{- end -}}
     {{- end -}}
     {{- $ticks = $ticks | append (dict
@@ -166,6 +166,8 @@
       </ol>
       <div class="timeline-minimap__ticks">
         {{- range $i, $t := $ticks }}
+          {{- /* Where the dot is drawn (see timeline-minimap.css), shared with its setting's arc. */}}
+          {{- $place := printf "--tick-after: %d; --tick-stack: %s" (sub (len $ticks) (add $i 1)) .stack }}
           <a
             class="timeline-minimap__tick{{ if .placed }}
               timeline-minimap__tick--placed
@@ -175,8 +177,8 @@
             data-tick="{{ .id }}"
             interestfor="timeline-minimap-tip-{{ .id }}"
             aria-label="{{ .title }}: {{ replace .date "–" " to " }}"
-            style="--tick-at: {{ .at }}; --tick-after: {{ sub (len $ticks) (add $i 1) }}; --tick-stack: {{ .stack | safeCSS }}"></a>
-          {{- /* The tick's name, shown on hover or focus; it repeats the link's name, so no ARIA wiring. */}}
+            style="--tick-at: {{ .at }}; {{ $place | safeCSS }}"></a>
+          {{- /* The tick's title and date, shown on hover or focus. The link's aria-label already says the same (with "to" for the dash), so no ARIA points here: it would be read twice. */}}
           <span
             class="timeline-minimap__tip"
             id="timeline-minimap-tip-{{ .id }}"
@@ -184,18 +186,19 @@
             ><strong>{{ .title }}</strong> {{ .date }}</span
           >
         {{- end }}
-        {{- range $t := $ticks }}
+        {{- range $i, $t := $ticks }}
           {{- with .setting }}
             <span
               class="timeline-minimap__setting"
               data-setting="{{ $t.id }}"
+              style="{{ printf "--tick-after: %d; --tick-stack: %s" (sub (len $ticks) (add $i 1)) $t.stack | safeCSS }}"
               aria-hidden="true">
               <span
                 class="timeline-minimap__setting-span"
                 style="--setting-start: {{ .start }}; --setting-end: {{ .end }}"></span>
               <span
                 class="timeline-minimap__setting-arc"
-                style="--arc-start: {{ .arcStart }}; --arc-end: {{ .arcEnd }}"></span>
+                style="--arc-mid: {{ .mid }}"></span>
             </span>
           {{- end }}
         {{- end }}

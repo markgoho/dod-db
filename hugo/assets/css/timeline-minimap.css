@@ -539,11 +539,14 @@
 /*
   A tick sits at its year, centred in the tick track. A run of close ticks
   is a column (--tick-stack, from timeline-minimap.html), held up off the
-  strip's foot by a pitch per tick below it (--tick-after). Whole pixels.
-  The current one: see the end.
+  strip's foot by a pitch per tick below it (--tick-after). --tick-top is the
+  dot's top edge in whole pixels, worked out on the tick and on its setting
+  alike, so the setting's arc meets the dot where it is drawn. The current
+  one: see the end.
 */
-.timeline-minimap__tick {
-  inset-block-start: round(
+.timeline-minimap__tick,
+.timeline-minimap__setting {
+  --tick-top: round(
     down,
     min(
         var(--tick-stack),
@@ -552,6 +555,10 @@
       var(--tick-dot) / 2,
     1px
   );
+}
+
+.timeline-minimap__tick {
+  inset-block-start: var(--tick-top);
   inset-inline-end: round(
     down,
     (var(--tick-track-width) - var(--tick-dot)) / 2,
@@ -634,7 +641,8 @@
 /*
   The current entry's narrated setting (#170): a faint hatched span at its
   years, beside the tick track, and a dotted arc from the span's middle to
-  the tick. Shown only while its entry is current.
+  the tick's dot, where it is drawn (--tick-top). Shown only while its entry
+  is current.
 */
 .timeline-minimap__setting {
   /* display, not visibility: a visible child would show through the hidden rail. */
@@ -660,8 +668,11 @@
 }
 
 .timeline-minimap__setting-arc {
-  inset-block: round(down, var(--arc-start) * 100%, 1px)
-    round(down, (1 - var(--arc-end)) * 100%, 1px);
+  --arc-mid-at: round(down, var(--arc-mid) * 100%, 1px);
+  --arc-dot-at: calc(var(--tick-top) + var(--tick-dot) / 2);
+
+  inset-block: min(var(--arc-mid-at), var(--arc-dot-at))
+    calc(100% - max(var(--arc-mid-at), var(--arc-dot-at)));
   border: var(--border-width-sm) dotted var(--tan-500);
   border-end-start-radius: var(--space-2xs);
   border-inline-end: 0;

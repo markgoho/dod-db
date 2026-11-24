@@ -319,13 +319,20 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(span["setting-start"]).toBeCloseTo(4400 / 5000, 4);
     expect(span["setting-end"]).toBeCloseTo(4499 / 5000, 4);
 
-    // The arc joins the span's middle to Daniel's tick.
-    const tick = vars(select(page, '[data-tick="daniel"]')[0]);
+    // The arc joins the span's middle to Daniel's dot where it is drawn,
+    // which a column may have moved off its year: the setting carries the
+    // tick's own place.
     const arc = vars(
       select(page, '[data-setting="daniel"] .timeline-minimap__setting-arc')[0],
     );
-    expect(arc["arc-start"]).toBeCloseTo((4400 + 4499) / 2 / 5000, 4);
-    expect(arc["arc-end"]).toBeCloseTo(tick["tick-at"]!, 4);
+    expect(arc["arc-mid"]).toBeCloseTo((4400 + 4499) / 2 / 5000, 4);
+    const settingPlace = /--tick-after: .*$/.exec(
+      settings[0]?.attrs.style ?? "",
+    )?.[0];
+    expect(settingPlace).toBeDefined();
+    expect(select(page, '[data-tick="daniel"]')[0]?.attrs.style).toEndWith(
+      settingPlace!,
+    );
   });
 
   test("the minimap script loads once, from the footer scripts, not inside the minimap", () => {
