@@ -1,0 +1,419 @@
+/*
+  Custom block for the Univocality Scholarship Page: the four Gospels read one
+  by one, then woven into one. Four identical scrolls in four equal columns; a
+  strand drops from each and the four braid into one long scroll. Composes
+  panel, type-section-title, cloud-section and scholarship-meta.
+
+  Without colour: the bracket and ≠ mark the two birth stories, the badge
+  marks which scrolls carry one, and the braid shows four becoming one.
+*/
+.univ-weave {
+  /* One scroll's width: four to a row on a phone. */
+  --univ-unit: 17cqi;
+  --univ-ink: var(--tan-900);
+  --univ-bracket: var(--space-m);
+
+  container: univ-weave / inline-size;
+}
+
+.univ-defs {
+  block-size: 0;
+  inline-size: 0;
+  position: absolute;
+}
+
+.univ-weave__panel {
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+/* Headline strip: the count in a burst. */
+.univ-weave__claim {
+  align-items: center;
+  background: var(--univ-ink);
+  color: var(--color-text-inverse);
+  column-gap: var(--space-xs);
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  grid-template-columns: auto minmax(0, 1fr);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  padding: var(--space-3xs) var(--space-xs);
+  text-wrap: balance;
+}
+
+.univ-weave__badge {
+  display: grid;
+  inline-size: var(--space-2xl);
+  margin-block: calc(var(--space-2xs) * -1);
+  place-items: center;
+  rotate: -8deg;
+}
+
+.univ-weave__badge > * {
+  grid-area: 1 / 1;
+}
+
+.univ-weave__badge > svg {
+  aspect-ratio: 1;
+  fill: var(--color-accent);
+  inline-size: 100%;
+  overflow: visible;
+  stroke: var(--univ-ink);
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.univ-weave__badge > span {
+  color: var(--univ-ink);
+  font-size: var(--step-3);
+}
+
+/*
+  The two groups are stacked comic panels with no gutter, so the strands run
+  out of the first and the long scroll starts at the top of the second.
+*/
+.univ-weave__groups {
+  display: grid;
+}
+
+.univ-weave__group {
+  align-content: start;
+  background:
+    linear-gradient(to top right, var(--tan-000) 55%, transparent),
+    radial-gradient(var(--univ-dots, var(--tan-300)) 24%, transparent 28%) 0 0 /
+      8px 8px,
+    var(--tan-000);
+  border: var(--border-width-md) solid var(--univ-ink);
+  display: grid;
+  gap: var(--space-xs);
+  padding: var(--space-s);
+}
+
+.univ-weave__group--apart {
+  padding-block-end: 0;
+}
+
+.univ-weave__group--woven {
+  --univ-dots: var(--color-accent);
+
+  border-block-start: 0;
+  justify-items: center;
+  padding-block-start: 0;
+  text-align: center;
+}
+
+.univ-weave__head {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs) var(--space-s);
+}
+
+.univ-weave__group--woven .univ-weave__head {
+  justify-content: center;
+}
+
+.univ-weave__name {
+  font-family: var(--font-family-display);
+  font-size: var(--step-1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* The verdict sits in a caption box, as a comic's narration does. */
+.univ-weave__verdict {
+  background: var(--color-accent-muted);
+  border: var(--border-width-sm) solid var(--univ-ink);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--univ-ink);
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  padding: var(--space-3xs) var(--space-2xs);
+  text-wrap: balance;
+}
+
+/*
+  Four equal columns. The bracket and strands span all four with the same
+  400-unit width, so x = 50, 150, 250, 350 are the column centres.
+*/
+.univ-weave__four {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.univ-weave__differ {
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  grid-column: 1 / 4;
+  line-height: var(--line-height-tight);
+  padding-block-end: var(--space-s);
+  text-align: center;
+  text-wrap: balance;
+}
+
+.univ-weave__bracket {
+  block-size: var(--univ-bracket);
+  fill: none;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  inline-size: 100%;
+  overflow: visible;
+  stroke: var(--univ-ink);
+  stroke-linejoin: round;
+  stroke-width: 4;
+  vector-effect: non-scaling-stroke;
+}
+
+.univ-weave__bracket path {
+  vector-effect: non-scaling-stroke;
+}
+
+/* The ≠ sits on the bracket's bar, over Mark: the two stories differ. */
+.univ-weave__ne {
+  align-self: start;
+  background: var(--color-action);
+  border: var(--border-width-sm) solid var(--univ-ink);
+  border-radius: 50%;
+  color: var(--color-text-inverse);
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: var(--step-1);
+  font-weight: var(--font-weight-boldest);
+  grid-column: 2;
+  grid-row: 2;
+  inline-size: var(--space-l);
+  aspect-ratio: 1;
+  justify-self: center;
+  line-height: 1;
+  place-items: center;
+  translate: 0 calc(var(--univ-bracket) * 0.35 - 50%);
+}
+
+.univ-weave__list {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.univ-weave__list > li {
+  align-content: start;
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: var(--step--2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  gap: var(--space-3xs);
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  justify-self: center;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  text-align: center;
+  /* Every scroll is the same size: none grows or shrinks for its name. */
+  inline-size: var(--univ-unit);
+}
+
+.univ-weave__list--one {
+  display: flex;
+  justify-content: center;
+}
+
+.univ-weave__list--one > li {
+  font-size: var(--step-0);
+  inline-size: calc(var(--univ-unit) * 1.8);
+}
+
+/* The scroll. Lengths inside are the drawing's own units. */
+.univ-scroll {
+  aspect-ratio: 100 / 122;
+  inline-size: 100%;
+  overflow: visible;
+  stroke: var(--univ-ink);
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+.univ-scroll--wide {
+  aspect-ratio: 180 / 122;
+}
+
+.univ-scroll__shadow {
+  fill: var(--univ-ink);
+  stroke: none;
+}
+
+.univ-scroll__paper {
+  fill: var(--tan-000);
+}
+
+.univ-scroll__writing {
+  fill: none;
+  stroke: var(--tan-400);
+  stroke-linecap: round;
+}
+
+.univ-scroll__roll {
+  fill: var(--univ-ink);
+}
+
+.univ-scroll__shine {
+  fill: none;
+  stroke: var(--tan-000);
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.univ-birth__swaddle {
+  fill: var(--color-accent);
+  stroke-width: 3.5;
+}
+
+.univ-birth__head {
+  fill: var(--tan-000);
+  stroke-width: 3.5;
+}
+
+.univ-birth__face {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 2.5;
+}
+
+.univ-birth__wrap {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 2.5;
+}
+
+/* The strands: an ink line under each, then the strand, alternating over. */
+.univ-weave__strands {
+  block-size: var(--space-3xl);
+  fill: none;
+  grid-column: 1 / -1;
+  inline-size: 100%;
+  margin-block-start: var(--space-3xs);
+  overflow: visible;
+}
+
+.univ-weave__strands path {
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.univ-strand__ink path {
+  stroke: var(--univ-ink);
+  stroke-width: 12;
+}
+
+.univ-strand path {
+  stroke: var(--color-accent);
+  stroke-width: 6;
+}
+
+.univ-strand--over path {
+  stroke: var(--color-action);
+}
+
+.univ-weave__note {
+  font-size: var(--step--1);
+  text-align: center;
+  text-wrap: balance;
+}
+
+.univ-weave__more {
+  border-block-start: var(--border-width-sm) solid var(--tan-300);
+  padding-block-start: var(--space-xs);
+}
+
+/* Wide: smaller scrolls, a taller headline. Literal length: container conditions cannot read custom properties. */
+@container univ-weave (width >= 40rem) {
+  .univ-weave__panel {
+    --univ-unit: 11cqi;
+
+    padding: var(--space-m);
+  }
+
+  .univ-weave__claim {
+    font-size: var(--step-1);
+  }
+
+  .univ-weave__list:not(.univ-weave__list--one) > li {
+    font-size: var(--step--1);
+  }
+
+  .univ-weave__strands {
+    block-size: calc(var(--space-3xl) * 1.5);
+  }
+}
+
+/* As an image the block is read from further away. */
+.scholarship-share:is(:target, :has(#share-card:target))
+  .univ-weave__list
+  > li {
+  font-size: var(--step-0);
+}
+
+/* The poster: everything fits the 4:5 canvas with the masthead and credit. */
+.scholarship-share:target .univ-weave__panel {
+  --univ-unit: 12cqi;
+
+  gap: var(--space-xs);
+  padding: var(--space-s);
+}
+
+.scholarship-share:target .univ-weave__verdict {
+  font-size: var(--step-0);
+}
+
+.scholarship-share:target .univ-weave__differ {
+  font-size: var(--step-0);
+}
+
+.scholarship-share:target .univ-weave__note {
+  font-size: var(--step-0);
+}
+
+/* The card: smaller scrolls and shorter strands; the headline goes. */
+.scholarship-share:has(#share-card:target) .univ-weave__panel {
+  --univ-unit: 7.5cqi;
+
+  gap: var(--space-2xs);
+}
+
+.scholarship-share:has(#share-card:target) .univ-weave__claim {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .univ-weave__group {
+  gap: var(--space-3xs);
+  padding: var(--space-2xs) var(--space-s);
+}
+
+.scholarship-share:has(#share-card:target) .univ-weave__group--apart {
+  padding-block-end: 0;
+}
+
+.scholarship-share:has(#share-card:target) .univ-weave__group--woven {
+  padding-block-start: 0;
+}
+
+.scholarship-share:has(#share-card:target) .univ-weave__strands {
+  block-size: var(--space-2xl);
+}
+
+.scholarship-share:has(#share-card:target) .univ-weave__verdict {
+  font-size: var(--step--1);
+}
