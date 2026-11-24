@@ -158,7 +158,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "#133 first pass. Sperling, Encyclopedia of Religion entry on Encyclopedia.com, section “Biblical Terminology of the Divine”, re-fetched 2026-11-23 and matched verbatim (the second “el” is italic on the page). Second author beside Hayes that Yahweh took over something of El's (his name). Statement paraphrases; “Yahveh” spelling kept only in the quote and in the attributed phrase “the Yahveh cult”. Not used to say Yahweh began as El.",
+      note: "#133 first pass. Sperling, Encyclopedia of Religion entry on Encyclopedia.com, section “Biblical Terminology of the Divine”, re-fetched 2026-11-23 and matched verbatim (the second “el” is italic on the page). Second author beside Hayes that Yahweh took over something of El's (his name). Statement paraphrases (“the worship of Yahweh took over El's name for its own god”) and introduces it with “Separately”, not “likewise”: Sperling says nothing about Smith's model, so it is not presented as corroboration. “Yahveh” spelling kept only in the quote. Not used to say Yahweh began as El.",
     }
   convergence/5:
     {
@@ -242,7 +242,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Fleming excerpt p. 3, last lines (“There have always been serious outliers…” runs on to p. 4). Source of “no consensus”, Fleming's own words, attributed by name in short answer and statement. Second pass 2026-11-23: verified.",
+      note: "Fleming excerpt p. 3, last lines (“There have always been serious outliers…” runs on to p. 4). Source of “no consensus”, Fleming's own words, attributed by name in short answer and statement. Second pass 2026-11-23: verified. #133 first pass: the short answer no longer names Fleming; it says “The question is unresolved.”, carried by this quote and Sperling's “have not resolved the question” (south/10). “No consensus” stays in the statement, attributed to Fleming. Second pass on #133 change pending.",
     }
   south/9:
     {
@@ -254,7 +254,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "#133 first pass. Sperling, section “Biblical View of the Origins of the Worship of YHVH”, re-fetched 2026-11-23 and matched verbatim. Second independent author for the short answer's “There is no consensus” (Fleming's “no consensus and never was”, south/8). Statement says “where the worship of Yahweh began” for “the origin of Yahveh worship”.",
+      note: "#133 first pass. Sperling, section “Biblical View of the Origins of the Worship of YHVH”, re-fetched 2026-11-23 and matched verbatim. Second independent author for the short answer's “The question is unresolved” (Fleming's “no consensus and never was”, south/8); Sperling's words are “have not resolved the question”, not “no consensus”, so the short answer uses the unresolved wording both carry. Statement says “where the worship of Yahweh began” for “the origin of Yahveh worship”.",
     }
   south/11:
     {
@@ -316,7 +316,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "“Many scholars have suggested” (el) is Hayes's own wording, quoted in el/1, with her reasons (Exod 6:2–4, El titles, traits and names) on the page per #86. “no consensus” (south) is Fleming's own, quoted in south/8 and attributed. No other field-state wording; the page never counts scholars. Second pass 2026-11-23: verified. #133 first pass (short answers report the state of scholarship on two or more authors): el (Hayes, Coogan and Chapman), south (“There is no consensus”: Fleming south/8, Sperling south/10; “some support” from Egyptian texts: Sperling south/11, Fleming south/3). convergence reframed to report one named model's content, Hayes's assessment attributed. resemblance (what Hayes's lecture lists), storm (“Some biblical descriptions recall…”, a description of biblical texts from Hayes l7 ch. 5; storm/6 relays Coogan, so it is not a second author for it) and attestation (dated inscription; the Egyptian name “is debated”, Fleming's “open to debate”) checked: all three treated as exempt facts about texts; second pass to confirm storm. not-el cut. Second pass on #133 change pending.",
+      note: "“Many scholars have suggested” (el) is Hayes's own wording, quoted in el/1, with her reasons (Exod 6:2–4, El titles, traits and names) on the page per #86. “no consensus” (south) is Fleming's own, quoted in south/8 and attributed. No other field-state wording; the page never counts scholars. Second pass 2026-11-23: verified. #133 first pass (short answers report the state of scholarship on two or more authors): el (Hayes, Coogan and Chapman), south (“The question is unresolved”: Fleming's “no consensus” south/8, Sperling's “have not resolved the question” south/10; “some support” from Egyptian texts: Sperling south/11, Fleming south/3). convergence reframed to report one named model's content, Hayes's assessment attributed. resemblance (what Hayes's lecture lists), storm (“Some biblical descriptions recall…”, a description of biblical texts from Hayes l7 ch. 5; storm/6 relays Coogan, so it is not a second author for it) and attestation (dated inscription; the Egyptian name “is debated”, Fleming's “open to debate”) checked: all three treated as exempt facts about texts; second pass to confirm storm. not-el cut. Second pass on #133 change pending.",
     }
   dissent-attributed:
     {
