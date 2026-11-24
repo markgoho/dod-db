@@ -1,0 +1,25 @@
+{{- /*
+  Returns the External Source ids the given Timeline Entries cite, unique, in
+  first-cited order: each entry's Critical Date (or undated statement) cites,
+  then its Tradition Date cites. Fails the build on an id missing from
+  hugo/data/external-sources.yaml, so no consumer renders an empty source.
+  */
+-}}
+{{- $registry := index hugo.Data "external-sources" -}}
+{{- $ids := slice -}}
+{{- range $entry := . -}}
+  {{- $p := $entry.Params -}}
+  {{- range (or $p.critical $p.undated | default dict).cites | default slice -}}
+    {{- $ids = $ids | append .source -}}
+  {{- end -}}
+  {{- range ($p.tradition | default dict).cites | default slice -}}
+    {{- $ids = $ids | append .source -}}
+  {{- end -}}
+{{- end -}}
+{{- $ids = $ids | uniq -}}
+{{- range $ids -}}
+  {{- if not (index $registry .) -}}
+    {{- errorf "Timeline: unknown External Source %q (not in hugo/data/external-sources.yaml)" . -}}
+  {{- end -}}
+{{- end -}}
+{{- return $ids -}}

@@ -1,0 +1,46 @@
+# Trigger Claims for Timeline Entries (#109 §2): the #92 trigger shape plus
+# `entry:` (the Timeline Entry id) and `states:` (critical | tradition | both:
+# the side the quote states). Verbatim from each Episode's final Transcript.
+# A new Episode only appends here; it never changes an entry.
+- entry: priestly-genesis-1
+  episode: 1
+  speaker: "Dan McClellan"
+  timestamp: "00:05:36.230"
+  states: critical
+  text: "So the first creation account, probably 8th-7th century BCE, somewhere around there; Genesis 1, the later creation account, probably 6th, maybe even 5th century BCE."
+- entry: exodus
+  episode: 21
+  speaker: "Dan McClellan"
+  timestamp: "00:25:18.080"
+  states: critical
+  text: "And so on balance, I and most scholars, the overwhelming majority of critical scholars, would say the Exodus, as it is told in the book of Exodus, is entirely implausible. It is plausible that there's a historical core, some kind of little kernel of history that just grew and grew and grew as these stories were being told over the centuries that involved a small group of people who were enslaved, who escaped, who made their way to the northern hill country and were incorporated into the people known as Israel."
+- entry: daniel
+  episode: 32
+  speaker: "Dan McClellan"
+  timestamp: "00:24:33.250"
+  states: critical
+  text: "The Book of Daniel is brought together from some traditions that were collated and finalized in the middle of the second century BCE. In fact, we can probably date it to within maybe two or three years of when it was. It was probably written around 167ish BCE."
+- entry: lamentations
+  episode: 36
+  speaker: "Jacob Wright"
+  timestamp: "00:35:26.900"
+  states: critical
+  text: "The book of Lamentations, which is like the most graphic description of the devastation, some of it goes back to the early days, but some of it goes back, you know, late. It's been. It continued to be written for centuries."
+- entry: daniel
+  episode: 119
+  speaker: "Dan McClellan"
+  timestamp: "00:08:35.900"
+  states: tradition
+  text: "as you get from the 6th century BCE, which is when Daniel was supposed to have been written, as you get closer to the 160s BCE, the history gets one, more accurate, two, more detailed"
+- entry: fall-of-jerusalem
+  episode: 126
+  speaker: "Dan McClellan"
+  timestamp: "00:33:23.420"
+  states: critical
+  text: "So, uh, the Babylonians, there are, uh, two main waves: 597 BCE and then 586 BCE. And it's the 586 invasion that results in the destruction of the Jerusalem Temple."
+- entry: exodus
+  episode: 138
+  speaker: "Dan McClellan"
+  timestamp: "00:44:09.004"
+  states: tradition
+  text: "So the— if you date the Exodus to the 1400s BCE, which is what a lot of folks do, they'll say, oh, this is Amenhotep II, that was the Pharaoh. 1440 to 1420, somewhere around there is the date of the Exodus."

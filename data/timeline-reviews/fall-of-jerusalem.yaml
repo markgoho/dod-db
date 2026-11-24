@@ -1,0 +1,80 @@
+# Review record for the Timeline Entry `fall-of-jerusalem` (/timeline/#fall-of-jerusalem; #93 shape). Not rendered.
+# agent: the first pass from #100 (sourcing, 2026-11-22), #101 (layout) and the #134 build (2026-11-23). It does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# #134 re-match, 2026-11-23: online quotes re-fetched by script and matched verbatim after normalising whitespace, quotes and dashes; USCCB refused the script (403); Trigger Claims matched against the final Transcript line.
+review: ""
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l14 ch. 3 [00:31:21] “The Separation of the Kingdom Following Solomon's Death”. “587 or 586” is Hayes's own split. Re-matched 2026-11-23.",
+    }
+  critical/2:
+    {
+      agent: flag,
+      owner: "",
+      note: "NABRE Jeremiah introduction. Matched in #100 only against a hand transcription of Chrome output (USCCB refuses scripts); re-fetch 2026-11-23 got 403. Needs a browser check of the sentence and its paragraph number (#110). The same introduction gives the first capture as 598, not 597.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary ch. 19, section “Implications for Our Study”. The 586 side of the split. Re-matched 2026-11-23.",
+    }
+triggers:
+  126@00:33:23:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:33:23 turn, after “When?”. The show says 586; the entry shows the split “587 or 586” and doesn't choose (#99). E34's “605, 604 BCE” is a reading of Daniel 9, not a tradition's date, so no Tradition Date (#100).",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Dates the fall of the city; the start of the exile (605/604 count) is left out, as no Reference or Scholarly source counts it from then (#100).",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Display “587 or 586 BCE” (Hayes's words); each side cited (NABRE 587, Coogan 586, Hayes both). Note says the sources use both years. One bar over both years.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no trigger has states: tradition.",
+    }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition sources cited." }
+  conditional-not-critical:
+    { agent: pass, owner: "", note: "No conditional date." }
+sources:
+  hayes-rlst145-l14:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reference (introductory course, university-hosted transcript, #86).",
+    }
+  nabre-jeremiah-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
+      note: "Reference (#86; CONTEXT.md). The page refuses scripted requests; see critical/2.",
+    }
+  coogan-brief-4e-summary-ch19:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+      note: "Same textbook and edition as coogan-brief-4e-summary (confirmed in the OUP catalogue for moses-and-the-exodus); chapter 19 page. #137 confirms or flags the edition record per chapter.",
+    }
+leads: []
+uncited:
+  - "Hayes l12: “to the destruction of the state by the Babylonians in 587-586 BCE.” and l18: “two sieges: one in 597, one in 587, both under Nebuchadnezzar.” (#100). Not cited; l14 carries Hayes's split."
+  - "Coogan ch. 2 summary: “… the Judeans to the Babylonians in 587 …” (#100). Not cited; NABRE carries the 587 side."

@@ -1,0 +1,119 @@
+# Review record for the Timeline Entry `exodus` (/timeline/#exodus; #93 shape). Not rendered.
+# agent: the first pass from #100 (sourcing, 2026-11-22), #101 (layout) and the #134 build (2026-11-23). It does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# #134 re-match, 2026-11-23: online quotes re-fetched by script and matched verbatim after normalising whitespace, quotes and dashes; Trigger Claims matched against the final Transcript line.
+review: ""
+citations:
+  undated/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meyers p. 8. Script-matched in #100 against the Cambridge excerpt PDF; not re-fetched in #134. Source of “an exercise in futility”.",
+    }
+  undated/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meyers p. 8. Same sentence is cited on /scholarship/moses-and-the-exodus/ (date/1, second pass 2026-11-23: verified). Source of “no consensus”, Meyers's own words.",
+    }
+  undated/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 3 [00:10:06]. Conditional kept in the statement (“if it has a historical basis”). Re-matched 2026-11-23.",
+    }
+  undated/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary ch. 6, section “Exodus and History”. Read with undated/5, its condition; the statement keeps the condition and drops “as a nation”. Same sentence verified on moses-and-the-exodus (date/5).",
+    }
+  undated/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary ch. 6, section “Exodus and History”: the condition (“If we accept the Exodus as a historical event”). Same sentence verified on moses-and-the-exodus (date/4).",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Wood 2009 (ABR), section “VII. Conclusion”; the same sentence also opens the page's summary. Page dated 30 March 2009. Re-matched 2026-11-23.",
+    }
+triggers:
+  21@00:25:18:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:25:18 turn, from “And so on balance” to “… known as Israel.”; the prototype's copy stopped mid-sentence at “grew and grew and grew”, so it was extended to the sentence end (same text as on moses-and-the-exodus). The next sentence (“we know there were peoples known as Israel around the end of the 13th century BCE”) is not cut as a hedge. The show says “entirely implausible” as told; the entry says the sources give no firm date (#86: gap left unexplained).",
+    }
+  138@00:44:09:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. “if you date the Exodus to the 1400s BCE, which is what a lot of folks do” is the traditional side, which licenses the Tradition Date. Full sentences from the turn's start; the turn goes on to the Joseph-to-Moses span.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Critical Date. The undated statement says only what the sources say: no firm date, Meyers's “exercise in futility” and range, the conditional thirteenth century. No source says it did not happen (#100).",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meyers's range (sixteenth to early twelfth century) is shown as a range with “no consensus”, not as a split to choose from.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Trigger 138@00:44:09 has states: tradition.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Associates for Biblical Research, an evangelical apologetics ministry” equals the registry `tradition:`; ABR's About page calls itself “the only evangelical apologetics ministry …” (#100).",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "The thirteenth century is given only “if” historical (Hayes, Coogan), so it is in `undated`, not a Critical Date (#97). The entry sits under “Not placed on the timeline” and is not placed by its Tradition Date.",
+    }
+sources:
+  meyers-2005-exodus:
+    {
+      agent: pass,
+      owner: "",
+      edition: "2005, Cambridge University Press",
+      note: "Registry entry shared with moses-and-the-exodus, where its edition was verified (second pass 2026-11-23).",
+    }
+  hayes-rlst145-l7:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Shared with moses-and-the-exodus (verified 2026-11-23).",
+    }
+  coogan-brief-4e-summary:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+      note: "Chapter 6 summary. Edition confirmed in the OUP catalogue for moses-and-the-exodus (2026-11-23).",
+    }
+  abr-wood-2009-exodus:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Associates for Biblical Research web page, dated 30 March 2009",
+      note: "Tradition: ABR calls itself an apologetics ministry with a statement of faith (#100). A search lead says the article first appeared in JETS 50.2 (2007); not checked, and the registry cites the ABR page as read.",
+    }
+leads:
+  - "Wood 2009 first published in JETS 50.2 (2007): search lead only (#100), not read in the journal."
+uncited:
+  - "GotQuestions, “What was the date of the exodus from Egypt?”: “The early date, 1446 BC, is the most common date applied in conservative interpretations of Scripture.” (#100). ABR's Wood is cited instead, as #109 §7 specifies."

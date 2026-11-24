@@ -1,0 +1,53 @@
+{{- /*
+  Returns short cites for a list of External Source ids, in first-cited order:
+  a map of id to its author-date key, e.g. "Meyers 2005" or "Coogan and
+  Chapman 2019". Authors come from the registry's author field: "(ed.)"/"(eds.)"
+  is dropped, "A and B" keeps both surnames, and a surname is a name's last
+  word. A source without an author falls back to its title up to the first
+  colon.
+
+  Two sources sharing a key get letter suffixes ("Hayes 2006a", "Hayes 2006b")
+  in the order given, scoped to the page, as in an author-date reference list.
+  Used by Scholarship Pages and the Timeline.
+  */
+-}}
+{{- $registry := index hugo.Data "external-sources" -}}
+{{- $ids := . -}}
+{{- $base := dict -}}
+{{- range $ids -}}
+  {{- $s := index $registry . -}}
+  {{- $key := "" -}}
+  {{- with $s.author -}}
+    {{- $names := slice -}}
+    {{- range split (replaceRE `\s*\(eds?\.\)` "" .) " and " -}}
+      {{- $names = $names | append (index (last 1 (split (trim . " ") " ")) 0) -}}
+    {{- end -}}
+    {{- $key = delimit $names " and " -}}
+  {{- else -}}
+    {{- $key = trim (index (split $s.title ":") 0) " " -}}
+  {{- end -}}
+  {{- with $s.year -}}
+    {{- $key = printf "%s %v" $key . -}}
+  {{- end -}}
+  {{- $base = merge $base (dict . $key) -}}
+{{- end -}}
+{{- $letters := split "abcdefghijklmnopqrstuvwxyz" "" -}}
+{{- $cites := dict -}}
+{{- range $id := $ids -}}
+  {{- $key := index $base $id -}}
+  {{- $peers := slice -}}
+  {{- range $ids -}}
+    {{- if eq (index $base .) $key -}}
+      {{- $peers = $peers | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if gt (len $peers) 1 -}}
+    {{- range $i, $peer := $peers -}}
+      {{- if eq $peer $id -}}
+        {{- $key = printf "%s%s" $key (index $letters $i) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $cites = merge $cites (dict $id $key) -}}
+{{- end -}}
+{{- return $cites -}}

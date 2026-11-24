@@ -1,0 +1,76 @@
+# Review record for the Timeline Entry `priestly-genesis-1` (/timeline/#priestly-genesis-1; #93 shape). Not rendered.
+# agent: the first pass from #85 (sourcing, 2026-11-22), #101 (layout) and the #134 build (2026-11-23). It does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# #134 re-match, 2026-11-23: quotes re-fetched by script from Open Yale and matched verbatim after normalising whitespace, quotes and dashes; Trigger Claims matched against the final Transcript line.
+review: ""
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l5 ch. 1 [00:00:00] “Wellhausen's Documentary Hypothesis and Characteristics of Biblical Sources”. Re-matched 2026-11-23.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l9 ch. 1 [00:00:00] “Introduction to the Israelite Sanctuary”, on the Priestly materials. The preceding sentence (“These materials emerged over a period of centuries”) and the next (“they certainly often preserve older cultic traditions”) back the note's “in its final form”. Re-matched 2026-11-23.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l5 ch. 2 [00:16:05] “The Purpose of Literary, Source and Historical Criticism”. Unverified in #85 (partial prose only); fetched and matched verbatim 2026-11-23 (README decision 7). Context: “He saw the priestly material as having to come from the [post]-exilic age, post 586 [or later] [see note 1], and this is one of …”, so “this” is Wellhausen's exilic dating of P, which the note calls “still hotly debated”.",
+    }
+triggers:
+  1@00:05:36:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:05:36 turn after “That's probably what most scholars would say about this.” The show gives “6th, maybe even 5th century BCE” for Genesis 1; the entry is worded for the Priestly material's final form, which is what the source dates (#99), and gives no century.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Title and note say the date is for the Priestly source as a whole, in its final form; Genesis 1 is tied to it by critical/1. Narrower than the Trigger Claim's “Genesis 1” (#99).",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No split of years. The source calls the dating “still hotly debated”; the note says so (#80).",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no trigger has states: tradition.",
+    }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition sources cited." }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "Not conditional. No year is given, so it is placed by `anchor: fall-of-jerusalem` (period, soft edges, open), never by an invented year.",
+    }
+sources:
+  hayes-rlst145-l5:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reference (introductory course, university-hosted transcript, #86).",
+    }
+  hayes-rlst145-l9:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reference (introductory course, university-hosted transcript, #86).",
+    }
+leads: []
+uncited:
+  - "NABRE Genesis introduction: “contemporary readers can reasonably assume that ancient traditions (J and E) were edited in the sixth or fifth century B.C.” (#85). Dates the editing of J and E, not P or Genesis 1; not cited."

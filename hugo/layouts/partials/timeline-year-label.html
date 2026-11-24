@@ -1,0 +1,12 @@
+{{- /*
+  A signed year (BCE negative) as an era tick label: -1500 → "1500 BCE",
+  0 → "1 CE" (there is no year 0), 500 → "500 CE".
+  */
+-}}
+{{- $y := int . -}}
+{{- if lt $y 0 -}}
+  {{- return printf "%d BCE" (sub 0 $y) -}}
+{{- else if eq $y 0 -}}
+  {{- return "1 CE" -}}
+{{- end -}}
+{{- return printf "%d CE" $y -}}

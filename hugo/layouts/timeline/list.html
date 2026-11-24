@@ -1,0 +1,214 @@
+{{ define "head-styles" }}
+  {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") | resources.Concat "css/timeline-list.css" | resources.Minify }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+  {{/* Entries are front matter only (render: never, list: always); drafts are absent without -D. */}}
+  {{ $entries := .RegularPages }}
+  {{ $allTriggers := hugo.Data.timeline.triggers | default slice }}
+
+  {{ $episodesByNumber := dict }}
+  {{ range where site.RegularPages "Section" "episodes" }}
+    {{ $episodesByNumber = merge $episodesByNumber (dict (string .Params.episodeNumber) .) }}
+  {{ end }}
+
+  {{ $byId := dict }}
+  {{ range $entries }}
+    {{ $byId = merge $byId (dict .File.ContentBaseName .) }}
+  {{ end }}
+
+  {{/* Spine: entries with a Critical Date. An anchored entry ("exilic") takes its
+    years from its anchor's sourced date; placement never invents a year.
+    Sort by critical.sort (default from); ties go events first, then title.
+  */}}
+  {{ $placed := slice }}
+  {{ $unplaced := slice }}
+  {{ $years := slice }}
+  {{ range $entries }}
+    {{ $c := .Params.critical }}
+    {{ with .Params.tradition }}
+      {{ $years = $years | append .from (.to | default .from) }}
+    {{ end }}
+    {{ if $c }}
+      {{ $from := $c.from }}
+      {{ $to := $c.to }}
+      {{ with $c.anchor }}
+        {{ $a := index $byId . }}
+        {{ if not $a }}
+          {{ errorf "Timeline: %s anchors to %q, which is not a published entry" $.File.Path . }}
+        {{ end }}
+        {{ $from = $a.Params.critical.from }}
+        {{ $to = $a.Params.critical.to }}
+      {{ end }}
+      {{ $to = $to | default $from }}
+      {{ $sort := $c.sort | default $from }}
+      {{ $years = $years | append $from $to }}
+      {{ $key := printf "%07d|%d|%s" (add (int $sort) 1000000) (cond (eq .Params.kind "event") 0 1) (lower .Title) }}
+      {{ $placed = $placed | append (dict "key" $key "page" . "from" $from "to" $to) }}
+    {{ else }}
+      {{ $unplaced = $unplaced | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $placed = sort $placed "key" }}
+  {{ $unplaced = sort $unplaced "Title" }}
+
+  {{/* Scale: every published Critical and Tradition Date, padded out to whole 500-year eras. */}}
+  {{ $scale := dict }}
+  {{ with $years }}
+    {{ $min := mul (math.Floor (div (float (math.Min .)) 500)) 500 }}
+    {{ $max := mul (math.Ceil (div (float (math.Max .)) 500)) 500 }}
+    {{ if eq $min $max }}
+      {{ $max = add $max 500 }}
+    {{ end }}
+    {{ $span := sub $max $min }}
+    {{ $ticks := slice }}
+    {{ range seq (int $min) 500 (int $max) }}
+      {{ $ticks = $ticks | append (dict "at" (div (mul (sub . $min) 100.0) $span) "label" (partial "timeline-year-label.html" .)) }}
+    {{ end }}
+    {{ $scale = dict "min" $min "span" $span "ticks" $ticks }}
+  {{ end }}
+
+  {{ $ordered := slice }}
+  {{ range $placed }}
+    {{ $ordered = $ordered | append .page }}
+  {{ end }}
+  {{ range $unplaced }}
+    {{ $ordered = $ordered | append . }}
+  {{ end }}
+  {{ $sourceIds := partial "timeline-source-ids.html" $ordered }}
+  {{ $shortCites := partial "source-short-cites.html" $sourceIds }}
+  {{ $registry := index hugo.Data "external-sources" }}
+  {{ $sourceRead := dict }}
+  {{ range $ordered }}
+    {{ range $part := (slice .Params.critical .Params.undated .Params.tradition) }}
+      {{ range $cite := ($part | default dict).cites }}
+        {{ with $cite.read }}
+          {{ $read := time.Format "2006-01-02" . }}
+          {{ $prev := index $sourceRead $cite.source | default "" }}
+          {{ if gt $read $prev }}
+            {{ $sourceRead = merge $sourceRead (dict $cite.source $read) }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $ctx := dict "episodesByNumber" $episodesByNumber "shortCites" $shortCites "byId" $byId }}
+
+
+  <section class="timeline-page scholarship-page">
+    <header class="page-hero">
+      <p class="page-hero__eyebrow type-eyebrow">Synthesis</p>
+      <h1 class="page-hero__title">{{ .Title }}</h1>
+      <div class="page-hero__description panel panel--muted">
+        <p>{{ .Params.dek }}</p>
+        {{ with .Params.intro }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </header>
+
+    <div class="scholarship-provenance panel panel--muted">
+      {{ partial "timeline-notice.html" . }}
+      {{ partial "timeline-date-line.html" $entries }}
+    </div>
+
+    {{ with $placed }}
+      <section
+        class="timeline-spine"
+        aria-label="Timeline Entries in date order">
+        <p class="timeline-legend" aria-hidden="true">
+          <span class="timeline-legend__item"
+            ><span class="timeline-legend__swatch"></span>Date given by
+            scholarly or reference sources</span
+          >
+          <span class="timeline-legend__item"
+            ><span
+              class="timeline-legend__swatch timeline-legend__swatch--tradition"></span
+            >Date a named tradition holds</span
+          >
+        </p>
+        <ol class="timeline-list" role="list">
+          {{ range . }}
+            {{ $id := .page.File.ContentBaseName }}
+            {{ partial "timeline-entry.html" (merge $ctx (dict
+              "entry" .page
+              "heading" "h2"
+              "scale" (merge $scale (dict "from" .from "to" .to))
+              "triggers" (where $allTriggers "entry" $id)
+              ))
+            }}
+          {{ end }}
+        </ol>
+      </section>
+    {{ end }}
+
+    {{ with $unplaced }}
+      <section class="cloud-section">
+        <h2 class="type-section-title cloud-section__title">
+          Not placed on the timeline
+        </h2>
+        <p class="timeline-section-intro">
+          Events the sources date only conditionally, or not at all. They sit
+          outside the timeline, and are never placed by a tradition's date.
+        </p>
+        <ul class="timeline-list" role="list">
+          {{ range . }}
+            {{ partial "timeline-entry.html" (merge $ctx (dict
+              "entry" .
+              "heading" "h3"
+              "scale" false
+              "triggers" (where $allTriggers "entry" .File.ContentBaseName)
+              ))
+            }}
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
+
+    {{ with $sourceIds }}
+      <section class="cloud-section">
+        <h2 class="type-section-title cloud-section__title">Sources used</h2>
+        <div class="scholarship-sources">
+          <table class="scholarship-sources__table">
+            <thead>
+              <tr>
+                <th scope="col">Source</th>
+                <th scope="col">Class</th>
+                <th scope="col">Where read</th>
+                <th scope="col">Date read</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{ range . }}
+                {{ $s := index $registry . }}
+                <tr class="scholarship-source" id="source-{{ . }}">
+                  <td data-label="Source">
+                    <span class="scholarship-source__key"
+                      >{{ index $shortCites . }}</span
+                    >
+                    {{ partial "external-source-label.html" $s }}
+                  </td>
+                  <td data-label="Class">
+                    <span
+                      class="scholarship-class"
+                      data-class="{{ lower $s.class }}"
+                      >{{ $s.class }}</span
+                    >
+                  </td>
+                  <td data-label="Where read">
+                    <a href="{{ $s.url }}" rel="noopener">{{ $s.access }}</a>
+                  </td>
+                  <td data-label="Date read">
+                    {{ with index $sourceRead . }}
+                      {{ time.Format "2 Jan 2006" (time.AsTime .) }}
+                    {{ end }}
+                  </td>
+                </tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    {{ end }}
+  </section>
+{{ end }}

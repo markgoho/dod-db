@@ -1,0 +1,22 @@
+{{- /*
+  The Timeline date line (#109 §4). Takes the published Timeline Entries.
+  Shows the oldest sourcesRead among them: every published entry has been
+  reviewed at least that recently. Renders nothing while no entry has
+  sourcesRead (#93).
+  */
+-}}
+{{- $oldest := "" -}}
+{{- range . -}}
+  {{- with .Params.sourcesRead -}}
+    {{- $read := time.Format "2006-01-02" . -}}
+    {{- if or (not $oldest) (lt $read $oldest) -}}
+      {{- $oldest = $read -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with $oldest -}}
+  <p class="scholarship-date-line">
+    Sources read {{ time.Format "2 January 2006" (time.AsTime .) }}. Newer
+    scholarship is not tracked.
+  </p>
+{{- end -}}

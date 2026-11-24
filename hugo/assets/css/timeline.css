@@ -1,0 +1,260 @@
+/*
+  Timeline (#109 §3, variant B of #101). Composes page-hero, panel,
+  type-eyebrow, type-section-title, cloud-section, disclosure-summary, the
+  quote card (tag-quote) and the Scholarship primitives (notice, block, cites,
+  meta, class badge, Sources used table); only the entry card and its scale
+  live here.
+*/
+
+.timeline-list {
+  display: grid;
+  gap: var(--space-m);
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-spine {
+  display: grid;
+  gap: var(--space-s);
+}
+
+.timeline-section-intro {
+  color: var(--color-text-muted);
+  font-size: var(--step--1);
+}
+
+/* Legend: the two bar styles the scales use. */
+.timeline-legend {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--step--1);
+  gap: var(--space-3xs) var(--space-s);
+}
+
+.timeline-legend__item {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--space-3xs);
+}
+
+.timeline-legend__swatch {
+  background: var(--color-action);
+  block-size: var(--space-2xs);
+  border-radius: var(--border-radius-sm);
+  inline-size: var(--space-m);
+}
+
+.timeline-legend__swatch--tradition {
+  background: transparent;
+  border: var(--border-width-sm) dashed var(--tan-600);
+}
+
+/* Entry card: title and kind, scale, the two dates, then one folded sources block. */
+.timeline-entry {
+  display: grid;
+  gap: var(--space-xs);
+  min-inline-size: 0;
+  padding: var(--space-s) var(--space-s) 0;
+  scroll-margin-block-start: calc(var(--header-height) + var(--space-s));
+}
+
+.timeline-entry:target {
+  background: var(--tan-100);
+}
+
+.timeline-entry__head {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4xs) var(--space-s);
+  justify-content: space-between;
+}
+
+.timeline-entry__title {
+  font-size: var(--step-1);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.timeline-entry__kind {
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
+}
+
+.timeline-entry__pair {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs) var(--space-m);
+}
+
+.timeline-entry__side {
+  align-content: start;
+  display: grid;
+  flex: 1 1 var(--content-max-width-sidebar);
+  gap: var(--space-4xs);
+  min-inline-size: 0;
+}
+
+.timeline-entry__side--tradition {
+  border-inline-start: var(--border-width-sm) dashed var(--tan-500);
+  padding-inline-start: var(--space-xs);
+}
+
+.timeline-entry__date {
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-weight: var(--font-weight-boldest);
+  line-height: var(--line-height-heading);
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+.timeline-entry__note {
+  color: var(--color-text-muted);
+  font-size: var(--step--1);
+}
+
+.timeline-entry__label {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+}
+
+/* The sources block runs to the card's edges, as the provenance block does. */
+.timeline-entry__sources {
+  margin-inline: calc(-1 * var(--space-s));
+}
+
+.timeline-entry__body {
+  display: grid;
+  gap: var(--space-s);
+}
+
+/* Trigger Claim cards stack on their own margins (.scholarship-block .tag-quote). */
+.timeline-entry__triggers {
+  display: block;
+}
+
+/*
+  Scale: one full-width track per entry. Years map to --start/--size (percent
+  of the scale's span), set inline from the entry's data. The track clips, so
+  a fade or a minimum-width bar never widens the card.
+*/
+.timeline-scale {
+  container: timeline-scale / inline-size;
+  display: grid;
+  gap: var(--space-4xs);
+  padding-block-end: var(--space-3xs);
+}
+
+.timeline-scale__track {
+  block-size: var(--space-s);
+  border-block-end: var(--border-width-sm) solid var(--tan-400);
+  overflow: clip;
+  position: relative;
+}
+
+.timeline-scale__mark {
+  block-size: var(--space-3xs);
+  border-inline-start: var(--border-width-sm) solid var(--tan-400);
+  inset-block-end: 0;
+  inset-inline-start: var(--at);
+  position: absolute;
+  translate: -50% 0;
+}
+
+.timeline-scale__critical,
+.timeline-scale__tradition {
+  border-radius: var(--border-radius-sm);
+  inline-size: var(--size);
+  inset-block: var(--space-3xs);
+  inset-inline-start: var(--start);
+  min-inline-size: var(--space-3xs);
+  position: absolute;
+}
+
+.timeline-scale__critical {
+  background: var(--color-action);
+}
+
+/* "After X": the bar runs on past its last year and fades out to the right. */
+.timeline-scale__critical--open {
+  inline-size: calc(var(--size) + var(--space-xl));
+  mask-image: linear-gradient(
+    to right,
+    var(--tan-900) var(--space-3xs),
+    transparent
+  );
+}
+
+/* Century and period dates: soft edges at both ends, wide enough to show them. */
+.timeline-scale__critical--soft {
+  min-inline-size: var(--space-m);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    var(--tan-900) var(--space-2xs),
+    var(--tan-900) calc(100% - var(--space-2xs)),
+    transparent
+  );
+  translate: calc(-1 * var(--space-2xs)) 0;
+}
+
+.timeline-scale__critical--soft.timeline-scale__critical--open {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    var(--tan-900) var(--space-2xs),
+    transparent
+  );
+}
+
+.timeline-scale__tradition {
+  background: transparent;
+  border: var(--border-width-sm) dashed var(--tan-600);
+}
+
+/* The dotted line joining a Tradition Date to the Critical Date. */
+.timeline-scale__link {
+  border-block-start: var(--border-width-sm) dotted var(--tan-600);
+  inline-size: var(--size);
+  inset-block-start: 50%;
+  inset-inline-start: var(--start);
+  position: absolute;
+  translate: 0 -50%;
+}
+
+/* Era labels: centred on their tick, except the two ends, which stay inside the card. */
+.timeline-scale__ticks {
+  block-size: calc(var(--step--2) * var(--line-height-relaxed));
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
+  position: relative;
+}
+
+.timeline-scale__tick {
+  inset-block-start: 0;
+  inset-inline-start: var(--at);
+  position: absolute;
+  translate: -50% 0;
+  white-space: nowrap;
+}
+
+.timeline-scale__tick:first-child {
+  translate: 0 0;
+}
+
+.timeline-scale__tick:last-child {
+  translate: -100% 0;
+}
+
+/*
+  A narrow card fits about four era labels. Past that, label every other
+  tick (and always the last), so labels never overlap; every mark stays.
+  Literal length: container conditions cannot read custom properties.
+*/
+@container timeline-scale (width < 30rem) {
+  .timeline-scale__ticks:has(> :nth-child(5))
+    > .timeline-scale__tick:nth-child(even):not(:last-child) {
+    visibility: hidden;
+  }
+}

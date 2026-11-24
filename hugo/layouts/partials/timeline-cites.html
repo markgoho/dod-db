@@ -1,0 +1,18 @@
+{{- /*
+  One Timeline Entry's citations: verbatim quote, then short cite (to its
+  Sources used row), locator (to the passage) and class.
+  Takes dict: cites, shortCites (id → author-date key).
+  */
+-}}
+{{- $registry := index hugo.Data "external-sources" -}}
+<ul class="scholarship-cites" role="list">
+  {{ range .cites }}
+    {{ $s := index $registry .source }}
+    <li class="scholarship-cite">
+      <blockquote class="scholarship-cite__quote">“{{ .quote }}”</blockquote>
+      <p class="scholarship-meta">
+        {{ printf `<a href="#source-%s">%s</a>, <a href="%s" rel="noopener">%s</a> · %s` (htmlEscape .source) (htmlEscape (index $.shortCites .source)) (htmlEscape (.url | default $s.url)) (htmlEscape (.locator | default "source")) (htmlEscape $s.class) | safeHTML }}
+      </p>
+    </li>
+  {{ end }}
+</ul>

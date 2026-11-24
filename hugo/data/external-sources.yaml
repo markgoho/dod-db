@@ -293,3 +293,157 @@ fleming-2021-yahweh-before-israel:
   url: "https://assets.cambridge.org/97811088/35077/excerpt/9781108835077_excerpt.pdf"
   hostAuthored: false
   tradition: null
+
+hayes-rlst145-l5:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 5 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-5"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l9:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 9 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-9"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l14:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 14 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-14"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l23:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 23 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-23"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch19:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 19 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-19-summary"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch20:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 20 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-20-summary"
+  hostAuthored: false
+  tradition: null
+
+nabre-daniel-intro:
+  author: null
+  title: "Introduction to Daniel"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/daniel/0"
+  hostAuthored: false
+  tradition: null
+
+nabre-lamentations-intro:
+  author: null
+  title: "Introduction to Lamentations"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/lamentations/0"
+  hostAuthored: false
+  tradition: null
+
+nabre-jeremiah-intro:
+  author: null
+  title: "Introduction to Jeremiah"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/jeremiah/0"
+  hostAuthored: false
+  tradition: null
+
+gotquestions-book-of-daniel:
+  author: null
+  title: "Summary of the Book of Daniel"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/Book-of-Daniel.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
+
+abr-wood-2009-exodus:
+  author: "Bryant G. Wood"
+  title: "The Biblical Date for the Exodus Is 1446 BC: A Response to James Hoffmeier"
+  series: null
+  publisher: "Associates for Biblical Research"
+  year: 2009
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://biblearchaeology.org/the-biblical-date-for-the-exodus-is-1446-bc-a-response-to-james-hoffmeier/"
+  hostAuthored: false
+  tradition: "Associates for Biblical Research, an evangelical apologetics ministry"

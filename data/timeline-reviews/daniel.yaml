@@ -1,0 +1,100 @@
+# Review record for the Timeline Entry `daniel` (/timeline/#daniel; #93 shape). Not rendered.
+# agent: the first pass from #100 (sourcing, 2026-11-22), #101 (layout) and the #134 build (2026-11-23). It does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# #134 re-match, 2026-11-23: quotes re-fetched by script and matched verbatim after normalising whitespace, quotes and dashes; Trigger Claims matched against the final Transcript line.
+review: ""
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE Daniel introduction, ¶ 2. Script-fetched in #100; re-fetched and matched 2026-11-23 (USCCB answered this one request).",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l23 ch. 5 [00:35:21] “The Book of Daniel, Chapters 1-6”. Quote stops at “164”; the transcript goes on “- I don't know if I wrote that up there, yeah, 167 and 164 BCE”, no hedge. Re-matched 2026-11-23.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l23 ch. 5 [00:35:21], the sentence before critical/2. Backs the note's “perhaps the end of the third century” for chapters 1–6. Re-matched 2026-11-23.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "GotQuestions “Summary of the Book of Daniel”, under “Date of Writing:”. Re-matched 2026-11-23.",
+    }
+triggers:
+  32@00:24:33:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:24:33 turn, starting after “This is vaticinium ex eventu, the name of the segment. So, okay, fine.” The turn goes on to the accuracy argument; no hedge cut. Show says “around 167ish”, the entry 167–164: consistent.",
+    }
+  119@00:08:35:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. “which is when Daniel was supposed to have been written” is the traditional side (6th century), which licenses the Tradition Date. Starts mid-sentence after “we have the same issue with Daniel because we have,”. The show's 6th century and GotQuestions' 540–530 agree.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Critical Date is for the book's composition as the sources give it; the note scopes 167–164 to chapters 7–12 and gives the earlier court tales, as Hayes does.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No split: NABRE and Hayes both say 167–164.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Trigger 119@00:08:35 has states: tradition.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Got Questions Ministries, an evangelical ministry” equals the registry `tradition:` (#110 wording). Never “the traditional date”.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date; both sources state 167–164 flatly.",
+    }
+sources:
+  nabre-daniel-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
+      note: "Reference: NABRE introductions are Reference (#86; CONTEXT.md), notes by a scholarly association. Year 2011 is the OT revision, not printed on the introduction page.",
+    }
+  hayes-rlst145-l23:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reference (introductory course, university-hosted transcript, #86). Lecture 23 “Visions of the End: Daniel and Apocalyptic Literature”.",
+    }
+  gotquestions-book-of-daniel:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Unsigned, undated web page",
+      note: "Tradition (ruled in #86). Holder wording from #110.",
+    }
+leads: []
+uncited:
+  - "Hayes l23: “It was chronologically the latest book, written between 167 and 164 BCE.” (#100). Matched in #100; not cited, as critical/2 and critical/3 carry the two-stage date."
+  - "Coogan and Chapman ch. 25 summary: “The book of Daniel was written in the second century BCE and comprises two distinct genres.” (#100). Century only; not cited."
