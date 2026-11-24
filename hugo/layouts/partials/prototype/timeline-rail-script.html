@@ -6,8 +6,12 @@
   - Entry level (caption, bar, slider value, B3 fly-out aria-current): one
   geometric rule, "the last entry whose top has crossed the jump line", so a
   jumped-to entry is current, not the one after it.
-  - B1 sizes bands/ticks to the measured axis; B2 is laid out by Hugo from
-  years and only its bracket needs the script.
+  - B1 sizes bands/ticks to the measured axis.
+  - B2 needs no geometry: Hugo lays it out from years, and its era links and
+  entry ticks are scrollspy links styled by :target-current. The script only
+  mirrors the current link into aria-current on scrollend, and drives the
+  IntersectionObserver fallback (.target-current) where scroll-target-group is
+  missing.
   - B3 fly-outs: interestfor + popover="hint" toggletips, ARIA wired per the
   interest-triggered-tooltips guide; polyfills load only when missing.
   */
@@ -160,19 +164,42 @@
 
   // ---------- Era scrollspy (native :target-current, IO fallback) ----------
   const eraTargets = eraEls;
+  // Eras and entries in document order (B2 links to both).
+  const spyTargets = [
+    ...axis.querySelectorAll(":scope > .timeline-era, .timeline-entry"),
+  ];
   const inBand = new Set();
   let fallbackEra = null;
+  let fallbackTarget = null;
   const io = new IntersectionObserver(
     list => {
       for (const e of list)
         e.isIntersecting ? inBand.add(e.target) : inBand.delete(e.target);
       const last = eraTargets.filter(t => inBand.has(t)).pop();
       if (last) fallbackEra = last.id;
-      requestAnimationFrame(sync);
+      const lastAny = spyTargets.filter(t => inBand.has(t)).pop();
+      if (lastAny) fallbackTarget = lastAny.id;
+      requestAnimationFrame(() => sync());
     },
     { rootMargin: "0px 0px -70% 0px", threshold: 0 },
   );
-  if (!native) for (const t of eraTargets) io.observe(t);
+  if (!native) for (const t of spyTargets) io.observe(t);
+
+  // B2: no geometry. Mirror the current link (native or fallback) into aria-current.
+  function syncTimeLinks(nav) {
+    const links = [...nav.querySelectorAll("a[href^='#']")];
+    if (!native)
+      for (const a of links)
+        a.classList.toggle(
+          "target-current",
+          a.hash.slice(1) === fallbackTarget,
+        );
+    const current = links.find(a =>
+      a.matches(native ? ":target-current" : ".target-current"),
+    );
+    for (const a of links)
+      a.setAttribute("aria-current", a === current ? "location" : "false");
+  }
 
   function syncEraLinks(nav, geoEra) {
     const links = [...nav.querySelectorAll("a[href^='#era-']")];
@@ -197,7 +224,7 @@
 
   // ---------- Per-rail state ----------
   const stripState = new Map(); // nav -> {strip, ticks[], scrub, tip, here, mode}
-  for (const nav of document.querySelectorAll(".rail-m")) {
+  for (const nav of document.querySelectorAll(".rail-m[data-mode='page']")) {
     const strip = nav.querySelector("[data-strip]");
     const ticks = [];
     for (const t of strip.querySelectorAll("[data-tick]"))
@@ -225,7 +252,6 @@
   // B1: bands and ticks follow the measured axis, so the strip is a true page map.
   function measurePage() {
     for (const s of stripState.values()) {
-      if (s.mode !== "page") continue;
       s.strip.style.setProperty(
         "--frac",
         Math.min(1, innerHeight / axis.offsetHeight).toFixed(4),
@@ -249,175 +275,19 @@
   }
 
   function placeHere(s, motion) {
-    if (s.mode === "page") {
-      if (sda && !calm.matches) return; // CSS view-timeline drives it.
-      if (motion === "scroll" && calm.matches) return; // reduced motion: settle on scrollend only.
-      const r = axis.getBoundingClientRect();
-      const h = axis.offsetHeight;
-      const frac = Math.min(1, innerHeight / h);
-      const p = (innerHeight - r.top) / (h + innerHeight);
-      s.here.style.setProperty(
-        "--here-y",
-        `${((p * (1 + frac) - frac) / frac) * 100}%`,
-      );
-      return;
-    }
+    if (sda && !calm.matches) return; // CSS view-timeline drives it.
     if (motion === "scroll" && calm.matches) return; // reduced motion: settle on scrollend only.
-    placeTime(s);
-  }
-
-  // ---------- B2: continuous time bracket ----------
-  // Knots map page-y to year: each era heading at its start year, each entry
-  // at its year, the axis end at the last era's end. The viewport's top and
-  // bottom are interpolated between knots, then mapped to strip-y with the
-  // bands' own year scale. Measured on load/resize only; per frame it is
-  // arithmetic on scrollY plus three compositor transforms.
-  let knots = [];
-  function measureKnots() {
-    const sy = scrollY;
-    const yearOf = i =>
-      Number(
-        document.querySelector(`[data-tick][data-index="${i}"]`)?.dataset.year,
-      );
-    knots = [
-      ...eraEls.map(el => ({
-        y: el.getBoundingClientRect().top + sy,
-        year: Number(el.dataset.from),
-      })),
-      ...entries.map((el, i) => ({
-        y: el.getBoundingClientRect().top + sy,
-        year: yearOf(i),
-      })),
-      {
-        y: axis.getBoundingClientRect().bottom + sy,
-        year: Number(eraEls.at(-1).dataset.to),
-      },
-    ]
-      .filter(k => Number.isFinite(k.year))
-      .sort((p, q) => p.y - q.y);
-    // Keep the map monotonic (an entry placed by a tradition never runs time backwards).
-    for (let k = 1; k < knots.length; k++)
-      if (knots[k].year < knots[k - 1].year) knots[k].year = knots[k - 1].year;
-  }
-  function yearAt(py) {
-    if (py <= knots[0].y) return knots[0].year;
-    for (let k = 1; k < knots.length; k++) {
-      const p = knots[k - 1];
-      const q = knots[k];
-      if (py <= q.y)
-        return q.y === p.y
-          ? q.year
-          : p.year + ((py - p.y) / (q.y - p.y)) * (q.year - p.year);
-    }
-    return knots.at(-1).year;
-  }
-  // Strip-y (px, from the strip's padding edge) for a year, by the bands' own scale.
-  function stripYOf(s, year) {
-    const bands = s.bands;
-    let b = bands.find(x => year < x.to) ?? bands.at(-1);
-    const t = Math.min(1, Math.max(0, (year - b.from) / (b.to - b.from)));
-    return b.top + t * b.h;
-  }
-  function measureTime() {
-    measureKnots();
-    for (const s of stripState.values()) {
-      if (s.mode !== "time") continue;
-      const sr = s.strip.getBoundingClientRect();
-      const origin = sr.top + s.strip.clientTop;
-      s.bands = [...s.strip.querySelectorAll("[data-band]")].map(el => {
-        const r = el.getBoundingClientRect();
-        return {
-          from: Number(el.dataset.from),
-          to: Number(el.dataset.to),
-          top: r.top + el.clientTop - origin,
-          h: el.clientHeight,
-        };
-      });
-      s.parts ??= [...s.here.children];
-      s.H = s.strip.clientHeight;
-      s.last = null;
-      // Narrated-setting overlays: pixel-exact on the same year scale.
-      for (const el of s.strip.querySelectorAll(
-        ".rail-m__setting, .rail-m__setting-link",
-      )) {
-        const y1 = stripYOf(s, Number(el.dataset.from));
-        const y2 = stripYOf(s, Number(el.dataset.to));
-        el.style.top = `${Math.min(y1, y2)}px`;
-        el.style.height = `${Math.abs(y2 - y1)}px`;
-      }
-      for (const el of s.strip.querySelectorAll(".rail-m__setting-trad"))
-        el.style.top = `${stripYOf(s, Number(el.dataset.year))}px`;
-      if (!animateTime(s)) placeTime(s);
-    }
-  }
-  // Preferred path (scroll-progress-indicator guide): hand the same piecewise-
-  // linear map to a ScrollTimeline as keyframes, one stop per knot crossing of
-  // the viewport's top or bottom. Between stops both edges are linear in
-  // scrollY, so the animation is exact, and it runs on the compositor.
-  function animateTime(s) {
-    for (const a of s.anims ?? []) a.cancel();
-    s.anims = null;
-    if (!("ScrollTimeline" in window) || calm.matches || !s.H) return false;
-    const vh = innerHeight;
-    const max = document.documentElement.scrollHeight - vh;
-    if (max <= 0) return false;
-    const stops = [
-      ...new Set(
-        [0, max, ...knots.flatMap(k => [k.y, k.y - vh])]
-          .filter(y => y >= 0 && y <= max)
-          .map(y => Math.round(y * 100) / 100),
-      ),
-    ].sort((p, q) => p - q);
-    const frames = [[], [], []];
-    for (const y of stops) {
-      const top = stripYOf(s, yearAt(y));
-      const size = Math.max(stripYOf(s, yearAt(y + vh)) - top, 0.5);
-      const offset = y / max;
-      frames[0].push({ offset, transform: `translate3d(0, ${top}px, 0)` });
-      frames[1].push({
-        offset,
-        transform: `translate3d(0, ${top + size}px, 0)`,
-      });
-      frames[2].push({
-        offset,
-        transform: `translate3d(0, ${top}px, 0) scaleY(${size / s.H})`,
-      });
-    }
-    const timeline = new ScrollTimeline({
-      source: document.documentElement,
-      axis: "block",
-    });
-    s.anims = s.parts.map((el, i) =>
-      el.animate(frames[i], { timeline, fill: "both", easing: "linear" }),
+    const r = axis.getBoundingClientRect();
+    const h = axis.offsetHeight;
+    const frac = Math.min(1, innerHeight / h);
+    const p = (innerHeight - r.top) / (h + innerHeight);
+    s.here.style.setProperty(
+      "--here-y",
+      `${((p * (1 + frac) - frac) / frac) * 100}%`,
     );
-    s.here.classList.add("is-set");
-    return true;
   }
 
-  function placeTime(s) {
-    if (!knots.length || !s.bands || s.anims) return;
-    const top = stripYOf(s, yearAt(scrollY));
-    const bottom = stripYOf(s, yearAt(scrollY + innerHeight));
-    const last = s.last;
-    // Hold steady when nothing moved (sub-tenth-pixel changes are noise).
-    if (
-      last &&
-      Math.abs(last[0] - top) < 0.1 &&
-      Math.abs(last[1] - bottom) < 0.1
-    )
-      return;
-    s.last = [top, bottom];
-    const [capA, capB, side] = s.parts;
-    const size = Math.max(bottom - top, 0.5);
-    capA.style.transform = `translate3d(0, ${top}px, 0)`;
-    capB.style.transform = `translate3d(0, ${top + size}px, 0)`;
-    side.style.transform = `translate3d(0, ${top}px, 0) scaleY(${size / s.H})`;
-    s.here.dataset.top = top;
-    s.here.dataset.bottom = top + size;
-    s.here.classList.add("is-set");
-  }
-
-  // ---------- Readout tooltip + scrubber (B1/B2) ----------
+  // ---------- Readout tooltip + scrubber (B1) ----------
   const describe = i => {
     const e = entries[i];
     return {
@@ -459,19 +329,10 @@
       if (s.tip.matches(":popover-open")) s.tip.hidePopover();
     }, delay);
   }
+  // The entry whose page span contains the pointer: the last tick at or above it.
   function entryAt(s, y) {
     let best = 0;
-    if (s.mode === "page") {
-      // The entry whose page span contains the pointer: the last tick at or above it.
-      for (let i = 0; i < s.ticks.length; i++)
-        if (tickY(s, i) <= y + 1) best = i;
-      return best;
-    }
-    let d = Infinity;
-    for (let i = 0; i < s.ticks.length; i++) {
-      const di = Math.abs(tickY(s, i) - y);
-      if (di < d) [d, best] = [di, i];
-    }
+    for (let i = 0; i < s.ticks.length; i++) if (tickY(s, i) <= y + 1) best = i;
     return best;
   }
   function jumpTo(i, focus = false) {
@@ -563,6 +424,10 @@
     const rail = visibleRail();
     if (!rail) return;
     const nav = rail.querySelector(".proto-spy");
+    if (nav.dataset.mode === "time") {
+      if (motion !== "scroll") syncTimeLinks(nav);
+      return;
+    }
     const { entry, era } = currentPos();
     const eraText = era > -1 ? eraLabel(era) : "Start of the timeline";
     for (const el of document.querySelectorAll("[data-rail-now]"))
@@ -627,30 +492,17 @@
   document.addEventListener("scrollend", () =>
     requestAnimationFrame(() => sync()),
   );
-  calm.addEventListener("change", () => {
-    measureTime();
-    sync();
-  });
+  calm.addEventListener("change", () => sync());
 
+  // B1 only: its bands follow the measured axis.
   measurePage();
-  measureTime();
-  // The axis and the whole page: the scroll timeline's offsets depend on total scroll height too.
   const ro = new ResizeObserver(() => {
     measurePage();
-    measureTime();
     sync();
   });
   ro.observe(axis);
-  ro.observe(document.documentElement);
-  // Prototype-only hook for the jitter check.
-  window.protoTime = {
-    yearAt,
-    stripYOf,
-    strips: () => [...stripState.values()].filter(x => x.mode === "time"),
-  };
   addEventListener("resize", () => {
     measurePage();
-    measureTime();
     sync();
   });
   sync();
@@ -658,7 +510,6 @@
   // Re-sync when the variant switcher swaps rails.
   new MutationObserver(() => {
     measurePage();
-    measureTime();
     sync();
   }).observe(document.querySelector(".proto-rail-layout"), {
     attributes: true,
@@ -670,11 +521,7 @@
   // A link inside the open narrow-screen popover closes it.
   for (const nav of navs) {
     nav.addEventListener("toggle", e => {
-      if (e.newState === "open")
-        setTimeout(() => {
-          measureTime();
-          sync();
-        }, 100);
+      if (e.newState === "open") setTimeout(() => sync(), 100);
     });
     nav.addEventListener("click", e => {
       if (e.target.closest("a") && nav.matches(":popover-open"))

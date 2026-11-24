@@ -200,13 +200,31 @@
 
 /* ---------- Shared caption ---------- */
 
+/*
+  A fixed slot (eyebrow + three clamped lines): the caption's text changes as
+  you scroll, and a growing caption would push the strip below it down.
+*/
 .rail-m__caption {
+  --caption-lines: 3;
+
+  block-size: calc(
+    (1 + var(--caption-lines)) * var(--line-height-heading) * 1em
+  );
   display: grid;
   font-size: var(--step--2);
   font-weight: var(--font-weight-bold);
+  grid-template-rows: auto minmax(0, 1fr);
   line-height: var(--line-height-heading);
   margin: 0;
-  min-block-size: calc(3 * var(--line-height-heading) * 1em);
+}
+
+.rail-m__caption > [data-rail-current],
+[data-mode="time"] .rail-m__now {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: var(--caption-lines, 3);
+  line-clamp: var(--caption-lines, 3);
+  overflow: hidden;
 }
 
 .rail-m__caption .type-eyebrow {
@@ -355,10 +373,6 @@
   anchor-name: --rail-cursor-page;
 }
 
-[data-mode="time"] .rail-m__cursor {
-  anchor-name: --rail-cursor-time;
-}
-
 /* "You are here": a bracket (outline only) over the tick track, never a filled box. */
 .rail-m__here {
   block-size: max(var(--space-3xs), calc(var(--frac, 0.05) * 100%));
@@ -401,45 +415,66 @@
 }
 
 /*
-  B2: time-proportional. The script maps the viewport's top and bottom to
-  years (piecewise-linear between entries) and moves two caps and a side
-  rule with transforms only, so the bracket glides instead of snapping.
+  B2: "you are here" in CSS only. Era links and entry ticks are scrollspy
+  links (scroll-target-group on the nav). The current one is marked: its
+  era band is shaded, its tick extends and turns the action colour, and its
+  label shows in the caption's fixed slot. Nothing here is measured by script.
 */
-.rail-m__here-cap,
-.rail-m__here-side {
+
+/* One label per target in a single cell; the partial's generated :has() rule shows the current one. */
+.rail-m__now-slot {
+  display: grid;
+  min-block-size: 0;
+}
+
+.rail-m__now-slot > * {
+  grid-area: 1 / 1;
+}
+
+[data-mode="time"] .rail-m__now {
   display: none;
 }
 
-[data-mode="time"] .rail-m__here {
-  block-size: auto;
-  border: 0;
-  inset-block: 0;
-}
-
-[data-mode="time"] .rail-m__here:not(.is-set) {
+[data-mode="time"]:has(:is(:target-current, .target-current))
+  .rail-m__now-default {
   display: none;
 }
 
-[data-mode="time"] .rail-m__here-cap {
-  background: var(--color-action);
-  block-size: var(--border-width-sm);
-  display: block;
-  inset-block-start: calc(-0.5 * var(--border-width-sm));
-  inset-inline: 0;
-  position: absolute;
-  will-change: transform;
+[data-mode="time"] .rail-m__tick {
+  pointer-events: auto;
 }
 
-[data-mode="time"] .rail-m__here-side {
-  background: var(--color-action);
-  block-size: 100%;
-  display: block;
-  inline-size: var(--border-width-sm);
-  inset-block-start: 0;
-  inset-inline-start: 0;
+/* A thin mark with a usable hit area. */
+[data-mode="time"] .rail-m__tick::after {
+  content: "";
+  inset: calc(-1 * var(--space-3xs)) 0;
   position: absolute;
-  transform-origin: 0 0;
-  will-change: transform;
+}
+
+[data-mode="time"] .rail-m__tick:is(:hover, :focus-visible) {
+  outline: var(--border-width-sm) solid var(--color-action);
+  outline-offset: var(--border-width-sm);
+}
+
+[data-mode="time"] .rail-m__tick:is(:target-current, .target-current) {
+  background: var(--color-action);
+  inset-inline-start: calc(100% - var(--track) - var(--space-3xs));
+}
+
+[data-mode="time"]
+  .rail-m__tick.is-placed:is(:target-current, .target-current) {
+  background: none;
+  border-color: var(--color-action);
+}
+
+.rail-m__band:has(> .rail-m__tick:is(:target-current, .target-current)) {
+  background: var(--tan-100);
+}
+
+.rail-m__band:has(> .rail-m__tick:is(:target-current, .target-current))
+  > .rail-m__era {
+  color: var(--color-text-main);
+  font-weight: var(--font-weight-bold);
 }
 
 /*
@@ -524,10 +559,6 @@
 
 [data-mode="page"] .rail-m__tip {
   position-anchor: --rail-cursor-page;
-}
-
-[data-mode="time"] .rail-m__tip {
-  position-anchor: --rail-cursor-time;
 }
 
 @supports (position-area: inline-end) {
