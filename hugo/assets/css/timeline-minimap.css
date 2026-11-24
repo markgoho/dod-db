@@ -197,13 +197,24 @@
   /*
     Shown from when the axis enters the viewport until it stops filling it
     (entry 0% to contain 100%): early enough to sit beside the start of the
-    timeline, and never beside what follows the axis. The axis ends with a
-    pad, so the last entry (Daniel) becomes current while the axis still
-    fills the viewport, however short that entry is: Chrome makes it current
-    once its top is about 40% down the viewport (measured, 1920×1080 and 1728×1000), so a
-    pad of 75dvh keeps the axis filling the viewport past that point.
+    timeline, and never beside what follows the axis. On a tall viewport the
+    axis enters while the site header is still in view, and the rail would
+    sit over its logo, so a second animation hides it while any of the header
+    shows (later in the list, so it wins). The axis ends with a pad, so the
+    last entry (Daniel) becomes current while the axis still fills the
+    viewport, however short that entry is: Chrome makes it current once its
+    top is about 40% down the viewport (measured, 1920×1080 and 1728×1000),
+    so a pad of 75dvh keeps the axis filling the viewport past that point.
   */
   @supports ((animation-timeline: view()) and (animation-range: 0% 100%)) {
+    :root:has(.timeline-minimap) {
+      timeline-scope: --timeline-site-header;
+    }
+
+    .header {
+      view-timeline: --timeline-site-header block;
+    }
+
     .timeline-axis {
       padding-block-end: 75dvh;
     }
@@ -216,9 +227,13 @@
       */
       --rail-viewport: 100%;
 
-      animation: timeline-minimap-show linear;
-      animation-range: entry 0% contain 100%;
-      animation-timeline: --timeline-axis;
+      animation:
+        timeline-minimap-show linear,
+        timeline-minimap-hide linear;
+      animation-range:
+        entry 0% contain 100%,
+        cover;
+      animation-timeline: --timeline-axis, --timeline-site-header;
       inset-inline-start: round(var(--rail-gap), 1px);
       margin: 0;
       position: fixed;
@@ -229,6 +244,13 @@
       from,
       to {
         visibility: visible;
+      }
+    }
+
+    @keyframes timeline-minimap-hide {
+      from,
+      to {
+        visibility: hidden;
       }
     }
   }
