@@ -105,7 +105,7 @@ statements:
   - id: details
     group: "What can be known about him"
     question: "Do scholars count any details of his life as historical?"
-    short: "His baptism by John the Baptist is widely accepted as historical."
+    short: "Many scholars count his baptism by John the Baptist as historical."
     text: "Helen Bond writes that no scholar doubts that John the Baptist baptized Jesus: the story is found in both Mark and John, and the Gospel writers’ embarrassment at a sinless Jesus being baptized for the forgiveness of sin suggests a long-established tradition. Dale Martin's Yale lectures say scholars often hold that the baptism may well be historical, and that most scholars say the sign on the cross calling Jesus King of the Jews is historical too. Martin says a lot of scholars count both details probably historical because they seem to be witnessed by more than one source and to go against the theological tendency of the documents in which they are found."
     cites:
       - source: martin-rlst152-l13

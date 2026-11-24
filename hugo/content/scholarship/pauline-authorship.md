@@ -2,7 +2,7 @@
 title: "Pauline Authorship"
 dek: "Which letters in Paul's name scholars think he wrote, which they doubt, and why."
 core: pastorals
-sourcesRead: 2026-11-23
+sourcesRead: 2026-11-24
 related:
   books:
     [
@@ -148,6 +148,24 @@ statements:
         locator: "ch. 1 [00:00:00]"
         quote: "When did these letters come about? It's everybody guess. I actually tend to think that the Pastoral Epistles were probably written sometime in the second century, and maybe even toward the middle of the second century. That's a bit later than a lot of scholars would put them, and we're just guessing anyway."
         read: 2026-11-23
+  - id: pastorals-dissent
+    group: "1 and 2 Timothy and Titus"
+    question: "Do any scholars think Paul had a hand in them?"
+    short: "A small number do, at least for parts of 2 Timothy."
+    text: "R. F. Collins's New Catholic Encyclopedia entry reports that by the end of the twentieth century scholarship had reached almost universal consensus that Paul did not write these letters, but that a small number of scholars continue to hold that some of Paul's personal notes were incorporated into 2 Timothy, the so-called fragment hypothesis. Dale Martin's Yale lectures, recorded in 2009, say there are scholars who would defend Paul's authorship of these letters, and that in the years before the lectures some had asked whether Paul himself wrote 2 Timothy, since it looks somewhat like his last will and testament. Martin says he does not tend to accept that."
+    cites:
+      - source: collins-nce-pastoral-epistles
+        locator: "opening paragraph"
+        quote: "by the end of the twentieth century biblical scholarship reached almost universal consensus that these texts had not been written by Paul. A small number of scholars continue to hold that some of Paul's personal notes have been incorporated into 2 Timothy (the so-called fragment hypothesis)."
+        read: 2026-11-24
+      - source: martin-rlst152-l19
+        locator: "ch. 1 [00:00:00]"
+        quote: "There has been some question in the last several years that maybe the actual historical Paul wrote II Timothy because II Timothy looks sort of like a last will and testament of Paul that he may have written in prison. But I don't tend to buy that."
+        read: 2026-11-24
+      - source: martin-rlst152-l19
+        locator: "ch. 3 [00:26:50]"
+        quote: "So there are scholars who would defend these letters being by Paul and that's what they would say."
+        read: 2026-11-24
   - id: disputed
     group: "Ephesians, Colossians and 2 Thessalonians"
     question: "What about Ephesians, Colossians and 2 Thessalonians?"

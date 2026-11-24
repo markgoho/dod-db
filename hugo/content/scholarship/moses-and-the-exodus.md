@@ -111,8 +111,8 @@ statements:
   - id: kernel
     group: "How scholars read the account"
     question: "Did some kind of exodus happen?"
-    short: "Many scholars think some history is preserved."
-    text: "Many scholars still think that some genuine history is preserved in Exodus. The summary gives two reasons: Moses appears consistently as the deliverer from slavery in Egypt throughout Israel’s literature and legal traditions, which suggests a common historical source, and Egyptian themes, including proper names, are common enough to make a historical origin likely. The chapter summary for Coogan and Chapman's introductory textbook holds that the accounts may not preserve the details accurately, but that some sort of exodus occurred in Israel's history. Carol Meyers likewise judges that Egyptian analogues suggest a core of reality, although there is no specific historical grounding for the biblical account. Christine Hayes also reports that some scholars assume a historical memory lies behind the story."
+    short: "Contested: the sources read differ on whether any history lies behind it."
+    text: "The chapter summary for Coogan and Chapman's introductory textbook reports that many scholars still think some genuine history is preserved in Exodus, and gives two reasons: Moses appears consistently as the deliverer from slavery in Egypt throughout Israel’s literature and legal traditions, which suggests a common historical source, and Egyptian themes, including proper names, are common enough to make a historical origin likely. The summary holds that the accounts may not preserve the details accurately, but that some sort of exodus occurred in Israel's history. Carol Meyers likewise judges that Egyptian analogues suggest a core of reality, although there is no specific historical grounding for the biblical account, and Christine Hayes reports that some scholars assume a historical memory lies behind the story. The Encyclopaedia Judaica's article on Exodus, by contrast, reports that current scholarly consensus based on archaeology holds the enslavement and exodus traditions to be unhistorical. It adds that the book itself underlines this with its abundance of miracle tales and by not naming the pharaoh of either the enslavement or the exodus."
     cites:
       - source: coogan-brief-4e-summary
         locator: "section “Exodus and History”"
@@ -134,6 +134,14 @@ statements:
         locator: "ch. 3 [00:10:06]"
         quote: "Some scholars assume there's a historical memory behind the elaborate and dramatic story of a miraculous redemption by God."
         read: 2026-11-23
+      - source: greenberg-sperling-ej-exodus
+        locator: "section “Historical Reflexes”"
+        quote: "Current scholarly consensus based on archaeology holds the enslavement and exodus traditions to be unhistorical."
+        read: 2026-11-24
+      - source: greenberg-sperling-ej-exodus
+        locator: "section “Historical Reflexes”"
+        quote: "Indeed, the Book of Exodus itself underlines its unhistoricity by its abundance of miracle tales and by not bothering to name either the Pharaoh of the enslavement or of the exodus."
+        read: 2026-11-24
   - id: band
     group: "How scholars read the account"
     question: "What might lie behind the story?"
@@ -191,7 +199,7 @@ statements:
     group: "Dates, numbers and places"
     question: "Did 600,000 men leave Egypt?"
     short: "Both sources read treat the figure as inflated or schematic."
-    text: "The Numbers chapter summary for Coogan and Chapman's introductory textbook treats the count of men leaving Egypt in Exodus 12:37 as an example of how the biblical writers often inflated census statistics, and calls the population statistics in the censuses of Numbers likewise unrealistically high. It says no reasonable interpretation for this inflation has ever been presented, though P, the Priestly writer, may have incorporated numbers from a variety of sources to show that the divine promise of descendants had been fulfilled. The summary of the Exodus chapter describes the Exodus as a migration not of thousands or millions of people but of a few hundred. The Encyclopaedia Judaica's article on Numbers calls 600,000 a schematic number, which the census lists clothe with the details of a tribal breakdown."
+    text: "The Numbers chapter summary for Coogan and Chapman's introductory textbook treats the count of men leaving Egypt in Exodus 12:37 as an example of how the biblical writers often inflated census statistics, and calls the population statistics in the censuses of Numbers likewise unrealistically high. It says no reasonable interpretation for this inflation has ever been presented, though P, the Priestly writer, may have incorporated numbers from a variety of sources to show that the divine promise of descendants had been fulfilled. The summary of the Exodus chapter describes the Exodus as a migration not of thousands or millions of people but of a few hundred. The Encyclopaedia Judaica's article on Numbers calls 600,000 a schematic number."
     cites:
       - source: coogan-brief-4e-summary-ch9
         locator: "section “Census and Arrangement of the Camp”"
@@ -271,7 +279,7 @@ statements:
     group: "The story's literary background"
     question: "How old is the Song of the Sea in Exodus 15?"
     short: "Many scholars think it is very old."
-    text: "Christine Hayes reports that most agree the oldest account of the event at the sea is a poetic fragment in Exodus 15:1–12. The notes of the New American Bible say that many scholars regard the poem (15:1–21) as one of the oldest compositions in the Bible, once an independent work. The Encyclopaedia Judaica's article on Exodus finds several early features in its language, but judges that its mentions of Philistia, cavalry and the sanctuary on God's mountain put the present form of the song no earlier than the tenth century BCE."
+    text: "Christine Hayes reports that most agree the oldest account of the event at the sea is a poetic fragment in Exodus 15:1–12. The notes of the New American Bible say that many scholars regard the poem (15:1–21) as one of the oldest compositions in the Bible, and that it was once an independent work. The Encyclopaedia Judaica's article on Exodus finds several early features in its language, but judges that its mentions of Philistia, cavalry and the sanctuary on God's mountain put the present form of the song no earlier than the tenth century BCE."
     cites:
       - source: hayes-rlst145-l8
         locator: "ch. 2 [00:06:51]"
