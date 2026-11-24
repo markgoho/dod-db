@@ -115,6 +115,40 @@ describe("checkScholarship", () => {
     ]);
   });
 
+  test("a delegated review with every item agent: pass and no owner check passes", async () => {
+    expect(await check("delegated")).toEqual([]);
+  });
+
+  test("fails a delegated review with an agent flag still on an item", async () => {
+    expect(await check("delegated-flag")).toEqual([
+      `${page}: review citations.core/2 has agent "flag", not pass`,
+    ]);
+  });
+
+  test("fails a delegated review where the owner still marked an item fail", async () => {
+    expect(await check("delegated-owner-fail")).toEqual([
+      `${page}: review citations.second/1 has owner "fail"`,
+    ]);
+  });
+
+  test("fails a delegated review with no second agent pass", async () => {
+    expect(await check("delegated-no-second-pass")).toEqual([
+      `${page}: review delegation has no secondPass`,
+    ]);
+  });
+
+  test("fails a delegated review whose second pass predates the delegation", async () => {
+    expect(await check("delegated-second-pass-early")).toEqual([
+      `${page}: review delegation secondPass 2026-11-20 is before date 2026-11-23`,
+    ]);
+  });
+
+  test("fails a delegated review whose date doesn't match the page's sourcesRead", async () => {
+    expect(await check("delegated-sources-read-mismatch")).toEqual([
+      `${page}: sourcesRead "2026-11-01" doesn't match review date 2026-12-03`,
+    ]);
+  });
+
   test("fails a non-draft page with a citation missing from the review file", async () => {
     expect(await check("missing-review-entry")).toEqual([
       `${page}: review has no citations.second/1 entry`,

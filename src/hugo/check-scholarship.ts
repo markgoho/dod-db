@@ -86,8 +86,20 @@ const ReviewItemSchema = z.object({
 
 const ReviewSectionSchema = z.record(z.string(), ReviewItemSchema).default({});
 
+/**
+ * #93 rule change: the owner delegated the publish review to agents. Fields
+ * are optional here so a missing one is reported, not a parse failure.
+ */
+const DelegationSchema = z.object({
+  by: z.string().optional(),
+  date: dateValue.optional(),
+  issue: z.string().optional(),
+  secondPass: dateValue.optional(),
+});
+
 export const ReviewSchema = z.object({
   review: dateValue.nullish(),
+  delegation: DelegationSchema.optional(),
   citations: ReviewSectionSchema,
   triggers: ReviewSectionSchema,
   rules: ReviewSectionSchema,
@@ -367,14 +379,60 @@ function checkPublishRule(
   return errors;
 }
 
-/** #93: every citation, Trigger Claim, cited source and rule has `owner: pass`. */
+/** A YAML date as `YYYY-MM-DD`, whether it parsed as a string or a Date. */
+function isoDate(value: string | Date): string {
+  return value instanceof Date ? value.toISOString().slice(0, 10) : value;
+}
+
+/**
+ * #93 delegation: who delegated and when, a second agent pass on or after
+ * that date, and a review date that the page's sourcesRead matches.
+ */
+function checkDelegation(
+  at: string,
+  page: Page,
+  review: Review,
+  delegation: NonNullable<Review["delegation"]>,
+): string[] {
+  const errors = (["by", "date", "secondPass"] as const)
+    .filter(field => !delegation[field])
+    .map(field => `${at}: review delegation has no ${field}`);
+  if (delegation.date && delegation.secondPass) {
+    const date = isoDate(delegation.date);
+    const secondPass = isoDate(delegation.secondPass);
+    if (secondPass < date) {
+      errors.push(
+        `${at}: review delegation secondPass ${secondPass} is before date ${date}`,
+      );
+    }
+  }
+  if (review.review) {
+    const reviewed = isoDate(review.review);
+    const read = page.sourcesRead ? isoDate(page.sourcesRead) : "";
+    if (read !== reviewed) {
+      errors.push(
+        `${at}: sourcesRead "${read}" doesn't match review date ${reviewed}`,
+      );
+    }
+  } else {
+    errors.push(`${at}: review has no review date`);
+  }
+  return errors;
+}
+
+/**
+ * #93: every citation, Trigger Claim, cited source and rule has `owner: pass`;
+ * under a `delegation` block, `agent: pass` and no `owner: fail` instead.
+ */
 function checkOwnerPass(
   at: string,
   page: Page,
   triggers: Trigger[],
   review: Review,
 ): string[] {
-  const errors: string[] = [];
+  const errors: string[] = review.delegation
+    ? checkDelegation(at, page, review, review.delegation)
+    : [];
   const required: Record<
     "citations" | "triggers" | "rules" | "sources",
     string[]
@@ -402,6 +460,17 @@ function checkOwnerPass(
     "sources",
   ] as const) {
     for (const [key, item] of Object.entries(review[section])) {
+      if (review.delegation) {
+        if (item.agent !== "pass") {
+          errors.push(
+            `${at}: review ${section}.${key} has agent "${item.agent ?? ""}", not pass`,
+          );
+        }
+        if (item.owner === "fail") {
+          errors.push(`${at}: review ${section}.${key} has owner "fail"`);
+        }
+        continue;
+      }
       if (item.owner !== "pass") {
         errors.push(
           `${at}: review ${section}.${key} has owner "${item.owner}", not pass`,

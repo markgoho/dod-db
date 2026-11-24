@@ -135,6 +135,21 @@ function publishRuleNow(page: Page, registry: Registry): string {
   return `${statements}; core \`${core.id}\` cites ${independent.length} independent ${noun} (${independent.join("; ")}).`;
 }
 
+function day(value: string | Date | undefined): string {
+  if (value === undefined) return "(no date)";
+  return value instanceof Date ? value.toISOString().slice(0, 10) : value;
+}
+
+/** One line, then a blank, when the owner delegated the review (#93). */
+function delegationLines(delegation: Review["delegation"]): string[] {
+  if (!delegation) return [];
+  const issue = delegation.issue ? ` (${delegation.issue})` : "";
+  return [
+    `Review delegated by the ${delegation.by ?? "owner"} on ${day(delegation.date)}${issue}; second agent pass ${day(delegation.secondPass)}.`,
+    "",
+  ];
+}
+
 /**
  * Build the owner checklist for `slug` from the repo checkout at `root`.
  * `commit` names the revision the checklist was generated from.
@@ -165,6 +180,7 @@ export async function buildChecklist(
     "",
     `Generated from \`${pagePath}\`, \`${reviewPath}\`, \`${triggersPath}\` and \`${registryPath}\` at ${commit}.`,
     "",
+    ...delegationLines(review.delegation),
     `Open every URL. For each item, reply **pass** or **fail**, with a note if needed, using its key (e.g. \`${firstKey}: pass\`). A citation passes when the quote is present, the locator finds it, and the question, short answer and statement are no stronger than the source.`,
     "",
     `Draft preview: \`cd hugo && hugo server -D\`, then http://localhost:1313/scholarship/${slug}/`,
