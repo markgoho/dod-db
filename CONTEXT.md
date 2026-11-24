@@ -145,7 +145,7 @@ The **Synthesis Page** that places events and the composition of **Scriptural Bo
 _Avoid_: Chronology, dating page
 
 **Timeline Entry**:
-One subject on the **Timeline**, either an event or the composition of a text, with its **Critical Date** or a sourced statement that the sources give it no firm date.
+One subject on the **Timeline**, either an event or the composition of a text, with its **Critical Date** or a sourced statement that the sources give it no firm date or don't treat it as historical, and optionally a **Tradition Date** beside it.
 _Avoid_: Row, dated claim
 
 **Critical Date**:
@@ -208,8 +208,8 @@ _Avoid_: Citation, snippet source
 - **Synthesis Pages** come in two kinds: **Scholarship Pages** and the **Timeline**.
 - A **Timeline Entry** needs at least one **Trigger Claim** and one Scholarly or Reference **External Source** for its **Critical Date**, or for a statement that the sources date it only conditionally or not at all.
 - A date a source gives only on a condition ("if it is historical") is not a **Critical Date**.
-- **Critical Dates** are the **Timeline**'s spine; a **Timeline Entry** with no **Critical Date** is never placed by its **Tradition Date**.
-- A **Timeline Entry** shows a **Tradition Date** only when the show itself states both sides for its subject.
+- The **Timeline** has two lanes: **Critical Dates** and scholars' statements on the left, **Tradition Dates** on the right. A **Timeline Entry** is placed by its **Critical Date**; one with no **Critical Date** is placed by its **Tradition Date**, in the tradition's lane only, beside the cited statement of what scholars say (#162, 2026-11-24, reversing #97's placement rule).
+- A **Timeline Entry** shows a **Tradition Date** only when one of its **Trigger Claims** states the tradition's side.
 - A **Timeline Entry** is worded for what its sources date, even when that is narrower than the **Trigger Claim**.
 - A **Scholarship Page** statement's short answer reports where scholarship stands (consensus, most scholars, divided, no consensus), backed by two or more independent authors; a view only one cited author holds appears in the statement, attributed, never as the answer. Uncontested facts (a date, what an inscription says) are exempt. A statement whose sources can't support a state-of-the-field answer is reframed or cut (#133).
 - A **Scholarship Page** is published only when two or more independent **External Sources**, at least one Scholarly or Reference, back its core claim and it makes three or more statements.
