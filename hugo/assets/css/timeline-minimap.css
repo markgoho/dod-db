@@ -8,10 +8,10 @@
   holding var() is never dropped at parse time, so a plain declaration before
   an if() one would be no fallback.
 
-  Breakpoint, 108rem: the axis column starts (100dvw - --content-max-width) / 2
-  + --space-s in from the viewport edge. A one-line era label needs about 8rem
-  of rail plus a --space-xs gap either side, so the gutter holds the rail from
-  108rem (1728px). Media queries cannot read custom properties, hence the
+  Breakpoint, 108rem: the axis column starts (viewport width -
+  --content-max-width) / 2 + --space-s in from the viewport edge. A one-line
+  era label needs about 8rem of rail plus a --space-xs gap either side, so
+  the gutter holds the rail from 108rem (1728px). Media queries cannot read custom properties, hence the
   literal.
 */
 
@@ -174,6 +174,8 @@
   */
   .timeline-minimap {
     --rail-gap: var(--space-xs);
+    /* The viewport's width; the fixed rail below measures it less a classic scrollbar. */
+    --rail-viewport: 100dvw;
 
     align-self: start;
     block-size: round(down, 100dvh - 2 * var(--space-s), 1px);
@@ -182,8 +184,8 @@
     inline-size: round(
       down,
       min(
-        (100dvw - var(--content-max-width)) / 2 + var(--space-s) - 2 *
-          var(--rail-gap),
+        (var(--rail-viewport) - var(--content-max-width)) / 2 + var(--space-s) -
+          2 * var(--rail-gap),
         var(--content-max-width-sidebar)
       ),
       1px
@@ -193,11 +195,12 @@
   }
 
   /*
-    Shown only while the axis fills the viewport (contain), so the rail never
-    sits beside what follows the axis. The axis ends with a pad, so the last
-    entry (Daniel) becomes current while the axis still fills the viewport,
-    however short that entry is: Chrome makes it current once its top is
-    about 40% down the viewport (measured, 1920×1080 and 1728×1000), so a
+    Shown from when the axis enters the viewport until it stops filling it
+    (entry 0% to contain 100%): early enough to sit beside the start of the
+    timeline, and never beside what follows the axis. The axis ends with a
+    pad, so the last entry (Daniel) becomes current while the axis still
+    fills the viewport, however short that entry is: Chrome makes it current
+    once its top is about 40% down the viewport (measured, 1920×1080 and 1728×1000), so a
     pad of 75dvh keeps the axis filling the viewport past that point.
   */
   @supports ((animation-timeline: view()) and (animation-range: 0% 100%)) {
@@ -206,8 +209,15 @@
     }
 
     .timeline-minimap {
+      /*
+        A fixed box's 100% is its containing block, the viewport less a
+        classic scrollbar; 100dvw includes the scrollbar, which made the rail
+        7.5px too wide and put it within the rail gap of the axis (measured).
+      */
+      --rail-viewport: 100%;
+
       animation: timeline-minimap-show linear;
-      animation-range: contain;
+      animation-range: entry 0% contain 100%;
       animation-timeline: --timeline-axis;
       inset-inline-start: round(var(--rail-gap), 1px);
       margin: 0;
@@ -256,14 +266,17 @@
 /*
   ---------- Era pill: the current era, fixed over the axis (#173) ----------
   Wide screens only (narrow ones have the bar) and only with the scrollspy
-  and the rail's show/hide: it sits in the rail's <aside>, so it inherits the
-  rail's visibility, shown only while the axis fills the viewport. Fixed,
-  never sticky (see the rail), in whole pixels. Centred on the axis: the
-  content column is centred in the viewport less its scrollbar, which is a
-  fixed box's containing block (100dvw includes a classic scrollbar, which
-  put the pill 7.5px off the axis; measured). Light and outlined, so it never
-  reads as a second dark era label when one scrolls under it. Over the page,
-  but clicks pass through.
+  and scroll-driven animations. Shown only while the axis fills the viewport
+  (contain), later than the rail, so it never sits over the lane heads or the
+  hero: its own visibility, over the rail's. Fixed, never sticky (see the
+  rail), in whole pixels. On the axis line: the content column is centred in
+  the viewport less its scrollbar, which is a fixed box's containing block
+  (100dvw includes a classic scrollbar, which put the pill 7.5px off the
+  axis; measured). The line sits --timeline-axis-share across the spine, so
+  --axis-offset right of that centre; the pill's box starts twice that in, so
+  its centre is on the line. Light and outlined, so it never reads as a
+  second dark era label when one scrolls under it. Over the page, but clicks
+  pass through.
 */
 .timeline-minimap__era-pill {
   display: none;
@@ -273,13 +286,23 @@
   @supports (scroll-target-group: auto) and
     ((animation-timeline: view()) and (animation-range: 0% 100%)) {
     .timeline-minimap__era-pill {
+      /* The spine is the content column less its padding (.container). */
+      --axis-offset: calc(
+        (min(100%, var(--content-max-width)) - 2 * var(--space-s)) *
+          (var(--timeline-axis-share) - 0.5)
+      );
+
+      animation: timeline-minimap-show linear;
+      animation-range: contain;
+      animation-timeline: --timeline-axis;
       display: flex;
       inset-block-start: round(var(--space-s), 1px);
-      inset-inline: 0;
+      inset-inline: round(2 * var(--axis-offset), 1px) 0;
       justify-content: center;
       margin: 0;
       pointer-events: none;
       position: fixed;
+      visibility: hidden;
       z-index: var(--z-index-sticky);
     }
 
