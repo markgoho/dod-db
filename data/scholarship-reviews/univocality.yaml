@@ -1,0 +1,580 @@
+# Review record for /scholarship/univocality/ (#93 shape). Not rendered.
+# agent: results of the agent first pass (#156, 2026-11-24). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
+# Sourcing test (#156, 2026-11-24): the candidate core ("univocality is imposed on the collection by its readers, not asserted by the texts") did not source as worded. The half "the texts do not speak with one voice" is backed by 5+ distinct Reference authors (Hayes, Coogan/Chapman, Martin, Ehrman, Meyers, Breed). No read source says the texts do or do not claim unity (gap), and none supports "only possible once the Bible comes together". The core was narrowed to one-voice; reader-imposed unity is carried as attributed statements (canon, harmonizing).
+# First pass: three research agents fetched every source on 2026-11-24 and copied quotes from the fetched page text; every page quote was then script-matched (whitespace only) against those saved texts: 0 misses. The second pass must re-fetch.
+review: null
+citations:
+  one-voice/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  one-voice/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  one-voice/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  one-voice/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  one-voice/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  one-voice/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  anthology/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  anthology/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  anthology/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  anthology/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  anthology/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  anthology/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  anthology/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  hebrew-bible/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  hebrew-bible/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  hebrew-bible/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  hebrew-bible/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  hebrew-bible/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  hebrew-bible/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  hebrew-bible/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  hebrew-bible/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  hebrew-bible/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  gospels/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  gospels/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  gospels/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  gospels/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  gospels/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  gospels/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  gospels/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  paul-and-james/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  paul-and-james/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  paul-and-james/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  paul-and-james/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  paul-and-james/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  paul-and-james/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  the-end/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  the-end/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  the-end/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  the-end/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  the-end/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  canon/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  canon/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  canon/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  canon/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  canon/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  canon/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  canon/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  harmonizing/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  harmonizing/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  harmonizing/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  harmonizing/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  harmonizing/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  harmonizing/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  harmonizing/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  harmonizing/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  methods/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  methods/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  methods/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  methods/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  methods/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  methods/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  tradition/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+  tradition/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text.",
+    }
+triggers:
+  6@00:02:54:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+    }
+  6@00:04:54:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+    }
+  6@00:06:01:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+    }
+  15@00:30:52:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+    }
+  31@00:21:55:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+    }
+  44@00:25:52:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: 10 statements. Core one-voice cites Hayes l1 and l10 (Reference, one author), Coogan/Chapman ch. 24 summary (Reference), Martin l1 (Reference) and Ehrman ch. 1 summary (Reference): 4 independent authors, none Host-authored. Short says “Scholars describe”, not “most” or “consensus”.",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: No statement says “consensus”. “almost all biblical scholars” (hebrew-bible text) is Coogan/Chapman ch. 4's own wording, attributed, scope the Pentateuch's sources only. “most scholars use a combination” (methods text) is Shectman's, attributed. #133 per short: one-voice (Hayes, Coogan, Martin, Ehrman); anthology (Hayes, Coogan, Breed, Neufeld); hebrew-bible (Meyers, Hayes, Coogan, Ainslie/Lam); gospels (Ehrman, Bond, Martin, HarperCollins); paul-and-james “Scholars differ” (Martin reports the debate; Ehrman and Painter frame it differently); the-end (Ehrman, Martin, HarperCollins); canon “Scholars say” (Ehrman, Martin; Hayes supporting); harmonizing (Tatian fact: Petersen, Breed, Martin); methods (descriptive: Martin, Ehrman; Shectman, Hayes); tradition (Tradition, exempt). Second pass: judge canon's “minimized when they are read as one collection” against Martin, whose quotes are about early Christianity's unifying project rather than the canon.",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: Positions held by one cited author are named in the text: Hayes's “modern notion” (harmonizing), Martin's “Maybe yes, maybe no” and Painter's “not enemies” (paul-and-james), Hayes's redactors-intended-unity counterweight (canon), Petersen's “none, on its own, is convincing” (harmonizing).",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: ccc-112 named as the Catholic Church (the Catechism's own title); gotquestions-bible-errors named as Got Questions Ministries, an evangelical ministry (registry convention from gotquestions-book-of-daniel; site: “Christian, evangelical, theologically conservative, and nondenominational”). Neither supports what scholars think.",
+    }
+sources:
+  hayes-rlst145-l10:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+  hayes-rlst145-l1:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+  coogan-brief-4e-summary-ch24:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2019." }
+  martin-rlst152-l1:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+  ehrman-brief-5e-ch1-summary:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+  coogan-brief-4e-summary-ch1:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2019." }
+  breed-bo-written-transmitted:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: Reference; year not on page.",
+    }
+  neufeld-bo-nt-religious-text:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: Reference; year not on page.",
+    }
+  meyers-bo-hebrew-bible-history:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: Reference; year not on page.",
+    }
+  hayes-rlst145-l4:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+  coogan-brief-4e-summary-ch4:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2019." }
+  hayes-rlst145-l22:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+  coogan-brief-4e-summary-ch23:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2019." }
+  ainslie-lam-2021-manasseh:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2021." }
+  ehrman-brief-5e-ch5-summary:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+  ehrman-brief-5e-ch4-summary:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+  ehrman-brief-5e-ch7-summary:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+  bond-2018-nativity:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2018." }
+  martin-rlst152-l13:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+  harpercollins-2009-dictionary:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+  martin-rlst152-l18:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+  ehrman-brief-5e-ch18-summary:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+  painter-2014-james-and-paul:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2014." }
+  ehrman-brief-5e-ch19-summary:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+  ehrman-brief-5e-ch16-summary:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+  martin-rlst152-l24:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+  ehrman-brief-5e-ch9-summary:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+  hayes-rlst145-l2:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+  hayes-rlst145-l5:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+  petersen-gedsh-diatessaron:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2011." }
+  breed-bo-earliest-versions:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: Reference; year not on page.",
+    }
+  martin-rlst152-l2:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+  jacobs-derovan-ej-hermeneutics:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: Reference; year not on page.",
+    }
+  hayes-rlst145-l19:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+  martin-rlst152-l6:
+    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+  shectman-bo-how-scholars-read:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: Reference; year not on page.",
+    }
+  ccc-112:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: Tradition; year not on page.",
+    }
+  gotquestions-bible-errors:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: Tradition; year not on page.",
+    }
+leads:
+  - "James L. Kugel's four assumptions of ancient interpreters (How to Read the Bible, 2007, pp. 14–16; The Bible As It Was, 1997, pp. 17–23): read only as reports in Alan T. Levenson's review (Jewish Bible Quarterly 40:3, 2012), Michael B. Shepherd (The Bible and Interpretation, 2025) and a First Things essay. Kugel's own text not readable (Google Books captcha; Internet Archive lending-only). Levenson: Kugel “insists that this mode of reading … was not inherent in Scripture”, but calls Kugel's “the minority opinion” and points to Daniel 9 reading Jeremiah 25. Would bear on the Ep 6 claim that univocality is imposed from outside the texts."
+  - "Brueggemann, Theology of the Old Testament (Fortress 1997), testimony and countertestimony; Licona, Why Are There Differences in the Gospels? (OUP 2017); Barker, Tatian's Diatessaron (OUP 2021): not public."
+  - "Journal of Theological Studies 72/1 (2021) on the Diatessaron, reportedly arguing Tatian's aim was not apologetic harmonizing: blocked, not read. Petersen's “none, on its own, is convincing” already keeps the motive open."
+  - "Ehrman's horizontal and vertical reading (Jesus, Interrupted, 2009): not in any public Scholarly or Reference text found."
+uncited:
+  - "Alan T. Levenson, review of Kugel, Jewish Bible Quarterly 40:3 (2012), jewishbible.org, read in full. Not cited: the Quarterly describes itself as for readers of every background and states no peer review, so its class is unsettled."
+  - "Anthony Le Donne, A Study Companion to The Bible (Fortress 2014), ch. 1 “One Book, Many Voices” (“not all of these perspectives are harmonious”), and Ryan Bonfiglio, A Study Companion to Introduction to the Hebrew Bible (Fortress 2014): publisher-hosted sample PDFs. Not cited: the section may excerpt Sumney's textbook, and Bonfiglio's authorship comes from retailer listings."
+  - "Henning, “Hell” (Bible Odyssey, 2017): “In Paul’s letters there is no explicit mention of eternal punishment or hell.” Not cited: afterlife diversity across NT authors rests on this one author (Ep 15 trigger)."
+  - "Dei Verbum §12 (1965): “the content and unity of the whole of Scripture”. Not cited; the Catechism §112 quotes it."
+  - "Augustine, De consensu evangelistarum 1.7.10, and Origen, Commentary on John 10.2, in 19th-century translations (New Advent): primary texts, not an External Source class; no modern Reference account of them read."
+  - "Encyclopaedia Judaica, “Bible” (Sarna): Ha-Sefarim, “The Books”. Not cited; 1971 text."

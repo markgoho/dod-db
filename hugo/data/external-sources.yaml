@@ -1329,3 +1329,367 @@ john-paul-ii-1998-turin-address:
   url: "https://www.vatican.va/content/john-paul-ii/en/speeches/1998/may/documents/hf_jp-ii_spe_19980524_sudario.html"
   hostAuthored: false
   tradition: "the Church"
+
+hayes-rlst145-l10:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 10 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-10"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l19:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 19 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-19"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l22:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 22 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-22"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch23:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 23 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-23-summary"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch24:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 24 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-24-summary"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l1:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 1 transcript: Introduction: Why Study the New Testament?"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-1"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l2:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 2 transcript: From Stories to Canon"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-2"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l6:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 6 transcript: The Gospel of Mark"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-6"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l18:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 18 transcript: Arguing with Paul?"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-18"
+  hostAuthored: false
+  tradition: null
+
+ehrman-brief-5e-ch1-summary:
+  author: "Bart D. Ehrman"
+  title: "Student chapter 1 summary of A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-1-summary"
+  hostAuthored: false
+  tradition: null
+
+ehrman-brief-5e-ch4-summary:
+  author: "Bart D. Ehrman"
+  title: "Student chapter 4 summary of A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-4-summary"
+  hostAuthored: false
+  tradition: null
+
+ehrman-brief-5e-ch5-summary:
+  author: "Bart D. Ehrman"
+  title: "Student chapter 5 summary of A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-5-summary"
+  hostAuthored: false
+  tradition: null
+
+ehrman-brief-5e-ch7-summary:
+  author: "Bart D. Ehrman"
+  title: "Student chapter 7 summary of A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-7-summary"
+  hostAuthored: false
+  tradition: null
+
+ehrman-brief-5e-ch18-summary:
+  author: "Bart D. Ehrman"
+  title: "Student chapter 18 summary of A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-18-summary"
+  hostAuthored: false
+  tradition: null
+
+ehrman-brief-5e-ch19-summary:
+  author: "Bart D. Ehrman"
+  title: "Student chapter 19 summary of A Brief Introduction to the New Testament"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "5th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/ehrman_briefnt5e-student-resources/ehrman_briefnt5e-chapter-19-summary"
+  hostAuthored: false
+  tradition: null
+
+breed-bo-written-transmitted:
+  author: "Brennan Breed"
+  title: "How Was the Bible Written and Transmitted?"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Scholarly society website, open"
+  url: "https://www.bibleodyssey.org/articles/how-was-the-bible-written-and-transmitted/"
+  hostAuthored: false
+  tradition: null
+
+neufeld-bo-nt-religious-text:
+  author: "Dietmar Neufeld"
+  title: "In What Ways Is the New Testament a “Religious Text”?"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Scholarly society website, open"
+  url: "https://www.bibleodyssey.org/articles/in-what-ways-is-the-new-testament-a-religious-text/"
+  hostAuthored: false
+  tradition: null
+
+meyers-bo-hebrew-bible-history:
+  author: "Carol Meyers"
+  title: "How Does the Hebrew Bible Relate to History?"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Scholarly society website, open"
+  url: "https://www.bibleodyssey.org/articles/how-does-the-hebrew-bible-relate-to-history/"
+  hostAuthored: false
+  tradition: null
+
+ainslie-lam-2021-manasseh:
+  author: "Jesse Ainslie and Joseph Lam"
+  title: "Manasseh"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2021
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/manasseh/"
+  hostAuthored: false
+  tradition: null
+
+bond-2018-nativity:
+  author: "Helen K. Bond"
+  title: "The Nativity"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2018
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-nativity/"
+  hostAuthored: false
+  tradition: null
+
+painter-2014-james-and-paul:
+  author: "John Painter"
+  title: "James and Paul"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2014
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/james-and-paul/"
+  hostAuthored: false
+  tradition: null
+
+shectman-bo-how-scholars-read:
+  author: "Sarah Shectman"
+  title: "How Do Biblical Scholars Read the Hebrew Bible?"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Scholarly society website, open"
+  url: "https://www.bibleodyssey.org/articles/how-do-biblical-scholars-read-the-hebrew-bible/"
+  hostAuthored: false
+  tradition: null
+
+petersen-gedsh-diatessaron:
+  author: "William L. Petersen"
+  title: "Diatessaron"
+  series: "Gorgias Encyclopedic Dictionary of the Syriac Heritage"
+  publisher: "Gorgias Press"
+  year: 2011
+  edition: "Electronic ed., Beth Mardutho, 2018"
+  class: Reference
+  kind: article
+  access: "Online edition, open"
+  url: "https://gedsh.bethmardutho.org/Diatessaron"
+  hostAuthored: false
+  tradition: null
+
+jacobs-derovan-ej-hermeneutics:
+  author: "Louis Jacobs and David Derovan"
+  title: "Hermeneutics"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed. (2007)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/hermeneutics-0"
+  hostAuthored: false
+  tradition: null
+
+ccc-112:
+  author: null
+  title: "Catechism of the Catholic Church, §112"
+  series: null
+  publisher: "Libreria Editrice Vaticana"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va, open"
+  url: "https://www.vatican.va/archive/ENG0015/__PQ.HTM"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+gotquestions-bible-errors:
+  author: null
+  title: "Does the Bible contain errors, contradictions, or discrepancies?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/Bible-errors.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
