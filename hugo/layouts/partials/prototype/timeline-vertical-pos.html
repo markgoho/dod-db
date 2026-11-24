@@ -1,0 +1,18 @@
+{{- /*
+  PROTOTYPE (#162). A year's position on the compressed-era axis.
+  Takes dict {eras (each with offset), year}. Returns dict {pos, era}: pos in
+  axis units (sum of era sizes before it plus its share of its own era), era
+  the index of the era it falls in.
+  */
+-}}
+{{- $y := float .year -}}
+{{- $last := sub (len .eras) 1 -}}
+{{- $res := dict "pos" 0.0 "era" 0 -}}
+{{- range $i, $e := .eras -}}
+  {{- $from := float $e.from -}}
+  {{- $to := float $e.to -}}
+  {{- if and (ge $y $from) (or (lt $y $to) (eq $i $last)) -}}
+    {{- $res = dict "pos" (add $e.offset (div (mul (sub $y $from) (float $e.size)) (sub $to $from))) "era" $i -}}
+  {{- end -}}
+{{- end -}}
+{{- return $res -}}

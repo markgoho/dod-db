@@ -1,5 +1,5 @@
 {{ define "head-styles" }}
-  {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") | resources.Concat "css/timeline-list.css" | resources.Minify }}
+  {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") (resources.Get "css/prototype-timeline-vertical.css") | resources.Concat "css/timeline-list.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
@@ -73,44 +73,26 @@
       {{ partial "timeline-date-line.html" $entries }}
     </div>
 
-    {{ with $placed }}
-      <section
-        class="timeline-spine"
-        aria-label="Timeline Entries in date order">
-        <p class="timeline-legend" aria-hidden="true">
-          <span class="timeline-legend__item"
-            ><span class="timeline-legend__swatch"></span>Date given by
-            scholarly or reference sources</span
-          >
-          <span class="timeline-legend__item"
-            ><span
-              class="timeline-legend__swatch timeline-legend__swatch--tradition"></span
-            >Date a named tradition holds</span
-          >
-        </p>
-        <ol class="timeline-list" role="list">
-          {{ range . }}
-            {{ $id := .page.File.ContentBaseName }}
-            {{ partial "timeline-entry.html" (merge $ctx (dict
-              "entry" .page
-              "heading" "h2"
-              "scale" (merge $scale (dict "from" .from "to" .to))
-              "triggers" (where $allTriggers "entry" $id)
-              ))
-            }}
-          {{ end }}
-        </ol>
-      </section>
-    {{ end }}
+    {{/* PROTOTYPE (#162): three vertical two-lane variants on this route, switched by ?variant= (A shows without JS). */}}
+    {{ $tlv := partial "prototype/timeline-vertical-items.html" (dict "placement" $placement "triggers" $allTriggers "shortCites" $shortCites) }}
+    {{ $vctx := dict "data" $tlv "shortCites" $shortCites "episodesByNumber" $episodesByNumber }}
+    <div data-variant="A" data-variant-name="Central spine">
+      {{ partial "prototype/timeline-vertical-a.html" $vctx }}
+    </div>
+    <div data-variant="B" data-variant-name="Lanes and era bands" hidden>
+      {{ partial "prototype/timeline-vertical-b.html" $vctx }}
+    </div>
+    <div data-variant="C" data-variant-name="Era rail and ledger" hidden>
+      {{ partial "prototype/timeline-vertical-c.html" $vctx }}
+    </div>
 
-    {{ with $unplaced }}
+    {{ with $tlv.leftover }}
       <section class="cloud-section">
         <h2 class="type-section-title cloud-section__title">
           Not placed on the timeline
         </h2>
         <p class="timeline-section-intro">
-          Events the sources date only conditionally, or not at all. They sit
-          outside the timeline, and are never placed by a tradition's date.
+          Entries with neither a date in the sources nor a tradition's date.
         </p>
         <ul class="timeline-list" role="list">
           {{ range . }}
@@ -172,6 +154,9 @@
       </section>
     {{ end }}
   </section>
+  {{ if or hugo.IsServer (os.Getenv "HUGO_PROTOTYPE") }}
+    {{ partial "prototype/variant-switcher.html" . }}
+  {{ end }}
 {{ end }}
 
 {{ define "footer-scripts" }}

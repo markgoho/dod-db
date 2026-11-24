@@ -1,0 +1,73 @@
+{{- /*
+  PROTOTYPE (#162) variant B, "Lanes and era bands": two full-height lanes
+  (the tradition lane hatched end to end), crossed by full-width era bands
+  whose heights follow the compressed axis, so empty early millennia stay
+  visible but thin. Each subject is one row spanning both lanes. No cards:
+  typographic rows. Ids prefixed b-.
+  Takes dict {data, shortCites, episodesByNumber}.
+  */
+-}}
+<section class="tlv-b" aria-label="Timeline, lanes and era bands">
+  <div class="tlv-lanes-head tlv-b__head" aria-hidden="true">
+    <p>Scholarly and reference sources</p>
+    <p>Dates a named tradition holds</p>
+  </div>
+  {{ range .data.eras }}
+    <section
+      class="tlv-b__band"
+      style="{{ printf "--size: %v" .size | safeCSS }}">
+      <h2 class="tlv-b__era">
+        {{ .label }}
+        {{ if not .items }}<span class="tlv-b__empty">no entries</span>{{ end }}
+      </h2>
+      {{ with .items }}
+        <ol class="tlv-b__rows" role="list">
+          {{ range . }}
+            {{ $it := . }}
+            <li
+              class="tlv-b__row{{ if eq .placedBy "tradition" }}
+                tlv-b__row--by-tradition
+              {{ end }}"
+              id="b-{{ .id }}">
+              <h3 class="tlv-b__title">
+                {{ .title }}
+                <span class="tlv-b__kind type-eyebrow"
+                  >{{ cond (eq .kind "event") "Event" "Composition" }}</span
+                >
+                {{ if .standin }}
+                  <span class="tlv-standin">Stand-in</span>
+                {{ end }}
+              </h3>
+              <div class="tlv-b__cell tlv-b__cell--left">
+                {{ if eq .left.mode "date" }}
+                  <p class="tlv-date">{{ .left.display }}</p>
+                  {{ with .left.note }}<p class="tlv-note">{{ . }}</p>{{ end }}
+                {{ else }}
+                  <p class="tlv-statement-label">{{ .left.label }}</p>
+                  <p class="tlv-note">{{ .left.statement }}</p>
+                {{ end }}
+                <p class="tlv-keys">{{ .left.keys }}</p>
+              </div>
+              <div class="tlv-b__cell tlv-b__cell--right">
+                {{ with .right }}
+                  <p class="tlv-holds">{{ .holds }}</p>
+                  <p class="tlv-date tlv-date--tradition">{{ .display }}</p>
+                  {{ if eq $it.placedBy "tradition" }}
+                    <p class="tlv-note">
+                      This row sits at this date because the sources give it
+                      none.
+                    </p>
+                  {{ end }}
+                  <p class="tlv-keys">{{ .keys }}</p>
+                {{ end }}
+              </div>
+              <div class="tlv-b__sources">
+                {{ partial "prototype/timeline-vertical-sources.html" (dict "item" $it "shortCites" $.shortCites "episodesByNumber" $.episodesByNumber) }}
+              </div>
+            </li>
+          {{ end }}
+        </ol>
+      {{ end }}
+    </section>
+  {{ end }}
+</section>

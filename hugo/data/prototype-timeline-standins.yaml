@@ -1,0 +1,56 @@
+# PROTOTYPE (#162), throwaway: lives only on branch prototype/timeline-vertical.
+# Every value below is a STAND-IN. Nothing here is sourced, reviewed or quoted;
+# it exists only to show how tradition-only items sit in a two-lane Timeline.
+
+# Compressed-era axis. `size` is each era's share of the axis (relative
+# height): tight before about 2000 BCE, roomy after (#162 "Scale").
+eras:
+  - { from: -6000, to: -3000, size: 1, label: "6000–3000 BCE" }
+  - { from: -3000, to: -2000, size: 1, label: "3000–2000 BCE" }
+  - { from: -2000, to: -1500, size: 2, label: "2000–1500 BCE" }
+  - { from: -1500, to: -1000, size: 3, label: "1500–1000 BCE" }
+  - { from: -1000, to: -500, size: 6, label: "1000–500 BCE" }
+  - { from: -500, to: 0, size: 4, label: "500–1 BCE" }
+
+# Tradition-only stand-ins: no Critical Date, so placed by the Tradition Date
+# (CONTEXT.md, #162), with a cited scholarly statement on the left.
+entries:
+  - id: standin-creation
+    title: "STAND-IN: Creation of the world"
+    kind: event
+    left:
+      label: "Not historical as narrated"
+      statement: "STAND-IN: placeholder scholarly statement. Scholars do not read Genesis 1 as an account of a datable event; see the Priestly source entry for when it was written."
+      cite: "STAND-IN placeholder citation (Scholarly source TBD)"
+    tradition:
+      display: "4004 BCE"
+      from: -4004
+      holder: "STAND-IN: James Ussher, a seventeenth-century archbishop"
+      cite: "STAND-IN placeholder citation (Ussher, Annales, TBD)"
+    trigger: "STAND-IN: needs a Trigger Claim (Episode quote) before it could publish."
+  - id: standin-adam
+    title: "STAND-IN: Adam"
+    kind: event
+    left:
+      label: "Not historical as narrated"
+      statement: "STAND-IN: placeholder scholarly statement. The sources do not treat Adam as a datable historical person."
+      cite: "STAND-IN placeholder citation (Scholarly source TBD)"
+    tradition:
+      display: "About 6,000 years ago (about 4000 BCE)"
+      from: -4000
+      holder: "STAND-IN: Answers in Genesis, a young-earth creationist ministry"
+      cite: "STAND-IN placeholder citation (Answers in Genesis page TBD)"
+    trigger: "STAND-IN: needs a Trigger Claim (Episode quote) before it could publish."
+  - id: standin-flood
+    title: "STAND-IN: The Flood"
+    kind: event
+    left:
+      label: "Not historical as narrated"
+      statement: "STAND-IN: placeholder scholarly statement. No worldwide flood is found in the sources' evidence; the story is read alongside older Mesopotamian flood stories."
+      cite: "STAND-IN placeholder citation (Scholarly source TBD)"
+    tradition:
+      display: "2348 BCE"
+      from: -2348
+      holder: "STAND-IN: James Ussher, a seventeenth-century archbishop"
+      cite: "STAND-IN placeholder citation (Ussher, Annales, TBD)"
+    trigger: "STAND-IN: needs a Trigger Claim (Episode quote) before it could publish."

@@ -1,0 +1,69 @@
+{{- /*
+  PROTOTYPE (#162) variant A, "Central spine": one axis down the middle,
+  scholarly cards left, tradition cards right, a connector across the spine
+  when both describe the same subject. Gaps between rows follow the
+  compressed axis. Only variant A keeps bare entry ids (inbound /timeline/#id).
+  Takes dict {data, shortCites, episodesByNumber}.
+  */
+-}}
+<section class="tlv-a" aria-label="Timeline, central spine">
+  <div class="tlv-lanes-head tlv-a__head" aria-hidden="true">
+    <p>What scholarly and reference sources say</p>
+    <p>What a named tradition holds</p>
+  </div>
+  <ol class="tlv-a__list" role="list">
+    {{ $tail := 0.0 }}
+    {{ range .data.eras }}
+      <li class="tlv-a__era" style="{{ printf "--gap: %.3f" $tail | safeCSS }}">
+        <span class="tlv-a__era-label">{{ .label }}</span>
+      </li>
+      {{ range .items }}
+        {{ $it := . }}
+        <li
+          class="tlv-a__row{{ if .right }}
+            tlv-a__row--paired
+          {{ end }}{{ if eq .placedBy "tradition" }}
+            tlv-a__row--by-tradition
+          {{ end }}"
+          id="{{ .id }}"
+          style="{{ printf "--gap: %.3f" .gap | safeCSS }}">
+          <div class="tlv-a__card tlv-a__card--left panel">
+            <p class="tlv-kicker type-eyebrow">
+              {{ cond (eq .kind "event") "Event" "Composition" }}
+              {{ if .standin }}
+                <span class="tlv-standin">Stand-in</span>
+              {{ end }}
+            </p>
+            <h2 class="tlv-a__title">{{ .title }}</h2>
+            {{ if eq .left.mode "date" }}
+              <p class="tlv-date">{{ .left.display }}</p>
+              {{ with .left.note }}<p class="tlv-note">{{ . }}</p>{{ end }}
+            {{ else }}
+              <p class="tlv-statement-label">{{ .left.label }}</p>
+              <p class="tlv-note">{{ .left.statement }}</p>
+            {{ end }}
+            <p class="tlv-keys">{{ .left.keys }}</p>
+            {{ partial "prototype/timeline-vertical-sources.html" (dict "item" $it "shortCites" $.shortCites "episodesByNumber" $.episodesByNumber) }}
+          </div>
+          <div class="tlv-a__node" aria-hidden="true">
+            <span class="tlv-a__dot"></span>
+          </div>
+          {{ with .right }}
+            <div class="tlv-a__card tlv-a__card--right tlv-tradition">
+              <p class="tlv-holds">{{ .holds }}</p>
+              <p class="tlv-date tlv-date--tradition">{{ .display }}</p>
+              {{ if eq $it.placedBy "tradition" }}
+                <p class="tlv-note">
+                  Placed here by this date only: the sources give no date of
+                  their own.
+                </p>
+              {{ end }}
+              <p class="tlv-keys">{{ .keys }}</p>
+            </div>
+          {{ end }}
+        </li>
+      {{ end }}
+      {{ $tail = .tail }}
+    {{ end }}
+  </ol>
+</section>

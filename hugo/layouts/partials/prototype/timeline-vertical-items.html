@@ -1,0 +1,103 @@
+{{- /*
+  PROTOTYPE (#162). One flat, ordered list of Timeline items for the vertical
+  two-lane variants: the real entries plus the stand-ins in
+  data/prototype-timeline-standins.yaml. One placement per item: its Critical
+  Date, else its Tradition Date (CONTEXT.md as amended for #162).
+  Takes dict {placement (timeline-placement.html), triggers, shortCites}.
+  Returns dict {eras (each with items and gaps), items, leftover}.
+  */
+-}}
+{{- $short := .shortCites -}}
+{{- $allTriggers := .triggers -}}
+{{- $sd := index hugo.Data "prototype-timeline-standins" -}}
+
+{{- $eras := slice -}}
+{{- $off := 0.0 -}}
+{{- range $sd.eras -}}
+  {{- $eras = $eras | append (dict "from" .from "to" .to "size" .size "label" .label "offset" $off) -}}
+  {{- $off = add $off (float .size) -}}
+{{- end -}}
+
+{{- /* Real entries: by Critical Date, else by Tradition Date, else left over. */ -}}
+{{- $raw := slice -}}
+{{- $leftover := slice -}}
+{{- range .placement.placed -}}
+  {{- $raw = $raw | append (dict "page" .page "year" .from "placedBy" "critical") -}}
+{{- end -}}
+{{- range .placement.unplaced -}}
+  {{- if .Params.tradition -}}
+    {{- $raw = $raw | append (dict "page" . "year" .Params.tradition.from "placedBy" "tradition") -}}
+  {{- else -}}
+    {{- $leftover = $leftover | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $items := slice -}}
+{{- range $raw -}}
+  {{- $pg := .page -}}
+  {{- $p := $pg.Params -}}
+  {{- $id := $pg.File.ContentBaseName -}}
+  {{- $left := dict -}}
+  {{- $leftCites := slice -}}
+  {{- with $p.critical -}}
+    {{- $left = dict "mode" "date" "display" .display "note" (.note | default "") -}}
+    {{- $leftCites = .cites -}}
+  {{- else -}}
+    {{- $left = dict "mode" "statement" "label" (partial "timeline-undated-label.html") "statement" $p.undated.statement -}}
+    {{- $leftCites = $p.undated.cites -}}
+  {{- end -}}
+  {{- $keys := slice -}}
+  {{- range $leftCites -}}
+    {{- $keys = $keys | append (index $short .source) -}}
+  {{- end -}}
+  {{- $left = merge $left (dict "cites" $leftCites "keys" (delimit (uniq $keys) "; ")) -}}
+  {{- $right := false -}}
+  {{- with $p.tradition -}}
+    {{- $tk := slice -}}
+    {{- range .cites -}}
+      {{- $tk = $tk | append (index $short .source) -}}
+    {{- end -}}
+    {{- $right = dict "holds" (printf "%s%s holds" .holder (cond (strings.Contains .holder ",") "," "")) "display" .display "cites" .cites "keys" (delimit (uniq $tk) "; ") -}}
+  {{- end -}}
+  {{- $items = $items | append (dict
+    "id" $id "title" $pg.Title "kind" $p.kind "year" .year "placedBy" .placedBy
+    "standin" false "left" $left "right" $right
+    "triggers" (where $allTriggers "entry" $id))
+  -}}
+{{- end -}}
+
+{{- /* Stand-ins: tradition-only, every field STAND-IN. */ -}}
+{{- range $sd.entries -}}
+  {{- $t := .tradition -}}
+  {{- $items = $items | append (dict
+    "id" .id "title" .title "kind" .kind "year" $t.from "placedBy" "tradition"
+    "standin" true
+    "left" (dict "mode" "statement" "label" .left.label "statement" .left.statement "keys" .left.cite)
+    "right" (dict "holds" (printf "%s%s holds" $t.holder (cond (strings.Contains $t.holder ",") "," "")) "display" $t.display "keys" $t.cite)
+    "trigger" .trigger)
+  -}}
+{{- end -}}
+
+{{- /* Order: year, events before compositions, then title (as timeline-placement.html). */ -}}
+{{- $keyed := slice -}}
+{{- range $items -}}
+  {{- $at := partial "prototype/timeline-vertical-pos.html" (dict "eras" $eras "year" .year) -}}
+  {{- $k := printf "%07d|%d|%s" (add (int .year) 1000000) (cond (eq .kind "event") 0 1) (lower .title) -}}
+  {{- $keyed = $keyed | append (merge . (dict "key" $k "pos" $at.pos "era" $at.era "yearLabel" (partial "timeline-year-label.html" .year))) -}}
+{{- end -}}
+{{- $items = sort $keyed "key" -}}
+
+{{- /* Group into eras. gap: axis distance from the previous item (or the era's start). */ -}}
+{{- $out := slice -}}
+{{- range $i, $e := $eras -}}
+  {{- $prev := $e.offset -}}
+  {{- $in := slice -}}
+  {{- range $items -}}
+    {{- if eq .era $i -}}
+      {{- $in = $in | append (merge . (dict "gap" (sub .pos $prev))) -}}
+      {{- $prev = .pos -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $out = $out | append (merge $e (dict "items" $in "tail" (sub (add $e.offset (float $e.size)) $prev))) -}}
+{{- end -}}
+{{- return dict "eras" $out "items" $items "leftover" $leftover -}}

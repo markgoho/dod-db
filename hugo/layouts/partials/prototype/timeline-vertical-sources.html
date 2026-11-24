@@ -1,0 +1,39 @@
+{{- /*
+  PROTOTYPE (#162). Folded sources for one item, shared by the variants.
+  Takes dict {item, shortCites, episodesByNumber}. Stand-ins bypass the
+  registry partials (their sources are placeholders).
+  */
+-}}
+{{- $it := .item -}}
+<details class="scholarship-block tlv-sources">
+  <summary class="disclosure-summary">
+    <span class="type-eyebrow">Sources and what prompted this</span>
+  </summary>
+  <div class="scholarship-block__body tlv-sources__body">
+    {{ if $it.standin }}
+      <p class="tlv-standin-text">{{ $it.left.keys }}</p>
+      <p class="timeline-entry__label">{{ $it.right.holds }}</p>
+      <p class="tlv-standin-text">{{ $it.right.keys }}</p>
+      <p class="tlv-standin-text">{{ $it.trigger }}</p>
+    {{ else }}
+      {{ partial "timeline-cites.html" (dict "cites" $it.left.cites "shortCites" .shortCites) }}
+      {{ with $it.right }}
+        <p class="timeline-entry__label">{{ .holds }}</p>
+        {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites) }}
+      {{ end }}
+      {{ with $it.triggers }}
+        <p class="timeline-entry__label">
+          Prompted by ·
+          <mark class="scholarship-block__flag"
+            >said on the show, not the entry’s evidence</mark
+          >
+        </p>
+        <div class="tag-quotes__grid timeline-entry__triggers">
+          {{ range . }}
+            {{ partial "quote-card" (dict "quote" . "episodesByNumber" $.episodesByNumber) }}
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</details>

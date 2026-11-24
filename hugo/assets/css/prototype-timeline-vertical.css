@@ -1,0 +1,584 @@
+/*
+  PROTOTYPE (#162), throwaway: vertical two-lane Timeline variants A/B/C and
+  the variant switcher. Lives only on branch prototype/timeline-vertical.
+  Axis gaps/sizes are unitless inline custom properties (--gap, --size)
+  multiplied by spacing tokens.
+*/
+
+[data-variant] {
+  container: tlv / inline-size;
+  margin-block-start: var(--space-l);
+}
+
+[data-variant][hidden] {
+  display: none;
+}
+
+/* ---------- Shared bits ---------- */
+
+.tlv-lanes-head {
+  display: grid;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  gap: var(--space-s);
+  grid-template-columns: 1fr 1fr;
+  margin-block-end: var(--space-s);
+}
+
+.tlv-lanes-head > :last-child {
+  color: var(--color-text-muted);
+  text-align: end;
+}
+
+.tlv-kicker {
+  align-items: center;
+  color: var(--color-text-muted);
+  display: flex;
+  font-size: var(--step--2);
+  gap: var(--space-3xs);
+}
+
+.tlv-standin {
+  background: var(--color-accent);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: var(--border-radius-sm);
+  color: var(--tan-900);
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-wide);
+  padding-inline: var(--space-3xs);
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.tlv-standin-text {
+  background: var(--color-accent-muted);
+  font-size: var(--step--1);
+  padding: var(--space-3xs) var(--space-2xs);
+}
+
+.tlv-date {
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-weight: var(--font-weight-boldest);
+  line-height: var(--line-height-heading);
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+.tlv-date--tradition {
+  color: var(--tan-500);
+  font-size: var(--step-1);
+  font-weight: var(--font-weight-semibold);
+}
+
+.tlv-statement-label {
+  font-family: var(--font-family-display);
+  font-size: var(--step-1);
+  font-weight: var(--font-weight-boldest);
+  line-height: var(--line-height-heading);
+}
+
+.tlv-note,
+.tlv-keys {
+  color: var(--color-text-muted);
+  font-size: var(--step--1);
+}
+
+.tlv-keys {
+  font-style: italic;
+}
+
+.tlv-holds {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Tradition surfaces: dashed outline, hatched, never a solid panel. */
+.tlv-tradition {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--tan-200) 0 var(--space-4xs),
+    transparent var(--space-4xs) var(--space-2xs)
+  );
+  border: var(--border-width-sm) dashed var(--tan-500);
+  border-radius: var(--border-radius-sm);
+}
+
+.tlv-sources {
+  margin-inline: calc(-1 * var(--space-s));
+}
+
+.tlv-sources__body {
+  display: grid;
+  gap: var(--space-s);
+}
+
+/* ---------- Variant A: central spine ---------- */
+
+.tlv-a__list {
+  display: grid;
+  margin: 0;
+  padding: 0 0 var(--space-l);
+  position: relative;
+}
+
+.tlv-a__list::before {
+  border-inline-start: var(--border-width-md) solid var(--tan-900);
+  content: "";
+  inset-block: 0;
+  inset-inline-start: 50%;
+  position: absolute;
+  translate: -50% 0;
+}
+
+.tlv-a__era,
+.tlv-a__row {
+  margin-block-start: calc(
+    var(--space-2xs) + min(var(--gap, 0), 3) * var(--space-m)
+  );
+}
+
+.tlv-a__era {
+  justify-self: center;
+  position: relative;
+}
+
+.tlv-a__era-label {
+  background: var(--tan-900);
+  border-radius: var(--border-radius-md);
+  color: var(--tan-000);
+  display: inline-block;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  padding: var(--space-4xs) var(--space-xs);
+}
+
+.tlv-a__row {
+  align-items: start;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--space-xl) minmax(0, 1fr);
+  scroll-margin-block-start: var(--space-s);
+}
+
+.tlv-a__card {
+  display: grid;
+  gap: var(--space-3xs);
+  min-inline-size: 0;
+  padding: var(--space-s) var(--space-s) 0;
+}
+
+.tlv-a__card--left {
+  grid-column: 1;
+}
+
+.tlv-a__card--right {
+  align-self: start;
+  grid-column: 3;
+  padding-block-end: var(--space-s);
+}
+
+.tlv-a__title {
+  font-size: var(--step-1);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+/* Node: a dot on the spine; connectors run to each card's edge. */
+.tlv-a__node {
+  block-size: var(--space-xl);
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+}
+
+.tlv-a__node::before,
+.tlv-a__row--paired .tlv-a__node::after {
+  border-block-start: var(--border-width-sm) solid var(--tan-900);
+  content: "";
+  inline-size: 50%;
+  inset-block-start: 50%;
+  position: absolute;
+}
+
+.tlv-a__node::before {
+  inset-inline-start: 0;
+}
+
+.tlv-a__row--paired .tlv-a__node::after {
+  border-block-start-style: dashed;
+  border-color: var(--tan-500);
+  inset-inline-end: 0;
+}
+
+.tlv-a__dot {
+  background: var(--color-action);
+  block-size: var(--space-s);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: 50%;
+  inline-size: var(--space-s);
+  inset: 50% auto auto 50%;
+  position: absolute;
+  translate: -50% -50%;
+  z-index: 1;
+}
+
+.tlv-a__row--by-tradition .tlv-a__dot {
+  background: var(--tan-000);
+  border-style: dashed;
+}
+
+.tlv-a__row--by-tradition .tlv-a__card--left {
+  background: var(--tan-200);
+}
+
+@container tlv (width < 44rem) {
+  .tlv-a__head {
+    display: none;
+  }
+
+  .tlv-a__list::before {
+    inset-inline-start: calc(var(--space-m) / 2);
+  }
+
+  .tlv-a__era {
+    justify-self: start;
+  }
+
+  .tlv-a__row {
+    gap: var(--space-2xs);
+    grid-template-columns: var(--space-m) minmax(0, 1fr);
+  }
+
+  .tlv-a__node {
+    block-size: var(--space-l);
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .tlv-a__card--left,
+  .tlv-a__card--right {
+    grid-column: 2;
+  }
+
+  .tlv-a__node::before,
+  .tlv-a__node::after {
+    display: none;
+  }
+}
+
+/* ---------- Variant B: lanes and era bands ---------- */
+
+.tlv-b {
+  position: relative;
+}
+
+/* The tradition lane, hatched from top to bottom behind every band. */
+.tlv-b::before {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--tan-200) 0 var(--space-4xs),
+    transparent var(--space-4xs) var(--space-2xs)
+  );
+  border-inline-start: var(--border-width-sm) dashed var(--tan-500);
+  content: "";
+  inset-block: 0;
+  inset-inline: 50% 0;
+  position: absolute;
+  z-index: var(--z-index-background);
+}
+
+.tlv-b__head {
+  margin: 0;
+  padding-block: var(--space-2xs);
+}
+
+.tlv-b__head > * {
+  padding-inline: var(--space-s);
+}
+
+.tlv-b__head > :last-child {
+  text-align: start;
+}
+
+.tlv-b__band {
+  border-block-start: var(--border-width-md) solid var(--tan-900);
+  min-block-size: calc(var(--size) * var(--space-l));
+}
+
+.tlv-b__era {
+  background: var(--tan-900);
+  color: var(--tan-000);
+  display: inline-flex;
+  font-size: var(--step-0);
+  gap: var(--space-xs);
+  margin: 0;
+  padding: var(--space-4xs) var(--space-xs);
+}
+
+.tlv-b__empty {
+  color: var(--tan-400);
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-regular);
+}
+
+.tlv-b__rows {
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+
+.tlv-b__row {
+  border-block-end: var(--border-width-sm) solid var(--tan-300);
+  display: grid;
+  gap: 0;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  padding-block: var(--space-s) 0;
+}
+
+.tlv-b__title {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--step-1);
+  gap: var(--space-3xs) var(--space-xs);
+  grid-column: 1 / -1;
+  margin: 0;
+  padding-inline: var(--space-s);
+}
+
+.tlv-b__kind {
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
+}
+
+.tlv-b__cell {
+  align-content: start;
+  display: grid;
+  gap: var(--space-4xs);
+  min-inline-size: 0;
+  padding: var(--space-2xs) var(--space-s) var(--space-s);
+}
+
+.tlv-b__sources {
+  grid-column: 1;
+  padding-inline: var(--space-s);
+}
+
+.tlv-b__row--by-tradition .tlv-b__cell--left {
+  background: var(--tan-200);
+}
+
+@container tlv (width < 44rem) {
+  .tlv-b::before,
+  .tlv-b__head {
+    display: none;
+  }
+
+  .tlv-b__row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .tlv-b__cell--right:not(:empty) {
+    background: repeating-linear-gradient(
+      135deg,
+      var(--tan-200) 0 var(--space-4xs),
+      transparent var(--space-4xs) var(--space-2xs)
+    );
+    border-inline-start: var(--border-width-sm) dashed var(--tan-500);
+    margin-inline-start: var(--space-m);
+  }
+
+  .tlv-b__cell--right:empty {
+    display: none;
+  }
+
+  .tlv-b__sources {
+    grid-column: 1;
+  }
+}
+
+/* ---------- Variant C: era rail and ledger ---------- */
+
+.tlv-c__era {
+  border-block-start: var(--border-width-md) solid var(--tan-900);
+  display: grid;
+  gap: 0 var(--space-s);
+  grid-template-columns: var(--space-3xl) minmax(0, 1fr);
+}
+
+.tlv-c__rail-label {
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  inset-block-start: var(--space-s);
+  line-height: var(--line-height-heading);
+  margin: 0;
+  padding-block: var(--space-2xs);
+  position: sticky;
+}
+
+.tlv-c__era--empty .tlv-c__rail-label {
+  color: var(--color-text-muted);
+  font-size: var(--step--1);
+  padding-block: var(--space-4xs);
+}
+
+.tlv-c__rows {
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+
+.tlv-c__row {
+  border-block-end: var(--border-width-sm) solid var(--tan-300);
+  display: grid;
+  gap: var(--space-3xs) var(--space-s);
+  grid-template-areas:
+    "when what trad"
+    "when sources sources";
+  grid-template-columns: minmax(0, var(--content-max-width-sidebar)) minmax(
+      0,
+      2fr
+    ) minmax(0, 1fr);
+  padding-block: var(--space-s) 0;
+}
+
+.tlv-c__when {
+  grid-area: when;
+}
+
+.tlv-c__what {
+  display: grid;
+  gap: var(--space-4xs);
+  grid-area: what;
+}
+
+.tlv-c__title {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--step-1);
+  gap: var(--space-3xs);
+  margin: 0;
+}
+
+.tlv-c__trad {
+  align-content: start;
+  border-inline-start: var(--border-width-sm) dashed var(--tan-500);
+  color: var(--color-text-muted);
+  display: grid;
+  font-size: var(--step--1);
+  gap: var(--space-4xs);
+  grid-area: trad;
+  padding-inline-start: var(--space-xs);
+}
+
+.tlv-c__trad:empty {
+  border: 0;
+}
+
+.tlv-c__trad .tlv-holds {
+  color: var(--color-text-main);
+}
+
+.tlv-c__trad-date {
+  font-weight: var(--font-weight-bold);
+}
+
+.tlv-c__sources {
+  grid-area: sources;
+}
+
+.tlv-c__sources .tlv-sources {
+  margin-inline: 0;
+}
+
+/* Tradition-only rows: offset and hatched so they never read as dated history. */
+.tlv-c__row--by-tradition {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--tan-200) 0 var(--space-4xs),
+    transparent var(--space-4xs) var(--space-2xs)
+  );
+  border: var(--border-width-sm) dashed var(--tan-500);
+  margin-block: var(--space-2xs);
+  margin-inline-start: var(--space-l);
+  padding-inline: var(--space-xs);
+}
+
+.tlv-c__row--by-tradition .tlv-statement-label {
+  font-size: var(--step-0);
+}
+
+.tlv-c__placed {
+  background: var(--tan-900);
+  color: var(--tan-000);
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-bold);
+  justify-self: start;
+  letter-spacing: var(--letter-spacing-wide);
+  padding-inline: var(--space-3xs);
+  text-transform: uppercase;
+}
+
+@container tlv (width < 44rem) {
+  .tlv-c__era {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .tlv-c__rail {
+    background: var(--tan-100);
+    inset-block-start: 0;
+    position: sticky;
+    z-index: var(--z-index-sticky);
+  }
+
+  .tlv-c__rail-label {
+    position: static;
+  }
+
+  .tlv-c__row {
+    grid-template-areas: "when" "what" "trad" "sources";
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .tlv-c__row--by-tradition {
+    margin-inline-start: var(--space-s);
+  }
+}
+
+/* ---------- Prototype switcher (not part of any design) ---------- */
+
+.proto-switcher {
+  align-items: center;
+  background: var(--tan-900);
+  border: var(--border-width-sm) solid var(--color-accent);
+  border-radius: var(--space-l);
+  box-shadow: 0 var(--space-3xs) var(--space-s)
+    color-mix(in srgb, var(--tan-900) 40%, transparent);
+  color: var(--color-accent);
+  display: flex;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  gap: var(--space-2xs);
+  inset-block-end: var(--space-s);
+  inset-inline-start: 50%;
+  max-inline-size: calc(100% - 2 * var(--space-s));
+  padding: var(--space-4xs) var(--space-2xs);
+  position: fixed;
+  translate: -50% 0;
+  z-index: var(--z-index-toast);
+}
+
+.proto-switcher__btn {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: var(--space-4xs) var(--space-2xs);
+}
+
+.proto-switcher__label {
+  white-space: nowrap;
+}

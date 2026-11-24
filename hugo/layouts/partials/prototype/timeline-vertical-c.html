@@ -1,0 +1,69 @@
+{{- /*
+  PROTOTYPE (#162) variant C, "Era rail and ledger": a sticky era rail on the
+  left; each subject one ledger row, the scholarly side wide and first, the
+  tradition side a narrow, muted margin note. Tradition-only rows are offset
+  and hatched, and say outright that a tradition's date placed them. Empty
+  eras collapse to a single line. Ids prefixed c-.
+  Takes dict {data, shortCites, episodesByNumber}.
+  */
+-}}
+<section class="tlv-c" aria-label="Timeline, era rail and ledger">
+  {{ range .data.eras }}
+    <section class="tlv-c__era {{ if not .items }}tlv-c__era--empty{{ end }}">
+      <div class="tlv-c__rail">
+        <h2 class="tlv-c__rail-label">{{ .label }}</h2>
+      </div>
+      {{ with .items }}
+        <ol class="tlv-c__rows" role="list">
+          {{ range . }}
+            {{ $it := . }}
+            {{ $byTradition := eq .placedBy "tradition" }}
+            <li
+              class="tlv-c__row{{ if $byTradition }}
+                tlv-c__row--by-tradition
+              {{ end }}"
+              id="c-{{ .id }}">
+              <div class="tlv-c__when">
+                {{ if eq .left.mode "date" }}
+                  <p class="tlv-date">{{ .left.display }}</p>
+                {{ else }}
+                  <p class="tlv-statement-label">{{ .left.label }}</p>
+                {{ end }}
+              </div>
+              <div class="tlv-c__what">
+                <h3 class="tlv-c__title">
+                  {{ .title }}
+                  {{ if .standin }}
+                    <span class="tlv-standin">Stand-in</span>
+                  {{ end }}
+                </h3>
+                <p class="tlv-kicker type-eyebrow">
+                  {{ cond (eq .kind "event") "Event" "Composition" }}
+                </p>
+                {{ if eq .left.mode "date" }}
+                  {{ with .left.note }}<p class="tlv-note">{{ . }}</p>{{ end }}
+                {{ else }}
+                  <p class="tlv-note">{{ .left.statement }}</p>
+                {{ end }}
+                <p class="tlv-keys">{{ .left.keys }}</p>
+              </div>
+              <aside class="tlv-c__trad">
+                {{ with .right }}
+                  {{ if $byTradition }}
+                    <p class="tlv-c__placed">Placed by a tradition’s date</p>
+                  {{ end }}
+                  <p class="tlv-holds">{{ .holds }}</p>
+                  <p class="tlv-c__trad-date">{{ .display }}</p>
+                  <p class="tlv-keys">{{ .keys }}</p>
+                {{ end }}
+              </aside>
+              <div class="tlv-c__sources">
+                {{ partial "prototype/timeline-vertical-sources.html" (dict "item" $it "shortCites" $.shortCites "episodesByNumber" $.episodesByNumber) }}
+              </div>
+            </li>
+          {{ end }}
+        </ol>
+      {{ end }}
+    </section>
+  {{ end }}
+</section>
