@@ -123,7 +123,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "#133 second pass 2026-11-23: added. Same quote as band/3 (Meyers p. 10, verified verbatim by the second pass and again for #133). kernel's “Many scholars think” is the Coogan and Chapman summary's report alone (kernel/1–3, one author pair); Meyers holding in her own voice that the analogues suggest a core of reality is the second author. Statement attributes it to Meyers by name. Added by the verifier, so this cite and its sentence have had no further independent pass.",
+      note: "#133 second pass 2026-11-23: added. Same quote as band/3 (Meyers p. 10; excerpt PDF re-fetched from assets.cambridge.org 2026-11-23 for #133 and matched verbatim). kernel's “Many scholars think” is the Coogan and Chapman summary's report alone (kernel/1–3, one author pair); Meyers holding in her own voice that the analogues suggest a core of reality is the second author. Statement attributes it to Meyers by name. Added by the verifier, so this cite and its sentence have had no further independent pass.",
     }
   band/1:
     {
@@ -141,7 +141,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Meyers p. 10. Same page: historicity perhaps “ceases to be an issue”. On p. 7 she reports the widely accepted Canaanite-origins hypothesis, under which the account “appears to be little more than a tale”. Not on the page; owner ruled 2026-11-23: no new side added. Second pass 2026-11-23: verified. Quote verbatim at p. 10; statement keeps “no specific historical grounding” beside “core of reality”. #133 first pass: source of the short answer's “core”, as a second independent author beside Hayes. #133 second pass 2026-11-23: verified; Meyers's “analogues” are the Egyptian records of Semites entering and leaving Egypt (p. 10, same paragraph: two laborers “fled from Egypt into Sinai”), so “a real escape” is within her “departure … core of reality”.",
+      note: "Meyers p. 10. Same page: historicity perhaps “ceases to be an issue”. On p. 7 she reports the widely accepted Canaanite-origins hypothesis, under which the account “appears to be little more than a tale”. Not on the page; owner ruled 2026-11-23: no new side added. Second pass 2026-11-23: verified. Quote verbatim at p. 10; statement keeps “no specific historical grounding” beside “core of reality”. #133 first pass: source of the short answer's “core”, as a second independent author beside Hayes. #133 second pass 2026-11-23: verified; Meyers's “analogues” are the Egyptian records of Semites entering and leaving Egypt (p. 10, the paragraph before, on foreigners departing Egypt: a papyrus letter records that two laborers fled from Egypt into Sinai), so “a real escape” is within her “departure … core of reality”.",
     }
   date/1:
     {
@@ -403,6 +403,7 @@ sources:
       note: "Same textbook and edition as coogan-brief-4e-summary; chapter 9 (“In the Wilderness”) page. Same authors, so it adds no independent source. Second pass 2026-11-23: verified.",
     }
 leads:
+  - "#133 flags (second pass 2026-11-23): history, date, numbers and song each need a second read author for their short, or a reframe or cut. No candidate source for history, date or song was named in the sources read; for numbers, Adair (HIPHIL Novum, below) and Krajewski (uncited) were already judged unsuitable. For sargon, Collins (below) would give a second author for “many scholars” if read in full."
   - "Eerdmans Dictionary of the Bible, ed. David Noel Freedman (Eerdmans, 2000), p. 441: “In fact, there is no contemporary reference or description in any extrabiblical source.” Google Books snippet; not read in the source itself (#86). Was evidence/5 in the prototype."
   - "John J. Collins, Introduction to the Hebrew Bible, 3rd ed. (Fortress Press, 2019), p. 122: “Sargon of Akkad (c. 2300 b.c.e.), whose mother also placed him in a vessel of reeds in a river.” Google Books snippet; not read in the source itself (#86). Was sargon/2 in the prototype."
   - "Collins and Eerdmans retried 2026-11-23 in a browser: Google Books showed the book's landing page, not p. 122 or p. 441. Still leads."
