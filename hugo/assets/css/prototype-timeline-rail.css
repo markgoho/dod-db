@@ -131,8 +131,9 @@
   box-shadow: 0 var(--space-3xs) var(--space-s)
     color-mix(in srgb, var(--tan-900) 30%, transparent);
   color: var(--color-text-main);
-  inline-size: auto;
-  inset: calc(var(--space-xl) + var(--space-2xs)) var(--space-s) auto;
+  /* A rail-shaped panel at the inline-start edge, leaving room for the readout and fly-outs. */
+  inline-size: min(100% - 2 * var(--space-s), var(--content-min-width-sidebar));
+  inset: calc(var(--space-xl) + var(--space-2xs)) auto auto var(--space-s);
   margin: 0;
   max-block-size: 75dvh;
   overflow-y: auto;
@@ -170,7 +171,8 @@
     inline-size: var(--rail-w);
     inset-block-start: var(--space-s);
     justify-self: start;
-    margin-inline-start: calc(-1 * (var(--rail-w) + var(--rail-gap)));
+    /* Pull the rail out to the viewport's inline-start edge (one gap in). */
+    margin-inline-start: calc(var(--rail-gap) - (100dvw - 100%) / 2);
     max-width: none;
   }
 
@@ -438,8 +440,9 @@
   .rail-m__tip {
     inset: auto;
     margin: 0;
-    margin-inline-start: var(--space-2xs);
+    margin-inline: var(--space-2xs);
     position-area: center inline-end;
+    position-try-fallbacks: flip-inline;
   }
 }
 
@@ -599,6 +602,13 @@
 .rail-f__entries {
   display: grid;
   gap: var(--space-4xs);
+}
+
+/* Global list type would otherwise size the items up. */
+.rail-f__entries > li {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
 }
 
 .rail-f__entry {
