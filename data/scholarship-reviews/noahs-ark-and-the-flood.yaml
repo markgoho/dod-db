@@ -178,15 +178,15 @@ citations:
     }
   borrowing/8:
     {
-      agent: pass,
+      agent: flag,
       owner: "",
-      note: "Callender (Bible Odyssey video), video transcript.",
+      note: "Callender (Bible Odyssey video), video transcript. Callender says Noah's raven “doesn't come back”; EJ's summary of Genesis says it “returned to the ark”. The text attributes the bird sequence to Callender; flag for second pass whether to keep it.",
     }
   borrowing/9:
     {
-      agent: pass,
+      agent: flag,
       owner: "",
-      note: "Callender (Bible Odyssey video), video transcript. Callender's “perhaps”; text says “suggests to Callender”. Bird order checked against EJ's Tablet XI summary (dove, swallow, raven).",
+      note: "Callender (Bible Odyssey video), video transcript. Flag for second pass: this sentence bears on the two-sources question (sources), not on borrowing; kept as Callender's inference from the bird sequence. Callender's “perhaps”; text says “suggests to Callender”. Bird order checked against EJ's Tablet XI summary (dove, swallow, raven).",
     }
   differences/1:
     {
@@ -202,7 +202,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”. Includes EJ's own qualification (implicit in Ea's criticism); Hayes l4 quotes the same Ea line, statement says so.",
+      note: "Young and Sperling, EJ “Flood, The”, section “The Biblical-Mesopotamian Parallels”. Includes EJ's own qualification (implicit in Ea's criticism). Hayes l4 quotes the same Ea line but reads it as showing capriciousness, so the statement doesn't link the two.",
     }
   differences/7: { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
   differences/8: { agent: pass, owner: "", note: "Hayes l4, ch. 4 [00:24:02]." }
@@ -277,7 +277,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Jensen, NCE “Flood”, section “Historical and Scientific Issues”.",
+      note: "Jensen, NCE “Flood”, section “Historical and Scientific Issues”. Jensen alone: the text attributes “none of them is an account of a particular historical flood” to the NCE; the short does not say it (see uncited on his last paragraph).",
     }
   local/6:
     {
@@ -320,10 +320,14 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Yanko-Hombach et al., EGU 2006 abstract, p. 2. Only the abstract (pp. 1–2 of the author manuscript) is cited: pdftotext output of the body is garbled (font encoding), so nothing past the abstract was read. Title says the outflow evidence “still contradicts the Noah's Flood Hypothesis”.",
+      note: "Yanko-Hombach et al., EGU 2006 abstract, p. 2.",
     }
   black-sea/7:
-    { agent: pass, owner: "", note: "Aksu and Hiscott 2022, Abstract." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Aksu and Hiscott 2022, Abstract. Only the abstract (pp. 1–2 of the author manuscript) is cited: pdftotext output of the body is garbled (font encoding), so nothing past the abstract was read. Title says the outflow evidence “still contradicts the Noah's Flood Hypothesis”.",
+    }
   black-sea/8:
     { agent: pass, owner: "", note: "Aksu and Hiscott 2022, Abstract." }
   ark/1:
@@ -484,7 +488,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "Only sources uses “most scholars”, from Geoghegan's own “led most scholars to conclude” (sources/2), with NCE's “scholars have recognized” (sources/3) and three more authors agreeing. Other shorts: parallels (EJ, Hayes, Coogan, Callender), borrowing (reports the split: Coogan/EJ/Hayes vs NCE on directness; “sources read”), differences (Hayes, EJ), geology (Montgomery, Jensen; flag on Jensen, geology/9), local (EJ, NCE; “perhaps”, “sources read”), black-sea (Yanko-Hombach et al., Aksu and Hiscott; “the later reviews read”), ark (dimensions NCE; P attribution NCE and Geoghegan), ararat (EJ, Cline), found (Cline, Jensen, Collins). No short gives one scholar's view (#133).",
+      note: "Only sources uses “most scholars”, from Geoghegan's own “led most scholars to conclude” (sources/2), with NCE's “scholars have recognized” (sources/3) and three more authors agreeing. Other shorts: parallels (EJ, Hayes, Coogan, Callender), borrowing (reports the split: Coogan/EJ/Hayes vs NCE on directness; “sources read”), differences (Hayes, EJ), geology (Montgomery, Jensen; flag on Jensen, geology/9), local (EJ, NCE; “perhaps”), black-sea (Yanko-Hombach et al., Aksu and Hiscott; “the later reviews read”), ark (dimensions NCE; P attribution NCE and Geoghegan), ararat (EJ, Cline), found (Cline, Jensen, Collins). No short gives one scholar's view (#133).",
     }
   dissent-attributed:
     {
@@ -515,10 +519,10 @@ sources:
     }
   geoghegan-2021-two-flood-narratives:
     {
-      agent: pass,
+      agent: flag,
       owner: "",
       edition: "Bible Odyssey article dated November 11, 2021",
-      note: "New entry. Reference (Bible Odyssey, judged per author, #86): PhD in History (UCSD), taught history and religion at UCSD, Boston College and University of San Diego; now teaches at a secondary school (The Bishop's School) per his bio. Flag for second pass: author check passes on PhD and university teaching record, but current post is not a university.",
+      note: "New entry. Reference (Bible Odyssey, judged per author, #86): PhD in History (UCSD), taught history and religion at UCSD, Boston College and University of San Diego; now teaches at a secondary school (The Bishop's School) per his bio. Flag for second pass: author check passes on PhD and university teaching record, but current post is not a university, and his is the only “most scholars” sentence behind the core short (Jensen's “scholars have recognized” and three more authors back the substance).",
     }
   callender-noah-and-gilgamesh:
     {
@@ -564,7 +568,7 @@ sources:
     }
   yanko-hombach-2006-black-sea:
     {
-      agent: pass,
+      agent: flag,
       owner: "",
       edition: "Geophysical Research Abstracts 8, 00359, EGU General Assembly 2006",
       note: "New entry. A conference abstract (2 pp.), not a full paper; read in full. Authors at the Avalon Institute, Fordham and Newcastle. Class Scholarly, flagged: a conference abstract is lighter than a peer-reviewed paper; the black-sea short does not rest on it alone (Aksu and Hiscott 2022).",
@@ -579,12 +583,12 @@ sources:
 leads:
   - "William B. F. Ryan et al., “Catastrophic flooding of the Black Sea”, Annual Review of Earth and Planetary Sciences 31 (2003): 525–54 — the proponents' defence; a web-search summary (not the source) reports its abstract as saying the flood hypothesis best fits the full set of observations. Publisher page blocked by a bot check 2026-11-24; a full copy found only on a third-party course page of unclear licence; not read."
   - "Irving Finkel's Ark Tablet (British Museum; The Ark Before Noah, 2014): a round ark in an Old Babylonian Atrahasis-type text. No open source read; cut."
-  - "Ark seaworthiness (Ep 131 00:14:23 trigger): no source read addresses whether a wooden vessel of the ark's size could float; cut."
-  - "Date the flood story was written: McClellan's Bible Odyssey video says most scholars place it in the 700s or 800s BCE; Host-authored and no other source read gives a date; cut."
   - "David Carr (Ep 56 00:45:55, 00:47:26, 00:50:19): the flood as a later insertion into an older non-flood primeval story, and the “two Noahs”. The candidate's second core half; only in a Transcript, no source read; see Carr, The Formation of Genesis 1–11 (OUP, 2020), not read."
   - "Collins and Fasold, “Bogus ‘Noah's Ark’ from Turkey Exposed as a Common Geologic Structure”, Journal of Geoscience Education 44 (1996): 439–44 — the paper Ep 183 cites. Only the author-hosted copy (csun.edu/~vcgeo005/bogus.html) was read; whether it is the published text is unconfirmed, and 1996 is outside the 30-year window. See uncited."
   - "V. Yanko-Hombach, A. S. Gilbert, N. Panin and P. M. Dolukhanov (eds.), The Black Sea Flood Question (Springer, 2007): named in the EGU abstract; not read."
 uncited:
+  - "Dan McClellan, Bible Odyssey video (as below): “Most scholars believe that the story in the Bible was probably written down somewhere in the 7 or 800s BCE.” Host-authored and no other source read gives a date, so the page has no statement on when the story was written (cut)."
+  - "Jensen, NCE, “Historical and Scientific Issues”, last paragraph: “The ancient authors of the Genesis flood story wove their Israelite traditions around one such devastating flood to create a compelling story about their God and His relationship with humanity.” Ambiguous beside his “no one of these is an account of a particular historical flood”; the local short says only “perhaps by memories of local floods”."
   - "Dan McClellan, “Have scholars found Noah’s ark?”, Bible Odyssey video (https://www.bibleodyssey.org/video-gallery/have-scholars-found-noahs-ark), read 2026-11-24: “And the same was discovered when a group in the 1980s was convinced it was Noah’s Ark and did surveys with ground penetrating radar and drilled core samples, and every test they conducted showed this was naturally occurring geologic stuff”; also “most scholars agree refers to the mountains inside the kingdom of Urtu [sic]”. Host-authored and the same claims as the Ep 183 Trigger Claims, so not cited."
   - "Collins and Fasold 1996, author-hosted copy (csun.edu/~vcgeo005/bogus.html), Conclusion: “Evidence from microscopic studies and photo analyses demonstrates that the supposed Ark near Dogubayazit is a completely natural rock formation. It cannot have been Noah's Ark nor even a man-made model.” Matches the sentence McClellan reads in Ep 183 00:34:04. Not cited (see leads)."
   - "Jean Rudhardt, “Flood, The”, Encyclopedia of Religion (1987), Encyclopedia.com (environment/…/flood-0), Conclusion: “In order to account for this, some authors have supposed that everywhere people preserve the memory of distant prehistoric catastrophes that destroyed the universe or vast regions of the earth. Such an explanation strikes this writer as misguided.” Outside the 30-year window; about worldwide myths, not Genesis; not cited."
