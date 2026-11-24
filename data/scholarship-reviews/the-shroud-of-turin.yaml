@@ -1,0 +1,632 @@
+# Review record for /scholarship/the-shroud-of-turin/ (#93 shape). Not rendered.
+# agent: results of the agent's first pass (#143, 2026-11-24). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass.
+# First pass: three research agents fetched every source on 2026-11-24 and copied quotes from the fetched page or PDF text; every page quote was then script-matched against those notes (whitespace only). Locators come from the notes. The second pass must re-fetch.
+# Second agent pass 2026-11-24 (verify/143, independent): all fourteen sources re-fetched (PDFs and HTML by script; Karapanagiotis, Di Lazzaro, De Caro on mdpi.com, Britannica and both Wiley abstracts in Chrome); every quote script-matched against the fetched text (whitespace only), in-page for the browser sources. Two PDF text-layer misses (radiocarbon/8, xray/1) matched verbatim on mdpi.com. Every locator re-checked (Wild paragraphs mapped from the HTML, PDF printed pages, mdpi.com section headings by DOM walk). Every Trigger Claim re-matched by script at its timestamp and speaker and re-read with two lines either side (no dropped hedge). Author overlap checked by script against Damon et al.'s 21 authors. #133 applied clause by clause to every short.
+# Second pass changes: earlier short narrowed (“explicitly”; “universal”, not “general”; names the theory class); xray short gives the paper's figures instead of “narrow range”; memorandum/2 extended to carry manufactus / artificialiter depictus; four quotes and two locators changed to curly apostrophes to match their sources; locators corrected (clement/3–4 paragraph 1, radiocarbon/8 p. 4, reception/12 full heading) and paragraph numbers added to Wild's Authenticity cites; text fixes (earlier “best known”, memorandum “in the middle”, reception's “Its reason”, Freer-Waters and Jull's affiliations, the retest sentence, repair's “allow” → “suggest”); De Caro title apostrophe in the registry; “Piero” → “Paolo” Di Lazzaro; Russakoff's unsourced “art historian” replaced by her affiliation. No cites added or removed; keys unchanged.
+review: 2026-11-24
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-24
+citations:
+  first-record/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified (Encyclopedia.com HTML; “History of the Shroud”, the section's only paragraph).",
+    }
+  first-record/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  first-record/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  first-record/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  first-record/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  earlier/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Wild says “not enjoyed universal scholarly support”; the short says “not won general scholarly support”, which leans on Nicolotti (earlier/2) and Russakoff (earlier/5). Second pass: judge whether the short is stronger than the sources. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Flag resolved: “general” was stronger than Wild's “universal”, and Russakoff's “explicitly” had been dropped. Short now: “No document refers explicitly to it before the fourteenth century, and theories of its earlier history, such as Ian Wilson's identification of it with the Mandylion of Edessa, have not won universal scholarly support.” Wild's sentence covers Wilson's and others' theories, so the short names the theory class, not the Mandylion alone; Nicolotti (earlier/2) and Russakoff (earlier/5) reject the identification, so 3 authors back “not universal”. Text's unquoted “The best known” changed to “Wilson's own theory”.",
+    }
+  earlier/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Polemical letter in a peer-reviewed journal (Scholarly venue). “Sindonologists” is Nicolotti’s word, attributed. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  earlier/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  earlier/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  earlier/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified (TMR JATS galley, paragraph 9). Carries “explicitly”, now in the short.",
+    }
+  memorandum/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  memorandum/2:
+    {
+      agent: pass,
+      owner: "",
+      note: 'First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: quote extended back to the start of the sentence (“Because the shroud, said Bishop D''Arcis, is "a product of human handicraft" (manufactus ) …”), since the text''s manufactus / artificialiter depictus clause had no quote behind it. Straight inner quotes and spaces before the parentheses as on Encyclopedia.com (italics removed). Re-matched; verified.',
+    }
+  memorandum/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: apostrophe in “d’Arcis” changed to curly to match the PDF; re-matched; verified.",
+    }
+  memorandum/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Nicolotti’s own translation of the memorial (his n. 2: ed. Chevalier, Étude critique, 1900, pp. VII–VIII). Quote ends without a full stop, as in the block quote. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  memorandum/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica’s words nearly match Thurston’s 1903 translation (“who had painted it”), unattributed. Attributed to Britannica on the page. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  memorandum/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Text's “around the middle of the century” changed to Nicolotti's “in the middle of the century”.",
+    }
+  clement/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  clement/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  clement/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator corrected from paragraph 2 to paragraph 1 (the clement quotes sit in the first “Authenticity” paragraph, with memorandum/1–2 and church/2); verified.",
+    }
+  clement/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Spaces before the closing parentheses are as on Encyclopedia.com. Wild follows the bull redaction with “pictura seu tabula” (Chevalier 1903, doc. G); Nicolotti (clement/2) follows the “sed tanquam figuram” redaction. The text says the two give the order in different forms. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator corrected from paragraph 2 to paragraph 1; verified. Two redactions note checked: text says Wild gives the order “in a form that calls the cloth only a kind of painting”, which the quote carries.",
+    }
+  clement/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica calls Clement VII the Avignon antipope; NCE and Nicolotti say pope. Text: “the pope at Avignon (Britannica calls him the Avignon antipope)”. Curly apostrophe in “shroud’s” as on the page. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  radiocarbon/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Abstract only; full text paywalled. Damon 1989 is outside the 30-year window and is not counted toward the core’s independent authors; it is cited for what the paper reported. Its “AD 1260–1390, with at least 95% confidence” sentence was not read in Damon (see leads). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified against the nature.com abstract. Damon author list (citation_author metas, 21 names) intersected by script with every registry author: only Jull (freer-waters-jull-2010-dated-piece) overlaps.",
+    }
+  radiocarbon/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  radiocarbon/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Currie (NIST) is not a 1989 co-author. “distributed blind” is Currie’s word; the page carries it as his. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  radiocarbon/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  radiocarbon/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Wild’s entry is undated on the page; its bibliography runs to 1998, so it postdates 1996 (2nd ed., 2003, inferred, not on the page). Second pass: confirm treatment as in-window. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator given as paragraph 3; verified. Flag resolved: in-window. The bibliography cites Iannone 1998 and Wilson 1998, so the entry postdates 1996 whatever the edition; the core does not depend on it (Currie, Karapanagiotis, Di Lazzaro carry it).",
+    }
+  radiocarbon/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator given as paragraph 3; verified.",
+    }
+  radiocarbon/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Karapanagiotis is independent of the 1989 authors. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  radiocarbon/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Di Lazzaro et al. are critics of the dating; cited for the range and its rounding only. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator corrected p. 5 → p. 4 (LSE PDF has a cover page; printed header “4 of 16”). The PDF text layer interleaves this sentence with a figure caption, so the script match was done on mdpi.com (browser), where it matches verbatim; verified. Text's “Piero Di Lazzaro” corrected to “Paolo Di Lazzaro” (PDF byline).",
+    }
+  reception/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Field-level sentence 1 of 2 for the short (“weight of evidence”, from “preponderance of evidence”). Wild predates the 2019–2022 challenges. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator given as paragraph 2; verified.",
+    }
+  reception/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "“defenders of the shroud’s authenticity” in the short is Wild’s phrase (#80: characterisation borrowed from a source). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator given as paragraph 3; verified.",
+    }
+  reception/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator given as paragraph 3; verified. Text's “Its reason is that …” changed: Wild offers this sentence in answer to the contamination objections in paragraph 3, not as the reason for “preponderance” (paragraph 2). Now “It adds that, while debate continues about such objections, … scientists have extensive familiarity with contaminants”.",
+    }
+  reception/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Full sentence read: “… seems compelling, but a wave of questioning has followed—not of the AMS method, but of possible artifacts”; the fragment is not weakened by its continuation.",
+    }
+  reception/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  reception/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Field-level sentence 2 of 2 for the short (“difficult to dismiss”, with reception/5 “insufficient to overturn”). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  reception/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "“most scientists” appears only here and is Karapanagiotis’s conditional forecast (“will remain skeptical”); the page attributes it and keeps it out of the short. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: apostrophe in “Shroud’s” changed to curly to match mdpi.com; verified.",
+    }
+  reception/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Abstract only; full text paywalled. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: matched verbatim by in-page script on the Wiley abstract page (Chrome); verified.",
+    }
+  reception/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  reception/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Full sentence continues “prompting the authors of Ref. [38] to state that …”; fragment fair.",
+    }
+  reception/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Jull co-authored Damon et al. 1989; the page identifies the authors as the Arizona laboratory. Not counted as independent. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Affiliations from the PDF: Freer-Waters, Arizona State Museum; Jull, NSF Arizona AMS Laboratory. Text said both were “of the Arizona laboratory”; now “Rachel Freer-Waters of the Arizona State Museum and Timothy Jull of the University of Arizona's radiocarbon laboratory, one of the three that dated the shroud”.",
+    }
+  reception/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator heading corrected to “Discussion and Proposal” (full heading on mdpi.com); verified. Text's “Researchers on both sides propose a new test” changed: Karapanagiotis only reports that many researchers advocate a retest; now “Di Lazzaro and colleagues and Karapanagiotis both report support for a new test”.",
+    }
+  reception/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  repair/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  repair/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  repair/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Rogers 2005 is described through Karapanagiotis; Rogers’s own paper was read only in a Zenodo copy of the Elsevier PDF (see uncited). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Karapanagiotis places the cotton and coating findings in Rogers's 2005 peer-reviewed article on samples from the radiocarbon strip (his 2001 newsletter used the Raes sample only), as the text says.",
+    }
+  repair/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  repair/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Freer-Waters & Jull are the Arizona lab (not independent of the test); the short’s “others find no evidence” is carried by them with Karapanagiotis (repair/7). Second pass: judge whether “others find no evidence of one” is fair to Karapanagiotis, who criticises Rogers’s reading but gives no flat verdict on a repair. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Flag resolved: §4.2.7 read in full on mdpi.com. Karapanagiotis reports both sides and criticises Rogers's mass-spectra reading, but gives no verdict on a repair, so he does not carry “others find no evidence of one”. That clause rests on Freer-Waters & Jull (this cite) and the textile expert reported by Di Lazzaro et al. (repair/9), two independent author groups; “That is disputed” rests on Karapanagiotis (repair/1) and Di Lazzaro et al. (repair/8–9). Short kept. Builder decision 2026-11-24 (second-pass flag): short narrowed from “others find no evidence of one” to “the Arizona laboratory found no evidence of one in its own sample”: the only first-hand finding is Freer-Waters & Jull (Jull a 1989 co-author); the textile expert is second-hand via Di Lazzaro.",
+    }
+  repair/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  repair/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  repair/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Own voice: the sentence opens “This similarity suggests a possible reason … : possibly, …” and is followed by “This hypothesis is supported by the following results”. Text's “allow that” understated this; now “suggest that the sampling site possibly included a patch”.",
+    }
+  repair/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  xray/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "The short reports what the paper claims (exempt fact, #133). “could be” in the short for the paper’s “compatible with the hypothesis”. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: the CNR PDF text layer renders “°C” as “◦ C”, so the script match was done on mdpi.com (browser), where it matches verbatim; verified. Short's “within a narrow range of temperature and humidity” was the page's adjective; now the paper's figures, “at an average temperature of 20.0–22.5 °C and relative humidity of 75–55 percent”.",
+    }
+  xray/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  xray/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Fanti is a co-author and supplied the sample. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  xray/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  xray/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. §4.3 names De Caro et al.'s WAXS method among the indirect methods (“All these developed methods …”), so “such age estimates” covers the X-ray result.",
+    }
+  image/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator given as paragraph 2; verified.",
+    }
+  image/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  image/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator apostrophe changed to curly (Britannica heading “Analyses of the shroud’s authenticity”); verified. The sentence also appears in the page's FAQ section “What is the scientific evidence of the Shroud of Turin?”.",
+    }
+  image/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  image/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  image/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "“majority of the scientists” is Karapanagiotis’s; with Di Lazzaro (image/7) it is attributed in the text, not used in the short. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  image/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Clause of a longer sentence (“The image is unlikely to have been painted; it is difficult to create…”). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Di Lazzaro et al.'s own judgement, followed by their reason (“it is difficult to create an image that matches …”).",
+    }
+  image/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  image/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: apostrophe in “Garlaschelli’s” changed to curly to match mdpi.com; verified.",
+    }
+  blood/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Abstract only; full text paywalled. The paper drew published commentaries and replies in JFS (not read; see leads). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified on the Wiley abstract page, which links three comments, each with an authors' response (consistent with blood/3's “met with criticism”).",
+    }
+  blood/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  blood/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Short reports what the study found (exempt fact, #133), in Karapanagiotis’s summary words. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  church/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference source reporting the Church’s position (not Tradition). Apostrophes in this sentence are straight in the research notes; Britannica uses curly elsewhere. Second pass: check. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: flag resolved: Britannica has curly apostrophes here too (“shroud’s”, “relic’s”); quote and locator changed to curly and re-matched in the browser; verified.",
+    }
+  church/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator given as paragraph 1; verified.",
+    }
+  church/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Tradition source; tradition named in its own words, “the Church”. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified (vatican.va, numbered paragraph 2).",
+    }
+  church/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified (vatican.va, numbered paragraph 3).",
+    }
+triggers:
+  75@00:38:55:
+    {
+      agent: pass,
+      owner: "",
+      note: "Speaker Dan McClellan. The show says 1356; sources give 1354 (Britannica), about 1355 (Nicolotti), about 1357 (NCE). The page gives “the 1350s”. Prompts first-record. First pass 2026-11-24: text matched in the final Transcript line by script. Second pass 2026-11-24: verified. Re-read at [00:38:55.060], Dan McClellan; text matched by script; about the shroud's first appearance.",
+    }
+  75@00:39:55:
+    {
+      agent: pass,
+      owner: "",
+      note: "Speaker Dan McClellan. The show says the artist “admitted”; the sources say the artist attested or proved it (memorandum). Prompts memorandum and clement. First pass 2026-11-24: text matched in the final Transcript line by script. Second pass 2026-11-24: verified. Re-read at [00:39:55.430], Dan McClellan; about the d'Arcis letter.",
+    }
+  75@00:47:51:
+    {
+      agent: pass,
+      owner: "",
+      note: "Speaker Dan McClellan. Core trigger. Prompts radiocarbon and reception. First pass 2026-11-24: text matched in the final Transcript line by script. Second pass 2026-11-24: verified. Re-read at [00:47:51.730], Dan McClellan; the line also says the testing “was all blind” (Currie's “distributed blind”).",
+    }
+  75@00:48:40:
+    {
+      agent: pass,
+      owner: "",
+      note: "Speaker Dan McClellan. Prompts repair. First pass 2026-11-24: text matched in the final Transcript line by script. Second pass 2026-11-24: verified. Re-read at [00:48:40.560], Dan McClellan (the 00:48:40.240 line is Dan Beecher's “Right.”).",
+    }
+  75@00:41:46:
+    {
+      agent: pass,
+      owner: "",
+      note: "Speaker Dan McClellan. The show gives 68–72.5 °F, which is the paper’s 20.0–22.5 °C. Prompts xray. First pass 2026-11-24: text matched in the final Transcript line by script. Second pass 2026-11-24: verified. Re-read at [00:41:46.330], Dan McClellan; the line opens on the wide-angle X-ray scattering analysis, so it is about De Caro et al.",
+    }
+  75@00:50:57:
+    {
+      agent: pass,
+      owner: "",
+      note: "Speaker Dan McClellan. Prompts blood. First pass 2026-11-24: text matched in the final Transcript line by script. Second pass 2026-11-24: verified. Re-read at [00:50:57.860], Dan McClellan; the line names Garlaschelli before the quoted text.",
+    }
+  140@00:22:21:
+    {
+      agent: pass,
+      owner: "",
+      note: "Speaker Dan McClellan. Prompts memorandum. First pass 2026-11-24: text matched in the final Transcript line by script. Second pass 2026-11-24: verified. Re-read at [00:22:21.581], Dan McClellan; episode 140 is “Immaculate Apologetics?” in processed-videos.json.",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "11 statements (minimum 3). Core (radiocarbon) backed by Currie 2004 (Scholarly), Karapanagiotis 2025 (Scholarly), Wild NCE (Reference), Di Lazzaro et al. 2020 (Scholarly): four authors independent of the 1989 paper, all after 1996. Damon 1989 cited but outside the window. No Host-authored source. Second pass 2026-11-24: verified. 11 statements. Core short (1260–1390, 95 percent) backed by Karapanagiotis 2025, Wild NCE (post-1998), Di Lazzaro et al. 2020, with Currie 2004 giving 1262–1384: four author groups, all post-1996, all independent of Damon et al. 1989 and of each other (script-checked author overlap: only Jull/Damon and Nicolotti/Nicolotti).",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "No “consensus” on the page. “most scientists” (reception/7) and “majority of the scientists” (image/6) are attributed to Karapanagiotis, not used in shorts. reception short rests on Wild (reception/1) and Karapanagiotis (reception/5, /6). image short (“no agreed explanation”) rests on Wild (image/1) and Karapanagiotis (image/2). earlier short rests on Nicolotti, Russakoff and Wild. memorandum, clement, xray and blood shorts report what a document or paper says (exempt, #133); first-record and radiocarbon are dated facts with 2+ authors. Second pass 2026-11-24 (#133 test, distinct read authors per clause): first-record exempt date (Britannica, Nicolotti, Wild). earlier narrowed (“explicitly”: Russakoff, Wild; “not universal”: Wild, with Nicolotti and Russakoff). memorandum, clement, xray, blood report documents or papers (exempt). radiocarbon: four authors. reception: Wild and Karapanagiotis on the weight of evidence; contest by Wild, Casabianca et al., Di Lazzaro et al. repair: dispute from Karapanagiotis and Di Lazzaro et al.; “no evidence” from Freer-Waters & Jull and the textile expert via Di Lazzaro (see repair/5). image: Wild, Karapanagiotis. church: Britannica, Wild, John Paul II. No “consensus” or “most scholars” on the page; verified.",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "Casabianca et al. and Di Lazzaro et al. (challenges to the date), Rogers via Karapanagiotis (repair), De Caro et al. (X-ray), McCrone via Karapanagiotis, Garlaschelli and Borrini & Garlaschelli all attributed by name. “defenders of the shroud’s authenticity” borrowed from Wild; “sindonologists” from Nicolotti, attributed. Second pass 2026-11-24: verified. Rogers, McCrone, Garlaschelli, Borrini & Garlaschelli, De Caro et al., Casabianca et al., Di Lazzaro et al. all named in the text.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "One Tradition source: John Paul II 1998 (vatican.va), named as “the Church” in its own words (it never says “Catholic”). Wild (NCE) classed Reference as in earlier pages. Britannica (Reference) reports the Holy See’s position. Second pass 2026-11-24: verified; the address never says “Catholic” (checked by search); the question's “Catholic Church” is the page's question, answered from Britannica and Wild, not from the Tradition source.",
+    }
+sources:
+  damon-1989-radiocarbon-shroud:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Nature 337 (1989)",
+      note: "New entry. Abstract read on nature.com; full text paywalled (USD 39.95). A copy on shroud.com (advocacy) was not read. Second pass 2026-11-24: abstract re-fetched (nature.com, scripted request served it); verified.",
+    }
+  currie-2004-radiocarbon-metrology:
+    {
+      agent: pass,
+      owner: "",
+      edition: "J. Res. NIST 109(2), March–April 2004",
+      note: "New entry. Read in full, section 6.2. Second pass 2026-11-24: PDF re-fetched; §6.2 read; printed p. 202 confirmed; verified.",
+    }
+  karapanagiotis-2025-shroud-overview:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Textiles 5(1) 8, March 2025",
+      note: "New entry. Read in a browser (scripted requests 403). Sections 1–4.1.2, 4.2.6–4.2.7, 4.3, 6 read; rest swept by keyword. Second pass 2026-11-24: read in Chrome; all 18 quotes in final form (curly apostrophes included) matched by in-page script; section of each quote found by DOM walk; §§4.2.7, 4.3 and 6 read in full; verified.",
+    }
+  dilazzaro-2020-radiocarbon-shroud:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Entropy 22(9) 926, 24 August 2020",
+      note: "New entry. Published version on the LSE repository (CC BY); also on INRIM's repository. mdpi.com refused scripted requests. Second pass 2026-11-24: LSE PDF re-fetched and mdpi.com read in Chrome; all quotes matched on mdpi.com; PDF page n+1 = article page n (cover page); verified. Independent of Casabianca et al. (no shared author).",
+    }
+  casabianca-2019-raw-data:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Archaeometry 61(5), first published 22 March 2019",
+      note: "New entry. Abstract only (Wiley, paywalled). PhilArchive copy refused (403). Second pass 2026-11-24: Wiley abstract read in Chrome; verified.",
+    }
+  freer-waters-jull-2010-dated-piece:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Radiocarbon 52(4), 2010",
+      note: "New entry. Free PDF on Cambridge Core. Jull co-authored Damon et al. 1989: not independent of the test. Second pass 2026-11-24: Cambridge Core PDF re-fetched; pp. 1521, 1524 confirmed; affiliations read (see reception/11); verified.",
+    }
+  de-caro-2022-xray-dating:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Heritage 5(2), 11 April 2022, CC BY",
+      note: "New entry. Publisher PDF hosted by CNR (authors' institute). mdpi.com refused scripted requests. No published reply found. Second pass 2026-11-24: CNR PDF re-fetched and mdpi.com read in Chrome; registry title apostrophe changed to curly (“Turin Shroud’s”) to match the publisher; verified.",
+    }
+  borrini-garlaschelli-2019-bpa:
+    {
+      agent: pass,
+      owner: "",
+      edition: "JFS 64(1), first published 10 July 2018",
+      note: "New entry. Abstract only (Wiley, paywalled). Second pass 2026-11-24: Wiley abstract read in Chrome; verified.",
+    }
+  wild-nce-shroud-of-turin:
+    {
+      agent: pass,
+      owner: "",
+      edition: "New Catholic Encyclopedia (edition and year not on the page; bibliography to 1998, so 2nd ed. 2003 inferred)",
+      note: "New entry. Signed “[r. a. wild]”. Reference (signed entry in a reference encyclopedia), as in earlier pages. Dates Savoy ownership to 1460 against 1453 elsewhere; not used on the page. Second pass 2026-11-24: Encyclopedia.com re-fetched; paragraph locators added for every “Authenticity” cite; verified. Classed Reference; in-window by its 1998 bibliography (radiocarbon/5).",
+    }
+  britannica-shroud-of-turin:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Online, page dated 16 November 2026, revised by René Ostberg",
+      note: "New entry. Read in a browser (scripted requests 403). Unsigned staff article; author null, so it counts as its own source. Second pass 2026-11-24: read in Chrome; dateModified 2026-11-16 (JSON-LD and time element) and “revised and updated by René Ostberg” confirmed; verified.",
+    }
+  nicolotti-2019-acquisition-savoy:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Brill 2019, The Shroud at Court, pp. 20–56",
+      note: "New entry. Author's copy stamped “For use by the Author only”, University of Turin repository. Nicolotti is professor of the history of Christianity, Turin. kind book (chapter). Second pass 2026-11-24: PDF re-fetched; printed pp. 20–21 confirmed; verified.",
+    }
+  nicolotti-2024-response-wilson:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Catholic Historical Review 110(1), 2024",
+      note: "New entry. Author's PDF, University of Turin repository. Genre: letter; Wilson's rejoinder (CHR 110.2) not read (leads). Second pass 2026-11-24: PDF re-fetched; printed p. 105 confirmed; verified.",
+    }
+  russakoff-2015-review-nicolotti:
+    {
+      agent: pass,
+      owner: "",
+      edition: "The Medieval Review 15.10.33, 2015",
+      note: "New entry. Independent of Nicolotti (American University of Paris). Second pass 2026-11-24: the galley gives her affiliation but not “art historian”, so the text's “the art historian Anna Russakoff” is now “Anna Russakoff of the American University of Paris”; full text read in the TMR JATS galley (view/20176/26268); paragraphs 3 and 9 confirmed; verified.",
+    }
+  john-paul-ii-1998-turin-address:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Address, 24 May 1998, vatican.va",
+      note: "New entry. Tradition. The text never uses “Catholic” or “relic”; tradition named “the Church”. Second pass 2026-11-24: vatican.va re-fetched; verified.",
+    }
+leads:
+  - "Damon et al. 1989, p. 614: “the age of the shroud is obtained as AD 1260–1390, with at least 95% confidence.” Known only through Freer-Waters & Jull 2010 and 2026, which quote it; Damon's full text is paywalled."
+  - "Nicolas Sarzeaud, “A New Document on the Appearance of the Shroud of Turin from Nicole Oresme”, Journal of Medieval History 51 (2025): 604–621. Press release (EurekAlert!, 28 August 2025) says Oresme referred to the shroud between 1355 and 1382, most likely after 1370, the oldest written evidence known. Paywalled; not read. If confirmed, it bears on earlier and memorandum, not on first-record."
+  - "Andrea Nicolotti, The Shroud of Turin: The History and Legends of the World's Most Famous Relic (Baylor UP), and From the Mandylion of Edessa to the Shroud of Turin (Brill, 2014): no preview / restricted. The 2014 book reached through Russakoff's review."
+  - "Bella, Garlaschelli and Samperi (Thermochimica Acta 617, 2015; 632, 2016) and Latendresse (624, 2016): the exchange on Rogers's mass spectra. ScienceDirect CAPTCHA; not read."
+  - "Commentaries on Borrini & Garlaschelli in JFS 64 (2019) by Sánchez Hermosilla et al., Bevilacqua et al. (with Fanti), and Sánchez Hermosilla and Rucker, each with an authors' response. No abstracts; not read."
+  - "Garlaschelli, “Life-size Reproduction of the Shroud of Turin and its Image”, J. Imaging Sci. Technol. 54 (2010); reply by Fanti and Heimburger 55 (2011). Publisher CAPTCHA; the reproduction is cited through Karapanagiotis."
+  - "W. C. McCrone, “The Shroud of Turin: Blood or Artist's Pigment?”, Accounts of Chemical Research 23 (1990): 77–83. Not opened; pre-1996. Cited through Karapanagiotis."
+  - "STURP 1981 summary statement (“It is not the product of an artist”): readable only on shroud.com (advocacy); quoted in Karapanagiotis §3.2 and Di Lazzaro §1."
+  - "Gary Vikan, “Debunking the Shroud: Made by Human Hands”, BAR 24:6 (1998): paywalled; reprint only on shroud.com."
+  - "Ian Wilson's rejoinder to Nicolotti, CHR 110.2 (2024): 397–398. Not read."
+uncited:
+  - "Raymond N. Rogers, “Studies on the radiocarbon sample from the shroud of turin”, Thermochimica Acta 425 (2005): 189–194, read in a Zenodo copy of the Elsevier PDF (zenodo.org/record/1259381; labelled CC0, but the PDF carries Elsevier's copyright): “The radiocarbon sample was thus not part of the original cloth and is invalid for determining the age of the shroud.” Publisher page CAPTCHA. Not cited (copy not author-posted, rights unclear; precedent Collins/Fasold in noahs-ark-and-the-flood); described through Karapanagiotis."
+  - "Herbert Thurston, “The Holy Shroud and the Verdict of History”, The Month 101 (January 1903): 21–22, the standard English translation of the d'Arcis memorandum (archive.org): “certain men being hired to represent themselves as healed at the moment of the exhibition of the shroud”. Not cited: a 1903 Jesuit monthly fits no External Source class, so the staged healings (Ep 75 00:38:55) are not on the page. Thurston also calls the surviving text “the Bishop's own draft”."
+  - "Thurston, “The Holy Shroud (of Turin)”, Catholic Encyclopedia (1912): first heard of “about the year 1360”; the artist “had confessed to having painted it”. Not cited (1912); “confessed” is a gloss on the memorandum's “attested”."
+  - "Ulysse Chevalier, Autour des origines du suaire de Lirey (1903), docs. G and K: Latin of Clement VII's bulls of 6 January 1390. Primary edition; used only to check the two redactions behind clement/2 and clement/4."
+  - "Freer-Waters & Jull, npj Heritage Science 14:263 (2026): “The radiocarbon laboratories continue to support this result and see no reason to dispute the results.” Not cited: same authors as freer-waters-jull-2010-dated-piece, which carries the point."
+  - "Cicero Moraes, “Image Formation on the Holy Shroud—A Digital 3D Approach”, Archaeometry 68 (2026): 84–93, abstract: the image is “more consistent with an artistic low-relief representation than with the direct imprint of a real human body”; commentary by Casabianca, Marinelli and Piana and Moraes's response (Archaeometry 68: 861–866), abstracts. Not cited: abstracts only; could be added in a later pass."
+  - "Benedict XVI (2 May 2010: “the Icon of Holy Saturday”) and Francis (30 March 2013: “this icon of a man scourged and crucified”), vatican.va. Not cited; John Paul II carries the Church's position."
+  - "Nicolotti 2019, p. 20: “It is by now an established fact that the Shroud came into the possession of the Duke of Savoy in 1453.” Later history (Savoy 1453, Chambéry fire 1532, Turin 1578) has no statement; no Trigger Claim asks about it."
