@@ -1,6 +1,14 @@
 {{- /*
-  The only copy of the undated wording: what an entry with no Critical Date
-  shows where its date goes (entry card, JSON-LD, inbound link line).
+  The only copy of the undated wording: the scholarly verdict an entry with no
+  Critical Date shows where its date goes (entry card, JSON-LD, inbound link
+  line). Takes the entry; its undated.verdict picks the heading (#163 §1).
   */
 -}}
+{{- $verdict := "" -}}
+{{- with .Params.undated -}}
+  {{- $verdict = .verdict | default "" -}}
+{{- end -}}
+{{- if eq $verdict "not-historical" -}}
+  {{- return "Not historical as narrated" -}}
+{{- end -}}
 {{- return "No firm date in the sources" -}}

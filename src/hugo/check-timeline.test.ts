@@ -109,6 +109,16 @@ describe("checkTimeline", () => {
     expect(await check("published-undated")).toEqual([]);
   });
 
+  test("an undated entry with verdict not-historical passes", async () => {
+    expect(await check("undated-verdict")).toEqual([]);
+  });
+
+  test("fails an undated verdict outside no-firm-date and not-historical", async () => {
+    expect(await check("undated-verdict-unknown")).toEqual([
+      `hugo/content/timeline/fall.md: undated.verdict: Invalid option: expected one of "no-firm-date"|"not-historical"`,
+    ]);
+  });
+
   test("fails a non-draft entry with no Trigger Claim", async () => {
     expect(await check("no-trigger")).toEqual([
       `timeline/fall: has no Trigger Claim; a published entry needs one`,

@@ -1,12 +1,12 @@
 {{- /*
   The only copy of the #109 §4 inbound link line. Takes a Timeline Entry.
   Entries have no page of their own (render: never), so the link goes to the
-  entry's card on the Timeline. An undated entry (Exodus) shows the undated
-  wording where the display date goes, as its card and the JSON-LD do.
+  entry's card on the Timeline. An undated entry shows its scholarly verdict
+  where the display date goes, as its card and the JSON-LD do.
   */
 -}}
 {{- $href := printf "%s#%s" (site.GetPage "/timeline").RelPermalink .File.ContentBaseName -}}
-{{- $date := partial "timeline-undated-label.html" -}}
+{{- $date := partial "timeline-undated-label.html" . -}}
 {{- with .Params.critical -}}
   {{- $date = .display -}}
 {{- end -}}

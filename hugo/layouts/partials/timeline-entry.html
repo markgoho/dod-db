@@ -1,11 +1,11 @@
 {{- /*
-  One Timeline Entry card (#109 §3, variant B of #101).
+  One Timeline Entry as a compact marker (#163 §2): the scholarly card, a node
+  on the axis, and, when the entry has one, the tradition card. Citations and
+  Trigger Claims fold into one disclosure.
   Takes dict:
   entry            the entry page
-  heading          "h2" or "h3"
-  scale            dict {min, span, from, to} to draw the scale, or nil for an
-  entry not placed on the timeline. from/to are the resolved
-  Critical Date years (an anchored entry's come from its anchor).
+  by               "critical" or "tradition" for an entry on the axis (see
+  timeline-placement.html); "" for one not placed
   triggers         this entry's Trigger Claims
   episodesByNumber string Episode Number → Episode page, for quote-card.html
   shortCites       External Source id → author-date key
@@ -16,144 +16,107 @@
 {{- $p := $e.Params -}}
 {{- $c := $p.critical -}}
 {{- $t := $p.tradition -}}
+{{- $byTradition := eq .by "tradition" -}}
+{{- $placedLabel := "Placed by a tradition’s date" -}}
+{{- $verdict := partial "timeline-undated-label.html" $e -}}
 {{- $holds := "" -}}
 {{- with $t -}}
   {{- /* An appositive ("X, an evangelical ministry") closes with a comma before the verb. */ -}}
   {{- $holds = printf "%s%s holds" .holder (cond (strings.Contains .holder ",") "," "") -}}
 {{- end -}}
-<li class="timeline-entry panel" id="{{ $e.File.ContentBaseName }}">
-  <div class="timeline-entry__head">
-    {{ printf "<%s class=\"timeline-entry__title\">%s</%s>" .heading (htmlEscape $e.Title) .heading | safeHTML }}
+
+{{- /* Both dates in words, for the list item's name. */ -}}
+{{- $scholarly := $verdict -}}
+{{- with $c }}{{ $scholarly = .display }}{{ end -}}
+{{- $label := printf "%s. Scholarly and reference sources: %s." $e.Title $scholarly -}}
+{{- with $t -}}
+  {{- $label = printf "%s %s %s." $label $holds .display -}}
+{{- end -}}
+{{- if $byTradition -}}
+  {{- $label = printf "%s %s." $label $placedLabel -}}
+{{- end -}}
+
+{{- $classes := slice "timeline-entry" -}}
+{{- if $t }}
+  {{ $classes = $classes | append "timeline-entry--paired" }}
+{{ end -}}
+{{- if $byTradition }}
+  {{ $classes = $classes | append "timeline-entry--by-tradition" }}
+{{ end -}}
+<li
+  class="{{ delimit $classes " " }}"
+  id="{{ $e.File.ContentBaseName }}"
+  aria-label="{{ replace $label "–" " to " }}">
+  <div class="timeline-entry__card panel">
     <p class="timeline-entry__kind type-eyebrow">
       {{ cond (eq $p.kind "event") "Event" "Composition" }}
     </p>
-  </div>
-
-  {{ with .scale }}
-    {{ $s := . }}
-    {{ $bar := partial "timeline-scale-percent.html" (dict "scale" $s "from" $s.from "to" $s.to) }}
-    {{ $start := $bar.start }}
-    {{ $size := $bar.size }}
-    {{ $label := printf "Date in the sources: %s." $c.display }}
-    {{ with $t }}
-      {{ $label = printf "%s %s: %s." $label $holds .display }}
+    <h3 class="timeline-entry__title">{{ $e.Title }}</h3>
+    {{ with $c }}
+      <p class="timeline-entry__date">{{ .display }}</p>
+      {{ with .note }}<p class="timeline-entry__note">{{ . }}</p>{{ end }}
+    {{ else }}
+      <p class="timeline-entry__date timeline-entry__date--verdict">
+        {{- $verdict -}}
+      </p>
+      <p class="timeline-entry__note">{{ $p.undated.statement }}</p>
     {{ end }}
-    {{ $classes := slice "timeline-scale__critical" }}
-    {{ if $c.open }}
-      {{ $classes = $classes | append "timeline-scale__critical--open" }}
-    {{ end }}
-    {{ if in (slice "century" "period") $c.precision }}
-      {{ $classes = $classes | append "timeline-scale__critical--soft" }}
-    {{ end }}
-    <div
-      class="timeline-scale"
-      role="img"
-      aria-label="{{ replace $label "–" " to " }}">
-      <div class="timeline-scale__track">
-        {{ range $s.ticks }}
-          <span
-            class="timeline-scale__mark"
-            style="{{ printf "--at: %.3f%%" .at | safeCSS }}"></span>
-        {{ end }}
-        {{ with $t }}
-          {{ $tFrom := .from }}
-          {{ $tTo := .to | default .from }}
-          {{ $tBar := partial "timeline-scale-percent.html" (dict "scale" $s "from" $tFrom "to" $tTo) }}
-          {{ $tStart := $tBar.start }}
-          {{ $tSize := $tBar.size }}
-          {{/* The dotted line joins the nearer ends of the two dates, whichever comes first. */}}
-          {{ $gapFrom := 0.0 }}
-          {{ $gapTo := 0.0 }}
-          {{ if lt $tTo $s.from }}
-            {{ $gapFrom = add $tStart $tSize }}
-            {{ $gapTo = $start }}
-          {{ else if gt $tFrom $s.to }}
-            {{ $gapFrom = add $start $size }}
-            {{ $gapTo = $tStart }}
-          {{ end }}
-          {{ if gt $gapTo $gapFrom }}
-            <span
-              class="timeline-scale__link"
-              style="{{ printf "--start: %.3f%%; --size: %.3f%%" $gapFrom (sub $gapTo $gapFrom) | safeCSS }}"></span>
-          {{ end }}
-          <span
-            class="timeline-scale__tradition"
-            style="{{ printf "--start: %.3f%%; --size: %.3f%%" $tStart $tSize | safeCSS }}"></span>
-        {{ end }}
-        <span
-          class="{{ delimit $classes " " }}"
-          style="{{ printf "--start: %.3f%%; --size: %.3f%%" $start $size | safeCSS }}"></span>
-      </div>
-      <div class="timeline-scale__ticks">
-        {{ range $s.ticks }}
-          <span
-            class="timeline-scale__tick"
-            style="{{ printf "--at: %.3f%%" .at | safeCSS }}"
-            >{{ .label }}</span
-          >
-        {{ end }}
-      </div>
-    </div>
-  {{ end }}
-
-
-  <div class="timeline-entry__pair">
-    <div class="timeline-entry__side">
-      {{ with $c }}
-        <p class="timeline-entry__date">{{ .display }}</p>
-        {{ with .note }}<p class="timeline-entry__note">{{ . }}</p>{{ end }}
-      {{ else }}
-        <p class="timeline-entry__label">
-          {{- partial "timeline-undated-label.html" -}}
+    {{ with $p.seeAlso }}
+      {{ with index $.byId . }}
+        <p class="timeline-entry__note">
+          For when the account was written, see
+          <a href="#{{ .File.ContentBaseName }}">{{ .Title }}</a>.
         </p>
-        <p>{{ $p.undated.statement }}</p>
       {{ end }}
-      {{ with $p.seeAlso }}
-        {{ with index $.byId . }}
-          <p class="timeline-entry__note">
-            For when the account was written, see
-            <a href="#{{ .File.ContentBaseName }}">{{ .Title }}</a>.
+    {{ end }}
+
+
+    <details class="scholarship-block timeline-entry__sources">
+      <summary class="disclosure-summary">
+        <span class="type-eyebrow">Sources and what prompted this entry</span>
+      </summary>
+      <div class="scholarship-block__body timeline-entry__body">
+        {{ partial "timeline-cites.html" (dict "cites" (or $c $p.undated).cites "shortCites" .shortCites) }}
+        {{ with $t }}
+          <p class="timeline-entry__label">{{ $holds }}</p>
+          {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites) }}
+        {{ end }}
+        {{ with .triggers }}
+          <p class="timeline-entry__label">
+            Prompted by ·
+            <mark class="scholarship-block__flag"
+              >said on the show, not the entry’s evidence</mark
+            >
+          </p>
+          <div class="tag-quotes__grid timeline-entry__triggers">
+            {{ range . }}
+              {{ partial "quote-card" (dict "quote" . "episodesByNumber" $.episodesByNumber) }}
+            {{ end }}
+          </div>
+        {{ end }}
+        {{ with $p.sourcesRead }}
+          <p class="scholarship-date-line">
+            Read
+            {{ time.Format "2 January 2006" . }}
           </p>
         {{ end }}
-      {{ end }}
-    </div>
-    {{ with $t }}
-      <div class="timeline-entry__side timeline-entry__side--tradition">
-        <p class="timeline-entry__label">{{ $holds }}</p>
-        <p class="timeline-entry__date">{{ .display }}</p>
       </div>
-    {{ end }}
+    </details>
   </div>
 
-  <details class="scholarship-block timeline-entry__sources">
-    <summary class="disclosure-summary">
-      <span class="type-eyebrow">Sources and what prompted this entry</span>
-    </summary>
-    <div class="scholarship-block__body timeline-entry__body">
-      {{ partial "timeline-cites.html" (dict "cites" (or $c $p.undated).cites "shortCites" .shortCites) }}
-      {{ with $t }}
-        <p class="timeline-entry__label">{{ $holds }}</p>
-        {{ partial "timeline-cites.html" (dict "cites" .cites "shortCites" $.shortCites) }}
+  {{ if .by }}
+    <span class="timeline-entry__node" aria-hidden="true"></span>
+  {{ end }}
+
+  {{ with $t }}
+    <div class="timeline-entry__tradition">
+      {{ if $byTradition }}
+        <p class="timeline-entry__placed type-eyebrow">{{ $placedLabel }}</p>
       {{ end }}
-      {{ with .triggers }}
-        <p class="timeline-entry__label">
-          Prompted by ·
-          <mark class="scholarship-block__flag"
-            >said on the show, not the entry’s evidence</mark
-          >
-        </p>
-        <div class="tag-quotes__grid timeline-entry__triggers">
-          {{ range . }}
-            {{ partial "quote-card" (dict "quote" . "episodesByNumber" $.episodesByNumber) }}
-          {{ end }}
-        </div>
-      {{ end }}
-      {{ with $p.sourcesRead }}
-        <p class="scholarship-date-line">
-          Read
-          {{ time.Format "2 January 2006" . }}
-        </p>
-      {{ end }}
+      <p class="timeline-entry__label">{{ $holds }}</p>
+      <p class="timeline-entry__date timeline-entry__date--tradition">
+        {{- .display -}}
+      </p>
     </div>
-  </details>
+  {{ end }}
 </li>

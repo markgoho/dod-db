@@ -1,21 +1,21 @@
 /*
-  Timeline (#109 §3, variant B of #101). Composes page-hero, panel,
-  type-eyebrow, type-section-title, cloud-section, disclosure-summary, the
-  quote card (tag-quote) and the Scholarship primitives (notice, block, cites,
-  meta, class badge, Sources used table); only the entry card and its scale
-  live here.
+  Timeline (#163 §2): a vertical axis with two lanes, scholarly on the left
+  and tradition on the right, in labelled era bands. Composes page-hero,
+  panel, type-eyebrow, type-section-title, cloud-section, disclosure-summary,
+  the quote card (tag-quote) and the Scholarship primitives (notice, block,
+  cites, class badge, Sources used table); only the axis, its entries and the
+  legend live here.
 */
 
-.timeline-list {
-  display: grid;
-  gap: var(--space-m);
-  margin: 0;
-  padding: 0;
+/* The axis takes the full content width; everything else keeps the reading measure. */
+.timeline-page.scholarship-page {
+  max-width: none;
 }
 
-.timeline-spine {
-  display: grid;
-  gap: var(--space-s);
+.timeline-page > :not(.timeline-spine) {
+  inline-size: 100%;
+  justify-self: center;
+  max-width: var(--content-max-width-measure);
 }
 
 /* The date line sits under the notice in the provenance panel, on the notice's inset. */
@@ -28,76 +28,175 @@
   font-size: var(--step--1);
 }
 
-/* Legend: the two bar styles the scales use. */
+.timeline-spine {
+  container: timeline / inline-size;
+  display: grid;
+  gap: var(--space-s);
+}
+
+/* ---------- Legend ---------- */
+
 .timeline-legend {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: var(--step--1);
-  gap: var(--space-3xs) var(--space-s);
+  display: grid;
+  gap: var(--space-3xs);
+  inline-size: 100%;
+  justify-self: center;
+  margin: 0;
+  max-width: var(--content-max-width-measure);
+  padding: 0;
 }
 
 .timeline-legend__item {
   align-items: center;
-  display: inline-flex;
-  gap: var(--space-3xs);
+  display: grid;
+  /* Set here, not on the list: the list's ch measure must match the notice's. */
+  font-size: var(--step--1);
+  gap: var(--space-2xs);
+  grid-template-columns: var(--space-s) minmax(0, 1fr);
 }
 
 .timeline-legend__swatch {
-  background: var(--color-action);
+  background: var(--tan-000);
   block-size: var(--space-2xs);
+  border: var(--border-width-sm) solid var(--tan-900);
   border-radius: var(--border-radius-sm);
-  inline-size: var(--space-m);
+  inline-size: var(--space-s);
 }
 
-/* Entry card: title and kind, scale, the two dates, then one folded sources block. */
-.timeline-entry {
+/* Tradition surfaces: hatched, dashed outline, never a solid panel. */
+.timeline-legend__swatch--tradition,
+.timeline-entry__tradition {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--tan-200) 0 var(--space-4xs),
+    transparent var(--space-4xs) var(--space-2xs)
+  );
+  border: var(--border-width-sm) dashed var(--tan-500);
+  border-radius: var(--border-radius-sm);
+}
+
+/* A tradition-placed entry's node: hollow and dashed. */
+.timeline-legend__swatch--placed,
+.timeline-entry--by-tradition > .timeline-entry__node {
+  background: var(--tan-000);
+  border: var(--border-width-sm) dashed var(--tan-900);
+  border-radius: 50%;
+}
+
+.timeline-legend__swatch--placed {
+  block-size: var(--space-xs);
+  inline-size: var(--space-xs);
+  justify-self: center;
+}
+
+/* ---------- Lane heads and the axis ---------- */
+
+.timeline-lanes {
   display: grid;
-  gap: var(--space-xs);
-  min-inline-size: 0;
-  padding: var(--space-s) var(--space-s) 0;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  gap: var(--space-xl);
+  grid-template-columns: 1fr 1fr;
+}
+
+.timeline-lanes > :first-child {
+  text-align: end;
+}
+
+.timeline-axis,
+.timeline-era__entries,
+.timeline-unplaced {
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-axis {
+  --axis-at: 50%;
+
+  padding-block-end: var(--space-l);
+  position: relative;
+}
+
+/* The axis line, down the centre. */
+.timeline-axis::before {
+  border-inline-start: var(--border-width-md) solid var(--tan-900);
+  content: "";
+  inset-block: 0;
+  inset-inline-start: var(--axis-at);
+  position: absolute;
+  translate: -50% 0;
+}
+
+/* An era band: a label on the axis, then its entries. An empty era keeps a minimum height, so the gap shows. */
+.timeline-era {
+  align-content: start;
+  display: grid;
+  gap: var(--space-s);
+  padding-block: var(--space-s);
+}
+
+.timeline-era--empty {
+  min-block-size: var(--space-2xl);
+}
+
+.timeline-era__label {
+  background: var(--tan-900);
+  border-radius: var(--border-radius-md);
+  color: var(--tan-000);
+  font-family: var(--font-family-main);
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  justify-self: center;
+  margin: 0;
+  padding: var(--space-4xs) var(--space-xs);
+  position: relative;
+}
+
+.timeline-era__entries {
+  gap: var(--space-s);
+}
+
+/* ---------- Entry: scholarly card, node, tradition card ---------- */
+
+.timeline-entry {
+  --node-size: var(--space-s);
+  --node-at: calc(var(--space-s) + var(--step--2));
+
+  align-items: start;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--space-xl) minmax(0, 1fr);
   scroll-margin-block-start: calc(var(--header-height) + var(--space-s));
 }
 
-.timeline-entry:target {
+.timeline-entry__card {
+  display: grid;
+  gap: var(--space-4xs);
+  grid-column: 1;
+  grid-row: 1;
+  min-inline-size: 0;
+  padding: var(--space-s) var(--space-s) 0;
+}
+
+.timeline-entry:target > .timeline-entry__card {
   background: var(--tan-100);
 }
 
-.timeline-entry__head {
-  align-items: baseline;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4xs) var(--space-s);
-  justify-content: space-between;
+/* A tradition-placed entry: the scholarly card holds the verdict on a muted surface. */
+.timeline-entry--by-tradition > .timeline-entry__card {
+  background: var(--tan-200);
+}
+
+.timeline-entry__kind,
+.timeline-entry__placed {
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
 }
 
 .timeline-entry__title {
   font-size: var(--step-1);
   margin: 0;
   text-wrap: pretty;
-}
-
-.timeline-entry__kind {
-  color: var(--color-text-muted);
-  font-size: var(--step--2);
-}
-
-.timeline-entry__pair {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs) var(--space-m);
-}
-
-.timeline-entry__side {
-  align-content: start;
-  display: grid;
-  flex: 1 1 var(--content-max-width-sidebar);
-  gap: var(--space-4xs);
-  min-inline-size: 0;
-}
-
-.timeline-entry__side--tradition {
-  border-inline-start: var(--border-width-sm) dashed var(--tan-500);
-  padding-inline-start: var(--space-xs);
 }
 
 .timeline-entry__date {
@@ -107,6 +206,15 @@
   line-height: var(--line-height-heading);
   overflow-wrap: break-word;
   text-wrap: balance;
+}
+
+.timeline-entry__date--verdict {
+  font-size: var(--step-1);
+}
+
+.timeline-entry__date--tradition {
+  color: var(--tan-600);
+  font-size: var(--step-1);
 }
 
 .timeline-entry__note {
@@ -121,6 +229,7 @@
 
 /* The sources block runs to the card's edges, as the provenance block does. */
 .timeline-entry__sources {
+  margin-block-start: var(--space-3xs);
   margin-inline: calc(-1 * var(--space-s));
 }
 
@@ -134,135 +243,102 @@
   display: block;
 }
 
-/*
-  Scale: one full-width track per entry. Years map to --start/--size (percent
-  of the scale's span), set inline from the entry's data. The track clips, so
-  a fade or a minimum-width bar never widens the card.
-*/
-.timeline-scale {
-  container: timeline-scale / inline-size;
-  display: grid;
-  gap: var(--space-4xs);
-  padding-block-end: var(--space-3xs);
-}
-
-.timeline-scale__track {
-  block-size: var(--space-s);
-  border-block-end: var(--border-width-sm) solid var(--tan-400);
-  overflow: clip;
-  position: relative;
-}
-
-.timeline-scale__mark {
-  block-size: var(--space-3xs);
-  border-inline-start: var(--border-width-sm) solid var(--tan-400);
-  inset-block-end: 0;
-  inset-inline-start: var(--at);
-  position: absolute;
-  translate: -50% 0;
-}
-
-.timeline-scale__critical,
-.timeline-scale__tradition {
-  border-radius: var(--border-radius-sm);
-  inline-size: var(--size);
-  inset-block: var(--space-3xs);
-  inset-inline-start: var(--start);
-  min-inline-size: var(--space-3xs);
-  position: absolute;
-}
-
-.timeline-scale__critical {
+/* The node: a dot on the axis, level with the title. Connectors run to each card's edge. */
+.timeline-entry__node {
   background: var(--color-action);
+  block-size: var(--node-size);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: 50%;
+  grid-column: 2;
+  grid-row: 1;
+  inline-size: var(--node-size);
+  justify-self: center;
+  margin-block-start: var(--node-at);
+  position: relative;
+  z-index: 1;
 }
 
-/*
-  Faded bar ends: --fade-in-from is the left edge's opacity (solid or
-  transparent), --fade-in and --fade-out the widths of the left and right fades.
-*/
-.timeline-scale__critical--open,
-.timeline-scale__critical--soft {
-  mask-image: linear-gradient(
-    to right,
-    var(--fade-in-from),
-    var(--tan-900) var(--fade-in),
-    var(--tan-900) calc(100% - var(--fade-out)),
-    transparent
-  );
-}
-
-/* "After X": the bar runs on past its last year and fades out to the right. */
-.timeline-scale__critical--open {
-  --fade-in-from: var(--tan-900);
-  --fade-in: var(--space-3xs);
-  --fade-out: var(--space-xl);
-
-  inline-size: calc(var(--size) + var(--fade-out));
-}
-
-/* Century and period dates: soft edges at both ends, wide enough to show them. */
-.timeline-scale__critical--soft {
-  --fade-in-from: transparent;
-  --fade-in: var(--space-2xs);
-  --fade-out: var(--space-2xs);
-
-  min-inline-size: var(--space-m);
-  translate: calc(-1 * var(--fade-in)) 0;
-}
-
-.timeline-scale__critical--soft.timeline-scale__critical--open {
-  --fade-out: var(--space-xl);
-}
-
-/* A Tradition Date's bar, and its legend swatch: dashed outline, no fill. */
-.timeline-legend__swatch--tradition,
-.timeline-scale__tradition {
-  background: transparent;
-  border: var(--border-width-sm) dashed var(--tan-600);
-}
-
-/* The dotted line joining a Tradition Date to the Critical Date. */
-.timeline-scale__link {
-  border-block-start: var(--border-width-sm) dotted var(--tan-600);
-  inline-size: var(--size);
+.timeline-entry__node::before,
+.timeline-entry--paired > .timeline-entry__node::after {
+  border-block-start: var(--border-width-sm) solid var(--tan-900);
+  content: "";
+  inline-size: calc((var(--space-xl) - var(--node-size)) / 2);
   inset-block-start: 50%;
-  inset-inline-start: var(--start);
   position: absolute;
   translate: 0 -50%;
 }
 
-/* Era labels: centred on their tick, except the two ends, which stay inside the card. */
-.timeline-scale__ticks {
-  block-size: calc(var(--step--2) * var(--line-height-relaxed));
-  color: var(--color-text-muted);
-  font-size: var(--step--2);
-  position: relative;
+.timeline-entry__node::before {
+  inset-inline-end: 100%;
 }
 
-.timeline-scale__tick {
-  inset-block-start: 0;
-  inset-inline-start: var(--at);
-  position: absolute;
-  translate: -50% 0;
-  white-space: nowrap;
+.timeline-entry--paired > .timeline-entry__node::after {
+  border-block-start-style: dashed;
+  border-color: var(--tan-500);
+  inset-inline-start: 100%;
 }
 
-.timeline-scale__tick:first-child {
-  translate: 0 0;
+/* Narrower than the scholarly card, so the scholarly side reads first. */
+.timeline-entry__tradition {
+  display: grid;
+  gap: var(--space-4xs);
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: start;
+  margin-block-start: calc(var(--node-at) - var(--space-xs));
+  max-inline-size: 85%;
+  min-inline-size: 0;
+  padding: var(--space-xs);
 }
 
-.timeline-scale__tick:last-child {
-  translate: -100% 0;
+/* Entries not placed on the timeline: plain cards at the reading measure. */
+.timeline-unplaced {
+  gap: var(--space-s);
 }
 
-/*
-  A narrow card fits about four era labels. Past that, label every other
-  tick (and always the last), so labels never overlap; every mark stays.
-  Literal length: container conditions cannot read custom properties.
-*/
-@container timeline-scale (width < 30rem) {
-  .timeline-scale__ticks:has(> :nth-child(5))
-    > .timeline-scale__tick:nth-child(even):not(:last-child) {
-    visibility: hidden;
+.timeline-unplaced > .timeline-entry {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* ---------- Narrow: the axis moves to the left edge, cards stack ---------- */
+
+@container timeline (width < 44rem) {
+  .timeline-lanes {
+    display: none;
+  }
+
+  .timeline-axis {
+    --axis-at: calc(var(--space-m) / 2);
+  }
+
+  .timeline-era__label {
+    justify-self: start;
+  }
+
+  .timeline-entry {
+    gap: var(--space-2xs) 0;
+    grid-template-columns: var(--space-m) minmax(0, 1fr);
+  }
+
+  .timeline-entry__card,
+  .timeline-entry__tradition {
+    grid-column: 2;
+  }
+
+  .timeline-entry__node {
+    grid-column: 1;
+  }
+
+  .timeline-entry__tradition {
+    grid-row: 2;
+    margin-block-start: 0;
+    max-inline-size: none;
+    justify-self: stretch;
+    margin-inline-start: var(--space-s);
+  }
+
+  .timeline-entry__node::before,
+  .timeline-entry--paired > .timeline-entry__node::after {
+    display: none;
   }
 }

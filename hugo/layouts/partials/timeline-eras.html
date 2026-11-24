@@ -1,0 +1,50 @@
+{{- /*
+  The Timeline axis's era bands (#163 §2). Takes the placed entries from
+  timeline-placement.html (each with a placement year). The axis starts at the
+  earliest placement year rounded down to 1000 and ends after the latest,
+  rounded up to 500. Bands before 2000 BCE are 1000 years, after it 500.
+  Returns a slice of dict {label, items}, oldest first; items keep placement
+  order. Empty when nothing is placed.
+  */
+-}}
+{{- $placed := . -}}
+{{- $eras := slice -}}
+{{- with $placed -}}
+  {{- $years := slice -}}
+  {{- range . -}}
+    {{- $years = $years | append (int .year) -}}
+  {{- end -}}
+  {{- $start := int (mul (math.Floor (div (float (math.Min $years)) 1000)) 1000) -}}
+  {{- $end := int (mul (add (math.Floor (div (float (math.Max $years)) 500)) 1) 500) -}}
+  {{- $bounds := slice -}}
+  {{- if lt $start -2000 -}}
+    {{- range seq $start 1000 (math.Min -3000 (sub $end 1) | int) -}}
+      {{- $bounds = $bounds | append (dict "from" . "to" (add . 1000)) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $late := math.Max $start -2000 | int -}}
+  {{- if gt $end $late -}}
+    {{- range seq $late 500 (sub $end 500) -}}
+      {{- $bounds = $bounds | append (dict "from" . "to" (add . 500)) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- range $bounds -}}
+    {{- $from := .from -}}
+    {{- $to := .to -}}
+    {{- /* [from, to): -1500..-1000 is "1500–1000 BCE"; -500..0 is "500–1 BCE". */ -}}
+    {{- $label := "" -}}
+    {{- if lt $from 0 -}}
+      {{- $label = printf "%d–%d BCE" (sub 0 $from) (cond (eq $to 0) 1 (sub 0 $to)) -}}
+    {{- else -}}
+      {{- $label = printf "%d–%d CE" (cond (eq $from 0) 1 $from) $to -}}
+    {{- end -}}
+    {{- $items := slice -}}
+    {{- range $placed -}}
+      {{- if and (ge (int .year) $from) (lt (int .year) $to) -}}
+        {{- $items = $items | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $eras = $eras | append (dict "label" $label "items" $items) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $eras -}}
