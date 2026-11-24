@@ -1,340 +1,381 @@
 # Review record for /scholarship/moses-and-the-exodus/ (#93 shape). Not rendered.
 # agent: results of the agent's first pass (#89, 2026-11-22; expansion items 2026-11-23). That pass does not count toward publish.
 # owner: empty ("") until the owner's publish review (#104) sets pass or fail.
+# Second agent pass 2026-11-23 (#93 delegation): independent re-fetch and verbatim re-match of every citation and Trigger Claim; results appended to each note.
 review: ""
 citations:
-  evidence/1: { agent: pass, owner: "", note: "Meyers p. 5" }
-  evidence/2: { agent: pass, owner: "", note: "Meyers p. 6" }
+  evidence/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meyers p. 5. Second pass 2026-11-23: verified.",
+    }
+  evidence/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meyers p. 6. Second pass 2026-11-23: verified.",
+    }
   evidence/3:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary, section “Exodus and History”",
+      note: "Coogan summary, section “Exodus and History”. Second pass 2026-11-23: verified.",
     }
   evidence/4:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 3 [00:10:06]; sentence continues “but let's start at the beginning” (Merneptah), no hedge",
+      note: "Hayes l7 ch. 3 [00:10:06]; sentence continues “but let's start at the beginning” (Merneptah), no hedge. Second pass 2026-11-23: verified.",
     }
-  moses/1: { agent: pass, owner: "", note: "Meyers p. 6" }
-  moses/2: { agent: pass, owner: "", note: "Hayes l7 ch. 3 [00:10:06]" }
-  moses/3:
-    {
-      agent: flag,
-      owner: "",
-      note: "Coogan summary: “these events or figures” follows a sentence about unnamed pharaohs and never names Moses. Statement stands on moses/1 and moses/2. Owner decides keep or drop (#104).",
-    }
-  moses/4:
+  moses/1:
     {
       agent: pass,
       owner: "",
-      note: "Kaltner, Bible Odyssey “Egypt” (2017), section “Is Israel mentioned in Egyptian sources?”. Names Moses, so it does what moses/3 can't. Flag is the source class only: Bible Odyssey not yet ruled on (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Meyers p. 6. Second pass 2026-11-23: verified. Scope: every remaining moses source is about Egyptian records, and the short answer and statement say Egypt; the question asks “outside the Bible” more broadly. Left as is; owner may narrow the question.",
     }
-  merneptah/1: { agent: pass, owner: "", note: "Meyers p. 5" }
+  moses/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 3 [00:10:06]. Second pass 2026-11-23: verified.",
+    }
+  moses/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Kaltner, Bible Odyssey “Egypt” (2017), section “Is Israel mentioned in Egyptian sources?”. Names Moses, so it does what moses/3 can't. Flag is the source class only: Bible Odyssey not yet ruled on (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Was moses/4 until the Coogan moses/3 cut. Second pass 2026-11-23: verified.",
+    }
+  merneptah/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meyers p. 5. Second pass 2026-11-23: verified.",
+    }
   merneptah/2:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 3 [00:10:06]. Hayes dates the stele 1204, Kaltner about 1208, so the statement says only “late thirteenth century”.",
+      note: "Hayes l7 ch. 3 [00:10:06]. Hayes dates the stele 1204, Kaltner about 1208, so the statement says only “late thirteenth century”. Second pass 2026-11-23: verified.",
     }
   merneptah/3:
     {
       agent: pass,
       owner: "",
-      note: "Kaltner, Bible Odyssey “Egypt”; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Kaltner, Bible Odyssey “Egypt”; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified.",
     }
   merneptah/4:
     {
       agent: pass,
       owner: "",
-      note: "Kaltner: “a group of people and not … a place”. The Coogan summary says “as a nation”, so the statement follows Kaltner and doesn't cite Coogan here. Source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Kaltner: “a group of people and not … a place”. The Coogan summary says “as a nation”, so the statement follows Kaltner and doesn't cite Coogan here. Source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified.",
     }
-  merneptah/5: { agent: pass, owner: "", note: "Hayes l7 ch. 3 [00:10:06]" }
+  merneptah/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 3 [00:10:06]. Second pass 2026-11-23: verified.",
+    }
   merneptah/6:
     {
       agent: pass,
       owner: "",
-      note: "Kaltner; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Kaltner; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified.",
     }
   history/1:
     {
       agent: pass,
       owner: "",
-      note: "Meyers p. 4; source scope is biblical narratives, so the question was reworded per #89. No source read gives the reasons after “most biblical scholars”; stands without reasons per #86.",
+      note: "Meyers p. 4; source scope is biblical narratives, so the question was reworded per #89. No source read gives the reasons after “most biblical scholars”; stands without reasons per #86. Second pass 2026-11-23: verified.",
     }
   kernel/1:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary, section “Exodus and History”",
+      note: "Coogan summary, section “Exodus and History”. Second pass 2026-11-23: verified.",
     }
   kernel/2:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary, section “Implications for Our Study”",
+      note: "Coogan summary, section “Implications for Our Study”. Second pass 2026-11-23: verified.",
     }
   band/1:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary, section “Events at the Sea”. Was a lead. “May lie at the heart” kept as “may lie”; the size (“small band”) is the summary's own suggestion, so question, short answer and statement attribute it to the summary. No source read gives a small group as “some scholars” think.",
+      note: "Coogan summary, section “Events at the Sea”. Was a lead. “May lie at the heart” kept as “may lie”; the size (“small band”) is the summary's own suggestion, so question, short answer and statement attribute it to the summary. No source read gives a small group as “some scholars” think. Second pass 2026-11-23: verified.",
     }
   band/2:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 3 [00:10:06]; “some scholars think”, about plausibility, not size. The statement says “escaped” for her “escape … at this time”.",
+      note: "Hayes l7 ch. 3 [00:10:06]; “some scholars think”, about plausibility, not size. The statement says “escaped” for her “escape … at this time”. Second pass 2026-11-23: verified.",
     }
   band/3:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Meyers p. 10. Same page: historicity perhaps “ceases to be an issue”. On p. 7 she reports the widely accepted Canaanite-origins hypothesis, under which the account “appears to be little more than a tale”. Not on the page; owner decides whether band should show that side.",
+      note: "Meyers p. 10. Same page: historicity perhaps “ceases to be an issue”. On p. 7 she reports the widely accepted Canaanite-origins hypothesis, under which the account “appears to be little more than a tale”. Not on the page; owner ruled 2026-11-23: no new side added. Second pass 2026-11-23: verified. Quote verbatim at p. 10; statement keeps “no specific historical grounding” beside “core of reality”.",
     }
   date/1:
     {
       agent: pass,
       owner: "",
-      note: "Meyers p. 8. Source of “no consensus”; Meyers's own words, scoped to proposed dates.",
+      note: "Meyers p. 8. Source of “no consensus”; Meyers's own words, scoped to proposed dates. Second pass 2026-11-23: verified.",
     }
   date/2:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary, section “Exodus and History”",
+      note: "Coogan summary, section “Exodus and History”. Second pass 2026-11-23: verified. The statement's follow-on clause about the 480 years was cut with Hayes (was date/3; see uncited), so this sentence now stands on the Coogan summary alone.",
     }
   date/3:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 3 [00:10:06]. She is discussing the 430 years, which place the Exodus 480 years before the Temple, and calls the number ideal.",
+      note: "Coogan summary, section “Exodus and History”. Second pass 2026-11-23: verified.",
     }
   date/4:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary, section “Exodus and History”",
+      note: "Coogan summary; the condition (“If we accept the Exodus as a historical event”) that the statement keeps. Second pass 2026-11-23: verified.",
     }
   date/5:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary; the condition (“If we accept the Exodus as a historical event”) that the statement keeps.",
+      note: "Coogan summary; its “as a nation” is not repeated in the statement. Second pass 2026-11-23: verified.",
     }
   date/6:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary; its “as a nation” is not repeated in the statement.",
-    }
-  date/7:
-    {
-      agent: pass,
-      owner: "",
-      note: "Hayes l7 ch. 3 [00:10:06]; conditional kept.",
+      note: "Hayes l7 ch. 3 [00:10:06]; conditional kept. Second pass 2026-11-23: verified.",
     }
   numbers/1:
     {
       agent: pass,
       owner: "",
-      note: "Coogan ch. 9 summary, section “Census and Arrangement of the Camp”, read 2026-11-23. Names Exodus 12.37 as an inflated count; “often” kept. The statement attributes it to the Numbers chapter summary, not the textbook. Flag: the short answer states it in the page's voice, unattributed, as other short answers on the page do. The summary gives no figure; 600,000 appears only in the question.",
+      note: "Coogan ch. 9 summary, section “Census and Arrangement of the Camp”, read 2026-11-23. Names Exodus 12.37 as an inflated count; “often” kept. The statement attributes it to the Numbers chapter summary, not the textbook. Flag: the short answer states it in the page's voice, unattributed, as other short answers on the page do. The summary gives no figure; 600,000 appears only in the question. Second pass 2026-11-23: verified.",
     }
   numbers/2:
     {
       agent: pass,
       owner: "",
-      note: "Coogan ch. 9 summary, same paragraph, next sentence. “no reasonable interpretation … has ever been presented” and “it is possible” both kept. “P, the Priestly writer” glosses the summary's bare “P” (its Documentary Hypothesis source).",
+      note: "Coogan ch. 9 summary, same paragraph, next sentence. “no reasonable interpretation … has ever been presented” and “it is possible” both kept. “P, the Priestly writer” glosses the summary's bare “P” (its Documentary Hypothesis source). Second pass 2026-11-23: verified.",
     }
   numbers/3:
     {
       agent: pass,
       owner: "",
-      note: "Coogan ch. 6 summary, section “Exodus and History”, paragraph after the dating paragraph. Was numbers/6.",
+      note: "Coogan ch. 6 summary, section “Exodus and History”, paragraph after the dating paragraph. Was numbers/6. Second pass 2026-11-23: verified.",
     }
   sea/1:
     {
       agent: pass,
       owner: "",
-      note: "Yoo, Bible Odyssey “Red Sea” (2021); source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Yoo, Bible Odyssey “Red Sea” (2021); source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified.",
     }
   sea/2:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l8 ch. 2 [00:06:51]. Hayes is flat (“mistranslation”); the statement uses Yoo's weaker “not accurately translated” and “may mean”.",
+      note: "Hayes l8 ch. 2 [00:06:51]. Hayes is flat (“mistranslation”); the statement uses Yoo's weaker “not accurately translated” and “may mean”. Second pass 2026-11-23: verified.",
     }
   sea/3:
     {
       agent: pass,
       owner: "",
-      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified.",
     }
   sea/4:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "HarperCollins Bible Dictionary, entry “Red Sea”, read on Bible Odyssey (citation url). Flag: see sources.harpercollins-2009-dictionary.",
+      note: "HarperCollins Bible Dictionary, entry “Red Sea”, read on Bible Odyssey (citation url). Owner ruled 2026-11-23: kept if verbatim; credit-line edition acceptable. Second pass 2026-11-23: verified. Note: the statement sets the dictionary's “literally ‘Sea of Reeds’” beside Yoo's weaker “suph may mean ‘reed’”; owner's ruling keeps both.",
     }
   sea/5:
     {
       agent: pass,
       owner: "",
-      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified.",
     }
   sea/6:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "HarperCollins Bible Dictionary, entry “Red Sea”. Flag: see sources.harpercollins-2009-dictionary.",
+      note: "HarperCollins Bible Dictionary, entry “Red Sea”. Owner ruled 2026-11-23: kept if verbatim. Second pass 2026-11-23: verified.",
     }
   sea/7:
     {
       agent: pass,
       owner: "",
-      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified.",
     }
   sea/8:
     {
       agent: pass,
       owner: "",
-      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Yoo; source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified.",
     }
   sea/9:
     {
       agent: pass,
       owner: "",
-      note: "Meyers p. 6; “virtually all” kept. The statement doesn't name Pithom and Rameses: Yoo and Hayes identify Rameses with Pi-Ramesses, against Meyers.",
+      note: "Meyers p. 6; “virtually all” kept. The statement doesn't name Pithom and Rameses: Yoo and Hayes identify Rameses with Pi-Ramesses, against Meyers. Second pass 2026-11-23: verified.",
     }
   sea/10:
     {
       agent: pass,
       owner: "",
-      note: "Yoo; backs the short answer's “does not mean ‘Red Sea’”. Source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Yoo; backs the short answer's “does not mean ‘Red Sea’”. Source class (#86). Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified.",
     }
   sargon/1:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 4 [00:21:14]. Question and short answer reworded per #89 (source says “paralleled”, not derived). Statement's basket clause now uses Hayes's “basket lined with tar, put in the river” in place of the Collins lead's wording; that clause is outside the quoted sentence, so check it at the locator.",
+      note: "Hayes l7 ch. 4 [00:21:14]. Question and short answer reworded per #89 (source says “paralleled”, not derived). Statement's basket clause now uses Hayes's “basket lined with tar, put in the river” in place of the Collins lead's wording; that clause is outside the quoted sentence, so check it at the locator. Second pass 2026-11-23: verified. Basket clause is verbatim two sentences later at ch. 4 (“[He's] placed in a basket lined with tar, put in the river, and so on.”); quote extended to include it.",
     }
   song/1:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Hayes l8 ch. 2 [00:06:51]. Short answer reworded per #89 to keep “most agree”; statement keeps “widely agreed”.",
+      note: "Hayes l8 ch. 2 [00:06:51]. Short answer reworded per #89 to keep “most agree”; statement keeps “widely agreed”. Second pass 2026-11-23: verified. Hayes: “most people do in fact agree”, inside a passage that stresses disagreement over source seams; the page claims only the oldest-account point.",
     }
 triggers:
   21@00:10:31:
     {
       agent: pass,
       owner: "",
-      note: "Full turn; hedges kept (“if this happened at all”, “That's not to say probable”). The window he gives at 00:09:29 is about 1450 to close to 1200 BCE.",
+      note: "Full turn; hedges kept (“if this happened at all”, “That's not to say probable”). The window he gives at 00:09:29 is about 1450 to close to 1200 BCE. Second pass 2026-11-23: verified.",
     }
   21@00:25:18:
     {
       agent: pass,
       owner: "",
-      note: "Extended to the next sentence (“It is plausible that there's a historical core…”) so the card doesn't overstate the show.",
+      note: "Extended to the next sentence (“It is plausible that there's a historical core…”) so the card doesn't overstate the show. Second pass 2026-11-23: verified.",
     }
-  21@00:28:28: { agent: pass, owner: "", note: "" }
+  21@00:28:28:
+    {
+      agent: pass,
+      owner: "",
+      note: "Second pass 2026-11-23: verified. Extended by the turn's next sentence (“However, there is a piece of evidence that suggests there could be another historical core … the name Moses …”), which hedges the no-evidence claim.",
+    }
   75@00:22:05:
     {
       agent: pass,
       owner: "",
-      note: "“any of this” = the Exodus story; quote starts mid-turn after “Or just made up from whole cloth.”",
+      note: "“any of this” = the Exodus story; quote starts mid-turn after “Or just made up from whole cloth.”. Second pass 2026-11-23: verified.",
     }
   75@00:30:34:
     {
       agent: pass,
       owner: "",
-      note: "Context: the locust plague's wind and the Red Sea (Exod 10:19). The follow-up at 00:31:18 (same sea as the crossing) adds no hedge to the name claim.",
+      note: "Context: the locust plague's wind and the Red Sea (Exod 10:19). The follow-up at 00:31:18 (same sea as the crossing) adds no hedge to the name claim. Second pass 2026-11-23: verified.",
     }
-  97@00:35:22: { agent: pass, owner: "", note: "Context: Ron Wyatt's claims." }
-  105@00:15:41:
+  97@00:35:22:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Names Sargon II; the page names Sargon of Akkad (Hayes). Agent reads both as the same legend from two angles (00:15:41–00:17:51). Owner decides keep or drop (#104).",
+      note: "Context: Ron Wyatt's claims. Second pass 2026-11-23: verified.",
     }
   116@00:19:01:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Extended 2026-11-23 by two sentences (“more than 2 million … impossible numbers”) for the numbers statement; same turn, so a second card would collide on this key. The show says “impossible”, the page “inflated” and “unrealistically high” (#86: gap left unexplained). The show's “more than 2 million” has no cited counterpart since Krajewski was dropped.",
+      note: "Extended 2026-11-23 by two sentences (“more than 2 million … impossible numbers”) for the numbers statement; same turn, so a second card would collide on this key. The show says “impossible”, the page “inflated” and “unrealistically high” (#86: gap left unexplained). The show's “more than 2 million” has no cited counterpart since Krajewski was dropped. Owner ruled 2026-11-23: kept if exact. Second pass 2026-11-23: verified. Exact substring of the 00:19:01 turn; the next sentence (“not … even a tenth that number”) is no hedge.",
     }
-  116@00:21:02: { agent: pass, owner: "", note: "" }
+  116@00:21:02:
+    { agent: pass, owner: "", note: "Second pass 2026-11-23: verified." }
   187@00:41:56:
     {
       agent: pass,
       owner: "",
-      note: "Quote starts mid-turn after “Egypt is a big player in Syria-Palestine. They control a lot of the territory.” Read 00:40:39–00:43:48.",
+      note: "Quote starts mid-turn after “Egypt is a big player in Syria-Palestine. They control a lot of the territory.” Read 00:40:39–00:43:48. Second pass 2026-11-23: verified.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "11 statements (6 + 5 added 2026-11-23). Core (evidence) unchanged: Meyers (Scholarly), Coogan summary (Reference), Hayes l7 (Reference). Fallbacks if Bible Odyssey is ruled out: merneptah keeps Meyers p. 5 and Hayes l7, but loses “a group of people rather than a place” and “how long they had been there” (Kaltner only). sea loses “no clear answer” and “cannot mean ‘red’” (Yoo only) and would fall back to Hayes l8, HarperCollins (“not certain”) and Meyers p. 6, with the short answer reworded. moses keeps moses/1–2. date and band use no new source. numbers (reworked 2026-11-23) rests only on the two Coogan summaries (ch. 9 and ch. 6, one author pair, Reference); Krajewski is no longer cited.",
+      note: "11 statements (6 + 5 added 2026-11-23). Core (evidence) unchanged: Meyers (Scholarly), Coogan summary (Reference), Hayes l7 (Reference). Fallbacks if Bible Odyssey is ruled out: merneptah keeps Meyers p. 5 and Hayes l7, but loses “a group of people rather than a place” and “how long they had been there” (Kaltner only). sea loses “no clear answer” and “cannot mean ‘red’” (Yoo only) and would fall back to Hayes l8, HarperCollins (“not certain”) and Meyers p. 6, with the short answer reworded. moses keeps moses/1–2. date and band use no new source. numbers (reworked 2026-11-23) rests only on the two Coogan summaries (ch. 9 and ch. 6, one author pair, Reference); Krajewski is no longer cited. Second pass 2026-11-23: verified. After the second-pass cuts (moses/3, date/3): still 11 statements; core evidence keeps Meyers (Scholarly, CUP 2005), Coogan and Chapman summary (Reference, OUP 2019) and Hayes l7 (Reference, Yale 2006), three independent authors.",
     }
   consensus-wording:
     {
+      agent: flag,
+      owner: "",
+      note: "“no consensus” in date is Meyers's own; numbers makes no field-state claim (“widely regarded”, “many biblical scholars” went with Krajewski). Second pass 2026-11-23: flag on the #86 reasons rule (reasons follow a consensus statement when a Scholarly or Reference source gives them). kernel: the Coogan summary gives reasons straight after “many scholars still think”: “In particular, the consistent appearance of Moses as a deliverer of the people from slavery in Egypt in Israel’s literature and legal traditions suggests a common historical source. Also, the prevalence of Egyptian themes, including proper names, makes a historical origin likely.” The page gives none. history: Meyers p. 4 arguably gives one: “the results of generations of source criticism and redaction criticism … have shown that the Hebrew Bible is hardly a straightforward and factual telling of Israel’s past.” The first pass's note on history/1 says no source gives reasons. Verifier didn't write the sentences (an unverified addition would get no independent pass); owner or builder decides. Not a publish-rule stop. sargon (“many scholars have pointed out”) and song (“most people … agree”): Hayes gives no reasons at the locator.",
+    }
+  dissent-attributed:
+    {
       agent: pass,
       owner: "",
-      note: "“no consensus” in date is Meyers's own; numbers makes no field-state claim (“widely regarded”, “many biblical scholars” went with Krajewski).",
+      note: "Second pass 2026-11-23: verified. Views are attributed by name (Coogan and Chapman summary, Hayes, Meyers) in band, kernel, date and numbers.",
     }
-  dissent-attributed: { agent: pass, owner: "", note: "" }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. Second pass 2026-11-23: verified.",
+    }
 sources:
   meyers-2005-exodus:
-    { agent: pass, owner: "", edition: "2005, Cambridge University Press" }
+    {
+      agent: pass,
+      owner: "",
+      edition: "2005, Cambridge University Press",
+      note: "Second pass 2026-11-23: verified. Cambridge Core catalogue: New Cambridge Bible Commentary, print publication 11 July 2005. Scholarly (academic publisher, professional scholar); inside the 30-year window.",
+    }
   coogan-brief-4e-summary:
     {
       agent: pass,
       owner: "",
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+      note: "Second pass 2026-11-23: verified. OUP catalogue: Fourth Edition, publication date 31 May 2019, print ISBN 9780190903756. Reference (publisher summary, #86).",
     }
   hayes-rlst145-l7:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Second pass 2026-11-23: verified. Course page: recorded for Open Yale Courses in Fall 2006. Reference (introductory course, university-hosted transcript, #86).",
     }
   hayes-rlst145-l8:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Second pass 2026-11-23: verified. Course page: recorded for Open Yale Courses in Fall 2006. Reference (introductory course, university-hosted transcript, #86).",
     }
   kaltner-2017-egypt:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey (Society of Biblical Literature), article dated 20 June 2017; John Kaltner, Rhodes College",
-      note: "Bible Odyssey articles are a source type #86 didn't rule on. Agent's proposal: Reference (signed articles by professional scholars on SBL's own public reference site), judged per author, since some contributors are students. Owner decides. Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Bible Odyssey articles are a source type #86 didn't rule on. Agent's proposal: Reference (signed articles by professional scholars on SBL's own public reference site), judged per author, since some contributors are students. Owner decides. Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified. Article dated June 20, 2017; credit line: Virginia Ballou McGehee Professor, Rhodes College.",
     }
   yoo-2021-red-sea:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey (Society of Biblical Literature), article dated 2 September 2021; Philip Y. Yoo, University of British Columbia",
-      note: "Same class question as kaltner-2017-egypt. Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar.",
+      note: "Same class question as kaltner-2017-egypt. Class settled 2026-11-23: Bible Odyssey is Reference, judged per author (#86); author is a professional scholar. Second pass 2026-11-23: verified. Article dated September 2, 2021; credit line: Assistant Professor of Hebrew Bible, University of British Columbia.",
     }
   harpercollins-2009-dictionary:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
       edition: "Abridged ed., HarperOne 2009 (as cited on each Bible Odyssey entry)",
-      note: "Bible dictionary, so Reference by #80. Flag: read on SBL's reproduction, not the book, and the edition is from Bible Odyssey's credit line, not the publisher's catalogue (#93). Each citation's url points at its entry.",
+      note: "Bible dictionary, so Reference by #80. Flag: read on SBL's reproduction, not the book, and the edition is from Bible Odyssey's credit line, not the publisher's catalogue (#93). Each citation's url points at its entry. Owner ruled 2026-11-23: credit-line edition acceptable. Second pass 2026-11-23: verified. Entry credit line: Powell, ed., HarperCollins Bible Dictionary, Abridged Edition, San Francisco: HarperOne, 2009.",
     }
   coogan-brief-4e-summary-ch9:
     {
       agent: pass,
       owner: "",
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
-      note: "Same textbook and edition as coogan-brief-4e-summary; chapter 9 (“In the Wilderness”) page. Same authors, so it adds no independent source.",
+      note: "Same textbook and edition as coogan-brief-4e-summary; chapter 9 (“In the Wilderness”) page. Same authors, so it adds no independent source. Second pass 2026-11-23: verified.",
     }
 leads:
   - "Eerdmans Dictionary of the Bible, ed. David Noel Freedman (Eerdmans, 2000), p. 441: “In fact, there is no contemporary reference or description in any extrabiblical source.” Google Books snippet; not read in the source itself (#86). Was evidence/5 in the prototype."
@@ -351,3 +392,6 @@ uncited:
   - "Hyksos: the Coogan summary (Josephus's exodus-as-expulsion) and Hayes l7 (the Hyksos era as the setting for Joseph and the descent; “really not well supported”) describe different theories. Only Coogan's is on the page, inside date. Ep 138 has a Taking Issue segment on the Hyksos (00:35:03–00:50:08; 00:48:06: “attempts to find Joseph, Jacob, the enslaved Hebrews, Moses, those folks in the Hyksos is misguided at best”) for a Hyksos statement."
   - "Stanislaw Krajewski, “On Some Arguments Regarding the Number of Israelites During the Exodus and Their Relevance”, Religions 17(6): 737 (MDPI, 2026), abstract and § 1, read 2026-11-23 in a browser: the 600,000 figure is “widely regarded as highly implausible by non-fundamentalist readers of the Torah”; Numbers 1:46's 603,550; a population “well exceeding two million”; scholars treat the numbers as fiction or exaggeration or reread elef as a clan, family or military unit. Was numbers/1–5 and 7. Dropped 2026-11-23 for the Coogan ch. 9 summary: the author is a philosopher, not a biblical scholar, MDPI's standing is in question and the paper later argues a theological case. The page loses “widely regarded”, the two-million figure and the elef reading. An elef sentence would also sit beside Coogan's “no reasonable interpretation … has ever been presented”, so it would need attributing to Krajewski by name."
   - "Zev Farber, “The Torah's Exodus”, TheTorah.com (2015, updated 2026), section “The Number of Israelites”, read in full 2026-11-23: “All historians agree that such a number could not have been supported in ancient Egypt”; rejects the eleph-as-clan reading because Exod 38:26 gives 603,550; reports Friedman's view that the numbers are an exaggeration, perhaps a few hundred. Author holds a PhD in Hebrew Bible (Emory). Not cited: TheTorah.com is a source type #86 didn't rule on (an edited online magazine of the Academic Torah Institute, close to the excluded blog class), and the essay ends in a religious argument. Ruled 2026-11-23 (#86): TheTorah.com is not an External Source class, so this stays uncited."
+  - "Coogan and Chapman, chapter 6 summary, section “Exodus and History”, re-read 2026-11-23: “the abundant Egyptian historical records recount no mention of these events or figures.” Was moses/3. Cut in the second pass (owner ruling): “these events or figures” follows a sentence about the unnamed pharaohs and never names Moses, so it does not back “No text discovered in Egypt mentions Moses or Aaron”."
+  - "Christine Hayes, Open Yale RLST 145 lecture 7, ch. 3 [00:10:06], re-read 2026-11-23: “It places the Exodus 480 years before Solomon's building of the Temple: 480 is a multiple of 12, and the Bible really likes multiples of 12, so it is an ideal number.” Was date/3. Cut in the second pass with the clause it backed (“the 480 years from the Exodus to Solomon's Temple is an ideal number”): Hayes makes the point while discussing the 430-year stay and never ties the 480 years to the Bible's mid-fifteenth-century date, and the Coogan summary names no number, so the colon linking them was the page's own inference."
+  - "Trigger Claim removed 2026-11-23 (owner ruling): Ep 105, Angela Roskop Erisman, 00:15:41.290: the basket story “Modeled on a text about the Assyrian king, Sargon II”. Exact in the Transcript, but the page's sargon statement is about Sargon of Akkad (Hayes), and a card naming Sargon II would confuse readers."

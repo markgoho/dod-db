@@ -57,10 +57,6 @@ statements:
         locator: "ch. 3 [00:10:06]"
         quote: "There's no Egyptian record of the biblical Moses, no record of plagues, no record of a defeat of Pharaoh's army."
         read: 2026-11-22
-      - source: coogan-brief-4e-summary
-        locator: "section “Exodus and History”"
-        quote: "the abundant Egyptian historical records recount no mention of these events or figures."
-        read: 2026-11-22
       - source: kaltner-2017-egypt
         locator: "section “Is Israel mentioned in Egyptian sources?”"
         quote: "in all of their annals there is not one reference to the exodus or the events and individuals associated with it in the Bible. That includes Moses"
@@ -141,7 +137,7 @@ statements:
     group: "Dates, numbers and places"
     question: "When did the Exodus happen, if it happened?"
     short: "There is no consensus; proposals run from the 16th to the early 12th century BCE."
-    text: "Proposed dates range from the sixteenth to the early twelfth centuries BCE, with strong proponents but no consensus or prospect of resolution. The Bible's own chronology puts the Exodus in the mid-fifteenth century BCE, but that date seems to rest on literary and numerical artistry: the 480 years from the Exodus to Solomon's Temple is an ideal number. A theory going back to the first-century historian Josephus ties the Exodus to the expulsion of the Semitic Hyksos rulers of Egypt in the mid-sixteenth century BCE, but there is no trace of Israel in Canaan in that period. If the Exodus is accepted as historical, the chapter summary for Coogan and Chapman's introductory textbook judges the thirteenth century BCE the most reasonable date, partly because the Merneptah Stela mentions Israel then. Christine Hayes's Yale lecture likewise gives the thirteenth century as the most plausible backdrop if there is any historical basis to the Exodus."
+    text: "Proposed dates range from the sixteenth to the early twelfth centuries BCE, with strong proponents but no consensus or prospect of resolution. The Bible's own chronology puts the Exodus in the mid-fifteenth century BCE, but that date seems to rest on literary and numerical artistry. A theory going back to the first-century historian Josephus ties the Exodus to the expulsion of the Semitic Hyksos rulers of Egypt in the mid-sixteenth century BCE, but there is no trace of Israel in Canaan in that period. If the Exodus is accepted as historical, the chapter summary for Coogan and Chapman's introductory textbook judges the thirteenth century BCE the most reasonable date, partly because the Merneptah Stela mentions Israel then. Christine Hayes's Yale lecture likewise gives the thirteenth century as the most plausible backdrop if there is any historical basis to the Exodus."
     cites:
       - source: meyers-2005-exodus
         locator: "p. 8"
@@ -150,10 +146,6 @@ statements:
       - source: coogan-brief-4e-summary
         locator: "section “Exodus and History”"
         quote: "Internally, the Bible dates the Exodus to the mid-fifteenth century BCE. However, this date is problematic, as it seems to be based on literary and numerical artistry."
-        read: 2026-11-23
-      - source: hayes-rlst145-l7
-        locator: "ch. 3 [00:10:06]"
-        quote: "It places the Exodus 480 years before Solomon's building of the Temple: 480 is a multiple of 12, and the Bible really likes multiples of 12, so it is an ideal number."
         read: 2026-11-23
       - source: coogan-brief-4e-summary
         locator: "section “Exodus and History”"
@@ -245,7 +237,7 @@ statements:
     cites:
       - source: hayes-rlst145-l7
         locator: "ch. 4 [00:21:14]"
-        quote: "Many scholars have pointed out that this story in particular is paralleled by the birth story of a great Akkadian king, Sargon, from about 2300 BCE, Sargon of Akkad."
+        quote: "Many scholars have pointed out that this story in particular is paralleled by the birth story of a great Akkadian king, Sargon, from about 2300 BCE, Sargon of Akkad. Strikingly similar story to Moses. [He's] placed in a basket lined with tar, put in the river, and so on."
         read: 2026-11-22
   - id: song
     group: "The story's literary background"
