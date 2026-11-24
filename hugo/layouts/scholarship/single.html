@@ -77,10 +77,40 @@
         </details>
       </div>
 
-      {{/* Optional hand-built block for this page alone, keyed by slug. It restates reviewed statements; it adds none. */}}
+      {{/* Optional hand-built infographic for this page alone, keyed by slug. It
+        restates reviewed statements; it adds none. At #share it becomes a 4:5
+        poster with a masthead and credit, which
+        `bun run scholarship:infographic <slug>` photographs.
+      */}}
       {{ $custom := printf "scholarship-custom/%s.html" .File.ContentBaseName }}
       {{ if templates.Exists (printf "partials/%s" $custom) }}
-        {{ partial $custom . }}
+        {{ $image := printf "assets/scholarship/%s.png" .File.ContentBaseName }}
+        <div class="scholarship-share" id="share">
+          <div class="scholarship-share__masthead">
+            <p class="scholarship-share__title">{{ .Title }}</p>
+          </div>
+          {{ partial $custom . }}
+          <div class="scholarship-share__credit">
+            <p class="scholarship-share__site">
+              {{ site.Title }}
+              <span
+                >{{ printf "%s%s" site.Params.canonicalHost (.RelPermalink | strings.TrimSuffix "/") }}</span
+              >
+            </p>
+            <p>
+              A summary of published scholarship, with every source cited on the
+              page. Not the show’s work.
+            </p>
+          </div>
+          {{ if fileExists (printf "static/%s" $image) }}
+            <a
+              class="chip scholarship-share__download"
+              href="{{ $image | relURL }}"
+              download
+              >Save as an image</a
+            >
+          {{ end }}
+        </div>
       {{ end }}
 
       {{ range $group := $groups }}

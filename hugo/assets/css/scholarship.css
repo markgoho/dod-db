@@ -162,6 +162,86 @@
   }
 }
 
+/*
+  Infographic. A page's custom block is also its shareable image: at #share the
+  block alone fills a fixed 4:5 poster with a masthead and a credit, and
+  `bun run scholarship:infographic <slug>` photographs it.
+*/
+.scholarship-share {
+  display: grid;
+  gap: var(--space-s);
+}
+
+.scholarship-share__masthead,
+.scholarship-share__credit {
+  display: none;
+}
+
+.scholarship-share__download {
+  justify-self: start;
+}
+
+/* Literal lengths: the poster is an image size (1080 by 1350), not a layout measure. */
+.scholarship-share:target {
+  align-content: space-between;
+  background: var(--tan-100);
+  block-size: 1350px;
+  inline-size: 1080px;
+  inset: 0 auto auto 0;
+  overflow: hidden;
+  padding: var(--space-s) var(--space-m);
+  position: fixed;
+  z-index: calc(var(--z-index-sticky) + 1);
+}
+
+.scholarship-share:target
+  > :is(.scholarship-share__masthead, .scholarship-share__credit) {
+  display: grid;
+}
+
+.scholarship-share:target :is([data-share-hide], .scholarship-share__download) {
+  display: none;
+}
+
+.scholarship-share__title {
+  font-family: var(--font-family-display);
+  font-size: var(--step-4);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.scholarship-share__credit {
+  border-block-start: var(--border-width-md) solid var(--tan-900);
+  column-gap: var(--space-m);
+  font-size: var(--step--2);
+  grid-template-columns: auto minmax(0, 1fr);
+  padding-block-start: var(--space-xs);
+}
+
+.scholarship-share__credit p {
+  font-size: inherit;
+}
+
+.scholarship-share__site {
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+}
+
+.scholarship-share__site > span {
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+}
+
 /* Questions: one panel per group, rows divided by a hairline, numbered across the page. */
 .scholarship-question {
   counter-increment: scholarship-question;

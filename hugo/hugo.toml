@@ -6,6 +6,8 @@ enableGitInfo = true
 locale = 'en-US'
 
 [params]
+# The published host, for text that must name it even on a local server (infographic credit).
+canonicalHost = "metadataoverdogma.fyi"
 description = "Increasing public access to the metadata, transcripts, references, and scholarly context surrounding the academic study of the Bible and religion"
 
 [frontmatter]

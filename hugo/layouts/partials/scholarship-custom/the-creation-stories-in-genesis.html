@@ -10,7 +10,10 @@
 -}}
 {{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
 <section class="cloud-section creation-compare">
-  <h2 class="type-section-title cloud-section__title" id="side-by-side">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="side-by-side"
+    data-share-hide>
     Side by side
   </h2>
   {{/* One set of flat ink glyphs, drawn once and reused, so the same thing looks the same in both accounts. */}}
@@ -302,7 +305,7 @@
         </tr>
       </tbody>
     </table>
-    <p class="creation-compare__more scholarship-meta">
+    <p class="creation-compare__more scholarship-meta" data-share-hide>
       Every line here comes from the cited answers below:
       <a href="#two">Does Genesis open with two different creation accounts?</a>
       and <a href="#differ">How do the two accounts differ?</a>
