@@ -191,6 +191,17 @@ describe("checkQuoteCitations", () => {
     ).toEqual([]);
   });
 
+  test("tolerates a filler right after the quote's first word", async () => {
+    expect(
+      await check({
+        text: "So a lot of",
+        speaker: "Dan McClellan",
+        episode: 3,
+        timestamp: "00:00:20.000",
+      }),
+    ).toEqual([]);
+  });
+
   test("fails when the quote rewords the Transcript", async () => {
     expect(
       await check({

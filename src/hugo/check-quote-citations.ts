@@ -120,8 +120,11 @@ const SLACK = 0.5;
 /**
  * The index of the line where the quote starts, or -1 when no stretch of
  * the lines says it. A quote may drop fillers, false starts and another
- * Speaker's interjection, but may not reword: each dropped Transcript word
- * costs SKIP, each quote word the Transcript lacks costs MISSING.
+ * Speaker's interjection: each dropped Transcript word costs SKIP, each
+ * quote word the Transcript lacks costs MISSING, and the total may be at
+ * most PER_WORD per quote word plus SLACK. So about one quote word in ten
+ * may differ (an ASR slip, a tidied word); a paraphrase fails, but a
+ * short fragment moved out of order in a long quote can pass.
  */
 function locate(lines: Line[], quote: Words): number {
   const said: string[] = [];
@@ -151,7 +154,7 @@ function locate(lines: Line[], quote: Words): number {
         best = cost[j - 1] ?? 0;
         from = start[j - 1] ?? 0;
       }
-      if (i > 1 && (nextCost[j - 1] ?? 0) + skip < best) {
+      if ((nextCost[j - 1] ?? 0) + skip < best) {
         best = (nextCost[j - 1] ?? 0) + skip;
         from = nextStart[j - 1] ?? 0;
       }
