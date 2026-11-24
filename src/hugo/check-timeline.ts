@@ -43,6 +43,8 @@ const CriticalSchema = z.object({
 });
 
 const UndatedSchema = z.object({
+  /** The scholarly verdict heading (#163 §1); absent means no-firm-date. */
+  verdict: z.enum(["no-firm-date", "not-historical"]).optional(),
   statement: z.string(),
   cites: z.array(CiteSchema),
 });

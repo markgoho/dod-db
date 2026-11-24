@@ -1,8 +1,8 @@
 {{- /* Takes the Timeline section page. One ListItem per published entry, in page order. */ -}}
 {{- $items := slice -}}
 {{- range $i, $e := (partial "timeline-placement.html" .RegularPages).ordered -}}
-  {{- /* Same wording as the card: an undated entry shows this label in place of a date. */ -}}
-  {{- $display := partial "timeline-undated-label.html" -}}
+  {{- /* Same wording as the card: an undated entry shows its scholarly verdict in place of a date. */ -}}
+  {{- $display := partial "timeline-undated-label.html" $e -}}
   {{- with $e.Params.critical -}}
     {{- $display = .display -}}
   {{- end -}}

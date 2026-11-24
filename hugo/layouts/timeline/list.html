@@ -19,23 +19,7 @@
   {{ $unplaced := $placement.unplaced }}
   {{ $ordered := $placement.ordered }}
 
-  {{/* Scale: the spine entries' Critical and Tradition Dates, padded out to whole eras. */}}
-  {{ $era := 500 }}
-  {{ $scale := dict }}
-  {{ with $placement.years }}
-    {{ $min := mul (math.Floor (div (float (math.Min .)) $era)) $era }}
-    {{ $max := mul (math.Ceil (div (float (math.Max .)) $era)) $era }}
-    {{ if eq $min $max }}
-      {{ $max = add $max $era }}
-    {{ end }}
-    {{ $scale = dict "min" $min "span" (sub $max $min) }}
-    {{ $ticks := slice }}
-    {{ range seq (int $min) $era (int $max) }}
-      {{ $at := (partial "timeline-scale-percent.html" (dict "scale" $scale "from" .)).start }}
-      {{ $ticks = $ticks | append (dict "at" $at "label" (partial "timeline-year-label.html" .)) }}
-    {{ end }}
-    {{ $scale = merge $scale (dict "ticks" $ticks) }}
-  {{ end }}
+  {{ $eras := partial "timeline-eras.html" $placed }}
 
   {{ $sourceIds := partial "timeline-source-ids.html" $ordered }}
   {{ $shortCites := partial "source-short-cites.html" $sourceIds }}
@@ -73,31 +57,56 @@
       {{ partial "timeline-date-line.html" $entries }}
     </div>
 
-    {{ with $placed }}
-      <section
-        class="timeline-spine"
-        aria-label="Timeline Entries in date order">
-        <p class="timeline-legend" aria-hidden="true">
-          <span class="timeline-legend__item"
-            ><span class="timeline-legend__swatch"></span>Date given by
-            scholarly or reference sources</span
-          >
-          <span class="timeline-legend__item"
-            ><span
-              class="timeline-legend__swatch timeline-legend__swatch--tradition"></span
-            >Date a named tradition holds</span
-          >
-        </p>
-        <ol class="timeline-list" role="list">
+    {{ with $eras }}
+      <section class="timeline-spine" aria-label="Timeline">
+        <ul class="timeline-legend" role="list">
+          <li class="timeline-legend__item">
+            <span class="timeline-legend__swatch" aria-hidden="true"></span>
+            What scholarly and reference sources say
+          </li>
+          <li class="timeline-legend__item">
+            <span
+              class="timeline-legend__swatch timeline-legend__swatch--tradition"
+              aria-hidden="true"></span>
+            What a named tradition holds
+          </li>
+          <li class="timeline-legend__item">
+            <span
+              class="timeline-legend__swatch timeline-legend__swatch--placed"
+              aria-hidden="true"></span>
+            <span
+              ><strong>Placed by a tradition’s date:</strong> scholars give no
+              date for this; it sits where the named tradition puts it.</span
+            >
+          </li>
+        </ul>
+        <div class="timeline-lanes" aria-hidden="true">
+          <p>What scholarly and reference sources say</p>
+          <p>What a named tradition holds</p>
+        </div>
+        <ol
+          class="timeline-axis"
+          role="list"
+          aria-label="Timeline Entries in date order, by era">
           {{ range . }}
-            {{ $id := .page.File.ContentBaseName }}
-            {{ partial "timeline-entry.html" (merge $ctx (dict
-              "entry" .page
-              "heading" "h2"
-              "scale" (merge $scale (dict "from" .from "to" .to))
-              "triggers" (where $allTriggers "entry" $id)
-              ))
-            }}
+            <li
+              class="timeline-era{{ if not .items }}
+                timeline-era--empty
+              {{ end }}">
+              <h2 class="timeline-era__label">{{ .label }}</h2>
+              {{ with .items }}
+                <ol class="timeline-era__entries" role="list">
+                  {{ range . }}
+                    {{ partial "timeline-entry.html" (merge $ctx (dict
+                      "entry" .page
+                      "by" .by
+                      "triggers" (where $allTriggers "entry" .page.File.ContentBaseName)
+                      ))
+                    }}
+                  {{ end }}
+                </ol>
+              {{ end }}
+            </li>
           {{ end }}
         </ol>
       </section>
@@ -109,15 +118,14 @@
           Not placed on the timeline
         </h2>
         <p class="timeline-section-intro">
-          Events the sources date only conditionally, or not at all. They sit
-          outside the timeline, and are never placed by a tradition's date.
+          Events the sources give no firm date, and for which no named
+          tradition’s date is shown. They sit outside the timeline.
         </p>
-        <ul class="timeline-list" role="list">
+        <ul class="timeline-unplaced" role="list">
           {{ range . }}
             {{ partial "timeline-entry.html" (merge $ctx (dict
               "entry" .
-              "heading" "h3"
-              "scale" false
+              "by" ""
               "triggers" (where $allTriggers "entry" .File.ContentBaseName)
               ))
             }}
