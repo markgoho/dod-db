@@ -54,7 +54,7 @@ statements:
     group: "The letters in Paul's name"
     question: "Do scholars think some letters in Paul's name were written by someone else?"
     short: "Most do."
-    text: "Most scholars believe that some of the New Testament letters attributed to Paul are pseudepigraphic: written under his name by someone else. Writing under a false name was not uncommon in the ancient world."
+    text: "Most scholars believe that some of the New Testament letters attributed to Paul are pseudepigraphic: written under his name by someone else. Writing under a false name was not uncommon in the ancient world. Dale Martin's Yale lectures say almost all critical scholars believe 1 and 2 Timothy and Titus are pseudepigraphic."
     cites:
       - source: ehrman-brief-5e-ch11-summary
         locator: "section “The Study of Paul: Methodological Difficulties”"
@@ -63,6 +63,10 @@ statements:
       - source: martin-rlst152-l17
         locator: "ch. 1 [00:00:00]"
         quote: "The phenomenon of pseudepigraphy, that is, writings under a false name, was very, very popular in the ancient world"
+        read: 2026-11-23
+      - source: martin-rlst152-l17
+        locator: "ch. 2 [00:10:42]"
+        quote: "and then there's the letters that almost all scholars, critical scholars, believe are pseudepigraphic, which are I and II Timothy and Titus."
         read: 2026-11-23
   - id: hebrews
     group: "The letters in Paul's name"
@@ -107,8 +111,8 @@ statements:
   - id: pastorals-reasons
     group: "1 and 2 Timothy and Titus"
     question: "Why do scholars doubt that Paul wrote them?"
-    short: "Their style, vocabulary and church structure differ from Paul's undisputed letters."
-    text: "Scholars generally agree that the three letters share one author. The chapter summary for Ehrman's textbook calls their style and vocabulary not Pauline: over one-third of their vocabulary appears in none of the other letters in Paul's name. It adds that the letters presuppose a church organized under bishops and deacons, a structure that developed well after Paul's death. Dale Martin's Yale lectures also name writing style as “a big issue”."
+    short: "Their writing style differs from Paul's undisputed letters, and they presuppose a later church structure."
+    text: "Scholars generally agree that the three letters share one author. The chapter summary for Ehrman's textbook calls their style and vocabulary not Pauline: over one-third of their vocabulary appears in none of the other letters in Paul's name. It adds that the letters presuppose a church organized under bishops and deacons, a structure that developed well after Paul's death. Dale Martin's Yale lectures also name writing style as “a big issue” and say the letters presuppose a later stage of early Christianity, with a different theology and church structure."
     cites:
       - source: ehrman-brief-5e-ch16-summary
         locator: "section “The Historical Situation and Authorship of the Pastoral Epistles”"
@@ -126,10 +130,14 @@ statements:
         locator: "ch. 1 [00:00:00]"
         quote: "the writing style in these letters is very different from the seven letters that scholars all agree Paul actually wrote, so the writing style is a big issue."
         read: 2026-11-23
+      - source: martin-rlst152-l19
+        locator: "ch. 1 [00:00:00]"
+        quote: "these letters simply presuppose a different stage in early Christianity. They don't look like they're from the more primitive sort of time of when Paul was actually founding churches. The theology looks different, the church structure looks different"
+        read: 2026-11-23
   - id: pastorals-date
     group: "1 and 2 Timothy and Titus"
     question: "When were they written?"
-    short: "Uncertain; both sources read place them after Paul's lifetime."
+    short: "Both sources read place them after Paul's lifetime."
     text: "The chapter summary for Ehrman's textbook says the letters reflect a church structure that developed well after Paul's death. Dale Martin's Yale lectures call the date a guess. Martin places them in the second century, perhaps toward its middle, and says that is later than many scholars would put them."
     cites:
       - source: ehrman-brief-5e-ch16-summary
@@ -198,7 +206,7 @@ statements:
     group: "Ephesians, Colossians and 2 Thessalonians"
     question: "Did Paul write 2 Thessalonians?"
     short: "Scholars are divided."
-    text: "Scholars are divided. Many doubt it because its teaching on the end, with events that must take place before Jesus returns, does not match Paul's undisputed letters, especially 1 Thessalonians. Many others, including critical scholars who doubt other letters in Paul's name, still think Paul wrote it."
+    text: "Scholars are divided; the chapter summary for Ehrman's textbook says they continue to debate its authorship. Many doubt it because its teaching on the end, with events that must take place before Jesus returns, does not match Paul's undisputed letters, especially 1 Thessalonians. Many others, including critical scholars who doubt other letters in Paul's name, still think Paul wrote it."
     cites:
       - source: martin-rlst152-l24
         locator: "ch. 2 [00:12:22]"
@@ -223,5 +231,9 @@ statements:
       - source: martin-rlst152-l24
         locator: "ch. 2 [00:12:22]"
         quote: "But scholars kind of divide up on 2 Thessalonians in a lot of different ways, with many scholars, even critical scholars who don't believe Paul wrote all the letters that are in his name in the New Testament, and they'll say they still think Paul did write 2 Thessalonians."
+        read: 2026-11-23
+      - source: ehrman-brief-5e-ch16-summary
+        locator: "section “The Deutero-Pauline Epistles”"
+        quote: "Although scholars continue to debate the authorial claims of 2 Thessalonians and Colossians, most agree that Ephesians is not a genuine Pauline epistle."
         read: 2026-11-23
 ---
