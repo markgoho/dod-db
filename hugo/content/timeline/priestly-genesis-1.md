@@ -1,6 +1,6 @@
 ---
 title: "The Priestly source, including Genesis 1"
-kind: composition
+entryKind: composition
 draft: true
 build: { render: never, list: always }
 sourcesRead:

@@ -64,7 +64,7 @@ const TraditionSchema = z.object({
 
 export const EntrySchema = z.object({
   title: z.string(),
-  kind: z.enum(["event", "composition"]),
+  entryKind: z.enum(["event", "composition"]),
   draft: z.boolean().default(false),
   sourcesRead: dateValue.nullish(),
   related: z.object({

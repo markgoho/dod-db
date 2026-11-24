@@ -42,7 +42,7 @@
     {{- $place = dict "year" $t.from "by" "tradition" -}}
   {{- end -}}
   {{- with $place -}}
-    {{- $key := printf "%07d|%d|%s" (add (int .year) 1000000) (cond (eq $entry.Params.kind "event") 0 1) (lower $entry.Title) -}}
+    {{- $key := printf "%07d|%d|%s" (add (int .year) 1000000) (cond (eq $entry.Params.entryKind "event") 0 1) (lower $entry.Title) -}}
     {{- $placed = $placed | append (merge . (dict "key" $key "page" $entry)) -}}
   {{- else -}}
     {{- $unplaced = $unplaced | append $entry -}}

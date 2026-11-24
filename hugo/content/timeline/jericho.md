@@ -1,6 +1,6 @@
 ---
 title: "Destruction of Canaanite Jericho"
-kind: event
+entryKind: event
 draft: true
 build: { render: never, list: always }
 sourcesRead:

@@ -1,6 +1,6 @@
 ---
 title: "Creation of the world"
-kind: event
+entryKind: event
 draft: true
 build: { render: never, list: always }
 sourcesRead:

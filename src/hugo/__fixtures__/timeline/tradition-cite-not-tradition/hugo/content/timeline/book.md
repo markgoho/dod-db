@@ -1,6 +1,6 @@
 ---
 title: "The Book"
-kind: composition
+entryKind: composition
 draft: false
 build: { render: never, list: always }
 sourcesRead: 2026-11-23

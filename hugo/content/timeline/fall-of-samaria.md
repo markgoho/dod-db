@@ -1,6 +1,6 @@
 ---
 title: "Fall of Samaria and the northern kingdom"
-kind: event
+entryKind: event
 draft: true
 build: { render: never, list: always }
 sourcesRead:

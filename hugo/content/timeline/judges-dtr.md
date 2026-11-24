@@ -1,6 +1,6 @@
 ---
 title: "Judges, as edited into the Deuteronomistic History"
-kind: composition
+entryKind: composition
 draft: true
 build: { render: never, list: always }
 sourcesRead:

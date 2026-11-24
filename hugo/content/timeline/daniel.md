@@ -1,6 +1,6 @@
 ---
 title: "Daniel"
-kind: composition
+entryKind: composition
 draft: true
 build: { render: never, list: always }
 sourcesRead:

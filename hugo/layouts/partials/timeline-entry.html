@@ -50,7 +50,7 @@
   aria-label="{{ replace $label "–" " to " }}">
   <div class="timeline-entry__card panel">
     <p class="timeline-entry__kind type-eyebrow">
-      {{ cond (eq $p.kind "event") "Event" "Composition" }}
+      {{ cond (eq $p.entryKind "event") "Event" "Composition" }}
     </p>
     <h3 class="timeline-entry__title">{{ $e.Title }}</h3>
     {{ with $c }}

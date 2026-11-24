@@ -1,6 +1,6 @@
 ---
 title: "Isaiah 56–66 (Third Isaiah)"
-kind: composition
+entryKind: composition
 draft: true
 build: { render: never, list: always }
 sourcesRead:

@@ -1,6 +1,6 @@
 ---
 title: "Adam, the first human"
-kind: event
+entryKind: event
 draft: true
 build: { render: never, list: always }
 sourcesRead:

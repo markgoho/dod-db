@@ -1,6 +1,6 @@
 ---
 title: "Fall of the City"
-kind: event
+entryKind: event
 draft: true
 build: { render: never, list: always }
 sourcesRead:
