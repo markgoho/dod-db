@@ -10,7 +10,7 @@ quotes:
   - text: "The traditional approach to definition tries to reduce a category down to the shortest list of necessary and sufficient conditions or features."
     speaker: Dan McClellan
     episode: 9
-    timestamp: "00:39:9.830"
+    timestamp: "00:39:09.830"
   - text: "Conceptual categories almost never form around necessary and sufficient conditions or features."
     speaker: Dan McClellan
     episode: 9

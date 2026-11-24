@@ -24,7 +24,7 @@ quotes:
   - text: "The Exodus, as it's described in the Bible, did not happen. We have good archaeological evidence that it did not happen."
     speaker: "Aaron Higashi"
     episode: 116
-    timestamp: "00:18:57.230"
+    timestamp: "00:19:01.230"
   - text: "It's not true archaeologically. We know that this did not happen, at least in a way that involved a lot of people. But it's still a powerful story and it's such a powerful story that people can then build an identity off of."
     speaker: "Aaron Higashi"
     episode: 116

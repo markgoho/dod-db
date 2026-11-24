@@ -28,7 +28,7 @@ quotes:
   - text: "And there is ancient Jewish tradition that these stones actually illuminated. That there was some kind of way that they lit up to indicate the, the will of God or that. That when they lit up, that indicated that the, the will of God was being communicated."
     speaker: "Dan McClellan"
     episode: 73
-    timestamp: "00:12:36.110"
+    timestamp: "00:11:43.930"
   - text: "And according to ancient Jewish tradition, that was kind of how the priests divined God's will, right? They used these seer stones, for lack of a better word, to somehow divine God's will."
     speaker: "Dan McClellan"
     episode: 129

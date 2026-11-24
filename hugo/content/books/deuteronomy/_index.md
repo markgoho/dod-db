@@ -36,7 +36,7 @@ quotes:
     timestamp: "00:37:40.032"
   - text: "The concept of covenants that we find in the Bible is actually derived from Neo Assyrian vassal treaties."
     speaker: "Dan McClellan"
-    episode: 154
+    episode: 108
     timestamp: "00:07:46.130"
 showAllEpisodes: true
 ---

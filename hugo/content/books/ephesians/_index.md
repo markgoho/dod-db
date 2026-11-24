@@ -23,7 +23,7 @@ quotes:
   - text: "This is probably not Paul anyway. ... The majority of, or a good number of scholars don't think that Paul was responsible for Ephesians, okay, Colossians, 2 Thessalonians. ... What the author is doing here with this pivot— verse 21 is kind of a pivot point. ... then becomes the hinge on which we pivot to what's called household codes."
     speaker: "Dan McClellan"
     episode: 135
-    timestamp: "00:12:20.525"
+    timestamp: "00:13:06.179"
   - text: "Christianity leaned heavily into the influence of Greco-Roman social conventions. And Ephesians, you have it elsewhere, the Pastoral Epistles as well, appeal to these household code ideas. And really what it is, is it is the authors saying, we like this social convention, we're taking it, this is ours now, and we're going to come up with a gospel rationalization for it."
     speaker: "Dan McClellan"
     episode: 135

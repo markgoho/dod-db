@@ -25,9 +25,9 @@ quotes:
     episode: 153
     timestamp: "00:26:51.585"
   - text: "I think the authors of 1st, 2nd, and 3rd John knew the gospel. I think they loved the gospel. ... They wrote letters that present themselves as if they're works, supplemental works by that original author, but addressing new sorts of challenges."
-    speaker: "Hugo Mendez"
+    speaker: "Hugo Méndez"
     episode: 128
-    timestamp: "00:09:23.683"
+    timestamp: "00:10:34.881"
 showAllEpisodes: true
 ---
 

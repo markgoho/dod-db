@@ -60,16 +60,16 @@ describe("checkQuoteCitations", () => {
     ).toEqual([`${at} quote 1: Episode 99 has no Transcript`]);
   });
 
-  test("fails when no Transcript line starts at the timestamp, naming the nearest", async () => {
+  test("fails when no Transcript line starts at the timestamp, naming the nearest and where the text is", async () => {
     expect(
       await check({
         text: "The Hebrew Bible is not a monotheistic text.",
         speaker: "Dan McClellan",
         episode: 1,
-        timestamp: "00:00:05.000",
+        timestamp: "00:00:11.000",
       }),
     ).toEqual([
-      `${at} quote 1: Episode 1 has no line at 00:00:05.000 (nearest 00:00:05.250)`,
+      `${at} quote 1: Episode 1 has no line at 00:00:11.000 (nearest 00:00:12.000; text found at 00:00:05.250)`,
     ]);
   });
 
@@ -81,7 +81,9 @@ describe("checkQuoteCitations", () => {
         episode: 1,
         timestamp: "00:00:5.25",
       }),
-    ).toEqual([`${at} quote 1: timestamp 00:00:5.25 is not HH:MM:SS.mmm`]);
+    ).toEqual([
+      `${at} quote 1: timestamp 00:00:5.25 is not HH:MM:SS.mmm (text found at 00:00:05.250)`,
+    ]);
   });
 
   test("ignores case, punctuation and accents, and runs on into the next line", async () => {
@@ -152,6 +154,17 @@ describe("checkQuoteCitations", () => {
         speaker: "Dan McClellan",
         episode: 3,
         timestamp: "00:00:09.000",
+      }),
+    ).toEqual([]);
+  });
+
+  test("reads an indented Transcript line, as the Episode Page does", async () => {
+    expect(
+      await check({
+        text: "Some correction passes indent a line",
+        speaker: "Dan Beecher",
+        episode: 3,
+        timestamp: "00:00:15.000",
       }),
     ).toEqual([]);
   });

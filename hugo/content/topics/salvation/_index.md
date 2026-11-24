@@ -13,7 +13,7 @@ quotes:
   - text: "It's overwhelmingly used in the Hebrew Bible to refer to saving someone from some kind of temporal distress."
     speaker: "Dan McClellan"
     episode: 120
-    timestamp: "00:05:25.810"
+    timestamp: "00:04:55.810"
   - text: "Once we get into the Greco-Roman period, then you begin to develop concepts of postmortem divine punishment and postmortem divine reward."
     speaker: "Dan McClellan"
     episode: 120
@@ -21,7 +21,7 @@ quotes:
   - text: "By the time you get to the New Testament, you will name him Jesus. Why? He will save people from their sins."
     speaker: "Dan McClellan"
     episode: 120
-    timestamp: "00:10:53.870"
+    timestamp: "00:10:29.070"
   - text: "The savior in our history, the primary one was our God and he did it. Yahweh is the one, not David, who saved us. He's our primary savior."
     speaker: "Jacob Wright"
     episode: 36

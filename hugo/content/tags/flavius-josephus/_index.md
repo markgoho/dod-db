@@ -17,7 +17,7 @@ quotes:
   - text: "If you want a historian who's covering that time period, Josephus is all you have."
     speaker: "Dan McClellan"
     episode: 86
-    timestamp: "00:44:46.830"
+    timestamp: "00:43:54.930"
   - text: "He is our main historical source for virtually anything that happened in or around Judea or Galilee in the early to mid or even late 1st century CE."
     speaker: "Dan McClellan"
     episode: 86

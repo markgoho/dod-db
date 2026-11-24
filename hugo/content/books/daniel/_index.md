@@ -15,19 +15,19 @@ featuredItems:
 quotes:
   - text: "Daniel is coming probably right before the defeat of the Seleucids, when everything is looking kind of rough."
     speaker: "Dan McClellan"
-    episode: 159
+    episode: 71
     timestamp: "00:55:31.520"
   - text: "The Son of Man is probably this figure who is mediatory between God and humanity."
     speaker: "Dan McClellan"
-    episode: 159
+    episode: 71
     timestamp: "00:42:28.800"
   - text: "The further back into time the authors look, the less sure they are of the history."
     speaker: "Dan McClellan"
-    episode: 159
+    episode: 71
     timestamp: "00:50:29.210"
   - text: "It's almost like a found footage thing where we've got these stories about Daniel and all these apocalyptic visions that are telling stories about things that the people who are actually reading or hearing this text know about that happened long before."
     speaker: "Dan McClellan"
-    episode: 159
+    episode: 71
     timestamp: "00:49:30.860"
 showAllEpisodes: true
 ---

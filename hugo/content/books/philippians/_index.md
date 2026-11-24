@@ -20,7 +20,7 @@ quotes:
   - text: "The NRSV-UE again, our prudish little ... 'rubbish' is rendering the Greek word skubalon. ... it does seem to refer to excrement. And it does seem to be a little more vulgar than your average bear. And so that's why there are some translators who have rendered it 'crap.'"
     speaker: "Dan McClellan"
     episode: 110
-    timestamp: "00:50:56.970"
+    timestamp: "00:51:06.690"
   - text: "I've suffered the loss of all things, but I consider it all shit in order that I may gain Christ. And so it's again, rhetorical punctuation saying it's not just that, oh, that outranks that, it's that this has become feces. This is crap in my hands compared to Jesus."
     speaker: "Dan McClellan"
     episode: 110

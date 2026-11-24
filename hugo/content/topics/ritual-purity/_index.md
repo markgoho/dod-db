@@ -27,7 +27,7 @@ quotes:
   - text: "The one thing that we can do is basically rule out that anyone in this passage is talking about whether or not you're allowed to eat pork. Because that's just absolutely not the topic here."
     speaker: "Logan Williams"
     episode: 85
-    timestamp: "00:50:25.800"
+    timestamp: "00:49:43.370"
   - text: "If it's in the body's power to purify food, how would it be possible for food to defile the body? And so Jesus just says it's not possible."
     speaker: "Logan Williams"
     episode: 85

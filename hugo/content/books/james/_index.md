@@ -30,8 +30,8 @@ quotes:
     timestamp: "00:07:14.721"
   - text: "For judgment will be without mercy to anyone who has shown no mercy. ... Mercy triumphs over judgment."
     speaker: "Dan McClellan"
-    episode: 114
-    timestamp: "00:48:37.582"
+    episode: 97
+    timestamp: "00:50:59.020"
 showAllEpisodes: true
 ---
 

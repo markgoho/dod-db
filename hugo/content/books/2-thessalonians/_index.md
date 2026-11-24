@@ -16,7 +16,7 @@ quotes:
   - text: "This is one of the disputed Pauline epistles. ... most critical scholars would say that this was likely written by somebody pretending to be Paul after Paul's death."
     speaker: "Dan McClellan"
     episode: 138
-    timestamp: "00:03:35.773"
+    timestamp: "00:03:39.046"
   - text: "The pastorals, a good strong majority of scholars are like, yeah, that's not Paul. ... Ephesians, Colossians, 2 Thessalonians, I think it's a little closer to half and half. ... the majority of, or a good number of scholars don't think that Paul was responsible for Ephesians, okay, Colossians, 2 Thessalonians."
     speaker: "Dan McClellan"
     episode: 135

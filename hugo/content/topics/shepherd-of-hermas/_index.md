@@ -14,7 +14,7 @@ quotes:
   - text: "The two texts that came the closest to being included but were ultimately left out were the Epistle of Barnabas and the Shepherd of Hermas. So this is as close as you get to a New Testament apocryphal text that a lot of folks thought should have been in there."
     speaker: "Dan McClellan"
     episode: 165
-    timestamp: "00:41:04.380"
+    timestamp: "00:41:49.090"
   - text: "The word, the name Jesus and the title Christ are never mentioned once anywhere in the entire text. But we do have this angel of repentance who is like a shepherd who basically delivers to Hermas the commandments."
     speaker: "Dan McClellan"
     episode: 165

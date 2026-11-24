@@ -25,7 +25,7 @@ quotes:
   - text: "This promise seems to suggest something big should have happened toward the end of the 6th century BCE but no, Persia is going to be in charge for a while."
     speaker: "Dan McClellan"
     episode: 115
-    timestamp: "00:52:52.880"
+    timestamp: "00:52:56.960"
 showAllEpisodes: true
 ---
 

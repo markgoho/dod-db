@@ -16,9 +16,9 @@ featuredItems:
     label: "In Chains: Slaves and Angels"
 quotes:
   - text: "For if God did not spare the angels when they sinned, but cast them into hell and committed them to chains of deepest darkness to be kept until judgment. ... without this story in Enoch, that makes no sense."
-    speaker: "Dan Beecher and Dan McClellan"
+    speaker: "Dan Beecher"
     episode: 157
-    timestamp: "00:55:18.921"
+    timestamp: "00:55:20.523"
   - text: "A lot of Revelation, Second Peter, Jude, Luke, the concept of hell, like all—a lot of this seems to descend from the traditions that we find in the Book of First Enoch."
     speaker: "Dan McClellan"
     episode: 157

@@ -20,7 +20,7 @@ quotes:
     episode: 132
     timestamp: "00:13:29.867"
   - text: "The consistencies between these texts, the similar language, the similar themes, the similar ideas, have been for 2000 years ... a real source of interest. ... The explanation that was given for the profound similarities between these texts was that they must have shared a single author."
-    speaker: "Hugo Mendez"
+    speaker: "Hugo Méndez"
     episode: 128
     timestamp: "00:04:26.825"
   - text: "In First John 3:20, the statement he knows everything, ginoskei panta, which just means he knows all things, which is obviously rhetorical, but tags that base of omniscience."

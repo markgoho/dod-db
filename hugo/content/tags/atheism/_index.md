@@ -17,15 +17,15 @@ quotes:
   - text: "I want to suggest that atheism fundamentally is about membership in a group and an identity."
     speaker: "Dan McClellan"
     episode: 77
-    timestamp: "00:42:05.000"
+    timestamp: "00:41:27.920"
   - text: "People think of religious identity and religion as just a set of truth claims. But it's never been that. It's community. It's ritual. It's meaning-making. It's behaviors. It is anxiety, death anxiety curating. It's all of these things all wrapped into one. And there are an awful lot of people who enjoy everything about it, but maybe not so much the truth claims. That doesn't make them any less Christian or Jewish or Muslim, right? Or atheist."
     speaker: "Dan McClellan"
     episode: 124
-    timestamp: "00:29:26.000"
+    timestamp: "00:28:57.213"
   - text: "There's about 3 or 4% of self-identified atheists who are certain there is a God."
     speaker: "Dan McClellan"
     episode: 77
-    timestamp: "00:57:50.000"
+    timestamp: "00:57:29.990"
   - text: "You can't define it, you can only describe it. And so everybody's going to have different understandings of it."
     speaker: "Dan McClellan"
     episode: 77

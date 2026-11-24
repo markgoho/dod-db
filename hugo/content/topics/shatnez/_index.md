@@ -27,7 +27,7 @@ quotes:
   - text: "Yeah. So this is, this is something that is taken very seriously among certain social groups within the Jewish tradition today. And there's even like a rule that you can, you can wear because it's stitched together. You can wear a linen shirt with a wool jacket over top, but you have to be able to take one off without the other, because if they only went on and off at the same time, then they would be considered to be together a single garment."
     speaker: "Dan McClellan"
     episode: 74
-    timestamp: "00:09:07.220"
+    timestamp: "00:09:31.480"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true

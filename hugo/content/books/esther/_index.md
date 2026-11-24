@@ -25,7 +25,7 @@ quotes:
   - text: "This is not historical. These are kind of like court tales."
     speaker: "Dan McClellan"
     episode: 147
-    timestamp: "00:13:46.777"
+    timestamp: "00:13:54.418"
 showAllEpisodes: true
 ---
 

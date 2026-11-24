@@ -21,7 +21,7 @@ quotes:
   - text: "The Masoretic Text is what is considered most authoritative within Judaism today."
     speaker: "Dan McClellan"
     episode: 11
-    timestamp: "00:12:38.680"
+    timestamp: "00:12:10.690"
   - text: "The discovery of the Dead Sea Scrolls opened up whole new vistas for the translation of the Hebrew Bible because now we have a bunch of earlier manuscripts, a thousand years earlier, that offer different readings in many cases."
     speaker: "Dan McClellan"
     episode: 11

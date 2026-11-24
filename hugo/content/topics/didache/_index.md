@@ -25,7 +25,7 @@ quotes:
   - text: "Another text called the Didache. It talks about a prayer that's found in a gospel. It looks like the Lord's Prayer and it looks like Matthew's version of the Lord's Prayer. But he doesn't say the Gospel of Matthew. He just, he knows it's a text called the Gospel, unless he's talking about the oral good news that Jesus preached."
     speaker: "Michael Kok"
     episode: 69
-    timestamp: "00:14:19.000"
+    timestamp: "00:13:56.990"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true

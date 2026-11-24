@@ -25,7 +25,7 @@ quotes:
   - text: "The message is actually to these exiles: get comfy, because you gonna be there for a while."
     speaker: "Dan McClellan"
     episode: 113
-    timestamp: "00:09:24.590"
+    timestamp: "00:08:26.690"
   - text: "It is not saying you must force the welfare that you want onto the city. It's saying seek out. Don't try to undermine."
     speaker: "Dan McClellan"
     episode: 113

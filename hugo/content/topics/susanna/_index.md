@@ -21,7 +21,7 @@ quotes:
   - text: "The scoundrels ordered her to be unveiled so that they might feast their eyes on her beauty."
     speaker: "Dan McClellan"
     episode: 92
-    timestamp: "00:45:13.850"
+    timestamp: "00:44:49.360"
   - text: "The Story of Susanna, Song of the Three Children. These are all expansions on Daniel. These are texts that were considered authoritative within early Judaism and are adopted into the Christian concept of Scripture. But then the Jewish canon omits them when it becomes solidified."
     speaker: "Dan McClellan"
     episode: 20

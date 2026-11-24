@@ -23,7 +23,7 @@ quotes:
   - text: "This was an unconditional prophecy of destruction. It did not give them an out. Forty days and Nineveh will be overthrown. Punto. Full stop, period."
     speaker: "Dan McClellan"
     episode: 54
-    timestamp: "00:49:35.150"
+    timestamp: "00:49:35.220"
   - text: "I think it's a pretty biting satire on the prophetic genre, which so frequently is all about condemning everybody else to destruction. And here it's kind of poking fun at that and also saying, no, it's better to believe in a merciful God."
     speaker: "Dan McClellan"
     episode: 29

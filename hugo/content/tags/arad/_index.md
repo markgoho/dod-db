@@ -14,19 +14,19 @@ quotes:
   - text: "Arad is mentioned a handful of times in the Bible and specifically as a place where there's a king of Arad who comes out to fight Joshua or something like that and gets defeated."
     speaker: Dan McClellan
     episode: 13
-    timestamp: "00:14:25.17"
+    timestamp: "00:14:25.170"
   - text: "This is not some foreign temple. This was a temple run by Judahites, obviously, was administered from Jerusalem, was part of the hierarchy's network of sacred precincts."
     speaker: Dan McClellan
     episode: 13
-    timestamp: "00:15:30.32"
+    timestamp: "00:15:30.320"
   - text: "We have a Judahite temple preserved at Arad that had a divine image in it that had— it's still there, you can go look at it. It's a standing stone. It looks like a headstone from a cemetery."
     speaker: Dan McClellan
     episode: 126
-    timestamp: "00:43:05.18"
+    timestamp: "00:43:05.018"
   - text: "We got the Arad temple down south in, in the Negev as well. So we know there were multiple temples operating prior to the exile."
     speaker: Dan McClellan
     episode: 102
-    timestamp: "00:48:32.96"
+    timestamp: "00:49:49.530"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true

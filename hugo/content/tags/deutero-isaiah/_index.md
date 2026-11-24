@@ -26,7 +26,7 @@ quotes:
   - text: "It kind of seems like whoever wrote this section that's very, very different and is looking back on the whole Babylonian exile as something that happened in the past, maybe is referring to Cyrus because they're writing after this all happened."
     speaker: "Dan McClellan"
     episode: 43
-    timestamp: "00:40:57.890"
+    timestamp: "00:40:59.010"
   - text: "Our generation is coming on what I hope is the tail end of the era of Deutero-Isaiah. They're constantly trying to hold that threshold against the data and say, no, no, no, we have it by this time."
     speaker: "Dan McClellan"
     episode: 59

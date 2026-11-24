@@ -20,11 +20,11 @@ quotes:
   - text: "The discovery of the Dead Sea Scrolls pushed textual criticism of the Hebrew Bible back in one discovery like a thousand years."
     speaker: "Kipp Davis"
     episode: 45
-    timestamp: "00:29:57.830"
+    timestamp: "00:28:55.550"
   - text: "The discovery of the Dead Sea Scrolls opened up whole new vistas for the translation of the Hebrew Bible because now we have a bunch of earlier manuscripts, a thousand years earlier, that offer different readings in many cases."
     speaker: "Dan McClellan"
     episode: 11
-    timestamp: "01:07:22.690"
+    timestamp: "01:06:35.870"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true

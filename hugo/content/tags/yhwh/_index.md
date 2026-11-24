@@ -19,11 +19,11 @@ quotes:
   - text: "I will occasionally refer to it as the Tetragrammaton, which means the four letters Yod He Vav He, which is presented as the personal name of the God of Israel in the Hebrew Bible."
     speaker: Dan McClellan
     episode: 1
-    timestamp: "00:41:53.000"
+    timestamp: "00:41:44.500"
   - text: "The earliest references we have to a deity that goes by that name, the Tetragrammaton Adonai, come from the second half of the 9th century BCE."
     speaker: Dan McClellan
     episode: 1
-    timestamp: "00:42:53.000"
+    timestamp: "00:42:12.570"
   - text: "It seems like a deity named Adonai arrived on the scene and acceded to rule over the Israelite pantheon."
     speaker: Dan McClellan
     episode: 1

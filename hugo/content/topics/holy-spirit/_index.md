@@ -17,7 +17,7 @@ featuredItems:
 quotes:
   - text: "God's spirit is kind of the means of God's activity in the world while God's own self is elsewhere. So yeah, the idea that the spirit is an extension of God's agency is definitely active and had been for quite some time."
     speaker: "Dan McClellan"
-    episode: 53
+    episode: 148
     timestamp: "00:47:38.964"
   - text: "What these folks are doing is basically blaspheming the work of the Holy Spirit through Jesus, saying what Jesus does is inspired and controlled by Satan. No, it's actually the Holy Spirit."
     speaker: "Dan McClellan"
@@ -26,7 +26,7 @@ quotes:
   - text: "Now the Holy Ghost is kind of an outlier, an afterthought. This is just somebody. It's like, 'Don't forget the Holy Ghost.' And so people are like, 'Oh, okay, the Holy Ghost too.'"
     speaker: "Dan McClellan"
     episode: 42
-    timestamp: "00:43:54.830"
+    timestamp: "00:43:56.190"
   - text: "Maybe this, the whole baptism story, is intended to reflect or kind of resonate with people who have understood their own reception of the Spirit as their own adoption into the family of God, and now they are joint heirs with Jesus."
     speaker: "Dan McClellan"
     episode: 145

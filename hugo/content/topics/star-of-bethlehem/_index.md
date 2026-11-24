@@ -9,11 +9,11 @@ quotes:
   - text: "If you take the text for what it says, it doesn't work. If you don't take the text for what it says, you still have a whole lot of conundrums both in terms of interpretation and just general historicity of the tale."
     speaker: "Aaron Adair"
     episode: 37
-    timestamp: "00:04:26.000"
+    timestamp: "00:03:58.200"
   - text: "One of the things that I talk about in one of the chapters in the book is this kind of linkage between stars and rulers."
     speaker: "Eric Vanden Eykel"
     episode: 38
-    timestamp: "00:47:03.000"
+    timestamp: "00:46:56.490"
   - text: "One of the things that I sort of noticed when I was looking at that story is this kind of early fascination with the star."
     speaker: "Eric Vanden Eykel"
     episode: 38
@@ -21,7 +21,7 @@ quotes:
   - text: "The star is a sign that Caesar is, after his assassination, was divine or whatever. And then his son sort of uses this as propaganda to say, I am the rightful ruler."
     speaker: "Eric Vanden Eykel"
     episode: 38
-    timestamp: "00:47:31.000"
+    timestamp: "00:48:09.320"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true

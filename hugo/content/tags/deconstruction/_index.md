@@ -18,7 +18,7 @@ quotes:
   - text: "For me, deconstructing was really not only releasing those beliefs, it was losing who I was."
     speaker: "Rev Karla Kamstra"
     episode: 82
-    timestamp: "00:05:24.000"
+    timestamp: "00:04:38.380"
   - text: "You start to peel back the layers and, and you start to make the connections, and you're left with the true self."
     speaker: "Rev Karla Kamstra"
     episode: 82
@@ -26,7 +26,7 @@ quotes:
   - text: "A big part of that was actually deconstructing that authority and democratizing it to some degree."
     speaker: "Dan McClellan"
     episode: 79
-    timestamp: "00:12:18.000"
+    timestamp: "00:11:33.030"
   - text: "When the belief changes, they then have to reckon with that community that gave them that belief."
     speaker: "Aaron Higashi"
     episode: 149

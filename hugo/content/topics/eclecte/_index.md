@@ -20,7 +20,7 @@ quotes:
   - text: "The more I began looking at it and working with Greek papyri, I'm like, no, he's actually— there's a name here."
     speaker: Lincoln Blumell
     episode: 153
-    timestamp: "00:04:06.506"
+    timestamp: "00:03:04.464"
   - text: "The elder to the lady Eklekte. But the second part is, and her children, right?"
     speaker: Lincoln Blumell
     episode: 153

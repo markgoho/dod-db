@@ -17,7 +17,7 @@ quotes:
   - text: "Tolkien convinced him that he could believe in Christ as a true myth. Jesus's incarnation, death, and resurrection was true, but it was also a myth. And this was the key that opened the door to Lewis to be able to accept Jesus."
     speaker: "Leslie Baynes"
     episode: 164
-    timestamp: "00:23:51.430"
+    timestamp: "00:23:52.430"
   - text: "The Christian identity politics in the US don't include loving the poor and giving to the poor sacrificially, which is something that Lewis said over and over again."
     speaker: "Leslie Baynes"
     episode: 164

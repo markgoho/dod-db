@@ -25,7 +25,7 @@ quotes:
   - text: "There is probably some direct influence... from these Egyptian texts."
     speaker: "Dan McClellan"
     episode: 115
-    timestamp: "00:33:37.040"
+    timestamp: "00:32:50.980"
 showAllEpisodes: true
 ---
 

@@ -21,11 +21,11 @@ quotes:
     timestamp: "00:34:57.219"
   - text: "For the Lord himself, with a cry of command, with the archangel's call, and with the sound of God's trumpet, will descend from heaven, and the dead in Christ will rise first. ... Then we who are alive, who are left, will be caught up in the clouds, together with them to meet the Lord in the air. And so we will be with the Lord forever."
     speaker: "Dan McClellan"
-    episode: 71
+    episode: 32
     timestamp: "00:31:19.130"
   - text: "What this is referring to is Paul here is using imagery associated with a new sovereign's arrival to their kingdom, where what would happen is when the person is approaching the whole city, comes outside the city gates and goes out front, and there's a kind of reception committee out there, and then they travel with the new sovereign back into the city where they take up their rule. ... the idea is we're all going to rise up into the clouds to meet him, not to then take a trip in our big old rocket ship into the heavens, but to come back down with Jesus."
     speaker: "Dan McClellan"
-    episode: 71
+    episode: 32
     timestamp: "00:33:06.110"
   - text: 'It seems that he is interpreting this prophecy about the second coming that says it will happen "When they say there is peace and security," which basically the rhetorical point there is when they least expect it, that''s when the Son of Man''s going to be like, "Boo, gotcha." That''s when all this is going to go down.'
     speaker: "Dan McClellan"

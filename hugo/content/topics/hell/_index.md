@@ -29,7 +29,7 @@ quotes:
   - text: "Then Death and Hades were thrown into the Lake of Fire. This is the second death, the Lake of Fire."
     speaker: Dan McClellan
     episode: 98
-    timestamp: "00:37:14.800"
+    timestamp: "00:36:25.550"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true

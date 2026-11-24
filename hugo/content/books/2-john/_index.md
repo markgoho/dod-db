@@ -24,7 +24,7 @@ quotes:
     episode: 132
     timestamp: "00:13:29.867"
   - text: "The consistencies between these texts, the similar language, the similar themes, the similar ideas, have been for 2000 years ... a real source of interest for Christians ... The explanation ... was that they must have shared a single author."
-    speaker: "Hugo Mendez"
+    speaker: "Hugo Méndez"
     episode: 128
     timestamp: "00:04:26.825"
   - text: "We now have somebody who was trusted by the elder to send a letter to and to give some instructions. ... It actually changes the frame of how we read the letter. ... It makes much more sense."

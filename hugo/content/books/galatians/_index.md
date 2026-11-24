@@ -22,7 +22,7 @@ quotes:
   - text: "The New Testament is not an, an ethnically oriented corpus. ... Christianity is supposed to have transcended those boundaries. It's supposed to be for everybody. ... It is these, this is where we get these ideas of there is neither Jew nor Greek, there is neither bond nor free, all of that sort of thing."
     speaker: "Dan McClellan"
     episode: 113
-    timestamp: "00:20:08.670"
+    timestamp: "00:19:37.260"
   - text: "And then also in Galatians 4, uh, doo-doo-doo-doo, but when the fullness of time had come, God sent his Son, born of a woman, born under the law, and in order to redeem those who were under the law, so that we might receive adoption as children. And because you are children, God has sent the Spirit of his Son into our hearts, crying, 'Abba, Father!' So you are no longer a slave but a child, and if a child, then also an heir through God."
     speaker: "Dan McClellan"
     episode: 145

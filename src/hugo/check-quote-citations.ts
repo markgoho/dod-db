@@ -52,8 +52,11 @@ interface Line {
 }
 
 const TIMESTAMP = /^(\d{2}):(\d{2}):(\d{2})\.(\d{3})$/;
-/** Older Transcripts have no milliseconds; Episode Pages render those as .000. */
-const LINE = /^\[(\d{2}:\d{2}:\d{2})(\.\d{3})?\] ([^:]+): (.*)$/;
+/**
+ * Older Transcripts have no milliseconds, and some lines are indented;
+ * Episode Pages render the first as .000 and trim the second.
+ */
+const LINE = /^\s*\[(\d{2}:\d{2}:\d{2})(\.\d{3})?\] ([^:]+): (.*)$/;
 
 function toSeconds(timestamp: string): number {
   const [, h, m, s, ms] = TIMESTAMP.exec(timestamp) ?? [];
@@ -236,20 +239,24 @@ export async function checkQuoteCitations(root: string): Promise<string[]> {
         continue;
       }
       const timestamp = String(quote.timestamp);
+      const parts = quoteWords(String(quote.text));
       if (!TIMESTAMP.test(timestamp)) {
-        failures.push(`${where}: timestamp ${timestamp} is not HH:MM:SS.mmm`);
+        const found = await findElsewhere(episode, parts);
+        failures.push(
+          `${where}: timestamp ${timestamp} is not HH:MM:SS.mmm (text ${found})`,
+        );
         continue;
       }
       const lines = await linesOf(episode);
       const cited = lines.findIndex(line => line.timestamp === timestamp);
       if (cited === -1) {
-        const near = nearest(lines, toSeconds(timestamp));
+        const near = nearest(lines, toSeconds(timestamp))?.timestamp ?? "none";
+        const found = await findElsewhere(episode, parts);
         failures.push(
-          `${where}: Episode ${episode} has no line at ${timestamp} (nearest ${near?.timestamp ?? "none"})`,
+          `${where}: Episode ${episode} has no line at ${timestamp} (nearest ${near}; text ${found})`,
         );
         continue;
       }
-      const parts = quoteWords(String(quote.text));
       // The quote starts on the cited line or one either side of it.
       const from = Math.max(0, cited - 1);
       const start = locate(lines.slice(from, cited + RUN_ON), parts);

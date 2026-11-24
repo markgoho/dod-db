@@ -13,7 +13,7 @@ quotes:
   - text: "One of those sources, one of those distinctive strands, has been identified pretty early on as the priestly source."
     speaker: Liane Feldman
     episode: 22
-    timestamp: "00:05:07.870"
+    timestamp: "00:04:31.440"
   - text: "One of the most important parts of this source, one of the things that comes through in P that doesn't necessarily come through quite so strongly in any of the other sources, D included, is the idea that the Israelite cult, the sanctuary, the sacrifices made at that sanctuary are really the center of the life of the Israelites."
     speaker: Liane Feldman
     episode: 22

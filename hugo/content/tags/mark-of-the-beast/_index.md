@@ -18,7 +18,7 @@ quotes:
   - text: "The beast, the number of the man, 666 is almost certainly a reference to Nero."
     speaker: Dan McClellan
     episode: 9
-    timestamp: "00:28:54.80"
+    timestamp: "00:28:54.080"
   - text: "We can explain very easily how these symbols fit into a late first-century CE Greco-Roman context."
     speaker: Dan McClellan
     episode: 9

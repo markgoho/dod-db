@@ -30,7 +30,7 @@ quotes:
   - text: "Paul's sexual ethic is just as outdated, outmoded, irrelevant to today."
     speaker: Dan McClellan
     episode: 114
-    timestamp: "00:55:06.560"
+    timestamp: "00:55:08.560"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true

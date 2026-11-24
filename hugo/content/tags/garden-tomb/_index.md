@@ -14,7 +14,7 @@ quotes:
   - text: "The tomb itself is definitely not where Jesus was buried."
     speaker: "Dan McClellan"
     episode: 83
-    timestamp: "00:44:43.030"
+    timestamp: "00:43:25.710"
   - text: "This is an 8th or 7th century BCE rock-cut bench tomb. And so it does not fit the description of the tomb in which Jesus was buried."
     speaker: "Dan McClellan"
     episode: 83

@@ -18,7 +18,7 @@ quotes:
   - text: "And the king says, I see the footprints of men and women and children. Then the king was enraged and he arrested the priests and their wives and children and they showed him the secret doors which they used to enter to consume what was on the table."
     speaker: "Dan McClellan"
     episode: 70
-    timestamp: "00:37:21.890"
+    timestamp: "00:37:35.250"
   - text: "But because God is, you know, the destroyer of. Of the leviathan and the tamer of the savage beast, they're representing Daniel as. As wielding the same power."
     speaker: "Dan McClellan"
     episode: 70

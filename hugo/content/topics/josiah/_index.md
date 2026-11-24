@@ -17,7 +17,7 @@ quotes:
   - text: "At the end of the day, when the dust settles and Josiah comes back home, he now reigns over a country where everyone who wants to worship a deity has to come to his temple, controlled by his priesthood in his city, to worship the one God of whom he is the only representative."
     speaker: "Dan McClellan"
     episode: 88
-    timestamp: "00:28:13.000"
+    timestamp: "00:27:48.290"
   - text: "Most scholars think that this story is a pretense for the introduction of the book of Deuteronomy, at least a very early stage of the book of Deuteronomy."
     speaker: "Dan McClellan"
     episode: 88

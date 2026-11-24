@@ -25,7 +25,7 @@ quotes:
   - text: "I recently did a video on the flat earth conspiracy theory and I had, I had about a dozen comments on the video to the tune of I like most of your stuff. But you're wrong on this one. I promise you I'm not wrong."
     speaker: "Dan McClellan"
     episode: 9
-    timestamp: "00:10:34.330"
+    timestamp: "00:09:34.330"
 showTopEpisodes: true
 topEpisodesLimit: 6
 showAllEpisodes: true

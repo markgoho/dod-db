@@ -20,7 +20,7 @@ quotes:
   - text: "Most people who perpetuate Christian nationalism don't realize that their faith has been co-opted by that ideology."
     speaker: "April Ajoy"
     episode: 91
-    timestamp: "00:05:26.770"
+    timestamp: "00:04:35.970"
   - text: "Being pro-secularism does not mean you're anti-Christian."
     speaker: "Eric Swalwell"
     episode: 96

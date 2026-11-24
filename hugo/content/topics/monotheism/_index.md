@@ -29,7 +29,7 @@ quotes:
     timestamp: "00:25:36.040"
   - text: "It's not there's only one that exists, it's you get one, right? I'm the one."
     speaker: "Dan McClellan"
-    episode: 104
+    episode: 126
     timestamp: "00:27:10.403"
 showTopEpisodes: true
 topEpisodesLimit: 6

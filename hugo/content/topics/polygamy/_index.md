@@ -25,7 +25,7 @@ quotes:
   - text: "There are no rules that the man was only allowed to have one and only one wife."
     speaker: "Dan McClellan"
     episode: 108
-    timestamp: "00:21:15.310"
+    timestamp: "00:21:54.120"
   - text: "We don't have the people of Israel without at least two generations of polygamy."
     speaker: "Jennifer Bird"
     episode: 44
