@@ -1,0 +1,569 @@
+# Review record for /scholarship/the-creation-stories-in-genesis/ (#93 shape). Not rendered.
+# agent: results of the agent's first pass (#144, 2026-11-24). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Every quote was fetched 2026-11-24 and script-matched verbatim against the fetched page text after normalising whitespace and curly quotes; each locator was checked by eye. One mismatch: nihilo/1, where the extracted text has a stray space before the comma after the italic “ex nihilo”; the raw HTML reads “creation&nbsp;<em>ex nihilo</em>, creation of something out”, which confirms the quote. Cause of the stray space not checked.
+# Encyclopedia.com renders some Hebrew transliteration in Paul's entry as literal “?” (e.g. “br?”, “?Elohim”); no quote includes such a span.
+# Window flag (#86: the 30-year window applies to state-of-the-field statements): Paul's Encyclopaedia Judaica entry reads as first-edition text (its Bible bibliography ends in 1968; only the philosophy section has an added 1994 title), so it is treated as outside the window. No short answer rests on Paul: every short has at least two in-window authors (Hayes 2006, Coogan and Chapman 2019, Klamm 2020, NABRE 2011) and Paul is cited as a further, older witness. Second pass to confirm.
+review: ""
+citations:
+  two/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 2 [00:12:44], opening sentence of the chapter. Core claim, author 1. Hayes's “in fact there are two” is her own voice.",
+    }
+  two/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 2, the human-dignity paragraph. Backs “the second begins in Genesis 2:4”; Hayes elsewhere says the second story “occupies much of 2 and 3” (same chapter), which backs “runs into Genesis 3”.",
+    }
+  two/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l4 ch. 5 [00:35:32], end of the creation-doublets passage.",
+    }
+  two/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, first paragraph of “Genesis 1–3: Some General Observations”. Core claim, author 2 (distinct author from Hayes, #92).",
+    }
+  two/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, same section, second paragraph. Backs the 2:4b–3:24 range.",
+    }
+  two/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, same section, end of third paragraph. “suggest” kept in the statement (“their differences suggest”). Quote stops before “and that the second narrative was included…”.",
+    }
+  two/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l5 ch. 1 [00:00:00], J-source characteristics. Statement says J “begins” with the second account, which Hayes's “which begins with the second creation story” says.",
+    }
+  two/8: { agent: pass, owner: "", note: "Hayes l5 ch. 1, P-source paragraph." }
+  two/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note on 1:1–2:3, first sentence. NABRE ends the P section at 2:3, not 2:4a; the statement gives the NABRE range as NABRE gives it.",
+    }
+  two/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, Encyclopaedia Judaica, opening paragraph. Core claim, a third author (outside the 30-year window; see header).",
+    }
+  two/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, opening paragraph. Paul's range for the second story is 2:4b–24; the statement doesn't give his range.",
+    }
+  two/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, start of the second paragraph; quote stops before the garbled “?Elohim” span.",
+    }
+  two/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 4 summary, “History of Scholarship”, third paragraph. The “almost all biblical scholars” wording is the source's, quoted, and is about the Pentateuch's sources in general, so the statement gives it as the summary's claim about the Pentateuch, not as a count of scholars on Genesis 1–2. The short says “Scholars read…”, not “almost all”, because no second in-window author reports a quantity.",
+    }
+  differ/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, second paragraph, differences (2)–(4). Quote starts after the garbled “(1) the names of the deity” span. Exempt facts about the texts. Second author for “order of creation”: Coogan and Chapman, “a different vocabulary and order of events” (differ/12).",
+    }
+  differ/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l4 ch. 5. Double quotes are the transcript's; YAML single-quoted.",
+    }
+  differ/3: { agent: pass, owner: "", note: "Hayes l4 ch. 5, same paragraph." }
+  differ/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, end of third paragraph. Second author for the names point.",
+    }
+  differ/5: { agent: pass, owner: "", note: "Hayes l4 ch. 5, style paragraph." }
+  differ/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l4 ch. 5, same paragraph; “them” = puns and wordplays (previous sentence).",
+    }
+  differ/7:
+    { agent: pass, owner: "", note: "Hayes l4 ch. 5, terminology paragraph." }
+  differ/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l4 ch. 5. Transcript's “then” (for “than”) kept in the quote.",
+    }
+  differ/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, third paragraph. Second author for the picture-of-God point.",
+    }
+  differ/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, third paragraph.",
+    }
+  differ/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, “Conception of God”, first sentence. A dissent from the usual view, attributed to Paul and kept out of the short. Paul's reasons (God also “makes” things in Gen 1; fiat creation found in Egyptian and Babylonian texts) are in the same paragraph but contain garbled transliteration; not quoted.",
+    }
+  dating/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l5 ch. 1, J-date paragraph. Reported as source critics' argument (“It was argued by some”), not as fact.",
+    }
+  dating/2: { agent: pass, owner: "", note: "Hayes l5 ch. 1, same paragraph." }
+  dating/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l5 ch. 1, next paragraph (southern interests). Statement: “they took it to be a document from Judah”.",
+    }
+  dating/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l5 ch. 1, P paragraph. Brackets are the transcript's; its note 1 says Wellhausen strictly placed P post-exilic, so the short says “in or after the Babylonian exile”.",
+    }
+  dating/5: { agent: pass, owner: "", note: "Hayes l5 ch. 1, same paragraph." }
+  dating/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l5 ch. 2 [00:16:05], Wellhausen's-bias paragraph.",
+    }
+  dating/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l5 ch. 2, same paragraph. “disputed” in the short, author 1 (P's date).",
+    }
+  dating/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l2 ch. 4 [00:35:13], last paragraph of the lecture. Hedges kept (“probably … we don't really know”).",
+    }
+  dating/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 4 summary, “History of Scholarship”. “disputed”, author 2. The summary doesn't say which way the dates have moved, and no source read dates J to the 8th–7th century (the show's figure, Ep 1 00:05:36), so the page gives no revised dates.",
+    }
+  enuma/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 1 [00:00:00], summary of the epic.",
+    }
+  enuma/2: { agent: pass, owner: "", note: "Hayes l3 ch. 1." }
+  enuma/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Klamm, paragraph 2 (counting the dek line as paragraph 0, the “If an ancient Babylonian…” paragraph as 1). Date given in the statement as Klamm's, with her “likely”.",
+    }
+  enuma/4: { agent: pass, owner: "", note: "Klamm, paragraph 3." }
+  enuma/5: { agent: pass, owner: "", note: "Klamm, paragraph 4." }
+  enuma/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, “enuma elish” subsection, end of first paragraph. “appears … echoes” kept as “appears to echo”.",
+    }
+  enuma/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, “Influences from the Near East”.",
+    }
+  enuma/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 3 [00:28:30], tehom paragraph.",
+    }
+  enuma/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 4 [00:38:17], opening sentence.",
+    }
+  enuma/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, end of “Influences from the Near East”.",
+    }
+  enuma/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, “Differences between Genesis and Enuma Elish”, first sentence.",
+    }
+  enuma/12: { agent: pass, owner: "", note: "Paul, same paragraph." }
+  enuma/13:
+    { agent: pass, owner: "", note: "Klamm, paragraph 4, last sentence." }
+  enuma/14: { agent: pass, owner: "", note: "Hayes l3 ch. 2." }
+  enuma/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, “Differences…” paragraph. Backs “given rule over the other creatures”.",
+    }
+  enuma/16:
+    {
+      agent: pass,
+      owner: "",
+      note: "Klamm, paragraph 6. One author reports the split in explanations, so it stays in the statement, attributed, not in the short (#133). Feldman's Ep 22 Trigger Claim takes the shared-matrix side; the page doesn't adjudicate.",
+    }
+  deep/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 3. Hayes says “exactly the same word … it's the same word, it's a related word”; the short says “related”, the weaker form, which Klamm (deep/2) also uses.",
+    }
+  deep/2: { agent: pass, owner: "", note: "Klamm, paragraph 3." }
+  deep/3: { agent: pass, owner: "", note: "Paul, “enuma elish” subsection." }
+  deep/4: { agent: pass, owner: "", note: "Hayes l3 ch. 3, tehom paragraph." }
+  deep/5:
+    {
+      agent: flag,
+      owner: "",
+      note: "Hayes l3 ch. 2, end of chapter. Short's “only water, not a god”: Hayes deep/4–5, Paul deep/6; Klamm deep/2 (“God is already superior to ‘the Deep’”) is weaker and not counted for it. In-window authors for “not a god”: Hayes plus NABRE deep/7 (verse 2 as chaos God orders, no deity). Flag: does NABRE suffice as the second author here? If not, the short's second clause leans on Paul (outside the window) and should be cut to “Its Hebrew name, tehom, is related to Tiamat's.”",
+    }
+  deep/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, “enuma elish” subsection, parenthesis. Quote starts inside the parenthesis.",
+    }
+  deep/7: { agent: pass, owner: "", note: "NABRE note on 1:2, first sentence." }
+  deep/8: { agent: pass, owner: "", note: "NABRE note on 1:2." }
+  deep/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 3. Transcript's “illusions” (for “allusions”) kept. The Psalm 74 and Isaiah 51 passages Hayes reads next are not named on the page, to avoid restating the-origins-of-yahweh storm statement.",
+    }
+  deep/10: { agent: pass, owner: "", note: "Hayes l3 ch. 3, same paragraph." }
+  deep/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, “enuma elish” subsection, Gen 1:21 paragraph; “most likely” kept as Paul's reading.",
+    }
+  deep/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, “other biblical traditions”, end of first paragraph.",
+    }
+  beginning/1:
+    { agent: pass, owner: "", note: "Hayes l3 ch. 3, opening sentence." }
+  beginning/2:
+    { agent: pass, owner: "", note: "Hayes l3 ch. 3, same paragraph." }
+  beginning/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 3. Short author 1. The statement's quotation shortens hers at the ellipsis she gives.",
+    }
+  beginning/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note on 1:1–2:3, paragraph after the day table. Short author 2 (in window, 2011 OT revision). NABRE's own rendering keeps “In the beginning, when God created…”, which the statement doesn't claim otherwise.",
+    }
+  beginning/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE, same paragraph, last sentence. Backs the short's “does not follow the Hebrew syntax”.",
+    }
+  beginning/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, opening paragraph. “many commentators think” is Paul's and is outside the window, so the short doesn't say “many”; the statement gives it as Paul's. Cassuto is named only as the scholar Paul points to; Cassuto's text is a Lead.",
+    }
+  beginning/7:
+    { agent: pass, owner: "", note: "Hayes l3 ch. 3, same paragraph." }
+  nihilo/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 3. Extraction artefact before the comma after “ex nihilo” (see header); matched by eye.",
+    }
+  nihilo/2: { agent: pass, owner: "", note: "Hayes l3 ch. 3, same paragraph." }
+  nihilo/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, first paragraph of “General Observations”.",
+    }
+  nihilo/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, “Influences from the Near East”.",
+    }
+  nihilo/5:
+    { agent: pass, owner: "", note: "Klamm, paragraph 4, first sentence." }
+  nihilo/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul, opening paragraph. Quote starts after the garbled “br?” and stops before Paul's clause that the concept “first appears in ii Maccabees 7:28”, which is Paul's alone (and outside the window) and is about the doctrine's history, the creation-ex-nihilo candidate's subject, not about Genesis. Kept off the page.",
+    }
+  nihilo/7: { agent: pass, owner: "", note: "Paul, same sentence, continued." }
+  firmament/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 3, firmament paragraph. Transcript's “appears to be a beaten,” kept.",
+    }
+  firmament/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note on 1:7. “Solid dome” in the short: Hayes (beaten-out metal sheet) and NABRE (metal dome).",
+    }
+  firmament/3: { agent: pass, owner: "", note: "NABRE note on 1:7." }
+  firmament/4:
+    { agent: pass, owner: "", note: "Hayes l3 ch. 3, same paragraph." }
+  firmament/5: { agent: pass, owner: "", note: "NABRE note on 1:2." }
+  firmament/6: { agent: pass, owner: "", note: "NABRE note on 1:2." }
+  firmament/7:
+    { agent: pass, owner: "", note: "Hayes l3 ch. 3, same paragraph." }
+  firmament/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 1, after the “split her like a shellfish” lines.",
+    }
+  firmament/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Klamm, paragraph 4 (substring of enuma/5).",
+    }
+  firmament/10:
+    { agent: pass, owner: "", note: "Paul, “enuma elish” subsection." }
+  days/1:
+    { agent: pass, owner: "", note: "Hayes l3 ch. 3, seven-days paragraph." }
+  days/2: { agent: pass, owner: "", note: "Hayes l3 ch. 3, same paragraph." }
+  days/3: { agent: pass, owner: "", note: "Hayes l3 ch. 3, same paragraph." }
+  days/4: { agent: pass, owner: "", note: "Hayes l3 ch. 3, end of paragraph." }
+  days/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note on 1:1–2:3. Second author for the matched-threes pattern.",
+    }
+  days/6: { agent: pass, owner: "", note: "Paul, opening paragraph." }
+  days/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE note on 1:1–2:3, line after the day table.",
+    }
+  days/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary. Sabbath point, author 1.",
+    }
+  days/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 3, next paragraph. Sabbath point, author 2.",
+    }
+  differ/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 3 summary, “General Observations”, first sentence (also the start of two/4). Added for the short's “order of creation”.",
+    }
+  days/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 3, seven-days paragraph. Backs “humans are given fruit and grain”.",
+    }
+  days/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 3, same paragraph. Backs “the animals green plants”.",
+    }
+triggers:
+  1@00:02:19:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:01:13–00:06:10. Core-claim trigger. Quote stops before “And this is a story with a very anthropomorphic deity…”. The “probably the earlier one” clause is backed only by the classic dating (dating statement); the page doesn't state an order of composition beyond that.",
+    }
+  56@00:14:01:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:10:18–00:19:16. Guest Speaker David Carr, answering McClellan's question on pre- and post-exilic formation (00:10:51). Quote starts after “And, and, and back to your question, Dan.” Carr's own report of a North American / European split is not a source; the page says only that the dates are disputed. Gap: no source read gives the non-P strand a pre-exilic date or the show's “8th–7th century BCE” (Ep 1 00:05:36); not stated.",
+    }
+  1@00:07:15:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:06:01–00:09:09. Turn starts the quoted way; quote stops after the first sentence.",
+    }
+  1@00:09:09:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:08:09–00:11:42. Quote stops before the Tiamat sentences. “crystalline” is the show's; no source read says crystalline, so the page doesn't.",
+    }
+  22@00:55:08:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:49:11–00:57:13. Guest Speaker Liane Feldman, answering McClellan's Chaoskampf question (00:54:37). Her shared-matrix view matches the second explanation Klamm reports (enuma/16). Quote is the turn's first two sentences.",
+    }
+  70@00:03:17:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:02:07–00:06:21. Quote starts mid-turn after “I think our very first episode of this podcast, we talked about Genesis 1:1.” The episode's later claims about a second-century CE origin of the doctrine (00:06:21, 00:19:50) belong to the creation-ex-nihilo candidate, not this page.",
+    }
+  1@00:12:52:
+    {
+      agent: pass,
+      owner: "",
+      note: "Read 00:11:03–00:14:55. McClellan's “first three days … separated … next three … fill” at 00:11:42 sets the subject. His “intended to be symbolic” is a reading no source read states as such; the days statement reports the pattern and its sabbath aim only. Gap left unexplained (#86).",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "9 statements (minimum 3). Core (two) backed by three distinct authors (#92): Christine Hayes (hayes-rlst145-l3, -l4, -l5, Reference, Yale 2006; two/1–3, 7–8), Coogan and Chapman (coogan-brief-4e-summary-ch3, -ch4, Reference, OUP 2019; two/4–6, 13, counting once) and Shalom M. Paul (paul-ej-creation-cosmogony, Reference; two/10–12; outside the window, see header), plus the NABRE notes (no author, 2011; two/9, P attribution only). None Host-authored. Flag for the second pass: Hayes says lecture 3 draws “very heavily” on Nahum Sarna's Understanding Genesis (l3 ch. 1) and Paul's bibliography lists Sarna, Understanding Genesis (1967), pp. 1–32, so on the Enuma Elish comparison (enuma, deep) Hayes and Paul are distinct authors but not wholly independent in substance. Coogan and Chapman and Klamm show no such tie. The core (two accounts) doesn't rest on Hayes's Sarna-based material.",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "No “consensus” or “most scholars” on the page. “almost all biblical scholars” (two) is Coogan and Chapman's, quoted in two/13 and attributed in the statement; the short says only “Scholars read…”. “many commentators” (beginning) is Paul's, attributed, not in the short. Shorts and their in-window authors: two (Hayes, Coogan and Chapman); differ (Hayes, Coogan and Chapman; exempt facts about the texts); dating (“disputed”: Hayes dating/7, Coogan and Chapman dating/9; the classic scheme is a fact about the history of scholarship); enuma (Hayes, Coogan and Chapman, Klamm); deep (related: Hayes, Klamm; not a god: Hayes, NABRE, see deep/5); beginning (Hayes, NABRE); nihilo (Hayes, Coogan and Chapman, Klamm); firmament (Hayes, NABRE, Klamm); days (pattern: Hayes, NABRE; sabbath: Hayes, Coogan and Chapman). Reasons given where the sources give them (#86): divine names, style, order (differ); land borders and Judah (dating); sequence of events (enuma); etymology (deep); Hebrew syntax and comparable cosmogonies (beginning).",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "Paul's dissent on the abstract God of Genesis 1 (differ), Cassuto's dissent as Paul reports it (beginning), Hayes's judgement of Wellhausen's bias (dating) and Klamm's report of the two explanations (enuma) are attributed by name.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. The NABRE notes are Reference (CONTEXT.md: notes by a scholarly association; registry precedent nabre-daniel-intro).",
+    }
+sources:
+  hayes-rlst145-l2:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "New entry, same course as the existing Hayes entries. Reference (#86). Same author as l3–l5: counts once.",
+    }
+  hayes-rlst145-l3:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "New entry. Lecture 3 “Genesis 1-4 in Context”, read in full. Draws heavily on Sarna (see publish-rule).",
+    }
+  hayes-rlst145-l4:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "New entry. Lecture 4: ch. 5 read in full, and the ch. 2 passages on Enkidu and Eden (with ch. 1's opening); the rest of ch. 1–4 seen only in search snippets. Uncited outside ch. 5.",
+    }
+  hayes-rlst145-l5:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reused registry entry. Ch. 1–2 read in full; ch. 3–4 not read.",
+    }
+  coogan-brief-4e-summary-ch3:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756 (as confirmed for the ch. 5 and ch. 6 entries)",
+      note: "New entry; same textbook and edition as the other Coogan and Chapman summaries, chapter 3 (“Creations: Genesis 1–3”). Read in full. Reference (publisher summary, #86). Catalogue not re-checked this pass.",
+    }
+  coogan-brief-4e-summary-ch4:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756 (as confirmed for the ch. 5 and ch. 6 entries)",
+      note: "New entry, chapter 4 (“The Formation of the Pentateuch and the Primeval History”). Read in full. Same authors as ch. 3: counts once.",
+    }
+  klamm-2020-enuma-elish:
+    {
+      agent: flag,
+      owner: "",
+      edition: "Bible Odyssey article; page metadata datePublished 2020-12-14, dateModified 2024-01-16",
+      note: "New entry. Read in full; the search-result URL (passages/related-articles/enuma-elish-and-the-bible) redirects to the registry URL. Reference (SBL's Bible Odyssey, as kaltner-2017-egypt and yoo-2021-red-sea). Author byline: PhD student at Notre Dame; the year is from page metadata, not a visible date. Flag: does a doctoral student's Bible Odyssey article count as Reference in its own right? No short rests on Klamm alone, but she is one of the in-window authors for enuma, deep (related), nihilo and firmament.",
+    }
+  paul-ej-creation-cosmogony:
+    {
+      agent: flag,
+      owner: "",
+      edition: "Encyclopaedia Judaica entry on Encyclopedia.com; no edition or date on the page",
+      note: "New entry. Biblical section (signed [Shalom M. Paul]) read in full; the later rabbinic and philosophical sections are by others and uncited. Reference (signed entry in a reference encyclopedia). Year and edition left null: the page gives neither. Bibliography to 1968 for the Bible section suggests first-edition (1971) text, so treated as outside the 30-year window (header). Flag: confirm the window treatment and whether a year can be given (Encyclopedia.com's Judaica content is commonly the 2007 second edition, but the page doesn't say so).",
+    }
+  nabre-genesis-1-notes:
+    {
+      agent: pass,
+      owner: "",
+      edition: "NABRE, Old Testament revision 2011 (as recorded for the other NABRE entries)",
+      note: "New entry. Genesis 1 page on bible.usccb.org fetched by script 2026-11-24; notes on 1:1–2:3, 1:2 and 1:7 read in full. Reference (#86; notes by a scholarly association, CONTEXT.md). No author: counts as its own source. Genesis 2 notes and the Genesis introduction returned 403 to scripted requests; not read.",
+    }
+leads:
+  - "Nahum M. Sarna, Understanding Genesis (1966/1967), pp. 1–32: the source of much of Hayes l3 and listed in Paul's bibliography; not read."
+  - "U. Cassuto, A Commentary on the Book of Genesis, vol. 1 (1961), pp. 19–20: the opposing view on the temporal clause, as Paul points to it; not read."
+  - "NABRE notes on Genesis 2 (https://bible.usccb.org/bible/genesis/2) and the Genesis introduction (https://bible.usccb.org/bible/genesis/0): likely give the J/non-P attribution of 2:4b–25 and dating; returned 403 to scripted requests 2026-11-24; not read."
+  - "Gerhard May, Creatio ex nihilo (T&T Clark, 1994): the second-century origin of the doctrine, the creation-ex-nihilo candidate's subject; named in search results and by McClellan (Ep 70 00:27:20); not read."
+uncited:
+  - "Theodor H. Gaster, “Deep”, Encyclopaedia Judaica on Encyclopedia.com (https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/deep): “The ancient Hebrews believed that the earth lay across an all-encompassing ocean, which they called tehom.” Read in full 2026-11-24. Not cited: first-edition text (bibliography to 1969), and the firmament and deep statements already have in-window authors."
+  - "Paul, Encyclopaedia Judaica, opening paragraph: “creatio ex nihilo, a concept that first appears in ii Maccabees 7:28”. Paul's alone and outside the window; about the doctrine's history (creation-ex-nihilo candidate), so kept off this page."
+  - "Coogan and Chapman ch. 4 summary, “History of Scholarship”: “Jean Astruc … posited that the overall disparities between the creation narratives (including the different names of God in each) suggested that Moses was using two distinct sources when he wrote Genesis 1–3.” History of scholarship; not needed."
+  - "Coogan and Chapman ch. 4 summary, “Near Eastern Parallels”: “dating indicates that the Babylonian epics, including Atrahasis and the pertinent sections of Gilgamesh, were earlier and undoubtedly influenced the biblical writers.” About the Flood, not creation."
+  - "Hayes l4 ch. 2 [00:05:44]: the Enkidu parallels to the second creation story (“Enkidu like Adam is fashioned from clay.”). A possible later statement on Genesis 2's parallels; Coogan and Chapman ch. 3 (“possible parallels between the Eden account in Genesis and Gilgamesh”) would be its second author."
+  - "Hayes l3 ch. 2: the Egyptian god Ptah creating by will (“There's a very similar Egyptian creation story actually in which the god Ptah just wills ‘let this be.’”). Not on the page."

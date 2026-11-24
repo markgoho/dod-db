@@ -629,3 +629,115 @@ sperling-2005-god-hebrew-scriptures:
   url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/god-god-hebrew-scriptures"
   hostAuthored: false
   tradition: null
+
+hayes-rlst145-l2:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 2 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-2"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l3:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 3 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-3"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l4:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 4 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-4"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch3:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 3 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-3-summary"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch4:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 4 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-4-summary"
+  hostAuthored: false
+  tradition: null
+
+klamm-2020-enuma-elish:
+  author: "Kacie Klamm"
+  title: "The Enuma Elish and the Bible"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2020
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-enuma-elish-and-the-bible/"
+  hostAuthored: false
+  tradition: null
+
+paul-ej-creation-cosmogony:
+  author: "Shalom M. Paul"
+  title: "Creation and Cosmogony in the Bible"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/creation-and-cosmogony-bible"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-1-notes:
+  author: null
+  title: "Notes on Genesis 1"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/genesis/1"
+  hostAuthored: false
+  tradition: null

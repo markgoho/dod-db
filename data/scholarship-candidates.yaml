@@ -123,17 +123,18 @@ subjects:
     basis: "Inventory short-page tier: 4 Episodes, the same claim each time."
     notes: "One claim; three statements may be hard."
 
-  - slug: genesis-creation-accounts
-    subject: "The creation accounts in Genesis"
-    status: candidate
-    core: "The first three chapters of Genesis hold two different creation stories."
-    basis: "Inventory short-page tier: 2 Episodes on the core thesis (Ep 1, Ep 22); the cluster spans 8."
-
   - slug: creation-ex-nihilo
     subject: "Creation out of nothing"
     status: candidate
     core: "The doctrine of creation out of nothing appears only in the last decades of the second century CE."
     basis: "Inventory short-page tier: 2 Episodes, 5 claims; the most explicit wording in the corpus ('the academic consensus is')."
+    notes: "Tracked by #144. Its Genesis half (Genesis 1 does not describe creation out of nothing) is the nihilo statement on /scholarship/the-creation-stories-in-genesis/ (draft). The doctrine's second-century origin, this entry's core, was not sourced in the #144 first pass: no readable Scholarly or Reference passage found for it, and Paul's Encyclopaedia Judaica entry puts the concept's first appearance earlier, in 2 Maccabees 7:28. Not sourcing-tested."
+    found:
+      - "paul-ej-creation-cosmogony, opening section (https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/creation-and-cosmogony-bible): “creatio ex nihilo, a concept that first appears in ii Maccabees 7:28”. Read 2026-11-24 (#144); first-edition text, outside the 30-year window."
+    leads:
+      - "Gerhard May, Creatio ex nihilo: The Doctrine of 'Creation out of Nothing' in Early Christian Thought (T&T Clark, 1994): the second-century thesis; named by McClellan (Ep 70 00:27:20); not read."
+      - "Scottish Journal of Theology article “Creatio ex nihilo in Palestinian Judaism and Early Christianity” (Cambridge Core): a search summary says it describes a near-consensus that the doctrine originated in a second-century Christian reaction against Gnosticism, and disputes it; paywalled; not read."
+      - "Paul Copan, “Is Creatio Ex Nihilo a Post-Biblical Invention?”, Trinity Journal 17 (1996): open PDF at gospelstudies.org.uk; argues against May; class (Scholarly or Tradition) not yet judged; not read."
 
   - slug: daniel-date
     subject: "When Daniel was written"
