@@ -100,7 +100,9 @@
                 </svg>
                 <p class="univ-voices__who">
                   {{- with $side.ref }}
-                    <a href="{{ $bg }}{{ . | urlquery }}" rel="noopener"
+                    <a
+                      href="{{ printf "%s%s" $bg (urlquery .) | safeURL }}"
+                      rel="noopener"
                       >{{ replace $side.who " " "&nbsp;" | safeHTML }}</a
                     >
                   {{- else }}
