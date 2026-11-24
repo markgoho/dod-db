@@ -91,7 +91,7 @@ Graphics, inline SVG only, in the site's comic style:
 
 Poster: mark anything that only makes sense on the page (the section heading, "cited answers below" links) with `data-share-hide`. The masthead, credit and poster frame come from `single.html` and `scholarship.css`; the credit carries the "not the show's work" line, so the image keeps its provenance when it leaves the page.
 
-Card: mark everything except the lead relation with `data-card-hide`, so the card shows the one thing worth a glance. The link's own title and description sit beside it, so the card carries no title.
+Card: mark everything except the lead relation with `data-card-hide`, so the card shows the one thing worth a glance. The link's own title and description sit beside it, so the card carries no title. Link previews crop the image a little (Facebook trims the sides), so the card canvas keeps a safe margin (set in `scholarship.css`); the block fits inside it and nothing sits at the edge.
 
 Both are fixed canvases, so the block needs its own overrides for each, scoped as the Pauline stylesheet scopes them (`.scholarship-share:target` for the poster, `.scholarship-share:has(#share-card:target)` for the card): a smaller unit, tighter gaps, and for the card usually a different arrangement (wider, shorter) of the same parts.
 

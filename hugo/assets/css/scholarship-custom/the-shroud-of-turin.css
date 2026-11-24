@@ -504,9 +504,9 @@
 
 /* The card is seen small: the picture fills it, each document cut to a line. */
 .scholarship-share:has(#share-card:target) .shroud-dates__panel {
-  --shroud-unit: var(--space-l);
+  --shroud-unit: calc(var(--space-l) * 0.9);
 
-  gap: var(--space-xs);
+  gap: var(--space-2xs);
 }
 
 .scholarship-share:has(#share-card:target) .shroud-dates__claim {

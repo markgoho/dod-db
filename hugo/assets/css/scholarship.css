@@ -198,10 +198,15 @@
   z-index: calc(var(--z-index-sticky) + 1);
 }
 
+/*
+  Link previews crop: some show the card a little narrower than 1200 by 630,
+  so everything stays inside a safe area well clear of the edges.
+*/
 .scholarship-share:has(#share-card:target) {
   align-content: center;
   block-size: 630px;
   inline-size: 1200px;
+  padding: 40px 90px;
 }
 
 /* The card has no room for a frame: the block runs to the image's own edge. */
