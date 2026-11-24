@@ -3,567 +3,700 @@
 # owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
 # Sourcing test (#156, 2026-11-24): the candidate core ("univocality is imposed on the collection by its readers, not asserted by the texts") did not source as worded. The half "the texts do not speak with one voice" is backed by 5+ distinct Reference authors (Hayes, Coogan/Chapman, Martin, Ehrman, Meyers, Breed). No read source says the texts do or do not claim unity (gap), and none supports "only possible once the Bible comes together". The core was narrowed to one-voice; reader-imposed unity is carried as attributed statements (canon, harmonizing).
 # First pass: three research agents fetched every source on 2026-11-24 and copied quotes from the fetched page text; every page quote was then script-matched (whitespace only) against those saved texts: 0 misses. The second pass must re-fetch.
-review: null
+# Second agent pass 2026-11-24 (#93 delegation, independent): all 39 cited pages (7 Hayes and 6 Martin lectures on oyc.yale.edu, 4 Coogan and 8 Ehrman OUP summaries, 8 Bible Odyssey articles, 2 HarperCollins entries on Bible Odyssey, e-GEDSH, Encyclopedia.com, vatican.va, gotquestions.org) re-fetched by curl into the second pass's own scratch folder, not the first pass's files, plus the 8 Bible Odyssey author bios. Every quote script-matched against the fetched text (whitespace only): 66/66 after the changes below (65 first-pass cites, three of them extended, plus new one-voice/7), two (paul-and-james/5, the-end/5) only after inline <bblcit> tags were stripped without inserting spaces. Every lecture locator checked by script against the transcript's chapter headings; every summary section heading checked against the page's underlined headings; Bible Odyssey paragraphs counted from the HTML. Every Trigger Claim re-matched by script at timestamp and speaker (full turn) and re-read about two minutes either side.
+# Second pass changes: shorts reworded for #133 or scope: anthology (“over many centuries”), hebrew-bible (drops “law codes that disagree”), gospels (Matthew and Luke’s birth stories only; drops “the day he died”), paul-and-james (debate is whether James targets Paul or a distortion of him), the-end (drops “signs that must come first”), canon (what Ehrman, Martin and Hayes share), harmonizing (the harmony’s function, not Breed’s motive). Text: one-voice scopes Hayes l10 to the legal materials and adds Hayes l19’s points-of-agreement counterweight (new cite one-voice/7); gospels “Synoptic Gospels”, “Luke’s account”; paul-and-james Martin’s “may think he’s disagreeing with Paul even” and Painter’s “historical James and Paul”; canon Martin “and the New Testament itself”, “later Jewish communities”; harmonizing Hayes’s “modern notion” tied to authority from consistency, “did not rest”. Quotes extended: canon/2, paul-and-james/2, tradition/1. Locators: hebrew-bible/8 section “David”; tradition/3–4 named paragraphs. Per-citation urls added for the two HarperCollins entries. Registry: petersen-gedsh edition drops unverified “2018”; jacobs-derovan edition “2nd ed. (entry credit line)”. Flag: Ainslie (ainslie-lam-2021-manasseh) is an undergraduate; counted through co-author Lam only. Ids unchanged; draft kept.
+review: 2026-11-24
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-24
 citations:
   one-voice/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; scope narrowed. In l10 the sentence closes the lecture on the legal corpora (Greenberg discussion) and is followed by “it is still fair to say that they sound certain common themes”, so the text now says the legal materials do not speak with one voice; the anthology/monolith claim stays on l1.",
     }
   one-voice/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   one-voice/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   one-voice/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   one-voice/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   one-voice/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+    }
+  one-voice/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Second pass 2026-11-24: new cite added by the second pass (not seen by any other pass). Hayes l19, ch. 3 [00:17:54], script-matched. Carries the counterweight the l10 quote dropped (common themes / basic points of agreement); text worded to Hayes's “even some of the most basic”.",
     }
   anthology/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   anthology/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   anthology/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   anthology/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   anthology/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   anthology/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   anthology/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   hebrew-bible/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   hebrew-bible/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   hebrew-bible/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   hebrew-bible/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   hebrew-bible/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   hebrew-bible/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   hebrew-bible/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   hebrew-bible/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; locator corrected from section “Chronicles” to section “David” (all headings on the page are sibling underlined paragraphs; the quote sits under “David”).",
     }
   hebrew-bible/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   gospels/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; in context “The Gospels” are the Synoptics, so text now says “the Synoptic Gospels”.",
     }
   gospels/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   gospels/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   gospels/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   gospels/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; text changed “Luke’s census” to “Luke’s account” (Bond’s wording).",
     }
   gospels/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   gospels/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; per-citation url added (https://www.bibleodyssey.org/dictionary/john-the-gospel-according-to/), as moses-and-the-exodus does for this dictionary.",
     }
   paul-and-james/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   paul-and-james/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; quote extended with “James may think he’s disagreeing with Paul even, it’s hard to say, he doesn’t ever mention him by name.” to carry the new short’s “whether it targets Paul himself”.",
     }
   paul-and-james/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   paul-and-james/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   paul-and-james/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified (matched once inline <bblcit> tags were stripped without inserting spaces; the tag-to-space text conversion had split “(Jas”). Paragraph 4 counting the intro paragraph as 1.",
     }
   paul-and-james/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Painter dates the letter after James’s death, so “not enemies” is about the historical James and Paul; text now says so instead of “the two men”.",
     }
   the-end/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   the-end/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   the-end/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   the-end/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   the-end/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified (matched once inline <bblcit> tags were stripped without spaces); per-citation url added (https://www.bibleodyssey.org/dictionary/parousia/). Dictionary says signs “may indicate” imminence, so “signs that must come first” was dropped from the short.",
     }
   canon/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   canon/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; quote extended back to “In fact, a good bit of the history of early Christianity, and the New Testament itself, …” so Martin’s unifying project explicitly includes the New Testament (first pass flagged it as about early Christianity only). Text follows.",
     }
   canon/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   canon/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   canon/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   canon/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; text now says “later Jewish communities” (Hayes’s words).",
     }
   canon/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   harmonizing/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   harmonizing/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   harmonizing/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   harmonizing/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Breed alone gives the motive (“so that they would not conflict”); Petersen says no single motive convinces, so the short now gives the harmony’s function (“resolving their conflicts”, Petersen harmonizing/1) not a motive.",
     }
   harmonizing/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   harmonizing/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   harmonizing/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   harmonizing/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; “That’s a modern notion” refers to authority arising from consistency or univocality, so text now says “grounding authority in consistency or univocality … is a modern notion”, and “never rested” became “did not rest”.",
     }
   methods/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   methods/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   methods/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   methods/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   methods/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   methods/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: 'First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; quote extended to include “Be especially attentive "to the content and unity of the whole Scripture".”, which the text paraphrases.',
     }
   tradition/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
     }
   tradition/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; locator “same paragraph” spelled out as paragraph beginning “If we read the Bible at face value”.",
     }
   tradition/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: matched against fetched text.",
+      note: "First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified; locator corrected from “closing section” to paragraph beginning “We often receive questions” (second of three answer paragraphs).",
     }
 triggers:
   6@00:02:54:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept. Second pass 2026-11-24: verified. Re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
     }
   6@00:04:54:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept. Second pass 2026-11-24: verified. Re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
     }
   6@00:06:01:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept. Second pass 2026-11-24: verified. Re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
     }
   15@00:30:52:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept. Second pass 2026-11-24: verified. Re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
     }
   31@00:21:55:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept. Second pass 2026-11-24: verified. Re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
     }
   44@00:25:52:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept.",
+      note: "First pass 2026-11-24: re-matched at timestamp and speaker; read with the turns either side; hedges kept. Second pass 2026-11-24: verified. Re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; no hedge dropped.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified. Ten statements; core one-voice cites Hayes (l1, l10, and now l19), Coogan/Chapman, Martin and Ehrman: four independent Reference authors, none Host-authored. Draft kept; the lead publishes.",
       note: "First pass 2026-11-24: 10 statements. Core one-voice cites Hayes l1 and l10 (Reference, one author), Coogan/Chapman ch. 24 summary (Reference), Martin l1 (Reference) and Ehrman ch. 1 summary (Reference): 4 independent authors, none Host-authored. Short says “Scholars describe”, not “most” or “consensus”.",
     }
   consensus-wording:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: #133 re-audited per short against the re-fetched text. Changed: anthology (“over about a thousand years” rested on Breed alone for the whole Bible; Coogan's thousand years is the Hebrew Bible only, so its scope was widened) now “over many centuries” (Hayes, Coogan, Breed, Neufeld); hebrew-bible dropped “law codes that disagree” (Hayes l10 alone) and keeps repeated stories (Meyers, Hayes l4, Coogan ch. 4) and retellings (Coogan ch. 23, Ainslie/Lam via Lam, Hayes l22); gospels dropped “on the day he died” (Ehrman ch. 4 alone, and its word is “timing”, not day), now Matthew and Luke’s birth stories (Ehrman, Bond, Martin; Bond: only those two Gospels have one); paul-and-james no longer rests its second clause on Martin's report alone: the split is now whether James targets Paul or a distortion of him, held three ways (Ehrman: distortion; Painter: Paul's challenge; Martin: hard to say); the-end dropped “signs that must come first” (dictionary says “may indicate”), now soon vs delay (Ehrman ch. 7/16/19, Martin l24); canon (the flag above) reworded from Ehrman's own sentence to what Ehrman, Martin (l1, quote extended to “and the New Testament itself”) and Hayes l2 (“Don't homogenize it all”) share: a unified reading can smooth over differences seen when each book is read alone; Hayes l1's collectors-kept-dissonance stays in the text as the counterweight; harmonizing short gives the harmony's function (Petersen, Breed, Martin), not Breed's motive. Kept: one-voice; methods (historical-critical clause Martin and Ehrman; canonical-criticism clause is a definition of a method, Shectman, treated as an exempt uncontested fact, with Hayes l5's synthetic reading beside it); tradition (Tradition attribution, exempt).",
       note: "First pass 2026-11-24: No statement says “consensus”. “almost all biblical scholars” (hebrew-bible text) is Coogan/Chapman ch. 4's own wording, attributed, scope the Pentateuch's sources only. “most scholars use a combination” (methods text) is Shectman's, attributed. #133 per short: one-voice (Hayes, Coogan, Martin, Ehrman); anthology (Hayes, Coogan, Breed, Neufeld); hebrew-bible (Meyers, Hayes, Coogan, Ainslie/Lam); gospels (Ehrman, Bond, Martin, HarperCollins); paul-and-james “Scholars differ” (Martin reports the debate; Ehrman and Painter frame it differently); the-end (Ehrman, Martin, HarperCollins); canon “Scholars say” (Ehrman, Martin; Hayes supporting); harmonizing (Tatian fact: Petersen, Breed, Martin); methods (descriptive: Martin, Ehrman; Shectman, Hayes); tradition (Tradition, exempt). Second pass: judge canon's “minimized when they are read as one collection” against Martin, whose quotes are about early Christianity's unifying project rather than the canon.",
     }
   dissent-attributed:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified. Also attributed in text: Martin's definitions-of-faith-and-works answer (paul-and-james), Breed's motive for Tatian, Ehrman's canonization-homogenizes sentence, Hayes's common-themes counterweight (one-voice/7).",
       note: "First pass 2026-11-24: Positions held by one cited author are named in the text: Hayes's “modern notion” (harmonizing), Martin's “Maybe yes, maybe no” and Painter's “not enemies” (paul-and-james), Hayes's redactors-intended-unity counterweight (canon), Petersen's “none, on its own, is convincing” (harmonizing).",
     }
   tradition-named:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified. CCC §112 read on vatican.va; GotQuestions page (last updated January 21, 2026) re-read; Tradition per #86; names follow the registry convention.",
       note: "First pass 2026-11-24: ccc-112 named as the Catholic Church (the Catechism's own title); gotquestions-bible-errors named as Got Questions Ministries, an evangelical ministry (registry convention from gotquestions-book-of-daniel; site: “Christian, evangelical, theologically conservative, and nondenominational”). Neither supports what scholars think.",
     }
 sources:
   hayes-rlst145-l10:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2006.",
+    }
   hayes-rlst145-l1:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2006.",
+    }
   coogan-brief-4e-summary-ch24:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2019." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2019.",
+    }
   martin-rlst152-l1:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2009.",
+    }
   ehrman-brief-5e-ch1-summary:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2020.",
+    }
   coogan-brief-4e-summary-ch1:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2019." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2019.",
+    }
   breed-bo-written-transmitted:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified. Byline Brennan Breed (BO bio: assistant professor of Old Testament, Columbia Theological Seminary). Page shows December 14, 2022, the same date as the Neufeld, Meyers, Shectman and Breed earliest-versions pages; Neufeld died in 2015, so it is a site date, not publication: year kept null. Publication year not shown; the window is met on the page’s own evidence (a 2022 site date; Bible Odyssey articles carry dates back to 2014, e.g. painter-2014-james-and-paul), all after 1996.",
       note: "First pass 2026-11-24: Reference; year not on page.",
     }
   neufeld-bo-nt-religious-text:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified. BO bio: Dietmar Neufeld (1949–2015), associate professor at UBC. Page date December 14, 2022 postdates his death, so it is a site date; year null kept. Article bibliography runs to 2011: inside the window.",
       note: "First pass 2026-11-24: Reference; year not on page.",
     }
   meyers-bo-hebrew-bible-history:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified. BO bio: Mary Grace Wilson Emerita Professor of Religion, Duke. Site date December 14, 2022; bibliography runs to 2007; year null kept.",
       note: "First pass 2026-11-24: Reference; year not on page.",
     }
   hayes-rlst145-l4:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2006.",
+    }
   coogan-brief-4e-summary-ch4:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2019." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2019.",
+    }
   hayes-rlst145-l22:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2006.",
+    }
   coogan-brief-4e-summary-ch23:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2019." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2019.",
+    }
   ainslie-lam-2021-manasseh:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2021." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page dated May 27, 2021. Flag: BO bios say Jesse Ainslie is an undergraduate student (UNC) and Joseph Lam is Associate Professor of Religious Studies (UNC). Following the student-author precedent (Klamm, Davidson), the citation counts toward the hebrew-bible short through Lam only; that clause also stands on Coogan ch. 23 and Hayes l22 without it. Attributed by both names in the text.",
+      note: "First pass 2026-11-24: Reference; 2021.",
+    }
   ehrman-brief-5e-ch5-summary:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2020.",
+    }
   ehrman-brief-5e-ch4-summary:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2020.",
+    }
   ehrman-brief-5e-ch7-summary:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2020.",
+    }
   bond-2018-nativity:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2018." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page dated May 8, 2018. BO bio: Professor of Christian Origins, Edinburgh.",
+      note: "First pass 2026-11-24: Reference; 2018.",
+    }
   martin-rlst152-l13:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2009.",
+    }
   harpercollins-2009-dictionary:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified. Entries “John, The Gospel According to” (BO date October 31, 2022) and “Parousia” (October 26, 2022), each credit line: Powell, ed., HarperCollins Bible Dictionary, Abridged Edition, HarperOne, 2009. Per-citation urls added (gospels/7, the-end/5), as moses-and-the-exodus does.",
+      note: "First pass 2026-11-24: Reference; 2009.",
+    }
   martin-rlst152-l18:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2009.",
+    }
   ehrman-brief-5e-ch18-summary:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2020.",
+    }
   painter-2014-james-and-paul:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2014." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page dated September 25, 2014. BO bio: Foundation Professor of Theology, Charles Sturt University.",
+      note: "First pass 2026-11-24: Reference; 2014.",
+    }
   ehrman-brief-5e-ch19-summary:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2020.",
+    }
   ehrman-brief-5e-ch16-summary:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2020.",
+    }
   martin-rlst152-l24:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2009.",
+    }
   ehrman-brief-5e-ch9-summary:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2020." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; page re-fetched, title reads the student-resources summary for this edition (Reference, #86; edition per the OUP catalogue check recorded for this textbook).",
+      note: "First pass 2026-11-24: Reference; 2020.",
+    }
   hayes-rlst145-l2:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2006.",
+    }
   hayes-rlst145-l5:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2006.",
+    }
   petersen-gedsh-diatessaron:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2011." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; byline William L. Petersen. Registry edition corrected: “2018” for the electronic edition is not on the entry or the Making of e-GEDSH page, which describes the e-edition as a digital representation of the 2011 print edition; edition now “Print ed. 2011; electronic ed., Beth Mardutho”.",
+      note: "First pass 2026-11-24: Reference; 2011.",
+    }
   breed-bo-earliest-versions:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified; same author and same December 14, 2022 site date as breed-bo-written-transmitted; year kept null.",
       note: "First pass 2026-11-24: Reference; year not on page.",
     }
   martin-rlst152-l2:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2009.",
+    }
   jacobs-derovan-ej-hermeneutics:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified; entry credit line “[Louis Jacobs / David Derovan (2nd ed.)]”. Registry edition “2nd ed. (2007)” changed to “2nd ed. (entry credit line)” (the year is not on the page; registry convention for EJ entries). Used for what the rabbis held and a hermeneutical rule, not a state-of-the-field claim.",
       note: "First pass 2026-11-24: Reference; year not on page.",
     }
   hayes-rlst145-l19:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2006." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2006.",
+    }
   martin-rlst152-l6:
-    { agent: pass, owner: "", note: "First pass 2026-11-24: Reference; 2009." }
+    {
+      agent: pass,
+      owner: " Second pass 2026-11-24: verified; lecture page and title re-fetched from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-24: Reference; 2009.",
+    }
   shectman-bo-how-scholars-read:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified. BO bio: PhD Brandeis (Near Eastern and Judaic Studies), author and editor of academic volumes; a professional scholar, not a student. Site date December 14, 2022; bibliography runs to 2007; year null kept.",
       note: "First pass 2026-11-24: Reference; year not on page.",
     }
   ccc-112:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified on vatican.va (__PQ.HTM, §112).",
       note: "First pass 2026-11-24: Tradition; year not on page.",
     }
   gotquestions-bible-errors:
     {
       agent: pass,
-      owner: "",
+      owner: " Second pass 2026-11-24: verified; Tradition (#86). Page “last updated January 21, 2026”; year kept null (an update stamp, not authorship).",
       note: "First pass 2026-11-24: Tradition; year not on page.",
     }
 leads:

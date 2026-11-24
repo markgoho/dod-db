@@ -25,7 +25,7 @@ statements:
     group: "One voice?"
     question: "Does the Bible speak with one voice?"
     short: "No. Scholars describe its books as many voices, whose views differ and at times conflict."
-    text: "Christine Hayes's Yale lectures on the Hebrew Bible say its materials do not speak with one voice: it is an anthology of diverse works, not an ideological monolith, and its legal materials contain provisions that contradict one another. The chapter summary for Coogan and Chapman's introductory textbook says Job and Ecclesiastes show the range of voices in the Bible, disagreeing with a theme found in the Deuteronomistic Historians and the prophets: that Israel's fate was based on divine judgment. For the New Testament, Dale Martin's Yale lectures describe 27 books with different points of view and different theologies, and the chapter summary for Ehrman's introductory textbook says its books embody different points of view."
+    text: "Christine Hayes's Yale lectures on the Hebrew Bible call it an anthology of diverse works, not an ideological monolith, and say that its legal materials do not speak with one voice: they contain provisions that contradict one another. The chapter summary for Coogan and Chapman's introductory textbook says Job and Ecclesiastes show the range of voices in the Bible, disagreeing with a theme found in the Deuteronomistic Historians and the prophets: that Israel's fate was based on divine judgment. For the New Testament, Dale Martin's Yale lectures describe 27 books with different points of view and different theologies, and the chapter summary for Ehrman's introductory textbook says its books embody different points of view. Hayes adds that the Hebrew Bible's books share some basic points of agreement, though even some of the most basic do not go uncontested."
     cites:
       - source: hayes-rlst145-l10
         locator: "ch. 5 [00:40:17]"
@@ -51,10 +51,14 @@ statements:
         locator: "section “Implications for Our Study”"
         quote: "Not originally composed as part of a collection, the books of the New Testament embody different points of view."
         read: 2026-11-24
+      - source: hayes-rlst145-l19
+        locator: "ch. 3 [00:17:54]"
+        quote: "And certainly there are some basic points of agreement, but even some of the most basic points of agreement do not pass without some contestation."
+        read: 2026-11-24
   - id: anthology
     group: "One voice?"
     question: "Is the Bible a single book?"
-    short: "Not in origin. It is a collection of books by many authors, written and edited over about a thousand years."
+    short: "Not in origin. It is a collection of books by many authors, written and edited over many centuries."
     text: "Hayes's first lecture says the Bible is not a book but a library: an anthology of writings written and edited over an extensive period of time by people in very different situations. The chapter summary for Coogan and Chapman's textbook says the books of the Hebrew Bible are an anthology written and collected over a thousand years. Brennan Breed's Bible Odyssey article notes that the word Bible comes from the Greek biblia, “books”, and says many authors in very different places and times wrote and edited the books of the Hebrew Bible and the New Testament over a thousand-year period. Dietmar Neufeld's Bible Odyssey article says the New Testament did not begin as a unified collection: its 27 books were written by different authors between about 50 and 120 C.E. and circulated independently."
     cites:
       - source: hayes-rlst145-l1
@@ -88,7 +92,7 @@ statements:
   - id: hebrew-bible
     group: "Where the texts differ"
     question: "Where do the books of the Hebrew Bible differ?"
-    short: "In many places: repeated stories that contradict each other, law codes that disagree, and later books that retell earlier ones differently."
+    short: "In many places: repeated stories that contradict each other, and later books that retell earlier ones differently."
     text: "Carol Meyers's Bible Odyssey article says close study revealed biblical narratives to be replete with inconsistencies and even outright contradictions: in 1 Samuel 17:50 David kills Goliath, but in 2 Samuel 21:19 Elhanan does, and Joshua says the Israelites conquered the whole land while Judges describes the survival of many Canaanites. Hayes's lectures say the Bible contains a lot of repetition and contradiction, and that its legal materials contradict one another. The chapter summary for Coogan and Chapman's textbook says almost all biblical scholars explain the Pentateuch's repetitions, inconsistencies and contradictions by distinct sources from different historical periods. Chronicles retells Samuel and Kings: Hayes calls it the Bible interpreting itself, the textbook summary says its David has several substantive differences from the earlier account, and Jesse Ainslie and Joseph Lam's Bible Odyssey article says Kings and Chronicles tell two very different stories about King Manasseh."
     cites:
       - source: meyers-bo-hebrew-bible-history
@@ -120,7 +124,7 @@ statements:
         quote: "So Chronicles is already an interpretation. It's an inner-biblical interpretation. It is the Bible interpreting itself."
         read: 2026-11-24
       - source: coogan-brief-4e-summary-ch23
-        locator: "section “Chronicles”"
+        locator: "section “David”"
         quote: "Moreover, the Chronicler’s depiction of David has several substantive differences from the Deuteronomistic Historians’ account of his life."
         read: 2026-11-24
       - source: ainslie-lam-2021-manasseh
@@ -130,8 +134,8 @@ statements:
   - id: gospels
     group: "Where the texts differ"
     question: "Do the four Gospels tell the same story?"
-    short: "Not in every detail. They differ, for example, on Jesus' birth and on the day he died."
-    text: "The chapter summaries for Ehrman's textbook say the Gospels also disagree, as in the different timing of Jesus' death in Mark and John, and that although Matthew and Luke share the basic narrative of Jesus' birth, none of their specific stories are the same. Helen Bond's Bible Odyssey article calls the two birth stories quite different: if historical, Luke's census would contradict Matthew's indication that Jesus was born shortly before Herod I died, and attempts to read Luke's census as an earlier one have not been successful. Dale Martin's Yale lectures list the Matthew and Luke birth narratives among accounts that are very difficult to harmonize. The HarperCollins Bible Dictionary says John presents a rather different picture of Jesus' life and ministry than the other three Gospels."
+    short: "Not in every detail. Matthew and Luke, for example, tell different stories of Jesus' birth."
+    text: "The chapter summaries for Ehrman's textbook say the Synoptic Gospels also disagree, as in the different timing of Jesus' death in Mark and John, and that although Matthew and Luke share the basic narrative of Jesus' birth, none of their specific stories are the same. Helen Bond's Bible Odyssey article calls the two birth stories quite different: if historical, Luke's account would contradict Matthew's indication that Jesus was born shortly before Herod I died, and attempts to read Luke's census as an earlier one have not been successful. Dale Martin's Yale lectures list the Matthew and Luke birth narratives among accounts that are very difficult to harmonize. The HarperCollins Bible Dictionary says John presents a rather different picture of Jesus' life and ministry than the other three Gospels."
     cites:
       - source: ehrman-brief-5e-ch5-summary
         locator: "section “The Synoptic Problem”"
@@ -160,12 +164,13 @@ statements:
       - source: harpercollins-2009-dictionary
         locator: "entry “John, the Gospel According to”, paragraph 1"
         quote: "The Gospel of John presents a rather different picture of Jesus’s life and ministry than do the other three Gospels."
+        url: "https://www.bibleodyssey.org/dictionary/john-the-gospel-according-to/"
         read: 2026-11-24
   - id: paul-and-james
     group: "Where the texts differ"
     question: "Do James and Paul disagree about faith and works?"
-    short: "Scholars differ. James pushes back against a teaching like Paul's, but some argue the two mean different things by faith and works."
-    text: "Dale Martin's Yale lectures describe a debate among scholars. James seems to be disagreeing with a version of Christianity that looks a lot like Paul's letters, but some scholars answer that the two do not really disagree, because they work with different definitions of faith and of works. Martin leaves it open: “Maybe yes, maybe no, maybe it's a little bit of both.” The chapter summary for Ehrman's textbook says James argued against Christians who had distorted Paul's message of justification by faith. John Painter's Bible Odyssey article says the letter confronts the challenge Paul presents without naming him, and that the evidence suggests the two men's relationship involved tensions but that they were not enemies."
+    short: "Scholars differ. James argues against a teaching like Paul's, but whether it targets Paul himself or a distortion of his message is debated."
+    text: "Dale Martin's Yale lectures describe a debate among scholars. In his reading, James clearly thinks he is disagreeing with a version of Christianity that looks a lot like Paul's letters, and may even think he is disagreeing with Paul, though it is hard to say; but some scholars answer that the two do not really disagree, because they work with different definitions of faith and of works. Martin leaves it open: “Maybe yes, maybe no, maybe it's a little bit of both.” The chapter summary for Ehrman's textbook says James argued against Christians who had distorted Paul's message of justification by faith. John Painter's Bible Odyssey article says the letter, which does not name Paul, confronts the challenge he presents, and that the evidence suggests the historical James and Paul were not enemies, though their relationship involved tensions."
     cites:
       - source: martin-rlst152-l18
         locator: "ch. 4 [00:27:47]"
@@ -173,7 +178,7 @@ statements:
         read: 2026-11-24
       - source: martin-rlst152-l18
         locator: "ch. 4 [00:27:47]"
-        quote: "Clearly, James thinks he's disagreeing with some kind of version of Christianity that looks an awful lot like Paul's letters."
+        quote: "Clearly, James thinks he's disagreeing with some kind of version of Christianity that looks an awful lot like Paul's letters. James may think he's disagreeing with Paul even, it's hard to say, he doesn't ever mention him by name."
         read: 2026-11-24
       - source: martin-rlst152-l18
         locator: "ch. 4 [00:27:47]"
@@ -194,7 +199,7 @@ statements:
   - id: the-end
     group: "Where the texts differ"
     question: "Do the New Testament writers agree on when the end will come?"
-    short: "No. Some expect it soon; others allow for a delay, or for signs that must come first."
+    short: "No. Some expect it soon; others allow for a delay before it comes."
     text: "The chapter summary on Revelation for Ehrman's textbook says Jesus and the earliest Christians, including Paul, claimed that the end of the world was near. The summary on Luke says Luke's Jesus does not preach the imminent end, which will come after the mission to the gentiles, and the summary on the Deutero-Pauline letters notes that the interim period with an antichrist in 2 Thessalonians appears nowhere else in Paul. Dale Martin's Yale lectures say 2 Peter has no franticness: it says the end could happen in a thousand years. The HarperCollins Bible Dictionary notes that some passages point to signs that the end is near, while others say it will come without warning."
     cites:
       - source: ehrman-brief-5e-ch19-summary
@@ -216,12 +221,13 @@ statements:
       - source: harpercollins-2009-dictionary
         locator: "entry “Parousia”, paragraph 1"
         quote: "A number of passages suggest that certain “signs” or preliminary phenomena may indicate that Jesus’s parousia or other parousia events are imminent (Matt 24:4-34; Mark 13:5-20; Luke 21:8-28; 2Thess 2:1-12; 1John 2:18). Other texts call on readers to be ready because such events will take place without warning (see, e.g., Matt 24:43-44)."
+        url: "https://www.bibleodyssey.org/dictionary/parousia/"
         read: 2026-11-24
   - id: canon
     group: "Reading them as one"
     question: "Does reading the books as one Bible hide their differences?"
-    short: "It can. Scholars say the books' differences stand out when they are read separately and are minimized when they are read as one collection."
-    text: "The chapter summary for Ehrman's textbook says that when the New Testament books are read separately their differences stand out, but that canonization homogenizes them: placed in one book, their distinctive emphases are minimized. Dale Martin's Yale lectures describe early Christianity as an attempt to pull diverse groups into one unified movement, and set his course against that historical tendency to make unity out of diversity. Hayes urges readers not to force the Hebrew Bible into one model: “Don't homogenize it all.” She also says the later communities that gathered these books chose to include dissonant voices together and did not strive to reconcile the conflicts, and that the final redactors wanted their woven sources read as a unity, so that the Bible can be read both analytically and synthetically."
+    short: "It can. Scholars warn that a unified reading can smooth over differences that stand out when each book is read on its own."
+    text: "The chapter summary for Ehrman's textbook says that when the New Testament books are read separately their differences stand out, but that canonization homogenizes them: placed in one book, their distinctive emphases are minimized. Dale Martin's Yale lectures say that much of the history of early Christianity, and the New Testament itself, was an attempt to pull diverse groups into one unified movement, and set his course against that historical tendency to make unity out of diversity. Hayes urges readers not to force the Hebrew Bible into one model: “Don't homogenize it all.” She also says the later Jewish communities that gathered these books chose to include dissonant voices together and did not strive to reconcile the conflicts, and that the final redactors wanted their woven sources read as a unity, so that the Bible can be read both analytically and synthetically."
     cites:
       - source: ehrman-brief-5e-ch9-summary
         locator: "section “The Emergence of Different Understandings of Jesus”, final paragraph"
@@ -229,7 +235,7 @@ statements:
         read: 2026-11-24
       - source: martin-rlst152-l1
         locator: "ch. 3 [00:24:17]"
-        quote: "And early Christianity was an attempt to pull all these things into one unified movement, in some way, to get some kind of uniformity of belief and practice."
+        quote: "In fact, a good bit of the history of early Christianity, and the New Testament itself, was to take what was a diverse group of different people, all somehow being loyal to this guy they called Jesus. But they weren't all the same, and they were in different geographical situations, they had different beliefs. And early Christianity was an attempt to pull all these things into one unified movement, in some way, to get some kind of uniformity of belief and practice."
         read: 2026-11-24
       - source: martin-rlst152-l1
         locator: "ch. 3 [00:24:17]"
@@ -254,8 +260,8 @@ statements:
   - id: harmonizing
     group: "Reading them as one"
     question: "How did early readers handle the differences?"
-    short: "Some reconciled them. In the second century Tatian wove the four Gospels into a single account so that they would not conflict."
-    text: "William Petersen's entry in the Gorgias Encyclopedic Dictionary of the Syriac Heritage says a Gospel harmony conflates parallel accounts so that conflicts are resolved. It suggests that the Gospels did not present the unity that was, for Tatian, the hallmark of truth, and that critics such as Celsus had ridiculed Christianity over their contradictions; it adds that none of the suggested motives is convincing on its own. Brennan Breed's Bible Odyssey article says Tatian rewrote the Gospels so that they would not conflict, and Dale Martin's Yale lectures describe his Diatessaron as one gospel made out of four. Rabbinic interpretation reconciled verses too: the Encyclopaedia Judaica entry on hermeneutics says the rabbis saw the Pentateuch as unified and consistent in all its parts, and gives a rule for two verses that contradict one another until a third reconciles them. Hayes argues that the Hebrew Bible's authority for Israel never rested on its consistency: univocality, she says, is a modern notion based on Hellenistic ideals of truth as singular."
+    short: "Some reconciled them. In the second century Tatian wove the four Gospels into a single account, resolving their conflicts."
+    text: "William Petersen's entry in the Gorgias Encyclopedic Dictionary of the Syriac Heritage says a Gospel harmony conflates parallel accounts so that conflicts are resolved. It suggests that the Gospels did not present the unity that was, for Tatian, the hallmark of truth, and that critics such as Celsus had ridiculed Christianity over their contradictions; it adds that none of the suggested motives is convincing on its own. Brennan Breed's Bible Odyssey article says Tatian rewrote the Gospels so that they would not conflict, and Dale Martin's Yale lectures describe his Diatessaron as one gospel made out of four. Rabbinic interpretation reconciled verses too: the Encyclopaedia Judaica entry on hermeneutics says the rabbis saw the Pentateuch as unified and consistent in all its parts, and gives a rule for two verses that contradict one another until a third reconciles them. Hayes argues that the Hebrew Bible's authority for Israel did not rest on its consistency: grounding authority in consistency or univocality, she says, is a modern notion based on Hellenistic ideals of truth as singular."
     cites:
       - source: petersen-gedsh-diatessaron
         locator: "paragraph 3"
@@ -327,18 +333,18 @@ statements:
     cites:
       - source: ccc-112
         locator: "§112"
-        quote: "Different as the books which compose it may be, Scripture is a unity by reason of the unity of God's plan, of which Christ Jesus is the center and heart, open since his Passover."
+        quote: 'Be especially attentive "to the content and unity of the whole Scripture". Different as the books which compose it may be, Scripture is a unity by reason of the unity of God''s plan, of which Christ Jesus is the center and heart, open since his Passover.'
         read: 2026-11-24
       - source: gotquestions-bible-errors
         locator: "paragraph beginning “If we read the Bible at face value”"
         quote: "Yes, there are difficult passages. Yes, there are verses that appear to contradict each other."
         read: 2026-11-24
       - source: gotquestions-bible-errors
-        locator: "same paragraph"
+        locator: "paragraph beginning “If we read the Bible at face value”"
         quote: "However, a difference is not a contradiction."
         read: 2026-11-24
       - source: gotquestions-bible-errors
-        locator: "closing section"
+        locator: "paragraph beginning “We often receive questions”"
         quote: "However, it is our contention that there are viable and intellectually plausible answers to every supposed Bible contradiction and error."
         read: 2026-11-24
 ---
