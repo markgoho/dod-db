@@ -1,10 +1,16 @@
 /* Floating passage window (prototype). Docked to the right on wide screens so
-   the page stays readable beside it; a bottom sheet on narrow ones. */
+   the page stays readable beside it; a bottom sheet on narrow ones. A dark
+   title bar and an accent shadow set it apart from the page's own panels. */
 .scripture-reader {
-  color: var(--color-text-main);
-  inset: auto var(--space-s) var(--space-s) auto;
   block-size: min(36rem, calc(100dvh - var(--space-l)));
+  border-color: var(--tan-900);
+  box-shadow:
+    var(--panel-shadow-offset) var(--panel-shadow-offset) 0 var(--tan-900),
+    calc(var(--panel-shadow-offset) * 2) calc(var(--panel-shadow-offset) * 2) 0
+      var(--color-accent);
+  color: var(--color-text-main);
   inline-size: min(26rem, calc(100vw - var(--space-m)));
+  inset: auto var(--space-s) var(--space-s) auto;
   margin: 0;
   padding: 0;
   position: fixed;
@@ -17,31 +23,51 @@
 
 .scripture-reader__header {
   align-items: center;
-  border-block-end: var(--border-width-sm) solid var(--tan-900);
+  background: var(--tan-900);
+  color: var(--tan-000);
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3xs) var(--space-xs);
-  padding: var(--space-2xs) var(--space-xs);
+  gap: var(--space-xs);
+  padding: var(--space-3xs) var(--space-3xs) var(--space-3xs) var(--space-xs);
 }
 
 .scripture-reader__title {
+  color: var(--color-accent);
   flex: 1;
   margin: 0;
+  min-inline-size: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .scripture-reader__external {
-  color: var(--color-action);
+  color: var(--tan-000);
   font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.scripture-reader__external:hover,
+.scripture-reader__external:focus-visible {
+  color: var(--color-accent);
 }
 
 .scripture-reader__close {
   background: none;
-  border: var(--border-width-sm) solid var(--tan-900);
+  border: var(--border-width-sm) solid currentcolor;
   border-radius: var(--border-radius-sm);
+  color: inherit;
   cursor: pointer;
+  flex: none;
   font: inherit;
   line-height: 1;
   padding: var(--space-4xs) var(--space-3xs);
+}
+
+.scripture-reader__close:hover,
+.scripture-reader__close:focus-visible {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--tan-900);
 }
 
 .scripture-reader__frame {
@@ -58,6 +84,7 @@ a[aria-current="true"][href*="biblegateway.com/passage"] {
 @media (width < 40rem) {
   .scripture-reader {
     block-size: 55dvh;
+    box-shadow: 0 calc(var(--panel-shadow-offset) * -2) 0 var(--color-accent);
     inline-size: auto;
     inset: auto 0 0;
   }

@@ -4,7 +4,9 @@
  *
  * Progressive enhancement: links keep their real href, so modified clicks
  * (new tab / window) and no-JS still go to BibleGateway. The framed view uses
- * BibleGateway's print interface, which shows only the passage text.
+ * BibleGateway's print interface, which shows only the passage text. The frame
+ * is sandboxed with no permissions: the passage is server-rendered, and without
+ * scripts BibleGateway's tracking notice and trackers never load.
  */
 
 const LINK_SELECTOR = 'a[href*="biblegateway.com/passage"]';
@@ -17,7 +19,8 @@ function framedUrl(href: string): string {
 
 function passageLabel(link: HTMLAnchorElement): string {
   const search = new URL(link.href).searchParams.get("search");
-  return search ?? (link.textContent ?? "").trim();
+  const label = search ?? (link.textContent ?? "").trim();
+  return label.replaceAll(/(\d)-(\d)/g, "$1–$2");
 }
 
 function buildReader(): {
@@ -31,10 +34,10 @@ function buildReader(): {
   dialog.innerHTML = `
     <header class="scripture-reader__header">
       <h2 class="scripture-reader__title type-eyebrow" id="scripture-reader-title"></h2>
-      <a class="scripture-reader__external" target="_blank" rel="noopener noreferrer">Open on BibleGateway</a>
+      <a class="scripture-reader__external" target="_blank" rel="noopener noreferrer">BibleGateway<span aria-hidden="true"> ↗</span></a>
       <button type="button" class="scripture-reader__close" aria-label="Close passage">✕</button>
     </header>
-    <iframe class="scripture-reader__frame" title="Passage text"></iframe>`;
+    <iframe class="scripture-reader__frame" title="Passage text" sandbox=""></iframe>`;
   document.body.append(dialog);
 
   const title = dialog.querySelector<HTMLElement>(".scripture-reader__title")!;
@@ -67,7 +70,7 @@ function buildReader(): {
     invoker = link;
     link.setAttribute("aria-current", "true");
     const label = passageLabel(link);
-    title.textContent = `${label} · NRSVue`;
+    title.textContent = label;
     external.href = link.href;
     frame.src = framedUrl(link.href);
     if (!dialog.matches(":popover-open")) dialog.showPopover();
