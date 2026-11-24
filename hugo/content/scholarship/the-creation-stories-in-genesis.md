@@ -3,7 +3,7 @@ title: "The Creation Stories in Genesis"
 dek: "Why scholars find two creation accounts in Genesis 1 and 2, how they differ, how Genesis 1 relates to the Babylonian Enuma Elish, and the picture of the world it assumes."
 draft: true
 core: two
-sourcesRead:
+sourcesRead: 2026-11-24
 related:
   books: [genesis]
   tags: [priestly-source, creatio-ex-nihilo, garden-of-eden]
@@ -85,11 +85,15 @@ statements:
         locator: "section “History of Scholarship”"
         quote: "Although the evidence does not fit as neatly into the classical formulation of the hypothesis as scholars at one time thought, almost all biblical scholars recognize that the repetitions, inconsistencies, and contradictions in the Pentateuch are best explained by the existence of distinct sources dating to different historical periods."
         read: 2026-11-24
+      - source: hayes-rlst145-l3
+        locator: "ch. 2 [00:12:44]"
+        quote: "the story here in Genesis 1 and then the creation story that occupies much of 2 and 3."
+        read: 2026-11-24
   - id: differ
     group: "Two accounts"
     question: "How do the two accounts differ?"
     short: "In the order of creation, the name used for God, their style and their picture of God."
-    text: "In Genesis 1, plants and animals are made before humans, and male and female are created together; in the second account there are no plants before the man, the animals are made after him, and the woman is formed from his rib, as Paul's entry sets out. Genesis 1 calls the deity Elohim, translated “God”; Genesis 2 calls him Yahweh Elohim, “the LORD God”. Hayes describes Genesis 1 as formal, highly structured and abstract, and Genesis 2 as more dramatic and earthy and full of puns; the two also use different Hebrew terms for the sexes. In Genesis 1 God is remote and creates effortlessly by word and will; in Genesis 2 he forms the human like a potter, plants a garden and walks in it, and is described in much more anthropomorphic terms. The Coogan and Chapman summary adds that the accounts give different reasons for making humans: in the first, to have dominion over the earth; in the second, to till and keep the garden. Paul cautions that the first account, though more hymnlike, does not reflect a completely abstract, transcendent conception of God, as is usually assumed."
+    text: "In Genesis 1, plants and animals are made before humans, and male and female are created together; in the second account there are no plants before the man, the animals are made after him, and the woman is formed from his rib, as Paul's entry sets out. Genesis 1 calls the deity Elohim, translated “God”; Genesis 2 calls him Yahweh Elohim, “the LORD God”. Hayes describes Genesis 1 as formal, highly structured and abstract, and Genesis 2 as more dramatic and earthy and full of puns, and the Coogan and Chapman summary says the second account has a different style and theme from the first; the two also use different Hebrew terms for the sexes. In Genesis 1 God is remote and creates effortlessly by word and will; in Genesis 2 he forms the human like a potter, plants a garden and walks in it, and is described in much more anthropomorphic terms. The Coogan and Chapman summary adds that the accounts give different reasons for making humans: in the first, to have dominion over the earth; in the second, to till and keep the garden. Paul cautions that the first account, though more hymnlike, does not reflect a completely abstract, transcendent conception of God, as is usually assumed."
     cites:
       - source: paul-ej-creation-cosmogony
         locator: "opening section"
@@ -139,6 +143,10 @@ statements:
         locator: "section “Genesis 1–3: Some General Observations”"
         quote: "Genesis provides two distinct creation myths, with a different vocabulary and order of events, as well as contrasting depictions of the deity."
         read: 2026-11-24
+      - source: coogan-brief-4e-summary-ch3
+        locator: "section “Influences from the Near East”"
+        quote: "While Genesis 2.4b–3.24 has a different style and theme from 1.1–2.4a"
+        read: 2026-11-24
   - id: dating
     group: "Two accounts"
     question: "When were the two accounts written?"
@@ -184,8 +192,8 @@ statements:
   - id: enuma
     group: "Near Eastern parallels"
     question: "How does Genesis 1 compare with the Babylonian Enuma Elish?"
-    short: "It echoes much of the epic's sequence and imagery, but leaves out its battle between gods."
-    text: "Enuma Elish, the Babylonian creation epic, tells how the god Marduk defeats Tiamat, the primeval salt-water ocean, and builds the world from her carcass. Kacie Klamm's Bible Odyssey article says it was likely composed in the second millennium BCE, long before the earliest parts of the Bible were written down. Klamm lists the resemblances: both open with temporal clauses, both have the creator separate primordial waters and set a barrier between upper and lower waters, both create lights, Genesis 1 runs over seven days and the epic over seven tablets, and humans are made on the sixth day and in the sixth tablet. Paul's entry finds the same sequence of events in both, firmament, dry land, luminaries, humans and divine rest, and concludes that at least the P account appears to echo the earlier Babylonian story. The Coogan and Chapman summary likewise says Enuma Elish shares a number of affinities with Genesis 1. The differences are as marked. In Genesis, Hayes says, there is no battle: a listener who knew the old story would hear the wind and the watery deep, and then only a word, “let there be light”. Hayes and the Coogan and Chapman summary describe Genesis 1 as demythologizing the older material; Paul writes that Genesis totally rejects mythology and that the differences are much more striking than the similarities. In Enuma Elish humans are made to do the gods' work so that the gods can rest; in Genesis 1 the creation of humans is the climactic act, and they are given rule over the other creatures. Klamm reports that scholars explain the similarities differently: some biblical writers may have known the epic, given Babylon's power, while others think both texts drew on common ancient Near Eastern beliefs."
+    short: "It echoes much of the epic's imagery, but leaves out its battle before creation."
+    text: "Enuma Elish, the Babylonian creation epic, tells how the god Marduk defeats Tiamat, the primeval salt-water ocean, and builds the world from her carcass. Kacie Klamm's Bible Odyssey article says it was likely composed in the second millennium BCE, long before the earliest parts of the Bible were written down. Hayes points to the resemblances: Genesis 1 opens with a temporal clause, as the epic does, has a wind sweep over chaotic waters as Marduk's wind was released into the face of Tiamat, and has God set up the heavenly bodies, as Marduk did. Klamm adds that Genesis 1 runs over seven days and the epic over seven tablets, and that humans are made on the sixth day and in the sixth tablet. Paul's entry finds the same sequence of events in both, firmament, dry land, luminaries, humans and divine rest, and concludes that at least the P account appears to echo the earlier Babylonian story. The Coogan and Chapman summary likewise says Enuma Elish shares a number of affinities with Genesis 1. There are differences too. In Genesis, Hayes says, there is no battle: a listener who knew the old story would hear the wind and the watery deep, and then only a word, “let there be light”. Hayes and the Coogan and Chapman summary describe Genesis 1 as demythologizing the older material; Paul writes that Genesis totally rejects mythology and that the differences are much more striking than the similarities. In Enuma Elish, Hayes says, service was imposed on humans so that the gods were free; in Genesis 1 the creation of humans is the climactic act, and they are given rule over the other creatures. Klamm reports that scholars explain the similarities differently: some biblical writers may have known the epic, given Babylon's power, while others think both texts drew on common ancient Near Eastern beliefs."
     cites:
       - source: hayes-rlst145-l3
         locator: "ch. 1 [00:00:00]"
@@ -199,13 +207,13 @@ statements:
         locator: "paragraph 2"
         quote: "No one knows exactly when the Enuma Elish was composed, but a date in the second millennium BCE is likely, long before the earliest parts of the Bible were written down."
         read: 2026-11-24
-      - source: klamm-2020-enuma-elish
-        locator: "paragraph 3"
-        quote: "Both begin with temporal clauses: “when above” and “in the beginning.”"
+      - source: hayes-rlst145-l3
+        locator: "ch. 3 [00:28:30]"
+        quote: 'Our story opens with a temporal clause: "When on high," "when God began creating"; we have a wind that sweeps over chaotic waters, just like the wind of Marduk released into the face of Tiamat'
         read: 2026-11-24
       - source: klamm-2020-enuma-elish
         locator: "paragraph 4"
-        quote: "Both God and Marduk separate primordial waters and place a barrier in between the upper and lower waters. Both create luminaries to give light. Gen 1 occurs over seven days, and the Enuma Elish is told across seven tablets. On the sixth day God creates humans, which Marduk does in the sixth tablet of the Enuma Elish."
+        quote: "Gen 1 occurs over seven days, and the Enuma Elish is told across seven tablets. On the sixth day God creates humans, which Marduk does in the sixth tablet of the Enuma Elish."
         read: 2026-11-24
       - source: paul-ej-creation-cosmogony
         locator: "section “Mesopotamian Prototypes”, “enuma elish”"
@@ -235,9 +243,9 @@ statements:
         locator: "section “Differences between Genesis and Enuma Elish”"
         quote: "In Genesis there is a total rejection of all mythology."
         read: 2026-11-24
-      - source: klamm-2020-enuma-elish
-        locator: "paragraph 4"
-        quote: "Marduk assigns the work of the gods to the humans, so that the gods can rest."
+      - source: hayes-rlst145-l3
+        locator: "ch. 2 [00:12:44]"
+        quote: "Where in Enuma Elish, service was imposed upon humans so the gods were free"
         read: 2026-11-24
       - source: hayes-rlst145-l3
         locator: "ch. 2 [00:12:44]"
@@ -251,19 +259,27 @@ statements:
         locator: "paragraph 6"
         quote: "Because Babylon was a significant power in the ancient Near East, it is possible that some biblical writers knew the Enuma Elish. Others think the similarities result from common ancient Near Eastern beliefs that influenced both texts."
         read: 2026-11-24
+      - source: coogan-brief-4e-summary-ch3
+        locator: "section “Genesis 1–3: Some General Observations”"
+        quote: "In the first myth, humans are created to have dominion over the earth and all of its creatures."
+        read: 2026-11-24
+      - source: hayes-rlst145-l3
+        locator: "ch. 3 [00:28:30]"
+        quote: "And he follows that initial ordering by setting up celestial bodies, just as Marduk did."
+        read: 2026-11-24
   - id: deep
     group: "Near Eastern parallels"
-    question: "Is the “deep” of Genesis 1:2 related to Tiamat?"
-    short: "Its Hebrew name, tehom, is related to Tiamat's, but in Genesis the deep is only water, not a god."
-    text: "Genesis 1:2 says that darkness was on the face of the deep, and the Hebrew word, tehom, has no definite article. Hayes says it is etymologically the same word as Tiamat, the feminine ending aside; Klamm calls it a word related to Tiamat, and Paul's entry calls the two etymological equivalents. With the wind of God sweeping over the waters, Hayes argues, the storyteller sets the stage for the cosmic battle that everyone knew, and then tells no battle: the elements are there, but demythologized, and God imposes order on water that is just water. Paul draws the same contrast: Tiamat is a primal generative force, while tehom is merely a poetic term for a lifeless mass of water. The NABRE's notes call the abyss the primordial ocean of ancient Semitic cosmogony, and read verse 2 as the chaos out of which God brings order. Hayes and Paul both note that biblical poetry elsewhere alludes to the older story of a battle with a sea monster, and that Genesis 1 pointedly leaves it out; Paul reads the mention of the great sea monsters in Genesis 1:21, created by God rather than fighting him, as part of that polemic."
+    question: "What is the “deep” of Genesis 1:2?"
+    short: "The primordial waters, which God puts in order without the battle of older Near Eastern myth."
+    text: "Genesis 1:2 says that darkness was on the face of the deep, and the Hebrew word, tehom, has no definite article. Hayes says it is etymologically the same word as Tiamat, the feminine ending aside, and Paul's entry calls the two etymological equivalents. The NABRE's notes call the abyss the primordial ocean of ancient Semitic cosmogony, and read verse 2 as the chaos out of which God brings order. With the wind of God sweeping over the waters, Hayes argues, the storyteller sets the stage for the cosmic battle that everyone knew, and then tells no battle: the elements are there, but demythologized, and God imposes order on water that is just water. The Coogan and Chapman summary likewise gives the demythologizing of the battle before creation as an example of how Genesis transforms Near Eastern myth. Paul draws the same contrast: Tiamat is a primal generative force, while tehom is merely a poetic term for a lifeless mass of water. Hayes and Paul both note that biblical poetry elsewhere alludes to the older story of a battle with a sea monster, and that Genesis 1 pointedly leaves it out; Paul reads the mention of “the great sea monsters” in Genesis 1:21 as most likely part of that polemic."
     cites:
       - source: hayes-rlst145-l3
         locator: "ch. 3 [00:28:30]"
         quote: 'In fact, the text says "and there is darkness on the face of deep." No definite article. The word "deep" is a proper name, perhaps. The Hebrew word is Tehom. It means "deep" and etymologically it''s exactly the same word as Tiamat: the "at" ending is just feminine.'
         read: 2026-11-24
-      - source: klamm-2020-enuma-elish
-        locator: "paragraph 3"
-        quote: "But in Gen 1, God is already superior to “the Deep,” which in Hebrew is tehom, a word related to Tiamat."
+      - source: coogan-brief-4e-summary-ch3
+        locator: "section “Influences from the Near East”"
+        quote: "the Genesis accounts are also innovative since they adapt, transform, and reject many aspects of Near Eastern mythology. A good example of this is the demythologizing of the battle before creation in Genesis 1."
         read: 2026-11-24
       - source: paul-ej-creation-cosmogony
         locator: "section “Mesopotamian Prototypes”, “enuma elish”"
@@ -308,8 +324,8 @@ statements:
   - id: beginning
     group: "Reading Genesis 1"
     question: "Does Genesis 1:1 mean “In the beginning”?"
-    short: "Scholars read it as a temporal clause, “When God began to create”, and say the traditional rendering misses the Hebrew syntax."
-    text: "Hayes calls “In the beginning” a bad translation, because it suggests an account of the first event in time. The Hebrew opening, she says, is much like the opening of Enuma Elish, “When on high”, and is better translated “When God began creating the heavens and the earth… he said, ‘Let there be light’”. The NABRE's notes say that until modern times the line was always translated “In the beginning God created the heavens and the earth”, but that several comparable ancient cosmogonies discovered in recent times have a “when…then” construction, confirming that translation here, and that the traditional rendering does not reflect the Hebrew syntax. Paul's entry says many commentators read it this way, a temporal clause followed by a clause describing the darkness and void, and refers readers to U. Cassuto's commentary on Genesis for the other view. On this reading, Hayes says, the story is not concerned with the ultimate origins of the universe but with how and why the world got the way it is."
+    short: "Scholars read it as a temporal clause, “When God began…”, rather than the traditional “In the beginning”."
+    text: "Hayes calls “In the beginning” a bad translation, because it implies that what follows is an account of the ultimate origins of the universe. The Hebrew opening, she says, is pretty much exactly like the opening of Enuma Elish, “When on high”, and is better translated “When God began creating the heavens and the earth… he said, ‘Let there be light’”. The NABRE's notes say that until modern times the line was always translated “In the beginning God created the heavens and the earth”, but that several comparable ancient cosmogonies discovered in recent times have a “when…then” construction, confirming that translation here, and that the traditional rendering does not reflect the Hebrew syntax. Paul's entry says many commentators read it this way, a temporal clause followed by a clause describing the darkness and void, and refers readers to U. Cassuto's commentary on Genesis for the other view. On this reading, Hayes says, the story is not concerned with the ultimate origins of the universe but with how and why the world got the way it is."
     cites:
       - source: hayes-rlst145-l3
         locator: "ch. 3 [00:28:30]"
@@ -339,11 +355,15 @@ statements:
         locator: "ch. 3 [00:28:30]"
         quote: "And that translation suggests that the story isn't concerned to depict the ultimate origins of the universe. It's interested in explaining how and why the world got the way it is."
         read: 2026-11-24
+      - source: hayes-rlst145-l3
+        locator: "ch. 3 [00:28:30]"
+        quote: 'Our story opens with a temporal clause: "When on high," "when God began creating"'
+        read: 2026-11-24
   - id: nihilo
     group: "Reading Genesis 1"
     question: "Does Genesis 1 describe creation out of nothing?"
     short: "No. Scholars read it as God bringing order to material that already existed."
-    text: "Hayes says creation in Genesis 1 is not described as making something out of utter nothing, creation ex nihilo, but as organizing pre-existing materials and imposing order on them: when God begins, something already exists, without shape. The Coogan and Chapman summary says that in this account God does not create the universe out of nothing, and that the cosmos was formed out of untamed, though preexisting, matter; it counts the formation of the cosmos out of existing matter, in Enuma Elish Tiamat's body, among the account's affinities with the Babylonian epic. Klamm makes the same point: rather than creating out of nothing, both God and Marduk create by giving order to chaos. Paul's entry says the verb in the first sentence does not imply creation out of nothing, as most traditional commentators believed, but denotes, as it does throughout the Bible, a divine activity that is effortlessly effected."
+    text: "Hayes says creation in Genesis 1 is not described as making something out of utter nothing, creation ex nihilo, but as organizing pre-existing materials and imposing order on them: when God begins, something already exists, without shape. The Coogan and Chapman summary says that in this account God does not create the universe out of nothing, and that the cosmos was formed out of untamed, though preexisting, matter; it counts the formation of the cosmos out of existing matter, in Enuma Elish Tiamat's body, among the account's affinities with the Babylonian epic. Paul's entry says the verb in the first sentence does not imply creation out of nothing, as most traditional commentators believed, but denotes, as it does throughout the Bible, a divine activity that is effortlessly effected."
     cites:
       - source: hayes-rlst145-l3
         locator: "ch. 3 [00:28:30]"
@@ -361,10 +381,6 @@ statements:
         locator: "section “Influences from the Near East”"
         quote: "These include the creative powers of the deity, the formation of the cosmos out of existing matter (Tiamat’s body), and the creation of humans in the “likenesses” of the god(s)."
         read: 2026-11-24
-      - source: klamm-2020-enuma-elish
-        locator: "paragraph 4"
-        quote: "Rather than creating out of nothing, both God and Marduk create by giving order to the chaos, which for Marduk means creating out of Tiamat’s corpse."
-        read: 2026-11-24
       - source: paul-ej-creation-cosmogony
         locator: "opening section"
         quote: "does not imply, as most traditional commentators believed, creatio ex nihilo"
@@ -376,8 +392,8 @@ statements:
   - id: firmament
     group: "Reading Genesis 1"
     question: "What is the firmament?"
-    short: "A solid dome that holds back waters above the sky, as the sky does in Enuma Elish."
-    text: "On the second day God makes the firmament to divide the waters. Hayes says the Hebrew word means something beaten out, as a metal worker hammers out a thin sheet of metal, and the NABRE's notes say it suggests a gigantic metal dome; the English “firmament” comes from the Latin Vulgate's firmamentum, “means of support”. In the picture both describe, the dome holds back the waters above, from which rain falls, while below the earth is fresh water that wells up as springs; Hayes notes that in the Flood God opens windows in it. Hayes, Klamm and Paul all point out that Enuma Elish has the same structure, with Marduk using half of Tiamat's body to hold back her waters."
+    short: "A solid dome, the sky, that holds back the waters above it."
+    text: "On the second day God makes the firmament to divide the waters. Hayes says the Hebrew word means something beaten out, as a metal worker hammers out a thin sheet of metal, and the NABRE's notes say it suggests a gigantic metal dome; the English “firmament” comes from the Latin Vulgate's firmamentum, “means of support”. In the NABRE's account the dome of the sky holds up the upper water, from which rain descends, while fresh water under the earth wells up as springs and fountains; Hayes describes the firmament holding back the primeval waters, with windows God will open in the Flood. Hayes says this is the image of Enuma Elish as well, where Marduk uses half of Tiamat's body to hold back her waters, and Paul's entry likewise says that in both texts heaven and earth result from the separation of the waters by a firmament."
     cites:
       - source: hayes-rlst145-l3
         locator: "ch. 3 [00:28:30]"
@@ -410,10 +426,6 @@ statements:
       - source: hayes-rlst145-l3
         locator: "ch. 1 [00:00:00]"
         quote: "Alright, so he has used her body to press back her waters and that's what the ceiling is, the firmament, a firm sheet or structure that's holding back waters."
-        read: 2026-11-24
-      - source: klamm-2020-enuma-elish
-        locator: "paragraph 4"
-        quote: "Both God and Marduk separate primordial waters and place a barrier in between the upper and lower waters."
         read: 2026-11-24
       - source: paul-ej-creation-cosmogony
         locator: "section “Mesopotamian Prototypes”, “enuma elish”"
