@@ -1,0 +1,135 @@
+# Review record for the Timeline Entry `flood` (/timeline/#flood; #93 shape). Not rendered.
+# agent: the first pass from #165 (sourcing, 2026-11-24). It does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# #165 match, 2026-11-24: every quote matched verbatim by script (whitespace, quotes and dashes normalised) in a fetched copy of its source and found at its locator; Trigger Claims matched against the final Transcript line at their timestamp.
+review: ""
+citations:
+  undated/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE Genesis introduction ¶ 5, scoped to Gn 2–11, which includes the flood (6:9–9:29). Basis of `verdict: not-historical` with its next sentence (“History” suggests “that the events actually took place”), which is cited on adam, not repeated here.",
+    }
+  undated/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE ¶ 4: the plot of Gn 2–11 “has been borrowed from” Mesopotamian creation-flood stories.",
+    }
+  undated/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary ch. 4, section “Implications for Our Study”: Genesis 1–11 as “myths of origins”. Second voice; uses “myth”, which NABRE rejects (split-shown).",
+    }
+  undated/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary ch. 4, section “Near Eastern Parallels”: Atrahasis and Gilgamesh “were earlier and undoubtedly influenced the biblical writers”. About the text's dependence, not the event's date.",
+    }
+  undated/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l4 ch. 5 [00:35:32] (“Contradictions and Doublets in the Flood Story in Genesis 6-9”): two interwoven flood stories. Composition evidence, not a historicity claim; the statement words it as Hayes's finding.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Wright 2012 (AiG), paragraph beginning “Using the Bible”: the Flood “began approximately 4,359 years ago in the year 1656 AM or 2348 BC”. `from: -2348`. The “4,359 years ago” counts from 2011 (the page's own table).",
+    }
+triggers:
+  183@00:07:37:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition, weakly: McClellan reads a Daily Mail headline (“after 4,300 years”) about the Durupinar site's promoters. It reports the date the believers hold rather than the show stating it; kept with the stronger E187 and E118 claims below. Next sentence: “deep underground” means 15 to 20 feet.",
+    }
+  118@00:21:43:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. “a global flood and a boat that all the animals on the entire planet descended from”, defended by “institutions” (AiG's Ark Encounter). Shared with creation; same cut.",
+    }
+  95@00:28:56:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Previous turn (00:27:44): flood stories “borrowed from Mesopotamia”. This turn: traditions in circulation in the mid first millennium BCE become “the flood of the whole earth”. The entry does not give that composition date; its sources don't (#86).",
+    }
+  187@00:39:16:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. People “put like Noah a little before” the Early Bronze Age (3,500–2,500ish BCE, 00:39:08). The only place the show dates Noah by the tradition. The show's range and AiG's 2348 BC differ; the entry gives AiG's date.",
+    }
+  187@00:39:23:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. “they might put Noah in here” (the Early Bronze Age), with Adam at “around 4000ish”; Ussher named in Dan Beecher's 00:39:34 turn. Shared with adam.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Critical Date. `verdict: not-historical` rests on NABRE ¶ 5 (“neither history”, history suggesting “that the events actually took place”); Coogan and Chapman's “myths of origins” is the second voice. Each claim is attributed to its source. No geology or archaeology source is cited; the entry says nothing about physical evidence.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Shown: NABRE rejects the word “myth”, Coogan and Chapman use it (“who do use the word myth”). Neither calls the story history.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Triggers 183@00:07:37, 118@00:21:43, 187@00:39:16 and 187@00:39:23 have states: tradition.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Answers in Genesis, an apologetics ministry” equals the registry `tradition:` of aig-wright-2012-flood; wording from AiG's About page. AiG's figure follows Ussher (the page recommends his Annals).",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date in the sources. Placed by its Tradition Date (#162), in the tradition lane only.",
+    }
+sources:
+  nabre-genesis-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "NABRE Old Testament revision (2011), USCCB online text",
+      note: "Shared with adam; fetched from the /bible/genesis/0.md alternate.",
+    }
+  coogan-brief-4e-summary-ch4:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+      note: "Shared with adam.",
+    }
+  hayes-rlst145-l4:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Lecture 4 transcript, fetched by script; chapter markers read from the page.",
+    }
+  aig-wright-2012-flood:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Answers in Genesis web page, dated 9 March 2012",
+      note: "Shared with creation.",
+    }
+leads: []
+uncited: []

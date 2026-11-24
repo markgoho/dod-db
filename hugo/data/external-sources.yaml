@@ -629,3 +629,115 @@ sperling-2005-god-hebrew-scriptures:
   url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/god-god-hebrew-scriptures"
   hostAuthored: false
   tradition: null
+
+hayes-rlst145-l3:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 3 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-3"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l4:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 4 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-4"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch3:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 3 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-3-summary"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch4:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 4 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-4-summary"
+  hostAuthored: false
+  tradition: null
+
+nabre-genesis-intro:
+  author: null
+  title: "Introduction to Genesis"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/genesis/0"
+  hostAuthored: false
+  tradition: null
+
+aig-wright-2012-flood:
+  author: "David Wright"
+  title: "Timeline for the Flood"
+  series: null
+  publisher: "Answers in Genesis"
+  year: 2012
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://answersingenesis.org/bible-timeline/timeline-for-the-flood/"
+  hostAuthored: false
+  tradition: "Answers in Genesis, an apologetics ministry"
+
+aig-chaffey-2010-time:
+  author: "Tim Chaffey"
+  title: "When Did Time Begin?"
+  series: null
+  publisher: "Answers in Genesis"
+  year: 2010
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://answersingenesis.org/days-of-creation/but-when-did-time-begin/"
+  hostAuthored: false
+  tradition: "Answers in Genesis, an apologetics ministry"
+
+aig-bible-timeline:
+  author: null
+  title: "Bible Timeline"
+  series: null
+  publisher: "Answers in Genesis"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://answersingenesis.org/bible-timeline/"
+  hostAuthored: false
+  tradition: "Answers in Genesis, an apologetics ministry"

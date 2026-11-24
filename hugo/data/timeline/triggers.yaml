@@ -74,3 +74,63 @@
   timestamp: "00:52:15.840"
   states: critical
   text: "In 722 BCE, you had Assyrians come in and basically exile the northern kingdom."
+- entry: creation
+  episode: 118
+  speaker: "Dan McClellan"
+  timestamp: "00:21:43.540"
+  states: tradition
+  text: "Unfortunately a lot of people, instead of outgrowing them, they just find ways to rationalize their preservation. Even if it means, you know, creating institutions that go out and try to create pseudoscience to defend the notion of a 6,000 year old Earth and a global flood and a boat that all the animals on the entire planet descended from the, the animals that were on there."
+- entry: creation
+  episode: 152
+  speaker: "Dan McClellan"
+  timestamp: "00:23:34.813"
+  states: tradition
+  text: "And so you had things like creation as 6 24-hour periods, the global flood, historical Adam and Eve, the genealogies from the Table of Nations, all these things were asserted as 100% true, not because we had been studying it and we arrived at this conclusion, but because we needed to assert this as a rhetorical line in the sand to try to prevent the further encroachment of critical scholarship and the historical-critical method."
+- entry: adam
+  episode: 187
+  speaker: "Dan McClellan"
+  timestamp: "00:39:23.130"
+  states: tradition
+  text: "Well, no, they, they might put Noah in here because I think they want to put Adam at like around 4000ish."
+- entry: adam
+  episode: 152
+  speaker: "Dan McClellan"
+  timestamp: "00:23:34.813"
+  states: tradition
+  text: "And so you had things like creation as 6 24-hour periods, the global flood, historical Adam and Eve, the genealogies from the Table of Nations, all these things were asserted as 100% true, not because we had been studying it and we arrived at this conclusion, but because we needed to assert this as a rhetorical line in the sand to try to prevent the further encroachment of critical scholarship and the historical-critical method."
+- entry: adam
+  episode: 142
+  speaker: "Dan McClellan"
+  timestamp: "00:27:47.235"
+  states: critical
+  text: "As much as people would like this to be like a verbatim transcript of the dialogue that actually historically happened. It's a story that people told in the middle of the first millennium BCE."
+- entry: flood
+  episode: 183
+  speaker: "Dan McClellan"
+  timestamp: "00:07:37.070"
+  states: tradition
+  text: 'And—and so now, like yesterday, the Daily Mail came out with this headline, Noah''s Ark resting place quote, "100% confirmed," unquote, after 4,300 years as astonishing quote, "man-made," unquote, structure is detected buried deep underground.'
+- entry: flood
+  episode: 118
+  speaker: "Dan McClellan"
+  timestamp: "00:21:43.540"
+  states: tradition
+  text: "Unfortunately a lot of people, instead of outgrowing them, they just find ways to rationalize their preservation. Even if it means, you know, creating institutions that go out and try to create pseudoscience to defend the notion of a 6,000 year old Earth and a global flood and a boat that all the animals on the entire planet descended from the, the animals that were on there."
+- entry: flood
+  episode: 95
+  speaker: "Dan McClellan"
+  timestamp: "00:28:56.040"
+  states: critical
+  text: "So they're probably taking from the traditions that are in circulation in the middle of the first millennium BCE. Traditions about devastating floods and it becomes the flood of the whole earth."
+- entry: flood
+  episode: 187
+  speaker: "Dan McClellan"
+  timestamp: "00:39:16.890"
+  states: tradition
+  text: "And this is generally where people are. People are probably going to put like Noah a little before this."
+- entry: flood
+  episode: 187
+  speaker: "Dan McClellan"
+  timestamp: "00:39:23.130"
+  states: tradition
+  text: "Well, no, they, they might put Noah in here because I think they want to put Adam at like around 4000ish."

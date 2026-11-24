@@ -1,0 +1,120 @@
+# Review record for the Timeline Entry `creation` (/timeline/#creation; #93 shape). Not rendered.
+# agent: the first pass from #165 (sourcing, 2026-11-24). It does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# #165 match, 2026-11-24: every quote matched verbatim by script (whitespace, quotes and dashes normalised) in a fetched copy of its source and found at its locator; Trigger Claims matched against the final Transcript line at their timestamp.
+review: ""
+citations:
+  undated/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary ch. 3, section “Genesis 1–3: Some General Observations”. Source of “two distinct creation myths”, quoted as Coogan and Chapman's word.",
+    }
+  undated/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 2 [00:12:44], from the sentence “because in fact there are two creation stories with quite a few contradictions between them, but if we turn to the first creation story …”; the quote is the clause, not cut mid-claim.",
+    }
+  undated/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l5 ch. 1 [00:00:00]. Same cite as priestly-genesis-1 critical/1 (matched in #137). Licenses “assigned to the Priestly source” and the seeAlso to that entry.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Wright 2012 (AiG), paragraph beginning “As you can see from Table 1”. AiG's own voice (“we understand”) adopting Ussher's 4004 BC; `from: -4004` is that date, `display` keeps its “about”.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Chaffey 2010 (AiG), footnote 1 (“Since the Bible only gives the ages …”). The holder's own hedge on 4004 BC, cited so the Tradition Date isn't shown as more exact than AiG holds it.",
+    }
+triggers:
+  118@00:21:43:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. “institutions … to defend the notion of a 6,000 year old Earth” is the young-earth side; AiG runs the Creation Museum and the Ark Encounter (About page). Cut extended back one sentence (“Unfortunately a lot of people …”) because “Even if it means” depends on it; the turn ends “you're supposed to outgrow those things.” Episode 118 is about Christian support for Israel; this is an aside.",
+    }
+  152@00:23:34:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. Fundamentalist positions after the Scopes trial (1925, previous turn): “creation as 6 24-hour periods” asserted as true. States the view, not a year. The next turn is an interruption (fire alarm).",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Critical Date. No source cited dates creation as an event: they date and describe the text (two accounts, Genesis 1 assigned to P). The statement says exactly that (“The sources date the text, not the event”); it does not say the sources call it unhistorical. NABRE's “neither history nor myth” is scoped to Gn 2–11, not to Gn 1:1–2:3, so it is not cited here and the verdict stays the default (no-firm-date).",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly side: no split on a date. Tradition side: AiG's own hedge (“would not be dogmatic on 4004 B.C.”) is cited; the wider young-earth split (about 4000 BC vs. allowing gaps) is a lead only (see leads).",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Triggers 118@00:21:43 and 152@00:23:34 have states: tradition.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Answers in Genesis, an apologetics ministry” equals the registry `tradition:` of aig-wright-2012-flood and aig-chaffey-2010-time. Wording from AiG's About page (https://answersingenesis.org/about/, fetched 2026-11-24): “Answers in Genesis is an apologetics (i.e., Christianity-defending) ministry …”. The date is Ussher's, as AiG adopts it; Ussher is named in the quote, not as holder, since his Annals were not cited (see uncited).",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date in the sources. Placed by its Tradition Date (#162), in the tradition lane only.",
+    }
+sources:
+  coogan-brief-4e-summary-ch3:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+      note: "Page fetched by script, headed “Chapter 3 Summary”. Edition record as for the other Coogan chapter summaries (moses-and-the-exodus, #137).",
+    }
+  hayes-rlst145-l3:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Lecture 3 transcript, fetched by script; chapter markers read from the page.",
+    }
+  hayes-rlst145-l5:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Shared with priestly-genesis-1.",
+    }
+  aig-wright-2012-flood:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Answers in Genesis web page, dated 9 March 2012",
+      note: "Tradition: AiG calls itself an apologetics ministry (About page). The page is a feedback answer by David Wright, AiG–U.S.",
+    }
+  aig-chaffey-2010-time:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Answers in Genesis web page, dated 6 August 2010",
+      note: "Tradition: AiG feedback answer by Tim Chaffey.",
+    }
+leads:
+  - "David McGee, “Creation Date of Adam from the Perspective of Young-Earth Creationism”, Answers Research Journal 5 (2012): a search summary says it divides young-earth creationists into those holding about 4000 BC and those allowing genealogical gaps (up to about 10,000 BC). Not read: the Liberty copy is an encrypted PDF and the AiG URL tried returned 404."
+uncited:
+  - "Ussher, The Annals of the World (1658 English edition, archive.org): the only public-domain copy found is an OCR text too corrupt to match verbatim, so Ussher is cited through AiG's adoption of his date rather than directly."

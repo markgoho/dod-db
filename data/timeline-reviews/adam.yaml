@@ -1,0 +1,123 @@
+# Review record for the Timeline Entry `adam` (/timeline/#adam; #93 shape). Not rendered.
+# agent: the first pass from #165 (sourcing, 2026-11-24). It does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# #165 match, 2026-11-24: every quote matched verbatim by script (whitespace, quotes and dashes normalised) in a fetched copy of its source and found at its locator; Trigger Claims matched against the final Transcript line at their timestamp.
+review: ""
+citations:
+  undated/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE Genesis introduction ¶ 5 (“How should modern readers interpret the creation-flood story in Gn 2–11?”). Scoped to Gn 2–11, which includes the Eden story (2:4–3:24). Fetched by script from the /bible/genesis/0.md alternate; /bible/genesis/0 returned 403.",
+    }
+  undated/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE ¶ 5, the next sentences of the same answer: “History” misleads “for it suggests that the events actually took place”. With undated/1 this is the basis of `verdict: not-historical` (see critical-scope).",
+    }
+  undated/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary ch. 4, section “Implications for Our Study”. The second voice: Genesis 1–11 as “myths of origins”. Coogan and Chapman use “myth” where NABRE rejects it (split-shown).",
+    }
+  undated/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 2 [00:12:44]: adam “not a proper name … a generic term”. Licenses the statement's last sentence; says nothing on historicity and is not used for the verdict.",
+    }
+  undated/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l3 ch. 2 [00:12:44], next sentence: “human or more precisely earthling”. The statement paraphrases it (no quote marks).",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "AiG Bible Timeline hub page, section “Do the Genesis Geneologies Have Gaps?” (AiG's spelling). The sentence is the hub's own teaser text; it is not in the linked article (Pierce and Ham 2010, re-matched with whitespace normalised, no hit), so the hub page is cited. Undated and liable to change: re-check in the second pass. `from: -4000` from “approximately 4,000 years before Christ”; display keeps “About”.",
+    }
+triggers:
+  187@00:39:23:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. Full turn after “Yeah, I, I think they.”: “they want to put Adam at like around 4000ish.” The next turn (00:39:32) adds “BCE so.”, and Dan Beecher's 00:39:34 turn attributes it: “Going by Bishop Ussher's calculations.” Neither is in the cut; the date matches AiG's “approximately 4,000 years before Christ”. Context: Early Bronze Age dates (00:39:08).",
+    }
+  152@00:23:34:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. “historical Adam and Eve” among fundamentalist positions after the Scopes trial. Shared with creation and flood.",
+    }
+  142@00:27:47:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Full turn after “Yeah. Well, that's the MacGuffin part of it.” “It's a story that people told in the middle of the first millennium BCE” dates the telling, not Adam; the entry gives no composition date (#86: worded for what the sources say). Next turn: Dan Beecher calls it a fable.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Critical Date. `verdict: not-historical` rests on NABRE ¶ 5 saying the Gn 2–11 stories are “neither history”, “history” suggesting “that the events actually took place”; Coogan and Chapman's “myths of origins” is the second voice. The statement attributes each claim to its source rather than stating a verdict in the site's voice. Judgment call: NABRE says the stories are not history; it does not say in so many words that no first human existed, so the entry says nothing about that.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Shown: NABRE rejects the word “myth” (“connotes untruth in popular English”), while Coogan and Chapman use it; the statement says “Coogan and Chapman do use the word myth”. Neither calls the stories history.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Triggers 187@00:39:23 and 152@00:23:34 have states: tradition.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Answers in Genesis, an apologetics ministry” equals the registry `tradition:` of aig-bible-timeline; wording from AiG's About page (“an apologetics (i.e., Christianity-defending) ministry”). The trigger names Ussher; Ussher's Annals were not citable (see creation's review, uncited), and AiG's date is the same figure.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date in the sources. Placed by its Tradition Date (#162), in the tradition lane only.",
+    }
+sources:
+  nabre-genesis-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "NABRE Old Testament revision (2011), USCCB online text",
+      note: "Fetched by script from https://bible.usccb.org/bible/genesis/0.md (the page's alternate); the registry URL /bible/genesis/0 returned 403 to the script. Same shape as the other NABRE introductions.",
+    }
+  coogan-brief-4e-summary-ch4:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756",
+      note: "Page fetched by script, headed “Chapter 4 Summary”.",
+    }
+  hayes-rlst145-l3:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Shared with creation.",
+    }
+  aig-bible-timeline:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Answers in Genesis web page, undated, fetched 2026-11-24",
+      note: "Tradition: AiG hub page; no author or date on the page.",
+    }
+leads: []
+uncited: []
