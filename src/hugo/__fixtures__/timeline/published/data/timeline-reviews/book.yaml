@@ -1,0 +1,15 @@
+review: 2026-11-23
+citations:
+  critical/1: { agent: pass, owner: pass }
+  tradition/1: { agent: pass, owner: pass }
+triggers:
+  119@00:08:35: { agent: pass, owner: pass }
+rules:
+  critical-scope: { agent: pass, owner: pass }
+  split-shown: { agent: pass, owner: pass }
+  tradition-both-sides: { agent: pass, owner: pass }
+  tradition-named: { agent: pass, owner: pass }
+  conditional-not-critical: { agent: pass, owner: pass }
+sources:
+  reference-lecture: { agent: pass, owner: pass }
+  tradition-page: { agent: pass, owner: pass }

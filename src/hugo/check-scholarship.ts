@@ -9,16 +9,36 @@ import { Glob } from "bun";
 import path from "node:path";
 import { z } from "zod";
 import { taxonomyFolderSlug } from "../utils/title-to-slug.js";
+import {
+  CiteSchema,
+  checkPublishGate,
+  dateValue,
+  loadEpisodes,
+  loadParsed,
+  loadRegistry,
+  readFrontmatter,
+  readYaml,
+  ReviewSchema,
+  RegistrySchema,
+  TriggerSchema,
+  TriggersSchema,
+  triggerKey,
+  unknownEpisode,
+  type Registry,
+  type Review,
+  type Trigger,
+} from "./synthesis-check.js";
 
-const dateValue = z.union([z.string(), z.date()]);
-
-const CiteSchema = z.object({
-  source: z.string(),
-  locator: z.string(),
-  quote: z.string(),
-  url: z.string().optional(),
-  read: dateValue,
-});
+// scholarship-checklist.ts reads these from here.
+export {
+  readFrontmatter,
+  readYaml,
+  RegistrySchema,
+  ReviewSchema,
+  triggerKey,
+  TriggersSchema,
+};
+export type { Registry, Review, Trigger };
 
 const StatementSchema = z.object({
   id: z.string(),
@@ -42,70 +62,6 @@ export const PageSchema = z.object({
   }),
   watch: z.array(z.string()).optional(),
   statements: z.array(StatementSchema),
-});
-
-const SourceSchema = z.object({
-  author: z.string().nullable(),
-  title: z.string(),
-  series: z.string().nullable(),
-  publisher: z.string().nullable(),
-  year: z.number().nullable(),
-  edition: z.string().nullable(),
-  class: z.enum(["Scholarly", "Reference", "Tradition"]),
-  kind: z.enum([
-    "book",
-    "article",
-    "publisher-summary",
-    "lecture",
-    "study-bible",
-    "trade-book",
-  ]),
-  access: z.string(),
-  url: z.string(),
-  hostAuthored: z.boolean(),
-  tradition: z.string().nullable(),
-});
-
-export const RegistrySchema = z.record(z.string(), SourceSchema);
-
-const TriggerSchema = z.object({
-  episode: z.number().int(),
-  speaker: z.string(),
-  timestamp: z.string().regex(/^\d{2}:\d{2}:\d{2}(\.\d+)?$/),
-  text: z.string(),
-});
-
-export const TriggersSchema = z.array(TriggerSchema);
-
-const ReviewItemSchema = z.object({
-  agent: z.string().optional(),
-  owner: z.string(),
-  note: z.string().optional(),
-  edition: z.string().optional(),
-});
-
-const ReviewSectionSchema = z.record(z.string(), ReviewItemSchema).default({});
-
-/**
- * #93 rule change: the owner delegated the publish review to agents. Fields
- * are optional here so a missing one is reported, not a parse failure.
- */
-const DelegationSchema = z.object({
-  by: z.string().optional(),
-  date: dateValue.optional(),
-  issue: z.string().optional(),
-  secondPass: dateValue.optional(),
-});
-
-export const ReviewSchema = z.object({
-  review: dateValue.nullish(),
-  delegation: DelegationSchema.optional(),
-  citations: ReviewSectionSchema,
-  triggers: ReviewSectionSchema,
-  rules: ReviewSectionSchema,
-  sources: ReviewSectionSchema,
-  leads: z.array(z.string()).default([]),
-  uncited: z.array(z.string()).default([]),
 });
 
 const CandidateSubjectSchema = z
@@ -144,10 +100,6 @@ export const CandidatesSchema = z
 
 export type Candidates = z.infer<typeof CandidatesSchema>;
 
-const EpisodesSchema = z.array(
-  z.object({ episodeNumber: z.number().int().optional() }),
-);
-
 const TAXONOMIES = ["books", "tags", "topics"] as const;
 type Taxonomy = (typeof TAXONOMIES)[number];
 /** Term keys per taxonomy, as Hugo keys term pages (taxonomyFolderSlug). */
@@ -160,60 +112,6 @@ const EpisodeTermsSchema = z.object({
 });
 
 export type Page = z.infer<typeof PageSchema>;
-export type Registry = z.infer<typeof RegistrySchema>;
-export type Trigger = z.infer<typeof TriggerSchema>;
-export type Review = z.infer<typeof ReviewSchema>;
-
-const FRONTMATTER = /^---\n([\s\S]*?)\n---\n/;
-
-export async function readYaml(filePath: string): Promise<unknown> {
-  return Bun.YAML.parse(await Bun.file(filePath).text());
-}
-
-export async function readFrontmatter(filePath: string): Promise<unknown> {
-  const match = FRONTMATTER.exec(await Bun.file(filePath).text());
-  if (!match?.[1]) throw new Error("no front matter");
-  return Bun.YAML.parse(match[1]);
-}
-
-function rel(root: string, filePath: string): string {
-  return path.relative(root, filePath);
-}
-
-/** Parse with a schema; on failure, push one error per issue and return undefined. */
-function parseWith<T>(
-  schema: z.ZodType<T>,
-  value: unknown,
-  label: string,
-  errors: string[],
-): T | undefined {
-  const result = schema.safeParse(value);
-  if (result.success) return result.data;
-  for (const issue of result.error.issues) {
-    errors.push(
-      `${label}: ${issue.path.join(".") || "(root)"}: ${issue.message}`,
-    );
-  }
-  return undefined;
-}
-
-async function loadOptional(
-  filePath: string,
-  root: string,
-  errors: string[],
-  read: (p: string) => Promise<unknown>,
-): Promise<unknown> {
-  if (!(await Bun.file(filePath).exists())) {
-    errors.push(`${rel(root, filePath)}: file not found`);
-    return undefined;
-  }
-  try {
-    return await read(filePath);
-  } catch (error) {
-    errors.push(`${rel(root, filePath)}: ${(error as Error).message}`);
-    return undefined;
-  }
-}
 
 /**
  * The term pages Hugo builds: one per value in an Episode's books/tags/topics
@@ -227,11 +125,12 @@ async function loadTerms(root: string, errors: string[]): Promise<Terms> {
   );
   for (const file of episodeFiles) {
     const filePath = path.join(content, file);
-    const episode = parseWith(
+    const episode = await loadParsed(
       EpisodeTermsSchema,
-      await loadOptional(filePath, root, errors, readFrontmatter),
-      rel(root, filePath),
+      filePath,
+      root,
       errors,
+      readFrontmatter,
     );
     for (const taxonomy of TAXONOMIES) {
       for (const term of episode?.[taxonomy] ?? []) {
@@ -257,11 +156,6 @@ export const PAGE_RULES = [
   "dissent-attributed",
   "tradition-named",
 ];
-
-/** Review key for a Trigger Claim: `<episode>@HH:MM:SS`. */
-export function triggerKey(trigger: Trigger): string {
-  return `${trigger.episode}@${trigger.timestamp.slice(0, 8)}`;
-}
 
 function checkPage(
   slug: string,
@@ -295,11 +189,8 @@ function checkPage(
   }
 
   for (const trigger of triggers ?? []) {
-    if (!episodes.has(trigger.episode)) {
-      errors.push(
-        `${at}: Trigger Claim ${triggerKey(trigger)} names Episode ${trigger.episode}, not in data/processed-videos.json`,
-      );
-    }
+    const error = unknownEpisode(at, trigger, episodes);
+    if (error) errors.push(error);
   }
 
   const core = page.statements.find(s => s.id === page.core);
@@ -324,7 +215,17 @@ function checkPage(
   }
 
   if (!page.draft && review) {
-    errors.push(...checkOwnerPass(at, page, triggers ?? [], review));
+    const required = {
+      citations: page.statements.flatMap(s =>
+        s.cites.map((_, index) => `${s.id}/${index + 1}`),
+      ),
+      triggers: (triggers ?? []).map(triggerKey),
+      rules: PAGE_RULES,
+      sources: [
+        ...new Set(page.statements.flatMap(s => s.cites.map(c => c.source))),
+      ],
+    };
+    errors.push(...checkPublishGate(at, page.sourcesRead, required, review));
   }
 
   return errors;
@@ -379,108 +280,6 @@ function checkPublishRule(
   return errors;
 }
 
-/** A YAML date as `YYYY-MM-DD`, whether it parsed as a string or a Date. */
-function isoDate(value: string | Date): string {
-  return value instanceof Date ? value.toISOString().slice(0, 10) : value;
-}
-
-/**
- * #93 delegation: who delegated and when, a second agent pass on or after
- * that date, and a review date that the page's sourcesRead matches.
- */
-function checkDelegation(
-  at: string,
-  page: Page,
-  review: Review,
-  delegation: NonNullable<Review["delegation"]>,
-): string[] {
-  const errors = (["by", "date", "secondPass"] as const)
-    .filter(field => !delegation[field])
-    .map(field => `${at}: review delegation has no ${field}`);
-  if (delegation.date && delegation.secondPass) {
-    const date = isoDate(delegation.date);
-    const secondPass = isoDate(delegation.secondPass);
-    if (secondPass < date) {
-      errors.push(
-        `${at}: review delegation secondPass ${secondPass} is before date ${date}`,
-      );
-    }
-  }
-  if (review.review) {
-    const reviewed = isoDate(review.review);
-    const read = page.sourcesRead ? isoDate(page.sourcesRead) : "";
-    if (read !== reviewed) {
-      errors.push(
-        `${at}: sourcesRead "${read}" doesn't match review date ${reviewed}`,
-      );
-    }
-  } else {
-    errors.push(`${at}: review has no review date`);
-  }
-  return errors;
-}
-
-/**
- * #93: every citation, Trigger Claim, cited source and rule has `owner: pass`;
- * under a `delegation` block, `agent: pass` and no `owner: fail` instead.
- */
-function checkOwnerPass(
-  at: string,
-  page: Page,
-  triggers: Trigger[],
-  review: Review,
-): string[] {
-  const errors: string[] = review.delegation
-    ? checkDelegation(at, page, review, review.delegation)
-    : [];
-  const required: Record<
-    "citations" | "triggers" | "rules" | "sources",
-    string[]
-  > = {
-    citations: page.statements.flatMap(s =>
-      s.cites.map((_, index) => `${s.id}/${index + 1}`),
-    ),
-    triggers: triggers.map(triggerKey),
-    rules: PAGE_RULES,
-    sources: [
-      ...new Set(page.statements.flatMap(s => s.cites.map(c => c.source))),
-    ],
-  };
-  for (const [section, keys] of Object.entries(required)) {
-    const entries = review[section as keyof typeof required];
-    for (const key of keys) {
-      if (!entries[key])
-        errors.push(`${at}: review has no ${section}.${key} entry`);
-    }
-  }
-  for (const section of [
-    "citations",
-    "triggers",
-    "rules",
-    "sources",
-  ] as const) {
-    for (const [key, item] of Object.entries(review[section])) {
-      if (review.delegation) {
-        if (item.agent !== "pass") {
-          errors.push(
-            `${at}: review ${section}.${key} has agent "${item.agent ?? ""}", not pass`,
-          );
-        }
-        if (item.owner === "fail") {
-          errors.push(`${at}: review ${section}.${key} has owner "fail"`);
-        }
-        continue;
-      }
-      if (item.owner !== "pass") {
-        errors.push(
-          `${at}: review ${section}.${key} has owner "${item.owner}", not pass`,
-        );
-      }
-    }
-  }
-  return errors;
-}
-
 /**
  * #96 candidate file: unique slugs; `held` says what is missing and
  * `dropped` why; a slug that is already a page is only a page returned by a
@@ -523,11 +322,8 @@ export function checkCandidates(
     ...candidates.statements.flatMap(s => s.triggers),
   ];
   for (const trigger of triggers) {
-    if (!episodes.has(trigger.episode)) {
-      errors.push(
-        `${at}: Trigger Claim ${triggerKey(trigger)} names Episode ${trigger.episode}, not in data/processed-videos.json`,
-      );
-    }
+    const error = unknownEpisode(at, trigger, episodes);
+    if (error) errors.push(error);
   }
   return errors;
 }
@@ -539,38 +335,21 @@ export function checkCandidates(
 export async function checkScholarship(root: string): Promise<string[]> {
   const errors: string[] = [];
   const contentDir = path.join(root, "hugo/content/scholarship");
-  const registryPath = path.join(root, "hugo/data/external-sources.yaml");
-  const episodesPath = path.join(root, "data/processed-videos.json");
+  const registryPath = "hugo/data/external-sources.yaml";
 
-  const registry =
-    parseWith(
-      RegistrySchema,
-      await loadOptional(registryPath, root, errors, readYaml),
-      rel(root, registryPath),
-      errors,
-    ) ?? {};
+  const registry = await loadRegistry(root, errors);
 
   // The publish rule counts sources by author; an authorless summary would
   // count as independent of the book it summarises.
   for (const [id, source] of Object.entries(registry)) {
     if (source.kind === "publisher-summary" && !source.author) {
       errors.push(
-        `${rel(root, registryPath)}: source "${id}" is a publisher-summary with no author; give it the summarised book's author`,
+        `${registryPath}: source "${id}" is a publisher-summary with no author; give it the summarised book's author`,
       );
     }
   }
 
-  const episodeData = parseWith(
-    EpisodesSchema,
-    await loadOptional(episodesPath, root, errors, p => Bun.file(p).json()),
-    rel(root, episodesPath),
-    errors,
-  );
-  const episodes = new Set(
-    (episodeData ?? []).flatMap(e =>
-      e.episodeNumber === undefined ? [] : [e.episodeNumber],
-    ),
-  );
+  const episodes = await loadEpisodes(root, errors);
 
   const terms = await loadTerms(root, errors);
 
@@ -583,10 +362,10 @@ export async function checkScholarship(root: string): Promise<string[]> {
   // Optional: a checkout without candidates has nothing to check.
   const candidatesPath = path.join(root, "data/scholarship-candidates.yaml");
   if (await Bun.file(candidatesPath).exists()) {
-    const candidates = parseWith(
+    const candidates = await loadParsed(
       CandidatesSchema,
-      await loadOptional(candidatesPath, root, errors, readYaml),
-      rel(root, candidatesPath),
+      candidatesPath,
+      root,
       errors,
     );
     if (candidates) {
@@ -604,24 +383,20 @@ export async function checkScholarship(root: string): Promise<string[]> {
     );
     const reviewPath = path.join(root, `data/scholarship-reviews/${slug}.yaml`);
 
-    const page = parseWith(
+    const page = await loadParsed(
       PageSchema,
-      await loadOptional(pagePath, root, errors, readFrontmatter),
-      rel(root, pagePath),
+      pagePath,
+      root,
       errors,
+      readFrontmatter,
     );
-    const triggers = parseWith(
+    const triggers = await loadParsed(
       TriggersSchema,
-      await loadOptional(triggersPath, root, errors, readYaml),
-      rel(root, triggersPath),
+      triggersPath,
+      root,
       errors,
     );
-    const review = parseWith(
-      ReviewSchema,
-      await loadOptional(reviewPath, root, errors, readYaml),
-      rel(root, reviewPath),
-      errors,
-    );
+    const review = await loadParsed(ReviewSchema, reviewPath, root, errors);
     if (!page) continue;
 
     errors.push(

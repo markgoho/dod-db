@@ -1,0 +1,303 @@
+/**
+ * What check:scholarship and check:timeline share: the External Source
+ * registry, Trigger Claim and review-file schemas, file loading, Episode
+ * loading and the #93 publish gate (with its delegation rule).
+ */
+
+import path from "node:path";
+import { z } from "zod";
+
+export const dateValue = z.union([z.string(), z.date()]);
+
+export const CiteSchema = z.object({
+  source: z.string(),
+  locator: z.string(),
+  quote: z.string(),
+  url: z.string().optional(),
+  read: dateValue,
+});
+
+const SourceSchema = z.object({
+  author: z.string().nullable(),
+  title: z.string(),
+  series: z.string().nullable(),
+  publisher: z.string().nullable(),
+  year: z.number().nullable(),
+  edition: z.string().nullable(),
+  class: z.enum(["Scholarly", "Reference", "Tradition"]),
+  kind: z.enum([
+    "book",
+    "article",
+    "publisher-summary",
+    "lecture",
+    "study-bible",
+    "trade-book",
+  ]),
+  access: z.string(),
+  url: z.string(),
+  hostAuthored: z.boolean(),
+  tradition: z.string().nullable(),
+});
+
+export const RegistrySchema = z.record(z.string(), SourceSchema);
+
+export const TriggerSchema = z.object({
+  episode: z.number().int(),
+  speaker: z.string(),
+  timestamp: z.string().regex(/^\d{2}:\d{2}:\d{2}(\.\d+)?$/),
+  text: z.string(),
+});
+
+export const TriggersSchema = z.array(TriggerSchema);
+
+const ReviewItemSchema = z.object({
+  agent: z.string().optional(),
+  owner: z.string(),
+  note: z.string().optional(),
+  edition: z.string().optional(),
+});
+
+const ReviewSectionSchema = z.record(z.string(), ReviewItemSchema).default({});
+
+/**
+ * #93 rule change: the owner delegated the publish review to agents. Fields
+ * are optional here so a missing one is reported, not a parse failure.
+ */
+const DelegationSchema = z.object({
+  by: z.string().optional(),
+  date: dateValue.optional(),
+  issue: z.string().optional(),
+  secondPass: dateValue.optional(),
+});
+
+export const ReviewSchema = z.object({
+  review: dateValue.nullish(),
+  delegation: DelegationSchema.optional(),
+  citations: ReviewSectionSchema,
+  triggers: ReviewSectionSchema,
+  rules: ReviewSectionSchema,
+  sources: ReviewSectionSchema,
+  leads: z.array(z.string()).default([]),
+  uncited: z.array(z.string()).default([]),
+});
+
+const EpisodesSchema = z.array(
+  z.object({ episodeNumber: z.number().int().optional() }),
+);
+
+export type Cite = z.infer<typeof CiteSchema>;
+export type Registry = z.infer<typeof RegistrySchema>;
+export type Trigger = z.infer<typeof TriggerSchema>;
+export type Review = z.infer<typeof ReviewSchema>;
+
+const FRONTMATTER = /^---\n([\s\S]*?)\n---\n/;
+
+export async function readYaml(filePath: string): Promise<unknown> {
+  return Bun.YAML.parse(await Bun.file(filePath).text());
+}
+
+export async function readFrontmatter(filePath: string): Promise<unknown> {
+  const match = FRONTMATTER.exec(await Bun.file(filePath).text());
+  if (!match?.[1]) throw new Error("no front matter");
+  return Bun.YAML.parse(match[1]);
+}
+
+export function rel(root: string, filePath: string): string {
+  return path.relative(root, filePath);
+}
+
+/** Parse with a schema; on failure, push one error per issue and return undefined. */
+export function parseWith<T>(
+  schema: z.ZodType<T>,
+  value: unknown,
+  label: string,
+  errors: string[],
+): T | undefined {
+  const result = schema.safeParse(value);
+  if (result.success) return result.data;
+  for (const issue of result.error.issues) {
+    errors.push(
+      `${label}: ${issue.path.join(".") || "(root)"}: ${issue.message}`,
+    );
+  }
+  return undefined;
+}
+
+export async function loadOptional(
+  filePath: string,
+  root: string,
+  errors: string[],
+  read: (p: string) => Promise<unknown>,
+): Promise<unknown> {
+  if (!(await Bun.file(filePath).exists())) {
+    errors.push(`${rel(root, filePath)}: file not found`);
+    return undefined;
+  }
+  try {
+    return await read(filePath);
+  } catch (error) {
+    errors.push(`${rel(root, filePath)}: ${(error as Error).message}`);
+    return undefined;
+  }
+}
+
+/** Read and parse a YAML or front-matter file; undefined (with errors) on any failure. */
+export async function loadParsed<T>(
+  schema: z.ZodType<T>,
+  filePath: string,
+  root: string,
+  errors: string[],
+  read: (p: string) => Promise<unknown> = readYaml,
+): Promise<T | undefined> {
+  return parseWith(
+    schema,
+    await loadOptional(filePath, root, errors, read),
+    rel(root, filePath),
+    errors,
+  );
+}
+
+/** The shared registry, hugo/data/external-sources.yaml; empty when unreadable. */
+export async function loadRegistry(
+  root: string,
+  errors: string[],
+): Promise<Registry> {
+  return (
+    (await loadParsed(
+      RegistrySchema,
+      path.join(root, "hugo/data/external-sources.yaml"),
+      root,
+      errors,
+    )) ?? {}
+  );
+}
+
+/** Episode Numbers in data/processed-videos.json. */
+export async function loadEpisodes(
+  root: string,
+  errors: string[],
+): Promise<Set<number>> {
+  const episodeData = await loadParsed(
+    EpisodesSchema,
+    path.join(root, "data/processed-videos.json"),
+    root,
+    errors,
+    p => Bun.file(p).json(),
+  );
+  return new Set(
+    (episodeData ?? []).flatMap(e =>
+      e.episodeNumber === undefined ? [] : [e.episodeNumber],
+    ),
+  );
+}
+
+/** Review key for a Trigger Claim: `<episode>@HH:MM:SS`. */
+export function triggerKey(trigger: Trigger): string {
+  return `${trigger.episode}@${trigger.timestamp.slice(0, 8)}`;
+}
+
+/** The error for a Trigger Claim whose Episode isn't processed, or undefined. */
+export function unknownEpisode(
+  at: string,
+  trigger: Trigger,
+  episodes: Set<number>,
+): string | undefined {
+  if (episodes.has(trigger.episode)) return undefined;
+  return `${at}: Trigger Claim ${triggerKey(trigger)} names Episode ${trigger.episode}, not in data/processed-videos.json`;
+}
+
+/** A YAML date as `YYYY-MM-DD`, whether it parsed as a string or a Date. */
+function isoDate(value: string | Date): string {
+  return value instanceof Date ? value.toISOString().slice(0, 10) : value;
+}
+
+/**
+ * #93 delegation: who delegated and when, a second agent pass on or after
+ * that date, and a review date that the page's sourcesRead matches.
+ */
+function checkDelegation(
+  at: string,
+  sourcesRead: string | Date | null | undefined,
+  review: Review,
+  delegation: NonNullable<Review["delegation"]>,
+): string[] {
+  const errors = (["by", "date", "secondPass"] as const)
+    .filter(field => !delegation[field])
+    .map(field => `${at}: review delegation has no ${field}`);
+  if (delegation.date && delegation.secondPass) {
+    const date = isoDate(delegation.date);
+    const secondPass = isoDate(delegation.secondPass);
+    if (secondPass < date) {
+      errors.push(
+        `${at}: review delegation secondPass ${secondPass} is before date ${date}`,
+      );
+    }
+  }
+  if (review.review) {
+    const reviewed = isoDate(review.review);
+    const read = sourcesRead ? isoDate(sourcesRead) : "";
+    if (read !== reviewed) {
+      errors.push(
+        `${at}: sourcesRead "${read}" doesn't match review date ${reviewed}`,
+      );
+    }
+  } else {
+    errors.push(`${at}: review has no review date`);
+  }
+  return errors;
+}
+
+/** The review keys a published page or entry must have, per section. */
+export type RequiredReviewKeys = Record<
+  "citations" | "triggers" | "rules" | "sources",
+  string[]
+>;
+
+/**
+ * #93 publish gate: every required citation, Trigger Claim, cited source and
+ * rule has a review entry, and every entry has `owner: pass`; under a
+ * `delegation` block, `agent: pass` and no `owner: fail` instead.
+ */
+export function checkPublishGate(
+  at: string,
+  sourcesRead: string | Date | null | undefined,
+  required: RequiredReviewKeys,
+  review: Review,
+): string[] {
+  const errors: string[] = review.delegation
+    ? checkDelegation(at, sourcesRead, review, review.delegation)
+    : [];
+  for (const [section, keys] of Object.entries(required)) {
+    const entries = review[section as keyof RequiredReviewKeys];
+    for (const key of keys) {
+      if (!entries[key])
+        errors.push(`${at}: review has no ${section}.${key} entry`);
+    }
+  }
+  for (const section of [
+    "citations",
+    "triggers",
+    "rules",
+    "sources",
+  ] as const) {
+    for (const [key, item] of Object.entries(review[section])) {
+      if (review.delegation) {
+        if (item.agent !== "pass") {
+          errors.push(
+            `${at}: review ${section}.${key} has agent "${item.agent ?? ""}", not pass`,
+          );
+        }
+        if (item.owner === "fail") {
+          errors.push(`${at}: review ${section}.${key} has owner "fail"`);
+        }
+        continue;
+      }
+      if (item.owner !== "pass") {
+        errors.push(
+          `${at}: review ${section}.${key} has owner "${item.owner}", not pass`,
+        );
+      }
+    }
+  }
+  return errors;
+}

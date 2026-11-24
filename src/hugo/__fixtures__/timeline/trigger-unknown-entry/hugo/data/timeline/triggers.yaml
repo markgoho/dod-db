@@ -1,0 +1,18 @@
+- entry: fall
+  episode: 32
+  speaker: "Dan McClellan"
+  timestamp: "00:24:33.250"
+  states: critical
+  text: "The city fell in 586."
+- entry: book
+  episode: 119
+  speaker: "Dan McClellan"
+  timestamp: "00:08:35.900"
+  states: both
+  text: "Tradition says 540, scholars say the exile."
+- entry: no-such-entry
+  episode: 32
+  speaker: "Dan McClellan"
+  timestamp: "00:01:00.000"
+  states: critical
+  text: "Something else entirely."

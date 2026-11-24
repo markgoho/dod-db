@@ -1,0 +1,18 @@
+review: 2026-12-03
+delegation:
+  by: markgoho
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-12-03
+citations:
+  critical/1: { agent: pass, owner: "" }
+triggers:
+  32@00:24:33: { agent: pass, owner: "" }
+rules:
+  critical-scope: { agent: pass, owner: "" }
+  split-shown: { agent: pass, owner: "" }
+  tradition-both-sides: { agent: pass, owner: "" }
+  tradition-named: { agent: pass, owner: "" }
+  conditional-not-critical: { agent: pass, owner: "" }
+sources:
+  scholarly-book: { agent: pass, owner: "" }
