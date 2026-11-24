@@ -1,0 +1,549 @@
+/*
+  Custom block for the Shroud of Turin Scholarship Page: one time axis, the
+  linen's radiocarbon range as a swatch of cloth above it, the three
+  fourteenth-century documents as numbered pins below it. Composes panel,
+  type-section-title, cloud-section and scholarship-meta.
+
+  Above the axis is what was measured, below it what was written: position
+  carries the distinction, so it reads without colour. Everything on the axis
+  is placed from its year by one formula.
+*/
+.shroud-dates {
+  /* The axis runs from --shroud-from for --shroud-span years. */
+  --shroud-from: 1200;
+  --shroud-span: 220;
+  --shroud-ink: var(--tan-900);
+  /* One numbered marker's width; the icons are a multiple of it. */
+  --shroud-unit: 8.5cqi;
+
+  container: shroud-dates / inline-size;
+}
+
+.shroud-defs {
+  block-size: 0;
+  inline-size: 0;
+  position: absolute;
+}
+
+.shroud-dates__panel {
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+/* Headline strip: the count of laboratories in a burst. */
+.shroud-dates__claim {
+  align-items: center;
+  background: var(--shroud-ink);
+  color: var(--color-text-inverse);
+  column-gap: var(--space-xs);
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  grid-template-columns: auto minmax(0, 1fr);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  padding: var(--space-3xs) var(--space-xs);
+  text-wrap: balance;
+}
+
+.shroud-dates__badge {
+  display: grid;
+  inline-size: var(--space-2xl);
+  margin-block: calc(var(--space-2xs) * -1);
+  place-items: center;
+  rotate: -8deg;
+}
+
+.shroud-dates__badge > * {
+  grid-area: 1 / 1;
+}
+
+.shroud-dates__badge > svg {
+  aspect-ratio: 1;
+  fill: var(--color-accent);
+  inline-size: 100%;
+  overflow: visible;
+  stroke: var(--shroud-ink);
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.shroud-dates__badge > span {
+  color: var(--shroud-ink);
+  font-size: var(--step-3);
+}
+
+/* Drawn objects. Lengths inside are the drawing's own units. */
+.shroud-icon {
+  aspect-ratio: 1;
+  inline-size: calc(var(--shroud-unit) * 1.6);
+  overflow: visible;
+  stroke: var(--shroud-ink);
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+.shroud-ink-fill {
+  fill: var(--shroud-ink);
+  stroke: none;
+}
+
+.shroud-paper {
+  fill: var(--tan-000);
+}
+
+.shroud-amber {
+  fill: var(--color-accent);
+}
+
+.shroud-seal {
+  fill: var(--color-action);
+}
+
+:is(.shroud-thread, .shroud-writing, .shroud-cord) {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.shroud-thread {
+  stroke-width: 3;
+}
+
+.shroud-writing {
+  stroke: var(--tan-400);
+}
+
+/* The chart: one inline axis that everything is measured against. */
+.shroud-dates__chart {
+  display: grid;
+}
+
+.shroud-year--1250 {
+  --year: 1250;
+}
+
+.shroud-year--1300 {
+  --year: 1300;
+}
+
+.shroud-year--1350 {
+  --year: 1350;
+}
+
+.shroud-year--1400 {
+  --year: 1400;
+}
+
+.shroud-dates__carbon {
+  --year: 1260;
+  --years: 130;
+
+  display: grid;
+  gap: var(--space-3xs);
+  inline-size: calc(var(--years) / var(--shroud-span) * 100%);
+  margin-inline-start: calc(
+    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
+  );
+}
+
+.shroud-dates__labs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shroud-dates__labs > li {
+  display: grid;
+  font-family: var(--font-family-display);
+  /* Three names share the band's width on a phone. */
+  font-size: 3.9cqi;
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  justify-items: center;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+}
+
+/* Each laboratory points down at the one range they reported. */
+.shroud-dates__labs > li::after {
+  border: var(--space-2xs) solid transparent;
+  border-block-end: 0;
+  border-block-start-color: var(--shroud-ink);
+  content: "";
+  margin-block-start: var(--space-4xs);
+}
+
+/* The range, as a swatch of the linen lying on the axis. */
+.shroud-dates__band {
+  align-content: center;
+  background:
+    repeating-linear-gradient(45deg, transparent 0 5px, var(--tan-300) 5px 6px),
+    repeating-linear-gradient(
+      -45deg,
+      transparent 0 5px,
+      var(--tan-300) 5px 6px
+    ),
+    var(--tan-000);
+  border: var(--border-width-md) solid var(--shroud-ink);
+  border-block-end: 0;
+  display: grid;
+  gap: var(--space-4xs);
+  justify-items: center;
+  padding: var(--space-2xs) var(--space-3xs);
+  text-align: center;
+}
+
+.shroud-dates__band > strong {
+  font-family: var(--font-family-display);
+  font-size: var(--step-1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
+  white-space: nowrap;
+}
+
+.shroud-dates__band > span {
+  background: var(--color-accent-muted);
+  border: var(--border-width-sm) solid var(--shroud-ink);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--shroud-ink);
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-wrap: balance;
+}
+
+/*
+  The axis: a ruler with its years written on it. It fades in from the left
+  (no statement gives a first year) and runs on to the right.
+*/
+.shroud-dates__axis {
+  background: var(--shroud-ink);
+  block-size: var(--space-s);
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--space-2xs)) 0,
+    100% 50%,
+    calc(100% - var(--space-2xs)) 100%,
+    0 100%
+  );
+  color: var(--color-text-inverse);
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--space-s);
+  mask-image: linear-gradient(to right, transparent, #000 16%);
+  position: relative;
+}
+
+.shroud-dates__axis > span {
+  inset-inline-start: calc(
+    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
+  );
+  position: absolute;
+  translate: -50% 0;
+}
+
+.shroud-dates__below {
+  min-block-size: calc(var(--shroud-unit) * 2);
+  position: relative;
+}
+
+/* The radiocarbon range carried down through the documents' side. */
+.shroud-dates__below::before {
+  --year: 1260;
+  --years: 130;
+
+  background: radial-gradient(var(--color-accent) 24%, transparent 28%) 0 0 /
+    8px 8px;
+  border-inline: var(--border-width-sm) dashed var(--shroud-ink);
+  content: "";
+  inline-size: calc(var(--years) / var(--shroud-span) * 100%);
+  inset-block: 0;
+  inset-inline-start: calc(
+    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
+  );
+  opacity: 0.5;
+  position: absolute;
+}
+
+/* Before 1300: an empty frame, open on the left. */
+.shroud-dates__silence {
+  --year: 1300;
+
+  border: var(--border-width-sm) dashed var(--shroud-ink);
+  border-block-start: 0;
+  border-inline-start: 0;
+  font-size: 3.9cqi;
+  font-weight: var(--font-weight-bold);
+  inline-size: calc(
+    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
+  );
+  line-height: var(--line-height-tight);
+  /* The words stop at 1260, where the range begins; the frame runs to 1300. */
+  padding: var(--space-3xs)
+    calc(40 / var(--shroud-span) * 100% + var(--space-3xs)) var(--space-3xs) 0;
+  position: relative;
+  text-wrap: pretty;
+}
+
+.shroud-dates__pins {
+  inset: 0;
+  position: absolute;
+}
+
+/* The 1350s: a decade, not a year. */
+.shroud-dates__decade {
+  --year: 1350;
+  --years: 10;
+
+  border: var(--border-width-md) solid var(--shroud-ink);
+  border-block-start: 0;
+  block-size: var(--space-3xs);
+  inline-size: calc(var(--years) / var(--shroud-span) * 100%);
+  inset-block-start: 0;
+  inset-inline-start: calc(
+    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
+  );
+  position: absolute;
+}
+
+/* A pin: a stem from its year on the axis down to its number. */
+.shroud-pin {
+  display: grid;
+  inline-size: var(--shroud-unit);
+  inset-block-start: 0;
+  inset-inline-start: calc(
+    (var(--year) - var(--shroud-from)) / var(--shroud-span) * 100%
+  );
+  position: absolute;
+}
+
+.shroud-pin > svg {
+  block-size: calc(var(--shroud-unit) * 0.8);
+  fill: none;
+  inline-size: 100%;
+  overflow: visible;
+  stroke: var(--shroud-ink);
+  stroke-linecap: round;
+  stroke-width: 3;
+}
+
+.shroud-pin path {
+  vector-effect: non-scaling-stroke;
+}
+
+.shroud-pin--lirey {
+  --year: 1355;
+
+  translate: -50% 0;
+}
+
+/* 1389 and 1390 are a year apart: their numbers stand either side. */
+.shroud-pin--bishop {
+  --year: 1389;
+
+  translate: -100% 0;
+}
+
+.shroud-pin--pope {
+  --year: 1390;
+}
+
+.shroud-num {
+  aspect-ratio: 1;
+  background: var(--color-action);
+  border: var(--border-width-sm) solid var(--shroud-ink);
+  border-radius: 50%;
+  color: var(--color-text-inverse);
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: calc(var(--shroud-unit) * 0.55);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inline-size: var(--shroud-unit);
+  line-height: 1;
+  place-items: center;
+}
+
+/* The documents, in order: one comic panel each. */
+.shroud-dates__records {
+  display: grid;
+  gap: var(--space-2xs);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shroud-dates__records > li {
+  align-items: center;
+  background:
+    linear-gradient(to top right, var(--tan-000) 55%, transparent),
+    radial-gradient(var(--tan-300) 24%, transparent 28%) 0 0 / 8px 8px,
+    var(--tan-000);
+  border: var(--border-width-md) solid var(--shroud-ink);
+  column-gap: var(--space-2xs);
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr);
+  padding: var(--space-2xs);
+  row-gap: var(--space-3xs);
+}
+
+.shroud-dates__records strong {
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  text-shadow: var(--space-4xs) var(--space-4xs) 0 var(--color-accent);
+}
+
+.shroud-dates__record-text {
+  font-size: var(--step--2);
+  grid-column: 1 / -1;
+  text-wrap: pretty;
+}
+
+/* Only the link-preview card shows the cut-down line. */
+.shroud-dates__record-short {
+  display: none;
+}
+
+/* How the date has been received: a caption box, as a comic's narration. */
+.shroud-dates__note {
+  background: var(--color-accent-muted);
+  border: var(--border-width-sm) solid var(--shroud-ink);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--shroud-ink);
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-bold);
+  padding: var(--space-3xs) var(--space-2xs);
+  text-wrap: balance;
+}
+
+.shroud-dates__more {
+  border-block-start: var(--border-width-sm) solid var(--tan-300);
+  padding-block-start: var(--space-xs);
+}
+
+/*
+  Wide: a fixed marker size and the three documents side by side. Literal
+  length: container conditions cannot read custom properties.
+*/
+@container shroud-dates (width >= 40rem) {
+  .shroud-dates__panel {
+    --shroud-unit: var(--space-m);
+
+    padding: var(--space-m);
+  }
+
+  .shroud-dates__claim {
+    font-size: var(--step-1);
+  }
+
+  .shroud-dates__labs > li {
+    font-size: var(--step--1);
+  }
+
+  .shroud-dates__silence {
+    font-size: var(--step--2);
+  }
+
+  .shroud-dates__band > strong {
+    font-size: var(--step-4);
+  }
+
+  .shroud-dates__band > span {
+    font-size: var(--step--1);
+  }
+
+  .shroud-dates__records {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .shroud-dates__records > li {
+    align-content: start;
+  }
+}
+
+/* The poster is tall: the picture grows to fill it. */
+.scholarship-share:target .shroud-dates__panel {
+  --shroud-unit: calc(var(--space-l) * 1.25);
+
+  gap: var(--space-m);
+}
+
+.scholarship-share:target .shroud-dates__band {
+  padding-block: var(--space-l);
+}
+
+.scholarship-share:target .shroud-dates__band > strong {
+  font-size: var(--step-5);
+}
+
+.scholarship-share:target .shroud-dates__band > span {
+  font-size: var(--step-0);
+}
+
+.scholarship-share:target .shroud-dates__axis {
+  block-size: var(--space-m);
+  font-size: var(--step--1);
+  line-height: var(--space-m);
+}
+
+.scholarship-share:target
+  :is(.shroud-dates__silence, .shroud-dates__record-text, .shroud-dates__note) {
+  font-size: var(--step--1);
+}
+
+/* The card is seen small: the picture fills it, each document cut to a line. */
+.scholarship-share:has(#share-card:target) .shroud-dates__panel {
+  --shroud-unit: var(--space-l);
+
+  gap: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .shroud-dates__claim {
+  font-size: var(--step-2);
+}
+
+.scholarship-share:has(#share-card:target) .shroud-dates__labs > li {
+  font-size: var(--step-0);
+}
+
+.scholarship-share:has(#share-card:target) .shroud-dates__band {
+  padding-block: var(--space-4xs);
+}
+
+.scholarship-share:has(#share-card:target) .shroud-dates__band > span {
+  font-size: var(--step-0);
+}
+
+.scholarship-share:has(#share-card:target) .shroud-dates__axis {
+  block-size: var(--space-m);
+  font-size: var(--step-0);
+  line-height: var(--space-m);
+}
+
+.scholarship-share:has(#share-card:target) .shroud-dates__silence {
+  font-size: var(--step-0);
+}
+
+.scholarship-share:has(#share-card:target) .shroud-dates__records > li {
+  padding: var(--space-3xs) var(--space-2xs);
+}
+
+.scholarship-share:has(#share-card:target) .shroud-dates__record-short {
+  display: block;
+  font-size: var(--step-0);
+  font-weight: var(--font-weight-bold);
+  grid-column: 1 / -1;
+  line-height: var(--line-height-tight);
+  text-wrap: balance;
+}

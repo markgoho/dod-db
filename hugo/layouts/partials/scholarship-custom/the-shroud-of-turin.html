@@ -1,0 +1,175 @@
+{{- /*
+  Custom block for /scholarship/the-shroud-of-turin/: one time axis with the
+  linen's radiocarbon range drawn above it and the three fourteenth-century
+  documents pinned below it. A view of the page's reviewed statements
+  (`radiocarbon`, `first-record`, `memorandum`, `clement`, `earlier`,
+  `reception`); it makes no claim they don't. Reword a line only when the
+  statement it comes from is re-reviewed.
+
+  Everything on the axis is placed by its year (see the stylesheet), so where
+  the pins fall against the band is arithmetic, not a drawing choice. The axis
+  fades in from the left with no first year: the statements give none.
+
+  Years: 1260 and 1390 are the `radiocarbon` short's range; "1350s" is the
+  `first-record` short, drawn as a decade; 1389 is the `memorandum` short;
+  1390 is the bull's date in the `clement` text (its short gives no year).
+  */
+-}}
+{{- $records := slice
+  (dict
+  "key" "lirey"
+  "icon" "medallion"
+  "year" "1350s"
+  "stem" "M5 3L5 10"
+  "card" "First appears in the record, at Lirey"
+  "text" "The shroud first appears in the historical record, at Lirey in northeastern France.")
+  (dict
+  "key" "bishop"
+  "icon" "letter"
+  "year" "1389"
+  "stem" "M10 0L5 10"
+  "card" "The bishop wrote that an inquiry had found it painted"
+  "text" "Bishop Pierre d’Arcis wrote that an earlier bishop’s inquiry had found the cloth painted, and that the artist had attested this.")
+  (dict
+  "key" "pope"
+  "icon" "bull"
+  "year" "1390"
+  "stem" "M0 0L5 10"
+  "card" "The pope allowed showings, as a representation"
+  "text" "Pope Clement VII allowed the cloth to be shown, on condition that it was announced as a figure or representation of Christ’s burial cloth, not the true one.")
+-}}
+<section class="cloud-section shroud-dates">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  {{/* Drawn once and reused: the sample vial, and one object per document. */}}
+  <svg class="shroud-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <g id="shroud-vial">
+        <path class="shroud-ink-fill" d="M27 13h16v37a8 8 0 0 1-16 0z" />
+        <path class="shroud-paper" d="M23 9h16v37a8 8 0 0 1-16 0z" />
+        <path class="shroud-amber" d="M23 30h16v16a8 8 0 0 1-16 0z" />
+        <path class="shroud-thread" d="M28 36q3-4 6 0t-3 6" />
+        <rect class="shroud-paper" x="19" y="5" width="24" height="8" rx="2" />
+      </g>
+      {{/* The pilgrim's medallion from the Lirey showing. */}}
+      <g id="shroud-medallion">
+        <circle class="shroud-ink-fill" cx="35" cy="40" r="21" />
+        <circle class="shroud-paper" cx="32" cy="10" r="6" />
+        <circle class="shroud-amber" cx="32" cy="37" r="21" />
+        <rect class="shroud-paper" x="21" y="28" width="22" height="18" />
+        <path class="shroud-thread" d="M27 34h10M27 40h10" />
+      </g>
+      {{/* The bishop's letter. */}}
+      <g id="shroud-letter">
+        <rect class="shroud-ink-fill" x="17" y="11" width="38" height="48" />
+        <rect class="shroud-paper" x="12" y="6" width="38" height="48" />
+        <path class="shroud-writing" d="M20 18h22M20 27h22M20 36h22M20 45h12" />
+      </g>
+      {{/* The pope's bull: a sheet with its seal hanging from it. */}}
+      <g id="shroud-bull">
+        <rect class="shroud-ink-fill" x="17" y="9" width="38" height="34" />
+        <rect class="shroud-paper" x="12" y="4" width="38" height="34" />
+        <path class="shroud-writing" d="M20 14h22M20 22h22M20 30h12" />
+        <path class="shroud-cord" d="M28 38l3 10M34 38l-3 10" />
+        <circle class="shroud-seal" cx="31" cy="53" r="8" />
+      </g>
+      <path
+        id="shroud-burst"
+        d="M50.0 1.0L58.7 12.0L71.3 5.9L74.3 19.5L88.3 19.4L85.1 33.1L97.8 39.1L89.0 50.0L97.8 60.9L85.1 66.9L88.3 80.6L74.3 80.5L71.3 94.1L58.7 88.0L50.0 99.0L41.3 88.0L28.7 94.1L25.7 80.5L11.7 80.6L14.9 66.9L2.2 60.9L11.0 50.0L2.2 39.1L14.9 33.1L11.7 19.4L25.7 19.5L28.7 5.9L41.3 12.0z" />
+    </defs>
+  </svg>
+  <div class="shroud-dates__panel panel">
+    <p class="shroud-dates__claim">
+      <span class="shroud-dates__badge">
+        <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+          <use href="#shroud-burst" />
+        </svg>
+        <span>3</span>
+      </span>
+      <span>laboratories dated the linen to between 1260 and 1390</span>
+    </p>
+    <div class="shroud-dates__chart">
+      {{/* Above the axis: what the laboratories measured. */}}
+      <div class="shroud-dates__carbon">
+        <ul class="shroud-dates__labs">
+          {{- range slice "Arizona" "Oxford" "Zurich" }}
+            <li>
+              <svg
+                class="shroud-icon"
+                viewBox="0 0 64 64"
+                aria-hidden="true"
+                focusable="false">
+                <use href="#shroud-vial" />
+              </svg>
+              <span>{{ . }}</span>
+            </li>
+          {{- end }}
+        </ul>
+        <p class="shroud-dates__band">
+          <strong>1260–1390</strong>
+          <span>with 95 percent confidence</span>
+        </p>
+      </div>
+      <div class="shroud-dates__axis" aria-hidden="true">
+        <span class="shroud-year--1250">1250</span>
+        <span class="shroud-year--1300">1300</span>
+        <span class="shroud-year--1350">1350</span>
+        <span class="shroud-year--1400">1400</span>
+      </div>
+      {{/* Below the axis: what the documents record. */}}
+      <div class="shroud-dates__below">
+        <p class="shroud-dates__silence">
+          No document refers explicitly to the shroud before the fourteenth
+          century.
+        </p>
+        <div class="shroud-dates__pins" aria-hidden="true">
+          <span class="shroud-dates__decade"></span>
+          {{- range $index, $record := $records }}
+            <span class="shroud-pin shroud-pin--{{ $record.key }}">
+              <svg viewBox="0 0 10 10" preserveAspectRatio="none">
+                <path d="{{ $record.stem }}" />
+              </svg>
+              <span class="shroud-num">{{ add $index 1 }}</span>
+            </span>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+    <ol class="shroud-dates__records">
+      {{- range $index, $record := $records }}
+        <li>
+          <span class="shroud-num" aria-hidden="true">{{ add $index 1 }}</span>
+          <svg
+            class="shroud-icon"
+            viewBox="0 0 64 64"
+            aria-hidden="true"
+            focusable="false">
+            <use href="#shroud-{{ $record.icon }}" />
+          </svg>
+          <strong>{{ $record.year }}</strong>
+          <span class="shroud-dates__record-text" data-card-hide
+            >{{ $record.text }}</span
+          >
+          {{/* The same statement cut to a glance, for the link-preview card only. */}}
+          <span class="shroud-dates__record-short">{{ $record.card }}</span>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="shroud-dates__note" data-card-hide>
+      The weight of evidence is taken to favour the medieval date, though
+      defenders of the shroud’s authenticity still contest it.
+    </p>
+    <p class="shroud-dates__more scholarship-meta" data-share-hide>
+      Every line here comes from the cited answers below:
+      <a href="#radiocarbon">the radiocarbon date</a>
+      (<a href="#reception">has it held up?</a>),
+      <a href="#first-record">the first record</a>,
+      <a href="#earlier">the silence before it</a>,
+      <a href="#memorandum">the bishop</a> and <a href="#clement">the pope</a>.
+    </p>
+  </div>
+</section>
