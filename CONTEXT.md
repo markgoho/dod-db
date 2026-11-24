@@ -156,6 +156,10 @@ _Avoid_: Real date, scholarly date
 The date a named tradition holds for a **Timeline Entry**'s subject, from a Tradition **External Source** and attributed in its own words.
 _Avoid_: Traditional date, apologetic date
 
+**Setting**:
+The period a composition **Timeline Entry**'s text narrates: the text's own internal date, never a historical claim. It never places a **Timeline Entry**.
+_Avoid_: Narrative date, internal date, date of events
+
 **Trigger Claim**:
 A **Speaker**'s assertion in a **Transcript** that prompts a **Synthesis Page** and sets its subject.
 _Avoid_: Consensus claim, source
@@ -211,6 +215,8 @@ _Avoid_: Citation, snippet source
 - The **Timeline** has two lanes: **Critical Dates** and scholars' statements on the left, **Tradition Dates** on the right. A **Timeline Entry** is placed by its **Critical Date**; one with no **Critical Date** is placed by its **Tradition Date**, in the tradition's lane only, beside the cited statement of what scholars say (#162, 2026-11-24, reversing #97's placement rule).
 - A **Timeline Entry** shows a **Tradition Date** only when one of its **Trigger Claims** states the tradition's side.
 - A **Timeline Entry** is worded for what its sources date, even when that is narrower than the **Trigger Claim**.
+- Only a composition **Timeline Entry** has a **Setting**, cited to Scholarly or Reference **External Sources** only and worded no more strongly than they are (#167 §4).
+- A **Setting** without a year draws no span on the **Timeline**'s minimap, only its text line; it is never anchored by a **Tradition Date** (#167 §4).
 - A **Scholarship Page** statement's short answer reports where scholarship stands (consensus, most scholars, divided, no consensus), backed by two or more independent authors; a view only one cited author holds appears in the statement, attributed, never as the answer. Uncontested facts (a date, what an inscription says) are exempt. A statement whose sources can't support a state-of-the-field answer is reframed or cut (#133).
 - A **Scholarship Page** is published only when two or more independent **External Sources**, at least one Scholarly or Reference, back its core claim and it makes three or more statements.
 - A new **Episode** can add a **Trigger Claim** to a **Synthesis Page** or suggest a new subject; it never changes a statement.

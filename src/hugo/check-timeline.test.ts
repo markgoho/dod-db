@@ -86,7 +86,7 @@ describe("checkTimeline", () => {
 
   test("fails a setting with no citations", async () => {
     expect(await check("setting-no-cites")).toEqual([
-      `timeline/book: setting cites no source; cite a Scholarly or Reference source`,
+      `timeline/book: setting cites no Scholarly or Reference source`,
     ]);
   });
 

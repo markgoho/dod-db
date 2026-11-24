@@ -194,32 +194,31 @@ function checkEntry(
         `${at}: has a setting but entryKind ${entry.entryKind}; a setting is for composition entries only`,
       );
     }
-    if (entry.setting.cites.length === 0) {
-      errors.push(
-        `${at}: setting cites no source; cite a Scholarly or Reference source`,
-      );
-    }
     if (entry.setting.to !== undefined && entry.setting.from === undefined) {
       errors.push(`${at}: setting has to but no from; give from with to`);
     }
-    for (const [index, cite] of entry.setting.cites.entries()) {
+  }
+
+  // Critical, undated and setting cites need a Scholarly or Reference source;
+  // a setting cites nothing else. An unknown source is reported above, once.
+  for (const part of ["critical", "undated", "setting"] as const) {
+    const cites = entry[part]?.cites;
+    if (!cites) continue;
+    let faulted = false;
+    let scholarly = false;
+    for (const [index, cite] of cites.entries()) {
       const source = registry[cite.source];
-      if (source && source.class === "Tradition") {
+      if (!source) faulted = true;
+      else if (source.class === "Scholarly" || source.class === "Reference")
+        scholarly = true;
+      else if (part === "setting") {
+        faulted = true;
         errors.push(
           `${at}: citation setting/${index + 1} cites "${cite.source}", a ${source.class} source; a setting cites Scholarly or Reference sources only`,
         );
       }
     }
-  }
-
-  for (const part of ["critical", "undated"] as const) {
-    const cites = entry[part]?.cites;
-    if (!cites) continue;
-    const scholarly = cites.some(c => {
-      const source = registry[c.source];
-      return source?.class === "Scholarly" || source?.class === "Reference";
-    });
-    if (!scholarly) {
+    if (!scholarly && !faulted) {
       errors.push(`${at}: ${part} cites no Scholarly or Reference source`);
     }
   }
