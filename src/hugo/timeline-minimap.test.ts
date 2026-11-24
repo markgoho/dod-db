@@ -66,7 +66,8 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       buildTimeline(true),
       buildTimeline(false),
     ]);
-  });
+    // Two full site builds: well past Bun's 5s default on a busy machine.
+  }, 60_000);
 
   test("each era is a link to its axis band, which takes focus", () => {
     const bands = select(page, ".timeline-axis > .timeline-era");

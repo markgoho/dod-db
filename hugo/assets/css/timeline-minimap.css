@@ -103,10 +103,14 @@
   }
 }
 
-/* The open popover drops from the bar, as tall as the viewport below it allows. */
+/*
+  The open popover drops from the stuck bar and fills the viewport below it.
+  Where the bar has not stuck yet there is no room under it, so the panel
+  falls back to the viewport's top inline-start corner, over the bar.
+*/
 .timeline-minimap__map:popover-open {
   background: var(--tan-000);
-  block-size: calc(100% - var(--space-s));
+  block-size: calc(100dvh - var(--timeline-minimap-bar) - 2 * var(--space-s));
   border: var(--border-width-md) solid var(--tan-900);
   border-radius: var(--border-radius-sm);
   box-shadow: var(--panel-shadow-offset) var(--panel-shadow-offset) 0
@@ -125,9 +129,17 @@
   position: fixed;
   position-anchor: --timeline-minimap-bar;
   position-area: block-end span-inline-end;
+  position-try-fallbacks: --timeline-minimap-corner;
 }
 
-/* No anchor positioning: a panel at the viewport's top inline-start corner. */
+@position-try --timeline-minimap-corner {
+  block-size: calc(100dvh - 2 * var(--space-s));
+  inset: var(--space-s) auto auto var(--space-s);
+  margin: 0;
+  position-area: none;
+}
+
+/* No anchor positioning: always the corner panel. */
 @supports not (position-area: block-end) {
   .timeline-minimap__map:popover-open {
     block-size: calc(100dvh - 2 * var(--space-s));
