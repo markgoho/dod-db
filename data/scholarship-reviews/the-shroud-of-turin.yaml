@@ -2,8 +2,8 @@
 # agent: results of the agent's first pass (#143, 2026-11-24). That pass does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass.
 # First pass: three research agents fetched every source on 2026-11-24 and copied quotes from the fetched page or PDF text; every page quote was then script-matched against those notes (whitespace only). Locators come from the notes. The second pass must re-fetch.
-# Second agent pass 2026-11-24 (verify/143, independent): all fourteen sources re-fetched (PDFs and HTML by script; Karapanagiotis, Di Lazzaro, De Caro on mdpi.com, Britannica and both Wiley abstracts in Chrome); every quote script-matched against the fetched text (whitespace only), in-page for the browser sources. Two PDF text-layer misses (radiocarbon/8, xray/1) matched verbatim on mdpi.com. Every locator re-checked (Wild paragraphs mapped from the HTML, PDF printed pages, mdpi.com section headings by DOM walk). Every Trigger Claim re-matched by script at its timestamp and speaker and re-read in context. Author overlap checked by script against Damon et al.'s 21 authors. #133 applied clause by clause to every short.
-# Second pass changes: earlier short narrowed (“explicitly”; “universal”, not “general”; names the theory class); xray short gives the paper's figures instead of “narrow range”; memorandum/2 extended to carry manufactus / artificialiter depictus; four quotes and two locators changed to curly apostrophes to match their sources; locators corrected (clement/3–4 paragraph 1, radiocarbon/8 p. 4, reception/12 full heading) and paragraph numbers added to Wild's Authenticity cites; text fixes (earlier “best known”, memorandum “in the middle”, reception's “Its reason”, Freer-Waters and Jull's affiliations, the retest sentence, repair's “allow” → “suggest”); De Caro title apostrophe in the registry. No cites added or removed; keys unchanged.
+# Second agent pass 2026-11-24 (verify/143, independent): all fourteen sources re-fetched (PDFs and HTML by script; Karapanagiotis, Di Lazzaro, De Caro on mdpi.com, Britannica and both Wiley abstracts in Chrome); every quote script-matched against the fetched text (whitespace only), in-page for the browser sources. Two PDF text-layer misses (radiocarbon/8, xray/1) matched verbatim on mdpi.com. Every locator re-checked (Wild paragraphs mapped from the HTML, PDF printed pages, mdpi.com section headings by DOM walk). Every Trigger Claim re-matched by script at its timestamp and speaker and re-read with two lines either side (no dropped hedge). Author overlap checked by script against Damon et al.'s 21 authors. #133 applied clause by clause to every short.
+# Second pass changes: earlier short narrowed (“explicitly”; “universal”, not “general”; names the theory class); xray short gives the paper's figures instead of “narrow range”; memorandum/2 extended to carry manufactus / artificialiter depictus; four quotes and two locators changed to curly apostrophes to match their sources; locators corrected (clement/3–4 paragraph 1, radiocarbon/8 p. 4, reception/12 full heading) and paragraph numbers added to Wild's Authenticity cites; text fixes (earlier “best known”, memorandum “in the middle”, reception's “Its reason”, Freer-Waters and Jull's affiliations, the retest sentence, repair's “allow” → “suggest”); De Caro title apostrophe in the registry; “Piero” → “Paolo” Di Lazzaro; Russakoff's unsourced “art historian” replaced by her affiliation. No cites added or removed; keys unchanged.
 review: 2026-11-24
 delegation:
   by: owner
@@ -183,7 +183,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Di Lazzaro et al. are critics of the dating; cited for the range and its rounding only. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator corrected p. 5 → p. 4 (LSE PDF has a cover page; printed header “4 of 16”). The PDF text layer interleaves this sentence with a figure caption, so the script match was done on mdpi.com (browser), where it matches verbatim; verified.",
+      note: "Di Lazzaro et al. are critics of the dating; cited for the range and its rounding only. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: locator corrected p. 5 → p. 4 (LSE PDF has a cover page; printed header “4 of 16”). The PDF text layer interleaves this sentence with a figure caption, so the script match was done on mdpi.com (browser), where it matches verbatim; verified. Text's “Piero Di Lazzaro” corrected to “Paolo Di Lazzaro” (PDF byline).",
     }
   reception/1:
     {
@@ -231,7 +231,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Abstract only; full text paywalled. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+      note: "Abstract only; full text paywalled. First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: matched verbatim by in-page script on the Wiley abstract page (Chrome); verified.",
     }
   reception/9:
     {
@@ -279,7 +279,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Rogers 2005 is described through Karapanagiotis; Rogers’s own paper was read only in a Zenodo copy of the Elsevier PDF (see uncited). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified.",
+      note: "Rogers 2005 is described through Karapanagiotis; Rogers’s own paper was read only in a Zenodo copy of the Elsevier PDF (see uncited). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified. Karapanagiotis places the cotton and coating findings in Rogers's 2005 peer-reviewed article on samples from the radiocarbon strip (his 2001 newsletter used the Raes sample only), as the text says.",
     }
   repair/4:
     {
@@ -405,7 +405,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Abstract only; full text paywalled. The paper drew published commentaries and replies in JFS (not read; see leads). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified on the Wiley abstract page, which links two comments and two authors' responses (consistent with blood/3's “met with criticism”).",
+      note: "Abstract only; full text paywalled. The paper drew published commentaries and replies in JFS (not read; see leads). First pass 2026-11-24: matched against fetched text. Second pass 2026-11-24: verified on the Wiley abstract page, which links three comments, each with an authors' response (consistent with blood/3's “met with criticism”).",
     }
   blood/2:
     {
@@ -531,7 +531,7 @@ sources:
       agent: pass,
       owner: "",
       edition: "Textiles 5(1) 8, March 2025",
-      note: "New entry. Read in a browser (scripted requests 403). Sections 1–4.1.2, 4.2.6–4.2.7, 4.3, 6 read; rest swept by keyword. Second pass 2026-11-24: read in Chrome; all 18 quotes matched by in-page script; section of each quote found by DOM walk; §§4.2.7, 4.3 and 6 read in full; verified.",
+      note: "New entry. Read in a browser (scripted requests 403). Sections 1–4.1.2, 4.2.6–4.2.7, 4.3, 6 read; rest swept by keyword. Second pass 2026-11-24: read in Chrome; all 18 quotes in final form (curly apostrophes included) matched by in-page script; section of each quote found by DOM walk; §§4.2.7, 4.3 and 6 read in full; verified.",
     }
   dilazzaro-2020-radiocarbon-shroud:
     {
@@ -601,7 +601,7 @@ sources:
       agent: pass,
       owner: "",
       edition: "The Medieval Review 15.10.33, 2015",
-      note: "New entry. Independent of Nicolotti (art historian, American University of Paris). Second pass 2026-11-24: full text read in the TMR JATS galley (view/20176/26268); paragraphs 3 and 9 confirmed; verified.",
+      note: "New entry. Independent of Nicolotti (American University of Paris). Second pass 2026-11-24: the galley gives her affiliation but not “art historian”, so the text's “the art historian Anna Russakoff” is now “Anna Russakoff of the American University of Paris”; full text read in the TMR JATS galley (view/20176/26268); paragraphs 3 and 9 confirmed; verified.",
     }
   john-paul-ii-1998-turin-address:
     {
