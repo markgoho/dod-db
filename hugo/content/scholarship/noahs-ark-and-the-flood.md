@@ -3,7 +3,7 @@ title: "Noah's Ark and the Flood"
 dek: "How Genesis 6–9 was put together, how it relates to older Mesopotamian flood stories, what geology says about a worldwide flood, and whether the ark has been found."
 draft: true
 core: sources
-sourcesRead:
+sourcesRead: 2026-11-24
 related:
   books: [genesis]
   tags: [noah, flood, ararat]
@@ -30,8 +30,8 @@ statements:
   - id: sources
     group: "Two stories in Genesis 6–9"
     question: "Is the flood story in Genesis one story or two?"
-    short: "Most scholars conclude that at least two flood stories, usually called J and P, are woven together."
-    text: "Jeffrey Geoghegan's Bible Odyssey article says the biblical account seems to be the product of at least two distinct traditions that were later woven into a single narrative, and that the number and character of its differences have led most scholars to that conclusion. The New Catholic Encyclopedia entry says that for more than two centuries scholars have recognized distinguishable sources in the Pentateuch, and that in the flood account at least two were woven together, often called the Yahwist source (J) and the Priestly source (P). Christine Hayes's Yale lecture likewise finds two flood stories in Genesis 6–9 with distinctive styles, themes, vocabularies and details, interwoven rather than placed side by side as the two creation stories are, and the chapter summary for Coogan and Chapman's textbook says that in Genesis 6.5–9.17 the J and P sources, which until then appear separately, are interconnected and woven together. The Encyclopaedia Judaica entry says the story developed in more than a single tradition and that the strands were carefully interwoven without eliminating some contradictions and duplications. The sources give their reasons. The story tells things twice and the tellings disagree: Noah is told to bring two of every kind of animal in one place and seven pairs of clean animals and one pair of unclean in another; the flood lasts 40 days in one verse and 150 in another; and some passages name God Yahweh (“the LORD”) and others Elohim (“God”). Geoghegan notes that earlier interpreters reconciled these differences one by one, as phases of the flood or as an expanded command, and allows that this may be; it is their number and character, here and in many other duplicate stories, that persuades most scholars. On this reading the seven pairs of clean animals belong to the tradition in which Noah offers a sacrifice after the flood, and the Priestly tradition, in which sacrifice is the domain of priests, has none. The New Catholic Encyclopedia adds that when the J elements are taken out, the P parts form a complete and consistent narrative."
+    short: "Most scholars conclude that at least two flood stories, often called J and P, are woven together."
+    text: "Jeffrey Geoghegan's Bible Odyssey article says the biblical account seems to be the product of at least two distinct traditions that were later woven into a single narrative, and that the number and character of its differences have led most scholars to that conclusion. The New Catholic Encyclopedia entry says that for more than two centuries scholars have recognized distinguishable sources in the Pentateuch, and that in the flood account at least two were woven together, often called the Yahwist source (J) and the Priestly source (P). Christine Hayes's Yale lecture likewise finds two flood stories in Genesis 6–9 with distinctive styles, themes, vocabularies and details, interwoven rather than placed side by side as the two creation stories are, and the chapter summary for Coogan and Chapman's textbook says that in Genesis 6.5–9.17 the J and P sources, which until then appear separately, are interconnected and woven together. The Encyclopaedia Judaica entry says the story developed in more than a single tradition and that the strands were carefully interwoven without eliminating some contradictions and duplications. The sources give their reasons. The story tells things twice and the tellings disagree: Noah is told to bring two of every kind of animal in one place and seven pairs of clean animals and one pair of unclean in another; the flood lasts 40 days in one verse and 150 in another; and some passages name God Yahweh (“the LORD”) and others Elohim (“God”). Geoghegan notes that earlier interpreters reconciled these differences one by one, as phases of the flood or as an expanded command, and allows that this may be; it is their number and character, here and in many other duplicate stories, that persuades most scholars. On this reading the seven pairs of clean animals belong to the tradition in which Noah offers a sacrifice after the flood, and the other tradition, often associated with priestly interests, has no such sacrifice, since sacrifice is the domain of priests. The New Catholic Encyclopedia adds that when the J elements are taken out, the P parts form a complete and consistent narrative."
     cites:
       - source: geoghegan-2021-two-flood-narratives
         locator: "opening paragraph"
@@ -47,7 +47,7 @@ statements:
         read: 2026-11-24
       - source: hayes-rlst145-l4
         locator: "ch. 5 [00:35:32]"
-        quote: "In Genesis 6 through 9 we seem to have two flood stories with distinctive styles, and themes, and vocabularies, and substantive details, but they're interwoven instead of being placed side by side."
+        quote: "So what we have in the first few chapters of Genesis are two creation stories that have distinctive styles, distinctive themes, distinctive vocabularies and they're placed side by side. In Genesis 6 through 9 we seem to have two flood stories with distinctive styles, and themes, and vocabularies, and substantive details, but they're interwoven instead of being placed side by side."
         read: 2026-11-24
       - source: coogan-brief-4e-summary-ch4
         locator: "section “The Flood”"
@@ -92,8 +92,8 @@ statements:
   - id: parallels
     group: "Older flood stories"
     question: "Are there older flood stories like the one in Genesis?"
-    short: "Yes. Mesopotamian flood stories, among them Atrahasis and tablet XI of the Gilgamesh epic, are older and share its outline."
-    text: "Flood stories were told in many ancient societies, but those closest to the Bible come from Mesopotamia. Hayes's lecture names a very ancient Sumerian flood story whose hero is Ziusudra, the early Semitic Epic of Atrahasis, and the most detailed of them, the flood story Utnapishtim tells in the Epic of Gilgamesh. The Encyclopaedia Judaica dates the Old Babylonian Atrahasis tablets to around 1700 BCE and calls tablet XI of Gilgamesh the most complete version of the flood story in cuneiform; the summary of Coogan and Chapman's textbook says the dating shows these Babylonian epics are earlier than the biblical story. The shared outline is set out by the Encyclopaedia Judaica and, for Gilgamesh, by Dexter Callender in a Bible Odyssey video: in both the flood comes by divine decision, one favoured man is told to build a large vessel to divine instructions, animals and birds are taken aboard, the vessel comes to rest on a mountain, the hero sends out birds to see whether the land is dry, and on leaving the vessel he offers a sacrifice."
+    short: "Yes. Mesopotamian flood stories, among them Atrahasis and tablet XI of the Gilgamesh epic, are older, and the Gilgamesh story follows the same outline."
+    text: "Flood stories were told in many ancient societies, but those closest to the Bible come from Mesopotamia. Hayes's lecture names a very ancient Sumerian flood story whose hero is Ziusudra, the early Semitic Epic of Atrahasis, and the most detailed of them, in the Epic of Gilgamesh. The Encyclopaedia Judaica dates the Old Babylonian Atrahasis tablets to around 1700 BCE and calls tablet XI of Gilgamesh, in which the flood hero Utnapishtim tells the story, the most complete version of the flood story in cuneiform; the summary of Coogan and Chapman's textbook says the dating shows these Babylonian epics are earlier than the biblical story. The shared outline is set out by the Encyclopaedia Judaica and, for Gilgamesh, by Dexter Callender in a Bible Odyssey video: in both the flood comes by divine decision, one favoured man is told to build a large vessel to divine instructions, animals and birds are taken aboard, the vessel comes to rest on a mountain, the hero sends out birds to see whether the land is dry, and on leaving the vessel he offers a sacrifice."
     cites:
       - source: young-sperling-ej-flood
         locator: "section “Extra-Biblical Accounts”"
@@ -109,11 +109,11 @@ statements:
         read: 2026-11-24
       - source: young-sperling-ej-flood
         locator: "section “Extra-Biblical Accounts”"
-        quote: "The Sumerian account inspired a similar history of humankind written in the Old Babylonian dialect of Akkadian on three clay tablets, dated to around 1700 b.c.e., with fragments of two other versions inscribed about a thousand years later."
+        quote: "The Sumerian account inspired a similar history of humankind written in the Old Babylonian dialect of Akkadian on three clay tablets, dated to around 1700 b.c.e., with fragments of two other versions inscribed about a thousand years later. The composition is now called the Epic of Atrahasis"
         read: 2026-11-24
       - source: young-sperling-ej-flood
         locator: "section “Extra-Biblical Accounts”"
-        quote: "is virtually intact, thus providing the most complete version of the deluge story in cuneiform script"
+        quote: 'Tablet xi, in which the immortalized hero of the flood, usually called Utanapishtim ("He-Found-Life"), though occasionally also Atrahasis, relates the story of the flood to his mortal descendant Gilgamesh, is virtually intact, thus providing the most complete version of the deluge story in cuneiform script'
         read: 2026-11-24
       - source: coogan-brief-4e-summary-ch4
         locator: "section “Near Eastern Parallels”"
@@ -139,7 +139,7 @@ statements:
     group: "Older flood stories"
     question: "Did the biblical writers draw on the Mesopotamian stories?"
     short: "The sources read agree that the Genesis story draws on the older Mesopotamian tradition; they differ on how directly."
-    text: "The summary of Coogan and Chapman's textbook says the Genesis flood narratives borrow heavily from the flood narratives of Israel's Near Eastern neighbours, and gives the reason: dating shows the Babylonian epics are earlier, so they undoubtedly influenced the biblical writers rather than the other way round. Hayes's lecture says the Bible is again making use of older traditions and motifs and adapting them to its own purposes. The Encyclopaedia Judaica entry says it is clear that the biblical account depends on the much earlier Mesopotamian material, but that the many differences may come either from Israelite reworking of earlier sources or from an intermediate version. The New Catholic Encyclopedia entry says the Genesis account reflects the influence of flood stories from other Near Eastern peoples, but that the many parallels do not suggest direct literary dependence. Dexter Callender finds a detail of the Gilgamesh story inside Genesis: Utnapishtim sends out three birds, a dove, a swallow and finally a raven that does not come back, while Noah first sends a raven that does not come back and then a dove three times, which suggests to Callender that elements of two different accounts are woven together."
+    text: "The summary of Coogan and Chapman's textbook says the Genesis flood narratives borrow heavily from the flood narratives of Israel's Near Eastern neighbours, and gives the reason: dating shows the Babylonian epics are earlier, so they undoubtedly influenced the biblical writers rather than the other way round. Hayes's lecture says the Bible is again making use of older traditions and motifs and adapting them to its own purposes. The Encyclopaedia Judaica entry says it is clear that the biblical account depends on the much earlier Mesopotamian material, but that the many differences may come either from Israelite reworking of earlier sources or from an intermediate version. The New Catholic Encyclopedia entry says the Genesis account reflects the influence of flood stories from other Near Eastern peoples, but that the many parallels do not suggest direct literary dependence."
     cites:
       - source: coogan-brief-4e-summary-ch4
         locator: "opening paragraph"
@@ -165,23 +165,11 @@ statements:
         locator: "section “Other Flood Traditions”"
         quote: "The many such parallels in these accounts with the Genesis flood story do not suggest direct literary dependence."
         read: 2026-11-24
-      - source: callender-noah-and-gilgamesh
-        locator: "video transcript"
-        quote: "It’s three different birds, it’s a dove, a swallow and then finally, a raven."
-        read: 2026-11-24
-      - source: callender-noah-and-gilgamesh
-        locator: "video transcript"
-        quote: "But then, Noah goes on to send a bird three more times and it’s a dove; and that follows the progression of three sending’s of the bird that we have in the Mesopotamian account."
-        read: 2026-11-24
-      - source: callender-noah-and-gilgamesh
-        locator: "video transcript"
-        quote: "So, it appears that perhaps we have two accounts or two elements of two different accounts woven together in the same narrative"
-        read: 2026-11-24
   - id: differences
     group: "Older flood stories"
     question: "How does the Genesis story differ from the Mesopotamian ones?"
-    short: "It has one God, in control throughout, who sends the flood to punish human wrongdoing and saves Noah for his righteousness."
-    text: "The Encyclopaedia Judaica entry puts the basic difference in religious outlook: Genesis is essentially monotheistic, while Gilgamesh and its predecessors are polytheistic. Hayes's lecture notes that Gilgamesh gives no motive for the flood, while in Atrahasis humankind is destroyed because its noise disturbs the gods; Genesis instead gives God a moral reason, the earth's violence and injustice, and saves Noah for his righteousness. The Encyclopaedia Judaica entry agrees that in Genesis the flood is punishment for human injustice and that Noah is saved for his moral worth, and adds that the same idea, though not fully stated in Gilgamesh, is implicit in the god Ea's criticism of Enlil. In the Mesopotamian stories, Hayes says, the gods lose control of the flood and cower in fear, and they crowd around the sacrifice like flies; the biblical God is unthreatened by the waters, stays in control and does not need the sacrifice for food. The New Catholic Encyclopedia entry says these differences, especially in how the gods and their motives are depicted, are what make the Mesopotamian accounts significant for interpreting Genesis."
+    short: "It has one God, who sends the flood to punish human wrongdoing and saves Noah for his righteousness."
+    text: "The Encyclopaedia Judaica entry puts the basic difference in religious outlook: Genesis is essentially monotheistic, while Gilgamesh and its predecessors are polytheistic. Hayes's lecture notes that Gilgamesh gives no motive for the flood, while in Atrahasis humankind is destroyed because its noise disturbs the gods; Genesis instead gives God a moral reason, the earth's violence and injustice, and saves Noah for his righteousness. The Encyclopaedia Judaica entry agrees that in Genesis the flood is punishment for human injustice and that Noah is saved for his moral worth, and adds that the same idea, though not fully stated in Gilgamesh, is implicit in the god Ea's criticism of Enlil. In the Mesopotamian stories, Hayes says, the gods do not appear to be in control: when the flood comes they seem to lose control and cower in terror, and they crowd around the sacrifice like flies; the biblical God is unthreatened by the waters, stays in control and does not need the sacrifice for food. The New Catholic Encyclopedia entry says these differences, especially in how the gods and their motives are depicted, are what make the Mesopotamian accounts significant for interpreting Genesis."
     cites:
       - source: young-sperling-ej-flood
         locator: "section “The Biblical-Mesopotamian Parallels”"
@@ -201,6 +189,10 @@ statements:
         read: 2026-11-24
       - source: hayes-rlst145-l4
         locator: "ch. 4 [00:24:02]"
+        quote: "Hamas is a word that literally means violence, bloodshed, but also all kinds of injustice and oppression."
+        read: 2026-11-24
+      - source: hayes-rlst145-l4
+        locator: "ch. 4 [00:24:02]"
         quote: "Noah is saved specifically for his righteousness, he was righteous in his generation."
         read: 2026-11-24
       - source: young-sperling-ej-flood
@@ -210,6 +202,10 @@ statements:
       - source: hayes-rlst145-l4
         locator: "ch. 4 [00:24:02]"
         quote: "Furthermore in the Mesopotamian accounts the gods do not appear to be in control."
+        read: 2026-11-24
+      - source: hayes-rlst145-l4
+        locator: "ch. 4 [00:24:02]"
+        quote: "When the flood comes the gods themselves seem to have lost control. They're terrified, they cower."
         read: 2026-11-24
       - source: hayes-rlst145-l4
         locator: "ch. 4 [00:24:02]"
@@ -231,7 +227,7 @@ statements:
     group: "Was there a flood?"
     question: "Does geology support a worldwide flood?"
     short: "No. Geologists dismissed a global flood in the 19th century, and no geological evidence suggests one."
-    text: "The geologist David Montgomery, writing in GSA Today, recounts how geologists came to dismiss the idea of a global flood. William Buckland, Oxford's first geology professor, had gathered evidence for one in 1823, but by 1836 acknowledged that there was no geological evidence of a global flood after all; Louis Agassiz persuaded geologists that most of the evidence once read as a global flood recorded a flood of ice; and Charles Lyell argued that the fragile cinder cones of southern France could not have survived a flood strong enough to carve the valleys cut into the lava flows below them. By the end of the nineteenth century, Montgomery writes, conservative Christians generally accepted that there was no geological support for reading Noah's flood as a globe-wrecking deluge. Belief in a global flood was revived by John Whitcomb and Henry Morris's The Genesis Flood (1961), whose authors had no geological training. The New Catholic Encyclopedia entry says that no scientific, geological or historical evidence suggests that a single flood ever wiped out all civilisation in Mesopotamia, let alone the whole world, and that marine fossils found in mountains are the result of geological uplift."
+    text: "The geologist David Montgomery, writing in GSA Today, recounts how geologists came to dismiss the idea of a global flood. William Buckland, Oxford's first geology professor, had gathered evidence for one in 1823, but by 1836 acknowledged that there was no geological evidence of a global flood after all; Louis Agassiz persuaded geologists that most of the evidence once read as a global flood recorded a flood of ice; and Charles Lyell argued that the fragile cinder cones of southern France could not have survived a flood strong enough to carve the valleys cut into the lava flows that came from them. By the end of the nineteenth century, Montgomery writes, conservative Christians generally accepted that there was no geological support for reading Noah's flood as a globe-wrecking deluge. Belief in a global flood was revived by John Whitcomb and Henry Morris's The Genesis Flood (1961), whose authors had no geological training. Montgomery concludes that the ideas invoked to explain such a flood have been refuted time and again and that there is no geologic evidence of a global deluge. The New Catholic Encyclopedia entry says that no scientific, geological or historical evidence suggests that a single flood ever wiped out all civilisation in Mesopotamia, let alone the whole world, and that marine fossils found in mountains are the result of geological uplift."
     cites:
       - source: montgomery-2012-evolution-of-creationism
         locator: "p. 4, abstract"
@@ -247,11 +243,11 @@ statements:
         read: 2026-11-24
       - source: montgomery-2012-evolution-of-creationism
         locator: "p. 6"
-        quote: "convince geologists that most of the evidence traditionally interpreted as resulting from a global flood actually recorded a flood of ice."
+        quote: "Shortly after Buckland’s recantation, Louis Agassiz invoked stray boulders in the Swiss Alps, grooved rock outcrops, and scratches on the underside of a rock overhang near Edinburgh to convince geologists that most of the evidence traditionally interpreted as resulting from a global flood actually recorded a flood of ice."
         read: 2026-11-24
       - source: montgomery-2012-evolution-of-creationism
         locator: "p. 6"
-        quote: "Lyell reasoned that Noah’s Flood could not have carved the valleys because any flood capable of carving valleys into solid rock would have swept away the loose cinders that formed the volcanic cones."
+        quote: "Particularly compelling was Charles Lyell’s argument that the cinder cones of southern France were too fragile to have survived a global flood. Deep valleys were incised into hard lava flows that could be traced back to their volcanic source in the cinder cones. Thus, the valleys must have been carved after the cinder cones formed. Lyell reasoned that Noah’s Flood could not have carved the valleys because any flood capable of carving valleys into solid rock would have swept away the loose cinders that formed the volcanic cones."
         read: 2026-11-24
       - source: montgomery-2012-evolution-of-creationism
         locator: "p. 4"
@@ -264,6 +260,10 @@ statements:
       - source: montgomery-2012-evolution-of-creationism
         locator: "p. 7"
         quote: "Their lack of geological training did not stop them from claiming that a global flood provided a better explanation for the geologic record than did the theories of geologists."
+        read: 2026-11-24
+      - source: montgomery-2012-evolution-of-creationism
+        locator: "p. 8"
+        quote: "the ideas invoked to explain such an event have been refuted time and again, and there is no geologic evidence of a global deluge."
         read: 2026-11-24
       - source: jensen-nce-flood
         locator: "section “Historical and Scientific Issues”"
@@ -306,8 +306,8 @@ statements:
   - id: black-sea
     group: "Was there a flood?"
     question: "Was it the flooding of the Black Sea?"
-    short: "A hypothesis first put forward in 1997 says so; the later reviews read find no catastrophic flood."
-    text: "V. Yanko-Hombach and her co-authors describe the hypothesis, first put forward by Ryan and colleagues in 1997 and modified by them in 2003: an abrupt and catastrophic inflow of Mediterranean water raised the level of the Black Sea, and the resulting inundation and environmental change shaped the biblical flood legend. Their review of the geological, palaeontological and archaeological record finds that the Black Sea rose only gradually when it reconnected with the Sea of Marmara, that the evidence does not sustain any catastrophic flood in the early Holocene, and that there was no horde of refugees carrying a flood legend south to Mesopotamia; barring new evidence, they conclude that the Black Sea flood is a contemporary legend. A. E. Aksu and R. N. Hiscott's 2022 review of the evidence from 1997 to 2021 likewise finds that the reconnection of the Black Sea with the Mediterranean was gradual and that their observations are incompatible with a catastrophic flood."
+    short: "A hypothesis first put forward in 1997 says so; two later overviews of the evidence find that the Black Sea's reconnection with the Mediterranean was gradual, not a catastrophic flood."
+    text: "V. Yanko-Hombach and her co-authors describe the hypothesis, first put forward by Ryan and colleagues in 1997 and modified by them in 2003: an abrupt and catastrophic inflow of Mediterranean water raised the level of the Black Sea, and the resulting inundation and environmental change shaped the biblical flood legend. Their review of the geological, palaeontological and archaeological record finds that the Black Sea rose only gradually when it reconnected with the Sea of Marmara, that the evidence does not sustain any catastrophic flood in the early Holocene, and that there was no horde of refugees carrying a flood legend south to Mesopotamia; barring new evidence, they conclude that the Black Sea flood is a contemporary legend. A. E. Aksu and R. N. Hiscott's 2022 review of the evidence from 1997 to 2021 likewise finds that the reconnection of the Black Sea with the Mediterranean was gradual and that their observations are incompatible with that reconnection having been a catastrophic flood."
     cites:
       - source: yanko-hombach-2006-black-sea
         locator: "p. 1"
@@ -344,8 +344,8 @@ statements:
   - id: ark
     group: "The ark"
     question: "How big was the ark said to be?"
-    short: "About 450 by 75 by 45 feet, taking a cubit as 1.5 feet; the measurements belong to the Priestly source."
-    text: "The New Catholic Encyclopedia entry gives the ark's dimensions in Genesis 6:15–16, reckoning a cubit at 1.5 feet, as about 450 feet long, 75 feet wide and 45 feet high, with three decks, a roof and a door in its side. It and Geoghegan both assign the precise measurements to the Priestly source. Utnapishtim's boat in Gilgamesh is quite different: the Encyclopaedia Judaica entry calls it a perfect cube of 120 cubits with seven levels, and the New Catholic Encyclopedia puts it at 180 feet on each side. The Encyclopaedia Judaica entry also notes that the Mesopotamian hero needed a boatman to steer, while Noah's vessel had neither rudder nor sail, and reads the building of an ark rather than a ship as crediting Noah's survival to God alone and not to human skill."
+    short: "About 450 by 75 by 45 feet, taking a cubit as 1.5 feet."
+    text: "The New Catholic Encyclopedia entry gives the ark's dimensions in Genesis 6:15–16, reckoning a cubit at 1.5 feet, as about 450 feet long, 75 feet wide and 45 feet high, with three decks, a roof and a door in its side. It assigns the precise measurements to the Priestly source; Geoghegan says they seem to derive from the passages that call God Elohim, the tradition he says is often associated with priestly interests. Utnapishtim's boat in Gilgamesh is quite different: the Encyclopaedia Judaica entry calls it a perfect cube of 120 cubits with seven levels, and the New Catholic Encyclopedia puts it at 180 feet on each side. The Encyclopaedia Judaica entry also notes that the Mesopotamian hero needed a boatman to steer, while Noah's vessel had neither rudder nor sail, and reads the building of an ark rather than a ship as crediting Noah's survival to God alone and not to human skill."
     cites:
       - source: jensen-nce-flood
         locator: "section “Other Flood Traditions”"
@@ -357,7 +357,7 @@ statements:
         read: 2026-11-24
       - source: geoghegan-2021-two-flood-narratives
         locator: "section “Why are there so many duplicate stories in the Bible?”"
-        quote: "The precise measurements of the ark (Gen 6:14-15), the age of Noah before and after the flood (Gen 7:11; Gen 8:13), and the recurring references to specific days, months and years (Gen 8:4-5, Gen 8:13-14), all seem to derive from this source."
+        quote: "Thus, those passages employing the divine name “God” (Hebrew ‘elohim) present a deity who is transcendent and systematic in carrying out the flood. The precise measurements of the ark (Gen 6:14-15), the age of Noah before and after the flood (Gen 7:11; Gen 8:13), and the recurring references to specific days, months and years (Gen 8:4-5, Gen 8:13-14), all seem to derive from this source."
         read: 2026-11-24
       - source: young-sperling-ej-flood
         locator: "section “Extra-Biblical Accounts”"
@@ -375,7 +375,7 @@ statements:
     group: "The ark"
     question: "Where does Genesis say the ark came to rest?"
     short: "On the “mountains of Ararat”: a range, not a single named peak."
-    text: "Genesis places the ark on the mountains of Ararat. The Encyclopaedia Judaica entry identifies Ararat as a range northeast of Lake Van, and contrasts it with the single peak, Mount Nimush or Nisir, far to the south, where Utnapishtim's boat runs aground. The archaeologist Eric Cline, in a Bible Odyssey video, says the mountains of Ararat more likely lie towards Urartu, nearer Iran, and that the peak now called Mount Ararat is most likely not where the ark landed; he says it was given that name a couple of centuries ago, partly for tourism."
+    text: "Genesis places the ark on the mountains of Ararat. The Encyclopaedia Judaica entry identifies Ararat as a range northeast of Lake Van, and contrasts it with the single peak, Mount Nimush or Nisir, far to the south, where Utnapishtim's boat runs aground. The archaeologist Eric Cline, in a Bible Odyssey video, says the mountains of Ararat more likely lie towards Urartu, nearer Iran, and that the peak now called Mount Ararat is most likely not where the ark landed."
     cites:
       - source: young-sperling-ej-flood
         locator: "section “The Biblical-Mesopotamian Parallels”"
@@ -383,7 +383,11 @@ statements:
         read: 2026-11-24
       - source: cline-noahs-ark
         locator: "video transcript"
-        quote: "Mount Ararat is not where the ark landed most likely. Mount Ararat was named that a couple of centuries ago in part for tourism purposes, right? We should be looking for the mountains of Ararat, which are more likely over towards Urartu, closer to Iran."
+        quote: "Mount Ararat is not where the ark landed most likely."
+        read: 2026-11-24
+      - source: cline-noahs-ark
+        locator: "video transcript"
+        quote: "We should be looking for the mountains of Ararat, which are more likely over towards Urartu, closer to Iran."
         read: 2026-11-24
   - id: found
     group: "The ark"
@@ -409,7 +413,7 @@ statements:
         read: 2026-11-24
       - source: cline-noahs-ark
         locator: "video transcript"
-        quote: "When you land and when you get out, one of the first things that you’re, I think, going to do is take your boat apart."
+        quote: "When you land and when you get out, one of the first things that you’re, I think, going to do is take your boat apart. I’ve said this before and I’ll say it again, we probably shouldn’t be looking for Noah’s ark, we should be looking for Noah’s house or Noah’s barn or whatever he built with the wood that he used when he took the ark apart."
         read: 2026-11-24
       - source: jensen-nce-flood
         locator: "section “Historical and Scientific Issues”"
