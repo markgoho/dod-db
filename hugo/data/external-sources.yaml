@@ -755,3 +755,87 @@ dotan-ej-masorah:
   url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/masorah"
   hostAuthored: false
   tradition: null
+
+hayes-rlst145-l6:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 6 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-6"
+  hostAuthored: false
+  tradition: null
+
+nabre-exodus-15-notes:
+  author: null
+  title: "Notes to Exodus, chapter 15"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/exodus/15"
+  hostAuthored: false
+  tradition: null
+
+greenberg-sperling-ej-exodus:
+  author: "Moshe Greenberg and S. David Sperling"
+  title: "Exodus, Book of"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed. (entry credit line)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/exodus-book"
+  hostAuthored: false
+  tradition: null
+
+caine-fox-ej-numbers:
+  author: "Ivan Caine and Nili S. Fox"
+  title: "Numbers, Book of"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed. (entry credit line)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/numbers-book"
+  hostAuthored: false
+  tradition: null
+
+bond-2014-john-mentor-rival:
+  author: "Helen K. Bond"
+  title: "Was John a Mentor or Rival of Jesus?"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2014
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website; opens in a browser, refuses scripted requests"
+  url: "https://www.bibleodyssey.org/articles/was-john-a-mentor-or-rival-of-jesus/"
+  hostAuthored: false
+  tradition: null
+
+collins-nce-pastoral-epistles:
+  author: "R. F. Collins"
+  title: "Pastoral Epistles"
+  series: "New Catholic Encyclopedia"
+  publisher: null
+  year: null
+  edition: "2nd-edition text (bibliography to 2001)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/pastoral-epistles"
+  hostAuthored: false
+  tradition: null
