@@ -1,8 +1,8 @@
 /*
   Timeline minimap (#167 §1–§3). Composes button-brutalist and type-eyebrow;
   the generated rules in timeline-minimap.html set the current-state custom
-  properties (--band-current, --band-weight, --tick-current, --tick-reach)
-  and show the current label in each fixed slot.
+  properties (--band-current, --band-weight, --tick-current, --tick-reach,
+  --setting-display) and show the current label in each fixed slot.
 
   Breakpoint, 108rem: the axis column starts (100dvw - --content-max-width) / 2
   + --space-s in from the viewport edge. A one-line era label needs about 8rem
@@ -181,11 +181,17 @@
     justify-self: start;
   }
 
-  /* Shown only while the axis fills the viewport: its view timeline's contain range. */
+  /*
+    Shown from when the axis fills the viewport until it has left the top.
+    Not contain: that hides the rail once the axis bottom rises past the
+    viewport bottom, before the last entries (Daniel) can become current.
+    Everything below the axis is in the content column, and the footer is
+    far more than a viewport below it, so the rail never covers the footer.
+  */
   @supports ((animation-timeline: view()) and (animation-range: 0% 100%)) {
     .timeline-minimap {
       animation: timeline-minimap-show linear;
-      animation-range: contain;
+      animation-range: contain 0% exit 100%;
       animation-timeline: --timeline-axis;
       inset-inline-start: round(var(--rail-gap), 1px);
       margin: 0;
@@ -390,4 +396,41 @@
 .timeline-minimap__tick:hover {
   outline: var(--border-width-sm) solid var(--color-action);
   outline-offset: var(--border-width-sm);
+}
+
+/*
+  The current entry's narrated setting (#170): a faint hatched span at its
+  years, beside the tick track, and a dotted arc from the span's middle to
+  the tick. Absent until a generated rule sets --setting-display.
+*/
+.timeline-minimap__setting {
+  /* display, not visibility: a visible child would show through the hidden rail. */
+  display: var(--setting-display, none);
+}
+
+.timeline-minimap__setting > * {
+  inset-block: round(down, var(--from) * 100%, 1px)
+    round(down, (1 - var(--to)) * 100%, 1px);
+  pointer-events: none;
+  position: absolute;
+}
+
+.timeline-minimap__setting-span {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--tan-500) 0 var(--border-width-sm),
+    transparent 0 calc(2 * var(--border-width-sm))
+  );
+  inline-size: var(--space-2xs);
+  inset-inline-start: calc(100% - var(--track) - var(--space-xs));
+  min-block-size: var(--space-3xs);
+}
+
+.timeline-minimap__setting-arc {
+  border: var(--border-width-sm) dotted var(--tan-500);
+  border-end-start-radius: var(--space-2xs);
+  border-inline-end: 0;
+  border-start-start-radius: var(--space-2xs);
+  inset-inline: calc(100% - var(--track) - var(--space-xs) - var(--space-3xs))
+    calc(var(--track) - var(--space-3xs));
 }

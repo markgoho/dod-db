@@ -10,8 +10,9 @@
   (scroll-target-group); it stays rendered while the popover is closed, so the
   bar tracks the era with no geometry. The generated :has() rules below key
   every current-state style on its :target-current link: the caption label,
-  the bar's era, the shaded band and the extended tick. Only entries are
-  scroll targets, so the highlight never alternates between eras and entries.
+  the bar's era, the shaded band, the extended tick and the entry's narrated
+  setting (#170). Only entries are scroll targets, so the highlight never
+  alternates between eras and entries.
   timeline-minimap.ts mirrors the current tick into aria-current on scrollend.
   */
 -}}
@@ -40,13 +41,25 @@
     {{- else -}}
       {{- $date = $p.critical.display -}}
     {{- end -}}
+    {{- $pos := div (sub (float $year) $start) $span -}}
+    {{- /* A narrated setting with years: a span at its years and an arc from its middle to the tick. */ -}}
+    {{- $setting := dict -}}
+    {{- with $p.setting -}}
+      {{- if isset . "from" -}}
+        {{- $from := div (sub (float .from) $start) $span -}}
+        {{- $to := div (sub (float (.to | default .from)) $start) $span -}}
+        {{- $mid := div (add $from $to) 2 -}}
+        {{- $setting = dict "from" $from "to" $to "arcFrom" (math.Min $mid $pos) "arcTo" (math.Max $mid $pos) -}}
+      {{- end -}}
+    {{- end -}}
     {{- $ticks = $ticks | append (dict
+      "setting" $setting
       "id" .page.File.ContentBaseName
       "era" $eraId
       "title" .page.Title
       "date" $date
       "placed" (eq .by "tradition")
-      "pos" (div (sub (float $year) $start) $span)
+      "pos" $pos
       "col" $col)
     -}}
   {{- end -}}
@@ -130,6 +143,21 @@
             aria-label="{{ .title }}: {{ replace .date "–" " to " }}"
             style="--pos: {{ .pos }}; --col: {{ .col }}"></a>
         {{- end }}
+        {{- range $t := $ticks }}
+          {{- with .setting }}
+            <span
+              class="timeline-minimap__setting"
+              data-setting="{{ $t.id }}"
+              aria-hidden="true">
+              <span
+                class="timeline-minimap__setting-span"
+                style="--from: {{ .from }}; --to: {{ .to }}"></span>
+              <span
+                class="timeline-minimap__setting-arc"
+                style="--from: {{ .arcFrom }}; --to: {{ .arcTo }}"></span>
+            </span>
+          {{- end }}
+        {{- end }}
       </div>
     </div>
   </nav>
@@ -138,12 +166,16 @@
   {{- $current := `:is(:target-current, .target-current)` }}
   {{- $labels := slice }}
   {{- $marks := slice }}
+  {{- $settings := slice }}
   {{- $eraLabels := slice }}
   {{- $eraBands := slice }}
   {{- range $ticks }}
     {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [href="#%s"]%s)` .id $current }}
     {{- $labels = $labels | append (printf `%s [data-now="%s"]` $on .id) }}
     {{- $marks = $marks | append (printf `%s [data-tick="%s"]` $on .id) }}
+    {{- if .setting }}
+      {{- $settings = $settings | append (printf `%s [data-setting="%s"]` $on .id) }}
+    {{- end }}
   {{- end }}
   {{- range $bands }}
     {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [data-in="%s"]%s)` .id $current }}
@@ -162,6 +194,11 @@
       --tick-current: var(--color-action);
       --tick-reach: var(--space-xs);
     }
+    {{- with $settings }}
+      {{ delimit . ",\n" | safeCSS }} {
+        --setting-display: contents;
+      }
+    {{- end }}
   </style> {{- $js := resources.Get "ts/timeline-minimap.ts" | js.Build (dict "targetPath" "timeline-minimap.js") }}
   {{- if hugo.IsProduction }}
     {{- $js = $js | resources.Minify | resources.Fingerprint }}

@@ -56,6 +56,14 @@ function select(html: string, selector: string): El[] {
 
 const ids = (els: El[]) => els.map(e => e.attrs.id);
 const hrefs = (els: El[]) => els.map(e => e.attrs.href?.replace(/^#/, ""));
+/** The numeric custom properties in an element's style attribute. */
+const vars = (el: El | undefined): Record<string, number> =>
+  Object.fromEntries(
+    [...(el?.attrs.style ?? "").matchAll(/--([\w-]+): ([\d.e-]+)/g)].map(m => [
+      m[1],
+      Number(m[2]),
+    ]),
+  );
 
 describe.skipIf(!hasHugo)("Timeline minimap", () => {
   let page = "";
@@ -128,6 +136,37 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       expect(style).toContain(
         `.timeline-minimap:has(.timeline-minimap__spy [href="#${id}"]:is(:target-current, .target-current)) [data-now="${id}"]`,
       );
+  });
+
+  test("a narrated setting with years is a span at its years, arced to its tick, shown only while its entry is current", () => {
+    // Only Daniel's setting has years; Deuteronomy's and Judges' have none.
+    const settings = select(page, ".timeline-minimap__setting");
+    expect(settings.map(s => s.attrs["data-setting"])).toEqual(["daniel"]);
+    expect(settings[0]?.attrs["aria-hidden"]).toBe("true");
+
+    // The strip runs 5000 BCE to 0; Daniel is set 600–501 BCE.
+    const span = vars(
+      select(
+        page,
+        '[data-setting="daniel"] .timeline-minimap__setting-span',
+      )[0],
+    );
+    expect(span.from).toBeCloseTo(4400 / 5000, 4);
+    expect(span.to).toBeCloseTo(4499 / 5000, 4);
+
+    // The arc joins the span's middle to Daniel's tick.
+    const tick = vars(select(page, '[data-tick="daniel"]')[0]);
+    const arc = vars(
+      select(page, '[data-setting="daniel"] .timeline-minimap__setting-arc')[0],
+    );
+    expect(arc.from).toBeCloseTo((4400 + 4499) / 2 / 5000, 4);
+    expect(arc.to).toBeCloseTo(tick.pos!, 4);
+
+    const style = select(page, ".timeline-minimap style")[0]?.text ?? "";
+    expect(style).toContain(
+      `.timeline-minimap:has(.timeline-minimap__spy [href="#daniel"]:is(:target-current, .target-current)) [data-setting="daniel"]`,
+    );
+    expect(style).not.toContain(`[data-setting="deuteronomy"]`);
   });
 
   test("without drafts, the page shows the notice and no minimap", () => {
