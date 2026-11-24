@@ -700,20 +700,6 @@ burnette-bletsch-bo-bible-look:
   hostAuthored: false
   tradition: null
 
-davidson-bo-oldest-bible:
-  author: "Brian W. Davidson"
-  title: "What Is the Oldest Bible?"
-  series: "Bible Odyssey"
-  publisher: "Society of Biblical Literature"
-  year: null
-  edition: null
-  class: Reference
-  kind: article
-  access: "Scholarly society website, open"
-  url: "https://www.bibleodyssey.org/articles/what-is-the-oldest-bible/"
-  hostAuthored: false
-  tradition: null
-
 thomas-bo-translation-septuagint:
   author: "Samuel Thomas"
   title: "Translation and the Septuagint"

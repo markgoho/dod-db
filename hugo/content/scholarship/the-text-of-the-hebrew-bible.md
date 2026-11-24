@@ -3,7 +3,7 @@ title: "The Text of the Hebrew Bible"
 dek: "What the Masoretic Text, the Septuagint and the Dead Sea Scrolls are, how they differ, and which text modern translations follow."
 draft: true
 core: forms
-sourcesRead:
+sourcesRead: 2026-11-24
 related:
   books: [jeremiah, isaiah]
   tags: [dead-sea-scrolls, masoretic-text, septuagint, qumran]
@@ -129,8 +129,8 @@ statements:
   - id: lxx-hebrew
     group: "The Septuagint"
     question: "Why does the Septuagint differ from the Masoretic Text?"
-    short: "Many differences go back to the Hebrew texts its translators worked from, which differed from the one that became the Masoretic Text; Hebrew copies with some of those readings survive among the Dead Sea Scrolls."
-    text: "Breed writes that scholars think many of the Old Greek translators worked from early Hebrew versions of biblical books that were quite different from those that became the Masoretic Text, and that discoveries in the Dead Sea region show these alternate Hebrew versions circulated alongside the versions that became the Masoretic Text. When the Greek translation was made, he adds, there was no Masoretic Text or any official Bible, only multiple editions of many scrolls. Samuel Thomas's Bible Odyssey answer agrees that in some cases the Hebrew text behind the Septuagint was clearly different from, and perhaps earlier than, the Masoretic Text, as certain manuscripts among the Dead Sea Scrolls show. Davies's Encyclopaedia Judaica entry reports Qumran manuscripts of Isaiah that support Septuagint readings and Hebrew copies of the shorter edition of Jeremiah known from the Septuagint. Translators also made choices of their own. Discussing how the Greek renders the Hebrew word ‘almah, Thomas cautions that it is sometimes difficult to say why a particular scribe or translator made a particular decision, and notes that in Isaiah 7:14 the translator had several choices for translation."
+    short: "Scholars think many differences go back to the Hebrew texts its translators worked from, which differed from the one that became the Masoretic Text; Hebrew copies with some of those readings survive among the Dead Sea Scrolls."
+    text: "Breed writes that scholars think many of the Old Greek translators worked from early Hebrew versions of biblical books that were quite different from those that became the Masoretic Text, and that discoveries in the Dead Sea region show these alternate Hebrew versions circulated alongside the versions that became the Masoretic Text. When the Greek translation was made, he adds, there was no Masoretic Text or any official Bible, only multiple editions of many scrolls. Samuel Thomas's Bible Odyssey answer agrees that in some cases the Hebrew text behind the Septuagint was clearly different from, and perhaps earlier than, the Masoretic Text, and points to certain manuscripts among the Dead Sea Scrolls. Davies's Encyclopaedia Judaica entry reports Qumran manuscripts of Isaiah that support Septuagint readings and Hebrew copies of the shorter edition of Jeremiah known from the Septuagint. Translators also made choices of their own. Discussing how the Greek renders the Hebrew word ‘almah, Thomas cautions that it is sometimes difficult to say why a particular scribe or translator made a particular decision, and notes that in Isaiah 7:14 the translator had several choices for translation."
     cites:
       - source: breed-bo-earliest-versions
         locator: "section “Old Greek (OG) or Septuagint”"
@@ -163,7 +163,7 @@ statements:
   - id: jeremiah
     group: "The Septuagint"
     question: "How does the Septuagint's Jeremiah differ from the Hebrew?"
-    short: "It is much shorter and arranged differently, and Hebrew copies of both the longer and the shorter edition were found among the Dead Sea Scrolls."
+    short: "It is much shorter than the Hebrew, and some Hebrew fragments of Jeremiah among the Dead Sea Scrolls differ from the Masoretic Text as well."
     text: "Hayes's lecture on Jeremiah notes great variation in the ancient witnesses: the Septuagint's Jeremiah is much shorter than the Hebrew version and arranged differently internally, and there are significant differences between the Hebrew text we have now and some fragments of Jeremiah found among the Dead Sea Scrolls. She takes this to attest to the very open-ended nature of written compositions in antiquity. Burnette-Bletsch also writes that the Septuagint contained a much shorter version of Jeremiah, and Breed names Jeremiah, with Daniel and Job, among the books that are longer or shorter in the Greek than in the Masoretic Text. Davies's entry reports that both the Masoretic and the shorter proto-Septuagint editions of Jeremiah are attested at Qumran, and describes the two Jeremiahs as not so much different text types as variant editions. None of the sources read gives a figure for how much shorter the Greek is."
     cites:
       - source: hayes-rlst145-l18
@@ -193,8 +193,8 @@ statements:
   - id: original
     group: "The Septuagint"
     question: "Is the Masoretic Text always closer to the original than the Septuagint?"
-    short: "Not always: in some places the Septuagint or a Dead Sea scroll preserves an earlier or better reading than the Masoretic Text."
-    text: "Breed writes that until the last few decades most biblical scholars believed the Masoretic texts were, with some exceptions, the best witnesses to the most ancient Hebrew text, and that the Dead Sea Scrolls have since suggested several different versions of many books. Thomas writes that recent gains in textual criticism mean we can no longer say whether the Septuagint or the Masoretic Text represents a more original text, if such a thing can even be spoken of, at least in the case he discusses, Psalm 16:10. Davies's entry says that in a few cases a Qumran reading is clearly superior to the Masoretic Text; his example is Deuteronomy 32:8, where a Qumran manuscript agrees with the Septuagint against the Masoretic Text. Brian Davidson's Bible Odyssey article adds that the Septuagint occasionally testifies to a Hebrew text even older than the Dead Sea Scrolls, while noting that it is a translation and that scholars are still sorting out the exact wording of the earliest recoverable texts."
+    short: "Not always: in some places a Dead Sea scroll or the Septuagint may preserve an earlier or better reading than the Masoretic Text."
+    text: "Breed writes that until the last few decades most biblical scholars believed the Masoretic texts were, with some exceptions, the best witnesses to the most ancient Hebrew text, and that the Dead Sea Scrolls have since suggested several different versions of many books. Thomas writes that recent gains in textual criticism mean we can no longer say whether the Septuagint or the Masoretic Text represents a more original text, if such a thing can even be spoken of, at least in the case he discusses, Psalm 16:10. Davies's entry says that in a few cases a Qumran reading is clearly superior to the Masoretic Text; his example is Deuteronomy 32:8, where a Qumran manuscript agrees with the Septuagint against the Masoretic Text."
     cites:
       - source: breed-bo-earliest-versions
         locator: "section “Masoretic Text (MT)”"
@@ -208,18 +208,10 @@ statements:
         locator: "section “Biblical Manuscripts”, “pentateuch”"
         quote: "In a few cases a Qumran reading is clearly superior to the mt: thus, for example, 4qdtq reads for Deuteronomy 32:8 bny'l, as does the lxx, instead of bny ysr'l of the mt."
         read: 2026-11-24
-      - source: davidson-bo-oldest-bible
-        locator: "para. 4"
-        quote: "The Old Greek translations of the Hebrew/Aramaic scriptures—popularly called the “Septuagint”—occasionally testify to a Hebrew/Aramaic text even more ancient than the Dead Sea Scrolls (the Pentateuch began to be translated around 250 B.C.E.)."
-        read: 2026-11-24
-      - source: davidson-bo-oldest-bible
-        locator: "para. 4"
-        quote: "These Greek texts are, however, translations, and scholars are still sorting out the exact wording of the earliest recoverable texts."
-        read: 2026-11-24
   - id: forms
     group: "The Dead Sea Scrolls"
     question: "Did the Hebrew text circulate in more than one form before the Masoretic Text?"
-    short: "Yes. The Dead Sea Scrolls indicate that different versions of many books circulated in the Second Temple period, though for some books the text was stable and many scrolls are close to the later Masoretic Text."
+    short: "Yes. The Dead Sea Scrolls indicate that different versions of many books circulated in the Second Temple period, though much of their text corresponds closely to the later Masoretic Text."
     text: "Breed writes that discoveries from the Dead Sea Scrolls suggest there were several different versions of many biblical books in the Second Temple period, some differing only slightly and some very different, and that one of the groups that preserved these versions after 70 CE kept the texts that would later become the Masoretic Text. Davies's Encyclopaedia Judaica entry says that at Qumran there was no uniformity of text. Scholars at first sorted the Qumran texts into three types, forerunners of the Masoretic, Septuagint and Samaritan texts, but Davies reports that this theory has been abandoned: the variations form a spectrum rather than a set of types, and some books, such as Jeremiah and Psalms, survive in variant editions. He also reports that the Genesis and Leviticus manuscripts show a stable text, while Exodus survives in two editions, and that biblical texts from the caves used in the Bar Kokhba revolt uniformly belong to the proto-Masoretic type; he writes that the biblical text appears to have been standardized during the first century CE. Hayes's lecture gives the stable side its weight: the scrolls differ from the medieval manuscripts, but there is a high degree of correspondence, so that she speaks of a relatively stable textual tradition but still some fluidity. The Coogan and Chapman summary says that some Jewish groups used different versions of scriptural works and that textual diversity was minimized as the canon developed. Shani Tzoref's Bible Odyssey article gives an example: a Qumran copy of Samuel contains text not preserved in the Masoretic Text of Samuel or other biblical versions."
     cites:
       - source: breed-bo-earliest-versions
@@ -268,8 +260,8 @@ statements:
         read: 2026-11-24
   - id: isaiah
     group: "The Dead Sea Scrolls"
-    question: "What do the Isaiah scrolls from Qumran show?"
-    short: "The scrolls include an almost complete Isaiah; the two Isaiah scrolls from Cave 1 are close to the Masoretic Text, though other Isaiah manuscripts support some Septuagint readings."
+    question: "What Isaiah manuscripts were found among the Dead Sea Scrolls?"
+    short: "Many copies of Isaiah, one of them almost complete."
     text: "Hayes's lecture names an almost complete copy of the book of Isaiah among the Dead Sea Scrolls, beside partial copies or fragments of the other biblical books. Davies's Encyclopaedia Judaica entry reports 21 manuscripts of Isaiah, which present a more complex picture than the two Cave 1 scrolls first suggested: Isaiah A is reasonably close to the Masoretic Text and Isaiah B even closer, but several manuscripts also support Septuagint readings. Hayes's general verdict on the scrolls, a high degree of correspondence with the medieval manuscripts alongside some fluidity, is under the previous question."
     cites:
       - source: hayes-rlst145-l1
@@ -284,7 +276,7 @@ statements:
     group: "Manuscripts and translations"
     question: "What are the oldest manuscripts of the Hebrew Bible?"
     short: "Fragments among the Dead Sea Scrolls, from the last centuries BCE; the oldest complete manuscript of the Masoretic Text is the Leningrad Codex of 1009 CE."
-    text: "Hayes recalls that before the middle of the twentieth century the oldest manuscripts and fragments of the Bible dated to the year 900, and that some of the Dead Sea Scrolls date back to the fourth and third centuries BCE. Davidson's Bible Odyssey article dates the scrolls to about 250 BCE to 70 CE, and notes that they are extremely fragmentary and rarely make up anything close to complete books. An editorial note in Hayes's transcript says no book of Esther has been found among them; Davies's entry says all but two books, Esther and Nehemiah, are represented, and that it cannot be said whether their absence is accidental. Of the medieval Masoretic manuscripts, Burnette-Bletsch writes that the Leningrad Codex, from 1009 CE, is the oldest complete manuscript of a Masoretic Text, and that the older Aleppo Codex, from about 920 CE, is missing about two hundred of its pages. Breed dates the Aleppo Codex to the 10th century and the Leningrad Codex to 1009, and Dotan's Masorah entry gives 1009 for the Leningrad manuscript, whose vocalization was adjusted to the system of Aaron Ben-Asher. Davidson gives the Aleppo Codex as about 925 CE."
+    text: "Hayes recalls that before the middle of the twentieth century the oldest manuscripts and fragments of the Bible dated to the year 900, and that some of the Dead Sea Scrolls date back to the fourth and third centuries BCE. An editorial note in Hayes's transcript says no book of Esther has been found among them; Davies's entry says all but two books, Esther and Nehemiah, are represented, and that it cannot be said whether their absence is accidental. Of the medieval Masoretic manuscripts, Burnette-Bletsch writes that the Leningrad Codex, from 1009 CE, is the oldest complete manuscript of a Masoretic Text, and that the older Aleppo Codex, from about 920 CE, is missing about two hundred of its pages. Breed dates the Aleppo Codex to the 10th century and the Leningrad Codex to 1009, and Dotan's Masorah entry gives 1009 for the Leningrad manuscript, whose vocalization was adjusted to the system of Aaron Ben-Asher."
     cites:
       - source: hayes-rlst145-l1
         locator: "ch. 3 [00:29:33]"
@@ -293,10 +285,6 @@ statements:
       - source: hayes-rlst145-l1
         locator: "ch. 3 [00:29:33]"
         quote: "And some of them date back to the fourth and third century [BCE]."
-        read: 2026-11-24
-      - source: davidson-bo-oldest-bible
-        locator: "para. 4"
-        quote: "The Dead Sea Scrolls (circa 250 B.C.E.–70 C.E.) are centuries older than Codex Sinaiticus, but they are extremely fragmentary and rarely make up anything close to complete books."
         read: 2026-11-24
       - source: hayes-rlst145-l1
         locator: "ch. 3 [00:29:33]"
@@ -322,27 +310,15 @@ statements:
         locator: "§6.2.3 “Biblical Manuscripts”"
         quote: "the Leningrad manuscript B19a, which was written in 1009 and whose vocalization was adjusted to the system of Aaron Ben-Asher, as attested by the colophon at its end;"
         read: 2026-11-24
-      - source: davidson-bo-oldest-bible
-        locator: "para. 5"
-        quote: "Because of the Masoretes’ meticulous work, some consider the Leningrad Codex (circa 1000 C.E.) or the Aleppo Codex (circa 925 C.E.) to be the best representatives of the Hebrew/Aramaic Bible."
-        read: 2026-11-24
   - id: translations
     group: "Manuscripts and translations"
     question: "Which text do modern translations follow?"
-    short: "Mainly the Masoretic Text, which the Catholic Church and most Protestant churches use as their source text; many translations are based on its Leningrad Codex."
-    text: "Davidson writes that modern translations of the Hebrew Bible are based on a single medieval manuscript of the Masoretic Text, supplemented by readings from older texts like the Septuagint and the Dead Sea Scrolls, and that translators aim at what each committee considers the earliest recoverable form of each book's final edition. Burnette-Bletsch writes that the Leningrad Codex serves as the textual basis of modern Jewish Bibles and of many Christian Old Testaments. Breed writes that the Catholic Church since Jerome and most Protestant churches use the Masoretic Text as their source text for modern translations, while the Septuagint is still used by Eastern Orthodox churches. Thomas likewise notes that many if not most modern Catholic and Protestant translations follow the Hebrew (Masoretic) text, and the Coogan and Chapman summary calls the Septuagint an important source of evidence for reconstructing the original Hebrew text."
+    short: "Mainly the Masoretic Text, in Jewish Bibles and in most Protestant and Catholic translations."
+    text: "Breed writes that the Catholic Church since Jerome and most Protestant churches use the Masoretic Text as their source text for modern translations, while the Septuagint is still used by Eastern Orthodox churches. Burnette-Bletsch writes that the Leningrad Codex, the oldest complete manuscript of a Masoretic Text, serves as the textual basis of modern Jewish Bibles and of many Christian Old Testaments. Thomas, discussing a verse of Proverbs, writes of a long-standing Protestant (and, at times, Catholic) effort to produce translations that take the Hebrew text as more original. The Coogan and Chapman summary calls the Septuagint an important source of evidence for reconstructing the original Hebrew text."
     cites:
-      - source: davidson-bo-oldest-bible
-        locator: "para. 6"
-        quote: "Modern translations of the Hebrew Bible are based on a single medieval manuscript (the Masoretic Text), supplemented by readings from older texts like the Septuagint and Dead Sea Scrolls."
-        read: 2026-11-24
-      - source: davidson-bo-oldest-bible
-        locator: "para. 7"
-        quote: "Rather than attempting to produce a translation of the “oldest Bible,” modern translations (such as the New Revised Standard Version, English Standard Version, Revised English Bible, and New International Version) reflect what each editorial committee considers to be the original or earliest recoverable form of each biblical book’s final edition."
-        read: 2026-11-24
       - source: burnette-bletsch-bo-bible-look
         locator: "para. 10"
-        quote: "the Leningrad Codex, dates from 1009 C.E. and serves as the textual basis of modern Jewish Bibles and of many Christian Old Testaments."
+        quote: "The oldest complete manuscript of a Masoretic Text in existence today, the Leningrad Codex, dates from 1009 C.E. and serves as the textual basis of modern Jewish Bibles and of many Christian Old Testaments."
         read: 2026-11-24
       - source: breed-bo-earliest-versions
         locator: "section “Masoretic Text (MT)”"
@@ -354,7 +330,7 @@ statements:
         read: 2026-11-24
       - source: thomas-bo-translation-septuagint
         locator: "answer 1"
-        quote: "many if not most modern Catholic and Protestant translations follow the Hebrew (Masoretic) text"
+        quote: "This likely reflects not only the long-standing Protestant (and, at times, Catholic) effort to produce translations that take the Hebrew text as “more original,”"
         read: 2026-11-24
       - source: coogan-brief-4e-summary-ch1
         locator: "section “Textual Criticism”"

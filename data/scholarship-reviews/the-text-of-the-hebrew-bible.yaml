@@ -1,470 +1,531 @@
 # Review record for /scholarship/the-text-of-the-hebrew-bible/ (#93 shape). Not rendered.
 # agent: results of the agent's first pass (#146, 2026-11-24). That pass does not count toward publish.
 # owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
-# Every source was fetched 2026-11-24 (curl, HTML converted to text) and every quote script-matched verbatim after normalising whitespace, quotes and dashes; each locator was checked by eye against the fetched text.
+# Independent second agent pass 2026-11-24 (verify/146, owner's delegate decisions applied): every source re-fetched (curl, HTML to text), every quote script-matched verbatim after normalising whitespace, quotes and dashes, each locator and its context read by eye; every Trigger Claim re-read in the final transcript at its timestamp, with the speaker label. Results appended to each note. Delegate decisions: Bible Odyssey articles by named scholars are Reference, year null kept; isaiah's short cut to what two or more authors support (question reframed to match); Davidson dropped wherever another author covers the point and every point resting on him cut (original/4–5, oldest/3, oldest/10, translations/1–2 removed; keys renumbered; see uncited). Same #133 test also cut the jeremiah, forms and translations shorts back; translations' Thomas quote swapped (the first-pass excerpt was about one verse).
+# First pass: every source was fetched 2026-11-24 (curl, HTML converted to text) and every quote script-matched verbatim after normalising whitespace, quotes and dashes; each locator was checked by eye against the fetched text.
 # No candidate entry existed for this subject in data/scholarship-candidates.yaml (#96 left the Dead Sea Scrolls and Masoretic Text/Septuagint bundle clusters unseeded); the subject came from the topic ranking (#146). Sourcing test run in this pass: see rules/publish-rule.
-review: ""
+review: 2026-11-24
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-24
 citations:
   mt/1:
     {
       agent: pass,
       owner: "",
-      note: "Coogan and Chapman ch. 1 summary, “Process of Canonization”, last sentence. Backs “standard Hebrew text” with Breed (mt/4).",
+      note: "Coogan and Chapman ch. 1 summary, “Process of Canonization”, last sentence. Backs “standard Hebrew text” with Breed (mt/4). Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   mt/2:
     {
       agent: pass,
       owner: "",
-      note: "Breed, MT section, para. 1. Backs consonants-first, vowels-and-accents-later. Breed's “starting in the fifth century” is not in the short (Davies says sixth to ninth, Dotan's named masoretes are eighth to tenth); the short says only “medieval scribes”.",
+      note: "Breed, MT section, para. 1. Backs consonants-first, vowels-and-accents-later. Breed's “starting in the fifth century” is not in the short (Davies says sixth to ninth, Dotan's named masoretes are eighth to tenth); the short says only “medieval scribes”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. “medieval” in the short rests on Breed's “did not represent vowels until the Middle Ages” and Davies's sixth-to-ninth-century Masorah (mt/3).",
     }
   mt/3:
     {
       agent: pass,
       owner: "",
-      note: "Davies, EJ “Biblical Manuscripts” (sits between the two “[Philip Davies (2nd ed.)]” signatures; Licht's signature closes the earlier “Qumran Discoveries” section only). Second author for consonantal text plus later Masorah. “c.e.” and “masorah” lower case as on the page (small caps).",
+      note: "Davies, EJ “Biblical Manuscripts” (sits between the two “[Philip Davies (2nd ed.)]” signatures; Licht's signature closes the earlier “Qumran Discoveries” section only). Second author for consonantal text plus later Masorah. “c.e.” and “masorah” lower case as on the page (small caps). Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   mt/4:
     {
       agent: pass,
       owner: "",
-      note: "Breed, MT section. Statement attributes the 10th-century standardisation to Breed by name; no second source read dates it, so it stays out of the short.",
+      note: "Breed, MT section. Statement attributes the 10th-century standardisation to Breed by name; no second source read dates it, so it stays out of the short. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
-  mt/5: { agent: pass, owner: "", note: "Breed, MT section, last paragraph." }
+  mt/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Breed, MT section, last paragraph. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   mt/6:
     {
       agent: pass,
       owner: "",
-      note: "Burnette-Bletsch, para. 10 (counting body paragraphs from “If we compared”).",
+      note: "Burnette-Bletsch, para. 10 (counting body paragraphs from “If we compared”). Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   masoretes/1:
     {
       agent: pass,
       owner: "",
-      note: "Breed, MT section. With masoretes/2 carries the short's “sixth and seventh centuries”: Breed 500–700, Dotan “not before the sixth century nor later than the seventh”.",
+      note: "Breed, MT section. With masoretes/2 carries the short's “sixth and seventh centuries”: Breed 500–700, Dotan “not before the sixth century nor later than the seventh”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   masoretes/2:
     {
       agent: pass,
       owner: "",
-      note: "Dotan, EJ Masorah §2.2.2 “Dating”. The page's Hebrew characters render as “?” on Encyclopedia.com; no quote taken from a sentence containing them.",
+      note: "Dotan, EJ Masorah §2.2.2 “Dating”. The page's Hebrew characters render as “?” on Encyclopedia.com; no quote taken from a sentence containing them. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   masoretes/3:
     {
       agent: pass,
       owner: "",
-      note: "Dotan §2.2.2, terminus a quo (1). Statement “writing around 400” for “end of the fourth century-beginning of the fifth”.",
+      note: "Dotan §2.2.2, terminus a quo (1). Statement “writing around 400” for “end of the fourth century-beginning of the fifth”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   masoretes/4:
-    { agent: pass, owner: "", note: "Dotan §2.2.2, terminus a quo (2)." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Dotan §2.2.2, terminus a quo (2). Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   masoretes/5:
     {
       agent: pass,
       owner: "",
-      note: "Dotan §2.2.2, terminus ad quem (1). Statement does not name Phinehas.",
+      note: "Dotan §2.2.2, terminus ad quem (1). Statement does not name Phinehas. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   masoretes/6:
-    { agent: pass, owner: "", note: "Dotan §2.2.2, terminus ad quem (3)." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Dotan §2.2.2, terminus ad quem (3). Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   masoretes/7:
     {
       agent: pass,
       owner: "",
-      note: "Burnette-Bletsch para. 10. Reason (#86): standardize pronunciation. Second author for the reason is Breed (mt/2 “To preserve traditional spoken readings”; masoretes/8).",
+      note: "Burnette-Bletsch para. 10. Reason (#86): standardize pronunciation. Second author for the reason is Breed (mt/2 “To preserve traditional spoken readings”; masoretes/8). Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   masoretes/8:
-    { agent: pass, owner: "", note: "Breed, MT section. “likely” kept." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Breed, MT section. “likely” kept. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   masoretes/9:
-    { agent: pass, owner: "", note: "Dotan §6.1.3 “Other Masoretes”." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Dotan §6.1.3 “Other Masoretes”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   lxx/1:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l1 ch. 3 [00:29:33]. Her date is “third or second century BCE” for the translation; the short's “beginning in the third century” follows Breed (lxx/2) on the Torah and is compatible with Hayes's range.",
+      note: "Hayes l1 ch. 3 [00:29:33]. Her date is “third or second century BCE” for the translation; the short's “beginning in the third century” follows Breed (lxx/2) on the Torah and is compatible with Hayes's range. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   lxx/2:
     {
       agent: pass,
       owner: "",
-      note: "Breed, “Old Greek (OG) or Septuagint”, para. 1.",
+      note: "Breed, “Old Greek (OG) or Septuagint”, para. 1. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   lxx/3:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l1 ch. 3, same paragraph; quote ends before “, and some of these things are charted”.",
+      note: "Hayes l1 ch. 3, same paragraph; quote ends before “, and some of these things are charted”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   lxx/4:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l1 ch. 3; quote stops before the transcript's bracketed correction (“Old Testament” of the Christian Bible). Second author for “Old Testament of early Christians”: Coogan and Chapman (lxx/5), Breed (lxx/6).",
+      note: "Hayes l1 ch. 3; quote stops before the transcript's bracketed correction (“Old Testament” of the Christian Bible). Second author for “Old Testament of early Christians”: Coogan and Chapman (lxx/5), Breed (lxx/6). Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   lxx/5:
     {
       agent: pass,
       owner: "",
-      note: "Coogan ch. 1 summary, “Christian Canons”.",
+      note: "Coogan ch. 1 summary, “Christian Canons”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
-  lxx/6: { agent: pass, owner: "", note: "Breed, OG section." }
+  lxx/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Breed, OG section. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   lxx-hebrew/1:
     {
       agent: pass,
       owner: "",
-      note: "Breed, OG section. “Scholars think … many”: short says “Many differences go back to”, not “most”. Reasons (#86) on the page: Qumran Hebrew copies (lxx-hebrew/2, /4, /5).",
+      note: "Breed, OG section. “Scholars think … many”: short says “Many differences go back to”, not “most”. Reasons (#86) on the page: Qumran Hebrew copies (lxx-hebrew/2, /4, /5). Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Short now opens “Scholars think”, keeping Breed's hedge; Breed reports the field and Thomas (lxx-hebrew/4) holds it for some cases, Davies (lxx-hebrew/5) gives Hebrew copies with LXX readings: two or more authors (#133).",
     }
-  lxx-hebrew/2: { agent: pass, owner: "", note: "Breed, OG section." }
-  lxx-hebrew/3: { agent: pass, owner: "", note: "Breed, OG section." }
+  lxx-hebrew/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Breed, OG section. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
+  lxx-hebrew/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Breed, OG section. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   lxx-hebrew/4:
     {
       agent: pass,
       owner: "",
-      note: "Thomas, answer 2 (Ps 16:10 question). Parentheses are the page's. Second author for the short beside Breed.",
+      note: "Thomas, answer 2 (Ps 16:10 question). Parentheses are the page's. Second author for the short beside Breed. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Statement reworded from “as certain manuscripts among the Dead Sea Scrolls show” to “and points to certain manuscripts among the Dead Sea Scrolls”: Thomas's “as represented by” is ambiguous about which text the scrolls represent.",
     }
   lxx-hebrew/5:
     {
       agent: pass,
       owner: "",
-      note: "Davies, “latter prophets”. Third author; also cited in jeremiah and isaiah.",
+      note: "Davies, “latter prophets”. Third author; also cited in jeremiah and isaiah. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   lxx-hebrew/6:
-    { agent: pass, owner: "", note: "Thomas, answer 1 (‘almah in Prov 30:19)." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Thomas, answer 1 (‘almah in Prov 30:19). Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   lxx-hebrew/7:
     {
       agent: pass,
       owner: "",
-      note: "Thomas, answer 2, “Here” = LXX Isa 7:14 parthénos. Statement says Isaiah 7:14. Kept short to avoid the page's spaced “‘ almah”.",
+      note: "Thomas, answer 2, “Here” = LXX Isa 7:14 parthénos. Statement says Isaiah 7:14. Kept short to avoid the page's spaced “‘ almah”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   jeremiah/1:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l18 ch. 6 [00:24:52] “Structure and Features of the Book of Jeremiah”.",
+      note: "Hayes l18 ch. 6 [00:24:52] “Structure and Features of the Book of Jeremiah”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Short cut: “and arranged differently” dropped (Hayes alone among the sources; stays in the statement, attributed). Same test the owner's delegate applied to isaiah.",
     }
   jeremiah/2:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l18 ch. 6, same paragraph. Her “very open-ended nature” is attributed to her in the statement, not in the short.",
+      note: "Hayes l18 ch. 6, same paragraph. Her “very open-ended nature” is attributed to her in the statement, not in the short. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Now carries the short's scroll half with Davies (jeremiah/5): some Qumran Jeremiah fragments differ from the MT.",
     }
-  jeremiah/3: { agent: pass, owner: "", note: "Burnette-Bletsch para. 4." }
-  jeremiah/4: { agent: pass, owner: "", note: "Breed, OG section." }
+  jeremiah/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Burnette-Bletsch para. 4. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
+  jeremiah/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Breed, OG section. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   jeremiah/5:
     {
       agent: pass,
       owner: "",
-      note: "Davies, “latter prophets”. Short's “Hebrew copies of both editions were found” rests on Davies (explicit) and Breed (lxx-hebrew/2, alternate Hebrew versions circulated alongside, in the paragraph after the Daniel/Jeremiah/Job sentence); Hayes (jeremiah/2) says only that Qumran Jeremiah fragments differ from the Hebrew text we have. Flag for second pass: confirm Breed suffices as second author for the scroll half.",
+      note: "Davies, “latter prophets”. Short's “Hebrew copies of both editions were found” rests on Davies (explicit) and Breed (lxx-hebrew/2, alternate Hebrew versions circulated alongside, in the paragraph after the Daniel/Jeremiah/Job sentence); Hayes (jeremiah/2) says only that Qumran Jeremiah fragments differ from the Hebrew text we have. Flag for second pass: confirm Breed suffices as second author for the scroll half. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. First-pass question resolved by cutting: Breed's lxx-hebrew/2 is about alternate Hebrew versions in general, not Jeremiah, so “Hebrew copies of both the longer and the shorter edition were found” rested on Davies alone. Short now: “It is much shorter than the Hebrew, and some Hebrew fragments of Jeremiah among the Dead Sea Scrolls differ from the Masoretic Text as well.” (much shorter: Hayes, Burnette-Bletsch, Breed; fragments differ: Hayes, Davies). Both editions attested stays in the statement, attributed to Davies.",
     }
   jeremiah/6:
-    { agent: pass, owner: "", note: "Davies, “biblical text and canon”." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Davies, “biblical text and canon”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   original/1:
     {
       agent: pass,
       owner: "",
-      note: "Breed, MT section, para. 2; quote stops before the parenthesis. Breed's account of the older view is in the statement only, attributed: it is his alone among the cites, and the older view already allowed “some exceptions”, so the short does not say what changed.",
+      note: "Breed, MT section, para. 2; quote stops before the parenthesis. Breed's account of the older view is in the statement only, attributed: it is his alone among the cites, and the older view already allowed “some exceptions”, so the short does not say what changed. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   original/2:
     {
       agent: pass,
       owner: "",
-      note: "Thomas, answer 2. His sentence is about Ps 16:10; the statement says so (“at least in the case he discusses”). With Davies (original/3) and Davidson (original/4) carries the short: in some places the Septuagint or a scroll preserves an earlier or better reading (Thomas “perhaps prior”, Davies “clearly superior”, Davidson “even more ancient”).",
+      note: "Thomas, answer 2. His sentence is about Ps 16:10; the statement says so (“at least in the case he discusses”). With Davies (original/3) and Davidson (original/4) carries the short: in some places the Septuagint or a scroll preserves an earlier or better reading (Thomas “perhaps prior”, Davies “clearly superior”, Davidson “even more ancient”). Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Davidson's original/4–5 cut (see uncited). Short hedged from “preserves” to “may preserve”, to Thomas's “perhaps prior”; now carried by Thomas and Davies (original/3, a Qumran reading “clearly superior” that the LXX shares), with Breed's report of the older view in the statement.",
     }
   original/3:
     {
       agent: pass,
       owner: "",
-      note: "Davies, “pentateuch”. Transliterations as on the page; the page renders them in italics as “bny'l, as does” (no space before the comma, checked against the raw HTML). No source read glosses them, so the statement gives no translation and says only that the Qumran manuscript agrees with the Septuagint against the Masoretic Text.",
+      note: "Davies, “pentateuch”. Transliterations as on the page; the page renders them in italics as “bny'l, as does” (no space before the comma, checked against the raw HTML). No source read glosses them, so the statement gives no translation and says only that the Qumran manuscript agrees with the Septuagint against the Masoretic Text. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. In context: “In a few cases”; the short says “in some places”.",
     }
-  original/4:
-    {
-      agent: pass,
-      owner: "",
-      note: "Davidson para. 4. Davidson is described on the page as an Old Testament doctoral student at Southern Seminary; he is never the only author behind a short on this page.",
-    }
-  original/5: { agent: pass, owner: "", note: "Davidson para. 4." }
   forms/1:
     {
       agent: pass,
       owner: "",
-      note: "Core claim, author 1 (Breed, Bible Odyssey, Reference). “suggest” kept in the statement. The short says “indicate that different versions of many books circulated”: “many books” is Breed's scope, so the verb is held near his “suggest” rather than Davies's firmer “no uniformity”.",
+      note: "Core claim, author 1 (Breed, Bible Odyssey, Reference). “suggest” kept in the statement. The short says “indicate that different versions of many books circulated”: “many books” is Breed's scope, so the verb is held near his “suggest” rather than Davies's firmer “no uniformity”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Core claim, author 1.",
     }
-  forms/2: { agent: pass, owner: "", note: "Breed, MT section." }
+  forms/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Breed, MT section. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   forms/3:
     {
       agent: pass,
       owner: "",
-      note: "Core claim, author 2 (Davies, EJ 2nd ed., Reference). “biblical text and canon”.",
+      note: "Core claim, author 2 (Davies, EJ 2nd ed., Reference). “biblical text and canon”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Core claim, author 2. Signature check repeated: “Biblical Manuscripts” sits between the two “[Philip Davies (2nd ed.)]” signatures; the earlier “[Jacob Licht]” signature closes “The Qumran Discoveries”.",
     }
   forms/4:
     {
       agent: pass,
       owner: "",
-      note: 'Davies, same paragraph. The mismatched quotation marks ("text types'') are the page''s. Basis for the page saying “versions”/“editions”, never “text types”.',
+      note: 'Davies, same paragraph. The mismatched quotation marks ("text types'') are the page''s. Basis for the page saying “versions”/“editions”, never “text types”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.',
     }
   forms/5:
     {
       agent: pass,
       owner: "",
-      note: "Davies, same paragraph. “rather then” is the page's typo, kept.",
+      note: "Davies, same paragraph. “rather then” is the page's typo, kept. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   forms/6:
     {
       agent: pass,
       owner: "",
-      note: "Davies, “pentateuch”; quote stops before the Samaritan parenthesis.",
+      note: "Davies, “pentateuch”; quote stops before the Samaritan parenthesis. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   forms/7:
     {
       agent: pass,
       owner: "",
-      note: "Davies, “Biblical Manuscripts”, last sentence.",
+      note: "Davies, “Biblical Manuscripts”, last sentence. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   forms/8:
     {
       agent: pass,
       owner: "",
-      note: "Davies, “biblical text and canon”, first sentence. First-century standardisation is Davies's alone among sources inside the 30-year window, so it is attributed in the statement, with his hedge “appears to have been”, and kept out of the short (#133). Skehan's NCE “c. a.d. 100” is outside the window (uncited).",
+      note: "Davies, “biblical text and canon”, first sentence. First-century standardisation is Davies's alone among sources inside the 30-year window, so it is attributed in the statement, with his hedge “appears to have been”, and kept out of the short (#133). Skehan's NCE “c. a.d. 100” is outside the window (uncited). Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   forms/9:
     {
       agent: pass,
       owner: "",
-      note: "Core claim, author 3 (Hayes l1 ch. 3). Carries the short's stable half with Davies (forms/6, /7). Hayes's emphasis is stability; the short keeps both halves.",
+      note: "Core claim, author 3 (Hayes l1 ch. 3). Carries the short's stable half with Davies (forms/6, /7). Hayes's emphasis is stability; the short keeps both halves. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Short's tail cut from “for some books the text was stable and many scrolls are close to the later Masoretic Text” to “much of their text corresponds closely to the later Masoretic Text”: “stable for some books” was Davies alone (forms/6) and no quote says “many scrolls”. Now Hayes's “high degree of correspondence” (here) with Davies's proto-Masoretic Bar Kokhba texts (forms/7) and Exodus edition close to the MT (forms/6).",
     }
   forms/10:
     {
       agent: pass,
       owner: "",
-      note: "Coogan ch. 1 summary, “Process of Canonization”. Fourth author for the core.",
+      note: "Coogan ch. 1 summary, “Process of Canonization”. Fourth author for the core. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. In context the sentence follows works “in some communities” authoritative; it is about versions of scriptural works, as the statement says.",
     }
   forms/11:
     {
       agent: pass,
       owner: "",
-      note: "Tzoref para. 3; quote starts after “For example, 4QSam a ,” (inline subscript spacing on the page). Example only.",
+      note: "Tzoref para. 3; quote starts after “For example, 4QSam a ,” (inline subscript spacing on the page). Example only. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Same paragraph says scholars divide on whether the extra Samuel text is a copyist's omission in the MT or an interpretive expansion; the statement says only that the scroll contains text not in the MT, which is neutral.",
     }
   isaiah/1:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l1 ch. 3, after her self-correction (“Sorry —”). “almost complete Isaiah” is an uncontested fact (#133 exemption).",
+      note: "Hayes l1 ch. 3, after her self-correction (“Sorry —”). “almost complete Isaiah” is an uncontested fact (#133 exemption). Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Owner's delegate: short cut back to what two or more authors support. Question reframed from “What do the Isaiah scrolls from Qumran show?” to “What Isaiah manuscripts were found among the Dead Sea Scrolls?”, short from the Cave 1/Septuagint comparison to “Many copies of Isaiah, one of them almost complete.”: Hayes (almost complete copy) and Davies (21 manuscripts, isaiah/2); counts of manuscripts are exempt facts (#133).",
     }
   isaiah/2:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Davies, “latter prophets”. The Cave 1 scrolls' closeness to the MT and the other manuscripts' Septuagint readings are Davies's alone (Hayes's “high degree of correspondence”, forms/9, is about the scrolls in general), so the short is treated as an exempt fact about manuscripts (#133), not a two-author state of the field. Flag for second pass: confirm the exemption, or cut the short to Hayes's “almost complete Isaiah” plus an attributed Davies sentence. The page does not call any scroll “the Great Isaiah Scroll” or identify Isaiah A with it: no source read uses that name.",
+      note: "Davies, “latter prophets”. The Cave 1 scrolls' closeness to the MT and the other manuscripts' Septuagint readings are Davies's alone (Hayes's “high degree of correspondence”, forms/9, is about the scrolls in general), so the short is treated as an exempt fact about manuscripts (#133), not a two-author state of the field. Flag for second pass: confirm the exemption, or cut the short to Hayes's “almost complete Isaiah” plus an attributed Davies sentence. The page does not call any scroll “the Great Isaiah Scroll” or identify Isaiah A with it: no source read uses that name. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Flag resolved by the owner's delegate: Davies's Cave 1 closeness to the MT and other manuscripts' Septuagint readings stay in the statement, attributed, and are out of the short. The “some almost complete” scrolls sentence on the same Encyclopedia.com page is under the [Jacob Licht] signature (unregistered), so it was not used as a second author.",
     }
-  oldest/1: { agent: pass, owner: "", note: "Hayes l1 ch. 3." }
+  oldest/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l1 ch. 3. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   oldest/2:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l1 ch. 3; “[BCE]” is the transcript's bracket. Hayes says fourth and third century, Davidson (oldest/3) about 250 BCE; the short says “the last centuries BCE”, which both fit, and the statement attributes each date.",
+      note: "Hayes l1 ch. 3; “[BCE]” is the transcript's bracket. Hayes says fourth and third century, Davidson (oldest/3) about 250 BCE; the short says “the last centuries BCE”, which both fit, and the statement attributes each date. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Davidson's 250 BCE–70 CE (old oldest/3) cut; the scrolls' date now rests on Hayes, kept in the short as an exempt date (#133, “the last centuries BCE”) and attributed in the statement.",
     }
-  oldest/3: { agent: pass, owner: "", note: "Davidson para. 4." }
+  oldest/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l1 ch. 3; this is the transcript's editorial bracket, not Hayes speaking (she says “I don't think there's an Esther from Qumran”), so the statement attributes it to “an editorial note in Hayes's transcript”. Statement contrasts Davies's Esther and Nehemiah, attributed. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
+    }
   oldest/4:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l1 ch. 3; this is the transcript's editorial bracket, not Hayes speaking (she says “I don't think there's an Esther from Qumran”), so the statement attributes it to “an editorial note in Hayes's transcript”. Statement contrasts Davies's Esther and Nehemiah, attributed.",
+      note: "Davies, “Biblical Manuscripts”, first sentence. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   oldest/5:
     {
       agent: pass,
       owner: "",
-      note: "Davies, “Biblical Manuscripts”, first sentence.",
+      note: "Burnette-Bletsch para. 10. Leningrad 1009 also in Breed and Dotan. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Leningrad 1009 also in Breed (oldest/7) and Dotan (oldest/8); “oldest complete” is Burnette-Bletsch's, an exempt fact about the manuscript. Renumbered from oldest/6.",
     }
   oldest/6:
     {
       agent: pass,
       owner: "",
-      note: "Burnette-Bletsch para. 10. Leningrad 1009 also in Breed (oldest/8) and Dotan (oldest/9).",
+      note: "Burnette-Bletsch para. 10. Statement says “is missing about two hundred of its pages”; the controversy over how the codex was obtained is not on the page. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Davidson's c. 925 for the Aleppo Codex (old oldest/10) cut; Aleppo dates are now Burnette-Bletsch c. 920 (here) and Breed 10th century (oldest/7). Renumbered from oldest/7.",
     }
   oldest/7:
     {
       agent: pass,
       owner: "",
-      note: "Burnette-Bletsch para. 10. Statement says “is missing about two hundred of its pages”; the controversy over how the codex was obtained is not on the page.",
+      note: "Breed, MT section. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
-  oldest/8: { agent: pass, owner: "", note: "Breed, MT section." }
-  oldest/9:
+  oldest/8:
     {
       agent: pass,
       owner: "",
-      note: "Dotan §6.2.3 “Biblical Manuscripts”, item (1); leading “(1)” dropped.",
-    }
-  oldest/10:
-    {
-      agent: pass,
-      owner: "",
-      note: "Davidson para. 5. Leningrad “circa 1000” here; the statement uses 1009 from the other three.",
+      note: "Dotan §6.2.3 “Biblical Manuscripts”, item (1); leading “(1)” dropped. Second pass 2026-11-24: re-fetched, verified verbatim at its locator.",
     }
   translations/1:
     {
       agent: pass,
       owner: "",
-      note: "Davidson para. 6. Short reworded to what several authors share: Masoretic Text as source (Breed translations/4 “Catholic Church … and most Protestant Christian churches”, Thomas translations/6 “many if not most”, Davidson here); Leningrad Codex as basis of many (Burnette-Bletsch translations/3 “many Christian Old Testaments”, Davidson “a single medieval manuscript”). The supplement from the Septuagint and Dead Sea Scrolls is Davidson's alone, so it is attributed in the statement, not in the short.",
+      note: "Burnette-Bletsch para. 10. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Quote extended to the full sentence (same as oldest/5); statement now calls Leningrad the oldest complete Masoretic manuscript. Short cut from “…which the Catholic Church and most Protestant churches use as their source text; many translations are based on its Leningrad Codex.” to “Mainly the Masoretic Text, in Jewish Bibles and in most Protestant and Catholic translations.”: the Leningrad clause was Burnette-Bletsch alone once Davidson was dropped (stays in the statement, attributed). Mainly the MT: Breed (translations/2), Burnette-Bletsch (here) and Thomas (translations/4); Jewish Bibles: Burnette-Bletsch, with Breed's “authoritative … in most synagogues” (mt/5). Renumbered from translations/3.",
     }
-  translations/2: { agent: pass, owner: "", note: "Davidson para. 7." }
+  translations/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Breed, MT section. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Renumbered from translations/4.",
+    }
   translations/3:
     {
       agent: pass,
       owner: "",
-      note: "Burnette-Bletsch para. 10, same sentence as oldest/6 (shorter excerpt).",
+      note: "Breed, OG section, end of the Christian-adoption paragraph. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Renumbered from translations/5.",
     }
-  translations/4: { agent: pass, owner: "", note: "Breed, MT section." }
+  translations/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Thomas, answer 1. Second pass 2026-11-24: quote swapped. The first-pass excerpt (“many if not most modern Catholic and Protestant translations follow the Hebrew (Masoretic) text”) was truncated mid-sentence: it goes on “with a concrete noun such as…” and is about Prov 30:19 only. Replaced with his next sentence, the general claim (“the long-standing Protestant (and, at times, Catholic) effort…”); verified verbatim, answer 1. Statement says he is discussing a verse of Proverbs. Renumbered from translations/6.",
+    }
   translations/5:
     {
       agent: pass,
       owner: "",
-      note: "Breed, OG section, end of the Christian-adoption paragraph.",
-    }
-  translations/6: { agent: pass, owner: "", note: "Thomas, answer 1." }
-  translations/7:
-    {
-      agent: pass,
-      owner: "",
-      note: "Coogan ch. 1 summary, “Textual Criticism”.",
+      note: "Coogan ch. 1 summary, “Textual Criticism”. Second pass 2026-11-24: re-fetched, verified verbatim at its locator. Renumbered from translations/7.",
     }
 triggers:
   11@00:13:45:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:09:44–00:16:52 (McClellan's MT/LXX/Targum survey after Beecher's question at 00:12:38). Quote starts after “What is most authoritative now?”. The turn goes on to Jeremiah “about one-sixth shorter”: no source read gives a fraction, so the page gives none (jeremiah text says so). Subject is the core (forms).",
+      note: "Read 00:09:44–00:16:52 (McClellan's MT/LXX/Targum survey after Beecher's question at 00:12:38). Quote starts after “What is most authoritative now?”. The turn goes on to Jeremiah “about one-sixth shorter”: no source read gives a fraction, so the page gives none (jeremiah text says so). Subject is the core (forms). Second pass 2026-11-24: verbatim in the final transcript at its timestamp; speaker label checked.",
     }
   11@01:06:35:
     {
       agent: pass,
       owner: "",
-      note: "Read 01:06:34–01:09:36. Quote is mid-turn. Matches translations. The same stretch's Deut 32:8–9 example is covered by original/3 (Davies).",
+      note: "Read 01:06:34–01:09:36. Quote is mid-turn. Matches translations. The same stretch's Deut 32:8–9 example is covered by original/3 (Davies). Second pass 2026-11-24: verbatim at 01:06:35.870, Dan McClellan. Its “most translations are based on” the Leningrad Codex is not in the translations short (Burnette-Bletsch alone); Trigger Claims never change statements.",
     }
   45@00:32:15:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:27:56–00:34:35. Speaker Kipp Davis (Guest): the turn continues in his first person (“while I was still an MA student”) and 00:31:58 is his word count. The turn opens with “Wow.”, which may be a merged backchannel from McClellan; the quoted sentences are Davis's. The show's “six copies”, “two of those” and 00:31:58's “13% larger” are not on the page (no source read gives them); Davies says both editions are attested.",
+      note: "Read 00:27:56–00:34:35. Speaker Kipp Davis (Guest): the turn continues in his first person (“while I was still an MA student”) and 00:31:58 is his word count. The turn opens with “Wow.”, which may be a merged backchannel from McClellan; the quoted sentences are Davis's. The show's “six copies”, “two of those” and 00:31:58's “13% larger” are not on the page (no source read gives them); Davies says both editions are attested. Second pass 2026-11-24: verbatim at 00:32:15.160 in the final transcript; label “Kipp Davis” checked against the turns before (00:31:58 Davis's word count, 00:32:14 McClellan “Yeah.”) and the first-person MA-student anecdote in the same turn.",
     }
   45@00:34:04:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:33:27–00:34:35. Quote starts after “And we have, we have a lot of differences even in the arrangement in Samuel and Kings as well.” Hedge “I think” kept. Samuel is the page's forms example (Tzoref, forms/11).",
+      note: "Read 00:33:27–00:34:35. Quote starts after “And we have, we have a lot of differences even in the arrangement in Samuel and Kings as well.” Hedge “I think” kept. Samuel is the page's forms example (Tzoref, forms/11). Second pass 2026-11-24: verbatim in the final transcript at its timestamp; speaker label checked.",
     }
   155@00:29:46:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:26:12–00:30:46. Quote starts mid-turn; the next sentence adds “certainly that is what's going on in some places, but most of the time they're faithful renderings”. “most of the time” has no source on the page (Breed says “many”), so lxx-hebrew's short says “Many differences”. 00:28:46's “20 to 25 percent of the entire Hebrew Bible” has no source read; not on the page.",
+      note: "Read 00:26:12–00:30:46. Quote starts mid-turn; the next sentence adds “certainly that is what's going on in some places, but most of the time they're faithful renderings”. “most of the time” has no source on the page (Breed says “many”), so lxx-hebrew's short says “Many differences”. 00:28:46's “20 to 25 percent of the entire Hebrew Bible” has no source read; not on the page. Second pass 2026-11-24: verbatim in the final transcript at its timestamp; speaker label checked.",
     }
   159@00:32:45:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:31:09–00:34:21. The show's 500–1000 CE range for the Masoretes; sources read give the vowel signs 500–700 (Breed) / sixth–seventh century (Dotan), the Masorah added sixth to ninth (Davies), and the Ben-Asher masoretes up to the 10th century (Dotan). 00:31:40 gives Leningrad as “like 1008 CE”; page uses 1009 from three sources.",
+      note: "Read 00:31:09–00:34:21. The show's 500–1000 CE range for the Masoretes; sources read give the vowel signs 500–700 (Breed) / sixth–seventh century (Dotan), the Masorah added sixth to ninth (Davies), and the Ben-Asher masoretes up to the 10th century (Dotan). 00:31:40 gives Leningrad as “like 1008 CE”; page uses 1009 from three sources. Second pass 2026-11-24: verbatim in the final transcript at its timestamp; speaker label checked.",
     }
   159@00:47:49:
     {
       agent: pass,
       owner: "",
-      note: "Read 00:45:37–00:50:52. Quote is the turn's last sentence. Matches isaiah: Davies says Isaiah A is reasonably close to the MT and Isaiah B even closer. Earlier in the turn (“a lot of scholars would say the Masoretes are probably correct more frequently than the Septuagint” on vocalization) has no source read; not on the page, gap left unexplained (#86).",
+      note: "Read 00:45:37–00:50:52. Quote is the turn's last sentence. Matches isaiah: Davies says Isaiah A is reasonably close to the MT and Isaiah B even closer. Earlier in the turn (“a lot of scholars would say the Masoretes are probably correct more frequently than the Septuagint” on vocalization) has no source read; not on the page, gap left unexplained (#86). Second pass 2026-11-24: verbatim at 00:47:49.088, Dan McClellan. Bears on isaiah's statement text (Davies, attributed), not its short.",
     }
   159@00:48:55:
     {
       agent: pass,
       owner: "",
-      note: "Read with 00:47:49. Quote starts after “Like, there are other manuscripts of Isaiah that are far more faithful to what we find in the Masoretic Text.” “1/6 shorter” not on the page; “the Septuagint version of Jeremiah was earlier” is not stated by any source read (Davies calls them variant editions), so the page doesn't say which is earlier.",
+      note: "Read with 00:47:49. Quote starts after “Like, there are other manuscripts of Isaiah that are far more faithful to what we find in the Masoretic Text.” “1/6 shorter” not on the page; “the Septuagint version of Jeremiah was earlier” is not stated by any source read (Davies calls them variant editions), so the page doesn't say which is earlier. Second pass 2026-11-24: verbatim in the final transcript at its timestamp; speaker label checked.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "Sourcing test (#96 gates), run 2026-11-24 in this pass. Gate 1: eight Trigger Claims read in context (above). Gate 2: core claim, worded to the sources: “The Dead Sea Scrolls show different versions of many books in the Second Temple period, though for some books the text was stable and many scrolls are close to the later Masoretic Text.” Gate 3: backed by Brennan Breed (Bible Odyssey, SBL, Reference; forms/1–2), Philip Davies (Encyclopaedia Judaica 2nd ed., Reference; forms/3–8), Christine Hayes (Open Yale, Reference; forms/9) and Coogan and Chapman (OUP summary, Reference; forms/10): four distinct authors, none Host-authored. Gate 4: 10 statements (minimum 3). Publish rule met by distinct author.",
+      note: "Sourcing test (#96 gates), run 2026-11-24 in this pass. Gate 1: eight Trigger Claims read in context (above). Gate 2: core claim, worded to the sources: “The Dead Sea Scrolls show different versions of many books in the Second Temple period, though for some books the text was stable and many scrolls are close to the later Masoretic Text.” Gate 3: backed by Brennan Breed (Bible Odyssey, SBL, Reference; forms/1–2), Philip Davies (Encyclopaedia Judaica 2nd ed., Reference; forms/3–8), Christine Hayes (Open Yale, Reference; forms/9) and Coogan and Chapman (OUP summary, Reference; forms/10): four distinct authors, none Host-authored. Gate 4: 10 statements (minimum 3). Publish rule met by distinct author. Second pass 2026-11-24: confirmed. Core claim forms cites Breed, Davies, Hayes, Coogan and Chapman, and Tzoref: five distinct authors, all Reference, none Host-authored. Gate 2 wording now follows the cut short (“…though much of their text corresponds closely to the later Masoretic Text”). 10 statements after the Davidson cuts, every one still cited; 63 citations.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "Field-state wording on the page comes from the sources: “Scholars think” (Breed, lxx-hebrew), “most biblical scholars believed … until the last few decades” (Breed, original), “we can no longer say” (Thomas, original, attributed and limited to his case), “theory … abandoned” (Davies, forms, attributed). The page never says “consensus” or “most scholars”. Each short checked against #133: mt, masoretes, lxx, lxx-hebrew, jeremiah, original, forms, translations each rest on two or more read authors (see citation notes); isaiah's short (almost complete Isaiah; what the Cave 1 and other Isaiah manuscripts read) and oldest's dates are treated as uncontested facts about manuscripts; isaiah's rests on Davies for the manuscript details (flagged, isaiah/2). original's and translations' shorts were cut back to what three or more authors share. First-century standardisation (Davies alone) and 10th-century standardisation of the Tiberian text (Breed alone) are attributed in the statements and kept out of the shorts.",
+      note: "Field-state wording on the page comes from the sources: “Scholars think” (Breed, lxx-hebrew), “most biblical scholars believed … until the last few decades” (Breed, original), “we can no longer say” (Thomas, original, attributed and limited to his case), “theory … abandoned” (Davies, forms, attributed). The page never says “consensus” or “most scholars”. Each short checked against #133: mt, masoretes, lxx, lxx-hebrew, jeremiah, original, forms, translations each rest on two or more read authors (see citation notes); isaiah's short (almost complete Isaiah; what the Cave 1 and other Isaiah manuscripts read) and oldest's dates are treated as uncontested facts about manuscripts; isaiah's rests on Davies for the manuscript details (flagged, isaiah/2). original's and translations' shorts were cut back to what three or more authors share. First-century standardisation (Davies alone) and 10th-century standardisation of the Tiberian text (Breed alone) are attributed in the statements and kept out of the shorts. Second pass 2026-11-24: #133 re-run on every short with Davidson dropped. Cut: isaiah (delegate; question reframed, short now counts only), jeremiah (“arranged differently” and “both editions found” were one author each), forms (“stable for some books”, “many scrolls”), translations (Leningrad clause one author), original (hedged “may”), lxx-hebrew (“Scholars think” added). Exempt facts: isaiah's counts, oldest's dates and Leningrad's “oldest complete”, jeremiah's “much shorter” has three authors. mt, masoretes, lxx pass unchanged.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "Disagreements between sources are attributed by name: dates for the scrolls (Hayes vs Davidson), missing books (Hayes: Esther; Davies: Esther and Nehemiah), Aleppo Codex date (Burnette-Bletsch c. 920, Davidson c. 925, Breed 10th century). Hayes's stability emphasis is given beside Breed's and Davies's variety.",
+      note: "Disagreements between sources are attributed by name: dates for the scrolls (Hayes vs Davidson), missing books (Hayes: Esther; Davies: Esther and Nehemiah), Aleppo Codex date (Burnette-Bletsch c. 920, Davidson c. 925, Breed 10th century). Hayes's stability emphasis is given beside Breed's and Davies's variety. Second pass 2026-11-24: Davidson cut, so scroll dates are Hayes alone (attributed) and Aleppo dates are Burnette-Bletsch c. 920 and Breed 10th century; both still attributed by name.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. Second pass 2026-11-24: confirmed; no Tradition source in the registry entries cited.",
+    }
 sources:
   hayes-rlst145-l1:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
-      note: "New entry, same course and author as the existing Hayes entries (counts once with them). Reference (introductory course, university-hosted transcript, #86). Page title “Lecture 1 - The Parts of the Whole”.",
+      note: "New entry, same course and author as the existing Hayes entries (counts once with them). Reference (introductory course, university-hosted transcript, #86). Page title “Lecture 1 - The Parts of the Whole”. Second pass 2026-11-24: re-fetched; class, author and edition verified.",
     }
   hayes-rlst145-l18:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
-      note: "New entry. Page title “Lecture 18 - Literary Prophecy: Micah, Zephaniah, Nahum and Habbakuk”; ch. 6 is on Jeremiah. Same author as l1.",
+      note: "New entry. Page title “Lecture 18 - Literary Prophecy: Micah, Zephaniah, Nahum and Habbakuk”; ch. 6 is on Jeremiah. Same author as l1. Second pass 2026-11-24: re-fetched; class, author and edition verified.",
     }
   coogan-brief-4e-summary-ch1:
     {
       agent: pass,
       owner: "",
       edition: "4th ed., 31 May 2019, OUP catalogue, ISBN 9780190903756 (as for the other Coogan summaries)",
-      note: "New entry; chapter 1 page of the same companion site. Reference (publisher summary, #86).",
+      note: "New entry; chapter 1 page of the same companion site. Reference (publisher summary, #86). Second pass 2026-11-24: re-fetched; class, author and edition verified.",
     }
   breed-bo-earliest-versions:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
       edition: "Bible Odyssey (Society of Biblical Literature); page datePublished 2022-12-14",
-      note: "New entry. Reference (signed article by a seminary professor on the SBL's public site). Year left null: four Bible Odyssey articles carry datePublished 2022-12-14 within minutes of each other, which looks like a site migration date, not first publication. Flag for second pass: confirm class for Bible Odyssey (no Bible Odyssey source was in the registry before).",
+      note: "New entry. Reference (signed article by a seminary professor on the SBL's public site). Year left null: four Bible Odyssey articles carry datePublished 2022-12-14 within minutes of each other, which looks like a site migration date, not first publication. Flag for second pass: confirm class for Bible Odyssey (no Bible Odyssey source was in the registry before). Second pass 2026-11-24: flag resolved by the owner's delegate: Bible Odyssey articles by named scholars are Reference (SBL-run reference site); year stays null. Byline and bio re-checked (assistant professor of Old Testament, Columbia Theological Seminary); page shows December 14, 2022.",
     }
   burnette-bletsch-bo-bible-look:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey; page datePublished 2022-12-14 (year left null, see breed-bo-earliest-versions)",
-      note: "New entry. Reference. Author is professor of biblical studies at Eastern University (page bio).",
-    }
-  davidson-bo-oldest-bible:
-    {
-      agent: flag,
-      owner: "",
-      edition: "Bible Odyssey; page datePublished 2022-12-14 (year left null)",
-      note: "New entry. Reference by venue (SBL), but the page describes the author as an Old Testament doctoral student at Southern Seminary. Never the only author behind a short (original, oldest, translations each have others). Flag for second pass: whether a doctoral student's Bible Odyssey article should count as Reference.",
+      note: "New entry. Reference. Author is professor of biblical studies at Eastern University (page bio). Second pass 2026-11-24: re-fetched; class, author and edition verified.",
     }
   thomas-bo-translation-septuagint:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey; page datePublished 2022-12-14 (year left null)",
-      note: "New entry. Reference. Question-and-answer article; author is associate professor of religion at California Lutheran University (page bio).",
+      note: "New entry. Reference. Question-and-answer article; author is associate professor of religion at California Lutheran University (page bio). Second pass 2026-11-24: re-fetched; class, author and edition verified.",
     }
   tzoref-bo-dss-hebrew-bible:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey; page datePublished 2017-06-20, matching the date shown on the page",
-      note: "New entry. Reference. Author led the research team for the IAA Leon Levy Dead Sea Scrolls Digital Library (page bio). Cited once, as an example.",
+      note: "New entry. Reference. Author led the research team for the IAA Leon Levy Dead Sea Scrolls Digital Library (page bio). Cited once, as an example. Second pass 2026-11-24: re-fetched; class, author and edition verified.",
     }
   davies-ej-dead-sea-scrolls:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica, sections signed “[Philip Davies (2nd ed.)]”; the 2nd ed. is the 2007 edition, year not on the page so left null",
-      note: "New entry. Reference (signed entry in a reference encyclopedia). The Encyclopedia.com page carries three signatures: Jacob Licht (1st ed.) after “The Qumran Discoveries”, Philip Davies (2nd ed.) after “The Scrolls and Khirbat Qumran” and after “The Copper Scroll”, and F. F. Bruce after “Khirbat Mird”. Every cited passage is in “Biblical Manuscripts” and its subsections, between the two Davies signatures, so it is Davies's whichever way the signatures attach. Only Davies registered.",
+      note: "New entry. Reference (signed entry in a reference encyclopedia). The Encyclopedia.com page carries three signatures: Jacob Licht (1st ed.) after “The Qumran Discoveries”, Philip Davies (2nd ed.) after “The Scrolls and Khirbat Qumran” and after “The Copper Scroll”, and F. F. Bruce after “Khirbat Mird”. Every cited passage is in “Biblical Manuscripts” and its subsections, between the two Davies signatures, so it is Davies's whichever way the signatures attach. Only Davies registered. Second pass 2026-11-24: re-fetched; class, author and edition verified.",
     }
   dotan-ej-masorah:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica, entry signed “[Aron Dotan (2nd ed.)]” at its end; year left null",
-      note: "New entry. Reference. Long entry; only §2.2.2, §6.1.3 and §6.2.3 cited. Hebrew script renders as “?” on Encyclopedia.com; no cited sentence contains it.",
+      note: "New entry. Reference. Long entry; only §2.2.2, §6.1.3 and §6.2.3 cited. Hebrew script renders as “?” on Encyclopedia.com; no cited sentence contains it. Second pass 2026-11-24: re-fetched; class, author and edition verified.",
     }
 leads:
   - "Jeremiah's Septuagint text “almost one eighth shorter”: from a web-search summary of an unnamed page, not read in any source. The show says one-sixth (Ep 11, 159) and 13% (Ep 45). None is on the page."
@@ -472,6 +533,8 @@ leads:
   - "Britannica, “biblical literature”, section on the Qumran texts: that variants from the Masoretic type are negligible in some Qumran texts, and that no biblical manuscripts survive from the six centuries between the latest Judaean desert scrolls and the Masoretic period. Search summary only; not read."
   - "Library of Congress exhibit “Scrolls from the Dead Sea” (loc.gov/exhibits/scrolls/toc.html): returned Page Not Found 2026-11-24; not read."
 uncited:
+  - "Brian W. Davidson, “What Is the Oldest Bible?”, Bible Odyssey (read 2026-11-24 in both passes; author an Old Testament doctoral student at Southern Seminary). Was original/4–5, oldest/3, oldest/10, translations/1–2; all verified verbatim by the second pass. Cut by the owner's delegate: his cites dropped where another author covers the point (fragmentary scrolls: Davies, Hayes; Leningrad and Aleppo dates: Burnette-Bletsch, Breed, Dotan), and the points resting on him alone cut (the Septuagint testifying to a text older than the scrolls; the scrolls at 250 BCE–70 CE; modern translations as one medieval manuscript supplemented from the Septuagint and scrolls; committees aiming at the earliest recoverable final edition). Registry entry removed."
+  - "Thomas, answer 1: “many if not most modern Catholic and Protestant translations follow the Hebrew (Masoretic) text” (sentence continues “with a concrete noun such as …”). Was translations/6; about Prov 30:19 only, so replaced by his next, general sentence (now translations/4)."
   - "Patrick W. Skehan, “Septuagint”, New Catholic Encyclopedia (Encyclopedia.com, read 2026-11-24): “the period before the definitive fixing of the Hebrew consonantal text c. a.d. 100” and “its notable divergence from the more narrowly based and rigid standard of the Hebrew consonantal text of about a.d. 100”. Not cited: the entry's bibliography ends in 1965, outside the 30-year window, so it can't be the second author for Davies's first-century standardisation."
   - "Encyclopaedia Judaica, “Septuagint” (unsigned stub, Encyclopedia.com septuagint-0): “On the basis of this legend it can be inferred that the Pentateuch was translated into Greek in Alexandria during the first half of the third century b.c.e.” Not cited: Hayes and Breed carry lxx, and an authorless source would count as independent by itself."
   - "Hayes l19 (Ezekiel and Second Isaiah): the large Isaiah scroll from Qumran has a gap after Isaiah 39, with Isaiah 40 starting a new column. About Isaiah's authorship, not its text; not on the page."
