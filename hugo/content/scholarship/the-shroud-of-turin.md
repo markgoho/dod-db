@@ -52,8 +52,8 @@ statements:
   - id: earlier
     group: "The fourteenth-century record"
     question: "Is the shroud attested before the fourteenth century?"
-    short: "No document refers to it before the fourteenth century, and the theory that it was earlier the Mandylion of Edessa has not won general scholarly support."
-    text: "The New Catholic Encyclopedia entry says that Ian Wilson and other investigators have proposed theories about the shroud's history before the mid-14th century, but that for lack of hard evidence they have not enjoyed universal scholarly support. The best known, Wilson's, identifies the shroud with the Mandylion of Edessa, the legendary towel bearing Jesus's face. Andrea Nicolotti, author of a book-length study of the Mandylion, writes that the theory, which Wilson devised in the 1970s, has convinced no one, except perhaps sindonologists. Reviewing that book, the art historian Anna Russakoff notes that the shroud is a burial linen almost 4.5 metres long, while the Edessa image was by most accounts the size of a hand towel and showed Jesus's face alive with his eyes open. She judges that Nicolotti has convincingly shown the two are distinct objects, and notes that no documents referring explicitly to the shroud date from before the fourteenth century."
+    short: "No document refers explicitly to it before the fourteenth century, and theories of its earlier history, such as Ian Wilson's identification of it with the Mandylion of Edessa, have not won universal scholarly support."
+    text: "The New Catholic Encyclopedia entry says that Ian Wilson and other investigators have proposed theories about the shroud's history before the mid-14th century, but that for lack of hard evidence they have not enjoyed universal scholarly support. Wilson's own theory identifies the shroud with the Mandylion of Edessa, the legendary towel bearing Jesus's face. Andrea Nicolotti, author of a book-length study of the Mandylion, writes that the theory, which Wilson devised in the 1970s, has convinced no one, except perhaps sindonologists. Reviewing that book, the art historian Anna Russakoff notes that the shroud is a burial linen almost 4.5 metres long, while the Edessa image was by most accounts the size of a hand towel and showed Jesus's face alive with his eyes open. She judges that Nicolotti has convincingly shown the two are distinct objects, and notes that no documents referring explicitly to the shroud date from before the fourteenth century."
     cites:
       - source: wild-nce-shroud-of-turin
         locator: "section “History of the Shroud”, paragraph 1"
@@ -79,7 +79,7 @@ statements:
     group: "The fourteenth-century record"
     question: "What did the bishop of Troyes say about it?"
     short: "In 1389 Bishop Pierre d'Arcis wrote that an earlier bishop's inquiry had found the cloth painted, and that the artist who painted it had attested this."
-    text: "In 1389 Pierre d'Arcis, bishop of Troyes, wrote to Pope Clement VII asking him to stop the cloth's public display. The New Catholic Encyclopedia entry says d'Arcis agreed with his predecessor, Henry of Poitiers, who had objected when the de Charny family displayed it, claiming it was a fraudulent invention; d'Arcis called it a product of human handicraft (manufactus) and an artificial painting or depiction (artificialiter depictus). Nicolotti's translation of d'Arcis's account reports that Henri de Poitiers's inquiry discovered the fraud and how the cloth had been artificially portrayed, and that the artist who had portrayed it proved it was made by human skill, not miraculously. Britannica gives the bishop's words as “cunningly painted, the truth being attested by the artist who painted it.” Nicolotti infers that the image had been made around the middle of the century or a few years before, at the earliest, and that the maker was most likely still alive around 1355."
+    text: "In 1389 Pierre d'Arcis, bishop of Troyes, wrote to Pope Clement VII asking him to stop the cloth's public display. The New Catholic Encyclopedia entry says d'Arcis agreed with his predecessor, Henry of Poitiers, who had objected when the de Charny family displayed it, claiming it was a fraudulent invention; d'Arcis called it a product of human handicraft (manufactus) and an artificial painting or depiction (artificialiter depictus). Nicolotti's translation of d'Arcis's account reports that Henri de Poitiers's inquiry discovered the fraud and how the cloth had been artificially portrayed, and that the artist who had portrayed it proved it was made by human skill, not miraculously. Britannica gives the bishop's words as “cunningly painted, the truth being attested by the artist who painted it.” Nicolotti infers that the image had been made in the middle of the century or a few years before, at the earliest, and that the maker was most likely still alive around 1355."
     cites:
       - source: wild-nce-shroud-of-turin
         locator: "section “Authenticity”, paragraph 1"
@@ -87,11 +87,11 @@ statements:
         read: 2026-11-24
       - source: wild-nce-shroud-of-turin
         locator: "section “Authenticity”, paragraph 1"
-        quote: "the pope should act to put an end to its public display."
+        quote: 'Because the shroud, said Bishop D''Arcis, is "a product of human handicraft" (manufactus ) and "an artificial painting or depiction" (artificialiter depictus ), the pope should act to put an end to its public display.'
         read: 2026-11-24
       - source: nicolotti-2019-acquisition-savoy
         locator: "p. 20"
-        quote: "According to the 1389 account by Pierre d'Arcis, the bishop of Troyes, an investigation carried out by one of his predecessors, Henri de Poitiers, revealed that"
+        quote: "According to the 1389 account by Pierre d’Arcis, the bishop of Troyes, an investigation carried out by one of his predecessors, Henri de Poitiers, revealed that"
         read: 2026-11-24
       - source: nicolotti-2019-acquisition-savoy
         locator: "p. 20, block quotation of the d'Arcis memorial"
@@ -120,11 +120,11 @@ statements:
         quote: "during the ostensions they had to announce “in a loud and intelligible voice, all fraud ceasing” that they did not intend to display the Shroud “as the true shroud of our Lord Jesus Christ, but as a figure or representation of the shroud that is said to have belonged to our Lord Jesus Christ”"
         read: 2026-11-24
       - source: wild-nce-shroud-of-turin
-        locator: "section “Authenticity”, paragraph 2"
+        locator: "section “Authenticity”, paragraph 1"
         quote: "While the pope in his response chose a more cautious route, he did insist that when the shroud was displayed, there should be no liturgical ceremony or pomp."
         read: 2026-11-24
       - source: wild-nce-shroud-of-turin
-        locator: "section “Authenticity”, paragraph 2"
+        locator: "section “Authenticity”, paragraph 1"
         quote: "that the aforesaid representation [the shroud] is not the true burial cloth (sudarium ) of our Lord Jesus Christ but only a kind of painting or picture made as a form or representation (in figuram seu representationem ) of the burial cloth."
         read: 2026-11-24
       - source: britannica-shroud-of-turin
@@ -154,11 +154,11 @@ statements:
         quote: "Radiocarbon dating of the cloth, however, yielded a result of 1262 to 1384 AD (95 % confidence interval)"
         read: 2026-11-24
       - source: wild-nce-shroud-of-turin
-        locator: "section “Authenticity”"
+        locator: "section “Authenticity”, paragraph 3"
         quote: "Particularly damaging to any theory of authenticity were the Carbon-14 tests separately conducted in 1988 by laboratories in Tucson, Oxford, and Zurich on small fragments taken from a single portion of the shroud clear of any patching or charring."
         read: 2026-11-24
       - source: wild-nce-shroud-of-turin
-        locator: "section “Authenticity”"
+        locator: "section “Authenticity”, paragraph 3"
         quote: "The Research Laboratory of the British Museum did a statistical analysis of these results and reported that, within 95 percent confidence limits, the date for the linen of the shroud had to range somewhere between 1260 and 1390 AD, not earlier."
         read: 2026-11-24
       - source: karapanagiotis-2025-shroud-overview
@@ -166,25 +166,25 @@ statements:
         quote: "Three samples (about 50 mg each) were prepared from the strip and were delivered to the three laboratories for the radiocarbon measurements, which provided evidence that the Shroud of Turin dated to the medieval era and had been manufactured, with 95% confidence, between 1260 and 1390 AD."
         read: 2026-11-24
       - source: dilazzaro-2020-radiocarbon-shroud
-        locator: "section 2, p. 5"
+        locator: "section 2, p. 4"
         quote: "Joining the two probability curves, one gets 1262–1384 AD, which, rounded to the decade, gives the sample age between 1260 and 1390 AD, with a confidence level of 95%."
         read: 2026-11-24
   - id: reception
     group: "The radiocarbon date"
     question: "Has the medieval date held up?"
     short: "The weight of evidence is taken to favour it, though defenders of the shroud's authenticity still contest it."
-    text: "The New Catholic Encyclopedia entry says the preponderance of evidence would seem to suggest a medieval date, though some scholars still strenuously argue for authenticity, and that the findings have been vigorously contested by the defenders of the shroud's authenticity. Its reason is that radiocarbon dating is hardly a new technology, and that scientists are thoroughly familiar with contaminants and how to deal with them. Currie adds that the agreement of the result with the Lirey documents seems compelling. Karapanagiotis's 2025 review concludes that the challenges published so far are insufficient to overturn the finding and that the medieval date is difficult to dismiss, and expects that, unless universally accepted evidence shows the dating was flawed, most scientists will remain skeptical of the shroud's authenticity. The challenges also appear in peer-reviewed journals. Tristan Casabianca and colleagues, analysing the raw data released in 2017, argue that the data lack homogeneity and that the procedure should be reconsidered, and Di Lazzaro and colleagues conclude that the 1988 dating does not match current accuracy requirements. Currie himself notes that the shroud results were only marginally consistent among the three laboratories. Rachel Freer-Waters and Timothy Jull of the Arizona laboratory, one of the three, write that none of the many reports questioning the measurement was sufficient to challenge it. Researchers on both sides propose a new test: Di Lazzaro and colleagues write that virtually all researchers agree a repeat would be informative, and Karapanagiotis that many researchers advocate new samples taken away from the edge of the cloth."
+    text: "The New Catholic Encyclopedia entry says the preponderance of evidence would seem to suggest a medieval date, though some scholars still strenuously argue for authenticity, and that the findings have been vigorously contested by the defenders of the shroud's authenticity. It adds that, while debate continues about such objections, radiocarbon dating is hardly a new technology and scientists have extensive familiarity with contaminants and how to deal with them. Currie adds that the agreement of the result with the Lirey documents seems compelling. Karapanagiotis's 2025 review concludes that the challenges published so far are insufficient to overturn the finding and that the medieval date is difficult to dismiss, and expects that, unless universally accepted evidence shows the dating was flawed, most scientists will remain skeptical of the shroud's authenticity. The challenges also appear in peer-reviewed journals. Tristan Casabianca and colleagues, analysing the raw data released in 2017, argue that the data lack homogeneity and that the procedure should be reconsidered, and Di Lazzaro and colleagues conclude that the 1988 dating does not match current accuracy requirements. Currie himself notes that the shroud results were only marginally consistent among the three laboratories. Rachel Freer-Waters of the Arizona State Museum and Timothy Jull of the University of Arizona's radiocarbon laboratory, one of the three that dated the shroud, write that none of the many reports questioning the measurement was sufficient to challenge it. Di Lazzaro and colleagues and Karapanagiotis both report support for a new test: the former write that virtually all researchers agree a repeat would be informative, and Karapanagiotis that many researchers advocate one, with samples taken away from the edge of the cloth."
     cites:
       - source: wild-nce-shroud-of-turin
-        locator: "section “Authenticity”"
+        locator: "section “Authenticity”, paragraph 2"
         quote: "While at this point the preponderance of evidence would seem to suggest a medieval date for the origin of this object, there are still scholars who would strenuously argue for its authenticity."
         read: 2026-11-24
       - source: wild-nce-shroud-of-turin
-        locator: "section “Authenticity”"
+        locator: "section “Authenticity”, paragraph 3"
         quote: "These findings have been vigorously contested by the defenders of the shroud's authenticity."
         read: 2026-11-24
       - source: wild-nce-shroud-of-turin
-        locator: "section “Authenticity”"
+        locator: "section “Authenticity”, paragraph 3"
         quote: "While debate continues about such issues, C-14 dating is hardly a new technology and scientists at this point have extensive familiarity with the problem of contaminants and methods for dealing properly with them in this sort of analysis."
         read: 2026-11-24
       - source: currie-2004-radiocarbon-metrology
@@ -201,7 +201,7 @@ statements:
         read: 2026-11-24
       - source: karapanagiotis-2025-shroud-overview
         locator: "section 6 “Conclusions”"
-        quote: "Consequently, unless universally accepted evidence is presented that proves that the 1989 radiocarbon dating was flawed at some point in its implementation, most scientists will remain skeptical of the Shroud's authenticity, viewing it as a strange, medieval object with no direct connection to the burial of Jesus from Nazareth."
+        quote: "Consequently, unless universally accepted evidence is presented that proves that the 1989 radiocarbon dating was flawed at some point in its implementation, most scientists will remain skeptical of the Shroud’s authenticity, viewing it as a strange, medieval object with no direct connection to the burial of Jesus from Nazareth."
         read: 2026-11-24
       - source: casabianca-2019-raw-data
         locator: "abstract"
@@ -220,7 +220,7 @@ statements:
         quote: "There have been many reports (too numerous to list here) that questioned various aspects of the dating measurement, but none of these were sufficient to challenge the 14C dating measurement itself."
         read: 2026-11-24
       - source: dilazzaro-2020-radiocarbon-shroud
-        locator: "section 7 “Discussion”"
+        locator: "section 7 “Discussion and Proposal”"
         quote: "Virtually all researchers agree that it would be interesting and methodologically informative to repeat the radiocarbon dating of the Shroud."
         read: 2026-11-24
       - source: karapanagiotis-2025-shroud-overview
@@ -231,7 +231,7 @@ statements:
     group: "The radiocarbon date"
     question: "Was the dated sample a later repair?"
     short: "That is disputed: some researchers argue the sampled strip was a later repair, others find no evidence of one."
-    text: "Karapanagiotis's review reports a strong disagreement over whether the strip cut for the samples was part of the original cloth; if it was a later repair, the date would not reflect the shroud's true age. He summarises the case Raymond Rogers made in 2005: that the radiocarbon samples contained cotton fibres, unlike the main cloth, that they carried a gum, dye and mordant coating, and that they came from a repair dyed to match the original. Freer-Waters and Jull examined a fragment of the Arizona sample and found no evidence of coatings or dyes, only minor contaminants, and nothing to contradict its having come from the main part of the shroud; the few cotton fibres they saw, they suggest, may come from wrapping the cloth in cotton. Karapanagiotis calls Rogers's reading of his mass spectra rather incomplete. Di Lazzaro and colleagues allow that the sampling site may have included a patch added in later centuries, while noting that a textile expert found no mending visible to the naked eye beside it."
+    text: "Karapanagiotis's review reports a strong disagreement over whether the strip cut for the samples was part of the original cloth; if it was a later repair, the date would not reflect the shroud's true age. He summarises the case Raymond Rogers made in 2005: that the radiocarbon samples contained cotton fibres, unlike the main cloth, that they carried a gum, dye and mordant coating, and that they came from a repair dyed to match the original. Freer-Waters and Jull examined a fragment of the Arizona sample and found no evidence of coatings or dyes, only minor contaminants, and nothing to contradict its having come from the main part of the shroud; the few cotton fibres they saw, they suggest, may come from wrapping the cloth in cotton. Karapanagiotis calls Rogers's reading of his mass spectra rather incomplete. Di Lazzaro and colleagues suggest that the sampling site possibly included a patch added in later centuries, though they note that a textile expert found no mending visible to the naked eye beside it."
     cites:
       - source: karapanagiotis-2025-shroud-overview
         locator: "section 4.2.7"
@@ -272,7 +272,7 @@ statements:
   - id: xray
     group: "The radiocarbon date"
     question: "What did the 2022 X-ray dating study claim?"
-    short: "That the linen could be about 2,000 years old, if it had been kept within a narrow range of temperature and humidity for thirteen centuries of unknown history."
+    short: "That the linen could be about 2,000 years old, if it had been kept at an average temperature of 20.0–22.5 °C and relative humidity of 75–55 percent for thirteen centuries of unknown history."
     text: "Liberato De Caro and colleagues measured the natural ageing of the linen's cellulose by X-ray analysis of a sample about 0.5 by 1 millimetre, supplied by their co-author Giulio Fanti. They found the cloth much older than the radiocarbon date, and their results compatible with a 2,000-year-old relic, as Christian tradition supposes, on condition that it was kept at an average temperature of 20.0–22.5 °C and correlated relative humidity of 75–55 percent for 13 centuries of unknown history. They write that a more systematic X-ray investigation of more samples would be needed to confirm their conclusions. Karapanagiotis notes that such age estimates, like those from mechanical testing and vibrational spectroscopy, come from indirect methods developed with a limited number of samples, and that flax ages by complex and varied processes whose rates can differ."
     cites:
       - source: de-caro-2022-xray-dating
@@ -302,7 +302,7 @@ statements:
     text: "The New Catholic Encyclopedia entry says there is no agreement whatsoever as to how the body images came to exist on the cloth, and Karapanagiotis's review that no scientific hypothesis or artistic recreation has achieved universal acceptance, so that a widely accepted explanation is still lacking. Britannica says tests since the 1970s for paints or other pigments, scorches and other agents proved inconclusive. Karapanagiotis reports that Walter McCrone argued the image was the work of a medieval artist using iron oxide and mercury sulfide as pigments, against the STURP result that iron oxide is too sparse to form the image. He writes that the majority of scientists agree the body image is not a painting and the bloodstains are blood, though the presence of iron oxides and mercury sulfide still raises questions; Di Lazzaro and colleagues likewise judge it unlikely to have been painted. Luigi Garlaschelli made a full-sized replica that closely resembled the original in many aspects, but, as with every other reconstruction, Karapanagiotis writes, it was not widely accepted and faced criticism."
     cites:
       - source: wild-nce-shroud-of-turin
-        locator: "section “Authenticity”"
+        locator: "section “Authenticity”, paragraph 2"
         quote: "The matter is made all the more complicated because there is no agreement whatsoever as to how the body images came to exist on the cloth."
         read: 2026-11-24
       - source: karapanagiotis-2025-shroud-overview
@@ -310,7 +310,7 @@ statements:
         quote: "It is important to note that no single scientific hypothesis or artistic recreation has achieved universal acceptance; all remain speculative. Therefore, a widely accepted, comprehensive explanation for the formation mechanism of the Shroud image is still lacking."
         read: 2026-11-24
       - source: britannica-shroud-of-turin
-        locator: "section “Analyses of the shroud's authenticity”"
+        locator: "section “Analyses of the shroud’s authenticity”"
         quote: "Beginning in the 1970s, tests were made to determine whether the images were the result of paints (or other pigments), scorches, or other agents; none of the tests proved conclusive."
         read: 2026-11-24
       - source: karapanagiotis-2025-shroud-overview
@@ -335,7 +335,7 @@ statements:
         read: 2026-11-24
       - source: karapanagiotis-2025-shroud-overview
         locator: "section 3.4"
-        quote: "As with all other attempts to reconstruct the Shroud, Garlaschelli's effort was not widely accepted and faced criticism [69]."
+        quote: "As with all other attempts to reconstruct the Shroud, Garlaschelli’s effort was not widely accepted and faced criticism [69]."
         read: 2026-11-24
   - id: blood
     group: "The image and the blood"
@@ -362,11 +362,11 @@ statements:
     text: "Britannica says the Holy See has not made any official pronouncement on the relic's authenticity, and that after the 1988 results the Vatican encouraged scientists to investigate further and recommended that Christians continue to venerate the shroud as an inspiring image of Christ. The New Catholic Encyclopedia entry says Church authorities have been generally reserved, or even quite negative, about its authenticity. Speaking before the shroud in Turin in 1998, Pope John Paul II said that, since it is not a matter of faith, the Church has no specific competence to pronounce on these questions and entrusts their investigation to scientists; for the believer, he said, what counts above all is that the shroud is a mirror of the Gospel."
     cites:
       - source: britannica-shroud-of-turin
-        locator: "section “Analyses of the shroud's authenticity”"
-        quote: "Upon receiving the results of the tests, the Vatican encouraged scientists to conduct further investigations of the shroud's authenticity and recommended that Christians continue to venerate the shroud as an inspiring image of Christ. Nonetheless, the Holy See has not made any official pronouncements concerning the relic's authenticity."
+        locator: "section “Analyses of the shroud’s authenticity”"
+        quote: "Upon receiving the results of the tests, the Vatican encouraged scientists to conduct further investigations of the shroud’s authenticity and recommended that Christians continue to venerate the shroud as an inspiring image of Christ. Nonetheless, the Holy See has not made any official pronouncements concerning the relic’s authenticity."
         read: 2026-11-24
       - source: wild-nce-shroud-of-turin
-        locator: "section “Authenticity”"
+        locator: "section “Authenticity”, paragraph 1"
         quote: "Church authorities have been generally reserved, or even quite negative, about the shroud's authenticity."
         read: 2026-11-24
       - source: john-paul-ii-1998-turin-address
