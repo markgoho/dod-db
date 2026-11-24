@@ -253,6 +253,56 @@
   }
 }
 
+/*
+  ---------- Era pill: the current era, fixed over the axis (#173) ----------
+  Wide screens only (narrow ones have the bar) and only with the scrollspy
+  and the rail's show/hide: it sits in the rail's <aside>, so it inherits the
+  rail's visibility, shown only while the axis fills the viewport. Fixed,
+  never sticky (see the rail), in whole pixels. Centred on the axis: the
+  content column is centred in the viewport less its scrollbar, which is a
+  fixed box's containing block (100dvw includes a classic scrollbar, which
+  put the pill 7.5px off the axis; measured). Light and outlined, so it never
+  reads as a second dark era label when one scrolls under it. Over the page,
+  but clicks pass through.
+*/
+.timeline-minimap__era-pill {
+  display: none;
+}
+
+@media (width >= 108rem) {
+  @supports (scroll-target-group: auto) and
+    ((animation-timeline: view()) and (animation-range: 0% 100%)) {
+    .timeline-minimap__era-pill {
+      display: flex;
+      inset-block-start: round(var(--space-s), 1px);
+      inset-inline: 0;
+      justify-content: center;
+      margin: 0;
+      pointer-events: none;
+      position: fixed;
+      z-index: var(--z-index-sticky);
+    }
+
+    .timeline-minimap__era-pill > .timeline-minimap__slot {
+      align-content: center;
+      background: var(--tan-000);
+      block-size: round(
+        up,
+        var(--line-height-heading) * 1em + 2 *
+          (var(--space-4xs) + var(--border-width-sm)),
+        1px
+      );
+      border: var(--border-width-sm) solid var(--tan-900);
+      border-radius: var(--border-radius-md);
+      box-shadow: 0 var(--space-4xs) 0 var(--tan-300);
+      font-size: var(--step--1);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--line-height-heading);
+      padding-inline: round(var(--space-xs), 1px);
+    }
+  }
+}
+
 /* ---------- Caption: a fixed slot, so a long label never moves the strip ---------- */
 
 .timeline-minimap__caption {
