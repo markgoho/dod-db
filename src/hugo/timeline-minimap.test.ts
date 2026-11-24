@@ -171,6 +171,29 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     ]);
   });
 
+  test("the era pill has a label per era, in axis order, each shown by its era's generated rule", () => {
+    const pill = select(page, ".timeline-minimap__era-pill");
+    expect(pill).toHaveLength(1);
+    expect(pill[0]?.attrs["aria-hidden"]).toBe("true");
+
+    const labels = select(page, ".timeline-minimap__era-pill [data-now]");
+    const eras = select(page, ".timeline-axis > .timeline-era");
+    expect(labels.map(l => l.attrs["data-now"])).toEqual(ids(eras));
+    expect(labels.map(l => l.text.trim())).toEqual(
+      select(page, ".timeline-axis > .timeline-era > .timeline-era__label").map(
+        h => h.text.trim(),
+      ),
+    );
+
+    const selectors = parseRules(
+      select(page, ".timeline-minimap style")[0]?.text ?? "",
+    ).flatMap(r => r.selectors);
+    for (const id of ids(eras))
+      expect(selectors).toContain(
+        `${on("data-entry-era", id)} [data-now="${id}"]`,
+      );
+  });
+
   test("the generated rules set only the --is-current flag, one selector per entry and era", () => {
     const rules = parseRules(
       select(page, ".timeline-minimap style")[0]?.text ?? "",

@@ -2,7 +2,8 @@
   The Timeline minimap (#167 §1–§3): the whole Timeline drawn to time, a fixed
   rail in the inline-start gutter on wide screens, and on narrow screens a
   sticky "You are in" bar whose Contents button opens the same minimap as a
-  popover. Era bands are sized by their year span and each placed entry is a
+  popover. On wide screens a pill fixed over the axis names the current era.
+  Era bands are sized by their year span and each placed entry is a
   tick at its year, so Hugo lays it all out; nothing is measured in the page.
   Takes the eras from timeline-eras.html.
 
@@ -108,6 +109,17 @@
       Contents
     </button>
   </div>
+
+  {{- /* Wide screens: the current era, fixed over the axis (#173). The bar's twin, so hidden from assistive technology. */}}
+  <p class="timeline-minimap__era-pill" aria-hidden="true">
+    <span class="timeline-minimap__slot">
+      {{- range $bands }}
+        <span class="timeline-minimap__now" data-now="{{ .id }}"
+          >{{ .label }}</span
+        >
+      {{- end }}
+    </span>
+  </p>
 
   <nav
     id="timeline-minimap"
