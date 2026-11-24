@@ -1,5 +1,5 @@
 {{ define "head-styles" }}
-  {{ $styles := slice (resources.Get "css/_prev-next-nav.css") (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") }}
+  {{ $styles := slice (resources.Get "css/_prev-next-nav.css") (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/scripture-reader.css") }}
   {{/* A page's custom block (partials/scholarship-custom/<slug>.html) brings its own stylesheet. */}}
   {{ with resources.Get (printf "css/scholarship-custom/%s.css" .File.ContentBaseName) }}
     {{ $styles = $styles | append . }}
@@ -224,4 +224,9 @@
 {{ define "footer-scripts" }}
   {{ partial "json-ld/scholarship.html" . }}
   {{ partial "json-ld/breadcrumb.html" . }}
+  {{ $readerBuilt := resources.Get "ts/scripture-reader.ts" | js.Build (dict "targetPath" "scripture-reader.js") }}
+  {{ if hugo.IsProduction }}
+    {{ $readerBuilt = $readerBuilt | resources.Minify | resources.Fingerprint }}
+  {{ end }}
+  <script src="{{ $readerBuilt.RelPermalink }}" defer></script>
 {{ end }}
