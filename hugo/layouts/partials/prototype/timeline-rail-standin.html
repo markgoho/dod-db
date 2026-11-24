@@ -1,0 +1,44 @@
+{{- /* PROTOTYPE (timeline rail): a STAND-IN axis item, shaped like timeline-entry.html. Takes {standin, by}. */ -}}
+{{- $s := .standin -}}
+{{- $byTradition := eq .by "tradition" -}}
+{{- $classes := slice "timeline-entry" "proto-standin" -}}
+{{- if $s.tradition }}
+  {{ $classes = $classes | append "timeline-entry--paired" }}
+{{ end -}}
+{{- if $byTradition }}
+  {{ $classes = $classes | append "timeline-entry--by-tradition" }}
+{{ end -}}
+<li
+  class="{{ delimit $classes " " }}"
+  id="{{ $s.id }}"
+  tabindex="-1"
+  aria-label="{{ $s.title }}">
+  <div class="timeline-entry__card panel">
+    <p class="timeline-entry__kind type-eyebrow">
+      {{ cond (eq $s.kind "event") "Event" "Composition" }} · STAND-IN
+    </p>
+    <h3 class="timeline-entry__title">{{ $s.title }}</h3>
+    {{ with $s.display }}
+      <p class="timeline-entry__date">{{ . }}</p>
+    {{ else }}
+      <p class="timeline-entry__date timeline-entry__date--verdict">
+        {{ $s.verdict }}
+      </p>
+    {{ end }}
+    <p class="timeline-entry__note proto-standin__note">{{ $s.note }}</p>
+  </div>
+  <span class="timeline-entry__node" aria-hidden="true"></span>
+  {{ with $s.tradition }}
+    <div class="timeline-entry__tradition">
+      {{ if $byTradition }}
+        <p class="timeline-entry__placed type-eyebrow">
+          Placed by a tradition’s date
+        </p>
+      {{ end }}
+      <p class="timeline-entry__label">{{ .holder }} holds</p>
+      <p class="timeline-entry__date timeline-entry__date--tradition">
+        {{ .display }}
+      </p>
+    </div>
+  {{ end }}
+</li>

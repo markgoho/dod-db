@@ -1,0 +1,362 @@
+# PROTOTYPE (timeline rail), throwaway: lives only on branch prototype/timeline-rail.
+# Every value is a STAND-IN: not sourced, not reviewed, not a claim. It exists
+# only to test the overview rail against ~55 items spanning 4004 BCE-100 CE.
+entries:
+  - id: standin-birth-of-jesus
+    title: "STAND-IN: Birth of Jesus"
+    kind: event
+    year: -5
+    by: critical
+    display: "STAND-IN: About 6–4 BCE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: 25 December, 1 BCE",
+        from: -1,
+        holder: "STAND-IN tradition",
+      }
+  - id: standin-herod-death
+    title: "STAND-IN: Death of Herod the Great"
+    kind: event
+    year: -4
+    by: critical
+    display: "STAND-IN: 4 BCE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-magi
+    title: "STAND-IN: Visit of the Magi"
+    kind: event
+    year: -3
+    by: tradition
+    verdict: "STAND-IN: No firm date"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: About 3 BCE",
+        from: -3,
+        holder: "STAND-IN tradition",
+      }
+  - id: standin-census-quirinius
+    title: "STAND-IN: Census of Quirinius"
+    kind: event
+    year: 6
+    by: critical
+    display: "STAND-IN: 6 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-jesus-in-temple
+    title: "STAND-IN: Jesus in the Temple at twelve"
+    kind: event
+    year: 8
+    by: tradition
+    verdict: "STAND-IN: No firm date"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      { display: "STAND-IN: About 8 CE", from: 8, holder: "STAND-IN tradition" }
+  - id: standin-pilate-prefect
+    title: "STAND-IN: Pilate becomes prefect of Judea"
+    kind: event
+    year: 26
+    by: critical
+    display: "STAND-IN: 26 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-john-baptist
+    title: "STAND-IN: Ministry of John the Baptist"
+    kind: event
+    year: 28
+    by: critical
+    display: "STAND-IN: About 28 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-baptism-of-jesus
+    title: "STAND-IN: Baptism of Jesus"
+    kind: event
+    year: 29
+    by: critical
+    display: "STAND-IN: About 28–29 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      { display: "STAND-IN: 26 CE", from: 26, holder: "STAND-IN tradition" }
+  - id: standin-crucifixion
+    title: "STAND-IN: Crucifixion of Jesus"
+    kind: event
+    year: 30
+    by: critical
+    display: "STAND-IN: About 30–33 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      { display: "STAND-IN: 33 CE", from: 33, holder: "STAND-IN tradition" }
+  - id: standin-resurrection-appearances
+    title: "STAND-IN: Resurrection appearances"
+    kind: event
+    year: 30
+    by: tradition
+    verdict: "STAND-IN: No firm date"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      { display: "STAND-IN: 33 CE", from: 33, holder: "STAND-IN tradition" }
+  - id: standin-pentecost
+    title: "STAND-IN: Pentecost"
+    kind: event
+    year: 33
+    by: tradition
+    verdict: "STAND-IN: No firm date"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      { display: "STAND-IN: 33 CE", from: 33, holder: "STAND-IN tradition" }
+  - id: standin-stephen
+    title: "STAND-IN: Death of Stephen"
+    kind: event
+    year: 34
+    by: critical
+    display: "STAND-IN: About 34–36 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-paul-conversion
+    title: "STAND-IN: Conversion of Paul"
+    kind: event
+    year: 35
+    by: critical
+    display: "STAND-IN: About 33–36 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-q-source
+    title: "STAND-IN: Q sayings source"
+    kind: composition
+    year: 40
+    by: critical
+    display: "STAND-IN: About 40–70 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-jerusalem-council
+    title: "STAND-IN: Jerusalem Council"
+    kind: event
+    year: 49
+    by: critical
+    display: "STAND-IN: About 48–50 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-1-thess
+    title: "STAND-IN: 1 Thessalonians"
+    kind: composition
+    year: 50
+    by: critical
+    display: "STAND-IN: About 50 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-galatians
+    title: "STAND-IN: Galatians"
+    kind: composition
+    year: 52
+    by: critical
+    display: "STAND-IN: About 50–55 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-1-cor
+    title: "STAND-IN: 1 Corinthians"
+    kind: composition
+    year: 54
+    by: critical
+    display: "STAND-IN: About 53–55 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-2-cor
+    title: "STAND-IN: 2 Corinthians"
+    kind: composition
+    year: 55
+    by: critical
+    display: "STAND-IN: About 55–56 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-philippians
+    title: "STAND-IN: Philippians"
+    kind: composition
+    year: 56
+    by: critical
+    display: "STAND-IN: About 55–62 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-philemon
+    title: "STAND-IN: Philemon"
+    kind: composition
+    year: 56
+    by: critical
+    display: "STAND-IN: About 55–62 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-romans
+    title: "STAND-IN: Romans"
+    kind: composition
+    year: 57
+    by: critical
+    display: "STAND-IN: About 56–57 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-james-death
+    title: "STAND-IN: Death of James, brother of Jesus"
+    kind: event
+    year: 62
+    by: critical
+    display: "STAND-IN: 62 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-nero-persecution
+    title: "STAND-IN: Nero's persecution in Rome"
+    kind: event
+    year: 64
+    by: critical
+    display: "STAND-IN: 64 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-paul-death
+    title: "STAND-IN: Death of Paul"
+    kind: event
+    year: 65
+    by: critical
+    display: "STAND-IN: About 64–67 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      { display: "STAND-IN: 67 CE", from: 67, holder: "STAND-IN tradition" }
+  - id: standin-jewish-revolt
+    title: "STAND-IN: First Jewish Revolt begins"
+    kind: event
+    year: 66
+    by: critical
+    display: "STAND-IN: 66 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-mark
+    title: "STAND-IN: Gospel of Mark"
+    kind: composition
+    year: 68
+    by: critical
+    display: "STAND-IN: About 66–70 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: About 50s CE",
+        from: 55,
+        holder: "STAND-IN tradition",
+      }
+  - id: standin-fall-of-temple
+    title: "STAND-IN: Fall of the Temple"
+    kind: event
+    year: 70
+    by: critical
+    display: "STAND-IN: 70 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-colossians
+    title: "STAND-IN: Colossians"
+    kind: composition
+    year: 75
+    by: critical
+    display: "STAND-IN: About 70–80 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: About 60 CE",
+        from: 60,
+        holder: "STAND-IN tradition",
+      }
+  - id: standin-masada
+    title: "STAND-IN: Fall of Masada"
+    kind: event
+    year: 73
+    by: critical
+    display: "STAND-IN: 73–74 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-matthew
+    title: "STAND-IN: Gospel of Matthew"
+    kind: composition
+    year: 80
+    by: critical
+    display: "STAND-IN: About 80–90 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: About 50s CE",
+        from: 55,
+        holder: "STAND-IN tradition",
+      }
+  - id: standin-hebrews
+    title: "STAND-IN: Hebrews"
+    kind: composition
+    year: 80
+    by: critical
+    display: "STAND-IN: About 60–95 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-ephesians
+    title: "STAND-IN: Ephesians"
+    kind: composition
+    year: 85
+    by: critical
+    display: "STAND-IN: About 80–100 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: About 60 CE",
+        from: 60,
+        holder: "STAND-IN tradition",
+      }
+  - id: standin-luke-acts
+    title: "STAND-IN: Luke–Acts"
+    kind: composition
+    year: 85
+    by: critical
+    display: "STAND-IN: About 80–100 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: About 60–62 CE",
+        from: 61,
+        holder: "STAND-IN tradition",
+      }
+  - id: standin-1-peter
+    title: "STAND-IN: 1 Peter"
+    kind: composition
+    year: 88
+    by: critical
+    display: "STAND-IN: About 80–100 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: About 64 CE",
+        from: 64,
+        holder: "STAND-IN tradition",
+      }
+  - id: standin-john
+    title: "STAND-IN: Gospel of John"
+    kind: composition
+    year: 95
+    by: critical
+    display: "STAND-IN: About 90–110 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: About 85–90 CE",
+        from: 88,
+        holder: "STAND-IN tradition",
+      }
+  - id: standin-revelation
+    title: "STAND-IN: Revelation"
+    kind: composition
+    year: 95
+    by: critical
+    display: "STAND-IN: About 95 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-1-clement
+    title: "STAND-IN: 1 Clement"
+    kind: composition
+    year: 96
+    by: critical
+    display: "STAND-IN: About 96 CE"
+    note: "STAND-IN: placeholder, no source."
+  - id: standin-pastorals
+    title: "STAND-IN: Pastoral Epistles"
+    kind: composition
+    year: 100
+    by: critical
+    display: "STAND-IN: About 100–125 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: About 63–67 CE",
+        from: 65,
+        holder: "STAND-IN tradition",
+      }
+  - id: standin-2-peter
+    title: "STAND-IN: 2 Peter"
+    kind: composition
+    year: 100
+    by: critical
+    display: "STAND-IN: About 100–150 CE"
+    note: "STAND-IN: placeholder, no source."
+    tradition:
+      {
+        display: "STAND-IN: About 66 CE",
+        from: 66,
+        holder: "STAND-IN tradition",
+      }

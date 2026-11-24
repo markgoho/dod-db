@@ -1,5 +1,5 @@
 {{ define "head-styles" }}
-  {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") | resources.Concat "css/timeline-list.css" | resources.Minify }}
+  {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") (resources.Get "css/prototype-timeline-rail.css") | resources.Concat "css/timeline-list.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
@@ -19,7 +19,30 @@
   {{ $unplaced := $placement.unplaced }}
   {{ $ordered := $placement.ordered }}
 
-  {{ $eras := partial "timeline-eras.html" $placed }}
+  {{/* PROTOTYPE (timeline rail): STAND-IN NT-era items join the axis only (not JSON-LD, sources or date line). */}}
+  {{ $axisItems := $placed }}
+  {{ range (index hugo.Data "prototype-timeline-rail-standins").entries }}
+    {{ $key := printf "%07d|%d|%s" (add (int .year) 1000000) (cond (eq .kind "event") 0 1) (lower .title) }}
+    {{ $axisItems = $axisItems | append (dict "key" $key "year" .year "by" .by "standin" .) }}
+  {{ end }}
+  {{ $axisItems = sort $axisItems "key" }}
+  {{ $eras := partial "timeline-eras.html" $axisItems }}
+
+  {{/* PROTOTYPE: one rail model for all three rail variants. */}}
+  {{ $railEras := slice }}
+  {{ $scope := slice "--tl-axis" }}
+  {{ range $i, $era := $eras }}
+    {{ $items := slice }}
+    {{ range .items }}
+      {{ if .standin }}
+        {{ $items = $items | append (dict "id" .standin.id "title" (strings.TrimPrefix "STAND-IN: " .standin.title) "by" .by "standin" true) }}
+      {{ else }}
+        {{ $items = $items | append (dict "id" .page.File.ContentBaseName "title" .page.Title "by" .by "standin" false) }}
+      {{ end }}
+    {{ end }}
+    {{ $railEras = $railEras | append (dict "id" (printf "era-%d" $i) "tl" (printf "--tl-era-%d" $i) "label" .label "items" $items) }}
+    {{ $scope = $scope | append (printf "--tl-era-%d" $i) }}
+  {{ end }}
 
   {{ $sourceIds := partial "timeline-source-ids.html" $ordered }}
   {{ $shortCites := partial "source-short-cites.html" $sourceIds }}
@@ -58,58 +81,73 @@
     </div>
 
     {{ with $eras }}
-      <section class="timeline-spine" aria-label="Timeline">
-        <ul class="timeline-legend" role="list">
-          <li class="timeline-legend__item">
-            <span class="timeline-legend__swatch" aria-hidden="true"></span>
-            What scholarly and reference sources say
-          </li>
-          <li class="timeline-legend__item">
-            <span
-              class="timeline-legend__swatch timeline-legend__swatch--tradition"
-              aria-hidden="true"></span>
-            What a named tradition holds
-          </li>
-          <li class="timeline-legend__item">
-            <span
-              class="timeline-legend__swatch timeline-legend__swatch--placed"
-              aria-hidden="true"></span>
-            <span
-              ><strong>Placed by a tradition’s date:</strong> scholars give no
-              date for this; it sits where the named tradition puts it.</span
-            >
-          </li>
-        </ul>
-        <div class="timeline-lanes" aria-hidden="true">
-          <p>What scholarly and reference sources say</p>
-          <p>What a named tradition holds</p>
-        </div>
-        <ol
-          class="timeline-axis"
-          role="list"
-          aria-label="Timeline Entries in date order, by era">
-          {{ range . }}
-            <li
-              class="timeline-era{{ if not .items }}
-                timeline-era--empty
-              {{ end }}">
-              <h2 class="timeline-era__label">{{ .label }}</h2>
-              {{ with .items }}
-                <ol class="timeline-era__entries" role="list">
-                  {{ range . }}
-                    {{ partial "timeline-entry.html" (merge $ctx (dict
-                      "entry" .page
-                      "by" .by
-                      "triggers" (where $allTriggers "entry" .page.File.ContentBaseName)
-                      ))
-                    }}
-                  {{ end }}
-                </ol>
-              {{ end }}
+      {{/* PROTOTYPE (timeline rail): three overview rails beside one shared axis, switched by ?variant= (A shows without JS). */}}
+      <div
+        class="proto-rail-layout"
+        style="timeline-scope: {{ delimit $scope ", " | safeCSS }}">
+        {{ partial "prototype/timeline-rail-a.html" $railEras }}
+        {{ partial "prototype/timeline-rail-b.html" $railEras }}
+        {{ partial "prototype/timeline-rail-c.html" $railEras }}
+        <section class="timeline-spine" aria-label="Timeline">
+          <ul class="timeline-legend" role="list">
+            <li class="timeline-legend__item">
+              <span class="timeline-legend__swatch" aria-hidden="true"></span>
+              What scholarly and reference sources say
             </li>
-          {{ end }}
-        </ol>
-      </section>
+            <li class="timeline-legend__item">
+              <span
+                class="timeline-legend__swatch timeline-legend__swatch--tradition"
+                aria-hidden="true"></span>
+              What a named tradition holds
+            </li>
+            <li class="timeline-legend__item">
+              <span
+                class="timeline-legend__swatch timeline-legend__swatch--placed"
+                aria-hidden="true"></span>
+              <span
+                ><strong>Placed by a tradition’s date:</strong> scholars give no
+                date for this; it sits where the named tradition puts it.</span
+              >
+            </li>
+          </ul>
+          <div class="timeline-lanes" aria-hidden="true">
+            <p>What scholarly and reference sources say</p>
+            <p>What a named tradition holds</p>
+          </div>
+          <ol
+            class="timeline-axis"
+            role="list"
+            aria-label="Timeline Entries in date order, by era">
+            {{ range $i, $era := . }}
+              <li
+                id="era-{{ $i }}"
+                tabindex="-1"
+                style="view-timeline: --tl-era-{{ $i }}"
+                class="timeline-era{{ if not .items }}
+                  timeline-era--empty
+                {{ end }}">
+                <h2 class="timeline-era__label">{{ .label }}</h2>
+                {{ with .items }}
+                  <ol class="timeline-era__entries" role="list">
+                    {{ range . }}
+                      {{ if .standin }}
+                        {{ partial "prototype/timeline-rail-standin.html" . }}
+                      {{ else }}
+                        {{ partial "timeline-entry.html" (merge $ctx (dict
+                          "entry" .page
+                          "by" .by
+                          "triggers" (where $allTriggers "entry" .page.File.ContentBaseName)
+                          ))
+                        }}
+                      {{ end }}
+                    {{ end }}
+                  </ol>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ol>
+        </section>
+      </div>
     {{ end }}
 
     {{ with $unplaced }}
@@ -183,6 +221,10 @@
 {{ end }}
 
 {{ define "footer-scripts" }}
+  {{ partial "prototype/timeline-rail-script.html" . }}
+  {{ if or hugo.IsServer (os.Getenv "HUGO_PROTOTYPE") }}
+    {{ partial "prototype/variant-switcher.html" . }}
+  {{ end }}
   {{ partial "json-ld/timeline.html" . }}
   {{ partial "json-ld/breadcrumb.html" . }}
 {{ end }}

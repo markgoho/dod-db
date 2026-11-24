@@ -1,0 +1,506 @@
+/*
+  PROTOTYPE (timeline rail), throwaway: lives only on branch
+  prototype/timeline-rail. Three left-side overview rails for the vertical
+  Timeline, switched by ?variant= (A Era + entry TOC, B Minimap, C Era
+  progress). One axis is rendered; only the rail swaps. Below 64rem every rail
+  collapses to a sticky bar that opens the rail as a popover.
+*/
+
+/* ---------- Layout: rail beside the axis ---------- */
+
+.timeline-page > .proto-rail-layout {
+  max-width: none;
+}
+
+.proto-rail-layout {
+  display: grid;
+  gap: var(--space-s) var(--space-l);
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.proto-rail[hidden] {
+  display: none;
+}
+
+/* The rail is the sticky element and the scroll-state container. */
+.proto-rail {
+  align-self: start;
+  container: proto-rail / scroll-state;
+  inset-block-start: 0;
+  position: sticky;
+  z-index: var(--z-index-sticky);
+}
+
+.proto-rail__toc {
+  font-size: var(--step--1);
+  overscroll-behavior: contain;
+  scroll-target-group: auto;
+}
+
+/* ?spy=fallback forces the IntersectionObserver path (what Firefox and Safari get). */
+.proto-spy-fallback .proto-rail__toc {
+  scroll-target-group: none;
+}
+
+.proto-rail__toc a {
+  color: var(--color-text-main);
+  text-decoration: none;
+}
+
+.proto-rail__toc ol {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Narrow: sticky bar + popover ---------- */
+
+.proto-rail__bar {
+  align-items: center;
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  gap: var(--space-2xs);
+  justify-content: space-between;
+  padding: var(--space-3xs) var(--space-2xs);
+}
+
+@container proto-rail scroll-state(stuck: top) {
+  .proto-rail__bar {
+    background: var(--tan-100);
+    border-block-start-color: transparent;
+    border-radius: 0;
+    box-shadow: 0 var(--space-4xs) 0
+      color-mix(in srgb, var(--tan-900) 18%, transparent);
+  }
+}
+
+.proto-rail__now {
+  display: grid;
+  line-height: var(--line-height-heading);
+  margin: 0;
+  min-inline-size: 0;
+}
+
+.proto-rail__now .type-eyebrow {
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
+}
+
+.proto-rail__now-era {
+  font-weight: var(--font-weight-bold);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.proto-rail__open {
+  background: var(--tan-900);
+  border: var(--border-width-sm) solid var(--tan-900);
+  color: var(--color-text-inverse);
+  cursor: pointer;
+  flex: none;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  min-block-size: var(--space-l);
+  padding-inline: var(--space-xs);
+}
+
+.proto-rail__open:hover,
+.proto-rail__open:focus-visible {
+  background: var(--color-action);
+}
+
+/* The open popover drops under the bar, inside the gutters. */
+.proto-rail__toc:popover-open {
+  background: var(--tan-000);
+  border: var(--border-width-md) solid var(--tan-900);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 var(--space-3xs) var(--space-s)
+    color-mix(in srgb, var(--tan-900) 30%, transparent);
+  color: var(--color-text-main);
+  inline-size: auto;
+  inset: calc(var(--space-xl) + var(--space-2xs)) var(--space-s) auto;
+  margin: 0;
+  max-block-size: 75dvh;
+  overflow-y: auto;
+  padding: var(--space-s);
+  position: fixed;
+}
+
+/* WCAG 2.4.11: the sticky bar must not hide a focused or jumped-to target. */
+@media (width < 64rem) {
+  html:has(.proto-rail-layout) {
+    scroll-padding-block-start: calc(var(--space-xl) + var(--space-s));
+  }
+}
+
+/* ---------- Wide: the rail is a column; the popover is always shown inline ---------- */
+
+@media (width >= 64rem) {
+  .proto-rail-layout {
+    align-items: start;
+    grid-template-columns: var(--content-max-width-sidebar) minmax(0, 1fr);
+  }
+
+  .proto-rail {
+    grid-column: 1;
+    grid-row: 1;
+    inset-block-start: var(--space-s);
+  }
+
+  .proto-rail-layout > .timeline-spine {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .proto-rail__bar {
+    display: none;
+  }
+
+  .proto-rail__toc[popover] {
+    background: none;
+    block-size: auto;
+    border: 0;
+    color: inherit;
+    display: block;
+    inline-size: auto;
+    inset: auto;
+    margin: 0;
+    max-block-size: calc(100dvh - 2 * var(--space-s));
+    overflow-y: auto;
+    padding: 0;
+    position: static;
+  }
+}
+
+/* Placed-by-tradition marker, shared by A and C entry links: the hollow dashed node. */
+.rail-a__entry.is-placed::before,
+.rail-c__entry.is-placed::before {
+  block-size: var(--space-2xs);
+  border: var(--border-width-sm) dashed var(--tan-900);
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  inline-size: var(--space-2xs);
+  margin-inline-end: var(--space-4xs);
+  vertical-align: middle;
+}
+
+/* ---------- A: era + entry TOC ---------- */
+
+.rail-a__head {
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
+  margin-block-end: var(--space-3xs);
+}
+
+.rail-a__eras {
+  gap: var(--space-4xs);
+}
+
+.rail-a__era-link {
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  font-weight: var(--font-weight-bold);
+  gap: var(--space-2xs);
+  justify-content: space-between;
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.rail-a__era.is-empty > .rail-a__era-link {
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-regular);
+}
+
+.rail-a__count {
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.rail-a__entries {
+  border-inline-start: var(--border-width-sm) solid var(--tan-300);
+  margin: var(--space-4xs) 0 var(--space-3xs) var(--space-3xs);
+}
+
+.rail-a__entry {
+  border-inline-start: var(--border-width-md) solid transparent;
+  display: block;
+  font-size: var(--step--2);
+  line-height: var(--line-height-heading);
+  margin-inline-start: calc(-1 * var(--border-width-sm));
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.rail-a__entry.is-standin {
+  color: var(--color-text-muted);
+}
+
+.rail-a__era:has(a:is(:target-current, .target-current)) > .rail-a__era-link {
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+}
+
+.rail-a__era:has(a:is(:target-current, .target-current))
+  > .rail-a__era-link
+  .rail-a__count {
+  color: inherit;
+}
+
+.rail-a__entry:is(:target-current, .target-current) {
+  background: var(--tan-200);
+  border-inline-start-color: var(--color-action);
+  color: var(--color-text-main);
+  font-weight: var(--font-weight-bold);
+}
+
+/* ---------- B: minimap ---------- */
+
+.timeline-axis {
+  view-timeline: --tl-axis;
+}
+
+.rail-b {
+  display: grid;
+  gap: var(--space-3xs);
+}
+
+.rail-b__current {
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  margin: 0;
+  min-block-size: calc(2 * var(--line-height-heading) * 1em);
+}
+
+.rail-b__strip {
+  background: var(--tan-000);
+  block-size: calc(100dvh - 2 * var(--space-s) - var(--space-l));
+  border: var(--border-width-sm) solid var(--tan-900);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  position: relative;
+}
+
+.rail-b__band {
+  border-block-end: var(--border-width-sm) dashed var(--tan-300);
+  flex: var(--weight) 1 0;
+  min-block-size: var(--space-3xs);
+  overflow: clip;
+  position: relative;
+}
+
+.rail-b__band-label {
+  color: var(--color-text-muted);
+  font-size: var(--step--2);
+  inset-block-start: 0;
+  inset-inline-start: var(--space-4xs);
+  line-height: var(--line-height-heading);
+  position: absolute;
+  white-space: nowrap;
+}
+
+.rail-b__band:has(a:is(:target-current, .target-current)) {
+  background: var(--tan-200);
+}
+
+.rail-b__band:has(a:is(:target-current, .target-current))
+  > .rail-b__band-label {
+  color: var(--color-text-main);
+  font-weight: var(--font-weight-bold);
+}
+
+.rail-b__tick {
+  background: var(--tan-900);
+  block-size: var(--border-width-sm);
+  inset-block-start: calc(var(--pos) * 100%);
+  inset-inline: 60% var(--space-3xs);
+  position: absolute;
+}
+
+.rail-b__tick.is-placed {
+  background: none;
+  border-block-start: var(--border-width-sm) dashed var(--tan-500);
+  inset-inline-start: 75%;
+}
+
+.rail-b__tick:is(:target-current, .target-current) {
+  background: var(--color-action);
+  block-size: var(--border-width-md);
+  inset-inline-start: 40%;
+}
+
+/* "You are here": its height is the viewport's share of the axis (--frac, set by the rail script). */
+.rail-b__viewport {
+  background: color-mix(in srgb, var(--color-action) 12%, transparent);
+  block-size: calc(var(--frac, 0.05) * 100%);
+  border-block: var(--border-width-sm) solid var(--color-action);
+  inset-block-start: 0;
+  inset-inline: 0;
+  pointer-events: none;
+  position: absolute;
+  translate: 0 -100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    @keyframes proto-rail-viewport {
+      from {
+        translate: 0 -100%;
+      }
+
+      to {
+        translate: 0 calc(100% / var(--frac, 0.05));
+      }
+    }
+
+    .rail-b__viewport {
+      animation: proto-rail-viewport linear both;
+      animation-timeline: --tl-axis;
+    }
+  }
+}
+
+@media (width < 64rem) {
+  .rail-b__strip {
+    block-size: 60dvh;
+  }
+}
+
+/* ---------- C: era progress ---------- */
+
+.rail-c__eras {
+  gap: var(--space-4xs);
+}
+
+.rail-c__era-link {
+  border: var(--border-width-sm) solid transparent;
+  border-radius: var(--border-radius-sm);
+  display: grid;
+  gap: var(--space-4xs) var(--space-2xs);
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: var(--space-3xs) var(--space-2xs);
+}
+
+.rail-c__era.is-empty .rail-c__label,
+.rail-c__count {
+  color: var(--color-text-muted);
+}
+
+.rail-c__count {
+  font-variant-numeric: tabular-nums;
+}
+
+.rail-c__track {
+  background: var(--tan-200);
+  block-size: var(--space-4xs);
+  border-radius: var(--border-radius-sm);
+  grid-column: 1 / -1;
+  overflow: clip;
+}
+
+.rail-c__fill {
+  background: var(--tan-900);
+  block-size: 100%;
+  display: block;
+  transform: scaleX(var(--p, 0));
+  transform-origin: 0 50%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    @keyframes proto-rail-fill {
+      from {
+        transform: scaleX(0);
+      }
+
+      to {
+        transform: scaleX(1);
+      }
+    }
+
+    .rail-c__fill {
+      animation: proto-rail-fill linear both;
+      animation-timeline: var(--tl);
+      animation-range: exit-crossing 0% exit-crossing 100%;
+    }
+  }
+}
+
+.rail-c__era:has(a:is(:target-current, .target-current)) > .rail-c__era-link {
+  background: var(--tan-000);
+  border-color: var(--tan-900);
+  font-weight: var(--font-weight-bold);
+}
+
+.rail-c__era:has(a:is(:target-current, .target-current)) .rail-c__fill {
+  background: var(--color-action);
+}
+
+.proto-rail__toc .rail-c__entries {
+  display: none;
+  margin: var(--space-4xs) 0 var(--space-2xs) var(--space-2xs);
+}
+
+.rail-c__era:has(a:is(:target-current, .target-current)) .rail-c__entries {
+  display: grid;
+}
+
+.rail-c__entry {
+  border-inline-start: var(--border-width-md) solid var(--tan-300);
+  color: var(--color-text-muted);
+  display: block;
+  font-size: var(--step--2);
+  line-height: var(--line-height-heading);
+  padding: var(--space-4xs) var(--space-2xs);
+}
+
+.rail-c__entry:is(:target-current, .target-current) {
+  border-inline-start-color: var(--color-action);
+  color: var(--color-text-main);
+  font-weight: var(--font-weight-bold);
+}
+
+/* ---------- Stand-ins and switcher ---------- */
+
+.proto-standin > .timeline-entry__card {
+  border-style: dashed;
+}
+
+.proto-switcher {
+  align-items: center;
+  background: var(--tan-900);
+  border: var(--border-width-sm) solid var(--color-accent);
+  border-radius: var(--space-l);
+  box-shadow: 0 var(--space-3xs) var(--space-s)
+    color-mix(in srgb, var(--tan-900) 40%, transparent);
+  color: var(--color-accent);
+  display: flex;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  gap: var(--space-2xs);
+  inset-block-end: var(--space-s);
+  inset-inline-start: 50%;
+  max-inline-size: calc(100% - 2 * var(--space-s));
+  padding: var(--space-4xs) var(--space-2xs);
+  position: fixed;
+  translate: -50% 0;
+  z-index: var(--z-index-toast);
+}
+
+.proto-switcher__btn {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: var(--space-4xs) var(--space-2xs);
+}
+
+.proto-switcher__label {
+  white-space: nowrap;
+}

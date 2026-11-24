@@ -1,0 +1,45 @@
+{{- /* PROTOTYPE variant A: era + entry table of contents. Takes the rail eras. */ -}}
+<aside
+  class="proto-rail proto-rail--a"
+  data-variant="A"
+  data-variant-name="Era + entry TOC"
+  aria-label="Timeline overview">
+  {{ partial "prototype/timeline-rail-bar.html" (dict "toc" "rail-toc-a") }}
+  <nav
+    id="rail-toc-a"
+    popover="auto"
+    class="proto-rail__toc proto-spy rail-a"
+    aria-label="Timeline contents">
+    <p class="rail-a__head type-eyebrow">On this timeline</p>
+    <ol class="rail-a__eras" role="list">
+      {{ range . }}
+        {{ $era := . }}
+        <li class="rail-a__era{{ if not .items }}is-empty{{ end }}">
+          <a
+            class="rail-a__era-link"
+            href="#{{ .id }}"
+            data-era-label="{{ .label }}">
+            <span>{{ .label }}</span>
+            <span class="rail-a__count">{{ len .items }}</span>
+          </a>
+          {{ with .items }}
+            <ol class="rail-a__entries" role="list">
+              {{ range . }}
+                <li>
+                  <a
+                    class="rail-a__entry{{ if eq .by "tradition" }}
+                      is-placed
+                    {{ end }}{{ if .standin }}is-standin{{ end }}"
+                    href="#{{ .id }}"
+                    data-era-label="{{ $era.label }}"
+                    >{{ .title }}</a
+                  >
+                </li>
+              {{ end }}
+            </ol>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ol>
+  </nav>
+</aside>

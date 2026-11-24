@@ -1,0 +1,10 @@
+{{- /* PROTOTYPE (timeline rail): the narrow-screen sticky bar; opens the rail as a popover. Takes {toc: popover id}. */ -}}
+<div class="proto-rail__bar">
+  <p class="proto-rail__now">
+    <span class="type-eyebrow">You are in</span>
+    <span class="proto-rail__now-era" data-rail-now>Start of the timeline</span>
+  </p>
+  <button type="button" class="proto-rail__open" popovertarget="{{ .toc }}">
+    Contents
+  </button>
+</div>

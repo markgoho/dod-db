@@ -1,0 +1,50 @@
+{{- /* PROTOTYPE variant C: compact era rail with per-era scroll progress (view timelines); the current era opens to its entries. */ -}}
+<aside
+  class="proto-rail proto-rail--c"
+  data-variant="C"
+  data-variant-name="Era progress"
+  aria-label="Timeline overview"
+  hidden>
+  {{ partial "prototype/timeline-rail-bar.html" (dict "toc" "rail-toc-c") }}
+  <nav
+    id="rail-toc-c"
+    popover="auto"
+    class="proto-rail__toc proto-spy rail-c"
+    aria-label="Timeline eras">
+    <ol class="rail-c__eras" role="list">
+      {{ range . }}
+        {{ $era := . }}
+        <li
+          class="rail-c__era{{ if not .items }}is-empty{{ end }}"
+          style="--tl: {{ .tl | safeCSS }}">
+          <a
+            class="rail-c__era-link"
+            href="#{{ .id }}"
+            data-era-label="{{ .label }}">
+            <span class="rail-c__label">{{ .label }}</span>
+            <span class="rail-c__count">{{ len .items }}</span>
+            <span class="rail-c__track" aria-hidden="true"
+              ><span class="rail-c__fill"></span
+            ></span>
+          </a>
+          {{ with .items }}
+            <ol class="rail-c__entries" role="list">
+              {{ range . }}
+                <li>
+                  <a
+                    class="rail-c__entry{{ if eq .by "tradition" }}
+                      is-placed
+                    {{ end }}"
+                    href="#{{ .id }}"
+                    data-era-label="{{ $era.label }}"
+                    >{{ .title }}</a
+                  >
+                </li>
+              {{ end }}
+            </ol>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ol>
+  </nav>
+</aside>
