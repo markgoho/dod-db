@@ -36,7 +36,7 @@ statements:
   - id: deniers
     group: "Did Jesus exist?"
     question: "Then who argues that Jesus did not exist?"
-    short: "Rare exceptions, among them two New Testament scholars."
+    short: "Among others, the New Testament scholars Robert M. Price and Thomas L. Brodie."
     text: "Virtually none is not none. In the nineteenth century the German scholar Bruno Bauer denied that Jesus ever existed. Before 2000 G. A. Wells was almost a lone voice for the view, but that is no longer the case, even among those qualified within the field: the New Testament scholars Robert M. Price and Thomas L. Brodie have published works arguing that Jesus was not historical, as has the classicist Richard Carrier."
     cites:
       - source: meggitt-2019-non-historical-jesus
@@ -116,7 +116,7 @@ statements:
   - id: details
     group: "What can be known about him"
     question: "Do scholars count any details of his life as historical?"
-    short: "Most say the sign on the cross is, and often that his baptism may well be."
+    short: "Most say the sign on the cross is; scholars often say his baptism may well be."
     text: "Most scholars say that the sign on the cross calling Jesus King of the Jews is historical, and scholars often say that his baptism by John the Baptist may well be historical. A lot of scholars say both details are probably historical because they seem to be witnessed by more than one source and to go against the theological tendency of the documents in which they are found."
     cites:
       - source: martin-rlst152-l13

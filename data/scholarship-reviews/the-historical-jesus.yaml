@@ -1,5 +1,5 @@
 # Review record for /scholarship/the-historical-jesus/ (#93 shape). Not rendered.
-# agent: results of the agent's first pass (#95, 2026-11-23). That pass does not count toward publish.
+# agent: results of the agent's first pass (#95, 2026-11-23) and the independent second agent pass (2026-11-23, #93 rule change).
 # owner: empty ("") until the owner's publish review sets pass or fail.
 review: ""
 citations:
@@ -7,184 +7,199 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Meggitt manuscript p. 1, opening sentence of section 1. His note 1 qualifies it (“It is not the case that none do”), so the page says “virtually no”, never “no” or “all”.",
+      note: "Meggitt manuscript p. 1, opening sentence of section 1. His note 1 qualifies it (“It is not the case that none do”), so the page says “virtually no”, never “no” or “all”. Second pass 2026-11-23: verified.",
     }
   existence/2:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Martin l13 ch. 2 [00:13:25]. Quote starts mid-sentence, after “You'll find every once in a while somebody on the web… in some crazy blog, saying that Jesus never existed, but”. Martin says “all admit”, stronger than Meggitt's “virtually no” and his note 1. The statement uses Meggitt's weaker wording and scope (New Testament studies, early Christian history); Martin's scope is “reputable historical scholars”. Supports the statement at its own strength, but owner confirms the mismatch is acceptable. Independent of existence/1 (distinct author, #92).",
+      note: "Martin l13 ch. 2 [00:13:25]. Quote starts mid-sentence, after “You'll find every once in a while somebody on the web… in some crazy blog, saying that Jesus never existed, but”. Martin says “all admit”, stronger than Meggitt's “virtually no” and his note 1. The statement uses Meggitt's weaker wording and scope (New Testament studies, early Christian history); Martin's scope is “reputable historical scholars”. Independent of existence/1 (distinct author, #92). Owner decision 2026-11-23: keep; the page already uses Meggitt's weaker wording. Second pass 2026-11-23: verified.",
     }
   deniers/1:
     {
       agent: pass,
       owner: "",
-      note: "Meggitt manuscript p. 1, note 1. The page gives no count of deniers (“a few” was dropped); short answer rests on the named deniers in deniers/2–4. Reworded 2026-11-23 (owner asked that Q1–3 read as one sequence): question “Then who argues that Jesus did not exist?”, short “Rare exceptions, among them two New Testament scholars.” (“rare” from Meggitt's “virtually no”; “two” = Price and Brodie in deniers/4), statement opens “Virtually none is not none.” in place of note 1's “It is not the case that none do.”",
+      note: "Meggitt manuscript p. 1, note 1. The page gives no count of deniers. Reworded 2026-11-23 (owner asked that Q1–3 read as one sequence): question “Then who argues that Jesus did not exist?”, statement opens “Virtually none is not none.” in place of note 1's “It is not the case that none do.” Second pass 2026-11-23: verified. Short answer “Rare exceptions, among them two New Testament scholars.” reworded to “Among others, the New Testament scholars Robert M. Price and Thomas L. Brodie.”: “rare” is not Meggitt's word (#80: a minority's characterisation is borrowed from a source) and pulls against his “not the case now” for Wells as a lone voice; “two” was the page's own count (#80), and Meggitt also names Harpur, a former New Testament professor, on p. 3. The new short answer names only scholars Meggitt names (deniers/4).",
     }
   deniers/2:
     {
       agent: pass,
       owner: "",
-      note: "Martin l13 ch. 2 [00:13:25]. Same passage goes on to “some crazy blog”; not used.",
+      note: "Martin l13 ch. 2 [00:13:25]. Same passage goes on to “some crazy blog”; not used. Second pass 2026-11-23: verified.",
     }
   deniers/3:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Meggitt manuscript p. 2. Footnote markers 5 and 6 removed from the quote (after “voice'” and “thesis”). “almost a lone voice” is Meggitt quoting Van Voorst (2000); the statement gives it unquoted as Meggitt's framing.",
+      note: "Meggitt manuscript p. 2. Footnote markers 5, 6 and 7 removed from the quote (after “voice'”, “thesis” and “field.”; owner decision 2026-11-23: acceptable). “almost a lone voice” is Meggitt quoting Van Voorst (2000); the statement gives it unquoted as Meggitt's framing. Second pass 2026-11-23: verified. Meggitt adopts the phrase as his own assertion in the cited sentence, read in Meggitt, so attributing it to his report is not stronger than the source.",
     }
   deniers/4:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Meggitt manuscript pp. 2–3; sentence crosses the page break around footnotes; each half matched verbatim on its own page (p. 2 “In more recent years… established and active”, p. 3 “New Testament scholars… a classicist.”). Footnote markers 8, 9 and 10 removed. Statement says “arguing that Jesus was not historical” for the source's “arguing for the non-historicity of Jesus”.",
+      note: "Meggitt manuscript pp. 2–3; sentence crosses the page break around footnotes; each half matched verbatim on its own page (p. 2 “In more recent years… established and active”, p. 3 “New Testament scholars… a classicist.”). Footnote markers 8, 9 and 10 removed (owner decision 2026-11-23: acceptable). Statement says “arguing that Jesus was not historical” for the source's “arguing for the non-historicity of Jesus”. Second pass 2026-11-23: verified.",
     }
   judgement/1:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Meggitt manuscript pp. 1–2; sentence crosses the page break and footnote 1 sits between its halves; each half matched verbatim on its own page (p. 1 “Indeed… deny his”, p. 2 “historicity are usually judged… completely.'”). Footnote marker 2 follows. The inner quotation is Meggitt citing Van Voorst (2000); the statement keeps the wording but not the inner quote marks. Reworded 2026-11-23: question “How does the field treat those arguments?”, short “Usually as too weak or bizarre for more than a footnote, if that.” (source: “relegate them to footnotes or often ignore them completely”).",
+      note: "Meggitt manuscript pp. 1–2; sentence crosses the page break and footnote 1 sits between its halves; each half matched verbatim on its own page (p. 1 “Indeed… deny his”, p. 2 “historicity are usually judged… completely.'”). Footnote marker 2 follows. The inner quotation is Meggitt citing Van Voorst (2000); the statement keeps the wording but not the inner quote marks. Reworded 2026-11-23: question “How does the field treat those arguments?”, short “Usually as too weak or bizarre for more than a footnote, if that.” (source: “relegate them to footnotes or often ignore them completely”). Second pass 2026-11-23: verified. The sentence is Meggitt's own report of the field and the statement names him as its reporter; short answer no stronger than “usually… or often ignore them completely”.",
     }
   judgement/2:
     {
       agent: pass,
       owner: "",
-      note: "Meggitt manuscript p. 4. Meggitt's own argument, attributed to him by name in the statement.",
+      note: "Meggitt manuscript p. 4. Meggitt's own argument, attributed to him by name in the statement. Second pass 2026-11-23: verified.",
     }
   apocalyptic/1:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 9 summary, section “Jesus in His Apocalyptic Context”.",
+      note: "Ehrman ch. 9 summary, section “Jesus in His Apocalyptic Context”. Second pass 2026-11-23: verified.",
     }
   apocalyptic/2:
     {
       agent: pass,
       owner: "",
-      note: "Same section; sentence continues “which would entail the judgment of the world by the Son of Man…”.",
+      note: "Same section; sentence continues “which would entail the judgment of the world by the Son of Man…”. Second pass 2026-11-23: verified.",
     }
   apocalyptic/3:
     {
       agent: pass,
       owner: "",
-      note: "Same section. “Most scholars” comes from the summary itself; the preceding “much scholarly debate” sentence is kept in the statement and the quote.",
+      note: "Same section. “Most scholars” comes from the summary itself; the preceding “much scholarly debate” sentence is kept in the statement and the quote. Second pass 2026-11-23: verified.",
     }
   apocalyptic/4:
     {
       agent: pass,
       owner: "",
-      note: "Same section; reasons per #86. The summary adds that these sources are independent and pass dissimilarity and contextual credibility; not carried.",
+      note: "Same section; reasons per #86. The summary adds that these sources are independent and pass dissimilarity and contextual credibility; not carried. Second pass 2026-11-23: verified.",
     }
   apocalyptic/5:
     {
       agent: pass,
       owner: "",
-      note: "Section “The Beginning and End as Keys to the Middle”; reasons per #86.",
+      note: "Section “The Beginning and End as Keys to the Middle”; reasons per #86. Second pass 2026-11-23: verified.",
     }
   outside/1:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 9 summary, section “Problems with Sources”.",
+      note: "Ehrman ch. 9 summary, section “Problems with Sources”. Second pass 2026-11-23: verified.",
     }
   outside/2:
-    { agent: pass, owner: "", note: "Same section; two consecutive sentences." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Same section; two consecutive sentences. Second pass 2026-11-23: verified.",
+    }
   outside/3:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Same section. The next sentence reports what Josephus says of Jesus; left off the page because it is the Testimonium, whose authenticity no readable source on this page addresses (see leads). Statement only says Josephus mentions him.",
+      note: "Same section. The next sentence reports what Josephus says of Jesus; left off the page because it is the Testimonium, whose authenticity no readable source on this page addresses (see leads). Statement only says Josephus mentions him. Owner decision 2026-11-23: keep as is. Second pass 2026-11-23: verified.",
     }
   details/1:
     {
       agent: pass,
       owner: "",
-      note: "Martin l13 ch. 3 [00:26:27]. The sign's wording varies by Gospel (Martin reads Mark, Luke, John); statement says “calling Jesus King of the Jews”.",
+      note: "Martin l13 ch. 3 [00:26:27]. The sign's wording varies by Gospel (Martin reads Mark, Luke, John); statement says “calling Jesus King of the Jews”. Second pass 2026-11-23: verified.",
     }
   details/2:
     {
       agent: pass,
       owner: "",
-      note: "Martin l13 ch. 3 [00:26:27]. Hedge kept: “often say may well be”.",
+      note: "Martin l13 ch. 3 [00:26:27]. Hedge kept: “often say may well be”. Second pass 2026-11-23: verified.",
     }
   details/3:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Martin l13 ch. 3 [00:26:27]. Martin gives the sign and the baptism as two worked examples of method, not a list; question reworded to “Do scholars count any details…”. Short answer compresses two hedges (“most say” for the sign, “often… may well be” for the baptism); check it reads no stronger than the source.",
+      note: "Martin l13 ch. 3 [00:26:27]. Martin gives the sign and the baptism as two worked examples of method, not a list; question reworded to “Do scholars count any details…”. Owner decision 2026-11-23: the short answer “Most say the sign on the cross is, and often that his baptism may well be.” compressed two hedges; reworded to “Most say the sign on the cross is; scholars often say his baptism may well be.” so each detail keeps its own hedge (“most scholars say” for the sign, details/1; “scholars often say may well be” for the baptism, details/2). Second pass 2026-11-23: verified.",
     }
 triggers:
   5@00:06:55:
-    { agent: pass, owner: "", note: "Context: dying-and-rising god template." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Context: dying-and-rising god template. Second pass 2026-11-23: verified.",
+    }
   5@00:08:03:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Transcript ends the sentence with the artefact “scholars.rs.”; quote stops at “scholars”. Next sentence: “It is in the overwhelming minority, the folks who think that this was all created from scratch.”",
+      note: "Transcript ends the sentence with the artefact “scholars.rs.”; quote stops at “scholars” (owner decision 2026-11-23: acceptable). Next sentence: “It is in the overwhelming minority, the folks who think that this was all created from scratch.” Second pass 2026-11-23: verified.",
     }
   48@00:05:30:
     {
       agent: pass,
       owner: "",
-      note: "Hedge “I would say” kept. At 00:06:15 she names Carrier and Brodie and says there is “a handful”, “very much the minority”. The page uses no percentage, “fringe” or “minority”: no readable source says so (#86 gap left unexplained).",
+      note: "Hedge “I would say” kept. At 00:06:15 she names Carrier and Brodie and says there is “a handful”, “very much the minority”. The page uses no percentage, “fringe” or “minority”: no readable source says so (#86 gap left unexplained). Second pass 2026-11-23: verified.",
     }
   86@00:54:57:
     {
       agent: pass,
       owner: "",
-      note: "Hedge “maybe one or two other scholars” kept. At 00:54:14 he says Price is the only trained mythicist; Meggitt names Price and Brodie. The page follows Meggitt and does not comment on the gap (#80).",
+      note: "Hedge “maybe one or two other scholars” kept. At 00:54:14 he says Price is the only trained mythicist; Meggitt names Price and Brodie. The page follows Meggitt and does not comment on the gap (#80). Second pass 2026-11-23: verified.",
     }
   86@00:56:01:
     {
       agent: pass,
       owner: "",
-      note: "Full hedge kept (“we cannot know for sure… right now I would say”). At 00:57:09 he adds that he leaves open “the possibility, maybe even the plausibility that there was no historical Jesus” while calling it “incredibly unlikely”.",
+      note: "Full hedge kept (“we cannot know for sure… right now I would say”). At 00:57:09 he adds that he leaves open “the possibility, maybe even the plausibility that there was no historical Jesus” while calling it “incredibly unlikely”. Second pass 2026-11-23: verified.",
     }
   145@00:05:46:
     {
       agent: pass,
       owner: "",
-      note: "“this” = Jesus's baptism by John. Speaker was Dan Beecher because the Transcript's labels were swapped; #120 fixed them (audio-checked) and the Speaker is now Dan McClellan.",
+      note: "“this” = Jesus's baptism by John. Speaker was Dan Beecher because the Transcript's labels were swapped; #120 fixed them (audio-checked) and the Speaker is now Dan McClellan. Second pass 2026-11-23: verified.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "6 statements; core (existence) has Meggitt 2019 (Scholarly) and Martin RLST 152 l13 (Reference): two distinct authors. Fails if existence/2 fails review.",
+      note: "6 statements; core (existence) has Meggitt 2019 (Scholarly) and Martin RLST 152 l13 (Reference): two distinct authors. Second pass 2026-11-23: verified; no citation cut, rule holds.",
     }
   consensus-wording:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "“most scholars” (apocalyptic, details) and “virtually no scholar” (existence) each come from the cited source. Martin's “all” is not used (see existence/2). No “consensus”, “fringe” or “minority” on the page.",
+      note: "“most scholars” (apocalyptic, details) and “virtually no scholar” (existence) each come from the cited source. Martin's “all” is not used (see existence/2). No “consensus”, “fringe” or “minority” on the page. Second pass 2026-11-23: verified. Each wording is quoted in its citation from a Reference or Scholarly source inside the 30-year window, keeps the source's scope, and is followed by the reasons where the source gives them (apocalyptic/4–5, details/3). The deniers short answer no longer characterises the dissenters (“rare” removed).",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "Bauer, Wells, Price, Brodie, Carrier named from Meggitt and Martin.",
+      note: "Bauer, Wells, Price, Brodie, Carrier named from Meggitt and Martin. Second pass 2026-11-23: verified.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. Second pass 2026-11-23: verified.",
+    }
 sources:
   meggitt-2019-non-historical-jesus:
     {
       agent: pass,
       owner: "",
-      edition: "Accepted version; repository record gives New Testament Studies 65, Cambridge University Press, DOI 10.1017/s0028688519000213. Year 2019 inferred from the DOI and volume, not shown on the record. Issue and page range not shown; published version not seen.",
+      edition: "Accepted version; repository record gives New Testament Studies, Cambridge University Press, DOI 10.1017/s0028688519000213, publication date 2019-10. Crossref gives vol. 65, issue 4, pp. 443–460. Published version not seen.",
+      note: "Scholarly (peer-reviewed journal); 2019, inside the 30-year window. Second pass 2026-11-23: verified. Apollo returned 503 at first and the Internet Archive was offline; the record and PDF loaded on retry the same day.",
     }
   martin-rlst152-l13:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 152, recorded Spring 2009 (course page). Introductory course, Yale-hosted transcript: Reference per #86.",
+      note: "Course page confirms “Introduction to the New Testament History and Literature”, recorded Spring 2009, Professor Dale B. Martin; 2009, inside the 30-year window. Second pass 2026-11-23: verified.",
     }
   ehrman-brief-5e-ch9-summary:
     {
       agent: pass,
       owner: "",
       edition: "5th ed., 01 October 2020, OUP catalogue (browser), print ISBN 9780190089528",
+      note: "Reference (publisher companion summary, #86). Page title reads “A Brief Introduction to the New Testament, 5e Student Resources”; OUP catalogue shows Fifth Edition, published 01 October 2020, ISBN 9780190089528. Inside the 30-year window. Second pass 2026-11-23: verified.",
     }
 leads:
   - "Bart D. Ehrman, Did Jesus Exist? (HarperOne, 2012), Google Books page id PT9: “virtually every scholar of antiquity, of biblical studies, of classics, and of Christian origins in this country and, in fact, in the Western world agrees.” Snippet only; full sentence not read (#86). A trade-press book would count as Reference."
