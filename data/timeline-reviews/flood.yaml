@@ -32,13 +32,13 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l4 ch. 5 [00:35:32] (“Contradictions and Doublets in the Flood Story in Genesis 6-9”): two interwoven flood stories. Composition evidence, not a historicity claim; the statement words it as Hayes's finding.",
+      note: "Hayes l4 ch. 5 [00:35:32] (“Contradictions and Doublets in the Flood Story in Genesis 6-9”): “we seem to have two flood stories”, interwoven. Composition evidence, not a historicity claim; the statement quotes Hayes's hedge (“seem to have”) rather than calling it his finding.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "Wright 2012 (AiG), paragraph beginning “Using the Bible”: the Flood “began approximately 4,359 years ago in the year 1656 AM or 2348 BC”. `from: -2348`. The “4,359 years ago” counts from 2011 (the page's own table).",
+      note: "Wright 2012 (AiG), paragraph beginning “Using the Bible”: the Flood “began approximately 4,359 years ago in the year 1656 AM or 2348 BC”. `from: -2348`; `display` is “About 2348 BCE”, keeping the source's “approximately”. The “4,359 years ago” counts from 2011 (the page's own table).",
     }
 triggers:
   183@00:07:37:

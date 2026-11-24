@@ -1,31 +1,36 @@
 {{- /*
   The Timeline axis's era bands (#163 §2). Takes the placed entries from
   timeline-placement.html (each with a placement year). The axis starts at the
-  earliest placement year rounded down to 1000 and ends after the latest,
-  rounded up to 500. Bands before 2000 BCE are 1000 years, after it 500.
+  earliest placement year rounded down to $wide and ends after the latest,
+  rounded up to $narrow. Bands before $split (2000 BCE) are $wide (1000)
+  years, after it $narrow (500).
   Returns a slice of dict {label, items}, oldest first; items keep placement
   order. Empty when nothing is placed.
   */
 -}}
 {{- $placed := . -}}
+{{- $wide := 1000 -}}{{- /* band width before $split */ -}}
+{{- $narrow := 500 -}}{{- /* band width from $split on */ -}}
+{{- $split := -2000 -}}{{- /* 2000 BCE: where bands narrow */ -}}
 {{- $eras := slice -}}
 {{- with $placed -}}
   {{- $years := slice -}}
   {{- range . -}}
     {{- $years = $years | append (int .year) -}}
   {{- end -}}
-  {{- $start := int (mul (math.Floor (div (float (math.Min $years)) 1000)) 1000) -}}
-  {{- $end := int (mul (add (math.Floor (div (float (math.Max $years)) 500)) 1) 500) -}}
+  {{- $start := int (mul (math.Floor (div (float (math.Min $years)) $wide)) $wide) -}}
+  {{- $end := int (mul (add (math.Floor (div (float (math.Max $years)) $narrow)) 1) $narrow) -}}
   {{- $bounds := slice -}}
-  {{- if lt $start -2000 -}}
-    {{- range seq $start 1000 (math.Min -3000 (sub $end 1) | int) -}}
-      {{- $bounds = $bounds | append (dict "from" . "to" (add . 1000)) -}}
+  {{- if lt $start $split -}}
+    {{- /* The last wide band starts one band before $split; none starts at or after $end. */ -}}
+    {{- range seq $start $wide (math.Min (sub $split $wide) (sub $end 1) | int) -}}
+      {{- $bounds = $bounds | append (dict "from" . "to" (add . $wide)) -}}
     {{- end -}}
   {{- end -}}
-  {{- $late := math.Max $start -2000 | int -}}
+  {{- $late := math.Max $start $split | int -}}
   {{- if gt $end $late -}}
-    {{- range seq $late 500 (sub $end 500) -}}
-      {{- $bounds = $bounds | append (dict "from" . "to" (add . 500)) -}}
+    {{- range seq $late $narrow (sub $end $narrow) -}}
+      {{- $bounds = $bounds | append (dict "from" . "to" (add . $narrow)) -}}
     {{- end -}}
   {{- end -}}
   {{- range $bounds -}}

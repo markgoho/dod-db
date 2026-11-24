@@ -30,11 +30,16 @@ import {
 
 const year = z.number().int();
 
+/**
+ * A Critical Date. The layout renders `display` and places by `from`, `anchor`
+ * or `sort`; `to`, `precision` and `open` are kept as data but not rendered
+ * since the vertical Timeline (#163) dropped the scale.
+ */
 const CriticalSchema = z.object({
   display: z.string(),
   from: year.optional(),
   to: year.optional(),
-  precision: z.enum(["year", "century", "period"]),
+  precision: z.enum(["year", "century", "period"]).optional(),
   open: z.boolean().optional(),
   anchor: z.string().nullish(),
   sort: year.optional(),

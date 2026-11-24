@@ -8,7 +8,7 @@ related: { books: [genesis], tags: [], topics: [] }
 watch: [creation, Genesis 1, young earth, "6,000 years", Ussher]
 seeAlso: priestly-genesis-1
 undated:
-  statement: "The sources date the text, not the event. They read Genesis 1 as the first of two creation accounts in Genesis, with “quite a few contradictions between them”, and Coogan and Chapman call them “two distinct creation myths”. Genesis 1 is assigned to the Priestly source, which this timeline dates as a text."
+  statement: "The sources read Genesis 1 as the first of two creation accounts in Genesis, with “quite a few contradictions between them”, and Coogan and Chapman call them “two distinct creation myths”. Genesis 1 is assigned to the Priestly source, which this timeline dates as a text."
   cites:
     - source: coogan-brief-4e-summary-ch3
       locator: "section “Genesis 1–3: Some General Observations”"

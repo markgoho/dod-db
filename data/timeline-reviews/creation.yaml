@@ -52,7 +52,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "No Critical Date. No source cited dates creation as an event: they date and describe the text (two accounts, Genesis 1 assigned to P). The statement says exactly that (“The sources date the text, not the event”); it does not say the sources call it unhistorical. NABRE's “neither history nor myth” is scoped to Gn 2–11, not to Gn 1:1–2:3, so it is not cited here and the verdict stays the default (no-firm-date).",
+      note: "No Critical Date. No source cited dates creation as an event: they describe the text (two accounts, Genesis 1 assigned to P). The statement reports only that, and points to the Priestly entry for the text's date; it no longer opens with “The sources date the text, not the event”, a framing none of the cited sources states. It does not say the sources call it unhistorical. NABRE's “neither history nor myth” is scoped to Gn 2–11, not to Gn 1:1–2:3, so it is not cited here and the verdict stays the default (no-firm-date).",
     }
   split-shown:
     {

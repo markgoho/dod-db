@@ -1,0 +1,11 @@
+{{- /*
+  A display date as it reads mid-sentence ("Answers in Genesis holds about
+  4004 BCE"): a leading "About" drops to lower case. The stored display, and
+  a card that shows it on its own line, keep the capital. Takes the string.
+  */
+-}}
+{{- $s := . -}}
+{{- if strings.HasPrefix $s "About " -}}
+  {{- $s = printf "about %s" (strings.TrimPrefix "About " $s) -}}
+{{- end -}}
+{{- return $s -}}

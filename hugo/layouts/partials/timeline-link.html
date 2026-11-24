@@ -10,6 +10,7 @@
 {{- with .Params.critical -}}
   {{- $date = .display -}}
 {{- end -}}
+{{- $date = partial "timeline-midsentence.html" $date -}}
 {{- $notShow := partial "scholarship-not-the-show.html" . -}}
 <a href="{{ $href }}"><strong>{{ .Title }}</strong></a>
 {{- "," }} {{ $date }} · on the Timeline: {{ $notShow }}{{- "." -}}

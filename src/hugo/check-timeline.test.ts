@@ -109,6 +109,10 @@ describe("checkTimeline", () => {
     expect(await check("published-undated")).toEqual([]);
   });
 
+  test("a Critical Date with no precision passes", async () => {
+    expect(await check("critical-no-precision")).toEqual([]);
+  });
+
   test("an undated entry with verdict not-historical passes", async () => {
     expect(await check("undated-verdict")).toEqual([]);
   });

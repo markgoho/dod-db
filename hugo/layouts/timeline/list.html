@@ -40,10 +40,11 @@
   {{ end }}
 
   {{ $ctx := dict "episodesByNumber" $episodesByNumber "shortCites" $shortCites "byId" $byId }}
+  {{ $labels := partial "timeline-labels.html" }}
 
 
   <section class="timeline-page scholarship-page">
-    <header class="page-hero">
+    <header class="page-hero timeline-measure">
       <p class="page-hero__eyebrow type-eyebrow">Synthesis</p>
       <h1 class="page-hero__title">{{ .Title }}</h1>
       <div class="page-hero__description panel panel--muted">
@@ -52,47 +53,45 @@
       </div>
     </header>
 
-    <div class="scholarship-provenance panel panel--muted">
+    <div class="scholarship-provenance panel panel--muted timeline-measure">
       {{ partial "timeline-notice.html" . }}
       {{ partial "timeline-date-line.html" $entries }}
     </div>
 
     {{ with $eras }}
       <section class="timeline-spine" aria-label="Timeline">
-        <ul class="timeline-legend" role="list">
+        <ul class="timeline-legend timeline-measure" role="list">
           <li class="timeline-legend__item">
             <span class="timeline-legend__swatch" aria-hidden="true"></span>
-            What scholarly and reference sources say
+            {{ $labels.scholarly }}
           </li>
           <li class="timeline-legend__item">
             <span
               class="timeline-legend__swatch timeline-legend__swatch--tradition"
               aria-hidden="true"></span>
-            What a named tradition holds
+            {{ $labels.tradition }}
           </li>
           <li class="timeline-legend__item">
             <span
               class="timeline-legend__swatch timeline-legend__swatch--placed"
               aria-hidden="true"></span>
             <span
-              ><strong>Placed by a tradition’s date:</strong> scholars give no
-              date for this; it sits where the named tradition puts it.</span
+              ><strong>{{ $labels.placed }}:</strong> scholars give no date for
+              this; it sits where the named tradition puts it.</span
             >
           </li>
         </ul>
         <div class="timeline-lanes" aria-hidden="true">
-          <p>What scholarly and reference sources say</p>
-          <p>What a named tradition holds</p>
+          <p>{{ $labels.scholarly }}</p>
+          <p>{{ $labels.tradition }}</p>
         </div>
         <ol
           class="timeline-axis"
           role="list"
           aria-label="Timeline Entries in date order, by era">
           {{ range . }}
-            <li
-              class="timeline-era{{ if not .items }}
-                timeline-era--empty
-              {{ end }}">
+            {{ $eraClass := cond (gt (len .items) 0) "timeline-era" "timeline-era timeline-era--empty" }}
+            <li class="{{ $eraClass }}">
               <h2 class="timeline-era__label">{{ .label }}</h2>
               {{ with .items }}
                 <ol class="timeline-era__entries" role="list">
@@ -113,7 +112,7 @@
     {{ end }}
 
     {{ with $unplaced }}
-      <section class="cloud-section">
+      <section class="cloud-section timeline-measure">
         <h2 class="type-section-title cloud-section__title">
           Not placed on the timeline
         </h2>
@@ -135,7 +134,7 @@
     {{ end }}
 
     {{ with $sourceIds }}
-      <section class="cloud-section">
+      <section class="cloud-section timeline-measure">
         <h2 class="type-section-title cloud-section__title">Sources used</h2>
         <div class="scholarship-sources">
           <table class="scholarship-sources__table">

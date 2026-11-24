@@ -8,7 +8,7 @@ related: { books: [genesis], tags: [flood, noah], topics: [] }
 watch: [Flood, Noah, ark, global flood, Ararat, Atrahasis, Gilgamesh]
 undated:
   verdict: not-historical
-  statement: "The New American Bible's introduction to Genesis says the stories of Genesis 2–11 are “neither history nor myth”, and that their plot of creation, flood and renewed creation “has been borrowed from” Mesopotamian creation-flood stories. Coogan and Chapman, who do use the word myth (the first eleven chapters “retell myths of origins”), say the Babylonian flood epics “were earlier and undoubtedly influenced the biblical writers”. Hayes finds two flood stories interwoven in Genesis 6–9."
+  statement: "The New American Bible's introduction to Genesis says the stories of Genesis 2–11 are “neither history nor myth”, and that their plot of creation, flood and renewed creation “has been borrowed from” Mesopotamian creation-flood stories. Coogan and Chapman, who do use the word myth (the first eleven chapters “retell myths of origins”), say the Babylonian flood epics “were earlier and undoubtedly influenced the biblical writers”. Hayes says that in Genesis 6–9 “we seem to have two flood stories”, interwoven."
   cites:
     - source: nabre-genesis-intro
       locator: "Introduction, ¶ 5"
@@ -31,7 +31,7 @@ undated:
       quote: "In Genesis 6 through 9 we seem to have two flood stories with distinctive styles, and themes, and vocabularies, and substantive details, but they're interwoven instead of being placed side by side."
       read: 2026-11-24
 tradition:
-  display: "2348 BCE"
+  display: "About 2348 BCE"
   from: -2348
   holder: "Answers in Genesis, an apologetics ministry"
   cites:

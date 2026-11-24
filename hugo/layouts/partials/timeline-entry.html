@@ -1,7 +1,8 @@
 {{- /*
   One Timeline Entry as a compact marker (#163 §2): the scholarly card, a node
   on the axis, and, when the entry has one, the tradition card. Citations and
-  Trigger Claims fold into one disclosure.
+  Trigger Claims fold into one disclosure; an undated entry's statement opens
+  it, so the card stays the verdict (or date) plus note.
   Takes dict:
   entry            the entry page
   by               "critical" or "tradition" for an entry on the axis (see
@@ -17,7 +18,7 @@
 {{- $c := $p.critical -}}
 {{- $t := $p.tradition -}}
 {{- $byTradition := eq .by "tradition" -}}
-{{- $placedLabel := "Placed by a tradition’s date" -}}
+{{- $placedLabel := (partial "timeline-labels.html").placed -}}
 {{- $verdict := partial "timeline-undated-label.html" $e -}}
 {{- $holds := "" -}}
 {{- with $t -}}
@@ -30,19 +31,19 @@
 {{- with $c }}{{ $scholarly = .display }}{{ end -}}
 {{- $label := printf "%s. Scholarly and reference sources: %s." $e.Title $scholarly -}}
 {{- with $t -}}
-  {{- $label = printf "%s %s %s." $label $holds .display -}}
+  {{- $label = printf "%s %s %s." $label $holds (partial "timeline-midsentence.html" .display) -}}
 {{- end -}}
 {{- if $byTradition -}}
   {{- $label = printf "%s %s." $label $placedLabel -}}
 {{- end -}}
 
 {{- $classes := slice "timeline-entry" -}}
-{{- if $t }}
-  {{ $classes = $classes | append "timeline-entry--paired" }}
-{{ end -}}
-{{- if $byTradition }}
-  {{ $classes = $classes | append "timeline-entry--by-tradition" }}
-{{ end -}}
+{{- if $t -}}
+  {{- $classes = $classes | append "timeline-entry--paired" -}}
+{{- end -}}
+{{- if $byTradition -}}
+  {{- $classes = $classes | append "timeline-entry--by-tradition" -}}
+{{- end -}}
 <li
   class="{{ delimit $classes " " }}"
   id="{{ $e.File.ContentBaseName }}"
@@ -59,7 +60,6 @@
       <p class="timeline-entry__date timeline-entry__date--verdict">
         {{- $verdict -}}
       </p>
-      <p class="timeline-entry__note">{{ $p.undated.statement }}</p>
     {{ end }}
     {{ with $p.seeAlso }}
       {{ with index $.byId . }}
@@ -76,6 +76,7 @@
         <span class="type-eyebrow">Sources and what prompted this entry</span>
       </summary>
       <div class="scholarship-block__body timeline-entry__body">
+        {{ with $p.undated }}<p>{{ .statement }}</p>{{ end }}
         {{ partial "timeline-cites.html" (dict "cites" (or $c $p.undated).cites "shortCites" .shortCites) }}
         {{ with $t }}
           <p class="timeline-entry__label">{{ $holds }}</p>

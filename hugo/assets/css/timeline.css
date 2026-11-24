@@ -9,13 +9,13 @@
 
 /* The axis takes the full content width; everything else keeps the reading measure. */
 .timeline-page.scholarship-page {
-  max-width: none;
+  max-inline-size: none;
 }
 
-.timeline-page > :not(.timeline-spine) {
+.timeline-measure {
   inline-size: 100%;
   justify-self: center;
-  max-width: var(--content-max-width-measure);
+  max-inline-size: var(--content-max-width-measure);
 }
 
 /* The date line sits under the notice in the provenance panel, on the notice's inset. */
@@ -39,10 +39,7 @@
 .timeline-legend {
   display: grid;
   gap: var(--space-3xs);
-  inline-size: 100%;
-  justify-self: center;
   margin: 0;
-  max-width: var(--content-max-width-measure);
   padding: 0;
 }
 
@@ -80,6 +77,7 @@
 .timeline-entry--by-tradition > .timeline-entry__node {
   background: var(--tan-000);
   border: var(--border-width-sm) dashed var(--tan-900);
+  /* 50% makes a circle; the radius tokens are fixed lengths, so not one. */
   border-radius: 50%;
 }
 
@@ -248,14 +246,15 @@
   background: var(--color-action);
   block-size: var(--node-size);
   border: var(--border-width-sm) solid var(--tan-900);
+  /* 50% makes a circle; the radius tokens are fixed lengths, so not one. */
   border-radius: 50%;
   grid-column: 2;
   grid-row: 1;
   inline-size: var(--node-size);
   justify-self: center;
   margin-block-start: var(--node-at);
+  /* Positioned and after the axis line in tree order, so it paints over the line; no z-index needed. */
   position: relative;
-  z-index: 1;
 }
 
 .timeline-entry__node::before,
@@ -286,7 +285,7 @@
   grid-row: 1;
   justify-self: start;
   margin-block-start: calc(var(--node-at) - var(--space-xs));
-  max-inline-size: 85%;
+  max-inline-size: calc(100% - var(--space-xl));
   min-inline-size: 0;
   padding: var(--space-xs);
 }
@@ -300,7 +299,10 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
-/* ---------- Narrow: the axis moves to the left edge, cards stack ---------- */
+/*
+  ---------- Narrow: the axis moves to the left edge, cards stack ----------
+  Literal length: container conditions cannot read custom properties.
+*/
 
 @container timeline (width < 44rem) {
   .timeline-lanes {
