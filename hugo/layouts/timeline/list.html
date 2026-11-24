@@ -62,6 +62,7 @@
       {{/* The minimap is a sibling of the spine, never inside it: the spine is a size container, which would capture a fixed rail. */}}
       <div class="timeline-minimap-layout">
         {{ partial "timeline-minimap.html" . }}
+        {{ $.Store.Set "timelineMinimap" true }}
         <section class="timeline-spine" aria-label="Timeline">
           <ul class="timeline-legend timeline-measure" role="list">
             <li class="timeline-legend__item">
@@ -189,6 +190,14 @@
 {{ end }}
 
 {{ define "footer-scripts" }}
+  {{/* Only when main drew the minimap: without drafts there is none. */}}
+  {{ if .Store.Get "timelineMinimap" }}
+    {{ $js := resources.Get "ts/timeline-minimap.ts" | js.Build (dict "targetPath" "timeline-minimap.js") }}
+    {{ if hugo.IsProduction }}
+      {{ $js = $js | resources.Minify | resources.Fingerprint }}
+    {{ end }}
+    <script src="{{ $js.RelPermalink }}" type="module"></script>
+  {{ end }}
   {{ partial "json-ld/timeline.html" . }}
   {{ partial "json-ld/breadcrumb.html" . }}
 {{ end }}

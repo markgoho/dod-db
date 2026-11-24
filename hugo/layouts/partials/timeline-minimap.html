@@ -8,48 +8,63 @@
 
   "You are here" is CSS. One hidden list of entry links is the only scrollspy
   (scroll-target-group); it stays rendered while the popover is closed, so the
-  bar tracks the era with no geometry. The generated :has() rules below key
-  every current-state style on its :target-current link: the caption label,
-  the bar's era, the shaded band, the extended tick and the entry's narrated
-  setting (#170). Only entries are scroll targets, so the highlight never
-  alternates between eras and entries.
-  timeline-minimap.ts mirrors the current tick into aria-current on scrollend.
+  bar tracks the era with no geometry. The generated :has() rules below set
+  one flag, --is-current: 1, on whatever its :target-current link makes
+  current: the caption label, the bar's era, the band, the tick and the
+  entry's narrated setting (#170). timeline-minimap.css says what the flag
+  shows. Only entries are scroll targets, so the highlight never alternates
+  between eras and entries. timeline-minimap.ts (loaded from the list
+  layout's footer scripts) mirrors the current tick into aria-current.
   */
 -}}
 {{- $eras := . -}}
 {{- $placedLabel := (partial "timeline-labels.html").placed -}}
 {{- $start := float (index $eras 0).from -}}
-{{- $span := sub (float (index $eras (sub (len $eras) 1)).to) $start -}}
+{{- $years := sub (float (index $eras (sub (len $eras) 1)).to) $start -}}
+{{- /*
+  One tick's hit (--tick-hit, 11–14px) as a share of the shortest strip
+  (about 450px, in a 360×640 popover; measured). Ticks closer than this
+  would share a hit, as Creation (4004 BCE) and Adam (4000 BCE) did, so each
+  takes the lowest sideways step (--tick-step) none of them has. Ticks stay
+  at their years; a higher step sits further in and on top, so each keeps a
+  clickable end.
+  */
+-}}
+{{- $hitShare := 0.026 -}}
 
-{{- /* One flat model: eras with their ids, entries with their era, strip position and caption date. */ -}}
+{{- /* One flat model: eras with their ids, entries with their era, strip position, step and caption date. */ -}}
 {{- $bands := slice -}}
 {{- $ticks := slice -}}
 {{- range $eras -}}
   {{- $eraId := partial "timeline-era-id.html" . -}}
-  {{- $bands = $bands | append (dict "id" $eraId "label" .label "span" (sub .to .from) "empty" (not .items)) -}}
-  {{- $prevYear := "" -}}
-  {{- $col := 0 -}}
+  {{- $bands = $bands | append (dict "id" $eraId "label" .label "years" (sub .to .from) "empty" (not .items)) -}}
   {{- range .items -}}
     {{- $p := .page.Params -}}
-    {{- $year := int .year -}}
-    {{- /* Same-year entries step sideways, so each tick stays visible and clickable. */ -}}
-    {{- $col = cond (eq (string $year) $prevYear) (add $col 1) 0 -}}
-    {{- $prevYear = string $year -}}
     {{- $date := "" -}}
     {{- if eq .by "tradition" -}}
       {{- $date = printf "%s (%s)" $p.tradition.display (lower $placedLabel) -}}
     {{- else -}}
       {{- $date = $p.critical.display -}}
     {{- end -}}
-    {{- $pos := div (sub (float $year) $start) $span -}}
+    {{- $at := div (sub (float .year) $start) $years -}}
+    {{- $taken := slice -}}
+    {{- range $ticks -}}
+      {{- if lt (sub $at .at) $hitShare -}}
+        {{- $taken = $taken | append .step -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $step := 0 -}}
+    {{- range seq (len $taken) -}}
+      {{- if in $taken $step -}}{{- $step = add $step 1 -}}{{- end -}}
+    {{- end -}}
     {{- /* A narrated setting with years: a span at its years and an arc from its middle to the tick. */ -}}
     {{- $setting := dict -}}
     {{- with $p.setting -}}
       {{- if isset . "from" -}}
-        {{- $from := div (sub (float .from) $start) $span -}}
-        {{- $to := div (sub (float (.to | default .from)) $start) $span -}}
-        {{- $mid := div (add $from $to) 2 -}}
-        {{- $setting = dict "from" $from "to" $to "arcFrom" (math.Min $mid $pos) "arcTo" (math.Max $mid $pos) -}}
+        {{- $settingStart := div (sub (float .from) $start) $years -}}
+        {{- $settingEnd := div (sub (float (.to | default .from)) $start) $years -}}
+        {{- $mid := div (add $settingStart $settingEnd) 2 -}}
+        {{- $setting = dict "start" $settingStart "end" $settingEnd "arcStart" (math.Min $mid $at) "arcEnd" (math.Max $mid $at) -}}
       {{- end -}}
     {{- end -}}
     {{- $ticks = $ticks | append (dict
@@ -59,8 +74,8 @@
       "title" .page.Title
       "date" $date
       "placed" (eq .by "tradition")
-      "pos" $pos
-      "col" $col)
+      "at" $at
+      "step" $step)
     -}}
   {{- end -}}
 {{- end -}}
@@ -70,7 +85,7 @@
   {{- /* The scrollspy: rendered, never shown, never focused. */}}
   <div class="timeline-minimap__spy" aria-hidden="true">
     {{- range $ticks }}
-      <a href="#{{ .id }}" data-in="{{ .era }}" tabindex="-1"></a>
+      <a href="#{{ .id }}" data-entry-era="{{ .era }}" tabindex="-1"></a>
     {{- end }}
   </div>
 
@@ -117,7 +132,7 @@
               timeline-minimap__band--empty
             {{ end }}"
             data-era="{{ .id }}"
-            style="--span: {{ .span }}">
+            style="--era-years: {{ .years }}">
             {{- /* "1500–1000 BCE": the BCE/CE suffix can drop on a narrow rail; the link's name keeps it. */}}
             {{- $range := index (split .label " ") 0 }}
             <a
@@ -131,7 +146,9 @@
           </li>
         {{- end }}
       </ol>
-      <div class="timeline-minimap__ticks">
+      <div
+        class="timeline-minimap__ticks"
+        style="--tick-hit-share: {{ $hitShare }}">
         {{- range $ticks }}
           <a
             class="timeline-minimap__tick{{ if .placed }}
@@ -141,7 +158,7 @@
             tabindex="-1"
             data-tick="{{ .id }}"
             aria-label="{{ .title }}: {{ replace .date "–" " to " }}"
-            style="--pos: {{ .pos }}; --col: {{ .col }}"></a>
+            style="--tick-at: {{ .at }}; --tick-step: {{ .step }}"></a>
         {{- end }}
         {{- range $t := $ticks }}
           {{- with .setting }}
@@ -151,10 +168,10 @@
               aria-hidden="true">
               <span
                 class="timeline-minimap__setting-span"
-                style="--from: {{ .from }}; --to: {{ .to }}"></span>
+                style="--setting-start: {{ .start }}; --setting-end: {{ .end }}"></span>
               <span
                 class="timeline-minimap__setting-arc"
-                style="--from: {{ .arcFrom }}; --to: {{ .arcTo }}"></span>
+                style="--arc-start: {{ .arcStart }}; --arc-end: {{ .arcEnd }}"></span>
             </span>
           {{- end }}
         {{- end }}
@@ -178,30 +195,14 @@
     {{- end }}
   {{- end }}
   {{- range $bands }}
-    {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [data-in="%s"]%s)` .id $current }}
+    {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [data-entry-era="%s"]%s)` .id $current }}
     {{- $eraLabels = $eraLabels | append (printf `%s [data-now="%s"]` $on .id) }}
     {{- $eraBands = $eraBands | append (printf `%s [data-era="%s"]` $on .id) }}
   {{- end }}
+  {{- /* Flags only: what each flag shows is in timeline-minimap.css. */}}
   <style>
-    {{ delimit ($labels | append $eraLabels) ",\n" | safeCSS }} {
-      display: -webkit-box;
+    {{ delimit ($labels | append $eraLabels | append $eraBands | append $marks | append $settings) ",\n" | safeCSS }} {
+      --is-current: 1;
     }
-    {{ delimit $eraBands ",\n" | safeCSS }} {
-      --band-current: var(--tan-100);
-      --band-weight: var(--font-weight-bold);
-    }
-    {{ delimit $marks ",\n" | safeCSS }} {
-      --tick-current: var(--color-action);
-      --tick-reach: var(--space-xs);
-    }
-    {{- with $settings }}
-      {{ delimit . ",\n" | safeCSS }} {
-        --setting-display: contents;
-      }
-    {{- end }}
-  </style> {{- $js := resources.Get "ts/timeline-minimap.ts" | js.Build (dict "targetPath" "timeline-minimap.js") }}
-  {{- if hugo.IsProduction }}
-    {{- $js = $js | resources.Minify | resources.Fingerprint }}
-  {{- end }}
-  <script src="{{ $js.RelPermalink }}" type="module"></script>
+  </style>
 </aside>
