@@ -7,7 +7,7 @@ description: Build an infographic for one Scholarship Page from its reviewed sta
 
 An **infographic** here is one hand-built HTML/CSS/SVG block on a single Scholarship Page. It has three jobs: look great, convey what the page's statements say, and travel as a single image on social media. It is a view of reviewed text: it restates, it never adds.
 
-One source, two forms. On the page it is a live, responsive block. At `#share` the same block becomes a **poster**: a fixed 4:5 canvas (1080 by 1350) with the page title above and a credit below, which a script photographs to a PNG.
+One source, two forms. On the page it is a live, responsive block. At `#share` the same block becomes a **poster**: a fixed 4:5 canvas (1080 by 1350) with the page title above and a credit below, which a script photographs to a PNG. At `#share-card` it becomes the **card**: a 1200 by 630 crop of the lead part, which is the picture a social site shows when someone shares the page's link.
 
 Worked example, read it before building: `hugo/layouts/partials/scholarship-custom/the-creation-stories-in-genesis.html` and its stylesheet `hugo/assets/css/scholarship-custom/the-creation-stories-in-genesis.css`.
 
@@ -61,6 +61,8 @@ Shape:
 - Its own container and a container query (literal length). At phone width the pairs being compared stay together.
 - Two sides are told apart by more than colour.
 
+Card: mark everything except the lead relation with `data-card-hide`, so the card shows the one thing worth a glance. The link's own title and description sit beside it, so the card carries no title.
+
 Poster: mark anything that only makes sense on the page (the section heading, "cited answers below" links) with `data-share-hide`. The masthead, credit and poster frame come from `single.html` and `scholarship.css`; the credit carries the "not the show's work" line, so the image keeps its provenance when it leaves the page.
 
 Graphics: inline SVG only, in the site's comic style — flat ink shapes in `currentColor`, thick lines, the amber and rust accents. Draw each glyph once as a `<symbol>` and reuse it, so the same thing looks the same everywhere. A glyph stands for something a statement names. Spend the boldness on the one relation from step 2; keep the rest quiet.
@@ -73,13 +75,14 @@ With the worktree's Hugo server running:
 bun run scholarship:infographic <slug> --base=http://localhost:<port>
 ```
 
-This writes `hugo/static/assets/scholarship/<slug>.png`, which is committed; the page then shows a "Save as an image" link. Read the PNG. Done when the title, the whole block and the credit are all inside the frame with nothing clipped, and the lead relation is legible at phone size. If the block overflows, cut or shorten rows; the poster does not grow. Re-render after every change to the block.
+This writes two committed images to `hugo/static/assets/scholarship/`: `<slug>.png` (the poster; the page then shows a "Save as an image" link) and `<slug>-card.png` (the card; `opengraph.html` then uses it as the page's `og:image`). Read both. Done when the poster holds the title, the whole block and the credit with nothing clipped, the card holds the lead relation with nothing clipped, and both are legible at phone size. If the block overflows, cut or shorten rows; the poster does not grow. Re-render after every change to the block.
 
 ### 6. Verify
 
 Preview from the worktree with its own `hugo server` on a free port, in Claude in Chrome.
 
-- The poster view at `/scholarship/<slug>/#share` matches the PNG.
+- The poster and card views (`#share`, `#share-card`) match the PNGs.
+- The page's `og:image` points at the card; another Scholarship Page has no `og:image`.
 - Desktop and about 375px: no horizontal scroll, no clipped or split words, lines and glyphs land where they should.
 - Roles: the table, rows, headers and cells report their roles (`computedRole`).
 - Another Scholarship Page is unchanged.
@@ -89,4 +92,4 @@ Preview from the worktree with its own `hugo server` on a free port, in Claude i
 
 Leave the page open in the browser, give the PNG's path, and report: the relation shown, the statement ids used, any caveat dropped, the runners-up from step 2, and the weak spot at phone width if there is one.
 
-When the user accepts it, land on trunk, push, and load the live page to confirm the block is there: CI's Hugo is older than local, and a missing partial is skipped silently.
+When the user accepts it, land on trunk, push, and load the live page to confirm the block is there and its `og:image` URL returns the card: CI's Hugo is older than local, and a missing partial is skipped silently.

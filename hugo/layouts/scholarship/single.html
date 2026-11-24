@@ -86,6 +86,8 @@
       {{ if templates.Exists (printf "partials/%s" $custom) }}
         {{ $image := printf "assets/scholarship/%s.png" .File.ContentBaseName }}
         <div class="scholarship-share" id="share">
+          {{/* Target for the link-preview card; see scholarship.css. */}}
+          <span id="share-card"></span>
           <div class="scholarship-share__masthead">
             <p class="scholarship-share__title">{{ .Title }}</p>
           </div>

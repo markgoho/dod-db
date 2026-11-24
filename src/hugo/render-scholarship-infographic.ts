@@ -3,16 +3,20 @@
  * poster view (`#share`, see scholarship.css), saved as a PNG that is committed
  * and served from /assets/scholarship/<slug>.png.
  *
- * Needs a running Hugo server and a local Chrome. The poster is 1080 by 1350
- * CSS pixels, photographed at 2x.
+ * Writes two images at 2x: the poster (1080 by 1350, `<slug>.png`) and the
+ * link-preview card (1200 by 630, `<slug>-card.png`, used as og:image).
+ * Needs a running Hugo server and a local Chrome.
  *
  * Usage: bun run scholarship:infographic <slug> [--base=http://localhost:1313]
  */
 
 import path from "node:path";
 
-const WIDTH = 1080;
-const HEIGHT = 1350;
+/** The poster, for posting as an image; the card, for link previews (og:image). */
+const IMAGES = [
+  { target: "share", suffix: "", width: 1080, height: 1350 },
+  { target: "share-card", suffix: "-card", width: 1200, height: 630 },
+];
 const CHROME_NAMES = [
   "google-chrome",
   "google-chrome-stable",
@@ -51,26 +55,31 @@ async function main(): Promise<void> {
     throw new Error(`${url} has no infographic (no #share block).`);
   }
 
-  const out = path.join("hugo/static/assets/scholarship", `${slug}.png`);
-  const chrome = Bun.spawn(
-    [
-      findChrome(),
-      "--headless=new",
-      "--hide-scrollbars",
-      "--force-device-scale-factor=2",
-      `--window-size=${WIDTH},${HEIGHT}`,
-      "--virtual-time-budget=5000",
-      `--screenshot=${path.resolve(out)}`,
-      `${url}#share`,
-    ],
-    { stdout: "ignore", stderr: "pipe" },
-  );
-  if ((await chrome.exited) !== 0 || !(await Bun.file(out).exists())) {
-    throw new Error(
-      `Chrome did not write ${out}:\n${await new Response(chrome.stderr).text()}`,
+  for (const image of IMAGES) {
+    const out = path.join(
+      "hugo/static/assets/scholarship",
+      `${slug}${image.suffix}.png`,
     );
+    const chrome = Bun.spawn(
+      [
+        findChrome(),
+        "--headless=new",
+        "--hide-scrollbars",
+        "--force-device-scale-factor=2",
+        `--window-size=${image.width},${image.height}`,
+        "--virtual-time-budget=5000",
+        `--screenshot=${path.resolve(out)}`,
+        `${url}#${image.target}`,
+      ],
+      { stdout: "ignore", stderr: "pipe" },
+    );
+    if ((await chrome.exited) !== 0 || !(await Bun.file(out).exists())) {
+      throw new Error(
+        `Chrome did not write ${out}:\n${await new Response(chrome.stderr).text()}`,
+      );
+    }
+    console.log(`✓ ${out} (${image.width}×${image.height} at 2x)`);
   }
-  console.log(`✓ ${out} (${WIDTH}×${HEIGHT} at 2x)`);
 }
 
 await main();

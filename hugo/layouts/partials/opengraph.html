@@ -1,9 +1,21 @@
 {{- $description := .Site.Params.description -}}
 {{- $isScholarshipPage := and (eq .Section "scholarship") .IsPage -}}
 {{- $isTimeline := and (eq .Section "timeline") (eq .Kind "section") -}}
-{{- /* Synthesis pages: dek as description, no Host name or image, so the small card. */ -}}
+{{- /*
+  Synthesis pages: dek as description, no Host name or image, so the small
+  card. The exception is a Scholarship Page with an infographic: its
+  link-preview card (the archive's own image) is the picture.
+  */
+-}}
 {{- $isSynthesis := or $isScholarshipPage $isTimeline -}}
-{{- $twitterCard := cond $isSynthesis "summary" "summary_large_image" -}}
+{{- $infographicCard := "" -}}
+{{- if $isScholarshipPage -}}
+  {{- $card := printf "assets/scholarship/%s-card.png" .File.ContentBaseName -}}
+  {{- if fileExists (printf "static/%s" $card) -}}
+    {{- $infographicCard = $card | absURL -}}
+  {{- end -}}
+{{- end -}}
+{{- $twitterCard := cond (and $isSynthesis (not $infographicCard)) "summary" "summary_large_image" -}}
 {{- if and $isSynthesis .Params.dek -}}
   {{- $description = .Params.dek -}}
 {{- else if .Description -}}
@@ -64,6 +76,15 @@
   {{- end }}
 {{- else if $isSynthesis -}}
   <meta property="og:type" content="article" />
+  {{- with $infographicCard }}
+    <meta property="og:image" content="{{ . }}" />
+    <meta property="og:image:width" content="2400" />
+    <meta property="og:image:height" content="1260" />
+    <meta
+      property="og:image:alt"
+      content="{{ printf "Infographic: %s" $.Title }}" />
+    <meta name="twitter:image" content="{{ . }}" />
+  {{- end }}
 {{- else if and (eq .Type "guests") (eq .Kind "term") -}}
   <meta property="og:type" content="profile" />
   {{- with .Resources.GetMatch "headshot.*" }}
