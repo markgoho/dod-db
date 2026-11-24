@@ -1,5 +1,6 @@
 # Review record for /scholarship/the-historical-jesus/ (#93 shape). Not rendered.
 # agent: results of the agent's first pass (#95, 2026-11-23) and the independent second agent pass (2026-11-23, #93 rule change).
+# #133 second pass 2026-11-23 (independent agent): shorts audited against the state-of-scholarship rule; apocalyptic gains a Martin cite (apocalyptic/6); judgement and details flagged (consensus-wording). Review dates stay 2026-11-23.
 # owner: empty ("") until the owner's publish review sets pass or fail.
 review: 2026-11-23
 delegation:
@@ -86,6 +87,12 @@ citations:
       owner: "",
       note: "Section “The Beginning and End as Keys to the Middle”; reasons per #86. Second pass 2026-11-23: verified.",
     }
+  apocalyptic/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "#133 second pass 2026-11-23: added. Martin l13 ch. 4 [00:47:53], re-fetched from oyc.yale.edu and matched verbatim. Second author for the short: “Most agree” is the Ehrman summary's report (apocalyptic/3); Martin holds the view in his own voice. The statement keeps his own hedge (“very controversial”, which in context covers his list of conclusions). Martin says in the same lecture that he and Ehrman “agree to a great extent”, so the two are distinct authors but not opposed voices. Added by the verifier; no further independent pass.",
+    }
   outside/1:
     {
       agent: pass,
@@ -170,7 +177,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "“most scholars” (apocalyptic, details) and “virtually no scholar” (existence) each come from the cited source. Martin's “all” is not used (see existence/2). No “consensus”, “fringe” or “minority” on the page. Second pass 2026-11-23: verified. Each wording is quoted in its citation from a Reference or Scholarly source inside the 30-year window, keeps the source's scope, and is followed by the reasons where the source gives them (apocalyptic/4–5, details/3). The deniers short answer no longer characterises the dissenters (“rare” removed).",
+      note: "“most scholars” (apocalyptic, details) and “virtually no scholar” (existence) each come from the cited source. Martin's “all” is not used (see existence/2). No “consensus”, “fringe” or “minority” on the page. Second pass 2026-11-23: verified. Each wording is quoted in its citation from a Reference or Scholarly source inside the 30-year window, keeps the source's scope, and is followed by the reasons where the source gives them (apocalyptic/4–5, details/3). The deniers short answer no longer characterises the dissenters (“rare” removed). #133 second pass 2026-11-23: every short audited against the rule (2+ distinct read authors; relayed unread authors don't count). Pass: existence (Meggitt, Martin), deniers (who has published what: fact, Meggitt and Martin), outside (dated facts about which ancient writers mention Jesus, exempt), apocalyptic (Ehrman reports “most scholars”; Martin holds it, apocalyptic/6 added). FLAGS: judgement (“Usually as too weak or bizarre…”: Meggitt alone; the inner quote is Van Voorst, Jesus Outside the New Testament, relayed in Meggitt's note 2 and not read) and details (“Most say the sign on the cross is; scholars often say his baptism may well be.”: Martin alone; the Ehrman ch. 9 summary mentions the charge “king of the Jews” but not the sign's historicity, and not the baptism). Each needs a second read author, a reframe or a cut; owner or delegate decides.",
     }
   dissent-attributed:
     {

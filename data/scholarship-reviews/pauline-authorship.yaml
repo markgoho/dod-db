@@ -7,6 +7,9 @@
 # and dashes normalised), and every Yale locator against the transcript's chapter headings.
 # Ep 144 [00:37:57] "Ephesians was not written by Paul" was dropped in the first pass because the
 # Transcript's speaker labels were swapped. #120 fixed them (audio-checked); it is now a Trigger Claim.
+# #133 second pass 2026-11-23 (independent agent): shorts audited against the state-of-scholarship rule. pseudepigraphy and
+# second-thessalonians gain a second-author cite (pseudepigraphy/3, second-thessalonians/7); pastorals-reasons and
+# pastorals-date shorts narrowed; pastorals-dissent flagged (consensus-wording). Review dates stay 2026-11-23.
 review: 2026-11-23
 delegation:
   by: owner
@@ -43,6 +46,12 @@ citations:
       agent: pass,
       owner: "",
       note: "Martin l17 ch. 1 [00:00:00], near the end of the chapter (before 00:10:42). Second pass 2026-11-23: verified.",
+    }
+  pseudepigraphy/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "#133 second pass 2026-11-23: added; same quote as pastorals/3 (Martin l17 ch. 2 [00:10:42]), re-fetched from oyc.yale.edu and matched verbatim. pseudepigraphy/2 is about the ancient practice and doesn't back “Most do”, so the short rested on the Ehrman ch. 11 summary alone; Martin's “almost all scholars, critical scholars” on the Pastorals is a second author reporting that most scholars think some letters in Paul's name are not his. Statement attributes it to Martin with his scope (critical scholars; the Pastorals). Added by the verifier; no further independent pass.",
     }
   hebrews/1:
     {
@@ -90,7 +99,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 16 summary, “The Historical Situation and Authorship of the Pastoral Epistles”. “Over one-third” is used; Ep 6 says “two-thirds” and Ep 35 “a third”, and neither card carries the figure. Second pass 2026-11-23: verified.",
+      note: "Ehrman ch. 16 summary, “The Historical Situation and Authorship of the Pastoral Epistles”. “Over one-third” is used; Ep 6 says “two-thirds” and Ep 35 “a third”, and neither card carries the figure. Second pass 2026-11-23: verified. #133 second pass 2026-11-23: short was “Their style, vocabulary and church structure differ from Paul's undisputed letters.”: style has two authors (this and pastorals-reasons/4, Martin), but vocabulary and church structure rest on the Ehrman summary alone, and the church-structure dating is its judgement. Short now “Their writing style differs from Paul's undisputed letters, and much of their vocabulary is not found in his letters.”: style on two authors, vocabulary as the summary's countable fact (“Over one-third … not found”). Church structure stays in the statement, attributed. Reworded by the verifier; no further independent pass.",
     }
   pastorals-reasons/2:
     {
@@ -114,7 +123,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 16 summary. The short answer's “both sources … after Paul's lifetime” rests on this summary's inference from church structure and on Martin's own second-century guess. Neither states a field position on the date. Second pass 2026-11-23: verified.",
+      note: "Ehrman ch. 16 summary. The short answer's “both sources … after Paul's lifetime” rests on this summary's inference from church structure and on Martin's own second-century guess. Neither states a field position on the date. Second pass 2026-11-23: verified. #133 second pass 2026-11-23: short was “Uncertain; both sources read place them after Paul's lifetime.”: “Uncertain” is Martin's “everybody guess” alone. Short now “Both sources read place them after Paul's lifetime.”, which both carry; Martin's “guess” stays in the statement, attributed.",
     }
   pastorals-date/2:
     {
@@ -132,7 +141,7 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Martin l19 ch. 3 [00:26:50], near the end of the chapter. “these letters” are the Pastorals (the lecture's subject). Second pass 2026-11-23: verified. With Bulundwe dropped, the statement rests on Martin alone and names no dissenter; it reports only what Martin reports.",
+      note: "Martin l19 ch. 3 [00:26:50], near the end of the chapter. “these letters” are the Pastorals (the lecture's subject). Second pass 2026-11-23: verified. With Bulundwe dropped, the statement rests on Martin alone and names no dissenter; it reports only what Martin reports. #133 second pass 2026-11-23: FLAG: the short “Some do.” is Martin's report alone. Ehrman's ch. 16 “Most scholars agree that Paul did not write” (pastorals/1) only implies that some disagree; not counted. Needs a second read author naming a defender (Bulundwe's Johnson and Herzer were dropped with that source), a reframe or a cut; owner or delegate decides.",
     }
   disputed/1:
     {
@@ -211,6 +220,12 @@ citations:
       agent: pass,
       owner: "",
       note: "Martin l24 ch. 2 [00:12:22]. Ep 138's “most critical scholars would say” is stronger than “divided”; per #86 the gap stays unexplained. Second pass 2026-11-23: verified.",
+    }
+  second-thessalonians/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "#133 second pass 2026-11-23: added; same quote as ephesians-colossians/1 (Ehrman ch. 16 summary, section “The Deutero-Pauline Epistles”), re-fetched and matched verbatim. “Scholars are divided” rested on Martin alone (second-thessalonians/1, /6); the Ehrman summary's “scholars continue to debate the authorial claims of 2 Thessalonians” is the second author. Statement attributes it to the summary. Added by the verifier; no further independent pass.",
     }
 triggers:
   6@00:35:10:
@@ -338,7 +353,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "Second pass 2026-11-23: verified. No statement says “consensus”. Every “most scholars” rests on a Reference source saying “most” or stronger itself (Ehrman summaries; Martin's “almost all scholars” and “Most of us scholars”).",
+      note: "Second pass 2026-11-23: verified. No statement says “consensus”. Every “most scholars” rests on a Reference source saying “most” or stronger itself (Ehrman summaries; Martin's “almost all scholars” and “Most of us scholars”). #133 second pass 2026-11-23: every short audited (2+ distinct read authors back it, or it is an exempt fact). Pass: undisputed (Ehrman, Martin), hebrews (Ehrman, Martin), pastorals (Ehrman, Martin), disputed (Ehrman, Martin), ephesians-colossians (Ehrman, Martin). Fixed: pseudepigraphy (pseudepigraphy/3), second-thessalonians (second-thessalonians/7), pastorals-reasons and pastorals-date (narrowed). FLAG: pastorals-dissent (“Some do.”, Martin alone).",
     }
   dissent-attributed:
     {

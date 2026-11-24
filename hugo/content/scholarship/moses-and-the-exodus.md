@@ -108,7 +108,7 @@ statements:
     group: "How scholars read the account"
     question: "Did some kind of exodus happen?"
     short: "Many scholars think some history is preserved."
-    text: "Many scholars still think that some genuine history is preserved in Exodus. The summary gives two reasons: Moses appears consistently as the deliverer from slavery in Egypt throughout Israel’s literature and legal traditions, which suggests a common historical source, and Egyptian themes, including proper names, are common enough to make a historical origin likely. The chapter summary for Coogan and Chapman's introductory textbook holds that the accounts may not preserve the details accurately, but that some sort of exodus occurred in Israel's history."
+    text: "Many scholars still think that some genuine history is preserved in Exodus. The summary gives two reasons: Moses appears consistently as the deliverer from slavery in Egypt throughout Israel’s literature and legal traditions, which suggests a common historical source, and Egyptian themes, including proper names, are common enough to make a historical origin likely. The chapter summary for Coogan and Chapman's introductory textbook holds that the accounts may not preserve the details accurately, but that some sort of exodus occurred in Israel's history. Carol Meyers likewise judges that Egyptian analogues suggest a core of reality, although there is no specific historical grounding for the biblical account."
     cites:
       - source: coogan-brief-4e-summary
         locator: "section “Exodus and History”"
@@ -122,6 +122,10 @@ statements:
         locator: "section “Implications for Our Study”"
         quote: "Although the accounts of the Exodus may not preserve the historical details of this event accurately, it certainly appears that some sort of exodus occurred in Israel’s history."
         read: 2026-11-22
+      - source: meyers-2005-exodus
+        locator: "p. 10"
+        quote: "Although there is no specific historical grounding for the biblical account of descent, sojourn, and departure, these analogues suggest a core of reality."
+        read: 2026-11-23
   - id: band
     group: "How scholars read the account"
     question: "What might lie behind the story?"
@@ -239,8 +243,8 @@ statements:
   - id: sargon
     group: "The story's literary background"
     question: "Does the story of Moses's birth have an ancient parallel?"
-    short: "Many scholars point to the birth story of Sargon of Akkad."
-    text: "Many scholars have pointed out that the story of Moses's birth is paralleled by the birth story of Sargon of Akkad (c. 2300 BCE), who was also placed in a basket lined with tar and put in the river."
+    short: "Yes: the birth story of Sargon of Akkad, who was also placed in a basket lined with tar and put in the river."
+    text: "Christine Hayes notes that many scholars have pointed out that the story of Moses's birth is paralleled by the birth story of Sargon of Akkad (c. 2300 BCE), who was also placed in a basket lined with tar and put in the river."
     cites:
       - source: hayes-rlst145-l7
         locator: "ch. 4 [00:21:14]"
@@ -250,7 +254,7 @@ statements:
     group: "The story's literary background"
     question: "What is the oldest account of the event?"
     short: "Most agree it is a poetic fragment in Exodus 15:1–12."
-    text: "The oldest account of the event at the sea is widely agreed to be a poetic fragment in Exodus 15:1–12."
+    text: "Christine Hayes reports that most agree the oldest account of the event at the sea is a poetic fragment in Exodus 15:1–12."
     cites:
       - source: hayes-rlst145-l8
         locator: "ch. 2 [00:06:51]"

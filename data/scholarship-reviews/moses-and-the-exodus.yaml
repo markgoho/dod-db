@@ -2,7 +2,8 @@
 # agent: results of the agent's first pass (#89, 2026-11-22; expansion items 2026-11-23). That pass does not count toward publish.
 # owner: empty ("") until the owner's publish review (#104) sets pass or fail.
 # Second agent pass 2026-11-23 (#93 delegation): independent re-fetch and verbatim re-match of every citation and Trigger Claim; results appended to each note.
-# #133 (2026-11-23): band's short answer changed to report what its three authors share; band cites unchanged. The second pass on changed statements is pending (#133) and will update its dates.
+# #133 (2026-11-23): band's short answer changed to report what its three authors share; band cites unchanged.
+# #133 second pass 2026-11-23 (independent agent): band verified; every short re-audited against the rule. kernel gains Meyers p. 10 (kernel/4, the band/3 quote) as a second author; sargon's short reworded to the parallel itself (a fact about two texts); song's statement attributes “most agree” to Hayes. history, date, numbers and song shorts each rest on one author's report and are flagged (consensus-wording), not reworded. Review dates stay 2026-11-23.
 review: 2026-11-23
 delegation:
   by: owner
@@ -118,23 +119,29 @@ citations:
       owner: "",
       note: "Coogan summary, section “Implications for Our Study”. Second pass 2026-11-23: verified.",
     }
+  kernel/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "#133 second pass 2026-11-23: added. Same quote as band/3 (Meyers p. 10, verified verbatim by the second pass and again for #133). kernel's “Many scholars think” is the Coogan and Chapman summary's report alone (kernel/1–3, one author pair); Meyers holding in her own voice that the analogues suggest a core of reality is the second author. Statement attributes it to Meyers by name. Added by the verifier, so this cite and its sentence have had no further independent pass.",
+    }
   band/1:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary, section “Events at the Sea”. Was a lead. “May lie at the heart” kept as “may lie”; the size (“small band”) is the summary's own suggestion, so question, short answer and statement attribute it to the summary. No source read gives a small group as “some scholars” think. Second pass 2026-11-23: verified. #133 first pass: short answer no longer rests on this summary alone; it now says “Some scholars find it plausible that a real escape from Egypt lies at its core”, the ground band/1–3 share (“may lie at the heart … escapees”, Hayes's “some scholars think … plausibility … escape”, Meyers's “core of reality”). “Small band” stays in the statement, attributed to the summary. Second pass on #133 change pending.",
+      note: "Coogan summary, section “Events at the Sea”. Was a lead. “May lie at the heart” kept as “may lie”; the size (“small band”) is the summary's own suggestion, so question, short answer and statement attribute it to the summary. No source read gives a small group as “some scholars” think. Second pass 2026-11-23: verified. #133 first pass: short answer no longer rests on this summary alone; it now says “Some scholars find it plausible that a real escape from Egypt lies at its core”, the ground band/1–3 share (“may lie at the heart … escapees”, Hayes's “some scholars think … plausibility … escape”, Meyers's “core of reality”). “Small band” stays in the statement, attributed to the summary. #133 second pass 2026-11-23: verified. Short passes: Hayes reports “some scholars think”, and Coogan and Chapman (“may lie at the heart”) and Meyers (“core of reality”) hold it in their own voice, three distinct authors.",
     }
   band/2:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 3 [00:10:06]; “some scholars think”, about plausibility, not size. The statement says “escaped” for her “escape … at this time”. Second pass 2026-11-23: verified. #133 first pass: source of the short answer's “some scholars” and “plausible”; size not claimed. Second pass on #133 change pending.",
+      note: "Hayes l7 ch. 3 [00:10:06]; “some scholars think”, about plausibility, not size. The statement says “escaped” for her “escape … at this time”. Second pass 2026-11-23: verified. #133 first pass: source of the short answer's “some scholars” and “plausible”; size not claimed. #133 second pass 2026-11-23: verified.",
     }
   band/3:
     {
       agent: pass,
       owner: "",
-      note: "Meyers p. 10. Same page: historicity perhaps “ceases to be an issue”. On p. 7 she reports the widely accepted Canaanite-origins hypothesis, under which the account “appears to be little more than a tale”. Not on the page; owner ruled 2026-11-23: no new side added. Second pass 2026-11-23: verified. Quote verbatim at p. 10; statement keeps “no specific historical grounding” beside “core of reality”. #133 first pass: source of the short answer's “core”, as a second independent author beside Hayes. Second pass on #133 change pending.",
+      note: "Meyers p. 10. Same page: historicity perhaps “ceases to be an issue”. On p. 7 she reports the widely accepted Canaanite-origins hypothesis, under which the account “appears to be little more than a tale”. Not on the page; owner ruled 2026-11-23: no new side added. Second pass 2026-11-23: verified. Quote verbatim at p. 10; statement keeps “no specific historical grounding” beside “core of reality”. #133 first pass: source of the short answer's “core”, as a second independent author beside Hayes. #133 second pass 2026-11-23: verified; Meyers's “analogues” are the Egyptian records of Semites entering and leaving Egypt (p. 10, same paragraph: two laborers “fled from Egypt into Sinai”), so “a real escape” is within her “departure … core of reality”.",
     }
   date/1:
     {
@@ -254,13 +261,13 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l7 ch. 4 [00:21:14]. Question and short answer reworded per #89 (source says “paralleled”, not derived). Statement's basket clause now uses Hayes's “basket lined with tar, put in the river” in place of the Collins lead's wording; that clause is outside the quoted sentence, so check it at the locator. Second pass 2026-11-23: verified. Basket clause is verbatim two sentences later at ch. 4 (“[He's] placed in a basket lined with tar, put in the river, and so on.”); quote extended to include it.",
+      note: "Hayes l7 ch. 4 [00:21:14]. Question and short answer reworded per #89 (source says “paralleled”, not derived). Statement's basket clause now uses Hayes's “basket lined with tar, put in the river” in place of the Collins lead's wording; that clause is outside the quoted sentence, so check it at the locator. Second pass 2026-11-23: verified. Basket clause is verbatim two sentences later at ch. 4 (“[He's] placed in a basket lined with tar, put in the river, and so on.”); quote extended to include it. #133 second pass 2026-11-23: short was “Many scholars point to the birth story of Sargon of Akkad.”: “many scholars” is Hayes's report alone (Collins is a lead, not read). Short now states the parallel itself (“Yes: the birth story of Sargon of Akkad, who was also placed in a basket lined with tar and put in the river.”), a fact about two texts, exempt; the statement attributes “many scholars have pointed out” to Hayes. Reworded by the verifier; no further independent pass.",
     }
   song/1:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l8 ch. 2 [00:06:51]. Short answer reworded per #89 to keep “most agree”; statement keeps “widely agreed”. Second pass 2026-11-23: verified. Hayes: “most people do in fact agree”, inside a passage that stresses disagreement over source seams; the page claims only the oldest-account point.",
+      note: "Hayes l8 ch. 2 [00:06:51]. Short answer reworded per #89 to keep “most agree”; statement keeps “widely agreed”. Second pass 2026-11-23: verified. Hayes: “most people do in fact agree”, inside a passage that stresses disagreement over source seams; the page claims only the oldest-account point. #133 second pass 2026-11-23: FLAG: “Most agree” is Hayes's report alone; no other source read dates Exodus 15. Statement now attributes it (“Christine Hayes reports that most agree…”); the short is left as is for an owner decision (second source, reframe or cut).",
     }
 triggers:
   21@00:10:31:
@@ -324,7 +331,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "“no consensus” in date is Meyers's own; numbers makes no field-state claim (“widely regarded”, “many biblical scholars” went with Krajewski). Second pass 2026-11-23: flag on the #86 reasons rule (reasons follow a consensus statement when a Scholarly or Reference source gives them). kernel: the Coogan summary gives reasons straight after “many scholars still think”: “In particular, the consistent appearance of Moses as a deliverer of the people from slavery in Egypt in Israel’s literature and legal traditions suggests a common historical source. Also, the prevalence of Egyptian themes, including proper names, makes a historical origin likely.” The page gives none. history: Meyers p. 4 arguably gives one: “the results of generations of source criticism and redaction criticism … have shown that the Hebrew Bible is hardly a straightforward and factual telling of Israel’s past.” The first pass's note on history/1 says no source gives reasons. Verifier didn't write the sentences (an unverified addition would get no independent pass); owner or builder decides. Not a publish-rule stop. sargon (“many scholars have pointed out”) and song (“most people … agree”): Hayes gives no reasons at the locator. Resolved 2026-11-23: the kernel and history reasons are now on the page (kernel/2, history/2), each re-fetched and matched verbatim. #133 first pass: band's short answer now says “Some scholars find it plausible…”, from Hayes's own “some scholars think … lends plausibility” (band/2), backed by Coogan and Chapman (band/1) and Meyers (band/3); the other short answers on this page were not re-audited against the #133 rule. Second pass on #133 change pending.",
+      note: "“no consensus” in date is Meyers's own; numbers makes no field-state claim (“widely regarded”, “many biblical scholars” went with Krajewski). Second pass 2026-11-23: flag on the #86 reasons rule (reasons follow a consensus statement when a Scholarly or Reference source gives them). kernel: the Coogan summary gives reasons straight after “many scholars still think”: “In particular, the consistent appearance of Moses as a deliverer of the people from slavery in Egypt in Israel’s literature and legal traditions suggests a common historical source. Also, the prevalence of Egyptian themes, including proper names, makes a historical origin likely.” The page gives none. history: Meyers p. 4 arguably gives one: “the results of generations of source criticism and redaction criticism … have shown that the Hebrew Bible is hardly a straightforward and factual telling of Israel’s past.” The first pass's note on history/1 says no source gives reasons. Verifier didn't write the sentences (an unverified addition would get no independent pass); owner or builder decides. Not a publish-rule stop. sargon (“many scholars have pointed out”) and song (“most people … agree”): Hayes gives no reasons at the locator. Resolved 2026-11-23: the kernel and history reasons are now on the page (kernel/2, history/2), each re-fetched and matched verbatim. #133 first pass: band's short answer now says “Some scholars find it plausible…”, from Hayes's own “some scholars think … lends plausibility” (band/2), backed by Coogan and Chapman (band/1) and Meyers (band/3); the other short answers on this page were not re-audited against the #133 rule. #133 second pass 2026-11-23: every short re-audited. Pass: evidence (Meyers, Coogan and Chapman, Hayes), moses (three), merneptah (fact), band (three), sea (Yoo, HarperCollins, Hayes l8), kernel (Coogan and Chapman report “many scholars”; Meyers kernel/4 holds it). Reworded: sargon (to the parallel itself). FLAGS, each one author's report of the field as the short: history (“Most have not read…”: Meyers alone), date (“There is no consensus”: Meyers alone; Coogan and Chapman and Hayes both favour the 13th century conditionally, which doesn't carry “no consensus”), numbers (“The count is inflated…”: the two Coogan summaries, one author pair), song (“Most agree”: Hayes alone). Each needs a second read author, a reframe or a cut; owner or delegate decides.",
     }
   dissent-attributed:
     {
