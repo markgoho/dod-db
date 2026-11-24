@@ -23,7 +23,7 @@
   - Mid-15th, the Bible's own chronology: `date` text (cite 2).
   - 13th, often placed here if it happened: `date` short (cites 5, 6).
   - Nothing recovered relates directly: `evidence` short (cites 1, 3, 4).
-  - Stela, earliest mention, a people in Canaan, silent on an exodus:
+  - Stela, earliest mention, a people, suggests in Canaan, silent on an exodus:
   `merneptah` short and text (cites 1, 2, 4, 5).
   - No text found in Egypt mentions Moses: `moses` short.
   */
@@ -32,15 +32,18 @@
   (dict
   "key" "hyksos"
   "when" "Mid-16th c."
-  "text" "When Egypt expelled its Hyksos rulers: a theory going back to Josephus.")
+  "text" "When Egypt expelled its Hyksos rulers: a theory going back to Josephus."
+  "card" "Hyksos expelled: Josephus’s theory")
   (dict
   "key" "bible"
   "when" "Mid-15th c."
-  "text" "The Bible’s own chronology.")
+  "text" "The Bible’s own chronology."
+  "card" "The Bible’s own chronology")
   (dict
   "key" "thirteenth"
   "when" "13th c."
-  "text" "Where scholars often place it, if it happened.")
+  "text" "Where scholars often place it, if it happened."
+  "card" "Often placed here, if it happened")
 -}}
 <section class="cloud-section exodus-when">
   <h2
@@ -84,9 +87,10 @@
         BCE</span
       >
     </p>
-    <div class="exodus-when__chart" aria-hidden="true">
+    {{/* The drawing is hidden from assistive tech; the silence line is not. */}}
+    <div class="exodus-when__chart">
       {{/* Above the axis: when it has been proposed. */}}
-      <div class="exodus-when__above">
+      <div class="exodus-when__above" aria-hidden="true">
         {{- range $index, $p := $proposals }}
           <span class="exodus-span exodus-span--{{ $p.key }}"></span>
           <span class="exodus-pin exodus-pin--{{ $p.key }}">
@@ -97,7 +101,7 @@
           </span>
         {{- end }}
       </div>
-      <div class="exodus-when__axis">
+      <div class="exodus-when__axis" aria-hidden="true">
         <span class="exodus-c--16">16th</span>
         <span class="exodus-c--15">15th</span>
         <span class="exodus-c--14">14th</span>
@@ -110,10 +114,11 @@
         <p class="exodus-when__silence">
           Nothing recovered relates directly to the Exodus
         </p>
-        <span class="exodus-span exodus-span--stela"></span>
+        <span class="exodus-span exodus-span--stela" aria-hidden="true"></span>
         <svg
           class="exodus-stela exodus-pin exodus-pin--stela"
           viewBox="0 0 60 80"
+          aria-hidden="true"
           focusable="false">
           <use href="#exodus-stela" />
         </svg>
@@ -134,7 +139,11 @@
                 <text x="24" y="22">{{ add $index 1 }}</text>
               </svg>
               <strong>{{ $p.when }}</strong>
-              <span>{{ $p.text }}</span>
+              <span class="exodus-when__text" data-card-hide
+                >{{ $p.text }}</span
+              >
+              {{/* The same line cut to a glance, for the link-preview card only. */}}
+              <span class="exodus-when__short">{{ $p.card }}</span>
             </li>
           {{- end }}
         </ol>
@@ -150,10 +159,14 @@
             <use href="#exodus-stela" />
           </svg>
           <strong>Late 13th c.</strong>
-          <span
+          <span class="exodus-when__text" data-card-hide
             >The Merneptah Stela, the earliest mention of Israel outside the
-            Bible, names Israel as a people in Canaan. It does not say whether
-            they arrived there after an exodus.</span
+            Bible, names Israel as a people and suggests they were in Canaan. It
+            does not say whether they arrived there after an exodus.</span
+          >
+          <span class="exodus-when__short"
+            >Merneptah Stela: suggests Israel was in Canaan. Silent on whether
+            they came by an exodus.</span
           >
         </div>
         <p class="exodus-when__note" data-card-hide>
