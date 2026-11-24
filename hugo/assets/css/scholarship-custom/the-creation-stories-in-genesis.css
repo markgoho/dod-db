@@ -1,0 +1,301 @@
+/*
+  Custom block for the Creation stories Scholarship Page: the two accounts as
+  facing columns either side of a spine. Composes panel, type-eyebrow,
+  type-section-title, cloud-section and scholarship-meta.
+
+  One grid (account, spine, account) runs through every row by subgrid. Text
+  faces the spine: the first account ends on it, the second starts from it.
+*/
+.creation-compare {
+  container: creation-compare / inline-size;
+}
+
+.creation-compare__panel {
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.creation-compare__table {
+  --spine: var(--space-l);
+
+  border-collapse: collapse;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--spine) minmax(0, 1fr);
+  inline-size: 100%;
+  row-gap: var(--space-s);
+}
+
+.creation-compare__table :is(thead, tbody, tr) {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+}
+
+.creation-compare__table tbody {
+  row-gap: var(--space-s);
+}
+
+.creation-compare__table :is(th, td) {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-regular);
+  /* Half-width columns on a phone: a long word breaks before it overflows. */
+  overflow-wrap: anywhere;
+  padding: 0;
+  text-align: start;
+  text-wrap: pretty;
+}
+
+.creation-compare__table :is(th, td):last-child {
+  grid-column: 3;
+}
+
+/* The two accounts: the first dark and squared-off, the second in the accent. */
+.creation-compare__table .creation-compare__account {
+  border: var(--border-width-sm) solid var(--tan-900);
+  display: grid;
+  gap: var(--space-4xs);
+  padding: var(--space-xs);
+}
+
+.creation-compare__account--first {
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+}
+
+.creation-compare__account--second {
+  background: var(--color-accent);
+}
+
+.creation-compare__ordinal {
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-bold);
+}
+
+.creation-compare__name {
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  text-transform: uppercase;
+}
+
+.creation-compare__range {
+  font-weight: var(--font-weight-bold);
+}
+
+.creation-compare__source {
+  font-size: var(--step--2);
+}
+
+/* What is being compared sits on a rule across both accounts. */
+.creation-compare__table .creation-compare__aspect {
+  align-items: center;
+  column-gap: var(--space-xs);
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  margin-block-end: var(--space-xs);
+}
+
+.creation-compare__aspect::before,
+.creation-compare__aspect::after {
+  background: var(--tan-900);
+  block-size: var(--border-width-sm);
+  content: "";
+}
+
+.creation-compare__aspect > .type-eyebrow {
+  font-size: var(--step--2);
+  text-align: center;
+}
+
+/* The spine: a hairline down the gap between the two cells. */
+.creation-compare__row:not(.creation-compare__row--order)::after {
+  background: var(--tan-300);
+  content: "";
+  grid-column: 2;
+  grid-row: 2;
+  inline-size: var(--border-width-sm);
+  justify-self: center;
+}
+
+.creation-compare__lead {
+  display: block;
+  font-family: var(--font-family-display);
+  font-size: var(--step-1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-heading);
+}
+
+/*
+  Order of creation. Each list fills the row's height in equal slots (three
+  on one side, four on the other), so a slot's centre is a fixed fraction of
+  the height and the SVG's lines can meet it at any size.
+*/
+.creation-compare__row--order > td {
+  display: grid;
+  position: relative;
+}
+
+.creation-order {
+  counter-reset: creation-order;
+  display: grid;
+  grid-auto-rows: minmax(0, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.creation-order > li {
+  counter-increment: creation-order;
+  display: grid;
+  font-size: inherit;
+  grid-template-columns: minmax(0, 1fr) auto;
+  line-height: var(--line-height-heading);
+  padding-block: var(--space-3xs);
+}
+
+.creation-order--second > li {
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+/* The step number sits against the spine, where its line arrives. */
+.creation-order > li::before {
+  align-items: center;
+  align-self: stretch;
+  background: var(--tan-900);
+  color: var(--color-text-inverse);
+  content: counter(creation-order);
+  display: inline-flex;
+  font-family: var(--font-family-display);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  grid-column: 2;
+  grid-row: 1;
+  justify-content: center;
+  min-inline-size: var(--space-s);
+}
+
+.creation-order--second > li::before {
+  grid-column: 1;
+}
+
+.creation-order__item {
+  background: var(--tan-100);
+  border: var(--border-width-sm) solid var(--tan-900);
+  align-content: center;
+  display: grid;
+  gap: var(--space-4xs);
+  grid-row: 1;
+  padding: var(--space-2xs);
+}
+
+.creation-order__what {
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  /* A one-word label is never split; it is short enough for the narrowest column. */
+  overflow-wrap: normal;
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+}
+
+.creation-order__note {
+  font-size: var(--step--2);
+  line-height: var(--line-height-relaxed);
+}
+
+/* In a narrow column the verse takes its own line, so the dot has no job. */
+.creation-order__dot {
+  display: none;
+}
+
+.creation-order__note a {
+  color: var(--color-text-main);
+  display: block;
+  font-weight: var(--font-weight-bold);
+  text-underline-offset: var(--space-4xs);
+  white-space: nowrap;
+}
+
+.creation-order__note a:hover,
+.creation-order__note a:focus-visible {
+  color: var(--color-action);
+}
+
+/* Humans move furthest: last in the first account, first and last in the second. */
+.creation-order__human::before {
+  background: var(--color-action);
+}
+
+.creation-order__human > .creation-order__item {
+  background: var(--color-accent-muted);
+}
+
+/* Fills the spine beside the first list; the row's cells share its height. */
+.creation-order__lines {
+  block-size: 100%;
+  inline-size: var(--spine);
+  inset-block-start: 0;
+  inset-inline-start: 100%;
+  overflow: visible;
+  position: absolute;
+}
+
+.creation-order__lines line {
+  stroke: var(--tan-900);
+  stroke-width: var(--border-width-sm);
+  vector-effect: non-scaling-stroke;
+}
+
+.creation-order__lines .creation-order__line--human {
+  stroke: var(--color-action);
+  stroke-width: var(--border-width-md);
+}
+
+.creation-compare__more {
+  border-block-start: var(--border-width-sm) solid var(--tan-300);
+  padding-block-start: var(--space-xs);
+}
+
+/* Literal length: container conditions cannot read custom properties. */
+@container creation-compare (width >= 40rem) {
+  .creation-compare__panel {
+    padding: var(--space-m);
+  }
+
+  .creation-compare__table {
+    --spine: var(--space-2xl);
+  }
+
+  .creation-compare__name {
+    font-size: var(--step-3);
+  }
+
+  .creation-order > li::before {
+    min-inline-size: var(--space-m);
+  }
+
+  .creation-order__item {
+    padding-inline: var(--space-xs);
+  }
+
+  .creation-order__what {
+    font-size: var(--step-0);
+  }
+
+  .creation-order__dot,
+  .creation-order__note a {
+    display: inline;
+  }
+
+  .creation-compare__table .creation-compare__account--first,
+  .creation-compare__table td:not(:last-child) {
+    text-align: end;
+  }
+}

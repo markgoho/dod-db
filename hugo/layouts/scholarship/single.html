@@ -1,5 +1,10 @@
 {{ define "head-styles" }}
-  {{ $inlineCSS := slice (resources.Get "css/_prev-next-nav.css") (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") | resources.Concat "css/scholarship-single.css" | resources.Minify }}
+  {{ $styles := slice (resources.Get "css/_prev-next-nav.css") (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") }}
+  {{/* A page's custom block (partials/scholarship-custom/<slug>.html) brings its own stylesheet. */}}
+  {{ with resources.Get (printf "css/scholarship-custom/%s.css" .File.ContentBaseName) }}
+    {{ $styles = $styles | append . }}
+  {{ end }}
+  {{ $inlineCSS := $styles | resources.Concat (printf "css/scholarship-single-%s.css" .File.ContentBaseName) | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
@@ -71,6 +76,12 @@
           </div>
         </details>
       </div>
+
+      {{/* Optional hand-built block for this page alone, keyed by slug. It restates reviewed statements; it adds none. */}}
+      {{ $custom := printf "scholarship-custom/%s.html" .File.ContentBaseName }}
+      {{ if templates.Exists (printf "partials/%s" $custom) }}
+        {{ partial $custom . }}
+      {{ end }}
 
       {{ range $group := $groups }}
         <section class="cloud-section">

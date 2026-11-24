@@ -1,0 +1,218 @@
+{{- /*
+  Custom block for /scholarship/the-creation-stories-in-genesis/: the two
+  accounts side by side. A view of the page's reviewed statements (`two`,
+  `differ`) and their cited quotes; it makes no claim they don't. Reword a cell
+  only when the statement it comes from is re-reviewed.
+
+  Roles are spelled out because the table is laid out as a grid, which can drop
+  table semantics.
+  */
+-}}
+{{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
+<section class="cloud-section creation-compare">
+  <h2 class="type-section-title cloud-section__title" id="side-by-side">
+    Side by side
+  </h2>
+  <div class="creation-compare__panel panel">
+    <table
+      class="creation-compare__table"
+      role="table"
+      aria-labelledby="side-by-side">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th
+            class="creation-compare__account creation-compare__account--first"
+            role="columnheader"
+            scope="col">
+            <span class="creation-compare__ordinal">First account</span>
+            <span class="creation-compare__name">Genesis 1</span>
+            <span class="creation-compare__range">Genesis 1:1–2:4a</span>
+            <span class="creation-compare__source"
+              >P, the Priestly source, in the Documentary Hypothesis</span
+            >
+          </th>
+          <th
+            class="creation-compare__account creation-compare__account--second"
+            role="columnheader"
+            scope="col">
+            <span class="creation-compare__ordinal">Second account</span>
+            <span class="creation-compare__name">Genesis 2</span>
+            <span class="creation-compare__range">Begins at Genesis 2:4b</span>
+            <span class="creation-compare__source"
+              >J, in the Documentary Hypothesis</span
+            >
+          </th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr
+          class="creation-compare__row creation-compare__row--order"
+          role="row">
+          <th class="creation-compare__aspect" role="rowheader" scope="row">
+            <span class="type-eyebrow">Order of creation</span>
+          </th>
+          <td role="cell">
+            <ol class="creation-order creation-order--first">
+              <li>
+                <span class="creation-order__item">
+                  <span class="creation-order__what">Plants</span>
+                  <span class="creation-order__note"
+                    >Third day <span class="creation-order__dot">·</span>
+                    <a href="{{ $bg }}Genesis+1%3A11-12" rel="noopener"
+                      >1:11</a
+                    ></span
+                  >
+                </span>
+              </li>
+              <li>
+                <span class="creation-order__item">
+                  <span class="creation-order__what">Animals</span>
+                  <span class="creation-order__note"
+                    >Before humans <span class="creation-order__dot">·</span>
+                    <a href="{{ $bg }}Genesis+1%3A20-25" rel="noopener"
+                      >1:20–25</a
+                    ></span
+                  >
+                </span>
+              </li>
+              <li class="creation-order__human">
+                <span class="creation-order__item">
+                  <span class="creation-order__what">Humans</span>
+                  <span class="creation-order__note"
+                    >Male and female together
+                    <span class="creation-order__dot">·</span>
+                    <a href="{{ $bg }}Genesis+1%3A26-27" rel="noopener"
+                      >1:26–27</a
+                    ></span
+                  >
+                </span>
+              </li>
+            </ol>
+            {{/* Each thing made, traced from its place in the first account to its place in the second. */}}
+            <svg
+              class="creation-order__lines"
+              viewBox="0 0 100 120"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+              focusable="false">
+              <line x1="0" y1="20" x2="100" y2="45" />
+              <line x1="0" y1="60" x2="100" y2="75" />
+              <line
+                class="creation-order__line--human"
+                x1="0"
+                y1="100"
+                x2="100"
+                y2="15" />
+              <line
+                class="creation-order__line--human"
+                x1="0"
+                y1="100"
+                x2="100"
+                y2="105" />
+            </svg>
+          </td>
+          <td role="cell">
+            <ol class="creation-order creation-order--second">
+              <li class="creation-order__human">
+                <span class="creation-order__item">
+                  <span class="creation-order__what">The man</span>
+                  <span class="creation-order__note"
+                    >Formed from the dust of the earth
+                    <span class="creation-order__dot">·</span>
+                    <a href="{{ $bg }}Genesis+2%3A7" rel="noopener"
+                      >2:7</a
+                    ></span
+                  >
+                </span>
+              </li>
+              <li>
+                <span class="creation-order__item">
+                  <span class="creation-order__what">Plants</span>
+                  <span class="creation-order__note"
+                    >None before the man
+                    <span class="creation-order__dot">·</span>
+                    <a href="{{ $bg }}Genesis+2%3A8-9" rel="noopener"
+                      >2:8–9</a
+                    ></span
+                  >
+                </span>
+              </li>
+              <li>
+                <span class="creation-order__item">
+                  <span class="creation-order__what">Animals</span>
+                  <span class="creation-order__note"
+                    >After the man <span class="creation-order__dot">·</span>
+                    <a href="{{ $bg }}Genesis+2%3A19" rel="noopener"
+                      >2:19</a
+                    ></span
+                  >
+                </span>
+              </li>
+              <li class="creation-order__human">
+                <span class="creation-order__item">
+                  <span class="creation-order__what">The woman</span>
+                  <span class="creation-order__note"
+                    >Formed from his rib
+                    <span class="creation-order__dot">·</span>
+                    <a href="{{ $bg }}Genesis+2%3A21-22" rel="noopener"
+                      >2:21–22</a
+                    ></span
+                  >
+                </span>
+              </li>
+            </ol>
+          </td>
+        </tr>
+        <tr class="creation-compare__row" role="row">
+          <th class="creation-compare__aspect" role="rowheader" scope="row">
+            <span class="type-eyebrow">Name for God</span>
+          </th>
+          <td role="cell">
+            <span class="creation-compare__lead">Elohim</span>
+            translated “God”
+          </td>
+          <td role="cell">
+            <span class="creation-compare__lead">Yahweh Elohim</span>
+            “the LORD God”
+          </td>
+        </tr>
+        <tr class="creation-compare__row" role="row">
+          <th class="creation-compare__aspect" role="rowheader" scope="row">
+            <span class="type-eyebrow">Style</span>
+          </th>
+          <td role="cell">Formal, highly structured and abstract</td>
+          <td role="cell">More dramatic and earthy, full of puns</td>
+        </tr>
+        <tr class="creation-compare__row" role="row">
+          <th class="creation-compare__aspect" role="rowheader" scope="row">
+            <span class="type-eyebrow">Picture of God</span>
+          </th>
+          <td role="cell">Remote. Creates effortlessly, by word and will.</td>
+          <td role="cell">
+            Forms the human like a potter, plants a garden and walks in it. Much
+            more anthropo&shy;morphic.
+          </td>
+        </tr>
+        <tr class="creation-compare__row" role="row">
+          <th class="creation-compare__aspect" role="rowheader" scope="row">
+            <span class="type-eyebrow">Why humans are made</span>
+          </th>
+          <td role="cell">To have dominion over the earth</td>
+          <td role="cell">To till and keep the garden</td>
+        </tr>
+        <tr class="creation-compare__row" role="row">
+          <th class="creation-compare__aspect" role="rowheader" scope="row">
+            <span class="type-eyebrow">Words for the sexes</span>
+          </th>
+          <td role="cell">“Male and female”</td>
+          <td role="cell">“Man and woman”, a different set of Hebrew terms</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="creation-compare__more scholarship-meta">
+      Every line here comes from the cited answers below:
+      <a href="#two">Does Genesis open with two different creation accounts?</a>
+      and <a href="#differ">How do the two accounts differ?</a>
+    </p>
+  </div>
+</section>
