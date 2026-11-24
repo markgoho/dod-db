@@ -8,7 +8,8 @@
 {{- with .Params.undated -}}
   {{- $verdict = .verdict | default "" -}}
 {{- end -}}
+{{- $label := "No firm date in the sources" -}}
 {{- if eq $verdict "not-historical" -}}
-  {{- return "Not historical as narrated" -}}
+  {{- $label = "Not historical as narrated" -}}
 {{- end -}}
-{{- return "No firm date in the sources" -}}
+{{- return $label -}}
