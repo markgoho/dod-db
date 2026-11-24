@@ -48,7 +48,9 @@
       const t = e.target;
       if (
         t instanceof Element &&
-        t.closest("input, textarea, select, [contenteditable], pagefind-modal")
+        t.closest(
+          "input, textarea, select, [contenteditable], [role=slider], pagefind-modal",
+        )
       )
         return;
       e.preventDefault();

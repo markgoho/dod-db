@@ -1,0 +1,90 @@
+{{- /*
+  PROTOTYPE (timeline rail): the minimap shared by B1 and B2. Takes {rail, key,
+  name, mode, hidden}. mode "page": bands and ticks start count-weighted and the
+  rail script re-sizes them to the measured axis. mode "time": bands are sized
+  by their year span and ticks sit at their year, so no script is needed for
+  layout. Ticks are marks, not links: the tab stops are the era links plus one
+  scrubber (role=slider), which the script reveals.
+  */
+-}}
+{{- $time := eq .mode "time" -}}
+{{- $key := lower .key -}}
+<aside
+  class="proto-rail"
+  data-variant="{{ .key }}"
+  data-variant-name="{{ .name }}"
+  aria-label="Timeline overview"
+  {{ if .hidden }}hidden{{ end }}>
+  {{ partial "prototype/timeline-rail-bar.html" (dict "toc" (printf "rail-toc-%s" $key)) }}
+  <nav
+    id="rail-toc-{{ $key }}"
+    popover="auto"
+    class="proto-rail__toc proto-spy rail-m"
+    data-mode="{{ .mode }}"
+    aria-label="Timeline minimap">
+    <p class="rail-m__caption">
+      <span class="type-eyebrow">You are here</span>
+      <span data-rail-current>Start of the timeline</span>
+    </p>
+    <div class="rail-m__strip" data-strip>
+      {{ range .rail.eras }}
+        {{ $era := . }}
+        {{ $n := len .items }}
+        {{ $bandClasses := slice "rail-m__band" }}
+        {{ if not .items }}
+          {{ $bandClasses = $bandClasses | append "is-empty" }}
+        {{ end }}
+        <div
+          class="{{ delimit $bandClasses " " }}"
+          data-band="{{ .id }}"
+          style="--weight: {{ cond $time .span (add $n 1) }}">
+          {{ $parts := split .label " " }}
+          <a
+            class="rail-m__era"
+            href="#{{ .id }}"
+            aria-label="{{ .label }}"
+            data-era-label="{{ .label }}"
+            >{{ index $parts 0 }}<span class="rail-m__suffix">
+              {{ index $parts 1 }}</span
+            ></a
+          >
+          {{ range $j, $it := .items }}
+            {{ $tickClasses := slice "rail-m__tick" }}
+            {{ if eq .by "tradition" }}
+              {{ $tickClasses = $tickClasses | append "is-placed" }}
+            {{ end }}
+            {{ if .standin }}
+              {{ $tickClasses = $tickClasses | append "is-standin" }}
+            {{ end }}
+            <span
+              class="{{ delimit $tickClasses " " }}"
+              aria-hidden="true"
+              data-tick="{{ .id }}"
+              data-index="{{ .index }}"
+              data-title="{{ .title }}"
+              data-era-label="{{ $era.label }}"
+              style="--pos: {{ cond $time .t (div (add (float $j) 0.5) $n) }}; --col: {{ .col }}"></span>
+          {{ end }}
+        </div>
+      {{ end }}
+      <div
+        class="rail-m__scrub"
+        role="slider"
+        tabindex="0"
+        aria-label="Timeline position"
+        aria-orientation="vertical"
+        aria-valuemin="1"
+        aria-valuemax="{{ .rail.count }}"
+        aria-valuenow="1"
+        hidden>
+        <span class="rail-m__cursor"></span>
+      </div>
+      <div class="rail-m__here" aria-hidden="true"></div>
+    </div>
+    <div
+      id="rail-tip-{{ $key }}"
+      popover="hint"
+      class="rail-m__tip"
+      aria-hidden="true"></div>
+  </nav>
+</aside>

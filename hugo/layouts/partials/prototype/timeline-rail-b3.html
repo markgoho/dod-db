@@ -1,0 +1,90 @@
+{{- /*
+  PROTOTYPE variant B3: era strip + fly-outs. Each era is one toggletip button
+  (interestfor + popovertarget show) whose fly-out lists that era's entries as
+  links. Targeting happens in the fly-out, never on ticks.
+  */
+-}}
+<aside
+  class="proto-rail"
+  data-variant="B3"
+  data-variant-name="Era fly-outs"
+  aria-label="Timeline overview"
+  hidden>
+  {{ partial "prototype/timeline-rail-bar.html" (dict "toc" "rail-toc-b3") }}
+  <nav
+    id="rail-toc-b3"
+    popover="auto"
+    class="proto-rail__toc proto-spy rail-f"
+    aria-label="Timeline eras">
+    <p class="rail-m__caption">
+      <span class="type-eyebrow">You are here</span>
+      <span data-rail-current>Start of the timeline</span>
+    </p>
+    <ol class="rail-f__eras" role="list">
+      {{ range .eras }}
+        {{ $n := len .items }}
+        {{ $eraClasses := slice "rail-f__era" }}
+        {{ if not .items }}
+          {{ $eraClasses = $eraClasses | append "is-empty" }}
+        {{ end }}
+        <li class="{{ delimit $eraClasses " " }}" data-band="{{ .id }}">
+          <button
+            type="button"
+            class="rail-f__btn"
+            interestfor="rail-fly-{{ .id }}"
+            popovertarget="rail-fly-{{ .id }}"
+            popovertargetaction="show"
+            aria-label="{{ .label }}, {{ $n }} {{ cond (eq $n 1) "entry" "entries" }}"
+            data-era-label="{{ .label }}">
+            <span class="rail-f__label">{{ .label }}</span>
+            <span class="rail-f__count">{{ $n }}</span>
+            <span class="rail-f__dots" aria-hidden="true">
+              {{ range .items }}
+                {{ $dotClasses := slice "rail-f__dot" }}
+                {{ if eq .by "tradition" }}
+                  {{ $dotClasses = $dotClasses | append "is-placed" }}
+                {{ end }}
+                {{ if .standin }}
+                  {{ $dotClasses = $dotClasses | append "is-standin" }}
+                {{ end }}
+                <span
+                  class="{{ delimit $dotClasses " " }}"
+                  data-dot="{{ .id }}"></span>
+              {{ end }}
+            </span>
+          </button>
+          <div id="rail-fly-{{ .id }}" popover="hint" class="rail-f__fly">
+            <a class="rail-f__era-link" href="#{{ .id }}">Go to {{ .label }}</a>
+            {{ with .items }}
+              <ol class="rail-f__entries" role="list">
+                {{ range . }}
+                  {{ $linkClasses := slice "rail-f__entry" }}
+                  {{ if eq .by "tradition" }}
+                    {{ $linkClasses = $linkClasses | append "is-placed" }}
+                  {{ end }}
+                  {{ if .standin }}
+                    {{ $linkClasses = $linkClasses | append "is-standin" }}
+                  {{ end }}
+                  <li>
+                    <a
+                      class="{{ delimit $linkClasses " " }}"
+                      href="#{{ .id }}"
+                      data-entry="{{ .id }}"
+                      >{{ if .standin }}
+                        <span class="rail-f__flag">Stand-in</span>
+                      {{ end }}{{ .title }}{{ if eq .by "tradition" }}
+                        <span class="rail-f__flag">placed by a tradition</span>
+                      {{ end }}</a
+                    >
+                  </li>
+                {{ end }}
+              </ol>
+            {{ else }}
+              <p class="rail-f__none">No entries in this era.</p>
+            {{ end }}
+          </div>
+        </li>
+      {{ end }}
+    </ol>
+  </nav>
+</aside>

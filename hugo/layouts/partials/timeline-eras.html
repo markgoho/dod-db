@@ -3,7 +3,7 @@
   timeline-placement.html (each with a placement year). The axis starts at the
   earliest placement year rounded down to 1000 and ends after the latest,
   rounded up to 500. Bands before 2000 BCE are 1000 years, after it 500.
-  Returns a slice of dict {label, items}, oldest first; items keep placement
+  Returns a slice of dict {label, from, to, items}, oldest first; items keep placement
   order. Empty when nothing is placed.
   */
 -}}
@@ -44,7 +44,7 @@
         {{- $items = $items | append . -}}
       {{- end -}}
     {{- end -}}
-    {{- $eras = $eras | append (dict "label" $label "items" $items) -}}
+    {{- $eras = $eras | append (dict "label" $label "from" $from "to" $to "items" $items) -}}
   {{- end -}}
 {{- end -}}
 {{- return $eras -}}

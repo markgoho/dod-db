@@ -1,12 +1,20 @@
 /*
   PROTOTYPE (timeline rail), throwaway: lives only on branch
-  prototype/timeline-rail. Three left-side overview rails for the vertical
-  Timeline, switched by ?variant= (A Era + entry TOC, B Minimap, C Era
-  progress). One axis is rendered; only the rail swaps. Below 64rem every rail
-  collapses to a sticky bar that opens the rail as a popover.
+  prototype/timeline-rail. Three iterations of the minimap rail, switched by
+  ?variant= (B1 page minimap, B2 time minimap, B3 era fly-outs). The axis keeps
+  trunk's centred position and width; the rail lives in the viewport's left
+  gutter and only shows where that gutter can hold it. Below that width every
+  rail collapses to a sticky "You are in" bar that opens it as a popover.
+
+  Rail threshold, 108rem: the axis column is var(--content-max-width) (90rem)
+  less main's padding (87rem at this size), so the left gutter is
+  (100dvw - 87rem) / 2. The rail needs at least 8rem (one-line era labels) plus
+  a --space-xs gap either side: 8rem + 2 x 1.125rem = 10.25rem of gutter
+  -> 107.5rem, rounded up for a classic scrollbar.
+  Media queries cannot read custom properties, hence the literal.
 */
 
-/* ---------- Layout: rail beside the axis ---------- */
+/* ---------- Layout: the axis keeps trunk's geometry ---------- */
 
 .timeline-page > .proto-rail-layout {
   max-width: none;
@@ -14,19 +22,22 @@
 
 .proto-rail-layout {
   display: grid;
-  gap: var(--space-s) var(--space-l);
+  gap: var(--space-s);
   grid-template-columns: minmax(0, 1fr);
 }
 
-.proto-rail[hidden] {
+.proto-rail[hidden],
+.rail-m__scrub[hidden] {
   display: none;
 }
 
 /* The rail is the sticky element and the scroll-state container. */
 .proto-rail {
-  align-self: start;
   container: proto-rail / scroll-state;
+  inline-size: 100%;
   inset-block-start: 0;
+  justify-self: center;
+  max-width: var(--content-max-width-measure);
   position: sticky;
   z-index: var(--z-index-sticky);
 }
@@ -48,7 +59,6 @@
 }
 
 .proto-rail__toc ol {
-  display: grid;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -114,7 +124,7 @@
 }
 
 /* The open popover drops under the bar, inside the gutters. */
-.proto-rail__toc:popover-open {
+.proto-rail__toc:is(:popover-open, .\:popover-open) {
   background: var(--tan-000);
   border: var(--border-width-md) solid var(--tan-900);
   border-radius: var(--border-radius-sm);
@@ -131,29 +141,37 @@
 }
 
 /* WCAG 2.4.11: the sticky bar must not hide a focused or jumped-to target. */
-@media (width < 64rem) {
+@media (width < 108rem) {
   html:has(.proto-rail-layout) {
     scroll-padding-block-start: calc(var(--space-xl) + var(--space-s));
   }
+
+  .rail-m__strip {
+    block-size: 60dvh;
+  }
 }
 
-/* ---------- Wide: the rail is a column; the popover is always shown inline ---------- */
+/* ---------- Wide: the rail sits in the left viewport gutter ---------- */
 
-@media (width >= 64rem) {
-  .proto-rail-layout {
-    align-items: start;
-    grid-template-columns: var(--content-max-width-sidebar) minmax(0, 1fr);
+@media (width >= 108rem) {
+  /* Rail and axis share one grid cell, so the axis is laid out exactly as on trunk. */
+  .proto-rail-layout > * {
+    grid-area: 1 / 1;
   }
 
   .proto-rail {
-    grid-column: 1;
-    grid-row: 1;
-    inset-block-start: var(--space-s);
-  }
+    --rail-gap: var(--space-xs);
+    /* 100% is the axis column; (100dvw - 100%) / 2 is the gutter left of it. */
+    --rail-w: clamp(8rem, (100dvw - 100%) / 2 - 2 * var(--rail-gap), 11rem);
 
-  .proto-rail-layout > .timeline-spine {
-    grid-column: 2;
-    grid-row: 1;
+    align-self: start;
+    /* Fits the viewport: the site header is not sticky, so only the top and bottom inset come off. */
+    block-size: calc(100dvh - 2 * var(--space-s));
+    inline-size: var(--rail-w);
+    inset-block-start: var(--space-s);
+    justify-self: start;
+    margin-inline-start: calc(-1 * (var(--rail-w) + var(--rail-gap)));
+    max-width: none;
   }
 
   .proto-rail__bar {
@@ -162,193 +180,204 @@
 
   .proto-rail__toc[popover] {
     background: none;
-    block-size: auto;
+    block-size: 100%;
     border: 0;
     color: inherit;
-    display: block;
+    display: grid;
+    gap: var(--space-3xs);
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
     inline-size: auto;
     inset: auto;
     margin: 0;
-    max-block-size: calc(100dvh - 2 * var(--space-s));
-    overflow-y: auto;
+    overflow: visible;
     padding: 0;
     position: static;
   }
 }
 
-/* Placed-by-tradition marker, shared by A and C entry links: the hollow dashed node. */
-.rail-a__entry.is-placed::before,
-.rail-c__entry.is-placed::before {
-  block-size: var(--space-2xs);
-  border: var(--border-width-sm) dashed var(--tan-900);
-  border-radius: 50%;
-  content: "";
-  display: inline-block;
-  inline-size: var(--space-2xs);
-  margin-inline-end: var(--space-4xs);
-  vertical-align: middle;
-}
+/* ---------- Shared caption ---------- */
 
-/* ---------- A: era + entry TOC ---------- */
-
-.rail-a__head {
-  color: var(--color-text-muted);
-  font-size: var(--step--2);
-  margin-block-end: var(--space-3xs);
-}
-
-.rail-a__eras {
-  gap: var(--space-4xs);
-}
-
-.rail-a__era-link {
-  border-radius: var(--border-radius-sm);
-  display: flex;
-  font-weight: var(--font-weight-bold);
-  gap: var(--space-2xs);
-  justify-content: space-between;
-  padding: var(--space-4xs) var(--space-3xs);
-}
-
-.rail-a__era.is-empty > .rail-a__era-link {
-  color: var(--color-text-muted);
-  font-weight: var(--font-weight-regular);
-}
-
-.rail-a__count {
-  color: var(--color-text-muted);
-  font-variant-numeric: tabular-nums;
-}
-
-.rail-a__entries {
-  border-inline-start: var(--border-width-sm) solid var(--tan-300);
-  margin: var(--space-4xs) 0 var(--space-3xs) var(--space-3xs);
-}
-
-.rail-a__entry {
-  border-inline-start: var(--border-width-md) solid transparent;
-  display: block;
-  font-size: var(--step--2);
-  line-height: var(--line-height-heading);
-  margin-inline-start: calc(-1 * var(--border-width-sm));
-  padding: var(--space-4xs) var(--space-3xs);
-}
-
-.rail-a__entry.is-standin {
-  color: var(--color-text-muted);
-}
-
-.rail-a__era:has(a:is(:target-current, .target-current)) > .rail-a__era-link {
-  background: var(--tan-900);
-  color: var(--color-text-inverse);
-}
-
-.rail-a__era:has(a:is(:target-current, .target-current))
-  > .rail-a__era-link
-  .rail-a__count {
-  color: inherit;
-}
-
-.rail-a__entry:is(:target-current, .target-current) {
-  background: var(--tan-200);
-  border-inline-start-color: var(--color-action);
-  color: var(--color-text-main);
-  font-weight: var(--font-weight-bold);
-}
-
-/* ---------- B: minimap ---------- */
-
-.timeline-axis {
-  view-timeline: --tl-axis;
-}
-
-.rail-b {
+.rail-m__caption {
   display: grid;
-  gap: var(--space-3xs);
-}
-
-.rail-b__current {
   font-size: var(--step--2);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
   margin: 0;
-  min-block-size: calc(2 * var(--line-height-heading) * 1em);
+  min-block-size: calc(3 * var(--line-height-heading) * 1em);
 }
 
-.rail-b__strip {
+.rail-m__caption .type-eyebrow {
+  color: var(--color-text-muted);
+  font-size: inherit;
+}
+
+/* ---------- B1 / B2: minimap strip ---------- */
+
+.rail-m {
+  --track: var(--space-s);
+}
+
+.rail-m__strip {
   background: var(--tan-000);
-  block-size: calc(100dvh - 2 * var(--space-s) - var(--space-l));
   border: var(--border-width-sm) solid var(--tan-900);
-  cursor: pointer;
   display: flex;
   flex-direction: column;
-  overflow: clip;
+  min-block-size: 0;
   position: relative;
 }
 
-.rail-b__band {
-  border-block-end: var(--border-width-sm) dashed var(--tan-300);
+.rail-m__band {
+  border-block-start: var(--border-width-sm) dashed var(--tan-300);
   flex: var(--weight) 1 0;
-  min-block-size: var(--space-3xs);
-  overflow: clip;
+  min-block-size: 0;
   position: relative;
 }
 
-.rail-b__band-label {
+.rail-m__band:first-child {
+  border-block-start: 0;
+}
+
+.rail-m__era {
   color: var(--color-text-muted);
+  display: block;
   font-size: var(--step--2);
-  inset-block-start: 0;
-  inset-inline-start: var(--space-4xs);
+  inline-size: calc(100% - var(--track));
   line-height: var(--line-height-heading);
-  position: absolute;
+  overflow: hidden;
+  padding: var(--space-4xs);
+  position: relative;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  z-index: 1;
 }
 
-.rail-b__band:has(a:is(:target-current, .target-current)) {
-  background: var(--tan-200);
+.proto-rail__toc .rail-m__era {
+  color: var(--color-text-muted);
 }
 
-.rail-b__band:has(a:is(:target-current, .target-current))
-  > .rail-b__band-label {
+/*
+  Narrow rail: drop the BCE/CE suffix so era ranges stay on one line (the
+  link's name keeps it). A media query, not a container query: the spacing
+  tokens are cqi-based and would shrink inside a container this narrow.
+*/
+@media (108rem <= width < 112rem) {
+  .rail-m__suffix {
+    display: none;
+  }
+}
+
+.rail-m__band.is-empty > .rail-m__era {
+  font-style: italic;
+}
+
+.proto-rail__toc .rail-m__era:is(:target-current, .target-current) {
   color: var(--color-text-main);
   font-weight: var(--font-weight-bold);
 }
 
-.rail-b__tick {
+.rail-m__band:has(> .rail-m__era:is(:target-current, .target-current)) {
+  background: var(--tan-100);
+}
+
+/* Ticks are marks, not targets. Same-year items step sideways (--col) so density reads as clustering. */
+.rail-m__tick {
   background: var(--tan-900);
   block-size: var(--border-width-sm);
   inset-block-start: calc(var(--pos) * 100%);
-  inset-inline: 60% var(--space-3xs);
-  position: absolute;
-}
-
-.rail-b__tick.is-placed {
-  background: none;
-  border-block-start: var(--border-width-sm) dashed var(--tan-500);
-  inset-inline-start: 75%;
-}
-
-.rail-b__tick:is(:target-current, .target-current) {
-  background: var(--color-action);
-  block-size: var(--border-width-md);
-  inset-inline-start: 40%;
-}
-
-/* "You are here": its height is the viewport's share of the axis (--frac, set by the rail script). */
-.rail-b__viewport {
-  background: color-mix(in srgb, var(--color-action) 12%, transparent);
-  block-size: calc(var(--frac, 0.05) * 100%);
-  border-block: var(--border-width-sm) solid var(--color-action);
-  inset-block-start: 0;
-  inset-inline: 0;
+  inset-inline: calc(
+      100% - var(--track) + var(--space-3xs) + var(--col) * var(--space-4xs)
+    )
+    var(--space-4xs);
   pointer-events: none;
   position: absolute;
-  translate: 0 -100%;
+  translate: 0 -50%;
+}
+
+.rail-m__tick.is-standin {
+  background: var(--tan-500);
+}
+
+/* Placed by a tradition's date: hollow dashed, as on the axis node. */
+.rail-m__tick.is-placed {
+  background: none;
+  block-size: var(--space-3xs);
+  border: var(--border-width-sm) dashed var(--tan-900);
+  border-radius: var(--border-radius-sm);
+}
+
+.rail-m__tick.is-placed.is-standin {
+  border-color: var(--tan-500);
+}
+
+.rail-m__tick.is-hover {
+  outline: var(--border-width-sm) solid var(--color-action);
+}
+
+.rail-m__tick.is-current {
+  background: var(--color-action);
+  inset-inline-start: calc(100% - var(--track) - var(--space-3xs));
+}
+
+.rail-m__tick.is-placed.is-current {
+  background: none;
+  border-color: var(--color-action);
+}
+
+/* One tab stop for entry-level targeting: a vertical slider over the tick track. */
+.rail-m__scrub {
+  cursor: crosshair;
+  inline-size: var(--track);
+  inset-block: 0;
+  inset-inline-end: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.rail-m__scrub:focus-visible {
+  outline: var(--border-width-sm) solid var(--color-action);
+  outline-offset: var(--border-width-sm);
+}
+
+.rail-m__cursor {
+  inset-block-start: var(--cursor-y, 0);
+  inset-inline: 0;
+  position: absolute;
+}
+
+.rail-m__scrub:is(:hover, :focus-visible) > .rail-m__cursor {
+  border-block-start: var(--border-width-sm) solid var(--color-action);
+}
+
+[data-mode="page"] .rail-m__cursor {
+  anchor-name: --rail-cursor-page;
+}
+
+[data-mode="time"] .rail-m__cursor {
+  anchor-name: --rail-cursor-time;
+}
+
+/* "You are here": a bracket (outline only) over the tick track, never a filled box. */
+.rail-m__here {
+  block-size: max(var(--space-3xs), calc(var(--frac, 0.05) * 100%));
+  border: var(--border-width-sm) solid var(--color-action);
+  border-inline-end: 0;
+  inline-size: calc(var(--track) + var(--space-3xs));
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* B1: page-proportional, moved by the axis's view timeline (scroll-progress-indicator). */
+[data-mode="page"] .rail-m__here {
+  translate: 0 var(--here-y, -100%);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   @supports (animation-timeline: view()) {
-    @keyframes proto-rail-viewport {
+    @keyframes proto-rail-here {
       from {
         translate: 0 -100%;
       }
@@ -358,111 +387,286 @@
       }
     }
 
-    .rail-b__viewport {
-      animation: proto-rail-viewport linear both;
+    [data-mode="page"] .rail-m__here {
+      animation: proto-rail-here linear both;
       animation-timeline: --tl-axis;
     }
   }
 }
 
-@media (width < 64rem) {
-  .rail-b__strip {
-    block-size: 60dvh;
-  }
+.timeline-axis {
+  view-timeline: --tl-axis;
 }
 
-/* ---------- C: era progress ---------- */
-
-.rail-c__eras {
-  gap: var(--space-4xs);
+/* B2: time-proportional; the script sets the bracket from the first to the last entry in view. */
+[data-mode="time"] .rail-m__here {
+  block-size: max(var(--space-3xs), calc(var(--size, 0) * 100%));
+  inset-block-start: calc(var(--top, 0) * 100%);
 }
 
-.rail-c__era-link {
-  border: var(--border-width-sm) solid transparent;
+[data-mode="time"] .rail-m__here:not(.is-set) {
+  display: none;
+}
+
+/* Readout: one hint popover, tethered to the scrub cursor. */
+.rail-m__tip {
+  background: var(--tan-900);
+  border: 0;
   border-radius: var(--border-radius-sm);
-  display: grid;
-  gap: var(--space-4xs) var(--space-2xs);
-  grid-template-columns: minmax(0, 1fr) auto;
+  color: var(--color-text-inverse);
+  font-size: var(--step--1);
+  line-height: var(--line-height-heading);
+  max-inline-size: var(--content-max-width-sidebar);
   padding: var(--space-3xs) var(--space-2xs);
 }
 
-.rail-c__era.is-empty .rail-c__label,
-.rail-c__count {
-  color: var(--color-text-muted);
-}
-
-.rail-c__count {
-  font-variant-numeric: tabular-nums;
-}
-
-.rail-c__track {
-  background: var(--tan-200);
-  block-size: var(--space-4xs);
-  border-radius: var(--border-radius-sm);
-  grid-column: 1 / -1;
-  overflow: clip;
-}
-
-.rail-c__fill {
-  background: var(--tan-900);
-  block-size: 100%;
+.rail-m__tip small {
   display: block;
-  transform: scaleX(var(--p, 0));
-  transform-origin: 0 50%;
+  font-size: var(--step--2);
+  opacity: 0.8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: view()) {
-    @keyframes proto-rail-fill {
-      from {
-        transform: scaleX(0);
-      }
+[data-mode="page"] .rail-m__tip {
+  position-anchor: --rail-cursor-page;
+}
 
-      to {
-        transform: scaleX(1);
-      }
-    }
+[data-mode="time"] .rail-m__tip {
+  position-anchor: --rail-cursor-time;
+}
 
-    .rail-c__fill {
-      animation: proto-rail-fill linear both;
-      animation-timeline: var(--tl);
-      animation-range: exit-crossing 0% exit-crossing 100%;
-    }
+@supports (position-area: inline-end) {
+  .rail-m__tip {
+    inset: auto;
+    margin: 0;
+    margin-inline-start: var(--space-2xs);
+    position-area: center inline-end;
   }
 }
 
-.rail-c__era:has(a:is(:target-current, .target-current)) > .rail-c__era-link {
-  background: var(--tan-000);
-  border-color: var(--tan-900);
-  font-weight: var(--font-weight-bold);
+@supports not (position-area: inline-end) {
+  .rail-m__tip {
+    inset: var(--tip-y, 50%) auto auto var(--tip-x, 50%);
+    margin: 0;
+    translate: 0 -50%;
+  }
 }
 
-.rail-c__era:has(a:is(:target-current, .target-current)) .rail-c__fill {
-  background: var(--color-action);
+/* ---------- B3: era strip with fly-outs ---------- */
+
+.rail-f__eras {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4xs);
+  min-block-size: 0;
 }
 
-.proto-rail__toc .rail-c__entries {
-  display: none;
-  margin: var(--space-4xs) 0 var(--space-2xs) var(--space-2xs);
-}
-
-.rail-c__era:has(a:is(:target-current, .target-current)) .rail-c__entries {
+/* Natural height: the dots carry density, so the strip stops where the eras end. */
+.rail-f__era {
   display: grid;
+  flex: 0 1 auto;
+  min-block-size: 0;
 }
 
-.rail-c__entry {
-  border-inline-start: var(--border-width-md) solid var(--tan-300);
-  color: var(--color-text-muted);
-  display: block;
+.rail-f__btn {
+  align-content: start;
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--tan-300);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text-main);
+  cursor: pointer;
+  display: grid;
+  font: inherit;
   font-size: var(--step--2);
+  gap: var(--space-4xs) var(--space-3xs);
+  grid-template-columns: minmax(0, 1fr) auto;
+  line-height: var(--line-height-heading);
+  padding: var(--space-4xs) var(--space-3xs);
+  position: relative;
+  text-align: start;
+
+  --interest-delay-start: 0.2s;
+  --interest-delay-end: 0.3s;
+
+  interest-delay-start: var(--interest-delay-start);
+  interest-delay-end: var(--interest-delay-end);
+}
+
+/* Moving between eras while one fly-out is open opens the next at once. */
+.rail-f__eras:has(.rail-f__btn:is(:interest-source, .interest-source))
+  .rail-f__btn {
+  --interest-delay-start: 0s;
+}
+
+.rail-f__btn:is(:hover, :focus-visible, :interest-source, .interest-source) {
+  border-color: var(--tan-900);
+}
+
+.rail-f__era.is-empty .rail-f__btn {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.rail-f__count {
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.rail-f__dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4xs);
+  grid-column: 1 / -1;
+}
+
+.rail-f__dot {
+  background: var(--tan-900);
+  block-size: var(--space-2xs);
+  border-radius: 50%;
+  inline-size: var(--space-2xs);
+}
+
+.rail-f__dot.is-standin {
+  background: var(--tan-500);
+}
+
+.rail-f__dot.is-placed {
+  background: none;
+  border: var(--border-width-sm) dashed var(--tan-900);
+}
+
+.rail-f__dot.is-placed.is-standin {
+  border-color: var(--tan-500);
+}
+
+/* "You are here": the current era is outlined and the current entry's dot is ringed (outlines, never fills). */
+.rail-f__era.is-current .rail-f__btn {
+  outline: var(--border-width-sm) solid var(--color-action);
+  outline-offset: var(--border-width-sm);
+}
+
+.rail-f__dot.is-current {
+  outline: var(--border-width-sm) solid var(--color-action);
+  outline-offset: var(--border-width-sm);
+}
+
+.rail-f__fly {
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 var(--space-3xs) var(--space-s)
+    color-mix(in srgb, var(--tan-900) 30%, transparent);
+  color: var(--color-text-main);
+  font-size: var(--step--2);
+  inline-size: var(--content-max-width-sidebar);
+  max-block-size: calc(100dvh - 2 * var(--space-s));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--space-2xs);
+}
+
+@supports (position-area: inline-end) {
+  .rail-f__fly {
+    inset: auto;
+    margin: 0;
+    margin-inline-start: var(--space-3xs);
+    max-block-size: 100%;
+    position-area: inline-end span-block-end;
+    position-try-fallbacks: flip-block, flip-inline;
+    position-try-order: most-block-size;
+  }
+}
+
+@supports not (position-area: inline-end) {
+  .rail-f__fly {
+    inset: var(--space-s) auto auto var(--space-s);
+    margin: 0;
+  }
+}
+
+.rail-f__fly a {
+  color: var(--color-text-main);
+  display: block;
+  text-decoration: none;
+}
+
+.rail-f__era-link {
+  border-block-end: var(--border-width-sm) solid var(--tan-300);
+  font-weight: var(--font-weight-bold);
+  margin-block-end: var(--space-3xs);
+  padding-block: var(--space-4xs) var(--space-3xs);
+}
+
+.rail-f__entries {
+  display: grid;
+  gap: var(--space-4xs);
+}
+
+.rail-f__entry {
+  border-inline-start: var(--border-width-md) solid var(--tan-300);
   line-height: var(--line-height-heading);
   padding: var(--space-4xs) var(--space-2xs);
 }
 
-.rail-c__entry:is(:target-current, .target-current) {
+.rail-f__entry.is-standin {
+  border-inline-start-style: dotted;
+  color: var(--color-text-muted);
+}
+
+.rail-f__entry.is-placed {
+  border-inline-start-style: dashed;
+}
+
+.rail-f__fly a:is(:hover, :focus-visible) {
+  background: var(--tan-100);
+}
+
+.rail-f__entry[aria-current="true"] {
   border-inline-start-color: var(--color-action);
-  color: var(--color-text-main);
   font-weight: var(--font-weight-bold);
+}
+
+.rail-f__flag {
+  color: var(--color-text-muted);
+  display: block;
+  font-size: var(--step--2);
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+}
+
+.rail-f__none {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rail-f__fly,
+  .rail-m__tip {
+    opacity: 0;
+    transition:
+      opacity 0.15s,
+      display 0.15s,
+      overlay 0.15s;
+    transition-behavior: allow-discrete;
+  }
+
+  .rail-f__fly:is(:popover-open, .\:popover-open),
+  .rail-m__tip:is(:popover-open, .\:popover-open) {
+    opacity: 1;
+  }
+
+  @starting-style {
+    .rail-f__fly:is(:popover-open, .\:popover-open),
+    .rail-m__tip:is(:popover-open, .\:popover-open) {
+      opacity: 0;
+    }
+  }
+}
+
+/* Popover polyfill styling hook, per the guide (combine with :is()). */
+@supports not selector(:popover-open) {
+  [popover]:not(.\:popover-open) {
+    display: none;
+  }
 }
 
 /* ---------- Stand-ins and switcher ---------- */

@@ -28,21 +28,34 @@
   {{ $axisItems = sort $axisItems "key" }}
   {{ $eras := partial "timeline-eras.html" $axisItems }}
 
-  {{/* PROTOTYPE: one rail model for all three rail variants. */}}
+  {{/* PROTOTYPE: one rail model for the three minimap iterations (B1-B3). */}}
   {{ $railEras := slice }}
   {{ $scope := slice "--tl-axis" }}
+  {{ $n := 0 }}
   {{ range $i, $era := $eras }}
     {{ $items := slice }}
+    {{ $prevYear := "" }}
+    {{ $col := 0 }}
     {{ range .items }}
-      {{ if .standin }}
-        {{ $items = $items | append (dict "id" .standin.id "title" (strings.TrimPrefix "STAND-IN: " .standin.title) "by" .by "standin" true) }}
+      {{ $year := int .year }}
+      {{ if eq (string $year) $prevYear }}
+        {{ $col = add $col 1 }}
       {{ else }}
-        {{ $items = $items | append (dict "id" .page.File.ContentBaseName "title" .page.Title "by" .by "standin" false) }}
+        {{ $col = 0 }}
       {{ end }}
+      {{ $prevYear = string $year }}
+      {{ $base := dict "year" $year "by" .by "index" $n "col" $col "t" (div (float (sub $year $era.from)) (sub $era.to $era.from)) }}
+      {{ if .standin }}
+        {{ $items = $items | append (merge $base (dict "id" .standin.id "title" (strings.TrimPrefix "STAND-IN: " .standin.title) "standin" true)) }}
+      {{ else }}
+        {{ $items = $items | append (merge $base (dict "id" .page.File.ContentBaseName "title" .page.Title "standin" false)) }}
+      {{ end }}
+      {{ $n = add $n 1 }}
     {{ end }}
-    {{ $railEras = $railEras | append (dict "id" (printf "era-%d" $i) "tl" (printf "--tl-era-%d" $i) "label" .label "items" $items) }}
+    {{ $railEras = $railEras | append (dict "id" (printf "era-%d" $i) "tl" (printf "--tl-era-%d" $i) "label" .label "from" .from "to" .to "span" (sub .to .from) "items" $items) }}
     {{ $scope = $scope | append (printf "--tl-era-%d" $i) }}
   {{ end }}
+  {{ $rail := dict "eras" $railEras "count" $n }}
 
   {{ $sourceIds := partial "timeline-source-ids.html" $ordered }}
   {{ $shortCites := partial "source-short-cites.html" $sourceIds }}
@@ -81,13 +94,13 @@
     </div>
 
     {{ with $eras }}
-      {{/* PROTOTYPE (timeline rail): three overview rails beside one shared axis, switched by ?variant= (A shows without JS). */}}
+      {{/* PROTOTYPE (timeline rail): three minimap iterations in the left viewport gutter, switched by ?variant= (B1 shows without JS). The axis keeps trunk's position and width. */}}
       <div
         class="proto-rail-layout"
         style="timeline-scope: {{ delimit $scope ", " | safeCSS }}">
-        {{ partial "prototype/timeline-rail-a.html" $railEras }}
-        {{ partial "prototype/timeline-rail-b.html" $railEras }}
-        {{ partial "prototype/timeline-rail-c.html" $railEras }}
+        {{ partial "prototype/timeline-rail-b1.html" $rail }}
+        {{ partial "prototype/timeline-rail-b2.html" $rail }}
+        {{ partial "prototype/timeline-rail-b3.html" $rail }}
         <section class="timeline-spine" aria-label="Timeline">
           <ul class="timeline-legend" role="list">
             <li class="timeline-legend__item">

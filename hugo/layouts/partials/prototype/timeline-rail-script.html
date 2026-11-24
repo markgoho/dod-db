@@ -1,172 +1,517 @@
 {{- /*
-  PROTOTYPE (timeline rail): scrollspy + minimap wiring for the three rails.
-  Native path: scroll-target-group + :target-current style the links, and
-  aria-current is synced from :target-current on scrollend. Fallback path
-  (no scroll-target-group, or ?spy=fallback): an IntersectionObserver sets
-  .target-current and aria-current. Both paths update the narrow-screen bar.
+  PROTOTYPE (timeline rail): wiring for the three minimap iterations.
+  - Era links: native scroll-target-group + :target-current (eras are tall
+  enough for it), aria-current synced on scrollend; ?spy=fallback or no
+  support -> IntersectionObserver sets .target-current.
+  - Entry level (caption, bar, slider value, B3 fly-out aria-current): one
+  geometric rule, "the last entry whose top has crossed the jump line", so a
+  jumped-to entry is current, not the one after it.
+  - B1 sizes bands/ticks to the measured axis; B2 is laid out by Hugo from
+  years and only its bracket needs the script.
+  - B3 fly-outs: interestfor + popover="hint" toggletips, ARIA wired per the
+  interest-triggered-tooltips guide; polyfills load only when missing.
   */
 -}}
 <script type="module">
   const root = document.documentElement;
-  const forced = new URL(location.href).searchParams.get("spy") === "fallback";
+  const params = new URL(location.href).searchParams;
+  const forced = params.get("spy") === "fallback";
   if (forced) root.classList.add("proto-spy-fallback");
   const native = !forced && CSS.supports("scroll-target-group: auto");
   const sda = CSS.supports("animation-timeline: view()");
   const calm = matchMedia("(prefers-reduced-motion: reduce)");
   root.dataset.spy = native ? "native" : "fallback";
 
-  const navs = [...document.querySelectorAll(".proto-spy")];
-  const visibleNav = () => navs.find(n => !n.closest("[data-variant]").hidden);
-  const idOf = a => decodeURIComponent(a.hash.slice(1));
-
-  const ids = new Set(
-    navs.flatMap(n => [...n.querySelectorAll("a[href^='#']")].map(idOf)),
-  );
-  const targets = [...ids]
-    .map(id => document.getElementById(id))
-    .filter(Boolean)
-    .sort((a, b) =>
-      a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1,
+  // ---------- Interest invoker ARIA (runs before any polyfill) ----------
+  const norm = s => (s ?? "").replace(/\s+/g, " ").trim();
+  const accName = el => {
+    const by = el.getAttribute("aria-labelledby");
+    if (by)
+      return by
+        .split(/\s+/)
+        .map(id => document.getElementById(id)?.textContent ?? "")
+        .join(" ");
+    return (
+      el.getAttribute("aria-label") ||
+      norm(el.textContent) ||
+      el.getAttribute("title") ||
+      ""
     );
-
-  // Fallback "current": the last target (document order) touching the top 30% of the viewport.
-  const inBand = new Set();
-  let currentId = null;
-
-  const keepInView = (nav, link) => {
-    if (nav.scrollHeight <= nav.clientHeight) return;
-    const r = link.getBoundingClientRect();
-    const n = nav.getBoundingClientRect();
-    if (r.top < n.top || r.bottom > n.bottom) {
-      nav.scrollTop += r.top - n.top - n.height / 2 + r.height / 2;
-    }
   };
-
-  const sync = () => {
-    const nav = visibleNav();
-    if (!nav) return;
-    if (!native) {
-      for (const a of document.querySelectorAll(".proto-spy a")) {
-        a.classList.toggle("target-current", idOf(a) === currentId);
+  const owned = new Set();
+  function wireHints(scope = document) {
+    for (const t of scope.querySelectorAll("[interestfor]")) {
+      const hint = document.getElementById(t.getAttribute("interestfor"));
+      if (!hint || hint.getAttribute("popover") !== "hint") continue;
+      const name = norm(accName(t));
+      if (norm(hint.textContent) === name) continue;
+      if (!hint.hasAttribute("role")) hint.setAttribute("role", "tooltip");
+      const opens = [
+        t.getAttribute("popovertarget"),
+        t.getAttribute("commandfor"),
+      ].includes(hint.id);
+      if (!name) {
+        if (!t.hasAttribute("aria-labelledby"))
+          t.setAttribute("aria-labelledby", hint.id);
+      } else if (opens) {
+        if (!t.hasAttribute("aria-expanded")) {
+          t.setAttribute(
+            "aria-expanded",
+            String(hint.matches(":popover-open")),
+          );
+          owned.add(t);
+        }
+      } else if (!t.hasAttribute("aria-describedby")) {
+        t.setAttribute("aria-describedby", hint.id);
       }
     }
-    let cur = native ? nav.querySelector("a:target-current") : null;
-    if (!cur && currentId)
-      cur = nav.querySelector(`a[href="#${CSS.escape(currentId)}"]`);
-    for (const a of nav.querySelectorAll("a")) {
-      a.setAttribute("aria-current", a === cur ? "true" : "false");
-    }
-    const era = cur?.dataset.eraLabel ?? "Start of the timeline";
-    for (const el of document.querySelectorAll("[data-rail-now]"))
-      el.textContent = era;
-    for (const el of document.querySelectorAll("[data-rail-current]")) {
-      el.textContent =
-        cur && !cur.matches(".rail-b__band-label")
-          ? `${era} · ${cur.getAttribute("aria-label")}`
-          : era;
-    }
-    if (cur) keepInView(nav, cur);
-  };
+  }
+  wireHints();
+  window.protoWireHints = wireHints;
+  // toggle does not bubble: capture.
+  document.addEventListener(
+    "toggle",
+    ({ target, newState }) => {
+      for (const t of owned)
+        if (t.getAttribute("interestfor") === target.id)
+          t.setAttribute("aria-expanded", String(newState === "open"));
+    },
+    true,
+  );
 
+  // popover="hint" unsupported -> it is "manual"; toggletips switch to auto as they open.
+  const probe = document.createElement("div");
+  probe.popover = "hint";
+  if (probe.popover !== "hint") {
+    document.addEventListener(
+      "beforetoggle",
+      ({ target, newState }) => {
+        const toggletip =
+          target.getAttribute("popover") === "hint" &&
+          document.querySelector(`[popovertarget="${CSS.escape(target.id)}"]`);
+        if (newState === "open" && toggletip) target.popover = "auto";
+      },
+      true,
+    );
+  }
+  // Conditional polyfills (prototype: CDN, pinned).
+  if (!Object.hasOwn(HTMLElement.prototype, "popover"))
+    import("https://unpkg.com/@oddbird/popover-polyfill@0.7.3/dist/popover.min.js");
+  if (!("interestForElement" in HTMLButtonElement.prototype))
+    import("https://unpkg.com/interestfor@1.0.14");
+
+  // ---------- Model ----------
+  const axis = document.querySelector(".timeline-axis");
+  const entries = [...axis.querySelectorAll(".timeline-entry")];
+  const eraEls = [...axis.querySelectorAll(":scope > .timeline-era")];
+  const eraOf = entries.map(e => eraEls.indexOf(e.closest(".timeline-era")));
+  const eraLabel = i =>
+    eraEls[i]?.querySelector(".timeline-era__label").textContent.trim();
+  const titleOf = e =>
+    norm(e.querySelector(".timeline-entry__title")?.textContent).replace(
+      /^STAND-IN:\s*/,
+      "",
+    );
+  const flagsOf = e =>
+    [
+      e.classList.contains("proto-standin") && "Stand-in",
+      e.classList.contains("timeline-entry--by-tradition") &&
+        "placed by a tradition’s date",
+    ].filter(Boolean);
+
+  const rails = [...document.querySelectorAll(".proto-rail")];
+  const visibleRail = () => rails.find(r => !r.hidden);
+  const navs = [...document.querySelectorAll(".proto-spy")];
+
+  // Jump line: where a fragment jump lands an entry's top.
+  const jumpLine = () =>
+    (parseFloat(getComputedStyle(root).scrollPaddingBlockStart) || 0) +
+    (parseFloat(getComputedStyle(entries[0]).scrollMarginBlockStart) || 0) +
+    8;
+
+  function currentPos() {
+    const line = jumpLine();
+    let i = -1;
+    for (let k = 0; k < entries.length; k++) {
+      if (entries[k].getBoundingClientRect().top <= line) i = k;
+      else break;
+    }
+    let era = -1;
+    for (let k = 0; k < eraEls.length; k++) {
+      if (eraEls[k].getBoundingClientRect().top <= line) era = k;
+    }
+    // An era heading crossed after the last entry: we are at the start of that era.
+    if (era > -1 && (i < 0 || eraOf[i] < era)) return { entry: -1, era };
+    return { entry: i, era: i > -1 ? eraOf[i] : era };
+  }
+
+  function visibleRange() {
+    let first = -1;
+    let last = -1;
+    entries.forEach((e, k) => {
+      const r = e.getBoundingClientRect();
+      if (r.bottom > 0 && r.top < innerHeight) {
+        if (first < 0) first = k;
+        last = k;
+      }
+    });
+    return { first, last };
+  }
+
+  // ---------- Era scrollspy (native :target-current, IO fallback) ----------
+  const eraTargets = eraEls;
+  const inBand = new Set();
+  let fallbackEra = null;
   const io = new IntersectionObserver(
-    entries => {
-      for (const e of entries)
+    list => {
+      for (const e of list)
         e.isIntersecting ? inBand.add(e.target) : inBand.delete(e.target);
-      const last = targets.filter(t => inBand.has(t)).pop();
-      if (last) currentId = last.id;
+      const last = eraTargets.filter(t => inBand.has(t)).pop();
+      if (last) fallbackEra = last.id;
       requestAnimationFrame(sync);
     },
     { rootMargin: "0px 0px -70% 0px", threshold: 0 },
   );
-  for (const t of targets) io.observe(t);
+  if (!native) for (const t of eraTargets) io.observe(t);
 
-  document.addEventListener("scrollend", () => requestAnimationFrame(sync));
+  function syncEraLinks(nav, geoEra) {
+    const links = [...nav.querySelectorAll("a[href^='#era-']")];
+    if (!native)
+      for (const a of links)
+        a.classList.toggle("target-current", a.hash.slice(1) === fallbackEra);
+    // A closed narrow-screen popover is not rendered, so :target-current matches nothing: use the geometric era.
+    const any = links.some(a =>
+      native
+        ? a.matches(":target-current")
+        : a.classList.contains("target-current"),
+    );
+    for (const a of links) {
+      const on = any
+        ? native
+          ? a.matches(":target-current")
+          : a.classList.contains("target-current")
+        : a.hash.slice(1) === eraEls[geoEra]?.id;
+      a.setAttribute("aria-current", on ? "true" : "false");
+    }
+  }
+
+  // ---------- Per-rail state ----------
+  const stripState = new Map(); // nav -> {strip, ticks[], scrub, tip, here, mode}
+  for (const nav of document.querySelectorAll(".rail-m")) {
+    const strip = nav.querySelector("[data-strip]");
+    const ticks = [];
+    for (const t of strip.querySelectorAll("[data-tick]"))
+      ticks[Number(t.dataset.index)] = t;
+    stripState.set(nav, {
+      nav,
+      strip,
+      ticks,
+      mode: nav.dataset.mode,
+      scrub: strip.querySelector(".rail-m__scrub"),
+      cursor: strip.querySelector(".rail-m__cursor"),
+      here: strip.querySelector(".rail-m__here"),
+      tip: nav.querySelector(".rail-m__tip"),
+      value: 0,
+    });
+  }
+
+  const tickY = (s, i) => {
+    const t = s.ticks[i];
+    const sr = s.strip.getBoundingClientRect();
+    const r = t.getBoundingClientRect();
+    return r.top + r.height / 2 - sr.top;
+  };
+
+  // B1: bands and ticks follow the measured axis, so the strip is a true page map.
+  function measurePage() {
+    for (const s of stripState.values()) {
+      if (s.mode !== "page") continue;
+      s.strip.style.setProperty(
+        "--frac",
+        Math.min(1, innerHeight / axis.offsetHeight).toFixed(4),
+      );
+      for (const band of s.strip.querySelectorAll("[data-band]")) {
+        const er = document
+          .getElementById(band.dataset.band)
+          .getBoundingClientRect();
+        band.style.setProperty("--weight", er.height.toFixed(0));
+        for (const tick of band.querySelectorAll("[data-tick]")) {
+          const tr = document
+            .getElementById(tick.dataset.tick)
+            .getBoundingClientRect();
+          tick.style.setProperty(
+            "--pos",
+            ((tr.top - er.top) / er.height).toFixed(4),
+          );
+        }
+      }
+    }
+  }
+
+  function placeHere(s, motion) {
+    if (s.mode === "page") {
+      if (sda && !calm.matches) return; // CSS view-timeline drives it.
+      if (motion === "scroll" && calm.matches) return; // reduced motion: settle on scrollend only.
+      const r = axis.getBoundingClientRect();
+      const h = axis.offsetHeight;
+      const frac = Math.min(1, innerHeight / h);
+      const p = (innerHeight - r.top) / (h + innerHeight);
+      s.here.style.setProperty(
+        "--here-y",
+        `${((p * (1 + frac) - frac) / frac) * 100}%`,
+      );
+      return;
+    }
+    if (motion === "scroll" && calm.matches) return;
+    const { first, last } = visibleRange();
+    if (first < 0) {
+      s.here.classList.remove("is-set");
+      return;
+    }
+    const H = s.strip.clientHeight;
+    const a = tickY(s, first) / H;
+    const b = tickY(s, last) / H;
+    s.here.style.setProperty("--top", a.toFixed(4));
+    s.here.style.setProperty("--size", (b - a).toFixed(4));
+    s.here.classList.add("is-set");
+  }
+
+  // ---------- Readout tooltip + scrubber (B1/B2) ----------
+  const describe = i => {
+    const e = entries[i];
+    return {
+      title: titleOf(e),
+      meta: [eraLabel(eraOf[i]), ...flagsOf(e)].join(" · "),
+    };
+  };
+  function setValue(s, i) {
+    s.value = i;
+    const { title, meta } = describe(i);
+    s.scrub.setAttribute("aria-valuenow", String(i + 1));
+    s.scrub.setAttribute("aria-valuetext", `${title}, ${meta}`);
+  }
+  function showTip(s, i, y) {
+    const { title, meta } = describe(i);
+    s.tip.replaceChildren(
+      Object.assign(document.createElement("strong"), { textContent: title }),
+    );
+    s.tip.append(
+      Object.assign(document.createElement("small"), { textContent: meta }),
+    );
+    s.cursor.style.setProperty("--cursor-y", `${y}px`);
+    const sr = s.strip.getBoundingClientRect();
+    s.tip.style.setProperty("--tip-x", `${sr.right + 8}px`);
+    s.tip.style.setProperty("--tip-y", `${sr.top + y}px`);
+    for (const t of s.ticks) t.classList.toggle("is-hover", t === s.ticks[i]);
+    if (!s.tip.matches(":popover-open")) s.tip.showPopover();
+  }
+  let hideTimer;
+  function hideTip(s, delay = 0) {
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(() => {
+      if (s.tip.matches(":popover-open")) s.tip.hidePopover();
+    }, delay);
+  }
+  function entryAt(s, y) {
+    let best = 0;
+    if (s.mode === "page") {
+      // The entry whose page span contains the pointer: the last tick at or above it.
+      for (let i = 0; i < s.ticks.length; i++)
+        if (tickY(s, i) <= y + 1) best = i;
+      return best;
+    }
+    let d = Infinity;
+    for (let i = 0; i < s.ticks.length; i++) {
+      const di = Math.abs(tickY(s, i) - y);
+      if (di < d) [d, best] = [di, i];
+    }
+    return best;
+  }
+  function jumpTo(i, focus = false) {
+    const el = entries[i];
+    el.scrollIntoView({ block: "start", behavior: "instant" });
+    if (focus) el.focus({ preventScroll: true });
+    history.replaceState(null, "", `${location.search}#${el.id}`);
+    requestAnimationFrame(() => sync());
+  }
+
+  for (const s of stripState.values()) {
+    s.scrub.hidden = false;
+    const yOf = e => e.clientY - s.strip.getBoundingClientRect().top;
+    s.scrub.addEventListener("pointermove", e => {
+      clearTimeout(hideTimer);
+      showTip(s, entryAt(s, yOf(e)), yOf(e));
+    });
+    s.scrub.addEventListener("pointerleave", () => hideTip(s, 300));
+    s.tip.addEventListener("pointerenter", () => clearTimeout(hideTimer));
+    s.tip.addEventListener("pointerleave", () => hideTip(s, 100));
+    s.scrub.addEventListener("click", e => {
+      const i = entryAt(s, yOf(e));
+      setValue(s, i);
+      jumpTo(i);
+    });
+    s.scrub.addEventListener("focus", () => {
+      const i = Math.max(0, currentPos().entry);
+      setValue(s, i);
+      if (s.scrub.matches(":focus-visible")) showTip(s, i, tickY(s, i));
+    });
+    s.scrub.addEventListener("blur", () => hideTip(s));
+    s.scrub.addEventListener("keydown", e => {
+      const n = entries.length;
+      let i = s.value;
+      const era = eraOf[i];
+      const firstOfEra = k => eraOf.indexOf(k);
+      switch (e.key) {
+        case "ArrowDown":
+        case "ArrowRight":
+          i = Math.min(n - 1, i + 1);
+          break;
+        case "ArrowUp":
+        case "ArrowLeft":
+          i = Math.max(0, i - 1);
+          break;
+        case "Home":
+          i = 0;
+          break;
+        case "End":
+          i = n - 1;
+          break;
+        case "PageDown": {
+          const next = eraOf.findIndex(k => k > era);
+          i = next < 0 ? n - 1 : next;
+          break;
+        }
+        case "PageUp": {
+          const start = firstOfEra(era);
+          i = i > start || i === 0 ? start : firstOfEra(eraOf[i - 1]);
+          break;
+        }
+        case "Enter":
+          e.preventDefault();
+          jumpTo(i, true);
+          return;
+        case "Escape":
+          hideTip(s);
+          return;
+        default:
+          return;
+      }
+      e.preventDefault();
+      e.stopPropagation();
+      setValue(s, i);
+      jumpTo(i);
+      requestAnimationFrame(() => showTip(s, i, tickY(s, i)));
+    });
+  }
+
+  // ---------- B3 fly-outs ----------
+  for (const fly of document.querySelectorAll(".rail-f__fly")) {
+    fly.addEventListener("click", e => {
+      if (e.target.closest("a")) fly.hidePopover();
+    });
+  }
+
+  // ---------- Sync ----------
+  function sync(motion = "settle") {
+    const rail = visibleRail();
+    if (!rail) return;
+    const nav = rail.querySelector(".proto-spy");
+    const { entry, era } = currentPos();
+    const eraText = era > -1 ? eraLabel(era) : "Start of the timeline";
+    for (const el of document.querySelectorAll("[data-rail-now]"))
+      el.textContent = eraText;
+    for (const el of rail.querySelectorAll("[data-rail-current]"))
+      el.textContent =
+        entry > -1 ? `${titleOf(entries[entry])} · ${eraText}` : eraText;
+
+    const s = stripState.get(nav);
+    if (s) {
+      for (const t of s.ticks)
+        t.classList.toggle("is-current", t === s.ticks[entry]);
+      if (document.activeElement !== s.scrub && entry > -1) setValue(s, entry);
+      placeHere(s, motion);
+    }
+
+    if (nav.classList.contains("rail-f")) {
+      const id = entries[entry]?.id;
+      // Era links here sit in closed popovers, where :target-current does not apply: use the geometric era.
+      for (const li of nav.querySelectorAll(".rail-f__era")) {
+        const on = li.dataset.band === eraEls[era]?.id;
+        li.classList.toggle("is-current", on);
+        li.querySelector(".rail-f__btn").setAttribute(
+          "aria-current",
+          on ? "true" : "false",
+        );
+        li.querySelector(".rail-f__era-link").setAttribute(
+          "aria-current",
+          on ? "true" : "false",
+        );
+      }
+      for (const d of nav.querySelectorAll("[data-dot]"))
+        d.classList.toggle("is-current", d.dataset.dot === id);
+      for (const a of nav.querySelectorAll("a[data-entry]"))
+        a.setAttribute(
+          "aria-current",
+          a.dataset.entry === id ? "true" : "false",
+        );
+    }
+
+    if (motion !== "scroll" && !nav.classList.contains("rail-f"))
+      syncEraLinks(nav, era);
+  }
+
+  let ticking = false;
+  let settle;
+  addEventListener(
+    "scroll",
+    () => {
+      // Backstop for a missed scrollend (seen after a long programmatic jump).
+      clearTimeout(settle);
+      settle = setTimeout(() => sync(), 200);
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        sync("scroll");
+      });
+    },
+    { passive: true },
+  );
+  document.addEventListener("scrollend", () =>
+    requestAnimationFrame(() => sync()),
+  );
+  calm.addEventListener("change", () => sync());
+
+  measurePage();
+  new ResizeObserver(() => {
+    measurePage();
+    sync();
+  }).observe(axis);
+  addEventListener("resize", () => {
+    measurePage();
+    sync();
+  });
   sync();
 
   // Re-sync when the variant switcher swaps rails.
   new MutationObserver(() => {
-    measure();
+    measurePage();
     sync();
   }).observe(document.querySelector(".proto-rail-layout"), {
     attributes: true,
     attributeFilter: ["hidden"],
     subtree: true,
+    childList: false,
   });
 
   // A link inside the open narrow-screen popover closes it.
   for (const nav of navs) {
     nav.addEventListener("toggle", e => {
-      if (e.newState === "open") setTimeout(sync, 100);
+      if (e.newState === "open") setTimeout(() => sync(), 100);
     });
     nav.addEventListener("click", e => {
       if (e.target.closest("a") && nav.matches(":popover-open"))
         nav.hidePopover();
     });
-  }
-
-  // ---------- B: minimap sizing, click-to-jump, indicator fallback ----------
-  const axis = document.querySelector(".timeline-axis");
-  const strip = document.querySelector("[data-minimap]");
-  const viewport = strip?.querySelector(".rail-b__viewport");
-  const axisBox = () => {
-    const r = axis.getBoundingClientRect();
-    return { top: r.top + scrollY, height: axis.offsetHeight };
-  };
-  function measure() {
-    if (!strip || !axis) return;
-    strip.style.setProperty(
-      "--frac",
-      Math.min(1, innerHeight / axis.offsetHeight).toFixed(4),
-    );
-    for (const band of strip.querySelectorAll("[data-band]")) {
-      const era = document.getElementById(band.dataset.band);
-      const er = era.getBoundingClientRect();
-      band.style.setProperty("--weight", er.height.toFixed(0));
-      for (const tick of band.querySelectorAll("[data-tick]")) {
-        const tr = document
-          .getElementById(tick.dataset.tick)
-          .getBoundingClientRect();
-        tick.style.setProperty(
-          "--pos",
-          ((tr.top - er.top + tr.height / 4) / er.height).toFixed(4),
-        );
-      }
-    }
-  }
-  measure();
-  new ResizeObserver(measure).observe(axis);
-
-  strip?.addEventListener("click", e => {
-    if (e.target.closest("a")) return;
-    const r = strip.getBoundingClientRect();
-    const f = (e.clientY - r.top) / r.height;
-    const { top, height } = axisBox();
-    scrollTo({ top: top + f * height - innerHeight / 2 });
-  });
-
-  // ---------- Scroll-driven fallbacks (B indicator, C fills), motion-allowed only ----------
-  if (!sda) {
-    const fills = [...document.querySelectorAll(".rail-c__era")].map(
-      (li, i) => ({
-        fill: li.querySelector(".rail-c__fill"),
-        era: document.getElementById(`era-${i}`),
-      }),
-    );
-    const onScroll = () => {
-      if (calm.matches) return;
-      const { top, height } = axisBox();
-      const frac = Math.min(1, innerHeight / height);
-      const p = (scrollY + innerHeight - top) / (height + innerHeight);
-      viewport.style.translate = `0 ${((p * (1 + frac) - frac) / frac) * 100}%`;
-      for (const { fill, era } of fills) {
-        const r = era.getBoundingClientRect();
-        fill.style.setProperty(
-          "--p",
-          Math.min(1, Math.max(0, -r.top / r.height)),
-        );
-      }
-    };
-    addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
   }
 </script>
