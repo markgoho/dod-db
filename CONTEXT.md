@@ -211,6 +211,7 @@ _Avoid_: Citation, snippet source
 - **Critical Dates** are the **Timeline**'s spine; a **Timeline Entry** with no **Critical Date** is never placed by its **Tradition Date**.
 - A **Timeline Entry** shows a **Tradition Date** only when the show itself states both sides for its subject.
 - A **Timeline Entry** is worded for what its sources date, even when that is narrower than the **Trigger Claim**.
+- A **Scholarship Page** statement's short answer reports where scholarship stands (consensus, most scholars, divided, no consensus), backed by two or more independent authors; a view only one cited author holds appears in the statement, attributed, never as the answer. Uncontested facts (a date, what an inscription says) are exempt. A statement whose sources can't support a state-of-the-field answer is reframed or cut (#133).
 - A **Scholarship Page** is published only when two or more independent **External Sources**, at least one Scholarly or Reference, back its core claim and it makes three or more statements.
 - A new **Episode** can add a **Trigger Claim** to a **Synthesis Page** or suggest a new subject; it never changes a statement.
 - A **Synthesis Page** shows the date its **External Sources** were read; its statements change only when the owner re-reviews it.

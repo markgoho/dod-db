@@ -72,7 +72,7 @@ statements:
     group: "What can be known about him"
     question: "What kind of figure do most scholars think Jesus was?"
     short: "Most agree he was an apocalyptic prophet."
-    text: "Many of the earliest sources depict Jesus as a Jewish apocalypticist who proclaimed the imminent end of the present age. Whether they portray him accurately is the subject of much scholarly debate, but most scholars agree that Jesus was an apocalyptic prophet. The reasons given are that the earliest sources for his life, teachings and death (Mark, Q, M and L) show him this way, and that both John the Baptist, with whom he associated, and the earliest Christian churches were apocalyptic."
+    text: "Many of the earliest sources depict Jesus as a Jewish apocalypticist who proclaimed the imminent end of the present age. Whether they portray him accurately is the subject of much scholarly debate, but most scholars agree that Jesus was an apocalyptic prophet. The reasons given are that the earliest sources for his life, teachings and death (Mark, Q, M and L) show him this way, and that both John the Baptist, with whom he associated, and the earliest Christian churches were apocalyptic. Dale Martin's Yale lectures, while calling some of his own conclusions very controversial, also hold that Jesus was an apocalyptic Jewish prophet."
     cites:
       - source: ehrman-brief-5e-ch9-summary
         locator: "section “Jesus in His Apocalyptic Context”"
@@ -93,6 +93,10 @@ statements:
       - source: ehrman-brief-5e-ch9-summary
         locator: "section “The Beginning and End as Keys to the Middle”"
         quote: "Jesus associated with John the Baptist whose ministry was apocalyptic, and we know that the earliest Christian churches were apocalyptic."
+        read: 2026-11-23
+      - source: martin-rlst152-l13
+        locator: "ch. 4 [00:47:53]"
+        quote: "There's some of this that's very controversial. I would say, though, that Jesus was an apocalyptic prophet, an apocalyptic Jewish prophet."
         read: 2026-11-23
   - id: outside
     group: "What can be known about him"

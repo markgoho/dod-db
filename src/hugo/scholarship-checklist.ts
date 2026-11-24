@@ -44,7 +44,7 @@ const RULE_TEXT: Record<string, string> = {
   "publish-rule":
     "at least 3 statements, and the core claim on at least 2 independent sources (counted by author), one Scholarly or Reference, not only Host-authored.",
   "consensus-wording":
-    'no statement says "consensus" or "most scholars" more strongly than its source does.',
+    'no statement says "consensus" or "most scholars" more strongly than its source does, and each short answer reports where scholarship stands on two or more authors, never one author\'s view (uncontested facts exempt, #133).',
   "dissent-attributed": "any dissent is attributed to the person who holds it.",
   "tradition-named":
     "each statement citing a Tradition source names the tradition in its own words.",
@@ -181,7 +181,7 @@ export async function buildChecklist(
     `Generated from \`${pagePath}\`, \`${reviewPath}\`, \`${triggersPath}\` and \`${registryPath}\` at ${commit}.`,
     "",
     ...delegationLines(review.delegation),
-    `Open every URL. For each item, reply **pass** or **fail**, with a note if needed, using its key (e.g. \`${firstKey}: pass\`). A citation passes when the quote is present, the locator finds it, and the question, short answer and statement are no stronger than the source.`,
+    `Open every URL. For each item, reply **pass** or **fail**, with a note if needed, using its key (e.g. \`${firstKey}: pass\`). A citation passes when the quote is present, the locator finds it, and the question, short answer and statement are no stronger than the source. A short answer reports where scholarship stands on two or more authors; one author's view appears only in the statement, attributed (#133).`,
     "",
     `Draft preview: \`cd hugo && hugo server -D\`, then http://localhost:1313/scholarship/${slug}/`,
     "",

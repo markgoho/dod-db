@@ -125,8 +125,8 @@ statements:
         read: 2026-11-23
   - id: convergence
     group: "Yahweh, El and Baal"
-    question: "How did Yahweh come to share traits with El and Baal?"
-    short: "One model, Mark Smith's, calls it convergence: Yahweh took on features of other gods."
+    question: "What is the convergence model?"
+    short: "Mark Smith's proposal that Yahweh took on the traits of El and Baal."
     text: "Hayes's lecture presents a model by Mark S. Smith, one of the biblical scholars who, instead of treating Israelite religion as either a refinement of Canaanite religion or a radical break with it, examine the cultural and ideological negotiations that gave rise to Israelite monotheism. In Smith's model of convergence and differentiation, as Hayes describes it, Yahweh, a god thought to have come originally from a region further south, took on the characteristics of other deities, first El and then Baal, or both at once. Later a Yahweh-only party polemicized against and rejected parts of this convergence, labeling them Canaanite. Hayes judges that the model has great explanatory power: it explains both the deep similarity of Israel's deity to the deities of its neighbors and the Bible's vehement polemic against Canaanite religion. On this reading, what appears in the Bible as a battle between Israelites and Canaanites is better understood as a civil war between Yahweh-only Israelites and Israelites taking part in the cult of their ancestors."
     cites:
       - source: hayes-rlst145-l7
@@ -152,7 +152,7 @@ statements:
   - id: attestation
     group: "Where Yahweh came from"
     question: "What is the earliest evidence for Yahweh outside the Bible?"
-    short: "A Moabite king's inscription from about 840 BCE; an older Egyptian name, Yhwȝ, is debated."
+    short: "A Moabite king's inscription from about 840 BCE is the oldest certain reference; older Egyptian texts name a Yhwȝ."
     text: "The oldest reference to Yahweh outside the Bible is in a royal inscription of Mesha, king of Moab, from around 840 BCE, and Daniel Fleming writes that there is no certain evidence for a god named Yahweh before it. Many proposals to find the name in other Near Eastern texts have failed to convince, and Yahweh remains unknown outside Israel and Judah, with what Fleming calls one crucial exception: fourteenth- and thirteenth-century Egyptian texts that name a Yhwȝ in Shasu-land. These references are older than any evidence for the name Israel. Fleming calls them mysterious and open to debate, but says they demand explanation in relation to Israel's god."
     cites:
       - source: fleming-2021-yahweh-before-israel
@@ -178,8 +178,8 @@ statements:
   - id: south
     group: "Where Yahweh came from"
     question: "Did Yahweh come from the desert south of Israel?"
-    short: "A hypothesis going back to the 19th century says so; Daniel Fleming writes that there is no consensus and never was."
-    text: "An explanation going back to the late nineteenth century, which Daniel Fleming calls the Midianite Hypothesis, holds that Yahweh originated in the deep south, in Sinai and Midian, Edom and Seir. Fleming gives its reasoning: Yahweh is absent from the god lists and god references for Canaan and Syria in the second millennium BCE, so it is expected that Israel's god came from a region outside what is most settled and best documented. The Egyptian references suit that requirement, and so would the Bible's account of Israel with Moses in the wilderness. Hayes's account of Mark Smith's model likewise has Yahweh coming originally from further south. Fleming has long considered southern origins by far the best explanation for the evidence and still finds the hypothesis the right place to start, though he sets out to repudiate its contemporary form. He writes that there is no consensus and never was: there have always been serious outliers. In Germany, beginning with a challenge from Christoph Levin, the dating of much biblical writing after the monarchy has generated its own doubt of southern origins."
+    short: "The question is unresolved, though a hypothesis going back to the 19th century says so."
+    text: "S. David Sperling's Encyclopedia of Religion entry writes that extrabiblical data have not resolved the question of where the worship of Yahweh began. An explanation going back to the late nineteenth century, which Daniel Fleming calls the Midianite Hypothesis, holds that Yahweh originated in the deep south, in Sinai and Midian, Edom and Seir. Fleming gives its reasoning: Yahweh is absent from the god lists and god references for Canaan and Syria in the second millennium BCE, so it is expected that Israel's god came from a region outside what is most settled and best documented. The Egyptian references suit that requirement, and so would the Bible's account of Israel with Moses in the wilderness. Hayes's account of Mark Smith's model likewise has Yahweh coming originally from further south. Fleming has long considered southern origins by far the best explanation for the evidence and still finds the hypothesis the right place to start, though he sets out to repudiate its contemporary form. He writes that there is no consensus and never was: there have always been serious outliers. In Germany, beginning with a challenge from Christoph Levin, the dating of much biblical writing after the monarchy has generated its own doubt of southern origins. Sperling, for his part, finds perhaps the most promising clue in a place named Yhv' in the Negev or Sinai, mentioned in Egyptian sources of the fourteenth and thirteenth centuries BCE, and writes that these references lend some support to the Midianite or Kenite hypothesis. Fleming reports that Albright, Cross, Dijkstra and de Moor all proposed explanations that identify Yahweh with El, while Karel van der Toorn finds it unexpected that the proper name of a major god would be replaced by an activity attributed to him. Fleming writes that he does not think Yahweh began as any form of El, nor first of all as a local highland storm god of the Hadad type."
     cites:
       - source: fleming-2021-yahweh-before-israel
         locator: "p. 5"
@@ -217,12 +217,18 @@ statements:
         locator: "p. 6"
         quote: "In Germany, beginning with a challenge issued by Christoph Levin when he took a new position at the University of Giessen in 1996, the post-monarchic dating of much biblical writing has generated its own doubt of southern origins."
         read: 2026-11-23
-  - id: not-el
-    group: "Where Yahweh came from"
-    question: "Did Yahweh begin as a form of El?"
-    short: "Daniel Fleming thinks not."
-    text: "Daniel Fleming writes that he does not think Yahweh began as any form of El, and does not think Yahweh was first of all a local highland storm god of the Hadad type."
-    cites:
+      - source: sperling-2005-god-hebrew-scriptures
+        locator: "section “Biblical View of the Origins of the Worship of YHVH”"
+        quote: "Extrabiblical data have not resolved the question of the origin of Yahveh worship."
+        read: 2026-11-23
+      - source: sperling-2005-god-hebrew-scriptures
+        locator: "section “Biblical View of the Origins of the Worship of YHVH”"
+        quote: "Perhaps the most promising clue comes from a location named Yhv' in the Negev or the Sinai desert mentioned in Egyptian sources from the thirteenth and fourteenth centuries bce. These references lend some support to the Midianite or Kenite hypothesis"
+        read: 2026-11-23
+      - source: fleming-2021-yahweh-before-israel-ch7
+        locator: "ch. 7, chapter summary"
+        quote: "Albright, Cross, Dijkstra, and de Moor all proposed explanations that identify Yahweh with El, a deity of unassailable prominence, but van der Toorn (915) finds it unexpected to have the proper name of a major god replaced by an activity attributed to him."
+        read: 2026-11-23
       - source: fleming-2021-yahweh-before-israel
         locator: "p. 4"
         quote: "I do not think Yahweh began as any form of “The God” El, and I do not think Yahweh was first of all a local highland storm god of the Hadad type."

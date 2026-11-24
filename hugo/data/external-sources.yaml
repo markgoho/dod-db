@@ -601,3 +601,31 @@ abr-wood-1990-jericho:
   url: "https://biblearchaeology.org/research-articles/did-the-israelites-conquer-jericho-a-new-look-at-the-archaeological-evidence/"
   hostAuthored: false
   tradition: "Associates for Biblical Research, an evangelical apologetics ministry"
+
+fleming-2021-yahweh-before-israel-ch7:
+  author: "Daniel E. Fleming"
+  title: "Yahweh before Israel: Glimpses of History in a Divine Name, chapter 7 “The Early Character of the God Yahweh”, chapter summary"
+  series: "Cambridge Core"
+  publisher: "Cambridge University Press"
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher chapter page, summary open"
+  url: "https://www.cambridge.org/core/books/yahweh-before-israel/early-character-of-the-god-yahweh/BE89EA20D0ECE540C8768FE9F7F66FF7"
+  hostAuthored: false
+  tradition: null
+
+sperling-2005-god-hebrew-scriptures:
+  author: "S. David Sperling"
+  title: "God: God in the Hebrew Scriptures"
+  series: "Encyclopedia of Religion"
+  publisher: null
+  year: 2005
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/god-god-hebrew-scriptures"
+  hostAuthored: false
+  tradition: null
