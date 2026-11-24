@@ -47,10 +47,6 @@ statements:
         locator: "section “The Study of Paul: Methodological Difficulties”"
         quote: "the undisputed Pauline letters (Romans, 1 and 2 Corinthians, Galatians, Philippians, 1 Thessalonians, and Philemon)"
         read: 2026-11-23
-      - source: bulundwe-2019-ethics-pseudepigraphy
-        locator: "p. 323, Introduction"
-        quote: "in the thirteen epistles whose authorship is ascribed to the apostle Paul, most commentators distinguish seven authentic epistles (in the canonical order: Rom, 1 and 2 Cor, Gal, Phil, 1 Thess, Phlm)"
-        read: 2026-11-23
       - source: martin-rlst152-l17
         locator: "ch. 2 [00:10:42]"
         quote: "Now you've read seven letters that almost all scholars believe Paul actually wrote."
@@ -65,39 +61,9 @@ statements:
         locator: "section “The Study of Paul: Methodological Difficulties”"
         quote: "Pseudepigrapha, writings under a false name, were not uncommon in the ancient world. Most scholars believe that some of the New Testament letters attributed to Paul are, in fact, pseudepigraphic."
         read: 2026-11-23
-      - source: bulundwe-2019-ethics-pseudepigraphy
-        locator: "p. 323, Introduction"
-        quote: "most commentators distinguish seven authentic epistles (in the canonical order: Rom, 1 and 2 Cor, Gal, Phil, 1 Thess, Phlm) from up to six pseudepigraphical epistles (Col, Eph, 2 Thess and the Pastoral epistles)."
-        read: 2026-11-23
       - source: martin-rlst152-l17
         locator: "ch. 1 [00:00:00]"
         quote: "The phenomenon of pseudepigraphy, that is, writings under a false name, was very, very popular in the ancient world"
-        read: 2026-11-23
-  - id: accepted
-    group: "The letters in Paul's name"
-    question: "Was writing in someone else's name accepted in antiquity?"
-    short: "Views differ, though the view of it as forgery has spread since 2013."
-    text: "Views differ. The chapter summary for Ehrman's textbook holds that ancient authors almost universally condemned the practice. Bulundwe reports that since Ehrman's 2013 monograph the concept of forgery has become so widespread that another opinion is hard to consider, and that David Aune and Régis Burnet hold deception to be intrinsic to pseudepigraphy. He also reports a widespread idea in exegesis that antiquity was indifferent to pseudepigraphy, and Frédéric Amsler's view that pseudepigraphy, even if deliberate, is not necessarily fraudulent."
-    cites:
-      - source: ehrman-brief-5e-ch16-summary
-        locator: "section “Pseudonymity in the Ancient World”"
-        quote: "This is not to say, however, that this behavior was condoned in antiquity. On the contrary, ancient authors almost universally condemned the practice."
-        read: 2026-11-23
-      - source: bulundwe-2019-ethics-pseudepigraphy
-        locator: "p. 324, Introduction"
-        quote: "there is a widespread idea in exegesis according to which antiquity was indifferent to pseudepigraphy and the notions of scientific accountability were not the same as today."
-        read: 2026-11-23
-      - source: bulundwe-2019-ethics-pseudepigraphy
-        locator: "p. 326, “Key Definitions and Benchmarks”"
-        quote: "qualifies the statement about forgery and considers that, even if deliberate, pseudepigraphy is not necessarily fraudulent."
-        read: 2026-11-23
-      - source: bulundwe-2019-ethics-pseudepigraphy
-        locator: "p. 326, “Key Definitions and Benchmarks”"
-        quote: "Since 2013, the concept of forgery became so widespread with Ehrman’s monograph that it appears difficult, if not impossible, to consider another opinion."
-        read: 2026-11-23
-      - source: bulundwe-2019-ethics-pseudepigraphy
-        locator: "p. 326, “Key Definitions and Benchmarks”"
-        quote: 'Aune and Burnet share the same opinion that "the notion of deception is intrinsic to pseudepigraphy."'
         read: 2026-11-23
   - id: hebrews
     group: "The letters in Paul's name"
@@ -139,14 +105,6 @@ statements:
         locator: "ch. 2 [00:10:42]"
         quote: "and then there's the letters that almost all scholars, critical scholars, believe are pseudepigraphic, which are I and II Timothy and Titus."
         read: 2026-11-23
-      - source: bulundwe-2019-ethics-pseudepigraphy
-        locator: "p. 336, “2 Timothy - Apostle Paulʼs Canonical Testament”"
-        quote: "To consider 2 Tim as pseudonymous is the majority but not unanimous position."
-        read: 2026-11-23
-      - source: bulundwe-2019-ethics-pseudepigraphy
-        locator: "p. 336, note 74"
-        quote: "The consensus around the Pastoral letters has been questioned for close to twenty years especially by Johnson in the American exegesis and Herzer in the German exegesis"
-        read: 2026-11-23
   - id: pastorals-reasons
     group: "1 and 2 Timothy and Titus"
     question: "Why do scholars doubt that Paul wrote them?"
@@ -186,20 +144,12 @@ statements:
   - id: pastorals-dissent
     group: "1 and 2 Timothy and Titus"
     question: "Does any scholar defend Paul's authorship?"
-    short: "Some do; the majority view is not unanimous."
-    text: "Some do. Bulundwe calls the pseudonymity of 2 Timothy the majority but not unanimous position. He reports that Luke T. Johnson holds all three letters authentic, and that Jens Herzer holds that only 1 Timothy was written later and pseudonymously. Dale Martin's Yale lectures also mention recent suggestions that Paul himself wrote 2 Timothy."
+    short: "Some do."
+    text: "Some do. Dale Martin's Yale lectures, recorded in 2009, say there are scholars who would defend Paul's authorship of these letters, and that in the years before the lectures some had asked whether Paul himself wrote 2 Timothy, since it looks somewhat like his last will and testament. Martin says he does not tend to accept that."
     cites:
-      - source: bulundwe-2019-ethics-pseudepigraphy
-        locator: "p. 336, “2 Timothy - Apostle Paulʼs Canonical Testament”"
-        quote: "To consider 2 Tim as pseudonymous is the majority but not unanimous position."
-        read: 2026-11-23
-      - source: bulundwe-2019-ethics-pseudepigraphy
-        locator: "p. 336, note 74"
-        quote: "Herzer believes that only 1 Tim would have been written later and pseudonymously. For Johnson, whose commentary mainly builds on the patristic tradition, the three epistles are authentic."
-        read: 2026-11-23
       - source: martin-rlst152-l19
         locator: "ch. 1 [00:00:00]"
-        quote: "There has been some question in the last several years that maybe the actual historical Paul wrote II Timothy because II Timothy looks sort of like a last will and testament of Paul that he may have written in prison."
+        quote: "There has been some question in the last several years that maybe the actual historical Paul wrote II Timothy because II Timothy looks sort of like a last will and testament of Paul that he may have written in prison. But I don't tend to buy that."
         read: 2026-11-23
       - source: martin-rlst152-l19
         locator: "ch. 3 [00:26:50]"

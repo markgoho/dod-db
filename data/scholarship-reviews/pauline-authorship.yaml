@@ -1,6 +1,8 @@
 # Review record for /scholarship/pauline-authorship/ (#93 shape). Not rendered.
 # agent: results of the agent's first pass (#94, 2026-11-23). That pass does not count toward publish.
 # owner: empty ("") until the owner's publish review sets pass or fail.
+# Independent second agent pass 2026-11-23 (#93 delegation): every remaining quote re-fetched and re-matched,
+# every Trigger Claim re-read in the final Transcript; Bulundwe dropped and accepted cut (see uncited).
 # Every quote was script-checked as a substring of the fetched source text (whitespace, quote marks
 # and dashes normalised), and every Yale locator against the transcript's chapter headings.
 # Ep 144 [00:37:57] "Ephesians was not written by Paul" was dropped in the first pass because the
@@ -8,371 +10,389 @@
 review: ""
 citations:
   undisputed/1:
-    { agent: pass, owner: "", note: "Ehrman ch. 11 summary, opening paragraph" }
+    {
+      agent: pass,
+      owner: "",
+      note: "Ehrman ch. 11 summary, opening paragraph. Second pass 2026-11-23: verified.",
+    }
   undisputed/2:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 11 summary, section “The Study of Paul: Methodological Difficulties”",
+      note: "Ehrman ch. 11 summary, section “The Study of Paul: Methodological Difficulties”. Second pass 2026-11-23: verified.",
     }
   undisputed/3:
     {
       agent: pass,
       owner: "",
-      note: "Bulundwe p. 323 (first page of the article, PDF p. 2). “most commentators” backs “most scholars”.",
-    }
-  undisputed/4:
-    {
-      agent: pass,
-      owner: "",
-      note: "Martin l17 ch. 2 [00:10:42]. In ch. 3 Martin adds that some scholars doubt one of the seven, so the statement says “most”, not “all”.",
+      note: "Martin l17 ch. 2 [00:10:42]. In ch. 3 Martin adds that some scholars doubt one of the seven, so the statement says “most”, not “all”. Second pass 2026-11-23: verified.",
     }
   pseudepigraphy/1:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 11 summary, section “The Study of Paul: Methodological Difficulties”",
+      note: "Ehrman ch. 11 summary, section “The Study of Paul: Methodological Difficulties”. Second pass 2026-11-23: verified.",
     }
   pseudepigraphy/2:
     {
       agent: pass,
       owner: "",
-      note: "Bulundwe p. 323. Note marker “2” follows the closing parenthesis.",
-    }
-  pseudepigraphy/3:
-    {
-      agent: pass,
-      owner: "",
-      note: "Martin l17 ch. 1 [00:00:00], near the end of the chapter (before 00:10:42)",
-    }
-  accepted/1:
-    {
-      agent: flag,
-      owner: "",
-      note: "Ehrman ch. 16 summary, “Pseudonymity in the Ancient World”. “Views differ” is the page's reading. Bulundwe reports the condemned/forgery view as dominant since 2013, with Aune and Burnet (accepted/4–5), alongside the indifference idea and Amsler's qualification (accepted/2–3). The short answer's “has spread since 2013” rests on accepted/4. Owner confirms the weighting.",
-    }
-  accepted/2:
-    {
-      agent: pass,
-      owner: "",
-      note: "Bulundwe p. 324; note marker “3” follows the quote.",
-    }
-  accepted/3:
-    {
-      agent: pass,
-      owner: "",
-      note: "Bulundwe p. 326. The PDF reads “Amsler15 qualifies…” (note 15), so the quote starts at “qualifies”.",
-    }
-  accepted/4:
-    {
-      agent: pass,
-      owner: "",
-      note: "Bulundwe p. 326. Text extraction shows “Ehrmanʼ s”; the quote has “Ehrman’s”. “Ehrman's 2013 monograph” is Forgery and Counterforgery (note 5).",
-    }
-  accepted/5:
-    {
-      agent: pass,
-      owner: "",
-      note: "Bulundwe p. 326; note marker “13” follows. First names (David E. Aune, Régis Burnet) are from notes 3 and 10.",
+      note: "Martin l17 ch. 1 [00:00:00], near the end of the chapter (before 00:10:42). Second pass 2026-11-23: verified.",
     }
   hebrews/1:
-    { agent: pass, owner: "", note: "Ehrman ch. 11 summary, opening paragraph" }
+    {
+      agent: pass,
+      owner: "",
+      note: "Ehrman ch. 11 summary, opening paragraph. Second pass 2026-11-23: verified.",
+    }
   hebrews/2:
     {
       agent: pass,
       owner: "",
-      note: "Martin l17 ch. 1 [00:00:00], early in the chapter",
+      note: "Martin l17 ch. 1 [00:00:00], early in the chapter. Second pass 2026-11-23: verified.",
     }
   hebrews/3:
     {
       agent: pass,
       owner: "",
-      note: "Martin l21 ch. 3 [00:23:42]. Martin states “It's also not by Paul” flatly; the statement attributes it to his lectures rather than to scholars generally.",
+      note: "Martin l21 ch. 3 [00:23:42]. Martin states “It's also not by Paul” flatly; the statement attributes it to his lectures rather than to scholars generally. Second pass 2026-11-23: verified.",
     }
-  hebrews/4: { agent: pass, owner: "", note: "Martin l21 ch. 3 [00:23:42]" }
+  hebrews/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l21 ch. 3 [00:23:42]. Second pass 2026-11-23: verified.",
+    }
   pastorals/1:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 16 summary, section “The Pastoral Epistles”, first sentences. Its edition record comes from the #95 pass (see sources).",
+      note: "Ehrman ch. 16 summary, section “The Pastoral Epistles”, first sentences. Second pass 2026-11-23: verified.",
     }
   pastorals/2:
     {
       agent: pass,
       owner: "",
-      note: "Martin l19 ch. 1 [00:00:00], about 2 minutes in. Next sentence reports recent questions about 2 Timothy (used in pastorals-dissent).",
+      note: "Martin l19 ch. 1 [00:00:00], about 2 minutes in. Next sentence reports recent questions about 2 Timothy (used in pastorals-dissent). Second pass 2026-11-23: verified.",
     }
   pastorals/3:
     {
       agent: pass,
       owner: "",
-      note: "Martin l17 ch. 2 [00:10:42]. “almost all scholars, critical scholars” is scoped to critical scholars and is stronger than the statement's “most”, which is fine.",
-    }
-  pastorals/4:
-    {
-      agent: flag,
-      owner: "",
-      note: "Bulundwe p. 336. Scope is 2 Timothy only, not all three Pastorals; it backs the core claim at full scope only together with pastorals/5 and the p. 323 list (“up to six pseudepigraphical epistles (… the Pastoral epistles)”). Owner decides whether Bulundwe counts as a full-scope core source.",
-    }
-  pastorals/5:
-    {
-      agent: flag,
-      owner: "",
-      note: "Bulundwe p. 336, note 74, first sentence. It presupposes “the consensus around the Pastoral letters” while reporting that it has been questioned. The page doesn't use the word “consensus”; same scope question as pastorals/4.",
+      note: "Martin l17 ch. 2 [00:10:42]. “almost all scholars, critical scholars” is scoped to critical scholars and is stronger than the statement's “most”, which is fine. Second pass 2026-11-23: verified.",
     }
   pastorals-reasons/1:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 16 summary, “The Historical Situation and Authorship of the Pastoral Epistles”. “Over one-third” is used; Ep 6 says “two-thirds” and Ep 35 “a third”, and neither card carries the figure.",
+      note: "Ehrman ch. 16 summary, “The Historical Situation and Authorship of the Pastoral Epistles”. “Over one-third” is used; Ep 6 says “two-thirds” and Ep 35 “a third”, and neither card carries the figure. Second pass 2026-11-23: verified.",
     }
-  pastorals-reasons/2: { agent: pass, owner: "", note: "Same section" }
+  pastorals-reasons/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same section. Second pass 2026-11-23: verified.",
+    }
   pastorals-reasons/3:
-    { agent: pass, owner: "", note: "Same section, last sentence" }
+    {
+      agent: pass,
+      owner: "",
+      note: "Same section, last sentence. Second pass 2026-11-23: verified.",
+    }
   pastorals-reasons/4:
     {
       agent: pass,
       owner: "",
-      note: "Martin l19 ch. 1 [00:00:00]. His “scholars all agree” about the seven isn't used for any statement's strength.",
+      note: "Martin l19 ch. 1 [00:00:00]. His “scholars all agree” about the seven isn't used for any statement's strength. Second pass 2026-11-23: verified.",
     }
   pastorals-date/1:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 16 summary. The short answer's “both sources … after Paul's lifetime” rests on this summary's inference from church structure and on Martin's own second-century guess. Neither states a field position on the date.",
+      note: "Ehrman ch. 16 summary. The short answer's “both sources … after Paul's lifetime” rests on this summary's inference from church structure and on Martin's own second-century guess. Neither states a field position on the date. Second pass 2026-11-23: verified.",
     }
   pastorals-date/2:
     {
       agent: pass,
       owner: "",
-      note: "Martin l19 ch. 1 [00:00:00], about 4–5 minutes in. “It's everybody guess” is the transcript's wording. The second-century date is Martin's own view, attributed to him, with his note that it's later than many scholars would put them.",
+      note: "Martin l19 ch. 1 [00:00:00], about 4–5 minutes in. “It's everybody guess” is the transcript's wording. The second-century date is Martin's own view, attributed to him, with his note that it's later than many scholars would put them. Second pass 2026-11-23: verified.",
     }
-  pastorals-dissent/1: { agent: pass, owner: "", note: "Bulundwe p. 336" }
+  pastorals-dissent/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l19 ch. 1 [00:00:00]. Second pass 2026-11-23: verified. Quote extended to Martin's next sentence (“But I don't tend to buy that.”), which backs the statement's last sentence. “in the last several years” is relative to the 2009 recording, so the statement says “in the years before the lectures”, not “recent”.",
+    }
   pastorals-dissent/2:
     {
       agent: pass,
       owner: "",
-      note: "Bulundwe p. 336, note 74 (end). The source names “Luke T. Johnson” and Herzer; the statement uses those names. Johnson 2001 and Herzer 2004 weren't opened (leads).",
-    }
-  pastorals-dissent/3:
-    { agent: pass, owner: "", note: "Martin l19 ch. 1 [00:00:00]" }
-  pastorals-dissent/4:
-    {
-      agent: pass,
-      owner: "",
-      note: "Martin l19 ch. 3 [00:26:50], near the end of the chapter",
+      note: "Martin l19 ch. 3 [00:26:50], near the end of the chapter. “these letters” are the Pastorals (the lecture's subject). Second pass 2026-11-23: verified. With Bulundwe dropped, the statement rests on Martin alone and names no dissenter; it reports only what Martin reports.",
     }
   disputed/1:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 11 summary, “The Study of Paul: Methodological Difficulties”",
+      note: "Ehrman ch. 11 summary, “The Study of Paul: Methodological Difficulties”. Second pass 2026-11-23: verified.",
     }
   disputed/2:
     {
       agent: pass,
       owner: "",
-      note: "Martin l17 ch. 2 [00:10:42], about 1 minute in. This is the only source read that contrasts the Pastorals with the disputed letters itself; the statement quotes it instead of drawing the contrast.",
+      note: "Martin l17 ch. 2 [00:10:42], about 1 minute in. This is the only source read that contrasts the Pastorals with the disputed letters itself; the statement quotes it instead of drawing the contrast. Second pass 2026-11-23: verified.",
     }
   ephesians-colossians/1:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Ehrman ch. 16 summary, “The Deutero-Pauline Epistles”. Its “most agree” on Ephesians sits against Martin's “most debated” (e-c/2), so the page calls the question contested and attributes each view. Owner confirms the split reading.",
+      note: "Ehrman ch. 16 summary, “The Deutero-Pauline Epistles”. Its “most agree” on Ephesians sits against Martin's “most debated” (e-c/2), so the page calls the question contested and attributes each view. Second pass 2026-11-23: verified. Flag resolved under the owner's decision: kept, because the statement keeps Ehrman's “continue to debate” / “most agree” and Martin's “probably … most debated”, each attributed.",
     }
   ephesians-colossians/2:
-    { agent: pass, owner: "", note: "Martin l17 ch. 2 [00:10:42]" }
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l17 ch. 2 [00:10:42]. Second pass 2026-11-23: verified.",
+    }
   ephesians-colossians/3:
-    { agent: pass, owner: "", note: "Ehrman ch. 16 summary, same section" }
+    {
+      agent: pass,
+      owner: "",
+      note: "Ehrman ch. 16 summary, same section. Second pass 2026-11-23: verified.",
+    }
   ephesians-colossians/4:
-    { agent: pass, owner: "", note: "Ehrman ch. 16 summary, same section" }
+    {
+      agent: pass,
+      owner: "",
+      note: "Ehrman ch. 16 summary, same section. Second pass 2026-11-23: verified.",
+    }
   ephesians-colossians/5:
     {
       agent: pass,
       owner: "",
-      note: "Martin l17 ch. 2 [00:10:42]. Martin's own reason, attributed as a reason “given”.",
+      note: "Martin l17 ch. 2 [00:10:42]. Martin's own reason, attributed as a reason “given”. Second pass 2026-11-23: verified.",
     }
   second-thessalonians/1:
     {
       agent: pass,
       owner: "",
-      note: "Martin l24 ch. 2 [00:12:22], first minute",
+      note: "Martin l24 ch. 2 [00:12:22], first minute. Second pass 2026-11-23: verified.",
     }
   second-thessalonians/2:
     {
       agent: pass,
       owner: "",
-      note: "Ehrman ch. 16 summary, “The Deutero-Pauline Epistles”",
+      note: "Ehrman ch. 16 summary, “The Deutero-Pauline Epistles”. Second pass 2026-11-23: verified.",
     }
-  second-thessalonians/3: { agent: pass, owner: "", note: "Same paragraph" }
+  second-thessalonians/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same paragraph. Second pass 2026-11-23: verified.",
+    }
   second-thessalonians/4:
-    { agent: pass, owner: "", note: "Same section, next paragraph" }
+    {
+      agent: pass,
+      owner: "",
+      note: "Same section, next paragraph. Second pass 2026-11-23: verified.",
+    }
   second-thessalonians/5:
-    { agent: pass, owner: "", note: "Martin l24 ch. 2 [00:12:22]" }
+    {
+      agent: pass,
+      owner: "",
+      note: "Martin l24 ch. 2 [00:12:22]. Second pass 2026-11-23: verified.",
+    }
   second-thessalonians/6:
     {
       agent: pass,
       owner: "",
-      note: "Martin l24 ch. 2 [00:12:22]. Ep 138's “most critical scholars would say” is stronger than “divided”; per #86 the gap stays unexplained.",
+      note: "Martin l24 ch. 2 [00:12:22]. Ep 138's “most critical scholars would say” is stronger than “divided”; per #86 the gap stays unexplained. Second pass 2026-11-23: verified.",
     }
 triggers:
   6@00:35:10:
     {
       agent: pass,
       owner: "",
-      note: "Subject is 2 Timothy. The turn after it (00:35:43) gives a “two-thirds” vocabulary figure that the page doesn't use.",
+      note: "Subject is 2 Timothy. The turn after it (00:35:43) gives a “two-thirds” vocabulary figure that the page doesn't use. Second pass 2026-11-23: verified.",
     }
   6@00:38:35:
     {
       agent: pass,
       owner: "",
-      note: "Quote starts mid-turn and keeps the dating hedge (“probably … maybe even”).",
+      note: "Quote starts mid-turn and keeps the dating hedge (“probably … maybe even”). Second pass 2026-11-23: verified.",
     }
   10@01:04:43:
     {
       agent: pass,
       owner: "",
-      note: "Passing remark, mid-turn, in a discussion of arsenokoitai.",
+      note: "Passing remark, mid-turn, in a discussion of arsenokoitai. Second pass 2026-11-23: verified.",
     }
   26@00:25:11:
     {
       agent: pass,
       owner: "",
-      note: "Guest Speaker. Turn continues: Ehrman's Forged and “I, like most critical scholars would say Paul didn't write these letters.”",
+      note: "Guest Speaker. Turn continues: Ehrman's Forged and “I, like most critical scholars would say Paul didn't write these letters.”. Second pass 2026-11-23: verified.",
     }
-  35@00:32:48: { agent: pass, owner: "", note: "Hebrews; quote is mid-turn." }
+  35@00:32:48:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hebrews; quote is mid-turn. Second pass 2026-11-23: verified.",
+    }
   35@00:33:51:
     {
       agent: pass,
       owner: "",
-      note: "Quote is the end of a long turn about Hebrews and the authentic letters.",
+      note: "Quote is the end of a long turn about Hebrews and the authentic letters. Second pass 2026-11-23: verified.",
     }
-  35@00:34:57: { agent: pass, owner: "", note: "Mid-turn" }
+  35@00:34:57:
+    {
+      agent: pass,
+      owner: "",
+      note: "Mid-turn. Second pass 2026-11-23: verified.",
+    }
   35@00:35:43:
     {
       agent: pass,
       owner: "",
-      note: "Whole run from the disputed letters to “in the minority”, kept together so the card carries both strengths.",
+      note: "Whole run from the disputed letters to “in the minority”, kept together so the card carries both strengths. Second pass 2026-11-23: verified.",
     }
   35@00:36:46:
     {
       agent: pass,
       owner: "",
-      note: "Keeps “I think” and “not an overwhelming consensus”. The poll (British New Testament Society, “2008 or 2009”) is the show's report, not a source; not on the page.",
+      note: "Keeps “I think” and “not an overwhelming consensus”. The poll (British New Testament Society, “2008 or 2009”) is the show's report, not a source; not on the page. Second pass 2026-11-23: verified.",
     }
   35@00:37:49:
     {
       agent: pass,
       owner: "",
-      note: "Follows the “not an overwhelming consensus” card.",
+      note: "Follows the “not an overwhelming consensus” card. Second pass 2026-11-23: verified.",
     }
   35@00:45:40:
     {
       agent: pass,
       owner: "",
-      note: "Mid-turn; keeps “not all scholars”. Its “decades after his death” is stronger than any source read (pastorals-date).",
+      note: "Mid-turn; keeps “not all scholars”. Its “decades after his death” is stronger than any source read (pastorals-date). Second pass 2026-11-23: verified.",
     }
   100@00:32:25:
-    { agent: pass, owner: "", note: "Household codes; keeps “probably”." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Household codes; keeps “probably”. Second pass 2026-11-23: verified.",
+    }
   135@00:12:25:
     {
       agent: pass,
       owner: "",
-      note: "Ephesians (“it”) as disputed; Pastorals as majority.",
+      note: "Ephesians (“it”) as disputed; Pastorals as majority. Second pass 2026-11-23: verified.",
     }
   135@00:12:35:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "Separate turn after Beecher's “Okay.”; keeps the “half and half” hedge. The card stops before the Speaker's own lean: “I think I would still give it to the people who reject Pauline authorship.” Extending it would pull in “Oh, okay.”, which the Transcript has merged mid-turn. Owner decides: extend with the interjection, or keep as is.",
+      note: "Separate turn after Beecher's “Okay.”; keeps the “half and half” hedge. The card stops before the Speaker's own lean: “I think I would still give it to the people who reject Pauline authorship.” Extending it would pull in “Oh, okay.”, which the Transcript has merged mid-turn. Second pass 2026-11-23: verified (Speaker, text and hedge re-read in the final Transcript). Flag resolved under the owner's decision: card kept as is.",
     }
-  138@00:03:39: { agent: pass, owner: "", note: "2 Thessalonians" }
+  138@00:03:39:
+    {
+      agent: pass,
+      owner: "",
+      note: "2 Thessalonians. Second pass 2026-11-23: verified.",
+    }
   138@00:04:09:
-    { agent: pass, owner: "", note: "Show's own comparison of strengths." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Show's own comparison of strengths. Second pass 2026-11-23: verified.",
+    }
   144@00:37:57:
     {
       agent: pass,
       owner: "",
-      note: "Ephesians, stated flatly (“was not written by Paul, right?”), firmer than the page's “disputed”; keeps “probably” on the date. Speaker fixed in #120 (labels were swapped; audio-checked). Context 00:35:56–00:39:00: Acts 20:28 and univocality, after Beecher's point that the books come from different times and places.",
+      note: "Ephesians, stated flatly (“was not written by Paul, right?”), firmer than the page's “disputed”; keeps “probably” on the date. Speaker fixed in #120 (labels were swapped; audio-checked). Context 00:35:56–00:39:00: Acts 20:28 and univocality, after Beecher's point that the books come from different times and places. Second pass 2026-11-23: verified.",
     }
   166@00:47:48:
-    { agent: pass, owner: "", note: "Guest Speaker; “the Timothys”." }
+    {
+      agent: pass,
+      owner: "",
+      note: "Guest Speaker; “the Timothys”. Second pass 2026-11-23: verified.",
+    }
   180@00:46:06:
     {
       agent: pass,
       owner: "",
-      note: "Ephesians; keeps “I happen to think … probably”.",
+      note: "Ephesians; keeps “I happen to think … probably”. Second pass 2026-11-23: verified.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "11 statements. Core (pastorals) cites the Ehrman ch. 16 summary (Reference), Martin l17 and l19 (Reference; one author, counted once) and Bulundwe (Scholarly). That is 3 independent sources by author, or 2 at full scope, since Bulundwe's sentence covers 2 Timothy only (pastorals/4–5). The rule holds on Ehrman ch. 16 + Martin alone. If the Ehrman edition fails, it holds on Martin + Bulundwe only if the owner accepts Bulundwe's class and scope. The ch. 11 summary isn't cited under the core; if it were, it would count once with ch. 16, since every Ehrman summary (ch. 9, 11, 16) now carries author Bart D. Ehrman. Count unchanged by that author change. Martin's course assigns Ehrman's full NT textbook (4th ed., 2007): independent by author, but related.",
+      note: "Second pass 2026-11-23: verified. 10 statements (accepted cut). Core (pastorals) cites the Ehrman ch. 16 summary (Reference; publisher summary, 5th ed. 2020) and Martin l17 and l19 (Reference; one author, counted once): 2 independent authors, both Reference, each at the statement's own strength (“Most scholars agree”; “Most of us scholars believe”). Bulundwe no longer cited (owner decision). The rule holds with no margin: losing either author drops the page below it. Martin's course assigns Ehrman's full NT textbook (4th ed., 2007): independent by author, but related.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "No statement says “consensus”. Every “most scholars” rests on a source saying “most” (Ehrman summaries, Bulundwe's “most commentators”, Martin).",
+      note: "Second pass 2026-11-23: verified. No statement says “consensus”. Every “most scholars” rests on a Reference source saying “most” or stronger itself (Ehrman summaries; Martin's “almost all scholars” and “Most of us scholars”).",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "Johnson and Herzer named via Bulundwe; the 2 Timothy suggestion attributed to Martin's lectures, which don't name who made it.",
+      note: "Second pass 2026-11-23: verified. Johnson and Herzer are gone with Bulundwe. The dissent statement now reports only Martin's unnamed “scholars who would defend these letters” and the 2 Timothy question, attributed to his lectures by name, with his own rejection.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. Second pass 2026-11-23: verified.",
+    }
 sources:
   ehrman-brief-5e-ch11-summary:
     {
       agent: pass,
       owner: "",
-      edition: "5th ed., 01 October 2020, print ISBN 9780190089528: the OUP catalogue record taken in the #95 first pass (ehrman-brief-5e-ch9-summary, same textbook). This pass couldn't reopen it: the OUP catalogue pages returned 403 to the agent's browser and the Internet Archive was offline. The Learning Link pages say “5e” but carry no year.",
+      edition: "5th ed., 01 October 2020, print ISBN 9780190089528: the OUP catalogue record taken in the #95 first pass (ehrman-brief-5e-ch9-summary, same textbook). The Learning Link pages say “5e” but carry no year. Second pass 2026-11-23: verified. US catalogue page (global.oup.com/ushe/product/a-brief-introduction-to-the-new-testament-9780190089528) read in a browser: “Fifth Edition”, “Publication Date - 01 October 2020”, print ISBN 9780190089528. Inside the 30-year window.",
     }
   ehrman-brief-5e-ch16-summary:
     {
       agent: pass,
       owner: "",
-      edition: "Same textbook and record as ehrman-brief-5e-ch11-summary.",
-    }
-  bulundwe-2019-ethics-pseudepigraphy:
-    {
-      agent: flag,
-      owner: "",
-      edition: "Athens Journal of Humanities and Arts 6.4 (Oct 2019), pp. 323–344, doi 10.30958/ajha.6-4-3. Journal page describes AJHA as an “Open Access quarterly double blind peer reviewed journal” of the Athens Institute, many papers from its conferences. Author was a PhD student and scientific assistant (Geneva) at publication. Owner decides whether it meets Scholarly. Landing page https://archive-ouverte.unige.ch/unige:141374 needs JavaScript; the url is its PDF download. The PDF byline reads “Luc Bulundwe Lévy”.",
+      edition: "Same textbook and record as ehrman-brief-5e-ch11-summary. Second pass 2026-11-23: verified.",
     }
   martin-rlst152-l17:
     {
       agent: pass,
       owner: "",
-      edition: "Open Yale RLST 152, recorded Spring 2009 (course page)",
+      edition: "Open Yale RLST 152, recorded Spring 2009 (course page). Second pass 2026-11-23: verified.",
     }
   martin-rlst152-l19:
     {
       agent: pass,
       owner: "",
-      edition: "Open Yale RLST 152, recorded Spring 2009 (course page)",
+      edition: "Open Yale RLST 152, recorded Spring 2009 (course page). Second pass 2026-11-23: verified.",
     }
   martin-rlst152-l21:
     {
       agent: pass,
       owner: "",
-      edition: "Open Yale RLST 152, recorded Spring 2009 (course page)",
+      edition: "Open Yale RLST 152, recorded Spring 2009 (course page). Second pass 2026-11-23: verified.",
     }
   martin-rlst152-l24:
     {
       agent: pass,
       owner: "",
-      edition: "Open Yale RLST 152, recorded Spring 2009 (course page)",
+      edition: "Open Yale RLST 152, recorded Spring 2009 (course page). Second pass 2026-11-23: verified.",
     }
 leads:
-  - "Ehrman, A Brief Introduction to the New Testament, 5th ed.: a web-search summary (not the catalogue page) gives 1 Oct 2020 for the US listing but 13 Dec 2021 for the UK listing, ISBN 9780190089528. Both years are inside the window. The registry keeps 2020 from the #95 catalogue read."
+  - "Ehrman, A Brief Introduction to the New Testament, 5th ed.: a web-search summary (not the catalogue page) gives 1 Oct 2020 for the US listing but 13 Dec 2021 for the UK listing, ISBN 9780190089528. Both years are inside the window. Settled in the second pass: the US catalogue page gives 01 October 2020 (see sources)."
   - "NABRE introduction to 1 Timothy (https://bible.usccb.org/bible/1timothy/0): “Most scholars are convinced that Paul could not have been responsible for the vocabulary and style, the concept of church organization, or the theological expressions found in these letters.” Not re-read in this pass. The NABRE New Testament preface (https://bible.usccb.org/bible/newtestament/0, read 2026-11-23) is dated September 30, 1986 and says “In most cases the introductions and notes have been entirely rewritten and expanded”, so the NT introductions fall outside the 30-year window for state-of-the-field statements (#86)."
   - "NABRE introduction to Ephesians (https://bible.usccb.org/bible/ephesians/0): “much of critical scholarship has considered the letter’s style …”. Same 1986 window problem."
-  - "Bulundwe p. 325, note 9: “According to Burnet, 90% of the scholars consider the Pastoral Epistles (1 et 2 Tim; Titus) as pseudepigrapha”. This reports Régis Burnet, Épîtres et lettres (Cerf, 2003), 200–201, secondhand; Burnet not opened."
+  - "Bulundwe (no longer cited; see uncited) p. 325, note 9: “According to Burnet, 90% of the scholars consider the Pastoral Epistles (1 et 2 Tim; Titus) as pseudepigrapha”. This reports Régis Burnet, Épîtres et lettres (Cerf, 2003), 200–201, secondhand; Burnet not opened."
   - "Frank J. Matera, New Testament Theology (WJK, 2007), pp. 240–241: “which most scholars classify as pseudonymous”. Google Books snippet (#86)."
   - "Mark Allan Powell, Introducing the New Testament (Baker, 2009): “many scholars believe that the three Pastoral Letters can be regarded as pseudepigraphical”. Google Books snippet (#86)."
-  - "Luke T. Johnson, The First and Second Letters to Timothy (Doubleday, 2001), and Jens Herzer, “Abschied vom Konsens?”, ThLZ 129 (2004): the dissenting works Bulundwe cites. Not opened."
+  - "Luke T. Johnson, The First and Second Letters to Timothy (Doubleday, 2001), and Jens Herzer, “Abschied vom Konsens?”, ThLZ 129 (2004): the dissenting works Bulundwe cites (Bulundwe no longer cited). Not opened."
   - "Raymond E. Brown, An Introduction to the New Testament (1997): widely cited for per-letter estimates. Not readable (print-disabled scans, no Google preview)."
+uncited:
+  - "Kampotela Luc Bulundwe, “Ethics and Pseudepigraphy: Do the Ends Always Justify the Means?”, Athens Journal of Humanities and Arts 6.4 (2019), pp. 323–344 (University of Geneva repository PDF). Was undisputed/3 (p. 323, “most commentators distinguish seven authentic epistles”), pseudepigraphy/2 (p. 323, “up to six pseudepigraphical epistles”), accepted/2–5 (pp. 324, 326: the indifference idea, Amsler, forgery “so widespread” since Ehrman 2013, Aune and Burnet), pastorals/4–5 (p. 336 and note 74: 2 Timothy's pseudonymity “the majority but not unanimous position”; the consensus questioned by Johnson and Herzer) and pastorals-dissent/1–2 (note 74: Herzer, only 1 Timothy pseudonymous; Johnson, all three authentic). Dropped 2026-11-23 by the owner's decision: the publisher (ATINER) has a weak reputation and the article's scope on the Pastorals is narrow. Quotes not re-matched in the second pass, since the source is not cited. The page loses Johnson and Herzer by name and “not unanimous”."
+  - "Ehrman ch. 16 summary, section “Pseudonymity in the Ancient World”: “This is not to say, however, that this behavior was condoned in antiquity. On the contrary, ancient authors almost universally condemned the practice.” Verified verbatim in the second pass 2026-11-23. Was accepted/1. The accepted statement (“Was writing in someone else's name accepted in antiquity?” / “Views differ …”) is cut: “Views differ” and “has spread since 2013” rested only on Bulundwe. This sentence alone would answer the question one way while the first pass's reading found the matter disputed, so it is not used to rebuild the statement (when in doubt, cut)."
