@@ -1,6 +1,7 @@
 {{ define "head-styles" }}
   {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") (resources.Get "css/prototype-timeline-rail.css") | resources.Concat "css/timeline-list.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
+  {{ partial "prototype/timeline-rail-dbg.html" . }}
 {{ end }}
 
 {{ define "main" }}

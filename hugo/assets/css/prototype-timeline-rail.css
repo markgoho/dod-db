@@ -296,7 +296,8 @@
   font-weight: var(--font-weight-bold);
 }
 
-.rail-m__band:has(> .rail-m__era:is(:target-current, .target-current)) {
+:root:not(.dbg-nohas)
+  .rail-m__band:has(> .rail-m__era:is(:target-current, .target-current)) {
   background: var(--tan-100);
 }
 
@@ -435,7 +436,8 @@
   display: none;
 }
 
-[data-mode="time"]:has(:is(:target-current, .target-current))
+:root:not(.dbg-nohas)
+  [data-mode="time"]:has(:is(:target-current, .target-current))
   .rail-m__now-default {
   display: none;
 }
@@ -467,11 +469,13 @@
   border-color: var(--color-action);
 }
 
-.rail-m__band:has(> .rail-m__tick:is(:target-current, .target-current)) {
+:root:not(.dbg-nohas)
+  .rail-m__band:has(> .rail-m__tick:is(:target-current, .target-current)) {
   background: var(--tan-100);
 }
 
-.rail-m__band:has(> .rail-m__tick:is(:target-current, .target-current))
+:root:not(.dbg-nohas)
+  .rail-m__band:has(> .rail-m__tick:is(:target-current, .target-current))
   > .rail-m__era {
   color: var(--color-text-main);
   font-weight: var(--font-weight-bold);
@@ -863,4 +867,94 @@
 
 .proto-switcher__label {
   white-space: nowrap;
+}
+
+/*
+  ---------- Diagnostics (?dbg=, prototype only) ----------
+  The B2 strip trembles by one device pixel at fractional device pixel ratios
+  (1.25, 1.5): see the timeline-rail-dbg partial for the toggle list.
+*/
+
+/* fixed: a fixed rail on whole CSS pixels, shown only while the axis fills the viewport. */
+@media (width >= 108rem) {
+  @supports (animation-timeline: view()) {
+    .dbg-fixed .proto-rail {
+      --rail-w: clamp(
+        8rem,
+        (100dvw - var(--content-max-width)) / 2 - 2 * var(--rail-gap),
+        11rem
+      );
+
+      animation: dbg-rail-show linear;
+      animation-range: contain;
+      animation-timeline: --tl-axis;
+      block-size: round(down, 100dvh - 2 * var(--space-s), 1px);
+      inline-size: round(down, var(--rail-w), 1px);
+      inset-block-start: round(var(--space-s), 1px);
+      inset-inline-start: round(var(--rail-gap), 1px);
+      margin: 0;
+      opacity: 0;
+      position: fixed;
+      visibility: hidden;
+    }
+
+    @keyframes dbg-rail-show {
+      from,
+      to {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  /* round: sticky, with every offset and size on whole CSS pixels and its own layer. */
+  .dbg-round .proto-rail {
+    block-size: round(down, 100dvh - 2 * var(--space-s), 1px);
+    inline-size: round(down, var(--rail-w), 1px);
+    inset-block-start: round(var(--space-s), 1px);
+    margin-inline-start: round(var(--rail-gap) - (100dvw - 100%) / 2, 1px);
+    will-change: transform;
+  }
+}
+
+.dbg-fixed .rail-m__caption,
+.dbg-round .rail-m__caption {
+  block-size: round(
+    up,
+    (1 + var(--caption-lines)) * var(--line-height-heading) * 1em,
+    1px
+  );
+}
+
+.dbg-fixed .rail-m__tick,
+.dbg-round .rail-m__tick {
+  inset-block-start: round(var(--pos) * 100%, 1px);
+}
+
+.dbg-nospy .proto-rail__toc {
+  scroll-target-group: none;
+}
+
+.dbg-nostate .proto-rail {
+  container-type: normal;
+}
+
+.dbg-nobg *,
+.dbg-nobg *::before,
+.dbg-nobg *::after {
+  background-attachment: scroll !important;
+  background-image: none !important;
+}
+
+.dbg-noanim *,
+.dbg-noanim *::before,
+.dbg-noanim *::after {
+  animation: none !important;
+  scroll-timeline: none !important;
+  transition: none !important;
+  view-timeline: none !important;
+}
+
+.dbg-noanim .proto-rail-layout {
+  timeline-scope: none !important;
 }

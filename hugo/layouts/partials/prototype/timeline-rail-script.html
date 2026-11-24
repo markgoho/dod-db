@@ -17,6 +17,9 @@
   */
 -}}
 <script type="module">
+  // ?dbg=nojs: skip all prototype rail JS (a top-level throw stops this module).
+  if (document.documentElement.classList.contains("dbg-nojs"))
+    throw new Error("dbg=nojs: prototype rail script skipped");
   const root = document.documentElement;
   const params = new URL(location.href).searchParams;
   const forced = params.get("spy") === "fallback";

@@ -1,0 +1,18 @@
+{{- /*
+  PROTOTYPE (timeline rail): diagnostic toggles for the B2 tremble. ?dbg= takes
+  a comma list; each name becomes an html.dbg-<name> class (CSS in
+  prototype-timeline-rail.css, "Diagnostics"). nojs skips the rail script.
+  Names: fixed, round, nospy, nocurrent (alias of nospy), nostate, nohas,
+  nobg, noanim, nojs.
+  */
+-}}
+<script>
+  (() => {
+    const names = (new URL(location.href).searchParams.get("dbg") ?? "")
+      .split(",")
+      .map(s => s.trim())
+      .filter(Boolean);
+    if (names.includes("nocurrent")) names.push("nospy");
+    for (const n of names) document.documentElement.classList.add(`dbg-${n}`);
+  })();
+</script>

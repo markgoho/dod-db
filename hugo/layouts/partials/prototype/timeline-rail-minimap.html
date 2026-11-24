@@ -163,7 +163,7 @@
     <style>
       {{- range $i, $id := $sel }}
         {{- if $i }},{{ end }}
-        [data-mode="time"]:has(a[href="#{{ $id }}"]:is(:target-current, .target-current)) [data-now="{{ $id }}"]
+        :root:not(.dbg-nohas) [data-mode="time"]:has(a[href="#{{ $id }}"]:is(:target-current, .target-current)) [data-now="{{ $id }}"]
       {{- end }} {
         display: -webkit-box;
       }
