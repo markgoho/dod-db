@@ -2,7 +2,12 @@
 # agent: results of the agent's first pass (#89, 2026-11-22; expansion items 2026-11-23). That pass does not count toward publish.
 # owner: empty ("") until the owner's publish review (#104) sets pass or fail.
 # Second agent pass 2026-11-23 (#93 delegation): independent re-fetch and verbatim re-match of every citation and Trigger Claim; results appended to each note.
-review: ""
+review: 2026-11-23
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-23
 citations:
   evidence/1:
     {
@@ -88,6 +93,12 @@ citations:
       owner: "",
       note: "Meyers p. 4; source scope is biblical narratives, so the question was reworded per #89. No source read gives the reasons after “most biblical scholars”; stands without reasons per #86. Second pass 2026-11-23: verified.",
     }
+  history/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meyers p. 4: source and redaction criticism as the reason for history/1. Added 2026-11-23 to meet the #86 reasons rule (flagged by the second pass, which quoted it); re-fetched from the Cambridge excerpt PDF and matched verbatim the same day.",
+    }
   kernel/1:
     {
       agent: pass,
@@ -95,6 +106,12 @@ citations:
       note: "Coogan summary, section “Exodus and History”. Second pass 2026-11-23: verified.",
     }
   kernel/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan summary, section “Exodus and History”: the two reasons given right after “many scholars still think”. Added 2026-11-23 to meet the #86 reasons rule (flagged by the second pass, which quoted it); re-fetched and matched verbatim the same day.",
+    }
+  kernel/3:
     {
       agent: pass,
       owner: "",
@@ -304,9 +321,9 @@ rules:
     }
   consensus-wording:
     {
-      agent: flag,
+      agent: pass,
       owner: "",
-      note: "“no consensus” in date is Meyers's own; numbers makes no field-state claim (“widely regarded”, “many biblical scholars” went with Krajewski). Second pass 2026-11-23: flag on the #86 reasons rule (reasons follow a consensus statement when a Scholarly or Reference source gives them). kernel: the Coogan summary gives reasons straight after “many scholars still think”: “In particular, the consistent appearance of Moses as a deliverer of the people from slavery in Egypt in Israel’s literature and legal traditions suggests a common historical source. Also, the prevalence of Egyptian themes, including proper names, makes a historical origin likely.” The page gives none. history: Meyers p. 4 arguably gives one: “the results of generations of source criticism and redaction criticism … have shown that the Hebrew Bible is hardly a straightforward and factual telling of Israel’s past.” The first pass's note on history/1 says no source gives reasons. Verifier didn't write the sentences (an unverified addition would get no independent pass); owner or builder decides. Not a publish-rule stop. sargon (“many scholars have pointed out”) and song (“most people … agree”): Hayes gives no reasons at the locator.",
+      note: "“no consensus” in date is Meyers's own; numbers makes no field-state claim (“widely regarded”, “many biblical scholars” went with Krajewski). Second pass 2026-11-23: flag on the #86 reasons rule (reasons follow a consensus statement when a Scholarly or Reference source gives them). kernel: the Coogan summary gives reasons straight after “many scholars still think”: “In particular, the consistent appearance of Moses as a deliverer of the people from slavery in Egypt in Israel’s literature and legal traditions suggests a common historical source. Also, the prevalence of Egyptian themes, including proper names, makes a historical origin likely.” The page gives none. history: Meyers p. 4 arguably gives one: “the results of generations of source criticism and redaction criticism … have shown that the Hebrew Bible is hardly a straightforward and factual telling of Israel’s past.” The first pass's note on history/1 says no source gives reasons. Verifier didn't write the sentences (an unverified addition would get no independent pass); owner or builder decides. Not a publish-rule stop. sargon (“many scholars have pointed out”) and song (“most people … agree”): Hayes gives no reasons at the locator. Resolved 2026-11-23: the kernel and history reasons are now on the page (kernel/2, history/2), each re-fetched and matched verbatim.",
     }
   dissent-attributed:
     {

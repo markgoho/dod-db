@@ -214,7 +214,7 @@ _Avoid_: Citation, snippet source
 - A new **Episode** can add a **Trigger Claim** to a **Synthesis Page** or suggest a new subject; it never changes a statement.
 - A **Synthesis Page** shows the date its **External Sources** were read; its statements change only when the owner re-reviews it.
 - An **External Source** is described once and shared by every **Synthesis Page** that cites it.
-- A **Scholarship Page** is published only after the owner has opened every citation and checked every **Trigger Claim**; the agent's checks never stand in for that review.
+- A **Scholarship Page** is published only after an independent second agent pass has re-checked every citation, **Trigger Claim** and **External Source**; the owner delegated the per-citation review to that pass (#93, 2026-11-23).
 - **Guest Speaker** names should be normalized consistently across **Episodes** and **Taxonomy Pages**.
 
 ## Example dialogue

@@ -1,9 +1,8 @@
 ---
 title: "Moses and the Exodus"
 dek: "What archaeology, Egyptian records and the text itself tell scholars about the Exodus and Moses."
-draft: true
 core: evidence
-sourcesRead:
+sourcesRead: 2026-11-23
 related:
   books: [exodus]
   tags: [moses]
@@ -45,7 +44,7 @@ statements:
         read: 2026-11-22
   - id: moses
     group: "The evidence outside the Bible"
-    question: "Is Moses mentioned outside the Bible?"
+    question: "Do Egyptian records mention Moses?"
     short: "No text found in Egypt mentions him."
     text: "No text discovered in Egypt mentions Moses or Aaron."
     cites:
@@ -95,22 +94,30 @@ statements:
     group: "How scholars read the account"
     question: "Do scholars read biblical narratives like Exodus as straightforward history?"
     short: "Most have not read biblical narrative as straightforward history for over a century."
-    text: "For more than a century most biblical scholars have recognized that biblical narratives cannot be read as straightforward history."
+    text: "For more than a century most biblical scholars have recognized that biblical narratives cannot be read as straightforward history. Meyers puts this down to generations of source criticism and redaction criticism, which have shown that the Hebrew Bible is hardly a straightforward and factual telling of Israel’s past."
     cites:
       - source: meyers-2005-exodus
         locator: "p. 4"
         quote: "As most biblical scholars have done for more than a century, they recognize that biblical narratives cannot be read as straightforward history."
         read: 2026-11-22
+      - source: meyers-2005-exodus
+        locator: "p. 4"
+        quote: "have shown that the Hebrew Bible is hardly a straightforward and factual telling of Israel’s past"
+        read: 2026-11-23
   - id: kernel
     group: "How scholars read the account"
     question: "Did some kind of exodus happen?"
     short: "Many scholars think some history is preserved."
-    text: "Many scholars still think that some genuine history is preserved in Exodus. The chapter summary for Coogan and Chapman's introductory textbook holds that the accounts may not preserve the details accurately, but that some sort of exodus occurred in Israel's history."
+    text: "Many scholars still think that some genuine history is preserved in Exodus. The summary gives two reasons: Moses appears consistently as the deliverer from slavery in Egypt throughout Israel’s literature and legal traditions, which suggests a common historical source, and Egyptian themes, including proper names, are common enough to make a historical origin likely. The chapter summary for Coogan and Chapman's introductory textbook holds that the accounts may not preserve the details accurately, but that some sort of exodus occurred in Israel's history."
     cites:
       - source: coogan-brief-4e-summary
         locator: "section “Exodus and History”"
         quote: "many scholars still think that there is some genuine history preserved in Exodus."
         read: 2026-11-22
+      - source: coogan-brief-4e-summary
+        locator: "section “Exodus and History”"
+        quote: "In particular, the consistent appearance of Moses as a deliverer of the people from slavery in Egypt in Israel’s literature and legal traditions suggests a common historical source. Also, the prevalence of Egyptian themes, including proper names, makes a historical origin likely."
+        read: 2026-11-23
       - source: coogan-brief-4e-summary
         locator: "section “Implications for Our Study”"
         quote: "Although the accounts of the Exodus may not preserve the historical details of this event accurately, it certainly appears that some sort of exodus occurred in Israel’s history."
