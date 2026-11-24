@@ -7,7 +7,12 @@
 # and dashes normalised), and every Yale locator against the transcript's chapter headings.
 # Ep 144 [00:37:57] "Ephesians was not written by Paul" was dropped in the first pass because the
 # Transcript's speaker labels were swapped. #120 fixed them (audio-checked); it is now a Trigger Claim.
-review: ""
+review: 2026-11-23
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#93"
+  secondPass: 2026-11-23
 citations:
   undisputed/1:
     {

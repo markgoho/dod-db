@@ -1,9 +1,8 @@
 ---
 title: "Pauline Authorship"
 dek: "Which letters in Paul's name scholars think he wrote, which they doubt, and why."
-draft: true
 core: pastorals
-sourcesRead:
+sourcesRead: 2026-11-23
 related:
   books:
     [
