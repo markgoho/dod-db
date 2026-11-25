@@ -3,10 +3,12 @@
   four-panel comic page. Each panel is split by a lightning bolt into the two
   accounts of one moment, Genesis 1 on the left and Genesis 2 on the right:
   what is there before, how God makes, who comes first, how the woman is
-  made and, full width, why humans are made.
+  made, how near God is, how each is told and, full width, why humans are
+  made. One panel per difference in `differ` that can be drawn; the names
+  for God sit in the key.
 
   A view of the page's reviewed statements `two` and `differ` (text and
-  cites 1, 2, 8, 9, 10), with `deep` for panel 1's Genesis 1 half; it makes no
+  cites 1, 2, 5, 6, 7, 8, 9, 10), with `deep` for panel 1's Genesis 1 half; it makes no
   claim they don't. Every panel takes the bolt and the 1/2 badges, because
   the page assigns each beat to one account. The order of creation is on the
   plates, not in the art: a picture cannot assert what came first.
@@ -68,8 +70,22 @@
   "left" (dict "id" "together" "alt" "A man and a woman stand side by side, newly made, in a shaft of light.")
   "right" (dict "id" "woman-2" "alt" "The man lies asleep under a tree; the woman, newly made, stands beside him.")
   "plates" (slice
-  (dict "pos" "tl" "badge" "1" "big" "Together" "sub" "male and female" "ref" "Genesis 1:27" "label" "Gen 1:27")
-  (dict "pos" "tr" "badge" "2" "big" "From his rib" "sub" "the woman, formed after" "ref" "Genesis 2:21-22" "label" "Gen 2:21–22")))
+  (dict "pos" "bl" "badge" "1" "big" "Together" "sub" "“male and female”" "ref" "Genesis 1:27" "label" "Gen 1:27")
+  (dict "pos" "tr" "badge" "2" "big" "From his rib" "sub" "“man and woman”: other Hebrew words" "ref" "Genesis 2:21-22" "label" "Gen 2:21–22")))
+  (dict
+  "id" "near" "box" "How near is God?"
+  "left" (dict "id" "near-1" "alt" "A small ordered world far below a vast sky; light streams down from very high above, with no figure seen.")
+  "right" (dict "id" "near-2" "alt" "In an evening garden, the bare feet and robe hem of a large figure stroll along a path.")
+  "plates" (slice
+  (dict "pos" "bl" "badge" "1" "big" "Remote" "sub" "creating by word and will" "ref" "Genesis 1:1-2:4" "label" "Gen 1")
+  (dict "pos" "br" "badge" "2" "big" "In the garden" "sub" "walking in the cool of the evening" "ref" "Genesis 3:8" "label" "Gen 3:8")))
+  (dict
+  "id" "told" "box" "How is it told?"
+  "left" (dict "id" "told-1" "alt" "A formal, symmetrical landscape, everything set out in matching pairs under a balanced sky.")
+  "right" (dict "id" "told-2" "alt" "The man kneels laughing in the mud of a lush garden as a goat tugs his tunic and a bird sits on his head.")
+  "plates" (slice
+  (dict "pos" "bl" "badge" "1" "big" "Formal" "sub" "highly structured, abstract" "ref" "Genesis 1:1-2:4" "label" "Gen 1")
+  (dict "pos" "br" "badge" "2" "big" "Earthy" "sub" "dramatic, full of puns" "ref" "Genesis 2:4-3:24" "label" "Gen 2–3")))
   (dict
   "id" "why" "box" "Why are humans made?" "wide" true
   "left" (dict "id" "why-1" "alt" "The man and woman stand on a rise over a wide land full of calm animals, the man's arm outstretched over it.")
@@ -109,7 +125,9 @@
           class="gen-comic__frame gen-comic__frame--{{ .id }}{{ if .wide }}
             gen-comic__frame--wide
           {{ end }}"
-          {{ if in (slice "before" "first" "why") .id }}data-card-hide{{ end }}>
+          {{ if in (slice "before" "first" "near" "told" "why") .id }}
+            data-card-hide
+          {{ end }}>
           <figure class="gen-comic__figure">
             <div class="gen-comic__art">
               {{ partial "inline/gen-half.html" (merge .left (dict "side" "left")) }}

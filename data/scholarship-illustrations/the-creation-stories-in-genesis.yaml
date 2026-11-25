@@ -155,3 +155,62 @@ images:
       honest work. The top quarter of the picture and the bottom right
       corner are open, uncluttered sky and soil. No woman, no animals, no
       god, no hands from the sky, no other people, no text.
+
+  # Panel 5: how near God is. Never a face or a whole figure.
+  - id: near-1
+    statements: [differ]
+    aspect: "4:5"
+    refs: [make-1, first-1]
+    alt: "A tiny ordered world far below a vast, empty sky; light streams down from very high above. No figure is seen."
+    prompt: >-
+      A vast empty sky fills most of the picture, deep and high, with
+      golden amber light streaming down from far above the top edge. Far
+      below, small in the lower part of the picture, a tidy ordered world:
+      a little green land with tiny trees and a sea, seen from very high
+      up. The light has no source that can be seen: no sun disc, no figure,
+      no hand, no face, no eye. The bottom left corner is open sea. No
+      people, no text.
+
+  - id: near-2
+    statements: [differ]
+    aspect: "4:5"
+    refs: [woman-2, why-2]
+    alt: "In the garden at evening, the bare feet and robe hem of a large figure stroll along a path between trees."
+    prompt: >-
+      A garden path at evening, amber and rust sunset light, leafy trees
+      and fruit on both sides, the SAME drawing style as the references.
+      Walking along the path toward the right: only the lower legs, bare
+      feet and plain off-white robe hem of a large figure, cropped at the
+      knee by the top of the picture. No body above the knee, no face, no
+      hands. A few footprints on the path behind. The bottom right corner
+      is open path. No other people, no animals, no text.
+
+  # Panel 6: how each account is told.
+  - id: told-1
+    statements: [differ, days]
+    aspect: "4:5"
+    refs: [first-1]
+    alt: "A formal, perfectly symmetrical scene: a mirrored landscape under a balanced sky, everything set out in neat order."
+    prompt: >-
+      A formal, perfectly symmetrical, calm composition in the SAME drawing
+      style as the reference: a landscape mirrored left to right about a
+      central axis, with a sea and a river, matching trees in matching
+      pairs on either side, birds in a neat V, a sun on one side of the sky
+      balanced by a crescent moon on the other. Everything set out in neat,
+      orderly rows and pairs, like a stately hymn. Abstract and still. The
+      bottom left corner is open plain ground. No people, no god, no text,
+      no numbers.
+
+  - id: told-2
+    statements: [differ]
+    aspect: "4:5"
+    refs: [why-2, woman-2]
+    alt: "A lively, earthy scene: the man, smeared with mud, laughs as a goat tugs his tunic in a tangle of garden plants."
+    prompt: >-
+      A lively, earthy, comic scene in the SAME drawing style and with the
+      SAME man as the references (same face and hair, plain rust red
+      tunic): in a lush tangle of garden plants he kneels in the mud,
+      smeared with earth, laughing as a cheeky goat tugs at his tunic and
+      a bird lands on his head. Busy, warm, full of movement and humour.
+      The bottom right corner is open muddy ground. No woman, no god, no
+      hands from the sky, no text.

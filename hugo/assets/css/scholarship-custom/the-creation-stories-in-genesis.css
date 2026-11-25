@@ -264,7 +264,7 @@
   }
 }
 
-/* The poster: two by two on the 4:5 canvas. */
+/* The poster: three panels to a row on the 4:5 canvas, the wide panel across the bottom. */
 
 .scholarship-share:target .gen-comic__page {
   gap: var(--space-2xs);
@@ -282,20 +282,51 @@
 
 .scholarship-share:target .gen-comic__strip {
   gap: var(--space-2xs);
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .scholarship-share:target .gen-comic__frame--wide {
   grid-column: 1 / -1;
 }
 
-/* Shorter panels on the poster, so five fit the fixed canvas. */
-.scholarship-share:target .gen-comic__art {
-  aspect-ratio: 3 / 2;
+.scholarship-share:target .gen-comic__frame--wide .gen-comic__art {
+  aspect-ratio: 3 / 1;
 }
 
-.scholarship-share:target .gen-comic__frame--wide .gen-comic__art {
-  aspect-ratio: 4 / 1;
+/* Three to a row makes each panel narrow: smaller labels and plates, and top-right plates drop below the label row. */
+.scholarship-share:target .gen-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.scholarship-share:target
+  .gen-comic__frame:not(.gen-comic__frame--wide)
+  .comic-plate {
+  max-inline-size: 42%;
+  padding: 0.6cqi 1cqi 0.8cqi;
+}
+
+.scholarship-share:target
+  .gen-comic__frame:not(.gen-comic__frame--wide)
+  .comic-plate__big {
+  font-size: 4.6cqi;
+}
+
+.scholarship-share:target
+  .gen-comic__frame:not(.gen-comic__frame--wide)
+  .comic-plate__sub {
+  font-size: 2.9cqi;
+}
+
+.scholarship-share:target
+  .gen-comic__frame:not(.gen-comic__frame--wide)
+  .comic-plate--tr {
+  inset-block-start: 9cqi;
+}
+
+.scholarship-share:target .gen-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
 }
 
 /* The card: panels 2 and 4 side by side under the title. */
