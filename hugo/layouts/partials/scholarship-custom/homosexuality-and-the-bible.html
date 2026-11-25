@@ -1,0 +1,166 @@
+{{- /*
+  Custom block for /scholarship/homosexuality-and-the-bible/: the modern
+  concept of sexual orientation set beside the few passages that speak of
+  same-sex acts, with a broken link between them. A view of the page's
+  reviewed statements (`orientation`, `passages`, `sodom`, `leviticus`,
+  `romans`, `vice-lists`); it makes no claim they don't. Reword a line only
+  when the statement it comes from is re-reviewed.
+
+  Two sides: the modern idea is drawn as an index card, each passage as the
+  same scroll, so the shape carries modern against ancient. The letter on a
+  scroll's seal is its testament's language (Hebrew or Greek), which the
+  panel heading repeats. Captions restate what the cited scholars say each
+  passage is about; they are not Bible quotations, and the references link to
+  the verses.
+  */
+-}}
+{{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
+{{- $groups := slice
+  (dict
+  "key" "hebrew"
+  "name" "Hebrew Bible"
+  "glyph" "א"
+  "passages" (slice
+  (dict "book" "Genesis" "verses" "19:1–11" "says" "Threatened gang rape of guests")
+  (dict "book" "Leviticus" "verses" "18:22" "says" "Sex between males")
+  (dict "book" "Leviticus" "verses" "20:13" "says" "Sex between males")))
+  (dict
+  "key" "greek"
+  "name" "New Testament"
+  "glyph" "Ω"
+  "passages" (slice
+  (dict "book" "Romans" "verses" "1:26–27" "says" "One example of turning to idols")
+  (dict "book" "1 Corin&shy;thians" "verses" "6:9–10" "says" "Two Greek words, meaning debated")
+  (dict "book" "1 Timothy" "verses" "1:9–10" "says" "A Greek word, meaning uncertain")))
+-}}
+<section class="cloud-section hsx-texts">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  {{/* Drawn once: the scroll (reused six times), the card and the burst. */}}
+  <svg class="hsx-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <g id="hsx-scroll">
+        <rect class="hsx-scroll__shadow" x="21" y="22" width="72" height="92" />
+        <rect class="hsx-scroll__paper" x="14" y="15" width="72" height="92" />
+        <path class="hsx-scroll__writing" d="M26 34h48M26 43h48M26 52h28" />
+        <rect
+          class="hsx-scroll__roll"
+          x="4"
+          y="4"
+          width="92"
+          height="18"
+          rx="9" />
+        <rect
+          class="hsx-scroll__roll"
+          x="4"
+          y="100"
+          width="92"
+          height="18"
+          rx="9" />
+        <path class="hsx-scroll__shine" d="M16 11h44M16 107h44" />
+      </g>
+      <g id="hsx-card">
+        <rect class="hsx-card__shadow" x="12" y="14" width="184" height="116" />
+        <rect class="hsx-card__paper" x="4" y="6" width="184" height="116" />
+        <path class="hsx-card__rule" d="M4 34h184" />
+        <path class="hsx-card__lines" d="M20 92h152M20 106h110" />
+      </g>
+      <path
+        id="hsx-burst"
+        d="M50.0 1.0L58.7 12.0L71.3 5.9L74.3 19.5L88.3 19.4L85.1 33.1L97.8 39.1L89.0 50.0L97.8 60.9L85.1 66.9L88.3 80.6L74.3 80.5L71.3 94.1L58.7 88.0L50.0 99.0L41.3 88.0L28.7 94.1L25.7 80.5L11.7 80.6L14.9 66.9L2.2 60.9L11.0 50.0L2.2 39.1L14.9 33.1L11.7 19.4L25.7 19.5L28.7 5.9L41.3 12.0z" />
+    </defs>
+  </svg>
+  <div class="hsx-texts__panel panel">
+    <p class="hsx-texts__claim">
+      <span class="hsx-texts__badge" aria-hidden="true">
+        <svg viewBox="0 0 100 100" focusable="false">
+          <use href="#hsx-burst" />
+        </svg>
+        <span>6</span>
+      </span>
+      <span
+        >A few passages speak of same-sex acts. Their Hebrew and Greek have no
+        specific word for homosexuality.</span
+      >
+    </p>
+    <div class="hsx-texts__sides">
+      <section class="hsx-texts__modern">
+        <h3 class="hsx-texts__label">Today</h3>
+        <div class="hsx-card">
+          <svg viewBox="0 0 200 136" aria-hidden="true" focusable="false">
+            <use href="#hsx-card" />
+          </svg>
+          <p class="hsx-card__word">homo&shy;sexuality</p>
+        </div>
+        <p class="hsx-texts__caption">
+          The modern concept of sexual orientation
+        </p>
+      </section>
+      <div class="hsx-texts__gap">
+        <svg
+          class="hsx-texts__break"
+          viewBox="0 0 120 40"
+          aria-hidden="true"
+          focusable="false">
+          <path class="hsx-texts__link" d="M4 20h36M80 20h36" />
+          <path class="hsx-texts__x" d="M50 8l20 24M70 8L50 32" />
+        </svg>
+        <p class="hsx-texts__verdict">Unknown in biblical times</p>
+      </div>
+      <div class="hsx-texts__ancient">
+        {{- range $groups }}
+          {{- $glyph := .glyph }}
+          <section class="hsx-texts__group hsx-texts__group--{{ .key }}">
+            <h3 class="hsx-texts__label">{{ .name }}</h3>
+            <ul class="hsx-texts__list">
+              {{- range .passages }}
+                <li>
+                  <span class="hsx-scroll">
+                    <svg
+                      viewBox="0 0 100 122"
+                      aria-hidden="true"
+                      focusable="false">
+                      <use href="#hsx-scroll" />
+                      <circle class="hsx-scroll__seal" cx="50" cy="76" r="17" />
+                      <text class="hsx-scroll__glyph" x="50" y="84">
+                        {{- $glyph -}}
+                      </text>
+                    </svg>
+                  </span>
+                  {{- $ref := printf "%s %s" (replace .book "&shy;" "") .verses }}
+                  <a
+                    class="hsx-texts__ref"
+                    href="{{ printf "%s%s" $bg (urlquery $ref) | safeURL }}"
+                    rel="noopener"
+                    ><span>{{ replace .book " " "&nbsp;" | safeHTML }}</span>
+                    <span>{{ .verses }}</span></a
+                  >
+                  <span class="hsx-texts__says" data-card-hide
+                    >{{ .says }}</span
+                  >
+                </li>
+              {{- end }}
+            </ul>
+          </section>
+        {{- end }}
+      </div>
+    </div>
+    <p class="hsx-texts__note" data-card-hide>
+      Scholars say the biblical writers had no concept of sexual orientation in
+      the modern sense. Whether any ancient writers had an idea like it is
+      debated.
+    </p>
+    <p class="hsx-texts__more scholarship-meta" data-share-hide>
+      Every line here comes from the cited answers below:
+      <a href="#orientation">sexual orientation</a>,
+      <a href="#passages">which passages</a>, <a href="#sodom">Sodom</a>,
+      <a href="#leviticus">Leviticus</a>,
+      <a href="#romans">Romans&nbsp;1</a> and
+      <a href="#vice-lists">the Greek words</a>.
+    </p>
+  </div>
+</section>
