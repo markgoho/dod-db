@@ -13,6 +13,7 @@ import {
   checkStatementIds,
   readCardManifest,
 } from "./question-cards.js";
+import { checkScriptureLinks } from "./scholarship-scripture-links.js";
 import {
   CiteSchema,
   checkPublishGate,
@@ -288,7 +289,10 @@ export function checkCandidates(
  */
 export async function checkScholarship(
   root: string,
-  { cards = true }: { cards?: boolean } = {},
+  {
+    cards = true,
+    scriptureLinks = true,
+  }: { cards?: boolean; scriptureLinks?: boolean } = {},
 ): Promise<string[]> {
   const errors: string[] = [];
   const contentDir = path.join(root, "hugo/content/scholarship");
@@ -366,6 +370,8 @@ export async function checkScholarship(
       errors.push(...(await checkCards(root, slug, page, manifest)));
     }
   }
+
+  if (scriptureLinks) errors.push(...(await checkScriptureLinks(root)));
 
   return errors;
 }

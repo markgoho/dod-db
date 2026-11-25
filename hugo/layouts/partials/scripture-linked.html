@@ -1,0 +1,14 @@
+{{- /*
+  A string with its chapter and verse Scripture References linked to
+  BibleGateway. The linked HTML comes from hugo/data/scripture-links.json
+  (bun run generate:scholarship-scripture), keyed by the exact string, so the
+  string in front matter stays verbatim. A string not in the map renders as
+  plain, escaped text.
+  */
+-}}
+{{- $links := index hugo.Data "scripture-links" | default dict -}}
+{{- with index $links . -}}
+  {{- . | safeHTML -}}
+{{- else -}}
+  {{- . -}}
+{{- end -}}

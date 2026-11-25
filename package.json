@@ -24,6 +24,7 @@
     "scholarship:question-cards": "bun run src/hugo/render-question-cards.ts",
     "generate:tag-index": "bun run src/hugo/generate-tag-episode-index.ts",
     "generate:book-index": "bun run src/hugo/generate-book-episode-index.ts",
+    "generate:scholarship-scripture": "bun run src/hugo/scholarship-scripture-links.ts",
     "topic-page:gather": "bun run src/scripts/gather-topic-context.ts",
     "topic-page:save": "bun run src/scripts/save-topic-page.ts",
     "topic-page:move": "bun run src/scripts/move-topic-page.ts",
@@ -31,10 +32,10 @@
     "book-page:save": "bun run src/scripts/save-book-page.ts",
     "guest-page:gather": "bun run src/scripts/gather-guest-page.ts",
     "guest-page:save": "bun run src/scripts/save-guest-page.ts",
-    "hugo:dev": "bun run generate:tag-index && bun run generate:book-index && cd hugo && hugo server",
+    "hugo:dev": "bun run generate:tag-index && bun run generate:book-index && bun run generate:scholarship-scripture && cd hugo && hugo server",
     "build:local": "bun run generate:tag-index && bun run generate:book-index && rm -rf hugo/public && cd hugo && hugo && bun run index",
     "index": "bunx pagefind --site hugo/public",
-    "build:hugo": "bun run generate:tag-index && bun run generate:book-index && cd hugo && hugo --minify && bun run index"
+    "build:hugo": "bun run generate:tag-index && bun run generate:book-index && bun run generate:scholarship-scripture && cd hugo && hugo --minify && bun run index"
   },
   "dependencies": {
     "@google/genai": "^2.18.0",

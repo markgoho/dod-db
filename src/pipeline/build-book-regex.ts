@@ -7,7 +7,7 @@ import { bareNumberWordPattern } from "./number-words.js";
  * Matches patterns like:
  * - "Genesis 1" (chapter only)
  * - "Genesis 1:25" (chapter:verse)
- * - "Genesis 1:1-10" (verse range)
+ * - "Genesis 1:1-10" (verse range, hyphen or en dash)
  * - "Gen 1:25" (abbreviation)
  * - "Gen. 1:25" (abbreviation with period)
  * - "Acts chapter 7" (spoken chapter form)
@@ -25,7 +25,7 @@ export function buildBookRegex(book: BookDefinition): RegExp {
   // after the other"). Other spelled-out numbers are safe standalone.
   const number = String.raw`(?:\d{1,3}|${bareNumberWordPattern}|(?<=chapter\s+)one)`;
   const verseSeparator = String.raw`(?::|,?\s+verses?\s+)`;
-  const rangeSeparator = String.raw`(?:\s*-\s*|\s+(?:to|through)\s+)`;
+  const rangeSeparator = String.raw`(?:\s*[-–]\s*|\s+(?:to|through)\s+)`;
   const pattern = String.raw`\b${namesGroup}${chapterWord}\s+(${number})(?:${verseSeparator}(${number})(?:${rangeSeparator}(${number}))?)?\b`;
   return new RegExp(pattern, "gi");
 }

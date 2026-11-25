@@ -50,12 +50,14 @@
       Share
     </button>
   </div>
-  <p>{{ $s.text }}</p>
+  <p>{{ partial "scripture-linked.html" $s.text }}</p>
   <ul class="scholarship-cites" role="list">
     {{ range $s.cites }}
       {{ $src := index $registry .source }}
       <li class="scholarship-cite">
-        <blockquote class="scholarship-cite__quote">“{{ .quote }}”</blockquote>
+        <blockquote class="scholarship-cite__quote">
+          “{{ partial "scripture-linked.html" .quote }}”
+        </blockquote>
         {{/* Author-date goes to the Sources used row; the locator opens the passage. */}}
         <p class="scholarship-meta">
           {{ printf `<a href="%s#source-%s">%s</a>, <a href="%s" rel="noopener">%s</a>` (htmlEscape $sourceHref) (htmlEscape .source) (htmlEscape (index $shortCites .source)) (htmlEscape (.url | default $src.url)) (htmlEscape (.locator | default "source")) | safeHTML }}
