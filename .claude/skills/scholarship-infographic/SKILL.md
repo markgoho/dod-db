@@ -50,9 +50,12 @@ An infographic earns its place when the statements describe a relation that pros
 - **Vary the look.** Read the existing `scholarship-custom` partials first and don't repeat their furniture (the starburst with a number, the shared scroll unit). Each page gets a picture form of its own.
 - **Illustrated, always.** Every infographic carries generated illustrations (step 4b). Hand-drawn SVG alone is not an option unless the user asks for it. Split the work like this:
   - **Raster art** draws the scene: people, places, objects, the setting of the relation (the ark, the scribe, the modern couple).
-  - **HTML/SVG** draws only what must be exact: counts, labels, links, a precise diagram. Gemini cannot draw exactly seven pairs.
-  - **A count gets its own band.** Put counted units in an HTML/SVG band of their own, below or beside the art, never laid over it. An overlay can't stay on a painted gangway at three layouts (page, poster, card) and at phone width, where a long row wraps.
-  - **The art leaves out what is counted.** If the relation counts animals, the art prompt names no animals at all, or Gemini adds stray ones that read as a count. Leave the strip where they would go empty, or show the scene without them.
+  - **HTML/SVG** draws the words, links and any precise diagram.
+  - **Counted things can be in the art.** The image models hit an exact count only some of the time (a 2026-11-25 test drew seven pairs of sheep exactly once in four tries, across Flash and Pro). So use one of these:
+    - **Exact and checked.** The art shows the number. Count it in the image yourself and regenerate until it's right. This works for small counts. Ask for clearly separated groups and give the number twice in the prompt (Pro did no better than Flash in the test).
+    - **Not asserting a number.** The art is drawn so no count can be read off it: one lone pair against a crowd streaming through a door, a line vanishing into the ark, a rain-streaked sky. The exact number goes in the caption.
+    - **The count is the picture.** When the relation is the count itself (a pictogram of 13 letters), draw the units in HTML/SVG, in their own band beside or below the art, never laid over it. Overlays drift off the art across the page, poster, card and phone layouts.
+  - A count the art half-shows is a wrong count. Never let art show 6 pairs beside a caption that says 7.
 
 A poster is read in seconds by someone who has never seen the page: one relation leads, and it must make sense with no surrounding text.
 
