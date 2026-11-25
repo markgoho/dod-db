@@ -2,11 +2,11 @@
   Custom block for /scholarship/the-creation-stories-in-genesis/: a
   four-panel comic page. Each panel is split by a lightning bolt into the two
   accounts of one moment, Genesis 1 on the left and Genesis 2 on the right:
-  what is there before, how God makes, who comes first, and how the woman
-  is made.
+  what is there before, how God makes, who comes first, how the woman is
+  made and, full width, why humans are made.
 
   A view of the page's reviewed statements `two` and `differ` (text and
-  cites 1, 2, 8, 9), with `deep` for panel 1's Genesis 1 half; it makes no
+  cites 1, 2, 8, 9, 10), with `deep` for panel 1's Genesis 1 half; it makes no
   claim they don't. Every panel takes the bolt and the 1/2 badges, because
   the page assigns each beat to one account. The order of creation is on the
   plates, not in the art: a picture cannot assert what came first.
@@ -70,6 +70,13 @@
   "plates" (slice
   (dict "pos" "tl" "badge" "1" "big" "Together" "sub" "male and female" "ref" "Genesis 1:27" "label" "Gen 1:27")
   (dict "pos" "tr" "badge" "2" "big" "From his rib" "sub" "the woman, formed after" "ref" "Genesis 2:21-22" "label" "Gen 2:21–22")))
+  (dict
+  "id" "why" "box" "Why are humans made?" "wide" true
+  "left" (dict "id" "why-1" "alt" "The man and woman stand on a rise over a wide land full of calm animals, the man's arm outstretched over it.")
+  "right" (dict "id" "why-2" "alt" "The man works the soil of a young garden with a simple wooden hoe.")
+  "plates" (slice
+  (dict "pos" "bl" "badge" "1" "big" "To rule" "sub" "over the earth and its creatures" "ref" "Genesis 1:28" "label" "Gen 1:28")
+  (dict "pos" "br" "badge" "2" "big" "To till and keep" "sub" "the garden" "ref" "Genesis 2:15" "label" "Gen 2:15")))
 -}}
 <section class="cloud-section gen-comic">
   <h2
@@ -99,8 +106,10 @@
     <ol class="gen-comic__strip">
       {{- range $panels }}
         <li
-          class="gen-comic__frame gen-comic__frame--{{ .id }}"
-          {{ if in (slice "before" "first") .id }}data-card-hide{{ end }}>
+          class="gen-comic__frame gen-comic__frame--{{ .id }}{{ if .wide }}
+            gen-comic__frame--wide
+          {{ end }}"
+          {{ if in (slice "before" "first" "why") .id }}data-card-hide{{ end }}>
           <figure class="gen-comic__figure">
             <div class="gen-comic__art">
               {{ partial "inline/gen-half.html" (merge .left (dict "side" "left")) }}

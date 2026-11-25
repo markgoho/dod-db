@@ -253,6 +253,15 @@
   .gen-comic__strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  /* The last panel spans both columns, so its art is a wide strip. */
+  .gen-comic__frame--wide {
+    grid-column: 1 / -1;
+  }
+
+  .gen-comic__frame--wide .gen-comic__art {
+    aspect-ratio: 8 / 3;
+  }
 }
 
 /* The poster: two by two on the 4:5 canvas. */
@@ -272,8 +281,21 @@
 }
 
 .scholarship-share:target .gen-comic__strip {
-  gap: var(--space-xs);
+  gap: var(--space-2xs);
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:target .gen-comic__frame--wide {
+  grid-column: 1 / -1;
+}
+
+/* Shorter panels on the poster, so five fit the fixed canvas. */
+.scholarship-share:target .gen-comic__art {
+  aspect-ratio: 3 / 2;
+}
+
+.scholarship-share:target .gen-comic__frame--wide .gen-comic__art {
+  aspect-ratio: 4 / 1;
 }
 
 /* The card: panels 2 and 4 side by side under the title. */
@@ -296,4 +318,26 @@
 .scholarship-share:has(#share-card:target) .gen-comic__strip {
   gap: var(--space-xs);
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* The wide panel is twice as wide a container: halve the plates' cqi type so they match the other panels. */
+.gen-comic__frame--wide .comic-plate {
+  max-inline-size: 30%;
+  padding: 0.45cqi 0.7cqi 0.55cqi;
+}
+
+.gen-comic__frame--wide .comic-plate__big {
+  font-size: clamp(0.95rem, 2.7cqi, 2.1rem);
+}
+
+.gen-comic__frame--wide .comic-plate__sub {
+  font-size: clamp(0.65rem, 1.25cqi, 0.95rem);
+}
+
+.gen-comic__frame--wide .comic-plate--bl {
+  inset: auto auto 1cqi 1cqi;
+}
+
+.gen-comic__frame--wide .comic-plate--br {
+  inset: auto 1cqi 1cqi auto;
 }

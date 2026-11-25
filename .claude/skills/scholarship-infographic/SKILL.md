@@ -15,23 +15,29 @@ Worked examples, read all four before building. The first three are the bar to m
 
 - `noahs-ark-and-the-flood`: the best example of the default form below. Four chronological panels, each split by a lightning bolt into the two tellings, with art on both halves and each half's number or label set on the art as a plate.
 - `homosexuality-and-the-bible`: the default form with one scene per panel: four Gemini-drawn panels with people in them, each panel's words and scripture tags on a plate in a clear corner of its art. Read it for the illustration manifest, chained reference images, and a plate holding many tags.
-- `the-creation-stories-in-genesis`: the default form for a two-sided comparison where order matters. Every panel is bolt-split, Genesis 1 against Genesis 2. The sequence ("Humans last" / "The man first") sits on the plates, because the art can't assert an order. God appears only as light on one side and only as hands on the other, so the art keeps the page's contrast. Read it for 1/2 badges with the source hedge in the legend, and for regenerating art to clear the bolt.
+- `the-creation-stories-in-genesis`: the default form for a two-sided comparison where order matters. Every panel is bolt-split, Genesis 1 against Genesis 2. The sequence ("Humans last" / "The man first") sits on the plates, because the art can't assert an order. God appears only as light on one side and only as hands on the other, so the art keeps the page's contrast. Read it for 1/2 badges with the source hedge in the legend, regenerating art to clear the bolt, and five panels with a double-wide last panel, plus the poster overrides that fit them.
 - `pauline-authorship`: exact marks. A pictogram: one drawn scroll per letter, the seal on each scroll is its group's verdict. Read it for how a drawing is made once and reused, sized by one unit, and re-laid out for the poster and the card.
 
 ## The default form: an illustrated comic page
 
-Unless the user asks for something else, build this. It is what the owner approved on Homosexuality and the Bible and Noah's Ark (2026-11-25).
+Unless the user asks for something else, build this. It is what the owner approved on Homosexuality and the Bible, Noah's Ark and the Creation Stories (2026-11-25).
 
 - **One ink frame** holds everything shared. Inside it, top to bottom:
   - a kicker with the scope and the field's verdict, in the core statement's own words ("Genesis 6–9 · most scholars conclude")
   - the headline, the core claim in lettering
   - a key, when the panels use symbols (P/J badges, the split styles)
-  - a 2×2 grid of panels
+  - a grid of panels (see **Panels: count, size, layout**)
   - the AI credit line
-- **Four panels that tell a story.** Put them in the subject's own order (chronology, or then → now) so the reader moves through it. Panel 1 sets the scene; the last panel pays off something an earlier panel set up (the clean pairs → the sacrifice).
+- **Panels that tell a story.** Put them in the subject's own order (chronology, or then → now) so the reader moves through it. Panel 1 sets the scene; the last panel pays off something an earlier panel set up (the clean pairs → the sacrifice).
+- **Panels: count, size, layout.** Each panel is one difference or beat the statements support _and_ the art can draw. Let the page set the count, not a template:
+  - Use as many as the page has drawable beats, usually 3 to 6. Don't pad to fill a grid, and don't drop a drawable beat to stay at four (Creation went from four to five to keep "why humans are made").
+  - A beat that can't be drawn honestly (a writing style, a word choice) doesn't get a panel with invented art. Leave it to the answer below, and name it in the report.
+  - Sizes can vary. A panel can span both columns (a double-wide strip, 8:3 art from two 16:9 halves), for the payoff, for a scene that needs width, or to close an odd count. A lead panel can be larger than the rest. Ordinary panels are 4:3.
+  - The poster is a fixed 1080 by 1350 canvas, so more panels means smaller ones. Fit them with poster-only overrides (shorter art such as 3:2 panels and a 4:1 strip, tighter gaps) before cutting a panel, and check that the plates still read and still clear faces. About six panels is the most a poster holds legibly.
+  - A wide panel's plates sit in a container twice as wide, so halve their `cqi` type and padding to match the other panels.
 - **Each panel** has:
   - a narration label flush in the top-left, phrased as a plain question or beat ("Who boards the ark?", "After the flood")
-  - generated art (4:3), filling the panel
+  - generated art filling the panel (4:3 unless the panel is wide)
   - **plates on the art**, not a caption band below it: one comic caption box per side, set in a corner the picture leaves clear (shared `comic-plate` classes in `scholarship.css`). Each plate holds the number or the thing in big lettering ("7 pairs", "150 days", "A dove"), a short hedged sub-line when needed, and the scripture tag. Badges (P, J) go on the plate.
 - **Split panels show disagreement.** When the relation is two sides (two tellings, then vs now, two scholars), split each panel's art down the middle with a divider and draw both halves.
   - The divider's style is a claim. Use a lightning bolt where the page assigns each half to a side. Use a plain straight gutter with a ≠ roundel where the page only says two verses disagree.
@@ -41,10 +47,10 @@ Unless the user asks for something else, build this. It is what the owner approv
 - **Counts:**
   - Either draw the exact count in the art and check it, or draw a crowd too dense to count.
   - The exact number is written on that side's plate, in big lettering ("1 pair", "7 pairs"). No rows of icons or drops: the number is the mark.
-- **The card** shows two panels side by side: the lead contrast plus its payoff, or the two halves of the core claim.
+- **The card** shows two panels side by side, whatever the poster's count: the lead contrast plus its payoff, or the two halves of the core claim.
 - **Keep it plain:** no tilts, nothing hanging off a frame, no nested boxes, and no starburst or scroll pictogram.
 
-Vary the scenes, characters and compositions from page to page, not this structure.
+Vary the scenes, characters, compositions, and the panels' count and sizes from page to page; keep the frame, labels, plates and split rules.
 
 ## Input
 

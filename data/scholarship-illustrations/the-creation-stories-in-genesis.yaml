@@ -124,3 +124,34 @@ images:
       both figures and the tree, in the RIGHT TWO THIRDS of the picture;
       the left third is only open grass and pale sky. The top of the
       picture is open pale sky. No text.
+
+  # Panel 5, full width: each half is a wide 16:9 picture.
+  - id: why-1
+    statements: [differ, enuma]
+    aspect: "16:9"
+    refs: [together, first-1]
+    alt: "The man and woman stand on a rise over a wide land full of animals, the man's arm outstretched over it."
+    prompt: >-
+      The SAME man and woman as in the first reference image (same faces,
+      hair and plain tunics, rust red and light grey) stand together on a
+      low grassy rise in the centre-left of a wide landscape. The man
+      stretches one arm out calmly over the land, as a steward surveying
+      it. Below and around them, a wide green land full of animals: a cow,
+      deer, sheep, a lion lying down, birds in the air, fish in a river,
+      all calm, none afraid. The top quarter of the picture and the bottom
+      left corner are open, uncluttered sky and grass. No weapons, no
+      fences, no god, no hands from the sky, no other people, no text.
+
+  - id: why-2
+    statements: [differ]
+    aspect: "16:9"
+    refs: [first-2, woman-2]
+    alt: "The man works the soil of a young garden with a simple wooden hoe, tending rows of plants."
+    prompt: >-
+      The SAME man as in the references (same face and dark hair, plain
+      rust red tunic), in the centre-right of a wide picture, working the
+      soil of a young garden with a simple wooden hoe, tending neat rows of
+      green sprouting plants and a few small fruit trees. Bright, calm,
+      honest work. The top quarter of the picture and the bottom right
+      corner are open, uncluttered sky and soil. No woman, no animals, no
+      god, no hands from the sky, no other people, no text.
