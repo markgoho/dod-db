@@ -9,8 +9,8 @@
 #   core: the candidate core claim. Until a test, the show's thesis as the
 #     inventory states it; a test rewords it to its sources' strength.
 #   basis: where the entry came from (inventory counts, Episode, #93 cut).
-#   watch: terms process-next-episode greps in each new Transcript (held for
-#     a Trigger Claim only).
+#   watch: terms `bun run synthesis:gather` looks for at a word start in each
+#     new Transcript, for any subject not dropped.
 #   triggers: Trigger Claim pointers (episode, speaker, timestamp, text).
 #     Unchecked until the sourcing test reads the Transcript around them.
 #   tested: date of the last sourcing test.
@@ -20,7 +20,9 @@
 #   the publish rule (#93) returns as `held` under its page slug.
 #
 # statements: proposed new statements for an existing page, from a new
-#   Episode. Picked up only by a re-review the owner chooses (#93).
+#   Episode, or conflicts: a Trigger Claim that contradicts a statement, with
+#   that statement's question and notes "Conflict with <id>: ...". Picked up
+#   only by a re-review the owner chooses (#93).
 #
 # Seed (2026-11-23): the consensus-claims inventory (#77, branch
 # research/consensus-claims-inventory) ranked items 4-10, then its "short

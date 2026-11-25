@@ -1,6 +1,6 @@
 ---
 name: process-next-episode
-description: Find the next unprocessed canonical RSS episode and, when an audio URL is available, run the RSS audio processing pipeline automatically without asking for confirmation, then verify and analyze the new episode's segments, create a guest page for any new guest, report candidate Trigger Claims for Scholarship Pages and Timeline Entries, and log subject suggestions to the Scholarship candidate file.
+description: Find the next unprocessed canonical RSS episode and, when an audio URL is available, run the RSS audio processing pipeline automatically without asking for confirmation, then verify and analyze the new episode's segments, create a guest page for any new guest, report candidate Trigger Claims for Scholarship Pages and Timeline Entries, and log subject suggestions, conflicts and guest Leads to the Scholarship candidate file.
 ---
 
 # Process Next Episode
@@ -19,7 +19,7 @@ to:
 - a confirmed processing run through the RSS audio pipeline
 - verified segments with topic labels and summaries
 - a guest page for any new guest
-- candidate Trigger Claims for Scholarship Pages and Timeline Entries, reported for the owner to accept; subject or statement suggestions logged in `data/scholarship-candidates.yaml`, and new-entry suggestions in issue #108
+- candidate Trigger Claims for Scholarship Pages and Timeline Entries, reported for the owner to accept; subject or statement suggestions and conflicts logged in `data/scholarship-candidates.yaml`, and new-entry suggestions in issue #108
 
 ## Workflow
 
@@ -82,15 +82,20 @@ If any of that skill's stop conditions applies, stop after verification. Report 
 
 ### 5. Find candidate Trigger Claims
 
-If the pipeline succeeded, search the new final Transcript (`data/transcripts/<date>-<slug>.txt`, not `-raw`) once per Scholarship Page (`hugo/content/scholarship/<slug>.md`, drafts included), once per Timeline Entry (`hugo/content/timeline/<entry>.md`, drafts included, not `_index.md`) and once per `subjects` entry in `data/scholarship-candidates.yaml` that has `watch` terms. Do this even when Step 4 stopped early.
+If the pipeline succeeded, run `bun run synthesis:gather <n>`. Do this even when Step 4 stopped early. Its JSON gives:
 
-1. Read the page's, Timeline Entry's or subject's `watch` terms, and a page's statements or an entry's dates.
-2. `grep -n -i` the Transcript for each term.
-3. For each hit, read about two minutes either side. A candidate is a Speaker's assertion about the subject, quoted verbatim with any hedge from the next sentence kept. A passing mention is not a candidate.
+- `targets`: each Scholarship Page (`page`), Timeline Entry (`entry`) and candidate subject (`subject`) with hits. A hit is a Transcript line, with `via: watch` (a `watch` term) or `via: related` (a tag or book from the target's `related` field that the Episode mentions at least `minMentions` times).
+- `sweep`: lines with consensus or date wording. `near` names the targets whose read already covers the line.
+- `subjectEpisodes`: distinct Episodes behind each candidate subject's triggers, this one included when it has a hit.
+- `guests` and `noWatch` (candidate subjects the gather cannot see).
 
-Done when every `watch` term has been searched and each hit is a candidate or dismissed.
+For each hit, read the final Transcript `windowSeconds` either side. A candidate is a Speaker's assertion about the target's subject, quoted verbatim with any hedge from the next sentence kept. A passing mention, or a `related` hit where the subject is not discussed, is dismissed. Then read each `sweep` line whose `near` is empty the same way: a consensus or dated assertion there is a new-subject or new-entry suggestion.
+
+Done when every hit and every `sweep` line with an empty `near` is a candidate, a suggestion or dismissed.
 
 A **page candidate** is about a subject a page already states. It goes only in the run summary; the page, its triggers file and its review file stay untouched until the accept flow below.
+
+A page candidate that contradicts one of the page's statements is a **conflict**. It never attaches to the page. Log it under `statements` in `data/scholarship-candidates.yaml` as `{ page, question, triggers, notes }`, with the statement's question and `notes: "Conflict with <id>: <how the quote differs>"`, so the owner's next re-review weighs it.
 
 Every other Scholarship candidate is a **suggestion**, and you append it to `data/scholarship-candidates.yaml` in this run, as a Trigger Claim pointer (`episode`, `speaker`, `timestamp`, `text`, same shape as a triggers file):
 
@@ -99,6 +104,8 @@ Every other Scholarship candidate is a **suggestion**, and you append it to `dat
 - **New subject**: append to `subjects` with `slug`, `subject`, `status: candidate`, `core` (the Speaker's thesis), `basis: "Ep <n>, process-next-episode"` and `triggers`. First check the file's slugs and subjects and the existing pages, so a subject lands once.
 
 Then run `bun run check:scholarship`. The file's header comment defines every field.
+
+A `subjectEpisodes` entry at 3 or more Episodes is a **promotion flag**: report it. The file order stays as it is; the owner picks.
 
 A **Timeline candidate** is about a Timeline Entry's subject or date. Note the side it `states`: `critical`, `tradition` or `both`. Like a page candidate, it goes only in the run summary; `hugo/data/timeline/triggers.yaml` and the entry's review file stay untouched until the accept flow. A quote that disagrees with an entry's date is still only a candidate: a new Episode never changes a date.
 
@@ -121,6 +128,8 @@ Before you create a page, run `bun run guest-page:gather -- "<name>"`. If the ou
 
 Do this step even when Step 4 stopped early. The guest page does not depend on segment labels.
 
+Then, for each guest, match their Selected Works against the Step 5 targets with a candidate or suggestion. A work that bears on that subject is a **Lead**: append it to a candidate subject's `leads` as one string (full citation, then the subject it bears on), or, for a Scholarship Page or Timeline Entry, report it. Leads stay out of `hugo/data/external-sources.yaml`, which holds cited sources only.
+
 ### 7. Report the result
 
 - report whether processing succeeded or failed
@@ -129,8 +138,9 @@ Do this step even when Step 4 stopped early. The guest page does not depend on s
 - list each verified segment, the transcript line that confirms it, and any type you corrected
 - include the save script's review summary of labels and summaries, or the reason you stopped
 - for each guest, report the guest page you created, or that one already existed
-- per Scholarship Page, each candidate Trigger Claim (quote, Speaker, timestamp) with the `watch` term that found it, or "no candidates"; then each suggestion and the `data/scholarship-candidates.yaml` entry it went to
-- per Timeline Entry, each candidate Trigger Claim (quote, Speaker, timestamp, `states`) with the `watch` term that found it, or "no candidates"; then each new-entry suggestion and its #108 comment
+- per Scholarship Page, each candidate Trigger Claim (quote, Speaker, timestamp) with the hit term and `via`, or "no candidates"; then each conflict and suggestion and the `data/scholarship-candidates.yaml` entry it went to
+- each promotion flag, and each guest Lead and where it went
+- per Timeline Entry, each candidate Trigger Claim (quote, Speaker, timestamp, `states`) with the hit term and `via`, or "no candidates"; then each new-entry suggestion and its #108 comment
 
 ## Important constraints
 
@@ -150,5 +160,6 @@ Do this step even when Step 4 stopped early. The guest page does not depend on s
 - `src/scripts/verify-segments.ts`
 - `src/scripts/save-segment-results.ts`
 - `.claude/skills/create-guest-page/SKILL.md`
+- `src/scripts/gather-synthesis-candidates.ts`, `src/hugo/synthesis-candidates.ts`
 - `hugo/content/scholarship/`, `hugo/data/scholarship/triggers/`, `data/scholarship-reviews/`
 - `hugo/content/timeline/`, `hugo/data/timeline/triggers.yaml`, `data/timeline-reviews/`

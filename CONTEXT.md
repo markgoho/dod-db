@@ -224,6 +224,7 @@ _Avoid_: Citation, snippet source
 - A **Scholarship Page** statement's short answer reports where scholarship stands (consensus, most scholars, divided, no consensus), backed by two or more independent authors; a view only one cited author holds appears in the statement, attributed, never as the answer. Uncontested facts (a date, what an inscription says) are exempt. A statement whose sources can't support a state-of-the-field answer is reframed or cut (#133).
 - A **Scholarship Page** is published only when two or more independent **External Sources**, at least one Scholarly or Reference, back its core claim and it makes three or more statements.
 - A new **Episode** can add a **Trigger Claim** to a **Synthesis Page** or suggest a new subject; it never changes a statement.
+- A **Speaker**'s assertion that contradicts a **Scholarship Page** statement is never attached to that page as a **Trigger Claim**; it is logged as a conflict for the owner's next re-review (2026-11-25).
 - A **Synthesis Page** shows the date its **External Sources** were read; its statements change only when the owner re-reviews it.
 - A **Scholarship Page** statement's id is a public URL once published (its **Question Page** and the page's `#<id>` link): it never changes.
 - Every statement of a published **Scholarship Page** has a **Question Page** card rendered from its current question and short answer; `check:scholarship` fails a missing or stale card (`bun run scholarship:question-cards <slug>`).
