@@ -1,362 +1,299 @@
 /*
-  Custom block for the Creation stories Scholarship Page: the two accounts as
-  facing columns either side of a spine. Composes panel, type-eyebrow,
-  type-section-title, cloud-section and scholarship-meta.
+  Custom block for The Creation Stories in Genesis Scholarship Page: a comic
+  page. One ink frame holds the title, four panels and the credit, so the
+  whole thing shares as one image. Each panel's art is two generated
+  pictures split by a lightning bolt, Genesis 1 on the left and Genesis 2 on
+  the right; a narration label sits flush top-left, and each account's
+  answer is a plate set on its half of the art, in a corner the picture
+  leaves clear. Composes cloud-section, type-section-title and
+  scholarship-meta.
 
-  One grid (account, spine, account) runs through every row by subgrid. Text
-  faces the spine: the first account ends on it, the second starts from it.
+  Distinctions without colour: which account is which is the side and the
+  1 or 2 badge on the plate.
 */
-.creation-compare {
-  container: creation-compare / inline-size;
+.gen-comic {
+  --gen-ink: var(--tan-900);
+  --gen-paper: var(--tan-000);
+  --gen-amber: var(--color-accent);
+  --gen-rust: var(--rust-500);
+  --gen-frame: var(--border-width-md);
+
+  container: gen-comic / inline-size;
 }
 
-.creation-compare__panel {
+/* The page: one frame around everything that is shared. */
+.gen-comic__page {
+  background: var(--gen-paper);
+  border: var(--gen-frame) solid var(--gen-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--gen-ink);
   display: grid;
   gap: var(--space-s);
   padding: var(--space-s);
 }
 
-.creation-compare__table {
-  --spine: var(--space-l);
-
-  border-collapse: collapse;
+.gen-comic__head {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) var(--spine) minmax(0, 1fr);
-  inline-size: 100%;
-  row-gap: var(--space-s);
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
 }
 
-.creation-compare__table :is(thead, tbody, tr) {
-  display: grid;
-  grid-column: 1 / -1;
-  grid-template-columns: subgrid;
+.gen-comic__head > p {
+  margin: 0;
 }
 
-.creation-compare__table tbody {
-  row-gap: var(--space-s);
-}
-
-.creation-compare__table :is(th, td) {
+.gen-comic__kicker {
   font-size: var(--step--1);
-  font-weight: var(--font-weight-regular);
-  /* Half-width columns on a phone: a long word breaks before it overflows. */
-  overflow-wrap: anywhere;
-  padding: 0;
-  text-align: start;
-  text-wrap: pretty;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
 }
 
-.creation-compare__table :is(th, td):last-child {
-  grid-column: 3;
-}
-
-/* The two accounts: the first dark and squared-off, the second in the accent. */
-.creation-compare__table .creation-compare__account {
-  border: var(--border-width-sm) solid var(--tan-900);
-  display: grid;
-  gap: var(--space-4xs);
-  padding: var(--space-xs);
-}
-
-.creation-compare__account--first {
-  background: var(--tan-900);
-  color: var(--color-text-inverse);
-}
-
-.creation-compare__account--second {
-  background: var(--color-accent);
-}
-
-.creation-compare__ordinal {
-  font-size: var(--step--2);
-  font-weight: var(--font-weight-bold);
-}
-
-.creation-compare__name {
+/* Title lettering: ink capitals with an amber offset. */
+.gen-comic__title {
+  color: var(--gen-ink);
   font-family: var(--font-family-display);
   font-size: var(--step-2);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
+  max-inline-size: 24ch;
+  text-shadow: 3px 3px 0 var(--gen-amber);
   text-transform: uppercase;
+  text-wrap: balance;
 }
 
-.creation-compare__range {
+.gen-comic__legend {
+  font-size: var(--step--2);
+  line-height: var(--line-height-tight);
+}
+
+.gen-comic__legend-bolt {
+  color: var(--gen-amber);
+  -webkit-text-stroke: 1px var(--gen-ink);
+}
+
+.gen-comic__key {
+  font-size: var(--step--1);
   font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  text-wrap: balance;
 }
 
-.creation-compare__source {
-  font-size: var(--step--2);
-}
-
-/*
-  Glyphs: flat ink shapes in the text colour. They sit on the outer edge of
-  their box, away from the spine, and above the text in a narrow column.
-*/
-.creation-icons {
-  block-size: 0;
-  inline-size: 0;
-  position: absolute;
-}
-
-.creation-icon {
-  block-size: var(--space-s);
-  fill: currentColor;
-  inline-size: var(--space-s);
-}
-
-.creation-icon--emblem {
-  block-size: var(--space-m);
-  inline-size: var(--space-m);
-}
-
-/* What is being compared sits on a rule across both accounts. */
-.creation-compare__table .creation-compare__aspect {
-  align-items: center;
-  column-gap: var(--space-xs);
-  display: grid;
-  grid-column: 1 / -1;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-  margin-block-end: var(--space-xs);
-}
-
-.creation-compare__aspect::before,
-.creation-compare__aspect::after {
-  background: var(--tan-900);
-  block-size: var(--border-width-sm);
-  content: "";
-}
-
-.creation-compare__aspect > .type-eyebrow {
-  font-size: var(--step--2);
-  text-align: center;
-}
-
-/* The spine: a hairline down the gap between the two cells. */
-.creation-compare__row:not(.creation-compare__row--order)::after {
-  background: var(--tan-300);
-  content: "";
-  grid-column: 2;
-  grid-row: 2;
-  inline-size: var(--border-width-sm);
-  justify-self: center;
-}
-
-.creation-compare__lead {
-  display: block;
+/* 1 and 2: an ink-edged numeral tile in the account's colour. */
+.gen-comic__badge {
+  background: var(--gen-badge);
+  border: 2px solid var(--gen-ink);
+  color: var(--gen-badge-text);
+  display: inline-grid;
   font-family: var(--font-family-display);
-  font-size: var(--step-1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
-  letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-heading);
+  inline-size: 1.6em;
+  line-height: 1.4;
+  place-items: center;
+  vertical-align: 0.05em;
 }
 
-/*
-  Order of creation. Each list fills the row's height in equal slots (three
-  on one side, four on the other), so a slot's centre is a fixed fraction of
-  the height and the SVG's lines can meet it at any size.
-*/
-.creation-compare__row--order > td {
-  display: grid;
-  position: relative;
+.gen-comic__badge--1 {
+  --gen-badge: var(--gen-rust);
+  --gen-badge-text: var(--color-text-inverse);
 }
 
-.creation-order {
-  counter-reset: creation-order;
+.gen-comic__badge--2 {
+  --gen-badge: var(--gen-amber);
+  --gen-badge-text: var(--gen-ink);
+}
+
+.gen-comic__strip {
   display: grid;
-  grid-auto-rows: minmax(0, 1fr);
+  gap: var(--space-s);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.creation-order > li {
-  counter-increment: creation-order;
+.gen-comic__frame {
   display: grid;
-  font-size: inherit;
-  grid-template-columns: minmax(0, 1fr) auto;
-  line-height: var(--line-height-heading);
-  padding-block: var(--space-3xs);
+  min-inline-size: 0;
 }
 
-.creation-order--second > li {
-  grid-template-columns: auto minmax(0, 1fr);
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.gen-comic__figure {
+  border: var(--gen-frame) solid var(--gen-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
 }
 
-/* The step number sits against the spine, where its line arrives. */
-.creation-order > li::before {
-  align-items: center;
-  align-self: stretch;
-  background: var(--tan-900);
-  color: var(--color-text-inverse);
-  content: counter(creation-order);
-  display: inline-flex;
-  font-family: var(--font-family-display);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  grid-column: 2;
-  grid-row: 1;
-  justify-content: center;
-  min-inline-size: var(--space-s);
+/* The art: two pictures, each clipped to its side of the bolt. */
+.gen-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
 }
 
-.creation-order--second > li::before {
-  grid-column: 1;
-}
-
-.creation-order__item {
-  background: var(--tan-100);
-  border: var(--border-width-sm) solid var(--tan-900);
-  align-content: center;
-  display: grid;
-  gap: var(--space-4xs);
-  grid-row: 1;
-  padding: var(--space-2xs);
-}
-
-.creation-order__what {
-  font-family: var(--font-family-display);
-  font-size: var(--step--1);
-  /* A one-word label is never split; it is short enough for the narrowest column. */
-  overflow-wrap: normal;
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  letter-spacing: var(--letter-spacing-heading);
-}
-
-.creation-order__note {
-  font-size: var(--step--2);
-  line-height: var(--line-height-relaxed);
-}
-
-/* In a narrow column the verse takes its own line, so the dot has no job. */
-.creation-order__dot {
-  display: none;
-}
-
-.creation-order__note a {
-  color: var(--color-text-main);
-  display: block;
-  font-weight: var(--font-weight-bold);
-  text-underline-offset: var(--space-4xs);
-  white-space: nowrap;
-}
-
-.creation-order__note a:hover,
-.creation-order__note a:focus-visible {
-  color: var(--color-action);
-}
-
-/* Humans move furthest: last in the first account, first and last in the second. */
-.creation-order__human::before {
-  background: var(--color-action);
-}
-
-.creation-order__human > .creation-order__item {
-  background: var(--color-accent-muted);
-}
-
-/* Fills the spine beside the first list; the row's cells share its height. */
-.creation-order__lines {
-  block-size: 100%;
-  inline-size: var(--spine);
-  inset-block-start: 0;
-  inset-inline-start: 100%;
-  overflow: visible;
+.gen-comic__half {
+  inset: 0;
   position: absolute;
 }
 
-.creation-order__lines line {
-  stroke: var(--tan-900);
-  stroke-width: var(--border-width-sm);
+.gen-comic__art > .gen-comic__half--left {
+  clip-path: polygon(0 0, 57% 0, 45% 40%, 58% 52%, 43% 100%, 0 100%);
+}
+
+.gen-comic__art > .gen-comic__half--right {
+  clip-path: polygon(57% 0, 100% 0, 100% 100%, 43% 100%, 58% 52%, 45% 40%);
+}
+
+.gen-comic__half > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 60%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.12;
+}
+
+.gen-comic__half--right > img {
+  margin-inline-start: 40%;
+}
+
+/* The bolt: a thick ink stroke with an amber core. */
+.gen-comic__bolt {
+  block-size: 100%;
+  fill: none;
+  inline-size: 100%;
+  inset: 0;
+  position: absolute;
+  stroke-linejoin: miter;
+}
+
+.gen-comic__bolt > polyline:first-child {
+  stroke: var(--gen-ink);
+  stroke-width: 12px;
   vector-effect: non-scaling-stroke;
 }
 
-.creation-order__lines .creation-order__line--human {
-  stroke: var(--color-action);
-  stroke-width: var(--border-width-md);
+.gen-comic__bolt > polyline:last-child {
+  stroke: var(--gen-amber);
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
 }
 
-.creation-compare__more {
-  border-block-start: var(--border-width-sm) solid var(--tan-300);
-  padding-block-start: var(--space-xs);
+/* Narration label, flush in the panel's top-left corner. */
+.gen-comic__box {
+  background: var(--gen-amber);
+  border-block-end: var(--gen-frame) solid var(--gen-ink);
+  border-inline-end: var(--gen-frame) solid var(--gen-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
 }
 
-/* Literal length: container conditions cannot read custom properties. */
-@container creation-compare (width >= 40rem) {
-  .creation-compare__panel {
+.comic-plate__big > .gen-comic__badge {
+  font-size: 0.6em;
+  margin-inline-end: 0.2em;
+  text-shadow: none;
+  vertical-align: 0.25em;
+}
+
+.comic-plate__sub > .gen-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates. */
+.gen-comic__ref {
+  background: var(--gen-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--gen-amber);
+  white-space: nowrap;
+}
+
+.gen-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.gen-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container gen-comic (width >= 40rem) {
+  .gen-comic__page {
     padding: var(--space-m);
   }
 
-  .creation-compare__table {
-    --spine: var(--space-2xl);
-  }
-
-  .creation-compare__name {
+  .gen-comic__title {
     font-size: var(--step-3);
   }
 
-  .creation-order > li::before {
-    min-inline-size: var(--space-m);
+  .gen-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .creation-order__item {
-    padding-inline: var(--space-xs);
-  }
+/* The poster: two by two on the 4:5 canvas. */
 
-  .creation-order__what {
-    font-size: var(--step-0);
-  }
+.scholarship-share:target .gen-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
 
-  .creation-compare__table .creation-compare__account,
-  .creation-order__item {
-    column-gap: var(--space-xs);
-    grid-template-columns: auto minmax(0, 1fr);
-  }
+.scholarship-share:target .gen-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
 
-  .creation-compare__table .creation-compare__account--second,
-  .creation-order--second .creation-order__item {
-    grid-template-columns: minmax(0, 1fr) auto;
-  }
+.scholarship-share:target .gen-comic__head {
+  gap: 0;
+}
 
-  .creation-compare__account > span,
-  .creation-order__item > span {
-    grid-column: 2;
-  }
+.scholarship-share:target .gen-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 
-  .creation-compare__account--second > span,
-  .creation-order--second .creation-order__item > span {
-    grid-column: 1;
-  }
+/* The card: panels 2 and 4 side by side under the title. */
 
-  .creation-icon {
-    align-self: center;
-    block-size: var(--space-l);
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    inline-size: var(--space-l);
-  }
+.scholarship-share:has(#share-card:target) .gen-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
 
-  .creation-compare__account--second > .creation-icon,
-  .creation-order--second .creation-icon {
-    grid-column: 2;
-  }
+.scholarship-share:has(#share-card:target)
+  :is(.gen-comic__kicker, .gen-comic__key, .gen-comic__legend) {
+  display: none;
+}
 
-  .creation-icon--emblem {
-    block-size: var(--space-xl);
-    grid-row: 1 / span 4;
-    inline-size: var(--space-xl);
-  }
+.scholarship-share:has(#share-card:target) .gen-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
 
-  .creation-order__dot,
-  .creation-order__note a {
-    display: inline;
-  }
-
-  .creation-compare__table .creation-compare__account--first,
-  .creation-compare__table td:not(:last-child) {
-    text-align: end;
-  }
+.scholarship-share:has(#share-card:target) .gen-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }

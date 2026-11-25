@@ -1,314 +1,152 @@
 {{- /*
-  Custom block for /scholarship/the-creation-stories-in-genesis/: the two
-  accounts side by side. A view of the page's reviewed statements (`two`,
-  `differ`) and their cited quotes; it makes no claim they don't. Reword a cell
-  only when the statement it comes from is re-reviewed.
+  Custom block for /scholarship/the-creation-stories-in-genesis/: a
+  four-panel comic page. Each panel is split by a lightning bolt into the two
+  accounts of one moment, Genesis 1 on the left and Genesis 2 on the right:
+  what is there before, how God makes, who comes first, and how the woman
+  is made.
 
-  Roles are spelled out because the table is laid out as a grid, which can drop
-  table semantics.
+  A view of the page's reviewed statements `two` and `differ` (text and
+  cites 1, 2, 8, 9), with `deep` for panel 1's Genesis 1 half; it makes no
+  claim they don't. Every panel takes the bolt and the 1/2 badges, because
+  the page assigns each beat to one account. The order of creation is on the
+  plates, not in the art: a picture cannot assert what came first.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/the-creation-stories-in-genesis.yaml. God
+  is never drawn on a Genesis 1 half (he creates by word); on Genesis 2
+  halves only his hands appear (the potter). Reword a plate only when the
+  statement it comes from is re-reviewed.
   */
 -}}
-{{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
-<section class="cloud-section creation-compare">
+{{- define "partials/inline/gen-ref.html" -}}
+  <a
+    class="gen-comic__ref"
+    href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .ref) | safeURL }}"
+    rel="noopener"
+    >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+  >
+{{- end -}}
+{{- define "partials/inline/gen-half.html" -}}
+  {{- $img := resources.Get (printf "scholarship-art/the-creation-stories-in-genesis/%s.png" .id) }}
+  <div class="gen-comic__half gen-comic__half--{{ .side }}">
+    {{- with $img }}
+      {{- $webp := .Process "resize 900x webp q78" }}
+      <img
+        src="{{ $webp.RelPermalink }}"
+        width="{{ $webp.Width }}"
+        height="{{ $webp.Height }}"
+        alt="{{ $.alt }}"
+        {{ with $.focus }}style="object-position: {{ . | safeCSS }}"{{ end }}
+        loading="eager" />
+    {{- end }}
+  </div>
+{{- end -}}
+{{- $panels := slice
+  (dict
+  "id" "before" "box" "Before the making"
+  "left" (dict "id" "before-1" "alt" "Dark, heaving primordial waters under a black sky, a wind sweeping over them.")
+  "right" (dict "id" "before-2" "alt" "A bare, dry plain of cracked earth with no shrub or plant anywhere.")
+  "plates" (slice
+  (dict "pos" "bl" "badge" "1" "big" "The deep" "sub" "darkness on the face of the deep" "ref" "Genesis 1:1-2" "label" "Gen 1:1–2")
+  (dict "pos" "br" "badge" "2" "big" "No plant yet" "sub" "no shrub, no grain sprouted" "ref" "Genesis 2:5" "label" "Gen 2:5")))
+  (dict
+  "id" "make" "box" "How does God make?"
+  "left" (dict "id" "make-1" "alt" "Over the same dark waters a burst of light breaks out of the black sky; no figure is seen.")
+  "right" (dict "id" "make-2" "alt" "Two large hands shape a small human figure out of the earth, like a potter working clay.")
+  "plates" (slice
+  (dict "pos" "bl" "badge" "1" "big" "By a word" "sub" "remote, creating effortlessly" "ref" "Genesis 1:3" "label" "Gen 1:3")
+  (dict "pos" "tr" "badge" "2" "big" "Like a potter" "sub" "forming the human from dust" "ref" "Genesis 2:7" "label" "Gen 2:7")))
+  (dict
+  "id" "first" "box" "Who comes first?"
+  "left" (dict "id" "first-1" "alt" "A world full of trees, plants, birds, fish and animals; the man and woman stand small among them.")
+  "right" (dict "id" "first-2" "alt" "The man stands alone on bare ground; behind him a young tree sprouts and a few animals approach.")
+  "plates" (slice
+  (dict "pos" "tl" "badge" "1" "big" "Humans last" "sub" "after the plants and animals" "ref" "Genesis 1:11-27" "label" "Gen 1:11–27")
+  (dict "pos" "tr" "badge" "2" "big" "The man first" "sub" "plants and animals after him" "ref" "Genesis 2:7-19" "label" "Gen 2:7–19")))
+  (dict
+  "id" "woman" "box" "And the woman?"
+  "left" (dict "id" "together" "alt" "A man and a woman stand side by side, newly made, in a shaft of light.")
+  "right" (dict "id" "woman-2" "alt" "The man lies asleep under a tree; the woman, newly made, stands beside him.")
+  "plates" (slice
+  (dict "pos" "tl" "badge" "1" "big" "Together" "sub" "male and female" "ref" "Genesis 1:27" "label" "Gen 1:27")
+  (dict "pos" "tr" "badge" "2" "big" "From his rib" "sub" "the woman, formed after" "ref" "Genesis 2:21-22" "label" "Gen 2:21–22")))
+-}}
+<section class="cloud-section gen-comic">
   <h2
     class="type-section-title cloud-section__title"
-    id="side-by-side"
+    id="at-a-glance"
     data-share-hide>
-    Side by side
+    At a glance
   </h2>
-  {{/* One set of flat ink glyphs, drawn once and reused, so the same thing looks the same in both accounts. */}}
-  <svg class="creation-icons" aria-hidden="true" focusable="false">
-    <symbol id="creation-plant" viewBox="0 0 32 32">
-      <path d="M14.5 30V15h3v15z" />
-      <path d="M16 19C8 19 4 13 4 8c7 0 12 4 12 11z" />
-      <path d="M16 14c0-7 5-11 12-11 0 6-4 11-12 11z" />
-    </symbol>
-    <symbol id="creation-animal" viewBox="0 0 32 32">
-      <rect x="5" y="13" width="18" height="8" rx="3" />
-      <path d="M6 19h3.5v10H6zM18 19h3.5v10H18z" />
-      <path d="M19 15l5-9 6 2v4l-4 1.5-3 5.5z" />
-      <path d="M24.5 6.5l.5-4 3 4.5z" />
-      <path d="M6.5 15.5L2 11l1.5-1.5 5 4z" />
-    </symbol>
-    <symbol id="creation-human" viewBox="0 0 32 32">
-      <circle cx="16" cy="7.5" r="5" />
-      <path d="M8 30V21a8 8 0 0 1 16 0v9z" />
-    </symbol>
-    <symbol id="creation-humans" viewBox="0 0 32 32">
-      <circle cx="9.5" cy="9" r="4" />
-      <path d="M3.5 30v-9.5a6 6 0 0 1 12 0V30z" />
-      <circle cx="22.5" cy="9" r="4" />
-      <path d="M16.5 30v-9.5a6 6 0 0 1 12 0V30z" />
-    </symbol>
-    {{/* Six days in two matching sets of three, and a seventh apart. */}}
-    <symbol id="creation-days" viewBox="0 0 32 32">
-      <path
-        d="M2 3h7v7H2zM2 12.5h7v7H2zM2 22h7v7H2zM11.5 3h7v7h-7zM11.5 12.5h7v7h-7zM11.5 22h7v7h-7z" />
-      <circle cx="26" cy="16" r="4.5" />
-    </symbol>
-    {{/* The garden God plants. */}}
-    <symbol id="creation-garden" viewBox="0 0 32 32">
-      <circle cx="16" cy="11" r="9" />
-      <circle cx="9" cy="15" r="5.5" />
-      <circle cx="23" cy="15" r="5.5" />
-      <path d="M14 17h4v11h-4z" />
-      <path d="M5 27.5h22V30H5z" />
-    </symbol>
-  </svg>
-  <div class="creation-compare__panel panel">
-    <table
-      class="creation-compare__table"
-      role="table"
-      aria-labelledby="side-by-side">
-      <thead role="rowgroup">
-        <tr role="row">
-          <th
-            class="creation-compare__account creation-compare__account--first"
-            role="columnheader"
-            scope="col">
-            <svg
-              class="creation-icon creation-icon--emblem"
-              aria-hidden="true"
-              focusable="false">
-              <use href="#creation-days" />
-            </svg>
-            <span class="creation-compare__ordinal">First account</span>
-            <span class="creation-compare__name">Genesis 1</span>
-            <span class="creation-compare__range">Genesis 1:1–2:4a</span>
-            <span class="creation-compare__source"
-              >P, the Priestly source, in the Documentary Hypothesis</span
-            >
-          </th>
-          <th
-            class="creation-compare__account creation-compare__account--second"
-            role="columnheader"
-            scope="col">
-            <svg
-              class="creation-icon creation-icon--emblem"
-              aria-hidden="true"
-              focusable="false">
-              <use href="#creation-garden" />
-            </svg>
-            <span class="creation-compare__ordinal">Second account</span>
-            <span class="creation-compare__name">Genesis 2</span>
-            <span class="creation-compare__range">Genesis 2:4b–3:24</span>
-            <span class="creation-compare__source"
-              >J, in the Documentary Hypothesis</span
-            >
-          </th>
-        </tr>
-      </thead>
-      <tbody role="rowgroup">
-        <tr
-          class="creation-compare__row creation-compare__row--order"
-          role="row">
-          <th class="creation-compare__aspect" role="rowheader" scope="row">
-            <span class="type-eyebrow">Order of creation</span>
-          </th>
-          <td role="cell">
-            <ol class="creation-order creation-order--first">
-              <li>
-                <span class="creation-order__item">
-                  <svg
-                    class="creation-icon"
-                    aria-hidden="true"
-                    focusable="false">
-                    <use href="#creation-plant" />
-                  </svg>
-                  <span class="creation-order__what">Plants</span>
-                  <span class="creation-order__note"
-                    >Third day <span class="creation-order__dot">·</span>
-                    <a href="{{ $bg }}Genesis+1%3A11-12" rel="noopener"
-                      >1:11</a
-                    ></span
-                  >
-                </span>
-              </li>
-              <li>
-                <span class="creation-order__item">
-                  <svg
-                    class="creation-icon"
-                    aria-hidden="true"
-                    focusable="false">
-                    <use href="#creation-animal" />
-                  </svg>
-                  <span class="creation-order__what">Animals</span>
-                  <span class="creation-order__note"
-                    >Before humans <span class="creation-order__dot">·</span>
-                    <a href="{{ $bg }}Genesis+1%3A20-25" rel="noopener"
-                      >1:20–25</a
-                    ></span
-                  >
-                </span>
-              </li>
-              <li class="creation-order__human">
-                <span class="creation-order__item">
-                  <svg
-                    class="creation-icon"
-                    aria-hidden="true"
-                    focusable="false">
-                    <use href="#creation-humans" />
-                  </svg>
-                  <span class="creation-order__what">Humans</span>
-                  <span class="creation-order__note"
-                    >Male and female together
-                    <span class="creation-order__dot">·</span>
-                    <a href="{{ $bg }}Genesis+1%3A26-27" rel="noopener"
-                      >1:26–27</a
-                    ></span
-                  >
-                </span>
-              </li>
-            </ol>
-            {{/* Each thing made, traced from its place in the first account to its place in the second. */}}
-            <svg
-              class="creation-order__lines"
-              viewBox="0 0 100 120"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              focusable="false">
-              <line x1="0" y1="20" x2="100" y2="45" />
-              <line x1="0" y1="60" x2="100" y2="75" />
-              <line
-                class="creation-order__line--human"
-                x1="0"
-                y1="100"
-                x2="100"
-                y2="15" />
-              <line
-                class="creation-order__line--human"
-                x1="0"
-                y1="100"
-                x2="100"
-                y2="105" />
-            </svg>
-          </td>
-          <td role="cell">
-            <ol class="creation-order creation-order--second">
-              <li class="creation-order__human">
-                <span class="creation-order__item">
-                  <svg
-                    class="creation-icon"
-                    aria-hidden="true"
-                    focusable="false">
-                    <use href="#creation-human" />
-                  </svg>
-                  <span class="creation-order__what">The man</span>
-                  <span class="creation-order__note"
-                    >Formed from the dust of the earth
-                    <span class="creation-order__dot">·</span>
-                    <a href="{{ $bg }}Genesis+2%3A7" rel="noopener"
-                      >2:7</a
-                    ></span
-                  >
-                </span>
-              </li>
-              <li>
-                <span class="creation-order__item">
-                  <svg
-                    class="creation-icon"
-                    aria-hidden="true"
-                    focusable="false">
-                    <use href="#creation-plant" />
-                  </svg>
-                  <span class="creation-order__what">Plants</span>
-                  <span class="creation-order__note"
-                    >None before the man
-                    <span class="creation-order__dot">·</span>
-                    <a href="{{ $bg }}Genesis+2%3A8-9" rel="noopener"
-                      >2:8–9</a
-                    ></span
-                  >
-                </span>
-              </li>
-              <li>
-                <span class="creation-order__item">
-                  <svg
-                    class="creation-icon"
-                    aria-hidden="true"
-                    focusable="false">
-                    <use href="#creation-animal" />
-                  </svg>
-                  <span class="creation-order__what">Animals</span>
-                  <span class="creation-order__note"
-                    >After the man <span class="creation-order__dot">·</span>
-                    <a href="{{ $bg }}Genesis+2%3A19" rel="noopener"
-                      >2:19</a
-                    ></span
-                  >
-                </span>
-              </li>
-              <li class="creation-order__human">
-                <span class="creation-order__item">
-                  <svg
-                    class="creation-icon"
-                    aria-hidden="true"
-                    focusable="false">
-                    <use href="#creation-human" />
-                  </svg>
-                  <span class="creation-order__what">The woman</span>
-                  <span class="creation-order__note"
-                    >Formed from his rib
-                    <span class="creation-order__dot">·</span>
-                    <a href="{{ $bg }}Genesis+2%3A21-22" rel="noopener"
-                      >2:21–22</a
-                    ></span
-                  >
-                </span>
-              </li>
-            </ol>
-          </td>
-        </tr>
-        <tr class="creation-compare__row" role="row" data-card-hide>
-          <th class="creation-compare__aspect" role="rowheader" scope="row">
-            <span class="type-eyebrow">Name for God</span>
-          </th>
-          <td role="cell">
-            <span class="creation-compare__lead">Elohim</span>
-            translated “God”
-          </td>
-          <td role="cell">
-            <span class="creation-compare__lead">Yahweh Elohim</span>
-            “the LORD God”
-          </td>
-        </tr>
-        <tr class="creation-compare__row" role="row" data-card-hide>
-          <th class="creation-compare__aspect" role="rowheader" scope="row">
-            <span class="type-eyebrow">Style</span>
-          </th>
-          <td role="cell">Formal, highly structured and abstract</td>
-          <td role="cell">More dramatic and earthy, full of puns</td>
-        </tr>
-        <tr class="creation-compare__row" role="row" data-card-hide>
-          <th class="creation-compare__aspect" role="rowheader" scope="row">
-            <span class="type-eyebrow">Picture of God</span>
-          </th>
-          <td role="cell">Remote. Creates effortlessly, by word and will.</td>
-          <td role="cell">
-            Forms the human like a potter, plants a garden and walks in it. Much
-            more anthropo&shy;morphic.
-          </td>
-        </tr>
-        <tr class="creation-compare__row" role="row" data-card-hide>
-          <th class="creation-compare__aspect" role="rowheader" scope="row">
-            <span class="type-eyebrow">Why humans are made</span>
-          </th>
-          <td role="cell">To have dominion over the earth</td>
-          <td role="cell">To till and keep the garden</td>
-        </tr>
-        <tr class="creation-compare__row" role="row" data-card-hide>
-          <th class="creation-compare__aspect" role="rowheader" scope="row">
-            <span class="type-eyebrow">Words for the sexes</span>
-          </th>
-          <td role="cell">“Male and female”</td>
-          <td role="cell">“Man and woman”, a different set of Hebrew terms</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="creation-compare__more scholarship-meta" data-share-hide>
-      Every line here comes from the cited answers below:
-      <a href="#two">Does Genesis open with two different creation accounts?</a>
-      and <a href="#differ">How do the two accounts differ?</a>
+  <div class="gen-comic__page">
+    <header class="gen-comic__head">
+      <p class="gen-comic__kicker">Genesis 1–3 · how scholars read it</p>
+      <p class="gen-comic__title">
+        Two creation accounts, by different writers
+      </p>
+      <p class="gen-comic__key">
+        <span class="gen-comic__badge gen-comic__badge--1">1</span>
+        Genesis 1:1–2:4a, which calls the deity “God” ·
+        <span class="gen-comic__badge gen-comic__badge--2">2</span>
+        from 2:4b, “the LORD God”
+      </p>
+      <p class="gen-comic__legend">
+        <span class="gen-comic__legend-bolt" aria-hidden="true">⚡</span>
+        splits the two accounts. In the Documentary Hypothesis, 1 is P, the
+        Priestly source, and 2 is J.
+      </p>
+    </header>
+    <ol class="gen-comic__strip">
+      {{- range $panels }}
+        <li
+          class="gen-comic__frame gen-comic__frame--{{ .id }}"
+          {{ if in (slice "before" "first") .id }}data-card-hide{{ end }}>
+          <figure class="gen-comic__figure">
+            <div class="gen-comic__art">
+              {{ partial "inline/gen-half.html" (merge .left (dict "side" "left")) }}
+              {{ partial "inline/gen-half.html" (merge .right (dict "side" "right")) }}
+              <svg
+                class="gen-comic__bolt"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+                focusable="false">
+                <polyline points="57,0 45,40 58,52 43,100" />
+                <polyline points="57,0 45,40 58,52 43,100" />
+              </svg>
+            </div>
+            <h3 class="gen-comic__box">{{ .box }}</h3>
+            {{/* The labels sit on the art, one plate per account, in a corner the picture leaves clear. */}}
+            <figcaption>
+              {{- range .plates }}
+                <p class="comic-plate comic-plate--{{ .pos }}">
+                  <span class="comic-plate__big">
+                    <span
+                      class="gen-comic__badge gen-comic__badge--{{ .badge }}"
+                      title="{{ cond (eq .badge "1") "The first account, Genesis 1" "The second account, Genesis 2" }}"
+                      >{{ .badge }}</span
+                    >
+                    {{ .big }}
+                  </span>
+                  <span class="comic-plate__sub">
+                    {{ .sub }}
+                    {{ partial "inline/gen-ref.html" (dict "ref" .ref "label" .label) -}}
+                  </span>
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="gen-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
     </p>
   </div>
+  <p class="gen-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#two">does Genesis open with two different creation accounts</a>
+    and <a href="#differ">how do the two accounts differ</a>.
+  </p>
 </section>

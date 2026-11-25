@@ -1,0 +1,126 @@
+# Illustrations for /scholarship/the-creation-stories-in-genesis/ (generated
+# with Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each
+# picture shows only what the listed statements support; every caption, link
+# and claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Four comic panels, each split by a lightning bolt into the two accounts:
+# Genesis 1 on the left half, Genesis 2 on the right, each its own 4:5 image.
+# `together` is the anchor for the first humans; the halves that show them are
+# chained from it. God is never drawn as a figure on a Genesis 1 half (he
+# creates by word); on Genesis 2 halves only his hands appear (the potter).
+# Every human is clothed. The order of creation is on the plates, not the art.
+slug: the-creation-stories-in-genesis
+images:
+  - id: together
+    statements: [differ]
+    aspect: "4:5"
+    alt: "A man and a woman stand side by side, newly made, bathed in light from above."
+    prompt: >-
+      A young man and a young woman, the first humans, stand side by side
+      in the centre-left of the picture, full figure, looking around them in
+      wonder, newly made. Both are fully clothed in simple plain knee-length
+      tunics with short sleeves: his rust red, hers light warm grey; bare
+      feet, dark hair. A broad soft shaft of golden amber light falls on them
+      from above. They stand on plain pale ground. The upper part of the
+      picture is open pale sky with nothing in it. No other figures, no god,
+      no hands, no animals, no plants, no text.
+
+  - id: before-1
+    statements: [deep, beginning]
+    aspect: "4:5"
+    alt: "Dark, heaving primordial waters under a black sky, a wind sweeping over their surface."
+    prompt: >-
+      The dark primordial ocean before creation: heaving, rolling black and
+      deep grey waves filling the lower two thirds of the picture, under a
+      nearly black, empty sky. A strong wind sweeps across the surface of the
+      water from left to right, drawn as a few bold curling amber wind lines
+      skimming the wave tops. The bottom of the picture is open dark water.
+      No land, no light source, no sun, no stars, no figures, no monsters,
+      no faces in the waves, no text.
+
+  - id: before-2
+    statements: [differ]
+    aspect: "4:5"
+    alt: "A bare, dry, empty plain: cracked earth with no shrub or plant anywhere."
+    prompt: >-
+      A bare, dry, empty plain of cracked pale brown earth stretching to a
+      low flat horizon, under a plain pale sky. Not a single shrub, plant,
+      blade of grass or tree anywhere. A few small stones. The lower part of
+      the picture is open flat ground. No water, no rain, no figures, no
+      animals, no text.
+
+  - id: make-1
+    statements: [differ, two]
+    aspect: "4:5"
+    refs: [before-1]
+    alt: "Over the same dark waters, a great burst of light breaks out of the black sky. No figure is seen."
+    prompt: >-
+      The SAME dark waters as in the reference image, now with a great
+      radiant burst of golden amber light breaking out of the black sky at
+      the top centre-left, its rays fanning down and lighting the wave tops.
+      The light has no source that can be seen: no sun, no figure, no hand,
+      no face, no eye, nobody. It is as if a single word has been spoken.
+      The bottom of the picture is open dark water. No land, no people, no
+      text.
+
+  - id: make-2
+    statements: [differ, two]
+    aspect: "4:5"
+    refs: [before-2, together]
+    alt: "Two large hands shape a small human figure out of the earth, like a potter working clay."
+    prompt: >-
+      On the SAME bare cracked earth as in the first reference image, two
+      large strong hands come down from the upper right, out of frame (only
+      the hands and wrists are visible, no body, no face), and shape a small
+      human figure out of the brown earth, like a potter working wet clay.
+      The figure is a man of clay, half formed, lying on the ground, the
+      size of the hands, the same build and dark hair as the man in the
+      second reference image but entirely made of brown clay, with no
+      clothing details, smooth like a sculpture. The bottom of the picture
+      is open flat ground. No plants, no animals, no other people, no text.
+
+  - id: first-1
+    statements: [differ]
+    aspect: "4:5"
+    refs: [together]
+    alt: "A lush world full of plants, trees, birds, fish and land animals; the man and woman stand small among them."
+    prompt: >-
+      A lush, full world: leafy trees, grass and fruiting plants, birds in
+      the air, fish leaping in a stream, and land animals (a cow, a deer, a
+      lion, a sheep) grazing and resting. The SAME man and woman as in the
+      reference image (same faces, hair and plain tunics, rust red and light
+      grey) stand together small in the lower centre, the newest arrivals,
+      looking at it all. The top of the picture is open pale sky. No god, no
+      hands, no other people, no text.
+
+  - id: first-2
+    statements: [differ]
+    aspect: "4:5"
+    refs: [make-2, together]
+    alt: "The man stands alone on the bare ground; behind him a young tree sprouts and animals approach."
+    prompt: >-
+      The SAME man as in the second reference image (same face and dark
+      hair, his plain rust red tunic), now living, standing alone on the
+      SAME bare cracked earth as in the first reference image, in the
+      centre-right of the picture. Behind him, just now appearing, a young
+      tree sprouts from the ground, and a few animals (a sheep, a deer, a
+      bird) walk up toward him from the distance. The top of the picture is
+      open pale sky. No woman, no other people, no god, no hands, no text.
+
+  - id: woman-2
+    statements: [differ]
+    aspect: "4:5"
+    refs: [together, first-2]
+    alt: "The man lies asleep under a tree; the woman, newly made, stands beside him."
+    prompt: >-
+      A garden scene: the SAME man as in the references (rust red tunic)
+      lies peacefully asleep on his back on the grass under a leafy tree,
+      eyes closed, in the lower right, his head toward the right edge.
+      Standing just beside his feet, also in the right half, newly
+      made, is the SAME woman as in the first reference image (same face and
+      hair, plain light grey tunic), looking down at him. A soft amber glow
+      around her. Both fully clothed. No wound, no blood, no surgery, no
+      ribs shown, no god, no hands, no other people. Keep the whole scene,
+      both figures and the tree, in the RIGHT TWO THIRDS of the picture;
+      the left third is only open grass and pale sky. The top of the
+      picture is open pale sky. No text.
