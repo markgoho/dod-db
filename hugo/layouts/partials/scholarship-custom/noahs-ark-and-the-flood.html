@@ -16,9 +16,9 @@
   The art is generated with Gemini from
   data/scholarship-illustrations/noahs-ark-and-the-flood.yaml. The P half
   of panel 1 shows exactly one pair (checked by eye); the J half shows a
-  crowd too dense to count, and the exact counts are the HTML/SVG bands in
-  the caption. Reword a caption only when the statement it comes from is
-  re-reviewed.
+  line of sheep running out of the picture, so it asserts no total. The
+  numbers and verses are HTML plates set on the art. Reword a plate only
+  when the statement it comes from is re-reviewed.
   */
 -}}
 {{- define "partials/inline/noah-ref.html" -}}
@@ -47,19 +47,31 @@
   (dict
   "id" "board" "box" "Who boards the ark?"
   "left" (dict "id" "board-left" "alt" "Noah in the ark's door beckons; exactly two sheep walk up the gangway.")
-  "right" (dict "id" "board-right" "alt" "The same scene: a dense crowd of sheep streams up the gangway, too many to count."))
+  "right" (dict "id" "board-right" "alt" "The same scene: a dense crowd of sheep streams up the gangway and on out of the picture.")
+  "plates" (slice
+  (dict "pos" "tl" "badge" "p" "big" "1 pair" "sub" "of every kind" "ref" "Genesis 6:19" "label" "Gen 6:19")
+  (dict "pos" "tr" "badge" "j" "big" "7 pairs" "sub" "of every clean kind, 1 pair of unclean" "ref" "Genesis 7:2" "label" "Gen 7:2")))
   (dict
   "id" "flood" "box" "How long does it last?"
   "left" (dict "id" "flood-left" "alt" "The ark afloat on the flood; Noah watches from a window.")
-  "right" (dict "id" "flood-right" "alt" "The ark still afloat; Noah leans wearily on the window sill."))
+  "right" (dict "id" "flood-right" "alt" "The ark still afloat; Noah leans wearily on the window sill.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "40 days" "ref" "Genesis 7:17" "label" "Gen 7:17")
+  (dict "pos" "br" "big" "150 days" "ref" "Genesis 7:24" "label" "Gen 7:24")))
   (dict
   "id" "birds" "box" "Which bird goes out?"
   "left" (dict "id" "raven" "alt" "From an ark window, Noah lets a black raven fly out over the water.")
-  "right" (dict "id" "dove" "alt" "From the same window, Noah lets a white dove fly out over the water."))
+  "right" (dict "id" "dove" "alt" "From the same window, Noah lets a white dove fly out over the water.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "A raven" "ref" "Genesis 8:7" "label" "Gen 8:7")
+  (dict "pos" "br" "big" "A dove" "sub" "sent three times" "ref" "Genesis 8:8-12" "label" "Gen 8:8–12")))
   (dict
   "id" "after" "box" "After the flood"
   "left" (dict "id" "after-left" "alt" "Noah walks down from the ark, resting on the mountains; there is no altar.")
-  "right" (dict "id" "after-right" "alt" "Noah raises his hands beside a stone altar with fire and smoke; the ark rests on the mountains behind."))
+  "right" (dict "id" "after-right" "alt" "Noah raises his hands beside a stone altar with fire and smoke; the ark rests on the mountains behind.")
+  "plates" (slice
+  (dict "pos" "tl" "badge" "p" "big" "No sacrifice" "sub" "by one view: sacrifice is for priests")
+  (dict "pos" "tr" "badge" "j" "big" "Sacrifice" "sub" "by one view, what the clean pairs are for" "ref" "Genesis 8:20" "label" "Gen 8:20")))
 -}}
 <section class="cloud-section noah-comic">
   <h2
@@ -68,27 +80,6 @@
     data-share-hide>
     At a glance
   </h2>
-  <svg class="noah-comic__defs" aria-hidden="true" focusable="false">
-    <defs>
-      <g id="noah-animal-shape">
-        <rect x="7" y="9" width="25" height="11" rx="5" />
-        <rect x="10" y="17" width="4.5" height="12" rx="1" />
-        <rect x="24" y="17" width="4.5" height="12" rx="1" />
-        <path d="M27 13 33 5h6l3 5-2 3h-5l-4 6z" />
-        <path d="m34 6-1.5-4.5L37 5z" />
-        <path d="M8 11 1.5 15.5l1 2L9 14z" />
-      </g>
-    </defs>
-    <symbol id="noah-animal" viewBox="-2 -2 48 36">
-      <use
-        href="#noah-animal-shape"
-        style="fill: var(--noah-ink); stroke: var(--noah-ink); stroke-width: 4.5; stroke-linejoin: round" />
-      <use href="#noah-animal-shape" style="fill: var(--noah-fill)" />
-    </symbol>
-    <symbol id="noah-drop" viewBox="0 0 12 16">
-      <path d="M6 .5S1 7.5 1 10.6a5 5 0 0 0 10 0C11 7.5 6 .5 6 .5z" />
-    </symbol>
-  </svg>
   <div class="noah-comic__page">
     <header class="noah-comic__head">
       <p class="noah-comic__kicker">Genesis 6–9 · most scholars conclude</p>
@@ -136,122 +127,28 @@
               {{- end }}
             </div>
             <h3 class="noah-comic__box">{{ .box }}</h3>
-            <figcaption class="noah-comic__caption">
-              {{- if eq .id "board" }}
-                <div class="noah-comic__sides">
-                  <div class="noah-comic__side">
-                    <p>
+            {{/* The labels sit on the art, one plate per telling, in a corner the picture leaves clear. */}}
+            <figcaption class="noah-comic__plates">
+              {{- range .plates }}
+                <p class="noah-comic__plate noah-comic__plate--{{ .pos }}">
+                  <span class="noah-comic__big">
+                    {{- with .badge }}
                       <span
-                        class="noah-comic__badge noah-comic__badge--p"
-                        title="The priestly telling"
-                        >P</span
+                        class="noah-comic__badge noah-comic__badge--{{ . }}"
+                        title="{{ cond (eq . "p") "The priestly telling" "The other telling" }}"
+                        >{{ upper . }}</span
                       >
-                      Two of every kind
-                      {{ partial "inline/noah-ref.html" (dict "ref" "Genesis 6:19" "label" "Gen 6:19") }}
-                    </p>
-                    <ul class="noah-comic__herd" aria-hidden="true">
-                      <li class="noah-comic__pair">
-                        {{- range seq 2 }}
-                          <svg class="noah-comic__unit noah-comic__unit--p">
-                            <use href="#noah-animal" />
-                          </svg>
-                        {{- end }}
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="noah-comic__side">
-                    <p>
-                      <span
-                        class="noah-comic__badge noah-comic__badge--j"
-                        title="The other telling"
-                        >J</span
-                      >
-                      Seven pairs of every clean kind, one pair of unclean
-                      {{ partial "inline/noah-ref.html" (dict "ref" "Genesis 7:2" "label" "Gen 7:2") }}
-                    </p>
-                    <ul class="noah-comic__herd" aria-hidden="true">
-                      {{- range seq 7 }}
-                        <li class="noah-comic__pair">
-                          {{- range seq 2 }}
-                            <svg
-                              class="noah-comic__unit noah-comic__unit--clean">
-                              <use href="#noah-animal" />
-                            </svg>
-                          {{- end }}
-                        </li>
-                      {{- end }}
-                      <li class="noah-comic__pair">
-                        {{- range seq 2 }}
-                          <svg
-                            class="noah-comic__unit noah-comic__unit--unclean">
-                            <use href="#noah-animal" />
-                          </svg>
-                        {{- end }}
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              {{- else if eq .id "flood" }}
-                <div class="noah-comic__sides">
-                  {{- range slice (dict "n" 40 "ref" "Genesis 7:17" "label" "Gen 7:17") (dict "n" 150 "ref" "Genesis 7:24" "label" "Gen 7:24") }}
-                    <div class="noah-comic__side">
-                      <p>
-                        {{ .n }} days
-                        {{ partial "inline/noah-ref.html" . }}
-                      </p>
-                      <div class="noah-comic__drops" aria-hidden="true">
-                        {{- range seq .n }}
-                          <svg class="noah-comic__drop">
-                            <use href="#noah-drop" />
-                          </svg>
-                        {{- end }}
-                      </div>
-                    </div>
+                    {{- end }}
+                    {{ .big }}
+                  </span>
+                  {{- if or .sub .ref }}
+                    <span class="noah-comic__sub">
+                      {{- with .sub }}{{ . }}{{ end }}
+                      {{ if .ref }}
+                        {{- partial "inline/noah-ref.html" (dict "ref" .ref "label" .label) -}}
+                      {{ end }}
+                    </span>
                   {{- end }}
-                </div>
-              {{- else if eq .id "birds" }}
-                <div class="noah-comic__sides">
-                  <div class="noah-comic__side">
-                    <p>
-                      A raven
-                      {{ partial "inline/noah-ref.html" (dict "ref" "Genesis 8:7" "label" "Gen 8:7") }}
-                    </p>
-                  </div>
-                  <div class="noah-comic__side">
-                    <p>
-                      A dove, three times
-                      {{ partial "inline/noah-ref.html" (dict "ref" "Genesis 8:8-12" "label" "Gen 8:8–12") }}
-                    </p>
-                  </div>
-                </div>
-              {{- else }}
-                <div class="noah-comic__sides">
-                  <div class="noah-comic__side">
-                    <p>
-                      <span
-                        class="noah-comic__badge noah-comic__badge--p"
-                        title="The priestly telling"
-                        >P</span
-                      >
-                      No sacrifice
-                    </p>
-                  </div>
-                  <div class="noah-comic__side">
-                    <p>
-                      <span
-                        class="noah-comic__badge noah-comic__badge--j"
-                        title="The other telling"
-                        >J</span
-                      >
-                      Noah’s sacrifice
-                      {{ partial "inline/noah-ref.html" (dict "ref" "Genesis 8:20" "label" "Gen 8:20") }}
-                    </p>
-                  </div>
-                </div>
-                <p class="noah-comic__note">
-                  By one view, the clean pairs are for this sacrifice; the
-                  priestly telling has none, since sacrifice was the priests’
-                  role.
                 </p>
               {{- end }}
             </figcaption>

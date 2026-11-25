@@ -3,13 +3,12 @@
   page. One ink frame holds the title, four panels and the credit, so the
   whole thing shares as one image. Each panel's art is two generated
   pictures split by a lightning bolt, one per telling; a narration label
-  sits flush top-left and a caption band runs along the bottom, its two
-  halves under the two pictures. Counted marks (animals, days) are HTML/SVG
-  units in the caption band, never laid over the art. Composes
+  sits flush top-left, and each telling's number or label is a plate set on
+  its half of the art, in a corner the picture leaves clear. Composes
   cloud-section, type-section-title and scholarship-meta.
 
   Distinctions without colour: which telling is which is the side and the
-  P or J badge; an unclean animal is hollow (paper), a clean one filled.
+  P or J badge on the plate.
 */
 .noah-comic {
   --noah-ink: var(--tan-900);
@@ -17,8 +16,6 @@
   --noah-amber: var(--color-accent);
   --noah-rust: var(--rust-500);
   --noah-frame: var(--border-width-md);
-  --noah-unit: 1.35rem;
-  --noah-drop: 0.5rem;
 
   container: noah-comic / inline-size;
 }
@@ -127,11 +124,10 @@
   min-inline-size: 0;
 }
 
-/* A panel: one ink frame around the art and its caption band. */
+/* A panel: one ink frame around the art; its labels sit on the art. The panel is a container, so the plates scale with it. */
 .noah-comic__figure {
   border: var(--noah-frame) solid var(--noah-ink);
-  display: grid;
-  grid-template-rows: auto 1fr;
+  container-type: inline-size;
   margin: 0;
   position: relative;
 }
@@ -244,43 +240,75 @@
   text-transform: uppercase;
 }
 
-/* Caption band along the bottom, inside the frame: one half per telling. */
-.noah-comic__caption {
-  align-content: start;
+/* Plates: comic caption boxes on the art, one per telling, in a clear corner. */
+.noah-comic__plates {
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.noah-comic__plate {
   background: var(--noah-paper);
-  border-block-start: var(--noah-frame) solid var(--noah-ink);
+  border: 3px solid var(--noah-ink);
+  box-shadow: 3px 3px 0 var(--noah-ink);
   display: grid;
-  gap: var(--space-3xs);
-  padding: var(--space-2xs) var(--space-xs);
+  gap: 0.3cqi;
+  margin: 0;
+  max-inline-size: 38%;
+  padding: 0.9cqi 1.4cqi 1.1cqi;
+  pointer-events: auto;
+  position: absolute;
 }
 
-.noah-comic__sides {
-  display: grid;
-  gap: var(--space-xs);
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.noah-comic__plate--tl {
+  inset: 10cqi auto auto 2cqi;
 }
 
-.noah-comic__side {
-  align-content: start;
-  display: grid;
-  gap: var(--space-3xs);
+.noah-comic__plate--tr {
+  inset: 2cqi 2cqi auto auto;
+  text-align: end;
 }
 
-.noah-comic__side > p,
-.noah-comic__note {
+.noah-comic__plate--bl {
+  inset: auto auto 2cqi 2cqi;
+}
+
+.noah-comic__plate--br {
+  inset: auto 2cqi 2cqi auto;
+  text-align: end;
+}
+
+/* The number or the thing: big comic lettering, an amber offset. */
+.noah-comic__big {
   font-family: var(--font-family-display);
-  font-size: var(--step--1);
+  font-size: clamp(0.95rem, 5.4cqi, 2.1rem);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: 1;
+  text-shadow: 2px 2px 0 var(--noah-amber);
+  text-transform: uppercase;
+}
+
+.noah-comic__big > .noah-comic__badge {
+  font-size: 0.6em;
+  margin-inline-end: 0.2em;
+  text-shadow: none;
+  vertical-align: 0.25em;
+}
+
+.noah-comic__sub {
+  font-family: var(--font-family-display);
+  font-size: clamp(0.65rem, 2.5cqi, 0.95rem);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
   line-height: var(--line-height-tight);
-  margin: 0;
   text-wrap: balance;
 }
 
-.noah-comic__note {
-  border-block-start: 2px solid var(--noah-ink);
-  font-size: var(--step--2);
-  padding-block-start: var(--space-3xs);
+.noah-comic__sub > .noah-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
 }
 
 /* Scripture tags: ink chips in the caption band. */
@@ -296,53 +324,6 @@
   padding: var(--space-4xs) var(--space-3xs);
   text-decoration-color: var(--noah-amber);
   white-space: nowrap;
-}
-
-/* Counted animals: one unit each, pairs spaced apart, free to wrap. */
-.noah-comic__herd {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4xs) var(--space-3xs);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.noah-comic__pair {
-  display: flex;
-}
-
-.noah-comic__unit {
-  aspect-ratio: 48 / 36;
-  display: block;
-  inline-size: var(--noah-unit);
-  overflow: visible;
-}
-
-.noah-comic__unit--p {
-  --noah-fill: var(--noah-rust);
-}
-
-.noah-comic__unit--clean {
-  --noah-fill: var(--noah-amber);
-}
-
-.noah-comic__unit--unclean {
-  --noah-fill: var(--noah-paper);
-}
-
-/* Counted days: one drop each, twenty-five to a row, so 40 and 150 compare by area. */
-.noah-comic__drops {
-  display: grid;
-  gap: 1px;
-  grid-template-columns: repeat(25, minmax(0, var(--noah-drop)));
-}
-
-.noah-comic__drop {
-  aspect-ratio: 12 / 16;
-  display: block;
-  fill: var(--noah-ink);
-  inline-size: 100%;
 }
 
 .noah-comic__credit {
@@ -372,10 +353,6 @@
 }
 
 /* The poster: two by two on the 4:5 canvas. */
-.scholarship-share:target .noah-comic {
-  --noah-unit: 1.1rem;
-  --noah-drop: 0.42rem;
-}
 
 .scholarship-share:target .noah-comic__page {
   gap: var(--space-2xs);
@@ -387,17 +364,8 @@
   max-inline-size: none;
 }
 
-/* A little wider than 4:3, so the count bands fit on the canvas. */
-.scholarship-share:target .noah-comic__art {
-  aspect-ratio: 3 / 2;
-}
-
 .scholarship-share:target .noah-comic__head {
   gap: 0;
-}
-
-.scholarship-share:target .noah-comic__caption {
-  padding: var(--space-3xs) var(--space-2xs);
 }
 
 .scholarship-share:target .noah-comic__strip {
@@ -406,9 +374,6 @@
 }
 
 /* The card: panels 1 and 4 side by side under the title. */
-.scholarship-share:has(#share-card:target) .noah-comic {
-  --noah-unit: 1rem;
-}
 
 .scholarship-share:has(#share-card:target) .noah-comic__page {
   gap: var(--space-2xs);
@@ -423,10 +388,6 @@
 .scholarship-share:has(#share-card:target) .noah-comic__title {
   font-size: var(--step-1);
   max-inline-size: none;
-}
-
-.scholarship-share:has(#share-card:target) .noah-comic__caption {
-  padding: var(--space-3xs) var(--space-2xs);
 }
 
 .scholarship-share:has(#share-card:target) .noah-comic__strip {
