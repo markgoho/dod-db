@@ -1,0 +1,748 @@
+# Review record for /scholarship/homosexuality-and-the-bible/ (#93 shape). Not rendered.
+# agent: results of the agent first pass (#177, 2026-11-25). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
+# Sourcing test (#177, 2026-11-25): gate 1, nine Trigger Claims in Episodes 10 and 114, read with the turns either side. Gate 2, the core: the candidate “the biblical writers had no concept of sexual orientation” sourced only as “not in the modern sense”: HarperCollins (Reference), Loader 2014 (Scholarly), Martin l20 (Reference) back it; Brooten (as reported by Brennan) and Loader's Aristophanes caveat show ancient exceptions, so the short reports the debate. Gate 3: 3 independent authors behind the core. Gate 4: 10 statements.
+# Dropped for want of a second author or any qualifying source: Jude 7 “strange flesh” as angels (no Scholarly or Reference source discusses it; Bauckham, Hultin, Keener only as quoted in Otey, Themelios 2024, a confessional journal); Ezekiel 16:49 as Sodom's sin (Stiebert only; attributed in the sodom text); Leviticus 18:22 addressing only the insertive partner (Joosten reporting Olyan only; attributed); to‘evah as relative abhorrence (Kawashima only; not stated); a cultic-prostitution reading of Leviticus (no source).
+# First pass: three research agents fetched every source on 2026-11-25 into separate scratch folders and copied quotes from the fetched text; every page quote was then script-matched (whitespace and HTML entities normalised) against those saved texts: 77/77, 0 misses. The second pass must re-fetch.
+# Flags for the second pass: (1) Most Reference citations are Bible Odyssey pages (nine authors): independent authors, one platform. (2) Huber reports what LGBTQ+ interpreters argue (passages); the passages short also rests on HarperCollins and Loader. (3) Wells's “most academic scholars” is his own judgment, attributed by name in the today text and not used as the short. (4) Brennan and Halperin (BMCR 1997) sit at the edge of the 30-year window; they back only the attributed dissent. (5) Tushima writes from a stated canonical-theological frame at an evangelical seminary; Old Testament Essays is peer-reviewed, so Scholarly by venue (#80: class follows venue), used only for the dissent. (6) Jefferson's field is early Christianity and art; his women citation reports what “commentators” argue. (7) Joosten's own reading (married man) is a new proposal, attributed. (8) Stiebert's first name is not on the PDF; registry and text use “J. Stiebert”.
+review: null
+citations:
+  orientation/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  orientation/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  orientation/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  orientation/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  orientation/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  orientation/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  orientation/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  orientation/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  passages/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  passages/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  passages/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  passages/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  sodom/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  leviticus/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  women/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  women/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  women/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  women/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  women/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  women/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  women/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  women/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  romans/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  romans/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  romans/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  romans/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  romans/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  romans/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  romans/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  vice-lists/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  vice-lists/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  vice-lists/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  vice-lists/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  vice-lists/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  vice-lists/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  vice-lists/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  vice-lists/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  jesus/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  jesus/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  jesus/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  jesus/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  today/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  today/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  today/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  today/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  tradition/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  tradition/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  tradition/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  tradition/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  tradition/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  tradition/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  tradition/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+  tradition/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+    }
+triggers:
+  10@00:16:41:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  10@00:31:40:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  10@00:34:12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  10@00:41:31:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  10@00:59:01:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  10@01:02:19:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  10@01:06:14:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  114@00:38:15:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+  114@00:44:10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: 10 statements. Core orientation cites HarperCollins (Powell, ed., Reference), Loader 2014 HTS (Scholarly) and Martin l20 (Reference): 3 independent authors, none Host-authored.",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: No statement says “consensus”. “most scholars” appears only as Wells's own words, attributed, twice (leviticus: the act-of-lying reading; today: Knust and Coogan's views), never in a short. “widely been interpreted” (leviticus short) is Joosten's wording. #133 per short: orientation (HarperCollins, Loader, Martin; debate Brennan/Brooten vs Halperin); passages (Huber, HarperCollins, Loader); sodom (Hayes, Stiebert, Joosten, Graybill, Ahern; dissent Tushima); leviticus (HarperCollins, Joosten, Wells, Stiebert, Instone-Brewer); women (Joosten, Stiebert, Anderson; Rom 1:26 HarperCollins, Loader); romans (HarperCollins, Loader, Wells); vice-lists (Knust, Hoke, Wells; reading HarperCollins, Loader); jesus (Loader, Zeichmann, HarperCollins); today (Martin, Joosten, Loader, Wells); tradition (Tradition sources, exempt).",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Brooten (via Brennan) and Halperin named; Loader's Aristophanes caveat named; Tushima's traditional reading named; Olyan's insertive-partner view and Joosten's married-man proposal named; Wells's minority view on “beds” and his “most academic scholars” named; Instone-Brewer's caution named; Loader's report of scholars who read Rom 1:26 otherwise named.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: ccc-2357 named as the Catholic Church (the Catechism's own title, as ccc-112); gotquestions-homosexuality as Got Questions Ministries, an evangelical ministry (registry convention); elca-2009-human-sexuality as the Evangelical Lutheran Church in America (its own name); ucc-2005-equal-marriage as the United Church of Christ's General Synod (its own name). None supports what scholars think.",
+    }
+sources:
+  harpercollins-2009-dictionary:
+    {
+      agent: pass,
+      owner: "",
+      note: "Already registered (Reference, 2009). First pass 2026-11-25: entries “homosexuality” and “Sodom” on Bible Odyssey, per-citation urls. The “homosexuality” entry's “(cf. a parallel incident in Judg 1)” is a page error for Judg 19; not quoted.",
+    }
+  loader-2014-same-sex-relationships:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly; HTS Teologiese Studies 70(1), Art. #2114, published 23 May 2014; DOI 10.4102/hts.v70i1.2114. Same author as loader-bo-homosexuality-nt: counted once.",
+    }
+  martin-rlst152-l20:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; 2009; lecture page and title from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+    }
+  brennan-1997-bmcr-brooten:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly; BMCR 1997.05.07. At the edge of the 30-year window; backs only the attributed Brooten view.",
+    }
+  halperin-1997-bmcr-response:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly; BMCR 1997.12.03, a response letter. Backs only the attributed reply.",
+    }
+  huber-bo-lgbtq-interpretation:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; 22 March 2024. BO bio: Professor of Religious Studies, Elon University; PhD New Testament, Emory 2004.",
+    }
+  loader-bo-homosexuality-nt:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; page datePublished 12 July 2022. BO bio: Professor Emeritus of New Testament, Murdoch University; research on sexuality in early Judaism and the NT.",
+    }
+  hayes-rlst145-l6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Already registered (Reference, 2006, Open Yale RLST 145).",
+    }
+  stiebert-2002-botswana-hebrew-bible:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly; Verbum et Ecclesia 23(1), 2002, University of Pretoria repository. Byline “J Stiebert (University of Botswana)”. Inside the 30-year window. PDF extraction duplicates pages; locators use printed page numbers.",
+    }
+  joosten-2020-leviticus-18-22:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly; Journal of Theological Studies 71.1 (2020), OUP; author's accepted manuscript on ORA; locators are manuscript pages.",
+    }
+  graybill-bo-levites-concubine:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; 28 February 2025. BO bio: Professor of Religious Studies, University of Richmond.",
+    }
+  ahern-2018-sin-of-sodom:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly; Journal of the History of Sexuality, 2018; author's deposit on Humanities Commons. Author: University of Cambridge.",
+    }
+  tushima-2021-sodom-liminality:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly by venue (Old Testament Essays, peer-reviewed); 2021. Author: Jos ECWA Theological Seminary and UNISA; states a canonical-theological frame. Used only for the dissent, attributed.",
+    }
+  hayes-rlst145-l9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Already registered (Reference, 2006, Open Yale RLST 145).",
+    }
+  coogan-brief-4e-summary-ch8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; 2019, 4th ed. (edition per the OUP catalogue check recorded for this textbook's other summaries).",
+    }
+  wells-bo-bible-homosexuality:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; page date 14 December 2022 is the site-wide migration date, so year kept null; cites a 2022 article (inside the window). BO bio: professor, Theology and Religious Studies, Saint Joseph’s University.",
+    }
+  instone-brewer-2020-two-types-of-men:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly; HIPHIL Novum 6(1), 2020, open-access journal. Author: Tyndale House, Cambridge. His own argument, attributed (“argues”).",
+    }
+  anderson-er-lesbianism:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; Encyclopedia of Religion 2nd ed., entry signed “Carol S. Anderson (2005)”, on Encyclopedia.com.",
+    }
+  kawashima-bo-abomination-word-study:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; 2 October 2026. BO bio: associate professor, University of Florida (Religion; Center for Jewish Studies).",
+    }
+  jefferson-bo-sexual-purity-leviticus:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; 20 June 2017. BO bio: assistant professor of religion, Centre College. Flag: his field is early Christianity and art; cited only for what commentators argue.",
+    }
+  hoke-bo-sexuality-pauls-letters:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; 9 February 2023. BO bio: visiting Assistant Professor, Luther College. The page spells “arsenkoitai”; quoted as written.",
+    }
+  knust-bo-illicit-sex-word-study:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; 24 May 2022. BO bio: Professor of Religious Studies, Duke University.",
+    }
+  zeichmann-bo-centurions-slave:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; 3 August 2022. BO bio: teaches at Toronto Metropolitan University. “widespread sense” reports a perception, worded as such in the jesus text.",
+    }
+  martin-rlst152-l22:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference; 2009; lecture page and title from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+    }
+  ccc-2357:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Tradition; year not on page; vatican.va __P85.HTM, §§2357–2359. Footnote markers 140–141 dropped from quotes.",
+    }
+  gotquestions-homosexuality:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Tradition (#86); year not on page; self-description on gotquestions.org/about: “Christian, evangelical, theologically conservative, and nondenominational”.",
+    }
+  elca-2009-human-sexuality:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Tradition; social statement adopted 19 August 2009, Section IV edits adopted 1 August 2025; the 2025 PDF read. Note marker 30 dropped from tradition/7. The statement presents four positions; the page cites the first and fourth and its own “different conclusions” sentence.",
+    }
+  ucc-2005-equal-marriage:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Tradition; General Synod 25 resolution, adopted 4 July 2005; PDF on uccfiles.com, linked from ucc.org. The quote is a WHEREAS clause of the resolution, worded “states” in the text.",
+    }
+leads:
+  - "Mark Preston Stone, “Don’t Do What to Whom?”, Currents in Biblical Research 20.3 (2022): 207–37: survey of scholarship on Lev 18:22 and 20:13 (cultic and one-partner readings), cited by Wells; closed."
+  - "Saul Olyan, Journal of the History of Sexuality 5 (1994), insertive-partner reading; Jerome Walsh, JBL 120 (2001), passive-partner reading: read only as reported by Joosten; closed (Olyan also outside the 30-year window)."
+  - "Ralferd Freytag, “The Hebrew prophets and Sodom and Gomorrah”, Consensus (2008), scholars.wlu.ca: a candidate second author on Ezekiel 16:49; blocked by Cloudflare to curl, not read."
+  - "Bauckham (WBC 1983), Hultin (LNTS 383, 2009), Keener, Witherington and Green on Jude 7: read only as quoted in Melvin L. Otey, Themelios 49.1 (2024)."
+  - "Dale B. Martin, “Arsenokoitês and Malakos” (1996): no author-posted or publisher copy found; only an unauthorised repost."
+  - "John Granger Cook, New Testament Studies 65.3 (2019), on malakoi/arsenokoitai and the 1869 Kertbeny coinage of “homosexual”: paywalled."
+  - "Bernadette Brooten, Love between Women (1996), p. 140: her words known only as quoted in Brennan's review (cited as Brennan's report)."
+  - "Martti Nissinen, Homoeroticism in the Biblical World (1998); Scott Morschauser, JSOT (2003); Thomas Bolin, JSOT (2004): not public."
+uncited:
+  - "Katherine Southwood, Biblical Interpretation (2018), Oxford accepted manuscript: read; hospitality frame for Gen 19 and Judg 19, but counts the Gibeah demand as also violating Lev 18:22. Not cited: the sodom text is carried by Hayes, Stiebert, Joosten, Graybill and Ahern."
+  - "Ahern 2018, “The book of Genesis itself does not imply same-sex relations”: read; not cited, stronger than Joosten, Stiebert and Southwood, who read the demand as sexual."
+  - "Paul Borgman, “Sodom and Gomorrah” (Bible Odyssey): read; a literature professor, not a biblical scholar. Peter Altmann, “Hospitality in the Hebrew Bible” (Bible Odyssey, 2018): read; its Judges 19 paragraph confuses Gibeah with Gibeon. Hilary Lipka, “Lot and His Daughters”: descriptive only."
+  - "Encyclopaedia Judaica, “Homosexuality” and “Lesbianism” (Jewish Virtual Library): read; unsigned, first-edition text with a normative halakhic voice (“sexual perversions”). Not cited; the Talmudic extension to women is not stated on the page."
+  - "Kristin Swenson, “Homosexuality and the Bible” (Bible Odyssey video transcript): read; opinion talk with no analysis."
+  - "Gilbert Herdt, “Homosexuality”, Encyclopedia of Religion: signed 1987, outside the 30-year window."
+  - "Coogan and Chapman ch. 8 summary, “no evidence to support this assertion … cultural prejudice” (on Lev 18's claim about Egyptians and Canaanites): read; not cited, it speaks of the chapter's sexual rules generally."
+  - "Kawashima, to‘evah as “relatively abhorrent” and the Canaanite “slander”: read; one author, not stated on the page."
+  - "Loader, BO, “Are all people heterosexual, as Paul assumed? How we answer that question will determine what conclusions we draw in our world.”: read; not cited, it frames a modern decision the page does not address."
+  - "UCC, Paul Sherry, “Now, No Condemnation” (1998 pastoral letter): read; one officer's letter, not a General Synod act."
+  - "Melvin L. Otey, Themelios 49.1 (2024): read; The Gospel Coalition's confessional journal, author a law professor and PhD student."
+  - "DeGrado, “Temple Prostitute (Word Study)” (Bible Odyssey, 2022): read; never mentions Leviticus, so not cited for the cultic reading."

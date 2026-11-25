@@ -1693,3 +1693,353 @@ gotquestions-bible-errors:
   url: "https://www.gotquestions.org/Bible-errors.html"
   hostAuthored: false
   tradition: "Got Questions Ministries, an evangelical ministry"
+
+loader-2014-same-sex-relationships:
+  author: "William Loader"
+  title: "Same-sex relationships: A 1st-century perspective"
+  series: "HTS Teologiese Studies/Theological Studies 70(1), Art. #2114"
+  publisher: "AOSIS"
+  year: 2014
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal, open"
+  url: "https://hts.org.za/index.php/hts/article/view/2114/4567"
+  hostAuthored: false
+  tradition: null
+
+loader-bo-homosexuality-nt:
+  author: "William Loader"
+  title: "Homosexuality in the New Testament"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2022
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/homosexuality-in-the-new-testament/"
+  hostAuthored: false
+  tradition: null
+
+huber-bo-lgbtq-interpretation:
+  author: "Lynn R. Huber"
+  title: "LGBTQ+ Biblical Interpretation"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2024
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/lgbtq-biblical-interpretation/"
+  hostAuthored: false
+  tradition: null
+
+wells-bo-bible-homosexuality:
+  author: "Bruce Wells"
+  title: "The Bible and Homosexuality"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-bible-and-homosexuality/"
+  hostAuthored: false
+  tradition: null
+
+knust-bo-illicit-sex-word-study:
+  author: "Jennifer Knust"
+  title: "Illicit Sex (Word Study)"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2022
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/illicit-sex-word-study/"
+  hostAuthored: false
+  tradition: null
+
+hoke-bo-sexuality-pauls-letters:
+  author: "Jimmy Hoke"
+  title: "Sexuality in Paul’s Letters"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2023
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/sexuality-in-pauls-letters/"
+  hostAuthored: false
+  tradition: null
+
+zeichmann-bo-centurions-slave:
+  author: "Christopher B. Zeichmann"
+  title: "The Healing of the Centurion’s Slave"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2022
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-healing-of-the-centurions-slave/"
+  hostAuthored: false
+  tradition: null
+
+graybill-bo-levites-concubine:
+  author: "Rhiannon Graybill"
+  title: "The Levite’s Concubine"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2025
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-levites-concubine/"
+  hostAuthored: false
+  tradition: null
+
+kawashima-bo-abomination-word-study:
+  author: "Robert S. Kawashima"
+  title: "Abomination; Detestable; Perversion (Word Study)"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2026
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/abomination-detestable-perversion-word-study/"
+  hostAuthored: false
+  tradition: null
+
+jefferson-bo-sexual-purity-leviticus:
+  author: "Lee M. Jefferson"
+  title: "Sexual Purity in Leviticus"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/sexual-purity-in-leviticus/"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l20:
+  author: "Dale B. Martin"
+  title: 'Introduction to New Testament History and Literature, lecture 20 transcript: The "Anti-household" Paul: Thecla'
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-20"
+  hostAuthored: false
+  tradition: null
+
+martin-rlst152-l22:
+  author: "Dale B. Martin"
+  title: "Introduction to New Testament History and Literature, lecture 22 transcript: Interpreting Scripture: Medieval Interpretations"
+  series: "Open Yale Courses RLST 152"
+  publisher: null
+  year: 2009
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-152/lecture-22"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch8:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 8 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-8-summary"
+  hostAuthored: false
+  tradition: null
+
+stiebert-2002-botswana-hebrew-bible:
+  author: "J. Stiebert"
+  title: "Homosexuality in Botswana and in the Hebrew Bible: An impression"
+  series: "Verbum et Ecclesia 23(1)"
+  publisher: null
+  year: 2002
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "University of Pretoria repository (PDF), open"
+  url: "https://repository.up.ac.za/server/api/core/bitstreams/468eedca-9c56-4ff8-8cf0-8164861a9f38/content"
+  hostAuthored: false
+  tradition: null
+
+joosten-2020-leviticus-18-22:
+  author: "Jan Joosten"
+  title: "A New Interpretation of Leviticus 18:22 (par. 20:13) and its Ethical Implications"
+  series: "Journal of Theological Studies 71(1)"
+  publisher: "Oxford University Press"
+  year: 2020
+  edition: "Accepted manuscript"
+  class: Scholarly
+  kind: article
+  access: "Author's accepted manuscript, Oxford University Research Archive (PDF), open"
+  url: "https://ora.ox.ac.uk/objects/uuid:f5f2275c-2a04-4066-9f5c-27150b611626/files/mcc9dfe353b82360443d14b1a2ddf585b"
+  hostAuthored: false
+  tradition: null
+
+ahern-2018-sin-of-sodom:
+  author: "Eoghan Ahern"
+  title: "The Sin of Sodom in Late Antiquity"
+  series: "Journal of the History of Sexuality"
+  publisher: null
+  year: 2018
+  edition: "Author's deposit"
+  class: Scholarly
+  kind: article
+  access: "Author's deposit, Humanities Commons (PDF), open"
+  url: "https://works.hcommons.org/records/f043h-g4154"
+  hostAuthored: false
+  tradition: null
+
+tushima-2021-sodom-liminality:
+  author: "Cephas T. A. Tushima"
+  title: "Homosexuality and Liminality in Sodom"
+  series: "Old Testament Essays 34(1)"
+  publisher: null
+  year: 2021
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal on SciELO South Africa, open"
+  url: "https://scielo.org.za/scielo.php?script=sci_arttext&pid=S1010-99192021000100005&lng=en&nrm=iso&tlng=en"
+  hostAuthored: false
+  tradition: null
+
+instone-brewer-2020-two-types-of-men:
+  author: "David Instone-Brewer"
+  title: "Are there two types of men in Leviticus 20:13?"
+  series: "HIPHIL Novum 6(1)"
+  publisher: null
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal (PDF), open"
+  url: "https://tidsskrift.dk/hiphilnovum/article/download/142754/186455"
+  hostAuthored: false
+  tradition: null
+
+brennan-1997-bmcr-brooten:
+  author: "T. Corey Brennan"
+  title: "Review of Bernadette J. Brooten, Love between Women: Early Christian Responses to Female Homoeroticism"
+  series: "Bryn Mawr Classical Review 1997.05.07"
+  publisher: null
+  year: 1997
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access review journal, open"
+  url: "https://bmcr.brynmawr.edu/?p=21016"
+  hostAuthored: false
+  tradition: null
+
+halperin-1997-bmcr-response:
+  author: "David Halperin"
+  title: "Halperin on Brennan on Brooten"
+  series: "Bryn Mawr Classical Review 1997.12.03"
+  publisher: null
+  year: 1997
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access review journal, open"
+  url: "https://bmcr.brynmawr.edu/?p=20844"
+  hostAuthored: false
+  tradition: null
+
+anderson-er-lesbianism:
+  author: "Carol S. Anderson"
+  title: "Lesbianism"
+  series: "Encyclopedia of Religion"
+  publisher: null
+  year: 2005
+  edition: "2nd ed. (entry credit line)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/lesbianism"
+  hostAuthored: false
+  tradition: null
+
+ccc-2357:
+  author: null
+  title: "Catechism of the Catholic Church, §§2357–2359"
+  series: null
+  publisher: "Libreria Editrice Vaticana"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "vatican.va, open"
+  url: "https://www.vatican.va/archive/ENG0015/__P85.HTM"
+  hostAuthored: false
+  tradition: "the Catholic Church"
+
+gotquestions-homosexuality:
+  author: null
+  title: "What does the Bible say about homosexuality?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/homosexuality-Bible.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
+
+elca-2009-human-sexuality:
+  author: null
+  title: "Human Sexuality: Gift and Trust"
+  series: "ELCA social statement"
+  publisher: "Evangelical Lutheran Church in America"
+  year: 2009
+  edition: "Adopted 2009; Section IV revision adopted 2025"
+  class: Tradition
+  kind: article
+  access: "Church website (PDF), open"
+  url: "https://cdn.elca.org/cdn/wp-content/uploads/HumanSexualityGiftandTrust2025.pdf"
+  hostAuthored: false
+  tradition: "the Evangelical Lutheran Church in America"
+
+ucc-2005-equal-marriage:
+  author: null
+  title: "Equal Marriage Rights for All (General Synod 25 resolution)"
+  series: null
+  publisher: "United Church of Christ"
+  year: 2005
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Church file server (PDF), open"
+  url: "http://uccfiles.com/pdf/2005-EQUAL-MARRIAGE-RIGHTS-FOR-ALL.pdf"
+  hostAuthored: false
+  tradition: "the United Church of Christ"
