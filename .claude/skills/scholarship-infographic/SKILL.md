@@ -143,7 +143,6 @@ This writes two committed images to `hugo/static/assets/scholarship/`: `<slug>.p
 Done when:
 
 - The poster and the card show the generated art, not SVG alone.
-
 - The poster holds the title, the whole block and the credit with nothing clipped; the card holds the lead relation with nothing clipped. If the block overflows, shrink the unit, then cut text; the poster does not grow.
 - Both are legible at phone size.
 - The words-covered test passes on the poster: the drawing alone shows the relation. If what remains is boxes of text, go back to step 2.
