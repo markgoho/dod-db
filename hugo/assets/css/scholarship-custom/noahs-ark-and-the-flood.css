@@ -1,37 +1,36 @@
 /*
-  Custom block for the Noah's Ark and the Flood Scholarship Page: one ark,
-  boarded by two lines of animals that the two tellings disagree about, and
-  below it two more things the story tells twice. One ink frame holds the
-  whole shared block. Every animal, drop and bird is one drawn unit sized by
-  a single custom property, so rows count themselves. Composes cloud-section,
-  type-section-title and scholarship-meta.
+  Custom block for the Noah's Ark and the Flood Scholarship Page: a comic
+  page. One ink frame holds the title, four panels and the credit, so the
+  whole thing shares as one image. Each panel's art is two generated
+  pictures split by a lightning bolt, one per telling; a narration label
+  sits flush top-left and a caption band runs along the bottom, its two
+  halves under the two pictures. Counted marks (animals, days) are HTML/SVG
+  units in the caption band, never laid over the art. Composes
+  cloud-section, type-section-title and scholarship-meta.
 
-  Distinctions without colour: a line's position and its J or P badge; an
-  unclean animal is hollow (paper), a clean one filled; the raven is ink, the
-  dove paper.
+  Distinctions without colour: which telling is which is the side and the
+  P or J badge; an unclean animal is hollow (paper), a clean one filled.
 */
-.noah-board {
+.noah-comic {
   --noah-ink: var(--tan-900);
   --noah-paper: var(--tan-000);
   --noah-amber: var(--color-accent);
   --noah-rust: var(--rust-500);
-  --noah-stone: var(--tan-300);
   --noah-frame: var(--border-width-md);
-  --noah-unit: 2.6rem;
-  --noah-drop: 0.7rem;
-  --noah-bird: 4rem;
+  --noah-unit: 1.35rem;
+  --noah-drop: 0.5rem;
 
-  container: noah-board / inline-size;
+  container: noah-comic / inline-size;
 }
 
-.noah-board__defs {
+.noah-comic__defs {
   block-size: 0;
   inline-size: 0;
   position: absolute;
 }
 
 /* The page: one frame around everything that is shared. */
-.noah-board__page {
+.noah-comic__page {
   background: var(--noah-paper);
   border: var(--noah-frame) solid var(--noah-ink);
   box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--noah-ink);
@@ -40,22 +39,26 @@
   padding: var(--space-s);
 }
 
-.noah-board__head {
+.noah-comic__head {
   display: grid;
   gap: var(--space-3xs);
   justify-items: center;
   text-align: center;
 }
 
-.noah-board__kicker {
+.noah-comic__head > p {
+  margin: 0;
+}
+
+.noah-comic__kicker {
   font-size: var(--step--1);
   font-weight: var(--font-weight-boldest);
   letter-spacing: var(--letter-spacing-heading);
-  margin: 0;
   text-transform: uppercase;
 }
 
-.noah-board__title {
+/* Title lettering: ink capitals with an amber offset. */
+.noah-comic__title {
   color: var(--noah-ink);
   font-family: var(--font-family-display);
   font-size: var(--step-2);
@@ -63,23 +66,123 @@
   font-weight: var(--font-weight-boldest);
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
-  margin: 0;
   max-inline-size: 24ch;
   text-shadow: 3px 3px 0 var(--noah-amber);
   text-transform: uppercase;
   text-wrap: balance;
 }
 
-/* A panel: an ink frame with a narration label flush top-left and a caption band along the bottom. */
-.noah-board__panel {
-  border: var(--noah-frame) solid var(--noah-ink);
+.noah-comic__key {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  text-wrap: balance;
+}
+
+/* J and P: an ink-edged letter tile in the telling's colour. */
+.noah-comic__badge {
+  background: var(--noah-badge);
+  border: 2px solid var(--noah-ink);
+  color: var(--noah-badge-text);
+  display: inline-grid;
+  font-family: var(--font-family-display);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inline-size: 1.6em;
+  line-height: 1.4;
+  place-items: center;
+  vertical-align: 0.05em;
+}
+
+.noah-comic__badge--p {
+  --noah-badge: var(--noah-rust);
+  --noah-badge-text: var(--color-text-inverse);
+}
+
+.noah-comic__badge--j {
+  --noah-badge: var(--noah-amber);
+  --noah-badge-text: var(--noah-ink);
+}
+
+.noah-comic__strip {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  gap: var(--space-s);
+  list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+.noah-comic__frame {
+  display: grid;
   min-inline-size: 0;
 }
 
-.noah-board__box {
+/* A panel: one ink frame around the art and its caption band. */
+.noah-comic__figure {
+  border: var(--noah-frame) solid var(--noah-ink);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  margin: 0;
+  position: relative;
+}
+
+/* The art: two pictures, each clipped to its side of the bolt. */
+.noah-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.noah-comic__half {
+  inset: 0;
+  position: absolute;
+}
+
+.noah-comic__half--left {
+  clip-path: polygon(0 0, 57% 0, 45% 40%, 58% 52%, 43% 100%, 0 100%);
+}
+
+.noah-comic__half--right {
+  clip-path: polygon(57% 0, 100% 0, 100% 100%, 43% 100%, 58% 52%, 45% 40%);
+}
+
+.noah-comic__half > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 60%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.12;
+}
+
+.noah-comic__half--right > img {
+  margin-inline-start: 40%;
+}
+
+/* The bolt: a thick ink stroke with an amber core. */
+.noah-comic__bolt {
+  block-size: 100%;
+  fill: none;
+  inline-size: 100%;
+  inset: 0;
+  position: absolute;
+  stroke-linejoin: miter;
+}
+
+.noah-comic__bolt > polyline:first-child {
+  stroke: var(--noah-ink);
+  stroke-width: 12px;
+  vector-effect: non-scaling-stroke;
+}
+
+.noah-comic__bolt > polyline:last-child {
+  stroke: var(--noah-amber);
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.noah-comic__box {
   background: var(--noah-amber);
   border-block-end: var(--noah-frame) solid var(--noah-ink);
   border-inline-end: var(--noah-frame) solid var(--noah-ink);
@@ -87,40 +190,58 @@
   font-size: var(--step--1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
-  justify-self: start;
+  inset-block-start: 0;
+  inset-inline-start: 0;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
   margin: 0;
+  max-inline-size: 75%;
   padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
   text-transform: uppercase;
 }
 
-.noah-board__caption {
-  align-items: center;
+/* Caption band along the bottom, inside the frame: one half per telling. */
+.noah-comic__caption {
+  align-content: start;
+  background: var(--noah-paper);
   border-block-start: var(--noah-frame) solid var(--noah-ink);
-  display: flex;
+  display: grid;
+  gap: var(--space-3xs);
+  padding: var(--space-2xs) var(--space-xs);
+}
+
+.noah-comic__sides {
+  display: grid;
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.noah-comic__side {
+  align-content: start;
+  display: grid;
+  gap: var(--space-3xs);
+}
+
+.noah-comic__side > p,
+.noah-comic__note {
   font-family: var(--font-family-display);
   font-size: var(--step--1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
-  gap: var(--space-xs);
   line-height: var(--line-height-tight);
-  padding: var(--space-2xs) var(--space-xs);
-}
-
-.noah-board__caption > p {
   margin: 0;
   text-wrap: balance;
 }
 
-.noah-board__altar {
-  block-size: calc(var(--noah-unit) * 1.3);
-  flex: none;
-  inline-size: calc(var(--noah-unit) * 1);
+.noah-comic__note {
+  border-block-start: 2px solid var(--noah-ink);
+  font-size: var(--step--2);
+  padding-block-start: var(--space-3xs);
 }
 
-/* Scripture tags: ink chips. */
-.noah-board__ref {
+/* Scripture tags: ink chips in the caption band. */
+.noah-comic__ref {
   background: var(--noah-ink);
   color: var(--color-text-inverse);
   display: inline-block;
@@ -131,277 +252,132 @@
   line-height: var(--line-height-tight);
   padding: var(--space-4xs) var(--space-3xs);
   text-decoration-color: var(--noah-amber);
-  vertical-align: 0.1em;
   white-space: nowrap;
 }
 
-/* The boarding scene: the ark, and the two lines of animals heading for it. */
-.noah-board__stage {
-  display: grid;
-  gap: var(--space-xs);
-  padding: var(--space-xs);
-}
-
-/* The generated ark: its own paper margin trimmed, the gangway at its lower left where the lines arrive. */
-.noah-board__art {
-  aspect-ratio: 4 / 5;
-  inline-size: min(100%, 20rem);
-  justify-self: center;
-  line-height: 0;
-  overflow: hidden;
-}
-
-.noah-board__art > img {
-  block-size: 100%;
-  display: block;
-  inline-size: 100%;
-  object-fit: cover;
-  scale: 1.09;
-}
-
-.noah-board__lines {
-  align-content: center;
-  display: grid;
-  gap: var(--space-s);
+/* Counted animals: one unit each, pairs spaced apart, free to wrap. */
+.noah-comic__herd {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4xs) var(--space-3xs);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.noah-line {
-  display: grid;
-  gap: var(--space-3xs);
-}
-
-.noah-line__who {
-  align-items: center;
+.noah-comic__pair {
   display: flex;
-  font-size: var(--step--1);
-  font-weight: var(--font-weight-bold);
-  gap: var(--space-2xs);
-  line-height: var(--line-height-tight);
-  margin: 0;
 }
 
-.noah-line__badge {
-  background: var(--noah-line);
-  border: 3px solid var(--noah-ink);
-  box-shadow: 3px 3px 0 var(--noah-ink);
-  color: var(--noah-line-text);
-  display: grid;
-  flex: none;
-  font-family: var(--font-family-display);
-  font-size: var(--step-0);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  block-size: 2em;
-  inline-size: 2em;
-  place-items: center;
-}
-
-.noah-line--p {
-  --noah-line: var(--noah-rust);
-  --noah-line-text: var(--color-text-inverse);
-}
-
-.noah-line--j {
-  --noah-line: var(--noah-amber);
-  --noah-line-text: var(--noah-ink);
-}
-
-.noah-line__count {
-  font-family: var(--font-family-display);
-  font-size: var(--step-0);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  line-height: var(--line-height-tight);
-  margin: 0;
-}
-
-/* The gangway: a thick ink line the animals walk on, pairs spaced apart. */
-.noah-line__herd {
-  border-block-end: var(--noah-frame) solid var(--noah-ink);
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3xs) var(--space-2xs);
-  list-style: none;
-  margin: 0;
-  padding: 0 0 var(--space-4xs);
-}
-
-.noah-pair {
-  display: flex;
-  gap: 0;
-}
-
-.noah-unit {
+.noah-comic__unit {
   aspect-ratio: 48 / 36;
   display: block;
   inline-size: var(--noah-unit);
   overflow: visible;
 }
 
-.noah-unit--p {
+.noah-comic__unit--p {
   --noah-fill: var(--noah-rust);
 }
 
-.noah-unit--clean {
+.noah-comic__unit--clean {
   --noah-fill: var(--noah-amber);
 }
 
-.noah-unit--unclean {
+.noah-comic__unit--unclean {
   --noah-fill: var(--noah-paper);
 }
 
-/* Things told twice that the page assigns to neither telling: neutral ink. */
-.noah-board__also {
+/* Counted days: one drop each, twenty-five to a row, so 40 and 150 compare by area. */
+.noah-comic__drops {
   display: grid;
-  gap: var(--space-s);
+  gap: 1px;
+  grid-template-columns: repeat(25, minmax(0, var(--noah-drop)));
 }
 
-.noah-board__pairs {
-  align-content: start;
-  display: grid;
-  gap: var(--space-xs);
-  list-style: none;
-  margin: 0;
-  padding: var(--space-xs);
-}
-
-.noah-tally {
-  display: grid;
-  gap: var(--space-3xs);
-}
-
-.noah-tally__label {
-  align-items: baseline;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: var(--font-family-display);
-  font-size: var(--step-0);
-  font-style: italic;
-  gap: var(--space-2xs);
-  line-height: var(--line-height-tight);
-  margin: 0;
-}
-
-.noah-tally__label b {
-  font-weight: var(--font-weight-boldest);
-}
-
-/* Twenty drops to a row, so 40 and 150 compare by area. */
-.noah-tally__drops {
-  display: grid;
-  gap: 2px;
-  grid-template-columns: repeat(20, minmax(0, var(--noah-drop)));
-}
-
-.noah-drop {
+.noah-comic__drop {
   aspect-ratio: 12 / 16;
   display: block;
   fill: var(--noah-ink);
   inline-size: 100%;
 }
 
-.noah-tally__birds {
-  display: flex;
-  gap: var(--space-2xs);
-}
-
-.noah-bird {
-  aspect-ratio: 54 / 28;
-  display: block;
-  inline-size: var(--noah-bird);
-  overflow: visible;
-}
-
-.noah-bird--raven {
-  --noah-fill: var(--noah-ink);
-  --noah-eye: var(--noah-paper);
-}
-
-.noah-bird--dove {
-  --noah-fill: var(--noah-paper);
-  --noah-eye: var(--noah-ink);
-}
-
-.noah-board__credit {
+.noah-comic__credit {
   color: var(--tan-700);
   font-size: var(--step--2);
   margin: 0;
   text-align: center;
 }
 
-.noah-board__more {
+.noah-comic__more {
   margin-block-start: var(--space-s);
 }
 
-/* Wide: the lines run left into the ark on the right; the two lower panels side by side. Literal length: container conditions cannot read custom properties. */
-@container noah-board (width >= 44rem) {
-  .noah-board__page {
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container noah-comic (width >= 40rem) {
+  .noah-comic__page {
     padding: var(--space-m);
   }
 
-  .noah-board__title {
+  .noah-comic__title {
     font-size: var(--step-3);
   }
 
-  .noah-board__stage {
-    align-items: end;
-    /* No gap: the gangways run all the way to the ark. */
-    column-gap: 0;
-    grid-template-columns: minmax(0, 1fr) 17rem;
-  }
-
-  .noah-board__art {
-    inline-size: 100%;
-  }
-
-  .noah-board__also {
+  .noah-comic__strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* The poster: smaller units and tighter gaps on the 1080 by 1350 canvas. */
-.scholarship-share:target .noah-board {
-  --noah-unit: 2.2rem;
-  --noah-drop: 0.8rem;
-  --noah-bird: 6rem;
+/* The poster: two by two on the 4:5 canvas. */
+.scholarship-share:target .noah-comic {
+  --noah-unit: 1.1rem;
+  --noah-drop: 0.42rem;
 }
 
-.scholarship-share:target .noah-board__stage {
-  grid-template-columns: minmax(0, 1fr) 17rem;
-}
-
-.scholarship-share:target .noah-board__page {
-  gap: var(--space-xs);
-  padding: var(--space-s);
-}
-
-.scholarship-share:target .noah-board__title {
-  font-size: var(--step-2);
-  max-inline-size: none;
-}
-
-/* The card: the boarding scene alone, under the headline. */
-.scholarship-share:has(#share-card:target) .noah-board {
-  --noah-unit: 2.15rem;
-}
-
-.scholarship-share:has(#share-card:target) .noah-board__stage {
-  grid-template-columns: minmax(0, 1fr) 13rem;
-}
-
-.scholarship-share:has(#share-card:target) .noah-board__page {
+.scholarship-share:target .noah-comic__page {
   gap: var(--space-2xs);
   padding: var(--space-xs);
 }
 
-.scholarship-share:has(#share-card:target) .noah-board__kicker {
+.scholarship-share:target .noah-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:target .noah-comic__caption {
+  padding: var(--space-3xs) var(--space-2xs);
+}
+
+.scholarship-share:target .noah-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* The card: panels 1 and 4 side by side under the title. */
+.scholarship-share:has(#share-card:target) .noah-comic {
+  --noah-unit: 1rem;
+}
+
+.scholarship-share:has(#share-card:target) .noah-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target)
+  :is(.noah-comic__kicker, .noah-comic__key) {
   display: none;
 }
 
-.scholarship-share:has(#share-card:target) .noah-board__title {
+.scholarship-share:has(#share-card:target) .noah-comic__title {
   font-size: var(--step-1);
   max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .noah-comic__caption {
+  padding: var(--space-3xs) var(--space-2xs);
+}
+
+.scholarship-share:has(#share-card:target) .noah-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }

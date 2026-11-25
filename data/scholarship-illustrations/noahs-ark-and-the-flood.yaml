@@ -2,14 +2,19 @@
 # Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each picture
 # shows only what the listed statements support; every caption, link, claim
 # and count stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
-# The counted things (animals, days, birds) are never in the art: Gemini can't
-# draw an exact count, and a stray animal would read as one.
+#
+# Four comic panels, each split by a lightning-bolt line into the two
+# tellings: a left half and a right half, each its own 4:5 image. `ark` is
+# the anchor for Noah and the ark; every half is chained from it.
+# The counted things (animals, days) are never in the art: Gemini can't draw
+# an exact count, and a stray animal would read as one. The single raven and
+# single dove are drawn, one bird each.
 slug: noahs-ark-and-the-flood
 images:
   - id: ark
     statements: [sources, ark]
     aspect: "4:5"
-    alt: "Noah stands in the open side door of the ark, a big box-shaped wooden vessel with three decks and a roof, beckoning; an empty gangway slopes down from the door."
+    alt: "Noah stands in the open side door of the ark, a big box-shaped wooden vessel with decks of windows and a roof, beckoning; an empty gangway slopes down from the door."
     prompt: >-
       A huge box-shaped wooden ark seen from the side and a little from
       the front, filling most of the picture: a long rectangular hull of
@@ -22,3 +27,115 @@ images:
       bottom left corner of the picture. The ark rests on bare dry ground;
       behind it a plain pale sky. No animals of any kind, no birds, no
       rain, no other people, nothing on the gangway.
+
+  - id: board-left
+    statements: [sources]
+    aspect: "4:5"
+    refs: [ark]
+    alt: "Noah in the ark's open door beckons a single pair of sheep up the gangway."
+    prompt: >-
+      The SAME old man and the SAME ark as in the reference image (same
+      face, white beard, rust red robe and headcloth; same dark plank hull
+      and golden decks). Close view: the open side door of the ark fills
+      the upper right; the old man stands in it, beckoning warmly with his
+      right arm toward the lower left. A wide wooden gangway runs from the
+      door down to the bottom left corner. Walking up the gangway, side by
+      side, is EXACTLY ONE PAIR of white woolly sheep: two sheep, no more.
+      Behind them the gangway is empty. Bare dry ground, plain pale sky.
+      Negative list: no other animals, no birds, no rain, no other people,
+      no text.
+
+  - id: board-right
+    statements: [sources]
+    aspect: "4:5"
+    refs: [ark, board-left]
+    alt: "The same scene mirrored: Noah beckons as a dense crowd of sheep streams up the gangway into the ark, too many to count."
+    prompt: >-
+      The SAME old man, SAME ark and SAME door as in the second reference
+      image, the scene mirrored left to right: the open door is in the
+      upper left, he beckons with his left arm toward the lower right, and
+      the wide wooden gangway runs down to the bottom right corner. A
+      dense, jostling crowd of many white woolly sheep packs the whole
+      gangway and streams in through the door, overlapping each other and
+      continuing out of the picture at the bottom right, far too many to
+      count. Bare dry ground, plain pale sky. Negative list: no other kinds
+      of animal, no birds, no rain, no other people, no text.
+
+  - id: flood-left
+    statements: [sources]
+    aspect: "4:5"
+    refs: [ark]
+    alt: "The ark floats on flood water under a grey sky; Noah looks out of a window."
+    prompt: >-
+      The SAME ark as in the reference image, now afloat on wide flood
+      water that reaches the horizon, waves lapping its dark hull, under a
+      heavy grey sky. The SAME old man (white beard, rust red robe,
+      headcloth) looks out of one small square window, watchful. Negative
+      list: no rain, no land, no animals of any kind, no birds, no other
+      people, no text.
+  - id: flood-right
+    statements: [sources]
+    aspect: "4:5"
+    refs: [ark, flood-left]
+    alt: "The same ark still afloat on the flood, seen from the other side; Noah leans wearily on a window sill."
+    prompt: >-
+      The SAME ark and SAME old man as in the second reference image, the
+      scene mirrored left to right: the ark FLOATS on deep flood water that
+      covers everything to the horizon, waves breaking against its hull,
+      under a grey sky. The old man leans on a window sill, chin in hand,
+      weary and patient, as if waiting a very long time. Negative list: no
+      land, no ground, no rain, no animals, no birds, no other people, no
+      text.
+
+  - id: raven
+    statements: [sources]
+    aspect: "4:5"
+    refs: [ark]
+    alt: "From an ark window, Noah lets a single black raven fly out over the water."
+    prompt: >-
+      The SAME old man as in the reference image (same face, white beard,
+      rust red robe and headcloth) leans out of one small square window in
+      the dark plank side of the SAME ark, both arms raised, having just
+      let go of ONE single black raven, which flies away from him over
+      flood water to the horizon. Exactly one bird in the whole picture.
+      Negative list: no other birds, no land, no rain, no animals, no
+      other people, no text.
+  - id: dove
+    statements: [sources]
+    aspect: "4:5"
+    refs: [ark, raven]
+    alt: "From the same window, Noah lets a single white dove fly out over the water."
+    prompt: >-
+      The SAME old man and SAME window as in the second reference image,
+      the scene mirrored left to right: he leans out of the window, both
+      arms raised, having just let go of ONE single white dove, which
+      flies away from him over the flood water. Exactly one bird in the
+      whole picture. Negative list: no other birds, no raven, no olive
+      leaf, no land, no rain, no animals, no other people, no text.
+
+  - id: after-left
+    statements: [sources, ararat]
+    aspect: "4:5"
+    refs: [ark]
+    alt: "After the flood, Noah walks down from the ark, which rests on a mountain range; there is no altar."
+    prompt: >-
+      The SAME old man as in the reference image (same face, white beard,
+      rust red robe and headcloth) walks calmly down a rocky slope with
+      empty hands, after the flood. Behind him the SAME box-shaped ark
+      rests high on a range of generic rocky mountains (several peaks, no
+      single famous peak), water draining away below, clear pale sky. No
+      altar, no fire, no smoke. Negative list: no animals of any kind, no
+      birds, no other people, no text.
+  - id: after-right
+    statements: [sources, ararat]
+    aspect: "4:5"
+    refs: [ark, after-left]
+    alt: "After the flood, Noah raises his hands beside a stone altar with fire and smoke; the ark rests on the mountains behind him."
+    prompt: >-
+      The SAME old man and SAME mountain range with the SAME ark as in the
+      second reference image, the scene mirrored left to right. The old
+      man stands beside a waist-high altar of rough stacked stones on
+      which a wood fire burns, a tall column of grey smoke rising into the
+      sky, and raises both open hands toward the sky, solemn and grateful.
+      On the altar only wood and fire. Negative list: no animals of any
+      kind, no birds, no other people, no text.
