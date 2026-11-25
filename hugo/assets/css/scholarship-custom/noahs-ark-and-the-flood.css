@@ -1,0 +1,435 @@
+/*
+  Custom block for the Noah's Ark and the Flood Scholarship Page: one ark,
+  boarded by two lines of animals that the two tellings disagree about, and
+  below it two more things the story tells twice. One ink frame holds the
+  whole shared block. Every animal, drop and bird is one drawn unit sized by
+  a single custom property, so rows count themselves. Composes cloud-section,
+  type-section-title and scholarship-meta.
+
+  Distinctions without colour: a line's position and its J or P badge; an
+  unclean animal is hollow (paper), a clean one filled; the raven is ink, the
+  dove paper.
+*/
+.noah-board {
+  --noah-ink: var(--tan-900);
+  --noah-paper: var(--tan-000);
+  --noah-amber: var(--color-accent);
+  --noah-rust: var(--rust-500);
+  --noah-stone: var(--tan-300);
+  --noah-frame: var(--border-width-md);
+  --noah-unit: 2.6rem;
+  --noah-drop: 0.7rem;
+  --noah-bird: 4rem;
+
+  container: noah-board / inline-size;
+}
+
+.noah-board__defs {
+  block-size: 0;
+  inline-size: 0;
+  position: absolute;
+}
+
+/* The page: one frame around everything that is shared. */
+.noah-board__page {
+  background: var(--noah-paper);
+  border: var(--noah-frame) solid var(--noah-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--noah-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.noah-board__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.noah-board__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.noah-board__title {
+  color: var(--noah-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 24ch;
+  text-shadow: 3px 3px 0 var(--noah-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+/* A panel: an ink frame with a narration label flush top-left and a caption band along the bottom. */
+.noah-board__panel {
+  border: var(--noah-frame) solid var(--noah-ink);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+  min-inline-size: 0;
+}
+
+.noah-board__box {
+  background: var(--noah-amber);
+  border-block-end: var(--noah-frame) solid var(--noah-ink);
+  border-inline-end: var(--noah-frame) solid var(--noah-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  justify-self: start;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  padding: var(--space-3xs) var(--space-2xs);
+  text-transform: uppercase;
+}
+
+.noah-board__caption {
+  align-items: center;
+  border-block-start: var(--noah-frame) solid var(--noah-ink);
+  display: flex;
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  gap: var(--space-xs);
+  line-height: var(--line-height-tight);
+  padding: var(--space-2xs) var(--space-xs);
+}
+
+.noah-board__caption > p {
+  margin: 0;
+  text-wrap: balance;
+}
+
+.noah-board__altar {
+  block-size: calc(var(--noah-unit) * 1.3);
+  flex: none;
+  inline-size: calc(var(--noah-unit) * 1);
+}
+
+/* Scripture tags: ink chips. */
+.noah-board__ref {
+  background: var(--noah-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--noah-amber);
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+
+/* The boarding scene: the ark, and the two lines of animals heading for it. */
+.noah-board__stage {
+  display: grid;
+  gap: var(--space-xs);
+  padding: var(--space-xs);
+}
+
+.noah-board__ark {
+  inline-size: min(100%, 18rem);
+  justify-self: center;
+  overflow: visible;
+}
+
+.noah-ark__shadow {
+  fill: var(--noah-ink);
+}
+
+.noah-ark__hull,
+.noah-ark__roof,
+.noah-ark__noah,
+.noah-ark__ramp,
+.noah-ark__door,
+.noah-ark__window,
+.noah-ark__beard {
+  stroke: var(--noah-ink);
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+.noah-ark__hull {
+  fill: var(--noah-stone);
+}
+
+.noah-ark__roof {
+  fill: var(--tan-500);
+}
+
+.noah-ark__line {
+  fill: none;
+  stroke: var(--noah-ink);
+  stroke-width: 2.5;
+}
+
+.noah-ark__window,
+.noah-ark__door {
+  fill: var(--noah-ink);
+}
+
+.noah-ark__noah,
+.noah-ark__ramp {
+  fill: var(--noah-paper);
+}
+
+.noah-ark__beard {
+  fill: var(--tan-200);
+  stroke-width: 3;
+}
+
+.noah-ark__sea {
+  fill: var(--noah-paper);
+  stroke: var(--noah-ink);
+  stroke-width: 4;
+}
+
+.noah-board__lines {
+  align-content: center;
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.noah-line {
+  display: grid;
+  gap: var(--space-3xs);
+}
+
+.noah-line__who {
+  align-items: center;
+  display: flex;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  gap: var(--space-2xs);
+  line-height: var(--line-height-tight);
+  margin: 0;
+}
+
+.noah-line__badge {
+  background: var(--noah-line);
+  border: 3px solid var(--noah-ink);
+  box-shadow: 3px 3px 0 var(--noah-ink);
+  color: var(--noah-line-text);
+  display: grid;
+  flex: none;
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  block-size: 2em;
+  inline-size: 2em;
+  place-items: center;
+}
+
+.noah-line--p {
+  --noah-line: var(--noah-rust);
+  --noah-line-text: var(--color-text-inverse);
+}
+
+.noah-line--j {
+  --noah-line: var(--noah-amber);
+  --noah-line-text: var(--noah-ink);
+}
+
+.noah-line__count {
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  line-height: var(--line-height-tight);
+  margin: 0;
+}
+
+/* The gangway: a thick ink line the animals walk on, pairs spaced apart. */
+.noah-line__herd {
+  border-block-end: var(--noah-frame) solid var(--noah-ink);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs) var(--space-2xs);
+  list-style: none;
+  margin: 0;
+  padding: 0 0 var(--space-4xs);
+}
+
+.noah-pair {
+  display: flex;
+  gap: 0;
+}
+
+.noah-unit {
+  aspect-ratio: 48 / 36;
+  display: block;
+  inline-size: var(--noah-unit);
+  overflow: visible;
+}
+
+.noah-unit--p {
+  --noah-fill: var(--noah-rust);
+}
+
+.noah-unit--clean {
+  --noah-fill: var(--noah-amber);
+}
+
+.noah-unit--unclean {
+  --noah-fill: var(--noah-paper);
+}
+
+/* Things told twice that the page assigns to neither telling: neutral ink. */
+.noah-board__also {
+  display: grid;
+  gap: var(--space-s);
+}
+
+.noah-board__pairs {
+  align-content: start;
+  display: grid;
+  gap: var(--space-xs);
+  list-style: none;
+  margin: 0;
+  padding: var(--space-xs);
+}
+
+.noah-tally {
+  display: grid;
+  gap: var(--space-3xs);
+}
+
+.noah-tally__label {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--font-family-display);
+  font-size: var(--step-0);
+  font-style: italic;
+  gap: var(--space-2xs);
+  line-height: var(--line-height-tight);
+  margin: 0;
+}
+
+.noah-tally__label b {
+  font-weight: var(--font-weight-boldest);
+}
+
+/* Twenty drops to a row, so 40 and 150 compare by area. */
+.noah-tally__drops {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(20, minmax(0, var(--noah-drop)));
+}
+
+.noah-drop {
+  aspect-ratio: 12 / 16;
+  display: block;
+  fill: var(--noah-ink);
+  inline-size: 100%;
+}
+
+.noah-tally__birds {
+  display: flex;
+  gap: var(--space-2xs);
+}
+
+.noah-bird {
+  aspect-ratio: 54 / 28;
+  display: block;
+  inline-size: var(--noah-bird);
+  overflow: visible;
+}
+
+.noah-bird--raven {
+  --noah-fill: var(--noah-ink);
+  --noah-eye: var(--noah-paper);
+}
+
+.noah-bird--dove {
+  --noah-fill: var(--noah-paper);
+  --noah-eye: var(--noah-ink);
+}
+
+.noah-board__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: the lines run left into the ark on the right; the two lower panels side by side. Literal length: container conditions cannot read custom properties. */
+@container noah-board (width >= 44rem) {
+  .noah-board__page {
+    padding: var(--space-m);
+  }
+
+  .noah-board__title {
+    font-size: var(--step-3);
+  }
+
+  .noah-board__stage {
+    align-items: end;
+    column-gap: 0;
+    grid-template-columns: minmax(0, 1fr) 13rem;
+  }
+
+  .noah-board__ark {
+    inline-size: 100%;
+  }
+
+  .noah-board__also {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* The poster: smaller units and tighter gaps on the 1080 by 1350 canvas. */
+.scholarship-share:target .noah-board {
+  --noah-unit: 2.35rem;
+  --noah-drop: 0.8rem;
+  --noah-bird: 5.5rem;
+}
+
+.scholarship-share:target .noah-board__stage {
+  grid-template-columns: minmax(0, 1fr) 11.5rem;
+}
+
+.scholarship-share:target .noah-board__page {
+  gap: var(--space-xs);
+  padding: var(--space-s);
+}
+
+.scholarship-share:target .noah-board__title {
+  font-size: var(--step-2);
+  max-inline-size: none;
+}
+
+/* The card: the boarding scene alone, under the headline. */
+.scholarship-share:has(#share-card:target) .noah-board {
+  --noah-unit: 2.5rem;
+}
+
+.scholarship-share:has(#share-card:target) .noah-board__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .noah-board__kicker {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .noah-board__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
