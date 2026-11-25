@@ -5,17 +5,17 @@ description: Build an infographic for one Scholarship Page from its reviewed sta
 
 # Scholarship Infographic
 
-An **infographic** here is one HTML/CSS/SVG block on a single Scholarship Page, optionally carrying raster illustrations generated with Gemini (step 4b). It has three jobs: look great, convey what the page's statements say, and travel as a single image on social media. It is a view of reviewed text: it restates, it never adds.
+An **infographic** here is one block on a single Scholarship Page: **Gemini-generated raster illustrations carry the scene** (step 4b, always), and HTML/CSS/SVG carries the frame, the words, the links and any mark that must be exact, such as a count. It has three jobs: look great, convey what the page's statements say, and travel as a single image on social media. It is a view of reviewed text: it restates, it never adds.
 
 It is a **picture first**. The drawing carries the relation; the words caption it. The test, used throughout: cover every word, and the picture still shows the relation (how many, which group, what order, which side).
 
 One source, two forms. On the page it is a live, responsive block. At `#share` the same block becomes a **poster**: a fixed 4:5 canvas (1080 by 1350) with the page title above and a credit below, which a script photographs to a PNG. At `#share-card` it becomes the **card**: a 1200 by 630 view of the lead part, which is the picture a social site shows when someone shares the page's link.
 
-Worked examples, read all three before building. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
+Worked examples, read all three before building. The first is the bar to meet; the other two predate raster art and show how exact marks are built. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
 
-- `pauline-authorship`: the pictorial bar to meet. A pictogram: one drawn scroll per letter, the seal on each scroll is its group's verdict. Read it for how a drawing is made once and reused, sized by one unit, and re-laid out for the poster and the card.
+- `homosexuality-and-the-bible`: the bar to meet. An illustrated comic page: four Gemini-drawn panels with people in them, inside one ink frame, with labels, captions and scripture tags in HTML. Read it for the illustration manifest, chained reference images and the comic layout rules in step 4.
+- `pauline-authorship`: exact marks. A pictogram: one drawn scroll per letter, the seal on each scroll is its group's verdict. Read it for how a drawing is made once and reused, sized by one unit, and re-laid out for the poster and the card.
 - `the-creation-stories-in-genesis`: a two-sided comparison as a table, with lines tracing each thing between the sides. Read it for table semantics and scripture links.
-- `homosexuality-and-the-bible`: an illustrated comic page. Four Gemini-drawn panels with people in them, inside one ink frame, with labels, captions and scripture tags in HTML. Read it for the illustration manifest, chained reference images and the comic layout rules in step 4.
 
 ## Input
 
@@ -48,7 +48,11 @@ An infographic earns its place when the statements describe a relation that pros
 - **The user gave an idea**: test it against the statements. Build it if they support every part. If they support only some, say which parts have no statement behind them and build the supported part.
 - **No idea given**: list the relations the statements describe, build the strongest one, and name the others in the report so the user can ask for them.
 - **Vary the look.** Read the existing `scholarship-custom` partials first and don't repeat their furniture (the starburst with a number, the shared scroll unit). Each page gets a picture form of its own.
-- **Drawn or illustrated.** Use hand-drawn SVG when the relation is a count, a structure or a diagram. Use generated illustrations (step 4b) when it needs people, scenes or things SVG can't draw convincingly.
+- **Illustrated, always.** Every infographic carries generated illustrations (step 4b). Hand-drawn SVG alone is not an option unless the user asks for it. Split the work like this:
+  - **Raster art** draws the scene: people, places, objects, the setting of the relation (the ark, the scribe, the modern couple).
+  - **HTML/SVG** draws only what must be exact: counts, labels, links, a precise diagram. Gemini cannot draw exactly seven pairs.
+  - **A count gets its own band.** Put counted units in an HTML/SVG band of their own, below or beside the art, never laid over it. An overlay can't stay on a painted gangway at three layouts (page, poster, card) and at phone width, where a long row wraps.
+  - **The art leaves out what is counted.** If the relation counts animals, the art prompt names no animals at all, or Gemini adds stray ones that read as a count. Leave the strip where they would go empty, or show the scene without them.
 
 A poster is read in seconds by someone who has never seen the page: one relation leads, and it must make sense with no surrounding text.
 
@@ -86,7 +90,7 @@ Shape:
 - Real semantics under the drawing: a `<ul>` or `<ol>` of the units, each with its name as text; group headings as headings; a `<table>` with headers for compared data (a table laid out as a grid carries explicit ARIA roles). The drawings are `aria-hidden`; the text beside them says what they show.
 - Its own container and a container query (literal length). At phone width the things being compared stay together.
 
-Graphics, inline SVG only, in the site's comic style:
+Graphics: the generated art (step 4b) plus inline SVG for exact marks and comic furniture, all in the site's comic style:
 
 - Thick ink outlines, hard offset shadows, flat fills in ink, paper, amber and rust.
 - Draw each thing once and reuse it, so the same thing looks the same everywhere. Every unit is the same size, set by one custom property, so rows count themselves.
@@ -105,7 +109,7 @@ Card: mark everything except the lead relation with `data-card-hide`, so the car
 
 Both are fixed canvases, so the block needs its own overrides for each, scoped as the Pauline stylesheet scopes them (`.scholarship-share:target` for the poster, `.scholarship-share:has(#share-card:target)` for the card): a smaller unit, tighter gaps, and for the card usually a different arrangement (wider, shorter) of the same parts.
 
-### 4b. Illustrations (when step 2 chose them)
+### 4b. Illustrations (every infographic)
 
 Generated with Gemini (`gemini-3.1-flash-image-preview` by default, `--pro` for `gemini-3-pro-image-preview`), adapted from the mbu repo's image generator.
 
@@ -137,6 +141,8 @@ bun run scholarship:infographic <slug> --base=http://localhost:<port>
 This writes two committed images to `hugo/static/assets/scholarship/`: `<slug>.png` (the poster; the page then shows a "Save as an image" link) and `<slug>-card.png` (the card; `opengraph.html` then uses it as the page's `og:image`). Read both. Re-render after every change to the block.
 
 Done when:
+
+- The poster and the card show the generated art, not SVG alone.
 
 - The poster holds the title, the whole block and the credit with nothing clipped; the card holds the lead relation with nothing clipped. If the block overflows, shrink the unit, then cut text; the poster does not grow.
 - Both are legible at phone size.
