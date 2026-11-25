@@ -145,7 +145,6 @@
 .noah-board__ark {
   inline-size: min(100%, 18rem);
   justify-self: center;
-  overflow: visible;
 }
 
 .noah-ark__shadow {
@@ -168,8 +167,15 @@
   fill: var(--noah-stone);
 }
 
-.noah-ark__roof {
+.noah-ark__keel {
   fill: var(--tan-500);
+  stroke: var(--noah-ink);
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+.noah-ark__roof {
+  fill: var(--tan-700);
 }
 
 .noah-ark__line {
@@ -380,9 +386,10 @@
   }
 
   .noah-board__stage {
-    align-items: end;
+    align-items: center;
+    /* No gap: the gangways run all the way to the ark's wall. */
     column-gap: 0;
-    grid-template-columns: minmax(0, 1fr) 13rem;
+    grid-template-columns: minmax(0, 1fr) 15rem;
   }
 
   .noah-board__ark {
@@ -396,13 +403,13 @@
 
 /* The poster: smaller units and tighter gaps on the 1080 by 1350 canvas. */
 .scholarship-share:target .noah-board {
-  --noah-unit: 2.35rem;
+  --noah-unit: 2.2rem;
   --noah-drop: 0.8rem;
-  --noah-bird: 5.5rem;
+  --noah-bird: 6rem;
 }
 
 .scholarship-share:target .noah-board__stage {
-  grid-template-columns: minmax(0, 1fr) 11.5rem;
+  grid-template-columns: minmax(0, 1fr) 14rem;
 }
 
 .scholarship-share:target .noah-board__page {
@@ -417,7 +424,11 @@
 
 /* The card: the boarding scene alone, under the headline. */
 .scholarship-share:has(#share-card:target) .noah-board {
-  --noah-unit: 2.5rem;
+  --noah-unit: 2.15rem;
+}
+
+.scholarship-share:has(#share-card:target) .noah-board__stage {
+  grid-template-columns: minmax(0, 1fr) 12rem;
 }
 
 .scholarship-share:has(#share-card:target) .noah-board__page {

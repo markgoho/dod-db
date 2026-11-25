@@ -94,9 +94,7 @@
           <li class="noah-line noah-line--p">
             <h4 class="noah-line__who">
               <span class="noah-line__badge">P</span>
-              <span
-                >The priestly telling, which calls him <q>God</q> (Elohim)</span
-              >
+              <span>The priestly telling, naming God Elohim (<q>God</q>)</span>
             </h4>
             <p class="noah-line__count">
               Two of every kind
@@ -116,8 +114,7 @@
             <h4 class="noah-line__who">
               <span class="noah-line__badge">J</span>
               <span
-                >The other telling, which calls him
-                <q>the LORD</q> (Yahweh)</span
+                >The other telling, naming God Yahweh (<q>the LORD</q>)</span
               >
             </h4>
             <p class="noah-line__count">
@@ -144,47 +141,47 @@
             </ul>
           </li>
         </ol>
-        {{/* The ark of Gen 6:15–16: three decks, a roof and a door in its side. */}}
+        {{/* The ark of Gen 6:15–16: three decks, a roof and a door in its side. Its left wall is the viewBox edge, where both lines arrive. */}}
         <svg
           class="noah-board__ark"
-          viewBox="0 0 320 250"
+          viewBox="20 0 252 300"
+          preserveAspectRatio="xMinYMid meet"
           aria-hidden="true"
           focusable="false">
-          <g class="noah-ark__shadow" transform="translate(8 8)">
-            <path d="M30 22 160 2l130 20v30H30z" />
-            <path d="M14 112h292l-18 76H32z" />
-            <path d="M40 52h240v60H40z" />
+          <g class="noah-ark__shadow" transform="translate(10 10)">
+            <path d="M14 62 128 14l114 48z" />
+            <path d="M20 60h216v126H20z" />
+            <path d="M20 186h242l-26 98H34l-14-22z" />
           </g>
-          <path class="noah-ark__hull" d="M40 52h240v60H40z" />
-          <path class="noah-ark__roof" d="M30 52V22L160 2l130 20v30z" />
-          <path class="noah-ark__line" d="M30 22h260M95 12v40M225 12v40" />
-          <path class="noah-ark__hull" d="M14 112h292l-18 76H32z" />
-          <path
-            class="noah-ark__line"
-            d="M40 82h240M19 132h282M24 152h272M28 170h264" />
-          {{- range seq 0 7 }}
+          <path class="noah-ark__hull" d="M20 60h216v126H20z" />
+          <path class="noah-ark__keel" d="M20 186h242l-26 98H34l-14-22z" />
+          <path class="noah-ark__line" d="M20 123h216M20 218h234M20 250h226" />
+          <path class="noah-ark__roof" d="M14 62 128 14l114 48z" />
+          <path class="noah-ark__line" d="M70 38v24M186 38v24" />
+          {{- range seq 0 5 }}
             <rect
               class="noah-ark__window"
-              x="{{ add 66 (mul . 27) }}"
-              y="61"
-              width="9"
-              height="13" />
-            <rect
-              class="noah-ark__window"
-              x="{{ add 66 (mul . 27) }}"
-              y="90"
-              width="9"
-              height="13" />
+              x="{{ add 40 (mul . 30) }}"
+              y="82"
+              width="14"
+              height="20" />
           {{- end }}
-          {{/* The door in its side, open, with Noah standing in it. */}}
-          <path class="noah-ark__door" d="M50 120h50v68H50z" />
-          <path class="noah-ark__noah" d="M60 188v-30c0-12 30-12 30 0v30z" />
-          <circle class="noah-ark__noah" cx="75" cy="138" r="10" />
-          <path class="noah-ark__beard" d="M67 141c0 11 16 11 16 0z" />
-          <path class="noah-ark__ramp" d="M0 212 52 188h44L48 214z" />
+          {{- range seq 0 2 }}
+            <rect
+              class="noah-ark__window"
+              x="{{ add 146 (mul . 30) }}"
+              y="145"
+              width="14"
+              height="20" />
+          {{- end }}
+          {{/* The door, open, with Noah standing in it. */}}
+          <path class="noah-ark__door" d="M20 130h86v120H20z" />
+          <path class="noah-ark__noah" d="M44 250v-52c0-20 40-20 40 0v52z" />
+          <circle class="noah-ark__noah" cx="64" cy="166" r="15" />
+          <path class="noah-ark__beard" d="M52 170c0 17 24 17 24 0z" />
           <path
             class="noah-ark__sea"
-            d="M0 222c20-10 40 10 60 0s40 10 60 0 40 10 60 0 40 10 60 0 40 10 60 0 20 10 20 0v28H0z" />
+            d="M20 276c20-10 40 10 60 0s40 10 60 0 40 10 60 0 40 10 60 0 20 10 52 0v24H20z" />
         </svg>
       </div>
       <figcaption class="noah-board__caption">
