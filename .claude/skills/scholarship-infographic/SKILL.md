@@ -11,11 +11,40 @@ It is a **picture first**. The drawing carries the relation; the words caption i
 
 One source, two forms. On the page it is a live, responsive block. At `#share` the same block becomes a **poster**: a fixed 4:5 canvas (1080 by 1350) with the page title above and a credit below, which a script photographs to a PNG. At `#share-card` it becomes the **card**: a 1200 by 630 view of the lead part, which is the picture a social site shows when someone shares the page's link.
 
-Worked examples, read all three before building. The first is the bar to meet; the other two predate raster art and show how exact marks are built. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
+Worked examples, read all four before building. The first two are the bar to meet; the last two predate raster art and show how exact marks are built. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
 
-- `homosexuality-and-the-bible`: the bar to meet. An illustrated comic page: four Gemini-drawn panels with people in them, inside one ink frame, with labels, captions and scripture tags in HTML. Read it for the illustration manifest, chained reference images and the comic layout rules in step 4.
+- `noahs-ark-and-the-flood`: the best example of the default form below. Four chronological panels, each split by a lightning bolt into the two tellings, with art on both halves and exact count bands in the captions.
+- `homosexuality-and-the-bible`: the default form with one scene per panel. An illustrated comic page: four Gemini-drawn panels with people in them, inside one ink frame, with labels, captions and scripture tags in HTML. Read it for the illustration manifest, chained reference images and the comic layout rules in step 4.
 - `pauline-authorship`: exact marks. A pictogram: one drawn scroll per letter, the seal on each scroll is its group's verdict. Read it for how a drawing is made once and reused, sized by one unit, and re-laid out for the poster and the card.
 - `the-creation-stories-in-genesis`: a two-sided comparison as a table, with lines tracing each thing between the sides. Read it for table semantics and scripture links.
+
+## The default form: an illustrated comic page
+
+Unless the user asks for something else, build this. It is what the owner approved on Homosexuality and the Bible and Noah's Ark (2026-11-25).
+
+- **One ink frame** holds everything shared. Inside it, top to bottom:
+  - a kicker with the scope and the field's verdict, in the core statement's own words ("Genesis 6–9 · most scholars conclude")
+  - the headline, the core claim in lettering
+  - a key, when the panels use symbols (P/J badges, the split styles)
+  - a 2×2 grid of panels
+  - the AI credit line
+- **Four panels that tell a story.** Put them in the subject's own order (chronology, or then → now) so the reader moves through it. Panel 1 sets the scene; the last panel pays off something an earlier panel set up (the clean pairs → the sacrifice).
+- **Each panel** has:
+  - a narration label flush in the top-left, phrased as a plain question or beat ("Who boards the ark?", "After the flood")
+  - generated art (4:3)
+  - a caption band holding a short hedged caption (about 10 words), the scripture tag(s), and, when the panel counts something, the exact count band
+- **Split panels show disagreement.** When the relation is two sides (two tellings, then vs now, two scholars), split each panel's art down the middle with a divider and draw both halves.
+  - The divider's style is a claim. Use a lightning bolt where the page assigns each half to a side. Use a plain straight gutter with a ≠ roundel where the page only says two verses disagree.
+  - Keep each side in the same position in every panel that uses it, and badge it (P, J).
+  - Never let a consistent left/right layout assign something the page doesn't assign.
+- **A recurring character.** The same figure appears in every panel (Noah, the scribe), kept consistent by chained reference images (step 4b).
+- **Counts:**
+  - Either draw the exact count in the art and check it, or draw a crowd too dense to count.
+  - The exact number always sits in the caption band as HTML/SVG units.
+- **The card** shows two panels side by side: the lead contrast plus its payoff, or the two halves of the core claim.
+- **Keep it plain:** no tilts, nothing hanging off a frame, no nested boxes, and no starburst or scroll pictogram.
+
+Vary the scenes, characters and compositions from page to page, not this structure.
 
 ## Input
 
@@ -46,8 +75,8 @@ An infographic earns its place when the statements describe a relation that pros
 - **A count is a claim.** Draw exactly as many units as the statements count. Where they give no number ("several", "many"), draw a loose spread with no number in the headline.
 - **Each distinction gets a visual variable** that works without colour: a mark on the unit, its fill, its outline (solid or dashed), its position. Colour repeats the distinction; it never carries it alone.
 - **The user gave an idea**: test it against the statements. Build it if they support every part. If they support only some, say which parts have no statement behind them and build the supported part.
-- **No idea given**: list the relations the statements describe, build the strongest one, and name the others in the report so the user can ask for them.
-- **Vary the look.** Read the existing `scholarship-custom` partials first and don't repeat their furniture (the starburst with a number, the shared scroll unit). Each page gets a picture form of its own.
+- **No idea given**: list the relations the statements describe, build the strongest one as the comic page, with one beat per panel, and name the others in the report so the user can ask for them.
+- **Vary the scenes, not the form.** The comic page above is the default. Each page gets its own characters, settings and compositions; don't reuse the old SVG furniture (the starburst with a number, the shared scroll unit).
 - **Illustrated, always.** Every infographic carries generated illustrations (step 4b). Hand-drawn SVG alone is not an option unless the user asks for it. Split the work like this:
   - **Raster art** draws the scene: people, places, objects, the setting of the relation (the ark, the scribe, the modern couple).
   - **HTML/SVG** draws the words, links and any precise diagram.
@@ -66,6 +95,7 @@ Done when you can name: the one relation, the statement ids it comes from, what 
 Before writing markup, list each label, note, glyph and encoding with its source: a statement id, or a statement id plus cite number.
 
 - Use the statement's own wording, shortened. Keep its hedges ("in the Documentary Hypothesis", "disputed").
+- A hedge covers everything it framed in the source. If a cite says "By this view, X, whereas Y", then X and Y both stay under "by one view". Splitting it into two sentences drops the hedge from the second.
 - A mark claims exactly what its caption claims. A hedge in the statement ("most scholars", "some") shows in the mark or sits in a caption beside it: a struck-through name reads as "not his", stronger than "most scholars agree he did not write it", so the caption carries the hedge and the report names the gap.
 - Things the statements treat as one group look identical; a visual difference is a claim.
 - A drawing shows only what a statement says happened: a line that stops claims an ending.
