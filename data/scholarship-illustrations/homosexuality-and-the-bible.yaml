@@ -7,14 +7,17 @@ images:
   - id: today
     statements: [orientation]
     aspect: "4:3"
-    alt: "A present-day reader holds up an index card reading “homosexuality”."
+    refs: [then]
+    alt: "Two men, a couple, stand arm in arm and smile; one holds up an index card reading “homosexuality”."
     prompt: >-
-      A present-day young adult reader, friendly expression, casual sweater,
-      shown from the waist up, holding up a plain white index card at shoulder
-      height toward the right of the frame, as if presenting a word. The card
-      has a single thin red rule near its top and one word printed on it in
-      bold black lowercase letters: homosexuality. Behind the reader, a hint
-      of a modern bookshelf.
+      A present-day loving couple of two men, shown from the waist up,
+      standing close together arm in arm and smiling warmly at each other,
+      relaxed and happy. One wears a casual amber sweater, the other a rust
+      red shirt. The man on the right holds up, at shoulder height, the SAME
+      index card as in the reference image: white, a thin red rule near the
+      top, and one word printed on it in bold black lowercase letters:
+      homosexuality. Behind them, a hint of a modern living room with a
+      bookshelf. Warm and tender, nothing sexual.
   - id: then
     statements: [orientation]
     aspect: "4:3"

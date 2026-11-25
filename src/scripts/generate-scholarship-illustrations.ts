@@ -46,7 +46,7 @@ const RULES = `CONTENT RULES:
 - No text anywhere in the image except exactly what the scene below asks for. No captions, titles, signatures, labels, watermarks, or invented writing.
 - Writing on scrolls or papers is tiny illegible scribble marks, never letters or words.
 - Do not depict any real, identifiable person. Figures are generic.
-- No violence, nudity, or intimacy.`;
+- No violence, nudity or sexual content. Affection (arm in arm, holding hands) is fine.`;
 
 function arg(name: string): string | undefined {
   const hit = process.argv.find(a => a.startsWith(`--${name}=`));

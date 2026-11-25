@@ -1,26 +1,31 @@
 /*
   Custom block for the Homosexuality and the Bible Scholarship Page: a comic
-  page. Four illustrated panels sit straight on the paper with plain gutters,
-  each a thick ink frame; narration boxes hang off the panel corners and cross
-  the frame edges, as comics do. Composes cloud-section, type-section-title
-  and scholarship-meta.
+  page. One ink frame holds the title, four illustrated panels and the
+  credit, so the whole thing shares as one image. Each panel is an ink frame
+  around its art, with a narration label in the top-left corner and a
+  caption band along the bottom, both inside the frame. Composes
+  cloud-section, type-section-title and scholarship-meta.
 
   The art is raster (generated); everything around it is CSS.
 */
 .hsx-comic {
   --hsx-ink: var(--tan-900);
-  --hsx-frame: var(--border-width-lg, 5px);
-  --hsx-gutter: var(--space-m);
+  --hsx-frame: var(--border-width-md);
 
   container: hsx-comic / inline-size;
 }
 
+/* The page: one frame around everything that is shared. */
 .hsx-comic__page {
+  background: var(--tan-000);
+  border: var(--border-width-lg, 5px) solid var(--hsx-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--hsx-ink);
   display: grid;
-  gap: var(--space-m);
+  gap: var(--space-s);
+  padding: var(--space-s);
 }
 
-/* Title lettering: ink letters with an amber offset, slightly skewed. */
+/* Title lettering: ink capitals with an amber offset. */
 .hsx-comic__title {
   color: var(--hsx-ink);
   font-family: var(--font-family-display);
@@ -30,8 +35,7 @@
   justify-self: center;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
-  max-inline-size: 24ch;
-  rotate: -1.5deg;
+  max-inline-size: 26ch;
   text-align: center;
   text-shadow: 3px 3px 0 var(--color-accent);
   text-transform: uppercase;
@@ -40,51 +44,33 @@
 
 .hsx-comic__strip {
   display: grid;
-  gap: calc(var(--hsx-gutter) + var(--space-xl)) var(--hsx-gutter);
+  gap: var(--space-s);
   list-style: none;
   margin: 0;
-  padding: var(--space-s) var(--space-2xs) 0;
+  padding: 0;
 }
 
-/* A panel is only its frame: art in a thick ink border, a little off-true. */
 .hsx-comic__frame {
   display: grid;
-  gap: var(--space-xs);
-  rotate: var(--hsx-tilt, 0deg);
 }
 
-.hsx-comic__frame--today {
-  --hsx-tilt: -0.6deg;
-}
-
-.hsx-comic__frame--then {
-  --hsx-tilt: 0.5deg;
-}
-
-.hsx-comic__frame--texts {
-  --hsx-tilt: 0.4deg;
-}
-
-.hsx-comic__frame--debate {
-  --hsx-tilt: -0.5deg;
-}
-
+/* A panel: one ink frame around the art and its caption band. */
 .hsx-comic__figure {
+  border: var(--hsx-frame) solid var(--hsx-ink);
+  display: grid;
+  grid-template-rows: auto 1fr;
   margin: 0;
   position: relative;
 }
 
 .hsx-comic__art {
   aspect-ratio: 4 / 3;
-  border: var(--hsx-frame) solid var(--hsx-ink);
-  box-shadow: var(--space-3xs) var(--space-3xs) 0 var(--hsx-ink);
   line-height: 0;
   overflow: hidden;
 }
 
 .hsx-comic__art > img {
-  aspect-ratio: 4 / 3;
-  block-size: auto;
+  block-size: 100%;
   display: block;
   inline-size: 100%;
   object-fit: cover;
@@ -92,72 +78,75 @@
   scale: 1.14;
 }
 
-/* Narration box: yellow, ink-bordered, hanging off the top-left corner. */
+/* Narration label, flush in the panel's top-left corner. */
 .hsx-comic__box {
   background: var(--color-accent);
-  border: var(--border-width-md) solid var(--hsx-ink);
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--hsx-ink);
+  border-block-end: var(--hsx-frame) solid var(--hsx-ink);
+  border-inline-end: var(--hsx-frame) solid var(--hsx-ink);
   font-family: var(--font-family-display);
   font-size: var(--step--1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
-  inset-block-start: calc(var(--space-s) * -1);
-  inset-inline-start: calc(var(--space-xs) * -1);
+  inset-block-start: 0;
+  inset-inline-start: 0;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
   margin: 0;
-  max-inline-size: 70%;
+  max-inline-size: 75%;
   padding: var(--space-3xs) var(--space-2xs);
   position: absolute;
-  rotate: -2deg;
   text-transform: uppercase;
 }
 
-/* "Meanwhile…" bridges the gutter back to the panel before it. */
 .hsx-comic__frame--then .hsx-comic__box {
   background: var(--tan-000);
-  rotate: 1.5deg;
 }
 
-/* The panel's statement: a paper caption box crossing the bottom edge. */
+/* Caption band along the bottom, inside the frame. */
 .hsx-comic__caption {
+  align-content: start;
   background: var(--tan-000);
-  border: var(--border-width-md) solid var(--hsx-ink);
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--hsx-ink);
+  border-block-start: var(--hsx-frame) solid var(--hsx-ink);
+  display: grid;
   font-family: var(--font-family-display);
   font-size: var(--step--1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
-  inset-block-end: calc(var(--space-m) * -1);
-  inset-inline-end: calc(var(--space-xs) * -1);
+  gap: var(--space-3xs);
   line-height: var(--line-height-tight);
-  max-inline-size: 78%;
-  padding: var(--space-3xs) var(--space-2xs);
-  position: absolute;
+  padding: var(--space-2xs) var(--space-xs);
   text-wrap: balance;
 }
 
-/* The passages, set under panel 3 like a footnote, not a box. */
+.hsx-comic__caption > p {
+  margin: 0;
+}
+
+/* Panel 3's passages: ink tags in the caption band, one per passage. */
 .hsx-comic__refs {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-4xs) var(--space-xs);
+  gap: var(--space-4xs);
   list-style: none;
   margin: 0;
-  padding: var(--space-s) 0 0;
+  padding: 0;
 }
 
 .hsx-comic__ref {
-  font-family: var(--font-family-display);
-  font-size: var(--step--1);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
+  background: var(--hsx-ink);
+  font-size: var(--step--2);
   line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.hsx-comic__ref > a {
+  color: var(--color-text-inverse);
+  text-decoration-color: var(--color-accent);
 }
 
 /* The testament's language, as a small letter before the reference. */
 .hsx-comic__ref::before {
-  color: var(--tan-600);
+  color: var(--color-accent);
   margin-inline-end: var(--space-4xs);
 }
 
@@ -176,49 +165,49 @@
 }
 
 .hsx-comic__more {
-  border-block-start: var(--border-width-sm) solid var(--tan-300);
-  padding-block-start: var(--space-xs);
+  margin-block-start: var(--space-s);
 }
 
 /* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
 @container hsx-comic (width >= 40rem) {
+  .hsx-comic__page {
+    padding: var(--space-m);
+  }
+
   .hsx-comic__title {
     font-size: var(--step-3);
   }
 
   .hsx-comic__strip {
-    align-items: start;
+    gap: var(--space-s);
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  /* Reach back across the gutter into panel 1. */
-  .hsx-comic__frame--then .hsx-comic__box {
-    inset-inline-start: calc(var(--hsx-gutter) * -1.6);
   }
 }
 
 /* The poster: two by two on the 4:5 canvas. */
 .scholarship-share:target .hsx-comic__page {
-  gap: var(--space-s);
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
 }
 
 .scholarship-share:target .hsx-comic__title {
-  font-size: var(--step-2);
+  font-size: var(--step-1);
+  max-inline-size: 34ch;
+}
+
+.scholarship-share:target .hsx-comic__caption {
+  padding: var(--space-3xs) var(--space-2xs);
 }
 
 .scholarship-share:target .hsx-comic__strip {
-  align-items: start;
-  gap: calc(var(--space-m) + var(--space-l)) var(--space-m);
+  gap: var(--space-xs);
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.scholarship-share:target .hsx-comic__frame--then .hsx-comic__box {
-  inset-inline-start: calc(var(--space-m) * -1.6);
 }
 
 /* The card: panels 1 and 2 side by side under the title. */
 .scholarship-share:has(#share-card:target) .hsx-comic__page {
-  gap: var(--space-xs);
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
 }
 
 .scholarship-share:has(#share-card:target) .hsx-comic__title {
@@ -227,12 +216,6 @@
 }
 
 .scholarship-share:has(#share-card:target) .hsx-comic__strip {
-  gap: var(--space-m);
+  gap: var(--space-xs);
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.scholarship-share:has(#share-card:target)
-  .hsx-comic__frame--then
-  .hsx-comic__box {
-  inset-inline-start: calc(var(--space-m) * -1.6);
 }

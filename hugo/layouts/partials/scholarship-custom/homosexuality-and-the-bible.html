@@ -1,6 +1,6 @@
 {{- /*
   Custom block for /scholarship/homosexuality-and-the-bible/: a four-panel
-  comic page. A present-day reader holds up the word "homosexuality"; an
+  comic page. A present-day couple of two men holds up the word "homosexuality"; an
   ancient scribe meets the same card, puzzled; the scribe's long scroll marks
   only a few passages; two present-day scholars disagree over an ancient star
   chart. A view of the page's reviewed statements (`orientation` and its cites
@@ -15,7 +15,7 @@
 -}}
 {{- $slug := "homosexuality-and-the-bible" -}}
 {{- $alt := dict
-  "today" "A present-day reader holds up an index card reading “homosexuality”."
+  "today" "Two men, a couple, stand arm in arm and smile; one holds up an index card reading “homosexuality”."
   "then" "An ancient scribe studies the same card, puzzled, with a question mark above him."
   "texts" "The same scribe writes on a very long scroll; only a few short passages on it are marked."
   "debate" "Two present-day scholars disagree over an ancient star chart: one points eagerly, the other frowns, arms crossed."
@@ -66,22 +66,22 @@
             </div>
             <h3 class="hsx-comic__box">{{ $f.box }}</h3>
             <figcaption class="hsx-comic__caption">
-              {{ $f.caption }}
+              <p>{{ $f.caption }}</p>
+              {{- if eq $f.id "texts" }}
+                <ul class="hsx-comic__refs">
+                  {{- range $passages }}
+                    <li class="hsx-comic__ref hsx-comic__ref--{{ .lang }}">
+                      <a
+                        href="{{ printf "%s%s" $bg (urlquery .ref) | safeURL }}"
+                        rel="noopener"
+                        >{{ replace .ref " " "&nbsp;" | safeHTML }}</a
+                      >
+                    </li>
+                  {{- end }}
+                </ul>
+              {{- end }}
             </figcaption>
           </figure>
-          {{- if eq $f.id "texts" }}
-            <ul class="hsx-comic__refs">
-              {{- range $passages }}
-                <li class="hsx-comic__ref hsx-comic__ref--{{ .lang }}">
-                  <a
-                    href="{{ printf "%s%s" $bg (urlquery .ref) | safeURL }}"
-                    rel="noopener"
-                    >{{ replace .ref " " "&nbsp;" | safeHTML }}</a
-                  >
-                </li>
-              {{- end }}
-            </ul>
-          {{- end }}
         </li>
       {{- end }}
     </ol>
@@ -89,12 +89,12 @@
       Illustrations generated with AI (Google Gemini). Words, captions and
       sources are the page’s own.
     </p>
-    <p class="hsx-comic__more scholarship-meta" data-share-hide>
-      Every line here comes from the cited answers below:
-      <a href="#orientation"
-        >did the biblical writers have a concept of sexual orientation</a
-      >
-      and <a href="#passages">which passages address same-sex relations</a>.
-    </p>
   </div>
+  <p class="hsx-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#orientation"
+      >did the biblical writers have a concept of sexual orientation</a
+    >
+    and <a href="#passages">which passages address same-sex relations</a>.
+  </p>
 </section>
