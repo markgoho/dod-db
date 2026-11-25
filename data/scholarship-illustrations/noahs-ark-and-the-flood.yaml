@@ -1,0 +1,24 @@
+# Illustrations for /scholarship/noahs-ark-and-the-flood/ (generated with
+# Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each picture
+# shows only what the listed statements support; every caption, link, claim
+# and count stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+# The counted things (animals, days, birds) are never in the art: Gemini can't
+# draw an exact count, and a stray animal would read as one.
+slug: noahs-ark-and-the-flood
+images:
+  - id: ark
+    statements: [sources, ark]
+    aspect: "4:5"
+    alt: "Noah stands in the open side door of the ark, a big box-shaped wooden vessel with three decks and a roof, beckoning; an empty gangway slopes down from the door."
+    prompt: >-
+      A huge box-shaped wooden ark seen from the side and a little from
+      the front, filling most of the picture: a long rectangular hull of
+      dark planks with three decks (three rows of small square windows),
+      a simple pitched roof, and no mast, no sail and no rudder. In the
+      lower left of its side is a large open door. An old man with a long
+      white beard, in a plain rust red robe and headcloth, stands in the
+      doorway, smiling and beckoning with one arm toward the lower left.
+      A wide, plain, EMPTY wooden gangway slopes from the door down to the
+      bottom left corner of the picture. The ark rests on bare dry ground;
+      behind it a plain pale sky. No animals of any kind, no birds, no
+      rain, no other people, nothing on the gangway.

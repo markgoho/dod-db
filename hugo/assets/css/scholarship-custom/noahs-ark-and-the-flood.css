@@ -142,67 +142,21 @@
   padding: var(--space-xs);
 }
 
-.noah-board__ark {
-  inline-size: min(100%, 18rem);
+/* The generated ark: its own paper margin trimmed, the gangway at its lower left where the lines arrive. */
+.noah-board__art {
+  aspect-ratio: 4 / 5;
+  inline-size: min(100%, 20rem);
   justify-self: center;
+  line-height: 0;
+  overflow: hidden;
 }
 
-.noah-ark__shadow {
-  fill: var(--noah-ink);
-}
-
-.noah-ark__hull,
-.noah-ark__roof,
-.noah-ark__noah,
-.noah-ark__ramp,
-.noah-ark__door,
-.noah-ark__window,
-.noah-ark__beard {
-  stroke: var(--noah-ink);
-  stroke-linejoin: round;
-  stroke-width: 4;
-}
-
-.noah-ark__hull {
-  fill: var(--noah-stone);
-}
-
-.noah-ark__keel {
-  fill: var(--tan-500);
-  stroke: var(--noah-ink);
-  stroke-linejoin: round;
-  stroke-width: 4;
-}
-
-.noah-ark__roof {
-  fill: var(--tan-700);
-}
-
-.noah-ark__line {
-  fill: none;
-  stroke: var(--noah-ink);
-  stroke-width: 2.5;
-}
-
-.noah-ark__window,
-.noah-ark__door {
-  fill: var(--noah-ink);
-}
-
-.noah-ark__noah,
-.noah-ark__ramp {
-  fill: var(--noah-paper);
-}
-
-.noah-ark__beard {
-  fill: var(--tan-200);
-  stroke-width: 3;
-}
-
-.noah-ark__sea {
-  fill: var(--noah-paper);
-  stroke: var(--noah-ink);
-  stroke-width: 4;
+.noah-board__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  scale: 1.09;
 }
 
 .noah-board__lines {
@@ -371,6 +325,13 @@
   --noah-eye: var(--noah-ink);
 }
 
+.noah-board__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
 .noah-board__more {
   margin-block-start: var(--space-s);
 }
@@ -386,13 +347,13 @@
   }
 
   .noah-board__stage {
-    align-items: center;
-    /* No gap: the gangways run all the way to the ark's wall. */
+    align-items: end;
+    /* No gap: the gangways run all the way to the ark. */
     column-gap: 0;
-    grid-template-columns: minmax(0, 1fr) 15rem;
+    grid-template-columns: minmax(0, 1fr) 17rem;
   }
 
-  .noah-board__ark {
+  .noah-board__art {
     inline-size: 100%;
   }
 
@@ -409,7 +370,7 @@
 }
 
 .scholarship-share:target .noah-board__stage {
-  grid-template-columns: minmax(0, 1fr) 14rem;
+  grid-template-columns: minmax(0, 1fr) 17rem;
 }
 
 .scholarship-share:target .noah-board__page {
@@ -428,7 +389,7 @@
 }
 
 .scholarship-share:has(#share-card:target) .noah-board__stage {
-  grid-template-columns: minmax(0, 1fr) 12rem;
+  grid-template-columns: minmax(0, 1fr) 13rem;
 }
 
 .scholarship-share:has(#share-card:target) .noah-board__page {

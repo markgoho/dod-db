@@ -11,6 +11,10 @@
   9, 10, 11, 13) and `ark` cite 1 (decks, roof, side door); it makes no claim
   they don't. Every count is drawn exactly. Reword a label only when the
   statement it comes from is re-reviewed.
+
+  The ark is generated with Gemini from
+  data/scholarship-illustrations/noahs-ark-and-the-flood.yaml; it holds no
+  animals, birds or rain, since those are counted here in HTML and SVG.
   */
 -}}
 {{- define "partials/inline/noah-ref.html" -}}
@@ -141,48 +145,18 @@
             </ul>
           </li>
         </ol>
-        {{/* The ark of Gen 6:15–16: three decks, a roof and a door in its side. Its left wall is the viewBox edge, where both lines arrive. */}}
-        <svg
-          class="noah-board__ark"
-          viewBox="20 0 252 300"
-          preserveAspectRatio="xMinYMid meet"
-          aria-hidden="true"
-          focusable="false">
-          <g class="noah-ark__shadow" transform="translate(10 10)">
-            <path d="M14 62 128 14l114 48z" />
-            <path d="M20 60h216v126H20z" />
-            <path d="M20 186h242l-26 98H34l-14-22z" />
-          </g>
-          <path class="noah-ark__hull" d="M20 60h216v126H20z" />
-          <path class="noah-ark__keel" d="M20 186h242l-26 98H34l-14-22z" />
-          <path class="noah-ark__line" d="M20 123h216M20 218h234M20 250h226" />
-          <path class="noah-ark__roof" d="M14 62 128 14l114 48z" />
-          <path class="noah-ark__line" d="M70 38v24M186 38v24" />
-          {{- range seq 0 5 }}
-            <rect
-              class="noah-ark__window"
-              x="{{ add 40 (mul . 30) }}"
-              y="82"
-              width="14"
-              height="20" />
+        {{/* The ark of Gen 6:15–16 (decks, roof, side door) with Noah at the door: generated art, with no animals in it. The counted animals are the HTML band beside it. */}}
+        <div class="noah-board__art">
+          {{- with resources.Get "scholarship-art/noahs-ark-and-the-flood/ark.png" }}
+            {{- $webp := .Process "resize 1000x webp q78" }}
+            <img
+              src="{{ $webp.RelPermalink }}"
+              width="{{ $webp.Width }}"
+              height="{{ $webp.Height }}"
+              alt="Noah stands in the open side door of the ark, a big box-shaped wooden vessel with decks of windows and a roof, beckoning; an empty gangway slopes down from the door."
+              loading="eager" />
           {{- end }}
-          {{- range seq 0 2 }}
-            <rect
-              class="noah-ark__window"
-              x="{{ add 146 (mul . 30) }}"
-              y="145"
-              width="14"
-              height="20" />
-          {{- end }}
-          {{/* The door, open, with Noah standing in it. */}}
-          <path class="noah-ark__door" d="M20 130h86v120H20z" />
-          <path class="noah-ark__noah" d="M44 250v-52c0-20 40-20 40 0v52z" />
-          <circle class="noah-ark__noah" cx="64" cy="166" r="15" />
-          <path class="noah-ark__beard" d="M52 170c0 17 24 17 24 0z" />
-          <path
-            class="noah-ark__sea"
-            d="M20 276c20-10 40 10 60 0s40 10 60 0 40 10 60 0 40 10 60 0 20 10 52 0v24H20z" />
-        </svg>
+        </div>
       </div>
       <figcaption class="noah-board__caption">
         <svg class="noah-board__altar" aria-hidden="true">
@@ -251,6 +225,10 @@
         </figcaption>
       </figure>
     </div>
+    <p class="noah-board__credit" data-card-hide>
+      Illustration generated with AI (Google Gemini). Words, captions, counts
+      and sources are the page’s own.
+    </p>
   </div>
   <p class="noah-board__more scholarship-meta" data-share-hide>
     Every line here comes from the cited answer below:
