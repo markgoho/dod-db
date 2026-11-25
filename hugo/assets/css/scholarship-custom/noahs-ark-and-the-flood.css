@@ -202,10 +202,8 @@
 /* The neutral split: a straight ink gutter with a ≠ roundel at its centre. */
 .noah-comic__gutter {
   background: var(--noah-ink);
-  display: grid;
   inline-size: var(--noah-frame);
   inset: 0 auto 0 calc(50% - var(--noah-frame) / 2);
-  place-items: center;
   position: absolute;
 }
 
@@ -219,8 +217,11 @@
   font-size: var(--step-1);
   font-weight: var(--font-weight-boldest);
   inline-size: 2.2em;
+  inset: 50% auto auto 50%;
   line-height: 1;
   place-items: center;
+  position: absolute;
+  translate: -50% -50%;
 }
 
 /* Narration label, flush in the panel's top-left corner. */
