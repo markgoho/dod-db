@@ -11,7 +11,12 @@ Worked example: `homosexuality-and-the-bible` (#177). Its page, triggers file an
 
 ## Input
 
-A GitHub issue number (a "Scholarship Page: <subject>" issue) or a slug from `data/scholarship-candidates.yaml`. Read both the issue and the candidate entry when both exist; the issue's body may add sub-claims, likely Episodes and overlaps with other pages.
+A GitHub issue number (a "Scholarship Page: <subject>" issue, the usual case) or a slug from `data/scholarship-candidates.yaml`.
+
+- **Issue given:** read its body and comments for sub-claims, likely Episodes, process notes and overlaps with other pages. Find its candidate entry by subject, not slug (#155 is `daniel-date`); many issues have none. Use the matching entry's slug; with no entry, make the slug from the issue title, kebab-case, as the published pages are named.
+- **Slug given:** look for an open issue on the subject (`gh issue list --search "Scholarship Page"`) and work it as the issue for this page, so the commits and the closing comment have one home.
+
+The issue's specific instructions (an extra sourcing bar, a scope limit, a cross-link) apply on top of the rules, and are recorded in the review file's header.
 
 ## Workflow
 
@@ -44,7 +49,7 @@ Write the four files, `draft: true` on the page:
 - `hugo/data/external-sources.yaml`: a registry entry per new source; reuse existing ids.
 - `data/scholarship-reviews/<slug>.yaml`: the agent first pass, one entry per citation, Trigger Claim and source, plus `leads`, `uncited` and the header comments (sourcing test, what was dropped and why, flags for the second pass).
 
-Remove the subject's entry from `data/scholarship-candidates.yaml`; the page now carries it. Write the shorts last, each reporting where scholarship stands, never one author's view.
+Remove the subject's entry from `data/scholarship-candidates.yaml`, if it has one; the page now carries it. Write the shorts last, each reporting where scholarship stands, never one author's view.
 
 Done when every quote on the page is script-matched (whitespace and HTML entities normalised) against the saved source text with zero misses, and `bun run check:scholarship` passes. Commit "Add draft Scholarship Page: <title> (#<issue>)".
 
