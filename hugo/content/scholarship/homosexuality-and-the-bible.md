@@ -1,7 +1,6 @@
 ---
 title: "Homosexuality and the Bible"
 dek: "What the few biblical passages on same-sex relations say, how scholars read them in their ancient setting, and where scholars and religious traditions disagree."
-draft: true
 core: orientation
 sourcesRead: 2026-11-25
 related:
