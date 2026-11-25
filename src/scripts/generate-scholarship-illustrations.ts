@@ -16,7 +16,7 @@ import path from "node:path";
 import { z } from "zod";
 import { ai } from "../ai.js";
 
-const FLASH_MODEL = "gemini-3.1-flash-image-preview";
+const DEFAULT_MODEL = "gemini-nano-banana-2.1";
 const PRO_MODEL = "gemini-3-pro-image-preview";
 const MAX_RETRIES = 3;
 
@@ -61,7 +61,7 @@ if (!slug || slug.startsWith("--")) {
   process.exit(1);
 }
 const onlyId = arg("id");
-const model = process.argv.includes("--pro") ? PRO_MODEL : FLASH_MODEL;
+const model = process.argv.includes("--pro") ? PRO_MODEL : DEFAULT_MODEL;
 
 const manifest = ManifestSchema.parse(
   YAML.parse(
