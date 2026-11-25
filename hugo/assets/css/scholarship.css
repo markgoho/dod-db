@@ -267,6 +267,67 @@
   font-weight: var(--font-weight-bold);
 }
 
+/*
+  Comic plate: an infographic's label set on its art, not in a band below.
+  A paper caption box with an ink border and hard shadow, pinned to a corner
+  the picture leaves clear. Its parent is the panel: position: relative and
+  container-type: inline-size, so plates scale with the panel on the page,
+  the poster, the card and a phone. Big lettering carries the number or the
+  thing; a short sub-line carries the rest and the scripture tags.
+*/
+.comic-plate {
+  background: var(--tan-000);
+  border: 3px solid var(--tan-900);
+  box-shadow: 3px 3px 0 var(--tan-900);
+  display: grid;
+  gap: 0.3cqi;
+  margin: 0;
+  max-inline-size: 40%;
+  padding: 0.9cqi 1.4cqi 1.1cqi;
+  position: absolute;
+}
+
+/* Top-left sits below the panel's narration label. */
+.comic-plate--tl {
+  inset: 10cqi auto auto 2cqi;
+}
+
+.comic-plate--tr {
+  inset: 2cqi 2cqi auto auto;
+  text-align: end;
+}
+
+.comic-plate--bl {
+  inset: auto auto 2cqi 2cqi;
+}
+
+.comic-plate--br {
+  inset: auto 2cqi 2cqi auto;
+  text-align: end;
+}
+
+.comic-plate__big {
+  font-family: var(--font-family-display);
+  font-size: clamp(0.95rem, 5.4cqi, 2.1rem);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: 1;
+  margin: 0;
+  text-shadow: 2px 2px 0 var(--color-accent);
+  text-transform: uppercase;
+}
+
+.comic-plate__sub {
+  font-family: var(--font-family-display);
+  font-size: clamp(0.65rem, 2.5cqi, 0.95rem);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  text-wrap: balance;
+}
+
 /* Questions: one panel per group, rows divided by a hairline, numbered across the page. */
 .scholarship-question {
   counter-increment: scholarship-question;

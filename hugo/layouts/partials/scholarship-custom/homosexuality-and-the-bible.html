@@ -29,11 +29,12 @@
   (dict "ref" "1 Corinthians 6:9–10" "lang" "gr")
   (dict "ref" "1 Timothy 1:9–10" "lang" "gr")
 -}}
+{{- /* Each panel's words sit on its art as a plate, in the corner the picture leaves clear. */ -}}
 {{- $frames := slice
-  (dict "id" "today" "box" "Today" "caption" "The modern concept of sexual orientation has a word.")
-  (dict "id" "then" "box" "Meanwhile, in biblical times…" "caption" "Unknown then: no specific equivalent in the Hebrew or the Greek.")
-  (dict "id" "texts" "box" "What the texts speak of" "caption" "A few passages speak of same-sex acts.")
-  (dict "id" "debate" "box" "Scholars today" "caption" "Whether any ancient writers had an idea like orientation is debated.")
+  (dict "id" "today" "box" "Today" "pos" "br" "big" "A word" "sub" "for the modern concept of sexual orientation")
+  (dict "id" "then" "box" "Meanwhile, in biblical times…" "pos" "br" "big" "No word" "sub" "no specific equivalent in the Hebrew or the Greek")
+  (dict "id" "texts" "box" "What the texts speak of" "pos" "br" "big" "A few passages" "sub" "speak of same-sex acts")
+  (dict "id" "debate" "box" "Scholars today" "pos" "br" "big" "Debated" "sub" "whether any ancient writers had an idea like orientation")
 -}}
 <section class="cloud-section hsx-comic">
   <h2
@@ -65,8 +66,9 @@
               {{- end }}
             </div>
             <h3 class="hsx-comic__box">{{ $f.box }}</h3>
-            <figcaption class="hsx-comic__caption">
-              <p>{{ $f.caption }}</p>
+            <figcaption class="comic-plate comic-plate--{{ $f.pos }}">
+              <p class="comic-plate__big">{{ $f.big }}</p>
+              <p class="comic-plate__sub">{{ $f.sub }}</p>
               {{- if eq $f.id "texts" }}
                 <ul class="hsx-comic__refs">
                   {{- range $passages }}

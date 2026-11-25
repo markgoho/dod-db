@@ -14,7 +14,7 @@ One source, two forms. On the page it is a live, responsive block. At `#share` t
 Worked examples, read all four before building. The first two are the bar to meet; the last two predate raster art and show how exact marks are built. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
 
 - `noahs-ark-and-the-flood`: the best example of the default form below. Four chronological panels, each split by a lightning bolt into the two tellings, with art on both halves and each half's number or label set on the art as a plate.
-- `homosexuality-and-the-bible`: the default form with one scene per panel (older layout: its captions and scripture tags sit in caption bands below the art; new work puts them on the art as plates, as Noah does). Read it for the illustration manifest, chained reference images and one-scene panels.
+- `homosexuality-and-the-bible`: the default form with one scene per panel: four Gemini-drawn panels with people in them, each panel's words and scripture tags on a plate in a clear corner of its art. Read it for the illustration manifest, chained reference images, and a plate holding many tags.
 - `pauline-authorship`: exact marks. A pictogram: one drawn scroll per letter, the seal on each scroll is its group's verdict. Read it for how a drawing is made once and reused, sized by one unit, and re-laid out for the poster and the card.
 - `the-creation-stories-in-genesis`: a two-sided comparison as a table, with lines tracing each thing between the sides. Read it for table semantics and scripture links.
 
@@ -32,7 +32,7 @@ Unless the user asks for something else, build this. It is what the owner approv
 - **Each panel** has:
   - a narration label flush in the top-left, phrased as a plain question or beat ("Who boards the ark?", "After the flood")
   - generated art (4:3), filling the panel
-  - **plates on the art**, not a caption band below it: one comic caption box per side, set in a corner the picture leaves clear. Each plate holds the number or the thing in big lettering ("7 pairs", "150 days", "A dove"), a short hedged sub-line when needed, and the scripture tag. Badges (P, J) go on the plate.
+  - **plates on the art**, not a caption band below it: one comic caption box per side, set in a corner the picture leaves clear (shared `comic-plate` classes in `scholarship.css`). Each plate holds the number or the thing in big lettering ("7 pairs", "150 days", "A dove"), a short hedged sub-line when needed, and the scripture tag. Badges (P, J) go on the plate.
 - **Split panels show disagreement.** When the relation is two sides (two tellings, then vs now, two scholars), split each panel's art down the middle with a divider and draw both halves.
   - The divider's style is a claim. Use a lightning bolt where the page assigns each half to a side. Use a plain straight gutter with a ≠ roundel where the page only says two verses disagree.
   - Keep each side in the same position in every panel that uses it, and badge it (P, J).

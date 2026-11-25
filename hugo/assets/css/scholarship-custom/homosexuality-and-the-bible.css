@@ -3,7 +3,7 @@
   page. One ink frame holds the title, four illustrated panels and the
   credit, so the whole thing shares as one image. Each panel is an ink frame
   around its art, with a narration label in the top-left corner and a
-  caption band along the bottom, both inside the frame. Composes
+  comic plate set on the art in a clear corner. Composes
   cloud-section, type-section-title and scholarship-meta.
 
   The art is raster (generated); everything around it is CSS.
@@ -54,11 +54,10 @@
   display: grid;
 }
 
-/* A panel: one ink frame around the art and its caption band. */
+/* A panel: one ink frame around the art; its words sit on the art as a comic plate (scholarship.css), so the panel is the plates' container. */
 .hsx-comic__figure {
   border: var(--hsx-frame) solid var(--hsx-ink);
-  display: grid;
-  grid-template-rows: auto 1fr;
+  container-type: inline-size;
   margin: 0;
   position: relative;
 }
@@ -102,31 +101,16 @@
   background: var(--tan-000);
 }
 
-/* Caption band along the bottom, inside the frame. */
-.hsx-comic__caption {
-  align-content: start;
-  background: var(--tan-000);
-  border-block-start: var(--hsx-frame) solid var(--hsx-ink);
-  display: grid;
-  font-family: var(--font-family-display);
-  font-size: var(--step--1);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  gap: var(--space-3xs);
-  line-height: var(--line-height-tight);
-  padding: var(--space-2xs) var(--space-xs);
-  text-wrap: balance;
+/* Panel 3's passages: ink tags on its plate, one per passage. */
+.hsx-comic__frame--texts .comic-plate {
+  max-inline-size: 48%;
 }
 
-.hsx-comic__caption > p {
-  margin: 0;
-}
-
-/* Panel 3's passages: ink tags in the caption band, one per passage. */
 .hsx-comic__refs {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-4xs);
+  gap: 0.5cqi;
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -134,7 +118,9 @@
 
 .hsx-comic__ref {
   background: var(--hsx-ink);
-  font-size: var(--step--2);
+  font-family: var(--font-family-main);
+  font-size: clamp(0.6rem, 2.2cqi, 0.85rem);
+  font-style: normal;
   line-height: var(--line-height-tight);
   padding: var(--space-4xs) var(--space-3xs);
 }
@@ -193,10 +179,6 @@
 .scholarship-share:target .hsx-comic__title {
   font-size: var(--step-1);
   max-inline-size: 34ch;
-}
-
-.scholarship-share:target .hsx-comic__caption {
-  padding: var(--space-3xs) var(--space-2xs);
 }
 
 .scholarship-share:target .hsx-comic__strip {

@@ -128,10 +128,10 @@
             </div>
             <h3 class="noah-comic__box">{{ .box }}</h3>
             {{/* The labels sit on the art, one plate per telling, in a corner the picture leaves clear. */}}
-            <figcaption class="noah-comic__plates">
+            <figcaption>
               {{- range .plates }}
-                <p class="noah-comic__plate noah-comic__plate--{{ .pos }}">
-                  <span class="noah-comic__big">
+                <p class="comic-plate comic-plate--{{ .pos }}">
+                  <span class="comic-plate__big">
                     {{- with .badge }}
                       <span
                         class="noah-comic__badge noah-comic__badge--{{ . }}"
@@ -142,7 +142,7 @@
                     {{ .big }}
                   </span>
                   {{- if or .sub .ref }}
-                    <span class="noah-comic__sub">
+                    <span class="comic-plate__sub">
                       {{- with .sub }}{{ . }}{{ end }}
                       {{ if .ref }}
                         {{- partial "inline/noah-ref.html" (dict "ref" .ref "label" .label) -}}
