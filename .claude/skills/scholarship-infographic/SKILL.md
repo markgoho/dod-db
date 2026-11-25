@@ -13,7 +13,7 @@ One source, two forms. On the page it is a live, responsive block. At `#share` t
 
 Worked examples, read all four before building. The first two are the bar to meet; the last two predate raster art and show how exact marks are built. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
 
-- `noahs-ark-and-the-flood`: the best example of the default form below. Four chronological panels, each split by a lightning bolt into the two tellings, with art on both halves and exact count bands in the captions.
+- `noahs-ark-and-the-flood`: the best example of the default form below. Four chronological panels, each split by a lightning bolt into the two tellings, with art on both halves and each half's number or label set on the art as a plate.
 - `homosexuality-and-the-bible`: the default form with one scene per panel. An illustrated comic page: four Gemini-drawn panels with people in them, inside one ink frame, with labels, captions and scripture tags in HTML. Read it for the illustration manifest, chained reference images and the comic layout rules in step 4.
 - `pauline-authorship`: exact marks. A pictogram: one drawn scroll per letter, the seal on each scroll is its group's verdict. Read it for how a drawing is made once and reused, sized by one unit, and re-laid out for the poster and the card.
 - `the-creation-stories-in-genesis`: a two-sided comparison as a table, with lines tracing each thing between the sides. Read it for table semantics and scripture links.
@@ -31,8 +31,8 @@ Unless the user asks for something else, build this. It is what the owner approv
 - **Four panels that tell a story.** Put them in the subject's own order (chronology, or then → now) so the reader moves through it. Panel 1 sets the scene; the last panel pays off something an earlier panel set up (the clean pairs → the sacrifice).
 - **Each panel** has:
   - a narration label flush in the top-left, phrased as a plain question or beat ("Who boards the ark?", "After the flood")
-  - generated art (4:3)
-  - a caption band holding a short hedged caption (about 10 words), the scripture tag(s), and, when the panel counts something, the exact count band
+  - generated art (4:3), filling the panel
+  - **plates on the art**, not a caption band below it: one comic caption box per side, set in a corner the picture leaves clear. Each plate holds the number or the thing in big lettering ("7 pairs", "150 days", "A dove"), a short hedged sub-line when needed, and the scripture tag. Badges (P, J) go on the plate.
 - **Split panels show disagreement.** When the relation is two sides (two tellings, then vs now, two scholars), split each panel's art down the middle with a divider and draw both halves.
   - The divider's style is a claim. Use a lightning bolt where the page assigns each half to a side. Use a plain straight gutter with a ≠ roundel where the page only says two verses disagree.
   - Keep each side in the same position in every panel that uses it, and badge it (P, J).
@@ -40,7 +40,7 @@ Unless the user asks for something else, build this. It is what the owner approv
 - **A recurring character.** The same figure appears in every panel (Noah, the scribe), kept consistent by chained reference images (step 4b).
 - **Counts:**
   - Either draw the exact count in the art and check it, or draw a crowd too dense to count.
-  - The exact number always sits in the caption band as HTML/SVG units.
+  - The exact number is written on that side's plate, in big lettering ("1 pair", "7 pairs"). No rows of icons or drops: the number is the mark.
 - **The card** shows two panels side by side: the lead contrast plus its payoff, or the two halves of the core claim.
 - **Keep it plain:** no tilts, nothing hanging off a frame, no nested boxes, and no starburst or scroll pictogram.
 
@@ -82,7 +82,7 @@ An infographic earns its place when the statements describe a relation that pros
   - **HTML/SVG** draws the words, links and any precise diagram.
   - **Counted things can be in the art.** The image models hit an exact count only some of the time (2026-11-25 tests drew seven pairs of sheep exactly once in four tries on each of Nano Banana 2, Pro and 2.1). So use one of these:
     - **Exact and checked.** The art shows the number. Count it in the image yourself and regenerate until it's right. This works for small counts. Ask for clearly separated groups and give the number twice in the prompt (Pro did no better than Flash in the test).
-    - **Not asserting a number.** The art is drawn so no count can be read off it: one lone pair against a crowd streaming through a door, a line vanishing into the ark, a rain-streaked sky. The exact number goes in the caption.
+    - **Not asserting a number.** The art is drawn so no count can be read off it: one lone pair against a crowd streaming through a door, a line vanishing into the ark, a rain-streaked sky. The exact number goes on the plate.
     - **The count is the picture.** When the relation is the count itself (a pictogram of 13 letters), draw the units in HTML/SVG, in their own band beside or below the art, never laid over it. Overlays drift off the art across the page, poster, card and phone layouts.
   - A count the art half-shows is a wrong count. Never let art show 6 pairs beside a caption that says 7.
 
@@ -130,9 +130,9 @@ Graphics: the generated art (step 4b) plus inline SVG for exact marks and comic 
 - Comic furniture frames the picture: headline lettering, panels, narration boxes, caption bands. Keep it restrained:
   - **One unifying ink frame** holds the whole shared block (title, panels, credit), so the poster and the card read as one image. The page-only "cited answers below" line sits outside it.
   - **Panels go straight inside that frame.** Don't nest a box in a panel in a box.
-  - **Labels and captions sit inside their panel's frame**: a narration label flush in a corner, a caption band along the bottom. Nothing hangs off a frame edge.
+  - **Labels sit on the art, inside their panel's frame**: a narration label flush top-left, and plates in the clear corners. Before placing a plate, look at the art and pick a corner that covers setting, not the subject (the counted sheep, the altar, a face). Keep plates under about 40% of the panel's width and size their type in `cqi` (the figure is an inline-size container) so they scale with the panel on the page, poster, card and phone. If no corner is clear, regenerate the art asking for open sky or ground there. Use a caption band below the art only for a note too long for a plate. Nothing hangs off a frame edge.
   - **No tilts.** Everything stays square to the page.
-  - **Things a panel cites go inside that panel**, such as scripture tags in its caption band, not floating below it.
+  - **Things a panel cites go inside that panel**, such as scripture tags on its plates, not floating below it.
 - The picture takes most of the block's area. Text is labels, one caption per group and at most one short note.
 - Spend the boldness on the relation from step 2; the furniture stays in the same few colours and weights.
 
