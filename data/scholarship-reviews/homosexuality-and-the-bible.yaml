@@ -5,724 +5,715 @@
 # Dropped for want of a second author or any qualifying source: Jude 7 “strange flesh” as angels (no Scholarly or Reference source discusses it; Bauckham, Hultin, Keener only as quoted in Otey, Themelios 2024, a confessional journal); Ezekiel 16:49 as Sodom's sin (Stiebert only; attributed in the sodom text); Leviticus 18:22 addressing only the insertive partner (Joosten reporting Olyan only; attributed); to‘evah as relative abhorrence (Kawashima only; not stated); a cultic-prostitution reading of Leviticus (no source).
 # First pass: three research agents fetched every source on 2026-11-25 into separate scratch folders and copied quotes from the fetched text; every page quote was then script-matched (whitespace and HTML entities normalised) against those saved texts: 77/77, 0 misses. The second pass must re-fetch.
 # Flags for the second pass: (1) Most Reference citations are Bible Odyssey pages (nine authors): independent authors, one platform. (2) Huber reports what LGBTQ+ interpreters argue (passages); the passages short also rests on HarperCollins and Loader. (3) Wells's “most academic scholars” is his own judgment, attributed by name in the today text and not used as the short. (4) Brennan and Halperin (BMCR 1997) sit at the edge of the 30-year window; they back only the attributed dissent. (5) Tushima writes from a stated canonical-theological frame at an evangelical seminary; Old Testament Essays is peer-reviewed, so Scholarly by venue (#80: class follows venue), used only for the dissent. (6) Jefferson's field is early Christianity and art; his women citation reports what “commentators” argue. (7) Joosten's own reading (married man) is a new proposal, attributed. (8) Stiebert's first name is not on the PDF; registry and text use “J. Stiebert”.
+# Second agent pass 2026-11-25 (#93 delegation, independent): all 28 cited sources (29 URLs; two HarperCollins entries) re-fetched by curl into the second pass's own scratch folder, not the first pass's files: 9 Bible Odyssey articles and their author bios, 2 HarperCollins entries on Bible Odyssey, 2 Hayes and 2 Martin lectures on oyc.yale.edu, the OUP ch. 8 summary, HTS (Loader), SciELO (Tushima), 2 BMCR pages, Encyclopedia.com, vatican.va, gotquestions.org, and PDFs of Stiebert, Joosten (plus its ORA record), Ahern (Humanities Commons, after a cookie retry), Instone-Brewer, ELCA and UCC. The first pass counted 77 quotes; the page held 78. All 78 script-matched (whitespace, HTML entities, stripped tags only), 0 misses; 76 after the cuts below. 15 HTML quotes matched only with inline tags (scripture links, <em>) stripped without inserting a space; no PDF quote needed line-break de-hyphenation. Lecture locators checked against the chapter headings, Bible Odyssey paragraphs counted from the HTML, PDF pages checked against the printed footers, HTS sections checked against the article TOC. All 9 Trigger Claims re-matched by script at timestamp and speaker (full turn, final transcript) and read about two minutes either side.
+# Second pass changes. Shorts: orientation (now only “Not in the modern sense, scholars say”, the strength HarperCollins and Loader share, plus the debate; the acts-and-roles clause is cut, since Loader says Paul condemns passion as well as the act); passages (“A few:” and the list, no frequency word); sodom (“homosexual behavior”, not “same-sex desire”; “Some still hold that view” moved out, as it rests on Tushima alone); leviticus (“some scholars question”, not “scholars debate”); women (no “usually … only reference”); vice-lists (“One reading”, not “A common reading”); jesus (“explicitly”). Text: orientation now has Loader's “some” via Aristophanes, and Halperin's “in his view”; sodom drops “she” for Stiebert; leviticus has Hayes's “most scholars think” and Wells's “in his opinion”; women says what Loader says, not “agrees”; romans scopes Martin to ancient Judaism and Christianity, apart from Romans 1; vice-lists describes HarperCollins's words as it does; today drops the uncited “Loader himself holds” clause. Cut to uncited: Joosten's “Several Old Testament scholars…” (old leviticus/8 and today/2), as quoting it alone dropped his “But our verse … would still … prohibit” counterpoint; later keys renumbered. Locators: orientation/7, orientation/8 (not the closing paragraph), leviticus/11–12 (paragraph “In my opinion”), vice-lists/2 (item “a.”), tradition/7–9 (ELCA pp. 20, 20, 21). Registry: Ahern series 27(2): 209–233, publisher University of Texas Press, edition pre-copyedited version; Tushima title subtitle added.
+# Second pass flags: (1) Halperin's BMCR response is a letter, not shown to be peer-reviewed; it backs only the attributed reply, and the orientation “debated” also rests on Brennan and Loader. (2) Wells year kept null though his page is dated 14 December 2022, the convention the other BO entries follow. (3) Trigger 10@00:34:12 does not carry the next turn's “active role” qualification; 114@00:44:10 stops before “did abominable things”. Triggers file not edited. (4) Zeichmann's article is sponsored by his own book's publisher. (5) UCC “linked from ucc.org” not re-checked. Publish rule recomputed: core backed by HarperCollins (Reference) and Loader 2014 (Scholarly), 2 independent authors; Martin is not counted. 10 statements. Ids, slug and draft unchanged.
 review: null
 citations:
   orientation/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; one of the two core authors (with Loader 2014).",
     }
   orientation/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   orientation/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; one of the two core authors (with HarperCollins). Short reworded: the old second clause (“the texts judging sexual acts and roles”) cut, since Loader says Paul condemns “not just the act but also misdirected and intense passion”.",
     }
   orientation/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; text keeps “almost certainly”.",
     }
   orientation/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (ch. 3 heading and timestamp confirmed). Backs the hierarchy point only; Martin says nothing in l20 about an ancient concept of orientation, so not counted toward the core.",
     }
   orientation/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; text changed from “some ancient writers” to Loader's “some”, tied to Aristophanes's myth in Plato as he does.",
     }
   orientation/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; locator now the paragraph beginning “For the Roman world” (paragraph 18). BMCR calls itself a “scholarly journal” committed to “peer review”; Brennan reviews as a Bryn Mawr faculty member.",
     }
   orientation/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; locator corrected: the quote closes the paragraph beginning “All this should be cause for some disquiet” (paragraph 5), not the response's closing paragraph. Halperin's “in my view” now kept in the text. Halperin confirms the point Brennan reports “pertains … to me”. Flag: a signed response in BMCR, not shown to be peer-reviewed; backs only the attributed reply.",
     }
   passages/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified. Short: “The ones usually discussed are” cut; the short now lists the passages HarperCollins and Huber both name, with no frequency word.",
     }
   passages/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   passages/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified. Short: “Very few” changed to “A few” (HarperCollins says “a few biblical references”; Loader's “very few” is about the New Testament only).",
     }
   passages/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; text keeps “in the New Testament”.",
     }
   sodom/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (ch. 4 [00:25:38]). Short: “same-sex desire” replaced by Hayes's “homosexual behavior”.",
     }
   sodom/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   sodom/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (printed p. 202; the PDF shows each spread twice). Stiebert p. 202 also traces the sexual reading to later interpretations (via Nissinen).",
     }
   sodom/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   sodom/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; text drops the pronoun “she”: the byline gives only “J Stiebert (University of Botswana)”.",
     }
   sodom/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   sodom/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; scoped to Judges 19 in the text, as on the page.",
     }
   sodom/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; deposit p. 1. Registry updated from the Humanities Commons record: 27(2): 209–233, University of Texas Press, pre-copyedited version.",
     }
   sodom/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   sodom/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified. Short no longer ends “Some still hold that view”: under #133 that rests on Tushima alone, so it stays in the text, attributed.",
     }
   sodom/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   leviticus/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   leviticus/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (ch. 1 [00:00:00]); text now keeps Hayes's “most scholars think” and “different priestly school”.",
     }
   leviticus/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   leviticus/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (ch. 5 [00:29:13]).",
     }
   leviticus/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   leviticus/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   leviticus/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   leviticus/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; text keeps “originally”. (Was leviticus/9 before the second pass cut a leviticus cite.)",
     }
   leviticus/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified. (Was leviticus/10 before the second pass cut a leviticus cite.)",
     }
   leviticus/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (printed p. 203). (Was leviticus/11 before the second pass cut a leviticus cite.)",
     }
   leviticus/11:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; locator changed from “paragraph 2” to the paragraph beginning “In my opinion”; text now keeps “in his opinion”. (Was leviticus/12 before the second pass cut a leviticus cite.)",
     }
   leviticus/12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; locator changed from “paragraph 2” to the paragraph beginning “In my opinion”. (Was leviticus/13 before the second pass cut a leviticus cite.)",
     }
   leviticus/13:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
-    }
-  leviticus/14:
-    {
-      agent: pass,
-      owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (journal p. 33). Short changed from “scholars debate” to “some scholars question”: Wells says most scholars keep the usual reading and he is “in the minority”, and Joosten calls the traditional reading “more or less uncontested until a few years ago”. (Was leviticus/14 before the second pass cut a leviticus cite.)",
     }
   women/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   women/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (printed p. 201).",
     }
   women/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   women/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   women/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   women/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; note 6 (journal p. 34) is on the main text's “women are not prohibited from another woman”.",
     }
   women/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified. Short no longer says Romans 1:26 is “usually” read as “the Bible's only reference” (the page counting scholars; “only” is HarperCollins's alone); now “read as referring to sex between women” (HarperCollins, Loader).",
     }
   women/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; text changed from “agrees” to what Loader says: he reads Romans 1:26 as about women but does not say it is the only reference.",
     }
   romans/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   romans/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   romans/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   romans/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   romans/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (ch. 3 [00:26:50]). The sentence is about male–female sex and ancient sexual hierarchy, not Romans 1, so the text moves it after Loader and Hoke, scoped “in ancient Judaism and Christianity” and “on ancient sexual hierarchy generally”.",
     }
   romans/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   romans/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   vice-lists/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   vice-lists/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; locator corrected: the quote is item “a.” (its own paragraph) under “How has arsenokoitai been translated?”, not the paragraph beginning “Scholars have offered several proposals”.",
     }
   vice-lists/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   vice-lists/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   vice-lists/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified. HarperCollins never names malakoi or arsenokoitai; the text now describes the words as it does (“the noun after ‘adulterers’”, “the next word”). Short: “A common reading” changed to “One reading” (no source calls it common).",
     }
   vice-lists/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   vice-lists/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; “arsenkoitai” as spelled on the page.",
     }
   vice-lists/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   jesus/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified. Short changed from “No saying of Jesus addresses it” to “… explicitly addresses it”: Loader says elsewhere one looks in vain “or” settles for speculation, and Zeichmann reports a “widespread sense” and a debate he declines to resolve.",
     }
   jesus/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   jesus/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   jesus/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   today/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (ch. 2 [00:20:11]).",
     }
   today/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified. The text's clause “Loader himself holds that Paul believed all men were heterosexual” was cut: it had no cite in this statement and dropped his “almost certainly”. (Was today/3 before the second pass cut a today cite.)",
     }
   today/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
-    }
-  today/4:
-    {
-      agent: pass,
-      owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; Wells's page dated 14 December 2022 and cites a 2022 article, so inside the 30-year window; “most academic scholars” stays his words, attributed, not the short. (Was today/4 before the second pass cut a today cite.)",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   tradition/2:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   tradition/3:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   tradition/4:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified (§2358).",
     }
   tradition/5:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   tradition/6:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
   tradition/7:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; locator page corrected from p. 19 to p. 20 (the printed footer “19” precedes the sentence).",
     }
   tradition/8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; locator page corrected from p. 19 to p. 20.",
     }
   tradition/9:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified; locator page corrected from p. 20 to p. 21 (the cited fourth bullet follows the footer “A Social Statement 20”).",
     }
   tradition/10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read.",
+      note: "First pass 2026-11-25: matched against fetched text; surrounding passage read. Second pass 2026-11-25: verified.",
     }
 triggers:
   10@00:16:41:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-25: re-matched by script (timestamp, speaker, full turn, verbatim); read two minutes either side. The next sentence (“They absolutely had people we would describe today as having a homosexual orientation…”) qualifies people, not the concept; nothing dropped from the claim.",
     }
   10@00:31:40:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-25: re-matched by script; read two minutes either side. “it” covers Genesis 19 and the Judges 19 parallel discussed in the turns before; subject Sodom.",
     }
   10@00:34:12:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-25: re-matched by script; read two minutes either side; “I think” kept. Flag: the next turn (00:35:20) adds that Lev 18:22 “seems to be prohibiting taking the active role”, a qualification the trimmed claim does not carry; “generic” in the claim answers the boys and cultic readings.",
     }
   10@00:41:31:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-25: re-matched by script; read two minutes either side; subject women and Leviticus.",
     }
   10@00:59:01:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-25: re-matched by script; read two minutes either side.",
     }
   10@01:02:19:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-25: re-matched by script; read two minutes either side; “it seems to be taken from” kept.",
     }
   10@01:06:14:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-25: re-matched by script; read two minutes either side. No statement on the page covers Jude 7 (dropped by the first pass); the claim still gates the page's subject.",
     }
   114@00:38:15:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-25: re-matched by script; read two minutes either side.",
     }
   114@00:44:10:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept.",
+      note: "First pass 2026-11-25: re-matched by script at timestamp and speaker (full turn), verbatim; read the turns about two minutes either side; hedges kept. Second pass 2026-11-25: re-matched by script; read two minutes either side. Flag: the trimmed claim stops before “She was haughty and did abominable things”, which the following turns discuss; not a hedge on the claim, triggers file not edited.",
     }
 rules:
   publish-rule:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: 10 statements. Core orientation cites HarperCollins (Powell, ed., Reference), Loader 2014 HTS (Scholarly) and Martin l20 (Reference): 3 independent authors, none Host-authored.",
+      note: "First pass 2026-11-25: 10 statements. Core orientation cites HarperCollins (Powell, ed., Reference), Loader 2014 HTS (Scholarly) and Martin l20 (Reference): 3 independent authors, none Host-authored. Second pass 2026-11-25: recomputed. 10 statements. Core orientation: HarperCollins (Powell, ed., Reference, 2009) and Loader 2014 (Scholarly) back “Not in the modern sense” (HarperCollins: the modern concept “was unknown in biblical times”; Loader: Paul “would have rejected the categories”): 2 independent authors, both inside the window, neither Host-authored. Martin l20 backs only the hierarchy sentence and is no longer counted for the core. Rule holds.",
     }
   consensus-wording:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: No statement says “consensus”. “most scholars” appears only as Wells's own words, attributed, twice (leviticus: the act-of-lying reading; today: Knust and Coogan's views), never in a short. “widely been interpreted” (leviticus short) is Joosten's wording. #133 per short: orientation (HarperCollins, Loader, Martin; debate Brennan/Brooten vs Halperin); passages (Huber, HarperCollins, Loader); sodom (Hayes, Stiebert, Joosten, Graybill, Ahern; dissent Tushima); leviticus (HarperCollins, Joosten, Wells, Stiebert, Instone-Brewer); women (Joosten, Stiebert, Anderson; Rom 1:26 HarperCollins, Loader); romans (HarperCollins, Loader, Wells); vice-lists (Knust, Hoke, Wells; reading HarperCollins, Loader); jesus (Loader, Zeichmann, HarperCollins); today (Martin, Joosten, Loader, Wells); tradition (Tradition sources, exempt).",
+      note: "First pass 2026-11-25: No statement says “consensus”. “most scholars” appears only as Wells's own words, attributed, twice (leviticus: the act-of-lying reading; today: Knust and Coogan's views), never in a short. “widely been interpreted” (leviticus short) is Joosten's wording. #133 per short: orientation (HarperCollins, Loader, Martin; debate Brennan/Brooten vs Halperin); passages (Huber, HarperCollins, Loader); sodom (Hayes, Stiebert, Joosten, Graybill, Ahern; dissent Tushima); leviticus (HarperCollins, Joosten, Wells, Stiebert, Instone-Brewer); women (Joosten, Stiebert, Anderson; Rom 1:26 HarperCollins, Loader); romans (HarperCollins, Loader, Wells); vice-lists (Knust, Hoke, Wells; reading HarperCollins, Loader); jesus (Loader, Zeichmann, HarperCollins); today (Martin, Joosten, Loader, Wells); tradition (Tradition sources, exempt). Second pass 2026-11-25: re-checked every short against #133. Changed: orientation (acts-and-roles clause cut), passages (“A few:” and the list, no frequency word), sodom (“homosexual behavior”; Tushima's dissent out of the short), leviticus (“some scholars question”), women (no “usually”/“only”), vice-lists (“One reading”), jesus (“explicitly”). “most scholars” still appears only as Wells's and Hayes's own words, attributed.",
     }
   dissent-attributed:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Brooten (via Brennan) and Halperin named; Loader's Aristophanes caveat named; Tushima's traditional reading named; Olyan's insertive-partner view and Joosten's married-man proposal named; Wells's minority view on “beds” and his “most academic scholars” named; Instone-Brewer's caution named; Loader's report of scholars who read Rom 1:26 otherwise named.",
+      note: "First pass 2026-11-25: Brooten (via Brennan) and Halperin named; Loader's Aristophanes caveat named; Tushima's traditional reading named; Olyan's insertive-partner view and Joosten's married-man proposal named; Wells's minority view on “beds” and his “most academic scholars” named; Instone-Brewer's caution named; Loader's report of scholars who read Rom 1:26 otherwise named. Second pass 2026-11-25: verified; Halperin's reply now keeps “in his view”; Wells's “in my opinion” kept; Joosten's report of “several Old Testament scholars” cut with the two citations (see uncited).",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: ccc-2357 named as the Catholic Church (the Catechism's own title, as ccc-112); gotquestions-homosexuality as Got Questions Ministries, an evangelical ministry (registry convention); elca-2009-human-sexuality as the Evangelical Lutheran Church in America (its own name); ucc-2005-equal-marriage as the United Church of Christ's General Synod (its own name). None supports what scholars think.",
+      note: "First pass 2026-11-25: ccc-2357 named as the Catholic Church (the Catechism's own title, as ccc-112); gotquestions-homosexuality as Got Questions Ministries, an evangelical ministry (registry convention); elca-2009-human-sexuality as the Evangelical Lutheran Church in America (its own name); ucc-2005-equal-marriage as the United Church of Christ's General Synod (its own name). None supports what scholars think. Second pass 2026-11-25: verified against each page's own name for itself.",
     }
 sources:
   harpercollins-2009-dictionary:
     {
       agent: pass,
       owner: "",
-      note: "Already registered (Reference, 2009). First pass 2026-11-25: entries “homosexuality” and “Sodom” on Bible Odyssey, per-citation urls. The “homosexuality” entry's “(cf. a parallel incident in Judg 1)” is a page error for Judg 19; not quoted.",
+      note: "Already registered (Reference, 2009). First pass 2026-11-25: entries “homosexuality” and “Sodom” on Bible Odyssey, per-citation urls. The “homosexuality” entry's “(cf. a parallel incident in Judg 1)” is a page error for Judg 19; not quoted. Second pass 2026-11-25: verified; both entries' credit line reads “Powell, Mark Allan, ed. HarperCollins Bible Dictionary. Abridged Edition. San Francisco: HarperOne, 2009.”",
     }
   loader-2014-same-sex-relationships:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; HTS Teologiese Studies 70(1), Art. #2114, published 23 May 2014; DOI 10.4102/hts.v70i1.2114. Same author as loader-bo-homosexuality-nt: counted once.",
+      note: "First pass 2026-11-25: Scholarly; HTS Teologiese Studies 70(1), Art. #2114, published 23 May 2014; DOI 10.4102/hts.v70i1.2114. Same author as loader-bo-homosexuality-nt: counted once. Second pass 2026-11-25: verified (Vol 70, No 1 (2014), Art. #2114, published 23 May 2014; author Emeritus Professor in New Testament, Murdoch University); section headings checked against the article TOC.",
     }
   martin-rlst152-l20:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2009; lecture page and title from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-25: Reference; 2009; lecture page and title from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86). Second pass 2026-11-25: verified; course page says recorded Spring 2009.",
     }
   brennan-1997-bmcr-brooten:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; BMCR 1997.05.07. At the edge of the 30-year window; backs only the attributed Brooten view.",
+      note: "First pass 2026-11-25: Scholarly; BMCR 1997.05.07. At the edge of the 30-year window; backs only the attributed Brooten view. Second pass 2026-11-25: verified. BMCR's History page calls it an online “scholarly journal”; its ethics statement commits to “peer review”. Brooten's book (1996) known only through this review: attributed as Brennan's report.",
     }
   halperin-1997-bmcr-response:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; BMCR 1997.12.03, a response letter. Backs only the attributed reply.",
+      note: "First pass 2026-11-25: Scholarly; BMCR 1997.12.03, a response letter. Backs only the attributed reply. Second pass 2026-11-25: verified; byline “David Halperin, Lecturer in Sociology, The university of New South Wales”; the response says the point “pertains … to me”. Flag: a response letter, not shown to be peer-reviewed; kept only for the attributed reply.",
     }
   huber-bo-lgbtq-interpretation:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 22 March 2024. BO bio: Professor of Religious Studies, Elon University; PhD New Testament, Emory 2004.",
+      note: "First pass 2026-11-25: Reference; 22 March 2024. BO bio: Professor of Religious Studies, Elon University; PhD New Testament, Emory 2004. Second pass 2026-11-25: verified.",
     }
   loader-bo-homosexuality-nt:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; page datePublished 12 July 2022. BO bio: Professor Emeritus of New Testament, Murdoch University; research on sexuality in early Judaism and the NT.",
+      note: "First pass 2026-11-25: Reference; page datePublished 12 July 2022. BO bio: Professor Emeritus of New Testament, Murdoch University; research on sexuality in early Judaism and the NT. Second pass 2026-11-25: verified.",
     }
   hayes-rlst145-l6:
     {
       agent: pass,
       owner: "",
-      note: "Already registered (Reference, 2006, Open Yale RLST 145).",
+      note: "Already registered (Reference, 2006, Open Yale RLST 145). Second pass 2026-11-25: verified.",
     }
   stiebert-2002-botswana-hebrew-bible:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; Verbum et Ecclesia 23(1), 2002, University of Pretoria repository. Byline “J Stiebert (University of Botswana)”. Inside the 30-year window. PDF extraction duplicates pages; locators use printed page numbers.",
+      note: "First pass 2026-11-25: Scholarly; Verbum et Ecclesia 23(1), 2002, University of Pretoria repository. Byline “J Stiebert (University of Botswana)”. Inside the 30-year window. PDF extraction duplicates pages; locators use printed page numbers. Second pass 2026-11-25: verified; printed pages confirmed from the page footers. Pronoun removed from the text (no first name or gender on the PDF).",
     }
   joosten-2020-leviticus-18-22:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; Journal of Theological Studies 71.1 (2020), OUP; author's accepted manuscript on ORA; locators are manuscript pages.",
+      note: "First pass 2026-11-25: Scholarly; Journal of Theological Studies 71.1 (2020), OUP; author's accepted manuscript on ORA; locators are manuscript pages. Second pass 2026-11-25: verified against the ORA record (JTS 71(1), 1–10, published 19 March 2020, DOI 10.1093/jts/flaa002).",
     }
   graybill-bo-levites-concubine:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 28 February 2025. BO bio: Professor of Religious Studies, University of Richmond.",
+      note: "First pass 2026-11-25: Reference; 28 February 2025. BO bio: Professor of Religious Studies, University of Richmond. Second pass 2026-11-25: verified.",
     }
   ahern-2018-sin-of-sodom:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; Journal of the History of Sexuality, 2018; author's deposit on Humanities Commons. Author: University of Cambridge.",
+      note: "First pass 2026-11-25: Scholarly; Journal of the History of Sexuality, 2018; author's deposit on Humanities Commons. Author: University of Cambridge. Second pass 2026-11-25: Humanities Commons record gives Journal of the History of Sexuality 27(2): 209–233, University of Texas Press, 2018, and “Pre-copyedited version of article”; registry series, publisher and edition updated to match. Author byline in the deposit: University of Cambridge.",
     }
   tushima-2021-sodom-liminality:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly by venue (Old Testament Essays, peer-reviewed); 2021. Author: Jos ECWA Theological Seminary and UNISA; states a canonical-theological frame. Used only for the dissent, attributed.",
+      note: "First pass 2026-11-25: Scholarly by venue (Old Testament Essays, peer-reviewed); 2021. Author: Jos ECWA Theological Seminary and UNISA; states a canonical-theological frame. Used only for the dissent, attributed. Second pass 2026-11-25: verified (OTE vol. 34 n. 1, 2021, DOI 10.17159/2312-3621/2021/v34n1a6); registry title extended with the page's subtitle “The Quests for Home, Fun and Justice (Gen 19:1-29)”.",
     }
   hayes-rlst145-l9:
     {
       agent: pass,
       owner: "",
-      note: "Already registered (Reference, 2006, Open Yale RLST 145).",
+      note: "Already registered (Reference, 2006, Open Yale RLST 145). Second pass 2026-11-25: verified.",
     }
   coogan-brief-4e-summary-ch8:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2019, 4th ed. (edition per the OUP catalogue check recorded for this textbook's other summaries).",
+      note: "First pass 2026-11-25: Reference; 2019, 4th ed. (edition per the OUP catalogue check recorded for this textbook's other summaries). Second pass 2026-11-25: verified; section heading “The Holiness Code” confirmed on the page.",
     }
   wells-bo-bible-homosexuality:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; page date 14 December 2022 is the site-wide migration date, so year kept null; cites a 2022 article (inside the window). BO bio: professor, Theology and Religious Studies, Saint Joseph’s University.",
+      note: "First pass 2026-11-25: Reference; page date 14 December 2022 is the site-wide migration date, so year kept null; cites a 2022 article (inside the window). BO bio: professor, Theology and Religious Studies, Saint Joseph’s University. Second pass 2026-11-25: verified (bio as above). Flag: year kept null, though other Bible Odyssey entries take their page date (14 December 2022 here) as year; not changed on a guess.",
     }
   instone-brewer-2020-two-types-of-men:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Scholarly; HIPHIL Novum 6(1), 2020, open-access journal. Author: Tyndale House, Cambridge. His own argument, attributed (“argues”).",
+      note: "First pass 2026-11-25: Scholarly; HIPHIL Novum 6(1), 2020, open-access journal. Author: Tyndale House, Cambridge. His own argument, attributed (“argues”). Second pass 2026-11-25: verified; the journal's About page describes double-blind peer review.",
     }
   anderson-er-lesbianism:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; Encyclopedia of Religion 2nd ed., entry signed “Carol S. Anderson (2005)”, on Encyclopedia.com.",
+      note: "First pass 2026-11-25: Reference; Encyclopedia of Religion 2nd ed., entry signed “Carol S. Anderson (2005)”, on Encyclopedia.com. Second pass 2026-11-25: verified.",
     }
   kawashima-bo-abomination-word-study:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2 October 2026. BO bio: associate professor, University of Florida (Religion; Center for Jewish Studies).",
+      note: "First pass 2026-11-25: Reference; 2 October 2026. BO bio: associate professor, University of Florida (Religion; Center for Jewish Studies). Second pass 2026-11-25: verified.",
     }
   jefferson-bo-sexual-purity-leviticus:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 20 June 2017. BO bio: assistant professor of religion, Centre College. Flag: his field is early Christianity and art; cited only for what commentators argue.",
+      note: "First pass 2026-11-25: Reference; 20 June 2017. BO bio: assistant professor of religion, Centre College. Flag: his field is early Christianity and art; cited only for what commentators argue. Second pass 2026-11-25: verified.",
     }
   hoke-bo-sexuality-pauls-letters:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 9 February 2023. BO bio: visiting Assistant Professor, Luther College. The page spells “arsenkoitai”; quoted as written.",
+      note: "First pass 2026-11-25: Reference; 9 February 2023. BO bio: visiting Assistant Professor, Luther College. The page spells “arsenkoitai”; quoted as written. Second pass 2026-11-25: verified.",
     }
   knust-bo-illicit-sex-word-study:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 24 May 2022. BO bio: Professor of Religious Studies, Duke University.",
+      note: "First pass 2026-11-25: Reference; 24 May 2022. BO bio: Professor of Religious Studies, Duke University. Second pass 2026-11-25: verified.",
     }
   zeichmann-bo-centurions-slave:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 3 August 2022. BO bio: teaches at Toronto Metropolitan University. “widespread sense” reports a perception, worded as such in the jesus text.",
+      note: "First pass 2026-11-25: Reference; 3 August 2022. BO bio: teaches at Toronto Metropolitan University. “widespread sense” reports a perception, worded as such in the jesus text. Second pass 2026-11-25: verified. Note: the article is marked “sponsored by SBL Press, the publisher of” Zeichmann's own book on the passage.",
     }
   martin-rlst152-l22:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Reference; 2009; lecture page and title from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86).",
+      note: "First pass 2026-11-25: Reference; 2009; lecture page and title from oyc.yale.edu; introductory course, university-hosted transcript (Reference, #86). Second pass 2026-11-25: verified; course page says recorded Spring 2009.",
     }
   ccc-2357:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Tradition; year not on page; vatican.va __P85.HTM, §§2357–2359. Footnote markers 140–141 dropped from quotes.",
+      note: "First pass 2026-11-25: Tradition; year not on page; vatican.va __P85.HTM, §§2357–2359. Footnote markers 140–141 dropped from quotes. Second pass 2026-11-25: verified.",
     }
   gotquestions-homosexuality:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Tradition (#86); year not on page; self-description on gotquestions.org/about: “Christian, evangelical, theologically conservative, and nondenominational”.",
+      note: "First pass 2026-11-25: Tradition (#86); year not on page; self-description on gotquestions.org/about: “Christian, evangelical, theologically conservative, and nondenominational”. Second pass 2026-11-25: verified.",
     }
   elca-2009-human-sexuality:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Tradition; social statement adopted 19 August 2009, Section IV edits adopted 1 August 2025; the 2025 PDF read. Note marker 30 dropped from tradition/7. The statement presents four positions; the page cites the first and fourth and its own “different conclusions” sentence.",
+      note: "First pass 2026-11-25: Tradition; social statement adopted 19 August 2009, Section IV edits adopted 1 August 2025; the 2025 PDF read. Note marker 30 dropped from tradition/7. The statement presents four positions; the page cites the first and fourth and its own “different conclusions” sentence. Second pass 2026-11-25: verified (adopted 19 August 2009; Section IV edits 1 August 2025, per the PDF's first page); the three locator pages corrected to 20, 20 and 21.",
     }
   ucc-2005-equal-marriage:
     {
       agent: pass,
       owner: "",
-      note: "First pass 2026-11-25: Tradition; General Synod 25 resolution, adopted 4 July 2005; PDF on uccfiles.com, linked from ucc.org. The quote is a WHEREAS clause of the resolution, worded “states” in the text.",
+      note: "First pass 2026-11-25: Tradition; General Synod 25 resolution, adopted 4 July 2005; PDF on uccfiles.com, linked from ucc.org. The quote is a WHEREAS clause of the resolution, worded “states” in the text. Second pass 2026-11-25: verified (“Adopted at the Twenty-fifth General Synod on July 4, 2005”). The first pass's “linked from ucc.org” not re-checked.",
     }
 leads:
   - "Mark Preston Stone, “Don’t Do What to Whom?”, Currents in Biblical Research 20.3 (2022): 207–37: survey of scholarship on Lev 18:22 and 20:13 (cultic and one-partner readings), cited by Wells; closed."
@@ -746,3 +737,4 @@ uncited:
   - "UCC, Paul Sherry, “Now, No Condemnation” (1998 pastoral letter): read; one officer's letter, not a General Synod act."
   - "Melvin L. Otey, Themelios 49.1 (2024): read; The Gospel Coalition's confessional journal, author a law professor and PhD student."
   - "DeGrado, “Temple Prostitute (Word Study)” (Bible Odyssey, 2022): read; never mentions Leviticus, so not cited for the cultic reading."
+  - "Joosten 2020, manuscript p. 3, “Several Old Testament scholars in recent years have argued that Leviticus does not condemn homosexuality as it is understood today.” (was leviticus/8 and today/2): read; cut by the second pass 2026-11-25, because the sentence is followed by “This is no doubt true. But our verse in Leviticus, would still, in its traditional interpretation, prohibit something that is part and parcel of the male homosexual experience.” Quoting the report without that counterpoint drops Joosten's hedge, and the second pass may not add a citation."

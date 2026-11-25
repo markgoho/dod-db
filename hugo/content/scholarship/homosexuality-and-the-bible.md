@@ -13,8 +13,8 @@ statements:
   - id: orientation
     group: "The texts and the modern question"
     question: "Did the biblical writers have a concept of sexual orientation?"
-    short: "Not in the modern sense. Scholars describe the texts as judging sexual acts and roles; whether any ancient writers had an idea like orientation is debated."
-    text: "The HarperCollins Bible Dictionary says homosexuality has no specific equivalent in the Hebrew Old Testament or the Greek New Testament, since the modern concept of sexual orientation was unknown in biblical times, and that whether the few passages on same-sex acts are instances of “homosexuality” remains a matter of dispute. William Loader's article in HTS Teologiese Studies says Paul, with Philo and other Jews of his time, would likely have rejected the categories homosexual and heterosexual, and almost certainly believed that all men were heterosexual. Dale Martin's Yale lectures say that where ancient people opposed sex between men, they assumed one man would be penetrated by another, which disrupted the hierarchy of man over woman. Loader adds that some ancient writers did see what we would call a homosexual orientation as natural, though he calls that belief relatively rare. Bernadette Brooten, as T. Corey Brennan's review reports her, argues against David Halperin that Roman astrological sources show a concept of lifelong erotic orientation; Halperin replied that the ancient evidence does not support her thesis."
+    short: "Not in the modern sense, scholars say. Whether any ancient writers had an idea like orientation is debated."
+    text: "The HarperCollins Bible Dictionary says homosexuality has no specific equivalent in the Hebrew Old Testament or the Greek New Testament, since the modern concept of sexual orientation was unknown in biblical times, and that whether the few passages on same-sex acts are instances of “homosexuality” remains a matter of dispute. William Loader's article in HTS Teologiese Studies says Paul, with Philo and other Jews of his time, would likely have rejected the categories homosexual and heterosexual, and almost certainly believed that all men were heterosexual. Dale Martin's Yale lectures say that where ancient people opposed sex between men, they assumed one man would be penetrated by another, which disrupted the hierarchy of man over woman. Loader adds that Aristophanes's myth in Plato is evidence that some did see what we would call a homosexual orientation as natural, though he calls that belief relatively rare. Bernadette Brooten, as T. Corey Brennan's review reports her, argues against David Halperin that Roman astrological sources show a concept of lifelong erotic orientation; Halperin replied that, in his view, the ancient evidence does not support her thesis."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/homosexuality/"
@@ -43,17 +43,17 @@ statements:
         quote: "Aristophanes’s myth is evidence that some did indeed see what we would call a homosexual orientation as natural, but such belief was relatively rare, and unlikely to find any more assent amongst Jews in general than it did with Philo."
         read: 2026-11-25
       - source: brennan-1997-bmcr-brooten
-        locator: "paragraph on the astrological sources"
+        locator: "paragraph beginning “For the Roman world”"
         quote: "B. also makes a very important point—against David Halperin and others—that “the astrological sources demonstrate the existence in the Roman world of the concept of a lifelong erotic orientation” (p. 140; cf. 242f)."
         read: 2026-11-25
       - source: halperin-1997-bmcr-response
-        locator: "closing paragraph"
+        locator: "paragraph beginning “All this should be cause for some disquiet”, last sentence"
         quote: "So in my view the ancient evidence does not support the thesis that Brooten bases on it."
         read: 2026-11-25
   - id: passages
     group: "The texts and the modern question"
     question: "Which biblical passages address same-sex relations?"
-    short: "Very few. The ones usually discussed are Genesis 19, Leviticus 18:22 and 20:13, Romans 1:26–27, 1 Corinthians 6:9–10 and 1 Timothy 1:9–10."
+    short: "A few: Genesis 19, Leviticus 18:22 and 20:13, Romans 1:26–27, 1 Corinthians 6:9–10 and 1 Timothy 1:9–10."
     text: "Lynn Huber's Bible Odyssey article names Genesis 19:1–11, Leviticus 18:22 and 20:13, Romans 1:26–28, 1 Corinthians 6:9–10 and 1 Timothy 1:9–10 as a collection of passages commonly called the “clobber passages”. The HarperCollins Bible Dictionary says the most explicit Old Testament references are in the Holiness Code of Leviticus, and that the New Testament contains three references to homosexual practice, two of them in lists of vices. William Loader's Bible Odyssey article says there are very few references in the New Testament, all in writings associated with Paul."
     cites:
       - source: huber-bo-lgbtq-interpretation
@@ -77,8 +77,8 @@ statements:
   - id: sodom
     group: "The Hebrew Bible"
     question: "What was the sin of Sodom?"
-    short: "Scholars read Genesis 19 as condemning the threatened gang rape of guests and a breach of hospitality, and trace the view that its sin was same-sex desire to later interpreters. Some still hold that view."
-    text: "Christine Hayes's Yale lectures say the outcry God hears is against the Sodomites' violation of the law of hospitality to strangers and their desire to gang rape them, and that the idea that Sodom's fundamental sin was homosexual behavior is not present in the Hebrew Bible but appears only in later documents. J. Stiebert's article in Verbum et Ecclesia says what is at issue is primarily gang rape and the humiliation of male visitors, in Genesis 19 and the similar story in Judges 19; she reads Ezekiel 16:49 as condemning Sodom for pride, social injustice and lack of hospitality. Jan Joosten's article in the Journal of Theological Studies says the projected sex is condemned because it was not consensual. Rhiannon Graybill's Bible Odyssey article on Judges 19 says the focus is on the failure to show hospitality, with rape threats used to establish dominance over male foreigners. Eoghan Ahern's article in the Journal of the History of Sexuality says studies have shown the homosexual reading of Sodom was an addition of later commentators. The HarperCollins Bible Dictionary records both attempted sexual perversity and gross inhospitality in the story. Cephas Tushima's article in Old Testament Essays notes that others continue to hold the traditional view, and reads Lot's offer of his daughters as a response to the idea of men having sex with men."
+    short: "Scholars read Genesis 19 as condemning the threatened gang rape of guests and a breach of hospitality, and trace the view that Sodom's sin was homosexual behavior to later interpreters."
+    text: "Christine Hayes's Yale lectures say the outcry God hears is against the Sodomites' violation of the law of hospitality to strangers and their desire to gang rape them, and that the idea that Sodom's fundamental sin was homosexual behavior is not present in the Hebrew Bible but appears only in later documents. J. Stiebert's article in Verbum et Ecclesia says what is at issue is primarily gang rape and the humiliation of male visitors, in Genesis 19 and the similar story in Judges 19, and reads Ezekiel 16:49 as condemning Sodom for pride, social injustice and lack of hospitality. Jan Joosten's article in the Journal of Theological Studies says the projected sex is condemned because it was not consensual. Rhiannon Graybill's Bible Odyssey article on Judges 19 says the focus is on the failure to show hospitality, with rape threats used to establish dominance over male foreigners. Eoghan Ahern's article in the Journal of the History of Sexuality says studies have shown the homosexual reading of Sodom was an addition of later commentators. The HarperCollins Bible Dictionary records both attempted sexual perversity and gross inhospitality in the story. Cephas Tushima's article in Old Testament Essays notes that others continue to hold the traditional view, and reads Lot's offer of his daughters as a response to the idea of men having sex with men."
     cites:
       - source: hayes-rlst145-l6
         locator: "ch. 4 [00:25:38]"
@@ -128,8 +128,8 @@ statements:
   - id: leviticus
     group: "The Hebrew Bible"
     question: "What do Leviticus 18:22 and 20:13 prohibit?"
-    short: "Sex between males. The laws have widely been read as a blanket prohibition, but scholars debate what the phrase about lying with a male “as with a woman” covers."
-    text: "The HarperCollins Bible Dictionary says the Holiness Code of Leviticus prohibits a male, under penalty of death, from lying with another male as a woman does. Christine Hayes's Yale lectures and the chapter summary for Coogan and Chapman's textbook place these chapters in the Holiness Code, a distinct source scholars call H; Hayes says Leviticus 18 and 20 list sexual transgressions that defile the land, which will vomit out those who dwell on it. Jan Joosten says 20:13 parallels 18:22 and adds a punishment, that the verse unambiguously addresses sex between males and has widely been interpreted as a blanket prohibition, and that several Old Testament scholars have recently argued that Leviticus does not condemn homosexuality as it is understood today; he reports Saul Olyan's view that the law was originally aimed at the insertive partner, and proposes his own reading, a prohibition of intercourse with a married man. J. Stiebert says what the phrase means, and how far it reaches, is elusive. Bruce Wells's Bible Odyssey article says no one really knows what “the beds of a woman” means and that most scholars have long read it as the act of lying down, a reading he doubts while saying he is in the minority. David Instone-Brewer's article in HIPHIL Novum argues that it is no longer certain that Leviticus condemned all homoerotic activity."
+    short: "Sex between males. The laws have widely been read as a blanket prohibition, but some scholars question what the phrase about lying with a male “as with a woman” covers."
+    text: "The HarperCollins Bible Dictionary says the Holiness Code of Leviticus prohibits a male, under penalty of death, from lying with another male as a woman does. Christine Hayes's Yale lectures and the chapter summary for Coogan and Chapman's textbook place these chapters in the Holiness Code, a distinct source; Hayes says most scholars think it comes from a different priestly school, designated H, and that Leviticus 18 and 20 list sexual transgressions that defile the land, which will vomit out those who dwell on it. Jan Joosten says 20:13 parallels 18:22 and adds a punishment, and that the verse unambiguously addresses sex between males and has widely been interpreted as a blanket prohibition; he reports Saul Olyan's view that the law was originally aimed at the insertive partner, and proposes his own reading, a prohibition of intercourse with a married man. J. Stiebert says what the phrase means, and how far it reaches, is elusive. Bruce Wells's Bible Odyssey article says that in his opinion no one really knows what “the beds of a woman” means and that most scholars have long read it as the act of lying down, a reading he doubts while saying he is in the minority. David Instone-Brewer's article in HIPHIL Novum argues that it is no longer certain that Leviticus condemned all homoerotic activity."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/homosexuality/"
@@ -161,10 +161,6 @@ statements:
         quote: "Lev. 20:13 parallels 18:22 in form and content, the main difference being that while 18:22 simply prohibits a specific acts, adding that it is “an abomination,” 20:13 stipulates a punishment."
         read: 2026-11-25
       - source: joosten-2020-leviticus-18-22
-        locator: "manuscript p. 3"
-        quote: "Several Old Testament scholars in recent years have argued that Leviticus does not condemn homosexuality as it is understood today."
-        read: 2026-11-25
-      - source: joosten-2020-leviticus-18-22
         locator: "manuscript p. 2"
         quote: "Olyan thought the law was originally aimed at the “insertive partner” only."
         read: 2026-11-25
@@ -177,11 +173,11 @@ statements:
         quote: "What precisely “the lying of a woman” means and whether the prohibition should be extended to comprise a comprehensive range of homosexual expressions, is, however, elusive."
         read: 2026-11-25
       - source: wells-bo-bible-homosexuality
-        locator: "paragraph 2"
+        locator: "paragraph beginning “In my opinion”"
         quote: "In my opinion, no one really knows what this means, and so most scholars (for a very long time) have assumed that the word “beds” must refer, here, to the act of lying down rather than the place of lying down, because the word for “bed” comes from the verb “to lie down.”"
         read: 2026-11-25
       - source: wells-bo-bible-homosexuality
-        locator: "paragraph 2"
+        locator: "paragraph beginning “In my opinion”"
         quote: "I happen to think that this is not a very good translation and that we should work on figuring out what “on the beds of a woman” might mean in this context, but I’m in the minority at this point."
         read: 2026-11-25
       - source: instone-brewer-2020-two-types-of-men
@@ -191,8 +187,8 @@ statements:
   - id: women
     group: "The Hebrew Bible"
     question: "Does the Bible address sex between women?"
-    short: "The Hebrew Bible does not mention it. Romans 1:26 is usually read as the Bible's only reference, though some scholars read that verse otherwise."
-    text: "Jan Joosten says Leviticus mentions only male-male intercourse and that the Hebrew Bible has nothing to say about female same-sex relations; J. Stiebert and Carol Anderson's entry in the Encyclopedia of Religion say the same. Robert Kawashima's Bible Odyssey word study suggests this may be because, in such encounters, no one's masculinity is at risk. Lee Jefferson's Bible Odyssey article says the absence has led commentators to argue that the authors were fixated on male nonprocreative intercourse. David Instone-Brewer cautions that the lists in Leviticus are not exhaustive, so it is unsafe to base conclusions on the absence. The HarperCollins Bible Dictionary calls Romans 1:26–27 the only biblical reference to female homosexuality. William Loader's Bible Odyssey article agrees, while noting that some scholars read “unnatural” relations there as birth control or nonprocreative sex between men and women."
+    short: "The Hebrew Bible does not mention it. Romans 1:26 is read as referring to sex between women, though some scholars read that verse otherwise."
+    text: "Jan Joosten says Leviticus mentions only male-male intercourse and that the Hebrew Bible has nothing to say about female same-sex relations; J. Stiebert and Carol Anderson's entry in the Encyclopedia of Religion say the same. Robert Kawashima's Bible Odyssey word study suggests this may be because, in such encounters, no one's masculinity is at risk. Lee Jefferson's Bible Odyssey article says the absence has led commentators to argue that the authors were fixated on male nonprocreative intercourse. David Instone-Brewer cautions that the lists in Leviticus are not exhaustive, so it is unsafe to base conclusions on the absence. The HarperCollins Bible Dictionary calls Romans 1:26–27 the only biblical reference to female homosexuality. William Loader's Bible Odyssey article reads Romans 1:26 as about same-sex relationships between women, while noting that some scholars read “unnatural” relations there as birth control or nonprocreative sex between men and women."
     cites:
       - source: joosten-2020-leviticus-18-22
         locator: "manuscript p. 3"
@@ -231,7 +227,7 @@ statements:
     group: "The New Testament"
     question: "What is Paul doing in Romans 1:26–27?"
     short: "Using same-sex relations, between men and between women, as one example of what follows when people refuse to honour God and turn to idols."
-    text: "The HarperCollins Bible Dictionary calls Romans 1:26–27 the most extensive biblical reference to homosexual acts and says they are mentioned as one example of the perversions that follow when humankind refuses to give glory and thanks to God. William Loader's Bible Odyssey article says Paul chose same-sex relations as his example, and that it represented pagan depravity to him and his readers. Bruce Wells's Bible Odyssey article says Paul does seem to call homosexual behavior by men and women unnatural, but that his main point is to denounce idolatry. On “unnatural”, Loader says that in Paul's world it was unnatural and shameful for a man to take a passive role or a woman an active one; Dale Martin's Yale lectures say it was considered sex “against nature” for a woman to penetrate a man; and Jimmy Hoke's Bible Odyssey article says Paul uses the same phrase Roman writers used to associate such practices with foreign deviance. Loader adds that Paul's concern is not only pederasty but also consensual sex."
+    text: "The HarperCollins Bible Dictionary calls Romans 1:26–27 the most extensive biblical reference to homosexual acts and says they are mentioned as one example of the perversions that follow when humankind refuses to give glory and thanks to God. William Loader's Bible Odyssey article says Paul chose same-sex relations as his example, and that it represented pagan depravity to him and his readers. Bruce Wells's Bible Odyssey article says Paul does seem to call homosexual behavior by men and women unnatural, but that his main point is to denounce idolatry. On “unnatural”, Loader says that in Paul's world it was unnatural and shameful for a man to take a passive role or a woman an active one, and Jimmy Hoke's Bible Odyssey article says Paul uses the same phrase Roman writers used to associate such practices with foreign deviance. Dale Martin's Yale lectures, on ancient sexual hierarchy generally, say that in ancient Judaism and Christianity it was considered sex “against nature” for a woman to penetrate a man. Loader adds that Paul's concern is not only pederasty but also consensual sex."
     cites:
       - source: harpercollins-2009-dictionary
         url: "https://www.bibleodyssey.org/dictionary/homosexuality/"
@@ -265,15 +261,15 @@ statements:
   - id: vice-lists
     group: "The New Testament"
     question: "What do the Greek words in 1 Corinthians 6:9 and 1 Timothy 1:10 mean?"
-    short: "Scholars are divided. A common reading takes malakoi and arsenokoitai as the passive and active partners in sex between men, but the exact meaning of arsenokoitai is uncertain."
-    text: "Jennifer Knust's Bible Odyssey word study says Paul is the first writer in Greek literature to use arsenokoitai, which makes it hard to translate. One proposal is that the Septuagint wording of Leviticus 18:22 and 20:13 inspired the coinage; she finds neither leading explanation satisfactory and says scholars remain divided, and notes that the NRSVue renders it “men who engage in illicit sex” with a footnote that the meaning of the Greek is uncertain. The HarperCollins Bible Dictionary says malakoi literally means “soft”, a word sometimes used of the passive partner in sex between men, and that arsenokoitai means one who lies with a male, taking the active role; William Loader's Bible Odyssey article gives the same reading with a “probably”. Jimmy Hoke's Bible Odyssey article says scholars disagree on exactly what these terms refer to, and Bruce Wells's says scholars debate whether Paul means primarily pederasty or all homosexual behavior."
+    short: "Scholars are divided. One reading takes malakoi and arsenokoitai as the passive and active partners in sex between men, but the exact meaning of arsenokoitai is uncertain."
+    text: "Jennifer Knust's Bible Odyssey word study says Paul is the first writer in Greek literature to use arsenokoitai, which makes it hard to translate. One proposal is that the Septuagint wording of Leviticus 18:22 and 20:13 inspired the coinage; she finds neither leading explanation satisfactory and says scholars remain divided, and notes that the NRSVue renders it “men who engage in illicit sex” with a footnote that the meaning of the Greek is uncertain. The HarperCollins Bible Dictionary says the noun after “adulterers” in 1 Corinthians 6:9 literally means “soft”, a word sometimes used of the passive partner in sex between men, and that the next word means one who lies with a male, taking the active role; William Loader's Bible Odyssey article gives the same reading with a “probably”. Jimmy Hoke's Bible Odyssey article says scholars disagree on exactly what these terms refer to, and Bruce Wells's says scholars debate whether Paul means primarily pederasty or all homosexual behavior."
     cites:
       - source: knust-bo-illicit-sex-word-study
         locator: "paragraph beginning “In 1 Cor 6:9-10”"
         quote: "Paul is the first writer in Greek literature to employ this term (see also 1 Tim 1:10), which makes it especially challenging to translate."
         read: 2026-11-25
       - source: knust-bo-illicit-sex-word-study
-        locator: "paragraph beginning “Scholars have offered several proposals”"
+        locator: "paragraph “a.”, under “How has arsenokoitai been translated?”"
         quote: "The Septuagint phrasing of Lev 18:22 and Lev 20:13 inspired Paul (or someone else) to coin the term."
         read: 2026-11-25
       - source: knust-bo-illicit-sex-word-study
@@ -304,7 +300,7 @@ statements:
   - id: jesus
     group: "The New Testament"
     question: "Does Jesus say anything about same-sex relations?"
-    short: "No saying of Jesus addresses it. The New Testament's references are in letters associated with Paul."
+    short: "No saying of Jesus explicitly addresses it. The New Testament's references are in letters associated with Paul."
     text: "William Loader's Bible Odyssey article says the New Testament's few references are found only in writings associated with Paul, and that elsewhere one looks in vain or has to settle for speculation. Christopher Zeichmann's Bible Odyssey article describes a widespread sense that Jesus said nothing about same-sex romantic relationships, either way, and notes that readings of the centurion's slave in Matthew and Luke as such a relationship have been controversial. The three New Testament references the HarperCollins Bible Dictionary counts are in Romans, 1 Corinthians and 1 Timothy."
     cites:
       - source: loader-bo-homosexuality-nt
@@ -328,15 +324,11 @@ statements:
     group: "Reading the texts today"
     question: "Do scholars agree on what these texts mean for same-sex relationships today?"
     short: "No. Scholars disagree about whether the texts' condemnations speak to the same-sex relationships of today."
-    text: "Dale Martin's Yale lectures say some readers take Romans 1 as a condemnation of modern homosexuality and believe that is a sound historical reading, while others, using the same historical-critical methods, say homosexuality is not Paul's concern. Jan Joosten says several Old Testament scholars have recently argued that Leviticus does not condemn homosexuality as it is understood today. William Loader's HTS article reports that Robert Gagnon, as do many in current debates, distinguishes homosexual orientation from the act and argues that Paul's focus is the act; Loader himself holds that Paul believed all men were heterosexual. Bruce Wells calls Gagnon's 2001 book the older, more conservative view and says the more progressive views of Jennifer Knust's and Michael Coogan's books are accepted by most academic scholars today."
+    text: "Dale Martin's Yale lectures say some readers take Romans 1 as a condemnation of modern homosexuality and believe that is a sound historical reading, while others, using the same historical-critical methods, say homosexuality is not Paul's concern. William Loader's HTS article reports that Robert Gagnon, as do many in current debates, distinguishes homosexual orientation from the act and argues that Paul's focus is the act. Bruce Wells calls Gagnon's 2001 book the older, more conservative view and says the more progressive views of Jennifer Knust's and Michael Coogan's books are accepted by most academic scholars today."
     cites:
       - source: martin-rlst152-l22
         locator: "ch. 2 [00:20:11]"
         quote: "So you've got some people reading Romans 1 as a condemnation of modern homosexuality and thinking they're doing a good historical reading of this text. You've got other people who read the same text, using the same methods of historical criticism, and say, are you crazy? He's not talking about homosexuality, that's not his concern."
-        read: 2026-11-25
-      - source: joosten-2020-leviticus-18-22
-        locator: "manuscript p. 3"
-        quote: "Several Old Testament scholars in recent years have argued that Leviticus does not condemn homosexuality as it is understood today."
         read: 2026-11-25
       - source: loader-2014-same-sex-relationships
         locator: "section “Recent interpretations”"
@@ -377,15 +369,15 @@ statements:
         quote: "When examining what the Bible says about homosexuality, it is important to distinguish between homosexual behavior and homosexual inclinations or attractions."
         read: 2026-11-25
       - source: elca-2009-human-sexuality
-        locator: "Section IV, “Sex, gender, and sexuality in marriage”, p. 19"
+        locator: "Section IV, “Sex, gender, and sexuality in marriage”, p. 20"
         quote: "faithful people can and will come to different conclusions about the meaning of Scripture"
         read: 2026-11-25
       - source: elca-2009-human-sexuality
-        locator: "Section IV, p. 19"
+        locator: "Section IV, p. 20"
         quote: "some are convinced that same-gender sexual behavior is sinful, contrary to biblical teaching and their understanding of natural law."
         read: 2026-11-25
       - source: elca-2009-human-sexuality
-        locator: "Section IV, p. 20"
+        locator: "Section IV, p. 21"
         quote: "some are convinced that the scriptural witness does not address the context of sexual orientation and committed relationships that we experience today."
         read: 2026-11-25
       - source: ucc-2005-equal-marriage
