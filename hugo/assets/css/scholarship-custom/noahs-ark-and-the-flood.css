@@ -72,6 +72,16 @@
   text-wrap: balance;
 }
 
+.noah-comic__legend {
+  font-size: var(--step--2);
+  line-height: var(--line-height-tight);
+}
+
+.noah-comic__legend-bolt {
+  color: var(--noah-amber);
+  -webkit-text-stroke: 1px var(--noah-ink);
+}
+
 .noah-comic__key {
   font-size: var(--step--1);
   font-weight: var(--font-weight-bold);
@@ -138,12 +148,20 @@
   position: absolute;
 }
 
-.noah-comic__half--left {
+.noah-comic__art--bolt > .noah-comic__half--left {
   clip-path: polygon(0 0, 57% 0, 45% 40%, 58% 52%, 43% 100%, 0 100%);
 }
 
-.noah-comic__half--right {
+.noah-comic__art--bolt > .noah-comic__half--right {
   clip-path: polygon(57% 0, 100% 0, 100% 100%, 43% 100%, 58% 52%, 45% 40%);
+}
+
+.noah-comic__art--gutter > .noah-comic__half--left {
+  clip-path: inset(0 50% 0 0);
+}
+
+.noah-comic__art--gutter > .noah-comic__half--right {
+  clip-path: inset(0 0 0 50%);
 }
 
 .noah-comic__half > img {
@@ -179,6 +197,30 @@
   stroke: var(--noah-amber);
   stroke-width: 5px;
   vector-effect: non-scaling-stroke;
+}
+
+/* The neutral split: a straight ink gutter with a ≠ roundel at its centre. */
+.noah-comic__gutter {
+  background: var(--noah-ink);
+  display: grid;
+  inline-size: var(--noah-frame);
+  inset: 0 auto 0 calc(50% - var(--noah-frame) / 2);
+  place-items: center;
+  position: absolute;
+}
+
+.noah-comic__vs {
+  aspect-ratio: 1;
+  background: var(--noah-paper);
+  border: 3px solid var(--noah-ink);
+  border-radius: 50%;
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: var(--step-1);
+  font-weight: var(--font-weight-boldest);
+  inline-size: 2.2em;
+  line-height: 1;
+  place-items: center;
 }
 
 /* Narration label, flush in the panel's top-left corner. */
@@ -344,6 +386,15 @@
   max-inline-size: none;
 }
 
+/* A little wider than 4:3, so the count bands fit on the canvas. */
+.scholarship-share:target .noah-comic__art {
+  aspect-ratio: 3 / 2;
+}
+
+.scholarship-share:target .noah-comic__head {
+  gap: 0;
+}
+
 .scholarship-share:target .noah-comic__caption {
   padding: var(--space-3xs) var(--space-2xs);
 }
@@ -364,7 +415,7 @@
 }
 
 .scholarship-share:has(#share-card:target)
-  :is(.noah-comic__kicker, .noah-comic__key) {
+  :is(.noah-comic__kicker, .noah-comic__key, .noah-comic__legend) {
   display: none;
 }
 

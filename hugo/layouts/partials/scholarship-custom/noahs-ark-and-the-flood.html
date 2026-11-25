@@ -6,10 +6,12 @@
 
   A view of the page's reviewed statement `sources` (text and cites 1, 3, 5,
   7, 9, 10, 11, 13) and, for the mountains in panel 4, `ararat`; it makes no
-  claim they don't. Panels 1 and 4 carry the J and P badges, because the
-  statement ties the seven clean pairs to the telling with Noah's sacrifice
-  and "two of each" to the priestly one. Panels 2 and 3 carry none: the page
-  says these are told twice, not which telling has which.
+  claim they don't. Panels 1 and 4 are split by a lightning bolt and carry
+  the J and P badges, because the statement ties the seven clean pairs to
+  the telling with Noah's sacrifice and "two of each" to the priestly one.
+  Panels 2 and 3 are split by a plain gutter with no badges: the page says
+  these verses disagree, not which telling has which, and the same bolt
+  would assign them by position.
 
   The art is generated with Gemini from
   data/scholarship-illustrations/noahs-ark-and-the-flood.yaml. The P half
@@ -99,6 +101,10 @@
         <span class="noah-comic__badge noah-comic__badge--j">J</span> the other,
         which names God Yahweh
       </p>
+      <p class="noah-comic__legend">
+        <span class="noah-comic__legend-bolt" aria-hidden="true">⚡</span>
+        splits the two tellings; a straight line, two verses that disagree.
+      </p>
     </header>
     <ol class="noah-comic__strip">
       {{- range $panels }}
@@ -106,19 +112,28 @@
           class="noah-comic__frame noah-comic__frame--{{ .id }}"
           {{ if in (slice "flood" "birds") .id }}data-card-hide{{ end }}>
           <figure class="noah-comic__figure">
-            <div class="noah-comic__art">
+            {{- $assigned := in (slice "board" "after") .id }}
+            <div
+              class="noah-comic__art noah-comic__art--{{ cond $assigned "bolt" "gutter" }}">
               {{ partial "inline/noah-half.html" (merge .left (dict "side" "left")) }}
               {{ partial "inline/noah-half.html" (merge .right (dict "side" "right")) }}
-              {{/* The lightning bolt between the two tellings. */}}
-              <svg
-                class="noah-comic__bolt"
-                viewBox="0 0 100 100"
-                preserveAspectRatio="none"
-                aria-hidden="true"
-                focusable="false">
-                <polyline points="57,0 45,40 58,52 43,100" />
-                <polyline points="57,0 45,40 58,52 43,100" />
-              </svg>
+              {{- if $assigned }}
+                {{/* A lightning bolt: the page assigns these halves to the two tellings. */}}
+                <svg
+                  class="noah-comic__bolt"
+                  viewBox="0 0 100 100"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                  focusable="false">
+                  <polyline points="57,0 45,40 58,52 43,100" />
+                  <polyline points="57,0 45,40 58,52 43,100" />
+                </svg>
+              {{- else }}
+                {{/* A plain gutter: two verses that disagree, assigned to neither telling. */}}
+                <span class="noah-comic__gutter" aria-hidden="true">
+                  <span class="noah-comic__vs">≠</span>
+                </span>
+              {{- end }}
             </div>
             <h3 class="noah-comic__box">{{ .box }}</h3>
             <figcaption class="noah-comic__caption">
@@ -234,8 +249,9 @@
                   </div>
                 </div>
                 <p class="noah-comic__note">
-                  By one view, the clean pairs were for this sacrifice. The
-                  priestly telling has none: sacrifice is for priests.
+                  By one view, the clean pairs are for this sacrifice; the
+                  priestly telling has none, since sacrifice was the priests’
+                  role.
                 </p>
               {{- end }}
             </figcaption>
