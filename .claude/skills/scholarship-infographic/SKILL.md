@@ -11,12 +11,12 @@ It is a **picture first**. The drawing carries the relation; the words caption i
 
 One source, two forms. On the page it is a live, responsive block. At `#share` the same block becomes a **poster**: a fixed 4:5 canvas (1080 by 1350) with the page title above and a credit below, which a script photographs to a PNG. At `#share-card` it becomes the **card**: a 1200 by 630 view of the lead part, which is the picture a social site shows when someone shares the page's link.
 
-Worked examples, read all four before building. The first two are the bar to meet; the last two predate raster art and show how exact marks are built. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
+Worked examples, read all four before building. The first three are the bar to meet; the last predates raster art and shows how exact marks are built. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
 
 - `noahs-ark-and-the-flood`: the best example of the default form below. Four chronological panels, each split by a lightning bolt into the two tellings, with art on both halves and each half's number or label set on the art as a plate.
 - `homosexuality-and-the-bible`: the default form with one scene per panel: four Gemini-drawn panels with people in them, each panel's words and scripture tags on a plate in a clear corner of its art. Read it for the illustration manifest, chained reference images, and a plate holding many tags.
+- `the-creation-stories-in-genesis`: the default form for a two-sided comparison where order matters. Every panel is bolt-split, Genesis 1 against Genesis 2. The sequence ("Humans last" / "The man first") sits on the plates, because the art can't assert an order. God appears only as light on one side and only as hands on the other, so the art keeps the page's contrast. Read it for 1/2 badges with the source hedge in the legend, and for regenerating art to clear the bolt.
 - `pauline-authorship`: exact marks. A pictogram: one drawn scroll per letter, the seal on each scroll is its group's verdict. Read it for how a drawing is made once and reused, sized by one unit, and re-laid out for the poster and the card.
-- `the-creation-stories-in-genesis`: a two-sided comparison as a table, with lines tracing each thing between the sides. Read it for table semantics and scripture links.
 
 ## The default form: an illustrated comic page
 
@@ -100,7 +100,7 @@ Before writing markup, list each label, note, glyph and encoding with its source
 - Things the statements treat as one group look identical; a visual difference is a claim.
 - A drawing shows only what a statement says happened: a line that stops claims an ending.
 - Where sources differ (verse ranges, dates), use the `short`'s version.
-- Scripture appears as a linked reference, in the Creation example's link form. The page quotes scholars, so the infographic cites verses and leaves their text to the link.
+- Scripture appears as a linked reference, in the comic examples' link form (a BibleGateway NRSVUE link as an ink chip). The page quotes scholars, so the infographic cites verses and leaves their text to the link.
 - A claim that only one cited author makes stays in the answer below, attributed there.
 - Generated art is traced too. Every figure and prop in it is either something a statement supports or neutral setting (a wall, a desk). An illustration of what a statement names (a same-sex couple for "the modern concept of sexual orientation") is fine; an invented detail that reads as evidence (a tablet the scribe is comparing against) is not.
 - A caveat in the statement that the infographic drops goes in the report, so the owner can decide.
