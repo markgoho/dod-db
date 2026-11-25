@@ -22,6 +22,7 @@
     "scholarship:checklist": "bun run src/hugo/scholarship-checklist.ts",
     "scholarship:infographic": "bun run src/hugo/render-scholarship-infographic.ts",
     "scholarship:question-cards": "bun run src/hugo/render-question-cards.ts",
+    "scholarship:illustrations": "bun run src/scripts/generate-scholarship-illustrations.ts",
     "generate:tag-index": "bun run src/hugo/generate-tag-episode-index.ts",
     "generate:book-index": "bun run src/hugo/generate-book-episode-index.ts",
     "generate:scholarship-scripture": "bun run src/hugo/scholarship-scripture-links.ts",

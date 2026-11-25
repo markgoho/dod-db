@@ -1,16 +1,24 @@
 {{- /*
   Custom block for /scholarship/homosexuality-and-the-bible/: a four-panel
-  comic. A modern reader holds up the word "homosexuality"; an ancient scribe
-  meets the same card with a question mark; the scribe's own writing speaks
-  of same-sex acts in only a few passages; two modern scholars dispute an
-  ancient star chart. A view of the page's reviewed statements (`orientation`
-  and its cites 1, 2, 7 and 8; `passages`); it makes no claim they don't.
-  Reword a caption only when the statement it comes from is re-reviewed.
+  comic page. A present-day reader holds up the word "homosexuality"; an
+  ancient scribe meets the same card, puzzled; the scribe's long scroll marks
+  only a few passages; two present-day scholars disagree over an ancient star
+  chart. A view of the page's reviewed statements (`orientation` and its cites
+  1, 2, 7 and 8; `passages`); it makes no claim they don't. Reword a caption
+  only when the statement it comes from is re-reviewed.
 
-  The card is drawn once and appears in panels 1 and 2, so it is visibly the
-  same idea carried across time. The scribe is drawn once and appears in
-  panels 2 and 3. The scholars are generic figures, not portraits.
+  The art is generated with Gemini from
+  data/scholarship-illustrations/homosexuality-and-the-bible.yaml (no words in
+  it except the one on the card); every caption, link and claim lives here.
+  The comic furniture (title lettering, gutters, narration boxes) is CSS.
   */
+-}}
+{{- $slug := "homosexuality-and-the-bible" -}}
+{{- $alt := dict
+  "today" "A present-day reader holds up an index card reading “homosexuality”."
+  "then" "An ancient scribe studies the same card, puzzled, with a question mark above him."
+  "texts" "The same scribe writes on a very long scroll; only a few short passages on it are marked."
+  "debate" "Two present-day scholars disagree over an ancient star chart: one points eagerly, the other frowns, arms crossed."
 -}}
 {{- $bg := "https://www.biblegateway.com/passage/?version=NRSVUE&search=" -}}
 {{- $passages := slice
@@ -21,6 +29,12 @@
   (dict "ref" "1 Corinthians 6:9–10" "lang" "gr")
   (dict "ref" "1 Timothy 1:9–10" "lang" "gr")
 -}}
+{{- $frames := slice
+  (dict "id" "today" "box" "Today" "caption" "The modern concept of sexual orientation has a word.")
+  (dict "id" "then" "box" "Meanwhile, in biblical times…" "caption" "Unknown then: no specific equivalent in the Hebrew or the Greek.")
+  (dict "id" "texts" "box" "What the texts speak of" "caption" "A few passages speak of same-sex acts.")
+  (dict "id" "debate" "box" "Scholars today" "caption" "Whether any ancient writers had an idea like orientation is debated.")
+-}}
 <section class="cloud-section hsx-comic">
   <h2
     class="type-section-title cloud-section__title"
@@ -28,200 +42,53 @@
     data-share-hide>
     At a glance
   </h2>
-  <svg class="hsx-defs" aria-hidden="true" focusable="false">
-    <defs>
-      {{/* The word, on an index card. */}}
-      <g id="hsx-card">
-        <rect class="hsx-ink" x="6" y="6" width="112" height="70" rx="2" />
-        <rect class="hsx-paper" x="0" y="0" width="112" height="70" rx="2" />
-        <path class="hsx-rule" d="M0 18h112" />
-        <text class="hsx-card__word" x="56" y="40">homosexuality</text>
-        <text class="hsx-card__gloss" x="56" y="56">sexual orientation</text>
-      </g>
-      {{/* The scribe: headcloth, beard, robe. Faces right. */}}
-      <g id="hsx-scribe">
-        <path
-          class="hsx-rust"
-          d="M14 180C14 140 38 122 80 119C122 122 146 140 146 180Z" />
-        <path class="hsx-line" d="M64 121L80 146L96 121" />
-        <rect class="hsx-paper" x="70" y="100" width="20" height="24" />
-        <ellipse class="hsx-paper" cx="82" cy="78" rx="25" ry="29" />
-        <path
-          class="hsx-amber"
-          d="M55 80C52 48 70 38 84 38C102 38 116 48 112 82L120 120L104 118C107 100 108 90 106 72C96 64 70 64 60 72C58 90 60 100 62 118L46 120Z" />
-        <path class="hsx-line" d="M60 72C70 64 96 64 106 72" />
-        <path
-          class="hsx-ink"
-          d="M60 86C62 116 76 124 83 124C92 124 106 116 106 86C100 98 90 101 83 101C76 101 66 98 60 86Z" />
-        <path class="hsx-paper-line" d="M76 108Q83 104 90 108" />
-      </g>
-      {{/* A scholar's head and shoulders, glasses on. Faces right. */}}
-      <g id="hsx-scholar">
-        <path
-          class="hsx-amber"
-          d="M10 180C10 142 32 126 66 123C100 126 122 142 122 180Z" />
-        <path class="hsx-line" d="M52 124L66 140L80 124" />
-        <rect class="hsx-paper" x="56" y="104" width="20" height="22" />
-        <ellipse class="hsx-paper" cx="68" cy="82" rx="24" ry="28" />
-        <circle class="hsx-lens" cx="66" cy="82" r="8" />
-        <circle class="hsx-lens" cx="86" cy="82" r="8" />
-        <path class="hsx-line" d="M74 82h4M58 80L46 76" />
-      </g>
-    </defs>
-  </svg>
-  <div class="hsx-comic__panel panel">
-    <p class="hsx-comic__claim">
+  <div class="hsx-comic__page">
+    <p class="hsx-comic__title">
       The Bible’s Hebrew and Greek have no specific word for homosexuality.
     </p>
     <ol class="hsx-comic__strip">
-      <li class="hsx-comic__frame hsx-comic__frame--today">
-        <h3 class="hsx-comic__label">Today</h3>
-        <svg
-          class="hsx-comic__art"
-          viewBox="0 0 240 180"
-          aria-hidden="true"
-          focusable="false">
-          {{/* A modern reader holds the card up. */}}
-          <path
-            class="hsx-rust"
-            d="M22 180C22 142 44 126 78 123C112 126 134 142 134 180Z" />
-          <rect class="hsx-paper" x="68" y="102" width="20" height="24" />
-          <ellipse class="hsx-paper" cx="78" cy="80" rx="25" ry="29" />
-          <path
-            class="hsx-ink"
-            d="M52 82C48 52 64 44 80 45C98 45 108 56 104 80C99 68 92 62 80 63C70 62 59 68 52 82Z" />
-          <circle class="hsx-dot" cx="72" cy="84" r="3" />
-          <circle class="hsx-dot" cx="90" cy="84" r="3" />
-          <path class="hsx-line" d="M73 98Q81 104 89 98" />
-          <path class="hsx-arm" d="M114 152C124 136 126 120 124 106" />
-          <path class="hsx-sleeve" d="M114 152C124 136 126 120 124 106" />
-          <g transform="translate(116 30) rotate(-6)">
-            <use href="#hsx-card" />
-          </g>
-          <circle class="hsx-paper" cx="124" cy="104" r="9" />
-        </svg>
-        <p class="hsx-comic__caption">
-          The modern concept of sexual orientation
-        </p>
-      </li>
-      <li class="hsx-comic__frame hsx-comic__frame--then">
-        <h3 class="hsx-comic__label">Biblical times</h3>
-        <svg
-          class="hsx-comic__art"
-          viewBox="0 0 240 180"
-          aria-hidden="true"
-          focusable="false">
-          <use href="#hsx-scribe" />
-          {{/* Brows raised, eyes on the card. */}}
-          <circle class="hsx-dot" cx="80" cy="80" r="3" />
-          <circle class="hsx-dot" cx="98" cy="80" r="3" />
-          <path class="hsx-line" d="M72 70Q80 64 86 70M92 68Q99 62 106 68" />
-          <circle class="hsx-paper" cx="124" cy="62" r="4" />
-          <circle class="hsx-paper" cx="136" cy="48" r="7" />
-          <ellipse class="hsx-paper" cx="178" cy="32" rx="34" ry="26" />
-          <text class="hsx-comic__mark" x="178" y="46">?</text>
-          <g transform="translate(134 88) rotate(12) scale(0.78)">
-            <use href="#hsx-card" />
-          </g>
-          <path class="hsx-motion" d="M126 132l-12 4M128 144l-12 2" />
-        </svg>
-        <p class="hsx-comic__caption">
-          Unknown in biblical times: no specific equivalent in the Hebrew or the
-          Greek
-        </p>
-      </li>
-      <li class="hsx-comic__frame hsx-comic__frame--texts" data-card-hide>
-        <h3 class="hsx-comic__label">What the texts speak of</h3>
-        <svg
-          class="hsx-comic__art"
-          viewBox="0 0 240 180"
-          aria-hidden="true"
-          focusable="false">
-          {{/* A long sheet of writing; only a few lines are marked. */}}
-          <rect class="hsx-ink" x="118" y="14" width="112" height="166" />
-          <rect class="hsx-paper" x="112" y="8" width="112" height="166" />
-          {{- range $i := seq 0 13 }}
-            {{- $y := add 22 (mul $i 11) }}
-            {{- $marked := in (slice 2 4 5 8 10 11) $i }}
-            <path
-              class="{{ if $marked }}
-                hsx-mark
-              {{ else }}
-                hsx-text-line
-              {{ end }}"
-              d="M124 {{ $y }}h{{ if eq (mod $i 3) 2 }}
-                64
-              {{ else }}
-                88
-              {{ end }}" />
+      {{- range $i, $f := $frames }}
+        {{- $img := resources.Get (printf "scholarship-art/%s/%s.png" $slug $f.id) }}
+        <li
+          class="hsx-comic__frame hsx-comic__frame--{{ $f.id }}"
+          {{ if ge $i 2 }}data-card-hide{{ end }}>
+          <figure class="hsx-comic__figure">
+            <div class="hsx-comic__art">
+              {{- with $img }}
+                {{- $webp := .Process "resize 1200x webp q78" }}
+                <img
+                  src="{{ $webp.RelPermalink }}"
+                  width="{{ $webp.Width }}"
+                  height="{{ $webp.Height }}"
+                  alt="{{ index $alt $f.id }}"
+                  loading="eager" />
+              {{- end }}
+            </div>
+            <h3 class="hsx-comic__box">{{ $f.box }}</h3>
+            <figcaption class="hsx-comic__caption">
+              {{ $f.caption }}
+            </figcaption>
+          </figure>
+          {{- if eq $f.id "texts" }}
+            <ul class="hsx-comic__refs">
+              {{- range $passages }}
+                <li class="hsx-comic__ref hsx-comic__ref--{{ .lang }}">
+                  <a
+                    href="{{ printf "%s%s" $bg (urlquery .ref) | safeURL }}"
+                    rel="noopener"
+                    >{{ replace .ref " " "&nbsp;" | safeHTML }}</a
+                  >
+                </li>
+              {{- end }}
+            </ul>
           {{- end }}
-          <g transform="translate(-10 0)">
-            <use href="#hsx-scribe" />
-          </g>
-          <circle class="hsx-dot" cx="70" cy="80" r="3" />
-          <circle class="hsx-dot" cx="88" cy="80" r="3" />
-          <path class="hsx-pen" d="M150 70L122 124" />
-          <circle class="hsx-paper" cx="122" cy="126" r="9" />
-        </svg>
-        <p class="hsx-comic__caption">A few passages speak of same-sex acts</p>
-        <ul class="hsx-comic__refs">
-          {{- range $passages }}
-            <li class="hsx-comic__ref hsx-comic__ref--{{ .lang }}">
-              <a
-                href="{{ printf "%s%s" $bg (urlquery .ref) | safeURL }}"
-                rel="noopener"
-                >{{ replace .ref " " "&nbsp;" | safeHTML }}</a
-              >
-            </li>
-          {{- end }}
-        </ul>
-      </li>
-      <li class="hsx-comic__frame hsx-comic__frame--debate" data-card-hide>
-        <h3 class="hsx-comic__label">Scholars today</h3>
-        <svg
-          class="hsx-comic__art"
-          viewBox="0 0 240 180"
-          aria-hidden="true"
-          focusable="false">
-          {{/* Left scholar points at an ancient star chart; right one is unconvinced. */}}
-          <g transform="translate(-14 0)">
-            <use href="#hsx-scholar" />
-            <path
-              class="hsx-ink"
-              d="M44 70C40 48 56 40 70 42C88 42 96 54 94 70C84 60 56 58 44 70Z" />
-            <circle class="hsx-ink" cx="50" cy="52" r="11" />
-            <path class="hsx-line" d="M70 98Q78 106 86 98" />
-          </g>
-          <g transform="translate(254 0) scale(-1 1)">
-            <use href="#hsx-scholar" />
-            <path
-              class="hsx-ink"
-              d="M44 72C42 52 56 46 70 46C86 46 94 56 92 72C84 64 54 62 44 72Z" />
-            <path class="hsx-line" d="M70 104Q78 98 86 104" />
-            <path class="hsx-line" d="M60 68l12 3M80 71l12-3" />
-          </g>
-          <circle class="hsx-chart" cx="120" cy="132" r="34" />
-          <circle class="hsx-line" cx="120" cy="132" r="18" />
-          <path
-            class="hsx-line"
-            d="M120 98v68M86 132h68M96 108l48 48M144 108l-48 48" />
-          <path
-            class="hsx-star"
-            d="M120 126l2 4 4 1-3 3 1 4-4-2-4 2 1-4-3-3 4-1z" />
-          <ellipse class="hsx-paper" cx="40" cy="22" rx="16" ry="14" />
-          <text class="hsx-comic__mark hsx-comic__mark--small" x="40" y="30">
-            !
-          </text>
-          <ellipse class="hsx-paper" cx="200" cy="22" rx="16" ry="14" />
-          <text class="hsx-comic__mark hsx-comic__mark--small" x="200" y="30">
-            ?
-          </text>
-        </svg>
-        <p class="hsx-comic__caption">
-          Whether any ancient writers had an idea like orientation is debated
-        </p>
-      </li>
+        </li>
+      {{- end }}
     </ol>
+    <p class="hsx-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
     <p class="hsx-comic__more scholarship-meta" data-share-hide>
       Every line here comes from the cited answers below:
       <a href="#orientation"

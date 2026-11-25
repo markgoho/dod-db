@@ -1,0 +1,54 @@
+# Illustrations for /scholarship/homosexuality-and-the-bible/ (generated with
+# Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each picture
+# shows only what the listed statements support; every caption, link and
+# claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+slug: homosexuality-and-the-bible
+images:
+  - id: today
+    statements: [orientation]
+    aspect: "4:3"
+    alt: "A present-day reader holds up an index card reading “homosexuality”."
+    prompt: >-
+      A present-day young adult reader, friendly expression, casual sweater,
+      shown from the waist up, holding up a plain white index card at shoulder
+      height toward the right of the frame, as if presenting a word. The card
+      has a single thin red rule near its top and one word printed on it in
+      bold black lowercase letters: homosexuality. Behind the reader, a hint
+      of a modern bookshelf.
+  - id: then
+    statements: [orientation]
+    aspect: "4:3"
+    refs: [today]
+    alt: "An ancient scribe in a headcloth studies the same card, puzzled, with a question mark above him."
+    prompt: >-
+      An ancient Near Eastern scribe, bearded, wearing a simple headcloth and a
+      plain robe, shown from the waist up, holding the SAME index card as in
+      the reference image (white, thin red rule, the one word homosexuality)
+      in both hands and studying it with raised eyebrows, clearly puzzled. He
+      holds nothing else: no tablet, scroll or other object in his hands. A comic thought
+      bubble above his head contains only a large question mark. Behind him,
+      a mud-brick wall and a clay oil lamp.
+  - id: texts
+    statements: [passages]
+    aspect: "4:3"
+    refs: [then]
+    alt: "The same scribe writes on a very long scroll; only a few short passages on it are marked."
+    prompt: >-
+      The SAME scribe as in the reference image (same face, beard, headcloth
+      and robe), seated at a low wooden writing table, writing with a reed
+      pen on a very long scroll that unrolls across the table and spills off
+      both sides. The scroll is covered in rows of tiny illegible scribble
+      marks. Only a few short passages along it are marked with small amber
+      cloth tabs, so the marked parts are clearly few compared with the whole.
+  - id: debate
+    statements: [orientation]
+    aspect: "4:3"
+    alt: "Two present-day scholars disagree over an ancient star chart."
+    prompt: >-
+      Two present-day academics in a study, both wearing glasses, generic
+      figures (not portraits of any real person): on the left a woman with
+      her hair in a bun, leaning in and pointing eagerly at an ancient
+      circular star chart drawn on a weathered papyrus sheet laid on the desk
+      between them, with a small comic bubble containing only an exclamation
+      mark; on the right a man with arms crossed and a skeptical frown, with a
+      small comic bubble containing only a question mark.

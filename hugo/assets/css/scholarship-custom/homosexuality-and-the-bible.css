@@ -1,239 +1,150 @@
 /*
-  Custom block for the Homosexuality and the Bible Scholarship Page: a
-  four-panel comic strip with drawn figures. Composes panel,
-  type-section-title, cloud-section and scholarship-meta.
+  Custom block for the Homosexuality and the Bible Scholarship Page: a comic
+  page. Four illustrated panels sit straight on the paper with plain gutters,
+  each a thick ink frame; narration boxes hang off the panel corners and cross
+  the frame edges, as comics do. Composes cloud-section, type-section-title
+  and scholarship-meta.
 
-  Without colour: the same drawn card crosses from panel 1 to panel 2; the ?
-  bubble carries "unknown"; marked lines on a long sheet carry "a few"; the
-  ! and ? bubbles carry the dispute.
+  The art is raster (generated); everything around it is CSS.
 */
 .hsx-comic {
   --hsx-ink: var(--tan-900);
+  --hsx-frame: var(--border-width-lg, 5px);
+  --hsx-gutter: var(--space-m);
 
   container: hsx-comic / inline-size;
 }
 
-.hsx-defs {
-  block-size: 0;
-  inline-size: 0;
-  position: absolute;
-}
-
-.hsx-comic__panel {
+.hsx-comic__page {
   display: grid;
-  gap: var(--space-s);
-  padding: var(--space-2xs);
+  gap: var(--space-m);
 }
 
-/* Headline: hand-lettered caption tilted across the top of the strip. */
-.hsx-comic__claim {
-  background: var(--color-accent);
-  border: var(--border-width-md) solid var(--hsx-ink);
-  box-shadow: var(--space-3xs) var(--space-3xs) 0 var(--hsx-ink);
+/* Title lettering: ink letters with an amber offset, slightly skewed. */
+.hsx-comic__title {
+  color: var(--hsx-ink);
   font-family: var(--font-family-display);
-  font-size: var(--step-1);
+  font-size: var(--step-2);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
   justify-self: center;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
-  padding: var(--space-2xs) var(--space-s);
+  max-inline-size: 24ch;
   rotate: -1.5deg;
   text-align: center;
+  text-shadow: 3px 3px 0 var(--color-accent);
+  text-transform: uppercase;
   text-wrap: balance;
 }
 
 .hsx-comic__strip {
-  counter-reset: hsx-frame;
   display: grid;
-  gap: var(--space-xs);
+  gap: calc(var(--hsx-gutter) + var(--space-xl)) var(--hsx-gutter);
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: var(--space-s) var(--space-2xs) 0;
 }
 
-/* One comic frame: ink border, gutter shadow, halftone from one corner. */
+/* A panel is only its frame: art in a thick ink border, a little off-true. */
 .hsx-comic__frame {
-  align-content: start;
-  background:
-    linear-gradient(to bottom left, var(--tan-000) 55%, transparent),
-    radial-gradient(var(--tan-300) 24%, transparent 28%) 0 0 / 8px 8px,
-    var(--tan-000);
-  border: var(--border-width-md) solid var(--hsx-ink);
-  box-shadow: var(--space-3xs) var(--space-3xs) 0 var(--hsx-ink);
-  counter-increment: hsx-frame;
   display: grid;
-  gap: var(--space-2xs);
-  padding: var(--space-2xs);
+  gap: var(--space-xs);
+  rotate: var(--hsx-tilt, 0deg);
 }
 
-.hsx-comic__label {
-  background: var(--hsx-ink);
-  color: var(--color-text-inverse);
-  font-family: var(--font-family-display);
-  font-size: var(--step--1);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  justify-self: start;
-  letter-spacing: var(--letter-spacing-heading);
-  line-height: var(--line-height-tight);
+.hsx-comic__frame--today {
+  --hsx-tilt: -0.6deg;
+}
+
+.hsx-comic__frame--then {
+  --hsx-tilt: 0.5deg;
+}
+
+.hsx-comic__frame--texts {
+  --hsx-tilt: 0.4deg;
+}
+
+.hsx-comic__frame--debate {
+  --hsx-tilt: -0.5deg;
+}
+
+.hsx-comic__figure {
   margin: 0;
-  padding: var(--space-4xs) var(--space-2xs);
-  text-transform: uppercase;
-}
-
-.hsx-comic__label::before {
-  color: var(--color-accent);
-  content: counter(hsx-frame) " ";
+  position: relative;
 }
 
 .hsx-comic__art {
-  aspect-ratio: 240 / 180;
+  aspect-ratio: 4 / 3;
+  border: var(--hsx-frame) solid var(--hsx-ink);
+  box-shadow: var(--space-3xs) var(--space-3xs) 0 var(--hsx-ink);
+  line-height: 0;
+  overflow: hidden;
+}
+
+.hsx-comic__art > img {
+  aspect-ratio: 4 / 3;
+  block-size: auto;
   display: block;
   inline-size: 100%;
-  overflow: visible;
-  stroke: var(--hsx-ink);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3.5;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.14;
 }
 
-/* Fills and strokes for the drawings. Lengths are the drawing's own units. */
-.hsx-ink {
-  fill: var(--hsx-ink);
-}
-
-.hsx-paper {
-  fill: var(--tan-000);
-}
-
-.hsx-amber {
-  fill: var(--color-accent);
-}
-
-.hsx-rust {
-  fill: var(--color-action);
-}
-
-.hsx-line {
-  fill: none;
-}
-
-.hsx-paper-line {
-  fill: none;
-  stroke: var(--tan-000);
-  stroke-width: 2.5;
-}
-
-.hsx-dot {
-  fill: var(--hsx-ink);
-  stroke: none;
-}
-
-.hsx-rule {
-  stroke: var(--color-action);
-  stroke-width: 3;
-}
-
-.hsx-lens {
-  fill: var(--tan-000);
-  stroke-width: 3;
-}
-
-.hsx-arm {
-  fill: none;
-  stroke-width: 18;
-}
-
-.hsx-sleeve {
-  fill: none;
-  stroke: var(--color-action);
-  stroke-width: 11;
-}
-
-.hsx-comic__frame--debate .hsx-sleeve {
-  stroke: var(--color-accent);
-}
-
-.hsx-pen {
-  stroke-width: 5;
-}
-
-.hsx-motion {
-  fill: none;
-  stroke-width: 2.5;
-}
-
-.hsx-text-line {
-  stroke: var(--tan-400);
-  stroke-width: 4;
-}
-
-.hsx-mark {
-  stroke: var(--color-accent);
-  stroke-width: 8;
-}
-
-.hsx-chart {
-  fill: var(--color-accent-muted);
-}
-
-.hsx-star {
-  fill: var(--hsx-ink);
-  stroke-width: 1;
-}
-
-.hsx-card__word,
-.hsx-card__gloss,
-.hsx-comic__mark {
-  fill: var(--hsx-ink);
-  font-family: var(--font-family-display);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  stroke: none;
-  text-anchor: middle;
-}
-
-.hsx-card__word {
-  font-size: 13px;
-}
-
-.hsx-card__gloss {
-  fill: var(--tan-600);
-  font-size: 9px;
-  font-weight: var(--font-weight-normal);
-}
-
-.hsx-comic__mark {
-  fill: var(--color-action);
-  font-size: 40px;
-  font-style: normal;
-}
-
-.hsx-comic__mark--small {
-  font-size: 22px;
-}
-
-/* Caption box under the drawing, as a comic's narration. */
-.hsx-comic__caption {
-  background: var(--color-accent-muted);
-  border: var(--border-width-sm) solid var(--hsx-ink);
+/* Narration box: yellow, ink-bordered, hanging off the top-left corner. */
+.hsx-comic__box {
+  background: var(--color-accent);
+  border: var(--border-width-md) solid var(--hsx-ink);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--hsx-ink);
   font-family: var(--font-family-display);
   font-size: var(--step--1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
+  inset-block-start: calc(var(--space-s) * -1);
+  inset-inline-start: calc(var(--space-xs) * -1);
+  letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 70%;
   padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  rotate: -2deg;
+  text-transform: uppercase;
+}
+
+/* "Meanwhile…" bridges the gutter back to the panel before it. */
+.hsx-comic__frame--then .hsx-comic__box {
+  background: var(--tan-000);
+  rotate: 1.5deg;
+}
+
+/* The panel's statement: a paper caption box crossing the bottom edge. */
+.hsx-comic__caption {
+  background: var(--tan-000);
+  border: var(--border-width-md) solid var(--hsx-ink);
+  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--hsx-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-end: calc(var(--space-m) * -1);
+  inset-inline-end: calc(var(--space-xs) * -1);
+  line-height: var(--line-height-tight);
+  max-inline-size: 78%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
   text-wrap: balance;
 }
 
+/* The passages, set under panel 3 like a footnote, not a box. */
 .hsx-comic__refs {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-3xs) var(--space-2xs);
+  gap: var(--space-4xs) var(--space-xs);
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: var(--space-s) 0 0;
 }
 
 .hsx-comic__ref {
@@ -258,67 +169,70 @@
   content: "Ω";
 }
 
+.hsx-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  text-align: center;
+}
+
 .hsx-comic__more {
   border-block-start: var(--border-width-sm) solid var(--tan-300);
   padding-block-start: var(--space-xs);
 }
 
-/* Wide: two frames to a row. Literal length: container conditions cannot read custom properties. */
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
 @container hsx-comic (width >= 40rem) {
-  .hsx-comic__panel {
-    padding: var(--space-m);
+  .hsx-comic__title {
+    font-size: var(--step-3);
   }
 
   .hsx-comic__strip {
-    gap: var(--space-s);
+    align-items: start;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hsx-comic__frame {
-    padding: var(--space-xs);
-  }
-
-  .hsx-comic__claim {
-    font-size: var(--step-2);
+  /* Reach back across the gutter into panel 1. */
+  .hsx-comic__frame--then .hsx-comic__box {
+    inset-inline-start: calc(var(--hsx-gutter) * -1.6);
   }
 }
 
-/* The poster: two by two, tighter. */
-.scholarship-share:target .hsx-comic__panel {
-  gap: var(--space-xs);
-  padding: var(--space-s);
+/* The poster: two by two on the 4:5 canvas. */
+.scholarship-share:target .hsx-comic__page {
+  gap: var(--space-s);
+}
+
+.scholarship-share:target .hsx-comic__title {
+  font-size: var(--step-2);
 }
 
 .scholarship-share:target .hsx-comic__strip {
-  gap: var(--space-xs);
+  align-items: start;
+  gap: calc(var(--space-m) + var(--space-l)) var(--space-m);
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.scholarship-share:target .hsx-comic__frame {
-  gap: var(--space-3xs);
-  padding: var(--space-2xs);
+.scholarship-share:target .hsx-comic__frame--then .hsx-comic__box {
+  inset-inline-start: calc(var(--space-m) * -1.6);
 }
 
-.scholarship-share:target .hsx-comic__claim {
-  font-size: var(--step-1);
-}
-
-/* The card: the first two frames side by side. */
-.scholarship-share:has(#share-card:target) .hsx-comic__panel {
+/* The card: panels 1 and 2 side by side under the title. */
+.scholarship-share:has(#share-card:target) .hsx-comic__page {
   gap: var(--space-xs);
-  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .hsx-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
 }
 
 .scholarship-share:has(#share-card:target) .hsx-comic__strip {
-  gap: var(--space-s);
+  gap: var(--space-m);
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.scholarship-share:has(#share-card:target) .hsx-comic__frame {
-  gap: var(--space-3xs);
-  padding: var(--space-2xs);
-}
-
-.scholarship-share:has(#share-card:target) .hsx-comic__claim {
-  font-size: var(--step-1);
+.scholarship-share:has(#share-card:target)
+  .hsx-comic__frame--then
+  .hsx-comic__box {
+  inset-inline-start: calc(var(--space-m) * -1.6);
 }
