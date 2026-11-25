@@ -1,19 +1,16 @@
 /*
-  Custom block for the Homosexuality and the Bible Scholarship Page: the
-  modern concept, drawn as an index card, set against the six passages,
-  drawn as identical scrolls, with a broken link between them. Composes
-  panel, type-section-title, cloud-section and scholarship-meta.
+  Custom block for the Homosexuality and the Bible Scholarship Page: a
+  four-panel comic strip with drawn figures. Composes panel,
+  type-section-title, cloud-section and scholarship-meta.
 
-  Without colour: the card's shape against the scrolls' carries modern
-  against ancient; the ✗ on the link carries the break; the letter on each
-  seal (א or Ω) carries the testament, and the panel heading repeats it.
+  Without colour: the same drawn card crosses from panel 1 to panel 2; the ?
+  bubble carries "unknown"; marked lines on a long sheet carry "a few"; the
+  ! and ? bubbles carry the dispute.
 */
-.hsx-texts {
-  /* One scroll's width: three to a row on a phone. */
-  --hsx-unit: 22cqi;
+.hsx-comic {
   --hsx-ink: var(--tan-900);
 
-  container: hsx-texts / inline-size;
+  container: hsx-comic / inline-size;
 }
 
 .hsx-defs {
@@ -22,400 +19,306 @@
   position: absolute;
 }
 
-.hsx-texts__panel {
+.hsx-comic__panel {
   display: grid;
   gap: var(--space-s);
   padding: var(--space-2xs);
 }
 
-/* Headline strip: the count in a burst. */
-.hsx-texts__claim {
-  align-items: center;
-  background: var(--hsx-ink);
-  color: var(--color-text-inverse);
-  column-gap: var(--space-xs);
-  display: grid;
+/* Headline: hand-lettered caption tilted across the top of the strip. */
+.hsx-comic__claim {
+  background: var(--color-accent);
+  border: var(--border-width-md) solid var(--hsx-ink);
+  box-shadow: var(--space-3xs) var(--space-3xs) 0 var(--hsx-ink);
   font-family: var(--font-family-display);
-  font-size: var(--step-0);
+  font-size: var(--step-1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
-  grid-template-columns: auto minmax(0, 1fr);
+  justify-self: center;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
-  padding: var(--space-3xs) var(--space-xs);
+  padding: var(--space-2xs) var(--space-s);
+  rotate: -1.5deg;
+  text-align: center;
   text-wrap: balance;
 }
 
-.hsx-texts__badge {
-  display: grid;
-  inline-size: var(--space-2xl);
-  margin-block: calc(var(--space-2xs) * -1);
-  place-items: center;
-  rotate: -8deg;
-}
-
-.hsx-texts__badge > * {
-  grid-area: 1 / 1;
-}
-
-.hsx-texts__badge > svg {
-  aspect-ratio: 1;
-  fill: var(--color-accent);
-  inline-size: 100%;
-  overflow: visible;
-  stroke: var(--hsx-ink);
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.hsx-texts__badge > span {
-  color: var(--hsx-ink);
-  font-size: var(--step-3);
-}
-
-/* Modern side, the break, the ancient side: stacked on a phone. */
-.hsx-texts__sides {
-  align-items: center;
+.hsx-comic__strip {
+  counter-reset: hsx-frame;
   display: grid;
   gap: var(--space-xs);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Each side sits in a comic panel with halftone fading in from one corner. */
-:is(.hsx-texts__modern, .hsx-texts__group) {
+/* One comic frame: ink border, gutter shadow, halftone from one corner. */
+.hsx-comic__frame {
   align-content: start;
   background:
-    linear-gradient(to top right, var(--tan-000) 55%, transparent),
+    linear-gradient(to bottom left, var(--tan-000) 55%, transparent),
     radial-gradient(var(--tan-300) 24%, transparent 28%) 0 0 / 8px 8px,
     var(--tan-000);
   border: var(--border-width-md) solid var(--hsx-ink);
+  box-shadow: var(--space-3xs) var(--space-3xs) 0 var(--hsx-ink);
+  counter-increment: hsx-frame;
   display: grid;
   gap: var(--space-2xs);
-  justify-items: center;
   padding: var(--space-2xs);
 }
 
-.hsx-texts__label {
-  background: var(--color-accent-muted);
-  border: var(--border-width-sm) solid var(--hsx-ink);
-  box-shadow: var(--space-4xs) var(--space-4xs) 0 var(--hsx-ink);
+.hsx-comic__label {
+  background: var(--hsx-ink);
+  color: var(--color-text-inverse);
   font-family: var(--font-family-display);
-  font-size: var(--step-0);
+  font-size: var(--step--1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
   justify-self: start;
   letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
   margin: 0;
-  padding: var(--space-3xs) var(--space-2xs);
+  padding: var(--space-4xs) var(--space-2xs);
+  text-transform: uppercase;
 }
 
-/* The index card: the drawing with the headword set on it. */
-.hsx-card {
-  container-type: inline-size;
-  display: grid;
-  inline-size: calc(var(--hsx-unit) * 2.6);
+.hsx-comic__label::before {
+  color: var(--color-accent);
+  content: counter(hsx-frame) " ";
 }
 
-.hsx-card > * {
-  grid-area: 1 / 1;
-}
-
-.hsx-card > svg {
-  aspect-ratio: 200 / 136;
-  inline-size: 100%;
-  overflow: visible;
-  stroke: var(--hsx-ink);
-  stroke-linejoin: round;
-  stroke-width: 4;
-}
-
-.hsx-card__shadow {
-  fill: var(--hsx-ink);
-  stroke: none;
-}
-
-.hsx-card__paper {
-  fill: var(--tan-000);
-}
-
-.hsx-card__rule {
-  stroke: var(--color-action);
-}
-
-.hsx-card__lines {
-  fill: none;
-  stroke: var(--tan-400);
-  stroke-linecap: round;
-}
-
-.hsx-card__word {
-  align-self: center;
-  font-family: var(--font-family-display);
-  /* Sized to the card, so the headword always fits it. */
-  font-size: 10cqi;
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  hyphens: manual;
-  line-height: var(--line-height-tight);
-  margin-block-end: 12%;
-  text-align: center;
-}
-
-:is(.hsx-texts__caption, .hsx-texts__says) {
-  font-size: var(--step--1);
-  line-height: var(--line-height-tight);
-  text-align: center;
-  text-wrap: balance;
-}
-
-/* The break: a link cut by a ✗. */
-.hsx-texts__gap {
-  display: grid;
-  justify-items: center;
-  row-gap: var(--space-3xs);
-}
-
-.hsx-texts__break {
-  aspect-ratio: 120 / 40;
-  inline-size: calc(var(--hsx-unit) * 1.4);
-  overflow: visible;
-}
-
-.hsx-texts__link {
-  fill: none;
-  stroke: var(--hsx-ink);
-  stroke-dasharray: 8 6;
-  stroke-linecap: round;
-  stroke-width: 5;
-}
-
-.hsx-texts__x {
-  fill: none;
-  stroke: var(--color-action);
-  stroke-linecap: round;
-  stroke-width: 8;
-}
-
-.hsx-texts__verdict {
-  font-family: var(--font-family-display);
-  font-size: var(--step--1);
-  font-style: italic;
-  font-weight: var(--font-weight-boldest);
-  line-height: var(--line-height-tight);
-  text-align: center;
-  text-wrap: balance;
-}
-
-.hsx-texts__ancient {
-  display: grid;
-  gap: var(--space-xs);
-}
-
-.hsx-texts__list {
-  align-items: start;
-  display: grid;
-  gap: var(--space-2xs);
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  inline-size: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.hsx-texts__list > li {
-  display: grid;
-  justify-items: center;
-  row-gap: var(--space-3xs);
-}
-
-/* The scroll. Lengths inside are the drawing's own units. */
-.hsx-scroll {
-  display: block;
-  /* Every scroll is the same size. */
-  inline-size: var(--hsx-unit);
-}
-
-.hsx-scroll > svg {
-  aspect-ratio: 100 / 122;
+.hsx-comic__art {
+  aspect-ratio: 240 / 180;
   display: block;
   inline-size: 100%;
   overflow: visible;
   stroke: var(--hsx-ink);
+  stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 4;
+  stroke-width: 3.5;
 }
 
-.hsx-scroll__shadow {
+/* Fills and strokes for the drawings. Lengths are the drawing's own units. */
+.hsx-ink {
   fill: var(--hsx-ink);
-  stroke: none;
 }
 
-.hsx-scroll__paper {
+.hsx-paper {
   fill: var(--tan-000);
 }
 
-.hsx-scroll__writing {
-  fill: none;
-  stroke: var(--tan-400);
-  stroke-linecap: round;
-}
-
-.hsx-scroll__roll {
-  fill: var(--hsx-ink);
-}
-
-.hsx-scroll__shine {
-  fill: none;
-  stroke: var(--tan-000);
-  stroke-linecap: round;
-  stroke-width: 2;
-}
-
-.hsx-scroll__seal {
-  stroke-width: 3;
-}
-
-.hsx-texts__group--hebrew .hsx-scroll__seal {
+.hsx-amber {
   fill: var(--color-accent);
 }
 
-.hsx-texts__group--greek .hsx-scroll__seal {
-  fill: var(--tan-000);
+.hsx-rust {
+  fill: var(--color-action);
 }
 
-.hsx-scroll__glyph {
+.hsx-line {
+  fill: none;
+}
+
+.hsx-paper-line {
+  fill: none;
+  stroke: var(--tan-000);
+  stroke-width: 2.5;
+}
+
+.hsx-dot {
+  fill: var(--hsx-ink);
+  stroke: none;
+}
+
+.hsx-rule {
+  stroke: var(--color-action);
+  stroke-width: 3;
+}
+
+.hsx-lens {
+  fill: var(--tan-000);
+  stroke-width: 3;
+}
+
+.hsx-arm {
+  fill: none;
+  stroke-width: 18;
+}
+
+.hsx-sleeve {
+  fill: none;
+  stroke: var(--color-action);
+  stroke-width: 11;
+}
+
+.hsx-comic__frame--debate .hsx-sleeve {
+  stroke: var(--color-accent);
+}
+
+.hsx-pen {
+  stroke-width: 5;
+}
+
+.hsx-motion {
+  fill: none;
+  stroke-width: 2.5;
+}
+
+.hsx-text-line {
+  stroke: var(--tan-400);
+  stroke-width: 4;
+}
+
+.hsx-mark {
+  stroke: var(--color-accent);
+  stroke-width: 8;
+}
+
+.hsx-chart {
+  fill: var(--color-accent-muted);
+}
+
+.hsx-star {
+  fill: var(--hsx-ink);
+  stroke-width: 1;
+}
+
+.hsx-card__word,
+.hsx-card__gloss,
+.hsx-comic__mark {
   fill: var(--hsx-ink);
   font-family: var(--font-family-display);
-  font-size: 24px;
+  font-style: italic;
   font-weight: var(--font-weight-boldest);
   stroke: none;
   text-anchor: middle;
 }
 
-.hsx-texts__ref {
-  display: grid;
+.hsx-card__word {
+  font-size: 13px;
+}
+
+.hsx-card__gloss {
+  fill: var(--tan-600);
+  font-size: 9px;
+  font-weight: var(--font-weight-normal);
+}
+
+.hsx-comic__mark {
+  fill: var(--color-action);
+  font-size: 40px;
+  font-style: normal;
+}
+
+.hsx-comic__mark--small {
+  font-size: 22px;
+}
+
+/* Caption box under the drawing, as a comic's narration. */
+.hsx-comic__caption {
+  background: var(--color-accent-muted);
+  border: var(--border-width-sm) solid var(--hsx-ink);
   font-family: var(--font-family-display);
   font-size: var(--step--1);
   font-style: italic;
   font-weight: var(--font-weight-boldest);
-  letter-spacing: var(--letter-spacing-heading);
   line-height: var(--line-height-tight);
-  text-align: center;
-}
-
-.hsx-texts__note {
-  font-size: var(--step--1);
-  text-align: center;
+  padding: var(--space-3xs) var(--space-2xs);
   text-wrap: balance;
 }
 
-.hsx-texts__more {
+.hsx-comic__refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs) var(--space-2xs);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hsx-comic__ref {
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  line-height: var(--line-height-tight);
+}
+
+/* The testament's language, as a small letter before the reference. */
+.hsx-comic__ref::before {
+  color: var(--tan-600);
+  margin-inline-end: var(--space-4xs);
+}
+
+.hsx-comic__ref--he::before {
+  content: "א";
+}
+
+.hsx-comic__ref--gr::before {
+  content: "Ω";
+}
+
+.hsx-comic__more {
   border-block-start: var(--border-width-sm) solid var(--tan-300);
   padding-block-start: var(--space-xs);
 }
 
-/*
-  Wide: the card, the break and the two testaments in one row. Literal
-  length: container conditions cannot read custom properties.
-*/
-@container hsx-texts (width >= 46rem) {
-  .hsx-texts__panel {
-    --hsx-unit: 9cqi;
-
+/* Wide: two frames to a row. Literal length: container conditions cannot read custom properties. */
+@container hsx-comic (width >= 40rem) {
+  .hsx-comic__panel {
     padding: var(--space-m);
   }
 
-  .hsx-texts__claim {
-    font-size: var(--step-1);
-  }
-
-  /* Card and break side by side, the two testaments in a row below. */
-  .hsx-texts__sides {
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-  }
-
-  .hsx-texts__ancient {
-    grid-column: 1 / -1;
+  .hsx-comic__strip {
+    gap: var(--space-s);
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hsx-texts__break {
-    inline-size: calc(var(--hsx-unit) * 2);
+  .hsx-comic__frame {
+    padding: var(--space-xs);
+  }
+
+  .hsx-comic__claim {
+    font-size: var(--step-2);
   }
 }
 
-/* The poster: card and break in a row above, the testaments below. */
-.scholarship-share:target .hsx-texts__panel {
-  --hsx-unit: 13cqi;
-
+/* The poster: two by two, tighter. */
+.scholarship-share:target .hsx-comic__panel {
   gap: var(--space-xs);
   padding: var(--space-s);
 }
 
-.scholarship-share:target .hsx-texts__sides {
-  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-}
-
-.scholarship-share:target .hsx-texts__ancient {
-  grid-column: 1 / -1;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.scholarship-share:target .hsx-texts__gap {
-  grid-column: 2;
-  grid-row: 1;
-  inline-size: calc(var(--hsx-unit) * 2.2);
-}
-
-.scholarship-share:target .hsx-texts__modern {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.scholarship-share:target .hsx-texts__list {
-  gap: var(--space-3xs);
-}
-
-.scholarship-share:target :is(.hsx-texts__ref, .hsx-texts__verdict) {
-  font-size: var(--step-0);
-}
-
-.scholarship-share:target .hsx-texts__note {
-  font-size: var(--step-0);
-}
-
-/* The card: one row, captions hidden. */
-.scholarship-share:has(#share-card:target) .hsx-texts__panel {
-  --hsx-unit: 7cqi;
-
+.scholarship-share:target .hsx-comic__strip {
   gap: var(--space-xs);
-}
-
-.scholarship-share:has(#share-card:target) .hsx-texts__sides {
-  grid-template-columns: auto auto minmax(0, 1fr);
-}
-
-.scholarship-share:has(#share-card:target) .hsx-texts__ancient {
-  grid-column: auto;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.scholarship-share:has(#share-card:target) .hsx-texts__gap {
-  inline-size: calc(var(--hsx-unit) * 2.2);
-}
-
-.scholarship-share:has(#share-card:target) .hsx-texts__break {
-  inline-size: calc(var(--hsx-unit) * 1.6);
-}
-
-.scholarship-share:has(#share-card:target) .hsx-texts__caption {
-  font-size: var(--step--2);
-}
-
-.scholarship-share:has(#share-card:target) .hsx-texts__ref {
-  font-size: var(--step--2);
-}
-
-.scholarship-share:has(#share-card:target) .hsx-texts__list {
+.scholarship-share:target .hsx-comic__frame {
   gap: var(--space-3xs);
+  padding: var(--space-2xs);
+}
+
+.scholarship-share:target .hsx-comic__claim {
+  font-size: var(--step-1);
+}
+
+/* The card: the first two frames side by side. */
+.scholarship-share:has(#share-card:target) .hsx-comic__panel {
+  gap: var(--space-xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .hsx-comic__strip {
+  gap: var(--space-s);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:has(#share-card:target) .hsx-comic__frame {
+  gap: var(--space-3xs);
+  padding: var(--space-2xs);
+}
+
+.scholarship-share:has(#share-card:target) .hsx-comic__claim {
+  font-size: var(--step-1);
 }
