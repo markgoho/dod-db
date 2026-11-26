@@ -1,0 +1,340 @@
+/*
+  Custom block for The Historical Jesus Scholarship Page: a comic page. One
+  ink frame holds the title, five illustrated panels and the credit, so the
+  whole thing shares as one image. Each panel has a narration label flush
+  top-left and comic plates (scholarship.css) set on its art in clear
+  corners. The last panel spans both columns and is two pictures split by
+  an off-centre lightning bolt. Composes cloud-section, type-section-title
+  and scholarship-meta.
+
+  Distinctions without colour: the split's sides by position and size (a
+  crowd too dense to count against a few cut off by the frame), and the
+  plates' words.
+*/
+.hj-comic {
+  --hj-ink: var(--tan-900);
+  --hj-paper: var(--tan-000);
+  --hj-amber: var(--color-accent);
+  --hj-frame: var(--border-width-md);
+
+  container: hj-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.hj-comic__page {
+  background: var(--hj-paper);
+  border: var(--hj-frame) solid var(--hj-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--hj-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.hj-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.hj-comic__head > p {
+  margin: 0;
+}
+
+.hj-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.hj-comic__title {
+  color: var(--hj-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  max-inline-size: 24ch;
+  text-shadow: 3px 3px 0 var(--hj-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.hj-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hj-comic__frame {
+  display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; the panel is its plates' container. */
+.hj-comic__figure {
+  border: var(--hj-frame) solid var(--hj-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.hj-comic__art {
+  aspect-ratio: 4 / 3;
+  line-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.hj-comic__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.08;
+}
+
+/* The last panel: two pictures, each clipped to its side of the off-centre bolt. */
+.hj-comic__half {
+  inset: 0;
+  position: absolute;
+}
+
+.hj-comic__half--left {
+  clip-path: polygon(0 0, 70% 0, 63% 40%, 72% 52%, 61% 100%, 0 100%);
+}
+
+.hj-comic__half--right {
+  clip-path: polygon(70% 0, 100% 0, 100% 100%, 61% 100%, 72% 52%, 63% 40%);
+}
+
+.hj-comic__half > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 73%;
+  object-fit: cover;
+  scale: 1.06;
+}
+
+.hj-comic__half--right > img {
+  inline-size: 40%;
+  margin-inline-start: 60%;
+  /* The few stand at the picture's right edge; keep them in view. */
+  object-position: 85% 50%;
+}
+
+/* The bolt: a thick ink stroke with an amber core. */
+.hj-comic__bolt {
+  block-size: 100%;
+  fill: none;
+  inline-size: 100%;
+  inset: 0;
+  position: absolute;
+  stroke-linejoin: miter;
+}
+
+.hj-comic__bolt > polyline:first-child {
+  stroke: var(--hj-ink);
+  stroke-width: 12px;
+  vector-effect: non-scaling-stroke;
+}
+
+.hj-comic__bolt > polyline:last-child {
+  stroke: var(--hj-amber);
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.hj-comic__box {
+  background: var(--hj-amber);
+  border-block-end: var(--hj-frame) solid var(--hj-ink);
+  border-inline-end: var(--hj-frame) solid var(--hj-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+/* Scripture tag: an ink chip on the plate. */
+.hj-comic__ref {
+  background: var(--hj-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: clamp(0.6rem, 2.2cqi, 0.85rem);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin-inline-start: 0.3em;
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--hj-amber);
+  white-space: nowrap;
+}
+
+.hj-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.hj-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* A narrow panel (phone): the plates are too big for the art, so they drop below it as a caption band. The query reads the panel's own width (the figure is the nearest container). */
+@container (width < 22rem) {
+  .hj-comic__figure > figcaption {
+    border-block-start: var(--hj-frame) solid var(--hj-ink);
+    display: grid;
+    gap: var(--space-2xs);
+    padding: var(--space-2xs);
+  }
+
+  .hj-comic__figure .comic-plate {
+    box-shadow: none;
+    max-inline-size: none;
+    position: static;
+    text-align: start;
+  }
+
+  /* The split's plates stack, left side first: the dissenters' plate is too long for a column. */
+  .hj-comic__frame--today .comic-plate--tr {
+    text-align: end;
+  }
+}
+
+/* Single column: the split panel is 4:3, too small for its long plates, so they drop below the art as a caption band, left side first. */
+@container hj-comic (width < 40rem) {
+  .hj-comic__frame--today .hj-comic__figure > figcaption {
+    border-block-start: var(--hj-frame) solid var(--hj-ink);
+    display: grid;
+    gap: var(--space-2xs);
+    padding: var(--space-2xs);
+  }
+
+  .hj-comic__frame--today .comic-plate {
+    box-shadow: none;
+    max-inline-size: none;
+    position: static;
+  }
+}
+
+/* Wide: two panels to a row, the split panel across the bottom. Literal length: container conditions cannot read custom properties. */
+@container hj-comic (width >= 40rem) {
+  .hj-comic__page {
+    padding: var(--space-m);
+  }
+
+  .hj-comic__title {
+    font-size: var(--step-3);
+  }
+
+  .hj-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hj-comic__frame--today {
+    grid-column: 1 / -1;
+  }
+
+  .hj-comic__frame--today .hj-comic__art {
+    aspect-ratio: 8 / 3;
+  }
+
+  /* The wide panel is twice as wide a container: halve the plates' cqi type so they match the other panels. */
+  .hj-comic__frame--today .comic-plate {
+    max-inline-size: 30%;
+    padding: 0.45cqi 0.7cqi 0.55cqi;
+  }
+
+  .hj-comic__frame--today .comic-plate__big {
+    font-size: clamp(0.95rem, 2.7cqi, 2.1rem);
+  }
+
+  .hj-comic__frame--today .comic-plate__sub {
+    font-size: clamp(0.65rem, 1.25cqi, 0.95rem);
+  }
+
+  .hj-comic__frame--today .comic-plate--bl {
+    inset: auto auto 1cqi 1cqi;
+  }
+
+  .hj-comic__frame--today .comic-plate--tr {
+    inset: 1cqi 1cqi auto auto;
+    max-inline-size: 26%;
+  }
+}
+
+/* The poster: two by two on the 4:5 canvas, the split panel across the bottom as a shorter strip. */
+.scholarship-share:target .hj-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .hj-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .hj-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:target .hj-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:target .hj-comic__frame--today {
+  grid-column: 1 / -1;
+}
+
+.scholarship-share:target .hj-comic__art:not(.hj-comic__art--split) {
+  aspect-ratio: 3 / 2;
+}
+
+.scholarship-share:target .hj-comic__frame--today .hj-comic__art {
+  aspect-ratio: 3 / 1;
+}
+
+/* The card: the title over the split panel alone, the two halves of the core claim. */
+.scholarship-share:has(#share-card:target) .hj-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target) .hj-comic__kicker {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .hj-comic__title {
+  font-size: var(--step-2);
+  max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .hj-comic__frame--today {
+  grid-column: 1 / -1;
+}
+
+/* The poster's 3:2 crop: keep Tacitus's head clear of the narration label. */
+.scholarship-share:target .hj-comic__frame--tacitus img {
+  object-position: 50% 0;
+}

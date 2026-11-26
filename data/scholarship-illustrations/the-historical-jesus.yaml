@@ -1,0 +1,116 @@
+# Illustrations for /scholarship/the-historical-jesus/ (generated with Gemini;
+# see src/scripts/generate-scholarship-illustrations.ts). Each picture shows
+# only what the listed statements support; every caption, link and claim
+# stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Five comic panels in time order: John baptizes Jesus; Jesus preaches; a
+# first-century Jewish historian writes; a Roman historian writes, around
+# 115 CE; scholars today, split off-centre by a lightning bolt into the
+# field (a crowd too dense to count) and the few who argue he was not
+# historical (a group cropped by the frame, so no number can be read).
+# `jordan` is the anchor for Jesus. Nobody's writing is shown: the page says
+# only that Josephus mentions him and that Tacitus says Pilate executed him.
+# The dissenters are generic and dressed like the crowd: the page says they
+# are qualified within the field, and they are real, living people.
+slug: the-historical-jesus
+images:
+  - id: jordan
+    statements: [details]
+    aspect: "4:3"
+    alt: "John, a rugged man in a rough camel-hair garment, pours water from his cupped hands over the head of Jesus, who stands waist-deep in a river."
+    prompt: >-
+      A river in a dry, rocky land. In the LEFT and MIDDLE of the picture,
+      two first-century Jewish men stand waist-deep in the calm water. On
+      the left, John: wild dark hair and beard, lean, in a rough brown
+      camel-hair garment, pouring water from his cupped hands over the
+      head of the other man. In the middle, Jesus: a man of about thirty
+      with shoulder-length dark brown hair and a short dark beard, olive
+      skin, in a plain off-white tunic, eyes closed, head bowed, hands
+      folded. The TOP of the picture is plain pale sky. The BOTTOM RIGHT
+      quarter is plain calm water with nothing in it. Negative list: no
+      dove, no opened sky, no light rays, no halo, no glow, no crowd, no
+      cross, no text.
+
+  - id: preach
+    statements: [apocalyptic]
+    aspect: "4:3"
+    refs: [jordan]
+    alt: "Jesus stands on a rocky slope, one arm raised, speaking urgently to a small group of villagers who listen intently."
+    prompt: >-
+      The SAME man as Jesus in the reference image (same face, hair, beard
+      and plain off-white tunic), dry now, standing on a low rocky slope on
+      the LEFT of the picture, one arm raised high, speaking with urgent,
+      intense conviction. In the MIDDLE, a small group of ordinary
+      first-century villagers, men and women in plain tunics and
+      headcloths, sit and stand on the slope below him, listening
+      intently, some leaning forward, one looking up at the sky with
+      concern. The TOP of the picture is plain pale sky with a few
+      darkening clouds. The BOTTOM RIGHT quarter is plain bare hillside
+      with nothing on it. Negative list: no halo, no glow, no light rays,
+      no fire, no angels, no cross, no scrolls, no text.
+
+  - id: josephus
+    statements: [outside]
+    aspect: "4:3"
+    alt: "A first-century Jewish historian, bearded, in a striped robe, writes at a table on a long scroll."
+    prompt: >-
+      A first-century Jewish historian, a generic man in his fifties with a
+      neat dark beard flecked with grey, in a striped rust red and off-white
+      robe, sits at a wooden writing table on the LEFT and MIDDLE of the
+      picture, writing with a reed pen on one long open papyrus scroll;
+      its writing is tiny illegible scribble marks. A clay oil lamp and an
+      ink pot on the table. Behind him, a plain stone wall with one arched
+      window showing a pale sky. The BOTTOM RIGHT quarter is plain stone
+      floor with nothing on it. Negative list: no other people, no cross,
+      no portraits, no text.
+
+  - id: tacitus
+    statements: [outside]
+    aspect: "4:3"
+    alt: "A Roman historian in a white toga, clean-shaven, writes in a notebook of wax tablets at a marble table between columns."
+    prompt: >-
+      A Roman historian of the early second century, a generic man:
+      clean-shaven, short grey hair combed forward, in a white toga with a
+      rust red border, sits at a marble table on the LEFT and MIDDLE of the
+      picture, writing with a metal stylus on a small open hinged pair of
+      wooden wax writing tablets; the marks scratched in the wax are tiny
+      illegible scribbles. Behind him, two plain Roman columns and a pale
+      wall. The BOTTOM RIGHT quarter is plain marble floor with nothing on
+      it. Negative list: no scrolls, no papyrus, no ink pot, no other
+      people, no cross, no busts or statues, no laurel wreath, no text.
+
+  - id: field
+    statements: [existence]
+    aspect: "16:9"
+    alt: "A packed modern lecture hall: row upon row of scholars, too many to count, nod in agreement."
+    prompt: >-
+      A packed modern university lecture hall seen from the front: row upon
+      row of present-day academics, generic men and women of many ages in
+      sweaters, blazers and glasses, filling tiered seats that run on out
+      of the picture at the left, the top and the right edges, so dense
+      that they cannot be counted. Most of them nod and smile in calm
+      agreement; a few in the front rows hold open notebooks. The BOTTOM
+      LEFT corner is plain floor in front of the first row, with nothing on
+      it. Negative list: no lecturer, no screen, no blackboard, no books
+      held up, no cross, no text.
+
+  - id: few
+    statements: [deniers]
+    aspect: "1:1"
+    refs: [field]
+    alt: "In the side aisle of the same hall, a very small knot of scholars, dressed like the rest, stand with arms crossed and shake their heads; the frame cuts them off."
+    prompt: >-
+      The side aisle of the SAME modern lecture hall as in the reference
+      image, against a plain pale wall. A VERY SMALL knot of present-day
+      academics, generic people dressed just like the audience in the
+      reference image (sweaters, blazers, glasses), stand close together on
+      the RIGHT, arms crossed, shaking their heads, unconvinced. Only ONE
+      person is fully visible: a middle-aged man in a rust red sweater and
+      glasses. Beside him, a second person is cut in half by the RIGHT edge
+      of the picture, and only the shoulder and crossed arm of a third show
+      at the very edge, so how many there are cannot be counted. Nobody
+      else stands behind them: the wall above and behind them is plain and
+      empty. The LEFT third of the picture is plain empty aisle floor and
+      wall. The BOTTOM LEFT corner is plain floor with nothing on it.
+      Negative list: no crowd, no seats full of people, no portraits of
+      real people, no signs, no books, no cross, no text.

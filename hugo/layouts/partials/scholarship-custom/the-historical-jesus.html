@@ -1,0 +1,140 @@
+{{- /*
+  Custom block for /scholarship/the-historical-jesus/: a five-panel comic
+  page in time order. John baptizes Jesus; Jesus preaches; a first-century
+  Jewish historian writes; a Roman historian writes, around 115 CE; and,
+  full width, scholars today, split off-centre by a lightning bolt into the
+  field and the few who argue Jesus was not historical.
+
+  A view of the page's reviewed statements (`existence`, the core, with
+  `deniers`, `apocalyptic`, `outside` and `details`); it makes no claim they
+  don't. The bolt sits well off-centre and the field is a crowd too dense to
+  count, so the split does not read as two equal camps; the dissenters are
+  cropped by the frame, so no number can be read, and they are generic and
+  dressed like the field ("qualified within the field"). Josephus and
+  Tacitus get a panel each, with no divider: they don't disagree, and they
+  wrote decades apart. Nobody's writing is shown. The sign on the cross has
+  no panel: only Martin is cited for it. Reword a plate only when its
+  statement is re-reviewed.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/the-historical-jesus.yaml; every word and
+  link lives here.
+  */
+-}}
+{{- define "partials/inline/hj-img.html" -}}
+  {{- with resources.Get (printf "scholarship-art/the-historical-jesus/%s.png" .id) }}
+    {{- $webp := .Process "resize 1200x webp q78" }}
+    <img
+      src="{{ $webp.RelPermalink }}"
+      width="{{ $webp.Width }}"
+      height="{{ $webp.Height }}"
+      alt="{{ $.alt }}"
+      loading="eager" />
+  {{- end }}
+{{- end -}}
+{{- define "partials/inline/hj-plate.html" -}}
+  <div class="comic-plate comic-plate--{{ .pos }}">
+    <p class="comic-plate__big">{{ .big }}</p>
+    <p class="comic-plate__sub">
+      {{ .sub }}
+      {{- with .ref }}
+        <a
+          class="hj-comic__ref"
+          href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .) | safeURL }}"
+          rel="noopener"
+          >{{ replace . " " "&nbsp;" | safeHTML }}</a
+        >
+      {{- end }}
+    </p>
+  </div>
+{{- end -}}
+{{- $panels := slice
+  (dict
+  "id" "jordan" "box" "His baptism"
+  "alt" "John, a rugged man with wild hair, pours water from his cupped hands over the bowed head of Jesus, who stands waist-deep in a river."
+  "plate" (dict "pos" "br" "big" "Baptized by John" "sub" "many scholars count it historical" "ref" "Mark 1:9"))
+  (dict
+  "id" "preach" "box" "What kind of figure?"
+  "alt" "Jesus stands on a rocky slope, one arm raised, speaking urgently to a small group of villagers who listen intently."
+  "plate" (dict "pos" "br" "big" "Apocalyptic prophet" "sub" "most scholars agree"))
+  (dict
+  "id" "josephus" "box" "In the first century"
+  "alt" "A Jewish historian, bearded, in a striped robe, writes on a long scroll by lamplight."
+  "plate" (dict "pos" "br" "big" "Josephus" "sub" "the only Jewish source of that century to mention him"))
+  (dict
+  "id" "tacitus" "box" "Around 115 CE"
+  "alt" "A Roman historian in a white toga, clean-shaven, writes on a scroll at a marble table between columns."
+  "plate" (dict "pos" "br" "big" "Tacitus" "sub" "the first helpful pagan source, says Pontius Pilate executed Jesus"))
+-}}
+<section class="cloud-section hj-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="hj-comic__page">
+    <header class="hj-comic__head">
+      <p class="hj-comic__kicker">
+        Jesus of Nazareth · New Testament studies and early Christian history
+      </p>
+      <p class="hj-comic__title">
+        Virtually no scholar doubts that Jesus&nbsp;existed
+      </p>
+    </header>
+    <ol class="hj-comic__strip">
+      {{- range $panels }}
+        <li class="hj-comic__frame hj-comic__frame--{{ .id }}" data-card-hide>
+          <figure class="hj-comic__figure">
+            <div class="hj-comic__art">
+              {{ partial "inline/hj-img.html" (dict "id" .id "alt" .alt) }}
+            </div>
+            <h3 class="hj-comic__box">{{ .box }}</h3>
+            <figcaption>
+              {{ partial "inline/hj-plate.html" .plate }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+      <li class="hj-comic__frame hj-comic__frame--today">
+        <figure class="hj-comic__figure">
+          {{/* A lightning bolt, set well off-centre: the page puts the field on one side and a few on the other. */}}
+          <div class="hj-comic__art hj-comic__art--split">
+            <div class="hj-comic__half hj-comic__half--left">
+              {{ partial "inline/hj-img.html" (dict "id" "field" "alt" "A packed modern lecture hall: row upon row of scholars, too many to count, nod in agreement.") }}
+            </div>
+            <div class="hj-comic__half hj-comic__half--right">
+              {{ partial "inline/hj-img.html" (dict "id" "few" "alt" "In an aisle of the same hall, a very small knot of scholars, dressed like the rest, stand with arms crossed; the frame cuts them off.") }}
+            </div>
+            <svg
+              class="hj-comic__bolt"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+              focusable="false">
+              <polyline points="70,0 63,40 72,52 61,100" />
+              <polyline points="70,0 63,40 72,52 61,100" />
+            </svg>
+          </div>
+          <h3 class="hj-comic__box">Scholars today</h3>
+          <figcaption>
+            {{ partial "inline/hj-plate.html" (dict "pos" "bl" "big" "Virtually none doubt it" "sub" "in New Testament studies and early Christian history") }}
+            {{ partial "inline/hj-plate.html" (dict "pos" "tr" "big" "Not none" "sub" "arguing he was not historical: the New Testament scholars Price and Brodie, the classicist Carrier; before them, Bauer and Wells") }}
+          </figcaption>
+        </figure>
+      </li>
+    </ol>
+    <p class="hj-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="hj-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#existence">do scholars doubt that Jesus existed</a>,
+    <a href="#deniers">who argues he did not</a>,
+    <a href="#apocalyptic">what kind of figure he was</a>,
+    <a href="#outside">which non-Christian writers mention him</a> and
+    <a href="#details">which details count as historical</a>.
+  </p>
+</section>
