@@ -84,6 +84,15 @@
                 for this; it sits where the named tradition puts it.</span
               >
             </li>
+            <li class="timeline-legend__item">
+              <span
+                class="timeline-legend__swatch timeline-legend__swatch--moved"
+                aria-hidden="true"></span>
+              <span
+                ><strong>{{ $labels.moved }}:</strong> it sits at the
+                tradition’s own year, and links to the entry.</span
+              >
+            </li>
           </ul>
           <div class="timeline-lanes" aria-hidden="true">
             <p>{{ $labels.scholarly }}</p>
@@ -92,7 +101,7 @@
           <ol
             class="timeline-axis"
             role="list"
-            aria-label="Timeline Entries in date order, by era">
+            aria-label="Timeline Entries and tradition dates in date order, by era">
             {{ range . }}
               {{ $eraClass := cond (gt (len .items) 0) "timeline-era" "timeline-era timeline-era--empty" }}
               <li
@@ -106,6 +115,7 @@
                       {{ partial "timeline-entry.html" (merge $ctx (dict
                         "entry" .page
                         "by" .by
+                        "gap" (index $placement.gaps .page.File.ContentBaseName)
                         "triggers" (where $allTriggers "entry" .page.File.ContentBaseName)
                         ))
                       }}

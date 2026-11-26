@@ -72,7 +72,7 @@ Then drop `draft`, set `sourcesRead` and the review file's `review` both to the 
 bun run check:timeline && bun run check && bun test
 ```
 
-Preview `/timeline/` in Claude in Chrome from the worktree's own `hugo server`: the entry sits in the right era and lane, its sources and Trigger Claims render, its Trigger Claim Episodes link back, and the minimap shows its tick without overlap. If the entry extends the axis or crowds other ticks, note it on #175.
+Preview `/timeline/` in Claude in Chrome from the worktree's own `hugo server`: the entry sits in the right era and lane, its sources and Trigger Claims render, its Trigger Claim Episodes link back, and the minimap shows its tick without overlap. With both dates, its Tradition Date sits at its own year (`#<id>-tradition`, a diamond in the minimap) unless the two are under 30 years apart; follow both links between the cards. Never give an entry an id ending in `-tradition`. If the entry extends the axis or crowds other ticks, note it on #175.
 
 Commit "Publish the <title> Timeline Entry (#<issue>)", push, and confirm the deploy succeeded and the live `/timeline/#<id>` loads. Comment on the issue (URL, Critical Date or statement, sources behind it, Tradition Date and holder if any, what the second pass changed, leads left open), then close it. File an issue for any follow-on work the leads point to.
 

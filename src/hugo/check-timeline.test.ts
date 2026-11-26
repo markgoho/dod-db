@@ -127,6 +127,12 @@ describe("checkTimeline", () => {
     ]);
   });
 
+  test("fails an entry id ending in -tradition, the anchor of a Tradition Date at its own year", async () => {
+    expect(await check("id-tradition-suffix")).toEqual([
+      `timeline/fall-tradition: an entry id can't end in "-tradition"; that anchor belongs to an entry's Tradition Date`,
+    ]);
+  });
+
   test("fails a Tradition Date with no Trigger Claim stating the tradition", async () => {
     expect(await check("tradition-no-trigger")).toEqual([
       `timeline/book: has a Tradition Date but no Trigger Claim with states: tradition or both`,

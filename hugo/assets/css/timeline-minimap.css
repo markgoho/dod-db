@@ -525,6 +525,15 @@
   position: relative;
 }
 
+/* A Tradition Date at its own year (#214): a hollow diamond, the axis node's mark. */
+.timeline-minimap__dot--moved,
+.timeline-minimap__tick--moved {
+  background: none;
+  border-radius: 0;
+  rotate: 45deg;
+  scale: 0.8;
+}
+
 .timeline-minimap__dot--placed::before,
 .timeline-minimap__tick--placed::before {
   background: repeating-conic-gradient(
@@ -746,7 +755,10 @@
     );
   }
 
-  .timeline-minimap__tick:not(.timeline-minimap__tick--placed) {
+  .timeline-minimap__tick:not(
+    .timeline-minimap__tick--placed,
+    .timeline-minimap__tick--moved
+  ) {
     background: if(
       style(--is-current: 1): var(--color-action); else: var(--tan-900)
     );

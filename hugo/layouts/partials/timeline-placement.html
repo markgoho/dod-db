@@ -2,12 +2,19 @@
   Where each published Timeline Entry sits (#163 §1). Takes the entry pages;
   returns dict:
   byId      entry id → entry page
-  placed    axis entries in date order, each dict {key, page, year, by}:
+  placed    axis rows in date order, each dict {key, page, year, by}:
   year      the placement year (Critical Date sort, or Tradition Date)
-  by        "critical", or "tradition" for an undated entry placed by its
-  Tradition Date in the tradition lane only
+  by        "critical"; "tradition" for an undated entry placed by its
+  Tradition Date in the tradition lane only; or "moved" for the
+  Tradition Date of an entry placed by its Critical Date, at its
+  own year in the tradition lane (#214)
+  gaps      entry id → dict {years, earlier, moved} for an entry with both
+  dates: years between the two dates' middles (rounded to 10),
+  earlier true when the tradition's is earlier, moved true when
+  its Tradition Date has its own row
   unplaced  undated entries with no Tradition Date, by title
-  ordered   every entry page: placed, then unplaced
+  ordered   every entry page once: placed (moved rows skipped), then
+  unplaced
   The only source of order: the page body and its JSON-LD both use it.
   */
 -}}
@@ -24,6 +31,9 @@
 -}}
 {{- $placed := slice -}}
 {{- $unplaced := slice -}}
+{{- $gaps := dict -}}
+{{- /* Midpoints this many years apart or more move the Tradition Date to its own row; closer, it stays beside the entry (#214). */ -}}
+{{- $minGap := 30 -}}
 {{- range $entry := $entries -}}
   {{- $c := .Params.critical -}}
   {{- $t := .Params.tradition -}}
@@ -38,6 +48,24 @@
       {{- $from = $a.Params.critical.from -}}
     {{- end -}}
     {{- $place = dict "year" ($c.sort | default $from) "by" "critical" -}}
+    {{- with $t -}}
+      {{- /* A century with no end year spans its century: "10th century BCE" is -1000 to -901. */ -}}
+      {{- $cFrom := float $from -}}
+      {{- $cTo := float ($c.to | default (cond (eq $c.precision "century") (add $cFrom 99) $cFrom)) -}}
+      {{- $tFrom := float .from -}}
+      {{- $tTo := float (.to | default .from) -}}
+      {{- $gap := sub (div (add $cFrom $cTo) 2) (div (add $tFrom $tTo) 2) -}}
+      {{- $moved := ge (math.Abs $gap) $minGap -}}
+      {{- $gaps = merge $gaps (dict $entry.File.ContentBaseName (dict
+        "years" (mul (math.Round (div (math.Abs $gap) 10)) 10 | int)
+        "earlier" (gt $gap 0)
+        "moved" $moved))
+      -}}
+      {{- if $moved -}}
+        {{- $key := printf "%07d|2|%s" (add (int .from) 1000000) (lower $entry.Title) -}}
+        {{- $placed = $placed | append (dict "key" $key "page" $entry "year" .from "by" "moved") -}}
+      {{- end -}}
+    {{- end -}}
   {{- else if $t -}}
     {{- $place = dict "year" $t.from "by" "tradition" -}}
   {{- end -}}
@@ -52,9 +80,11 @@
 {{- $unplaced = sort $unplaced "Title" -}}
 {{- $ordered := slice -}}
 {{- range $placed -}}
-  {{- $ordered = $ordered | append .page -}}
+  {{- if ne .by "moved" -}}
+    {{- $ordered = $ordered | append .page -}}
+  {{- end -}}
 {{- end -}}
 {{- range $unplaced -}}
   {{- $ordered = $ordered | append . -}}
 {{- end -}}
-{{- return dict "byId" $byId "placed" $placed "unplaced" $unplaced "ordered" $ordered -}}
+{{- return dict "byId" $byId "placed" $placed "gaps" $gaps "unplaced" $unplaced "ordered" $ordered -}}

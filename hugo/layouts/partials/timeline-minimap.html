@@ -44,8 +44,11 @@
   {{- range .items -}}
     {{- $p := .page.Params -}}
     {{- $date := "" -}}
+    {{- $isMoved := eq .by "moved" -}}
     {{- if eq .by "tradition" -}}
       {{- $date = printf "%s (%s)" $p.tradition.display (lower $placedLabel) -}}
+    {{- else if $isMoved -}}
+      {{- $date = printf "%s (%s)" $p.tradition.display $labels.movedShort -}}
     {{- else -}}
       {{- $date = $p.critical.display -}}
     {{- end -}}
@@ -62,7 +65,7 @@
     {{- end -}}
     {{- /* A narrated setting with years: a span at its years and an arc from its middle to the tick's dot. */ -}}
     {{- $setting := dict -}}
-    {{- with $p.setting -}}
+    {{- with and (not $isMoved) $p.setting -}}
       {{- if isset . "from" -}}
         {{- $settingStart := div (sub (float .from) $start) $years -}}
         {{- $settingEnd := div (sub (float (.to | default .from)) $start) $years -}}
@@ -72,7 +75,8 @@
     {{- end -}}
     {{- $ticks = $ticks | append (dict
       "setting" $setting
-      "id" .page.File.ContentBaseName
+      "id" (cond $isMoved (printf "%s-tradition" .page.File.ContentBaseName) .page.File.ContentBaseName)
+      "moved" $isMoved
       "era" $eraId
       "title" .page.Title
       "date" $date
@@ -165,6 +169,8 @@
           <a
             class="timeline-minimap__tick{{ if .placed }}
               timeline-minimap__tick--placed
+            {{ end }}{{ if .moved }}
+              timeline-minimap__tick--moved
             {{ end }}"
             href="#{{ .id }}"
             tabindex="-1"
@@ -198,7 +204,7 @@
         {{- end }}
       </div>
     </div>
-    {{- /* The two dots, in the Timeline's own labels. */}}
+    {{- /* The three dots, in the Timeline's own labels. */}}
     <ul class="timeline-minimap__legend" role="list">
       <li>
         <span class="timeline-minimap__dot" aria-hidden="true"></span>
@@ -209,6 +215,12 @@
           class="timeline-minimap__dot timeline-minimap__dot--placed"
           aria-hidden="true"></span>
         {{ $placedLabel }}
+      </li>
+      <li>
+        <span
+          class="timeline-minimap__dot timeline-minimap__dot--moved"
+          aria-hidden="true"></span>
+        {{ $labels.moved }}
       </li>
     </ul>
   </nav>

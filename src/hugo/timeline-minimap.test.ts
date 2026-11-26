@@ -162,13 +162,20 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     ).toEqual([
       ["creation", 0],
       ["adam", 1],
-      ["deuteronomy", 0],
-      ["judges-dtr", 1],
-      // 0.0426 of the strip after Deuteronomy: clear of it, so slot 0 again.
-      ["fall-of-jerusalem", 0],
+      ["jericho", 0],
+      // Tradition Dates at their own years (#214) take slots like any tick.
+      ["deuteronomy-tradition", 1],
+      ["jericho-tradition", 2],
+      ["david-and-solomon", 0],
+      // Within a dot of David and Solomon (1000 BCE), so slot 1.
+      ["deuteronomy", 1],
+      // Clear of David and Solomon, and Deuteronomy holds 1, so slot 0.
+      ["judges-dtr", 0],
+      ["fall-of-jerusalem", 1],
       ["lamentations", 2],
       ["priestly-genesis-1", 3],
-      ["isaiah-56-66", 4],
+      ["daniel-tradition", 4],
+      ["isaiah-56-66", 5],
       ["daniel", 0],
     ]);
     // Nothing moves a dot off its year.
@@ -198,12 +205,17 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     }
   });
 
-  test("under the strip, a two-item legend names the two dots, in the Timeline's own labels", () => {
+  test("under the strip, a three-item legend names the three dots, in the Timeline's own labels", () => {
     const items = select(page, ".timeline-minimap__legend > li");
     expect(items.map(i => squash(i.text))).toEqual([
       "Placed by a scholarly date",
       "Placed by a tradition’s date",
+      "A tradition’s date for an entry scholars date elsewhere",
     ]);
+    // The diamond's words are the main legend's moved heading.
+    expect(squash(select(page, ".timeline-legend strong")[1]?.text)).toBe(
+      `${squash(items[2]?.text)}:`,
+    );
     // The hollow dot's words are the main legend's placed heading.
     expect(squash(select(page, ".timeline-legend strong")[0]?.text)).toBe(
       `${squash(items[1]?.text)}:`,
@@ -215,7 +227,85 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
     expect(dots.map(d => [d.attrs.class, d.attrs["aria-hidden"]])).toEqual([
       ["timeline-minimap__dot", "true"],
       ["timeline-minimap__dot timeline-minimap__dot--placed", "true"],
+      ["timeline-minimap__dot timeline-minimap__dot--moved", "true"],
     ]);
+  });
+
+  test("a Tradition Date 30 or more years from the Critical Date sits at its own year, as its own row and diamond tick; a closer one stays beside its entry (#214)", () => {
+    const moved = select(page, ".timeline-axis .timeline-entry--moved");
+    expect(ids(moved)).toEqual([
+      "deuteronomy-tradition",
+      "jericho-tradition",
+      "daniel-tradition",
+    ]);
+    expect(hrefs(select(page, ".timeline-minimap__tick--moved"))).toEqual(
+      ids(moved),
+    );
+    // Each moved row holds only its tradition card; its entry keeps no copy.
+    for (const id of ids(moved)) {
+      const entry = id.replace(/-tradition$/, "");
+      expect(select(page, `[id="${id}"] .timeline-entry__card`)).toHaveLength(
+        0,
+      );
+      expect(
+        select(page, `[id="${entry}"] .timeline-entry__tradition`),
+      ).toHaveLength(0);
+    }
+    // David and Solomon: 10th century BCE (1000–901) against 1009–931 BCE,
+    // middles 20 years apart: beside the entry, no link.
+    expect(
+      select(page, '[id="david-and-solomon"] .timeline-entry__tradition'),
+    ).toHaveLength(1);
+    expect(
+      select(page, '[id="david-and-solomon"] .timeline-entry__jump'),
+    ).toHaveLength(0);
+    expect(select(page, '[id="david-and-solomon-tradition"]')).toHaveLength(0);
+  });
+
+  test("an entry and its moved Tradition Date link to each other, naming the tradition, the gap and its direction", () => {
+    const link = (id: string) =>
+      select(page, `[id="${id}"] .timeline-entry__jump a`).map(a => [
+        a.attrs.href,
+        squash(a.text),
+      ]);
+    expect(link("daniel")).toEqual([
+      [
+        "#daniel-tradition",
+        "↑ Got Questions Ministries, an evangelical ministry, holds 540–530 BCE, roughly 370 years earlier",
+      ],
+    ]);
+    expect(link("daniel-tradition")).toEqual([
+      [
+        "#daniel",
+        "↓ Scholarly and reference sources: 167–164 BCE, roughly 370 years later",
+      ],
+    ]);
+    // Jericho's tradition is later than the scholars' date.
+    expect(link("jericho")).toEqual([
+      [
+        "#jericho-tradition",
+        "↓ Associates for Biblical Research, an evangelical apologetics ministry, holds about 1400 BCE, roughly 140 years later",
+      ],
+    ]);
+    expect(link("jericho-tradition")).toEqual([
+      [
+        "#jericho",
+        "↑ Scholarly and reference sources: 1550–1520 BCE, roughly 140 years earlier",
+      ],
+    ]);
+    expect(
+      select(page, '[id="daniel-tradition"]')[0]?.attrs["aria-label"],
+    ).toBe(
+      "Daniel. Got Questions Ministries, an evangelical ministry, holds 540 to 530 BCE. A tradition’s date for an entry scholars date elsewhere.",
+    );
+  });
+
+  test("a moved Tradition Date is not an entry of its own in the structured data", () => {
+    const jsonLd = select(page, 'script[type="application/ld+json"]')
+      .map(s => s.text)
+      .join("");
+    expect(jsonLd).toContain("Daniel");
+    expect(jsonLd).not.toContain("-tradition");
   });
 
   test("a tick placed by a tradition's date is marked as one", () => {
@@ -293,7 +383,7 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
 
   test('a card\'s setting line reads "Set in" and its display', () => {
     const line = select(page, '[id="daniel"] .timeline-entry__setting');
-    expect(line.map(e => e.text.trim())).toEqual([
+    expect(line.map(e => squash(e.text))).toEqual([
       "Set in the Babylonian exile, in the sixth century BCE",
     ]);
   });

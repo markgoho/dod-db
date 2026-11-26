@@ -145,6 +145,12 @@ function checkEntry(
 
   errors.push(...unknownRelated(at, entry.related, terms));
 
+  // A Tradition Date at its own year takes the id `<entry>-tradition` (#214).
+  if (id.endsWith("-tradition"))
+    errors.push(
+      `${at}: an entry id can't end in "-tradition"; that anchor belongs to an entry's Tradition Date`,
+    );
+
   for (const { key, source } of keyedCites(entry)) {
     if (!registry[source]) {
       errors.push(`${at}: citation ${key} names unknown source "${source}"`);

@@ -106,6 +106,17 @@
   justify-self: center;
 }
 
+/* The moved Tradition Date's mark (#214): a hollow diamond, as on the axis. */
+.timeline-legend__swatch--moved {
+  background: var(--tan-000);
+  block-size: var(--space-2xs);
+  border: var(--border-width-sm) solid var(--tan-900);
+  border-radius: 0;
+  inline-size: var(--space-2xs);
+  justify-self: center;
+  rotate: 45deg;
+}
+
 /* ---------- Lane heads and the axis ---------- */
 
 .timeline-lanes {
@@ -200,8 +211,29 @@
   padding: var(--space-s) var(--space-s) 0;
 }
 
+/*
+  Arriving at an entry by link: the card whose date placed it is ringed, as
+  its minimap tick is: the scholarly card, or the tradition card for an entry
+  placed by a tradition's date and for a Tradition Date at its own year (#214).
+*/
 .timeline-entry:target > .timeline-entry__card {
   background: var(--tan-100);
+}
+
+.timeline-entry:not(
+    .timeline-entry--by-tradition,
+    .timeline-entry--moved
+  ):target
+  > .timeline-entry__card,
+.timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved):target
+  > .timeline-entry__tradition {
+  outline: var(--border-width-md) solid var(--color-action);
+  outline-offset: var(--space-4xs);
+}
+
+/* The entry's own outline would ring the whole row, both lanes; the card's ring says it. */
+.timeline-entry:target:focus {
+  outline: none;
 }
 
 /* A tradition-placed entry: the scholarly card holds the verdict on a muted surface. */
@@ -288,7 +320,8 @@
 }
 
 .timeline-entry__node::before,
-.timeline-entry--paired > .timeline-entry__node::after {
+.timeline-entry--paired > .timeline-entry__node::after,
+.timeline-entry--moved > .timeline-entry__node::after {
   border-block-start: var(--border-width-sm) solid var(--tan-900);
   content: "";
   inline-size: calc((var(--space-xl) - var(--node-size)) / 2);
@@ -301,7 +334,8 @@
   inset-inline-end: 100%;
 }
 
-.timeline-entry--paired > .timeline-entry__node::after {
+.timeline-entry--paired > .timeline-entry__node::after,
+.timeline-entry--moved > .timeline-entry__node::after {
   border-block-start-style: dashed;
   border-color: var(--tan-500);
   inset-inline-start: 100%;
@@ -317,6 +351,35 @@
   margin-block-start: calc(var(--node-at) - var(--space-xs));
   min-inline-size: 0;
   padding: var(--space-xs);
+}
+
+/*
+  A Tradition Date at its own year (#214): the tradition card alone, on a
+  hollow diamond, a different mark from an entry placed by a tradition's date.
+  It names its entry and links back to it; the entry's card links here.
+*/
+.timeline-entry--moved > .timeline-entry__node {
+  background: none;
+  border: 0;
+}
+
+/* The diamond, on ::before: the left connector's place, as this row has no scholarly card. */
+.timeline-entry--moved > .timeline-entry__node::before {
+  background: var(--tan-000);
+  border: var(--border-width-sm) solid var(--tan-900);
+  inline-size: auto;
+  inset: 15%;
+  rotate: 45deg;
+  translate: none;
+}
+
+.timeline-entry__moved-title {
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.timeline-entry__jump {
+  font-size: var(--step--1);
 }
 
 /* Entries not placed on the timeline: plain cards at the reading measure. */
@@ -368,9 +431,16 @@
     margin-inline-start: var(--space-s);
   }
 
-  .timeline-entry__node::before,
-  .timeline-entry--paired > .timeline-entry__node::after {
+  .timeline-entry__node:not(.timeline-entry--moved > *)::before,
+  .timeline-entry--paired > .timeline-entry__node::after,
+  .timeline-entry--moved > .timeline-entry__node::after {
     display: none;
+  }
+
+  /* No scholarly card above it: level with its node. */
+  .timeline-entry--moved > .timeline-entry__tradition {
+    grid-row: 1;
+    margin-inline-start: 0;
   }
 }
 

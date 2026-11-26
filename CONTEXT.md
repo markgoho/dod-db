@@ -149,7 +149,7 @@ The **Synthesis Page** that places events and the composition of **Scriptural Bo
 _Avoid_: Chronology, dating page
 
 **Timeline Entry**:
-One subject on the **Timeline**, either an event or the composition of a text, with its **Critical Date** or a sourced statement that the sources give it no firm date or don't treat it as historical, and optionally a **Tradition Date** beside it.
+One subject on the **Timeline**, either an event or the composition of a text, with its **Critical Date** or a sourced statement that the sources give it no firm date or don't treat it as historical, and optionally a **Tradition Date**.
 _Avoid_: Row, dated claim
 
 **Critical Date**:
@@ -217,6 +217,7 @@ _Avoid_: Citation, snippet source
 - A **Timeline Entry** needs at least one **Trigger Claim** and one Scholarly or Reference **External Source** for its **Critical Date**, or for a statement that the sources date it only conditionally or not at all.
 - A date a source gives only on a condition ("if it is historical") is not a **Critical Date**.
 - The **Timeline** has two lanes: **Critical Dates** and scholars' statements on the left, **Tradition Dates** on the right. A **Timeline Entry** is placed by its **Critical Date**; one with no **Critical Date** is placed by its **Tradition Date**, in the tradition's lane only, beside the cited statement of what scholars say (#162, 2026-11-24, reversing #97's placement rule).
+- A **Timeline Entry** with both dates shows its **Tradition Date** at that date's own year, in the tradition's lane, and the two cards link to each other; when the two dates' middles are under 30 years apart, the **Tradition Date** stays beside the entry (#214, 2026-11-26, reversing #162's beside-the-entry display).
 - A **Timeline Entry** shows a **Tradition Date** only when one of its **Trigger Claims** states the tradition's side.
 - A **Timeline Entry** is worded for what its sources date, even when that is narrower than the **Trigger Claim**.
 - Only a composition **Timeline Entry** has a **Setting**, cited to Scholarly or Reference **External Sources** only and worded no more strongly than they are (#167 §4).
