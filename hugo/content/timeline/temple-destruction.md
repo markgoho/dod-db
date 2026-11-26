@@ -1,9 +1,9 @@
 ---
 title: "Second Temple destroyed"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-26
 related:
   {
     books: [mark],
