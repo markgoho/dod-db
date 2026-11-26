@@ -3064,3 +3064,45 @@ pakkala-2017-origins-yahwism:
   url: "https://helda.helsinki.fi/server/api/core/bitstreams/a58a069e-60fc-42f0-b778-ce934c4cb241/content"
   hostAuthored: false
   tradition: null
+
+porten-ej-temple:
+  author: "Bezalel Porten"
+  title: "Temple: Second Temple, The Temple of Zerubbabel"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/temple"
+  hostAuthored: false
+  tradition: null
+
+britannica-temple-of-jerusalem:
+  author: null
+  title: "Temple of Jerusalem"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, revised by Adam Zeidan"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/topic/Temple-of-Jerusalem"
+  hostAuthored: false
+  tradition: null
+
+nabre-haggai-intro:
+  author: null
+  title: "Introduction to Haggai"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible, open"
+  url: "https://bible.usccb.org/bible/haggai/0"
+  hostAuthored: false
+  tradition: null
