@@ -18,6 +18,8 @@ Worked examples, read all four before building; all four are the bar to meet. Ea
 - `the-creation-stories-in-genesis`: the default form for a two-sided comparison where order matters. Every panel is bolt-split, Genesis 1 against Genesis 2. The sequence ("Humans last" / "The man first") sits on the plates, because the art can't assert an order. God appears only as light on one side and only as hands on the other, so the art keeps the page's contrast. Read it for 1/2 badges with the source hedge in the legend, regenerating art to clear the bolt, and seven panels (every drawable difference in `differ`) with a double-wide last panel, re-laid out three to a row on the poster with smaller plates.
 - `pauline-authorship`: the default form for a count sorted into groups. Four panels in time order, one group per panel; who holds the pen in the art is the group's verdict, and each count ("7 letters") is a plate with one chip per letter. Read it for plates holding many chips, a single bolt-split panel among unsplit ones, and a label that carries its panel's chips.
 
+For exact marks drawn in SVG (a pictogram where the count is the picture, step 2), read the retired Pauline pictogram in git history: `git show 1b3ada8:hugo/layouts/partials/scholarship-custom/pauline-authorship.html` and `git show 1b3ada8:hugo/assets/css/scholarship-custom/pauline-authorship.css`. Take its method (each drawing defined once and reused, every unit sized by one custom property, separate poster and card overrides), not its starburst or its look.
+
 ## The default form: an illustrated comic page
 
 Unless the user asks for something else, build this. It is what the owner approved on Homosexuality and the Bible, Noah's Ark and the Creation Stories (2026-11-25).
@@ -106,7 +108,7 @@ Before writing markup, list each label, note, glyph and encoding with its source
 - Things the statements treat as one group look identical; a visual difference is a claim.
 - A drawing shows only what a statement says happened: a line that stops claims an ending.
 - Where sources differ (verse ranges, dates), use the `short`'s version.
-- Scripture appears as a linked reference, in the comic examples' link form (a BibleGateway NRSVUE link as an ink chip). The page quotes scholars, so the infographic cites verses and leaves their text to the link.
+- Scripture appears as a linked reference, in the comic examples' link form (a BibleGateway NRSVUE link as an ink chip). The page quotes scholars, so the infographic cites verses and leaves their text to the link. Every label carries a chapter or verse, never a bare book name. When the label stands for a whole book (who wrote a letter), link the verse where the book makes the claim the page is about. For authorship that is the opening verse, which names the sender, or, for Hebrews, names none (`Romans 1:1`, `Hebrews 1:1`). That verse is the claim the statement reports ("claim to be written by Paul"). It is not a passage the page quotes.
 - A claim that only one cited author makes stays in the answer below, attributed there.
 - Generated art is traced too. Every figure and prop in it is either something a statement supports or neutral setting (a wall, a desk). An illustration of what a statement names (a same-sex couple for "the modern concept of sexual orientation") is fine; an invented detail that reads as evidence (a tablet the scribe is comparing against) is not.
 - A caveat in the statement that the infographic drops goes in the report, so the owner can decide.
