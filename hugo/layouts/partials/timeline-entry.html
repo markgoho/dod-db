@@ -131,6 +131,50 @@
       <p class="timeline-entry__date timeline-entry__date--tradition">
         {{- .display -}}
       </p>
+      {{- /* PROTOTYPE (tradition gap, variant F): the gap inside the tradition card, on a scale of just these two ranges. */}}
+      {{ if and (eq $.by "critical") (isset . "from") $c }}
+        {{ $cF := float $c.from }}
+        {{ $cT := float ($c.to | default (cond (eq $c.precision "century") (add $cF 99) $cF)) }}
+        {{ $tF := float .from }}
+        {{ $tT := float (.to | default .from) }}
+        {{ $g := sub (div (add $cF $cT) 2) (div (add $tF $tT) 2) }}
+        {{ $lo := math.Min $cF $tF }}
+        {{ $hi := math.Max $cT $tT }}
+        {{ $pad := math.Max (mul (sub $hi $lo) 0.08) 20 }}
+        {{ $lo = sub $lo $pad }}
+        {{ $span := sub (add $hi $pad) $lo }}
+        <div class="gap-mini">
+          <p class="gap-mini__gap">
+            {{- if lt (math.Abs $g) 30 -}}
+              About the same as scholars’ date
+            {{- else -}}
+              <strong
+                >~{{ lang.FormatNumber 0 (mul (math.Round (div (math.Abs $g) 10)) 10) }}
+                years {{ cond (gt $g 0) "earlier" "later" }}</strong
+              >
+              than scholars’ date
+            {{- end -}}
+          </p>
+          <div class="gap-mini__track" aria-hidden="true">
+            <span
+              class="gap-chart__link"
+              style="--from: {{ div (sub (math.Min $cT $tT) $lo) $span }}; --to: {{ div (sub (math.Max $cF $tF) $lo) $span }}"></span>
+            <span
+              class="gap-chart__range gap-chart__range--tradition"
+              style="--from: {{ div (sub $tF $lo) $span }}; --to: {{ div (sub $tT $lo) $span }}"></span>
+            <span
+              class="gap-chart__range gap-chart__range--critical"
+              style="--from: {{ div (sub $cF $lo) $span }}; --to: {{ div (sub $cT $lo) $span }}"></span>
+          </div>
+          <p class="gap-mini__keys" aria-hidden="true">
+            {{ if gt $g 0 }}
+              <span>Tradition</span><span>Scholars</span>
+            {{ else }}
+              <span>Scholars</span><span>Tradition</span>
+            {{ end }}
+          </p>
+        </div>
+      {{ end }}
     </div>
   {{ end }}
 
@@ -150,7 +194,8 @@
         {{- else }}
           {{ cond (gt $g 0) "↑" "↓" }} Tradition:
           ~{{ lang.FormatNumber 0 (mul (math.Round (div (math.Abs $g) 10)) 10) }}
-          yrs {{ cond (gt $g 0) "earlier" "later" }}
+          yrs
+          {{ cond (gt $g 0) "earlier" "later" }}
         {{ end -}}
       </span>
       {{ $t.display }}

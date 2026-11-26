@@ -4,7 +4,8 @@
 html:not([data-proto="b"]) .timeline-minimap__gap,
 html:not([data-proto="b"]) .timeline-minimap__gap-legend,
 html:not([data-proto="c"], [data-proto="cd"]) .gap-chart,
-html:not([data-proto="d"], [data-proto="cd"]) .gap-strip {
+html:not([data-proto="d"], [data-proto="cd"]) .gap-strip,
+html:not([data-proto="f"]) .gap-mini {
   display: none;
 }
 
@@ -432,4 +433,41 @@ html[data-proto="e"] .echo-stub {
   border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
   pointer-events: none;
   position: absolute;
+}
+
+/* ---------- Variant F: the gap inside the tradition card ---------- */
+
+.gap-mini {
+  border-block-start: var(--border-width-sm) dashed var(--tan-500);
+  display: grid;
+  gap: var(--space-3xs);
+  margin-block-start: var(--space-3xs);
+  padding-block-start: var(--space-2xs);
+}
+
+.gap-mini__gap {
+  font-size: var(--step--1);
+  margin: 0;
+}
+
+.gap-mini__track {
+  block-size: var(--space-xs);
+  position: relative;
+}
+
+.gap-mini__track > .gap-chart__range {
+  block-size: var(--space-xs);
+  inset-block-start: 0;
+}
+
+.gap-mini__track > .gap-chart__link {
+  inset-block-start: calc(var(--space-xs) / 2);
+}
+
+.gap-mini__keys {
+  color: var(--color-text-muted);
+  display: flex;
+  font-size: var(--step--2);
+  justify-content: space-between;
+  margin: 0;
 }
