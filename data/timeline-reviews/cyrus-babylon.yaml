@@ -1,7 +1,7 @@
 # Review record for the Timeline Entry `cyrus-babylon` (/timeline/#cyrus-babylon; #93 shape). Not rendered.
 # Issue #191 (from #108), “Timeline Entry: Cyrus takes Babylon”. Issue notes: date the conquest, not the return, unless a source dates the return; critical side only; candidate `anchor` for period-dated entries (Persian period, e.g. Job).
 # Anchor candidacy: recorded here only. No published entry is edited to anchor to this one; Job's own review says its sources don't name the Persian period. Follow-on filed as an issue.
-# Sourcing test, 2026-11-26: met. Reference sources date the conquest outright to 539 BCE (Silverman, Bible Odyssey; Coogan and Chapman ch. 21; Dandamayev, Encyclopaedia Iranica “Babylonia i”) and a Scholarly source does too (Waerzeggers 2021, De Gruyter). No source read gives another year for the fall of Babylon; 538 appears only for the edict (Porten, EJ “Temple”; Rappaport, EJ “Cyrus”), the start of the return (Coogan ch. 21), Cambyses made king of Babylonia (Iranica “Babylonia i”) and the Cyrus Cylinder (“ca. 538”, Silverman's image caption). Kind: event. No Tradition Date: no Trigger Claim states the tradition's side. No setting (event entry).
+# Sourcing test, 2026-11-26: met. Reference sources date the conquest outright to 539 BCE (Silverman, Bible Odyssey; Coogan and Chapman ch. 21; Dandamayev, Encyclopaedia Iranica “Babylonia i”) and a Scholarly source does too (Waerzeggers 2021, De Gruyter; second pass: cut, it dates the attack, not the taking; the test stays met on the three Reference sources, two inside the 30-year window). No source read gives another year for the fall of Babylon; 538 appears only for the edict (Porten, EJ “Temple”; Rappaport, EJ “Cyrus”), the start of the return (Coogan ch. 21), Cambyses made king of Babylonia (Iranica “Babylonia i”) and the Cyrus Cylinder (“ca. 538”, Silverman's image caption). Kind: event. No Tradition Date: no Trigger Claim states the tradition's side. No setting (event entry).
 # Return: the issue allows it when a source dates it; Coogan ch. 21 dates the start of the return (“beginning in 538”), so it is in the note, not the display.
 # How Babylon fell (#99: sources differ → show both): Iranica “Cyrus iii” gives the Babylonian chronicle's surrender “without a struggle” and Herodotus and Xenophon's “bitter fighting”; both in the note, each attributed. E115's “besieges—lays siege to Babylon” is not kept as a Trigger Claim (see below), so the note does not answer it.
 # Persian period's end: the show says 332 (E187); Silverman gives Darius III's defeat by Alexander as 334–330 BCE, HarperCollins “Persia” “ca. 330 BCE”. The note gives Silverman's range as he gives it; the E187 Trigger Claim keeps its 332 and is shown apart (CONTEXT.md).
@@ -10,92 +10,74 @@
 # agent: the first pass (2026-11-26). Two research agents (registry reuse; new sources) fetched every source by curl into separate scratch folders, HTML tags stripped and entities decoded (pdftotext for Waerzeggers). bible.usccb.org (NABRE Daniel, Haggai, Ezra; Isaiah on retry) and Britannica returned 403 and were not read. Every cited quote script-matched by the lead agent against the saved text (NFKC, whitespace, quotes, dashes, soft hyphens, entities normalised): 8/8, zero misses, each found once. Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 3/3.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Waerzeggers's quote dates “Cyrus's attack on Babylonia in 539 BCE”, not the city's fall by name; the chapter's title and body are on Cyrus's entry into Babylon. Enough for the display? (2) Iranica “Cyrus iii” paragraph says “In the spring of the latter year”; the year (539) is in the previous paragraph's last sentence (“the Persian advance on “Assyria” (i.e., Babylonia) in 539 B.C.E.”). The note leans on “Babylonia i” for “29 October 539”. (3) Coogan ch. 21 is a new id, same textbook and edition as ch. 18, 20, 22. (4) Waerzeggers registered with the Leiden repository handle as URL (the publisher page is not open); the chapter footer misprints the DOI with an extra 0 (“09781501514661-002”); the registry uses the Leiden record's DOI. (5) Iranica registry: year is the print volume's (1988, 1993), edition the online update date. (6) Note's “Many exiles returned” paraphrases Coogan's “many returned”, whose subject is “the Jews in Mesopotamia”.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): a fresh agent that did not build the entry, working from its own scratch folder only. Re-fetched every source by curl: bibleodyssey.org/articles/the-persian-period/ (byline Jason M. Silverman, dated August 21, 2026); OUP Learning Link ch. 21 summary; iranicaonline.org babylonia-i (Print Detail Vol. III, Fasc. 3, pp. 326-334, Published December 15, 1988, Last Updated March 22, 2013) and cyrus-iii (Vol. VI, Fasc. 5, pp. 516-521, Published December 15, 1993, Last Updated August 29, 2013), both by Dandamayev; Waerzeggers: the registry handle (hdl.handle.net/1887/3281359) redirects to a Leiden Primo page that serves curl only a JavaScript shell, so the PDF came from scholarlypublications.universiteitleiden.nl/handle/1887/3281359 (download link /download/1887/3281359/1), pdftotext. HTML tags stripped, entities decoded, one line per block element. Quotes re-matched by one script (NFKC, soft hyphens, line-break hyphens, whitespace, curly quotes and dashes normalised): 8/8, 0 misses, each found once. Locators checked by position: Silverman's quote opens the paragraph under the h3 heading named; Coogan's two quotes are the paragraph's fourth and fifth sentences (the paragraph opens “At the end of Nebuchadrezzer’s long reign”, spelling as on the page); “Babylonia i” opening paragraph is the first under “I. Political history.”; its 29 October sentence is in the paragraph named; “Cyrus iii” quotes are in the paragraph named, in that order; Waerzeggers's quote is in the chapter's opening paragraph on p. 79 (the next page head reads 80). Trigger Claims re-matched by script as normalised substrings of the line at that timestamp and speaker in the final Transcripts (E187 2026-11-01-no-one-can-see-god-and-live-except-these-74-guys.txt; E34 2023-11-27-episode-34-november-27-2023-the-lions-den.txt; E71 2024-08-12-episode-71-august-12-2024-the-rapture-is-not-coming.txt): 3/3; read about two minutes either side (E187 00:51:30–00:55:30; E34 00:32:16–00:36:00; E71 00:49:30–00:53:26).
+# Second pass changed: (a) critical/4 (Waerzeggers 2021, “during Cyrus’s attack on Babylonia in 539 BCE”) moved to `uncited`: the quote dates the attack, not the taking of Babylon; the chapter's only statement of the subject (“one day before Cyrus entered Babylon as its new king”) gives no year, and its body dates the events in Babylonian months only. When in doubt, cut. (b) critical/5–7 (Iranica “Babylonia i” “On 29 October 539 Cyrus himself entered Babylon”; Iranica “Cyrus iii” chronicle surrender and Herodotus/Xenophon fighting) moved to `uncited`: #80's 30-year window. Both articles are print 1988 and 1993 (before ~1996); the pages' “Last Updated” 2013 isn't shown to be a revision of the text, and precedent (EJ 1971 text, Sáenz-Badillos 1993 on hebrew-language; Metzger 1987, Brakke 1994 on christian-canon) treats such text as outside. Each was the only source for its note sentence, so the note's first two sentences go: “Cyrus entered Babylon on 29 October 539. The Babylonian chronicle says the city surrendered without a struggle; Herodotus and Xenophon report that it fell only after bitter fighting.” Iranica “Babylonia i” opening (critical/3) is kept: the display has in-window sources (Silverman 2026; Coogan 2019), and #80 says one source inside the window is enough (as on abraham, “the 30-year window rests on Coogan 2019 and Hendel 2018”). Old critical/8 renumbered critical/4. Registry entries left in place (Waerzeggers and Iranica “Cyrus iii” now cited by no page); `sources` review keys for them dropped. (c) note's return sentence: “Many exiles returned, beginning in 538.” became “Many of the Jews in Mesopotamia returned, beginning in 538.”, Coogan's subject (flag 6). Note now reads in full: “Many of the Jews in Mesopotamia returned, beginning in 538. Persian control of the Levant lasted until Alexander's defeat of Darius III (334–330 BCE).” Title, display, from and precision unchanged; no Trigger Claim cut.
+# Second-pass rulings on the first pass's flags: (1) Not enough: cut (see (a)). The same test passes “Babylonia i” opening (critical/3): “lasted until it was conquered by the Persians in 539 B.C.” dates the outcome, the conquest of the Babylonian kingdom whose capital Babylon was; Waerzeggers's “attack” dates the campaign, not its outcome. (2) Confirmed (“the latter year” is 539 from the previous paragraph's last sentence), but moot: the “Cyrus iii” cites are cut on the window (see (b)). (3) URL resolves to the ch. 21 summary (“Returns from Exile”); page title “A Brief Introduction to the Old Testament 4e Student Resources”; new id fine. (4) Confirmed: the PDF's first-page footer reads “https://doi.org/10.1515/09781501514661-002”, its cover sheet “doi:10.1515/9781501514661-002”; moot after the cut. (5) Confirmed from the pages' Print Detail, Published and Last Updated lines; the print year is what puts them outside the window (see (b)). (6) Narrowed (see (c)).
+# Flags for publish: (1) The display rests on three Reference sources (Silverman 2026; Coogan and Chapman ch. 21, 2019; Iranica “Babylonia i”, 1988 print), two inside the 30-year window; no Scholarly source. Entry rule met. (2) The window cut (b) is a when-in-doubt call: if the Iranica 2013 online update is ruled a revision, critical/5–7 and the note's two sentences could come back as the first pass had them; the second pass adds no citations. In-window leads for the same facts, uncited: Waerzeggers 2021 pp. 79–80 (Nabonidus Chronicle timeline in Babylonian months; Sippar's “surrender without a fight”; “the siege of Babylon”). (3) With the how-it-fell sentence gone, the entry no longer shows the chronicle vs Herodotus/Xenophon split (#99); no in-window source read states both. (4) Waerzeggers and Iranica “Cyrus iii” registry entries are now cited by no page; keep or drop at publish. (5) E187 gives the Persian period's end as 332; the note gives Silverman's 334–330 (Trigger Claim shown apart, #99). (6) E34 says “Persia”, not Cyrus; fine, the Trigger Claim gates the subject (CONTEXT.md).
+delegation:
+  { by: owner, date: 2026-11-23, issue: "#110", secondPass: 2026-11-26 }
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Silverman, Bible Odyssey (August 21, 2026), section “Why do biblical scholars care about the Persian Empire?”. Dates Cyrus's conquest of Babylon: 539 BCE, flat. Also backs the note's last sentence (334–330 BCE).",
+      note: "Silverman, Bible Odyssey (August 21, 2026), section “Why do biblical scholars care about the Persian Empire?”. Dates Cyrus's conquest of Babylon: 539 BCE, flat. Also backs the note's last sentence (334–330 BCE). Second pass: matched once; opens the paragraph under that h3 heading. Conquest of Babylon 539 BCE flat; end of Persian control “Darius III’s defeat by Alexander III” 334–330 BCE, as the note gives it. Pass.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Coogan and Chapman ch. 21 summary, paragraph beginning “At the end of Nebuchadrezzer’s long reign” (spelling as on the page). Cyrus captured Nabonidus and entered Babylon in 539 BCE, flat.",
+      note: "Coogan and Chapman ch. 21 summary, paragraph beginning “At the end of Nebuchadrezzer’s long reign” (spelling as on the page). Cyrus captured Nabonidus and entered Babylon in 539 BCE, flat. Second pass: matched once, the paragraph's fourth sentence. 539 flat; dates Cyrus's entry, the subject. Pass.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Dandamayev, Iranica “Babylonia i”, opening paragraph. Babylonia conquered by the Persians in 539 B.C., flat.",
+      note: "Dandamayev, Iranica “Babylonia i”, opening paragraph. Babylonia conquered by the Persians in 539 B.C., flat. Second pass: matched once, first paragraph under “I. Political history.”. Dates the kingdom's conquest, not the city by name and not Cyrus by name; kept, as it dates the outcome (unlike Waerzeggers's “attack”) and its date of the outcome is flat. 1988 print, outside the 30-year window, kept: the display has Silverman 2026 and Coogan 2019 inside it (#80: one source inside the window is enough). Pass.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Waerzeggers 2021, opening paragraph of the chapter (p. 79). Cyrus's attack on Babylonia in 539 BCE, flat. See flag 1.",
-    }
-  critical/5:
-    {
-      agent: pass,
-      owner: "",
-      note: "Dandamayev, Iranica “Babylonia i”, paragraph beginning “According to the Babylonian Chronicle, in the spring of 539”. Backs the note's first sentence (29 October 539). Quote stops before “and the people laid on a triumphal welcome for him”.",
-    }
-  critical/6:
-    {
-      agent: pass,
-      owner: "",
-      note: "Dandamayev, Iranica “Cyrus iii”, paragraph beginning “In the spring of the latter year”. Backs “surrendered without a struggle”, attributed to the Babylonian chronicle. See flag 2.",
-    }
-  critical/7:
-    {
-      agent: pass,
-      owner: "",
-      note: "Same paragraph, after “In other sources, however, the account of the fall of Babylon is completely different.” Backs Herodotus and Xenophon's “bitter fighting”.",
-    }
-  critical/8:
-    {
-      agent: pass,
-      owner: "",
-      note: "Coogan and Chapman ch. 21, same paragraph, the sentence after critical/2. Backs “Many exiles returned, beginning in 538.” See flag 6.",
+      note: "Coogan and Chapman ch. 21, same paragraph, the sentence after critical/2. Backs “Many exiles returned, beginning in 538.” See flag 6. Second pass: renumbered from critical/8 after the cuts. Matched once, the paragraph's fifth sentence. Note narrowed to the source's subject: “Many of the Jews in Mesopotamia returned, beginning in 538.” Pass.",
     }
 triggers:
   187@00:53:37:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. The whole 00:53:37 turn but its last sentence (“Who can guess who comes along in 332 BCE?”). Dates the conquest to 539, flat; gives the Persian period's end as 332 (the note gives Silverman's 334–330). Read 00:51:31–00:55:27 (period-names discussion).",
+      note: "states: critical. The whole 00:53:37 turn but its last sentence (“Who can guess who comes along in 332 BCE?”). Dates the conquest to 539, flat; gives the Persian period's end as 332 (the note gives Silverman's 334–330). Read 00:51:31–00:55:27 (period-names discussion). Second pass: matched at 00:53:37.160, Dan McClellan; read 00:51:30–00:55:30. 539 flat; the turn's last sentence (332, Alexander) is cut cleanly, the stored text keeps “goes down to 332 BCE”. Pass.",
     }
   34@00:34:10:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Second sentence of the 00:34:10 turn, answering Dan Beecher's “Were there Persian Jews?”. “so you this thus beginneth” as transcribed. Read 00:32:31–00:35:05 (Daniel 5–6, Darius the Mede).",
+      note: "states: critical. Second sentence of the 00:34:10 turn, answering Dan Beecher's “Were there Persian Jews?”. “so you this thus beginneth” as transcribed. Read 00:32:31–00:35:05 (Daniel 5–6, Darius the Mede). Second pass: matched at 00:34:10.770, Dan McClellan; read 00:32:16–00:36:00. “Persia takes over, conquers Babylon in 539 BCE”, flat, no hedge dropped. Pass.",
     }
   71@00:51:20:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Third sentence of the 00:51:20 turn; the turn opens on the Babylonian destruction “culminating around 587 BCE”. Dates the conquest to 539, flat. Read 00:50:22–00:53:26 (Dan Beecher asks for the history behind Daniel; the next turn goes on to Alexander “in the late 300s BCE”).",
+      note: "states: critical. Third sentence of the 00:51:20 turn; the turn opens on the Babylonian destruction “culminating around 587 BCE”. Dates the conquest to 539, flat. Read 00:50:22–00:53:26 (Dan Beecher asks for the history behind Daniel; the next turn goes on to Alexander “in the late 300s BCE”). Second pass: matched at 00:51:20.470, Dan McClellan; read 00:49:30–00:53:26. “in 539 you have Cyrus the Great who comes in … and conquers the Babylonians”, flat. Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Title and display date the conquest of Babylon; all four display sources date it (critical/1–4). Cyrus's entry, the accounts of how the city fell, the return and the Persian period's end are in the note, each cited.",
+      note: "Title and display date the conquest of Babylon; all four display sources date it (critical/1–4). Cyrus's entry, the accounts of how the city fell, the return and the Persian period's end are in the note, each cited. Second pass: three display sources after the Waerzeggers cut (critical/1–3), each dating the conquest to 539. Cyrus's entry and the accounts of how the city fell are cut (window; header (b)); the note keeps the return (critical/4) and the Persian period's end (critical/1). Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Conquest year: no split among sources read (539 throughout). How the city fell: the chronicle's surrender vs Herodotus and Xenophon's fighting, both shown, each attributed (#99).",
+      note: "Conquest year: no split among sources read (539 throughout). How the city fell: the chronicle's surrender vs Herodotus and Xenophon's fighting, both shown, each attributed (#99). Second pass: conquest year confirmed, no source read gives another. How the city fell is no longer shown: both sides rested on Iranica “Cyrus iii” (1993), cut on the window. Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; all three triggers states: critical.",
+      note: "No Tradition Date; all three triggers states: critical. Second pass: confirmed. Pass.",
     }
   tradition-named:
     { agent: pass, owner: "", note: "No Tradition sources cited." }
@@ -103,7 +85,7 @@ rules:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date cited. The display sources give 539 flat; HarperCollins “Persia” (“ca. 550”, “ca. 330”) is hedged and uncited.",
+      note: "No conditional date cited. The display sources give 539 flat; HarperCollins “Persia” (“ca. 550”, “ca. 330”) is hedged and uncited. Second pass: confirmed; the three display sources give 539 flat. Pass.",
     }
 sources:
   silverman-bo-persian-period:
@@ -111,35 +93,21 @@ sources:
       agent: pass,
       owner: "",
       edition: "Bible Odyssey, August 21, 2026",
-      note: "Reference (Bible Odyssey, SBL). Existing registry entry. Byline Jason M. Silverman, University of Helsinki.",
+      note: "Reference (Bible Odyssey, SBL). Existing registry entry. Byline Jason M. Silverman, University of Helsinki. Second pass: byline, date and Helsinki bio confirmed on the page. Pass.",
     }
   coogan-brief-4e-summary-ch21:
     {
       agent: pass,
       owner: "",
       edition: "4th ed. (2019), OUP Learning Link",
-      note: "Reference; new id, same textbook and edition as ch. 18, 20, 22. Chapter title “Returns from Exile”. See flag 3.",
+      note: "Reference; new id, same textbook and edition as ch. 18, 20, 22. Chapter title “Returns from Exile”. See flag 3. Second pass: URL serves the ch. 21 summary; page title carries “4e” (4th ed.). Pass.",
     }
   dandamayev-iranica-babylonia-i:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Iranica III/3 (1988), pp. 326–334; online, last updated March 22, 2013",
-      note: "Reference: a signed scholarly encyclopedia article. See flag 5.",
-    }
-  dandamayev-iranica-cyrus-ii:
-    {
-      agent: pass,
-      owner: "",
-      edition: "Encyclopaedia Iranica VI/5 (1993), pp. 516–521; online, last updated August 29, 2013",
-      note: "Reference: a signed scholarly encyclopedia article. See flag 5.",
-    }
-  waerzeggers-2021-day-before-cyrus:
-    {
-      agent: pass,
-      owner: "",
-      edition: "Studies in Ancient Near Eastern Records 27 (De Gruyter, 2021), pp. 79–88",
-      note: "Scholarly: a chapter in an edited academic volume, by an Assyriologist (Leiden). Publisher's version in the Leiden repository (Taverne). See flag 4.",
+      note: "Reference: a signed scholarly encyclopedia article. See flag 5. Second pass: volume, fascicle, pages and dates confirmed on the page. Print 1988, outside the 30-year window; kept for the display only, which has Silverman 2026 and Coogan 2019 inside it. Pass.",
     }
 leads:
   - "Britannica “Cyrus II” and “Nabonidus”, British Museum Cyrus Cylinder object page, Met Heilbrunn “Achaemenid Persian Empire”: blocked (403/429); not read."
@@ -154,9 +122,12 @@ uncited:
   - "Silverman, image caption: Cyrus Cylinder “ca. 538 BCE”. Dates the object."
   - "Porten, EJ “Temple”: “Issued in 538 b.c.e., after his conquest of Babylon, Cyrus' rescript relates the return exclusively to the reconstruction of the Temple.” Dates the edict, not the conquest; not needed."
   - "Rappaport, EJ “Cyrus”: reign 559–529; edict 538; no year for the fall of Babylon. Out of scope."
+  - "Iranica “Babylonia i”, paragraph beginning “According to the Babylonian Chronicle, in the spring of 539”: “On 29 October 539 Cyrus himself entered Babylon”. Cited by the first pass (critical/5); cut by the second pass: 1988 print, outside the 30-year window, and the only source for the note's “Cyrus entered Babylon on 29 October 539”."
+  - "Iranica “Cyrus iii”, paragraph beginning “In the spring of the latter year”: “Two days later the Persians took Babylon, which surrendered without a struggle, according to the Babylonian chronicle.” and “both Herodotus (1.188-91) and Xenophon (Cyropaedia 7.5.7-32.58) reported that the Babylonians put up a determined resistance and lost their capital only after bitter fighting.” Cited by the first pass (critical/6, critical/7); cut by the second pass: 1993 print, outside the 30-year window, and the only source for the note's how-it-fell sentence."
   - "Iranica “Babylonia i”: Opis “In August, 539”; Sippar 10 October; Ugbaru entered Babylon unopposed two days later; archaeology supports surrender without a fight; Cambyses king of Babylonia in 538. Not needed; Opis date differs from “Cyrus iii”."
   - "Iranica “Cyrus iii”: Syria, Phoenicia and Palestine submitted “in 539 B.C.E., immediately after the fall of Babylon” (“most scholars believe”). Not needed."
-  - "Iranica “Cyrus iv. The Cyrus cylinder”: “Cyrus’ conquest of Babylon in 539 B.C.E.”. Not needed: four display sources."
+  - "Iranica “Cyrus iv. The Cyrus cylinder”: “Cyrus’ conquest of Babylon in 539 B.C.E.”. Not needed: three display sources (four before the second pass cut Waerzeggers); also 1993 print, outside the window."
+  - "Waerzeggers 2021, opening paragraph, p. 79: “a very small group of cuneiform tablets that informs us about the situation on the ground during Cyrus’s attack on Babylonia in 539 BCE.” Cited by the first pass (critical/4); cut by the second pass: dates the attack on Babylonia, not the taking of Babylon; the chapter's “one day before Cyrus entered Babylon as its new king” gives no year."
   - "Waerzeggers 2021, p. 79–80: Nabonidus Chronicle timeline (14 Tashritu, two days later, 3 Arahsamna); “the siege of Babylon”. Babylonian dates only; not needed."
   - "Encyclopedia.com: Encyclopedia of World Biography “Cyrus the Great” (“in 539 Cyrus captured Babylon”; reign 550–530) and World Encyclopedia (“captured Babylon (539 bc)”). Unsigned tertiary; not needed."
   - "Coogan ch. 20 and ch. 22, NABRE Isaiah intro, EJ “History: Kingdoms”: no date for the conquest."
