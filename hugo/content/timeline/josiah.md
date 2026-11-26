@@ -1,9 +1,8 @@
 ---
 title: "Josiah's reign and reform"
 entryKind: event
-draft: true
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-26
 related: { books: [2-kings, 2-chronicles], tags: [josiah], topics: [josiah] }
 watch: [Josiah, Josiah's reform, cult centralization, book of the law, Hilkiah]
 critical:
@@ -11,7 +10,7 @@ critical:
   from: -640
   to: -609
   precision: year
-  note: "The sources use both years for the start of his reign. Hayes dates his reform around 622 BCE, Britannica about 621 and the HarperCollins dictionary ca. 620; EJ dates the finding of the book of the law to his eighteenth year, 622. Coogan and Chapman call the biblical accounts of his reign idealized but find some substance to their portrait of it. Pakkala calls Josiah's reform in 2 Kings 23 one of the most edited and debated texts in the Hebrew Bible and thinks it very unlikely that the reforms took place in the sense 2 Kings intends."
+  note: "The sources use both years for the start of his reign. Hayes dates his reform around 622 BCE, Britannica about 621 and the HarperCollins dictionary ca. 620; the Encyclopaedia Judaica dates the finding of the book of the law to his eighteenth year, 622. Coogan and Chapman call the biblical accounts of his reign idealized but find some substance to their portrait of it. Pakkala calls Josiah's reform in 2 Kings 23 one of the most edited and debated texts in the Hebrew Bible and thinks it very unlikely that the reforms took place in the sense 2 Kings intends."
   cites:
     - source: nabre-kings-intro
       locator: "Introduction, ¶ 7"
