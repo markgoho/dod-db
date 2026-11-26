@@ -1,114 +1,157 @@
 # Review record for the Timeline Entry `daniel` (/timeline/#daniel; #93 shape). Not rendered.
 # Owner publish, 2026-11-24: the owner published every pilot entry on the agent passes recorded here, without the #110 independent second pass ("let's just publish now"). owner: pass records that decision, not a per-item owner check.
 # agent: the first pass from #100 (sourcing, 2026-11-22), #101 (layout) and the #134 build (2026-11-23). It does not count toward publish.
-# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # #134 re-match, 2026-11-23: quotes re-fetched by script and matched verbatim after normalising whitespace, quotes and dashes; Trigger Claims matched against the final Transcript line.
 # #137 locator pass, 2026-11-24: every citation's quote matched verbatim by script in a fetched copy of its source and found at its locator (Yale chapter and timestamp, Coogan section heading or paragraph, NABRE introduction paragraph, printed page, page heading). NABRE Daniel checked against the 2026-11-23 saved copy (403 today).
-review: 2026-11-24
+# Delegated re-review, 2026-11-26, for #181 (weigh the reported debate over Daniel's date) and #203 (Tradition Date drops Got Questions' "likely"). The owner asked for these re-reviews and delegated them (#93; extended to the Timeline, #110, 2026-11-23): no owner check. owner is now empty ("") on every item; the earlier owner: pass marks recorded the 2026-11-24 owner publish and are superseded by this pass and the `delegation` block.
+# Re-review first pass, 2026-11-26 (lead agent): every cited source fetched by curl into the lead's scratch folder and every quote copied from that saved text: NABRE /bible/daniel/0 (200 today), Open Yale RLST 145 lecture 23, gotquestions.org Book-of-Daniel, Suchard (Leiden repository PDF via the handle's download link, pdftotext), Bible Odyssey Valeta article (200 to curl today). 8/8 quotes script-matched (whitespace, quotes, dashes and HTML entities normalised), 0 misses. Both Trigger Claims re-matched as substrings of the final Transcript line at timestamp and speaker; unchanged.
+# #181 decision: the note now reports the debate. Suchard (Scholarly, JBL 2022, p. 121) calls the dating “a controversial issue” of long standing and says the sixth-century setting “was also assumed to be the time and place of the book’s composition, as it still is by some” (the sentence ends “scholars.” on p. 122, after the footnote block, so the quote stops at “by some”); Valeta's Bible Odyssey “Did You Know?” box says “Scholars debate the dating”. #99 allows a debated label only when a source says the date is debated; both do. #80: the dissent is reported by a Scholarly and a Reference source and attributed by name (Suchard) or by venue (the box's authorship is not stated, so “a Bible Odyssey article”, not Valeta). Weight follows the sources: display, from/to and title unchanged, since NABRE and Hayes still date the book outright and neither new source gives a date of its own; “both viewpoints have strong defenders” is not repeated. Got Questions is not framed as a side of the scholarly debate; it stays in the tradition lane. Added critical/4 (Suchard) and critical/5 (Valeta); both registry ids already existed.
+# #203 decision: Tradition display “540–530 BCE” → “Likely 540–530 BCE”, keeping Got Questions' hedge as the Job entry keeps CMI's “Presumably”. from/to and holder unchanged.
+# Flags for the second pass: (1) The Valeta box's authorship is not stated (under Valeta's byline); the note attributes it to “a Bible Odyssey article”. Cut if that reads as too strong. (2) The note's “as it still is by some” leans on Suchard's sentence, whose last word “scholars.” sits on p. 122; check the paraphrase is no wider. (3) Suchard argues (p. 135, abstract) the Dan 2–6 collection is no earlier than the second century BCE, “later than is often supposed”; that bears on the note's “perhaps the end of the third century” for chapters 1–6 (Hayes), but is one author's new proposal against what he calls the usual view, and outside #181's ask; uncited. (4) Card: the Critical Date is unchanged; check whether the note change makes the card stale.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110; #181, #203): a fresh agent that did not build the entry, working only in its own scratch folder daniel-p2 (daniel-p1 not read). Re-fetched by curl with a browser User-Agent: NABRE /bible/daniel/0 (200), Open Yale lecture-23 (200) and the RLST 145 course page (for “Fall 2006”), gotquestions.org Book-of-Daniel (200), Bible Odyssey Valeta article (200), Suchard PDF (the hdl.handle.net URL lands curl on a JavaScript Primo shell; PDF taken from the scholarlypublications.universiteitleiden.nl/handle/1887/3285162 download link, pdftotext -layout). One script matched every quote after normalising whitespace, quotes, dashes, entities and line-break hyphens: 8/8 hits, 0 misses; each found at its locator (NABRE paragraph count under the heading, Yale chapter heading and timestamp, Suchard page head, Valeta box item, Got Questions heading). Occurrence count 1 for each quote. The three Suchard `uncited` quotes also re-matched: p. 135 and the abstract by the same script; p. 122 (Porphyry) missed there on a line-break hyphen (“pro- posed”) and matched after joining hyphenated line breaks. Both Trigger Claims matched by script at timestamp, speaker and substring; about two minutes read either side; states unchanged: 2/2.
+# Second pass changed: (a) critical note “The court tales of chapters 1–6 are earlier” became “Chapters 1–6 are earlier”: no cited quote says “court tales” (Hayes: “those first six chapters”; NABRE's “traditional stories” is ¶ 3, uncited). Nothing else changed: no citation cut or added; title, display, from/to, setting, tradition display and holder kept.
+# Second pass rulings on the first-pass flags: (1) “a Bible Odyssey article” kept: the box is on the article page under Valeta's byline with no author of its own, and the wording names the page without naming an author (daniel-date names it “The “Did You Know?” box on David Valeta's Bible Odyssey article”). (2) “as it still is by some” is no wider than Suchard's “by some scholars”; pass. (3) Suchard p. 135 and abstract re-matched; left uncited for the lead: Suchard himself calls the earlier collection date the usual one (“usually held”, “often supposed”), so the note's Hayes date stands as the usual view; adding his later date would be a new claim. (4) Card: `bun run check:timeline` (which runs the stale-card check) passes the card, since title and Critical Date are unchanged.
+# Flags for the lead: (1) Registry url for suchard-2022-greek-daniel-3 (hdl.handle.net/1887/3285162) now redirects to a JavaScript Primo page with no text for scripts; consider the scholarlypublications.universiteitleiden.nl handle page as the url. Not edited. (2) #80 “Where sources show a split, the page shows the split”: Valeta's box calls a sixth-century date a possibility with “strong defenders”. The note shows the debate in text, display stays 167–164 on NABRE and Hayes; kept as the first pass ruled, since neither debate source dates the book itself. (3) The 2026-11-24 owner publish left earlier note sentences unreviewed by an independent pass; this pass re-checked the whole note, not only the #181/#203 changes.
+# Publish 2026-11-26 (lead agent, on the second pass's flags): (1) Suchard registry URL kept as the hdl.handle.net handle: it is the persistent identifier and resolves to the record in a browser; the PDF download link is recorded here (scholarlypublications.universiteitleiden.nl/handle/1887/3285162). (2) No #99 split: neither Suchard nor Valeta dates the book; the note reports the debate, the display stays NABRE's and Hayes's 167–164. (3) Every cite's `read:` set to 2026-11-26: both passes re-fetched all five sources today. (4) Second pass's "Chapters 1–6 are earlier" (for "The court tales of chapters 1–6") kept: narrower, and what Hayes says. (5) aramaic-script.yaml owner fields holding note text: outside this entry; filed as a separate issue. sourcesRead and review set to the secondPass date, 2026-11-26.
+review: 2026-11-26
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
-      owner: pass,
-      note: "NABRE Daniel introduction, ¶ 2. Script-fetched in #100; re-fetched and matched 2026-11-23 (USCCB answered this one request). #137 (2026-11-24): ¶ 2 re-checked by script against that saved 2026-11-23 copy; today's .md and HTML requests got 403.",
+      owner: "",
+      note: "NABRE Daniel introduction, ¶ 2. Script-fetched in #100; re-fetched and matched 2026-11-23 (USCCB answered this one request). #137 (2026-11-24): ¶ 2 re-checked by script against that saved 2026-11-23 copy; today's .md and HTML requests got 403. Re-review first pass 2026-11-26: re-fetched by curl (/bible/daniel/0, 200); quote re-matched at ¶ 2. Second pass 2026-11-26: re-fetched /bible/daniel/0 by curl (200); matched once by script; sits in ¶ 2 (“This work was composed during…”, the paragraph after ¶ 1 “This book takes its name…”). Backs 167–164 for the book. Pass.",
     }
   critical/2:
     {
       agent: pass,
-      owner: pass,
-      note: "Hayes l23 ch. 5 [00:35:21] “The Book of Daniel, Chapters 1-6”. Quote stops at “164”; the transcript goes on “- I don't know if I wrote that up there, yeah, 167 and 164 BCE”, no hedge. Re-matched 2026-11-23.",
+      owner: "",
+      note: "Hayes l23 ch. 5 [00:35:21] “The Book of Daniel, Chapters 1-6”. Quote stops at “164”; the transcript goes on “- I don't know if I wrote that up there, yeah, 167 and 164 BCE”, no hedge. Re-matched 2026-11-23. Re-review first pass 2026-11-26: re-fetched; quote re-matched. Second pass 2026-11-26: re-fetched lecture-23 by curl (200); matched once by script, under “Chapter 5. The Book of Daniel, Chapters 1-6 [00:35:21]”, before Chapter 6 [00:42:36]. Continuation “- I don't know if I wrote that up there, yeah, 167 and 164 BCE” confirmed; no hedge dropped. Pass.",
     }
   critical/3:
     {
       agent: pass,
-      owner: pass,
-      note: "Hayes l23 ch. 5 [00:35:21], the sentence before critical/2. Backs the note's “perhaps the end of the third century” for chapters 1–6. Re-matched 2026-11-23.",
+      owner: "",
+      note: "Hayes l23 ch. 5 [00:35:21], the sentence before critical/2. Backs the note's “perhaps the end of the third century” for chapters 1–6. Re-matched 2026-11-23. Re-review first pass 2026-11-26: re-fetched; quote re-matched. Suchard (uncited) dates the Dan 2–6 collection later; see header flag 3. Second pass 2026-11-26: matched once by script in ch. 5, the sentence before critical/2. Says “those first six chapters”, not “court tales”; neither this quote nor any other cited one says “court tales” (NABRE ¶ 3, uncited, has “traditional stories”), so the note's “The court tales of chapters 1–6 are earlier” narrowed to “Chapters 1–6 are earlier”. Pass.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Re-review first pass 2026-11-26 (#181): Suchard, JBL 141.1 (2022), p. 121, opening paragraph, Leiden repository PDF. Matched by script. The sentence ends “scholars.” on p. 122 after the footnote block; quote stops at “by some”. Backs the note's “The date is debated” and “traditionally taken as its date of composition, as it still is by some”. Gives no date of its own for the book. Second pass 2026-11-26: re-fetched the PDF from the repository page's download link (scholarlypublications.universiteitleiden.nl/download/1887/3285162/1; the hdl.handle.net URL now lands curl on a JavaScript Primo shell), pdftotext -layout; matched once, p. 121, first paragraph after the abstract, ending “by some” before the footnote block; “scholars.” opens p. 122. Note's “traditionally taken as its date of composition, as it still is by some” is no wider than the sentence (header flag 2). Pass.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Re-review first pass 2026-11-26 (#181): Bible Odyssey, Valeta, “Did You Know?” box, item 6. Matched by script. Backs the note's “scholars debate dates from the sixth to the second century BCE”. Box authorship not stated; attributed to “a Bible Odyssey article”. Second pass 2026-11-26: re-fetched by curl (200); matched once, item 6 of the 8-item “Did You Know?” box, which sits under the byline “David M. Valeta” with no author of its own. datePublished 2021-11-04 in the page's JSON-LD. Note's “scholars debate dates from the sixth to the second century BCE” stays within “as early as the sixth … as late as the second … are possibilities”; “strong defenders” not repeated. Attribution “a Bible Odyssey article” kept (header flag 1). Pass.",
     }
   setting/1:
     {
       agent: pass,
-      owner: pass,
-      note: "#169 (2026-11-24): NABRE Daniel introduction, ¶ 1, re-fetched by script today (the .md alternate answered) and matched verbatim at ¶ 1. Backs the exile and the end year 538 for the hero; NABRE's “allegedly” keeps it the narrative's claim, which is what a setting is. Gives no start year.",
+      owner: "",
+      note: "#169 (2026-11-24): NABRE Daniel introduction, ¶ 1, re-fetched by script today (the .md alternate answered) and matched verbatim at ¶ 1. Backs the exile and the end year 538 for the hero; NABRE's “allegedly” keeps it the narrative's claim, which is what a setting is. Gives no start year. Re-review first pass 2026-11-26: re-fetched; quote re-matched at ¶ 1. Second pass 2026-11-26: matched once by script; first paragraph after the “THE BOOK OF DANIEL” heading = ¶ 1. “allegedly” keeps it the narrative's claim; display “the Babylonian exile” fits. Pass.",
     }
   setting/2:
     {
       agent: pass,
-      owner: pass,
-      note: "#169 (2026-11-24): Hayes l23 ch. 5 [00:35:21], re-fetched today and matched verbatim. Source of “sixth century”, so from -600 / to -501 are the century's bounds, not dates the text gives. Hayes scopes this to chapters 1–6; NABRE ¶ 1 (setting/1) places the book's hero in the same exile.",
+      owner: "",
+      note: "#169 (2026-11-24): Hayes l23 ch. 5 [00:35:21], re-fetched today and matched verbatim. Source of “sixth century”, so from -600 / to -501 are the century's bounds, not dates the text gives. Hayes scopes this to chapters 1–6; NABRE ¶ 1 (setting/1) places the book's hero in the same exile. Re-review first pass 2026-11-26: re-fetched; quote re-matched. Second pass 2026-11-26: matched once by script in ch. 5 [00:35:21] (line beginning “Let's go back and look at the contents of these two sections”). Scope chapters 1–6, as the note says. “sixth century BCE” in display from “sixth-century exilic period”. Pass.",
     }
   tradition/1:
     {
       agent: pass,
-      owner: pass,
-      note: "GotQuestions “Summary of the Book of Daniel”, under “Date of Writing:”. Re-matched 2026-11-23.",
+      owner: "",
+      note: "GotQuestions “Summary of the Book of Daniel”, under “Date of Writing:”. Re-matched 2026-11-23. Re-review first pass 2026-11-26 (#203): re-fetched; quote re-matched. The display now keeps “likely” (“Likely 540–530 BCE”). Second pass 2026-11-26: re-fetched by curl (200); matched once, the line after “Date of Writing:”. Display “Likely 540–530 BCE” keeps “likely” (#203); from -540 / to -530 match. Pass.",
     }
 triggers:
   32@00:24:33:
     {
       agent: pass,
-      owner: pass,
-      note: "states: critical. Substring of the 00:24:33 turn, starting after “This is vaticinium ex eventu, the name of the segment. So, okay, fine.” The turn goes on to the accuracy argument; no hedge cut. Show says “around 167ish”, the entry 167–164: consistent.",
+      owner: "",
+      note: "states: critical. Substring of the 00:24:33 turn, starting after “This is vaticinium ex eventu, the name of the segment. So, okay, fine.” The turn goes on to the accuracy argument; no hedge cut. Show says “around 167ish”, the entry 167–164: consistent. Second pass 2026-11-26: script-matched as a substring of the [00:24:33.250] Dan McClellan line in data/transcripts/2023-11-13-episode-32-november-13-2023-the-end-is-near.txt; read 00:22:40–00:26:51. Context: “not something written by a historical Daniel during the Babylonian exile” (00:24:21); the next turn adds “Some of the traditions probably date to earlier”, consistent with the note. states: critical holds. Pass.",
     }
   119@00:08:35:
     {
       agent: pass,
-      owner: pass,
-      note: "states: tradition. “which is when Daniel was supposed to have been written” is the traditional side (6th century), which licenses the Tradition Date. Starts mid-sentence after “we have the same issue with Daniel because we have,”. The show's 6th century and GotQuestions' 540–530 agree.",
+      owner: "",
+      note: "states: tradition. “which is when Daniel was supposed to have been written” is the traditional side (6th century), which licenses the Tradition Date. Starts mid-sentence after “we have the same issue with Daniel because we have,”. The show's 6th century and GotQuestions' 540–530 agree. Second pass 2026-11-26: script-matched as a substring of the [00:08:35.900] Dan McClellan line in data/transcripts/2025-07-14-problematic-prophecy.txt; read 00:06:15–00:10:18 (Revelation/Nero dating before, Olivet Discourse after). “which is when Daniel was supposed to have been written” is the traditional side; states: tradition holds. Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
-      owner: pass,
-      note: "Critical Date is for the book's composition as the sources give it; the note scopes 167–164 to chapters 7–12 and gives the earlier court tales, as Hayes does.",
+      owner: "",
+      note: "Critical Date is for the book's composition as the sources give it; the note scopes 167–164 to chapters 7–12 and gives the earlier court tales, as Hayes does. Re-review 2026-11-26: the note adds the reported debate, attributed (#80). Second pass 2026-11-26: note scopes 167–164 to chapters 7–12 and chapters 1–6 to “perhaps the end of the third century” as Hayes does; “court tales” dropped (not in a cited quote). Pass.",
     }
   split-shown:
     {
       agent: pass,
-      owner: pass,
-      note: "No split: NABRE and Hayes both say 167–164.",
+      owner: "",
+      note: "No split: NABRE and Hayes both say 167–164. Re-review 2026-11-26: Suchard and Valeta (critical/4–5) report that the date is debated but give no date of their own, so there is no second date to show; the note reports the debate (#99: a source says it is debated). Second pass 2026-11-26: agreed: Valeta's box names the sixth century as a possibility with defenders, but neither it nor Suchard gives a date as its own; the debate is in the note, and the display follows the two sources that date the book. See header flag for the lead. Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
-      owner: pass,
-      note: "Trigger 119@00:08:35 has states: tradition.",
+      owner: "",
+      note: "Trigger 119@00:08:35 has states: tradition. Second pass 2026-11-26: 119@00:08:35 re-matched, states: tradition. Pass.",
     }
   tradition-named:
     {
       agent: pass,
-      owner: pass,
-      note: "Holder “Got Questions Ministries, an evangelical ministry” equals the registry `tradition:` (#110 wording). Never “the traditional date”.",
+      owner: "",
+      note: "Holder “Got Questions Ministries, an evangelical ministry” equals the registry `tradition:` (#110 wording). Never “the traditional date”. Re-review 2026-11-26: display keeps the source's “likely” (#203). Second pass 2026-11-26: holder equals the registry `tradition:` string; display keeps “Likely”. Got Questions is not set as a side of the scholarly debate in the note. Pass.",
     }
   conditional-not-critical:
     {
       agent: pass,
-      owner: pass,
-      note: "No conditional date; both sources state 167–164 flatly.",
+      owner: "",
+      note: "No conditional date: NABRE and Hayes state 167–164 flatly. Re-review 2026-11-26: the debate Suchard and Valeta report is in the note, not a condition on the date. Second pass 2026-11-26: NABRE and Hayes re-read: both date flatly. Pass.",
     }
 sources:
   nabre-daniel-intro:
     {
       agent: pass,
-      owner: pass,
+      owner: "",
       edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
-      note: "Reference: NABRE introductions are Reference (#86; CONTEXT.md), notes by a scholarly association. Year 2011 is the OT revision, not printed on the introduction page.",
+      note: "Reference: NABRE introductions are Reference (#86; CONTEXT.md), notes by a scholarly association. Year 2011 is the OT revision, not printed on the introduction page. Second pass 2026-11-26: Reference (study-bible introduction, USCCB); page shows “Copyright 2019-2026 USCCB”, no year for the introduction; edition line kept. Pass.",
     }
   hayes-rlst145-l23:
     {
       agent: pass,
-      owner: pass,
+      owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
-      note: "Reference (introductory course, university-hosted transcript, #86). Lecture 23 “Visions of the End: Daniel and Apocalyptic Literature”.",
+      note: "Reference (introductory course, university-hosted transcript, #86). Lecture 23 “Visions of the End: Daniel and Apocalyptic Literature”. Second pass 2026-11-26: Reference; “recorded for Open Yale Courses in Fall 2006” confirmed on the course page (oyc.yale.edu/religious-studies/rlst-145). In window. Pass.",
     }
   gotquestions-book-of-daniel:
     {
       agent: pass,
-      owner: pass,
+      owner: "",
       edition: "Unsigned, undated web page",
-      note: "Tradition (ruled in #86). Holder wording from #110.",
+      note: "Tradition (ruled in #86). Holder wording from #110. Second pass 2026-11-26: Tradition; page re-fetched: “Author:” heading is about Daniel, no byline, no date. Pass.",
     }
-leads: []
+  suchard-2022-greek-daniel-3:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Publisher's version, Leiden University repository",
+      note: "Scholarly: JBL, peer-reviewed (SBL). In the 30-year window. Also cited on /scholarship/daniel-date/. Second pass 2026-11-26: Scholarly (JBL 141.1, SBL); PDF cover: Publisher's Version, Taverne licence, open. In window. Registry url (hdl.handle.net) now redirects curl to a JavaScript Primo page; the PDF was reached via the scholarlypublications.universiteitleiden.nl handle page's download link. Flagged, registry not edited. Pass.",
+    }
+  valeta-bo-lions-den:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey article, 2021",
+      note: "Reference: Bible Odyssey (SBL). Cited only for its “Did You Know?” box, whose authorship is not stated. Also cited on /scholarship/daniel-date/. Second pass 2026-11-26: Reference (Bible Odyssey, SBL); 2021 confirmed (datePublished 2021-11-04). Pass.",
+    }
+leads:
+  - "Got Questions, “When was Daniel written?” (linked from the Date of Writing line as the full article): not read; the cited summary page carries the date."
 uncited:
+  - "Suchard p. 135: “The formation of this stage of the book of Daniel should then also be dated no earlier than the second century BCE, later than is often supposed.” and abstract: “later than the story collection of Dan 2–6 is usually held to have been put together.” (2026-11-26). One author's new proposal against what he calls the usual view; outside #181's ask. Not cited; the note keeps Hayes's “perhaps the end of the third century” for chapters 1–6."
+  - "Suchard p. 122: “Starting with the third-century CE Neoplatonic philosopher Porphyry, however, an alternative, second-century BCE date of composition has been proposed for the latest parts of the book.” (2026-11-26). History of the debate; not needed for the note."
   - "Hayes l23: “It was chronologically the latest book, written between 167 and 164 BCE.” (#100). Matched in #100; not cited, as critical/2 and critical/3 carry the two-stage date."
   - "Coogan and Chapman ch. 25 summary: “The book of Daniel was written in the second century BCE and comprises two distinct genres.” (#100). Century only; not cited."
