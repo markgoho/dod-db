@@ -2870,6 +2870,20 @@ sarna-sperling-ej-patriarchs:
   hostAuthored: false
   tradition: null
 
+ej-history-beginning-monarchy:
+  author: null
+  title: "History: Beginning Until the Monarchy"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/history-beginning-until-monarchy"
+  hostAuthored: false
+  tradition: null
+
 abr-wood-2009-ur:
   author: "Bryant G. Wood"
   title: "The Army of the Kings of Ur"
