@@ -11,7 +11,7 @@ It is a **picture first**. The drawing carries the relation; the words caption i
 
 One source, two forms. On the page it is a live, responsive block. At `#share` the same block becomes a **poster**: a fixed 4:5 canvas (1080 by 1350) with the page title above and a credit below, which a script photographs to a PNG. At `#share-card` it becomes the **card**: a 1200 by 630 view of the lead part, which is the picture a social site shows when someone shares the page's link.
 
-Worked examples, read all four before building. The first three are the bar to meet; the last is a newer redraw not yet accepted. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
+Worked examples, read all four before building; all four are the bar to meet. Each is `hugo/layouts/partials/scholarship-custom/<slug>.html` with its stylesheet `hugo/assets/css/scholarship-custom/<slug>.css`:
 
 - `noahs-ark-and-the-flood`: the best example of the default form below. Four chronological panels, each split by a lightning bolt into the two tellings, with art on both halves and each half's number or label set on the art as a plate.
 - `homosexuality-and-the-bible`: the default form with one scene per panel: four Gemini-drawn panels with people in them, each panel's words and scripture tags on a plate in a clear corner of its art. Read it for the illustration manifest, chained reference images, and a plate holding many tags.
