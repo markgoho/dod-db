@@ -3247,31 +3247,3 @@ dandamayev-iranica-babylonia-i:
   url: "https://www.iranicaonline.org/articles/babylonia-i"
   hostAuthored: false
   tradition: null
-
-dandamayev-iranica-cyrus-ii:
-  author: "Muhammad A. Dandamayev"
-  title: "Cyrus iii. Cyrus II the Great"
-  series: "Encyclopaedia Iranica, Vol. VI, Fasc. 5, pp. 516–521"
-  publisher: "Encyclopaedia Iranica Foundation"
-  year: 1993
-  edition: "online, last updated August 29, 2013"
-  class: Reference
-  kind: article
-  access: "Encyclopaedia Iranica website, open"
-  url: "https://www.iranicaonline.org/articles/cyrus-iii/"
-  hostAuthored: false
-  tradition: null
-
-waerzeggers-2021-day-before-cyrus:
-  author: "Caroline Waerzeggers"
-  title: "The Day Before Cyrus Entered Babylon"
-  series: "In U. Gabbay and S. Gordin (eds.), Studies in Ancient Near Eastern Records 27, pp. 79–88, doi:10.1515/9781501514661-002"
-  publisher: "De Gruyter"
-  year: 2021
-  edition: null
-  class: Scholarly
-  kind: book
-  access: "Publisher's version, open in the Leiden University repository"
-  url: "https://hdl.handle.net/1887/3281359"
-  hostAuthored: false
-  tradition: null

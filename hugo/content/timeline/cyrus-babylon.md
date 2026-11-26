@@ -1,9 +1,8 @@
 ---
 title: "Cyrus takes Babylon"
 entryKind: event
-draft: true
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-26
 related:
   {
     books: [isaiah, daniel, ezra],
