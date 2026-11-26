@@ -1,0 +1,146 @@
+# Illustrations for /scholarship/the-origins-of-yahweh/ (generated with
+# Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each
+# picture shows only what the listed statements support; every caption, link
+# and claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Five comic panels. Panels 1 and 3 are two 4:5 halves joined by a plain
+# gutter with an ≈ roundel (a resemblance); panel 2 is two 4:5 halves split
+# by a bolt (J against P); panel 4 is one 4:3 scene; panel 5 is one wide
+# 16:9 scene read left to right, convergence then differentiation.
+#
+# `el` is the anchor: El as the Ugarit texts describe him (an old king with
+# a long white beard, head of a council of gods, in a tent on a mountain).
+# Yahweh, and the God of the patriarchs, are never drawn as a figure: only
+# light, storm, or the people who worship. Nothing is fought: Baal's victory
+# over El is El stepping aside, and the Israelites' quarrel is a pointed
+# finger. Writing is illegible scribble.
+slug: the-origins-of-yahweh
+images:
+  - id: el
+    statements: [resemblance]
+    aspect: "4:5"
+    alt: "El, an old king with a long white beard, sits enthroned before his tent on a mountaintop, a council of lesser gods around him."
+    prompt: >-
+      An ancient Canaanite god-king, El: a dignified, kindly old man with a
+      long flowing white beard, a simple tall rounded crown and a plain rust
+      red robe, sits on a plain stone throne in the centre of the picture,
+      in front of a large plain tent pitched on a rocky mountaintop. Around
+      him, smaller and lower, a council of four or five lesser gods in plain
+      robes stand or sit listening to him. Mountain peaks and pale sky
+      around. The bottom left corner of the picture is open, plain rock
+      with nothing on it. No animals, no weapons, no symbols, no writing.
+
+  - id: patriarch
+    statements: [el, resemblance]
+    aspect: "4:5"
+    refs: [el]
+    alt: "A bearded herdsman of ancient times kneels at a stone altar on a hillside, looking toward a far mountain with a tent on its top."
+    prompt: >-
+      A bearded ancient herdsman, a patriarch, in a simple rust red and
+      light grey striped robe and head cloth, kneels in prayer beside a
+      small rough altar of piled stones on a grassy hillside, a few sheep
+      grazing behind him and his own small tent nearby. He looks up and
+      away toward a distant mountain on the horizon with a tiny tent on its
+      top, the SAME mountain and tent as in the reference image, but far
+      away and small. No god or figure on the mountain, no light from the
+      sky, no face in the sky. The bottom right corner of the picture is
+      open grass with nothing on it. No writing.
+
+  - id: early
+    statements: [el]
+    aspect: "4:5"
+    alt: "At the dawn of time, a small family of the earliest humans stands at a simple altar, calling out with raised arms under an open sky."
+    prompt: >-
+      The dawn of humankind: a small family of the earliest humans (a man,
+      a woman and a child, simply dressed in plain light grey and rust red
+      tunics) stand close together around a small, rough altar of a few
+      stones in the LEFT-CENTRE of the picture, in an empty, wild, early
+      landscape of low hills, calling out with raised arms toward the open
+      sky. Keep all three figures and the altar between the left edge and
+      the middle of the picture; the right third is only empty hills and
+      sky. Morning light. The sky is empty: no god, no figure, no face, no
+      light beam. The bottom left corner of the picture is open bare
+      ground. No animals, no buildings, no writing.
+
+  - id: moses
+    statements: [el]
+    aspect: "4:5"
+    refs: [patriarch]
+    alt: "Moses, a bearded man with a staff, stands alone in a desert as golden light pours down on him from the sky."
+    prompt: >-
+      Moses: a bearded middle-aged man with a shepherd's staff, in a plain
+      light grey robe and rust red head cloth, the SAME drawing style as
+      the reference, stands alone on bare desert ground, small, full
+      figure, in the LOWER HALF of the picture and just left of its centre,
+      looking up in awe as a broad column of golden amber light pours down
+      on him from the upper left of the sky. The light has no source that
+      can be seen: no figure, no face, no hand, no bush, no fire. The whole
+      top right quarter of the picture is open, empty pale sky, and the
+      bottom right corner is open sand. No other people, no animals, no
+      writing.
+
+  - id: baal
+    statements: [storm]
+    aspect: "4:5"
+    refs: [el]
+    alt: "Baal, a young storm-god, stands on a mountaintop raising a bolt of lightning over a churning sea; the old god El sits aside, smaller, behind him."
+    prompt: >-
+      A young, strong storm-god, Baal, in a short rust red kilt and a plain
+      tall pointed helmet, stands on a rocky mountaintop on the left of the
+      picture, raising a jagged amber lightning bolt in one hand toward
+      dark storm clouds, as wind and rain sweep down over a churning grey
+      sea below him. Behind him, smaller and lower on the mountain, the
+      SAME old white-bearded god El from the reference image sits aside on
+      his plain throne, looking up at the younger god, no longer at the
+      centre. No fighting, no blood, no monsters. The bottom right corner
+      of the picture is open churning sea. No writing.
+
+  - id: sea
+    statements: [storm]
+    aspect: "4:5"
+    refs: [baal]
+    alt: "A storm over the sea: thunderclouds and lightning above, a great wind heaping the waters into a wall, a small crowd watching from the shore."
+    prompt: >-
+      The SAME churning sea and the SAME dark storm clouds as in the
+      reference image, now with no god on any mountain: thunderclouds roll
+      across the sky, amber lightning flashes, and a great blast of wind,
+      drawn as bold curling lines, heaps the sea water up into a towering
+      wall. On the near shore at the lower left, a small crowd of ancient
+      Israelites in plain robes watches in awe. No figure in the sky, no
+      face in the clouds, no hands, no chariot. The bottom right corner of
+      the picture is open water. No writing.
+
+  - id: stela
+    statements: [attestation]
+    aspect: "4:3"
+    alt: "A tall black round-topped stone slab, carved with rows of writing, stands alone on a dry hillside under an open sky."
+    prompt: >-
+      A tall, dark basalt stone slab with a rounded top, carved with many
+      close rows of tiny illegible scribble marks, stands upright alone on
+      a dry, rocky hillside in Moab, in the centre-right of the picture,
+      casting a hard shadow. Low brown hills and open pale sky behind. The
+      top left and bottom left of the picture are open sky and plain
+      ground. No people, no animals, no buildings, no readable letters, no
+      writing of any kind except the scribble marks on the stone.
+
+  - id: smith
+    statements: [convergence, south]
+    aspect: "16:9"
+    refs: [el, sea, patriarch]
+    alt: "Three streams, from red desert mountains, from El's mountain with its tent and from a storm over the sea, flow together into one river; at its end on a hill, one Israelite points accusingly at others making an offering."
+    prompt: >-
+      A wide landscape read from left to right, with everything in the
+      middle horizontal band of the picture. On the left, three streams
+      flow toward each other: one from red desert mountains in the
+      far left, one from the SAME mountain with the tent on top as in the
+      first reference image (no figure on it), and one from the SAME dark
+      storm clouds as in the second reference image; in the centre the
+      three streams join into one single river. On the right, the river
+      runs past a low hill where two groups of ancient Israelites, dressed
+      exactly alike as in the third reference image, quarrel: one stern
+      man stands and points his finger accusingly at a small family who
+      are making a smoking offering at a little stone altar, and they
+      look back at him, startled. No god, no figure in the sky, no
+      fighting, no weapons. The top and bottom quarters of the picture,
+      and the bottom left and bottom right corners, are plain open sky
+      and ground. No writing.

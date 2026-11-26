@@ -1,0 +1,473 @@
+/*
+  Custom block for The Origins of Yahweh Scholarship Page: a comic page. One
+  ink frame holds the title, five panels and the credit, so the whole thing
+  shares as one image. Panels 1 and 3 are two generated pictures joined by
+  a plain gutter with an ≈ roundel (gods described alike); panel 2 is split
+  by a bolt (J against P); panel 4 is one scene and panel 5 one wide scene.
+  A narration label sits flush top-left, and the words are plates set on
+  the art in corners the picture leaves clear. Composes cloud-section,
+  type-section-title and scholarship-meta.
+
+  Distinctions without colour: the J or P badge on the plate and its side
+  of the bolt; the divider's shape (bolt or gutter with ≈).
+*/
+.yhw-comic {
+  --yhw-ink: var(--tan-900);
+  --yhw-paper: var(--tan-000);
+  --yhw-amber: var(--color-accent);
+  --yhw-rust: var(--rust-500);
+  --yhw-frame: var(--border-width-md);
+
+  container: yhw-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.yhw-comic__page {
+  background: var(--yhw-paper);
+  border: var(--yhw-frame) solid var(--yhw-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--yhw-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.yhw-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.yhw-comic__head > p {
+  margin: 0;
+}
+
+.yhw-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.yhw-comic__title {
+  color: var(--yhw-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  max-inline-size: 24ch;
+  text-shadow: 3px 3px 0 var(--yhw-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.yhw-comic__legend {
+  font-size: var(--step--2);
+  line-height: var(--line-height-tight);
+}
+
+.yhw-comic__legend-bolt {
+  color: var(--yhw-amber);
+  -webkit-text-stroke: 1px var(--yhw-ink);
+}
+
+.yhw-comic__key {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  text-wrap: balance;
+}
+
+/* J and P: an ink-edged letter tile in the source's colour. */
+.yhw-comic__badge {
+  background: var(--yhw-badge);
+  border: 2px solid var(--yhw-ink);
+  color: var(--yhw-badge-text);
+  display: inline-grid;
+  font-family: var(--font-family-display);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inline-size: 1.6em;
+  line-height: 1.4;
+  place-items: center;
+  vertical-align: 0.05em;
+}
+
+.yhw-comic__badge--j {
+  --yhw-badge: var(--yhw-rust);
+  --yhw-badge-text: var(--color-text-inverse);
+}
+
+.yhw-comic__badge--p {
+  --yhw-badge: var(--yhw-amber);
+  --yhw-badge-text: var(--yhw-ink);
+}
+
+.yhw-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.yhw-comic__frame {
+  display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.yhw-comic__figure {
+  border: var(--yhw-frame) solid var(--yhw-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.yhw-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.yhw-comic__art img {
+  block-size: 100%;
+  display: block;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.12;
+}
+
+.yhw-comic__art--single img {
+  inline-size: 100%;
+  scale: 1.08;
+}
+
+/* Split art: two pictures, each clipped to its side of the divider. */
+.yhw-comic__half {
+  inset: 0;
+  position: absolute;
+}
+
+.yhw-comic__half img {
+  inline-size: 60%;
+}
+
+.yhw-comic__half--right img {
+  margin-inline-start: 40%;
+}
+
+.yhw-comic__art--bolt > .yhw-comic__half--left {
+  clip-path: polygon(0 0, 57% 0, 45% 40%, 58% 52%, 43% 100%, 0 100%);
+}
+
+.yhw-comic__art--bolt > .yhw-comic__half--right {
+  clip-path: polygon(57% 0, 100% 0, 100% 100%, 43% 100%, 58% 52%, 45% 40%);
+}
+
+.yhw-comic__art--parallel > .yhw-comic__half--left {
+  clip-path: inset(0 50% 0 0);
+}
+
+.yhw-comic__art--parallel > .yhw-comic__half--right {
+  clip-path: inset(0 0 0 50%);
+}
+
+/* The bolt: a thick ink stroke with an amber core. */
+.yhw-comic__bolt {
+  block-size: 100%;
+  fill: none;
+  inline-size: 100%;
+  inset: 0;
+  position: absolute;
+  stroke-linejoin: miter;
+}
+
+.yhw-comic__bolt > polyline:first-child {
+  stroke: var(--yhw-ink);
+  stroke-width: 12px;
+  vector-effect: non-scaling-stroke;
+}
+
+.yhw-comic__bolt > polyline:last-child {
+  stroke: var(--yhw-amber);
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
+}
+
+/* The parallel split: a straight ink gutter with an ≈ roundel at its centre. */
+.yhw-comic__gutter {
+  background: var(--yhw-ink);
+  inline-size: var(--yhw-frame);
+  inset: 0 auto 0 calc(50% - var(--yhw-frame) / 2);
+  position: absolute;
+}
+
+.yhw-comic__vs {
+  aspect-ratio: 1;
+  background: var(--yhw-paper);
+  border: 3px solid var(--yhw-ink);
+  border-radius: 50%;
+  display: grid;
+  font-family: var(--font-family-display);
+  font-size: clamp(0.9rem, 5cqi, 1.6rem);
+  font-weight: var(--font-weight-boldest);
+  inline-size: 2.2em;
+  inset: 50% auto auto 50%;
+  line-height: 1;
+  place-items: center;
+  position: absolute;
+  translate: -50% -50%;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.yhw-comic__box {
+  background: var(--yhw-amber);
+  border-block-end: var(--yhw-frame) solid var(--yhw-ink);
+  border-inline-end: var(--yhw-frame) solid var(--yhw-ink);
+  font-family: var(--font-family-display);
+  /* Scales with the panel, so plates below it clear it at phone width too. */
+  font-size: clamp(0.6rem, 3.6cqi, 1rem);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+/* Every top plate sits below the label row; plate type may shrink further on a phone-width panel. */
+.yhw-comic__figure .comic-plate--tr {
+  inset-block-start: 10cqi;
+}
+
+.yhw-comic__figure .comic-plate__big {
+  font-size: clamp(0.75rem, 5.4cqi, 2.1rem);
+}
+
+.yhw-comic__figure .comic-plate__sub {
+  font-size: clamp(0.55rem, 2.5cqi, 0.95rem);
+}
+
+.comic-plate__big > .yhw-comic__badge {
+  font-size: 0.6em;
+  margin-inline-end: 0.2em;
+  text-shadow: none;
+  vertical-align: 0.25em;
+}
+
+.comic-plate__sub > .yhw-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates. */
+.yhw-comic__ref {
+  background: var(--yhw-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: 0.95em;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--yhw-amber);
+  white-space: nowrap;
+}
+
+.yhw-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.yhw-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container yhw-comic (width >= 40rem) {
+  .yhw-comic__page {
+    padding: var(--space-m);
+  }
+
+  .yhw-comic__title {
+    font-size: var(--step-3);
+  }
+
+  .yhw-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* The poster: two 3:2 panels to a row on the 4:5 canvas, the wide panel a 10:3 strip across the bottom. */
+
+.scholarship-share:target .yhw-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .yhw-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:target .yhw-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .yhw-comic__strip {
+  gap: var(--space-2xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:target .yhw-comic__art {
+  aspect-ratio: 3 / 2;
+}
+
+.scholarship-share:target .yhw-comic__frame--wide .yhw-comic__art {
+  aspect-ratio: 10 / 3;
+}
+
+/* Shorter panels on the poster: smaller labels and plates. */
+.scholarship-share:target .yhw-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.scholarship-share:target
+  .yhw-comic__frame:not(.yhw-comic__frame--wide)
+  .comic-plate {
+  max-inline-size: 40%;
+  padding: 0.6cqi 1cqi 0.8cqi;
+}
+
+.scholarship-share:target
+  .yhw-comic__frame:not(.yhw-comic__frame--wide)
+  .comic-plate__big {
+  font-size: 4.6cqi;
+}
+
+.scholarship-share:target
+  .yhw-comic__frame:not(.yhw-comic__frame--wide)
+  .comic-plate__sub {
+  font-size: 2.6cqi;
+}
+
+.scholarship-share:target .yhw-comic__figure .comic-plate--tr {
+  inset-block-start: 9cqi;
+}
+
+.scholarship-share:target .yhw-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
+}
+
+/* The card: panels 1 and 2 side by side under the title. */
+
+.scholarship-share:has(#share-card:target) .yhw-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target)
+  :is(.yhw-comic__kicker, .yhw-comic__key, .yhw-comic__legend) {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .yhw-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .yhw-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* The wide panel: one scene across both columns, read left to right. */
+.yhw-comic__frame--wide {
+  grid-column: 1 / -1;
+}
+
+.yhw-comic__frame--wide .yhw-comic__art {
+  aspect-ratio: 2 / 1;
+}
+
+/* The wide panel is twice as wide a container: halve the plates' cqi type so they match the other panels. */
+.yhw-comic__frame--wide .comic-plate {
+  max-inline-size: 28%;
+  padding: 0.45cqi 0.7cqi 0.55cqi;
+}
+
+.yhw-comic__frame--wide .yhw-comic__figure .comic-plate__big {
+  font-size: clamp(0.75rem, 2.7cqi, 2.1rem);
+}
+
+.yhw-comic__frame--wide .yhw-comic__figure .comic-plate__sub {
+  font-size: clamp(0.65rem, 1.5cqi, 0.95rem);
+}
+
+.yhw-comic__frame--wide .comic-plate--bl {
+  inset: auto auto 1cqi 1cqi;
+}
+
+.yhw-comic__frame--wide .comic-plate--br {
+  inset: auto 1cqi 1cqi auto;
+}
+
+/*
+  Below about 450px panels (a phone, or two columns on a tablet), plates
+  would cover faces in the picture, so they leave the art and sit side by
+  side in a band below it, each under its own half, as on the art. Literal length:
+  container conditions cannot read custom properties.
+*/
+@container yhw-comic (width < 56rem) {
+  .yhw-comic__figure figcaption {
+    border-block-start: var(--yhw-frame) solid var(--yhw-ink);
+    display: grid;
+    gap: var(--space-2xs);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: var(--space-2xs);
+  }
+
+  /* Left-half plates in the left column, right-half in the right; a single scene's plates span both. */
+  .yhw-comic__plate--left {
+    grid-column: 1;
+  }
+
+  .yhw-comic__plate--right {
+    grid-column: 2;
+  }
+
+  .yhw-comic__plate--none {
+    grid-column: 1 / -1;
+  }
+
+  .yhw-comic__figure .comic-plate {
+    align-content: start;
+    box-shadow: 2px 2px 0 var(--yhw-ink);
+    inset: auto;
+    max-inline-size: none;
+    position: static;
+    text-align: start;
+  }
+
+  .yhw-comic__figure .comic-plate__big {
+    font-size: clamp(0.85rem, 5.4cqi, 1.3rem);
+  }
+
+  .yhw-comic__figure .comic-plate__sub {
+    font-size: clamp(0.7rem, 3cqi, 0.85rem);
+  }
+}

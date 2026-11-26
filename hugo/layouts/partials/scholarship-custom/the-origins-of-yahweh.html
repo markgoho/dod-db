@@ -1,0 +1,189 @@
+{{- /*
+  Custom block for /scholarship/the-origins-of-yahweh/: a five-panel comic
+  page in the story's own order. The ancestors worship a god who looks like
+  El; the name Yahweh is known from the start (J) or only from the Exodus
+  (P); Yahweh looks like the storm-god Baal; the oldest certain mention
+  outside the Bible; and, full width, Mark Smith's model: traits flowing
+  together into one god, then Israelites rejecting part of the mix.
+
+  A view of the page's reviewed statements `el` (the core: headline and
+  panels 1–2), `resemblance` (panel 1), `storm` (panel 3), `attestation`
+  (panel 4) and `convergence` with `south` (panel 5); it makes no claim they
+  don't. Only panel 2 takes the bolt and the J/P badges, because only `el`
+  assigns each side to a source. Panels 1 and 3 are resemblances, so a
+  plain gutter with an ≈ roundel. Panel 5's label attributes the whole
+  panel to Smith's model, so both its plates stay under that hedge.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/the-origins-of-yahweh.yaml. El is drawn as
+  the Ugarit texts describe him; Yahweh and the patriarchs' God never
+  appear as a figure, only as light, storm or the people who worship.
+  Scripture chips are only the verses the statements name. Reword a plate
+  only when the statement it comes from is re-reviewed.
+  */
+-}}
+{{- define "partials/inline/yhw-ref.html" -}}
+  <a
+    class="yhw-comic__ref"
+    href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .ref) | safeURL }}"
+    rel="noopener"
+    >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+  >
+{{- end -}}
+{{- define "partials/inline/yhw-img.html" -}}
+  {{- with resources.Get (printf "scholarship-art/the-origins-of-yahweh/%s.png" .id) }}
+    {{- $webp := .Process "resize 1200x webp q78" }}
+    <img
+      src="{{ $webp.RelPermalink }}"
+      width="{{ $webp.Width }}"
+      height="{{ $webp.Height }}"
+      alt="{{ $.alt }}"
+      loading="eager" />
+  {{- end }}
+{{- end -}}
+{{- $panels := slice
+  (dict
+  "id" "ancestors" "box" "Whom did the ancestors worship?" "split" "parallel"
+  "left" (dict "id" "el" "alt" "El, an old king with a long white beard, sits enthroned before his tent on a mountaintop, a council of lesser gods around him.")
+  "right" (dict "id" "patriarch" "alt" "A bearded herdsman kneels at a stone altar on a hillside, looking toward a far mountain with a tent on its top.")
+  "plates" (slice
+  (dict "pos" "bl" "side" "left" "big" "El" "sub" "chief Canaanite god; in Ugarit’s texts, head of a council of gods")
+  (dict "pos" "br" "side" "right" "big" "El Shaddai" "sub" "as God appeared to Abraham, Isaac and Jacob" "ref" "Exodus 6:2-4" "label" "Exod 6:2–4")))
+  (dict
+  "id" "name" "box" "Since when is he Yahweh?" "split" "bolt"
+  "left" (dict "id" "early" "alt" "The earliest humans, a family, stand at a rough stone altar and call out with raised arms to an empty sky.")
+  "right" (dict "id" "moses" "alt" "Moses, a bearded man with a staff, stands alone in the desert as golden light pours down on him from the sky.")
+  "plates" (slice
+  (dict "pos" "bl" "side" "left" "badge" "j" "big" "From the start" "sub" "the earliest humans worship Yahweh by name" "ref" "Genesis 4:26" "label" "Gen 4:26")
+  (dict "pos" "tr" "side" "right" "badge" "p" "big" "At the Exodus" "sub" "“I did not make myself known to them by my name”" "ref" "Exodus 6:2-4" "label" "Exod 6:2–4")))
+  (dict
+  "id" "storm" "box" "Like which god?" "split" "parallel"
+  "left" (dict "id" "baal" "alt" "Baal, a young storm-god, raises a lightning bolt on a mountaintop over a stormy sea; the old god El sits aside behind him.")
+  "right" (dict "id" "sea" "alt" "Thunderclouds and lightning over the sea; a great wind heaps the water into a wall as a small crowd watches from the shore.")
+  "plates" (slice
+  (dict "pos" "bl" "side" "left" "big" "Baal" "sub" "storm-god who, in Canaanite myth, defeated El")
+  (dict "pos" "br" "side" "right" "big" "A storm-god" "sub" "how the Song of the Sea describes Yahweh" "ref" "Exodus 15" "label" "Exod 15")))
+  (dict
+  "id" "outside" "box" "Outside the Bible"
+  "art" (dict "id" "stela" "alt" "A tall black round-topped stone slab, carved with rows of writing, stands alone on a dry hillside.")
+  "plates" (slice
+  (dict "pos" "tl" "big" "About 840 BCE" "sub" "Mesha of Moab’s inscription: the oldest certain mention")
+  (dict "pos" "bl" "big" "Yhwȝ" "sub" "of Shasu-land, in older Egyptian texts (14th–13th c. BCE): mysterious, open to debate")))
+  (dict
+  "id" "smith" "box" "By Mark Smith’s model" "wide" true
+  "art" (dict "id" "smith" "alt" "Streams from red desert mountains, from El's mountain with its tent and from a storm join into one river; beside it, one Israelite points accusingly at another Israelite family making an offering.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "One god" "sub" "from the south, taking on the traits of El and Baal")
+  (dict "pos" "br" "big" "“Canaanite”" "sub" "later, a Yahweh-only party rejects parts of the mix: Israelites against Israelites")))
+-}}
+<section class="cloud-section yhw-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="yhw-comic__page">
+    <header class="yhw-comic__head">
+      <p class="yhw-comic__kicker">
+        Genesis and Exodus · many scholars have suggested
+      </p>
+      <p class="yhw-comic__title">
+        Israel’s ancestors worshipped El before&nbsp;Yahweh
+      </p>
+      <p class="yhw-comic__key">
+        <span class="yhw-comic__badge yhw-comic__badge--j">J</span>
+        and
+        <span class="yhw-comic__badge yhw-comic__badge--p">P</span>
+        two of the Pentateuch’s sources; E sides with P
+      </p>
+      <p class="yhw-comic__legend">
+        <span class="yhw-comic__legend-bolt" aria-hidden="true">⚡</span>
+        splits the two sources; ≈, two gods described alike.
+      </p>
+    </header>
+    <ol class="yhw-comic__strip">
+      {{- range $panels }}
+        <li
+          class="yhw-comic__frame yhw-comic__frame--{{ .id }}{{ if .wide }}
+            yhw-comic__frame--wide
+          {{ end }}"
+          {{ if not (in (slice "ancestors" "name") .id) }}
+            data-card-hide
+          {{ end }}>
+          <figure class="yhw-comic__figure">
+            {{- if .split }}
+              <div class="yhw-comic__art yhw-comic__art--{{ .split }}">
+                <div class="yhw-comic__half yhw-comic__half--left">
+                  {{ partial "inline/yhw-img.html" .left }}
+                </div>
+                <div class="yhw-comic__half yhw-comic__half--right">
+                  {{ partial "inline/yhw-img.html" .right }}
+                </div>
+                {{- if eq .split "bolt" }}
+                  {{/* A lightning bolt: the page assigns each half to a source. */}}
+                  <svg
+                    class="yhw-comic__bolt"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                    focusable="false">
+                    <polyline points="57,0 45,40 58,52 43,100" />
+                    <polyline points="57,0 45,40 58,52 43,100" />
+                  </svg>
+                {{- else }}
+                  {{/* A plain gutter: two gods the page describes alike. */}}
+                  <span class="yhw-comic__gutter" aria-hidden="true">
+                    <span class="yhw-comic__vs">≈</span>
+                  </span>
+                {{- end }}
+              </div>
+            {{- else }}
+              <div class="yhw-comic__art yhw-comic__art--single">
+                {{ partial "inline/yhw-img.html" .art }}
+              </div>
+            {{- end }}
+            <h3 class="yhw-comic__box">{{ .box }}</h3>
+            {{/* The labels sit on the art, in corners the picture leaves clear. */}}
+            <figcaption>
+              {{- range .plates }}
+                <p
+                  class="comic-plate comic-plate--{{ .pos }} yhw-comic__plate--{{ or .side "none" }}">
+                  <span class="comic-plate__big">
+                    {{- with .badge }}
+                      <span
+                        class="yhw-comic__badge yhw-comic__badge--{{ . }}"
+                        title="{{ cond (eq . "j") "The J source" "The P source" }}"
+                        >{{ upper . }}</span
+                      >
+                    {{- end }}
+                    {{ .big }}
+                  </span>
+                  <span class="comic-plate__sub">
+                    {{- .sub }}
+                    {{ if .ref }}
+                      {{- partial "inline/yhw-ref.html" (dict "ref" .ref "label" .label) -}}
+                    {{ end }}
+                  </span>
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="yhw-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="yhw-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#el">El before Yahweh</a>,
+    <a href="#resemblance">how the patriarchs’ God resembles El</a>,
+    <a href="#storm">Yahweh and Baal</a>,
+    <a href="#attestation">the earliest evidence</a>,
+    <a href="#convergence">the convergence model</a> and
+    <a href="#south">whether Yahweh came from the south</a>.
+  </p>
+</section>
