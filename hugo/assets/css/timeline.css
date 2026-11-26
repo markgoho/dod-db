@@ -216,10 +216,10 @@
   scholarly card or the tradition card (an entry placed by a tradition's date,
   or a Tradition Date at its own year, #214), lifts on an amber drop shadow
   and its heading takes an amber highlighter stroke, the accent the site's
-  titles carry. The minimap marks the current tick the same way.
+  titles carry. The minimap's current tick is filled with the same amber.
 */
 .timeline-page {
-  /* A marker stroke through the lower half of a line of text; sized to 1lh, it repeats on every wrapped line. */
+  /* A marker stroke through the lower half of a line of text. */
   --timeline-highlighter: linear-gradient(
     transparent 45%,
     var(--color-accent) 45% 90%,
@@ -255,13 +255,16 @@
     .timeline-entry--moved
   ):target
   > .timeline-entry__card
-  > :is(.timeline-entry__title, .timeline-entry__date),
+  > :is(.timeline-entry__title, .timeline-entry__date)
+  > .timeline-entry__mark,
 .timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved):target
   > .timeline-entry__tradition
-  > :is(.timeline-entry__moved-title, .timeline-entry__date) {
-  background: var(--timeline-highlighter) 0 0 / 100% 1lh;
+  > :is(.timeline-entry__moved-title, .timeline-entry__date)
+  > .timeline-entry__mark {
+  /* Inline and cloned, so the stroke runs the length of each line's text. */
+  background: var(--timeline-highlighter);
+  box-decoration-break: clone;
   color: var(--tan-900);
-  justify-self: start;
 }
 
 @media (prefers-reduced-motion: no-preference) {

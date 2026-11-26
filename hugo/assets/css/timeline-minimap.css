@@ -744,26 +744,26 @@
   }
 
   /*
-    The current tick, as the card you landed on (timeline.css): an amber drop
-    shadow, and ringed in ink, never colour alone. Its own fill or (a
-    tradition's date) hollow mark stays.
+    The current tick: filled with the card's highlighter amber (timeline.css)
+    and larger, so it shows by size as well as colour. Its ink outline, dashed
+    ring or diamond stays.
   */
-  .timeline-minimap__tick {
-    box-shadow: if(
-      style(--is-current: 1): var(--border-width-md) var(--border-width-md) 0
-        var(--color-accent); else: none
+  .timeline-minimap__tick,
+  .timeline-minimap__tick--placed {
+    background: if(
+      style(--is-current: 1): var(--color-accent); else: var(--tan-900)
     );
-    outline: if(
-      style(--is-current: 1): var(--border-width-sm) solid var(--tan-900);
-        else: none
-    );
-    outline-offset: var(--border-width-sm);
+    scale: if(style(--is-current: 1): 1.5; else: none);
+    z-index: if(style(--is-current: 1): 1; else: auto);
   }
 
-  .timeline-minimap__tick:hover {
-    outline-color: if(
-      style(--is-current: 1): var(--tan-900); else: var(--tan-500)
-    );
+  .timeline-minimap__tick--placed {
+    background: if(style(--is-current: 1): var(--color-accent); else: none);
+  }
+
+  .timeline-minimap__tick--moved {
+    background: if(style(--is-current: 1): var(--color-accent); else: none);
+    scale: if(style(--is-current: 1): 1.2; else: 0.8);
   }
 
   .timeline-minimap__setting {
