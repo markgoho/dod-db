@@ -3206,6 +3206,34 @@ ej-sennacherib:
   hostAuthored: false
   tradition: null
 
+faust-2026-tel-eton:
+  author: "Avraham Faust"
+  title: "Hezekiah’s Reform? A View from Tel ‘Eton on the Religious Development in Judah"
+  series: "Jerusalem Journal of Archaeology 9: 31–60"
+  publisher: "The Hebrew University of Jerusalem"
+  year: 2026
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article (journal-hosted PDF)"
+  url: "https://jjar.huji.ac.il/sites/default/files/jjar/files/jjar09_03_eton_faust.pdf"
+  hostAuthored: false
+  tradition: null
+
+moulis-2019-hezekiah-cultic-reforms:
+  author: "David Rafael Moulis"
+  title: "Hezekiah’s Cultic Reforms according to the Archaeological Evidence"
+  series: "Filip Čapek and Oded Lipschits (eds.), The Last Century in the History of Judah (Ancient Israel and Its Literature 37), pp. 167–180"
+  publisher: "SBL Press"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-volume PDF hosted by the Society of Biblical Literature, open"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/9780884143994.pdf"
+  hostAuthored: false
+  tradition: null
+
 rubin-bo-where-did-hebrew-come-from:
   author: "Aaron D. Rubin"
   title: "Where Did Hebrew Come From?"
