@@ -11,6 +11,13 @@
 # Second pass changed: note only; no citation cut, keys unchanged. (a) EJ's 622 dates the finding of the book, not the reform (EJ “The Reform and Its Historical Antecedents”: “good reasons for antedating Josiah's reform to the discovery of the book”), so “His reform is dated to around 622 BCE, the eighteenth year of his reign” became “Hayes dates his reform around 622 BCE … EJ dates the finding of the book of the law to his eighteenth year, 622”; the other reform years are attributed by name (Britannica about 621, HarperCollins ca. 620). (b) Unattributed “How much of the reform took place is debated” dropped: no source says the extent is debated; Pakkala calls the 2 Kings 23 text “debated”, now in his words. (c) Coogan and Chapman narrowed to the reign: their “idealized” and “some substance” sentences are about the accounts and portrait of his reign (substance from archaeology of influence, building and borders), not the reform's extent, so they are no longer set beside Pakkala as a reform position. Title, display, from/to, triggers and sources unchanged.
 # Second pass flags: (1) display “640–609 or 639–609 BCE” kept; #99 settles it (sources differ → show both); not open. (2) HarperCollins prints no reign span (639 accession, 609 death); EJ Kingdoms is the only source with 639–609 outright; kept as start and end dates. (3) Title “reign and reform” kept: four Reference sources date a reform; Pakkala (Scholarly) doubts it in the 2 Kings sense, attributed. With Coogan narrowed to the reign, no cited source states a minimum-reform position (Uehlinger stays a Lead); publisher may want one. (4) check:timeline returns before the publish gate for a draft entry; critical/N and trigger keys were checked against the entry by script separately (14 citations, 3 triggers).
 # Publish resolutions, 2026-11-26 (lead agent, on the second pass's flags): (1) display “640–609 or 639–609 BCE” kept (#99: sources differ → show both, each cited). (2) HarperCollins kept for the 639 side: its accession year (639) and death year (609) bound the reign, as EJ “Kingdoms” prints outright. (3) Title “reign and reform” kept: Hayes, Britannica and HarperCollins date the reform and narrate it as having happened, EJ dates the finding of the book; Pakkala's doubt is attributed by name. A minimum-reform Scholarly source (Uehlinger) stays a Lead; filed as a follow-on issue. (4) Publish gate keys checked by check:timeline now that draft is dropped. Note: “EJ” spelled out as “the Encyclopaedia Judaica” for readers. draft dropped; sourcesRead, review and secondPass all 2026-11-26.
+# Delegated re-review for issue #206 (2026-11-26; owner delegated, #93/#110; no owner check). Issue asks for an openly readable Scholarly or Reference source for the minimum-reform view, or the leads recorded as not openly available.
+# Re-review first pass (lead agent), 2026-11-26. Leads read: (a) Pakkala 2010 (BZAW 405) is open after all: the Helsinki research portal record links its accepted author manuscript, which redirects to a Helda bitstream (registry `pakkala-2010-cult-reforms`; curl with a browser user agent gets the PDF; CORE's copy still refuses scripts). Read in full (36 PDF pp.; manuscript pp. 1–31 + bibliography). It argues against any reform in the biblical sense, but on pp. 1–2 it describes the field: the kings "are usually assumed to have taken at least some measures to renew the cult", skeptics "still represent the minority", skepticism "has grown"; and in its conclusions (p. 29) allows Josiah's temple restoration (2 Kgs 22:2–7, 9) may be historical. Added to the note as critical/15–18, attributed by name and dated "Writing in 2010" (his "nowadays" is 2010's). The minimum-reform view is his description of the usual assumption, not his own position; the note says "reported". "The kings" are Hezekiah and Josiah (p. 1's opening names both); the note names both. (b) Uehlinger: author-uploaded full text on ResearchGate (DOI 10.5040/9780567672698.0030, 2019 reprint record; the scan is of Good Kings and Bad Kings pp. 279–316). Its PDF refuses scripts (403); in Chrome only a two-page preview renders as text, and that OCR layer is garbled (title line and several words corrupt), so no quote could be script-matched. Kept as a lead with this reason. (c) Na'aman IEJ 73 (2023): still abstract only (TAU portal, academia login); its abstract argues a sweeping reform, the other side from the minimum view; kept as a lead. New quotes script-matched (line-break hyphens, footnote markers after words, quotes and dashes normalised) against the Helda PDF at each locator's page: 4/4, zero misses. Existing 14 quotes and 3 Trigger Claims unchanged; the note's Pakkala 2017 sentence left verbatim (`hezekiah-reform` quotes its wording).
+# Flags for the re-review second pass: (R1) Is "reported that Hezekiah and Josiah are usually assumed to have taken at least some measures to renew the cult" within p. 1's scope (passive "are usually assumed"; the "most scholars nowadays" clause governs a different point)? (R2) Is "though skepticism has grown" fair given p. 2 ties it to recent commentaries and histories (n. 8)? (R3) "he allowed that the report of Josiah's temple restoration may have a historical background": p. 29 says the report "may have a historical background in the time of Josiah"; check it isn't read as a reform. (R4) Locators use the manuscript's own page numbers (PDF page = manuscript page + 1, after Helda's cover); the published BZAW pagination (pp. 201–235 per the old lead) is not available.
+# Re-review second pass (independent agent), 2026-11-26. Every registry id re-fetched into a fresh scratch folder (josiah-p2; no earlier pass's files read): curl for Encyclopedia.com (both EJ articles), Bible Odyssey /dictionary/josiah/, Open Yale lecture 11, OUP ch. 19 summary, and both Helda PDFs (browser user agent, pdftotext); NABRE Kings intro and Britannica read in Chrome, the relevant paragraphs saved from in-page script output (retyped excerpts of tool output, not a raw page capture). All 18 quotes re-matched by script (whitespace, quotes, dashes, entities, tags, EJ “*”, line-break hyphens, footnote markers normalised): 18 hits, 0 misses; each asserted at its locator (Pakkala 2010 split by page: critical/15–16 PDF p. 2, /17 p. 3, /18 p. 30; Pakkala 2017 pp. 8–9 = heads 271–272). All 3 Trigger Claims script-matched at timestamp, speaker, verbatim text and `states`, about two minutes either side read in full: 3 hits.
+# Re-review second pass changed: note only, the Pakkala 2010 sentence's tense. “are usually assumed … remain the minority, though skepticism has grown” → “were usually assumed … were still the minority, though skepticism had grown in the preceding decades”: Pakkala's “nowadays”, “still” and “in the last decades” are 2010's, and the present tense read as a 2026 state of the field (R1, R2). No citation cut; keys unchanged; title, display, from/to, the Pakkala 2017 sentence, triggers and sources unchanged.
+# Re-review second pass flags: (S1) #80 says a consensus-type statement is followed by the reasons scholars give; “usually assumed to have taken at least some measures” gives none (`hezekiah-reform` gives Faust's “largely on inner-biblical grounds”). Pakkala p. 1's preceding sentences (biblical accounts “assumed to preserve important historical information”) could supply it but are not cited; not added (no new citations in this pass). Lead agent to decide. (S2) R3 kept: the restoration clause follows Pakkala's denial and is worded as a temple restoration, not a reform. (S3) Pakkala is both the field-describer (2010) and the most skeptical voice; the minimum-reform view is still only reported by him, not held by a cited source (Uehlinger stays a lead) — #206's “done when” is met by the field statement plus the recorded leads, not by a source arguing the minimum.
+# Re-review publish resolutions, 2026-11-26 (lead agent, on the second pass's flags): (S1) resolved by a cut. #80: “A consensus statement is always followed by the reasons scholars give”; Pakkala 2010 p. 1's “the kings are usually assumed to have taken at least some measures to renew the cult” is such a statement and he gives no reasons for it (his preceding sentences are examples of older views, not reasons), and adding a reason citation after the independent pass would leave it unchecked. The clause and its citation (was critical/15) moved to `uncited`; the former critical/16–18 are now critical/15–17 (keys follow cite order), notes unchanged. The note keeps his “minority” characterisation of the skeptics (#80: a minority's characterisation is borrowed from a source, attributed by name), the growth of skepticism and the temple-restoration clause. (S2) kept, as the second pass found. (S3) accepted: no cited source argues the minimum-reform view; #206 closes on its second “done when” branch (Uehlinger and Na'aman recorded as not openly readable) plus Pakkala 2010 now read and cited for the field's minority/skepticism. Tense back-shift (“were … had grown”) kept. sourcesRead, review and delegation.secondPass all 2026-11-26.
 review: 2026-11-26
 delegation:
   by: owner
@@ -22,131 +29,153 @@ citations:
     {
       agent: pass,
       owner: "",
-      note: "NABRE Introduction to the Books of Kings (one intro for 1–2 Kings; /2kings/0 is a 404), ¶ 7. Gives 640–609 in a parenthesis; the sentence is about an edition of Kings, the dates are flat. Read in Chrome (scripts refused). Second pass: re-read bible.usccb.org/bible/1kings/0 in Chrome; matched verbatim in the seventh prose paragraph of the introduction (¶ 7 of 7, before the outline). Flat dates. Verified.",
+      note: "NABRE Introduction to the Books of Kings (one intro for 1–2 Kings; /2kings/0 is a 404), ¶ 7. Gives 640–609 in a parenthesis; the sentence is about an edition of Kings, the dates are flat. Read in Chrome (scripts refused). Second pass: re-read bible.usccb.org/bible/1kings/0 in Chrome; matched verbatim in the seventh prose paragraph of the introduction (¶ 7 of 7, before the outline). Flat dates. Verified. Re-review second pass: NABRE ¶ 7 re-read in Chrome; quote found in the 7th of 7 introduction prose paragraphs. Matched.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Josiah”, opening sentence. “c. 640–609 BCE”. Read in Chrome from the article's <p> elements. Second pass: re-read in Chrome; matched verbatim as the Josiah article's first <p>. “c.” is Britannica's. Verified.",
+      note: "Britannica “Josiah”, opening sentence. “c. 640–609 BCE”. Read in Chrome from the article's <p> elements. Second pass: re-read in Chrome; matched verbatim as the Josiah article's first <p>. “c.” is Britannica's. Verified. Re-review second pass: Britannica re-read in Chrome; first <p> of the Josiah article. Matched.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "EJ “Josiah” (Weinfeld and Sperling, credit line), Encyclopedia.com josiah-1 (the bare /josiah URL is the tanna). Entry's opening line: 640–609. Second pass: re-fetched encyclopedia.com josiah-1; matched verbatim in the entry's opening sentence after the Hebrew name. Verified.",
+      note: "EJ “Josiah” (Weinfeld and Sperling, credit line), Encyclopedia.com josiah-1 (the bare /josiah URL is the tanna). Entry's opening line: 640–609. Second pass: re-fetched encyclopedia.com josiah-1; matched verbatim in the entry's opening sentence after the Hebrew name. Verified. Re-review second pass: encyclopedia.com josiah-1 re-fetched; opening paragraph. Matched.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "EJ “History: Kingdoms of Judah and Israel”, section “The Last Days of Samaria. The Kingdom of Judah Until Its Destruction”. The 639 side of the split. Page has “*Josiah” (cross-reference mark), dropped in the quote. The same paragraph gives Manasseh 698–642, a chronology one year later than the EJ “Josiah” entry. Second pass: re-fetched; matched verbatim (after dropping the “*” cross-reference mark) under the heading “The Last Days of Samaria. The Kingdom of Judah Until Its Destruction”, the last heading before the passage. The only source read that prints a 639–609 span outright. Verified.",
+      note: "EJ “History: Kingdoms of Judah and Israel”, section “The Last Days of Samaria. The Kingdom of Judah Until Its Destruction”. The 639 side of the split. Page has “*Josiah” (cross-reference mark), dropped in the quote. The same paragraph gives Manasseh 698–642, a chronology one year later than the EJ “Josiah” entry. Second pass: re-fetched; matched verbatim (after dropping the “*” cross-reference mark) under the heading “The Last Days of Samaria. The Kingdom of Judah Until Its Destruction”, the last heading before the passage. The only source read that prints a 639–609 span outright. Verified. Re-review second pass: re-fetched; quote sits after the last <h> “The Last Days of Samaria. The Kingdom of Judah Until Its Destruction” (“*” dropped). Matched.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "HarperCollins Bible Dictionary “Josiah” on Bible Odyssey, sense 1. 639 for the accession (his father's assassination). See flag 2. Second pass: re-fetched bibleodyssey.org/dictionary/josiah/; matched verbatim in sense 1, first sentence. The 639 dates the accession on the assassination, i.e. the start of his reign; the dictionary prints no reign span (flag 2 resolved: kept, a start date, with critical/6 the end). Verified.",
+      note: "HarperCollins Bible Dictionary “Josiah” on Bible Odyssey, sense 1. 639 for the accession (his father's assassination). See flag 2. Second pass: re-fetched bibleodyssey.org/dictionary/josiah/; matched verbatim in sense 1, first sentence. The 639 dates the accession on the assassination, i.e. the start of his reign; the dictionary prints no reign span (flag 2 resolved: kept, a start date, with critical/6 the end). Verified. Re-review second pass: Bible Odyssey entry re-fetched; sense 1, first sentence. Matched.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "Same entry. 609 death at Megiddo; with critical/5, the 639–609 side. The sentence continues “(2Kgs 23:29; but cf. 2Chr 35:…)”. Second pass: matched verbatim in sense 1, last sentence. Verified.",
+      note: "Same entry. 609 death at Megiddo; with critical/5, the 639–609 side. The sentence continues “(2Kgs 23:29; but cf. 2Chr 35:…)”. Second pass: matched verbatim in sense 1, last sentence. Verified. Re-review second pass: sense 1, last sentence, before the “2” sense marker. Matched.",
     }
   critical/7:
     {
       agent: pass,
       owner: "",
-      note: "EJ “Josiah”, first paragraph. Reform date for the note: 622, as EJ's gloss on the eighteenth year. The entry later says Kings telescopes the reform into one year and Chronicles gives the reform in stages. Second pass: matched verbatim (EJ's superscript “th” is an inline tag). EJ's 622 dates the finding of the book, not the reform: its section “The Reform and Its Historical Antecedents” says “There are good reasons for antedating Josiah's reform to the discovery of the book” and gives Chronicles' stages (632, 628, 622). Note narrowed: EJ now dates only “the finding of the book of the law to his eighteenth year, 622”; the reform year rests on Hayes. Verified for the narrowed clause.",
+      note: "EJ “Josiah”, first paragraph. Reform date for the note: 622, as EJ's gloss on the eighteenth year. The entry later says Kings telescopes the reform into one year and Chronicles gives the reform in stages. Second pass: matched verbatim (EJ's superscript “th” is an inline tag). EJ's 622 dates the finding of the book, not the reform: its section “The Reform and Its Historical Antecedents” says “There are good reasons for antedating Josiah's reform to the discovery of the book” and gives Chronicles' stages (632, 628, 622). Note narrowed: EJ now dates only “the finding of the book of the law to his eighteenth year, 622”; the reform year rests on Hayes. Verified for the narrowed clause. Re-review second pass: same paragraph as critical/3 (EJ's first paragraph); EJ's “i.e., 622” glosses the 18th year of the book's discovery (“the ‘Book of the Torah’ … discovered in the 18th year”), so the note's finding-of-the-book clause fits. Matched.",
     }
   critical/8:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l11, ch. 3 “Updated and Revised Laws According to New Ideas” [00:22:16]. “around 622”; same lecture `deuteronomy` cites. The sentence goes on “: King Josiah. This is a reform that's reported in the book of 2 Kings, in 2 Kings 22.” Hayes narrates the reform without doubting it. Second pass: re-fetched oyc.yale.edu lecture-11; matched verbatim inside Chapter 3 (between the [00:22:16] and Chapter 4 [00:37:31] heads). Hayes dates the reform itself (“major religious reforms that were carried out … by King Josiah, around 622”); now named as the note's source for 622. Verified.",
+      note: "Hayes l11, ch. 3 “Updated and Revised Laws According to New Ideas” [00:22:16]. “around 622”; same lecture `deuteronomy` cites. The sentence goes on “: King Josiah. This is a reform that's reported in the book of 2 Kings, in 2 Kings 22.” Hayes narrates the reform without doubting it. Second pass: re-fetched oyc.yale.edu lecture-11; matched verbatim inside Chapter 3 (between the [00:22:16] and Chapter 4 [00:37:31] heads). Hayes dates the reform itself (“major religious reforms that were carried out … by King Josiah, around 622”); now named as the note's source for 622. Verified. Re-review second pass: oyc.yale.edu lecture-11 re-fetched; inside Chapter 3 [00:22:16], before Chapter 4 [00:37:31]; Hayes's “around 622” dates “the major religious reforms … by King Josiah”. Matched.",
     }
   critical/9:
     {
       agent: pass,
       owner: "",
-      note: "Britannica “Josiah”, ¶ 2. “About 621”, a year off EJ and Hayes; shown in the note. The sidebar Deuteronomy article on the same page says “about 622 BC” (not cited). Second pass: matched verbatim in the Josiah article's second <p>, not the Deuteronomy sidebar (which says “about 622 BC”). Now named in the note. Verified.",
+      note: "Britannica “Josiah”, ¶ 2. “About 621”, a year off EJ and Hayes; shown in the note. The sidebar Deuteronomy article on the same page says “about 622 BC” (not cited). Second pass: matched verbatim in the Josiah article's second <p>, not the Deuteronomy sidebar (which says “about 622 BC”). Now named in the note. Verified. Re-review second pass: Josiah article, second <p> (not the sidebar). Matched.",
     }
   critical/10:
     {
       agent: pass,
       owner: "",
-      note: "HarperCollins “Josiah”, sense 1. “ca. 620”; shown in the note. Framed “According to (2Kgs 23)” for the motivation; the date parenthesis is the dictionary's. Second pass: matched verbatim in sense 1, third sentence. Now named in the note. Verified.",
+      note: "HarperCollins “Josiah”, sense 1. “ca. 620”; shown in the note. Framed “According to (2Kgs 23)” for the motivation; the date parenthesis is the dictionary's. Second pass: matched verbatim in sense 1, third sentence. Now named in the note. Verified. Re-review second pass: sense 1, third sentence. Matched.",
     }
   critical/11:
     {
       agent: pass,
       owner: "",
-      note: "Coogan and Chapman ch. 19 summary, section “Josiah”, ¶ 3. Backs “call the biblical accounts idealized”. Second pass: re-fetched the OUP page; matched verbatim as the first sentence of the third paragraph under “Josiah”. Scope: the sentence is about the accounts of his reign, not the reform's extent; the note now says “the biblical accounts of his reign” and no longer sets Coogan beside Pakkala as a position on how much of the reform took place. Verified for the narrowed clause.",
+      note: "Coogan and Chapman ch. 19 summary, section “Josiah”, ¶ 3. Backs “call the biblical accounts idealized”. Second pass: re-fetched the OUP page; matched verbatim as the first sentence of the third paragraph under “Josiah”. Scope: the sentence is about the accounts of his reign, not the reform's extent; the note now says “the biblical accounts of his reign” and no longer sets Coogan beside Pakkala as a position on how much of the reform took place. Verified for the narrowed clause. Re-review second pass: OUP page re-fetched; first sentence of the 3rd paragraph under “Josiah”. Matched.",
     }
   critical/12:
     {
       agent: pass,
       owner: "",
-      note: "Same paragraph, two sentences on. Backs “find some substance behind them”; based on archaeology of seventh-century expansion. The quote stops before “, Josiah did take advantage of the political climate”. Second pass: matched verbatim, third sentence of the same paragraph. The substance Coogan and Chapman find rests on archaeology of regional influence and building, and the sentence goes on to border expansion: it is about the reign's portrait, not the reform. Note narrowed to “find some substance to their portrait of it”. Verified for the narrowed clause.",
+      note: "Same paragraph, two sentences on. Backs “find some substance behind them”; based on archaeology of seventh-century expansion. The quote stops before “, Josiah did take advantage of the political climate”. Second pass: matched verbatim, third sentence of the same paragraph. The substance Coogan and Chapman find rests on archaeology of regional influence and building, and the sentence goes on to border expansion: it is about the reign's portrait, not the reform. Note narrowed to “find some substance to their portrait of it”. Verified for the narrowed clause. Re-review second pass: same paragraph as critical/11, two sentences on. Matched; scope (reign's portrait) confirmed.",
     }
   critical/13:
     {
       agent: pass,
       owner: "",
-      note: "Pakkala 2017, p. 271 (reprint running head). Backs the note's Pakkala clause, worded with his “very unlikely” and “in the sense intended by the authors”. He refers to his separate article (BZAW 405, 2010) for the arguments. Second pass: re-fetched the Helda PDF (pdftotext); matched verbatim on PDF p. 8, running head “… Deuteronomism 271”; stray space in “23:1– 24” is the PDF's. Verified.",
+      note: "Pakkala 2017, p. 271 (reprint running head). Backs the note's Pakkala clause, worded with his “very unlikely” and “in the sense intended by the authors”. He refers to his separate article (BZAW 405, 2010) for the arguments. Second pass: re-fetched the Helda PDF (pdftotext); matched verbatim on PDF p. 8, running head “… Deuteronomism 271”; stray space in “23:1– 24” is the PDF's. Verified. Re-review second pass: Helda PDF re-fetched, pdftotext; PDF p. 8, running head 271. Matched.",
     }
   critical/14:
     {
       agent: pass,
       owner: "",
-      note: "Pakkala 2017, p. 272. Backs “debated” for the reform's extent (his “most edited and debated texts”). Second pass: matched verbatim on PDF p. 9, running head “272 Juha Pakkala”. “Debated” describes the 2 Kings 23 text; the note's unattributed lead-in “How much of the reform took place is debated” is dropped and the words now go to Pakkala (“calls Josiah's reform in 2 Kings 23 one of the most edited and debated texts”). Verified for the narrowed clause.",
+      note: "Pakkala 2017, p. 272. Backs “debated” for the reform's extent (his “most edited and debated texts”). Second pass: matched verbatim on PDF p. 9, running head “272 Juha Pakkala”. “Debated” describes the 2 Kings 23 text; the note's unattributed lead-in “How much of the reform took place is debated” is dropped and the words now go to Pakkala (“calls Josiah's reform in 2 Kings 23 one of the most edited and debated texts”). Verified for the narrowed clause. Re-review second pass: PDF p. 9, running head 272. Matched. Note's 2017 sentences unchanged.",
+    }
+  critical/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "Re-review (#206): same paragraph, last sentence (footnote 7: Levin, Davies). Backs “those who question the reforms' historicity altogether remain the minority”. Source breaks “his-toricity” across lines. Script-matched. Re-review second pass: PDF p. 2, same paragraph. Matched. Note now “were still the minority” (his “still … represent the minority”, 2010).",
+    }
+  critical/16:
+    {
+      agent: pass,
+      owner: "",
+      note: "Re-review (#206): manuscript p. 2 (PDF p. 3), first sentence; footnote 8 points to recent commentaries and histories (Werlitz, Grabbe). Backs “though skepticism has grown”; the next sentence says Hezekiah's reform has been challenged more often than Josiah's (not used). Script-matched. Re-review second pass: PDF p. 3, running head 2. Matched. R2: fair; note narrowed to “had grown in the preceding decades” (his “in the last decades”; n. 8 cites recent commentaries and histories as evidence).",
+    }
+  critical/17:
+    {
+      agent: pass,
+      owner: "",
+      note: "Re-review (#206): manuscript p. 29 (PDF p. 30), “Discussion and Conclusions” ¶ 2. Backs “he allowed that the report of Josiah's temple restoration may have a historical background”. Pakkala treats 2 Kgs 22:2–7, 9 as a probable annals excerpt; he does not call it a reform (¶ 1: no reason from these fragments “to assume that any cult reform took place”). Script-matched. Re-review second pass: PDF p. 30, running head 29, “Discussion and Conclusions” ¶ 2. Matched. R3: kept; ¶ 1 says that on the basis of the 2 Kgs 22:2–7, 9 and 23:11 fragments alone “there is no reason to assume that any cult reform took place”, and the note puts the restoration clause after his denial, as a temple restoration, not a reform. R4: fine; PDF page = manuscript page + 1.",
     }
 triggers:
   88@00:06:25:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Third sentence of the 00:06:25 turn, after “Manasseh and Amon.”; it continues “and there are scholars, and I'm one of them, who think …”. The show says 639–609; the entry shows the sources' split. Second pass: re-matched by script in data/transcripts/2024-12-09-episode-88-december-9-2024-josiah-the-cult-killer.txt at [00:06:25.489], Dan McClellan, verbatim substring; read 00:04:30–00:08:13. Verified.",
+      note: "states: critical. Third sentence of the 00:06:25 turn, after “Manasseh and Amon.”; it continues “and there are scholars, and I'm one of them, who think …”. The show says 639–609; the entry shows the sources' split. Second pass: re-matched by script in data/transcripts/2024-12-09-episode-88-december-9-2024-josiah-the-cult-killer.txt at [00:06:25.489], Dan McClellan, verbatim substring; read 00:04:30–00:08:13. Verified. Re-review second pass: script-matched at [00:06:25.489], Dan McClellan, verbatim substring; read 00:04:30–00:08:13 in full. Verified.",
     }
   88@00:31:26:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Middle of the 00:31:26 turn, after “this centralization of power and, and”. A datable verdict on the reform's extent (#99), no date. Read 00:29:32–00:33:29: post hoc rationalization, then the Bethel march as unrealistic. Second pass: re-matched at [00:31:26.490], Dan McClellan, verbatim; read 00:29:32–00:33:29 (Dan Beecher at 00:33:17: “it probably didn't happen … on this grand a scale”; McClellan: “to some degree”). A verdict on the reform's extent. Verified.",
+      note: "states: critical. Middle of the 00:31:26 turn, after “this centralization of power and, and”. A datable verdict on the reform's extent (#99), no date. Read 00:29:32–00:33:29: post hoc rationalization, then the Bethel march as unrealistic. Second pass: re-matched at [00:31:26.490], Dan McClellan, verbatim; read 00:29:32–00:33:29 (Dan Beecher at 00:33:17: “it probably didn't happen … on this grand a scale”; McClellan: “to some degree”). A verdict on the reform's extent. Verified. Re-review second pass: script-matched at [00:31:26.490], Dan McClellan, verbatim; read 00:29:09–00:33:29 untruncated (McClellan at 00:33:29: “to some degree”). Verified.",
     }
   163@00:21:07:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Second and later sentences of the 00:21:07 turn, answering Dan Beecher's request for Josiah's timeframe. Hedges: the dropped opening (flag 8) and “I want to say”, “I think like” kept in the quote. Gives 640, the other side of the show's numbers. Second pass: re-matched in data/transcripts/2026-05-17-the-queen-of-heaven.txt at [00:21:07.356], Dan McClellan, verbatim; read 00:20:03–00:22:32. The dropped opening hedge (flag 8) is outside the quote; the quote keeps its own hedges, so it is not overstated. Verified.",
+      note: "states: critical. Second and later sentences of the 00:21:07 turn, answering Dan Beecher's request for Josiah's timeframe. Hedges: the dropped opening (flag 8) and “I want to say”, “I think like” kept in the quote. Gives 640, the other side of the show's numbers. Second pass: re-matched in data/transcripts/2026-05-17-the-queen-of-heaven.txt at [00:21:07.356], Dan McClellan, verbatim; read 00:20:03–00:22:32. The dropped opening hedge (flag 8) is outside the quote; the quote keeps its own hedges, so it is not overstated. Verified. Re-review second pass: script-matched in 2026-05-17-the-queen-of-heaven.txt (episode 163 per processed-videos.json) at [00:21:07.356], Dan McClellan, verbatim; read 00:18:59–00:22:32 in full (every turn printed whole). Hedges kept. Verified.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Display dates the reign, which the sources date outright; the reform date and extent are in the note, as the issue asks. Title “Josiah's reign and reform” covers both; the reform's date is sourced in the note. Second pass: display dates the reign; the reform's date and extent stay in the note. Title kept: Hayes, Britannica and HarperCollins date the reform; Pakkala's doubt is attributed in the note.",
+      note: "Display dates the reign, which the sources date outright; the reform date and extent are in the note, as the issue asks. Title “Josiah's reign and reform” covers both; the reform's date is sourced in the note. Second pass: display dates the reign; the reform's date and extent stay in the note. Title kept: Hayes, Britannica and HarperCollins date the reform; Pakkala's doubt is attributed in the note. Re-review second pass: display and title unchanged; confirmed.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "640 vs 639 for the start, each side cited (critical/1–3; critical/4–6). Reform year 622 / about 621 / ca. 620, each cited in the note. Second pass: #99 (sources differ → show both, each cited) settles first-pass flag 1: display kept. No “c.” (flag 3): NABRE, both EJ articles and HarperCollins are flat. The reform years are now each attributed by name (Hayes 622, Britannica about 621, HarperCollins ca. 620); EJ's 622 is the book's finding.",
+      note: "640 vs 639 for the start, each side cited (critical/1–3; critical/4–6). Reform year 622 / about 621 / ca. 620, each cited in the note. Second pass: #99 (sources differ → show both, each cited) settles first-pass flag 1: display kept. No “c.” (flag 3): NABRE, both EJ articles and HarperCollins are flat. The reform years are now each attributed by name (Hayes 622, Britannica about 621, HarperCollins ca. 620); EJ's 622 is the book's finding. Re-review second pass: confirmed; both start years each cited.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; no trigger has states: tradition. Second pass: confirmed; all three triggers states: critical.",
+      note: "No Tradition Date; no trigger has states: tradition. Second pass: confirmed; all three triggers states: critical. Re-review second pass: confirmed.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. Re-review second pass: confirmed; no Tradition source cited.",
+    }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date. Britannica's “c.”, “About” and HarperCollins's “ca.” are approximations, not conditions. Hayes l15's “sometime, probably, in the 630s” is uncited. Second pass: confirmed. Second pass: confirmed; no cited date is conditional. HarperCollins's “According to (2Kgs 23)” governs the motivation, the “(ca. 620)” is the dictionary's gloss.",
+      note: "No conditional date. Britannica's “c.”, “About” and HarperCollins's “ca.” are approximations, not conditions. Hayes l15's “sometime, probably, in the 630s” is uncited. Second pass: confirmed. Second pass: confirmed; no cited date is conditional. HarperCollins's “According to (2Kgs 23)” governs the motivation, the “(ca. 620)” is the dictionary's gloss. Re-review second pass: confirmed.",
     }
 sources:
   nabre-kings-intro:
@@ -154,61 +183,67 @@ sources:
       agent: pass,
       owner: "",
       edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
-      note: "Reference (#86; CONTEXT.md: NABRE notes by a scholarly association). Second pass: URL opens in Chrome (scripts refused); title and Reference class confirmed.",
+      note: "Reference (#86; CONTEXT.md: NABRE notes by a scholarly association). Second pass: URL opens in Chrome (scripts refused); title and Reference class confirmed. Re-review second pass: opened in Chrome; Reference confirmed.",
     }
   britannica-josiah:
     {
       agent: pass,
       owner: "",
       edition: "Online, byline “Britannica Editors”",
-      note: "Reference, as `britannica-shroud-of-turin`. Cloudflare refuses scripts; read in Chrome. Second pass: URL opens in Chrome; byline “Britannica Editors” confirmed.",
+      note: "Reference, as `britannica-shroud-of-turin`. Cloudflare refuses scripts; read in Chrome. Second pass: URL opens in Chrome; byline “Britannica Editors” confirmed. Re-review second pass: opened in Chrome; confirmed.",
     }
   weinfeld-sperling-ej-josiah:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica, 2nd ed., entry credit line Moshe Weinfeld / S. David Sperling",
-      note: "Reference, as `greenberg-sperling-ej-exodus`. Same text also on the Jewish Virtual Library. Second pass: URL re-fetched; entry text confirmed.",
+      note: "Reference, as `greenberg-sperling-ej-exodus`. Same text also on the Jewish Virtual Library. Second pass: URL re-fetched; entry text confirmed. Re-review second pass: re-fetched; confirmed.",
     }
   ej-history-kingdoms:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica, 2nd ed.",
-      note: "Reference; existing registry entry. Second pass: URL re-fetched; section confirmed.",
+      note: "Reference; existing registry entry. Second pass: URL re-fetched; section confirmed. Re-review second pass: re-fetched; confirmed.",
     }
   harpercollins-2009-dictionary:
     {
       agent: pass,
       owner: "",
       edition: "HarperCollins Bible Dictionary (abridged 2009), on Bible Odyssey",
-      note: "Reference (#86). Entry page bibleodyssey.org/dictionary/josiah/; registry URL is the dictionary index. Second pass: entry page re-fetched; confirmed.",
+      note: "Reference (#86). Entry page bibleodyssey.org/dictionary/josiah/; registry URL is the dictionary index. Second pass: entry page re-fetched; confirmed. Re-review second pass: entry page re-fetched; confirmed.",
     }
   hayes-rlst145-l11:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
-      note: "Reference (#86). Second pass: URL re-fetched; confirmed.",
+      note: "Reference (#86). Second pass: URL re-fetched; confirmed. Re-review second pass: re-fetched; confirmed.",
     }
   coogan-brief-4e-summary-ch19:
     {
       agent: pass,
       owner: "",
       edition: "4th ed. (2019), OUP Learning Link",
-      note: "Reference; existing registry entry. Second pass: URL re-fetched; confirmed.",
+      note: "Reference; existing registry entry. Second pass: URL re-fetched; confirmed. Re-review second pass: re-fetched; confirmed.",
+    }
+  pakkala-2010-cult-reforms:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Accepted author manuscript, Helda handle 10138/328050; own pagination (pp. 1–31 + bibliography)",
+      note: "Scholarly (chapter in an academic-press edited volume in a peer-reviewed series, BZAW 405). Re-review (#206): reached from researchportal.helsinki.fi/en/publications/why-the-cult-reforms-in-judah-probably-did-not-happen (“Accepted author manuscript”), whose file link redirects to the registry's Helda bitstream URL; curl needs a browser user agent. Cover page gives the BZAW 405 citation and the handle; the manuscript is headed “Biblical Perspectives on Cult Reforms in Judah: Why They Probably Did not Happen”. Re-review second pass: registry URL re-fetched with a browser user agent (316 KB PDF); cover page gives the BZAW 405 citation, handle 10138/328050 and the reprint pagination caveat; manuscript heading matches the registry edition. Scholarly confirmed.",
     }
   pakkala-2017-origins-yahwism:
     {
       agent: pass,
       owner: "",
       edition: "BZAW 484 (De Gruyter, 2017), pp. 267–281, doi:10.1515/9783110448221-012; Helda repository reprint",
-      note: "Scholarly (academic-press edited volume in a peer-reviewed series). Repository handle http://hdl.handle.net/10138/310386. Second pass: registry URL re-fetched (PDF); cover page gives BZAW 484, pp. 267–281, the doi and the handle, and the reprint pagination caveat. Scholarly confirmed.",
+      note: "Scholarly (academic-press edited volume in a peer-reviewed series). Repository handle http://hdl.handle.net/10138/310386. Second pass: registry URL re-fetched (PDF); cover page gives BZAW 484, pp. 267–281, the doi and the handle, and the reprint pagination caveat. Scholarly confirmed. Re-review second pass: registry URL re-fetched; confirmed.",
     }
 leads:
-  - "Pakkala 2010, “Why the Cult Reforms in Judah Probably Did Not Happen” (BZAW 405, pp. 201–235): CORE copy core.ac.uk/download/401693233.pdf behind a bot check; not read."
-  - "Uehlinger, “Was There a Cult Reform under King Josiah? The Case for a Well-Grounded Minimum” (in Grabbe ed., Good Kings and Bad Kings): academia.edu only, login; not read. The classic minimum-reform voice."
-  - "Na'aman, IEJ 73 (2023), on the Mordot Arnona high places: abstract only (says the dig disclosed the radical nature of Josiah's reform); no open full text."
+  - "Uehlinger, “Was There a Cult Reform under King Josiah? The Case for a Well-Grounded Minimum” (in Grabbe ed., Good Kings and Bad Kings, pp. 279–316; repr. in The Hebrew Bible and History, doi:10.5040/9780567672698.0030): academia.edu needs a login; the author's upload on ResearchGate (publication 341733444) is a scan whose PDF refuses scripts and whose in-page text is a two-page preview with a garbled OCR layer; not read (re-review #206, 2026-11-26). The classic minimum-reform voice."
+  - "Na'aman, “‘The High Places Which Are in Front of Jerusalem’ (2 Kgs 23:13)”, IEJ 73/2 (2023), pp. 212–226, on the Mordot Arnona high places: abstract only (TAU research portal; academia.edu needs a login); the abstract argues a sweeping reform, not the minimum view; no open full text (re-review #206, 2026-11-26)."
   - "NABRE 2 Chronicles 34–35 notes; NABRE Nahum and Habakkuk introductions: not read."
 uncited:
   - "NABRE Zephaniah introduction, ¶ 2: “during the reign of Josiah (640–609 B.C.)”. Not needed: NABRE Kings carries the 640 side for the same Bible."
@@ -224,3 +259,7 @@ uncited:
   - "NABRE Kings introduction, ¶ 2: “historical accuracy is sometimes sacrificed to the demands of compelling characterization and dramatic tension.” About Kings in general, not Josiah's reform."
   - "NABRE 2 Kings 22 notes: 22:3 “In his eighteenth year” (the text's own year) and 22:8 note on the book of the law. No B.C. date."
   - "Leuchter 2006, Josiah's Reform and Jeremiah's Scroll (SBL PDF): assumes 622 only in passing footnotes."
+  - "Pakkala 2010, “Discussion and Conclusions”, p. 29: many features “suggest that the cult reforms, in any form intended by the biblical authors, did not take place”. Not needed: Pakkala 2017 p. 271 already carries his verdict, worded as `hezekiah-reform` reuses it."
+  - "Pakkala 2010 p. 1 n. 5, quoting Römer (2005) 55: “some attempts to introduce cultic and political changes took place under Josiah”. Römer read only through Pakkala's footnote; not cited."
+  - "Pakkala 2010 p. 29: 2 Kgs 23:11, if authentic, “could be connected to the liberation of Judah from Assyrian vassalage”. Conditional and about one verse; not needed."
+  - "Pakkala 2010 p. 1 (Helda manuscript; PDF p. 2): “Although most scholars nowadays would acknowledge that the biblical accounts are not unbiased historical sources, the kings are usually assumed to have taken at least some measures to renew the cult.” Cited in the re-review's first pass (critical/15), cut at publish: a state-of-the-field statement that #80 requires to be followed by the reasons scholars give, and Pakkala gives none for it (re-review #206)."

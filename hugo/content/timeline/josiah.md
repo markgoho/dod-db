@@ -9,7 +9,7 @@ critical:
   from: -640
   to: -609
   precision: year
-  note: "The sources use both years for the start of his reign. Hayes dates his reform around 622 BCE, Britannica about 621 and the HarperCollins dictionary ca. 620; the Encyclopaedia Judaica dates the finding of the book of the law to his eighteenth year, 622. Coogan and Chapman call the biblical accounts of his reign idealized but find some substance to their portrait of it. Pakkala calls Josiah's reform in 2 Kings 23 one of the most edited and debated texts in the Hebrew Bible and thinks it very unlikely that the reforms took place in the sense 2 Kings intends."
+  note: "The sources use both years for the start of his reign. Hayes dates his reform around 622 BCE, Britannica about 621 and the HarperCollins dictionary ca. 620; the Encyclopaedia Judaica dates the finding of the book of the law to his eighteenth year, 622. Coogan and Chapman call the biblical accounts of his reign idealized but find some substance to their portrait of it. Pakkala calls Josiah's reform in 2 Kings 23 one of the most edited and debated texts in the Hebrew Bible and thinks it very unlikely that the reforms took place in the sense 2 Kings intends. Writing in 2010, he reported that those who questioned the reforms' historicity altogether were still the minority, though skepticism had grown in the preceding decades; he allowed that the report of Josiah's temple restoration may have a historical background."
   cites:
     - source: nabre-kings-intro
       locator: "Introduction, ¶ 7"
@@ -66,5 +66,17 @@ critical:
     - source: pakkala-2017-origins-yahwism
       locator: "p. 272"
       quote: "Josiah’s reform in 2 Kings 23, on the other hand, is one of the most edited and debated texts in the Hebrew Bible."
+      read: 2026-11-26
+    - source: pakkala-2010-cult-reforms
+      locator: "p. 1 (Helda manuscript pagination)"
+      quote: "There are also some critical voices that have questioned the historicity of the reforms altogether, but they still represent the minority."
+      read: 2026-11-26
+    - source: pakkala-2010-cult-reforms
+      locator: "p. 2 (Helda manuscript pagination)"
+      quote: "Nevertheless, it is evident that skepticism about the historicity of the reforms has grown in the last decades."
+      read: 2026-11-26
+    - source: pakkala-2010-cult-reforms
+      locator: "p. 29, “Discussion and Conclusions” (Helda manuscript pagination)"
+      quote: "According to 2 Kings 22:2–7, 9, Josiah restored the temple. This seems to have been a rather neutral reporting of a restoration of the main state sanctuary and may have a historical background in the time of Josiah."
       read: 2026-11-26
 ---
