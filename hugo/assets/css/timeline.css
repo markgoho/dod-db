@@ -214,9 +214,9 @@
 /*
   Arriving at an entry by link: the card whose date placed the row, the
   scholarly card or the tradition card (an entry placed by a tradition's date,
-  or a Tradition Date at its own year, #214), lifts on an amber drop shadow
-  and its heading takes an amber highlighter stroke, the accent the site's
-  titles carry. The minimap's current tick is filled with the same amber.
+  or a Tradition Date at its own year, #214), lifts on an amber drop shadow.
+  The entry you are reading takes an amber highlighter stroke on its heading,
+  the accent the site's titles carry (below). The minimap's current tick is filled with the same amber.
 */
 .timeline-page {
   /* A marker stroke through the lower half of a line of text. */
@@ -250,21 +250,59 @@
   border: var(--border-width-md) solid var(--tan-900);
 }
 
-.timeline-entry:not(
-    .timeline-entry--by-tradition,
-    .timeline-entry--moved
-  ):target
+/*
+  The highlighter follows the reader: timeline-minimap.html's scrollspy rules
+  set --is-current: 1 on the entry it marks current, and its placing card's
+  heading and date carry the stroke. Inline and cloned, so the stroke runs
+  the length of each line's text. Without if() (and so without the
+  scrollspy) it marks the card you landed on instead.
+*/
+.timeline-entry:not(.timeline-entry--by-tradition, .timeline-entry--moved)
   > .timeline-entry__card
   > :is(.timeline-entry__title, .timeline-entry__date)
   > .timeline-entry__mark,
-.timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved):target
+.timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved)
   > .timeline-entry__tradition
   > :is(.timeline-entry__moved-title, .timeline-entry__date)
   > .timeline-entry__mark {
-  /* Inline and cloned, so the stroke runs the length of each line's text. */
-  background: var(--timeline-highlighter);
   box-decoration-break: clone;
-  color: var(--tan-900);
+}
+
+@supports (color: if(style(--is-current: 1): red; else: blue)) {
+  .timeline-entry:not(.timeline-entry--by-tradition, .timeline-entry--moved)
+    > .timeline-entry__card
+    > :is(.timeline-entry__title, .timeline-entry__date)
+    > .timeline-entry__mark,
+  .timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved)
+    > .timeline-entry__tradition
+    > :is(.timeline-entry__moved-title, .timeline-entry__date)
+    > .timeline-entry__mark {
+    background: if(
+      style(--is-current: 1): var(--timeline-highlighter); else: none
+    );
+    /* No else: not current, the declaration is invalid at computed time, so color inherits. */
+    color: if(style(--is-current: 1): var(--tan-900));
+  }
+}
+
+@supports not (color: if(style(--is-current: 1): red; else: blue)) {
+  .timeline-entry:not(
+      .timeline-entry--by-tradition,
+      .timeline-entry--moved
+    ):target
+    > .timeline-entry__card
+    > :is(.timeline-entry__title, .timeline-entry__date)
+    > .timeline-entry__mark,
+  .timeline-entry:is(
+      .timeline-entry--by-tradition,
+      .timeline-entry--moved
+    ):target
+    > .timeline-entry__tradition
+    > :is(.timeline-entry__moved-title, .timeline-entry__date)
+    > .timeline-entry__mark {
+    background: var(--timeline-highlighter);
+    color: var(--tan-900);
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

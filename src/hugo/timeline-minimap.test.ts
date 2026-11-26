@@ -370,7 +370,7 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       );
   });
 
-  test("the generated rules set only the --is-current flag, one selector per entry and era", () => {
+  test("the generated rules set only the --is-current flag, one selector per entry and era, and flag the current entry on the axis", () => {
     const rules = parseRules(
       select(page, ".timeline-minimap style")[0]?.text ?? "",
     );
@@ -384,6 +384,11 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       ...eras.map(id => `${on("data-entry-era", id)} [data-era="${id}"]`),
       ...entries.map(id => `${on("href", `#${id}`)} [data-tick="${id}"]`),
       `${on("href", "#daniel")} [data-setting="daniel"]`,
+      // The entry on the axis, a sibling of the minimap, so read from the layout.
+      ...entries.map(
+        id =>
+          `.timeline-minimap-layout:has(.timeline-minimap__spy [href="#${id}"]:is(:target-current, .target-current)) .timeline-axis [id="${id}"]`,
+      ),
     ]);
   });
 

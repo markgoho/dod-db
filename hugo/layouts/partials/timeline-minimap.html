@@ -11,8 +11,8 @@
   (scroll-target-group); it stays rendered while the popover is closed, so the
   bar tracks the era with no geometry. The generated :has() rules below set
   one flag, --is-current: 1, on whatever its :target-current link makes
-  current: the caption label, the bar's era, the band, the tick and the
-  entry's narrated setting (#170). timeline-minimap.css says what the flag
+  current: the caption label, the bar's era, the band, the tick, the
+  entry's narrated setting (#170) and the entry on the axis. timeline-minimap.css says what the flag
   shows. Only entries are scroll targets, so the highlight never alternates
   between eras and entries. timeline-minimap.ts (loaded from the list
   layout's footer scripts) mirrors the current tick into aria-current.
@@ -232,7 +232,10 @@
   {{- $settings := slice }}
   {{- $eraLabels := slice }}
   {{- $eraBands := slice }}
+  {{- $entries := slice }}
   {{- range $ticks }}
+    {{- /* The entry itself, on the axis beside the minimap: its placing card's heading takes the highlighter (timeline.css). */}}
+    {{- $entries = $entries | append (printf `.timeline-minimap-layout:has(.timeline-minimap__spy [href="#%s"]%s) .timeline-axis [id="%s"]` .id $current .id) }}
     {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [href="#%s"]%s)` .id $current }}
     {{- $labels = $labels | append (printf `%s [data-now="%s"]` $on .id) }}
     {{- $marks = $marks | append (printf `%s [data-tick="%s"]` $on .id) }}
@@ -247,7 +250,7 @@
   {{- end }}
   {{- /* Flags only: what each flag shows is in timeline-minimap.css. */}}
   <style>
-    {{ delimit ($labels | append $eraLabels | append $eraBands | append $marks | append $settings) ",\n" | safeCSS }} {
+    {{ delimit ($labels | append $eraLabels | append $eraBands | append $marks | append $settings | append $entries) ",\n" | safeCSS }} {
       --is-current: 1;
     }
   </style>
