@@ -1,9 +1,9 @@
 ---
-title: "Hebrew becomes a language distinct from Canaanite"
+title: "Hebrew emerges as a discrete language"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead: null
+sourcesRead: 2026-11-26
 related: { books: [], tags: [canaanites], topics: [] }
 watch:
   [

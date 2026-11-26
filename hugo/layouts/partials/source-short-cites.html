@@ -3,7 +3,7 @@
   a map of id to its author-date key, e.g. "Meyers 2005" or "Coogan and
   Chapman 2019". Authors come from the registry's author field: "(ed.)"/"(eds.)"
   is dropped, "A and B" keeps both surnames, and a surname is a name's last
-  word. A source without an author falls back to its title up to the first
+  word after any "Jr."/"Sr." suffix. A source without an author falls back to its title up to the first
   colon.
 
   Two sources sharing a key get letter suffixes ("Hayes 2006a", "Hayes 2006b")
@@ -20,7 +20,8 @@
   {{- with $s.author -}}
     {{- $names := slice -}}
     {{- range split (replaceRE `\s*\(eds?\.\)` "" .) " and " -}}
-      {{- $names = $names | append (index (last 1 (split (trim . " ") " ")) 0) -}}
+      {{- $name := replaceRE `,?\s+(Jr|Sr)\.?$` "" (trim . " ") -}}
+      {{- $names = $names | append (index (last 1 (split $name " ")) 0) -}}
     {{- end -}}
     {{- $key = delimit $names " and " -}}
   {{- else -}}
