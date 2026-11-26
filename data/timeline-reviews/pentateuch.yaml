@@ -1,0 +1,188 @@
+# Review record for the Timeline Entry `pentateuch` (/timeline/#pentateuch; #93 shape). Not rendered.
+# Issue #185 (from #108), “Timeline Entry: The Pentateuch”. Issue notes: the show's dates differ by stage (#99): date what the sources date (composition of sources vs final compilation) and say which in the note. Overlaps `priestly-genesis-1` and `deuteronomy`; don't contradict them. Kind: composition; sides: both.
+# Sourcing test, 2026-11-26: met. Reference sources date the subject outright: Nihan and Rhyder (Bible Odyssey, SBL) date the whole compositional and editorial process “from the Neo-Assyrian (ca. 912–612 BCE) to the Persian period (ca. 538–323 BCE)”; Ska (Bible Odyssey) gives the Persian period for the Pentateuch “as such”, as a point many scholars agree on; Hayes l12 the exilic to post-exilic final form, “probably”; the Encyclopaedia Judaica (Friedman and Overton) the 11th to 5th century for the process and the mid-5th century for the addition of Genesis–Numbers. No Scholarly-class source was read in full (all Reference). Tradition: Answers in Genesis (Turpin 2021) dates Moses' writing of the Torah c. 1446–1406 BC. Setting: Nihan and Rhyder, Hayes l5.
+# Stage split (issue note, #99): display and from/to date the whole process (Nihan and Rhyder, one sentence; not stitched from two sources). The note says so and gives the final collection's dates by source: Ska (Persian), Hayes (exilic to post-exilic, probably), EJ (process 11th–5th century; Genesis–Numbers added by the mid-5th century). The sources differ on the start (Neo-Assyrian, from ca. 912, vs EJ's 11th century) and on where the final form falls (exilic vs Persian); each is attributed by name in the note, none picked.
+# Overlaps: `priestly-genesis-1` (P final form exilic or post-exilic, Hayes l9) and `deuteronomy` (8th century to after the exile) both fall inside this entry's span; no conflict. Friedman's pre-exilic, Hezekiah-era P (EJ section “p”) would contradict `priestly-genesis-1` and is uncited; EJ is cited only for the two sentences on the whole process and on Genesis–Numbers.
+# Trigger Claims (#99: one to three): E175 00:13:51 (Hebrew points to the 8th–6th centuries; critical), E175 00:15:14 (the crowd who dates Moses to the 15th century, “if Moses was writing around that time period”; tradition), E117 00:38:08 (single collection by the 5th or 4th century, “kind of a traditional dating”; critical). Not kept: E175 00:11:48 (“It was not written in the 15th century BCE, it was not written by Moses”: a denial, states the critical side; E175 is already represented twice); E22 00:23:09 (Liane Feldman: the four sources “at some point most scholars would, say in the Persian period were joined together” — a good critical claim, dropped only for the three-claim limit; E117 carries the compilation stage); E8, E20, E95, E104, E115, E164, E187 (no date on the Pentateuch's composition found in the Transcript, or only incidental). The show's “4th century” (E117) and “8th–6th centuries” (E175) are not the sources' dates; shown verbatim, not explained (#99).
+# agent: the first pass (2026-11-26). Three research agents (critical; tradition; setting) fetched every source into separate scratch folders; every quote copied from saved text. Every quote script-matched against the saved text (whitespace, quotes, dashes, entities, tags normalised): 10/10, zero misses. Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 3/3.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Display “Neo-Assyrian to Persian period” dates the whole process; is that the right reading of the issue's stage note, or should the display date the final collection (Persian period) with the process in the note? (2) from: -912 is Nihan and Rhyder's “ca. 912”, to: -323 their “ca. 538–323” end; precision: period. (3) Ska's page is a short video; the cited text is the page text below the video (it reads as a transcript of the talk; not checked against the audio). Registry kind `lecture` (the enum has no video kind). (4) Hayes l12's sentence: “it” is the Priestly material; the Pentateuch clause is “and the Pentateuch probably generally”, with the bracketed correction “exilic to post-exilic periods; scholars vary on the details” the transcript's own. The note says “probably”. (5) EJ sigla and “b.c.e.” are lowercase in the saved text (small caps lost in conversion); quotes keep the saved text. (6) Tradition display “c. 1446–1406 BCE, written by Moses”: Turpin's sentence is “The likeliest possible date for the writing of the Torah would be when Moses was at Sinai or in the plains of Moab”; the subtitle carries “traditional Mosaic authorship”. Got Questions gives “approximately 1400 BC” (uncited; one holder per entry). (7) E175 00:15:14 is about a dating of Moses and a writing date on that dating (“if Moses was writing around that time period”); states: tradition. E175 00:13:51 is also a `hebrew-language` Trigger Claim (different substring). (8) E117's quote drops the turn's continuation “but these days, yeah, so like we have the priestly literature which is probably post-exilic.”
+review:
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Nihan and Rhyder, Bible Odyssey “The Torah/The Pentateuch” (August 26, 2020 on the page), opening paragraph, second sentence. The display's source: the whole compositional and editorial process, one sentence. The sentence opens “While late antique Jewish and Christian authors believed that Moses authored this collection,”.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Ska, Bible Odyssey “Formation of the Pentateuch”, text below the video, ¶ 1. “many scholars agree” is Ska's, about the Pentateuch “as such”. The paragraph opens “The composition of the Pentateuch is a kind of battlefield, I would say today.” and goes on “but the building, as such, was composed late.” “There are; however,” is the page's punctuation.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same page, ¶ 2. Backs “though some of its elements are pre-exilic”.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l12 ch. 2 “Source Theory and the Pentateuch” [00:06:05]. See flag 4. The sentence before: “certainly I would say all scholars agree that the Priestly materials reach their final form in the exile or post-exilic period.”",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "EJ “Pentateuch”, Friedman and Overton credit line (sections introduction through canonization; the traditional-view section is Rabinowitz's). Subsection “Linguistic Evidence” after section “r”. The sentence before: “Thus the Torah was composed by a number of different authors.”",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "EJ “Pentateuch”, section “canonization”. Backs “Genesis through Numbers added to Deuteronomy by the mid-5th century BCE”. Straight double quotes as in the saved text.",
+    }
+  setting/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Nihan and Rhyder, opening paragraph, first sentence. About the five books themselves; calls the account “legendary”. No year, so the setting has no from/to.",
+    }
+  setting/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l5 ch. 1 “Wellhausen's Documentary Hypothesis and Characteristics of Biblical Sources” [00:00:00]. About the narrative sources P, J and E, not the book as such; second support for the span.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Turpin, AiG, September 10, 2021, subtitle under the title. Backs “written by Moses”.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same article, section “Traditional Attribution of the Torah to Moses”, the paragraph beginning “Rather than a redactor piecing together” (the page text repeats that paragraph once; the cited one carries footnote marker 6). Quote ends before “This would give Moses at least thirty-nine years to write the Torah.” Footnote 2 derives the range from an exodus in 1446 BC. See flag 6.",
+    }
+triggers:
+  175@00:13:51:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:13:51.820 turn (Dan McClellan), after “Hebrew didn't exist until around the 11th century BCE at the very earliest. And that was a very rudimentary form of Hebrew.” (the `hebrew-language` substring). Goes on “And that happens to be when these people groups that are named were around.” Read 00:11:48–00:16:29. No hedge cut; “Something that is like” kept.",
+    }
+  175@00:15:14:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. Substring of the 00:15:14.180 turn (Dan McClellan), answering why Wes Huff says 1600 years. Starts after “But 1400 BCE to 100 CE, 1500 years.”; the turn ends “So you say in the neighborhood of 1600.” See flag 7.",
+    }
+  117@00:38:08:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:38:08.220 turn (Dan McClellan), after “It's supporting evidence, but”. Hedges kept: “probably” (twice), “is kind of a traditional dating”. Dropped continuation: see flag 8. Read 00:36:57–00:39:17 (Elephantine context).",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Display and title for what Nihan and Rhyder date: the Pentateuch's composition and editing as a whole. The note names the stage (whole process; final collection at the end) as the issue asks. See flag 1.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Start: Nihan and Rhyder (Neo-Assyrian, ca. 912–612) vs EJ (11th century); end of the final form: Ska (Persian) vs Hayes (exilic to post-exilic, probably) vs EJ (mid-5th century for Genesis–Numbers). Each attributed in the note; none picked. No “contested” label: Ska's own “battlefield” is not quoted on the entry.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Trigger 175@00:15:14 has states: tradition.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Answers in Genesis, an apologetics ministry” equals the registry `tradition:`; AiG's About page: “Answers in Genesis is an apologetics (i.e., Christianity-defending) ministry”.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date. Hayes's “probably” and EJ's “approximately” are hedges, not conditions.",
+    }
+sources:
+  nihan-rhyder-bo-torah:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey article, dated August 26, 2020 on the page",
+      note: "Reference (Bible Odyssey, SBL; as `breed-bo-earliest-versions`). Authors: Nihan (Lausanne), Rhyder (Harvard), per the page's bios.",
+    }
+  ska-bo-formation-pentateuch:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Bible Odyssey video page, undated",
+      note: "Reference (Bible Odyssey, SBL). Ska, S.J., Pontifical Biblical Institute, per the page's bio. See flag 3.",
+    }
+  hayes-rlst145-l12:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reference (#86). Existing registry entry. Lecture 12.",
+    }
+  friedman-overton-ej-pentateuch:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Encyclopaedia Judaica, 2nd ed., entry credit line Richard Elliott Friedman / Shawna Dolansky Overton",
+      note: "Reference, as `greenberg-sperling-ej-exodus`. The entry states Friedman's own source model (pre-exilic P) as settled; cited only for the two process sentences.",
+    }
+  hayes-rlst145-l5:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reference (#86). Existing registry entry.",
+    }
+  aig-turpin-2021-mosaic-authorship:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Web article, September 10, 2021 (“Featured in 2021 Volume 16”)",
+      note: "Tradition. Answers in Genesis self-description from its About page; same holder string as `aig-wright-2012-flood`.",
+    }
+leads:
+  - "Konrad Schmid, “Who Wrote the Torah?”, IAS Ideas (2018), ias.edu/ideas/2018/schmid-torah: refused scripts (challenge/403). A search snippet puts the Pentateuch as basically finished no later than the second century B.C.E. Not read."
+  - "NABRE “Introduction to the Pentateuch”: the NABRE Genesis introduction points to it; not found online, and the Exodus, Leviticus, Numbers and Deuteronomy .md introductions returned 403 or bot checks in this pass."
+  - "Britannica “Pentateuch” and “biblical literature”: Cloudflare challenge; not read."
+  - "Konrad Schmid, “The Torah as Multi-Authorial Literature of Discussion” (De Gruyter 2025, open access, doi 10.1515/9783111153384-008): PDF returned an empty body. Not read."
+  - "Barnea and Kratz (eds.), Yahwism under the Achaemenid Empire (De Gruyter 2024, reportedly open access), chapter “The Torah as a Closed Cluster Text: Conceptualizing the Transmission of the Pentateuch in the Persian Period”. Not read."
+  - "Achenbach, “The Late Persian Formation of the Torah: Observations on Deuteronomy 34” (De Gruyter, paywalled). Not read."
+  - "bible.org “Introduction to the Pentateuch” (Tradition?): a snippet suggests Sinai, 1446–1445 B.C. for Genesis–Leviticus. Not read."
+uncited:
+  - "Hayes l5 ch. 1 [00:00:00]: the classical source critics' dates (J tenth century, E ninth, JE late eighth, D late seventh, Wellhausen's exilic P; “the Torah is really the result of five centuries of religious and literary activity”). Read; not cited: Hayes reports the classic hypothesis, then calls it “only a hypothesis” (ch. 2)."
+  - "Hayes l5 ch. 2 [00:16:05]: “Others argue that everything is post-exilic, everything's after the fifth century. It was written in the fourth, third century in the Persian period.” Read; not cited: an attributed minority view, the only source mention of a fourth century."
+  - "Hayes l22 ch. 3 [00:14:38]: “Most scholars maintain that the traditions of the priestly source, the traditions of the Deuteronomistic source had pretty well reached their final form in those years.” (586–538). Read; not cited: P and D only, not the Pentateuch."
+  - "Hayes l22 ch. 4 [00:30:10]: “We really can't be certain what it is that Ezra was presenting as the Torah of Moses. It may have been the Pentateuch basically in the form that we now have it.” Read; not cited: hedged, and EJ critical/6 carries the Ezra-era stage."
+  - "EJ “Pentateuch”, section “p”: “All of these point solidly to a pre-exilic date, likely during the reign of King Hezekiah of Judah (715–687 b.c.e.).” Read; not cited: Friedman's own view, contradicts `priestly-genesis-1`; the entry says “The date of p has remained an extremely controversial issue”."
+  - "EJ “Pentateuch”, section “r”: Ezra or his circle “is likely to have been the Redactor (r) of the Torah”. Read; not cited: hedged identification; critical/6 carries the date."
+  - "Bowker, Concise Oxford Dictionary of World Religions, “Pentateuch” (Encyclopedia.com): J and E 10th century, D 7th, P “the time of Ezra and Nehemiah”, “the precision of these claims has more recently come under attack”. Read; not cited: source dates hedged, and Nihan and Rhyder carry the span."
+  - "World Encyclopedia, “Pentateuch” (Encyclopedia.com): “probably collected in their present form during the Babylonian Captivity of the Jews during the 6th century bc.” Read; not cited: thin general encyclopedia, unsigned."
+  - "Oxford Pocket Dictionary of Current English, “Pentateuch”: “a compilation from texts of the 9th to 5th centuries bc.” Read; not cited: a general dictionary."
+  - "NABRE Genesis introduction, “The Composition of the Book.”: “ancient traditions (J and E) were edited in the sixth or fifth century B.C.” Read; not cited: Genesis only."
+  - "Nihan and Rhyder, “How did the Pentateuch become so important…”: Greek translation in the third century BCE suggests special status “by the end of the Persian period”. Read; not cited: status, not composition."
+  - "Coogan and Chapman ch. 3 and ch. 4 summaries: no dates for the Pentateuch's composition. Read; not cited."
+  - "Got Questions “What is the Torah?”: “The Torah was written approximately 1400 BC.”; “What is the documentary hypothesis?”: “placing the writing of the Pentateuch around 1400 BC (when Moses died)”. Read; not cited: one holder per entry (check:timeline), and Turpin names Moses as writer with the date in one sentence. Got Questions' “around 400 BC” is its account of the critical view, never a Critical Date."
+  - "Answers in Genesis “Book of Genesis”: Moses “wrote the Pentateuch … (about 1450 BC)”. Read; not cited: unsigned landing page; Turpin carries AiG's date. Not merged with Turpin's range."
+  - "Hayes l11 ch. 1 [00:00:00]: the death of Moses on the plains of Moab. Read; not cited: setting/1 carries the endpoint."

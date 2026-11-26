@@ -3107,3 +3107,59 @@ mccarter-2008-hebrew:
   url: "https://www.cambridge.org/core/books/abs/ancient-languages-of-syriapalestine-and-arabia/hebrew/512F0FC4796BF3DB1137C1A9BA228DB1"
   hostAuthored: false
   tradition: null
+
+nihan-rhyder-bo-torah:
+  author: "Christophe Nihan and Julia Rhyder"
+  title: "The Torah/The Pentateuch"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Scholarly society website, open"
+  url: "https://www.bibleodyssey.org/articles/the-torah-the-pentateuch/"
+  hostAuthored: false
+  tradition: null
+
+ska-bo-formation-pentateuch:
+  author: "Jean-Louis Ska"
+  title: "Formation of the Pentateuch"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "Scholarly society website, open; short video with transcript"
+  url: "https://www.bibleodyssey.org/video-gallery/formation-of-the-pentateuch/"
+  hostAuthored: false
+  tradition: null
+
+friedman-overton-ej-pentateuch:
+  author: "Richard Elliott Friedman and Shawna Dolansky Overton"
+  title: "Pentateuch"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed. (entry credit line)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/pentateuch"
+  hostAuthored: false
+  tradition: null
+
+aig-turpin-2021-mosaic-authorship:
+  author: "Simon Turpin"
+  title: "Evidence for Mosaic Authorship of the Torah"
+  series: null
+  publisher: "Answers in Genesis"
+  year: 2021
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://answersingenesis.org/bible-characters/moses/evidence-mosaic-authorship-of-torah/"
+  hostAuthored: false
+  tradition: "Answers in Genesis, an apologetics ministry"
