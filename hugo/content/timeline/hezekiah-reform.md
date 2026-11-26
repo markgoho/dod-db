@@ -17,7 +17,7 @@ watch:
   ]
 undated:
   verdict: no-firm-date
-  statement: "The sources give it no firm date, and whether it happened is debated. Faust calls the historicity of Hezekiah's reforms “a hotly debated topic”: many scholars take the reform as an actual historical event, while others doubt it, largely on inner-biblical grounds. If it was historical, he places it in the years before 712/711 BCE, but only if Tel ‘Eton's destruction belongs to Sargon II's campaign of those years, which he says is not certain. Pakkala thinks it very unlikely that any reform took place in the sense 2 Kings 18:4 intends. Moulis finds Hezekiah the best candidate for most of the cultic eliminations he surveys, while calling many aspects of his centralization debatable."
+  statement: "The sources give it no firm date, and whether it happened is debated. Faust calls the historicity of Hezekiah's reforms “a hotly debated topic”: many scholars take the reform as an actual historical event, while others doubt it, largely on inner-biblical grounds. If it was historical, he suggests it took place in the years before 712/711 BCE, but only if Tel ‘Eton's destruction belongs to Sargon II's campaign of those years, which he says is not certain. Pakkala thinks it very unlikely that any reform took place in the sense 2 Kings 18:4 intends. Moulis finds Hezekiah the best candidate for most of the cultic eliminations he surveys, while calling many aspects of his centralization debatable."
   cites:
     - source: faust-2026-tel-eton
       locator: "p. 31 (abstract)"
@@ -52,11 +52,11 @@ undated:
       quote: "However, it is very unlikely that any religious reforms in the sense intended by the authors of 2 Kings 18:4 and 23:1– 24 took place."
       read: 2026-11-26
     - source: moulis-2019-hezekiah-cultic-reforms
-      locator: "p. 180, conclusion"
+      locator: "p. 180, end of section 7.7 “Summary”"
       quote: "The best candidate for most of these cultic eliminations is King Hezekiah."
       read: 2026-11-26
     - source: moulis-2019-hezekiah-cultic-reforms
-      locator: "p. 180, conclusion"
+      locator: "p. 180, end of section 7.7 “Summary”"
       quote: "Hezekiah’s cultic centralization had many aspects. Many of them are debatable and some direct connections are missing."
       read: 2026-11-26
 ---
