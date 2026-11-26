@@ -1,0 +1,122 @@
+{{- /*
+  PROTOTYPE (tradition gap, variant C): a dumbbell chart of every placed
+  entry with both a Critical Date and a Tradition Date. One row each: the
+  scholars' range (solid), the tradition's range (hatched, dashed), a line
+  between, and the gap between their midpoints. Throwaway; see
+  prototype/timeline-tradition-gap.
+  Takes the placed list from timeline-placement.html.
+  */
+-}}
+{{- $rows := slice -}}
+{{- $only := slice -}}
+{{- range . -}}
+  {{- $p := .page.Params -}}
+  {{- if and (eq .by "critical") $p.tradition (isset ($p.tradition | default dict) "from") -}}
+    {{- $cFrom := float ($p.critical.from | default .year) -}}
+    {{- $cTo := float ($p.critical.to | default $cFrom) -}}
+    {{- $tFrom := float $p.tradition.from -}}
+    {{- $tTo := float ($p.tradition.to | default $tFrom) -}}
+    {{- $gap := sub (div (add $cFrom $cTo) 2) (div (add $tFrom $tTo) 2) -}}
+    {{- $rows = $rows | append (dict "page" .page "cFrom" $cFrom "cTo" $cTo "tFrom" $tFrom "tTo" $tTo "gap" $gap) -}}
+  {{- else if eq .by "tradition" -}}
+    {{- $only = $only | append .page -}}
+  {{- end -}}
+{{- end -}}
+{{- with $rows -}}
+  {{- $years := slice -}}
+  {{- range . -}}
+    {{- $years = $years | append .cFrom .cTo .tFrom .tTo -}}
+  {{- end -}}
+  {{- $min := mul (math.Floor (div (math.Min $years) 500)) 500 -}}
+  {{- $max := mul (math.Ceil (div (math.Max $years) 500)) 500 -}}
+  {{- $span := sub $max $min -}}
+  <figure class="gap-chart timeline-measure panel">
+    <figcaption class="gap-chart__caption">
+      <h2 class="type-section-title">Scholars vs. tradition</h2>
+      <p class="timeline-section-intro">
+        Each row is one entry with both dates. The gap is between the middles of
+        the two ranges.
+      </p>
+    </figcaption>
+    <ol class="gap-chart__rows" role="list">
+      {{- range . }}
+        {{- $c0 := div (sub .cFrom $min) $span }}
+        {{- $c1 := div (sub .cTo $min) $span }}
+        {{- $t0 := div (sub .tFrom $min) $span }}
+        {{- $t1 := div (sub .tTo $min) $span }}
+        {{- $l0 := math.Min $c1 $t1 }}
+        {{- $l1 := math.Max $c0 $t0 }}
+        {{- $abs := math.Abs .gap }}
+        {{- $rounded := mul (math.Round (div $abs 10)) 10 | int }}
+        <li class="gap-chart__row">
+          <a class="gap-chart__title" href="#{{ .page.File.ContentBaseName }}"
+            >{{ .page.Title }}</a
+          >
+          <div class="gap-chart__track">
+            <span
+              class="gap-chart__link"
+              style="--from: {{ $l0 }}; --to: {{ $l1 }}"></span>
+            <span
+              class="gap-chart__range gap-chart__range--tradition"
+              style="--from: {{ $t0 }}; --to: {{ $t1 }}"
+              title="Tradition: {{ .page.Params.tradition.display }}"></span>
+            <span
+              class="gap-chart__range gap-chart__range--critical"
+              style="--from: {{ $c0 }}; --to: {{ $c1 }}"
+              title="Scholars: {{ .page.Params.critical.display }}"></span>
+          </div>
+          <p class="gap-chart__gap">
+            {{- if lt $abs 30 }}
+              about the same
+            {{- else }}
+              tradition <strong>~{{ lang.FormatNumber 0 $rounded }} yrs</strong>
+              {{ cond (gt .gap 0) "earlier" "later" }}
+            {{- end }}
+          </p>
+          <p class="gap-chart__dates">
+            <span>Scholars: {{ .page.Params.critical.display }}</span>
+            <span
+              >{{ .page.Params.tradition.holder }}:
+              {{ .page.Params.tradition.display }}</span
+            >
+          </p>
+        </li>
+      {{- end }}
+    </ol>
+    <div class="gap-chart__axis" aria-hidden="true">
+      {{- range seq $min 500 $max }}
+        {{- $y := int . }}
+        <span style="--at: {{ div (sub . $min) $span }}"
+          >{{ if lt $y 0 }}
+            {{ sub 0 $y }} BCE
+          {{ else if eq $y 0 }}
+            1 CE
+          {{ else }}
+            {{ $y }} CE
+          {{ end }}</span
+        >
+      {{- end }}
+    </div>
+    <ul class="gap-chart__legend" role="list">
+      <li>
+        <span class="gap-chart__key gap-chart__key--critical"></span> What
+        scholars date
+      </li>
+      <li>
+        <span class="gap-chart__key gap-chart__key--tradition"></span> What a
+        named tradition holds
+      </li>
+    </ul>
+    {{- with $only }}
+      <p class="gap-chart__only">
+        No gap to draw for
+        {{ range $i, $e := . }}
+          {{ if $i }},{{ end }}<a href="#{{ $e.File.ContentBaseName }}"
+            >{{ $e.Title }}</a
+          >
+        {{ end }}:
+        scholars give these no date, only a tradition does.
+      </p>
+    {{- end }}
+  </figure>
+{{- end -}}

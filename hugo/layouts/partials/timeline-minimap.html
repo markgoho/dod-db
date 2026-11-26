@@ -70,7 +70,19 @@
         {{- $setting = dict "start" $settingStart "end" $settingEnd "mid" $mid -}}
       {{- end -}}
     {{- end -}}
+    {{- /* PROTOTYPE (tradition gap, variant B): an entry placed by its Critical Date that also has a Tradition Date gets a gap bracket between the two midpoints. */ -}}
+    {{- $gap := dict -}}
+    {{- if and (ne .by "tradition") $p.tradition (isset ($p.tradition | default dict) "from") -}}
+      {{- $cFrom := float ($p.critical.from | default .year) -}}
+      {{- $cMid := div (add $cFrom (float ($p.critical.to | default $cFrom))) 2 -}}
+      {{- $tFrom := float $p.tradition.from -}}
+      {{- $tMid := div (add $tFrom (float ($p.tradition.to | default $tFrom))) 2 -}}
+      {{- $tAt := div (sub $tMid $start) $years -}}
+      {{- $cAt := div (sub $cMid $start) $years -}}
+      {{- $gap = dict "t" $tAt "c" $cAt "top" (math.Min $tAt $cAt) "bottom" (math.Max $tAt $cAt) "up" (lt $tAt $cAt) "date" $p.tradition.display -}}
+    {{- end -}}
     {{- $ticks = $ticks | append (dict
+      "gap" $gap
       "setting" $setting
       "id" .page.File.ContentBaseName
       "era" $eraId
@@ -196,6 +208,32 @@
             </span>
           {{- end }}
         {{- end }}
+        {{- /* PROTOTYPE (variant B): gap brackets, each in the lowest column no overlapping bracket holds. */}}
+        {{- $placedGaps := slice }}
+        {{- range $t := $ticks }}
+          {{- with $t.gap }}
+            {{- $g := . }}
+            {{- $taken := slice }}
+            {{- range $placedGaps }}
+              {{- if and (lt .top $g.bottom) (gt .bottom $g.top) }}
+                {{- $taken = $taken | append .col }}
+              {{- end }}
+            {{- end }}
+            {{- $col := 0 }}
+            {{- range seq (len $taken) }}
+              {{- if in $taken $col }}{{ $col = add $col 1 }}{{ end }}
+            {{- end }}
+            {{- $placedGaps = $placedGaps | append (dict "top" $g.top "bottom" $g.bottom "col" $col) }}
+            <span
+              class="timeline-minimap__gap{{ if $g.up }}
+                timeline-minimap__gap--up
+              {{ end }}"
+              data-gap="{{ $t.id }}"
+              title="{{ $t.title }}: tradition {{ $g.date }} · scholars {{ $t.date }}"
+              style="--gap-top: {{ $g.top }}; --gap-bottom: {{ $g.bottom }}; --gap-col: {{ $col }}"
+              aria-hidden="true"></span>
+          {{- end }}
+        {{- end }}
       </div>
     </div>
     {{- /* The two dots, in the Timeline's own labels. */}}
@@ -209,6 +247,10 @@
           class="timeline-minimap__dot timeline-minimap__dot--placed"
           aria-hidden="true"></span>
         {{ $placedLabel }}
+      </li>
+      <li class="timeline-minimap__gap-legend">
+        <span class="timeline-minimap__gap-key" aria-hidden="true"></span>
+        Gap to a tradition’s date
       </li>
     </ul>
   </nav>
@@ -224,6 +266,9 @@
     {{- $on := printf `.timeline-minimap:has(.timeline-minimap__spy [href="#%s"]%s)` .id $current }}
     {{- $labels = $labels | append (printf `%s [data-now="%s"]` $on .id) }}
     {{- $marks = $marks | append (printf `%s [data-tick="%s"]` $on .id) }}
+    {{- if .gap }}
+      {{- $settings = $settings | append (printf `%s [data-gap="%s"]` $on .id) }}
+    {{- end }}
     {{- if .setting }}
       {{- $settings = $settings | append (printf `%s [data-setting="%s"]` $on .id) }}
     {{- end }}

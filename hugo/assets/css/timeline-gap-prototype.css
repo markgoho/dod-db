@@ -1,0 +1,282 @@
+/* PROTOTYPE (tradition gap): variants B and C, switched by data-proto on <html>. Throwaway. */
+
+/* ---------- Variant switching ---------- */
+html:not([data-proto="b"], [data-proto="bc"]) .timeline-minimap__gap,
+html:not([data-proto="b"], [data-proto="bc"]) .timeline-minimap__gap-legend,
+html:not([data-proto="c"], [data-proto="bc"]) .gap-chart {
+  display: none;
+}
+
+/* ---------- Variant B: gap brackets in the minimap ---------- */
+
+/*
+  A bracket from the tradition's midpoint to the scholars' midpoint, just
+  inside the tick track. Each overlapping bracket takes its own column.
+  A hatched diamond marks the tradition end; a stub reaches toward the tick.
+*/
+.timeline-minimap__gap {
+  --gap-ink: var(--tan-500);
+  --gap-col-w: round(var(--space-3xs), 1px);
+
+  border-inline-end: var(--border-width-sm) dashed var(--gap-ink);
+  inset-block: round(down, var(--gap-top) * 100%, 1px)
+    calc(100% - round(down, var(--gap-bottom) * 100%, 1px));
+  inset-inline-end: calc(
+    var(--tick-track-width) + var(--space-4xs) + var(--gap-col) *
+      var(--gap-col-w) * 2
+  );
+  inline-size: var(--gap-col-w);
+  pointer-events: auto;
+  position: absolute;
+}
+
+/* The tradition end: a diamond. Bottom unless the tradition is earlier (--up). */
+.timeline-minimap__gap::before {
+  background: var(--tan-000);
+  block-size: var(--space-2xs);
+  border: var(--border-width-sm) solid var(--gap-ink);
+  content: "";
+  inline-size: var(--space-2xs);
+  inset-block-end: calc(-1 * var(--space-2xs) / 2);
+  inset-inline-end: calc(
+    -1 * var(--space-2xs) / 2 - var(--border-width-sm) / 2
+  );
+  position: absolute;
+  rotate: 45deg;
+}
+
+.timeline-minimap__gap--up::before {
+  inset-block: calc(-1 * var(--space-2xs) / 2) auto;
+}
+
+/* The scholars' end: a stub toward the tick track. */
+.timeline-minimap__gap::after {
+  border-block-start: var(--border-width-sm) dashed var(--gap-ink);
+  content: "";
+  inline-size: calc(
+    var(--tick-track-width) / 2 + var(--gap-col) * var(--gap-col-w) * 2
+  );
+  inset-block-start: 0;
+  inset-inline-start: 100%;
+  position: absolute;
+}
+
+.timeline-minimap__gap--up::after {
+  inset-block: auto 0;
+}
+
+.timeline-minimap__gap-key {
+  block-size: var(--space-2xs);
+  border: var(--border-width-sm) solid var(--tan-500);
+  display: inline-block;
+  inline-size: var(--space-2xs);
+  margin-inline: var(--space-4xs);
+  rotate: 45deg;
+}
+
+.timeline-minimap__gap-legend {
+  grid-template-columns: var(--space-s) minmax(0, 1fr) !important;
+}
+
+@supports (color: if(style(--is-current: 1): red; else: blue)) {
+  .timeline-minimap__gap {
+    --gap-ink: if(
+      style(--is-current: 1): var(--color-action); else: var(--tan-500)
+    );
+  }
+}
+
+/* ---------- Variant C: the gap chart ---------- */
+
+.gap-chart {
+  --row-label: 14rem;
+  --row-gap: 12rem;
+
+  display: grid;
+  gap: var(--space-s);
+  margin: 0 auto var(--space-l);
+  padding: var(--space-m);
+}
+
+.gap-chart__caption > * {
+  margin: 0;
+}
+
+.gap-chart__rows {
+  display: grid;
+  gap: var(--space-xs);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gap-chart__row {
+  align-items: center;
+  column-gap: var(--space-s);
+  display: grid;
+  grid-template-columns: var(--row-label) minmax(0, 1fr) var(--row-gap);
+  row-gap: var(--space-4xs);
+}
+
+.gap-chart__title {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+
+.gap-chart__track {
+  block-size: var(--space-m);
+  border-block-end: var(--border-width-sm) solid var(--tan-200);
+  position: relative;
+}
+
+.gap-chart__range,
+.gap-chart__link {
+  inset-inline-start: calc(var(--from) * 100%);
+  position: absolute;
+  inline-size: max(calc((var(--to) - var(--from)) * 100%), var(--space-2xs));
+}
+
+.gap-chart__range {
+  block-size: var(--space-s);
+  border-radius: var(--border-radius-sm);
+  inset-block-start: calc(50% - var(--space-s) / 2);
+  translate: min(
+    0px,
+    calc((var(--to) - var(--from)) * 100% - var(--space-2xs)) / 2
+  );
+}
+
+.gap-chart__range--critical,
+.gap-chart__key--critical {
+  background: var(--tan-900);
+}
+
+.gap-chart__range--tradition,
+.gap-chart__key--tradition {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--tan-300) 0 var(--space-4xs),
+    var(--tan-000) var(--space-4xs) var(--space-2xs)
+  );
+  border: var(--border-width-sm) dashed var(--tan-900);
+}
+
+.gap-chart__link {
+  border-block-start: var(--border-width-sm) dashed var(--tan-500);
+  inset-block-start: 50%;
+}
+
+.gap-chart__gap {
+  font-size: var(--step--1);
+  margin: 0;
+}
+
+.gap-chart__dates {
+  color: var(--color-text-muted, var(--tan-700));
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--step--2);
+  gap: var(--space-3xs) var(--space-s);
+  grid-column: 2 / -1;
+  margin: 0;
+}
+
+.gap-chart__axis {
+  block-size: 1lh;
+  font-size: var(--step--2);
+  margin-inline: calc(var(--row-label) + var(--space-s))
+    calc(var(--row-gap) + var(--space-s));
+  position: relative;
+}
+
+.gap-chart__axis > span {
+  inset-inline-start: calc(var(--at) * 100%);
+  position: absolute;
+  translate: -50%;
+  white-space: nowrap;
+}
+
+.gap-chart__legend {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--step--1);
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gap-chart__legend > li {
+  align-items: center;
+  display: flex;
+  gap: var(--space-3xs);
+}
+
+.gap-chart__key {
+  block-size: var(--space-xs);
+  border-radius: var(--border-radius-sm);
+  display: inline-block;
+  inline-size: var(--space-m);
+}
+
+.gap-chart__only {
+  font-size: var(--step--1);
+  margin: 0;
+}
+
+@media (width < 48rem) {
+  .gap-chart__row {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .gap-chart__track {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .gap-chart__dates {
+    grid-column: 1 / -1;
+  }
+
+  .gap-chart__axis {
+    margin-inline: 0;
+  }
+
+  .gap-chart__axis > span:nth-child(even) {
+    display: none;
+  }
+}
+
+/* ---------- The variant switcher (not production) ---------- */
+
+.proto-switcher {
+  align-items: center;
+  background: var(--tan-900);
+  border-radius: 999px;
+  box-shadow: 0 var(--space-3xs) var(--space-s) rgb(0 0 0 / 0.35);
+  color: var(--tan-000);
+  display: flex;
+  font-size: var(--step--1);
+  gap: var(--space-2xs);
+  inset-block-end: var(--space-s);
+  inset-inline-start: 50%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: fixed;
+  translate: -50%;
+  z-index: 1000;
+}
+
+.proto-switcher button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: var(--space-3xs) var(--space-2xs);
+}
+
+.proto-switcher output {
+  min-inline-size: 16rem;
+  text-align: center;
+}

@@ -1,5 +1,5 @@
 {{ define "head-styles" }}
-  {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") (resources.Get "css/timeline-minimap.css") | resources.Concat "css/timeline-list.css" | resources.Minify }}
+  {{ $inlineCSS := slice (resources.Get "css/tag-single.css") (resources.Get "css/scholarship.css") (resources.Get "css/timeline.css") (resources.Get "css/timeline-minimap.css") (resources.Get "css/timeline-gap-prototype.css") | resources.Concat "css/timeline-list.css" | resources.Minify }}
   <style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
@@ -57,6 +57,9 @@
       {{ partial "timeline-notice.html" . }}
       {{ partial "timeline-date-line.html" $entries }}
     </div>
+
+    {{/* PROTOTYPE (tradition gap, variant C). */}}
+    {{ partial "timeline-gap-chart-prototype.html" $placed }}
 
     {{ with $eras }}
       {{/* The minimap is a sibling of the spine, never inside it: the spine is a size container, which would capture a fixed rail. */}}
@@ -201,6 +204,53 @@
       {{ $js = $js | resources.Minify | resources.Fingerprint }}
     {{ end }}
     <script src="{{ $js.RelPermalink }}" type="module"></script>
+  {{ end }}
+  {{/* PROTOTYPE (tradition gap): ?variant= switcher; never in production. */}}
+  {{ if not hugo.IsProduction }}
+    <div class="proto-switcher" role="group" aria-label="Prototype variant">
+      <button type="button" data-step="-1" aria-label="Previous variant">
+        ←
+      </button>
+      <output></output>
+      <button type="button" data-step="1" aria-label="Next variant">→</button>
+    </div>
+    <script>
+      (() => {
+        const variants = [
+          ["a", "Current"],
+          ["b", "Minimap gap brackets"],
+          ["c", "Gap chart"],
+          ["bc", "Both"],
+        ];
+        const bar = document.querySelector(".proto-switcher");
+        const out = bar.querySelector("output");
+        const keys = variants.map(([k]) => k);
+        const apply = k => {
+          document.documentElement.dataset.proto = k;
+          const [key, name] = variants.find(([v]) => v === k);
+          out.textContent = `${key.toUpperCase()} (${name})`;
+        };
+        const step = d => {
+          const i = keys.indexOf(document.documentElement.dataset.proto);
+          const k = keys[(i + d + keys.length) % keys.length];
+          const url = new URL(location.href);
+          url.searchParams.set("variant", k);
+          history.replaceState(null, "", url);
+          apply(k);
+        };
+        const start = new URLSearchParams(location.search).get("variant");
+        apply(keys.includes(start) ? start : "a");
+        bar.addEventListener("click", e => {
+          const b = e.target.closest("[data-step]");
+          if (b) step(Number(b.dataset.step));
+        });
+        addEventListener("keydown", e => {
+          if (e.target.closest("input, textarea, [contenteditable]")) return;
+          if (e.key === "ArrowLeft") step(-1);
+          if (e.key === "ArrowRight") step(1);
+        });
+      })();
+    </script>
   {{ end }}
   {{ partial "json-ld/timeline.html" . }}
   {{ partial "json-ld/breadcrumb.html" . }}
