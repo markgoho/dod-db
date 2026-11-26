@@ -2613,8 +2613,8 @@ sergi-2023-two-houses:
   edition: null
   class: Scholarly
   kind: book
-  access: "Publisher front-matter PDF (contents and pp. 1–23), open"
-  url: "https://www.sbl-site.org/assets/pdfs/pubs/061738P-front.pdf"
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/9781628373431_txt.pdf"
   hostAuthored: false
   tradition: null
 
@@ -2755,5 +2755,61 @@ nabre-1-samuel-16-17-notes:
   kind: study-bible
   access: "Church-published study Bible; opens in a browser, refuses scripted requests"
   url: "https://bible.usccb.org/bible/1samuel/17"
+  hostAuthored: false
+  tradition: null
+
+hagelia-2009-dan-debate:
+  author: "Hallvard Hagelia"
+  title: "The Dan Debate: The Tel Dan Inscription in Recent Research"
+  series: "Recent Research in Biblical Studies 4"
+  publisher: "Sheffield Phoenix Press"
+  year: 2009
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
+  url: "https://www.sbl-site.org/wp-content/uploads/2025/01/Hagelia_Dan.pdf"
+  hostAuthored: false
+  tradition: null
+
+finkelstein-2007-quest-solomon:
+  author: "Israel Finkelstein"
+  title: "The Rise of Jerusalem and Judah; The Truth about King Solomon (essays in Part 4)"
+  series: "Israel Finkelstein and Amihai Mazar, The Quest for the Historical Israel: Debating Archaeology and the History of Early Israel, ed. Brian B. Schmidt (Archaeology and Biblical Studies 17)"
+  publisher: "Society of Biblical Literature"
+  year: 2007
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
+  hostAuthored: false
+  tradition: null
+
+mazar-2007-quest-david-solomon:
+  author: "Amihai Mazar"
+  title: "The Search for David and Solomon: An Archaeological Perspective"
+  series: "Israel Finkelstein and Amihai Mazar, The Quest for the Historical Israel: Debating Archaeology and the History of Early Israel, ed. Brian B. Schmidt (Archaeology and Biblical Studies 17)"
+  publisher: "Society of Biblical Literature"
+  year: 2007
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
+  hostAuthored: false
+  tradition: null
+
+schmidt-2007-quest-summary:
+  author: "Brian B. Schmidt"
+  title: "A Summary Assessment for Part 4"
+  series: "Israel Finkelstein and Amihai Mazar, The Quest for the Historical Israel: Debating Archaeology and the History of Early Israel, ed. Brian B. Schmidt (Archaeology and Biblical Studies 17)"
+  publisher: "Society of Biblical Literature"
+  year: 2007
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
   hostAuthored: false
   tradition: null

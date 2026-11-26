@@ -35,7 +35,7 @@ statements:
     group: David and Solomon's kingdom
     question: Did David and Solomon rule a united kingdom of Israel and Judah?
     short: Scholars debate it. Many doubt that such a kingdom existed, and those who defend an early state describe a far more modest one than the Bible portrays.
-    text: Kent Harold Richards's Bible Odyssey article says current scholars debate the existence and kingship of David and a united monarchy, and Beth Alpert Nakhai's says there is debate about the historicity of the biblical account, adding that some scholars claim Israel and Judah were never politically unified. Avraham Faust and Yair Sapir write that the historicity of the United Monarchy is questioned by many. The introduction to an SBL Press volume by Joachim Krause, Omer Sergi and Kristin Weingart says recent historical and archaeological studies cast doubt on much of the historicity of the Saul and David traditions, especially a great united monarchy ruled by David from Jerusalem. Israel Finkelstein says the biblical idea of a great united monarchy is a literary construct, and Sergi's own book says that among mainstream scholars the united monarchy shifted relatively rapidly from historical to fictional entity, adding that even scholars seen as more conservative, such as Yosef Garfinkel and his colleagues, do not extend David's kingdom over the territories of the kingdom of Israel. Garfinkel and his co-authors argue that, even if one hesitates to accept the golden age the Bible portrays, a kingdom was established in Judah at that time, at first limited to the hill country and a small part of the Shephelah. Faust and Sapir argue that finds at Tel ‘Eton lend important support to its historicity.
+    text: Kent Harold Richards's Bible Odyssey article says current scholars debate the existence and kingship of David and a united monarchy, and Beth Alpert Nakhai's says there is debate about the historicity of the biblical account, adding that some scholars claim Israel and Judah were never politically unified. Avraham Faust and Yair Sapir write that the historicity of the United Monarchy is questioned by many, and Amihai Mazar that in the last two decades a good number of scholars have grown increasingly skeptical of the biblical descriptions and of the archaeological conclusions about the tenth century BCE. The introduction to an SBL Press volume by Joachim Krause, Omer Sergi and Kristin Weingart says recent historical and archaeological studies cast doubt on much of the historicity of the Saul and David traditions, especially a great united monarchy ruled by David from Jerusalem. Israel Finkelstein says the biblical idea of a great united monarchy is a literary construct, and Sergi's own book says that among mainstream scholars the united monarchy shifted relatively rapidly from historical to fictional entity, adding that even scholars seen as more conservative, such as Yosef Garfinkel and his colleagues, do not extend David's kingdom over the territories of the kingdom of Israel. Garfinkel and his co-authors argue that, even if one hesitates to accept the golden age the Bible portrays, a kingdom was established in Judah at that time, at first limited to the hill country and a small part of the Shephelah. Mazar calls the total deconstruction of the United Monarchy, in his view, unacceptable, and describes it as a state in an early stage of development, far from the rich and widely expanding state the biblical narrative portrays. Faust and Sapir argue that finds at Tel ‘Eton lend important support to its historicity.
     cites:
       - source: richards-bo-david
         locator: paragraph beginning “The multifaceted David”
@@ -52,6 +52,10 @@ statements:
       - source: faust-sapir-2018-tel-eton
         locator: p. 813
         quote: We noted above that the mere historicity of the United Monarchy is questioned by many.
+        read: 2026-11-25
+      - source: mazar-2007-quest-david-solomon
+        locator: p. 117 (Mazar, opening of “The Search for David and Solomon”)
+        quote: Yet, during the last two decades, a good number of scholars have grown increasingly skeptical concerning both the historical validity of the biblical descriptions, as well as the archaeological conclusions regarding the tenth century b.c.e., the supposed time of David and Solomon.
         read: 2026-11-25
       - source: krause-sergi-weingart-2020-saul-benjamin
         locator: p. 1, paragraph beginning “Recent historical and archaeological studies”
@@ -73,6 +77,14 @@ statements:
         locator: p. 368
         quote: This conclusion suggests that in its early days, this urban core, which may be regarded as the early historical nucleus of the nascent monarchy, was relatively limited geographically to the hill country and a small part of the Shephelah.
         read: 2026-11-25
+      - source: mazar-2007-quest-david-solomon
+        locator: p. 138 (Mazar, Conclusions)
+        quote: Nonetheless, the total deconstruction of the United Monarchy as suggested by some current authors is, in my view, unacceptable
+        read: 2026-11-25
+      - source: mazar-2007-quest-david-solomon
+        locator: p. 139 (Mazar)
+        quote: The United Monarchy can be described as a state in an early stage of development, far from the rich and widely expanding state portrayed in the biblical narrative.
+        read: 2026-11-25
       - source: faust-sapir-2018-tel-eton
         locator: p. 801, Introduction
         quote: suggests that the settlement at Tel ‘Eton was transformed in the 10th century BCE, lending important support to the historicity of the United Monarchy
@@ -81,7 +93,7 @@ statements:
     group: David and Solomon's kingdom
     question: Was David a historical person?
     short: Scholars debate it. Some read the Tel Dan inscription's “house of David” as confirming a dynasty founder named David; others call that unproven.
-    text: Richards says current scholars debate the very existence and kingship of David, and Steven McKenzie's Bible Odyssey article that evidence of David's reign is so sparse that scholars debate his historical existence. Christine Hayes's Yale lectures, given in 2006, say that, given the Tel Dan inscription and Judah's ruling family being called the House of David for centuries, she thinks most scholars would see David as a real person, while none of the details of the biblical account can really be confirmed. Baruch Halpern, in the Encyclopaedia Judaica, notes that some scholars hold David to be a late invention, like King Arthur, and answers that the Tel Dan and Mesha stelae confirm David as an earlier state-builder and founder of Judah's ruling dynasty. Sergi says the Tel Dan discovery pulled the rug out from under views of David as a late fiction, and that it shows someone named David was conceived of as the founder of the Judahite monarchy, at least by outsiders. Philip Davies, in a Bible Odyssey video, calls the inscription, if it reads that way, some minimal evidence that there was a figure remembered as David. John Goldingay notes that no other Middle Eastern document mentions Saul or David, though an inscription from Tel Dan refers to “the house of David”.
+    text: Richards says current scholars debate the very existence and kingship of David, and Steven McKenzie's Bible Odyssey article that evidence of David's reign is so sparse that scholars debate his historical existence. Christine Hayes's Yale lectures, given in 2006, say that, given the Tel Dan inscription and Judah's ruling family being called the House of David for centuries, she thinks most scholars would see David as a real person, while none of the details of the biblical account can really be confirmed. Hallvard Hagelia's survey of the Tel Dan debate says most scholars contributing to it have seen the inscription's reading as confirming David as a historical figure. Baruch Halpern, in the Encyclopaedia Judaica, notes that some scholars hold David to be a late invention, like King Arthur, and answers that the Tel Dan and Mesha stelae confirm David as an earlier state-builder and founder of Judah's ruling dynasty. Sergi says the Tel Dan discovery pulled the rug out from under views of David as a late fiction, and that it shows someone named David was conceived of as the founder of the Judahite monarchy, at least by outsiders. Finkelstein, arguing against the so-called minimalists, contends that David and Solomon are historical figures, founders of a dynasty based in Jerusalem. Philip Davies, in a Bible Odyssey video, calls the inscription, if it reads that way, some minimal evidence that there was a figure remembered as David. John Goldingay notes that no other Middle Eastern document mentions Saul or David, though an inscription from Tel Dan refers to “the house of David”.
     cites:
       - source: richards-bo-david
         locator: paragraph beginning “The multifaceted David”
@@ -95,6 +107,10 @@ statements:
         locator: ch. 5 Saul and David as Representations of Ambivalence about Monarchy [00:32:46], paragraph beginning “Of course, representing David as bewailing”
         quote: Given that the ruling family in Judah was referred to as the House of David for several centuries, and given a wonderful archaeological find dating from the ninth century — it's a Syrian inscription that refers to the House of David dating to the ninth century — so given those two pieces of evidence, I think most scholars would see David as a real person. None of the details of the biblical account can really be confirmed, of course, but I think the consensus is that David was a real person. There are obviously some who do not hold that and believe this is a much later retrojection.
         read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 6, §3 General Summary, p. 70
+        quote: Today, reading byt dwd seems almost generally accepted, with only a few exceptions. Most scholars contributing to this debate have seen this reading as confirming the existence of David as an historical figure, while ‘House of David’ is understood as either a reference to the Davidic dynasty or, to the kingdom of Judah, parallel to the kingdom of Israel, which is also mentioned in the text.
+        read: 2026-11-25
       - source: halpern-ej-david
         locator: "'In the Bible' > 'sources', paragraph 2"
         quote: Some scholars maintain that, like King Arthur, David is a late invention. But two stelae (Tel Dan, Mesha) indicate that by 830 or so Judah was identified as "the House of David." These stelae confirm that David was an earlier state-builder, and, according to ninth-century usage, the founder of its ruling dynasty.
@@ -102,6 +118,14 @@ statements:
       - source: sergi-2023-two-houses
         locator: ch. 1, p. 4
         quote: Nevertheless, the discovery of the Tel Dan Stela (Biran and Naveh 1993, 1995) pulled the rug out from under these latter views, as the words “Beit-David” (house of David) are clearly inscribed on its smooth black surface. There is little doubt that the term “house of David” on the Tel Dan Stela refers to mid-ninth-century BCE Judah, indicating that someone named David was conceived of as the founder of the Judahite monarchy, at least by outsiders.
+        read: 2026-11-25
+      - source: finkelstein-2007-quest-solomon
+        locator: p. 107 (Finkelstein, “The Truth about King Solomon”), paragraph beginning “Let me begin at the end”
+        quote: Against the conservative or maximalist camps, I argue that much of the David and Solomon narrative in the Bible cannot be read as a straightforward historical testimony and that their kingdom was far more modest than traditionally perceived. At the same time, against the so-called minimalists,
+        read: 2026-11-25
+      - source: finkelstein-2007-quest-solomon
+        locator: p. 108 (Finkelstein)
+        quote: I contend that David and Solomon are historical figures—the founders of a dynasty based in the Judahite city of Jerusalem.
         read: 2026-11-25
       - source: davies-bo-tel-dan-video
         locator: transcript, paragraph 8, beginning “We might say”
@@ -115,8 +139,28 @@ statements:
     group: David and Solomon's kingdom
     question: What kind of ruler do scholars think David was?
     short: Scholars who accept a historical David read the Bible's account of his empire as exaggerated. How large his realm was, and what Jerusalem was like in his time, are disputed.
-    text: "Baruch Halpern calls David's kingdom limited, says David was never a builder, and ties his early expansion to service to the Philistine king Achish. The Encyclopaedia Judaica's history entry says the biblical account of a vast Davidic empire seems unsubstantiated archaeologically and greatly exaggerated, and Hayes says there are very few material remains of an empire on the scale the Bible suggests. The summary of Coogan and Chapman's textbook says David was likely one of the most powerful monarchs in the region, while the descriptions of his exploits appear exaggerated. Jerusalem in David's century is itself disputed: Erin Darby's Bible Odyssey article says its history in the tenth century BCE is hotly debated, and that while some archaeologists claim to have found David's palace, many others remain skeptical; Leonard Greenspoon calls it one of the most contentious areas of debate among biblical scholars. Hayes says archaeologists have found Jerusalem was a very small town until the late eighth century, and Halpern that David's Jerusalem was not even a city, but more of a bolt hole; Sergi says there is clear evidence of public and monumental building there from the early Iron IIA."
+    text: "Finkelstein describes the kingdom of David and Solomon as no more than a poor, demographically depleted chiefdom centred on Jerusalem, a humble village, and reads the stories of David's life as a bandit on the fringe of the Judean highlands as containing genuine early memories. Mazar calls Jerusalem a possible power base for local rulers like David and Solomon, not the capital of a large state, and compares David's potential achievements to those of Labayu, an earlier hill-country leader of the Amarna Age. Halpern calls David's kingdom limited, says David was never a builder, and ties his early expansion to service to the Philistine king Achish. The Encyclopaedia Judaica's history entry says the biblical account of a vast Davidic empire seems unsubstantiated archaeologically and greatly exaggerated, and Hayes says there are very few material remains of an empire on the scale the Bible suggests. The summary of Coogan and Chapman's textbook says David was likely one of the most powerful monarchs in the region, while the descriptions of his exploits appear exaggerated. Jerusalem in David's century is itself disputed: Erin Darby's Bible Odyssey article says its history in the tenth century BCE is hotly debated, and that while some archaeologists claim to have found David's palace, many others remain skeptical; Leonard Greenspoon calls it one of the most contentious areas of debate among biblical scholars. Hayes says archaeologists have found Jerusalem was a very small town until the late eighth century, and Halpern that David's Jerusalem was not even a city, but more of a bolt hole; Sergi says there is clear evidence of public and monumental building there from the early Iron IIA."
     cites:
+      - source: finkelstein-2007-quest-solomon
+        locator: p. 115 (Finkelstein)
+        quote: The kingdom of David and Solomon was no more than a poor, demographically depleted chiefdom centered in Jerusalem, a humble village.
+        read: 2026-11-25
+      - source: finkelstein-2007-quest-solomon
+        locator: p. 115 (Finkelstein, “Back to History”)
+        quote: mainly the heroic tales and the description of his life as a bandit on the fringe of the Judean highlands—contain genuine, early historical memories.
+        read: 2026-11-25
+      - source: mazar-2007-quest-david-solomon
+        locator: p. 129 (Mazar, summary on Jerusalem)
+        quote: Such a city cannot be imagined as a capital of a large state like the one described in the Bible, but it could well serve as a power base for local rulers like David and Solomon, providing that we correctly define the nature of their kingship and state.
+        read: 2026-11-25
+      - source: mazar-2007-quest-david-solomon
+        locator: p. 138 (Mazar)
+        quote: I would compare the potential achievements of David to those of an earlier hill country leader, namely, Labayu, the Amarna Age
+        read: 2026-11-25
+      - source: mazar-2007-quest-david-solomon
+        locator: p. 139 (Mazar)
+        quote: David can be envisioned as a ruler similar to Labayu, except that he operated in a time free of intervention by the Egyptians or any other foreign power, and when the Canaanite cities were in decline.
+        read: 2026-11-25
       - source: halpern-ej-david
         url: https://www.encyclopedia.com/people/philosophy-and-religion/biblical-proper-names-biographies/david
         locator: paragraph beginning “In sum, David was never a builder”
@@ -213,12 +257,20 @@ statements:
   - id: origin
     group: David and Solomon's kingdom
     question: Where does the Bible's picture of a united kingdom come from?
-    short: Scholars who doubt the united kingdom read the Bible's picture of it as a later literary construct, projected back onto David and Solomon.
-    text: Finkelstein calls the great united monarchy a literary construct of late-monarchic Judahite authors. Nakhai says some scholars read the Bible's united kingdom as an elegy to a long-lost national unity, and the Encyclopaedia Judaica's history entry that the biblical writers sometimes projected the events and institutions of their own time onto earlier times. Nadav Na'aman says most scholars of Israel's early history have treated the account of David's conquests in 2 Samuel 8 as late historiography that does not reflect the ancient reality, and himself supports the view that David's conquests there were modelled on the victories of foreign kings. On what lies behind the picture, Finkelstein suggests the seed may have been Jerusalem's chiefs taking over the former Saulide territories.
+    short: Scholars who doubt the united kingdom read the Bible's picture of it as a later literary construct, projected back onto David and Solomon. They differ on when it arose and what lay behind it.
+    text: Finkelstein calls the great united monarchy a literary construct of late-monarchic Judahite authors, and Brian Schmidt's summary of his argument ties it to a later Josianic ideal of uniting the two states under Jerusalem. Sergi says political unity between Israel and Judah could only be imagined after Israel fell in 720 BCE. Nakhai says some scholars read the Bible's united kingdom as an elegy to a long-lost national unity, and the Encyclopaedia Judaica's history entry that the biblical writers sometimes projected the events and institutions of their own time onto earlier times. Nadav Na'aman says most scholars of Israel's early history have treated the account of David's conquests in 2 Samuel 8 as late historiography that does not reflect the ancient reality, and himself supports the view that David's conquests there were modelled on the victories of foreign kings. On what lies behind the picture, Finkelstein suggests the seed may have been Jerusalem's chiefs taking over the former Saulide territories, and Schmidt reports his view that if any Israelite kingdom ever united north and south, it was the Omride kingdom ruled from Samaria in the ninth century; Sergi roots the idea of unity under David in the actual unity of Judah and Benjamin under the house of David in the early Iron IIA. Mazar holds that parts of the account, such as the description of Jerusalem's temple and the mention of Sheshonq's campaign, could not have been invented in the seventh century or later.
     cites:
       - source: finkelstein-2013-forgotten-kingdom
         locator: p. 9 (Introduction, §2 point 1)
         quote: it is clear today that the biblical idea of a great united monarchy is a literary construct that represents the territorial ideology, kingship concepts, and theological ideas of late monarchic, Judahite authors
+        read: 2026-11-25
+      - source: schmidt-2007-quest-summary
+        locator: p. 103 (Schmidt, summarizing Finkelstein)
+        quote: In sum, the biblical story of a great United Monarchy is the product of a later Josianic ideal to unite the two states under a southern or Judahite capital in Jerusalem.
+        read: 2026-11-25
+      - source: sergi-2023-two-houses
+        locator: p. 339 (ch. 7 Summary)
+        quote: Indeed, the political unity between Israel and Judah could only be imagined after the demise of Israel in 720 BCE, and hence it was a construct of late monarchic Judah that had no grounding in any historical reality.
         read: 2026-11-25
       - source: nakhai-bo-divided-monarchy
         locator: paragraph beginning “To consider the divided monarchy”
@@ -240,11 +292,27 @@ statements:
         locator: p. 60 n. 7
         quote: This could have been the historical seed behind the memory in late-monarchic Judah of a great “united monarchy” in the time of the early Davidides.
         read: 2026-11-25
+      - source: schmidt-2007-quest-summary
+        locator: p. 103 (Schmidt, summarizing Finkelstein)
+        quote: This for Finkelstein was the first great Israelite state and as such, if there ever was an Israelite kingdom that united north and south then it was that of the Omride dynasty and it ruled from Samaria, not from Jerusalem, in the ninth century.
+        read: 2026-11-25
+      - source: sergi-2023-two-houses
+        locator: p. 339 (ch. 7 Summary)
+        quote: Therefore, the very idea of unity under Davidic rule is rooted in the actual political unity of Judah and Benjamin under the house of David in the early Iron IIA.
+        read: 2026-11-25
+      - source: mazar-2007-quest-david-solomon
+        locator: p. 129 (Mazar)
+        quote: the biblical description of the Jerusalem’s temple could not have been an invention of the seventh century or later.
+        read: 2026-11-25
+      - source: mazar-2007-quest-david-solomon
+        locator: p. 124 (Mazar)
+        quote: the mention of Sheshonq’s campaign in 1 Kgs 14:25–28 cannot be explained away as an invention of an author of the seventh-century b.c.e. or later since the writer must have had records of some sort.
+        read: 2026-11-25
   - id: tel-dan
     group: The Tel Dan inscription
     question: What is the Tel Dan inscription?
-    short: Fragments of an Old Aramaic victory stela found at Tel Dan in the 1990s. The name of the king who set it up does not survive.
-    text: Christopher Rollston's Bible Odyssey article says the inscription is written in Old Aramaic, that its largest fragment was found in the 1993 excavations, that only 13 lines are preserved, and that the name of the king who commissioned it is not preserved; he judges that the most convincing conclusion is Hazael of Damascus, in the ninth century BCE. In Rollston's translation the king claims to have killed [Jeho]ram son of [Ahab], king of Israel, and [Ahaz]iahu son of [Jehoram], king of the house of David; the bracketed names are restored.
+    short: Fragments of an Old Aramaic victory stela found at Tel Dan in the 1990s. The king who set it up is not named in what survives; most scholars date it to the ninth century BCE and attribute it to Hazael of Damascus.
+    text: Christopher Rollston's Bible Odyssey article says the inscription is written in Old Aramaic, that its largest fragment was found in the 1993 excavations, that only 13 lines are preserved, and that the name of the king who commissioned it is not preserved; he judges that the most convincing conclusion is Hazael of Damascus, in the ninth century BCE. Hagelia's survey says most scholars attribute it to Hazael, while some argue for one of the Benhadads and others are agnostic. On the date he says proposals vary by around a century, but most scholars date the stela to the latter half of the ninth century, with relatively high consensus apart from a few exceptions. In Rollston's translation the king claims to have killed [Jeho]ram son of [Ahab], king of Israel, and [Ahaz]iahu son of [Jehoram], king of the house of David; the bracketed names are restored. Hagelia says there seems to be a majority supporting that reconstruction, and that most scholars hold the fragments belong together, though not on exactly how. Sergi notes that it places Ahaziah in the same setting as the book of Kings does. Hagelia also reports that Garbini, Lemche, Cryer and Gmirkin discussed whether the inscription is a forgery, that the arguments of Garbini and Gmirkin have not, Lemche apart, received popular support, and that this side of the debate has died out; his own conclusion is that it is no forgery.
     cites:
       - source: rollston-bo-tel-dan
         locator: paragraph 1, beginning “Although various small, fragmentary inscriptions”
@@ -258,19 +326,79 @@ statements:
         locator: paragraph after translation, beginning “The name of the king who commissioned this inscription is not preserved.”
         quote: The name of the king who commissioned this inscription is not preserved. However, based on the historical content of the inscription and information from Mesopotamian (cuneiform) and biblical sources, the most convincing conclusion is that the king of Damascus (Syria) known as Hazael commissioned it in the ninth century B.C.E.
         read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 9, §3 General Summary, p. 118
+        quote: Most scholars attribute the origin of the Tel Dan stele to King Hazael of Damascus. But some have also argued for one of the Benhadads, while others are agnostic in this question.
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 9, §3 General Summary, p. 118
+        quote: As for the dating of the Tel Dan stele, proposals vary by around a century. Most scholars date the stele to the latter half of the ninth century. With a few exceptions, particularly from the Copenhagen scholars and Athas, there seems to be relatively high consensus about this dating.
+        read: 2026-11-25
       - source: rollston-bo-tel-dan
         locator: translation, lines 7-9
         quote: "[I killed Jeho]ram son of [Ahab] (8) King of Israel, and I killed [Ahaz]iahu son of [Jehoram] (9) king of the house of David"
         read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 9, §3 General Summary, p. 118
+        quote: Opinions differ as to whether lines 7-8 refer to named kings of Israel and Judah, but there seems to be a majority supporting that reconstruction of the text.
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 4, §3 Summary, p. 31
+        quote: Some scholars have been vociferous about totally separating Fragment A from Fragments B. But most scholars realize that these three fragments belong together somehow, even if opinions differ on exactly how that relationship should look.
+        read: 2026-11-25
+      - source: sergi-2023-two-houses
+        locator: ch. 4 (Emergence), p. 102
+        quote: "It places King Ahaziahu (and his father, Jehoram), who according to Kings reigned only one year (2 Kgs 8:28–29), in precisely the same chronological and historical context as portrayed in Kings: at the Battle of Ramoth-Gilead, where he fought side by side with the last Omride king of Israel, Joram son of Ahab."
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 3 The Forgery Theory, opening, p. 13
+        quote: The theory that the Tel Dan inscription is a fake has been discussed by Garbini, Lemche, Cryer and Gmirkin.
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 3, §6 Summary, p. 21
+        quote: However, as indicated above, the arguments of Garbini and Gmirkin are somewhat problematic, and have not, with the exception of Lemche, received popular support.
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 3, §6 Summary, p. 21
+        quote: On the whole, the issue of the Tel Dan inscription’s authenticity has not been widely discussed—and this, presumably, is because only a few scholars have found the question relevant. To be sure, with the exception of Gmirkin’s (2002) treatment—it might be said that this aspect of the debate has died out.
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 3, §6 Summary, p. 21
+        quote: My own conclusion is that the inscription is no forgery.
+        read: 2026-11-25
   - id: house-of-david
     group: The Tel Dan inscription
     question: Does the inscription mention the “house of David”?
-    short: Most scholars read it that way, as a name for David's dynasty or for the kingdom of Judah; a few have proposed other readings.
-    text: Rollston says some scholars propose “house of the kettle” or “house of the uncle”, but the majority consider “house of David” the only compelling translation, a reference to the Davidic dynasty rather than to David himself. Davies calls “king of the house of David” syntactically nonsense and says dod could mean a place name, uncle or beloved, while not ruling out “house of David”; he also questions whether there was really a kingdom of Judah at the time. Megan Bishop Moore's Bible Odyssey article says it was common to call a kingdom the “house of” a king, as the Assyrians called Israel the “house of Omri”, and that the stela shows the Arameans knew Judah as the house of David; Halpern also reads it as a name for Judah. Michael Langlois, from new images of the Mesha stele, calls a “house of David” in its line 31 hypothetical but the most probable reading.
+    short: Most scholars read it that way, as a name for David's dynasty or for the kingdom of Judah. A few have proposed other readings, and how to interpret the phrase is still debated.
+    text: Rollston says some scholars propose “house of the kettle” or “house of the uncle”, but the majority consider “house of David” the only compelling translation, a reference to the Davidic dynasty rather than to David himself. Hagelia says the reading seems almost generally accepted, with only a few exceptions, and that most scholars contributing to the debate take it as a reference either to the Davidic dynasty or to Judah; but he calls it the most controversial question in the debate and says there is no general consensus on its interpretation. He says the reading as a shrine of a god named dwd is refuted by most scholars and the reading as a place name has not held water; that theory, argued by Niels Peter Lemche and Thomas Thompson, never became the scholarly consensus, he says, and Lemche's view that the phrase says nothing about a historical David has, as far as he can see, won no supporters. Davies calls “king of the house of David” syntactically nonsense and says dod could mean a place name, uncle or beloved, while not ruling out “house of David”; he also questions whether there was really a kingdom of Judah at the time. Megan Bishop Moore's Bible Odyssey article says it was common to call a kingdom the “house of” a king, as the Assyrians called Israel the “house of Omri”, and that the stela shows the Arameans knew Judah as the house of David; Halpern and Sergi also read it as a name for Judah. Michael Langlois, from new images of the Mesha stele, calls a “house of David” in its line 31 hypothetical but the most probable reading, while Hagelia notes the reading has been criticised by some and followed by others.
     cites:
       - source: rollston-bo-tel-dan
         locator: paragraph beginning “The portion of the inscription that has attracted the most interest”
         quote: Some scholars argue that the Aramaic phrase “BYTDWD (bet david)” may not mean “house of David,” and they propose “house of the kettle” or “house of the uncle” instead. However, the majority of scholars consider “house of David” to be the only compelling translation. Thus, although this inscription does not refer to David the historical figure, it certainly refers to the Davidic dynasty.
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 6, §3 General Summary, p. 70
+        quote: Today, reading byt dwd seems almost generally accepted, with only a few exceptions. Most scholars contributing to this debate have seen this reading as confirming the existence of David as an historical figure, while ‘House of David’ is understood as either a reference to the Davidic dynasty or, to the kingdom of Judah, parallel to the kingdom of Israel, which is also mentioned in the text.
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 6, §3 General Summary, p. 69
+        quote: As documented above, the theories attached to the designation bytdwd are many and varied. This is the most controversial single question in the debate surrounding the Tel Dan inscription.
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 6, §3 General Summary, p. 71
+        quote: "In summary, there is no general consensus on the interpretation of bytdwd. ‘It is obvious that this conundrum has yet to be resolved’, Athas (2003: 218) claims."
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 6, §3 General Summary, p. 71
+        quote: "And yet some issues have been clarified: the word divider question seems to be resolved. That bytdwd could refer to a sanctuary or shrine for a deity named dwd has not been proved decisively and is refuted by most scholars. That bytdwd could be a toponym has not held water."
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: "ch. 6, §3 General Summary, p. 70 (sentence begins on p. 69: “However, whether these scholars have succeeded in …”)"
+        quote: proving that bytdwd is a toponym, referring to a Yahwistic holy place at Jerusalem, or elsewhere, and disproving that the text refers to an historical Davidic dynasty, is another question. Their theory has never become the scholarly consensus.
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 6, §3 General Summary, p. 70
+        quote: Lemche’s most original contribution to the debate is that he accepts the translation ‘House of David’ while maintaining that this does not say anything at all about the historicity of King David, or a Davidic kingdom. This argument has not won any supporters, as far as I can see.
         read: 2026-11-25
       - source: davies-bo-tel-dan-video
         locator: transcript, paragraph 4, beginning “Now, there are three areas in that already”
@@ -292,9 +420,17 @@ statements:
         locator: "'In the Bible', paragraph beginning “In the Tel Dan stela and probably the Mesha Stone”"
         quote: In the Tel Dan stela and probably the Mesha Stone, "the house of David" refers to the state administered in Jerusalem – Judah.
         read: 2026-11-25
+      - source: sergi-2023-two-houses
+        locator: ch. 2, p. 44
+        quote: The ninth-century BCE Tel Dan Stela (referring to Judah as the “house of David”) indicates that such conceptualization was also common in the southern Levant
+        read: 2026-11-25
       - source: langlois-2019-mesha-stele
         locator: Abstract, p. 23
         quote: in line 31, the mention of the “house of David” remains hypothetical but is the most probable reading. With the Tel Dan inscription, the Mesha stele might be the earliest historical witness of a ruler named David who, in the ninth century BCE, was remembered as the founder of a Judahite dynasty.
+        read: 2026-11-25
+      - source: hagelia-2009-dan-debate
+        locator: ch. 6, p. 47 and n. 5
+        quote: This reading of the Mesha text has been criticized by some and followed by others.
         read: 2026-11-25
   - id: goliath
     group: Saul, Goliath and the books of Samuel
