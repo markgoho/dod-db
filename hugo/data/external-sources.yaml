@@ -3104,5 +3104,16 @@ nabre-haggai-intro:
   kind: study-bible
   access: "Church-published study Bible, open"
   url: "https://bible.usccb.org/bible/haggai/0"
+mccarter-2008-hebrew:
+  author: "P. Kyle McCarter Jr."
+  title: "Hebrew, chapter summary, in The Ancient Languages of Syria-Palestine and Arabia, ed. Roger D. Woodard"
+  series: "Cambridge Core"
+  publisher: "Cambridge University Press"
+  year: 2008
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher chapter page, summary open"
+  url: "https://www.cambridge.org/core/books/abs/ancient-languages-of-syriapalestine-and-arabia/hebrew/512F0FC4796BF3DB1137C1A9BA228DB1"
   hostAuthored: false
   tradition: null

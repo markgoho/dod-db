@@ -1,0 +1,117 @@
+# Review record for the Timeline Entry `hebrew-language` (/timeline/#hebrew-language; #93 shape). Not rendered.
+# Issue #197 (from #108). Issue notes: scope trap — the show's "Hebrew didn't exist" sometimes means the written language; word the entry for what the sources date and don't merge the language with the earliest inscriptions. Expected a split or undated statement. Sits near merneptah-stele on the minimap (#175).
+# Scope chosen: Hebrew as a language distinct from Canaanite, the subject of the issue's lead claim (E152) and E175. The earliest Hebrew writing is a separate subject: the sources date the Old Hebrew script outright (9th century BCE: Rollston 2010 p. 42, Naʼaman 2017 p. 10 after Naveh, Sergi 2023 pp. 204–8) and split on the earliest Hebrew writing (Rubin 2024 "around 1000 BCE"; Finkelstein and Sass 2013, via Naʼaman n. 13, first half of the 9th century). Rollston p. 3 warns script and language differ. Left to a follow-up entry, not merged here.
+# Sourcing test, 2026-11-26: met as undated. No Scholarly or Reference source read dates Hebrew's emergence as a distinct language outright. McCarter 2008 gives only a lower limit ("unlikely … before the end of the Late Bronze Age") and dates the first identifiable phase "before c. 1000 BC" on poetry that "may have been composed" before 1000; Naʼaman 2017 says no epigraphic evidence shows the split in the first half of the 10th century. Neither gives a positive date, so no Critical Date (conditional-not-critical). Placement: undated with no Tradition Date, so the entry is in the unplaced list (timeline-placement.html); no minimap tick, so no #175 crowding.
+# Trigger Claims: E152@00:47:37 (the issue's lead; the follow-up at 00:48:19 answers "As both a written and a spoken language?" with "Yes, it was indistinguishable from a generic, broader Canaanite language until somewhere in between 1100 and 1000 BCE", not stored). E175@00:13:51 keeps "at the very earliest". E187@00:44:45 (language differentiation around 1000). Not stored: E187@00:44:37 ("the written language begins toward the end of Iron Age one", narrowed from "Hebrew doesn't even exist yet" to "at least the written"): about writing, kept for the follow-up entry. E121@00:31:17 ("Hebrew doesn't exist in this time period either") and E154@00:18:30 ("Hebrew didn't even exist when this Egyptian poem was written") give no date. The show's dates (1100–1000; 11th century at the earliest; around 1000) agree with each other; no #99 contradiction. All state critical: no Tradition Date.
+# agent: the first pass (2026-11-26). Research agents per side (language emergence; earliest inscriptions), each saving fetched pages; quotes script-matched against the saved text (whitespace, quotes, dashes, entities, line-break hyphens and space before punctuation normalised): 4 hits, 0 misses. Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 3 hits.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) McCarter is cited from the open Cambridge Core chapter summary (the chapter itself is paywalled), the same access as fleming-2021-yahweh-before-israel-ch7; check the summary is the chapter's own text and the 2008 volume year. (2) McCarter's second sentence is hedged ("suggest", "may have been composed"); the statement keeps both hedges; cut it if it reads stronger than the source. (3) "The sources give it no firm date" is our summary of two sources that give none, as on `exodus`; narrow if needed. (4) Naʼaman p. 11's sentence is about the time of the Qeiyafa ostracon (first half of the 10th century), read in context. (5) Title "Hebrew becomes a language distinct from Canaanite": check it doesn't imply a date the statement denies.
+review: null
+citations:
+  undated/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "McCarter, Cambridge Core chapter summary, section “Stages in the development of Ancient Hebrew”. Final clause of the section's first sentence. Supports the lower limit: not before the end of the Late Bronze Age and the beginning of the Iron Age. A limit, not a date.",
+    }
+  undated/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "McCarter, same section, next sentence. Supports “the first identifiable phase of the language … before about 1000 BCE” with its hedges (“suggest”, “may have been composed”). Source has “c . 1000 BC” with a stray space.",
+    }
+  undated/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Naʼaman JHS 17 p. 10, end of point (5). Supports “no epigraphic evidence has yet shown Hebrew detaching from Canaanite … in the first half of the 10th century BCE”. The PDF breaks “dia- lect” over a line.",
+    }
+  undated/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Naʼaman p. 11, second of three reasons against reading the Qeiyafa ostracon as Hebrew. Supports the uncertainty that Hebrew was yet an independent dialect at that time. Not quoted in the statement; backs undated/3.",
+    }
+triggers:
+  152@00:47:37:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:47:37 turn; cut before “So when people—.” Read 00:44:22 to 00:49:10. The host's next question and the speaker's answer at 00:48:19 say the date covers both written and spoken Hebrew (indistinguishable from Canaanite until 1100–1000); no hedge dropped beyond “like”, which is kept.",
+    }
+  175@00:13:51:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:13:51 turn, after “Yeah, because Hebrew didn't exist when a historical Moses would have existed.” “at the very earliest” is kept. Read 00:13:06 to 00:15:14. Cut before the Pentateuch's own dating (8th–6th centuries), a separate claim.",
+    }
+  187@00:44:45:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:44:45 turn (Lay of the Land). Read 00:43:48 to 00:46:22. The turn opens on a generic Canaanite / Proto-Semitic language and territorial states “around between 1200 and 1000”; the stored sentence is the language-differentiation claim. The preceding 00:44:31–00:44:37 exchange narrows “doesn't even exist” to the written language; that claim is not stored (see header).",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Worded for the language as distinct from Canaanite, which both sources speak to; the earliest inscriptions and the Old Hebrew script are left out (issue scope trap).",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "No date, so no split. The two sources don't disagree: one a lower limit and a hedged first phase, the other the absence of evidence in the early 10th century.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; every Trigger Claim states critical.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no Tradition source cited.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "McCarter's “unlikely … before” is a limit and his “before c. 1000 BC” rests on poetry that “may have been composed” then; neither is a Critical Date, so the entry is undated.",
+    }
+sources:
+  mccarter-2008-hebrew:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (Cambridge University Press; ch. 3 of Woodard ed., pp. 36–81, DOI 10.1017/CBO9780511486890.006). New id. Author from the chapter page byline. 2008, inside the 30-year window.",
+    }
+  naaman-2017-khirbet-qeiyafa:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (Journal of Hebrew Scriptures, open access; Tel Aviv University). Reused id from david-and-the-united-monarchy. 2017, inside the window.",
+    }
+leads:
+  - "Seth L. Sanders, The Invention of Hebrew (2009): paywalled; no open copy."
+  - "William M. Schniedewind, A Social History of Hebrew (Yale, 2013): no open copy."
+  - "Finkelstein and Sass 2013 (HeBAI), on when writing in Hebrew began: paywalled; known only through Naʼaman n. 13."
+  - "Misgav, Garfinkel and Ganor 2009, first publication of the Qeiyafa ostracon (IES): no open copy."
+  - "Richelle 2015 and his UCLouvain chapter on Iron Age literacy: repository timed out."
+  - "Bible History Daily, “The oldest Hebrew script and language”: BAS web page, not fetched."
+  - "Not searched: HIPHIL Novum, Maarav, Garr 1985."
+uncited:
+  - "Rubin, Bible Odyssey “Where Did Hebrew Come From?” (2024; University of Georgia): “from a linguistic perspective the Hebrew and Canaanite languages were nearly identical”; “the earliest known Hebrew writing dates from only around 1000 BCE”. Read; no date for the split; the second sentence is attestation, for the follow-up entry."
+  - "Rollston 2010 (SBL), pp. 3, 29–35, 42: script is not language; the Old Hebrew script became a distinct national script in the 9th century BCE; Gezer calendar's language contested (Cross Hebrew, Pardee Phoenician). Script and attestation, for the follow-up entry."
+  - "Sergi 2023 (SBL), pp. 34, 204–8: local dialects including Hebrew written in differentiated scripts from the second half of the 9th century; “it seems” Israel's and Judah's scribes wrote Hebrew in Old Hebrew script by then. Attestation, for the follow-up entry."
+  - "Naʼaman 2017 p. 10: “the early Hebrew script was formed only in the 9th century, probably in order to write documents in the Hebrew language that was developing earlier as an independent dialect” (after Naveh 1982), and n. 13 (Finkelstein and Sass). Script; “developing earlier” gives no date."
+  - "Millard 2011 (Tyndale Bulletin), Qeiyafa ostracon: “the language may be Hebrew, Canaanite, Phoenician or Moabite”; “there is no proof the text is written in Hebrew rather than Canaanite”. One inscription, not the language's emergence."
+  - "Hayes RLST 145 l7 ch. 5–6: “Hebrew is simply a Canaanite dialect”; no date."
+  - "Sáenz-Badillos 1993 (Cambridge excerpt, p. 1): Hebrew “developed … during the latter half of the second millennium BCE”. Outside the 30-year window; image-only PDF, typed by hand."
+  - "Encyclopaedia Judaica (encyclopedia.com) “Alphabet, Hebrew” (Naveh) and “Gezer Calendar” (Oded); and “Hebrew Language” (Jewish Virtual Library): 1971 edition text, outside the window."
+  - "Raphaeli, Encyclopedia of the Modern Middle East and North Africa: Biblical Hebrew crystallized in the 11th–10th centuries BCE; dates the literary language, and the author's credentials are unverified."
+  - "Suchard 2016 (Leiden PhD thesis): Proto-Northwest-Semitic; no date; a thesis."
+  - "Finkelstein and Mazar 2007 (SBL), pp. 105, 134–35: tenth-century inscriptions as objects; p. 105 is the editor's summary."
