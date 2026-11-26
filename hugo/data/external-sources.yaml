@@ -3008,3 +3008,59 @@ cogwriter-thiel-nt-canon:
   url: "https://www.cogwriter.com/canon.htm"
   hostAuthored: false
   tradition: "the Continuing Church of God"
+
+nabre-kings-intro:
+  author: null
+  title: "Introduction to the Books of Kings"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1kings/0"
+  hostAuthored: false
+  tradition: null
+
+britannica-josiah:
+  author: null
+  title: "Josiah"
+  series: "Encyclopaedia Britannica"
+  publisher: "Encyclopaedia Britannica"
+  year: 2026
+  edition: "Online, Britannica Editors"
+  class: Reference
+  kind: article
+  access: "Online encyclopedia; opens in a browser, refuses scripted requests"
+  url: "https://www.britannica.com/biography/Josiah"
+  hostAuthored: false
+  tradition: null
+
+weinfeld-sperling-ej-josiah:
+  author: "Moshe Weinfeld and S. David Sperling"
+  title: "Josiah"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed. (entry credit line)"
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/josiah-1"
+  hostAuthored: false
+  tradition: null
+
+pakkala-2017-origins-yahwism:
+  author: "Juha Pakkala"
+  title: "The Origins of Yahwism from the Perspective of Deuteronomism"
+  series: "Markus Witte and Jürgen van Oorschot (eds.), The Origins of Yahwism (BZAW 484), pp. 267–281"
+  publisher: "De Gruyter"
+  year: 2017
+  edition: "University of Helsinki repository reprint (may differ from the original in pagination)"
+  class: Scholarly
+  kind: book
+  access: "Author's reprint in the University of Helsinki institutional repository (Helda), open"
+  url: "https://helda.helsinki.fi/server/api/core/bitstreams/a58a069e-60fc-42f0-b778-ce934c4cb241/content"
+  hostAuthored: false
+  tradition: null

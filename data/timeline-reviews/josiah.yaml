@@ -1,0 +1,217 @@
+# Review record for the Timeline Entry `josiah` (/timeline/#josiah; #93 shape). Not rendered.
+# Issue #190 (from #108), “Timeline Entry: Josiah's reign and reform”. Issue notes: show the source's dual form as given (640/639); keep consistent with `judges-dtr` (“after 622 BCE”, from the reform) or note the source difference; the reform's extent goes in the note, not the date. Critical side only.
+# Issue note not taken as written: no source read prints a dual form “640/639”. The issue's 640/639 merges the show's two numbers (E88 639, E163 640). The sources split instead: NABRE Kings, Britannica and EJ “Josiah” give 640–609; EJ “History: Kingdoms” and the HarperCollins dictionary give 639. Per #99 (sources differ → show both, each cited), display “640–609 or 639–609 BCE”; `from: -640`, the earlier start.
+# Consistency with `judges-dtr` and `deuteronomy`: both rest on Hayes l11/l12 for 622. This entry's note dates the reform “around 622 BCE” on EJ (“i.e., 622 b.c.e.”) and Hayes l11 (“around 622”), and shows Britannica's “About 621” and HarperCollins's “ca. 620” as the other sources' years. No conflict with “after 622”.
+# Sourcing test, 2026-11-26: met. Reference sources date the reign outright (NABRE, Britannica, two EJ articles, HarperCollins); Scholarly source on the reform's extent (Pakkala 2017, BZAW); Reference middle position (Coogan and Chapman). Kind: event. No Tradition Date: no Trigger Claim states the tradition's side. No setting (event entry).
+# Trigger Claims (#99: one to three): E88 00:06:25 (reign 639–609), E88 00:31:26 (reform: some of it, mostly rhetorical), E163 00:21:07 (640 … 609, hedged). Not kept: E31 and E65 (“7th century” only), E7, E40, E102, E123, E172 (no date or verdict on the reign or reform found in the Transcript).
+# agent: the first pass (2026-11-26). Two research agents (reign; reform) fetched every source into separate scratch folders (NABRE and Britannica refuse scripts; read in Chrome, page text saved). Every quote script-matched against the saved text (whitespace, quotes, dashes, entities, tags and EJ's “*” cross-reference marks normalised; case-insensitive): 14/14, zero misses. Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 3/3.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) Is “640–609 or 639–609 BCE” the right display, or should the one-year difference be shown only in the note? #99 says sources differ → show both. (2) HarperCollins's “(639 BCE)” dates Amon's assassination / Josiah's accession, not a printed reign span; Britannica gives 641 for the assassination while dating the reign c. 640. (3) Britannica and Van Seters mark the dates “c.”; NABRE, EJ and HarperCollins don't. Display has no “c.”. (4) EJ's “622” follows “discovered in the 18th year of the reign of Josiah, i.e.,” — EJ's own gloss on the text's eighteenth year; the note says “the eighteenth year of his reign”. (5) Pakkala's p. 271 sentence: the PDF has the stray space in “23:1– 24”; pages are the Helsinki reprint's running heads, which the reprint says may differ from the original. (6) Pakkala is the most skeptical position, attributed by name; Coogan and Chapman carry the middle position; neither is presented as the field. (7) Britannica's page also embeds a sidebar Deuteronomy article; quotes come from the Josiah article's paragraphs only. (8) E163's quoted span drops the turn's opening hedge: “if, and my late 7th century BC history I need to bone up a little bit on, but there is probably an overlap between Josiah and Jeremiah.”
+review:
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "NABRE Introduction to the Books of Kings (one intro for 1–2 Kings; /2kings/0 is a 404), ¶ 7. Gives 640–609 in a parenthesis; the sentence is about an edition of Kings, the dates are flat. Read in Chrome (scripts refused).",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Josiah”, opening sentence. “c. 640–609 BCE”. Read in Chrome from the article's <p> elements.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "EJ “Josiah” (Weinfeld and Sperling, credit line), Encyclopedia.com josiah-1 (the bare /josiah URL is the tanna). Entry's opening line: 640–609.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "EJ “History: Kingdoms of Judah and Israel”, section “The Last Days of Samaria. The Kingdom of Judah Until Its Destruction”. The 639 side of the split. Page has “*Josiah” (cross-reference mark), dropped in the quote. The same paragraph gives Manasseh 698–642, a chronology one year later than the EJ “Josiah” entry.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "HarperCollins Bible Dictionary “Josiah” on Bible Odyssey, sense 1. 639 for the accession (his father's assassination). See flag 2.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same entry. 609 death at Megiddo; with critical/5, the 639–609 side. The sentence continues “(2Kgs 23:29; but cf. 2Chr 35:…)”.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "EJ “Josiah”, first paragraph. Reform date for the note: 622, as EJ's gloss on the eighteenth year. The entry later says Kings telescopes the reform into one year and Chronicles gives the reform in stages.",
+    }
+  critical/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l11, ch. 3 “Updated and Revised Laws According to New Ideas” [00:22:16]. “around 622”; same lecture `deuteronomy` cites. The sentence goes on “: King Josiah. This is a reform that's reported in the book of 2 Kings, in 2 Kings 22.” Hayes narrates the reform without doubting it.",
+    }
+  critical/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "Britannica “Josiah”, ¶ 2. “About 621”, a year off EJ and Hayes; shown in the note. The sidebar Deuteronomy article on the same page says “about 622 BC” (not cited).",
+    }
+  critical/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "HarperCollins “Josiah”, sense 1. “ca. 620”; shown in the note. Framed “According to (2Kgs 23)” for the motivation; the date parenthesis is the dictionary's.",
+    }
+  critical/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 19 summary, section “Josiah”, ¶ 3. Backs “call the biblical accounts idealized”.",
+    }
+  critical/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same paragraph, two sentences on. Backs “find some substance behind them”; based on archaeology of seventh-century expansion. The quote stops before “, Josiah did take advantage of the political climate”.",
+    }
+  critical/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "Pakkala 2017, p. 271 (reprint running head). Backs the note's Pakkala clause, worded with his “very unlikely” and “in the sense intended by the authors”. He refers to his separate article (BZAW 405, 2010) for the arguments.",
+    }
+  critical/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "Pakkala 2017, p. 272. Backs “debated” for the reform's extent (his “most edited and debated texts”).",
+    }
+triggers:
+  88@00:06:25:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Third sentence of the 00:06:25 turn, after “Manasseh and Amon.”; it continues “and there are scholars, and I'm one of them, who think …”. The show says 639–609; the entry shows the sources' split.",
+    }
+  88@00:31:26:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Middle of the 00:31:26 turn, after “this centralization of power and, and”. A datable verdict on the reform's extent (#99), no date. Read 00:29:32–00:33:29: post hoc rationalization, then the Bethel march as unrealistic.",
+    }
+  163@00:21:07:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Second and later sentences of the 00:21:07 turn, answering Dan Beecher's request for Josiah's timeframe. Hedges: the dropped opening (flag 8) and “I want to say”, “I think like” kept in the quote. Gives 640, the other side of the show's numbers.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Display dates the reign, which the sources date outright; the reform date and extent are in the note, as the issue asks. Title “Josiah's reign and reform” covers both; the reform's date is sourced in the note.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "640 vs 639 for the start, each side cited (critical/1–3; critical/4–6). Reform year 622 / about 621 / ca. 620, each cited in the note.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; no trigger has states: tradition.",
+    }
+  tradition-named:
+    { agent: pass, owner: "", note: "No Tradition sources cited." }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date. Britannica's “c.”, “About” and HarperCollins's “ca.” are approximations, not conditions. Hayes l15's “sometime, probably, in the 630s” is uncited.",
+    }
+sources:
+  nabre-kings-intro:
+    {
+      agent: pass,
+      owner: "",
+      edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
+      note: "Reference (#86; CONTEXT.md: NABRE notes by a scholarly association).",
+    }
+  britannica-josiah:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Online, byline “Britannica Editors”",
+      note: "Reference, as `britannica-shroud-of-turin`. Cloudflare refuses scripts; read in Chrome.",
+    }
+  weinfeld-sperling-ej-josiah:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Encyclopaedia Judaica, 2nd ed., entry credit line Moshe Weinfeld / S. David Sperling",
+      note: "Reference, as `greenberg-sperling-ej-exodus`. Same text also on the Jewish Virtual Library.",
+    }
+  ej-history-kingdoms:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Encyclopaedia Judaica, 2nd ed.",
+      note: "Reference; existing registry entry.",
+    }
+  harpercollins-2009-dictionary:
+    {
+      agent: pass,
+      owner: "",
+      edition: "HarperCollins Bible Dictionary (abridged 2009), on Bible Odyssey",
+      note: "Reference (#86). Entry page bibleodyssey.org/dictionary/josiah/; registry URL is the dictionary index.",
+    }
+  hayes-rlst145-l11:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Open Yale RLST 145, recorded Fall 2006",
+      note: "Reference (#86).",
+    }
+  coogan-brief-4e-summary-ch19:
+    {
+      agent: pass,
+      owner: "",
+      edition: "4th ed. (2019), OUP Learning Link",
+      note: "Reference; existing registry entry.",
+    }
+  pakkala-2017-origins-yahwism:
+    {
+      agent: pass,
+      owner: "",
+      edition: "BZAW 484 (De Gruyter, 2017), pp. 267–281, doi:10.1515/9783110448221-012; Helda repository reprint",
+      note: "Scholarly (academic-press edited volume in a peer-reviewed series). Repository handle http://hdl.handle.net/10138/310386.",
+    }
+leads:
+  - "Pakkala 2010, “Why the Cult Reforms in Judah Probably Did Not Happen” (BZAW 405, pp. 201–235): CORE copy core.ac.uk/download/401693233.pdf behind a bot check; not read."
+  - "Uehlinger, “Was There a Cult Reform under King Josiah? The Case for a Well-Grounded Minimum” (in Grabbe ed., Good Kings and Bad Kings): academia.edu only, login; not read. The classic minimum-reform voice."
+  - "Na'aman, IEJ 73 (2023), on the Mordot Arnona high places: abstract only (says the dig disclosed the radical nature of Josiah's reform); no open full text."
+  - "NABRE 2 Chronicles 34–35 notes; NABRE Nahum and Habakkuk introductions: not read."
+uncited:
+  - "NABRE Zephaniah introduction, ¶ 2: “during the reign of Josiah (640–609 B.C.)”. Not needed: NABRE Kings carries the 640 side for the same Bible."
+  - "Van Seters, “Josiah”, Encyclopedia of Religion (Encyclopedia.com): “c. 640–609 bce”. Not needed: three Reference sources carry 640."
+  - "McKenzie, “Deuteronomistic History”, Bible Odyssey: “King Josiah (640–609 BCE)”. Not needed; byline dates conflict (2017 vs 2025)."
+  - "Lenzi, “Babylon”, Bible Odyssey: “Josiah (640–609 B.C.E.)”. Not needed."
+  - "Bowker, Concise Oxford Dictionary of World Religions on Encyclopedia.com: “Josiah (640–609 BCE)”. Not needed."
+  - "Coogan and Chapman ch. 19 summary, “Josiah”, ¶ 1: “Josiah became king in 640 BCE”. Start only; not needed."
+  - "NABRE Jeremiah introduction, ¶ 1: Josiah's death at Megiddo “(609 B.C.)”. Death only; not needed."
+  - "Hayes l15, ch. 1: Josiah came to the throne “sometime, probably, in the 630s”. Hedged, no year; would add a third start date without a firm year."
+  - "Hayes l12, ch. 2 [00:06:05]: “the idea of the central sanctuary really took hold in 622, with Josiah and Josiah's reform.” Not needed: l11 carries 622 for Hayes."
+  - "EJ “Josiah”, “The Reform and Its Historical Antecedents”: Kings “telescopes all of Josiah's activity into one year”; “It strains credibility to believe that such a drastic change … would have been inspired by the chance finding of the book.” Not used: EJ still assumes a reform, antedated to before the book's finding; the note's extent clause rests on Coogan and Pakkala."
+  - "NABRE Kings introduction, ¶ 2: “historical accuracy is sometimes sacrificed to the demands of compelling characterization and dramatic tension.” About Kings in general, not Josiah's reform."
+  - "NABRE 2 Kings 22 notes: 22:3 “In his eighteenth year” (the text's own year) and 22:8 note on the book of the law. No B.C. date."
+  - "Leuchter 2006, Josiah's Reform and Jeremiah's Scroll (SBL PDF): assumes 622 only in passing footnotes."
