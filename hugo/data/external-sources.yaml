@@ -2324,6 +2324,20 @@ nabre-daniel-notes:
   hostAuthored: false
   tradition: null
 
+gotquestions-kings-israel-judah:
+  author: null
+  title: "Who were the kings of Israel and Judah?"
+  series: null
+  publisher: "Got Questions Ministries"
+  year: null
+  edition: null
+  class: Tradition
+  kind: article
+  access: "Ministry website, open"
+  url: "https://www.gotquestions.org/kings-Israel-Judah.html"
+  hostAuthored: false
+  tradition: "Got Questions Ministries, an evangelical ministry"
+
 gotquestions-when-daniel-written:
   author: null
   title: "When was Daniel written?"

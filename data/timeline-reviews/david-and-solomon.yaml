@@ -1,0 +1,165 @@
+# Review record for the Timeline Entry `david-and-solomon` (/timeline/#david-and-solomon; #93 shape). Not rendered.
+# Issue #188 (from #108), “Timeline Entry: David, Solomon and the united monarchy”. Issue notes: two subjects in one row; word the title for what the sources date (#99); the undated part gets no entry; reuse sources from the `david-and-the-united-monarchy` Scholarship Page; “probably undated for the united kingdom”.
+# Shape, 2026-11-25: the checker allows `critical` or `undated`, never both, and CONTEXT.md (an entry is worded for what its sources date) and #99 (the undated part has no row) settle which wins. Scholarly and Reference sources date David and Solomon flat (below), so the entry is `critical`, titled for their reigns, not for “the united monarchy”. The united kingdom is not dated by the sources as a historical entity (they debate whether it existed); it gets no entry of its own, and the note says the dating sources differ on it. The issue's “probably undated” guess is not taken: an undated entry would have to be the united kingdom, which the sources neither date nor call not-historical (verdict enum no-firm-date / not-historical fits neither “debated”).
+# Sourcing test, 2026-11-25: met. HarperCollins (Reference) dates David's reign ca. 1010–970 BCE and Solomon's to the second third of the tenth century; Coogan and Chapman (Reference) place David at the beginning of the tenth century; Finkelstein (Scholarly) calls tenth-century Jerusalem “the city of the time of David and Solomon”; Sergi (Scholarly) speaks of “David’s kingdom in the tenth century BCE”. Display is the umbrella “10th century BCE” all four share; the note gives the dictionary's ca. 1010 start (strictly late 11th century), so nothing is hidden. `from: -1010` follows that start.
+# Dropped as conditional or attributed (conditional-not-critical): McKenzie's “around 1000 B.C.E.” is what “The Hebrew Bible credits him with”; Garfinkel's “about 1000 BC” is “According to the biblical account”; Mazar's Part 4 “the supposed time” / “alleged time of David and Solomon”; Nakhai's “era of the united monarchy … much of the 10th century” sits beside a historicity hedge and dates the era, not the reigns. All under `uncited`.
+# Trigger Claims (#99: one to three, a date or datable verdict on the row's subject): E181 00:54:20 (David around 1000 BCE), E64 00:57:17 (a historical David more likely than not), E133 00:35:57 (tradition: Saul, David and Solomon in the 10th century). Not kept: E169 00:15:59 (the issue's lead) and E64 00:47:01 are verdicts on the united kingdom only, not on the entry's subject; the entry names no date for the kingdom, so they would attach to nothing dated.
+# Tradition: E133 states the tradition's side. Got Questions gives David 1009–969 and Solomon 971–931; display spans both reigns. Got Questions pages differ among themselves by a year or two (“When was Psalms written?” 1010–970; “When was 2 Samuel written?” approximately 1011–971); only the kings page is cited (under `leads`/`uncited`).
+# agent: the first pass (2026-11-25). Quotes script-matched against saved copies of each source (whitespace, quotes, dashes, entities and line-break hyphens normalised): zero misses. Pages from the PDF running heads (Finkelstein/Mazar/Schmidt volume; Sergi). Trigger Claims matched by script as substrings of their Transcript lines.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) is “10th century BCE” right as display when HarperCollins starts David at ca. 1010 (11th century) — alternative: “About 1010–930 BCE”, but no Scholarly or Reference source read gives Solomon's end year except Hayes l14's “when Solomon died in 922” (uncited)? (2) Coogan's sentence is governed by “it is likely”; the hedge is on David's power, the date phrase is taken for granted. (3) Finkelstein and Sergi date the reigns only in subordinate phrases. (4) Note's “far from the one the Bible portrays” paraphrases Mazar's “far from the rich and widely expanding state portrayed in the biblical narrative”. (5) Registry title for finkelstein-2007-quest-solomon may be wrong: the volume's contents list calls the essay “King Solomon’s Golden Age?: History or Myth?”; “The Truth about King Solomon” is its running head (research agent's finding; not fixed here).
+review: ""
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "HarperCollins Bible Dictionary entry “David” on Bible Odyssey (bibleodyssey.org/dictionary/david/; registry URL is the dictionary index). Opening sentence. Dates David's reign flat.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "HarperCollins entry “Solomon” (bibleodyssey.org/dictionary/solomon/), opening sentence. Dates Solomon's reign flat.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Coogan and Chapman ch. 14 summary. “likely” governs David's power; the tenth-century placement is taken for granted. Flagged.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Finkelstein, printed p. 113 (PDF p. 124, running head “The Truth about King Solomon 113”). Low-chronology author placing David and Solomon in the tenth century.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Sergi 2023 printed p. 298 (sentence runs onto p. 299). Clause of a longer sentence; dates David's kingdom to the tenth century.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Schmidt's Part 4 summary, printed p. 101. Supports the note: Finkelstein accepts David and Solomon as historical, rejects a tenth-century United Monarchy.",
+    }
+  critical/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Mazar, printed p. 139. Supports the note's other side: a United Monarchy as an early-stage state, far from the biblical portrait. Also cited on the Scholarship Page.",
+    }
+  tradition/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Got Questions, “Who were the kings of Israel and Judah?”, David paragraph. Flat 1009–969.",
+    }
+  tradition/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Same page, Solomon paragraph. Flat 971–931; supplies the display's end year. The next paragraph calls the divided-kingdom list's dates approximate; that does not govern these sentences.",
+    }
+triggers:
+  181@00:54:20:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Second sentence of the 00:54:20 turn, after “And so that's why a lot of people will say, like Judges five is. Might be the earliest written thing in the entire Hebrew Bible.” Hedge: “It” is Judges 5, which “might go back to” David's time; the dating of David is incidental. Kept for “a historical David around a thousand BCE”.",
+    }
+  64@00:57:17:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. First sentence of the 00:57:17 turn. A verdict on David's historicity, no date; the turn goes on to the warlord stories, and at 00:57:41 “I don't know that we can know anything really about this individual … some features of David are probably historical.”",
+    }
+  133@00:35:57:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: tradition. First two sentences of the 00:35:57 turn, setting the stage for Hosea in the 8th century. “traditionally” marks the tradition's side; counting back by centuries reaches the 10th.",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Title and display are for the reigns of David and Solomon, what the sources date; narrower than the issue's “united monarchy”, which no source dates as a historical entity.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Sources agree on the tenth century; HarperCollins's ca. 1010 start is shown in the note, not dropped.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "Trigger 133@00:35:57 has states: tradition.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "Holder “Got Questions Ministries, an evangelical ministry” equals the registry `tradition:` for the new source.",
+    }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "Biblical-account dates (McKenzie, Garfinkel) and “supposed”/“alleged time” (Mazar Part 4) left uncited; every cited date is flat.",
+    }
+sources:
+  harpercollins-2009-dictionary:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference; reused id. Entries read on Bible Odyssey.",
+    }
+  coogan-brief-4e-summary-ch14:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (OUP publisher summary); reused id.",
+    }
+  finkelstein-2007-quest-solomon:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (SBL); reused id. SBL ICI PDF. Registry title flagged (header).",
+    }
+  sergi-2023-two-houses:
+    { agent: pass, owner: "", note: "Scholarly (SBL Press); reused id." }
+  schmidt-2007-quest-summary:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (SBL); reused id. Same PDF as Finkelstein/Mazar.",
+    }
+  mazar-2007-quest-david-solomon:
+    { agent: pass, owner: "", note: "Scholarly (SBL); reused id." }
+  gotquestions-kings-israel-judah:
+    {
+      agent: pass,
+      owner: "",
+      edition: "Web page, published 2005-07-09 per page metadata; “last updated: December 5, 2025”",
+      note: "Tradition: Got Questions Ministries, which calls itself “Christian, evangelical, theologically conservative, and nondenominational” (About page); registry wording as for its other pages. New id.",
+    }
+leads:
+  - "Britannica “David” and “Solomon”: blocked by a Cloudflare challenge; not read."
+  - "Got Questions, “When was Psalms written?”: “David’s reign (1010—970 BC)”; a second Got Questions date set, read but not cited to avoid citing the publisher against itself (recorded under uncited too)."
+uncited:
+  - "Nakhai, Bible Odyssey “The Divided Monarchy”, para. 1: “this era of the united monarchy is understood by most scholars to have encompassed much of the 10th century B.C.E.” Dates the era, beside a historicity hedge in the same sentence; not needed beside the flat reign dates."
+  - "McKenzie, Bible Odyssey “Kingdom of Israel”: “The Hebrew Bible credits him with establishing a minor empire around 1000 B.C.E.” The Bible's date, not the author's (conditional-not-critical)."
+  - "Garfinkel et al. 2012, p. 359: “According to the biblical account, a United Monarchy was established about 1000 BC”. Attributed to the biblical account."
+  - "Mazar 2007 (Part 4), pp. 117, 125, 138: “the supposed time of David and Solomon”, “the alleged time of David and Solomon”, “the supposed time of David”. Marked as uncertain by the author."
+  - "Mazar 2007 (Part 5, “The Divided Monarchy”), p. 161: “I still adhere to the concept of an Israelite United Monarchy in the tenth century”. Not in the registry; Mazar p. 139 carries his view."
+  - "Hayes l14 ch. 3: “So, when Solomon died in 922 …”. Would give Solomon's end year; the umbrella display doesn't need it, and Hayes says the years are approximate."
+  - "Halpern, EJ “David”: “the scant settlement of 11th century Judah” (David's Hebron kingship). Implies an 11th-century start; noted for flag (1)."
+  - "Got Questions, “When was 2 Samuel written?”: “from approximately 1011 to 971 BC”, and “When was Psalms written?”: “1010—970 BC”. Same publisher, different years; kings page cited only."
+  - "ABR, Wood 2024, Gezer: “David (r. 1009–969 BC)”, “Solomon (r. 971–932 BC)”. Parentheticals; Got Questions gives a flat sentence."
