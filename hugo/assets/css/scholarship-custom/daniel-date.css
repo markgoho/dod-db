@@ -1,0 +1,365 @@
+/*
+  Custom block for the When Daniel Was Written Scholarship Page: a comic
+  page. One ink frame holds the title, five panels and the credit, so the
+  whole thing shares as one image. The lead panel spans the page, its art two
+  generated pictures split by a lightning bolt: the book's setting on the
+  left, its writing on the right. Four single-scene panels follow, two to a
+  row. A narration label sits flush top-left, and each answer is a plate set
+  on the art in a corner the picture leaves clear. Composes cloud-section,
+  type-section-title, scholarship-meta and the shared comic plates.
+
+  Distinctions without colour: setting and writing are the side of the bolt
+  and the plate's own word ("Set", "Written").
+*/
+.dan-comic {
+  --dan-ink: var(--tan-900);
+  --dan-paper: var(--tan-000);
+  --dan-amber: var(--color-accent);
+  --dan-frame: var(--border-width-md);
+
+  container: dan-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.dan-comic__page {
+  background: var(--dan-paper);
+  border: var(--dan-frame) solid var(--dan-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--dan-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.dan-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.dan-comic__head > p {
+  margin: 0;
+}
+
+.dan-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.dan-comic__title {
+  color: var(--dan-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  max-inline-size: 24ch;
+  text-shadow: 3px 3px 0 var(--dan-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.dan-comic__legend {
+  font-size: var(--step--1);
+  line-height: var(--line-height-tight);
+  max-inline-size: 48ch;
+  text-wrap: balance;
+}
+
+.dan-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dan-comic__frame {
+  display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.dan-comic__figure {
+  border: var(--dan-frame) solid var(--dan-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+.dan-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.dan-comic__single,
+.dan-comic__half {
+  inset: 0;
+  position: absolute;
+}
+
+.dan-comic__single img,
+.dan-comic__half img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.08;
+}
+
+/* The lead panel: two pictures, each clipped to its side of the bolt. */
+.dan-comic__art > .dan-comic__half--left {
+  clip-path: polygon(0 0, 55% 0, 47% 40%, 55% 52%, 45% 100%, 0 100%);
+}
+
+.dan-comic__art > .dan-comic__half--right {
+  clip-path: polygon(55% 0, 100% 0, 100% 100%, 45% 100%, 55% 52%, 47% 40%);
+}
+
+.dan-comic__half img {
+  inline-size: 56%;
+}
+
+.dan-comic__half--right img {
+  margin-inline-start: 44%;
+}
+
+/* The bolt: a thick ink stroke with an amber core. */
+.dan-comic__bolt {
+  block-size: 100%;
+  fill: none;
+  inline-size: 100%;
+  inset: 0;
+  position: absolute;
+  stroke-linejoin: miter;
+}
+
+.dan-comic__bolt > polyline:first-child {
+  stroke: var(--dan-ink);
+  stroke-width: 12px;
+  vector-effect: non-scaling-stroke;
+}
+
+.dan-comic__bolt > polyline:last-child {
+  stroke: var(--dan-amber);
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.dan-comic__box {
+  background: var(--dan-amber);
+  border-block-end: var(--dan-frame) solid var(--dan-ink);
+  border-inline-end: var(--dan-frame) solid var(--dan-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.comic-plate__sub > .dan-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates. */
+.dan-comic__ref {
+  background: var(--dan-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--dan-amber);
+  white-space: nowrap;
+}
+
+.dan-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.dan-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* The lead panel is twice as wide a container: halve the plates' cqi type so they match the other panels. */
+.dan-comic__frame--wide .comic-plate {
+  max-inline-size: 30%;
+  padding: 0.45cqi 0.7cqi 0.55cqi;
+}
+
+.dan-comic__frame--wide .comic-plate__big {
+  font-size: clamp(0.95rem, 2.7cqi, 2.1rem);
+}
+
+.dan-comic__frame--wide .comic-plate__sub {
+  font-size: clamp(0.65rem, 1.25cqi, 0.95rem);
+}
+
+.dan-comic__frame--wide .comic-plate--bl {
+  inset: auto auto 1cqi 1cqi;
+}
+
+.dan-comic__frame--wide .comic-plate--br {
+  inset: auto 1cqi 1cqi auto;
+}
+
+/* Wide: the lead panel across the top, then two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container dan-comic (width >= 40rem) {
+  .dan-comic__page {
+    padding: var(--space-m);
+  }
+
+  .dan-comic__title {
+    font-size: var(--step-3);
+  }
+
+  .dan-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dan-comic__frame--wide {
+    grid-column: 1 / -1;
+  }
+
+  .dan-comic__frame--wide .dan-comic__art {
+    aspect-ratio: 8 / 3;
+  }
+}
+
+/* Narrow: the lead panel keeps both halves side by side, so it stays a little taller. */
+@container dan-comic (width < 40rem) {
+  .dan-comic__frame--wide .dan-comic__art {
+    aspect-ratio: 4 / 3;
+  }
+
+  .dan-comic__frame--wide .comic-plate {
+    max-inline-size: 46%;
+    padding: 0.9cqi 1.4cqi 1.1cqi;
+  }
+
+  .dan-comic__frame--wide .comic-plate__big {
+    font-size: clamp(0.8rem, 5cqi, 1.6rem);
+  }
+
+  .dan-comic__frame--wide .comic-plate__sub {
+    font-size: clamp(0.6rem, 2.8cqi, 0.9rem);
+  }
+}
+
+/* The poster: the lead panel across the top, then two rows of two on the 4:5 canvas. */
+
+.scholarship-share:target .dan-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .dan-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:target .dan-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .dan-comic__legend {
+  font-size: var(--step--2);
+}
+
+.scholarship-share:target .dan-comic__strip {
+  gap: var(--space-2xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.scholarship-share:target .dan-comic__frame--wide {
+  grid-column: 1 / -1;
+}
+
+.scholarship-share:target .dan-comic__frame--wide .dan-comic__art {
+  aspect-ratio: 10 / 3;
+}
+
+.scholarship-share:target
+  .dan-comic__frame:not(.dan-comic__frame--wide)
+  .dan-comic__art {
+  aspect-ratio: 16 / 10;
+}
+
+/* Smaller plates on the poster's narrower panels. */
+.scholarship-share:target
+  .dan-comic__frame:not(.dan-comic__frame--wide)
+  .comic-plate {
+  max-inline-size: 44%;
+  padding: 0.8cqi 1.3cqi 1cqi;
+}
+
+.scholarship-share:target
+  .dan-comic__frame:not(.dan-comic__frame--wide)
+  .comic-plate__big {
+  font-size: 5.4cqi;
+}
+
+.scholarship-share:target
+  .dan-comic__frame:not(.dan-comic__frame--wide)
+  .comic-plate__sub {
+  font-size: 3cqi;
+}
+
+.scholarship-share:target .dan-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.scholarship-share:target .dan-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
+}
+
+/* The card: the lead panel alone under the title. */
+
+.scholarship-share:has(#share-card:target) .dan-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target)
+  :is(.dan-comic__kicker, .dan-comic__legend) {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .dan-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .dan-comic__strip {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.scholarship-share:has(#share-card:target)
+  .dan-comic__frame--wide
+  .dan-comic__art {
+  aspect-ratio: 2.4 / 1;
+}

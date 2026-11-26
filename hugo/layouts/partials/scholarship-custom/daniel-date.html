@@ -1,0 +1,147 @@
+{{- /*
+  Custom block for /scholarship/daniel-date/: a five-panel comic page. The
+  lead panel spans the page and is split by a lightning bolt into the book's
+  setting (Daniel at the Babylonian court, sixth century BCE) and its writing
+  (a scribe in Jerusalem under Antiochus IV, 167–164 BCE for the visions).
+  Then four panels in the book's own story: the court tales, the little horn,
+  the Qumran copies and the Greek additions.
+
+  A view of the page's reviewed statements `date` (short), `tales` (short),
+  `reasons` (short), `scrolls` (short) and `additions` (short and text); it
+  makes no claim they don't. The debate over the date (date short) sits in
+  the legend under the headline. The count of copies is on its plate; the art
+  shows a crowd of jars no count can be read off.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/daniel-date.yaml. Reword a plate only when
+  the statement it comes from is re-reviewed.
+  */
+-}}
+{{- define "partials/inline/dan-ref.html" -}}
+  <a
+    class="dan-comic__ref"
+    href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .ref) | safeURL }}"
+    rel="noopener"
+    >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+  >
+{{- end -}}
+{{- define "partials/inline/dan-img.html" -}}
+  {{- with resources.Get (printf "scholarship-art/daniel-date/%s.png" .id) }}
+    {{- $webp := .Process "resize 1200x webp q78" }}
+    <img
+      src="{{ $webp.RelPermalink }}"
+      width="{{ $webp.Width }}"
+      height="{{ $webp.Height }}"
+      alt="{{ $.alt }}"
+      loading="eager" />
+  {{- end }}
+{{- end -}}
+{{- $panels := slice
+  (dict
+  "id" "when" "box" "Set when? Written when?" "wide" true
+  "left" (dict "id" "daniel" "alt" "A young Judean courtier, Daniel, stands in a Babylonian palace hall among glazed-brick walls with lion reliefs.")
+  "right" (dict "id" "scribe" "alt" "An older Judean scribe writes on a scroll by lamplight; through the window, soldiers' spears and crested helmets pass in the street.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "Set: 6th c. BCE" "sub" "the Babylonian exile, the book's own setting")
+  (dict "pos" "br" "big" "Written: 2nd c. BCE" "sub" "the visions under Antiochus IV, 167–164 BCE" "ref" "Daniel 7-12" "label" "Dan 7–12")))
+  (dict
+  "id" "tales" "box" "Which parts are older?"
+  "art" (dict "id" "tales" "alt" "Daniel, the same young courtier, stands calmly in a stone pit among resting lions.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "The court tales" "sub" "usually held older: Persian or early Hellenistic" "ref" "Daniel 1-6" "label" "Dan 1–6")))
+  (dict
+  "id" "horn" "box" "Who is the little horn?"
+  "art" (dict "id" "horn" "alt" "The same scribe writes while, in the lamp smoke above him, a fearsome beast rises with ten tall horns and one small horn.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "Antiochus IV" "sub" "scholars identify the visions' “little horn” with him")))
+  (dict
+  "id" "copies" "box" "What did Qumran keep?"
+  "art" (dict "id" "copies" "alt" "Inside a desert cave, a crowd of tall clay jars stands in the half-dark; a few scroll fragments lie on the floor.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "8 copies" "sub" "of Daniel; one dated close to the book's completion")))
+  (dict
+  "id" "additions" "box" "What did the Greek add?"
+  "art" (dict "id" "additions" "alt" "Daniel, the same young courtier, holds out cakes to a great coiled dragon in a temple, a large idol statue behind.")
+  "plates" (slice
+  (dict "pos" "bl" "big" "3 additions" "sub" "the Prayer of Azariah and Song of the Three, Susanna, Bel and the Dragon")))
+-}}
+<section class="cloud-section dan-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="dan-comic__page">
+    <header class="dan-comic__head">
+      <p class="dan-comic__kicker">The Book of Daniel · how scholars date it</p>
+      <p class="dan-comic__title">
+        Set in the exile, written in the 2nd century BCE
+      </p>
+      <p class="dan-comic__legend">
+        The date has long been debated, and some still hold to the sixth
+        century, the book’s own setting.
+      </p>
+    </header>
+    <ol class="dan-comic__strip">
+      {{- range $panels }}
+        <li
+          class="dan-comic__frame{{ if .wide }}dan-comic__frame--wide{{ end }}"
+          {{ if not .wide }}data-card-hide{{ end }}>
+          <figure class="dan-comic__figure">
+            <div class="dan-comic__art">
+              {{- if .wide }}
+                <div class="dan-comic__half dan-comic__half--left">
+                  {{ partial "inline/dan-img.html" .left }}
+                </div>
+                <div class="dan-comic__half dan-comic__half--right">
+                  {{ partial "inline/dan-img.html" .right }}
+                </div>
+                <svg
+                  class="dan-comic__bolt"
+                  viewBox="0 0 100 100"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                  focusable="false">
+                  <polyline points="55,0 47,40 55,52 45,100" />
+                  <polyline points="55,0 47,40 55,52 45,100" />
+                </svg>
+              {{- else }}
+                <div class="dan-comic__single">
+                  {{ partial "inline/dan-img.html" .art }}
+                </div>
+              {{- end }}
+            </div>
+            <h3 class="dan-comic__box">{{ .box }}</h3>
+            {{/* The labels sit on the art, in a corner the picture leaves clear. */}}
+            <figcaption>
+              {{- range .plates }}
+                <p class="comic-plate comic-plate--{{ .pos }}">
+                  <span class="comic-plate__big">{{ .big }}</span>
+                  <span class="comic-plate__sub">
+                    {{ .sub }}
+                    {{- if .ref }}
+                      {{ partial "inline/dan-ref.html" (dict "ref" .ref "label" .label) -}}
+                    {{- end }}
+                  </span>
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="dan-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions and
+      sources are the page’s own.
+    </p>
+  </div>
+  <p class="dan-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#date">when was the Book of Daniel written</a>,
+    <a href="#tales">are the court tales older</a>,
+    <a href="#reasons">why scholars date the visions to the 160s</a>,
+    <a href="#scrolls">what the Dead Sea Scrolls show</a> and
+    <a href="#additions">what the Greek additions are</a>.
+  </p>
+</section>

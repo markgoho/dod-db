@@ -1,0 +1,101 @@
+# Illustrations for /scholarship/daniel-date/ (generated with Gemini; see
+# src/scripts/generate-scholarship-illustrations.ts). Each picture shows only
+# what the listed statements support; every caption, link and claim stays in
+# hugo/layouts/partials/scholarship-custom/daniel-date.html.
+#
+# Five comic panels. The lead panel spans the page and is split by a lightning
+# bolt: the book's setting (Daniel at the Babylonian court, left) against its
+# writing (a scribe in Jerusalem under Antiochus IV, right), each a 16:9 half.
+# `daniel` is the anchor for the hero; `scribe` for the writer. Panels 2 and 5
+# reuse Daniel, panel 3 the scribe. No date, number or word is drawn: every
+# number is on a plate. Every figure is clothed; nothing is violent.
+slug: daniel-date
+images:
+  - id: daniel
+    statements: [date, author]
+    aspect: "16:9"
+    alt: "A young Judean courtier, Daniel, stands in a Babylonian palace hall among tall glazed-brick walls and columns."
+    prompt: >-
+      A young Judean man in his early twenties, Daniel, stands calm and
+      upright in the centre-left of a grand ancient Babylonian palace hall,
+      full figure, hands folded. He wears a long plain rust red robe with an
+      amber sash and a simple cloth head wrap; short dark beard, dark hair.
+      Behind him tall walls of glazed bricks with striding lion reliefs in
+      amber on ink blue-black, heavy square columns, and a raised empty
+      throne far in the background. The lower left of the picture is open,
+      plain stone floor with nothing on it. No other figures, no text, no
+      writing on the walls.
+
+  - id: scribe
+    statements: [date, reasons]
+    aspect: "16:9"
+    alt: "An older Judean scribe writes on a scroll by lamplight in a small stone room in Jerusalem; through the window, soldiers' spears and crested helmets pass in the street."
+    prompt: >-
+      An older Judean scribe, grey-bearded, in a plain light warm grey robe
+      and dark head covering, sits hunched at a low wooden table in a small
+      bare stone room at night, writing intently on an unrolled scroll with
+      a reed pen by the light of a small clay oil lamp. The scroll shows only
+      faint indistinct lines, no letters. On the right, a small square window
+      opens onto a moonlit street of a hill city with flat-roofed stone
+      houses, where the silhouetted tops of soldiers' spears and crested
+      Greek-style helmets pass by. The lower right of the picture is open
+      plain stone floor and wall. No other figures in the room, no text.
+
+  - id: tales
+    statements: [tales]
+    aspect: "4:3"
+    refs: [daniel]
+    alt: "Daniel, the same young courtier, stands calmly in a stone pit among resting lions."
+    prompt: >-
+      The SAME young man as in the reference image (same rust red robe,
+      amber sash, cloth head wrap, short dark beard) stands calm and
+      unharmed in the middle of a deep stone-walled pit, hands folded,
+      while four large lions lie resting peacefully around him, one with its
+      head down at his feet. Light falls from a square opening high above.
+      The lower left of the picture is open sandy pit floor with nothing on
+      it. Peaceful, not threatening. No other people, no text.
+
+  - id: horn
+    statements: [reasons]
+    aspect: "4:3"
+    refs: [scribe]
+    alt: "The same scribe writes by lamplight while, in the lamp smoke above him, a fearsome beast with many horns and one small horn rises."
+    prompt: >-
+      The SAME grey-bearded scribe as in the reference image (light warm
+      grey robe, dark head covering) sits at the same low table writing on
+      his scroll by the clay oil lamp, seen from the side in the lower right
+      of the picture. Rising from the lamp smoke and filling the upper part
+      of the picture is a vision: a huge, strange, fearsome beast drawn in
+      swirling amber and ink smoke, with iron teeth and a row of ten tall
+      horns on its head; between them, clearly visible, one distinctly
+      small, short new horn is sprouting, much smaller than the others. The beast is a
+      dream image, made of smoke, not solid. The lower left of the picture
+      is open dark floor. No blood, no other figures, no text.
+
+  - id: copies
+    statements: [scrolls]
+    aspect: "4:3"
+    alt: "Inside a desert cave, many tall clay jars with lids stand crowded in the half-dark; a few rolled scroll fragments lie on the floor."
+    prompt: >-
+      The inside of a rough limestone desert cave, light streaming in from a
+      jagged opening at the upper right onto a dense crowd of many tall,
+      cylindrical clay storage jars with bowl-shaped lids, standing packed
+      together and receding into the shadows at the back, too many and too
+      crowded to count. A few small, torn, rolled-up parchment fragments lie
+      on the dusty floor in the middle. The lower left of the picture is
+      open, plain cave floor. No people, no writing visible, no text.
+
+  - id: additions
+    statements: [additions]
+    aspect: "4:3"
+    refs: [daniel]
+    alt: "Daniel, the same young courtier, faces a great coiled dragon in a temple, holding out round cakes; a large idol statue stands behind."
+    prompt: >-
+      The SAME young man as in the reference image (same rust red robe,
+      amber sash, cloth head wrap, short dark beard) stands on the left of
+      an ancient temple hall, calmly holding out two small round flat cakes
+      in his open hands toward a great serpent-like dragon coiled on a stone
+      platform on the right, its head lowered toward the cakes, curious. In
+      the background stands a huge seated bronze idol statue of a bearded
+      god, with offering tables before it. The lower left of the picture is
+      open stone floor. Not violent, no blood, no other people, no text.
