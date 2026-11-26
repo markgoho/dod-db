@@ -8,88 +8,98 @@
 # agent: the first pass (2026-11-26). Two research agents (registry families; new open sources) fetched every page by curl into separate scratch folders, HTML stripped, entities decoded, pdftotext for PDFs (-layout for the Henze and Werline chronology, whose columns pair year and event). Britannica, Met Heilbrunn (429), Oxford Classical Dictionary (403), Smarthistory (403) not read. Every cited quote script-matched by the lead agent against the saved text (NFKC, whitespace, quotes, dashes, soft hyphens, entities normalised): 6/6, zero misses, each found once. Trigger Claims matched by script as normalised substrings of their Transcript lines at timestamp and speaker: 3/3.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Honigman's year: 2021 is from the volume's publication (the sample PDF carries 2020/2021 file dates, not a printed year); confirm. (2) Austin: the excerpt confirms a second edition (“When the first edition…”); 2006 is from the ISBN, not printed in the excerpt; confirm. Austin's work is a sourcebook; the cited sentence is the editor's own introduction. (3) Henze and Werline Chronology: the editors' table; row 332 does not name Judea itself (the 539 row does). Enough for “Alexander conquers Judea”? (4) Bible Odyssey timeline: the intro text is served by the embedded Tiki-Toki timeline (https://www.tiki-toki.com/timeline/embed/53310/6300800090/), not in the gallery page's HTML; registry URL is the gallery page. Unsigned (author line “Bible Odyssey”); its Issus entry (“in 333 B.C.E., allowing Alexander to take control of Syria, Palestine (including Judea), and Egypt”) could be read as dating control of Judea to 333: is that a split to show? (5) Newman opening gives his life span (356–323 BCE), used for “He died in 323 BCE.”. (6) Note says “went down the coast of the Levant” for Newman's “plunged down the coast of the Levant”.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): a fresh agent that did not build the entry, working from its own scratch folder only. Re-fetched every source by curl (browser UA): eisenbrauns.org sample_chapter/Honigman_introduction.pdf (pdftotext, plain, -layout and -bbox-layout for page 1); sbl-site.org 9780884144816_txt.pdf (pdftotext -layout for the Chronology); bibleodyssey.org timeline-gallery/second-temple-judaism and its embed tiki-toki.com/timeline/embed/53310/6300800090/; bibleodyssey.org/articles/alexander-the-great/ (byline Judith H. Newman, August 14, 2023); assets.cambridge.org 0521828600_excerpt.htm. Years and editions checked in Crossref (Honigman intro 10.1515/9781646021451-004, 2021; Austin 10.1017/cbo9780511818080, edition 2, 2006). HTML tags stripped, entities decoded. Quotes re-matched by one script (NFKC, soft hyphens, line-break hyphens, whitespace, curly quotes and dashes normalised; no looser rule): 5/6 at first, Austin missed on “BC )” (the page has “BC</small>)”); after the fix 6/6, each found once except Bible Odyssey's intro, found three times in the embed (meta description, visible intro block, introText field: one text) and absent from the gallery HTML. Locators checked by position (see each note; Honigman's corrected). Trigger Claims re-matched by script as normalised substrings of the line at that timestamp and speaker in the final Transcripts (E187 2026-11-01-no-one-can-see-god-and-live-except-these-74-guys.txt; E71 2024-08-12-episode-71-august-12-2024-the-rapture-is-not-coming.txt; E11 2023-06-19-episode-11-june-19-2023-will-the-best-bible-please-stand-up.txt): 3/3; read about two minutes either side (E187 00:53:28–00:57:12; E71 00:50:41–00:54:06; E11 00:05:04–00:08:43, the 00:05:04 turn read whole).
+# Second pass changed: (a) critical/6 quote: “rapid and deliberate (334–323 BC ), the second” became “rapid and deliberate (334–323 BC), the second”, as on the page. (b) critical/1 locator: “Introduction, first page, paragraph beginning “The term “long 3rd century””” became “Introduction, p. 1, opening paragraph, sentence beginning “The term “long 3rd century””” (the sentence is not indented; the page's paragraphs are). (c) note's Austin clause: “Austin frames the Hellenistic period, as conventionally understood, by Alexander's invasion …” became “Austin says the Hellenistic period as conventionally understood is framed by Alexander's invasion …”: Austin reports a convention. Title, display, from and precision unchanged; no citation or Trigger Claim cut.
+# Second-pass rulings on the first pass's flags: (1) Confirmed: 2021 (Crossref, Penn State University Press, published 2021-06-18; the sample PDF's file dates are 2020-12-22 and 2021-08-04 and it prints no year). (2) Confirmed: 2nd ed., 2006 (Crossref edition 2, 2006-07-06, ISBN 9780521828604); the cited sentence opens the editor's introduction. (3) Enough, kept: the table's rule rows name Judea (539, 301–198, 198–142) and row 332 sits in that sequence; it dates the outcome (Greek rule begins), not a campaign; the title also rests on Honigman. (4) Not a split: the Issus entry dates the battle (333) and gives control of Judea as its consequence with no year; the same source's intro dates the Hellenistic kingdoms from 332. The timeline's Daniel entry (“Persian (538-333 B.C.E.) or early Hellenistic (333-168 B.C.E.) periods”, matched in the embed) gives period bounds for a composition, not a date for the conquest; the source's own period bounds thus run 332 in the intro and 333 there. Flagged for publish. (5) Accepted: a life span's end year is the death year. (6) Accepted: “went down” keeps “plunged down”'s meaning without the image.
+# Flags for publish: (1) Display rests on two Scholarly sources in window (Honigman 2021, “the region” read as Judea from the volume's subject; Henze and Werline 2020, row 332 read as Judea from the table's neighbouring rows) plus Bible Odyssey's timeline intro (Hellenistic kingdoms from 332). (2) #99: Bible Odyssey's Issus entry (333) and the Persian Empire Map (re-fetched, bibleodyssey.org/maps/persian-empire-map/: “until Alexander the Great’s conquest of the ancient Near East in 333 B.C.E.”) are uncited, as is the timeline's Daniel entry (Persian 538-333, early Hellenistic 333-168); read as dating Issus or the empire's end, not Judea. If ruled a date for the conquest of Judea, the display would be “333 or 332 BCE”; the second pass adds no citations. (3) The period's bounds in the note (332–63; 334–323 to 30 BC) differ in scope (Jewish life under the kingdoms vs the Hellenistic world), each attributed; shown, not resolved. (4) E11 dates his death, not the conquest; kept as a Trigger Claim on the subject (CONTEXT.md: it gates the subject, not each statement).
+delegation:
+  { by: owner, date: 2026-11-23, issue: "#110", secondPass: 2026-11-26 }
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Honigman, Times of Transition introduction, first page. Conquest “of the region in 332 BCE”, flat; the region is Judea (volume on Judea in the early Hellenistic period). Scholarly, in window. See flag 1.",
+      note: "Honigman, Times of Transition introduction, first page. Conquest “of the region in 332 BCE”, flat; the region is Judea (volume on Judea in the early Hellenistic period). Scholarly, in window. See flag 1. Second pass: matched once. Locator corrected: the sentence is mid-paragraph on p. 1 (line x-positions: the page's paragraphs indent 12 pt, “The term” does not), so “paragraph beginning” became “opening paragraph, sentence beginning”. “The region” is the conference's and volume's Judea (“Judea in the Long 3rd Century BCE”); footnote 1 belongs to Antiochus III's 198, not 332. Dates the conquest, 332 flat. Year 2021 confirmed (Crossref 10.1515/9781646021451-004, Penn State University Press, 2021-06-18). Pass.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Henze and Werline (eds.), EJMI 2nd ed., Chronology p. xi, BCE column: “332 Greek rule under Alexander begins”. Flat. Scholarly, in window. See flag 3.",
+      note: "Henze and Werline (eds.), EJMI 2nd ed., Chronology p. xi, BCE column: “332 Greek rule under Alexander begins”. Flat. Scholarly, in window. See flag 3. Second pass: matched once by pdftotext -layout. Chronology begins on the page after printed “-ix-”, the table of contents gives “Chronology ... xi”; title page reads “second edition”, “Copyright © 2020 by SBL Press”. Row 332 sits among rows that name Judea (539 “Persian rule of Judea begins”, 301–198 “Ptolemies rule Judea”, 198–142 “Seleucids rule Judea”) and dates the outcome (rule begins), not a campaign. Kept for the display beside critical/1 (flag 3). Pass.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Bible Odyssey timeline “Second Temple Judaism”, introduction. Persians 538–332, Hellenistic kingdoms after Alexander's conquest 332–63, Roman rule from 63. Backs the display and the note's 332–63 sentence. Reference. See flag 4.",
+      note: "Bible Odyssey timeline “Second Temple Judaism”, introduction. Persians 538–332, Hellenistic kingdoms after Alexander's conquest 332–63, Roman rule from 63. Backs the display and the note's 332–63 sentence. Reference. See flag 4. Second pass: matched three times in the Tiki-Toki embed, the same intro text each time (meta description, the visible tl-timeline-info block, the introText field); absent from the gallery page's HTML. It dates the Hellenistic kingdoms' rule over the Jews from 332, not a conquest of Judea by name: it agrees with the display rather than dating the title's event; the display rests on critical/1–2. Backs the note's 332–63 sentence. Pass.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Newman, Bible Odyssey “Alexander the Great”. Issus 333, then down the Levant coast toward Egypt. Backs the note's first sentence. Reference, in window. See flag 6.",
+      note: "Newman, Bible Odyssey “Alexander the Great”. Issus 333, then down the Levant coast toward Egypt. Backs the note's first sentence. Reference, in window. See flag 6. Second pass: matched once, in the paragraph beginning “Alexander fulfilled his father’s military ambition” (its own block on the page): the tail of its fourth sentence and the whole fifth. Issus 333, then the Levant coast toward Egypt, no year of its own; the note's “went down the coast” for “plunged down the coast” keeps the meaning (flag 6). Byline Judith H. Newman, dated August 14, 2023 (JSON-LD modified 2026-10-14). Pass.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "Newman, opening paragraph: “Alexander the Great (356–323 BCE)”. Backs “He died in 323 BCE.”. See flag 5.",
+      note: "Newman, opening paragraph: “Alexander the Great (356–323 BCE)”. Backs “He died in 323 BCE.”. See flag 5. Second pass: matched once; the article's opening paragraph. A life span “(356–323 BCE)” backs “He died in 323 BCE.” (flag 5). Pass.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "Austin, Hellenistic World 2nd ed., introduction's opening sentence (Cambridge excerpt). Period framed by the invasion (334–323 BC) and the Roman take-over, complete in 30 BC. Backs the note's last clause (#99 split). Scholarly. See flag 2.",
+      note: "Austin, Hellenistic World 2nd ed., introduction's opening sentence (Cambridge excerpt). Period framed by the invasion (334–323 BC) and the Roman take-over, complete in 30 BC. Backs the note's last clause (#99 split). Scholarly. See flag 2. Second pass: the quote had “BC )” with a space; the page has “BC</small>)”, so the quote now reads “(334–323 BC)”; then matched once, the introduction's opening sentence. 2nd ed. 2006 confirmed (Crossref 10.1017/cbo9780511818080, edition 2, 2006-07-06, ISBN 9780521828604). Austin reports the convention (“as conventionally understood is framed by”), so the note now says “Austin says the Hellenistic period as conventionally understood is framed by” in place of “Austin frames the Hellenistic period, as conventionally understood, by”. Pass.",
     }
 triggers:
   187@00:55:43:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. The 00:55:43 turn from its start through “in 63 BCE”; the rest (Roman period, Second Temple overlap) dropped. Hedge “or something like that” kept. 332 for Alexander, Hellenistic period 332 to 63 BCE. Read 00:53:37–00:57:12 (period names).",
+      note: "states: critical. The 00:55:43 turn from its start through “in 63 BCE”; the rest (Roman period, Second Temple overlap) dropped. Hedge “or something like that” kept. 332 for Alexander, Hellenistic period 332 to 63 BCE. Read 00:53:37–00:57:12 (period names). Second pass: matched at 00:55:43.530, Dan McClellan, as a normalised substring. Read 00:53:28–00:57:12. 332 flat, Hellenistic period 332 to 63; the hedge “or something like that” is on the death, kept. Pass.",
     }
   71@00:52:25:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. First sentence of the 00:52:25 turn; “late 300s BCE”, no year. Read 00:50:45–00:54:00 (Dan Beecher asks for the history behind Daniel; the previous turn is the Cyrus 539 Trigger Claim of cyrus-babylon).",
+      note: "states: critical. First sentence of the 00:52:25 turn; “late 300s BCE”, no year. Read 00:50:45–00:54:00 (Dan Beecher asks for the history behind Daniel; the previous turn is the Cyrus 539 Trigger Claim of cyrus-babylon). Second pass: matched at 00:52:25.850, Dan McClellan; the turn's first sentence. Read 00:50:41–00:54:06. “in the late 300s BCE”, no year; the turn's later “drinks himself to death in some way shape or form” is outside the quote and dates nothing. Pass.",
     }
   11@00:07:34:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Third sentence of the 00:07:34 turn; Alexander's death “around 323 BCE” (hedge kept). Read 00:05:04–00:08:43 (Septuagint in Alexandria; “Alexander the Great had come through in the previous century”).",
+      note: "states: critical. Third sentence of the 00:07:34 turn; Alexander's death “around 323 BCE” (hedge kept). Read 00:05:04–00:08:43 (Septuagint in Alexandria; “Alexander the Great had come through in the previous century”). Second pass: matched at 00:07:34.750, Dan McClellan. It is the turn's fifth sentence as printed (“This is.” / “It's divinely instituted.” / “So he.” / “Yeah, a lot of funny stories...” / “But so he dies around 323 BCE...”), not the third. Read 00:05:04–00:08:43. “around” kept. Dates his death, which the note carries (critical/5); the Trigger Claim gates the subject (CONTEXT.md). Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Title and display date the conquest of Judea (critical/1–3, 332 flat). Issus, the Levant march, his death and the period's bounds are in the note, each cited (critical/3–6).",
+      note: "Title and display date the conquest of Judea (critical/1–3, 332 flat). Issus, the Levant march, his death and the period's bounds are in the note, each cited (critical/3–6). Second pass: display rests on critical/1–2, which date the conquest and the start of Greek rule in Judea's chronology to 332 flat; critical/3 agrees on 332 as the start of the Hellenistic kingdoms. Note items each cited (critical/3–6). Pass.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Conquest year: no split among sources read for the conquest of Judea (332). Period's bounds: 332–63 (Bible Odyssey timeline) vs 334–323 to 30 BC (Austin), both shown, attributed (#99). See flag 4.",
+      note: "Conquest year: no split among sources read for the conquest of Judea (332). Period's bounds: 332–63 (Bible Odyssey timeline) vs 334–323 to 30 BC (Austin), both shown, attributed (#99). See flag 4. Second pass: confirmed for the conquest year among cited sources. Bible Odyssey's own Issus entry (333, “allowing Alexander to take control of Syria, Palestine (including Judea), and Egypt”) dates the battle, not the control (no year of its own), so no #99 split to show; flagged for publish. Period's bounds: both shown, each attributed; Austin's are the Hellenistic world's, Bible Odyssey's Jewish life under the kingdoms, different scopes, not a contradiction. Pass.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; all three Trigger Claims states: critical.",
+      note: "No Tradition Date; all three Trigger Claims states: critical. Second pass: confirmed. Pass.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. Second pass: confirmed. Pass.",
+    }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date cited. HarperCollins “Persia” (“ca. 330 BCE”) and Rhyder (“ca. 323–31 BCE”) are hedged and uncited.",
+      note: "No conditional date cited. HarperCollins “Persia” (“ca. 330 BCE”) and Rhyder (“ca. 323–31 BCE”) are hedged and uncited. Second pass: confirmed; the cited sources give 332, 333, 323, 334–323, 332–63 and 30 BC flat. Pass.",
     }
 sources:
   honigman-2021-times-of-transition-intro:
@@ -97,35 +107,35 @@ sources:
       agent: pass,
       owner: "",
       edition: "Times of Transition (Eisenbrauns, 2021), publisher sample chapter",
-      note: "Scholarly: academic press, edited volume. New id. See flag 1.",
+      note: "Scholarly: academic press, edited volume. New id. See flag 1. Second pass: Scholarly, in window; 2021 per Crossref (Penn State University Press imprint record; the Eisenbrauns sample PDF prints no year). Pass.",
     }
   henze-werline-2020-ejmi:
     {
       agent: pass,
       owner: "",
       edition: "2nd ed. (SBL Press, 2020), open PDF",
-      note: "Scholarly: SBL Press, whole book open. New id.",
+      note: "Scholarly: SBL Press, whole book open. New id. Second pass: second edition and © 2020 SBL Press on the PDF's title and copyright pages. Pass.",
     }
   bo-timeline-second-temple-judaism:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey timeline gallery, published August 26, 2022, modified February 2, 2024",
-      note: "Reference (Bible Odyssey, SBL). Unsigned. New id. See flag 4.",
+      note: "Reference (Bible Odyssey, SBL). Unsigned. New id. See flag 4. Second pass: gallery page JSON-LD datePublished 2022-08-26, dateModified 2024-02-02; no byline on the page; JSON-LD author is a site account (“Content Creator”); the page's author links sit on related-article cards (Hays, Carman, Litwa, Reid). Intro text from the embed URL in the gallery page. Pass.",
     }
   newman-bo-alexander-the-great:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey, August 14, 2023 (modified October 14, 2026)",
-      note: "Reference (Bible Odyssey, SBL). Byline Judith H. Newman. New id.",
+      note: "Reference (Bible Odyssey, SBL). Byline Judith H. Newman. New id. Second pass: byline and August 14, 2023 confirmed; bio (Emmanuel College, University of Toronto) on the page. Pass.",
     }
   austin-2006-hellenistic-world:
     {
       agent: pass,
       owner: "",
       edition: "2nd ed. (Cambridge University Press, 2006), publisher excerpt",
-      note: "Scholarly: academic press. New id. See flag 2.",
+      note: "Scholarly: academic press. New id. See flag 2. Second pass: 2nd ed., 2006 confirmed (Crossref). A sourcebook; the cited sentence is the editor's own introduction. Pass.",
     }
 leads:
   - "Grabbe, A History of the Jews and Judaism in the Second Temple Period, vol. 1 (Persian Period, 539–331 BCE) and vol. 2 (Early Hellenistic Period, 335–175 BCE): titles seen in bibliographies; not read."
