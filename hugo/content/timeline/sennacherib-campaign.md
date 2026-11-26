@@ -31,7 +31,7 @@ critical:
       quote: "Assyria acted quickly and its army, after ravaging Judah, laid siege to Jerusalem (701)."
       read: 2026-11-26
     - source: coogan-brief-4e-summary-ch18
-      locator: "section “Invasions of Judah”, first paragraph"
+      locator: "section “Invasions of Judah”, second paragraph, first sentence"
       quote: "In 701 BCE the invasion predicted by Isaiah came to pass."
       read: 2026-11-26
     - source: ussishkin-2015-sennacherib-lachish

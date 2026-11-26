@@ -9,94 +9,104 @@
 # agent: the first pass (2026-11-26). Two research agents (registry reuse; new sources) fetched every source into separate scratch folders (curl plus HTML-to-text; NABRE Kings and Jeremiah, Britannica and the British Museum read in Chrome, page text saved). Every cited quote script-matched by the lead agent against the saved text (whitespace, quotes, dashes, entities normalised): 8/8, zero misses. Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 2/2.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) The note's reign split rests on one 704 source (Rollston, a Bible Odyssey article on the Siloam tunnel, the date given in passing); is that enough to show “or 704”, or should the note keep 705–681 only and put Rollston in uncited? #99 says sources differ → show both. (2) Rollston's paragraph hedges the tunnel inscription's context (“most scholars accept this as the most likely context”); the hedge is about the inscription, not Sennacherib's reign. (3) EJ “Sennacherib” on Encyclopedia.com shows no author credit and no edition; registry author and edition null. (4) Ussishkin's PDF footer misprints the page range “750–750”; volume, issue, pages (719–758) and DOI 10.25159/1013-8471/3477 are from the landing page's citation meta tags; p. 720 is the PDF's running head. (5) Coogan ch. 18 is a new registry id; same textbook and edition as the ch. 17 and ch. 19 entries. (6) Note's second sentence rests on NABRE ¶ 5 (“laid siege to Jerusalem”, “The city was spared but at the cost of paying a huge indemnity to Assyria”); “paid to Assyria” paraphrases “to Assyria”. (7) Display has no “c.”: NABRE, Coogan, Ussishkin and EJ are flat; Hayes l14 (“about 701”), Darby (“circa 701”) and Price (“ca. 701”) hedge and are uncited.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): a fresh agent that did not build the entry, working from its own scratch folder only. Re-fetched every source from its registry URL by curl (bible.usccb.org/bible/isaiah/0 served to curl today; OUP Learning Link ch. 18 summary; unisapressjournals.co.za article landing page and PDF download 3477/1876/15800, pdftotext; Encyclopedia.com EJ “Sennacherib”; Bible Odyssey dictionary/sennacherib/ and the Rollston Siloam article), HTML tags stripped and entities decoded. Quotes re-matched by one script (NFKC, whitespace, curly quotes and dashes normalised): 8/8, 0 misses, each found once in its source. Locators checked by position: NABRE quotes in the intro's fifth paragraph (“When Hezekiah came to the throne in 715 B.C.”); Ussishkin under the heading “THE ASSYRIAN CAMPAIGN”, after the p. 720 running head; EJ's 701 sentence opens the entry's second paragraph and the reign phrase its first; HarperCollins's sentence follows the pronunciation line; Rollston's in the paragraph named. Trigger Claims re-matched by script as normalised substrings of the line at that timestamp and speaker in the final Transcripts (E146 2026-01-18-jesus-is-so-fulfilling.txt; E72 2024-08-19-episode-72-…-the-truth-about-ruth.txt): 2/2; read about two minutes either side (E146 00:32:43–00:36:49; E72 00:39:08–00:43:21).
+# Second pass changed: (a) Coogan locator (critical/2): “section “Invasions of Judah”, first paragraph” became “…, second paragraph, first sentence”. The section's first paragraph (<p> after the underlined heading) is about the 734 BCE Syro-Ephraimite invasion; the quote opens the second <p>. No citation cut; no Trigger Claim cut; title, display and note unchanged.
+# Second-pass rulings on the first pass's flags: (1) Rollston kept for the 704 side. He is a Reference source (Bible Odyssey, SBL; an epigrapher) and states the reign flatly; #99 says sources differ → show both, each attributed, which the note does by name. (2) Confirmed: Rollston's hedge (“most scholars accept this as the most likely context”) is about the Siloam inscription's date, the next sentence going on to the Hasmonean alternative; it does not touch the reign. (3) Confirmed: the Encyclopedia.com page carries no author or edition line; registry author and edition stay null. (4) Confirmed from the landing page's Dublin Core meta tags: pages 719-758, volume 24, issue 2, DOI 10.25159/1013-8471/3477; the PDF footer reads “750–750” and its running head “720”. The landing page's DC.Date.issued is 2017-11-17 (online posting); registry year 2015 is the issue's printed year, kept. (5) Coogan ch. 18 URL resolves to the ch. 18 summary; new id fine. (6) Note's second sentence matches NABRE ¶ 5 in scope: “laid siege to Jerusalem”, “The city was spared but at the cost of paying a huge indemnity to Assyria”; “paid to Assyria” adds nothing. (7) Display without “c.” kept: the four display sources give 701 flat.
+# Flags for publish: (1) The 704 side still rests on one source; Ussishkin (cited for 701) also says “In 705 B.C.E. Sennacherib ascended to the throne of Assyria” (p. 719, uncited), which agrees with the 705 side. No change needed. (2) E72 00:41:15 dates the reign, not the campaign; kept as the Trigger Claim gates the subject (its segment is on the invasion, 00:39:33) and the entry is worded for what its sources date (CONTEXT.md).
+delegation:
+  { by: owner, date: 2026-11-23, issue: "#110", secondPass: 2026-11-26 }
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "NABRE Introduction to Isaiah, ¶ 5 (“When Hezekiah came to the throne in 715 B.C.”). Dates the ravaging of Judah and the siege of Jerusalem: 701, flat. Saved text from curl.",
+      note: "NABRE Introduction to Isaiah, ¶ 5 (“When Hezekiah came to the throne in 715 B.C.”). Dates the ravaging of Judah and the siege of Jerusalem: 701, flat. Saved text from curl. Second pass: matched once, fifth paragraph of the intro (opens “When Hezekiah came to the throne in 715 B.C.”). 701 flat. Pass.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Coogan and Chapman ch. 18 summary, section “Invasions of Judah”, first sentence. Dates the invasion of Judah: 701 BCE, flat. Same section later: “a swift and powerful invasion of Judah at the end of the eighth century BCE” (uncited, matches E146's wording).",
+      note: "Coogan and Chapman ch. 18 summary, section “Invasions of Judah”, first sentence. Dates the invasion of Judah: 701 BCE, flat. Same section later: “a swift and powerful invasion of Judah at the end of the eighth century BCE” (uncited, matches E146's wording). Second pass: matched once, but in the section's second paragraph (its own <p>, opening with indent spaces); the first paragraph is the 734 BCE invasion. Locator corrected to “second paragraph, first sentence”. Pass.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Ussishkin 2015, section “The Assyrian Campaign”, PDF p. 2, running head 720. Dates the march to Phoenicia, Philistia and Judah: 701 B.C.E. The quote stops mid-sentence. PDF: unisapressjournals.co.za/index.php/JSEM/article/download/3477/1876/15800.",
+      note: "Ussishkin 2015, section “The Assyrian Campaign”, PDF p. 2, running head 720. Dates the march to Phoenicia, Philistia and Judah: 701 B.C.E. The quote stops mid-sentence. PDF: unisapressjournals.co.za/index.php/JSEM/article/download/3477/1876/15800. Second pass: matched once in the re-downloaded PDF, under “THE ASSYRIAN CAMPAIGN”, first lines after the 720 running head. Pass.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "EJ “Sennacherib”, second paragraph, first sentence. Dates the march against the Syro-Palestinian rebels, Judah among them (the paragraph goes on to Lachish, Hezekiah and the siege): 701.",
+      note: "EJ “Sennacherib”, second paragraph, first sentence. Dates the march against the Syro-Palestinian rebels, Judah among them (the paragraph goes on to Lachish, Hezekiah and the siege): 701. Second pass: matched once; the entry's second paragraph, first sentence; Lachish and Hezekiah follow in the same paragraph. Pass.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "HarperCollins Bible Dictionary “Sennacherib” on Bible Odyssey, opening sentence after the pronunciation line. Reign 705–681 BCE, flat. The 705 side.",
+      note: "HarperCollins Bible Dictionary “Sennacherib” on Bible Odyssey, opening sentence after the pronunciation line. Reign 705–681 BCE, flat. The 705 side. Second pass: matched once, first sentence after “Suh-nak ́uh-rib”. Pass.",
     }
   critical/6:
     {
       agent: pass,
       owner: "",
-      note: "EJ “Sennacherib”, opening sentence. Reign 705–681 b.c.e. The quote stops before “, son of *Sargon ii.” (cross-reference mark).",
+      note: "EJ “Sennacherib”, opening sentence. Reign 705–681 b.c.e. The quote stops before “, son of *Sargon ii.” (cross-reference mark). Second pass: matched once, the entry's opening paragraph. Pass.",
     }
   critical/7:
     {
       agent: pass,
       owner: "",
-      note: "Rollston, Bible Odyssey (June 20, 2017), paragraph beginning “Biblical texts describing the reign of Hezekiah”. Reign 704–681 B.C.E. The 704 side. See flags 1 and 2.",
+      note: "Rollston, Bible Odyssey (June 20, 2017), paragraph beginning “Biblical texts describing the reign of Hezekiah”. Reign 704–681 B.C.E. The 704 side. See flags 1 and 2. Second pass: matched once in the paragraph named; byline date June 20, 2017 confirmed. Pass (see rulings 1, 2).",
     }
   critical/8:
     {
       agent: pass,
       owner: "",
-      note: "NABRE Isaiah introduction, ¶ 5, the sentence after critical/1. Backs “spared, at the cost of a huge indemnity paid to Assyria”.",
+      note: "NABRE Isaiah introduction, ¶ 5, the sentence after critical/1. Backs “spared, at the cost of a huge indemnity paid to Assyria”. Second pass: matched once, ¶ 5, two sentences after critical/1. Pass.",
     }
 triggers:
   146@00:34:24:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Whole 00:34:24 turn but its last sentence (“And then Ashurbanipal came to power after Esarhaddon.”), answering Dan Beecher's “we've definitely mentioned Sennacherib a bunch of times”. Dates the campaign (Lachish, Hezekiah) to the end of the 8th century BCE; the quote opens on the turn's “Yeah,” dropped. Read 00:32:43–00:36:49 (What Is That? segment on Esarhaddon's vassal treaty).",
+      note: "states: critical. Whole 00:34:24 turn but its last sentence (“And then Ashurbanipal came to power after Esarhaddon.”), answering Dan Beecher's “we've definitely mentioned Sennacherib a bunch of times”. Dates the campaign (Lachish, Hezekiah) to the end of the 8th century BCE; the quote opens on the turn's “Yeah,” dropped. Read 00:32:43–00:36:49 (What Is That? segment on Esarhaddon's vassal treaty). Second pass: re-matched at 00:34:24.668, Dan McClellan; read 00:32:43–00:36:49. Subject (Sennacherib against Lachish and Hezekiah) and “toward the end of the 8th century BCE” confirmed; no hedge dropped. Pass.",
     }
   72@00:41:15:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Opening sentences of the 00:41:15 turn after “Yes, around that area.”; the turn goes on “So about 24 years. Ish.” Dates the reign (705–681), the show's side of the note's split; the segment's subject is the invasion (00:39:33: “the event that we're wanting to talk about here is the invasion of Sennacherib”). Read 00:39:08–00:43:21.",
+      note: "states: critical. Opening sentences of the 00:41:15 turn after “Yes, around that area.”; the turn goes on “So about 24 years. Ish.” Dates the reign (705–681), the show's side of the note's split; the segment's subject is the invasion (00:39:33: “the event that we're wanting to talk about here is the invasion of Sennacherib”). Read 00:39:08–00:43:21. Second pass: re-matched at 00:41:15.820, Dan McClellan; read 00:39:08–00:43:21. Reign flat, no hedge dropped (“Ish.” follows the 24-years gloss, outside the quote). Pass.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Title and display date the campaign against Judah; all four display sources date it (critical/1–4). The reign and the outcome at Jerusalem are in the note, each cited.",
+      note: "Title and display date the campaign against Judah; all four display sources date it (critical/1–4). The reign and the outcome at Jerusalem are in the note, each cited. Second pass: confirmed; each display source dates the campaign or invasion (NABRE, Coogan) or the march (Ussishkin, EJ) to 701.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Campaign year: no split among sources read (701 throughout). Reign: 705–681 (critical/5–6) vs 704–681 (critical/7), both shown in the note, each attributed by name (#99).",
+      note: "Campaign year: no split among sources read (701 throughout). Reign: 705–681 (critical/5–6) vs 704–681 (critical/7), both shown in the note, each attributed by name (#99). Second pass: confirmed; no source re-read gives another campaign year.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; both triggers states: critical.",
+      note: "No Tradition Date; both triggers states: critical. Second pass: confirmed.",
     }
   tradition-named:
-    { agent: pass, owner: "", note: "No Tradition sources cited." }
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition sources cited. Second pass: confirmed.",
+    }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date cited. Hezekiah's reform (dated only conditionally by Faust 2026) is out of the display and note, per the issue. Hayes's “about 701”, Darby's “circa” and Price's “ca.” are approximations, uncited.",
+      note: "No conditional date cited. Hezekiah's reform (dated only conditionally by Faust 2026) is out of the display and note, per the issue. Hayes's “about 701”, Darby's “circa” and Price's “ca.” are approximations, uncited. Second pass: confirmed; the cited quotes carry no hedge.",
     }
 sources:
   nabre-isaiah-intro:
@@ -104,42 +114,42 @@ sources:
       agent: pass,
       owner: "",
       edition: "NABRE Old Testament, 2011 revision (year not printed on the page)",
-      note: "Reference (#86; CONTEXT.md: NABRE notes by a scholarly association). Existing registry entry.",
+      note: "Reference (#86; CONTEXT.md: NABRE notes by a scholarly association). Existing registry entry. Second pass: re-fetched by curl today; registry fields fine.",
     }
   coogan-brief-4e-summary-ch18:
     {
       agent: pass,
       owner: "",
       edition: "4th ed. (2019), OUP Learning Link",
-      note: "Reference; new id, same textbook and edition as coogan-brief-4e-summary-ch17 and -ch19.",
+      note: "Reference; new id, same textbook and edition as coogan-brief-4e-summary-ch17 and -ch19. Second pass: URL resolves to the ch. 18 summary; registry fields fine.",
     }
   ussishkin-2015-sennacherib-lachish:
     {
       agent: pass,
       owner: "",
       edition: "Journal for Semitics 24/2 (2015), pp. 719–758, doi:10.25159/1013-8471/3477",
-      note: "Scholarly: peer-reviewed journal (PDF: “Received 12/10/2015; Accepted 11/11/2015”). Ussishkin directed the Lachish excavations. See flag 4.",
+      note: "Scholarly: peer-reviewed journal (PDF: “Received 12/10/2015; Accepted 11/11/2015”). Ussishkin directed the Lachish excavations. See flag 4. Second pass: landing-page DC meta confirms pp. 719-758, 24/2, DOI; Received/Accepted line present in the PDF.",
     }
   ej-sennacherib:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica (no credit line or edition on the page)",
-      note: "Reference, as ej-history-kingdoms. See flag 3.",
+      note: "Reference, as ej-history-kingdoms. See flag 3. Second pass: no credit line on the page, confirmed.",
     }
   harpercollins-2009-dictionary:
     {
       agent: pass,
       owner: "",
       edition: "HarperCollins Bible Dictionary (abridged 2009), on Bible Odyssey",
-      note: "Reference (#86). Entry page bibleodyssey.org/dictionary/sennacherib/; registry URL is the dictionary index.",
+      note: "Reference (#86). Entry page bibleodyssey.org/dictionary/sennacherib/; registry URL is the dictionary index. Second pass: entry page re-fetched, header reads “HarperCollins Bible Dictionary”.",
     }
   rollston-bo-siloam:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey, June 20, 2017",
-      note: "Reference, as rollston-bo-tel-dan. Rollston is an epigrapher (George Washington University, per the author note).",
+      note: "Reference, as rollston-bo-tel-dan. Rollston is an epigrapher (George Washington University, per the author note). Second pass: author note and June 20, 2017 date confirmed on the page.",
     }
 leads:
   - "Grabbe (ed.), ‘Like a Bird in a Cage’: The Invasion of Sennacherib in 701 BCE (2003): cited by Ussishkin; not read."
