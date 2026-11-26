@@ -9,93 +9,103 @@
 # agent: the first pass (2026-11-25). Quotes script-matched against saved copies of each source (whitespace, quotes, dashes, entities and Markdown links normalised): 6 hits, 0 misses. Trigger Claims matched by script as substrings of their Transcript lines at their timestamps: 3 hits.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) is the NABRE's “traditionally dated … first half of the second millennium” rightly kept out of a Critical Date? (2) Coogan's “help to support the contention” (undated/4) is reported as “note support for the view”; check that it is no stronger. (3) NABRE is a Church-published Bible, classed Reference as on `adam` (its notes are by a scholarly association, CONTEXT.md). (4) The EJ entry's biblical sections are signed Sarna / Sperling (2nd ed.); the cited sentence is in the biblical part, before the Aggadah section by Harry Freedman.
+# Independent second agent pass 2026-11-25 (#93 delegation, #110): every source re-fetched from its registry URL (USCCB /bible/genesis/0 returned 200 and was matched; /0.md returned 403 this time); all six quotes re-matched by script (whitespace, quotes, dashes, entities, Markdown links normalised): 6 hits, 0 misses, each at its locator (Coogan sections “Ancestors as History?” and “Form Criticism”; Hendel “Did Abraham actually exist?”; NABRE ¶ 7 counting from “Genesis is the first book”; EJ “The Chronological Background”, inside the Sarna / Sperling part; Wood's opening paragraph, author and 25 August 2009 confirmed). Every “…” fragment in the statement is a substring of its cited quote. All three Trigger Claims re-matched by script (timestamp, speaker, verbatim substring of the line): 3 hits; about two minutes either side read.
+# Second pass changed (statement only, all narrowings to the quotes; no citation cut, nothing moved to uncited): (a) Hendel “most details” → “many or most details” (his “many (or most)”); (b) NABRE “no evidence outside the Bible” → “no direct evidence outside the Bible” (its “no direct extra-biblical evidence”; the next sentence gives indirect second-millennium affinities, so “direct” matters); (c) Coogan “note support for the view” → “say etiologies in the stories help support the contention” (their “such etiologies help to support the contention”; the support is from etiologies, not stated outright); (d) EJ “calls them reflections” → “says that in general the patriarchs and their activities are reflections” (restores its “In general” hedge).
+# Title “Abraham and the patriarchs”, verdict no-firm-date, tradition display “2166 BCE (Abraham's birth)” and holder (= registry `tradition:`, ABR's About-page wording) re-checked against their sources: kept. The title names the subject the sources discuss (Abraham; Coogan, NABRE and EJ speak of the patriarchs/ancestral stories) and claims no date.
+# First-pass flags answered: (1) NABRE's “traditionally dated … first half of the second millennium” stays out of a Critical Date: NABRE reports it as what scholars traditionally held beside a minority and no direct evidence, not as its own date. (2) “note support for the view” was a little loose (it dropped the etiologies basis); now Coogan's own “help support the contention”. (3) NABRE as Reference: same id and class as `adam` and `flood`; fits. (4) Confirmed on the fetched page: the biblical sections end with the signature “[Nahum M. Sarna / S. David Sperling (2nd ed.)]” before “Patriarchs and Matriarchs in the Aggadah”, which is signed “[Harry Freedman]”; the cited sentence is before both.
+# Flags for publish: (1) NABRE ¶ 7 ends with its own lean, not cited: “Given the lack of decisive evidence, it is reasonable to accept the Bible’s own chronology that the patriarchs were the ancestors of Israel and that they lived well before the exodus that is generally dated in the thirteenth century.” A relative date, but conditional on accepting the Bible's chronology, so not a Critical Date (conditional-not-critical); the statement reports NABRE's survey but not this lean. Adding it is a new citation, left to the publisher. The verdict enum has only no-firm-date and not-historical, so no-firm-date stands either way. (2) “Coogan and Chapman” attributes a publisher student summary (kind publisher-summary) to the book's authors; same wording as published `creation`, `flood` and `adam`, so kept. (3) E187's trimmed text keeps “down to about 1550 BCE”, the Middle Bronze Age's lower bound, so on its own it can read as an Abraham range; verbatim per #99, kept. (4) E121's critical side (Philistines arrive later) is backed by no cited source; the entry says nothing about Philistines (CONTEXT: worded for what its sources date), so the Trigger Claim is shown verbatim only. (5) `sourcesRead` is empty; it must be set to 2026-11-25 (= delegation secondPass) at publish. check:timeline returns before the publish gate for a draft, so its pass does not check this file; the file was checked separately by yaml load.
 review: 2026-11-25
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-25
 citations:
   undated/1:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary ch. 5, section “Ancestors as History?”. Source of “impossible to pinpoint”; the second clause (“some scholars have dismissed these narratives as a historical fiction”) is reported as a minority view only via NABRE's “a few”.",
+      note: "Coogan summary ch. 5, section “Ancestors as History?”. Source of “impossible to pinpoint”; the second clause (“some scholars have dismissed these narratives as a historical fiction”) is reported as a minority view only via NABRE's “a few”. Second pass: re-fetched; matched verbatim in “Ancestors as History?”. Verified.",
     }
   undated/2:
     {
       agent: pass,
       owner: "",
-      note: "Hendel, Bible Odyssey “Abraham”, section “Did Abraham actually exist?”. Source of the unknown existence and “legendary and not historical” details. The same section's early-second-millennium Amorite details are not cited: Hendel dates those details, not Abraham (next paragraph: the stories “are not about a half-forgotten Amorite tribal figure”).",
+      note: "Hendel, Bible Odyssey “Abraham”, section “Did Abraham actually exist?”. Source of the unknown existence and “legendary and not historical” details. The same section's early-second-millennium Amorite details are not cited: Hendel dates those details, not Abraham (next paragraph: the stories “are not about a half-forgotten Amorite tribal figure”). Second pass: re-fetched; matched verbatim under “Did Abraham actually exist?” (the sentence is in that section's paragraph; the next paragraph opens “The biblical Abraham may not have actually existed”). Correction: the statement said “most details”; now “many or most”, as Hendel says. Verified.",
     }
   undated/3:
     {
       agent: pass,
       owner: "",
-      note: "NABRE Genesis introduction ¶ 7 (under the “Genesis 11–50” paragraph), counting from “Genesis is the first book” as ¶ 1, the same count as `adam`'s ¶ 5. Fetched from the /bible/genesis/0.md alternate. The traditional second-millennium dating, the late-and-fictional minority, and no extra-biblical evidence.",
+      note: "NABRE Genesis introduction ¶ 7 (under the “Genesis 11–50” paragraph), counting from “Genesis is the first book” as ¶ 1, the same count as `adam`'s ¶ 5. Fetched from the /bible/genesis/0.md alternate. The traditional second-millennium dating, the late-and-fictional minority, and no extra-biblical evidence. Second pass: re-fetched from /bible/genesis/0 (200); matched verbatim at ¶ 7 by the same count. Correction: the statement now says “no direct evidence”, as the quote does. Verified.",
     }
   undated/4:
     {
       agent: pass,
       owner: "",
-      note: "Coogan summary ch. 5, section “Form Criticism”. Supports the common-ancestor point (E64). Worded “note support for the view”, after Coogan's “help to support the contention”.",
+      note: "Coogan summary ch. 5, section “Form Criticism”. Supports the common-ancestor point (E64). Worded “note support for the view”, after Coogan's “help to support the contention”. Second pass: re-fetched; matched verbatim, last sentence of “Form Criticism”. Changed: statement now “say etiologies in the stories help support the contention”, keeping the source's basis and verb. Verified.",
     }
   undated/5:
     {
       agent: pass,
       owner: "",
-      note: "EJ “Patriarchs, The”, section “The Chronological Background”, signed Nahum M. Sarna / S. David Sperling (2nd ed.). The same section says the Exodus and slavery are “now thought by most scholars not to be historical events” (not cited).",
+      note: "EJ “Patriarchs, The”, section “The Chronological Background”, signed Nahum M. Sarna / S. David Sperling (2nd ed.). The same section says the Exodus and slavery are “now thought by most scholars not to be historical events” (not cited). Second pass: re-fetched; matched verbatim, last sentence of “The Chronological Background”, before the “[Nahum M. Sarna / S. David Sperling (2nd ed.)]” signature. Changed: the statement restores the quote's “In general” (“says that in general the patriarchs and their activities are reflections …”). Verified.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "Wood 2009 (ABR), “The Army of the Kings of Ur”, page dated 25 August 2009; the page has no section headings, so the locator is the opening paragraph. Dates Abraham's birth, so the display names the birth.",
+      note: "Wood 2009 (ABR), “The Army of the Kings of Ur”, page dated 25 August 2009; the page has no section headings, so the locator is the opening paragraph. Dates Abraham's birth, so the display names the birth. Second pass: re-fetched; matched verbatim as the first sentence after the byline “Author: Bryant G. Wood PhD … Date: 25 August 2009”. Display “2166 BCE (Abraham's birth)” and from -2166 fit. Verified.",
     }
 triggers:
   121@00:29:35:
     {
       agent: pass,
       owner: "",
-      note: "states: both. “this is supposed to be, what, like 1900 BCE, something like that. Depending on where you date Abraham” is the tradition side, kept with its hedges; the Philistines' absence is the critical side. Trimmed after “coastline here.”; the turn goes on to Mycenaean pottery and “the Philistines do not exist when Isaac is alive”. Context read 00:29:13 to 00:30:39.",
+      note: "states: both. “this is supposed to be, what, like 1900 BCE, something like that. Depending on where you date Abraham” is the tradition side, kept with its hedges; the Philistines' absence is the critical side. Trimmed after “coastline here.”; the turn goes on to Mycenaean pottery and “the Philistines do not exist when Isaac is alive”. Context read 00:29:13 to 00:30:39. Second pass: timestamp, speaker and text re-matched by script; 00:27:45 to 00:31:54 read. The tail cut is not a hedge on the date; “what, like 1900 BCE, something like that” keeps its hedges. Verified.",
     }
   64@00:31:16:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Whole turn. Both “probably” kept. Context read from 00:29:25 (the tribal-confederation theory it closes) to 00:32:05.",
+      note: "states: critical. Whole turn. Both “probably” kept. Context read from 00:29:25 (the tribal-confederation theory it closes) to 00:32:05. Second pass: re-matched by script; 00:27:16 to 00:33:22 read. Correction: not quite the whole turn; the turn opens “And. And then, you know,” and the text starts at the second “And”. The framing (“the one that I think makes the most sense to me”, 00:29:25) is on the confederation theory and sits outside the claim, whose own “probably” hedges are both kept. Verified.",
     }
   187@00:39:41:
     {
       agent: pass,
       owner: "",
-      note: "states: tradition. First full sentence after “Yeah. So.”; the rest of the turn is the Late Bronze Age. “where a lot of people want Abraham to be located” is the tradition side; the 2000–1550 range is the Middle Bronze Age's, not Abraham's. Context read from 00:36:03 (“the patriarchal period” vs. academic periods) to 00:40:21.",
+      note: "states: tradition. First full sentence after “Yeah. So.”; the rest of the turn is the Late Bronze Age. “where a lot of people want Abraham to be located” is the tradition side; the 2000–1550 range is the Middle Bronze Age's, not Abraham's. Context read from 00:36:03 (“the patriarchal period” vs. academic periods) to 00:40:21. Second pass: re-matched by script; 00:37:54 to 00:40:39 read (Ussher aside at 00:39:34 just before). Verified; the kept “down to about 1550 BCE” flagged for publish.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "No Critical Date. The statement says only what the sources say: no secure date, existence unknown, the traditional second-millennium dating as NABRE reports it, the minority late-fiction view, no extra-biblical evidence, and two critical readings of the patriarchs. No source read says Abraham did not exist.",
+      note: "No Critical Date. The statement says only what the sources say: no secure date, existence unknown, the traditional second-millennium dating as NABRE reports it, the minority late-fiction view, no extra-biblical evidence, and two critical readings of the patriarchs. No source read says Abraham did not exist. Second pass: statement narrowed four times to its quotes (Hendel “many or most”, NABRE “direct”, Coogan “help support the contention”, EJ “in general”); no Critical Date. Verdict no-firm-date confirmed: Hendel's next paragraph says only that Abraham “may not have actually existed”.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "The traditional dating and the late-and-fictional view are both shown, in NABRE's own proportion (“traditionally” vs. “a few”). No date range is chosen.",
+      note: "The traditional dating and the late-and-fictional view are both shown, in NABRE's own proportion (“traditionally” vs. “a few”). No date range is chosen. Second pass: confirmed; minority attributed to NABRE (“a few”), weight follows it.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Triggers 121@00:29:35 (states: both) and 187@00:39:41 (states: tradition).",
+      note: "Triggers 121@00:29:35 (states: both) and 187@00:39:41 (states: tradition). Second pass: confirmed in triggers.yaml; E121's “supposed to be … 1900 BCE” and E187's “where a lot of people want Abraham to be located” both state the tradition side.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "Holder “Associates for Biblical Research, an evangelical apologetics ministry” equals the registry `tradition:`, as on `exodus`; ABR's About page: “Associates for Biblical Research is the only evangelical apologetics ministry leading a licensed excavation in Israel.”",
+      note: "Holder “Associates for Biblical Research, an evangelical apologetics ministry” equals the registry `tradition:`, as on `exodus`; ABR's About page: “Associates for Biblical Research is the only evangelical apologetics ministry leading a licensed excavation in Israel.” Second pass: About page re-fetched; sentence confirmed.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No source gives a conditional date for Abraham. Hendel's early second millennium dates retained details, not Abraham, and is not cited. The entry is placed by its Tradition Date (#162), in the tradition lane only.",
+      note: "No source gives a conditional date for Abraham. Hendel's early second millennium dates retained details, not Abraham, and is not cited. The entry is placed by its Tradition Date (#162), in the tradition lane only. Second pass: correction: NABRE ¶ 7 does end with a conditional relative date, its own lean (“Given the lack of decisive evidence, it is reasonable to accept … that they lived well before the exodus that is generally dated in the thirteenth century”): conditional on accepting the Bible's chronology, so never a Critical Date. It is uncited, so the opening “No source gives a conditional date” holds for the cited sources only (flag for publish).",
     }
 sources:
   coogan-brief-4e-summary-ch5:
@@ -103,35 +113,35 @@ sources:
       agent: pass,
       owner: "",
       edition: "4th ed., 2019, OUP Learning Link",
-      note: "Registry entry already used by other entries. Chapter 5 summary page fetched by script.",
+      note: "Registry entry already used by other entries. Chapter 5 summary page fetched by script. Second pass: URL re-fetched; Reference fits; 2019, inside the 30-year window.",
     }
   hendel-2018-abraham:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey article, published 25 March 2018 (modified 2024)",
-      note: "New. Classed Reference like other Bible Odyssey articles (kaltner-2017-egypt).",
+      note: "New. Classed Reference like other Bible Odyssey articles (kaltner-2017-egypt). Second pass: URL re-fetched; author Ronald Hendel, datePublished 2018-03-25 confirmed; Reference fits; inside the window.",
     }
   nabre-genesis-intro:
     {
       agent: pass,
       owner: "",
       edition: "NABRE, USCCB website",
-      note: "Registry entry shared with `adam`.",
+      note: "Registry entry shared with `adam`. Second pass: URL re-fetched (200); Reference fits; 2011, inside the window.",
     }
   sarna-sperling-ej-patriarchs:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica, 2nd ed., reproduced on Encyclopedia.com",
-      note: "New. Same pattern as davies-ej-dead-sea-scrolls. Author is the signature after the biblical sections.",
+      note: "New. Same pattern as davies-ej-dead-sea-scrolls. Author is the signature after the biblical sections. Second pass: URL re-fetched; signature confirmed; Reference fits. The fetched page gives no year (registry year null), so the 30-year window rests on Coogan 2019 and Hendel 2018 (#80: one source inside it is enough).",
     }
   abr-wood-2009-ur:
     {
       agent: pass,
       owner: "",
       edition: "Associates for Biblical Research web page, dated 25 August 2009",
-      note: "New. Tradition: ABR's mission statement calls it “a Christian Apologetics Ministry Dedicated to Demonstrating the Historical Reliability of the Bible”.",
+      note: "New. Tradition: ABR's mission statement calls it “a Christian Apologetics Ministry Dedicated to Demonstrating the Historical Reliability of the Bible”. Second pass: URL re-fetched; Tradition fits; no window for Tradition.",
     }
 leads:
   - "EJ “Patriarchs” cross-refers to “*Genesis” and “*History, Beginning” for current thinking on the historicity of the patriarchal period: not read."
@@ -145,6 +155,6 @@ uncited:
   - "Hendel “Abraham”: early second millennium B.C.E. for Haran and El worship as retained details. Read; dates details, not Abraham."
   - "Hayes RLST 145 l6 ch. 1: “Scholarly opinion on this matter is seriously divided”; Sarna's retained-memories view vs. Thompson and Van Seters's “entirely fabricated retrojections”. Read; covered by NABRE ¶ 7. The transcript's “Late Bronze Age” for the Albright-school fit looks like a slip for Middle Bronze, another reason not to cite it."
   - "Hayes RLST 145 l5 ch. 4: “it's hard to pin down dates for a lot of things”; biblical chronologies of the patriarchal period “are not accurate historical records”. Read; Coogan cited for the same point."
-  - "NABRE ¶ 7: “it is reasonable to accept the Bible’s own chronology that the patriarchs … lived well before the exodus”. Read; the publisher's own judgement, not a date."
+  - "NABRE ¶ 7: “it is reasonable to accept the Bible’s own chronology that the patriarchs … lived well before the exodus”. Read; the publisher's own judgement, not a date. Second pass: correction: the full sentence ends “… lived well before the exodus that is generally dated in the thirteenth century”, a relative date conditional on accepting the Bible's chronology; still not a Critical Date (conditional-not-critical), still uncited; flagged for publish."
   - "Coogan ch. 5: “Each of the patriarchs may have been a legendary founder of the ancient tribes of Israel.” Read; undated/4 makes the same point."
   - "HarperCollins Bible Dictionary (Bible Odyssey) entries Abraham, Isaac, Jacob: no date or historicity. Bible Odyssey articles on Isaac, Jacob and Abraham's family: nothing on date."
