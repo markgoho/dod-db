@@ -1,0 +1,135 @@
+# Review record for the Timeline Entry `merneptah-stele` (/timeline/#merneptah-stele; #93 shape). Not rendered.
+# Issue #184 (from #108). Issue note: word the entry for what the stele dates (a people named Israel in Canaan), not for the emergence of Israel as a whole. Ties to `exodus` and `jericho`; no seeAlso added (neither cites the stele as its subject).
+# Sourcing test, 2026-11-25: met. Five Scholarly or Reference sources date the stele outright, none conditionally. They differ by year: Kaltner about 1208, Sergi ca. 1207, Mazar 1206, Hayes about 1204; Meyers late thirteenth century. Display is the shared umbrella “Late 13th century BCE” (Meyers's “late thirteenth-century”, Hayes's “end of the thirteenth century”); the note lists each year, each cited. No dash range: no source gives a range for the stele.
+# Why the years differ (Egyptian regnal chronology) is left out: no source read ties the spread to it for this stele (Wiener's chronology paper never names Merneptah).
+# The determinative point (Israel written as a people, not a city or land) is in the Trigger Claims but in no source quote; the note says “a people in Canaan” on Hayes l7 only.
+# agent: the first pass (2026-11-25). Quotes script-matched against saved copies of each source (whitespace, quotes, dashes, entities and line-break hyphens normalised): zero misses. Trigger Claims matched by script as substrings of their Transcript lines.
+# owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
+# Flags for the second pass: (1) is “Late 13th century BCE” plus the year list the right split form, against fall-of-jerusalem's “587 or 586 BCE”? (2) Mazar's p. 30 sentence is about Israel's absence from later sources; it is cited for the 1206 date only. (3) Kaltner is the only source at 1208, the show's year.
+review:
+citations:
+  critical/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "Meyers excerpt PDF p. 5 (no printed page number). Clause of a longer sentence. Supports “late 13th century” and “earliest mention of Israel outside the Bible”.",
+    }
+  critical/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "Kaltner, Bible Odyssey “Egypt”, the paragraph on the stela. Supports about 1208 and earliest mention outside the Bible.",
+    }
+  critical/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "Sergi p. 46 (between running heads 46 and 47), §2.3. PDF breaks “inscrip- tion” over a line. Supports ca. 1207 and earliest mention.",
+    }
+  critical/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "Mazar p. 30 (running head 30 before, 31 after), in his Part 1 essay. Cited for 1206 only.",
+    }
+  critical/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 3 [00:10:06]. Supports about 1204 and Israel among groups in Canaan. Hayes l12 also says 1204.",
+    }
+  critical/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "Hayes l7 ch. 3, same paragraph. Supports “a people in Canaan” and the end of the thirteenth century.",
+    }
+triggers:
+  1@00:45:35:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:45:35 turn, after “a few centuries after our earliest reference to a people known as Israel.” Cut before “but there was some kind of band or coalition…”. No hedge on the date dropped beyond “around”, which is kept.",
+    }
+  64@00:29:25:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:29:25 turn, after “There's a theory about the rise of the nation of Israel that initially, you know,”. Keeps “around 1208, 1210 BCE” verbatim; the show's year varies by two within itself, within the sources' spread, not a #99 contradiction.",
+    }
+  187@00:41:56:
+    {
+      agent: pass,
+      owner: "",
+      note: "states: critical. Substring of the 00:41:56 turn (Lay of the Land chronology). The show says 1208 throughout; among the sources only Kaltner says 1208 (about).",
+    }
+rules:
+  critical-scope:
+    {
+      agent: pass,
+      owner: "",
+      note: "Dates the stele and its mention of Israel, not Israel's emergence or settlement (issue #184 note). Title “Earliest mention of Israel” is Sergi's and Kaltner's claim.",
+    }
+  split-shown:
+    {
+      agent: pass,
+      owner: "",
+      note: "Four years among the sources (1208, 1207, 1206, 1204): display is the century they share, note lists every year, each cited. Flagged for the second pass.",
+    }
+  tradition-both-sides:
+    {
+      agent: pass,
+      owner: "",
+      note: "No Tradition Date; every Trigger Claim states critical.",
+    }
+  tradition-named: { agent: pass, owner: "", note: "No Tradition Date." }
+  conditional-not-critical:
+    {
+      agent: pass,
+      owner: "",
+      note: "No conditional date; every source's date is flat.",
+    }
+sources:
+  meyers-2005-exodus:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (Cambridge, NCBC). Reused id; publisher excerpt PDF.",
+    }
+  kaltner-2017-egypt:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (Bible Odyssey, SBL). Reused id.",
+    }
+  sergi-2023-two-houses:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (SBL Press). Reused id; SBL ICI PDF.",
+    }
+  mazar-2007-quest-archaeology-history:
+    {
+      agent: pass,
+      owner: "",
+      note: "Scholarly (SBL). New id for Mazar's Part 1 essay, following the per-essay ids for the same volume (mazar-2007-quest-david-solomon, finkelstein-2007-quest-solomon). Same SBL ICI PDF.",
+    }
+  hayes-rlst145-l7:
+    {
+      agent: pass,
+      owner: "",
+      note: "Reference (Open Yale courseware, 2006, inside the 30-year window). Reused id.",
+    }
+leads:
+  - "JAEI: van der Veen, Theis and Görg 2010, “Israel in Canaan (Long) Before Pharaoh Merenptah?”: host blocks scripted fetches; not read."
+  - "Hasel, AASOR 58 (2003) and BASOR 1994 on the stele: no free copy."
+  - "Killebrew 2005, Biblical Peoples and Ethnicity: no open copy found."
+uncited:
+  - "Finkelstein 2007 (Quest, p. 74): “describes his campaign to Canaan in 1207 b.c.e.” Dates the campaign, not the stele; Sergi carries 1207."
+  - "Longman, Bible Odyssey “Origins of the Israelites”: “late thirteenth century B.C.E., typically in the last decade of that century.” Adds nothing Meyers and Sergi don't."
+  - "Mazar 2007 (Quest, p. 93), Noegel (Bible Odyssey “Pharaoh”), HarperCollins Bible Dictionary (Bible Odyssey “Other, unnamed Egyptian kings”): Merneptah's reign only (1213–1203 or 1212–1202); deriving year 5 would be our arithmetic."
+  - "Wiener 2011 draft (“Oh, No—Not Another Chronology!”): Egyptian high, middle and low chronologies; never names Merneptah, and venue unconfirmed."
+  - "Encyclopaedia Judaica “Merneptah” (Schulman, via Encyclopedia.com): reign c. 1224–1214; text from the 1971 edition, outside the 30-year window."
+  - "Tigay, Penn NELC 150 slide 3: undated slide; says “4th year”."
+  - "Bruce, JETS 62.3 (2019), ca. 1209: independent researcher, fails the professional-scholar rule (#80)."
+  - "Hayes l12: “the Merneptah stele of 1204”; same author and year as the cited l7."

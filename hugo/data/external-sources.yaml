@@ -2786,6 +2786,20 @@ finkelstein-2007-quest-solomon:
   hostAuthored: false
   tradition: null
 
+mazar-2007-quest-archaeology-history:
+  author: "Amihai Mazar"
+  title: "On Archaeology, Biblical History, and Biblical Archaeology"
+  series: "Israel Finkelstein and Amihai Mazar, The Quest for the Historical Israel: Debating Archaeology and the History of Early Israel, ed. Brian B. Schmidt (Archaeology and Biblical Studies 17)"
+  publisher: "Society of Biblical Literature"
+  year: 2007
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
+  hostAuthored: false
+  tradition: null
+
 mazar-2007-quest-david-solomon:
   author: "Amihai Mazar"
   title: "The Search for David and Solomon: An Archaeological Perspective"
