@@ -1,8 +1,7 @@
 ---
 title: "Hezekiah's reform"
 entryKind: event
-draft: true
-sourcesRead: null
+sourcesRead: 2026-11-26
 related: { books: [2-kings, 2-chronicles], tags: [hezekiah, arad], topics: [] }
 watch:
   [
