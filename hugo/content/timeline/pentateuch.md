@@ -1,9 +1,8 @@
 ---
 title: "The Pentateuch"
 entryKind: composition
-draft: true
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-26
 related:
   {
     books: [genesis, exodus, leviticus, numbers, deuteronomy],
@@ -47,7 +46,7 @@ critical:
       quote: 'The addition of the redacted works of Genesis through Numbers was accomplished by the mid-5th century b.c.e., when the Pentateuch was recognized by the postexilic community as the "Book of the Torah of Moses" (Neh. 8:1–2).'
       read: 2026-11-26
 setting:
-  display: "from the creation of the world to the death of Moses"
+  display: "the time from the creation of the world to the death of Moses"
   cites:
     - source: nihan-rhyder-bo-torah
       locator: "opening paragraph"
