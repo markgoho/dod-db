@@ -1,0 +1,425 @@
+/*
+  Custom block for The Text of the Hebrew Bible Scholarship Page: a comic
+  page in time order. One ink frame holds the title, seven panels and the
+  credit, so the whole thing shares as one image. Most panels are one
+  generated picture; Jeremiah and the last, double-wide panel are two
+  pictures split by a lightning bolt, the Masoretic Text on the left and the
+  Septuagint on the right. A narration label sits flush top-left, and each
+  panel's words are plates set on the art, in corners the picture leaves
+  clear. Composes cloud-section, type-section-title and scholarship-meta.
+
+  Distinctions without colour: which text is which is the side, the legend
+  and the words on each plate.
+*/
+.heb-comic {
+  --heb-ink: var(--tan-900);
+  --heb-paper: var(--tan-000);
+  --heb-amber: var(--color-accent);
+  --heb-rust: var(--rust-500);
+  --heb-frame: var(--border-width-md);
+
+  container: heb-comic / inline-size;
+}
+
+/* The page: one frame around everything that is shared. */
+.heb-comic__page {
+  background: var(--heb-paper);
+  border: var(--heb-frame) solid var(--heb-ink);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--heb-ink);
+  display: grid;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.heb-comic__head {
+  display: grid;
+  gap: var(--space-3xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.heb-comic__head > p {
+  margin: 0;
+}
+
+.heb-comic__kicker {
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: uppercase;
+}
+
+/* Title lettering: ink capitals with an amber offset. */
+.heb-comic__title {
+  color: var(--heb-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step-2);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  max-inline-size: 24ch;
+  text-shadow: 3px 3px 0 var(--heb-amber);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.heb-comic__legend {
+  font-size: var(--step--2);
+  line-height: var(--line-height-tight);
+}
+
+.heb-comic__legend-bolt {
+  color: var(--heb-amber);
+  -webkit-text-stroke: 1px var(--heb-ink);
+}
+
+.heb-comic__strip {
+  display: grid;
+  gap: var(--space-s);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.heb-comic__frame {
+  display: grid;
+  min-inline-size: 0;
+}
+
+/* A panel: one ink frame around the art; its labels sit on the art as shared comic plates (scholarship.css). */
+.heb-comic__figure {
+  border: var(--heb-frame) solid var(--heb-ink);
+  container-type: inline-size;
+  margin: 0;
+  position: relative;
+}
+
+/* The art: one picture, or two each clipped to its side of the bolt. */
+.heb-comic__art {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+/* A single picture fills its panel, trimmed of the art's own paper margin. */
+.heb-comic__art > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  scale: 1.06;
+}
+
+.heb-comic__half {
+  inset: 0;
+  position: absolute;
+}
+
+.heb-comic__art > .heb-comic__half--left {
+  clip-path: polygon(0 0, 57% 0, 45% 40%, 58% 52%, 43% 100%, 0 100%);
+}
+
+.heb-comic__art > .heb-comic__half--right {
+  clip-path: polygon(57% 0, 100% 0, 100% 100%, 43% 100%, 58% 52%, 45% 40%);
+}
+
+.heb-comic__half > img {
+  block-size: 100%;
+  display: block;
+  inline-size: 60%;
+  object-fit: cover;
+  /* Trim the generated art's own paper margin, so only our frame shows. */
+  scale: 1.12;
+}
+
+.heb-comic__half--right > img {
+  margin-inline-start: 40%;
+}
+
+/* The bolt: a thick ink stroke with an amber core. */
+.heb-comic__bolt {
+  block-size: 100%;
+  fill: none;
+  inline-size: 100%;
+  inset: 0;
+  position: absolute;
+  stroke-linejoin: miter;
+}
+
+.heb-comic__bolt > polyline:first-child {
+  stroke: var(--heb-ink);
+  stroke-width: 12px;
+  vector-effect: non-scaling-stroke;
+}
+
+.heb-comic__bolt > polyline:last-child {
+  stroke: var(--heb-amber);
+  stroke-width: 5px;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Narration label, flush in the panel's top-left corner. */
+.heb-comic__box {
+  background: var(--heb-amber);
+  border-block-end: var(--heb-frame) solid var(--heb-ink);
+  border-inline-end: var(--heb-frame) solid var(--heb-ink);
+  font-family: var(--font-family-display);
+  font-size: var(--step--1);
+  font-style: italic;
+  font-weight: var(--font-weight-boldest);
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  letter-spacing: var(--letter-spacing-heading);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  max-inline-size: 75%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.comic-plate__sub > .heb-comic__ref {
+  margin-inline-start: 0.3em;
+  vertical-align: 0.05em;
+}
+
+/* Scripture tags: ink chips on the plates. */
+.heb-comic__ref {
+  background: var(--heb-ink);
+  color: var(--color-text-inverse);
+  display: inline-block;
+  font-family: var(--font-family-main);
+  font-size: var(--step--2);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  padding: var(--space-4xs) var(--space-3xs);
+  text-decoration-color: var(--heb-amber);
+  white-space: nowrap;
+}
+
+.heb-comic__credit {
+  color: var(--tan-700);
+  font-size: var(--step--2);
+  margin: 0;
+  text-align: center;
+}
+
+.heb-comic__more {
+  margin-block-start: var(--space-s);
+}
+
+/* Wide: two panels to a row. Literal length: container conditions cannot read custom properties. */
+@container heb-comic (width >= 40rem) {
+  .heb-comic__page {
+    padding: var(--space-m);
+  }
+
+  .heb-comic__title {
+    font-size: var(--step-3);
+  }
+
+  .heb-comic__strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* The last panel spans both columns, so its art is a wide strip. */
+  .heb-comic__frame--wide {
+    grid-column: 1 / -1;
+  }
+
+  .heb-comic__frame--wide .heb-comic__art {
+    aspect-ratio: 8 / 3;
+  }
+}
+
+/* The poster: three panels to a row on the 4:5 canvas, the wide panel across the bottom. */
+
+.scholarship-share:target .heb-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:target .heb-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:target .heb-comic__head {
+  gap: 0;
+}
+
+.scholarship-share:target .heb-comic__strip {
+  gap: var(--space-2xs);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.scholarship-share:target .heb-comic__frame--wide {
+  grid-column: 1 / -1;
+}
+
+.scholarship-share:target .heb-comic__frame--wide .heb-comic__art {
+  aspect-ratio: 3 / 1;
+}
+
+.scholarship-share:target .heb-comic__frame--wide .heb-comic__box {
+  font-size: var(--step--1);
+}
+
+/* Three to a row makes each panel narrow: smaller labels and plates, and top-right plates drop below the label row. */
+.scholarship-share:target .heb-comic__box {
+  font-size: var(--step--2);
+  padding: var(--space-4xs) var(--space-3xs);
+}
+
+.scholarship-share:target
+  .heb-comic__frame:not(.heb-comic__frame--wide)
+  .comic-plate {
+  max-inline-size: 42%;
+  padding: 0.6cqi 1cqi 0.8cqi;
+}
+
+.scholarship-share:target
+  .heb-comic__frame:not(.heb-comic__frame--wide)
+  .comic-plate__big {
+  font-size: 4.6cqi;
+}
+
+.scholarship-share:target
+  .heb-comic__frame:not(.heb-comic__frame--wide)
+  .comic-plate__sub {
+  font-size: 2.9cqi;
+}
+
+.scholarship-share:target
+  .heb-comic__frame:not(.heb-comic__frame--wide)
+  .comic-plate--tr {
+  inset-block-start: 9cqi;
+}
+
+.scholarship-share:target .heb-comic__ref {
+  font-size: 1em;
+  padding: 0 var(--space-4xs);
+}
+
+/* The card: panels 1 and 3 side by side under the title. */
+
+.scholarship-share:has(#share-card:target) .heb-comic__page {
+  gap: var(--space-2xs);
+  padding: var(--space-xs);
+}
+
+.scholarship-share:has(#share-card:target)
+  :is(.heb-comic__kicker, .heb-comic__legend) {
+  display: none;
+}
+
+.scholarship-share:has(#share-card:target) .heb-comic__title {
+  font-size: var(--step-1);
+  max-inline-size: none;
+}
+
+.scholarship-share:has(#share-card:target) .heb-comic__strip {
+  gap: var(--space-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* The wide panel is twice as wide a container: halve the plates' cqi type so they match the other panels. */
+.heb-comic__frame--wide .comic-plate {
+  max-inline-size: 30%;
+  padding: 0.45cqi 0.7cqi 0.55cqi;
+}
+
+.heb-comic__frame--wide .comic-plate__big {
+  font-size: clamp(0.95rem, 2.7cqi, 2.1rem);
+}
+
+.heb-comic__frame--wide .comic-plate__sub {
+  font-size: clamp(0.65rem, 1.25cqi, 0.95rem);
+}
+
+/* The wide panel's plates: one per side, each in the open floor or wall beside its figure. */
+.heb-comic__frame--today .comic-plate--a {
+  inset: 2cqi auto auto 27%;
+}
+
+.heb-comic__frame--today .comic-plate--b {
+  inset: auto auto 1.5cqi 59%;
+}
+
+.heb-comic__frame--today .comic-plate {
+  max-inline-size: 24%;
+}
+
+/* On the poster the wide panel's plates match the narrow panels' smaller lettering. */
+.scholarship-share:target .heb-comic__frame--today .comic-plate__big {
+  font-size: 1.6cqi;
+}
+
+.scholarship-share:target .heb-comic__frame--today .comic-plate__sub {
+  font-size: 0.95cqi;
+}
+
+/* On the card the Jeremiah plates sit higher and flatter, clear of the scribe's face. */
+.scholarship-share:has(#share-card:target)
+  .heb-comic__frame--jeremiah
+  .comic-plate {
+  max-inline-size: 46%;
+}
+
+.scholarship-share:has(#share-card:target)
+  .heb-comic__frame--jeremiah
+  .comic-plate--tl {
+  inset-block-start: 7cqi;
+}
+
+.scholarship-share:has(#share-card:target)
+  .heb-comic__frame--jeremiah
+  .comic-plate__big {
+  font-size: 4.2cqi;
+}
+
+.scholarship-share:has(#share-card:target)
+  .heb-comic__frame--jeremiah
+  .comic-plate--tr {
+  max-inline-size: 38%;
+}
+
+/* Phone: one panel to a row. Labels may wrap to two lines, so top-left plates drop lower; split plates widen to stay short and clear the faces. */
+@container heb-comic (width < 40rem) {
+  .heb-comic__box {
+    max-inline-size: 56%;
+  }
+
+  .heb-comic__figure .comic-plate--tl {
+    inset-block-start: 16cqi;
+  }
+
+  .heb-comic__frame--jeremiah .comic-plate {
+    max-inline-size: 47%;
+  }
+
+  /* The last panel is not wide on a phone: its plates drop to the floor at the bottom corners. */
+  .heb-comic__frame--today .comic-plate {
+    max-inline-size: 42%;
+  }
+
+  .heb-comic__frame--today .comic-plate--a {
+    inset: auto auto 2cqi 2cqi;
+    max-inline-size: 36%;
+  }
+
+  .heb-comic__frame--today .comic-plate--b {
+    inset: auto 2cqi 2cqi auto;
+    text-align: end;
+  }
+
+  .heb-comic__frame--jeremiah .comic-plate--tl {
+    inset-block-start: 11cqi;
+  }
+
+  .heb-comic__frame--jeremiah .comic-plate__big {
+    font-size: 4.4cqi;
+  }
+}

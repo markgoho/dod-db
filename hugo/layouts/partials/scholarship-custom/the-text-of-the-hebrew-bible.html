@@ -1,0 +1,180 @@
+{{- /*
+  Custom block for /scholarship/the-text-of-the-hebrew-bible/: a seven-panel
+  comic page in time order. Scrolls of many books in more than one version;
+  the Greek translation in Alexandria; Jeremiah, longer in the Hebrew and much
+  shorter in the Greek; the Masoretes adding vowels; the Leningrad Codex of
+  1009; a scholar today asking which is closer to the original; and,
+  full width, which text is used today.
+
+  A view of the page's reviewed statements: `forms` (the core) for the
+  headline and panel 1, with `oldest`, `lxx`, `lxx-hebrew`, `jeremiah`,
+  `masoretes`, `original` and `translations`; it makes no claim they don't.
+  Two panels are split by a lightning bolt, because their statements assign
+  each half: the Masoretic Text is always on the left, the Septuagint on the
+  right. No three streams of text types (the page says that theory was
+  abandoned) and no line narrowing to one text (the Septuagint is still
+  used). The Greek Jeremiah is "much shorter" with no figure: the Hebrew
+  scroll runs out of the picture, so no ratio can be read off the art.
+
+  The art is generated with Gemini from
+  data/scholarship-illustrations/the-text-of-the-hebrew-bible.yaml; its
+  writing is illegible scribble, so consonants and vowels are on the plates.
+  Reword a plate only when the statement it comes from is re-reviewed.
+  */
+-}}
+{{- define "partials/inline/heb-refs.html" -}}
+  {{- range . }}
+    <a
+      class="heb-comic__ref"
+      href="{{ printf "https://www.biblegateway.com/passage/?version=NRSVUE&search=%s" (urlquery .ref) | safeURL }}"
+      rel="noopener"
+      >{{ replace .label " " "&nbsp;" | safeHTML }}</a
+    >
+  {{- end }}
+{{- end -}}
+{{- define "partials/inline/heb-img.html" -}}
+  {{- with resources.Get (printf "scholarship-art/the-text-of-the-hebrew-bible/%s.png" .id) }}
+    {{- $webp := .Process "resize 1200x webp q78" }}
+    <img
+      src="{{ $webp.RelPermalink }}"
+      width="{{ $webp.Width }}"
+      height="{{ $webp.Height }}"
+      alt="{{ $.alt }}"
+      loading="eager" />
+  {{- end }}
+{{- end -}}
+{{- $jer := slice (dict "ref" "Jeremiah 1:1" "label" "Jer 1:1") -}}
+{{- $panels := slice
+  (dict
+  "id" "scrolls" "box" "Second Temple period"
+  "art" (dict "id" "scrolls" "alt" "Inside a dry desert cave, many rolled and half-open scrolls lie on the rocky floor; most look alike, a few are clearly longer or shorter.")
+  "plates" (slice
+  (dict "pos" "tr" "big" "Several versions" "sub" "of many books, among the Dead Sea Scrolls, though much corresponds closely to the later Masoretic Text")))
+  (dict
+  "id" "alexandria" "box" "In Alexandria"
+  "art" (dict "id" "alexandria" "alt" "Two translators sit at a table in a sunlit room: one reads from a parchment scroll, the other writes on a papyrus roll.")
+  "plates" (slice
+  (dict "pos" "tl" "big" "Into Greek" "sub" "the Septuagint, beginning in the 3rd century BCE")
+  (dict "pos" "tr" "big" "Other Hebrew" "sub" "many differences go back to the Hebrew it was made from, scholars think")))
+  (dict
+  "id" "jeremiah" "box" "Jeremiah"
+  "left" (dict "id" "jeremiah-hebrew" "alt" "A scribe holds up a very long scroll that spills across the floor and out of the picture.")
+  "right" (dict "id" "jeremiah-greek" "alt" "The young translator holds a much shorter scroll, its whole length easily in his hands.")
+  "plates" (slice
+  (dict "pos" "tl" "big" "Hebrew: longer" "sub" "the Masoretic Text" "refs" $jer)
+  (dict "pos" "tr" "big" "Greek: much shorter" "sub" "and some Hebrew fragments among the scrolls differ too" "refs" $jer)))
+  (dict
+  "id" "masoretes" "box" "The Masoretes"
+  "art" (dict "id" "masoretes" "alt" "A medieval scribe bends over a large bound book by lamplight, adding tiny marks to its lines with a fine pen.")
+  "plates" (slice
+  (dict "pos" "tr" "big" "Vowels added" "sub" "around the 6th and 7th centuries CE, to fix how a text of consonants only was read aloud")))
+  (dict
+  "id" "codex" "box" "The oldest complete copy"
+  "art" (dict "id" "codex" "alt" "A large bound book lies closed on a wooden reading stand, thick with pages.")
+  "plates" (slice
+  (dict "pos" "tr" "big" "1009 CE" "sub" "the Leningrad Codex, the oldest complete manuscript of the Masoretic Text")))
+  (dict
+  "id" "scholar" "box" "Closer to the original?"
+  "art" (dict "id" "scholar" "alt" "A present-day scholar compares a torn scroll fragment with an open bound book through a magnifying glass.")
+  "plates" (slice
+  (dict "pos" "tl" "big" "Not always the Masoretic" "sub" "in some places a scroll or the Septuagint may preserve an earlier reading" "refs" (slice (dict "ref" "Deuteronomy 32:8" "label" "Deut 32:8")))))
+  (dict
+  "id" "today" "box" "Which text today?" "wide" true
+  "left" (dict "id" "today-mt" "alt" "A woman reads a printed Bible in an armchair at home.")
+  "right" (dict "id" "today-lxx" "alt" "In an Eastern Orthodox church hung with icons, a priest reads from a large book on a stand.")
+  "plates" (slice
+  (dict "pos" "a" "big" "Masoretic Text" "sub" "mainly: the source for many Catholic and Protestant translations")
+  (dict "pos" "b" "big" "Septuagint" "sub" "still used by Eastern Orthodox churches")))
+-}}
+<section class="cloud-section heb-comic">
+  <h2
+    class="type-section-title cloud-section__title"
+    id="at-a-glance"
+    data-share-hide>
+    At a glance
+  </h2>
+  <div class="heb-comic__page">
+    <header class="heb-comic__head">
+      <p class="heb-comic__kicker">
+        The Hebrew Bible’s text · the Dead Sea Scrolls indicate
+      </p>
+      <p class="heb-comic__title">
+        Before the Masoretic Text, many books circulated in more than one
+        version
+      </p>
+      <p class="heb-comic__legend">
+        <span class="heb-comic__legend-bolt" aria-hidden="true">⚡</span>
+        splits the Masoretic Text, the standard Hebrew text (left), from the
+        Septuagint, the Greek translation (right).
+      </p>
+    </header>
+    <ol class="heb-comic__strip">
+      {{- range $panels }}
+        <li
+          class="heb-comic__frame heb-comic__frame--{{ .id }}{{ if .wide }}
+            heb-comic__frame--wide
+          {{ end }}"
+          {{ if not (in (slice "scrolls" "jeremiah") .id) }}
+            data-card-hide
+          {{ end }}>
+          <figure class="heb-comic__figure">
+            {{- if .left }}
+              <div class="heb-comic__art heb-comic__art--split">
+                <div class="heb-comic__half heb-comic__half--left">
+                  {{ partial "inline/heb-img.html" .left }}
+                </div>
+                <div class="heb-comic__half heb-comic__half--right">
+                  {{ partial "inline/heb-img.html" .right }}
+                </div>
+                {{/* A lightning bolt: the page assigns each half, the Masoretic Text left and the Septuagint right. */}}
+                <svg
+                  class="heb-comic__bolt"
+                  viewBox="0 0 100 100"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                  focusable="false">
+                  <polyline points="57,0 45,40 58,52 43,100" />
+                  <polyline points="57,0 45,40 58,52 43,100" />
+                </svg>
+              </div>
+            {{- else }}
+              <div class="heb-comic__art">
+                {{ partial "inline/heb-img.html" .art }}
+              </div>
+            {{- end }}
+            <h3 class="heb-comic__box">{{ .box }}</h3>
+            {{/* The labels sit on the art as plates, in corners the picture leaves clear. */}}
+            <figcaption>
+              {{- range .plates }}
+                <p class="comic-plate comic-plate--{{ .pos }}">
+                  <span class="comic-plate__big">{{ .big }}</span>
+                  <span class="comic-plate__sub">
+                    {{ .sub }}
+                    {{ with .refs }}
+                      {{- partial "inline/heb-refs.html" . -}}
+                    {{ end }}
+                  </span>
+                </p>
+              {{- end }}
+            </figcaption>
+          </figure>
+        </li>
+      {{- end }}
+    </ol>
+    <p class="heb-comic__credit" data-card-hide>
+      Illustrations generated with AI (Google Gemini). Words, captions, dates
+      and sources are the page’s own.
+    </p>
+  </div>
+  <p class="heb-comic__more scholarship-meta" data-share-hide>
+    Every line here comes from the cited answers below:
+    <a href="#forms">more than one form</a>,
+    <a href="#oldest">the oldest manuscripts</a>,
+    <a href="#lxx">the Septuagint</a>
+    (<a href="#lxx-hebrew">why it differs</a>,
+    <a href="#jeremiah">Jeremiah</a>),
+    <a href="#masoretes">the Masoretes’ vowels</a>,
+    <a href="#original">closer to the original</a> and
+    <a href="#translations">translations today</a>.
+  </p>
+</section>

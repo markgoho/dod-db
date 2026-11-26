@@ -1,0 +1,169 @@
+# Illustrations for /scholarship/the-text-of-the-hebrew-bible/ (generated
+# with Gemini; see src/scripts/generate-scholarship-illustrations.ts). Each
+# picture shows only what the listed statements support; every caption, date,
+# link and claim stays in hugo/layouts/partials/scholarship-custom/<slug>.html.
+#
+# Seven comic panels in time order, from the scrolls of the last centuries BCE
+# to the translations used today. The eras differ, so no person recurs: the
+# recurring thing is the scroll, chained from `scrolls` (the anchor), and the
+# codex, chained from `masoretes`. Split panels keep the Masoretic side on the
+# left (Jeremiah, today). Writing is always illegible scribble (script rule),
+# so consonants against vowels is carried by the plates, never the art.
+# No three streams of text-types (the page says that theory was abandoned) and
+# no single line narrowing to one (the Septuagint is still used today).
+slug: the-text-of-the-hebrew-bible
+images:
+  - id: scrolls
+    statements: [forms, oldest]
+    aspect: "4:3"
+    alt: "Inside a dry desert cave, many rolled and half-open scrolls lie on the rocky floor; most look alike, a few are clearly longer or shorter."
+    prompt: >-
+      Inside a dry, shadowy desert cave in pale limestone, seen from just
+      inside the entrance; a patch of bright sky shows through the cave
+      mouth at the upper LEFT. Across the rocky floor of the cave lies a
+      loose, uneven spread of many old parchment scrolls, some rolled, some
+      half unrolled, overlapping and running out of the picture at the
+      bottom and right edges, so they cannot be counted. Most of the scrolls
+      are about the same size, but a few are clearly much longer and a few
+      clearly much shorter. Some are torn and fragmentary, with ragged
+      edges. The writing on the unrolled ones is tiny illegible scribble.
+      The upper RIGHT of the picture is plain dark cave wall. Negative
+      list: no jars, no pots, no people, no animals, no lamps, no text.
+
+  - id: alexandria
+    statements: [lxx, lxx-hebrew]
+    aspect: "4:3"
+    refs: [scrolls]
+    alt: "Two translators sit at a table in a sunlit Hellenistic room: one reads aloud from a parchment scroll, the other writes on a papyrus roll."
+    prompt: >-
+      A bright, airy room in a Hellenistic house in ancient Egypt, with a
+      plain whitewashed wall and one tall open window at the upper RIGHT
+      showing a palm tree and blue-grey sky. At a long low wooden table in
+      the LOWER HALF of the picture sit two men in light Greek-style tunics
+      and cloaks: on the LEFT an older bearded man reads from an open
+      parchment scroll of the SAME kind as in the reference image (same
+      colour and rolled ends), one finger on the line; on the RIGHT a
+      younger clean-shaven man with short curly hair writes carefully with
+      a reed pen on a fresh, paler papyrus roll. The writing on both is
+      tiny illegible scribble. The upper LEFT of the picture is plain wall.
+      Negative list: no other people, no lighthouse, no statues, no
+      animals, no text.
+
+  - id: jeremiah-hebrew
+    statements: [jeremiah]
+    aspect: "4:5"
+    refs: [scrolls]
+    alt: "A scribe holds up a very long parchment scroll that spills across the floor and out of the picture."
+    prompt: >-
+      A middle-aged Judean scribe with a dark beard, in a plain rust red
+      robe and headcloth, sits on a low stool a little LEFT of centre (his
+      whole body between about one third and three fifths of the way
+      across; the right third of the picture is empty wall and floor), low
+      in the picture with his head BELOW the halfway line, holding up one
+      end of
+      a VERY LONG parchment scroll of the SAME kind as in the reference
+      image. The unrolled scroll spills from his hands in long loops across
+      the floor in front of him and runs on out of the picture at the
+      bottom edge and the bottom-left corner, so its full length cannot be
+      seen; it is ONE single continuous scroll, with no separate pieces.
+      Its writing is tiny illegible scribble in columns. Plain
+      paper-coloured wall behind him, no cave. The whole UPPER HALF of the
+      picture is plain empty wall. Negative list: no
+      other scrolls, no other people, no furniture except the stool, no
+      text.
+  - id: jeremiah-greek
+    statements: [jeremiah, lxx]
+    aspect: "4:5"
+    refs: [alexandria, jeremiah-hebrew]
+    alt: "The young Greek translator holds up a much shorter papyrus scroll, its whole length easily in his two hands."
+    prompt: >-
+      The SAME younger clean-shaven man with short curly hair and light
+      Greek-style tunic as the writer on the right of the FIRST reference
+      image, now sitting on a low stool in the RIGHT half of the picture,
+      in the LOWER TWO-THIRDS of the picture, the scene
+      composed as a mirror of the SECOND reference image. He holds up,
+      open between his two hands at chest
+      height, ONE papyrus scroll that is clearly MUCH SHORTER than the
+      scroll in the second reference image: its whole length fits easily
+      between his hands and nothing trails on the floor. Its writing is
+      tiny illegible scribble in columns. Plain paper-coloured wall behind
+      him. The TOP THIRD of the picture is plain empty wall across its
+      full width (his head stays below it), and the LEFT edge and lower
+      LEFT are plain empty wall and floor. Negative
+      list: no other scrolls, no other people, no furniture, no text.
+
+  - id: masoretes
+    statements: [masoretes, mt]
+    aspect: "4:3"
+    refs: [scrolls]
+    alt: "A medieval scribe bends over a large bound book by lamplight, adding tiny marks above and below its lines with a fine pen."
+    prompt: >-
+      A medieval Jewish scribe, an older man with a grey beard in a plain
+      dark brown robe and a simple cloth cap, sits at a sloping wooden desk
+      on the LEFT half of the picture, bending close over a LARGE open bound
+      book (a codex of thick parchment pages with a dark leather binding).
+      With a very fine pen he adds tiny dots and small dashes above and
+      below the lines of writing. The lines themselves are tiny illegible
+      scribble; the marks he adds are only dots and dashes. A small clay oil
+      lamp burns on the desk. The RIGHT third and the bottom edge of the
+      picture are plain plastered wall and floor. Negative list: no other
+      books, no scrolls, no other people, no candles, no letters, no text.
+
+  - id: codex
+    statements: [oldest]
+    aspect: "4:3"
+    refs: [masoretes]
+    alt: "The same large bound book lies closed and complete on a reading stand, thick with pages."
+    prompt: >-
+      The SAME large codex as in the reference image (thick parchment
+      pages, dark leather binding), now shown complete and closed, lying
+      on a simple wooden reading stand in the CENTRE of the picture, seen
+      at a slight angle so its great thickness of pages shows along the
+      edge. Soft light falls on it from the upper left. Plain light grey
+      wall behind; the upper RIGHT and lower LEFT of the picture are plain
+      empty space. Negative list: no other books, no scrolls, no people,
+      no lamp, no labels, no lettering on the cover, no text.
+
+  - id: scholar
+    statements: [original]
+    aspect: "4:3"
+    refs: [scrolls, codex]
+    alt: "A present-day scholar at a desk compares a torn scroll fragment with the open bound book, a magnifying glass in hand."
+    prompt: >-
+      A present-day scholar, a woman in her forties with short dark hair,
+      glasses and a grey cardigan, sits at a modern desk in the RIGHT half
+      of the picture, leaning forward with a magnifying glass. In front of
+      her lie two things side by side: on the LEFT, a small torn parchment
+      fragment with ragged edges, like the torn scrolls in the FIRST
+      reference image; on the RIGHT, the SAME large codex as in the SECOND
+      reference image, open. She looks from one to the other, thoughtful.
+      Writing on both is tiny illegible scribble. The LEFT third of the
+      picture above the desk is plain light grey wall. Negative list: no
+      computer, no other books, no other people, no text.
+
+  - id: today-mt
+    statements: [translations]
+    aspect: "16:9"
+    alt: "In a present-day living room, a woman reads a printed Bible in an armchair."
+    prompt: >-
+      A present-day living room. On the LEFT half of the picture a woman
+      in her thirties with long hair, in a sweater and jeans, sits in an
+      armchair reading a thick printed book (a Bible with a plain dark
+      cover and no lettering), absorbed. A floor lamp beside her. The RIGHT
+      half of the picture is a plain wall and an empty floor. Negative
+      list: no cross, no other people, no screens, no lettering on the
+      book, no text.
+  - id: today-lxx
+    statements: [translations, lxx]
+    aspect: "16:9"
+    refs: [today-mt]
+    alt: "In an Eastern Orthodox church hung with icons, a bearded priest in vestments reads from a large book on a stand."
+    prompt: >-
+      The inside of an Eastern Orthodox church, drawn in the SAME style as
+      the reference image. On the RIGHT half of the picture a bearded
+      Orthodox priest in gold and rust vestments stands at a wooden stand,
+      reading from a large open book. Behind him a wall of painted icons
+      (generic saints with plain round haloes, faces simplified) and a few
+      hanging oil lamps. The LEFT half of the picture is plain stone floor
+      and plain wall. Negative list: no congregation, no other people, no
+      lettering on the icons, no text.
