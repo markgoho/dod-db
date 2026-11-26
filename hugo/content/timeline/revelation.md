@@ -19,7 +19,7 @@ critical:
   display: "Toward the end of the 1st century CE"
   from: 90
   precision: period
-  note: "Some scholars date it to the 60s, when Nero was emperor; Ehrman's summary says most scholars agree parts were written then and other parts perhaps later, under Domitian (ca. 95 CE). The author is a John who is not John the son of Zebedee and not the author of the Gospel of John."
+  note: "Martin says some date it to the 60s, when Nero was emperor, and more toward the end of the century. Ehrman's summary says parts were written in the 60s, at the time of Nero's persecutions, and other parts may be later, perhaps under Domitian (ca. 95 CE). The author is a John who is not John the son of Zebedee and not the author of the Gospel of John."
   cites:
     - source: desilva-bo-sign-of-the-beast
       locator: "opening paragraph, second sentence"
