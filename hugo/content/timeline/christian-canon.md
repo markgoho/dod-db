@@ -1,9 +1,9 @@
 ---
 title: "Earliest surviving list of the 27 New Testament books"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-26
 related: { books: [revelation], tags: [athanasius-of-alexandria], topics: [] }
 watch:
   [
@@ -20,7 +20,7 @@ critical:
   display: "367 CE"
   from: 367
   precision: year
-  note: "The list is in an Easter letter by Athanasius, bishop of Alexandria. Martin notes the letter was binding only on the churches of his Alexandrian diocese and did not set the canon, and says bishops' and councils' decrees never completely settled the question for all Christians."
+  note: "The list is in an Easter letter by Athanasius, bishop of Alexandria. Martin notes the letter was binding only on the churches of his Alexandrian diocese and did not set the canon; he says bishops' and councils' decrees never completely settled the question for all Christians."
   cites:
     - source: martin-rlst152-l2
       locator: "ch. 2 “The Forming of Canons” [00:16:17]"
@@ -45,7 +45,7 @@ critical:
 tradition:
   display: "Late 1st century CE, finalized by the Apostle John"
   from: 90
-  holder: "the Continuing Church of God"
+  holder: "The Continuing Church of God"
   cites:
     - source: ccog-statement-of-beliefs
       locator: "section “The Holy Bible”, first sentence"

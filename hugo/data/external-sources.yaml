@@ -2980,7 +2980,7 @@ ccog-statement-of-beliefs:
   access: "Church website, open"
   url: "https://www.ccog.org/statement-of-beliefs/"
   hostAuthored: false
-  tradition: "the Continuing Church of God"
+  tradition: "Continuing Church of God"
 
 cogwriter-thiel-nt-canon:
   author: "Bob Thiel"
@@ -2994,7 +2994,7 @@ cogwriter-thiel-nt-canon:
   access: "Website linked as “The New Testament Canon” from the Continuing Church of God's Statement of Beliefs, open"
   url: "https://www.cogwriter.com/canon.htm"
   hostAuthored: false
-  tradition: "the Continuing Church of God"
+  tradition: "Continuing Church of God"
 
 nabre-kings-intro:
   author: null
