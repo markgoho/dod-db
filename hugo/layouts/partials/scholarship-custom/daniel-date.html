@@ -86,7 +86,7 @@
     <ol class="dan-comic__strip">
       {{- range $panels }}
         <li
-          class="dan-comic__frame{{ if .wide }}dan-comic__frame--wide{{ end }}"
+          class="dan-comic__frame {{ if .wide }}dan-comic__frame--wide{{ end }}"
           {{ if not .wide }}data-card-hide{{ end }}>
           <figure class="dan-comic__figure">
             <div class="dan-comic__art">
