@@ -24,7 +24,7 @@ critical:
   from: -912
   to: -323
   precision: period
-  note: "The dates are for the whole process of composition and editing, with the final collection at its end. Ska says many scholars agree that the Pentateuch as such was composed late, in the Persian period, though some of its elements are pre-exilic. Hayes puts its final form, probably, in the exilic to post-exilic periods. The Encyclopaedia Judaica entry dates the process from the 11th to the 5th century BCE, with Genesis through Numbers added to Deuteronomy by the mid-5th century BCE."
+  note: "The dates are for the whole process of composition and editing, with the final collection at its end. Ska says many scholars agree that the Pentateuch as such was composed late, in the Persian period, though some of its elements are pre-exilic. Hayes puts its final form, probably, in the exilic to post-exilic periods. The Encyclopaedia Judaica entry has the addition of Genesis through Numbers accomplished by the mid-5th century BCE."
   cites:
     - source: nihan-rhyder-bo-torah
       locator: "opening paragraph"
@@ -43,10 +43,6 @@ critical:
       quote: "So it certainly reached its final form in that period [correction: exilic to post-exilic periods; scholars vary on the details], as did Deuteronomy, and the Pentateuch probably generally."
       read: 2026-11-26
     - source: friedman-overton-ej-pentateuch
-      locator: "section “r”, subsection “Linguistic Evidence”"
-      quote: "This process, from the composition of the earliest works to the final redactions, took approximately six centuries (from the 11th to the 5th century b.c.e.)."
-      read: 2026-11-26
-    - source: friedman-overton-ej-pentateuch
       locator: "section “canonization”"
       quote: 'The addition of the redacted works of Genesis through Numbers was accomplished by the mid-5th century b.c.e., when the Pentateuch was recognized by the postexilic community as the "Book of the Torah of Moses" (Neh. 8:1–2).'
       read: 2026-11-26
@@ -56,10 +52,6 @@ setting:
     - source: nihan-rhyder-bo-torah
       locator: "opening paragraph"
       quote: "Combining laws and narratives, the first five books of the Hebrew Bible (Genesis, Exodus, Leviticus, Numbers, and Deuteronomy) contain a legendary account of the origins of Israel that stretches from the creation of the world to the death of Moses."
-      read: 2026-11-26
-    - source: hayes-rlst145-l5
-      locator: "ch. 1 [00:00:00]"
-      quote: "So the narrative parts of P, J and E are continuous parallel accounts of the history of the world, if you will, from creation until the death of Moses."
       read: 2026-11-26
 tradition:
   display: "c. 1446–1406 BCE, written by Moses"

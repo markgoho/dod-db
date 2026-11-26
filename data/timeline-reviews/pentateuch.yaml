@@ -7,117 +7,114 @@
 # agent: the first pass (2026-11-26). Three research agents (critical; tradition; setting) fetched every source into separate scratch folders; every quote copied from saved text. Every quote script-matched against the saved text (whitespace, quotes, dashes, entities, tags normalised): 10/10, zero misses. Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 3/3.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) Display “Neo-Assyrian to Persian period” dates the whole process; is that the right reading of the issue's stage note, or should the display date the final collection (Persian period) with the process in the note? (2) from: -912 is Nihan and Rhyder's “ca. 912”, to: -323 their “ca. 538–323” end; precision: period. (3) Ska's page is a short video; the cited text is the page text below the video (it reads as a transcript of the talk; not checked against the audio). Registry kind `lecture` (the enum has no video kind). (4) Hayes l12's sentence: “it” is the Priestly material; the Pentateuch clause is “and the Pentateuch probably generally”, with the bracketed correction “exilic to post-exilic periods; scholars vary on the details” the transcript's own. The note says “probably”. (5) EJ sigla and “b.c.e.” are lowercase in the saved text (small caps lost in conversion); quotes keep the saved text. (6) Tradition display “c. 1446–1406 BCE, written by Moses”: Turpin's sentence is “The likeliest possible date for the writing of the Torah would be when Moses was at Sinai or in the plains of Moab”; the subtitle carries “traditional Mosaic authorship”. Got Questions gives “approximately 1400 BC” (uncited; one holder per entry). (7) E175 00:15:14 is about a dating of Moses and a writing date on that dating (“if Moses was writing around that time period”); states: tradition. E175 00:13:51 is also a `hebrew-language` Trigger Claim (different substring). (8) E117's quote drops the turn's continuation “but these days, yeah, so like we have the priestly literature which is probably post-exilic.”
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): every cited source re-fetched by curl into a fresh scratch folder (Bible Odyssey Torah article and Ska video page, Open Yale lectures 5 and 12, Encyclopedia.com EJ “Pentateuch”, AiG Turpin article and AiG About page), page text saved per source. All 10 first-pass quotes re-matched by script, case-sensitive (whitespace, quotes, dashes, entities and tags normalised): 10 hits, 0 misses, each at its locator (Nihan opening paragraph sentences 1 and 2; Ska text below video ¶ 1, ¶ 2; Hayes l12 ch. 2 and l5 ch. 1 by chapter heading; EJ h5 “Linguistic Evidence” under h4 “r”, and h2 “canonization”; AiG subtitle and the footnote-6 paragraph). Trigger Claims re-matched by script at timestamp and speaker, verbatim substrings: 3/3; Transcripts read E175 00:11:08–00:17:06 and E117 00:36:05–00:40:30.
+# Second pass changed: (a) critical/5 (EJ “approximately six centuries (from the 11th to the 5th century b.c.e.)”) moved to `uncited`: it dates the same stage as Nihan and Rhyder (whole process) with a different start, so display and `from` would have to carry both (#99), but the sentence is the documentary hypothesis's own picture (EJ's next sentence: “This picture of the formation of the Torah from source documents is known as the documentary hypothesis”), with J and E at the earliest stage, in an entry that states Friedman's model as settled; Hayes l5's classical dates are uncited on the same ground. Old critical/6 renumbered critical/5. (b) The note's EJ sentence narrowed to the quote: “has the addition of Genesis through Numbers accomplished by the mid-5th century BCE” (the quote has no “to Deuteronomy”; that is two sentences later). (c) setting/2 (Hayes l5) moved to `uncited`: the sentence is about the narrative sources P, J and E as the source critics reconstruct them, not the Pentateuch; setting/1 carries the display alone. `hayes-rlst145-l5` dropped from `sources` (registry entry kept; other entries cite it).
+# Second pass flags (resolved): (1) display “Neo-Assyrian to Persian period” for the whole process kept: the issue note (“date what the sources date … and say which in the note”) and CONTEXT (“worded for what its sources date”); Nihan and Rhyder date the whole process in one sentence and the note names the stage. With EJ's process sentence uncited, no remaining source dates the same stage differently; Ska, Hayes and EJ canonization date the final stage, each attributed in the note, all inside the span. (2) from -912 / to -323 are Nihan and Rhyder's period bounds (“ca. 912–612”, “ca. 538–323”); precision: period; kept. (4) Hayes's “in that period” follows “the period of the exile is the sixth century”; the bracket is the transcript's own; “probably” kept in the note. (5) moot for the quotes kept (EJ quote's lowercase “b.c.e.” as in the saved text). (6) Tradition display “c. 1446–1406 BCE, written by Moses” kept: Turpin's sentence gives the writing range with Moses as writer; the subtitle has “traditional Mosaic authorship”. (7) 175@00:15:14 kept as states: tradition: it reports what a named crowd holds, with the writing date conditional on it, as `exodus`'s tradition trigger (“if you date the Exodus to the 1400s BCE, which is what a lot of folks do”). (8) E117's dropped continuation (“but these days … priestly literature which is probably post-exilic”) is a shift of topic to P; the hedge “is kind of a traditional dating” is kept; fine. Overlaps re-checked: `priestly-genesis-1` (exilic or post-exilic) and `deuteronomy` (-800 to -500) sit inside -912 to -323; E117's P late 6th/early 5th and D end of 7th agree with them.
+# Second pass flags (open, non-blocking): (3) Ska's text below the video not checked against the audio. Nihan and Rhyder's registry `year` is null though the page is dated August 26, 2020 (`datePublished` 2020-08-26); other Bible Odyssey articles also have null; left as is. Holder confirmed: AiG About page (re-fetched) reads “Answers in Genesis is an apologetics (i.e., Christianity-defending) ministry”; `aig-wright-2012-flood` has the same holder string.
 review:
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   critical/1:
     {
       agent: pass,
       owner: "",
-      note: "Nihan and Rhyder, Bible Odyssey “The Torah/The Pentateuch” (August 26, 2020 on the page), opening paragraph, second sentence. The display's source: the whole compositional and editorial process, one sentence. The sentence opens “While late antique Jewish and Christian authors believed that Moses authored this collection,”.",
+      note: "Nihan and Rhyder, Bible Odyssey “The Torah/The Pentateuch” (August 26, 2020 on the page), opening paragraph, second sentence. The display's source: the whole compositional and editorial process, one sentence. The sentence opens “While late antique Jewish and Christian authors believed that Moses authored this collection,”. Second pass: re-fetched; matched verbatim, opening paragraph, second sentence (the page's “Did You Know?” box restates it without the years). Verified.",
     }
   critical/2:
     {
       agent: pass,
       owner: "",
-      note: "Ska, Bible Odyssey “Formation of the Pentateuch”, text below the video, ¶ 1. “many scholars agree” is Ska's, about the Pentateuch “as such”. The paragraph opens “The composition of the Pentateuch is a kind of battlefield, I would say today.” and goes on “but the building, as such, was composed late.” “There are; however,” is the page's punctuation.",
+      note: "Ska, Bible Odyssey “Formation of the Pentateuch”, text below the video, ¶ 1. “many scholars agree” is Ska's, about the Pentateuch “as such”. The paragraph opens “The composition of the Pentateuch is a kind of battlefield, I would say today.” and goes on “but the building, as such, was composed late.” “There are; however,” is the page's punctuation. Second pass: re-fetched; matched verbatim in ¶ 1 of the text below the video. Verified.",
     }
   critical/3:
     {
       agent: pass,
       owner: "",
-      note: "Same page, ¶ 2. Backs “though some of its elements are pre-exilic”.",
+      note: "Same page, ¶ 2. Backs “though some of its elements are pre-exilic”. Second pass: matched verbatim in ¶ 2. Verified.",
     }
   critical/4:
     {
       agent: pass,
       owner: "",
-      note: "Hayes l12 ch. 2 “Source Theory and the Pentateuch” [00:06:05]. See flag 4. The sentence before: “certainly I would say all scholars agree that the Priestly materials reach their final form in the exile or post-exilic period.”",
+      note: "Hayes l12 ch. 2 “Source Theory and the Pentateuch” [00:06:05]. See flag 4. The sentence before: “certainly I would say all scholars agree that the Priestly materials reach their final form in the exile or post-exilic period.” Second pass: matched verbatim in ch. 2 [00:06:05], before ch. 3 [00:13:26]. “that period” follows “the period of the exile is the sixth century”; the bracketed correction widens it. Note keeps “probably”. Verified.",
     }
   critical/5:
     {
       agent: pass,
       owner: "",
-      note: "EJ “Pentateuch”, Friedman and Overton credit line (sections introduction through canonization; the traditional-view section is Rabinowitz's). Subsection “Linguistic Evidence” after section “r”. The sentence before: “Thus the Torah was composed by a number of different authors.”",
-    }
-  critical/6:
-    {
-      agent: pass,
-      owner: "",
-      note: "EJ “Pentateuch”, section “canonization”. Backs “Genesis through Numbers added to Deuteronomy by the mid-5th century BCE”. Straight double quotes as in the saved text.",
+      note: "EJ “Pentateuch”, section “canonization”. Backs “Genesis through Numbers added to Deuteronomy by the mid-5th century BCE”. Straight double quotes as in the saved text. Second pass: renumbered from critical/6 after the cut of the EJ process sentence. Matched verbatim under h2 “canonization”. The quote has no “to Deuteronomy” (that is the section's “after Genesis through Numbers was added to Deuteronomy”, two sentences later), so the note now says only “has the addition of Genesis through Numbers accomplished by the mid-5th century BCE”. Verified.",
     }
   setting/1:
     {
       agent: pass,
       owner: "",
-      note: "Nihan and Rhyder, opening paragraph, first sentence. About the five books themselves; calls the account “legendary”. No year, so the setting has no from/to.",
-    }
-  setting/2:
-    {
-      agent: pass,
-      owner: "",
-      note: "Hayes l5 ch. 1 “Wellhausen's Documentary Hypothesis and Characteristics of Biblical Sources” [00:00:00]. About the narrative sources P, J and E, not the book as such; second support for the span.",
+      note: "Nihan and Rhyder, opening paragraph, first sentence. About the five books themselves; calls the account “legendary”. No year, so the setting has no from/to. Second pass: matched verbatim, opening paragraph, first sentence. Now the setting's only cite. Verified.",
     }
   tradition/1:
     {
       agent: pass,
       owner: "",
-      note: "Turpin, AiG, September 10, 2021, subtitle under the title. Backs “written by Moses”.",
+      note: "Turpin, AiG, September 10, 2021, subtitle under the title. Backs “written by Moses”. Second pass: matched verbatim, the line under the title. Verified.",
     }
   tradition/2:
     {
       agent: pass,
       owner: "",
-      note: "Same article, section “Traditional Attribution of the Torah to Moses”, the paragraph beginning “Rather than a redactor piecing together” (the page text repeats that paragraph once; the cited one carries footnote marker 6). Quote ends before “This would give Moses at least thirty-nine years to write the Torah.” Footnote 2 derives the range from an exodus in 1446 BC. See flag 6.",
+      note: "Same article, section “Traditional Attribution of the Torah to Moses”, the paragraph beginning “Rather than a redactor piecing together” (the page text repeats that paragraph once; the cited one carries footnote marker 6). Quote ends before “This would give Moses at least thirty-nine years to write the Torah.” Footnote 2 derives the range from an exodus in 1446 BC. See flag 6. Second pass: matched verbatim in the footnote-6 paragraph (the curl text has the paragraph's first sentence once more as a separate pull-quote line, without the 1446–1406 sentence). Display kept. Verified.",
     }
 triggers:
   175@00:13:51:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:13:51.820 turn (Dan McClellan), after “Hebrew didn't exist until around the 11th century BCE at the very earliest. And that was a very rudimentary form of Hebrew.” (the `hebrew-language` substring). Goes on “And that happens to be when these people groups that are named were around.” Read 00:11:48–00:16:29. No hedge cut; “Something that is like” kept.",
+      note: "states: critical. Substring of the 00:13:51.820 turn (Dan McClellan), after “Hebrew didn't exist until around the 11th century BCE at the very earliest. And that was a very rudimentary form of Hebrew.” (the `hebrew-language` substring). Goes on “And that happens to be when these people groups that are named were around.” Read 00:11:48–00:16:29. No hedge cut; “Something that is like” kept. Second pass: verbatim substring of the 00:13:51.820 Dan McClellan line; read 00:11:08–00:17:06. The next turn (00:14:25.570) adds “all of the data point to a handful of centuries in the middle of the first millennium BCE”. states: critical confirmed. Verified.",
     }
   175@00:15:14:
     {
       agent: pass,
       owner: "",
-      note: "states: tradition. Substring of the 00:15:14.180 turn (Dan McClellan), answering why Wes Huff says 1600 years. Starts after “But 1400 BCE to 100 CE, 1500 years.”; the turn ends “So you say in the neighborhood of 1600.” See flag 7.",
+      note: "states: tradition. Substring of the 00:15:14.180 turn (Dan McClellan), answering why Wes Huff says 1600 years. Starts after “But 1400 BCE to 100 CE, 1500 years.”; the turn ends “So you say in the neighborhood of 1600.” See flag 7. Second pass: verbatim substring of the 00:15:14.180 Dan McClellan line. Dan reports what “the crowd” holds; the writing date is conditional on their dating, as in `exodus`'s tradition trigger; states: tradition kept. Verified.",
     }
   117@00:38:08:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:38:08.220 turn (Dan McClellan), after “It's supporting evidence, but”. Hedges kept: “probably” (twice), “is kind of a traditional dating”. Dropped continuation: see flag 8. Read 00:36:57–00:39:17 (Elephantine context).",
+      note: "states: critical. Substring of the 00:38:08.220 turn (Dan McClellan), after “It's supporting evidence, but”. Hedges kept: “probably” (twice), “is kind of a traditional dating”. Dropped continuation: see flag 8. Read 00:36:57–00:39:17 (Elephantine context). Second pass: verbatim substring of the 00:38:08.220 Dan McClellan line; read 00:36:05–00:40:30. The next turn (00:39:17) is about dissemination (5th to mid-2nd century), not composition. states: critical confirmed. Verified.",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Display and title for what Nihan and Rhyder date: the Pentateuch's composition and editing as a whole. The note names the stage (whole process; final collection at the end) as the issue asks. See flag 1.",
+      note: "Display and title for what Nihan and Rhyder date: the Pentateuch's composition and editing as a whole. The note names the stage (whole process; final collection at the end) as the issue asks. See flag 1. Second pass: kept (issue note; CONTEXT “worded for what its sources date”).",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "Start: Nihan and Rhyder (Neo-Assyrian, ca. 912–612) vs EJ (11th century); end of the final form: Ska (Persian) vs Hayes (exilic to post-exilic, probably) vs EJ (mid-5th century for Genesis–Numbers). Each attributed in the note; none picked. No “contested” label: Ska's own “battlefield” is not quoted on the entry.",
+      note: "Start: Nihan and Rhyder (Neo-Assyrian, ca. 912–612) vs EJ (11th century); end of the final form: Ska (Persian) vs Hayes (exilic to post-exilic, probably) vs EJ (mid-5th century for Genesis–Numbers). Each attributed in the note; none picked. No “contested” label: Ska's own “battlefield” is not quoted on the entry. Second pass: the EJ 11th-century start was a same-stage difference the display did not carry (#99); that sentence is now uncited (see header). Remaining split is the final stage only: Ska (Persian) vs Hayes (exilic to post-exilic, probably) vs EJ (Genesis–Numbers added by the mid-5th century), each attributed in the note, all within the span; none picked.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "Trigger 175@00:15:14 has states: tradition.",
+      note: "Trigger 175@00:15:14 has states: tradition. Second pass: confirmed (flag 7).",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "Holder “Answers in Genesis, an apologetics ministry” equals the registry `tradition:`; AiG's About page: “Answers in Genesis is an apologetics (i.e., Christianity-defending) ministry”.",
+      note: "Holder “Answers in Genesis, an apologetics ministry” equals the registry `tradition:`; AiG's About page: “Answers in Genesis is an apologetics (i.e., Christianity-defending) ministry”. Second pass: About page re-fetched, sentence found; same string as `aig-wright-2012-flood`. Verified.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "No conditional date. Hayes's “probably” and EJ's “approximately” are hedges, not conditions.",
+      note: "No conditional date. Hayes's “probably” and EJ's “approximately” are hedges, not conditions. Second pass: confirmed; the EJ “approximately” sentence is now uncited. The tradition trigger's “if Moses was writing” conditions the show's tradition claim, not a Critical Date.",
     }
 sources:
   nihan-rhyder-bo-torah:
@@ -125,42 +122,35 @@ sources:
       agent: pass,
       owner: "",
       edition: "Bible Odyssey article, dated August 26, 2020 on the page",
-      note: "Reference (Bible Odyssey, SBL; as `breed-bo-earliest-versions`). Authors: Nihan (Lausanne), Rhyder (Harvard), per the page's bios.",
+      note: "Reference (Bible Odyssey, SBL; as `breed-bo-earliest-versions`). Authors: Nihan (Lausanne), Rhyder (Harvard), per the page's bios. Second pass: page `datePublished` 2020-08-26; registry `year` null (as other Bible Odyssey articles); left.",
     }
   ska-bo-formation-pentateuch:
     {
       agent: pass,
       owner: "",
       edition: "Bible Odyssey video page, undated",
-      note: "Reference (Bible Odyssey, SBL). Ska, S.J., Pontifical Biblical Institute, per the page's bio. See flag 3.",
+      note: "Reference (Bible Odyssey, SBL). Ska, S.J., Pontifical Biblical Institute, per the page's bio. See flag 3. Second pass: bio re-read; registry fields match.",
     }
   hayes-rlst145-l12:
     {
       agent: pass,
       owner: "",
       edition: "Open Yale RLST 145, recorded Fall 2006",
-      note: "Reference (#86). Existing registry entry. Lecture 12.",
+      note: "Reference (#86). Existing registry entry. Lecture 12. Second pass: registry matches.",
     }
   friedman-overton-ej-pentateuch:
     {
       agent: pass,
       owner: "",
       edition: "Encyclopaedia Judaica, 2nd ed., entry credit line Richard Elliott Friedman / Shawna Dolansky Overton",
-      note: "Reference, as `greenberg-sperling-ej-exodus`. The entry states Friedman's own source model (pre-exilic P) as settled; cited only for the two process sentences.",
-    }
-  hayes-rlst145-l5:
-    {
-      agent: pass,
-      owner: "",
-      edition: "Open Yale RLST 145, recorded Fall 2006",
-      note: "Reference (#86). Existing registry entry.",
+      note: "Reference, as `greenberg-sperling-ej-exodus`. The entry states Friedman's own source model (pre-exilic P) as settled; cited only for the two process sentences. Second pass: now cited only for the canonization sentence (critical/5); the process sentence is uncited. Credit line “[Richard Elliott Friedman and Shawna Dolansky Overton (2nd ed.)]” closes the canonization section, confirmed.",
     }
   aig-turpin-2021-mosaic-authorship:
     {
       agent: pass,
       owner: "",
       edition: "Web article, September 10, 2021 (“Featured in 2021 Volume 16”)",
-      note: "Tradition. Answers in Genesis self-description from its About page; same holder string as `aig-wright-2012-flood`.",
+      note: "Tradition. Answers in Genesis self-description from its About page; same holder string as `aig-wright-2012-flood`. Second pass: confirmed.",
     }
 leads:
   - "Konrad Schmid, “Who Wrote the Torah?”, IAS Ideas (2018), ias.edu/ideas/2018/schmid-torah: refused scripts (challenge/403). A search snippet puts the Pentateuch as basically finished no later than the second century B.C.E. Not read."
@@ -171,6 +161,8 @@ leads:
   - "Achenbach, “The Late Persian Formation of the Torah: Observations on Deuteronomy 34” (De Gruyter, paywalled). Not read."
   - "bible.org “Introduction to the Pentateuch” (Tradition?): a snippet suggests Sinai, 1446–1445 B.C. for Genesis–Leviticus. Not read."
 uncited:
+  - "EJ “Pentateuch”, section “r”, subsection “Linguistic Evidence”: “This process, from the composition of the earliest works to the final redactions, took approximately six centuries (from the 11th to the 5th century b.c.e.).” Cited by the first pass (critical/5); cut by the second pass: the same stage as Nihan and Rhyder with a different start, which the display would have to carry (#99), and the sentence is the documentary hypothesis's own picture (next sentence: “This picture of the formation of the Torah from source documents is known as the documentary hypothesis”), as Hayes l5's classical dates below."
+  - "Hayes l5 ch. 1 [00:00:00]: “So the narrative parts of P, J and E are continuous parallel accounts of the history of the world, if you will, from creation until the death of Moses.” Cited by the first pass (setting/2); cut by the second pass: about the narrative sources as source critics reconstruct them, not the Pentateuch; setting/1 carries the setting."
   - "Hayes l5 ch. 1 [00:00:00]: the classical source critics' dates (J tenth century, E ninth, JE late eighth, D late seventh, Wellhausen's exilic P; “the Torah is really the result of five centuries of religious and literary activity”). Read; not cited: Hayes reports the classic hypothesis, then calls it “only a hypothesis” (ch. 2)."
   - "Hayes l5 ch. 2 [00:16:05]: “Others argue that everything is post-exilic, everything's after the fifth century. It was written in the fourth, third century in the Persian period.” Read; not cited: an attributed minority view, the only source mention of a fourth century."
   - "Hayes l22 ch. 3 [00:14:38]: “Most scholars maintain that the traditions of the priestly source, the traditions of the Deuteronomistic source had pretty well reached their final form in those years.” (586–538). Read; not cited: P and D only, not the Pentateuch."
