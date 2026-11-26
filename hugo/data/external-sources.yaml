@@ -3163,3 +3163,59 @@ aig-turpin-2021-mosaic-authorship:
   url: "https://answersingenesis.org/bible-characters/moses/evidence-mosaic-authorship-of-torah/"
   hostAuthored: false
   tradition: "Answers in Genesis, an apologetics ministry"
+
+coogan-brief-4e-summary-ch18:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 18 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-18-summary"
+  hostAuthored: false
+  tradition: null
+
+ussishkin-2015-sennacherib-lachish:
+  author: "David Ussishkin"
+  title: "Sennacherib's Campaign in Judah: The Conquest of Lachish"
+  series: "Journal for Semitics 24(2): 719–758"
+  publisher: "Unisa Press"
+  year: 2015
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article"
+  url: "https://unisapressjournals.co.za/index.php/JSEM/article/view/3477"
+  hostAuthored: false
+  tradition: null
+
+ej-sennacherib:
+  author: null
+  title: "Sennacherib"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/sennacheribdeg"
+  hostAuthored: false
+  tradition: null
+
+rollston-bo-siloam:
+  author: "Christopher Rollston"
+  title: "The Siloam Inscription and Hezekiah's Tunnel"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: 2017
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-siloam-inscription-and-hezekiahs-tunnel/"
+  hostAuthored: false
+  tradition: null
