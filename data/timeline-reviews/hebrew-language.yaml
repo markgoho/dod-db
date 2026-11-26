@@ -6,94 +6,102 @@
 # agent: the first pass (2026-11-26). Research agents per side (language emergence; earliest inscriptions), each saving fetched pages; quotes script-matched against the saved text (whitespace, quotes, dashes, entities, line-break hyphens and space before punctuation normalised): 4 hits, 0 misses. Trigger Claims matched by script as substrings of their Transcript lines at timestamp and speaker: 3 hits.
 # owner: empty (""). The owner delegated the publish review (#93; extended to the Timeline, #110, 2026-11-23); a `delegation` block is added when the independent second agent pass has run.
 # Flags for the second pass: (1) McCarter is cited from the open Cambridge Core chapter summary (the chapter itself is paywalled), the same access as fleming-2021-yahweh-before-israel-ch7; check the summary is the chapter's own text and the 2008 volume year. (2) McCarter's second sentence is hedged ("suggest", "may have been composed"); the statement keeps both hedges; cut it if it reads stronger than the source. (3) "The sources give it no firm date" is our summary of two sources that give none, as on `exodus`; narrow if needed. (4) Naʼaman p. 11's sentence is about the time of the Qeiyafa ostracon (first half of the 10th century), read in context. (5) Title "Hebrew becomes a language distinct from Canaanite": check it doesn't imply a date the statement denies.
+# Independent second agent pass 2026-11-26 (#93 delegation, #110): both sources re-fetched from their registry URLs into a fresh folder (Naʼaman PDF via pdftotext; Cambridge page HTML stripped to text); all four quotes re-matched by script (whitespace, quotes, dashes, entities, soft and line-break hyphens, space before punctuation normalised): 4 hits, 0 misses, each at its locator (McCarter: the open Summary, section heading “Stages in the development of Ancient Hebrew”, its first two sentences; Naʼaman printed p. 10 = PDF p. 11, end of point (5); printed p. 11 = PDF p. 12, the second of three reasons). All three Trigger Claims re-matched by script as substrings of the line at their timestamp and speaker in the final Transcripts (via processed-videos.json), about two minutes either side read: 3 hits.
+# Second pass changed: (1) the statement dropped McCarter's first hedge (“Prosodic and linguistic studies suggest”), contrary to first-pass flag (2); it now reads “writes that studies suggest the earliest poetry … may have been composed …, calling that poetry the first identifiable phase”, keeping both hedges. (2) E152's stored text trimmed to “Hebrew didn't exist until like between 1100 and 1000 BCE.”: the cut lead-in (“that then contributed to Proto-Canaanite … Phoenician … Hebrew”) traces the alphabet from Sinai hieroglyphs, a script lineage, and on this language entry it read as a language lineage (the issue's scope trap). No citation cut; nothing moved to uncited; no citation added.
+# Flags for publish: (1) Title “distinct from Canaanite” is Naʼaman's framing (“detached from the Canaanite one”); McCarter classifies Hebrew as Canaanite (“Within Northwest Semitic, Hebrew is classified as Canaanite as distinct from Aramaic”) and says “emerged as a discrete language”. Not wrong (Canaanite here is the undifferentiated dialect it split from, as on the show), but the publisher may prefer “Hebrew emerges as a discrete language” or a title naming both. (2) McCarter's open summary stops two sentences into the “Stages” section; the chapter's own dating beyond that is unread (paywalled), so “no firm date” is checked only against the open text. (3) McCarter's page lists a “Preface to the first edition” and the Cambridge Encyclopedia tables of contents: the chapter is a paperback reissue of the 2004 encyclopedia text; 2008 is the page's print year (online 22 September 2009). Either year is inside the 30-year window; left at 2008. (4) E187 is the weakest Trigger Claim: it follows “there's a reason for this”, which refers to the written language (00:44:37), and it never names Hebrew (“the Israelites … speak our language different from everybody else”); kept, since the turn is about language differentiation around 1000 and the run-up names Hebrew. (5) Naʼaman p. 10 also says (after Naveh) Hebrew “was developing earlier as an independent dialect” before the 9th-century script; recorded under uncited by the first pass, not a date. (6) The show's “by about 1000” vs Naʼaman's no epigraphic evidence for the early 10th century is tension, not a contradiction of a dated row; Trigger Claims shown verbatim per #99.
 review: null
+delegation:
+  by: owner
+  date: 2026-11-23
+  issue: "#110"
+  secondPass: 2026-11-26
 citations:
   undated/1:
     {
       agent: pass,
       owner: "",
-      note: "McCarter, Cambridge Core chapter summary, section “Stages in the development of Ancient Hebrew”. Final clause of the section's first sentence. Supports the lower limit: not before the end of the Late Bronze Age and the beginning of the Iron Age. A limit, not a date.",
+      note: "McCarter, Cambridge Core chapter summary, section “Stages in the development of Ancient Hebrew”. Final clause of the section's first sentence. Supports the lower limit: not before the end of the Late Bronze Age and the beginning of the Iron Age. A limit, not a date. Second pass: re-fetched; matched verbatim as the final clause of the first sentence under “Stages in the development of Ancient Hebrew” in the page's Summary, which is the chapter's own opening text (section heads, cross-references “Ch. 2, §1”). Verified.",
     }
   undated/2:
     {
       agent: pass,
       owner: "",
-      note: "McCarter, same section, next sentence. Supports “the first identifiable phase of the language … before about 1000 BCE” with its hedges (“suggest”, “may have been composed”). Source has “c . 1000 BC” with a stray space.",
+      note: "McCarter, same section, next sentence. Supports “the first identifiable phase of the language … before about 1000 BCE” with its hedges (“suggest”, “may have been composed”). Source has “c . 1000 BC” with a stray space. Second pass: matched verbatim (stray space confirmed). The statement had dropped “studies suggest”; restored (see header). Verified.",
     }
   undated/3:
     {
       agent: pass,
       owner: "",
-      note: "Naʼaman JHS 17 p. 10, end of point (5). Supports “no epigraphic evidence has yet shown Hebrew detaching from Canaanite … in the first half of the 10th century BCE”. The PDF breaks “dia- lect” over a line.",
+      note: "Naʼaman JHS 17 p. 10, end of point (5). Supports “no epigraphic evidence has yet shown Hebrew detaching from Canaanite … in the first half of the 10th century BCE”. The PDF breaks “dia- lect” over a line. Second pass: re-fetched; matched on printed p. 10 (PDF p. 11), last sentence of point (5), line-break hyphen confirmed; the 10th century is BCE from the same paragraph. Verified.",
     }
   undated/4:
     {
       agent: pass,
       owner: "",
-      note: "Naʼaman p. 11, second of three reasons against reading the Qeiyafa ostracon as Hebrew. Supports the uncertainty that Hebrew was yet an independent dialect at that time. Not quoted in the statement; backs undated/3.",
+      note: "Naʼaman p. 11, second of three reasons against reading the Qeiyafa ostracon as Hebrew. Supports the uncertainty that Hebrew was yet an independent dialect at that time. Not quoted in the statement; backs undated/3. Second pass: matched on printed p. 11 (PDF p. 12); “the case under discussion” is the Qeiyafa ostracon, which Naʼaman dates with the site to the first half of the 10th century. Verified.",
     }
 triggers:
   152@00:47:37:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:47:37 turn; cut before “So when people—.” Read 00:44:22 to 00:49:10. The host's next question and the speaker's answer at 00:48:19 say the date covers both written and spoken Hebrew (indistinguishable from Canaanite until 1100–1000); no hedge dropped beyond “like”, which is kept.",
+      note: "states: critical. Substring of the 00:47:37 turn; cut before “So when people—.” Read 00:44:22 to 00:49:10. The host's next question and the speaker's answer at 00:48:19 say the date covers both written and spoken Hebrew (indistinguishable from Canaanite until 1100–1000); no hedge dropped beyond “like”, which is kept. Second pass: script-matched at 00:47:37.259, Dan McClellan; read 00:45:24 to 00:49:59. Stored text trimmed to the Hebrew sentence: the cut lead-in's “that” is the alphabet (Sinai hieroglyphs to Proto-Canaanite, Phoenician, Hebrew), a script lineage. The 00:48:19 answer confirms the date is meant for the language. Verified.",
     }
   175@00:13:51:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:13:51 turn, after “Yeah, because Hebrew didn't exist when a historical Moses would have existed.” “at the very earliest” is kept. Read 00:13:06 to 00:15:14. Cut before the Pentateuch's own dating (8th–6th centuries), a separate claim.",
+      note: "states: critical. Substring of the 00:13:51 turn, after “Yeah, because Hebrew didn't exist when a historical Moses would have existed.” “at the very earliest” is kept. Read 00:13:06 to 00:15:14. Cut before the Pentateuch's own dating (8th–6th centuries), a separate claim. Second pass: script-matched at 00:13:51.820, Dan McClellan; read 00:11:08 to 00:16:48. “at the very earliest” kept; Beecher's question (what language was it written in) frames it as the language. Verified.",
     }
   187@00:44:45:
     {
       agent: pass,
       owner: "",
-      note: "states: critical. Substring of the 00:44:45 turn (Lay of the Land). Read 00:43:48 to 00:46:22. The turn opens on a generic Canaanite / Proto-Semitic language and territorial states “around between 1200 and 1000”; the stored sentence is the language-differentiation claim. The preceding 00:44:31–00:44:37 exchange narrows “doesn't even exist” to the written language; that claim is not stored (see header).",
+      note: "states: critical. Substring of the 00:44:45 turn (Lay of the Land). Read 00:43:48 to 00:46:22. The turn opens on a generic Canaanite / Proto-Semitic language and territorial states “around between 1200 and 1000”; the stored sentence is the language-differentiation claim. The preceding 00:44:31–00:44:37 exchange narrows “doesn't even exist” to the written language; that claim is not stored (see header). Second pass: script-matched at 00:44:45.020, Dan McClellan; read 00:42:59 to 00:47:53. Weakest of the three: it never names Hebrew and follows “there's a reason for this” after the written-language remark; the claim is the Israelites' language differing around 1000. Kept; flagged for publish (4).",
     }
 rules:
   critical-scope:
     {
       agent: pass,
       owner: "",
-      note: "Worded for the language as distinct from Canaanite, which both sources speak to; the earliest inscriptions and the Old Hebrew script are left out (issue scope trap).",
+      note: "Worded for the language as distinct from Canaanite, which both sources speak to; the earliest inscriptions and the Old Hebrew script are left out (issue scope trap). Second pass: correction: only Naʼaman frames it as detaching from Canaanite; McCarter classifies Hebrew as Canaanite and speaks of a “discrete language”. Scope holds; title flagged for publish (1). E152's script lead-in trimmed for the same scope reason.",
     }
   split-shown:
     {
       agent: pass,
       owner: "",
-      note: "No date, so no split. The two sources don't disagree: one a lower limit and a hedged first phase, the other the absence of evidence in the early 10th century.",
+      note: "No date, so no split. The two sources don't disagree: one a lower limit and a hedged first phase, the other the absence of evidence in the early 10th century. Second pass: agreed; no split.",
     }
   tradition-both-sides:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; every Trigger Claim states critical.",
+      note: "No Tradition Date; every Trigger Claim states critical. Second pass: agreed; all three still state critical.",
     }
   tradition-named:
     {
       agent: pass,
       owner: "",
-      note: "No Tradition Date; no Tradition source cited.",
+      note: "No Tradition Date; no Tradition source cited. Second pass: agreed.",
     }
   conditional-not-critical:
     {
       agent: pass,
       owner: "",
-      note: "McCarter's “unlikely … before” is a limit and his “before c. 1000 BC” rests on poetry that “may have been composed” then; neither is a Critical Date, so the entry is undated.",
+      note: "McCarter's “unlikely … before” is a limit and his “before c. 1000 BC” rests on poetry that “may have been composed” then; neither is a Critical Date, so the entry is undated. Second pass: agreed; with “studies suggest” restored, the statement now carries both hedges.",
     }
 sources:
   mccarter-2008-hebrew:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly (Cambridge University Press; ch. 3 of Woodard ed., pp. 36–81, DOI 10.1017/CBO9780511486890.006). New id. Author from the chapter page byline. 2008, inside the 30-year window.",
+      note: "Scholarly (Cambridge University Press; ch. 3 of Woodard ed., pp. 36–81, DOI 10.1017/CBO9780511486890.006). New id. Author from the chapter page byline. 2008, inside the 30-year window. Second pass: byline “P. Kyle McCarter Jr.” and “Print publication year: 2008”, pp. 36–81, DOI as given confirmed on the fetched page; class and access line fit. The volume is a paperback reissue of the 2004 encyclopedia chapter (flag 3).",
     }
   naaman-2017-khirbet-qeiyafa:
     {
       agent: pass,
       owner: "",
-      note: "Scholarly (Journal of Hebrew Scriptures, open access; Tel Aviv University). Reused id from david-and-the-united-monarchy. 2017, inside the window.",
+      note: "Scholarly (Journal of Hebrew Scriptures, open access; Tel Aviv University). Reused id from david-and-the-united-monarchy. 2017, inside the window. Second pass: PDF confirms “Nadav Naʼaman, Tel Aviv University”, JHS vol. 17 article 7, DOI 10.5508/jhs.2017.v17.a7; class and access line fit.",
     }
 leads:
   - "Seth L. Sanders, The Invention of Hebrew (2009): paywalled; no open copy."
