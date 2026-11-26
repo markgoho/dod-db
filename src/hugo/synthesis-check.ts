@@ -160,7 +160,35 @@ export async function loadParsed<T>(
   );
 }
 
-/** The shared registry, hugo/data/external-sources.yaml; empty when unreadable. */
+const REGISTRY_PATH = "hugo/data/external-sources.yaml";
+
+/** A column-0 mapping key (not a comment, document marker or list item). */
+const TOP_LEVEL_KEY = /^([^\s#-][^:]*):(?:\s|$)/;
+
+/**
+ * One error per top-level key a YAML file repeats. The YAML loader keeps the
+ * last block silently; an External Source is described once (#202).
+ */
+export function duplicateTopLevelKeys(label: string, text: string): string[] {
+  const lines = new Map<string, number[]>();
+  for (const [index, line] of text.split("\n").entries()) {
+    const raw = TOP_LEVEL_KEY.exec(line)?.[1];
+    if (raw === undefined) continue;
+    const key = raw.trim().replace(/^(["'])(.*)\1$/, "$2");
+    lines.set(key, [...(lines.get(key) ?? []), index + 1]);
+  }
+  return [...lines]
+    .filter(([, at]) => at.length > 1)
+    .map(
+      ([key, at]) =>
+        `${label}: source "${key}" is defined more than once (lines ${at.join(", ")}); keep one block`,
+    );
+}
+
+/**
+ * The shared registry, hugo/data/external-sources.yaml; empty when unreadable.
+ * A repeated source id is an error.
+ */
 export async function loadRegistry(
   root: string,
   errors: string[],
@@ -168,9 +196,14 @@ export async function loadRegistry(
   return (
     (await loadParsed(
       RegistrySchema,
-      path.join(root, "hugo/data/external-sources.yaml"),
+      path.join(root, REGISTRY_PATH),
       root,
       errors,
+      async filePath => {
+        const text = await Bun.file(filePath).text();
+        errors.push(...duplicateTopLevelKeys(REGISTRY_PATH, text));
+        return Bun.YAML.parse(text);
+      },
     )) ?? {}
   );
 }

@@ -65,6 +65,12 @@ describe("checkTimeline", () => {
     ]);
   });
 
+  test("fails a source id the registry defines twice", async () => {
+    expect(await check("registry-duplicate-key")).toEqual([
+      `hugo/data/external-sources.yaml: source "scholarly-book" is defined more than once (lines 1, 43); keep one block`,
+    ]);
+  });
+
   test("fails when a setting citation names a source missing from the registry", async () => {
     expect(await check("setting-unknown-source")).toEqual([
       `timeline/book: citation setting/1 names unknown source "no-such-source"`,
