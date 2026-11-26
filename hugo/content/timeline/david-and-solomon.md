@@ -1,9 +1,9 @@
 ---
 title: "Reigns of David and Solomon"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-25
 related:
   { books: [1-samuel, 2-samuel, 1-kings], tags: [david], topics: [david] }
 watch:
@@ -17,8 +17,7 @@ watch:
   ]
 critical:
   display: "10th century BCE"
-  from: -1010
-  to: -901
+  from: -1000
   precision: century
   note: "One dictionary dates David's reign to about 1010–970 BCE and Solomon's to the second third of the tenth century. Schmidt summarises Finkelstein as upholding the historicity of David and Solomon while rejecting a tenth-century United Monarchy; Mazar describes the United Monarchy as a state in an early stage of development, far from the rich and widely expanding state portrayed in the biblical narrative."
   cites:

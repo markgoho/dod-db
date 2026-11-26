@@ -154,14 +154,15 @@ describe.skipIf(!hasHugo)("Timeline minimap", () => {
       ["jericho", 0],
       ["exodus", 1],
       ["merneptah-stele", 0],
-      ["deuteronomy", 0],
-      ["fall-of-samaria", 1],
+      ["david-and-solomon", 0],
+      ["deuteronomy", 1],
+      ["fall-of-samaria", 0],
       ["judges-dtr", 2],
-      // 0.0426 of the strip after Deuteronomy: clear of it, so slot 0 again.
-      ["fall-of-jerusalem", 0],
+      // 0.0426 of the strip after Deuteronomy: clear of it, so its slot 1 again.
+      ["fall-of-jerusalem", 1],
       ["lamentations", 3],
       ["priestly-genesis-1", 4],
-      ["isaiah-56-66", 1],
+      ["isaiah-56-66", 0],
       ["daniel", 0],
     ]);
     // Nothing moves a dot off its year.
