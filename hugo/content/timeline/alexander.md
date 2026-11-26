@@ -1,9 +1,9 @@
 ---
 title: "Alexander conquers Judea"
 entryKind: event
-draft: true
+draft: false
 build: { render: never, list: always }
-sourcesRead:
+sourcesRead: 2026-11-26
 related: { books: [daniel], tags: [seleucid-empire], topics: [] }
 watch:
   [
