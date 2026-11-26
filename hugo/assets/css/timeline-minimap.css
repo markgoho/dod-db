@@ -374,6 +374,12 @@
   margin: 0;
 }
 
+/* The current entry's name carries the card's highlighter stroke (timeline.css). */
+.timeline-minimap__caption strong {
+  background: var(--timeline-highlighter);
+  box-decoration-break: clone;
+}
+
 .timeline-minimap__caption .type-eyebrow {
   color: var(--color-text-muted);
   font-size: inherit;
@@ -738,12 +744,17 @@
   }
 
   /*
-    The current tick: ringed, never colour alone, and in the action colour,
-    filled or (placed by a tradition's date) outlined, so it stays hollow.
+    The current tick, as the card you landed on (timeline.css): an amber drop
+    shadow, and ringed in ink, never colour alone. Its own fill or (a
+    tradition's date) hollow mark stays.
   */
   .timeline-minimap__tick {
+    box-shadow: if(
+      style(--is-current: 1): var(--border-width-md) var(--border-width-md) 0
+        var(--color-accent); else: none
+    );
     outline: if(
-      style(--is-current: 1): var(--border-width-sm) solid var(--color-action);
+      style(--is-current: 1): var(--border-width-sm) solid var(--tan-900);
         else: none
     );
     outline-offset: var(--border-width-sm);
@@ -751,28 +762,7 @@
 
   .timeline-minimap__tick:hover {
     outline-color: if(
-      style(--is-current: 1): var(--color-action); else: var(--tan-500)
-    );
-  }
-
-  .timeline-minimap__tick:not(
-    .timeline-minimap__tick--placed,
-    .timeline-minimap__tick--moved
-  ) {
-    background: if(
-      style(--is-current: 1): var(--color-action); else: var(--tan-900)
-    );
-  }
-
-  .timeline-minimap__tick {
-    border-color: if(
-      style(--is-current: 1): var(--color-action); else: var(--tan-900)
-    );
-  }
-
-  .timeline-minimap__tick--placed {
-    --dot-ink: if(
-      style(--is-current: 1): var(--color-action); else: var(--tan-900)
+      style(--is-current: 1): var(--tan-900); else: var(--tan-500)
     );
   }
 

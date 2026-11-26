@@ -212,10 +212,22 @@
 }
 
 /*
-  Arriving at an entry by link: the card whose date placed it is ringed, as
-  its minimap tick is: the scholarly card, or the tradition card for an entry
-  placed by a tradition's date and for a Tradition Date at its own year (#214).
+  Arriving at an entry by link: the card whose date placed the row, the
+  scholarly card or the tradition card (an entry placed by a tradition's date,
+  or a Tradition Date at its own year, #214), lifts on an amber drop shadow
+  and its heading takes an amber highlighter stroke, the accent the site's
+  titles carry. The minimap marks the current tick the same way.
 */
+.timeline-page {
+  /* A marker stroke through the lower half of a line of text; sized to 1lh, it repeats on every wrapped line. */
+  --timeline-highlighter: linear-gradient(
+    transparent 45%,
+    var(--color-accent) 45% 90%,
+    transparent 90%
+  );
+  --timeline-lift: var(--panel-shadow-offset);
+}
+
 .timeline-entry:target > .timeline-entry__card {
   background: var(--tan-100);
 }
@@ -227,11 +239,41 @@
   > .timeline-entry__card,
 .timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved):target
   > .timeline-entry__tradition {
-  outline: var(--border-width-md) solid var(--color-action);
-  outline-offset: var(--space-4xs);
+  box-shadow: calc(2 * var(--timeline-lift)) calc(2 * var(--timeline-lift)) 0
+    var(--color-accent);
+  translate: calc(-1 * var(--timeline-lift)) calc(-1 * var(--timeline-lift));
 }
 
-/* The entry's own outline would ring the whole row, both lanes; the card's ring says it. */
+/* The tradition card's dashed edge goes solid while it is the one you landed on. */
+.timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved):target
+  > .timeline-entry__tradition {
+  border: var(--border-width-md) solid var(--tan-900);
+}
+
+.timeline-entry:not(
+    .timeline-entry--by-tradition,
+    .timeline-entry--moved
+  ):target
+  > .timeline-entry__card
+  > :is(.timeline-entry__title, .timeline-entry__date),
+.timeline-entry:is(.timeline-entry--by-tradition, .timeline-entry--moved):target
+  > .timeline-entry__tradition
+  > :is(.timeline-entry__moved-title, .timeline-entry__date) {
+  background: var(--timeline-highlighter) 0 0 / 100% 1lh;
+  color: var(--tan-900);
+  justify-self: start;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .timeline-entry__card,
+  .timeline-entry__tradition {
+    transition:
+      translate 0.2s,
+      box-shadow 0.2s;
+  }
+}
+
+/* The entry's own outline would ring the whole row, both lanes; the card says it. */
 .timeline-entry:target:focus {
   outline: none;
 }
