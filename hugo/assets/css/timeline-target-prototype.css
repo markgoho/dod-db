@@ -1,0 +1,139 @@
+/* PROTOTYPE (#214 follow-up): how the card you landed on shows. ?variant=a|b|c|d. Throwaway. */
+
+/* The placing card of the targeted row, on either side of the axis. */
+html:not([data-proto="a"])
+  :is(
+    .timeline-entry:not(
+        .timeline-entry--by-tradition,
+        .timeline-entry--moved
+      ):target
+      > .timeline-entry__card,
+    .timeline-entry:is(
+        .timeline-entry--by-tradition,
+        .timeline-entry--moved
+      ):target
+      > .timeline-entry__tradition
+  ) {
+  outline: none;
+  transition:
+    translate 0.2s,
+    box-shadow 0.2s,
+    background-color 0.2s;
+}
+
+/* B: the panel pops: lifted, its hard shadow doubled and amber. */
+html[data-proto="b"]
+  .timeline-entry:not(
+    .timeline-entry--by-tradition,
+    .timeline-entry--moved
+  ):target
+  > .timeline-entry__card {
+  box-shadow: calc(2 * var(--panel-shadow-offset))
+    calc(2 * var(--panel-shadow-offset)) 0 var(--color-accent);
+  translate: calc(-1 * var(--panel-shadow-offset))
+    calc(-1 * var(--panel-shadow-offset));
+}
+
+html[data-proto="b"]
+  .timeline-entry:is(
+    .timeline-entry--by-tradition,
+    .timeline-entry--moved
+  ):target
+  > .timeline-entry__tradition {
+  border-color: var(--tan-900);
+  border-style: solid;
+  border-width: var(--border-width-md);
+  box-shadow: calc(2 * var(--panel-shadow-offset))
+    calc(2 * var(--panel-shadow-offset)) 0 var(--color-accent);
+  translate: calc(-1 * var(--panel-shadow-offset))
+    calc(-1 * var(--panel-shadow-offset));
+}
+
+/* C: amber fill, as a hovered token pill; the tradition hatching stays on top. */
+html[data-proto="c"]
+  .timeline-entry:not(
+    .timeline-entry--by-tradition,
+    .timeline-entry--moved
+  ):target
+  > .timeline-entry__card {
+  background: var(--color-accent-muted);
+}
+
+html[data-proto="c"]
+  .timeline-entry:is(
+    .timeline-entry--by-tradition,
+    .timeline-entry--moved
+  ):target
+  > .timeline-entry__tradition {
+  background-color: var(--color-accent-muted);
+  border-color: var(--tan-900);
+}
+
+/* D: a highlighter stroke under the card's heading, as the site's titles carry an amber shadow. */
+html[data-proto="d"]
+  .timeline-entry:not(
+    .timeline-entry--by-tradition,
+    .timeline-entry--moved
+  ):target
+  > .timeline-entry__card
+  :is(
+    .timeline-entry__title,
+    .timeline-entry__date:not(.timeline-entry__date--tradition)
+  ),
+html[data-proto="d"]
+  .timeline-entry:is(
+    .timeline-entry--by-tradition,
+    .timeline-entry--moved
+  ):target
+  > .timeline-entry__tradition
+  .timeline-entry__date--tradition {
+  background: linear-gradient(
+    transparent 45%,
+    var(--color-accent) 45% 90%,
+    transparent 90%
+  );
+  box-decoration-break: clone;
+  justify-self: start;
+  padding-inline: var(--space-4xs);
+}
+
+html[data-proto="d"]
+  .timeline-entry:is(
+    .timeline-entry--by-tradition,
+    .timeline-entry--moved
+  ):target
+  > .timeline-entry__tradition
+  .timeline-entry__date--tradition {
+  color: var(--tan-900);
+}
+
+/* Variant switcher, not in production. */
+.proto-switcher {
+  align-items: center;
+  background: var(--tan-900);
+  border-radius: 999px;
+  color: var(--tan-000);
+  display: flex;
+  font-size: var(--step--1);
+  gap: var(--space-2xs);
+  inset-block-end: var(--space-s);
+  inset-inline-start: 50%;
+  padding: var(--space-3xs) var(--space-2xs);
+  position: fixed;
+  translate: -50%;
+  z-index: 1000;
+}
+
+.proto-switcher button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: var(--space-3xs) var(--space-2xs);
+}
+
+.proto-switcher output {
+  min-inline-size: 14rem;
+  text-align: center;
+}
