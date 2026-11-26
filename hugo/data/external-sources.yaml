@@ -2365,3 +2365,465 @@ reformation-study-bible-dan-11:
   url: "https://www.biblegateway.com/resources/reformation-study-bible/Dan.11.36-Dan.12.3"
   hostAuthored: false
   tradition: "Ligonier Ministries' Reformation Study Bible"
+
+richards-bo-david:
+  author: "Kent Harold Richards"
+  title: "David"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/david/"
+  hostAuthored: false
+  tradition: null
+
+mckenzie-bo-kingdom-of-israel:
+  author: "Steven L. McKenzie"
+  title: "Kingdom of Israel"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/kingdom-of-israel/"
+  hostAuthored: false
+  tradition: null
+
+nakhai-bo-divided-monarchy:
+  author: "Beth Alpert Nakhai"
+  title: "The Divided Monarchy"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-divided-monarchy/"
+  hostAuthored: false
+  tradition: null
+
+darby-bo-archaeology-of-jerusalem:
+  author: "Erin Darby"
+  title: "The Archaeology of Jerusalem"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-archaeology-of-jerusalem/"
+  hostAuthored: false
+  tradition: null
+
+greenspoon-bo-jerusalem:
+  author: "Leonard Greenspoon"
+  title: "Jerusalem"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/jerusalem/"
+  hostAuthored: false
+  tradition: null
+
+rollston-bo-tel-dan:
+  author: "Christopher Rollston"
+  title: "The Tel Dan Inscription"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/the-tel-dan-inscription/"
+  hostAuthored: false
+  tradition: null
+
+moore-bo-house-of-david:
+  author: "Megan Bishop Moore"
+  title: "Judah and the House of David"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/judah-and-the-house-of-david/"
+  hostAuthored: false
+  tradition: null
+
+bodner-bo-goliath:
+  author: "Keith Bodner"
+  title: "Goliath"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/goliath/"
+  hostAuthored: false
+  tradition: null
+
+gravett-bo-david-vs-goliath:
+  author: "Sandie Gravett"
+  title: "David vs. Goliath"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/articles/david-vs-goliath/"
+  hostAuthored: false
+  tradition: null
+
+greene-bo-saul:
+  author: "Nathaniel E. Greene"
+  title: "Saul"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: article
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/people/main-articles/saul/"
+  hostAuthored: false
+  tradition: null
+
+davies-bo-tel-dan-video:
+  author: "Philip R. Davies"
+  title: "The Tel Dan Inscription (video transcript)"
+  series: "Bible Odyssey"
+  publisher: "Society of Biblical Literature"
+  year: null
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "Society of Biblical Literature website, open"
+  url: "https://www.bibleodyssey.org/video-gallery/the-tel-dan-inscription"
+  hostAuthored: false
+  tradition: null
+
+hayes-rlst145-l13:
+  author: "Christine Hayes"
+  title: "Introduction to the Old Testament (Hebrew Bible), lecture 13 transcript"
+  series: "Open Yale Courses RLST 145"
+  publisher: null
+  year: 2006
+  edition: null
+  class: Reference
+  kind: lecture
+  access: "University courseware, open"
+  url: "https://oyc.yale.edu/religious-studies/rlst-145/lecture-13"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch13:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 13 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-13-summary"
+  hostAuthored: false
+  tradition: null
+
+coogan-brief-4e-summary-ch14:
+  author: "Michael D. Coogan and Cynthia R. Chapman"
+  title: "Student chapter 14 summary of A Brief Introduction to the Old Testament: The Hebrew Bible in Its Context"
+  series: "OUP Learning Link"
+  publisher: "Oxford University Press"
+  year: 2019
+  edition: "4th ed."
+  class: Reference
+  kind: publisher-summary
+  access: "Publisher companion page, open"
+  url: "https://learninglink.oup.com/access/content/coogan-brief-4e-student-resources/coogan-brief-4e-chapter-14-summary"
+  hostAuthored: false
+  tradition: null
+
+halpern-ej-david:
+  author: "Baruch Halpern"
+  title: "David (section “In the Bible”)"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/david-0"
+  hostAuthored: false
+  tradition: null
+
+ej-history-kingdoms:
+  author: null
+  title: "History: Kingdoms of Judah and Israel"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/history-kingdoms-judah-and-israel"
+  hostAuthored: false
+  tradition: null
+
+ej-goliath:
+  author: null
+  title: "Goliath"
+  series: "Encyclopaedia Judaica"
+  publisher: null
+  year: null
+  edition: "2nd ed."
+  class: Reference
+  kind: article
+  access: "Entry reproduced on Encyclopedia.com, open"
+  url: "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/goliath"
+  hostAuthored: false
+  tradition: null
+
+finkelstein-2013-forgotten-kingdom:
+  author: "Israel Finkelstein"
+  title: "The Forgotten Kingdom: The Archaeology and History of Northern Israel"
+  series: "Ancient Near East Monographs 5"
+  publisher: "Society of Biblical Literature"
+  year: 2013
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Open-access book, PDF in a university repository"
+  url: "https://repositorio.uca.edu.ar/bitstream/123456789/8018/1/forgotten-kingdom-archaeology.pdf"
+  hostAuthored: false
+  tradition: null
+
+finkelstein-2007-quest-solomon:
+  author: "Israel Finkelstein"
+  title: "The Rise of Jerusalem and Judah; The Truth about King Solomon (essays in Part 4)"
+  series: "Israel Finkelstein and Amihai Mazar, The Quest for the Historical Israel: Debating Archaeology and the History of Early Israel, ed. Brian B. Schmidt (Archaeology and Biblical Studies 17)"
+  publisher: "Society of Biblical Literature"
+  year: 2007
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF posted by the publisher, open"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
+  hostAuthored: false
+  tradition: null
+
+mazar-2007-quest-david-solomon:
+  author: "Amihai Mazar"
+  title: "The Search for David and Solomon: An Archaeological Perspective"
+  series: "Israel Finkelstein and Amihai Mazar, The Quest for the Historical Israel: Debating Archaeology and the History of Early Israel, ed. Brian B. Schmidt (Archaeology and Biblical Studies 17)"
+  publisher: "Society of Biblical Literature"
+  year: 2007
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF posted by the publisher, open"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
+  hostAuthored: false
+  tradition: null
+
+schmidt-2007-quest-summary:
+  author: "Brian B. Schmidt"
+  title: "A Summary Assessment for Part 4"
+  series: "Israel Finkelstein and Amihai Mazar, The Quest for the Historical Israel: Debating Archaeology and the History of Early Israel, ed. Brian B. Schmidt (Archaeology and Biblical Studies 17)"
+  publisher: "Society of Biblical Literature"
+  year: 2007
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF posted by the publisher, open"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
+  hostAuthored: false
+  tradition: null
+
+sergi-2023-two-houses:
+  author: "Omer Sergi"
+  title: "The Two Houses of Israel: State Formation and the Origins of Pan-Israelite Identity"
+  series: "Archaeology and Biblical Studies 33"
+  publisher: "SBL Press"
+  year: 2023
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF posted by the publisher, open"
+  url: "https://www.sbl-site.org/wp-content/uploads/2024/12/9781628373431_txt.pdf"
+  hostAuthored: false
+  tradition: null
+
+garfinkel-2012-khirbet-qeiyafa:
+  author: "Yosef Garfinkel, Katharina Streit, Saar Ganor and Michael G. Hasel"
+  title: "State Formation in Judah: Biblical Tradition, Modern Historical Theories, and Radiometric Dates at Khirbet Qeiyafa"
+  series: "Radiocarbon 54(3–4): 359–369"
+  publisher: "University of Arizona"
+  year: 2012
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Journal article in the publisher's university repository, open"
+  url: "https://repository.arizona.edu/handle/10150/654952"
+  hostAuthored: false
+  tradition: null
+
+faust-sapir-2018-tel-eton:
+  author: "Avraham Faust and Yair Sapir"
+  title: "The “Governor’s Residency” at Tel ‘Eton, the United Monarchy, and the Impact of the Old-House Effect on Large-Scale Archaeological Reconstructions"
+  series: "Radiocarbon 60(3): 801–820"
+  publisher: "Cambridge University Press"
+  year: 2018
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article"
+  url: "https://cambridge.org/core/services/aop-cambridge-core/content/view/5CE54AE6CEE838CC0D076186A2FBACE5/S0033822218000103a.pdf/governors_residency_at_tel_eton_the_united_monarchy_and_the_impact_of_the_oldhouse_effect_on_largescale_archaeological_reconstructions.pdf"
+  hostAuthored: false
+  tradition: null
+
+naaman-2017-khirbet-qeiyafa:
+  author: "Nadav Naʼaman"
+  title: "Was Khirbet Qeiyafa a Judahite City? The Case against It"
+  series: "Journal of Hebrew Scriptures 17, article 7"
+  publisher: null
+  year: 2017
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article"
+  url: "https://jhsonline.org/index.php/jhs/article/download/29370/21387"
+  hostAuthored: false
+  tradition: null
+
+hagelia-2009-dan-debate:
+  author: "Hallvard Hagelia"
+  title: "The Dan Debate: The Tel Dan Inscription in Recent Research"
+  series: "Recent Research in Biblical Studies 4"
+  publisher: "Sheffield Phoenix Press"
+  year: 2009
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Full-text PDF posted by SBL Press, its North American distributor, open"
+  url: "https://www.sbl-site.org/wp-content/uploads/2025/01/Hagelia_Dan.pdf"
+  hostAuthored: false
+  tradition: null
+
+langlois-2019-mesha-stele:
+  author: "Michael Langlois"
+  title: "The Kings, the City and the House of David on the Mesha Stele in Light of New Imaging Techniques"
+  series: "Semitica 61: 23–47"
+  publisher: "Peeters"
+  year: 2019
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Author-posted PDF of the published article, open"
+  url: "https://michaellanglois.fr/medias/langlois-2019-the-kings-the-city-and-the-house-of-david-on-the-mesha-stele-semitica-61-p--23-47.pdf"
+  hostAuthored: false
+  tradition: null
+
+krause-sergi-weingart-2020-saul-benjamin:
+  author: "Joachim J. Krause, Omer Sergi and Kristin Weingart"
+  title: "Saul, Benjamin, and the Emergence of Monarchy in Israel: Problems and Perspectives (volume introduction)"
+  series: "Saul, Benjamin, and the Emergence of Monarchy in Israel: Biblical and Archaeological Perspectives (Ancient Israel and Its Literature 40), pp. 1–6"
+  publisher: "SBL Press"
+  year: 2020
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher front-matter PDF (contents and introduction), open"
+  url: "https://www.sbl-site.org/assets/pdfs/pubs/062636P-front.pdf"
+  hostAuthored: false
+  tradition: null
+
+goldingay-samuel-theology:
+  author: "John Goldingay"
+  title: "The Theology of the Book of Samuel, chapter 1 (publisher excerpt)"
+  series: "Old Testament Theology"
+  publisher: "Cambridge University Press"
+  year: null
+  edition: null
+  class: Scholarly
+  kind: book
+  access: "Publisher excerpt PDF, open"
+  url: "https://assets.cambridge.org/97810095/19748/excerpt/9781009519748_excerpt.pdf"
+  hostAuthored: false
+  tradition: null
+
+garsiel-2010-samuel-historiography:
+  author: "Moshe Garsiel"
+  title: "The Book of Samuel: Its Composition, Structure and Significance as a Historiographical Source"
+  series: "Journal of Hebrew Scriptures 10, article 5"
+  publisher: null
+  year: 2010
+  edition: null
+  class: Scholarly
+  kind: article
+  access: "Open-access journal article"
+  url: "https://jhsonline.org/index.php/jhs/article/view/11265"
+  hostAuthored: false
+  tradition: null
+
+nabre-samuel-intro:
+  author: null
+  title: "Introduction to the Books of Samuel"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1samuel/0"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-chronicles-20-notes:
+  author: null
+  title: "Notes to 1 Chronicles, chapter 20"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1chronicles/20"
+  hostAuthored: false
+  tradition: null
+
+nabre-1-samuel-16-17-notes:
+  author: null
+  title: "Notes to 1 Samuel, chapters 16 and 17"
+  series: "New American Bible, Revised Edition"
+  publisher: "United States Conference of Catholic Bishops"
+  year: 2011
+  edition: "Old Testament revision"
+  class: Reference
+  kind: study-bible
+  access: "Church-published study Bible; opens in a browser, refuses scripted requests"
+  url: "https://bible.usccb.org/bible/1samuel/17"
+  hostAuthored: false
+  tradition: null

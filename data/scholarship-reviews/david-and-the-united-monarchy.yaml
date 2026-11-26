@@ -1,0 +1,1157 @@
+# Review record for /scholarship/david-and-the-united-monarchy/ (#93 shape). Not rendered.
+# agent: results of the agent first pass (#150, 2026-11-25). That pass does not count toward publish.
+# owner: empty (""). The owner delegated the publish review (#93, 2026-11-23); the `delegation` block records the independent second agent pass once it has run.
+# Issue #150 instructions: add Goliath/Elhanan and the Tel Dan Stele; #96 publish rule; shorts report the state of scholarship (#133); confessional study Bibles are Tradition and don't count toward the two (no confessional study Bible is cited; NABRE is Reference per CONTEXT.md).
+# Sourcing test (#150, 2026-11-25): gate 1, 17 Trigger Claims in Episodes 6, 40, 52, 64, 67, 139, 154, 169 and 181 (14 Dan McClellan, 3 Aaron Higashi), each matched by script at timestamp and speaker against the final Transcript and read about two minutes either side. Gate 2, the core: the candidate “Scholars are divided on whether a historical David ruled a united monarchy” joined two questions the sources answer differently, so it was split. The core is now united-monarchy (“Scholars debate it. Many doubt …; those who defend an early state describe one far smaller …”): Richards and Nakhai (Bible Odyssey, Reference) say it is debated; Faust and Sapir (“questioned by many”) and Mazar (“a good number of scholars have grown increasingly skeptical”) carry “many”; Mazar, Garfinkel et al. and Sergi (on Garfinkel) carry the smaller-state clause. Gate 3: at least 6 independent authors behind the core, 2 Reference. Gate 4: 10 statements.
+# Conflicting state-of-field sentences, handled by #80 (two sources disagree → contested, no “consensus”/“most” in the short): David's existence (Hayes 2006 “most scholars … the consensus”, Hagelia 2009 “most scholars contributing to this debate” against Richards and McKenzie on Bible Odyssey, “scholars debate”); short says “Scholars debate it”, Hayes and Hagelia attributed in the text. Dating of the Solomonic buildings (Hayes 2006 “differ radically”, Greenspoon some/others, against Sergi 2023 “little doubt today”): reported side by side in israel-and-judah text, kept out of its short.
+# Dropped: the two accounts of Saul's death (1 Sam 31 vs 2 Sam 1; Ep 161's “most scholars … the Amalekite was lying”): only McKenzie (Word & World) and Hayes, neither on which account is original; no statement, and the Ep 161 claims are not attached. The fragment B year (Rollston 1995, Hagelia 1994): conflicting, not stated. Khirbet Qeiyafa as a statement: excavators vs Na'aman, one author each way read in full; Garfinkel et al. used only for their kingdom-in-Judah view. Iron Age chronology “general consensus” (Sergi p. 21): one author, and Coogan's and Nakhai's summaries keep the older tenth-century dating; not stated.
+# First pass: three research agents fetched every source on 2026-11-25 into separate scratch folders and copied quotes from the fetched text; every page quote was then script-matched by the lead agent's own matcher (whitespace, HTML entities, curly quotes and dashes, line-break hyphenation, fi/fl ligature control characters normalised; SBL watermark letters and running heads removed for the AIL 40 front matter) against those saved texts: 130/130, 0 misses. The second pass must re-fetch.
+# Triggers vs statements (CONTEXT.md conflict rule): no Trigger Claim contradicts a statement, so none is logged as a conflict. Stronger than the page: 52@00:16:16 (“scholarly consensus” on Elhanan; the page has “one explanation scholars give”); 139@00:48:17 (“Scholars are pretty sure” there was never a united kingdom; the page reports Sergi's mainstream shift and the defenders); 181@00:42:09 (“most scholars would say”; Hayes and Hagelia say most, the page reports the debate). Each is a view at least one cited source reports, and a Trigger Claim gates the subject, not a statement.
+# Flags for the second pass: (1) Hagelia and Sergi 2023 are full copyrighted books in PDFs on sbl-site.org with no login and no stated open-access licence; judge whether a publisher/distributor-posted copy meets #80. Hagelia alone carries the Tel Dan date and Hazael “most scholars” sentences, each beside Rollston. (2) Most Reference citations are Bible Odyssey pages (eleven authors): independent authors, one platform. (3) Hayes's lectures (2006) are the oldest source used for field-state wording; attributed only. (4) The house-of-david short's “Most scholars read it that way” rests on Rollston (“the majority of scholars”) and Hagelia (“almost generally accepted”, “most scholars”); “how to interpret the phrase is still debated” on Hagelia (“no general consensus on the interpretation”) and Davies. (5) The tel-dan short's “most scholars attribute it to Hazael” rests on Hagelia's sentence plus Rollston's “most convincing conclusion”. (6) Krause–Sergi–Weingart and Sergi 2023 share an author. (7) ej-goliath may keep first-edition sentences. (8) The goliath short's “One explanation scholars give” rests on HarperCollins (“Some interpreters”) and EJ (“more likely”); “another identifies Elhanan with David” on EJ (“Some scholars hold”). (9) samuel short's “describe the story of David's rise as written to justify his taking the throne” rests on Coogan and Chapman (“propagandistic piece … to justify David's ascent”), Hayes (“may be an apology”) and Garsiel (“some scholars have discerned an apologetic tendency”).
+review: null
+citations:
+  united-monarchy/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  united-monarchy/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  historical-david/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  historical-david/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  historical-david/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  historical-david/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  historical-david/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  historical-david/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  historical-david/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  historical-david/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  historical-david/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  historical-david/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  david-ruler/16:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  israel-and-judah/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  israel-and-judah/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  israel-and-judah/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  israel-and-judah/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  israel-and-judah/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  israel-and-judah/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  israel-and-judah/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  israel-and-judah/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  israel-and-judah/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  israel-and-judah/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  origin/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  tel-dan/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  house-of-david/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  goliath/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  saul/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/1:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/2:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/3:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/4:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/5:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/6:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/7:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/8:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/9:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/10:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/11:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/12:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/14:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+  samuel/15:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script against the research agent's saved text; surrounding passage read.",
+    }
+triggers:
+  6@00:19:59:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  40@00:33:40:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  40@00:53:37:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  52@00:16:16:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  64@00:45:52:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  64@00:47:01:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  67@00:25:52:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  67@00:27:24:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  67@00:37:07:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  67@00:38:15:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  139@00:48:17:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  139@00:56:27:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  154@00:04:07:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  169@00:15:59:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  181@00:35:46:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  181@00:42:09:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+  181@00:43:39:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: matched by script at timestamp and speaker (full turn, final Transcript), verbatim substring; read about two minutes either side.",
+    }
+rules:
+  publish-rule:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: 10 statements. Core united-monarchy cites Richards (Reference), Nakhai (Reference), Faust & Sapir, Mazar, Krause–Sergi–Weingart, Finkelstein, Sergi, Garfinkel et al. (Scholarly): 8 independent author strings, none Host-authored. Rule holds.",
+    }
+  consensus-wording:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: no short says “consensus”. “Most scholars” appears in two shorts: house-of-david (Rollston “the majority of scholars”; Hagelia “almost generally accepted”, “most scholars”) and tel-dan (Hagelia “Most scholars attribute”, with Rollston's own conclusion). “Many” in the united-monarchy short: Faust & Sapir “questioned by many”, Mazar “a good number of scholars”. Every other field word in the texts is the source's own, attributed: Hayes's “most scholars”/“consensus”, Hagelia's “relatively high consensus” and “majority”, Finkelstein's “widely accepted”, Na'aman's “most scholars”, Krause et al.'s “one of the most accepted hypotheses”, Sergi's “little doubt today”.",
+    }
+  dissent-attributed:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: named: Davies (house of David, Judah's status, minimal evidence); Lemche and Thompson (toponym; Lemche on historicity) via Hagelia; Garbini, Lemche, Cryer, Gmirkin (forgery) via Hagelia; Benhadad attribution (“some”, Hagelia); Mazar and Faust & Sapir (defending the united monarchy); Garfinkel et al. (kingdom in Judah); Halpern's maximalist reading; Coogan and Chapman's “one of the most powerful monarchs”; Garsiel (duel's general reality; author close to David); Sergi's Judah–Benjamin unity; Lipschits's model via Krause et al.",
+    }
+  tradition-named:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: no Tradition source cited.",
+    }
+sources:
+  bodner-bo-goliath:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey, SBL). Undated on the page; year null, the registry convention.",
+    }
+  coogan-brief-4e-summary-ch13:
+    { agent: pass, owner: "", note: "First pass 2026-11-25: " }
+  coogan-brief-4e-summary-ch14:
+    { agent: pass, owner: "", note: "First pass 2026-11-25: " }
+  darby-bo-archaeology-of-jerusalem:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey, SBL). Undated on the page; year null, the registry convention.",
+    }
+  davies-bo-tel-dan-video:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey video transcript). Davies died in 2018, so recorded before then; year unknown, null. Used only for attributed dissent.",
+    }
+  ej-goliath:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference, EJ 2nd ed.; biblical section unsigned. Bibliography runs to 1996 (Bar-Efrat), and it reports Rofé (1987): revised text. Flag: the body may keep first-edition sentences; used only for an attributed judgment (“more likely”) and the Chronicles harmonisation, which NABRE also states.",
+    }
+  ej-history-kingdoms:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference, EJ 2nd ed.; section author not printed on the page. Revised text (cites the 1990s minimalist debate), so inside the window. Authorless: counted as its own source.",
+    }
+  faust-sapir-2018-tel-eton:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (Radiocarbon, 2018), open access (CC BY-NC-SA).",
+    }
+  finkelstein-2007-quest-solomon:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (SBL, 2007), Finkelstein's essays in Quest; registered apart from Mazar and Schmidt so authors count once each. Full PDF on sbl-site.org.",
+    }
+  finkelstein-2013-forgotten-kingdom:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (SBL ANEM 5, 2013), open-access book.",
+    }
+  garfinkel-2012-khirbet-qeiyafa:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (Radiocarbon, 2012), in the University of Arizona repository (the journal's publisher at the time).",
+    }
+  garsiel-2010-samuel-historiography:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (Journal of Hebrew Scriptures, peer-reviewed open access, 2010). Used for dissent, attributed. His “(2 Samuel 17)” in the quoted sentence means 1 Samuel 17; quote left verbatim.",
+    }
+  goldingay-samuel-theology:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (Cambridge University Press), publisher excerpt; year not printed (cites work to 2016), so inside the window. Year left null.",
+    }
+  gravett-bo-david-vs-goliath:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey, SBL). Undated on the page; year null, the registry convention.",
+    }
+  greene-bo-saul:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey, SBL). Undated on the page; year null, the registry convention.",
+    }
+  greenspoon-bo-jerusalem:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey, SBL). Undated on the page; year null, the registry convention.",
+    }
+  hagelia-2009-dan-debate:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (Sheffield Phoenix, 2009). Full-text PDF on sbl-site.org (SBL Press is Sheffield Phoenix's North American distributor); no open-access licence stated in the PDF. Flag: confirm the publisher-posted copy meets #80's public-URL rule. pdftotext gives fi/fl ligatures as control characters; matched after mapping them back.",
+    }
+  halpern-ej-david:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference, EJ 2nd ed. (2007), section signed Baruch Halpern. Two Encyclopedia.com URLs carry the entry; citations from each keep their own url.",
+    }
+  harpercollins-2009-dictionary:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Already registered (Reference, 2009). Entries “Goliath” and “Saul” on Bible Odyssey, per-citation urls.",
+    }
+  hayes-rlst145-l13:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference, Yale course recorded 2006: inside the 30-year window, but the oldest Reference source for the state-of-field sentences; her “most scholars” and “consensus” on David are attributed in the text, never the short.",
+    }
+  hayes-rlst145-l14:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Already registered (Reference, 2006). Her 2006 “differ radically” on the dating of Solomonic buildings is reported with its year beside Sergi's 2023 “little doubt today”.",
+    }
+  krause-sergi-weingart-2020-saul-benjamin:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (SBL Press, AIL 40, 2020): the volume introduction in the publisher's free front-matter PDF. SBL watermark letters and running heads interleave the text layer; matched after removing them. Co-authored by Sergi, so it is not independent of Sergi 2023 in substance, though the counter treats the author strings apart; never counted with Sergi for a short.",
+    }
+  langlois-2019-mesha-stele:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (Semitica 61, 2019), author-posted PDF of the published article.",
+    }
+  mazar-2007-quest-david-solomon:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (SBL, 2007), Mazar's essay in Quest. Text layer jumps from p. 139 to p. 143; quotes are from pp. 117–139. The p. 138 locators are confirmed by the page's running head in the text layer.",
+    }
+  mckenzie-bo-kingdom-of-israel:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey, SBL). Undated on the page; year null, the registry convention.",
+    }
+  meyers-bo-hebrew-bible-history:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Already registered (Reference).",
+    }
+  moore-bo-house-of-david:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey, SBL). Undated on the page; year null, the registry convention.",
+    }
+  naaman-2017-khirbet-qeiyafa:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (Journal of Hebrew Scriptures, 2017), open access.",
+    }
+  nabre-1-chronicles-20-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (NABRE). Captured from a browser tab, as above.",
+    }
+  nabre-1-samuel-16-17-notes:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (NABRE). Notes on 16:14–23 (chapter 16 page, per-citation url) and 17:12–31 (chapter 17 page). Captured from a browser tab.",
+    }
+  nabre-samuel-intro:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (NABRE notes by the Catholic Biblical Association, CONTEXT.md). bible.usccb.org refuses scripted requests; text captured from a browser tab and saved as plain text, as for the registered NABRE entries.",
+    }
+  nakhai-bo-divided-monarchy:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey, SBL). Undated on the page; year null, the registry convention.",
+    }
+  richards-bo-david:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey, SBL). Undated on the page; year null, the registry convention.",
+    }
+  rollston-bo-tel-dan:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Reference (Bible Odyssey, SBL). Undated on the page; year null, the registry convention.",
+    }
+  schmidt-2007-quest-summary:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (SBL, 2007), the editor's summary of Part 4; used only to report Finkelstein's argument, attributed to Schmidt.",
+    }
+  sergi-2023-two-houses:
+    {
+      agent: pass,
+      owner: "",
+      note: "First pass 2026-11-25: Scholarly (SBL Press, 2023). Full-text PDF on the publisher's own site, all rights reserved, no login. Flag: same access question as Hagelia.",
+    }
+leads:
+  - "Jerusalem Journal of Archaeology 1 (2021), open-access issue on tenth-century state formation (Mazar, Garfinkel, Dever; editors' overview): jjar.huji.ac.il refused the research agent's scripted fetch; not read. Top lead for a defender's view after 2007."
+  - "Finkelstein, “A Great United Monarchy?” and Mazar, “Archaeology and the Biblical Narrative: The Case of the United Monarchy”, in BZAW 405 (2010): copies only on a course site and academia.edu; Mazar's “total deconstruction … unjustified” seen only as a search abstract."
+  - "Finkelstein, Na'aman and Römer, “Restoring Line 31 in the Mesha Stele: The House of David or Biblical Balak?”, Tel Aviv 46 (2019): read only as reported by Langlois; repository copy behind a bot check."
+  - "Biran and Naveh, IEJ 43 (1993) and 45 (1995), editio princeps of the Tel Dan inscription: not fetched."
+  - "Lemche and Thompson, JSOT 64 (1994); Garbini 1994; Cryer 1994/1996; Gmirkin 2002 (forgery); Athas 2003 (late date, fragment placement): known only through Hagelia."
+  - "Robert Rezetko, The Bible and Interpretation (2023), “Most Bible scholars … hold” on Elhanan and Goliath: seen only as a search snippet; the page now returns not found."
+  - "Kaspars Ozolins on 2 Samuel 21:19 (scribal error; Elhanan killed Goliath's brother): abstract only."
+  - "P. Kyle McCarter, “The Apology of David”, JBL 99 (1980); Andrew Knapp, Royal Apologetic in the Ancient Near East (2015); Bezzel and Kratz (eds.), David in the Desert (BZAW 514, 2021): seen only as citations or blurbs."
+  - "Finkelstein's and Sergi's own essays in AIL 40 (2020), and Finkelstein, “The Last Labayu” (2006): only the volume introduction is free."
+  - "Bill T. Arnold, JETS 32 (1989), on the two accounts of Saul's death: paywalled; a confessional journal."
+uncited:
+  - "Omer Sergi, “Goliath”, Encyclopedia of the Bible and Its Reception 10 (2015): read; a subscriber's PDF posted as edX course material, not by the author or publisher. Not cited."
+  - "Steven L. McKenzie, “Who Was King David?”, Word & World 23 (2003): read (“most scholars think that it incorporates older sources”; “Scholars have long noted the apologetic flavor”; the Goliath story “is legend”; the section 1 Sam 24–2 Sam 1 denying David's part in Saul's death). Not cited: a seminary theological journal, peer review not shown; the samuel short rests on Finkelstein, Coogan and Chapman, NABRE, Hayes and Garsiel."
+  - "Encyclopaedia Judaica, “Elhanan”: read (Mazar's Elhanan = David; “some scholars” on Chronicles emending “Goliath”); the Hebrew forms did not survive text extraction. Not cited; the Elhanan = David view is cited from EJ “Goliath”."
+  - "Encyclopaedia Judaica, “Samuel, Book of” (Gottwald), “It is now generally agreed that the finished form of the book comes from the hand of a Deuteronomic compiler in the sixth century”: read; 1971 text, outside the 30-year window."
+  - "Encyclopaedia Judaica, “Saul” (Oded): read; biblical retelling with traditional dates."
+  - "HarperCollins Bible Dictionary, “David” (“The most powerful king of Israel … an empire”), “Solomon”, “Israel”, “Jerusalem”, “Omri”, “Dan”, “Mesha”, “Elhanan”: read; summaries of the biblical account, nothing on historicity. Not cited."
+  - "Coogan and Chapman ch. 15 summary (a historical Solomon c. 968–928; sites dated to the tenth century) and ch. 13 (rise of the monarchy at the end of the eleventh century): read; the older chronology, not stated on the page."
+  - "Nakhai, “Archaeological excavations have uncovered elaborate building projects … Jerusalem, Gezer, Megiddo, and Hazor”, and “understood by most scholars to have encompassed much of the 10th century”: read; dating of the era and the buildings, not stated (the page reports the dating disagreement through Hayes, Greenspoon, Finkelstein and Sergi)."
+  - "Sergi 2023 p. 21, the Iron I–IIA chronology “seems to have arrived at a general consensus”; p. 12 “most scholars suggest” a post-720 date for northern traditions reaching Judah; p. 302 against the “Israelization of Judah”; p. 212 the Davidic king list in Kings as authentic: read; not stated (one author, or off the page's questions)."
+  - "Finkelstein 2013 p. 54 and Na'aman 2017 on Khirbet Qeiyafa (Judahite fortress vs Canaanite enclave); Garfinkel et al. 2012 abstract (“much debated”); Faust and Sapir p. 812: read; Khirbet Qeiyafa is not a statement."
+  - "Hagelia p. 6 (the editors' publication commended by the majority), pp. 70–72 Galil's five readings and the word-divider question, p. 118 on deity and toponym readings: read; covered by the cited Hagelia sentences."
+  - "Davies, Bible Odyssey video “David and Solomon”; Hayes lecture 22; NABRE notes on 2 Kings 8–9, 2 Samuel 21 and 1 Samuel 31–2 Samuel 1: read; nothing on the page's questions."
+  - "Langlois 2019 pp. 46–47 (a mention of the house of David “does not solve issues related to the historicity”), p. 45 n. 67 (Lemche and Thompson on the Mesha line): read; not cited, the house-of-david text uses his abstract."
+  - "Bible Odyssey articles by Gilmour (“Samuel”) and others on David's downfall, youth and royal succession: read; literary readings without state-of-field claims."
+  - "Goldingay p. 5, “Different groups of modern scholars are more inclined to focus on one or other of these periods”: read; the sentence breaks at the excerpt's page edge, so not quoted."
+  - "Hayes lecture 14 on Omri, “the first king from either kingdom to be mentioned in sources outside the Bible”: read; not needed."

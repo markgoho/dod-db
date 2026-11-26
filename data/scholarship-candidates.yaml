@@ -60,13 +60,6 @@ subjects:
     basis: "Inventory rank 8: 5 Episodes, 9 claims, 3 consensus, 3 no evidence. Explicit consensus wording in Ep 116."
     notes: "Inventory suggests merging with Moses and the Exodus. Moses already has a Merneptah question. Decide at the test: own page, or new statements for moses-and-the-exodus (then move to `statements`)."
 
-  - slug: david-and-the-united-monarchy
-    subject: "David, Saul and the united monarchy"
-    status: candidate
-    core: "Scholars are divided on whether a historical David ruled a united monarchy."
-    basis: "Inventory rank 9: 6 Episodes, 11 claims."
-    notes: "The show's claims conflict (Ep 154 'split', Ep 181 'probably a historical David'). A page states a divided field only if a source says the field is divided (#80)."
-
   - slug: child-sacrifice-and-molech
     subject: "Child sacrifice and Molech"
     status: candidate
