@@ -2577,7 +2577,7 @@ ej-history-kingdoms:
   tradition: null
 
 ej-goliath:
-  author: null
+  author: "Bustanay Oded and S. David Sperling"
   title: "Goliath"
   series: "Encyclopaedia Judaica"
   publisher: null
@@ -2613,7 +2613,7 @@ finkelstein-2007-quest-solomon:
   edition: null
   class: Scholarly
   kind: book
-  access: "Full-text PDF posted by the publisher, open"
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
   url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
   hostAuthored: false
   tradition: null
@@ -2627,7 +2627,7 @@ mazar-2007-quest-david-solomon:
   edition: null
   class: Scholarly
   kind: book
-  access: "Full-text PDF posted by the publisher, open"
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
   url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
   hostAuthored: false
   tradition: null
@@ -2641,7 +2641,7 @@ schmidt-2007-quest-summary:
   edition: null
   class: Scholarly
   kind: book
-  access: "Full-text PDF posted by the publisher, open"
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
   url: "https://www.sbl-site.org/wp-content/uploads/2024/12/FinkelsteinMazar.pdf"
   hostAuthored: false
   tradition: null
@@ -2655,7 +2655,7 @@ sergi-2023-two-houses:
   edition: null
   class: Scholarly
   kind: book
-  access: "Full-text PDF posted by the publisher, open"
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
   url: "https://www.sbl-site.org/wp-content/uploads/2024/12/9781628373431_txt.pdf"
   hostAuthored: false
   tradition: null
@@ -2669,8 +2669,8 @@ garfinkel-2012-khirbet-qeiyafa:
   edition: null
   class: Scholarly
   kind: article
-  access: "Journal article in the publisher's university repository, open"
-  url: "https://repository.arizona.edu/handle/10150/654952"
+  access: "Journal article PDF on Cambridge Core, the journal's current publisher, open (the University of Arizona repository copy refuses scripted requests)"
+  url: "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/0F8B4D6E883C99098BF8070BE472719D/S0033822200047147a.pdf/state-formation-in-judah-biblical-tradition-modern-historical-theories-and-radiometric-dates-at-khirbet-qeiyafa.pdf"
   hostAuthored: false
   tradition: null
 
@@ -2711,7 +2711,7 @@ hagelia-2009-dan-debate:
   edition: null
   class: Scholarly
   kind: book
-  access: "Full-text PDF posted by SBL Press, its North American distributor, open"
+  access: "Full-text PDF in SBL's International Cooperation Initiative online books repository, which SBL offers to readers in qualifying lower-income countries; opens without login"
   url: "https://www.sbl-site.org/wp-content/uploads/2025/01/Hagelia_Dan.pdf"
   hostAuthored: false
   tradition: null
